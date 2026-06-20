@@ -4,18 +4,21 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const mathText = value => {
+  const renderMath = (value, chunked = false) => {
     const raw = String(value);
     const pattern = /\[\[frac:([^|\]]+)\|([^\]]+)\]\]/g;
     let html = "", last = 0;
+    const textPart = text => chunked && text ? `<span class="math-chunk">${esc(text)}</span>` : esc(text);
     for (const match of raw.matchAll(pattern)) {
-      html += esc(raw.slice(last, match.index));
+      html += textPart(raw.slice(last, match.index));
       const numerator = esc(match[1].trim()), denominator = esc(match[2].trim());
       html += `<span class="math-frac" role="math" aria-label="${denominator} 分之 ${numerator}"><span class="math-num">${numerator}</span><span class="math-den">${denominator}</span></span>`;
       last = match.index + match[0].length;
     }
-    return (html + esc(raw.slice(last))).replace(/\n/g, "<br>");
+    return html + textPart(raw.slice(last));
   };
+  const mathText = value => renderMath(value).replace(/\n/g, "<br>");
+  const mathBlock = value => String(value).split("\n").map(line => `<span class="math-line">${renderMath(line, true)}</span>`).join("");
   const nl = mathText;
   const letters = ["A", "B", "C", "D"];
   const viewNames = { home: "學習總覽", exam: "全範圍模擬考", handbook: "國中數學全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" };
@@ -101,7 +104,7 @@
         </header>
         <div class="unit-body">
           <section class="lesson-block"><div class="lesson-label">核心觀念</div><div class="lesson-content"><h3>先把這件事想清楚</h3><p>${mathText(unit.core)}</p><div class="clarify-box"><strong>觀念澄清：</strong> ${mathText(unit.clarify)}</div></div></section>
-          <section class="lesson-block"><div class="lesson-label">公式與推導</div><div class="lesson-content"><div class="formula-box">${nl(unit.formula)}</div><h3>公式不是憑空出現</h3><p>${mathText(unit.derivation)}</p></div></section>
+          <section class="lesson-block"><div class="lesson-label">公式與推導</div><div class="lesson-content"><div class="formula-box">${mathBlock(unit.formula)}</div><h3>公式不是憑空出現</h3><p>${mathText(unit.derivation)}</p></div></section>
           <section class="lesson-block"><div class="lesson-label">標準解題流程</div><div class="lesson-content"><ol>${unit.steps.map(step => `<li>${mathText(step)}</li>`).join("")}</ol></div></section>
           <section class="lesson-block"><div class="lesson-label">會考快解技巧</div><div class="lesson-content"><ul class="tip-list">${unit.tips.map(tip => `<li>${mathText(tip)}</li>`).join("")}</ul></div></section>
           <section class="lesson-block"><div class="lesson-label">30 秒觀念測驗</div><div class="lesson-content"><div class="quiz-box"><p><strong>題目：</strong>${mathText(unit.quiz.q)}</p><button class="quiz-reveal">顯示解答</button><p class="quiz-answer"><strong>解答：</strong>${mathText(unit.quiz.a)}</p></div></div></section>
@@ -320,7 +323,7 @@
     return `<div class="solution"><h4>參考結論：${mathText(q.answer)}</h4><ol class="solution-steps">${q.steps.map(s => `<li>${mathText(s)}</li>`).join("")}</ol>${solutionNotes(q)}<table class="rubric">${q.rubric.map(row => `<tr><th>${esc(row[0])}</th><td>${mathText(row[1])}</td></tr>`).join("")}</table></div>`;
   }
   function solutionNotes(q) {
-    return `<div class="solution-grid"><div class="solution-note"><strong>本題觀念</strong><p>${mathText(q.concept)}</p></div><div class="solution-note"><strong>可用公式</strong><p>${nl(q.formula)}</p></div><div class="solution-note tip"><strong>快解技巧</strong><p>${mathText(q.tip)}</p></div><div class="solution-note trap"><strong>易錯警報</strong><p>${mathText(q.trap)}</p></div></div>`;
+    return `<div class="solution-grid"><div class="solution-note"><strong>本題觀念</strong><p>${mathText(q.concept)}</p></div><div class="solution-note formula-note"><strong>可用公式</strong><div>${mathBlock(q.formula)}</div></div><div class="solution-note tip"><strong>快解技巧</strong><p>${mathText(q.tip)}</p></div><div class="solution-note trap"><strong>易錯警報</strong><p>${mathText(q.trap)}</p></div></div>`;
   }
 
   function bindExamInputs() {
