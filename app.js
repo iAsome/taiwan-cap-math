@@ -4,7 +4,19 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const nl = value => esc(value).replace(/\n/g, "<br>");
+  const mathText = value => {
+    const raw = String(value);
+    const pattern = /\[\[frac:([^|\]]+)\|([^\]]+)\]\]/g;
+    let html = "", last = 0;
+    for (const match of raw.matchAll(pattern)) {
+      html += esc(raw.slice(last, match.index));
+      const numerator = esc(match[1].trim()), denominator = esc(match[2].trim());
+      html += `<span class="math-frac" role="math" aria-label="${denominator} 分之 ${numerator}"><span class="math-num">${numerator}</span><span class="math-den">${denominator}</span></span>`;
+      last = match.index + match[0].length;
+    }
+    return (html + esc(raw.slice(last))).replace(/\n/g, "<br>");
+  };
+  const nl = mathText;
   const letters = ["A", "B", "C", "D"];
   const viewNames = { home: "學習總覽", exam: "全範圍模擬考", handbook: "國中數學全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" };
   let toastTimer;
@@ -88,11 +100,11 @@
           <h2>${esc(unit.title)}</h2><p>${esc(unit.summary)}</p>
         </header>
         <div class="unit-body">
-          <section class="lesson-block"><div class="lesson-label">核心觀念</div><div class="lesson-content"><h3>先把這件事想清楚</h3><p>${esc(unit.core)}</p><div class="clarify-box"><strong>觀念澄清：</strong> ${esc(unit.clarify)}</div></div></section>
-          <section class="lesson-block"><div class="lesson-label">公式與推導</div><div class="lesson-content"><div class="formula-box">${nl(unit.formula)}</div><h3>公式不是憑空出現</h3><p>${esc(unit.derivation)}</p></div></section>
-          <section class="lesson-block"><div class="lesson-label">標準解題流程</div><div class="lesson-content"><ol>${unit.steps.map(step => `<li>${esc(step)}</li>`).join("")}</ol></div></section>
-          <section class="lesson-block"><div class="lesson-label">會考快解技巧</div><div class="lesson-content"><ul class="tip-list">${unit.tips.map(tip => `<li>${esc(tip)}</li>`).join("")}</ul></div></section>
-          <section class="lesson-block"><div class="lesson-label">30 秒觀念測驗</div><div class="lesson-content"><div class="quiz-box"><p><strong>題目：</strong>${esc(unit.quiz.q)}</p><button class="quiz-reveal">顯示解答</button><p class="quiz-answer"><strong>解答：</strong>${esc(unit.quiz.a)}</p></div></div></section>
+          <section class="lesson-block"><div class="lesson-label">核心觀念</div><div class="lesson-content"><h3>先把這件事想清楚</h3><p>${mathText(unit.core)}</p><div class="clarify-box"><strong>觀念澄清：</strong> ${mathText(unit.clarify)}</div></div></section>
+          <section class="lesson-block"><div class="lesson-label">公式與推導</div><div class="lesson-content"><div class="formula-box">${nl(unit.formula)}</div><h3>公式不是憑空出現</h3><p>${mathText(unit.derivation)}</p></div></section>
+          <section class="lesson-block"><div class="lesson-label">標準解題流程</div><div class="lesson-content"><ol>${unit.steps.map(step => `<li>${mathText(step)}</li>`).join("")}</ol></div></section>
+          <section class="lesson-block"><div class="lesson-label">會考快解技巧</div><div class="lesson-content"><ul class="tip-list">${unit.tips.map(tip => `<li>${mathText(tip)}</li>`).join("")}</ul></div></section>
+          <section class="lesson-block"><div class="lesson-label">30 秒觀念測驗</div><div class="lesson-content"><div class="quiz-box"><p><strong>題目：</strong>${mathText(unit.quiz.q)}</p><button class="quiz-reveal">顯示解答</button><p class="quiz-answer"><strong>解答：</strong>${mathText(unit.quiz.a)}</p></div></div></section>
         </div>
         <button class="complete-button ${state.completed.has(unit.id) ? "done" : ""}" data-complete="${unit.id}">${state.completed.has(unit.id) ? "✓ 已掌握這個單元（按一下取消）" : "標記為已掌握"}</button>
       </article>`;
@@ -109,9 +121,9 @@
 
   function renderAtlas() {
     $("#atlasContent").innerHTML = `
-      <div class="domain-grid">${domains.map(d => `<article class="domain-card"><span>${d.mark}</span><h3>${esc(d.name)}</h3><p>${esc(d.desc)}</p><ul>${d.skills.map(s => `<li>${esc(s)}</li>`).join("")}</ul></article>`).join("")}</div>
+      <div class="domain-grid">${domains.map(d => `<article class="domain-card"><span>${d.mark}</span><h3>${esc(d.name)}</h3><p>${mathText(d.desc)}</p><ul>${d.skills.map(s => `<li>${mathText(s)}</li>`).join("")}</ul></article>`).join("")}</div>
       <section class="strategy-section"><p class="eyebrow">PATTERN → TOOL</p><h2>八大常見題型：看到什麼，就啟動什麼</h2>
-        <table class="strategy-table"><thead><tr><th>題型</th><th>核心能力</th><th>穩定解法</th><th>最常失分</th></tr></thead><tbody>${strategies.map(row => `<tr>${row.map(cell => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table>
+        <table class="strategy-table"><thead><tr><th>題型</th><th>核心能力</th><th>穩定解法</th><th>最常失分</th></tr></thead><tbody>${strategies.map(row => `<tr>${row.map(cell => `<td>${mathText(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table>
         <h2>非選擇題的 3 級分作答骨架</h2>
         <div class="nonchoice-playbook">
           <article><span>01</span><h3>定義</h3><p>先寫「設 x 為……」，讓未知數、單位與題目對上。</p></article>
@@ -228,7 +240,7 @@
     const list = tipAudits.filter(item => (state.tipVerdict === "all" || item.verdict === state.tipVerdict) && (!q || [item.tip, item.condition, item.why, item.source, units[item.unitId - 1]?.title].join(" ").toLowerCase().includes(q)));
     const verdictClass = verdict => verdict === "通過" ? "pass" : verdict === "有條件" ? "conditional" : "reject";
     $("#tipAuditBody").innerHTML = list.length ? list.map(item => `
-      <tr><td>${esc(item.tip)}<span class="audit-unit">${esc(units[item.unitId - 1]?.title || "跨單元")}｜${esc(item.source)}</span></td><td><span class="verdict ${verdictClass(item.verdict)}">${esc(item.verdict)}</span></td><td>${esc(item.condition)}</td><td>${esc(item.why)}</td></tr>`).join("") : `<tr><td class="audit-empty" colspan="4">找不到符合條件的技巧。</td></tr>`;
+      <tr><td>${mathText(item.tip)}<span class="audit-unit">${esc(units[item.unitId - 1]?.title || "跨單元")}｜${esc(item.source)}</span></td><td><span class="verdict ${verdictClass(item.verdict)}">${esc(item.verdict)}</span></td><td>${mathText(item.condition)}</td><td>${mathText(item.why)}</td></tr>`).join("") : `<tr><td class="audit-empty" colspan="4">找不到符合條件的技巧。</td></tr>`;
     $("#auditCount").textContent = state.tipVerdict === "all" && !q ? tipAudits.length : `${list.length}/${tipAudits.length}`;
   }
 
@@ -279,9 +291,9 @@
         const selected = state.answers[index] === ci;
         const correct = state.submitted && ci === q.answer;
         const wrong = state.submitted && selected && ci !== q.answer;
-        return `<button class="choice ${selected ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-choice="${index}:${ci}" ${state.submitted ? "disabled" : ""}><span class="choice-letter">${letters[ci]}</span><span>${esc(choice)}</span></button>`;
+        return `<button class="choice ${selected ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-choice="${index}:${ci}" ${state.submitted ? "disabled" : ""}><span class="choice-letter">${letters[ci]}</span><span>${mathText(choice)}</span></button>`;
       }).join("")}</div>` : `<div class="constructed"><textarea data-cr="${index}" placeholder="請寫下完整解題過程與結論……" ${state.submitted ? "disabled" : ""}>${esc(state.answers[index])}</textarea><p class="writing-guide">建議包含：設未知數／列關係或性質／推導計算／含單位的結論</p></div>`;
-      const passage = q.passageId && (!index || state.exam.questions[index - 1].passageId !== q.passageId) ? `<aside class="reading-passage"><p class="eyebrow">閱讀選文｜回答第 ${index + 1}～${index + state.exam.questions.filter(item => item.passageId === q.passageId).length} 題</p><h3>自行車訓練器的速率估計</h3><p>${esc(q.passage)}</p></aside>` : "";
+      const passage = q.passageId && (!index || state.exam.questions[index - 1].passageId !== q.passageId) ? `<aside class="reading-passage"><p class="eyebrow">閱讀選文｜回答第 ${index + 1}～${index + state.exam.questions.filter(item => item.passageId === q.passageId).length} 題</p><h3>自行車訓練器的速率估計</h3><p>${mathText(q.passage)}</p></aside>` : "";
       return `${passage}<article class="question ${q.type === "cr" ? "constructed-question" : ""}" id="question-${index + 1}" data-question="${index}">
         <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span><span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span></div>
         <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${solutionHtml(q, index)}
@@ -303,12 +315,12 @@
 
   function solutionHtml(q, index) {
     if (q.type === "mc") {
-      return `<div class="solution"><h4>正確答案：${letters[q.answer]}｜${esc(q.choices[q.answer])}</h4><ol class="solution-steps">${q.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol>${solutionNotes(q)}</div>`;
+      return `<div class="solution"><h4>正確答案：${letters[q.answer]}｜${mathText(q.choices[q.answer])}</h4><ol class="solution-steps">${q.steps.map(s => `<li>${mathText(s)}</li>`).join("")}</ol>${solutionNotes(q)}</div>`;
     }
-    return `<div class="solution"><h4>參考結論：${esc(q.answer)}</h4><ol class="solution-steps">${q.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol>${solutionNotes(q)}<table class="rubric">${q.rubric.map(row => `<tr><th>${esc(row[0])}</th><td>${esc(row[1])}</td></tr>`).join("")}</table></div>`;
+    return `<div class="solution"><h4>參考結論：${mathText(q.answer)}</h4><ol class="solution-steps">${q.steps.map(s => `<li>${mathText(s)}</li>`).join("")}</ol>${solutionNotes(q)}<table class="rubric">${q.rubric.map(row => `<tr><th>${esc(row[0])}</th><td>${mathText(row[1])}</td></tr>`).join("")}</table></div>`;
   }
   function solutionNotes(q) {
-    return `<div class="solution-grid"><div class="solution-note"><strong>本題觀念</strong><p>${esc(q.concept)}</p></div><div class="solution-note"><strong>可用公式</strong><p>${nl(q.formula)}</p></div><div class="solution-note tip"><strong>快解技巧</strong><p>${esc(q.tip)}</p></div><div class="solution-note trap"><strong>易錯警報</strong><p>${esc(q.trap)}</p></div></div>`;
+    return `<div class="solution-grid"><div class="solution-note"><strong>本題觀念</strong><p>${mathText(q.concept)}</p></div><div class="solution-note"><strong>可用公式</strong><p>${nl(q.formula)}</p></div><div class="solution-note tip"><strong>快解技巧</strong><p>${mathText(q.tip)}</p></div><div class="solution-note trap"><strong>易錯警報</strong><p>${mathText(q.trap)}</p></div></div>`;
   }
 
   function bindExamInputs() {
@@ -392,11 +404,14 @@
 
   function init() {
     const lastSeed = localStorage.getItem("capMath.lastSeed");
+    const params = new URLSearchParams(window.location.search);
+    const requestedUnit = Number(params.get("unit"));
+    if (Number.isInteger(requestedUnit) && units.some(unit => unit.id === requestedUnit)) state.selectedUnit = requestedUnit;
     if (lastSeed) $("#seedInput").value = lastSeed;
     if (localStorage.getItem("capMath.dark") === "1") { document.body.classList.add("dark"); $("#themeButton").textContent = "日"; }
     bindStaticEvents();
     renderHandbook(); renderAtlas(); renderAnalysis(); renderSources(); renderArchive(); updateLearningProgress();
-    const requestedView = new URLSearchParams(window.location.search).get("view");
+    const requestedView = params.get("view");
     if (requestedView && viewNames[requestedView]) setView(requestedView);
   }
   init();

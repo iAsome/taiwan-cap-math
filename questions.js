@@ -13,15 +13,17 @@ window.EXAM_ENGINE = (() => {
   const ri = (r, min, max) => Math.floor(r() * (max - min + 1)) + min;
   const pick = (r, list) => list[ri(r, 0, list.length - 1)];
   const gcd = (a, b) => { a = Math.abs(a); b = Math.abs(b); while (b) [a, b] = [b, a % b]; return a || 1; };
-  const frac = (n, d) => { const g = gcd(n, d); n /= g; d /= g; if (d < 0) { n *= -1; d *= -1; } return d === 1 ? `${n}` : `${n}/${d}`; };
+  const over = (n, d) => `[[frac:${n}|${d}]]`;
+  const frac = (n, d) => { const g = gcd(n, d); n /= g; d /= g; if (d < 0) { n *= -1; d *= -1; } return d === 1 ? `${n}` : over(n, d); };
   const signed = n => n < 0 ? `−${Math.abs(n)}` : `${n}`;
   const term = (coef, variable = "x") => coef === 1 ? variable : coef === -1 ? `−${variable}` : `${signed(coef)}${variable}`;
   const plus = n => n < 0 ? ` − ${Math.abs(n)}` : ` + ${n}`;
+  const superscript = value => String(value).replace(/[\d-]/g, c => ({"0":"⁰","1":"¹","2":"²","3":"³","4":"⁴","5":"⁵","6":"⁶","7":"⁷","8":"⁸","9":"⁹","-":"⁻"}[c]));
   const sci = (coef, exp) => {
     let c = coef, e = exp;
     while (Math.abs(c) >= 10) { c /= 10; e += 1; }
     while (Math.abs(c) > 0 && Math.abs(c) < 1) { c *= 10; e -= 1; }
-    return `${Number(c.toFixed(6))} × 10^${e}`;
+    return `${Number(c.toFixed(6))} × 10${superscript(e)}`;
   };
   function shuffled(r, arr) {
     const out = [...arr];
@@ -49,7 +51,7 @@ window.EXAM_ENGINE = (() => {
     (r) => {
       const p = ri(r, 2, 7), q = ri(r, 2, 8), e = ri(r, 3, 6), f = -ri(r, 1, 3);
       const raw = p * q, ans = sci(raw, e + f);
-      return mc(r, 2, 1, `以科學記號表示 (${p} × 10^${e})(${q} × 10^${f})。`, ans, [sci(raw, e - f), sci(p + q, e + f), sci(raw, e + f + 1)], [`係數相乘：${p}×${q}=${raw}；10 的次方相乘，指數相加：${e}+(${f})=${e + f}。`, `先得 ${raw}×10^${e + f}，再把係數調成 1 到 10，得到 ${ans}。`], "科學記號先分成『係數』與『10 的次方』兩條線計算。", "若係數乘完大於等於 10，要右移小數點並把 10 的指數加 1。")
+      return mc(r, 2, 1, `以科學記號表示 (${p} × 10${superscript(e)})(${q} × 10${superscript(f)})。`, ans, [sci(raw, e - f), sci(p + q, e + f), sci(raw, e + f + 1)], [`係數相乘：${p}×${q}=${raw}；10 的次方相乘，指數相加：${e}+(${f})=${e + f}。`, `先得 ${raw}×10${superscript(e + f)}，再把係數調成 1 到 10，得到 ${ans}。`], "科學記號先分成『係數』與『10 的次方』兩條線計算。", "若係數乘完大於等於 10，要右移小數點並把 10 的指數加 1。")
     },
     (r) => {
       const pair = pick(r, [[48, 72], [60, 84], [72, 90], [54, 81], [96, 120]]);
@@ -59,11 +61,11 @@ window.EXAM_ENGINE = (() => {
     (r) => {
       const q = pick(r, [4, 5, 6, 8]), s = pick(r, [3, 5, 7]), p = ri(r, 1, q - 1), n = p * s + q;
       const ans = frac(n, q * s);
-      return mc(r, 4, 1, `計算 ${p}/${q} + 1/${s}。`, ans, [frac(p + 1, q + s), frac(p * s - q, q * s), frac(n, q + s)], [`公分母可取 ${q * s}：${p}/${q} = ${p * s}/${q * s}，1/${s} = ${q}/${q * s}。`, `相加得 (${p * s}+${q})/${q * s} = ${ans}。`], "先估答案應比兩個加數都大，可快速排除過小選項。", "分數相加不能直接把分子、分母各自相加。")
+      return mc(r, 4, 1, `計算 ${over(p, q)} + ${over(1, s)}。`, ans, [frac(p + 1, q + s), frac(p * s - q, q * s), frac(n, q + s)], [`公分母可取 ${q * s}：${over(p, q)} = ${over(p * s, q * s)}，${over(1, s)} = ${over(q, q * s)}。`, `相加得 ${over(`${p * s}+${q}`, q * s)} = ${ans}。`], "先估答案應比兩個加數都大，可快速排除過小選項。", "分數相加不能直接把分子、分母各自相加。")
     },
     (r, level) => {
       const x = ri(r, 2, 7 + level), a = ri(r, 2, 4 + level), b = ri(r, 1, 5), d = ri(r, 1, 8), c = a * (x + b) - d;
-      return mc(r, 5, 2, `若 ${a}(x + ${b}) − ${d} = ${c}，則 x =？`, x, [x + b, x - 1, x + 1], [`兩邊先加 ${d}：${a}(x+${b})=${c + d}。`, `兩邊除以 ${a}：x+${b}=${(c + d) / a}。`, `兩邊減 ${b}，得 x=${x}。`], "看到括號先保留整體，先把外面的常數移走，計算更乾淨。", "${a}(x+${b}) 展開時，${a} 必須同時乘到 x 與 ${b}。")
+      return mc(r, 5, 2, `若 ${a}(x + ${b}) − ${d} = ${c}，則 x =？`, x, [x + b, x - 1, x + 1], [`兩邊先加 ${d}：${a}(x+${b})=${c + d}。`, `兩邊除以 ${a}：x+${b}=${over(c + d, a)}=${(c + d) / a}。`, `兩邊減 ${b}，得 x=${x}。`], "看到括號先保留整體，先把外面的常數移走，計算更乾淨。", `${a}(x+${b}) 展開時，${a} 必須同時乘到 x 與 ${b}。`)
     },
     (r) => {
       const x = ri(r, 2, 8), y = ri(r, 1, 7), s = x + y, d = 2 * x - y;
@@ -87,7 +89,7 @@ window.EXAM_ENGINE = (() => {
     },
     (r) => {
       const avg = ri(r, 8, 16), count = pick(r, [4, 5, 6]), added = avg + ri(r, 3, 8), newAvg = frac(avg * count + added, count + 1);
-      return mc(r, 10, 2, `${count} 筆資料的平均數為 ${avg}，加入一筆 ${added} 後，新的平均數是多少？`, newAvg, [avg + added, frac(avg + added, 2), frac(avg * (count + 1) + added, count + 1)], [`原資料總和 = ${avg}×${count}=${avg * count}。`, `加入後總和 ${avg * count}+${added}=${avg * count + added}，共有 ${count + 1} 筆。`, `新平均 = ${avg * count + added}÷${count + 1}=${newAvg}。`], "平均數題先把『平均×個數』還原成總和。", "不能把舊平均與新資料直接取兩數平均，因為權重不同。")
+      return mc(r, 10, 2, `${count} 筆資料的平均數為 ${avg}，加入一筆 ${added} 後，新的平均數是多少？`, newAvg, [avg + added, frac(avg + added, 2), frac(avg * (count + 1) + added, count + 1)], [`原資料總和 = ${avg}×${count}=${avg * count}。`, `加入後總和 ${avg * count}+${added}=${avg * count + added}，共有 ${count + 1} 筆。`, `新平均 = ${over(avg * count + added, count + 1)}=${newAvg}。`], "平均數題先把『平均×個數』還原成總和。", "不能把舊平均與新資料直接取兩數平均，因為權重不同。")
     },
     (r) => {
       const angle = ri(r, 4, 13) * 10, ans = 180 - angle;
@@ -125,7 +127,7 @@ window.EXAM_ENGINE = (() => {
     },
     (r) => {
       const top = ri(r, 4, 9), bottom = ri(r, top + 3, top + 10), h = ri(r, 3, 8), ans = (top + bottom) * h / 2;
-      return mc(r, 19, 2, `一梯形的上底 ${top}、下底 ${bottom}、高 ${h}，面積為何？`, ans, [(bottom - top) * h / 2, (top + bottom) * h, top * bottom * h / 2], [`梯形面積=(上底+下底)×高÷2。`, `代入得 (${top}+${bottom})×${h}÷2=${ans}。`], "先把上下底相加取平均，再乘高也可以。", "高必須是兩底間的垂直距離，不是斜腰。")
+      return mc(r, 19, 2, `一梯形的上底 ${top}、下底 ${bottom}、高 ${h}，面積為何？`, ans, [(bottom - top) * h / 2, (top + bottom) * h, top * bottom * h / 2], [`梯形面積=${over("(上底+下底)×高", 2)}。`, `代入得 ${over(`(${top}+${bottom})×${h}`, 2)}=${ans}。`], "先把上下底相加取平均，再乘高也可以。", "高必須是兩底間的垂直距離，不是斜腰。")
     },
     (r) => {
       const q1 = ri(r, 2, 8), q3 = q1 + ri(r, 4, 10), iqr = q3 - q1;
@@ -133,11 +135,11 @@ window.EXAM_ENGINE = (() => {
     },
     (r) => {
       const small = ri(r, 2, 5), large = small + ri(r, 1, 4), areaSmall = ri(r, 3, 9), ans = frac(areaSmall * large * large, small * small);
-      return mc(r, 21, 3, `兩相似三角形的對應邊長比為 ${small}:${large}。若較小三角形面積為 ${areaSmall}，較大三角形面積為何？`, ans, [frac(areaSmall * large, small), frac(areaSmall * small, large), frac(areaSmall * large * large, small)], [`邊長放大倍率為 ${large}/${small}。`, `面積倍率是邊長倍率平方，所以大面積=${areaSmall}×(${large}/${small})²=${ans}。`], "相似題先寫倍率 k；長度用 k、面積用 k²、體積用 k³。", "不要把邊長比直接當面積比。")
+      return mc(r, 21, 3, `兩相似三角形的對應邊長比為 ${small}:${large}。若較小三角形面積為 ${areaSmall}，較大三角形面積為何？`, ans, [frac(areaSmall * large, small), frac(areaSmall * small, large), frac(areaSmall * large * large, small)], [`邊長放大倍率為 ${over(large, small)}。`, `面積倍率是邊長倍率平方，所以大面積=${areaSmall}×(${over(large, small)})²=${ans}。`], "相似題先寫倍率 k；長度用 k、面積用 k²、體積用 k³。", "不要把邊長比直接當面積比。")
     },
     (r) => {
       const central = ri(r, 3, 8) * 20, ans = central / 2;
-      return mc(r, 22, 2, `同一段弧所對的圓心角為 ${central}°，則同弧所對的圓周角為多少度？`, `${ans}°`, [`${central}°`, `${central * 2}°`, `${180 - ans}°`], [`同弧所對圓心角 = 2×圓周角。`, `圓周角=${central}°÷2=${ans}°。`], "先確認兩個角真的截同一段弧，再用 2 倍關係。", "圓周角頂點必須在圓上；圓內任意角不能直接套此式。")
+      return mc(r, 22, 2, `同一段弧所對的圓心角為 ${central}°，則同弧所對的圓周角為多少度？`, `${ans}°`, [`${central}°`, `${central * 2}°`, `${180 - ans}°`], [`同弧所對圓心角 = 2×圓周角。`, `圓周角=${over(`${central}°`, 2)}=${ans}°。`], "先確認兩個角真的截同一段弧，再用 2 倍關係。", "圓周角頂點必須在圓上；圓內任意角不能直接套此式。")
     },
     (r) => {
       const center = pick(r, [
@@ -147,7 +149,7 @@ window.EXAM_ENGINE = (() => {
         ["三條高的交點", "垂心", "可能位於三角形外"]
       ]);
       const others = ["外心","內心","重心","垂心"].filter(x=>x!==center[1]);
-      return mc(r, 23, 2, `${center[0]}稱為三角形的什麼心？`, center[1], others, [`依定義，${center[0]}是${center[1]}。`, `${center[1]}的關鍵性質：${center[2]}。`], "四心不要只背名字；把『由哪三條線相交』與『等距/比例性質』綁在一起。", "中線、中垂線、角平分線與高是四種不同的線。")
+      return mc(r, 23, 2, `${center[0]}稱為三角形的什麼心？`, center[1], others, [`依定義，${center[0]}是${center[1]}。`, `${center[1]}的關鍵性質：${center[2]}。`], "四心不要只背名字；把『由哪三條線相交』與『等距或比例性質』綁在一起。", "中線、中垂線、角平分線與高是四種不同的線。")
     },
     (r) => {
       const h = ri(r, 1, 5), k = ri(r, 2, 9), a = -ri(r, 1, 3);
@@ -155,7 +157,7 @@ window.EXAM_ENGINE = (() => {
     },
     (r) => {
       const colors = ri(r, 3, 6), target = ri(r, 1, colors - 1), total = colors + target, ans = frac(target, total);
-      return mc(r, 25, 2, `袋中有 ${target} 顆紅球與 ${colors} 顆藍球，每球被抽到的機會相同。隨機抽 1 顆，抽到紅球的機率為何？`, ans, [frac(colors, total), frac(target, colors), frac(1, total)], [`所有可能共有 ${target}+${colors}=${total} 顆球。`, `有利結果為 ${target} 顆紅球，所以機率=${target}/${total}=${ans}。`], "機率先寫『有利結果數 / 全部等可能結果數』。", "分母是全部球數，不是另一種顏色的球數。")
+      return mc(r, 25, 2, `袋中有 ${target} 顆紅球與 ${colors} 顆藍球，每球被抽到的機會相同。隨機抽 1 顆，抽到紅球的機率為何？`, ans, [frac(colors, total), frac(target, colors), frac(1, total)], [`所有可能共有 ${target}+${colors}=${total} 顆球。`, `有利結果為 ${target} 顆紅球，所以機率=${over(target, total)}=${ans}。`], "機率先把有利結果數寫在分子，全部等可能結果數寫在分母。", "分母是全部球數，不是另一種顏色的球數。")
     }
   ];
 
@@ -175,11 +177,11 @@ window.EXAM_ENGINE = (() => {
   }
   function makePolygonQuestion(r) {
     const n = pick(r, [8, 10, 12, 15]), interior = (n - 2) * 180 / n;
-    return mc(r, 19, 4, `某正 n 邊形的一個內角為 ${interior}°，則 n 為何？`, n, [n - 2, n + 2, Math.max(5, n - 4)], [`正 n 邊形每個內角為 (n−2)×180°÷n。`, `令 (n−2)×180÷n=${interior}，解得 n=${n}。`], "也可先求外角：180°−內角，再用 360°÷外角。", "內角和是 (n−2)×180°；題目給的是『一個內角』，還要除以 n。")
+    return mc(r, 19, 4, `某正 n 邊形的一個內角為 ${interior}°，則 n 為何？`, n, [n - 2, n + 2, Math.max(5, n - 4)], [`正 n 邊形每個內角為 ${over("(n−2)×180°", "n")}。`, `令 ${over("(n−2)×180°", "n")}=${interior}°，解得 n=${n}。`], "也可先求外角：180°−內角，再用多邊形外角和 360° 去除以一個外角。", "內角和是 (n−2)×180°；題目給的是『一個內角』，還要平分給 n 個內角。")
   }
   function makeTriangleAngleQuestion(r) {
     const A = pick(r, [36, 40, 44]), B = pick(r, [62, 68, 72]), exterior = A + B, half = exterior / 2;
-    return mc(r, 18, 4, `△ABC 中，∠A=${A}°、∠B=${B}°。延長 BC 至 D，且 CE 平分外角 ∠ACD，則 ∠ECD 為何？`, `${half}°`, [`${exterior}°`, `${180 - exterior}°`, `${90 - half}°`], [`三角形外角 ∠ACD=∠A+∠B=${A}+${B}=${exterior}°。`, `CE 平分此角，所以 ∠ECD=${exterior}÷2=${half}°。`], "外角等於兩個不相鄰內角和，比先求 ∠C 再互補更快。", "角平分線要在求出整個外角後再除以 2。")
+    return mc(r, 18, 4, `△ABC 中，∠A=${A}°、∠B=${B}°。延長 BC 至 D，且 CE 平分外角 ∠ACD，則 ∠ECD 為何？`, `${half}°`, [`${exterior}°`, `${180 - exterior}°`, `${90 - half}°`], [`三角形外角 ∠ACD=∠A+∠B=${A}+${B}=${exterior}°。`, `CE 平分此角，所以 ∠ECD=${over(exterior, 2)}=${half}°。`], "外角等於兩個不相鄰內角和，比先求 ∠C 再互補更快。", "角平分線要在求出整個外角後再平分。")
   }
   function makeCircleChordQuestion(r) {
     const triple = pick(r, [[5,12,13],[8,15,17],[7,24,25]]), [distance, halfChord, radius] = triple;
