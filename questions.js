@@ -191,6 +191,57 @@ window.EXAM_ENGINE = (() => {
     return mc(r, 19, 3, "平行四邊形 ABCD 的兩條對角線交於 P。關於 P 到兩組對邊的距離，下列何者必定正確？", "P 到 AB、CD 等距，且到 AD、BC 等距", ["只到 AB、CD 等距", "只到 AD、BC 等距", "四個距離一定全部相等"], ["平行四邊形以對角線交點 P 為中心作 180° 旋轉後，AB 對應 CD、AD 對應 BC。", "旋轉保持距離，因此 P 到每一組對邊的距離分別相等。"], "對角線交點的中心對稱性可一次處理兩組對邊。", "兩組距離分別相等，不代表四個距離全部相同；只有特殊平行四邊形才可能。")
   }
 
+  function makeVolumeQuestion(r) {
+    const radius = ri(r, 2, 6), height = ri(r, 4, 10), answer = radius * radius * height;
+    return mc(r, 26, 2, `一圓柱的底面半徑為 ${radius}，高為 ${height}，其體積為多少？`, `${answer}π`, [`${2 * radius * height}π`, `${radius * radius + height}π`, `${answer * 2}π`], [`圓柱體積＝底面積×高。`, `V=π×${radius}²×${height}=${answer}π。`], "先求底面圓面積，再乘垂直高。", "側面積 2πrh 不是體積；體積單位要用立方單位。")
+  }
+
+  function makeCumulativeFrequencyQuestion(r) {
+    const counts = [ri(r, 3, 7), ri(r, 4, 8), ri(r, 3, 7), ri(r, 2, 6)];
+    const total = counts.reduce((sum, value) => sum + value, 0);
+    const cutoff = pick(r, [2, 3]);
+    const cumulative = counts.slice(0, cutoff).reduce((sum, value) => sum + value, 0);
+    const percent = Math.round(cumulative / total * 1000) / 10;
+    const previous = counts.slice(0, cutoff - 1).reduce((sum, value) => sum + value, 0);
+    return mc(r, 28, 2, `某資料分成 4 組，各組次數依序為 ${counts.join("、")}。第 ${cutoff} 組的累積相對次數最接近下列何者？`, `${percent}%`, [`${Math.round(counts[cutoff - 1] / total * 1000) / 10}%`, `${Math.round(previous / total * 1000) / 10}%`, `${Math.round(cumulative / counts.slice(0, cutoff).length * 10) / 10}%`], [`總次數為 ${counts.join("+")}=${total}。`, `第 ${cutoff} 組的累積次數為 ${counts.slice(0, cutoff).join("+")}=${cumulative}。`, `累積相對次數=${over(cumulative, total)}，約為 ${percent}%。`], "『累積』要從第一組一直加到目標組。", "不要只用目標那一組的次數除以總數。")
+  }
+
+  const quizCatalog = [
+    { id:"g7-all", grade:7, term:"總複習", title:"國一總複習", seed:7100, unitIds:[1,2,3,4,5,6,7,8,9,10,11], officialCodes:"N-7、A-7、G-7、D-7、S-7" },
+    { id:"g7-1", grade:7, term:"上學期", title:"國一上學期小考", seed:7101, unitIds:[1,2,3,4,5], officialCodes:"N-7-1～N-7-8、A-7-1～A-7-3" },
+    { id:"g7-2", grade:7, term:"下學期", title:"國一下學期小考", seed:7102, unitIds:[6,7,8,9,10,11], officialCodes:"N-7-9、A-7-4～A-7-8、G-7-1、D-7-1～D-7-2、S-7-1～S-7-5" },
+    { id:"g8-all", grade:8, term:"總複習", title:"國二總複習", seed:8200, unitIds:[12,13,14,15,28,16,17,18,19], officialCodes:"N-8、A-8、F-8、G-8、D-8、S-8" },
+    { id:"g8-1", grade:8, term:"上學期", title:"國二上學期小考", seed:8201, unitIds:[12,13,14,15,28], officialCodes:"N-8-1～N-8-2、A-8-1～A-8-7、S-8-6、G-8-1、D-8-1" },
+    { id:"g8-2", grade:8, term:"下學期", title:"國二下學期小考", seed:8202, unitIds:[16,17,18,19], officialCodes:"N-8-3～N-8-6、F-8-1～F-8-2、S-8-1～S-8-5、S-8-7～S-8-12" },
+    { id:"g9-all", grade:9, term:"總複習", title:"國三總複習", seed:9300, unitIds:[20,21,22,23,24,25,26], officialCodes:"N-9、F-9、D-9、S-9" },
+    { id:"g9-1", grade:9, term:"上學期", title:"國三上學期小考", seed:9301, unitIds:[21,22,23], officialCodes:"N-9-1、S-9-1～S-9-11" },
+    { id:"g9-2", grade:9, term:"下學期", title:"國三下學期小考", seed:9302, unitIds:[20,24,25,26], officialCodes:"F-9-1～F-9-2、D-9-1～D-9-2、S-9-12～S-9-13" }
+  ];
+
+  function makeQuizUnitQuestion(r, unitId, level) {
+    if (unitId >= 1 && unitId <= 25) return generators[unitId - 1](r, level);
+    if (unitId === 26) return r() < .5 ? makeSolidQuestion(r) : makeVolumeQuestion(r);
+    if (unitId === 28) return makeCumulativeFrequencyQuestion(r);
+    throw new Error(`小考單元 ${unitId} 尚未建立出題器`);
+  }
+
+  function generateQuiz(quizId) {
+    const blueprint = quizCatalog.find(item => item.id === quizId);
+    if (!blueprint) throw new Error("找不到指定的小考");
+    const r = rngFromSeed(blueprint.seed);
+    const sequence = [...blueprint.unitIds];
+    while (sequence.length < 12) sequence.push(blueprint.unitIds[(sequence.length - blueprint.unitIds.length) % blueprint.unitIds.length]);
+    const orderedUnits = shuffled(r, sequence.slice(0, 12));
+    const abilities = ["concept","procedure","application","concept","application","procedure","application","analysis","concept","application","procedure","analysis"];
+    const questions = orderedUnits.map((unitId, index) => {
+      const question = makeQuizUnitQuestion(r, unitId, 2);
+      question.ability = abilities[index];
+      question.officialOrder = index + 1;
+      return question;
+    });
+    return { kind:"quiz", id:`QUIZ-${blueprint.id}`, quizId:blueprint.id, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, minutes:25, questionCount:12, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"NAER-108-curriculum-grade-scope-Hanlin-term-order", questions };
+  }
+
   function makeReadingSet(r) {
     const indicated = pick(r, [46, 57, 68]), lower = Math.round((indicated - 2) / 1.1);
     const circumference = pick(r, [200, 210, 220]), coefficient = Number((circumference * 0.0006).toFixed(3));
@@ -243,5 +294,5 @@ window.EXAM_ENGINE = (() => {
     return { id:`CAP-${seed}-${level}`, seed:Number(seed), level, createdAt:new Date().toISOString(), blueprint:"115-official-10y-validated", questions };
   }
 
-  return { generate };
+  return { generate, generateQuiz, quizCatalog };
 })();

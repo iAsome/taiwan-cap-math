@@ -21,7 +21,7 @@
   const mathBlock = value => String(value).split("\n").map(line => `<span class="math-line">${renderMath(line, true)}</span>`).join("");
   const nl = mathText;
   const letters = ["A", "B", "C", "D"];
-  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", handbook: "國中數學全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" };
+  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "年級與學期小考", handbook: "國中數學全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" };
   let toastTimer;
 
   const state = {
@@ -56,6 +56,8 @@
     $("#viewTitle").textContent = viewNames[view];
     document.body.classList.remove("menu-open");
     window.scrollTo({ top: 0, behavior: "smooth" });
+    if (view === "exam") configureExamHeader();
+    if (view === "quiz") renderQuizCatalog();
     if (view === "handbook") renderHandbook();
     if (view === "atlas") renderAtlas();
     if (view === "analysis") renderAnalysis();
@@ -247,23 +249,67 @@
     $("#auditCount").textContent = state.tipVerdict === "all" && !q ? tipAudits.length : `${list.length}/${tipAudits.length}`;
   }
 
-  function beginExam() {
-    const seed = Math.max(1, Math.min(999999, Number($("#seedInput").value) || Math.floor(Date.now() % 999999)));
-    const level = Number($("#levelSelect").value) || 2;
-    state.exam = window.EXAM_ENGINE.generate(seed, level);
-    state.answers = state.exam.questions.map(q => q.type === "mc" ? null : "");
+  function renderQuizCatalog() {
+    const catalog = window.EXAM_ENGINE.quizCatalog;
+    $("#quizCatalog").innerHTML = [7, 8, 9].map(grade => {
+      const papers = catalog.filter(item => item.grade === grade);
+      return `<section class="quiz-grade-section"><div class="quiz-grade-heading"><h2>國${grade === 7 ? "一" : grade === 8 ? "二" : "三"}</h2><span>三份考卷均保證覆蓋所列官方單元</span></div><div class="quiz-card-grid">${papers.map(item => {
+        const scopeUnits = item.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean);
+        return `<article class="quiz-card ${item.term === "總複習" ? "total" : ""}"><div class="quiz-card-top"><span>${esc(item.term)}</span><small>12 題｜25 分鐘</small></div><h3>${esc(item.title)}</h3><p>四選一、即時計分、逐題詳解；題目只從此範圍生成。</p><div class="quiz-unit-list">${scopeUnits.map(title => `<span>${esc(title)}</span>`).join("")}</div><small class="quiz-official-code">課綱編碼：${esc(item.officialCodes)}</small><button class="primary" data-quiz="${item.id}">開始作答 →</button></article>`;
+      }).join("")}</div></section>`;
+    }).join("");
+    $$('[data-quiz]', $("#quizCatalog")).forEach(button => button.addEventListener("click", () => beginQuiz(button.dataset.quiz)));
+  }
+
+  function configureExamHeader() {
+    const isQuiz = state.exam?.kind === "quiz";
+    $("#examEyebrow").textContent = isQuiz ? "OFFICIAL-SCOPE QUIZ" : "FULL MOCK EXAM";
+    $("#examTitle").textContent = isQuiz ? state.exam.title : "會考數學模擬考";
+    $("#examDescription").textContent = isQuiz ? `12 題四選一，共 25 分鐘。官方課綱編碼：${state.exam.officialCodes}。` : "25 題四選一＋2 題非選擇題，共 80 分鐘。依 115 年官方能力層次與 106–115 年主題分布組卷。";
+    $("#examSetup").classList.toggle("hidden", isQuiz);
+    $("#quizExamSetup").classList.toggle("hidden", !isQuiz);
+  }
+
+  function launchAssessment(assessment) {
+    state.exam = assessment;
+    state.answers = assessment.questions.map(question => question.type === "mc" ? null : "");
     state.submitted = false;
-    state.seconds = 4800;
+    state.seconds = (assessment.minutes || 80) * 60;
     state.currentQuestion = 0;
+    setView("exam");
+    if (assessment.kind === "quiz") $$("#mainNav [data-view]").forEach(element => element.classList.toggle("active", element.dataset.view === "quiz"));
     $("#examEmpty").classList.add("hidden");
     $("#examWorkspace").classList.remove("hidden");
     $("#resultPanel").classList.add("hidden");
     $("#paper").classList.remove("submitted");
     renderExam();
     startTimer();
-    localStorage.setItem("capMath.lastSeed", seed);
-    toast(`已生成卷別 ${seed}，計時開始`);
+    toast(`${assessment.title || "考卷"}已開始計時`);
     $("#examWorkspace").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function beginExam() {
+    const seed = Math.max(1, Math.min(999999, Number($("#seedInput").value) || Math.floor(Date.now() % 999999)));
+    const level = Number($("#levelSelect").value) || 2;
+    const assessment = window.EXAM_ENGINE.generate(seed, level);
+    assessment.kind = "mock";
+    assessment.title = "國中教育會考數學科模擬題本";
+    assessment.minutes = 80;
+    launchAssessment(assessment);
+    localStorage.setItem("capMath.lastSeed", seed);
+  }
+
+  function beginQuiz(quizId) { launchAssessment(window.EXAM_ENGINE.generateQuiz(quizId)); }
+
+  function switchToFullExam() {
+    clearInterval(state.timerId);
+    state.exam = null;
+    state.answers = [];
+    state.submitted = false;
+    $("#examWorkspace").classList.add("hidden");
+    $("#resultPanel").classList.add("hidden");
+    $("#examEmpty").classList.remove("hidden");
+    configureExamHeader();
   }
 
   function startTimer() {
@@ -288,7 +334,7 @@
     const difficultyLabel = ["", "基礎", "核心", "進階", "整合", "高鑑別"];
     const abilityLabel = { concept: "概念理解", procedure: "程序執行", application: "解題應用", analysis: "分析思考" };
     const qHtml = state.exam.questions.map((q, index) => {
-      const unit = units[q.unitId - 1];
+      const unit = units.find(item => item.id === q.unitId);
       const answered = q.type === "mc" ? state.answers[index] !== null : Boolean(state.answers[index].trim());
       const choices = q.type === "mc" ? `<div class="choices">${q.choices.map((choice, ci) => {
         const selected = state.answers[index] === ci;
@@ -303,13 +349,24 @@
       </article>`;
     }).join("");
     const constructedStart = qHtml.indexOf('<article class="question constructed-question');
-    $("#paper").innerHTML = `
+    const hasConstructed = constructedStart >= 0;
+    const isQuiz = state.exam.kind === "quiz";
+    const mcCount = state.exam.questions.filter(question => question.type === "mc").length;
+    const crCount = state.exam.questions.length - mcCount;
+    const scopeTitles = isQuiz ? state.exam.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、") : "";
+    const cover = isQuiz ? `
+      <header class="paper-cover"><div><p class="eyebrow">教育部年級範圍 · ${esc(state.exam.id)}</p><h2>${esc(state.exam.title)}</h2><p>12 題四選一｜25 分鐘｜每個列出單元至少覆蓋 1 題</p></div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term)}</div></header>
+      <div class="paper-instructions"><div><strong>12</strong><span>四選一｜即時計分</span></div><div><strong>${state.exam.unitIds.length}</strong><span>範圍單元｜無超綱單元</span></div><div><strong>25 min</strong><span>先基礎、後應用分析</span></div></div>
+      <div class="quiz-paper-scope"><strong>本卷範圍</strong><span>${esc(scopeTitles)}</span><small>${esc(state.exam.officialCodes)}</small></div>` : `
       <header class="paper-cover"><div><p class="eyebrow">115 官方結構 · 十年分布校準 · ${esc(state.exam.id)}</p><h2>國中教育會考數學科模擬題本</h2><p>25 題選擇＋2 題非選｜80 分鐘｜概念 6・程序 4・應用 12・分析 5</p></div><div class="paper-stamp">115<br>官方藍圖</div></header>
-      <div class="paper-instructions"><div><strong>25</strong><span>四選一｜末段含 3 題閱讀題組</span></div><div><strong>2</strong><span>非選擇題｜策略與表達計分</span></div><div><strong>80 min</strong><span>前段基礎、後段整合分析</span></div></div>
+      <div class="paper-instructions"><div><strong>25</strong><span>四選一｜末段含 3 題閱讀題組</span></div><div><strong>2</strong><span>非選擇題｜策略與表達計分</span></div><div><strong>80 min</strong><span>前段基礎、後段整合分析</span></div></div>`;
+    const choiceHtml = hasConstructed ? qHtml.slice(0, constructedStart) : qHtml;
+    const constructedHtml = hasConstructed ? `<div class="paper-section-title"><h3>第二部分：非選擇題</h3><span>策略適切＋推導完整＋結論清楚</span></div>${qHtml.slice(constructedStart)}` : "";
+    $("#paper").innerHTML = `
+      ${cover}
       <div class="paper-section-title"><h3>第一部分：選擇題</h3><span>每題只有一個正確或最佳答案</span></div>
-      ${qHtml.slice(0, constructedStart)}
-      <div class="paper-section-title"><h3>第二部分：非選擇題</h3><span>策略適切＋推導完整＋結論清楚</span></div>
-      ${qHtml.slice(constructedStart)}`;
+      ${choiceHtml}${constructedHtml}`;
+    $("#questionTotal").textContent = state.exam.questions.length;
     if (state.submitted) $("#paper").classList.add("submitted");
     bindExamInputs();
     renderQuestionGrid();
@@ -359,23 +416,27 @@
     if (!state.exam) return;
     const count = state.exam.questions.filter((q, i) => q.type === "mc" ? state.answers[i] !== null : Boolean(state.answers[i].trim())).length;
     $("#answeredCount").textContent = count;
-    $("#answerProgress").style.width = `${count / 27 * 100}%`;
+    $("#answerProgress").style.width = `${count / state.exam.questions.length * 100}%`;
   }
 
   function submitExam(auto = false) {
     if (!state.exam || state.submitted) return;
     state.submitted = true;
     clearInterval(state.timerId);
-    const correct = state.exam.questions.slice(0, 25).filter((q, i) => state.answers[i] === q.answer).length;
-    const missed = [...new Set(state.exam.questions.slice(0, 25).map((q, i) => state.answers[i] === q.answer ? null : units[q.unitId - 1].title).filter(Boolean))];
+    const mcIndexes = state.exam.questions.map((question, index) => question.type === "mc" ? index : null).filter(index => index !== null);
+    const correct = mcIndexes.filter(index => state.answers[index] === state.exam.questions[index].answer).length;
+    const missed = [...new Set(mcIndexes.map(index => state.answers[index] === state.exam.questions[index].answer ? null : units.find(unit => unit.id === state.exam.questions[index].unitId)?.title).filter(Boolean))];
     const answered = state.exam.questions.filter((q, i) => q.type === "mc" ? state.answers[i] !== null : Boolean(state.answers[i].trim())).length;
+    const mcCount = mcIndexes.length;
+    const scoreRate = mcCount ? correct / mcCount : 0;
+    const isQuiz = state.exam.kind === "quiz";
     renderExam();
     $("#timerState").textContent = "作答已結束";
-    $("#resultPanel").innerHTML = `<div class="result-summary"><div class="result-score"><span><strong>${correct}</strong><br><small>/ 25 選擇題</small></span></div><div class="result-copy"><p class="eyebrow">${auto ? "TIME IS UP" : "RESULT"}</p><h2>${correct >= 22 ? "很穩，接下來磨非選表達。" : correct >= 18 ? "底子不錯，錯題值得立刻回補。" : correct >= 13 ? "先抓高頻觀念，分數會升得最快。" : "別急著刷更多卷，先回講義補地基。"}</h2><p>本結果是練習用原始答對數，不等同官方等級。非選擇題請依每題旁的 0–3 級分規準自評。</p><div class="missed-units">${missed.slice(0, 10).map(x => `<span>${esc(x)}</span>`).join("")}${missed.length > 10 ? `<span>另 ${missed.length - 10} 單元</span>` : ""}</div></div><button class="primary" id="reviewFirst">從第一題看詳解</button></div>`;
+    $("#resultPanel").innerHTML = `<div class="result-summary"><div class="result-score"><span><strong>${correct}</strong><br><small>/ ${mcCount} 選擇題</small></span></div><div class="result-copy"><p class="eyebrow">${auto ? "TIME IS UP" : "RESULT"}</p><h2>${scoreRate >= .88 ? "很穩，這個範圍已有成熟掌握。" : scoreRate >= .7 ? "底子不錯，把錯題對應單元立刻回補。" : scoreRate >= .5 ? "先抓本卷錯題觀念，分數會升得最快。" : "別急著刷下一卷，先回講義補地基。"}</h2><p>${isQuiz ? `本小考只計入「${esc(state.exam.title)}」的官方範圍，原始答對數不等同學校定期評量成績。` : "本結果是練習用原始答對數，不等同官方等級。非選擇題請依每題旁的 0–3 級分規準自評。"}</p><div class="missed-units">${missed.slice(0, 10).map(x => `<span>${esc(x)}</span>`).join("")}${missed.length > 10 ? `<span>另 ${missed.length - 10} 單元</span>` : ""}</div></div><button class="primary" id="reviewFirst">從第一題看詳解</button></div>`;
     $("#resultPanel").classList.remove("hidden");
     $("#reviewFirst").addEventListener("click", () => $("#question-1").scrollIntoView({ behavior: "smooth", block: "start" }));
     $("#resultPanel").scrollIntoView({ behavior: "smooth", block: "center" });
-    toast(`已交卷：作答 ${answered}/27，選擇題答對 ${correct}/25`);
+    toast(`已交卷：作答 ${answered}/${state.exam.questions.length}，選擇題答對 ${correct}/${mcCount}`);
   }
 
   function bindStaticEvents() {
@@ -389,6 +450,7 @@
     });
     $("#generateExam").addEventListener("click", beginExam);
     $("#startDefaultExam").addEventListener("click", beginExam);
+    $("#switchFullExam").addEventListener("click", switchToFullExam);
     $("#submitExam").addEventListener("click", () => submitExam(false));
     $("#printExam").addEventListener("click", () => window.print());
     $("#handbookSearch").addEventListener("input", event => { state.search = event.target.value; renderHandbook(); });
@@ -413,9 +475,11 @@
     if (lastSeed) $("#seedInput").value = lastSeed;
     if (localStorage.getItem("capMath.dark") === "1") { document.body.classList.add("dark"); $("#themeButton").textContent = "日"; }
     bindStaticEvents();
-    renderHandbook(); renderAtlas(); renderAnalysis(); renderSources(); renderArchive(); updateLearningProgress();
+    renderQuizCatalog(); renderHandbook(); renderAtlas(); renderAnalysis(); renderSources(); renderArchive(); updateLearningProgress();
     const requestedView = params.get("view");
-    if (requestedView && viewNames[requestedView]) setView(requestedView);
+    const requestedQuiz = params.get("quiz");
+    if (requestedQuiz && window.EXAM_ENGINE.quizCatalog.some(item => item.id === requestedQuiz)) beginQuiz(requestedQuiz);
+    else if (requestedView && viewNames[requestedView]) setView(requestedView);
   }
   init();
 })();

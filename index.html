@@ -20,6 +20,7 @@
       <nav id="mainNav">
         <button data-view="home" class="active"><span>⌂</span>總覽</button>
         <button data-view="exam"><span>✎</span>模擬考</button>
+        <button data-view="quiz" class="nav-sub"><span>↳</span>小考</button>
         <button data-view="handbook"><span>▤</span>全冊講義</button>
         <button data-view="atlas"><span>◇</span>題型地圖</button>
         <button data-view="analysis"><span>▥</span>十年分析</button>
@@ -48,7 +49,7 @@
             <div class="hero-copy">
               <p class="eyebrow">TAIWAN CAP MATH · 106–115</p>
               <h1 id="homeTitle">把會考數學，整理成一條看得見的路。</h1>
-              <p>27 個國中單元、六大命題主題、近十年官方題本，一個地方練完。每份模考依最新官方能力比例與十年實際分布組卷，交卷後逐題拆解「為什麼」。</p>
+              <p>28 個國中單元、六大命題主題、近十年官方題本，一個地方練完。每份模考依最新官方能力比例與十年實際分布組卷，交卷後逐題拆解「為什麼」。</p>
               <div class="hero-actions">
                 <button class="primary" data-view="exam">生成一份完整模考 <span>→</span></button>
                 <button class="secondary" data-view="handbook">打開全冊講義</button>
@@ -78,7 +79,7 @@
             </div>
             <div class="feature-grid">
               <button class="feature-card coral" data-view="exam"><span class="feature-icon">✎</span><small>EXAM</small><h3>全範圍模擬考</h3><p>依 115 年規格生成，含計時、答案卡、非選擇題作答區與逐題詳解。</p><b>開始生成 →</b></button>
-              <button class="feature-card green" data-view="handbook"><span class="feature-icon">▤</span><small>HANDBOOK</small><h3>國一到國三講義</h3><p>27 單元的觀念澄清、公式推導、解題流程、陷阱與單元小測。</p><b>閱讀講義 →</b></button>
+              <button class="feature-card green" data-view="handbook"><span class="feature-icon">▤</span><small>HANDBOOK</small><h3>國一到國三講義</h3><p>28 單元的觀念澄清、公式推導、解題流程、陷阱與單元小測。</p><b>閱讀講義 →</b></button>
               <button class="feature-card blue" data-view="atlas"><span class="feature-icon">◇</span><small>ATLAS</small><h3>題型與技巧地圖</h3><p>六大命題主題、閱讀情境題、圖表題與非選題得分策略。</p><b>查看地圖 →</b></button>
               <button class="feature-card gold" data-view="archive"><span class="feature-icon">◷</span><small>ARCHIVE</small><h3>近十年官方考卷</h3><p>106–115 年數學題本、參考答案與官方試題說明集中入口。</p><b>打開考卷館 →</b></button>
             </div>
@@ -92,12 +93,13 @@
 
         <section class="view" id="view-exam" aria-labelledby="examTitle">
           <div class="page-heading exam-heading">
-            <div><p class="eyebrow">FULL MOCK EXAM</p><h1 id="examTitle">會考數學模擬考</h1><p>25 題四選一＋2 題非選擇題，共 80 分鐘。依 115 年官方能力層次與 106–115 年主題分布組卷。</p></div>
+            <div><p class="eyebrow" id="examEyebrow">FULL MOCK EXAM</p><h1 id="examTitle">會考數學模擬考</h1><p id="examDescription">25 題四選一＋2 題非選擇題，共 80 分鐘。依 115 年官方能力層次與 106–115 年主題分布組卷。</p></div>
             <div class="exam-controls" id="examSetup">
               <label>卷別種子<input id="seedInput" type="number" min="1" max="999999" value="11527"></label>
               <label>數值強度<select id="levelSelect"><option value="1">穩固基礎</option><option value="2" selected>會考平衡</option><option value="3">高鑑別度</option></select></label>
               <button class="primary" id="generateExam">生成新考卷</button>
             </div>
+            <div class="exam-controls hidden" id="quizExamSetup"><button class="secondary" data-view="quiz">返回九份小考</button><button class="primary" id="switchFullExam">切換完整模考</button></div>
           </div>
           <div id="examEmpty" class="exam-empty">
             <div class="empty-mark">25＋2</div><h2>準備好再按開始。</h2><p>系統會依種子產生不同數值與選項；同一種子可重現同一份試卷。</p><button class="primary" id="startDefaultExam">生成並開始</button>
@@ -105,7 +107,7 @@
           <div id="examWorkspace" class="exam-workspace hidden">
             <aside class="exam-rail">
               <div class="timer-card"><span>剩餘時間</span><strong id="timer">80:00</strong><small id="timerState">模擬正式考試</small></div>
-              <div class="progress-card"><span><b id="answeredCount">0</b> / 27 已作答</span><div><i id="answerProgress"></i></div></div>
+              <div class="progress-card"><span><b id="answeredCount">0</b> / <b id="questionTotal">27</b> 已作答</span><div><i id="answerProgress"></i></div></div>
               <div class="question-grid" id="questionGrid" aria-label="題號導覽"></div>
               <div class="rail-legend"><span><i class="done"></i>已作答</span><span><i class="current"></i>目前</span></div>
               <button class="primary full" id="submitExam">交卷並看詳解</button>
@@ -116,10 +118,18 @@
           <div id="resultPanel" class="result-panel hidden"></div>
         </section>
 
+        <section class="view" id="view-quiz" aria-labelledby="quizTitle">
+          <div class="page-heading">
+            <div><p class="eyebrow">GRADE-SPECIFIC QUIZZES</p><h1 id="quizTitle">國一至國三學期小考</h1><p>共 9 份：每個年級含總複習、上學期與下學期。每份 12 題四選一、25 分鐘，交卷後可查看逐題詳解。</p></div>
+          </div>
+          <div class="quiz-basis"><strong>範圍邊界</strong><p>年級學習內容直接依國家教育研究院《十二年國教數學領域課程綱要》之 N、A、F、G、D、S 年級編碼；上下學期順序以翰林版公開章節及學校教學進度交叉核對。公開段考卷只用於校準題幹長度與難度，不擴張官方範圍。</p><a href="official-data/curriculum/十二年國教數學領域課程綱要.pdf" target="_blank" rel="noopener">開啟官方數學課綱 ↗</a></div>
+          <div id="quizCatalog" class="quiz-catalog"></div>
+        </section>
+
         <section class="view" id="view-handbook" aria-labelledby="handbookTitle">
           <div class="page-heading">
             <div><p class="eyebrow">GRADE 7 → GRADE 9</p><h1 id="handbookTitle">國中數學全冊會考講義</h1><p>用「觀念 → 推導 → 流程 → 陷阱 → 小測」串起每個單元。公式採臺灣國中課堂慣用符號，並以翰林版本資料作第二層對照；分數全部以上下堆疊式呈現。</p></div>
-            <div class="handbook-progress"><strong id="completedUnits">0 / 27</strong><span>單元已掌握</span><div><i id="handbookBar"></i></div></div>
+            <div class="handbook-progress"><strong id="completedUnits">0 / 28</strong><span>單元已掌握</span><div><i id="handbookBar"></i></div></div>
           </div>
           <div class="filterbar">
             <label class="search"><span>⌕</span><input id="handbookSearch" type="search" placeholder="搜尋單元、公式或觀念"></label>
