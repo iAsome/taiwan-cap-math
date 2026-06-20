@@ -141,7 +141,7 @@ h1, h2 { font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, 
 .quiz-unit-list { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 15px; }
 .quiz-unit-list span { border: 1px solid #d7ded9; border-radius: 5px; padding: 4px 6px; font-size: .59rem; }
 .quiz-official-code { display: block; margin-top: auto; margin-bottom: 13px; color: var(--blue); font-size: .6rem; line-height: 1.55; }
-.quiz-card .primary { width: 100%; }
+.quiz-card .primary { width: 100%; display: grid; place-items: center; text-decoration: none; }
 
 .page-heading { max-width: 1260px; display: flex; align-items: flex-end; justify-content: space-between; gap: 35px; margin: 0 auto 34px; }
 .page-heading h1 { margin-bottom: 10px; font-size: clamp(2rem, 3.4vw, 3.2rem); }

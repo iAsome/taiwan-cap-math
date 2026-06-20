@@ -53,7 +53,7 @@ window.CAP_ANALYSIS = (() => {
     crAbilities: { application: 2, analysis: 0 },
     domainTargets: { "數與量": [7,9], "空間與形狀": [8,9], "代數": [4,5], "資料與不確定性": [2,3], "坐標幾何": [1,1], "函數": [2,3] },
     presentation: { readingSetItems: [2,3], geometryItems: [8,9], contextItems: [5,8], chartItems: [0,2], constructed: 2 },
-    ordering: "前段以概念與程序為主，中後段提高情境整合與分析；閱讀題組置於選擇題末段；非選擇題置於第二部分。"
+    ordering: "25 題選擇題的單題與題組區塊依卷別種子打亂；閱讀題組內容保持連續；兩題非選擇題依然置於第二部分，但兩題順序也會依種子變化。"
   };
 
   return { primaryUnits, officialByYear, formByYear, domainByUnit, strictBlueprint };

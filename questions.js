@@ -281,7 +281,7 @@ window.EXAM_ENGINE = (() => {
 
   function generate(seed, level = 2) {
     const r = rngFromSeed(`${seed}`.split("").reduce((a,c)=>a*31+c.charCodeAt(0), 7) + level * 100003);
-    const questions = [
+    const baseQuestions = [
       generators[5](r,level), makeSolidQuestion(r), generators[12](r,level), generators[24](r,level), generators[11](r,level),
       generators[9](r,level), makePolynomialDivision(r), generators[1](r,level), generators[14](r,level), generators[7](r,level),
       generators[0](r,level), makeCongruenceQuestion(r), generators[6](r,level), generators[23](r,level), makePolygonQuestion(r),
@@ -289,8 +289,20 @@ window.EXAM_ENGINE = (() => {
       generators[20](r,level), makeParallelogramQuestion(r), ...makeReadingSet(r)
     ];
     const abilities = ["procedure","concept","procedure","application","procedure","application","procedure","application","concept","application","analysis","application","concept","concept","analysis","analysis","application","application","analysis","concept","application","concept","application","application","analysis"];
-    questions.forEach((q,i)=>{q.ability=abilities[i];q.officialOrder=i+1;});
-    questions.push(...makeConstructed(r));
+    baseQuestions.forEach((question, index) => { question.ability = abilities[index]; });
+    const readingIds = new Set(baseQuestions.map(question => question.passageId).filter(Boolean));
+    const blocks = [];
+    baseQuestions.forEach(question => {
+      if (!question.passageId) blocks.push([question]);
+      else if (readingIds.has(question.passageId)) {
+        blocks.push(baseQuestions.filter(item => item.passageId === question.passageId));
+        readingIds.delete(question.passageId);
+      }
+    });
+    const shuffledChoices = shuffled(r, blocks).flat();
+    const shuffledConstructed = shuffled(r, makeConstructed(r));
+    const questions = [...shuffledChoices, ...shuffledConstructed];
+    questions.forEach((question, index) => { question.officialOrder = index + 1; });
     return { id:`CAP-${seed}-${level}`, seed:Number(seed), level, createdAt:new Date().toISOString(), blueprint:"115-official-10y-validated", questions };
   }
 

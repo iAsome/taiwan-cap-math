@@ -235,7 +235,7 @@
       ["✓ 官方能力層次", `概念 6、程序 4、應用 12、分析 5`],
       ["✓ 六大主題區間", domainText],
       ["✓ 呈現形式", `閱讀題組 ${bp.presentation.readingSetItems[0]}–${bp.presentation.readingSetItems[1]} 題；附圖幾何 ${bp.presentation.geometryItems[0]}–${bp.presentation.geometryItems[1]} 題`],
-      ["✓ 作答節奏", "前段基礎、後段整合；題組在末段；非選在第二部分"],
+      ["✓ 題型排序", "選擇題依卷別種子打亂；閱讀題組保持連續；非選仍在第二部分"],
       ["✓ 非選評分", "策略適切、過程合理完整、結論含單位與情境解釋"]
     ].map(([title, detail]) => `<div class="blueprint-check"><strong>${title}</strong><span>${esc(detail)}</span></div>`).join("");
   }
@@ -255,10 +255,9 @@
       const papers = catalog.filter(item => item.grade === grade);
       return `<section class="quiz-grade-section"><div class="quiz-grade-heading"><h2>國${grade === 7 ? "一" : grade === 8 ? "二" : "三"}</h2><span>三份考卷均保證覆蓋所列官方單元</span></div><div class="quiz-card-grid">${papers.map(item => {
         const scopeUnits = item.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean);
-        return `<article class="quiz-card ${item.term === "總複習" ? "total" : ""}"><div class="quiz-card-top"><span>${esc(item.term)}</span><small>12 題｜25 分鐘</small></div><h3>${esc(item.title)}</h3><p>四選一、即時計分、逐題詳解；題目只從此範圍生成。</p><div class="quiz-unit-list">${scopeUnits.map(title => `<span>${esc(title)}</span>`).join("")}</div><small class="quiz-official-code">課綱編碼：${esc(item.officialCodes)}</small><button class="primary" data-quiz="${item.id}">開始作答 →</button></article>`;
+        return `<article class="quiz-card ${item.term === "總複習" ? "total" : ""}"><div class="quiz-card-top"><span>${esc(item.term)}</span><small>12 題｜25 分鐘</small></div><h3>${esc(item.title)}</h3><p>四選一、即時計分、逐題詳解；題目只從此範圍生成。</p><div class="quiz-unit-list">${scopeUnits.map(title => `<span>${esc(title)}</span>`).join("")}</div><small class="quiz-official-code">課綱編碼：${esc(item.officialCodes)}</small><a class="primary" href="?quiz=${item.id}">開始作答 →</a></article>`;
       }).join("")}</div></section>`;
     }).join("");
-    $$('[data-quiz]', $("#quizCatalog")).forEach(button => button.addEventListener("click", () => beginQuiz(button.dataset.quiz)));
   }
 
   function configureExamHeader() {
@@ -359,7 +358,7 @@
       <div class="paper-instructions"><div><strong>12</strong><span>四選一｜即時計分</span></div><div><strong>${state.exam.unitIds.length}</strong><span>範圍單元｜無超綱單元</span></div><div><strong>25 min</strong><span>先基礎、後應用分析</span></div></div>
       <div class="quiz-paper-scope"><strong>本卷範圍</strong><span>${esc(scopeTitles)}</span><small>${esc(state.exam.officialCodes)}</small></div>` : `
       <header class="paper-cover"><div><p class="eyebrow">115 官方結構 · 十年分布校準 · ${esc(state.exam.id)}</p><h2>國中教育會考數學科模擬題本</h2><p>25 題選擇＋2 題非選｜80 分鐘｜概念 6・程序 4・應用 12・分析 5</p></div><div class="paper-stamp">115<br>官方藍圖</div></header>
-      <div class="paper-instructions"><div><strong>25</strong><span>四選一｜末段含 3 題閱讀題組</span></div><div><strong>2</strong><span>非選擇題｜策略與表達計分</span></div><div><strong>80 min</strong><span>前段基礎、後段整合分析</span></div></div>`;
+      <div class="paper-instructions"><div><strong>25</strong><span>四選一｜含 3 題連續閱讀題組</span></div><div><strong>2</strong><span>非選擇題｜策略與表達計分</span></div><div><strong>80 min</strong><span>題型順序依卷別種子打亂</span></div></div>`;
     const choiceHtml = hasConstructed ? qHtml.slice(0, constructedStart) : qHtml;
     const constructedHtml = hasConstructed ? `<div class="paper-section-title"><h3>第二部分：非選擇題</h3><span>策略適切＋推導完整＋結論清楚</span></div>${qHtml.slice(constructedStart)}` : "";
     $("#paper").innerHTML = `
