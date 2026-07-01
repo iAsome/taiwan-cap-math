@@ -1,0 +1,33 @@
+{
+  "id": "u1",
+  "title": "地球的水與地貌：地球上的水與水循環",
+  "group": 1,
+  "scope": "chapter",
+  "officialCodes": "EARTH-01",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "地球上的水與水循環",
+      "topics": [
+        {
+          "id": "water-distribution",
+          "title": "地球水量分布"
+        },
+        {
+          "id": "freshwater-form",
+          "title": "淡水的主要存在形式"
+        },
+        {
+          "id": "water-cycle-driver",
+          "title": "水循環的動力來源"
+        }
+      ]
+    }
+  ]
+}

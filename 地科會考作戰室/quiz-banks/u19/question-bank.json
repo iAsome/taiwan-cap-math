@@ -1,0 +1,33 @@
+{
+  "id": "u19",
+  "title": "天氣與環境變遷：氣團、鋒面與天氣系統",
+  "group": 5,
+  "scope": "chapter",
+  "officialCodes": "EARTH-19",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "氣團、鋒面與天氣系統",
+      "topics": [
+        {
+          "id": "front-type",
+          "title": "冷鋒與暖鋒的判斷"
+        },
+        {
+          "id": "meiyu-front",
+          "title": "梅雨鋒面的類型"
+        },
+        {
+          "id": "typhoon-eye",
+          "title": "颱風結構特徵"
+        }
+      ]
+    }
+  ]
+}

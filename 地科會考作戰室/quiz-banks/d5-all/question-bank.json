@@ -1,0 +1,84 @@
+{
+  "id": "d5-all",
+  "title": "天氣與環境變遷．領域總複習",
+  "group": 5,
+  "scope": "review",
+  "officialCodes": "EARTH-天氣與環境變遷",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 12,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "大氣的組成與結構",
+      "topics": [
+        {
+          "id": "air-composition",
+          "title": "大氣的主要成分"
+        },
+        {
+          "id": "troposphere-weather",
+          "title": "天氣現象發生的大氣層"
+        },
+        {
+          "id": "ozone-layer",
+          "title": "臭氧層的位置與功能"
+        }
+      ]
+    },
+    {
+      "title": "水氣、雲與降水",
+      "topics": [
+        {
+          "id": "saturation",
+          "title": "水氣凝結的條件"
+        },
+        {
+          "id": "orographic-rain",
+          "title": "地形雨的成因"
+        },
+        {
+          "id": "cloud-vs-fog",
+          "title": "雲與霧的關係"
+        }
+      ]
+    },
+    {
+      "title": "氣團、鋒面與天氣系統",
+      "topics": [
+        {
+          "id": "front-type",
+          "title": "冷鋒與暖鋒的判斷"
+        },
+        {
+          "id": "meiyu-front",
+          "title": "梅雨鋒面的類型"
+        },
+        {
+          "id": "typhoon-eye",
+          "title": "颱風結構特徵"
+        }
+      ]
+    },
+    {
+      "title": "天然災害與環境變遷",
+      "topics": [
+        {
+          "id": "greenhouse-effect",
+          "title": "溫室效應的機制"
+        },
+        {
+          "id": "el-nino",
+          "title": "聖嬰現象的特徵"
+        },
+        {
+          "id": "ocean-current-climate",
+          "title": "洋流對氣候的影響"
+        }
+      ]
+    }
+  ]
+}

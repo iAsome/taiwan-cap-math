@@ -1,0 +1,63 @@
+{
+  "id": "g9-1",
+  "title": "國三上學期總複習",
+  "grade": 9,
+  "term": "上學期",
+  "chapter": null,
+  "scope": "term",
+  "officialCodes": "文言實虛詞、應用文對聯柬帖、書體演變常識",
+  "runtime": {
+    "generator": "questions.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 6,
+    "minutes": 25,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "units": [
+    {
+      "unitId": 10,
+      "title": "文言常用實詞與虛詞的詞義",
+      "grade": 9,
+      "domain": "詞語的理解與使用",
+      "bank": {
+        "purpose": "Question-bank drills: pre-authored variant pool for this unit, seeded random pick + shuffled choices.",
+        "templateSource": "questions.js / bank / unit 10",
+        "guardrails": [
+          "Junior-high CAP Chinese scope only.",
+          "Each unit keeps a reviewed pool of 2-3 question variants; answers/steps/tips are authored, not generated.",
+          "Reading-set items keep the shared passage separate from the question stem."
+        ]
+      }
+    },
+    {
+      "unitId": 15,
+      "title": "應用文格式：對聯、題辭、柬帖",
+      "grade": 9,
+      "domain": "基本的語文常識",
+      "bank": {
+        "purpose": "Question-bank drills: pre-authored variant pool for this unit, seeded random pick + shuffled choices.",
+        "templateSource": "questions.js / bank / unit 15",
+        "guardrails": [
+          "Junior-high CAP Chinese scope only.",
+          "Each unit keeps a reviewed pool of 2-3 question variants; answers/steps/tips are authored, not generated.",
+          "Reading-set items keep the shared passage separate from the question stem."
+        ]
+      }
+    },
+    {
+      "unitId": 16,
+      "title": "書體演變與碑帖欣賞常識",
+      "grade": 9,
+      "domain": "基本的語文常識",
+      "bank": {
+        "purpose": "Question-bank drills: pre-authored variant pool for this unit, seeded random pick + shuffled choices.",
+        "templateSource": "questions.js / bank / unit 16",
+        "guardrails": [
+          "Junior-high CAP Chinese scope only.",
+          "Each unit keeps a reviewed pool of 2-3 question variants; answers/steps/tips are authored, not generated.",
+          "Reading-set items keep the shared passage separate from the question stem."
+        ]
+      }
+    }
+  ]
+}

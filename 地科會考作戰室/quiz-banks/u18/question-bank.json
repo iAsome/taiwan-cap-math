@@ -1,0 +1,33 @@
+{
+  "id": "u18",
+  "title": "天氣與環境變遷：水氣、雲與降水",
+  "group": 5,
+  "scope": "chapter",
+  "officialCodes": "EARTH-18",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "水氣、雲與降水",
+      "topics": [
+        {
+          "id": "saturation",
+          "title": "水氣凝結的條件"
+        },
+        {
+          "id": "orographic-rain",
+          "title": "地形雨的成因"
+        },
+        {
+          "id": "cloud-vs-fog",
+          "title": "雲與霧的關係"
+        }
+      ]
+    }
+  ]
+}

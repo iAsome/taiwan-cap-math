@@ -1,0 +1,33 @@
+{
+  "id": "u16",
+  "title": "天文與地球運動：潮汐",
+  "group": 4,
+  "scope": "chapter",
+  "officialCodes": "EARTH-16",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "潮汐",
+      "topics": [
+        {
+          "id": "tide-cause",
+          "title": "潮汐的成因"
+        },
+        {
+          "id": "spring-neap-tide",
+          "title": "大潮與小潮"
+        },
+        {
+          "id": "two-high-tides",
+          "title": "一天的潮汐次數"
+        }
+      ]
+    }
+  ]
+}

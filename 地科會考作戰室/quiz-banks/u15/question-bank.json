@@ -1,0 +1,33 @@
+{
+  "id": "u15",
+  "title": "天文與地球運動：月相、日食與月食",
+  "group": 4,
+  "scope": "chapter",
+  "officialCodes": "EARTH-15",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "月相、日食與月食",
+      "topics": [
+        {
+          "id": "phase-cause",
+          "title": "月相變化的成因"
+        },
+        {
+          "id": "eclipse-condition",
+          "title": "日食與月食的發生條件"
+        },
+        {
+          "id": "synodic-month",
+          "title": "月相週期"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "u2",
+  "title": "地球的水與地貌：地下水、河川與湖泊",
+  "group": 1,
+  "scope": "chapter",
+  "officialCodes": "EARTH-02",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "地下水、河川與湖泊",
+      "topics": [
+        {
+          "id": "aquifer-position",
+          "title": "地下水面與含水層"
+        },
+        {
+          "id": "river-stage",
+          "title": "河川上中下游的地質作用"
+        },
+        {
+          "id": "groundwater-subsidence",
+          "title": "超抽地下水與地層下陷"
+        }
+      ]
+    }
+  ]
+}

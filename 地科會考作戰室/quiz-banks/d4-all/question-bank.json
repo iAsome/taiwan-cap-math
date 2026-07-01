@@ -1,0 +1,84 @@
+{
+  "id": "d4-all",
+  "title": "天文與地球運動．領域總複習",
+  "group": 4,
+  "scope": "review",
+  "officialCodes": "EARTH-天文與地球運動",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 12,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "宇宙與太陽系",
+      "topics": [
+        {
+          "id": "planet-light",
+          "title": "行星為何能被看見"
+        },
+        {
+          "id": "distance-unit",
+          "title": "天文距離單位"
+        },
+        {
+          "id": "planet-order",
+          "title": "行星依距太陽遠近排序"
+        }
+      ]
+    },
+    {
+      "title": "地球的運動：晝夜與四季",
+      "topics": [
+        {
+          "id": "day-night-cause",
+          "title": "晝夜交替的成因"
+        },
+        {
+          "id": "season-cause",
+          "title": "四季變化的成因"
+        },
+        {
+          "id": "hemisphere-season",
+          "title": "南北半球季節相反"
+        }
+      ]
+    },
+    {
+      "title": "月相、日食與月食",
+      "topics": [
+        {
+          "id": "phase-cause",
+          "title": "月相變化的成因"
+        },
+        {
+          "id": "eclipse-condition",
+          "title": "日食與月食的發生條件"
+        },
+        {
+          "id": "synodic-month",
+          "title": "月相週期"
+        }
+      ]
+    },
+    {
+      "title": "潮汐",
+      "topics": [
+        {
+          "id": "tide-cause",
+          "title": "潮汐的成因"
+        },
+        {
+          "id": "spring-neap-tide",
+          "title": "大潮與小潮"
+        },
+        {
+          "id": "two-high-tides",
+          "title": "一天的潮汐次數"
+        }
+      ]
+    }
+  ]
+}

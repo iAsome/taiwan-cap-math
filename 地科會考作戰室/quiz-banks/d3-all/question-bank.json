@@ -1,0 +1,84 @@
+{
+  "id": "d3-all",
+  "title": "地球構造與板塊運動．領域總複習",
+  "group": 3,
+  "scope": "review",
+  "officialCodes": "EARTH-地球構造與板塊運動",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 12,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "地球的分層構造",
+      "topics": [
+        {
+          "id": "chemical-layers",
+          "title": "依化學成分的分層"
+        },
+        {
+          "id": "lithosphere-asthenosphere",
+          "title": "岩石圈與軟流圈"
+        },
+        {
+          "id": "crust-comparison",
+          "title": "陸殼與洋殼比較"
+        }
+      ]
+    },
+    {
+      "title": "板塊運動與板塊邊界",
+      "topics": [
+        {
+          "id": "boundary-type",
+          "title": "三種板塊邊界的判斷"
+        },
+        {
+          "id": "subduction",
+          "title": "海洋板塊與大陸板塊聚合"
+        },
+        {
+          "id": "taiwan-plate",
+          "title": "台灣所處的板塊位置"
+        }
+      ]
+    },
+    {
+      "title": "火山與地震",
+      "topics": [
+        {
+          "id": "magnitude-vs-intensity",
+          "title": "地震規模與震度的區辨"
+        },
+        {
+          "id": "magnitude-energy",
+          "title": "地震規模與能量關係"
+        },
+        {
+          "id": "volcano-plate",
+          "title": "火山活動與板塊邊界"
+        }
+      ]
+    },
+    {
+      "title": "褶皺、斷層與台灣的地質",
+      "topics": [
+        {
+          "id": "anticline-syncline",
+          "title": "背斜與向斜的判斷"
+        },
+        {
+          "id": "fault-type",
+          "title": "斷層類型判斷"
+        },
+        {
+          "id": "taiwan-reverse-fault",
+          "title": "台灣的構造特徵"
+        }
+      ]
+    }
+  ]
+}

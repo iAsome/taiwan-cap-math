@@ -1,0 +1,33 @@
+{
+  "id": "u19",
+  "title": "統整多重文本、比較觀點",
+  "grade": 9,
+  "term": "下學期",
+  "chapter": "4",
+  "scope": "chapter",
+  "officialCodes": "文本的統整與應用",
+  "runtime": {
+    "generator": "questions.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 15,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "units": [
+    {
+      "unitId": 19,
+      "title": "統整多重文本、比較觀點",
+      "grade": 9,
+      "domain": "文本的統整與應用",
+      "bank": {
+        "purpose": "Question-bank drills: pre-authored variant pool for this unit, seeded random pick + shuffled choices.",
+        "templateSource": "questions.js / bank / unit 19",
+        "guardrails": [
+          "Junior-high CAP Chinese scope only.",
+          "Each unit keeps a reviewed pool of 2-3 question variants; answers/steps/tips are authored, not generated.",
+          "Reading-set items keep the shared passage separate from the question stem."
+        ]
+      }
+    }
+  ]
+}

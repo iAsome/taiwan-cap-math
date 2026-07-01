@@ -1,0 +1,84 @@
+{
+  "id": "d2-all",
+  "title": "岩石與礦物．領域總複習",
+  "group": 2,
+  "scope": "review",
+  "officialCodes": "EARTH-岩石與礦物",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 12,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "礦物的性質與鑑定",
+      "topics": [
+        {
+          "id": "streak-vs-color",
+          "title": "條痕色與表面顏色"
+        },
+        {
+          "id": "mohs-scale",
+          "title": "摩氏硬度計原理"
+        },
+        {
+          "id": "cleavage",
+          "title": "解理與斷口"
+        }
+      ]
+    },
+    {
+      "title": "火成岩的形成與分類",
+      "topics": [
+        {
+          "id": "cooling-rate-texture",
+          "title": "冷卻速度與顆粒粗細"
+        },
+        {
+          "id": "granite-basalt",
+          "title": "花岡岩與玄武岩比較"
+        },
+        {
+          "id": "vesicle",
+          "title": "玄武岩的氣孔構造"
+        }
+      ]
+    },
+    {
+      "title": "沉積岩的形成與分類",
+      "topics": [
+        {
+          "id": "clastic-classification",
+          "title": "碎屑岩依顆粒大小分類"
+        },
+        {
+          "id": "superposition",
+          "title": "地層對比原則"
+        },
+        {
+          "id": "chemical-organic-rock",
+          "title": "化學沉積岩與生物沉積岩"
+        }
+      ]
+    },
+    {
+      "title": "變質岩與岩石循環",
+      "topics": [
+        {
+          "id": "metamorphism-def",
+          "title": "變質作用的定義"
+        },
+        {
+          "id": "shale-series",
+          "title": "頁岩系列變質程度"
+        },
+        {
+          "id": "marble-origin",
+          "title": "大理岩的原岩"
+        }
+      ]
+    }
+  ]
+}

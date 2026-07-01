@@ -1,0 +1,33 @@
+{
+  "id": "u11",
+  "title": "地球構造與板塊運動：火山與地震",
+  "group": 3,
+  "scope": "chapter",
+  "officialCodes": "EARTH-11",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "火山與地震",
+      "topics": [
+        {
+          "id": "magnitude-vs-intensity",
+          "title": "地震規模與震度的區辨"
+        },
+        {
+          "id": "magnitude-energy",
+          "title": "地震規模與能量關係"
+        },
+        {
+          "id": "volcano-plate",
+          "title": "火山活動與板塊邊界"
+        }
+      ]
+    }
+  ]
+}

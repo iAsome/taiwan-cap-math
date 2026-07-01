@@ -1,0 +1,33 @@
+{
+  "id": "u14",
+  "title": "天文與地球運動：地球的運動：晝夜與四季",
+  "group": 4,
+  "scope": "chapter",
+  "officialCodes": "EARTH-14",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "地球的運動：晝夜與四季",
+      "topics": [
+        {
+          "id": "day-night-cause",
+          "title": "晝夜交替的成因"
+        },
+        {
+          "id": "season-cause",
+          "title": "四季變化的成因"
+        },
+        {
+          "id": "hemisphere-season",
+          "title": "南北半球季節相反"
+        }
+      ]
+    }
+  ]
+}

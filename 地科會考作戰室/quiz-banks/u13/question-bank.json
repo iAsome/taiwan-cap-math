@@ -1,0 +1,33 @@
+{
+  "id": "u13",
+  "title": "天文與地球運動：宇宙與太陽系",
+  "group": 4,
+  "scope": "chapter",
+  "officialCodes": "EARTH-13",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "宇宙與太陽系",
+      "topics": [
+        {
+          "id": "planet-light",
+          "title": "行星為何能被看見"
+        },
+        {
+          "id": "distance-unit",
+          "title": "天文距離單位"
+        },
+        {
+          "id": "planet-order",
+          "title": "行星依距太陽遠近排序"
+        }
+      ]
+    }
+  ]
+}

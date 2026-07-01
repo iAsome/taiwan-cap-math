@@ -1,0 +1,84 @@
+{
+  "id": "d1-all",
+  "title": "地球的水與地貌．領域總複習",
+  "group": 1,
+  "scope": "review",
+  "officialCodes": "EARTH-地球的水與地貌",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 12,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "地球上的水與水循環",
+      "topics": [
+        {
+          "id": "water-distribution",
+          "title": "地球水量分布"
+        },
+        {
+          "id": "freshwater-form",
+          "title": "淡水的主要存在形式"
+        },
+        {
+          "id": "water-cycle-driver",
+          "title": "水循環的動力來源"
+        }
+      ]
+    },
+    {
+      "title": "地下水、河川與湖泊",
+      "topics": [
+        {
+          "id": "aquifer-position",
+          "title": "地下水面與含水層"
+        },
+        {
+          "id": "river-stage",
+          "title": "河川上中下游的地質作用"
+        },
+        {
+          "id": "groundwater-subsidence",
+          "title": "超抽地下水與地層下陷"
+        }
+      ]
+    },
+    {
+      "title": "風化作用與侵蝕作用",
+      "topics": [
+        {
+          "id": "weathering-vs-erosion",
+          "title": "風化與侵蝕的區分"
+        },
+        {
+          "id": "physical-vs-chemical",
+          "title": "物理風化與化學風化"
+        },
+        {
+          "id": "climate-weathering",
+          "title": "氣候與風化類型的關係"
+        }
+      ]
+    },
+    {
+      "title": "搬運、沉積與地貌改變",
+      "topics": [
+        {
+          "id": "deposition-trigger",
+          "title": "沉積作用發生的條件"
+        },
+        {
+          "id": "landform-match",
+          "title": "沉積地形與位置對應"
+        },
+        {
+          "id": "sorting-grain-size",
+          "title": "沉積物分選現象"
+        }
+      ]
+    }
+  ]
+}
