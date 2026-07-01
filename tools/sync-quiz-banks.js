@@ -4,11 +4,12 @@ const vm = require("node:vm");
 
 const root = path.resolve(__dirname, "..");
 const context = { window: {}, console };
-for (const file of ["data.js", "analysis-data.js", "questions.js"]) {
+for (const file of ["data.js", "analysis-data.js", "quiz-taxonomy.js", "questions.js"]) {
   vm.runInNewContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
 }
 
 const { units } = context.window.MATH_DATA;
+const taxonomy = context.window.QUIZ_TAXONOMY || {};
 const { quizCatalog, allowsAdvanced } = context.window.EXAM_ENGINE;
 const outRoot = path.join(root, "quiz-banks");
 fs.mkdirSync(outRoot, { recursive: true });
@@ -59,6 +60,7 @@ for (const quiz of quizCatalog) {
       nonRepeatPolicy: "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
       levelSplit: "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
     },
+    taxonomy: taxonomy[quiz.id]?.sections || [],
     units: quiz.unitIds.map(id => familyByUnit(units.find(unit => unit.id === id))).filter(Boolean)
   };
   fs.writeFileSync(path.join(dir, "question-bank.json"), `${JSON.stringify(bank, null, 2)}\n`, "utf8");

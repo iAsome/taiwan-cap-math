@@ -1,5 +1,6 @@
 window.EXAM_ENGINE = (() => {
   const U = window.MATH_DATA.units;
+  const quizTaxonomy = window.QUIZ_TAXONOMY || {};
 
   function rngFromSeed(seed) {
     let a = (Number(seed) || 1) >>> 0;
@@ -208,6 +209,8 @@ window.EXAM_ENGINE = (() => {
 
   const advancedUnitIds = new Set([5, 6, 9, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 25, 26]);
   const allowsAdvanced = unitId => advancedUnitIds.has(unitId);
+  const taxonomyTopics = quizId => (quizTaxonomy[quizId]?.sections || []).flatMap(section => section.topics.map(topic => ({ section: section.title, ...topic })));
+  const taxonomyQuestionCount = quizId => taxonomyTopics(quizId).length || null;
   const chapterQuestionCount = unitIds => {
     const hasAdvanced = unitIds.some(allowsAdvanced);
     return hasAdvanced ? Math.min(10, Math.max(8, unitIds.length * 4)) : Math.min(8, Math.max(6, unitIds.length * 4));
@@ -250,7 +253,7 @@ window.EXAM_ENGINE = (() => {
     { id:"g9-2-c1", grade:9, book:"3下", term:"下學期", chapter:"CH1", title:"國三下第一單元：二次函數", seed:9321, unitIds:[24], officialCodes:"F-9-1～F-9-2" },
     { id:"g9-2-c2", grade:9, book:"3下", term:"下學期", chapter:"CH2", title:"國三下第二單元：統計與機率", seed:9322, unitIds:[20,25], officialCodes:"D-9-1～D-9-2" },
     { id:"g9-2-c3", grade:9, book:"3下", term:"下學期", chapter:"CH3", title:"國三下第三單元：立體圖形", seed:9323, unitIds:[26], officialCodes:"S-9-12～S-9-13" }
-  ].map(item => ({ ...item, scope:"chapter", questionCount:chapterQuestionCount(item.unitIds), minutes:25, source:"翰林國中數學解題影音網 1A～3B 章節" }));
+  ].map(item => ({ ...item, scope:"chapter", questionCount:taxonomyQuestionCount(item.id) || chapterQuestionCount(item.unitIds), minutes:25, source:"翰林國中數學解題影音網 1A～3B 章節" }));
 
   const quizCatalog = [...termQuizzes, ...chapterQuizzes];
 
@@ -261,11 +264,27 @@ window.EXAM_ENGINE = (() => {
     throw new Error(`小考單元 ${unitId} 尚未建立出題器`);
   }
 
+  function generateTaxonomyQuiz(blueprint, r, seed) {
+    const topics = shuffled(r, taxonomyTopics(blueprint.id));
+    const abilityBySection = ["concept", "procedure", "application"];
+    const questions = topics.map((topic, index) => {
+      const question = topic.template({ r, ri, pick, mc, frac, over, signed, sci });
+      question.quizLevel = "基礎";
+      question.ability = abilityBySection[index % abilityBySection.length];
+      question.taxonomySection = topic.section;
+      question.taxonomyTopic = topic.title;
+      question.officialOrder = index + 1;
+      return question;
+    });
+    return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:questions.length, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"Hanlin-Damanguan-taxonomy-user-supplied", taxonomySource:quizTaxonomy[blueprint.id]?.source, questions };
+  }
+
   function generateQuiz(quizId, seedOverride) {
     const blueprint = quizCatalog.find(item => item.id === quizId);
     if (!blueprint) throw new Error("找不到指定的小考");
     const seed = seedOverride == null ? blueprint.seed : seedOverride;
     const r = rngFromSeed(seed);
+    if (quizTaxonomy[blueprint.id]) return generateTaxonomyQuiz(blueprint, r, seed);
     const targetCount = blueprint.questionCount || 12;
     const sequence = [...blueprint.unitIds];
     while (sequence.length < targetCount) sequence.push(blueprint.unitIds[(sequence.length - blueprint.unitIds.length) % blueprint.unitIds.length]);

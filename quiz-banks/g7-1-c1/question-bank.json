@@ -9,11 +9,96 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 8,
+    "questionCount": 17,
     "minutes": 25,
     "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
+  "taxonomy": [
+    {
+      "title": "正負數、數線與絕對值",
+      "topics": [
+        {
+          "id": "signed-number-concept",
+          "title": "正負數的概念"
+        },
+        {
+          "id": "opposite-number-concept",
+          "title": "相反數的概念"
+        },
+        {
+          "id": "absolute-value-concept",
+          "title": "絕對值的概念"
+        },
+        {
+          "id": "opposite-and-absolute-evaluation",
+          "title": "相反數與絕對值的求值"
+        },
+        {
+          "id": "absolute-value-position",
+          "title": "絕對值與數線上點的位置"
+        }
+      ]
+    },
+    {
+      "title": "數的四則運算與數線上兩點間的距離",
+      "topics": [
+        {
+          "id": "integer-arithmetic",
+          "title": "數的四則運算"
+        },
+        {
+          "id": "distributive-law",
+          "title": "分配律的運用"
+        },
+        {
+          "id": "commutative-associative-law",
+          "title": "交換律、結合律的應用"
+        },
+        {
+          "id": "operation-order",
+          "title": "依運算規則求值"
+        },
+        {
+          "id": "absolute-difference-distance",
+          "title": "｜a-b｜幾何意義的應用"
+        },
+        {
+          "id": "arithmetic-application",
+          "title": "四則運算的應用"
+        }
+      ]
+    },
+    {
+      "title": "指數記法、指數律與科學記號",
+      "topics": [
+        {
+          "id": "exponent-arithmetic",
+          "title": "含有指數的四則運算"
+        },
+        {
+          "id": "exponent-law-calculation",
+          "title": "利用指數律做計算"
+        },
+        {
+          "id": "exponent-size-comparison",
+          "title": "利用指數律比較數的大小"
+        },
+        {
+          "id": "scientific-notation",
+          "title": "科學記號表示法"
+        },
+        {
+          "id": "scientific-notation-digits",
+          "title": "科學記號與位數的判別"
+        },
+        {
+          "id": "scientific-notation-comparison",
+          "title": "科學記號與數的比較大小"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 1,
