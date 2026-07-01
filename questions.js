@@ -254,22 +254,25 @@ window.EXAM_ENGINE = (() => {
     throw new Error(`小考單元 ${unitId} 尚未建立出題器`);
   }
 
-  function generateQuiz(quizId) {
+  function generateQuiz(quizId, seedOverride) {
     const blueprint = quizCatalog.find(item => item.id === quizId);
     if (!blueprint) throw new Error("找不到指定的小考");
-    const r = rngFromSeed(blueprint.seed);
+    const seed = seedOverride == null ? blueprint.seed : seedOverride;
+    const r = rngFromSeed(seed);
     const targetCount = blueprint.questionCount || 12;
     const sequence = [...blueprint.unitIds];
     while (sequence.length < targetCount) sequence.push(blueprint.unitIds[(sequence.length - blueprint.unitIds.length) % blueprint.unitIds.length]);
     const orderedUnits = shuffled(r, sequence.slice(0, targetCount));
     const abilities = ["concept","procedure","application","concept","application","procedure","application","analysis","concept","application","procedure","analysis"];
     const questions = orderedUnits.map((unitId, index) => {
-      const question = makeQuizUnitQuestion(r, unitId, 2);
+      const isBasic = index < Math.ceil(targetCount / 2);
+      const question = makeQuizUnitQuestion(r, unitId, isBasic ? 1 : 3);
       question.ability = abilities[index % abilities.length];
+      question.quizLevel = isBasic ? "基礎" : "進階";
       question.officialOrder = index + 1;
       return question;
     });
-    return { kind:"quiz", id:`QUIZ-${blueprint.id}`, quizId:blueprint.id, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:targetCount, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"NAER-108-curriculum-grade-scope-Hanlin-term-order", questions };
+    return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:targetCount, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"NAER-108-curriculum-grade-scope-Hanlin-term-order", questions };
   }
 
   function makeReadingSet(r) {

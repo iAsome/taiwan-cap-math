@@ -220,6 +220,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--green); box-shad
 .question-tags { display: flex; flex-wrap: wrap; gap: 5px; padding-top: 3px; }
 .question-tag { border-radius: 99px; color: var(--green); background: var(--green-soft); padding: 4px 7px; font-size: .57rem; font-weight: 800; }
 .question-tag.grade { color: var(--blue); background: var(--blue-soft); }
+.question-tag.level { color: #8a3f36; background: var(--coral-soft); }
 .question-tag.ability { color: #875c1c; background: var(--gold-soft); }
 .difficulty { color: var(--gold); font-size: .67rem; letter-spacing: 2px; }
 .question-text { margin: 17px 0 15px; font-size: .95rem; line-height: 1.95; white-space: pre-line; }
@@ -380,6 +381,22 @@ input:focus, select:focus, textarea:focus { border-color: var(--green); box-shad
 .research-limit { max-width: 1260px; display: grid; grid-template-columns: 150px 1fr; gap: 18px; margin: 0 auto; border-top: 1px solid #acbdb4; border-bottom: 1px solid #acbdb4; padding: 22px 0; }
 .research-limit p { margin: 0; color: var(--muted); font-size: .73rem; line-height: 1.8; }
 
+.paper-history-stats { max-width: 1260px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0 auto 20px; }
+.paper-history-stats div { border: 1px solid #cbd4ce; border-radius: 10px; background: var(--paper); padding: 18px; text-align: center; }
+.paper-history-stats strong { display: block; font-family: Georgia, serif; font-size: 2rem; }
+.paper-history-stats span { color: var(--muted); font-size: .66rem; }
+.paper-history-list { max-width: 1260px; display: grid; gap: 10px; margin: 0 auto; }
+.paper-history-card { display: grid; grid-template-columns: minmax(0, 1fr) 84px; gap: 14px; border: 1px solid #cbd4ce; border-radius: 12px; background: var(--paper); padding: 18px; }
+.paper-history-card h3 { margin-bottom: 6px; }
+.paper-history-card small { color: var(--muted); font-size: .65rem; }
+.paper-history-card .missed-units { grid-column: 1 / -1; }
+.paper-history-card button { width: fit-content; grid-column: 1 / -1; }
+.paper-history-score { width: 76px; height: 76px; display: grid; place-items: center; align-content: center; border-radius: 50%; color: white; background: var(--green); }
+.paper-history-score strong { font-family: Georgia, serif; font-size: 1.7rem; line-height: 1; }
+.paper-history-score span { font-size: .6rem; }
+.paper-history-empty { min-height: 340px; display: grid; place-items: center; align-content: center; gap: 10px; border: 1px dashed #b8c5be; border-radius: 12px; background: rgba(255,253,248,.58); text-align: center; }
+.paper-history-empty p { color: var(--muted); }
+
 .analysis-stats { max-width: 1260px; display: grid; grid-template-columns: repeat(5, 1fr); border: 1px solid #c8d2cc; border-radius: 11px; background: var(--paper); margin: 0 auto 58px; }
 .analysis-stats div { min-height: 112px; display: grid; place-content: center; gap: 4px; border-right: 1px solid #d9dfdb; padding: 15px; text-align: center; }
 .analysis-stats div:last-child { border-right: 0; }
@@ -494,6 +511,7 @@ body.dark .formula-box, body.dark .solution { background: #21453e; }
 body.dark .quiz-cap-tags { background: #15342f; border-color: #31514a; }
 body.dark .hanlin-cap-list i, body.dark .quiz-cap-preview span { color: var(--ink); }
 body.dark .quiz-track[open] summary { background: #15342f; }
+body.dark .paper-history-empty { background: #15342f; }
 
 @media (max-width: 1120px) {
   :root { --sidebar: 210px; }
@@ -559,6 +577,9 @@ body.dark .quiz-track[open] summary { background: #15342f; }
   .quiz-track summary { grid-template-columns: 1fr; }
   .quiz-track summary b { width: fit-content; }
   .analysis-stats { grid-template-columns: repeat(2, 1fr); }
+  .paper-history-stats { grid-template-columns: 1fr; }
+  .paper-history-card { grid-template-columns: 1fr; }
+  .paper-history-score { width: 70px; height: 70px; }
   .analysis-stats div { border-bottom: 1px solid #d9dfdb; }
   .domain-distribution, .form-analysis { grid-template-columns: repeat(2, 1fr); }
   .ledger-questions { grid-template-columns: repeat(2, 1fr); }

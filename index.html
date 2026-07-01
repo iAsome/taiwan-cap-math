@@ -7,7 +7,7 @@
   <meta name="description" content="依台灣國中教育會考規格設計的數學全範圍講義、模擬考與近十年歷屆考卷入口。">
   <title>會考數學作戰室</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260701b">
+  <link rel="stylesheet" href="styles.css?v=20260701c">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要內容</a>
@@ -21,6 +21,7 @@
         <button data-view="home" class="active"><span>⌂</span>總覽</button>
         <button data-view="exam"><span>✎</span>模擬考</button>
         <button data-view="quiz" class="nav-sub"><span>↳</span>小考</button>
+        <button data-view="papers"><span>▣</span>我的考卷</button>
         <button data-view="handbook"><span>▤</span>全冊講義</button>
         <button data-view="atlas"><span>◇</span>題型地圖</button>
         <button data-view="analysis"><span>▥</span>十年分析</button>
@@ -126,6 +127,15 @@
           <div id="quizCatalog" class="quiz-catalog"></div>
         </section>
 
+        <section class="view" id="view-papers" aria-labelledby="papersTitle">
+          <div class="page-heading">
+            <div><p class="eyebrow">MY PAPERS</p><h1 id="papersTitle">我的考卷</h1><p>這裡保存你在本機瀏覽器考過的小考與模擬考，可回頭查看當次題目、作答狀態與完整詳解。</p></div>
+            <button class="secondary" data-view="quiz">繼續做小考</button>
+          </div>
+          <div class="paper-history-stats" id="paperHistoryStats"></div>
+          <div class="paper-history-list" id="paperHistoryList"></div>
+        </section>
+
         <section class="view" id="view-handbook" aria-labelledby="handbookTitle">
           <div class="page-heading">
             <div><p class="eyebrow">GRADE 7 → GRADE 9</p><h1 id="handbookTitle">國中數學全冊會考講義</h1><p>用「觀念 → 推導 → 流程 → 陷阱 → 小測」串起每個單元。公式採臺灣國中課堂慣用符號，並以翰林版本資料作第二層對照；分數全部以上下堆疊式呈現。</p></div>
@@ -200,9 +210,9 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="data.js?v=20260701b"></script>
-  <script src="analysis-data.js?v=20260701b"></script>
-  <script src="questions.js?v=20260701b"></script>
-  <script src="app.js?v=20260701b"></script>
+  <script src="data.js?v=20260701c"></script>
+  <script src="analysis-data.js?v=20260701c"></script>
+  <script src="questions.js?v=20260701c"></script>
+  <script src="app.js?v=20260701c"></script>
 </body>
 </html>

@@ -21,7 +21,7 @@
   const mathBlock = value => String(value).split("\n").map(line => `<span class="math-line">${renderMath(line, true)}</span>`).join("");
   const nl = mathText;
   const letters = ["A", "B", "C", "D"];
-  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", handbook: "國中數學全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" };
+  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中數學全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" };
   let toastTimer;
 
   const state = {
@@ -48,6 +48,40 @@
     toastTimer = setTimeout(() => el.classList.remove("show"), 2600);
   }
 
+  function readJson(key, fallback) {
+    try { return JSON.parse(localStorage.getItem(key) || JSON.stringify(fallback)); }
+    catch { return fallback; }
+  }
+
+  function quizSignature(assessment) {
+    return assessment.questions.map(q => [q.unitId, q.quizLevel || "", q.text, q.choices?.join("|") || q.answer].join("∷")).join("§");
+  }
+
+  function uniqueQuizAssessment(quizId) {
+    const used = readJson(`capMath.quizSignatures.${quizId}`, []);
+    for (let attempt = 0; attempt < 80; attempt++) {
+      const seed = Math.floor(Date.now() % 1000000000) + attempt * 9973 + Math.floor(Math.random() * 9000);
+      const assessment = window.EXAM_ENGINE.generateQuiz(quizId, seed);
+      const signature = quizSignature(assessment);
+      if (!used.includes(signature)) {
+        localStorage.setItem(`capMath.quizSignatures.${quizId}`, JSON.stringify([signature, ...used].slice(0, 300)));
+        return assessment;
+      }
+    }
+    // ponytail: remembers 300 generated papers per quiz; after that, timestamp seed still changes values.
+    return window.EXAM_ENGINE.generateQuiz(quizId, Date.now());
+  }
+
+  function paperHistory() { return readJson("capMath.paperHistory", []); }
+
+  function savePaperRecord(record) {
+    try { localStorage.setItem("capMath.paperHistory", JSON.stringify([record, ...paperHistory()].slice(0, 40))); }
+    catch {
+      try { localStorage.setItem("capMath.paperHistory", JSON.stringify([record, ...paperHistory()].slice(0, 15))); }
+      catch { toast("本機儲存空間不足，這次考卷未保存到我的考卷"); }
+    }
+  }
+
   function setView(view) {
     if (!viewNames[view]) return;
     state.view = view;
@@ -58,6 +92,7 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
     if (view === "exam") configureExamHeader();
     if (view === "quiz") renderQuizCatalog();
+    if (view === "papers") renderMyPapers();
     if (view === "handbook") renderHandbook();
     if (view === "atlas") renderAtlas();
     if (view === "analysis") renderAnalysis();
@@ -340,6 +375,46 @@
     }).join("");
   }
 
+  function renderMyPapers() {
+    const records = paperHistory();
+    $("#paperHistoryStats").innerHTML = [
+      ["考過卷數", records.length],
+      ["小考", records.filter(item => item.kind === "quiz").length],
+      ["模擬考", records.filter(item => item.kind === "mock").length]
+    ].map(([label, value]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join("");
+    $("#paperHistoryList").innerHTML = records.length ? records.map(record => {
+      const date = new Date(record.finishedAt).toLocaleString("zh-TW", { hour12: false });
+      const missed = record.missedUnits?.map(unit => `<span>${esc(unit)}</span>`).join("") || "";
+      return `<article class="paper-history-card">
+        <div><p class="eyebrow">${record.kind === "quiz" ? "QUIZ" : "MOCK"} · ${esc(record.id)}</p><h3>${esc(record.title)}</h3><small>${esc(date)}｜${record.correct}/${record.mcCount} 題｜${record.answered}/${record.total} 已作答</small></div>
+        <div class="paper-history-score"><strong>${Math.round(record.correct / Math.max(1, record.mcCount) * 100)}</strong><span>%</span></div>
+        <div class="missed-units">${missed || "<span>沒有選擇題錯題</span>"}</div>
+        <button class="secondary" data-review-paper="${esc(record.id)}">查看當次考卷與詳解</button>
+      </article>`;
+    }).join("") : `<div class="paper-history-empty"><h2>目前還沒有考過的卷子。</h2><p>完成任一小考或模擬考後，這裡會自動保存紀錄。</p><button class="primary" data-view="quiz">去做小考</button></div>`;
+    $$("[data-review-paper]", $("#paperHistoryList")).forEach(button => button.addEventListener("click", () => reviewSavedPaper(button.dataset.reviewPaper)));
+    $$("[data-view]", $("#paperHistoryList")).forEach(button => button.addEventListener("click", () => setView(button.dataset.view)));
+  }
+
+  function reviewSavedPaper(recordId) {
+    const record = paperHistory().find(item => item.id === recordId);
+    if (!record) return toast("找不到這份考卷紀錄");
+    state.exam = record.exam;
+    state.answers = record.answers;
+    state.submitted = true;
+    state.seconds = 0;
+    state.currentQuestion = 0;
+    setView("exam");
+    $("#viewTitle").textContent = viewNames.papers;
+    $$("#mainNav [data-view]").forEach(element => element.classList.toggle("active", element.dataset.view === "papers"));
+    $("#examEmpty").classList.add("hidden");
+    $("#examWorkspace").classList.remove("hidden");
+    $("#resultPanel").classList.add("hidden");
+    renderExam();
+    updateTimer();
+    $("#paper").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   function configureExamHeader() {
     const isQuiz = state.exam?.kind === "quiz";
     $("#examEyebrow").textContent = isQuiz ? "OFFICIAL-SCOPE QUIZ" : "FULL MOCK EXAM";
@@ -381,7 +456,7 @@
     localStorage.setItem("capMath.lastSeed", seed);
   }
 
-  function beginQuiz(quizId) { launchAssessment(window.EXAM_ENGINE.generateQuiz(quizId)); }
+  function beginQuiz(quizId) { launchAssessment(uniqueQuizAssessment(quizId)); }
 
   function switchToFullExam() {
     clearInterval(state.timerId);
@@ -426,7 +501,7 @@
       }).join("")}</div>` : `<div class="constructed"><textarea data-cr="${index}" placeholder="請寫下完整解題過程與結論……" ${state.submitted ? "disabled" : ""}>${esc(state.answers[index])}</textarea><p class="writing-guide">建議包含：設未知數／列關係或性質／推導計算／含單位的結論</p></div>`;
       const passage = q.passageId && (!index || state.exam.questions[index - 1].passageId !== q.passageId) ? `<aside class="reading-passage"><p class="eyebrow">閱讀選文｜回答第 ${index + 1}～${index + state.exam.questions.filter(item => item.passageId === q.passageId).length} 題</p><h3>自行車訓練器的速率估計</h3><p>${mathText(q.passage)}</p></aside>` : "";
       return `${passage}<article class="question ${q.type === "cr" ? "constructed-question" : ""}" id="question-${index + 1}" data-question="${index}">
-        <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span><span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span></div>
+        <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span>${q.quizLevel ? `<span class="question-tag level">${esc(q.quizLevel)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span></div>
         <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${solutionHtml(q, index)}
       </article>`;
     }).join("");
@@ -512,6 +587,16 @@
     const mcCount = mcIndexes.length;
     const scoreRate = mcCount ? correct / mcCount : 0;
     const isQuiz = state.exam.kind === "quiz";
+    savePaperRecord({
+      id: `${state.exam.id}-${Date.now()}`,
+      kind: isQuiz ? "quiz" : "mock",
+      title: state.exam.title || (isQuiz ? "小考" : "模擬考"),
+      finishedAt: new Date().toISOString(),
+      correct, mcCount, answered, total: state.exam.questions.length,
+      missedUnits: missed,
+      exam: state.exam,
+      answers: state.answers
+    });
     renderExam();
     $("#timerState").textContent = "作答已結束";
     $("#resultPanel").innerHTML = `<div class="result-summary"><div class="result-score"><span><strong>${correct}</strong><br><small>/ ${mcCount} 選擇題</small></span></div><div class="result-copy"><p class="eyebrow">${auto ? "TIME IS UP" : "RESULT"}</p><h2>${scoreRate >= .88 ? "很穩，這個範圍已有成熟掌握。" : scoreRate >= .7 ? "底子不錯，把錯題對應單元立刻回補。" : scoreRate >= .5 ? "先抓本卷錯題觀念，分數會升得最快。" : "別急著刷下一卷，先回講義補地基。"}</h2><p>${isQuiz ? `本小考只計入「${esc(state.exam.title)}」的官方範圍，原始答對數不等同學校定期評量成績。` : "本結果是練習用原始答對數，不等同官方等級。非選擇題請依每題旁的 0–3 級分規準自評。"}</p><div class="missed-units">${missed.slice(0, 10).map(x => `<span>${esc(x)}</span>`).join("")}${missed.length > 10 ? `<span>另 ${missed.length - 10} 單元</span>` : ""}</div></div><button class="primary" id="reviewFirst">從第一題看詳解</button></div>`;
