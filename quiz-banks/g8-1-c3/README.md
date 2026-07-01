@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-1-c3
 - Units: 因式分解
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: A-8-4～A-8-5
 

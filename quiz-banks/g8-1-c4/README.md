@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-1-c4
 - Units: 一元二次方程式
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: A-8-6～A-8-7
 

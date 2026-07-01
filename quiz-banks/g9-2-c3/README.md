@@ -2,7 +2,7 @@
 
 - Quiz ID: g9-2-c3
 - Units: 立體圖形、表面積與體積
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: S-9-12～S-9-13
 

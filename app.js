@@ -419,7 +419,7 @@
     const isQuiz = state.exam?.kind === "quiz";
     $("#examEyebrow").textContent = isQuiz ? "OFFICIAL-SCOPE QUIZ" : "FULL MOCK EXAM";
     $("#examTitle").textContent = isQuiz ? state.exam.title : "會考數學模擬考";
-    $("#examDescription").textContent = isQuiz ? `12 題四選一，共 25 分鐘。官方課綱編碼：${state.exam.officialCodes}。` : "25 題四選一＋2 題非選擇題，共 80 分鐘。依 115 年官方能力層次與 106–115 年主題分布組卷。";
+    $("#examDescription").textContent = isQuiz ? `${state.exam.questions.length} 題四選一，共 ${state.exam.minutes || 25} 分鐘。官方課綱編碼：${state.exam.officialCodes}。` : "25 題四選一＋2 題非選擇題，共 80 分鐘。依 115 年官方能力層次與 106–115 年主題分布組卷。";
     $("#examSetup").classList.toggle("hidden", isQuiz);
     $("#quizExamSetup").classList.toggle("hidden", !isQuiz);
   }
@@ -512,8 +512,8 @@
     const crCount = state.exam.questions.length - mcCount;
     const scopeTitles = isQuiz ? state.exam.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、") : "";
     const cover = isQuiz ? `
-      <header class="paper-cover"><div><p class="eyebrow">教育部年級範圍 · ${esc(state.exam.id)}</p><h2>${esc(state.exam.title)}</h2><p>12 題四選一｜25 分鐘｜每個列出單元至少覆蓋 1 題</p></div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term)}</div></header>
-      <div class="paper-instructions"><div><strong>12</strong><span>四選一｜即時計分</span></div><div><strong>${state.exam.unitIds.length}</strong><span>範圍單元｜無超綱單元</span></div><div><strong>25 min</strong><span>先基礎、後應用分析</span></div></div>
+      <header class="paper-cover"><div><p class="eyebrow">教育部年級範圍 · ${esc(state.exam.id)}</p><h2>${esc(state.exam.title)}</h2><p>${state.exam.questions.length} 題四選一｜${state.exam.minutes || 25} 分鐘｜每個列出單元至少覆蓋 1 題</p></div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term)}</div></header>
+      <div class="paper-instructions"><div><strong>${state.exam.questions.length}</strong><span>四選一｜即時計分</span></div><div><strong>${state.exam.unitIds.length}</strong><span>範圍單元｜無超綱單元</span></div><div><strong>${state.exam.minutes || 25} min</strong><span>依單元需要安排進階</span></div></div>
       <div class="quiz-paper-scope"><strong>本卷範圍</strong><span>${esc(scopeTitles)}</span><small>${esc(state.exam.officialCodes)}</small></div>` : `
       <header class="paper-cover"><div><p class="eyebrow">115 官方結構 · 十年分布校準 · ${esc(state.exam.id)}</p><h2>國中教育會考數學科模擬題本</h2><p>25 題選擇＋2 題非選｜80 分鐘｜概念 6・程序 4・應用 12・分析 5</p></div><div class="paper-stamp">115<br>官方藍圖</div></header>
       <div class="paper-instructions"><div><strong>25</strong><span>四選一｜含 3 題連續閱讀題組</span></div><div><strong>2</strong><span>非選擇題｜策略與表達計分</span></div><div><strong>80 min</strong><span>題型順序依卷別種子打亂</span></div></div>`;

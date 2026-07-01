@@ -2,7 +2,7 @@
 
 - Quiz ID: g9-1-c2
 - Units: 圓、弧、弦與圓周角
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: S-9-5～S-9-7
 

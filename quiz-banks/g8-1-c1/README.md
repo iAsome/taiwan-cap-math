@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-1-c1
 - Units: 乘法公式與多項式
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: A-8-1～A-8-3
 

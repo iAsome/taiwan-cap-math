@@ -2,7 +2,7 @@
 
 - Quiz ID: g7-1-c2
 - Units: 質因數、最大公因數與最小公倍數 / 分數四則與比例量
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: N-7-1、N-7-2、N-7-4～N-7-7
 

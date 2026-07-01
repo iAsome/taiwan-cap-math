@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-1-c5
 - Units: 累積次數、相對次數與折線圖
-- Questions: 12
+- Questions: 6
 - Minutes: 25
 - Official codes: D-8-1
 

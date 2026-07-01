@@ -2,7 +2,7 @@
 
 - Quiz ID: g7-2-c2
 - Units: 直角坐標與二元一次方程式圖形
-- Questions: 12
+- Questions: 6
 - Minutes: 25
 - Official codes: G-7-1、A-7-6
 

@@ -2,7 +2,7 @@
 
 - Quiz ID: g9-1-c3
 - Units: 幾何證明與三角形心
-- Questions: 12
+- Questions: 6
 - Minutes: 25
 - Official codes: S-9-8～S-9-11
 

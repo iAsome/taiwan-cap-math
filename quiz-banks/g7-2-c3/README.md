@@ -2,7 +2,7 @@
 
 - Quiz ID: g7-2-c3
 - Units: 比、比例式與正反比
-- Questions: 12
+- Questions: 6
 - Minutes: 25
 - Official codes: N-7-9、A-7-7
 

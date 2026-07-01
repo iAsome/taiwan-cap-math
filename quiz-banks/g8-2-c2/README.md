@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-2-c2
 - Units: 線型函數與變化率
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: F-8-1～F-8-2
 

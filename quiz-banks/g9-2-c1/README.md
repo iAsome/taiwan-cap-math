@@ -2,7 +2,7 @@
 
 - Quiz ID: g9-2-c1
 - Units: 二次函數與拋物線
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: F-9-1～F-9-2
 

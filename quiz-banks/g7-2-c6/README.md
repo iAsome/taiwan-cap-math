@@ -2,7 +2,7 @@
 
 - Quiz ID: g7-2-c6
 - Units: 幾何基本圖形、角與尺規作圖
-- Questions: 12
+- Questions: 6
 - Minutes: 25
 - Official codes: S-7-1～S-7-5
 

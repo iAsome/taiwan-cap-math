@@ -206,6 +206,13 @@ window.EXAM_ENGINE = (() => {
     return mc(r, 28, 2, `某資料分成 4 組，各組次數依序為 ${counts.join("、")}。第 ${cutoff} 組的累積相對次數最接近下列何者？`, `${percent}%`, [`${Math.round(counts[cutoff - 1] / total * 1000) / 10}%`, `${Math.round(previous / total * 1000) / 10}%`, `${Math.round(cumulative / counts.slice(0, cutoff).length * 10) / 10}%`], [`總次數為 ${counts.join("+")}=${total}。`, `第 ${cutoff} 組的累積次數為 ${counts.slice(0, cutoff).join("+")}=${cumulative}。`, `累積相對次數=${over(cumulative, total)}，約為 ${percent}%。`], "『累積』要從第一組一直加到目標組。", "不要只用目標那一組的次數除以總數。")
   }
 
+  const advancedUnitIds = new Set([5, 6, 9, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 25, 26]);
+  const allowsAdvanced = unitId => advancedUnitIds.has(unitId);
+  const chapterQuestionCount = unitIds => {
+    const hasAdvanced = unitIds.some(allowsAdvanced);
+    return hasAdvanced ? Math.min(10, Math.max(8, unitIds.length * 4)) : Math.min(8, Math.max(6, unitIds.length * 4));
+  };
+
   const termQuizzes = [
     { id:"g7-all", grade:7, term:"總複習", title:"國一總複習", seed:7100, unitIds:[1,2,3,4,5,6,7,8,9,10,11], officialCodes:"N-7、A-7、G-7、D-7、S-7" },
     { id:"g7-1", grade:7, term:"上學期", title:"國一上學期總複習", seed:7101, unitIds:[1,2,3,4,5], officialCodes:"N-7-1～N-7-8、A-7-1～A-7-3" },
@@ -243,7 +250,7 @@ window.EXAM_ENGINE = (() => {
     { id:"g9-2-c1", grade:9, book:"3下", term:"下學期", chapter:"CH1", title:"國三下第一單元：二次函數", seed:9321, unitIds:[24], officialCodes:"F-9-1～F-9-2" },
     { id:"g9-2-c2", grade:9, book:"3下", term:"下學期", chapter:"CH2", title:"國三下第二單元：統計與機率", seed:9322, unitIds:[20,25], officialCodes:"D-9-1～D-9-2" },
     { id:"g9-2-c3", grade:9, book:"3下", term:"下學期", chapter:"CH3", title:"國三下第三單元：立體圖形", seed:9323, unitIds:[26], officialCodes:"S-9-12～S-9-13" }
-  ].map(item => ({ ...item, scope:"chapter", questionCount:12, minutes:25, source:"翰林國中數學解題影音網 1A～3B 章節" }));
+  ].map(item => ({ ...item, scope:"chapter", questionCount:chapterQuestionCount(item.unitIds), minutes:25, source:"翰林國中數學解題影音網 1A～3B 章節" }));
 
   const quizCatalog = [...termQuizzes, ...chapterQuizzes];
 
@@ -264,11 +271,25 @@ window.EXAM_ENGINE = (() => {
     while (sequence.length < targetCount) sequence.push(blueprint.unitIds[(sequence.length - blueprint.unitIds.length) % blueprint.unitIds.length]);
     const orderedUnits = shuffled(r, sequence.slice(0, targetCount));
     const abilities = ["concept","procedure","application","concept","application","procedure","application","analysis","concept","application","procedure","analysis"];
+    const used = new Set();
+    const unitSeen = {};
+    const hasAdvancedScope = blueprint.unitIds.some(allowsAdvanced);
+    const advancedLimit = hasAdvancedScope ? Math.floor(targetCount * (blueprint.scope === "chapter" ? .35 : .4)) : 0;
+    let advancedUsed = 0;
     const questions = orderedUnits.map((unitId, index) => {
-      const isBasic = index < Math.ceil(targetCount / 2);
-      const question = makeQuizUnitQuestion(r, unitId, isBasic ? 1 : 3);
+      const canAdvance = allowsAdvanced(unitId);
+      const hasBasicBefore = unitSeen[unitId] >= 1 || blueprint.scope !== "chapter";
+      const isAdvanced = canAdvance && hasBasicBefore && advancedUsed < advancedLimit && r() > .45;
+      const question = makeQuizUnitQuestion(r, unitId, isAdvanced ? 3 : 1);
+      for (let retry = 0; retry < 20; retry++) {
+        const signature = [question.unitId, question.text, question.choices?.join("|") || question.answer].join("§");
+        if (!used.has(signature)) { used.add(signature); break; }
+        Object.assign(question, makeQuizUnitQuestion(r, unitId, isAdvanced ? 3 : 1));
+      }
+      unitSeen[unitId] = (unitSeen[unitId] || 0) + 1;
+      if (isAdvanced) advancedUsed += 1;
       question.ability = abilities[index % abilities.length];
-      question.quizLevel = isBasic ? "基礎" : "進階";
+      question.quizLevel = isAdvanced ? "進階" : "基礎";
       question.officialOrder = index + 1;
       return question;
     });
@@ -339,5 +360,5 @@ window.EXAM_ENGINE = (() => {
     return { id:`CAP-${seed}-${level}`, seed:Number(seed), level, createdAt:new Date().toISOString(), blueprint:"115-official-10y-validated", questions };
   }
 
-  return { generate, generateQuiz, quizCatalog };
+  return { generate, generateQuiz, quizCatalog, allowsAdvanced };
 })();

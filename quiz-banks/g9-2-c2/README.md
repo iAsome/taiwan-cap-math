@@ -2,7 +2,7 @@
 
 - Quiz ID: g9-2-c2
 - Units: 資料分布、四分位數與盒狀圖 / 機率、樣本空間與抽樣
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: D-9-1～D-9-2
 

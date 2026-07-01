@@ -2,7 +2,7 @@
 
 - Quiz ID: g7-1-c1
 - Units: 正負數、數線與絕對值 / 指數律與科學記號
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: N-7-1～N-7-3、N-7-6、N-7-8
 

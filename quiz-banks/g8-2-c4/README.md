@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-2-c4
 - Units: 平行線、四邊形與面積
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: S-8-7～S-8-12
 

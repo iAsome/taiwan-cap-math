@@ -9,7 +9,7 @@ for (const file of ["data.js", "analysis-data.js", "questions.js"]) {
 }
 
 const { units } = context.window.MATH_DATA;
-const { quizCatalog } = context.window.EXAM_ENGINE;
+const { quizCatalog, allowsAdvanced } = context.window.EXAM_ENGINE;
 const outRoot = path.join(root, "quiz-banks");
 fs.mkdirSync(outRoot, { recursive: true });
 
@@ -28,7 +28,7 @@ const familyByUnit = unit => ({
       "Prefer familiar one-step or two-step rule practice."
     ]
   },
-  advanced: {
+  advanced: allowsAdvanced(unit.id) ? {
     purpose: "Advanced drills: flexible CAP-style use of the same unit ideas.",
     difficultyRange: [3, 5],
     templateSource: `questions.js / makeQuizUnitQuestion / unit ${unit.id}`,
@@ -37,7 +37,7 @@ const familyByUnit = unit => ({
       "May combine concepts, but should not require senior-high formulas.",
       "Solutions must remain explainable by the handbook formulas and unit concepts."
     ]
-  }
+  } : null
 });
 
 for (const quiz of quizCatalog) {
@@ -57,7 +57,7 @@ for (const quiz of quizCatalog) {
       questionCount: quiz.questionCount,
       minutes: quiz.minutes,
       nonRepeatPolicy: "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
-      levelSplit: "First half is basic (level=1); second half is advanced (level=3)."
+      levelSplit: "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
     },
     units: quiz.unitIds.map(id => familyByUnit(units.find(unit => unit.id === id))).filter(Boolean)
   };

@@ -2,7 +2,7 @@
 
 - Quiz ID: g7-2-c5
 - Units: 統計圖表與集中量數
-- Questions: 12
+- Questions: 6
 - Minutes: 25
 - Official codes: D-7-1～D-7-2
 

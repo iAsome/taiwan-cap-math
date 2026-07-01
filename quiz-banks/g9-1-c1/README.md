@@ -2,7 +2,7 @@
 
 - Quiz ID: g9-1-c1
 - Units: 比例線段、縮放與相似形
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: S-9-1～S-9-4、N-9-1
 

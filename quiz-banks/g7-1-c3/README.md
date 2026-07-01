@@ -2,7 +2,7 @@
 
 - Quiz ID: g7-1-c3
 - Units: 一元一次式與方程式
-- Questions: 12
+- Questions: 8
 - Minutes: 25
 - Official codes: A-7-1～A-7-3
 
