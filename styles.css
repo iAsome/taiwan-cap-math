@@ -128,6 +128,16 @@ h1, h2 { font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, 
 .quiz-grade-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; border-bottom: 1px solid #cbd4cf; padding-bottom: 10px; }
 .quiz-grade-heading h2 { margin: 0; font-size: 1.55rem; }
 .quiz-grade-heading span { color: var(--muted); font-size: .7rem; }
+.quiz-track-grid { display: grid; gap: 10px; }
+.quiz-track { overflow: hidden; border: 1px solid #ccd7d1; border-radius: 12px; background: var(--paper); box-shadow: 0 8px 24px rgba(35,65,58,.04); }
+.quiz-track summary { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 14px; list-style: none; cursor: pointer; min-height: 70px; padding: 16px 20px; }
+.quiz-track summary::-webkit-details-marker { display: none; }
+.quiz-track summary span { font-size: 1rem; font-weight: 900; }
+.quiz-track summary small { color: var(--muted); font-size: .66rem; line-height: 1.5; text-align: right; }
+.quiz-track summary b { border-radius: 99px; color: white; background: var(--green); padding: 7px 11px; font-size: .62rem; white-space: nowrap; }
+.quiz-track[open] summary { border-bottom: 1px solid #dbe2de; background: #f7faf8; }
+.quiz-track[open] summary b { background: var(--coral); }
+.quiz-track-body { padding: 16px; }
 .quiz-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; }
 .quiz-card { position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 305px; border: 1px solid #ced8d2; border-radius: 12px; background: var(--paper); padding: 22px; box-shadow: 0 8px 24px rgba(35,65,58,.05); }
 .quiz-card::before { content: ""; position: absolute; inset: 0 0 auto; height: 4px; background: var(--green); }
@@ -483,6 +493,7 @@ body.dark .paper-instructions, body.dark .quiz-paper-scope, body.dark .lesson-co
 body.dark .formula-box, body.dark .solution { background: #21453e; }
 body.dark .quiz-cap-tags { background: #15342f; border-color: #31514a; }
 body.dark .hanlin-cap-list i, body.dark .quiz-cap-preview span { color: var(--ink); }
+body.dark .quiz-track[open] summary { background: #15342f; }
 
 @media (max-width: 1120px) {
   :root { --sidebar: 210px; }
@@ -511,6 +522,8 @@ body.dark .hanlin-cap-list i, body.dark .quiz-cap-preview span { color: var(--in
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .quiz-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .quiz-basis { grid-template-columns: 1fr; }
+  .quiz-track summary { grid-template-columns: 1fr auto; }
+  .quiz-track summary small { grid-column: 1 / -1; grid-row: 2; text-align: left; }
   .quiz-subsection { display: block; }
   .quiz-subsection p { margin-top: 6px; text-align: left; }
   .hanlin-chapter-item { grid-template-columns: 1fr; align-items: start; }
@@ -543,6 +556,8 @@ body.dark .hanlin-cap-list i, body.dark .quiz-cap-preview span { color: var(--in
   .feature-grid, .domain-grid, .archive-grid, .method-grid, .quiz-card-grid { grid-template-columns: 1fr; }
   .quiz-grade-heading { display: block; }
   .quiz-grade-heading span { display: block; margin-top: 5px; }
+  .quiz-track summary { grid-template-columns: 1fr; }
+  .quiz-track summary b { width: fit-content; }
   .analysis-stats { grid-template-columns: repeat(2, 1fr); }
   .analysis-stats div { border-bottom: 1px solid #d9dfdb; }
   .domain-distribution, .form-analysis { grid-template-columns: repeat(2, 1fr); }

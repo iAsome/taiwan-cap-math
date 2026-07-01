@@ -208,14 +208,14 @@ window.EXAM_ENGINE = (() => {
 
   const termQuizzes = [
     { id:"g7-all", grade:7, term:"總複習", title:"國一總複習", seed:7100, unitIds:[1,2,3,4,5,6,7,8,9,10,11], officialCodes:"N-7、A-7、G-7、D-7、S-7" },
-    { id:"g7-1", grade:7, term:"上學期", title:"國一上學期小考", seed:7101, unitIds:[1,2,3,4,5], officialCodes:"N-7-1～N-7-8、A-7-1～A-7-3" },
-    { id:"g7-2", grade:7, term:"下學期", title:"國一下學期小考", seed:7102, unitIds:[6,7,8,9,10,11], officialCodes:"N-7-9、A-7-4～A-7-8、G-7-1、D-7-1～D-7-2、S-7-1～S-7-5" },
+    { id:"g7-1", grade:7, term:"上學期", title:"國一上學期總複習", seed:7101, unitIds:[1,2,3,4,5], officialCodes:"N-7-1～N-7-8、A-7-1～A-7-3" },
+    { id:"g7-2", grade:7, term:"下學期", title:"國一下學期總複習", seed:7102, unitIds:[6,7,8,9,10,11], officialCodes:"N-7-9、A-7-4～A-7-8、G-7-1、D-7-1～D-7-2、S-7-1～S-7-5" },
     { id:"g8-all", grade:8, term:"總複習", title:"國二總複習", seed:8200, unitIds:[12,13,14,15,28,16,17,18,19], officialCodes:"N-8、A-8、F-8、G-8、D-8、S-8" },
-    { id:"g8-1", grade:8, term:"上學期", title:"國二上學期小考", seed:8201, unitIds:[12,13,14,15,28], officialCodes:"N-8-1～N-8-2、A-8-1～A-8-7、S-8-6、G-8-1、D-8-1" },
-    { id:"g8-2", grade:8, term:"下學期", title:"國二下學期小考", seed:8202, unitIds:[16,17,18,19], officialCodes:"N-8-3～N-8-6、F-8-1～F-8-2、S-8-1～S-8-5、S-8-7～S-8-12" },
+    { id:"g8-1", grade:8, term:"上學期", title:"國二上學期總複習", seed:8201, unitIds:[12,13,14,15,28], officialCodes:"N-8-1～N-8-2、A-8-1～A-8-7、S-8-6、G-8-1、D-8-1" },
+    { id:"g8-2", grade:8, term:"下學期", title:"國二下學期總複習", seed:8202, unitIds:[16,17,18,19], officialCodes:"N-8-3～N-8-6、F-8-1～F-8-2、S-8-1～S-8-5、S-8-7～S-8-12" },
     { id:"g9-all", grade:9, term:"總複習", title:"國三總複習", seed:9300, unitIds:[20,21,22,23,24,25,26], officialCodes:"N-9、F-9、D-9、S-9" },
-    { id:"g9-1", grade:9, term:"上學期", title:"國三上學期小考", seed:9301, unitIds:[21,22,23], officialCodes:"N-9-1、S-9-1～S-9-11" },
-    { id:"g9-2", grade:9, term:"下學期", title:"國三下學期小考", seed:9302, unitIds:[20,24,25,26], officialCodes:"F-9-1～F-9-2、D-9-1～D-9-2、S-9-12～S-9-13" }
+    { id:"g9-1", grade:9, term:"上學期", title:"國三上學期總複習", seed:9301, unitIds:[21,22,23], officialCodes:"N-9-1、S-9-1～S-9-11" },
+    { id:"g9-2", grade:9, term:"下學期", title:"國三下學期總複習", seed:9302, unitIds:[20,24,25,26], officialCodes:"F-9-1～F-9-2、D-9-1～D-9-2、S-9-12～S-9-13" }
   ].map(item => ({ ...item, scope:"term", questionCount:12, minutes:25 }));
 
   const chapterQuizzes = [

@@ -292,17 +292,29 @@
     </article>`;
   }
 
+  function quizTrack(title, subtitle, items, grade, key) {
+    return `<details class="quiz-track" name="quiz-grade-${grade}" id="quiz-g${grade}-${key}">
+      <summary><span>${esc(title)}</span><small>${esc(subtitle)}</small><b>點開 →</b></summary>
+      <div class="quiz-track-body">
+        <div class="quiz-card-grid ${key === "review" ? "review-grid" : "chapter-grid"}">${items.map(quizCard).join("")}</div>
+      </div>
+    </details>`;
+  }
+
   function renderQuizCatalog() {
     const catalog = window.EXAM_ENGINE.quizCatalog;
     $("#quizCatalog").innerHTML = [7, 8, 9].map(grade => {
-      const papers = catalog.filter(item => item.grade === grade && item.scope === "term");
       const chapters = catalog.filter(item => item.grade === grade && item.scope === "chapter");
-      const chapterGroups = [...new Set(chapters.map(item => item.book))].map(book => ({ book, items: chapters.filter(item => item.book === book) }));
+      const reviews = ["上學期", "下學期", "總複習"].map(term => catalog.find(item => item.grade === grade && item.scope === "term" && item.term === term)).filter(Boolean);
+      const upper = chapters.filter(item => item.term === "上學期");
+      const lower = chapters.filter(item => item.term === "下學期");
       return `<section class="quiz-grade-section">
-        <div class="quiz-grade-heading"><h2>國${gradeName(grade)}</h2><span>總複習、學期卷與翰林各章節單元題庫</span></div>
-        <div class="quiz-subsection"><h3>總複習與學期卷</h3><p>先用大範圍檢查漏洞，再回到下方章節題庫補單元。</p></div>
-        <div class="quiz-card-grid">${papers.map(quizCard).join("")}</div>
-        ${chapterGroups.map(group => `<div class="quiz-subsection chapter-heading"><h3>${esc(group.book)} 翰林章節小考</h3><p>依翰林公開章節順序切分；每章皆有獨立 12 題題庫。</p></div><div class="quiz-card-grid chapter-grid">${group.items.map(quizCard).join("")}</div>`).join("")}
+        <div class="quiz-grade-heading"><h2>國${gradeName(grade)}</h2><span>先選上學期、下學期或總複習</span></div>
+        <div class="quiz-track-grid">
+          ${quizTrack("上學期", `${upper.length} 個翰林單元小考`, upper, grade, "upper")}
+          ${quizTrack("下學期", `${lower.length} 個翰林單元小考`, lower, grade, "lower")}
+          ${quizTrack("總複習", "上學期總複習、下學期總複習、全年總複習", reviews, grade, "review")}
+        </div>
       </section>`;
     }).join("");
   }
