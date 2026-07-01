@@ -7,7 +7,7 @@
   <meta name="description" content="依台灣國中教育會考規格設計的數學全範圍講義、模擬考與近十年歷屆考卷入口。">
   <title>會考數學作戰室</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260620c">
+  <link rel="stylesheet" href="styles.css?v=20260701a">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要內容</a>
@@ -86,7 +86,7 @@
           </section>
 
           <section class="source-banner">
-            <div><p class="eyebrow">OFFICIAL BASIS</p><h2>不是「像會考」，規格直接對齊官方。</h2><p>命題範圍依十二年國教數學領域第四學習階段；考試結構與非選題評分重點依國中教育會考官方網站。資料核對日：2026-06-20。</p></div>
+            <div><p class="eyebrow">OFFICIAL BASIS</p><h2>不是「像會考」，規格直接對齊官方。</h2><p>命題範圍依十二年國教數學領域第四學習階段；考試結構與非選題評分重點依國中教育會考官方網站。翰林章節順序核對日：2026-07-01。</p></div>
             <button class="secondary" data-view="sources">查看資料審核規則</button>
           </section>
         </section>
@@ -99,7 +99,7 @@
               <label>數值強度<select id="levelSelect"><option value="1">穩固基礎</option><option value="2" selected>會考平衡</option><option value="3">高鑑別度</option></select></label>
               <button class="primary" id="generateExam">生成新考卷</button>
             </div>
-            <div class="exam-controls hidden" id="quizExamSetup"><button class="secondary" data-view="quiz">返回九份小考</button><button class="primary" id="switchFullExam">切換完整模考</button></div>
+            <div class="exam-controls hidden" id="quizExamSetup"><button class="secondary" data-view="quiz">返回小考題庫</button><button class="primary" id="switchFullExam">切換完整模考</button></div>
           </div>
           <div id="examEmpty" class="exam-empty">
             <div class="empty-mark">25＋2</div><h2>準備好再按開始。</h2><p>系統會依種子產生不同數值與選項；同一種子可重現同一份試卷。</p><button class="primary" id="startDefaultExam">生成並開始</button>
@@ -120,9 +120,9 @@
 
         <section class="view" id="view-quiz" aria-labelledby="quizTitle">
           <div class="page-heading">
-            <div><p class="eyebrow">GRADE-SPECIFIC QUIZZES</p><h1 id="quizTitle">國一至國三學期小考</h1><p>共 9 份：每個年級含總複習、上學期與下學期。每份 12 題四選一、25 分鐘，交卷後可查看逐題詳解。</p></div>
+            <div><p class="eyebrow">GRADE-SPECIFIC QUIZZES</p><h1 id="quizTitle">國一至國三單元小考題庫</h1><p>共 33 份：9 份總複習／學期卷，加上 24 份依翰林 1上到 3下章節切分的單元小考。每份 12 題四選一、25 分鐘，交卷後可查看逐題詳解。</p></div>
           </div>
-          <div class="quiz-basis"><strong>範圍邊界</strong><p>年級學習內容直接依國家教育研究院《十二年國教數學領域課程綱要》之 N、A、F、G、D、S 年級編碼；上下學期順序以翰林版公開章節及學校教學進度交叉核對。公開段考卷只用於校準題幹長度與難度，不擴張官方範圍。</p><a href="official-data/curriculum/十二年國教數學領域課程綱要.pdf" target="_blank" rel="noopener">開啟官方數學課綱 ↗</a></div>
+          <div class="quiz-basis"><strong>範圍邊界</strong><p>會考範圍以國家教育研究院《十二年國教數學領域課程綱要》與國中教育會考官方網站為最高依據；章節切分依翰林國中數學 1A～3B 公開章節順序。每張單元卡片都標註 106–115 年會考主概念題號，公開段考卷只用於校準題幹長度與難度，不擴張官方範圍。</p><a href="official-data/curriculum/十二年國教數學領域課程綱要.pdf" target="_blank" rel="noopener">開啟官方數學課綱 ↗</a></div>
           <div id="quizCatalog" class="quiz-catalog"></div>
         </section>
 
@@ -157,6 +157,7 @@
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">OFFICIAL STRUCTURE</p><h2>題數與能力層次</h2></div><p>能力題數直接抄錄各年度官方《試題說明》，不是本站推估。</p></div><div class="analysis-grid"><div class="chart-card"><h3>十年能力題數合計</h3><div id="abilityBars" class="bar-chart"></div></div><div class="chart-card"><h3>年度官方結構</h3><div id="officialStructureTable" class="mini-table-wrap"></div></div></div></section>
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">CONTENT DISTRIBUTION</p><h2>六大主題與每個觀念考幾題</h2></div><p>主概念編碼由官方原題逐題覆核；跨單元題以解題核心作為主標籤。</p></div><div id="domainDistribution" class="domain-distribution"></div><div class="matrix-wrap"><table class="concept-matrix"><thead id="conceptMatrixHead"></thead><tbody id="conceptMatrixBody"></tbody></table></div></section>
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">QUESTION FORMS</p><h2>題目怎麼出</h2></div><p>幾何附圖、生活情境、圖表判讀、閱讀題組與非選擇題分開計數。</p></div><div id="formAnalysis" class="form-analysis"></div></section>
+          <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">HANLIN UNIT LEDGER</p><h2>會考題目依翰林單元回填</h2></div><p>每一題會考主概念只標註到一個翰林章節，避免跨章重複灌水；點連結可直接進入該單元小考題庫。</p></div><div id="hanlinChapterLedger" class="hanlin-chapter-ledger"></div></section>
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">YEAR-BY-YEAR LEDGER</p><h2>每一屆逐題主概念帳本</h2></div><p>點開年度可核對題數、官方能力分布、兩題非選主題及各題歸類。</p></div><div id="yearLedger" class="year-ledger"></div></section>
           <section class="analysis-section compliance-panel"><div><p class="eyebrow">GENERATOR COMPLIANCE</p><h2>嚴格模考生成規格</h2><p>生成器預設採最新 115 年 25＋2、80 分鐘與官方能力層次；主題數量落在新課綱五年實際區間內。25 題選擇題題型依卷別種子打亂，閱讀題組保持連續，第二部分保留兩題非選擇題。</p></div><div id="blueprintChecks" class="blueprint-checks"></div></section>
           <div class="research-limit"><strong>分類邊界</strong><p>官方資料公布每年度整體能力層次題數，但沒有逐題公布完整單元標籤。因此「題數、題型、能力總數」屬官方資料；「每題主概念、呈現形式」是本站依題目解題核心建立的研究編碼。遇到跨單元題只計一個主概念，並保留年度題號供回查。</p></div>
@@ -199,9 +200,9 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="data.js?v=20260620c"></script>
-  <script src="analysis-data.js?v=20260620c"></script>
-  <script src="questions.js?v=20260620c"></script>
-  <script src="app.js?v=20260620c"></script>
+  <script src="data.js?v=20260701a"></script>
+  <script src="analysis-data.js?v=20260701a"></script>
+  <script src="questions.js?v=20260701a"></script>
+  <script src="app.js?v=20260701a"></script>
 </body>
 </html>

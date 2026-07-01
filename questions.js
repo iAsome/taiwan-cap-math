@@ -206,7 +206,7 @@ window.EXAM_ENGINE = (() => {
     return mc(r, 28, 2, `某資料分成 4 組，各組次數依序為 ${counts.join("、")}。第 ${cutoff} 組的累積相對次數最接近下列何者？`, `${percent}%`, [`${Math.round(counts[cutoff - 1] / total * 1000) / 10}%`, `${Math.round(previous / total * 1000) / 10}%`, `${Math.round(cumulative / counts.slice(0, cutoff).length * 10) / 10}%`], [`總次數為 ${counts.join("+")}=${total}。`, `第 ${cutoff} 組的累積次數為 ${counts.slice(0, cutoff).join("+")}=${cumulative}。`, `累積相對次數=${over(cumulative, total)}，約為 ${percent}%。`], "『累積』要從第一組一直加到目標組。", "不要只用目標那一組的次數除以總數。")
   }
 
-  const quizCatalog = [
+  const termQuizzes = [
     { id:"g7-all", grade:7, term:"總複習", title:"國一總複習", seed:7100, unitIds:[1,2,3,4,5,6,7,8,9,10,11], officialCodes:"N-7、A-7、G-7、D-7、S-7" },
     { id:"g7-1", grade:7, term:"上學期", title:"國一上學期小考", seed:7101, unitIds:[1,2,3,4,5], officialCodes:"N-7-1～N-7-8、A-7-1～A-7-3" },
     { id:"g7-2", grade:7, term:"下學期", title:"國一下學期小考", seed:7102, unitIds:[6,7,8,9,10,11], officialCodes:"N-7-9、A-7-4～A-7-8、G-7-1、D-7-1～D-7-2、S-7-1～S-7-5" },
@@ -216,7 +216,36 @@ window.EXAM_ENGINE = (() => {
     { id:"g9-all", grade:9, term:"總複習", title:"國三總複習", seed:9300, unitIds:[20,21,22,23,24,25,26], officialCodes:"N-9、F-9、D-9、S-9" },
     { id:"g9-1", grade:9, term:"上學期", title:"國三上學期小考", seed:9301, unitIds:[21,22,23], officialCodes:"N-9-1、S-9-1～S-9-11" },
     { id:"g9-2", grade:9, term:"下學期", title:"國三下學期小考", seed:9302, unitIds:[20,24,25,26], officialCodes:"F-9-1～F-9-2、D-9-1～D-9-2、S-9-12～S-9-13" }
-  ];
+  ].map(item => ({ ...item, scope:"term", questionCount:12, minutes:25 }));
+
+  const chapterQuizzes = [
+    { id:"g7-1-c1", grade:7, book:"1上", term:"上學期", chapter:"CH1", title:"國一上第一單元：數與數線", seed:7111, unitIds:[1,2], officialCodes:"N-7-1～N-7-3、N-7-6、N-7-8" },
+    { id:"g7-1-c2", grade:7, book:"1上", term:"上學期", chapter:"CH2", title:"國一上第二單元：標準分解式與分數運算", seed:7112, unitIds:[3,4], officialCodes:"N-7-1、N-7-2、N-7-4～N-7-7" },
+    { id:"g7-1-c3", grade:7, book:"1上", term:"上學期", chapter:"CH3", title:"國一上第三單元：一元一次方程式", seed:7113, unitIds:[5], officialCodes:"A-7-1～A-7-3" },
+    { id:"g7-2-c1", grade:7, book:"1下", term:"下學期", chapter:"CH1", title:"國一下第一單元：二元一次聯立方程式", seed:7121, unitIds:[6], officialCodes:"A-7-4～A-7-5" },
+    { id:"g7-2-c2", grade:7, book:"1下", term:"下學期", chapter:"CH2", title:"國一下第二單元：直角坐標與二元一次方程式圖形", seed:7122, unitIds:[7], officialCodes:"G-7-1、A-7-6" },
+    { id:"g7-2-c3", grade:7, book:"1下", term:"下學期", chapter:"CH3", title:"國一下第三單元：比例", seed:7123, unitIds:[8], officialCodes:"N-7-9、A-7-7" },
+    { id:"g7-2-c4", grade:7, book:"1下", term:"下學期", chapter:"CH4", title:"國一下第四單元：一元一次不等式", seed:7124, unitIds:[9], officialCodes:"A-7-8" },
+    { id:"g7-2-c5", grade:7, book:"1下", term:"下學期", chapter:"CH5", title:"國一下第五單元：統計圖表與統計數據", seed:7125, unitIds:[10], officialCodes:"D-7-1～D-7-2" },
+    { id:"g7-2-c6", grade:7, book:"1下", term:"下學期", chapter:"CH6", title:"國一下第六單元：線對稱與三視圖", seed:7126, unitIds:[11], officialCodes:"S-7-1～S-7-5" },
+    { id:"g8-1-c1", grade:8, book:"2上", term:"上學期", chapter:"CH1", title:"國二上第一單元：乘法公式與多項式", seed:8211, unitIds:[12], officialCodes:"A-8-1～A-8-3" },
+    { id:"g8-1-c2", grade:8, book:"2上", term:"上學期", chapter:"CH2", title:"國二上第二單元：平方根與畢氏定理", seed:8212, unitIds:[13], officialCodes:"N-8-1～N-8-2、S-8-6" },
+    { id:"g8-1-c3", grade:8, book:"2上", term:"上學期", chapter:"CH3", title:"國二上第三單元：因式分解", seed:8213, unitIds:[14], officialCodes:"A-8-4～A-8-5" },
+    { id:"g8-1-c4", grade:8, book:"2上", term:"上學期", chapter:"CH4", title:"國二上第四單元：一元二次方程式", seed:8214, unitIds:[15], officialCodes:"A-8-6～A-8-7" },
+    { id:"g8-1-c5", grade:8, book:"2上", term:"上學期", chapter:"CH5", title:"國二上第五單元：統計資料處理", seed:8215, unitIds:[28], officialCodes:"D-8-1" },
+    { id:"g8-2-c1", grade:8, book:"2下", term:"下學期", chapter:"CH1", title:"國二下第一單元：數列與級數", seed:8221, unitIds:[16], officialCodes:"N-8-3～N-8-6" },
+    { id:"g8-2-c2", grade:8, book:"2下", term:"下學期", chapter:"CH2", title:"國二下第二單元：線型函數與其圖形", seed:8222, unitIds:[17], officialCodes:"F-8-1～F-8-2" },
+    { id:"g8-2-c3", grade:8, book:"2下", term:"下學期", chapter:"CH3", title:"國二下第三單元：三角形的基本性質", seed:8223, unitIds:[18], officialCodes:"S-8-1～S-8-5" },
+    { id:"g8-2-c4", grade:8, book:"2下", term:"下學期", chapter:"CH4", title:"國二下第四單元：平行與四邊形", seed:8224, unitIds:[19], officialCodes:"S-8-7～S-8-12" },
+    { id:"g9-1-c1", grade:9, book:"3上", term:"上學期", chapter:"CH1", title:"國三上第一單元：相似形與三角比", seed:9311, unitIds:[21], officialCodes:"S-9-1～S-9-4、N-9-1" },
+    { id:"g9-1-c2", grade:9, book:"3上", term:"上學期", chapter:"CH2", title:"國三上第二單元：圓形", seed:9312, unitIds:[22], officialCodes:"S-9-5～S-9-7" },
+    { id:"g9-1-c3", grade:9, book:"3上", term:"上學期", chapter:"CH3", title:"國三上第三單元：推理證明與三角形的心", seed:9313, unitIds:[23], officialCodes:"S-9-8～S-9-11" },
+    { id:"g9-2-c1", grade:9, book:"3下", term:"下學期", chapter:"CH1", title:"國三下第一單元：二次函數", seed:9321, unitIds:[24], officialCodes:"F-9-1～F-9-2" },
+    { id:"g9-2-c2", grade:9, book:"3下", term:"下學期", chapter:"CH2", title:"國三下第二單元：統計與機率", seed:9322, unitIds:[20,25], officialCodes:"D-9-1～D-9-2" },
+    { id:"g9-2-c3", grade:9, book:"3下", term:"下學期", chapter:"CH3", title:"國三下第三單元：立體圖形", seed:9323, unitIds:[26], officialCodes:"S-9-12～S-9-13" }
+  ].map(item => ({ ...item, scope:"chapter", questionCount:12, minutes:25, source:"翰林國中數學解題影音網 1A～3B 章節" }));
+
+  const quizCatalog = [...termQuizzes, ...chapterQuizzes];
 
   function makeQuizUnitQuestion(r, unitId, level) {
     if (unitId >= 1 && unitId <= 25) return generators[unitId - 1](r, level);
@@ -229,17 +258,18 @@ window.EXAM_ENGINE = (() => {
     const blueprint = quizCatalog.find(item => item.id === quizId);
     if (!blueprint) throw new Error("找不到指定的小考");
     const r = rngFromSeed(blueprint.seed);
+    const targetCount = blueprint.questionCount || 12;
     const sequence = [...blueprint.unitIds];
-    while (sequence.length < 12) sequence.push(blueprint.unitIds[(sequence.length - blueprint.unitIds.length) % blueprint.unitIds.length]);
-    const orderedUnits = shuffled(r, sequence.slice(0, 12));
+    while (sequence.length < targetCount) sequence.push(blueprint.unitIds[(sequence.length - blueprint.unitIds.length) % blueprint.unitIds.length]);
+    const orderedUnits = shuffled(r, sequence.slice(0, targetCount));
     const abilities = ["concept","procedure","application","concept","application","procedure","application","analysis","concept","application","procedure","analysis"];
     const questions = orderedUnits.map((unitId, index) => {
       const question = makeQuizUnitQuestion(r, unitId, 2);
-      question.ability = abilities[index];
+      question.ability = abilities[index % abilities.length];
       question.officialOrder = index + 1;
       return question;
     });
-    return { kind:"quiz", id:`QUIZ-${blueprint.id}`, quizId:blueprint.id, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, minutes:25, questionCount:12, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"NAER-108-curriculum-grade-scope-Hanlin-term-order", questions };
+    return { kind:"quiz", id:`QUIZ-${blueprint.id}`, quizId:blueprint.id, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:targetCount, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"NAER-108-curriculum-grade-scope-Hanlin-term-order", questions };
   }
 
   function makeReadingSet(r) {

@@ -21,7 +21,7 @@
   const mathBlock = value => String(value).split("\n").map(line => `<span class="math-line">${renderMath(line, true)}</span>`).join("");
   const nl = mathText;
   const letters = ["A", "B", "C", "D"];
-  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "年級與學期小考", handbook: "國中數學全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" };
+  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", handbook: "國中數學全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" };
   let toastTimer;
 
   const state = {
@@ -218,6 +218,7 @@
       acc[key] = years.reduce((sum, year) => sum + capAnalysis.formByYear[year][key], 0); return acc;
     }, {});
     $("#formAnalysis").innerHTML = Object.entries(formLabels).map(([key, [label, detail]]) => `<article class="form-card"><strong>${formTotals[key]}</strong><span>${label}</span><small>${detail}</small></article>`).join("");
+    renderHanlinChapterLedger();
 
     $("#yearLedger").innerHTML = years.slice().reverse().map((year, index) => {
       const info = official[year];
@@ -249,14 +250,81 @@
     $("#auditCount").textContent = state.tipVerdict === "all" && !q ? tipAudits.length : `${list.length}/${tipAudits.length}`;
   }
 
+  function gradeName(grade) { return grade === 7 ? "一" : grade === 8 ? "二" : "三"; }
+
+  function capItemsForUnits(unitIds) {
+    const scope = new Set(unitIds);
+    return Object.keys(capAnalysis.primaryUnits).map(Number).sort((a, b) => b - a).flatMap(year => {
+      const info = capAnalysis.officialByYear[year];
+      return capAnalysis.primaryUnits[year].map((unitId, index) => {
+        if (!scope.has(unitId)) return null;
+        const isCr = index >= info.mc;
+        return {
+          year,
+          unitId,
+          type: isCr ? "非選" : "選擇",
+          label: isCr ? `${year}-非${index - info.mc + 1}` : `${year}-${index + 1}`,
+          unitTitle: units.find(unit => unit.id === unitId)?.title || `單元 ${unitId}`
+        };
+      }).filter(Boolean);
+    });
+  }
+
+  function capSummary(item, compact = false) {
+    const items = capItemsForUnits(item.capUnitIds || item.unitIds);
+    const mc = items.filter(x => x.type === "選擇").length;
+    const cr = items.length - mc;
+    const preview = items.slice(0, compact ? 6 : 10).map(x => `<span>${esc(x.label)}</span>`).join("");
+    return `<div class="quiz-cap-tags"><strong>會考標註 ${items.length} 題</strong><small>選擇 ${mc}｜非選 ${cr}｜106–115 主概念回查</small><div class="quiz-cap-preview">${preview || "<span>近十年未列為主概念；仍依課綱出題</span>"}</div></div>`;
+  }
+
+  function quizCard(item) {
+    const scopeUnits = item.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean);
+    const isChapter = item.scope === "chapter";
+    return `<article class="quiz-card ${item.term === "總複習" ? "total" : ""} ${isChapter ? "chapter" : ""}">
+      <div class="quiz-card-top"><span>${esc(isChapter ? `${item.book} ${item.chapter}` : item.term)}</span><small>${item.questionCount || 12} 題｜${item.minutes || 25} 分鐘</small></div>
+      <h3>${esc(item.title)}</h3>
+      <p>${isChapter ? "本單元獨立題庫，依翰林章節切分；交卷後逐題顯示公式、詳解、技巧與易錯點。" : "四選一、即時計分、逐題詳解；題目只從此範圍生成。"}</p>
+      <div class="quiz-unit-list">${scopeUnits.map(title => `<span>${esc(title)}</span>`).join("")}</div>
+      ${capSummary(item, true)}
+      <small class="quiz-official-code">課綱編碼：${esc(item.officialCodes)}</small>
+      <a class="primary" href="?quiz=${item.id}">開始作答 →</a>
+    </article>`;
+  }
+
   function renderQuizCatalog() {
     const catalog = window.EXAM_ENGINE.quizCatalog;
     $("#quizCatalog").innerHTML = [7, 8, 9].map(grade => {
-      const papers = catalog.filter(item => item.grade === grade);
-      return `<section class="quiz-grade-section"><div class="quiz-grade-heading"><h2>國${grade === 7 ? "一" : grade === 8 ? "二" : "三"}</h2><span>三份考卷均保證覆蓋所列官方單元</span></div><div class="quiz-card-grid">${papers.map(item => {
-        const scopeUnits = item.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean);
-        return `<article class="quiz-card ${item.term === "總複習" ? "total" : ""}"><div class="quiz-card-top"><span>${esc(item.term)}</span><small>12 題｜25 分鐘</small></div><h3>${esc(item.title)}</h3><p>四選一、即時計分、逐題詳解；題目只從此範圍生成。</p><div class="quiz-unit-list">${scopeUnits.map(title => `<span>${esc(title)}</span>`).join("")}</div><small class="quiz-official-code">課綱編碼：${esc(item.officialCodes)}</small><a class="primary" href="?quiz=${item.id}">開始作答 →</a></article>`;
-      }).join("")}</div></section>`;
+      const papers = catalog.filter(item => item.grade === grade && item.scope === "term");
+      const chapters = catalog.filter(item => item.grade === grade && item.scope === "chapter");
+      const chapterGroups = [...new Set(chapters.map(item => item.book))].map(book => ({ book, items: chapters.filter(item => item.book === book) }));
+      return `<section class="quiz-grade-section">
+        <div class="quiz-grade-heading"><h2>國${gradeName(grade)}</h2><span>總複習、學期卷與翰林各章節單元題庫</span></div>
+        <div class="quiz-subsection"><h3>總複習與學期卷</h3><p>先用大範圍檢查漏洞，再回到下方章節題庫補單元。</p></div>
+        <div class="quiz-card-grid">${papers.map(quizCard).join("")}</div>
+        ${chapterGroups.map(group => `<div class="quiz-subsection chapter-heading"><h3>${esc(group.book)} 翰林章節小考</h3><p>依翰林公開章節順序切分；每章皆有獨立 12 題題庫。</p></div><div class="quiz-card-grid chapter-grid">${group.items.map(quizCard).join("")}</div>`).join("")}
+      </section>`;
+    }).join("");
+  }
+
+  function renderHanlinChapterLedger() {
+    const chapters = window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter");
+    const books = [...new Set(chapters.map(item => item.book))];
+    $("#hanlinChapterLedger").innerHTML = books.map(book => {
+      const items = chapters.filter(item => item.book === book);
+      const count = items.reduce((sum, item) => sum + capItemsForUnits(item.capUnitIds || item.unitIds).length, 0);
+      return `<details class="hanlin-book-ledger" open><summary><strong>${esc(book)}</strong><span>${items.length} 個翰林單元｜會考主概念標註 ${count} 題</span><b>展開／收合</b></summary>
+        <div class="hanlin-chapter-list">${items.map(item => {
+          const capItems = capItemsForUnits(item.capUnitIds || item.unitIds);
+          const unitNames = item.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、");
+          return `<article class="hanlin-chapter-item">
+            <div><strong>${esc(item.chapter)}｜${esc(item.title.replace(/^國[一二三][上下]第[一二三四五六]單元：/, ""))}</strong><small>${esc(unitNames)}｜${esc(item.officialCodes)}</small></div>
+            <span>會考 ${capItems.length} 題</span>
+            <div class="hanlin-cap-list">${capItems.map(cap => `<i title="${esc(cap.unitTitle)}">${esc(cap.label)}</i>`).join("") || "<i>近十年未列為主概念；仍依課綱出題</i>"}</div>
+            <a href="?quiz=${item.id}">進入本單元小考 →</a>
+          </article>`;
+        }).join("")}</div>
+      </details>`;
     }).join("");
   }
 
@@ -276,7 +344,10 @@
     state.seconds = (assessment.minutes || 80) * 60;
     state.currentQuestion = 0;
     setView("exam");
-    if (assessment.kind === "quiz") $$("#mainNav [data-view]").forEach(element => element.classList.toggle("active", element.dataset.view === "quiz"));
+    if (assessment.kind === "quiz") {
+      $("#viewTitle").textContent = viewNames.quiz;
+      $$("#mainNav [data-view]").forEach(element => element.classList.toggle("active", element.dataset.view === "quiz"));
+    }
     $("#examEmpty").classList.add("hidden");
     $("#examWorkspace").classList.remove("hidden");
     $("#resultPanel").classList.add("hidden");
