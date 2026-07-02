@@ -1,0 +1,68 @@
+{
+  "id": "d4-all",
+  "title": "經濟與生活．領域總複習",
+  "group": 4,
+  "scope": "review",
+  "officialCodes": "CIVICS-經濟與生活",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 8,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "市場機制與供需法則",
+      "topics": [
+        {
+          "id": "law-direction",
+          "title": "需求法則與供給法則方向"
+        },
+        {
+          "id": "equilibrium-scenario",
+          "title": "均衡價格判斷"
+        }
+      ]
+    },
+    {
+      "title": "貨幣與金融體系",
+      "topics": [
+        {
+          "id": "money-function",
+          "title": "貨幣三大功能辨識"
+        },
+        {
+          "id": "barter-problem",
+          "title": "以物易物的缺點"
+        }
+      ]
+    },
+    {
+      "title": "政府的財政與租稅",
+      "topics": [
+        {
+          "id": "direct-indirect-tax",
+          "title": "直接稅與間接稅分辨"
+        },
+        {
+          "id": "progressive-tax",
+          "title": "累進稅率與量能課稅"
+        }
+      ]
+    },
+    {
+      "title": "消費者權益與經濟生活",
+      "topics": [
+        {
+          "id": "cooling-off-scope",
+          "title": "七天猶豫期適用範圍"
+        },
+        {
+          "id": "consumer-rights",
+          "title": "消費者四大基本權益"
+        }
+      ]
+    }
+  ]
+}

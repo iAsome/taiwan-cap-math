@@ -1,0 +1,29 @@
+{
+  "id": "u15",
+  "title": "經濟與生活：政府的財政與租稅",
+  "group": 4,
+  "scope": "chapter",
+  "officialCodes": "CIVICS-15",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "政府的財政與租稅",
+      "topics": [
+        {
+          "id": "direct-indirect-tax",
+          "title": "直接稅與間接稅分辨"
+        },
+        {
+          "id": "progressive-tax",
+          "title": "累進稅率與量能課稅"
+        }
+      ]
+    }
+  ]
+}

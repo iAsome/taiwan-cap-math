@@ -1,0 +1,68 @@
+{
+  "id": "d5-all",
+  "title": "全球關連與永續發展．領域總複習",
+  "group": 5,
+  "scope": "review",
+  "officialCodes": "GEO-全球關連與永續發展",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 8,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "氣候變遷與環境議題",
+      "topics": [
+        {
+          "id": "greenhouse-vs-warming",
+          "title": "溫室效應與全球暖化的區辨"
+        },
+        {
+          "id": "ghg-sources",
+          "title": "溫室氣體的主要來源"
+        }
+      ]
+    },
+    {
+      "title": "天然資源與能源問題",
+      "topics": [
+        {
+          "id": "renewable-vs-nonrenewable",
+          "title": "再生資源與非再生資源"
+        },
+        {
+          "id": "renewable-not-unlimited",
+          "title": "再生資源仍需合理利用"
+        }
+      ]
+    },
+    {
+      "title": "人口遷移與都市化",
+      "topics": [
+        {
+          "id": "push-pull-factors",
+          "title": "人口遷移的推力與拉力"
+        },
+        {
+          "id": "urbanization-problems",
+          "title": "都市化常見問題"
+        }
+      ]
+    },
+    {
+      "title": "全球化下的區域關連與永續發展",
+      "topics": [
+        {
+          "id": "globalization-effects",
+          "title": "全球化的雙面影響"
+        },
+        {
+          "id": "sustainable-pillars",
+          "title": "永續發展三大支柱"
+        }
+      ]
+    }
+  ]
+}

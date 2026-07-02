@@ -1,0 +1,68 @@
+{
+  "id": "d4-all",
+  "title": "世界地理．領域總複習",
+  "group": 4,
+  "scope": "review",
+  "officialCodes": "GEO-世界地理",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 8,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "東亞與東南亞的自然與人文特色",
+      "topics": [
+        {
+          "id": "mainland-vs-island-se-asia",
+          "title": "中南半島與南洋群島氣候差異"
+        },
+        {
+          "id": "malacca-strait",
+          "title": "麻六甲海峽的重要性"
+        }
+      ]
+    },
+    {
+      "title": "南亞與中亞的自然與人文特色",
+      "topics": [
+        {
+          "id": "south-asia-rainfall",
+          "title": "南亞豐沛降雨的成因"
+        },
+        {
+          "id": "central-asia-dry",
+          "title": "中亞乾燥氣候的成因"
+        }
+      ]
+    },
+    {
+      "title": "歐洲的自然與人文特色",
+      "topics": [
+        {
+          "id": "marine-climate-cause",
+          "title": "溫帶海洋性氣候成因"
+        },
+        {
+          "id": "mediterranean-climate",
+          "title": "地中海型氣候特徵"
+        }
+      ]
+    },
+    {
+      "title": "美洲與非洲、大洋洲的自然與人文特色",
+      "topics": [
+        {
+          "id": "africa-symmetry",
+          "title": "非洲氣候帶的對稱分布"
+        },
+        {
+          "id": "americas-climate-range",
+          "title": "美洲氣候帶的完整性"
+        }
+      ]
+    }
+  ]
+}

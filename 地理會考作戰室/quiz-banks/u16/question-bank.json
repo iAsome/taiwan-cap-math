@@ -1,0 +1,29 @@
+{
+  "id": "u16",
+  "title": "世界地理：美洲與非洲、大洋洲的自然與人文特色",
+  "group": 4,
+  "scope": "chapter",
+  "officialCodes": "GEO-16",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "美洲與非洲、大洋洲的自然與人文特色",
+      "topics": [
+        {
+          "id": "africa-symmetry",
+          "title": "非洲氣候帶的對稱分布"
+        },
+        {
+          "id": "americas-climate-range",
+          "title": "美洲氣候帶的完整性"
+        }
+      ]
+    }
+  ]
+}

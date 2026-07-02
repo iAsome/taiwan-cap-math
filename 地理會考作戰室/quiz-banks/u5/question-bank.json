@@ -1,0 +1,29 @@
+{
+  "id": "u5",
+  "title": "台灣地理：臺灣的地形與地質",
+  "group": 2,
+  "scope": "chapter",
+  "officialCodes": "GEO-05",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "臺灣的地形與地質",
+      "topics": [
+        {
+          "id": "taiwan-landform-order",
+          "title": "台灣地形分布順序"
+        },
+        {
+          "id": "taiwan-plate-setting",
+          "title": "台灣的板塊背景"
+        }
+      ]
+    }
+  ]
+}

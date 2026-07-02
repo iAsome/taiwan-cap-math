@@ -1,0 +1,29 @@
+{
+  "id": "u12",
+  "title": "政治與民主治理：政黨政治與公民參與",
+  "group": 3,
+  "scope": "chapter",
+  "officialCodes": "CIVICS-12",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "政黨政治與公民參與",
+      "topics": [
+        {
+          "id": "two-vote-system",
+          "title": "單一選區兩票制"
+        },
+        {
+          "id": "party-vs-interest-group",
+          "title": "政黨與利益團體區辨"
+        }
+      ]
+    }
+  ]
+}

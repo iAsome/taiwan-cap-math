@@ -1,0 +1,68 @@
+{
+  "id": "d2-all",
+  "title": "法律與生活．領域總複習",
+  "group": 2,
+  "scope": "review",
+  "officialCodes": "CIVICS-法律與生活",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 8,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "法律的意義與位階",
+      "topics": [
+        {
+          "id": "legal-hierarchy",
+          "title": "法律位階判斷"
+        },
+        {
+          "id": "law-naming",
+          "title": "法律與命令的定名分辨"
+        }
+      ]
+    },
+    {
+      "title": "憲法與人權保障",
+      "topics": [
+        {
+          "id": "personal-freedom",
+          "title": "人身自由保障程序"
+        },
+        {
+          "id": "rights-category",
+          "title": "四大人權類型辨識"
+        }
+      ]
+    },
+    {
+      "title": "刑事與民事法律關係",
+      "topics": [
+        {
+          "id": "criminal-age",
+          "title": "刑事責任年齡判斷"
+        },
+        {
+          "id": "civil-criminal-coexist",
+          "title": "刑事與民事責任併存"
+        }
+      ]
+    },
+    {
+      "title": "少年事件與權利救濟",
+      "topics": [
+        {
+          "id": "juvenile-age-range",
+          "title": "少年事件處理法適用年齡"
+        },
+        {
+          "id": "administrative-remedy",
+          "title": "行政救濟途徑順序"
+        }
+      ]
+    }
+  ]
+}

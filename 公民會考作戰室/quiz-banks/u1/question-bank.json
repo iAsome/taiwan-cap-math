@@ -1,0 +1,29 @@
+{
+  "id": "u1",
+  "title": "自我、人際與社會：自我認同與社會化",
+  "group": 1,
+  "scope": "chapter",
+  "officialCodes": "CIVICS-01",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "自我認同與社會化",
+      "topics": [
+        {
+          "id": "socialization-agent",
+          "title": "社會化媒介判斷"
+        },
+        {
+          "id": "self-concept",
+          "title": "自我概念的形成"
+        }
+      ]
+    }
+  ]
+}

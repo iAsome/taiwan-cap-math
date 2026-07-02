@@ -1,0 +1,68 @@
+{
+  "id": "d3-all",
+  "title": "政治與民主治理．領域總複習",
+  "group": 3,
+  "scope": "review",
+  "officialCodes": "CIVICS-政治與民主治理",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 8,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "民主政治的基本原則",
+      "topics": [
+        {
+          "id": "majority-minority",
+          "title": "多數決與少數保障"
+        },
+        {
+          "id": "rule-of-law-level",
+          "title": "形式法治與實質法治"
+        }
+      ]
+    },
+    {
+      "title": "中央政府的組織與職權",
+      "topics": [
+        {
+          "id": "five-branch-match",
+          "title": "五院職權配對"
+        },
+        {
+          "id": "president-vs-premier",
+          "title": "總統與行政院長職權區分"
+        }
+      ]
+    },
+    {
+      "title": "地方自治與選舉制度",
+      "topics": [
+        {
+          "id": "voting-age",
+          "title": "選舉權與被選舉權年齡"
+        },
+        {
+          "id": "local-government-tier",
+          "title": "地方自治三級制"
+        }
+      ]
+    },
+    {
+      "title": "政黨政治與公民參與",
+      "topics": [
+        {
+          "id": "two-vote-system",
+          "title": "單一選區兩票制"
+        },
+        {
+          "id": "party-vs-interest-group",
+          "title": "政黨與利益團體區辨"
+        }
+      ]
+    }
+  ]
+}

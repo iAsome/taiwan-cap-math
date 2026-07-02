@@ -1,0 +1,33 @@
+{
+  "id": "u3",
+  "title": "地理視野與技能：經緯度與地球運動",
+  "group": 1,
+  "scope": "chapter",
+  "officialCodes": "GEO-03",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "經緯度與地球運動",
+      "topics": [
+        {
+          "id": "lat-vs-lon",
+          "title": "緯度與經度的功能"
+        },
+        {
+          "id": "timezone-calc",
+          "title": "時區換算"
+        },
+        {
+          "id": "solar-declination",
+          "title": "太陽直射點移動"
+        }
+      ]
+    }
+  ]
+}

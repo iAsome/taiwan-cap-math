@@ -1,0 +1,29 @@
+{
+  "id": "u11",
+  "title": "政治與民主治理：地方自治與選舉制度",
+  "group": 3,
+  "scope": "chapter",
+  "officialCodes": "CIVICS-11",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "地方自治與選舉制度",
+      "topics": [
+        {
+          "id": "voting-age",
+          "title": "選舉權與被選舉權年齡"
+        },
+        {
+          "id": "local-government-tier",
+          "title": "地方自治三級制"
+        }
+      ]
+    }
+  ]
+}

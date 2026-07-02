@@ -1,0 +1,33 @@
+{
+  "id": "u2",
+  "title": "地理視野與技能：地圖判讀與比例尺",
+  "group": 1,
+  "scope": "chapter",
+  "officialCodes": "GEO-02",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 3,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "地圖判讀與比例尺",
+      "topics": [
+        {
+          "id": "scale-comparison",
+          "title": "比例尺大小判斷"
+        },
+        {
+          "id": "contour-spacing",
+          "title": "等高線疏密與坡度"
+        },
+        {
+          "id": "distance-calc",
+          "title": "實際距離計算"
+        }
+      ]
+    }
+  ]
+}

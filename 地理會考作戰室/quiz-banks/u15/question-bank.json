@@ -1,0 +1,29 @@
+{
+  "id": "u15",
+  "title": "世界地理：歐洲的自然與人文特色",
+  "group": 4,
+  "scope": "chapter",
+  "officialCodes": "GEO-15",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "歐洲的自然與人文特色",
+      "topics": [
+        {
+          "id": "marine-climate-cause",
+          "title": "溫帶海洋性氣候成因"
+        },
+        {
+          "id": "mediterranean-climate",
+          "title": "地中海型氣候特徵"
+        }
+      ]
+    }
+  ]
+}

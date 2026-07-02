@@ -1,0 +1,29 @@
+{
+  "id": "u11",
+  "title": "中國地理：中國的人口與民族",
+  "group": 3,
+  "scope": "chapter",
+  "officialCodes": "GEO-11",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "中國的人口與民族",
+      "topics": [
+        {
+          "id": "hu-line",
+          "title": "胡煥庸線的意義"
+        },
+        {
+          "id": "minority-distribution",
+          "title": "少數民族分布"
+        }
+      ]
+    }
+  ]
+}

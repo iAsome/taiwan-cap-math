@@ -1,0 +1,29 @@
+{
+  "id": "u5",
+  "title": "法律與生活：法律的意義與位階",
+  "group": 2,
+  "scope": "chapter",
+  "officialCodes": "CIVICS-05",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "法律的意義與位階",
+      "topics": [
+        {
+          "id": "legal-hierarchy",
+          "title": "法律位階判斷"
+        },
+        {
+          "id": "law-naming",
+          "title": "法律與命令的定名分辨"
+        }
+      ]
+    }
+  ]
+}

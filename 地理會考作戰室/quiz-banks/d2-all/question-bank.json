@@ -1,0 +1,64 @@
+{
+  "id": "d2-all",
+  "title": "台灣地理．領域總複習",
+  "group": 2,
+  "scope": "review",
+  "officialCodes": "GEO-台灣地理",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 7,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "臺灣的地形與地質",
+      "topics": [
+        {
+          "id": "taiwan-landform-order",
+          "title": "台灣地形分布順序"
+        },
+        {
+          "id": "taiwan-plate-setting",
+          "title": "台灣的板塊背景"
+        }
+      ]
+    },
+    {
+      "title": "臺灣的氣候與水文",
+      "topics": [
+        {
+          "id": "monsoon-season",
+          "title": "台灣的季風型態"
+        },
+        {
+          "id": "water-shortage-cause",
+          "title": "台灣缺水問題的成因"
+        }
+      ]
+    },
+    {
+      "title": "臺灣的產業與人口",
+      "topics": [
+        {
+          "id": "industry-classification",
+          "title": "產業結構分類"
+        },
+        {
+          "id": "population-west-dense",
+          "title": "台灣人口分布特徵"
+        }
+      ]
+    },
+    {
+      "title": "臺灣的區域特色（北中南東）",
+      "topics": [
+        {
+          "id": "region-feature-match",
+          "title": "北中南東區域特色對應"
+        }
+      ]
+    }
+  ]
+}

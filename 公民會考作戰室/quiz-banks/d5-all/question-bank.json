@@ -1,0 +1,68 @@
+{
+  "id": "d5-all",
+  "title": "全球化與公民參與．領域總複習",
+  "group": 5,
+  "scope": "review",
+  "officialCodes": "CIVICS-全球化與公民參與",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 8,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "國際組織與國際關係",
+      "topics": [
+        {
+          "id": "org-function",
+          "title": "國際組織功能配對"
+        },
+        {
+          "id": "taiwan-participation",
+          "title": "台灣參與國際組織的名稱"
+        }
+      ]
+    },
+    {
+      "title": "全球化的影響與挑戰",
+      "topics": [
+        {
+          "id": "globalization-both-side",
+          "title": "全球化的正負面影響"
+        },
+        {
+          "id": "cross-border-issue",
+          "title": "全球化下的跨國問題擴散"
+        }
+      ]
+    },
+    {
+      "title": "永續發展與環境正義",
+      "topics": [
+        {
+          "id": "sustainable-development",
+          "title": "永續發展三大面向"
+        },
+        {
+          "id": "environmental-justice",
+          "title": "環境正義與污染者付費"
+        }
+      ]
+    },
+    {
+      "title": "公民社會與媒體識讀",
+      "topics": [
+        {
+          "id": "fact-vs-opinion",
+          "title": "事實與意見的區分"
+        },
+        {
+          "id": "media-literacy-step",
+          "title": "媒體識讀的基本步驟"
+        }
+      ]
+    }
+  ]
+}

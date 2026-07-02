@@ -1,0 +1,72 @@
+{
+  "id": "d1-all",
+  "title": "地理視野與技能．領域總複習",
+  "group": 1,
+  "scope": "review",
+  "officialCodes": "GEO-地理視野與技能",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 9,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "地理學的視野與研究方法",
+      "topics": [
+        {
+          "id": "geo-branches",
+          "title": "自然地理與人文地理"
+        },
+        {
+          "id": "geo-five-themes",
+          "title": "地理五大主題"
+        }
+      ]
+    },
+    {
+      "title": "地圖判讀與比例尺",
+      "topics": [
+        {
+          "id": "scale-comparison",
+          "title": "比例尺大小判斷"
+        },
+        {
+          "id": "contour-spacing",
+          "title": "等高線疏密與坡度"
+        },
+        {
+          "id": "distance-calc",
+          "title": "實際距離計算"
+        }
+      ]
+    },
+    {
+      "title": "經緯度與地球運動",
+      "topics": [
+        {
+          "id": "lat-vs-lon",
+          "title": "緯度與經度的功能"
+        },
+        {
+          "id": "timezone-calc",
+          "title": "時區換算"
+        },
+        {
+          "id": "solar-declination",
+          "title": "太陽直射點移動"
+        }
+      ]
+    },
+    {
+      "title": "遙測科技與地理資訊系統(GIS)",
+      "topics": [
+        {
+          "id": "gis-vs-remote-sensing",
+          "title": "遙測、GIS、GPS功能區分"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "u7",
+  "title": "法律與生活：刑事與民事法律關係",
+  "group": 2,
+  "scope": "chapter",
+  "officialCodes": "CIVICS-07",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "刑事與民事法律關係",
+      "topics": [
+        {
+          "id": "criminal-age",
+          "title": "刑事責任年齡判斷"
+        },
+        {
+          "id": "civil-criminal-coexist",
+          "title": "刑事與民事責任併存"
+        }
+      ]
+    }
+  ]
+}

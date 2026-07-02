@@ -1,0 +1,68 @@
+{
+  "id": "d1-all",
+  "title": "自我、人際與社會．領域總複習",
+  "group": 1,
+  "scope": "review",
+  "officialCodes": "CIVICS-自我、人際與社會",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 8,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "自我認同與社會化",
+      "topics": [
+        {
+          "id": "socialization-agent",
+          "title": "社會化媒介判斷"
+        },
+        {
+          "id": "self-concept",
+          "title": "自我概念的形成"
+        }
+      ]
+    },
+    {
+      "title": "家庭與婚姻制度",
+      "topics": [
+        {
+          "id": "marriage-requirement",
+          "title": "婚姻成立要件"
+        },
+        {
+          "id": "family-type",
+          "title": "家庭型態辨識"
+        }
+      ]
+    },
+    {
+      "title": "多元文化與族群關係",
+      "topics": [
+        {
+          "id": "assimilation-vs-multicultural",
+          "title": "同化與多元文化辨識"
+        },
+        {
+          "id": "indigenous-fact",
+          "title": "台灣族群基本認識"
+        }
+      ]
+    },
+    {
+      "title": "社會團體與社會規範",
+      "topics": [
+        {
+          "id": "norm-strength",
+          "title": "社會規範強制力比較"
+        },
+        {
+          "id": "group-type",
+          "title": "初級團體與次級團體"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "u6",
+  "title": "法律與生活：憲法與人權保障",
+  "group": 2,
+  "scope": "chapter",
+  "officialCodes": "CIVICS-06",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "憲法與人權保障",
+      "topics": [
+        {
+          "id": "personal-freedom",
+          "title": "人身自由保障程序"
+        },
+        {
+          "id": "rights-category",
+          "title": "四大人權類型辨識"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "d3-all",
+  "title": "中國地理．領域總複習",
+  "group": 3,
+  "scope": "review",
+  "officialCodes": "GEO-中國地理",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 8,
+    "minutes": 20,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "中國的地形與氣候分區",
+      "topics": [
+        {
+          "id": "three-terraces",
+          "title": "地勢三階梯"
+        },
+        {
+          "id": "china-rainfall-gradient",
+          "title": "中國降雨量分布梯度"
+        }
+      ]
+    },
+    {
+      "title": "中國的水文與資源",
+      "topics": [
+        {
+          "id": "yellow-river-suspended",
+          "title": "黃河地上河的成因"
+        },
+        {
+          "id": "river-comparison",
+          "title": "長江與黃河特性比較"
+        }
+      ]
+    },
+    {
+      "title": "中國的人口與民族",
+      "topics": [
+        {
+          "id": "hu-line",
+          "title": "胡煥庸線的意義"
+        },
+        {
+          "id": "minority-distribution",
+          "title": "少數民族分布"
+        }
+      ]
+    },
+    {
+      "title": "中國的區域發展與城鄉差異",
+      "topics": [
+        {
+          "id": "east-west-gap",
+          "title": "東西部發展落差成因"
+        },
+        {
+          "id": "migrant-workers",
+          "title": "農民工現象"
+        }
+      ]
+    }
+  ]
+}

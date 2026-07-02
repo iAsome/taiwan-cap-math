@@ -1,0 +1,29 @@
+{
+  "id": "u10",
+  "title": "政治與民主治理：中央政府的組織與職權",
+  "group": 3,
+  "scope": "chapter",
+  "officialCodes": "CIVICS-10",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "中央政府的組織與職權",
+      "topics": [
+        {
+          "id": "five-branch-match",
+          "title": "五院職權配對"
+        },
+        {
+          "id": "president-vs-premier",
+          "title": "總統與行政院長職權區分"
+        }
+      ]
+    }
+  ]
+}

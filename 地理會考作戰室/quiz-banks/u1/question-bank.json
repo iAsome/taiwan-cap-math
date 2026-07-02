@@ -1,0 +1,29 @@
+{
+  "id": "u1",
+  "title": "地理視野與技能：地理學的視野與研究方法",
+  "group": 1,
+  "scope": "chapter",
+  "officialCodes": "GEO-01",
+  "runtime": {
+    "generator": "questions.js + quiz-taxonomy.js",
+    "function": "window.EXAM_ENGINE.generateQuiz",
+    "questionCount": 2,
+    "minutes": 10,
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears."
+  },
+  "taxonomy": [
+    {
+      "title": "地理學的視野與研究方法",
+      "topics": [
+        {
+          "id": "geo-branches",
+          "title": "自然地理與人文地理"
+        },
+        {
+          "id": "geo-five-themes",
+          "title": "地理五大主題"
+        }
+      ]
+    }
+  ]
+}
