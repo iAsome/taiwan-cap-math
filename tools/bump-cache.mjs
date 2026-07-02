@@ -1,25 +1,15 @@
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const CACHE = "20260704b";
-const META = `<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">`;
+const CACHE = process.argv[2] || "20260706b";
 
-function bumpFile(file) {
-  let html = fs.readFileSync(file, "utf8");
-  html = html.replace(/\?v=20260703[ab]/g, `?v=${CACHE}`).replace(/\?v=20260702a/g, `?v=${CACHE}`);
-  if (!html.includes("http-equiv=\"Cache-Control\"")) {
-    html = html.replace(/<meta charset="UTF-8">/, `<meta charset="UTF-8">\n  ${META}`);
-  }
-  fs.writeFileSync(file, html);
-}
+const files = ["index.html", ...fs.readdirSync(root).filter(d => d.endsWith("會考作戰室")).map(d => path.join(d, "index.html"))];
 
-bumpFile(path.join(root, "index.html"));
-for (const dir of fs.readdirSync(root).filter(d => d.endsWith("會考作戰室"))) {
-  const p = path.join(root, dir, "index.html");
-  if (fs.existsSync(p)) bumpFile(p);
+for (const rel of files) {
+  const file = path.join(root, rel);
+  const next = fs.readFileSync(file, "utf8").replace(/\?v=202607\d+[a-z]/g, `?v=${CACHE}`);
+  fs.writeFileSync(file, next, "utf8");
+  console.log(`bumped ${rel} -> ?v=${CACHE}`);
 }
-console.log("cache", CACHE);
