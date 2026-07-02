@@ -92,9 +92,6 @@
     if (view === "sources") renderSources();
     if (view === "archive") renderArchive();
     if (view === "paper") renderPaperView();
-    if (view === "paper" || view === "archive") { // #region agent log
-      fetch('http://127.0.0.1:7798/ingest/a5622d58-649a-4621-8246-bca30122e229',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'2846ce'},body:JSON.stringify({sessionId:'2846ce',location:'app.js:setView',message:'view switch',data:{view,hypothesisId:'A',paperParent:document.getElementById('view-paper')?.parentElement?.id,archiveDisplay:document.getElementById('view-archive')?getComputedStyle(document.getElementById('view-archive')).display:'missing',paperDisplay:document.getElementById('view-paper')?getComputedStyle(document.getElementById('view-paper')).display:'missing',paperVisible:!!document.getElementById('view-paper')?.offsetParent},timestamp:Date.now(),runId:'post-fix'})}).catch(()=>{});
-      // #endregion }
   }
 
   function updateLearningProgress() {
@@ -167,9 +164,6 @@
 const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
 
   function openPaperView(item) {
-    // #region agent log
-    fetch('http://127.0.0.1:7798/ingest/a5622d58-649a-4621-8246-bca30122e229',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'2846ce'},body:JSON.stringify({sessionId:'2846ce',location:'app.js:openPaperView',message:'open paper',data:{hypothesisId:'D',year:item?.year,paper:item?.paper},timestamp:Date.now()})}).catch(()=>{});
-    // #endregion
     state.paperItem = item;
     setView("paper");
   }
@@ -177,9 +171,6 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   function renderPaperView() {
     const item = state.paperItem;
     const host = $("#paperViewer");
-    // #region agent log
-    fetch('http://127.0.0.1:7798/ingest/a5622d58-649a-4621-8246-bca30122e229',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'2846ce'},body:JSON.stringify({sessionId:'2846ce',location:'app.js:renderPaperView',message:'render paper',data:{hypothesisId:'C',hasItem:!!item,hasHost:!!host,hostLen:host?.innerHTML?.length||0,paper:item?.paper},timestamp:Date.now()})}).catch(()=>{});
-    // #endregion
     if (!item) {
       host.innerHTML = `<p class="unit-empty">請從考卷館選擇年度。</p>`;
       return;
@@ -265,7 +256,8 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       const info = official[year];
       return `<details ${index === 0 ? "open" : ""}><summary><strong>${year}</strong><span>${info.curriculum}｜${info.mc} 題選擇題｜${info.readingSets || 0} 組共用選文｜70 分鐘</span><b>展開逐題編碼 ＋</b></summary><div class="ledger-body"><div class="ledger-questions">${primary[year].map((unitId, i) => `<article class="ledger-item"><b>${i + 1}</b><span>${esc(units[unitId - 1].title)}<small>${esc(capAnalysis.domainByUnit[unitId])}</small></span></article>`).join("")}</div></div></details>`;
     }).join("");
-    $("#missingYears").textContent = archives.map(a => a.year).filter(year => !years.includes(year)).sort((a, b) => b - a).join("、");
+    const missingYearsEl = $("#missingYears");
+    if (missingYearsEl) missingYearsEl.textContent = archives.map(a => a.year).filter(year => !years.includes(year)).sort((a, b) => b - a).join("、");
   }
 
   function renderTipAudits() {

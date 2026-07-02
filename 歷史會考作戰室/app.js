@@ -202,7 +202,7 @@
     $("#archiveGrid").innerHTML = archives.map((item, index) => `
       <article class="archive-card ${index === 0 ? "latest" : ""}">
         <div class="year-block"><strong>${item.year}</strong><span>${item.western} 年${index === 0 ? " · 最新" : ""}</span></div>
-        <div class="archive-body"><h3>${item.year} 年社會科歷史題</h3><p>官方題本 PDF｜可預覽與下載</p><small class="archive-scope-note">整份社會科官方題本（非僅歷史篩選版）</small>
+        <div class="archive-body"><h3>${item.year} 年社會科題本</h3><p>官方題本 PDF｜可預覽與下載</p><small class="archive-scope-note">整份社會科官方題本</small>
           <div class="archive-actions"><button class="primary" data-paper-year="${item.year}">查看考卷 →</button></div>
         </div>
       </article>`).join("");

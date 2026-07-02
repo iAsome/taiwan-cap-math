@@ -1,0 +1,15 @@
+---
+description: After user-facing site changes, commit and push to GitHub Pages so the live site stays current.
+alwaysApply: true
+---
+
+# Publish after update
+
+When the user asks to fix, update, or ship changes to this repo's 作戰室 sites (HTML/CSS/JS/data the hub serves):
+
+1. Run `node tools/run-phase0.mjs` if the change touches subject apps or data.
+2. Bump cache query strings (`?v=YYYYMMDDx`) on every touched `index.html` and the root hub `index.html` when styles/scripts change.
+3. **Commit and push to `origin/main`** in the same session unless the user explicitly says not to publish yet.
+4. After push, tell the user the live URL: https://iasome.github.io/taiwan-cap-math/
+
+Do not commit `tmp_*` scratch files or one-off debug scripts unless the user asks.

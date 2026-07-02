@@ -257,7 +257,10 @@ window.SCIENCE_DATA = (() => {
 
   const archives = [115, 114, 113, 112, 111, 110, 109, 108, 107, 106].map(year => ({
     year, western: year + 1911,
-    page: `https://cap.rcpet.edu.tw/exam/${year}/${year}exam.html`
+    page: `https://cap.rcpet.edu.tw/exam/${year}/${year}exam.html`,
+    paper: `official-data/${year}/${year}-exam.pdf`,
+    answer: `official-data/${year}/${year}-answer.pdf`,
+    guide: `official-data/${year}/${year}-guide.pdf`
   }));
 
   const examFacts = {

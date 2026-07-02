@@ -214,7 +214,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     $("#archiveGrid").innerHTML = archives.map((item, index) => `
       <article class="archive-card ${index === 0 ? "latest" : ""}">
         <div class="year-block"><strong>${item.year}</strong><span>${item.western} 年${index === 0 ? " · 最新" : ""}</span></div>
-        <div class="archive-body"><h3>${item.year} 年國中教育會考自然科</h3><p>官方題本 PDF｜可預覽與下載</p><small class="archive-scope-note">整份自然科官方題本（非僅理化篩選版）</small>
+        <div class="archive-body"><h3>${item.year} 年自然科題本</h3><p>官方題本 PDF｜可預覽與下載</p><small class="archive-scope-note">整份自然科官方題本</small>
           <div class="archive-actions"><button class="primary" data-paper-year="${item.year}">查看考卷 →</button></div>
         </div>
       </article>`).join("");
