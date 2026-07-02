@@ -92,6 +92,9 @@
     if (view === "sources") renderSources();
     if (view === "archive") renderArchive();
     if (view === "paper") renderPaperView();
+    if (view === "paper" || view === "archive") { // #region agent log
+      fetch('http://127.0.0.1:7798/ingest/a5622d58-649a-4621-8246-bca30122e229',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'2846ce'},body:JSON.stringify({sessionId:'2846ce',location:'app.js:setView',message:'view switch',data:{view,hypothesisId:'A',paperParent:document.getElementById('view-paper')?.parentElement?.id,archiveDisplay:document.getElementById('view-archive')?getComputedStyle(document.getElementById('view-archive')).display:'missing',paperDisplay:document.getElementById('view-paper')?getComputedStyle(document.getElementById('view-paper')).display:'missing',paperVisible:!!document.getElementById('view-paper')?.offsetParent},timestamp:Date.now(),runId:'post-fix'})}).catch(()=>{});
+      // #endregion }
   }
 
   function updateLearningProgress() {
@@ -164,6 +167,9 @@
 const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
 
   function openPaperView(item) {
+    // #region agent log
+    fetch('http://127.0.0.1:7798/ingest/a5622d58-649a-4621-8246-bca30122e229',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'2846ce'},body:JSON.stringify({sessionId:'2846ce',location:'app.js:openPaperView',message:'open paper',data:{hypothesisId:'D',year:item?.year,paper:item?.paper},timestamp:Date.now()})}).catch(()=>{});
+    // #endregion
     state.paperItem = item;
     setView("paper");
   }
@@ -171,6 +177,9 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   function renderPaperView() {
     const item = state.paperItem;
     const host = $("#paperViewer");
+    // #region agent log
+    fetch('http://127.0.0.1:7798/ingest/a5622d58-649a-4621-8246-bca30122e229',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'2846ce'},body:JSON.stringify({sessionId:'2846ce',location:'app.js:renderPaperView',message:'render paper',data:{hypothesisId:'C',hasItem:!!item,hasHost:!!host,hostLen:host?.innerHTML?.length||0,paper:item?.paper},timestamp:Date.now()})}).catch(()=>{});
+    // #endregion
     if (!item) {
       host.innerHTML = `<p class="unit-empty">請從考卷館選擇年度。</p>`;
       return;

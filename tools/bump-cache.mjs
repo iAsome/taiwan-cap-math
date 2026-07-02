@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const CACHE = "20260704a";
+const CACHE = "20260704b";
 const META = `<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">`;
