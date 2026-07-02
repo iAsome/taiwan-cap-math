@@ -17,7 +17,7 @@
     search: "",
     tipSearch: "",
     tipVerdict: "all",
-    completed: new Set(JSON.parse(localStorage.getItem("capChinese.completed") || "[]")),
+    completed: (() => { try { return new Set(JSON.parse(localStorage.getItem("capChinese.completed") || "[]")); } catch { return new Set(); } })(),
     exam: null,
     answers: [],
     submitted: false,
@@ -254,10 +254,8 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
 
     $("#yearLedger").innerHTML = years.slice().reverse().map((year, index) => {
       const info = official[year];
-      return `<details ${index === 0 ? "open" : ""}><summary><strong>${year}</strong><span>${info.curriculum}｜${info.mc} 題選擇題｜${info.readingSets || 0} 組共用選文｜70 分鐘</span><b>展開逐題編碼 ＋</b></summary><div class="ledger-body"><div class="ledger-questions">${primary[year].map((unitId, i) => `<article class="ledger-item"><b>${i + 1}</b><span>${esc(units[unitId - 1].title)}<small>${esc(capAnalysis.domainByUnit[unitId])}</small></span></article>`).join("")}</div></div></details>`;
+      return `<details ${index === 0 ? "open" : ""}><summary><strong>${year}</strong><span>${info.curriculum}｜${info.mc} 題選擇題｜${info.readingSets || 0} 組共用選文｜70 分鐘</span><b>展開逐題編碼 ＋</b></summary><div class="ledger-body"><div class="ledger-questions">${primary[year].map((unitId, i) => `<article class="ledger-item"><b>${i + 1}</b><span>${esc(units.find(u => u.id === unitId)?.title || "跨單元")}<small>${esc(capAnalysis.domainByUnit[unitId])}</small></span></article>`).join("")}</div></div></details>`;
     }).join("");
-    const missingYearsEl = $("#missingYears");
-    if (missingYearsEl) missingYearsEl.textContent = archives.map(a => a.year).filter(year => !years.includes(year)).sort((a, b) => b - a).join("、");
   }
 
   function renderTipAudits() {
@@ -599,41 +597,61 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
 
   function bindStaticEvents() {
     $$('[data-view]').forEach(button => button.addEventListener("click", event => { event.preventDefault(); setView(button.dataset.view); }));
-    $("#menuButton").addEventListener("click", () => document.body.classList.toggle("menu-open"));
-    $("#themeButton").addEventListener("click", () => {
+    const menuButton = $("#menuButton");
+    if (menuButton) menuButton.addEventListener("click", () => document.body.classList.toggle("menu-open"));
+    const themeButton = $("#themeButton");
+    if (themeButton) themeButton.addEventListener("click", () => {
       document.body.classList.toggle("dark");
       const dark = document.body.classList.contains("dark");
       localStorage.setItem("capChinese.dark", dark ? "1" : "0");
-      $("#themeButton").textContent = dark ? "日" : "月";
+      themeButton.textContent = dark ? "日" : "月";
     });
-    $("#generateExam").addEventListener("click", beginExam);
-    $("#startDefaultExam").addEventListener("click", beginExam);
-    $("#switchFullExam").addEventListener("click", switchToFullExam);
-    $("#submitExam").addEventListener("click", () => submitExam());
-    $("#printExam").addEventListener("click", () => window.print());
-    $("#handbookSearch").addEventListener("input", event => { state.search = event.target.value; renderHandbook(); });
-    $$('[data-grade]', $("#gradeFilters")).forEach(button => button.addEventListener("click", () => {
+    const generateExam = $("#generateExam");
+    if (generateExam) generateExam.addEventListener("click", beginExam);
+    const startDefaultExam = $("#startDefaultExam");
+    if (startDefaultExam) startDefaultExam.addEventListener("click", beginExam);
+    const switchFullExam = $("#switchFullExam");
+    if (switchFullExam) switchFullExam.addEventListener("click", switchToFullExam);
+    const submitExamBtn = $("#submitExam");
+    if (submitExamBtn) submitExamBtn.addEventListener("click", () => submitExam());
+    const printExam = $("#printExam");
+    if (printExam) printExam.addEventListener("click", () => window.print());
+    const handbookSearch = $("#handbookSearch");
+    if (handbookSearch) handbookSearch.addEventListener("input", event => { state.search = event.target.value; renderHandbook(); });
+    const gradeFilters = $("#gradeFilters");
+    if (gradeFilters) $$('[data-grade]', gradeFilters).forEach(button => button.addEventListener("click", () => {
       state.grade = button.dataset.grade;
-      $$('[data-grade]', $("#gradeFilters")).forEach(el => el.classList.toggle("active", el === button));
+      $$('[data-grade]', gradeFilters).forEach(el => el.classList.toggle("active", el === button));
       renderHandbook();
     }));
-    $("#tipSearch").addEventListener("input", event => { state.tipSearch = event.target.value; renderTipAudits(); });
-    $$('[data-verdict]', $("#tipFilters")).forEach(button => button.addEventListener("click", () => {
+    const tipSearch = $("#tipSearch");
+    if (tipSearch) tipSearch.addEventListener("input", event => { state.tipSearch = event.target.value; renderTipAudits(); });
+    const tipFilters = $("#tipFilters");
+    if (tipFilters) $$('[data-verdict]', tipFilters).forEach(button => button.addEventListener("click", () => {
       state.tipVerdict = button.dataset.verdict;
-      $$('[data-verdict]', $("#tipFilters")).forEach(el => el.classList.toggle("active", el === button));
+      $$('[data-verdict]', tipFilters).forEach(el => el.classList.toggle("active", el === button));
       renderTipAudits();
     }));
   }
 
   function init() {
+    bindStaticEvents();
     const lastSeed = localStorage.getItem("capChinese.lastSeed");
     const params = new URLSearchParams(window.location.search);
     const requestedUnit = Number(params.get("unit"));
     if (Number.isInteger(requestedUnit) && units.some(unit => unit.id === requestedUnit)) state.selectedUnit = requestedUnit;
-    if (lastSeed) $("#seedInput").value = lastSeed;
-    if (localStorage.getItem("capChinese.dark") === "1") { document.body.classList.add("dark"); $("#themeButton").textContent = "日"; }
-    bindStaticEvents();
-    renderQuizCatalog(); renderHandbook(); renderAtlas(); renderAnalysis(); renderSources(); renderArchive(); updateLearningProgress();
+    const seedInput = $("#seedInput");
+    if (lastSeed && seedInput) seedInput.value = lastSeed;
+    const themeButton = $("#themeButton");
+    if (localStorage.getItem("capChinese.dark") === "1") {
+      document.body.classList.add("dark");
+      if (themeButton) themeButton.textContent = "日";
+    }
+    try {
+      renderQuizCatalog(); renderHandbook(); renderAtlas(); renderAnalysis(); renderSources(); renderArchive(); updateLearningProgress();
+    } catch (err) {
+      console.error("capChinese init render failed:", err);
+    }
     const requestedView = params.get("view");
     const requestedQuiz = params.get("quiz");
     if (requestedQuiz && window.EXAM_ENGINE.quizCatalog.some(item => item.id === requestedQuiz)) beginQuiz(requestedQuiz);
