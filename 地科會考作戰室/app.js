@@ -205,16 +205,6 @@
   }
 
   function renderAnalysis() {
-    // ponytail: EARTH_ANALYSIS needs the same official-PDF-by-PDF question tagging
-    // math's analysis-data.js already did for 106-115; that research hasn't been
-    // done for earth science yet, so show an honest "not built" note instead of
-    // fabricating stats. Upgrade path: populate analysis-data.js with real
-    // officialByYear/primaryUnits/domainByUnit once the PDFs are cross-checked.
-    if (!capAnalysis) {
-      $("#analysisStats").innerHTML = `<div class="research-limit" style="grid-template-columns:1fr"><p>尚未完成 106–115 年官方自然科題本逐題核對地球科學主概念，本頁統計尚未建置，避免呈現未經查證的數字。</p></div>`;
-      ["#abilityBars", "#officialStructureTable", "#domainDistribution", "#conceptMatrixHead", "#conceptMatrixBody", "#hanlinChapterLedger", "#yearLedger"].forEach(sel => { const el = $(sel); if (el) el.innerHTML = ""; });
-      return;
-    }
     const years = Object.keys(capAnalysis.officialByYear).map(Number).sort((a, b) => a - b);
     const official = capAnalysis.officialByYear;
     const primary = capAnalysis.primaryUnits;
@@ -476,7 +466,7 @@
       }).join("")}</div>`;
       return `<article class="question" id="question-${index + 1}" data-question="${index}">
         <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">${esc(groupMark(unit.grade))}</span><span class="question-tag">${esc(unit.title)}</span>${q.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(q.taxonomyTopic)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span></div>
-        <div class="question-text">${nl(q.text)}</div>${choices}${solutionHtml(q)}
+        <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${solutionHtml(q)}
       </article>`;
     }).join("");
     const isQuiz = state.exam.kind === "quiz";

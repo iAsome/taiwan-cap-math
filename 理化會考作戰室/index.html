@@ -168,7 +168,8 @@
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">DOMAIN COVERAGE</p><h2>本站理化單元的六大領域分布</h2></div><p>依本站 21 個單元統計，非官方逐題稽核數據。</p></div><div id="domainDistribution" class="domain-distribution"></div><div class="bar-chart" id="abilityBars"></div></section>
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">UNIT LEDGER</p><h2>21 個單元一覽</h2></div><p>依年級與學期排列，可對照小考題庫使用。</p></div><div class="matrix-wrap"><table class="concept-matrix"><thead id="conceptMatrixHead"></thead><tbody id="conceptMatrixBody"></tbody></table></div></section>
           <section class="analysis-section compliance-panel"><div><p class="eyebrow">SCOPE COMPLIANCE</p><h2>本站範圍與官方規格對照</h2></div><div id="blueprintChecks" class="blueprint-checks"></div></section>
-          <div class="research-limit"><strong>範圍邊界聲明</strong><p>官方自然科題本合併生物、理化、地球科學命題，並未公布逐題的科目占比或十年逐題主概念分類；因此本站不提供仿照會考數學作戰室的「十年逐題分析」，避免呈現未經官方逐題核對的統計數字。模擬測驗與小考皆為原創練習，正式規格、範圍與占分以國中教育會考官方網站為準。</p></div>
+          <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">YEAR-BY-YEAR LEDGER</p><h2>十年逐題分析：每一屆理化題的單元編碼</h2></div><p>依 106–115 年官方自然科題本中已篩出並轉錄的理化題，逐題標註所屬單元；點開年度可核對題數與分布。</p></div><div id="yearLedger" class="year-ledger"></div></section>
+          <div class="research-limit"><strong>範圍邊界聲明</strong><p>官方自然科題本合併生物、理化、地球科學命題，並未公布逐題的科目占比或官方認定的主概念分類；上方「十年逐題分析」是本站依 106–115 年官方題本與答案，逐題篩出理化範圍題目後自行建立的單元編碼帳本，並非官方公布的統計數字。部分題目因關鍵資訊只存在圖表／電路圖中而尚未轉錄，不計入此帳本（見歷屆考卷入口的年度備註）。模擬測驗與小考皆為原創練習，正式規格、範圍與占分以國中教育會考官方網站為準。</p></div>
         </section>
 
         <section class="view" id="view-sources" aria-labelledby="sourcesTitle">
@@ -191,7 +192,7 @@
             <div><p class="eyebrow">OFFICIAL PAPERS · 106–115</p><h1 id="archiveTitle">近十年官方自然科考卷入口</h1><p>連到國中教育會考官方公布的自然科題本、參考答案與試題說明；自然科合併生物、理化、地球科學，理化只是其中一部分。</p></div>
             <a class="secondary link-button" href="https://cap.rcpet.edu.tw/examination.html" target="_blank" rel="noopener">官方歷屆總頁 ↗</a>
           </div>
-          <div class="archive-note"><strong>收錄範圍</strong><span>115 年（2026）往回至 106 年（2017），共 10 屆。本站尚未取得官方 PDF 可供逐題轉錄與核對，因此目前僅提供官方原始題本連結；若之後補上逐題電子試卷，會依會考數學作戰室相同的轉錄與核對方式製作。</span></div>
+          <div class="archive-note"><strong>收錄範圍</strong><span>115 年（2026）往回至 106 年（2017），共 10 屆自然科題本中屬於理化的題目。點「進入考試」可在與模擬考相同的介面中作答，交卷後立即看逐題詳解；部分題目因原始圖表、電路圖僅存在官方 PDF 圖片中、暫無法轉錄，會在試卷開頭註明。</span></div>
           <div class="archive-grid" id="archiveGrid"></div>
           <section class="methodology">
             <div><p class="eyebrow">SOURCES & METHOD</p><h2>資料來源與使用邊界</h2></div>
@@ -208,6 +209,7 @@
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="data.js?v=20260701a"></script>
+  <script src="analysis-data.js?v=20260701a"></script>
   <script src="questions.js?v=20260701a"></script>
   <script src="archive-exams.js?v=20260701a"></script>
   <script src="app.js?v=20260701a"></script>

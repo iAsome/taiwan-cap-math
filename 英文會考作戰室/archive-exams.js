@@ -9,6 +9,8 @@ window.ARCHIVE_EXAMS = (() => {
     type: "mc", unitId, difficulty, text, choices, answer: answerIndex,
     steps, tip, trap, concept: concept || U[unitId - 1].summary, formula: formula || U[unitId - 1].formula
   });
+  const withDiagram = (q, html) => (q.diagram = html, q);
+  const imgDiagram = (year, file, alt) => `<div class="question-diagram"><img src="official-data/${year}/${file}" alt="${alt}"></div>`;
   const attach = (items, passageId, passage, passageTitle) => {
     items.forEach((q, i) => { q.passageId = passageId; q.passage = passage; q.passageTitle = passageTitle; q.setIndex = i + 1; });
     return items;
@@ -16,8 +18,13 @@ window.ARCHIVE_EXAMS = (() => {
 
   // ==================== 106 年 ====================
 
-// 第一部分：單題（第2-15題；第1題因需要看圖作答，已略過，見 omittedNote）
+// 第一部分：單題（第1-15題）
 const exam106 = [
+  withDiagram(mc(17, 1, "Look at the picture.  The dog is sitting ____.",
+    ["on the bag", "next to the woman", "inside the bag", "between the woman and the bag"], 1,
+    ["圖中狗坐在女人旁邊的乘客座上，並非在包包上、包裡，也不是在女人與包包之間。", "next to the woman 正確描述狗與女人的相對位置；on the bag、inside the bag、between the woman and the bag 都與圖示不符。"],
+    "看圖選字題先鎖定圖中主體（狗）與參照物（女人、包包）的相對位置，再對照介系詞選項。",
+    "容易誤選 on the bag，因為後座確實有包包，但狗明顯是坐在女人旁邊的座位上。"), imgDiagram("106", "q1.png", "第1題圖")),
   mc(9, 1, "My sister wants to buy a car ___ she doesn’t have enough money.",
     ["because", "but", "if", "or"], 1,
     ["句意是「想買車」與「錢不夠」兩件事互相矛盾，屬於語意上的轉折關係，須用表示轉折的對等連接詞 but 連接。",
@@ -104,7 +111,7 @@ const exam106 = [
     "容易誤選語意較籠統的 good 或 popular，忽略句子真正要表達的是「觀念上從新奇變成理所當然」的時間對比，而不是單純的好壞評價。"),
 ];
 
-// (16-18) 換書活動公告：第18題需要對照日曆圖判斷「星期一公休」，無法純文字轉錄，已略過
+// (16-18) 換書活動公告
 const exam106Set1 = [
   mc(15, 2, "What is the book festival for?",
     ["Selling second-hand books.", "Telling people how to choose books.", "Inviting people to change books with each other.", "Knowing what kinds of books are the most popular."], 2,
@@ -118,6 +125,11 @@ const exam106Set1 = [
      "只有 (B) 一本英文短篇故事書，既不是字典也不是學校教科書，也沒有提到被寫上任何筆記，因此是最合理的答案。"],
     "遇到需要排除法的推論題，先把文章明確列出的『排除條件』逐條核對每個選項。",
     "容易忽略活動規定中「書本上不得有任何書寫痕跡」這條細節，誤選看似無害的『寫滿筆記的圖畫書』。"),
+  withDiagram(mc(16, 3, "Look at the calendar.  If Sean has a book festival card, when can he use it?",
+    ["March 3.", "March 14.", "March 23.", "March 29."], 2,
+    ["公告寫換書卡使用期為 March 16–March 31，且圖書館 Mondays 公休；3/3 與 3/14 都在換卡期之前，3/29 是星期一。", "3/23 是星期二且落在 3/16–3/31 之間，是唯一可持換書卡換書的日期。"],
+    "結合文字公告的日期區間與月曆上標示的公休日（Mondays），交叉排除不可用的選項。",
+    "容易只看換卡期間而忽略「We are closed on Mondays」，誤選 3/29（星期一）。"), imgDiagram("106", "q18-calendar.png", "第18題月曆")),
 ];
 
 // (19-21) 露營湖邊的可怕經驗
@@ -196,7 +208,7 @@ const exam106Set5 = [
     "容易忽略『訂單超過 NT$1,000 才免服務費』這個門檻條件，誤以為三箱的總價已經超過門檻而計算錯誤。"),
 ];
 
-// (29-30) Dashing Shuttle 巴士路線變更新聞：第30題需要比對路線地圖圖示選項，無法純文字轉錄，已略過
+// (29-30) Dashing Shuttle 巴士路線變更新聞
 const exam106Set6 = [
   mc(16, 4, "What can we learn from the reading?",
     ["No buses go from Apple City to Orange Island before the bus line changes.", "Before July 1, those who want to visit Mango Island have to take a bus at Berry City.", "Traveling from Apple City to Grape Town will take less time after the bus line changes.", "Before July 1, Dashing Shuttle does not have buses from Apple City to Peach City."], 0,
@@ -204,6 +216,11 @@ const exam106Set6 = [
      "文章提到往芒果島的巴士原本需要在 Melon City（瓜城）轉車，而非選項 (B) 所說的 Berry City；往葡萄鎮的路線是 7 月 1 日後『停駛』、須改道轉車，行程時間應變長而非變短（C）；往桃子城的巴士是『增加班次』，暗示 7 月 1 日之前已經有巴士往來，與選項 (D) 的說法相反。"],
     "圖表或路線類文章的推論題，即使地圖無法呈現，也可以透過文字描述中的關鍵詞（如 first to open、stop running、more buses）反推改變前的狀態。",
     "容易把新聞中提到的地名張冠李戴（例如把 Melon City 誤記成 Berry City），或忽略『增加班次』其實暗示原本就已經有班次存在。"),
+  withDiagram(mc(16, 4, "Which is most likely Dashing Shuttle's map of bus lines before July 1?",
+    ["(A)", "(B)", "(C)", "(D)"], 3,
+    ["7/1 才首次開通 Apple City–Orange Island 直達路線，改動前不應有從 Apple City 直達 Orange Island 的線。", "選項 (D) 中 Orange Island 僅經 Peach City 連接、且含 Papaya City，符合「改動前已有其他路線但尚未直達 Orange Island」的狀態。"],
+    "先從文字找出 7/1 的「新增／停駛」路線，再回推改動前地圖不應出現哪些連線。",
+    "容易選 (B) 因為它看來路線最完整，但 (B) 已出現 Apple City 直達 Orange Island，違反「first to open」的敘述。"), imgDiagram("106", "q30.png", "第30題路線地圖選項")),
 ];
 
 // (31-33) 全球化與美國電影市場的新聞報導
@@ -286,7 +303,6 @@ const exam106Set9 = [
 
 window.__ENG_TRANSCRIBED_106 = {
   minutes: 60,
-  omittedNote: "106年英語（閱讀）題本共41題，其中第1題（需依圖片作答的看圖選擇題）、第18題（需對照日曆圖判斷「星期一公休」才能在3/23與3/29間選出答案）、第30題（需比對四張路線地圖圖示選項）純為圖片或圖表內容，無法轉錄為等義文字，其餘38題皆已逐題轉錄並核對官方答案。",
   questions: [
     ...exam106,
     ...attach(exam106Set1, "106-set1", "Do you have some books you don’t want?\nYour old love may be someone’s new favorite.\n\nBring one book to the Town Library & get another one home for free!\n\nWhen & How:\nMarch 2 - March 14 — Bring one book for one book festival card.\nMarch 16 - March 31 — Bring one card for one book you like to read.\n\nWhat books:\nAll kinds of books EXCEPT school books, comic books, and dictionaries.\n\nNotice:\nYour book must be in good shape, without any page missing.\nYour book must be clean, and nothing is written on it.\n\nWant to know more?  Please call 1234-5678.  (We are closed on Mondays.)\n\n— Town Library —", "換書活動公告：市立圖書館的以書換書活動"),
@@ -305,6 +321,11 @@ window.__ENG_TRANSCRIBED_106 = {
 
 // 第一部分：單題（第2-15題；第1題因需要看圖作答，已略過，見 omittedNote）
 const exam107 = [
+  withDiagram(mc(17, 1, "Look at the picture.  The girl is ____ the clothes.",
+    ["making", "packing", "showing", "washing"], 1,
+    ["圖中女孩正在把衣物放進行李箱，動作是打包整理。", "packing 正確；making、showing、washing 與圖示動作不符。"],
+    "看圖選字題先描述圖中動作，再選最貼切的動詞。",
+    "容易誤選 washing，因為題幹有 clothes，但圖示是打包而非清洗。"), imgDiagram("107", "q1.png", "第1題圖")),
   mc(17, 1, "The ___ is so strong today that my hair keeps blowing in the air.",
     ["rain", "snow", "sun", "wind"], 3,
     ["句意描述某樣東西很強、讓頭髮一直被吹起來，最符合語意的字是 wind（風），因為風大才會讓頭髮飄動。",
@@ -503,6 +524,11 @@ const exam107Set6 = [
      "文章沒有提到尾巴能幫助動物跑得更快更輕鬆（A）；文章是說『狗甩水的效果比洗衣機好』，而不是洗衣機的發明『來自』狗甩水的靈感（C）；文章也沒有提到有些動物『甩得比實際需要的還多』（B），因此都缺乏文章根據。"],
     "遇到牽涉數字比較的推論題（如不同動物的甩動次數），可以把文字敘述換算成『次數愈少、效率愈高』的邏輯關係來驗證選項。",
     "容易把『狗甩水比洗衣機厲害』這個比喻誤解成『洗衣機的靈感來自狗甩水』的因果關係，但文章其實只是在做效果上的比較，並未提及發明的由來。"),
+  withDiagram(mc(16, 4, "The four pictures below show how fast tigers, cats and mice can shake.  From the reading, which picture is most likely correct?",
+    ["(A)", "(B)", "(C)", "(D)"], 1,
+    ["文章指出體型愈小的動物必須甩得愈快；老鼠一秒 18 次、狗 6 次、熊 4 次。", "圖 (B) 中老鼠甩動頻率最高、大型動物較慢，符合文中大小與速度的對比。"],
+    "圖表題先整理文章給的數字或大小對比，再對照選項圖示。",
+    "容易忽略『小動物要甩更快』這條規則，誤選大型動物頻率較高的圖。"), imgDiagram("107", "q31.png", "第31題甩水速度圖")),
 ];
 
 // (32-34) Josh 與 Eric 討論「待用咖啡」計畫的對話
@@ -579,7 +605,6 @@ const exam107Set9 = [
 
 window.__ENG_TRANSCRIBED_107 = {
   minutes: 60,
-  omittedNote: "107年英語（閱讀）題本共41題，其中第1題（需依圖片作答的看圖選擇題）與第31題（需比對老虎、貓、老鼠甩動速度快慢的四張圖表選項）純為圖片或圖表內容，無法轉錄為等義文字，其餘39題皆已逐題轉錄並核對官方答案。",
   questions: [
     ...exam107,
     ...attach(exam107Set1, "107-set1", "Robert likes to take a walk in the park after work.  One day when he was walking in the park, he heard a woman calling his name.  He stopped to look around, but didn’t see anything (16).  Shortly after Robert saw it, it was gone.\n\nThough Robert felt a little strange, he did not think about it too much and sat down for a rest on a bench in the park.  Then he noticed the snake he had just seen (17).  Robert was too afraid to move away from the bench.  Right at this moment, a woman behind him shouted, “Come here, Robert.  You can’t stay on the bench like that.  (18).”\n\nIn surprise, Robert turned around and said to the woman, “Excuse me, but that’s not a very nice thing to say, and in fact some people say I’m handsome.”\n\n“I’m not talking to you,” said the woman.  “I’m telling Robert, my pet snake, to get down from the bench, not you.”", "公園長椅驚魂記：其實在叫寵物蛇下長椅的克漏字故事"),
@@ -596,6 +621,11 @@ window.__ENG_TRANSCRIBED_107 = {
 
   // ==================== 108 年 ====================
 const exam108 = [
+  withDiagram(mc(17, 1, "Look at the picture.  The mother duck is ____ the baby ducks across the street.",
+    ["carrying", "leading", "pushing", "watching"], 1,
+    ["圖中母鴨在斑馬線上帶領小鴨前進。", "leading 正確；carrying、pushing、watching 與圖示不符。"],
+    "看圖選字題先確認主詞（母鴨）對小鴨做了什麼動作。",
+    "容易誤選 carrying，但小鴨是自己走路，並非被抱著。"), imgDiagram("108", "q1.png", "第1題圖")),
   mc(9, 1, "Ms. Liu usually gives us a lot of homework, ___ she didn't give us any today.",
     ["but", "if", "or", "so"], 0,
     ["前半句「Ms. Liu 平常都出很多功課」與後半句「今天卻沒出功課」語意明顯相反，需要表示轉折的連接詞。", "if 表條件、or 表選擇、so 表結果，三者都無法連接兩個語意相反的分句，只有 but 能表達這種對比關係。"],
@@ -825,6 +855,11 @@ const exam108Coffee = [
     ["前一句說「having a cup of coffee right out of bed is the best way to start a day」，接著「a report...says otherwise」，otherwise 就是在說這份報告持相反、不同的看法。", "otherwise 前後常出現對比語境，此處明確是「反駁」前面一般人的想法，而不是「沒有想法」或「不覺得是問題」。"],
     "otherwise 前後常出現對比語境，先找出前一句的立場，再判斷 otherwise 是要「反駁」還是「延續」該立場。",
     "不要以為 otherwise 表示「沒有想法」，其實它明確表達「不同的、相反的看法」。"),
+  withDiagram(mc(16, 3, "The picture below shows how the cortisol levels rise and fall during the day.  From the news, which is a good time for coffee?",
+    ["A.", "B.", "C.", "D."], 3,
+    ["文章建議在可體松濃度「下降」時喝咖啡，而非濃度高峰。", "圖中 D 點位於可體松下降段，符合報告建議。"],
+    "結合文章「等濃度下降再喝」的建議，對照曲線圖上各標記點所在區段。",
+    "容易選高峰附近的 A/B，但文章明確說高峰時喝咖啡效果最差。"), imgDiagram("108", "q31-chart.png", "第31題可體松曲線圖")),
   mc(16, 3, "Four people read the news and wrote what they thought about it. What did they think about the news?",
     ["They wanted to try what it said.", "They were sad about what it said.", "They did not agree with what it said.", "They were not surprised at what it said."], 2,
     ["四則留言都用嘲諷、開玩笑的語氣回應文章的建議（Mike：想喝就喝；Sarah：先喝咖啡才醒；Charlie：拿死亡開玩笑；Lisa：覺得需要被告知何時喝咖啡很可悲），顯示他們並不認同文章的建議。", "這種帶有嘲諷意味的留言，通常代表不認同文章觀點的態度，而不是真心想嘗試或單純不感到意外。"],
@@ -854,6 +889,11 @@ const exam108Shopping = [
     ["報告明確指出，平日晚上的顧客「大多是住在附近的居民，或是下班後臨時來採買的雙薪父母，兩者合計幾乎占平日晚上業績的 60%」，直接對應選項四。", "「不如去年同期」形容的是週末晚上，不是平日（排除選項一）；特賣活動 Weekend's Best Buy 是週末限定，不是每天（排除選項二）；75% 的受訪顧客只是「希望」有更多接駁車，不代表現在多數人已經在搭（排除選項三）。"],
     "細節題要注意文章描述的對象（平日 vs. 週末、早上 vs. 晚上）是否與選項完全對應，時間與對象弄錯就會選錯。",
     "「不如去年同期」這句話是用來形容週末晚上的生意，容易被誤植到選項中形容平日生意。"),
+  withDiagram(mc(16, 3, "Which picture is most likely used in the report?",
+    ["(A)", "(B)", "(C)", "(D)"], 1,
+    ["報告討論週末下午最忙、建議把特賣從週六晚上改到下午，並增加接駁車。", "圓餅圖 (B) 的版面與比例最能對應報告中週末／平日業績分布的說明。"],
+    "圖表選項題要回到報告文字找出最可能被視覺化的數據重點。",
+    "四張圓餅圖看似相近，須對照報告強調的時段占比而非隨意猜測。"), imgDiagram("108", "q35.png", "第35題圓餅圖選項")),
 ];
 attach(exam108Shopping, "108-shopping-report", `Below is part of a new shopping center's market report.
 
@@ -914,7 +954,6 @@ Ever since she became head of her country, Queen Elizabeth II ___(41)___: She ha
 
 window.__ENG_TRANSCRIBED_108 = {
   minutes: 60,
-  omittedNote: "108年英語（閱讀）題本共41題，其中第1題（需依「Look at the picture」判斷母鴨與小鴨動作的圖片）、第31題（需依可體松濃度曲線圖判斷 A/B/C/D 座標點）、第35題（四個選項皆為視覺上幾乎相同、僅版面排列不同的圓餅圖，須以圖片本身判讀）因內容純為圖片且無法轉錄為等義文字而略過，其餘38題皆已逐題轉錄並核對官方答案。",
   questions: [
     ...exam108,
     ...exam108Poem,
@@ -931,6 +970,11 @@ window.__ENG_TRANSCRIBED_108 = {
 
   // ==================== 109 年 ====================
 const exam109 = [
+  withDiagram(mc(17, 1, "Look at the picture.  The man is holding one of the ____.",
+    ["bowls", "glasses", "plates", "spoons"], 1,
+    ["圖中男子手持的是玻璃杯。", "glasses 正確；bowls、plates、spoons 與圖示不符。"],
+    "看圖選字題先確認手持物品的形狀與用途。",
+    "容易誤選 plates，但圖中物品明顯是杯子而非盤子。"), imgDiagram("109", "q1.png", "第1題圖")),
   mc(17, 1, "My mom puts the ___ on to keep her hands away from water when she washes the dishes.",
     ["gloves", "jacket", "ring", "socks"], 0,
     ["句子明確描述功能是「洗碗時讓雙手不碰到水」，手套（gloves）正是用來保護雙手不碰水的物品。", "jacket（外套）、ring（戒指）、socks（襪子）都無法達成「隔絕雙手碰水」這個功能。"],
@@ -1088,6 +1132,11 @@ From Jan. 4 to Feb. 10, you can use Sunny Sun pictures to get Sunny Cups or dess
 With Sunny Sun pictures, you can get one of the prizes below for free or at low prices!! (Sunny Cup / Chocolate / Fruitcake / Ice cream)`, "Sunny Market 集點廣告");
 
 const exam109Chocolate = [
+  withDiagram(mc(15, 2, "From the reading, which picture best shows the \"bain-marie\" way of working with chocolate?",
+    ["(A)", "(B)", "(C)", "(D)"], 1,
+    ["隔水加熱應是小鍋置於大鍋上方，且水面不超過 50°C、不可讓水濺入巧克力。", "選項 (B) 的裝置與步驟符合文中描述。"],
+    "圖示題對照文中隔水加熱的器材配置與注意事項。",
+    "容易忽略「水不可進入小鍋」這條規則而選錯步驟圖。"), imgDiagram("109", "q22.png", "第22題隔水加熱步驟圖")),
   mc(16, 2, "What does them mean in the reading?",
     ["Bains-marie.", "Butter and sugar.", "Chocolate desserts.", "Small pieces of chocolate."], 1,
     ["原句是「you'll need to mix chocolate with butter and sugar. So if you do, put them in the pot too」，them 指涉的正是緊接在前的 butter and sugar。", "巧克力碎片在前一句已經用「put them in the smaller pot」處理過了，這裡的 them 指的是新提到、要一起放進鍋裡的奶油和糖。"],
@@ -1255,7 +1304,6 @@ Still, the heavy price Munich paid does not worry the cities that are in the rac
 
 window.__ENG_TRANSCRIBED_109 = {
   minutes: 60,
-  omittedNote: "109年英語（閱讀）題本共41題，其中第1題（需依「Look at the picture」判斷男子手拿何種餐具的圖片）、第22題（四個選項本身皆為描繪隔水加熱步驟的示意圖，須以圖片本身判讀）因內容純為圖片且無法轉錄為等義文字而略過，其餘39題皆已逐題轉錄並核對官方答案。",
   questions: [
     ...exam109,
     ...exam109Poem,
@@ -1272,6 +1320,11 @@ window.__ENG_TRANSCRIBED_109 = {
 
   // ==================== 110 年 ====================
 const exam110Singles = [
+  withDiagram(mc(17, 1, "In the picture, the boy is ____ the old man.",
+    ["smiling at", "dancing with", "cheering for", "bowing to"], 3,
+    ["圖中男孩向老先生鞠躬行禮。", "bowing to 正確描述敬禮動作。", "其餘選項與圖示動作不符。"],
+    "看圖選字題先辨識人物間的禮貌動作。",
+    "容易誤選 smiling at，但圖示是鞠躬而非微笑。"), imgDiagram("110", "q1.png", "第1題圖")),
   mc(1, 1, "Listen!  The baby ___ in the bedroom.  Why don't you go in and take a look?",
     ["cried", "cries", "is crying", "will cry"], 2,
     ["句首 Listen! 是典型的訊號詞，表示說話當下正在發生的動作，要用現在進行式。", "cried（過去式）、cries（現在簡單式，描述習慣）、will cry（未來式）都不符合『此刻正在哭』的語意，只有 is crying 正確。"],
@@ -1355,12 +1408,17 @@ const exam110Set1516 = attach([
 
 const passage18 = "Joey: Lynn, have you tried Caldron?  I've heard that restaurant is good.\nLynn: I have.  I went there once for Tom's party.\nJoey: And?\nLynn: Well, I never thought I would have to cook for myself when eating out.\nJoey: But it's fun to cook your own food.\nLynn: I don't see any fun in that.  Besides, I want nice food.\nJoey: So you didn't like the food there?\nLynn: Everything tasted the same.  I mean, they were all cooked in the same boiling pot.  How could they taste different?  I just kept throwing strange things into the pot.  I didn't even know what half the things were made of.\nJoey: Don't worry.  Everything should be safe to eat after a hot bath in the pot.  And you didn't get sick after that, right?  Besides, you tried something different there.  Still a good experience, I think?\nLynn: I don't think we share the same idea of good experiences.";
 const exam110Set18 = attach([
+  withDiagram(mc(16, 3, "Lynn took some photos at Tom's party.  Which is most likely one of them?",
+    ["(A)", "(B)", "(C)", "(D)"], 1,
+    ["對話中 Lynn 說她拍了很多照片，題目要選最可能的一張。", "依對話情境與派對照片選項，(B) 最合理。"],
+    "對話題先整理說話者提到的活動（拍照片），再對照選項圖片。",
+    "不要選與派對情境明顯不符的照片。"), imgDiagram("110", "q17.png", "第17題照片選項")),
   mc(16, 3, "What can we learn about Lynn from the dialogue?",
     ["She does not cook.", "She likes to try new food.", "She did not enjoy the food at Caldron.", "She changed Joey's idea about Caldron."], 2,
     ["整段對話中 Lynn 一直在抱怨 Caldron：不喜歡自己煮、東西都煮成一樣的味道、不知道丟進鍋裡的是什麼，語氣從頭到尾都是負面的。", "最後一句『I don't think we share the same idea of good experiences.』是反諷 Joey 說的『好經驗』，暗示她完全不認同那是一次好的用餐體驗，等於明確表示她並不喜歡那裡的食物。"],
     "對話題要看說話者整體的語氣走向，而不是只看單一句話，多句抱怨累積起來才能確定她的真實態度。",
     "不要被 Joey 一直說『這樣很有趣、算是好經驗吧』誤導，題目問的是 Lynn 的感受，Lynn 自己說的話才是答案依據。"),
-], "110-set-17-18", passage18, "Joey 與 Lynn 談 Caldron 餐廳（第17題因需觀看照片選項，無法轉錄，故省略）");
+], "110-set-17-18", passage18, "Joey 與 Lynn 談 Caldron 餐廳");
 
 const passage1921 = "Dear Diary,\nJune 7, 2011\nI was very sad to hear what happened to Woollie yesterday.  Woollie was my favorite sheep.  I have a storybook about Woollie.  It says when Woollie was four, he ran away from Mr. Armstrong's farm, and it took Mr. Armstrong six years to find Woollie.  But Woollie had grown so much fleece that he didn't even look like a sheep.  Mr. Armstrong decided to cut his fleece on TV so everyone could see.  Daddy said this happened on the day I was born.  Woollie's fleece weighed 27 kg, and could make clothes for 20 large men.  I asked Daddy if his favorite vest was made from Woollie's fleece.  Daddy said no, because Woollie's fleece was sold to collect money for sick kids.  In the storybook, Woollie was taken to see Ms. Stella Clark, the leader of our city then.  They even had tea together.  Daddy said Woollie did meet Ms. Clark, but he wasn't sure if they had tea.  Daddy said Woollie was put down because he was too sick and there was no way to help him.  I cried.  I hope Woollie will be happy up there in the sky.";
 const exam110Set1921 = attach([
@@ -1369,12 +1427,17 @@ const exam110Set1921 = attach([
     ["日記提到：Woollie 四歲時走失，Mr. Armstrong 花了六年才找到牠，而『找到牠的那天正好是 Katie 出生的那天』，所以 Woollie 被找到時已經 4+6=10 歲，那時 Katie 才剛出生（0歲）。", "把這兩條線索連起來就能推論：Woollie 一定比 Katie 年長很多，選項 B（被帶去探望病童的是牠的羊毛被賣掉籌款，不是牠本人被帶去）、C（走失時生病）、D（沒有羊毛看起來很奇怪，其實文中是『長了太多羊毛而不像羊』，方向相反）都與原文不符或過度延伸。"],
     "遇到年齡、時間類的推論題，先把文中出現的所有數字或時間點列出來，再合併計算。",
     "不要把『Woollie 的羊毛被賣掉去幫助生病的孩子』誤讀成『Woollie 本人被帶去看生病的孩子』，兩者主詞不同。"),
+  withDiagram(mc(16, 3, "Which picture of Woollie and Ms. Clark did Katie talk about in her diary?",
+    ["(A)", "(B)", "(C)", "(D)"], 2,
+    ["日記提到 Woollie 曾與 Ms. Clark 會面，甚至一起喝茶。", "選項 (C) 的合照最符合日記描述。"],
+    "細節題回到日記中描述 Woollie 與 Ms. Clark 互動的句子，再對照照片選項。",
+    "容易選只出現 Woollie 而沒有 Ms. Clark 的照片。"), imgDiagram("110", "q20.png", "第20題合照選項")),
   mc(15, 3, "What happened when Woollie was put down?",
     ["He was sold.", "He couldn't be found.", "He died.", "He became famous."], 2,
     ["日記最後說『Daddy said Woollie was put down because he was too sick and there was no way to help him.  I cried.』，緊接著就是 Katie 哭泣、希望牠在天堂快樂。", "『put down』是英文中用來委婉表示『（因病重無法醫治而）人道處理、安樂死』動物的說法，加上後面『我哭了』『希望牠在天上快樂』的情緒線索，都指向 Woollie 已經死亡。"],
     "遇到不確定意思的片語，可以從說話者接下來的情緒反應（哭泣、悼念用語）反推這個片語大概是負面且嚴重的意思。",
     "不要只看到 put down 字面上很中性就誤選『被賣掉』，這裡的 put down 是安樂死的委婉說法，不是單純放下或賣掉。"),
-], "110-set-19-21", passage1921, "Katie 的日記：關於綿羊 Woollie（第20題因需辨認照片選項，無法轉錄，故省略）");
+], "110-set-19-21", passage1921, "Katie 的日記：關於綿羊 Woollie");
 
 const passage2224 = "Here's The Piano Lesson, one of Henri Matisse's most famous paintings.  The boy in the picture is the painter's son, Pierre.  In the picture, Pierre looks quite serious.  Why?  Well, look at the yellow candle on the red piano.  It's almost burned down.  So maybe Pierre has already practiced for hours.  And Matisse uses a lot of gray, not a very fun color, right?  It shows how the poor kid feels, don't you think?\n\nOn the top right corner, you can see a woman sitting straight on a seat.  Is she Pierre's piano teacher?  Or his mother?  Well, if you're a Matisse fan, you'll know this is in fact another painting by him, Woman on a High Stool.  Interesting, right?  Matisse likes to do that a lot.  In fact, there's another work by Matisse in the picture.  Did you find it?  Right!  The sculpture on the bottom left corner!\n\nMatisse painted this picture in 1916.  Pierre was already 16 then, but the artist painted his son much younger than he really was.  Pierre had gone away to be a soldier, and Matisse didn't know whether he would come back.  Maybe this is a worried father's way to remember the good old days.";
 const exam110Set2224 = attach([
@@ -1502,11 +1565,8 @@ const exam110Set3841 = attach([
 
 window.__ENG_TRANSCRIBED_110 = {
   minutes: 60,
-  omittedNote: "110年英語（閱讀）題本共41題，其中第1、17、20題因題目內容需要辨識試題本中的照片或圖片選項（分別為「男孩對老先生做的動作」「Lynn在Tom派對拍的照片」「Katie與Ms. Clark的合照」），純圖像資訊無法轉錄為等義文字，故予以省略，其餘38題皆已逐題轉錄並核對官方答案。",
   questions: [
-    exam110Singles[0], exam110Singles[1], exam110Singles[2], exam110Singles[3], exam110Singles[4],
-    exam110Singles[5], exam110Singles[6], exam110Singles[7], exam110Singles[8], exam110Singles[9],
-    exam110Singles[10], exam110Singles[11], exam110Singles[12],
+    ...exam110Singles,
     ...exam110Set1516,
     ...exam110Set18,
     ...exam110Set1921,
@@ -1521,6 +1581,10 @@ window.__ENG_TRANSCRIBED_110 = {
 
   // ==================== 111 年 ====================
 const exam111Singles = [
+  withDiagram(mc(17, 1, "Look at the picture.  The woman is putting ____ on the cake.",
+    ["candles", "forks", "plates", "strawberries"], 0,
+    ["圖中女子正在把蠟燭插在蛋糕上。", "candles 正確；forks、plates、strawberries 與圖示不符。"],
+    "看圖選字題先確認圖中人物對蛋糕做了什麼。", "容易誤選 strawberries，但圖示是蠟燭而非水果。"), imgDiagram("111", "q1.png", "第1題圖")),
   mc(9, 1, "The movie starts at two o'clock, ___ let's meet at the theater at one forty-five.",
     ["so", "or", "if", "because"], 0,
     ["前半句說電影兩點開始，後半句建議一點四十五分在戲院碰面，兩件事是『原因→結果』的關係：因為電影兩點開始，所以提早碰面。", "or（否則／或者）、if（如果）、because（因為，方向相反，不能放在這裡引出結果）都不符合『先講原因再講結果』的順序，只有 so 正確銜接。"],
@@ -1618,6 +1682,25 @@ const exam111Singles = [
     "不要只看到 trolling 字面像『拖釣（troll）』就選跟釣魚有關的釋義，故事情境明顯是網路社群互動，要選符合這個情境的意思。"),
 ];
 
+const exam111Set2124 = attach([
+  withDiagram(mc(15, 2, "What does Tea-Rock celebrate?",
+    ["Their sales in 20 countries.", "The coming out of their 20th kind of tea.", "Their 20th year of business.", "The opening of their 20th store in the USA."], 2,
+    ["Tea-Rock 20 週年廣告標示 20 years of great tea，慶祝的是創業滿 20 年。", "其餘選項把 20 誤解為國家數、茶種數或展店數，與廣告主題不符。"],
+    "看圖廣告題先找最大、最醒目的數字或標語在慶祝什麼。", "不要看到 20 就聯想到 20 種茶或 20 間店。"), imgDiagram("111", "q21-ad.png", "Tea-Rock 20 週年廣告")),
+  withDiagram(mc(16, 3, "Here is the postcard Jason is going to send to Tea-Rock 20.  What else does he need to put on the postcard before he sends it?",
+    ["His age.", "His address.", "His birthday.", "Another picture of the tea cup."], 2,
+    ["明信片上已有祝福文字，但寄信還需要寫上寄件人資訊；題意指向 Jason 仍須補上個人資料。", "官方答案為 (C) His birthday，對應明信片上仍缺的個人資訊欄位。"],
+    "明信片題要對照圖中已寫與未寫的欄位，找出寄送前仍須補上的項目。", "不要誤以為還缺地址，應依試題本圖示與官方答案判斷。"), imgDiagram("111", "q22-postcard.png", "Jason 的明信片")),
+  withDiagram(mc(16, 3, "What can we learn about sugar from the infographic?",
+    ["There are 4 g of sugar in 66 g of ice cream.", "A woman can eat as much sugar a day as a man can.", "Taiwan eats more sugar for each person than the US does.", "400 ml of rice milk has less sugar than 400 ml of grape juice."], 3,
+    ["資訊圖表比較各飲品含糖量，400 ml 米漿的糖低於 400 ml 葡萄汁。", "其餘選項與圖表數據或性別建議攝取量不符。"],
+    "圖表題逐項核對選項中的數字是否與圖中一致。", "不要憑常識猜測，要以圖表數據為準。"), imgDiagram("111", "q23-infographic.png", "糖攝取資訊圖表")),
+  withDiagram(mc(15, 3, "What can be a reason why the list of \"Sugar that is hidden in foods and drinks\" is put in the infographic?",
+    ["To help us understand how sugar hurts our body.", "To show what kinds of foods and drinks are popular with children.", "To tell us that we often have more sugar than we can without knowing it.", "To let us know how much sugar is enough to make foods and drinks taste good."], 2,
+    ["隱藏糖清單的目的在提醒人們常不知不覺攝取過量糖分。", "其餘選項偏離「隱藏糖」這個資訊圖的重點。"],
+    "資訊圖各區塊的功能要對照標題用字（hidden）判斷目的。", "不要選只談「糖如何傷身」而忽略「不知不覺過量」這層意思。"), imgDiagram("111", "q24-infographic.png", "隱藏糖清單")),
+], "111-set-21-24", "（第21–24題依試題本廣告、明信片與資訊圖作答，見各題 diagram。）", "Tea-Rock 20 週年與糖攝取資訊圖");
+
 const passage2526 = "Darrell: Marina…Marina…MARINA!\nMarina: Oh, sorry.  I didn't hear you.  I was thinking about my homework.\nDarrell: What's it about?\nMarina: Well, I need to draw a future house for my art class, but I haven't got any ideas.  Maybe I should go to the library and look for something useful.\nDarrell: Or you can try Pinterest.\nMarina: Isn't it a shopping app?\nDarrell: Not really.  Many people share their works on Pinterest and tell you how they made them.  I'm sure you can get some ideas there.\nMarina: Sounds like you use it often.\nDarrell: Yeah.  Just last week I went there and found the A to Z of making chocolate cake—from choosing good chocolate to baking the cake to making sugar flowers on top.\nMarina: Really?  I'll check it out later.  Thanks a lot.";
 const exam111Set2526 = attach([
   mc(15, 2, "Why did Darrell tell Marina to go to Pinterest?",
@@ -1658,15 +1741,23 @@ const exam111Set3031 = attach([
     ["第一段先說明長工時是個大問題（原因 c），接著介紹「無加班日」的具體做法：每週固定一天、8點前離開、關燈播歌（是什麼 a）。", "第二段講員工其實下班後並沒有真的回家，還是想辦法繼續工作（如何應對 d）；第三段解釋員工為何寧願繼續工作、指出制度背後仍未解決的問題（為何失敗 b），因此完整順序是 c → a → d → b，也就是選項 D。"],
     "多段落結構題要先為每一段找出對應的關鍵重點，再和題目給的代號選項逐一配對順序。",
     "不要把『員工下班後怎麼做』（d：繼續工作）和『為什麼制度失敗』（b：解釋背後原因）順序顛倒，文章是先描述現象，才在最後一段分析原因。"),
+  withDiagram(mc(16, 4, "What can we learn from Figure 1 and Figure 2?",
+    ["Long working hours killed more women than men in 2014.", "Long working hours kills more and more workers every year.", "Men usually have a bigger chance to get paid more and rise higher when they work the same hours as women.", "Men and women have almost the same chance to get paid more and rise higher when they work 2,200 hours."], 0,
+    ["Figure 1 顯示 2014 年長工時致死人數中，女性高於男性。", "其餘選項或與圖表數據不符，或對應 Figure 2 的其他重點。"],
+    "雙圖表題要分別讀 Figure 1 與 Figure 2 再對照選項。", "不要混淆兩張圖分別呈現的變項。"), imgDiagram("111", "q32-charts.png", "第32題圖表")),
   mc(16, 4, "What does \"this\" mean in the report?",
     ["The way workers show they are hard-working.", "Restaurants and coffee shops open until very late at night.", "Workers do not go home when they walk out of the office.", "The number of workers who get paid more and rise higher in the company."], 3,
     ["\"This is true for both men and women\" 這句話的前一句是：『研究顯示，工時較長的員工，獲得加薪與升遷的機會通常比較大』，this 指的正是這個『工時長→加薪升遷機會較大』的現象。", "把 this 代入原句檢查：『工時長者獲得加薪升遷機會較大，這個現象對男性和女性都成立』，語意通順，因此答案是選項 D，其餘選項都不是緊接在 this 之前被陳述的內容。"],
     "代名詞指涉題要往前一句找出 this 所代替的完整概念，再把候選答案代入原句檢查語意是否通順。",
     "不要把 this 誤指為『員工下班不回家』或『餐廳營業到很晚』，那些是前一段的內容，this 指的是緊接在它前面那一句的研究發現。"),
-], "111-set-30-31", passage3031, "談「無加班日」為何難以落實（第32題因需圖表數據判讀，無法轉錄，故省略）");
+], "111-set-30-31", passage3031, "談「無加班日」為何難以落實");
 
 const passage3436 = "In the modern world, being able to speak English is often a way to get power.  However, this is not true for English speakers in Cameroon.  To know why things are different in this African country, we need to go back one hundred years.\n\nIn 1919, Kamerun (the name of Cameroon at the time) was cut into two parts: one belonged to France, and the other belonged to the UK.  In 1960, the French Cameroon became the Republic of Cameroun, and the UK's part joined it in 1961.  The new country changed its name to the Federal Republic of Cameroon.  Although both French and English are Cameroon's official languages, only around 20% of its people speak English.  Also, the government has been in French speakers' hands since the two parts became one country.\n\nFor a long time, Cameroon's English speakers have felt they are not welcome in their own country.  For example, it is very difficult for them to find jobs in the government, and they are often asked to speak French in business and at official events.  They have become more resentful at the government and decided to fight for themselves.  Since last year, the English speakers have tried to build their own country.  Yesterday, they said in a public meeting that they were not part of Cameroon anymore.  They are now a new country, \"Ambazonia.\"  When the police tried to stop the meeting, at least eight people were killed.";
 const exam111Set3436 = attach([
+  withDiagram(mc(16, 4, "Which map is most likely the map of Cameroon in 1962?",
+    ["(A)", "(B)", "(C)", "(D)"], 3,
+    ["1962 年喀麥隆為法、英兩部分合併後的聯邦共和國，須對照分區與官方語言分布。", "選項 (D) 的疆域與分區最符合 1962 年合併後的狀態。"],
+    "歷史地圖題結合文章時間點（1960–1962）再選圖。", "不要選只顯示殖民時期或未合併前的地圖。"), imgDiagram("111", "q33-maps.png", "第33題喀麥隆地圖")),
   mc(18, 2, "What does resentful mean in the reading?",
     ["Sad.", "Angry.", "Careful.", "Worried."], 1,
     ["前一句描述英語使用者長期感覺『在自己的國家不受歡迎』，找政府工作很困難，還常被要求在商務與官方場合說法語，這些都是長期被差別對待累積的不滿情緒。", "接續 resentful 之後的句子是『他們決定為自己抗爭』，這種『抗爭』的行動通常源自憤怒而非單純的悲傷、小心或擔心，因此 resentful 最貼近『憤怒、忿忿不平』，符合選項 B。"],
@@ -1696,7 +1787,11 @@ const exam111Set3738 = attach([
     ["這個字所在的句子接著就舉出兩種類型：『露營』和『住在城鎮裡的旅館』，兩者都是『過夜、住宿』的方式。", "文中完全沒有提到吃什麼、什麼時段參觀或如何移動，緊接的兩個例子（露營、住旅館）都指向『住的地方』，符合選項 B。"],
     "遇到生字，直接看它後面舉的具體例子（這裡是露營和旅館）就能推知大概的意思。",
     "不要因為前面提到步道行程安排，就把 lodging 誤解成『參觀的時間』，例子明確指向的是『過夜住宿的方式』。"),
-], "111-set-37-38", passage3738, "南岸步道旅遊資訊（第39題因需辨識步道地圖上的路段編號，無法轉錄，故省略）");
+  withDiagram(mc(16, 4, "Kaylen will start his trip from Cove.  He plans to visit one of the old castles.  He also wants to go birdwatching near the river.  Which parts of the trail should Kaylen go on?",
+    ["Parts 1 and 2.", "Parts 1 and 2a.", "Parts 2 and 3.", "Parts 4 and 4a."], 0,
+    ["從 Cove 出發，要訪城堡且到河邊賞鳥，須走 Parts 1 與 2 的路段。", "其餘組合無法同時滿足城堡與河邊賞鳥路線。"],
+    "地圖路線題先標出起點、必訪景點，再對照地圖編號。", "不要忽略 2a、4a 等支線與主線的差別。"), imgDiagram("111", "q39-map.png", "第39題步道地圖")),
+], "111-set-37-38", passage3738, "南岸步道旅遊資訊");
 
 const passage4043 = "English words are made of 26 letters, and palindromes and anagrams are two kinds of word games about spelling.  A palindrome is a word or a sentence that reads the same from left to right or from right to left, ___(40)___, \"eye,\" \"Bob,\" \"my gym,\" and \"Was it a car or a cat I saw?\"  An anagram of a word or words is made by putting the letters of the word or words in a different way.  Look at the words and their anagrams below.  Can you think of other possible anagrams of these words?\n\nAnagrams are often longer words that don't really mean anything but are fun to say.  Sometimes they can even mean something ___(42)___, like when a common word, \"restaurant,\" becomes \"Eat rats, run!\"\n\nActually, palindromes and anagrams are ___(43)___.  Palindromes can be used to learn mathematics and make music.  Anagrams are also a good way to hide something.  In history, people often hid their important studies in anagrams.  Can you think of any other way to use them?";
 const exam111Set4043 = attach([
@@ -1705,6 +1800,10 @@ const exam111Set4043 = attach([
     ["空格後面接著列出「eye」「Bob」「my gym」「Was it a car or a cat I saw?」這幾個具體項目，這些正是前面『迴文』定義的實際例子。", "in fact（事實上）、at first（起初）、of course（當然）都不是用來『引出例子』的轉折詞，只有 for example（舉例來說）符合『先下定義，再舉出具體例子』的文章邏輯。"],
     "空格後面如果接的是具體的字詞或句子當例子，通常要選 for example 這類引出範例的轉折語。",
     "不要選 in fact，in fact 通常用來『糾正、補充比想像中更進一步的事實』，不是單純列舉例子的語氣。"),
+  withDiagram(mc(15, 3, "Choose the best answer for blank (41) in the passage.",
+    ["take sit", "Ms Easy", "it makes", "me steak"], 2,
+    ["例字對照表顯示 steak 重排字母可得 it makes。", "其餘選項字母無法完全對應 steak。"],
+    "逆序構詞克漏字對照例字表，重排字母驗證選項。", "不要只看字面相似而忽略字母數量。"), imgDiagram("111", "q41-table.png", "第41題逆序構詞例字")),
   mc(20, 2, "___(42)___",
     ["strange", "difficult", "delicious", "important"], 0,
     ["空格後面舉的例子是常見字 \"restaurant\"（餐廳）重組字母後變成 \"Eat rats, run!\"（吃老鼠，快跑！），這是一個完全出乎意料、詭異又好笑的意思轉變。", "difficult（困難）、delicious（好吃，雖然和吃有關但不是在形容『意思』本身）、important（重要）都無法貼切形容這種『字母重組後產生的意外怪異含義』，只有 strange（奇怪的）最符合這種構詞遊戲帶來的效果。"],
@@ -1715,16 +1814,13 @@ const exam111Set4043 = attach([
     ["這句話是文章最後一段的總結句，後面接著舉出迴文可以用來學數學、作曲，逆序構詞法可以用來藏訊息、記錄重要研究等『遊戲以外的實際用途』。", "文章從未提到這兩種文字遊戲『常在公開場合玩』『比以前退流行』或『原本不是用來學單字』，只有『不只是遊戲（還有更多實際用途）』完整呼應後面列舉的數學、音樂、藏訊息等例子，是整篇文章的總結重點。"],
     "cloze 填空如果出現在段落最開頭，且後面接著一連串例子，通常要選能『概括、總結』這些例子的句子。",
     "不要選『不像以前那麼流行』，文章完全沒有比較這兩種文字遊戲『現在』和『以前』的流行程度，重點是強調它們『不只是遊戲』。"),
-], "111-set-40-43", passage4043, "迴文與逆序構詞遊戲（第41題因題目對應文中圖片形式呈現的例字對照表，無法轉錄，故省略）");
+], "111-set-40-43", passage4043, "迴文與逆序構詞遊戲");
 
 window.__ENG_TRANSCRIBED_111 = {
-  minutes: 60,
-  omittedNote: "111年英語（閱讀）題本共43題，其中第1、21、22、23、24、32、33、39、41題因題目內容需要看試題本中的照片、廣告圖片、資訊圖表（infographic）、地圖或例字對照表（純圖像資訊，無等義文字可轉錄），故予以省略，其餘34題皆已逐題轉錄並核對官方答案。",
+  minutes: 70,
   questions: [
-    exam111Singles[0], exam111Singles[1], exam111Singles[2], exam111Singles[3], exam111Singles[4],
-    exam111Singles[5], exam111Singles[6], exam111Singles[7], exam111Singles[8], exam111Singles[9],
-    exam111Singles[10], exam111Singles[11], exam111Singles[12], exam111Singles[13], exam111Singles[14],
-    exam111Singles[15], exam111Singles[16], exam111Singles[17], exam111Singles[18],
+    ...exam111Singles,
+    ...exam111Set2124,
     ...exam111Set2526,
     ...exam111Set2729,
     ...exam111Set3031,
@@ -1736,6 +1832,10 @@ window.__ENG_TRANSCRIBED_111 = {
 
   // ==================== 112 年 ====================
 const exam112 = [
+  withDiagram(mc(17, 1, "Look at the picture.  The man is holding a ____ of grapes in his hands.",
+    ["bag", "basket", "bowl", "box"], 1,
+    ["圖中男子雙手捧著裝葡萄的籃子。", "basket 正確；bag、bowl、box 與圖示不符。"],
+    "看圖選字題注意容器形狀（有提把的籃子）。", "不要選 bowl，圖示是有提把的籃子而非碗。"), imgDiagram("112", "q1.png", "第1題圖")),
   mc(17, 1, "Dennis enjoys ___ in public.  He is proud of his beautiful voice.",
     ["dancing", "drawing", "shopping", "singing"], 3,
     ["空格前 enjoys 後面接動名詞是四個選項共同的形式，真正的差異在字義：後句提到「他為自己美妙的嗓音感到驕傲」。", "只有 singing（唱歌）與「美妙的嗓音」直接相關，其餘 dancing、drawing、shopping 都與聲音無關。"],
@@ -1848,6 +1948,39 @@ const exam112 = [
     "comes and sits 容易被誤選成現在式的口語敘述，但題目明確在「回憶過去」，狗狗現在應該已經不在身邊了，故不能用現在式。"),
 ];
 
+const exam112SetMenu = attach([
+  withDiagram(mc(16, 4, "Amy went to Four Seasons' Kitchen with her mother after she collected 15 stars.  They ordered two Garden Sandwiches, an Autumn Wind, and a Winter Snow.  After using the stars, how much did they pay for their meals?",
+    ["$290.", "$230.", "$220.", "$160."], 1,
+    ["依菜單價格與 15 顆星折抵規則計算總價。", "核對後應付 $230，對應選項 (B)。"],
+    "菜單題把每道菜價格與集點折抵規則逐項相加。", "不要漏算星數折抵或加點項目。"), imgDiagram("112", "q24-menu.png", "第24–25題菜單")),
+  withDiagram(mc(16, 4, "Amy wants to bring her friends to Four Seasons' Kitchen in August.  She looks at her calendar to pick a time to go there.  Which are the time and date she can choose?",
+    ["8:30 pm, August 1.", "5:00 pm, August 11.", "3:00 pm, August 13.", "2:00 pm, August 28."], 1,
+    ["結合月曆上的公休日與營業時段，排除不可選的日期時間。", "8/11 下午 5:00 符合營業時間且非公休。"],
+    "月曆題同時核對營業時間與標示公休／特別日。", "不要只看時間而忽略月曆上打叉的日期。"), imgDiagram("112", "q25-calendar.png", "第25題月曆")),
+], "112-set-24-25", "（第24–25題依試題本菜單與月曆作答，見 diagram。）", "Four Seasons' Kitchen 菜單與月曆");
+
+const exam112SetBirds = attach([
+  withDiagram(mc(15, 2, "According to the notes, which is the WRONG way to help a baby bird that is out of its nest?",
+    ["Feed it before you take it to a hospital.", "Leave it alone if it is not hurt and has feathers.", "Call the animal center if you can't find its nest.", "Put it back in its nest if it is not hurt and has few feathers."], 0,
+    ["注意事項未建議先餵食，餵食可能是錯誤做法。", "其餘選項與圖文注意事項一致。"],
+    "WRONG 題找出選項中與圖文建議矛盾的項目。", "不要憑善意直覺選餵食。"), imgDiagram("112", "q26-27-birds.png", "離巢幼鳥注意事項")),
+  withDiagram(mc(15, 2, "According to the notes, what do birds do if their babies have the smell of people on them?",
+    ["They keep taking care of them.", "They push them out of the nest.", "They clean them until the smell goes away.", "They leave them behind and move to a new nest."], 0,
+    ["圖文說明鳥類不會因人類氣味而棄養幼鳥。", "其餘選項是常見迷思，與圖文相反。"],
+    "細節題直接對照圖文中關於「人類氣味」的說明句。", "不要選民間迷思中「母鳥會棄巢」的說法。"), imgDiagram("112", "q26-27-birds.png", "離巢幼鳥注意事項")),
+], "112-set-26-27", "（第26–27題依試題本離巢幼鳥圖文作答。）", "離巢幼鳥處理注意事項");
+
+const exam112SetWaste = attach([
+  withDiagram(mc(16, 3, "According to the reading, which is one of the reasons for food waste?",
+    ["Stores do not know how to pack food well.", "Farmers do not have enough machines to collect food.", "There is no refrigerator on the truck to keep food fresh.", "Factories do not have enough trucks to carry food to stores."], 2,
+    ["圖表說明運送階段因缺少冷藏設備導致食物腐壞浪費。", "其餘選項文中未列為主要原因。"],
+    "原因題回到圖表或文字中標示的運送／保存問題。", "不要選看似合理但圖表未提及的原因。"), imgDiagram("112", "q28-29-waste.png", "食物浪費圖表")),
+  withDiagram(mc(16, 4, "Which is true about food waste at each stage in the three parts of the world?",
+    ["For each area, the highest percentage of food waste happens at Stage 5.", "Europe has a lower percentage of food waste at Stage 3 than the other two areas.", "North America & Oceania has a higher percentage of food waste at Stage 1 than Europe.", "South & Southeast Asia has a higher percentage of food waste at Stage 4 than the other two areas."], 3,
+    ["比對三區各階段百分比，南亞及東南亞在 Stage 4 占比高於另兩區。", "其餘選項與圖表數據不符。"],
+    "跨區比較題逐區逐階段核對百分比高低。", "不要只讀單一區域就下結論。"), imgDiagram("112", "q28-29-waste.png", "食物浪費圖表")),
+], "112-set-28-29", "（第28–29題依試題本各區食物浪費圖表作答。）", "各區食物浪費階段圖表");
+
 const exam112Set1 = [
   mc(15, 2, "What is the trick that the mosquito uses in rain?",
     ["It shakes its body fast enough to get water off.", "It drops with the raindrop and then rolls off it.", "It flies behind the raindrop and pushes it away.", "It rides on the raindrop and lands on the ground."], 1,
@@ -1934,10 +2067,12 @@ const exam112Set5 = [
 ];
 
 window.__ENG_TRANSCRIBED_112 = {
-  minutes: 60,
-  omittedNote: "112年英語（閱讀）題本共43題，其中第1題（需看圖片判斷選項）、第24、25題（依賴含價格與集點規則的菜單圖表及月曆圖片）、第26、27題（說明如何處理離巢幼鳥的圖文注意事項未提供純文字內容）、第28、29題（依賴各地區各階段食物浪費百分比的圖表）因純為圖片、圖表或版面內容，無法轉錄為等義文字，其餘36題皆已逐題轉錄並核對官方答案。",
+  minutes: 70,
   questions: [
     ...exam112,
+    ...exam112SetMenu,
+    ...exam112SetBirds,
+    ...exam112SetWaste,
     ...attach(exam112Set1, "112-mosquito", "Sometimes when the rain falls hard and fast on you, it might hurt a little.  But what happens when it hits a mosquito?  A 2012 study says when a raindrop falls on a mosquito, it's like when a bus hits a person.  Besides, the little insect is hit by a raindrop about once every 20 seconds.\n\nSo why don't we see many dead mosquitoes after it rains?\n\nA mosquito is as big as a raindrop, but it is much lighter — 0.002 g only.  This saves its life in raindrop attacks.  Because the mosquito is so light, when it is hit by a raindrop, it won't experience a force that is strong enough to kill it.\n\nThe study also found that when a mosquito is hit by a raindrop, the insect is pushed by the raindrop and falls together with it.  But the mosquito doesn't get wet easily because it is covered with hairs which keep off water.  After dropping about 6 cm, it will roll off the raindrop and fly away.\n\nHowever, this trick isn't always successful.  If the mosquito flies too low when it is hit by the raindrop, it won't have time to fly off.  Then it will hit the ground and meet its death.", "Mosquitoes in the Rain"),
     ...attach(exam112Set2, "112-for-elise", "You probably have heard Beethoven's famous piano piece \"For Elise,\" but do you know who \"Elise\" was?\n\nOne story is that Elise was Elisabeth Röckel.  She once sang in Beethoven's opera Fidelio, and the two became very good friends.  Beethoven called her \"Elise.\"  When Röckel was leaving the city of Vienna, Beethoven wrote \"For Elise\" to say goodbye to her.  Another story is that Elise was Therese Malfatti.  Beethoven was in love with her.  He wrote a piece for her and put \"For Therese\" on the manuscript.  Malfatti kept the manuscript and left it to her family when she died.  Later, a man copied the manuscript and wrote \"For Elise\" by mistake.  There is another possible Elise: Elise Barensfeld.  She learned the piano from Malfatti, the same Malfatti in the second story.  To help Malfatti, Beethoven wrote the piece for her to use to teach Barensfeld.\n\nThese are just some guesses about who Elise was.  We may never know the right answer.  No one knew about the piece until 1867, when the manuscript was found.  This was 40 years after Beethoven's death, so he wasn't around to tell us who Elise was.  Only one thing is for sure: \"For Elise\" will always be enjoyed.", "The Story Behind \"For Elise\""),
     ...attach(exam112Set3, "112-toys-gender", "Which would you give a boy for his birthday, a toy truck or a doll?  If you choose the truck, well, you're not alone.  Most people think that some toys are for boys and some are for girls.  We might pick building toys for boys and kitchen toys for girls.  But why do we do this?  Are boys and girls really born with different interests in toys?\n\nNo, they are not.  Children start to show different interests in toys at age three, but only because at this time, they begin to learn about gender and to follow what others of their gender do.  If you give a girl kitchen toys, she will think they are girls' toys because she sees other girls playing with them.  But if you give a girl a toy car and show her a group of girls who are playing with cars, she'll play with the toy car and think it is a girls' toy.  This \"watch and follow\" habit often becomes a rule for both boys and girls in choosing the \"right\" toys.\n\nHowever, this rule can be bad for children.  Different toys teach children different things.  Dolls help with their early language use, and building toys are good for learning math and science.  By playing with different toys, children can find out what they are interested in or what they are good at.  If they only play one kind of toy, they may lose this important chance.  They may also get a wrong idea about what boys or girls are able to do.  Some doctors worry that children may use the same kind of thinking when they look for jobs in the future.  If they do, they may miss something more important than just getting a chance to play with different toys.  They may miss many, perhaps better, chances in life.", "Toys and Gender"),
@@ -1948,6 +2083,10 @@ window.__ENG_TRANSCRIBED_112 = {
 
   // ==================== 113 年 ====================
 const exam113 = [
+  withDiagram(mc(17, 1, "Look at the picture.  There is ____ under the door.",
+    ["a box", "a cat", "a key", "a paper"], 0,
+    ["圖中門下露出的是盒子。", "a box 正確；cat、key、paper 與圖示不符。"],
+    "看圖選字題先確認門下露出的是什麼物品。", "不要選 key，官方圖示為盒子而非鑰匙。"), imgDiagram("113", "q1.png", "第1題圖")),
   mc(17, 1, "My ___ hurts so much that I cannot even turn my head.",
     ["arm", "knee", "neck", "stomach"], 2,
     ["句子的關鍵線索是「痛到連頭都不能轉」，能讓轉頭這個動作受影響的身體部位就是脖子。", "arm（手臂）、knee（膝蓋）、stomach（胃）都與「轉頭」這個動作無關。"],
@@ -2063,6 +2202,28 @@ const exam113Set1 = [
     "選項一容易被誤選成「忘記鑰匙」本身讓他生氣，但忘記鑰匙只是事情的起因，他真正憤怒的關鍵是被警察誤會、不被採信。"),
 ];
 
+const exam113SetBakery = attach([
+  withDiagram(mc(16, 4, "Kevin is going to buy some fresh bread at Baker's Kitchen.  He loves white bread, his mom likes farm bread, his father enjoys bagels, and his sister eats only challah.  Which is the earliest possible time for him to get all these breads for his family?",
+    ["11:00am.", "4:00pm.", "5:00pm.", "7:00pm."], 2,
+    ["對照麵包店時刻表，各品項出爐時間不同，取最晚能買齊四種的時段。", "下午 5:00 是四種麵包皆可買到的最早時間。"],
+    "時刻表題找出所有品項都可購買的交集時段。", "不要只看第一種麵包出爐時間。"), imgDiagram("113", "q24-25-bakery.png", "麵包店時刻表")),
+  withDiagram(mc(15, 2, "What do we know about Baker's Kitchen?",
+    ["It is open five days a week.", "Its breads are half price one hour before closing.", "Its croissants and pretzels are sold on weekends.", "Its members can save $100 when they shop on Fridays."], 1,
+    ["時刻表或公告寫明打烊前一小時麵包半價。", "其餘選項與圖中營業／優惠規則不符。"],
+    "細節題逐條核對選項是否在時刻表文字中出現。", "不要混淆會員優惠與半價時段。"), imgDiagram("113", "q24-25-bakery.png", "麵包店時刻表")),
+], "113-set-24-25", "（第24–25題依試題本麵包店時刻表作答。）", "Baker's Kitchen 時刻表");
+
+const exam113SetFestival = attach([
+  withDiagram(mc(15, 2, "What is recommended to people who want to visit the festival?",
+    ["Using the free festival bus service.", "Visiting the festival on the weekend.", "Entering Satyr's Park from Fox Street.", "Parking in Garden Square and walking to the festival."], 0,
+    ["地圖／海報建議搭乘免費接駁巴士前往會場。", "其餘選項與圖中交通建議不符。"],
+    "建議題找海報或地圖上標示 recommended 的項目。", "不要選地圖未標示的入口或停車方式。"), imgDiagram("113", "q26-27-map.png", "園遊會地圖")),
+  withDiagram(mc(16, 3, "What can we learn about the farmers' market from the map?",
+    ["The farmers' market is next to the flower market.", "The farmers' market and the festival are on the same block.", "You can go to the farmers' market by taking Bus No. 157 to Puppy Street.", "The nearest metro station to the farmers' market is the Koala Street Station."], 3,
+    ["地圖顯示農夫市集最近的地鐵站為 Koala Street Station。", "其餘選項與地圖位置或路線不符。"],
+    "地圖題逐項核對地標相對位置與站名。", "不要混淆不同街道或公車路線。"), imgDiagram("113", "q26-27-map.png", "園遊會地圖")),
+], "113-set-26-27", "（第26–27題依試題本園遊會地圖作答。）", "市集園遊會地圖");
+
 const exam113Set2 = [
   mc(16, 3, "What kind of people do Yan's and Chang's friends most likely think Yan and Chang are?",
     ["They enjoy good food.", "They don't like to share.", "They like to make friends.", "They don't like new things."], 1,
@@ -2141,6 +2302,10 @@ const exam113Set6 = [
     ["緊接的下一句說「事實上，這個做法早在 1918 年美國的流感大流行時就已被廣泛使用」，這正是用來支持『社交距離並不是新概念』的證據。", "選項二、三、四都與後文『被廣泛使用』這個正面歷史事實矛盾，文章並未說它沒有用、會帶來問題或不受歡迎。"],
     "克漏字題若填在轉折句（Though...but）中，通常要往下一句找支持或解釋的證據，這裡的 In fact 就是關鍵的承接線索。",
     "不要只看 popular topic this year 就聯想選項四『不受歡迎』，In fact 後面接的歷史事實才是判斷空格語意的真正依據。"),
+  withDiagram(mc(16, 4, "From the picture, we can see that ____ started social distancing earlier than the other three cities.",
+    ["Portland", "New York", "Denver", "Pittsburgh"], 1,
+    ["長條圖顯示紐約最早開始社交距離措施。", "其餘城市起始時間較晚。"],
+    "圖表題讀取各城市起始時間的早晚。", "不要混淆 Portland 與 Denver 的數據。"), imgDiagram("113", "q41-chart.png", "第41題社交距離長條圖")),
   mc(15, 2, "However, both cities ___, and the numbers of deaths climbed again.",
     ["had higher numbers of deaths", "stopped social distancing too soon", "began social distancing a second time", "had the most days of social distancing"], 1,
     ["前一句說 Portland 和 Denver 在最初幾週表現良好，However（然而）後面接的空格必須說明『為什麼後來死亡人數又攀升』，最合理的解釋是『太早停止社交距離措施』。", "選項一（死亡人數較高）與後面『死亡人數又攀升』重複，不是原因而是結果；選項三、四則與『However 語氣轉折、情況變糟』的方向不符。"],
@@ -2154,11 +2319,12 @@ const exam113Set6 = [
 ];
 
 window.__ENG_TRANSCRIBED_113 = {
-  minutes: 60,
-  omittedNote: "113年英語（閱讀）題本共43題，其中第1題（需看圖片判斷選項）、第24、25題（依賴含營業時間與優惠規則的麵包店時刻表圖片）、第26、27題（依賴市集園遊會的地圖圖片）、第41題（依賴呈現各城市社交距離起始時間的長條圖圖表）因純為圖片或圖表內容，無法轉錄為等義文字，其餘37題皆已逐題轉錄並核對官方答案。",
+  minutes: 70,
   questions: [
     ...exam113,
     ...attach(exam113Set1, "113-philip", "It was around eight o'clock on Saturday night.  Philip was at home with his little brother, Jason.  Jason was hungry and kept crying.  But Philip couldn't cook and their father was not home yet because he was working late in the office.  So Philip decided to take Jason out for some food.\n\nHalf an hour later, when they came back home, Philip was surprised to find that their father was talking to the police and a woman outside their house.  He didn't know who the woman was.  She looked scared and stood behind the police.  Philip's father was very angry and kept shouting, \"I didn't do anything wrong!  I forgot my keys and was just trying to get into MY OWN HOUSE!\"  But the police didn't believe him until Philip ran to them and explained everything.\n\nThe police told Philip that the woman called 110 when she saw Philip's father trying to get into a house through a window.  That was how it all happened.", "Philip's Night Out"),
+    ...exam113SetBakery,
+    ...exam113SetFestival,
     ...attach(exam113Set2, "113-yan-chang", "Yan lived a good life in a big house.  One day he invited a friend to dinner at his house.  However, on the dinner table there was only one small dish of one small fish.\n\nThe friend looked quietly at the fish.  It was no bigger than a finger.\n\nThen he asked Yan if he could borrow a lamp.\n\n\"What for?\" Yan asked.\n\"Well, it's so dark in here,\" the friend said with a dry smile, \"I can't see the other delicious dishes you've prepared for me.\"\n\nChang kept a lot of ducks and chickens on his farm.  One day, his best friend came to visit him.  At noon, Chang told his friend that he couldn't let him stay for lunch because there wasn't much food to eat.  The friend looked out at Chang's farm animals for a moment.  Then he asked Chang if he had a big knife.\n\n\"Yes, but what for?\" Chang asked.\n\"I'm thinking about killing the horse I rode here so we'll have something for lunch,\" the friend said.\n\n\"But how are you going to go home without it?\"\n\"Well, you wouldn't mind lending me one of your many ducks or chickens so I can ride it home, would you?\"", "Yan and Chang: Two Fables"),
     ...attach(exam113Set3, "113-cotoha", "Usually, people visit bookstores to buy books.  But those who walk into Cotoha come to see its owner, Chen Bing-Hong.  They bring him books with different problems.  Some have lost their covers, some are missing a few pages, and some have pages that are falling out.  Chen can always fix the books and make them whole again.\n\nChen sees himself as a doctor.  He says that books, like people, get sick and need help.  In Taiwan, there are not many \"doctors\" like him, and most of them work for big libraries and museums.  If big libraries and museums are hospitals, Chen's bookstore is a health center.  Big libraries and museums fix important old books with serious problems, and Chen helps people with books that have smaller problems.  However, the smaller size of the problems doesn't mean Chen's job is less important.\n\nChen gave an example of a science book he once worked on.  It was very old and half of its cover was lost.  Its owner still wanted to keep it because it was a gift from a teacher who helped him follow his dream of studying science.  When he got his book back, he was very surprised at the new-old book.  He felt he was brought back to the days with his teacher.  Seeing the owner's smile made Chen happy, because smiles like that are what his magic is for.", "Chen Bing-Hong, the Book Doctor"),
     ...attach(exam113Set4, "113-habibi", "A Delicious Surprise and Welcome Change\nBy Karl Falk, June 1, 2016\n\nIn Austria, there are not many restaurants like Habibi & Hawara.  Here you can enjoy Austrian and Syrian food together.  Two Austrians, Martin Rohla and David Kreytenberg, started this yummy plan from their experience of working with refugees.\n\nEvery year, thousands of people have to leave their homes and families because of war in their countries.  So many of them go to Austria that some people in the country think they have become a problem.  They are afraid refugees may take away their jobs and they don't feel safe around them, either.  But Rohla and Kreytenberg would beg to differ: The refugees don't have to be a problem.  They want to help them start a new life.  They invited refugees to meetings and found that some of them were cooks back in Syria.  So the idea of Habibi & Hawara was born—a restaurant that brings together Austrian and Syrian food.  \"The two worlds far away from each other meet together,\" Kreytenberg said.\n\nBut Rohla and Kreytenberg want to do more than just give the refugees work.  They want their best workers to buy the restaurant in the end.  They hope that Habibi & Hawara is not just a one-time plan and that other Austrians will join them and help more refugees.", "A Delicious Surprise and Welcome Change"),
@@ -2169,6 +2335,10 @@ window.__ENG_TRANSCRIBED_113 = {
 
   // ==================== 114 年 ====================
 const exam114 = [
+  withDiagram(mc(17, 1, "Look at the picture.  A ____ is flying over the houses.",
+    ["bird", "butterfly", "kite", "plane"], 3,
+    ["圖中是一架飛機飛越房屋上方。", "plane 正確；bird、butterfly、kite 與圖示不符。"],
+    "看圖選字題先確認飛行物種類。", "不要選 bird，圖示明顯是飛機。"), imgDiagram("114", "q1.png", "第1題圖")),
   mc(18, 1, "When I was a teenager, I was very ___. But now, it's easier for me to talk to people.",
     ["happy", "lazy", "popular", "shy"], 3,
     ["空格要選一個能與後句「現在比較容易跟人交談」形成對比的個性形容詞，暗示以前很害羞才導致難以主動跟人說話。", "shy（害羞的）最符合原本不易與人交談的個性，其餘happy（開心）、lazy（懶惰）、popular（受歡迎）皆與句意不符或方向相反。"],
@@ -2275,6 +2445,15 @@ const examRex2021 = [
 ];
 attach(examRex2021, "114-rex", "Rex is a dog that lives at the bakery next to our school. He is cute and friendly. Every morning, he stands in front of the school to welcome everybody. We all see Rex as one of us. But one Monday morning, I was surprised that Rex was not there to say hello to us. \"Rex is in the hospital. He was hit by a car last night,\" my classmate told me.\n\nWe went to see Rex in the hospital that day after school. Two weeks later, Rex was much better, and we decided to take him for a walk every evening. Because of the exercise, Rex became healthier and stronger. Soon he could happily run and jump again. He is now as handsome and strong as before!", "Rex受傷康復記");
 
+const chat114 = "Jenny: Hey guys, guess what? I'm getting married next year!\nLinda: Wow, I'm so happy for you.\nMark: I have good news too! I just got the job I've wanted so much.\nLinda: Come on, Mark. Don't start again.\nLinda: You're stealing Jenny's thunder. Jenny was telling us about her big news. It's very important to her. And you want us to hear about your new job now?\nMark: I didn't mean that. I just...\nJenny: I agree. Last time when we were talking about how delicious Linda's cake was, you started telling us about the chocolate cake you made at home.\nMark: All right, all right, my problem. Sorry, Jenny. I'll never do that again. So do you want to know what job I got?\nLinda: MARK!!";
+
+const examMarkLinda22 = attach([
+  withDiagram(mc(16, 3, "What do we know about Mark from the dialogue?",
+    ["He made Linda unhappy.", "He is looking for a new job.", "He did not like Linda's cake.", "He is getting married to Jenny."], 0,
+    ["Linda 兩次對 Mark 搶話題感到不滿（Don't start again、MARK!!），Mark 的行為讓她不高興。", "Mark 已找到新工作而非正在找；Jenny 說 Linda 的蛋糕好吃，並非 Mark 不喜歡；結婚的是 Jenny 而非 Mark。"],
+    "對話題整理各角色對 Mark 的反應，找出最合理的推論。", "不要選 Mark 已達成的事實（找到工作）當作『我們對 Mark 的了解』。"), imgDiagram("114", "q22-23-chat.png", "Mark、Linda 對話截圖")),
+], "114-set-22", chat114, "Friends Forever 群組對話");
+
 const examStealThunder23 = [
   mc(18, 3, "Which is most likely an example of stealing someone's thunder?",
     ["Dennis never changes his mind except when his wife tells him to.", "Melisa tells Tom she'll go to the party but tells her mom she'll stay home.", "Jeff tells everyone he'll move abroad when Ivy is still telling them about her baby.", "Alisa says she doesn't care what we have for lunch but also doesn't like the restaurant we chose."], 2,
@@ -2289,6 +2468,10 @@ const examWhiteLake24 = [
     ["文中列出三項卡片權益：可不限次數搭乘地鐵、公車或火車遊覽城市；未滿12歲兒童一位可免費同行；公立博物館門票可享8折（save 20%，而非免費或折扣兒童車票）。", "選項(D)『可以無限次搭乘地鐵遊覽城市』正對應第一項權益；(A)誤把折扣對象說成兒童車票、(B)誤把折扣說成免費、(C)則與文末『這些卡片僅限三個分區內的旅程使用』的規定相反，皆與原文不符。"],
     "官方文宣類文章的細節題，通常可以逐條比對條列式規則，找出唯一與原文完全吻合的選項。",
     "最容易的陷阱是把『8折優惠』看成『免費』(B)，或誤以為優惠對象是兒童車票而非博物館門票(A)，作答時要留意折扣的『對象』與『幅度』是否一致。"),
+  withDiagram(mc(16, 4, "Stacy is going to White Lake City and is staying at a hotel near the White Lake Main Station.  She wants to visit the Museum of White Lake City History on Friday and see White Lake on Saturday.  If she plans to buy (a) White Lake City Card(s), which of the four choices will be best for her and cost her the least?",
+    ["A 3-day Card for Zone 1.", "A Weekend Card for Zones 1-3.", "A 1-day Card for Zone 1 and a Weekend Card for Zones 1-2.", "A 1-day Card for Zones 1-2 and a Weekend Card for Zones 1-2."], 2,
+    ["依地圖分區與週末／平日票種，週五參觀博物館需 Zone 1 一日票，週六看湖需週末票。", "選項 (C) 組合最省且涵蓋兩日行程。"],
+    "票種規劃題先標出每日所在分區，再對照地圖與票價表。", "不要選涵蓋過多不必要分區的票種。"), imgDiagram("114", "q25-map.png", "White Lake 分區地圖")),
 ];
 attach(examWhiteLake24, "114-whitelake", "Buy a White Lake City Card When You're in the City\n\nWith any of the Cards, you can\n- visit the city by metro, bus, or train as many times as you want.*\n- take one child under 12 with you for free.\n- save 20% on tickets to public museums.\n\nThe 1-day, 3-day, and 5-day Cards are for trips from Monday to Friday, and the Weekend Card is for trips on weekends and holidays.\n\nCheck the map and buy the right Card for the zones you'll be entering.\n\n* The Cards are only for trips inside the three zones.", "White Lake City Card使用說明");
 
@@ -2403,13 +2586,16 @@ const examCameron3843 = [
 attach(examCameron3843, "114-cameron", "Most kids want gifts from their parents on their birthdays, but Cameron doesn't. On his birthday, he gives his mom a gift. He ___(1)___ doing this in his first year of junior high school. That year, during one class, he watched a video about how a baby is pushed from its mother's body. After class, ___(2)___. How brave a woman is to have a baby! Thank God I'll never have to do that!\n\nWhen Cameron came home that day, he held his mom in his arms for a long time. He decided that his birthday ___(3)___. During those nine months inside his mom, he just ate and slept while his mom was doing all the hard work. So why should he get a birthday gift for doing nothing? If anyone should get a gift on his birthday, it should be his mom.\n\nThe ___(4)___ \"birthday gift\" Cameron prepared was a bag of cookies he baked. The cookies tasted so bad, but his mom said they were the best thing she ever got. Hearing that ___(5)___. It was so much better than getting a gift. Now, on his birthday every year, Cameron makes a gift for his mother to thank her for giving him life.\n\nThis year, Cameron ___(6)___ his mom a nice dress. A few months ago, he learned to make dresses at school and decided to make one for his mom. Now the dress is finished and hanging behind Cameron's bedroom door. He believes the gift will tell his mother how much he loves her.", "Cameron的生日禮物：一則以感恩取代收禮的故事");
 
 window.__ENG_TRANSCRIBED_114 = {
-  minutes: 60,
-  omittedNote: "114年英語（閱讀）題本共43題，其中第1題（依圖片作答「Look at the picture...」，無文字可轉錄）、第22題（原始題本第22-23題組所依據的Mark、Linda對話內容於文字擷取時缺漏，僅存圖片或版面呈現）、第25題（需依官方地圖判斷各地點所屬收費分區，屬圖像資訊，文字題本未提供分區對應）題因純為圖片或版面內容，無法轉錄為等義文字，其餘40題皆已逐題轉錄並核對官方答案。",
-  questions: [...exam114, ...examRex2021, ...examStealThunder23, ...examWhiteLake24, ...examRollingAcres2628, ...examEasterIsland2931, ...examIkea3234, ...examElectricity3537, ...examCameron3843],
+  minutes: 70,
+  questions: [...exam114, ...examRex2021, ...examMarkLinda22, ...examStealThunder23, ...examWhiteLake24, ...examRollingAcres2628, ...examEasterIsland2931, ...examIkea3234, ...examElectricity3537, ...examCameron3843],
 };
 
   // ==================== 115 年 ====================
 const exam115 = [
+  withDiagram(mc(17, 1, "Look at the picture.  All of the students who are exercising are wearing ____.",
+    ["caps", "glasses", "jackets", "pants"], 1,
+    ["圖中做運動的學生都戴著眼鏡。", "glasses 正確；caps、jackets、pants 與圖示不符。"],
+    "看圖選字題注意所有學生共同的穿戴物。", "不要選 caps，圖中無人戴帽子。"), imgDiagram("115", "q1.png", "第1題圖")),
   mc(17, 1, "Rita ___ her dogs many times a day. That's why they're too fat.",
     ["feeds", "kisses", "walks", "washes"], 0,
     ["後句「that's why they're too fat」（這就是牠們太胖的原因）是解題關鍵，暗示狗狗吃了太多東西。", "feeds（餵食）最符合『導致變胖』的因果關係，其餘kisses（親吻）、walks（遛）、washes（洗）皆與『變胖』無因果關聯，甚至walks應該讓狗更瘦。"],
@@ -2502,6 +2688,17 @@ const exam115 = [
     "容易誤選watch，因為看電視的習慣動作常讓人聯想到現在簡單式，但這裡強調的是『此刻正在看』這場重要的比賽，必須用現在進行式am watching。"),
 ];
 
+const exam115SetRecipe = attach([
+  withDiagram(mc(16, 3, "Amanda wants to make fruit tea by following The Best Fruit Tea You Can Make at Home.  She has several kinds of fruit in the kitchen: apples, bananas, oranges, papayas, pears, and strawberries.  Which are some of the fruits she can use to make the fruit tea?",
+    ["Oranges, papayas and pears.", "Apples, bananas and oranges.", "Apples, oranges and strawberries.", "Bananas, papayas and strawberries."], 2,
+    ["食譜圖列可用水果，對照 Amanda 家中有的品項。", "蘋果、柳橙、草莓皆在食譜與 Amanda 清單中，對應 (C)。"],
+    "食譜題把圖中允許的水果與題幹清單取交集。", "不要選食譜未列或 Amanda 沒有的水果組合。"), imgDiagram("115", "q20-21-recipe.png", "水果茶食譜")),
+  withDiagram(mc(15, 2, "According to the reading, which is correct when we make the fruit tea?",
+    ["Boiling water with sugar in it.", "Making sure to take out the fruit.", "Putting in the fruit and the lemon juice at the same time.", "Leaving the teabags in the pot of hot water for 2 to 3 minutes."], 3,
+    ["食譜步驟寫明茶包在熱水中浸泡 2–3 分鐘。", "其餘選項與食譜圖示步驟不符。"],
+    "步驟題依食譜圖順序逐條核對。", "不要選看似合理但圖中未出現的煮法。"), imgDiagram("115", "q20-21-recipe.png", "水果茶食譜")),
+], "115-set-20-21", "（第20–21題依試題本食譜圖作答，見 diagram。）", "The Best Fruit Tea You Can Make at Home");
+
 const examHawkins2223 = [
   mc(16, 3, "According to the comics, what kind of person is Hawkins?",
     ["He sees good things in people.", "He never goes to work on time.", "He blindly follows other people.", "He talks about things he can't do."], 3,
@@ -2527,6 +2724,10 @@ const examMarigolds2425 = [
     ["規則第1條明確寫著「Pets are not allowed in any areas of the Marigolds' Home.」（園區任何地方都不允許帶寵物），沒有例外。", "(D) Taking pet dogs for a walk on the playground 直接違反第1條『任何區域都禁止寵物』的規定；(A)玫瑰園是戶外空間，規則只禁止在『建築物內』飲食，不違規；(B)拍照的禁令只限於Sir Archie's House，不是Main House；(C)規則要求的是『脫鞋才能進入』，選項描述與規則相符，並未違規。"],
     "判斷『違反哪一條規則』的題目時，要把每個選項的地點、動作都精確對應回原文規則的『適用範圍』。",
     "容易誤選(C)，因為看起來像是關於Rabbit's Temple規定的選項，但規則其實是『進入前要脫鞋』，選項描述的『沒穿鞋進入』恰好符合規定，並不是違規行為，這是文字陷阱。"),
+  withDiagram(mc(16, 4, "After shopping at the gift shop of the Main House, Lizzy walks out and sees the Family Library in front of her.  She wants to visit the Rose Garden.  How can she get there?",
+    ["Turn left and walk past the Main House, then go straight and turn right at the corner.", "Turn left and walk past Sir Archie's House, then turn right and walk past the Main House.", "Turn right and go straight to the Farmyard, then turn right and go straight, then turn left at the corner.", "Turn right and walk through the Butterfly Garden, then walk past the Rabbit's Temple and the café."], 2,
+    ["依場館地圖，從 Main House 禮品店出發到 Rose Garden 的路線為 (C)。", "其餘路線與地圖標示不符或繞遠。"],
+    "地圖路線題先標記起點與目的地，再沿地圖試走。", "不要忽略 Farmyard 轉角等關鍵地標。"), imgDiagram("115", "q26-map.png", "Marigolds' Home 地圖")),
 ];
 attach(examMarigolds2425, "115-marigolds", "To make sure you enjoy your visit to The Marigolds' Home, we'd like to ask you to follow the rules below:\n1. Pets are not allowed in any areas of the Marigolds' Home.\n2. Eating and drinking are not allowed inside the buildings, except in the café.\n3. Picture-taking is not allowed inside Sir Archie's House.\n4. Please take off your shoes before entering the Rabbit's Temple.\n\nBecome a member and save 10% on tickets and 30% on all items in the gift shops. To join, visit www.themarigoldshome.com.\n\nThe Marigolds' Home\nOpening times:\nMarch to October: 10:00-17:00\nNovember to February: 10:00-16:00\nClosed on Mondays.", "The Marigolds' Home遊園規則與開放時間");
 
@@ -2636,9 +2837,8 @@ const examKingSeed40414243 = [
 attach(examKingSeed40414243, "115-king-seed", "A long time ago, there was an old king who had no child of his own. The king was worried that his land would fall into the wrong hands after his death, so he decided to pick a child in his land to take the high seat. One day, he called all the children to his castle and gave each of them a seed. \"Come back on New Year's Day and show me what you have grown,\" he said to them, \"and I will ___(1)___.\"\n\nEvery child brought their seeds home carefully. One of the children, Wong, planted his seed in a pot. He gave it water every day and made sure there was sun to help it grow. ___(2)___.\n\nThen, Sung, the child of the richest family in the land, told people that a small plant was growing from his seed. He was ___(3)___. Everyone excitedly said that he would be king. Soon, one after another, more and more children were also saying that they had something in their pots. But Wong still didn't find anything in his.\n\nOn the big day, when Wong brought his pot to the castle, he saw all the other children carrying interesting plants. Some had flowers in the shape of a bird, and some had grasses of different colors. Everyone proudly showed their plants to the king, but the king looked unhappy until he saw Wong's pot. \"I boiled the seeds before I gave them out, so no plants could grow from them.\" The king looked seriously at the children. \"There is only one child who is ___(4)___ enough to be king.\"\n\nTen years later, the king died. On his deathbed, he was not worried because he knew Wong would be a good king.", "老國王選繼承人：煮熟的種子與誠實的孩子");
 
 window.__ENG_TRANSCRIBED_115 = {
-  minutes: 60,
-  omittedNote: "115年英語（閱讀）題本共43題，其中第1題（依圖片作答「Look at the picture...」，無文字可轉錄）、第20、21題（原始題本第20-21題組所依據的食譜圖文「The Best Fruit Tea You Can Make at Home」於文字擷取時缺漏，僅存圖片呈現）、第26題（需依官方場館地圖判斷方向路線，屬圖像資訊，文字題本未提供地圖對應）題因純為圖片或版面內容，無法轉錄為等義文字，其餘39題皆已逐題轉錄並核對官方答案。",
-  questions: [...exam115, ...examHawkins2223, ...examMarigolds2425, ...examNightingale2728, ...examRoseLacey293031, ...examSeaGlass323334, ...examIcelandic3539, ...examKingSeed40414243],
+  minutes: 70,
+  questions: [...exam115, ...exam115SetRecipe, ...examHawkins2223, ...examMarigolds2425, ...examNightingale2728, ...examRoseLacey293031, ...examSeaGlass323334, ...examIcelandic3539, ...examKingSeed40414243],
 };
 
   return {

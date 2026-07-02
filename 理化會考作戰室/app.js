@@ -1,5 +1,6 @@
 (() => {
   const { units, domains, strategies, archives, examFacts, sourcePolicy, officialSources, publisherSources, tipAudits } = window.SCIENCE_DATA;
+  const physicsAnalysis = window.PHYSICS_ANALYSIS;
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -20,7 +21,7 @@
   const mathBlock = value => String(value).split("\n").map(line => `<span class="math-line">${renderMath(line, true)}</span>`).join("");
   const nl = mathText;
   const letters = ["A", "B", "C", "D"];
-  const viewNames = { home: "學習總覽", exam: "理化模擬測驗", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中理化全冊講義", atlas: "題型與技巧地圖", analysis: "考試結構與領域分布", sources: "資料與技巧審核", archive: "歷屆自然科考卷入口" };
+  const viewNames = { home: "學習總覽", exam: "理化模擬測驗", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中理化全冊講義", atlas: "題型與技巧地圖", analysis: "考試結構與十年逐題分析", sources: "資料與技巧審核", archive: "歷屆自然科考卷入口" };
   let toastTimer;
 
   const state = {
@@ -246,8 +247,20 @@
       ["✓ 本站理化涵蓋", `${bp.total} 個單元，橫跨國二、國三共 4 個學期`],
       ["✓ 六大領域分布", bp.domains],
       ["✓ 模擬測驗定位", "理化範圍原創練習題，非官方自然科題本節錄，也不代表官方理化占分比例"],
-      ["✓ 歷屆考卷", "尚未取得官方 PDF 可逐題轉錄；歷屆十年頁提供官方原始連結"]
+      ["✓ 歷屆考卷", "106–115 年官方自然科題本已逐題篩出理化題並轉錄，可於「歷屆自然科考卷入口」查看"]
     ].map(([title, detail]) => `<div class="blueprint-check"><strong>${title}</strong><span>${esc(detail)}</span></div>`).join("");
+
+    renderYearLedger();
+  }
+
+  function renderYearLedger() {
+    const primary = physicsAnalysis.primaryUnits;
+    $("#yearLedger").innerHTML = archives.map(item => {
+      const year = item.year;
+      const list = primary[year];
+      if (!list) return `<details class="archive-not-ready"><summary><strong>${year}</strong><span>建置中，尚未完成理化題挑選與核對</span></summary></details>`;
+      return `<details><summary><strong>${year}</strong><span>共 ${list.length} 題理化題</span><b>展開逐題編碼 ＋</b></summary><div class="ledger-body"><div class="ledger-questions">${list.map((unitId, i) => `<article class="ledger-item"><b>${i + 1}</b><span>${esc(units[unitId - 1].title)}<small>${esc(physicsAnalysis.domainByUnit[unitId])}</small></span></article>`).join("")}</div></div></details>`;
+    }).join("");
   }
 
   function renderTipAudits() {
@@ -444,7 +457,7 @@
       }).join("")}</div>`;
       return `<article class="question" id="question-${index + 1}" data-question="${index}">
         <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">國${gradeName(unit.grade)}</span><span class="question-tag">${esc(unit.title)}</span><span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5 - q.difficulty)}</span></div>
-        <div class="question-text">${nl(q.text)}</div>${choices}${solutionHtml(q)}
+        <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${solutionHtml(q)}
       </article>`;
     }).join("");
     const isQuiz = state.exam.kind === "quiz";

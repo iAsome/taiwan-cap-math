@@ -2,29 +2,29 @@ window.CAP_ANALYSIS = (() => {
   // primaryUnits：逐題人工覆核後的「主概念」編碼；順序為該年度選擇題，再接 2 題非選擇題。
   // 主概念只計一次，確保各年度加總等於官方題數；跨單元特徵不重複灌入題數。
   const primaryUnits = {
-    106: [1,13,12,11,6,25,22,3,10,9,21,15,7,19,8,11,3,23,19,2,13,24,6,26,2,19,10,21],
-    107: [11,4,17,3,6,25,13,15,22,5,18,1,9,23,26,16,2,22,20,13,24,22,8,21,6,7,25,13],
-    108: [4,10,12,26,2,2,7,14,16,1,18,9,11,25,18,17,21,16,23,6,5,3,23,22,18,24,5,21],
-    109: [1,2,25,13,19,1,12,3,7,15,17,22,20,8,19,8,13,9,22,13,24,19,16,21,5,23,8,22],
-    110: [7,1,6,19,2,13,10,12,10,22,25,9,16,1,18,8,22,24,11,6,19,3,21,17,11,23,9,3],
-    111: [1,12,3,26,4,13,7,14,25,15,5,2,22,10,18,16,19,8,23,18,22,24,21,8,9,2,25],
-    112: [2,14,26,13,17,1,7,19,3,15,8,25,26,24,16,6,23,17,22,18,8,21,13,10,8,8,19],
-    113: [4,26,6,7,16,25,11,2,10,14,13,24,8,9,4,17,18,19,1,18,22,23,19,17,9,8,13],
-    114: [2,12,11,6,18,7,10,13,16,12,25,26,15,6,1,21,21,3,9,18,24,23,22,8,8,10,3],
-    115: [6,26,13,25,12,10,12,2,15,8,1,18,7,24,19,18,16,22,22,3,21,19,9,17,17,16,21]
+    106: [1,13,11,12,7,25,22,3,10,9,21,15,7,19,8,18,3,22,19,2,18,24,6,26,19,16,10,7],
+    107: [11,4,7,3,6,25,13,15,22,9,18,1,9,23,26,16,2,19,20,18,24,22,8,21,6,7,25,18],
+    108: [4,10,12,26,13,2,7,14,16,1,21,9,18,25,18,9,21,22,22,6,6,3,23,22,23,24,8,21],
+    109: [1,2,25,13,19,1,12,3,7,15,17,22,10,5,19,8,19,9,22,18,24,11,16,21,5,23,9,22],
+    110: [7,1,6,19,2,13,17,12,10,22,25,9,16,4,18,5,22,24,11,6,11,3,19,6,23,23,27,3],
+    111: [1,12,3,26,4,13,7,14,25,15,5,2,22,10,18,1,19,5,23,18,22,18,24,8,9,16,25],
+    112: [2,14,26,13,17,1,7,19,3,15,4,25,26,24,16,23,9,22,18,6,6,19,21,20,8,27,13],
+    113: [4,26,6,7,16,25,11,2,10,14,13,24,8,9,3,17,18,19,1,19,22,23,19,8,8,8,13],
+    114: [2,12,6,7,13,16,12,15,21,3,24,22,17,18,11,11,25,26,5,1,13,5,18,23,3,8,3],
+    115: [6,26,13,25,1,12,2,15,1,7,24,18,16,22,22,3,19,10,8,18,11,22,9,17,17,16,19],
   };
 
   const officialByYear = {
-    106: { mc: 26, cr: 2, curriculum: "九年一貫課綱", abilities: { concept: 6, procedure: 4, application: 11, analysis: 7 }, mcAbilities: { concept: 6, procedure: 4, application: 10, analysis: 6 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["平均數、票數與極端情況判斷", "坐標直線與三角形相似證明"] },
-    107: { mc: 26, cr: 2, curriculum: "九年一貫課綱", abilities: { concept: 7, procedure: 3, application: 11, analysis: 7 }, mcAbilities: { concept: 7, procedure: 3, application: 10, analysis: 6 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["平均數條件與機率", "方格路徑與畢氏距離比較"] },
-    108: { mc: 26, cr: 2, curriculum: "九年一貫課綱", abilities: { concept: 5, procedure: 4, application: 11, analysis: 8 }, mcAbilities: { concept: 5, procedure: 4, application: 10, analysis: 7 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["比例公式與防曬係數判讀", "平行光影與相似三角形"] },
-    109: { mc: 26, cr: 2, curriculum: "九年一貫課綱", abilities: { concept: 6, procedure: 5, application: 11, analysis: 6 }, mcAbilities: { concept: 6, procedure: 5, application: 10, analysis: 5 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["單位價格與比例比較", "圓、切線與複合面積"] },
-    110: { mc: 26, cr: 2, curriculum: "九年一貫課綱", abilities: { concept: 6, procedure: 4, application: 11, analysis: 7 }, mcAbilities: { concept: 6, procedure: 4, application: 10, analysis: 6 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["取概數、區間與百分率", "排列切割、整數因數與所有可能"] },
-    111: { mc: 25, cr: 2, curriculum: "十二年國教課綱", abilities: { concept: 7, procedure: 4, application: 10, analysis: 6 }, mcAbilities: { concept: 7, procedure: 4, application: 8, analysis: 6 }, crAbilities: { application: 2, analysis: 0 }, crTopics: ["指數成長與科學記號估算", "條件機率與完整樣本空間"] },
-    112: { mc: 25, cr: 2, curriculum: "十二年國教課綱", abilities: { concept: 7, procedure: 4, application: 8, analysis: 8 }, mcAbilities: { concept: 7, procedure: 4, application: 8, analysis: 6 }, crAbilities: { application: 0, analysis: 2 }, crTopics: ["疫苗效力、比例與反例判斷", "正多邊形、周長與圓柱套合"] },
-    113: { mc: 25, cr: 2, curriculum: "十二年國教課綱", abilities: { concept: 7, procedure: 4, application: 9, analysis: 7 }, mcAbilities: { concept: 7, procedure: 4, application: 9, analysis: 5 }, crAbilities: { application: 0, analysis: 2 }, crTopics: ["面積比、比例與整數可行性", "圓桌拼接、畢氏定理與長度比較"] },
-    114: { mc: 25, cr: 2, curriculum: "十二年國教課綱", abilities: { concept: 6, procedure: 4, application: 11, analysis: 6 }, mcAbilities: { concept: 6, procedure: 4, application: 10, analysis: 5 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["調整倍率、百分比與資料偏差", "最小公倍數、紙片比例與整數論證"] },
-    115: { mc: 25, cr: 2, curriculum: "十二年國教課綱", abilities: { concept: 6, procedure: 4, application: 12, analysis: 5 }, mcAbilities: { concept: 6, procedure: 4, application: 10, analysis: 5 }, crAbilities: { application: 2, analysis: 0 }, crTopics: ["等差數列、規律與達標時間", "正六邊形、相似直角三角形與根式"] }
+    106: { mc: 28, cr: 2, curriculum: "九年一貫課綱", abilities: { concept: 6, procedure: 4, application: 11, analysis: 7 }, mcAbilities: { concept: 6, procedure: 4, application: 10, analysis: 6 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["平均數、票數與極端情況判斷", "坐標直線與三角形相似證明"] },
+    107: { mc: 28, cr: 2, curriculum: "九年一貫課綱", abilities: { concept: 7, procedure: 3, application: 11, analysis: 7 }, mcAbilities: { concept: 7, procedure: 3, application: 10, analysis: 6 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["平均數條件與機率", "方格路徑與畢氏距離比較"] },
+    108: { mc: 28, cr: 2, curriculum: "九年一貫課綱", abilities: { concept: 5, procedure: 4, application: 11, analysis: 8 }, mcAbilities: { concept: 5, procedure: 4, application: 10, analysis: 7 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["比例公式與防曬係數判讀", "平行光影與相似三角形"] },
+    109: { mc: 28, cr: 2, curriculum: "九年一貫課綱", abilities: { concept: 6, procedure: 5, application: 11, analysis: 6 }, mcAbilities: { concept: 6, procedure: 5, application: 10, analysis: 5 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["單位價格與比例比較", "圓、切線與複合面積"] },
+    110: { mc: 28, cr: 2, curriculum: "九年一貫課綱", abilities: { concept: 6, procedure: 4, application: 11, analysis: 7 }, mcAbilities: { concept: 6, procedure: 4, application: 10, analysis: 6 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["取概數、區間與百分率", "排列切割、整數因數與所有可能"] },
+    111: { mc: 27, cr: 2, curriculum: "十二年國教課綱", abilities: { concept: 7, procedure: 4, application: 10, analysis: 6 }, mcAbilities: { concept: 7, procedure: 4, application: 8, analysis: 6 }, crAbilities: { application: 2, analysis: 0 }, crTopics: ["指數成長與科學記號估算", "條件機率與完整樣本空間"] },
+    112: { mc: 27, cr: 2, curriculum: "十二年國教課綱", abilities: { concept: 7, procedure: 4, application: 8, analysis: 8 }, mcAbilities: { concept: 7, procedure: 4, application: 8, analysis: 6 }, crAbilities: { application: 0, analysis: 2 }, crTopics: ["疫苗效力、比例與反例判斷", "正多邊形、周長與圓柱套合"] },
+    113: { mc: 27, cr: 2, curriculum: "十二年國教課綱", abilities: { concept: 7, procedure: 4, application: 9, analysis: 7 }, mcAbilities: { concept: 7, procedure: 4, application: 9, analysis: 5 }, crAbilities: { application: 0, analysis: 2 }, crTopics: ["面積比、比例與整數可行性", "圓桌拼接、畢氏定理與長度比較"] },
+    114: { mc: 27, cr: 2, curriculum: "十二年國教課綱", abilities: { concept: 6, procedure: 4, application: 11, analysis: 6 }, mcAbilities: { concept: 6, procedure: 4, application: 10, analysis: 5 }, crAbilities: { application: 1, analysis: 1 }, crTopics: ["調整倍率、百分比與資料偏差", "最小公倍數、紙片比例與整數論證"] },
+    115: { mc: 27, cr: 2, curriculum: "十二年國教課綱", abilities: { concept: 6, procedure: 4, application: 12, analysis: 5 }, mcAbilities: { concept: 6, procedure: 4, application: 10, analysis: 5 }, crAbilities: { application: 2, analysis: 0 }, crTopics: ["等差數列、規律與達標時間", "正六邊形、相似直角三角形與根式"] }
   };
 
   // 出題形式由官方原題逐題檢視後歸類；同題只取主要呈現形式。

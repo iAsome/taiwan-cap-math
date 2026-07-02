@@ -427,7 +427,7 @@
       }).join("")}</div>`;
       return `<article class="question" id="question-${index + 1}" data-question="${index}">
         <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit?.grade === 7 ? "一" : unit?.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit?.title || "")}</span>${q.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(q.taxonomyTopic)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5 - q.difficulty)}</span></div>
-        <div class="question-text">${mathText(q.text)}</div>${solutionHtml(q)}
+        <div class="question-text">${mathText(q.text)}</div>${q.diagram || ""}${choices}${solutionHtml(q)}
       </article>`;
     }).join("");
     const isQuiz = state.exam.kind === "quiz";
