@@ -10,7 +10,7 @@
   const groupMark = grade => domains[grade - 1]?.mark || "";
   const groupName = grade => groups.find(g => g.id === grade)?.name || domains[grade - 1]?.name || "";
   const abilityLabel = { knowledge: "知識理解", comprehension: "統整判讀", inquiry: "史料探究" };
-  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中歷史全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" };
+  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中歷史全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" , paper: "官方考卷" };
   let toastTimer;
 
   const state = {
@@ -27,7 +27,8 @@
     seconds: 2400,
     totalSeconds: 2400,
     timerId: null,
-    currentQuestion: 0
+    currentQuestion: 0,
+    paperItem: null
   };
 
   function formatDuration(seconds) {
@@ -94,6 +95,7 @@
     if (view === "analysis") renderAnalysis();
     if (view === "sources") renderSources();
     if (view === "archive") renderArchive();
+    if (view === "paper") renderPaperView();
   }
 
   function updateLearningProgress() {
@@ -163,35 +165,53 @@
       </section>`;
   }
 
-  function renderArchive() {
-    $("#archiveGrid").innerHTML = archives.map((item, index) => {
-      const data = window.ARCHIVE_EXAMS?.[item.year];
-      const count = data?.questions.length || 0;
-      return `
-      <article class="archive-card ${index === 0 ? "latest" : ""}">
-        <div class="year-block"><strong>${item.year}</strong><span>${item.western} 年${index === 0 ? " · 最新" : ""}</span></div>
-        <div class="archive-body"><h3>${item.year} 年國中教育會考社會科．歷史題目</h3><p>${data ? `${count} 題選擇｜依官方社會科題本中的歷史題目製作，可作答並看詳解` : "電子試卷建置中，敬請期待"}</p>
-          <button class="primary" data-archive-year="${item.year}" ${data ? "" : "disabled"}>${data ? "進入考試 →" : "建置中"}</button>
-        </div>
-      </article>`;
-    }).join("");
-    $$("[data-archive-year]", $("#archiveGrid")).forEach(button => button.addEventListener("click", () => beginArchiveExam(Number(button.dataset.archiveYear))));
+  const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
+
+  function openPaperView(item) {
+    state.paperItem = item;
+    setView("paper");
   }
 
-  function beginArchiveExam(year) {
-    const data = window.ARCHIVE_EXAMS?.[year];
-    if (!data) return toast(`${year} 年電子試卷尚未建置完成`);
-    launchAssessment({
-      kind: "archive",
-      id: `ARCHIVE-${year}`,
-      year,
-      title: `${year} 年國中教育會考社會科．歷史題目`,
-      minutes: data.minutes || 20,
-      officialCodes: `official-${year}-history`,
-      omittedNote: data.omittedNote,
-      questions: data.questions.map(q => ({ ...q }))
-    });
+  function renderPaperView() {
+    const item = state.paperItem;
+    const host = $("#paperViewer");
+    if (!item) {
+      host.innerHTML = `<p class="unit-empty">請從考卷館選擇年度。</p>`;
+      return;
+    }
+    $("#paperViewTitle").textContent = `${item.year} 年官方考卷`;
+    $("#paperViewDesc").textContent = `${item.year} 年（${item.western}）官方題本 PDF，可預覽或下載。`;
+    host.innerHTML = `
+      <div class="paper-view-toolbar">
+        <strong>${item.year} 年 · ${item.western}</strong>
+        <a class="secondary link-button" href="${item.page}" target="_blank" rel="noopener">官方網頁 ↗</a>
+        <a class="secondary link-button" href="${OFFICIAL_EXAMS_URL}" target="_blank" rel="noopener">歷屆試題總頁 ↗</a>
+      </div>
+      <div class="paper-downloads">
+        <a class="primary link-button" href="${item.paper}" target="_blank" rel="noopener">開啟題本 PDF</a>
+        <a class="secondary link-button" href="${item.paper}" download>下載題本</a>
+        <a class="secondary link-button" href="${item.answer}" download>下載答案</a>
+        <a class="secondary link-button" href="${item.guide}" download>下載試題說明</a>
+      </div>
+      <iframe class="paper-pdf-frame" src="${item.paper}" title="${item.year} 年官方題本"></iframe>
+      <p class="paper-view-note">若預覽空白，請直接下載 PDF；數學科離線包若缺 PDF，請依 README 執行 tools-download 補齊。官方總頁：<a href="${OFFICIAL_EXAMS_URL}" target="_blank" rel="noopener">cap.rcpet.edu.tw/examination.html</a></p>`;
+    $$("[data-view]", host).forEach(button => button.addEventListener("click", () => setView(button.dataset.view)));
   }
+
+  function renderArchive() {
+    $("#archiveGrid").innerHTML = archives.map((item, index) => `
+      <article class="archive-card ${index === 0 ? "latest" : ""}">
+        <div class="year-block"><strong>${item.year}</strong><span>${item.western} 年${index === 0 ? " · 最新" : ""}</span></div>
+        <div class="archive-body"><h3>${item.year} 年社會科歷史題</h3><p>官方題本 PDF｜可預覽與下載</p><small class="archive-scope-note">整份社會科官方題本（非僅歷史篩選版）</small>
+          <div class="archive-actions"><button class="primary" data-paper-year="${item.year}">查看考卷 →</button></div>
+        </div>
+      </article>`).join("");
+    $$("[data-paper-year]", $("#archiveGrid")).forEach(button => button.addEventListener("click", () => {
+      const item = archives.find(entry => entry.year === Number(button.dataset.paperYear));
+      if (item) openPaperView(item);
+    }));
+  }
+
 
   function renderSources() {
     $("#auditCount").textContent = tipAudits.length;
@@ -209,7 +229,7 @@
     const official = capAnalysis.officialByYear;
     const primary = capAnalysis.primaryUnits;
     if (!years.length) {
-      $("#analysisStats").innerHTML = `<div><strong>0</strong><span>逐題分析建置中</span></div>`;
+      $("#analysisStats").innerHTML = `<div><strong>0</strong><span>凍結分析資料</span></div>`;
       $("#abilityBars").innerHTML = "";
       $("#officialStructureTable").innerHTML = `<p class="unit-empty">歷屆逐題分析尚未建置，敬請期待。</p>`;
       $("#domainDistribution").innerHTML = "";
@@ -403,9 +423,9 @@
     state.seconds = state.totalSeconds;
     state.currentQuestion = 0;
     setView("exam");
-    if (assessment.kind === "quiz" || assessment.kind === "archive") {
-      $("#viewTitle").textContent = viewNames[assessment.kind === "quiz" ? "quiz" : "archive"];
-      $$("#mainNav [data-view]").forEach(element => element.classList.toggle("active", element.dataset.view === (assessment.kind === "quiz" ? "quiz" : "archive")));
+    if (assessment.kind === "quiz" ) {
+      $("#viewTitle").textContent = viewNames["quiz"];
+      $$("#mainNav [data-view]").forEach(element => element.classList.toggle("active", element.dataset.view === ("quiz")));
     }
     $("#examEmpty").classList.add("hidden");
     $("#examWorkspace").classList.remove("hidden");

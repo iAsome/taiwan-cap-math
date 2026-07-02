@@ -632,3 +632,10 @@ body.dark .paper-history-empty { background: #241e18; }
 }
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+
+.paper-viewer { max-width: 1260px; margin: 0 auto; }
+.paper-view-toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+.paper-downloads { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.paper-pdf-frame { width: 100%; min-height: 78vh; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); }
+.paper-view-note { color: var(--muted); font-size: .82rem; margin-top: 10px; line-height: 1.6; }
+.archive-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }

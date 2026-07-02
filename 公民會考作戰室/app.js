@@ -10,7 +10,7 @@
   const groupMark = grade => domains[grade - 1]?.mark || "";
   const groupName = grade => groups.find(g => g.id === grade)?.name || domains[grade - 1]?.name || "";
   const abilityLabel = { knowledge: "知識理解", comprehension: "統整判讀", inquiry: "公民實踐" };
-  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中公民全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" };
+  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中公民全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" , paper: "官方考卷" };
   let toastTimer;
 
   const state = {
@@ -27,7 +27,8 @@
     seconds: 2400,
     totalSeconds: 2400,
     timerId: null,
-    currentQuestion: 0
+    currentQuestion: 0,
+    paperItem: null
   };
 
   function formatDuration(seconds) {
@@ -94,6 +95,7 @@
     if (view === "analysis") renderAnalysis();
     if (view === "sources") renderSources();
     if (view === "archive") renderArchive();
+    if (view === "paper") renderPaperView();
   }
 
   function updateLearningProgress() {
@@ -163,35 +165,53 @@
       </section>`;
   }
 
-  function renderArchive() {
-    $("#archiveGrid").innerHTML = archives.map((item, index) => {
-      const data = window.ARCHIVE_EXAMS?.[item.year];
-      const count = data?.questions.length || 0;
-      return `
-      <article class="archive-card ${index === 0 ? "latest" : ""}">
-        <div class="year-block"><strong>${item.year}</strong><span>${item.western} 年${index === 0 ? " · 最新" : ""}</span></div>
-        <div class="archive-body"><h3>${item.year} 年國中教育會考社會科．公民題目</h3><p>${data ? `${count} 題選擇｜依官方社會科題本中的公民題目製作，可作答並看詳解` : "電子試卷建置中，敬請期待"}</p>
-          <button class="primary" data-archive-year="${item.year}" ${data ? "" : "disabled"}>${data ? "進入考試 →" : "建置中"}</button>
-        </div>
-      </article>`;
-    }).join("");
-    $$("[data-archive-year]", $("#archiveGrid")).forEach(button => button.addEventListener("click", () => beginArchiveExam(Number(button.dataset.archiveYear))));
+  const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
+
+  function openPaperView(item) {
+    state.paperItem = item;
+    setView("paper");
   }
 
-  function beginArchiveExam(year) {
-    const data = window.ARCHIVE_EXAMS?.[year];
-    if (!data) return toast(`${year} 年電子試卷尚未建置完成`);
-    launchAssessment({
-      kind: "archive",
-      id: `ARCHIVE-${year}`,
-      year,
-      title: `${year} 年國中教育會考社會科．公民題目`,
-      minutes: data.minutes || 20,
-      officialCodes: `official-${year}-civics`,
-      omittedNote: data.omittedNote,
-      questions: data.questions.map(q => ({ ...q }))
-    });
+  function renderPaperView() {
+    const item = state.paperItem;
+    const host = $("#paperViewer");
+    if (!item) {
+      host.innerHTML = `<p class="unit-empty">請從考卷館選擇年度。</p>`;
+      return;
+    }
+    $("#paperViewTitle").textContent = `${item.year} 年官方考卷`;
+    $("#paperViewDesc").textContent = `${item.year} 年（${item.western}）官方題本 PDF，可預覽或下載。`;
+    host.innerHTML = `
+      <div class="paper-view-toolbar">
+        <strong>${item.year} 年 · ${item.western}</strong>
+        <a class="secondary link-button" href="${item.page}" target="_blank" rel="noopener">官方網頁 ↗</a>
+        <a class="secondary link-button" href="${OFFICIAL_EXAMS_URL}" target="_blank" rel="noopener">歷屆試題總頁 ↗</a>
+      </div>
+      <div class="paper-downloads">
+        <a class="primary link-button" href="${item.paper}" target="_blank" rel="noopener">開啟題本 PDF</a>
+        <a class="secondary link-button" href="${item.paper}" download>下載題本</a>
+        <a class="secondary link-button" href="${item.answer}" download>下載答案</a>
+        <a class="secondary link-button" href="${item.guide}" download>下載試題說明</a>
+      </div>
+      <iframe class="paper-pdf-frame" src="${item.paper}" title="${item.year} 年官方題本"></iframe>
+      <p class="paper-view-note">若預覽空白，請直接下載 PDF；數學科離線包若缺 PDF，請依 README 執行 tools-download 補齊。官方總頁：<a href="${OFFICIAL_EXAMS_URL}" target="_blank" rel="noopener">cap.rcpet.edu.tw/examination.html</a></p>`;
+    $$("[data-view]", host).forEach(button => button.addEventListener("click", () => setView(button.dataset.view)));
   }
+
+  function renderArchive() {
+    $("#archiveGrid").innerHTML = archives.map((item, index) => `
+      <article class="archive-card ${index === 0 ? "latest" : ""}">
+        <div class="year-block"><strong>${item.year}</strong><span>${item.western} 年${index === 0 ? " · 最新" : ""}</span></div>
+        <div class="archive-body"><h3>${item.year} 年社會科公民題</h3><p>官方題本 PDF｜可預覽與下載</p><small class="archive-scope-note">整份社會科官方題本（非僅公民篩選版）</small>
+          <div class="archive-actions"><button class="primary" data-paper-year="${item.year}">查看考卷 →</button></div>
+        </div>
+      </article>`).join("");
+    $$("[data-paper-year]", $("#archiveGrid")).forEach(button => button.addEventListener("click", () => {
+      const item = archives.find(entry => entry.year === Number(button.dataset.paperYear));
+      if (item) openPaperView(item);
+    }));
+  }
+
 
   function renderSources() {
     $("#auditCount").textContent = tipAudits.length;
@@ -219,7 +239,7 @@
     }, {});
     const abilityMax = Math.max(1, ...Object.values(abilityTotals));
     $("#abilityBars").innerHTML = Object.entries(abilityLabel).map(([key, label]) => `<div class="bar-row"><span>${label}</span><div><i style="--value:${(abilityTotals[key] || 0) / abilityMax * 100}%"></i></div><b>${abilityTotals[key] || 0}</b></div>`).join("");
-    $("#officialStructureTable").innerHTML = `<table class="mini-table"><thead><tr><th>年度</th><th>公民題數</th><th>知識理解</th><th>統整判讀</th><th>公民實踐</th></tr></thead><tbody>${years.map(year => `<tr><td>${year}</td><td>${official[year].count}</td><td>${official[year].abilities.knowledge}</td><td>${official[year].abilities.comprehension}</td><td>${official[year].abilities.inquiry}</td></tr>`).join("") || `<tr><td colspan="5" class="audit-empty">歷屆逐題編碼建置中，待 archive-exams.js 完成轉錄後填入。</td></tr>`}</tbody></table>`;
+    $("#officialStructureTable").innerHTML = `<table class="mini-table"><thead><tr><th>年度</th><th>公民題數</th><th>知識理解</th><th>統整判讀</th><th>公民實踐</th></tr></thead><tbody>${years.map(year => `<tr><td>${year}</td><td>${official[year].count}</td><td>${official[year].abilities.knowledge}</td><td>${official[year].abilities.comprehension}</td><td>${official[year].abilities.inquiry}</td></tr>`).join("") || `<tr><td colspan="5" class="audit-empty">尚無凍結分析資料。</td></tr>`}</tbody></table>`;
 
     const domainCounts = {};
     const unitYearCounts = {};
@@ -248,7 +268,7 @@
     $("#yearLedger").innerHTML = years.length ? years.slice().reverse().map((year, index) => {
       const info = official[year];
       return `<details ${index === 0 ? "open" : ""}><summary><strong>${year}</strong><span>${info.count} 題公民｜社會科全卷分配估算</span><b>展開逐題編碼 ＋</b></summary><div class="ledger-body"><div class="ledger-ability"><span>知識理解 ${info.abilities.knowledge}</span><span>統整判讀 ${info.abilities.comprehension}</span><span>公民實踐 ${info.abilities.inquiry}</span></div><div class="ledger-questions">${primary[year].map((unitId, i) => `<article class="ledger-item"><b>${i + 1}</b><span>${esc(units.find(u => u.id === unitId)?.title || "跨單元")}<small>${esc(capAnalysis.domainByUnit[unitId])}</small></span></article>`).join("")}</div></div></details>`;
-    }).join("") : `<div class="paper-history-empty"><h2>逐題分析建置中。</h2><p>本頁的年度帳本待 archive-exams.js 完成官方題目逐題轉錄後，由後續流程填入。</p></div>`;
+    }).join("") : `<div class="paper-history-empty"><h2>凍結分析資料。</h2><p>本頁年度帳本依凍結的 analysis-data.js 顯示；官方題本請至考卷館下載 PDF。</p></div>`;
   }
 
   function renderTipAudits() {
@@ -273,7 +293,7 @@
   function capSummary(item, compact = false) {
     const items = capItemsForUnits(item.unitIds);
     const preview = items.slice(0, compact ? 6 : 10).map(x => `<span>${esc(x.label)}</span>`).join("");
-    return `<div class="quiz-cap-tags"><strong>會考標註 ${items.length} 題</strong><small>106–115 年社會科公民主概念回查</small><div class="quiz-cap-preview">${preview || "<span>近十年逐題分析建置中；仍依課綱出題</span>"}</div></div>`;
+    return `<div class="quiz-cap-tags"><strong>會考標註 ${items.length} 題</strong><small>106–115 年社會科公民主概念回查</small><div class="quiz-cap-preview">${preview || "<span>近十年凍結分析資料；仍依課綱出題</span>"}</div></div>`;
   }
 
   function quizCard(item) {
@@ -314,7 +334,7 @@
           return `<article class="hanlin-chapter-item">
             <div><strong>${esc(item.chapter)}｜${esc(item.title)}</strong><small>${esc(unitNames)}｜${esc(item.officialCodes)}</small></div>
             <span>會考 ${capItems.length} 題</span>
-            <div class="hanlin-cap-list">${capItems.map(cap => `<i title="${esc(cap.unitTitle)}">${esc(cap.label)}</i>`).join("") || "<i>近十年逐題分析建置中；仍依課綱出題</i>"}</div>
+            <div class="hanlin-cap-list">${capItems.map(cap => `<i title="${esc(cap.unitTitle)}">${esc(cap.label)}</i>`).join("") || "<i>近十年凍結分析資料；仍依課綱出題</i>"}</div>
             <a href="?quiz=${item.id}">進入本單元小考 →</a>
           </article>`;
         }).join("")}</div>
@@ -392,9 +412,9 @@
     state.seconds = state.totalSeconds;
     state.currentQuestion = 0;
     setView("exam");
-    if (assessment.kind === "quiz" || assessment.kind === "archive") {
-      $("#viewTitle").textContent = viewNames[assessment.kind === "quiz" ? "quiz" : "archive"];
-      $$("#mainNav [data-view]").forEach(element => element.classList.toggle("active", element.dataset.view === (assessment.kind === "quiz" ? "quiz" : "archive")));
+    if (assessment.kind === "quiz" ) {
+      $("#viewTitle").textContent = viewNames["quiz"];
+      $$("#mainNav [data-view]").forEach(element => element.classList.toggle("active", element.dataset.view === ("quiz")));
     }
     $("#examEmpty").classList.add("hidden");
     $("#examWorkspace").classList.remove("hidden");

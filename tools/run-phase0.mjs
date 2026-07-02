@@ -1,4 +1,4 @@
-// Phase 0 gate: run all subject verify scripts + cross-checks from repo root.
+// Phase 0 gate: run subject verify scripts from repo root.
 import { execSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -13,18 +13,10 @@ const steps = [
   ["earth", path.join(root, "地科會考作戰室"), "node tools/verify-data.mjs"],
   ["earth-smoke", path.join(root, "地科會考作戰室"), "node tools-smoke-test.mjs"],
   ["physics-chem-quizzes", path.join(root, "理化會考作戰室"), "node tools/verify-quizzes.js"],
-  ["physics-chem-archive", path.join(root, "理化會考作戰室"), "node tools/verify-archive.mjs"],
   ["biology", path.join(root, "生物會考作戰室"), "node tools/verify-data.mjs"],
   ["history", path.join(root, "歷史會考作戰室"), "node tools/verify-data.mjs"],
   ["geography", path.join(root, "地理會考作戰室"), "node tools/verify-data.mjs"],
   ["civics", path.join(root, "公民會考作戰室"), "node tools/verify-data.mjs"],
-  ["nature-crosscheck", path.join(root, "理化會考作戰室"), "node tools/cross-check-answers.mjs"],
-  ["social-crosscheck", root, "node tools/verify-social-archive-answers.mjs"],
-  ["en-reading-crosscheck", root, "node tools/verify-en-reading-archive.mjs"],
-  ["archive-gaps", root, "node tools/inventory-archive-gaps.mjs"],
-  ["nature-subject-audit", root, "node tools/audit-nature-subject.mjs"],
-  ["diagram-coverage", root, "node tools/verify-diagram-coverage.mjs"],
-  ["nature-archive-answers", root, "node tools/verify-nature-archive-answers.mjs"],
 ];
 
 const results = [];

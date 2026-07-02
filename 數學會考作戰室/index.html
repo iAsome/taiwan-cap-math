@@ -7,7 +7,7 @@
   <meta name="description" content="依台灣國中教育會考規格設計的數學全範圍講義、模擬考與近十年歷屆考卷入口。">
   <title>會考數學作戰室</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260702a">
+  <link rel="stylesheet" href="styles.css?v=20260703b">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要內容</a>
@@ -160,7 +160,7 @@
 
         <section class="view" id="view-analysis" aria-labelledby="analysisTitle">
           <div class="page-heading">
-            <div><p class="eyebrow">275 OFFICIAL ITEMS · 106–115</p><h1 id="analysisTitle">近十年會考數學逐題分析</h1><p>以官方題本為母體、官方《試題說明》為能力分類依據。每題只計一個主概念，確保統計可加總、可回查。</p></div>
+            <div><p class="eyebrow">275 OFFICIAL ITEMS · 106–115</p><h1 id="analysisTitle">近十年會考數學逐題分析</h1><p>以<a href="https://cap.rcpet.edu.tw/examination.html" target="_blank" rel="noopener">官方歷屆試題總頁</a>公布的題本為依據；逐題主概念為本站依官方題本整理之研究編碼（已凍結），官方題本來源見 <a href="https://cap.rcpet.edu.tw/examination.html" target="_blank" rel="noopener">官方歷屆試題總頁</a>。</p></div>
             <a class="secondary link-button" href="https://cap.rcpet.edu.tw/examination.html" target="_blank" rel="noopener">官方題本總頁 ↗</a>
           </div>
           <div class="analysis-stats" id="analysisStats"></div>
@@ -193,7 +193,7 @@
             <div><p class="eyebrow">OFFICIAL PAPERS · 106–115</p><h1 id="archiveTitle">近十年會考數學考卷館</h1><p>連到國中教育會考官方公布的數學題本、參考答案與試題說明。</p></div>
             <a class="secondary link-button" href="https://cap.rcpet.edu.tw/examination.html" target="_blank" rel="noopener">官方歷屆總頁 ↗</a>
           </div>
-          <div class="archive-note"><strong>收錄範圍</strong><span>115 年（2026）往回至 106 年（2017），共 10 屆、全數題目（含原僅存在官方 PDF 圖片中的圖表題）皆已收錄。點「進入考試」可在與模擬考相同的介面中作答官方歷屆題目，交卷後立即看逐題詳解。</span></div>
+          <div class="archive-note"><strong>收錄範圍</strong><span>115 年（2026）往回至 106 年（2017），共 10 屆、全數題目（含原僅存在官方 PDF 圖片中的圖表題）皆已收錄。官方 PDF 可預覽與下載。</span></div>
           <div class="archive-grid" id="archiveGrid"></div>
           <section class="methodology">
             <div><p class="eyebrow">SOURCES & METHOD</p><h2>資料來源與使用邊界</h2></div>
@@ -204,17 +204,25 @@
               <article><span>04</span><h3>課綱依據</h3><p>講義以國家教育研究院公布之十二年國教課程綱要為上位依據，再依國中常見教學順序整理。</p><a href="https://www.naer.edu.tw/PageSyllabus?fid=52" target="_blank" rel="noopener">國教課綱總頁 ↗</a></article>
             </div>
           </section>
+        <section class="view" id="view-paper" aria-labelledby="paperViewTitle">
+          <div class="page-heading">
+            <div><p class="eyebrow">OFFICIAL PDF</p><h1 id="paperViewTitle">官方考卷</h1><p id="paperViewDesc">預覽與下載官方公布的題本、答案與試題說明 PDF。</p></div>
+            <button class="secondary" data-view="archive">← 返回考卷館</button>
+          </div>
+          <div id="paperViewer" class="paper-viewer"></div>
+        </section>
+
         </section>
       </main>
       <footer><span>會考數學作戰室 · 公開版</span><span>生成題為原創練習，非官方預測題；正式資訊以會考官方公告為準。</span></footer>
     </div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="data.js?v=20260702a"></script>
-  <script src="analysis-data.js?v=20260702a"></script>
-  <script src="quiz-taxonomy.js?v=20260702a"></script>
-  <script src="questions.js?v=20260702a"></script>
-  <script src="archive-exams.js?v=20260702a"></script>
-  <script src="app.js?v=20260702a"></script>
+  <script src="data.js?v=20260703b"></script>
+  <script src="analysis-data.js?v=20260703b"></script>
+  <script src="quiz-taxonomy.js?v=20260703b"></script>
+  <script src="questions.js?v=20260703b"></script>
+
+  <script src="app.js?v=20260703b"></script>
 </body>
 </html>

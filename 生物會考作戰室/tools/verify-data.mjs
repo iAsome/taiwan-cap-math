@@ -9,12 +9,12 @@ const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const sandbox = { window: {}, console, Date, Math };
 vm.createContext(sandbox);
 
-for (const file of ["data.js", "quiz-taxonomy.js", "questions.js", "analysis-data.js", "archive-exams.js"]) {
+for (const file of ["data.js", "quiz-taxonomy.js", "questions.js", "analysis-data.js"]) {
   const code = fs.readFileSync(path.join(root, file), "utf8");
   vm.runInContext(code, sandbox, { filename: file });
 }
 
-const { BIO_DATA, QUIZ_TAXONOMY, EXAM_ENGINE, BIO_ANALYSIS, ARCHIVE_EXAMS } = sandbox.window;
+const { BIO_DATA, QUIZ_TAXONOMY, EXAM_ENGINE, BIO_ANALYSIS } = sandbox.window;
 const errors = [];
 const check = (cond, msg) => { if (!cond) errors.push(msg); };
 
@@ -48,37 +48,20 @@ for (const blueprint of EXAM_ENGINE.quizCatalog) {
 const catalogIds = new Set(EXAM_ENGINE.quizCatalog.map(b => b.id));
 Object.keys(QUIZ_TAXONOMY).forEach(quizId => check(catalogIds.has(quizId), `QUIZ_TAXONOMY 的 ${quizId} 不存在於 quizCatalog`));
 
-// 5. 考卷典藏：unitId 有效、四選項、answer 索引有效
-Object.entries(ARCHIVE_EXAMS).forEach(([year, exam]) => {
-  exam.questions.forEach((q, i) => {
-    check(unitIds.includes(q.unitId), `archive-exams ${year} 第 ${i + 1} 題 unitId=${q.unitId} 不存在於 BIO_DATA`);
-    check(Array.isArray(q.choices) && q.choices.length === 4, `archive-exams ${year} 第 ${i + 1} 題選項數應為 4`);
-    check(q.answer >= 0 && q.answer < 4, `archive-exams ${year} 第 ${i + 1} 題 answer 索引超出範圍`);
-    check(Array.isArray(q.steps) && q.steps.length > 0, `archive-exams ${year} 第 ${i + 1} 題缺少 steps`);
-    check(!!q.tip && !!q.trap, `archive-exams ${year} 第 ${i + 1} 題缺少 tip 或 trap`);
-  });
+// 5. 凍結逐題分析（官方題本見 cap.rcpet.edu.tw/examination.html）
+Object.entries(BIO_ANALYSIS.primaryUnits || {}).forEach(([year, unitSeq]) => {
+  check(Array.isArray(unitSeq) && unitSeq.length > 0, `${year} 年 primaryUnits 為空`);
+  unitSeq.forEach((unitId, i) => check(unitIds.includes(unitId), `${year} 年第 ${i + 1} 題 unitId=${unitId} 無效`));
 });
-
-// 6. analysis-data 的 primaryUnits[year] 必須與 archive-exams[year] 逐題對應（數量與 unitId 順序一致）
-Object.entries(BIO_ANALYSIS.primaryUnits).forEach(([year, unitSeq]) => {
-  const exam = ARCHIVE_EXAMS[year];
-  check(!!exam, `analysis-data primaryUnits 有 ${year} 年，但 archive-exams 沒有對應年度`);
-  if (!exam) return;
-  check(unitSeq.length === exam.questions.length,
-    `${year} 年 primaryUnits 長度(${unitSeq.length}) 與 archive-exams 題數(${exam.questions.length}) 不一致`);
-  unitSeq.forEach((unitId, i) => {
-    const actual = exam.questions[i]?.unitId;
-    check(unitId === actual, `${year} 年第 ${i + 1} 題 primaryUnits 記錄 unitId=${unitId}，但 archive-exams 實際 unitId=${actual}`);
-  });
-});
-Object.keys(ARCHIVE_EXAMS).forEach(year => check(!!BIO_ANALYSIS.primaryUnits[year], `archive-exams 有 ${year} 年，但 analysis-data primaryUnits 沒有登記`));
+unitIds.forEach(id => check(!!BIO_ANALYSIS.domainByUnit?.[id], `domainByUnit 缺少 unit ${id}`));
+check(Object.keys(BIO_ANALYSIS.primaryUnits || {}).length === 10, "BIO_ANALYSIS 應涵蓋 10 年 primaryUnits");
 
 if (errors.length) {
   console.error(`發現 ${errors.length} 個問題：`);
   errors.forEach(e => console.error(" -", e));
   process.exit(1);
 } else {
-  const years = Object.keys(ARCHIVE_EXAMS).sort();
-  const totalArchiveQ = Object.values(ARCHIVE_EXAMS).reduce((s, e) => s + e.questions.length, 0);
-  console.log(`全部檢查通過：15 個單元、${EXAM_ENGINE.quizCatalog.length} 份小考、模考 30 題、考卷典藏 ${years.length} 年（${years.join("、")}）共 ${totalArchiveQ} 題。`);
+  const years = Object.keys(BIO_ANALYSIS.primaryUnits).sort();
+  const totalArchiveQ = years.reduce((s, y) => s + BIO_ANALYSIS.primaryUnits[y].length, 0);
+  console.log(`全部檢查通過：15 個單元、${EXAM_ENGINE.quizCatalog.length} 份小考、模考 30 題、凍結逐題分析 ${years.length} 年（${years.join("、")}）共 ${totalArchiveQ} 題。`);
 }
