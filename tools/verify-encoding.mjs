@@ -10,8 +10,12 @@ for (const rel of files) {
   const text = fs.readFileSync(path.join(root, rel), "utf8");
   const title = (text.match(/<title>([^<]{0,80})/) || [])[1] || "";
   const hasCjk = /[\u4e00-\u9fff]/.test(title);
-  const hasMojibake = /[�]/.test(text.slice(0, 2000)) || /\?[\u0080-\u00ff]/.test(title) || /Ã|â€/.test(text.slice(0, 2000));
-  if (!hasCjk || hasMojibake || !/<\/title>/.test(text)) bad.push({ rel, title: title.slice(0, 60), hasCjk, hasMojibake });
+  const hasMojibake = /[�]/.test(text.slice(0, 4000))
+    || /\?�/.test(text.slice(0, 4000))
+    || /Ã|â€/.test(text.slice(0, 4000))
+    || /[^\u0000-\u007f][\u0080-\u00bf]/.test(title);
+  const hasValidTitleTag = /<title>[^<]+<\/title>/.test(text);
+  if (!hasCjk || hasMojibake || !hasValidTitleTag) bad.push({ rel, title: title.slice(0, 60), hasCjk, hasMojibake, hasValidTitleTag });
 }
 
 if (bad.length) {
