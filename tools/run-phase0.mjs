@@ -8,6 +8,7 @@ const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const steps = [
   ["hub-links", root, "node tools/verify-hub-links.js"],
   ["encoding", root, "node tools/verify-encoding.mjs"],
+  ["pages-size", root, "node tools/verify-pages-size.mjs"],
   ["app-bootstrap", root, "node tools/verify-app-bootstrap.mjs"],
   ["chinese", path.join(root, "國文會考作戰室"), "node tools/verify-chapter-quizzes.js"],
   ["math", path.join(root, "數學會考作戰室"), "node tools/verify-chapter-quizzes.js"],

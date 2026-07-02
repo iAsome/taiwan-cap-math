@@ -265,9 +265,9 @@ window.HISTORY_DATA = (() => {
   ].map(([year, western]) => ({
     year, western,
     page: `https://cap.rcpet.edu.tw/exam/${year}/${year}exam.html`,
-    paper: `official-data/${year}/${year}-exam.pdf`,
-    answer: `official-data/${year}/${year}-answer.pdf`,
-    guide: `official-data/${year}/${year}-guide.pdf`
+    paper: `../shared/social-official-data/${year}/${year}-exam.pdf`,
+    answer: `../shared/social-official-data/${year}/${year}-answer.pdf`,
+    guide: `../shared/social-official-data/${year}/${year}-guide.pdf`
   }));
 
   const sourcePolicy = [
