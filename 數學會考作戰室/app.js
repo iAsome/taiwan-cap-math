@@ -122,49 +122,70 @@
     const question = record.exam.questions[questionIndex];
     const rounds = (record.corrections?.[questionIndex]?.rounds || 0) + 1;
     const seed = `${record.exam.seed || record.id}-${questionIndex}-${rounds}`;
+    const excludeTexts = [question.text];
     let subQuestions;
     try {
       subQuestions = question.taxonomyQuizId && question.taxonomyTopicId
-        ? window.EXAM_ENGINE.generateTopicDrill(question.taxonomyQuizId, question.taxonomyTopicId, seed, 2)
-        : window.EXAM_ENGINE.generateUnitDrill(question.unitId, seed, 2, record.exam.level || 2);
+        ? window.EXAM_ENGINE.generateTopicDrill(question.taxonomyQuizId, question.taxonomyTopicId, seed, 2, excludeTexts)
+        : window.EXAM_ENGINE.generateUnitDrill(question.unitId, seed, 2, record.exam.level || 2, excludeTexts);
     } catch (error) {
       toast(error.message || "無法產生訂正練習");
       return;
     }
-    state.paperReview.drill = { qIndex: questionIndex, subQuestions, subAnswers: [null, null], rounds };
+    state.paperReview.drill = { qIndex: questionIndex, subQuestions, subAnswers: [null, null], rounds, submitted: false };
     renderExam();
     $(`#question-${questionIndex + 1}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  function submitTopicDrill() {
+  function submitTopicDrillAnswers() {
     const drill = state.paperReview.drill;
     const record = getPaperRecord(state.paperReview.recordId);
-    if (!drill || !record) return;
+    if (!drill || !record || drill.submitted) return;
+    if (drill.subAnswers.some(answer => answer === null)) {
+      toast("請先完成兩題訂正練習的作答");
+      return;
+    }
+    drill.submitted = true;
     const passed = drill.subQuestions.every((question, index) => drill.subAnswers[index] === question.answer);
-    const corrections = { ...(record.corrections || {}), [drill.qIndex]: { passed, rounds: drill.rounds } };
-    updatePaperRecord(record.id, { corrections });
-    state.paperReview.drill = null;
+    if (passed) {
+      const corrections = { ...(record.corrections || {}), [drill.qIndex]: { passed: true, rounds: drill.rounds } };
+      updatePaperRecord(record.id, { corrections });
+      renderMyPapers();
+      toast("訂正觀念完成，這題已標記為已訂正。");
+    } else {
+      toast("還有題目答錯，請先看詳解後再練一次。");
+    }
     renderExam();
-    renderMyPapers();
-    toast(passed ? "訂正觀念完成，這題已標記為已訂正。" : "還有題目沒答對，再試一次或重新開始訂正。");
   }
 
   function drillHtml(questionIndex) {
     const drill = state.paperReview.drill;
     if (!drill || drill.qIndex !== questionIndex) return "";
-    return `<div class="topic-drill"><div class="topic-drill-head"><strong>訂正觀念</strong><span>同題型再練 2 題，全對才算訂正完成</span></div>${drill.subQuestions.map((question, subIndex) => {
+    const ready = drill.subAnswers.every(answer => answer !== null);
+    const passed = drill.submitted && drill.subQuestions.every((question, index) => drill.subAnswers[index] === question.answer);
+    const questionsHtml = drill.subQuestions.map((question, subIndex) => {
       const choices = question.choices.map((choice, choiceIndex) => {
         const selected = drill.subAnswers[subIndex] === choiceIndex;
-        const correct = selected && choiceIndex === question.answer;
-        const wrong = selected && choiceIndex !== question.answer;
-        return `<button type="button" class="choice ${selected ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-drill-choice="${subIndex}:${choiceIndex}"><span class="choice-letter">${letters[choiceIndex]}</span><span>${mathText(choice)}</span></button>`;
+        const reveal = drill.submitted;
+        const correct = reveal && choiceIndex === question.answer;
+        const wrong = reveal && selected && choiceIndex !== question.answer;
+        const disabled = reveal ? " disabled" : "";
+        return `<button type="button" class="choice ${selected ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-drill-choice="${subIndex}:${choiceIndex}"${disabled}><span class="choice-letter">${letters[choiceIndex]}</span><span>${mathText(choice)}</span></button>`;
       }).join("");
-      return `<article class="drill-question"><p class="eyebrow">加練 ${subIndex + 1}</p><div class="question-text">${nl(question.text)}</div><div class="choices">${choices}</div></article>`;
-    }).join("")}<div class="topic-drill-actions"><button type="button" class="primary" data-drill-submit>完成訂正</button><button type="button" class="secondary" data-drill-cancel>取消</button></div></div>`;
+      const wrongAnswer = drill.submitted && drill.subAnswers[subIndex] !== question.answer;
+      const solution = wrongAnswer ? solutionHtml(question, subIndex) : "";
+      return `<article class="drill-question"><p class="eyebrow">加練 ${subIndex + 1}</p><div class="question-text">${nl(question.text)}</div><div class="choices">${choices}</div>${solution}</article>`;
+    }).join("");
+    const actions = drill.submitted
+      ? passed
+        ? `<button type="button" class="secondary" data-drill-close>關閉</button>`
+        : `<button type="button" class="secondary" data-drill-retry>再練同題型</button><button type="button" class="secondary" data-drill-close>關閉</button>`
+      : `<button type="button" class="primary" data-drill-submit ${ready ? "" : "disabled"}>提交訂正</button><button type="button" class="secondary" data-drill-cancel>取消</button>`;
+    return `<div class="topic-drill"><div class="topic-drill-head"><strong>訂正觀念</strong><span>同觀念再練 2 題不同題目，全對才算訂正完成</span></div>${questionsHtml}<div class="topic-drill-actions">${actions}</div></div>`;
   }
 
   function correctionBadgeHtml(record, index) {
-    if (!record.corrections?.[index]?.passed) return "";
+    if (!record?.corrections?.[index]?.passed) return "";
     return `<span class="correction-badge">已訂正</span>`;
   }
 
@@ -652,7 +673,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const formulaSummary = wrongOnly && reviewRecord ? [...new Set(visibleIndexes.map(index => state.exam.questions[index].formula).filter(Boolean))] : [];
     const qHtml = visibleIndexes.map((index, displayIndex) => {
       const q = state.exam.questions[index];
-      const unit = units.find(item => item.id === q.unitId);
+      const unit = units.find(item => item.id === q.unitId) || { grade: 7, title: "數學" };
       const choices = q.type === "mc" ? `<div class="choices">${q.choices.map((choice, ci) => {
         const selected = state.answers[index] === ci;
         const correct = state.submitted && ci === q.answer;
@@ -726,11 +747,15 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     }));
     $$("[data-start-drill]", $("#paper")).forEach(button => button.addEventListener("click", () => startTopicDrill(Number(button.dataset.startDrill))));
     $$("[data-drill-choice]", $("#paper")).forEach(button => button.addEventListener("click", () => {
+      const drill = state.paperReview.drill;
+      if (!drill || drill.submitted) return;
       const [subIndex, choiceIndex] = button.dataset.drillChoice.split(":").map(Number);
-      state.paperReview.drill.subAnswers[subIndex] = choiceIndex;
+      drill.subAnswers[subIndex] = choiceIndex;
       renderExam();
     }));
-    $$("[data-drill-submit]", $("#paper")).forEach(button => button.addEventListener("click", submitTopicDrill));
+    $$("[data-drill-submit]", $("#paper")).forEach(button => button.addEventListener("click", submitTopicDrillAnswers));
+    $$("[data-drill-retry]", $("#paper")).forEach(button => button.addEventListener("click", () => startTopicDrill(state.paperReview.drill.qIndex)));
+    $$("[data-drill-close]", $("#paper")).forEach(button => button.addEventListener("click", () => { state.paperReview.drill = null; renderExam(); }));
     $$("[data-drill-cancel]", $("#paper")).forEach(button => button.addEventListener("click", () => { state.paperReview.drill = null; renderExam(); }));
     $$(".question", $("#paper")).forEach(article => {
       const observer = new IntersectionObserver(entries => { if (entries[0].isIntersecting) { state.currentQuestion = Number(article.dataset.question); renderQuestionGrid(); } }, { rootMargin: "-25% 0px -60%" });

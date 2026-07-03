@@ -3,7 +3,8 @@ window.EXAM_ENGINE = (() => {
   const quizTaxonomy = window.QUIZ_TAXONOMY || {};
 
   function rngFromSeed(seed) {
-    let a = (Number(seed) || 1) >>> 0;
+    let a = typeof seed === "number" ? seed : String(seed).split("").reduce((acc, c) => (acc * 31 + c.charCodeAt(0)) >>> 0, 7);
+    a = (Number(a) || 1) >>> 0;
     return function () {
       a |= 0; a = a + 0x6D2B79F5 | 0;
       let t = Math.imul(a ^ a >>> 15, 1 | a);
@@ -320,35 +321,67 @@ window.EXAM_ENGINE = (() => {
     });
   }
 
-  function generateTopicDrill(quizId, topicId, seed, count = 2) {
+  function drillQuestionSignature(question) {
+    return [question.text, question.choices?.join("|") || question.answer].join("§");
+  }
+
+  function generateTopicDrill(quizId, topicId, seed, count = 2, excludeTexts = []) {
     const topic = taxonomyTopics(quizId).find(item => item.id === topicId);
     if (!topic) throw new Error(`找不到題型 ${quizId}/${topicId}`);
     const chapter = chapterQuizzes.find(item => item.id === quizId);
-    return Array.from({ length: count }, (_, index) => {
-      const qr = rngFromSeed(`${seed}-${index}-drill`);
-      const wrapped = {
-        quizId,
-        topicId: topic.id,
-        title: topic.title,
-        section: topic.section,
-        template: topic.template,
-        unitIds: chapter ? [...chapter.unitIds] : [1],
-        unitId: chapter?.unitIds[0] || 1
-      };
-      const question = questionFromTopic(qr, wrapped, index, "procedure");
-      question.isDrill = true;
-      return question;
-    });
+    const excluded = new Set(excludeTexts.map(text => String(text)));
+    const picked = [];
+    for (let slot = 0; slot < count; slot++) {
+      let question = null;
+      for (let attempt = 0; attempt < 20; attempt++) {
+        const qr = rngFromSeed(`${seed}-${slot}-${attempt}-drill`);
+        const wrapped = {
+          quizId,
+          topicId: topic.id,
+          title: topic.title,
+          section: topic.section,
+          template: topic.template,
+          unitIds: chapter ? [...chapter.unitIds] : [1],
+          unitId: chapter?.unitIds[0] || 1
+        };
+        const candidate = questionFromTopic(qr, wrapped, slot, "procedure");
+        candidate.isDrill = true;
+        const signature = drillQuestionSignature(candidate);
+        if (excluded.has(candidate.text) || excluded.has(signature)) continue;
+        if (picked.some(item => drillQuestionSignature(item) === signature)) continue;
+        question = candidate;
+        excluded.add(candidate.text);
+        excluded.add(signature);
+        break;
+      }
+      if (!question) throw new Error(`無法產生第 ${slot + 1} 題訂正練習`);
+      picked.push(question);
+    }
+    return picked;
   }
 
-  function generateUnitDrill(unitId, seed, count = 2, level = 2) {
-    return Array.from({ length: count }, (_, index) => {
-      const qr = rngFromSeed(`${seed}-${index}-unit-drill`);
-      const question = makeQuizUnitQuestion(qr, unitId, level);
-      question.taxonomyKey = `legacy/u${unitId}`;
-      question.isDrill = true;
-      return question;
-    });
+  function generateUnitDrill(unitId, seed, count = 2, level = 2, excludeTexts = []) {
+    const excluded = new Set(excludeTexts.map(text => String(text)));
+    const picked = [];
+    for (let slot = 0; slot < count; slot++) {
+      let question = null;
+      for (let attempt = 0; attempt < 20; attempt++) {
+        const qr = rngFromSeed(`${seed}-${slot}-${attempt}-unit-drill`);
+        const candidate = makeQuizUnitQuestion(qr, unitId, level);
+        candidate.taxonomyKey = `legacy/u${unitId}`;
+        candidate.isDrill = true;
+        const signature = drillQuestionSignature(candidate);
+        if (excluded.has(candidate.text) || excluded.has(signature)) continue;
+        if (picked.some(item => drillQuestionSignature(item) === signature)) continue;
+        question = candidate;
+        excluded.add(candidate.text);
+        excluded.add(signature);
+        break;
+      }
+      if (!question) throw new Error(`無法產生第 ${slot + 1} 題訂正練習`);
+      picked.push(question);
+    }
+    return picked;
   }
 
   const termQuizzes = [
