@@ -9,12 +9,91 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 6,
+    "questionCount": 17,
     "minutes": 25,
     "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "統計圖表",
+      "topics": [
+        {
+          "id": "contingency-frequency-table",
+          "title": "列聯表與次數分配表"
+        },
+        {
+          "id": "histogram-frequency-polyline",
+          "title": "次數分配直方圖與次數分配折線圖"
+        },
+        {
+          "id": "cumulative-relative-frequency",
+          "title": "累積次數和相對次數與累積相對次數"
+        },
+        {
+          "id": "cumulative-frequency-tables",
+          "title": "累積次數分配表和相對次數分配表與累積相對次數分配表"
+        },
+        {
+          "id": "cumulative-frequency-polyline-charts",
+          "title": "累積次數分配折線圖和相對次數分配折線圖與累積相對次數分配折線圖"
+        },
+        {
+          "id": "contingency-table-interpret",
+          "title": "列聯表的製作與判讀"
+        },
+        {
+          "id": "pie-chart-interpret",
+          "title": "圓形圖的判讀"
+        },
+        {
+          "id": "histogram-interpret",
+          "title": "直方圖的判讀"
+        },
+        {
+          "id": "line-chart-interpret",
+          "title": "折線圖的判讀"
+        },
+        {
+          "id": "cross-chart-interpret",
+          "title": "兩種統計圖表的交互判讀"
+        }
+      ]
+    },
+    {
+      "title": "平均數、中位數與眾數",
+      "topics": [
+        {
+          "id": "mean",
+          "title": "平均數"
+        },
+        {
+          "id": "median",
+          "title": "中位數"
+        },
+        {
+          "id": "mode",
+          "title": "眾數"
+        },
+        {
+          "id": "mean-median-mode",
+          "title": "平均數、中位數與眾數"
+        },
+        {
+          "id": "statistics-from-chart",
+          "title": "由統計圖表求統計量"
+        },
+        {
+          "id": "identify-statistic-group",
+          "title": "由統計圖表判別統計量組別"
+        },
+        {
+          "id": "statistics-application",
+          "title": "統計量的應用"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 10,

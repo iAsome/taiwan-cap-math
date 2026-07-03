@@ -2,7 +2,7 @@
 
 - Quiz ID: g7-2-c4
 - Units: 一元一次不等式
-- Questions: 8
+- Questions: 17
 - Minutes: 25
 - Official codes: A-7-8
 

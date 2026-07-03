@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-1-c2
 - Units: 平方根、根式與畢氏定理
-- Questions: 8
+- Questions: 32
 - Minutes: 25
 - Official codes: N-8-1～N-8-2、S-8-6
 

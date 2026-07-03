@@ -9,7 +9,7 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 17,
+    "questionCount": 30,
     "minutes": 25,
     "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
@@ -18,6 +18,18 @@
     {
       "title": "正負數、數線與絕對值",
       "topics": [
+        {
+          "id": "number-classification",
+          "title": "數的分類"
+        },
+        {
+          "id": "number-line",
+          "title": "數線"
+        },
+        {
+          "id": "opposite-and-absolute-overview",
+          "title": "相反數與絕對值"
+        },
         {
           "id": "signed-number-concept",
           "title": "正負數的概念"
@@ -44,16 +56,40 @@
       "title": "數的四則運算與數線上兩點間的距離",
       "topics": [
         {
+          "id": "addition-operation",
+          "title": "加法運算"
+        },
+        {
+          "id": "subtraction-operation",
+          "title": "減法運算"
+        },
+        {
+          "id": "multiplication-division-operation",
+          "title": "乘除運算"
+        },
+        {
+          "id": "operation-rules",
+          "title": "運算規律"
+        },
+        {
+          "id": "four-operations",
+          "title": "四則運算"
+        },
+        {
+          "id": "distance-and-midpoint",
+          "title": "數線上兩點間的距離與中點坐標"
+        },
+        {
           "id": "integer-arithmetic",
           "title": "數的四則運算"
         },
         {
           "id": "distributive-law",
-          "title": "分配律的運用"
+          "title": "分配律的應用"
         },
         {
           "id": "commutative-associative-law",
-          "title": "交換律、結合律的應用"
+          "title": "交換律和結合律的應用"
         },
         {
           "id": "operation-order",
@@ -61,7 +97,7 @@
         },
         {
           "id": "absolute-difference-distance",
-          "title": "｜a-b｜幾何意義的應用"
+          "title": "｜a－b｜幾何意義的應用"
         },
         {
           "id": "arithmetic-application",
@@ -73,16 +109,20 @@
       "title": "指數記法、指數律與科學記號",
       "topics": [
         {
-          "id": "exponent-arithmetic",
-          "title": "含有指數的四則運算"
+          "id": "exponent-notation",
+          "title": "指數記法與性質"
         },
         {
-          "id": "exponent-law-calculation",
-          "title": "利用指數律做計算"
+          "id": "zero-negative-exponent",
+          "title": "a⁰與10⁻ᵐ"
         },
         {
-          "id": "exponent-size-comparison",
-          "title": "利用指數律比較數的大小"
+          "id": "exponent-comparison",
+          "title": "指數的比較大小"
+        },
+        {
+          "id": "exponent-laws",
+          "title": "指數律"
         },
         {
           "id": "scientific-notation",
@@ -95,6 +135,18 @@
         {
           "id": "scientific-notation-comparison",
           "title": "科學記號與數的比較大小"
+        },
+        {
+          "id": "exponent-arithmetic",
+          "title": "含有指數的四則運算"
+        },
+        {
+          "id": "exponent-law-calculation",
+          "title": "利用指數律做計算"
+        },
+        {
+          "id": "exponent-size-comparison",
+          "title": "利用指數律比較數的大小"
         }
       ]
     }

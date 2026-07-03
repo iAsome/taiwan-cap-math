@@ -2,7 +2,7 @@
 
 - Quiz ID: g7-2-c1
 - Units: 二元一次聯立方程式
-- Questions: 8
+- Questions: 20
 - Minutes: 25
 - Official codes: A-7-4～A-7-5
 

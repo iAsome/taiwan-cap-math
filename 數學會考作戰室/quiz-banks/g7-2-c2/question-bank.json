@@ -9,12 +9,103 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 6,
+    "questionCount": 20,
     "minutes": 25,
     "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "直角坐標平面",
+      "topics": [
+        {
+          "id": "coordinate-plane",
+          "title": "直角坐標平面"
+        },
+        {
+          "id": "point-coordinates",
+          "title": "坐標平面上點的坐標"
+        },
+        {
+          "id": "distance-to-axes",
+          "title": "點到兩軸的距離"
+        },
+        {
+          "id": "point-translation",
+          "title": "點的平移"
+        },
+        {
+          "id": "quadrant",
+          "title": "象限"
+        },
+        {
+          "id": "point-and-axes-distances",
+          "title": "點與兩軸的距離"
+        },
+        {
+          "id": "coincident-points",
+          "title": "點的重合"
+        },
+        {
+          "id": "point-position-identification",
+          "title": "點的位置的判別"
+        },
+        {
+          "id": "polygon-area-from-points",
+          "title": "點所連成圖形的面積"
+        }
+      ]
+    },
+    {
+      "title": "二元一次方程式的圖形",
+      "topics": [
+        {
+          "id": "linear-equation-graph",
+          "title": "二元一次方程式的圖形"
+        },
+        {
+          "id": "linear-graph-type",
+          "title": "二元一次方程式圖形的類型"
+        },
+        {
+          "id": "line-through-two-points",
+          "title": "求過相異兩點的直線方程式"
+        },
+        {
+          "id": "linear-system-graph",
+          "title": "二元一次聯立方程式的圖形"
+        },
+        {
+          "id": "point-on-line-evaluate",
+          "title": "點在直線上的求值問題"
+        },
+        {
+          "id": "line-axis-intercepts",
+          "title": "直線與兩軸的交點"
+        },
+        {
+          "id": "find-line-equation",
+          "title": "求直線方程式"
+        },
+        {
+          "id": "line-equation-application",
+          "title": "求直線方程式與應用"
+        },
+        {
+          "id": "two-lines-intersection",
+          "title": "兩直線相交的問題"
+        },
+        {
+          "id": "system-graph-evaluate",
+          "title": "聯立方程式圖形的求值問題"
+        },
+        {
+          "id": "graph-quadrant-identification",
+          "title": "方程式圖形與象限的判別"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 7,
