@@ -390,14 +390,23 @@ input:focus, select:focus, textarea:focus { border-color: var(--green); box-shad
 .paper-history-stats strong { display: block; font-family: Georgia, serif; font-size: 2rem; }
 .paper-history-stats span { color: var(--muted); font-size: .66rem; }
 .paper-history-list { max-width: 1260px; display: grid; gap: 10px; margin: 0 auto; }
-.paper-history-card { display: grid; grid-template-columns: minmax(0, 1fr) 84px; gap: 14px; border: 1px solid #cbd4ce; border-radius: 12px; background: var(--paper); padding: 18px; }
+.paper-history-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; border: 1px solid #cbd4ce; border-radius: 12px; background: var(--paper); padding: 18px; }
 .paper-history-card h3 { margin-bottom: 6px; }
 .paper-history-card small { color: var(--muted); font-size: .65rem; }
 .paper-history-card .missed-units { grid-column: 1 / -1; }
-.paper-history-card button { width: fit-content; grid-column: 1 / -1; }
-.paper-history-score { width: 76px; height: 76px; display: grid; place-items: center; align-content: center; border-radius: 50%; color: white; background: var(--green); }
-.paper-history-score strong { font-family: Georgia, serif; font-size: 1.7rem; line-height: 1; }
-.paper-history-score span { font-size: .6rem; }
+.paper-history-actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px; }
+.paper-history-score { min-width: 92px; display: grid; gap: 8px; align-content: start; justify-items: center; padding: 10px 12px; border-radius: 12px; color: white; background: var(--green); }
+.paper-history-score strong { font-family: Georgia, serif; font-size: 1.35rem; line-height: 1; display: block; }
+.paper-history-score span { font-size: .58rem; display: block; text-align: center; }
+.correction-badge { justify-self: end; align-self: center; padding: 4px 8px; border-radius: 999px; background: #1f6b57; color: #fff; font-size: .62rem; white-space: nowrap; }
+.question-actions { display: flex; justify-content: flex-end; margin-top: 12px; }
+.topic-drill { margin-top: 14px; padding: 14px; border: 1px dashed #b8c5be; border-radius: 10px; background: rgba(255,253,248,.72); }
+.topic-drill-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; margin-bottom: 10px; }
+.topic-drill-head span { color: var(--muted); font-size: .68rem; }
+.drill-question + .drill-question { margin-top: 12px; padding-top: 12px; border-top: 1px solid #d8e0db; }
+.topic-drill-actions { display: flex; gap: 8px; margin-top: 12px; }
+.paper-review-banner, .paper-formula-banner { max-width: 1260px; margin: 0 auto 14px; padding: 14px 16px; border: 1px solid #cbd4ce; border-radius: 10px; background: var(--paper); }
+.paper-formula-banner .math-line { display: block; margin-top: 6px; }
 .paper-history-empty { min-height: 340px; display: grid; place-items: center; align-content: center; gap: 10px; border: 1px dashed #b8c5be; border-radius: 12px; background: rgba(255,253,248,.58); text-align: center; }
 .paper-history-empty p { color: var(--muted); }
 

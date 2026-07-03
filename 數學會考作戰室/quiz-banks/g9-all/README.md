@@ -2,7 +2,7 @@
 
 - Quiz ID: g9-all
 - Units: 資料分布、四分位數與盒狀圖 / 比例線段、縮放與相似形 / 圓、弧、弦與圓周角 / 幾何證明與三角形心 / 二次函數與拋物線 / 機率、樣本空間與抽樣 / 立體圖形、表面積與體積
-- Questions: 12
+- Questions: 25
 - Minutes: 25
 - Official codes: N-9、F-9、D-9、S-9
 

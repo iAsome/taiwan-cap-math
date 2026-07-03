@@ -10,7 +10,7 @@
   <meta name="description" content="依台灣國中教育會考規格設計的數學全範圍講義、模擬考與近十年歷屆考卷入口。">
   <title>會考數學作戰室</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260706g">
+  <link rel="stylesheet" href="styles.css?v=20260706h">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要內容</a>
@@ -33,7 +33,7 @@
       </nav>
       <div class="sidebar-note">
         <span class="status-dot"></span>
-        <div><strong>115 年規格</strong><small>25 選擇＋2 非選｜80 分</small></div>
+        <div><strong>25 題選擇</strong><small>練習模擬｜80 分</small></div>
       </div>
     </aside>
 
@@ -59,9 +59,9 @@
                 <button class="secondary" data-view="handbook">打開全冊講義</button>
               </div>
               <div class="hero-facts" aria-label="考試規格">
-                <div><strong>25</strong><span>選擇題</span></div>
-                <div><strong>2</strong><span>非選擇題</span></div>
+                <div><strong>25</strong><span>選擇題模擬</span></div>
                 <div><strong>80</strong><span>分鐘</span></div>
+                <div><strong>278</strong><span>細分題型池</span></div>
                 <div><strong>275</strong><span>十年逐題分析</span></div>
               </div>
             </div>
@@ -82,7 +82,7 @@
               <p>沒有藏在多層選單裡。數學已經夠難了，網站不必。</p>
             </div>
             <div class="feature-grid">
-              <button class="feature-card coral" data-view="exam"><span class="feature-icon">✎</span><small>EXAM</small><h3>全範圍模擬考</h3><p>依 115 年規格生成，含計時、答案卡、非選擇題作答區與逐題詳解。</p><b>開始生成 →</b></button>
+              <button class="feature-card coral" data-view="exam"><span class="feature-icon">✎</span><small>EXAM</small><h3>全範圍模擬考</h3><p>練習用 25 題選擇模擬，依題型池與十年主概念權重抽樣，含計時、答案卡與逐題詳解。</p><b>開始生成 →</b></button>
               <button class="feature-card green" data-view="handbook"><span class="feature-icon">▤</span><small>HANDBOOK</small><h3>國一到國三講義</h3><p>28 單元的觀念澄清、公式推導、解題流程、陷阱與單元小測。</p><b>閱讀講義 →</b></button>
               <button class="feature-card blue" data-view="atlas"><span class="feature-icon">◇</span><small>ATLAS</small><h3>題型與技巧地圖</h3><p>六大命題主題、閱讀情境題、圖表題與非選題得分策略。</p><b>查看地圖 →</b></button>
               <button class="feature-card gold" data-view="archive"><span class="feature-icon">◷</span><small>ARCHIVE</small><h3>近十年官方考卷</h3><p>106–115 年數學題本、參考答案與官方試題說明集中入口。</p><b>打開考卷館 →</b></button>
@@ -97,7 +97,7 @@
 
         <section class="view" id="view-exam" aria-labelledby="examTitle">
           <div class="page-heading exam-heading">
-            <div><p class="eyebrow" id="examEyebrow">FULL MOCK EXAM</p><h1 id="examTitle">會考數學模擬考</h1><p id="examDescription">25 題四選一＋2 題非選擇題，共 80 分鐘。依 115 年官方能力層次與 106–115 年主題分布組卷。</p></div>
+            <div><p class="eyebrow" id="examEyebrow">FULL MOCK EXAM</p><h1 id="examTitle">會考數學模擬考</h1><p id="examDescription">練習用 25 題選擇模擬，共 80 分鐘。依題型池與 106–115 年主概念權重抽樣，不含非選擇題。</p></div>
             <div class="exam-controls" id="examSetup">
               <label>卷別種子<input id="seedInput" type="number" min="1" max="999999" value="11527"></label>
               <label>數值強度<select id="levelSelect"><option value="1">穩固基礎</option><option value="2" selected>會考平衡</option><option value="3">高鑑別度</option></select></label>
@@ -106,7 +106,7 @@
             <div class="exam-controls hidden" id="quizExamSetup"><button class="secondary" id="backToListButton" data-view="quiz">返回小考題庫</button><button class="primary" id="switchFullExam">切換完整模考</button></div>
           </div>
           <div id="examEmpty" class="exam-empty">
-            <div class="empty-mark">25＋2</div><h2>準備好再按開始。</h2><p>系統會依種子產生不同數值與選項；同一種子可重現同一份試卷。</p><button class="primary" id="startDefaultExam">生成並開始</button>
+            <div class="empty-mark">25 MC</div><h2>準備好再按開始。</h2><p>系統會依種子從題型池抽樣；同一種子可重現同一份 25 題選擇卷。</p><button class="primary" id="startDefaultExam">生成並開始</button>
           </div>
           <div id="examWorkspace" class="exam-workspace hidden">
             <aside class="exam-rail">
@@ -132,7 +132,7 @@
 
         <section class="view" id="view-papers" aria-labelledby="papersTitle">
           <div class="page-heading">
-            <div><p class="eyebrow">MY PAPERS</p><h1 id="papersTitle">我的考卷</h1><p>這裡保存你在本機瀏覽器考過的小考與模擬考，可回頭查看當次題目、作答狀態與完整詳解。</p></div>
+            <div><p class="eyebrow">MY PAPERS</p><h1 id="papersTitle">我的考卷</h1><p>這裡保存你在本機瀏覽器考過的小考與模擬考。可查看詳解、錯題統整，並用同題型加練完成訂正。</p></div>
             <button class="secondary" data-view="quiz">繼續做小考</button>
           </div>
           <div class="paper-history-stats" id="paperHistoryStats"></div>
@@ -172,7 +172,7 @@
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">QUESTION FORMS</p><h2>題目怎麼出</h2></div><p>幾何附圖、生活情境、圖表判讀、閱讀題組與非選擇題分開計數。</p></div><div id="formAnalysis" class="form-analysis"></div></section>
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">UNIT LEDGER</p><h2>會考題目依教育部單元回填</h2></div><p>每一題會考主概念只標註到一個教育部章節，避免跨章重複灌水；點連結可直接進入該單元小考題庫。</p></div><div id="unitChapterLedger" class="unit-chapter-ledger"></div></section>
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">YEAR-BY-YEAR LEDGER</p><h2>每一屆逐題主概念帳本</h2></div><p>點開年度可核對題數、官方能力分布、兩題非選主題及各題歸類。</p></div><div id="yearLedger" class="year-ledger"></div></section>
-          <section class="analysis-section compliance-panel"><div><p class="eyebrow">GENERATOR COMPLIANCE</p><h2>嚴格模考生成規格</h2><p>生成器預設採最新 115 年 25＋2、80 分鐘與官方能力層次；主題數量落在新課綱五年實際區間內。25 題選擇題題型依卷別種子打亂，閱讀題組保持連續，第二部分保留兩題非選擇題。</p></div><div id="blueprintChecks" class="blueprint-checks"></div></section>
+          <section class="analysis-section compliance-panel"><div><p class="eyebrow">GENERATOR COMPLIANCE</p><h2>嚴格模考生成規格</h2><p>全範圍模擬考改為練習用 25 題選擇，從 278 細分題型池依 106–115 主概念權重抽樣；學期／總複習小考亦為 25 題。歷屆官方題本仍保留 25＋2 結構。</p></div><div id="blueprintChecks" class="blueprint-checks"></div></section>
           <div class="research-limit"><strong>分類邊界</strong><p>官方資料公布每年度整體能力層次題數，但沒有逐題公布完整單元標籤。因此「題數、題型、能力總數」屬官方資料；「每題主概念、呈現形式」是本站依題目解題核心建立的研究編碼。遇到跨單元題只計一個主概念，並保留年度題號供回查。</p></div>
         </section>
 
@@ -221,11 +221,11 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="data.js?v=20260706g"></script>
-  <script src="analysis-data.js?v=20260706g"></script>
-  <script src="quiz-taxonomy.js?v=20260706g"></script>
-  <script src="questions.js?v=20260706g"></script>
+  <script src="data.js?v=20260706h"></script>
+  <script src="analysis-data.js?v=20260706h"></script>
+  <script src="quiz-taxonomy.js?v=20260706h"></script>
+  <script src="questions.js?v=20260706h"></script>
 
-  <script src="app.js?v=20260706g"></script>
+  <script src="app.js?v=20260706h"></script>
 </body>
 </html>

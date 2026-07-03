@@ -77,3 +77,6 @@ This folder is the maintenance home for this quiz bank. Static metadata is kept 
 }
 
 console.log(`Synced ${quizCatalog.length} quiz bank folders.`);
+
+const { execSync } = require("node:child_process");
+execSync("node tools/verify-taxonomy-coverage.mjs", { cwd: root, stdio: "inherit" });

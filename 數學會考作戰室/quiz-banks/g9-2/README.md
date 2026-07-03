@@ -2,7 +2,7 @@
 
 - Quiz ID: g9-2
 - Units: 資料分布、四分位數與盒狀圖 / 二次函數與拋物線 / 機率、樣本空間與抽樣 / 立體圖形、表面積與體積
-- Questions: 12
+- Questions: 25
 - Minutes: 25
 - Official codes: F-9-1～F-9-2、D-9-1～D-9-2、S-9-12～S-9-13
 

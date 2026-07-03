@@ -216,6 +216,141 @@ window.EXAM_ENGINE = (() => {
     return hasAdvanced ? Math.min(10, Math.max(8, unitIds.length * 4)) : Math.min(8, Math.max(6, unitIds.length * 4));
   };
 
+  const capUnitFreq = (() => {
+    const freq = {};
+    const primary = window.CAP_ANALYSIS?.primaryUnits || {};
+    for (const units of Object.values(primary)) units.forEach(unitId => { freq[unitId] = (freq[unitId] || 0) + 1; });
+    return freq;
+  })();
+
+  function chaptersForUnitIds(unitIds) {
+    return chapterQuizzes.filter(ch => ch.unitIds.some(id => unitIds.includes(id)));
+  }
+
+  function taxonomyTopicPool(filterFn = () => true) {
+    return chapterQuizzes.flatMap(ch => {
+      if (!quizTaxonomy[ch.id]) return [];
+      return taxonomyTopics(ch.id).map(topic => ({
+        quizId: ch.id,
+        topicId: topic.id,
+        title: topic.title,
+        section: topic.section,
+        template: topic.template,
+        unitIds: [...ch.unitIds],
+        chapterTitle: ch.title,
+        unitId: ch.unitIds[0]
+      })).filter(filterFn);
+    });
+  }
+
+  function topicsForScope(unitIds) {
+    return taxonomyTopicPool(topic => topic.unitIds.some(id => unitIds.includes(id)));
+  }
+
+  function topicWeight(topic) {
+    return capUnitFreq[topic.unitId] || 1;
+  }
+
+  function pickWeightedTopic(r, list) {
+    const weights = list.map(topicWeight);
+    const total = weights.reduce((sum, value) => sum + value, 0);
+    let roll = r() * total;
+    for (let i = 0; i < list.length; i++) {
+      roll -= weights[i];
+      if (roll <= 0) return list[i];
+    }
+    return list[list.length - 1];
+  }
+
+  function questionFromTopic(r, topic, index, ability) {
+    const question = topic.template({ r, ri, pick, mc, frac, over, signed, sci });
+    question.quizLevel = question.difficulty >= 3 ? "進階" : "基礎";
+    question.ability = ability || "procedure";
+    question.taxonomySection = topic.section;
+    question.taxonomyTopic = topic.title;
+    question.taxonomyTopicId = topic.topicId;
+    question.taxonomyQuizId = topic.quizId;
+    question.taxonomyKey = `${topic.quizId}/${topic.topicId}`;
+    question.officialOrder = index + 1;
+    return question;
+  }
+
+  function sampleTaxonomyQuestions(r, topics, count) {
+    if (!topics.length || count <= 0) return [];
+    const target = Math.min(count, topics.length);
+    const byChapter = new Map();
+    topics.forEach(topic => {
+      if (!byChapter.has(topic.quizId)) byChapter.set(topic.quizId, []);
+      byChapter.get(topic.quizId).push(topic);
+    });
+    const picked = [];
+    const used = new Set();
+    for (const chapterTopics of byChapter.values()) {
+      const topic = pickWeightedTopic(r, chapterTopics);
+      const key = `${topic.quizId}/${topic.topicId}`;
+      if (used.has(key)) continue;
+      used.add(key);
+      picked.push(topic);
+    }
+    const pool = topics.filter(topic => !used.has(`${topic.quizId}/${topic.topicId}`));
+    while (picked.length < target && pool.length) {
+      const topic = pickWeightedTopic(r, pool);
+      const key = `${topic.quizId}/${topic.topicId}`;
+      used.add(key);
+      picked.push(topic);
+      pool.splice(pool.indexOf(topic), 1);
+    }
+    const abilities = ["concept", "procedure", "application", "analysis"];
+    return shuffled(r, picked.slice(0, target)).map((topic, index) =>
+      questionFromTopic(r, topic, index, abilities[index % abilities.length])
+    );
+  }
+
+  function legacyQuestionsForUnits(r, unitIds, count, level = 2) {
+    const abilities = ["concept", "procedure", "application", "analysis"];
+    const sequence = [...unitIds];
+    while (sequence.length < count) sequence.push(unitIds[(sequence.length - unitIds.length) % unitIds.length]);
+    return shuffled(r, sequence.slice(0, count)).map((unitId, index) => {
+      const question = makeQuizUnitQuestion(r, unitId, level);
+      question.ability = abilities[index % abilities.length];
+      question.quizLevel = level >= 3 ? "進階" : "基礎";
+      question.officialOrder = index + 1;
+      question.taxonomyKey = `legacy/u${unitId}`;
+      return question;
+    });
+  }
+
+  function generateTopicDrill(quizId, topicId, seed, count = 2) {
+    const topic = taxonomyTopics(quizId).find(item => item.id === topicId);
+    if (!topic) throw new Error(`找不到題型 ${quizId}/${topicId}`);
+    const chapter = chapterQuizzes.find(item => item.id === quizId);
+    return Array.from({ length: count }, (_, index) => {
+      const qr = rngFromSeed(`${seed}-${index}-drill`);
+      const wrapped = {
+        quizId,
+        topicId: topic.id,
+        title: topic.title,
+        section: topic.section,
+        template: topic.template,
+        unitIds: chapter ? [...chapter.unitIds] : [1],
+        unitId: chapter?.unitIds[0] || 1
+      };
+      const question = questionFromTopic(qr, wrapped, index, "procedure");
+      question.isDrill = true;
+      return question;
+    });
+  }
+
+  function generateUnitDrill(unitId, seed, count = 2, level = 2) {
+    return Array.from({ length: count }, (_, index) => {
+      const qr = rngFromSeed(`${seed}-${index}-unit-drill`);
+      const question = makeQuizUnitQuestion(qr, unitId, level);
+      question.taxonomyKey = `legacy/u${unitId}`;
+      question.isDrill = true;
+      return question;
+    });
+  }
+
   const termQuizzes = [
     { id:"g7-all", grade:7, term:"總複習", title:"國一總複習", seed:7100, unitIds:[1,2,3,4,5,6,7,8,9,10,11], officialCodes:"N-7、A-7、G-7、D-7、S-7" },
     { id:"g7-1", grade:7, term:"上學期", title:"國一上學期總複習", seed:7101, unitIds:[1,2,3,4,5], officialCodes:"N-7-1～N-7-8、A-7-1～A-7-3" },
@@ -226,7 +361,7 @@ window.EXAM_ENGINE = (() => {
     { id:"g9-all", grade:9, term:"總複習", title:"國三總複習", seed:9300, unitIds:[20,21,22,23,24,25,26], officialCodes:"N-9、F-9、D-9、S-9" },
     { id:"g9-1", grade:9, term:"上學期", title:"國三上學期總複習", seed:9301, unitIds:[21,22,23], officialCodes:"N-9-1、S-9-1～S-9-11" },
     { id:"g9-2", grade:9, term:"下學期", title:"國三下學期總複習", seed:9302, unitIds:[20,24,25,26], officialCodes:"F-9-1～F-9-2、D-9-1～D-9-2、S-9-12～S-9-13" }
-  ].map(item => ({ ...item, scope:"term", questionCount:12, minutes:25 }));
+  ].map(item => ({ ...item, scope:"term", questionCount:25, minutes:25 }));
 
   const chapterQuizzes = [
     { id:"g7-1-c1", grade:7, book:"1上", term:"上學期", chapter:"CH1", title:"國一上第一單元：數與數線", seed:7111, unitIds:[1,2], officialCodes:"N-7-1～N-7-3、N-7-6、N-7-8" },
@@ -268,24 +403,25 @@ window.EXAM_ENGINE = (() => {
     const topics = shuffled(r, taxonomyTopics(blueprint.id));
     const abilityBySection = ["concept", "procedure", "application"];
     const questions = topics.map((topic, index) => {
-      const question = topic.template({ r, ri, pick, mc, frac, over, signed, sci });
-      question.quizLevel = "基礎";
-      question.ability = abilityBySection[index % abilityBySection.length];
-      question.taxonomySection = topic.section;
-      question.taxonomyTopic = topic.title;
-      question.officialOrder = index + 1;
-      return question;
+      const wrapped = {
+        quizId: blueprint.id,
+        topicId: topic.id,
+        title: topic.title,
+        section: topic.section,
+        template: topic.template,
+        unitIds: [...blueprint.unitIds],
+        unitId: blueprint.unitIds[0]
+      };
+      return questionFromTopic(r, wrapped, index, abilityBySection[index % abilityBySection.length]);
     });
     return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:questions.length, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"MOE-curriculum-taxonomy-user-supplied", taxonomySource:quizTaxonomy[blueprint.id]?.source, questions };
   }
 
-  function generateQuiz(quizId, seedOverride) {
-    const blueprint = quizCatalog.find(item => item.id === quizId);
-    if (!blueprint) throw new Error("找不到指定的小考");
-    const seed = seedOverride == null ? blueprint.seed : seedOverride;
-    const r = rngFromSeed(seed);
-    if (quizTaxonomy[blueprint.id]) return generateTaxonomyQuiz(blueprint, r, seed);
-    const targetCount = blueprint.questionCount || 12;
+  function unitsWithoutTaxonomy(unitIds) {
+    return unitIds.filter(uid => !chapterQuizzes.some(ch => ch.unitIds.includes(uid) && quizTaxonomy[ch.id]));
+  }
+
+  function generateLegacyScopeQuiz(blueprint, r, seed, targetCount = blueprint.questionCount || 25) {
     const sequence = [...blueprint.unitIds];
     while (sequence.length < targetCount) sequence.push(blueprint.unitIds[(sequence.length - blueprint.unitIds.length) % blueprint.unitIds.length]);
     const orderedUnits = shuffled(r, sequence.slice(0, targetCount));
@@ -310,74 +446,50 @@ window.EXAM_ENGINE = (() => {
       question.ability = abilities[index % abilities.length];
       question.quizLevel = isAdvanced ? "進階" : "基礎";
       question.officialOrder = index + 1;
+      question.taxonomyKey = `legacy/u${unitId}`;
       return question;
     });
     return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:targetCount, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"NAER-108-curriculum-grade-scope-term-order", questions };
   }
 
-  function makeReadingSet(r) {
-    const indicated = pick(r, [46, 57, 68]), lower = Math.round((indicated - 2) / 1.1);
-    const circumference = pick(r, [200, 210, 220]), coefficient = Number((circumference * 0.0006).toFixed(3));
-    const passage = `某自行車訓練器利用感測器估計騎乘速率。若輪胎每分鐘轉 x 圈、輪胎周長為 c 公分，則實際速率（公里／小時）＝x×c×0.0006。訓練器顯示的指示速率，則以「感測器量得的轉速×系統設定的輪胎周長×0.0006」計算。合格裝置需符合：實際速率不大於指示速率，且「指示速率−實際速率≤實際速率的 10%＋2」。`;
-    const q23 = mc(r, 9, 4, `根據選文，當指示速率為 ${indicated} 公里／小時時，實際速率可能的範圍為何？`, `${lower}～${indicated} 公里／小時`, [`${indicated}～${Math.round(indicated * 1.1 + 2)} 公里／小時`, `${lower - 2}～${indicated - 2} 公里／小時`, `${lower}～${Math.round(indicated * 1.1)} 公里／小時`], [`設實際速率為 v。條件給 v≤${indicated}。`, `${indicated}−v≤0.1v+2，所以 ${indicated - 2}≤1.1v，得 v≥${lower}。`, `合併得 ${lower}≤v≤${indicated}。`], "把兩個法規條件分開列不等式，最後取交集。", "指示速率不得小於實際速率，因此範圍上限是指示速率。")
-    const q24 = mc(r, 17, 3, `根據選文，若輪胎周長為 ${circumference} 公分、每分鐘轉 x 圈，實際速率 y（公里／小時）與 x 的關係為何？`, `y=${coefficient}x`, [`y=${circumference}x`, `y=${Number((circumference / 100000).toFixed(5))}x`, `y=${Number((circumference * 0.006).toFixed(2))}x`], [`直接代入選文公式：y=x×${circumference}×0.0006。`, `所以 y=${coefficient}x。`], "先保留單位換算係數，再把常數相乘，可避免漏掉每分鐘轉每小時。", "公分換公里與分鐘換小時要同時處理。")
-    const q25 = mc(r, 17, 5, "根據選文，甲車的感測器把轉速量得比實際高；乙車換成周長較小的新輪胎，但系統仍使用原本較大的周長。兩車皆顯示 60 公里／小時，實際速率分別為 p、q，何者正確？", "p<60，q<60", ["p>60，q>60", "p>60，q<60", "p<60，q>60"], ["甲：轉速被高估，在設定周長相同時，指示速率高於實際速率，所以 p<60。", "乙：系統設定周長大於實際新輪胎周長，同轉速下指示速率高於實際速率，所以 q<60。"], "先固定乘積中的另一個因數，比較『系統使用值』與『真實值』。", "兩種故障原因不同，但都使指示計算中的乘積偏大。")
-    ;[q23,q24,q25].forEach((q,i)=>{q.passageId="bike-sensor";q.passage=passage;q.setIndex=i+1;});
-    return [q23,q24,q25];
+  function generateTermQuiz(blueprint, r, seed) {
+    const targetCount = blueprint.questionCount || 25;
+    const topics = topicsForScope(blueprint.unitIds);
+    if (!topics.length) return generateLegacyScopeQuiz(blueprint, r, seed, targetCount);
+    const legacyUnits = unitsWithoutTaxonomy(blueprint.unitIds);
+    const legacySlots = legacyUnits.length ? Math.min(legacyUnits.length, Math.max(1, Math.ceil(targetCount * 0.08))) : 0;
+    const taxonomyCount = targetCount - legacySlots;
+    let questions = sampleTaxonomyQuestions(r, topics, taxonomyCount);
+    if (legacySlots) {
+      const legacy = legacyQuestionsForUnits(r, legacyUnits, legacySlots, 2);
+      questions = shuffled(r, [...questions, ...legacy]);
+    }
+    if (questions.length < targetCount) {
+      const extra = legacyQuestionsForUnits(r, blueprint.unitIds, targetCount - questions.length, 2);
+      questions = shuffled(r, [...questions, ...extra]);
+    }
+    questions = questions.slice(0, targetCount);
+    questions.forEach((question, index) => { question.officialOrder = index + 1; });
+    return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:questions.length, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"MOE-curriculum-taxonomy-term-sample", questions };
   }
 
-  function makeConstructed(r) {
-    const first = ri(r, 5, 8), d = ri(r, 2, 4), stepIndex = ri(r, 8, 11), threshold = first + d * stepIndex - 1;
-    const session = stepIndex + 1, week = Math.ceil(session / 2), day = session % 2 ? "星期一" : "星期四";
-    const q26 = cr(16, 4,
-      `【非選擇題一】機器人社團每週星期一、四進行耐久測試。第一週星期一測試 ${first} 回合，同週星期四比星期一多 ${d} 回合；之後每次測試都比前一次多 ${d} 回合。\n(1) 第二週星期四測試幾回合？\n(2) 最早在第幾週星期幾，測試回合數會超過 ${threshold} 回合？請完整說明。`,
-      [`各次測試形成首項 ${first}、公差 ${d} 的等差數列。`, `第二週星期四是第 4 次：a₄=${first}+3×${d}=${first + 3*d}。`, `第 n 次回合數 aₙ=${first}+(n−1)×${d}。解 ${first}+(n−1)×${d}>${threshold}，最小整數 n=${session}。`, `第 ${session} 次為第 ${week} 週${day}。`],
-      `(1) ${first + 3*d} 回合；(2) 第 ${week} 週${day}。`,
-      "先把每週兩次攤平成『第 1、2、3…次』的等差數列，最後再換回星期。",
-      "題目是『超過』，必須使用 >；剛好等於門檻仍不符合。",
-      [["3級分","正確建立等差數列、處理嚴格不等式，並把次序轉回週次與星期。"],["2級分","策略正確但次序、嚴格不等號或週次轉換有一處瑕疵。"],["1級分","能辨認等差關係或算出部分項，但推導不完整。"],["0級分","只有答案，或未呈現可辨識策略。"]]
-    );
-
-    const [base,height,hyp,ad] = pick(r, [[15,20,25,6],[9,12,15,3],[12,16,20,6]]), scale=ad/base, ae=height*scale, de=hyp*scale, big=base*height/2, small=ad*ae/2, trap=big-small;
-    const q27 = cr(21, 5,
-      `【非選擇題二】如圖，直角三角形 ABC 中，∠A=90°，AB=${base}、AC=${height}。D 在 AB 上且 AD=${ad}，過 D 作 DE∥BC 交 AC 於 E。\n(1) 說明 △ADE 與 △ABC 相似的理由。\n(2) 求 DE 與四邊形 DBCE 的面積。`,
-      [`因 DE∥BC，所以 ∠ADE=∠ABC、∠AED=∠ACB；再加上共同的 ∠A，故兩三角形以 AA 相似。`, `大三角形斜邊 BC=√(${base}²+${height}²)=${hyp}。`, `相似比 AD:AB=${ad}:${base}=${frac(ad,base)}，所以 DE=${hyp}×${frac(ad,base)}=${de}。`, `AE=${height}×${frac(ad,base)}=${ae}；大三角形面積=${big}，小三角形面積=${small}。`, `四邊形 DBCE 面積=${big}−${small}=${trap}。`],
-      `(1) AA 相似；(2) DE=${de}，四邊形 DBCE 面積=${trap}。`,
-      "證相似先寫角相等的來源；求不規則四邊形面積可用『大三角形減小三角形』。",
-      "相似比方向要一致；面積比是邊長比的平方。",
-      [["3級分","相似理由完整、比例方向一致，並正確求斜邊、DE 與面積差。"],["2級分","策略正確且主要推導成立，但有一處計算或理由不完整。"],["1級分","辨認平行導致相似，或只完成長度／面積其中一部分。"],["0級分","只有答案，或未呈現合理推導。"]]
-    );
-    q27.diagram=`<svg class="question-diagram" viewBox="0 0 360 230" role="img" aria-label="直角三角形 ABC，D 在 AB 上，DE 平行 BC"><path d="M45 190 L315 190 L45 28 Z" fill="none" stroke="currentColor" stroke-width="3"/><path d="M153 190 L45 125" fill="none" stroke="#da735d" stroke-width="3"/><path d="M45 190 h18 v-18" fill="none" stroke="currentColor" stroke-width="2"/><text x="27" y="210">A</text><text x="318" y="210">B</text><text x="27" y="25">C</text><text x="148" y="210">D</text><text x="25" y="123">E</text></svg>`;
-    q26.ability=q27.ability="application";
-    return [q26,q27];
+  function generateQuiz(quizId, seedOverride) {
+    const blueprint = quizCatalog.find(item => item.id === quizId);
+    if (!blueprint) throw new Error("找不到指定的小考");
+    const seed = seedOverride == null ? blueprint.seed : seedOverride;
+    const r = rngFromSeed(seed);
+    if (quizTaxonomy[blueprint.id]) return generateTaxonomyQuiz(blueprint, r, seed);
+    if (blueprint.scope === "term") return generateTermQuiz(blueprint, r, seed);
+    const targetCount = blueprint.questionCount || 12;
+    return generateLegacyScopeQuiz(blueprint, r, seed, targetCount);
   }
 
   function generate(seed, level = 2) {
     const r = rngFromSeed(`${seed}`.split("").reduce((a,c)=>a*31+c.charCodeAt(0), 7) + level * 100003);
-    const baseQuestions = [
-      generators[5](r,level), makeSolidQuestion(r), generators[12](r,level), generators[24](r,level), generators[11](r,level),
-      generators[9](r,level), makePolynomialDivision(r), generators[1](r,level), generators[14](r,level), generators[7](r,level),
-      generators[0](r,level), makeCongruenceQuestion(r), generators[6](r,level), generators[23](r,level), makePolygonQuestion(r),
-      makeTriangleAngleQuestion(r), generators[15](r,level), makeCircleChordQuestion(r), generators[21](r,level), generators[2](r,level),
-      generators[20](r,level), makeParallelogramQuestion(r), ...makeReadingSet(r)
-    ];
-    const abilities = ["procedure","concept","procedure","application","procedure","application","procedure","application","concept","application","analysis","application","concept","concept","analysis","analysis","application","application","analysis","concept","application","concept","application","application","analysis"];
-    baseQuestions.forEach((question, index) => { question.ability = abilities[index]; });
-    const readingIds = new Set(baseQuestions.map(question => question.passageId).filter(Boolean));
-    const blocks = [];
-    baseQuestions.forEach(question => {
-      if (!question.passageId) blocks.push([question]);
-      else if (readingIds.has(question.passageId)) {
-        blocks.push(baseQuestions.filter(item => item.passageId === question.passageId));
-        readingIds.delete(question.passageId);
-      }
-    });
-    const shuffledChoices = shuffled(r, blocks).flat();
-    const shuffledConstructed = shuffled(r, makeConstructed(r));
-    const questions = [...shuffledChoices, ...shuffledConstructed];
-    questions.forEach((question, index) => { question.officialOrder = index + 1; });
-    return { id:`CAP-${seed}-${level}`, seed:Number(seed), level, createdAt:new Date().toISOString(), blueprint:"115-official-10y-validated", questions };
+    const allTopics = taxonomyTopicPool();
+    const questions = sampleTaxonomyQuestions(r, allTopics, 25);
+    return { id:`CAP-${seed}-${level}`, seed:Number(seed), level, createdAt:new Date().toISOString(), blueprint:"115-official-taxonomy-sample", questions };
   }
 
-  return { generate, generateQuiz, quizCatalog, allowsAdvanced };
+  return { generate, generateQuiz, generateTopicDrill, generateUnitDrill, quizCatalog, allowsAdvanced, taxonomyTopicPool, topicsForScope, sampleTaxonomyQuestions };
 })();

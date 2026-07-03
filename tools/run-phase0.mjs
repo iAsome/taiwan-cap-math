@@ -12,6 +12,7 @@ const steps = [
   ["app-bootstrap", root, "node tools/verify-app-bootstrap.mjs"],
   ["chinese", path.join(root, "國文會考作戰室"), "node tools/verify-chapter-quizzes.js"],
   ["math", path.join(root, "數學會考作戰室"), "node tools/verify-chapter-quizzes.js"],
+  ["math-taxonomy", path.join(root, "數學會考作戰室"), "node tools/verify-taxonomy-coverage.mjs"],
   ["english", path.join(root, "英文會考作戰室"), "node tools/verify-data.mjs"],
   ["earth", path.join(root, "地科會考作戰室"), "node tools/verify-data.mjs"],
   ["earth-smoke", path.join(root, "地科會考作戰室"), "node tools-smoke-test.mjs"],

@@ -2,7 +2,7 @@
 
 - Quiz ID: g9-1
 - Units: 比例線段、縮放與相似形 / 圓、弧、弦與圓周角 / 幾何證明與三角形心
-- Questions: 12
+- Questions: 25
 - Minutes: 25
 - Official codes: N-9-1、S-9-1～S-9-11
 

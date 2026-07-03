@@ -2,7 +2,7 @@
 
 - Quiz ID: g7-1
 - Units: 正負數、數線與絕對值 / 指數律與科學記號 / 質因數、最大公因數與最小公倍數 / 分數四則與比例量 / 一元一次式與方程式
-- Questions: 12
+- Questions: 25
 - Minutes: 25
 - Official codes: N-7-1～N-7-8、A-7-1～A-7-3
 

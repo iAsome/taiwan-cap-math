@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-2
 - Units: 數列、等差與等比規律 / 線型函數與變化率 / 三角形性質、全等與尺規 / 平行線、四邊形與面積
-- Questions: 12
+- Questions: 25
 - Minutes: 25
 - Official codes: N-8-3～N-8-6、F-8-1～F-8-2、S-8-1～S-8-5、S-8-7～S-8-12
 

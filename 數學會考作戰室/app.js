@@ -38,7 +38,8 @@
     seconds: 4800,
     totalSeconds: 4800,
     timerId: null,
-    currentQuestion: 0
+    currentQuestion: 0,
+    paperReview: { recordId: null, mode: null, drill: null }
   };
 
   function formatDuration(seconds) {
@@ -87,6 +88,84 @@
       try { localStorage.setItem("capMath.paperHistory", JSON.stringify([record, ...paperHistory()].slice(0, 15))); }
       catch { toast("本機儲存空間不足，這次考卷未保存到我的考卷"); }
     }
+  }
+
+  function updatePaperRecord(recordId, patch) {
+    const records = paperHistory().map(record => record.id === recordId ? { ...record, ...patch } : record);
+    try { localStorage.setItem("capMath.paperHistory", JSON.stringify(records.slice(0, 40))); }
+    catch { toast("本機儲存空間不足，無法更新考卷紀錄"); }
+  }
+
+  function getPaperRecord(recordId) {
+    return paperHistory().find(record => record.id === recordId) || null;
+  }
+
+  function mcWrongIndexes(record) {
+    return record.exam.questions.map((question, index) => question.type === "mc" && record.answers[index] !== question.answer ? index : null).filter(index => index !== null);
+  }
+
+  function correctionStats(record) {
+    const wrongIndexes = mcWrongIndexes(record);
+    const corrections = record.corrections || {};
+    const uncorrected = wrongIndexes.filter(index => !corrections[index]?.passed).length;
+    return { wrongTotal: wrongIndexes.length, uncorrected };
+  }
+
+  function wasOriginallyWrong(record, index) {
+    const question = record.exam.questions[index];
+    return question.type === "mc" && record.answers[index] !== question.answer;
+  }
+
+  function startTopicDrill(questionIndex) {
+    const record = getPaperRecord(state.paperReview.recordId);
+    if (!record) return;
+    const question = record.exam.questions[questionIndex];
+    const rounds = (record.corrections?.[questionIndex]?.rounds || 0) + 1;
+    const seed = `${record.exam.seed || record.id}-${questionIndex}-${rounds}`;
+    let subQuestions;
+    try {
+      subQuestions = question.taxonomyQuizId && question.taxonomyTopicId
+        ? window.EXAM_ENGINE.generateTopicDrill(question.taxonomyQuizId, question.taxonomyTopicId, seed, 2)
+        : window.EXAM_ENGINE.generateUnitDrill(question.unitId, seed, 2, record.exam.level || 2);
+    } catch (error) {
+      toast(error.message || "無法產生訂正練習");
+      return;
+    }
+    state.paperReview.drill = { qIndex: questionIndex, subQuestions, subAnswers: [null, null], rounds };
+    renderExam();
+    $(`#question-${questionIndex + 1}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function submitTopicDrill() {
+    const drill = state.paperReview.drill;
+    const record = getPaperRecord(state.paperReview.recordId);
+    if (!drill || !record) return;
+    const passed = drill.subQuestions.every((question, index) => drill.subAnswers[index] === question.answer);
+    const corrections = { ...(record.corrections || {}), [drill.qIndex]: { passed, rounds: drill.rounds } };
+    updatePaperRecord(record.id, { corrections });
+    state.paperReview.drill = null;
+    renderExam();
+    renderMyPapers();
+    toast(passed ? "訂正觀念完成，這題已標記為已訂正。" : "還有題目沒答對，再試一次或重新開始訂正。");
+  }
+
+  function drillHtml(questionIndex) {
+    const drill = state.paperReview.drill;
+    if (!drill || drill.qIndex !== questionIndex) return "";
+    return `<div class="topic-drill"><div class="topic-drill-head"><strong>訂正觀念</strong><span>同題型再練 2 題，全對才算訂正完成</span></div>${drill.subQuestions.map((question, subIndex) => {
+      const choices = question.choices.map((choice, choiceIndex) => {
+        const selected = drill.subAnswers[subIndex] === choiceIndex;
+        const correct = selected && choiceIndex === question.answer;
+        const wrong = selected && choiceIndex !== question.answer;
+        return `<button type="button" class="choice ${selected ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-drill-choice="${subIndex}:${choiceIndex}"><span class="choice-letter">${letters[choiceIndex]}</span><span>${mathText(choice)}</span></button>`;
+      }).join("");
+      return `<article class="drill-question"><p class="eyebrow">加練 ${subIndex + 1}</p><div class="question-text">${nl(question.text)}</div><div class="choices">${choices}</div></article>`;
+    }).join("")}<div class="topic-drill-actions"><button type="button" class="primary" data-drill-submit>完成訂正</button><button type="button" class="secondary" data-drill-cancel>取消</button></div></div>`;
+  }
+
+  function correctionBadgeHtml(record, index) {
+    if (!record.corrections?.[index]?.passed) return "";
+    return `<span class="correction-badge">已訂正</span>`;
   }
 
   function setView(view) {
@@ -433,20 +512,26 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       const durationText = record.elapsedSeconds != null
         ? `｜作答時間 ${formatDuration(record.elapsedSeconds)}${record.overtimeSeconds > 0 ? `（超時 ${formatDuration(record.overtimeSeconds)}）` : ""}`
         : "";
+      const { wrongTotal, uncorrected } = correctionStats(record);
       return `<article class="paper-history-card">
-        <div><p class="eyebrow">${kindBadge[record.kind] || "MOCK"} · ${esc(record.id)}</p><h3>${esc(record.title)}</h3><small>${esc(date)}｜${record.correct}/${record.mcCount} 題｜${record.answered}/${record.total} 已作答${durationText}</small></div>
-        <div class="paper-history-score"><strong>${Math.round(record.correct / Math.max(1, record.mcCount) * 100)}</strong><span>%</span></div>
+        <div><p class="eyebrow">${kindBadge[record.kind] || "MOCK"} · ${esc(record.id)}</p><h3>${esc(record.title)}</h3><small>${esc(date)}｜${record.answered}/${record.total} 已作答${durationText}</small></div>
+        <div class="paper-history-score"><strong>${record.correct}/${record.mcCount}</strong><span>答對</span>${wrongTotal ? `<strong>${uncorrected}/${wrongTotal}</strong><span>未訂正</span>` : ""}</div>
         <div class="missed-units">${missed || "<span>沒有選擇題錯題</span>"}</div>
-        <button class="secondary" data-review-paper="${esc(record.id)}">查看當次考卷與詳解</button>
+        <div class="paper-history-actions">
+          <button class="secondary" data-review-paper="${esc(record.id)}">查看詳解</button>
+          ${wrongTotal ? `<button class="secondary" data-review-wrong="${esc(record.id)}">錯題統整</button>` : ""}
+        </div>
       </article>`;
     }).join("") : `<div class="paper-history-empty"><h2>目前還沒有考過的卷子。</h2><p>完成任一小考或模擬考後，這裡會自動保存紀錄。</p><button class="primary" data-view="quiz">去做小考</button></div>`;
-    $$("[data-review-paper]", $("#paperHistoryList")).forEach(button => button.addEventListener("click", () => reviewSavedPaper(button.dataset.reviewPaper)));
+    $$("[data-review-paper]", $("#paperHistoryList")).forEach(button => button.addEventListener("click", () => reviewSavedPaper(button.dataset.reviewPaper, "full")));
+    $$("[data-review-wrong]", $("#paperHistoryList")).forEach(button => button.addEventListener("click", () => reviewWrongPaper(button.dataset.reviewWrong)));
     $$("[data-view]", $("#paperHistoryList")).forEach(button => button.addEventListener("click", () => setView(button.dataset.view)));
   }
 
-  function reviewSavedPaper(recordId) {
-    const record = paperHistory().find(item => item.id === recordId);
+  function reviewSavedPaper(recordId, mode = "full") {
+    const record = getPaperRecord(recordId);
     if (!record) return toast("找不到這份考卷紀錄");
+    state.paperReview = { recordId, mode, drill: null };
     state.exam = record.exam;
     state.answers = record.answers;
     state.submitted = true;
@@ -464,6 +549,10 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     $("#paper").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  function reviewWrongPaper(recordId) {
+    reviewSavedPaper(recordId, "wrong-only");
+  }
+
   function configureExamHeader() {
     const isQuiz = state.exam?.kind === "quiz";
     const isArchive = state.exam?.kind === "archive";
@@ -473,7 +562,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ? `${state.exam.questions.length} 題四選一，共 ${state.exam.minutes || 25} 分鐘。官方課綱編碼：${state.exam.officialCodes}。`
       : isArchive
       ? `依 ${state.exam.year} 年官方公布題本製作的可作答電子試卷；計時結束後仍可繼續作答。`
-      : "25 題四選一＋2 題非選擇題，共 80 分鐘。依 115 年官方能力層次與 106–115 年主題分布組卷。";
+      : "練習用 25 題選擇模擬，共 80 分鐘。依題型池與 106–115 年主概念權重抽樣，不含非選擇題。";
     $("#examSetup").classList.toggle("hidden", isQuiz || isArchive);
     $("#quizExamSetup").classList.toggle("hidden", !isQuiz && !isArchive);
     if (isArchive) { $("#backToListButton").textContent = "返回歷屆十年"; $("#backToListButton").dataset.view = "archive"; }
@@ -481,6 +570,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
+    state.paperReview = { recordId: null, mode: null, drill: null };
     state.exam = assessment;
     state.answers = assessment.questions.map(question => question.type === "mc" ? null : "");
     state.submitted = false;
@@ -551,30 +641,42 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
 
   function renderExam() {
     if (!state.exam) return;
+    const reviewRecord = state.paperReview.recordId ? getPaperRecord(state.paperReview.recordId) : null;
+    const reviewMode = state.paperReview.mode;
+    const wrongOnly = reviewMode === "wrong-only";
+    const visibleIndexes = wrongOnly && reviewRecord
+      ? mcWrongIndexes(reviewRecord)
+      : state.exam.questions.map((_, index) => index);
     const difficultyLabel = ["", "基礎", "核心", "進階", "整合", "高鑑別"];
     const abilityLabel = { concept: "概念理解", procedure: "程序執行", application: "解題應用", analysis: "分析思考" };
-    const qHtml = state.exam.questions.map((q, index) => {
+    const formulaSummary = wrongOnly && reviewRecord ? [...new Set(visibleIndexes.map(index => state.exam.questions[index].formula).filter(Boolean))] : [];
+    const qHtml = visibleIndexes.map((index, displayIndex) => {
+      const q = state.exam.questions[index];
       const unit = units.find(item => item.id === q.unitId);
-      const answered = q.type === "mc" ? state.answers[index] !== null : Boolean(state.answers[index].trim());
       const choices = q.type === "mc" ? `<div class="choices">${q.choices.map((choice, ci) => {
         const selected = state.answers[index] === ci;
         const correct = state.submitted && ci === q.answer;
         const wrong = state.submitted && selected && ci !== q.answer;
         return `<button class="choice ${selected ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-choice="${index}:${ci}" ${state.submitted ? "disabled" : ""}><span class="choice-letter">${letters[ci]}</span><span>${mathText(choice)}</span></button>`;
       }).join("")}</div>` : `<div class="constructed"><textarea data-cr="${index}" placeholder="請寫下完整解題過程與結論……" ${state.submitted ? "disabled" : ""}>${esc(state.answers[index])}</textarea><p class="writing-guide">建議包含：設未知數／列關係或性質／推導計算／含單位的結論</p></div>`;
-      const passage = q.passageId && (!index || state.exam.questions[index - 1].passageId !== q.passageId) ? `<aside class="reading-passage"><p class="eyebrow">閱讀選文｜回答第 ${index + 1}～${index + state.exam.questions.filter(item => item.passageId === q.passageId).length} 題</p><h3>${esc(q.passageTitle || "自行車訓練器的速率估計")}</h3><p>${mathText(q.passage)}</p></aside>` : "";
+      const passage = q.passageId && (displayIndex === 0 || state.exam.questions[visibleIndexes[displayIndex - 1]].passageId !== q.passageId) ? `<aside class="reading-passage"><p class="eyebrow">閱讀選文｜回答第 ${displayIndex + 1}～${displayIndex + visibleIndexes.filter(itemIndex => state.exam.questions[itemIndex].passageId === q.passageId).length} 題</p><h3>${esc(q.passageTitle || "自行車訓練器的速率估計")}</h3><p>${mathText(q.passage)}</p></aside>` : "";
+      const showDrill = state.submitted && reviewRecord && (wrongOnly || reviewMode === "full") && q.type === "mc";
+      const drillAction = showDrill ? `<div class="question-actions"><button type="button" class="secondary compact" data-start-drill="${index}">${reviewRecord.corrections?.[index]?.passed ? "再練同題型" : "訂正觀念"}</button></div>` : "";
       return `${passage}<article class="question ${q.type === "cr" ? "constructed-question" : ""}" id="question-${index + 1}" data-question="${index}">
-        <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span>${q.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(q.taxonomyTopic)}</span>` : ""}${q.quizLevel ? `<span class="question-tag level">${esc(q.quizLevel)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span></div>
-        <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${solutionHtml(q, index)}
+        <div class="question-head"><span class="question-number">${displayIndex + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span>${q.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(q.taxonomyTopic)}</span>` : ""}${q.quizLevel ? `<span class="question-tag level">${esc(q.quizLevel)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span>${correctionBadgeHtml(reviewRecord, index)}</div>
+        <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${state.submitted ? solutionHtml(q, index) : ""}${drillAction}${drillHtml(index)}
       </article>`;
     }).join("");
     const constructedStart = qHtml.indexOf('<article class="question constructed-question');
     const hasConstructed = constructedStart >= 0;
     const isQuiz = state.exam.kind === "quiz";
     const isArchive = state.exam.kind === "archive";
+    const isMock = !isQuiz && !isArchive;
     const mcCount = state.exam.questions.filter(question => question.type === "mc").length;
     const crCount = state.exam.questions.length - mcCount;
     const scopeTitles = isQuiz ? state.exam.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、") : "";
+    const reviewBanner = wrongOnly ? `<div class="paper-review-banner"><strong>錯題統整</strong><span>只顯示當次答錯的 ${visibleIndexes.length} 題選擇題</span></div>` : "";
+    const formulaBanner = formulaSummary.length ? `<div class="paper-formula-banner"><strong>本卷錯題涉及公式</strong><div>${formulaSummary.map(formula => mathBlock(formula)).join("")}</div></div>` : "";
     const cover = isQuiz ? `
       <header class="paper-cover"><div><p class="eyebrow">教育部年級範圍 · ${esc(state.exam.id)}</p><h2>${esc(state.exam.title)}</h2><p>${state.exam.questions.length} 題四選一｜${state.exam.minutes || 25} 分鐘｜每個列出單元至少覆蓋 1 題</p></div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term)}</div></header>
       <div class="paper-instructions"><div><strong>${state.exam.questions.length}</strong><span>四選一｜即時計分</span></div><div><strong>${state.exam.unitIds.length}</strong><span>範圍單元｜無超綱單元</span></div><div><strong>${state.exam.minutes || 25} min</strong><span>依單元需要安排進階</span></div></div>
@@ -582,15 +684,18 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       <header class="paper-cover"><div><p class="eyebrow">官方題本重現 · ${esc(state.exam.id)}</p><h2>${state.exam.year} 年國中教育會考數學科題本</h2><p>${mcCount} 題選擇＋${crCount} 題非選｜依官方公布題目製作為可作答電子試卷｜計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
       <div class="paper-instructions"><div><strong>${mcCount}</strong><span>四選一｜官方原題</span></div><div><strong>${crCount}</strong><span>非選擇題｜策略與表達計分</span></div><div><strong>${state.exam.minutes || 80} min</strong><span>時間到可繼續作答</span></div></div>
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
-      <header class="paper-cover"><div><p class="eyebrow">115 官方結構 · 十年分布校準 · ${esc(state.exam.id)}</p><h2>國中教育會考數學科模擬題本</h2><p>25 題選擇＋2 題非選｜80 分鐘｜概念 6・程序 4・應用 12・分析 5</p></div><div class="paper-stamp">115<br>官方藍圖</div></header>
-      <div class="paper-instructions"><div><strong>25</strong><span>四選一｜含 3 題連續閱讀題組</span></div><div><strong>2</strong><span>非選擇題｜策略與表達計分</span></div><div><strong>80 min</strong><span>題型順序依卷別種子打亂</span></div></div>`;
+      <header class="paper-cover"><div><p class="eyebrow">題型池抽樣 · 十年分布校準 · ${esc(state.exam.id)}</p><h2>國中教育會考數學科模擬題本</h2><p>練習用 25 題選擇｜80 分鐘｜依題型池與 106–115 主概念權重抽樣</p></div><div class="paper-stamp">25<br>選擇</div></header>
+      <div class="paper-instructions"><div><strong>25</strong><span>四選一｜題型池抽樣</span></div><div><strong>80</strong><span>分鐘｜可超時繼續作答</span></div><div><strong>MC</strong><span>不含非選擇題</span></div></div>`;
     const choiceHtml = hasConstructed ? qHtml.slice(0, constructedStart) : qHtml;
     const constructedHtml = hasConstructed ? `<div class="paper-section-title"><h3>第二部分：非選擇題</h3><span>策略適切＋推導完整＋結論清楚</span></div>${qHtml.slice(constructedStart)}` : "";
+    const sectionTitle = isMock && !hasConstructed ? "" : `<div class="paper-section-title"><h3>${hasConstructed ? "第一部分：選擇題" : "試題"}</h3><span>每題只有一個正確或最佳答案</span></div>`;
     $("#paper").innerHTML = `
       ${cover}
-      <div class="paper-section-title"><h3>第一部分：選擇題</h3><span>每題只有一個正確或最佳答案</span></div>
+      ${reviewBanner}
+      ${formulaBanner}
+      ${sectionTitle}
       ${choiceHtml}${constructedHtml}`;
-    $("#questionTotal").textContent = state.exam.questions.length;
+    $("#questionTotal").textContent = wrongOnly ? visibleIndexes.length : state.exam.questions.length;
     if (state.submitted) $("#paper").classList.add("submitted");
     bindExamInputs();
     renderQuestionGrid();
@@ -619,6 +724,14 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     $$('[data-cr]', $("#paper")).forEach(area => area.addEventListener("input", () => {
       const qi = Number(area.dataset.cr); state.answers[qi] = area.value; state.currentQuestion = qi; renderQuestionGrid(); updateAnswered();
     }));
+    $$("[data-start-drill]", $("#paper")).forEach(button => button.addEventListener("click", () => startTopicDrill(Number(button.dataset.startDrill))));
+    $$("[data-drill-choice]", $("#paper")).forEach(button => button.addEventListener("click", () => {
+      const [subIndex, choiceIndex] = button.dataset.drillChoice.split(":").map(Number);
+      state.paperReview.drill.subAnswers[subIndex] = choiceIndex;
+      renderExam();
+    }));
+    $$("[data-drill-submit]", $("#paper")).forEach(button => button.addEventListener("click", submitTopicDrill));
+    $$("[data-drill-cancel]", $("#paper")).forEach(button => button.addEventListener("click", () => { state.paperReview.drill = null; renderExam(); }));
     $$(".question", $("#paper")).forEach(article => {
       const observer = new IntersectionObserver(entries => { if (entries[0].isIntersecting) { state.currentQuestion = Number(article.dataset.question); renderQuestionGrid(); } }, { rootMargin: "-25% 0px -60%" });
       observer.observe(article);
@@ -627,9 +740,12 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
 
   function renderQuestionGrid() {
     if (!state.exam) return;
-    $("#questionGrid").innerHTML = state.exam.questions.map((q, i) => {
-      const answered = q.type === "mc" ? state.answers[i] !== null : Boolean(state.answers[i].trim());
-      return `<button class="${answered ? "answered" : ""} ${state.currentQuestion === i ? "current" : ""}" data-jump="${i}" aria-label="第 ${i + 1} 題${answered ? "，已作答" : ""}">${i + 1}</button>`;
+    const wrongOnly = state.paperReview.mode === "wrong-only" && state.paperReview.recordId;
+    const visibleIndexes = wrongOnly ? mcWrongIndexes(getPaperRecord(state.paperReview.recordId) || { exam: state.exam, answers: state.answers }) : state.exam.questions.map((_, index) => index);
+    $("#questionGrid").innerHTML = visibleIndexes.map((index, displayIndex) => {
+      const q = state.exam.questions[index];
+      const answered = q.type === "mc" ? state.answers[index] !== null : Boolean(state.answers[index].trim());
+      return `<button class="${answered ? "answered" : ""} ${state.currentQuestion === index ? "current" : ""}" data-jump="${index}" aria-label="第 ${displayIndex + 1} 題${answered ? "，已作答" : ""}">${displayIndex + 1}</button>`;
     }).join("");
     $$('[data-jump]', $("#questionGrid")).forEach(button => button.addEventListener("click", () => {
       state.currentQuestion = Number(button.dataset.jump);
@@ -667,13 +783,14 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       missedUnits: missed,
       elapsedSeconds, overtimeSeconds, totalSeconds: state.totalSeconds,
       exam: state.exam,
-      answers: state.answers
+      answers: state.answers,
+      corrections: {}
     });
     renderExam();
     updateTimer();
     const resultNote = isQuiz ? `本小考只計入「${esc(state.exam.title)}」的官方範圍，原始答對數不等同學校定期評量成績。`
       : isArchive ? `本卷依 ${state.exam.year} 年官方公布題本重製，供練習使用；正式成績、等級與官方原始題本以會考官方網站為準。`
-      : "本結果是練習用原始答對數，不等同官方等級。非選擇題請依每題旁的 0–3 級分規準自評。";
+      : "本結果是練習用原始答對數，不等同官方等級。";
     $("#resultPanel").innerHTML = `<div class="result-summary"><div class="result-score"><span><strong>${correct}</strong><br><small>/ ${mcCount} 選擇題</small></span></div><div class="result-copy"><p class="eyebrow">RESULT</p><h2>${scoreRate >= .88 ? "很穩，這個範圍已有成熟掌握。" : scoreRate >= .7 ? "底子不錯，把錯題對應單元立刻回補。" : scoreRate >= .5 ? "先抓本卷錯題觀念，分數會升得最快。" : "別急著刷下一卷，先回講義補地基。"}</h2><p class="elapsed-note">作答時間 ${formatDuration(elapsedSeconds)}${overtimeSeconds > 0 ? `（含超時 ${formatDuration(overtimeSeconds)}）` : ""}</p><p>${resultNote}</p><div class="missed-units">${missed.slice(0, 10).map(x => `<span>${esc(x)}</span>`).join("")}${missed.length > 10 ? `<span>另 ${missed.length - 10} 單元</span>` : ""}</div></div><button class="primary" id="reviewFirst">從第一題看詳解</button></div>`;
     $("#resultPanel").classList.remove("hidden");
     $("#reviewFirst").addEventListener("click", () => $("#question-1").scrollIntoView({ behavior: "smooth", block: "start" }));

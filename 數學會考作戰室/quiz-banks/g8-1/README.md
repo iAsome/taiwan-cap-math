@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-1
 - Units: 乘法公式與多項式 / 平方根、根式與畢氏定理 / 因式分解 / 一元二次方程式 / 累積次數、相對次數與折線圖
-- Questions: 12
+- Questions: 25
 - Minutes: 25
 - Official codes: N-8-1～N-8-2、A-8-1～A-8-7、S-8-6、G-8-1、D-8-1
 
