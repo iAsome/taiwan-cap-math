@@ -239,7 +239,7 @@
       $("#domainDistribution").innerHTML = "";
       $("#conceptMatrixHead").innerHTML = "";
       $("#conceptMatrixBody").innerHTML = "";
-      $("#hanlinChapterLedger").innerHTML = "";
+      $("#unitChapterLedger").innerHTML = "";
       $("#yearLedger").innerHTML = "";
       return;
     }
@@ -274,7 +274,7 @@
       return `<tr class="${count >= 6 ? "high" : ""}"><td>${esc(unit.title)}<small class="audit-unit">${esc(capAnalysis.domainByUnit[unit.id])}</small></td>${years.map(year => `<td>${unitYearCounts[year][unit.id] || 0}</td>`).join("")}<td class="total">${count}</td><td>${total ? (count / total * 100).toFixed(1) : "0.0"}%</td></tr>`;
     }).join("");
 
-    renderHanlinChapterLedger();
+    renderUnitChapterLedger();
 
     $("#yearLedger").innerHTML = years.slice().reverse().map((year, index) => {
       const info = official[year];
@@ -333,19 +333,19 @@
     }).join("");
   }
 
-  function renderHanlinChapterLedger() {
+  function renderUnitChapterLedger() {
     const chapters = window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter");
-    $("#hanlinChapterLedger").innerHTML = groups.map(g => {
+    $("#unitChapterLedger").innerHTML = groups.map(g => {
       const items = chapters.filter(item => item.group === g.id);
       const count = items.reduce((sum, item) => sum + capItemsForUnits(item.unitIds).length, 0);
-      return `<details class="hanlin-book-ledger" open><summary><strong>${esc(g.name)}</strong><span>${items.length} 個單元｜會考主概念標註 ${count} 題</span><b>展開／收合</b></summary>
-        <div class="hanlin-chapter-list">${items.map(item => {
+      return `<details class="unit-book-ledger" open><summary><strong>${esc(g.name)}</strong><span>${items.length} 個單元｜會考主概念標註 ${count} 題</span><b>展開／收合</b></summary>
+        <div class="unit-chapter-list">${items.map(item => {
           const capItems = capItemsForUnits(item.unitIds);
           const unitNames = item.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、");
-          return `<article class="hanlin-chapter-item">
+          return `<article class="unit-chapter-item">
             <div><strong>${esc(item.chapter)}｜${esc(item.title)}</strong><small>${esc(unitNames)}｜${esc(item.officialCodes)}</small></div>
             <span>會考 ${capItems.length} 題</span>
-            <div class="hanlin-cap-list">${capItems.map(cap => `<i title="${esc(cap.unitTitle)}">${esc(cap.label)}</i>`).join("") || "<i>凍結分析資料；仍依課綱出題</i>"}</div>
+            <div class="unit-cap-list">${capItems.map(cap => `<i title="${esc(cap.unitTitle)}">${esc(cap.label)}</i>`).join("") || "<i>凍結分析資料；仍依課綱出題</i>"}</div>
             <a href="?quiz=${item.id}">進入本單元小考 →</a>
           </article>`;
         }).join("")}</div>

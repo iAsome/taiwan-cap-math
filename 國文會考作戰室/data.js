@@ -344,7 +344,7 @@ window.CHINESE_DATA = (() => {
 
   const sourcePolicy = [
     { tier: 1, title: "教育部與官方考試資料", badge: "最高優先", rule: "決定考試範圍、名詞、題型、題數、時間與評分規準。任何來源與官方資料衝突時，無條件採官方版本。", use: "課綱、會考官方網站、官方題本與答案、疑義釋覆與計分說明" },
-    { tier: 2, title: "臺灣審定本出版社資料", badge: "第二優先", rule: "用來交叉比對課文選文、教學表達、典型例題與學生常見迷思；不得改變官方命題範圍。出版品若有勘誤，以出版社最新勘誤為準。", use: "康軒、翰林、南一之國中國文教科書、輔材、審定資訊與勘誤" },
+    { tier: 2, title: "臺灣審定本出版社資料", badge: "第二優先", rule: "用來交叉比對課文選文、教學表達、典型例題與學生常見迷思；不得改變官方命題範圍。出版品若有勘誤，以出版社最新勘誤為準。", use: "康軒、教育部、南一之國中國文教科書、輔材、審定資訊與勘誤" },
     { tier: 3, title: "公開網路資料與解題技巧", badge: "補充來源", rule: "只收可由定義、原文例句或完整推導驗證的內容。每條技巧標示『通過／有條件／不採用』；匿名轉貼與無法追溯說法不得單獨作為依據。", use: "教師文章、教學影片、學習平台、論壇與社群常見口訣，再由本站逐條驗算" }
   ];
 
@@ -358,7 +358,7 @@ window.CHINESE_DATA = (() => {
 
   const publisherSources = [
     { publisher: "康軒", title: "國中、國小教科用書與輔助教材", url: "https://www.knsh.com.tw/products/school", errata: "https://www.knsh.com.tw/service/errata", role: "國文課文選文、輔材類型與最新勘誤交叉檢查" },
-    { publisher: "翰林", title: "翰林出版官方網站", url: "https://www.hle.com.tw/user-hle.html", errata: "https://www.hle.com.tw/bulletin_qa_page.html", role: "國中國文章節用語、輔材與教材勘誤的第二層對照" },
+    { publisher: "教育部", title: "十二年國教課程綱要", url: "https://www.naer.edu.tw/PageSyllabus?fid=52", errata: "https://www.naer.edu.tw/PageSyllabus?fid=52", role: "國中國文章節用語、輔材與教材勘誤的第二層對照" },
     { publisher: "南一", title: "南一教育集團官方網站", url: "https://www.nani.com.tw/", errata: "https://www.nani.com.tw/", role: "國中國文教材體系、選文安排與出版資訊交叉檢查" }
   ];
 

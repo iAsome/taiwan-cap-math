@@ -37,7 +37,7 @@ window.EXAM_ENGINE = (() => {
   const chapterQuizzes = U.map(unit => ({
     id: `u${unit.id}`, group: unit.grade, chapter: `CH${unit.id}`, title: `${unit.domain}：${unit.title}`,
     unitIds: [unit.id], officialCodes: `EARTH-${String(unit.id).padStart(2, "0")}`, scope: "chapter",
-    source: "本站依課綱主題與翰林國三自然第五、六冊章節內容自行拆解之小考題庫"
+    source: "本站依課綱主題與教育部國三自然第五、六冊章節內容自行拆解之小考題庫"
   }));
 
   const groupNames = { 1: "地球的水與地貌", 2: "岩石與礦物", 3: "地球構造與板塊運動", 4: "天文與地球運動", 5: "天氣與環境變遷" };

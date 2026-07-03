@@ -273,7 +273,7 @@ window.SCIENCE_DATA = (() => {
 
   const sourcePolicy = [
     { tier: 1, title: "教育部與官方會考資料", badge: "最高優先", rule: "決定自然科（含理化）考試範圍、名詞、題型、題數與時間。任何來源與官方資料衝突時，無條件採官方版本。", use: "課綱、國中教育會考官方網站、官方題本、答案與試題說明" },
-    { tier: 2, title: "臺灣審定本出版社資料", badge: "第二優先", rule: "用來交叉比對章節順序、教學表達與典型例題；不得改變官方命題範圍。本站單元順序已依康軒、翰林、南一三版本共同的章節安排（基本測量→物質的世界→波動聲音→光→溫度與熱→物質的基本結構→…）交叉核對。", use: "康軒、翰林、南一之國中理化教科書與輔材" },
+    { tier: 2, title: "臺灣審定本出版社資料", badge: "第二優先", rule: "用來交叉比對章節順序、教學表達與典型例題；不得改變官方命題範圍。本站單元順序已依康軒、教育部、南一三版本共同的章節安排（基本測量→物質的世界→波動聲音→光→溫度與熱→物質的基本結構→…）交叉核對。", use: "康軒、教育部、南一之國中理化教科書與輔材" },
     { tier: 3, title: "公開網路資料與解題技巧", badge: "補充來源", rule: "只收可由定義、公式或完整推導驗證的內容。每條技巧標示「通過／有條件／不採用」，並附驗證理由。", use: "教師文章、教學影片、學習平台與社群常見說法，經本站逐條驗算" }
   ];
 
@@ -286,7 +286,7 @@ window.SCIENCE_DATA = (() => {
 
   const publisherSources = [
     { publisher: "康軒", title: "國中教科用書與輔助教材", url: "https://www.knsh.com.tw/products/school", errata: "https://www.knsh.com.tw/service/errata", role: "八上／八下／九上／九下理化章節順序核對來源" },
-    { publisher: "翰林", title: "翰林出版官方網站", url: "https://www.hle.com.tw/user-hle.html", errata: "https://www.hle.com.tw/bulletin_qa_page.html", role: "章節用語與教材勘誤的第二層對照" },
+    { publisher: "教育部", title: "十二年國教課程綱要", url: "https://www.naer.edu.tw/PageSyllabus?fid=52", errata: "https://www.naer.edu.tw/PageSyllabus?fid=52", role: "章節用語與教材勘誤的第二層對照" },
     { publisher: "南一", title: "南一教育集團官方網站", url: "https://www.nani.com.tw/", errata: "https://www.nani.com.tw/", role: "國中教材體系與章節安排交叉檢查" }
   ];
 

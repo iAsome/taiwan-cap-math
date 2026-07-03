@@ -253,7 +253,7 @@ window.EXAM_ENGINE = (() => {
     { id:"g9-2-c1", grade:9, book:"3下", term:"下學期", chapter:"CH1", title:"國三下第一單元：二次函數", seed:9321, unitIds:[24], officialCodes:"F-9-1～F-9-2" },
     { id:"g9-2-c2", grade:9, book:"3下", term:"下學期", chapter:"CH2", title:"國三下第二單元：統計與機率", seed:9322, unitIds:[20,25], officialCodes:"D-9-1～D-9-2" },
     { id:"g9-2-c3", grade:9, book:"3下", term:"下學期", chapter:"CH3", title:"國三下第三單元：立體圖形", seed:9323, unitIds:[26], officialCodes:"S-9-12～S-9-13" }
-  ].map(item => ({ ...item, scope:"chapter", questionCount:taxonomyQuestionCount(item.id) || chapterQuestionCount(item.unitIds), minutes:25, source:"翰林國中數學解題影音網 1A～3B 章節" }));
+  ].map(item => ({ ...item, scope:"chapter", questionCount:taxonomyQuestionCount(item.id) || chapterQuestionCount(item.unitIds), minutes:25, source:"教育部國中數學課綱章節 1A～3B" }));
 
   const quizCatalog = [...termQuizzes, ...chapterQuizzes];
 
@@ -276,7 +276,7 @@ window.EXAM_ENGINE = (() => {
       question.officialOrder = index + 1;
       return question;
     });
-    return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:questions.length, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"Hanlin-Damanguan-taxonomy-user-supplied", taxonomySource:quizTaxonomy[blueprint.id]?.source, questions };
+    return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:questions.length, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"MOE-curriculum-taxonomy-user-supplied", taxonomySource:quizTaxonomy[blueprint.id]?.source, questions };
   }
 
   function generateQuiz(quizId, seedOverride) {
@@ -312,7 +312,7 @@ window.EXAM_ENGINE = (() => {
       question.officialOrder = index + 1;
       return question;
     });
-    return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:targetCount, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"NAER-108-curriculum-grade-scope-Hanlin-term-order", questions };
+    return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:targetCount, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"NAER-108-curriculum-grade-scope-term-order", questions };
   }
 
   function makeReadingSet(r) {

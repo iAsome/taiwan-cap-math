@@ -37,7 +37,7 @@ window.EXAM_ENGINE = (() => {
   const chapterQuizzes = U.map(unit => ({
     id: `u${unit.id}`, group: unit.grade, chapter: `CH${unit.id}`, title: `${unit.domain}：${unit.title}`,
     unitIds: [unit.id], officialCodes: `CIVICS-${String(unit.id).padStart(2, "0")}`, scope: "chapter",
-    source: "本站依課綱主題與康軒、南一、翰林國中社會（公民篇）內容自行拆解之小考題庫"
+    source: "本站依課綱主題與康軒、南一、教育部國中社會（公民篇）內容自行拆解之小考題庫"
   }));
 
   const groupNames = { 1: "自我、人際與社會", 2: "法律與生活", 3: "政治與民主治理", 4: "經濟與生活", 5: "全球化與公民參與" };

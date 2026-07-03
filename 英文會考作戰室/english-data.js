@@ -287,7 +287,7 @@ window.ENGLISH_DATA = (() => {
 
   const publisherSources = [
     { publisher: "康軒", title: "國中、國小教科用書與輔助教材", url: "https://www.knsh.com.tw/products/school", errata: "https://www.knsh.com.tw/service/errata", role: "文法教學順序、例句表達與最新勘誤交叉檢查" },
-    { publisher: "翰林", title: "翰林出版官方網站", url: "https://www.hle.com.tw/user-hle.html", errata: "https://www.hle.com.tw/bulletin_qa_page.html", role: "國中英語各冊文法主題編排順序的第二層對照" },
+    { publisher: "教育部", title: "十二年國教課程綱要", url: "https://www.naer.edu.tw/PageSyllabus?fid=52", errata: "https://www.naer.edu.tw/PageSyllabus?fid=52", role: "國中英語各冊文法主題編排順序的第二層對照" },
     { publisher: "南一", title: "南一教育集團官方網站", url: "https://www.nani.com.tw/", errata: "https://www.nani.com.tw/", role: "國中教材體系、字彙分冊安排與出版資訊交叉檢查" }
   ];
 

@@ -296,7 +296,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       acc[key] = years.reduce((sum, year) => sum + capAnalysis.formByYear[year][key], 0); return acc;
     }, {});
     $("#formAnalysis").innerHTML = Object.entries(formLabels).map(([key, [label, detail]]) => `<article class="form-card"><strong>${formTotals[key]}</strong><span>${label}</span><small>${detail}</small></article>`).join("");
-    renderHanlinChapterLedger();
+    renderUnitChapterLedger();
 
     $("#yearLedger").innerHTML = years.slice().reverse().map((year, index) => {
       const info = official[year];
@@ -362,7 +362,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     return `<article class="quiz-card ${item.term === "總複習" ? "total" : ""} ${isChapter ? "chapter" : ""}">
       <div class="quiz-card-top"><span>${esc(isChapter ? `${item.book} ${item.chapter}` : item.term)}</span><small>${item.questionCount || 12} 題｜${item.minutes || 25} 分鐘</small></div>
       <h3>${esc(item.title)}</h3>
-      <p>${isChapter ? "本單元獨立題庫，依翰林章節切分；交卷後逐題顯示公式、詳解、技巧與易錯點。" : "四選一、即時計分、逐題詳解；題目只從此範圍生成。"}</p>
+      <p>${isChapter ? "本單元獨立題庫，依教育部章節切分；交卷後逐題顯示公式、詳解、技巧與易錯點。" : "四選一、即時計分、逐題詳解；題目只從此範圍生成。"}</p>
       <div class="quiz-unit-list">${scopeUnits.map(title => `<span>${esc(title)}</span>`).join("")}</div>
       ${capSummary(item, true)}
       <small class="quiz-official-code">課綱編碼：${esc(item.officialCodes)}</small>
@@ -389,28 +389,28 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       return `<section class="quiz-grade-section">
         <div class="quiz-grade-heading"><h2>國${gradeName(grade)}</h2><span>先選上學期、下學期或總複習</span></div>
         <div class="quiz-track-grid">
-          ${quizTrack("上學期", `${upper.length} 個翰林單元小考`, upper, grade, "upper")}
-          ${quizTrack("下學期", `${lower.length} 個翰林單元小考`, lower, grade, "lower")}
+          ${quizTrack("上學期", `${upper.length} 個教育部單元小考`, upper, grade, "upper")}
+          ${quizTrack("下學期", `${lower.length} 個教育部單元小考`, lower, grade, "lower")}
           ${quizTrack("總複習", "上學期總複習、下學期總複習、全年總複習", reviews, grade, "review")}
         </div>
       </section>`;
     }).join("");
   }
 
-  function renderHanlinChapterLedger() {
+  function renderUnitChapterLedger() {
     const chapters = window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter");
     const books = [...new Set(chapters.map(item => item.book))];
-    $("#hanlinChapterLedger").innerHTML = books.map(book => {
+    $("#unitChapterLedger").innerHTML = books.map(book => {
       const items = chapters.filter(item => item.book === book);
       const count = items.reduce((sum, item) => sum + capItemsForUnits(item.capUnitIds || item.unitIds).length, 0);
-      return `<details class="hanlin-book-ledger" open><summary><strong>${esc(book)}</strong><span>${items.length} 個翰林單元｜會考主概念標註 ${count} 題</span><b>展開／收合</b></summary>
-        <div class="hanlin-chapter-list">${items.map(item => {
+      return `<details class="unit-book-ledger" open><summary><strong>${esc(book)}</strong><span>${items.length} 個教育部單元｜會考主概念標註 ${count} 題</span><b>展開／收合</b></summary>
+        <div class="unit-chapter-list">${items.map(item => {
           const capItems = capItemsForUnits(item.capUnitIds || item.unitIds);
           const unitNames = item.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、");
-          return `<article class="hanlin-chapter-item">
+          return `<article class="unit-chapter-item">
             <div><strong>${esc(item.chapter)}｜${esc(item.title.replace(/^國[一二三][上下]第[一二三四五六]單元：/, ""))}</strong><small>${esc(unitNames)}｜${esc(item.officialCodes)}</small></div>
             <span>會考 ${capItems.length} 題</span>
-            <div class="hanlin-cap-list">${capItems.map(cap => `<i title="${esc(cap.unitTitle)}">${esc(cap.label)}</i>`).join("") || "<i>近十年未列為主概念；仍依課綱出題</i>"}</div>
+            <div class="unit-cap-list">${capItems.map(cap => `<i title="${esc(cap.unitTitle)}">${esc(cap.label)}</i>`).join("") || "<i>近十年未列為主概念；仍依課綱出題</i>"}</div>
             <a href="?quiz=${item.id}">進入本單元小考 →</a>
           </article>`;
         }).join("")}</div>

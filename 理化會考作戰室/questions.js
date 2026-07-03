@@ -266,7 +266,7 @@ window.EXAM_ENGINE = (() => {
     { id: "g9-2-c2", grade: 9, book: "3下", term: "下學期", chapter: "CH2", title: "國三下第二單元：電池與電流的化學效應", seed: 9122, unitIds: [19], domainNote: "電磁（C）" },
     { id: "g9-2-c3", grade: 9, book: "3下", term: "下學期", chapter: "CH3", title: "國三下第三單元：電流的磁效應", seed: 9123, unitIds: [20], domainNote: "電磁（C）" },
     { id: "g9-2-c4", grade: 9, book: "3下", term: "下學期", chapter: "CH4", title: "國三下第四單元：電磁感應與發電", seed: 9124, unitIds: [21], domainNote: "電磁（C）" }
-  ].map(item => ({ ...item, scope: "chapter", questionCount: 8, minutes: 15, source: "依康軒／翰林／南一三版本共同的章節順序整理（非單一出版社逐字核對版本）" }));
+  ].map(item => ({ ...item, scope: "chapter", questionCount: 8, minutes: 15, source: "依康軒／教育部／南一三版本共同的章節順序整理（非單一出版社逐字核對版本）" }));
 
   const quizCatalog = [...termQuizzes, ...chapterQuizzes];
 

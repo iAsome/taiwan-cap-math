@@ -37,7 +37,7 @@ window.EXAM_ENGINE = (() => {
   const chapterQuizzes = U.map(unit => ({
     id: `u${unit.id}`, group: unit.grade, chapter: `CH${unit.id}`, title: `${unit.domain}：${unit.title}`,
     unitIds: [unit.id], officialCodes: `GEO-${String(unit.id).padStart(2, "0")}`, scope: "chapter",
-    source: "本站依課綱主題與翰林／康軒／南一國中社會（地理冊）章節內容自行拆解之小考題庫"
+    source: "本站依課綱主題與教育部／康軒／南一國中社會（地理冊）章節內容自行拆解之小考題庫"
   }));
 
   const groupNames = { 1: "地理視野與技能", 2: "台灣地理", 3: "中國地理", 4: "世界地理", 5: "全球關連與永續發展" };

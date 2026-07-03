@@ -37,7 +37,7 @@ window.EXAM_ENGINE = (() => {
   const chapterQuizzes = U.map(unit => ({
     id: `u${unit.id}`, group: unit.grade, chapter: `CH${unit.id}`, title: `${unit.domain}：${unit.title}`,
     unitIds: [unit.id], officialCodes: `HISTORY-${String(unit.id).padStart(2, "0")}`, scope: "chapter",
-    source: "本站依課綱主題與翰林國中社會歷史冊章節內容自行拆解之小考題庫"
+    source: "本站依課綱主題與教育部國中社會歷史冊章節內容自行拆解之小考題庫"
   }));
 
   const groupNames = { 1: "台灣早期歷史", 2: "台灣近代歷史", 3: "中國歷史", 4: "世界歷史", 5: "歷史思維與探究方法" };

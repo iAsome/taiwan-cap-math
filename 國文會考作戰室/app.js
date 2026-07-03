@@ -329,17 +329,17 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   function renderChapterLedger() {
     const chapters = window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter");
     const books = [...new Set(chapters.map(item => item.book))];
-    $("#hanlinChapterLedger").innerHTML = books.map(book => {
+    $("#unitChapterLedger").innerHTML = books.map(book => {
       const items = chapters.filter(item => item.book === book);
       const count = items.reduce((sum, item) => sum + capItemsForUnits(item.capUnitIds || item.unitIds).length, 0);
-      return `<details class="hanlin-book-ledger" open><summary><strong>${esc(book)}</strong><span>${items.length} 個單元｜會考主概念標註 ${count} 題</span><b>展開／收合</b></summary>
-        <div class="hanlin-chapter-list">${items.map(item => {
+      return `<details class="unit-book-ledger" open><summary><strong>${esc(book)}</strong><span>${items.length} 個單元｜會考主概念標註 ${count} 題</span><b>展開／收合</b></summary>
+        <div class="unit-chapter-list">${items.map(item => {
           const capItems = capItemsForUnits(item.capUnitIds || item.unitIds);
           const unitNames = item.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、");
-          return `<article class="hanlin-chapter-item">
+          return `<article class="unit-chapter-item">
             <div><strong>${esc(item.title)}</strong><small>${esc(unitNames)}｜${esc(item.officialCodes)}</small></div>
             <span>會考 ${capItems.length} 題</span>
-            <div class="hanlin-cap-list">${capItems.map(cap => `<i title="${esc(cap.unitTitle)}">${esc(cap.label)}</i>`).join("") || "<i>已建置年度未列為主概念；仍依課綱出題</i>"}</div>
+            <div class="unit-cap-list">${capItems.map(cap => `<i title="${esc(cap.unitTitle)}">${esc(cap.label)}</i>`).join("") || "<i>已建置年度未列為主概念；仍依課綱出題</i>"}</div>
             <a href="?quiz=${item.id}">進入本單元小考 →</a>
           </article>`;
         }).join("")}</div>
