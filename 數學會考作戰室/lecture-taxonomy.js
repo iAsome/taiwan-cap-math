@@ -4423,6 +4423,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": true,
           "caption": "點所連成圖形的面積"
         }
       },
@@ -6398,6 +6399,16 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
+        "type": "diagram",
+        "spec": {
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
+          "caption": "點、線、角、多邊形的標記與對角線"
+        }
+      },
+      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -6439,6 +6450,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": true,
           "caption": "垂直"
         }
       },
@@ -6929,6 +6941,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "線對稱圖形"
         }
       },
@@ -6967,6 +6980,13 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
+        "type": "diagram",
+        "spec": {
+          "kind": "threeView",
+          "caption": "找到對稱點"
+        }
+      },
+      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -6999,6 +7019,13 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
+      },
+      {
+        "type": "diagram",
+        "spec": {
+          "kind": "threeView",
+          "caption": "常見多邊形的對角線與對稱軸"
+        }
       },
       {
         "type": "text",
@@ -7037,7 +7064,11 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "solidPrism",
+          "kind": "threeView",
+          "solid": "長方體",
+          "front": "長方形",
+          "top": "長方形",
+          "side": "長方形",
           "caption": "視圖"
         }
       },
@@ -7074,6 +7105,17 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
+      },
+      {
+        "type": "diagram",
+        "spec": {
+          "kind": "threeView",
+          "solid": "長方體",
+          "front": "長方形",
+          "top": "長方形",
+          "side": "長方形",
+          "caption": "三視圖"
+        }
       },
       {
         "type": "text",
@@ -7117,6 +7159,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "對稱線段等長的應用"
         }
       },
@@ -7153,6 +7196,13 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
+      },
+      {
+        "type": "diagram",
+        "spec": {
+          "kind": "threeView",
+          "caption": "對稱角相等的應用"
+        }
       },
       {
         "type": "text",
@@ -7242,6 +7292,17 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
+        "type": "diagram",
+        "spec": {
+          "kind": "threeView",
+          "solid": "長方體",
+          "front": "長方形",
+          "top": "長方形",
+          "side": "長方形",
+          "caption": "繪製三視圖"
+        }
+      },
+      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -7278,7 +7339,11 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "solidPrism",
+          "kind": "threeView",
+          "solid": "長方體",
+          "front": "長方形",
+          "top": "長方形",
+          "side": "長方形",
           "caption": "不同方向的視圖"
         }
       },
@@ -7319,7 +7384,11 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "solidPrism",
+          "kind": "threeView",
+          "solid": "圓柱",
+          "front": "長方形",
+          "top": "圓形",
+          "side": "長方形",
           "caption": "三視圖的活用題"
         }
       },
@@ -7329,12 +7398,12 @@ window.LECTURE_TAXONOMY = {
       },
       {
         "type": "example",
-        "q": "例題一：某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
-        "a": "正確答案：A — 4 個\n1. 正視、俯視皆填滿 2×2 → 至少每欄 1 個。\n2. 最少 4 個立方塊可達成。"
+        "q": "例題一：一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
+        "a": "正確答案：A — 圓形\n1. 俯視圓柱只看到圓形的頂面。\n2. 正視圖才是長方形。"
       },
       {
         "type": "pitfall",
-        "html": "<p><strong>易錯：</strong>最少個數不一定等於體積最大。</p><p><strong>快解：</strong>三視圖還原：取各視圖要求的最多層數。</p>"
+        "html": "<p><strong>易錯：</strong>方向不同，視圖形狀不同。</p><p><strong>快解：</strong>圓柱：俯視 = 圓、正視 = 長方形。</p>"
       },
       {
         "type": "text",
@@ -7401,18 +7470,13 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "barChart",
+          "kind": "histogram",
           "values": [
-            3,
-            7,
+            2,
             5,
-            9
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C",
-            "D"
+            8,
+            4,
+            1
           ],
           "caption": "次數分配直方圖與次數分配折線圖"
         }
@@ -7536,18 +7600,20 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "barChart",
+          "kind": "lineChart",
           "values": [
-            3,
-            7,
+            2,
             5,
-            9
+            3,
+            8,
+            6
           ],
           "labels": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
           ],
           "caption": "累積次數分配折線圖和相對次數分配折線圖與累積相對次數分配折線圖"
         }
@@ -7630,9 +7696,17 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
+          "kind": "pieChart",
+          "slices": [
+            {
+              "label": "甲",
+              "pct": 25
+            },
+            {
+              "label": "其他",
+              "pct": 75
+            }
+          ],
           "caption": "圓形圖的判讀"
         }
       },
@@ -7673,18 +7747,13 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "barChart",
+          "kind": "histogram",
           "values": [
-            3,
-            7,
+            2,
             5,
-            9
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C",
-            "D"
+            8,
+            4,
+            1
           ],
           "caption": "直方圖的判讀"
         }
@@ -7726,18 +7795,20 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "barChart",
+          "kind": "lineChart",
           "values": [
-            3,
-            7,
+            2,
             5,
-            9
+            3,
+            8,
+            6
           ],
           "labels": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
           ],
           "caption": "折線圖的判讀"
         }
@@ -7779,9 +7850,17 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
+          "kind": "pieChart",
+          "slices": [
+            {
+              "label": "甲",
+              "pct": 25
+            },
+            {
+              "label": "其他",
+              "pct": 75
+            }
+          ],
           "caption": "兩種統計圖表的交互判讀"
         }
       },
@@ -9719,6 +9798,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": true,
           "caption": "畢氏定理"
         }
       },
@@ -9764,6 +9844,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": true,
           "caption": "直角三角形斜邊上的高"
         }
       },
@@ -9867,6 +9948,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": true,
           "caption": "利用畢氏定理求斜邊上的高"
         }
       },
@@ -9912,6 +9994,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": true,
           "caption": "利用畢氏定理求邊長"
         }
       },
@@ -9957,6 +10040,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": true,
           "caption": "利用畢氏定理求面積"
         }
       },
@@ -10007,6 +10091,7 @@ window.LECTURE_TAXONOMY = {
             }
           ],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "畢氏定理在生活中的應用"
         }
       },
@@ -13348,6 +13433,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "三角形的內角與外角"
         }
       },
@@ -13392,7 +13478,13 @@ window.LECTURE_TAXONOMY = {
           "a": 4,
           "b": 3,
           "sideLabels": [],
-          "angleLabels": [],
+          "angleLabels": [
+            {
+              "at": "B",
+              "label": "64°"
+            }
+          ],
+          "rightAngle": false,
           "caption": "三角形內、外角的計算"
         }
       },
@@ -13520,14 +13612,14 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "barChart",
+          "kind": "lineChart",
           "values": [
             90,
             35
           ],
           "labels": [
-            "A",
-            "B"
+            "1",
+            "2"
           ],
           "caption": "紙片翻摺求角度"
         }
@@ -13573,7 +13665,13 @@ window.LECTURE_TAXONOMY = {
           "a": 4,
           "b": 3,
           "sideLabels": [],
-          "angleLabels": [],
+          "angleLabels": [
+            {
+              "at": "B",
+              "label": "110°"
+            }
+          ],
+          "rightAngle": false,
           "caption": "利用 8 字型關係求角度"
         }
       },
@@ -13659,7 +13757,13 @@ window.LECTURE_TAXONOMY = {
           "a": 4,
           "b": 3,
           "sideLabels": [],
-          "angleLabels": [],
+          "angleLabels": [
+            {
+              "at": "B",
+              "label": "40°"
+            }
+          ],
+          "rightAngle": false,
           "caption": "等腰三角形摺疊的計算"
         }
       },
@@ -13746,6 +13850,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "多邊形的全等"
         }
       },
@@ -13791,6 +13896,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "三角形全等的判別"
         }
       },
@@ -13831,7 +13937,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "triangle",
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "多邊形的對應關係"
         }
       },
@@ -13877,6 +13986,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "三角形全等的判別應用"
         }
       },
@@ -14009,6 +14119,7 @@ window.LECTURE_TAXONOMY = {
             }
           ],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "正三角形的高與面積"
         }
       },
@@ -14053,7 +14164,13 @@ window.LECTURE_TAXONOMY = {
           "a": 4,
           "b": 3,
           "sideLabels": [],
-          "angleLabels": [],
+          "angleLabels": [
+            {
+              "at": "B",
+              "label": "80°"
+            }
+          ],
+          "rightAngle": false,
           "caption": "等腰三角形性質的應用"
         }
       },
@@ -14106,9 +14223,10 @@ window.LECTURE_TAXONOMY = {
           "angleLabels": [
             {
               "at": "B",
-              "label": "B°"
+              "label": "40°"
             }
           ],
+          "rightAngle": false,
           "caption": "三角形全等性質的應用"
         }
       },
@@ -14154,6 +14272,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "三角形的邊角關係"
         }
       },
@@ -14199,6 +14318,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "求邊長的範圍"
         }
       },
@@ -14244,6 +14364,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "由邊長的範圍求周長"
         }
       },
@@ -14371,6 +14492,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "三角形邊角不等關係的應用"
         }
       },
@@ -14721,9 +14843,10 @@ window.LECTURE_TAXONOMY = {
           "angleLabels": [
             {
               "at": "ABC",
-              "label": "ABC°"
+              "label": "70°"
             }
           ],
+          "rightAngle": false,
           "caption": "三角形與平行線截角性質"
         }
       },
@@ -15583,6 +15706,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": true,
           "caption": "特殊四邊形的性質與判別"
         }
       },
@@ -16267,6 +16391,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "等高或同高三角形的面積比"
         }
       },
@@ -16396,6 +16521,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "三角形兩邊中點連線性質"
         }
       },
@@ -16441,6 +16567,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "等高三角形的面積比"
         }
       },
@@ -16533,6 +16660,7 @@ window.LECTURE_TAXONOMY = {
             }
           ],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "三角形兩邊中點連線的問題"
         }
       },
@@ -16578,6 +16706,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "三角形兩邊中點連線的應用"
         }
       },
@@ -16707,6 +16836,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "相似形"
         }
       },
@@ -16752,6 +16882,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "相似形的判別"
         }
       },
@@ -16802,6 +16933,7 @@ window.LECTURE_TAXONOMY = {
             }
           ],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "三角形的相似性質與判別"
         }
       },
@@ -16846,7 +16978,13 @@ window.LECTURE_TAXONOMY = {
           "a": 4,
           "b": 3,
           "sideLabels": [],
-          "angleLabels": [],
+          "angleLabels": [
+            {
+              "at": "B",
+              "label": "108°"
+            }
+          ],
+          "rightAngle": false,
           "caption": "相似多邊形的邊角關係"
         }
       },
@@ -16892,6 +17030,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "相似多邊形的判別"
         }
       },
@@ -16942,6 +17081,7 @@ window.LECTURE_TAXONOMY = {
             }
           ],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "相似多邊形的應用"
         }
       },
@@ -16987,6 +17127,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "相似三角形的判別"
         }
       },
@@ -17032,6 +17173,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "相似三角形的判別與應用"
         }
       },
@@ -17086,6 +17228,7 @@ window.LECTURE_TAXONOMY = {
             }
           ],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "利用三角形的相似性質求線段長"
         }
       },
@@ -17131,6 +17274,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "相似三角形對應邊、周長、面積的比的關係"
         }
       },
@@ -17178,9 +17322,10 @@ window.LECTURE_TAXONOMY = {
           "angleLabels": [
             {
               "at": "C",
-              "label": "C°"
+              "label": "90°"
             }
           ],
+          "rightAngle": true,
           "caption": "直角三角形的母子相似性質"
         }
       },
@@ -17266,7 +17411,13 @@ window.LECTURE_TAXONOMY = {
           "a": 4,
           "b": 3,
           "sideLabels": [],
-          "angleLabels": [],
+          "angleLabels": [
+            {
+              "at": "B",
+              "label": "45°"
+            }
+          ],
+          "rightAngle": true,
           "caption": "特殊直角三角形的邊長比"
         }
       },
@@ -17311,7 +17462,13 @@ window.LECTURE_TAXONOMY = {
           "a": 4,
           "b": 3,
           "sideLabels": [],
-          "angleLabels": [],
+          "angleLabels": [
+            {
+              "at": "B",
+              "label": "30°"
+            }
+          ],
+          "rightAngle": true,
           "caption": "直角三角形的邊長比值"
         }
       },
@@ -17357,6 +17514,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "相似三角形的周長、面積比"
         }
       },
@@ -17404,9 +17562,10 @@ window.LECTURE_TAXONOMY = {
           "angleLabels": [
             {
               "at": "ACB",
-              "label": "ACB°"
+              "label": "90°"
             }
           ],
+          "rightAngle": true,
           "caption": "利用三角形相似性質作測量"
         }
       },
@@ -17452,6 +17611,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "特殊直角三角形邊長比的應用"
         }
       },
@@ -17502,6 +17662,7 @@ window.LECTURE_TAXONOMY = {
             }
           ],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "三角形相似性質的應用"
         }
       },
@@ -17585,8 +17746,9 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 48,
+          "kind": "sector",
+          "angleLabel": "60°",
+          "angleDeg": 60,
           "rLabel": "6",
           "caption": "圓弧長與扇形"
         }
@@ -17628,8 +17790,9 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 32,
+          "kind": "sector",
+          "angleLabel": "90°",
+          "angleDeg": 90,
           "rLabel": "4",
           "caption": "扇面的面積與周長"
         }
@@ -17671,8 +17834,9 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 40,
+          "kind": "sector",
+          "angleLabel": "θ",
+          "angleDeg": 70,
           "rLabel": "r",
           "caption": "扇形重疊部分的面積與周長"
         }
@@ -17714,8 +17878,9 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 48,
+          "kind": "sector",
+          "angleLabel": "60°",
+          "angleDeg": 60,
           "rLabel": "6",
           "caption": "圖形旋轉掃過的軌跡或區域"
         }
@@ -18187,8 +18352,9 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 40,
+          "kind": "sector",
+          "angleLabel": "80°",
+          "angleDeg": 80,
           "rLabel": "r",
           "caption": "弧的度數"
         }
@@ -18230,8 +18396,9 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 40,
+          "kind": "sector",
+          "angleLabel": "θ",
+          "angleDeg": 70,
           "rLabel": "r",
           "caption": "圓心角與弦的關係"
         }
@@ -18273,9 +18440,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "圓周角"
         }
       },
@@ -18359,8 +18527,9 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 40,
+          "kind": "sector",
+          "angleLabel": "100°",
+          "angleDeg": 100,
           "rLabel": "r",
           "caption": "圓心角、圓周角與弧的度數"
         }
@@ -18827,6 +18996,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "幾何證明與應用"
         }
       },
@@ -18872,6 +19042,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "尺規作圖與幾何推理"
         }
       },
@@ -18917,6 +19088,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "意義"
         }
       },
@@ -18962,6 +19134,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "作法"
         }
       },
@@ -19007,6 +19180,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "位置"
         }
       },
@@ -19047,7 +19221,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "triangle",
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "性質"
         }
       },
@@ -19088,8 +19265,9 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 40,
+          "kind": "sector",
+          "angleLabel": "60°",
+          "angleDeg": 60,
           "rLabel": "r",
           "caption": "外心與角度的計算"
         }
@@ -19265,6 +19443,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "意義"
         }
       },
@@ -19310,6 +19489,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "作法"
         }
       },
@@ -19355,6 +19535,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "位置"
         }
       },
@@ -19609,6 +19790,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "意義"
         }
       },
@@ -19654,6 +19836,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "作法"
         }
       },
@@ -19699,6 +19882,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "位置"
         }
       },
@@ -19739,7 +19923,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "triangle",
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "性質"
         }
       },
@@ -19821,11 +20008,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "重心與面積的計算"
         }
       },
@@ -19912,6 +20098,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "等腰三角形"
         }
       },
@@ -19957,6 +20144,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": true,
           "caption": "直角三角形"
         }
       },
@@ -20002,6 +20190,7 @@ window.LECTURE_TAXONOMY = {
           "b": 3,
           "sideLabels": [],
           "angleLabels": [],
+          "rightAngle": false,
           "caption": "正三角形"
         }
       },
@@ -20085,24 +20274,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數"
         }
       },
@@ -20143,31 +20318,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數 y = ax² 與 y = a(x - h)² + k 的圖形"
         }
       },
@@ -20208,31 +20362,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": false,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數圖形的開口方向"
         }
       },
@@ -20273,31 +20406,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數圖形的頂點座標"
         }
       },
@@ -20338,31 +20450,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": false,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數圖形的對稱軸"
         }
       },
@@ -20403,31 +20494,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數圖形的開口大小"
         }
       },
@@ -20468,31 +20538,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數圖形的平移"
         }
       },
@@ -20533,24 +20582,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -4,
-          "maxY": 2,
-          "points": [
-            {
-              "x": 2,
-              "y": -3,
-              "label": "(2,−3)"
-            },
-            {
-              "x": 0,
-              "y": 1,
-              "label": "(0,1)"
-            }
-          ],
-          "lines": [],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "求二次函數"
         }
       },
@@ -20591,31 +20626,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": false,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "函數圖形開口大小的應用"
         }
       },
@@ -20656,31 +20670,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": false,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "求二次函數圖形的基本要項"
         }
       },
@@ -20721,31 +20714,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數圖形與水平線交點"
         }
       },
@@ -20786,24 +20758,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數的應用"
         }
       },
@@ -20844,31 +20802,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數 y = a(x - h)² + k 的最大值或最小值"
         }
       },
@@ -20909,31 +20846,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": false,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數圖形的頂點位置"
         }
       },
@@ -20974,31 +20890,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數值的變化"
         }
       },
@@ -21039,31 +20934,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": false,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數最大值或最小值的判別"
         }
       },
@@ -21104,31 +20978,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
+          "kind": "parabola",
+          "opensUp": true,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "二次函數圖形與 x 軸交點數"
         }
       },
@@ -21169,7 +21022,7 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
+          "kind": "parabola",
           "caption": "已知最大、小值的求值問題"
         }
       },
@@ -21210,24 +21063,10 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [],
+          "kind": "parabola",
+          "opensUp": false,
+          "vertexLabel": "頂點",
+          "axisLabel": "對稱軸",
           "caption": "已知最大、小值求二次函數"
         }
       },
@@ -21309,16 +21148,16 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "diagram",
         "spec": {
-          "kind": "barChart",
+          "kind": "lineChart",
           "values": [
             40,
             20,
             20
           ],
           "labels": [
-            "A",
-            "B",
-            "C"
+            "1",
+            "2",
+            "3"
           ],
           "caption": "中間累積次數分配折線圖判斷 Qm（m＝1、2、3） 所在組別"
         }
@@ -21925,11 +21764,11 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>平面與平面</strong>是「空間中的線與平面」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>平面與平面</strong>是「空間中的線與平面」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
@@ -21940,7 +21779,7 @@ window.LECTURE_TAXONOMY = {
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -21966,11 +21805,11 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>直線與平面</strong>是「空間中的線與平面」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>直線與平面</strong>是「空間中的線與平面」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
@@ -22005,7 +21844,7 @@ window.LECTURE_TAXONOMY = {
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22031,11 +21870,11 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>直線與直線</strong>是「空間中的線與平面」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>直線與直線</strong>是「空間中的線與平面」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
@@ -22047,7 +21886,7 @@ window.LECTURE_TAXONOMY = {
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22073,11 +21912,11 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>空間中線與平面間的關係</strong>是「空間中的線與平面」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>空間中線與平面間的關係</strong>是「空間中的線與平面」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
@@ -22112,7 +21951,7 @@ window.LECTURE_TAXONOMY = {
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22138,11 +21977,11 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>空間中兩點距離的計算</strong>是「空間中的線與平面」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>空間中兩點距離的計算</strong>是「空間中的線與平面」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
@@ -22153,7 +21992,7 @@ window.LECTURE_TAXONOMY = {
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22179,11 +22018,11 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>角柱</strong>是「角柱與圓柱」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>角柱</strong>是「角柱與圓柱」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
@@ -22194,7 +22033,7 @@ window.LECTURE_TAXONOMY = {
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22220,24 +22059,24 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>圓柱</strong>是「角柱與圓柱」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>圓柱</strong>是「角柱與圓柱」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 24,
+          "kind": "cylinder",
           "rLabel": "3",
+          "hLabel": "10",
           "caption": "圓柱"
         }
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22263,22 +22102,22 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>展開圖的判讀</strong>是「角柱與圓柱」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>展開圖的判讀</strong>是「角柱與圓柱」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
+          "kind": "cylinder",
           "caption": "展開圖的判讀"
         }
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22304,11 +22143,11 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>由展開圖求體積與表面積</strong>是「角柱與圓柱」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>由展開圖求體積與表面積</strong>是「角柱與圓柱」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
@@ -22319,7 +22158,7 @@ window.LECTURE_TAXONOMY = {
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22345,24 +22184,24 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>求柱體的體積與表面積</strong>是「角柱與圓柱」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>求柱體的體積與表面積</strong>是「角柱與圓柱」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
+          "kind": "cylinder",
+          "rLabel": "2",
+          "hLabel": "5",
           "caption": "求柱體的體積與表面積"
         }
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22388,31 +22227,33 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>角錐</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>角錐</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
         "spec": {
-          "kind": "solidPrism",
+          "kind": "pyramid",
+          "baseLabel": "a",
+          "hLabel": "h",
           "caption": "角錐"
         }
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
-        "q": "例題一：與角柱同底同高的角錐，體積為角柱的？",
-        "a": "正確答案：A — [[frac:1|3]]\n1. 錐體 V = [[frac:Bh|3]]。\n2. 同底同高柱體的 [[frac:1|3]]。"
+        "q": "例題一：正四角錐（底面為正方形）共由幾個面組成？",
+        "a": "正確答案：A — 5 個\n1. 底面 1 個正方形。\n2. 側面 4 個三角形，共 1+4=5 個面。"
       },
       {
         "type": "pitfall",
-        "html": "<p><strong>易錯：</strong>不是 [[frac:1|2]]。</p><p><strong>快解：</strong>錐體 V = [[frac:(1|3)]]×底面積×高。</p>"
+        "html": "<p><strong>易錯：</strong>別漏算底面。</p><p><strong>快解：</strong>角錐 = 1 個底面 + n 個三角形側面。</p>"
       },
       {
         "type": "text",
@@ -22429,33 +22270,34 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>圓錐</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>圓錐</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 24,
+          "kind": "cone",
           "rLabel": "3",
+          "hLabel": "4",
+          "lLabel": "l",
           "caption": "圓錐"
         }
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
-        "q": "例題一：圓錐底面半徑 3、高 4，體積？",
-        "a": "正確答案：D — 12π\n1. V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "q": "例題一：直圓錐底面半徑 3、高 4，母線長？",
+        "a": "正確答案：D — 5\n1. 母線 l = √(r²+h²) = √(9+16) = 5。"
       },
       {
         "type": "pitfall",
-        "html": "<p><strong>易錯：</strong>h 是垂直高，不是斜高。</p><p><strong>快解：</strong>圓錐 V = [[frac:πr²h|3]]。</p>"
+        "html": "<p><strong>易錯：</strong>母線是斜邊，不是垂直高。</p><p><strong>快解：</strong>母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。</p>"
       },
       {
         "type": "text",
@@ -22472,31 +22314,24 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>求角錐的表面積</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>求角錐的表面積</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
         "spec": {
-          "kind": "triangle",
-          "a": 6,
-          "b": 3,
-          "sideLabels": [
-            {
-              "edge": "AB",
-              "label": "6"
-            }
-          ],
-          "angleLabels": [],
+          "kind": "pyramid",
+          "baseLabel": "6",
+          "hLabel": "h",
           "caption": "求角錐的表面積"
         }
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22522,26 +22357,24 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>角錐表面積的應用</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>角錐表面積的應用</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
         "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
+          "kind": "pyramid",
+          "baseLabel": "10",
+          "hLabel": "h",
           "caption": "角錐表面積的應用"
         }
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22567,24 +22400,25 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>由展開圖求圓錐的表面積</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>由展開圖求圓錐的表面積</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 70,
+          "kind": "cone",
           "rLabel": "10",
+          "hLabel": "h",
+          "lLabel": "10",
           "caption": "由展開圖求圓錐的表面積"
         }
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",
@@ -22610,24 +22444,25 @@ window.LECTURE_TAXONOMY = {
     "blocks": [
       {
         "type": "text",
-        "html": "<p><strong>圓錐表面積的計算</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體體積是同底同高柱體的 [[frac:1|3]]。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
+        "html": "<p><strong>圓錐表面積的計算</strong>是「角錐與圓錐」的核心題型之一。解題時先對照 立體圖形、表面積與體積 的觀念：柱體體積＝底面積×高；錐體（直圓錐、正角錐）在國中處理展開圖與表面積。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>"
       },
       {
         "type": "formula",
-        "content": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]"
+        "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
         "type": "diagram",
         "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
+          "kind": "cone",
+          "rLabel": "3",
+          "hLabel": "h",
+          "lLabel": "5",
           "caption": "圓錐表面積的計算"
         }
       },
       {
         "type": "text",
-        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
+        "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
       {
         "type": "example",

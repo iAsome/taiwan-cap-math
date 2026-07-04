@@ -22,6 +22,32 @@ const SUBJECTS = [
 
 const diagramPattern = /數線|絕對值|相反數|正負數|坐標|函數圖|線型函數|二次函數|三角形|全等|相似|畢氏|平行|四邊形|圓|弧|盒狀|統計|機率|樹狀|長條|折線|立體|角柱|角錐|空間/;
 
+// 數學 kind 對照表：題文命中 regex 時，spec.kind 必須是課本正確圖形（specific-first，取第一個命中）
+const MATH_KIND_RULES = [
+  [/三視圖|俯視圖|正視圖|側視圖/, ["threeView"]],
+  [/圓錐/, ["cone"]],
+  [/圓柱/, ["cylinder"]],
+  [/角錐/, ["pyramid"]],
+  [/圓形圖|圓餅/, ["pieChart"]],
+  [/直方圖/, ["histogram"]],
+  [/扇形|圓心角/, ["sector"]],
+  [/二次函數|拋物線/, ["parabola"]],
+  [/數線/, ["numberLine"]],
+];
+
+function assertMathKind(text, spec, key, gaps) {
+  for (const [re, kinds] of MATH_KIND_RULES) {
+    if (re.test(text)) {
+      if (!kinds.includes(spec?.kind)) {
+        gaps.push({ subject: "math", key, reason: `kind-mismatch(${kinds[0]}≠${spec?.kind})`, text: text.slice(0, 72) });
+        return false;
+      }
+      return true;
+    }
+  }
+  return true;
+}
+
 function loadDiagramStack() {
   const sandbox = {
     window: {},
@@ -89,6 +115,7 @@ function checkQuestion(stack, q, code, gaps, stats) {
     gaps.push({ subject: code, key: q.taxonomyKey || q.text?.slice(0, 40), reason: "labels", text: q.text?.slice(0, 72), kind: out.diagramSpec?.kind });
     return;
   }
+  if (code === "math" && !assertMathKind(text, out.diagramSpec, q.taxonomyKey || q.text?.slice(0, 40), gaps)) return;
   stats.ok++;
 }
 
@@ -155,7 +182,7 @@ for (const sub of SUBJECTS) {
             const spec = stack.DIAGRAM_INFER.inferDiagramSpec(ex.q, ctx);
             if (!html.includes("<svg") || !stack.DIAGRAM_INFER.validateSpecLabels(ex.q, spec)) {
               gaps.push({ subject: "math", key: `lecture-ex:${key}`, reason: "lecture-example", text: ex.q.slice(0, 72) });
-            } else stats.ok++;
+            } else if (assertMathKind(ex.q, spec, `lecture-ex:${key}`, gaps)) stats.ok++;
           }
         }
       }

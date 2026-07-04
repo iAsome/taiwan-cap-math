@@ -3,13 +3,17 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const OLD = "20260709a";
-const NEW = "20260709b";
+const NEW = process.argv[2];
+if (!/^\d{8}[a-z]$/.test(NEW || "")) {
+  console.error("usage: node tools/bump-cache.mjs 20260709c");
+  process.exit(1);
+}
 
 function bump(file) {
   let s = fs.readFileSync(file, "utf8");
-  if (!s.includes(OLD)) return;
-  fs.writeFileSync(file, s.replaceAll(OLD, NEW), "utf8");
+  const next = s.replace(/\?v=\d{8}[a-z]/g, `?v=${NEW}`);
+  if (next === s) return;
+  fs.writeFileSync(file, next, "utf8");
   console.log("bump", file);
 }
 

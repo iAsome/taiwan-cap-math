@@ -38924,20 +38924,20 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 11,
       "difficulty": 2,
-      "text": "某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
+      "text": "一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
       "choices": [
-        "4 個",
-        "2 個",
-        "6 個",
-        "8 個"
+        "圓形",
+        "長方形",
+        "三角形",
+        "正方形"
       ],
       "answer": 0,
       "steps": [
-        "正視、俯視皆填滿 2×2 → 至少每欄 1 個。",
-        "最少 4 個立方塊可達成。"
+        "俯視圓柱只看到圓形的頂面。",
+        "正視圖才是長方形。"
       ],
-      "tip": "三視圖還原：取各視圖要求的最多層數。",
-      "trap": "最少個數不一定等於體積最大。",
+      "tip": "圓柱：俯視 = 圓、正視 = 長方形。",
+      "trap": "方向不同，視圖形狀不同。",
       "concept": "幾何先看定義與關係，再計算；圖看起來像，不代表條件成立。",
       "formula": "對頂角相等\n線性對角和 = 180°\n繞一點角度和 = 360°",
       "diagram": null
@@ -38946,20 +38946,20 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 11,
       "difficulty": 2,
-      "text": "某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
+      "text": "一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
       "choices": [
-        "2 個",
-        "6 個",
-        "4 個",
-        "8 個"
+        "長方形",
+        "三角形",
+        "圓形",
+        "正方形"
       ],
       "answer": 2,
       "steps": [
-        "正視、俯視皆填滿 2×2 → 至少每欄 1 個。",
-        "最少 4 個立方塊可達成。"
+        "俯視圓柱只看到圓形的頂面。",
+        "正視圖才是長方形。"
       ],
-      "tip": "三視圖還原：取各視圖要求的最多層數。",
-      "trap": "最少個數不一定等於體積最大。",
+      "tip": "圓柱：俯視 = 圓、正視 = 長方形。",
+      "trap": "方向不同，視圖形狀不同。",
       "concept": "幾何先看定義與關係，再計算；圖看起來像，不代表條件成立。",
       "formula": "對頂角相等\n線性對角和 = 180°\n繞一點角度和 = 360°",
       "diagram": null
@@ -38968,20 +38968,20 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 11,
       "difficulty": 2,
-      "text": "某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
+      "text": "一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
       "choices": [
-        "8 個",
-        "2 個",
-        "4 個",
-        "6 個"
+        "正方形",
+        "長方形",
+        "圓形",
+        "三角形"
       ],
       "answer": 2,
       "steps": [
-        "正視、俯視皆填滿 2×2 → 至少每欄 1 個。",
-        "最少 4 個立方塊可達成。"
+        "俯視圓柱只看到圓形的頂面。",
+        "正視圖才是長方形。"
       ],
-      "tip": "三視圖還原：取各視圖要求的最多層數。",
-      "trap": "最少個數不一定等於體積最大。",
+      "tip": "圓柱：俯視 = 圓、正視 = 長方形。",
+      "trap": "方向不同，視圖形狀不同。",
       "concept": "幾何先看定義與關係，再計算；圖看起來像，不代表條件成立。",
       "formula": "對頂角相等\n線性對角和 = 180°\n繞一點角度和 = 360°",
       "diagram": null
@@ -38990,20 +38990,20 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 11,
       "difficulty": 2,
-      "text": "某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
+      "text": "一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
       "choices": [
-        "2 個",
-        "8 個",
-        "4 個",
-        "6 個"
+        "長方形",
+        "正方形",
+        "圓形",
+        "三角形"
       ],
       "answer": 2,
       "steps": [
-        "正視、俯視皆填滿 2×2 → 至少每欄 1 個。",
-        "最少 4 個立方塊可達成。"
+        "俯視圓柱只看到圓形的頂面。",
+        "正視圖才是長方形。"
       ],
-      "tip": "三視圖還原：取各視圖要求的最多層數。",
-      "trap": "最少個數不一定等於體積最大。",
+      "tip": "圓柱：俯視 = 圓、正視 = 長方形。",
+      "trap": "方向不同，視圖形狀不同。",
       "concept": "幾何先看定義與關係，再計算；圖看起來像，不代表條件成立。",
       "formula": "對頂角相等\n線性對角和 = 180°\n繞一點角度和 = 360°",
       "diagram": null
@@ -39012,20 +39012,20 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 11,
       "difficulty": 2,
-      "text": "某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
+      "text": "一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
       "choices": [
-        "8 個",
-        "2 個",
-        "6 個",
-        "4 個"
+        "正方形",
+        "長方形",
+        "三角形",
+        "圓形"
       ],
       "answer": 3,
       "steps": [
-        "正視、俯視皆填滿 2×2 → 至少每欄 1 個。",
-        "最少 4 個立方塊可達成。"
+        "俯視圓柱只看到圓形的頂面。",
+        "正視圖才是長方形。"
       ],
-      "tip": "三視圖還原：取各視圖要求的最多層數。",
-      "trap": "最少個數不一定等於體積最大。",
+      "tip": "圓柱：俯視 = 圓、正視 = 長方形。",
+      "trap": "方向不同，視圖形狀不同。",
       "concept": "幾何先看定義與關係，再計算；圖看起來像，不代表條件成立。",
       "formula": "對頂角相等\n線性對角和 = 180°\n繞一點角度和 = 360°",
       "diagram": null
@@ -39034,20 +39034,20 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 11,
       "difficulty": 2,
-      "text": "某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
+      "text": "一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
       "choices": [
-        "6 個",
-        "2 個",
-        "8 個",
-        "4 個"
+        "三角形",
+        "長方形",
+        "正方形",
+        "圓形"
       ],
       "answer": 3,
       "steps": [
-        "正視、俯視皆填滿 2×2 → 至少每欄 1 個。",
-        "最少 4 個立方塊可達成。"
+        "俯視圓柱只看到圓形的頂面。",
+        "正視圖才是長方形。"
       ],
-      "tip": "三視圖還原：取各視圖要求的最多層數。",
-      "trap": "最少個數不一定等於體積最大。",
+      "tip": "圓柱：俯視 = 圓、正視 = 長方形。",
+      "trap": "方向不同，視圖形狀不同。",
       "concept": "幾何先看定義與關係，再計算；圖看起來像，不代表條件成立。",
       "formula": "對頂角相等\n線性對角和 = 180°\n繞一點角度和 = 360°",
       "diagram": null
@@ -39056,20 +39056,20 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 11,
       "difficulty": 2,
-      "text": "某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
+      "text": "一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
       "choices": [
-        "6 個",
-        "2 個",
-        "4 個",
-        "8 個"
+        "三角形",
+        "長方形",
+        "圓形",
+        "正方形"
       ],
       "answer": 2,
       "steps": [
-        "正視、俯視皆填滿 2×2 → 至少每欄 1 個。",
-        "最少 4 個立方塊可達成。"
+        "俯視圓柱只看到圓形的頂面。",
+        "正視圖才是長方形。"
       ],
-      "tip": "三視圖還原：取各視圖要求的最多層數。",
-      "trap": "最少個數不一定等於體積最大。",
+      "tip": "圓柱：俯視 = 圓、正視 = 長方形。",
+      "trap": "方向不同，視圖形狀不同。",
       "concept": "幾何先看定義與關係，再計算；圖看起來像，不代表條件成立。",
       "formula": "對頂角相等\n線性對角和 = 180°\n繞一點角度和 = 360°",
       "diagram": null
@@ -39078,20 +39078,20 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 11,
       "difficulty": 2,
-      "text": "某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
+      "text": "一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
       "choices": [
-        "4 個",
-        "8 個",
-        "6 個",
-        "2 個"
+        "圓形",
+        "正方形",
+        "三角形",
+        "長方形"
       ],
       "answer": 0,
       "steps": [
-        "正視、俯視皆填滿 2×2 → 至少每欄 1 個。",
-        "最少 4 個立方塊可達成。"
+        "俯視圓柱只看到圓形的頂面。",
+        "正視圖才是長方形。"
       ],
-      "tip": "三視圖還原：取各視圖要求的最多層數。",
-      "trap": "最少個數不一定等於體積最大。",
+      "tip": "圓柱：俯視 = 圓、正視 = 長方形。",
+      "trap": "方向不同，視圖形狀不同。",
       "concept": "幾何先看定義與關係，再計算；圖看起來像，不代表條件成立。",
       "formula": "對頂角相等\n線性對角和 = 180°\n繞一點角度和 = 360°",
       "diagram": null
@@ -39100,20 +39100,20 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 11,
       "difficulty": 2,
-      "text": "某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
+      "text": "一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
       "choices": [
-        "2 個",
-        "4 個",
-        "8 個",
-        "6 個"
+        "長方形",
+        "圓形",
+        "正方形",
+        "三角形"
       ],
       "answer": 1,
       "steps": [
-        "正視、俯視皆填滿 2×2 → 至少每欄 1 個。",
-        "最少 4 個立方塊可達成。"
+        "俯視圓柱只看到圓形的頂面。",
+        "正視圖才是長方形。"
       ],
-      "tip": "三視圖還原：取各視圖要求的最多層數。",
-      "trap": "最少個數不一定等於體積最大。",
+      "tip": "圓柱：俯視 = 圓、正視 = 長方形。",
+      "trap": "方向不同，視圖形狀不同。",
       "concept": "幾何先看定義與關係，再計算；圖看起來像，不代表條件成立。",
       "formula": "對頂角相等\n線性對角和 = 180°\n繞一點角度和 = 360°",
       "diagram": null
@@ -39122,20 +39122,20 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 11,
       "difficulty": 2,
-      "text": "某立體的正視圖與俯視圖都是 2×2 的正方形，最少由幾個立方塊組成？",
+      "text": "一個直立圓柱，由正上方往下看（俯視圖）會是什麼形狀？",
       "choices": [
-        "6 個",
-        "8 個",
-        "4 個",
-        "2 個"
+        "三角形",
+        "正方形",
+        "圓形",
+        "長方形"
       ],
       "answer": 2,
       "steps": [
-        "正視、俯視皆填滿 2×2 → 至少每欄 1 個。",
-        "最少 4 個立方塊可達成。"
+        "俯視圓柱只看到圓形的頂面。",
+        "正視圖才是長方形。"
       ],
-      "tip": "三視圖還原：取各視圖要求的最多層數。",
-      "trap": "最少個數不一定等於體積最大。",
+      "tip": "圓柱：俯視 = 圓、正視 = 長方形。",
+      "trap": "方向不同，視圖形狀不同。",
       "concept": "幾何先看定義與關係，再計算；圖看起來像，不代表條件成立。",
       "formula": "對頂角相等\n線性對角和 = 180°\n繞一點角度和 = 360°",
       "diagram": null
@@ -115470,7 +115470,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "平面 // 平面：無交線或重合。",
       "trap": "有交線則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115491,7 +115491,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "平面 // 平面：無交線或重合。",
       "trap": "有交線則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115512,7 +115512,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "平面 // 平面：無交線或重合。",
       "trap": "有交線則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115533,7 +115533,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "平面 // 平面：無交線或重合。",
       "trap": "有交線則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115554,7 +115554,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "平面 // 平面：無交線或重合。",
       "trap": "有交線則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115575,7 +115575,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "平面 // 平面：無交線或重合。",
       "trap": "有交線則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115596,7 +115596,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "平面 // 平面：無交線或重合。",
       "trap": "有交線則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115617,7 +115617,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "平面 // 平面：無交線或重合。",
       "trap": "有交線則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115638,7 +115638,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "平面 // 平面：無交線或重合。",
       "trap": "有交線則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115659,7 +115659,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "平面 // 平面：無交線或重合。",
       "trap": "有交線則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -115682,7 +115682,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 // 面：無交點；線 ⊥ 面：垂直相交。",
       "trap": "有交點則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115703,7 +115703,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 // 面：無交點；線 ⊥ 面：垂直相交。",
       "trap": "有交點則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115724,7 +115724,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 // 面：無交點；線 ⊥ 面：垂直相交。",
       "trap": "有交點則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115745,7 +115745,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 // 面：無交點；線 ⊥ 面：垂直相交。",
       "trap": "有交點則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115766,7 +115766,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 // 面：無交點；線 ⊥ 面：垂直相交。",
       "trap": "有交點則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115787,7 +115787,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 // 面：無交點；線 ⊥ 面：垂直相交。",
       "trap": "有交點則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115808,7 +115808,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 // 面：無交點；線 ⊥ 面：垂直相交。",
       "trap": "有交點則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115829,7 +115829,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 // 面：無交點；線 ⊥ 面：垂直相交。",
       "trap": "有交點則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115850,7 +115850,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 // 面：無交點；線 ⊥ 面：垂直相交。",
       "trap": "有交點則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115871,7 +115871,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 // 面：無交點；線 ⊥ 面：垂直相交。",
       "trap": "有交點則相交。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -115894,7 +115894,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間中兩線：平行、相交、異面。",
       "trap": "異面 ≠ 垂直。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115915,7 +115915,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間中兩線：平行、相交、異面。",
       "trap": "異面 ≠ 垂直。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115936,7 +115936,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間中兩線：平行、相交、異面。",
       "trap": "異面 ≠ 垂直。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115957,7 +115957,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間中兩線：平行、相交、異面。",
       "trap": "異面 ≠ 垂直。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115978,7 +115978,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間中兩線：平行、相交、異面。",
       "trap": "異面 ≠ 垂直。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -115999,7 +115999,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間中兩線：平行、相交、異面。",
       "trap": "異面 ≠ 垂直。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116020,7 +116020,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間中兩線：平行、相交、異面。",
       "trap": "異面 ≠ 垂直。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116041,7 +116041,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間中兩線：平行、相交、異面。",
       "trap": "異面 ≠ 垂直。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116062,7 +116062,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間中兩線：平行、相交、異面。",
       "trap": "異面 ≠ 垂直。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116083,7 +116083,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間中兩線：平行、相交、異面。",
       "trap": "異面 ≠ 垂直。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -116106,7 +116106,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 ⊥ 面 ⟺ 線垂直平面內兩相交線。",
       "trap": "需兩相交線，不能只用平行線。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116127,7 +116127,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 ⊥ 面 ⟺ 線垂直平面內兩相交線。",
       "trap": "需兩相交線，不能只用平行線。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116148,7 +116148,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 ⊥ 面 ⟺ 線垂直平面內兩相交線。",
       "trap": "需兩相交線，不能只用平行線。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116169,7 +116169,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 ⊥ 面 ⟺ 線垂直平面內兩相交線。",
       "trap": "需兩相交線，不能只用平行線。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116190,7 +116190,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 ⊥ 面 ⟺ 線垂直平面內兩相交線。",
       "trap": "需兩相交線，不能只用平行線。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116211,7 +116211,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 ⊥ 面 ⟺ 線垂直平面內兩相交線。",
       "trap": "需兩相交線，不能只用平行線。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116232,7 +116232,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 ⊥ 面 ⟺ 線垂直平面內兩相交線。",
       "trap": "需兩相交線，不能只用平行線。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116253,7 +116253,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 ⊥ 面 ⟺ 線垂直平面內兩相交線。",
       "trap": "需兩相交線，不能只用平行線。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116274,7 +116274,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 ⊥ 面 ⟺ 線垂直平面內兩相交線。",
       "trap": "需兩相交線，不能只用平行線。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116295,7 +116295,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "線 ⊥ 面 ⟺ 線垂直平面內兩相交線。",
       "trap": "需兩相交線，不能只用平行線。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -116318,7 +116318,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間距離 = √[(Δx)²+(Δy)²+(Δz)²]。",
       "trap": "先算各軸差再畢氏。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116339,7 +116339,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間距離 = √[(Δx)²+(Δy)²+(Δz)²]。",
       "trap": "先算各軸差再畢氏。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116360,7 +116360,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間距離 = √[(Δx)²+(Δy)²+(Δz)²]。",
       "trap": "先算各軸差再畢氏。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116381,7 +116381,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間距離 = √[(Δx)²+(Δy)²+(Δz)²]。",
       "trap": "先算各軸差再畢氏。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116402,7 +116402,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間距離 = √[(Δx)²+(Δy)²+(Δz)²]。",
       "trap": "先算各軸差再畢氏。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116423,7 +116423,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間距離 = √[(Δx)²+(Δy)²+(Δz)²]。",
       "trap": "先算各軸差再畢氏。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116444,7 +116444,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間距離 = √[(Δx)²+(Δy)²+(Δz)²]。",
       "trap": "先算各軸差再畢氏。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116465,7 +116465,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間距離 = √[(Δx)²+(Δy)²+(Δz)²]。",
       "trap": "先算各軸差再畢氏。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116486,7 +116486,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間距離 = √[(Δx)²+(Δy)²+(Δz)²]。",
       "trap": "先算各軸差再畢氏。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116507,7 +116507,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "空間距離 = √[(Δx)²+(Δy)²+(Δz)²]。",
       "trap": "先算各軸差再畢氏。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -116530,7 +116530,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "柱體 V = 底面積 × 高。",
       "trap": "高要垂直底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116551,7 +116551,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "柱體 V = 底面積 × 高。",
       "trap": "高要垂直底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116572,7 +116572,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "柱體 V = 底面積 × 高。",
       "trap": "高要垂直底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116593,7 +116593,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "柱體 V = 底面積 × 高。",
       "trap": "高要垂直底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116614,7 +116614,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "柱體 V = 底面積 × 高。",
       "trap": "高要垂直底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116635,7 +116635,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "柱體 V = 底面積 × 高。",
       "trap": "高要垂直底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116656,7 +116656,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "柱體 V = 底面積 × 高。",
       "trap": "高要垂直底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116677,7 +116677,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "柱體 V = 底面積 × 高。",
       "trap": "高要垂直底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116698,7 +116698,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "柱體 V = 底面積 × 高。",
       "trap": "高要垂直底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116719,7 +116719,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "柱體 V = 底面積 × 高。",
       "trap": "高要垂直底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -116742,7 +116742,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱 V = πr²h。",
       "trap": "r 是底面半徑。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116763,7 +116763,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱 V = πr²h。",
       "trap": "r 是底面半徑。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116784,7 +116784,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱 V = πr²h。",
       "trap": "r 是底面半徑。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116805,7 +116805,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱 V = πr²h。",
       "trap": "r 是底面半徑。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116826,7 +116826,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱 V = πr²h。",
       "trap": "r 是底面半徑。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116847,7 +116847,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱 V = πr²h。",
       "trap": "r 是底面半徑。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116868,7 +116868,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱 V = πr²h。",
       "trap": "r 是底面半徑。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116889,7 +116889,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱 V = πr²h。",
       "trap": "r 是底面半徑。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116910,7 +116910,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱 V = πr²h。",
       "trap": "r 是底面半徑。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116931,7 +116931,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱 V = πr²h。",
       "trap": "r 是底面半徑。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -116954,7 +116954,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "長方體 6 面；展開圖判讀對應面。",
       "trap": "展開後不重疊。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116975,7 +116975,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "長方體 6 面；展開圖判讀對應面。",
       "trap": "展開後不重疊。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -116996,7 +116996,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "長方體 6 面；展開圖判讀對應面。",
       "trap": "展開後不重疊。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117017,7 +117017,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "長方體 6 面；展開圖判讀對應面。",
       "trap": "展開後不重疊。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117038,7 +117038,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "長方體 6 面；展開圖判讀對應面。",
       "trap": "展開後不重疊。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117059,7 +117059,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "長方體 6 面；展開圖判讀對應面。",
       "trap": "展開後不重疊。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117080,7 +117080,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "長方體 6 面；展開圖判讀對應面。",
       "trap": "展開後不重疊。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117101,7 +117101,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "長方體 6 面；展開圖判讀對應面。",
       "trap": "展開後不重疊。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117122,7 +117122,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "長方體 6 面；展開圖判讀對應面。",
       "trap": "展開後不重疊。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117143,7 +117143,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "長方體 6 面；展開圖判讀對應面。",
       "trap": "展開後不重疊。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -117166,7 +117166,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "從展開圖讀底面與高。",
       "trap": "表面積 = 各面積和。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117187,7 +117187,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "從展開圖讀底面與高。",
       "trap": "表面積 = 各面積和。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117208,7 +117208,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "從展開圖讀底面與高。",
       "trap": "表面積 = 各面積和。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117229,7 +117229,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "從展開圖讀底面與高。",
       "trap": "表面積 = 各面積和。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117250,7 +117250,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "從展開圖讀底面與高。",
       "trap": "表面積 = 各面積和。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117271,7 +117271,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "從展開圖讀底面與高。",
       "trap": "表面積 = 各面積和。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117292,7 +117292,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "從展開圖讀底面與高。",
       "trap": "表面積 = 各面積和。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117313,7 +117313,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "從展開圖讀底面與高。",
       "trap": "表面積 = 各面積和。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117334,7 +117334,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "從展開圖讀底面與高。",
       "trap": "表面積 = 各面積和。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117355,7 +117355,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "從展開圖讀底面與高。",
       "trap": "表面積 = 各面積和。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -117378,7 +117378,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱側面積 = 2πrh。",
       "trap": "全表面積還要加兩底 πr²。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117399,7 +117399,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱側面積 = 2πrh。",
       "trap": "全表面積還要加兩底 πr²。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117420,7 +117420,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱側面積 = 2πrh。",
       "trap": "全表面積還要加兩底 πr²。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117441,7 +117441,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱側面積 = 2πrh。",
       "trap": "全表面積還要加兩底 πr²。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117462,7 +117462,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱側面積 = 2πrh。",
       "trap": "全表面積還要加兩底 πr²。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117483,7 +117483,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱側面積 = 2πrh。",
       "trap": "全表面積還要加兩底 πr²。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117504,7 +117504,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱側面積 = 2πrh。",
       "trap": "全表面積還要加兩底 πr²。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117525,7 +117525,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱側面積 = 2πrh。",
       "trap": "全表面積還要加兩底 πr²。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117546,7 +117546,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱側面積 = 2πrh。",
       "trap": "全表面積還要加兩底 πr²。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -117567,7 +117567,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓柱側面積 = 2πrh。",
       "trap": "全表面積還要加兩底 πr²。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -117576,220 +117576,220 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "與角柱同底同高的角錐，體積為角柱的？",
+      "text": "正四角錐（底面為正方形）共由幾個面組成？",
       "choices": [
-        "[[frac:1|3]]",
-        "3 倍",
-        "相同",
-        "[[frac:1|2]]"
+        "5 個",
+        "8 個",
+        "6 個",
+        "4 個"
       ],
       "answer": 0,
       "steps": [
-        "錐體 V = [[frac:Bh|3]]。",
-        "同底同高柱體的 [[frac:1|3]]。"
+        "底面 1 個正方形。",
+        "側面 4 個三角形，共 1+4=5 個面。"
       ],
-      "tip": "錐體 V = [[frac:(1|3)]]×底面積×高。",
-      "trap": "不是 [[frac:1|2]]。",
+      "tip": "角錐 = 1 個底面 + n 個三角形側面。",
+      "trap": "別漏算底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "與角柱同底同高的角錐，體積為角柱的？",
+      "text": "正四角錐（底面為正方形）共由幾個面組成？",
       "choices": [
-        "3 倍",
-        "相同",
-        "[[frac:1|2]]",
-        "[[frac:1|3]]"
+        "8 個",
+        "6 個",
+        "4 個",
+        "5 個"
       ],
       "answer": 3,
       "steps": [
-        "錐體 V = [[frac:Bh|3]]。",
-        "同底同高柱體的 [[frac:1|3]]。"
+        "底面 1 個正方形。",
+        "側面 4 個三角形，共 1+4=5 個面。"
       ],
-      "tip": "錐體 V = [[frac:(1|3)]]×底面積×高。",
-      "trap": "不是 [[frac:1|2]]。",
+      "tip": "角錐 = 1 個底面 + n 個三角形側面。",
+      "trap": "別漏算底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "與角柱同底同高的角錐，體積為角柱的？",
+      "text": "正四角錐（底面為正方形）共由幾個面組成？",
       "choices": [
-        "3 倍",
-        "相同",
-        "[[frac:1|3]]",
-        "[[frac:1|2]]"
+        "8 個",
+        "6 個",
+        "5 個",
+        "4 個"
       ],
       "answer": 2,
       "steps": [
-        "錐體 V = [[frac:Bh|3]]。",
-        "同底同高柱體的 [[frac:1|3]]。"
+        "底面 1 個正方形。",
+        "側面 4 個三角形，共 1+4=5 個面。"
       ],
-      "tip": "錐體 V = [[frac:(1|3)]]×底面積×高。",
-      "trap": "不是 [[frac:1|2]]。",
+      "tip": "角錐 = 1 個底面 + n 個三角形側面。",
+      "trap": "別漏算底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "與角柱同底同高的角錐，體積為角柱的？",
+      "text": "正四角錐（底面為正方形）共由幾個面組成？",
       "choices": [
-        "[[frac:1|2]]",
-        "[[frac:1|3]]",
-        "相同",
-        "3 倍"
+        "4 個",
+        "5 個",
+        "6 個",
+        "8 個"
       ],
       "answer": 1,
       "steps": [
-        "錐體 V = [[frac:Bh|3]]。",
-        "同底同高柱體的 [[frac:1|3]]。"
+        "底面 1 個正方形。",
+        "側面 4 個三角形，共 1+4=5 個面。"
       ],
-      "tip": "錐體 V = [[frac:(1|3)]]×底面積×高。",
-      "trap": "不是 [[frac:1|2]]。",
+      "tip": "角錐 = 1 個底面 + n 個三角形側面。",
+      "trap": "別漏算底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "與角柱同底同高的角錐，體積為角柱的？",
+      "text": "正四角錐（底面為正方形）共由幾個面組成？",
       "choices": [
-        "3 倍",
-        "[[frac:1|2]]",
-        "相同",
-        "[[frac:1|3]]"
+        "8 個",
+        "4 個",
+        "6 個",
+        "5 個"
       ],
       "answer": 3,
       "steps": [
-        "錐體 V = [[frac:Bh|3]]。",
-        "同底同高柱體的 [[frac:1|3]]。"
+        "底面 1 個正方形。",
+        "側面 4 個三角形，共 1+4=5 個面。"
       ],
-      "tip": "錐體 V = [[frac:(1|3)]]×底面積×高。",
-      "trap": "不是 [[frac:1|2]]。",
+      "tip": "角錐 = 1 個底面 + n 個三角形側面。",
+      "trap": "別漏算底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "與角柱同底同高的角錐，體積為角柱的？",
+      "text": "正四角錐（底面為正方形）共由幾個面組成？",
       "choices": [
-        "相同",
-        "3 倍",
-        "[[frac:1|3]]",
-        "[[frac:1|2]]"
+        "6 個",
+        "8 個",
+        "5 個",
+        "4 個"
       ],
       "answer": 2,
       "steps": [
-        "錐體 V = [[frac:Bh|3]]。",
-        "同底同高柱體的 [[frac:1|3]]。"
+        "底面 1 個正方形。",
+        "側面 4 個三角形，共 1+4=5 個面。"
       ],
-      "tip": "錐體 V = [[frac:(1|3)]]×底面積×高。",
-      "trap": "不是 [[frac:1|2]]。",
+      "tip": "角錐 = 1 個底面 + n 個三角形側面。",
+      "trap": "別漏算底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "與角柱同底同高的角錐，體積為角柱的？",
+      "text": "正四角錐（底面為正方形）共由幾個面組成？",
       "choices": [
-        "3 倍",
-        "[[frac:1|2]]",
-        "[[frac:1|3]]",
-        "相同"
+        "8 個",
+        "4 個",
+        "5 個",
+        "6 個"
       ],
       "answer": 2,
       "steps": [
-        "錐體 V = [[frac:Bh|3]]。",
-        "同底同高柱體的 [[frac:1|3]]。"
+        "底面 1 個正方形。",
+        "側面 4 個三角形，共 1+4=5 個面。"
       ],
-      "tip": "錐體 V = [[frac:(1|3)]]×底面積×高。",
-      "trap": "不是 [[frac:1|2]]。",
+      "tip": "角錐 = 1 個底面 + n 個三角形側面。",
+      "trap": "別漏算底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "與角柱同底同高的角錐，體積為角柱的？",
+      "text": "正四角錐（底面為正方形）共由幾個面組成？",
       "choices": [
-        "[[frac:1|2]]",
-        "相同",
-        "[[frac:1|3]]",
-        "3 倍"
+        "4 個",
+        "6 個",
+        "5 個",
+        "8 個"
       ],
       "answer": 2,
       "steps": [
-        "錐體 V = [[frac:Bh|3]]。",
-        "同底同高柱體的 [[frac:1|3]]。"
+        "底面 1 個正方形。",
+        "側面 4 個三角形，共 1+4=5 個面。"
       ],
-      "tip": "錐體 V = [[frac:(1|3)]]×底面積×高。",
-      "trap": "不是 [[frac:1|2]]。",
+      "tip": "角錐 = 1 個底面 + n 個三角形側面。",
+      "trap": "別漏算底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "與角柱同底同高的角錐，體積為角柱的？",
+      "text": "正四角錐（底面為正方形）共由幾個面組成？",
       "choices": [
-        "[[frac:1|3]]",
-        "相同",
-        "3 倍",
-        "[[frac:1|2]]"
+        "5 個",
+        "6 個",
+        "8 個",
+        "4 個"
       ],
       "answer": 0,
       "steps": [
-        "錐體 V = [[frac:Bh|3]]。",
-        "同底同高柱體的 [[frac:1|3]]。"
+        "底面 1 個正方形。",
+        "側面 4 個三角形，共 1+4=5 個面。"
       ],
-      "tip": "錐體 V = [[frac:(1|3)]]×底面積×高。",
-      "trap": "不是 [[frac:1|2]]。",
+      "tip": "角錐 = 1 個底面 + n 個三角形側面。",
+      "trap": "別漏算底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "與角柱同底同高的角錐，體積為角柱的？",
+      "text": "正四角錐（底面為正方形）共由幾個面組成？",
       "choices": [
-        "[[frac:1|3]]",
-        "3 倍",
-        "[[frac:1|2]]",
-        "相同"
+        "5 個",
+        "8 個",
+        "4 個",
+        "6 個"
       ],
       "answer": 0,
       "steps": [
-        "錐體 V = [[frac:Bh|3]]。",
-        "同底同高柱體的 [[frac:1|3]]。"
+        "底面 1 個正方形。",
+        "側面 4 個三角形，共 1+4=5 個面。"
       ],
-      "tip": "錐體 V = [[frac:(1|3)]]×底面積×高。",
-      "trap": "不是 [[frac:1|2]]。",
+      "tip": "角錐 = 1 個底面 + n 個三角形側面。",
+      "trap": "別漏算底面。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -117798,210 +117798,210 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "圓錐底面半徑 3、高 4，體積？",
+      "text": "直圓錐底面半徑 3、高 4，母線長？",
       "choices": [
-        "4π",
-        "36π",
-        "48π",
-        "12π"
+        "7",
+        "√7",
+        "12",
+        "5"
       ],
       "answer": 3,
       "steps": [
-        "V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "母線 l = √(r²+h²) = √(9+16) = 5。"
       ],
-      "tip": "圓錐 V = [[frac:πr²h|3]]。",
-      "trap": "h 是垂直高，不是斜高。",
+      "tip": "母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。",
+      "trap": "母線是斜邊，不是垂直高。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "圓錐底面半徑 3、高 4，體積？",
+      "text": "直圓錐底面半徑 3、高 4，母線長？",
       "choices": [
-        "48π",
-        "12π",
-        "4π",
-        "36π"
+        "12",
+        "5",
+        "7",
+        "√7"
       ],
       "answer": 1,
       "steps": [
-        "V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "母線 l = √(r²+h²) = √(9+16) = 5。"
       ],
-      "tip": "圓錐 V = [[frac:πr²h|3]]。",
-      "trap": "h 是垂直高，不是斜高。",
+      "tip": "母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。",
+      "trap": "母線是斜邊，不是垂直高。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "圓錐底面半徑 3、高 4，體積？",
+      "text": "直圓錐底面半徑 3、高 4，母線長？",
       "choices": [
-        "48π",
-        "12π",
-        "36π",
-        "4π"
+        "12",
+        "5",
+        "√7",
+        "7"
       ],
       "answer": 1,
       "steps": [
-        "V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "母線 l = √(r²+h²) = √(9+16) = 5。"
       ],
-      "tip": "圓錐 V = [[frac:πr²h|3]]。",
-      "trap": "h 是垂直高，不是斜高。",
+      "tip": "母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。",
+      "trap": "母線是斜邊，不是垂直高。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "圓錐底面半徑 3、高 4，體積？",
+      "text": "直圓錐底面半徑 3、高 4，母線長？",
       "choices": [
-        "4π",
-        "36π",
-        "12π",
-        "48π"
+        "7",
+        "√7",
+        "5",
+        "12"
       ],
       "answer": 2,
       "steps": [
-        "V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "母線 l = √(r²+h²) = √(9+16) = 5。"
       ],
-      "tip": "圓錐 V = [[frac:πr²h|3]]。",
-      "trap": "h 是垂直高，不是斜高。",
+      "tip": "母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。",
+      "trap": "母線是斜邊，不是垂直高。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "圓錐底面半徑 3、高 4，體積？",
+      "text": "直圓錐底面半徑 3、高 4，母線長？",
       "choices": [
-        "48π",
-        "36π",
-        "12π",
-        "4π"
+        "12",
+        "√7",
+        "5",
+        "7"
       ],
       "answer": 2,
       "steps": [
-        "V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "母線 l = √(r²+h²) = √(9+16) = 5。"
       ],
-      "tip": "圓錐 V = [[frac:πr²h|3]]。",
-      "trap": "h 是垂直高，不是斜高。",
+      "tip": "母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。",
+      "trap": "母線是斜邊，不是垂直高。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "圓錐底面半徑 3、高 4，體積？",
+      "text": "直圓錐底面半徑 3、高 4，母線長？",
       "choices": [
-        "12π",
-        "4π",
-        "48π",
-        "36π"
+        "5",
+        "7",
+        "12",
+        "√7"
       ],
       "answer": 0,
       "steps": [
-        "V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "母線 l = √(r²+h²) = √(9+16) = 5。"
       ],
-      "tip": "圓錐 V = [[frac:πr²h|3]]。",
-      "trap": "h 是垂直高，不是斜高。",
+      "tip": "母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。",
+      "trap": "母線是斜邊，不是垂直高。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "圓錐底面半徑 3、高 4，體積？",
+      "text": "直圓錐底面半徑 3、高 4，母線長？",
       "choices": [
-        "36π",
-        "12π",
-        "48π",
-        "4π"
+        "√7",
+        "5",
+        "12",
+        "7"
       ],
       "answer": 1,
       "steps": [
-        "V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "母線 l = √(r²+h²) = √(9+16) = 5。"
       ],
-      "tip": "圓錐 V = [[frac:πr²h|3]]。",
-      "trap": "h 是垂直高，不是斜高。",
+      "tip": "母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。",
+      "trap": "母線是斜邊，不是垂直高。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "圓錐底面半徑 3、高 4，體積？",
+      "text": "直圓錐底面半徑 3、高 4，母線長？",
       "choices": [
-        "48π",
-        "4π",
-        "12π",
-        "36π"
+        "12",
+        "7",
+        "5",
+        "√7"
       ],
       "answer": 2,
       "steps": [
-        "V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "母線 l = √(r²+h²) = √(9+16) = 5。"
       ],
-      "tip": "圓錐 V = [[frac:πr²h|3]]。",
-      "trap": "h 是垂直高，不是斜高。",
+      "tip": "母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。",
+      "trap": "母線是斜邊，不是垂直高。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "圓錐底面半徑 3、高 4，體積？",
+      "text": "直圓錐底面半徑 3、高 4，母線長？",
       "choices": [
-        "12π",
-        "48π",
-        "4π",
-        "36π"
+        "5",
+        "12",
+        "7",
+        "√7"
       ],
       "answer": 0,
       "steps": [
-        "V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "母線 l = √(r²+h²) = √(9+16) = 5。"
       ],
-      "tip": "圓錐 V = [[frac:πr²h|3]]。",
-      "trap": "h 是垂直高，不是斜高。",
+      "tip": "母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。",
+      "trap": "母線是斜邊，不是垂直高。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
       "type": "mc",
       "unitId": 26,
       "difficulty": 1,
-      "text": "圓錐底面半徑 3、高 4，體積？",
+      "text": "直圓錐底面半徑 3、高 4，母線長？",
       "choices": [
-        "12π",
-        "48π",
-        "36π",
-        "4π"
+        "5",
+        "12",
+        "√7",
+        "7"
       ],
       "answer": 0,
       "steps": [
-        "V = [[frac:πr²h|3]] = π×9×[[frac:4|3]] = 12π。"
+        "母線 l = √(r²+h²) = √(9+16) = 5。"
       ],
-      "tip": "圓錐 V = [[frac:πr²h|3]]。",
-      "trap": "h 是垂直高，不是斜高。",
+      "tip": "母線 l、半徑 r、高 h 成直角三角形：l² = r²+h²。",
+      "trap": "母線是斜邊，不是垂直高。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -118025,7 +118025,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "角錐表面積 = 底面 + 各側面積和。",
       "trap": "逐面相加。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118047,7 +118047,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "角錐表面積 = 底面 + 各側面積和。",
       "trap": "逐面相加。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118069,7 +118069,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "角錐表面積 = 底面 + 各側面積和。",
       "trap": "逐面相加。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118091,7 +118091,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "角錐表面積 = 底面 + 各側面積和。",
       "trap": "逐面相加。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118113,7 +118113,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "角錐表面積 = 底面 + 各側面積和。",
       "trap": "逐面相加。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118135,7 +118135,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "角錐表面積 = 底面 + 各側面積和。",
       "trap": "逐面相加。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118157,7 +118157,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "角錐表面積 = 底面 + 各側面積和。",
       "trap": "逐面相加。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118179,7 +118179,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "角錐表面積 = 底面 + 各側面積和。",
       "trap": "逐面相加。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118201,7 +118201,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "角錐表面積 = 底面 + 各側面積和。",
       "trap": "逐面相加。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118223,7 +118223,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "角錐表面積 = 底面 + 各側面積和。",
       "trap": "逐面相加。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -118247,7 +118247,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "應用：先算單側再乘面數。",
       "trap": "別漏底面（若求總表面積）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118269,7 +118269,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "應用：先算單側再乘面數。",
       "trap": "別漏底面（若求總表面積）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118291,7 +118291,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "應用：先算單側再乘面數。",
       "trap": "別漏底面（若求總表面積）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118313,7 +118313,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "應用：先算單側再乘面數。",
       "trap": "別漏底面（若求總表面積）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118335,7 +118335,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "應用：先算單側再乘面數。",
       "trap": "別漏底面（若求總表面積）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118357,7 +118357,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "應用：先算單側再乘面數。",
       "trap": "別漏底面（若求總表面積）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118379,7 +118379,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "應用：先算單側再乘面數。",
       "trap": "別漏底面（若求總表面積）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118401,7 +118401,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "應用：先算單側再乘面數。",
       "trap": "別漏底面（若求總表面積）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118423,7 +118423,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "應用：先算單側再乘面數。",
       "trap": "別漏底面（若求總表面積）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118445,7 +118445,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "應用：先算單側再乘面數。",
       "trap": "別漏底面（若求總表面積）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -118468,7 +118468,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓錐側面展開為扇形，面積 πrl。",
       "trap": "l 是母線（斜高）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118489,7 +118489,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓錐側面展開為扇形，面積 πrl。",
       "trap": "l 是母線（斜高）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118510,7 +118510,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓錐側面展開為扇形，面積 πrl。",
       "trap": "l 是母線（斜高）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118531,7 +118531,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓錐側面展開為扇形，面積 πrl。",
       "trap": "l 是母線（斜高）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118552,7 +118552,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓錐側面展開為扇形，面積 πrl。",
       "trap": "l 是母線（斜高）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118573,7 +118573,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓錐側面展開為扇形，面積 πrl。",
       "trap": "l 是母線（斜高）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118594,7 +118594,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓錐側面展開為扇形，面積 πrl。",
       "trap": "l 是母線（斜高）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118615,7 +118615,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓錐側面展開為扇形，面積 πrl。",
       "trap": "l 是母線（斜高）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118636,7 +118636,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓錐側面展開為扇形，面積 πrl。",
       "trap": "l 是母線（斜高）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118657,7 +118657,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "圓錐側面展開為扇形，面積 πrl。",
       "trap": "l 是母線（斜高）。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ],
@@ -118681,7 +118681,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "全表面積 = πr² + πrl。",
       "trap": "先求 l（勾股）若只給 r、h。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118703,7 +118703,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "全表面積 = πr² + πrl。",
       "trap": "先求 l（勾股）若只給 r、h。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118725,7 +118725,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "全表面積 = πr² + πrl。",
       "trap": "先求 l（勾股）若只給 r、h。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118747,7 +118747,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "全表面積 = πr² + πrl。",
       "trap": "先求 l（勾股）若只給 r、h。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118769,7 +118769,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "全表面積 = πr² + πrl。",
       "trap": "先求 l（勾股）若只給 r、h。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118791,7 +118791,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "全表面積 = πr² + πrl。",
       "trap": "先求 l（勾股）若只給 r、h。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118813,7 +118813,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "全表面積 = πr² + πrl。",
       "trap": "先求 l（勾股）若只給 r、h。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118835,7 +118835,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "全表面積 = πr² + πrl。",
       "trap": "先求 l（勾股）若只給 r、h。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118857,7 +118857,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "全表面積 = πr² + πrl。",
       "trap": "先求 l（勾股）若只給 r、h。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     },
     {
@@ -118879,7 +118879,7 @@ window.QUIZ_VARIANT_BANK = {
       "tip": "全表面積 = πr² + πrl。",
       "trap": "先求 l（勾股）若只給 r、h。",
       "concept": "先辨認底面與高，再決定是『包表面』還是『裝容量』。",
-      "formula": "柱體 V＝Bh\n錐體 V＝[[frac:Bh|3]]\n圓柱側面積＝2πrh\n球體積＝[[frac:4πr³|3]]（延伸辨識）",
+      "formula": "柱體 V＝Bh\n圓柱側面積＝2πrh\n圓錐側面積＝πrl（l 為母線）\n圓錐全表面積＝πr²＋πrl",
       "diagram": null
     }
   ]

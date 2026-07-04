@@ -3,7 +3,7 @@ window.DIAGRAM_INFER = (() => {
 
   const NEEDS = {
     all: /數線|坐標|坐標平面|直角坐標|函數圖|線型函數|二次函數|三角形|全等|相似|畢氏|勾股|平行|四邊形|截角|同位角|內錯角|圓|半徑|弧|弦|切線|盒狀|四分位|統計圖|長條|折線|樹狀|機率|立體|角柱|角錐|表面積|體積|如圖|附圖|圖\(|\u2220|∠|比例尺|等高線|地圖判讀|地形|地層|板塊|電路|串聯|並聯|蹺蹺板|力矩|v-t|速度.*時間|時間軸|年代|象限|原點.*單位|左側.*單位|右側.*單位/,
-    math: /數線|絕對值|相反數|正負數|坐標|函數|三角形|圓|半徑|平行|盒狀|立體|角柱|畢氏|勾股|全等|相似/,
+    math: /數線|絕對值|相反數|正負數|坐標|函數|三角形|圓|半徑|平行|盒狀|立體|角柱|角錐|畢氏|勾股|全等|相似|扇形|拋物線|視圖|直方圖|折線|長條|樹狀|機率|體積|表面積/,
     "physics-chem": /如圖|附圖|電路|串聯|並聯|蹺蹺板|力矩|v-t|速度.*時間|磁場|半圓|光路|反射|折射|圖\(/,
     biology: /如圖|附圖|細胞|食物網|遺傳|圖\(/,
     earth: /如圖|附圖|地層|板塊|斷層|剖面|圖\(/,
@@ -84,7 +84,8 @@ window.DIAGRAM_INFER = (() => {
     if (!angleLabels.length && degOnly && /角|三角形|平行/.test(raw)) angleLabels.push({ at: "B", label: `${degOnly}°` });
     const a = Number(sideLabels.find(s => s.edge === "AB")?.label) || 4;
     const b = Number(sideLabels.find(s => s.edge === "CA")?.label) || 3;
-    return { kind: "triangle", a: Number.isFinite(a) ? a : 4, b: Number.isFinite(b) ? b : 3, sideLabels, angleLabels, caption: topicTitle || "三角形" };
+    const rightAngle = /直角|畢氏|勾股|90\s*°/.test(raw);
+    return { kind: "triangle", a: Number.isFinite(a) ? a : 4, b: Number.isFinite(b) ? b : 3, sideLabels, angleLabels, rightAngle, caption: topicTitle || "三角形" };
   }
 
   function inferCoordinate(text, topicTitle) {
@@ -136,19 +137,89 @@ window.DIAGRAM_INFER = (() => {
     return { kind: "barChart", values, labels: values.map((_, i) => String.fromCharCode(65 + i)), caption: topicTitle || "長條圖" };
   }
 
+  function inferCone(text, topicTitle) {
+    const raw = stripFrac(text);
+    const r = firstNum(raw, /半徑[為是]?\s*(\d+(?:\.\d+)?)/) || firstNum(raw, /r\s*[=\＝]\s*(\d+(?:\.\d+)?)/i);
+    const hVal = firstNum(raw, /高[為是]?\s*(\d+(?:\.\d+)?)/) || firstNum(raw, /h\s*[=\＝]\s*(\d+(?:\.\d+)?)/i);
+    const l = firstNum(raw, /母線[長為是]*\s*[l＝=]*\s*(\d+(?:\.\d+)?)/) || firstNum(raw, /l\s*[=\＝]\s*(\d+(?:\.\d+)?)/i);
+    return { kind: "cone", rLabel: r || "r", hLabel: hVal || "h", lLabel: l || "l", caption: topicTitle || "圓錐" };
+  }
+
+  function inferCylinder(text, topicTitle) {
+    const raw = stripFrac(text);
+    const r = firstNum(raw, /半徑[為是]?\s*(\d+(?:\.\d+)?)/) || firstNum(raw, /r\s*[=\＝]\s*(\d+(?:\.\d+)?)/i);
+    const hVal = firstNum(raw, /高[為是]?\s*(\d+(?:\.\d+)?)/) || firstNum(raw, /h\s*[=\＝]\s*(\d+(?:\.\d+)?)/i);
+    return { kind: "cylinder", rLabel: r || "r", hLabel: hVal || "h", caption: topicTitle || "圓柱" };
+  }
+
+  function inferPyramid(text, topicTitle) {
+    const raw = stripFrac(text);
+    const base = firstNum(raw, /底邊[長為是]?\s*(\d+(?:\.\d+)?)/) || firstNum(raw, /邊長\s*(\d+(?:\.\d+)?)/);
+    return { kind: "pyramid", baseLabel: base || "a", hLabel: "h", caption: topicTitle || "角錐" };
+  }
+
+  function inferSector(text, topicTitle) {
+    const raw = stripFrac(text);
+    const deg = firstNum(raw, /圓心角[為是]?\s*(\d+)\s*°?/) || firstNum(raw, /(\d+)\s*°/);
+    const r = firstNum(raw, /半徑[為是]?\s*(\d+(?:\.\d+)?)/);
+    return { kind: "sector", angleLabel: deg ? `${deg}°` : "θ", angleDeg: deg ? Number(deg) : 70, rLabel: r || "r", caption: topicTitle || "扇形" };
+  }
+
+  function inferParabola(text, topicTitle) {
+    const raw = stripFrac(text);
+    // y = ax² …：a<0 開口向下
+    const down = /開口向下/.test(raw) || /[yｙ]\s*[=\＝]\s*[−\-]/.test(raw);
+    return { kind: "parabola", opensUp: !down, vertexLabel: "頂點", axisLabel: "對稱軸", caption: topicTitle || "拋物線" };
+  }
+
+  function inferThreeView(text, topicTitle) {
+    const raw = stripFrac(text);
+    const solid = /圓柱/.test(raw) ? "圓柱" : /圓錐/.test(raw) ? "圓錐" : /正方體|立方/.test(raw) ? "正方體" : "長方體";
+    const spec = {
+      圓柱: { front: "長方形", top: "圓形", side: "長方形" },
+      圓錐: { front: "三角形", top: "圓形", side: "三角形" },
+      正方體: { front: "正方形", top: "正方形", side: "正方形" },
+      長方體: { front: "長方形", top: "長方形", side: "長方形" }
+    }[solid];
+    return { kind: "threeView", solid, ...spec, caption: topicTitle || "三視圖" };
+  }
+
+  function inferPieChart(text, topicTitle) {
+    const raw = stripFrac(text);
+    const pct = firstNum(raw, /(\d+(?:\.\d+)?)\s*[%％]/);
+    const p = pct ? Math.min(95, Math.max(5, Number(pct))) : 25;
+    return { kind: "pieChart", slices: [{ label: "甲", pct: p }, { label: "其他", pct: Math.round((100 - p) * 10) / 10 }], caption: topicTitle || "圓形圖" };
+  }
+
+  function inferHistogram(text, topicTitle) {
+    const nums = [...stripFrac(text).matchAll(/(\d+)/g)].map(m => Number(m[1])).filter(n => n > 0 && n < 100).slice(0, 5);
+    const values = nums.length >= 3 ? nums : [2, 5, 8, 4, 1];
+    return { kind: "histogram", values, caption: topicTitle || "直方圖" };
+  }
+
   function inferMath(text, ctx) {
     const topic = ctx.topicTitle || "";
     const blob = stripFrac(text) + topic;
+    // 具體圖形優先（圓錐≠圓、拋物線≠直線），泛用 kind 留最後
+    if (/三視圖|俯視圖|正視圖|側視圖|視圖/.test(blob)) return inferThreeView(text, topic);
+    if (/圓錐/.test(blob)) return inferCone(text, topic);
+    if (/圓柱/.test(blob)) return inferCylinder(text, topic);
+    if (/角錐/.test(blob)) return inferPyramid(text, topic);
+    if (/球[體面]?(?![賽場])/.test(blob) && /體積|表面積|半徑|立體/.test(blob)) return { kind: "sphere", rLabel: "r", caption: topic || "球" };
+    if (/圓形圖|圓餅/.test(blob)) return inferPieChart(text, topic);
+    if (/直方圖/.test(blob)) return inferHistogram(text, topic);
+    if (/扇形|圓心角|弧長/.test(blob)) return inferSector(text, topic);
+    if (/二次函數|拋物線|開口|頂點/.test(blob)) return inferParabola(text, topic);
     if (/數線|絕對值|相反數|正負數|原點.*單位|左側.*單位/.test(blob)) return inferNumberLine(text, topic);
     if (/半徑|圓|弧|弦|切線/.test(blob)) return inferCircle(text, topic);
     if (/三角形|全等|相似|畢氏|勾股|直角/.test(blob)) return inferTriangle(text, topic);
     if (/平行|截角|同位角|內錯角/.test(blob)) return inferParallel(text, topic);
-    if (/坐標|函數圖|象限|直角坐標|一次函數|二次函數|直線/.test(blob)) return inferCoordinate(text, topic);
+    if (/坐標|函數圖|象限|直角坐標|一次函數|直線/.test(blob)) return inferCoordinate(text, topic);
     if (/盒狀|四分位/.test(blob)) return { kind: "boxPlot", caption: topic || "盒狀圖" };
     if (/樹狀|機率/.test(blob)) return { kind: "treeDiagram", caption: topic || "樹狀圖" };
     if (/折線/.test(blob)) return inferLineChart(text, topic);
     if (/長條|圖表|統計/.test(blob)) return inferBarChart(text, topic);
-    if (/立體|角柱|角錐|體積|表面積/.test(blob)) return { kind: "solidPrism", caption: topic || "立體圖形" };
+    if (/立體|角柱|體積|表面積/.test(blob)) return { kind: "solidPrism", caption: topic || "立體圖形" };
     return ENGINE()?.diagramKindForTopic(topic, "") || null;
   }
 
@@ -256,6 +327,18 @@ window.DIAGRAM_INFER = (() => {
       if (len && spec.sideLabels?.length) {
         if (!spec.sideLabels.some(s => s.label === len)) return false;
       }
+    }
+    if (spec.kind === "cone" || spec.kind === "cylinder") {
+      const r = firstNum(raw, /半徑[為是]?\s*(\d+(?:\.\d+)?)/);
+      if (r && spec.rLabel !== r) return false;
+    }
+    if (spec.kind === "sector") {
+      const deg = firstNum(raw, /圓心角[為是]?\s*(\d+)/);
+      if (deg && spec.angleLabel !== `${deg}°`) return false;
+    }
+    if (spec.kind === "pieChart") {
+      const pct = firstNum(raw, /(\d+(?:\.\d+)?)\s*[%％]/);
+      if (pct && !spec.slices?.some(s => String(s.pct) === pct)) return false;
     }
     return Boolean(spec.kind);
   }
