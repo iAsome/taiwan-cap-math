@@ -5,12 +5,14 @@ import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const context = vm.createContext({ window: {}, console });
-for (const file of ["data.js", "quiz-taxonomy.js"]) {
+for (const file of ["data.js", "quiz-taxonomy.js", "quiz-variant-bank.js"]) {
   vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
 }
 
 const taxonomy = context.window.QUIZ_TAXONOMY || {};
+const bank = context.window.QUIZ_VARIANT_BANK || {};
 const units = context.window.MATH_DATA.units;
+const letters = ["A", "B", "C", "D"];
 
 const diagramKindForTopic = (title = "", section = "") => {
   const text = `${title}${section}`;
@@ -25,6 +27,8 @@ const diagramKindForTopic = (title = "", section = "") => {
   if (/立體|角柱|角錐|表面積|體積|空間/.test(text)) return { kind: "solidPrism", caption: "立體圖形的面與棱" };
   return null;
 };
+
+const needsDiagram = (title, section) => Boolean(diagramKindForTopic(title, section));
 
 const chapterTitle = quizId => ({
   "g7-1-c1": "國一上｜數與數線", "g7-1-c2": "國一上｜標準分解式與分數", "g7-1-c3": "國一上｜一元一次方程式",
@@ -47,6 +51,19 @@ const unitForQuiz = quizId => {
   return units.find(u => u.id === map[quizId]) || units[0];
 };
 
+function formatExample(q, label) {
+  const correct = q.choices?.[q.answer] ?? "";
+  const steps = Array.isArray(q.steps) ? q.steps.map((s, i) => `${i + 1}. ${s}`).join("\n") : "";
+  return {
+    q: `${label}：${q.text}`,
+    a: `正確答案：${letters[q.answer] ?? ""}｜${correct}\n${steps}`
+  };
+}
+
+function topicDefinition(title, section, unit) {
+  return `<p><strong>${title}</strong>是「${section}」的核心題型之一。解題時先對照 ${unit.title} 的觀念：${unit.core.split("。")[0]}。</p><p>小考中此題型固定出現 1 題；種子碼決定 10 組凍結變體中的哪一組。</p>`;
+}
+
 const lectures = {};
 let count = 0;
 
@@ -55,22 +72,28 @@ for (const [quizId, chapter] of Object.entries(taxonomy)) {
   for (const section of chapter.sections || []) {
     for (const topic of section.topics || []) {
       const key = `${quizId}/${topic.id}`;
+      const presets = bank[key];
+      if (!presets?.length) throw new Error(`缺少變體題庫 ${key}`);
       const diagram = diagramKindForTopic(topic.title, section.title);
+      const ex1 = formatExample(presets[0], "例題一");
+      const ex2 = presets[1].text !== presets[0].text ? formatExample(presets[1], "例題二") : null;
       const blocks = [
-        { type: "text", html: `<p><strong>${topic.title}</strong>屬於「${section.title}」。本題型在單元小考中固定出現一題；同一份試卷由<strong>種子碼</strong>決定使用 10 組變體中的哪一組。</p>` },
-        { type: "text", html: `<p>${unit.summary}</p>` },
-        { type: "formula", content: unit.formula.split("\n")[0] || unit.formula },
+        { type: "text", html: topicDefinition(topic.title, section.title, unit) },
+        { type: "formula", content: unit.formula.split("\n").slice(0, 2).join("\n") || unit.formula },
         { type: "text", html: `<h4>解題流程</h4><ol>${unit.steps.slice(0, 4).map(s => `<li>${s}</li>`).join("")}</ol>` },
-        { type: "example", q: `（例）${topic.title}：先讀題意，再依 ${section.title} 的規則逐步計算或判斷。`, a: `對照選項或計算結果，確認符合 ${topic.title} 的定義與條件。` },
-        { type: "pitfall", html: `<p>${unit.tips[0] || "先寫已知、再列式，避免跳步。"}</p><p>${unit.clarify || ""}</p>` }
+        { type: "example", q: ex1.q, a: ex1.a }
       ];
-      if (diagram) blocks.splice(3, 0, { type: "diagram", spec: diagram });
+      if (ex2) blocks.push({ type: "example", q: ex2.q, a: ex2.a });
+      if (diagram) blocks.splice(2, 0, { type: "diagram", spec: diagram });
+      blocks.push(
+        { type: "pitfall", html: `<p><strong>易錯：</strong>${presets[0].trap || unit.tips[0]}</p><p><strong>快解：</strong>${presets[0].tip || unit.tips[1] || unit.tips[0]}</p>` },
+        { type: "text", html: `<p><strong>與小考對應：</strong>章節 ${quizId}｜題型 ${topic.id}｜變體索引 0–9 由種子碼展開。</p>` }
+      );
       lectures[key] = { title: topic.title, chapter: chapterTitle(quizId), section: section.title, quizId, topicId: topic.id, blocks };
       count += 1;
     }
   }
 }
 
-const out = `window.LECTURE_TAXONOMY = ${JSON.stringify(lectures, null, 2)};\n`;
-fs.writeFileSync(path.join(root, "lecture-taxonomy.js"), out, "utf8");
-console.log(`Generated ${count} lecture entries → lecture-taxonomy.js`);
+fs.writeFileSync(path.join(root, "lecture-taxonomy.js"), `window.LECTURE_TAXONOMY = ${JSON.stringify(lectures, null, 2)};\n`, "utf8");
+console.log(`Generated ${count} detailed lecture entries → lecture-taxonomy.js`);

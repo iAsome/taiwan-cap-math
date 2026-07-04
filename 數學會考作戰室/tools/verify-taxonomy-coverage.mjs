@@ -7,9 +7,12 @@ import { fileURLToPath } from "node:url";
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const context = vm.createContext({ window: {}, console });
 
-for (const file of ["data.js", "analysis-data.js", "quiz-taxonomy.js", "questions.js"]) {
+for (const file of ["data.js", "analysis-data.js", "quiz-taxonomy.js", "quiz-variant-bank.js", "quiz-variants.js", "questions.js"]) {
   vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
 }
+
+const bank = context.window.QUIZ_VARIANT_BANK || {};
+assert.equal(Object.keys(bank).length, 537, "QUIZ_VARIANT_BANK must cover 537 taxonomy topics");
 
 const {
   generate, generateQuiz, generateTopicDrill, quizCatalog,
@@ -29,8 +32,7 @@ const rngFromSeed = seed => {
 
 for (const topic of taxonomyTopicPool()) {
   const raw = quizTaxonomy[topic.quizId].sections.flatMap(s => s.topics).find(t => t.id === topic.topicId);
-  const variants = ensureTopicVariants(raw, topic.quizId);
-  assert.equal(variants.length, VARIANTS_PER_TOPIC, `${topic.quizId}/${topic.topicId} must have ${VARIANTS_PER_TOPIC} variants`);
+  assert.equal(raw.variants?.length, VARIANTS_PER_TOPIC, `${topic.quizId}/${topic.topicId} must have explicit variants in taxonomy`);
   const signatures = new Set();
   for (let vi = 0; vi < VARIANTS_PER_TOPIC; vi++) {
     const sig = topicVariantSignature(topic.quizId, raw, vi);

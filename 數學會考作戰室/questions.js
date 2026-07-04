@@ -219,39 +219,11 @@ window.EXAM_ENGINE = (() => {
     return rngFromSeed(`${quizId}/${topicId}/v${variantIndex}`);
   }
 
-  function paraphraseStem(text, vi) {
-    const t = String(text);
-    if (!vi) return t;
-    const lead = ["以下", "請看", "再判斷", "請選", "再比較", "請比較", "再確認", "請確認", "再選", "請再選"];
-    return `${lead[vi - 1] || `第 ${vi + 1} 組`}｜${t}`;
-  }
-
-  function variantHelpers(vr, vi) {
-    return {
-      r: vr,
-      ri: (_r, min, max) => ri(vr, min, max),
-      pick: (_r, list) => {
-        if (!Array.isArray(list) || !list.length) return pick(vr, list);
-        return list[(vi + Math.floor(vr() * list.length)) % list.length];
-      },
-      mc: (_r, unitId, difficulty, text, correct, distractors, steps, tip, trap, concept) => {
-        const sh = shuffled(rngFromSeed(`mc-shuffle-${vi}-${text}`), [...distractors]);
-        return mc(vr, unitId, difficulty, paraphraseStem(text, vi), correct, sh, steps, tip, trap, concept);
-      },
-      frac, over, signed, sci,
-      variantIndex: vi,
-      slot: vi
-    };
-  }
-
   function ensureTopicVariants(topic, quizId) {
-    if (topic.variants?.length === VARIANTS_PER_TOPIC) return topic.variants;
-    const base = topic.template;
-    if (!base) throw new Error(`題型 ${quizId}/${topic.id || topic.topicId} 缺少 template 或 variants`);
-    return Array.from({ length: VARIANTS_PER_TOPIC }, (_, vi) => helpers => {
-      const vr = variantRng(quizId, topic.id || topic.topicId, vi);
-      return base({ ...helpers, ...variantHelpers(vr, vi) });
-    });
+    const variants = topic.variants;
+    if (variants?.length === VARIANTS_PER_TOPIC) return variants;
+    const id = topic.id || topic.topicId;
+    throw new Error(`題型 ${quizId}/${id} 缺少 ${VARIANTS_PER_TOPIC} 個 explicit variants`);
   }
 
   const advancedUnitIds = new Set([5, 6, 9, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 25, 26]);
@@ -283,6 +255,7 @@ window.EXAM_ENGINE = (() => {
         title: topic.title,
         section: topic.section,
         template: topic.template,
+        variants: topic.variants,
         unitIds: [...ch.unitIds],
         chapterTitle: ch.title,
         unitId: ch.unitIds[0]
@@ -311,9 +284,8 @@ window.EXAM_ENGINE = (() => {
 
   function questionFromTopic(r, topic, index, ability, variantIndex = 0) {
     const vi = variantIndex ?? 0;
-    const variants = ensureTopicVariants({ id: topic.topicId, template: topic.template, variants: topic.variants }, topic.quizId);
-    const vr = variantRng(topic.quizId, topic.topicId, vi);
-    const question = variants[vi](variantHelpers(vr, vi));
+    const variants = ensureTopicVariants({ id: topic.topicId, variants: topic.variants }, topic.quizId);
+    const question = { ...variants[vi](), variantIndex: vi };
     question.quizLevel = question.difficulty >= 3 ? "進階" : "基礎";
     question.ability = ability || "procedure";
     question.taxonomySection = topic.section;
@@ -376,10 +348,7 @@ window.EXAM_ENGINE = (() => {
   }
 
   function topicVariantSignature(quizId, topic, variantIndex) {
-    const fn = ensureTopicVariants(topic, quizId)[variantIndex];
-    const vr = variantRng(quizId, topic.id, variantIndex);
-    const question = fn(variantHelpers(vr, variantIndex));
-    return drillQuestionSignature(question);
+    return drillQuestionSignature(ensureTopicVariants(topic, quizId)[variantIndex]());
   }
 
   function generateTopicDrill(quizId, topicId, seed, count = 2, excludeTexts = []) {
@@ -399,6 +368,7 @@ window.EXAM_ENGINE = (() => {
           title: topic.title,
           section: topic.section,
           template: topic.template,
+        variants: topic.variants,
           variants: topic.variants,
           unitIds: chapter ? [...chapter.unitIds] : [1],
           unitId: chapter?.unitIds[0] || 1
@@ -502,6 +472,7 @@ window.EXAM_ENGINE = (() => {
         title: topic.title,
         section: topic.section,
         template: topic.template,
+        variants: topic.variants,
         variants: topic.variants,
         unitIds: [...blueprint.unitIds],
         unitId: blueprint.unitIds[0]
