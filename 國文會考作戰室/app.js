@@ -24,7 +24,9 @@
     seconds: 4200,
     totalSeconds: 4200,
     timerId: null,
-    currentQuestion: 0
+    currentQuestion: 0,
+    paperDateFilter: "all",
+    paperHistoryPage: 0
   };
 
   function formatDuration(seconds) {
@@ -348,13 +350,32 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function renderMyPapers() {
-    const records = paperHistory();
-    $("#paperHistoryStats").innerHTML = [
-      ["考過卷數", records.length],
-      ["小考", records.filter(item => item.kind === "quiz").length],
-      ["模擬考", records.filter(item => item.kind === "mock").length],
-      ["歷屆考卷", records.filter(item => item.kind === "archive").length]
-    ].map(([label, value]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join("");
+    const allRecords = paperHistory();
+    const dates = PAPER_HISTORY_UI.dateOptions(allRecords);
+    const { records, page, totalPages } = PAPER_HISTORY_UI.visibleRecords(allRecords, {
+      date: state.paperDateFilter,
+      page: state.paperHistoryPage,
+      pageSize: 5
+    });
+    state.paperHistoryPage = page;
+    $("#paperHistoryStats").innerHTML = PAPER_HISTORY_UI.paperStats(allRecords)
+      .map(([label, value]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join("");
+    const { toolbar, pager } = PAPER_HISTORY_UI.renderToolbar({
+      date: state.paperDateFilter,
+      page,
+      totalPages,
+      dates
+    });
+    $("#paperHistoryToolbar").innerHTML = toolbar;
+    $("#paperHistoryPager").innerHTML = pager;
+    PAPER_HISTORY_UI.bindToolbar($("#paperHistoryToolbar"), $("#paperHistoryPager"), {
+      getState: () => ({ page: state.paperHistoryPage, totalPages, date: state.paperDateFilter }),
+      onChange: patch => {
+        if (patch.date != null) state.paperDateFilter = patch.date;
+        if (patch.page != null) state.paperHistoryPage = patch.page;
+        renderMyPapers();
+      }
+    });
     const kindBadge = { quiz: "QUIZ", mock: "MOCK", archive: "ARCHIVE" };
     $("#paperHistoryList").innerHTML = records.length ? records.map(record => {
       const date = new Date(record.finishedAt).toLocaleString("zh-TW", { hour12: false });
@@ -484,10 +505,8 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const qHtml = state.exam.questions.map((q, index) => {
       const unit = units.find(item => item.id === q.unitId);
       const choices = `<div class="choices">${q.choices.map((choice, ci) => {
-        const selected = state.answers[index] === ci;
-        const correct = state.submitted && ci === q.answer;
-        const wrong = state.submitted && selected && ci !== q.answer;
-        return `<button class="choice ${selected ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-choice="${index}:${ci}" ${state.submitted ? "disabled" : ""}><span class="choice-letter">${letters[ci]}</span><span>${nl(choice)}</span></button>`;
+        const attrs = EXAM_CHOICE_UI.choiceAttrs({ submitted: state.submitted, selected: state.answers[index] === ci, isAnswer: ci === q.answer });
+        return EXAM_CHOICE_UI.choiceButton({ letter: letters[ci], textHtml: nl(choice), attrs, dataAttr: `data-choice="${index}:${ci}"`, disabled: state.submitted });
       }).join("")}</div>`;
       const passage = q.passageId && (!index || state.exam.questions[index - 1].passageId !== q.passageId) ? `<aside class="reading-passage"><p class="eyebrow">閱讀選文｜回答第 ${index + 1}～${index + state.exam.questions.filter(item => item.passageId === q.passageId).length} 題</p><h3>${esc(q.passageTitle || "共用選文")}</h3><p>${nl(q.passage)}</p></aside>` : "";
       return `${passage}<article class="question" id="question-${index + 1}" data-question="${index}">

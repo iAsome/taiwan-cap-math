@@ -169,7 +169,12 @@ for (const dir of subjects) {
       const scriptPath = path.resolve(subjectDir, file.replace(/\?.*$/, ""));
       vm.runInContext(fs.readFileSync(scriptPath, "utf8"), context, { filename: file });
       if (context.window.FRACTION_MARKUP) context.FRACTION_MARKUP = context.window.FRACTION_MARKUP;
+      if (context.window.PAPER_HISTORY_UI) context.PAPER_HISTORY_UI = context.window.PAPER_HISTORY_UI;
+      if (context.window.EXAM_CHOICE_UI) context.EXAM_CHOICE_UI = context.window.EXAM_CHOICE_UI;
     }
+    if (!context.window.FRACTION_MARKUP) throw new Error("FRACTION_MARKUP missing after scripts");
+    if (!context.window.PAPER_HISTORY_UI) throw new Error("PAPER_HISTORY_UI missing after scripts");
+    if (!context.window.EXAM_CHOICE_UI) throw new Error("EXAM_CHOICE_UI missing after scripts");
     console.log(`OK ${dir} bootstrap`);
   } catch (err) {
     console.error(`FAIL ${dir} bootstrap: ${err.stack || err.message}`);

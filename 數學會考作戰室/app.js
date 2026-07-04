@@ -30,6 +30,8 @@
     totalSeconds: 4800,
     timerId: null,
     currentQuestion: 0,
+    paperDateFilter: "all",
+    paperHistoryPage: 0,
     paperReview: { recordId: null, mode: null, drill: null }
   };
 
@@ -157,11 +159,8 @@
     const questionsHtml = drill.subQuestions.map((question, subIndex) => {
       const choices = question.choices.map((choice, choiceIndex) => {
         const selected = drill.subAnswers[subIndex] === choiceIndex;
-        const reveal = drill.submitted;
-        const correct = reveal && choiceIndex === question.answer;
-        const wrong = reveal && selected && choiceIndex !== question.answer;
-        const disabled = reveal ? " disabled" : "";
-        return `<button type="button" class="choice ${selected ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-drill-choice="${subIndex}:${choiceIndex}"${disabled}><span class="choice-letter">${letters[choiceIndex]}</span><span>${mathText(choice)}</span></button>`;
+        const attrs = EXAM_CHOICE_UI.choiceAttrs({ submitted: drill.submitted, selected, isAnswer: choiceIndex === question.answer });
+        return EXAM_CHOICE_UI.choiceButton({ letter: letters[choiceIndex], textHtml: mathText(choice), attrs, dataAttr: `data-drill-choice="${subIndex}:${choiceIndex}"`, disabled: drill.submitted });
       }).join("");
       const wrongAnswer = drill.submitted && drill.subAnswers[subIndex] !== question.answer;
       const solution = wrongAnswer ? solutionHtml(question, subIndex) : "";
@@ -548,13 +547,32 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function renderMyPapers() {
-    const records = paperHistory();
-    $("#paperHistoryStats").innerHTML = [
-      ["考過卷數", records.length],
-      ["小考", records.filter(item => item.kind === "quiz").length],
-      ["模擬考", records.filter(item => item.kind === "mock").length],
-      ["歷屆考卷", records.filter(item => item.kind === "archive").length]
-    ].map(([label, value]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join("");
+    const allRecords = paperHistory();
+    const dates = PAPER_HISTORY_UI.dateOptions(allRecords);
+    const { records, page, totalPages } = PAPER_HISTORY_UI.visibleRecords(allRecords, {
+      date: state.paperDateFilter,
+      page: state.paperHistoryPage,
+      pageSize: 5
+    });
+    state.paperHistoryPage = page;
+    $("#paperHistoryStats").innerHTML = PAPER_HISTORY_UI.paperStats(allRecords)
+      .map(([label, value]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join("");
+    const { toolbar, pager } = PAPER_HISTORY_UI.renderToolbar({
+      date: state.paperDateFilter,
+      page,
+      totalPages,
+      dates
+    });
+    $("#paperHistoryToolbar").innerHTML = toolbar;
+    $("#paperHistoryPager").innerHTML = pager;
+    PAPER_HISTORY_UI.bindToolbar($("#paperHistoryToolbar"), $("#paperHistoryPager"), {
+      getState: () => ({ page: state.paperHistoryPage, totalPages, date: state.paperDateFilter }),
+      onChange: patch => {
+        if (patch.date != null) state.paperDateFilter = patch.date;
+        if (patch.page != null) state.paperHistoryPage = patch.page;
+        renderMyPapers();
+      }
+    });
     const kindBadge = { quiz: "QUIZ", mock: "MOCK", archive: "ARCHIVE" };
     $("#paperHistoryList").innerHTML = records.length ? records.map(record => {
       const date = new Date(record.finishedAt).toLocaleString("zh-TW", { hour12: false });
@@ -710,10 +728,8 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       const q = state.exam.questions[index];
       const unit = units.find(item => item.id === q.unitId) || { grade: 7, title: "數學" };
       const choices = q.type === "mc" ? `<div class="choices">${q.choices.map((choice, ci) => {
-        const selected = state.answers[index] === ci;
-        const correct = state.submitted && ci === q.answer;
-        const wrong = state.submitted && selected && ci !== q.answer;
-        return `<button class="choice ${selected ? "selected" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-choice="${index}:${ci}" ${state.submitted ? "disabled" : ""}><span class="choice-letter">${letters[ci]}</span><span>${mathText(choice)}</span></button>`;
+        const attrs = EXAM_CHOICE_UI.choiceAttrs({ submitted: state.submitted, selected: state.answers[index] === ci, isAnswer: ci === q.answer });
+        return EXAM_CHOICE_UI.choiceButton({ letter: letters[ci], textHtml: mathText(choice), attrs, dataAttr: `data-choice="${index}:${ci}"`, disabled: state.submitted });
       }).join("")}</div>` : `<div class="constructed"><textarea data-cr="${index}" placeholder="請寫下完整解題過程與結論……" ${state.submitted ? "disabled" : ""}>${esc(state.answers[index])}</textarea><p class="writing-guide">建議包含：設未知數／列關係或性質／推導計算／含單位的結論</p></div>`;
       const passage = q.passageId && (displayIndex === 0 || state.exam.questions[visibleIndexes[displayIndex - 1]].passageId !== q.passageId) ? `<aside class="reading-passage"><p class="eyebrow">閱讀選文｜回答第 ${displayIndex + 1}～${displayIndex + visibleIndexes.filter(itemIndex => state.exam.questions[itemIndex].passageId === q.passageId).length} 題</p><h3>${esc(q.passageTitle || "自行車訓練器的速率估計")}</h3><p>${mathText(q.passage)}</p></aside>` : "";
       const showDrill = state.submitted && reviewRecord && (wrongOnly || reviewMode === "full") && q.type === "mc";
