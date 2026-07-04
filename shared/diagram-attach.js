@@ -35,15 +35,24 @@ window.DIAGRAM_ATTACH = (() => {
   function attachDiagram(question, subject) {
     if (!question || typeof question !== "object") return question;
     if (question.diagram && typeof question.diagram === "string" && question.diagram.trim()) return question;
-    const infer = window.DIAGRAM_INFER;
     const engine = window.DIAGRAM_ENGINE;
-    if (!infer || !engine) return question;
+    if (!engine) return question;
+    const explicitSpec = question.diagramSpec || loadOverride(subject, question);
+    if (subject === "math") {
+      // ponytail: math figures must be teacher-verified; keyword inference created mismatched textbook-style diagrams.
+      if (!explicitSpec?.kind || explicitSpec.verified !== true) return question;
+      return {
+        ...question,
+        diagramSpec: explicitSpec,
+        diagram: engine.renderQuestionDiagram(explicitSpec)
+      };
+    }
+    const infer = window.DIAGRAM_INFER;
+    if (!infer) return question;
     const ctx = inferCtx(question, subject);
     const blob = [question.text, ...(question.choices || []), ...(question.steps || [])].join(" ");
     if (!infer.needsDiagram(blob, subject, ctx)) return question;
-    const spec = question.diagramSpec
-      || loadOverride(subject, question)
-      || infer.inferDiagramSpec(blob, ctx);
+    const spec = explicitSpec || infer.inferDiagramSpec(blob, ctx);
     if (!spec?.kind) return question;
     return {
       ...question,
@@ -53,8 +62,14 @@ window.DIAGRAM_ATTACH = (() => {
   }
 
   function attachDiagramText(text, subject, extraCtx = {}) {
-    const infer = window.DIAGRAM_INFER;
     const engine = window.DIAGRAM_ENGINE;
+    if (!engine) return "";
+    const explicitSpec = extraCtx.diagramSpec || extraCtx.spec;
+    if (subject === "math") {
+      // ponytail: lecture examples get no guessed diagrams; add verified specs only when the figure matches the exact text.
+      return explicitSpec?.kind && explicitSpec.verified === true ? engine.renderDiagram(explicitSpec) : "";
+    }
+    const infer = window.DIAGRAM_INFER;
     if (!infer || !engine || !infer.needsDiagram(text, subject, extraCtx)) return "";
     const spec = infer.inferDiagramSpec(text, { subject, ...extraCtx });
     return spec ? engine.renderDiagram(spec) : "";

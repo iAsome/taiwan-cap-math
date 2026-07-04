@@ -29,8 +29,6 @@ const assertExamText = (label, text) => {
   assert.ok(!isSlashFraction(text), `${label} must not use slash fractions`);
 };
 
-const diagramPattern = /數線|絕對值|相反數|正負數|坐標|函數圖|線型函數|二次函數|三角形|全等|相似|畢氏|平行|四邊形|圓|弧|盒狀|統計|機率|樹狀|長條|折線|立體|角柱|角錐|空間/;
-
 let topicCount = 0;
 for (const chapter of Object.values(taxonomy)) {
   for (const section of chapter.sections || []) topicCount += section.topics.length;
@@ -49,8 +47,8 @@ for (const [key, lecture] of Object.entries(lectures)) {
   assert.ok(example.a.trim().length >= 15, `${key} example answer must include worked solution`);
   assertExamText(`${key} example q`, example.q);
   assertExamText(`${key} example a`, example.a);
-  if (diagramPattern.test(`${lecture.title}${lecture.section}`)) {
-    assert.ok(types.includes("diagram"), `${key} diagram topic must include diagram block`);
+  for (const block of lecture.blocks.filter(b => b.type === "diagram")) {
+    assert.equal(block.spec?.verified, true, `${key} diagram block must be teacher-verified`);
   }
 }
 

@@ -20,8 +20,6 @@ const SUBJECTS = [
   { dir: "\u516c\u6c11\u6703\u8003\u4f5c\u6230\u5ba4", code: "civics", data: "civics-data.js", extra: ["quiz-taxonomy.js"] }
 ];
 
-const diagramPattern = /數線|絕對值|相反數|正負數|坐標|函數圖|線型函數|二次函數|三角形|全等|相似|畢氏|平行|四邊形|圓|弧|盒狀|統計|機率|樹狀|長條|折線|立體|角柱|角錐|空間/;
-
 // 數學 kind 對照表：題文命中 regex 時，spec.kind 必須是課本正確圖形（specific-first，取第一個命中）
 const MATH_KIND_RULES = [
   [/三視圖|俯視圖|正視圖|側視圖/, ["threeView"]],
@@ -104,6 +102,22 @@ function ctxFrom(q, code) {
 function checkQuestion(stack, q, code, gaps, stats) {
   const text = blob(q);
   const ctx = ctxFrom(q, code);
+  if (code === "math") {
+    if ((q.diagram || q.diagramSpec) && q.diagramSpec?.verified !== true) {
+      gaps.push({ subject: code, key: q.taxonomyKey || q.text?.slice(0, 40), reason: "unverified-question-diagram", text: q.text?.slice(0, 72) });
+      return;
+    }
+    const out = stack.DIAGRAM_ATTACH.attachDiagram({ ...q }, code);
+    if (!out.diagram?.includes("<svg")) return;
+    stats.needs++;
+    if (!stack.DIAGRAM_INFER.validateSpecLabels(text, out.diagramSpec)) {
+      gaps.push({ subject: code, key: q.taxonomyKey || q.text?.slice(0, 40), reason: "labels", text: q.text?.slice(0, 72), kind: out.diagramSpec?.kind });
+      return;
+    }
+    if (!assertMathKind(text, out.diagramSpec, q.taxonomyKey || q.text?.slice(0, 40), gaps)) return;
+    stats.ok++;
+    return;
+  }
   if (!stack.DIAGRAM_INFER.needsDiagram(text, code, ctx)) return;
   stats.needs++;
   const out = stack.DIAGRAM_ATTACH.attachDiagram({ ...q }, code);
@@ -166,24 +180,15 @@ for (const sub of SUBJECTS) {
     if (fs.existsSync(lecPath)) {
       const lecWin = loadSubject(base, sub.data, ["lecture-taxonomy.js"], stack);
       for (const [key, lecture] of Object.entries(lecWin.LECTURE_TAXONOMY || {})) {
-        if (diagramPattern.test(`${lecture.title}${lecture.section}`)) {
-          const block = lecture.blocks?.find(b => b.type === "diagram");
-          if (!block?.spec?.kind) {
-            gaps.push({ subject: "math", key: `lecture-block:${key}`, reason: "missing-diagram-block", text: lecture.title });
-          }
-        }
-        const ex = lecture.blocks?.find(b => b.type === "example");
-        if (ex) {
+        for (const block of lecture.blocks?.filter(b => b.type === "diagram") || []) {
           stats.checked++;
-          const ctx = { subject: "math", topicTitle: lecture.title, sectionTitle: lecture.section, taxonomyKey: key };
-          if (stack.DIAGRAM_INFER.needsDiagram(ex.q, "math", ctx)) {
-            stats.needs++;
-            const html = stack.DIAGRAM_ATTACH.attachDiagramText(ex.q, "math", ctx);
-            const spec = stack.DIAGRAM_INFER.inferDiagramSpec(ex.q, ctx);
-            if (!html.includes("<svg") || !stack.DIAGRAM_INFER.validateSpecLabels(ex.q, spec)) {
-              gaps.push({ subject: "math", key: `lecture-ex:${key}`, reason: "lecture-example", text: ex.q.slice(0, 72) });
-            } else if (assertMathKind(ex.q, spec, `lecture-ex:${key}`, gaps)) stats.ok++;
+          if (block.spec?.verified !== true) {
+            gaps.push({ subject: "math", key: `lecture-block:${key}`, reason: "unverified-lecture-diagram", text: lecture.title });
+            continue;
           }
+          const html = stack.DIAGRAM_ENGINE.renderDiagram(block.spec);
+          if (!html.includes("<svg")) gaps.push({ subject: "math", key: `lecture-block:${key}`, reason: "no-svg", text: lecture.title });
+          else stats.ok++;
         }
       }
     }

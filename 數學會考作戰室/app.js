@@ -4,6 +4,7 @@
   const lectureTaxonomy = window.LECTURE_TAXONOMY || {};
   const quizTaxonomy = window.QUIZ_TAXONOMY || {};
   const renderDiagram = spec => window.DIAGRAM_ENGINE?.renderDiagram(spec) || "";
+  const renderLectureDiagram = spec => spec?.verified === true ? renderDiagram(spec) : "";
   const attachExampleDiagram = (q, topic) => window.DIAGRAM_ATTACH?.attachDiagramText(q, "math", { topicTitle: topic }) || "";
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -227,7 +228,7 @@
       return `<div class="lecture-example"><p><strong>例題：</strong>${mathText(block.q)}</p>${exDiagram}<p><strong>解：</strong>${mathText(block.a)}</p></div>`;
     }
     if (block.type === "pitfall") return `<div class="lecture-pitfall"><strong>常見陷阱</strong>${block.html}</div>`;
-    if (block.type === "diagram") return renderDiagram(block.spec);
+    if (block.type === "diagram") return renderLectureDiagram(block.spec);
     return "";
   }
 
