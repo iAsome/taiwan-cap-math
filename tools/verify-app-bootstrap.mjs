@@ -174,6 +174,7 @@ for (const dir of subjects) {
     }
     if (!context.window.FRACTION_MARKUP) throw new Error("FRACTION_MARKUP missing after scripts");
     if (!context.window.PAPER_HISTORY_UI) throw new Error("PAPER_HISTORY_UI missing after scripts");
+    if (!context.window.PAPER_HISTORY_UI.renderHistoryCardInfo) throw new Error("PAPER_HISTORY_UI.renderHistoryCardInfo missing");
     if (!context.window.EXAM_CHOICE_UI) throw new Error("EXAM_CHOICE_UI missing after scripts");
     console.log(`OK ${dir} bootstrap`);
   } catch (err) {

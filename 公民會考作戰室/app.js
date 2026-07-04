@@ -371,16 +371,16 @@
         renderMyPapers();
       }
     });
-    const kindBadge = { quiz: "QUIZ", mock: "MOCK", archive: "ARCHIVE" };
     $("#paperHistoryList").innerHTML = records.length ? records.map(record => {
       const date = new Date(record.finishedAt).toLocaleString("zh-TW", { hour12: false });
       const missed = record.missedUnits?.map(unit => `<span>${esc(unit)}</span>`).join("") || "";
       const durationText = record.elapsedSeconds != null
         ? `｜作答時間 ${formatDuration(record.elapsedSeconds)}${record.overtimeSeconds > 0 ? `（超時 ${formatDuration(record.overtimeSeconds)}）` : ""}`
         : "";
+      const dateLine = `${esc(date)}｜${record.correct}/${record.total} 題${durationText}`;
       return `<article class="paper-history-card">
-        <div><p class="eyebrow">${kindBadge[record.kind] || "MOCK"} · ${esc(record.id)}</p><h3>${esc(record.title)}</h3><small>${esc(date)}｜${record.correct}/${record.total} 題${durationText}</small></div>
-        <div class="paper-history-score"><strong>${Math.round(record.correct / Math.max(1, record.total) * 100)}</strong><span>%</span></div>
+        <div>${PAPER_HISTORY_UI.renderHistoryCardInfo({ title: esc(record.title), dateLine })}</div>
+        ${PAPER_HISTORY_UI.renderScorePercent(record.correct, record.total)}
         <div class="missed-units">${missed || "<span>沒有錯題</span>"}</div>
         <button class="secondary" data-review-paper="${esc(record.id)}">查看當次考卷與詳解</button>
       </article>`;
@@ -412,7 +412,7 @@
   function configureExamHeader() {
     const isQuiz = state.exam?.kind === "quiz";
     const isArchive = state.exam?.kind === "archive";
-    $("#examEyebrow").textContent = isQuiz ? "UNIT QUIZ" : isArchive ? "OFFICIAL PAST PAPER" : "FULL MOCK EXAM";
+    $("#examEyebrow").textContent = PAPER_HISTORY_UI.examKindEyebrow(state.exam.kind);
     $("#examTitle").textContent = isQuiz || isArchive ? state.exam.title : "會考公民模擬考";
     $("#examDescription").textContent = isQuiz
       ? `${state.exam.questions.length} 題四選一，共 ${state.exam.minutes || 10} 分鐘。課綱編碼：${state.exam.officialCodes}。`
@@ -512,13 +512,13 @@
     const isArchive = state.exam.kind === "archive";
     const scopeTitles = isQuiz ? state.exam.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、") : "";
     const cover = isQuiz ? `
-      <header class="paper-cover"><div><p class="eyebrow">單元範圍 · ${esc(state.exam.id)}</p><h2>${esc(state.exam.title)}</h2><p>${state.exam.questions.length} 題四選一｜${state.exam.minutes || 10} 分鐘</p></div><div class="paper-stamp">${esc(groupMark(state.exam.grade))}<br>${esc(state.exam.term)}</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">單元範圍</p><h2>${esc(state.exam.title)}</h2><p>${state.exam.questions.length} 題四選一｜${state.exam.minutes || 10} 分鐘</p></div><div class="paper-stamp">${esc(groupMark(state.exam.grade))}<br>${esc(state.exam.term)}</div></header>
       <div class="paper-instructions"><div><strong>${state.exam.questions.length}</strong><span>四選一｜即時計分</span></div><div><strong>${state.exam.unitIds.length}</strong><span>範圍單元｜無超綱單元</span></div><div><strong>${state.exam.minutes || 10} min</strong><span>依單元需要安排進階</span></div></div>
       <div class="quiz-paper-scope"><strong>本卷範圍</strong><span>${esc(scopeTitles)}</span><small>${esc(state.exam.officialCodes)}</small></div>` : isArchive ? `
-      <header class="paper-cover"><div><p class="eyebrow">官方題本重現 · ${esc(state.exam.id)}</p><h2>${state.exam.year} 年國中教育會考社會科．公民題目</h2><p>${state.exam.questions.length} 題選擇｜依官方公布題目中屬於公民的題號製作為可作答電子試卷｜計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">官方題本重現</p><h2>${state.exam.year} 年國中教育會考社會科．公民題目</h2><p>${state.exam.questions.length} 題選擇｜依官方公布題目中屬於公民的題號製作為可作答電子試卷｜計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
       <div class="paper-instructions"><div><strong>${state.exam.questions.length}</strong><span>四選一｜官方原題</span></div><div><strong>${state.exam.minutes || 20} min</strong><span>時間到可繼續作答</span></div></div>
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
-      <header class="paper-cover"><div><p class="eyebrow">自訂比例 · 涵蓋 20 單元 · ${esc(state.exam.id)}</p><h2>會考公民模擬考</h2><p>30 題選擇｜40 分鐘｜法律與生活、政治與民主治理兩大領域加抽比重（本站自訂，非官方獨立考科規格）</p></div><div class="paper-stamp">公民<br>自訂規格</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">自訂比例 · 涵蓋 20 單元</p><h2>會考公民模擬考</h2><p>30 題選擇｜40 分鐘｜法律與生活、政治與民主治理兩大領域加抽比重（本站自訂，非官方獨立考科規格）</p></div><div class="paper-stamp">公民<br>自訂規格</div></header>
       <div class="paper-instructions"><div><strong>30</strong><span>四選一｜全數公民單元覆蓋</span></div><div><strong>40 min</strong><span>題目順序依卷別種子打亂</span></div></div>`;
     $("#paper").innerHTML = `
       ${cover}

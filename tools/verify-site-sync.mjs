@@ -38,6 +38,17 @@ for (const dir of subjects) {
   for (const marker of appMarkers) {
     if (!app.includes(marker)) fail(`${dir} app.js missing ${marker}`);
   }
+  for (const marker of ["renderHistoryCardInfo", "examKindEyebrow"]) {
+    if (!app.includes(marker)) fail(`${dir} app.js missing ${marker}`);
+  }
+  if (dir === "數學會考作戰室") {
+    if (!app.includes("renderScoreMath")) fail(`${dir} app.js missing renderScoreMath`);
+  } else if (!app.includes("renderScorePercent")) {
+    fail(`${dir} app.js missing renderScorePercent`);
+  }
+  if (/kindBadge|esc\(state\.exam\.id\)|eyebrow">\$\{kindBadge/.test(app)) {
+    fail(`${dir} app.js still exposes internal id/kindBadge in UI`);
+  }
   if (formulaSubjects.has(dir) && !app.includes('procedure: "公式運算"')) {
     fail(`${dir} app.js missing procedure 公式運算 label`);
   }
@@ -45,6 +56,12 @@ for (const dir of subjects) {
   const css = fs.readFileSync(path.join(base, "styles.css"), "utf8");
   for (const marker of cssMarkers) {
     if (!css.includes(marker)) fail(`${dir} styles.css missing ${marker}`);
+  }
+  if (dir === "數學會考作戰室" && !css.includes(".paper-history-scores")) {
+    fail(`${dir} styles.css missing .paper-history-scores`);
+  }
+  if (!html.includes('id="examEyebrow">模擬考')) {
+    fail(`${dir} index.html examEyebrow default should be 模擬考`);
   }
 }
 

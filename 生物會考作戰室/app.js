@@ -330,16 +330,16 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
         renderMyPapers();
       }
     });
-    const kindBadge = { quiz: "QUIZ", mock: "MOCK", archive: "ARCHIVE" };
     $("#paperHistoryList").innerHTML = records.length ? records.map(record => {
       const date = new Date(record.finishedAt).toLocaleString("zh-TW", { hour12: false });
       const missed = record.missedUnits?.map(unit => `<span>${esc(unit)}</span>`).join("") || "";
       const durationText = record.elapsedSeconds != null
         ? `｜作答時間 ${formatDuration(record.elapsedSeconds)}${record.overtimeSeconds > 0 ? `（超時 ${formatDuration(record.overtimeSeconds)}）` : ""}`
         : "";
+      const dateLine = `${esc(date)}｜${record.correct}/${record.mcCount} 題｜${record.answered}/${record.total} 已作答${durationText}`;
       return `<article class="paper-history-card">
-        <div><p class="eyebrow">${kindBadge[record.kind] || "MOCK"} · ${esc(record.id)}</p><h3>${esc(record.title)}</h3><small>${esc(date)}｜${record.correct}/${record.mcCount} 題｜${record.answered}/${record.total} 已作答${durationText}</small></div>
-        <div class="paper-history-score"><strong>${Math.round(record.correct / Math.max(1, record.mcCount) * 100)}</strong><span>%</span></div>
+        <div>${PAPER_HISTORY_UI.renderHistoryCardInfo({ title: esc(record.title), dateLine })}</div>
+        ${PAPER_HISTORY_UI.renderScorePercent(record.correct, record.mcCount)}
         <div class="missed-units">${missed || "<span>沒有錯題</span>"}</div>
         <button class="secondary" data-review-paper="${esc(record.id)}">查看當次考卷與詳解</button>
       </article>`;
@@ -371,7 +371,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   function configureExamHeader() {
     const isQuiz = state.exam?.kind === "quiz";
     const isArchive = state.exam?.kind === "archive";
-    $("#examEyebrow").textContent = isQuiz ? "GRADE-SCOPE QUIZ" : isArchive ? "EXTRACTED FROM OFFICIAL 自然科" : "FULL MOCK EXAM";
+    $("#examEyebrow").textContent = PAPER_HISTORY_UI.examKindEyebrow(state.exam.kind);
     $("#examTitle").textContent = isQuiz || isArchive ? state.exam.title : "生物模擬測驗";
     $("#examDescription").textContent = isQuiz
       ? `${state.exam.questions.length} 題四選一，共 ${state.exam.minutes || 15} 分鐘。範圍主題：${state.exam.officialCodes}。`
@@ -472,13 +472,13 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const isArchive = state.exam.kind === "archive";
     const scopeTitles = isQuiz ? state.exam.unitIds.map(id => units.find(unit => unit.id === id)?.title).filter(Boolean).join("、") : "";
     const cover = isQuiz ? `
-      <header class="paper-cover"><div><p class="eyebrow">課綱範圍 · ${esc(state.exam.id)}</p><h2>${esc(state.exam.title)}</h2><p>${state.exam.questions.length} 題四選一｜${state.exam.minutes || 15} 分鐘｜每個列出單元至少覆蓋 1 題</p></div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term || state.exam.chapter)}</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">課綱範圍</p><h2>${esc(state.exam.title)}</h2><p>${state.exam.questions.length} 題四選一｜${state.exam.minutes || 15} 分鐘｜每個列出單元至少覆蓋 1 題</p></div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term || state.exam.chapter)}</div></header>
       <div class="paper-instructions"><div><strong>${state.exam.questions.length}</strong><span>四選一｜即時計分</span></div><div><strong>${state.exam.unitIds.length}</strong><span>範圍單元｜無超綱單元</span></div><div><strong>${state.exam.minutes || 15} min</strong><span>依單元需要安排進階</span></div></div>
       <div class="quiz-paper-scope"><strong>本卷範圍</strong><span>${esc(scopeTitles)}</span><small>${esc(state.exam.officialCodes)}</small></div>` : isArchive ? `
-      <header class="paper-cover"><div><p class="eyebrow">官方自然科題本節錄 · ${esc(state.exam.id)}</p><h2>${state.exam.year} 年自然科題本中的生物題</h2><p>${state.exam.questions.length} 題選擇｜從官方自然科題本逐題比對挑出的生物題，計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">官方自然科題本節錄</p><h2>${state.exam.year} 年自然科題本中的生物題</h2><p>${state.exam.questions.length} 題選擇｜從官方自然科題本逐題比對挑出的生物題，計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
       <div class="paper-instructions"><div><strong>${state.exam.questions.length}</strong><span>四選一｜官方原題</span></div><div><strong>${state.exam.minutes || 20} min</strong><span>時間到可繼續作答</span></div></div>
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
-      <header class="paper-cover"><div><p class="eyebrow">原創練習 · 15 單元覆蓋 · ${esc(state.exam.id)}</p><h2>生物模擬測驗</h2><p>30 題四選一｜40 分鐘｜依 15 個單元平均出題</p></div><div class="paper-stamp">MOCK<br>原創練習</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">原創練習 · 15 單元覆蓋</p><h2>生物模擬測驗</h2><p>30 題四選一｜40 分鐘｜依 15 個單元平均出題</p></div><div class="paper-stamp">MOCK<br>原創練習</div></header>
       <div class="paper-instructions"><div><strong>30</strong><span>四選一｜全範圍覆蓋</span></div><div><strong>40 min</strong><span>題目與選項順序依卷別種子打亂</span></div></div>`;
     $("#paper").innerHTML = `
       ${cover}

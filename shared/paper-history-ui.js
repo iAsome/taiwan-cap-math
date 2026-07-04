@@ -67,5 +67,28 @@ window.PAPER_HISTORY_UI = (() => {
     });
   }
 
-  return { localDateKey, paperStats, visibleRecords, dateOptions, renderToolbar, bindToolbar };
+  function examKindEyebrow(kind) {
+    return ({ quiz: "小考", mock: "模擬考", archive: "官方題本" })[kind] || "模擬考";
+  }
+
+  function renderHistoryCardInfo({ title, dateLine }) {
+    return `<h3>${title}</h3><small>${dateLine}</small>`;
+  }
+
+  function renderScorePercent(correct, total) {
+    const pct = Math.round(correct / Math.max(1, total) * 100);
+    return `<div class="paper-history-score"><strong>${pct}</strong><span>%</span></div>`;
+  }
+
+  function renderScoreMath({ correct, mcCount, wrongTotal, uncorrected }) {
+    const drill = wrongTotal
+      ? `<div class="paper-history-score paper-history-score--drill"><strong>${uncorrected}/${wrongTotal}</strong><span>未訂正</span></div>`
+      : "";
+    return `<div class="paper-history-scores"><div class="paper-history-score paper-history-score--correct"><strong>${correct}/${mcCount}</strong><span>答對</span></div>${drill}</div>`;
+  }
+
+  return {
+    localDateKey, paperStats, visibleRecords, dateOptions, renderToolbar, bindToolbar,
+    examKindEyebrow, renderHistoryCardInfo, renderScorePercent, renderScoreMath
+  };
 })();

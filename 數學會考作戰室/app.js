@@ -580,7 +580,6 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
         renderMyPapers();
       }
     });
-    const kindBadge = { quiz: "QUIZ", mock: "MOCK", archive: "ARCHIVE" };
     $("#paperHistoryList").innerHTML = records.length ? records.map(record => {
       const date = new Date(record.finishedAt).toLocaleString("zh-TW", { hour12: false });
       const missed = record.missedUnits?.map(unit => `<span>${esc(unit)}</span>`).join("") || "";
@@ -588,9 +587,10 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
         ? `｜作答時間 ${formatDuration(record.elapsedSeconds)}${record.overtimeSeconds > 0 ? `（超時 ${formatDuration(record.overtimeSeconds)}）` : ""}`
         : "";
       const { wrongTotal, uncorrected } = correctionStats(record);
+      const dateLine = `${esc(date)}｜${record.answered}/${record.total} 已作答${durationText}`;
       return `<article class="paper-history-card">
-        <div><p class="eyebrow">${kindBadge[record.kind] || "MOCK"} · ${esc(record.id)}</p><h3>${esc(record.title)}</h3><small>${esc(date)}｜${record.answered}/${record.total} 已作答${durationText}</small></div>
-        <div class="paper-history-score"><strong>${record.correct}/${record.mcCount}</strong><span>答對</span>${wrongTotal ? `<strong>${uncorrected}/${wrongTotal}</strong><span>未訂正</span>` : ""}</div>
+        <div>${PAPER_HISTORY_UI.renderHistoryCardInfo({ title: esc(record.title), dateLine })}</div>
+        ${PAPER_HISTORY_UI.renderScoreMath({ correct: record.correct, mcCount: record.mcCount, wrongTotal, uncorrected })}
         <div class="missed-units">${missed || "<span>沒有選擇題錯題</span>"}</div>
         <div class="paper-history-actions">
           <button class="secondary" data-review-paper="${esc(record.id)}">查看詳解</button>
@@ -631,7 +631,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   function configureExamHeader() {
     const isQuiz = state.exam?.kind === "quiz";
     const isArchive = state.exam?.kind === "archive";
-    $("#examEyebrow").textContent = isQuiz ? "OFFICIAL-SCOPE QUIZ" : isArchive ? "OFFICIAL PAST PAPER" : "FULL MOCK EXAM";
+    $("#examEyebrow").textContent = PAPER_HISTORY_UI.examKindEyebrow(state.exam.kind);
     $("#examTitle").textContent = isQuiz || isArchive ? state.exam.title : "會考數學模擬考";
     $("#examDescription").textContent = isQuiz
       ? `${state.exam.questions.length} 題四選一，共 ${state.exam.minutes || 25} 分鐘。官方課綱編碼：${state.exam.officialCodes}。`
@@ -757,13 +757,13 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const reviewBanner = wrongOnly ? `<div class="paper-review-banner"><strong>錯題統整</strong><span>只顯示當次答錯的 ${visibleIndexes.length} 題選擇題</span></div>` : "";
     const formulaBanner = formulaSummary.length ? `<div class="paper-formula-banner"><strong>本卷錯題涉及公式</strong><div>${formulaSummary.map(formula => mathBlock(formula)).join("")}</div></div>` : "";
     const cover = isQuiz ? `
-      <header class="paper-cover"><div><p class="eyebrow">教育部年級範圍 · ${esc(state.exam.id)}</p><h2>${esc(state.exam.title)}</h2><p>${state.exam.questions.length} 題四選一｜${state.exam.minutes || 25} 分鐘｜固定題型順序｜種子碼 ${state.exam.seed}</p>${state.exam.seed ? `<button type="button" class="secondary compact quiz-seed-copy" id="copyQuizLink">複製連結 ?quiz=${esc(state.exam.quizId)}&amp;seed=${state.exam.seed}</button>` : ""}</div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term)}</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">教育部年級範圍</p><h2>${esc(state.exam.title)}</h2><p>${state.exam.questions.length} 題四選一｜${state.exam.minutes || 25} 分鐘｜固定題型順序｜種子碼 ${state.exam.seed}</p>${state.exam.seed ? `<button type="button" class="secondary compact quiz-seed-copy" id="copyQuizLink">複製連結 ?quiz=${esc(state.exam.quizId)}&amp;seed=${state.exam.seed}</button>` : ""}</div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term)}</div></header>
       <div class="paper-instructions"><div><strong>${state.exam.questions.length}</strong><span>四選一｜即時計分</span></div><div><strong>${state.exam.unitIds.length}</strong><span>範圍單元｜無超綱單元</span></div><div><strong>${state.exam.minutes || 25} min</strong><span>依單元需要安排進階</span></div></div>
       <div class="quiz-paper-scope"><strong>本卷範圍</strong><span>${esc(scopeTitles)}</span><small>${esc(state.exam.officialCodes)}</small></div>` : isArchive ? `
-      <header class="paper-cover"><div><p class="eyebrow">官方題本重現 · ${esc(state.exam.id)}</p><h2>${state.exam.year} 年國中教育會考數學科題本</h2><p>${mcCount} 題選擇＋${crCount} 題非選｜依官方公布題目製作為可作答電子試卷｜計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">官方題本重現</p><h2>${state.exam.year} 年國中教育會考數學科題本</h2><p>${mcCount} 題選擇＋${crCount} 題非選｜依官方公布題目製作為可作答電子試卷｜計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
       <div class="paper-instructions"><div><strong>${mcCount}</strong><span>四選一｜官方原題</span></div><div><strong>${crCount}</strong><span>非選擇題｜策略與表達計分</span></div><div><strong>${state.exam.minutes || 80} min</strong><span>時間到可繼續作答</span></div></div>
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
-      <header class="paper-cover"><div><p class="eyebrow">題型池抽樣 · 十年分布校準 · ${esc(state.exam.id)}</p><h2>國中教育會考數學科模擬題本</h2><p>練習用 25 題選擇｜80 分鐘｜依題型池與 106–115 主概念權重抽樣</p></div><div class="paper-stamp">25<br>選擇</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">題型池抽樣 · 十年分布校準</p><h2>國中教育會考數學科模擬題本</h2><p>練習用 25 題選擇｜80 分鐘｜依題型池與 106–115 主概念權重抽樣</p></div><div class="paper-stamp">25<br>選擇</div></header>
       <div class="paper-instructions"><div><strong>25</strong><span>四選一｜題型池抽樣</span></div><div><strong>80</strong><span>分鐘｜可超時繼續作答</span></div><div><strong>MC</strong><span>不含非選擇題</span></div></div>`;
     const choiceHtml = hasConstructed ? qHtml.slice(0, constructedStart) : qHtml;
     const constructedHtml = hasConstructed ? `<div class="paper-section-title"><h3>第二部分：非選擇題</h3><span>策略適切＋推導完整＋結論清楚</span></div>${qHtml.slice(constructedStart)}` : "";
