@@ -38,10 +38,10 @@ window.EXAM_ENGINE = (() => {
     let bump = 1;
     while (values.length < 4) { const fallback = `${correct} ${"′".repeat(bump++)}`; if (!values.includes(fallback)) values.push(fallback); }
     const choices = shuffled(r, values.slice(0, 4));
-    return { type: "mc", unitId, difficulty, text, choices, answer: choices.indexOf(String(correct)), steps, tip, trap, concept: concept || U[unitId - 1].summary, formula: U[unitId - 1].formula };
+    return MATH_TEXT_SANITIZE.sanitizeQuestion({ type: "mc", unitId, difficulty, text, choices, answer: choices.indexOf(String(correct)), steps, tip, trap, concept: concept || U[unitId - 1].summary, formula: U[unitId - 1].formula });
   }
   function cr(unitId, difficulty, text, steps, answer, tip, trap, rubric, concept) {
-    return { type: "cr", unitId, difficulty, text, steps, answer, tip, trap, rubric, concept: concept || U[unitId - 1].summary, formula: U[unitId - 1].formula };
+    return MATH_TEXT_SANITIZE.sanitizeQuestion({ type: "cr", unitId, difficulty, text, steps, answer, tip, trap, rubric, concept: concept || U[unitId - 1].summary, formula: U[unitId - 1].formula });
   }
 
   const generators = [
@@ -219,6 +219,12 @@ window.EXAM_ENGINE = (() => {
     return rngFromSeed(`${quizId}/${topicId}/v${variantIndex}`);
   }
 
+  function generateTopicVariant(quizId, topic, variantIndex) {
+    if (!topic.template) throw new Error(`題型 ${quizId}/${topic.id} 缺少 template`);
+    const r = variantRng(quizId, topic.id, variantIndex);
+    return topic.template({ r, ri, pick, mc, signed, over, frac, term, plus, sci, gcd, shuffled });
+  }
+
   function ensureTopicVariants(topic, quizId) {
     const variants = topic.variants;
     if (variants?.length === VARIANTS_PER_TOPIC) return variants;
@@ -295,7 +301,7 @@ window.EXAM_ENGINE = (() => {
     question.taxonomyKey = `${topic.quizId}/${topic.topicId}`;
     question.variantIndex = vi;
     question.officialOrder = index + 1;
-    return question;
+    return MATH_TEXT_SANITIZE.sanitizeQuestion(question);
   }
 
   function sampleTaxonomyQuestions(r, topics, count) {
@@ -559,6 +565,6 @@ window.EXAM_ENGINE = (() => {
   return {
     generate, generateQuiz, generateTopicDrill, generateUnitDrill, quizCatalog, allowsAdvanced,
     taxonomyTopicPool, topicsForScope, sampleTaxonomyQuestions,
-    seedToVariantIndices, VARIANTS_PER_TOPIC, ensureTopicVariants, topicVariantSignature, drillQuestionSignature
+    seedToVariantIndices, VARIANTS_PER_TOPIC, ensureTopicVariants, generateTopicVariant, topicVariantSignature, drillQuestionSignature
   };
 })();

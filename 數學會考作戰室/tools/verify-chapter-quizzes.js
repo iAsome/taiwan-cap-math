@@ -6,9 +6,10 @@ const assert = require("node:assert/strict");
 const root = path.resolve(__dirname, "..");
 const context = { window: {}, console };
 
-for (const file of ["data.js", "analysis-data.js", "quiz-taxonomy.js", "quiz-variant-bank.js", "quiz-variants.js", "questions.js"]) {
+for (const file of ["data.js", "analysis-data.js", "math-text-sanitize.js", "quiz-taxonomy.js", "quiz-variant-bank.js", "quiz-variants.js", "questions.js"]) {
   vm.runInNewContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
 }
+context.MATH_TEXT_SANITIZE = context.window.MATH_TEXT_SANITIZE;
 
 const { quizCatalog, generateQuiz } = context.window.EXAM_ENGINE;
 const { primaryUnits } = context.window.CAP_ANALYSIS;

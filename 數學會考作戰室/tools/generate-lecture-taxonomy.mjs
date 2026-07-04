@@ -56,7 +56,7 @@ function formatExample(q, label) {
   const steps = Array.isArray(q.steps) ? q.steps.map((s, i) => `${i + 1}. ${s}`).join("\n") : "";
   return {
     q: `${label}：${q.text}`,
-    a: `正確答案：${letters[q.answer] ?? ""}｜${correct}\n${steps}`
+    a: `正確答案：${letters[q.answer] ?? ""} — ${correct}\n${steps}`
   };
 }
 
@@ -87,7 +87,7 @@ for (const [quizId, chapter] of Object.entries(taxonomy)) {
       if (diagram) blocks.splice(2, 0, { type: "diagram", spec: diagram });
       blocks.push(
         { type: "pitfall", html: `<p><strong>易錯：</strong>${presets[0].trap || unit.tips[0]}</p><p><strong>快解：</strong>${presets[0].tip || unit.tips[1] || unit.tips[0]}</p>` },
-        { type: "text", html: `<p><strong>與小考對應：</strong>章節 ${quizId}｜題型 ${topic.id}｜變體索引 0–9 由種子碼展開。</p>` }
+        { type: "text", html: `<p><strong>與小考對應：</strong>章節 ${quizId} — 題型 ${topic.id} — 變體索引 0–9 由種子碼展開。</p>` }
       );
       lectures[key] = { title: topic.title, chapter: chapterTitle(quizId), section: section.title, quizId, topicId: topic.id, blocks };
       count += 1;

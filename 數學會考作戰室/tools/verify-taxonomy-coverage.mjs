@@ -7,12 +7,30 @@ import { fileURLToPath } from "node:url";
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const context = vm.createContext({ window: {}, console });
 
-for (const file of ["data.js", "analysis-data.js", "quiz-taxonomy.js", "quiz-variant-bank.js", "quiz-variants.js", "questions.js"]) {
+for (const file of ["data.js", "analysis-data.js", "math-text-sanitize.js", "quiz-taxonomy.js", "quiz-variant-bank.js", "quiz-variants.js", "questions.js"]) {
   vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
 }
+context.MATH_TEXT_SANITIZE = context.window.MATH_TEXT_SANITIZE;
 
 const bank = context.window.QUIZ_VARIANT_BANK || {};
 assert.equal(Object.keys(bank).length, 537, "QUIZ_VARIANT_BANK must cover 537 taxonomy topics");
+
+const INSTRUCTION_PREFIX = /^[\u4e00-\u9fff]+｜/;
+const assertExamText = (label, text) => {
+  if (typeof text !== "string") return;
+  assert.ok(!/\^/.test(text), `${label} must not contain ^`);
+  assert.ok(!/｜/.test(text), `${label} must not contain fullwidth ｜`);
+  assert.ok(!INSTRUCTION_PREFIX.test(text), `${label} must not have instruction prefix`);
+};
+const assertExamQuestion = (key, q) => {
+  assertExamText(`${key} text`, q.text);
+  q.choices?.forEach((c, i) => assertExamText(`${key} choice ${i}`, c));
+  q.steps?.forEach((s, i) => assertExamText(`${key} step ${i}`, s));
+};
+
+for (const [key, presets] of Object.entries(bank)) {
+  presets.forEach((q, i) => assertExamQuestion(`${key}[${i}]`, q));
+}
 
 const {
   generate, generateQuiz, generateTopicDrill, quizCatalog,
@@ -46,6 +64,7 @@ for (const topic of taxonomyTopicPool()) {
   assert.ok(Array.isArray(question.choices) && question.choices.length === 4, `${topic.quizId}/${topic.topicId} must have 4 choices`);
   assert.ok(Number.isInteger(question.answer) && question.answer >= 0 && question.answer < 4, `${topic.quizId}/${topic.topicId} must have valid answer index`);
   assert.ok(Number.isInteger(question.variantIndex), `${topic.quizId}/${topic.topicId} must carry variantIndex`);
+  assertExamQuestion(`${topic.quizId}/${topic.topicId}`, question);
 }
 
 const chapters = quizCatalog.filter(item => item.scope === "chapter" && quizTaxonomy[item.id]);
@@ -83,6 +102,7 @@ for (const term of termQuizzes) {
 const mock = generate(11527, 2);
 assert.equal(mock.questions.length, 25, "mock must generate 25 MC");
 assert.ok(mock.questions.every(q => q.type === "mc"), "mock must be MC only");
+mock.questions.forEach((q, i) => assertExamQuestion(`mock[${i}]`, q));
 
 const freq = {};
 for (const units of Object.values(primaryUnits)) units.forEach(unitId => { freq[unitId] = (freq[unitId] || 0) + 1; });
@@ -103,4 +123,4 @@ const drill = generateTopicDrill(chapters[0].id, quizTaxonomy[chapters[0].id].se
 assert.equal(drill.length, 2, "generateTopicDrill must return 2 questions");
 assert.notEqual(drillQuestionSignature(drill[0]), drillQuestionSignature(drill[1]), "drill pair must differ");
 
-console.log(`OK: ${taxonomyTopicPool().length} taxonomy topics × ${VARIANTS_PER_TOPIC} variants, ${termQuizzes.length} term quizzes at 25 MC, seed-stable chapter quizzes.`);
+console.log(`OK: ${taxonomyTopicPool().length} taxonomy topics × ${VARIANTS_PER_TOPIC} variants, ${termQuizzes.length} term quizzes at 25 MC, seed-stable chapter quizzes, exam text sanitized.`);

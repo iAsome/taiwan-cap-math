@@ -1,3 +1,7 @@
+const _SUP = { "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹", "-": "⁻" };
+const sup = v => String(v).replace(/[\d-]/g, c => _SUP[c] || c);
+const pow = (b, e) => `${b}${sup(e)}`;
+
 window.QUIZ_TAXONOMY = {
   "g7-1-c1": {
     source: "使用者提供：教育部課綱對照國一上「數與數線」三主題題型表（2026-07 更新）。",
@@ -198,7 +202,7 @@ window.QUIZ_TAXONOMY = {
             template({ r, ri, mc }) {
               const base = ri(r, 2, 5), exp = ri(r, 3, 5);
               const value = base ** exp;
-              return mc(r, 2, 1, `${Array(exp).fill(base).join("×")} 可記成下列何者？`, `${base}^${exp}`, [`${base}×${exp}`, `${exp}^${base}`, `${base}+${exp}`], [`相同底數連乘 ${exp} 次，記為 ${base}^${exp}。`, `${base}^${exp}=${value}。`], "指數記法表示同底數的連乘次數。", "指數寫在右上角，不是把底數和指數相乘。")
+              return mc(r, 2, 1, `${Array(exp).fill(base).join("×")} 可記成下列何者？`, `${pow(base, exp)}`, [`${base}×${exp}`, `${pow(exp, base)}`, `${base}+${exp}`], [`相同底數連乘 ${exp} 次，記為 ${pow(base, exp)}。`, `${pow(base, exp)}=${value}。`], "指數記法表示同底數的連乘次數。", "指數寫在右上角，不是把底數和指數相乘。")
             }
           },
           {
@@ -219,7 +223,7 @@ window.QUIZ_TAXONOMY = {
             template({ r, ri, mc }) {
               const left = ri(r, 2, 4), right = ri(r, 5, 7);
               const lv = 2 ** left, rv = 3 ** 2;
-              return mc(r, 2, 2, `比較 2^${left} 與 3^2 的大小。`, `2^${left} ${lv < rv ? "<" : lv > rv ? ">" : "="} 3^2`, [`2^${left} ${lv < rv ? ">" : "<"} 3^2`, `2^${left} = 3^2`, `無法比較`], [`2^${left}=${lv}，3^2=${rv}。`, `所以 2^${left} ${lv < rv ? "<" : lv > rv ? ">" : "="} 3^2。`], "底數不同時，可先算出數值再比較。", "指數較大不一定整體較大，還要看底數。")
+              return mc(r, 2, 2, `比較 2${sup(left)} 與 3² 的大小。`, `2${sup(left)} ${lv < rv ? "<" : lv > rv ? ">" : "="} 3²`, [`2${sup(left)} ${lv < rv ? ">" : "<"} 3²`, `2${sup(left)} = 3²`, `無法比較`], [`2${sup(left)}=${lv}，3²=${rv}。`, `所以 2${sup(left)} ${lv < rv ? "<" : lv > rv ? ">" : "="} 3²。`], "底數不同時，可先算出數值再比較。", "指數較大不一定整體較大，還要看底數。")
             }
           },
           {
@@ -228,7 +232,7 @@ window.QUIZ_TAXONOMY = {
             template({ r, ri, mc }) {
               const base = ri(r, 2, 5), m = ri(r, 2, 4), n = ri(r, 2, 4);
               const exp = m + n;
-              return mc(r, 2, 1, `${base}^${m} × ${base}^${n} 可化簡為何者？`, `${base}^${exp}`, [`${base}^${m * n}`, `${2 * base}^${m + n}`, `${base}^${m} + ${base}^${n}`], [`同底數相乘，指數相加。`, `${base}^${m}×${base}^${n}=${base}^(${m}+${n})=${base}^${exp}。`], "同底數相乘：指數相加；同底數相除：指數相減。", "不要把底數相乘，也不要把指數相乘。")
+              return mc(r, 2, 1, `${pow(base, m)} × ${pow(base, n)} 可化簡為何者？`, `${pow(base, exp)}`, [`${pow(base, m * n)}`, `${pow(2 * base, m + n)}`, `${pow(base, m)} + ${pow(base, n)}`], [`同底數相乘，指數相加。`, `${pow(base, m)}×${pow(base, n)}=${pow(base, `${m}+${n}`)}=${pow(base, exp)}。`], "同底數相乘：指數相加；同底數相除：指數相減。", "不要把底數相乘，也不要把指數相乘。")
             }
           },
           {
@@ -237,8 +241,8 @@ window.QUIZ_TAXONOMY = {
             template({ r, ri, mc }) {
               const coef = ri(r, 12, 98) / 10, exp = ri(r, 3, 6);
               const normal = Math.round(coef * 10 ** exp);
-              const correct = `${coef}×10^${exp}`;
-              return mc(r, 2, 2, `${normal.toLocaleString("zh-TW")} 用科學記號表示為何？`, correct, [`${coef}×10^${exp + 1}`, `${coef * 10}×10^${exp - 1}`, `${coef}×10^${exp - 1}`], [`科學記號需寫成 a×10^n，其中 1≤a<10。`, `${normal.toLocaleString("zh-TW")} 的小數點左移 ${exp} 位，得到 ${coef}，所以是 ${correct}。`], "科學記號的係數必須大於等於 1 且小於 10。", "係數不能寫成 10 以上；例如 35×10^2 不是標準科學記號。")
+              const correct = `${coef}×10${sup(exp)}`;
+              return mc(r, 2, 2, `${normal.toLocaleString("zh-TW")} 用科學記號表示為何？`, correct, [`${coef}×10${sup(exp + 1)}`, `${coef * 10}×10${sup(exp - 1)}`, `${coef}×10${sup(exp - 1)}`], [`科學記號需寫成 a×10ⁿ，其中 1≤a<10。`, `${normal.toLocaleString("zh-TW")} 的小數點左移 ${exp} 位，得到 ${coef}，所以是 ${correct}。`], "科學記號的係數必須大於等於 1 且小於 10。", "係數不能寫成 10 以上；例如 35×10² 不是標準科學記號。")
             }
           },
           {
@@ -246,7 +250,7 @@ window.QUIZ_TAXONOMY = {
             title: "科學記號與位數的判別",
             template({ r, ri, mc }) {
               const coef = ri(r, 2, 9), exp = ri(r, 4, 8), digits = exp + 1;
-              return mc(r, 2, 2, `${coef}×10^${exp} 是幾位整數？`, `${digits} 位`, [`${exp} 位`, `${digits + 1} 位`, `${coef + exp} 位`], [`a×10^n 且 1≤a<10 時，整數位數是 n+1。`, `所以 ${coef}×10^${exp} 是 ${exp}+1=${digits} 位整數。`], "科學記號 a×10^n 的整數位數為 n+1（n 為非負整數）。", "指數 n 不是位數；位數比 n 多 1。")
+              return mc(r, 2, 2, `${coef}×10${sup(exp)} 是幾位整數？`, `${digits} 位`, [`${exp} 位`, `${digits + 1} 位`, `${coef + exp} 位`], [`a×10ⁿ 且 1≤a<10 時，整數位數是 n+1。`, `所以 ${coef}×10${sup(exp)} 是 ${exp}+1=${digits} 位整數。`], "科學記號 a×10ⁿ 的整數位數為 n+1（n 為非負整數）。", "指數 n 不是位數；位數比 n 多 1。")
             }
           },
           {
@@ -254,7 +258,7 @@ window.QUIZ_TAXONOMY = {
             title: "科學記號與數的比較大小",
             template({ r, ri, mc }) {
               const a = ri(r, 11, 49) / 10, b = ri(r, 51, 99) / 10, exp = ri(r, 3, 6);
-              return mc(r, 2, 2, `比較 ${a}×10^${exp} 與 ${b}×10^${exp} 的大小。`, `${a}×10^${exp} < ${b}×10^${exp}`, [`${a}×10^${exp} > ${b}×10^${exp}`, `${a}×10^${exp} = ${b}×10^${exp}`, `無法比較`], [`兩數的 10 的次方相同，只要比較前面的係數。`, `因為 ${a}<${b}，所以 ${a}×10^${exp}<${b}×10^${exp}。`], "科學記號比大小：先比 10 的指數；指數相同時比係數。", "不要把係數和指數混在一起加總比較。")
+              return mc(r, 2, 2, `比較 ${a}×10${sup(exp)} 與 ${b}×10${sup(exp)} 的大小。`, `${a}×10${sup(exp)} < ${b}×10${sup(exp)}`, [`${a}×10${sup(exp)} > ${b}×10${sup(exp)}`, `${a}×10${sup(exp)} = ${b}×10${sup(exp)}`, `無法比較`], [`兩數的 10 的次方相同，只要比較前面的係數。`, `因為 ${a}<${b}，所以 ${a}×10${sup(exp)}<${b}×10${sup(exp)}。`], "科學記號比大小：先比 10 的指數；指數相同時比係數。", "不要把係數和指數混在一起加總比較。")
             }
           },
           {
@@ -263,7 +267,7 @@ window.QUIZ_TAXONOMY = {
             template({ r, ri, mc }) {
               const a = ri(r, 2, 5), b = ri(r, 2, 4);
               const ans = a ** 2 - b ** 3;
-              return mc(r, 2, 2, `計算 ${a}^2 - ${b}^3 的值。`, ans, [a * 2 - b * 3, a ** 2 + b ** 3, a ** 3 - b ** 2], [`先算指數：${a}^2=${a ** 2}，${b}^3=${b ** 3}。`, `${a ** 2}-${b ** 3}=${ans}。`], "指數要先算，再處理乘除與加減。", "a^2 不是 2a；b^3 不是 3b。")
+              return mc(r, 2, 2, `計算 ${a}² - ${b}³ 的值。`, ans, [a * 2 - b * 3, a ** 2 + b ** 3, a ** 3 - b ** 2], [`先算指數：${a}²=${a ** 2}，${b}³=${b ** 3}。`, `${a ** 2}-${b ** 3}=${ans}。`], "指數要先算，再處理乘除與加減。", "a² 不是 2a；b³ 不是 3b。")
             }
           },
           {
@@ -272,7 +276,7 @@ window.QUIZ_TAXONOMY = {
             template({ r, ri, mc }) {
               const base = ri(r, 2, 5), m = ri(r, 3, 6), n = ri(r, 2, 5), k = ri(r, 1, Math.min(m, n));
               const exp = m + n - k;
-              return mc(r, 2, 2, `${base}^${m} × ${base}^${n} ÷ ${base}^${k} 可化為何者？`, `${base}^${exp}`, [`${base}^${m + n + k}`, `${base}^${m * n - k}`, `${base}^${m + n}`], [`同底數相乘指數相加，同底數相除指數相減。`, `${base}^${m}×${base}^${n}÷${base}^${k}=${base}^(${m}+${n}-${k})=${base}^${exp}。`], "同底數：乘法加指數，除法減指數。", "不要把底數相乘，也不要把指數相乘。")
+              return mc(r, 2, 2, `${pow(base, m)} × ${pow(base, n)} ÷ ${pow(base, k)} 可化為何者？`, `${pow(base, exp)}`, [`${pow(base, m + n + k)}`, `${pow(base, m * n - k)}`, `${pow(base, m + n)}`], [`同底數相乘指數相加，同底數相除指數相減。`, `${pow(base, m)}×${pow(base, n)}÷${pow(base, k)}=${pow(base, `${m}+${n}-${k}`)}=${pow(base, exp)}。`], "同底數：乘法加指數，除法減指數。", "不要把底數相乘，也不要把指數相乘。")
             }
           },
           {
@@ -280,7 +284,7 @@ window.QUIZ_TAXONOMY = {
             title: "利用指數律比較數的大小",
             template({ r, ri, mc }) {
               const a = ri(r, 3, 6), leftExp = ri(r, 2, 4), rightExp = leftExp + ri(r, 1, 3);
-              return mc(r, 2, 2, `比較 ${a}^${leftExp} 與 ${a}^${rightExp} 的大小。`, `${a}^${leftExp} < ${a}^${rightExp}`, [`${a}^${leftExp} > ${a}^${rightExp}`, `${a}^${leftExp} = ${a}^${rightExp}`, `無法比較`], [`底數 ${a}>1，指數越大，值越大。`, `因為 ${leftExp}<${rightExp}，所以 ${a}^${leftExp}<${a}^${rightExp}。`], "底數大於 1 時，同底數比大小可直接比較指數。", "這個規則不適用於底數為 0、1 或負數的所有情況；本題底數大於 1。")
+              return mc(r, 2, 2, `比較 ${pow(a, leftExp)} 與 ${pow(a, rightExp)} 的大小。`, `${pow(a, leftExp)} < ${pow(a, rightExp)}`, [`${pow(a, leftExp)} > ${pow(a, rightExp)}`, `${pow(a, leftExp)} = ${pow(a, rightExp)}`, `無法比較`], [`底數 ${a}>1，指數越大，值越大。`, `因為 ${leftExp}<${rightExp}，所以 ${pow(a, leftExp)}<${pow(a, rightExp)}。`], "底數大於 1 時，同底數比大小可直接比較指數。", "這個規則不適用於底數為 0、1 或負數的所有情況；本題底數大於 1。")
             }
           }
         ]
@@ -341,11 +345,11 @@ window.QUIZ_TAXONOMY = {
             title: "質因數分解與標準分解式",
             template({ r, ri, pick, mc }) {
               const item = pick(r, [
-                { n: 72, ans: "2^3×3^2" },
-                { n: 60, ans: "2^2×3×5" },
-                { n: 48, ans: "2^4×3" }
+                { n: 72, ans: "2³×3²" },
+                { n: 60, ans: "2²×3×5" },
+                { n: 48, ans: "2⁴×3" }
               ]);
-              return mc(r, 3, 1, `${item.n} 的標準分解式為何？`, item.ans, [`2^2×3^3`, `2×${item.n / 2}`, `${item.n}`], [`用短除法或連除法分解 ${item.n}。`, `整理成 a×b×… 且各底數為質數、指數寫成次方，得 ${item.ans}。`], "標準分解式：底數為質數，相同底數合併成指數。", "2×2×2×3 不是標準式；應寫成 2³×3。")
+              return mc(r, 3, 1, `${item.n} 的標準分解式為何？`, item.ans, [`2²×3³`, `2×${item.n / 2}`, `${item.n}`], [`用短除法或連除法分解 ${item.n}。`, `整理成 a×b×… 且各底數為質數、指數寫成次方，得 ${item.ans}。`], "標準分解式：底數為質數，相同底數合併成指數。", "2×2×2×3 不是標準式；應寫成 2³×3。")
             }
           },
           {
@@ -394,7 +398,7 @@ window.QUIZ_TAXONOMY = {
             title: "因數和倍數與標準分解式",
             template({ r, pick, mc }) {
               const a = 24, b = 36;
-              return mc(r, 3, 2, `利用 ${a}=2^3×3、${b}=2^2×3^2 的標準分解式，${a} 與 ${b} 的最小公倍數為何？`, "72", ["144", "12", "216"], [`lcm 取各質因數的較大指數：2^max(3,2)×3^max(1,2)=2^3×3^2=72。`, `所以最小公倍數是 72。`], "lcm：各質因數取較大指數相乘。", "lcm 不是兩數相加；也不要把指數相加。")
+              return mc(r, 3, 2, `利用 ${a}=2³×3、${b}=2²×3² 的標準分解式，${a} 與 ${b} 的最小公倍數為何？`, "72", ["144", "12", "216"], [`lcm 取各質因數的較大指數：2ᵐᵃˣ⁽³·²⁾×3ᵐᵃˣ⁽¹·²⁾=2³×3²=72。`, `所以最小公倍數是 72。`], "lcm：各質因數取較大指數相乘。", "lcm 不是兩數相加；也不要把指數相加。")
             }
           }
         ]
@@ -605,7 +609,7 @@ window.QUIZ_TAXONOMY = {
             title: "乘號的簡記",
             template({ r, ri, mc }) {
               const k = ri(r, 2, 9);
-              return mc(r, 5, 1, `${k} × x 的簡記式為何？`, `${k}x`, [`x${k}`, `${k} + x`, `x^${k}`], [`數與文字相乘可省略乘號，數寫在文字前。`, `${k}×x 簡記為 ${k}x。`], "國中代數中 3×x 寫成 3x；x×x 才是 x²。", "不要把 3x 寫成 x3。")
+              return mc(r, 5, 1, `${k} × x 的簡記式為何？`, `${k}x`, [`x${k}`, `${k} + x`, `x${sup(k)}`], [`數與文字相乘可省略乘號，數寫在文字前。`, `${k}×x 簡記為 ${k}x。`], "國中代數中 3×x 寫成 3x；x×x 才是 x²。", "不要把 3x 寫成 x3。")
             }
           },
           {
@@ -1960,7 +1964,7 @@ window.QUIZ_TAXONOMY = {
             id: "polynomial-degree-evaluate",
             title: "多項式次數的求值問題",
             template({ r, mc }) {
-              return mc(r, 12, 2, "若 x^m + 2x + 1 的次數為 3，則 m =？", "3", ["2", "4", "1"], [`次數 = 最高次項指數 = m。`, `m = 3。`], "次數由最高次項決定。", "係數為 0 的項不影響（但整項消失）。")
+              return mc(r, 12, 2, "若 xᵐ + 2x + 1 的次數為 3，則 m =？", "3", ["2", "4", "1"], [`次數 = 最高次項指數 = m。`, `m = 3。`], "次數由最高次項決定。", "係數為 0 的項不影響（但整項消失）。")
             }
           },
           {
@@ -2155,7 +2159,7 @@ window.QUIZ_TAXONOMY = {
         topics: [
           { id: "geometric-sequence", title: "等比數列", template({ r, mc }) { return mc(r, 16, 1, "下列哪一組是等比數列？", "3、6、12、24", ["3、6、9、12", "2、5、8、11", "1、4、7、10"], [`等比：相鄰兩項比固定。`, `3、6、12、24 每次乘 2。`], "等比公比 r = a₂/a₁ 固定。", "等差是加固定，不是乘固定。") } },
           { id: "geometric-mean", title: "等比中項", template({ r, mc }) { return mc(r, 16, 1, "4 與 16 的等比中項（正數）為何？", "8", ["10", "6", "20"], [`等比中項 = ±√(4×16) = ±8。`, `取正數 8；4、8、16 成等比。`], "三項成等比 → 中項² = 兩端乘積。", "等比中項不是平均。") } },
-          { id: "geometric-nth-term", title: "求等比數列第 n 項", template({ r, ri, mc }) { const a1 = ri(r, 2, 5), r0 = ri(r, 2, 3), n = ri(r, 3, 6), ans = a1 * r0 ** (n - 1); return mc(r, 16, 2, `等比數列首項 ${a1}、公比 ${r0}，第 ${n} 項為何？`, `${ans}`, [`${a1 * r0 ** n}`, `${a1 + (n - 1) * r0}`, `${ans * r0}`], [`aₙ = a₁·rⁿ⁻¹。`, `a_${n} = ${a1}×${r0}^${n - 1} = ${ans}。`], "第 n 項乘 n−1 次公比。", "不要用等差公式加公比。") } },
+          { id: "geometric-nth-term", title: "求等比數列第 n 項", template({ r, ri, mc }) { const a1 = ri(r, 2, 5), r0 = ri(r, 2, 3), n = ri(r, 3, 6), ans = a1 * r0 ** (n - 1); return mc(r, 16, 2, `等比數列首項 ${a1}、公比 ${r0}，第 ${n} 項為何？`, `${ans}`, [`${a1 * r0 ** n}`, `${a1 + (n - 1) * r0}`, `${ans * r0}`], [`aₙ = a₁·rⁿ⁻¹。`, `a_${n} = ${a1}×${pow(r0, n - 1)} = ${ans}。`], "第 n 項乘 n−1 次公比。", "不要用等差公式加公比。") } },
           { id: "geometric-term-count", title: "求等比數列的項數", template({ r, mc }) { return mc(r, 16, 2, "等比數列 3、6、12、…、384 共有幾項？", "8", ["7", "9", "6"], [`公比 2；384 = 3×2ⁿ⁻¹ → 2ⁿ⁻¹=128=2⁷。`, `n−1=7，n=8。`], "已知首末項求 n：末/首 = rⁿ⁻¹。", "指數是 n−1，不是 n。") } },
           { id: "geometric-first-term-and-ratio", title: "求等比數列首項和公比", template({ r, mc }) { return mc(r, 16, 2, "等比數列第 2 項 6、第 4 項 54，首項 a₁ 與公比 r 為何？", "2 與 3", ["3 與 2", "6 與 9", "1 與 6"], [`a₂=a₁r=6，a₄=a₁r³=54 → r²=9，r=3（取正）。`, `a₁=6/3=2。`], "列 a₁r 與 a₁r³ 消去 a₁ 求 r。", "公比通常取正（題意未限可討論 ±）。") } },
           { id: "geometric-first-term-ratio-problem", title: "求等比數列首項和公比的問題", template({ r, mc }) { return mc(r, 16, 2, "等比數列中 a₂=−6、a₃=18，則 a₁ 與 r 可能為何？", "−2 與 3", ["2 與 −3", "6 與 −3", "−6 與 1"], [`r = a₃/a₂ = 18/(−6) = −3。`, `a₁ = a₂/r = (−6)/(−3) = −2。`], "相鄰兩項相除得公比，再回代求首項。", "注意符號。") } },
