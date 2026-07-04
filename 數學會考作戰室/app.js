@@ -7,19 +7,7 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const renderMath = (value, chunked = false) => {
-    const raw = String(value);
-    const pattern = /\[\[frac:([^|\]]+)\|([^\]]+)\]\]/g;
-    let html = "", last = 0;
-    const textPart = text => chunked && text ? `<span class="math-chunk">${esc(text)}</span>` : esc(text);
-    for (const match of raw.matchAll(pattern)) {
-      html += textPart(raw.slice(last, match.index));
-      const numerator = esc(match[1].trim()), denominator = esc(match[2].trim());
-      html += `<span class="math-frac" role="math" aria-label="${denominator} 分之 ${numerator}"><span class="math-num">${numerator}</span><span class="math-den">${denominator}</span></span>`;
-      last = match.index + match[0].length;
-    }
-    return html + textPart(raw.slice(last));
-  };
+  const renderMath = (value, chunked = false) => FRACTION_MARKUP.renderMath(value, esc, chunked);
   const mathText = value => renderMath(value).replace(/\n/g, "<br>");
   const mathBlock = value => String(value).split("\n").map(line => `<span class="math-line">${renderMath(line, true)}</span>`).join("");
   const nl = mathText;

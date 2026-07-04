@@ -4,7 +4,7 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const nl = value => esc(value).replace(/\n/g, "<br>");
+  const nl = value => FRACTION_MARKUP.renderMath(value, esc).replace(/\n/g, "<br>");
   const block = value => String(value).split("\n").map(line => `<span class="math-line">${esc(line)}</span>`).join("");
   const letters = ["A", "B", "C", "D"];
   const groupMark = grade => domains[grade - 1]?.mark || "";

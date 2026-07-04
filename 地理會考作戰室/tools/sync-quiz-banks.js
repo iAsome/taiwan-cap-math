@@ -1,6 +1,6 @@
 // One-off generator: derives quiz-banks/<id>/README.md + question-bank.json metadata
 // from geography-data.js / quiz-taxonomy.js / questions.js, mirroring taiwan-cap-math's
-// quiz-banks folders. Run with `node tools/sync-quiz-banks.js` (from 地理會考作戰室/); safe to re-run.
+// quiz-banks folders. Run with `node tools/sync-quiz-banks.js` (from 地理會考作戰室); safe to re-run.
 const fs = require("node:fs");
 const path = require("node:path");
 const vm = require("node:vm");

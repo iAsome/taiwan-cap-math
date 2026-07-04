@@ -4,7 +4,11 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const context = vm.createContext({ window: {}, console });
+const repo = path.dirname(root);
+const context = vm.createContext({ window: {}, console, globalThis: {} });
+vm.runInContext(fs.readFileSync(path.join(repo, "shared", "fraction-markup.js"), "utf8"), context, { filename: "fraction-markup.js" });
+context.globalThis.FRACTION_MARKUP = context.window.FRACTION_MARKUP;
+context.FRACTION_MARKUP = context.window.FRACTION_MARKUP;
 for (const file of ["data.js", "math-text-sanitize.js", "quiz-taxonomy.js", "questions.js"]) {
   vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
 }

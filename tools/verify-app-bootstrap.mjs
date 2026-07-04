@@ -166,7 +166,9 @@ for (const dir of subjects) {
 
   try {
     for (const file of scripts) {
-      vm.runInContext(fs.readFileSync(path.join(subjectDir, file), "utf8"), context, { filename: file });
+      const scriptPath = path.resolve(subjectDir, file.replace(/\?.*$/, ""));
+      vm.runInContext(fs.readFileSync(scriptPath, "utf8"), context, { filename: file });
+      if (context.window.FRACTION_MARKUP) context.FRACTION_MARKUP = context.window.FRACTION_MARKUP;
     }
     console.log(`OK ${dir} bootstrap`);
   } catch (err) {

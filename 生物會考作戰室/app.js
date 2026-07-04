@@ -4,8 +4,8 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const mathText = value => esc(value).replace(/\n/g, "<br>");
-  const mathBlock = value => String(value).split("\n").map(line => `<span class="math-line">${esc(line)}</span>`).join("");
+  const mathText = value => FRACTION_MARKUP.renderMath(value, esc).replace(/\n/g, "<br>");
+  const mathBlock = value => String(value).split("\n").map(line => `<span class="math-line">${FRACTION_MARKUP.renderMath(line, esc, true)}</span>`).join("");
   const letters = ["A", "B", "C", "D"];
   const viewNames = { home: "學習總覽", exam: "生物模擬測驗", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中生物全冊講義", atlas: "題型與技巧地圖", analysis: "十年生物逐題分析", sources: "資料與技巧審核", archive: "歷屆生物題" , paper: "官方考卷" };
   let toastTimer;

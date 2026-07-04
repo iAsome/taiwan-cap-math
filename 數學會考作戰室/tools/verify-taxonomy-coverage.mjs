@@ -5,7 +5,12 @@ import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const context = vm.createContext({ window: {}, console });
+const repo = path.dirname(root);
+const context = vm.createContext({ window: {}, console, globalThis: {} });
+
+vm.runInContext(fs.readFileSync(path.join(repo, "shared", "fraction-markup.js"), "utf8"), context, { filename: "fraction-markup.js" });
+context.globalThis.FRACTION_MARKUP = context.window.FRACTION_MARKUP;
+context.FRACTION_MARKUP = context.window.FRACTION_MARKUP;
 
 for (const file of ["data.js", "analysis-data.js", "math-text-sanitize.js", "quiz-taxonomy.js", "quiz-variant-bank.js", "quiz-variants.js", "questions.js"]) {
   vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
@@ -16,11 +21,18 @@ const bank = context.window.QUIZ_VARIANT_BANK || {};
 assert.equal(Object.keys(bank).length, 537, "QUIZ_VARIANT_BANK must cover 537 taxonomy topics");
 
 const INSTRUCTION_PREFIX = /^[\u4e00-\u9fff]+｜/;
+const isSlashFraction = text => {
+  if (typeof text !== "string" || /\[\[frac:/.test(text)) return false;
+  if (/\d\/\d+(?:mm|cm|m|km|mL|L|g)\b/i.test(text)) return false;
+  if (/\d+\s*g\/\d+\s*g/i.test(text)) return false;
+  return /[^\s/+\−\-×÷=，。；、\[\]]+\/[^\s/+\−\-×÷=，。；、\[\]]+/.test(text);
+};
 const assertExamText = (label, text) => {
   if (typeof text !== "string") return;
   assert.ok(!/\^/.test(text), `${label} must not contain ^`);
   assert.ok(!/｜/.test(text), `${label} must not contain fullwidth ｜`);
   assert.ok(!INSTRUCTION_PREFIX.test(text), `${label} must not have instruction prefix`);
+  assert.ok(!isSlashFraction(text), `${label} must not use slash fractions`);
 };
 const assertExamQuestion = (key, q) => {
   assertExamText(`${key} text`, q.text);
@@ -123,4 +135,4 @@ const drill = generateTopicDrill(chapters[0].id, quizTaxonomy[chapters[0].id].se
 assert.equal(drill.length, 2, "generateTopicDrill must return 2 questions");
 assert.notEqual(drillQuestionSignature(drill[0]), drillQuestionSignature(drill[1]), "drill pair must differ");
 
-console.log(`OK: ${taxonomyTopicPool().length} taxonomy topics × ${VARIANTS_PER_TOPIC} variants, ${termQuizzes.length} term quizzes at 25 MC, seed-stable chapter quizzes, exam text sanitized.`);
+console.log(`OK: ${taxonomyTopicPool().length} taxonomy topics × ${VARIANTS_PER_TOPIC} variants, ${termQuizzes.length} term quizzes at 25 MC, seed-stable chapter quizzes, exam text sanitized, stacked fractions.`);

@@ -40,6 +40,8 @@ window.MATH_TEXT_SANITIZE = (() => {
     out = normalizeAbsoluteValueBars(out);
     out = removeStrayFullwidthPipe(out);
     out = caretToSuperscript(out);
+    const frac = (typeof FRACTION_MARKUP !== "undefined" ? FRACTION_MARKUP : globalThis.FRACTION_MARKUP);
+    if (frac?.slashToFracMarkup) out = frac.slashToFracMarkup(out);
     return out;
   }
 

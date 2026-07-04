@@ -4,8 +4,8 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const nl = value => esc(value).replace(/\n/g, "<br>");
-  const block = value => String(value).split("\n").map(line => `<span class="math-line">${esc(line)}</span>`).join("");
+  const nl = value => FRACTION_MARKUP.renderMath(value, esc).replace(/\n/g, "<br>");
+  const block = value => String(value).split("\n").map(line => `<span class="math-line">${FRACTION_MARKUP.renderMath(line, esc, true)}</span>`).join("");
   const letters = ["A", "B", "C", "D"];
   const groupMark = grade => domains[grade - 1]?.mark || "";
   const groupName = grade => groups.find(g => g.id === grade)?.name || domains[grade - 1]?.name || "";

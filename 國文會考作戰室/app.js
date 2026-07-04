@@ -4,7 +4,7 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const nl = value => esc(String(value)).replace(/\n/g, "<br>");
+  const nl = value => FRACTION_MARKUP.renderMath(value, esc).replace(/\n/g, "<br>");
   const letters = ["A", "B", "C", "D"];
   const abilityLabel = { identify: "擷取訊息", comprehend: "統整解釋", infer: "推論賞析" };
   const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中國文全冊講義", atlas: "題型與技巧地圖", analysis: "逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" , paper: "官方考卷" };

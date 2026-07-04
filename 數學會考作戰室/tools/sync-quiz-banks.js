@@ -3,7 +3,11 @@ const path = require("node:path");
 const vm = require("node:vm");
 
 const root = path.resolve(__dirname, "..");
-const context = { window: {}, console };
+const repo = path.resolve(__dirname, "../..");
+const context = { window: {}, console, globalThis: {} };
+vm.runInNewContext(fs.readFileSync(path.join(repo, "shared", "fraction-markup.js"), "utf8"), context, { filename: "fraction-markup.js" });
+context.globalThis.FRACTION_MARKUP = context.window.FRACTION_MARKUP;
+context.FRACTION_MARKUP = context.window.FRACTION_MARKUP;
 for (const file of ["data.js", "analysis-data.js", "math-text-sanitize.js", "quiz-taxonomy.js", "quiz-variant-bank.js", "quiz-variants.js", "questions.js"]) {
   vm.runInNewContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
 }

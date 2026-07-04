@@ -15,11 +15,18 @@ const lectures = context.window.LECTURE_TAXONOMY || {};
 const taxonomy = context.window.QUIZ_TAXONOMY || {};
 
 const INSTRUCTION_PREFIX = /^[\u4e00-\u9fff]+｜/;
+const isSlashFraction = text => {
+  if (typeof text !== "string" || /\[\[frac:/.test(text)) return false;
+  if (/\d\/\d+(?:mm|cm|m|km|mL|L|g)\b/i.test(text)) return false;
+  if (/\d+\s*g\/\d+\s*g/i.test(text)) return false;
+  return /[^\s/+\−\-×÷=，。；、\[\]]+\/[^\s/+\−\-×÷=，。；、\[\]]+/.test(text);
+};
 const assertExamText = (label, text) => {
   if (typeof text !== "string") return;
   assert.ok(!/\^/.test(text), `${label} must not contain ^`);
   assert.ok(!/｜/.test(text), `${label} must not contain fullwidth ｜`);
   assert.ok(!INSTRUCTION_PREFIX.test(text), `${label} must not have instruction prefix`);
+  assert.ok(!isSlashFraction(text), `${label} must not use slash fractions`);
 };
 
 const diagramPattern = /數線|絕對值|相反數|正負數|坐標|函數圖|線型函數|二次函數|三角形|全等|相似|畢氏|平行|四邊形|圓|弧|盒狀|統計|機率|樹狀|長條|折線|立體|角柱|角錐|空間/;
