@@ -3,13 +3,17 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const CACHE = process.argv[2] || "20260706b";
+const OLD = "20260708f";
+const NEW = "20260709a";
 
-const files = ["index.html", ...fs.readdirSync(root).filter(d => d.endsWith("會考作戰室")).map(d => path.join(d, "index.html"))];
-
-for (const rel of files) {
-  const file = path.join(root, rel);
-  const next = fs.readFileSync(file, "utf8").replace(/\?v=202607\d+[a-z]/g, `?v=${CACHE}`);
-  fs.writeFileSync(file, next, "utf8");
-  console.log(`bumped ${rel} -> ?v=${CACHE}`);
+function bump(file) {
+  let s = fs.readFileSync(file, "utf8");
+  if (!s.includes(OLD)) return;
+  fs.writeFileSync(file, s.replaceAll(OLD, NEW), "utf8");
+  console.log("bump", file);
 }
+
+for (const d of fs.readdirSync(root).filter(x => x.endsWith("\u6703\u8003\u4f5c\u6230\u5ba4"))) {
+  bump(path.join(root, d, "index.html"));
+}
+bump(path.join(root, "index.html"));

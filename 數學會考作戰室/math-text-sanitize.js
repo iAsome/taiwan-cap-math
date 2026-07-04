@@ -61,6 +61,7 @@ window.MATH_TEXT_SANITIZE = (() => {
     if (q.trap != null) q.trap = sanitizeExamText(q.trap);
     if (q.concept != null) q.concept = sanitizeExamText(q.concept);
     if (q.formula != null) q.formula = sanitizeExamText(q.formula);
+    if (typeof DIAGRAM_ATTACH !== "undefined") return DIAGRAM_ATTACH.attachDiagram(q, "math");
     return q;
   }
 

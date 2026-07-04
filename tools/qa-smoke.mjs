@@ -35,7 +35,9 @@ function loadSubject(dir) {
   const sandbox = { window: {}, console, Date, Math, localStorage: { getItem: () => null, setItem: () => {} } };
   vm.createContext(sandbox);
   for (const file of scriptsFromIndex(dir)) {
-    vm.runInContext(fs.readFileSync(path.join(root, dir, file), "utf8"), sandbox, { filename: file });
+    const src = file.startsWith("../") ? path.join(root, dir, file) : path.join(root, dir, file);
+    vm.runInContext(fs.readFileSync(src, "utf8"), sandbox, { filename: file });
+    Object.assign(sandbox, sandbox.window);
   }
   return sandbox.window;
 }

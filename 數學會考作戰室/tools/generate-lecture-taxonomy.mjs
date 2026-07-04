@@ -4,31 +4,21 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const shared = path.join(root, "..", "shared");
 const context = vm.createContext({ window: {}, console });
 for (const file of ["data.js", "quiz-taxonomy.js", "quiz-variant-bank.js"]) {
   vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
 }
+for (const file of ["diagram-engine.js", "diagram-infer.js"]) {
+  vm.runInContext(fs.readFileSync(path.join(shared, file), "utf8"), context, { filename: file });
+}
+const inferDiagramSpec = (text, ctx) => context.window.DIAGRAM_INFER.inferDiagramSpec(text, ctx);
+const needsDiagram = (text, ctx) => context.window.DIAGRAM_INFER.needsDiagram(text, "math", ctx);
 
 const taxonomy = context.window.QUIZ_TAXONOMY || {};
 const bank = context.window.QUIZ_VARIANT_BANK || {};
 const units = context.window.MATH_DATA.units;
 const letters = ["A", "B", "C", "D"];
-
-const diagramKindForTopic = (title = "", section = "") => {
-  const text = `${title}${section}`;
-  if (/數線|絕對值|相反數|正負數/.test(text)) return { kind: "numberLine", min: -6, max: 6, points: [{ value: -3, label: "A" }, { value: 2, label: "B" }], caption: "數線上標記相反數與距離" };
-  if (/坐標|函數圖|線型函數|二次函數|圖形/.test(text)) return { kind: "coordinatePlane", points: [{ x: 0, y: 0, label: "O" }, { x: 2, y: 3, label: "P" }], lines: [{ x1: -3, y1: -2, x2: 3, y2: 4 }], caption: "坐標平面與點、線關係" };
-  if (/三角形|全等|相似|畢氏|勾股|心|證明/.test(text)) return { kind: "triangle", caption: "三角形邊角關係示意" };
-  if (/平行|四邊形|截角|同位角|內錯角/.test(text)) return { kind: "parallelLines", caption: "平行線被截線所形成的角度" };
-  if (/圓|弧|弦|切線/.test(text)) return { kind: "circle", caption: "圓心、半徑與弦" };
-  if (/盒狀|四分位|中位數|統計/.test(text)) return { kind: "boxPlot", caption: "資料分布的五數摘要" };
-  if (/機率|樹狀|組合/.test(text)) return { kind: "treeDiagram", caption: "逐層列出所有可能結果" };
-  if (/長條|折線|圖表|資料/.test(text)) return { kind: "barChart", caption: "類別資料的長度比較" };
-  if (/立體|角柱|角錐|表面積|體積|空間/.test(text)) return { kind: "solidPrism", caption: "立體圖形的面與棱" };
-  return null;
-};
-
-const needsDiagram = (title, section) => Boolean(diagramKindForTopic(title, section));
 
 const chapterTitle = quizId => ({
   "g7-1-c1": "國一上｜數與數線", "g7-1-c2": "國一上｜標準分解式與分數", "g7-1-c3": "國一上｜一元一次方程式",
@@ -74,7 +64,8 @@ for (const [quizId, chapter] of Object.entries(taxonomy)) {
       const key = `${quizId}/${topic.id}`;
       const presets = bank[key];
       if (!presets?.length) throw new Error(`缺少變體題庫 ${key}`);
-      const diagram = diagramKindForTopic(topic.title, section.title);
+      const ctx = { subject: "math", topicTitle: topic.title, sectionTitle: section.title };
+      const diagram = inferDiagramSpec(presets[0].text, ctx) || (needsDiagram(`${topic.title}${section.title}`, ctx) ? inferDiagramSpec("", ctx) : null);
       const ex1 = formatExample(presets[0], "例題一");
       const ex2 = presets[1].text !== presets[0].text ? formatExample(presets[1], "例題二") : null;
       const blocks = [

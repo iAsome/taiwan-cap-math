@@ -3,7 +3,8 @@
   const capAnalysis = window.CAP_ANALYSIS;
   const lectureTaxonomy = window.LECTURE_TAXONOMY || {};
   const quizTaxonomy = window.QUIZ_TAXONOMY || {};
-  const renderDiagram = spec => window.LECTURE_DIAGRAMS?.renderDiagram(spec) || "";
+  const renderDiagram = spec => window.DIAGRAM_ENGINE?.renderDiagram(spec) || "";
+  const attachExampleDiagram = (q, topic) => window.DIAGRAM_ATTACH?.attachDiagramText(q, "math", { topicTitle: topic }) || "";
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -221,7 +222,10 @@
   function renderLectureBlock(block) {
     if (block.type === "text") return `<div class="lecture-text">${block.html}</div>`;
     if (block.type === "formula") return `<div class="lecture-formula">${mathBlock(block.content)}</div>`;
-    if (block.type === "example") return `<div class="lecture-example"><p><strong>例題：</strong>${mathText(block.q)}</p><p><strong>解：</strong>${mathText(block.a)}</p></div>`;
+    if (block.type === "example") {
+      const exDiagram = attachExampleDiagram(block.q, lectureTaxonomy[state.selectedUnit]?.title || "");
+      return `<div class="lecture-example"><p><strong>例題：</strong>${mathText(block.q)}</p>${exDiagram}<p><strong>解：</strong>${mathText(block.a)}</p></div>`;
+    }
     if (block.type === "pitfall") return `<div class="lecture-pitfall"><strong>常見陷阱</strong>${block.html}</div>`;
     if (block.type === "diagram") return renderDiagram(block.spec);
     return "";
