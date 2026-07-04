@@ -208,6 +208,52 @@ window.EXAM_ENGINE = (() => {
     return mc(r, 28, 2, `某資料分成 4 組，各組次數依序為 ${counts.join("、")}。第 ${cutoff} 組的累積相對次數最接近下列何者？`, `${percent}%`, [`${Math.round(counts[cutoff - 1] / total * 1000) / 10}%`, `${Math.round(previous / total * 1000) / 10}%`, `${Math.round(cumulative / counts.slice(0, cutoff).length * 10) / 10}%`], [`總次數為 ${counts.join("+")}=${total}。`, `第 ${cutoff} 組的累積次數為 ${counts.slice(0, cutoff).join("+")}=${cumulative}。`, `累積相對次數=${over(cumulative, total)}，約為 ${percent}%。`], "『累積』要從第一組一直加到目標組。", "不要只用目標那一組的次數除以總數。")
   }
 
+  const VARIANTS_PER_TOPIC = 10;
+
+  function seedToVariantIndices(seed, topicCount) {
+    const r = rngFromSeed(`quiz-variants-${seed}`);
+    return Array.from({ length: topicCount }, () => Math.floor(r() * VARIANTS_PER_TOPIC));
+  }
+
+  function variantRng(quizId, topicId, variantIndex) {
+    return rngFromSeed(`${quizId}/${topicId}/v${variantIndex}`);
+  }
+
+  function paraphraseStem(text, vi) {
+    const t = String(text);
+    if (!vi) return t;
+    const lead = ["以下", "請看", "再判斷", "請選", "再比較", "請比較", "再確認", "請確認", "再選", "請再選"];
+    return `${lead[vi - 1] || `第 ${vi + 1} 組`}｜${t}`;
+  }
+
+  function variantHelpers(vr, vi) {
+    return {
+      r: vr,
+      ri: (_r, min, max) => ri(vr, min, max),
+      pick: (_r, list) => {
+        if (!Array.isArray(list) || !list.length) return pick(vr, list);
+        return list[(vi + Math.floor(vr() * list.length)) % list.length];
+      },
+      mc: (_r, unitId, difficulty, text, correct, distractors, steps, tip, trap, concept) => {
+        const sh = shuffled(rngFromSeed(`mc-shuffle-${vi}-${text}`), [...distractors]);
+        return mc(vr, unitId, difficulty, paraphraseStem(text, vi), correct, sh, steps, tip, trap, concept);
+      },
+      frac, over, signed, sci,
+      variantIndex: vi,
+      slot: vi
+    };
+  }
+
+  function ensureTopicVariants(topic, quizId) {
+    if (topic.variants?.length === VARIANTS_PER_TOPIC) return topic.variants;
+    const base = topic.template;
+    if (!base) throw new Error(`題型 ${quizId}/${topic.id || topic.topicId} 缺少 template 或 variants`);
+    return Array.from({ length: VARIANTS_PER_TOPIC }, (_, vi) => helpers => {
+      const vr = variantRng(quizId, topic.id || topic.topicId, vi);
+      return base({ ...helpers, ...variantHelpers(vr, vi) });
+    });
+  }
+
   const advancedUnitIds = new Set([5, 6, 9, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 25, 26]);
   const allowsAdvanced = unitId => advancedUnitIds.has(unitId);
   const taxonomyTopics = quizId => (quizTaxonomy[quizId]?.sections || []).flatMap(section => section.topics.map(topic => ({ section: section.title, ...topic })));
@@ -263,8 +309,11 @@ window.EXAM_ENGINE = (() => {
     return list[list.length - 1];
   }
 
-  function questionFromTopic(r, topic, index, ability) {
-    const question = topic.template({ r, ri, pick, mc, frac, over, signed, sci });
+  function questionFromTopic(r, topic, index, ability, variantIndex = 0) {
+    const vi = variantIndex ?? 0;
+    const variants = ensureTopicVariants({ id: topic.topicId, template: topic.template, variants: topic.variants }, topic.quizId);
+    const vr = variantRng(topic.quizId, topic.topicId, vi);
+    const question = variants[vi](variantHelpers(vr, vi));
     question.quizLevel = question.difficulty >= 3 ? "進階" : "基礎";
     question.ability = ability || "procedure";
     question.taxonomySection = topic.section;
@@ -272,6 +321,7 @@ window.EXAM_ENGINE = (() => {
     question.taxonomyTopicId = topic.topicId;
     question.taxonomyQuizId = topic.quizId;
     question.taxonomyKey = `${topic.quizId}/${topic.topicId}`;
+    question.variantIndex = vi;
     question.officialOrder = index + 1;
     return question;
   }
@@ -325,26 +375,35 @@ window.EXAM_ENGINE = (() => {
     return [question.text, question.choices?.join("|") || question.answer].join("§");
   }
 
+  function topicVariantSignature(quizId, topic, variantIndex) {
+    const fn = ensureTopicVariants(topic, quizId)[variantIndex];
+    const vr = variantRng(quizId, topic.id, variantIndex);
+    const question = fn(variantHelpers(vr, variantIndex));
+    return drillQuestionSignature(question);
+  }
+
   function generateTopicDrill(quizId, topicId, seed, count = 2, excludeTexts = []) {
     const topic = taxonomyTopics(quizId).find(item => item.id === topicId);
     if (!topic) throw new Error(`找不到題型 ${quizId}/${topicId}`);
     const chapter = chapterQuizzes.find(item => item.id === quizId);
     const excluded = new Set(excludeTexts.map(text => String(text)));
+    const variantOrder = seedToVariantIndices(seed, VARIANTS_PER_TOPIC);
     const picked = [];
     for (let slot = 0; slot < count; slot++) {
       let question = null;
-      for (let attempt = 0; attempt < 20; attempt++) {
-        const qr = rngFromSeed(`${seed}-${slot}-${attempt}-drill`);
+      for (let attempt = 0; attempt < VARIANTS_PER_TOPIC; attempt++) {
+        const vi = variantOrder[(slot + attempt) % VARIANTS_PER_TOPIC];
         const wrapped = {
           quizId,
           topicId: topic.id,
           title: topic.title,
           section: topic.section,
           template: topic.template,
+          variants: topic.variants,
           unitIds: chapter ? [...chapter.unitIds] : [1],
           unitId: chapter?.unitIds[0] || 1
         };
-        const candidate = questionFromTopic(qr, wrapped, slot, "procedure");
+        const candidate = questionFromTopic(null, wrapped, slot, "procedure", vi);
         candidate.isDrill = true;
         const signature = drillQuestionSignature(candidate);
         if (excluded.has(candidate.text) || excluded.has(signature)) continue;
@@ -433,7 +492,8 @@ window.EXAM_ENGINE = (() => {
   }
 
   function generateTaxonomyQuiz(blueprint, r, seed) {
-    const topics = shuffled(r, taxonomyTopics(blueprint.id));
+    const topics = taxonomyTopics(blueprint.id);
+    const variantIndices = seedToVariantIndices(seed, topics.length);
     const abilityBySection = ["concept", "procedure", "application"];
     const questions = topics.map((topic, index) => {
       const wrapped = {
@@ -442,12 +502,13 @@ window.EXAM_ENGINE = (() => {
         title: topic.title,
         section: topic.section,
         template: topic.template,
+        variants: topic.variants,
         unitIds: [...blueprint.unitIds],
         unitId: blueprint.unitIds[0]
       };
-      return questionFromTopic(r, wrapped, index, abilityBySection[index % abilityBySection.length]);
+      return questionFromTopic(r, wrapped, index, abilityBySection[index % abilityBySection.length], variantIndices[index]);
     });
-    return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:questions.length, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"MOE-curriculum-taxonomy-user-supplied", taxonomySource:quizTaxonomy[blueprint.id]?.source, questions };
+    return { kind:"quiz", id:`QUIZ-${blueprint.id}-${seed}`, quizId:blueprint.id, seed, variantIndices, title:blueprint.title, grade:blueprint.grade, term:blueprint.term, chapter:blueprint.chapter, scope:blueprint.scope, minutes:blueprint.minutes || 25, questionCount:questions.length, officialCodes:blueprint.officialCodes, unitIds:[...blueprint.unitIds], blueprint:"MOE-curriculum-taxonomy-user-supplied", taxonomySource:quizTaxonomy[blueprint.id]?.source, questions };
   }
 
   function unitsWithoutTaxonomy(unitIds) {
@@ -524,5 +585,9 @@ window.EXAM_ENGINE = (() => {
     return { id:`CAP-${seed}-${level}`, seed:Number(seed), level, createdAt:new Date().toISOString(), blueprint:"115-official-taxonomy-sample", questions };
   }
 
-  return { generate, generateQuiz, generateTopicDrill, generateUnitDrill, quizCatalog, allowsAdvanced, taxonomyTopicPool, topicsForScope, sampleTaxonomyQuestions };
+  return {
+    generate, generateQuiz, generateTopicDrill, generateUnitDrill, quizCatalog, allowsAdvanced,
+    taxonomyTopicPool, topicsForScope, sampleTaxonomyQuestions,
+    seedToVariantIndices, VARIANTS_PER_TOPIC, ensureTopicVariants, topicVariantSignature, drillQuestionSignature
+  };
 })();

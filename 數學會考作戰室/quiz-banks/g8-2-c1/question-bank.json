@@ -9,12 +9,142 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 8,
+    "questionCount": 28,
     "minutes": 25,
-    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
+    "variantsPerTopic": 10,
+    "seedSemantics": "seedToVariantIndices(seed, topicCount) picks variant 0-9 per topic in fixed curriculum order",
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears (skipped when user specifies seed).",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "等差數列",
+      "topics": [
+        {
+          "id": "sequence-concept",
+          "title": "數列"
+        },
+        {
+          "id": "arithmetic-sequence",
+          "title": "等差數列"
+        },
+        {
+          "id": "arithmetic-mean",
+          "title": "等差中項"
+        },
+        {
+          "id": "sequence-pattern",
+          "title": "數列的規律性"
+        },
+        {
+          "id": "figural-sequence-pattern",
+          "title": "圖形數列規律性"
+        },
+        {
+          "id": "arithmetic-nth-term-and-count",
+          "title": "求等差數列的第 n 項和項數"
+        },
+        {
+          "id": "arithmetic-last-term-and-diff",
+          "title": "求等差數列的末項和公差"
+        },
+        {
+          "id": "arithmetic-from-general-term",
+          "title": "已知 an 一般項求首項和公差"
+        },
+        {
+          "id": "arithmetic-sign-change-term",
+          "title": "求數列開始為正或負的項"
+        },
+        {
+          "id": "insert-arithmetic-sequence",
+          "title": "插入等差數列並求公差"
+        },
+        {
+          "id": "arithmetic-nth-term-word",
+          "title": "求等差數列的第 n 項列的問題"
+        },
+        {
+          "id": "arithmetic-mean-evaluate",
+          "title": "等差中項的求值問題"
+        },
+        {
+          "id": "arithmetic-mean-application",
+          "title": "等差中項的應用"
+        },
+        {
+          "id": "arithmetic-sequence-application",
+          "title": "等差數列的應用問題"
+        }
+      ]
+    },
+    {
+      "title": "等差級數",
+      "topics": [
+        {
+          "id": "arithmetic-series",
+          "title": "等差級數"
+        },
+        {
+          "id": "arithmetic-series-sum-formula",
+          "title": "等差級數前 n 項和公式"
+        },
+        {
+          "id": "arithmetic-series-sum",
+          "title": "求等差級數和"
+        },
+        {
+          "id": "arithmetic-series-max-min-sum",
+          "title": "求等差級數最大或最小的和"
+        },
+        {
+          "id": "arithmetic-series-application",
+          "title": "等差級數的應用問題"
+        }
+      ]
+    },
+    {
+      "title": "等比數列",
+      "topics": [
+        {
+          "id": "geometric-sequence",
+          "title": "等比數列"
+        },
+        {
+          "id": "geometric-mean",
+          "title": "等比中項"
+        },
+        {
+          "id": "geometric-nth-term",
+          "title": "求等比數列第 n 項"
+        },
+        {
+          "id": "geometric-term-count",
+          "title": "求等比數列的項數"
+        },
+        {
+          "id": "geometric-first-term-and-ratio",
+          "title": "求等比數列首項和公比"
+        },
+        {
+          "id": "geometric-first-term-ratio-problem",
+          "title": "求等比數列首項和公比的問題"
+        },
+        {
+          "id": "geometric-n-numbers",
+          "title": "求數個成等比數列的問題"
+        },
+        {
+          "id": "geometric-mean-application",
+          "title": "求等比中項的應用"
+        },
+        {
+          "id": "geometric-sequence-application",
+          "title": "等比數列的應用問題"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 16,

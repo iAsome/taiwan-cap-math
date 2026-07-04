@@ -9,12 +9,101 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 8,
+    "questionCount": 19,
     "minutes": 25,
-    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
+    "variantsPerTopic": 10,
+    "seedSemantics": "seedToVariantIndices(seed, topicCount) picks variant 0-9 per topic in fixed curriculum order",
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears (skipped when user specifies seed).",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "二次函數的圖形",
+      "topics": [
+        {
+          "id": "quadratic-function-concept",
+          "title": "二次函數"
+        },
+        {
+          "id": "quadratic-graph-forms",
+          "title": "二次函數 y = ax² 與 y = a(x - h)² + k 的圖形"
+        },
+        {
+          "id": "opening-direction",
+          "title": "二次函數圖形的開口方向"
+        },
+        {
+          "id": "vertex-coordinates",
+          "title": "二次函數圖形的頂點座標"
+        },
+        {
+          "id": "axis-of-symmetry",
+          "title": "二次函數圖形的對稱軸"
+        },
+        {
+          "id": "opening-size",
+          "title": "二次函數圖形的開口大小"
+        },
+        {
+          "id": "graph-translation",
+          "title": "二次函數圖形的平移"
+        },
+        {
+          "id": "find-quadratic-function",
+          "title": "求二次函數"
+        },
+        {
+          "id": "opening-size-application",
+          "title": "函數圖形開口大小的應用"
+        },
+        {
+          "id": "graph-key-features",
+          "title": "求二次函數圖形的基本要項"
+        },
+        {
+          "id": "horizontal-line-intersection",
+          "title": "二次函數圖形與水平線交點"
+        },
+        {
+          "id": "quadratic-application",
+          "title": "二次函數的應用"
+        }
+      ]
+    },
+    {
+      "title": "二次函數的最大值或最小值",
+      "topics": [
+        {
+          "id": "vertex-form-max-min",
+          "title": "二次函數 y = a(x - h)² + k 的最大值或最小值"
+        },
+        {
+          "id": "vertex-position",
+          "title": "二次函數圖形的頂點位置"
+        },
+        {
+          "id": "quadratic-value-change",
+          "title": "二次函數值的變化"
+        },
+        {
+          "id": "max-min-discrimination",
+          "title": "二次函數最大值或最小值的判別"
+        },
+        {
+          "id": "x-intercept-count",
+          "title": "二次函數圖形與 x 軸交點數"
+        },
+        {
+          "id": "given-max-min-evaluate",
+          "title": "已知最大、小值的求值問題"
+        },
+        {
+          "id": "given-max-min-find-function",
+          "title": "已知最大、小值求二次函數"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 24,

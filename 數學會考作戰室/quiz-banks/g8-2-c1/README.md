@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-2-c1
 - Units: 數列、等差與等比規律
-- Questions: 8
+- Questions: 28
 - Minutes: 25
 - Official codes: N-8-3～N-8-6
 

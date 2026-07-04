@@ -1,6 +1,9 @@
 (() => {
   const { units, domains, strategies, archives, sourcePolicy, officialSources, publisherSources, tipAudits } = window.MATH_DATA;
   const capAnalysis = window.CAP_ANALYSIS;
+  const lectureTaxonomy = window.LECTURE_TAXONOMY || {};
+  const quizTaxonomy = window.QUIZ_TAXONOMY || {};
+  const renderDiagram = spec => window.LECTURE_DIAGRAMS?.renderDiagram(spec) || "";
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -221,6 +224,29 @@
     return units.filter(unit => (state.grade === "all" || String(unit.grade) === state.grade) && (!q || [unit.title, unit.domain, unit.summary, unit.core, unit.formula, unit.tips.join(" ")].join(" ").toLowerCase().includes(q)));
   }
 
+  function renderLectureBlock(block) {
+    if (block.type === "text") return `<div class="lecture-text">${block.html}</div>`;
+    if (block.type === "formula") return `<div class="lecture-formula">${mathBlock(block.content)}</div>`;
+    if (block.type === "example") return `<div class="lecture-example"><p><strong>例題：</strong>${mathText(block.q)}</p><p><strong>解：</strong>${mathText(block.a)}</p></div>`;
+    if (block.type === "pitfall") return `<div class="lecture-pitfall"><strong>常見陷阱</strong>${block.html}</div>`;
+    if (block.type === "diagram") return renderDiagram(block.spec);
+    return "";
+  }
+
+  function renderLectureArticle(key) {
+    const lecture = lectureTaxonomy[key];
+    if (!lecture) return `<p class="unit-empty">找不到講義 ${esc(key)}</p>`;
+    return `<article class="lecture-topic-card" id="lecture-${esc(key.replace(/\//g, "-"))}">
+      <header><span class="lecture-chapter">${esc(lecture.chapter)}</span><h3>${esc(lecture.title)}</h3><small>${esc(lecture.section)}</small></header>
+      <div class="lecture-blocks">${lecture.blocks.map(renderLectureBlock).join("")}</div>
+      <footer class="lecture-quiz-link"><a href="?quiz=${esc(lecture.quizId)}&seed=">小考練習 ${esc(lecture.quizId)} →</a></footer>
+    </article>`;
+  }
+
+  function chaptersForUnit(unitId) {
+    return window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter" && item.unitIds.includes(unitId) && quizTaxonomy[item.id]);
+  }
+
   function renderHandbook() {
     const list = filteredUnits();
     if (!list.some(u => u.id === state.selectedUnit) && list.length) state.selectedUnit = list[0].id;
@@ -253,6 +279,7 @@
           <section class="lesson-block"><div class="lesson-label">標準解題流程</div><div class="lesson-content"><ol>${unit.steps.map(step => `<li>${mathText(step)}</li>`).join("")}</ol></div></section>
           <section class="lesson-block"><div class="lesson-label">會考快解技巧</div><div class="lesson-content"><ul class="tip-list">${unit.tips.map(tip => `<li>${mathText(tip)}</li>`).join("")}</ul></div></section>
           <section class="lesson-block"><div class="lesson-label">30 秒觀念測驗</div><div class="lesson-content"><div class="quiz-box"><p><strong>題目：</strong>${mathText(unit.quiz.q)}</p><button class="quiz-reveal">顯示解答</button><p class="quiz-answer"><strong>解答：</strong>${mathText(unit.quiz.a)}</p></div></div></section>
+          ${chaptersForUnit(unit.id).length ? `<section class="lesson-block taxonomy-lectures"><div class="lesson-label">細分題型講義</div><div class="lesson-content"><p>以下依教育部章節題型表，列出與本單元相關的 ${chaptersForUnit(unit.id).reduce((n, ch) => n + (quizTaxonomy[ch.id]?.sections || []).reduce((s, sec) => s + sec.topics.length, 0), 0)} 個題型講義（含圖形概念示意）。</p>${chaptersForUnit(unit.id).map(ch => `<details class="lecture-chapter"><summary><strong>${esc(ch.title.replace(/^國[一二三][上下]第[一二三四五六]單元：/, ""))}</strong><span>${esc(ch.id)}</span></summary><div class="lecture-topic-list">${(quizTaxonomy[ch.id]?.sections || []).flatMap(sec => sec.topics.map(t => renderLectureArticle(`${ch.id}/${t.id}`))).join("")}</div></details>`).join("")}</div></section>` : ""}
         </div>
         <button class="complete-button ${state.completed.has(unit.id) ? "done" : ""}" data-complete="${unit.id}">${state.completed.has(unit.id) ? "✓ 已掌握這個單元（按一下取消）" : "標記為已掌握"}</button>
       </article>`;
@@ -268,7 +295,11 @@
   }
 
   function renderAtlas() {
+    const chapters = window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter" && quizTaxonomy[item.id]);
     $("#atlasContent").innerHTML = `
+      <section class="taxonomy-atlas"><p class="eyebrow">537 TOPIC LECTURES</p><h2>依章節題型表的細分講義</h2><p>每個題型各 10 組變體題；小考種子碼決定每題用哪一組。點開章節可閱讀完整講義與 SVG 圖形。</p>
+        ${chapters.map(ch => `<details class="lecture-chapter atlas-chapter"><summary><strong>${esc(ch.title)}</strong><span>${(quizTaxonomy[ch.id]?.sections || []).reduce((n, s) => n + s.topics.length, 0)} 題型</span></summary><div class="lecture-topic-list">${(quizTaxonomy[ch.id]?.sections || []).map(sec => `<div class="lecture-section"><h4>${esc(sec.title)}</h4>${sec.topics.map(t => renderLectureArticle(`${ch.id}/${t.id}`)).join("")}</div>`).join("")}</div></details>`).join("")}
+      </section>
       <div class="domain-grid">${domains.map(d => `<article class="domain-card"><span>${d.mark}</span><h3>${esc(d.name)}</h3><p>${mathText(d.desc)}</p><ul>${d.skills.map(s => `<li>${mathText(s)}</li>`).join("")}</ul></article>`).join("")}</div>
       <section class="strategy-section"><p class="eyebrow">PATTERN → TOOL</p><h2>八大常見題型：看到什麼，就啟動什麼</h2>
         <table class="strategy-table"><thead><tr><th>題型</th><th>核心能力</th><th>穩定解法</th><th>最常失分</th></tr></thead><tbody>${strategies.map(row => `<tr>${row.map(cell => `<td>${mathText(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table>
@@ -466,7 +497,10 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       <div class="quiz-unit-list">${scopeUnits.map(title => `<span>${esc(title)}</span>`).join("")}</div>
       ${capSummary(item, true)}
       <small class="quiz-official-code">課綱編碼：${esc(item.officialCodes)}</small>
-      <a class="primary" href="?quiz=${item.id}">開始作答 →</a>
+      <div class="quiz-start-row">
+        <label class="quiz-seed-label">種子碼<input type="number" min="1" max="999999" placeholder="隨機" data-quiz-seed="${item.id}" value="${localStorage.getItem("capMath.lastQuizSeed") || ""}"></label>
+        <button class="primary" data-start-quiz="${item.id}">開始作答 →</button>
+      </div>
     </article>`;
   }
 
@@ -495,6 +529,13 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
         </div>
       </section>`;
     }).join("");
+    $$("[data-start-quiz]", $("#quizCatalog")).forEach(button => button.addEventListener("click", () => {
+      const quizId = button.dataset.startQuiz;
+      const seedInput = $(`[data-quiz-seed="${quizId}"]`);
+      if (seedInput) $("#quizSeedInput").value = seedInput.value;
+      beginQuiz(quizId, seedInput?.value ? Number(seedInput.value) : null);
+      setView("exam");
+    }));
   }
 
   function renderUnitChapterLedger() {
@@ -624,7 +665,13 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     localStorage.setItem("capMath.lastSeed", seed);
   }
 
-  function beginQuiz(quizId) { launchAssessment(uniqueQuizAssessment(quizId)); }
+  function beginQuiz(quizId, seedOverride) {
+    const raw = seedOverride ?? $("#quizSeedInput")?.value;
+    const seed = raw !== "" && raw != null ? Math.max(1, Math.min(999999, Number(raw) || 0)) : null;
+    const assessment = seed ? window.EXAM_ENGINE.generateQuiz(quizId, seed) : uniqueQuizAssessment(quizId);
+    if (seed) localStorage.setItem("capMath.lastQuizSeed", String(seed));
+    launchAssessment(assessment);
+  }
 
   function switchToFullExam() {
     clearInterval(state.timerId);
@@ -699,7 +746,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const reviewBanner = wrongOnly ? `<div class="paper-review-banner"><strong>錯題統整</strong><span>只顯示當次答錯的 ${visibleIndexes.length} 題選擇題</span></div>` : "";
     const formulaBanner = formulaSummary.length ? `<div class="paper-formula-banner"><strong>本卷錯題涉及公式</strong><div>${formulaSummary.map(formula => mathBlock(formula)).join("")}</div></div>` : "";
     const cover = isQuiz ? `
-      <header class="paper-cover"><div><p class="eyebrow">教育部年級範圍 · ${esc(state.exam.id)}</p><h2>${esc(state.exam.title)}</h2><p>${state.exam.questions.length} 題四選一｜${state.exam.minutes || 25} 分鐘｜每個列出單元至少覆蓋 1 題</p></div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term)}</div></header>
+      <header class="paper-cover"><div><p class="eyebrow">教育部年級範圍 · ${esc(state.exam.id)}</p><h2>${esc(state.exam.title)}</h2><p>${state.exam.questions.length} 題四選一｜${state.exam.minutes || 25} 分鐘｜固定題型順序｜種子碼 ${state.exam.seed}</p>${state.exam.seed ? `<button type="button" class="secondary compact quiz-seed-copy" id="copyQuizLink">複製連結 ?quiz=${esc(state.exam.quizId)}&amp;seed=${state.exam.seed}</button>` : ""}</div><div class="paper-stamp">國${state.exam.grade === 7 ? "一" : state.exam.grade === 8 ? "二" : "三"}<br>${esc(state.exam.term)}</div></header>
       <div class="paper-instructions"><div><strong>${state.exam.questions.length}</strong><span>四選一｜即時計分</span></div><div><strong>${state.exam.unitIds.length}</strong><span>範圍單元｜無超綱單元</span></div><div><strong>${state.exam.minutes || 25} min</strong><span>依單元需要安排進階</span></div></div>
       <div class="quiz-paper-scope"><strong>本卷範圍</strong><span>${esc(scopeTitles)}</span><small>${esc(state.exam.officialCodes)}</small></div>` : isArchive ? `
       <header class="paper-cover"><div><p class="eyebrow">官方題本重現 · ${esc(state.exam.id)}</p><h2>${state.exam.year} 年國中教育會考數學科題本</h2><p>${mcCount} 題選擇＋${crCount} 題非選｜依官方公布題目製作為可作答電子試卷｜計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
@@ -719,6 +766,10 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     $("#questionTotal").textContent = wrongOnly ? visibleIndexes.length : state.exam.questions.length;
     if (state.submitted) $("#paper").classList.add("submitted");
     bindExamInputs();
+    $("#copyQuizLink")?.addEventListener("click", () => {
+      const url = `${location.origin}${location.pathname}?quiz=${state.exam.quizId}&seed=${state.exam.seed}`;
+      navigator.clipboard?.writeText(url).then(() => toast("已複製小考連結")).catch(() => toast(url));
+    });
     renderQuestionGrid();
     updateAnswered();
   }
@@ -862,8 +913,14 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     renderQuizCatalog(); renderHandbook(); renderAtlas(); renderAnalysis(); renderSources(); renderArchive(); updateLearningProgress();
     const requestedView = params.get("view");
     const requestedQuiz = params.get("quiz");
-    if (requestedQuiz && window.EXAM_ENGINE.quizCatalog.some(item => item.id === requestedQuiz)) beginQuiz(requestedQuiz);
-    else if (requestedView && viewNames[requestedView]) setView(requestedView);
+    const requestedSeed = params.get("seed");
+    if (requestedSeed) {
+      $("#quizSeedInput").value = requestedSeed;
+      localStorage.setItem("capMath.lastQuizSeed", requestedSeed);
+    }
+    if (requestedQuiz && window.EXAM_ENGINE.quizCatalog.some(item => item.id === requestedQuiz)) {
+      beginQuiz(requestedQuiz, requestedSeed ? Number(requestedSeed) : null);
+    } else if (requestedView && viewNames[requestedView]) setView(requestedView);
   }
   init();
 })();

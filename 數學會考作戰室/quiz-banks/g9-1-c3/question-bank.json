@@ -9,12 +9,176 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 6,
+    "questionCount": 34,
     "minutes": 25,
-    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
+    "variantsPerTopic": 10,
+    "seedSemantics": "seedToVariantIndices(seed, topicCount) picks variant 0-9 per topic in fixed curriculum order",
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears (skipped when user specifies seed).",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "推理證明",
+      "topics": [
+        {
+          "id": "proof-concept",
+          "title": "證明"
+        },
+        {
+          "id": "geometry-proof-properties",
+          "title": "幾何證明常用的性質"
+        },
+        {
+          "id": "algebra-proof-assumptions",
+          "title": "代數證明常用的假設"
+        },
+        {
+          "id": "geometry-proof",
+          "title": "幾何證明"
+        },
+        {
+          "id": "algebra-proof",
+          "title": "代數證明"
+        },
+        {
+          "id": "geometry-proof-application",
+          "title": "幾何證明與應用"
+        },
+        {
+          "id": "construction-geometric-reasoning",
+          "title": "尺規作圖與幾何推理"
+        }
+      ]
+    },
+    {
+      "title": "三角形的外心",
+      "topics": [
+        {
+          "id": "circumcenter-meaning",
+          "title": "意義"
+        },
+        {
+          "id": "circumcenter-construction",
+          "title": "作法"
+        },
+        {
+          "id": "circumcenter-position",
+          "title": "位置"
+        },
+        {
+          "id": "circumcenter-properties",
+          "title": "性質"
+        },
+        {
+          "id": "circumcenter-angle-calculation",
+          "title": "外心與角度的計算"
+        },
+        {
+          "id": "circumcenter-shared-angle",
+          "title": "兩三角形同外心的角度計算"
+        },
+        {
+          "id": "circumcenter-isosceles-radius",
+          "title": "等腰三角形外接圓半徑的計算"
+        },
+        {
+          "id": "circumcenter-right-area",
+          "title": "直角三角形外接圓面積的計算"
+        }
+      ]
+    },
+    {
+      "title": "三角形的內心",
+      "topics": [
+        {
+          "id": "incenter-meaning",
+          "title": "意義"
+        },
+        {
+          "id": "incenter-construction",
+          "title": "作法"
+        },
+        {
+          "id": "incenter-position",
+          "title": "位置"
+        },
+        {
+          "id": "incenter-properties",
+          "title": "性質"
+        },
+        {
+          "id": "incenter-angle-calculation",
+          "title": "內心與角度的計算"
+        },
+        {
+          "id": "incenter-tangent-length",
+          "title": "切線段長的計算"
+        },
+        {
+          "id": "incenter-length-calculation",
+          "title": "內心與長度的計算"
+        },
+        {
+          "id": "incenter-area-calculation",
+          "title": "內心與面積的計算"
+        }
+      ]
+    },
+    {
+      "title": "三角形的重心",
+      "topics": [
+        {
+          "id": "centroid-meaning",
+          "title": "意義"
+        },
+        {
+          "id": "centroid-construction",
+          "title": "作法"
+        },
+        {
+          "id": "centroid-position",
+          "title": "位置"
+        },
+        {
+          "id": "centroid-properties",
+          "title": "性質"
+        },
+        {
+          "id": "centroid-length-calculation",
+          "title": "重心與長度的計算"
+        },
+        {
+          "id": "centroid-area-calculation",
+          "title": "重心與面積的計算"
+        },
+        {
+          "id": "centroid-application",
+          "title": "重心性質的應用"
+        }
+      ]
+    },
+    {
+      "title": "特殊三角形的三心",
+      "topics": [
+        {
+          "id": "special-isosceles-centers",
+          "title": "等腰三角形"
+        },
+        {
+          "id": "special-right-centers",
+          "title": "直角三角形"
+        },
+        {
+          "id": "special-equilateral-centers",
+          "title": "正三角形"
+        },
+        {
+          "id": "special-centers-problems",
+          "title": "特殊三角形三心的相關問題"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 23,

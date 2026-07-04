@@ -9,12 +9,183 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 8,
+    "questionCount": 37,
     "minutes": 25,
-    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
+    "variantsPerTopic": 10,
+    "seedSemantics": "seedToVariantIndices(seed, topicCount) picks variant 0-9 per topic in fixed curriculum order",
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears (skipped when user specifies seed).",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "連比與連比例式",
+      "topics": [
+        {
+          "id": "continued-ratio-concept",
+          "title": "連比"
+        },
+        {
+          "id": "continued-ratio-properties",
+          "title": "連比的性質"
+        },
+        {
+          "id": "continued-proportion",
+          "title": "連比例式"
+        },
+        {
+          "id": "find-continued-ratio",
+          "title": "求連比"
+        },
+        {
+          "id": "continued-proportion-properties",
+          "title": "連比例式的性質"
+        },
+        {
+          "id": "continued-proportion-evaluate",
+          "title": "連比例式的求值問題"
+        },
+        {
+          "id": "continued-ratio-change",
+          "title": "求連比的變化題"
+        },
+        {
+          "id": "continued-ratio-evaluate",
+          "title": "連比的求值問題"
+        },
+        {
+          "id": "continued-ratio-application",
+          "title": "連比的應用問題"
+        }
+      ]
+    },
+    {
+      "title": "比例線段",
+      "topics": [
+        {
+          "id": "equal-height-triangle-area-ratio",
+          "title": "等高或同高三角形的面積比"
+        },
+        {
+          "id": "parallel-proportional-segments",
+          "title": "平行線截比例線段性質"
+        },
+        {
+          "id": "parallel-proportional-application",
+          "title": "平行線截比例線段性質的應用"
+        },
+        {
+          "id": "midsegment-theorem",
+          "title": "三角形兩邊中點連線性質"
+        },
+        {
+          "id": "equal-height-area-ratio",
+          "title": "等高三角形的面積比"
+        },
+        {
+          "id": "parallel-proportional-problems",
+          "title": "平行線截比例線段的問題"
+        },
+        {
+          "id": "midsegment-problems",
+          "title": "三角形兩邊中點連線的問題"
+        },
+        {
+          "id": "midsegment-application",
+          "title": "三角形兩邊中點連線的應用"
+        },
+        {
+          "id": "two-parallels-proportional",
+          "title": "兩組平行線截比例線段的求值問題"
+        },
+        {
+          "id": "parallel-proportional-word",
+          "title": "平行線截比例線段的應用"
+        }
+      ]
+    },
+    {
+      "title": "相似多邊形",
+      "topics": [
+        {
+          "id": "similar-figures",
+          "title": "相似形"
+        },
+        {
+          "id": "similar-figures-test",
+          "title": "相似形的判別"
+        },
+        {
+          "id": "triangle-similarity-properties",
+          "title": "三角形的相似性質與判別"
+        },
+        {
+          "id": "similar-polygon-angle-side",
+          "title": "相似多邊形的邊角關係"
+        },
+        {
+          "id": "similar-polygon-test",
+          "title": "相似多邊形的判別"
+        },
+        {
+          "id": "similar-polygon-application",
+          "title": "相似多邊形的應用"
+        },
+        {
+          "id": "similar-triangle-test",
+          "title": "相似三角形的判別"
+        },
+        {
+          "id": "similar-triangle-test-application",
+          "title": "相似三角形的判別與應用"
+        },
+        {
+          "id": "similar-segment-length",
+          "title": "利用三角形的相似性質求線段長"
+        }
+      ]
+    },
+    {
+      "title": "相似三角形的應用",
+      "topics": [
+        {
+          "id": "similar-ratio-relations",
+          "title": "相似三角形對應邊、周長、面積的比的關係"
+        },
+        {
+          "id": "right-triangle-mother-child",
+          "title": "直角三角形的母子相似性質"
+        },
+        {
+          "id": "life-measurement",
+          "title": "生活中的測量問題"
+        },
+        {
+          "id": "special-right-triangle-ratio",
+          "title": "特殊直角三角形的邊長比"
+        },
+        {
+          "id": "right-triangle-side-ratio",
+          "title": "直角三角形的邊長比值"
+        },
+        {
+          "id": "similar-perimeter-area-ratio",
+          "title": "相似三角形的周長、面積比"
+        },
+        {
+          "id": "similar-measurement",
+          "title": "利用三角形相似性質作測量"
+        },
+        {
+          "id": "special-right-ratio-application",
+          "title": "特殊直角三角形邊長比的應用"
+        },
+        {
+          "id": "triangle-similarity-application",
+          "title": "三角形相似性質的應用"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 21,

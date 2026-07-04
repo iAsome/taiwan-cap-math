@@ -9,12 +9,93 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 8,
+    "questionCount": 17,
     "minutes": 25,
-    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
+    "variantsPerTopic": 10,
+    "seedSemantics": "seedToVariantIndices(seed, topicCount) picks variant 0-9 per topic in fixed curriculum order",
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears (skipped when user specifies seed).",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "認識函數",
+      "topics": [
+        {
+          "id": "variable-and-constant",
+          "title": "變數與常數"
+        },
+        {
+          "id": "independent-dependent-variable",
+          "title": "自變數與應變數"
+        },
+        {
+          "id": "function-concept",
+          "title": "函數"
+        },
+        {
+          "id": "function-value-concept",
+          "title": "函數值"
+        },
+        {
+          "id": "evaluate-function-value",
+          "title": "求函數值"
+        },
+        {
+          "id": "equal-function-value",
+          "title": "函數值相等的求值問題"
+        },
+        {
+          "id": "function-value-application",
+          "title": "函數值的應用"
+        }
+      ]
+    },
+    {
+      "title": "線型函數與函數圖形",
+      "topics": [
+        {
+          "id": "function-graph",
+          "title": "函數的圖形"
+        },
+        {
+          "id": "linear-function-and-graph",
+          "title": "線型函數及其圖形"
+        },
+        {
+          "id": "find-linear-function",
+          "title": "求線型函數"
+        },
+        {
+          "id": "function-type-identification",
+          "title": "函數類型的判別"
+        },
+        {
+          "id": "function-graph-identification",
+          "title": "函數圖形的判別"
+        },
+        {
+          "id": "linear-from-function-value",
+          "title": "已知函數值求線型函數"
+        },
+        {
+          "id": "linear-from-points",
+          "title": "已知圖形上的點求線型函數"
+        },
+        {
+          "id": "intersection-evaluate",
+          "title": "利用函數圖形的交點求值"
+        },
+        {
+          "id": "intersection-compare",
+          "title": "利用函數圖形的交點比大小"
+        },
+        {
+          "id": "linear-function-application",
+          "title": "線型函數的應用問題"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 17,

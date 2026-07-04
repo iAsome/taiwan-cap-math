@@ -9,12 +9,94 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 8,
+    "questionCount": 16,
     "minutes": 25,
-    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
+    "variantsPerTopic": 10,
+    "seedSemantics": "seedToVariantIndices(seed, topicCount) picks variant 0-9 per topic in fixed curriculum order",
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears (skipped when user specifies seed).",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "空間中的線與平面",
+      "topics": [
+        {
+          "id": "plane-plane",
+          "title": "平面與平面"
+        },
+        {
+          "id": "line-plane",
+          "title": "直線與平面"
+        },
+        {
+          "id": "line-line",
+          "title": "直線與直線"
+        },
+        {
+          "id": "space-line-plane-relations",
+          "title": "空間中線與平面間的關係"
+        },
+        {
+          "id": "space-distance",
+          "title": "空間中兩點距離的計算"
+        }
+      ]
+    },
+    {
+      "title": "角柱與圓柱",
+      "topics": [
+        {
+          "id": "prism",
+          "title": "角柱"
+        },
+        {
+          "id": "cylinder",
+          "title": "圓柱"
+        },
+        {
+          "id": "net-reading",
+          "title": "展開圖的判讀"
+        },
+        {
+          "id": "net-volume-surface",
+          "title": "由展開圖求體積與表面積"
+        },
+        {
+          "id": "prism-cylinder-calc",
+          "title": "求柱體的體積與表面積"
+        }
+      ]
+    },
+    {
+      "title": "角錐與圓錐",
+      "topics": [
+        {
+          "id": "pyramid",
+          "title": "角錐"
+        },
+        {
+          "id": "cone",
+          "title": "圓錐"
+        },
+        {
+          "id": "pyramid-surface-area",
+          "title": "求角錐的表面積"
+        },
+        {
+          "id": "pyramid-surface-application",
+          "title": "角錐表面積的應用"
+        },
+        {
+          "id": "cone-net-surface",
+          "title": "由展開圖求圓錐的表面積"
+        },
+        {
+          "id": "cone-surface-calculation",
+          "title": "圓錐表面積的計算"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 26,

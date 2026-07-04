@@ -13,7 +13,8 @@ for (const file of ["data.js", "analysis-data.js", "quiz-taxonomy.js", "question
 
 const {
   generate, generateQuiz, generateTopicDrill, quizCatalog,
-  taxonomyTopicPool, topicsForScope, sampleTaxonomyQuestions
+  taxonomyTopicPool, topicsForScope, sampleTaxonomyQuestions,
+  seedToVariantIndices, VARIANTS_PER_TOPIC, ensureTopicVariants, topicVariantSignature, drillQuestionSignature
 } = context.window.EXAM_ENGINE;
 const { primaryUnits } = context.window.CAP_ANALYSIS;
 const quizTaxonomy = context.window.QUIZ_TAXONOMY || {};
@@ -27,20 +28,39 @@ const rngFromSeed = seed => {
 };
 
 for (const topic of taxonomyTopicPool()) {
+  const raw = quizTaxonomy[topic.quizId].sections.flatMap(s => s.topics).find(t => t.id === topic.topicId);
+  const variants = ensureTopicVariants(raw, topic.quizId);
+  assert.equal(variants.length, VARIANTS_PER_TOPIC, `${topic.quizId}/${topic.topicId} must have ${VARIANTS_PER_TOPIC} variants`);
+  const signatures = new Set();
+  for (let vi = 0; vi < VARIANTS_PER_TOPIC; vi++) {
+    const sig = topicVariantSignature(topic.quizId, raw, vi);
+    assert.ok(sig, `${topic.quizId}/${topic.topicId} variant ${vi} must produce signature`);
+    assert.ok(!signatures.has(sig), `${topic.quizId}/${topic.topicId} variant ${vi} duplicates another variant`);
+    signatures.add(sig);
+  }
   const drill = generateTopicDrill(topic.quizId, topic.topicId, `${topic.quizId}-${topic.topicId}`, 1);
   const question = drill[0];
   assert.equal(question.type, "mc", `${topic.quizId}/${topic.topicId} must produce MC`);
   assert.ok(Array.isArray(question.choices) && question.choices.length === 4, `${topic.quizId}/${topic.topicId} must have 4 choices`);
   assert.ok(Number.isInteger(question.answer) && question.answer >= 0 && question.answer < 4, `${topic.quizId}/${topic.topicId} must have valid answer index`);
+  assert.ok(Number.isInteger(question.variantIndex), `${topic.quizId}/${topic.topicId} must carry variantIndex`);
 }
 
 const chapters = quizCatalog.filter(item => item.scope === "chapter" && quizTaxonomy[item.id]);
 for (const chapter of chapters) {
-  const quiz = generateQuiz(chapter.id);
+  const quizA = generateQuiz(chapter.id, 5115);
+  const quizB = generateQuiz(chapter.id, 5115);
+  assert.equal(JSON.stringify(quizA.questions.map(q => q.text)), JSON.stringify(quizB.questions.map(q => q.text)), `${chapter.id} seed 5115 must be stable`);
   const topicCount = quizTaxonomy[chapter.id].sections.reduce((sum, section) => sum + section.topics.length, 0);
-  assert.equal(quiz.questions.length, topicCount, `${chapter.id} must have one question per taxonomy topic`);
-  assert.equal(quiz.questions.length, chapter.questionCount, `${chapter.id} questionCount must match taxonomy`);
-  assert.ok(quiz.questions.every(q => q.taxonomyKey), `${chapter.id} questions must carry taxonomyKey`);
+  assert.equal(quizA.questions.length, topicCount, `${chapter.id} must have one question per taxonomy topic`);
+  assert.equal(quizA.questions.length, chapter.questionCount, `${chapter.id} questionCount must match taxonomy`);
+  assert.ok(quizA.questions.every(q => q.taxonomyKey), `${chapter.id} questions must carry taxonomyKey`);
+  assert.deepEqual(quizA.variantIndices, seedToVariantIndices(5115, topicCount), `${chapter.id} variantIndices must match seedToVariantIndices`);
+}
+
+const tenTopicChapter = chapters.find(ch => quizTaxonomy[ch.id].sections.reduce((n, s) => n + s.topics.length, 0) === 10);
+if (tenTopicChapter) {
+  assert.deepEqual(seedToVariantIndices(5115, 10), [5, 1, 0, 9, 7, 6, 1, 3, 4, 2], "seed 5115 with 10 topics must expand to documented indices");
 }
 
 const termQuizzes = quizCatalog.filter(item => item.scope === "term");
@@ -79,5 +99,6 @@ assert.ok(sample.every(q => q.taxonomyKey), "sampled questions must carry taxono
 
 const drill = generateTopicDrill(chapters[0].id, quizTaxonomy[chapters[0].id].sections[0].topics[0].id, 42, 2);
 assert.equal(drill.length, 2, "generateTopicDrill must return 2 questions");
+assert.notEqual(drillQuestionSignature(drill[0]), drillQuestionSignature(drill[1]), "drill pair must differ");
 
-console.log(`OK: ${taxonomyTopicPool().length} taxonomy topics, ${termQuizzes.length} term quizzes at 25 MC, mock pool verified.`);
+console.log(`OK: ${taxonomyTopicPool().length} taxonomy topics × ${VARIANTS_PER_TOPIC} variants, ${termQuizzes.length} term quizzes at 25 MC, seed-stable chapter quizzes.`);

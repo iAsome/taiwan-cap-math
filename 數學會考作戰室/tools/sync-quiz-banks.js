@@ -57,7 +57,9 @@ for (const quiz of quizCatalog) {
       function: "window.EXAM_ENGINE.generateQuiz",
       questionCount: quiz.questionCount,
       minutes: quiz.minutes,
-      nonRepeatPolicy: "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
+      variantsPerTopic: 10,
+      seedSemantics: "seedToVariantIndices(seed, topicCount) picks variant 0-9 per topic in fixed curriculum order",
+      nonRepeatPolicy: "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears (skipped when user specifies seed).",
       levelSplit: "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
     },
     taxonomy: taxonomy[quiz.id]?.sections || [],

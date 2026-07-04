@@ -2,7 +2,7 @@
 
 - Quiz ID: g8-2-c3
 - Units: 三角形性質、全等與尺規
-- Questions: 8
+- Questions: 31
 - Minutes: 25
 - Official codes: S-8-1～S-8-5
 

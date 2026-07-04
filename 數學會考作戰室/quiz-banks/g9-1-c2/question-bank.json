@@ -9,12 +9,130 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 8,
+    "questionCount": 25,
     "minutes": 25,
-    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
+    "variantsPerTopic": 10,
+    "seedSemantics": "seedToVariantIndices(seed, topicCount) picks variant 0-9 per topic in fixed curriculum order",
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears (skipped when user specifies seed).",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "圓、圓弧長與扇形",
+      "topics": [
+        {
+          "id": "circle-vocabulary",
+          "title": "圓的相關名詞"
+        },
+        {
+          "id": "arc-length-sector",
+          "title": "圓弧長與扇形"
+        },
+        {
+          "id": "sector-area-perimeter",
+          "title": "扇面的面積與周長"
+        },
+        {
+          "id": "overlapping-sector",
+          "title": "扇形重疊部分的面積與周長"
+        },
+        {
+          "id": "rotation-sweep",
+          "title": "圖形旋轉掃過的軌跡或區域"
+        }
+      ]
+    },
+    {
+      "title": "點、直線與圓的位置關係",
+      "topics": [
+        {
+          "id": "point-circle-position",
+          "title": "點與圓的位置關係"
+        },
+        {
+          "id": "line-circle-position",
+          "title": "直線 L 與圓 O 的位置關係"
+        },
+        {
+          "id": "tangent-properties",
+          "title": "圓的切線性質與判別性質"
+        },
+        {
+          "id": "external-tangent-pair",
+          "title": "過圓外一點的兩切線性質"
+        },
+        {
+          "id": "circumscribed-quadrilateral",
+          "title": "圓外切四邊形性質"
+        },
+        {
+          "id": "chord-properties",
+          "title": "弦的性質"
+        },
+        {
+          "id": "chord-distance",
+          "title": "弦心距"
+        },
+        {
+          "id": "tangent-application",
+          "title": "圓切線性質的應用"
+        },
+        {
+          "id": "equal-tangent-segments",
+          "title": "切線段等長的應用"
+        },
+        {
+          "id": "radius-chord-distance",
+          "title": "半徑、弦與弦心距的關係"
+        }
+      ]
+    },
+    {
+      "title": "圓心角、圓周角與弦的關係",
+      "topics": [
+        {
+          "id": "arc-degree",
+          "title": "弧的度數"
+        },
+        {
+          "id": "central-angle-chord",
+          "title": "圓心角與弦的關係"
+        },
+        {
+          "id": "inscribed-angle",
+          "title": "圓周角"
+        },
+        {
+          "id": "inscribed-angle-properties",
+          "title": "圓周角的相關性質"
+        },
+        {
+          "id": "central-inscribed-arc",
+          "title": "圓心角、圓周角與弧的度數"
+        },
+        {
+          "id": "semicircle-right-angle",
+          "title": "半圓所對圓周角為直角"
+        },
+        {
+          "id": "parallel-equal-arcs",
+          "title": "平行線截等弧"
+        },
+        {
+          "id": "cyclic-quadrilateral",
+          "title": "圓內接四邊形對角互補"
+        },
+        {
+          "id": "two-circles-intersection",
+          "title": "兩圓相交的度數問題"
+        },
+        {
+          "id": "circle-combined-geometry",
+          "title": "圓結合其他幾何性質的問題"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 22,

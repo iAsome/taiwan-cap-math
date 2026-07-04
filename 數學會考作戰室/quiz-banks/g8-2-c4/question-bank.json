@@ -9,12 +9,174 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 8,
+    "questionCount": 36,
     "minutes": 25,
-    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
+    "variantsPerTopic": 10,
+    "seedSemantics": "seedToVariantIndices(seed, topicCount) picks variant 0-9 per topic in fixed curriculum order",
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears (skipped when user specifies seed).",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "平行線與截角性質",
+      "topics": [
+        {
+          "id": "parallel-lines-concept",
+          "title": "平行線"
+        },
+        {
+          "id": "parallel-transversal-angles",
+          "title": "平行線的截角性質"
+        },
+        {
+          "id": "parallel-lines-test",
+          "title": "平行線的判別"
+        },
+        {
+          "id": "parallel-lines-properties",
+          "title": "兩直線平行的相關性質"
+        },
+        {
+          "id": "parallel-perpendicular-corresponding",
+          "title": "一般角的兩邊與另一角的兩邊分別平行或垂直的關係"
+        },
+        {
+          "id": "parallel-lines-distance",
+          "title": "兩平行線間的距離處處相等"
+        },
+        {
+          "id": "transversal-angle-calculation",
+          "title": "利用平行線截角性質求角度"
+        },
+        {
+          "id": "triangle-parallel-transversal",
+          "title": "三角形與平行線截角性質"
+        },
+        {
+          "id": "parallel-test-and-value",
+          "title": "平行線的判別與求值"
+        },
+        {
+          "id": "zigzag-between-parallels",
+          "title": "兩平行線間折線角度的問題"
+        },
+        {
+          "id": "quadrilateral-zigzag-parallels",
+          "title": "四邊形與平行線間折線角度"
+        },
+        {
+          "id": "regular-polygon-zigzag-parallels",
+          "title": "正多邊形與平行線間折線角度"
+        },
+        {
+          "id": "paper-folding-parallels",
+          "title": "利用平行線性質處理摺紙的問題"
+        }
+      ]
+    },
+    {
+      "title": "平行四邊形",
+      "topics": [
+        {
+          "id": "parallelogram-definition",
+          "title": "平行四邊形的定義"
+        },
+        {
+          "id": "parallelogram-properties",
+          "title": "平行四邊形的性質"
+        },
+        {
+          "id": "parallelogram-test",
+          "title": "平行四邊形的判別性質"
+        },
+        {
+          "id": "parallelogram-perimeter-area",
+          "title": "平行四邊形的面積與周長"
+        },
+        {
+          "id": "parallelogram-opposite-sides",
+          "title": "平行四邊形對邊相等"
+        },
+        {
+          "id": "parallelogram-opposite-angles",
+          "title": "平行四邊形對角相等"
+        },
+        {
+          "id": "parallelogram-diagonals-bisect",
+          "title": "平行四邊形對角線互相平分"
+        },
+        {
+          "id": "parallelogram-area-calculation",
+          "title": "平行四邊形面積的計算"
+        },
+        {
+          "id": "parallelogram-application",
+          "title": "平行四邊形性質的應用"
+        }
+      ]
+    },
+    {
+      "title": "特殊四邊形與梯形",
+      "topics": [
+        {
+          "id": "special-quad-diagonal-properties",
+          "title": "特殊四邊形的對角線性質"
+        },
+        {
+          "id": "diagonal-test-special-quad",
+          "title": "利用對角線性質判別特殊四邊形"
+        },
+        {
+          "id": "perpendicular-diagonals-area",
+          "title": "兩對角線垂直的四邊形面積"
+        },
+        {
+          "id": "trapezoid-concept",
+          "title": "梯形"
+        },
+        {
+          "id": "isosceles-trapezoid",
+          "title": "等腰梯形"
+        },
+        {
+          "id": "special-quad-properties-test",
+          "title": "特殊四邊形的性質與判別"
+        },
+        {
+          "id": "rhombus-properties",
+          "title": "菱形的性質"
+        },
+        {
+          "id": "kite-properties",
+          "title": "箏形的性質"
+        },
+        {
+          "id": "rectangle-properties",
+          "title": "長方形的性質"
+        },
+        {
+          "id": "square-properties",
+          "title": "正方形的性質"
+        },
+        {
+          "id": "trapezoid-angle-calculation",
+          "title": "梯形角度的計算"
+        },
+        {
+          "id": "trapezoid-length-calculation",
+          "title": "梯形長度的計算"
+        },
+        {
+          "id": "trapezoid-midsegment",
+          "title": "梯形兩腰中點連線段的問題"
+        },
+        {
+          "id": "trapezoid-area-calculation",
+          "title": "梯形面積的計算"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 19,

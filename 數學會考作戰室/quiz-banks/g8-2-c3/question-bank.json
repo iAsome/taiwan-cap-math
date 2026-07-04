@@ -9,12 +9,159 @@
   "runtime": {
     "generator": "questions.js",
     "function": "window.EXAM_ENGINE.generateQuiz",
-    "questionCount": 8,
+    "questionCount": 31,
     "minutes": 25,
-    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears.",
+    "variantsPerTopic": 10,
+    "seedSemantics": "seedToVariantIndices(seed, topicCount) picks variant 0-9 per topic in fixed curriculum order",
+    "nonRepeatPolicy": "app.js stores recent quiz signatures in localStorage and re-rolls seed when a duplicate signature appears (skipped when user specifies seed).",
     "levelSplit": "Advanced questions appear only for units that need flexible application; chapter quizzes keep them to about one third at most."
   },
-  "taxonomy": [],
+  "taxonomy": [
+    {
+      "title": "角與尺規作圖",
+      "topics": [
+        {
+          "id": "angle-concept",
+          "title": "角"
+        },
+        {
+          "id": "compass-straightedge",
+          "title": "尺規作圖"
+        },
+        {
+          "id": "angle-basic-calculation",
+          "title": "角度的基本計算"
+        },
+        {
+          "id": "straight-angle-calculation",
+          "title": "平角的計算"
+        },
+        {
+          "id": "complementary-supplementary",
+          "title": "餘角與補角"
+        },
+        {
+          "id": "vertical-angles",
+          "title": "對頂角的計算"
+        },
+        {
+          "id": "reflection-angle-application",
+          "title": "反射角度的應用"
+        }
+      ]
+    },
+    {
+      "title": "三角形和多邊形的內角與外角",
+      "topics": [
+        {
+          "id": "triangle-interior-exterior",
+          "title": "三角形的內角與外角"
+        },
+        {
+          "id": "triangle-angle-calculation",
+          "title": "三角形內、外角的計算"
+        },
+        {
+          "id": "quadrilateral-angle-calculation",
+          "title": "四邊形角度的計算"
+        },
+        {
+          "id": "polygon-angle-variable",
+          "title": "n 邊形度數變動時計算"
+        },
+        {
+          "id": "paper-folding-angle",
+          "title": "紙片翻摺求角度"
+        },
+        {
+          "id": "figure-eight-angle",
+          "title": "利用 8 字型關係求角度"
+        },
+        {
+          "id": "y-shape-angle",
+          "title": "利用 Y 字型關係求角度"
+        },
+        {
+          "id": "isosceles-folding",
+          "title": "等腰三角形摺疊的計算"
+        },
+        {
+          "id": "regular-polygon-angle",
+          "title": "正 n 邊形角度的計算"
+        }
+      ]
+    },
+    {
+      "title": "三角形的全等性質與應用",
+      "topics": [
+        {
+          "id": "polygon-congruence",
+          "title": "多邊形的全等"
+        },
+        {
+          "id": "triangle-congruence-criteria",
+          "title": "三角形全等的判別"
+        },
+        {
+          "id": "polygon-correspondence",
+          "title": "多邊形的對應關係"
+        },
+        {
+          "id": "triangle-congruence-application",
+          "title": "三角形全等的判別應用"
+        },
+        {
+          "id": "perpendicular-bisector",
+          "title": "中垂線性質的應用"
+        },
+        {
+          "id": "angle-bisector",
+          "title": "角平分線性質的應用"
+        },
+        {
+          "id": "equilateral-height-area",
+          "title": "正三角形的高與面積"
+        },
+        {
+          "id": "isosceles-properties",
+          "title": "等腰三角形性質的應用"
+        },
+        {
+          "id": "congruence-properties-application",
+          "title": "三角形全等性質的應用"
+        }
+      ]
+    },
+    {
+      "title": "三角形的邊角關係",
+      "topics": [
+        {
+          "id": "triangle-side-angle-relation",
+          "title": "三角形的邊角關係"
+        },
+        {
+          "id": "side-length-range",
+          "title": "求邊長的範圍"
+        },
+        {
+          "id": "perimeter-from-range",
+          "title": "由邊長的範圍求周長"
+        },
+        {
+          "id": "larger-side-larger-angle",
+          "title": "大邊對大角"
+        },
+        {
+          "id": "larger-angle-larger-side",
+          "title": "大角對大邊"
+        },
+        {
+          "id": "side-angle-inequality-application",
+          "title": "三角形邊角不等關係的應用"
+        }
+      ]
+    }
+  ],
   "units": [
     {
       "unitId": 18,
