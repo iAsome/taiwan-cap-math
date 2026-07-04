@@ -4,10 +4,12 @@ import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
+import { loadFractionMarkup } from "../../shared/load-fraction-markup.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const sandbox = { window: {}, console, Date, Math };
 vm.createContext(sandbox);
+loadFractionMarkup(sandbox);
 
 for (const file of ["geography-data.js", "questions.js", "analysis-data.js"]) {
   const code = fs.readFileSync(path.join(root, file), "utf8");

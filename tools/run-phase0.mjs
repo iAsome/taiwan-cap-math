@@ -10,6 +10,7 @@ const steps = [
   ["encoding", root, "node tools/verify-encoding.mjs"],
   ["pages-size", root, "node tools/verify-pages-size.mjs"],
   ["app-bootstrap", root, "node tools/verify-app-bootstrap.mjs"],
+  ["choice-format", root, "node tools/verify-choice-format.mjs"],
   ["chinese", path.join(root, "國文會考作戰室"), "node tools/verify-chapter-quizzes.js"],
   ["math", path.join(root, "數學會考作戰室"), "node tools/verify-chapter-quizzes.js"],
   ["math-taxonomy", path.join(root, "數學會考作戰室"), "node tools/verify-taxonomy-coverage.mjs"],

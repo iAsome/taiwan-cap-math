@@ -107,7 +107,7 @@ window.QUIZ_TAXONOMY = {
             template({ r, ri, mc, signed }) {
               const a = -ri(r, 2, 9), b = ri(r, 2, 8), c = ri(r, 2, 6);
               const prod = a * b, quot = Math.trunc(prod / c);
-              return mc(r, 1, 2, `計算 ${signed(a)} × ${b} ÷ ${c} 的值。`, signed(quot), [signed(a + b - c), signed(a * b * c), signed(Math.abs(a) * b / c)], [`先算乘法：${signed(a)}×${b}=${signed(prod)}。`, `再算除法：${signed(prod)}÷${c}=${signed(quot)}。`], "同號相乘為正，異號相乘為負；除法規則相同。", "乘除從左到右依序計算，不要跳過乘法。")
+              return mc(r, 1, 2, `計算 ${signed(a)} × ${b} ÷ ${c} 的值。`, signed(quot), [signed(a + b - c), signed(a * b * c), signed(prod + c)], [`先算乘法：${signed(a)}×${b}=${signed(prod)}。`, `再算除法：${signed(prod)}÷${c}=${signed(quot)}。`], "同號相乘為正，異號相乘為負；除法規則相同。", "乘除從左到右依序計算，不要跳過乘法。")
             }
           },
           {
@@ -774,17 +774,20 @@ window.QUIZ_TAXONOMY = {
             id: "shopping-problem",
             title: "購物問題",
             template({ r, ri, mc }) {
-              const count = ri(r, 2, 5), change = ri(r, 5, 20), pay = 100, price = (pay - change) / count;
-              return mc(r, 5, 2, `用 ${pay} 元買 ${count} 個相同物品，找 ${change} 元，每個多少元？`, `${price}`, [`${pay - change}`, `${price + 1}`, `${count * change}`], [`實付 ${pay}−${change}=${pay - change} 元。`, `${count} 個共 ${pay - change} 元，每個 ${price} 元。`], "購物：總價 = 付錢 − 找零；單價 = 總價÷數量。", "找零是退還的，要從付錢中扣掉。")
+              const change = ri(r, 5, 20), pay = 100, net = pay - change;
+              const divisors = [2, 3, 4, 5].filter(c => net % c === 0);
+              const count = divisors[ri(r, 0, divisors.length - 1)] || 2;
+              const price = net / count;
+              return mc(r, 5, 2, `用 ${pay} 元買 ${count} 個相同物品，找 ${change} 元，每個多少元？`, `${price}`, [`${pay - change}`, `${price + 1}`, `${count * change}`], [`實付 ${pay}−${change}=${net} 元。`, `${count} 個共 ${net} 元，每個 ${price} 元。`], "購物：總價 = 付錢 − 找零；單價 = 總價÷數量。", "找零是退還的，要從付錢中扣掉。")
             }
           },
           {
             id: "plan-comparison-problem",
             title: "方案問題",
-            template({ r, ri, mc }) {
+            template({ r, ri, mc, over }) {
               const baseA = 100, rateA = 2, baseB = 50, rateB = 5;
-              const x = (baseA - baseB) / (rateB - rateA);
-              return mc(r, 5, 2, `方案甲：月租 ${baseA} 元加每分鐘 ${rateA} 元；方案乙：月租 ${baseB} 元加每分鐘 ${rateB} 元。通話幾分鐘時兩方案費用相同？`, `${x} 分鐘`, [`${x + 5} 分鐘`, `${x - 5} 分鐘`, `${baseA} 分鐘`], [`設 x 分鐘：${baseA}+${rateA}x = ${baseB}+${rateB}x。`, `移項得 ${rateB - rateA}x = ${baseA - baseB}，x = ${x}。`], "方案相同：兩個一次式相等，解 x。", "月租與計次費要分開列。")
+              const correct = `${over(50, 3)} 分鐘`;
+              return mc(r, 5, 2, `方案甲：月租 ${baseA} 元加每分鐘 ${rateA} 元；方案乙：月租 ${baseB} 元加每分鐘 ${rateB} 元。通話幾分鐘時兩方案費用相同？`, correct, [`22 分鐘`, `11 分鐘`, `${baseA} 分鐘`], [`設 x 分鐘：${baseA}+${rateA}x = ${baseB}+${rateB}x。`, `移項得 ${rateB - rateA}x = ${baseA - baseB}，x = ${over(50, 3)}。`], "方案相同：兩個一次式相等，解 x。", "月租與計次費要分開列。")
             }
           },
           {
@@ -1483,10 +1486,10 @@ window.QUIZ_TAXONOMY = {
           {
             id: "inequality-shopping",
             title: "購物問題",
-            template({ r, ri, mc }) {
+            template({ r, ri, mc, over }) {
               const price = ri(r, 80, 150), budget = ri(r, 400, 600);
               const max = Math.floor(budget / price);
-              return mc(r, 9, 2, `每本 ${price} 元，預算 ${budget} 元（可花完），最多買幾本？`, `${max} 本`, [`${max + 1} 本`, `${max - 1} 本`, `${Math.floor(budget / price) + 2} 本`], [`設買 x 本：${price}x ≤ ${budget}。`, `x ≤ ${budget / price}，最多 ${max} 本。`], "購物預算：單價×數量 ≤ 預算。", "最多買幾本要取整數且符合預算。")
+              return mc(r, 9, 2, `每本 ${price} 元，預算 ${budget} 元（可花完），最多買幾本？`, `${max} 本`, [`${max + 1} 本`, `${max - 1} 本`, `${Math.floor(budget / price) + 2} 本`], [`設買 x 本：${price}x ≤ ${budget}。`, `x ≤ ${over(budget, price)}，最多 ${max} 本。`], "購物預算：單價×數量 ≤ 預算。", "最多買幾本要取整數且符合預算。")
             }
           },
           {

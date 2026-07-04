@@ -14,7 +14,7 @@ context.FRACTION_MARKUP = context.window.FRACTION_MARKUP;
 
 vm.runInContext(fs.readFileSync(path.join(root, "math-text-sanitize.js"), "utf8"), context, { filename: "math-text-sanitize.js" });
 const { sanitizeQuestion } = context.window.MATH_TEXT_SANITIZE;
-const { slashToFracMarkup } = context.window.FRACTION_MARKUP;
+const { slashToFracMarkup, normalizeChoice } = context.window.FRACTION_MARKUP;
 
 vm.runInContext(fs.readFileSync(path.join(root, "quiz-variant-bank.js"), "utf8"), context, { filename: "quiz-variant-bank.js" });
 const bank = context.window.QUIZ_VARIANT_BANK;
@@ -44,12 +44,12 @@ let lectureFields = 0;
 for (const lecture of Object.values(lectures)) {
   for (const block of lecture.blocks || []) {
     if (block.type === "example") {
-      if (block.q) { block.q = slashToFracMarkup(block.q); lectureFields += 1; }
-      if (block.a) { block.a = slashToFracMarkup(block.a); lectureFields += 1; }
+      if (block.q) { block.q = normalizeChoice(slashToFracMarkup(block.q)); lectureFields += 1; }
+      if (block.a) { block.a = normalizeChoice(slashToFracMarkup(block.a)); lectureFields += 1; }
     }
-    if (block.type === "pitfall" && block.html) block.html = slashToFracMarkup(block.html);
-    if (block.type === "formula" && block.content) block.content = slashToFracMarkup(block.content);
-    if (block.type === "text" && block.html) block.html = slashToFracMarkup(block.html);
+    if (block.type === "pitfall" && block.html) block.html = normalizeChoice(slashToFracMarkup(block.html));
+    if (block.type === "formula" && block.content) block.content = normalizeChoice(slashToFracMarkup(block.content));
+    if (block.type === "text" && block.html) block.html = normalizeChoice(slashToFracMarkup(block.html));
   }
 }
 

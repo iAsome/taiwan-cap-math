@@ -21,12 +21,10 @@ window.EXAM_ENGINE = (() => {
     return out;
   }
   function mc(r, unitId, difficulty, text, correct, distractors, steps, tip, trap, concept) {
-    const values = [];
-    [correct, ...distractors].map(String).forEach(v => { if (!values.includes(v)) values.push(v); });
-    let bump = 1;
-    while (values.length < 4) { const fallback = `${correct}（${bump++}）`; if (!values.includes(fallback)) values.push(fallback); }
-    const choices = shuffled(r, values.slice(0, 4));
-    return { type: "mc", unitId, difficulty, text, choices, answer: choices.indexOf(String(correct)), steps, tip, trap, concept: concept || U[unitId - 1].summary, formula: U[unitId - 1].formula };
+    const FM = FRACTION_MARKUP;
+    const correctNorm = FM.normalizeChoice(String(correct));
+    const choices = shuffled(r, FM.fillMcValues(correct, distractors).map(v => FM.normalizeChoice(v)));
+    return { type: "mc", unitId, difficulty, text, choices, answer: choices.indexOf(correctNorm), steps, tip, trap, concept: concept || U[unitId - 1].summary, formula: U[unitId - 1].formula };
   }
   function bank(r, unitId, difficulty, variants) {
     const v = pick(r, variants);

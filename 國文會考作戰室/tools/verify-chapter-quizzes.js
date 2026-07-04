@@ -4,7 +4,11 @@ const vm = require("node:vm");
 const assert = require("node:assert/strict");
 
 const root = path.resolve(__dirname, "..");
+const repo = path.dirname(root);
 const context = { window: {}, console };
+
+vm.runInNewContext(fs.readFileSync(path.join(repo, "shared", "fraction-markup.js"), "utf8"), context, { filename: "fraction-markup.js" });
+context.FRACTION_MARKUP = context.window.FRACTION_MARKUP;
 
 for (const file of ["data.js", "analysis-data.js", "questions.js"]) {
   vm.runInNewContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });

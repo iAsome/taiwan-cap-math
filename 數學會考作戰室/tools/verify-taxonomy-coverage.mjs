@@ -34,9 +34,14 @@ const assertExamText = (label, text) => {
   assert.ok(!INSTRUCTION_PREFIX.test(text), `${label} must not have instruction prefix`);
   assert.ok(!isSlashFraction(text), `${label} must not use slash fractions`);
 };
+const assertChoice = (label, text) => {
+  assertExamText(label, text);
+  assert.ok(!/[\u2032\u0027]/.test(text), `${label} must not contain prime mark`);
+  assert.ok(!/\d+\.\d{4,}/.test(text), `${label} must not contain float artifacts`);
+};
 const assertExamQuestion = (key, q) => {
   assertExamText(`${key} text`, q.text);
-  q.choices?.forEach((c, i) => assertExamText(`${key} choice ${i}`, c));
+  q.choices?.forEach((c, i) => assertChoice(`${key} choice ${i}`, c));
   q.steps?.forEach((s, i) => assertExamText(`${key} step ${i}`, s));
 };
 
@@ -135,4 +140,4 @@ const drill = generateTopicDrill(chapters[0].id, quizTaxonomy[chapters[0].id].se
 assert.equal(drill.length, 2, "generateTopicDrill must return 2 questions");
 assert.notEqual(drillQuestionSignature(drill[0]), drillQuestionSignature(drill[1]), "drill pair must differ");
 
-console.log(`OK: ${taxonomyTopicPool().length} taxonomy topics × ${VARIANTS_PER_TOPIC} variants, ${termQuizzes.length} term quizzes at 25 MC, seed-stable chapter quizzes, exam text sanitized, stacked fractions.`);
+console.log(`OK: ${taxonomyTopicPool().length} taxonomy topics × ${VARIANTS_PER_TOPIC} variants, ${termQuizzes.length} term quizzes at 25 MC, seed-stable chapter quizzes, exam text sanitized, stacked fractions, choice format clean.`);

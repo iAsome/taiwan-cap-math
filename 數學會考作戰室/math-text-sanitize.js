@@ -45,12 +45,18 @@ window.MATH_TEXT_SANITIZE = (() => {
     return out;
   }
 
+  function normalizeChoice(text) {
+    const frac = (typeof FRACTION_MARKUP !== "undefined" ? FRACTION_MARKUP : globalThis.FRACTION_MARKUP);
+    const base = sanitizeExamText(text);
+    return frac?.normalizeChoice ? frac.normalizeChoice(base) : base;
+  }
+
   function sanitizeQuestion(question) {
     if (!question || typeof question !== "object") return question;
     const q = { ...question };
     if (q.text != null) q.text = sanitizeExamText(q.text);
-    if (Array.isArray(q.choices)) q.choices = q.choices.map(sanitizeExamText);
-    if (Array.isArray(q.steps)) q.steps = q.steps.map(sanitizeExamText);
+    if (Array.isArray(q.choices)) q.choices = q.choices.map(normalizeChoice);
+    if (Array.isArray(q.steps)) q.steps = q.steps.map(normalizeChoice);
     if (q.tip != null) q.tip = sanitizeExamText(q.tip);
     if (q.trap != null) q.trap = sanitizeExamText(q.trap);
     if (q.concept != null) q.concept = sanitizeExamText(q.concept);

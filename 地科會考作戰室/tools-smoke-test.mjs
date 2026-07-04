@@ -1,7 +1,10 @@
 import fs from "node:fs";
 import vm from "node:vm";
+import { loadFractionMarkup } from "../shared/load-fraction-markup.mjs";
+
 const context = { window: {}, console, Date };
 vm.createContext(context);
+loadFractionMarkup(context);
 for (const file of ["earth-data.js", "quiz-taxonomy.js", "questions.js"]) {
   vm.runInContext(fs.readFileSync(file, "utf8"), context, { filename: file });
 }
