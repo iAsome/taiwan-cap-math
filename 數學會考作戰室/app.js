@@ -115,17 +115,24 @@
     const question = record.exam.questions[questionIndex];
     const rounds = (record.corrections?.[questionIndex]?.rounds || 0) + 1;
     const seed = `${record.exam.seed || record.id}-${questionIndex}-${rounds}`;
-    const excludeTexts = [question.text];
+    const excludeKeys = [window.EXAM_ENGINE.drillQuestionSignature(question)];
+    const level = record.exam.level || 2;
     let subQuestions;
     try {
-      subQuestions = question.taxonomyQuizId && question.taxonomyTopicId
-        ? window.EXAM_ENGINE.generateTopicDrill(question.taxonomyQuizId, question.taxonomyTopicId, seed, 2, excludeTexts)
-        : window.EXAM_ENGINE.generateUnitDrill(question.unitId, seed, 2, record.exam.level || 2, excludeTexts);
+      if (question.taxonomyQuizId && question.taxonomyTopicId) {
+        try {
+          subQuestions = window.EXAM_ENGINE.generateTopicDrill(question.taxonomyQuizId, question.taxonomyTopicId, seed, 1, excludeKeys);
+        } catch {
+          subQuestions = window.EXAM_ENGINE.generateUnitDrill(question.unitId, seed, 1, level, excludeKeys);
+        }
+      } else {
+        subQuestions = window.EXAM_ENGINE.generateUnitDrill(question.unitId, seed, 1, level, excludeKeys);
+      }
     } catch (error) {
       toast(error.message || "無法產生訂正練習");
       return;
     }
-    state.paperReview.drill = { qIndex: questionIndex, subQuestions, subAnswers: [null, null], rounds, submitted: false };
+    state.paperReview.drill = { qIndex: questionIndex, subQuestions, subAnswers: subQuestions.map(() => null), rounds, submitted: false };
     renderExam();
     $(`#question-${questionIndex + 1}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
@@ -135,7 +142,7 @@
     const record = getPaperRecord(state.paperReview.recordId);
     if (!drill || !record || drill.submitted) return;
     if (drill.subAnswers.some(answer => answer === null)) {
-      toast("請先完成兩題訂正練習的作答");
+      toast("請先完成訂正練習的作答");
       return;
     }
     drill.submitted = true;
@@ -171,7 +178,7 @@
         ? `<button type="button" class="secondary" data-drill-close>關閉</button>`
         : `<button type="button" class="secondary" data-drill-retry>再練同題型</button><button type="button" class="secondary" data-drill-close>關閉</button>`
       : `<button type="button" class="primary" data-drill-submit ${ready ? "" : "disabled"}>提交訂正</button><button type="button" class="secondary" data-drill-cancel>取消</button>`;
-    return `<div class="topic-drill"><div class="topic-drill-head"><strong>訂正觀念</strong><span>同觀念再練 2 題不同題目，全對才算訂正完成</span></div>${questionsHtml}<div class="topic-drill-actions">${actions}</div></div>`;
+    return `<div class="topic-drill"><div class="topic-drill-head"><strong>訂正觀念</strong><span>同觀念再練 1 題，答對即完成訂正</span></div>${questionsHtml}<div class="topic-drill-actions">${actions}</div></div>`;
   }
 
   function correctionBadgeHtml(record, index) {

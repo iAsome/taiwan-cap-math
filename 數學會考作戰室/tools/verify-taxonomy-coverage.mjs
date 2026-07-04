@@ -136,8 +136,7 @@ const sample = sampleTaxonomyQuestions(rngFromSeed("sample-check"), pool, 25);
 assert.equal(sample.length, 25, "sampleTaxonomyQuestions must fill requested count when pool is large enough");
 assert.ok(sample.every(q => q.taxonomyKey), "sampled questions must carry taxonomyKey");
 
-const drill = generateTopicDrill(chapters[0].id, quizTaxonomy[chapters[0].id].sections[0].topics[0].id, 42, 2);
-assert.equal(drill.length, 2, "generateTopicDrill must return 2 questions");
-assert.notEqual(drillQuestionSignature(drill[0]), drillQuestionSignature(drill[1]), "drill pair must differ");
+const drill = generateTopicDrill(chapters[0].id, quizTaxonomy[chapters[0].id].sections[0].topics[0].id, 42, 1);
+assert.equal(drill.length, 1, "generateTopicDrill must return 1 question by default");
 
 console.log(`OK: ${taxonomyTopicPool().length} taxonomy topics × ${VARIANTS_PER_TOPIC} variants, ${termQuizzes.length} term quizzes at 25 MC, seed-stable chapter quizzes, exam text sanitized, stacked fractions, choice format clean.`);

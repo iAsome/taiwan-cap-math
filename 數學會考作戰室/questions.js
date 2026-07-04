@@ -355,29 +355,42 @@ window.EXAM_ENGINE = (() => {
     return drillQuestionSignature(ensureTopicVariants(topic, quizId)[variantIndex]());
   }
 
-  function generateTopicDrill(quizId, topicId, seed, count = 2, excludeTexts = []) {
+  function generateTopicDrill(quizId, topicId, seed, count = 1, excludeTexts = []) {
     const topic = taxonomyTopics(quizId).find(item => item.id === topicId);
     if (!topic) throw new Error(`找不到題型 ${quizId}/${topicId}`);
     const chapter = chapterQuizzes.find(item => item.id === quizId);
+    const bankKey = `${quizId}/${topicId}`;
+    const presets = window.QUIZ_VARIANT_BANK?.[bankKey];
     const excluded = new Set(excludeTexts.map(text => String(text)));
-    const variantOrder = seedToVariantIndices(seed, VARIANTS_PER_TOPIC);
+    const tryOrder = shuffled(rngFromSeed(`drill-order-${seed}`), Array.from({ length: VARIANTS_PER_TOPIC }, (_, index) => index));
     const picked = [];
     for (let slot = 0; slot < count; slot++) {
       let question = null;
-      for (let attempt = 0; attempt < VARIANTS_PER_TOPIC; attempt++) {
-        const vi = variantOrder[(slot + attempt) % VARIANTS_PER_TOPIC];
-        const wrapped = {
-          quizId,
-          topicId: topic.id,
-          title: topic.title,
-          section: topic.section,
-          template: topic.template,
-        variants: topic.variants,
-          variants: topic.variants,
-          unitIds: chapter ? [...chapter.unitIds] : [1],
-          unitId: chapter?.unitIds[0] || 1
-        };
-        const candidate = questionFromTopic(null, wrapped, slot, "procedure", vi);
+      for (let attempt = 0; attempt < VARIANTS_PER_TOPIC * 2; attempt++) {
+        const vi = tryOrder[attempt % VARIANTS_PER_TOPIC];
+        const candidate = presets
+          ? MATH_TEXT_SANITIZE.sanitizeQuestion({
+            ...presets[vi],
+            variantIndex: vi,
+            isDrill: true,
+            ability: "procedure",
+            taxonomySection: topic.section,
+            taxonomyTopic: topic.title,
+            taxonomyTopicId: topic.id,
+            taxonomyQuizId: quizId,
+            taxonomyKey: bankKey,
+            officialOrder: slot + 1
+          })
+          : questionFromTopic(null, {
+            quizId,
+            topicId: topic.id,
+            title: topic.title,
+            section: topic.section,
+            template: topic.template,
+            variants: topic.variants,
+            unitIds: chapter ? [...chapter.unitIds] : [1],
+            unitId: chapter?.unitIds[0] || 1
+          }, slot, "procedure", vi);
         candidate.isDrill = true;
         const signature = drillQuestionSignature(candidate);
         if (excluded.has(candidate.text) || excluded.has(signature)) continue;
@@ -393,14 +406,15 @@ window.EXAM_ENGINE = (() => {
     return picked;
   }
 
-  function generateUnitDrill(unitId, seed, count = 2, level = 2, excludeTexts = []) {
+  function generateUnitDrill(unitId, seed, count = 1, level = 2, excludeTexts = []) {
     const excluded = new Set(excludeTexts.map(text => String(text)));
     const picked = [];
     for (let slot = 0; slot < count; slot++) {
       let question = null;
-      for (let attempt = 0; attempt < 20; attempt++) {
+      for (let attempt = 0; attempt < 60; attempt++) {
         const qr = rngFromSeed(`${seed}-${slot}-${attempt}-unit-drill`);
-        const candidate = makeQuizUnitQuestion(qr, unitId, level);
+        const attemptLevel = Math.max(1, Math.min(3, level + (attempt % 3) - 1));
+        const candidate = makeQuizUnitQuestion(qr, unitId, attemptLevel);
         candidate.taxonomyKey = `legacy/u${unitId}`;
         candidate.isDrill = true;
         const signature = drillQuestionSignature(candidate);
