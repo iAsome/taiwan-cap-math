@@ -437,6 +437,7 @@
   }
 
   function launchAssessment(assessment) {
+    if (window.DIAGRAM_ATTACH?.attachQuestions) assessment.questions = DIAGRAM_ATTACH.attachQuestions(assessment.questions, "history");
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;

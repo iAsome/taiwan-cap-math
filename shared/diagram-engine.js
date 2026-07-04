@@ -153,7 +153,47 @@ window.DIAGRAM_ENGINE = (() => {
     return svgWrap(`<line x1="${pad}" y1="50" x2="${w - pad}" y2="50" stroke="currentColor" stroke-width="2"/>${ev}`, w, h, caption);
   }
 
-  const renderers = { numberLine, coordinatePlane, triangle, parallelLines, boxPlot, treeDiagram, circle, barChart, solidPrism, lever, circuit, vtGraph, scaleMap, contourMap, crossSection, timeline };
+  function lineChart({ values = [2, 5, 3, 8], labels = ["1", "2", "3", "4"], caption = "折線圖", xLabel = "", yLabel = "" } = {}) {
+    const w = 360, h = 200, pad = 36;
+    const max = Math.max(...values, 1);
+    const sx = (i) => pad + (i / Math.max(values.length - 1, 1)) * (w - pad * 2);
+    const sy = v => h - pad - (v / max) * (h - pad * 2);
+    const path = values.map((v, i) => `${i ? "L" : "M"}${sx(i)},${sy(v)}`).join(" ");
+    const dots = values.map((v, i) => `<circle cx="${sx(i)}" cy="${sy(v)}" r="4" fill="#2a7f62"/><text x="${sx(i)}" y="${h - pad + 14}" text-anchor="middle" font-size="10">${esc(labels[i] ?? i + 1)}</text>`).join("");
+    return svgWrap(`<line x1="${pad}" y1="${h - pad}" x2="${w - pad}" y2="${h - pad}" stroke="currentColor" stroke-width="2"/><line x1="${pad}" y1="${pad}" x2="${pad}" y2="${h - pad}" stroke="currentColor" stroke-width="2"/>${xLabel ? `<text x="${w - 30}" y="${h - pad + 16}" font-size="10">${esc(xLabel)}</text>` : ""}${yLabel ? `<text x="8" y="${pad + 8}" font-size="10">${esc(yLabel)}</text>` : ""}<path d="${path}" fill="none" stroke="#2a7f62" stroke-width="2"/>${dots}`, w, h, caption);
+  }
+
+  function magneticField({ caption = "磁場示意", poleN = "N", poleS = "S", forceLabel = "F" } = {}) {
+    const w = 360, h = 140;
+    return svgWrap(`<rect x="30" y="30" width="300" height="80" rx="40" fill="none" stroke="currentColor" stroke-width="2"/><text x="50" y="55" font-size="12" font-weight="700">${esc(poleN)}</text><text x="280" y="55" font-size="12" font-weight="700">${esc(poleS)}</text><path d="M180,95 L180,115 L195,105 Z" fill="#e85d4c"/><text x="200" y="118" font-size="11">${esc(forceLabel)}</text>`, w, h, caption);
+  }
+
+  function tableDiagram({ caption = "表格關係", headers = ["A", "B"], rows = [["1", "2"], ["3", "4"]] } = {}) {
+    const w = 360, h = 40 + rows.length * 32;
+    const cols = headers.length;
+    const cw = 280 / cols;
+    let svg = `<rect x="40" y="20" width="${cw * cols}" height="28" fill="#e8f0ec" stroke="currentColor"/>`;
+    headers.forEach((h, i) => { svg += `<text x="${52 + i * cw}" y="38" font-size="11" font-weight="700">${esc(h)}</text>`; });
+    rows.forEach((row, ri) => {
+      const y = 48 + ri * 32;
+      svg += `<rect x="40" y="${y}" width="${cw * cols}" height="28" fill="none" stroke="currentColor"/>`;
+      row.forEach((cell, ci) => { svg += `<text x="${52 + ci * cw}" y="${y + 18}" font-size="10">${esc(cell)}</text>`; });
+    });
+    return svgWrap(svg, w, h, caption);
+  }
+
+  function cellDiagram({ caption = "細胞示意", label = "細胞" } = {}) {
+    const w = 240, h = 160;
+    return svgWrap(`<ellipse cx="120" cy="80" rx="90" ry="55" fill="#f4f7f5" stroke="currentColor" stroke-width="2"/><circle cx="120" cy="80" r="18" fill="#e8f0ec" stroke="currentColor"/><text x="108" y="84" font-size="10">核</text><text x="95" y="145" font-size="11">${esc(label)}</text>`, w, h, caption);
+  }
+
+  function foodWeb({ caption = "食物網", nodes = ["草", "兔", "狐"] } = {}) {
+    const w = 360, h = 140;
+    const n = nodes.slice(0, 3);
+    return svgWrap(`<text x="40" y="110" font-size="11">${esc(n[0] || "草")}</text><text x="160" y="60" font-size="11">${esc(n[1] || "兔")}</text><text x="280" y="30" font-size="11">${esc(n[2] || "狐")}</text><line x1="70" y1="100" x2="150" y2="70" stroke="currentColor"/><line x1="190" y1="55" x2="270" y2="40" stroke="currentColor"/><polygon points="155,65 165,65 160,75" fill="currentColor"/>`, w, h, caption);
+  }
+
+  const renderers = { numberLine, coordinatePlane, triangle, parallelLines, boxPlot, treeDiagram, circle, barChart, lineChart, solidPrism, lever, circuit, vtGraph, scaleMap, contourMap, crossSection, timeline, magneticField, tableDiagram, cellDiagram, foodWeb };
 
   function diagramKindForTopic(title = "", section = "") {
     const text = `${title}${section}`;
@@ -164,12 +204,13 @@ window.DIAGRAM_ENGINE = (() => {
     if (/圓|弧|弦|切線|半徑/.test(text)) return { kind: "circle", caption: "圓形" };
     if (/盒狀|四分位|中位數|統計/.test(text)) return { kind: "boxPlot", caption: "盒狀圖" };
     if (/機率|樹狀|組合/.test(text)) return { kind: "treeDiagram", caption: "樹狀圖" };
-    if (/長條|折線|圖表|資料/.test(text)) return { kind: "barChart", caption: "長條圖" };
+    if (/長條|折線|圖表|資料/.test(text)) return { kind: /折線/.test(text) ? "lineChart" : "barChart", caption: "長條圖" };
     if (/立體|角柱|角錐|表面積|體積|空間/.test(text)) return { kind: "solidPrism", caption: "立體圖形" };
     if (/比例尺|地圖|圖上距離/.test(text)) return { kind: "scaleMap", caption: "比例尺" };
     if (/等高線|坡度|地形/.test(text)) return { kind: "contourMap", caption: "等高線" };
     if (/地層|板塊|斷層|岩石/.test(text)) return { kind: "crossSection", caption: "地層剖面" };
     if (/電路|串聯|並聯|燈泡|電阻/.test(text)) return { kind: "circuit", caption: "電路" };
+    if (/磁場|磁力|N極|S極/.test(text)) return { kind: "magneticField", caption: "磁場" };
     if (/蹺蹺板|力矩|杠杆|槓桿/.test(text)) return { kind: "lever", caption: "蹺蹺板" };
     if (/v-t|速度.*時間|vt圖/.test(text)) return { kind: "vtGraph", caption: "v-t 圖" };
     if (/時間|年代|時期|歷史/.test(text)) return { kind: "timeline", caption: "時間軸" };
