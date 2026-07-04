@@ -235,8 +235,14 @@
   function renderLectureArticle(key) {
     const lecture = lectureTaxonomy[key];
     if (!lecture) return `<p class="unit-empty">找不到講義 ${esc(key)}</p>`;
+    const topicDiagram = window.DIAGRAM_ATTACH?.attachDiagramText(lecture.title, "math", {
+      taxonomyKey: key,
+      topicTitle: lecture.title,
+      sectionTitle: lecture.section
+    }) || "";
     return `<article class="lecture-topic-card" id="lecture-${esc(key.replace(/\//g, "-"))}">
       <header><span class="lecture-chapter">${esc(lecture.chapter)}</span><h3>${esc(lecture.title)}</h3><small>${esc(lecture.section)}</small></header>
+      ${topicDiagram}
       <div class="lecture-blocks">${lecture.blocks.map(renderLectureBlock).join("")}</div>
       <footer class="lecture-quiz-link"><a href="?quiz=${esc(lecture.quizId)}&seed=">小考練習 ${esc(lecture.quizId)} →</a></footer>
     </article>`;

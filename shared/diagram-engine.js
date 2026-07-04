@@ -250,6 +250,30 @@ window.DIAGRAM_ENGINE = (() => {
     return svgWrap(`<line x1="${pad}" y1="${h - pad}" x2="${w - pad}" y2="${h - pad}" stroke="currentColor" stroke-width="2"/>${bars}`, w, h, caption);
   }
 
+  function angleDiagram({ angleLabel = "θ", caption = "角" } = {}) {
+    const w = 240, h = 170, ox = 55, oy = 130, r = 74, deg = Number.parseFloat(angleLabel) || 48;
+    const a = Math.min(150, Math.max(20, deg)) * Math.PI / 180;
+    const x2 = ox + r * Math.cos(a), y2 = oy - r * Math.sin(a);
+    return svgWrap(
+      `<line x1="${ox}" y1="${oy}" x2="${ox + 135}" y2="${oy}" stroke="currentColor" stroke-width="2"/>` +
+      `<line x1="${ox}" y1="${oy}" x2="${x2}" y2="${y2}" stroke="currentColor" stroke-width="2"/>` +
+      `<path d="M${ox + 34},${oy} A34,34 0 0 0 ${ox + 34 * Math.cos(a)},${oy - 34 * Math.sin(a)}" fill="none" stroke="#e85d4c" stroke-width="1.6"/>` +
+      `<circle cx="${ox}" cy="${oy}" r="3" fill="currentColor"/><text x="${ox + 42}" y="${oy - 13}" font-size="11" font-weight="700" fill="#e85d4c">${esc(angleLabel)}</text>`,
+      w, h, caption);
+  }
+
+  function quadrilateral({ shape = "parallelogram", caption = "四邊形" } = {}) {
+    const w = 270, h = 185;
+    const pts = shape === "trapezoid"
+      ? [[70, 45], [200, 45], [230, 135], [40, 135]]
+      : shape === "rectangle"
+        ? [[55, 45], [215, 45], [215, 135], [55, 135]]
+        : [[85, 45], [225, 45], [185, 135], [45, 135]];
+    const p = pts.map(pair => pair.join(",")).join(" ");
+    const labels = ["A", "B", "C", "D"].map((label, i) => `<text x="${pts[i][0] + (i < 2 ? -10 : 6)}" y="${pts[i][1] + (i % 3 === 0 ? -8 : 16)}" font-size="11" font-weight="700">${label}</text>`).join("");
+    return svgWrap(`<polygon points="${p}" fill="none" stroke="currentColor" stroke-width="2"/>${labels}`, w, h, caption);
+  }
+
   // 長方體線圖，被遮的三稜以虛線表示
   function solidPrism({ caption = "角柱示意", heightLabel = "h", baseLabel = "a" } = {}) {
     const w = 240, h = 180;
@@ -365,7 +389,7 @@ window.DIAGRAM_ENGINE = (() => {
     return svgWrap(`<text x="40" y="110" font-size="11">${esc(n[0] || "草")}</text><text x="160" y="60" font-size="11">${esc(n[1] || "兔")}</text><text x="280" y="30" font-size="11">${esc(n[2] || "狐")}</text><line x1="70" y1="100" x2="150" y2="70" stroke="currentColor"/><line x1="190" y1="55" x2="270" y2="40" stroke="currentColor"/><polygon points="155,65 165,65 160,75" fill="currentColor"/>`, w, h, caption);
   }
 
-  const renderers = { numberLine, coordinatePlane, triangle, parallelLines, boxPlot, treeDiagram, circle, cone, cylinder, pyramid, sphere, sector, parabola, pieChart, histogram, threeView, barChart, lineChart, solidPrism, lever, circuit, vtGraph, scaleMap, contourMap, crossSection, timeline, magneticField, tableDiagram, cellDiagram, foodWeb };
+  const renderers = { numberLine, coordinatePlane, triangle, parallelLines, boxPlot, treeDiagram, circle, cone, cylinder, pyramid, sphere, sector, parabola, pieChart, histogram, threeView, barChart, lineChart, angleDiagram, quadrilateral, solidPrism, lever, circuit, vtGraph, scaleMap, contourMap, crossSection, timeline, magneticField, tableDiagram, cellDiagram, foodWeb };
 
   function diagramKindForTopic(title = "", section = "") {
     const text = `${title}${section}`;

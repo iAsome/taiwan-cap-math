@@ -21,6 +21,29 @@ const SUBJECTS = [
 ];
 
 // 數學 kind 對照表：題文命中 regex 時，spec.kind 必須是課本正確圖形（specific-first，取第一個命中）
+const MATH_KEY_KIND_RULES = [
+  [/number-line|absolute|opposite-and-absolute|opposite-number|signed-number|number-classification|addition|subtraction|multiplication-division|operation|integer-arithmetic|distributive|commutative|arithmetic-application|distance-and-midpoint|absolute-difference|inequality.*(number-line|graph)|linear-inequality/, ["numberLine"]],
+  [/view|three-views|draw-three|direction-views|three-view/, ["threeView"]],
+  [/quadratic|vertex|opening|axis-of-symmetry|graph-translation|graph-key-features|horizontal-line-intersection|max-min|x-intercept|given-max-min/, ["parabola"]],
+  [/coordinate|point-coordinates|point-translation|coincident-points|point-position|find-symmetric-point|line-equation-application|distance-to-axes|point-and-axes|polygon-area-from-points|linear-equation-graph|linear-graph|line-through|point-on-line|line-axis|find-line|two-lines|system-graph|quadrant|function-graph|linear-function|linear-from|coordinate-distance|coordinate-point-symmetry|variable|function-concept|function-value|function-type|independent-dependent|intersection-/, ["coordinatePlane"]],
+  [/pie-chart/, ["pieChart"]],
+  [/histogram-frequency-polyline/, ["histogram", "lineChart"]],
+  [/line-chart|cumulative-frequency-polyline/, ["lineChart"]],
+  [/contingency.*table|frequency-table|cumulative-frequency-tables/, ["tableDiagram"]],
+  [/histogram|frequency|statistics-from-chart|statistics-application|range-from-chart|cross-chart|mean|median|mode|identify-statistic/, ["histogram", "tableDiagram"]],
+  [/boxplot|quartile|range-iqr/, ["boxPlot"]],
+  [/tree-diagram|probability/, ["treeDiagram"]],
+  [/arc-length|sector/, ["sector"]],
+  [/circle|chord|inscribed|semicircle|arc|radius/, ["circle"]],
+  [/rotation-sweep/, ["sector"]],
+  [/parallel-lines|parallel-perpendicular|transversal|parallel-proportional|two-parallels|parallel-test|zigzag|paper-folding-parallels/, ["parallelLines"]],
+  [/parallelogram|rectangle|trapezoid|quadrilateral|special-quad|polygon-correspondence|rhombus|kite|square|diagonal/, ["quadrilateral"]],
+  [/angle|perpendicular$|vertical-angles|reflection|paper-folding-angle|figure-eight|y-shape|polygon-angle|regular-polygon-angle/, ["angleDiagram"]],
+  [/tangent/, ["circle"]],
+  [/triangle|pythagorean|congruence|similar|right-triangle|altitude|perpendicular-bisector|angle-bisector|point-to-line|line-symmetric|polygon-diagonals|symmetric-angle|symmetric-segment|geometry-proof|circumcenter|incenter|isosceles|equilateral|side-length-range|perimeter-from-range|midsegment|equal-height|life-measurement|special-right-ratio|centroid|special-.*centers|construction-geometric|compass-straightedge/, ["triangle"]],
+  [/prism|cylinder|pyramid|cone|line-plane|line-line|plane-plane|net-reading|space|volume|surface/, ["solidPrism", "cylinder", "cone", "pyramid"]]
+];
+
 const MATH_KIND_RULES = [
   [/三視圖|俯視圖|正視圖|側視圖/, ["threeView"]],
   [/圓錐/, ["cone"]],
@@ -34,6 +57,17 @@ const MATH_KIND_RULES = [
 ];
 
 function assertMathKind(text, spec, key, gaps) {
+  const topicId = String(key || "").split("/")[1] || "";
+  for (const [re, kinds] of MATH_KEY_KIND_RULES) {
+    if (re.test(topicId)) {
+      if (!kinds.includes(spec?.kind)) {
+        gaps.push({ subject: "math", key, reason: `kind-mismatch(${kinds[0]}≠${spec?.kind})`, text: text.slice(0, 72) });
+        return false;
+      }
+      return true;
+    }
+  }
+  if (String(key || "").includes("/")) return true;
   for (const [re, kinds] of MATH_KIND_RULES) {
     if (re.test(text)) {
       if (!kinds.includes(spec?.kind)) {

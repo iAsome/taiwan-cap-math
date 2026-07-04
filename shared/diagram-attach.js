@@ -26,10 +26,13 @@ window.DIAGRAM_ATTACH = (() => {
     const table = window.DIAGRAM_OVERRIDES?.[subject];
     if (!table) return null;
     const key = question.taxonomyKey || question.id;
-    if (key && table[key]) return table[key];
+    const resolve = entry => typeof entry === "function" ? entry(question) : entry;
+    if (key && table[key]) return resolve(table[key]);
+    const byKey = table.__byKey && resolve(table.__byKey);
+    if (byKey?.kind) return byKey;
     const infer = window.DIAGRAM_INFER;
     const hash = infer?.stripFrac?.(question.text || "")?.slice(0, 80);
-    return hash && table[hash] ? table[hash] : null;
+    return hash && table[hash] ? resolve(table[hash]) : null;
   }
 
   function attachDiagram(question, subject) {
@@ -64,7 +67,13 @@ window.DIAGRAM_ATTACH = (() => {
   function attachDiagramText(text, subject, extraCtx = {}) {
     const engine = window.DIAGRAM_ENGINE;
     if (!engine) return "";
-    const explicitSpec = extraCtx.diagramSpec || extraCtx.spec;
+    const overrideSpec = loadOverride(subject, {
+      text,
+      taxonomyKey: extraCtx.taxonomyKey,
+      taxonomyTopic: extraCtx.topicTitle,
+      taxonomySection: extraCtx.sectionTitle
+    });
+    const explicitSpec = extraCtx.diagramSpec || extraCtx.spec || overrideSpec;
     if (subject === "math") {
       // ponytail: lecture examples get no guessed diagrams; add verified specs only when the figure matches the exact text.
       return explicitSpec?.kind && explicitSpec.verified === true ? engine.renderDiagram(explicitSpec) : "";
