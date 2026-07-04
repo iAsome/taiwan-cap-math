@@ -475,7 +475,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   function renderExam() {
     if (!state.exam) return;
     const difficultyLabel = ["", "基礎", "核心", "進階", "整合", "高鑑別"];
-    const abilityLabel = { concept: "概念理解", procedure: "程序執行", application: "解題應用", analysis: "分析思考" };
+    const abilityLabel = { concept: "概念理解", procedure: "公式運算", application: "解題應用", analysis: "分析思考" };
     const qHtml = state.exam.questions.map((q, index) => {
       const unit = units.find(item => item.id === q.unitId);
       const choices = `<div class="choices">${q.choices.map((choice, ci) => {

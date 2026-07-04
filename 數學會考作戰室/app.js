@@ -375,10 +375,10 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       Object.entries(official[year].abilities).forEach(([key, value]) => acc[key] = (acc[key] || 0) + value);
       return acc;
     }, {});
-    const abilityLabels = { concept: "概念／知識理解", procedure: "程序執行", application: "解題應用", analysis: "分析思考" };
+    const abilityLabels = { concept: "概念／知識理解", procedure: "公式運算", application: "解題應用", analysis: "分析思考" };
     const abilityMax = Math.max(...Object.values(abilityTotals));
     $("#abilityBars").innerHTML = Object.entries(abilityLabels).map(([key, label]) => `<div class="bar-row"><span>${label}</span><div><i style="--value:${abilityTotals[key] / abilityMax * 100}%"></i></div><b>${abilityTotals[key]}</b></div>`).join("");
-    $("#officialStructureTable").innerHTML = `<table class="mini-table"><thead><tr><th>年度</th><th>結構</th><th>概念</th><th>程序</th><th>應用</th><th>分析</th></tr></thead><tbody>${years.map(year => `<tr><td>${year}</td><td>${official[year].mc}＋${official[year].cr}</td><td>${official[year].abilities.concept}</td><td>${official[year].abilities.procedure}</td><td>${official[year].abilities.application}</td><td>${official[year].abilities.analysis}</td></tr>`).join("")}</tbody></table>`;
+    $("#officialStructureTable").innerHTML = `<table class="mini-table"><thead><tr><th>年度</th><th>結構</th><th>概念</th><th>公式運算</th><th>應用</th><th>分析</th></tr></thead><tbody>${years.map(year => `<tr><td>${year}</td><td>${official[year].mc}＋${official[year].cr}</td><td>${official[year].abilities.concept}</td><td>${official[year].abilities.procedure}</td><td>${official[year].abilities.application}</td><td>${official[year].abilities.analysis}</td></tr>`).join("")}</tbody></table>`;
 
     const domainCounts = {};
     const unitYearCounts = {};
@@ -418,7 +418,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
 
     $("#yearLedger").innerHTML = years.slice().reverse().map((year, index) => {
       const info = official[year];
-      return `<details ${index === 0 ? "open" : ""}><summary><strong>${year}</strong><span>${info.curriculum}｜${info.mc} 題選擇＋${info.cr} 題非選｜80 分鐘</span><b>展開逐題編碼 ＋</b></summary><div class="ledger-body"><div class="ledger-ability"><span>概念 ${info.abilities.concept}</span><span>程序 ${info.abilities.procedure}</span><span>應用 ${info.abilities.application}</span><span>分析 ${info.abilities.analysis}</span></div><div class="ledger-questions">${primary[year].map((unitId, i) => {
+      return `<details ${index === 0 ? "open" : ""}><summary><strong>${year}</strong><span>${info.curriculum}｜${info.mc} 題選擇＋${info.cr} 題非選｜80 分鐘</span><b>展開逐題編碼 ＋</b></summary><div class="ledger-body"><div class="ledger-ability"><span>概念 ${info.abilities.concept}</span><span>公式運算 ${info.abilities.procedure}</span><span>應用 ${info.abilities.application}</span><span>分析 ${info.abilities.analysis}</span></div><div class="ledger-questions">${primary[year].map((unitId, i) => {
         const isCr = i >= info.mc;
         const number = isCr ? `非${i - info.mc + 1}` : i + 1;
         return `<article class="ledger-item ${isCr ? "cr" : ""}"><b>${number}</b><span>${esc(units[unitId - 1].title)}<small>${esc(capAnalysis.domainByUnit[unitId])}</small></span></article>`;
@@ -429,7 +429,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const domainText = Object.entries(bp.domainTargets).map(([name, range]) => `${name} ${range[0]}–${range[1]}`).join("、");
     $("#blueprintChecks").innerHTML = [
       ["✓ 題本結構", `${bp.mc} 選擇＋${bp.cr} 非選，${bp.minutes} 分鐘`],
-      ["✓ 官方能力層次", `概念 6、程序 4、應用 12、分析 5`],
+      ["✓ 官方能力層次", `概念 6、公式運算 4、應用 12、分析 5`],
       ["✓ 六大主題區間", domainText],
       ["✓ 呈現形式", `閱讀題組 ${bp.presentation.readingSetItems[0]}–${bp.presentation.readingSetItems[1]} 題；附圖幾何 ${bp.presentation.geometryItems[0]}–${bp.presentation.geometryItems[1]} 題`],
       ["✓ 題型排序", "選擇題依卷別種子打亂；閱讀題組保持連續；非選仍在第二部分"],
@@ -722,7 +722,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ? mcWrongIndexes(reviewRecord)
       : state.exam.questions.map((_, index) => index);
     const difficultyLabel = ["", "基礎", "核心", "進階", "整合", "高鑑別"];
-    const abilityLabel = { concept: "概念理解", procedure: "程序執行", application: "解題應用", analysis: "分析思考" };
+    const abilityLabel = { concept: "概念理解", procedure: "公式運算", application: "解題應用", analysis: "分析思考" };
     const formulaSummary = wrongOnly && reviewRecord ? [...new Set(visibleIndexes.map(index => state.exam.questions[index].formula).filter(Boolean))] : [];
     const qHtml = visibleIndexes.map((index, displayIndex) => {
       const q = state.exam.questions[index];
