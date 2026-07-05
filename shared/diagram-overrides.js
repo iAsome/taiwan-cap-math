@@ -15,6 +15,47 @@ window.DIAGRAM_OVERRIDES.math = (() => {
   const answerText = q => String((Array.isArray(q.choices) ? q.choices[q.answer] : "") || q.answer || "");
   const round = n => Math.round(Number(n) * 1000) / 1000;
   const coeff = token => token === "" || token === "+" ? 1 : token === "-" ? -1 : Number(token);
+  const textOf = q => [q.text, q.taxonomyTopic, q.taxonomySection, ...(q.choices || []), ...(q.steps || [])].filter(Boolean).join(" ");
+  const mark = (diagramPolicy, diagramReason, diagramRisk = []) => ({ diagramPolicy, diagramReason, diagramRisk });
+  const concreteFigure = q => {
+    const raw = clean(textOf(q));
+    return /根據圖|如圖|圖中|展開圖|直方圖|折線圖|圓形圖|盒狀圖|A\(|B\(|\(-?\d+(?:\.\d+)?\s*,\s*-?\d+(?:\.\d+)?\)|半徑|直徑|底面半徑|母線|斜率|截距|x\s*=|y\s*=|切線|OA\s*=|PA\s*=|PB|梯子長|腳距牆|兩股|短邊|斜邊\s*\d|邊長\s*\d|高\s*\d|資料\s*[-\d，、,\s]+中/.test(raw);
+  };
+  function policy(q) {
+    const id = topicId(q);
+    const raw = clean(textOf(q));
+    const risks = [];
+    if (/meaning/.test(id)) risks.push("meaning-not-mean");
+    if (/factor|multiple|prime|coprime|gcd|lcm|divisibility|standard-form/.test(id)) {
+      return mark("none", "數論/因倍數題沒有明確圖形資料，不顯示圖", risks.length ? risks : ["number-theory-no-figure"]);
+    }
+    if (/balance|transposition|parameter|distribution|plan-comparison|linear-equation-(concept|solution|application)|linear-system-(concept|solution|solution-concept)|word-problem|two-variable-expression|two-variable-equation-word|special-linear-system|elimination|substitution|system-.*(application|problem)/.test(id) && !/長方形|三角形|圓|半徑|直徑|坐標|直線|圖/.test(raw)) {
+      return mark("none", "方程式/代數文字題沒有明確圖形資料，不顯示圖", risks.length ? risks : ["equation-no-figure"]);
+    }
+    if (/proportion|ratio|scale/.test(id) && !/圖|坐標|直線|三角形|長度|邊長|地圖|比例尺/.test(raw)) {
+      return mark("none", "比例算式/概念題沒有明確圖形資料，不顯示圖", risks.length ? risks : ["proportion-no-figure"]);
+    }
+    if (/inequality/.test(id) && !/graph|圖示|數線|範圍/.test(id + raw)) {
+      return mark("none", "不等式列式/代入判斷題沒有要求圖示，不顯示圖", risks.length ? risks : ["inequality-no-figure"]);
+    }
+    if (/polynomial|monomial|binomial/.test(id) && !/面積|長方形|正方形|圖/.test(raw)) {
+      return mark("none", "多項式計算題沒有圖形語境，不顯示圖", risks.length ? risks : ["polynomial-no-figure"]);
+    }
+    if (/sequence|series|geometric|arithmetic/.test(id) && !/圖|坐標|長度|三角形/.test(raw)) {
+      return mark("none", "數列/級數算式題沒有圖形語境，不顯示圖", risks.length ? risks : ["sequence-no-figure"]);
+    }
+    if (/(expression|equation|formula|solve|setup|evaluate|simplify)/.test(id) && !/(coordinate|graph|function|quadratic|area|perimeter|rectangle)/.test(id + raw) && !/直線|長方形|三角形|圓|半徑|直徑/.test(raw)) {
+      return mark("none", "純代數代入/化簡題沒有圖形語境，不顯示圖", risks.length ? risks : ["algebra-no-figure"]);
+    }
+    if (/concept|meaning|definition|vocabulary|identification|test|判別|意義|定義|性質|概念|何者|什麼|關係/.test(id + raw) && !concreteFigure(q)) {
+      return mark("none", "概念/定義/判別題且題幹沒有具體圖形資料，不顯示圖以避免亂配", risks.length ? risks : ["concept-no-figure"]);
+    }
+    if (/polynomial|factor|exponent|scientific-notation|sqrt|perfect-square|complete-square|completing-square/.test(id) && !concreteFigure(q)) {
+      return mark("none", "純代數或公式辨識題沒有明確圖形資料，不顯示圖", risks.length ? risks : ["algebra-no-figure"]);
+    }
+    if (concreteFigure(q)) return mark("required", "題幹含明確圖形或圖表資料，必須產生專屬圖", risks);
+    return mark("none", "題幹缺少可唯一繪製的圖形資料，不顯示圖", risks.length ? risks : ["no-concrete-figure"]);
+  }
 
   function firstDegree(text) {
     const m = clean(text).match(/(\d+(?:\.\d+)?)\s*(?:°|度|簞)/);
@@ -165,8 +206,11 @@ window.DIAGRAM_OVERRIDES.math = (() => {
 
   function quadrilateral(q) {
     const id = topicId(q);
-    const shape = /trapezoid/.test(id) ? "trapezoid" : /rectangle/.test(id) ? "rectangle" : "parallelogram";
-    return ok({ kind: "quadrilateral", shape, caption: cap(q, "四邊形") });
+    const raw = clean(q.text);
+    const len = raw.match(/長\s*x\s*=\s*(\d+(?:\.\d+)?)/)?.[1] || raw.match(/長\s*(\d+(?:\.\d+)?)/)?.[1];
+    const wid = raw.match(/寬\s*(\d+(?:\.\d+)?)/)?.[1];
+    const shape = /rhombus/.test(id) ? "rhombus" : /square/.test(id) ? "square" : /trapezoid/.test(id) ? "trapezoid" : /rectangle/.test(id) ? "rectangle" : "parallelogram";
+    return ok({ kind: "quadrilateral", shape: /長方形/.test(raw) ? "rectangle" : shape, sideLabels: len || wid ? [{ edge: "AB", label: len || "長" }, { edge: "BC", label: wid || "寬" }] : [], diagonals: /diagonal|對角線|垂直/.test(`${id}${q.text || ""}${q.taxonomyTopic || ""}`), perpendicular: /perpendicular|垂直|rhombus|square/.test(`${id}${q.text || ""}${q.taxonomyTopic || ""}`), caption: cap(q, "四邊形") });
   }
 
   function circle(q) {
@@ -208,6 +252,10 @@ window.DIAGRAM_OVERRIDES.math = (() => {
   function solid(q) {
     const id = topicId(q);
     const raw = clean(q.text);
+    if (/net|展開圖/.test(`${id}${raw}${q.taxonomyTopic || ""}`)) {
+      const solid = /圓柱|cylinder/.test(`${raw}${id}${q.taxonomyTopic || ""}`) ? "cylinder" : /圓錐|cone/.test(`${raw}${id}${q.taxonomyTopic || ""}`) ? "cone" : "rectPrism";
+      return ok({ kind: "netDiagram", solid, caption: cap(q, "展開圖") });
+    }
     const r = raw.match(/底圓\s*r\s*[=＝]\s*(\d+(?:\.\d+)?)/)?.[1]
       || raw.match(/底面半徑\s*(\d+(?:\.\d+)?)/)?.[1]
       || raw.match(/\br\s*[=＝]\s*(\d+(?:\.\d+)?)/)?.[1]
@@ -225,6 +273,7 @@ window.DIAGRAM_OVERRIDES.math = (() => {
     const key = String(q.taxonomyKey || "");
     const id = topicId(q);
     if (!key) return null;
+    if (/長方形/.test(`${q.text || ""}${q.taxonomyTopic || ""}`)) return quadrilateral(q);
     if (/number-line|absolute|opposite-and-absolute|opposite-number|signed-number|number-classification|addition|subtraction|multiplication-division|operation|integer-arithmetic|distributive|commutative|arithmetic-application|distance-and-midpoint|absolute-difference|inequality.*(number-line|graph)|linear-inequality/.test(id)) return numberLine(q);
     if (/view|three-views|draw-three|direction-views|three-view/.test(id)) return ok({ kind: "threeView", solid: /圓柱/.test(`${q.text || ""}${q.taxonomyTopic || ""}`) ? "圓柱" : "長方體", front: "長方形", top: /圓柱/.test(`${q.text || ""}${q.taxonomyTopic || ""}`) ? "圓形" : "長方形", side: "長方形", caption: cap(q, "三視圖") });
     if (/quadratic|vertex|opening|axis-of-symmetry|graph-translation|graph-key-features|horizontal-line-intersection|max-min|x-intercept|given-max-min/.test(id)) return ok({ kind: "parabola", vertexLabel: "頂點", axisLabel: "對稱軸", caption: cap(q, "二次函數圖形") });
@@ -248,7 +297,7 @@ window.DIAGRAM_OVERRIDES.math = (() => {
     return null;
   }
 
-  return { ...old, __byKey: byKey };
+  return { ...old, __byKey: byKey, __policy: policy };
 })();
 
 window.DIAGRAM_OVERRIDES.chinese = window.DIAGRAM_OVERRIDES.chinese || {};

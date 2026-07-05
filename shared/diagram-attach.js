@@ -40,12 +40,15 @@ window.DIAGRAM_ATTACH = (() => {
     if (question.diagram && typeof question.diagram === "string" && question.diagram.trim()) return question;
     const engine = window.DIAGRAM_ENGINE;
     if (!engine) return question;
+    const policy = subject === "math" ? window.DIAGRAM_OVERRIDES?.math?.__policy?.(question) : null;
+    if (policy?.diagramPolicy === "none") return { ...question, ...policy, diagram: "", diagramSpec: null };
     const explicitSpec = question.diagramSpec || loadOverride(subject, question);
     if (subject === "math") {
       // ponytail: math figures must be teacher-verified; keyword inference created mismatched textbook-style diagrams.
-      if (!explicitSpec?.kind || explicitSpec.verified !== true) return question;
+      if (!explicitSpec?.kind || explicitSpec.verified !== true) return policy ? { ...question, ...policy } : question;
       return {
         ...question,
+        ...policy,
         diagramSpec: explicitSpec,
         diagram: engine.renderQuestionDiagram(explicitSpec)
       };
@@ -67,6 +70,13 @@ window.DIAGRAM_ATTACH = (() => {
   function attachDiagramText(text, subject, extraCtx = {}) {
     const engine = window.DIAGRAM_ENGINE;
     if (!engine) return "";
+    const policy = subject === "math" ? window.DIAGRAM_OVERRIDES?.math?.__policy?.({
+      text,
+      taxonomyKey: extraCtx.taxonomyKey,
+      taxonomyTopic: extraCtx.topicTitle,
+      taxonomySection: extraCtx.sectionTitle
+    }) : null;
+    if (policy?.diagramPolicy === "none") return "";
     const overrideSpec = loadOverride(subject, {
       text,
       taxonomyKey: extraCtx.taxonomyKey,

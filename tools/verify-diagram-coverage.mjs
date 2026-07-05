@@ -30,7 +30,7 @@ const MATH_KEY_KIND_RULES = [
   [/histogram-frequency-polyline/, ["histogram", "lineChart"]],
   [/line-chart|cumulative-frequency-polyline/, ["lineChart"]],
   [/contingency.*table|frequency-table|cumulative-frequency-tables/, ["tableDiagram"]],
-  [/histogram|frequency|statistics-from-chart|statistics-application|range-from-chart|cross-chart|mean|median|mode|identify-statistic/, ["histogram", "tableDiagram"]],
+  [/histogram|frequency|statistics-from-chart|statistics-application|range-from-chart|cross-chart|mean-median-mode|median|mode|identify-statistic/, ["histogram", "tableDiagram"]],
   [/boxplot|quartile|range-iqr/, ["boxPlot"]],
   [/tree-diagram|probability/, ["treeDiagram"]],
   [/arc-length|sector/, ["sector"]],
@@ -38,10 +38,12 @@ const MATH_KEY_KIND_RULES = [
   [/rotation-sweep/, ["sector"]],
   [/parallel-lines|parallel-perpendicular|transversal|parallel-proportional|two-parallels|parallel-test|zigzag|paper-folding-parallels/, ["parallelLines"]],
   [/parallelogram|rectangle|trapezoid|quadrilateral|special-quad|polygon-correspondence|rhombus|kite|square|diagonal/, ["quadrilateral"]],
-  [/(^|-)angle($|-)|perpendicular$|vertical-angles|reflection|paper-folding-angle|figure-eight|y-shape|polygon-angle|regular-polygon-angle/, ["angleDiagram"]],
+  [/paper-folding-angle/, ["quadrilateral", "angleDiagram"]],
+  [/(^|-)angle($|-)|perpendicular$|vertical-angles|reflection|figure-eight|y-shape|polygon-angle|regular-polygon-angle/, ["angleDiagram"]],
   [/tangent/, ["circle"]],
   [/triangle|pythagorean|congruence|similar|right-triangle|altitude|perpendicular-bisector|angle-bisector|point-to-line|line-symmetric|polygon-diagonals|symmetric-angle|symmetric-segment|geometry-proof|circumcenter|incenter|isosceles|equilateral|side-length-range|perimeter-from-range|midsegment|equal-height|life-measurement|special-right-ratio|centroid|special-.*centers|construction-geometric|compass-straightedge/, ["triangle"]],
-  [/prism|cylinder|pyramid|cone|line-plane|line-line|plane-plane|net-reading|space|volume|surface/, ["solidPrism", "cylinder", "cone", "pyramid"]]
+  [/net-/, ["netDiagram"]],
+  [/prism|cylinder|pyramid|cone|line-plane|line-line|plane-plane|space|volume|surface/, ["solidPrism", "cylinder", "cone", "pyramid"]]
 ];
 
 const MATH_KIND_RULES = [
@@ -62,6 +64,10 @@ function expectedMathKinds(key) {
     if (re.test(topicId)) return kinds;
   }
   return null;
+}
+
+function diagramPolicy(stack, q) {
+  return stack.DIAGRAM_OVERRIDES?.math?.__policy?.(q) || { diagramPolicy: expectedMathKinds(q.taxonomyKey || "") ? "required" : "none" };
 }
 
 function assertMathKind(text, spec, key, gaps) {
@@ -144,14 +150,20 @@ function checkQuestion(stack, q, code, gaps, stats) {
   const ctx = ctxFrom(q, code);
   if (code === "math") {
     const expected = expectedMathKinds(q.taxonomyKey || "");
+    const policy = diagramPolicy(stack, q);
     if ((q.diagram || q.diagramSpec) && q.diagramSpec?.verified !== true) {
       gaps.push({ subject: code, key: q.taxonomyKey || q.text?.slice(0, 40), reason: "unverified-question-diagram", text: q.text?.slice(0, 72) });
       return;
     }
     const out = stack.DIAGRAM_ATTACH.attachDiagram({ ...q }, code);
-    if (expected) stats.needs++;
+    if (policy.diagramPolicy === "none") {
+      if (out.diagram?.includes("<svg")) gaps.push({ subject: code, key: q.taxonomyKey || q.text?.slice(0, 40), reason: "unneeded-diagram", text: q.text?.slice(0, 72), policy });
+      else stats.ok++;
+      return;
+    }
+    if (policy.diagramPolicy === "required" || expected) stats.needs++;
     if (!out.diagram?.includes("<svg")) {
-      if (expected) gaps.push({ subject: code, key: q.taxonomyKey || q.text?.slice(0, 40), reason: "missing-math-diagram", text: q.text?.slice(0, 72) });
+      gaps.push({ subject: code, key: q.taxonomyKey || q.text?.slice(0, 40), reason: "missing-math-diagram", text: q.text?.slice(0, 72), policy });
       return;
     }
     if (!expected) stats.needs++;
@@ -225,15 +237,20 @@ for (const sub of SUBJECTS) {
     if (fs.existsSync(lecPath)) {
       const lecWin = loadSubject(base, sub.data, ["lecture-taxonomy.js"], stack);
       for (const [key, lecture] of Object.entries(lecWin.LECTURE_TAXONOMY || {})) {
-        if (expectedMathKinds(key)) {
-          stats.checked++;
+        const lectureCtx = { text: lecture.title, taxonomyKey: key, taxonomyTopic: lecture.title, taxonomySection: lecture.section };
+        const policy = diagramPolicy(stack, lectureCtx);
+        stats.checked++;
+        const html = stack.DIAGRAM_ATTACH.attachDiagramText(lecture.title, "math", {
+          taxonomyKey: key,
+          topicTitle: lecture.title,
+          sectionTitle: lecture.section
+        });
+        if (policy.diagramPolicy === "none") {
+          if (html.includes("<svg")) gaps.push({ subject: "math", key: `lecture-topic:${key}`, reason: "unneeded-lecture-topic-diagram", text: lecture.title, policy });
+          else stats.ok++;
+        } else {
           stats.needs++;
-          const html = stack.DIAGRAM_ATTACH.attachDiagramText(lecture.title, "math", {
-            taxonomyKey: key,
-            topicTitle: lecture.title,
-            sectionTitle: lecture.section
-          });
-          if (!html.includes("<svg")) gaps.push({ subject: "math", key: `lecture-topic:${key}`, reason: "missing-lecture-topic-diagram", text: lecture.title });
+          if (!html.includes("<svg")) gaps.push({ subject: "math", key: `lecture-topic:${key}`, reason: "missing-lecture-topic-diagram", text: lecture.title, policy });
           else stats.ok++;
         }
         for (const block of lecture.blocks?.filter(b => b.type === "diagram") || []) {

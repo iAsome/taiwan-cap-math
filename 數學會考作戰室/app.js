@@ -742,13 +742,15 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const difficultyLabel = ["", "基礎", "核心", "進階", "整合", "高鑑別"];
     const abilityLabel = { concept: "概念理解", procedure: "公式運算", application: "解題應用", analysis: "分析思考" };
     const formulaSummary = wrongOnly && reviewRecord ? [...new Set(visibleIndexes.map(index => state.exam.questions[index].formula).filter(Boolean))] : [];
-    const qHtml = visibleIndexes.map((index, displayIndex) => {
+    const renderQuestionChoices = (q, index) => q.type === "mc" ? `<div class="choices">${q.choices.map((choice, ci) => {
+      const attrs = EXAM_CHOICE_UI.choiceAttrs({ submitted: state.submitted, selected: state.answers[index] === ci, isAnswer: ci === q.answer });
+      return EXAM_CHOICE_UI.choiceButton({ letter: letters[ci], textHtml: mathText(choice), attrs, dataAttr: `data-choice="${index}:${ci}"`, disabled: state.submitted });
+    }).join("")}</div>` : `<div class="constructed"><textarea data-cr="${index}" placeholder="請寫下完整解題過程與結論……" ${state.submitted ? "disabled" : ""}>${esc(state.answers[index])}</textarea><p class="writing-guide">建議包含：設未知數／列關係或性質／推導計算／含單位的結論</p></div>`;
+    const canShareFigure = (a, b) => a?.type === "mc" && b?.type === "mc" && a.text === b.text && a.diagram && a.diagram === b.diagram && !a.passageId && !b.passageId;
+    const renderSingleQuestion = (index, displayIndex) => {
       const q = state.exam.questions[index];
       const unit = units.find(item => item.id === q.unitId) || { grade: 7, title: "數學" };
-      const choices = q.type === "mc" ? `<div class="choices">${q.choices.map((choice, ci) => {
-        const attrs = EXAM_CHOICE_UI.choiceAttrs({ submitted: state.submitted, selected: state.answers[index] === ci, isAnswer: ci === q.answer });
-        return EXAM_CHOICE_UI.choiceButton({ letter: letters[ci], textHtml: mathText(choice), attrs, dataAttr: `data-choice="${index}:${ci}"`, disabled: state.submitted });
-      }).join("")}</div>` : `<div class="constructed"><textarea data-cr="${index}" placeholder="請寫下完整解題過程與結論……" ${state.submitted ? "disabled" : ""}>${esc(state.answers[index])}</textarea><p class="writing-guide">建議包含：設未知數／列關係或性質／推導計算／含單位的結論</p></div>`;
+      const choices = renderQuestionChoices(q, index);
       const passage = q.passageId && (displayIndex === 0 || state.exam.questions[visibleIndexes[displayIndex - 1]].passageId !== q.passageId) ? `<aside class="reading-passage"><p class="eyebrow">閱讀選文｜回答第 ${displayIndex + 1}～${displayIndex + visibleIndexes.filter(itemIndex => state.exam.questions[itemIndex].passageId === q.passageId).length} 題</p><h3>${esc(q.passageTitle || "自行車訓練器的速率估計")}</h3><p>${mathText(q.passage)}</p></aside>` : "";
       const showDrill = state.submitted && reviewRecord && (wrongOnly || reviewMode === "full") && q.type === "mc";
       const drillAction = showDrill ? `<div class="question-actions"><button type="button" class="secondary compact" data-start-drill="${index}">${reviewRecord.corrections?.[index]?.passed ? "再練同題型" : "訂正觀念"}</button></div>` : "";
@@ -756,7 +758,29 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
         <div class="question-head"><span class="question-number">${displayIndex + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span>${q.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(q.taxonomyTopic)}</span>` : ""}${q.quizLevel ? `<span class="question-tag level">${esc(q.quizLevel)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span>${correctionBadgeHtml(reviewRecord, index)}</div>
         <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${state.submitted ? solutionHtml(q, index) : ""}${drillAction}${drillHtml(index)}
       </article>`;
-    }).join("");
+    };
+    const renderSharedFigureGroup = (group, displayStart) => {
+      const first = state.exam.questions[group[0]];
+      const unit = units.find(item => item.id === first.unitId) || { grade: 7, title: "數學" };
+      const sub = group.map((index, offset) => {
+        const q = state.exam.questions[index];
+        const showDrill = state.submitted && reviewRecord && (wrongOnly || reviewMode === "full");
+        const drillAction = showDrill ? `<div class="question-actions"><button type="button" class="secondary compact" data-start-drill="${index}">${reviewRecord.corrections?.[index]?.passed ? "再練同題型" : "訂正觀念"}</button></div>` : "";
+        return `<section class="shared-subquestion" id="question-${index + 1}"><h4>(${offset + 1}) 第 ${displayStart + offset + 1} 題</h4>${renderQuestionChoices(q, index)}${state.submitted ? solutionHtml(q, index) : ""}${drillAction}${drillHtml(index)}</section>`;
+      }).join("");
+      return `<article class="question shared-figure-question" data-question="${group[0]}">
+        <div class="question-head"><span class="question-number">${displayStart + 1}–${displayStart + group.length}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span>${first.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(first.taxonomyTopic)}</span>` : ""}<span class="question-tag ability">共用圖題組</span></div></div>
+        <div class="question-text">根據圖回答以下問題：${nl(first.text)}</div>${first.diagram || ""}<div class="shared-subquestions">${sub}</div>
+      </article>`;
+    };
+    const chunks = [];
+    for (let pos = 0; pos < visibleIndexes.length;) {
+      const group = [visibleIndexes[pos]];
+      while (pos + group.length < visibleIndexes.length && canShareFigure(state.exam.questions[group[0]], state.exam.questions[visibleIndexes[pos + group.length]])) group.push(visibleIndexes[pos + group.length]);
+      chunks.push(group.length > 1 ? renderSharedFigureGroup(group, pos) : renderSingleQuestion(group[0], pos));
+      pos += group.length;
+    }
+    const qHtml = chunks.join("");
     const constructedStart = qHtml.indexOf('<article class="question constructed-question');
     const hasConstructed = constructedStart >= 0;
     const isQuiz = state.exam.kind === "quiz";

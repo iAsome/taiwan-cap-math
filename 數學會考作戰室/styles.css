@@ -227,6 +227,10 @@ input:focus, select:focus, textarea:focus { border-color: var(--green); box-shad
 .question-tag.ability { color: #875c1c; background: var(--gold-soft); }
 .difficulty { color: var(--gold); font-size: .67rem; letter-spacing: 2px; }
 .question-text { margin: 17px 0 15px; font-size: .95rem; line-height: 1.95; white-space: pre-line; }
+.shared-figure-question .question-text { margin-bottom: 10px; }
+.shared-subquestions { display: grid; gap: 16px; margin-top: 16px; }
+.shared-subquestion { border-top: 1px solid var(--line); padding-top: 14px; }
+.shared-subquestion h4 { margin: 0 0 10px; color: var(--green); font-size: .86rem; }
 .reading-passage { border-top: 4px solid var(--coral); border-bottom: 1px solid #d8ded9; background: #f7f3e9; padding: 27px 30px; }
 .reading-passage h3 { margin-bottom: 9px; }
 .reading-passage p:last-child { margin: 0; color: var(--ink-2); font-size: .8rem; line-height: 1.95; }

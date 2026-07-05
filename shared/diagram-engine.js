@@ -276,16 +276,39 @@ window.DIAGRAM_ENGINE = (() => {
       w, h, caption);
   }
 
-  function quadrilateral({ shape = "parallelogram", caption = "四邊形" } = {}) {
+  function quadrilateral({ shape = "parallelogram", caption = "四邊形", diagonals = false, perpendicular = false, sideLabels = [] } = {}) {
     const w = 270, h = 185;
     const pts = shape === "trapezoid"
       ? [[70, 45], [200, 45], [230, 135], [40, 135]]
       : shape === "rectangle"
         ? [[55, 45], [215, 45], [215, 135], [55, 135]]
-        : [[85, 45], [225, 45], [185, 135], [45, 135]];
+        : shape === "square"
+          ? [[70, 35], [200, 35], [200, 165], [70, 165]]
+          : shape === "rhombus"
+            ? [[135, 25], [225, 95], [135, 165], [45, 95]]
+            : [[85, 45], [225, 45], [185, 135], [45, 135]];
     const p = pts.map(pair => pair.join(",")).join(" ");
     const labels = ["A", "B", "C", "D"].map((label, i) => `<text x="${pts[i][0] + (i < 2 ? -10 : 6)}" y="${pts[i][1] + (i % 3 === 0 ? -8 : 16)}" font-size="11" font-weight="700">${label}</text>`).join("");
-    return svgWrap(`<polygon points="${p}" fill="none" stroke="currentColor" stroke-width="2"/>${labels}`, w, h, caption);
+    const diag = diagonals ? `<line x1="${pts[0][0]}" y1="${pts[0][1]}" x2="${pts[2][0]}" y2="${pts[2][1]}" stroke="#2a7f62" stroke-width="1.5"/><line x1="${pts[1][0]}" y1="${pts[1][1]}" x2="${pts[3][0]}" y2="${pts[3][1]}" stroke="#2a7f62" stroke-width="1.5"/>` : "";
+    const cx = (pts[0][0] + pts[2][0]) / 2, cy = (pts[0][1] + pts[2][1]) / 2;
+    const right = perpendicular ? `<path d="M${cx},${cy} l10,0 l0,10" fill="none" stroke="#e85d4c" stroke-width="1.4"/>` : "";
+    const sides = sideLabels.map(s => {
+      const pos = { AB: [(pts[0][0] + pts[1][0]) / 2, pts[0][1] - 10], BC: [pts[1][0] + 12, (pts[1][1] + pts[2][1]) / 2], CD: [(pts[2][0] + pts[3][0]) / 2, pts[2][1] + 18], DA: [pts[3][0] - 28, (pts[3][1] + pts[0][1]) / 2] }[s.edge] || [cx, cy];
+      return `<text x="${pos[0]}" y="${pos[1]}" font-size="11" font-weight="700" fill="#e85d4c">${esc(s.label)}</text>`;
+    }).join("");
+    return svgWrap(`<polygon points="${p}" fill="none" stroke="currentColor" stroke-width="2"/>${diag}${right}${labels}${sides}`, w, h, caption);
+  }
+
+  function netDiagram({ solid = "rectPrism", caption = "展開圖" } = {}) {
+    const w = 320, h = 210;
+    if (solid === "cylinder") {
+      return svgWrap(`<rect x="90" y="55" width="140" height="85" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="60" cy="98" r="30" fill="none" stroke="#2a7f62" stroke-width="2"/><circle cx="260" cy="98" r="30" fill="none" stroke="#2a7f62" stroke-width="2"/><text x="132" y="102" font-size="11">側面長方形</text><text x="44" y="102" font-size="10">底面</text><text x="244" y="102" font-size="10">底面</text>`, w, h, caption);
+    }
+    if (solid === "cone") {
+      return svgWrap(`<path d="M85,155 A95,95 0 0 1 220,55 L155,155 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="235" cy="150" r="28" fill="none" stroke="#2a7f62" stroke-width="2"/><text x="140" y="120" font-size="11">側面扇形</text><text x="222" y="154" font-size="10">底圓</text>`, w, h, caption);
+    }
+    const cells = [[120,20],[120,65],[120,110],[120,155],[75,65],[165,65]];
+    return svgWrap(cells.map(([x,y],i)=>`<rect x="${x}" y="${y}" width="45" height="45" fill="none" stroke="${i<4?'currentColor':'#2a7f62'}" stroke-width="2"/>`).join("") + `<text x="204" y="92" font-size="11">6 個矩形面</text>`, w, h, caption);
   }
 
   // 長方體線圖，被遮的三稜以虛線表示
@@ -403,7 +426,7 @@ window.DIAGRAM_ENGINE = (() => {
     return svgWrap(`<text x="40" y="110" font-size="11">${esc(n[0] || "草")}</text><text x="160" y="60" font-size="11">${esc(n[1] || "兔")}</text><text x="280" y="30" font-size="11">${esc(n[2] || "狐")}</text><line x1="70" y1="100" x2="150" y2="70" stroke="currentColor"/><line x1="190" y1="55" x2="270" y2="40" stroke="currentColor"/><polygon points="155,65 165,65 160,75" fill="currentColor"/>`, w, h, caption);
   }
 
-  const renderers = { numberLine, coordinatePlane, triangle, parallelLines, boxPlot, treeDiagram, circle, cone, cylinder, pyramid, sphere, sector, parabola, pieChart, histogram, threeView, barChart, lineChart, angleDiagram, quadrilateral, solidPrism, lever, circuit, vtGraph, scaleMap, contourMap, crossSection, timeline, magneticField, tableDiagram, cellDiagram, foodWeb };
+  const renderers = { numberLine, coordinatePlane, triangle, parallelLines, boxPlot, treeDiagram, circle, cone, cylinder, pyramid, sphere, sector, parabola, pieChart, histogram, threeView, barChart, lineChart, angleDiagram, quadrilateral, netDiagram, solidPrism, lever, circuit, vtGraph, scaleMap, contourMap, crossSection, timeline, magneticField, tableDiagram, cellDiagram, foodWeb };
 
   function diagramKindForTopic(title = "", section = "") {
     const text = `${title}${section}`;
