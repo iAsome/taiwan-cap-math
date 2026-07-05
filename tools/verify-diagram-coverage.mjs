@@ -38,7 +38,7 @@ const MATH_KEY_KIND_RULES = [
   [/rotation-sweep/, ["sector"]],
   [/parallel-lines|parallel-perpendicular|transversal|parallel-proportional|two-parallels|parallel-test|zigzag|paper-folding-parallels/, ["parallelLines"]],
   [/parallelogram|rectangle|trapezoid|quadrilateral|special-quad|polygon-correspondence|rhombus|kite|square|diagonal/, ["quadrilateral"]],
-  [/angle|perpendicular$|vertical-angles|reflection|paper-folding-angle|figure-eight|y-shape|polygon-angle|regular-polygon-angle/, ["angleDiagram"]],
+  [/(^|-)angle($|-)|perpendicular$|vertical-angles|reflection|paper-folding-angle|figure-eight|y-shape|polygon-angle|regular-polygon-angle/, ["angleDiagram"]],
   [/tangent/, ["circle"]],
   [/triangle|pythagorean|congruence|similar|right-triangle|altitude|perpendicular-bisector|angle-bisector|point-to-line|line-symmetric|polygon-diagonals|symmetric-angle|symmetric-segment|geometry-proof|circumcenter|incenter|isosceles|equilateral|side-length-range|perimeter-from-range|midsegment|equal-height|life-measurement|special-right-ratio|centroid|special-.*centers|construction-geometric|compass-straightedge/, ["triangle"]],
   [/prism|cylinder|pyramid|cone|line-plane|line-line|plane-plane|net-reading|space|volume|surface/, ["solidPrism", "cylinder", "cone", "pyramid"]]

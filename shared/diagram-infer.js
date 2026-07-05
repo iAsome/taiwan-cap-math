@@ -329,8 +329,13 @@ window.DIAGRAM_INFER = (() => {
       }
     }
     if (spec.kind === "cone" || spec.kind === "cylinder") {
-      const r = firstNum(raw, /半徑[為是]?\s*(\d+(?:\.\d+)?)/);
+      const r = firstNum(raw, /底圓\s*r\s*[=＝]\s*(\d+(?:\.\d+)?)/)
+        || firstNum(raw, /底面半徑[為是]?\s*(\d+(?:\.\d+)?)/)
+        || firstNum(raw, /\br\s*[=＝]\s*(\d+(?:\.\d+)?)/)
+        || firstNum(raw, /半徑[為是]?\s*(\d+(?:\.\d+)?)/);
       if (r && spec.rLabel !== r) return false;
+      const l = spec.kind === "cone" && (firstNum(raw, /母線\s*l?\s*[=＝]?\s*(\d+(?:\.\d+)?)/) || firstNum(raw, /\bl\s*[=＝]\s*(\d+(?:\.\d+)?)/));
+      if (l && spec.lLabel !== l) return false;
     }
     if (spec.kind === "sector") {
       const deg = firstNum(raw, /圓心角[為是]?\s*(\d+)/);

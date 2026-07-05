@@ -61,10 +61,24 @@ window.DIAGRAM_ENGINE = (() => {
   }
 
   // 課本畫法：圓心 O 實心點、半徑段標 r（或題目數值）
-  function circle({ r = 40, rLabel = "r", center = "O", caption = "圓形" } = {}) {
-    const px = Math.min(70, Math.max(25, r));
-    const w = 200, h = 200, cx = 100, cy = 100;
-    return svgWrap(`<circle cx="${cx}" cy="${cy}" r="${px}" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="${cx}" cy="${cy}" r="2.5" fill="currentColor"/><line x1="${cx}" y1="${cy}" x2="${cx + px}" y2="${cy}" stroke="#e85d4c" stroke-width="1.5"/><text x="${cx - 16}" y="${cy - 8}">${esc(center)}</text><text x="${cx + px / 2 - 6}" y="${cy - 8}" font-size="11" font-weight="700">${esc(rLabel)}</text>`, w, h, caption);
+  function circle({ r = 40, rLabel = "r", center = "O", caption = "圓形", tangent = false, tangentPair = false } = {}) {
+    const px = Math.min(tangentPair ? 48 : 70, Math.max(25, r));
+    const w = tangentPair ? 260 : 200, h = 200, cx = tangentPair ? 78 : 100, cy = 100;
+    const base = `<circle cx="${cx}" cy="${cy}" r="${px}" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="${cx}" cy="${cy}" r="2.5" fill="currentColor"/><text x="${cx - 16}" y="${cy - 8}">${esc(center)}</text>`;
+    if (tangentPair) {
+      const d = px + 98, tx = (px * px) / d, ty = Math.sqrt(px * px - tx * tx);
+      const pxp = cx + d, ax = cx + tx, ay = cy - ty, bx = cx + tx, by = cy + ty;
+      return svgWrap(base +
+        `<line x1="${pxp}" y1="${cy}" x2="${ax}" y2="${ay}" stroke="#2a7f62" stroke-width="2"/><line x1="${pxp}" y1="${cy}" x2="${bx}" y2="${by}" stroke="#2a7f62" stroke-width="2"/>` +
+        `<line x1="${cx}" y1="${cy}" x2="${ax}" y2="${ay}" stroke="#e85d4c" stroke-width="1.4"/><line x1="${cx}" y1="${cy}" x2="${bx}" y2="${by}" stroke="#e85d4c" stroke-width="1.4"/>` +
+        `<circle cx="${pxp}" cy="${cy}" r="3" fill="currentColor"/><text x="${pxp + 6}" y="${cy + 4}" font-size="11">P</text><text x="${ax - 10}" y="${ay - 6}" font-size="10">A</text><text x="${bx - 10}" y="${by + 14}" font-size="10">B</text>` +
+        `<text x="${(pxp + ax) / 2 - 4}" y="${(cy + ay) / 2 - 6}" font-size="10" fill="#2a7f62">PA</text><text x="${(pxp + bx) / 2 - 4}" y="${(cy + by) / 2 + 14}" font-size="10" fill="#2a7f62">PB</text><text x="${(cx + ax) / 2 - 10}" y="${(cy + ay) / 2}" font-size="10" font-weight="700">${esc(rLabel)}</text>`,
+        w, h, caption);
+    }
+    const tangentSvg = tangent
+      ? `<line x1="${cx + px}" y1="${cy - 72}" x2="${cx + px}" y2="${cy + 72}" stroke="#2a7f62" stroke-width="2"/><path d="M${cx + px - 12},${cy} L${cx + px - 12},${cy - 12} L${cx + px},${cy - 12}" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="${cx + px + 6}" y="${cy - 54}" font-size="10" fill="#2a7f62">切線</text><text x="${cx + px + 6}" y="${cy + 14}" font-size="10">A</text>`
+      : "";
+    return svgWrap(`${base}<line x1="${cx}" y1="${cy}" x2="${cx + px}" y2="${cy}" stroke="#e85d4c" stroke-width="1.5"/><text x="${cx + px / 2 - 6}" y="${cy - 8}" font-size="11" font-weight="700">${esc(rLabel)}</text>${tangentSvg}`, w, h, caption);
   }
 
   // ---- 立體圖形（課本鐵則：被遮稜一律虛線） ----
