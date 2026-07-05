@@ -56,16 +56,22 @@ const MATH_KIND_RULES = [
   [/數線/, ["numberLine"]],
 ];
 
-function assertMathKind(text, spec, key, gaps) {
+function expectedMathKinds(key) {
   const topicId = String(key || "").split("/")[1] || "";
   for (const [re, kinds] of MATH_KEY_KIND_RULES) {
-    if (re.test(topicId)) {
-      if (!kinds.includes(spec?.kind)) {
-        gaps.push({ subject: "math", key, reason: `kind-mismatch(${kinds[0]}≠${spec?.kind})`, text: text.slice(0, 72) });
-        return false;
-      }
-      return true;
+    if (re.test(topicId)) return kinds;
+  }
+  return null;
+}
+
+function assertMathKind(text, spec, key, gaps) {
+  const expected = expectedMathKinds(key);
+  if (expected) {
+    if (!expected.includes(spec?.kind)) {
+      gaps.push({ subject: "math", key, reason: `kind-mismatch(${expected[0]}≠${spec?.kind})`, text: text.slice(0, 72) });
+      return false;
     }
+    return true;
   }
   if (String(key || "").includes("/")) return true;
   for (const [re, kinds] of MATH_KIND_RULES) {
@@ -137,13 +143,18 @@ function checkQuestion(stack, q, code, gaps, stats) {
   const text = blob(q);
   const ctx = ctxFrom(q, code);
   if (code === "math") {
+    const expected = expectedMathKinds(q.taxonomyKey || "");
     if ((q.diagram || q.diagramSpec) && q.diagramSpec?.verified !== true) {
       gaps.push({ subject: code, key: q.taxonomyKey || q.text?.slice(0, 40), reason: "unverified-question-diagram", text: q.text?.slice(0, 72) });
       return;
     }
     const out = stack.DIAGRAM_ATTACH.attachDiagram({ ...q }, code);
-    if (!out.diagram?.includes("<svg")) return;
-    stats.needs++;
+    if (expected) stats.needs++;
+    if (!out.diagram?.includes("<svg")) {
+      if (expected) gaps.push({ subject: code, key: q.taxonomyKey || q.text?.slice(0, 40), reason: "missing-math-diagram", text: q.text?.slice(0, 72) });
+      return;
+    }
+    if (!expected) stats.needs++;
     if (!stack.DIAGRAM_INFER.validateSpecLabels(text, out.diagramSpec)) {
       gaps.push({ subject: code, key: q.taxonomyKey || q.text?.slice(0, 40), reason: "labels", text: q.text?.slice(0, 72), kind: out.diagramSpec?.kind });
       return;
@@ -214,8 +225,20 @@ for (const sub of SUBJECTS) {
     if (fs.existsSync(lecPath)) {
       const lecWin = loadSubject(base, sub.data, ["lecture-taxonomy.js"], stack);
       for (const [key, lecture] of Object.entries(lecWin.LECTURE_TAXONOMY || {})) {
+        if (expectedMathKinds(key)) {
+          stats.checked++;
+          stats.needs++;
+          const html = stack.DIAGRAM_ATTACH.attachDiagramText(lecture.title, "math", {
+            taxonomyKey: key,
+            topicTitle: lecture.title,
+            sectionTitle: lecture.section
+          });
+          if (!html.includes("<svg")) gaps.push({ subject: "math", key: `lecture-topic:${key}`, reason: "missing-lecture-topic-diagram", text: lecture.title });
+          else stats.ok++;
+        }
         for (const block of lecture.blocks?.filter(b => b.type === "diagram") || []) {
           stats.checked++;
+          stats.needs++;
           if (block.spec?.verified !== true) {
             gaps.push({ subject: "math", key: `lecture-block:${key}`, reason: "unverified-lecture-diagram", text: lecture.title });
             continue;
