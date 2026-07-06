@@ -31356,7 +31356,7 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 9,
       "difficulty": 1,
-      "text": "某商品重量 x 公斤不得超過 25 公斤，可列何者？",
+      "text": "設 x 為商品重量（公斤），不得超過 25 公斤，可列何者？",
       "choices": [
         "x < 25",
         "x ≤ 25",
@@ -31378,7 +31378,7 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 9,
       "difficulty": 1,
-      "text": "某商品重量 x 公斤不得超過 22 公斤，可列何者？",
+      "text": "設 x 為商品重量（公斤），不得超過 22 公斤，可列何者？",
       "choices": [
         "x < 22",
         "x ≥ 22",
@@ -31400,7 +31400,7 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 9,
       "difficulty": 1,
-      "text": "某商品重量 x 公斤不得超過 30 公斤，可列何者？",
+      "text": "設 x 為商品重量（公斤），不得超過 30 公斤，可列何者？",
       "choices": [
         "x < 30",
         "x = 30",
@@ -31422,7 +31422,7 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 9,
       "difficulty": 1,
-      "text": "某商品重量 x 公斤不得超過 19 公斤，可列何者？",
+      "text": "設 x 為商品重量（公斤），不得超過 19 公斤，可列何者？",
       "choices": [
         "x = 19",
         "x ≤ 19",
@@ -31444,7 +31444,7 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 9,
       "difficulty": 1,
-      "text": "某商品重量 x 公斤不得超過 25 公斤，可列何者？",
+      "text": "設 x 為商品重量（公斤），不得超過 25 公斤，可列何者？",
       "choices": [
         "x ≤ 25",
         "x = 25",
@@ -31466,7 +31466,7 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 9,
       "difficulty": 1,
-      "text": "某商品重量 x 公斤不得超過 29 公斤，可列何者？",
+      "text": "設 x 為商品重量（公斤），不得超過 29 公斤，可列何者？",
       "choices": [
         "x < 29",
         "x ≥ 29",
@@ -31488,7 +31488,7 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 9,
       "difficulty": 1,
-      "text": "某商品重量 x 公斤不得超過 29 公斤，可列何者？",
+      "text": "設 x 為商品重量（公斤），不得超過 29 公斤，可列何者？",
       "choices": [
         "x ≥ 29",
         "x = 29",
@@ -31510,7 +31510,7 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 9,
       "difficulty": 1,
-      "text": "某商品重量 x 公斤不得超過 26 公斤，可列何者？",
+      "text": "設 x 為商品重量（公斤），不得超過 26 公斤，可列何者？",
       "choices": [
         "x ≥ 26",
         "x < 26",
@@ -31532,7 +31532,7 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 9,
       "difficulty": 1,
-      "text": "某商品重量 x 公斤不得超過 24 公斤，可列何者？",
+      "text": "設 x 為商品重量（公斤），不得超過 24 公斤，可列何者？",
       "choices": [
         "x = 24",
         "x ≤ 24",
@@ -31554,7 +31554,7 @@ window.QUIZ_VARIANT_BANK = {
       "type": "mc",
       "unitId": 9,
       "difficulty": 1,
-      "text": "某商品重量 x 公斤不得超過 30 公斤，可列何者？",
+      "text": "設 x 為商品重量（公斤），不得超過 30 公斤，可列何者？",
       "choices": [
         "x < 30",
         "x ≥ 30",

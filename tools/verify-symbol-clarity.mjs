@@ -5,9 +5,9 @@ import {
   collectQuestions,
   loadDiagramStack,
   loadSubject,
-  questionBlob,
   subjectBase
 } from "./text-only-audit-lib.mjs";
+import { auditQuestion } from "./symbol-stem-lib.mjs";
 
 const math = SUBJECTS.find(s => s.code === "math");
 const stack = loadDiagramStack();
@@ -20,36 +20,32 @@ for (const needle of ["COMMON_SYMBOLS", "unitSymbolHtml", "questionSymbolHtml", 
 
 const samples = [
   {
-    text: "\u4e00\u500b\u5713\u7684\u534a\u5f91 r \u70ba 5 \u516c\u5206\uff0c\u6c42\u9762\u7a4d\u3002",
-    formula: "A = \u03c0r^2",
-    steps: ["\u534a\u5f91 r = 5\uff0c\u4ee3\u5165\u9762\u7a4d\u516c\u5f0f\u3002"],
+    text: "一個圓的半徑 r 為 5 公分，求面積。",
+    formula: "A = πr^2",
+    steps: ["半徑 r = 5，代入面積公式。"],
     expect: "r"
   },
   {
-    text: "\u8a2d x \u70ba\u884c\u99db\u516c\u91cc\u6578\uff0cy \u70ba\u7e3d\u8cbb\u7528\uff0c\u5efa\u7acb\u95dc\u4fc2\u5f0f\u3002",
+    text: "設 x 為行駛公里數，y 為總費用，建立關係式。",
     formula: "y = 20x + 80",
-    steps: ["\u672a\u77e5\u6578 x \u4ee3\u8868\u516c\u91cc\u6578\uff0c\u672a\u77e5\u6578 y \u4ee3\u8868\u7e3d\u8cbb\u7528\u3002"],
+    steps: ["未知數 x 代表公里數，未知數 y 代表總費用。"],
     expect: "x"
   }
 ];
 
 for (const q of samples) {
-  const out = stack.DIAGRAM_ATTACH.attachDiagram(q, "math");
-  if (!out.symbolNotes?.some(note => note.startsWith(q.expect))) {
-    failures.push(`sample-missing-symbol-note:${q.expect}`);
-  }
+  const { ok } = auditQuestion(q, qq => stack.DIAGRAM_ATTACH.attachDiagram(qq, "math"));
+  if (!ok) failures.push(`sample-failed:${q.expect}`);
 }
 
-const symbolAssignRe = /(^|[\s\u3002\uff0c\uff1b;,.、])([xyhrlmnkabc])\s*[=＝]/i;
 const w = loadSubject(math, stack);
 let checked = 0;
 for (const { source, q } of collectQuestions(w, "math")) {
-  const text = questionBlob(q);
-  if (!symbolAssignRe.test(text)) continue;
-  checked++;
   const out = stack.DIAGRAM_ATTACH.attachDiagram({ ...q }, "math");
   if (out.visualTextStatus === "needs-text") continue;
-  if (!out.symbolNotes?.length) failures.push(`question-missing-symbol-note:${source}:${String(q.text || "").slice(0, 80)}`);
+  checked++;
+  const { ok, reason, letters } = auditQuestion(q, qq => stack.DIAGRAM_ATTACH.attachDiagram(qq, "math"));
+  if (!ok) failures.push(`question-${reason}:${letters?.join("+") || "?"}:${source}:${String(q.text || "").slice(0, 80)}`);
 }
 
 if (failures.length) {
@@ -58,4 +54,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`OK: symbol clarity active; ${checked} math item(s) with explicit symbol assignment checked.`);
+console.log(`OK: symbol clarity active; ${checked} math item(s) checked with shared symbolStemOk rules.`);

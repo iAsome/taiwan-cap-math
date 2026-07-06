@@ -1397,7 +1397,7 @@ window.QUIZ_TAXONOMY = {
             title: "列不等式",
             template({ r, ri, mc }) {
               const limit = ri(r, 15, 30);
-              return mc(r, 9, 1, `某商品重量 x 公斤不得超過 ${limit} 公斤，可列何者？`, `x ≤ ${limit}`, [`x < ${limit}`, `x ≥ ${limit}`, `x = ${limit}`], [`「不得超過」含等號 → ≤。`, `x ≤ ${limit}。`], "列不等式前先抓關鍵字：超過、至少、不超過等。", "不得超過要含等號。")
+              return mc(r, 9, 1, `設 x 為商品重量（公斤），不得超過 ${limit} 公斤，可列何者？`, `x ≤ ${limit}`, [`x < ${limit}`, `x ≥ ${limit}`, `x = ${limit}`], [`「不得超過」含等號 → ≤。`, `x ≤ ${limit}。`], "列不等式前先抓關鍵字：超過、至少、不超過等。", "不得超過要含等號。")
             }
           },
           {
