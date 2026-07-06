@@ -431,6 +431,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
+    assessment = window.DIAGRAM_ATTACH?.prepareTextOnlyExam?.(assessment, "chinese") || assessment;
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;
@@ -511,7 +512,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       const passage = q.passageId && (!index || state.exam.questions[index - 1].passageId !== q.passageId) ? `<aside class="reading-passage"><p class="eyebrow">閱讀選文｜回答第 ${index + 1}～${index + state.exam.questions.filter(item => item.passageId === q.passageId).length} 題</p><h3>${esc(q.passageTitle || "共用選文")}</h3><p>${nl(q.passage)}</p></aside>` : "";
       return `${passage}<article class="question" id="question-${index + 1}" data-question="${index}">
         <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span>${q.quizLevel ? `<span class="question-tag level">${esc(q.quizLevel)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span></div>
-        <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${solutionHtml(q)}
+        <div class="question-text">${nl(q.text)}</div>${choices}${solutionHtml(q)}
       </article>`;
     }).join("");
     const isQuiz = state.exam.kind === "quiz";
@@ -527,8 +528,11 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
       <header class="paper-cover"><div><p class="eyebrow">現行官方結構</p><h2>國中教育會考國文科模擬題本</h2><p>42 題選擇題｜70 分鐘｜五大內容類別均衡分布</p></div><div class="paper-stamp">42題<br>官方結構</div></header>
       <div class="paper-instructions"><div><strong>42</strong><span>四選一｜含多組共用選文題組</span></div><div><strong>70 min</strong><span>題型順序依卷別種子打亂</span></div></div>`;
+    const textOnlyPauseNotice = window.DIAGRAM_ATTACH?.pauseNotice?.(state.exam) || "";
+
     $("#paper").innerHTML = `
       ${cover}
+      ${textOnlyPauseNotice}
       <div class="paper-section-title"><h3>選擇題</h3><span>每題只有一個正確或最佳答案</span></div>
       ${qHtml}`;
     $("#questionTotal").textContent = questionCount;

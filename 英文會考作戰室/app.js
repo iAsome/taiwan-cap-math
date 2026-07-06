@@ -430,6 +430,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
+    assessment = window.DIAGRAM_ATTACH?.prepareTextOnlyExam?.(assessment, "english") || assessment;
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;
@@ -509,7 +510,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       }).join("")}</div>`;
       return `<article class="question" id="question-${index + 1}" data-question="${index}">
         <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">${esc(groupMark(unit.grade))}</span><span class="question-tag">${esc(unit.title)}</span>${q.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(q.taxonomyTopic)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span></div>
-        <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${solutionHtml(q)}
+        <div class="question-text">${nl(q.text)}</div>${choices}${solutionHtml(q)}
       </article>`;
     }).join("");
     const isQuiz = state.exam.kind === "quiz";
@@ -524,8 +525,11 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
       <header class="paper-cover"><div><p class="eyebrow">自訂比例 · 涵蓋 20 單元</p><h2>會考英文文法模擬考</h2><p>30 題選擇｜40 分鐘｜閱讀技巧與核心字彙兩大領域加抽比重（本站自訂文法字彙隨機練習，非官方閱讀測驗原始規格）</p></div><div class="paper-stamp">英文<br>自訂規格</div></header>
       <div class="paper-instructions"><div><strong>30</strong><span>四選一｜全數英文單元覆蓋</span></div><div><strong>40 min</strong><span>題目順序依卷別種子打亂</span></div></div>`;
+    const textOnlyPauseNotice = window.DIAGRAM_ATTACH?.pauseNotice?.(state.exam) || "";
+
     $("#paper").innerHTML = `
       ${cover}
+      ${textOnlyPauseNotice}
       <div class="paper-section-title"><h3>作答區</h3><span>每題只有一個正確或最佳答案</span></div>
       ${qHtml}`;
     $("#questionTotal").textContent = state.exam.questions.length;

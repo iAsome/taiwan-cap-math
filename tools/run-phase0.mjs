@@ -25,6 +25,7 @@ const steps = [
   ["history", path.join(root, "歷史會考作戰室"), "node tools/verify-data.mjs"],
   ["geography", path.join(root, "地理會考作戰室"), "node tools/verify-data.mjs"],
   ["civics", path.join(root, "公民會考作戰室"), "node tools/verify-data.mjs"],
+  ["symbol-clarity", root, "node tools/verify-symbol-clarity.mjs"],
   ["diagram-coverage", root, "node tools/verify-diagram-coverage.mjs"],
   ["curriculum-scope", root, "node tools/verify-curriculum-scope.mjs"],
 ];

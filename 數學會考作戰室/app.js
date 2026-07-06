@@ -4,7 +4,7 @@
   const lectureTaxonomy = window.LECTURE_TAXONOMY || {};
   const quizTaxonomy = window.QUIZ_TAXONOMY || {};
   const renderDiagram = spec => window.DIAGRAM_ENGINE?.renderDiagram(spec) || "";
-  const renderLectureDiagram = spec => spec?.verified === true ? renderDiagram(spec) : "";
+  const renderLectureDiagram = () => "";
   const attachExampleDiagram = (q, topic) => window.DIAGRAM_ATTACH?.attachDiagramText(q, "math", { topicTitle: topic }) || "";
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -13,6 +13,34 @@
   const mathText = value => renderMath(value).replace(/\n/g, "<br>");
   const mathBlock = value => String(value).split("\n").map(line => `<span class="math-line">${renderMath(line, true)}</span>`).join("");
   const nl = mathText;
+  const COMMON_SYMBOLS = [
+    ["r", "半徑", /半徑|圓|圓柱|圓錐|扇形|弧長|周長|面積/],
+    ["h", "高", /高|高度|圓柱|圓錐|三角形|梯形|柱體|錐體/],
+    ["l", "母線（斜高）", /母線|斜高|圓錐/],
+    ["m", "斜率", /斜率|線型函數|直線|y\s*[=＝]\s*m/],
+    ["x", "未知數、橫坐標或輸入量，依題意定義", /x|未知數|坐標|座標|方程式|函數|公里|總數|個數|費用/],
+    ["y", "未知數、縱坐標或輸出量，依題意定義", /y|未知數|坐標|座標|方程式|函數|費用/],
+    ["a", "已知數、係數或首項，依公式位置判斷", /a|係數|等差|二次函數|公式/],
+    ["b", "已知數、係數或 y 截距，依公式位置判斷", /b|截距|係數|公式/],
+    ["c", "已知常數；在直角三角形公式中常代表斜邊", /c|常數|斜邊|方程式/],
+    ["n", "項數、個數或次數", /n|項數|個數|次數|數列|級數/],
+    ["k", "比例常數或頂點的 y 值，依題意定義", /k|比例|頂點|函數/]
+  ];
+  const symbolNotesFrom = (...values) => {
+    const text = values.flat(Infinity).filter(Boolean).join(" ");
+    const notes = COMMON_SYMBOLS
+      .filter(([symbol, , trigger]) => new RegExp(`(^|[^A-Za-z])${symbol}([^A-Za-z]|$)`, "i").test(text) && trigger.test(text))
+      .map(([symbol, meaning]) => `${symbol}：${meaning}`);
+    return [...new Set(notes)];
+  };
+  const symbolListHtml = notes => notes.length ? `<ul class="symbol-list">${notes.map(note => `<li>${mathText(note)}</li>`).join("")}</ul>` : `<p class="symbol-empty">本段沒有需要另設的英文字母未知數。</p>`;
+  const unitSymbolHtml = unit => `<section class="lesson-block symbol-block"><div class="lesson-label">符號說明</div><div class="lesson-content"><h3>先確認每個字母代表什麼</h3>${symbolListHtml(symbolNotesFrom(unit.title, unit.core, unit.formula, unit.derivation, unit.steps, unit.tips))}</div></section>`;
+  const questionSymbolHtml = q => {
+    const notes = Array.isArray(q.symbolNotes) && q.symbolNotes.length
+      ? q.symbolNotes.map(note => String(note).includes("：") ? note : note.replace(/^([a-z]) 代表 /i, "$1："))
+      : symbolNotesFrom(q.text, q.formula, q.concept, q.steps, q.tip, q.trap);
+    return notes.length ? `<div class="solution-note symbol-note"><strong>本題符號說明</strong>${symbolListHtml(notes)}</div>` : "";
+  };
   const letters = ["A", "B", "C", "D"];
   const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中數學全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" , paper: "官方考卷" };
   let toastTimer;
@@ -281,6 +309,7 @@
         <div class="unit-body">
           <section class="lesson-block"><div class="lesson-label">核心觀念</div><div class="lesson-content"><h3>先把這件事想清楚</h3><p>${mathText(unit.core)}</p><div class="clarify-box"><strong>觀念澄清：</strong> ${mathText(unit.clarify)}</div></div></section>
           <section class="lesson-block"><div class="lesson-label">公式與推導</div><div class="lesson-content"><div class="formula-box">${mathBlock(unit.formula)}</div><h3>公式不是憑空出現</h3><p>${mathText(unit.derivation)}</p></div></section>
+          ${unitSymbolHtml(unit)}
           <section class="lesson-block"><div class="lesson-label">標準解題流程</div><div class="lesson-content"><ol>${unit.steps.map(step => `<li>${mathText(step)}</li>`).join("")}</ol></div></section>
           <section class="lesson-block"><div class="lesson-label">會考快解技巧</div><div class="lesson-content"><ul class="tip-list">${unit.tips.map(tip => `<li>${mathText(tip)}</li>`).join("")}</ul></div></section>
           <section class="lesson-block"><div class="lesson-label">30 秒觀念測驗</div><div class="lesson-content"><div class="quiz-box"><p><strong>題目：</strong>${mathText(unit.quiz.q)}</p><button class="quiz-reveal">顯示解答</button><p class="quiz-answer"><strong>解答：</strong>${mathText(unit.quiz.a)}</p></div></div></section>
@@ -656,6 +685,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
+    assessment = window.DIAGRAM_ATTACH?.prepareTextOnlyExam?.(assessment, "math") || assessment;
     state.paperReview = { recordId: null, mode: null, drill: null };
     state.exam = assessment;
     state.answers = assessment.questions.map(question => question.type === "mc" ? null : "");
@@ -746,7 +776,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       const attrs = EXAM_CHOICE_UI.choiceAttrs({ submitted: state.submitted, selected: state.answers[index] === ci, isAnswer: ci === q.answer });
       return EXAM_CHOICE_UI.choiceButton({ letter: letters[ci], textHtml: mathText(choice), attrs, dataAttr: `data-choice="${index}:${ci}"`, disabled: state.submitted });
     }).join("")}</div>` : `<div class="constructed"><textarea data-cr="${index}" placeholder="請寫下完整解題過程與結論……" ${state.submitted ? "disabled" : ""}>${esc(state.answers[index])}</textarea><p class="writing-guide">建議包含：設未知數／列關係或性質／推導計算／含單位的結論</p></div>`;
-    const canShareFigure = (a, b) => a?.type === "mc" && b?.type === "mc" && a.text === b.text && a.diagram && a.diagram === b.diagram && !a.passageId && !b.passageId;
+    const canShareFigure = () => false;
     const renderSingleQuestion = (index, displayIndex) => {
       const q = state.exam.questions[index];
       const unit = units.find(item => item.id === q.unitId) || { grade: 7, title: "數學" };
@@ -756,7 +786,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       const drillAction = showDrill ? `<div class="question-actions"><button type="button" class="secondary compact" data-start-drill="${index}">${reviewRecord.corrections?.[index]?.passed ? "再練同題型" : "訂正觀念"}</button></div>` : "";
       return `${passage}<article class="question ${q.type === "cr" ? "constructed-question" : ""}" id="question-${index + 1}" data-question="${index}">
         <div class="question-head"><span class="question-number">${displayIndex + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span>${q.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(q.taxonomyTopic)}</span>` : ""}${q.quizLevel ? `<span class="question-tag level">${esc(q.quizLevel)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span>${correctionBadgeHtml(reviewRecord, index)}</div>
-        <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${state.submitted ? solutionHtml(q, index) : ""}${drillAction}${drillHtml(index)}
+        <div class="question-text">${nl(q.text)}</div>${choices}${state.submitted ? solutionHtml(q, index) : ""}${drillAction}${drillHtml(index)}
       </article>`;
     };
     const renderSharedFigureGroup = (group, displayStart) => {
@@ -770,7 +800,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       }).join("");
       return `<article class="question shared-figure-question" data-question="${group[0]}">
         <div class="question-head"><span class="question-number">${displayStart + 1}–${displayStart + group.length}</span><div class="question-tags"><span class="question-tag grade">國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit.title)}</span>${first.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(first.taxonomyTopic)}</span>` : ""}<span class="question-tag ability">共用圖題組</span></div></div>
-        <div class="question-text">根據圖回答以下問題：${nl(first.text)}</div>${first.diagram || ""}<div class="shared-subquestions">${sub}</div>
+        <div class="question-text">根據圖回答以下問題：${nl(first.text)}</div><div class="shared-subquestions">${sub}</div>
       </article>`;
     };
     const chunks = [];
@@ -803,8 +833,11 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const choiceHtml = hasConstructed ? qHtml.slice(0, constructedStart) : qHtml;
     const constructedHtml = hasConstructed ? `<div class="paper-section-title"><h3>第二部分：非選擇題</h3><span>策略適切＋推導完整＋結論清楚</span></div>${qHtml.slice(constructedStart)}` : "";
     const sectionTitle = isMock && !hasConstructed ? "" : `<div class="paper-section-title"><h3>${hasConstructed ? "第一部分：選擇題" : "試題"}</h3><span>每題只有一個正確或最佳答案</span></div>`;
+    const textOnlyPauseNotice = window.DIAGRAM_ATTACH?.pauseNotice?.(state.exam) || "";
+
     $("#paper").innerHTML = `
       ${cover}
+      ${textOnlyPauseNotice}
       ${reviewBanner}
       ${formulaBanner}
       ${sectionTitle}
@@ -828,7 +861,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     return `<div class="solution"><h4>參考結論：${mathText(q.answer)}</h4><ol class="solution-steps">${q.steps.map(s => `<li>${mathText(s)}</li>`).join("")}</ol>${solutionNotes(q)}<table class="rubric">${rubricRows.map(row => `<tr><th>${esc(row[0])}</th><td>${mathText(row[1])}</td></tr>`).join("")}</table></div>`;
   }
   function solutionNotes(q) {
-    return `<div class="solution-grid"><div class="solution-note"><strong>本題觀念</strong><p>${mathText(q.concept)}</p></div><div class="solution-note formula-note"><strong>可用公式</strong><div>${mathBlock(q.formula)}</div></div><div class="solution-note tip"><strong>快解技巧</strong><p>${mathText(q.tip)}</p></div><div class="solution-note trap"><strong>易錯警報</strong><p>${mathText(q.trap)}</p></div></div>`;
+    return `<div class="solution-grid"><div class="solution-note"><strong>本題觀念</strong><p>${mathText(q.concept)}</p></div><div class="solution-note formula-note"><strong>可用公式</strong><div>${mathBlock(q.formula)}</div></div>${questionSymbolHtml(q)}<div class="solution-note tip"><strong>快解技巧</strong><p>${mathText(q.tip)}</p></div><div class="solution-note trap"><strong>易錯警報</strong><p>${mathText(q.trap)}</p></div></div>`;
   }
 
   function bindExamInputs() {

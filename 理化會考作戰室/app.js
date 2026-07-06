@@ -404,6 +404,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
+    assessment = window.DIAGRAM_ATTACH?.prepareTextOnlyExam?.(assessment, "physics-chem") || assessment;
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;
@@ -484,7 +485,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       }).join("")}</div>`;
       return `<article class="question" id="question-${index + 1}" data-question="${index}">
         <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">國${gradeName(unit.grade)}</span><span class="question-tag">${esc(unit.title)}</span><span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5 - q.difficulty)}</span></div>
-        <div class="question-text">${nl(q.text)}</div>${q.diagram || ""}${choices}${solutionHtml(q)}
+        <div class="question-text">${nl(q.text)}</div>${choices}${solutionHtml(q)}
       </article>`;
     }).join("");
     const isQuiz = state.exam.kind === "quiz";
@@ -500,8 +501,11 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
       <header class="paper-cover"><div><p class="eyebrow">21 單元原創練習</p><h2>理化模擬測驗</h2><p>全部為四選一選擇題｜約 40 分鐘｜涵蓋 21 個理化單元</p></div><div class="paper-stamp">理化<br>範圍練習</div></header>
       <div class="paper-instructions"><div><strong>${mcCount}</strong><span>四選一｜每單元至少 1 題</span></div><div><strong>40 min</strong><span>建議作答時間</span></div></div>`;
+    const textOnlyPauseNotice = window.DIAGRAM_ATTACH?.pauseNotice?.(state.exam) || "";
+
     $("#paper").innerHTML = `
       ${cover}
+      ${textOnlyPauseNotice}
       <div class="paper-section-title"><h3>選擇題</h3><span>每題只有一個正確或最佳答案</span></div>
       ${qHtml}`;
     $("#questionTotal").textContent = state.exam.questions.length;

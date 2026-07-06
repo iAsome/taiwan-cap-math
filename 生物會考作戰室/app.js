@@ -385,6 +385,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
+    assessment = window.DIAGRAM_ATTACH?.prepareTextOnlyExam?.(assessment, "biology") || assessment;
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;
@@ -465,7 +466,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       }).join("")}</div>`;
       return `<article class="question" id="question-${index + 1}" data-question="${index}">
         <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">國${unit?.grade === 7 ? "一" : unit?.grade === 8 ? "二" : "三"}</span><span class="question-tag">${esc(unit?.title || "")}</span>${q.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(q.taxonomyTopic)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5 - q.difficulty)}</span></div>
-        <div class="question-text">${mathText(q.text)}</div>${q.diagram || ""}${choices}${solutionHtml(q)}
+        <div class="question-text">${mathText(q.text)}</div>${choices}${solutionHtml(q)}
       </article>`;
     }).join("");
     const isQuiz = state.exam.kind === "quiz";
@@ -480,8 +481,11 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
       <header class="paper-cover"><div><p class="eyebrow">原創練習 · 15 單元覆蓋</p><h2>生物模擬測驗</h2><p>30 題四選一｜40 分鐘｜依 15 個單元平均出題</p></div><div class="paper-stamp">MOCK<br>原創練習</div></header>
       <div class="paper-instructions"><div><strong>30</strong><span>四選一｜全範圍覆蓋</span></div><div><strong>40 min</strong><span>題目與選項順序依卷別種子打亂</span></div></div>`;
+    const textOnlyPauseNotice = window.DIAGRAM_ATTACH?.pauseNotice?.(state.exam) || "";
+
     $("#paper").innerHTML = `
       ${cover}
+      ${textOnlyPauseNotice}
       <div class="paper-section-title"><h3>作答區</h3><span>每題只有一個正確答案</span></div>
       ${qHtml}`;
     $("#questionTotal").textContent = state.exam.questions.length;
