@@ -15,14 +15,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "數的分類",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -60,26 +52,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "數線",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -121,26 +93,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "相反數與絕對值",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -178,17 +130,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -6,
-          "max": 6,
-          "points": [],
-          "caption": "正負數的概念",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -230,26 +171,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "相反數的概念",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -287,26 +208,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "絕對值的概念",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -348,26 +249,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "相反數與絕對值的求值",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -405,26 +286,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "絕對值與數線上點的位置",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -466,14 +327,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "加法運算",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -511,14 +364,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "減法運算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -560,14 +405,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "乘除運算",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -605,14 +442,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "運算規律",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -654,14 +483,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "四則運算",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -701,26 +522,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "數線上兩點間的距離與中點坐標",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -753,14 +554,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "數的四則運算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -802,14 +595,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "分配律的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -847,14 +632,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "交換律和結合律的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -896,14 +673,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "依運算規則求值",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -943,26 +712,6 @@ window.LECTURE_TAXONOMY = {
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "｜a－b｜幾何意義的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先圈出每個數前真正的符號</li><li>乘除先判正負，再算絕對值</li><li>加減改寫成加法；同號相加、異號相減</li><li>用估算或數線檢查正負方向</li></ol>"
       },
@@ -1000,14 +749,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "|a| = a（a ≥ 0）；|a| = −a（a < 0）\na − b = a + (−b)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "caption": "四則運算的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -4040,26 +3781,6 @@ window.LECTURE_TAXONOMY = {
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "直角坐標平面",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先確認象限符號</li><li>求截距時令另一坐標為 0</li><li>檢查點是否在線上就直接代入</li><li>交點同時滿足兩線，可解聯立</li></ol>"
       },
@@ -4092,31 +3813,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [],
-          "caption": "坐標平面上點的坐標",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -4158,14 +3854,6 @@ window.LECTURE_TAXONOMY = {
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "caption": "點到兩軸的距離",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先確認象限符號</li><li>求截距時令另一坐標為 0</li><li>檢查點是否在線上就直接代入</li><li>交點同時滿足兩線，可解聯立</li></ol>"
       },
@@ -4198,26 +3886,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -4,
-          "maxY": 2,
-          "points": [
-            {
-              "x": 2,
-              "y": -3,
-              "label": "(2,−3)"
-            }
-          ],
-          "lines": [],
-          "caption": "點的平移",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -4259,26 +3927,6 @@ window.LECTURE_TAXONOMY = {
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -4,
-          "maxX": 2,
-          "minY": -2,
-          "maxY": 5,
-          "points": [
-            {
-              "x": -3,
-              "y": 4,
-              "label": "(-3,4)"
-            }
-          ],
-          "lines": [],
-          "caption": "象限",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先確認象限符號</li><li>求截距時令另一坐標為 0</li><li>檢查點是否在線上就直接代入</li><li>交點同時滿足兩線，可解聯立</li></ol>"
       },
@@ -4318,14 +3966,6 @@ window.LECTURE_TAXONOMY = {
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "caption": "點與兩軸的距離",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先確認象限符號</li><li>求截距時令另一坐標為 0</li><li>檢查點是否在線上就直接代入</li><li>交點同時滿足兩線，可解聯立</li></ol>"
       },
@@ -4358,14 +3998,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "caption": "點的重合",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -4402,14 +4034,6 @@ window.LECTURE_TAXONOMY = {
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "caption": "點的位置的判別",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先確認象限符號</li><li>求截距時令另一坐標為 0</li><li>檢查點是否在線上就直接代入</li><li>交點同時滿足兩線，可解聯立</li></ol>"
       },
@@ -4442,19 +4066,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": true,
-          "caption": "點所連成圖形的面積",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -4559,38 +4170,6 @@ window.LECTURE_TAXONOMY = {
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 4,
-          "minY": -2,
-          "maxY": 7,
-          "points": [
-            {
-              "x": 1,
-              "y": 2,
-              "label": "(1,2)"
-            },
-            {
-              "x": 3,
-              "y": 6,
-              "label": "(3,6)"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "求過相異兩點的直線方程式",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先確認象限符號</li><li>求截距時令另一坐標為 0</li><li>檢查點是否在線上就直接代入</li><li>交點同時滿足兩線，可解聯立</li></ol>"
       },
@@ -4659,38 +4238,6 @@ window.LECTURE_TAXONOMY = {
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "點在直線上的求值問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先確認象限符號</li><li>求截距時令另一坐標為 0</li><li>檢查點是否在線上就直接代入</li><li>交點同時滿足兩線，可解聯立</li></ol>"
       },
@@ -4730,38 +4277,6 @@ window.LECTURE_TAXONOMY = {
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "直線與兩軸的交點",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先確認象限符號</li><li>求截距時令另一坐標為 0</li><li>檢查點是否在線上就直接代入</li><li>交點同時滿足兩線，可解聯立</li></ol>"
       },
@@ -4794,33 +4309,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 4,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 3,
-              "y": 3,
-              "label": "(3,3)"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "求直線方程式",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -4862,31 +4350,6 @@ window.LECTURE_TAXONOMY = {
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [],
-          "caption": "求直線方程式與應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先確認象限符號</li><li>求截距時令另一坐標為 0</li><li>檢查點是否在線上就直接代入</li><li>交點同時滿足兩線，可解聯立</li></ol>"
       },
@@ -4919,38 +4382,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "兩直線相交的問題",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -4987,38 +4418,6 @@ window.LECTURE_TAXONOMY = {
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "聯立方程式圖形的求值問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先確認象限符號</li><li>求截距時令另一坐標為 0</li><li>檢查點是否在線上就直接代入</li><li>交點同時滿足兩線，可解聯立</li></ol>"
       },
@@ -5051,38 +4450,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "x 軸上的點：y=0；y 軸上的點：x=0\ny=mx+b：m 為斜率概念，b 為 y 截距"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "方程式圖形與象限的判別",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -5902,12 +5269,12 @@ window.LECTURE_TAXONOMY = {
       },
       {
         "type": "example",
-        "q": "例題一：某商品重量 x 公斤不得超過 25 公斤，可列何者？",
+        "q": "例題一：設 x 為商品重量（公斤），不得超過 25 公斤，可列何者？",
         "a": "正確答案：B — x ≤ 25\n1. 「不得超過」含等號 → ≤。\n2. x ≤ 25。"
       },
       {
         "type": "example",
-        "q": "例題二：某商品重量 x 公斤不得超過 22 公斤，可列何者？",
+        "q": "例題二：設 x 為商品重量（公斤），不得超過 22 公斤，可列何者？",
         "a": "正確答案：D — x ≤ 22\n1. 「不得超過」含等號 → ≤。\n2. x ≤ 22。"
       },
       {
@@ -5934,26 +5301,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "若 a>b：\na+c>b+c；c>0 ⇒ ac>bc；c<0 ⇒ ac<bc"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            3,
-            7,
-            5,
-            9
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "caption": "由圖表判別範圍",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -6068,26 +5415,6 @@ window.LECTURE_TAXONOMY = {
         "content": "若 a>b：\na+c>b+c；c>0 ⇒ ac>bc；c<0 ⇒ ac<bc"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "一元一次不等式解的圖示",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把文字條件翻成不等號</li><li>去括號、合併同類項</li><li>每次乘除負數立刻反向</li><li>畫數線並檢查端點是否包含</li></ol>"
       },
@@ -6159,26 +5486,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "若 a>b：\na+c>b+c；c>0 ⇒ ac>bc；c<0 ⇒ ac<bc"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "numberLine",
-          "min": -5,
-          "max": 4,
-          "points": [
-            {
-              "value": -3,
-              "label": "A"
-            },
-            {
-              "value": 2,
-              "label": "B"
-            }
-          ],
-          "caption": "不等式解的圖示",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -6439,17 +5746,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "點、線、角、多邊形的標記與對角線",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -6482,19 +5778,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": true,
-          "caption": "垂直",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -6531,38 +5814,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "垂線與垂足",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -6595,38 +5846,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "點到直線的距離",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -6700,38 +5919,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "垂直平分線",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -6914,38 +6101,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "線段個數的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -6978,19 +6133,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "線對稱圖形",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -7027,14 +6169,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "threeView",
-          "caption": "找到對稱點",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -7067,14 +6201,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "threeView",
-          "caption": "常見多邊形的對角線與對稱軸",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -7111,18 +6237,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "threeView",
-          "solid": "長方體",
-          "front": "長方形",
-          "top": "長方形",
-          "side": "長方形",
-          "caption": "視圖",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -7155,18 +6269,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "threeView",
-          "solid": "長方體",
-          "front": "長方形",
-          "top": "長方形",
-          "side": "長方形",
-          "caption": "三視圖",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -7203,19 +6305,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "對稱線段等長的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -7248,14 +6337,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "threeView",
-          "caption": "對稱角相等的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -7292,26 +6373,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -4,
-          "maxX": 2,
-          "minY": -2,
-          "maxY": 3,
-          "points": [
-            {
-              "x": -3,
-              "y": 2,
-              "label": "(−3,2)"
-            }
-          ],
-          "lines": [],
-          "caption": "坐標平面上點的對稱",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -7344,18 +6405,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "threeView",
-          "solid": "長方體",
-          "front": "長方形",
-          "top": "長方形",
-          "side": "長方形",
-          "caption": "繪製三視圖",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -7392,18 +6441,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對頂角相等\n線性對角和 = 180°"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "threeView",
-          "solid": "長方體",
-          "front": "長方形",
-          "top": "長方形",
-          "side": "長方形",
-          "caption": "不同方向的視圖",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>把已知角與平行、垂直記號標上</li><li>找對頂、互補、互餘</li><li>需要等距時想垂直平分線或角平分線</li><li>每一步寫出使用的性質</li></ol>"
       },
@@ -7436,18 +6473,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對頂角相等\n線性對角和 = 180°"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "threeView",
-          "solid": "圓柱",
-          "front": "長方形",
-          "top": "圓形",
-          "side": "長方形",
-          "caption": "三視圖的活用題",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -7484,14 +6509,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "列聯表與次數分配表",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>讀清資料單位與樣本數</li><li>中位數務必先排序</li><li>次數表用加權總和</li><li>比較圖表時看尺度是否一致</li></ol>"
       },
@@ -7524,21 +6541,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "histogram",
-          "values": [
-            2,
-            5,
-            8,
-            4,
-            1
-          ],
-          "caption": "次數分配直方圖與次數分配折線圖",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -7575,14 +6577,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "累積次數和相對次數與累積相對次數",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>讀清資料單位與樣本數</li><li>中位數務必先排序</li><li>次數表用加權總和</li><li>比較圖表時看尺度是否一致</li></ol>"
       },
@@ -7615,14 +6609,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "累積次數分配表和相對次數分配表與累積相對次數分配表",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -7659,28 +6645,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "lineChart",
-          "values": [
-            2,
-            5,
-            3,
-            8,
-            6
-          ],
-          "labels": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ],
-          "caption": "累積次數分配折線圖和相對次數分配折線圖與累積相對次數分配折線圖",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>讀清資料單位與樣本數</li><li>中位數務必先排序</li><li>次數表用加權總和</li><li>比較圖表時看尺度是否一致</li></ol>"
       },
@@ -7713,14 +6677,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "列聯表的製作與判讀",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -7757,24 +6713,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "pieChart",
-          "slices": [
-            {
-              "label": "甲",
-              "pct": 25
-            },
-            {
-              "label": "其他",
-              "pct": 75
-            }
-          ],
-          "caption": "圓形圖的判讀",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>讀清資料單位與樣本數</li><li>中位數務必先排序</li><li>次數表用加權總和</li><li>比較圖表時看尺度是否一致</li></ol>"
       },
@@ -7807,21 +6745,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "histogram",
-          "values": [
-            2,
-            5,
-            8,
-            4,
-            1
-          ],
-          "caption": "直方圖的判讀",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -7858,28 +6781,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "lineChart",
-          "values": [
-            2,
-            5,
-            3,
-            8,
-            6
-          ],
-          "labels": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ],
-          "caption": "折線圖的判讀",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>讀清資料單位與樣本數</li><li>中位數務必先排序</li><li>次數表用加權總和</li><li>比較圖表時看尺度是否一致</li></ol>"
       },
@@ -7914,24 +6815,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "pieChart",
-          "slices": [
-            {
-              "label": "甲",
-              "pct": 25
-            },
-            {
-              "label": "其他",
-              "pct": 75
-            }
-          ],
-          "caption": "兩種統計圖表的交互判讀",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>讀清資料單位與樣本數</li><li>中位數務必先排序</li><li>次數表用加權總和</li><li>比較圖表時看尺度是否一致</li></ol>"
       },
@@ -7964,14 +6847,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "平均數",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -8013,14 +6888,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "盒狀圖",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>讀清資料單位與樣本數</li><li>中位數務必先排序</li><li>次數表用加權總和</li><li>比較圖表時看尺度是否一致</li></ol>"
       },
@@ -8053,14 +6920,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "眾數",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -8097,14 +6956,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "盒狀圖",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>讀清資料單位與樣本數</li><li>中位數務必先排序</li><li>次數表用加權總和</li><li>比較圖表時看尺度是否一致</li></ol>"
       },
@@ -8137,26 +6988,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            4,
-            6,
-            10,
-            20
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "caption": "由統計圖表求統計量",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -8193,22 +7024,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            72,
-            78
-          ],
-          "labels": [
-            "A",
-            "B"
-          ],
-          "caption": "由統計圖表判別統計量組別",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>讀清資料單位與樣本數</li><li>中位數務必先排序</li><li>次數表用加權總和</li><li>比較圖表時看尺度是否一致</li></ol>"
       },
@@ -8241,24 +7056,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平均數＝[[frac:總和|個數]]\n加權平均＝[[frac:Σ(數值×次數)|Σ次數]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            6,
-            13,
-            20
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C"
-          ],
-          "caption": "統計量的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -9865,19 +8662,6 @@ window.LECTURE_TAXONOMY = {
         "content": "(√a)²=a（a≥0）\n√(a²)=|a|"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": true,
-          "caption": "畢氏定理",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>根式先分解完全平方因數</li><li>幾何題先找直角與斜邊</li><li>代入平方關係後解非負長度</li><li>用最大邊平方與另兩邊平方和檢查</li></ol>"
       },
@@ -9910,19 +8694,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "(√a)²=a（a≥0）\n√(a²)=|a|"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": true,
-          "caption": "直角三角形斜邊上的高",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -9959,31 +8730,6 @@ window.LECTURE_TAXONOMY = {
         "content": "(√a)²=a（a≥0）\n√(a²)=|a|"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 5,
-          "minY": -2,
-          "maxY": 7,
-          "points": [
-            {
-              "x": 1,
-              "y": 2,
-              "label": "(1,2)"
-            },
-            {
-              "x": 4,
-              "y": 6,
-              "label": "(4,6)"
-            }
-          ],
-          "lines": [],
-          "caption": "坐標平面上兩點的距離",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>根式先分解完全平方因數</li><li>幾何題先找直角與斜邊</li><li>代入平方關係後解非負長度</li><li>用最大邊平方與另兩邊平方和檢查</li></ol>"
       },
@@ -10016,19 +8762,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "(√a)²=a（a≥0）\n√(a²)=|a|"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": true,
-          "caption": "利用畢氏定理求斜邊上的高",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -10065,19 +8798,6 @@ window.LECTURE_TAXONOMY = {
         "content": "(√a)²=a（a≥0）\n√(a²)=|a|"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": true,
-          "caption": "利用畢氏定理求邊長",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>根式先分解完全平方因數</li><li>幾何題先找直角與斜邊</li><li>代入平方關係後解非負長度</li><li>用最大邊平方與另兩邊平方和檢查</li></ol>"
       },
@@ -10112,19 +8832,6 @@ window.LECTURE_TAXONOMY = {
         "content": "(√a)²=a（a≥0）\n√(a²)=|a|"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": true,
-          "caption": "利用畢氏定理求面積",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>根式先分解完全平方因數</li><li>幾何題先找直角與斜邊</li><li>代入平方關係後解非負長度</li><li>用最大邊平方與另兩邊平方和檢查</li></ol>"
       },
@@ -10157,24 +8864,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "(√a)²=a（a≥0）\n√(a²)=|a|"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 5,
-          "b": 3,
-          "sideLabels": [
-            {
-              "edge": "AB",
-              "label": "5"
-            }
-          ],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "畢氏定理在生活中的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -12325,22 +11014,6 @@ window.LECTURE_TAXONOMY = {
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            3,
-            5
-          ],
-          "labels": [
-            "A",
-            "B"
-          ],
-          "caption": "變數與常數",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>從情境辨認固定量與單位變化量</li><li>求斜率並標單位</li><li>代一點求 b</li><li>用另一點或圖形驗證</li></ol>"
       },
@@ -12373,26 +11046,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            3,
-            7,
-            5,
-            9
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "caption": "自變數與應變數",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -12429,26 +11082,6 @@ window.LECTURE_TAXONOMY = {
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            3,
-            7,
-            5,
-            9
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "caption": "函數",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>從情境辨認固定量與單位變化量</li><li>求斜率並標單位</li><li>代一點求 b</li><li>用另一點或圖形驗證</li></ol>"
       },
@@ -12483,24 +11116,6 @@ window.LECTURE_TAXONOMY = {
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            3,
-            2,
-            4
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C"
-          ],
-          "caption": "函數值",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>從情境辨認固定量與單位變化量</li><li>求斜率並標單位</li><li>代一點求 b</li><li>用另一點或圖形驗證</li></ol>"
       },
@@ -12533,24 +11148,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            3,
-            2,
-            4
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C"
-          ],
-          "caption": "求函數值",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -12592,24 +11189,6 @@ window.LECTURE_TAXONOMY = {
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            2,
-            3,
-            11
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C"
-          ],
-          "caption": "函數值相等的求值問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>從情境辨認固定量與單位變化量</li><li>求斜率並標單位</li><li>代一點求 b</li><li>用另一點或圖形驗證</li></ol>"
       },
@@ -12642,26 +11221,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "barChart",
-          "values": [
-            85,
-            20,
-            85,
-            20
-          ],
-          "labels": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "caption": "函數值的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -12698,38 +11257,6 @@ window.LECTURE_TAXONOMY = {
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "函數的圖形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>從情境辨認固定量與單位變化量</li><li>求斜率並標單位</li><li>代一點求 b</li><li>用另一點或圖形驗證</li></ol>"
       },
@@ -12762,14 +11289,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "caption": "坐標平面",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -12806,14 +11325,6 @@ window.LECTURE_TAXONOMY = {
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "caption": "坐標平面",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>從情境辨認固定量與單位變化量</li><li>求斜率並標單位</li><li>代一點求 b</li><li>用另一點或圖形驗證</li></ol>"
       },
@@ -12846,14 +11357,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "caption": "函數類型的判別",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -12890,31 +11393,6 @@ window.LECTURE_TAXONOMY = {
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [],
-          "caption": "函數圖形的判別",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>從情境辨認固定量與單位變化量</li><li>求斜率並標單位</li><li>代一點求 b</li><li>用另一點或圖形驗證</li></ol>"
       },
@@ -12947,14 +11425,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "caption": "坐標平面",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -12991,38 +11461,6 @@ window.LECTURE_TAXONOMY = {
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 4,
-          "minY": -2,
-          "maxY": 11,
-          "points": [
-            {
-              "x": 1,
-              "y": 4,
-              "label": "(1,4)"
-            },
-            {
-              "x": 3,
-              "y": 10,
-              "label": "(3,10)"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "已知圖形上的點求線型函數",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>從情境辨認固定量與單位變化量</li><li>求斜率並標單位</li><li>代一點求 b</li><li>用另一點或圖形驗證</li></ol>"
       },
@@ -13055,38 +11493,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "利用函數圖形的交點求值",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -13123,38 +11529,6 @@ window.LECTURE_TAXONOMY = {
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "利用函數圖形的交點比大小",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>從情境辨認固定量與單位變化量</li><li>求斜率並標單位</li><li>代一點求 b</li><li>用另一點或圖形驗證</li></ol>"
       },
@@ -13187,14 +11561,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "m＝[[frac:y₂−y₁|x₂−x₁]]\ny−y₁＝m(x−x₁)"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "caption": "坐標平面",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -13268,16 +11634,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "尺規作圖",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -13426,38 +11782,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "對頂角的計算",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -13526,19 +11850,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "三角形的內角與外角",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -13571,24 +11882,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [
-            {
-              "at": "B",
-              "label": "64°"
-            }
-          ],
-          "rightAngle": false,
-          "caption": "三角形內、外角的計算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -13630,14 +11923,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "平行線截角",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -13670,14 +11955,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "n 邊形度數變動時計算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -13714,22 +11991,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "lineChart",
-          "values": [
-            90,
-            35
-          ],
-          "labels": [
-            "1",
-            "2"
-          ],
-          "caption": "紙片翻摺求角度",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -13762,24 +12023,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [
-            {
-              "at": "B",
-              "label": "110°"
-            }
-          ],
-          "rightAngle": false,
-          "caption": "利用 8 字型關係求角度",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -13816,14 +12059,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "利用 Y 字型關係求角度",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -13856,24 +12091,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [
-            {
-              "at": "B",
-              "label": "40°"
-            }
-          ],
-          "rightAngle": false,
-          "caption": "等腰三角形摺疊的計算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -13910,14 +12127,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "正 n 邊形角度的計算",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -13950,19 +12159,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "多邊形的全等",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -13999,19 +12195,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "三角形全等的判別",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -14044,17 +12227,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "多邊形的對應關係",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -14091,19 +12263,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "三角形全等的判別應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -14136,14 +12295,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "中垂線性質的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -14180,14 +12331,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "角平分線性質的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -14220,24 +12363,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 6,
-          "b": 3,
-          "sideLabels": [
-            {
-              "edge": "AB",
-              "label": "6"
-            }
-          ],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "正三角形的高與面積",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -14274,24 +12399,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [
-            {
-              "at": "B",
-              "label": "80°"
-            }
-          ],
-          "rightAngle": false,
-          "caption": "等腰三角形性質的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -14324,29 +12431,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 5,
-          "b": 3,
-          "sideLabels": [
-            {
-              "edge": "AB",
-              "label": "5"
-            }
-          ],
-          "angleLabels": [
-            {
-              "at": "B",
-              "label": "40°"
-            }
-          ],
-          "rightAngle": false,
-          "caption": "三角形全等性質的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -14383,19 +12467,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "三角形的邊角關係",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -14428,19 +12499,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "求邊長的範圍",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -14477,19 +12535,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "由邊長的範圍求周長",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -14522,14 +12567,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "大邊對大角",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -14566,14 +12603,6 @@ window.LECTURE_TAXONOMY = {
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "大角對大邊",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出已知邊角與公共邊</li><li>判斷是否有平行線提供等角</li><li>選正確全等條件</li><li>依對應順序推出所求</li></ol>"
       },
@@ -14606,19 +12635,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "三角形內角和=180°\n外角=兩不相鄰內角和"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "三角形邊角不等關係的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -14655,15 +12671,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行線",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -14696,15 +12703,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行線的截角性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -14741,15 +12739,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行線的判別",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -14782,15 +12771,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "兩直線平行的相關性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -14827,15 +12807,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "一般角的兩邊與另一角的兩邊分別平行或垂直的關係",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -14868,15 +12839,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "兩平行線間的距離處處相等",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -14913,19 +12875,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [
-            {
-              "label": "65°"
-            }
-          ],
-          "caption": "利用平行線截角性質求角度",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -14958,29 +12907,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [
-            {
-              "edge": "BC",
-              "label": "70"
-            }
-          ],
-          "angleLabels": [
-            {
-              "at": "ABC",
-              "label": "70°"
-            }
-          ],
-          "rightAngle": false,
-          "caption": "三角形與平行線截角性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15017,19 +12943,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [
-            {
-              "label": "55°"
-            }
-          ],
-          "caption": "平行線的判別與求值",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15062,19 +12975,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [
-            {
-              "label": "40°"
-            }
-          ],
-          "caption": "兩平行線間折線角度的問題",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15111,19 +13011,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [
-            {
-              "label": "70°"
-            }
-          ],
-          "caption": "四邊形與平行線間折線角度",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15156,15 +13043,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "正多邊形與平行線間折線角度",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15201,15 +13079,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "利用平行線性質處理摺紙的問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15242,15 +13111,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行四邊形的定義",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15287,15 +13147,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行四邊形的性質",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15328,15 +13179,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行四邊形的判別性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15373,15 +13215,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行四邊形的面積與周長",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15414,15 +13247,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行四邊形對邊相等",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15459,19 +13283,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [
-            {
-              "label": "65°"
-            }
-          ],
-          "caption": "平行四邊形對角相等",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15506,15 +13317,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行四邊形對角線互相平分",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15547,15 +13349,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行四邊形面積的計算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15597,15 +13390,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行四邊形性質的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15638,14 +13422,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "平行線截角",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15682,14 +13458,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "平行線截角",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15722,14 +13490,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "平行線截角",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15766,14 +13526,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "梯形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15806,14 +13558,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "等腰梯形",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15850,19 +13594,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": true,
-          "caption": "特殊四邊形的性質與判別",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15895,14 +13626,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "菱形的性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -15939,14 +13662,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "箏形的性質",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -15979,14 +13694,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "長方形的性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -16023,14 +13730,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "正方形的性質",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -16063,14 +13762,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "梯形角度的計算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -16107,14 +13798,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "梯形長度的計算",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -16149,14 +13832,6 @@ window.LECTURE_TAXONOMY = {
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "梯形兩腰中點連線段的問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先寫出四邊形已知類型</li><li>用平行線找角、用對角線找全等</li><li>面積題確認高必須垂直</li><li>需要判定時檢查充分條件</li></ol>"
       },
@@ -16189,14 +13864,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "平行四邊形面積＝底×高\n三角形面積＝[[frac:底×高|2]]"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "caption": "梯形面積的計算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -16544,19 +14211,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "等高或同高三角形的面積比",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -16589,15 +14243,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行線截比例線段性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -16634,15 +14279,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行線截比例線段性質的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -16675,19 +14311,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "三角形兩邊中點連線性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -16724,19 +14347,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "等高三角形的面積比",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -16769,15 +14379,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行線截比例線段的問題",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -16814,24 +14415,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [
-            {
-              "edge": "BC",
-              "label": "12"
-            }
-          ],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "三角形兩邊中點連線的問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -16864,19 +14447,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "三角形兩邊中點連線的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -16913,15 +14483,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "兩組平行線截比例線段的求值問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -16954,15 +14515,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "平行線截比例線段的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -16999,19 +14551,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "相似形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -17044,19 +14583,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "相似形的判別",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -17093,24 +14619,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 6,
-          "b": 3,
-          "sideLabels": [
-            {
-              "edge": "AB",
-              "label": "6"
-            }
-          ],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "三角形的相似性質與判別",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -17143,24 +14651,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [
-            {
-              "at": "B",
-              "label": "108°"
-            }
-          ],
-          "rightAngle": false,
-          "caption": "相似多邊形的邊角關係",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -17197,19 +14687,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "相似多邊形的判別",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -17242,24 +14719,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 8,
-          "b": 3,
-          "sideLabels": [
-            {
-              "edge": "AB",
-              "label": "8"
-            }
-          ],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "相似多邊形的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -17296,19 +14755,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "相似三角形的判別",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -17341,19 +14787,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "相似三角形的判別與應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -17390,28 +14823,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [
-            {
-              "edge": "AB",
-              "label": "4"
-            },
-            {
-              "edge": "BC",
-              "label": "6"
-            }
-          ],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "利用三角形的相似性質求線段長",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -17444,19 +14855,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "相似三角形對應邊、周長、面積的比的關係",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -17493,24 +14891,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [
-            {
-              "at": "C",
-              "label": "90°"
-            }
-          ],
-          "rightAngle": true,
-          "caption": "直角三角形的母子相似性質",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -17543,14 +14923,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "生活中的測量問題",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -17587,24 +14959,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [
-            {
-              "at": "B",
-              "label": "45°"
-            }
-          ],
-          "rightAngle": true,
-          "caption": "特殊直角三角形的邊長比",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -17637,24 +14991,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [
-            {
-              "at": "B",
-              "label": "30°"
-            }
-          ],
-          "rightAngle": true,
-          "caption": "直角三角形的邊長比值",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -17691,19 +15027,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "相似三角形的周長、面積比",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -17736,24 +15059,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [
-            {
-              "at": "ACB",
-              "label": "90°"
-            }
-          ],
-          "rightAngle": true,
-          "caption": "利用三角形相似性質作測量",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -17790,19 +15095,6 @@ window.LECTURE_TAXONOMY = {
         "content": "對應邊比=k\n周長比=k"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "特殊直角三角形邊長比的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>先找等角確定對應頂點</li><li>按同一順序列比例</li><li>判斷題目問長、面積或體積</li><li>代回尺度檢查</li></ol>"
       },
@@ -17835,24 +15127,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "對應邊比=k\n周長比=k"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 12,
-          "b": 3,
-          "sideLabels": [
-            {
-              "edge": "AB",
-              "label": "12"
-            }
-          ],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "三角形相似性質的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -17889,16 +15163,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "圓的相關名詞",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -17931,17 +15195,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "sector",
-          "angleLabel": "60°",
-          "angleDeg": 60,
-          "rLabel": "6",
-          "caption": "圓弧長與扇形",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -17978,17 +15231,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "sector",
-          "angleLabel": "90°",
-          "angleDeg": 90,
-          "rLabel": "4",
-          "caption": "扇面的面積與周長",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18021,17 +15263,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "sector",
-          "angleLabel": "θ",
-          "angleDeg": 70,
-          "rLabel": "r",
-          "caption": "扇形重疊部分的面積與周長",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18068,17 +15299,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "sector",
-          "angleLabel": "60°",
-          "angleDeg": 60,
-          "rLabel": "6",
-          "caption": "圖形旋轉掃過的軌跡或區域",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18111,16 +15331,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "5",
-          "caption": "點與圓的位置關係",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18157,16 +15367,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "直線 L 與圓 O 的位置關係",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18199,16 +15399,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "圓的切線性質與判別性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18245,16 +15435,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "過圓外一點的兩切線性質",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18287,16 +15467,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "圓外切四邊形性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18333,16 +15503,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "弦的性質",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18375,16 +15535,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 0,
-          "rLabel": "null",
-          "caption": "弦心距",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18421,16 +15571,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "圓切線性質的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18463,16 +15603,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 0,
-          "rLabel": "null",
-          "caption": "切線段等長的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18509,16 +15639,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "5",
-          "caption": "半徑、弦與弦心距的關係",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18551,17 +15671,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "sector",
-          "angleLabel": "80°",
-          "angleDeg": 80,
-          "rLabel": "r",
-          "caption": "弧的度數",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18598,17 +15707,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "sector",
-          "angleLabel": "θ",
-          "angleDeg": 70,
-          "rLabel": "r",
-          "caption": "圓心角與弦的關係",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18641,17 +15739,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "圓周角",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18688,16 +15775,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "圓周角的相關性質",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18730,17 +15807,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "sector",
-          "angleLabel": "100°",
-          "angleDeg": 100,
-          "rLabel": "r",
-          "caption": "圓心角、圓周角與弧的度數",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18777,16 +15843,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "半圓所對圓周角為直角",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18819,16 +15875,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "平行線截等弧",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18865,16 +15911,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "圓內接四邊形對角互補",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18907,16 +15943,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "兩圓相交的度數問題",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -18953,16 +15979,6 @@ window.LECTURE_TAXONOMY = {
         "content": "圓周長＝2πr；圓面積＝πr²\n弧長＝[[frac:θ|360°]]×2πr"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "圓結合其他幾何性質的問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>標出圓心、半徑與同弧端點</li><li>角度題找圓心角與圓周角</li><li>弦題作圓心到弦的垂線</li><li>切線題連接圓心與切點</li></ol>"
       },
@@ -18995,14 +16011,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "三角形",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19039,14 +16047,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "三角形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19079,14 +16079,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "三角形",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19123,14 +16115,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "三角形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19163,14 +16147,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "三角形",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19207,19 +16183,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "幾何證明與應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19252,19 +16215,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "尺規作圖與幾何推理",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19301,19 +16251,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "意義",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19346,19 +16283,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "作法",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19395,19 +16319,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "位置",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19440,17 +16351,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19487,17 +16387,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "sector",
-          "angleLabel": "60°",
-          "angleDeg": 60,
-          "rLabel": "r",
-          "caption": "外心與角度的計算",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19530,16 +16419,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "兩三角形同外心的角度計算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19576,16 +16455,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "等腰三角形外接圓半徑的計算",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19618,16 +16487,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "直角三角形外接圓面積的計算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19664,19 +16523,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "意義",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19709,19 +16555,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "作法",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19758,19 +16591,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "位置",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19803,14 +16623,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19847,14 +16659,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "三角形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19887,16 +16691,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "切線段長的計算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -19933,16 +16727,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "r",
-          "caption": "內心與長度的計算",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -19975,14 +16759,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "三角形",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20019,19 +16795,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "意義",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -20064,19 +16827,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "作法",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20113,19 +16863,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "位置",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -20158,17 +16895,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "性質",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20205,14 +16931,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "三角形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -20245,17 +16963,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "重心與面積的計算",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20292,14 +16999,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "caption": "三角形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -20332,19 +17031,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "等腰三角形",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20381,19 +17067,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": true,
-          "caption": "直角三角形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -20426,19 +17099,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "triangle",
-          "a": 4,
-          "b": 3,
-          "sideLabels": [],
-          "angleLabels": [],
-          "rightAngle": false,
-          "caption": "正三角形",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20475,16 +17135,6 @@ window.LECTURE_TAXONOMY = {
         "content": "外心：OA=OB=OC\n內心：到三邊距離相等"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "circle",
-          "r": 40,
-          "rLabel": "R",
-          "caption": "特殊三角形三心的相關問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>寫已知與欲證</li><li>把結論拆成可證的小目標</li><li>尋找全等、相似、平行或等距</li><li>每個等式旁註理由，最後回扣結論</li></ol>"
       },
@@ -20517,17 +17167,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20564,17 +17203,6 @@ window.LECTURE_TAXONOMY = {
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數 y = ax² 與 y = a(x - h)² + k 的圖形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>盡量配成頂點式</li><li>讀出開口、頂點、對稱軸</li><li>求截距就令 x=0 或 y=0</li><li>情境最佳化要檢查定義域</li></ol>"
       },
@@ -20607,17 +17235,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": false,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數圖形的開口方向",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20654,17 +17271,6 @@ window.LECTURE_TAXONOMY = {
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數圖形的頂點座標",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>盡量配成頂點式</li><li>讀出開口、頂點、對稱軸</li><li>求截距就令 x=0 或 y=0</li><li>情境最佳化要檢查定義域</li></ol>"
       },
@@ -20697,17 +17303,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": false,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數圖形的對稱軸",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20744,17 +17339,6 @@ window.LECTURE_TAXONOMY = {
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數圖形的開口大小",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>盡量配成頂點式</li><li>讀出開口、頂點、對稱軸</li><li>求截距就令 x=0 或 y=0</li><li>情境最佳化要檢查定義域</li></ol>"
       },
@@ -20787,17 +17371,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數圖形的平移",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20834,17 +17407,6 @@ window.LECTURE_TAXONOMY = {
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "求二次函數",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>盡量配成頂點式</li><li>讀出開口、頂點、對稱軸</li><li>求截距就令 x=0 或 y=0</li><li>情境最佳化要檢查定義域</li></ol>"
       },
@@ -20877,17 +17439,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": false,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "函數圖形開口大小的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -20924,17 +17475,6 @@ window.LECTURE_TAXONOMY = {
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": false,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "求二次函數圖形的基本要項",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>盡量配成頂點式</li><li>讀出開口、頂點、對稱軸</li><li>求截距就令 x=0 或 y=0</li><li>情境最佳化要檢查定義域</li></ol>"
       },
@@ -20967,17 +17507,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數圖形與水平線交點",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21014,17 +17543,6 @@ window.LECTURE_TAXONOMY = {
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數的應用",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>盡量配成頂點式</li><li>讀出開口、頂點、對稱軸</li><li>求截距就令 x=0 或 y=0</li><li>情境最佳化要檢查定義域</li></ol>"
       },
@@ -21057,17 +17575,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數 y = a(x - h)² + k 的最大值或最小值",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21104,17 +17611,6 @@ window.LECTURE_TAXONOMY = {
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": false,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數圖形的頂點位置",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>盡量配成頂點式</li><li>讀出開口、頂點、對稱軸</li><li>求截距就令 x=0 或 y=0</li><li>情境最佳化要檢查定義域</li></ol>"
       },
@@ -21147,17 +17643,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數值的變化",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21194,17 +17679,6 @@ window.LECTURE_TAXONOMY = {
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": false,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數最大值或最小值的判別",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>盡量配成頂點式</li><li>讀出開口、頂點、對稱軸</li><li>求截距就令 x=0 或 y=0</li><li>情境最佳化要檢查定義域</li></ol>"
       },
@@ -21237,17 +17711,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": true,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "二次函數圖形與 x 軸交點數",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21284,14 +17747,6 @@ window.LECTURE_TAXONOMY = {
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "caption": "已知最大、小值的求值問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>盡量配成頂點式</li><li>讀出開口、頂點、對稱軸</li><li>求截距就令 x=0 或 y=0</li><li>情境最佳化要檢查定義域</li></ol>"
       },
@@ -21324,17 +17779,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "y＝a(x−h)²＋k\n頂點 (h,k)，對稱軸 x＝h"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "parabola",
-          "opensUp": false,
-          "vertexLabel": "頂點",
-          "axisLabel": "對稱軸",
-          "caption": "已知最大、小值求二次函數",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21371,14 +17815,6 @@ window.LECTURE_TAXONOMY = {
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "四分位數",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>確認一次試驗的基本結果</li><li>判斷是否等可能、是否放回</li><li>用表格或樹狀圖列完整</li><li>數有利結果並約分</li></ol>"
       },
@@ -21411,24 +17847,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "lineChart",
-          "values": [
-            40,
-            20,
-            20
-          ],
-          "labels": [
-            "1",
-            "2",
-            "3"
-          ],
-          "caption": "中間累積次數分配折線圖判斷 Qm（m＝1、2、3） 所在組別",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21465,14 +17883,6 @@ window.LECTURE_TAXONOMY = {
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "全距與四分位距",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>確認一次試驗的基本結果</li><li>判斷是否等可能、是否放回</li><li>用表格或樹狀圖列完整</li><li>數有利結果並約分</li></ol>"
       },
@@ -21505,14 +17915,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "盒狀圖",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21549,14 +17951,6 @@ window.LECTURE_TAXONOMY = {
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "求四分位數與盒狀圖的繪製",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>確認一次試驗的基本結果</li><li>判斷是否等可能、是否放回</li><li>用表格或樹狀圖列完整</li><li>數有利結果並約分</li></ol>"
       },
@@ -21589,14 +17983,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "四分位數所在組別的判斷",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21633,14 +18019,6 @@ window.LECTURE_TAXONOMY = {
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "單一盒狀圖的判讀",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>確認一次試驗的基本結果</li><li>判斷是否等可能、是否放回</li><li>用表格或樹狀圖列完整</li><li>數有利結果並約分</li></ol>"
       },
@@ -21673,14 +18051,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "boxPlot",
-          "caption": "兩盒狀圖的判讀與比較",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21717,14 +18087,6 @@ window.LECTURE_TAXONOMY = {
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "treeDiagram",
-          "caption": "機率的概念",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>確認一次試驗的基本結果</li><li>判斷是否等可能、是否放回</li><li>用表格或樹狀圖列完整</li><li>數有利結果並約分</li></ol>"
       },
@@ -21757,14 +18119,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "treeDiagram",
-          "caption": "樹狀圖",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21801,14 +18155,6 @@ window.LECTURE_TAXONOMY = {
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "treeDiagram",
-          "caption": "機率的求法",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>確認一次試驗的基本結果</li><li>判斷是否等可能、是否放回</li><li>用表格或樹狀圖列完整</li><li>數有利結果並約分</li></ol>"
       },
@@ -21841,14 +18187,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "treeDiagram",
-          "caption": "單一事件的機率",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21885,14 +18223,6 @@ window.LECTURE_TAXONOMY = {
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "treeDiagram",
-          "caption": "組合事件的機率",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>確認一次試驗的基本結果</li><li>判斷是否等可能、是否放回</li><li>用表格或樹狀圖列完整</li><li>數有利結果並約分</li></ol>"
       },
@@ -21925,14 +18255,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "treeDiagram",
-          "caption": "簡單的機率問題",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -21969,14 +18291,6 @@ window.LECTURE_TAXONOMY = {
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "treeDiagram",
-          "caption": "撲克牌的機率問題",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>確認一次試驗的基本結果</li><li>判斷是否等可能、是否放回</li><li>用表格或樹狀圖列完整</li><li>數有利結果並約分</li></ol>"
       },
@@ -22009,14 +18323,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "P(A)＝[[frac:n(A)|n(S)]]（各結果等可能）\n0≤P(A)≤1"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "treeDiagram",
-          "caption": "生活中的機率",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -22053,14 +18359,6 @@ window.LECTURE_TAXONOMY = {
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "solidPrism",
-          "caption": "平面與平面",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
@@ -22093,38 +18391,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "直線與平面",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -22161,15 +18427,6 @@ window.LECTURE_TAXONOMY = {
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "parallelLines",
-          "angles": [],
-          "caption": "直線與直線",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
@@ -22202,38 +18459,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "coordinatePlane",
-          "minX": -2,
-          "maxX": 3,
-          "minY": -2,
-          "maxY": 4,
-          "points": [
-            {
-              "x": 0,
-              "y": 0,
-              "label": "O"
-            },
-            {
-              "x": 2,
-              "y": 3,
-              "label": "P"
-            }
-          ],
-          "lines": [
-            {
-              "x1": -2,
-              "y1": -1,
-              "x2": 3,
-              "y2": 4
-            }
-          ],
-          "caption": "空間中線與平面間的關係",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -22270,14 +18495,6 @@ window.LECTURE_TAXONOMY = {
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "solidPrism",
-          "caption": "立體圖形",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
@@ -22310,14 +18527,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "solidPrism",
-          "caption": "角柱",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -22354,16 +18563,6 @@ window.LECTURE_TAXONOMY = {
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "cylinder",
-          "rLabel": "3",
-          "hLabel": "10",
-          "caption": "圓柱",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
@@ -22396,14 +18595,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "cylinder",
-          "caption": "展開圖的判讀",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -22440,14 +18631,6 @@ window.LECTURE_TAXONOMY = {
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "solidPrism",
-          "caption": "由展開圖求體積與表面積",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
@@ -22480,16 +18663,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "cylinder",
-          "rLabel": "2",
-          "hLabel": "5",
-          "caption": "求柱體的體積與表面積",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -22526,16 +18699,6 @@ window.LECTURE_TAXONOMY = {
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "pyramid",
-          "baseLabel": "a",
-          "hLabel": "h",
-          "caption": "角錐",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
@@ -22568,17 +18731,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "cone",
-          "rLabel": "3",
-          "hLabel": "4",
-          "lLabel": "l",
-          "caption": "圓錐",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -22615,16 +18767,6 @@ window.LECTURE_TAXONOMY = {
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "pyramid",
-          "baseLabel": "6",
-          "hLabel": "h",
-          "caption": "求角錐的表面積",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
@@ -22657,16 +18799,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "pyramid",
-          "baseLabel": "10",
-          "hLabel": "h",
-          "caption": "角錐表面積的應用",
-          "verified": true
-        }
       },
       {
         "type": "text",
@@ -22703,17 +18835,6 @@ window.LECTURE_TAXONOMY = {
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
       },
       {
-        "type": "diagram",
-        "spec": {
-          "kind": "cone",
-          "rLabel": "10",
-          "hLabel": "h",
-          "lLabel": "10",
-          "caption": "由展開圖求圓錐的表面積",
-          "verified": true
-        }
-      },
-      {
         "type": "text",
         "html": "<h4>解題流程</h4><ol><li>畫剖面或展開圖</li><li>標底面 B、垂直高 h 與母線 l</li><li>體積與表面積分開計算</li><li>最後檢查平方與立方單位</li></ol>"
       },
@@ -22746,17 +18867,6 @@ window.LECTURE_TAXONOMY = {
       {
         "type": "formula",
         "content": "柱體 V＝Bh\n圓柱側面積＝2πrh"
-      },
-      {
-        "type": "diagram",
-        "spec": {
-          "kind": "cone",
-          "rLabel": "3",
-          "hLabel": "h",
-          "lLabel": "5",
-          "caption": "圓錐表面積的計算",
-          "verified": true
-        }
       },
       {
         "type": "text",

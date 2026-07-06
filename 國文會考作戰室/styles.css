@@ -653,8 +653,9 @@ body.dark .paper-history-empty { background: #15342f; }
 .paper-view-note { color: var(--muted); font-size: .82rem; margin-top: 10px; line-height: 1.6; }
 .archive-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 
-/* Text-only visual safety: exam/question diagrams stay hidden; handbook lecture SVG allowed. */
+/* Text-only visual safety: no student-facing SVG or question images. */
 .question-diagram,
+.lecture-diagram,
 .paper .question img,
 .lecture-example img {
   display: none !important;

@@ -27,7 +27,7 @@ if ("diagram" in sample || "diagramSpec" in sample) fail("shared", "attachDiagra
 if (sample.visualPolicy !== "text-only") fail("shared", "missing-text-only-policy", JSON.stringify(sample));
 
 const lectureSvg = stack.DIAGRAM_ATTACH.attachDiagramText("扇形 圓心角", "math", { topicTitle: "扇形" });
-if (!lectureSvg.includes("<svg")) fail("shared", "attachDiagramText-missing-lecture-svg", lectureSvg.slice(0, 80));
+if (lectureSvg.includes("<svg")) fail("shared", "attachDiagramText-emits-svg", lectureSvg.slice(0, 80));
 
 for (const sub of SUBJECTS) {
   const base = subjectBase(sub);
@@ -40,9 +40,9 @@ for (const sub of SUBJECTS) {
   if (!app.includes(`prepareTextOnlyExam?.(assessment, "${sub.code}")`)) fail(sub.code, "launchAssessment-not-text-only", appFile);
   if (!app.includes("${textOnlyPauseNotice}")) fail(sub.code, "missing-paused-notice", appFile);
   if (!css.includes("Text-only visual safety") || !css.includes("display: none !important")) fail(sub.code, "missing-css-image-safety", cssFile);
-  if (/\.lecture-diagram[\s\S]{0,80}display:\s*none\s*!important/.test(css)) fail(sub.code, "lecture-diagram-hidden", cssFile);
-  if (sub.code === "math" && !/renderLectureDiagram\s*=\s*spec\s*=>\s*window\.DIAGRAM_ENGINE/.test(app)) {
-    fail(sub.code, "lecture-diagram-renderer-disabled", appFile);
+  if (!/\.lecture-diagram[\s\S]{0,80}display:\s*none\s*!important/.test(css)) fail(sub.code, "lecture-diagram-not-hidden", cssFile);
+  if (sub.code === "math" && /renderLectureDiagram\s*=\s*spec\s*=>\s*window\.DIAGRAM_ENGINE/.test(app)) {
+    fail(sub.code, "lecture-diagram-renderer-still-wired", appFile);
   }
 
   const w = loadSubject(sub, stack);
@@ -69,4 +69,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log("OK: exam questions stay text-only; lecture handbook SVG allowed.");
+console.log("OK: student-facing pages stay text-only; no site SVG on exams or handbooks.");

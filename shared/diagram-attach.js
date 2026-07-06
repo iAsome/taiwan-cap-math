@@ -87,17 +87,8 @@ window.DIAGRAM_ATTACH = (() => {
     return textOnlyQuestion(question, subject);
   }
 
-  function attachDiagramText(text, subject, extraCtx = {}) {
-    const infer = window.DIAGRAM_INFER;
-    const engine = window.DIAGRAM_ENGINE;
-    if (!infer || !engine) return "";
-    const ctx = { subject, ...extraCtx };
-    const blob = typeof text === "string" ? text : examBlob(text);
-    if (!infer.needsDiagram(blob, subject, ctx)) return "";
-    const q = typeof text === "object" ? text : null;
-    const override = q ? loadOverride(subject, { ...q, ...extraCtx, text: blob }) : null;
-    const spec = override?.kind ? override : infer.inferDiagramSpec(blob, ctx);
-    return spec?.kind ? engine.renderDiagram({ ...spec, verified: true }) : "";
+  function attachDiagramText(_text, _subject, _extraCtx = {}) {
+    return "";
   }
 
   function subjectFromPath(path) {

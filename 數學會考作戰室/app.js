@@ -3,9 +3,6 @@
   const capAnalysis = window.CAP_ANALYSIS;
   const lectureTaxonomy = window.LECTURE_TAXONOMY || {};
   const quizTaxonomy = window.QUIZ_TAXONOMY || {};
-  const renderDiagram = spec => window.DIAGRAM_ENGINE?.renderDiagram(spec) || "";
-  const renderLectureDiagram = spec => window.DIAGRAM_ENGINE?.renderDiagram(spec) || "";
-  const attachExampleDiagram = (q, topic) => window.DIAGRAM_ATTACH?.attachDiagramText(q, "math", { topicTitle: topic }) || "";
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -252,25 +249,18 @@
     if (block.type === "text") return `<div class="lecture-text">${block.html}</div>`;
     if (block.type === "formula") return `<div class="lecture-formula">${mathBlock(block.content)}</div>`;
     if (block.type === "example") {
-      const exDiagram = attachExampleDiagram(block.q, lectureTaxonomy[state.selectedUnit]?.title || "");
-      return `<div class="lecture-example"><p><strong>例題：</strong>${mathText(block.q)}</p>${exDiagram}<p><strong>解：</strong>${mathText(block.a)}</p></div>`;
+      return `<div class="lecture-example"><p><strong>例題：</strong>${mathText(block.q)}</p><p><strong>解：</strong>${mathText(block.a)}</p></div>`;
     }
     if (block.type === "pitfall") return `<div class="lecture-pitfall"><strong>常見陷阱</strong>${block.html}</div>`;
-    if (block.type === "diagram") return renderLectureDiagram(block.spec);
+    if (block.type === "diagram") return "";
     return "";
   }
 
   function renderLectureArticle(key) {
     const lecture = lectureTaxonomy[key];
     if (!lecture) return `<p class="unit-empty">找不到講義 ${esc(key)}</p>`;
-    const topicDiagram = window.DIAGRAM_ATTACH?.attachDiagramText(lecture.title, "math", {
-      taxonomyKey: key,
-      topicTitle: lecture.title,
-      sectionTitle: lecture.section
-    }) || "";
     return `<article class="lecture-topic-card" id="lecture-${esc(key.replace(/\//g, "-"))}">
       <header><span class="lecture-chapter">${esc(lecture.chapter)}</span><h3>${esc(lecture.title)}</h3><small>${esc(lecture.section)}</small></header>
-      ${topicDiagram}
       <div class="lecture-blocks">${lecture.blocks.map(renderLectureBlock).join("")}</div>
       <footer class="lecture-quiz-link"><a href="?quiz=${esc(lecture.quizId)}&seed=">小考練習 ${esc(lecture.quizId)} →</a></footer>
     </article>`;
@@ -313,7 +303,7 @@
           <section class="lesson-block"><div class="lesson-label">標準解題流程</div><div class="lesson-content"><ol>${unit.steps.map(step => `<li>${mathText(step)}</li>`).join("")}</ol></div></section>
           <section class="lesson-block"><div class="lesson-label">會考快解技巧</div><div class="lesson-content"><ul class="tip-list">${unit.tips.map(tip => `<li>${mathText(tip)}</li>`).join("")}</ul></div></section>
           <section class="lesson-block"><div class="lesson-label">30 秒觀念測驗</div><div class="lesson-content"><div class="quiz-box"><p><strong>題目：</strong>${mathText(unit.quiz.q)}</p><button class="quiz-reveal">顯示解答</button><p class="quiz-answer"><strong>解答：</strong>${mathText(unit.quiz.a)}</p></div></div></section>
-          ${chaptersForUnit(unit.id).length ? `<section class="lesson-block taxonomy-lectures"><div class="lesson-label">細分題型講義</div><div class="lesson-content"><p>以下依教育部章節題型表，列出與本單元相關的 ${chaptersForUnit(unit.id).reduce((n, ch) => n + (quizTaxonomy[ch.id]?.sections || []).reduce((s, sec) => s + sec.topics.length, 0), 0)} 個題型講義（含圖形概念示意）。</p>${chaptersForUnit(unit.id).map(ch => `<details class="lecture-chapter"><summary><strong>${esc(ch.title.replace(/^國[一二三][上下]第[一二三四五六]單元：/, ""))}</strong><span>${esc(ch.id)}</span></summary><div class="lecture-topic-list">${(quizTaxonomy[ch.id]?.sections || []).flatMap(sec => sec.topics.map(t => renderLectureArticle(`${ch.id}/${t.id}`))).join("")}</div></details>`).join("")}</div></section>` : ""}
+          ${chaptersForUnit(unit.id).length ? `<section class="lesson-block taxonomy-lectures"><div class="lesson-label">細分題型講義</div><div class="lesson-content"><p>以下依教育部章節題型表，列出與本單元相關的 ${chaptersForUnit(unit.id).reduce((n, ch) => n + (quizTaxonomy[ch.id]?.sections || []).reduce((s, sec) => s + sec.topics.length, 0), 0)} 個題型講義（純文字）。</p>${chaptersForUnit(unit.id).map(ch => `<details class="lecture-chapter"><summary><strong>${esc(ch.title.replace(/^國[一二三][上下]第[一二三四五六]單元：/, ""))}</strong><span>${esc(ch.id)}</span></summary><div class="lecture-topic-list">${(quizTaxonomy[ch.id]?.sections || []).flatMap(sec => sec.topics.map(t => renderLectureArticle(`${ch.id}/${t.id}`))).join("")}</div></details>`).join("")}</div></section>` : ""}
         </div>
         <button class="complete-button ${state.completed.has(unit.id) ? "done" : ""}" data-complete="${unit.id}">${state.completed.has(unit.id) ? "✓ 已掌握這個單元（按一下取消）" : "標記為已掌握"}</button>
       </article>`;
@@ -331,7 +321,7 @@
   function renderAtlas() {
     const chapters = window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter" && quizTaxonomy[item.id]);
     $("#atlasContent").innerHTML = `
-      <section class="taxonomy-atlas"><p class="eyebrow">537 TOPIC LECTURES</p><h2>依章節題型表的細分講義</h2><p>每個題型各 10 組變體題；小考種子碼決定每題用哪一組。點開章節可閱讀完整講義與 SVG 圖形。</p>
+      <section class="taxonomy-atlas"><p class="eyebrow">537 TOPIC LECTURES</p><h2>依章節題型表的細分講義</h2><p>每個題型各 10 組變體題；小考種子碼決定每題用哪一組。點開章節可閱讀完整文字講義。</p>
         ${chapters.map(ch => `<details class="lecture-chapter atlas-chapter"><summary><strong>${esc(ch.title)}</strong><span>${(quizTaxonomy[ch.id]?.sections || []).reduce((n, s) => n + s.topics.length, 0)} 題型</span></summary><div class="lecture-topic-list">${(quizTaxonomy[ch.id]?.sections || []).map(sec => `<div class="lecture-section"><h4>${esc(sec.title)}</h4>${sec.topics.map(t => renderLectureArticle(`${ch.id}/${t.id}`)).join("")}</div>`).join("")}</div></details>`).join("")}
       </section>
       <div class="domain-grid">${domains.map(d => `<article class="domain-card"><span>${d.mark}</span><h3>${esc(d.name)}</h3><p>${mathText(d.desc)}</p><ul>${d.skills.map(s => `<li>${mathText(s)}</li>`).join("")}</ul></article>`).join("")}</div>
