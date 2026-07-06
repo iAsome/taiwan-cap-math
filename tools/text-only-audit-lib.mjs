@@ -50,7 +50,9 @@ export function loadDiagramStack() {
   };
   vm.createContext(sandbox);
   vm.runInContext(fs.readFileSync(path.join(shared, "fraction-markup.js"), "utf8"), sandbox, { filename: "fraction-markup.js" });
-  vm.runInContext(fs.readFileSync(path.join(shared, "diagram-attach.js"), "utf8"), sandbox, { filename: "diagram-attach.js" });
+  for (const file of ["diagram-engine.js", "diagram-infer.js", "diagram-overrides.js", "diagram-attach.js"]) {
+    vm.runInContext(fs.readFileSync(path.join(shared, file), "utf8"), sandbox, { filename: file });
+  }
   Object.assign(sandbox, sandbox.window);
   return sandbox;
 }

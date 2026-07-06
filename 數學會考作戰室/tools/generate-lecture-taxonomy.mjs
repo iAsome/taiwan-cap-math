@@ -4,10 +4,16 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const shared = path.join(root, "..", "shared");
 const context = vm.createContext({ window: {}, console });
 for (const file of ["data.js", "quiz-taxonomy.js", "quiz-variant-bank.js"]) {
   vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
 }
+for (const file of ["diagram-engine.js", "diagram-infer.js", "diagram-overrides.js"]) {
+  vm.runInContext(fs.readFileSync(path.join(shared, file), "utf8"), context, { filename: file });
+}
+const inferDiagramSpec = (text, ctx) => context.window.DIAGRAM_INFER.inferDiagramSpec(text, ctx);
+const needsDiagram = (text, ctx) => context.window.DIAGRAM_INFER.needsDiagram(text, "math", ctx);
 
 const taxonomy = context.window.QUIZ_TAXONOMY || {};
 const bank = context.window.QUIZ_VARIANT_BANK || {};
@@ -50,6 +56,7 @@ function topicDefinition(title, section, unit) {
 
 const lectures = {};
 let count = 0;
+let diagramCount = 0;
 
 for (const [quizId, chapter] of Object.entries(taxonomy)) {
   const unit = unitForQuiz(quizId);
@@ -58,6 +65,12 @@ for (const [quizId, chapter] of Object.entries(taxonomy)) {
       const key = `${quizId}/${topic.id}`;
       const presets = bank[key];
       if (!presets?.length) throw new Error(`缺少變體題庫 ${key}`);
+      const ctx = { subject: "math", topicTitle: topic.title, sectionTitle: section.title, taxonomyKey: key };
+      let diagram = inferDiagramSpec(presets[0].text, ctx) || (needsDiagram(`${topic.title}${section.title}`, ctx) ? inferDiagramSpec("", ctx) : null);
+      if (diagram) {
+        diagram = { ...diagram, verified: true };
+        diagramCount += 1;
+      }
       const ex1 = formatExample(presets[0], "例題一");
       const ex2 = presets[1].text !== presets[0].text ? formatExample(presets[1], "例題二") : null;
       const blocks = [
@@ -67,7 +80,7 @@ for (const [quizId, chapter] of Object.entries(taxonomy)) {
         { type: "example", q: ex1.q, a: ex1.a }
       ];
       if (ex2) blocks.push({ type: "example", q: ex2.q, a: ex2.a });
-      // ponytail: no guessed lecture figures; add a verified diagram block only when it matches this exact topic/example.
+      if (diagram) blocks.splice(2, 0, { type: "diagram", spec: diagram });
       blocks.push(
         { type: "pitfall", html: `<p><strong>易錯：</strong>${presets[0].trap || unit.tips[0]}</p><p><strong>快解：</strong>${presets[0].tip || unit.tips[1] || unit.tips[0]}</p>` },
         { type: "text", html: `<p><strong>與小考對應：</strong>章節 ${quizId} — 題型 ${topic.id} — 變體索引 0–9 由種子碼展開。</p>` }
@@ -79,4 +92,4 @@ for (const [quizId, chapter] of Object.entries(taxonomy)) {
 }
 
 fs.writeFileSync(path.join(root, "lecture-taxonomy.js"), `window.LECTURE_TAXONOMY = ${JSON.stringify(lectures, null, 2)};\n`, "utf8");
-console.log(`Generated ${count} detailed lecture entries → lecture-taxonomy.js`);
+console.log(`Generated ${count} lecture entries (${diagramCount} diagram blocks) → lecture-taxonomy.js`);

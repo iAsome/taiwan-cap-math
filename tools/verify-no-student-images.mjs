@@ -19,13 +19,15 @@ function fail(subject, reason, detail = "") {
 }
 
 const sample = stack.DIAGRAM_ATTACH.attachDiagram({
-  text: "\u5982\u53f3\u5716\uff0c\u4e00\u500b\u534a\u5f91 r = 5 \u7684\u5713\uff0c\u6c42\u9762\u7a4d\u3002",
+  text: "如右圖，一個半徑 r = 5 的圓，求面積。",
   diagram: "<svg></svg>",
   diagramSpec: { verified: true }
 }, "math");
 if ("diagram" in sample || "diagramSpec" in sample) fail("shared", "attachDiagram-kept-visual", JSON.stringify(sample));
 if (sample.visualPolicy !== "text-only") fail("shared", "missing-text-only-policy", JSON.stringify(sample));
-if (stack.DIAGRAM_ATTACH.attachDiagramText("triangle", "math").includes("<svg")) fail("shared", "attachDiagramText-returned-svg");
+
+const lectureSvg = stack.DIAGRAM_ATTACH.attachDiagramText("扇形 圓心角", "math", { topicTitle: "扇形" });
+if (!lectureSvg.includes("<svg")) fail("shared", "attachDiagramText-missing-lecture-svg", lectureSvg.slice(0, 80));
 
 for (const sub of SUBJECTS) {
   const base = subjectBase(sub);
@@ -38,7 +40,10 @@ for (const sub of SUBJECTS) {
   if (!app.includes(`prepareTextOnlyExam?.(assessment, "${sub.code}")`)) fail(sub.code, "launchAssessment-not-text-only", appFile);
   if (!app.includes("${textOnlyPauseNotice}")) fail(sub.code, "missing-paused-notice", appFile);
   if (!css.includes("Text-only visual safety") || !css.includes("display: none !important")) fail(sub.code, "missing-css-image-safety", cssFile);
-  if (sub.code === "math" && !app.includes("const renderLectureDiagram = () => \"\";")) fail(sub.code, "lecture-diagram-renderer-enabled", appFile);
+  if (/\.lecture-diagram[\s\S]{0,80}display:\s*none\s*!important/.test(css)) fail(sub.code, "lecture-diagram-hidden", cssFile);
+  if (sub.code === "math" && !/renderLectureDiagram\s*=\s*spec\s*=>\s*window\.DIAGRAM_ENGINE/.test(app)) {
+    fail(sub.code, "lecture-diagram-renderer-disabled", appFile);
+  }
 
   const w = loadSubject(sub, stack);
   const items = collectQuestions(w, sub.code);
@@ -64,4 +69,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log("OK: no student-facing question/lecture images are rendered; text-only policy is active.");
+console.log("OK: exam questions stay text-only; lecture handbook SVG allowed.");

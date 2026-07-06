@@ -11,29 +11,55 @@ window.DIAGRAM_ATTACH = (() => {
     "公民會考作戰室": "civics"
   };
 
-  const IMAGE_REF_RE = /\u5982[\u4e0a\u4e0b\u5de6\u53f3]?\u5716|[\u4e0a\u4e0b\u5de6\u53f3]\u5716|\u6839\u64da\u5716|\u5716\u4e2d|\u9644\u5716|\u898b\u5716|\u5716[\uff08(\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u53410-9]|\u8868[\uff08(\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u53410-9]|\u5716\u6240\u793a|\u8868\u6240\u793a|\u7167\u7247|\u5716\u7247/i;
-  const SELF_CONTAINED_RE = /[:：]|分別為|依序|上方|下方|左側|右側|中央|橫軸|縱軸|座標|坐標|\([A-D]\)|（[A-D]）|\(-?\d+(?:\.\d+)?\s*,\s*-?\d+(?:\.\d+)?\)|甲.*乙|A.*B/;
+  // ponytail: hybrid — exam stem-only for image-ref; tip/trap 的「盒狀圖中線」不算圖依賴
+  const IMAGE_REF_RE = /\u5982[\u4e0a\u4e0b\u5de6\u53f3]?\u5716|[\u4e0a\u4e0b\u5de6\u53f3]\u5716|\u6839\u64da\u5716|(?<![形線狀盒規作])\u5716\u4e2d|\u9644\u5716|\u898b\u5716|\u5716[\uff08(\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u53410-9]|\u8868[\uff08(\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u53410-9]|\u5716\u6240\u793a|\u8868\u6240\u793a|\u5716\u7247/i;
+  const SELF_CONTAINED_RE = /[:：]|分別為|依序|上方|下方|左側|右側|中央|橫軸|縱軸|座標|坐標|Q[₁₁₂₃3]|四分位|\([A-D]\)|（[A-D]）|（[^）]{1,40}）|\(-?\d+(?:\.\d+)?\s*,\s*-?\d+(?:\.\d+)?\)|甲.*乙|A.*B|\d+(?:\.\d+)?%/;
   const SYMBOLS = [
     ["r", /半徑|圓|圓柱|圓錐|扇形|弧長|周長|面積/, "r 代表半徑"],
     ["h", /高|高度|圓柱|圓錐|三角形|梯形|柱體|錐體/, "h 代表高"],
     ["l", /母線|斜高|圓錐/, "l 代表母線（斜高）"],
     ["m", /斜率|y\s*[=＝]\s*m|mx|線型函數|直線/, "m 代表斜率"],
-    ["x", /\u5750\u6a19|\u5ea7\u6a19|\(x\s*,\s*y\)|x\s*\u8ef8|\u51fd\u6578|\u65b9\u7a0b\u5f0f|\u672a\u77e5\u6578|\u516c\u91cc|\u7e3d\u6578|\u500b\u6578|\u8cbb\u7528|x\s*[\u00b0\u5ea6]|\u89d2/, "x \u4ee3\u8868\u984c\u76ee\u4e2d\u7684\u672a\u77e5\u6578\u3001\u6a6b\u5750\u6a19\u6216\u8f38\u5165\u91cf\uff0c\u4f9d\u984c\u610f\u5b9a\u7fa9"],
+    ["x", /\u5750\u6a19|\u5ea7\u6a19|\(x\s*,\s*y\)|x\s*\u8ef8|\u51fd\u6578|\u65b9\u7a0b\u5f0f|\u672a\u77e5\u6578|\u516c\u91cc|\u7e3d\u6578|\u500b\u6578|\u8cbb\u7528|x\s*[\u00b0\u5ea6]|\u89d2/, "x 代表題目中的未知數、橫坐標或輸入量，依題意定義"],
     ["y", /坐標|座標|\(x\s*,\s*y\)|y\s*軸|函數|方程式|費用|輸出/, "y 代表題目中的未知數、縱坐標或輸出量，依題意定義"],
     ["a", /a[₁1]?|ax|二次函數|等差|係數|常數|公式/, "a 代表已知數、係數或首項，依公式位置判斷"],
     ["b", /by|bx|y\s*[=＝]\s*mx\s*[+＋-]|截距|係數|常數|公式/, "b 代表已知數、係數或 y 截距，依公式位置判斷"],
     ["c", /ax|by|方程式|係數|常數|斜邊|公式/, "c 代表已知常數；在直角三角形公式中常代表斜邊"],
-    ["n", /\u7b2c\s*n|\u7b2c.*\u9805|\u9805\u6578|\u500b\u6578|\u6b21\u6578|\u6a23\u672c|\u6578\u5217|\u7d1a\u6578|\u6b63\s*n|n\s*\u908a\u5f62|\u591a\u908a\u5f62|2n|\u5076\u6578|\u6574\u6578|\u8b49\u660e/, "n \u4ee3\u8868\u9805\u6578\u3001\u500b\u6578\u3001\u6b21\u6578\u6216\u4e00\u500b\u6574\u6578"],
-    ["k", /\u6b63\u6bd4|\u53cd\u6bd4|\u6bd4\u4f8b\u5e38\u6578|\u9802\u9ede|y\s*[=\uff1d].*k|\u51fd\u6578|\u76f8\u4f3c\u6bd4|\u76f8\u4f3c|\u5468\u9577\u6bd4|\u9762\u7a4d\u6bd4|k\s*[=\uff1d]/, "k \u4ee3\u8868\u6bd4\u4f8b\u5e38\u6578\u3001\u76f8\u4f3c\u6bd4\u6216\u9802\u9ede\u7684 y \u503c\uff0c\u4f9d\u984c\u610f\u5b9a\u7fa9"],
+    ["n", /\u7b2c\s*n|\u7b2c.*\u9805|\u9805\u6578|\u500b\u6578|\u6b21\u6578|\u6a23\u672c|\u6578\u5217|\u7d1a\u6578|\u6b63\s*n|n\s*\u908a\u5f62|\u591a\u908a\u5f62|2n|\u5076\u6578|\u6574\u6578|\u8b49\u660e/, "n 代表項數、個數、次數或一個整數"],
+    ["k", /\u6b63\u6bd4|\u53cd\u6bd4|\u6bd4\u4f8b\u5e38\u6578|\u9802\u9ede|y\s*[=\uff1d].*k|\u51fd\u6578|\u76f8\u4f3c\u6bd4|\u76f8\u4f3c|\u5468\u9577\u6bd4|\u9762\u7a4d\u6bd4|k\s*[=\uff1d]/, "k 代表比例常數、相似比或頂點的 y 值，依題意定義"],
   ];
 
-  const textOf = q => [q?.text, q?.formula, q?.concept, q?.tip, q?.trap, q?.taxonomyTopic, q?.taxonomySection, ...(q?.choices || []), ...(q?.steps || [])].filter(Boolean).join(" ");
-  const hasImageRef = q => IMAGE_REF_RE.test(textOf(q));
-  const isSelfContained = q => !hasImageRef(q) || SELF_CONTAINED_RE.test(textOf(q));
+  const examBlob = q => [q?.text, ...(q?.choices || [])].filter(Boolean).join(" ");
+  const metaBlob = q => [q?.text, q?.formula, q?.concept, q?.tip, q?.trap, q?.taxonomyTopic, q?.taxonomySection, ...(q?.choices || []), ...(q?.steps || [])].filter(Boolean).join(" ");
+  const hasImageRef = text => IMAGE_REF_RE.test(String(text || ""));
+  const isSelfContained = q => !hasImageRef(examBlob(q)) || SELF_CONTAINED_RE.test(examBlob(q));
   const visualStatus = q => isSelfContained(q) ? "self-contained" : "needs-text";
 
+  function inferCtx(question, subject) {
+    return {
+      subject,
+      topicTitle: question.taxonomyTopic || question.topicTitle || "",
+      sectionTitle: question.taxonomySection || question.sectionTitle || "",
+      choices: question.choices,
+      steps: question.steps,
+      taxonomyKey: question.taxonomyKey
+    };
+  }
+
+  function loadOverride(subject, question) {
+    const table = window.DIAGRAM_OVERRIDES?.[subject];
+    if (!table) return null;
+    const key = question.taxonomyKey || question.id;
+    if (key && typeof table[key] === "function") {
+      try { return table[key](question); } catch { /* optional override */ }
+    }
+    if (key && table[key] && typeof table[key] === "object") return table[key];
+    const infer = window.DIAGRAM_INFER;
+    const hash = infer?.stripFrac?.(question.text || "")?.slice(0, 80);
+    return hash && table[hash] ? table[hash] : null;
+  }
+
   function symbolNotes(q) {
-    const text = textOf(q);
+    const text = metaBlob(q);
     const notes = [];
     for (const [symbol, trigger, note] of SYMBOLS) {
       const mentionsSymbol = new RegExp(`(^|[^A-Za-z])${symbol}([^A-Za-z]|$)`, "i").test(text);
@@ -49,7 +75,7 @@ window.DIAGRAM_ATTACH = (() => {
     return {
       ...rest,
       visualPolicy: "text-only",
-      visualReason: "全站學生端圖片已停用；題目必須靠文字作答。",
+      visualReason: "測驗作答頁不顯示圖；題目須靠文字作答。",
       visualTextStatus: status,
       visualRisk: status === "needs-text" ? ["image-dependent"] : [],
       pausedReason: status === "needs-text" ? "題幹仍依賴圖片，待文字化後恢復出題。" : "",
@@ -58,12 +84,20 @@ window.DIAGRAM_ATTACH = (() => {
   }
 
   function attachDiagram(question, subject) {
-    // ponytail: one shared kill switch is safer than chasing every renderer/app.
     return textOnlyQuestion(question, subject);
   }
 
-  function attachDiagramText() {
-    return "";
+  function attachDiagramText(text, subject, extraCtx = {}) {
+    const infer = window.DIAGRAM_INFER;
+    const engine = window.DIAGRAM_ENGINE;
+    if (!infer || !engine) return "";
+    const ctx = { subject, ...extraCtx };
+    const blob = typeof text === "string" ? text : examBlob(text);
+    if (!infer.needsDiagram(blob, subject, ctx)) return "";
+    const q = typeof text === "object" ? text : null;
+    const override = q ? loadOverride(subject, { ...q, ...extraCtx, text: blob }) : null;
+    const spec = override?.kind ? override : infer.inferDiagramSpec(blob, ctx);
+    return spec?.kind ? engine.renderDiagram({ ...spec, verified: true }) : "";
   }
 
   function subjectFromPath(path) {

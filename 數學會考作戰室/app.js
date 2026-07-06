@@ -4,7 +4,7 @@
   const lectureTaxonomy = window.LECTURE_TAXONOMY || {};
   const quizTaxonomy = window.QUIZ_TAXONOMY || {};
   const renderDiagram = spec => window.DIAGRAM_ENGINE?.renderDiagram(spec) || "";
-  const renderLectureDiagram = () => "";
+  const renderLectureDiagram = spec => window.DIAGRAM_ENGINE?.renderDiagram(spec) || "";
   const attachExampleDiagram = (q, topic) => window.DIAGRAM_ATTACH?.attachDiagramText(q, "math", { topicTitle: topic }) || "";
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
