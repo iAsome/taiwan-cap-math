@@ -3,7 +3,7 @@ import path from "node:path";
 import {
   SUBJECTS,
   collectQuestions,
-  loadDiagramStack,
+  loadTextOnlyStack,
   loadSubject,
   questionBlob,
   root
@@ -12,10 +12,10 @@ import {
 const notesDir = path.join(root, "developer-notes", "text-only-image-policy");
 fs.mkdirSync(notesDir, { recursive: true });
 
-const stack = loadDiagramStack();
+const stack = loadTextOnlyStack();
 const imageDependent = [];
 const symbolClarity = [];
-const symbolAssignRe = /(^|[\s\u3002\uff0c\uff1b;,.、])([xyhrlmnkabc])\s*[=＝]/i;
+const symbolAssignRe = /(^|[\s\u3002\uff0c\uff1b;,.??!?])([xyhrlmnkabc])\s*[=?]/;
 
 for (const sub of SUBJECTS) {
   const w = loadSubject(sub, stack);
@@ -24,7 +24,7 @@ for (const sub of SUBJECTS) {
   const seenSymbol = new Set();
 
   for (const { source, q } of items) {
-    const out = stack.DIAGRAM_ATTACH.attachDiagram({ ...q }, sub.code);
+    const out = stack.TEXT_ONLY_POLICY.normalizeQuestion({ ...q }, sub.code);
     const key = `${sub.code}:${source}:${q.taxonomyKey || ""}:${q.text || ""}`;
     if (out.visualTextStatus === "needs-text" && !seenImage.has(key)) {
       seenImage.add(key);

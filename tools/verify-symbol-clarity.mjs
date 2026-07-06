@@ -3,14 +3,14 @@ import path from "node:path";
 import {
   SUBJECTS,
   collectQuestions,
-  loadDiagramStack,
+  loadTextOnlyStack,
   loadSubject,
   subjectBase
 } from "./text-only-audit-lib.mjs";
 import { auditQuestion } from "./symbol-stem-lib.mjs";
 
 const math = SUBJECTS.find(s => s.code === "math");
-const stack = loadDiagramStack();
+const stack = loadTextOnlyStack();
 const failures = [];
 const app = fs.readFileSync(path.join(subjectBase(math), "app.js"), "utf8");
 
@@ -34,17 +34,17 @@ const samples = [
 ];
 
 for (const q of samples) {
-  const { ok } = auditQuestion(q, qq => stack.DIAGRAM_ATTACH.attachDiagram(qq, "math"));
+  const { ok } = auditQuestion(q, qq => stack.TEXT_ONLY_POLICY.normalizeQuestion(qq, "math"));
   if (!ok) failures.push(`sample-failed:${q.expect}`);
 }
 
 const w = loadSubject(math, stack);
 let checked = 0;
 for (const { source, q } of collectQuestions(w, "math")) {
-  const out = stack.DIAGRAM_ATTACH.attachDiagram({ ...q }, "math");
+  const out = stack.TEXT_ONLY_POLICY.normalizeQuestion({ ...q }, "math");
   if (out.visualTextStatus === "needs-text") continue;
   checked++;
-  const { ok, reason, letters } = auditQuestion(q, qq => stack.DIAGRAM_ATTACH.attachDiagram(qq, "math"));
+  const { ok, reason, letters } = auditQuestion(q, qq => stack.TEXT_ONLY_POLICY.normalizeQuestion(qq, "math"));
   if (!ok) failures.push(`question-${reason}:${letters?.join("+") || "?"}:${source}:${String(q.text || "").slice(0, 80)}`);
 }
 

@@ -431,7 +431,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
-    assessment = window.DIAGRAM_ATTACH?.prepareTextOnlyExam?.(assessment, "chinese") || assessment;
+    assessment = window.TEXT_ONLY_POLICY?.prepareTextOnlyExam?.(assessment, "chinese") || assessment;
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;
@@ -528,7 +528,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
       <header class="paper-cover"><div><p class="eyebrow">現行官方結構</p><h2>國中教育會考國文科模擬題本</h2><p>42 題選擇題｜70 分鐘｜五大內容類別均衡分布</p></div><div class="paper-stamp">42題<br>官方結構</div></header>
       <div class="paper-instructions"><div><strong>42</strong><span>四選一｜含多組共用選文題組</span></div><div><strong>70 min</strong><span>題型順序依卷別種子打亂</span></div></div>`;
-    const textOnlyPauseNotice = window.DIAGRAM_ATTACH?.pauseNotice?.(state.exam) || "";
+    const textOnlyPauseNotice = window.TEXT_ONLY_POLICY?.pauseNotice?.(state.exam) || "";
 
     $("#paper").innerHTML = `
       ${cover}

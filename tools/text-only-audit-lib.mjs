@@ -40,7 +40,7 @@ export function hasStudentImageMarkup(value) {
   return /<(?:img|svg)\b|class=["'](?:question|lecture)-diagram["']/i.test(String(value || ""));
 }
 
-export function loadDiagramStack() {
+export function loadTextOnlyStack() {
   const sandbox = {
     window: {},
     console,
@@ -50,14 +50,12 @@ export function loadDiagramStack() {
   };
   vm.createContext(sandbox);
   vm.runInContext(fs.readFileSync(path.join(shared, "fraction-markup.js"), "utf8"), sandbox, { filename: "fraction-markup.js" });
-  for (const file of ["diagram-engine.js", "diagram-infer.js", "diagram-overrides.js", "diagram-attach.js"]) {
-    vm.runInContext(fs.readFileSync(path.join(shared, file), "utf8"), sandbox, { filename: file });
-  }
+  vm.runInContext(fs.readFileSync(path.join(shared, "text-only-policy.js"), "utf8"), sandbox, { filename: "text-only-policy.js" });
   Object.assign(sandbox, sandbox.window);
   return sandbox;
 }
 
-export function loadSubject(sub, stack = loadDiagramStack()) {
+export function loadSubject(sub, stack = loadTextOnlyStack()) {
   const base = subjectBase(sub);
   const sandbox = {
     window: {},
@@ -65,10 +63,10 @@ export function loadSubject(sub, stack = loadDiagramStack()) {
     Math,
     Date,
     FRACTION_MARKUP: stack.FRACTION_MARKUP,
-    DIAGRAM_ATTACH: stack.DIAGRAM_ATTACH
+    TEXT_ONLY_POLICY: stack.TEXT_ONLY_POLICY
   };
   vm.createContext(sandbox);
-  vm.runInContext("window.FRACTION_MARKUP = FRACTION_MARKUP; window.DIAGRAM_ATTACH = DIAGRAM_ATTACH;", sandbox);
+  vm.runInContext("window.FRACTION_MARKUP = FRACTION_MARKUP; window.TEXT_ONLY_POLICY = TEXT_ONLY_POLICY;", sandbox);
   for (const file of [sub.data, ...sub.extra, "questions.js"]) {
     const p = path.join(base, file);
     if (fs.existsSync(p)) vm.runInContext(fs.readFileSync(p, "utf8"), sandbox, { filename: file });

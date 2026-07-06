@@ -230,9 +230,6 @@ input:focus, select:focus, textarea:focus { border-color: var(--green); box-shad
 .reading-passage { border-top: 4px solid var(--coral); border-bottom: 1px solid #d8ded9; background: #f7f3e9; padding: 27px 30px; }
 .reading-passage h3 { margin-bottom: 9px; }
 .reading-passage p:last-child { margin: 0; color: var(--ink-2); font-size: .8rem; line-height: 1.95; }
-.question-diagram { width: min(100%, 430px); display: block; margin: 10px auto 20px; color: var(--ink); background: white; border: 1px solid #d5dcd7; border-radius: 8px; padding: 12px; }
-.question-diagram text { fill: currentColor; font: 700 16px "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif; }
-.diagram-dim-label { font-weight: 700; fill: #c0392b; }
 .choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .choice { display: flex; align-items: center; gap: 9px; min-height: 48px; border: 1px solid #d2d8d4; border-radius: 8px; background: transparent; padding: 9px 12px; text-align: left; }
 .choice:hover { border-color: #8aa69d; background: #f3f7f4; }
@@ -654,8 +651,6 @@ body.dark .paper-history-empty { background: #241e18; }
 .archive-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 
 /* Text-only visual safety: no student-facing SVG or question images. */
-.question-diagram,
-.lecture-diagram,
 .paper .question img,
 .lecture-example img {
   display: none !important;

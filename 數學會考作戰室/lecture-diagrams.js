@@ -1,1 +1,0 @@
-window.LECTURE_DIAGRAMS = window.DIAGRAM_ENGINE;

@@ -20,14 +20,14 @@ window.EXAM_ENGINE = (() => {
     for (let i = out.length - 1; i > 0; i--) { const j = ri(r, 0, i); [out[i], out[j]] = [out[j], out[i]]; }
     return out;
   }
-  function withDiagram(question) {
-    return typeof DIAGRAM_ATTACH !== "undefined" ? DIAGRAM_ATTACH.attachDiagram(question, "chinese") : question;
+  function withTextOnlyPolicy(question) {
+    return typeof TEXT_ONLY_POLICY !== "undefined" ? TEXT_ONLY_POLICY.normalizeQuestion(question, "chinese") : question;
   }
   function mc(r, unitId, difficulty, text, correct, distractors, steps, tip, trap, concept) {
     const FM = FRACTION_MARKUP;
     const correctNorm = FM.normalizeChoice(String(correct));
     const choices = shuffled(r, FM.fillMcValues(correct, distractors).map(v => FM.normalizeChoice(v)));
-    return withDiagram({ type: "mc", unitId, difficulty, text, choices, answer: choices.indexOf(correctNorm), steps, tip, trap, concept: concept || U[unitId - 1].summary, formula: U[unitId - 1].formula });
+    return withTextOnlyPolicy({ type: "mc", unitId, difficulty, text, choices, answer: choices.indexOf(correctNorm), steps, tip, trap, concept: concept || U[unitId - 1].summary, formula: U[unitId - 1].formula });
   }
   function bank(r, unitId, difficulty, variants) {
     const v = pick(r, variants);

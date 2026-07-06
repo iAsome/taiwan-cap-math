@@ -227,19 +227,9 @@ input:focus, select:focus, textarea:focus { border-color: var(--green); box-shad
 .question-tag.ability { color: #875c1c; background: var(--gold-soft); }
 .difficulty { color: var(--gold); font-size: .67rem; letter-spacing: 2px; }
 .question-text { margin: 17px 0 15px; font-size: .95rem; line-height: 1.95; white-space: pre-line; }
-.shared-figure-question .question-text { margin-bottom: 10px; }
-.shared-subquestions { display: grid; gap: 16px; margin-top: 16px; }
-.shared-subquestion { border-top: 1px solid var(--line); padding-top: 14px; }
-.shared-subquestion h4 { margin: 0 0 10px; color: var(--green); font-size: .86rem; }
 .reading-passage { border-top: 4px solid var(--coral); border-bottom: 1px solid #d8ded9; background: #f7f3e9; padding: 27px 30px; }
 .reading-passage h3 { margin-bottom: 9px; }
 .reading-passage p:last-child { margin: 0; color: var(--ink-2); font-size: .8rem; line-height: 1.95; }
-.question-diagram { width: min(100%, 430px); display: block; margin: 10px auto 20px; color: var(--ink); background: white; border: 1px solid #d5dcd7; border-radius: 8px; padding: 12px; }
-.question-diagram text { fill: currentColor; font: 700 16px "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif; }
-.diagram-dim-label { font-weight: 700; fill: #c0392b; }
-.lecture-diagram { width: min(100%, 420px); margin: 12px 0 16px; padding: 10px; border: 1px solid #d5dcd7; border-radius: 8px; background: white; color: var(--ink); }
-.lecture-diagram svg { display: block; max-width: 100%; height: auto; }
-.lecture-diagram-caption { font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
 .lecture-text h4 { margin: .6em 0 .3em; }
 .lecture-formula { padding: 10px 12px; border-radius: 8px; background: #f4f7f5; margin: 10px 0; }
 .lecture-example { border-left: 3px solid var(--green); padding: 8px 12px; margin: 10px 0; background: #f8fbf9; }
@@ -691,8 +681,6 @@ body.dark .paper-history-empty { background: #15342f; }
 .archive-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 
 /* Text-only visual safety: no student-facing SVG or question images. */
-.question-diagram,
-.lecture-diagram,
 .paper .question img,
 .lecture-example img {
   display: none !important;

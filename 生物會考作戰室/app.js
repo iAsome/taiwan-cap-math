@@ -385,7 +385,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
-    assessment = window.DIAGRAM_ATTACH?.prepareTextOnlyExam?.(assessment, "biology") || assessment;
+    assessment = window.TEXT_ONLY_POLICY?.prepareTextOnlyExam?.(assessment, "biology") || assessment;
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;
@@ -481,7 +481,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
       <header class="paper-cover"><div><p class="eyebrow">原創練習 · 15 單元覆蓋</p><h2>生物模擬測驗</h2><p>30 題四選一｜40 分鐘｜依 15 個單元平均出題</p></div><div class="paper-stamp">MOCK<br>原創練習</div></header>
       <div class="paper-instructions"><div><strong>30</strong><span>四選一｜全範圍覆蓋</span></div><div><strong>40 min</strong><span>題目與選項順序依卷別種子打亂</span></div></div>`;
-    const textOnlyPauseNotice = window.DIAGRAM_ATTACH?.pauseNotice?.(state.exam) || "";
+    const textOnlyPauseNotice = window.TEXT_ONLY_POLICY?.pauseNotice?.(state.exam) || "";
 
     $("#paper").innerHTML = `
       ${cover}

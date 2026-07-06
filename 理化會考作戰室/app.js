@@ -404,7 +404,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
-    assessment = window.DIAGRAM_ATTACH?.prepareTextOnlyExam?.(assessment, "physics-chem") || assessment;
+    assessment = window.TEXT_ONLY_POLICY?.prepareTextOnlyExam?.(assessment, "physics-chem") || assessment;
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;
@@ -501,7 +501,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
       <header class="paper-cover"><div><p class="eyebrow">21 單元原創練習</p><h2>理化模擬測驗</h2><p>全部為四選一選擇題｜約 40 分鐘｜涵蓋 21 個理化單元</p></div><div class="paper-stamp">理化<br>範圍練習</div></header>
       <div class="paper-instructions"><div><strong>${mcCount}</strong><span>四選一｜每單元至少 1 題</span></div><div><strong>40 min</strong><span>建議作答時間</span></div></div>`;
-    const textOnlyPauseNotice = window.DIAGRAM_ATTACH?.pauseNotice?.(state.exam) || "";
+    const textOnlyPauseNotice = window.TEXT_ONLY_POLICY?.pauseNotice?.(state.exam) || "";
 
     $("#paper").innerHTML = `
       ${cover}

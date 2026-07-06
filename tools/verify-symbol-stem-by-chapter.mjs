@@ -4,7 +4,7 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import {
   SUBJECTS,
-  loadDiagramStack,
+  loadTextOnlyStack,
   loadSubject,
 } from "./text-only-audit-lib.mjs";
 import { auditQuestion } from "./symbol-stem-lib.mjs";
@@ -13,10 +13,10 @@ const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const mathDir = path.join(root, "數學會考作戰室");
 const filterChapter = process.argv[2] || "";
 
-const stack = loadDiagramStack();
+const stack = loadTextOnlyStack();
 const math = SUBJECTS.find(s => s.code === "math");
 const w = loadSubject(math, stack);
-const attach = q => stack.DIAGRAM_ATTACH.attachDiagram(q, "math");
+const attach = q => stack.TEXT_ONLY_POLICY.normalizeQuestion(q, "math");
 
 const ctx = vm.createContext({ window: {}, console, Math, Date });
 vm.runInContext(fs.readFileSync(path.join(mathDir, "data.js"), "utf8"), ctx, { filename: "data.js" });

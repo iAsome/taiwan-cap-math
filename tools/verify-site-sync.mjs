@@ -9,7 +9,7 @@ const expectedCache = hubHtml.match(/\?v=(202607\d+[a-z])/g)?.[0]?.slice(3);
 if (!expectedCache) throw new Error("hub index.html: missing ?v= cache token");
 
 const domIds = ["paperHistoryToolbar", "paperHistoryPager", "paperHistoryStats", "paperHistoryList"];
-const sharedScripts = ["fraction-markup.js", "paper-history-ui.js", "exam-choice-ui.js", "diagram-engine.js", "diagram-infer.js", "diagram-overrides.js", "diagram-attach.js"];
+const sharedScripts = ["fraction-markup.js", "paper-history-ui.js", "exam-choice-ui.js", "text-only-policy.js"];
 const cssMarkers = [".picked-right", ".picked-wrong", ".is-answer", ".choice-mark"];
 const appMarkers = ["PAPER_HISTORY_UI", "EXAM_CHOICE_UI", "paperDateFilter", "paperHistoryPage"];
 const formulaSubjects = new Set(["數學會考作戰室", "生物會考作戰室", "理化會考作戰室"]);

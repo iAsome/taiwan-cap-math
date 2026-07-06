@@ -425,7 +425,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
-    assessment = window.DIAGRAM_ATTACH?.prepareTextOnlyExam?.(assessment, "earth") || assessment;
+    assessment = window.TEXT_ONLY_POLICY?.prepareTextOnlyExam?.(assessment, "earth") || assessment;
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;
@@ -520,7 +520,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
       <header class="paper-cover"><div><p class="eyebrow">自訂比例 · 涵蓋 20 單元</p><h2>會考地科模擬考</h2><p>30 題選擇｜40 分鐘｜板塊構造與天氣兩大領域加抽比重（本站自訂，非官方獨立考科規格）</p></div><div class="paper-stamp">地科<br>自訂規格</div></header>
       <div class="paper-instructions"><div><strong>30</strong><span>四選一｜全數地科單元覆蓋</span></div><div><strong>40 min</strong><span>題目順序依卷別種子打亂</span></div></div>`;
-    const textOnlyPauseNotice = window.DIAGRAM_ATTACH?.pauseNotice?.(state.exam) || "";
+    const textOnlyPauseNotice = window.TEXT_ONLY_POLICY?.pauseNotice?.(state.exam) || "";
 
     $("#paper").innerHTML = `
       ${cover}
