@@ -64,6 +64,7 @@ h1, h2 { font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, 
 .primary { min-height: 46px; border: 1px solid var(--green); border-radius: 8px; color: white; background: var(--green); padding: 10px 18px; font-weight: 800; box-shadow: 0 8px 18px rgba(31,103,92,.18); }
 .primary:hover { transform: translateY(-1px); background: #18574d; box-shadow: 0 10px 24px rgba(31,103,92,.24); }
 .primary.compact { min-height: 40px; padding: 7px 14px; font-size: .78rem; }
+.secondary.compact { min-height: 40px; padding: 7px 14px; font-size: .78rem; }
 .primary.full, .secondary.full { width: 100%; }
 .secondary { min-height: 46px; border: 1px solid #9eb2ac; border-radius: 8px; color: var(--ink); background: rgba(255,255,255,.64); padding: 10px 18px; font-weight: 800; }
 .secondary:hover { transform: translateY(-1px); background: white; }
@@ -163,6 +164,10 @@ h1, h2 { font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, 
 .quiz-cap-preview { display: flex; flex-wrap: wrap; gap: 4px; }
 .quiz-cap-preview span { border-radius: 99px; color: #345f72; background: var(--blue-soft); padding: 3px 6px; font-size: .54rem; font-weight: 800; }
 .quiz-official-code { display: block; margin-top: auto; margin-bottom: 13px; color: var(--blue); font-size: .6rem; line-height: 1.55; }
+.quiz-start-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: end; margin-top: auto; }
+.quiz-seed-label { display: grid; gap: 5px; color: var(--muted); font-size: .72rem; font-weight: 800; }
+.quiz-seed-label input { width: 100%; min-height: 40px; border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; font: inherit; font-size: .86rem; color: var(--ink); background: rgba(255,255,255,.82); }
+.quiz-start-row .primary { width: auto; min-width: 108px; }
 .quiz-card .primary { width: 100%; display: grid; place-items: center; text-decoration: none; }
 
 .page-heading { max-width: 1260px; display: flex; align-items: flex-end; justify-content: space-between; gap: 35px; margin: 0 auto 34px; }

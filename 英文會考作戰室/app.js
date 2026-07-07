@@ -172,7 +172,7 @@
     if (state.vocabData || state.vocabLoading) return state.vocabData;
     state.vocabLoading = true;
     try {
-      const res = await fetch(`vocab-3000.json?v=20260709o`);
+      const res = await fetch(`vocab-3000.json?v=20260709p`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       state.vocabData = await res.json();
       return state.vocabData;
@@ -398,6 +398,20 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
         <div class="quiz-card-grid chapter-grid">${chapters.map(quizCard).join("")}${review ? quizCard(review) : ""}</div>
       </section>`;
     }).join("");
+    $$(".quiz-card .primary[href^='?quiz=']", $("#quizCatalog")).forEach(link => {
+      const quizId = new URLSearchParams(link.getAttribute("href").slice(1)).get("quiz");
+      const lastSeed = localStorage.getItem("capEnglish.lastQuizSeed") || "";
+      const row = document.createElement("div");
+      row.className = "quiz-start-row";
+      row.innerHTML = `<label class="quiz-seed-label">種子碼<input type="number" min="1" max="999999" placeholder="隨機" data-quiz-seed="${esc(quizId)}" value="${esc(lastSeed)}"></label><button class="primary" data-start-quiz="${esc(quizId)}">開始作答 →</button>`;
+      link.replaceWith(row);
+    });
+    $$("[data-start-quiz]", $("#quizCatalog")).forEach(button => button.addEventListener("click", () => {
+      const quizId = button.dataset.startQuiz;
+      const seedInput = $(`[data-quiz-seed="${quizId}"]`);
+      beginQuiz(quizId, seedInput?.value ? Number(seedInput.value) : null);
+      setView("exam");
+    }));
   }
 
   function renderUnitChapterLedger() {
@@ -535,7 +549,12 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     localStorage.setItem("capEnglish.lastSeed", seed);
   }
 
-  function beginQuiz(quizId) { launchAssessment(uniqueQuizAssessment(quizId)); }
+  function beginQuiz(quizId, seedOverride) {
+    const seed = seedOverride != null && seedOverride !== "" ? Math.max(1, Math.min(999999, Number(seedOverride) || 0)) : null;
+    const assessment = seed ? window.EXAM_ENGINE.generateQuiz(quizId, seed) : uniqueQuizAssessment(quizId);
+    if (seed) localStorage.setItem("capEnglish.lastQuizSeed", String(seed));
+    launchAssessment(assessment);
+  }
 
   function switchToFullExam() {
     clearInterval(state.timerId);
@@ -604,9 +623,16 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ${textOnlyPauseNotice}
       <div class="paper-section-title"><h3>作答區</h3><span>每題只有一個正確或最佳答案</span></div>
       ${qHtml}`;
+    if (isQuiz && state.exam.seed) {
+      $("#paper .paper-cover div")?.insertAdjacentHTML("beforeend", `<button type="button" class="secondary compact quiz-seed-copy" id="copyQuizLink">複製連結 ?quiz=${esc(state.exam.quizId)}&amp;seed=${state.exam.seed}</button>`);
+    }
     $("#questionTotal").textContent = state.exam.questions.length;
     if (state.submitted) $("#paper").classList.add("submitted");
     bindExamInputs();
+    $("#copyQuizLink")?.addEventListener("click", () => {
+      const url = `${location.origin}${location.pathname}?quiz=${state.exam.quizId}&seed=${state.exam.seed}`;
+      navigator.clipboard?.writeText(url).then(() => toast("已複製小考連結")).catch(() => toast(url));
+    });
     renderQuestionGrid();
     updateAnswered();
   }
@@ -739,7 +765,9 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     renderQuizCatalog(); renderHandbook(); renderAtlas(); renderAnalysis(); renderSources(); renderArchive(); updateLearningProgress();
     const requestedView = params.get("view");
     const requestedQuiz = params.get("quiz");
-    if (requestedQuiz && window.EXAM_ENGINE.quizCatalog.some(item => item.id === requestedQuiz)) beginQuiz(requestedQuiz);
+    const requestedSeed = params.get("seed");
+    if (requestedSeed) localStorage.setItem("capEnglish.lastQuizSeed", requestedSeed);
+    if (requestedQuiz && window.EXAM_ENGINE.quizCatalog.some(item => item.id === requestedQuiz)) beginQuiz(requestedQuiz, requestedSeed ? Number(requestedSeed) : null);
     else if (requestedView && viewNames[requestedView]) setView(requestedView);
   }
   init();
