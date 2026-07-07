@@ -241,9 +241,9 @@ window.QUIZ_TAXONOMY = {
   u20: {
     source: "本站依課綱『字彙猜測與構詞』技巧指標自行拆解，非特定出版社逐字分類。",
     sections: [{ title: "字彙猜測技巧與構詞法", topics: [
-      { id: "prefix-negative", title: "否定字首猜字義", template({ r, pick, mc }) {
+      { id: "prefix-negative", title: "否定字首猜詞意", template({ r, pick, mc }) {
         const opt = pick(r, [["The new policy was unpopular, but the government refused to withdraw it. unpopular 最可能的意思是？", "不受歡迎的", ["非常受歡迎的", "免費的", "違法的"]], ["He felt uncomfortable in the crowded room. uncomfortable 最可能的意思是？", "不舒服的", ["非常舒服的", "興奮的", "無聊的"]]]);
-        return mc(r, 20, 2, opt[0], opt[1], opt[2], ["un- 是否定字首，加在原本字義前面表示相反。"], "un-/in-/dis- 開頭的字，先假設是原本字義的相反。", "不要忽略字首直接用中文語感猜測，字首通常決定正負方向。")
+        return mc(r, 20, 2, opt[0], opt[1], opt[2], ["un- 是否定字首，加在原本詞意前面表示相反。"], "un-/in-/dis- 開頭的字，先假設是原本詞意的相反。", "不要忽略字首直接用中文語感猜測，字首通常決定正負方向。")
       }},
       { id: "suffix-noun", title: "名詞化字尾判斷詞性", template({ r, mc }) {
         return mc(r, 20, 2, "句子：Good communication is important in every relationship. 根據字尾 -tion，communication 最可能的詞性是？", "名詞", ["動詞", "形容詞", "副詞"], ["-tion 是常見的名詞化字尾，communicate（動詞）加上 -tion 變成名詞 communication。"], "-tion/-ment/-ness 結尾通常是名詞，可幫助判斷這個字在句中的角色。", "不要只看字根意思就判斷詞性，字尾往往才是決定詞性的關鍵線索。")
