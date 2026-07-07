@@ -144,11 +144,9 @@
           <section class="lesson-block"><div class="lesson-label">關鍵事實與成因</div><div class="lesson-content"><div class="formula-box">${block(unit.formula)}</div><h3>為什麼會這樣</h3><p>${nl(unit.derivation)}</p></div></section>
           <section class="lesson-block"><div class="lesson-label">標準判斷流程</div><div class="lesson-content"><ol>${unit.steps.map(step => `<li>${nl(step)}</li>`).join("")}</ol></div></section>
           <section class="lesson-block"><div class="lesson-label">會考快解技巧</div><div class="lesson-content"><ul class="tip-list">${unit.tips.map(tip => `<li>${nl(tip)}</li>`).join("")}</ul></div></section>
-          <section class="lesson-block"><div class="lesson-label">30 秒觀念測驗</div><div class="lesson-content"><div class="quiz-box"><p><strong>題目：</strong>${nl(unit.quiz.q)}</p><button class="quiz-reveal">顯示解答</button><p class="quiz-answer"><strong>解答：</strong>${nl(unit.quiz.a)}</p></div></div></section>
         </div>
         <button class="complete-button ${state.completed.has(unit.id) ? "done" : ""}" data-complete="${unit.id}">${state.completed.has(unit.id) ? "✓ 已掌握這個單元（按一下取消）" : "標記為已掌握"}</button>
       </article>`;
-    $(".quiz-reveal").addEventListener("click", event => { event.currentTarget.closest(".quiz-box").classList.add("revealed"); event.currentTarget.textContent = "已顯示解答"; });
     $("[data-complete]").addEventListener("click", () => {
       state.completed.has(unit.id) ? state.completed.delete(unit.id) : state.completed.add(unit.id);
       localStorage.setItem("capCivics.completed", JSON.stringify([...state.completed]));

@@ -12,6 +12,7 @@ const domIds = ["paperHistoryToolbar", "paperHistoryPager", "paperHistoryStats",
 const sharedScripts = ["fraction-markup.js", "paper-history-ui.js", "exam-choice-ui.js", "text-only-policy.js"];
 const cssMarkers = [".picked-right", ".picked-wrong", ".is-answer", ".choice-mark"];
 const appMarkers = ["PAPER_HISTORY_UI", "EXAM_CHOICE_UI", "paperDateFilter", "paperHistoryPage"];
+const removedLectureQuizMarkers = ["30 秒觀念測驗", "quiz-reveal", "quiz-answer", "quiz-box"];
 const formulaSubjects = new Set(["數學會考作戰室", "生物會考作戰室", "理化會考作戰室"]);
 
 let failed = 0;
@@ -35,6 +36,9 @@ for (const dir of subjects) {
   }
 
   const app = fs.readFileSync(path.join(base, "app.js"), "utf8");
+  for (const marker of removedLectureQuizMarkers) {
+    if (app.includes(marker)) fail(`${dir} app.js still contains removed lecture quiz marker ${marker}`);
+  }
   for (const marker of appMarkers) {
     if (!app.includes(marker)) fail(`${dir} app.js missing ${marker}`);
   }
@@ -54,6 +58,9 @@ for (const dir of subjects) {
   }
 
   const css = fs.readFileSync(path.join(base, "styles.css"), "utf8");
+  for (const marker of removedLectureQuizMarkers.slice(1)) {
+    if (css.includes(marker)) fail(`${dir} styles.css still contains removed lecture quiz marker ${marker}`);
+  }
   for (const marker of cssMarkers) {
     if (!css.includes(marker)) fail(`${dir} styles.css missing ${marker}`);
   }
@@ -62,6 +69,10 @@ for (const dir of subjects) {
   }
   if (!html.includes('id="examEyebrow">模擬考')) {
     fail(`${dir} index.html examEyebrow default should be 模擬考`);
+  }
+  const readmePath = path.join(base, "README.md");
+  if (fs.existsSync(readmePath) && /30\s*秒觀念測驗/.test(fs.readFileSync(readmePath, "utf8"))) {
+    fail(`${dir} README.md still advertises 30 秒觀念測驗`);
   }
 }
 

@@ -302,12 +302,10 @@
           ${unitSymbolHtml(unit)}
           <section class="lesson-block"><div class="lesson-label">標準解題流程</div><div class="lesson-content"><ol>${unit.steps.map(step => `<li>${mathText(step)}</li>`).join("")}</ol></div></section>
           <section class="lesson-block"><div class="lesson-label">會考快解技巧</div><div class="lesson-content"><ul class="tip-list">${unit.tips.map(tip => `<li>${mathText(tip)}</li>`).join("")}</ul></div></section>
-          <section class="lesson-block"><div class="lesson-label">30 秒觀念測驗</div><div class="lesson-content"><div class="quiz-box"><p><strong>題目：</strong>${mathText(unit.quiz.q)}</p><button class="quiz-reveal">顯示解答</button><p class="quiz-answer"><strong>解答：</strong>${mathText(unit.quiz.a)}</p></div></div></section>
           ${chaptersForUnit(unit.id).length ? `<section class="lesson-block taxonomy-lectures"><div class="lesson-label">細分題型講義</div><div class="lesson-content"><p>以下依教育部章節題型表，列出與本單元相關的 ${chaptersForUnit(unit.id).reduce((n, ch) => n + (quizTaxonomy[ch.id]?.sections || []).reduce((s, sec) => s + sec.topics.length, 0), 0)} 個題型講義（純文字）。</p>${chaptersForUnit(unit.id).map(ch => `<details class="lecture-chapter"><summary><strong>${esc(ch.title.replace(/^國[一二三][上下]第[一二三四五六]單元：/, ""))}</strong><span>${esc(ch.id)}</span></summary><div class="lecture-topic-list">${(quizTaxonomy[ch.id]?.sections || []).flatMap(sec => sec.topics.map(t => renderLectureArticle(`${ch.id}/${t.id}`))).join("")}</div></details>`).join("")}</div></section>` : ""}
         </div>
         <button class="complete-button ${state.completed.has(unit.id) ? "done" : ""}" data-complete="${unit.id}">${state.completed.has(unit.id) ? "✓ 已掌握這個單元（按一下取消）" : "標記為已掌握"}</button>
       </article>`;
-    $(".quiz-reveal").addEventListener("click", event => { event.currentTarget.closest(".quiz-box").classList.add("revealed"); event.currentTarget.textContent = "已顯示解答"; });
     $("[data-complete]").addEventListener("click", () => {
       state.completed.has(unit.id) ? state.completed.delete(unit.id) : state.completed.add(unit.id);
       localStorage.setItem("capMath.completed", JSON.stringify([...state.completed]));
