@@ -533,14 +533,18 @@ body.dark .paper-history-empty { background: #241e18; }
 .vocab-letter-nav button.active { color: white; background: var(--green); border-color: var(--green); }
 .vocab-content { display: grid; gap: 12px; }
 .vocab-table-wrap { max-height: 70vh; overflow: auto; border: 1px solid #cbd4ce; border-radius: 10px; background: var(--paper); padding: 12px; }
-.vocab-split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
-.vocab-table { width: 100%; font-size: .72rem; line-height: 1.65; }
+.vocab-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; align-items: start; }
+.vocab-split > .vocab-table { min-width: 0; width: 100%; }
+.vocab-table { width: 100%; table-layout: fixed; font-size: .8rem; line-height: 1.65; }
 .vocab-table th, .vocab-table td { font-size: inherit; line-height: inherit; white-space: normal; }
-.vocab-table th { font-size: .68rem; }
-.vocab-table td:nth-child(3) { font-size: .62rem; white-space: nowrap; }
+.vocab-table th { font-size: .74rem; }
+.vocab-table th:nth-child(1), .vocab-table td:nth-child(1) { width: 22%; }
+.vocab-table th:nth-child(2), .vocab-table td:nth-child(2) { width: 24%; }
+.vocab-table th:nth-child(3), .vocab-table td:nth-child(3) { width: 10%; font-size: .7rem; white-space: nowrap; }
+.vocab-table th:nth-child(4), .vocab-table td:nth-child(4) { width: 44%; }
 .vocab-table th:first-child, .vocab-table td:first-child { text-align: left; font-weight: 700; white-space: nowrap; }
 .vocab-table td:nth-child(2) { font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif; white-space: nowrap; }
-.vocab-table td:last-child { text-align: left; min-width: 0; }
+.vocab-table td:last-child { text-align: left; min-width: 0; word-break: break-word; }
 .vocab-incomplete td { opacity: .72; }
 body.dark .vocab-letter-nav button { background: #241e18; border-color: #4a4034; }
 body.dark .vocab-table-wrap { border-color: #4a4034; }
