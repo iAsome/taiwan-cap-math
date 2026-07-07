@@ -71,6 +71,29 @@ if (ENGLISH_ANALYSIS.officialByYear) {
 unitIds.forEach(id => check(!!ENGLISH_ANALYSIS.domainByUnit?.[id], `domainByUnit 缺少 unit ${id}`));
 check(Object.keys(ENGLISH_ANALYSIS.primaryUnits || {}).length === 10, "ENGLISH_ANALYSIS 應涵蓋 10 年 primaryUnits");
 
+const vocabPath = path.join(root, "vocab-3000.json");
+if (fs.existsSync(vocabPath)) {
+  const vocab = JSON.parse(fs.readFileSync(vocabPath, "utf8"));
+  check(Array.isArray(vocab.tiers) && vocab.tiers.length === 3, "vocab-3000.json 應有 3 個 tier");
+  vocab.tiers.forEach(tier => {
+    check(Array.isArray(tier.words) && tier.words.length > 0, `vocab tier ${tier.id} 為空`);
+    tier.words.forEach((item, i) => {
+      check(!!item.word && !!item.zh, `vocab tier ${tier.id} 第 ${i + 1} 筆缺少 word/zh`);
+      check(!!item.sortKey, `vocab tier ${tier.id}「${item.word}」缺少 sortKey`);
+    });
+    for (let i = 1; i < tier.words.length; i++) {
+      const prev = tier.words[i - 1].sortKey;
+      const cur = tier.words[i].sortKey;
+      check(prev.localeCompare(cur, "en") <= 0, `vocab tier ${tier.id} 第 ${i + 1} 筆 sortKey 未依 A→Z 排序（${prev} > ${cur}）`);
+    }
+  });
+  const total = vocab.tiers.reduce((n, t) => n + t.words.length, 0);
+  check(total >= 2900, `vocab-3000.json 總字數過少：${total}`);
+  check(vocab.meta?.counts?.total === total, `vocab meta.counts.total(${vocab.meta?.counts?.total}) ≠ 實際(${total})`);
+} else {
+  errors.push("vocab-3000.json 不存在，請先執行 node tools/build-vocab-3000.mjs");
+}
+
 if (errors.length) {
   console.error(`發現 ${errors.length} 個問題：`);
   errors.forEach(e => console.error(" -", e));
@@ -78,5 +101,6 @@ if (errors.length) {
 } else {
   const years = Object.keys(ENGLISH_ANALYSIS.primaryUnits).sort();
   const totalArchiveQ = years.reduce((s, y) => s + ENGLISH_ANALYSIS.primaryUnits[y].length, 0);
-  console.log(`全部檢查通過：20 個單元、${EXAM_ENGINE.quizCatalog.length} 份小考、模考 30 題、凍結逐題分析 ${years.length} 年（${years.join("、")}）共 ${totalArchiveQ} 題。`);
+  const vocabNote = fs.existsSync(vocabPath) ? `、vocab-3000 ${JSON.parse(fs.readFileSync(vocabPath, "utf8")).meta?.counts?.total || "?"} 字` : "";
+  console.log(`全部檢查通過：20 個單元、${EXAM_ENGINE.quizCatalog.length} 份小考、模考 30 題、凍結逐題分析 ${years.length} 年（${years.join("、")}）共 ${totalArchiveQ} 題${vocabNote}。`);
 }

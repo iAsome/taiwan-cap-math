@@ -10,7 +10,7 @@
   const groupMark = grade => domains[grade - 1]?.mark || "";
   const groupName = grade => groups.find(g => g.id === grade)?.name || domains[grade - 1]?.name || "";
   const abilityLabel = window.EXAM_ENGINE.abilityLabel;
-  const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中英語全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" , paper: "官方考卷" };
+  const viewNames = { home: "學習總覽", vocab3000: "會考3000", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中英語全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" , paper: "官方考卷" };
   let toastTimer;
 
   const state = {
@@ -29,7 +29,12 @@
     timerId: null,
     currentQuestion: 0,
     paperDateFilter: "all",
-    paperHistoryPage: 0
+    paperHistoryPage: 0,
+    vocabTier: "all",
+    vocabSearch: "",
+    vocabLetter: "",
+    vocabData: null,
+    vocabLoading: false
   };
 
   function formatDuration(seconds) {
@@ -92,6 +97,7 @@
     if (view === "quiz") renderQuizCatalog();
     if (view === "papers") renderMyPapers();
     if (view === "handbook") renderHandbook();
+    if (view === "vocab3000") renderVocab3000();
     if (view === "atlas") renderAtlas();
     if (view === "analysis") renderAnalysis();
     if (view === "sources") renderSources();
@@ -156,6 +162,65 @@
       toast(state.completed.has(unit.id) ? "已記錄為掌握單元" : "已取消掌握標記");
     });
     updateLearningProgress();
+  }
+
+  function vocabFirstLetter(word) {
+    const key = String(word).trim().split(/\s+/)[0].replace(/^[^a-zA-Z]+/, "");
+    return (key[0] || "#").toUpperCase();
+  }
+
+  async function loadVocab3000() {
+    if (state.vocabData || state.vocabLoading) return state.vocabData;
+    state.vocabLoading = true;
+    try {
+      const res = await fetch(`vocab-3000.json?v=20260709i`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      state.vocabData = await res.json();
+      return state.vocabData;
+    } catch (err) {
+      $("#vocabContent").innerHTML = `<div class="unit-empty">單字庫載入失敗：${esc(err.message)}</div>`;
+      return null;
+    } finally {
+      state.vocabLoading = false;
+    }
+  }
+
+  function filteredVocabWords(words) {
+    const q = state.vocabSearch.trim().toLowerCase();
+    const letter = state.vocabLetter;
+    return words.filter(item => {
+      if (letter && vocabFirstLetter(item.word) !== letter) return false;
+      if (!q) return true;
+      const hay = [item.word, item.pos, item.zh, item.kk].join(" ").toLowerCase();
+      return hay.includes(q);
+    });
+  }
+
+  function renderVocab3000() {
+    const content = $("#vocabContent");
+    const stats = $("#vocabStats");
+    if (!content) return;
+    loadVocab3000().then(data => {
+      if (!data) return;
+      const tiers = data.tiers || [];
+      const activeTiers = state.vocabTier === "all" ? tiers : tiers.filter(t => String(t.id) === state.vocabTier);
+      const letters = [...new Set(activeTiers.flatMap(t => t.words.map(w => vocabFirstLetter(w.word))))].sort();
+      $("#vocabLetterNav").innerHTML = `<button class="${state.vocabLetter ? "" : "active"}" data-vocab-letter="">全部</button>${letters.map(ch => `<button class="${state.vocabLetter === ch ? "active" : ""}" data-vocab-letter="${esc(ch)}">${esc(ch)}</button>`).join("")}`;
+
+      const shown = activeTiers.reduce((n, t) => n + filteredVocabWords(t.words).length, 0);
+      const total = data.meta?.counts?.total || tiers.reduce((n, t) => n + t.words.length, 0);
+      stats.innerHTML = `<strong>${shown}</strong><span>目前顯示 / 共 ${total} 字</span>`;
+
+      content.innerHTML = activeTiers.map(tier => {
+        const words = filteredVocabWords(tier.words);
+        if (!words.length) return "";
+        const rows = words.map(item => {
+          const incomplete = !item.kk || item.pos === "[?]";
+          return `<tr class="${incomplete ? "vocab-incomplete" : ""}"><td>${esc(item.word)}</td><td>${item.kk ? esc(item.kk) : "—"}</td><td>${esc(item.pos || "")}</td><td>${esc(item.zh || "")}</td></tr>`;
+        }).join("");
+        return `<details class="vocab-tier-block" open><summary><strong>${esc(tier.name)}</strong><span>${esc(tier.range)} · ${words.length} 字</span><b>展開／收合</b></summary><div class="vocab-table-wrap"><table class="mini-table vocab-table"><thead><tr><th>英文</th><th>KK</th><th>詞性</th><th>中文</th></tr></thead><tbody>${rows}</tbody></table></div></details>`;
+      }).join("") || `<div class="unit-empty">找不到符合條件的單字，換個關鍵字或篩選試試。</div>`;
+    });
   }
 
   function renderAtlas() {
@@ -630,6 +695,19 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     $("#submitExam").addEventListener("click", () => submitExam());
     $("#printExam").addEventListener("click", () => window.print());
     $("#handbookSearch").addEventListener("input", event => { state.search = event.target.value; renderHandbook(); });
+    $("#vocabSearch").addEventListener("input", event => { state.vocabSearch = event.target.value; renderVocab3000(); });
+    $$("[data-vocab-tier]", $("#vocabTierFilters")).forEach(button => button.addEventListener("click", () => {
+      state.vocabTier = button.dataset.vocabTier;
+      state.vocabLetter = "";
+      $$("[data-vocab-tier]", $("#vocabTierFilters")).forEach(el => el.classList.toggle("active", el === button));
+      renderVocab3000();
+    }));
+    $("#vocabLetterNav").addEventListener("click", event => {
+      const btn = event.target.closest("[data-vocab-letter]");
+      if (!btn) return;
+      state.vocabLetter = btn.dataset.vocabLetter || "";
+      renderVocab3000();
+    });
     $$('[data-grade]', $("#gradeFilters")).forEach(button => button.addEventListener("click", () => {
       state.grade = button.dataset.grade;
       $$('[data-grade]', $("#gradeFilters")).forEach(el => el.classList.toggle("active", el === button));

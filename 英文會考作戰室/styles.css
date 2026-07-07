@@ -525,6 +525,28 @@ body.dark .unit-cap-list i, body.dark .quiz-cap-preview span { color: var(--ink)
 body.dark .quiz-track[open] summary { background: #241e18; }
 body.dark .paper-history-empty { background: #241e18; }
 
+.vocab-stats { text-align: right; }
+.vocab-stats strong { display: block; font-family: Georgia, serif; font-size: 1.6rem; }
+.vocab-stats span { color: var(--muted); font-size: .68rem; }
+.vocab-letter-nav { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; }
+.vocab-letter-nav button { border: 1px solid #cbd4ce; border-radius: 6px; background: var(--paper); color: var(--ink); padding: 5px 9px; font-size: .62rem; cursor: pointer; }
+.vocab-letter-nav button.active { color: white; background: var(--green); border-color: var(--green); }
+.vocab-content { display: grid; gap: 12px; }
+.vocab-tier-block { border: 1px solid #cbd4ce; border-radius: 10px; background: var(--paper); overflow: hidden; }
+.vocab-tier-block summary { display: grid; grid-template-columns: 120px 1fr auto; align-items: center; gap: 12px; list-style: none; cursor: pointer; padding: 15px 18px; }
+.vocab-tier-block summary::-webkit-details-marker { display: none; }
+.vocab-tier-block summary strong { font-family: Georgia, serif; font-size: 1.2rem; }
+.vocab-tier-block summary span { color: var(--muted); font-size: .68rem; }
+.vocab-tier-block summary b { color: var(--green); font-size: .62rem; }
+.vocab-table-wrap { border-top: 1px solid #dde2df; max-height: 70vh; overflow: auto; }
+.vocab-table { font-size: .72rem; }
+.vocab-table th:first-child, .vocab-table td:first-child { text-align: left; font-weight: 700; white-space: nowrap; }
+.vocab-table td:nth-child(2) { font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif; white-space: nowrap; }
+.vocab-table td:last-child { text-align: left; white-space: normal; min-width: 220px; }
+.vocab-incomplete td { opacity: .72; }
+body.dark .vocab-letter-nav button { background: #241e18; border-color: #4a4034; }
+body.dark .vocab-tier-block { border-color: #4a4034; }
+
 @media (max-width: 1120px) {
   :root { --sidebar: 210px; }
   .feature-grid, .method-grid { grid-template-columns: repeat(2, 1fr); }

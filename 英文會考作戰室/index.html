@@ -10,7 +10,7 @@
   <meta name="description" content="國中英語科會考範圍講義、模擬考與近十年閱讀考古題入口。">
   <title>會考英文作戰室</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260709h">
+  <link rel="stylesheet" href="styles.css?v=20260709i">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要內容</a>
@@ -22,6 +22,7 @@
       </button>
       <nav id="mainNav">
         <button data-view="home" class="active"><span>⌂</span>總覽</button>
+        <button data-view="vocab3000"><span>▦</span>會考3000</button>
         <button data-view="exam"><span>✎</span>模擬考</button>
         <button data-view="quiz" class="nav-sub"><span>↳</span>小考</button>
         <button data-view="papers"><span>▣</span>我的考卷</button>
@@ -93,6 +94,28 @@
             <div><p class="eyebrow">SCOPE NOTICE</p><h2>英語科分「閱讀」與「聽力」，本站範圍請先看這裡。</h2><p>國中教育會考英語科官方分為閱讀（40–45 題／60 分鐘）與聽力（20–30 題／25 分鐘）兩部分，皆為選擇題，沒有寫作或口說測驗。官方僅公布閱讀題本的完整題目與答案，聽力僅公布答案、未公開逐字稿或音檔，因此本站歷屆考卷館僅收錄閱讀部分；本站的「英文文法模擬考」是依課綱文法字彙比重自訂的練習規格，不是官方閱讀測驗的完整篇章題組。</p></div>
             <button class="secondary" data-view="sources">查看資料審核規則</button>
           </section>
+        </section>
+
+        <section class="view" id="view-vocab3000" aria-labelledby="vocab3000Title">
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">VOCAB 3000 · A→Z</p>
+              <h1 id="vocab3000Title">會考3000 單字庫</h1>
+              <p>依 WeCan 基礎1000、進階2000、擴充3000 三級分區，各區內按字母排序。每字含 KK 音標（字典 API 自動補齊）、詞性與中文釋義。<strong>官方會考命題範圍以教育部 2000 字為界</strong>；本表第 2001 字起為進階延伸字，供 A++ 與高中銜接使用。</p>
+            </div>
+            <div class="vocab-stats" id="vocabStats"><strong>—</strong><span>載入中</span></div>
+          </div>
+          <div class="filterbar">
+            <label class="search"><span>⌕</span><input id="vocabSearch" type="search" placeholder="搜尋英文、中文或音標"></label>
+            <div class="chip-group" id="vocabTierFilters">
+              <button class="active" data-vocab-tier="all">全部</button>
+              <button data-vocab-tier="1">基礎1000</button>
+              <button data-vocab-tier="2">進階2000</button>
+              <button data-vocab-tier="3">擴充3000</button>
+            </div>
+          </div>
+          <div class="vocab-letter-nav" id="vocabLetterNav" aria-label="字母快速跳轉"></div>
+          <div id="vocabContent" class="vocab-content"></div>
         </section>
 
         <section class="view" id="view-exam" aria-labelledby="examTitle">
@@ -222,15 +245,15 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="english-data.js?v=20260709h"></script>
-  <script src="quiz-taxonomy.js?v=20260709h"></script>
-  <script src="../shared/fraction-markup.js?v=20260709h"></script>
-  <script src="../shared/text-only-policy.js?v=20260709h"></script>
-  <script src="../shared/paper-history-ui.js?v=20260709h"></script>
-  <script src="../shared/exam-choice-ui.js?v=20260709h"></script>
-  <script src="questions.js?v=20260709h"></script>
+  <script src="english-data.js?v=20260709i"></script>
+  <script src="quiz-taxonomy.js?v=20260709i"></script>
+  <script src="../shared/fraction-markup.js?v=20260709i"></script>
+  <script src="../shared/text-only-policy.js?v=20260709i"></script>
+  <script src="../shared/paper-history-ui.js?v=20260709i"></script>
+  <script src="../shared/exam-choice-ui.js?v=20260709i"></script>
+  <script src="questions.js?v=20260709i"></script>
 
-  <script src="analysis-data.js?v=20260709h"></script>
-  <script src="app.js?v=20260709h"></script>
+  <script src="analysis-data.js?v=20260709i"></script>
+  <script src="app.js?v=20260709i"></script>
 </body>
 </html>

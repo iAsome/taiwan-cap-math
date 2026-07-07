@@ -275,7 +275,7 @@ window.ENGLISH_DATA = (() => {
   const sourcePolicy = [
     { tier: 1, title: "教育部與官方考試資料", badge: "最高優先", rule: "決定英語科考試範圍、題型、題數與時間。任何來源與官方資料衝突時，無條件採官方版本。英語科官方僅公布閱讀試題本的完整題目與答案；聽力試題官方僅公布答案與一般性説明，並未公布逐字稿或音檔，因此本站考卷館僅收錄閱讀部分，並在各處清楚標示此限制。", use: "課綱、會考官方網站、106–115 年英語科官方閱讀題本與答案、試題說明" },
     { tier: 2, title: "教育部國中小英語文基本字彙表", badge: "第二優先", rule: "用來界定字彙單元的收字範圍與難度分級；出現超出表列範圍的生字時，比照官方試題慣例加註中文或依上下文可推知語意。", use: "國民中小學九年一貫課程綱要英語文基本 2000 字表" },
-    { tier: 3, title: "公開網路資料與解題技巧", badge: "補充來源", rule: "只收可由文法規則、固定搭配或反例驗證的內容。每條技巧標示『通過／有條件／不採用』；無法追溯的匿名說法不得單獨作為依據。", use: "教師文章、教學影片、學習平台、論壇與社群常見文法口訣，再由本站逐條驗算" }
+    { tier: 3, title: "公開網路資料與解題技巧", badge: "補充來源", rule: "只收可由文法規則、固定搭配或反例驗證的內容。每條技巧標示『通過／有條件／不採用』；無法追溯的匿名說法不得單獨作為依據。", use: "教師文章、教學影片、學習平台、論壇與社群常見文法口訣，再由本站逐條驗算；會考3000 字表之中文釋義取自 WeCan，KK 音標由字典 API 自動補齊" }
   ];
 
   const officialSources = [
@@ -288,7 +288,10 @@ window.ENGLISH_DATA = (() => {
   const publisherSources = [
     { publisher: "康軒", title: "國中、國小教科用書與輔助教材", url: "https://www.knsh.com.tw/products/school", errata: "https://www.knsh.com.tw/service/errata", role: "文法教學順序、例句表達與最新勘誤交叉檢查" },
     { publisher: "教育部", title: "十二年國教課程綱要", url: "https://www.naer.edu.tw/PageSyllabus?fid=52", errata: "https://www.naer.edu.tw/PageSyllabus?fid=52", role: "國中英語各冊文法主題編排順序的第二層對照" },
-    { publisher: "南一", title: "南一教育集團官方網站", url: "https://www.nani.com.tw/", errata: "https://www.nani.com.tw/", role: "國中教材體系、字彙分冊安排與出版資訊交叉檢查" }
+    { publisher: "南一", title: "南一教育集團官方網站", url: "https://www.nani.com.tw/", errata: "https://www.nani.com.tw/", role: "國中教材體系、字彙分冊安排與出版資訊交叉檢查" },
+    { publisher: "WeCan", title: "基礎1000／2000／3000 單字表", url: "https://wecan.tw/index.php/2018-12-02-08-34-31/2019-01-03-18-18-31/1000", errata: "https://wecan.tw/index.php/2018-12-02-08-34-31/2019-01-03-18-18-31/3000-basic-vocabulary", role: "會考3000 字表的中文釋義、三級分區與詞性標記來源" },
+    { publisher: "Dictionary API", title: "Free Dictionary API", url: "https://dictionaryapi.dev/", errata: "https://dictionaryapi.dev/", role: "會考3000 字表詞性補齊（WeCan 1000 字表缺詞性時）" },
+    { publisher: "Wiktionary", title: "wiki-pronunciation-dict", url: "https://github.com/DanielSWolf/wiki-pronunciation-dict", errata: "https://github.com/DanielSWolf/wiki-pronunciation-dict", role: "會考3000 字表 KK 音標（Wiktionary IPA 轉 KK 近似值）" }
   ];
 
   const baseTipAudits = units.flatMap(unit => unit.tips.map((tip, index) => ({
