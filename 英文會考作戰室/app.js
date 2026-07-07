@@ -30,7 +30,7 @@
     currentQuestion: 0,
     paperDateFilter: "all",
     paperHistoryPage: 0,
-    vocabTier: "all",
+    vocabTier: "1",
     vocabSearch: "",
     vocabLetter: "",
     vocabData: null,
@@ -173,7 +173,7 @@
     if (state.vocabData || state.vocabLoading) return state.vocabData;
     state.vocabLoading = true;
     try {
-      const res = await fetch(`vocab-3000.json?v=20260709i`);
+      const res = await fetch(`vocab-3000.json?v=20260709j`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       state.vocabData = await res.json();
       return state.vocabData;
@@ -196,6 +196,17 @@
     });
   }
 
+  function renderVocabRows(items) {
+    return items.map(item => {
+      const incomplete = !item.kk || item.pos === "[?]";
+      return `<tr class="${incomplete ? "vocab-incomplete" : ""}"><td>${esc(item.word)}</td><td>${item.kk ? esc(item.kk) : "—"}</td><td>${esc(item.pos || "")}</td><td>${esc(item.zh || "")}</td></tr>`;
+    }).join("");
+  }
+
+  function renderVocabTable(items) {
+    return `<table class="mini-table vocab-table"><thead><tr><th>英文</th><th>KK</th><th>詞性</th><th>中文</th></tr></thead><tbody>${renderVocabRows(items)}</tbody></table>`;
+  }
+
   function renderVocab3000() {
     const content = $("#vocabContent");
     const stats = $("#vocabStats");
@@ -203,23 +214,20 @@
     loadVocab3000().then(data => {
       if (!data) return;
       const tiers = data.tiers || [];
-      const activeTiers = state.vocabTier === "all" ? tiers : tiers.filter(t => String(t.id) === state.vocabTier);
-      const letters = [...new Set(activeTiers.flatMap(t => t.words.map(w => vocabFirstLetter(w.word))))].sort();
+      const tier = tiers.find(t => String(t.id) === state.vocabTier) || tiers[0];
+      if (!tier) return;
+      const letters = [...new Set(tier.words.map(w => vocabFirstLetter(w.word)))].sort();
       $("#vocabLetterNav").innerHTML = `<button class="${state.vocabLetter ? "" : "active"}" data-vocab-letter="">全部</button>${letters.map(ch => `<button class="${state.vocabLetter === ch ? "active" : ""}" data-vocab-letter="${esc(ch)}">${esc(ch)}</button>`).join("")}`;
 
-      const shown = activeTiers.reduce((n, t) => n + filteredVocabWords(t.words).length, 0);
-      const total = data.meta?.counts?.total || tiers.reduce((n, t) => n + t.words.length, 0);
-      stats.innerHTML = `<strong>${shown}</strong><span>目前顯示 / 共 ${total} 字</span>`;
+      const words = filteredVocabWords(tier.words);
+      stats.innerHTML = `<strong>${words.length}</strong><span>目前顯示 / 該級共 ${tier.words.length} 字</span>`;
 
-      content.innerHTML = activeTiers.map(tier => {
-        const words = filteredVocabWords(tier.words);
-        if (!words.length) return "";
-        const rows = words.map(item => {
-          const incomplete = !item.kk || item.pos === "[?]";
-          return `<tr class="${incomplete ? "vocab-incomplete" : ""}"><td>${esc(item.word)}</td><td>${item.kk ? esc(item.kk) : "—"}</td><td>${esc(item.pos || "")}</td><td>${esc(item.zh || "")}</td></tr>`;
-        }).join("");
-        return `<details class="vocab-tier-block" open><summary><strong>${esc(tier.name)}</strong><span>${esc(tier.range)} · ${words.length} 字</span><b>展開／收合</b></summary><div class="vocab-table-wrap"><table class="mini-table vocab-table"><thead><tr><th>英文</th><th>KK</th><th>詞性</th><th>中文</th></tr></thead><tbody>${rows}</tbody></table></div></details>`;
-      }).join("") || `<div class="unit-empty">找不到符合條件的單字，換個關鍵字或篩選試試。</div>`;
+      if (!words.length) {
+        content.innerHTML = `<div class="unit-empty">找不到符合條件的單字，換個關鍵字或篩選試試。</div>`;
+        return;
+      }
+      const mid = Math.ceil(words.length / 2);
+      content.innerHTML = `<div class="vocab-table-wrap"><div class="vocab-split">${renderVocabTable(words.slice(0, mid))}${renderVocabTable(words.slice(mid))}</div></div>`;
     });
   }
 
