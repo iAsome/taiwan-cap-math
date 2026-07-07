@@ -172,7 +172,7 @@
     if (state.vocabData || state.vocabLoading) return state.vocabData;
     state.vocabLoading = true;
     try {
-      const res = await fetch(`vocab-3000.json?v=20260709q`);
+      const res = await fetch(`vocab-3000.json?v=20260709r`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       state.vocabData = await res.json();
       return state.vocabData;

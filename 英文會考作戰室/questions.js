@@ -1,9 +1,21 @@
 window.EXAM_ENGINE = (() => {
   const U = window.ENGLISH_DATA.units;
   const quizTaxonomy = window.QUIZ_TAXONOMY || {};
-  const QUESTION_COUNT = 50;
-  const READING_SET_COUNT = 6;
-  const READING_CHAPTERS = new Set([15, 16]);
+  const CHAPTER_QUESTION_COUNT = 20;
+  const CHAPTER_MINUTES = 20;
+  const REVIEW_QUESTION_COUNT = 50;
+  const REVIEW_MINUTES = 50;
+  const REVIEW_GENERAL_COUNT = 44;
+  const REVIEW_READING_COUNT = 6;
+  const TEMPLATE_VARIANTS_PER_RULE = 8;
+  const CHAPTER_DIFFICULTIES = [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4];
+  const REVIEW_GENERAL_DIFFICULTIES = [
+    1, 1, 1, 1, 1, 1,
+    2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+    3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+    4, 4, 4, 4, 4, 4
+  ];
+  const REVIEW_READING_DIFFICULTIES = [3, 3, 4, 4, 5, 5];
 
   function hashSeed(seed) {
     return String(seed).split("").reduce((s, c) => ((s * 31) + c.charCodeAt(0)) >>> 0, 7);
@@ -71,7 +83,11 @@ window.EXAM_ENGINE = (() => {
     scope: "review",
     source: "Domain review generated only from the units in this domain."
   }));
-  const quizCatalog = [...chapterQuizzes, ...reviewQuizzes].map(item => ({ ...item, minutes: 50, questionCount: 50 }));
+  const quizCatalog = [...chapterQuizzes, ...reviewQuizzes].map(item => ({
+    ...item,
+    minutes: item.scope === "chapter" ? CHAPTER_MINUTES : REVIEW_MINUTES,
+    questionCount: item.scope === "chapter" ? CHAPTER_QUESTION_COUNT : REVIEW_QUESTION_COUNT
+  }));
   const quizIndexById = Object.fromEntries(quizCatalog.map((item, index) => [item.id, index]));
   const abilityKeys = ["knowledge", "comprehension", "inquiry"];
   const abilityLabel = { knowledge: "字彙文法", comprehension: "篇章理解", inquiry: "推論應用" };
@@ -94,10 +110,11 @@ window.EXAM_ENGINE = (() => {
       time: at(times, 11),
       action: at(actions, 15),
       topic: at(topics, 17),
-      n: `${quizId.toUpperCase()}-${(slot % QUESTION_COUNT) + 1}`
+      n: ""
     };
   }
-  const fill = (text, c) => String(text).replace(/\{(\w+)\}/g, (_, key) => c[key] ?? "");
+  const stripItemPrefix = value => String(value).replace(/^Item\s+[^:]*:\s*/i, "");
+  const fill = (text, c) => stripItemPrefix(String(text).replace(/\{(\w+)\}/g, (_, key) => c[key] ?? ""));
 
   function rule(unitId, topic, text, correct, distractors, step, tip, trap, ability = "knowledge", difficulty = 2) {
     return { unitId, topic, text, correct, distractors, step, tip, trap, ability, difficulty };
@@ -246,26 +263,77 @@ window.EXAM_ENGINE = (() => {
     ]
   };
 
-  function buildRuleQuestion(r, seed, quizId, unitId, slot) {
+  function sentenceFrom(stem, choice) {
+    return stem.includes("___") ? stem.replace("___", choice) : choice;
+  }
+  function topicDistractors(unitId, topic) {
+    const topics = (RULES[unitId] || []).map(item => item.topic).filter(item => item !== topic);
+    return topics.slice(0, 3);
+  }
+  function buildRuleQuestion(r, seed, quizId, unitId, slot, difficulty) {
     const rules = RULES[unitId] || RULES[1];
-    const selected = rules[(slot + hashSeed(`${seed}:${quizId}:${unitId}`)) % rules.length];
+    const ruleIndex = slot % rules.length;
+    const variant = Math.floor(slot / rules.length) % TEMPLATE_VARIANTS_PER_RULE;
+    const selected = rules[ruleIndex];
     const c = ctx(seed, quizId, unitId, slot);
+    const stem = fill(selected.text, c);
+    const answer = fill(selected.correct, c);
+    const distractors = selected.distractors.map(choice => fill(choice, c));
+    const correctSentence = sentenceFrom(stem, answer);
+    const wrongSentences = distractors.map(choice => sentenceFrom(stem, choice));
+    const wrongSentence = wrongSentences[variant % wrongSentences.length];
+    const topicChoices = topicDistractors(unitId, selected.topic);
+    let text = stem;
+    let correct = answer;
+    let choices = distractors;
+    let ability = selected.ability || abilityKeys[slot % abilityKeys.length];
+
+    if (variant === 1) {
+      text = `選出符合「${selected.topic}」的句子。`;
+      correct = correctSentence;
+      choices = wrongSentences;
+    } else if (variant === 2) {
+      text = `選出最適合的答案。\n${stem}`;
+    } else if (variant === 3) {
+      text = `改正下面句子。\n${wrongSentence}`;
+      correct = correctSentence;
+      choices = wrongSentences;
+    } else if (variant === 4) {
+      text = `這個句子主要符合哪一個規則？\n${correctSentence}`;
+      correct = selected.topic;
+      choices = topicChoices;
+      ability = "comprehension";
+    } else if (variant === 5) {
+      text = `選出相同文法型態的句子。\n${correctSentence}`;
+      correct = correctSentence;
+      choices = wrongSentences;
+      ability = "inquiry";
+    } else if (variant === 6) {
+      text = `空格需要哪一種形式？\n${stem}`;
+    } else if (variant === 7) {
+      text = `哪一個說明最符合答案 "${answer}"？\n${correctSentence}`;
+      correct = selected.topic;
+      choices = topicChoices;
+      ability = "inquiry";
+    }
+
     const q = mc(
       r,
       unitId,
-      selected.difficulty,
-      fill(selected.text, c),
-      fill(selected.correct, c),
-      selected.distractors.map(choice => fill(choice, c)),
-      [fill(selected.step, c)],
-      fill(selected.tip, c),
-      fill(selected.trap, c),
-      `This question checks ${selected.topic} in this unit.`,
-      `Unit rule: ${selected.topic}.`
+      difficulty,
+      text,
+      correct,
+      choices,
+      [`先判斷本題考點：${selected.topic}。再把空格或錯句代回完整句，檢查文法角色是否一致。`],
+      `先看句子結構，再看選項形式；不要只憑中文直覺選。`,
+      `常見錯誤是忽略 ${selected.topic} 的限制，或把相近形式混在一起。`,
+      `本題檢查：${selected.topic}。`,
+      `單元規則：${selected.topic}。`
     );
-    q.ability = selected.ability || abilityKeys[slot % abilityKeys.length];
+    q.ability = ability;
     q.taxonomyTopic = selected.topic;
     q.ruleSlot = slot;
+    q.templateKey = `u${unitId}:r${ruleIndex + 1}:v${variant}`;
     return q;
   }
 
@@ -275,7 +343,7 @@ window.EXAM_ENGINE = (() => {
   const readingActions = ["asked a classmate for one clue", "read the last sentence again", "checked the title before reading", "looked for the noun before the pronoun", "compared the first and last paragraphs", "found the sentence with because"];
   const readingResults = ["the answer became clearer", "the group chose the best title", "the class found the main idea", "the team understood the pronoun", "the final choice matched the passage", "the students found the evidence"];
 
-  function generatedReading(seed, quizId, unitId, passageIndex) {
+  function generatedReading(seed, quizId, passageIndex) {
     const serial = quizIndexById[quizId] * 2 + passageIndex;
     const r = rngFromSeed(`reading-${seed}-${quizId}-${passageIndex}`);
     const at = (list, salt = 0) => list[(serial + ri(r, 0, list.length - 1) + salt) % list.length];
@@ -284,34 +352,30 @@ window.EXAM_ENGINE = (() => {
     const problem = at(readingProblems, 4);
     const action = at(readingActions, 6);
     const result = at(readingResults, 8);
-    const title = unitId === 15 ? `Finding the Main Idea ${serial + 1}` : `Using Evidence ${serial + 1}`;
+    const title = `Reading Clues ${serial + 1}`;
     const passage = `${name} was reading a short article at ${place}. At first, ${problem}. ${name} ${action}. After that, ${result}. ${name} learned that careful readers always use clues from the passage.`;
-    const questions = unitId === 15
-      ? [
-        ["What is the best title for this reading?", `${name} Uses Clues to Read Better`, ["A New Lunch Menu", "A Long Bus Ride", "A Phone for Sale"], "The whole passage is about using clues while reading."],
-        ["Which sentence shows the main lesson?", "Careful readers always use clues from the passage.", [`${name} was at ${place}.`, `${problem}.`, `${name} read a short article.`], "The final sentence states the broad lesson."],
-        ["Which choice is too narrow to be the main idea?", `${name} was at ${place}.`, ["Readers should use passage clues.", "Clues can help readers understand.", "Reading carefully helps answer questions."], "A place detail is only one small part of the passage."]
-      ]
-      : [
-        ["What can we infer about the reader?", `${name} changed strategy after noticing the problem.`, [`${name} stopped reading forever.`, `${name} already knew every answer.`, `${name} did not use the passage.`], "The action after the problem shows a change in strategy."],
-        ["What does that in the last sentence refer to?", "using clues from the passage", ["the place", "the title number", "the first word"], "that points back to the reading strategy described before."],
-        ["Which detail supports the answer?", `${name} ${action}.`, [`${name} was reading.`, `${name} was at ${place}.`, "The article was short."], "The action sentence is the evidence for the strategy."]
-      ];
-    return { title, unitId, passage, glossary: [], questions };
+    const questions = [
+      ["What is the best title for this reading?", `${name} Uses Clues to Read Better`, ["A New Lunch Menu", "A Long Bus Ride", "A Phone for Sale"], "主旨要涵蓋整段內容，不能只抓單一細節。", "comprehension"],
+      ["What can we infer about the reader?", `${name} changed strategy after noticing the problem.`, [`${name} stopped reading forever.`, `${name} already knew every answer.`, `${name} did not use the passage.`], "推論必須由文中的問題與後續行動支持。", "inquiry"],
+      ["Which detail supports the answer?", `${name} ${action}.`, [`${name} was reading.`, `${name} was at ${place}.`, "The article was short."], "支持證據要能直接連回答案，不只是一個背景細節。", "inquiry"]
+    ];
+    return { title, passage, glossary: [], questions };
   }
 
-  function readingQuestions(r, seed, quizId, unitId) {
+  function readingQuestions(r, seed, quizId, unitIds) {
     return [0, 1].flatMap(passageIndex => {
-      const passage = generatedReading(seed, quizId, unitId, passageIndex);
+      const passage = generatedReading(seed, quizId, passageIndex);
+      const unitId = unitIds[passageIndex % unitIds.length];
       return passage.questions.map((row, qi) => {
         const text = `Reading ${passageIndex + 1}: ${passage.title}\n\n${passage.passage}\n\n${row[0]}`;
-        const q = mc(r, unitId, qi === 0 ? 2 : 3, text, row[1], row[2], [row[3]], "Read the question, then return to the passage for evidence.", "Use the passage, not outside guesses.", "Reading skill check", `This question checks ${unitId === 15 ? "main idea and title scope" : "inference and pronoun reference"}.`, `Reading skill unit ${unitId}.`);
-        q.ability = qi === 0 ? "comprehension" : "inquiry";
+        const q = mc(r, unitId, REVIEW_READING_DIFFICULTIES[passageIndex * 3 + qi], text, row[1], row[2], [row[3]], "先讀題目，再回文章找明確線索。", "閱讀題以文章證據為準，不用外部猜測。", "常見錯誤是只抓到單一句子，沒有回到整段脈絡。", "本題檢查閱讀線索判斷。", `複習閱讀題組 ${passageIndex + 1}。`);
+        q.ability = row[4];
         q.readingGroup = passageIndex + 1;
         q.taxonomyTopic = `Reading skill set ${passageIndex + 1}`;
         q.passage = passage.passage;
         q.readingTitle = passage.title;
         q.glossary = passage.glossary;
+        q.templateKey = `reading:${quizId}:p${passageIndex + 1}:q${qi + 1}`;
         return q;
       });
     });
@@ -322,16 +386,21 @@ window.EXAM_ENGINE = (() => {
     if (!blueprint) throw new Error("Unknown quiz id");
     const seed = seedOverride == null ? hashSeed(quizId) : Math.max(1, Math.min(999999, Number(seedOverride) || hashSeed(seedOverride)));
     const r = rngFromSeed(seed);
-    const isReadingChapter = blueprint.scope === "chapter" && READING_CHAPTERS.has(blueprint.unitIds[0]);
-    const generalCount = isReadingChapter ? QUESTION_COUNT - READING_SET_COUNT : QUESTION_COUNT;
-    const unitCycle = blueprint.unitIds.length ? blueprint.unitIds : U.map(u => u.id);
     const questions = [];
-    const baseSlot = quizIndexById[quizId] * QUESTION_COUNT;
-    for (let i = 0; i < generalCount; i++) {
-      const unitId = unitCycle[i % unitCycle.length];
-      questions.push(buildRuleQuestion(r, seed, quizId, unitId, baseSlot + i));
+    if (blueprint.scope === "chapter") {
+      const unitId = blueprint.unitIds[0];
+      for (let i = 0; i < CHAPTER_QUESTION_COUNT; i++) {
+        questions.push(buildRuleQuestion(r, seed, quizId, unitId, i, CHAPTER_DIFFICULTIES[i]));
+      }
+    } else {
+      for (let round = 0; round < 11; round++) {
+        for (const unitId of blueprint.unitIds) {
+          const index = questions.length;
+          questions.push(buildRuleQuestion(r, seed, quizId, unitId, 20 + round, REVIEW_GENERAL_DIFFICULTIES[index]));
+        }
+      }
+      questions.push(...readingQuestions(r, seed, quizId, blueprint.unitIds));
     }
-    if (isReadingChapter) questions.push(...readingQuestions(r, seed, quizId, blueprint.unitIds[0]));
     questions.forEach((question, index) => { question.officialOrder = index + 1; });
     return {
       kind: "quiz",
@@ -343,11 +412,11 @@ window.EXAM_ENGINE = (() => {
       term: blueprint.chapter,
       chapter: blueprint.chapter,
       scope: blueprint.scope,
-      minutes: 50,
+      minutes: blueprint.minutes,
       questionCount: questions.length,
       officialCodes: blueprint.officialCodes,
       unitIds: [...blueprint.unitIds],
-      blueprint: "english-50q-unit-grammar-usage",
+      blueprint: "english-unit-20q-review-50q-no-repeat",
       taxonomySource: blueprint.source,
       questions
     };
@@ -381,7 +450,9 @@ window.EXAM_ENGINE = (() => {
     quizCatalog,
     abilityLabel,
     groupNames,
-    QUESTION_COUNT,
-    READING_CHAPTERS: [...READING_CHAPTERS]
+    CHAPTER_QUESTION_COUNT,
+    REVIEW_QUESTION_COUNT,
+    REVIEW_GENERAL_COUNT,
+    REVIEW_READING_COUNT
   };
 })();
