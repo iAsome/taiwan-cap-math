@@ -5,6 +5,7 @@
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const nl = value => esc(value).replace(/\n/g, "<br>");
+  const escapeRegExp = value => String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const block = value => String(value).split("\n").map(line => `<span class="math-line">${esc(line)}</span>`).join("");
   const letters = ["A", "B", "C", "D"];
   const groupMark = grade => domains[grade - 1]?.mark || "";
@@ -172,7 +173,7 @@
     if (state.vocabData || state.vocabLoading) return state.vocabData;
     state.vocabLoading = true;
     try {
-      const res = await fetch(`vocab-3000.json?v=20260709r`);
+      const res = await fetch(`vocab-3000.json?v=20260709s`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       state.vocabData = await res.json();
       return state.vocabData;
@@ -599,7 +600,8 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
         const attrs = EXAM_CHOICE_UI.choiceAttrs({ submitted: state.submitted, selected: state.answers[index] === ci, isAnswer: ci === q.answer });
         return EXAM_CHOICE_UI.choiceButton({ letter: letters[ci], textHtml: nl(choice), attrs, dataAttr: `data-choice="${index}:${ci}"`, disabled: state.submitted });
       }).join("")}</div>`;
-      return `<article class="question" id="question-${index + 1}" data-question="${index}">
+      const passage = q.readingGroup && state.exam.questions[index - 1]?.passageId !== q.passageId ? readingPassageHtml(q) : "";
+      return `${passage}<article class="question" id="question-${index + 1}" data-question="${index}">
         <div class="question-head"><span class="question-number">${index + 1}</span><div class="question-tags"><span class="question-tag grade">${esc(groupMark(unit.grade))}</span><span class="question-tag">${esc(unit.title)}</span>${q.taxonomyTopic ? `<span class="question-tag taxonomy">${esc(q.taxonomyTopic)}</span>` : ""}<span class="question-tag ability">${abilityLabel[q.ability] || "整合"}</span></div><span class="difficulty" aria-label="${difficultyLabel[q.difficulty]}">${"★".repeat(q.difficulty)}${"☆".repeat(5-q.difficulty)}</span></div>
         <div class="question-text">${nl(q.text)}</div>${choices}${solutionHtml(q)}
       </article>`;
@@ -635,6 +637,26 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     });
     renderQuestionGrid();
     updateAnswered();
+  }
+
+  function readingPassageHtml(q) {
+    const glossary = Array.isArray(q.glossary) ? q.glossary : [];
+    const words = glossary.map(item => Array.isArray(item) ? item[0] : item?.word).filter(Boolean);
+    let passage = esc(q.passage || "");
+    words.forEach(word => {
+      passage = passage.replace(new RegExp(`\\b${escapeRegExp(word)}\\b`, "gi"), match => `<span class="glossary-word">${match}</span>`);
+    });
+    const glossaryHtml = glossary.length ? `<dl class="reading-glossary">${glossary.map(item => {
+      const word = Array.isArray(item) ? item[0] : item.word;
+      const zh = Array.isArray(item) ? item[1] : item.zh;
+      return `<div><dt>${esc(word)}</dt><dd>${esc(zh)}</dd></div>`;
+    }).join("")}</dl>` : "";
+    return `<section class="reading-passage" aria-label="Passage ${q.readingGroup}">
+      <p class="passage-kicker">Passage ${q.readingGroup}</p>
+      <h3>${esc(q.readingTitle || `Passage ${q.readingGroup}`)}</h3>
+      <p>${passage}</p>
+      ${glossaryHtml}
+    </section>`;
   }
 
   function solutionHtml(q) {

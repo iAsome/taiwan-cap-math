@@ -28,6 +28,7 @@ const forbiddenMarkers = [
 const removedExports = ["vocab" + "Coverage", "generate" + "VocabSlot"];
 const quizSeeds = [1, 12345, 999999, 777777];
 const itemPrefixPattern = /\bItem\s+[A-Z0-9-]+:/;
+const chinesePattern = /[\u3400-\u9FFF]/;
 const chapterDifficultyShape = { 1: 4, 2: 8, 3: 6, 4: 2 };
 const reviewDifficultyShape = { 1: 6, 2: 16, 3: 18, 4: 8, 5: 2 };
 
@@ -43,17 +44,27 @@ function handbookStrings(unit) {
   ].filter(value => value != null);
 }
 function signature(q) {
-  return `${q.text}\n${q.choices.join("|")}`.toLowerCase().replace(/\s+/g, " ").trim();
+  return [q.passageId, q.passage, q.text, ...(q.choices || [])].filter(Boolean).join("\n").toLowerCase().replace(/\s+/g, " ").trim();
 }
-function questionVisibleText(q) {
+function questionFaceText(q) {
+  return [q.text, ...(q.choices || [])].filter(Boolean).join("\n");
+}
+function explanationText(q) {
   return [
-    q.text,
-    ...(q.choices || []),
     ...(q.steps || []),
     q.tip,
     q.trap,
     q.concept,
     q.formula
+  ].filter(Boolean).join("\n");
+}
+function questionVisibleText(q) {
+  return [
+    questionFaceText(q),
+    q.passage,
+    q.readingTitle,
+    ...((q.glossary || []).map(item => Array.isArray(item) ? item[0] : item.word)),
+    explanationText(q)
   ].filter(Boolean).join("\n");
 }
 function countBy(list, keyFn) {
@@ -76,6 +87,15 @@ const oldVocabQuizScript = "vocab-" + "quiz-data.js";
 check(!/const\s+nl\s*=\s*value\s*=>\s*FRACTION_MARKUP\.renderMath/.test(appSource), "English handbook nl() must not render math fractions.");
 check(!indexSource.includes(oldVocabQuizScript), "English quizzes must not load the old vocab quiz data file.");
 removedExports.forEach(name => check(!(name in EXAM_ENGINE), `EXAM_ENGINE must not export ${name}.`));
+check(EXAM_ENGINE.READING_BANK_SIZE === 100, `English reading bank should contain 100 passages, got ${EXAM_ENGINE.READING_BANK_SIZE}.`);
+check(Object.keys(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).length === 10, "English reading bank should cover 10 scenario categories.");
+Object.entries(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).forEach(([category, count]) => check(count === 10, `English reading category ${category} should contain 10 passages, got ${count}.`));
+check(Array.isArray(EXAM_ENGINE.READING_BANK_META) && EXAM_ENGINE.READING_BANK_META.length === 100, "English reading bank metadata should expose 100 passages.");
+check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.id)).size === 100, "English reading passage ids must be unique.");
+check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.passage)).size === 100, "English reading passage texts must be unique.");
+(EXAM_ENGINE.READING_BANK_META || []).forEach(item => {
+  check(item.wordCount >= 60 && item.wordCount <= 100, `Reading passage ${item.id} should be 60-100 words, got ${item.wordCount}.`);
+});
 check(unitIds.length === 20, `ENGLISH_DATA.units should contain 20 units, got ${unitIds.length}.`);
 unitIds.forEach((id, i) => check(id === i + 1, `Unit id should be ${i + 1}, got ${id}.`));
 ENGLISH_DATA.units.forEach(unit => {
@@ -112,6 +132,8 @@ const vocabAllowlist = new Set([
   "clue", "clues", "detail", "evidence", "infer", "passage", "paragraph", "reader", "readers", "strategy", "title",
   "bought", "brought", "built", "caught", "eaten", "felt", "forgot", "gone", "kept", "lent", "lost", "rang", "saw", "sold", "spoken", "told", "went", "were", "wrote", "written",
   "although", "an", "arrived", "b", "became", "best", "better", "bike", "bore", "bores", "broken", "changed", "chose", "closed", "communicate", "communication", "compared", "conclusion", "confused", "decided", "earlier", "effect", "effected", "fell", "forever", "found", "function", "functions", "grammatical", "grammatically", "heavier", "heaviest", "inference", "knew", "lived", "lowered", "luckily", "mine", "moved", "mystery", "okay", "prefix", "probably", "product", "reduce", "reduction", "refer", "relieved", "reusable", "reuse", "schedule", "shown", "suddenly", "suffix", "tone", "took", "tv", "uncertain", "understood", "used", "wondered",
+  "advice", "cigarette", "clause", "condition", "connect", "container", "context", "contrast", "definition", "device", "dialogue", "done", "easier", "feathers", "given", "harmful", "matches", "met", "musical", "personality", "phrase", "reply", "respectful", "rewrite", "routine", "saved", "set", "simplest", "solved", "standard", "tag", "tense", "unit", "usage",
+  "choice", "customer", "delay", "local", "made", "message", "notice", "online", "public", "receipt", "route", "share", "smoothly", "volunteer",
   "watchs", "delicion", "wellly", "difficulter", "interestinger", "happilyness", "teacherly", "movemently"
 ]);
 function addBasicWord(raw) {
@@ -164,23 +186,25 @@ function baseWordOk(word) {
   ].filter(stem => stem && stem !== word);
   return stems.some(stem => basic2000.has(stem) || vocabAllowlist.has(stem));
 }
-function unknownEnglishWords(text) {
+function unknownEnglishWords(text, extraAllowed = new Set()) {
   return [...new Set((String(text).toLowerCase().match(/[a-z][a-z']*/g) || [])
     .flatMap(word => word.split("'"))
     .map(word => word.replace(/[^a-z]/g, ""))
-    .filter(word => word && !baseWordOk(word)))];
+    .filter(word => word && !extraAllowed.has(word) && !baseWordOk(word)))];
 }
 
-// Unit quizzes: grammar/usage only, no meaning-pair vocabulary tests.
+// Unit quizzes: English question faces, Chinese explanations, no duplicate seed-wide targets/templates.
 for (const seed of quizSeeds) {
   const allSignatures = new Set();
   const allTemplateKeys = new Set();
+  const allTargetKeys = new Set();
   for (const blueprint of EXAM_ENGINE.quizCatalog) {
     const quiz = EXAM_ENGINE.generateQuiz(blueprint.id, seed);
     const allowedUnits = new Set(blueprint.unitIds);
     const expectedCount = blueprint.scope === "chapter" ? 20 : 50;
     const expectedMinutes = blueprint.scope === "chapter" ? 20 : 50;
     const paperSignatures = new Set();
+    const formKeys = new Set();
     check(blueprint.questionCount === expectedCount && blueprint.minutes === expectedMinutes, `Quiz ${blueprint.id} should advertise ${expectedCount} questions / ${expectedMinutes} minutes.`);
     check(quiz.questions.length === expectedCount, `Quiz ${blueprint.id} seed ${seed} should generate ${expectedCount} questions, got ${quiz.questions.length}.`);
     quiz.questions.forEach((q, i) => {
@@ -195,21 +219,44 @@ for (const seed of quizSeeds) {
       check(!!q.templateKey, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} missing templateKey.`);
       check(!allTemplateKeys.has(q.templateKey), `Seed ${seed} duplicate templateKey: ${q.templateKey}.`);
       allTemplateKeys.add(q.templateKey);
+      check(!!q.questionFormKey, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} missing questionFormKey.`);
+      formKeys.add(q.questionFormKey);
+      const face = questionFaceText(q);
+      check(!chinesePattern.test(face), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} question/choices must be English-only.`);
+      const explanation = explanationText(q);
+      check(chinesePattern.test(explanation), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} explanation must include Chinese reasoning/translation.`);
+      if (q.targetKey) {
+        check(!!q.targetWord, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} has targetKey but no targetWord.`);
+        check(!allTargetKeys.has(q.targetKey), `Seed ${seed} duplicate targetKey: ${q.targetKey}.`);
+        allTargetKeys.add(q.targetKey);
+      }
       const visible = questionVisibleText(q);
       check(!itemPrefixPattern.test(visible), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} still contains an Item prefix.`);
-      forbiddenMarkers.forEach(marker => check(!visible.includes(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} contains forbidden meaning marker "${marker}".`));
-      const unknown = unknownEnglishWords(visible);
+      forbiddenMarkers.forEach(marker => check(!face.includes(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} contains forbidden meaning marker "${marker}".`));
+      const glossaryWords = new Set((q.glossary || []).map(item => String(Array.isArray(item) ? item[0] : item.word).toLowerCase()));
+      const scopeText = [face, q.passage, q.readingTitle, ...glossaryWords].filter(Boolean).join("\n");
+      const unknown = unknownEnglishWords(scopeText, glossaryWords);
       check(unknown.length === 0, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} has out-of-scope English words: ${unknown.slice(0, 12).join(", ")}.`);
     });
     const reading = quiz.questions.filter(q => q.readingGroup);
+    const targetCount = quiz.questions.filter(q => q.targetKey).length;
     const difficultyShape = countBy(quiz.questions, q => q.difficulty);
     if (blueprint.scope === "chapter") {
+      check(targetCount === 5, `Chapter quiz ${blueprint.id} seed ${seed} should contain 5 vocabulary target questions, got ${targetCount}.`);
       check(reading.length === 0, `Chapter quiz ${blueprint.id} seed ${seed} must not include readingGroup questions.`);
+      check(formKeys.size >= 10, `Chapter quiz ${blueprint.id} seed ${seed} should use at least 10 question forms, got ${formKeys.size}.`);
       check(sameShape(difficultyShape, chapterDifficultyShape), `Chapter quiz ${blueprint.id} seed ${seed} difficulty shape should be 1★4/2★8/3★6/4★2.`);
     } else {
+      check(targetCount === 10, `Review quiz ${blueprint.id} seed ${seed} should contain 10 vocabulary target questions, got ${targetCount}.`);
       check(reading.length === 6, `Review quiz ${blueprint.id} seed ${seed} should contain 6 reading questions.`);
       check(quiz.questions.slice(0, 44).every(q => !q.readingGroup), `Review quiz ${blueprint.id} seed ${seed} should keep reading sets after question 44.`);
       check(quiz.questions.slice(44, 47).every(q => q.readingGroup === 1) && quiz.questions.slice(47, 50).every(q => q.readingGroup === 2), `Review quiz ${blueprint.id} seed ${seed} reading groups should be 3 + 3.`);
+      check(new Set(quiz.questions.slice(44, 47).map(q => q.passageId)).size === 1, `Review quiz ${blueprint.id} seed ${seed} questions 45-47 should share one passage.`);
+      check(new Set(quiz.questions.slice(47, 50).map(q => q.passageId)).size === 1, `Review quiz ${blueprint.id} seed ${seed} questions 48-50 should share one passage.`);
+      check(quiz.questions[44]?.passageId !== quiz.questions[47]?.passageId, `Review quiz ${blueprint.id} seed ${seed} should use two different passages.`);
+      check(reading.every(q => q.passage && q.readingTitle && Array.isArray(q.glossary)), `Review quiz ${blueprint.id} seed ${seed} reading questions need passage/title/glossary.`);
+      check(reading.every(q => (q.glossary || []).every(item => Array.isArray(item) ? item[0] && item[1] && chinesePattern.test(item[1]) : item.word && item.zh && chinesePattern.test(item.zh))), `Review quiz ${blueprint.id} seed ${seed} reading glossary needs Chinese translations.`);
+      check(formKeys.size >= 16, `Review quiz ${blueprint.id} seed ${seed} should use at least 16 question forms, got ${formKeys.size}.`);
       check(sameShape(difficultyShape, reviewDifficultyShape), `Review quiz ${blueprint.id} seed ${seed} difficulty shape should be 1★6/2★16/3★18/4★8/5★2.`);
     }
   }
@@ -244,4 +291,4 @@ if (errors.length) {
 
 const years = Object.keys(ENGLISH_ANALYSIS.primaryUnits).sort();
 const totalArchiveQ = years.reduce((s, y) => s + ENGLISH_ANALYSIS.primaryUnits[y].length, 0);
-console.log(`OK: 20 units, ${EXAM_ENGINE.quizCatalog.length} no-repeat grammar/usage quizzes (20 chapter, 50 review), 30-question mock, ${years.length} archive years (${totalArchiveQ} questions).`);
+console.log(`OK: 20 units, ${EXAM_ENGINE.quizCatalog.length} English-only quiz faces, no-repeat targets/templates, 100 reading passages, 30-question mock, ${years.length} archive years (${totalArchiveQ} questions).`);
