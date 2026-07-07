@@ -187,10 +187,46 @@ function applyTier3Fixups(words) {
 
 function ipaToKk(ipa) {
   if (!ipa) return null;
-  let s = String(ipa).trim().replace(/^\/+|\/+$/g, "").replace(/\s+/g, "");
-  s = s.replace(/ɡ/g, "g").replace(/ɹ/g, "r");
+  let s = String(ipa).trim();
+  s = s.replace(/^\[/, "").replace(/\]$/, "");
+  s = s.replace(/^\/+|\/+$/g, "");
+  s = s.replace(/l\u0329/g, "əl").replace(/n\u0329/g, "ən").replace(/m\u0329/g, "əm").replace(/r\u0329/g, "ɚ");
+  s = s.replace(/ɡ/g, "g").replace(/ɹ/g, "r").replace(/ɒ/g, "ɑ").replace(/ɾ/g, "r").replace(/ɫ/g, "l");
+  s = s.replace(/eɪ/g, "e").replace(/oʊ/g, "o").replace(/əʊ/g, "o");
+  s = s.replace(/ː/g, "");
+  s = s.replace(/\./g, "");
+  s = s.replace(/\s+/g, "");
+  s = s.replace(/\//g, "");
   return s || null;
 }
+
+function kkSyllableCount(kk) {
+  const s = String(kk).replace(/[ˈˌ]/g, "");
+  const vowels = s.match(/[aeiouɪɛæɑɔʊʌəɚ]+/g);
+  return vowels ? vowels.length : 0;
+}
+
+function ensureStress(kk) {
+  if (!kk || /[ˈˌ]/.test(kk)) return kk;
+  if (kkSyllableCount(kk) < 2) return kk;
+  return `ˈ${kk}`;
+}
+
+function assertIpaToKk() {
+  const cases = [
+    ["/əˈbaʊt/", "əˈbaʊt"],
+    ["/ˈeɪ.bəl/", "ˈebəl"],
+    ["/ˈæp.əl/", "ˈæpəl"],
+    ["/oʊ/", "o"],
+    ["/eɪ/", "e"]
+  ];
+  for (const [inp, exp] of cases) {
+    const got = ipaToKk(inp);
+    if (got !== exp) throw new Error(`ipaToKk(${inp}) = ${got}, expected ${exp}`);
+  }
+}
+
+assertIpaToKk();
 
 async function loadIpaDict() {
   fs.mkdirSync(cacheDir, { recursive: true });
@@ -219,15 +255,6 @@ function inferPosFromZh(zh) {
 }
 
 function lookupKkFromIpa(word, ipaDict) {
-  const w = String(word).trim();
-  const stop = new Set(["a", "an", "the", "to", "of", "in", "on", "at", "for", "and", "or"]);
-  if (/\s/.test(w)) {
-    const parts = w.toLowerCase().split(/[\s/]+/).filter(p => p && !stop.has(p));
-    for (const part of [...parts].reverse()) {
-      const hit = ipaDict[part.replace(/[^a-z'-]/g, "")];
-      if (hit?.length) return ipaToKk(hit[0]);
-    }
-  }
   for (const cand of lookupCandidates(word)) {
     const key = cand.toLowerCase();
     const hit = ipaDict[key];
@@ -241,6 +268,83 @@ const TIER3_FIXUPS = {
   xylophone: { zh: "木琴", pos: "[名]" },
   yawn: { zh: "打呵欠，張開，裂開；呵欠", pos: "[動][名]" }
 };
+
+const KK_OVERRIDES = {
+  "a.m.": "ˌe ˈem",
+  "p.m.": "ˌpi ˈem",
+  "Mr.": "ˈmɪstɚ",
+  "Mrs.": "ˈmɪsɪz",
+  "Ms.": "mɪz",
+  "O.K.": "ˌo ˈke",
+  "o'clock": "əˈklɑk",
+  "good-bye": "gʊdˈbaɪ",
+  "hard-working": "ˈhɑrdˈwɝkɪŋ",
+  "shoe(s)": "ʃu",
+  "sock(s)": "sɑk",
+  shopkeeper: "ˈʃɑpˌkipɚ",
+  workbook: "ˈwɝkˌbʊk",
+  recorder: "rɪˈkɔrdɚ",
+  salesman: "ˈselzmən",
+  "T-shirt": "ˈti ʃɝt",
+  airlines: "ˈɛrlaɪnz",
+  downtown: "ˌdaʊnˈtaʊn",
+  foggy: "ˈfɑgi",
+  slippers: "ˈslɪpɚz",
+  underpass: "ˈʌndɚˌpæs",
+  "air-conditioner": "ˈɛr kənˌdɪʃənɚ",
+  firework: "ˈfaɪrˌwɝk",
+  lifeguard: "ˈlaɪfˌgɑrd",
+  membership: "ˈmɛmbɚˌʃɪp",
+  "vice-president": "ˈvaɪsˈprɛzədənt",
+  "X-ray": "ˈɛksˌre",
+  a: "ə",
+  "men's room": "ˈmɛnz rum",
+  "women's room": "ˈwɪmɪnz rum",
+  "chewing gum": "ˈtʃuɪŋ gʌm"
+};
+
+const PHRASE_STOP = new Set(["a", "an", "the", "to", "of", "in", "on", "at", "for", "and", "or"]);
+
+async function resolvePartKk(part, ipaDict) {
+  if (KK_OVERRIDES[part]) return ensureStress(KK_OVERRIDES[part]);
+  const payload = await fetchDict(part);
+  const fromDict = dictKk(payload);
+  if (fromDict) return ensureStress(fromDict);
+  const fromIpa = lookupKkFromIpa(part, ipaDict);
+  return fromIpa ? ensureStress(fromIpa) : null;
+}
+
+async function resolvePhraseKk(word, ipaDict) {
+  const parts = word.trim().split(/\s+/).filter(Boolean);
+  const kks = [];
+  for (const part of parts) {
+    let pk = null;
+    if (KK_OVERRIDES[part]) pk = KK_OVERRIDES[part];
+    else if (PHRASE_STOP.has(part.toLowerCase())) pk = part.toLowerCase() === "a" ? "ə" : KK_OVERRIDES[part.toLowerCase()] || null;
+    if (!pk) pk = await resolvePartKk(part, ipaDict);
+    if (!pk) return null;
+    kks.push(pk);
+  }
+  return kks.join(" ");
+}
+
+async function resolveKk(word, ipaDict) {
+  const w = String(word).trim();
+  if (KK_OVERRIDES[w]) return ensureStress(KK_OVERRIDES[w]);
+  const hyphenKey = w.replace(/\s+/g, "-");
+  if (hyphenKey !== w && KK_OVERRIDES[hyphenKey]) return ensureStress(KK_OVERRIDES[hyphenKey]);
+
+  if (/\s/.test(w) && !/\//.test(w)) {
+    const joined = await resolvePhraseKk(w, ipaDict);
+    if (joined) return joined;
+  }
+
+  const payload = await fetchDict(w);
+  const fromDict = dictKk(payload);
+  if (fromDict) return ensureStress(fromDict);
+  const fromIpa = lookupKkFromIpa(w, ipaDict);
+  return fromIpa ? ensureStress(fromIpa) : null;
+}
 
 function lookupCandidates(word) {
   const w = String(word).trim();
@@ -295,6 +399,12 @@ function dictPos(payload) {
 function dictKk(payload) {
   if (!payload?.ok) return null;
   for (const entry of payload.data) {
+    for (const ph of entry.phonetics || []) {
+      if (ph.text && /[ˈˌ]/.test(ph.text)) return ipaToKk(ph.text);
+    }
+    if (entry.phonetic && /[ˈˌ]/.test(entry.phonetic)) return ipaToKk(entry.phonetic);
+  }
+  for (const entry of payload.data) {
     if (entry.phonetic) return ipaToKk(entry.phonetic);
     for (const ph of entry.phonetics || []) {
       if (ph.text) return ipaToKk(ph.text);
@@ -319,14 +429,11 @@ async function enrichWords(words, tierId, review, ipaDict) {
     const slice = words.slice(i, i + batchSize);
     const rows = await Promise.all(slice.map(async item => {
       let pos = item.pos;
-      let kk = lookupKkFromIpa(item.word, ipaDict);
-      if (!pos || pos === "[?]" || !kk) {
+      let kk = await resolveKk(item.word, ipaDict);
+      if (!pos || pos === "[?]") {
         const payload = await fetchDict(item.word);
-        if (!pos || pos === "[?]") {
-          const fromDict = dictPos(payload);
-          if (fromDict) pos = fromDict;
-        }
-        if (!kk) kk = dictKk(payload) || lookupKkFromIpa(item.word, ipaDict);
+        const fromDict = dictPos(payload);
+        if (fromDict) pos = fromDict;
       }
       const row = { word: item.word, pos: pos || inferPosFromZh(item.zh) || "[?]", zh: item.zh, kk, sortKey: item.sortKey };
       if (!kk) review.push({ tier: tierId, word: item.word, pos: row.pos, kk, reason: "missing_kk" });
@@ -369,7 +476,7 @@ async function main() {
       sources: [
         "WeCan 基礎1000/2000/3000",
         "Free Dictionary API（詞性補齊）",
-        "wiki-pronunciation-dict / Wiktionary（KK 音標，IPA 轉 KK 近似值）"
+        "wiki-pronunciation-dict / Wiktionary（IPA 轉 KK）"
       ],
       generated: today,
       counts: {

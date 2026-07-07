@@ -72,6 +72,21 @@ unitIds.forEach(id => check(!!ENGLISH_ANALYSIS.domainByUnit?.[id], `domainByUnit
 check(Object.keys(ENGLISH_ANALYSIS.primaryUnits || {}).length === 10, "ENGLISH_ANALYSIS 應涵蓋 10 年 primaryUnits");
 
 const vocabPath = path.join(root, "vocab-3000.json");
+const PHRASE_STOP = new Set(["a", "an", "the", "to", "of", "in", "on", "at", "for", "and", "or"]);
+
+function kkSyllableCount(kk) {
+  const s = String(kk).replace(/[ˈˌ]/g, "");
+  const vowels = s.match(/[aeiouɪɛæɑɔʊʌəɚ]+/g);
+  return vowels ? vowels.length : 0;
+}
+
+function vocabNeedsStress(word, kk) {
+  if (/\s/.test(word)) return false;
+  if (/[()]/.test(word)) return false;
+  if (/\./.test(word)) return false;
+  return kkSyllableCount(kk) >= 2;
+}
+
 if (fs.existsSync(vocabPath)) {
   const vocab = JSON.parse(fs.readFileSync(vocabPath, "utf8"));
   check(Array.isArray(vocab.tiers) && vocab.tiers.length === 3, "vocab-3000.json 應有 3 個 tier");
@@ -80,6 +95,14 @@ if (fs.existsSync(vocabPath)) {
     tier.words.forEach((item, i) => {
       check(!!item.word && !!item.zh, `vocab tier ${tier.id} 第 ${i + 1} 筆缺少 word/zh`);
       check(!!item.sortKey, `vocab tier ${tier.id}「${item.word}」缺少 sortKey`);
+      check(!!item.kk, `vocab tier ${tier.id}「${item.word}」缺少 kk`);
+      if (item.kk && /\s/.test(item.word) && !/\//.test(item.word)) {
+        check(/\s/.test(item.kk), `片語「${item.word}」KK 應為多詞音標`);
+        const parts = item.word.trim().split(/\s+/).filter(p => !PHRASE_STOP.has(p.toLowerCase()));
+        if (parts.length >= 2) check(item.kk.split(/\s+/).length >= 2, `片語「${item.word}」KK 可能只剩最後一詞（${item.kk}）`);
+      } else if (item.kk && vocabNeedsStress(item.word, item.kk)) {
+        check(/[ˈˌ]/.test(item.kk), `「${item.word}」KK 缺少重音（${item.kk}）`);
+      }
     });
     for (let i = 1; i < tier.words.length; i++) {
       const prev = tier.words[i - 1].sortKey;
