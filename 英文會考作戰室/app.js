@@ -4,7 +4,7 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const nl = value => FRACTION_MARKUP.renderMath(value, esc).replace(/\n/g, "<br>");
+  const nl = value => esc(value).replace(/\n/g, "<br>");
   const block = value => String(value).split("\n").map(line => `<span class="math-line">${esc(line)}</span>`).join("");
   const letters = ["A", "B", "C", "D"];
   const groupMark = grade => domains[grade - 1]?.mark || "";
@@ -149,6 +149,7 @@
           <section class="lesson-block"><div class="lesson-label">句型與規則</div><div class="lesson-content"><div class="formula-box">${block(unit.formula)}</div><h3>為什麼會這樣</h3><p>${nl(unit.derivation)}</p></div></section>
           <section class="lesson-block"><div class="lesson-label">標準判斷流程</div><div class="lesson-content"><ol>${unit.steps.map(step => `<li>${nl(step)}</li>`).join("")}</ol></div></section>
           <section class="lesson-block"><div class="lesson-label">會考快解技巧</div><div class="lesson-content"><ul class="tip-list">${unit.tips.map(tip => `<li>${nl(tip)}</li>`).join("")}</ul></div></section>
+          ${unit.examples?.length ? `<section class="lesson-block"><div class="lesson-label">會考例句</div><div class="lesson-content"><ul class="tip-list">${unit.examples.map(example => `<li><strong>${nl(example.sentence)}</strong><br><span>${nl(example.note)}</span></li>`).join("")}</ul></div></section>` : ""}
           <section class="lesson-block"><div class="lesson-label">30 秒觀念測驗</div><div class="lesson-content"><div class="quiz-box"><p><strong>題目：</strong>${nl(unit.quiz.q)}</p><button class="quiz-reveal">顯示解答</button><p class="quiz-answer"><strong>解答：</strong>${nl(unit.quiz.a)}</p></div></div></section>
         </div>
         <button class="complete-button ${state.completed.has(unit.id) ? "done" : ""}" data-complete="${unit.id}">${state.completed.has(unit.id) ? "✓ 已掌握這個單元（按一下取消）" : "標記為已掌握"}</button>

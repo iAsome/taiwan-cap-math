@@ -23,6 +23,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "英語用『現在簡單式』表達不隨時間點改變的習慣或事實，因為這類敘述在任何時刻檢視都成立，不需要標記「正在進行」；而『現在進行式』的 be + V-ing 結構，be 動詞鎖定說話當下的時間點，V-ing 則強調動作尚未結束、正持續進行，兩個成分合起來才精準對應「此刻正在做」的語意。",
       steps: ["先找時間副詞線索：always/usually/every day 傾向現在簡單式；now/right now/Look! 傾向現在進行式", "確認動詞是不是 like/know/want 這類狀態動詞，狀態動詞通常不用進行式", "判斷句意是『習慣事實』還是『當下動作』，再決定時態", "三單題再檢查主詞是第三人稱單數時，動詞是否加對 -s/-es/-ies"],
       tips: ["記憶口訣：『簡單式管習慣，進行式管當下』", "Look!／Listen! 開頭的句子幾乎都用現在進行式", "頻率副詞（always, often, sometimes, never）是現在簡單式的强烈訊號", "現在進行式也可以講已排定的未來計畫，不是只能講眼前動作"],
+      examples: [{ sentence: "She usually walks to school, but today she is taking the bus.", note: "usually 指習慣，用現在簡單式；today 表示今天暫時改變，用現在進行式。" }],
       quiz: { q: "選出正確：Please be quiet. The baby ___ (sleep).", a: "is sleeping。句子用 Please be quiet 暗示動作正在進行、需要保持安靜，屬於現在進行式的情境。" }
     },
     {
@@ -34,6 +35,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "過去式的形態變化（-ed 或不規則變化）標記動作已經在時間軸上完成，和現在脫節，因此常與 yesterday、last week、ago 等明確指向過去的時間詞連用；will 的語意核心是『說話當下對未來的意志或推測』，因此適合臨時決定與預測，而 be going to 的 be 動詞＋現在分詞結構強調『現在已經朝向那個計畫前進』，因此適合事先安排好、或依現況能推斷的未來。",
       steps: ["看到 yesterday／last.../...ago／in 2020 等過去時間詞，直接選過去式", "先判斷不規則動詞的過去式是否背錯（go/went, buy/bought, see/saw 等）", "未來式先問：是臨時決定/預測（will）還是事先計畫/有跡象（be going to）", "疑問句與否定句要用 did/didn't + 原形，不能動詞再變過去式（不能說 Did you went）"],
       tips: ["不規則動詞是這個單元最容易失分的地方，建議整理成表格分批背", "Look at those clouds. It's going to rain.——依眼前跡象，用 be going to", "I'll answer the phone.——說話當下臨時決定，用 will", "did 已經表示過去，後面動詞要用原形，不能再加 -ed"],
+      examples: [{ sentence: "I bought this book yesterday, and I will read it tonight.", note: "yesterday 是明確過去時間，所以用 bought；tonight 是未來安排，可用 will read 表示接下來要做。" }],
       quiz: { q: "選出正確：A: The phone is ringing. B: OK, I ___ (answer) it.", a: "will answer。B 是說話當下才臨時決定要接電話，屬於典型的 will 用法，不是事先計畫。" }
     },
     {
@@ -45,6 +47,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "have 原本表示『擁有』，have + 過去分詞的結構隱含『現在擁有一個已完成動作所帶來的狀態』，因此整個結構的重心落在『現在』而非『過去發生的那一刻』；這也是為什麼現在完成式不能搭配精確的過去時間點——一旦講清楚『何時發生』，句子的重心就變成描述過去事件本身，必須改用過去簡單式。",
       steps: ["先找 for／since／already／just／yet／ever／never 等現在完成式的信號詞", "看到精確過去時間點（yesterday, last year, in 2020 且非 since 用法）就改用過去簡單式", "yet 常用於否定句與疑問句（Have you finished yet? / not yet）", "分辨句意重點是『過去某一刻做了什麼』還是『現在的經驗或結果』"],
       tips: ["for 接一段時間長度，since 接一個時間起點，別混用", "yet 幾乎只出現在疑問句或否定句，肯定句常用 already", "have you ever been to...? 是問經驗的經典句型", "現在完成式＋yesterday 幾乎必定是錯誤選項，看到就能先刪除"],
+      examples: [{ sentence: "Tom has lived here for three years.", note: "for three years 表示一段期間，且住在這裡的狀態延續到現在，所以用 has lived。" }],
       quiz: { q: "選出正確：I ___ (live) in Taipei since 2019.", a: "have lived。since 2019 標示一個時間起點，且動作持續到現在，符合現在完成式的核心用法。" }
     },
     {
@@ -56,6 +59,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "情態助動詞的功能是為主要動詞加上『可能性、義務、許可』等說話者的判斷或態度，而不是描述動作本身的時間，因此文法上把它們視為一種『功能詞』，固定要求後面接不帶任何時態變化的原形動詞，就像 do/does/did 構成問句與否定句時也一律接原形動詞一樣。",
       steps: ["先判斷句子要表達的是能力、許可、推測還是義務", "推測題再判斷說話者的把握程度：非常確定用 must，可能用 may/might", "義務的否定題先看是『禁止』還是『沒必要』，決定用 mustn't 或 don't have to", "情態助動詞後面出現到 -ing 或加 -s 幾乎都是錯誤選項"],
       tips: ["You must not touch it.＝禁止；You don't have to come.＝不必來但可以來", "He must be tired.（他一定很累）是對現在狀態很有把握的推測，不是義務", "Could you...? / Would you mind...? 是禮貌請求的常考句型", "情態助動詞後面永遠接原形動詞，看到 to V 或 V-ing 先刪掉"],
+      examples: [{ sentence: "You should drink water, but you must not run in the hall.", note: "should 是建議；must not 是禁止。看到規定、法律、安全警告時，語氣通常比 should 強。" }],
       quiz: { q: "選出正確：You ___ not smoke here. It's against the law.", a: "must。must not 表示法律禁止，句意「這裡違法，不可以抽菸」正對應 must not（禁止），而不是 don't have to（沒必要）。" }
     },
 
@@ -68,17 +72,19 @@ window.ENGLISH_DATA = (() => {
       derivation: "英語的名詞系統區分『可以個別計數的物體』與『無法個別切分的物質或抽象概念』，可數名詞因為能一個一個數，所以有單複數形式的區別；不可數名詞因為概念上是連續、不可切分的整體（如 water、information），所以固定用單數形式，需要藉助 piece、cup、much 等『量詞』才能表達具體數量。代名詞的格位變化則反映它在句子裡的角色：做主詞用主格，做受詞（動詞或介系詞後）用受格，表示所有關係則用所有格。",
       steps: ["先判斷名詞是可數還是不可數，決定能不能加 a/an 或 -s", "可數名詞的複數要注意不規則變化（child→children, foot→feet）", "代名詞題先找它在句子裡的角色：主詞、受詞還是表示所有", "the 與 a/an 的選擇看是否『特定、雙方都知道指哪個』"],
       tips: ["information, homework, advice, furniture, news 是常考的不可數名詞陷阱", "much information 對，informations 或 an information 都不對", "介系詞後面的代名詞一定要用受格：for him，不是 for he", "第一次提到用 a/an，再次提到同一個東西改用 the"],
+      examples: [{ sentence: "I need some advice about my homework.", note: "advice 與 homework 都是不可數名詞，不加 -s；要表達一則建議可說 a piece of advice。" }],
       quiz: { q: "選出正確：Can you give me some ___ (information) about the bus schedule?", a: "information。information 是不可數名詞，不加 -s，也不能說 an information，直接用 some information 表示『一些資訊』。" }
     },
     {
       id: 6, grade: 2, domain: "詞類與修飾", title: "形容詞與副詞",
       summary: "形容詞修飾名詞，副詞修飾動詞、形容詞或整句話，拼寫與位置都是常考重點。",
-      core: "形容詞（adjective）用來修飾名詞，通常放在名詞前面或連綴動詞（be, look, feel, sound, become 等）後面（例如 a happy dog / She looks happy）。副詞（adverb）用來修飾動詞、形容詞、другой副詞或整個句子，說明『怎麼做、多常做、程度多少』，常見規則是形容詞字尾加 -ly 變副詞（quick→quickly），但也有不規則變化（good→well, fast→fast）。",
+      core: "形容詞（adjective）用來修飾名詞，通常放在名詞前面或連綴動詞（be, look, feel, sound, become 等）後面（例如 a happy dog / She looks happy）。副詞（adverb）用來修飾動詞、形容詞、其他副詞或整個句子，說明『怎麼做、多常做、程度多少』，常見規則是形容詞字尾加 -ly 變副詞（quick→quickly），但也有不規則變化（good→well, fast→fast）。",
       clarify: "連綴動詞（look, feel, sound, smell, taste, become, get）後面要接形容詞，不能接副詞：要說 You look tired（不是 tiredly），因為這裡是在描述主詞的狀態，不是描述動詞動作的方式；只有一般動詞後面修飾『動作方式』時才用副詞（He runs quickly）。",
       formula: "規則副詞：形容詞 + -ly（slow→slowly, careful→carefully）；字尾 y 去 y 加 -ily（happy→happily）\n不規則副詞：good→well, fast→fast, hard→hard, late→late（形容詞與副詞同形要小心）\n連綴動詞 + 形容詞：look/feel/sound/smell/taste/become/get + adj.",
       derivation: "形容詞的功能是替名詞增加描述性質，因此文法上要求緊貼在名詞旁邊，或透過連綴動詞把性質『連結』回主詞本身；副詞則是替『動作、性質、整句話』增加額外資訊（方式、程度、頻率），因為它修飾的對象通常是動詞或形容詞而非名詞，所以位置更彈性，可以出現在動詞前後或句首句尾，但語意核心都是在說明「怎麼樣地」做這個動作或具備這個性質。",
       steps: ["先確認被修飾的是名詞（用形容詞）還是動詞/形容詞/全句（用副詞）", "看到 look/feel/sound/smell/taste/become/get 後面，直接選形容詞", "副詞拼寫先看是否為 good→well、fast→fast 這類不規則變化", "頻率副詞（always, usually, often, sometimes, never）通常放在一般動詞前、be動詞後"],
       tips: ["He speaks English well.——well 修飾動詞 speaks，用副詞", "This cake tastes good.——tastes 是連綴動詞，後面接形容詞 good，不是 well", "fast、hard、late 形容詞和副詞同形，要靠句子功能判斷，不能只看字尾有沒有 -ly", "hardly 是『幾乎不』的意思，和 hard（努力地）意思完全不同，是常考陷阱"],
+      examples: [{ sentence: "The test was easy, so Anna finished it quickly.", note: "easy 描述 test，是形容詞；quickly 修飾 finished，是副詞。" }],
       quiz: { q: "選出正確：This soup smells ___ (delicious).", a: "delicious。smell 是連綴動詞，後面要接形容詞描述主詞（soup）的性質，不能用副詞 deliciously。" }
     },
     {
@@ -90,6 +96,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "英語用字尾變化（-er/-est）處理短音節詞，是因為短字加音節不會造成發音負擔；但音節愈多的詞如果也加 -er/-est，唸起來會過於冗長拗口，因此改用獨立的程度副詞 more/most 疊加在原形容詞前面，用『加一個詞』取代『加一個音節』來表達同樣的比較關係，這也是為什麼音節數是判斷規則的核心依據。",
       steps: ["先確認是規則變化還是要背的不規則變化（good/bad/many/little）", "規則變化先數音節：單音節或常見雙音節（-y/-er/-ow/-le）用 -er/-est", "三音節以上用 more/most，不要同時用 -er 又加 more（避免 more taller 這類重複比較的錯誤）", "看到 as...as 先確認中間要放原級（不能是比較級）"],
       tips: ["不能同時用 -er 又加 more：more taller 是常見的雙重比較錯誤", "as...as 中間一定用形容詞或副詞的原級，不是比較級", "good→better→best、bad→worse→worst 是最常考的不規則變化", "the 通常出現在最高級前面，比較級則常搭配 than"],
+      examples: [{ sentence: "This bag is heavier than mine, but it is not as big as yours.", note: "heavier than 用比較級；not as big as 表示不一樣大，第二個 as 後面接比較對象。" }],
       quiz: { q: "選出正確：This question is ___ than that one.", a: "more difficult。difficult 是三音節以上的形容詞，比較級要用 more difficult，不能寫成 difficulter。" }
     },
     {
@@ -101,6 +108,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "時間介系詞的『大到小』排序反映英語把時間單位想像成一層層的容器：年、月、季節是最大範圍的容器用 in；日期、星期是容器中的一個切片用 on；精確時刻是切片中的一個點用 at。地點介系詞的邏輯類似：in 描述『被包含在一個有體積的空間內』，on 描述『附著在一個平面上』，at 則忽略空間大小，只標記『一個位置點』，因此同一個地方依描述角度不同，可能用不同介系詞（in the car 但 on the bus，因為說話者把公車類比成一個可以站立走動的平面空間）。",
       steps: ["時間題先判斷是年/月/季節（in）、日期/星期（on）還是精確時刻（at）", "地點題先想像該空間是立體容器（in）、平面（on）還是單純的位置點（at）", "動詞/形容詞＋介系詞的固定搭配題，直接回想背過的清單，不硬套邏輯", "方向題留意 to（到達某地）、into（進入內部）、from...to...（從...到...）的差異"],
       tips: ["arrive at/in 後面不加 to，是最常考的固定搭配陷阱", "on the bus/train/plane（大眾運輸工具）但 in the car（私家轎車）", "be interested in、be good at、be afraid of 是常考形容詞+介系詞組合", "at night 但 in the morning/afternoon/evening，night 是特例"],
+      examples: [{ sentence: "We met at the station on Monday morning.", note: "at the station 指明確地點；on Monday morning 指星期幾的早上，不用 in。" }],
       quiz: { q: "選出正確：The train will arrive ___ Taipei Station ___ 9 a.m.", a: "at；at。arrive at 表示抵達一個地點（不加 to），精確時刻 9 a.m. 也用 at，兩者都是介系詞固定搭配。" }
     },
 
@@ -113,6 +121,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "對等連接詞之所以要求前後文法地位相等，是因為它在句法上把兩個成分『並列』起來，成為同一層級的結構，任何一邊獨立拿掉都還能成立；從屬連接詞則把它所帶的子句降格為『附屬』於主要子句的修飾成分（類似原因、時間、條件的說明），因此從屬子句在文法上依附主要子句而存在，本身若拿掉主要子句就會顯得語意不完整，也就不能單獨使用。",
       steps: ["先判斷兩個部分的文法地位是否相等：相等用對等連接詞，不相等（一個附屬於另一個）用從屬連接詞", "確認邏輯關係：原因（because）、讓步／轉折（although）、條件（if）還是時間（when/while）", "檢查是否重複標記因果或轉折（because...so、although...but 不可同句重複）", "從屬子句放句首時，記得在子句結束處加逗號"],
       tips: ["because 和 so 不能同句重複使用，although 和 but 也不能同句重複", "although 本身已經是『雖然』，後面主要子句不能再加 but", "since 除了『自從』還能當『因為』使用，要依上下文判斷", "從屬子句放句首要加逗號，放句尾則通常不需要"],
+      examples: [{ sentence: "Although it was cold, we played basketball after school.", note: "although 放在從屬子句表示讓步，主要子句不再加 but；after school 是時間連接語。" }],
       quiz: { q: "選出正確：___ it was raining, we still went hiking.", a: "Although。從屬子句表達讓步（雖然下雨），主要子句是『我們仍然去健行』，語意轉折用 although，而且不能在主要子句再加 but。" }
     },
     {
@@ -123,6 +132,7 @@ window.ENGLISH_DATA = (() => {
       formula: "只接動名詞：enjoy, finish, mind, avoid, suggest, practice, keep, give up + V-ing\n只接不定詞：want, decide, plan, hope, agree, promise, expect, need + to V\n意思改變的動詞：remember/forget + V-ing（記得/忘記做過的事）vs. + to V（記得/忘記要去做）；stop + V-ing（停止正在做的事）vs. stop + to V（停下來去做別的事）",
       derivation: "動名詞（V-ing）本質上是把動詞『名詞化』，因此能出現在任何名詞可以出現的位置（主詞、受詞、介系詞後）；不定詞（to V）則保留較強的『尚未發生、朝向未來』的動作意味，因此常接在表達意願、計畫、期待等『指向未來動作』的動詞後面（want, hope, decide, plan）。這也解釋了為什麼 remember/forget/stop 後面接動名詞與不定詞會有語意差異：V-ing 指『已經做過、正在做的事』，to V 則指『尚未做、即將去做的事』。",
       steps: ["先判斷動詞是屬於固定接動名詞、固定接不定詞，還是兩者皆可的類型", "遇到介系詞後面要用動詞名詞化的情況，一律用動名詞，不用不定詞", "remember/forget/stop 這類意思會改變的動詞，先判斷語意是『已做過的事』還是『將要做的事』", "動名詞當主詞時，句子動詞要用第三人稱單數形式（Swimming is fun.）"],
+      examples: [{ sentence: "Kevin enjoys reading, but he plans to watch a movie tonight.", note: "enjoy 後面接 V-ing；plan 後面接 to V。先看動詞搭配，再選答案。" }],
       quiz: { q: "選出正確：I remember ___ (lock) the door before I left.", a: "locking。remember + V-ing 表示『記得（過去）已經做過的動作』，句意是「我記得（曾經）鎖了門」，符合 remember 接動名詞回顧已發生動作的用法。" },
       tips: ["介系詞後面一律接動名詞，這是最容易忽略卻很常考的規則", "want/hope/decide/plan/agree/promise 是常考的『只接不定詞』動詞群", "enjoy/finish/mind/avoid/suggest/practice 是常考的『只接動名詞』動詞群", "stop V-ing（停止做）vs. stop to V（停下來去做別的事）是經典考點"]
     },
@@ -135,6 +145,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "被動語態的 be + 過去分詞結構中，過去分詞本身帶有『已完成、被施加動作』的語意（例如 broken 表示『已被打破的狀態』），be 動詞則負責標記時態並把這個『被施加動作的狀態』連結回句子的主詞，因此整體結構精準呈現『主詞是動作的承受者，而非執行者』，這也是為什麼只有能接受動作的及物動詞才能被動化。",
       steps: ["先判斷句子重點是動作的執行者還是承受者，承受者是重點就考慮被動", "確認動詞是及物動詞（有受詞可轉換），不及物動詞不能用被動", "依主動句的時態，選出對應的 be 動詞形式（is/am/are, was/were, will be...）", "需要提及執行者時，用 by + 執行者放在句尾"],
       tips: ["by 後面的執行者如果不重要或不明，常常直接省略", "情態助動詞的被動式固定是「情態助動詞 + be + p.p.」", "不及物動詞（happen, arrive, disappear, exist）沒有被動語態", "現在完成被動 has/have been + p.p. 容易漏掉 been，是常見拼寫錯誤"],
+      examples: [{ sentence: "The window was broken during the storm.", note: "window 是被破壞的東西，不是自己執行動作；during the storm 指過去事件背景，所以用過去被動。" }],
       quiz: { q: "選出正確：This bridge ___ (build) in 1930.", a: "was built。橋樑是動作的承受者（被建造），且 1930 是明確過去時間點，用過去被動 was built。" }
     },
     {
@@ -146,6 +157,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "英語問句的『倒裝』（把助動詞或 be 動詞移到主詞前）是一種語法標記，用位置的改變取代單純的語調上升來標示『這是一個問句』；一般動詞句本身沒有可以倒裝的助動詞，因此借用一個沒有實質語意、只負責時態與人稱的 do/does/did 放到主詞前面。附加問句則是先陳述一個看法，再用相反極性（肯定/否定對調）的簡短問句尋求對方確認，因此極性必須和主要子句相反，而動詞形式必須和主要子句的助動詞一致，才能準確對應同一件事。",
       steps: ["先看主要子句有沒有 be 動詞或情態助動詞，有的話問句與附加問句都直接沿用", "沒有 be 動詞/情態助動詞的一般動詞句，問句與附加問句都要借助 do/does/did", "附加問句先判斷主要子句是肯定還是否定，極性要相反", "WH 問句先確定疑問詞（who/what/when/where/why/how），再接倒裝結構"],
       tips: ["附加問句『前肯定後否定、前否定後肯定』，是最容易忘記反過來的規則", "There is/are 開頭的附加問句用 isn't there/aren't there，不是 doesn't", "I am 的附加問句是特例，用 aren't I，不是 amn't I", "一般動詞句的疑問句別忘了 do/does/did 後面動詞要還原成原形"],
+      examples: [{ sentence: "Your brother likes music, doesn't he?", note: "主要句是肯定且動詞 likes 是一般動詞，附加問句用 doesn't he，前肯後否。" }],
       quiz: { q: "選出正確：Your sister plays the piano very well, ___?", a: "doesn't she。主要子句是一般動詞句（plays）且為肯定句，附加問句要用否定形式並借助 does，故為 doesn't she。" }
     },
 
@@ -158,6 +170,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "關係代名詞之所以能同時當連接詞又當代名詞，是因為它把原本要獨立成句、且會重複提到同一個名詞的兩句話合併成一句：被省略、由關係代名詞取代的那個重複名詞，正是先行詞在子句裡原本該出現的位置（做主詞或受詞），因此關係代名詞的選擇（who/which/whose）取決於先行詞是人是事物，格位（主格/受格/所有格）則取決於它在子句裡原本扮演的文法角色。",
       steps: ["先找出先行詞（被修飾的名詞），判斷是人還是事物", "確認關係代名詞在子句中扮演的角色：主詞、受詞還是所有格", "看子句前後有沒有逗號，決定是限定（無逗號）還是非限定（有逗號）用法", "介系詞+關係代名詞或非限定用法時，避免使用 that，改用 which/who(m)"],
       tips: ["that 不能用在逗號後面的非限定子句，也不能接在介系詞後面", "whose 後面直接接名詞，表示『先行詞的...』，不需要再加所有格代名詞", "限定用法拿掉子句，先行詞會變得指稱不清；非限定用法拿掉子句，句意基本不變", "關係代名詞在子句中做受詞時，口語與非正式書面常可以省略"],
+      examples: [{ sentence: "The girl who helped me is my classmate.", note: "who helped me 修飾 The girl，且 who 在子句中當主詞，所以不能省略。" }],
       quiz: { q: "選出正確：The woman ___ called you yesterday is my aunt.", a: "who。先行詞 the woman 是人，且關係代名詞在子句中做主詞（called you），故用 who（或 that）。" }
     },
     {
@@ -169,6 +182,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "英語用『動詞時態往過去倒退一格』來標記『這件事並非事實、只是假設』：與現在事實相反時，用過去式動詞（本來是敘述過去的形式）借來表達『非真實的現在』；與過去事實相反時，再往前倒退一格用過去完成式，表達『非真實的過去』。這種『時態倒退＝與事實有距離』的邏輯，也是為什麼假設語氣的動詞形式看起來比實際描述的時間點更早一格。",
       steps: ["先判斷是與現在事實相反、與過去事實相反，還是單純敘述可能發生的真實條件", "與現在事實相反：if 子句用過去式，be 動詞固定用 were", "與過去事實相反：if 子句用 had + p.p.，主要子句用 would/could + have + p.p.", "真實條件句（有可能發生）不算假設語氣，if 子句直接用現在式即可，不需要倒退時態"],
       tips: ["If I were you 是固定用法，不論主詞是誰都用 were，不用 was", "與過去事實相反的句子，if 子句與主要子句都要往前多退一格（had p.p. / would have p.p.）", "真實條件句（If it rains, I will stay home.）不是假設語氣，不需要時態倒退", "wish 子句的用法邏輯與假設語氣相同：I wish I were taller.（與現在事實相反）"],
+      examples: [{ sentence: "If I had more time, I would help you.", note: "這是假設現在不太可能或與事實相反的情況；if 子句用過去式 had，主要句用 would + 原形動詞。" }],
       quiz: { q: "選出正確：If I ___ (be) a bird, I would fly to you.", a: "were。假設語氣與現在事實相反（我不是鳥），if 子句的 be 動詞固定用 were，不論主詞是 I。" }
     },
     {
@@ -180,6 +194,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "文章的主旨之所以能從標題、首末句與反覆出現的關鍵詞判斷出來，是因為說明文、廣告、書信等實用文體通常遵循『開門見山＋首尾呼應』的寫作習慣：作者會在開頭先點出主題以便讀者快速掌握方向，在結尾重申或總結，並在全文中不斷圍繞同一個核心概念（即使用不同措辭）展開論述，因此這幾個位置與線索能有效還原作者真正想傳達的整體訊息，而不受個別細節例子干擾。",
       steps: ["先讀標題（若有）與文章開頭一到二句，抓出可能的主題方向", "瀏覽全文，留意重複出現或被同義詞替換的關鍵詞", "看結尾是否有總結、呼籲或重申主題的句子", "檢查選項是否只涵蓋文章的一個細節或例子，排除範圍過窄的選項"],
       tips: ["主旨選項通常比細節選項更概括、更能涵蓋全文", "看到選項只對應文中『某一段』而非全文，通常不是正確答案", "廣告、通知、書信類文章，主旨常和開頭的目的說明直接對應", "文章標題題和主旨題邏輯相同，都要選『涵蓋全文』的答案"],
+      examples: [{ sentence: "This notice tells students how to save water at school.", note: "主旨題先抓 tells students how to...，再確認全文是否都圍繞 save water；若選項只提到 one rule，通常太細。" }],
       quiz: { q: "一篇文章開頭寫『Have you ever wondered why cats sleep so much?』，全文接著解釋貓咪睡眠的原因與作用，這篇文章最可能的主旨是什麼？", a: "說明貓咪為什麼睡這麼多（貓咪睡眠的原因與功能）。開頭的問句點出主題方向，全文內容也圍繞這個主題展開，因此主旨就是解釋貓咪嗜睡的原因。" }
     },
     {
@@ -191,6 +206,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "推論題之所以要求『有文字根據』，是因為出題者設計這類題目的目的是測驗讀者能否把文章裡分散的線索邏輯連結起來、讀出言外之意，而不是測驗讀者是否具備文章之外的常識或想像力；因此每個正確推論都必然可以回頭在文章中指出支持的具體句子。代名詞指涉題則利用『代名詞必須在數（單複數）與語意上都能替換回原名詞而不改變句意』這個文法限制，來鎖定它所指代的對象，因此檢查方法就是把候選名詞代入原句，看語意與文法是否都通順。",
       steps: ["推論題先在文中找出至少一處能支持該選項的具體線索", "排除『文章沒有提到、需要額外知識』與『與文章邏輯相反』的選項", "代名詞指涉題先確認單複數，再往前找最近且語意代入通順的名詞", "語氣題留意情緒性形容詞、副詞與標點符號透露的正負面態度"],
       tips: ["推論題答案要『能被文章證明』，不是『聽起來合理就好』", "代名詞指涉不一定是最近的名詞，要實際代入句子確認語意通順", "驚嘆號、反問句、誇飾用詞常暗示強烈的情緒或語氣", "選項如果直接照抄文中一句話，通常是細節題答案，不是推論題答案"],
+      examples: [{ sentence: "Mia missed the bus, so she arrived late.", note: "推論題把 missed the bus 與 arrived late 連成因果；不是看到 late 就猜她不喜歡學校，需有文字線索支撐。" }],
       quiz: { q: "文中寫道：『Sales dropped sharply after the price increase, so the company decided to lower it back.』根據這句話，最合理的推論是什麼？", a: "漲價導致銷售量下滑，公司才因此決定調降價格（漲價與銷售下滑之間存在因果關係）。這是根據句中『漲價後銷售下滑』與『因此決定調降』兩個線索合理連結出的推論，而非文章直接明講的單一句子。" }
     },
 
@@ -203,6 +219,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "英語單字的意義往往必須依賴使用情境與固定搭配才能精準判斷，因此把單字按主題與情境分類記憶，能同時記住『字義＋典型用法』，比孤立背誦單字表更接近實際考題的判斷方式；而易混淆字組的題目設計，本質上是在測驗考生是否只背了『中文翻譯』還是真正掌握了『使用情境與方向性』（如借入或借出、帶來或帶走），這也是準備字彙題時最需要花時間釐清的部分。",
       steps: ["先判斷題目情境屬於作息、學校還是交通類別", "找出句子裡的方向或介系詞線索（borrow/lend、bring/take 的方向）", "檢查該字是否需要固定搭配的介系詞（reach 不加介系詞、arrive at/in 要加）", "剩餘選項意思相近時，回頭看句子語氣是否符合固定搭配"],
       tips: ["borrow from（跟...借）、lend to（借給...），方向不要搞反", "reach 後面直接接地點，不加介系詞；arrive 後面要加 at/in", "in a hurry（匆忙）、in time for（趕上、來得及）是常考片語", "be absent from school（缺席）是固定搭配，不能只背 absent 忘記介系詞"],
+      examples: [{ sentence: "I forgot my umbrella. May I borrow yours?", note: "說話者要把對方的傘借進來，用 borrow；若是把自己的東西借出去給別人，才用 lend。" }],
       quiz: { q: "選出最適合的字：Could I ___ your dictionary? I forgot to bring mine.", a: "borrow。句意是「可以跟你借字典嗎」，說話者是要向對方借入，符合 borrow（向人借入）的方向，而不是 lend（借出去給別人）。" }
     },
     {
@@ -214,6 +231,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "-ed 與 -ing 兩種分詞形容詞其實來自動詞的兩種語態概念：-ed（過去分詞）帶有『被動、承受某種影響』的意味，因此適合形容『被引發某種情緒的人』；-ing（現在分詞）帶有『主動引發、正在造成影響』的意味，因此適合形容『引發這種情緒的事物或情況』，這與被動語態單元中『過去分詞＝承受動作』的邏輯是一致的，可以互相對照記憶。",
       steps: ["先確認主詞是『感受情緒的人』還是『引發情緒的事物或情況』", "人用 -ed 形容詞，事物／情況用 -ing 形容詞", "個性形容詞題目通常要從人物的行為描述反推特質，而非直接寫出答案", "留意個性形容詞的正負面對照組，避免選出語意相反的選項"],
       tips: ["I am bored（我感到無聊）vs. The class is boring（這堂課很無聊），別選錯方向", "個性形容詞常需要從人物行為（如常常分享食物給同學）推論出對應特質（generous）", "confused（感到困惑）vs. confusing（令人困惑），同一組規則適用所有情緒形容詞", "人物描述類題組常要求整合多個線索才能判斷個性，不能只看單一句子"],
+      examples: [{ sentence: "The movie was exciting, and the children were excited.", note: "movie 造成感覺，用 -ing；children 是有感覺的人，用 -ed。" }],
       quiz: { q: "選出正確：After hearing the confusing directions, I felt totally ___.", a: "confused。主詞 I 是感受困惑的人（感受者），要用 -ed 形容詞 confused，而不是 confusing（用來形容造成困惑的事物，如前面已出現的 directions）。" }
     },
     {
@@ -225,6 +243,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "科技、環境、健康之所以成為閱讀題組的高頻主題，是因為這些議題貼近時事、具有明確的因果或倡議結構（問題→ 原因 → 解決方法／建議），非常適合設計成說明文或議論文形式的閱讀題組，同時也方便出主旨、細節、推論等多種題型；而 affect/effect 這類同音異詞的考點，本質上和字彙單元中『先判斷句子需要的詞性』的策略一致，只是換成主題式字彙來測驗。",
       steps: ["先辨認文章屬於科技、環保還是健康主題，喚起對應的主題字彙", "affect/effect 類同音異詞先判斷句子結構需要動詞還是名詞", "環保類題目留意 reduce/reuse/recycle 三者的先後處理邏輯順序", "健康類題目留意正面（regularly, balanced, enough）與負面（stay up late, skip meals）習慣的對照"],
       tips: ["reduce（源頭減少）→ reuse（重複使用）→ recycle（回收再製），常考排序邏輯", "affect 是動詞，effect 通常是名詞，句子需要哪種詞性決定用哪個字", "artificial intelligence（人工智慧）、social media（社群媒體）是近年科技主題常考詞組", "健康主題常對照『好習慣』與『壞習慣』的字彙，注意正負面方向"],
+      examples: [{ sentence: "Too much screen time can affect sleep.", note: "can 後面需要原形動詞，affect 是動詞；若用 effect，常見形式是 have an effect on sleep。" }],
       quiz: { q: "選出正確：Air pollution can seriously ___ people's health.", a: "affect。句子需要一個動詞連接主詞 Air pollution 和受詞 people's health，因此用動詞 affect（影響），而不是名詞 effect。" }
     },
     {
@@ -236,6 +255,7 @@ window.ENGLISH_DATA = (() => {
       derivation: "字首字尾之所以能提供猜字線索，是因為英語有大量詞彙是由固定的詞綴（字首、字尾）加上詞根組合而成，這些詞綴本身帶有穩定、可重複辨識的語意功能（例如 un- 幾乎都表示『不、非』），因此即使不認得整個單字，也能透過拆解詞綴推知大致的詞性與正負面方向；上下文線索則是因為文章寫作時，作者常會用對比、舉例、同位語等方式讓句子前後互相呼應，這種語言結構上的『可預測性』使讀者能反推生字的合理意思，這正是閱讀測驗設計上刻意保留少量生字的用意——測驗『推敲策略』而非單純的背誦記憶。",
       steps: ["先看生字是否有中文加註，若有直接使用", "沒有加註時，先拆解字首字尾，判斷詞性與正負面方向", "回頭看上下文有沒有對比詞（but/however）或同位語、舉例句能直接解釋生字", "確認猜測出的大致意思能不能讓句子或段落語意通順，不要求精確翻譯"],
       tips: ["un-/in-/dis- 開頭的字，先假設是原本字義的『相反』", "-tion/-ment/-ness 結尾通常是名詞，可以幫助判斷這個字在句子裡的角色", "however、but、although 後面常常出現與前面意思相反的線索", "遇到生字不要停頓太久，先猜大致方向、把整句讀完再回頭確認"],
+      examples: [{ sentence: "The word unhappy means not happy because un- means not.", note: "構詞題先拆字首 un-，再回到上下文確認語氣是否為負向；不要只靠中文直覺硬猜。" }],
       quiz: { q: "句子：The new policy was unpopular, but the government refused to withdraw it. 依構詞法，unpopular 最可能的意思是什麼？", a: "不受歡迎的。un- 是否定字首，popular 意思是「受歡迎的」，un- 加上去表示相反，即「不受歡迎的」，且後文『政府拒絕撤回』也暗示政策引發負面反應，與此推論一致。" }
     }
   ];

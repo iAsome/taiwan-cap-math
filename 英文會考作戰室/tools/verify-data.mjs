@@ -19,11 +19,41 @@ for (const file of ["english-data.js", "quiz-taxonomy.js", "questions.js", "anal
 const { ENGLISH_DATA, QUIZ_TAXONOMY, EXAM_ENGINE, ENGLISH_ANALYSIS } = sandbox.window;
 const errors = [];
 const check = (cond, msg) => { if (!cond) errors.push(msg); };
+const handbookEsc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const handbookNl = value => handbookEsc(value).replace(/\n/g, "<br>");
+const badHandbookText = /分子|分母|\[\[frac:|math-frac|math-num|math-den|[А-Яа-яЁё]/;
+const appSource = fs.readFileSync(path.join(root, "app.js"), "utf8");
+check(!/const\s+nl\s*=\s*value\s*=>\s*FRACTION_MARKUP\.renderMath/.test(appSource), "英文講義 nl() 不得使用 FRACTION_MARKUP.renderMath，避免 a/an 等斜線文字被渲染成分數");
+
+function handbookStrings(unit) {
+  return [
+    unit.summary, unit.core, unit.clarify, unit.formula, unit.derivation,
+    ...(unit.steps || []), ...(unit.tips || []),
+    ...((unit.examples || []).flatMap(example => [example.sentence, example.note])),
+    unit.quiz?.q, unit.quiz?.a
+  ].filter(value => value != null);
+}
 
 // 1. 單元 id 應為 1..20 連續整數
 const unitIds = ENGLISH_DATA.units.map(u => u.id);
 check(unitIds.length === 20, `ENGLISH_DATA.units 應有 20 個單元，實際 ${unitIds.length} 個`);
 unitIds.forEach((id, i) => check(id === i + 1, `單元 id 應依序為 ${i + 1}，實際為 ${id}`));
+ENGLISH_DATA.units.forEach(unit => {
+  ["summary", "core", "clarify", "formula", "derivation"].forEach(field => {
+    check(typeof unit[field] === "string" && unit[field].trim(), `unit ${unit.id} ${field} 不得為空`);
+  });
+  check(Array.isArray(unit.steps) && unit.steps.length >= 4, `unit ${unit.id} 至少需要 4 個 steps`);
+  check(Array.isArray(unit.tips) && unit.tips.length >= 4, `unit ${unit.id} 至少需要 4 個 tips`);
+  check(unit.quiz?.q && unit.quiz?.a, `unit ${unit.id} 需要 1 題觀念測驗與解說`);
+  check(Array.isArray(unit.examples) && unit.examples.length >= 1, `unit ${unit.id} 至少需要 1 個會考例句`);
+  (unit.examples || []).forEach((example, i) => {
+    check(example.sentence && example.note, `unit ${unit.id} example ${i + 1} 需要 sentence 與 note`);
+  });
+  const text = handbookStrings(unit).join("\n");
+  check(!badHandbookText.test(text), `unit ${unit.id} 講義含分數標記、分子分母字樣或異常 Cyrillic 字元`);
+  const rendered = handbookStrings(unit).map(handbookNl).join("\n");
+  check(!/math-frac|math-num|math-den/.test(rendered), `unit ${unit.id} 英文講義渲染後不得含 math fraction class`);
+});
 
 // 2. 模考：generate() 應產生 30 題，每題 4 個選項、answer 落在範圍內、unitId 有效
 const mock = EXAM_ENGINE.generate(20260701, 2);
