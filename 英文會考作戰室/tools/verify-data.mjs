@@ -11,7 +11,7 @@ const sandbox = { window: {}, console, Date, Math };
 vm.createContext(sandbox);
 loadFractionMarkup(sandbox);
 
-for (const file of ["english-data.js", "quiz-taxonomy.js", "questions.js", "analysis-data.js"]) {
+for (const file of ["english-data.js", "quiz-taxonomy.js", "vocab-quiz-data.js", "questions.js", "analysis-data.js"]) {
   const code = fs.readFileSync(path.join(root, file), "utf8");
   vm.runInContext(code, sandbox, { filename: file });
 }
@@ -69,12 +69,25 @@ for (const blueprint of EXAM_ENGINE.quizCatalog) {
   const quiz = EXAM_ENGINE.generateQuiz(blueprint.id);
   check(quiz.questions.length === blueprint.questionCount,
     `小考 ${blueprint.id} 題數不符：blueprint=${blueprint.questionCount}，實際=${quiz.questions.length}`);
+  check(blueprint.questionCount === 50 && blueprint.minutes === 50, `小考 ${blueprint.id} 應為 50 題、50 分鐘`);
+  check(quiz.questions.length === 50, `小考 ${blueprint.id} 實際應產生 50 題`);
+  const reading = quiz.questions.slice(44);
+  check(reading.length === 6, `小考 ${blueprint.id} 第 45–50 題應為閱讀題組`);
+  check(reading.slice(0, 3).every(q => q.readingGroup === 1) && reading.slice(3, 6).every(q => q.readingGroup === 2),
+    `小考 ${blueprint.id} 閱讀題組應為 3+3 題`);
+  reading.forEach((q, i) => {
+    check(Array.isArray(q.glossary) && q.glossary.length <= 5, `小考 ${blueprint.id} 閱讀第 ${i + 45} 題 glossary 不得超過 5 字`);
+    (q.glossary || []).forEach(g => check(g.word && g.zh, `小考 ${blueprint.id} 閱讀第 ${i + 45} 題 glossary 需含 word/zh`));
+  });
   quiz.questions.forEach((q, i) => {
     check(Array.isArray(q.choices) && q.choices.length === 4, `小考 ${blueprint.id} 第 ${i + 1} 題選項數應為 4`);
     check(q.answer >= 0 && q.answer < q.choices.length, `小考 ${blueprint.id} 第 ${i + 1} 題 answer 索引超出範圍`);
   });
   blueprint.unitIds.forEach(id => check(unitIds.includes(id), `小考 ${blueprint.id} 引用的 unitId=${id} 不存在於 ENGLISH_DATA`));
 }
+check(EXAM_ENGINE.vocabCoverage?.basicCount === 1971, `2000 字動態題庫應覆蓋 1971 詞，實際 ${EXAM_ENGINE.vocabCoverage?.basicCount}`);
+check(EXAM_ENGINE.vocabCoverage?.slotsPerWord >= 10, `2000 字動態題庫每詞至少 10 題槽，實際 ${EXAM_ENGINE.vocabCoverage?.slotsPerWord}`);
+check(EXAM_ENGINE.vocabCoverage?.totalSlots >= 19710, `2000 字動態題庫總題槽至少 19710，實際 ${EXAM_ENGINE.vocabCoverage?.totalSlots}`);
 
 // 4. QUIZ_TAXONOMY 的 key 必須對應真實存在的 quizCatalog id
 const catalogIds = new Set(EXAM_ENGINE.quizCatalog.map(b => b.id));
