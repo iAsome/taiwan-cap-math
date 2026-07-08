@@ -42,8 +42,25 @@ const vaguePromptMarkers = [
   "Which sentence has a clear " + "meaning?",
   "Which sentence sounds " + "natural?",
   "Which " + "rewrite is correct?",
-  "Which sentence is correct " + "now?",
+  "Which sentence is " + "correct now?",
   "'s review " + "note:"
+];
+const genericGrammarPromptMarkers = [
+  "Which sentence uses the pattern " + "correctly?",
+  "Choose the best " + "repair.",
+  "Which answer is " + "correct?",
+  "Which sentence is " + "correct?",
+  "Which sentence is " + "grammatical?",
+  "Which sentence is " + "grammatically correct?",
+  "Which sentence uses standard " + "English?",
+  "Which question is " + "correct?",
+  "Which answer fixes this " + "sentence?",
+  "Which choice avoids the grammar " + "error?",
+  "Which sentence uses a modal " + "correctly?",
+  "Which sentence uses the verb form " + "correctly?",
+  "Choose the correct adjective " + "position.",
+  "Which sentence sounds like a topic " + "sentence?",
+  "Which answer is an inference, not a direct " + "detail?"
 ];
 const falseContextMarkers = [
   "At school,",
@@ -94,6 +111,25 @@ function questionVisibleText(q) {
     explanationText(q)
   ].filter(Boolean).join("\n");
 }
+function isGrammarQuestion(q) {
+  return q.ruleSlot !== undefined && !q.targetKey && !q.readingGroup;
+}
+function checkGrammarQuestionShape(q, label) {
+  if (!isGrammarQuestion(q)) return;
+  const face = questionFaceText(q);
+  [...vaguePromptMarkers, ...genericGrammarPromptMarkers].forEach(marker => check(!face.includes(marker), `${label} contains banned grammar prompt "${marker}".`));
+  check(["blank", "concreteSentenceTask"].includes(q.questionKind), `${label} needs blank/concreteSentenceTask questionKind.`);
+  check(!!q.conceptKey, `${label} needs conceptKey.`);
+  check(String(q.questionFormKey || "").startsWith(`grammar:${q.questionKind}:`), `${label} questionFormKey must describe the real grammar operation.`);
+  if (q.questionKind === "blank") {
+    check(q.text.includes("___"), `${label} blank grammar question must show a blank.`);
+    check(q.choices.every(choice => !choice.includes("___") && choice.length <= 32 && !/[.!?]$/.test(choice.trim())), `${label} blank choices must be short fragments, not full sentences.`);
+  } else {
+    check(!q.text.includes("___"), `${label} concrete sentence task should not be a disguised blank.`);
+    const genericConcretePrompt = new RegExp("Which (?:answer|sentence|question) is (?:correct|grammatical)|Choose the best " + "repair", "i");
+    check(!genericConcretePrompt.test(q.text), `${label} concrete sentence task must not be a generic correct-sentence prompt.`);
+  }
+}
 function countBy(list, keyFn) {
   return list.reduce((map, item) => {
     const key = keyFn(item);
@@ -120,6 +156,10 @@ check(Array.isArray(EXAM_ENGINE.VOCAB_BANK_META) && EXAM_ENGINE.VOCAB_BANK_META.
 check(Array.isArray(EXAM_ENGINE.GRAMMAR_BANK_META), "English grammar bank metadata should be exposed.");
 const grammarCounts = countBy(EXAM_ENGINE.GRAMMAR_BANK_META || [], item => item.unitId);
 unitIds.forEach(id => check(grammarCounts[id] >= 24, `English grammar unit ${id} should expose at least 24 grammar candidates, got ${grammarCounts[id] || 0}.`));
+(EXAM_ENGINE.GRAMMAR_BANK_META || []).forEach((item, index) => {
+  check(["blank", "concreteSentenceTask"].includes(item.questionKind), `Grammar bank item ${index + 1} needs valid questionKind.`);
+  check(!("formKey" in item), `Grammar bank item ${index + 1} must not expose old formKey skin.`);
+});
 const vocabCounts = countBy(EXAM_ENGINE.VOCAB_BANK_META || [], item => item.unitId);
 unitIds.forEach(id => check(vocabCounts[id] === 30, `English vocab unit ${id} should contain 30 target words, got ${vocabCounts[id] || 0}.`));
 (EXAM_ENGINE.VOCAB_BANK_META || []).forEach(item => {
@@ -215,6 +255,9 @@ const vocabAllowlist = new Set([
   "advice", "argument", "cigarette", "clause", "condition", "connect", "container", "context", "contrast", "definition", "device", "dialogue", "done", "easier", "easily", "feathers", "gave", "given", "harmful", "ignored", "larger", "matches", "met", "musical", "personality", "phrase", "placed", "prevented", "related", "reply", "respectful", "rewrite", "routine", "said", "saved", "sent", "set", "simplest", "situation", "solved", "standard", "tag", "task", "tense", "them", "unit", "usage", "whom", "worse",
   "argued", "caused", "choice", "confusion", "customer", "delay", "displeasure", "field", "instead", "item", "local", "made", "message", "notice", "online", "public", "receipt", "route", "safer", "share", "smoothly", "transport", "volunteer",
   "watchs", "delicion", "wellly", "difficulter", "interestinger", "happilyness", "teacherly", "movemently"
+  // Grammar quiz direct-stem forms: common irregular forms, contraction pieces,
+  // common grammar terms, and intentionally wrong form distractors.
+  , "amaze", "amazed", "amazedly", "amazing", "ate", "aren", "attended", "attitude", "author", "badder", "been", "broke", "came", "cannot", "chosen", "data", "drank", "easiest", "er", "farther", "farthest", "figured", "fiction", "forgotten", "freeze", "freezes", "froze", "got", "gratitude", "hasn", "healthily", "heal", "heard", "held", "hidden", "hopeless", "hopefully", "hungrier", "hungrily", "happiness", "increaseful", "intention", "irrelevant", "japan", "known", "largest", "luck", "medical", "medically", "medicate", "mentioned", "ment", "mood", "mustn", "nearby", "ness", "ought", "our", "ours", "paid", "plural", "politer", "pre", "prediction", "process", "productive", "progressive", "random", "re", "recyclable", "relax", "relaxed", "relaxedly", "relaxing", "removed", "reusedly", "ridden", "risen", "rode", "runner", "sang", "sat", "seen", "signal", "signals", "slept", "spent", "spoke", "summary", "taken", "teeth", "text", "their", "theirs", "ticketses", "unless", "us", "usable", "wore", "worst", "won"
 ]);
 function addBasicWord(raw) {
   const word = String(raw).toLowerCase().replace(/[^a-z]/g, "");
@@ -286,6 +329,7 @@ mock.questions.forEach((q, i) => {
   const scopeText = [face, q.passage, q.readingTitle, ...glossaryWords].filter(Boolean).join("\n");
   const unknown = unknownEnglishWords(scopeText, glossaryWords);
   check(unknown.length === 0, `Mock question ${i + 1} has out-of-scope English words: ${unknown.slice(0, 12).join(", ")}`);
+  checkGrammarQuestionShape(q, `Mock question ${i + 1}`);
 });
 
 ENGLISH_DATA.units.forEach(unit => {
@@ -355,6 +399,7 @@ for (const seed of quizSeeds) {
       if (q.text.includes("___")) {
         check(q.choices.every(choice => !choice.includes("___") && choice.length <= 32), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} blank choices should be short answer fragments.`);
       }
+      checkGrammarQuestionShape(q, `Quiz ${blueprint.id} seed ${seed} question ${i + 1}`);
       const explanation = explanationText(q);
       check(chinesePattern.test(explanation), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} explanation must include Chinese reasoning/translation.`);
       if (q.targetKey) {
@@ -421,6 +466,7 @@ check(Object.keys(ENGLISH_ANALYSIS.primaryUnits || {}).length === 10, "ENGLISH_A
 // Keep the forbidden search strings out of questions.js without storing them literally here.
 removedExports.forEach(name => check(!questionSource.includes(name), `questions.js still contains removed export ${name}.`));
 vaguePromptMarkers.forEach(marker => check(!questionSource.includes(marker), `questions.js still contains vague/review marker ${marker}.`));
+genericGrammarPromptMarkers.forEach(marker => check(!questionSource.includes(marker), `questions.js still contains generic grammar prompt ${marker}.`));
 
 if (errors.length) {
   console.error(`FAILED: ${errors.length} issue(s).`);

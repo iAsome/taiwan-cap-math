@@ -129,15 +129,15 @@ window.EXAM_ENGINE = (() => {
   const stripItemPrefix = value => String(value).replace(/^Item\s+[^:]*:\s*/i, "");
   const fill = (text, c) => stripItemPrefix(String(text).replace(/\{(\w+)\}/g, (_, key) => c[key] ?? ""));
 
-  function rule(unitId, topic, text, correct, distractors, step, tip, trap, ability = "knowledge", difficulty = 2) {
-    return { unitId, topic, text, correct, distractors, step, tip, trap, ability, difficulty };
+  function rule(unitId, topic, text, correct, distractors, step, tip, trap, ability = "knowledge", difficulty = 2, meta = {}) {
+    return { unitId, topic, text, correct, distractors, step, tip, trap, ability, difficulty, ...meta };
   }
 
   const RULES = {
     1: [
       rule(1, "現在簡單式與現在進行式", "{name} usually ___ to {place}, but today {name} is taking the bus.", "walks", ["is walking", "walk", "walked"], "usually signals a routine, so use the simple present with third-person -s.", "Time clues decide the tense before the verb form.", "Do not choose progressive just because the sentence says today."),
       rule(1, "現在進行式", "Look! {name2} ___ the {object} right now.", "is carrying", ["carries", "carry", "carried"], "Look and right now show an action happening now, so use be + V-ing.", "Present progressive needs both be and V-ing.", "Do not drop the be verb."),
-      rule(1, "三單動詞拼字", "Which sentence is correct?", "{name} watches TV after dinner.", ["{name} watch TV after dinner.", "{name} watchs TV after dinner.", "{name} watching TV after dinner."], "A third-person singular subject takes -es after watch.", "Check the subject before adding -s or -es.", "watchs is a spelling error."),
+      rule(1, "三單動詞拼字", "{name} ___ TV after dinner.", "watches", ["watch", "watchs", "watching"], "A third-person singular subject takes -es after watch.", "Check the subject before adding -s or -es.", "watchs is a spelling error."),
       rule(1, "狀態動詞", "I ___ the answer to this question.", "know", ["am knowing", "knows", "knowing"], "know is a stative verb and normally does not use the progressive form.", "State verbs describe condition or thought, not an action in progress.", "Do not use am knowing in ordinary present meaning."),
       rule(1, "現在式用法辨識", "Which time clue usually asks for simple present?", "every day", ["right now", "at this moment", "Look!"], "every day marks a repeated habit.", "Routine clues go with simple present.", "Do not mix habit clues with progressive clues.")
     ],
@@ -146,13 +146,13 @@ window.EXAM_ENGINE = (() => {
       rule(2, "過去式時間線索", "They ___ to {place} yesterday.", "went", ["go", "gone", "going"], "yesterday fixes the sentence in the simple past.", "Past time words decide tense first.", "gone needs a helper such as have."),
       rule(2, "will 即時決定", "A: The phone is ringing. B: I ___ it.", "will answer", ["am going to answer", "answered", "answer"], "A decision made at the moment often uses will.", "Use will for a quick decision.", "Do not use past tense for a future response."),
       rule(2, "be going to 計畫或跡象", "Look at those dark clouds. It ___ soon.", "is going to rain", ["will rain", "rained", "rains"], "Visible evidence points to be going to.", "Evidence now often points to be going to.", "Do not use simple present for this prediction."),
-      rule(2, "未來式結構", "Which sentence is grammatically correct?", "{name} is going to visit {place} next week.", ["{name} going to visit {place} next week.", "{name} is go to visit {place} next week.", "{name} went to visit {place} next week."], "be going to needs the be verb before going.", "Check the full structure: be + going to + V.", "Do not omit be.")
+      rule(2, "未來式結構", "{name} ___ visit {place} next week.", "is going to", ["going to", "is go to", "went to"], "be going to needs the be verb before going.", "Check the full structure: be + going to + V.", "Do not omit be.")
     ],
     3: [
       rule(3, "for 與 since", "{name} has lived in Taipei ___ 2019.", "since", ["for", "at", "on"], "since introduces a starting point.", "since + starting point; for + length of time.", "Do not use for before a year that marks a start."),
       rule(3, "for 與時間長度", "{name2} has studied English ___ two years.", "for", ["since", "on", "at"], "two years is a length of time, so use for.", "A duration takes for.", "Do not use since before a duration."),
       rule(3, "現在完成式與過去式", "I saw that movie ___.", "yesterday", ["already", "yet", "since 2020"], "simple past works with a finished past time such as yesterday.", "Exact past time uses simple past.", "Do not pair present perfect with yesterday."),
-      rule(3, "完成式結構", "Which sentence is correct?", "{name} has finished the report.", ["{name} have finished the report.", "{name} has finish the report.", "{name} finished the report already since."], "A singular subject uses has + past participle.", "Present perfect uses have/has + p.p.", "Do not use base verb after has."),
+      rule(3, "完成式結構", "{name} ___ finished the report.", "has", ["have", "did", "is"], "A singular subject uses has + past participle.", "Present perfect uses have/has + p.p.", "Do not use base verb after has."),
       rule(3, "完成式經驗", "___ you ever visited {place}?", "Have", ["Did", "Are", "Do"], "ever in an experience question usually uses present perfect.", "Experience questions often start with Have/Has.", "Did you ever is possible in some dialects, but this quiz targets standard present perfect.")
     ],
     4: [
@@ -160,7 +160,7 @@ window.EXAM_ENGINE = (() => {
       rule(4, "不必做某事", "You ___ come early if you are busy. It is not necessary.", "do not have to", ["must not", "may not", "should not to"], "not necessary points to do not have to.", "Necessity and prohibition are different meanings.", "must not is too strong here."),
       rule(4, "情態助動詞後接原形", "{name} can ___ the {object} after class.", "take", ["takes", "took", "taking"], "A modal is followed by the base verb.", "can/must/should + base verb.", "Do not add -s after a modal."),
       rule(4, "推測程度", "{name2} has not eaten all day. {name2} ___ be hungry.", "must", ["can", "should to", "has to be eating"], "The evidence is strong, so must expresses a strong conclusion.", "Use must for a strong logical guess.", "can is not used this way in affirmative deduction."),
-      rule(4, "許可與建議", "Which sentence uses a modal correctly?", "{name} should ask the teacher first.", ["{name} should to ask the teacher first.", "{name} should asks the teacher first.", "{name} should asked the teacher first."], "should is followed by the base verb.", "Modal structure stays simple.", "Do not add to after should.")
+      rule(4, "許可與建議", "{name} should ___ the teacher first.", "ask", ["to ask", "asks", "asked"], "should is followed by the base verb.", "Modal structure stays simple.", "Do not add to after should.")
     ],
     5: [
       rule(5, "不可數名詞", "Can you give me some ___ about the bus schedule?", "information", ["informations", "an information", "information's"], "information is uncountable in this use.", "Some common nouns do not take plural -s.", "Do not add -s to information."),
@@ -174,14 +174,14 @@ window.EXAM_ENGINE = (() => {
       rule(6, "形容詞描述主詞", "You look ___ today. Are you okay?", "tired", ["tiredly", "tiring", "tire"], "look links the subject to an adjective.", "Ask whether the word describes the subject or the action.", "tiredly describes an action, not the subject here."),
       rule(6, "副詞修飾動詞", "{name} finished the race ___.", "well", ["good", "goodly", "wellly"], "well is the adverb form used to describe how someone did something.", "good is usually an adjective; well is often an adverb.", "goodly is not the target form."),
       rule(6, "fast 的副詞形式", "{name2} drives very ___.", "fast", ["fastly", "faster than", "fasting"], "fast can be both adjective and adverb.", "Not every adverb ends in -ly.", "fastly is not standard for this meaning."),
-      rule(6, "程度副詞位置", "Which sentence is correct?", "{name} is very careful with the {object}.", ["{name} is careful very with the {object}.", "{name} very is careful with the {object}.", "{name} is careful with very the {object}."], "very usually comes before the adjective it modifies.", "Place degree words right before adjectives or adverbs.", "Do not separate very from the word it modifies.")
+      rule(6, "程度副詞位置", "{name} is ___ careful with the {object}.", "very", ["careful very", "veryly", "carefully very"], "very usually comes before the adjective it modifies.", "Place degree words right before adjectives or adverbs.", "Do not separate very from the word it modifies.")
     ],
     7: [
       rule(7, "比較級", "This question is ___ than that one.", "more difficult", ["difficulter", "more difficulter", "difficult more"], "Longer adjectives often use more.", "Use either -er or more, not both.", "Do not double mark the comparative."),
       rule(7, "短形容詞比較級", "{name} is ___ than {name2}.", "taller", ["more tall", "more taller", "tallest"], "Short adjectives often take -er.", "than signals a comparative form.", "tallest is superlative, not comparative."),
       rule(7, "原級比較", "This bag is as ___ as that one.", "heavy", ["heavier", "heaviest", "more heavy"], "as...as takes the base adjective.", "Do not use comparative forms inside as...as.", "heavier does not fit after as."),
       rule(7, "最高級", "This is the ___ story in the book.", "most interesting", ["more interesting", "interestingest", "most interestinger"], "the and in the group point to a superlative.", "Long adjectives use most for superlative.", "Do not combine most and -er."),
-      rule(7, "比較句結構", "Which sentence is correct?", "{name}'s room is cleaner than {name2}'s room.", ["{name}'s room is clean than {name2}'s room.", "{name}'s room is cleanest than {name2}'s room.", "{name}'s room is more cleaner than {name2}'s room."], "than needs a comparative form.", "Cleaner already marks comparison.", "Do not use more cleaner.")
+      rule(7, "比較句結構", "{name}'s room is ___ than {name2}'s room.", "cleaner", ["clean", "cleanest", "more cleaner"], "than needs a comparative form.", "Cleaner already marks comparison.", "Do not use more cleaner.")
     ],
     8: [
       rule(8, "時間介系詞 on", "We will meet ___ Monday.", "on", ["at", "in", "to"], "Use on with days.", "in for long periods, on for days/dates, at for clock times.", "Do not use at with Monday."),
@@ -209,13 +209,13 @@ window.EXAM_ENGINE = (() => {
       rule(11, "現在被動", "English ___ in many countries.", "is spoken", ["speaks", "was spoken", "spoken"], "A general present passive uses is/am/are + p.p.", "The subject receives the action.", "spoken alone is incomplete."),
       rule(11, "不及物動詞無被動", "The accident ___ yesterday.", "happened", ["was happened", "is happened", "happens"], "happen is intransitive and does not form a passive.", "Only verbs with objects can usually become passive.", "Do not make happen passive."),
       rule(11, "by 片語", "The window was broken ___ the strong wind.", "by", ["with", "from", "at"], "by can introduce the doer or cause in a passive sentence.", "Passive sentences may include by + agent/cause.", "Do not use at for the agent."),
-      rule(11, "主動改被動", "Which sentence is passive?", "The letter was written by {name}.", ["{name} wrote the letter.", "{name} is writing the letter.", "{name} writes letters."], "was written by marks passive voice.", "Look for be + p.p.", "A sentence with an object is not automatically passive.")
+      rule(11, "主動改被動", "The letter ___ by {name}.", "was written", ["wrote", "is writing", "writes"], "was written by marks passive voice.", "Look for be + p.p.", "A sentence with an object is not automatically passive.")
     ],
     12: [
       rule(12, "附加問句", "Your sister plays the piano well, ___?", "doesn't she", ["does she", "isn't she", "doesn't he"], "A positive statement takes a negative tag.", "Match the helper and pronoun.", "plays needs does in the tag."),
       rule(12, "完成式附加問句", "You haven't finished your homework, ___?", "have you", ["haven't you", "did you", "don't you"], "A negative statement takes a positive tag.", "Use the same helper from the statement.", "Do not switch to did."),
       rule(12, "一般動詞問句", "___ {name} like coffee?", "Does", ["Is", "Do", "Did"], "A third-person singular subject in a present question uses does.", "Do-support forms questions with ordinary verbs.", "Is is for be-verb or progressive patterns."),
-      rule(12, "問句語序", "Which question is correct?", "Did {name2} bring the {object}?", ["{name2} brought the {object}?", "Did {name2} brought the {object}?", "Does {name2} brought the {object}?"], "After did, use the base verb.", "Question helper carries the tense.", "Do not keep past tense on the main verb after did."),
+      rule(12, "問句語序", "Did {name2} ___ the {object}?", "bring", ["brought", "brings", "bringing"], "After did, use the base verb.", "Question helper carries the tense.", "Do not keep past tense on the main verb after did."),
       rule(12, "否定句", "{name} ___ know the answer.", "doesn't", ["don't", "isn't", "didn't to"], "Third-person singular present negative uses doesn't + base verb.", "Use do-support for ordinary verbs.", "Do not use isn't with know.")
     ],
     13: [
@@ -223,27 +223,27 @@ window.EXAM_ENGINE = (() => {
       rule(13, "關係代名詞 which/that", "This is the book ___ I told you about.", "that", ["who", "whose", "what"], "that can refer to a thing in a defining relative clause.", "Use who for people, which/that for things.", "what is not used after a clear antecedent."),
       rule(13, "whose 所有格", "The student ___ bag was lost went to the office.", "whose", ["who", "which", "that"], "whose shows possession.", "If the next noun belongs to the antecedent, use whose.", "who cannot directly show possession before bag."),
       rule(13, "非限定子句", "Mr. Lin, ___ teaches math, is very patient.", "who", ["that", "whose", "what"], "Non-defining clauses after commas do not use that.", "Commas change the relative clause type.", "Do not use that after the comma pair."),
-      rule(13, "關係子句位置", "Which sentence is correct?", "The movie that we watched was exciting.", ["The movie we watched it was exciting.", "The movie what we watched was exciting.", "The movie that we watched it was exciting."], "The object inside the relative clause is replaced, so do not repeat it.", "Avoid double objects in relative clauses.", "Do not keep it after watched.")
+      rule(13, "關係子句位置", "The movie ___ we watched was exciting.", "that", ["it", "what", "that it"], "The object inside the relative clause is replaced, so do not repeat it.", "Avoid double objects in relative clauses.", "Do not keep it after watched.")
     ],
     14: [
       rule(14, "現在假設", "If I ___ a bird, I would fly to you.", "were", ["am", "was", "be"], "Unreal present condition uses were in this fixed pattern.", "If I were is the standard test form.", "Do not choose am for an unreal condition."),
       rule(14, "過去假設結果", "If {name} had studied harder, {name} ___ the exam.", "would have passed", ["would pass", "passed", "will pass"], "Past unreal result uses would have + p.p.", "had + p.p. pairs with would have + p.p.", "Do not use will for an unreal past result."),
       rule(14, "現在假設結果", "If {name2} had more time, {name2} ___ the project.", "would finish", ["will finish", "finished", "would have finished"], "Unreal present result uses would + base verb.", "Match the time frame of the condition.", "would have finished points to unreal past, not present."),
-      rule(14, "if 子句動詞", "Which sentence is correct?", "If {name} were here, we would start now.", ["If {name} is here, we would start now.", "If {name} were here, we will start now.", "If {name} be here, we would start now."], "Unreal present uses were and would.", "Keep both halves in the same unreal pattern.", "Do not mix is with would."),
+      rule(14, "if 子句動詞", "If {name} ___ here, we would start now.", "were", ["is", "be", "will be"], "Unreal present uses were and would.", "Keep both halves in the same unreal pattern.", "Do not mix is with would."),
       rule(14, "過去假設條件", "If they ___ earlier, they would have caught the bus.", "had left", ["left", "have left", "would leave"], "Past unreal condition uses had + p.p.", "The if-clause shows the unreal past condition.", "Do not put would in the if-clause.")
     ],
     15: [
       rule(15, "主旨範圍", "A paragraph explains that students save money by bringing lunch, using old notebooks, and taking the bus. Which title fits best?", "Small Ways Students Can Save Money", ["Taking the Bus Only", "A Lunch Box Story", "Why Notebooks Are Expensive"], "The best title covers all main examples.", "Main idea choices should be broad enough but not too broad.", "Do not choose a detail as the title.", "comprehension"),
       rule(15, "最佳標題", "A passage begins, 'Have you ever wondered why cats sleep so much?' What title best matches the topic?", "Why Do Cats Sleep So Much?", ["My Favorite Cat", "How to Buy Cat Food", "The History of Dogs"], "The opening question sets the passage topic.", "A title should match the whole passage.", "Do not choose a title that only shares one word.", "comprehension"),
       rule(15, "細節與主旨", "Which choice is too narrow for a passage about exercise, sleep, and healthy food?", "Running after school", ["Three habits for health", "How students stay healthy", "Daily habits and health"], "Running is only one possible detail.", "Too-narrow choices miss other major points.", "A detail is not the main idea.", "comprehension"),
-      rule(15, "主題句", "Which sentence sounds like a topic sentence?", "There are three easy ways to make a classroom cleaner.", ["The floor was wet near the door.", "Mina picked up one bottle.", "The bell rang at noon."], "A topic sentence introduces the whole paragraph.", "Look for a sentence that can cover later details.", "A single event is usually too narrow.", "comprehension"),
+      rule(15, "主題句", "A topic sentence usually covers the ___ paragraph.", "whole", ["last", "first", "small"], "A topic sentence introduces the whole paragraph.", "Look for a sentence that can cover later details.", "A single event is usually too narrow.", "comprehension"),
       rule(15, "段落功能", "A final paragraph says, 'For these reasons, a small change can help the whole school.' What is its function?", "It gives the conclusion.", ["It starts a new example.", "It lists a character.", "It asks a new question."], "For these reasons points back to earlier support.", "Conclusion sentences often summarize the point.", "Do not read a conclusion as a new example.", "comprehension")
     ],
     16: [
       rule(16, "推論證據", "Sales dropped after the price went up, so the shop lowered the price again. What can we infer?", "The higher price hurt sales.", ["The shop sold more than before.", "The product was free.", "The shop closed forever."], "The price rose, sales dropped, then the shop changed the price back.", "Inference must be supported by clues in the text.", "Do not choose an idea without evidence.", "inquiry"),
       rule(16, "代名詞指涉", "Sam left his phone at the restaurant, so he went back to get it. What does it refer to?", "his phone", ["the restaurant", "Sam", "the way back"], "it is singular and matches his phone in meaning.", "Replace the pronoun with each choice to test it.", "Do not choose a place when the sentence needs an object.", "comprehension"),
       rule(16, "語氣判斷", "The writer says, 'Luckily, the missing ticket was still in my bag!' What tone is shown?", "relieved", ["angry", "bored", "uncertain"], "Luckily and the exclamation show relief.", "Tone comes from word choice and punctuation.", "Do not ignore emotional clues.", "inquiry"),
-      rule(16, "推論與直接細節", "Which answer is an inference, not a direct detail?", "{name} probably felt nervous before the test.", ["The test started at nine.", "{name} had two pencils.", "The teacher opened the door."], "probably felt nervous extends from clues instead of copying a detail.", "Inference goes one step beyond the sentence but still needs support.", "Do not call a copied fact an inference.", "inquiry"),
+      rule(16, "推論與直接細節", "An inference must be supported by ___ in the passage.", "clues", ["luck", "color", "sound"], "probably felt nervous extends from clues instead of copying a detail.", "Inference goes one step beyond the sentence but still needs support.", "Do not call a copied fact an inference.", "inquiry"),
       rule(16, "指涉一致", "The students put the boxes on the table because they were heavy. What does they refer to?", "the boxes", ["the students", "the table", "the room"], "heavy describes the boxes, not the students or table.", "Pronoun reference must fit grammar and meaning.", "Do not choose the nearest noun if meaning fails.", "comprehension")
     ],
     17: [
@@ -251,21 +251,21 @@ window.EXAM_ENGINE = (() => {
       rule(17, "lend 用法", "Can you ___ me some money? I will pay you back tomorrow.", "lend", ["borrow", "lent", "borrowing"], "The subject gives something temporarily, so use lend.", "lend is used from the giver's view.", "Do not use borrow for the giver.", "inquiry"),
       rule(17, "bring 與 take", "Please ___ your notebook when you come to class.", "bring", ["take", "brought", "taking"], "The movement is toward the speaker/classroom, so use bring.", "bring moves toward the speaker or target place.", "Do not use take for movement toward here.", "inquiry"),
       rule(17, "take 用法", "Do not forget to ___ your umbrella when you leave home.", "take", ["bring", "took", "bringing"], "The movement is away from home, so use take.", "take moves something away from the starting point.", "Do not choose bring just because an object is carried.", "inquiry"),
-      rule(17, "固定搭配", "Which sentence is correct?", "{name} borrowed a book from {name2}.", ["{name} borrowed {name2} a book.", "{name} lent from {name2} a book.", "{name} borrowed to {name2} a book."], "borrow commonly uses from for the source.", "Check the direction and the preposition together.", "Do not mix borrow with lend patterns.", "inquiry")
+      rule(17, "固定搭配", "{name} borrowed a book ___ {name2}.", "from", ["to", "for", "with"], "borrow commonly uses from for the source.", "Check the direction and the preposition together.", "Do not mix borrow with lend patterns.", "inquiry")
     ],
     18: [
       rule(18, "-ed 情緒形容詞", "After hearing the confusing directions, I felt totally ___.", "confused", ["confusing", "confuse", "confuses"], "-ed describes the person's feeling.", "Use -ed for how someone feels.", "Do not use -ing for the person who receives the feeling.", "knowledge"),
       rule(18, "-ing 情緒形容詞", "The movie was so ___ that I almost fell asleep.", "boring", ["bored", "bore", "bores"], "-ing describes the thing that causes the feeling.", "Use -ing for the cause.", "Do not use bored to describe the movie in this structure.", "knowledge"),
-      rule(18, "人與事物方向", "Which sentence is correct?", "{name} was interested in the story.", ["The story was interested.", "{name} was interesting by the story.", "{name} interest in the story."], "A person can be interested in something.", "Check whether the adjective describes the person or the cause.", "Do not swap -ed and -ing forms.", "knowledge"),
-      rule(18, "形容詞位置", "Choose the correct adjective position.", "a friendly teacher", ["a teacher friendly", "a friend teacherly", "a teacher friend"], "An adjective usually comes before the noun it modifies.", "Position helps identify the word's role.", "Do not place a simple adjective after the noun here.", "knowledge"),
+      rule(18, "人與事物方向", "{name} was ___ in the story.", "interested", ["interesting", "interest", "interestedly"], "A person can be interested in something.", "Check whether the adjective describes the person or the cause.", "Do not swap -ed and -ing forms.", "knowledge"),
+      rule(18, "形容詞位置", "She is a ___ teacher.", "friendly", ["friend", "friendlyly", "friendship"], "An adjective usually comes before the noun it modifies.", "Position helps identify the word's role.", "Do not place a simple adjective after the noun here.", "knowledge"),
       rule(18, "詞性判斷", "In 'The exciting game ended late,' exciting is used as a _____.", "adjective", ["verb", "noun", "preposition"], "exciting modifies game, so it functions as an adjective.", "Ask what word it modifies.", "Do not judge only by the -ing ending.", "knowledge")
     ],
     19: [
       rule(19, "affect 作動詞", "Air pollution can seriously ___ people's health.", "affect", ["effect", "affects's", "effected"], "The blank needs a verb after can.", "Judge the needed part of speech first.", "effect is usually a noun in this contrast.", "knowledge"),
       rule(19, "effect 作名詞", "Doctors are studying the ___ of the new medicine.", "effect", ["affect", "affects", "affecting"], "the points to a noun phrase, so use effect.", "Articles often signal a noun.", "Do not choose the verb form after the.", "knowledge"),
-      rule(19, "reduce/reuse/recycle 用法", "Which sentence uses the verb form correctly?", "We should reduce waste first.", ["We should reduction waste first.", "We should reusable waste first.", "We should recycling waste first."], "After should, use a base verb.", "Modal + base verb also applies to topic words.", "Do not use noun or adjective forms after should.", "inquiry"),
+      rule(19, "reduce/reuse/recycle 用法", "We should ___ waste first.", "reduce", ["reduction", "reusable", "recycling"], "After should, use a base verb.", "Modal + base verb also applies to topic words.", "Do not use noun or adjective forms after should.", "inquiry"),
       rule(19, "詞性結構", "In 'The effect of sleep is clear,' effect is a _____.", "noun", ["verb", "adverb", "conjunction"], "The effect is a noun phrase.", "The article the helps identify a noun.", "Do not confuse spelling with function.", "knowledge"),
-      rule(19, "搭配判斷", "Which sentence is grammatical?", "Too much screen time can affect sleep.", ["Too much screen time can effect sleep.", "Too much screen time can affects sleep.", "Too much screen time can affected sleep."], "can needs a base verb, and affect is the verb.", "Use structure to choose between similar words.", "Do not choose by sound alone.", "inquiry")
+      rule(19, "搭配判斷", "Too much screen time can ___ sleep.", "affect", ["effect", "affects", "affected"], "can needs a base verb, and affect is the verb.", "Use structure to choose between similar words.", "Do not choose by sound alone.", "inquiry")
     ],
     20: [
       rule(20, "名詞字尾 -tion", "In 'Good communication helps a team,' communication is a _____.", "noun", ["verb", "adjective", "adverb"], "-tion often forms nouns.", "Suffixes can show part of speech.", "Do not judge only from the root communicate.", "knowledge"),
@@ -276,18 +276,31 @@ window.EXAM_ENGINE = (() => {
     ]
   };
 
-  const GRAMMAR_FORMS = [
-    ["blank", data => data.stem],
-    ["correct-sentence", data => data.stem.includes("___") ? "Which sentence is correct?" : data.stem],
-    ["fix-error", data => data.stem.includes("___") ? `Which answer fixes this sentence?\n${data.wrongSentences[0]}` : "Which sentence is correct?"],
-    ["standard-choice", data => data.stem.includes("___") ? "Which sentence uses standard English?" : "Which sentence is standard English?"],
-    ["grammar-check", data => data.stem.includes("___") ? "Which sentence is grammatical?" : "Which sentence is grammatical?"],
-    ["error-choice", data => data.stem.includes("___") ? `Which choice avoids the grammar error?\n${data.wrongSentences[1]}` : "Which sentence has no grammar error?"],
-    ["sentence-use", data => data.stem.includes("___") ? "Which sentence uses the grammar correctly?" : "Which sentence uses the pattern correctly?"],
-    ["clue", data => data.stem.includes("___") ? "Which sentence matches the grammar clue?" : data.stem],
-    ["repair", data => data.stem.includes("___") ? `Choose the best repair.\n${data.wrongSentences[2]}` : "Choose the best sentence."],
-    ["contrast", data => data.stem.includes("___") ? `Which answer corrects this sentence?\n${data.wrongSentences[0]}` : "Which answer is correct?"]
-  ];
+  function blankFromSentences(correct, distractors) {
+    const rows = [correct, ...distractors].map(sentence => String(sentence).trim().split(/\s+/));
+    if (rows.some(row => row.length < 3)) return null;
+    let prefix = 0;
+    while (rows.every(row => row[prefix] && row[prefix] === rows[0][prefix])) prefix++;
+    let suffix = 0;
+    while (rows.every(row => row.length - 1 - suffix >= prefix && row[row.length - 1 - suffix] === rows[0][rows[0].length - 1 - suffix])) suffix++;
+    const choices = rows.map(row => row.slice(prefix, row.length - suffix).join(" "));
+    if (!choices.every(Boolean) || new Set(choices).size !== choices.length) return null;
+    const head = rows[0].slice(0, prefix).join(" ");
+    const tail = rows[0].slice(rows[0].length - suffix).join(" ");
+    const stem = `${head}${head ? " " : ""}___${tail ? " " : ""}${tail}`.trim();
+    return stem && stem !== "___" ? { stem, correct: choices[0], distractors: choices.slice(1) } : null;
+  }
+  function concreteGrammarPrompt(rule, fallback) {
+    const text = String(fallback || "");
+    if (/passive/i.test(text) || /passive/i.test(rule.step || "")) return "Choose the passive sentence.";
+    if (/\?$/.test(rule.correct || "")) return "Choose the correctly formed question.";
+    if (/topic sentence/i.test(text)) return "Choose the topic sentence that can introduce a paragraph.";
+    if (/inference/i.test(text)) return "Choose the inference supported by the sentence.";
+    return text;
+  }
+  function grammarRules(unitId) {
+    return GRAMMAR_RULE_BANK[unitId] || RULE_VARIANTS[unitId] || RULES[unitId] || RULES[1];
+  }
   const RULE_VARIANTS = {
     8: [
       rule(8, "time preposition on day", "We will meet ___ Monday.", "on", ["at", "in", "to"], "Use on with days.", "Day words take on.", "Do not use at with a day."),
@@ -315,6 +328,549 @@ window.EXAM_ENGINE = (() => {
       rule(8, "about topic", "This book is ___ animals.", "about", ["on", "at", "to"], "Use about for a topic.", "The book's topic is animals.", "Do not use to for a topic."),
       rule(8, "before time", "Please finish the work ___ lunch.", "before", ["after", "at", "on"], "Use before for an earlier time.", "The work must be done earlier than lunch.", "after gives the opposite meaning.")
     ]
+  };
+  const grammarRows = (unitId, rows) => rows.map(([topic, text, correct, a, b, c]) => rule(
+    unitId,
+    topic,
+    text,
+    correct,
+    [a, b, c],
+    "Use the sentence clue before choosing the form.",
+    "The blank itself shows the grammar job.",
+    "Do not choose by sound only.",
+    "inquiry",
+    2,
+    { questionKind: "blank", conceptKey: topic }
+  ));
+  const GRAMMAR_RULE_BANK = {
+    1: grammarRows(1, [
+      ["simple present routine", "{name} usually ___ to school by bus.", "goes", "is going", "go", "went"],
+      ["present progressive now", "Look! {name2} ___ the door right now.", "is opening", "opens", "open", "opened"],
+      ["third person es", "{name} ___ TV after dinner.", "watches", "watch", "watchs", "watching"],
+      ["stative verb know", "I ___ the answer to this question.", "know", "am knowing", "knows", "knew"],
+      ["plural subject routine", "{name} and {name2} ___ soccer every Sunday.", "play", "plays", "are playing", "played"],
+      ["schedule present", "The train ___ at six every morning.", "leaves", "is leaving", "leave", "left"],
+      ["sound clue progressive", "Listen! Someone ___ outside.", "is singing", "sings", "sing", "sang"],
+      ["general fact present", "Water ___ at zero degrees.", "freezes", "is freezing", "freeze", "froze"],
+      ["never routine", "She never ___ late for class.", "comes", "is coming", "come", "came"],
+      ["today action now", "Today he ___ a blue shirt.", "is wearing", "wears", "wear", "wore"],
+      ["every morning habit", "My father ___ coffee every morning.", "drinks", "is drinking", "drink", "drank"],
+      ["now plural action", "Now the children ___ in the park.", "are playing", "play", "played", "plays"],
+      ["have as state", "{name} ___ two sisters.", "has", "is having", "have", "had"],
+      ["weekday routine", "The shop ___ at nine on weekdays.", "opens", "is opening", "open", "opened"],
+      ["quiet clue progressive", "Be quiet. The baby ___.", "is sleeping", "sleeps", "sleep", "slept"],
+      ["linking state", "This box ___ heavy.", "feels", "is feeling", "feel", "felt"],
+      ["every friday habit", "Every Friday, we ___ the classroom.", "clean", "are cleaning", "cleaned", "cleans"],
+      ["moment action", "At this moment, {name} ___ a letter.", "is writing", "writes", "write", "wrote"],
+      ["natural fact", "The sun ___ in the east.", "rises", "is rising", "rise", "rose"],
+      ["ability state present", "{name2} ___ English very well.", "speaks", "is speaking", "speak", "spoke"],
+      ["right now action", "Right now, I ___ for my key.", "am looking", "look", "looks", "looked"],
+      ["seldom routine", "{name} seldom ___ meat.", "eats", "is eating", "eat", "ate"],
+      ["time clue simple present", "The word always often ___ simple present.", "shows", "is showing", "show", "showed"],
+      ["time clue progressive", "The words right now usually ___ present progressive.", "need", "needs", "needed", "are needing"]
+    ]),
+    2: grammarRows(2, [
+      ["past irregular buy", "{name} ___ a new bike yesterday.", "bought", "buyed", "buys", "buying"],
+      ["past irregular go", "They ___ to the museum last Sunday.", "went", "go", "gone", "going"],
+      ["past irregular break", "{name2} ___ the window an hour ago.", "broke", "breaked", "breaks", "breaking"],
+      ["past regular finish", "I ___ my homework before dinner last night.", "finished", "finish", "finishes", "finishing"],
+      ["past irregular ring", "The phone ___ during class yesterday.", "rang", "rings", "ring", "ringing"],
+      ["past irregular send", "{name} ___ a letter to me last week.", "sent", "send", "sends", "sending"],
+      ["past irregular catch", "We ___ the bus this morning.", "caught", "catch", "catches", "catching"],
+      ["past irregular know", "{name2} ___ the answer two minutes ago.", "knew", "knows", "know", "knowing"],
+      ["past irregular leave", "My brother ___ his bag at home yesterday.", "left", "leaves", "leave", "leaving"],
+      ["past regular end", "The story ___ at ten last night.", "ended", "end", "ends", "ending"],
+      ["past regular start", "The class ___ late last Friday.", "started", "start", "starts", "starting"],
+      ["past irregular hear", "I ___ a strange sound last night.", "heard", "hear", "hears", "hearing"],
+      ["instant will", "A: The phone is ringing. B: I ___ it.", "will answer", "am going to answer", "answered", "answer"],
+      ["evidence going to", "Look at those clouds. It ___ soon.", "is going to rain", "will rain", "rained", "rains"],
+      ["future plan", "{name} ___ his aunt next week.", "is going to visit", "visited", "visits", "visit"],
+      ["future opinion", "I think our team ___ the game tomorrow.", "will win", "won", "wins", "winning"],
+      ["warning future", "Be careful, or you ___ the glass.", "will break", "broke", "breaks", "breaking"],
+      ["planned future", "{name2} has a plan. She ___ a cake tonight.", "is going to make", "will makes", "made", "makes"],
+      ["timetable future", "The bus ___ at seven tomorrow morning.", "leaves", "left", "is left", "leaving"],
+      ["offer will", "A: I forgot my pen. B: I ___ you one.", "will lend", "lent", "lending", "lend"],
+      ["future age", "{name} ___ thirteen next month.", "will be", "was", "is being", "is"],
+      ["future deadline", "We ___ the report by Friday.", "will finish", "finished", "finishes", "finishing"],
+      ["scheduled event", "The movie ___ at eight tonight.", "starts", "started", "starting", "will starting"],
+      ["visible danger", "Those boys are running near the pool. They ___.", "are going to fall", "fell", "fall", "falling"]
+    ]),
+    3: grammarRows(3, [
+      ["since start year", "{name} has lived in Taipei ___ 2019.", "since", "for", "at", "on"],
+      ["for duration", "{name2} has studied English ___ three years.", "for", "since", "on", "at"],
+      ["past finished time", "I saw that movie ___.", "yesterday", "already", "yet", "since 2020"],
+      ["has plus participle", "{name} ___ finished the report.", "has", "have", "did", "is"],
+      ["experience question", "___ you ever visited Japan?", "Have", "Did", "Are", "Do"],
+      ["negative yet", "We have not eaten lunch ___.", "yet", "already", "never", "since"],
+      ["already position", "{name} has ___ cleaned the room.", "already", "yet", "ever", "since"],
+      ["duration for", "My father has worked here ___ ten years.", "for", "since", "on", "at"],
+      ["since clause", "She has known him ___ she was ten.", "since", "for", "during", "at"],
+      ["been to place", "They ___ to the museum twice.", "have been", "went", "are going", "go"],
+      ["just with perfect", "The bus ___ just arrived.", "has", "have", "did", "is"],
+      ["simple past yesterday", "I ___ my key yesterday.", "lost", "have lost", "has lost", "losing"],
+      ["never plus participle", "{name} has never ___ this book.", "read", "reads", "reading", "rode"],
+      ["how long perfect", "How long ___ you lived here?", "have", "did", "are", "do"],
+      ["since weekday", "{name2} has not called me ___ Monday.", "since", "for", "on", "at"],
+      ["since year perfect", "We have had this dog ___ 2020.", "since", "for", "during", "at"],
+      ["for long time", "He has played tennis ___ a long time.", "for", "since", "on", "at"],
+      ["already with has", "The teacher ___ checked the test already.", "has", "did", "is", "does"],
+      ["past meal time", "I ___ breakfast at seven this morning.", "ate", "have eaten", "has eaten", "eating"],
+      ["gone result now", "{name} has gone to the office. She ___ here now.", "is not", "was not", "does not", "did not"],
+      ["participle left", "She has ___ her phone at home again.", "left", "leave", "leaves", "leaving"],
+      ["participle done", "They have ___ the work.", "done", "did", "do", "doing"],
+      ["for three days", "I have not seen him ___ three days.", "for", "since", "on", "at"],
+      ["best ever", "This is the best story I have ___ read.", "ever", "yesterday", "ago", "last"]
+    ]),
+    4: grammarRows(4, [
+      ["prohibition must not", "You ___ smoke here. It is against the rule.", "must not", "do not have to", "may not have to", "should to"],
+      ["not necessary", "You ___ come early if you are busy.", "do not have to", "must not", "may not", "should not to"],
+      ["modal base verb", "{name} can ___ the book after class.", "take", "takes", "took", "taking"],
+      ["strong conclusion", "{name2} has not eaten all day. {name2} ___ be hungry.", "must", "can", "should to", "has to be eating"],
+      ["should base verb", "{name} should ___ the teacher first.", "ask", "asks", "asked", "to ask"],
+      ["may permission", "Students ___ leave after the bell.", "may", "must to", "should to", "can to"],
+      ["cannot ability", "I ___ hear you because the room is noisy.", "cannot", "must not", "do not have to", "should to"],
+      ["had better base", "You had better ___ an umbrella.", "bring", "brings", "brought", "to bring"],
+      ["must base verb", "Everyone must ___ the safety rule.", "follow", "follows", "followed", "following"],
+      ["should advice", "You look tired. You ___ take a rest.", "should", "must not", "can to", "do not have to"],
+      ["have to need", "We ___ wear a uniform at this school.", "have to", "must to", "should to", "can to"],
+      ["do not need to", "{name} ___ pay today because the ticket is free.", "does not have to", "must not", "should not to", "can not to"],
+      ["could polite request", "___ you open the window, please?", "Could", "Must", "Should to", "Have"],
+      ["must not touch", "You ___ touch this machine.", "must not", "do not have to", "can to", "should to"],
+      ["may possibility", "It ___ rain later, so take a coat.", "may", "must to", "has to", "should to"],
+      ["cannot deduction", "That ___ be {name}. {name} is in Japan now.", "cannot", "must", "has to", "should"],
+      ["should not action", "You ___ talk loudly in the library.", "should not", "should to not", "do not have to", "can to not"],
+      ["need not base", "You need not ___ the whole page.", "copy", "copies", "copied", "to copy"],
+      ["would polite offer", "___ you like some water?", "Would", "Must", "Do to", "Should to"],
+      ["can ability", "{name2} ___ swim across the pool.", "can", "must to", "is can", "can to"],
+      ["must be careful", "Drivers ___ be careful on rainy days.", "must", "must to", "musts", "musting"],
+      ["shall suggestion", "___ we start the meeting now?", "Shall", "Must to", "Should to", "Can to"],
+      ["ought to advice", "You ought ___ your parents.", "to thank", "thank", "thanked", "thanking"],
+      ["be able to", "{name} will be able ___ us tomorrow.", "to help", "help", "helped", "helping"]
+    ]),
+    5: grammarRows(5, [
+      ["uncountable information", "Can you give me some ___ about the bus schedule?", "information", "informations", "an information", "information's"],
+      ["uncountable homework", "We do not have much ___ today.", "homework", "homeworks", "a homework", "homework's"],
+      ["object pronoun", "This gift is for ___.", "him", "he", "his", "himself"],
+      ["article vowel sound", "{name} needs ___ umbrella.", "an", "a", "the a", "no article"],
+      ["possessive pronoun", "That notebook is ___.", "hers", "her", "she", "her's"],
+      ["countable plural", "There are three ___ on the table.", "apples", "apple", "apple's", "an apples"],
+      ["many plural", "Many ___ came to the show.", "people", "person", "peoples", "a people"],
+      ["much uncountable", "There is too much ___ in the room.", "noise", "noises", "a noise", "noise's"],
+      ["a consonant sound", "I saw ___ useful tool online.", "a", "an", "the an", "no article"],
+      ["subject pronoun", "___ are going to the library after school.", "They", "Them", "Their", "Theirs"],
+      ["object after verb", "Please call ___ tonight.", "me", "I", "my", "mine"],
+      ["possessive adjective", "This is ___ jacket.", "my", "me", "mine", "I"],
+      ["independent possessive", "The red bag is ___.", "mine", "my", "me", "I"],
+      ["some with uncountable", "Would you like some ___?", "water", "waters", "a water", "water's"],
+      ["few countable", "Only a few ___ joined the club.", "students", "student", "student's", "a students"],
+      ["little uncountable", "There is little ___ left.", "money", "moneys", "a money", "money's"],
+      ["article before one", "I need ___ one-way ticket.", "a", "an", "the an", "no article"],
+      ["plural child", "The ___ are playing outside.", "children", "child", "childs", "childrens"],
+      ["preposition object", "The teacher talked to ___ after class.", "us", "we", "our", "ours"],
+      ["reflexive pronoun", "{name} hurt ___ while cooking.", "himself", "him", "he", "his"],
+      ["there is uncountable", "There ___ a lot of news today.", "is", "are", "be", "were"],
+      ["there are countable", "There ___ many books on the desk.", "are", "is", "be", "was"],
+      ["another countable", "May I have another ___?", "ticket", "ticketes", "ticket's", "ticketses"],
+      ["no article meals", "We usually have ___ breakfast at seven.", "no article", "a", "an", "the a"]
+    ]),
+    6: grammarRows(6, [
+      ["linking verb adjective", "This soup smells ___.", "delicious", "deliciously", "delicious's", "delicion"],
+      ["look adjective", "You look ___ today. Are you okay?", "tired", "tiredly", "tiring", "tire"],
+      ["adverb well", "{name} finished the race ___.", "well", "good", "goodly", "wellly"],
+      ["flat adverb fast", "{name2} drives very ___.", "fast", "fastly", "faster than", "fasting"],
+      ["degree before adjective", "{name} is ___ careful with the map.", "very", "careful very", "carefully very", "veryly"],
+      ["adjective before noun", "She is a ___ teacher.", "friendly", "friendlyly", "friend", "friendship"],
+      ["adverb action", "Please speak ___ in the library.", "quietly", "quiet", "quieter", "quietness"],
+      ["become adjective", "The sky became ___ before the rain.", "dark", "darkly", "darkness", "darker than"],
+      ["feel adjective", "I feel ___ after the long walk.", "hungry", "hungrily", "hunger", "hungrier than"],
+      ["taste adjective", "The cake tastes ___.", "sweet", "sweetly", "sweetness", "sweeter than"],
+      ["hard adverb", "{name} studies ___ before every test.", "hard", "hardly", "harder than", "hardness"],
+      ["late adjective", "The bus was ___ this morning.", "late", "lately", "later than", "lateness"],
+      ["careful adjective", "Be ___ when you cross the street.", "careful", "carefully", "care", "carefulness"],
+      ["carefully adverb", "{name2} crossed the street ___.", "carefully", "careful", "care", "carefulness"],
+      ["sound adjective", "That idea sounds ___.", "good", "well", "goodly", "goodness"],
+      ["enough after adjective", "The box is light ___ to carry.", "enough", "too", "very", "so"],
+      ["too adjective", "The tea is ___ hot to drink.", "too", "veryly", "enough", "many"],
+      ["so adjective that", "The bag was ___ heavy that I could not lift it.", "so", "too", "enough", "many"],
+      ["such noun phrase", "It was ___ a nice day that we went out.", "such", "so", "too", "very"],
+      ["adverb frequency position", "{name} often ___ breakfast at home.", "eats", "eats often", "oftenly eats", "eat"],
+      ["adjective noun order", "I found a ___ box under the desk.", "small green", "green small", "smallly green", "greenly small"],
+      ["comparative adverb", "{name2} runs ___ than before.", "faster", "fastly", "fastest", "fast"],
+      ["most adverb", "She answered the question most ___.", "clearly", "clear", "clearness", "clearer"],
+      ["less adjective", "This road is ___ dangerous than that one.", "less", "few", "little", "fewer"]
+    ]),
+    7: grammarRows(7, [
+      ["long adjective comparative", "This question is ___ than that one.", "more difficult", "difficulter", "more difficulter", "difficult more"],
+      ["short adjective comparative", "{name} is ___ than {name2}.", "taller", "more tall", "more taller", "tallest"],
+      ["as as base", "This bag is as ___ as that one.", "heavy", "heavier", "heaviest", "more heavy"],
+      ["long adjective superlative", "This is the ___ story in the book.", "most interesting", "more interesting", "interestingest", "most interestinger"],
+      ["than comparative clean", "{name}'s room is ___ than {name2}'s room.", "cleaner", "clean", "cleanest", "more cleaner"],
+      ["irregular good", "This plan is ___ than the old one.", "better", "gooder", "best", "more good"],
+      ["irregular bad", "The second road is ___ than the first one.", "worse", "badder", "worst", "more bad"],
+      ["superlative short", "{name} is the ___ student in the class.", "tallest", "taller", "most tall", "more tall"],
+      ["one of plural", "This is one of the ___ parks in town.", "largest", "larger", "large", "more large"],
+      ["less comparative", "This bag is ___ expensive than that one.", "less", "least", "little", "few"],
+      ["the same as", "My answer is the same ___ yours.", "as", "than", "to", "from"],
+      ["different from", "This rule is different ___ that rule.", "from", "than", "as", "to"],
+      ["much comparative", "Today is much ___ than yesterday.", "colder", "coldest", "cold", "more coldest"],
+      ["farther distance", "The station is ___ than the market.", "farther", "farthest", "far", "more farthest"],
+      ["not as as", "This test is not as ___ as the last one.", "easy", "easier", "easiest", "more easy"],
+      ["twice as as", "This box is twice as ___ as that one.", "heavy", "heavier", "heaviest", "more heavy"],
+      ["the more the more", "The more you read, the ___ you understand.", "better", "best", "good", "well"],
+      ["superlative in group", "{name2} is the ___ of the three.", "youngest", "younger", "more young", "young"],
+      ["comparative than before", "The weather is ___ than before.", "warmer", "warmest", "warm", "more warmest"],
+      ["least superlative", "This is the ___ useful tool on the shelf.", "least", "less", "little", "few"],
+      ["more and more", "The story became more and more ___.", "exciting", "excited", "excite", "excitedly"],
+      ["elder family", "My ___ brother helps me with math.", "elder", "older than", "oldest than", "more old"],
+      ["than any other", "Taipei is larger than ___ city in this list.", "any other", "another", "the other", "others"],
+      ["comparative adjective only", "The red bag is ___ than the blue one.", "lighter", "lightest", "light", "most light"]
+    ]),
+    8: grammarRows(8, [
+      ["day preposition", "We will meet ___ Monday.", "on", "at", "in", "to"],
+      ["year preposition", "{name} was born ___ 2010.", "in", "on", "at", "to"],
+      ["clock time preposition", "The class starts ___ seven.", "at", "in", "on", "to"],
+      ["reach direct place", "The train will ___ Taipei Station at nine.", "reach", "arrive", "arrive to", "reach to"],
+      ["arrive at place", "We will ___ at the airport soon.", "arrive", "reach", "reach to", "arrived to"],
+      ["part of day", "I study better ___ the morning.", "in", "on", "at", "to"],
+      ["date preposition", "The party is ___ May 5.", "on", "in", "at", "to"],
+      ["fixed at night", "The bus arrived ___ night.", "at", "in", "on", "to"],
+      ["transport by", "{name} goes to school ___ bus.", "by", "on", "in", "at"],
+      ["on foot", "{name2} goes to school ___ foot.", "on", "by", "in", "at"],
+      ["point place", "We waited ___ the bus stop.", "at", "in", "on", "to"],
+      ["inside place", "The keys are ___ the box.", "in", "on", "at", "to"],
+      ["surface place", "The map is ___ the wall.", "on", "in", "at", "to"],
+      ["movement to", "{name} walked ___ the station.", "to", "at", "in", "on"],
+      ["duration for", "We stayed there ___ two hours.", "for", "since", "at", "on"],
+      ["starting point", "The bus goes ___ school to the library.", "from", "to", "at", "on"],
+      ["ending point", "The road runs from the park ___ the market.", "to", "from", "at", "on"],
+      ["between two", "The bank is ___ the library and the market.", "between", "among", "in", "on"],
+      ["near place", "The bike is ___ the door.", "near", "in", "on", "to"],
+      ["under place", "The bag is ___ the table.", "under", "on", "in", "at"],
+      ["over movement", "The ball went ___ the wall.", "over", "under", "in", "at"],
+      ["tool with", "{name} wrote the word ___ a pen.", "with", "by", "in", "on"],
+      ["topic about", "This book is ___ animals.", "about", "on", "at", "to"],
+      ["before time", "Please finish the work ___ lunch.", "before", "after", "at", "on"]
+    ]),
+    9: grammarRows(9, [
+      ["although contrast", "___ it was raining, we still went hiking.", "Although", "Because", "So", "Although but"],
+      ["so result", "It rained hard, ___ we stayed home.", "so", "because", "although", "so because"],
+      ["but contrast", "I like tea, ___ {name} likes coffee.", "but", "although", "because", "when"],
+      ["although dependent", "___ {name2} was tired, {name2} kept working.", "Although", "But", "So", "And"],
+      ["condition if", "___ you need help, call me.", "If", "And", "So", "But"],
+      ["because reason", "We stayed home ___ the road was closed.", "because", "so", "although", "but"],
+      ["when time", "Call me ___ you arrive.", "when", "because", "but", "so"],
+      ["while two actions", "{name} cooked dinner ___ {name2} set the table.", "while", "because", "so", "although"],
+      ["before time clause", "Wash your hands ___ you eat.", "before", "because", "so", "although"],
+      ["after time clause", "We played basketball ___ the rain stopped.", "after", "because", "but", "so"],
+      ["unless condition", "You will be late ___ you leave now.", "unless", "because", "although", "so"],
+      ["and addition", "{name} opened the door ___ turned on the light.", "and", "but", "because", "although"],
+      ["or choice", "You can take the bus ___ walk home.", "or", "so", "because", "although"],
+      ["so that purpose", "Speak slowly ___ everyone can understand.", "so that", "because", "although", "but"],
+      ["even though contrast", "___ the test was hard, {name} did not give up.", "Even though", "Because", "So", "And"],
+      ["not only but also", "{name} is not only kind ___ also honest.", "but", "and", "so", "because"],
+      ["either or", "You can either call me ___ send a message.", "or", "and", "but", "so"],
+      ["neither nor", "The room was neither clean ___ quiet.", "nor", "or", "and", "but"],
+      ["as soon as", "I will tell you ___ I know the answer.", "as soon as", "because", "although", "but"],
+      ["until time", "Wait here ___ the bus comes.", "until", "because", "although", "so"],
+      ["since reason", "___ you are here, please help us.", "Since", "So", "But", "And"],
+      ["if not double", "If it rains, we ___ stay inside.", "will", "would have", "had", "were"],
+      ["because no so", "Because {name} was sick, {name} ___ home.", "stayed", "so stayed", "although stayed", "but stayed"],
+      ["although no but", "Although the box was heavy, {name} ___ it.", "carried", "but carried", "so carried", "because carried"]
+    ]),
+    10: grammarRows(10, [
+      ["enjoy gerund", "{name} enjoys ___ mystery novels.", "reading", "to read", "read", "reads"],
+      ["decide infinitive", "They decided ___ early.", "to leave", "leaving", "leave", "left"],
+      ["preposition gerund", "{name2} is interested in ___ Japanese.", "learning", "to learn", "learn", "learns"],
+      ["purpose infinitive", "{name} went to the library ___ a book.", "to borrow", "borrowing", "borrowed", "borrows"],
+      ["gerund subject", "___ every day is good practice.", "Reading", "Read", "To reading", "Reads"],
+      ["finish gerund", "We finished ___ the room before lunch.", "cleaning", "to clean", "clean", "cleaned"],
+      ["hope infinitive", "{name} hopes ___ the race.", "to win", "winning", "win", "wins"],
+      ["avoid gerund", "Please avoid ___ too much noise.", "making", "to make", "make", "made"],
+      ["want infinitive", "{name2} wants ___ a new bike.", "to buy", "buying", "buy", "bought"],
+      ["mind gerund", "Do you mind ___ the window?", "opening", "to open", "open", "opened"],
+      ["plan infinitive", "They plan ___ the museum tomorrow.", "to visit", "visiting", "visit", "visited"],
+      ["practice gerund", "{name} practices ___ English every night.", "speaking", "to speak", "speak", "spoke"],
+      ["let base verb", "Let me ___ you with the boxes.", "help", "to help", "helping", "helped"],
+      ["make base verb", "The story made me ___ loudly.", "laugh", "to laugh", "laughing", "laughed"],
+      ["ask object infinitive", "The teacher asked us ___ quiet.", "to stay", "staying", "stay", "stayed"],
+      ["too adjective infinitive", "The box is too heavy ___ alone.", "to lift", "lifting", "lift", "lifted"],
+      ["enough infinitive", "{name} is old enough ___ alone.", "to travel", "traveling", "travel", "traveled"],
+      ["stop gerund", "Stop ___ during the test.", "talking", "to talk", "talk", "talked"],
+      ["remember infinitive", "Remember ___ the door before you leave.", "to close", "closing", "close", "closed"],
+      ["remember gerund", "I remember ___ this song when I was young.", "hearing", "to hear", "hear", "heard"],
+      ["go gerund activity", "We went ___ after school.", "shopping", "to shop", "shop", "shopped"],
+      ["be used to gerund", "{name} is used to ___ early.", "getting up", "get up", "got up", "to get up"],
+      ["used to base", "{name2} used to ___ near the river.", "live", "living", "lived", "to live"],
+      ["help bare verb", "This map helped us ___ the station.", "find", "to finding", "found", "finding"]
+    ]),
+    11: grammarRows(11, [
+      ["past passive", "This bridge ___ in 1930.", "was built", "is built", "has built", "built"],
+      ["present passive", "English ___ in many countries.", "is spoken", "speaks", "was spoken", "spoken"],
+      ["intransitive active", "The accident ___ yesterday.", "happened", "was happened", "is happened", "happens"],
+      ["agent by", "The window was broken ___ the strong wind.", "by", "with", "from", "at"],
+      ["passive letter", "The letter ___ by {name}.", "was written", "wrote", "is writing", "writes"],
+      ["future passive", "The new library ___ next year.", "will be opened", "will open", "opened", "is opening"],
+      ["present perfect passive", "The work ___ already been done.", "has", "have", "did", "is"],
+      ["modal passive", "This rule must ___ by everyone.", "be followed", "follow", "followed", "following"],
+      ["passive question", "When ___ the bridge built?", "was", "did", "has", "is"],
+      ["passive negative", "The door was not ___ last night.", "locked", "lock", "locking", "locks"],
+      ["active subject", "{name} ___ the report yesterday.", "wrote", "was written", "is written", "written"],
+      ["passive object focus", "The report ___ yesterday.", "was written", "wrote", "writes", "has wrote"],
+      ["by person", "The picture was painted ___ my sister.", "by", "with", "from", "at"],
+      ["with tool", "The door was opened ___ a key.", "with", "by", "from", "at"],
+      ["no passive arrive", "The train ___ late.", "arrived", "was arrived", "is arrived", "arrives by"],
+      ["no passive sleep", "The baby ___ well last night.", "slept", "was slept", "is slept", "sleeping"],
+      ["passive present plural", "These books ___ used in class.", "are", "is", "was", "did"],
+      ["passive past plural", "The windows ___ cleaned yesterday.", "were", "are", "did", "have"],
+      ["passive infinitive", "The plan needs to ___ today.", "be changed", "change", "changed", "changing"],
+      ["get passive", "{name} got ___ in the rain.", "wet", "wetly", "wets", "wetting"],
+      ["passive plus place", "The meeting was held ___ the library.", "at", "by", "with", "from"],
+      ["active no object", "The sun ___ early today.", "rose", "was risen", "is risen", "rises by"],
+      ["passive made of", "The desk is made ___ wood.", "of", "by", "from", "at"],
+      ["passive made in", "This camera was made ___ Japan.", "in", "by", "with", "of"]
+    ]),
+    12: grammarRows(12, [
+      ["positive tag", "Your sister plays the piano well, ___?", "doesn't she", "does she", "isn't she", "doesn't he"],
+      ["negative tag", "You haven't finished your homework, ___?", "have you", "haven't you", "did you", "don't you"],
+      ["does question", "___ {name} like coffee?", "Does", "Is", "Do", "Did"],
+      ["did base verb", "Did {name2} ___ the book?", "bring", "brought", "brings", "bringing"],
+      ["does negative", "{name} ___ know the answer.", "doesn't", "don't", "isn't", "didn't to"],
+      ["be question", "___ {name} at home now?", "Is", "Does", "Do", "Did"],
+      ["progressive question", "___ they watching TV now?", "Are", "Do", "Did", "Have"],
+      ["past question", "___ you see {name} yesterday?", "Did", "Do", "Have", "Are"],
+      ["present perfect question", "___ you finished the report yet?", "Have", "Did", "Do", "Are"],
+      ["who subject question", "Who ___ the window?", "broke", "did broke", "does broke", "breaking"],
+      ["what object question", "What did {name} ___ after class?", "do", "did", "does", "doing"],
+      ["where question", "Where ___ {name2} live?", "does", "is", "has", "did to"],
+      ["how many question", "How many books ___ on the desk?", "are there", "there are", "is there", "there is"],
+      ["negative imperative", "___ touch the glass.", "Do not", "Not", "Does not", "Did not"],
+      ["let us tag", "Let's take a break, ___?", "shall we", "will you", "do we", "are we"],
+      ["command tag", "Close the door, ___?", "will you", "do you", "are you", "have you"],
+      ["I am tag", "I am late, ___?", "aren't I", "am not I", "do I", "don't I"],
+      ["there tag", "There is a bank near here, ___?", "isn't there", "is it", "doesn't there", "isn't it"],
+      ["no one tag", "No one called, ___?", "did they", "did he", "didn't they", "was it"],
+      ["has tag", "{name} has a bike, ___?", "doesn't he", "hasn't he", "isn't he", "didn't he"],
+      ["have perfect tag", "{name2} has left, ___?", "hasn't she", "doesn't she", "isn't she", "didn't she"],
+      ["must tag", "We must leave now, ___?", "mustn't we", "don't we", "aren't we", "didn't we"],
+      ["would question", "___ you like some tea?", "Would", "Do", "Are", "Did"],
+      ["subject verb inversion", "Never ___ I seen such a quiet room.", "have", "did", "do", "am"]
+    ]),
+    13: grammarRows(13, [
+      ["who subject person", "The woman ___ called you yesterday is my aunt.", "who", "which", "whose", "what"],
+      ["that object thing", "This is the book ___ I told you about.", "that", "who", "whose", "what"],
+      ["whose possession", "The student ___ bag was lost went to the office.", "whose", "who", "which", "that"],
+      ["comma clause person", "Mr. Lin, ___ teaches math, is very patient.", "who", "that", "whose", "what"],
+      ["no repeated object", "The movie ___ we watched was exciting.", "that", "what", "who", "it"],
+      ["where place", "This is the park ___ we first met.", "where", "which", "who", "whose"],
+      ["when time", "I remember the day ___ we moved here.", "when", "who", "whose", "what"],
+      ["why reason", "Tell me the reason ___ you were late.", "why", "who", "whose", "which"],
+      ["object omission", "The book ___ you lent me was useful.", "that", "who", "whose", "what"],
+      ["subject no omission", "The boy ___ won the race is my friend.", "who", "which", "whose", "what"],
+      ["which nonhuman", "The camera ___ is on the desk is mine.", "which", "who", "whose", "what"],
+      ["that defining", "The bag ___ she bought is red.", "that", "who", "what", "whose"],
+      ["whom formal object", "The man to ___ I spoke was kind.", "whom", "who", "which", "what"],
+      ["preposition end", "The person I talked ___ was helpful.", "to", "who", "whose", "what"],
+      ["whose thing", "I saw a house ___ roof was blue.", "whose", "which", "that", "what"],
+      ["all that", "This is all ___ I know.", "that", "which", "who", "whose"],
+      ["anything that", "Is there anything ___ I can do?", "that", "what", "who", "whose"],
+      ["the only that", "She is the only person ___ can help us.", "that", "which", "what", "whose"],
+      ["comma which", "The bus was late, ___ made us worried.", "which", "that", "who", "what"],
+      ["who as object", "The girl ___ we met yesterday is new here.", "who", "which", "whose", "what"],
+      ["relative clause verb", "The students who ___ near the window are quiet.", "sit", "sits", "sitting", "sat"],
+      ["antecedent plural", "The books that ___ on the shelf are mine.", "are", "is", "was", "be"],
+      ["antecedent singular", "The book that ___ on the shelf is mine.", "is", "are", "were", "be"],
+      ["clause placement", "The teacher ___ helped me lives nearby.", "who", "where", "when", "what"]
+    ]),
+    14: grammarRows(14, [
+      ["present unreal be", "If I ___ a bird, I would fly to you.", "were", "am", "was", "be"],
+      ["past unreal result", "If {name} had studied harder, {name} ___ the exam.", "would have passed", "would pass", "passed", "will pass"],
+      ["present unreal result", "If {name2} had more time, {name2} ___ the project.", "would finish", "will finish", "finished", "would have finished"],
+      ["present unreal pair", "If {name} ___ here, we would start now.", "were", "is", "be", "will be"],
+      ["past unreal condition", "If they ___ earlier, they would have caught the bus.", "had left", "left", "have left", "would leave"],
+      ["real condition", "If it rains tomorrow, we ___ inside.", "will stay", "would stay", "stayed", "had stayed"],
+      ["zero condition", "If water reaches zero degrees, it ___.", "freezes", "will freeze", "froze", "would freeze"],
+      ["unless real", "Unless you hurry, you ___ the bus.", "will miss", "would miss", "missed", "had missed"],
+      ["wish present", "I wish I ___ taller.", "were", "am", "will be", "have been"],
+      ["wish past", "{name} wishes {name} ___ more carefully yesterday.", "had listened", "listened", "would listen", "will listen"],
+      ["as if unreal", "He talks as if he ___ everything.", "knew", "knows", "will know", "has known"],
+      ["would rather", "I would rather ___ at home tonight.", "stay", "to stay", "staying", "stayed"],
+      ["if only present", "If only I ___ more free time.", "had", "have", "will have", "had had"],
+      ["mixed condition", "If {name} had taken the bus, {name} ___ here now.", "would be", "will be", "would have been", "is"],
+      ["without condition", "Without your help, I ___ lost.", "would be", "will be", "am", "was"],
+      ["provided that", "We can go out provided that it ___ raining.", "stops", "stopped", "will stop", "would stop"],
+      ["in case", "Take a map in case you ___ lost.", "get", "got", "will get", "would get"],
+      ["if past habit", "If {name} was late, the teacher ___ the door.", "closed", "would have closed", "will close", "has closed"],
+      ["future less likely", "If I should see him, I ___ him.", "will tell", "told", "had told", "telling"],
+      ["were to", "If the plan were to fail, we ___ again.", "would try", "will try", "tried", "had tried"],
+      ["had known", "Had I known the answer, I ___ it.", "would have said", "will say", "said", "would say"],
+      ["should you need", "Should you need help, ___ me.", "call", "called", "calling", "to call"],
+      ["but for", "But for the rain, we ___ outside.", "would play", "will play", "played", "had played"],
+      ["if not for", "If it were not for music, life ___ quiet.", "would be", "will be", "is", "has been"]
+    ]),
+    15: grammarRows(15, [
+      ["main idea", "The main idea of a paragraph is usually ___ than one detail.", "broader", "smaller", "later", "louder"],
+      ["best title scope", "A good title should match the ___ passage.", "whole", "last", "first", "short"],
+      ["topic sentence", "A topic sentence usually ___ the paragraph.", "introduces", "ends", "hides", "copies"],
+      ["supporting detail", "A supporting detail should ___ the main idea.", "explain", "change", "ignore", "hide"],
+      ["too narrow title", "A title about one small fact is often too ___.", "narrow", "broad", "clear", "useful"],
+      ["too broad title", "A title that covers many missing ideas is too ___.", "broad", "narrow", "late", "quiet"],
+      ["first sentence role", "The first sentence often gives the ___ of the passage.", "topic", "answer", "ending", "date"],
+      ["final sentence role", "The final sentence may show the writer's ___.", "point", "color", "place", "number"],
+      ["detail question", "A detail question asks for information ___ in the passage.", "stated", "imagined", "changed", "hidden"],
+      ["not stated", "An answer not in the passage should be ___.", "removed", "chosen", "copied", "kept"],
+      ["order signal", "Words like first and finally show ___.", "order", "place", "noise", "size"],
+      ["cause signal", "The word because often introduces a ___.", "reason", "result", "title", "name"],
+      ["result signal", "The word so often introduces a ___.", "result", "reason", "person", "place"],
+      ["contrast signal", "The word however often shows ___.", "contrast", "order", "time", "amount"],
+      ["example signal", "For example usually gives a ___.", "detail", "title", "guess", "rule"],
+      ["paragraph purpose", "A paragraph about steps often explains a ___.", "process", "feeling", "name", "price"],
+      ["notice purpose", "A notice usually gives readers ___.", "information", "fiction", "silence", "weather"],
+      ["letter purpose", "A letter often has a writer and a ___.", "reader", "price", "machine", "road"],
+      ["chart reading", "A chart question often asks readers to compare ___.", "data", "stories", "feelings", "rules"],
+      ["best summary", "A summary should keep only the ___ ideas.", "main", "random", "extra", "tiny"],
+      ["paragraph unity", "A paragraph should stay on one ___.", "topic", "street", "sound", "color"],
+      ["irrelevant detail", "A sentence outside the topic is ___.", "irrelevant", "correct", "necessary", "central"],
+      ["author example", "Writers use examples to make ideas ___.", "clearer", "slower", "heavier", "older"],
+      ["reader check", "Readers should check the answer against the ___.", "passage", "memory", "title only", "picture"]
+    ]),
+    16: grammarRows(16, [
+      ["inference clue", "An inference must be supported by ___.", "clues", "color", "sound", "luck"],
+      ["pronoun reference", "A pronoun usually refers to a noun ___ it.", "before", "after only", "outside", "never"],
+      ["tone clue", "Words like wonderful and terrible can show ___.", "tone", "place", "time", "size"],
+      ["author purpose", "The author's purpose is the reason for ___ the passage.", "writing", "copying", "hiding", "losing"],
+      ["likely meaning", "The word probably shows that the answer is a ___.", "guess", "fact", "date", "name"],
+      ["evidence line", "A strong answer has evidence in the ___.", "text", "choice", "score", "picture"],
+      ["referent nearby", "The word they often points to a plural noun ___.", "nearby", "alone", "future", "wrong"],
+      ["cause inference", "If someone smiles after news, the reader may infer a good ___.", "feeling", "address", "price", "sound"],
+      ["not enough evidence", "An answer with no clue should be ___.", "rejected", "chosen", "saved", "copied"],
+      ["contrast inference", "But can signal that the next idea is ___.", "different", "same", "earlier", "empty"],
+      ["mood", "The mood of a passage is the feeling it ___.", "creates", "counts", "buys", "carries"],
+      ["speaker attitude", "The speaker's attitude is how the speaker ___.", "feels", "travels", "spells", "waits"],
+      ["main support", "An inference should not go beyond the ___.", "evidence", "weather", "school", "ticket"],
+      ["dialogue clue", "In dialogue, a speaker's words can show ___.", "attitude", "height", "date", "shape"],
+      ["it reference", "The word it usually refers to one thing mentioned ___.", "earlier", "tomorrow", "outside", "never"],
+      ["this reference", "The word this may refer to the whole idea just ___.", "mentioned", "forgotten", "opened", "bought"],
+      ["author advice", "A passage that says should often gives ___.", "advice", "history", "price", "size"],
+      ["prediction", "A prediction asks what may happen ___.", "next", "before", "yesterday", "outside"],
+      ["fact vs inference", "A fact is stated; an inference is ___.", "figured out", "copied", "priced", "named"],
+      ["context clue", "A context clue is information around a ___ word.", "hard", "safe", "young", "free"],
+      ["speaker intention", "If a speaker says thanks, the intention is often to show ___.", "gratitude", "anger", "distance", "height"],
+      ["paragraph function", "A paragraph function question asks what the paragraph ___.", "does", "costs", "wears", "owns"],
+      ["opinion marker", "I think usually signals an ___.", "opinion", "address", "date", "object"],
+      ["certainty marker", "Must in an inference often shows strong ___.", "certainty", "distance", "color", "noise"]
+    ]),
+    17: grammarRows(17, [
+      ["borrow from", "{name} borrowed a book ___ {name2}.", "from", "to", "for", "with"],
+      ["lend to", "{name2} lent a pencil ___ {name}.", "to", "from", "with", "at"],
+      ["bring here", "Please ___ your notebook when you come here.", "bring", "take", "borrow", "lend"],
+      ["take away", "Do not forget to ___ your umbrella when you leave.", "take", "bring", "lend", "borrow"],
+      ["pay for", "{name} paid ten dollars ___ the ticket.", "for", "to", "from", "with"],
+      ["spend on", "{name2} spent two hours ___ the report.", "on", "for", "to", "with"],
+      ["cost subject thing", "The bag ___ five hundred dollars.", "costs", "spends", "pays", "takes"],
+      ["take time", "It ___ me ten minutes to walk there.", "takes", "spends", "pays", "costs"],
+      ["listen to", "Please listen ___ the teacher.", "to", "at", "for", "with"],
+      ["hear object", "I can ___ the music from here.", "hear", "listen", "listen to", "hearing"],
+      ["look at", "{name} looked ___ the map carefully.", "at", "to", "for", "with"],
+      ["find out", "We need to ___ the answer before Friday.", "find out", "look at", "hear", "borrow"],
+      ["look for", "{name2} is looking ___ her key.", "for", "at", "to", "with"],
+      ["ask for", "The student asked ___ help.", "for", "to", "from", "with"],
+      ["answer object", "Please ___ my question.", "answer", "answer to", "reply", "reply to"],
+      ["reply to", "{name} replied ___ the message.", "to", "with", "from", "for"],
+      ["arrive at", "We arrived ___ the station early.", "at", "to", "with", "from"],
+      ["reach place", "They reached ___ before noon.", "the office", "to the office", "at the office", "for the office"],
+      ["enter direct", "The teacher entered ___ quietly.", "the room", "into the room", "to the room", "at the room"],
+      ["discuss direct", "We discussed ___ after class.", "the plan", "about the plan", "to the plan", "for the plan"],
+      ["marry direct", "She married ___ last year.", "Tom", "with Tom", "to Tom", "for Tom"],
+      ["join club", "{name} joined ___ last month.", "the club", "to the club", "with the club", "in the club"],
+      ["attend class", "We attended ___ yesterday.", "the meeting", "to the meeting", "at the meeting", "with the meeting"],
+      ["wait for", "Please wait ___ me at the gate.", "for", "to", "with", "from"]
+    ]),
+    18: grammarRows(18, [
+      ["interested person", "{name} was ___ in the story.", "interested", "interesting", "interest", "interestedly"],
+      ["interesting thing", "The story was ___.", "interesting", "interested", "interest", "interestingly"],
+      ["adjective before noun", "She is a ___ teacher.", "friendly", "friend", "friendship", "friendlyly"],
+      ["bored person", "{name2} felt ___ during the long talk.", "bored", "boring", "bore", "bores"],
+      ["boring thing", "The long talk was ___.", "boring", "bored", "bore", "boredly"],
+      ["excited person", "The children were ___ about the trip.", "excited", "exciting", "excite", "excitedly"],
+      ["exciting event", "The trip was ___.", "exciting", "excited", "excite", "excitedly"],
+      ["confused person", "I was ___ by the new rule.", "confused", "confusing", "confuse", "confusedly"],
+      ["confusing rule", "The new rule was ___.", "confusing", "confused", "confuse", "confusedly"],
+      ["relaxed person", "{name} felt ___ after the test.", "relaxed", "relaxing", "relax", "relaxedly"],
+      ["relaxing music", "The music was ___.", "relaxing", "relaxed", "relax", "relaxedly"],
+      ["surprised person", "{name2} was ___ by the news.", "surprised", "surprising", "surprise", "surprisingly"],
+      ["surprising news", "The news was ___.", "surprising", "surprised", "surprise", "surprisedly"],
+      ["noun suffix er", "A person who teaches is a ___.", "teacher", "teach", "teaching", "teacherly"],
+      ["verb from noun", "Please ___ your answer on the line.", "write", "writer", "writing", "written"],
+      ["adverb ly", "{name} spoke ___ to the old man.", "politely", "polite", "politeness", "politer"],
+      ["noun ness", "Kindness is a ___.", "noun", "verb", "adjective", "preposition"],
+      ["adjective ful", "This tool is very ___.", "helpful", "help", "helpfully", "helper"],
+      ["personality noun", "{name}'s friendly ___ helped the team.", "personality", "personal", "personally", "person"],
+      ["feeling noun", "Happiness is a strong ___.", "feeling", "feel", "feels", "felt"],
+      ["verb role", "In 'They play chess,' play is a ___.", "verb", "noun", "adjective", "article"],
+      ["adjective role", "In 'a quiet room,' quiet is an ___.", "adjective", "adverb", "verb", "preposition"],
+      ["adverb role", "In 'walk slowly,' slowly is an ___.", "adverb", "adjective", "noun", "article"],
+      ["noun role", "In 'the old bridge,' bridge is a ___.", "noun", "verb", "adverb", "preposition"],
+      ["tired person", "After the race, the runner felt ___.", "tired", "tiring", "tire", "tiredly"],
+      ["tiring activity", "The long race was ___.", "tiring", "tired", "tire", "tiredly"],
+      ["amazed person", "The class was ___ by the show.", "amazed", "amazing", "amaze", "amazingly"],
+      ["amazing show", "The show was ___.", "amazing", "amazed", "amaze", "amazedly"],
+      ["frightened person", "The child was ___ by the loud noise.", "frightened", "frightening", "frighten", "frightenedly"],
+      ["frightening noise", "The loud noise was ___.", "frightening", "frightened", "frighten", "frightenedly"],
+      ["pleased person", "{name} was ___ with the result.", "pleased", "pleasing", "please", "pleasedly"],
+      ["pleasing result", "The result was ___ to everyone.", "pleasing", "pleased", "please", "pleasedly"]
+    ]),
+    19: grammarRows(19, [
+      ["affect verb", "Air pollution can seriously ___ people's health.", "affect", "effect", "affects's", "effected"],
+      ["effect noun", "Doctors are studying the ___ of the new medicine.", "effect", "affect", "affects", "affecting"],
+      ["modal base reduce", "We should ___ waste first.", "reduce", "reduction", "reusable", "recycling"],
+      ["effect noun role", "In 'The effect of sleep is clear,' effect is a ___.", "noun", "verb", "adverb", "conjunction"],
+      ["can base affect", "Too much screen time can ___ sleep.", "affect", "effect", "affects", "affected"],
+      ["recycle verb", "Our class will ___ old paper.", "recycle", "recycling", "recycled", "recyclable"],
+      ["reusable adjective", "This cup is ___.", "reusable", "reuse", "reusing", "reusedly"],
+      ["reduce amount", "Turning off lights can ___ power use.", "reduce", "reduction", "reduced", "reducing"],
+      ["cause noun", "The ___ of the delay was heavy rain.", "cause", "because", "caused", "causing"],
+      ["because conjunction", "We stayed inside ___ it rained.", "because", "cause", "caused", "causing"],
+      ["safe adjective", "This road is ___ for children.", "safe", "safely", "safety", "save"],
+      ["safely adverb", "{name} crossed the road ___.", "safely", "safe", "safety", "save"],
+      ["save verb", "Please ___ water when you brush your teeth.", "save", "safe", "safety", "safely"],
+      ["health noun", "Sleep is important for good ___.", "health", "healthy", "healthily", "heal"],
+      ["healthy adjective", "Fruit is a ___ snack.", "healthy", "health", "healthily", "heal"],
+      ["medicine noun", "Take this ___ after lunch.", "medicine", "medical", "medically", "medicate"],
+      ["pollution noun", "Air ___ is a serious problem.", "pollution", "pollute", "polluted", "polluting"],
+      ["polluted adjective", "The river became ___ after the storm.", "polluted", "pollution", "pollute", "polluting"],
+      ["increase verb", "The price may ___ next month.", "increase", "increasing", "increased", "increaseful"],
+      ["increase noun", "An ___ in price worried many families.", "increase", "increasing", "increased", "increaseful"],
+      ["produce verb", "The factory will ___ less waste.", "produce", "product", "production", "productive"],
+      ["product noun", "This ___ is made from paper.", "product", "produce", "production", "productive"],
+      ["keep safe verb", "A good rule can ___ people safe.", "keep", "keeps", "kept", "keeping"],
+      ["safe home noun", "Trees give animals a safe ___.", "home", "safely", "safety", "save"]
+    ]),
+    20: grammarRows(20, [
+      ["tion noun", "In 'Good communication helps a team,' communication is a ___.", "noun", "verb", "adjective", "adverb"],
+      ["ful adjective", "Which word is most likely an adjective because of its suffix? ___.", "helpful", "quickly", "movement", "teacher"],
+      ["negative prefix", "Which word is formed with a negative prefix? ___.", "unhappy", "teacher", "reading", "careful"],
+      ["ly adverb", "In 'She answered politely,' politely functions as an ___.", "adverb", "noun", "preposition", "article"],
+      ["word change", "The noun form of communicate is ___.", "communication", "communicate", "communicately", "communicated"],
+      ["er person", "A person who writes books is a ___.", "writer", "write", "writing", "written"],
+      ["ment noun", "The word movement is a ___.", "noun", "verb", "adjective", "adverb"],
+      ["ness noun", "The suffix -ness often makes a ___.", "noun", "verb", "adjective", "article"],
+      ["less adjective", "A person without hope may feel ___.", "hopeless", "hope", "hopefully", "hoped"],
+      ["re prefix", "The prefix re- often means ___.", "again", "not", "before", "wrong"],
+      ["un prefix", "The prefix un- often means ___.", "not", "again", "after", "too"],
+      ["pre prefix", "The prefix pre- often means ___.", "before", "not", "again", "under"],
+      ["able suffix", "A road that can be used is ___.", "usable", "use", "using", "usedly"],
+      ["quick adjective", "In 'a quick answer,' quick is an ___.", "adjective", "adverb", "noun", "verb"],
+      ["quickly adverb", "In 'answer quickly,' quickly is an ___.", "adverb", "adjective", "noun", "verb"],
+      ["teach teacher", "The word teacher is made from teach plus ___.", "-er", "-ly", "-tion", "un-"],
+      ["happy unhappy", "The word unhappy is made from happy plus ___.", "un-", "-er", "-tion", "-ly"],
+      ["move movement", "The word movement is made from move plus ___.", "-ment", "-ly", "-ful", "un-"],
+      ["care careful", "The word careful is made from care plus ___.", "-ful", "-tion", "-ly", "un-"],
+      ["carefully", "The word carefully is made from careful plus ___.", "-ly", "-er", "un-", "-tion"],
+      ["act action", "The word action is a ___.", "noun", "verb", "adjective", "adverb"],
+      ["active adjective", "The word active is an ___.", "adjective", "noun", "verb", "article"],
+      ["act verb", "In 'They act fast,' act is a ___.", "verb", "noun", "adjective", "adverb"],
+      ["word family", "Teach, teacher, and teaching belong to the same word ___.", "family", "office", "market", "ticket"]
+    ])
   };
   const VOCAB_FORMS = [
     "definition",
@@ -438,8 +994,7 @@ window.EXAM_ENGINE = (() => {
     return true;
   }
   function buildGrammarQuestion(r, seed, quizId, unitId, slot, difficulty) {
-    const rules = RULE_VARIANTS[unitId] || RULES[unitId] || RULES[1];
-    const form = GRAMMAR_FORMS[slot % GRAMMAR_FORMS.length];
+    const rules = grammarRules(unitId);
     const ruleIndex = (slot + Math.floor(slot / rules.length)) % rules.length;
     const selected = rules[ruleIndex];
     const c = ctx(seed, quizId, unitId, slot);
@@ -448,10 +1003,12 @@ window.EXAM_ENGINE = (() => {
     const distractors = selected.distractors.map(choice => fill(choice, c));
     const correctSentence = sentenceFrom(stem, answer);
     const wrongSentences = distractors.map(choice => sentenceFrom(stem, choice));
-    const text = form[1]({ stem, correctSentence, wrongSentences });
-    const sentenceMode = !stem.includes("___") || ["correct-sentence", "standard-choice", "grammar-check", "error-choice", "sentence-use", "clue"].includes(form[0]);
-    const correct = sentenceMode ? correctSentence : answer;
-    const choices = sentenceMode ? wrongSentences : distractors;
+    const converted = stem.includes("___") ? null : blankFromSentences(correctSentence, wrongSentences);
+    const questionKind = selected.questionKind || (stem.includes("___") || converted ? "blank" : "concreteSentenceTask");
+    const text = converted?.stem || (stem.includes("___") ? stem : concreteGrammarPrompt(selected, stem));
+    const correct = converted?.correct || (stem.includes("___") ? answer : correctSentence);
+    const choices = converted?.distractors || (stem.includes("___") ? distractors : wrongSentences);
+    const conceptKey = selected.conceptKey || selected.topic;
     const q = mc(
       r,
       unitId,
@@ -468,12 +1025,13 @@ window.EXAM_ENGINE = (() => {
     q.ability = selected.ability || abilityKeys[slot % abilityKeys.length];
     q.taxonomyTopic = selected.topic;
     q.ruleSlot = slot;
-    q.questionFormKey = `grammar:${form[0]}`;
+    q.questionKind = questionKind;
+    q.conceptKey = conceptKey;
+    q.questionFormKey = `grammar:${questionKind}:${normalizeKeyText(conceptKey, true)}`;
     q.essenceKey = [
       `u${unitId}`,
-      normalizeKeyText(selected.conceptKey || selected.topic, true),
-      form[0],
-      normalizeKeyText(stem, true),
+      normalizeKeyText(conceptKey, true),
+      normalizeKeyText(text, true),
       [answer, ...distractors].map(choice => normalizeKeyText(choice, true)).sort().join("|")
     ].join("::");
     q.templateKey = `u${unitId}:grammar:${q.essenceKey}`;
@@ -714,12 +1272,12 @@ window.EXAM_ENGINE = (() => {
     quizCatalog,
     abilityLabel,
     groupNames,
-    GRAMMAR_BANK_META: U.flatMap(unit => (RULE_VARIANTS[unit.id] || RULES[unit.id] || []).flatMap((rule, ruleIndex) => GRAMMAR_FORMS.map(form => ({
+    GRAMMAR_BANK_META: U.flatMap(unit => grammarRules(unit.id).map((rule, ruleIndex) => ({
       unitId: unit.id,
       topic: rule.topic,
-      formKey: form[0],
+      questionKind: rule.questionKind || (String(rule.text).includes("___") ? "blank" : "concreteSentenceTask"),
       ruleIndex
-    })))),
+    }))),
     CHAPTER_QUESTION_COUNT,
     REVIEW_QUESTION_COUNT,
     REVIEW_GENERAL_COUNT,
