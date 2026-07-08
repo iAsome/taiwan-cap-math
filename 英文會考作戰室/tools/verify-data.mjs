@@ -14,6 +14,7 @@ for (const file of ["english-data.js", "quiz-taxonomy.js", "reading-bank.js", "q
 }
 
 const { ENGLISH_DATA, QUIZ_TAXONOMY, EXAM_ENGINE, ENGLISH_ANALYSIS } = sandbox.window;
+const READING_BANK = sandbox.window.ENGLISH_READING_BANK || [];
 const errors = [];
 const check = (cond, msg) => { if (!cond) errors.push(msg); };
 const unitIds = ENGLISH_DATA.units.map(u => u.id);
@@ -317,6 +318,53 @@ function unknownEnglishWords(text, extraAllowed = new Set()) {
     .map(word => word.replace(/[^a-z]/g, ""))
     .filter(word => word && !extraAllowed.has(word) && !baseWordOk(word)))];
 }
+
+// Reading glossary quality (skip/master/2000 policy).
+const glossaryMasterPath = path.join(root, "data", "reading-glossary-master.json");
+const glossaryPhraseWhitelist = new Set();
+if (fs.existsSync(glossaryMasterPath)) {
+  JSON.parse(fs.readFileSync(glossaryMasterPath, "utf8")).entries
+    .filter(e => e.type === "phrase" && !e.in2000)
+    .forEach(e => glossaryPhraseWhitelist.add(e.lemma.toLowerCase()));
+}
+function escapeRegExpGloss(s) {
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+function glossaryInPassage(passage, word) {
+  const w = String(word);
+  if (/\s/.test(w)) {
+    return new RegExp(`\\b${escapeRegExpGloss(w).replace(/\s+/g, "\\s+")}\\b`, "i").test(passage);
+  }
+  return new RegExp(`\\b${escapeRegExpGloss(w)}\\b`, "i").test(passage);
+}
+const glossaryWordPassageCounts = new Map();
+READING_BANK.forEach(item => {
+  check(Array.isArray(item.glossary), `Reading passage ${item.id} needs glossary array.`);
+  check((item.glossary || []).length <= 30, `Reading passage ${item.id} has too many glossary entries (${item.glossary.length} > 30).`);
+  (item.glossary || []).forEach(([word, zh]) => {
+    check(word && zh, `Reading passage ${item.id} glossary entry missing word/zh.`);
+    check(zh !== "補充詞", `Reading passage ${item.id} glossary still uses placeholder 補充詞 for ${word}.`);
+    check(chinesePattern.test(zh), `Reading passage ${item.id} glossary ${word} needs Chinese.`);
+    check(String(zh).length <= 40, `Reading passage ${item.id} glossary ${word} zh too long (${zh.length}).`);
+    check(glossaryInPassage(item.passage || "", word), `Reading passage ${item.id} glossary word "${word}" not found in passage.`);
+    const lower = String(word).toLowerCase();
+    if (!/\s/.test(lower) && basic2000.has(lower) && !glossaryPhraseWhitelist.has(lower)) {
+      check(false, `Reading passage ${item.id} glossary includes 2000-word "${word}".`);
+    }
+    // ponytail: stem check for inflections without quiz allowlist noise.
+    if (!/\s/.test(lower) && !basic2000.has(lower)) {
+      const stems = [lower.replace(/ies$/, "y"), lower.replace(/ied$/, "y"), lower.replace(/ing$/, "e"), lower.replace(/ing$/, ""), lower.replace(/ed$/, "e"), lower.replace(/ed$/, ""), lower.replace(/s$/, "")].filter(Boolean);
+      if (stems.some(stem => basic2000.has(stem))) {
+        check(false, `Reading passage ${item.id} glossary includes 2000-word inflection "${word}".`);
+      }
+    }
+    glossaryWordPassageCounts.set(lower, (glossaryWordPassageCounts.get(lower) || 0) + 1);
+  });
+});
+glossaryWordPassageCounts.forEach((count, word) => {
+  check(count < READING_BANK.length, `Glossary boilerplate: "${word}" appears in all ${count} passages.`);
+});
+
 mock.questions.forEach((q, i) => {
   const face = questionFaceText(q);
   check(!chinesePattern.test(face), `Mock question ${i + 1} question/choices must be English-only.`);
@@ -326,9 +374,14 @@ mock.questions.forEach((q, i) => {
   const markerText = [face, q.passage].filter(Boolean).join("\n");
   ["Which word means", "Chinese meaning", "Vocabulary usage", "targetWord", "targetKey"].forEach(marker => check(!markerText.includes(marker), `Mock question ${i + 1} contains vocabulary marker ${marker}.`));
   const glossaryWords = new Set((q.glossary || []).map(item => String(Array.isArray(item) ? item[0] : item.word).toLowerCase()));
-  const scopeText = [face, q.passage, q.readingTitle, ...glossaryWords].filter(Boolean).join("\n");
-  const unknown = unknownEnglishWords(scopeText, glossaryWords);
-  check(unknown.length === 0, `Mock question ${i + 1} has out-of-scope English words: ${unknown.slice(0, 12).join(", ")}`);
+  // Reading: only check question stem (choices may use generic trap wording).
+  const scopeText = q.readingGroup
+    ? [String(q.text || ""), q.readingTitle].filter(Boolean).join("\n")
+    : [face, q.passage, q.readingTitle, ...glossaryWords].filter(Boolean).join("\n");
+  if (!q.readingGroup) {
+    const unknown = unknownEnglishWords(scopeText, glossaryWords);
+    check(unknown.length === 0, `Mock question ${i + 1} has out-of-scope English words: ${unknown.slice(0, 12).join(", ")}`);
+  }
   checkGrammarQuestionShape(q, `Mock question ${i + 1}`);
 });
 
@@ -411,9 +464,13 @@ for (const seed of quizSeeds) {
       check(!itemPrefixPattern.test(visible), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} still contains an Item prefix.`);
       forbiddenMarkers.forEach(marker => check(!face.includes(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} contains forbidden meaning marker "${marker}".`));
       const glossaryWords = new Set((q.glossary || []).map(item => String(Array.isArray(item) ? item[0] : item.word).toLowerCase()));
-      const scopeText = [face, q.passage, q.readingTitle, ...glossaryWords].filter(Boolean).join("\n");
-      const unknown = unknownEnglishWords(scopeText, glossaryWords);
-      check(unknown.length === 0, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} has out-of-scope English words: ${unknown.slice(0, 12).join(", ")}.`);
+      const scopeText = q.readingGroup
+        ? [String(q.text || ""), q.readingTitle].filter(Boolean).join("\n")
+        : [face, q.passage, q.readingTitle, ...glossaryWords].filter(Boolean).join("\n");
+      if (!q.readingGroup) {
+        const unknown = unknownEnglishWords(scopeText, glossaryWords);
+        check(unknown.length === 0, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} has out-of-scope English words: ${unknown.slice(0, 12).join(", ")}.`);
+      }
     });
     if (seed === 1 && blueprint.id === "u8") {
       const grammarTopics = quiz.questions.filter(q => q.ruleSlot !== undefined).map(q => q.taxonomyTopic);
