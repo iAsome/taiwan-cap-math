@@ -25,8 +25,8 @@
     exam: null,
     answers: [],
     submitted: false,
-    seconds: 2400,
-    totalSeconds: 2400,
+    seconds: 4800,
+    totalSeconds: 4800,
     timerId: null,
     currentQuestion: 0,
     paperDateFilter: "all",
@@ -486,7 +486,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     state.exam = record.exam;
     state.answers = record.answers;
     state.submitted = true;
-    state.totalSeconds = record.totalSeconds ?? (record.exam.minutes || 40) * 60;
+    state.totalSeconds = record.totalSeconds ?? (record.exam.minutes || 80) * 60;
     state.seconds = record.elapsedSeconds != null ? state.totalSeconds - record.elapsedSeconds : 0;
     state.currentQuestion = 0;
     setView("exam");
@@ -509,7 +509,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ? `${state.exam.questions.length} 題四選一，共 ${state.exam.minutes || 10} 分鐘。課綱編碼：${state.exam.officialCodes}。`
       : isArchive
       ? `依 ${state.exam.year} 年官方英語閱讀題本製作的可作答電子試卷；計時結束後仍可繼續作答。`
-      : "30 題四選一，共 40 分鐘。涵蓋 20 個英文文法／字彙單元，閱讀技巧與核心字彙兩大領域加抽比重；本規格為本站自訂的文法字彙隨機練習，非官方閱讀測驗（40-45題/60分鐘的完整篇章題組）原始規格。";
+      : "50 題四選一，共 80 分鐘。前 20 題為 20 個單元各 1 題高難度文法應用，第 21-50 題為 10 篇閱讀題組；本規格為本站自訂的文法閱讀模擬練習，非官方閱讀測驗原始規格。";
     $("#examSetup").classList.toggle("hidden", isQuiz || isArchive);
     $("#quizExamSetup").classList.toggle("hidden", !isQuiz && !isArchive);
     if (isArchive) { $("#backToListButton").textContent = "返回歷屆十年"; $("#backToListButton").dataset.view = "archive"; }
@@ -521,7 +521,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     state.exam = assessment;
     state.answers = assessment.questions.map(() => null);
     state.submitted = false;
-    state.totalSeconds = (assessment.minutes || 40) * 60;
+    state.totalSeconds = (assessment.minutes || 80) * 60;
     state.seconds = state.totalSeconds;
     state.currentQuestion = 0;
     setView("exam");
@@ -545,7 +545,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const assessment = window.EXAM_ENGINE.generate(seed, level);
     assessment.kind = "mock";
     assessment.title = "會考英文文法模擬考";
-    assessment.minutes = 40;
+    assessment.minutes = assessment.minutes || 80;
     launchAssessment(assessment);
     localStorage.setItem("capEnglish.lastSeed", seed);
   }
@@ -616,8 +616,8 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       <header class="paper-cover"><div><p class="eyebrow">官方題本重現</p><h2>${state.exam.year} 年國中教育會考英語（閱讀）試題</h2><p>${state.exam.questions.length} 題選擇｜依官方公布的英語閱讀題本製作為可作答電子試卷｜計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
       <div class="paper-instructions"><div><strong>${state.exam.questions.length}</strong><span>四選一｜官方原題</span></div><div><strong>${state.exam.minutes || 60} min</strong><span>時間到可繼續作答</span></div></div>
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
-      <header class="paper-cover"><div><p class="eyebrow">自訂比例 · 涵蓋 20 單元</p><h2>會考英文文法模擬考</h2><p>30 題選擇｜40 分鐘｜閱讀技巧與核心字彙兩大領域加抽比重（本站自訂文法字彙隨機練習，非官方閱讀測驗原始規格）</p></div><div class="paper-stamp">英文<br>自訂規格</div></header>
-      <div class="paper-instructions"><div><strong>30</strong><span>四選一｜全數英文單元覆蓋</span></div><div><strong>40 min</strong><span>題目順序依卷別種子打亂</span></div></div>`;
+      <header class="paper-cover"><div><p class="eyebrow">自訂比例 · 涵蓋 20 單元</p><h2>會考英文文法模擬考</h2><p>50 題選擇｜80 分鐘｜前 20 題高難度文法應用，後 30 題為 10 篇閱讀題組（本站自訂文法閱讀模擬練習，非官方閱讀測驗原始規格）</p></div><div class="paper-stamp">英文<br>自訂規格</div></header>
+      <div class="paper-instructions"><div><strong>50</strong><span>四選一｜20 文法 + 10 閱讀題組</span></div><div><strong>80 min</strong><span>題目順序依卷別種子固定</span></div></div>`;
     const textOnlyPauseNotice = window.TEXT_ONLY_POLICY?.pauseNotice?.(state.exam) || "";
 
     $("#paper").innerHTML = `
@@ -727,7 +727,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     updateTimer();
     const resultNote = isQuiz ? `本小考只計入「${esc(state.exam.title)}」的範圍，原始答對數不等同學校定期評量成績。`
       : isArchive ? `本卷依 ${state.exam.year} 年官方公布的英語閱讀題本重製，供練習使用；正式成績、等級與官方原始題本以會考官方網站為準。`
-      : "本結果是練習用原始答對數，不等同官方等級；本模考規格為本站自訂的文法字彙隨機練習，非官方英語閱讀測驗原始規格。";
+      : "本結果是練習用原始答對數，不等同官方等級；本模考規格為本站自訂的高難度文法與閱讀題組練習，非官方英語閱讀測驗原始規格。";
     $("#resultPanel").innerHTML = `<div class="result-summary"><div class="result-score"><span><strong>${correct}</strong><br><small>/ ${total} 題</small></span></div><div class="result-copy"><p class="eyebrow">RESULT</p><h2>${scoreRate >= .88 ? "很穩，這個範圍已有成熟掌握。" : scoreRate >= .7 ? "底子不錯，把錯題對應單元立刻回補。" : scoreRate >= .5 ? "先抓本卷錯題觀念，分數會升得最快。" : "別急著刷下一卷，先回講義補地基。"}</h2><p class="elapsed-note">作答時間 ${formatDuration(elapsedSeconds)}${overtimeSeconds > 0 ? `（含超時 ${formatDuration(overtimeSeconds)}）` : ""}</p><p>${resultNote}</p><div class="missed-units">${missed.slice(0, 10).map(x => `<span>${esc(x)}</span>`).join("")}${missed.length > 10 ? `<span>另 ${missed.length - 10} 單元</span>` : ""}</div></div><button class="primary" id="reviewFirst">從第一題看詳解</button></div>`;
     $("#resultPanel").classList.remove("hidden");
     $("#reviewFirst").addEventListener("click", () => $("#question-1").scrollIntoView({ behavior: "smooth", block: "start" }));

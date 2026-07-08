@@ -9,7 +9,7 @@ const sandbox = { window: {}, console, Date, Math };
 vm.createContext(sandbox);
 loadFractionMarkup(sandbox);
 
-for (const file of ["english-data.js", "quiz-taxonomy.js", "questions.js", "analysis-data.js"]) {
+for (const file of ["english-data.js", "quiz-taxonomy.js", "reading-bank.js", "questions.js", "analysis-data.js"]) {
   vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), sandbox, { filename: file });
 }
 
@@ -127,17 +127,26 @@ unitIds.forEach(id => check(vocabCounts[id] === 30, `English vocab unit ${id} sh
   check(Array.isArray(item.badPhrases) && item.badPhrases.length >= 3, `Vocab target ${item.key || item.word} needs 3 bad phrase distractors.`);
   badVocabMarkers.forEach(marker => check(![item.sentence, item.usage, item.phrase, ...item.badPhrases].join("\n").includes(marker), `Vocab target ${item.key} contains placeholder marker "${marker}".`));
 });
-check(EXAM_ENGINE.READING_BANK_SIZE === 100, `English reading bank should contain 100 passages, got ${EXAM_ENGINE.READING_BANK_SIZE}.`);
-check(Object.keys(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).length === 10, "English reading bank should cover 10 scenario categories.");
+check(EXAM_ENGINE.READING_BANK_SIZE === 200, `English reading bank should contain 200 passages, got ${EXAM_ENGINE.READING_BANK_SIZE}.`);
+check(Object.keys(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).length === 20, "English reading bank should cover 20 scenario categories.");
 Object.entries(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).forEach(([category, count]) => check(count === 10, `English reading category ${category} should contain 10 passages, got ${count}.`));
-check(Array.isArray(EXAM_ENGINE.READING_BANK_META) && EXAM_ENGINE.READING_BANK_META.length === 100, "English reading bank metadata should expose 100 passages.");
-check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.id)).size === 100, "English reading passage ids must be unique.");
-check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.passage)).size === 100, "English reading passage texts must be unique.");
+check(Array.isArray(EXAM_ENGINE.READING_BANK_META) && EXAM_ENGINE.READING_BANK_META.length === 200, "English reading bank metadata should expose 200 passages.");
+check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.id)).size === 200, "English reading passage ids must be unique.");
+check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.passage)).size === 200, "English reading passage texts must be unique.");
+const readingQuestionSignatures = new Set();
 (EXAM_ENGINE.READING_BANK_META || []).forEach(item => {
   check(item.wordCount >= 60 && item.wordCount <= 100, `Reading passage ${item.id} should be 60-100 words, got ${item.wordCount}.`);
+  check(item.questionCount === 3, `Reading passage ${item.id} should have 3 questions, got ${item.questionCount}.`);
+  check(Array.isArray(item.glossary), `Reading passage ${item.id} needs glossary array.`);
+  (item.glossary || []).forEach(entry => check(Array.isArray(entry) && entry[0] && chinesePattern.test(entry[1] || ""), `Reading passage ${item.id} glossary entries need Chinese translations.`));
+  (item.questionSignatures || []).forEach(sig => {
+    check(!readingQuestionSignatures.has(sig), `Reading question signature should be unique: ${sig.slice(0, 100)}.`);
+    readingQuestionSignatures.add(sig);
+  });
 });
 check(unitIds.length === 20, `ENGLISH_DATA.units should contain 20 units, got ${unitIds.length}.`);
 unitIds.forEach((id, i) => check(id === i + 1, `Unit id should be ${i + 1}, got ${id}.`));
+
 ENGLISH_DATA.units.forEach(unit => {
   ["summary", "core", "clarify", "formula", "derivation"].forEach(field => {
     check(typeof unit[field] === "string" && unit[field].trim(), `unit ${unit.id} missing ${field}.`);
@@ -162,15 +171,29 @@ ENGLISH_DATA.units.forEach(unit => {
   check(!/math-frac|math-num|math-den/.test(rendered), `unit ${unit.id} handbook renders math fraction classes.`);
 });
 
-// Mock exam stays 30 questions.
+// Mock exam: 20 high-difficulty grammar questions + 10 reading sets.
 const mock = EXAM_ENGINE.generate(20260701, 2);
-check(mock.questions.length === 30, `Mock exam should generate 30 questions, got ${mock.questions.length}.`);
+check(mock.minutes === 80, `Mock exam should be 80 minutes, got ${mock.minutes}.`);
+check(mock.questions.length === 50, `Mock exam should generate 50 questions, got ${mock.questions.length}.`);
+check(mock.questionCount === 50, `Mock exam should advertise 50 questions, got ${mock.questionCount}.`);
 mock.questions.forEach((q, i) => {
   check(Array.isArray(q.choices) && q.choices.length === 4, `Mock question ${i + 1} should have 4 choices.`);
   check(q.answer >= 0 && q.answer < q.choices.length, `Mock question ${i + 1} answer is out of range.`);
   check(unitIds.includes(q.unitId), `Mock question ${i + 1} has unknown unitId ${q.unitId}.`);
 });
-
+const mockGrammar = mock.questions.slice(0, 20);
+const mockReading = mock.questions.slice(20);
+check(new Set(mockGrammar.map(q => q.unitId)).size === 20, "Mock grammar questions should cover 20 units exactly once.");
+check(mockGrammar.every(q => !q.readingGroup && !q.targetKey && !q.targetWord), "Mock grammar questions must not be reading or vocabulary target questions.");
+check(mockReading.length === 30, `Mock exam should contain 30 reading questions, got ${mockReading.length}.`);
+const mockReadingGroups = countBy(mockReading, q => q.readingGroup);
+for (let group = 1; group <= 10; group++) {
+  const groupQuestions = mockReading.filter(q => q.readingGroup === group);
+  check(mockReadingGroups[group] === 3, `Mock reading group ${group} should contain 3 questions.`);
+  check(new Set(groupQuestions.map(q => q.passageId)).size === 1, `Mock reading group ${group} should share one passage.`);
+}
+check(new Set(mockReading.map(q => q.passageId)).size === 10, "Mock exam should use 10 different reading passages.");
+check(mockReading.every(q => q.passage && q.readingTitle && Array.isArray(q.glossary)), "Mock reading questions need passage/title/glossary.");
 const vocabPath = path.join(root, "vocab-3000.json");
 const vocab = fs.existsSync(vocabPath) ? JSON.parse(fs.readFileSync(vocabPath, "utf8")) : null;
 const basic2000 = new Set();
@@ -183,7 +206,7 @@ const vocabAllowlist = new Set([
   "bought", "brought", "built", "caught", "eaten", "felt", "forgot", "gone", "kept", "lent", "lost", "rang", "saw", "sold", "spoken", "told", "went", "were", "wrote", "written",
   "although", "an", "arrived", "b", "became", "best", "better", "bike", "bore", "bores", "broken", "changed", "children", "chose", "closed", "communicate", "communication", "compared", "conclusion", "confused", "decided", "earlier", "effect", "effected", "fell", "forever", "found", "function", "functions", "grammatical", "grammatically", "heavier", "heaviest", "inference", "knew", "lived", "lowered", "luckily", "mine", "moved", "mystery", "okay", "prefix", "probably", "product", "reduce", "reduction", "refer", "relieved", "reusable", "reuse", "schedule", "shown", "suddenly", "suffix", "tone", "took", "tv", "un", "uncertain", "understood", "used", "wondered",
   "advice", "argument", "cigarette", "clause", "condition", "connect", "container", "context", "contrast", "definition", "device", "dialogue", "done", "easier", "easily", "feathers", "gave", "given", "harmful", "ignored", "larger", "matches", "met", "musical", "personality", "phrase", "placed", "prevented", "related", "reply", "respectful", "rewrite", "routine", "said", "saved", "sent", "set", "simplest", "situation", "solved", "standard", "tag", "task", "tense", "them", "unit", "usage", "whom", "worse",
-  "choice", "confusion", "customer", "delay", "displeasure", "instead", "local", "made", "message", "notice", "online", "public", "receipt", "route", "share", "smoothly", "volunteer",
+  "argued", "caused", "choice", "confusion", "customer", "delay", "displeasure", "field", "instead", "item", "local", "made", "message", "notice", "online", "public", "receipt", "route", "safer", "share", "smoothly", "transport", "volunteer",
   "watchs", "delicion", "wellly", "difficulter", "interestinger", "happilyness", "teacherly", "movemently"
 ]);
 function addBasicWord(raw) {
@@ -242,6 +265,19 @@ function unknownEnglishWords(text, extraAllowed = new Set()) {
     .map(word => word.replace(/[^a-z]/g, ""))
     .filter(word => word && !extraAllowed.has(word) && !baseWordOk(word)))];
 }
+mock.questions.forEach((q, i) => {
+  const face = questionFaceText(q);
+  check(!chinesePattern.test(face), `Mock question ${i + 1} question/choices must be English-only.`);
+  check(!chinesePattern.test(q.passage || ""), `Mock question ${i + 1} passage must be English-only.`);
+  const explanation = explanationText(q);
+  check(chinesePattern.test(explanation), `Mock question ${i + 1} explanation must include Chinese reasoning.`);
+  const markerText = [face, q.passage].filter(Boolean).join("\n");
+  ["Which word means", "Chinese meaning", "Vocabulary usage", "targetWord", "targetKey"].forEach(marker => check(!markerText.includes(marker), `Mock question ${i + 1} contains vocabulary marker ${marker}.`));
+  const glossaryWords = new Set((q.glossary || []).map(item => String(Array.isArray(item) ? item[0] : item.word).toLowerCase()));
+  const scopeText = [face, q.passage, q.readingTitle, ...glossaryWords].filter(Boolean).join("\n");
+  const unknown = unknownEnglishWords(scopeText, glossaryWords);
+  check(unknown.length === 0, `Mock question ${i + 1} has out-of-scope English words: ${unknown.slice(0, 12).join(", ")}`);
+});
 
 ENGLISH_DATA.units.forEach(unit => {
   (unit.examples || []).forEach((example, index) => {
@@ -385,4 +421,4 @@ if (errors.length) {
 
 const years = Object.keys(ENGLISH_ANALYSIS.primaryUnits).sort();
 const totalArchiveQ = years.reduce((s, y) => s + ENGLISH_ANALYSIS.primaryUnits[y].length, 0);
-console.log(`OK: 20 units, ${EXAM_ENGINE.quizCatalog.length} English-only quiz faces, no-repeat targets/templates, 100 reading passages, 30-question mock, ${years.length} archive years (${totalArchiveQ} questions).`);
+console.log(`OK: 20 units, ${EXAM_ENGINE.quizCatalog.length} English-only quiz faces, no-repeat targets/templates, 200 reading passages, 50-question mock, ${years.length} archive years (${totalArchiveQ} questions).`);

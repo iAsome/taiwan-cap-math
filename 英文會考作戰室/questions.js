@@ -11,6 +11,10 @@ window.EXAM_ENGINE = (() => {
   const REVIEW_GRAMMAR_COUNT = 34;
   const REVIEW_VOCAB_COUNT = 10;
   const REVIEW_READING_COUNT = 6;
+  const MOCK_QUESTION_COUNT = 50;
+  const MOCK_MINUTES = 80;
+  const MOCK_GRAMMAR_COUNT = 20;
+  const MOCK_READING_GROUP_COUNT = 10;
   const CHAPTER_DIFFICULTIES = [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4];
   const REVIEW_GENERAL_DIFFICULTIES = [
     1, 1, 1, 1, 1, 1,
@@ -19,6 +23,7 @@ window.EXAM_ENGINE = (() => {
     4, 4, 4, 4, 4, 4
   ];
   const REVIEW_READING_DIFFICULTIES = [3, 3, 4, 4, 5, 5];
+  const MOCK_GRAMMAR_DIFFICULTIES = [3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 4, 4, 5, 5, 5, 5];
 
   function hashSeed(seed) {
     return String(seed).split("").reduce((s, c) => ((s * 31) + c.charCodeAt(0)) >>> 0, 7);
@@ -389,49 +394,7 @@ window.EXAM_ENGINE = (() => {
     };
   }
   const VOCAB_BANK = WORD_SETS.flatMap((set, unitIndex) => expandWordSet(set, unitIndex).map((item, itemIndex) => vocabEntry(item, unitIndex, itemIndex)));
-  const readingCategories = [
-    ["daily-life", "Daily Life", "near a small shop", [["receipt", "收據"], ["notice", "注意到"]]],
-    ["conversation", "Conversation", "outside the classroom", [["message", "訊息"], ["reply", "回覆"]]],
-    ["home", "Home and Family", "at home", [["choice", "選擇"], ["share", "分享"]]],
-    ["school", "School", "at school", [["project", "專題"], ["schedule", "時程"]]],
-    ["transport", "Transport", "at the station", [["delay", "延誤"], ["route", "路線"]]],
-    ["shopping", "Shopping", "in a market", [["price", "價格"], ["customer", "顧客"]]],
-    ["health", "Health", "near the school health room", [["habit", "習慣"], ["advice", "建議"]]],
-    ["community", "Community", "in the neighborhood", [["volunteer", "志工"], ["local", "當地的"]]],
-    ["technology", "Technology", "in a computer room", [["device", "裝置"], ["online", "線上"]]],
-    ["news", "News and Society", "at a town meeting", [["report", "報告"], ["public", "公共的"]]]
-  ];
-  const readingGlossaryExtras = {
-    community: [["community", "社區"], ["neighborhood", "鄰近地區"]],
-    technology: [["technology", "科技"]],
-    transport: [["transport", "交通"]]
-  };
-  const readingEvents = [
-    { title: "A Lost Card", problem: "a student card was missing after a busy morning", action: "checked the desk, read the last message, and asked one clear question", result: "the card was found inside a notebook before lunch", infer: "Careful checking solved the problem faster than guessing.", detail: "They checked the desk and read the last message.", distractors: ["A New Lunch Menu", "A Long Vacation", "A Phone for Sale"] },
-    { title: "A Changed Plan", problem: "the meeting place changed just before the group left", action: "read the new note twice and sent one short message to the team", result: "everyone arrived at the right place on time", infer: "A short message helped the whole group avoid confusion.", detail: "The new note was read twice before the message was sent.", distractors: ["A Broken Bike", "A Story about Pets", "A Free Ticket"] },
-    { title: "A Careful Choice", problem: "two choices both looked useful but the group had little time", action: "compared the cost, time, and number of people who needed help", result: "the better choice became clear without a long argument", infer: "The group used facts to make a fair choice.", detail: "They compared the cost, time, and number of people.", distractors: ["A Sports Day", "A Quiet Dinner", "A Lost Phone"] },
-    { title: "A Small Mistake", problem: "one number on a notice was written wrong", action: "looked at the old record and asked the office to check it", result: "the mistake was fixed before anyone followed the wrong time", infer: "Checking an old record prevented a larger problem.", detail: "The old record was used to check the number.", distractors: ["A New Game", "A Rainy Trip", "A Birthday Gift"] },
-    { title: "A Kind Reminder", problem: "several people forgot the same important step", action: "made a short reminder and put it where everyone could see it", result: "the group finished the work on time and thanked one another", infer: "A simple reminder can help people work together.", detail: "The reminder was placed where everyone could see it.", distractors: ["A Busy Store", "A Long Letter", "A Broken Window"] },
-    { title: "A Rainy Morning", problem: "heavy rain made the morning harder than usual", action: "packed the needed things early and checked the route before leaving", result: "the day still went smoothly even though the weather was poor", infer: "Planning ahead made the bad weather easier to handle.", detail: "The route was checked before leaving.", distractors: ["A Sunny Picnic", "A New Computer", "A Music Lesson"] },
-    { title: "A New Rule", problem: "a new rule confused people who did not know the reason", action: "asked why the rule was needed and explained it in plain words", result: "more people followed the rule because they understood it", infer: "People follow a rule more easily when they know its purpose.", detail: "The reason for the rule was explained in plain words.", distractors: ["A Fast Race", "A Lost Key", "A Cold Drink"] },
-    { title: "A Quiet Problem", problem: "the problem was small and not easy to notice at first", action: "watched what happened for a few minutes before changing anything", result: "the real cause was found and only a small fix was needed", infer: "Watching first kept the group from fixing the wrong thing.", detail: "They watched for a few minutes before changing anything.", distractors: ["A Loud Party", "A New Shirt", "A Train Ticket"] },
-    { title: "A Helpful Question", problem: "no one was sure what to do next", action: "asked a simple question that showed which fact was still missing", result: "the answer saved time and gave the group a clear next step", infer: "The right question can make a plan clearer.", detail: "The question showed which fact was still missing.", distractors: ["A Hard Test", "A Family Meal", "A Clean Room"] },
-    { title: "A Better Way", problem: "the old way took too long and made people tired", action: "tried a smaller first step and checked the result before doing more", result: "the work became easier and the group kept the better way", infer: "Testing a small change helped the group improve its work.", detail: "They tried a smaller first step before doing more.", distractors: ["A Dark Night", "A Pet Shop", "A Short Song"] }
-  ];
-  const READING_BANK = readingCategories.flatMap(([category, label, place, glossary], categoryIndex) => readingEvents.map((event, eventIndex) => {
-    glossary = [...(readingGlossaryExtras[category] || []), ...glossary];
-    const person = names[(categoryIndex * 3 + eventIndex) % names.length];
-    const friend = names[(categoryIndex * 5 + eventIndex + 7) % names.length];
-    const id = `r${String(categoryIndex + 1).padStart(2, "0")}-${String(eventIndex + 1).padStart(2, "0")}`;
-    const title = `${label}: ${event.title}`;
-    const passage = `${person} met ${friend} ${place} on a busy morning. They were working on a ${label.toLowerCase()} task when ${event.problem}. Instead of rushing to guess, ${person} ${event.action}. ${friend} wrote down the important facts so the team would not forget them. After a short talk, ${event.result}. The two students learned that a calm question and a clear plan can turn a small problem into useful action.`;
-    const questions = [
-      ["What is the best title for this passage?", title, event.distractors, "標題要涵蓋整篇文章的問題、行動與結果。", "comprehension"],
-      ["What can we infer from the passage?", event.infer, ["The students ignored the facts.", "The problem became worse after the talk.", "No one tried to understand the situation."], "推論必須由文章中採取的行動與結果支持。", "inquiry"],
-      ["Which detail best supports the answer?", event.detail, ["They met on a busy morning.", "Two students were in the story.", "The place was part of daily life."], "支持證據要能直接連到解題理由，而不是只選背景細節。", "inquiry"]
-    ];
-    return { id, category, title, passage, glossary, questions };
-  }));
+  const READING_BANK = window.ENGLISH_READING_BANK || [];
   function sentenceFrom(stem, choice) {
     return stem.includes("___") ? stem.replace("___", choice) : choice;
   }
@@ -583,30 +546,54 @@ window.EXAM_ENGINE = (() => {
     }
     throw new Error(`Not enough unique vocabulary questions for ${quizId} unit ${unitId}`);
   }
-  function generatedReading(seed, quizId, passageIndex) {
-    const reviewIndex = Math.max(0, (quizIndexById[quizId] || 20) - chapterQuizzes.length);
-    const base = (hashSeed(seed) % 10) * 10;
-    return READING_BANK[(base + reviewIndex * 2 + passageIndex) % READING_BANK.length];
+  function readingBankItem(seed, quizId, passageIndex) {
+    if (!READING_BANK.length) throw new Error("English reading bank missing");
+    const reviewIndex = (quizIndexById[quizId] ?? -1) - chapterQuizzes.length;
+    if (reviewIndex >= 0) return READING_BANK[(hashSeed(seed) + reviewIndex * 2 + passageIndex) % READING_BANK.length];
+    const base = hashSeed(`${seed}:${quizId}`) % READING_BANK.length;
+    return READING_BANK[(base + passageIndex * 37) % READING_BANK.length];
+  }
+  function readingSetQuestions(r, passage, unitId, readingGroup, difficulties) {
+    return passage.questions.map((row, qi) => {
+      const q = mc(
+        r,
+        unitId,
+        difficulties[qi] || 4,
+        row[0],
+        row[1],
+        row[2],
+        [row[3]],
+        "閱讀題先定位題目問什麼，再回到文章找線索；不要只靠單一熟字猜答案。",
+        "錯誤選項通常會偷換時間、人物、目的或結果，必須和原文逐一比對。",
+        "閱讀理解",
+        "正解必須同時符合文章事實與題目問法。"
+      );
+      q.ability = row[4] || (qi === 0 ? "comprehension" : "inquiry");
+      q.readingGroup = readingGroup;
+      q.passageId = passage.id;
+      q.passage = passage.passage;
+      q.readingTitle = passage.title;
+      q.glossary = passage.glossary;
+      q.taxonomyTopic = `Reading ${passage.category}`;
+      q.questionFormKey = `reading:q${qi + 1}`;
+      q.templateKey = `reading:${passage.id}:q${qi + 1}`;
+      return attachQuestionKeys(q);
+    });
   }
   function readingQuestions(r, seed, quizId, unitIds) {
     return [0, 1].flatMap(passageIndex => {
-      const passage = generatedReading(seed, quizId, passageIndex);
+      const passage = readingBankItem(seed, quizId, passageIndex);
       const unitId = unitIds[passageIndex % unitIds.length];
-      const rows = passage.questions;
-      return rows.map((row, qi) => {
-        const q = mc(r, unitId, REVIEW_READING_DIFFICULTIES[passageIndex * 3 + qi], row[0], row[1], row[2], [row[3]], "先看題目，再回文章找直接證據。", "閱讀題以文章線索為準，不用外部猜測。", "常見錯誤是只抓到背景細節，沒有找能支持答案的句子。", "本題檢查閱讀理解與情境判斷。", "中文翻譯重點：先確認問題，再用文章證據作答。");
-        q.ability = row[4];
-        q.readingGroup = passageIndex + 1;
-        q.passageId = passage.id;
-        q.passage = passage.passage;
-        q.readingTitle = passage.title;
-        q.glossary = passage.glossary;
-        q.taxonomyTopic = `Reading ${passage.category}`;
-        q.questionFormKey = `reading:q${qi + 1}`;
-        q.templateKey = `reading:${passage.id}:q${qi + 1}`;
-        return attachQuestionKeys(q);
-      });
+      return readingSetQuestions(r, passage, unitId, passageIndex + 1, REVIEW_READING_DIFFICULTIES.slice(passageIndex * 3, passageIndex * 3 + 3));
     });
+  }
+  function mockReadingQuestions(r, seed) {
+    return Array.from({ length: MOCK_READING_GROUP_COUNT }, (_, passageIndex) => {
+      const passage = readingBankItem(seed, "mock", passageIndex);
+      const unitId = passageIndex % 2 === 0 ? 15 : 16;
+      const difficulties = passageIndex < 3 ? [3, 4, 4] : passageIndex < 8 ? [4, 4, 5] : [4, 5, 5];
+      return readingSetQuestions(r, passage, unitId, passageIndex + 1, difficulties);
+    }).flat();
   }
 
   const quizSetCache = new Map();
@@ -694,25 +681,31 @@ window.EXAM_ENGINE = (() => {
   }
 
   function generate(seed, level = 2) {
+    const seedValue = Number(seed) || hashSeed(seed);
     const r = rngFromSeed(hashSeed(seed) + level * 100003);
-    const allUnitIds = U.map(u => u.id);
-    const extraWeighted = [...U.filter(u => u.grade === 4).map(u => u.id), ...U.filter(u => u.grade === 5).map(u => u.id)];
-    const extraDraws = Array.from({ length: 10 }, () => pick(r, extraWeighted));
-    const drawUnitIds = shuffled(r, [...allUnitIds, ...extraDraws]);
-    const used = new Set();
-    const questions = drawUnitIds.map((unitId, index) => {
-      const pool = shuffled(r, unitTopics(unitId));
-      let chosen = pool[index % pool.length] || pool[0];
-      for (const candidate of pool) if (!used.has(`${unitId}:${candidate.id}`)) { chosen = candidate; break; }
-      used.add(`${unitId}:${chosen.id}`);
-      const question = chosen.template({ r, ri, pick, mc });
+    const used = newUsedKeys();
+    const questions = U.map((unit, index) => {
+      const start = hashSeed(`${seedValue}:mock:${level}:${unit.id}`) % 240;
+      const question = buildUniqueGrammarQuestion(used, r, seedValue, "mock", unit.id, start, MOCK_GRAMMAR_DIFFICULTIES[index]);
       question.ability = abilityKeys[index % abilityKeys.length];
-      question.taxonomySection = chosen.section;
-      question.taxonomyTopic = chosen.title;
+      question.taxonomySection = unit.domain;
       return question;
     });
+    mockReadingQuestions(r, seedValue).forEach(question => {
+      if (!rememberQuestion(used, question)) throw new Error("Duplicate mock reading question");
+      questions.push(question);
+    });
     questions.forEach((question, index) => { question.officialOrder = index + 1; });
-    return { id: `ENG-${seed}-${level}`, seed: Number(seed), level, createdAt: new Date().toISOString(), blueprint: "self-defined-30q-40min-english-scope", questions };
+    return {
+      id: `ENG-${seedValue}-${level}`,
+      seed: seedValue,
+      level,
+      minutes: MOCK_MINUTES,
+      questionCount: questions.length,
+      createdAt: new Date().toISOString(),
+      blueprint: "self-defined-50q-80min-english-mock-v2",
+      questions
+    };
   }
 
   return {
@@ -733,6 +726,10 @@ window.EXAM_ENGINE = (() => {
     REVIEW_GRAMMAR_COUNT,
     REVIEW_VOCAB_COUNT,
     REVIEW_READING_COUNT,
+    MOCK_QUESTION_COUNT,
+    MOCK_MINUTES,
+    MOCK_GRAMMAR_COUNT,
+    MOCK_READING_GROUP_COUNT,
     VOCAB_BANK_META: VOCAB_BANK.map(item => ({
       unitId: item.unitId,
       word: item.word,
@@ -750,7 +747,10 @@ window.EXAM_ENGINE = (() => {
       category: item.category,
       title: item.title,
       wordCount: (item.passage.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) || []).length,
-      passage: item.passage
+      passage: item.passage,
+      glossary: item.glossary,
+      questionCount: item.questions.length,
+      questionSignatures: item.questions.map(row => [item.id, item.passage, row[0], row[1], ...(row[2] || [])].join("\n").toLowerCase())
     }))
   };
 })();
