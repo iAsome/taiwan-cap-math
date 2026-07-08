@@ -127,14 +127,18 @@ unitIds.forEach(id => check(vocabCounts[id] === 30, `English vocab unit ${id} sh
   check(Array.isArray(item.badPhrases) && item.badPhrases.length >= 3, `Vocab target ${item.key || item.word} needs 3 bad phrase distractors.`);
   badVocabMarkers.forEach(marker => check(![item.sentence, item.usage, item.phrase, ...item.badPhrases].join("\n").includes(marker), `Vocab target ${item.key} contains placeholder marker "${marker}".`));
 });
-check(EXAM_ENGINE.READING_BANK_SIZE === 200, `English reading bank should contain 200 passages, got ${EXAM_ENGINE.READING_BANK_SIZE}.`);
-check(Object.keys(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).length === 20, "English reading bank should cover 20 scenario categories.");
+check(EXAM_ENGINE.READING_BANK_SIZE === 500, `English reading bank should contain 500 passages, got ${EXAM_ENGINE.READING_BANK_SIZE}.`);
+check(Object.keys(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).length === 50, "English reading bank should cover 50 reading sets.");
 Object.entries(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).forEach(([category, count]) => check(count === 10, `English reading category ${category} should contain 10 passages, got ${count}.`));
-check(Array.isArray(EXAM_ENGINE.READING_BANK_META) && EXAM_ENGINE.READING_BANK_META.length === 200, "English reading bank metadata should expose 200 passages.");
-check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.id)).size === 200, "English reading passage ids must be unique.");
-check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.passage)).size === 200, "English reading passage texts must be unique.");
+check(Array.isArray(EXAM_ENGINE.READING_BANK_META) && EXAM_ENGINE.READING_BANK_META.length === 500, "English reading bank metadata should expose 500 passages.");
+check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.id)).size === 500, "English reading passage ids must be unique.");
+check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.passage)).size === 500, "English reading passage texts must be unique.");
+for (let i = 1; i <= 500; i++) check((EXAM_ENGINE.READING_BANK_META || [])[i - 1]?.id === `r${String(i).padStart(3, "0")}`, `Reading passage id ${i} should be r${String(i).padStart(3, "0")}.`);
 check(!questionSource.includes("Daily Life: A Lost Card") && !questionSource.includes("calm thinking was better than a quick guess"), "questions.js must not contain old generated reading bank text.");
 const readingBankSource = fs.readFileSync(path.join(root, "reading-bank.js"), "utf8");
+const styleSource = fs.readFileSync(path.join(root, "styles.css"), "utf8");
+const glossaryStyle = styleSource.match(/\.glossary-word\s*\{[^}]+\}/)?.[0] || "";
+check(glossaryStyle.includes("text-decoration") && !/background\s*:|background-color\s*:/.test(glossaryStyle), "glossary-word should be underlined without a yellow background.");
 check(!readingBankSource.includes("Daily Life: A Lost Card") && !readingBankSource.includes("calm thinking was better than a quick guess"), "reading-bank.js must not contain old generated reading bank text.");
 const readingQuestionSignatures = new Set();
 (EXAM_ENGINE.READING_BANK_META || []).forEach(item => {
@@ -201,7 +205,7 @@ const vocabPath = path.join(root, "vocab-3000.json");
 const vocab = fs.existsSync(vocabPath) ? JSON.parse(fs.readFileSync(vocabPath, "utf8")) : null;
 const basic2000 = new Set();
 const vocabAllowlist = new Set([
-  "amy", "andy", "anna", "ben", "candy", "carter", "chen", "cindy", "david", "ella", "emma", "eric", "fan", "frank", "gao", "grace", "helen", "henry", "hill", "ivy", "jack", "jason", "jerry", "kelly", "kevin", "lena", "leo", "lily", "lin", "linda", "liu", "lucky", "mandy", "mark", "may", "mia", "mina", "molly", "mr", "mrs", "ms", "nancy", "nick", "nina", "nora", "olivia", "owen", "park", "peter", "ruby", "ryan", "sam", "tina", "tom", "victor", "wang", "wendy", "wu", "yuki", "zoe",
+  "amy", "andy", "anna", "ben", "candy", "carter", "chen", "cindy", "daniel", "david", "ella", "emma", "eric", "fan", "frank", "gao", "grace", "helen", "henry", "hill", "ivy", "jack", "jason", "jenny", "jerry", "kelly", "kevin", "lena", "leo", "lily", "lin", "linda", "liu", "lucky", "mandy", "mark", "may", "mia", "mina", "molly", "mr", "mrs", "ms", "nancy", "nick", "nina", "nora", "olivia", "owen", "park", "peter", "ruby", "ryan", "sam", "tina", "tom", "victor", "wang", "wendy", "wu", "yuki", "zoe",
   "pine", "taipei", "japanese", "v", "pp", "ing", "ed", "ly", "ful", "tion", "doesn", "don", "isn", "haven", "didn", "can", "couldn", "wouldn", "shouldn",
   "am", "are", "was", "were", "did", "does", "has", "had", "would", "could", "should", "my", "me", "your", "her", "hers", "him", "himself",
   "adjective", "adverb", "article", "conjunction", "grammar", "modal", "noun", "passive", "preposition", "pronoun", "verb",
@@ -426,4 +430,4 @@ if (errors.length) {
 
 const years = Object.keys(ENGLISH_ANALYSIS.primaryUnits).sort();
 const totalArchiveQ = years.reduce((s, y) => s + ENGLISH_ANALYSIS.primaryUnits[y].length, 0);
-console.log(`OK: 20 units, ${EXAM_ENGINE.quizCatalog.length} English-only quiz faces, no-repeat targets/templates, 200 reading passages, 50-question mock, ${years.length} archive years (${totalArchiveQ} questions).`);
+console.log(`OK: 20 units, ${EXAM_ENGINE.quizCatalog.length} English-only quiz faces, no-repeat targets/templates, 500 reading passages, 50-question mock, ${years.length} archive years (${totalArchiveQ} questions).`);
