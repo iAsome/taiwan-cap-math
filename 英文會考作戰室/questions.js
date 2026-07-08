@@ -273,31 +273,31 @@ window.EXAM_ENGINE = (() => {
 
   const GRAMMAR_FORMS = [
     ["blank", stem => stem],
-    ["best-answer", stem => `Choose the best answer.\n${stem}`],
-    ["complete", stem => `Complete the sentence.\n${stem}`],
+    ["best-answer", stem => stem],
+    ["complete", stem => stem],
     ["correct-sentence", () => "Which sentence is correct?"],
     ["natural-sentence", () => "Which sentence sounds natural?"],
-    ["standard-english", stem => `Choose the standard English sentence.\n${stem}`],
-    ["dialogue", stem => `Complete the dialogue.\nA: What should we say?\nB: ${stem}`],
-    ["form", stem => `Choose the correct form.\n${stem}`],
-    ["word-choice", stem => `Choose the correct word choice.\n${stem}`],
-    ["tense", stem => `Choose the sentence with the correct tense.\n${stem}`],
+    ["standard-english", stem => stem],
+    ["dialogue", stem => `A: What should we say?\nB: ${stem}`],
+    ["form", stem => stem],
+    ["word-choice", stem => stem],
+    ["tense", stem => stem],
     ["order", () => "Which sentence has the correct word order?"],
-    ["usage", stem => `Choose the correct usage.\n${stem}`],
+    ["usage", stem => stem],
     ["rewrite", () => "Which rewrite is correct?"],
     ["clear-meaning", () => "Which sentence has a clear meaning?"],
-    ["exam-style", stem => `Read and choose the best answer.\n${stem}`],
+    ["exam-style", stem => stem],
     ["short-dialogue", stem => `A: I am not sure.\nB: ${stem}`],
     ["grammar-check", () => "Which answer is grammatical?"],
-    ["sentence-fit", stem => `Which answer fits the sentence?\n${stem}`],
-    ["context", stem => `Choose the best answer in context.\n${stem}`],
+    ["sentence-fit", stem => stem],
+    ["context", stem => stem],
     ["edit", () => "Which sentence is correct now?"]
   ];
   const VOCAB_FORMS = [
     "definition",
+    "meaning",
     "context",
-    "form",
-    "collocation",
+    "usage",
     "phrase"
   ];
   const WORD_SETS = [
@@ -322,15 +322,55 @@ window.EXAM_ENGINE = (() => {
     [["pollution", "dirty or harmful things in air, water, or land"], ["health", "the condition of the body or mind"], ["medicine", "something used to treat sickness"], ["waste", "things people throw away"], ["sleep", "rest with eyes closed"], ["screen", "the part of a device that shows pictures"], ["affect", "change or influence something"], ["recycle", "use old material again"]],
     [["communication", "sharing ideas or information"], ["helpful", "giving help"], ["unhappy", "not happy"], ["politely", "in a respectful way"], ["suffix", "letters added to the end of a word"], ["prefix", "letters added to the start of a word"], ["root", "the main part of a word"], ["movement", "a change of place or position"]]
   ];
-  const VOCAB_BANK = WORD_SETS.flatMap((set, unitIndex) => set.map(([word, definition], itemIndex) => ({
-    unitId: unitIndex + 1,
-    word,
-    definition,
-    sentence: `The word "${word}" is useful in this unit.`,
-    phrase: `${word} in context`,
-    key: `u${unitIndex + 1}:${word}`,
-    itemIndex
-  })));
+  const EXTRA_TARGETS = [
+    ["ask", "say a question"], ["answer", "say or write a reply"], ["begin", "start doing something"], ["build", "make something"], ["call", "speak to someone by phone"], ["change", "make something different"],
+    ["check", "look carefully to see if something is right"], ["choose", "pick one thing from others"], ["clean", "make something not dirty"], ["close", "shut something"], ["come", "move toward here"], ["cook", "make food"],
+    ["copy", "make the same words again"], ["count", "find how many there are"], ["cover", "put something over another thing"], ["cry", "make tears because of strong feeling"], ["cut", "divide something with a knife"], ["draw", "make a picture"],
+    ["drink", "take liquid into the body"], ["drive", "control a car"], ["drop", "let something fall"], ["eat", "take food into the body"], ["find", "see where something is"], ["follow", "go after someone or obey a rule"],
+    ["give", "let someone have something"], ["grow", "become bigger"], ["guess", "answer without being sure"], ["hear", "notice sound"], ["hold", "keep something in your hand"], ["join", "become part of a group"],
+    ["keep", "continue to have something"], ["laugh", "show happiness with sound"], ["listen", "try to hear carefully"], ["look", "use your eyes"], ["make", "create or prepare something"], ["move", "change place"],
+    ["need", "must have something"], ["open", "make something not closed"], ["paint", "put color on something"], ["pass", "go by or succeed in a test"], ["pick", "choose or take something"], ["plan", "decide what to do"],
+    ["pull", "move something toward you"], ["push", "move something away from you"], ["read", "look at words and understand them"], ["remember", "keep something in your mind"], ["run", "move fast on foot"], ["save", "keep for later"],
+    ["say", "speak words"], ["send", "make something go to another person"], ["share", "use or have something with others"], ["show", "let someone see something"], ["sit", "rest on a chair"], ["sleep", "rest with eyes closed"],
+    ["speak", "use words with your voice"], ["stand", "be on your feet"], ["stay", "remain in a place"], ["stop", "end an action"], ["take", "get or carry something"], ["teach", "help someone learn"],
+    ["tell", "give information by speaking"], ["think", "use your mind"], ["try", "make an effort"], ["turn", "move in another direction"], ["use", "do something with a tool or object"], ["wait", "stay until something happens"],
+    ["wear", "have clothes on your body"], ["work", "do a job or task"], ["write", "make words with a pen or keyboard"], ["young", "not old"], ["old", "having many years"], ["new", "not old or used"],
+    ["small", "not large"], ["large", "big in size"], ["short", "not long or not tall"], ["long", "not short"], ["warm", "not hot but not cold"], ["cool", "a little cold"],
+    ["safe", "not dangerous"], ["kind", "nice and helpful"], ["clear", "easy to understand"], ["right", "correct"], ["wrong", "not correct"], ["important", "needing attention"],
+    ["simple", "easy to understand or do"], ["special", "different in a good way"], ["common", "seen or used often"], ["fresh", "new or not old"], ["free", "costing no money"], ["full", "having no empty space"],
+    ["light", "not heavy"], ["dark", "with little light"], ["ready", "prepared"], ["late", "after the right time"], ["daily", "happening every day"], ["quietly", "with little noise"],
+    ["slowly", "not quickly"], ["carefully", "with attention"], ["early", "before the usual time"], ["again", "one more time"], ["away", "not here"], ["together", "with each other"]
+  ];
+  function expandWordSet(set, unitIndex) {
+    const out = set.map(item => [...item]);
+    const used = new Set(out.map(item => item[0]));
+    let cursor = unitIndex * 22;
+    while (out.length < 30) {
+      const item = EXTRA_TARGETS[cursor % EXTRA_TARGETS.length];
+      cursor++;
+      if (used.has(item[0])) continue;
+      used.add(item[0]);
+      out.push([...item]);
+    }
+    return out;
+  }
+  function vocabEntry([word, definition], unitIndex, itemIndex) {
+    const sentence = `The best word for "${definition}" is ___.`;
+    const usage = `People can use "${word}" to mean ${definition}.`;
+    const phrase = `${word} in a short sentence`;
+    return {
+      unitId: unitIndex + 1,
+      word,
+      definition,
+      sentence,
+      usage,
+      phrase,
+      badPhrases: [`${word} the yesterday`, `${word} very table`, `${word} more answer`],
+      key: `u${unitIndex + 1}:${word}`,
+      itemIndex
+    };
+  }
+  const VOCAB_BANK = WORD_SETS.flatMap((set, unitIndex) => expandWordSet(set, unitIndex).map((item, itemIndex) => vocabEntry(item, unitIndex, itemIndex)));
   const readingCategories = [
     ["daily-life", "Daily Life", "near a small shop", [["receipt", "收據"], ["notice", "注意到"]]],
     ["conversation", "Conversation", "outside the classroom", [["message", "訊息"], ["reply", "回覆"]]],
@@ -344,24 +384,29 @@ window.EXAM_ENGINE = (() => {
     ["news", "News and Society", "at a town meeting", [["report", "報告"], ["public", "公共的"]]]
   ];
   const readingEvents = [
-    ["A Lost Card", "a card was missing", "checked the desk and asked one clear question", "the card was found before lunch"],
-    ["A Changed Plan", "the plan changed at the last minute", "read the new note twice", "everyone knew where to go"],
-    ["A Careful Choice", "two choices both looked useful", "compared the cost and the time", "the better choice became clear"],
-    ["A Small Mistake", "one number was written wrong", "looked at the old record", "the mistake was fixed quickly"],
-    ["A Kind Reminder", "several people forgot the same thing", "made a short reminder", "the group finished on time"],
-    ["A Rainy Morning", "rain made the morning harder", "packed the needed things early", "the day still went smoothly"],
-    ["A New Rule", "a new rule confused some people", "asked why the rule was needed", "the reason helped people follow it"],
-    ["A Quiet Problem", "the problem was not easy to see", "watched what happened for a few minutes", "the real cause was found"],
-    ["A Helpful Question", "no one was sure what to do next", "asked a simple question", "the answer saved time"],
-    ["A Better Way", "the old way took too long", "tried a smaller first step", "the work became easier"]
+    { title: "A Lost Card", problem: "a student card was missing after a busy morning", action: "checked the desk, read the last message, and asked one clear question", result: "the card was found inside a notebook before lunch", infer: "Careful checking solved the problem faster than guessing.", detail: "They checked the desk and read the last message.", distractors: ["A New Lunch Menu", "A Long Vacation", "A Phone for Sale"] },
+    { title: "A Changed Plan", problem: "the meeting place changed just before the group left", action: "read the new note twice and sent one short message to the team", result: "everyone arrived at the right place on time", infer: "A short message helped the whole group avoid confusion.", detail: "The new note was read twice before the message was sent.", distractors: ["A Broken Bike", "A Story about Pets", "A Free Ticket"] },
+    { title: "A Careful Choice", problem: "two choices both looked useful but the group had little time", action: "compared the cost, time, and number of people who needed help", result: "the better choice became clear without a long argument", infer: "The group used facts to make a fair choice.", detail: "They compared the cost, time, and number of people.", distractors: ["A Sports Day", "A Quiet Dinner", "A Lost Phone"] },
+    { title: "A Small Mistake", problem: "one number on a notice was written wrong", action: "looked at the old record and asked the office to check it", result: "the mistake was fixed before anyone followed the wrong time", infer: "Checking an old record prevented a larger problem.", detail: "The old record was used to check the number.", distractors: ["A New Game", "A Rainy Trip", "A Birthday Gift"] },
+    { title: "A Kind Reminder", problem: "several people forgot the same important step", action: "made a short reminder and put it where everyone could see it", result: "the group finished the work on time and thanked one another", infer: "A simple reminder can help people work together.", detail: "The reminder was placed where everyone could see it.", distractors: ["A Busy Store", "A Long Letter", "A Broken Window"] },
+    { title: "A Rainy Morning", problem: "heavy rain made the morning harder than usual", action: "packed the needed things early and checked the route before leaving", result: "the day still went smoothly even though the weather was poor", infer: "Planning ahead made the bad weather easier to handle.", detail: "The route was checked before leaving.", distractors: ["A Sunny Picnic", "A New Computer", "A Music Lesson"] },
+    { title: "A New Rule", problem: "a new rule confused people who did not know the reason", action: "asked why the rule was needed and explained it in plain words", result: "more people followed the rule because they understood it", infer: "People follow a rule more easily when they know its purpose.", detail: "The reason for the rule was explained in plain words.", distractors: ["A Fast Race", "A Lost Key", "A Cold Drink"] },
+    { title: "A Quiet Problem", problem: "the problem was small and not easy to notice at first", action: "watched what happened for a few minutes before changing anything", result: "the real cause was found and only a small fix was needed", infer: "Watching first kept the group from fixing the wrong thing.", detail: "They watched for a few minutes before changing anything.", distractors: ["A Loud Party", "A New Shirt", "A Train Ticket"] },
+    { title: "A Helpful Question", problem: "no one was sure what to do next", action: "asked a simple question that showed which fact was still missing", result: "the answer saved time and gave the group a clear next step", infer: "The right question can make a plan clearer.", detail: "The question showed which fact was still missing.", distractors: ["A Hard Test", "A Family Meal", "A Clean Room"] },
+    { title: "A Better Way", problem: "the old way took too long and made people tired", action: "tried a smaller first step and checked the result before doing more", result: "the work became easier and the group kept the better way", infer: "Testing a small change helped the group improve its work.", detail: "They tried a smaller first step before doing more.", distractors: ["A Dark Night", "A Pet Shop", "A Short Song"] }
   ];
-  const READING_BANK = readingCategories.flatMap(([category, label, place, glossary], categoryIndex) => readingEvents.map(([eventTitle, problem, action, result], eventIndex) => {
+  const READING_BANK = readingCategories.flatMap(([category, label, place, glossary], categoryIndex) => readingEvents.map((event, eventIndex) => {
     const person = names[(categoryIndex * 3 + eventIndex) % names.length];
     const friend = names[(categoryIndex * 5 + eventIndex + 7) % names.length];
     const id = `r${String(categoryIndex + 1).padStart(2, "0")}-${String(eventIndex + 1).padStart(2, "0")}`;
-    const title = `${label}: ${eventTitle}`;
-    const passage = `${person} met ${friend} ${place} on a busy morning. At first, ${problem}, so they did not rush to guess. ${person} ${action}, and ${friend} wrote down the important facts. After a short talk, ${result}. The two students learned that a calm question can turn a small problem into a clear plan.`;
-    return { id, category, title, passage, glossary };
+    const title = `${label}: ${event.title}`;
+    const passage = `${person} met ${friend} ${place} on a busy morning. They were working on a ${label.toLowerCase()} task when ${event.problem}. Instead of rushing to guess, ${person} ${event.action}. ${friend} wrote down the important facts so the team would not forget them. After a short talk, ${event.result}. The two students learned that a calm question and a clear plan can turn a small problem into useful action.`;
+    const questions = [
+      ["What is the best title for this passage?", title, event.distractors, "標題要涵蓋整篇文章的問題、行動與結果。", "comprehension"],
+      ["What can we infer from the passage?", event.infer, ["The students ignored the facts.", "The problem became worse after the talk.", "No one tried to understand the situation."], "推論必須由文章中採取的行動與結果支持。", "inquiry"],
+      ["Which detail best supports the answer?", event.detail, ["They met on a busy morning.", "Two students were in the story.", "The place was part of daily life."], "支持證據要能直接連到解題理由，而不是只選背景細節。", "inquiry"]
+    ];
+    return { id, category, title, passage, glossary, questions };
   }));
   function sentenceFrom(stem, choice) {
     return stem.includes("___") ? stem.replace("___", choice) : choice;
@@ -372,7 +417,7 @@ window.EXAM_ENGINE = (() => {
   function buildGrammarQuestion(r, seed, quizId, unitId, slot, difficulty) {
     const rules = RULES[unitId] || RULES[1];
     const form = GRAMMAR_FORMS[slot % GRAMMAR_FORMS.length];
-    const ruleIndex = (slot + Math.floor(slot / GRAMMAR_FORMS.length)) % rules.length;
+    const ruleIndex = (slot + Math.floor(slot / rules.length)) % rules.length;
     const selected = rules[ruleIndex];
     const c = ctx(seed, quizId, unitId, slot);
     const stem = fill(selected.text, c);
@@ -380,8 +425,8 @@ window.EXAM_ENGINE = (() => {
     const distractors = selected.distractors.map(choice => fill(choice, c));
     const correctSentence = sentenceFrom(stem, answer);
     const wrongSentences = distractors.map(choice => sentenceFrom(stem, choice));
-    const sentenceMode = ["correct-sentence", "natural-sentence", "standard-english", "order", "rewrite", "clear-meaning", "grammar-check", "edit"].includes(form[0]);
-    const text = form[1](stem);
+    const sentenceMode = !stem.includes("___") && ["correct-sentence", "natural-sentence", "standard-english", "order", "rewrite", "clear-meaning", "grammar-check", "edit"].includes(form[0]);
+    const text = quizId.startsWith("d") ? `${c.name}'s review note:\n${form[1](stem)}` : form[1](stem);
     const correct = sentenceMode ? correctSentence : answer;
     const choices = sentenceMode ? wrongSentences : distractors;
     const q = mc(
@@ -409,31 +454,31 @@ window.EXAM_ENGINE = (() => {
     return items[vocabSlot % items.length];
   }
   function vocabDistractors(unitId, target) {
-    return VOCAB_BANK.filter(item => item.unitId === unitId && item.word !== target.word).slice(0, 3);
+    return VOCAB_BANK.filter(item => item.unitId === unitId && item.word !== target.word).slice(0, 12);
   }
   function buildVocabQuestion(r, seed, quizId, unitId, vocabSlot, difficulty) {
     const target = vocabItem(unitId, vocabSlot);
     const form = VOCAB_FORMS[vocabSlot % VOCAB_FORMS.length];
     const others = vocabDistractors(unitId, target);
-    let text = `Which definition matches "${target.word}"?`;
+    let text = `Which answer best explains "${target.word}"?`;
     let correct = target.definition;
     let choices = others.map(item => item.definition);
-    if (form === "context") {
-      text = `Which word best fits the sentence?\nPlease use this word in a clear sentence: ___.`;
+    if (form === "meaning") {
+      text = `${target.definition}\nWhich word matches this meaning?`;
       correct = target.word;
       choices = others.map(item => item.word);
-    } else if (form === "form") {
-      text = `Which word belongs to the same word family as "${target.word}"?`;
+    } else if (form === "context") {
+      text = `${target.sentence}\nWhich word best fits the blank?`;
       correct = target.word;
       choices = others.map(item => item.word);
-    } else if (form === "collocation") {
-      text = `Which phrase uses "${target.word}" naturally?`;
-      correct = target.phrase;
-      choices = others.map(item => item.phrase);
+    } else if (form === "usage") {
+      text = `Which sentence uses "${target.word}" correctly?`;
+      correct = target.usage;
+      choices = others.map(item => item.usage.replaceAll(item.word, target.word));
     } else if (form === "phrase") {
-      text = `What does "${target.word}" mean in this unit?`;
-      correct = target.definition;
-      choices = others.map(item => item.definition);
+      text = `Which answer uses "${target.word}" correctly?`;
+      correct = `"${target.word}" can mean ${target.definition}.`;
+      choices = others.map(item => `"${target.word}" can mean ${item.definition}.`);
     }
     const q = mc(
       r,
@@ -441,7 +486,7 @@ window.EXAM_ENGINE = (() => {
       difficulty,
       text,
       correct,
-      uniqueChoices(choices, VOCAB_BANK.filter(item => item.word !== target.word).map(item => form === "collocation" ? item.phrase : form === "context" || form === "form" ? item.word : item.definition)),
+      uniqueChoices(choices, VOCAB_BANK.filter(item => item.word !== target.word).map(item => form === "meaning" || form === "context" ? item.word : item.definition)),
       [`「${target.word}」在本題中表示「${target.definition}」。`, `其他選項的英文解釋或用法和 ${target.word} 不相符。`],
       `先看題目要的是定義、語境、詞形還是搭配，再比較四個英文選項。`,
       `不要只看選項長得像不像；要確認它能不能放回句子或符合英文解釋。`,
@@ -465,11 +510,7 @@ window.EXAM_ENGINE = (() => {
     return [0, 1].flatMap(passageIndex => {
       const passage = generatedReading(seed, quizId, passageIndex);
       const unitId = unitIds[passageIndex % unitIds.length];
-      const rows = [
-        ["What is the best title for this passage?", passage.title, ["A New Lunch Menu", "A Long Vacation", "A Phone for Sale"], "標題要涵蓋整篇文章的問題、行動與結果。", "comprehension"],
-        ["What can we infer from the passage?", "The students solved the problem by checking facts first.", ["They guessed without reading.", "They left before the problem was solved.", "They asked someone else to do all the work."], "推論必須由文章中「先查證、再行動」的線索支持。", "inquiry"],
-        ["Which detail best supports the answer?", "They wrote down the important facts.", ["They met in the morning.", "The place was busy.", "The story has two students."], "支持證據要能直接連到解題理由，而不是背景細節。", "inquiry"]
-      ];
+      const rows = passage.questions;
       return rows.map((row, qi) => {
         const q = mc(r, unitId, REVIEW_READING_DIFFICULTIES[passageIndex * 3 + qi], row[0], row[1], row[2], [row[3]], "先看題目，再回文章找直接證據。", "閱讀題以文章線索為準，不用外部猜測。", "常見錯誤是只抓到背景細節，沒有找能支持答案的句子。", "本題檢查閱讀理解與情境判斷。", "中文翻譯重點：先確認問題，再用文章證據作答。");
         q.ability = row[4];
@@ -573,6 +614,16 @@ window.EXAM_ENGINE = (() => {
     REVIEW_GRAMMAR_COUNT,
     REVIEW_VOCAB_COUNT,
     REVIEW_READING_COUNT,
+    VOCAB_BANK_META: VOCAB_BANK.map(item => ({
+      unitId: item.unitId,
+      word: item.word,
+      definition: item.definition,
+      sentence: item.sentence,
+      usage: item.usage,
+      phrase: item.phrase,
+      badPhrases: item.badPhrases,
+      key: item.key
+    })),
     READING_BANK_SIZE: READING_BANK.length,
     READING_CATEGORY_COUNTS: countBy(READING_BANK, item => item.category),
     READING_BANK_META: READING_BANK.map(item => ({

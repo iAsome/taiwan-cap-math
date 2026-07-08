@@ -173,7 +173,7 @@
     if (state.vocabData || state.vocabLoading) return state.vocabData;
     state.vocabLoading = true;
     try {
-      const res = await fetch(`vocab-3000.json?v=20260709s`);
+      const res = await fetch(`vocab-3000.json?v=20260709t`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       state.vocabData = await res.json();
       return state.vocabData;
@@ -653,7 +653,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     }).join("")}</dl>` : "";
     return `<section class="reading-passage" aria-label="Passage ${q.readingGroup}">
       <p class="passage-kicker">Passage ${q.readingGroup}</p>
-      <h3>${esc(q.readingTitle || `Passage ${q.readingGroup}`)}</h3>
+      <h3>Passage ${q.readingGroup}</h3>
       <p>${passage}</p>
       ${glossaryHtml}
     </section>`;

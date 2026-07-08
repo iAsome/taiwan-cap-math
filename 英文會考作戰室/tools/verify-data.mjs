@@ -26,6 +26,17 @@ const forbiddenMarkers = [
   "中文" + "意思"
 ];
 const removedExports = ["vocab" + "Coverage", "generate" + "VocabSlot"];
+const redundantPromptMarkers = [
+  "Choose the " + "best answer.",
+  "Complete the " + "sentence.",
+  "Choose the standard " + "English sentence.",
+  "Read and choose the " + "best answer.",
+  "Choose the correct " + "form.",
+  "Choose the correct word " + "choice.",
+  "Choose the sentence with the correct " + "tense.",
+  "Choose the correct " + "usage."
+];
+const badVocabMarkers = ["Please use this word in a clear " + "sentence", " in " + "context"];
 const quizSeeds = [1, 12345, 999999, 777777];
 const itemPrefixPattern = /\bItem\s+[A-Z0-9-]+:/;
 const chinesePattern = /[\u3400-\u9FFF]/;
@@ -87,6 +98,16 @@ const oldVocabQuizScript = "vocab-" + "quiz-data.js";
 check(!/const\s+nl\s*=\s*value\s*=>\s*FRACTION_MARKUP\.renderMath/.test(appSource), "English handbook nl() must not render math fractions.");
 check(!indexSource.includes(oldVocabQuizScript), "English quizzes must not load the old vocab quiz data file.");
 removedExports.forEach(name => check(!(name in EXAM_ENGINE), `EXAM_ENGINE must not export ${name}.`));
+const readingRenderer = appSource.slice(appSource.indexOf("function readingPassageHtml"), appSource.indexOf("function solutionHtml"));
+check(!readingRenderer.includes("readingTitle"), "Reading passage UI must not render the real readingTitle.");
+check(Array.isArray(EXAM_ENGINE.VOCAB_BANK_META) && EXAM_ENGINE.VOCAB_BANK_META.length === 600, `English vocab target bank should expose 600 entries, got ${EXAM_ENGINE.VOCAB_BANK_META?.length}.`);
+const vocabCounts = countBy(EXAM_ENGINE.VOCAB_BANK_META || [], item => item.unitId);
+unitIds.forEach(id => check(vocabCounts[id] === 30, `English vocab unit ${id} should contain 30 target words, got ${vocabCounts[id] || 0}.`));
+(EXAM_ENGINE.VOCAB_BANK_META || []).forEach(item => {
+  check(item.word && item.definition && item.sentence && item.usage && item.phrase && item.key, `Vocab target ${item.key || item.word} missing required data.`);
+  check(Array.isArray(item.badPhrases) && item.badPhrases.length >= 3, `Vocab target ${item.key || item.word} needs 3 bad phrase distractors.`);
+  badVocabMarkers.forEach(marker => check(![item.sentence, item.usage, item.phrase, ...item.badPhrases].join("\n").includes(marker), `Vocab target ${item.key} contains placeholder marker "${marker}".`));
+});
 check(EXAM_ENGINE.READING_BANK_SIZE === 100, `English reading bank should contain 100 passages, got ${EXAM_ENGINE.READING_BANK_SIZE}.`);
 check(Object.keys(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).length === 10, "English reading bank should cover 10 scenario categories.");
 Object.entries(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).forEach(([category, count]) => check(count === 10, `English reading category ${category} should contain 10 passages, got ${count}.`));
@@ -132,8 +153,8 @@ const vocabAllowlist = new Set([
   "clue", "clues", "detail", "evidence", "infer", "passage", "paragraph", "reader", "readers", "strategy", "title",
   "bought", "brought", "built", "caught", "eaten", "felt", "forgot", "gone", "kept", "lent", "lost", "rang", "saw", "sold", "spoken", "told", "went", "were", "wrote", "written",
   "although", "an", "arrived", "b", "became", "best", "better", "bike", "bore", "bores", "broken", "changed", "chose", "closed", "communicate", "communication", "compared", "conclusion", "confused", "decided", "earlier", "effect", "effected", "fell", "forever", "found", "function", "functions", "grammatical", "grammatically", "heavier", "heaviest", "inference", "knew", "lived", "lowered", "luckily", "mine", "moved", "mystery", "okay", "prefix", "probably", "product", "reduce", "reduction", "refer", "relieved", "reusable", "reuse", "schedule", "shown", "suddenly", "suffix", "tone", "took", "tv", "uncertain", "understood", "used", "wondered",
-  "advice", "cigarette", "clause", "condition", "connect", "container", "context", "contrast", "definition", "device", "dialogue", "done", "easier", "feathers", "given", "harmful", "matches", "met", "musical", "personality", "phrase", "reply", "respectful", "rewrite", "routine", "saved", "set", "simplest", "solved", "standard", "tag", "tense", "unit", "usage",
-  "choice", "customer", "delay", "local", "made", "message", "notice", "online", "public", "receipt", "route", "share", "smoothly", "volunteer",
+  "advice", "argument", "cigarette", "clause", "condition", "connect", "container", "context", "contrast", "definition", "device", "dialogue", "done", "easier", "easily", "feathers", "gave", "given", "harmful", "ignored", "larger", "matches", "met", "musical", "personality", "phrase", "placed", "prevented", "related", "reply", "respectful", "rewrite", "routine", "said", "saved", "sent", "set", "simplest", "situation", "solved", "standard", "tag", "task", "tense", "them", "unit", "usage", "whom", "worse",
+  "choice", "confusion", "customer", "delay", "displeasure", "instead", "local", "made", "message", "notice", "online", "public", "receipt", "route", "share", "smoothly", "volunteer",
   "watchs", "delicion", "wellly", "difficulter", "interestinger", "happilyness", "teacherly", "movemently"
 ]);
 function addBasicWord(raw) {
@@ -223,6 +244,11 @@ for (const seed of quizSeeds) {
       formKeys.add(q.questionFormKey);
       const face = questionFaceText(q);
       check(!chinesePattern.test(face), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} question/choices must be English-only.`);
+      redundantPromptMarkers.forEach(marker => check(!q.text.startsWith(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} starts with redundant prompt "${marker}".`));
+      badVocabMarkers.forEach(marker => check(!face.includes(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} contains placeholder marker "${marker}".`));
+      if (q.text.includes("___")) {
+        check(q.choices.every(choice => !choice.includes("___") && choice.length <= 32), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} blank choices should be short answer fragments.`);
+      }
       const explanation = explanationText(q);
       check(chinesePattern.test(explanation), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} explanation must include Chinese reasoning/translation.`);
       if (q.targetKey) {
