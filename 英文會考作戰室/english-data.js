@@ -260,6 +260,259 @@ window.ENGLISH_DATA = (() => {
     }
   ];
 
+  const handbookEnhancements = {
+    1: {
+      core: " 補充：考題常把習慣與當下動作放在同一句中，例如 usually...but today...。先切開兩個時間線索，不要用同一個時態處理整句。",
+      clarify: " 另一個常見誤會是把 right now 看成『現在』就選現在簡單式；right now 強調正在進行，所以要有 be 動詞與 V-ing，缺一個都不完整。",
+      derivation: " 小考常把同一個動詞放成 walks / walk / is walking / walked。這不是考單字意思，而是考你能不能用時間線索和主詞判斷動詞形式。",
+      steps: ["看到 usually, often, every day 時，再檢查主詞是否為 he/she/it 或單數名詞。", "看到 now, right now, Look! 時，答案必須同時有 be 動詞和 V-ing。"],
+      tips: ["若句子有 but today，but 前後通常是不同時間概念。", "know, like, want, need 這類狀態動詞通常不用現在進行式。"],
+      examples: [
+        { sentence: "Look! Amy is carrying a bag right now.", note: "翻譯：你看！Amy 現在正拿著一個包包。正確原因：Look 和 right now 表示正在發生，要用 is carrying。錯誤原因：carries 只表示習慣，不能表達眼前正在做。" },
+        { sentence: "Ben usually walks to school, but today he is taking the bus.", note: "翻譯：Ben 通常走路上學，但今天他正在搭公車。正確原因：usually 用 walks，today 的當下行動用 is taking。錯誤原因：兩個分句不能硬套同一時態。" },
+        { sentence: "I know the answer.", note: "翻譯：我知道答案。正確原因：know 是狀態動詞，一般不用 am knowing。錯誤原因：不要看到現在情境就自動選 V-ing。" }
+      ]
+    },
+    2: {
+      core: " 補充：過去式題目先看時間是否已結束；未來式題目先看是臨時決定、預測、計畫，還是眼前證據。",
+      clarify: " will 和 be going to 都能談未來，但線索不同。電話響了才說 I will answer it 是臨時決定；看到黑雲才說 It is going to rain 是根據證據判斷。",
+      derivation: " 小考會把 buyed, goed 這類錯誤放進選項，目的不是刁難拼字，而是確認你知道常見不規則動詞不能套 -ed。",
+      steps: ["看到 did 或 didn't，後面的主要動詞要回原形。", "看到 last night, yesterday, two days ago，先排除現在式和未來式。"],
+      tips: ["will 常用於說話當下決定或一般預測。", "be going to 常用於已計畫或有明顯跡象的未來。"],
+      examples: [
+        { sentence: "Mina bought a new notebook yesterday.", note: "翻譯：Mina 昨天買了一本新筆記本。正確原因：yesterday 是已結束過去時間，buy 的過去式是 bought。錯誤原因：buyed 不是標準過去式。" },
+        { sentence: "A: The phone is ringing. B: I will answer it.", note: "翻譯：電話響了。我來接。正確原因：說話當下才決定，用 will answer。錯誤原因：am going to answer 會像事先計畫。" },
+        { sentence: "Look at the dark sky. It is going to rain.", note: "翻譯：看看暗暗的天空，快要下雨了。正確原因：眼前有證據，用 be going to。錯誤原因：will rain 較不像根據眼前跡象。" }
+      ]
+    },
+    3: {
+      core: " 補充：現在完成式的重點不是『以前』，而是過去和現在有關。問經驗、結果、持續到現在，都常用 have/has + p.p.。",
+      clarify: " yesterday, last year 這類明確過去時間點會把句子拉回過去簡單式；since 2019 雖然有年份，卻表示從那時到現在，所以仍可用現在完成式。",
+      derivation: " 會考選項常混入 for/since 和 already/yet。判斷時先看後面是時間長度還是起點，再看句子是肯定、否定或疑問。",
+      steps: ["看到 since + 時間起點，用現在完成式的機會很高。", "看到 yesterday 或 last night，除非是背景說明，通常不要選現在完成式。"],
+      tips: ["for three years 是一段時間，since 2020 是起點。", "Have you ever...? 問人生經驗，不是問某個確切過去時間。"],
+      examples: [
+        { sentence: "Kelly has lived here since 2020.", note: "翻譯：Kelly 從 2020 年起就住在這裡。正確原因：since 2020 表示持續到現在，用 has lived。錯誤原因：不要因為看到年份就自動選過去式。" },
+        { sentence: "I saw that movie last night.", note: "翻譯：我昨晚看了那部電影。正確原因：last night 是明確過去時間，用 saw。錯誤原因：have seen 不和 last night 直接搭配。" },
+        { sentence: "Have you ever visited the museum?", note: "翻譯：你曾經去過那間博物館嗎？正確原因：ever 問經驗，用 Have you visited。錯誤原因：Did you ever 在本講義不作為主要會考標準型。" }
+      ]
+    },
+    4: {
+      core: " 補充：情態助動詞題目常考語氣差異，不只考形式。must not 是禁止，do not have to 是不必，should 是建議，must be 是高度推測。",
+      clarify: " must 有兩種常見意思：You must finish it. 是義務；He must be tired. 是推測。判斷前要先看句子有沒有證據線索。",
+      derivation: " 選項若出現 should to, must goes, can taking，通常是故意測你是否記得情態助動詞後接原形動詞。",
+      steps: ["先問句意是能力、許可、義務、建議，還是推測。", "再檢查情態助動詞後面是不是原形動詞。"],
+      tips: ["must not = 禁止；do not have to = 沒必要。", "may/might 比 must 的把握程度低。"],
+      examples: [
+        { sentence: "You must not use your phone here.", note: "翻譯：你不可以在這裡用手機。正確原因：must not 表示禁止。錯誤原因：do not have to 只是不必，沒有禁止意思。" },
+        { sentence: "You do not have to come early.", note: "翻譯：你不必早到。正確原因：do not have to 表示沒有必要。錯誤原因：must not come early 會變成禁止早到。" },
+        { sentence: "Nick has studied all day. He must be tired.", note: "翻譯：Nick 讀了一整天，他一定累了。正確原因：前句提供強證據，用 must be 推測。錯誤原因：can be 在肯定推測中不是本單元目標用法。" }
+      ]
+    },
+    5: {
+      core: " 補充：名詞題要同時判斷可數性、限定性和代名詞角色。不能只看中文能不能說『一個』。",
+      clarify: " information, homework, advice 在英文常作不可數名詞。若要表達一則資訊或一項建議，通常要用 a piece of，不是直接加 a 或 -s。",
+      derivation: " 代名詞題常把 he/him/his/hers 混在一起。看空格在主詞、受詞、所有格，會比翻中文快。",
+      steps: ["先確認空格是不是名詞；若是名詞，再判斷可數或不可數。", "看到介系詞 for, to, with 後面，代名詞通常要用受格。"],
+      tips: ["第一次提到可數單數名詞常用 a/an，再次提到才常用 the。", "hers, mine, yours 可單獨使用，後面不再接名詞。"],
+      examples: [
+        { sentence: "Can you give me some advice?", note: "翻譯：你可以給我一些建議嗎？正確原因：advice 是不可數名詞，用 some advice。錯誤原因：advices 或 an advice 都不標準。" },
+        { sentence: "This gift is for him.", note: "翻譯：這份禮物是給他的。正確原因：for 是介系詞，後面用受格 him。錯誤原因：he 是主格，不能放在 for 後面。" },
+        { sentence: "That notebook is hers.", note: "翻譯：那本筆記本是她的。正確原因：hers 可單獨當所有格代名詞。錯誤原因：her's 不是標準寫法。" }
+      ]
+    },
+    6: {
+      core: " 補充：形容詞回答『什麼樣的』，副詞回答『怎麼做』或修飾程度。連綴動詞後面是在描述主詞，所以用形容詞。",
+      clarify: " good 和 well 最容易混：good 多半是形容詞；well 常當副詞。但 well 也可表示身體狀況好，需靠句意判斷。",
+      derivation: " 會考常放 fastly, goodly, tiredly 這類看似照規則加 -ly 的錯字，真正考點是詞性功能，不是死背字尾。",
+      steps: ["先找被修飾的字：修飾名詞用形容詞，修飾動作用副詞。", "遇到 look, feel, sound, smell, taste，先檢查是不是連綴動詞。"],
+      tips: ["fast, hard, late 的形容詞和副詞同形。", "hardly 是幾乎不，不是努力地。"],
+      examples: [
+        { sentence: "The soup smells good.", note: "翻譯：這湯聞起來很好。正確原因：smells 是連綴動詞，後面用形容詞 good。錯誤原因：well 不用來描述湯的味道。" },
+        { sentence: "Ruby finished the work carefully.", note: "翻譯：Ruby 小心地完成工作。正確原因：carefully 修飾 finished 這個動作。錯誤原因：careful 是形容詞，不能直接修飾動詞。" },
+        { sentence: "Henry runs fast.", note: "翻譯：Henry 跑得快。正確原因：fast 可當副詞。錯誤原因：fastly 不是這個意思的標準用法。" }
+      ]
+    },
+    7: {
+      core: " 補充：比較級題目先看有沒有 than；最高級題目常有 the 或範圍 in/of。as...as 中間永遠放原級。",
+      clarify: " more 和 -er 不能同時使用。more taller, more cleaner 都是雙重比較錯誤；longer words usually use more, but short words often use -er。",
+      derivation: " 選項設計常把比較級、最高級、原級混在一起。先判斷句型需要哪一級，再處理拼字。",
+      steps: ["看到 than，優先找比較級。", "看到 as...as，先排除所有比較級和最高級。"],
+      tips: ["good/better/best 和 bad/worse/worst 要獨立記。", "the most important 中的 most 已經表示最高級，不再加 -est。"],
+      examples: [
+        { sentence: "This question is more difficult than that one.", note: "翻譯：這題比那題更難。正確原因：difficult 較長，用 more difficult。錯誤原因：difficulter 不是標準形式。" },
+        { sentence: "This bag is as heavy as that one.", note: "翻譯：這個包和那個一樣重。正確原因：as...as 中間用原級 heavy。錯誤原因：heavier 不能放在 as...as 中間。" },
+        { sentence: "Mina is the tallest student in her class.", note: "翻譯：Mina 是班上最高的學生。正確原因：the 和 in her class 指向最高級。錯誤原因：taller 只表示兩者比較。" }
+      ]
+    },
+    8: {
+      core: " 補充：介系詞題不是翻譯『在』，而是看時間單位、空間概念或固定搭配。到達動詞 reach 和 arrive 的結構不同。",
+      clarify: " arrive 後若接地點，常要 at/in；reach 後直接接地點。不要說 reach to Taipei，也不要說 arrive Taipei。",
+      derivation: " in/on/at 的判斷可用範圍大小：in 用較大時間或空間，on 用日期/表面，at 用精確點。",
+      steps: ["先判斷空格後面是時間、地點，還是固定片語。", "若是動詞搭配，直接檢查動詞需要的介系詞，不用硬翻中文。"],
+      tips: ["at seven, on Monday, in July 是基本組合。", "on the bus 但 in the car 是常見交通工具搭配。"],
+      examples: [
+        { sentence: "We will meet on Monday.", note: "翻譯：我們星期一會見面。正確原因：星期幾用 on。錯誤原因：at Monday 和 in Monday 都不標準。" },
+        { sentence: "The train will reach Taipei Station at nine.", note: "翻譯：火車九點會抵達台北車站。正確原因：reach 直接接地點。錯誤原因：reach to 多了不該有的 to。" },
+        { sentence: "They arrived at the airport early.", note: "翻譯：他們很早抵達機場。正確原因：arrive 接點狀地點常用 at。錯誤原因：arrived the airport 少了介系詞。" }
+      ]
+    },
+    9: {
+      core: " 補充：連接詞題先看兩個子句的邏輯關係，再看能不能放在該位置。中文可以說『因為...所以』，英文同一句通常不要 because...so 重複標記。",
+      clarify: " although 和 but 都表轉折，但通常不要在同一組主從句中一起使用。Because it rained, we stayed home. 和 It rained, so we stayed home. 都可以，但不要混成 because...so。",
+      derivation: " 從屬連接詞會讓一個子句依附另一個子句；對等連接詞連接兩個地位相等的部分。這會影響逗號和句子完整性。",
+      steps: ["先判斷是原因、結果、讓步、條件還是時間。", "檢查一個句子裡是否已經有同功能連接詞，避免重複。"],
+      tips: ["if 表條件，不等於 when。", "while 可表同時，也可表對比，要看上下文。"],
+      examples: [
+        { sentence: "Because it rained, we stayed home.", note: "翻譯：因為下雨，我們待在家。正確原因：because 引導原因子句。錯誤原因：後面不再加 so。" },
+        { sentence: "It rained, so we stayed home.", note: "翻譯：下雨了，所以我們待在家。正確原因：so 連接結果。錯誤原因：前面不再加 because。" },
+        { sentence: "Although Tina was tired, she kept working.", note: "翻譯：雖然 Tina 很累，她還是繼續工作。正確原因：although 已表讓步。錯誤原因：主要子句前不用再加 but。" }
+      ]
+    },
+    10: {
+      core: " 補充：動名詞和不定詞常由前面的動詞或介系詞決定。不要只靠中文『去做』判斷 to V。",
+      clarify: " enjoy, finish, practice 後常接 V-ing；want, hope, decide, plan 後常接 to V。介系詞後若接動詞，幾乎一律用 V-ing。",
+      derivation: " remember, forget, stop 這類動詞接 V-ing 或 to V 時意思會變，題目通常會用情境句測你是否看懂。",
+      steps: ["先找控制空格的前一個字：動詞、介系詞或句型。", "若空格在句首當主詞，V-ing 通常比原形動詞自然。"],
+      tips: ["decide to leave，不是 decide leaving。", "be interested in learning，不是 interested in to learn。"],
+      examples: [
+        { sentence: "Ella enjoys reading stories.", note: "翻譯：Ella 喜歡讀故事。正確原因：enjoy 後接 V-ing。錯誤原因：enjoy to read 不是本單元標準搭配。" },
+        { sentence: "They decided to leave early.", note: "翻譯：他們決定早點離開。正確原因：decide 後接 to V。錯誤原因：decided leaving 不符合搭配。" },
+        { sentence: "Learning English takes time.", note: "翻譯：學英文需要時間。正確原因：動詞片語當主詞時可用 V-ing。錯誤原因：Learn English takes time 缺少名詞化形式。" }
+      ]
+    },
+    11: {
+      core: " 補充：被動語態只在主詞承受動作時使用。先確認動詞能不能有受詞，再選 be 動詞時態和 p.p.。",
+      clarify: " happen, arrive, disappear 這類不及物動詞沒有受詞可變成被動主詞，所以 was happened, was arrived 都是錯誤。",
+      derivation: " 被動式不是把動詞變過去式而已；完整結構是 be + p.p.。時態放在 be 上，主要動詞維持 p.p.。",
+      steps: ["先找主詞是做動作的人，還是承受動作的物。", "若需要被動，再依時間選 is/are/was/were/will be。"],
+      tips: ["by + 人 可以說明動作者，但常可省略。", "情態助動詞被動是 modal + be + p.p.。"],
+      examples: [
+        { sentence: "The window was broken by the wind.", note: "翻譯：窗戶被風吹破了。正確原因：window 承受 broken，用 was broken。錯誤原因：broke by the wind 少了被動 be。" },
+        { sentence: "English is spoken in many countries.", note: "翻譯：許多國家使用英文。正確原因：English 承受 speak，用 is spoken。錯誤原因：speaks 會變成 English 自己說話。" },
+        { sentence: "The accident happened yesterday.", note: "翻譯：事故昨天發生。正確原因：happen 是不及物動詞，不用被動。錯誤原因：was happened 是常見錯誤。" }
+      ]
+    },
+    12: {
+      core: " 補充：問句題看助動詞系統。be 動詞、情態助動詞可以直接移到前面；一般動詞要借 do/does/did。",
+      clarify: " 附加問句不是固定加 do you。它要和主要子句的助動詞、時態、主詞一致，且前肯定後否定、前否定後肯定。",
+      derivation: " did, does 已經承擔時態或三單，所以後面的主要動詞要回原形。這就是 Did she go? 而不是 Did she went?。",
+      steps: ["先看句中是否已有 be 動詞或情態助動詞。", "附加問句先判斷主要子句肯定或否定，再選相反極性。"],
+      tips: ["There is... 的附加問句用 isn't there。", "I am... 的附加問句常用 aren't I。"],
+      examples: [
+        { sentence: "Does Wendy like coffee?", note: "翻譯：Wendy 喜歡咖啡嗎？正確原因：第三人稱單數一般動詞問句用 Does + 原形。錯誤原因：Does Wendy likes 多了 -s。" },
+        { sentence: "Your brother can swim, can't he?", note: "翻譯：你哥哥會游泳，不是嗎？正確原因：主要子句有 can，附加問句也用 can。錯誤原因：doesn't he 不符合助動詞。" },
+        { sentence: "You haven't finished it, have you?", note: "翻譯：你還沒完成，對嗎？正確原因：前面是否定，後面用肯定 have you。錯誤原因：haven't you 會變成同極性。" }
+      ]
+    },
+    13: {
+      core: " 補充：關係子句題先找先行詞，再判斷關係代名詞在子句中當主詞、受詞或所有格。",
+      clarify: " what 不是拿來接在明確先行詞後面的關係代名詞。The book what I read 是錯誤；可用 the book that I read。",
+      derivation: " that 不能用在逗號後的非限定子句，也不能接在介系詞後面。看到逗號或介系詞，要特別小心。",
+      steps: ["先行詞是人，優先考慮 who/whom/that。", "先行詞是物，優先考慮 which/that；若表示所有，考慮 whose。"],
+      tips: ["關係代名詞作受詞時，正式度和省略可能性要看句型。", "whose 後面直接接名詞，不再加 his/her/its。"],
+      examples: [
+        { sentence: "The woman who called you is my aunt.", note: "翻譯：打電話給你的那位女士是我阿姨。正確原因：先行詞是人，who 在子句中當主詞。錯誤原因：which 不指人。" },
+        { sentence: "This is the book that I told you about.", note: "翻譯：這就是我跟你說過的那本書。正確原因：book 是物，可用 that。錯誤原因：what 不能接在 book 後。" },
+        { sentence: "Mr. Lin, who teaches math, is kind.", note: "翻譯：教數學的林老師很親切。正確原因：逗號補充說明用 who。錯誤原因：非限定用法不用 that。" }
+      ]
+    },
+    14: {
+      core: " 補充：假設語氣不是所有 if 都要用。先判斷是真實條件，還是與現在/過去事實相反。",
+      clarify: " If it rains, I will stay home. 是真實條件，不是本單元的假設語氣。If I were you, I would ask for help. 才是與現在事實相反。",
+      derivation: " 假設語氣的時態往後退，是為了表達距離真實較遠，不是單純表示過去。",
+      steps: ["先問這件事有沒有可能真的發生。", "與過去事實相反時，if 子句用 had + p.p.，主要子句用 would have + p.p.。"],
+      tips: ["If I were you 是固定高頻句型。", "不要在 if 子句中使用 would 表示過去假設條件。"],
+      examples: [
+        { sentence: "If I were you, I would call the teacher.", note: "翻譯：如果我是你，我會打給老師。正確原因：與現在事實相反，用 were 和 would。錯誤原因：If I was you 在會考標準句型中不作首選。" },
+        { sentence: "If Sam had left earlier, he would have caught the bus.", note: "翻譯：如果 Sam 早點出門，他就會趕上公車。正確原因：與過去事實相反，用 had left / would have caught。錯誤原因：will catch 不符合過去假設。" },
+        { sentence: "If it rains tomorrow, we will stay home.", note: "翻譯：如果明天下雨，我們會待在家。正確原因：這是真實條件句，用現在式 + will。錯誤原因：不要把所有 if 都改成 were 或 had p.p.。" }
+      ]
+    },
+    15: {
+      core: " 補充：主旨題不是問哪個選項出現過，而是問哪個選項能涵蓋全文。太細、太廣、偏離目的都要刪。",
+      clarify: " 最佳標題通常要同時符合文章主題和範圍。只抓一個細節字，例如 bus 或 lunch，常會選到太窄的選項。",
+      derivation: " 閱讀題常用不同字重述同一概念。不要只找一模一樣的字，要看整段在做什麼。",
+      steps: ["先讀第一段和最後一段，抓作者目的。", "選項若只對應一個例子，通常不是主旨。"],
+      tips: ["通知、廣告、書信先看目的句。", "標題題要避免只漂亮但不涵蓋全文的選項。"],
+      examples: [
+        { sentence: "A notice tells students to bring water, wear a hat, and meet at seven. The best title is A Trip Plan.", note: "翻譯：通知要求學生帶水、戴帽子、七點集合，最佳標題是旅行計畫。正確原因：A Trip Plan 能涵蓋所有細節。錯誤原因：Bring Water 只抓一個細節。" },
+        { sentence: "A passage gives three ways to save money at school.", note: "翻譯：文章提供三個在學校省錢的方法。正確原因：主旨應涵蓋 three ways 和 save money。錯誤原因：只選 lunch 或 notebooks 會太窄。" },
+        { sentence: "The writer asks readers to clean the park together.", note: "翻譯：作者請讀者一起清理公園。正確原因：這類文章主旨常是目的或呼籲。錯誤原因：不要只選文中提到的某個工具。" }
+      ]
+    },
+    16: {
+      core: " 補充：推論題要比細節多一步，但不能離開文章。代名詞題要把選項代回去，確認文法和語意都通。",
+      clarify: " infer 不是猜作者沒寫的背景知識，而是根據線索得到合理結論。tone 題要看情緒詞、標點和事件結果。",
+      derivation: " 會考常放『聽起來合理但文中沒證據』的選項。只要文章不能支持，就要刪掉。",
+      steps: ["推論題先畫出支持答案的原文線索。", "代名詞題先看單複數，再看語意是否合理。"],
+      tips: ["probably, likely 常出現在推論答案。", "直接抄原文的選項常是細節，不一定是推論。"],
+      examples: [
+        { sentence: "Mia missed the bus, so she arrived late.", note: "翻譯：Mia 錯過公車，所以她遲到了。正確原因：可推論她可能很急或擔心。錯誤原因：不能推論她討厭公車，文章沒有證據。" },
+        { sentence: "Sam left his phone at the restaurant, so he went back to get it.", note: "翻譯：Sam 把手機留在餐廳，所以回去拿它。正確原因：it 指 his phone，代回去語意通順。錯誤原因：restaurant 是地點，不能用 get it 指餐廳。" },
+        { sentence: "Luckily, the ticket was still in my bag!", note: "翻譯：幸好票還在我的包包裡！正確原因：Luckily 和驚嘆號顯示鬆一口氣。錯誤原因：angry 與語氣不合。" }
+      ]
+    },
+    17: {
+      core: " 補充：本單元重點是用法與搭配，不是背中文意思。borrow/lend, bring/take, arrive/reach 都要看方向和結構。",
+      clarify: " borrow 是借入，lend 是借出；bring 是帶來，take 是帶走。方向錯了，即使中文都像『帶』或『借』，英文也會錯。",
+      derivation: " 會考會用生活情境讓你判斷誰給誰、東西往哪裡移動、動作是否到達地點。",
+      steps: ["先找說話者和物品移動方向。", "再看動詞後面是否需要 from, to, at, in 等介系詞。"],
+      tips: ["borrow something from someone；lend someone something。", "bring it here；take it there。"],
+      examples: [
+        { sentence: "May I borrow your dictionary?", note: "翻譯：我可以借你的字典嗎？正確原因：主詞 I 是借入的人，用 borrow。錯誤原因：lend 是借出給別人。" },
+        { sentence: "Can you lend me a pencil?", note: "翻譯：你可以借我一枝鉛筆嗎？正確原因：you 是借出的人，用 lend。錯誤原因：borrow me 不符合方向。" },
+        { sentence: "Please bring your notebook to class.", note: "翻譯：請把你的筆記本帶來上課。正確原因：移動方向朝向課堂，用 bring。錯誤原因：take 較像帶離說話者所在處。" }
+      ]
+    },
+    18: {
+      core: " 補充：情緒形容詞看主詞是感受者還是造成感受的來源；個性形容詞看行為證據，不是看單字感覺。",
+      clarify: " bored 是人感到無聊，boring 是事物令人無聊。同一規則也適用 confused/confusing, excited/exciting, interested/interesting。",
+      derivation: " 人物特質題常不直接說 kind 或 generous，而是描述行為。答案要能被行為支持。",
+      steps: ["先找情緒是誰感受到的。", "個性題先找具體行為，再選能概括該行為的形容詞。"],
+      tips: ["-ed 多用於感受者；-ing 多用於造成感受的事物。", "選個性形容詞時先排除正負方向相反的選項。"],
+      examples: [
+        { sentence: "The story was boring, so I felt bored.", note: "翻譯：這故事很無聊，所以我覺得無聊。正確原因：story 造成感受用 boring，人感受用 bored。錯誤原因：兩個字不能互換。" },
+        { sentence: "Amy shares food with classmates. She is generous.", note: "翻譯：Amy 會和同學分享食物，她很慷慨。正確原因：分享行為支持 generous。錯誤原因：stingy 與行為相反。" },
+        { sentence: "The directions were confusing, and we were confused.", note: "翻譯：指示令人困惑，我們感到困惑。正確原因：directions 用 confusing，人用 confused。錯誤原因：只看 -ing 字尾會誤判。" }
+      ]
+    },
+    19: {
+      core: " 補充：科技、環境、健康主題常考詞性和搭配。affect/effect 要先看句子需要動詞還是名詞。",
+      clarify: " affect 是動詞，effect 多半是名詞。can affect 後面接受影響的人事物；the effect of... 則是名詞片語。",
+      derivation: " reduce/reuse/recycle 是處理順序，不只是三個環保單字。健康題常用 enough, balanced, regularly 判斷正負習慣。",
+      steps: ["先判斷空格位置需要名詞、動詞、形容詞還是副詞。", "主題字若長得像，回到句子結構判斷，不靠發音猜。"],
+      tips: ["can 後面要接原形動詞，所以 can affect。", "the effect of pollution 中 effect 是名詞。"],
+      examples: [
+        { sentence: "Air pollution can affect people's health.", note: "翻譯：空氣汙染會影響人們的健康。正確原因：can 後需要動詞，用 affect。錯誤原因：effect 通常是名詞，不能放在 can 後當動詞目標。" },
+        { sentence: "The effect of sleep is clear.", note: "翻譯：睡眠的效果很明顯。正確原因：the effect 是名詞片語。錯誤原因：affect 不能放在 the 後當名詞。" },
+        { sentence: "We should reduce waste before we recycle it.", note: "翻譯：回收前，我們應先減少垃圾。正確原因：reduce 是源頭減少。錯誤原因：recycle 不是環保處理的第一步。" }
+      ]
+    },
+    20: {
+      core: " 補充：構詞猜字先看字首字尾提供的方向，再回到上下文確認。不要只因為看到熟字根就直接選答案。",
+      clarify: " un-, in-, dis- 常表示否定；-tion, -ment, -ness 常形成名詞；-ful 和 -less 常形成形容詞，方向相反。",
+      derivation: " 猜字題不是要求精準翻譯，而是判斷大方向、詞性和句中角色。上下文的 but, however, because 常提供修正線索。",
+      steps: ["先判斷字首是否改變正負方向。", "再用字尾判斷詞性，最後代回句子檢查語意。"],
+      tips: ["-ly 多半提示副詞，但 friendly 是形容詞，不能只看字尾。", "遇到生字先求大意，不要卡在完整中文翻譯。"],
+      examples: [
+        { sentence: "The word unhappy means not happy.", note: "翻譯：unhappy 表示不快樂。正確原因：un- 常表示 not。錯誤原因：不能只看到 happy 就選正面意思。" },
+        { sentence: "Good communication helps a team.", note: "翻譯：良好的溝通能幫助團隊。正確原因：-tion 常形成名詞，communication 在句中當主詞。錯誤原因：不要把 communicate 的動詞性直接套到 communication。" },
+        { sentence: "She answered politely.", note: "翻譯：她有禮貌地回答。正確原因：politely 修飾 answered，是副詞。錯誤原因：不要因為字很長就選名詞。" }
+      ]
+    }
+  };
+  units.forEach(unit => {
+    const extra = handbookEnhancements[unit.id];
+    if (!extra) return;
+    unit.core = `${unit.core}\n${extra.core}`;
+    unit.clarify = `${unit.clarify}\n${extra.clarify}`;
+    unit.derivation = `${unit.derivation}\n${extra.derivation}`;
+    unit.steps = [...unit.steps, ...extra.steps];
+    unit.tips = [...unit.tips, ...extra.tips];
+    unit.examples = [...(unit.examples || []), ...extra.examples];
+  });
+
   const domains = [
     { mark: "時", name: "時態文法", desc: "現在式、過去式、未來式、現在完成式與情態助動詞，判斷時間點與動作性質的基礎。", skills: ["先找時間副詞線索，再決定時態", "現在完成式不能搭配精確過去時間點", "情態助動詞後面一律接原形動詞"] },
     { mark: "詞", name: "詞類與修飾", desc: "名詞可數性、代名詞格位、形容詞副詞位置，以及比較級最高級與介系詞固定搭配。", skills: ["連綴動詞後面接形容詞，不接副詞", "比較級最高級先數音節決定規則變化方式", "介系詞多為固定搭配，建議整理清單背誦"] },

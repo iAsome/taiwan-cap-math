@@ -130,10 +130,20 @@ ENGLISH_DATA.units.forEach(unit => {
   ["summary", "core", "clarify", "formula", "derivation"].forEach(field => {
     check(typeof unit[field] === "string" && unit[field].trim(), `unit ${unit.id} missing ${field}.`);
   });
-  check(Array.isArray(unit.steps) && unit.steps.length >= 4, `unit ${unit.id} needs at least 4 steps.`);
-  check(Array.isArray(unit.tips) && unit.tips.length >= 4, `unit ${unit.id} needs at least 4 tips.`);
+  check(Array.isArray(unit.steps) && unit.steps.length >= 6, `unit ${unit.id} needs at least 6 steps.`);
+  check(Array.isArray(unit.tips) && unit.tips.length >= 6, `unit ${unit.id} needs at least 6 tips.`);
   check(unit.quiz?.q && unit.quiz?.a, `unit ${unit.id} needs one concept quiz in data.`);
-  check(Array.isArray(unit.examples) && unit.examples.length >= 1, `unit ${unit.id} needs at least one example.`);
+  check(Array.isArray(unit.examples) && unit.examples.length >= 4, `unit ${unit.id} needs at least 4 examples.`);
+  (unit.examples || []).forEach((example, index) => {
+    const sentence = String(example.sentence || "");
+    const note = String(example.note || "");
+    check(sentence.trim(), `unit ${unit.id} example ${index + 1} missing English sentence.`);
+    check(note.trim(), `unit ${unit.id} example ${index + 1} missing Chinese note.`);
+    check(!chinesePattern.test(sentence), `unit ${unit.id} example ${index + 1} sentence must stay English-only.`);
+    check(chinesePattern.test(note), `unit ${unit.id} example ${index + 1} note needs Chinese explanation.`);
+  });
+  const explainedExamples = (unit.examples || []).filter(example => /翻譯/.test(example.note || "") && /正確/.test(example.note || "") && /錯誤/.test(example.note || ""));
+  check(explainedExamples.length >= 3, `unit ${unit.id} needs at least 3 examples with translation, correct reason, and common wrong reason.`);
   const text = handbookStrings(unit).join("\n");
   const rendered = handbookStrings(unit).map(handbookNl).join("\n");
   check(!badHandbookText.test(text), `unit ${unit.id} handbook contains forbidden fraction/Cyrillic text.`);
@@ -153,13 +163,13 @@ const vocabPath = path.join(root, "vocab-3000.json");
 const vocab = fs.existsSync(vocabPath) ? JSON.parse(fs.readFileSync(vocabPath, "utf8")) : null;
 const basic2000 = new Set();
 const vocabAllowlist = new Set([
-  "amy", "ben", "cindy", "david", "ella", "frank", "grace", "henry", "ivy", "jack", "kelly", "leo", "lin", "mina", "mr", "nick", "olivia", "peter", "ruby", "sam", "tina", "victor", "wendy", "yuki", "zoe",
+  "amy", "anna", "ben", "cindy", "david", "ella", "frank", "grace", "henry", "ivy", "jack", "kelly", "kevin", "leo", "lin", "mia", "mina", "mr", "nick", "olivia", "peter", "ruby", "sam", "tina", "tom", "victor", "wendy", "yuki", "zoe",
   "taipei", "japanese", "v", "pp", "ing", "ed", "ly", "ful", "tion", "doesn", "don", "isn", "haven", "didn", "can", "couldn", "wouldn", "shouldn",
   "am", "are", "was", "were", "did", "does", "has", "had", "would", "could", "should", "my", "me", "your", "her", "hers", "him", "himself",
   "adjective", "adverb", "article", "conjunction", "grammar", "modal", "noun", "passive", "preposition", "pronoun", "verb",
   "clue", "clues", "detail", "evidence", "infer", "passage", "paragraph", "reader", "readers", "strategy", "title",
   "bought", "brought", "built", "caught", "eaten", "felt", "forgot", "gone", "kept", "lent", "lost", "rang", "saw", "sold", "spoken", "told", "went", "were", "wrote", "written",
-  "although", "an", "arrived", "b", "became", "best", "better", "bike", "bore", "bores", "broken", "changed", "chose", "closed", "communicate", "communication", "compared", "conclusion", "confused", "decided", "earlier", "effect", "effected", "fell", "forever", "found", "function", "functions", "grammatical", "grammatically", "heavier", "heaviest", "inference", "knew", "lived", "lowered", "luckily", "mine", "moved", "mystery", "okay", "prefix", "probably", "product", "reduce", "reduction", "refer", "relieved", "reusable", "reuse", "schedule", "shown", "suddenly", "suffix", "tone", "took", "tv", "uncertain", "understood", "used", "wondered",
+  "although", "an", "arrived", "b", "became", "best", "better", "bike", "bore", "bores", "broken", "changed", "children", "chose", "closed", "communicate", "communication", "compared", "conclusion", "confused", "decided", "earlier", "effect", "effected", "fell", "forever", "found", "function", "functions", "grammatical", "grammatically", "heavier", "heaviest", "inference", "knew", "lived", "lowered", "luckily", "mine", "moved", "mystery", "okay", "prefix", "probably", "product", "reduce", "reduction", "refer", "relieved", "reusable", "reuse", "schedule", "shown", "suddenly", "suffix", "tone", "took", "tv", "un", "uncertain", "understood", "used", "wondered",
   "advice", "argument", "cigarette", "clause", "condition", "connect", "container", "context", "contrast", "definition", "device", "dialogue", "done", "easier", "easily", "feathers", "gave", "given", "harmful", "ignored", "larger", "matches", "met", "musical", "personality", "phrase", "placed", "prevented", "related", "reply", "respectful", "rewrite", "routine", "said", "saved", "sent", "set", "simplest", "situation", "solved", "standard", "tag", "task", "tense", "them", "unit", "usage", "whom", "worse",
   "choice", "confusion", "customer", "delay", "displeasure", "instead", "local", "made", "message", "notice", "online", "public", "receipt", "route", "share", "smoothly", "volunteer",
   "watchs", "delicion", "wellly", "difficulter", "interestinger", "happilyness", "teacherly", "movemently"
@@ -220,6 +230,14 @@ function unknownEnglishWords(text, extraAllowed = new Set()) {
     .map(word => word.replace(/[^a-z]/g, ""))
     .filter(word => word && !extraAllowed.has(word) && !baseWordOk(word)))];
 }
+
+ENGLISH_DATA.units.forEach(unit => {
+  (unit.examples || []).forEach((example, index) => {
+    const unknown = unknownEnglishWords(example.sentence || "");
+    const note = String(example.note || "");
+    check(unknown.length === 0 || /超出|生字|補充/.test(note), `unit ${unit.id} example ${index + 1} has out-of-scope words without Chinese note: ${unknown.join(", ")}`);
+  });
+});
 
 // Unit quizzes: English question faces, Chinese explanations, no duplicate seed-wide targets/templates.
 for (const seed of quizSeeds) {
