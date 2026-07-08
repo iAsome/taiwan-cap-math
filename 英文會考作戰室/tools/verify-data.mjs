@@ -37,7 +37,14 @@ const redundantPromptMarkers = [
   "Choose the correct " + "usage."
 ];
 const badVocabMarkers = ["Please use this word in a clear " + "sentence", " in " + "context"];
-const quizSeeds = [1, 12345, 999999, 777777];
+const quizSeeds = [...new Set([1, 12345, 999999, 777777, ...Array.from({ length: 200 }, (_, i) => i + 1)])];
+const vaguePromptMarkers = [
+  "Which sentence has a clear " + "meaning?",
+  "Which sentence sounds " + "natural?",
+  "Which " + "rewrite is correct?",
+  "Which sentence is correct " + "now?",
+  "'s review " + "note:"
+];
 const itemPrefixPattern = /\bItem\s+[A-Z0-9-]+:/;
 const chinesePattern = /[\u3400-\u9FFF]/;
 const chapterDifficultyShape = { 1: 4, 2: 8, 3: 6, 4: 2 };
@@ -55,7 +62,7 @@ function handbookStrings(unit) {
   ].filter(value => value != null);
 }
 function signature(q) {
-  return [q.passageId, q.passage, q.text, ...(q.choices || [])].filter(Boolean).join("\n").toLowerCase().replace(/\s+/g, " ").trim();
+  return [q.passageId, q.passage, q.text, ...(q.choices || []).slice().sort()].filter(Boolean).join("\n").toLowerCase().replace(/\s+/g, " ").trim();
 }
 function questionFaceText(q) {
   return [q.text, ...(q.choices || [])].filter(Boolean).join("\n");
@@ -217,6 +224,8 @@ function unknownEnglishWords(text, extraAllowed = new Set()) {
 // Unit quizzes: English question faces, Chinese explanations, no duplicate seed-wide targets/templates.
 for (const seed of quizSeeds) {
   const allSignatures = new Set();
+  const allVisibleKeys = new Set();
+  const allSemanticKeys = new Set();
   const allTemplateKeys = new Set();
   const allTargetKeys = new Set();
   for (const blueprint of EXAM_ENGINE.quizCatalog) {
@@ -225,6 +234,9 @@ for (const seed of quizSeeds) {
     const expectedCount = blueprint.scope === "chapter" ? 20 : 50;
     const expectedMinutes = blueprint.scope === "chapter" ? 20 : 50;
     const paperSignatures = new Set();
+    const paperVisibleKeys = new Set();
+    const paperSemanticKeys = new Set();
+    const paperTemplateKeys = new Set();
     const formKeys = new Set();
     check(blueprint.questionCount === expectedCount && blueprint.minutes === expectedMinutes, `Quiz ${blueprint.id} should advertise ${expectedCount} questions / ${expectedMinutes} minutes.`);
     check(quiz.questions.length === expectedCount, `Quiz ${blueprint.id} seed ${seed} should generate ${expectedCount} questions, got ${quiz.questions.length}.`);
@@ -237,8 +249,19 @@ for (const seed of quizSeeds) {
       paperSignatures.add(sig);
       check(!allSignatures.has(sig), `Seed ${seed} duplicate quiz question signature: ${sig.slice(0, 120)}.`);
       allSignatures.add(sig);
+      check(!!q.visibleKey && !!q.semanticKey, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} missing visibleKey/semanticKey.`);
+      check(!paperVisibleKeys.has(q.visibleKey), `Quiz ${blueprint.id} seed ${seed} duplicate visibleKey: ${String(q.visibleKey).slice(0, 120)}.`);
+      check(!paperSemanticKeys.has(q.semanticKey), `Quiz ${blueprint.id} seed ${seed} duplicate semanticKey: ${String(q.semanticKey).slice(0, 120)}.`);
+      check(!allVisibleKeys.has(q.visibleKey), `Seed ${seed} duplicate visibleKey: ${String(q.visibleKey).slice(0, 120)}.`);
+      check(!allSemanticKeys.has(q.semanticKey), `Seed ${seed} duplicate semanticKey: ${String(q.semanticKey).slice(0, 120)}.`);
+      paperVisibleKeys.add(q.visibleKey);
+      paperSemanticKeys.add(q.semanticKey);
+      allVisibleKeys.add(q.visibleKey);
+      allSemanticKeys.add(q.semanticKey);
       check(!!q.templateKey, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} missing templateKey.`);
+      check(!paperTemplateKeys.has(q.templateKey), `Quiz ${blueprint.id} seed ${seed} duplicate templateKey: ${q.templateKey}.`);
       check(!allTemplateKeys.has(q.templateKey), `Seed ${seed} duplicate templateKey: ${q.templateKey}.`);
+      paperTemplateKeys.add(q.templateKey);
       allTemplateKeys.add(q.templateKey);
       check(!!q.questionFormKey, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} missing questionFormKey.`);
       formKeys.add(q.questionFormKey);
@@ -246,6 +269,7 @@ for (const seed of quizSeeds) {
       check(!chinesePattern.test(face), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} question/choices must be English-only.`);
       redundantPromptMarkers.forEach(marker => check(!q.text.startsWith(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} starts with redundant prompt "${marker}".`));
       badVocabMarkers.forEach(marker => check(!face.includes(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} contains placeholder marker "${marker}".`));
+      vaguePromptMarkers.forEach(marker => check(!face.includes(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} contains vague/review marker "${marker}".`));
       if (q.text.includes("___")) {
         check(q.choices.every(choice => !choice.includes("___") && choice.length <= 32), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} blank choices should be short answer fragments.`);
       }
@@ -282,7 +306,7 @@ for (const seed of quizSeeds) {
       check(quiz.questions[44]?.passageId !== quiz.questions[47]?.passageId, `Review quiz ${blueprint.id} seed ${seed} should use two different passages.`);
       check(reading.every(q => q.passage && q.readingTitle && Array.isArray(q.glossary)), `Review quiz ${blueprint.id} seed ${seed} reading questions need passage/title/glossary.`);
       check(reading.every(q => (q.glossary || []).every(item => Array.isArray(item) ? item[0] && item[1] && chinesePattern.test(item[1]) : item.word && item.zh && chinesePattern.test(item.zh))), `Review quiz ${blueprint.id} seed ${seed} reading glossary needs Chinese translations.`);
-      check(formKeys.size >= 16, `Review quiz ${blueprint.id} seed ${seed} should use at least 16 question forms, got ${formKeys.size}.`);
+      check(formKeys.size >= 10, `Review quiz ${blueprint.id} seed ${seed} should use at least 10 question forms after removing vague prompts, got ${formKeys.size}.`);
       check(sameShape(difficultyShape, reviewDifficultyShape), `Review quiz ${blueprint.id} seed ${seed} difficulty shape should be 1★6/2★16/3★18/4★8/5★2.`);
     }
   }
@@ -308,6 +332,7 @@ check(Object.keys(ENGLISH_ANALYSIS.primaryUnits || {}).length === 10, "ENGLISH_A
 
 // Keep the forbidden search strings out of questions.js without storing them literally here.
 removedExports.forEach(name => check(!questionSource.includes(name), `questions.js still contains removed export ${name}.`));
+vaguePromptMarkers.forEach(marker => check(!questionSource.includes(marker), `questions.js still contains vague/review marker ${marker}.`));
 
 if (errors.length) {
   console.error(`FAILED: ${errors.length} issue(s).`);

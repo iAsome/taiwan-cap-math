@@ -123,6 +123,13 @@ window.EXAM_ENGINE = (() => {
   }
   const stripItemPrefix = value => String(value).replace(/^Item\s+[^:]*:\s*/i, "");
   const fill = (text, c) => stripItemPrefix(String(text).replace(/\{(\w+)\}/g, (_, key) => c[key] ?? ""));
+  const situationOpeners = ["", "At school, ", "In class, ", "In a message, ", "In a short note, ", "On a practice page, ", "For a class report, ", "In a club plan, "];
+  function stemVariant(stem, slot, rules) {
+    const variant = Math.floor(slot / (rules.length * GRAMMAR_FORMS.length));
+    const opener = situationOpeners[variant % situationOpeners.length];
+    if (!opener) return stem;
+    return `${opener}${stem.startsWith("I ") || stem.startsWith("___") ? stem : stem.charAt(0).toLowerCase() + stem.slice(1)}`;
+  }
 
   function rule(unitId, topic, text, correct, distractors, step, tip, trap, ability = "knowledge", difficulty = 2) {
     return { unitId, topic, text, correct, distractors, step, tip, trap, ability, difficulty };
@@ -275,23 +282,17 @@ window.EXAM_ENGINE = (() => {
     ["blank", stem => stem],
     ["best-answer", stem => stem],
     ["complete", stem => stem],
-    ["correct-sentence", () => "Which sentence is correct?"],
-    ["natural-sentence", () => "Which sentence sounds natural?"],
+    ["correct-sentence", stem => stem.includes("___") ? stem : "Which sentence is correct?"],
     ["standard-english", stem => stem],
-    ["dialogue", stem => `A: What should we say?\nB: ${stem}`],
     ["form", stem => stem],
     ["word-choice", stem => stem],
     ["tense", stem => stem],
-    ["order", () => "Which sentence has the correct word order?"],
+    ["order", stem => stem.includes("___") ? stem : "Which sentence has the correct word order?"],
     ["usage", stem => stem],
-    ["rewrite", () => "Which rewrite is correct?"],
-    ["clear-meaning", () => "Which sentence has a clear meaning?"],
     ["exam-style", stem => stem],
-    ["short-dialogue", stem => `A: I am not sure.\nB: ${stem}`],
-    ["grammar-check", () => "Which answer is grammatical?"],
+    ["grammar-check", stem => stem.includes("___") ? stem : "Which sentence is grammatical?"],
     ["sentence-fit", stem => stem],
-    ["context", stem => stem],
-    ["edit", () => "Which sentence is correct now?"]
+    ["context", stem => stem]
   ];
   const VOCAB_FORMS = [
     "definition",
@@ -383,6 +384,11 @@ window.EXAM_ENGINE = (() => {
     ["technology", "Technology", "in a computer room", [["device", "裝置"], ["online", "線上"]]],
     ["news", "News and Society", "at a town meeting", [["report", "報告"], ["public", "公共的"]]]
   ];
+  const readingGlossaryExtras = {
+    community: [["community", "社區"], ["neighborhood", "鄰近地區"]],
+    technology: [["technology", "科技"]],
+    transport: [["transport", "交通"]]
+  };
   const readingEvents = [
     { title: "A Lost Card", problem: "a student card was missing after a busy morning", action: "checked the desk, read the last message, and asked one clear question", result: "the card was found inside a notebook before lunch", infer: "Careful checking solved the problem faster than guessing.", detail: "They checked the desk and read the last message.", distractors: ["A New Lunch Menu", "A Long Vacation", "A Phone for Sale"] },
     { title: "A Changed Plan", problem: "the meeting place changed just before the group left", action: "read the new note twice and sent one short message to the team", result: "everyone arrived at the right place on time", infer: "A short message helped the whole group avoid confusion.", detail: "The new note was read twice before the message was sent.", distractors: ["A Broken Bike", "A Story about Pets", "A Free Ticket"] },
@@ -396,6 +402,7 @@ window.EXAM_ENGINE = (() => {
     { title: "A Better Way", problem: "the old way took too long and made people tired", action: "tried a smaller first step and checked the result before doing more", result: "the work became easier and the group kept the better way", infer: "Testing a small change helped the group improve its work.", detail: "They tried a smaller first step before doing more.", distractors: ["A Dark Night", "A Pet Shop", "A Short Song"] }
   ];
   const READING_BANK = readingCategories.flatMap(([category, label, place, glossary], categoryIndex) => readingEvents.map((event, eventIndex) => {
+    glossary = [...(readingGlossaryExtras[category] || []), ...glossary];
     const person = names[(categoryIndex * 3 + eventIndex) % names.length];
     const friend = names[(categoryIndex * 5 + eventIndex + 7) % names.length];
     const id = `r${String(categoryIndex + 1).padStart(2, "0")}-${String(eventIndex + 1).padStart(2, "0")}`;
@@ -414,19 +421,52 @@ window.EXAM_ENGINE = (() => {
   function uniqueChoices(items, fallback) {
     return [...new Set([...items, ...fallback])].slice(0, 3);
   }
+  const keyNoise = [...names, ...places, ...objects, ...times, "taipei", "taipei station", "the airport", "last night", "next week", "right now", "every day", "at this moment", "soon", "yesterday"].sort((a, b) => b.length - a.length);
+  const keyNoisePattern = new RegExp(`\\b(?:${keyNoise.map(word => word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})\\b`, "gi");
+  function normalizeKeyText(value, semantic = false) {
+    let out = String(value || "")
+      .toLowerCase()
+      .replace(/\s+/g, " ")
+      .trim();
+    if (semantic) out = out.replace(keyNoisePattern, "{x}").replace(/\b\d{4}\b/g, "{year}");
+    return out.replace(/\s+/g, " ").trim();
+  }
+  function questionKey(q, semantic = false) {
+    return [
+      normalizeKeyText(q.passage || "", semantic),
+      normalizeKeyText(q.text, semantic),
+      ...(q.choices || []).map(choice => normalizeKeyText(choice, semantic)).sort()
+    ].filter(Boolean).join("\n");
+  }
+  function attachQuestionKeys(q) {
+    q.visibleKey = questionKey(q);
+    q.semanticKey = questionKey(q, true);
+    return q;
+  }
+  function newUsedKeys() {
+    return { visible: new Set(), semantic: new Set(), template: new Set(), target: new Set() };
+  }
+  function rememberQuestion(used, q) {
+    if (used.visible.has(q.visibleKey) || used.semantic.has(q.semanticKey) || used.template.has(q.templateKey) || (q.targetKey && used.target.has(q.targetKey))) return false;
+    used.visible.add(q.visibleKey);
+    used.semantic.add(q.semanticKey);
+    used.template.add(q.templateKey);
+    if (q.targetKey) used.target.add(q.targetKey);
+    return true;
+  }
   function buildGrammarQuestion(r, seed, quizId, unitId, slot, difficulty) {
     const rules = RULES[unitId] || RULES[1];
     const form = GRAMMAR_FORMS[slot % GRAMMAR_FORMS.length];
     const ruleIndex = (slot + Math.floor(slot / rules.length)) % rules.length;
     const selected = rules[ruleIndex];
     const c = ctx(seed, quizId, unitId, slot);
-    const stem = fill(selected.text, c);
+    const stem = stemVariant(fill(selected.text, c), slot, rules);
     const answer = fill(selected.correct, c);
     const distractors = selected.distractors.map(choice => fill(choice, c));
     const correctSentence = sentenceFrom(stem, answer);
     const wrongSentences = distractors.map(choice => sentenceFrom(stem, choice));
-    const sentenceMode = !stem.includes("___") && ["correct-sentence", "natural-sentence", "standard-english", "order", "rewrite", "clear-meaning", "grammar-check", "edit"].includes(form[0]);
-    const text = quizId.startsWith("d") ? `${c.name}'s review note:\n${form[1](stem)}` : form[1](stem);
+    const text = form[1](stem);
+    const sentenceMode = !stem.includes("___") && text !== stem;
     const correct = sentenceMode ? correctSentence : answer;
     const choices = sentenceMode ? wrongSentences : distractors;
     const q = mc(
@@ -446,8 +486,15 @@ window.EXAM_ENGINE = (() => {
     q.taxonomyTopic = selected.topic;
     q.ruleSlot = slot;
     q.questionFormKey = `grammar:${form[0]}`;
-    q.templateKey = `u${unitId}:grammar:${slot}:r${ruleIndex + 1}:${form[0]}`;
-    return q;
+    q.templateKey = `u${unitId}:grammar:${form[0]}:r${ruleIndex + 1}:${questionKey({ text: stem, choices: [answer, ...distractors] }, true)}`;
+    return attachQuestionKeys(q);
+  }
+  function buildUniqueGrammarQuestion(used, r, seed, quizId, unitId, startSlot, difficulty) {
+    for (let attempt = 0; attempt < 900; attempt++) {
+      const q = buildGrammarQuestion(r, seed, quizId, unitId, startSlot + attempt, difficulty);
+      if (rememberQuestion(used, q)) return q;
+    }
+    throw new Error(`Not enough unique grammar questions for ${quizId} unit ${unitId}`);
   }
   function vocabItem(unitId, vocabSlot) {
     const items = VOCAB_BANK.filter(item => item.unitId === unitId);
@@ -496,10 +543,18 @@ window.EXAM_ENGINE = (() => {
     q.ability = "knowledge";
     q.taxonomyTopic = "Vocabulary usage";
     q.questionFormKey = `vocab:${form}`;
-    q.templateKey = `u${unitId}:vocab:${vocabSlot}:${form}`;
+    q.templateKey = `u${unitId}:vocab:${form}:${target.key}`;
     q.targetWord = target.word;
     q.targetKey = target.key;
-    return q;
+    q.vocabSlot = vocabSlot;
+    return attachQuestionKeys(q);
+  }
+  function buildUniqueVocabQuestion(used, r, seed, quizId, unitId, startSlot, difficulty) {
+    for (let attempt = 0; attempt < 120; attempt++) {
+      const q = buildVocabQuestion(r, seed, quizId, unitId, startSlot + attempt, difficulty);
+      if (rememberQuestion(used, q)) return q;
+    }
+    throw new Error(`Not enough unique vocabulary questions for ${quizId} unit ${unitId}`);
   }
   function generatedReading(seed, quizId, passageIndex) {
     const reviewIndex = Math.max(0, (quizIndexById[quizId] || 20) - chapterQuizzes.length);
@@ -522,42 +577,53 @@ window.EXAM_ENGINE = (() => {
         q.taxonomyTopic = `Reading ${passage.category}`;
         q.questionFormKey = `reading:q${qi + 1}`;
         q.templateKey = `reading:${passage.id}:q${qi + 1}`;
-        return q;
+        return attachQuestionKeys(q);
       });
     });
   }
 
-  function generateQuiz(quizId, seedOverride) {
-    const blueprint = quizCatalog.find(item => item.id === quizId);
-    if (!blueprint) throw new Error("Unknown quiz id");
-    const seed = seedOverride == null ? hashSeed(quizId) : Math.max(1, Math.min(999999, Number(seedOverride) || hashSeed(seedOverride)));
-    const r = rngFromSeed(seed);
+  const quizSetCache = new Map();
+  function buildQuizForSeed(blueprint, seed, r, used, grammarCursor, vocabCursor) {
     const questions = [];
     if (blueprint.scope === "chapter") {
       const unitId = blueprint.unitIds[0];
       for (let i = 0; i < CHAPTER_GRAMMAR_COUNT; i++) {
-        questions.push(buildGrammarQuestion(r, seed, quizId, unitId, i, CHAPTER_DIFFICULTIES[i]));
+        const start = grammarCursor[unitId] || 0;
+        const q = buildUniqueGrammarQuestion(used, r, seed, blueprint.id, unitId, start, CHAPTER_DIFFICULTIES[i]);
+        grammarCursor[unitId] = q.ruleSlot + 1;
+        questions.push(q);
       }
       for (let i = 0; i < CHAPTER_VOCAB_COUNT; i++) {
-        questions.push(buildVocabQuestion(r, seed, quizId, unitId, i, CHAPTER_DIFFICULTIES[CHAPTER_GRAMMAR_COUNT + i]));
+        const start = vocabCursor[unitId] || 0;
+        const q = buildUniqueVocabQuestion(used, r, seed, blueprint.id, unitId, start, CHAPTER_DIFFICULTIES[CHAPTER_GRAMMAR_COUNT + i]);
+        vocabCursor[unitId] = q.vocabSlot + 1;
+        questions.push(q);
       }
     } else {
       const grammarQuotas = [9, 9, 8, 8];
       const vocabQuotas = [3, 3, 2, 2];
-      let grammarSlot = 20;
       blueprint.unitIds.forEach((unitId, unitIndex) => {
         for (let i = 0; i < grammarQuotas[unitIndex]; i++) {
           const index = questions.length;
-          questions.push(buildGrammarQuestion(r, seed, quizId, unitId, grammarSlot++, REVIEW_GENERAL_DIFFICULTIES[index]));
+          const start = grammarCursor[unitId] || 0;
+          const q = buildUniqueGrammarQuestion(used, r, seed, blueprint.id, unitId, start, REVIEW_GENERAL_DIFFICULTIES[index]);
+          grammarCursor[unitId] = q.ruleSlot + 1;
+          questions.push(q);
         }
       });
       blueprint.unitIds.forEach((unitId, unitIndex) => {
         for (let i = 0; i < vocabQuotas[unitIndex]; i++) {
           const index = questions.length;
-          questions.push(buildVocabQuestion(r, seed, quizId, unitId, CHAPTER_VOCAB_COUNT + i, REVIEW_GENERAL_DIFFICULTIES[index]));
+          const start = vocabCursor[unitId] || 0;
+          const q = buildUniqueVocabQuestion(used, r, seed, blueprint.id, unitId, start, REVIEW_GENERAL_DIFFICULTIES[index]);
+          vocabCursor[unitId] = q.vocabSlot + 1;
+          questions.push(q);
         }
       });
-      questions.push(...readingQuestions(r, seed, quizId, blueprint.unitIds));
+      readingQuestions(r, seed, blueprint.id, blueprint.unitIds).forEach(q => {
+        if (!rememberQuestion(used, q)) throw new Error(`Duplicate reading question for ${blueprint.id}`);
+        questions.push(q);
+      });
     }
     questions.forEach((question, index) => { question.officialOrder = index + 1; });
     return {
@@ -578,6 +644,26 @@ window.EXAM_ENGINE = (() => {
       taxonomySource: blueprint.source,
       questions
     };
+  }
+  function quizSetForSeed(seed) {
+    if (quizSetCache.has(seed)) return quizSetCache.get(seed);
+    const r = rngFromSeed(seed);
+    const used = newUsedKeys();
+    const grammarCursor = {};
+    const vocabCursor = {};
+    const set = new Map(quizCatalog.map(blueprint => [blueprint.id, buildQuizForSeed(blueprint, seed, r, used, grammarCursor, vocabCursor)]));
+    quizSetCache.set(seed, set);
+    return set;
+  }
+  function cloneQuiz(quiz) {
+    return JSON.parse(JSON.stringify(quiz));
+  }
+
+  function generateQuiz(quizId, seedOverride) {
+    const blueprint = quizCatalog.find(item => item.id === quizId);
+    if (!blueprint) throw new Error("Unknown quiz id");
+    const seed = seedOverride == null ? hashSeed(quizId) : Math.max(1, Math.min(999999, Number(seedOverride) || hashSeed(seedOverride)));
+    return cloneQuiz(quizSetForSeed(seed).get(quizId));
   }
 
   function generate(seed, level = 2) {
