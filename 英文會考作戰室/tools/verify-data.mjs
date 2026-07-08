@@ -45,6 +45,15 @@ const vaguePromptMarkers = [
   "Which sentence is correct " + "now?",
   "'s review " + "note:"
 ];
+const falseContextMarkers = [
+  "At school,",
+  "In class,",
+  "In a message,",
+  "In a short note,",
+  "On a practice page,",
+  "For a class report,",
+  "In a club plan,"
+];
 const itemPrefixPattern = /\bItem\s+[A-Z0-9-]+:/;
 const chinesePattern = /[\u3400-\u9FFF]/;
 const chapterDifficultyShape = { 1: 4, 2: 8, 3: 6, 4: 2 };
@@ -108,6 +117,9 @@ removedExports.forEach(name => check(!(name in EXAM_ENGINE), `EXAM_ENGINE must n
 const readingRenderer = appSource.slice(appSource.indexOf("function readingPassageHtml"), appSource.indexOf("function solutionHtml"));
 check(!readingRenderer.includes("readingTitle"), "Reading passage UI must not render the real readingTitle.");
 check(Array.isArray(EXAM_ENGINE.VOCAB_BANK_META) && EXAM_ENGINE.VOCAB_BANK_META.length === 600, `English vocab target bank should expose 600 entries, got ${EXAM_ENGINE.VOCAB_BANK_META?.length}.`);
+check(Array.isArray(EXAM_ENGINE.GRAMMAR_BANK_META), "English grammar bank metadata should be exposed.");
+const grammarCounts = countBy(EXAM_ENGINE.GRAMMAR_BANK_META || [], item => item.unitId);
+unitIds.forEach(id => check(grammarCounts[id] >= 24, `English grammar unit ${id} should expose at least 24 grammar candidates, got ${grammarCounts[id] || 0}.`));
 const vocabCounts = countBy(EXAM_ENGINE.VOCAB_BANK_META || [], item => item.unitId);
 unitIds.forEach(id => check(vocabCounts[id] === 30, `English vocab unit ${id} should contain 30 target words, got ${vocabCounts[id] || 0}.`));
 (EXAM_ENGINE.VOCAB_BANK_META || []).forEach(item => {
@@ -244,6 +256,7 @@ for (const seed of quizSeeds) {
   const allSignatures = new Set();
   const allVisibleKeys = new Set();
   const allSemanticKeys = new Set();
+  const allEssenceKeys = new Set();
   const allTemplateKeys = new Set();
   const allTargetKeys = new Set();
   for (const blueprint of EXAM_ENGINE.quizCatalog) {
@@ -254,6 +267,7 @@ for (const seed of quizSeeds) {
     const paperSignatures = new Set();
     const paperVisibleKeys = new Set();
     const paperSemanticKeys = new Set();
+    const paperEssenceKeys = new Set();
     const paperTemplateKeys = new Set();
     const formKeys = new Set();
     check(blueprint.questionCount === expectedCount && blueprint.minutes === expectedMinutes, `Quiz ${blueprint.id} should advertise ${expectedCount} questions / ${expectedMinutes} minutes.`);
@@ -267,15 +281,19 @@ for (const seed of quizSeeds) {
       paperSignatures.add(sig);
       check(!allSignatures.has(sig), `Seed ${seed} duplicate quiz question signature: ${sig.slice(0, 120)}.`);
       allSignatures.add(sig);
-      check(!!q.visibleKey && !!q.semanticKey, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} missing visibleKey/semanticKey.`);
+      check(!!q.visibleKey && !!q.semanticKey && !!q.essenceKey, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} missing visibleKey/semanticKey/essenceKey.`);
       check(!paperVisibleKeys.has(q.visibleKey), `Quiz ${blueprint.id} seed ${seed} duplicate visibleKey: ${String(q.visibleKey).slice(0, 120)}.`);
       check(!paperSemanticKeys.has(q.semanticKey), `Quiz ${blueprint.id} seed ${seed} duplicate semanticKey: ${String(q.semanticKey).slice(0, 120)}.`);
+      check(!paperEssenceKeys.has(q.essenceKey), `Quiz ${blueprint.id} seed ${seed} duplicate essenceKey: ${String(q.essenceKey).slice(0, 120)}.`);
       check(!allVisibleKeys.has(q.visibleKey), `Seed ${seed} duplicate visibleKey: ${String(q.visibleKey).slice(0, 120)}.`);
       check(!allSemanticKeys.has(q.semanticKey), `Seed ${seed} duplicate semanticKey: ${String(q.semanticKey).slice(0, 120)}.`);
+      check(!allEssenceKeys.has(q.essenceKey), `Seed ${seed} duplicate essenceKey: ${String(q.essenceKey).slice(0, 120)}.`);
       paperVisibleKeys.add(q.visibleKey);
       paperSemanticKeys.add(q.semanticKey);
+      paperEssenceKeys.add(q.essenceKey);
       allVisibleKeys.add(q.visibleKey);
       allSemanticKeys.add(q.semanticKey);
+      allEssenceKeys.add(q.essenceKey);
       check(!!q.templateKey, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} missing templateKey.`);
       check(!paperTemplateKeys.has(q.templateKey), `Quiz ${blueprint.id} seed ${seed} duplicate templateKey: ${q.templateKey}.`);
       check(!allTemplateKeys.has(q.templateKey), `Seed ${seed} duplicate templateKey: ${q.templateKey}.`);
@@ -288,6 +306,7 @@ for (const seed of quizSeeds) {
       redundantPromptMarkers.forEach(marker => check(!q.text.startsWith(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} starts with redundant prompt "${marker}".`));
       badVocabMarkers.forEach(marker => check(!face.includes(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} contains placeholder marker "${marker}".`));
       vaguePromptMarkers.forEach(marker => check(!face.includes(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} contains vague/review marker "${marker}".`));
+      falseContextMarkers.forEach(marker => check(!q.text.startsWith(marker), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} starts with fake context marker "${marker}".`));
       if (q.text.includes("___")) {
         check(q.choices.every(choice => !choice.includes("___") && choice.length <= 32), `Quiz ${blueprint.id} seed ${seed} question ${i + 1} blank choices should be short answer fragments.`);
       }
@@ -306,6 +325,12 @@ for (const seed of quizSeeds) {
       const unknown = unknownEnglishWords(scopeText, glossaryWords);
       check(unknown.length === 0, `Quiz ${blueprint.id} seed ${seed} question ${i + 1} has out-of-scope English words: ${unknown.slice(0, 12).join(", ")}.`);
     });
+    if (seed === 1 && blueprint.id === "u8") {
+      const grammarTopics = quiz.questions.filter(q => q.ruleSlot !== undefined).map(q => q.taxonomyTopic);
+      check(new Set(grammarTopics).size === grammarTopics.length, "Regression u8 seed 1 should not repeat grammar topics.");
+      const bornStemHits = quiz.questions.filter(q => questionFaceText(q).toLowerCase().includes("was born ___ 2010")).length;
+      check(bornStemHits <= 1, "Regression u8 seed 1 should not repeat the born-in-year blank skeleton.");
+    }
     const reading = quiz.questions.filter(q => q.readingGroup);
     const targetCount = quiz.questions.filter(q => q.targetKey).length;
     const difficultyShape = countBy(quiz.questions, q => q.difficulty);

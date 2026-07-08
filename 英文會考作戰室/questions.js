@@ -123,13 +123,6 @@ window.EXAM_ENGINE = (() => {
   }
   const stripItemPrefix = value => String(value).replace(/^Item\s+[^:]*:\s*/i, "");
   const fill = (text, c) => stripItemPrefix(String(text).replace(/\{(\w+)\}/g, (_, key) => c[key] ?? ""));
-  const situationOpeners = ["", "At school, ", "In class, ", "In a message, ", "In a short note, ", "On a practice page, ", "For a class report, ", "In a club plan, "];
-  function stemVariant(stem, slot, rules) {
-    const variant = Math.floor(slot / (rules.length * GRAMMAR_FORMS.length));
-    const opener = situationOpeners[variant % situationOpeners.length];
-    if (!opener) return stem;
-    return `${opener}${stem.startsWith("I ") || stem.startsWith("___") ? stem : stem.charAt(0).toLowerCase() + stem.slice(1)}`;
-  }
 
   function rule(unitId, topic, text, correct, distractors, step, tip, trap, ability = "knowledge", difficulty = 2) {
     return { unitId, topic, text, correct, distractors, step, tip, trap, ability, difficulty };
@@ -279,21 +272,45 @@ window.EXAM_ENGINE = (() => {
   };
 
   const GRAMMAR_FORMS = [
-    ["blank", stem => stem],
-    ["best-answer", stem => stem],
-    ["complete", stem => stem],
-    ["correct-sentence", stem => stem.includes("___") ? stem : "Which sentence is correct?"],
-    ["standard-english", stem => stem],
-    ["form", stem => stem],
-    ["word-choice", stem => stem],
-    ["tense", stem => stem],
-    ["order", stem => stem.includes("___") ? stem : "Which sentence has the correct word order?"],
-    ["usage", stem => stem],
-    ["exam-style", stem => stem],
-    ["grammar-check", stem => stem.includes("___") ? stem : "Which sentence is grammatical?"],
-    ["sentence-fit", stem => stem],
-    ["context", stem => stem]
+    ["blank", data => data.stem],
+    ["correct-sentence", data => data.stem.includes("___") ? "Which sentence is correct?" : data.stem],
+    ["fix-error", data => data.stem.includes("___") ? `Which answer fixes this sentence?\n${data.wrongSentences[0]}` : "Which sentence is correct?"],
+    ["standard-choice", data => data.stem.includes("___") ? "Which sentence uses standard English?" : "Which sentence is standard English?"],
+    ["grammar-check", data => data.stem.includes("___") ? "Which sentence is grammatical?" : "Which sentence is grammatical?"],
+    ["error-choice", data => data.stem.includes("___") ? `Which choice avoids the grammar error?\n${data.wrongSentences[1]}` : "Which sentence has no grammar error?"],
+    ["sentence-use", data => data.stem.includes("___") ? "Which sentence uses the grammar correctly?" : "Which sentence uses the pattern correctly?"],
+    ["clue", data => data.stem.includes("___") ? "Which sentence matches the grammar clue?" : data.stem],
+    ["repair", data => data.stem.includes("___") ? `Choose the best repair.\n${data.wrongSentences[2]}` : "Choose the best sentence."],
+    ["contrast", data => data.stem.includes("___") ? `Which answer corrects this sentence?\n${data.wrongSentences[0]}` : "Which answer is correct?"]
   ];
+  const RULE_VARIANTS = {
+    8: [
+      rule(8, "time preposition on day", "We will meet ___ Monday.", "on", ["at", "in", "to"], "Use on with days.", "Day words take on.", "Do not use at with a day."),
+      rule(8, "time preposition in year", "The store opened ___ 2020.", "in", ["on", "at", "to"], "Use in with years.", "Years take in.", "Do not use on before a year alone."),
+      rule(8, "time preposition at clock time", "The class starts ___ seven.", "at", ["in", "on", "to"], "Use at with exact times.", "Clock times take at.", "Do not use in for a clock time."),
+      rule(8, "reach direct object", "The train will ___ Taipei Station at nine.", "reach", ["arrive", "arrive to", "reach to"], "reach takes a place directly.", "reach + place.", "Do not add to after reach."),
+      rule(8, "arrive at place", "We will ___ at the airport soon.", "arrive", ["reach", "reach to", "arrived to"], "arrive can take at before a place.", "Use arrive at for a point-like place.", "Do not use arrive to."),
+      rule(8, "time preposition in morning", "I study better ___ the morning.", "in", ["on", "at", "to"], "Use in with parts of the day.", "Morning and afternoon usually take in.", "Do not use on here."),
+      rule(8, "time preposition on date", "The party is ___ May 5.", "on", ["in", "at", "to"], "Use on with dates.", "A month plus a day is a date.", "Do not use in before a full date."),
+      rule(8, "time preposition at night", "The bus arrived ___ night.", "at", ["in", "on", "to"], "Use at night.", "Night is a fixed phrase with at.", "Do not say in night."),
+      rule(8, "transport by bus", "{name} goes to school ___ bus.", "by", ["on", "in", "at"], "Use by with a means of transport.", "by bus means the way someone travels.", "Do not use in bus in this pattern."),
+      rule(8, "transport on foot", "{name2} goes to school ___ foot.", "on", ["by", "in", "at"], "Use on foot.", "on foot is a fixed phrase.", "Do not say by foot in standard school English."),
+      rule(8, "place preposition at stop", "We waited ___ the bus stop.", "at", ["in", "on", "to"], "Use at for a point-like place.", "A bus stop is treated as a point.", "Do not use in for this place."),
+      rule(8, "place preposition in box", "The keys are ___ the box.", "in", ["on", "at", "to"], "Use in for inside a space.", "A box can contain something.", "Do not use on unless it is on top."),
+      rule(8, "place preposition on wall", "The map is ___ the wall.", "on", ["in", "at", "to"], "Use on for a surface.", "A wall is a surface here.", "Do not use in wall."),
+      rule(8, "direction preposition to", "{name} walked ___ the station.", "to", ["at", "in", "on"], "Use to for direction.", "walk to shows movement toward a place.", "Do not use at for movement."),
+      rule(8, "duration preposition for", "We stayed there ___ two hours.", "for", ["since", "at", "on"], "Use for with a length of time.", "two hours is a duration.", "Do not use since before a duration."),
+      rule(8, "starting point from", "The bus goes ___ school to the library.", "from", ["to", "at", "on"], "Use from for the starting point.", "from...to shows a path.", "Do not use to for the start."),
+      rule(8, "ending point to", "The road runs from the park ___ the market.", "to", ["from", "at", "on"], "Use to for the ending point.", "from...to shows start and end.", "Do not use from for the end."),
+      rule(8, "between two things", "The bank is ___ the library and the market.", "between", ["among", "in", "on"], "Use between for two clear points.", "The sentence names two places.", "Do not use among for two places."),
+      rule(8, "near place", "The bike is ___ the door.", "near", ["in", "on", "to"], "Use near to show a close place.", "near does not need another preposition.", "Do not say near to here."),
+      rule(8, "under place", "The bag is ___ the table.", "under", ["on", "in", "at"], "Use under for a lower position.", "The bag is below the table.", "Do not use on for below."),
+      rule(8, "over movement", "The ball went ___ the wall.", "over", ["under", "in", "at"], "Use over for movement above something.", "The ball moves above the wall.", "Do not use in for this movement."),
+      rule(8, "with tool", "{name} wrote the word ___ a pen.", "with", ["by", "in", "on"], "Use with for a tool.", "A pen is the tool used.", "Do not use by before the tool here."),
+      rule(8, "about topic", "This book is ___ animals.", "about", ["on", "at", "to"], "Use about for a topic.", "The book's topic is animals.", "Do not use to for a topic."),
+      rule(8, "before time", "Please finish the work ___ lunch.", "before", ["after", "at", "on"], "Use before for an earlier time.", "The work must be done earlier than lunch.", "after gives the opposite meaning.")
+    ]
+  };
   const VOCAB_FORMS = [
     "definition",
     "meaning",
@@ -423,12 +440,13 @@ window.EXAM_ENGINE = (() => {
   }
   const keyNoise = [...names, ...places, ...objects, ...times, "taipei", "taipei station", "the airport", "last night", "next week", "right now", "every day", "at this moment", "soon", "yesterday"].sort((a, b) => b.length - a.length);
   const keyNoisePattern = new RegExp(`\\b(?:${keyNoise.map(word => word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})\\b`, "gi");
+  const falseContextPattern = /^(?:at school|in class|in a message|in a short note|on a practice page|for a class report|in a club plan),\s*/i;
   function normalizeKeyText(value, semantic = false) {
     let out = String(value || "")
       .toLowerCase()
       .replace(/\s+/g, " ")
       .trim();
-    if (semantic) out = out.replace(keyNoisePattern, "{x}").replace(/\b\d{4}\b/g, "{year}");
+    if (semantic) out = out.replace(falseContextPattern, "").replace(keyNoisePattern, "{x}").replace(/\b\d{4}\b/g, "{year}");
     return out.replace(/\s+/g, " ").trim();
   }
   function questionKey(q, semantic = false) {
@@ -441,32 +459,34 @@ window.EXAM_ENGINE = (() => {
   function attachQuestionKeys(q) {
     q.visibleKey = questionKey(q);
     q.semanticKey = questionKey(q, true);
+    q.essenceKey = q.essenceKey || q.semanticKey;
     return q;
   }
   function newUsedKeys() {
-    return { visible: new Set(), semantic: new Set(), template: new Set(), target: new Set() };
+    return { visible: new Set(), semantic: new Set(), essence: new Set(), template: new Set(), target: new Set() };
   }
   function rememberQuestion(used, q) {
-    if (used.visible.has(q.visibleKey) || used.semantic.has(q.semanticKey) || used.template.has(q.templateKey) || (q.targetKey && used.target.has(q.targetKey))) return false;
+    if (used.visible.has(q.visibleKey) || used.semantic.has(q.semanticKey) || used.essence.has(q.essenceKey) || used.template.has(q.templateKey) || (q.targetKey && used.target.has(q.targetKey))) return false;
     used.visible.add(q.visibleKey);
     used.semantic.add(q.semanticKey);
+    used.essence.add(q.essenceKey);
     used.template.add(q.templateKey);
     if (q.targetKey) used.target.add(q.targetKey);
     return true;
   }
   function buildGrammarQuestion(r, seed, quizId, unitId, slot, difficulty) {
-    const rules = RULES[unitId] || RULES[1];
+    const rules = RULE_VARIANTS[unitId] || RULES[unitId] || RULES[1];
     const form = GRAMMAR_FORMS[slot % GRAMMAR_FORMS.length];
     const ruleIndex = (slot + Math.floor(slot / rules.length)) % rules.length;
     const selected = rules[ruleIndex];
     const c = ctx(seed, quizId, unitId, slot);
-    const stem = stemVariant(fill(selected.text, c), slot, rules);
+    const stem = fill(selected.text, c);
     const answer = fill(selected.correct, c);
     const distractors = selected.distractors.map(choice => fill(choice, c));
     const correctSentence = sentenceFrom(stem, answer);
     const wrongSentences = distractors.map(choice => sentenceFrom(stem, choice));
-    const text = form[1](stem);
-    const sentenceMode = !stem.includes("___") && text !== stem;
+    const text = form[1]({ stem, correctSentence, wrongSentences });
+    const sentenceMode = !stem.includes("___") || ["correct-sentence", "standard-choice", "grammar-check", "error-choice", "sentence-use", "clue"].includes(form[0]);
     const correct = sentenceMode ? correctSentence : answer;
     const choices = sentenceMode ? wrongSentences : distractors;
     const q = mc(
@@ -486,7 +506,14 @@ window.EXAM_ENGINE = (() => {
     q.taxonomyTopic = selected.topic;
     q.ruleSlot = slot;
     q.questionFormKey = `grammar:${form[0]}`;
-    q.templateKey = `u${unitId}:grammar:${form[0]}:r${ruleIndex + 1}:${questionKey({ text: stem, choices: [answer, ...distractors] }, true)}`;
+    q.essenceKey = [
+      `u${unitId}`,
+      normalizeKeyText(selected.conceptKey || selected.topic, true),
+      form[0],
+      normalizeKeyText(stem, true),
+      [answer, ...distractors].map(choice => normalizeKeyText(choice, true)).sort().join("|")
+    ].join("::");
+    q.templateKey = `u${unitId}:grammar:${q.essenceKey}`;
     return attachQuestionKeys(q);
   }
   function buildUniqueGrammarQuestion(used, r, seed, quizId, unitId, startSlot, difficulty) {
@@ -694,6 +721,12 @@ window.EXAM_ENGINE = (() => {
     quizCatalog,
     abilityLabel,
     groupNames,
+    GRAMMAR_BANK_META: U.flatMap(unit => (RULE_VARIANTS[unit.id] || RULES[unit.id] || []).flatMap((rule, ruleIndex) => GRAMMAR_FORMS.map(form => ({
+      unitId: unit.id,
+      topic: rule.topic,
+      formKey: form[0],
+      ruleIndex
+    })))),
     CHAPTER_QUESTION_COUNT,
     REVIEW_QUESTION_COUNT,
     REVIEW_GENERAL_COUNT,
