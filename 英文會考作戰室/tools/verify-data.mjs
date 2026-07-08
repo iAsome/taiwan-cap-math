@@ -133,9 +133,12 @@ Object.entries(EXAM_ENGINE.READING_CATEGORY_COUNTS || {}).forEach(([category, co
 check(Array.isArray(EXAM_ENGINE.READING_BANK_META) && EXAM_ENGINE.READING_BANK_META.length === 200, "English reading bank metadata should expose 200 passages.");
 check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.id)).size === 200, "English reading passage ids must be unique.");
 check(new Set((EXAM_ENGINE.READING_BANK_META || []).map(item => item.passage)).size === 200, "English reading passage texts must be unique.");
+check(!questionSource.includes("Daily Life: A Lost Card") && !questionSource.includes("calm thinking was better than a quick guess"), "questions.js must not contain old generated reading bank text.");
+const readingBankSource = fs.readFileSync(path.join(root, "reading-bank.js"), "utf8");
+check(!readingBankSource.includes("Daily Life: A Lost Card") && !readingBankSource.includes("calm thinking was better than a quick guess"), "reading-bank.js must not contain old generated reading bank text.");
 const readingQuestionSignatures = new Set();
 (EXAM_ENGINE.READING_BANK_META || []).forEach(item => {
-  check(item.wordCount >= 60 && item.wordCount <= 100, `Reading passage ${item.id} should be 60-100 words, got ${item.wordCount}.`);
+  check(item.wordCount >= 90 && item.wordCount <= 170, `Reading passage ${item.id} should be 90-170 words, got ${item.wordCount}.`);
   check(item.questionCount === 3, `Reading passage ${item.id} should have 3 questions, got ${item.questionCount}.`);
   check(Array.isArray(item.glossary), `Reading passage ${item.id} needs glossary array.`);
   (item.glossary || []).forEach(entry => check(Array.isArray(entry) && entry[0] && chinesePattern.test(entry[1] || ""), `Reading passage ${item.id} glossary entries need Chinese translations.`));
@@ -198,8 +201,8 @@ const vocabPath = path.join(root, "vocab-3000.json");
 const vocab = fs.existsSync(vocabPath) ? JSON.parse(fs.readFileSync(vocabPath, "utf8")) : null;
 const basic2000 = new Set();
 const vocabAllowlist = new Set([
-  "amy", "anna", "ben", "cindy", "david", "ella", "frank", "grace", "henry", "ivy", "jack", "kelly", "kevin", "leo", "lin", "mia", "mina", "mr", "nick", "olivia", "peter", "ruby", "sam", "tina", "tom", "victor", "wendy", "yuki", "zoe",
-  "taipei", "japanese", "v", "pp", "ing", "ed", "ly", "ful", "tion", "doesn", "don", "isn", "haven", "didn", "can", "couldn", "wouldn", "shouldn",
+  "amy", "andy", "anna", "ben", "candy", "carter", "chen", "cindy", "david", "ella", "emma", "eric", "fan", "frank", "gao", "grace", "helen", "henry", "hill", "ivy", "jack", "jason", "jerry", "kelly", "kevin", "lena", "leo", "lily", "lin", "linda", "liu", "lucky", "mandy", "mark", "may", "mia", "mina", "molly", "mr", "mrs", "ms", "nancy", "nick", "nina", "nora", "olivia", "owen", "park", "peter", "ruby", "ryan", "sam", "tina", "tom", "victor", "wang", "wendy", "wu", "yuki", "zoe",
+  "pine", "taipei", "japanese", "v", "pp", "ing", "ed", "ly", "ful", "tion", "doesn", "don", "isn", "haven", "didn", "can", "couldn", "wouldn", "shouldn",
   "am", "are", "was", "were", "did", "does", "has", "had", "would", "could", "should", "my", "me", "your", "her", "hers", "him", "himself",
   "adjective", "adverb", "article", "conjunction", "grammar", "modal", "noun", "passive", "preposition", "pronoun", "verb",
   "clue", "clues", "detail", "evidence", "infer", "passage", "paragraph", "reader", "readers", "strategy", "title",
@@ -249,7 +252,9 @@ function baseWordOk(word) {
   const stems = [
     word.replace(/ies$/, "y"),
     word.replace(/ied$/, "y"),
+    word.replace(/ing$/, "e"),
     word.replace(/ing$/, ""),
+    word.replace(/ed$/, "e"),
     word.replace(/ed$/, ""),
     word.replace(/ly$/, ""),
     word.replace(/ness$/, ""),
