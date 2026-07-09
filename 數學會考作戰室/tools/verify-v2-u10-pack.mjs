@@ -20,6 +20,16 @@ const U10_BANNED = [
   "只有字母與指數完全相同的項才能合併",
   "本題依題干所列式子逐步計算即可",
   "代入後依運算順序逐步計算",
+  "接著",
+  "此題所求為",
+  "把代入與運算步驟寫完整即可",
+  "把同類項合併的步驟寫清楚即可",
+  "把乘法展開與合併步驟寫清楚即可",
+  "此錯法會讓本題結果不正確",
+  "容易在這一題算錯符號或係數",
+  "粗心算錯就容易選錯",
+  "容易在這一題選錯",
+  "去括號或合併時符號處理錯就會選錯",
   "因式分解為", "分解為", "求根", "公式解", "判別式", "高中", "餘式", "因式定理", "多項式除法",
   "選項", "逐項", "驗算", "核對", "故應選", "答案為", "結果為", "若誤以為", "另外，選", "【", "】",
   "<=", ">=", "如圖", "下圖", "請看圖"
@@ -94,6 +104,18 @@ function checkSyllabusMapping(questions) {
   assert.equal(exact.length + mappedOnly.length, 12);
 }
 
+function stepOverlapCount(expl, steps) {
+  let n = 0;
+  for (const s of steps || []) {
+    const t = s.replace(/。$/, "").trim();
+    if (t.length < 4) continue;
+    const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(`(^|[。；;])\\s*${esc}\\s*(?=[。；;]|$)`);
+    if (re.test(expl)) n++;
+  }
+  return n;
+}
+
 function checkQuestions(questions) {
   assert.equal(questions.length, 144);
   const bySkill = new Map();
@@ -115,6 +137,8 @@ function checkQuestions(questions) {
     assert.ok(!BAD_SYMBOL_RE.test(blob), `${q.questionId} bad symbol`);
     assert.ok(!IMAGE_RE.test(blob), `${q.questionId} image tag`);
     assert.ok(!hasDuplicateSentence(q.explanation), `${q.questionId} duplicate`);
+    assert.ok(stepOverlapCount(q.explanation, q.steps) < 2, `${q.questionId} steps copied`);
+    assert.notEqual(q.commonMistake, q.explanation, `${q.questionId} cm copied expl`);
   }
   assert.equal(bySkill.size, 12);
   for (const [sid, items] of bySkill) {
