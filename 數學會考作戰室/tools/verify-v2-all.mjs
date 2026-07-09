@@ -8,7 +8,9 @@ const scripts = [
   "verify-v2-question-bank.mjs",
   "verify-v2-lecture.mjs",
   "verify-v2-migration-map.mjs",
-  "verify-v2-text-only.mjs"
+  "verify-v2-text-only.mjs",
+  "verify-v2-u06-pack.mjs",
+  "verify-v2-u07-pack.mjs"
 ];
 
 let failed = false;

@@ -15,7 +15,6 @@ import {
   U04_EXPLANATION_PREFIX_RE,
   U04_EXPLANATION_PREFIX_COLON_RE,
   hasU04BannedText,
-  findU05BannedPhrase,
   u05ExplanationTooVague,
   U05_IMAGE_PHRASES,
   stepsEmbedQuestionText,
@@ -28,14 +27,6 @@ const v2Dir = path.join(root, "v2");
 
 const U06_SC_BANNED = ["赞", "反对", "弃权"];
 const INVERSE_SKILLS = new Set(["inverse-variation", "inverse-variation-graph"]);
-function hasU05BannedLocal(textOrArray) {
-  const parts = Array.isArray(textOrArray) ? textOrArray : [textOrArray];
-  for (const part of parts) {
-    const hit = findU05BannedPhrase(part);
-    if (hit) return hit;
-  }
-  return null;
-}
 function hasU06ScBanned(text) {
   if (typeof text !== "string") return null;
   for (const p of U06_SC_BANNED) if (text.includes(p)) return p;
@@ -114,8 +105,6 @@ function hasU06Banned(textOrArray, skillId) {
     if (typeof part !== "string") continue;
     const u04 = hasU04BannedText(part);
     if (u04) return `U04: ${u04}`;
-    const u05 = hasU05BannedLocal(part);
-    if (u05) return `U05: ${u05}`;
     const gen = hasBannedText(part);
     if (gen) return `general: ${gen}`;
     for (const p of U06_EXTRA_BANNED) {

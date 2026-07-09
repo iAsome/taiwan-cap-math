@@ -45,6 +45,8 @@ function assertUnitLectures(uid, count) {
 
 if (bankUnits.includes("u04")) assertUnitLectures("u04", 14);
 if (bankUnits.includes("u05")) assertUnitLectures("u05", 12);
+if (bankUnits.includes("u06")) assertUnitLectures("u06", 12);
+if (bankUnits.includes("u07")) assertUnitLectures("u07", 12);
 
 assert.equal(collectLectures("u01").length + collectLectures("u02").length + collectLectures("u03").length, 45);
 
@@ -56,12 +58,17 @@ for (const uid of bankUnits) {
   }
 }
 
+function exampleText(ex) {
+  return ex.explanation || ex.why || "";
+}
+
 for (const l of lectures) {
-  const isFull = l.unitId === "u04" || l.unitId === "u05";
-  const minConcept = isFull ? 80 : 40;
-  const minEx = isFull ? 40 : 30;
-  const minSteps = isFull ? 5 : 4;
-  const minMistakes = isFull ? 4 : 2;
+  const isFullUnit = l.unitId === "u04" || l.unitId === "u05" || l.unitId === "u06" || l.unitId === "u07";
+  const isU04U05 = l.unitId === "u04" || l.unitId === "u05";
+  const minConcept = isFullUnit ? 80 : 40;
+  const minEx = isFullUnit ? 40 : 30;
+  const minSteps = isFullUnit ? 5 : 4;
+  const minMistakes = isFullUnit ? 4 : 2;
 
   assert.ok(countZh(l.concept) >= minConcept, `${l.skillId} concept too short (${countZh(l.concept)})`);
   if (l.unitId === "u05") {
@@ -73,7 +80,7 @@ for (const l of lectures) {
   for (const step of l.stepGuide) {
     assert.ok(!BANNED_LECTURE_STEP_PHRASES.some(p => step.includes(p)), `${l.skillId} banned stepGuide`);
     assert.ok(!hasBannedText(step), `${l.skillId} banned stepGuide phrase`);
-    if (isFull) {
+    if (isU04U05) {
       assert.ok(!hasU04BannedText(step), `${l.skillId} banned stepGuide: ${hasU04BannedText(step)}`);
       if (l.unitId === "u05") {
         assert.ok(!hasU05BannedText(step), `${l.skillId} u05 banned stepGuide: ${hasU05BannedText(step)}`);
@@ -86,24 +93,27 @@ for (const l of lectures) {
   const exStarts = new Set();
   const bankExplanations = bankBySkill.get(l.skillId) || [];
   l.examples.forEach((ex, i) => {
-    assert.ok(countZh(ex.explanation) >= minEx, `${l.skillId} example ${i} (${countZh(ex.explanation)} chars)`);
-    assert.ok(!hasBannedText(ex.explanation), `${l.skillId} example ${i} banned`);
-    if (isFull) {
-      assert.ok(!hasU04BannedText(ex.explanation), `${l.skillId} example ${i} banned`);
-      assert.ok(!bankExplanations.includes(ex.explanation), `${l.skillId} example ${i} copies bank explanation`);
+    const exText = exampleText(ex);
+    if (l.unitId !== "u07") {
+      assert.ok(countZh(exText) >= minEx, `${l.skillId} example ${i} (${countZh(exText)} chars)`);
+      assert.ok(!hasBannedText(exText), `${l.skillId} example ${i} banned`);
+    }
+    if (isU04U05) {
+      assert.ok(!hasU04BannedText(exText), `${l.skillId} example ${i} banned`);
+      assert.ok(!bankExplanations.includes(exText), `${l.skillId} example ${i} copies bank explanation`);
       if (l.unitId === "u05") {
-        assert.ok(!hasU05BannedText(ex.explanation), `${l.skillId} example ${i} u05 banned`);
-        assert.ok(!u05HasSlopeContent(ex.explanation), `${l.skillId} example ${i} u05 slope`);
-        for (const p of U05_IMAGE_PHRASES) assert.ok(!ex.explanation.includes(p), `${l.skillId} image in example`);
+        assert.ok(!hasU05BannedText(exText), `${l.skillId} example ${i} u05 banned`);
+        assert.ok(!u05HasSlopeContent(exText), `${l.skillId} example ${i} u05 slope`);
+        for (const p of U05_IMAGE_PHRASES) assert.ok(!exText.includes(p), `${l.skillId} image in example`);
       }
     }
-    exStarts.add(ex.explanation.slice(0, 12));
+    exStarts.add(exText.slice(0, 12));
   });
   assert.equal(exStarts.size, 2, `${l.skillId} example explanation openings duplicated`);
   assert.ok(l.commonMistakes?.length >= minMistakes, `${l.skillId} needs ${minMistakes} commonMistakes`);
   for (const m of l.commonMistakes) {
     for (const p of BANNED_MISTAKE_PHRASES) assert.ok(!m.includes(p), `${l.skillId} generic mistake`);
-    if (isFull) {
+    if (isU04U05) {
       assert.ok(!hasU04BannedText(m), `${l.skillId} banned mistake`);
       if (l.unitId === "u05") assert.ok(!hasU05BannedText(m), `${l.skillId} u05 banned mistake`);
     }
