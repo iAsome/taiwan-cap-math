@@ -238,10 +238,7 @@ function fixExplanation(q) {
   }
   let guard = 0;
   while (countZh(e) < 45 && guard++ < 5) {
-    const extras = [
-      "計算時要把題幹已列數字全部用進去，不能改用其他資料。",
-      "須依題意選對統計量再代入已列數字。"
-    ];
+    const extras = ["須依題意選對統計量再代入已列數字。"];
     let added = false;
     for (const extra of extras) {
       if (tailOk(q, extra) && !e.includes(extra.slice(0, 8))) {
