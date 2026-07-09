@@ -8,7 +8,15 @@ import { countZh } from "./v2-quality.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
-const U07_R4_BANNED = [
+const U07_R5_BANNED = [
+  "列式時把口語、單位與不等號方向對準題意",
+  "列式時把口語與不等號方向弄錯",
+  "口語、單位與不等號方向",
+  "對準題意",
+  "兩段條件要同時成立，端點含不含等號要逐條對照",
+  "固定費與單價要分開加總，再和預算上限比",
+  "無意義 至少",
+  "無意義 超過",
   "都不符合本題不等式或情境",
   "仍與題幹條件或計算結果不符",
   "應改選",
@@ -42,7 +50,7 @@ function loadU07() {
 }
 
 function hasBanned(text) {
-  for (const p of U07_R4_BANNED) if (text.includes(p)) return p;
+  for (const p of U07_R5_BANNED) if (text.includes(p)) return p;
   if (text.includes("只有「")) return "只有「";
   if (TEMPLATE_ONLY_RE.test(text)) return "，只有…正確。";
   return null;
