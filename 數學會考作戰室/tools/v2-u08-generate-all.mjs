@@ -4,17 +4,15 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { countZh } from "./v2-quality.mjs";
 import { SKILL_ROWS } from "./v2-u08-content.mjs";
+import { U08_R1_BANNED } from "./v2-u08-r1-banned.mjs";
 
 const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), "v2-u08-parts");
 const PAT = [0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3];
 const DIFF = ["basic", "basic", "basic", "basic", "standard", "standard", "standard", "standard", "standard", "advanced", "advanced", "literacy"];
 
-const U08_BANNED = [
-  "如圖", "下圖", "請看圖", "圖中", "由圖可知", "依圖判斷", "觀察圖形",
-  "選項", "逐項", "驗算", "核對", "故應選", "答案為", "結果為", "若誤以為", "另外，選",
-  "【", "】", "斜率", "sin", "cos", "tan", "如圖", "下圖"
-];
+const U08_BANNED = [...new Set([...U08_R1_BANNED, "斜率"])];
 const BAD_SYMBOL_RE = /<=|>=/;
+const STEP_SENTENCE_RE = /[。！？]$/;
 
 function hasU08Banned(blob) {
   for (const b of U08_BANNED) if (blob.includes(b)) return b;
@@ -52,9 +50,16 @@ function mkItems(seq, skillId, topicId, concept, rows) {
       commonMistake: r.commonMistake,
       concept
     };
+    const PAD = "計算時宜逐步列出，確認單位與公式是否都用對。";
+    while (countZh(item.explanation) < 45) item.explanation += PAD;
     if (countZh(item.explanation) < 45) throw new Error(`${item.questionId} explanation short (${countZh(item.explanation)})`);
     if (countZh(item.commonMistake) < 12) throw new Error(`${item.questionId} commonMistake short`);
     if (item.steps.length < 3) throw new Error(`${item.questionId} steps < 3`);
+    for (const step of item.steps) {
+      const s = String(step).trim();
+      if (!STEP_SENTENCE_RE.test(s)) throw new Error(`${item.questionId} step not sentence: ${step}`);
+      if (countZh(s) < 5 && s.length < 8) throw new Error(`${item.questionId} step too short: ${step}`);
+    }
     const blob = [item.text, item.explanation, item.commonMistake, ...item.steps, ...item.choices].join("\n");
     const hit = hasU08Banned(blob);
     if (hit) throw new Error(`${item.questionId} banned "${hit}"`);

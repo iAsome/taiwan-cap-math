@@ -5,17 +5,18 @@ import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { countZh } from "./v2-quality.mjs";
+import { U08_R1_BANNED } from "./v2-u08-r1-banned.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
 
 const U08_BANNED = [
-  "如圖", "下圖", "請看圖", "圖中", "由圖可知", "依圖判斷", "觀察圖形",
-  "選項", "逐項", "驗算", "核對", "故應選", "答案為", "結果為", "若誤以為", "另外，選",
-  "【", "】", "斜率", "sin", "cos", "tan"
+  ...U08_R1_BANNED,
+  "斜率"
 ];
 const BAD_SYMBOL_RE = /<=|>=/;
 const IMAGE_RE = /<img\b|<svg\b|canvas/i;
+const STEP_SENTENCE_RE = /[。！？]$/;
 const DIFF_EXPECTED = { basic: 48, standard: 60, advanced: 24, literacy: 12 };
 const AI_EXPECTED = [36, 36, 36, 36];
 const AI_PER_SKILL = [3, 3, 3, 3];
@@ -45,6 +46,17 @@ function hasDuplicateSentence(text) {
   return null;
 }
 
+function isFullStep(step) {
+  const s = String(step).trim();
+  if (!STEP_SENTENCE_RE.test(s)) return false;
+  if (countZh(s) >= 5) return true;
+  return s.length >= 8;
+}
+
+function checkStepSentence(step, questionId) {
+  assert.ok(isFullStep(step), `${questionId} step not sentence: ${step}`);
+}
+
 function checkQuestions(questions) {
   assert.equal(questions.length, 144);
   const bySkill = new Map();
@@ -58,6 +70,7 @@ function checkQuestions(questions) {
     assert.ok(countZh(q.explanation) >= 45, `${q.questionId} explanation`);
     assert.ok(countZh(q.commonMistake) >= 12, `${q.questionId} commonMistake`);
     assert.ok(q.steps.length >= 3, `${q.questionId} steps`);
+    for (const step of q.steps) checkStepSentence(step, q.questionId);
     const blob = [q.text, q.explanation, q.commonMistake, ...q.steps, ...q.choices].join("\n");
     assert.ok(!hasBanned(blob), `${q.questionId} banned: ${hasBanned(blob)}`);
     assert.ok(!BAD_SYMBOL_RE.test(blob), `${q.questionId} bad symbol`);
@@ -90,6 +103,7 @@ function checkLectures(lectures) {
     assert.ok(l.examples.length >= 2, l.skillId);
     assert.ok(l.commonMistakes.length >= 4, l.skillId);
     assert.ok(!hasBanned(JSON.stringify(l)), `${l.skillId} lecture banned`);
+    for (const s of l.stepGuide) checkStepSentence(s, `${l.skillId} stepGuide`);
   }
 }
 
