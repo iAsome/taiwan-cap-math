@@ -6,12 +6,13 @@ import { countZh } from "./v2-quality.mjs";
 import { SKILL_ROWS } from "./v2-u08-content.mjs";
 import { U08_R1_BANNED } from "./v2-u08-r1-banned.mjs";
 import { U08_R2_BANNED } from "./v2-u08-r2-banned.mjs";
+import { U08_R3_BANNED } from "./v2-u08-r3-banned.mjs";
 
 const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), "v2-u08-parts");
 const PAT = [0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3];
 const DIFF = ["basic", "basic", "basic", "basic", "standard", "standard", "standard", "standard", "standard", "advanced", "advanced", "literacy"];
 
-const U08_BANNED = [...new Set([...U08_R1_BANNED, ...U08_R2_BANNED, "斜率"])];
+const U08_BANNED = [...new Set([...U08_R1_BANNED, ...U08_R2_BANNED, ...U08_R3_BANNED, "斜率"])];
 const BAD_SYMBOL_RE = /<=|>=/;
 const STEP_SENTENCE_RE = /[。！？]$/;
 

@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 import { countZh } from "./v2-quality.mjs";
 import { U08_R1_BANNED } from "./v2-u08-r1-banned.mjs";
 import { U08_R2_BANNED } from "./v2-u08-r2-banned.mjs";
+import { U08_R3_BANNED } from "./v2-u08-r3-banned.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
@@ -14,6 +15,7 @@ const v2 = path.join(root, "v2");
 const U08_BANNED = [
   ...U08_R1_BANNED,
   ...U08_R2_BANNED,
+  ...U08_R3_BANNED,
   "斜率"
 ];
 const BAD_SYMBOL_RE = /<=|>=/;
