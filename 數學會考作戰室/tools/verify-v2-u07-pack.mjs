@@ -8,7 +8,11 @@ import { countZh } from "./v2-quality.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
-const U07_R5_BANNED = [
+const U07_R6_BANNED = [
+  "仍不符合至少",
+  "取整或取端點前要先確認",
+  "符合題意。",
+  "代回題意檢查",
   "列式時把口語、單位與不等號方向對準題意",
   "列式時把口語與不等號方向弄錯",
   "口語、單位與不等號方向",
@@ -50,7 +54,7 @@ function loadU07() {
 }
 
 function hasBanned(text) {
-  for (const p of U07_R5_BANNED) if (text.includes(p)) return p;
+  for (const p of U07_R6_BANNED) if (text.includes(p)) return p;
   if (text.includes("只有「")) return "只有「";
   if (TEMPLATE_ONLY_RE.test(text)) return "，只有…正確。";
   return null;
@@ -84,6 +88,7 @@ function checkQuestions(questions) {
     assert.ok(!BAD_SYMBOL_RE.test(blob), `${q.questionId} bad symbol`);
     assert.ok(!IMAGE_RE.test(blob), `${q.questionId} image tag`);
     assert.ok(!hasDuplicateSentence(q.explanation), `${q.questionId} duplicate`);
+    assert.ok(!q.explanation.includes("只有"), `${q.questionId} explanation 只有`);
     if (q.skillId === "inequality-number-line") assert.ok(/空心|實心|向左|向右|數線/.test(blob), q.questionId);
     if (q.skillId === "inequality-sign-flip") assert.ok(/變號|反向|乘.*負|除.*負/.test(q.explanation), q.questionId);
     if (q.skillId === "inequality-budget") assert.ok(/固定|基本|單價|總價|總費|預算|每/.test(q.explanation), q.questionId);

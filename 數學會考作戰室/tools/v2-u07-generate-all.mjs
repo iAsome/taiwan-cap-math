@@ -10,6 +10,10 @@ const PAT = [0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3];
 const DIFF = ["basic", "basic", "basic", "basic", "standard", "standard", "standard", "standard", "standard", "advanced", "advanced", "literacy"];
 
 const U07_BANNED = [
+  "仍不符合至少",
+  "取整或取端點前要先確認",
+  "符合題意。",
+  "代回題意檢查",
   "列式時把口語、單位與不等號方向對準題意",
   "列式時把口語與不等號方向弄錯",
   "口語、單位與不等號方向",
@@ -65,6 +69,7 @@ function mkItems(seq, skillId, topicId, concept, rows) {
       explanation: r.explanation, steps: r.steps,
       commonMistake: r.commonMistake, concept
     };
+    if (item.explanation.includes("只有")) throw new Error(`${item.questionId} explanation 只有`);
     if (countZh(item.explanation) < 45) throw new Error(`${item.questionId} explanation short`);
     if (countZh(item.commonMistake) < 12) throw new Error(`${item.questionId} commonMistake short`);
     if (item.steps.length < 3) throw new Error(`${item.questionId} steps < 3`);
