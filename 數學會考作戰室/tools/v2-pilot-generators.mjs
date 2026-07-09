@@ -1,5 +1,6 @@
 import { mkQuestion, mkLecture } from "./v2-shared.mjs";
 import { ANSWER_INDEX_PATTERN, countZh } from "./v2-quality.mjs";
+import { PILOT_CONTENT } from "./v2-pilot-content.mjs";
 
 /** ponytail: pilot content lives inline; upgrade path = split SKILL_META per unit file if this grows past ~3k lines */
 const PILOT_UNITS = {
@@ -250,14 +251,14 @@ const PILOT_UNITS = {
 
 const SKILL_META = {
   "integer-number-classification": {
-    "concept": "依整數、有理數與無理數的定義判斷數的歸類，須能分辨可否寫成兩整數之比",
+    "concept": "整數沒有小數或分數部分；有理數可寫成兩整數之比；無理數不能。判斷時先看題目要哪一類，再逐項檢查",
     "lectureConcept": "國中數與量單元把數分成整數、有理數、無理數等層級；判斷時先看能否寫成 p/q（q 為非零整數），並注意 0 與 1 的特殊地位，有限小數仍屬有理數",
     "formula": "",
     "stepGuide": [
-      "讀題確認要找整數、有理數還是無理數",
-      "檢查各選項能否寫成兩整數之比或是否為整數",
-      "用反例排除根號無限不循環小數等無理數",
-      "對照定義選出唯一符合者"
+      "先看題目要整數、有理數還是無理數",
+      "整數看有無分數或小數部分；有理數看能否寫成 p/q",
+      "根號數先化簡：√4=2 是有理數，√2 才是無理數",
+      "有限小數、循環小數、分數都是有理數"
     ],
     "lectureMistakes": [
       "看到小數就當無理數，忽略有限小數仍是有理數",
@@ -355,7 +356,7 @@ const SKILL_META = {
     ]
   },
   "integer-absolute-value-basic": {
-    "concept": "絕對值表示數到原點的距離，結果恆為非負數",
+    "concept": "絕對值是數到原點的距離，距離不會是負數，所以絕對值的結果恆為非負",
     "lectureConcept": "絕對值 |a| 是 a 到數線原點的距離，因此永遠不為負；正數的絕對值是自己，負數的絕對值是其相反數，這是後續距離與方程式應用的基礎",
     "formula": "|a| = a（a ≥ 0）；|a| = -a（a < 0）",
     "stepGuide": [
@@ -3280,35 +3281,21 @@ function arrangeChoices(correct, wrongs, answerIndex) {
   return choices;
 }
 
-function buildSteps(skillId, text, correct, brief) {
-  const meta = SKILL_META[skillId];
-  return [
-    meta.stepGuide[0] + "（本題：" + text.slice(0, 14).replace(/"/g, "") + "）",
-    meta.stepGuide[1],
-    meta.stepGuide[2] + "，得 " + correct
-  ];
-}
-
-function buildExplanation(concept, steps, correct, wrongSample) {
-  const proc = steps.join("；");
-  return concept + "。解題過程：" + proc + "。故正確為「" + correct + "」。選項「" + wrongSample + "」不符合上述判斷或計算，常見原因是步驟跳躍或符號處理錯誤。";
-}
-
 function buildQuestionsForUnit(unitId, pilotDef) {
   const questions = [];
   pilotDef.skills.forEach((s, i) => {
     const templates = RAW_Q[s.skillId];
     const meta = SKILL_META[s.skillId];
+    const contents = PILOT_CONTENT[s.skillId];
     if (!templates || templates.length !== 4) throw new Error("Need 4 questions for " + s.skillId);
+    if (!contents || contents.length !== 4) throw new Error("Need 4 content blocks for " + s.skillId);
     templates.forEach((t, vi) => {
-      const [text, oldChoices, oldAns, brief] = t;
+      const [text, oldChoices, oldAns] = t;
+      const { steps, explanation, commonMistake } = contents[vi];
       const correct = oldChoices[oldAns];
       const wrongs = oldChoices.filter((_, idx) => idx !== oldAns);
       const answerIndex = ANSWER_INDEX_PATTERN[vi];
       const choices = arrangeChoices(correct, wrongs, answerIndex);
-      const wrongSample = choices[(answerIndex + 1) % 4];
-      const steps = buildSteps(s.skillId, text, correct, brief);
-      const explanation = buildExplanation(meta.concept, steps, correct, wrongSample);
       const diff = s.skillId.includes("literacy") ? (vi % 2 ? "literacy" : "standard") : (vi < 2 ? "basic" : "standard");
       questions.push(mkQuestion({
         unitId,
@@ -3323,7 +3310,7 @@ function buildQuestionsForUnit(unitId, pilotDef) {
         answerIndex,
         explanation,
         steps,
-        commonMistake: meta.variantMistakes[vi],
+        commonMistake,
         concept: meta.concept,
         tags: [pilotDef.domain, s.title, diff === "basic" ? "基礎概念" : "應用"],
         estimatedTimeSec: diff === "literacy" ? 75 : 45
@@ -3337,14 +3324,13 @@ function buildLecturesForUnit(unitId, pilotDef) {
   return pilotDef.skills.map(s => {
     const meta = SKILL_META[s.skillId];
     const templates = RAW_Q[s.skillId];
-    const examples = templates.slice(0, 2).map(([q, choices, ans]) => {
-      const correct = choices[ans];
-      const wrongSample = choices[(ans + 1) % 4];
-      const steps = buildSteps(s.skillId, q, correct, "");
-      return {
-        question: q,
-        explanation: buildExplanation(meta.concept, steps, correct, wrongSample)
-      };
+    const contents = PILOT_CONTENT[s.skillId];
+    const examples = templates.slice(0, 2).map(([q], ei) => {
+      const c = contents[ei];
+      const lec = c.lectureExplanation && countZh(c.lectureExplanation) >= 30
+        ? c.lectureExplanation
+        : c.explanation;
+      return { question: q, explanation: lec };
     });
     return mkLecture({
       unitId,

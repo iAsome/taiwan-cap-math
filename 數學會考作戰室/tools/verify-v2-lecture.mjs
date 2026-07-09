@@ -1,6 +1,11 @@
 import assert from "node:assert/strict";
 import { loadV2Context, OLD_TEMPLATE_RE } from "./v2-load.mjs";
-import { countZh, BANNED_LECTURE_STEP_PHRASES } from "./v2-quality.mjs";
+import {
+  countZh,
+  hasBannedText,
+  BANNED_LECTURE_STEP_PHRASES,
+  BANNED_MISTAKE_PHRASES
+} from "./v2-quality.mjs";
 
 const w = loadV2Context();
 const pilotSkills = new Set();
@@ -24,11 +29,21 @@ for (const l of lectures) {
   assert.ok(countZh(l.concept) >= 40, `${l.skillId} concept too short`);
   assert.ok(l.stepGuide?.length >= 4, `${l.skillId} stepGuide need 4 steps`);
   for (const step of l.stepGuide) {
-    assert.ok(!BANNED_LECTURE_STEP_PHRASES.some(p => step.includes(p)), `${l.skillId} banned stepGuide`);
+    assert.ok(!BANNED_LECTURE_STEP_PHRASES.some(p => step.includes(p)), `${l.skillId} banned stepGuide: ${step}`);
+    assert.ok(!hasBannedText(step), `${l.skillId} banned stepGuide phrase`);
   }
   assert.ok(l.examples?.length >= 2, `${l.skillId} needs 2 examples`);
-  l.examples.forEach((ex, i) => assert.ok(countZh(ex.explanation) >= 30, `${l.skillId} example ${i}`));
+  const exStarts = new Set();
+  l.examples.forEach((ex, i) => {
+    assert.ok(countZh(ex.explanation) >= 30, `${l.skillId} example ${i}`);
+    assert.ok(!hasBannedText(ex.explanation), `${l.skillId} example ${i} banned: ${hasBannedText(ex.explanation)}`);
+    exStarts.add(ex.explanation.slice(0, 12));
+  });
+  assert.equal(exStarts.size, 2, `${l.skillId} example explanation openings duplicated`);
   assert.ok(l.commonMistakes?.length >= 2, `${l.skillId} needs 2 commonMistakes`);
+  for (const m of l.commonMistakes) {
+    for (const p of BANNED_MISTAKE_PHRASES) assert.ok(!m.includes(p), `${l.skillId} generic mistake`);
+  }
   const blob = JSON.stringify(l);
   assert.ok(!OLD_TEMPLATE_RE.test(blob), `${l.skillId} old template text`);
 }

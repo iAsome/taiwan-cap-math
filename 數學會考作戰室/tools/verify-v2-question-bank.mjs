@@ -3,8 +3,11 @@ import { loadV2Context } from "./v2-load.mjs";
 import {
   countZh,
   hasBannedStep,
+  hasBannedText,
   conceptQuality,
-  explanationQuality
+  explanationQuality,
+  explanationHasConcreteContent,
+  BANNED_MISTAKE_PHRASES
 } from "./v2-quality.mjs";
 
 const w = loadV2Context();
@@ -36,13 +39,18 @@ for (const q of banks) {
   bySkill.get(key).push(q);
 
   assert.ok(countZh(q.explanation) >= 30, `${q.questionId} explanation too short`);
-  assert.ok(!hasBannedStep(q.steps), `${q.questionId} banned step phrase`);
+  assert.ok(!hasBannedStep(q.steps), `${q.questionId} banned step: ${hasBannedStep(q.steps)}`);
+  assert.ok(!hasBannedText(q.explanation), `${q.questionId} banned explanation: ${hasBannedText(q.explanation)}`);
+  assert.ok(!hasBannedText(q.steps), `${q.questionId} banned steps text: ${hasBannedText(q.steps)}`);
   assert.ok(q.steps.length >= 3, `${q.questionId} needs 3 steps`);
   const cq = conceptQuality(q.concept, q.explanation);
   assert.ok(!cq, `${q.questionId} concept: ${cq}`);
   const eq = explanationQuality(q.explanation, q.concept);
   assert.ok(!eq, `${q.questionId} explanation: ${eq}`);
-  assert.ok(!/正確答案[：:]\s*[A-D]/i.test(q.explanation), `${q.questionId} exposes answer letter`);
+  assert.ok(explanationHasConcreteContent(q.explanation, q.choices), `${q.questionId} explanation not concrete`);
+  for (const m of BANNED_MISTAKE_PHRASES) {
+    assert.ok(!q.commonMistake.includes(m), `${q.questionId} generic commonMistake`);
+  }
 }
 
 for (const [key, qs] of bySkill) {
@@ -51,7 +59,11 @@ for (const [key, qs] of bySkill) {
   const texts = qs.map(q => q.text.slice(0, 20));
   assert.equal(new Set(texts).size, 4, `${key} question texts too similar`);
   const indices = new Set(qs.map(q => q.answerIndex));
-  assert.ok(indices.size >= 2, `${key} answerIndex need >= 2 distinct`);
+  assert.equal(indices.size, 4, `${key} answerIndex need 0-3 each once`);
+  const stepSets = new Set(qs.map(q => q.steps.join("|")));
+  assert.equal(stepSets.size, 4, `${key} steps duplicated across variants`);
+  const expStarts = new Set(qs.map(q => q.explanation.slice(0, 12)));
+  assert.equal(expStarts.size, 4, `${key} explanation openings duplicated`);
 }
 
 for (const uid of ["u01", "u02", "u03"]) {
