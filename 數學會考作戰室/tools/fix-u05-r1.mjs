@@ -133,19 +133,19 @@ function blob(q) {
 
 function ensureCommonMistake(q) {
   if (countZh(q.commonMistake) >= 12) return;
-  const base = q.commonMistake.replace(/。+$/, "");
-  q.commonMistake = `${base}，要回到題目條件逐項核對。`;
+  const w = q.choices.find((_, i) => i !== q.answerIndex) || "";
+  q.commonMistake = `${q.commonMistake.replace(/。$/, "")}，常見誤選「${String(w).slice(0, 10)}」。`;
 }
 
 function ensureExplanation(q) {
-  let guard = 0;
-  while (countZh(q.explanation) < 45 && guard++ < 3) {
-    const wrongs = q.choices.filter((_, i) => i !== q.answerIndex);
-    const w1 = wrongs[0] || "其他選項";
-    const w2 = wrongs[1] || wrongs[0] || "其他選項";
-    const tail = `選「${w1}」與「${w2}」都不符合題目中的坐標或方程式，要用題目數字逐項驗算後再決定。`;
-    q.explanation = q.explanation.replace(/。?\s*$/, "。") + tail;
-  }
+  /* U05-R2: do not append generic filler tails */
+  if (countZh(q.explanation) >= 45) return;
+  const wrongs = q.choices.filter((_, i) => i !== q.answerIndex);
+  const correct = q.choices[q.answerIndex];
+  const tail = wrongs[0]
+    ? `；「${wrongs[0]}」不符合本題條件，正確為「${correct}」。`
+    : `；正確答案為「${correct}」。`;
+  q.explanation = q.explanation.replace(/。?\s*$/, "。") + tail;
 }
 
 function patchItem(q) {
