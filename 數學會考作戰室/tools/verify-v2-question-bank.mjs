@@ -13,6 +13,7 @@ import {
   hasU04BannedText,
   hasU05BannedText,
   u05ExplanationTooVague,
+  u05HasSlopeContent,
   U05_IMAGE_PHRASES,
   stepsEmbedQuestionText,
   explanationOverRepeatsText
@@ -52,10 +53,21 @@ function validateFullBankQuestion(q) {
 
 function validateU05Question(q) {
   validateFullBankQuestion(q);
+  assert.ok(countZh(q.explanation) >= 45, `${q.questionId} u05 explanation too short (${countZh(q.explanation)})`);
+  assert.ok(countZh(q.commonMistake) >= 12, `${q.questionId} u05 commonMistake too short (${countZh(q.commonMistake)})`);
   const u05Ban = hasU05BannedText(q.explanation) || hasU05BannedText(q.steps) || hasU05BannedText(q.commonMistake) || hasU05BannedText(q.text);
   assert.ok(!u05Ban, `${q.questionId} u05 banned: ${u05Ban}`);
   const vague = u05ExplanationTooVague(q.explanation);
   assert.ok(!vague, `${q.questionId} u05 vague explanation: ${vague}`);
+  if (!q.deferredToUnit) {
+    const slopeHit =
+      u05HasSlopeContent(q.text) ||
+      u05HasSlopeContent(q.explanation) ||
+      u05HasSlopeContent(q.steps) ||
+      u05HasSlopeContent(q.commonMistake) ||
+      u05HasSlopeContent(q.choices);
+    assert.ok(!slopeHit, `${q.questionId} u05 slope content (defer to u15)`);
+  }
   for (const p of U05_IMAGE_PHRASES) {
     assert.ok(!q.text.includes(p) && !q.explanation.includes(p), `${q.questionId} image phrase ${p}`);
   }

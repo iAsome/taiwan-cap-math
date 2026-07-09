@@ -53,10 +53,47 @@ export const U05_BANNED_PHRASES = [
   "下圖",
   "請看圖",
   "請看下圖",
-  "代入即可"
+  "圖中",
+  "由圖可知",
+  "依圖判斷",
+  "代入即可",
+  "首重",
+  "次重",
+  "三重",
+  "四重",
+  "五重",
+  "六重",
+  "七重",
+  "八重",
+  "九重",
+  "十重",
+  "十一重",
+  "十二素養",
+  "【",
+  "】",
+  "易錯在只記口訣",
+  "未套數字",
+  "帶入後才能排除",
+  "錯選通常是把正負方向或軸向對調",
+  "回到定義逐項核對",
+  "干擾項常漏看",
+  "請再核對一次計算與題意",
+  "套數字",
+  "這類題不能憑印象"
 ];
 
-export const U05_IMAGE_PHRASES = ["如圖", "下圖", "請看圖", "請看下圖"];
+export const U05_IMAGE_PHRASES = ["如圖", "下圖", "請看圖", "請看下圖", "圖中", "由圖可知", "依圖判斷"];
+
+/** U05 formal bank must not use slope-formula vocabulary (deferred to U15). */
+export const U05_SLOPE_RE = /斜率|Δy|Δx|\bΔy\b|\bΔx\b/;
+
+export function u05HasSlopeContent(textOrArray) {
+  const parts = Array.isArray(textOrArray) ? textOrArray : [textOrArray];
+  for (const part of parts) {
+    if (typeof part === "string" && U05_SLOPE_RE.test(part)) return true;
+  }
+  return false;
+}
 
 /** Machine variant padding like 01下列… not math quantities like 10 隻 */
 export const U04_EXPLANATION_PREFIX_RE = /^(0[1-9]|1[0-2])[\u4e00-\u9fff{]/;

@@ -5,6 +5,7 @@ import {
   hasBannedText,
   hasU04BannedText,
   hasU05BannedText,
+  u05HasSlopeContent,
   U05_IMAGE_PHRASES,
   BANNED_LECTURE_STEP_PHRASES,
   BANNED_MISTAKE_PHRASES
@@ -63,6 +64,11 @@ for (const l of lectures) {
   const minMistakes = isFull ? 4 : 2;
 
   assert.ok(countZh(l.concept) >= minConcept, `${l.skillId} concept too short (${countZh(l.concept)})`);
+  if (l.unitId === "u05") {
+    assert.ok(!hasU05BannedText(l.concept), `${l.skillId} u05 banned concept`);
+    assert.ok(!u05HasSlopeContent(l.concept), `${l.skillId} u05 slope in concept`);
+    assert.ok(!u05HasSlopeContent(l.formula), `${l.skillId} u05 slope in formula`);
+  }
   assert.ok(l.stepGuide?.length >= minSteps, `${l.skillId} stepGuide need ${minSteps} steps`);
   for (const step of l.stepGuide) {
     assert.ok(!BANNED_LECTURE_STEP_PHRASES.some(p => step.includes(p)), `${l.skillId} banned stepGuide`);
@@ -71,6 +77,7 @@ for (const l of lectures) {
       assert.ok(!hasU04BannedText(step), `${l.skillId} banned stepGuide: ${hasU04BannedText(step)}`);
       if (l.unitId === "u05") {
         assert.ok(!hasU05BannedText(step), `${l.skillId} u05 banned stepGuide: ${hasU05BannedText(step)}`);
+        assert.ok(!u05HasSlopeContent(step), `${l.skillId} u05 slope in stepGuide`);
         for (const p of U05_IMAGE_PHRASES) assert.ok(!step.includes(p), `${l.skillId} image in stepGuide`);
       }
     }
@@ -86,6 +93,7 @@ for (const l of lectures) {
       assert.ok(!bankExplanations.includes(ex.explanation), `${l.skillId} example ${i} copies bank explanation`);
       if (l.unitId === "u05") {
         assert.ok(!hasU05BannedText(ex.explanation), `${l.skillId} example ${i} u05 banned`);
+        assert.ok(!u05HasSlopeContent(ex.explanation), `${l.skillId} example ${i} u05 slope`);
         for (const p of U05_IMAGE_PHRASES) assert.ok(!ex.explanation.includes(p), `${l.skillId} image in example`);
       }
     }

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-/** Emit v2-u05-parts/*.mjs — 144 hand-specified U05 questions + 12 lectures. */
+/** DEPRECATED — do not run. U05 parts are hand-maintained; use fix-u05-r1.mjs instead. */
+throw new Error("v2-u05-generate-all.mjs is disabled; edit v2-u05-parts/*.mjs directly.");
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
