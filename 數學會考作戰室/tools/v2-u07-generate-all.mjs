@@ -1,0 +1,118 @@
+#!/usr/bin/env node
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { countZh } from "./v2-quality.mjs";
+import { SKILL_ROWS } from "./v2-u07-content.mjs";
+
+const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), "v2-u07-parts");
+const PAT = [0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3];
+const DIFF = ["basic", "basic", "basic", "basic", "standard", "standard", "standard", "standard", "standard", "advanced", "advanced", "literacy"];
+
+const U07_BANNED = [
+  "仍不符合至少",
+  "取整或取端點前要先確認",
+  "符合題意。",
+  "代回題意檢查",
+  "列式時把口語、單位與不等號方向對準題意",
+  "列式時把口語與不等號方向弄錯",
+  "口語、單位與不等號方向",
+  "對準題意",
+  "兩段條件要同時成立，端點含不含等號要逐條對照",
+  "固定費與單價要分開加總，再和預算上限比",
+  "無意義 至少",
+  "無意義 超過",
+  "都不符合本題不等式或情境",
+  "仍與題幹條件或計算結果不符", "應改選", "與本題整理出的不等式解集", "不能選",
+  "語意或計算與題意不符", "因此可排除", "應回到列式", "不等號語意逐項核對",
+  "逐項核對", "做題時應同時檢查", "端點條件", "應回到", "另外，選",
+  "不符合題目條件", "逐項驗算後再決定", "步驟跳躍", "符號處理錯誤",
+  "若誤以為", "答案為", "結果為", "【", "】", "如圖", "下圖", "請看圖",
+  "<=", ">=", "还", "却", "只差一點", "對不起來", "对不起来",
+  "代入固定費與單價後", "代回題意檢查後不符合",
+  "情境列式要對準", "關鍵字、單位與加減意義", "本題應列", "再對照題幹",
+  "確認一次不等號方向", "本題應選", "列式前要先對照題幹",
+  "代數解還要配合", "解集敘述要對準", "代回情境時要同時", "預算題要把固定費",
+  "且的兩段條件要同時", "同加減常數時", "移項時常數要變號", "應用題先列式"
+];
+const TEMPLATE_ONLY_RE = /，只有[^。]{0,60}正確。/;
+
+function hasU07Banned(blob) {
+  for (const b of U07_BANNED) if (blob.includes(b)) return b;
+  if (blob.includes("只有「")) return "只有「";
+  if (TEMPLATE_ONLY_RE.test(blob)) return "，只有…正確。";
+  return null;
+}
+
+function reorderChoices(choices, answerIndex, targetIndex) {
+  const correct = choices[answerIndex];
+  const wrongs = choices.filter((_, i) => i !== answerIndex);
+  const out = new Array(4);
+  let wi = 0;
+  for (let i = 0; i < 4; i++) {
+    if (i === targetIndex) out[i] = correct;
+    else out[i] = wrongs[wi++];
+  }
+  return out;
+}
+
+function mkItems(seq, skillId, topicId, concept, rows) {
+  if (rows.length !== 12) throw new Error(`${skillId} need 12 rows, got ${rows.length}`);
+  return rows.map((r, i) => {
+    const vi = i + 1;
+    const want = PAT[i];
+    const choices = reorderChoices(r.choices, r.answerIndex, want);
+    const item = {
+      questionId: `u07-s${String(seq).padStart(3, "0")}-v${String(vi).padStart(3, "0")}`,
+      skillId, topicId, difficulty: DIFF[i],
+      text: r.text, choices, answerIndex: want,
+      explanation: r.explanation, steps: r.steps,
+      commonMistake: r.commonMistake, concept
+    };
+    if (item.explanation.includes("只有")) throw new Error(`${item.questionId} explanation 只有`);
+    if (countZh(item.explanation) < 45) throw new Error(`${item.questionId} explanation short`);
+    if (countZh(item.commonMistake) < 12) throw new Error(`${item.questionId} commonMistake short`);
+    if (item.steps.length < 3) throw new Error(`${item.questionId} steps < 3`);
+    const blob = [item.text, item.explanation, item.commonMistake, ...item.steps, ...item.choices].join("\n");
+    const hit = hasU07Banned(blob);
+    if (hit) throw new Error(`${item.questionId} banned "${hit}"`);
+    return item;
+  });
+}
+
+function buildParts() {
+  const allItems = [];
+  const allLecs = [];
+  for (const sk of SKILL_ROWS) {
+    const items = mkItems(sk.seq, sk.skillId, sk.topicId, sk.concept, sk.rows);
+    allItems.push(...items);
+    allLecs.push(sk.lecture);
+  }
+  return { allItems, allLecs };
+}
+
+function writePart(name, items, lectures, startSeq, endSeq) {
+  const partItems = items.filter(q => {
+    const s = Number(q.questionId.match(/^u07-s(\d+)/)[1]);
+    return s >= startSeq && s <= endSeq;
+  });
+  const partLecs = lectures.filter(l => {
+    const sk = SKILL_ROWS.find(x => x.skillId === l.skillId);
+    return sk && sk.seq >= startSeq && sk.seq <= endSeq;
+  });
+  const exportItems = `export const U07_PART_${name} = ${JSON.stringify(partItems, null, 2)};\n`;
+  const exportLecs = `export const U07_LECTURES_${name} = ${JSON.stringify(partLecs, null, 2)};\n`;
+  fs.mkdirSync(OUT, { recursive: true });
+  fs.writeFileSync(path.join(OUT, `${name.toLowerCase().replace(/_/g, "-")}.mjs`), exportItems + "\n" + exportLecs);
+  console.log(`wrote ${name}: ${partItems.length} Q, ${partLecs.length} lectures`);
+}
+
+const { allItems, allLecs } = buildParts();
+if (allItems.length !== 144) throw new Error(`expected 144 items, got ${allItems.length}`);
+if (allLecs.length !== 12) throw new Error(`expected 12 lectures, got ${allLecs.length}`);
+
+writePart("S001_S003", allItems, allLecs, 1, 3);
+writePart("S004_S006", allItems, allLecs, 4, 6);
+writePart("S007_S009", allItems, allLecs, 7, 9);
+writePart("S010_S012", allItems, allLecs, 10, 12);
+console.log("v2-u07-parts written OK");
