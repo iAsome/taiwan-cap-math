@@ -126,7 +126,7 @@ window.MATH_LECTURE_V2_U08 = [
     ],
     "examples": [
       {
-        "prompt": "兩角 48、72，求第三角。",
+        "prompt": "兩角 48、72，求另一內角。",
         "answer": "60 度",
         "why": "180 減 120 得 60。"
       },

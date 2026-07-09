@@ -5,12 +5,13 @@ import { fileURLToPath } from "node:url";
 import { countZh } from "./v2-quality.mjs";
 import { SKILL_ROWS } from "./v2-u08-content.mjs";
 import { U08_R1_BANNED } from "./v2-u08-r1-banned.mjs";
+import { U08_R2_BANNED } from "./v2-u08-r2-banned.mjs";
 
 const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), "v2-u08-parts");
 const PAT = [0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3];
 const DIFF = ["basic", "basic", "basic", "basic", "standard", "standard", "standard", "standard", "standard", "advanced", "advanced", "literacy"];
 
-const U08_BANNED = [...new Set([...U08_R1_BANNED, "斜率"])];
+const U08_BANNED = [...new Set([...U08_R1_BANNED, ...U08_R2_BANNED, "斜率"])];
 const BAD_SYMBOL_RE = /<=|>=/;
 const STEP_SENTENCE_RE = /[。！？]$/;
 
@@ -50,8 +51,6 @@ function mkItems(seq, skillId, topicId, concept, rows) {
       commonMistake: r.commonMistake,
       concept
     };
-    const PAD = "計算時宜逐步列出，確認單位與公式是否都用對。";
-    while (countZh(item.explanation) < 45) item.explanation += PAD;
     if (countZh(item.explanation) < 45) throw new Error(`${item.questionId} explanation short (${countZh(item.explanation)})`);
     if (countZh(item.commonMistake) < 12) throw new Error(`${item.questionId} commonMistake short`);
     if (item.steps.length < 3) throw new Error(`${item.questionId} steps < 3`);

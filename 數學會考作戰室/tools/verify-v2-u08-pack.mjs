@@ -6,12 +6,14 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { countZh } from "./v2-quality.mjs";
 import { U08_R1_BANNED } from "./v2-u08-r1-banned.mjs";
+import { U08_R2_BANNED } from "./v2-u08-r2-banned.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
 
 const U08_BANNED = [
   ...U08_R1_BANNED,
+  ...U08_R2_BANNED,
   "斜率"
 ];
 const BAD_SYMBOL_RE = /<=|>=/;
@@ -46,6 +48,16 @@ function hasDuplicateSentence(text) {
   return null;
 }
 
+function hasDuplicateSteps(steps) {
+  const seen = new Set();
+  for (const step of steps) {
+    const s = String(step).trim();
+    if (seen.has(s)) return s;
+    seen.add(s);
+  }
+  return null;
+}
+
 function isFullStep(step) {
   const s = String(step).trim();
   if (!STEP_SENTENCE_RE.test(s)) return false;
@@ -71,6 +83,7 @@ function checkQuestions(questions) {
     assert.ok(countZh(q.commonMistake) >= 12, `${q.questionId} commonMistake`);
     assert.ok(q.steps.length >= 3, `${q.questionId} steps`);
     for (const step of q.steps) checkStepSentence(step, q.questionId);
+    assert.ok(!hasDuplicateSteps(q.steps), `${q.questionId} duplicate step: ${hasDuplicateSteps(q.steps)}`);
     const blob = [q.text, q.explanation, q.commonMistake, ...q.steps, ...q.choices].join("\n");
     assert.ok(!hasBanned(blob), `${q.questionId} banned: ${hasBanned(blob)}`);
     assert.ok(!BAD_SYMBOL_RE.test(blob), `${q.questionId} bad symbol`);
