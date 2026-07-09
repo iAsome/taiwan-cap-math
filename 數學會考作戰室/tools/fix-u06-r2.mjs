@@ -295,20 +295,7 @@ function patchLecture(l) {
 }
 
 async function main() {
-  for (const file of fs.readdirSync(PART_DIR).filter(f => f.endsWith(".mjs")).sort()) {
-    const mod = await import(pathToFileURL(path.join(PART_DIR, file)).href + "?r2c=" + Date.now());
-    const ik = Object.keys(mod).find(k => k.startsWith("U06_PART"));
-    const lk = Object.keys(mod).find(k => k.startsWith("U06_LECTURES"));
-    const used = new Set();
-    for (const q of mod[ik]) patchQuestion(q, used);
-    for (const l of mod[lk]) patchLecture(l);
-    fs.writeFileSync(
-      path.join(PART_DIR, file),
-      `export const ${ik} = ${JSON.stringify(mod[ik], null, 2)};\n\nexport const ${lk} = ${JSON.stringify(mod[lk], null, 2)};\n`,
-      "utf8"
-    );
-    console.log("r2", file);
-  }
+  // ponytail: stubbed — R3 hand-rewrites replace this auto-patcher; do not re-run.
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
