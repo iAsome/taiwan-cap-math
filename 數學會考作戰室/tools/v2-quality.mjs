@@ -88,7 +88,33 @@ export const U05_BANNED_PHRASES = [
   "逐項核對",
   "逐項驗算",
   "帶入題目數字檢查",
-  "請把題目中的每個數字代入算式"
+  "請把題目中的每個數字代入算式",
+  "都不符合",
+  "題目條件逐項",
+  "與題目設定",
+  "方程式條件",
+  "故本題應選",
+  "勿把",
+  "誤當本題答案",
+  "選「",
+  "選 (",
+  "應為",
+  "卻寫成",
+  "計算或代入錯誤",
+  "正方向或 x、y 意義不符",
+  "要用題目",
+  "不符合本題條件",
+  "不符合方程式",
+  "正確數值應為",
+  "把平移方向或 x、y 的加減弄反"
+];
+
+/** U05-R3 regex bans (template hooks too broad for substring-only) */
+export const U05_R3_REGEX_BANS = [
+  [/選\s*[「(]/, "選「/選("],
+  [/選\s+\(-?[\d.]+\s*,\s*-?[\d.]+\)\s*時/, "選 (...) 時"],
+  [/選\s+「[^」]+」\s*與/, "選「...」與"],
+  [/應為.{1,20}卻寫成/, "應為/卻寫成"]
 ];
 
 /** Strip regexes for U05-R2 cleanup script */
@@ -104,6 +130,23 @@ export const U05_R2_FILLER_RES = [
   /會考題常把軸上點與象限混在一起，解題時要回到 x、y 的正負與是否為零逐項核對。?\s*/g,
   /帶入題目數字檢查每一個坐標或式子是否成立。?\s*/g,
   /請把題目中的每個數字代入算式後再選答案。?\s*/g
+];
+
+/** Strip regexes for U05-R3 cleanup script */
+export const U05_R3_FILLER_RES = [
+  /選\s+\([^)]+\)\s*時，[^。]+。?\s*/g,
+  /「[^」]+」不符合[^。]+。?\s*/g,
+  /「[^」]+」是截距點坐標，但題目問的是截距值。?\s*/g,
+  /「[^」]+」只是數值，題目要的是截距點坐標。?\s*/g,
+  /「[^」]+」不符合方程式或直線圖形的方向描述。?\s*/g,
+  /「[^」]+」是套用寬高或距離公式時算錯。?\s*/g,
+  /「[^」]+」無法同時滿足兩條直線方程式。?\s*/g,
+  /「[^」]+」與題目設定的正方向或 x、y 意義不符。?\s*/g,
+  /「[^」]+」把平移方向或 x、y 的加減弄反。?\s*/g,
+  /[^。]*計算或代入錯誤[^。]*。?\s*/g,
+  /[^。]*故本題應選[^。]*。?\s*/g,
+  /寫坐標或代數式時，正負號與 x、y 的先後順序都要正確。?\s*/g,
+  /，?勿把「[^」]+」誤當本題答案。?\s*/g
 ];
 
 export const U05_IMAGE_PHRASES = ["如圖", "下圖", "請看圖", "請看下圖", "圖中", "由圖可知", "依圖判斷"];
@@ -216,6 +259,9 @@ export function findU05BannedPhrase(text) {
   if (typeof text !== "string") return null;
   for (const p of U05_BANNED_PHRASES) {
     if (text.includes(p)) return p;
+  }
+  for (const [re, label] of U05_R3_REGEX_BANS) {
+    if (re.test(text)) return label;
   }
   return null;
 }
