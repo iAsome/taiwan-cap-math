@@ -28,8 +28,15 @@ const U09_EXTRA_BANNED = [
   "如圖", "下圖", "請看圖", "圖中", "由圖可知", "依圖判斷", "觀察圖表",
   "選項", "逐項", "驗算", "核對", "故應選", "答案為", "結果為", "若誤以為", "另外，選",
   "【", "】", "標準差", "四分位", "盒狀圖", "常態分布", "信賴區間",
-  "不符合題目條件", "逐項驗算後再決定"
+  "不符合題目條件", "逐項驗算後再決定",
+  "算出結果後要回頭對照題目文字是否合理",
+  "這類資料題不能憑印象估算，要用算式處理",
+  "解題時應先整理已知條件再列式計算",
+  "會考資料題重在判讀與運算，每一步都要清楚",
+  "讀題時要確認比較對象、單位與範圍是否一致",
+  "讀資料時要對照題意逐步計算，不能跳步"
 ];
+const U09_SC_BANNED = ["全体", "谨慎", "夸大"];
 const BAD_SYMBOL_RE = /<=|>=/;
 
 function loadJs(varName, filename) {
@@ -49,6 +56,9 @@ function hasU09Banned(textOrArray) {
     if (gen) return `general: ${gen}`;
     for (const p of U09_EXTRA_BANNED) {
       if (part.includes(p)) return p;
+    }
+    for (const p of U09_SC_BANNED) {
+      if (part.includes(p)) return `SC:${p}`;
     }
     if (BAD_SYMBOL_RE.test(part)) return "<=/>=";
   }
@@ -161,6 +171,11 @@ for (const l of lectures) {
   const bankExpl = bankExplBySkill.get(l.skillId) || new Set();
   validateLecture(l, bankExpl);
 }
+
+const v010 = questions.find(q => q.questionId === "u09-s010-v010");
+assert.ok(v010, "u09-s010-v010 missing");
+assert.equal(v010.answerIndex, 2, "u09-s010-v010 answerIndex");
+assert.equal(v010.choices[2], "兩組都相同", "u09-s010-v010 choice");
 
 console.log("verify-v2-u09-pack: OK");
 console.log(`  questions: ${questions.length}`);
