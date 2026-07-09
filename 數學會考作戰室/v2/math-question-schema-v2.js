@@ -20,7 +20,7 @@ window.MATH_QUESTION_SCHEMA_V2 = (() => {
       if (set.size !== 4) errors.push("choices must be unique");
     }
     if (![0, 1, 2, 3].includes(q.answerIndex)) errors.push("answerIndex must be 0-3");
-    if (!Array.isArray(q.steps) || q.steps.length < 2) errors.push("steps need >= 2");
+    if (!Array.isArray(q.steps) || q.steps.length < 3) errors.push("steps need >= 3");
     if (!Array.isArray(q.tags) || !q.tags.length) errors.push("tags required");
     if (IMAGE_RE.test(JSON.stringify(q))) errors.push("forbidden image markup");
     if (BAD_DISPLAY_RE.test([q.text, ...(q.choices || []), q.explanation, ...(q.steps || [])].join(" "))) errors.push("forbidden <= >= !=");

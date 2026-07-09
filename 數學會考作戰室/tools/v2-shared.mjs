@@ -16,7 +16,7 @@ export function skill(skillId, title, topicId, legacyRefs = [], extra = {}) {
     legacyRefs,
     capBoundary: extra.capBoundary ?? "限國中會考範圍。",
     questionTarget: extra.questionTarget ?? SKILL_DEFAULT.questionTarget,
-    notes: extra.notes ?? ""
+    notes: extra.notes ?? "會考基礎範圍",
   };
 }
 

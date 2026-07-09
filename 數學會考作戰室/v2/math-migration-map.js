@@ -1,5 +1,5 @@
 window.MATH_MIGRATION_MAP = {
-  "version": "2.0.0-draft",
+  "version": "2.0.0-draft-r1",
   "unitMap": {
     "1": [
       "u01"
@@ -711,69 +711,157 @@ window.MATH_MIGRATION_MAP = {
     },
     "g7-2-c2/coordinate-plane": {
       "v2UnitId": "u05",
-      "v2TopicId": "u05-coordinate-basics",
-      "v2SkillId": "coordinate-plot",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c2/linear-equation-graph": {
-      "v2UnitId": "u05",
-      "v2TopicId": "u05-linear-graph",
-      "v2SkillId": "linear-graph-equation",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c2/linear-system-graph": {
-      "v2UnitId": "u05",
       "v2TopicId": "u05-linear-graph",
       "v2SkillId": "linear-graph-intersection",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g7-2-c6/perpendicular-bisector": {
+    "g7-2-c2/point-coordinates": {
+      "v2UnitId": "u05",
+      "v2TopicId": "u05-linear-graph",
+      "v2SkillId": "coordinate-graph-read",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c2/distance-to-axes": {
+      "v2UnitId": "u05",
+      "v2TopicId": "u05-linear-graph",
+      "v2SkillId": "coordinate-axis-distance",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c3/ratio-and-value": {
+      "v2UnitId": "u06",
+      "v2TopicId": "u06-ratio-apps",
+      "v2SkillId": "ratio-part-total",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c3/equal-ratios": {
+      "v2UnitId": "u06",
+      "v2TopicId": "u06-ratio-basics",
+      "v2SkillId": "proportion-solve",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c3/ratio-properties": {
+      "v2UnitId": "u06",
+      "v2TopicId": "u06-ratio-apps",
+      "v2SkillId": "proportion-property",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c4/linear-inequality-concept": {
+      "v2UnitId": "u07",
+      "v2TopicId": "u07-inequality-apps",
+      "v2SkillId": "inequality-number-line",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c4/inequality-word-association": {
+      "v2UnitId": "u07",
+      "v2TopicId": "u07-inequality-apps",
+      "v2SkillId": "inequality-reasonableness",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c4/inequality-solution-concept": {
+      "v2UnitId": "u07",
+      "v2TopicId": "u07-inequality-apps",
+      "v2SkillId": "inequality-integer-solutions",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c6/figure-notation": {
       "v2UnitId": "u08",
-      "v2TopicId": "u08-construction-symmetry",
-      "v2SkillId": "compass-steps",
+      "v2TopicId": "u08-orthographic",
+      "v2SkillId": "angle-notation",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g8-1-c1/polynomial-add-subtract": {
+    "g7-2-c6/perpendicular": {
+      "v2UnitId": "u08",
+      "v2TopicId": "u08-orthographic",
+      "v2SkillId": "perpendicular-basic",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c5/contingency-frequency-table": {
+      "v2UnitId": "u09",
+      "v2TopicId": "u09-central-tendency",
+      "v2SkillId": "contingency-table",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c5/histogram-frequency-polyline": {
+      "v2UnitId": "u09",
+      "v2TopicId": "u09-central-tendency",
+      "v2SkillId": "histogram-read",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g7-2-c5/cumulative-relative-frequency": {
+      "v2UnitId": "u09",
+      "v2TopicId": "u09-central-tendency",
+      "v2SkillId": "cumulative-frequency",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-1-c1/common-multiplication-formulas": {
       "v2UnitId": "u10",
       "v2TopicId": "u10-polynomial-ops",
-      "v2SkillId": "polynomial-add-subtract",
+      "v2SkillId": "mult-formula-expand",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g8-1-c1/polynomial-multiply": {
+    "g8-1-c1/formula-evaluate": {
       "v2UnitId": "u10",
       "v2TopicId": "u10-polynomial-ops",
-      "v2SkillId": "polynomial-multiply",
+      "v2SkillId": "mult-formula-evaluate",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g8-1-c1/polynomial-divide": {
+    "g8-1-c1/distributive-evaluate": {
       "v2UnitId": "u10",
       "v2TopicId": "u10-polynomial-ops",
-      "v2SkillId": "polynomial-divide",
+      "v2SkillId": "distributive-evaluate",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g8-1-c2/pythagorean-theorem": {
+    "g8-1-c2/sqrt-meaning": {
       "v2UnitId": "u11",
       "v2TopicId": "u11-pythagorean",
-      "v2SkillId": "pythagorean-theorem",
+      "v2SkillId": "sqrt-perfect-square",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g8-1-c2/coordinate-distance": {
+    "g8-1-c2/sqrt-notation": {
+      "v2UnitId": "u11",
+      "v2TopicId": "u11-pythagorean",
+      "v2SkillId": "sqrt-notation",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-1-c2/sqrt-finding-technique": {
       "v2UnitId": "u11",
       "v2TopicId": "u11-pythagorean",
       "v2SkillId": "coordinate-distance-pythagorean",
@@ -781,23 +869,55 @@ window.MATH_MIGRATION_MAP = {
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g8-1-c4/quadratic-formula": {
+    "g8-1-c3/factorization-concept": {
+      "v2UnitId": "u12",
+      "v2TopicId": "u12-factoring-apps",
+      "v2SkillId": "factoring-application",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-1-c3/common-factor": {
+      "v2UnitId": "u12",
+      "v2TopicId": "u12-factoring-methods",
+      "v2SkillId": "factoring-common",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-1-c4/quadratic-equation-concept": {
       "v2UnitId": "u13",
-      "v2TopicId": "u13-quadratic-solving",
-      "v2SkillId": "quadratic-formula",
+      "v2TopicId": "u13-quadratic-apps",
+      "v2SkillId": "quadratic-standard-form",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g8-2-c1/sequence-pattern": {
+    "g8-1-c4/quadratic-solution": {
+      "v2UnitId": "u13",
+      "v2TopicId": "u13-quadratic-apps",
+      "v2SkillId": "quadratic-formula-basic",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-1-c4/solve-quadratic": {
+      "v2UnitId": "u13",
+      "v2TopicId": "u13-quadratic-apps",
+      "v2SkillId": "quadratic-solve-by-factoring",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-2-c1/sequence-concept": {
       "v2UnitId": "u14",
-      "v2TopicId": "u14-sequences",
-      "v2SkillId": "sequence-pattern",
+      "v2TopicId": "u14-series",
+      "v2SkillId": "sequence-nth-term",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g8-2-c1/arithmetic-series-sum": {
+    "g8-2-c1/arithmetic-sequence": {
       "v2UnitId": "u14",
       "v2TopicId": "u14-series",
       "v2SkillId": "arithmetic-series-sum",
@@ -805,7 +925,23 @@ window.MATH_MIGRATION_MAP = {
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g8-2-c2/linear-function-application": {
+    "g8-2-c1/arithmetic-mean": {
+      "v2UnitId": "u14",
+      "v2TopicId": "u14-series",
+      "v2SkillId": "arithmetic-mean-term",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-2-c2/independent-dependent-variable": {
+      "v2UnitId": "u15",
+      "v2TopicId": "u15-linear-function",
+      "v2SkillId": "function-input-output",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-2-c2/function-concept": {
       "v2UnitId": "u15",
       "v2TopicId": "u15-linear-function",
       "v2SkillId": "linear-function-application",
@@ -813,26 +949,178 @@ window.MATH_MIGRATION_MAP = {
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g8-2-c4/parallelogram-properties": {
+    "g8-2-c3/angle-concept": {
+      "v2UnitId": "u16",
+      "v2TopicId": "u16-triangle-congruence",
+      "v2SkillId": "isosceles-equilateral",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-2-c3/compass-straightedge": {
+      "v2UnitId": "u16",
+      "v2TopicId": "u16-construction",
+      "v2SkillId": "compass-copy-angle",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-2-c3/angle-basic-calculation": {
+      "v2UnitId": "u16",
+      "v2TopicId": "u16-construction",
+      "v2SkillId": "triangle-inequality",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g8-2-c4/parallel-lines-concept": {
       "v2UnitId": "u17",
       "v2TopicId": "u17-quadrilateral",
-      "v2SkillId": "parallelogram-properties",
+      "v2SkillId": "quadrilateral-area",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g9-1-c1/continued-ratio-application": {
+    "g8-2-c4/parallel-transversal-angles": {
+      "v2UnitId": "u17",
+      "v2TopicId": "u17-quadrilateral",
+      "v2SkillId": "parallel-alternate-interior",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-1-c1/continued-ratio-concept": {
       "v2UnitId": "u18",
-      "v2TopicId": "u18-continued-ratio",
-      "v2SkillId": "proportion-segment",
+      "v2TopicId": "u18-similarity",
+      "v2SkillId": "similar-ratio-area",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
-    "g9-1-c2/tangent-properties": {
+    "g9-1-c1/continued-ratio-properties": {
+      "v2UnitId": "u18",
+      "v2TopicId": "u18-similarity",
+      "v2SkillId": "continued-ratio-properties",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-1-c1/continued-proportion": {
+      "v2UnitId": "u18",
+      "v2TopicId": "u18-similarity",
+      "v2SkillId": "continued-ratio-word",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-1-c2/circle-vocabulary": {
       "v2UnitId": "u19",
       "v2TopicId": "u19-circle-tangent",
-      "v2SkillId": "tangent-properties",
+      "v2SkillId": "circle-chord",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-1-c2/arc-length-sector": {
+      "v2UnitId": "u19",
+      "v2TopicId": "u19-circle-tangent",
+      "v2SkillId": "arc-length-formula",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-1-c2/sector-area-perimeter": {
+      "v2UnitId": "u19",
+      "v2TopicId": "u19-circle-measure",
+      "v2SkillId": "circle-composite-area",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-1-c3/proof-concept": {
+      "v2UnitId": "u20",
+      "v2TopicId": "u20-triangle-centers",
+      "v2SkillId": "proof-fill-reason",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-1-c3/geometry-proof-properties": {
+      "v2UnitId": "u20",
+      "v2TopicId": "u20-triangle-centers",
+      "v2SkillId": "orthocenter-basic",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-2-c1/quadratic-function-concept": {
+      "v2UnitId": "u21",
+      "v2TopicId": "u21-quadratic-function",
+      "v2SkillId": "quadratic-standard-to-graph",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-2-c1/quadratic-graph-forms": {
+      "v2UnitId": "u21",
+      "v2TopicId": "u21-quadratic-function",
+      "v2SkillId": "quadratic-graph-forms",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-2-c1/opening-direction": {
+      "v2UnitId": "u21",
+      "v2TopicId": "u21-quadratic-function",
+      "v2SkillId": "quadratic-opening",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-2-c2/quartile-concept": {
+      "v2UnitId": "u22",
+      "v2TopicId": "u22-probability",
+      "v2SkillId": "quartile-position",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-2-c2/ogive-quartile-group": {
+      "v2UnitId": "u22",
+      "v2TopicId": "u22-probability",
+      "v2SkillId": "ogive-read",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-2-c2/range-iqr": {
+      "v2UnitId": "u22",
+      "v2TopicId": "u22-probability",
+      "v2SkillId": "range-iqr-compare",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-2-c3/plane-plane": {
+      "v2UnitId": "u23",
+      "v2TopicId": "u23-solid-measure",
+      "v2SkillId": "prism-surface-area",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-2-c3/line-plane": {
+      "v2UnitId": "u23",
+      "v2TopicId": "u23-solid-measure",
+      "v2SkillId": "prism-volume",
+      "action": "reuse-after-schema-conversion",
+      "status": "pending-detailed-review",
+      "notes": "粗略對應，待 Phase B 細審。"
+    },
+    "g9-2-c3/line-line": {
+      "v2UnitId": "u23",
+      "v2TopicId": "u23-solid-measure",
+      "v2SkillId": "pyramid-cone-volume",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
@@ -840,12 +1128,13 @@ window.MATH_MIGRATION_MAP = {
     "g8-1-c5/*": {
       "v2UnitId": "u09",
       "v2TopicId": "u09-data-display",
-      "v2SkillId": "frequency-table",
+      "v2SkillId": "histogram-read",
       "action": "rewrite-required",
       "reason": "no-v1-taxonomy",
       "notes": "g8-1-c5 無 v1 taxonomy，需重寫。"
     }
   },
+  "invalidLegacyRefs": [],
   "unmappedLegacyTopics": [],
   "deprecatedLegacyTopics": [
     {

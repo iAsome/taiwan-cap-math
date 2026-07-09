@@ -1,5 +1,5 @@
 window.MATH_SYLLABUS_V2 = {
-  "version": "2.0.0-draft",
+  "version": "2.0.0-draft-r1",
   "sourceScope": "CAP_108_JUNIOR_MATH",
   "units": [
     {
@@ -24,7 +24,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-positive-negative-meaning",
@@ -40,7 +40,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-number-line-position",
@@ -56,7 +56,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-number-comparison",
@@ -72,7 +72,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-opposite-number",
@@ -88,7 +88,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-absolute-value-basic",
@@ -104,7 +104,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-absolute-value-distance",
@@ -120,7 +120,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -142,7 +142,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-subtraction",
@@ -158,7 +158,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-multiplication-division",
@@ -174,7 +174,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-mixed-operations",
@@ -190,7 +190,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -212,7 +212,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-exponent-laws",
@@ -228,7 +228,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "integer-scientific-notation",
@@ -244,7 +244,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -266,7 +266,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         }
@@ -294,7 +294,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "fraction-prime-composite",
@@ -310,7 +310,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "fraction-prime-factorization",
@@ -326,7 +326,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "fraction-gcd-basic",
@@ -342,7 +342,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "fraction-lcm-basic",
@@ -358,7 +358,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -380,7 +380,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "fraction-lcm-application",
@@ -396,7 +396,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -418,7 +418,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "fraction-add-subtract",
@@ -434,7 +434,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "fraction-multiply-divide",
@@ -450,7 +450,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "fraction-mixed-number",
@@ -466,7 +466,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "fraction-complex-fraction-basic",
@@ -482,7 +482,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -504,7 +504,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "fraction-base-quantity",
@@ -520,7 +520,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -542,7 +542,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         }
@@ -570,7 +570,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-expression-simplify",
@@ -586,7 +586,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -608,7 +608,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-equation-basic-solving",
@@ -624,7 +624,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-equation-parentheses",
@@ -640,7 +640,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-equation-fractions",
@@ -656,7 +656,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-equation-check-solution",
@@ -672,7 +672,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -694,7 +694,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-equation-money-problem",
@@ -710,7 +710,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-equation-rate-problem",
@@ -726,7 +726,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-equation-distribution-problem",
@@ -742,7 +742,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-equation-consecutive-integers",
@@ -758,7 +758,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -780,7 +780,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-equation-plan-comparison",
@@ -796,7 +796,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-equation-literacy-context",
@@ -812,7 +812,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         }
@@ -840,7 +840,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "system-expression-simplify",
@@ -856,7 +856,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "system-expression-value",
@@ -872,7 +872,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -894,7 +894,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "system-elimination",
@@ -910,7 +910,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "system-special-cases",
@@ -926,7 +926,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "system-solution-check",
@@ -942,7 +942,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -964,7 +964,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "system-rate-problem",
@@ -980,7 +980,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "system-digit-problem",
@@ -996,7 +996,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "system-literacy",
@@ -1010,7 +1010,35 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "system-coefficient-match",
+              "title": "係數配對列式",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；待對照 v1 g7-2-c1。"
+            },
+            {
+              "skillId": "system-mixture-basic",
+              "title": "濃度混合基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；只做二元一次基本題。"
             }
           ]
         }
@@ -1038,7 +1066,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "coordinate-plot",
@@ -1054,7 +1082,7 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "coordinate-distance",
@@ -1066,11 +1094,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c2/distance-formula"
+                "g7-2-c2/point-coordinates"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "coordinate-midpoint",
@@ -1082,11 +1110,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c2/midpoint-formula"
+                "g7-2-c2/coordinate-plane"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -1104,11 +1132,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c2/slope-concept"
+                "g7-2-c2/point-coordinates"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-graph-equation",
@@ -1120,11 +1148,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c2/linear-equation-graph"
+                "g7-2-c2/coordinate-plane"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-graph-intersection",
@@ -1136,11 +1164,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c2/linear-system-graph"
+                "g7-2-c2/coordinate-plane"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "coordinate-literacy",
@@ -1154,7 +1182,53 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "coordinate-axis-distance",
+              "title": "點到坐標軸距離",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c2/distance-to-axes"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "coordinate-graph-read",
+              "title": "坐標圖形判讀",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c2/point-coordinates"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "linear-graph-y-intercept",
+              "title": "y 截距",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；限線型函數。"
             }
           ]
         }
@@ -1178,11 +1252,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c3/ratio-simplify"
+                "g7-2-c3/ratio-and-value"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "proportion-solve",
@@ -1194,11 +1268,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c3/proportion-solve"
+                "g7-2-c3/equal-ratios"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "direct-variation",
@@ -1210,11 +1284,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c3/direct-variation"
+                "g7-2-c3/ratio-properties"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "inverse-variation",
@@ -1226,11 +1300,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c3/inverse-variation"
+                "g7-2-c3/ratio-properties"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -1248,11 +1322,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c3/scale-drawing"
+                "g7-2-c3/ratio-and-value"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "ratio-word-problem",
@@ -1264,11 +1338,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c3/ratio-word-problem"
+                "g7-2-c3/ratio-and-value"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "continued-ratio-preview",
@@ -1280,11 +1354,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c3/ratio-word-problem"
+                "g7-2-c3/ratio-and-value"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "ratio-literacy",
@@ -1298,7 +1372,67 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "ratio-part-total",
+              "title": "部分量與總量",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c3/ratio-and-value"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "proportion-property",
+              "title": "比例式性質",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c3/ratio-properties"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "inverse-variation-graph",
+              "title": "反比圖形概念",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "以文字描述圖形特徵，不用圖片。"
+            },
+            {
+              "skillId": "ratio-composite-problem",
+              "title": "比例複合應用",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
             }
           ]
         }
@@ -1322,11 +1456,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c4/inequality-concept"
+                "g7-2-c4/linear-inequality-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "inequality-solve-basic",
@@ -1338,11 +1472,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c4/solve-inequality"
+                "g7-2-c4/inequality-solution-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "inequality-transposition",
@@ -1354,11 +1488,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c4/solve-inequality"
+                "g7-2-c4/inequality-solution-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -1376,11 +1510,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c4/inequality-integer-solutions"
+                "g7-2-c4/inequality-solution-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "inequality-word-problem",
@@ -1392,11 +1526,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c4/inequality-word-problem"
+                "g7-2-c4/inequality-word-association"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "inequality-reasonableness",
@@ -1408,11 +1542,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c4/inequality-word-problem"
+                "g7-2-c4/inequality-word-association"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "inequality-literacy",
@@ -1426,7 +1560,79 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "inequality-number-line",
+              "title": "不等式解的數線表示",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c4/linear-inequality-concept"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "inequality-sign-flip",
+              "title": "乘除負數變號",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考常考陷阱。"
+            },
+            {
+              "skillId": "inequality-and-word",
+              "title": "不等式與且的語意",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "inequality-budget",
+              "title": "預算不等式應用",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "素養情境題預留。"
+            },
+            {
+              "skillId": "inequality-range",
+              "title": "解的範圍敘述",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
             }
           ]
         }
@@ -1450,11 +1656,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c6/angle-types"
+                "g7-2-c6/figure-notation"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "line-relationships",
@@ -1466,11 +1672,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c6/line-relationships"
+                "g7-2-c6/perpendicular"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "polygon-basics",
@@ -1482,11 +1688,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c6/polygon-basics"
+                "g7-2-c6/figure-notation"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "angle-sum-triangle",
@@ -1498,11 +1704,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c6/polygon-basics"
+                "g7-2-c6/figure-notation"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -1520,11 +1726,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c6/perpendicular-bisector"
+                "g7-2-c6/perpendicular"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "line-symmetry",
@@ -1536,11 +1742,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c6/line-symmetry"
+                "g7-2-c6/figure-notation"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "compass-steps",
@@ -1552,11 +1758,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c6/perpendicular-bisector"
+                "g7-2-c6/perpendicular"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -1574,11 +1780,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c6/orthographic-views"
+                "g7-2-c6/figure-notation"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "orthographic-description",
@@ -1590,11 +1796,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c6/orthographic-views"
+                "g7-2-c6/figure-notation"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "geometry-literacy",
@@ -1608,7 +1814,67 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "angle-notation",
+              "title": "角的標記",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c6/figure-notation"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "perpendicular-basic",
+              "title": "垂直概念",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c6/perpendicular"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "complementary-supplementary",
+              "title": "互餘與互补角",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "polygon-angle-sum",
+              "title": "多邊形內角和",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
             }
           ]
         }
@@ -1632,11 +1898,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c5/frequency-table"
+                "g7-2-c5/contingency-frequency-table"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "bar-chart",
@@ -1648,11 +1914,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c5/bar-chart"
+                "g7-2-c5/histogram-frequency-polyline"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "circle-graph",
@@ -1664,11 +1930,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c5/circle-graph"
+                "g7-2-c5/cumulative-relative-frequency"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "line-graph",
@@ -1680,11 +1946,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c5/line-graph"
+                "g7-2-c5/histogram-frequency-polyline"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -1702,11 +1968,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c5/mean-calculation"
+                "g7-2-c5/cumulative-relative-frequency"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "median-mode",
@@ -1718,11 +1984,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c5/median-mode"
+                "g7-2-c5/cumulative-relative-frequency"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "weighted-mean-basic",
@@ -1734,11 +2000,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c5/mean-calculation"
+                "g7-2-c5/cumulative-relative-frequency"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "stats-literacy",
@@ -1752,7 +2018,125 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "histogram-read",
+              "title": "直方圖判讀",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c5/histogram-frequency-polyline"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "cumulative-frequency",
+              "title": "累積次數",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c5/cumulative-relative-frequency"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "contingency-table",
+              "title": "列聯表",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c5/contingency-frequency-table"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "mean-from-table",
+              "title": "由表格求平均",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "median-position",
+              "title": "中位數位置",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "mode-interpret",
+              "title": "眾數意義",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "stats-compare-datasets",
+              "title": "兩組資料比較",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "素養題預留。"
+            },
+            {
+              "skillId": "stats-missing-value",
+              "title": "缺值對平均影響",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
             }
           ]
         }
@@ -1776,11 +2160,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c1/square-formula"
+                "g8-1-c1/common-multiplication-formulas"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "difference-of-squares",
@@ -1792,11 +2176,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c1/difference-of-squares"
+                "g8-1-c1/common-multiplication-formulas"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "cube-formula-basic",
@@ -1808,11 +2192,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c1/square-formula"
+                "g8-1-c1/common-multiplication-formulas"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -1830,11 +2214,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c1/polynomial-add-subtract"
+                "g8-1-c1/distributive-evaluate"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "polynomial-multiply",
@@ -1846,11 +2230,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c1/polynomial-multiply"
+                "g8-1-c1/distributive-evaluate"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "polynomial-divide",
@@ -1862,11 +2246,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c1/polynomial-divide"
+                "g8-1-c1/distributive-evaluate"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "polynomial-literacy",
@@ -1880,7 +2264,97 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "mult-formula-expand",
+              "title": "乘法公式展開",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-1-c1/common-multiplication-formulas"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "mult-formula-evaluate",
+              "title": "乘法公式求值",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-1-c1/formula-evaluate"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "distributive-evaluate",
+              "title": "分配律求值",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-1-c1/distributive-evaluate"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "polynomial-like-terms",
+              "title": "同類項整理",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "polynomial-word-setup",
+              "title": "多項式列式",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "polynomial-degree",
+              "title": "多項式次數",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
             }
           ]
         }
@@ -1904,11 +2378,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c2/square-root-meaning"
+                "g8-1-c2/sqrt-meaning"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "square-root-simplify",
@@ -1920,11 +2394,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c2/square-root-simplify"
+                "g8-1-c2/sqrt-finding-technique"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "square-root-arithmetic",
@@ -1936,11 +2410,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c2/square-root-arithmetic"
+                "g8-1-c2/sqrt-finding-technique"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "square-root-estimate",
@@ -1952,11 +2426,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c2/square-root-meaning"
+                "g8-1-c2/sqrt-meaning"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -1974,11 +2448,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c2/pythagorean-theorem"
+                "g8-1-c2/sqrt-meaning"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "pythagorean-application",
@@ -1990,11 +2464,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c2/pythagorean-application"
+                "g8-1-c2/sqrt-finding-technique"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "coordinate-distance-pythagorean",
@@ -2006,11 +2480,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c2/coordinate-distance"
+                "g8-1-c2/sqrt-finding-technique"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "root-literacy",
@@ -2024,7 +2498,123 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "sqrt-notation",
+              "title": "平方根記號",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-1-c2/sqrt-notation"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "sqrt-perfect-square",
+              "title": "完全平方數平方根",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-1-c2/sqrt-meaning"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "sqrt-rationalize-simple",
+              "title": "分母有理化基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "限國中會考基本題。"
+            },
+            {
+              "skillId": "pythagorean-find-leg",
+              "title": "已知斜邊求股",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "pythagorean-word",
+              "title": "畢氏定理文字應用",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "全文字描述，不用圖。"
+            },
+            {
+              "skillId": "right-triangle-identify",
+              "title": "直角三角形判定",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "sqrt-comparison",
+              "title": "平方根大小比較",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "pythagorean-converse-basic",
+              "title": "畢氏定理逆命題基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "只做概念判斷。"
             }
           ]
         }
@@ -2048,11 +2638,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c3/factoring-common"
+                "g8-1-c3/common-factor"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "factoring-formula",
@@ -2064,11 +2654,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c3/factoring-formula"
+                "g8-1-c3/factorization-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "factoring-cross",
@@ -2080,11 +2670,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c3/factoring-cross"
+                "g8-1-c3/factorization-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -2102,11 +2692,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c3/factoring-application"
+                "g8-1-c3/factorization-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "factoring-literacy",
@@ -2120,7 +2710,77 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "factoring-by-grouping",
+              "title": "分組分解",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "factoring-check-expand",
+              "title": "分解後展開檢查",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "factoring-quadratic-trinomial",
+              "title": "二次三項式分解",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "限國中範圍。"
+            },
+            {
+              "skillId": "factoring-word-area",
+              "title": "面積式因式分解",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "文字描述，不用圖。"
+            },
+            {
+              "skillId": "factoring-common-mistake-sign",
+              "title": "分解符號陷阱",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "常見錯誤預留。"
             }
           ]
         }
@@ -2144,11 +2804,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c4/quadratic-factor"
+                "g8-1-c4/quadratic-solution"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "quadratic-completing-square",
@@ -2160,11 +2820,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c4/quadratic-completing-square"
+                "g8-1-c4/quadratic-solution"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "quadratic-formula",
@@ -2176,11 +2836,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c4/quadratic-formula"
+                "g8-1-c4/quadratic-solution"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "quadratic-discriminant",
@@ -2192,11 +2852,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c4/quadratic-discriminant"
+                "g8-1-c4/quadratic-solution"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -2214,11 +2874,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c4/quadratic-word-problem"
+                "g8-1-c4/quadratic-solution"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "quadratic-root-coefficient-basic",
@@ -2230,11 +2890,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-1-c4/quadratic-discriminant"
+                "g8-1-c4/quadratic-solution"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "quadratic-literacy",
@@ -2248,7 +2908,125 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "quadratic-standard-form",
+              "title": "標準式與係數",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-1-c4/quadratic-equation-concept"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "quadratic-solve-by-factoring",
+              "title": "因式分解解方程",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-1-c4/solve-quadratic"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "quadratic-complete-square-basic",
+              "title": "配方法基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "quadratic-roots-count",
+              "title": "根的個數判斷",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "用判別式概念。"
+            },
+            {
+              "skillId": "quadratic-area-problem",
+              "title": "面積問題列方程",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "文字描述。"
+            },
+            {
+              "skillId": "quadratic-consecutive-product",
+              "title": "連續整數乘積",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考常考型。"
+            },
+            {
+              "skillId": "quadratic-check-root",
+              "title": "二次方程解的檢查",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "quadratic-formula-basic",
+              "title": "公式解基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-1-c4/quadratic-solution"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
             }
           ]
         }
@@ -2272,11 +3050,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c1/sequence-pattern"
+                "g8-2-c1/sequence-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "arithmetic-sequence-nth",
@@ -2288,11 +3066,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c1/arithmetic-sequence-nth"
+                "g8-2-c1/arithmetic-sequence"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "arithmetic-sequence-common-diff",
@@ -2304,11 +3082,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c1/arithmetic-sequence-nth"
+                "g8-2-c1/arithmetic-sequence"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -2326,11 +3104,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c1/arithmetic-series-sum"
+                "g8-2-c1/arithmetic-sequence"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "geometric-basic",
@@ -2342,11 +3120,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c1/geometric-basic"
+                "g8-2-c1/sequence-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "sequence-literacy",
@@ -2360,7 +3138,95 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "sequence-nth-term",
+              "title": "求第 n 項",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-2-c1/sequence-concept"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "arithmetic-mean-term",
+              "title": "等差中項",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-2-c1/arithmetic-mean"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "arithmetic-series-word",
+              "title": "等差級數應用",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "sequence-pattern-word",
+              "title": "規律觀察列式",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "geometric-nth-basic",
+              "title": "等比第 n 項基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "不含等比級數深題。"
+            },
+            {
+              "skillId": "series-sum-word",
+              "title": "級數求和應用",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "限等差級數。"
             }
           ]
         }
@@ -2384,11 +3250,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c2/function-definition"
+                "g8-2-c2/function-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "function-value",
@@ -2400,11 +3266,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c2/function-value"
+                "g8-2-c2/function-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "function-table-graph",
@@ -2416,11 +3282,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c2/function-definition"
+                "g8-2-c2/function-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -2438,11 +3304,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c2/linear-function-graph"
+                "g8-2-c2/function-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "linear-function-application",
@@ -2454,11 +3320,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c2/linear-function-application"
+                "g8-2-c2/function-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "function-literacy",
@@ -2472,7 +3338,107 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "function-input-output",
+              "title": "自變數與應變數",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-2-c2/independent-dependent-variable"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "function-notation",
+              "title": "函數記號 f(x)",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "linear-function-slope-intercept",
+              "title": "斜截式",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "限線型函數。"
+            },
+            {
+              "skillId": "linear-function-rate",
+              "title": "速率與線型函數",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "function-domain-range-basic",
+              "title": "定義域值域基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "限國中會考。"
+            },
+            {
+              "skillId": "function-graph-read-point",
+              "title": "由圖讀函數值",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "文字描述圖形。"
+            },
+            {
+              "skillId": "piecewise-linear-basic",
+              "title": "分段線型基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "只做簡單情境。"
             }
           ]
         }
@@ -2496,11 +3462,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c3/triangle-congruence"
+                "g8-2-c3/angle-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "triangle-congruence-proof",
@@ -2512,11 +3478,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c3/triangle-congruence-proof"
+                "g8-2-c3/angle-basic-calculation"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "isosceles-equilateral",
@@ -2528,11 +3494,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c3/triangle-congruence"
+                "g8-2-c3/angle-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -2550,11 +3516,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c3/compass-construction"
+                "g8-2-c3/compass-straightedge"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "triangle-inequality",
@@ -2566,11 +3532,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c3/triangle-inequality"
+                "g8-2-c3/angle-basic-calculation"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "triangle-literacy",
@@ -2584,7 +3550,177 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "angle-sum-exterior",
+              "title": "外角定理",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "triangle-sss-sas",
+              "title": "SSS 與 SAS",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "全等判定。"
+            },
+            {
+              "skillId": "triangle-asa-aas",
+              "title": "ASA 與 AAS",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "全等判定。"
+            },
+            {
+              "skillId": "isosceles-properties",
+              "title": "等腰三角形性質",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "equilateral-properties",
+              "title": "等邊三角形性質",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "compass-copy-angle",
+              "title": "複製角",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-2-c3/compass-straightedge"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "compass-perpendicular",
+              "title": "過點作垂線",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "尺規作圖概念。"
+            },
+            {
+              "skillId": "triangle-side-angle-relation",
+              "title": "邊角關係",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "exterior-angle-sum",
+              "title": "多边形外角和",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "triangle-medians",
+              "title": "中線概念",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "與重心連結。"
+            },
+            {
+              "skillId": "triangle-altitude",
+              "title": "高線概念",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "construction-word-steps",
+              "title": "作圖步驟文字題",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "全文字描述。"
             }
           ]
         }
@@ -2608,11 +3744,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c4/parallel-angle"
+                "g8-2-c4/parallel-transversal-angles"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "parallel-properties",
@@ -2624,11 +3760,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c4/parallel-properties"
+                "g8-2-c4/parallel-lines-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "parallel-proof-basic",
@@ -2640,11 +3776,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c4/parallel-properties"
+                "g8-2-c4/parallel-lines-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -2662,11 +3798,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c4/parallelogram-properties"
+                "g8-2-c4/parallel-lines-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "special-quadrilateral",
@@ -2678,11 +3814,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c4/special-quadrilateral"
+                "g8-2-c4/parallel-lines-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "quadrilateral-area",
@@ -2694,11 +3830,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g8-2-c4/quadrilateral-area"
+                "g8-2-c4/parallel-lines-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "quadrilateral-literacy",
@@ -2712,7 +3848,163 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "parallel-alternate-interior",
+              "title": "內錯角",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g8-2-c4/parallel-transversal-angles"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "parallel-corresponding",
+              "title": "同位角",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "parallel-consecutive-interior",
+              "title": "同側內角",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "parallelogram-opposite-sides",
+              "title": "平行四邊形對邊",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "parallelogram-diagonal",
+              "title": "平行四邊形對角線",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "rhombus-properties",
+              "title": "菱形性質",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "rectangle-square-properties",
+              "title": "矩形與正方形",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "trapezoid-area",
+              "title": "梯形面積",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "quadrilateral-angle-sum",
+              "title": "四邊形內角和",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "parallel-lines-distance",
+              "title": "平行線距離",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "quadrilateral-proof-basic",
+              "title": "四邊形證明基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
             }
           ]
         }
@@ -2736,11 +4028,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c1/continued-ratio"
+                "g9-1-c1/continued-ratio-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "continued-ratio-application",
@@ -2752,11 +4044,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c1/continued-ratio-application"
+                "g9-1-c1/continued-ratio-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "proportion-segment",
@@ -2768,11 +4060,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c1/continued-ratio-application"
+                "g9-1-c1/continued-ratio-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -2790,11 +4082,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c1/similar-triangles"
+                "g9-1-c1/continued-ratio-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "similar-ratio-perimeter",
@@ -2806,11 +4098,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c1/similar-ratio-perimeter"
+                "g9-1-c1/continued-ratio-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "similar-ratio-area",
@@ -2822,11 +4114,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c1/similar-ratio-area"
+                "g9-1-c1/continued-ratio-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "similarity-literacy",
@@ -2840,7 +4132,137 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "continued-ratio-word",
+              "title": "連比應用題",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-1-c1/continued-proportion"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "continued-ratio-properties",
+              "title": "連比性質",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-1-c1/continued-ratio-properties"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "similarity-aa",
+              "title": "AA 相似",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "similarity-sas",
+              "title": "SAS 相似",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "similarity-sss",
+              "title": "SSS 相似",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "similar-height-measure",
+              "title": "利用相似測高",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "文字描述。"
+            },
+            {
+              "skillId": "similar-shadow-problem",
+              "title": "影子測量",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考常考。"
+            },
+            {
+              "skillId": "ratio-perimeter-application",
+              "title": "周長比應用",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "ratio-area-application",
+              "title": "面積比應用",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
             }
           ]
         }
@@ -2864,11 +4286,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c2/central-inscribed-angle"
+                "g9-1-c2/circle-vocabulary"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "arc-angle",
@@ -2880,11 +4302,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c2/arc-angle"
+                "g9-1-c2/circle-vocabulary"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "inscribed-quadrilateral",
@@ -2896,11 +4318,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c2/central-inscribed-angle"
+                "g9-1-c2/circle-vocabulary"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -2918,11 +4340,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c2/arc-length"
+                "g9-1-c2/arc-length-sector"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "sector-area",
@@ -2934,11 +4356,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c2/sector-area"
+                "g9-1-c2/sector-area-perimeter"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "circle-composite-area",
@@ -2950,11 +4372,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c2/sector-area"
+                "g9-1-c2/sector-area-perimeter"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -2972,11 +4394,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-1-c2/tangent-properties"
+                "g9-1-c2/circle-vocabulary"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "circle-literacy",
@@ -2990,7 +4412,151 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "circle-chord",
+              "title": "弦與弧",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-1-c2/circle-vocabulary"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "inscribed-angle-theorem",
+              "title": "圓周角定理",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "central-angle-arc",
+              "title": "圓心角與弧",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "arc-length-formula",
+              "title": "弧長公式",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-1-c2/arc-length-sector"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "sector-perimeter",
+              "title": "扇形周長",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "circle-area",
+              "title": "圓面積",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "tangent-radius",
+              "title": "切線與半徑",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "two-tangent-segments",
+              "title": "切線段相等",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "circle-inscribed-basic",
+              "title": "內接角應用",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "circle-composite-perimeter",
+              "title": "圓組合周長",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "文字描述。"
             }
           ]
         }
@@ -3014,11 +4580,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c1/geometry-proof-basic"
+                "g9-1-c3/proof-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "geometry-proof-steps",
@@ -3030,11 +4596,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c1/geometry-proof-steps"
+                "g9-1-c3/geometry-proof-properties"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "geometry-proof-reason",
@@ -3046,11 +4612,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c1/geometry-proof-steps"
+                "g9-1-c3/geometry-proof-properties"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -3068,11 +4634,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c1/circumcenter"
+                "g9-1-c3/geometry-proof-properties"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "incenter",
@@ -3084,11 +4650,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c1/incenter"
+                "g9-1-c3/geometry-proof-properties"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "centroid",
@@ -3100,11 +4666,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c1/centroid"
+                "g9-1-c3/geometry-proof-properties"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "orthocenter-basic",
@@ -3116,11 +4682,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c1/circumcenter"
+                "g9-1-c3/geometry-proof-properties"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "proof-literacy",
@@ -3134,7 +4700,107 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "proof-fill-reason",
+              "title": "填充證明理由",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-1-c3/proof-concept"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "proof-contrapositive-basic",
+              "title": "逆否命題基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "限國中邏輯。"
+            },
+            {
+              "skillId": "circumcenter-property",
+              "title": "外心性質",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "incenter-property",
+              "title": "內心性質",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "centroid-property",
+              "title": "重心性質",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "orthocenter-identify",
+              "title": "垂心辨識",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "只做基本辨識。"
+            },
+            {
+              "skillId": "triangle-center-word",
+              "title": "三角形的心應用",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "文字描述。"
             }
           ]
         }
@@ -3158,11 +4824,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c3/quadratic-function-graph"
+                "g9-2-c1/quadratic-function-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "quadratic-vertex",
@@ -3174,11 +4840,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c3/quadratic-vertex"
+                "g9-2-c1/quadratic-graph-forms"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "quadratic-max-min",
@@ -3190,11 +4856,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c3/quadratic-max-min"
+                "g9-2-c1/opening-direction"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "quadratic-function-literacy",
@@ -3208,7 +4874,125 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "quadratic-standard-to-graph",
+              "title": "標準式與圖形",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-2-c1/quadratic-function-concept"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "quadratic-graph-forms",
+              "title": "圖形表徵",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-2-c1/quadratic-graph-forms"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "quadratic-opening",
+              "title": "開口方向",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-2-c1/opening-direction"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "quadratic-axis-symmetry",
+              "title": "對稱軸求法",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "quadratic-vertex-form-basic",
+              "title": "頂點式基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "quadratic-table-graph",
+              "title": "列表作圖概念",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "文字描述。"
+            },
+            {
+              "skillId": "quadratic-application-area",
+              "title": "拋物線面積應用",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "限簡單情境。"
+            },
+            {
+              "skillId": "quadratic-shift",
+              "title": "平移概念",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
             }
           ]
         }
@@ -3232,11 +5016,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c2/quartile-calculation"
+                "g9-2-c2/quartile-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "box-plot",
@@ -3248,11 +5032,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c2/box-plot"
+                "g9-2-c2/quartile-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "box-plot-interpret",
@@ -3264,11 +5048,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c2/box-plot"
+                "g9-2-c2/quartile-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -3286,11 +5070,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c2/probability-basic"
+                "g9-2-c2/quartile-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "probability-complement",
@@ -3302,11 +5086,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c2/probability-complement"
+                "g9-2-c2/quartile-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "probability-tree-basic",
@@ -3318,11 +5102,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c2/probability-basic"
+                "g9-2-c2/quartile-concept"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "probability-literacy",
@@ -3336,7 +5120,167 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "quartile-position",
+              "title": "四分位數位置",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-2-c2/quartile-concept"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "box-plot-components",
+              "title": "盒狀圖五數",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "iqr-outlier-basic",
+              "title": "IQR 與離群值",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "ogive-read",
+              "title": "累積次數折線圖",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-2-c2/ogive-quartile-group"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "range-iqr-compare",
+              "title": "全距與 IQR 比較",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g9-2-c2/range-iqr"
+              ],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+            },
+            {
+              "skillId": "probability-sample-space",
+              "title": "樣本空間",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "probability-equally-likely",
+              "title": "等可能機率",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "probability-two-stage",
+              "title": "兩階段機率",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "限樹狀圖基本。"
+            },
+            {
+              "skillId": "probability-word",
+              "title": "機率應用題",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "statistics-probability-literacy",
+              "title": "統計機率素養",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 8,
+              "notes": "跨題材素養預留。"
+            },
+            {
+              "skillId": "box-plot-compare",
+              "title": "兩盒狀圖比較",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
             }
           ]
         }
@@ -3360,11 +5304,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c4/solid-nets"
+                "g9-2-c3/plane-plane"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "solid-views",
@@ -3376,11 +5320,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c4/solid-views"
+                "g9-2-c3/line-plane"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "solid-cross-section",
@@ -3392,11 +5336,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c4/solid-views"
+                "g9-2-c3/line-plane"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             }
           ]
         },
@@ -3414,11 +5358,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c4/prism-surface-area"
+                "g9-2-c3/plane-plane"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "prism-volume",
@@ -3430,11 +5374,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c4/prism-volume"
+                "g9-2-c3/line-plane"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "pyramid-cone-volume",
@@ -3446,11 +5390,11 @@ window.MATH_SYLLABUS_V2 = {
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g9-2-c4/pyramid-cone-volume"
+                "g9-2-c3/line-line"
               ],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 12,
-              "notes": ""
+              "notes": "會考基礎範圍"
             },
             {
               "skillId": "solid-literacy",
@@ -3464,7 +5408,189 @@ window.MATH_SYLLABUS_V2 = {
               "legacyRefs": [],
               "capBoundary": "限國中會考範圍。",
               "questionTarget": 8,
-              "notes": ""
+              "notes": "會考基礎範圍"
+            },
+            {
+              "skillId": "solid-prism-concept",
+              "title": "角柱概念",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "全文字描述。"
+            },
+            {
+              "skillId": "solid-pyramid-concept",
+              "title": "角錐概念",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "全文字描述。"
+            },
+            {
+              "skillId": "solid-cylinder-concept",
+              "title": "圓柱概念",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "solid-cone-concept",
+              "title": "圓錐概念",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "solid-sphere-basic",
+              "title": "球體基本",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "限體積公式。"
+            },
+            {
+              "skillId": "surface-area-net",
+              "title": "由展開圖求表面積",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "文字描述展開圖。"
+            },
+            {
+              "skillId": "volume-unit-conversion",
+              "title": "體積單位換算",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "composite-solid-volume",
+              "title": "組合體體積",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "composite-solid-surface",
+              "title": "組合體表面積",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "會考基礎範圍。"
+            },
+            {
+              "skillId": "solid-application-word",
+              "title": "立體應用題",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "素養情境。"
+            },
+            {
+              "skillId": "cross-section-solid",
+              "title": "截面與立體",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "文字描述。"
+            },
+            {
+              "skillId": "solid-similarity-scale",
+              "title": "縮放與體積比",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "只做縮放概念。"
+            },
+            {
+              "skillId": "solid-packaging",
+              "title": "包裝問題",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "questionTarget": 12,
+              "notes": "素養情境。"
             }
           ]
         }
