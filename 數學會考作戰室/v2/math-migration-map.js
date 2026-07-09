@@ -1,5 +1,5 @@
 window.MATH_MIGRATION_MAP = {
-  "version": "2.0.0-draft-r1-u04",
+  "version": "2.0.0-draft-r1-u05",
   "unitMap": {
     "1": [
       "u01"
@@ -780,7 +780,7 @@ window.MATH_MIGRATION_MAP = {
     "g7-2-c2/coordinate-plane": {
       "v2UnitId": "u05",
       "v2TopicId": "u05-linear-graph",
-      "v2SkillId": "linear-graph-intersection",
+      "v2SkillId": "coordinate-line-intersection",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
@@ -788,15 +788,15 @@ window.MATH_MIGRATION_MAP = {
     "g7-2-c2/point-coordinates": {
       "v2UnitId": "u05",
       "v2TopicId": "u05-linear-graph",
-      "v2SkillId": "coordinate-graph-read",
+      "v2SkillId": "coordinate-point-on-line",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"
     },
     "g7-2-c2/distance-to-axes": {
       "v2UnitId": "u05",
-      "v2TopicId": "u05-linear-graph",
-      "v2SkillId": "coordinate-axis-distance",
+      "v2TopicId": "u05-coordinate-basics",
+      "v2SkillId": "coordinate-axis-points",
       "action": "reuse-after-schema-conversion",
       "status": "pending-detailed-review",
       "notes": "粗略對應，待 Phase B 細審。"

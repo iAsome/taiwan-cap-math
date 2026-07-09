@@ -17,7 +17,7 @@ function printQuestion(q) {
 }
 
 /** Pick one question per skill; skip v001 and prefer mixed difficulty. */
-function pickU04Sample(qs, skillId) {
+function pickSample(qs, skillId) {
   const skillQs = qs.filter(x => x.skillId === skillId).sort((a, b) => a.questionId.localeCompare(b.questionId));
   const nonV001 = skillQs.filter(q => !q.questionId.endsWith("-v001"));
   const pool = nonV001.length ? nonV001 : skillQs;
@@ -27,16 +27,32 @@ function pickU04Sample(qs, skillId) {
   return literacy || advanced || standard || pool[Math.floor(pool.length / 2)] || pool[0];
 }
 
-if (argUnit === "u04") {
-  const qs = w.MATH_QUESTION_BANK_V2_U04;
-  const u04 = w.MATH_SYLLABUS_V2.units.find(u => u.unitId === "u04");
+function printUnitAllSkills(uid, qs) {
+  const unit = w.MATH_SYLLABUS_V2.units.find(u => u.unitId === uid);
   const skillOrder = [];
-  for (const t of u04.topics) for (const s of t.skills) skillOrder.push(s.skillId);
-  console.log(`========== U04 one per skill (${skillOrder.length})${allSkills ? " [mixed difficulty, skip v001]" : ""} ==========`);
+  for (const t of unit.topics) for (const s of t.skills) skillOrder.push(s.skillId);
+  console.log(`========== ${uid.toUpperCase()} one per skill (${skillOrder.length}) [mixed difficulty, skip v001] ==========`);
   for (const skillId of skillOrder) {
-    const q = allSkills ? pickU04Sample(qs, skillId) : qs.find(x => x.skillId === skillId && x.questionId.endsWith("-v001"));
+    const q = pickSample(qs, skillId);
     if (!q) throw new Error(`missing sample for ${skillId}`);
     printQuestion(q);
+  }
+}
+
+if (argUnit === "u04" || argUnit === "u05") {
+  const uid = argUnit;
+  const qs = w[`MATH_QUESTION_BANK_V2_${uid.toUpperCase()}`];
+  if (allSkills) printUnitAllSkills(uid, qs);
+  else {
+    const unit = w.MATH_SYLLABUS_V2.units.find(u => u.unitId === uid);
+    const skillOrder = [];
+    for (const t of unit.topics) for (const s of t.skills) skillOrder.push(s.skillId);
+    console.log(`========== ${uid.toUpperCase()} one per skill (${skillOrder.length}) ==========`);
+    for (const skillId of skillOrder) {
+      const q = qs.find(x => x.skillId === skillId && x.questionId.endsWith("-v001"));
+      if (!q) throw new Error(`missing sample for ${skillId}`);
+      printQuestion(q);
+    }
   }
 } else {
   const units = argUnit ? [argUnit] : bankUnits;
@@ -46,7 +62,7 @@ if (argUnit === "u04") {
       console.log(`\n(skip ${uid}: no bank loaded)`);
       continue;
     }
-    const picks = uid === "u04"
+    const picks = ["u04", "u05"].includes(uid)
       ? [0]
       : [0, Math.floor(qs.length / 2), qs.length - 1];
     console.log(`\n========== ${uid.toUpperCase()} samples ==========`);

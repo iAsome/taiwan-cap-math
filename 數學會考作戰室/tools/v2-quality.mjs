@@ -26,7 +26,7 @@ export const BANNED_PHRASES = [
   "其餘選項不符合計算結果或題意，應逐一排除"
 ];
 
-/** Phase 2B-1-R1: U04 machine residue and generic wrong-reason phrases */
+/** Phase 2B-1-R1 / U05: machine residue, generic wrong-reason, image-dependent phrases */
 export const U04_BANNED_PHRASES = [
   "後比較左右",
   "多半是代入順序對調或漏乘係數",
@@ -46,6 +46,17 @@ export const U04_BANNED_PHRASES = [
   "第一例：",
   "第二例："
 ];
+
+export const U05_BANNED_PHRASES = [
+  ...U04_BANNED_PHRASES,
+  "如圖",
+  "下圖",
+  "請看圖",
+  "請看下圖",
+  "代入即可"
+];
+
+export const U05_IMAGE_PHRASES = ["如圖", "下圖", "請看圖", "請看下圖"];
 
 /** Machine variant padding like 01下列… not math quantities like 10 隻 */
 export const U04_EXPLANATION_PREFIX_RE = /^(0[1-9]|1[0-2])[\u4e00-\u9fff{]/;
@@ -137,6 +148,32 @@ export function hasU04BannedText(textOrArray) {
     const hit = findU04BannedPhrase(part);
     if (hit) return hit;
   }
+  return null;
+}
+
+export function findU05BannedPhrase(text) {
+  if (typeof text !== "string") return null;
+  for (const p of U05_BANNED_PHRASES) {
+    if (text.includes(p)) return p;
+  }
+  return null;
+}
+
+export function hasU05BannedText(textOrArray) {
+  const parts = Array.isArray(textOrArray) ? textOrArray : [textOrArray];
+  for (const part of parts) {
+    const hit = findU05BannedPhrase(part);
+    if (hit) return hit;
+  }
+  return null;
+}
+
+/** U05 explanation must not be only 「代入即可」 style one-liner */
+export function u05ExplanationTooVague(explanation) {
+  if (typeof explanation !== "string") return null;
+  const t = explanation.trim();
+  if (/^代入.*即可[。]?$/.test(t)) return "代入即可 only";
+  if (t.length < 20 && t.includes("代入")) return "vague 代入";
   return null;
 }
 

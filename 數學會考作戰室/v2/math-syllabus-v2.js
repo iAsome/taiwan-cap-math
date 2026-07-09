@@ -1,5 +1,5 @@
 window.MATH_SYLLABUS_V2 = {
-  "version": "2.0.0-draft-r1-u04",
+  "version": "2.0.0-draft-r1-u05",
   "sourceScope": "CAP_108_JUNIOR_MATH",
   "units": [
     {
@@ -1090,185 +1090,233 @@ window.MATH_SYLLABUS_V2 = {
       "topics": [
         {
           "topicId": "u05-coordinate-basics",
-          "title": "坐標平面",
+          "title": "坐標平面基礎",
           "skills": [
+            {
+              "skillId": "coordinate-point-reading",
+              "title": "坐標讀法與點的位置",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c2/coordinate-plane"
+              ],
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
+              "questionTarget": 12,
+              "notes": "坐標 (x,y) 讀法；x 左右、y 上下；順序不可對調。"
+            },
             {
               "skillId": "coordinate-quadrant",
-              "title": "象限與坐標",
+              "title": "象限判斷",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [
                 "g7-2-c2/coordinate-plane"
               ],
-              "capBoundary": "限國中會考範圍。",
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍"
+              "notes": "四象限正負號；坐標軸上的點不屬任何象限。"
             },
             {
-              "skillId": "coordinate-plot",
-              "title": "描點與坐標讀取",
+              "skillId": "coordinate-axis-points",
+              "title": "坐標軸上的點",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [
-                "g7-2-c2/coordinate-plane"
-              ],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 12,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "coordinate-distance",
-              "title": "兩點距離",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [
-                "g7-2-c2/point-coordinates"
-              ],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 12,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "coordinate-midpoint",
-              "title": "中點坐標",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [
-                "g7-2-c2/coordinate-plane"
-              ],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 12,
-              "notes": "會考基礎範圍"
-            }
-          ]
-        },
-        {
-          "topicId": "u05-linear-graph",
-          "title": "直線圖形",
-          "skills": [
-            {
-              "skillId": "linear-graph-slope",
-              "title": "斜率概念",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [
-                "g7-2-c2/point-coordinates"
-              ],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 12,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "linear-graph-equation",
-              "title": "直線方程式",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [
-                "g7-2-c2/coordinate-plane"
-              ],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 12,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "linear-graph-intersection",
-              "title": "兩直線交點",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [
-                "g7-2-c2/coordinate-plane"
-              ],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 12,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "coordinate-literacy",
-              "title": "坐標素養題",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 8,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "coordinate-axis-distance",
-              "title": "點到坐標軸距離",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [
                 "g7-2-c2/distance-to-axes"
               ],
-              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
+              "notes": "x 軸 y=0、y 軸 x=0；點到坐標軸距離為 |x| 或 |y|。"
             },
             {
-              "skillId": "coordinate-graph-read",
-              "title": "坐標圖形判讀",
+              "skillId": "coordinate-plot-description",
+              "title": "描點與位置描述",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [
                 "g7-2-c2/point-coordinates"
               ],
-              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍；Phase 2B 生成正式題庫。"
-            },
+              "notes": "文字描述移動路線；網格步數；坐標順序。"
+            }
+          ]
+        },
+        {
+          "topicId": "u05-coordinate-ops",
+          "title": "坐標平面運算",
+          "skills": [
             {
-              "skillId": "linear-graph-y-intercept",
-              "title": "y 截距",
+              "skillId": "coordinate-translation",
+              "title": "點的平移",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c2/coordinate-plane"
+              ],
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
+              "questionTarget": 12,
+              "notes": "左右改 x、上下改 y；多步平移與反推原點。"
+            },
+            {
+              "skillId": "coordinate-horizontal-vertical-distance",
+              "title": "水平距離與垂直距離",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c2/point-coordinates"
+              ],
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
+              "questionTarget": 12,
+              "notes": "同 y 求水平距 |x1-x2|；同 x 求垂直距 |y1-y2|；不用根號公式。"
+            },
+            {
+              "skillId": "coordinate-rectangle-area",
+              "title": "坐標平面中的長方形與面積",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [],
-              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍；限線型函數。"
+              "notes": "軸平行長方形；寬高由坐標差；面積與周長。"
+            }
+          ]
+        },
+        {
+          "topicId": "u05-linear-graph",
+          "title": "直線與方程式",
+          "skills": [
+            {
+              "skillId": "coordinate-linear-equation-graph",
+              "title": "二元一次方程式圖形",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c2/coordinate-plane"
+              ],
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
+              "questionTarget": 12,
+              "notes": "二元一次方程式圖形是直線；x=常數垂直、y=常數水平。"
+            },
+            {
+              "skillId": "coordinate-point-on-line",
+              "title": "判斷點是否在直線上",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c2/point-coordinates"
+              ],
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
+              "questionTarget": 12,
+              "notes": "將 (x,y) 代入方程式；左右相等則在直線上。"
+            },
+            {
+              "skillId": "coordinate-intercepts",
+              "title": "x 截距與 y 截距",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
+              "questionTarget": 12,
+              "notes": "x 截距令 y=0；y 截距令 x=0；區分截距值與截距點坐標。"
+            },
+            {
+              "skillId": "coordinate-line-intersection",
+              "title": "兩直線交點與聯立方程式",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c2/coordinate-plane"
+              ],
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
+              "questionTarget": 12,
+              "notes": "交點坐標同時滿足兩式；平行無交點、重合無限多解。"
+            }
+          ]
+        },
+        {
+          "topicId": "u05-coordinate-literacy",
+          "title": "坐標素養",
+          "skills": [
+            {
+              "skillId": "coordinate-literacy-context",
+              "title": "坐標素養題",
+              "required": true,
+              "difficultyBands": [
+                "standard",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。",
+              "questionTarget": 12,
+              "notes": "地圖格線、座位表、校園方位、棋盤移動；全文字描述。"
             }
           ]
         }

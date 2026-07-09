@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { skill, topic, unit, writeJs } from "./v2-shared.mjs";
 import { buildAllPilotContent } from "./v2-pilot-generators.mjs";
 import { buildU04Content } from "./v2-u04-generators.mjs";
+import { buildU05Content } from "./v2-u05-generators.mjs";
 import {
   SKILL_MINIMUMS,
   EXTRA_SKILLS,
@@ -102,12 +103,21 @@ const PILOT = {
 };
 
 const CAP_U04 = "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。";
+const CAP_U05 = "限國中會考平面直角坐標系；全文字描述，不用圖片；不含三角函數、向量、矩陣、圓錐曲線、高中解析幾何。";
 const skill12 = (skillId, title, topicId, legacyRefs = [], extra = {}) =>
   skill(skillId, title, topicId, legacyRefs, {
     questionTarget: 12,
     difficultyBands: ["basic", "standard", "advanced", "literacy"],
-    capBoundary: CAP_U04,
+    capBoundary: extra.capBoundary ?? CAP_U04,
     notes: extra.notes ?? "會考二元一次聯立方程式基礎範圍。",
+    ...extra
+  });
+const skill12Coord = (skillId, title, topicId, legacyRefs = [], extra = {}) =>
+  skill(skillId, title, topicId, legacyRefs, {
+    questionTarget: 12,
+    difficultyBands: ["basic", "standard", "advanced", "literacy"],
+    capBoundary: CAP_U05,
+    notes: extra.notes ?? "會考坐標平面基礎；以文字描述點、線、距離與圖形。",
     ...extra
   });
 
@@ -150,6 +160,42 @@ const FULL_BANK = {
           [], { notes: "生活情境、表格、活動費用；仍須可列二元一次聯立。", difficultyBands: ["standard", "literacy"] })
       ])
     ]
+  },
+  u05: {
+    topics: [
+      topic("u05-coordinate-basics", "坐標平面基礎", [
+        skill12Coord("coordinate-point-reading", "坐標讀法與點的位置", "u05-coordinate-basics",
+          ["g7-2-c2/coordinate-plane"], { notes: "坐標 (x,y) 讀法；x 左右、y 上下；順序不可對調。" }),
+        skill12Coord("coordinate-quadrant", "象限判斷", "u05-coordinate-basics",
+          ["g7-2-c2/coordinate-plane"], { notes: "四象限正負號；坐標軸上的點不屬任何象限。" }),
+        skill12Coord("coordinate-axis-points", "坐標軸上的點", "u05-coordinate-basics",
+          ["g7-2-c2/distance-to-axes"], { notes: "x 軸 y=0、y 軸 x=0；點到坐標軸距離為 |x| 或 |y|。" }),
+        skill12Coord("coordinate-plot-description", "描點與位置描述", "u05-coordinate-basics",
+          ["g7-2-c2/point-coordinates"], { notes: "文字描述移動路線；網格步數；坐標順序。" })
+      ]),
+      topic("u05-coordinate-ops", "坐標平面運算", [
+        skill12Coord("coordinate-translation", "點的平移", "u05-coordinate-ops",
+          ["g7-2-c2/coordinate-plane"], { notes: "左右改 x、上下改 y；多步平移與反推原點。" }),
+        skill12Coord("coordinate-horizontal-vertical-distance", "水平距離與垂直距離", "u05-coordinate-ops",
+          ["g7-2-c2/point-coordinates"], { notes: "同 y 求水平距 |x1-x2|；同 x 求垂直距 |y1-y2|；不用根號公式。" }),
+        skill12Coord("coordinate-rectangle-area", "坐標平面中的長方形與面積", "u05-coordinate-ops",
+          [], { notes: "軸平行長方形；寬高由坐標差；面積與周長。" })
+      ]),
+      topic("u05-linear-graph", "直線與方程式", [
+        skill12Coord("coordinate-linear-equation-graph", "二元一次方程式圖形", "u05-linear-graph",
+          ["g7-2-c2/coordinate-plane"], { notes: "二元一次方程式圖形是直線；x=常數垂直、y=常數水平。" }),
+        skill12Coord("coordinate-point-on-line", "判斷點是否在直線上", "u05-linear-graph",
+          ["g7-2-c2/point-coordinates"], { notes: "將 (x,y) 代入方程式；左右相等則在直線上。" }),
+        skill12Coord("coordinate-intercepts", "x 截距與 y 截距", "u05-linear-graph",
+          [], { notes: "x 截距令 y=0；y 截距令 x=0；區分截距值與截距點坐標。" }),
+        skill12Coord("coordinate-line-intersection", "兩直線交點與聯立方程式", "u05-linear-graph",
+          ["g7-2-c2/coordinate-plane"], { notes: "交點坐標同時滿足兩式；平行無交點、重合無限多解。" })
+      ]),
+      topic("u05-coordinate-literacy", "坐標素養", [
+        skill12Coord("coordinate-literacy-context", "坐標素養題", "u05-coordinate-literacy",
+          [], { notes: "地圖格線、座位表、校園方位、棋盤移動；全文字描述。", difficultyBands: ["standard", "literacy"] })
+      ])
+    ]
   }
 };
 
@@ -157,7 +203,7 @@ const FULL_BANK = {
 function loadBaseSyllabusOnly() {
   const ctx = vm.createContext({ window: {} });
   vm.runInContext(fs.readFileSync(path.join(v2Dir, "math-syllabus-v2.js"), "utf8"), ctx);
-  return ctx.window.MATH_SYLLABUS_V2.units.filter(u => !["u01", "u02", "u03", "u04"].includes(u.unitId));
+  return ctx.window.MATH_SYLLABUS_V2.units.filter(u => !["u01", "u02", "u03", "u04", "u05"].includes(u.unitId));
 }
 
 function loadUnitsMeta() {
@@ -225,7 +271,7 @@ function buildSyllabus(unitsMeta, v1Keys) {
     return def;
   });
   return {
-    version: "2.0.0-draft-r1-u04",
+    version: "2.0.0-draft-r1-u05",
     sourceScope: "CAP_108_JUNIOR_MATH",
     units,
     invalidLegacyRefs
@@ -334,7 +380,10 @@ const V1_TOPIC_FALLBACK = {
   "g7-2-c1/two-variable-integer-solutions": "system-ordered-pair-solution-check",
   "g7-2-c1/linear-system-concept": "system-solution-meaning",
   "g7-2-c1/system-discount-problem": "system-quantity-price-problem",
-  "g7-2-c1/system-digit-problem": "system-word-setup-basic"
+  "g7-2-c1/system-digit-problem": "system-word-setup-basic",
+  "g7-2-c2/coordinate-plane": "coordinate-point-reading",
+  "g7-2-c2/point-coordinates": "coordinate-plot-description",
+  "g7-2-c2/distance-to-axes": "coordinate-axis-points"
 };
 
 function skillMeta(syllabus, skillId) {
@@ -382,7 +431,7 @@ function buildMigrationMap(syllabus, v1Tax) {
     action: "rewrite-required", reason: "no-v1-taxonomy", notes: "g8-1-c5 無 v1 taxonomy，需重寫。"
   };
   return {
-    version: "2.0.0-draft-r1-u04",
+    version: "2.0.0-draft-r1-u05",
     unitMap,
     topicMap,
     invalidLegacyRefs,
@@ -400,7 +449,7 @@ function writeGapReport(syllabus) {
     const min = SKILL_MINIMUMS[u.unitId] || 0;
     const ok = n >= min ? "是" : "否";
     const bank = ["u01", "u02", "u03"].includes(u.unitId) ? "pilot 4 題/skill"
-      : u.unitId === "u04" ? "full 12 題/skill" : "待 Phase 2B 生成";
+      : ["u04", "u05"].includes(u.unitId) ? "full 12 題/skill" : "待 Phase 2B 生成";
     lines.push(`| ${u.unitId} | ${n} | ${min} | ${ok} | ${bank} |`);
   }
   lines.push("", `**總 skill 數：${total}**（最低要求 330）`, "", "## 超範圍禁止", "- 高中微積分、複數、排列組合 nPr/nCr、三角函數深題", "- 圖片/SVG/canvas 題", "- 非選擇手寫作答", "", "## invalidLegacyRefs 已自 syllabus 移除", `${(syllabus.invalidLegacyRefs || []).length} 條`, "");
@@ -426,6 +475,11 @@ function main() {
   fs.writeFileSync(path.join(v2Dir, "math-question-bank-v2-u04.js"), writeJs("MATH_QUESTION_BANK_V2_U04", u04.questions));
   fs.writeFileSync(path.join(v2Dir, "math-lecture-v2-u04.js"), writeJs("MATH_LECTURE_V2_U04", u04.lectures));
   console.log("u04", u04.questions.length, "questions", u04.lectures.length, "lectures");
+
+  const u05 = buildU05Content();
+  fs.writeFileSync(path.join(v2Dir, "math-question-bank-v2-u05.js"), writeJs("MATH_QUESTION_BANK_V2_U05", u05.questions));
+  fs.writeFileSync(path.join(v2Dir, "math-lecture-v2-u05.js"), writeJs("MATH_LECTURE_V2_U05", u05.lectures));
+  console.log("u05", u05.questions.length, "questions", u05.lectures.length, "lectures");
 
   const migration = buildMigrationMap(syllabusFull, loadV1Taxonomy());
   fs.writeFileSync(path.join(v2Dir, "math-migration-map.js"), writeJs("MATH_MIGRATION_MAP", migration));

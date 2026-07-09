@@ -4,6 +4,8 @@ import {
   countZh,
   hasBannedText,
   hasU04BannedText,
+  hasU05BannedText,
+  U05_IMAGE_PHRASES,
   BANNED_LECTURE_STEP_PHRASES,
   BANNED_MISTAKE_PHRASES
 } from "./v2-quality.mjs";
@@ -30,49 +32,62 @@ for (const uid of pilotUnits) {
   for (const key of skills) assert.ok(lecSkills.has(key), `missing lecture ${key}`);
 }
 
-if (bankUnits.includes("u04")) {
-  const u04 = w.MATH_SYLLABUS_V2.units.find(u => u.unitId === "u04");
+function assertUnitLectures(uid, count) {
+  const unit = w.MATH_SYLLABUS_V2.units.find(u => u.unitId === uid);
   const skills = new Set();
-  for (const t of u04.topics) for (const s of t.skills) skills.add(`u04/${s.skillId}`);
-  assert.equal(collectLectures("u04").length, 14, "u04 needs 14 lectures");
+  for (const t of unit.topics) for (const s of t.skills) skills.add(`${uid}/${s.skillId}`);
+  assert.equal(collectLectures(uid).length, count, `${uid} needs ${count} lectures`);
   for (const key of skills) {
-    assert.ok(collectLectures("u04").some(l => `${l.unitId}/${l.skillId}` === key), `missing u04 lecture ${key}`);
+    assert.ok(collectLectures(uid).some(l => `${l.unitId}/${l.skillId}` === key), `missing ${uid} lecture ${key}`);
   }
 }
 
+if (bankUnits.includes("u04")) assertUnitLectures("u04", 14);
+if (bankUnits.includes("u05")) assertUnitLectures("u05", 12);
+
 assert.equal(collectLectures("u01").length + collectLectures("u02").length + collectLectures("u03").length, 45);
 
-const u04BankBySkill = new Map();
-if (bankUnits.includes("u04")) {
-  for (const q of collectBank("u04")) {
-    if (!u04BankBySkill.has(q.skillId)) u04BankBySkill.set(q.skillId, []);
-    u04BankBySkill.get(q.skillId).push(q.explanation);
+const bankBySkill = new Map();
+for (const uid of bankUnits) {
+  for (const q of collectBank(uid)) {
+    if (!bankBySkill.has(q.skillId)) bankBySkill.set(q.skillId, []);
+    bankBySkill.get(q.skillId).push(q.explanation);
   }
 }
 
 for (const l of lectures) {
-  const isU04 = l.unitId === "u04";
-  const minConcept = isU04 ? 80 : 40;
-  const minEx = isU04 ? 40 : 30;
-  const minSteps = isU04 ? 5 : 4;
-  const minMistakes = isU04 ? 4 : 2;
+  const isFull = l.unitId === "u04" || l.unitId === "u05";
+  const minConcept = isFull ? 80 : 40;
+  const minEx = isFull ? 40 : 30;
+  const minSteps = isFull ? 5 : 4;
+  const minMistakes = isFull ? 4 : 2;
 
   assert.ok(countZh(l.concept) >= minConcept, `${l.skillId} concept too short (${countZh(l.concept)})`);
   assert.ok(l.stepGuide?.length >= minSteps, `${l.skillId} stepGuide need ${minSteps} steps`);
   for (const step of l.stepGuide) {
     assert.ok(!BANNED_LECTURE_STEP_PHRASES.some(p => step.includes(p)), `${l.skillId} banned stepGuide`);
     assert.ok(!hasBannedText(step), `${l.skillId} banned stepGuide phrase`);
-    if (isU04) assert.ok(!hasU04BannedText(step), `${l.skillId} u04 banned stepGuide: ${hasU04BannedText(step)}`);
+    if (isFull) {
+      assert.ok(!hasU04BannedText(step), `${l.skillId} banned stepGuide: ${hasU04BannedText(step)}`);
+      if (l.unitId === "u05") {
+        assert.ok(!hasU05BannedText(step), `${l.skillId} u05 banned stepGuide: ${hasU05BannedText(step)}`);
+        for (const p of U05_IMAGE_PHRASES) assert.ok(!step.includes(p), `${l.skillId} image in stepGuide`);
+      }
+    }
   }
   assert.ok(l.examples?.length >= 2, `${l.skillId} needs 2 examples`);
   const exStarts = new Set();
-  const bankExplanations = u04BankBySkill.get(l.skillId) || [];
+  const bankExplanations = bankBySkill.get(l.skillId) || [];
   l.examples.forEach((ex, i) => {
     assert.ok(countZh(ex.explanation) >= minEx, `${l.skillId} example ${i} (${countZh(ex.explanation)} chars)`);
     assert.ok(!hasBannedText(ex.explanation), `${l.skillId} example ${i} banned`);
-    if (isU04) {
-      assert.ok(!hasU04BannedText(ex.explanation), `${l.skillId} example ${i} u04 banned`);
+    if (isFull) {
+      assert.ok(!hasU04BannedText(ex.explanation), `${l.skillId} example ${i} banned`);
       assert.ok(!bankExplanations.includes(ex.explanation), `${l.skillId} example ${i} copies bank explanation`);
+      if (l.unitId === "u05") {
+        assert.ok(!hasU05BannedText(ex.explanation), `${l.skillId} example ${i} u05 banned`);
+        for (const p of U05_IMAGE_PHRASES) assert.ok(!ex.explanation.includes(p), `${l.skillId} image in example`);
+      }
     }
     exStarts.add(ex.explanation.slice(0, 12));
   });
@@ -80,7 +95,10 @@ for (const l of lectures) {
   assert.ok(l.commonMistakes?.length >= minMistakes, `${l.skillId} needs ${minMistakes} commonMistakes`);
   for (const m of l.commonMistakes) {
     for (const p of BANNED_MISTAKE_PHRASES) assert.ok(!m.includes(p), `${l.skillId} generic mistake`);
-    if (isU04) assert.ok(!hasU04BannedText(m), `${l.skillId} u04 banned mistake`);
+    if (isFull) {
+      assert.ok(!hasU04BannedText(m), `${l.skillId} banned mistake`);
+      if (l.unitId === "u05") assert.ok(!hasU05BannedText(m), `${l.skillId} u05 banned mistake`);
+    }
   }
 }
 
