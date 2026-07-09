@@ -2,7 +2,10 @@ export const BANNED_STEP_PHRASES = [
   "依題意整理已知條件",
   "先讀懂題目中的數學關係",
   "依公式或運算規則逐步計算",
-  "最後檢查答案是否合理"
+  "最後檢查答案是否合理",
+  "先讀題意",
+  "接著求值",
+  "最後寫出"
 ];
 
 /** Phase 2A-R2: machine-template phrases banned in explanation / steps / lecture examples */
@@ -143,7 +146,13 @@ export const U05_BANNED_PHRASES = [
   "對照兩點",
   "與依題意",
   "核對",
-  "驗算"
+  "驗算",
+  "先讀題意",
+  "接著求值",
+  "最後寫出",
+  "跟題目給的坐標",
+  "方向條件不符",
+  "未比較"
 ];
 
 /** U05-R4 extra regex bans */
