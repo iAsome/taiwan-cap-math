@@ -10,11 +10,20 @@ const PAT = [0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3];
 const DIFF = ["basic", "basic", "basic", "basic", "standard", "standard", "standard", "standard", "standard", "advanced", "advanced", "literacy"];
 
 const U07_BANNED = [
+  "都不符合本題不等式或情境",
   "語意或計算與題意不符", "因此可排除", "應回到列式", "不等號語意逐項核對",
   "逐項核對", "做題時應同時檢查", "端點條件", "應回到", "另外，選",
   "不符合題目條件", "逐項驗算後再決定", "步驟跳躍", "符號處理錯誤",
   "若誤以為", "答案為", "結果為", "【", "】", "如圖", "下圖", "請看圖", "<=", ">="
 ];
+const TEMPLATE_ONLY_RE = /，只有[^。]{0,60}正確。/;
+
+function hasU07Banned(blob) {
+  for (const b of U07_BANNED) if (blob.includes(b)) return b;
+  if (blob.includes("只有「")) return "只有「";
+  if (TEMPLATE_ONLY_RE.test(blob)) return "，只有…正確。";
+  return null;
+}
 
 function reorderChoices(choices, answerIndex, targetIndex) {
   const correct = choices[answerIndex];
@@ -45,9 +54,8 @@ function mkItems(seq, skillId, topicId, concept, rows) {
     if (countZh(item.commonMistake) < 12) throw new Error(`${item.questionId} commonMistake short`);
     if (item.steps.length < 3) throw new Error(`${item.questionId} steps < 3`);
     const blob = [item.text, item.explanation, item.commonMistake, ...item.steps, ...item.choices].join("\n");
-    for (const b of U07_BANNED) {
-      if (blob.includes(b)) throw new Error(`${item.questionId} banned "${b}"`);
-    }
+    const hit = hasU07Banned(blob);
+    if (hit) throw new Error(`${item.questionId} banned "${hit}"`);
     return item;
   });
 }

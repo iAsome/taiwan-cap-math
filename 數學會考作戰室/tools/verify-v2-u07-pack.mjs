@@ -8,13 +8,15 @@ import { countZh } from "./v2-quality.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
-const U07_R1_BANNED = [
+const U07_R2_BANNED = [
+  "都不符合本題不等式或情境",
   "語意或計算與題意不符", "因此可排除", "應回到列式", "不等號語意逐項核對",
   "逐項核對", "做題時應同時檢查", "端點條件", "應回到", "另外，選",
   "若誤以為", "答案為", "結果為", "步驟跳躍", "符號處理錯誤", "【", "】",
   "如圖", "下圖", "請看圖"
 ];
 const BAD_SYMBOL_RE = /<=|>=/;
+const TEMPLATE_ONLY_RE = /，只有[^。]{0,60}正確。/;
 const IMAGE_RE = /<img\b|<svg\b|canvas/i;
 const DIFF_EXPECTED = { basic: 48, standard: 60, advanced: 24, literacy: 12 };
 const AI_EXPECTED = [36, 36, 36, 36];
@@ -31,7 +33,9 @@ function loadU07() {
 }
 
 function hasBanned(text) {
-  for (const p of U07_R1_BANNED) if (text.includes(p)) return p;
+  for (const p of U07_R2_BANNED) if (text.includes(p)) return p;
+  if (text.includes("只有「")) return "只有「";
+  if (TEMPLATE_ONLY_RE.test(text)) return "，只有…正確。";
   return null;
 }
 
