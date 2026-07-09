@@ -1,9 +1,19 @@
 window.MATH_ENGINE_V2 = (() => {
-  const BANKS = {
-    u01: () => window.MATH_QUESTION_BANK_V2_U01 || [],
-    u02: () => window.MATH_QUESTION_BANK_V2_U02 || [],
-    u03: () => window.MATH_QUESTION_BANK_V2_U03 || []
-  };
+  /** ponytail: scan window for MATH_QUESTION_BANK_V2_Uxx; no hardcoded unit list */
+  function getBankByUnit(unitId) {
+    const key = `MATH_QUESTION_BANK_V2_${String(unitId).toUpperCase()}`;
+    const bank = window[key];
+    return Array.isArray(bank) ? bank : null;
+  }
+
+  function loadedUnitIds() {
+    const ids = [];
+    for (const k of Object.keys(window)) {
+      const m = /^MATH_QUESTION_BANK_V2_(U\d{2})$/.exec(k);
+      if (m && Array.isArray(window[k]) && window[k].length) ids.push(m[1].toLowerCase());
+    }
+    return ids.sort();
+  }
 
   function mulberry32(seed) {
     let t = seed >>> 0;
@@ -25,12 +35,16 @@ window.MATH_ENGINE_V2 = (() => {
   }
 
   function allQuestions() {
-    return [...BANKS.u01(), ...BANKS.u02(), ...BANKS.u03()];
+    const out = [];
+    for (const uid of loadedUnitIds()) {
+      const bank = getBankByUnit(uid);
+      if (bank?.length) out.push(...bank);
+    }
+    return out;
   }
 
   function getByUnit(unitId) {
-    const fn = BANKS[unitId];
-    return fn ? fn() : [];
+    return getBankByUnit(unitId) || [];
   }
 
   function getBySkill(skillId) {
@@ -46,7 +60,10 @@ window.MATH_ENGINE_V2 = (() => {
   }
 
   function generateUnitQuiz(unitId, seed = 1) {
-    const bank = getByUnit(unitId);
+    const bank = getBankByUnit(unitId);
+    if (!bank?.length) {
+      throw new Error(`no question bank loaded for unit ${unitId} (expected window.MATH_QUESTION_BANK_V2_${String(unitId).toUpperCase()})`);
+    }
     const syllabusUnit = (window.MATH_SYLLABUS_V2?.units || []).find(u => u.unitId === unitId);
     if (!syllabusUnit) throw new Error(`unknown unit ${unitId}`);
     const skillIds = [];
@@ -56,7 +73,7 @@ window.MATH_ENGINE_V2 = (() => {
     const used = new Set();
     for (const skillId of skillIds) {
       const pool = bank.filter(q => q.skillId === skillId);
-      if (!pool.length) throw new Error(`no bank for skill ${skillId}`);
+      if (!pool.length) throw new Error(`no bank for skill ${skillId} in ${unitId}`);
       const q = pool[Math.floor(rng() * pool.length)];
       if (used.has(q.questionId)) throw new Error(`duplicate pick ${q.questionId}`);
       used.add(q.questionId);
@@ -75,5 +92,13 @@ window.MATH_ENGINE_V2 = (() => {
     return schema.validateBank(allQuestions(), { unitIds: units, skills });
   }
 
-  return { getByUnit, getBySkill, generateUnitQuiz, validateBank, allQuestions };
+  return {
+    getBankByUnit,
+    loadedUnitIds,
+    getByUnit,
+    getBySkill,
+    generateUnitQuiz,
+    validateBank,
+    allQuestions
+  };
 })();

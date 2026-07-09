@@ -1,5 +1,5 @@
 window.MATH_MIGRATION_MAP = {
-  "version": "2.0.0-draft-r1",
+  "version": "2.0.0-draft-r1-u04",
   "unitMap": {
     "1": [
       "u01"
@@ -639,75 +639,143 @@ window.MATH_MIGRATION_MAP = {
     },
     "g7-2-c1/two-variable-linear-expression": {
       "v2UnitId": "u04",
-      "v2TopicId": "u04-system-expression",
-      "v2SkillId": "system-two-variable-expression",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-two-variable-equation-definition",
       "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
+      "notes": "概念可沿用，但需轉成 v2 schema。"
     },
     "g7-2-c1/two-variable-expression-simplify": {
       "v2UnitId": "u04",
-      "v2TopicId": "u04-system-expression",
-      "v2SkillId": "system-expression-simplify",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-two-variable-equation-definition",
       "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/two-variable-linear-equation": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-two-variable-equation-definition",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/two-variable-equation-solution": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-ordered-pair-solution-check",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
     },
     "g7-2-c1/two-variable-expression-value": {
       "v2UnitId": "u04",
-      "v2TopicId": "u04-system-expression",
-      "v2SkillId": "system-expression-value",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-ordered-pair-solution-check",
       "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/two-variable-expression-word-setup": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-apps",
+      "v2SkillId": "system-quantity-price-problem",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/two-variable-expression-setup-evaluate": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-ordered-pair-solution-check",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/two-variable-equation-solution-evaluate": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-ordered-pair-solution-check",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/two-variable-integer-solutions": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-ordered-pair-solution-check",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/two-variable-equation-word-application": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-apps",
+      "v2SkillId": "system-word-setup-basic",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/linear-system-concept": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-solution-meaning",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/linear-system-solution-concept": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-solution-meaning",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
     },
     "g7-2-c1/solve-linear-system": {
       "v2UnitId": "u04",
-      "v2TopicId": "u04-system-solving",
-      "v2SkillId": "system-elimination",
+      "v2TopicId": "u04-system-methods",
+      "v2SkillId": "system-elimination-method",
       "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
+      "notes": "概念可沿用，但需轉成 v2 schema。"
     },
     "g7-2-c1/special-linear-system": {
       "v2UnitId": "u04",
-      "v2TopicId": "u04-system-solving",
+      "v2TopicId": "u04-system-methods",
       "v2SkillId": "system-special-cases",
       "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
+      "notes": "概念可沿用，但需轉成 v2 schema。"
     },
     "g7-2-c1/system-word-problem-steps": {
       "v2UnitId": "u04",
       "v2TopicId": "u04-system-apps",
-      "v2SkillId": "system-word-setup",
+      "v2SkillId": "system-word-setup-basic",
       "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
+      "notes": "概念可沿用，但需轉成 v2 schema。"
     },
     "g7-2-c1/system-solution-parameter": {
       "v2UnitId": "u04",
-      "v2TopicId": "u04-system-solving",
-      "v2SkillId": "system-solution-check",
+      "v2TopicId": "u04-system-basics",
+      "v2SkillId": "system-solution-meaning",
       "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/system-discount-problem": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-apps",
+      "v2SkillId": "system-quantity-price-problem",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
+    },
+    "g7-2-c1/system-quantity-problem": {
+      "v2UnitId": "u04",
+      "v2TopicId": "u04-system-apps",
+      "v2SkillId": "system-chicken-rabbit-problem",
+      "action": "reuse-after-schema-conversion",
+      "notes": "概念可沿用，但需轉成 v2 schema。"
     },
     "g7-2-c1/system-digit-problem": {
       "v2UnitId": "u04",
       "v2TopicId": "u04-system-apps",
-      "v2SkillId": "system-digit-problem",
+      "v2SkillId": "system-word-setup-basic",
       "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
+      "notes": "概念可沿用，但需轉成 v2 schema。"
     },
     "g7-2-c1/system-rate-problem": {
       "v2UnitId": "u04",
       "v2TopicId": "u04-system-apps",
       "v2SkillId": "system-rate-problem",
       "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
+      "notes": "概念可沿用，但需轉成 v2 schema。"
     },
     "g7-2-c2/coordinate-plane": {
       "v2UnitId": "u05",

@@ -41,6 +41,6 @@ for (const u of syllabus.units) {
     }
   }
 }
-assert.ok(totalSkills >= 330, `need >= 330 skills, got ${totalSkills}`);
+assert.ok(totalSkills >= 338, `need >= 338 skills, got ${totalSkills}`);
 
 console.log("verify-v2-syllabus: OK", { units: units.length, skills: skillIds.size });

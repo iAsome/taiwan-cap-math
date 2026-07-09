@@ -2,7 +2,7 @@ import { skill, topic, unit } from "./v2-shared.mjs";
 
 /** Minimum skill counts per unit (Phase 2A-R1) */
 export const SKILL_MINIMUMS = {
-  u01: 15, u02: 15, u03: 15, u04: 13, u05: 11, u06: 12, u07: 12, u08: 14, u09: 16,
+  u01: 15, u02: 15, u03: 15, u04: 14, u05: 11, u06: 12, u07: 12, u08: 14, u09: 16,
   u10: 13, u11: 16, u12: 10, u13: 15, u14: 12, u15: 13, u16: 18, u17: 18, u18: 16,
   u19: 18, u20: 15, u21: 12, u22: 18, u23: 20
 };
@@ -16,10 +16,6 @@ const S = (skillId, title, topicId, legacyRefs = [], extra = {}) =>
 
 /** Extra skills to pad each unit to minimum (legacyRefs empty until verified) */
 export const EXTRA_SKILLS = {
-  u04: [
-    S("system-coefficient-match", "係數配對列式", "u04-system-solving", [], { notes: "會考基礎範圍；待對照 v1 g7-2-c1。" }),
-    S("system-mixture-basic", "濃度混合基本", "u04-system-apps", [], { notes: "會考基礎範圍；只做二元一次基本題。" })
-  ],
   u05: [
     S("coordinate-axis-distance", "點到坐標軸距離", "u05-coordinate-basics", ["g7-2-c2/distance-to-axes"]),
     S("coordinate-graph-read", "坐標圖形判讀", "u05-linear-graph", ["g7-2-c2/point-coordinates"]),

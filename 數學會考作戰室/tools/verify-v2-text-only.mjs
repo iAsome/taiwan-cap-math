@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
-import { loadV2Context, IMAGE_RE, FIGURE_RE } from "./v2-load.mjs";
+import { loadV2Context, loadedBankUnits, IMAGE_RE, FIGURE_RE } from "./v2-load.mjs";
 
 const w = loadV2Context();
-const lectures = [...w.MATH_LECTURE_V2_U01, ...w.MATH_LECTURE_V2_U02, ...w.MATH_LECTURE_V2_U03];
-const questions = [...w.MATH_QUESTION_BANK_V2_U01, ...w.MATH_QUESTION_BANK_V2_U02, ...w.MATH_QUESTION_BANK_V2_U03];
+const bankUnits = loadedBankUnits();
+const questions = bankUnits.flatMap(uid => w[`MATH_QUESTION_BANK_V2_${uid.toUpperCase()}`] || []);
+const lectures = bankUnits.flatMap(uid => w[`MATH_LECTURE_V2_${uid.toUpperCase()}`] || []);
 
 for (const item of [...questions, ...lectures]) {
   const text = JSON.stringify(item);

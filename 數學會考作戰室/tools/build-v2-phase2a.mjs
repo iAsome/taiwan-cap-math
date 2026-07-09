@@ -4,6 +4,7 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { skill, topic, unit, writeJs } from "./v2-shared.mjs";
 import { buildAllPilotContent } from "./v2-pilot-generators.mjs";
+import { buildU04Content } from "./v2-u04-generators.mjs";
 import {
   SKILL_MINIMUMS,
   EXTRA_SKILLS,
@@ -100,11 +101,63 @@ const PILOT = {
   }
 };
 
-// Base U04–U23 from existing syllabus (preserves UTF-8 titles); expanded at build time
+const CAP_U04 = "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。";
+const skill12 = (skillId, title, topicId, legacyRefs = [], extra = {}) =>
+  skill(skillId, title, topicId, legacyRefs, {
+    questionTarget: 12,
+    difficultyBands: ["basic", "standard", "advanced", "literacy"],
+    capBoundary: CAP_U04,
+    notes: extra.notes ?? "會考二元一次聯立方程式基礎範圍。",
+    ...extra
+  });
+
+/** Phase 2B: full bank units (12 questions/skill) */
+const FULL_BANK = {
+  u04: {
+    topics: [
+      topic("u04-system-basics", "二元一次方程式基礎", [
+        skill12("system-two-variable-equation-definition", "二元一次方程式的判斷", "u04-system-basics",
+          ["g7-2-c1/two-variable-linear-equation"], { notes: "判斷是否為二元一次方程式；排除 xy、x²、1/x 等非一次形式。" }),
+        skill12("system-ordered-pair-solution-check", "有序數對與解的判斷", "u04-system-basics",
+          ["g7-2-c1/two-variable-equation-solution"], { notes: "代入 (x,y) 檢驗是否為方程式的解；注意順序。" }),
+        skill12("system-solution-meaning", "聯立方程式解的意義", "u04-system-basics",
+          ["g7-2-c1/linear-system-solution-concept"], { notes: "解須同時滿足兩式；可反求參數。" })
+      ]),
+      topic("u04-system-methods", "解聯立方程式", [
+        skill12("system-substitution-method", "代入消去法", "u04-system-methods",
+          ["g7-2-c1/special-linear-system"], { notes: "先解出單一未知數再代入另一式。" }),
+        skill12("system-elimination-method", "加減消去法", "u04-system-methods",
+          ["g7-2-c1/solve-linear-system"], { notes: "係數相同相減、相反相加消去一未知數。" }),
+        skill12("system-elimination-scaling", "係數放大後消去", "u04-system-methods",
+          [], { notes: "兩式同乘適當倍數使係數可消去；整式每一項都要乘。" }),
+        skill12("system-special-cases", "無解、唯一解、無限多解", "u04-system-methods",
+          ["g7-2-c1/special-linear-system"], { notes: "消去後 0=0 表無限多解；0=非0 表無解。" })
+      ]),
+      topic("u04-system-apps", "聯立方程式應用", [
+        skill12("system-word-setup-basic", "情境列聯立方程式", "u04-system-apps",
+          ["g7-2-c1/system-word-problem-steps"], { notes: "設 x、y 並依總數、總價、差額列兩式。" }),
+        skill12("system-chicken-rabbit-problem", "雞兔同籠問題", "u04-system-apps",
+          ["g7-2-c1/system-quantity-problem"], { notes: "頭數一式、腳數一式；解須為非負整數。" }),
+        skill12("system-ticket-price-problem", "票價問題", "u04-system-apps",
+          [], { notes: "成人票、學生票；張數總和與金額總和各列一式。" }),
+        skill12("system-quantity-price-problem", "數量與總價問題", "u04-system-apps",
+          ["g7-2-c1/two-variable-expression-word-setup"], { notes: "兩種商品數量與單價；總數量、總金額。" }),
+        skill12("system-rate-problem", "速率與行程問題", "u04-system-apps",
+          ["g7-2-c1/system-rate-problem"], { notes: "路程=速率×時間；相向或同向須分清楚。" }),
+        skill12("system-mixture-basic", "基礎混合問題", "u04-system-apps",
+          [], { notes: "會考基本混合（重量、價格、濃度文字題）；不做高中化學計量。" }),
+        skill12("system-literacy-context", "聯立方程式素養題", "u04-system-apps",
+          [], { notes: "生活情境、表格、活動費用；仍須可列二元一次聯立。", difficultyBands: ["standard", "literacy"] })
+      ])
+    ]
+  }
+};
+
+// Base U05–U23 from existing syllabus (preserves UTF-8 titles); expanded at build time
 function loadBaseSyllabusOnly() {
   const ctx = vm.createContext({ window: {} });
   vm.runInContext(fs.readFileSync(path.join(v2Dir, "math-syllabus-v2.js"), "utf8"), ctx);
-  return ctx.window.MATH_SYLLABUS_V2.units.filter(u => !["u01", "u02", "u03"].includes(u.unitId));
+  return ctx.window.MATH_SYLLABUS_V2.units.filter(u => !["u01", "u02", "u03", "u04"].includes(u.unitId));
 }
 
 function loadUnitsMeta() {
@@ -161,6 +214,10 @@ function buildSyllabus(unitsMeta, v1Keys) {
       const def = sanitizeUnitTopics({ unitId: u.unitId, title: u.title, topics: PILOT[u.unitId].topics }, v1Keys, invalidLegacyRefs);
       return def;
     }
+    if (FULL_BANK[u.unitId]) {
+      const def = sanitizeUnitTopics({ unitId: u.unitId, title: u.title, topics: FULL_BANK[u.unitId].topics }, v1Keys, invalidLegacyRefs);
+      return def;
+    }
     const base = dedupeUnitSkills(loadBaseSyllabusOnly().find(x => x.unitId === u.unitId));
     if (!base) throw new Error(`missing base syllabus for ${u.unitId}`);
     const expanded = expandSyllabusUnit(base, EXTRA_SKILLS[u.unitId] || []);
@@ -168,7 +225,7 @@ function buildSyllabus(unitsMeta, v1Keys) {
     return def;
   });
   return {
-    version: "2.0.0-draft-r1",
+    version: "2.0.0-draft-r1-u04",
     sourceScope: "CAP_108_JUNIOR_MATH",
     units,
     invalidLegacyRefs
@@ -254,7 +311,30 @@ const V1_TOPIC_FALLBACK = {
   "g7-1-c3/water-saving-problem": "linear-equation-literacy-context",
   "g7-1-c3/shopping-problem": "linear-equation-money-problem",
   "g7-1-c3/plan-comparison-problem": "linear-equation-plan-comparison",
-  "g7-1-c3/discount-problem": "linear-equation-money-problem"
+  "g7-1-c3/discount-problem": "linear-equation-money-problem",
+  "g7-2-c1/two-variable-linear-equation": "system-two-variable-equation-definition",
+  "g7-2-c1/two-variable-linear-expression": "system-two-variable-equation-definition",
+  "g7-2-c1/two-variable-equation-solution": "system-ordered-pair-solution-check",
+  "g7-2-c1/two-variable-equation-solution-evaluate": "system-ordered-pair-solution-check",
+  "g7-2-c1/linear-system-concept": "system-solution-meaning",
+  "g7-2-c1/linear-system-solution-concept": "system-solution-meaning",
+  "g7-2-c1/solve-linear-system": "system-elimination-method",
+  "g7-2-c1/special-linear-system": "system-substitution-method",
+  "g7-2-c1/system-word-problem-steps": "system-word-setup-basic",
+  "g7-2-c1/system-quantity-problem": "system-chicken-rabbit-problem",
+  "g7-2-c1/system-rate-problem": "system-rate-problem",
+  "g7-2-c1/system-solution-parameter": "system-solution-meaning",
+  "g7-2-c1/two-variable-expression-word-setup": "system-quantity-price-problem",
+  "g7-2-c1/two-variable-equation-word-application": "system-word-setup-basic",
+  "g7-2-c1/two-variable-linear-expression": "system-two-variable-equation-definition",
+  "g7-2-c1/two-variable-expression-simplify": "system-two-variable-equation-definition",
+  "g7-2-c1/two-variable-expression-value": "system-ordered-pair-solution-check",
+  "g7-2-c1/two-variable-expression-setup-evaluate": "system-ordered-pair-solution-check",
+  "g7-2-c1/two-variable-equation-solution-evaluate": "system-ordered-pair-solution-check",
+  "g7-2-c1/two-variable-integer-solutions": "system-ordered-pair-solution-check",
+  "g7-2-c1/linear-system-concept": "system-solution-meaning",
+  "g7-2-c1/system-discount-problem": "system-quantity-price-problem",
+  "g7-2-c1/system-digit-problem": "system-word-setup-basic"
 };
 
 function skillMeta(syllabus, skillId) {
@@ -284,7 +364,7 @@ function buildMigrationMap(syllabus, v1Tax) {
     }
   }
   const topicMap = {};
-  const detailedQuizzes = new Set(["g7-1-c1", "g7-1-c2", "g7-1-c3"]);
+  const detailedQuizzes = new Set(["g7-1-c1", "g7-1-c2", "g7-1-c3", "g7-2-c1"]);
   for (const [quizId, chapter] of Object.entries(v1Tax)) {
     for (const sec of chapter.sections) for (const tp of sec.topics) {
       const key = `${quizId}/${tp.id}`;
@@ -302,7 +382,7 @@ function buildMigrationMap(syllabus, v1Tax) {
     action: "rewrite-required", reason: "no-v1-taxonomy", notes: "g8-1-c5 無 v1 taxonomy，需重寫。"
   };
   return {
-    version: "2.0.0-draft-r1",
+    version: "2.0.0-draft-r1-u04",
     unitMap,
     topicMap,
     invalidLegacyRefs,
@@ -319,7 +399,8 @@ function writeGapReport(syllabus) {
     total += n;
     const min = SKILL_MINIMUMS[u.unitId] || 0;
     const ok = n >= min ? "是" : "否";
-    const bank = ["u01", "u02", "u03"].includes(u.unitId) ? "pilot 4 題/skill" : "待 Phase 2B 生成";
+    const bank = ["u01", "u02", "u03"].includes(u.unitId) ? "pilot 4 題/skill"
+      : u.unitId === "u04" ? "full 12 題/skill" : "待 Phase 2B 生成";
     lines.push(`| ${u.unitId} | ${n} | ${min} | ${ok} | ${bank} |`);
   }
   lines.push("", `**總 skill 數：${total}**（最低要求 330）`, "", "## 超範圍禁止", "- 高中微積分、複數、排列組合 nPr/nCr、三角函數深題", "- 圖片/SVG/canvas 題", "- 非選擇手寫作答", "", "## invalidLegacyRefs 已自 syllabus 移除", `${(syllabus.invalidLegacyRefs || []).length} 條`, "");
@@ -340,6 +421,11 @@ function main() {
     fs.writeFileSync(path.join(v2Dir, `math-lecture-v2-${uid}.js`), writeJs(`MATH_LECTURE_V2_${uid.toUpperCase()}`, pilot.lecturesByUnit[uid]));
     console.log(uid, pilot.questionsByUnit[uid].length, "questions", pilot.lecturesByUnit[uid].length, "lectures");
   }
+
+  const u04 = buildU04Content();
+  fs.writeFileSync(path.join(v2Dir, "math-question-bank-v2-u04.js"), writeJs("MATH_QUESTION_BANK_V2_U04", u04.questions));
+  fs.writeFileSync(path.join(v2Dir, "math-lecture-v2-u04.js"), writeJs("MATH_LECTURE_V2_U04", u04.lectures));
+  console.log("u04", u04.questions.length, "questions", u04.lectures.length, "lectures");
 
   const migration = buildMigrationMap(syllabusFull, loadV1Taxonomy());
   fs.writeFileSync(path.join(v2Dir, "math-migration-map.js"), writeJs("MATH_MIGRATION_MAP", migration));

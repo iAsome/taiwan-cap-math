@@ -1,5 +1,5 @@
 window.MATH_SYLLABUS_V2 = {
-  "version": "2.0.0-draft-r1",
+  "version": "2.0.0-draft-r1-u04",
   "sourceScope": "CAP_108_JUNIOR_MATH",
   "units": [
     {
@@ -823,126 +823,138 @@ window.MATH_SYLLABUS_V2 = {
       "title": "二元一次聯立方程式",
       "topics": [
         {
-          "topicId": "u04-system-expression",
-          "title": "二元一次式",
+          "topicId": "u04-system-basics",
+          "title": "二元一次方程式基礎",
           "skills": [
             {
-              "skillId": "system-two-variable-expression",
-              "title": "二元一次式",
+              "skillId": "system-two-variable-equation-definition",
+              "title": "二元一次方程式的判斷",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c1/two-variable-linear-expression"
+                "g7-2-c1/two-variable-linear-equation"
               ],
-              "capBoundary": "限國中會考範圍。",
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍"
+              "notes": "判斷是否為二元一次方程式；排除 xy、x²、1/x 等非一次形式。"
             },
             {
-              "skillId": "system-expression-simplify",
-              "title": "二元一次式化簡",
+              "skillId": "system-ordered-pair-solution-check",
+              "title": "有序數對與解的判斷",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c1/two-variable-expression-simplify"
+                "g7-2-c1/two-variable-equation-solution"
               ],
-              "capBoundary": "限國中會考範圍。",
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍"
+              "notes": "代入 (x,y) 檢驗是否為方程式的解；注意順序。"
             },
             {
-              "skillId": "system-expression-value",
-              "title": "二元一次式求值",
+              "skillId": "system-solution-meaning",
+              "title": "聯立方程式解的意義",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c1/two-variable-expression-value"
+                "g7-2-c1/linear-system-solution-concept"
               ],
-              "capBoundary": "限國中會考範圍。",
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍"
+              "notes": "解須同時滿足兩式；可反求參數。"
             }
           ]
         },
         {
-          "topicId": "u04-system-solving",
-          "title": "聯立方程式解法",
+          "topicId": "u04-system-methods",
+          "title": "解聯立方程式",
           "skills": [
             {
-              "skillId": "system-substitution",
+              "skillId": "system-substitution-method",
               "title": "代入消去法",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [
-                "g7-2-c1/solve-linear-system"
-              ],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 12,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "system-elimination",
-              "title": "加減消去法",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [
-                "g7-2-c1/solve-linear-system"
-              ],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 12,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "system-special-cases",
-              "title": "無解與無限多解",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [
                 "g7-2-c1/special-linear-system"
               ],
-              "capBoundary": "限國中會考範圍。",
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍"
+              "notes": "先解出單一未知數再代入另一式。"
             },
             {
-              "skillId": "system-solution-check",
-              "title": "聯立方程式解的檢查",
+              "skillId": "system-elimination-method",
+              "title": "加減消去法",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [
-                "g7-2-c1/system-solution-parameter"
+                "g7-2-c1/solve-linear-system"
               ],
-              "capBoundary": "限國中會考範圍。",
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍"
+              "notes": "係數相同相減、相反相加消去一未知數。"
+            },
+            {
+              "skillId": "system-elimination-scaling",
+              "title": "係數放大後消去",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
+              "questionTarget": 12,
+              "notes": "兩式同乘適當倍數使係數可消去；整式每一項都要乘。"
+            },
+            {
+              "skillId": "system-special-cases",
+              "title": "無解、唯一解、無限多解",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c1/special-linear-system"
+              ],
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
+              "questionTarget": 12,
+              "notes": "消去後 0=0 表無限多解；0=非0 表無解。"
             }
           ]
         },
@@ -951,94 +963,122 @@ window.MATH_SYLLABUS_V2 = {
           "title": "聯立方程式應用",
           "skills": [
             {
-              "skillId": "system-word-setup",
-              "title": "聯立方程式列式",
+              "skillId": "system-word-setup-basic",
+              "title": "情境列聯立方程式",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [
                 "g7-2-c1/system-word-problem-steps"
               ],
-              "capBoundary": "限國中會考範圍。",
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍"
+              "notes": "設 x、y 並依總數、總價、差額列兩式。"
             },
             {
-              "skillId": "system-rate-problem",
-              "title": "速率問題",
+              "skillId": "system-chicken-rabbit-problem",
+              "title": "雞兔同籠問題",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c1/system-quantity-problem"
+              ],
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
+              "questionTarget": 12,
+              "notes": "頭數一式、腳數一式；解須為非負整數。"
+            },
+            {
+              "skillId": "system-ticket-price-problem",
+              "title": "票價問題",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
+              "questionTarget": 12,
+              "notes": "成人票、學生票；張數總和與金額總和各列一式。"
+            },
+            {
+              "skillId": "system-quantity-price-problem",
+              "title": "數量與總價問題",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [
+                "g7-2-c1/two-variable-expression-word-setup"
+              ],
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
+              "questionTarget": 12,
+              "notes": "兩種商品數量與單價；總數量、總金額。"
+            },
+            {
+              "skillId": "system-rate-problem",
+              "title": "速率與行程問題",
+              "required": true,
+              "difficultyBands": [
+                "basic",
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [
                 "g7-2-c1/system-rate-problem"
               ],
-              "capBoundary": "限國中會考範圍。",
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "system-digit-problem",
-              "title": "數字問題",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [
-                "g7-2-c1/system-digit-problem"
-              ],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 12,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "system-literacy",
-              "title": "聯立方程式素養題",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [],
-              "capBoundary": "限國中會考範圍。",
-              "questionTarget": 8,
-              "notes": "會考基礎範圍"
-            },
-            {
-              "skillId": "system-coefficient-match",
-              "title": "係數配對列式",
-              "required": true,
-              "difficultyBands": [
-                "basic",
-                "standard"
-              ],
-              "visualMode": "text-only",
-              "legacyRefs": [],
-              "capBoundary": "限國中會考範圍；不含高中延伸。",
-              "questionTarget": 12,
-              "notes": "會考基礎範圍；待對照 v1 g7-2-c1。"
+              "notes": "路程=速率×時間；相向或同向須分清楚。"
             },
             {
               "skillId": "system-mixture-basic",
-              "title": "濃度混合基本",
+              "title": "基礎混合問題",
               "required": true,
               "difficultyBands": [
                 "basic",
-                "standard"
+                "standard",
+                "advanced",
+                "literacy"
               ],
               "visualMode": "text-only",
               "legacyRefs": [],
-              "capBoundary": "限國中會考範圍；不含高中延伸。",
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
               "questionTarget": 12,
-              "notes": "會考基礎範圍；只做二元一次基本題。"
+              "notes": "會考基本混合（重量、價格、濃度文字題）；不做高中化學計量。"
+            },
+            {
+              "skillId": "system-literacy-context",
+              "title": "聯立方程式素養題",
+              "required": true,
+              "difficultyBands": [
+                "standard",
+                "literacy"
+              ],
+              "visualMode": "text-only",
+              "legacyRefs": [],
+              "capBoundary": "限國中會考二元一次聯立方程式；不含矩陣、行列式、三元以上、高中消去法。",
+              "questionTarget": 12,
+              "notes": "生活情境、表格、活動費用；仍須可列二元一次聯立。"
             }
           ]
         }

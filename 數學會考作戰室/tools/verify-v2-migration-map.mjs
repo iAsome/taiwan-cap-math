@@ -28,7 +28,7 @@ assert.equal(map.unitMap["5"]?.[0], "u03");
 assert.ok(!Object.values(map.unitMap).flat().includes("u27"));
 assert.ok(map.deprecatedLegacyTopics.some(d => d.legacyUnitId === 27));
 
-const detailed = ["g7-1-c1", "g7-1-c2", "g7-1-c3"];
+const detailed = ["g7-1-c1", "g7-1-c2", "g7-1-c3", "g7-2-c1"];
 for (const quizId of detailed) {
   for (const tp of tax[quizId].sections.flatMap(s => s.topics)) {
     const key = `${quizId}/${tp.id}`;
