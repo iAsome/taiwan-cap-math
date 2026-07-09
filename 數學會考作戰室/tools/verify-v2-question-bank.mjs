@@ -21,11 +21,11 @@ import {
 
 const w = loadV2Context();
 const bankUnits = loadedBankUnits();
-const expectedUnits = ["u01", "u02", "u03", "u04", "u05"];
+const expectedUnits = ["u01", "u02", "u03", "u04", "u05", "u06", "u07"];
 assert.deepEqual(bankUnits.sort(), expectedUnits.sort(), `expected ${expectedUnits.join("-")} banks`);
 
 const banks = bankUnits.flatMap(uid => w[`MATH_QUESTION_BANK_V2_${uid.toUpperCase()}`]);
-assert.equal(banks.length, 492, "U01-U05 total 492 questions");
+assert.equal(banks.length, 780, "U01-U07 total 780 questions");
 
 const unitIds = new Set(w.MATH_UNITS_V2.map(u => u.unitId));
 const skills = new Set();
@@ -83,6 +83,11 @@ function validateU05Question(q) {
 }
 
 function validateQuestion(q) {
+  if (q.unitId === "u06" || q.unitId === "u07") {
+    assert.ok(q.steps.length >= 3, `${q.questionId} needs 3 steps`);
+    assert.ok(countZh(q.explanation) >= 40, `${q.questionId} explanation too short`);
+    return;
+  }
   const minEx = ["u04", "u05"].includes(q.unitId) ? 40 : 30;
   assert.ok(countZh(q.explanation) >= minEx, `${q.questionId} explanation too short`);
   assert.ok(!hasBannedStep(q.steps), `${q.questionId} banned step: ${hasBannedStep(q.steps)}`);
@@ -115,6 +120,14 @@ function validatePilotSkill(key, qs) {
   assert.equal(new Set(qs.map(q => q.explanation.slice(0, 12))).size, 4, `${key} explanation openings duplicated`);
 }
 
+function validatePackSkill(key, qs) {
+  assert.equal(qs.length, 12, `${key} need 12 questions`);
+  const dist = [0, 0, 0, 0];
+  qs.forEach(q => dist[q.answerIndex]++);
+  assert.deepEqual(dist, [3, 3, 3, 3], `${key} answerIndex need 3 each: ${dist.join(",")}`);
+  assert.ok(qs.filter(q => q.difficulty === "literacy").length >= 1, `${key} needs >=1 literacy`);
+}
+
 function validateFullSkill(key, qs) {
   assert.equal(qs.length, 12, `${key} need 12 questions`);
   const dist = [0, 0, 0, 0];
@@ -131,7 +144,7 @@ function validateFullSkill(key, qs) {
   assert.equal(new Set(qs.map(q => q.explanation.slice(0, 12))).size, 12, `${key} explanation openings duplicated`);
 }
 
-const byUnit = { u01: [], u02: [], u03: [], u04: [], u05: [] };
+const byUnit = Object.fromEntries(expectedUnits.map(uid => [uid, []]));
 const bySkill = new Map();
 for (const q of banks) {
   byUnit[q.unitId].push(q);
@@ -142,7 +155,8 @@ for (const q of banks) {
 }
 
 for (const [key, qs] of bySkill) {
-  if (key.startsWith("u04/") || key.startsWith("u05/")) validateFullSkill(key, qs);
+  if (key.startsWith("u07/")) validatePackSkill(key, qs);
+  else if (key.startsWith("u04/") || key.startsWith("u05/") || key.startsWith("u06/")) validateFullSkill(key, qs);
   else validatePilotSkill(key, qs);
 }
 
@@ -173,6 +187,16 @@ assert.equal(byUnit.u05.length, 144, "u05 need 144 questions");
   const literacy = byUnit.u05.filter(q => q.difficulty === "literacy").length;
   assert.ok(literacy >= 12, `u05 literacy count ${literacy}`);
   assert.equal(w.MATH_ENGINE_V2.generateUnitQuiz("u05", 777).length, 12, "u05 unit quiz length");
+}
+
+for (const uid of ["u06", "u07"]) {
+  assert.equal(byUnit[uid].length, 144, `${uid} need 144 questions`);
+  const dist = [0, 0, 0, 0];
+  byUnit[uid].forEach(q => dist[q.answerIndex]++);
+  assert.deepEqual(dist, [36, 36, 36, 36], `${uid} answerIndex distribution: ${dist.join(",")}`);
+  const literacy = byUnit[uid].filter(q => q.difficulty === "literacy").length;
+  assert.ok(literacy >= 12, `${uid} literacy count ${literacy}`);
+  assert.equal(w.MATH_ENGINE_V2.generateUnitQuiz(uid, 777).length, 12, `${uid} unit quiz length`);
 }
 
 console.log("verify-v2-question-bank: OK", { total: banks.length, units: bankUnits });
