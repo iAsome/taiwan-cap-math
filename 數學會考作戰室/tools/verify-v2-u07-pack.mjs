@@ -8,7 +8,7 @@ import { countZh } from "./v2-quality.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
-const U07_R3_BANNED = [
+const U07_R4_BANNED = [
   "都不符合本題不等式或情境",
   "仍與題幹條件或計算結果不符",
   "應改選",
@@ -18,7 +18,11 @@ const U07_R3_BANNED = [
   "逐項核對", "做題時應同時檢查", "端點條件", "應回到", "另外，選",
   "若誤以為", "答案為", "結果為", "步驟跳躍", "符號處理錯誤", "【", "】",
   "如圖", "下圖", "請看圖", "还", "却", "只差一點", "對不起來", "对不起来",
-  "代入固定費與單價後", "代回題意檢查後不符合"
+  "代入固定費與單價後", "代回題意檢查後不符合",
+  "情境列式要對準", "關鍵字、單位與加減意義", "本題應列", "再對照題幹",
+  "確認一次不等號方向", "本題應選", "列式前要先對照題幹",
+  "代數解還要配合", "解集敘述要對準", "代回情境時要同時", "預算題要把固定費",
+  "且的兩段條件要同時", "同加減常數時", "移項時常數要變號", "應用題先列式"
 ];
 const BAD_SYMBOL_RE = /<=|>=/;
 const TEMPLATE_ONLY_RE = /，只有[^。]{0,60}正確。/;
@@ -38,7 +42,7 @@ function loadU07() {
 }
 
 function hasBanned(text) {
-  for (const p of U07_R3_BANNED) if (text.includes(p)) return p;
+  for (const p of U07_R4_BANNED) if (text.includes(p)) return p;
   if (text.includes("只有「")) return "只有「";
   if (TEMPLATE_ONLY_RE.test(text)) return "，只有…正確。";
   return null;
