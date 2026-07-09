@@ -26,6 +26,31 @@ export const BANNED_PHRASES = [
   "其餘選項不符合計算結果或題意，應逐一排除"
 ];
 
+/** Phase 2B-1-R1: U04 machine residue and generic wrong-reason phrases */
+export const U04_BANNED_PHRASES = [
+  "後比較左右",
+  "多半是代入順序對調或漏乘係數",
+  "也未滿足等式兩側相等",
+  "把每個未知數的係數分開計算",
+  "，代入",
+  "，計算",
+  "，檢驗",
+  "逐項代入",
+  "每一項係數",
+  "分別算 x 項與 y 項",
+  "整理計算後",
+  "若誤以為",
+  "結果為",
+  "答案為",
+  "正確理解是",
+  "第一例：",
+  "第二例："
+];
+
+/** Machine variant padding like 01下列… not math quantities like 10 隻 */
+export const U04_EXPLANATION_PREFIX_RE = /^(0[1-9]|1[0-2])[\u4e00-\u9fff{]/;
+export const U04_EXPLANATION_PREFIX_COLON_RE = /^(0[1-9]|1[0-2]).+：/;
+
 /** Template-style answer hooks: `，得 X` or `得 X` at end of step */
 export const BANNED_STEP_ANSWER_RE = /[，,]\s*得\s+.|[；;]\s*得\s+/;
 
@@ -96,6 +121,46 @@ export function explanationHasConcreteContent(explanation, choices = []) {
     if (s.length >= 2 && explanation.includes(s.slice(0, Math.min(6, s.length)))) return true;
   }
   return false;
+}
+
+export function findU04BannedPhrase(text) {
+  if (typeof text !== "string") return null;
+  for (const p of U04_BANNED_PHRASES) {
+    if (text.includes(p)) return p;
+  }
+  return null;
+}
+
+export function hasU04BannedText(textOrArray) {
+  const parts = Array.isArray(textOrArray) ? textOrArray : [textOrArray];
+  for (const part of parts) {
+    const hit = findU04BannedPhrase(part);
+    if (hit) return hit;
+  }
+  return null;
+}
+
+/** steps must not embed the first 8 chars of question text (Chinese portion) */
+export function stepsEmbedQuestionText(steps, text) {
+  const zh = (text.match(/[\u4e00-\u9fff]+/g) || []).join("").slice(0, 8);
+  if (zh.length < 4) return null;
+  const blob = (steps || []).join(" ");
+  if (blob.includes(zh)) return zh;
+  return null;
+}
+
+/** explanation must not repeat >8 consecutive chars from question text (non-math) */
+export function explanationOverRepeatsText(explanation, text) {
+  const plain = text.replace(/\s+/g, "");
+  for (let len = 9; len <= Math.min(plain.length, 24); len++) {
+    for (let i = 0; i <= plain.length - len; i++) {
+      const sub = plain.slice(i, i + len);
+      if (/^[\u4e00-\u9fff？?，,、：:]+$/.test(sub) && explanation.includes(sub)) {
+        return sub;
+      }
+    }
+  }
+  return null;
 }
 
 export const ANSWER_INDEX_PATTERN = [1, 3, 0, 2];

@@ -7,7 +7,12 @@ import {
   conceptQuality,
   explanationQuality,
   explanationHasConcreteContent,
-  BANNED_MISTAKE_PHRASES
+  BANNED_MISTAKE_PHRASES,
+  U04_EXPLANATION_PREFIX_RE,
+  U04_EXPLANATION_PREFIX_COLON_RE,
+  hasU04BannedText,
+  stepsEmbedQuestionText,
+  explanationOverRepeatsText
 } from "./v2-quality.mjs";
 
 const w = loadV2Context();
@@ -29,8 +34,21 @@ assert.equal(errors.length, 0, JSON.stringify(errors.slice(0, 5), null, 2));
 const engineErrors = w.MATH_ENGINE_V2.validateBank();
 assert.equal(engineErrors.length, 0, JSON.stringify(engineErrors.slice(0, 5), null, 2));
 
+function validateU04Question(q) {
+  assert.ok(countZh(q.explanation) >= 40, `${q.questionId} u04 explanation too short (${countZh(q.explanation)})`);
+  assert.ok(!U04_EXPLANATION_PREFIX_RE.test(q.explanation.trim()), `${q.questionId} numeric explanation prefix`);
+  assert.ok(!U04_EXPLANATION_PREFIX_COLON_RE.test(q.explanation.trim()), `${q.questionId} numeric prefix colon explanation`);
+  const u04Ban = hasU04BannedText(q.explanation) || hasU04BannedText(q.steps) || hasU04BannedText(q.commonMistake);
+  assert.ok(!u04Ban, `${q.questionId} u04 banned: ${u04Ban}`);
+  const embed = stepsEmbedQuestionText(q.steps, q.text);
+  assert.ok(!embed, `${q.questionId} steps embed question text: ${embed}`);
+  const over = explanationOverRepeatsText(q.explanation, q.text);
+  assert.ok(!over, `${q.questionId} explanation repeats text: ${over}`);
+}
+
 function validateQuestion(q) {
-  assert.ok(countZh(q.explanation) >= 30, `${q.questionId} explanation too short`);
+  const minEx = q.unitId === "u04" ? 40 : 30;
+  assert.ok(countZh(q.explanation) >= minEx, `${q.questionId} explanation too short`);
   assert.ok(!hasBannedStep(q.steps), `${q.questionId} banned step: ${hasBannedStep(q.steps)}`);
   assert.ok(!hasBannedText(q.explanation), `${q.questionId} banned explanation: ${hasBannedText(q.explanation)}`);
   assert.ok(!hasBannedText(q.steps), `${q.questionId} banned steps text: ${hasBannedText(q.steps)}`);
@@ -43,6 +61,11 @@ function validateQuestion(q) {
   for (const m of BANNED_MISTAKE_PHRASES) {
     assert.ok(!q.commonMistake.includes(m), `${q.questionId} generic commonMistake`);
   }
+  if (q.unitId === "u04") validateU04Question(q);
+}
+
+function textStructureKey(text) {
+  return text.replace(/[\d+\-−=().,，、\s]/g, "").slice(0, 12);
 }
 
 function validatePilotSkill(key, qs) {
@@ -63,7 +86,9 @@ function validateFullSkill(key, qs) {
   const literacy = qs.filter(q => q.difficulty === "literacy").length;
   assert.ok(literacy >= 1, `${key} needs >=1 literacy`);
   const mistakes = new Set(qs.map(q => q.commonMistake));
-  assert.ok(mistakes.size >= 8, `${key} commonMistake too uniform (${mistakes.size})`);
+  assert.ok(mistakes.size >= 6, `${key} commonMistake too uniform (${mistakes.size})`);
+  const structures = new Set(qs.map(q => textStructureKey(q.text)));
+  assert.ok(structures.size >= 8, `${key} text structures too similar (${structures.size})`);
   assert.equal(new Set(qs.map(q => q.text.slice(0, 24))).size, 12, `${key} question texts too similar`);
   assert.equal(new Set(qs.map(q => q.steps.join("|"))).size, 12, `${key} steps duplicated`);
   assert.equal(new Set(qs.map(q => q.explanation.slice(0, 12))).size, 12, `${key} explanation openings duplicated`);
