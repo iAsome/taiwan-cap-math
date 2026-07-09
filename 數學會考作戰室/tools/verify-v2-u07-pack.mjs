@@ -8,12 +8,17 @@ import { countZh } from "./v2-quality.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
-const U07_R2_BANNED = [
+const U07_R3_BANNED = [
   "都不符合本題不等式或情境",
+  "仍與題幹條件或計算結果不符",
+  "應改選",
+  "與本題整理出的不等式解集",
+  "不能選",
   "語意或計算與題意不符", "因此可排除", "應回到列式", "不等號語意逐項核對",
   "逐項核對", "做題時應同時檢查", "端點條件", "應回到", "另外，選",
   "若誤以為", "答案為", "結果為", "步驟跳躍", "符號處理錯誤", "【", "】",
-  "如圖", "下圖", "請看圖"
+  "如圖", "下圖", "請看圖", "还", "却", "只差一點", "對不起來", "对不起来",
+  "代入固定費與單價後", "代回題意檢查後不符合"
 ];
 const BAD_SYMBOL_RE = /<=|>=/;
 const TEMPLATE_ONLY_RE = /，只有[^。]{0,60}正確。/;
@@ -33,7 +38,7 @@ function loadU07() {
 }
 
 function hasBanned(text) {
-  for (const p of U07_R2_BANNED) if (text.includes(p)) return p;
+  for (const p of U07_R3_BANNED) if (text.includes(p)) return p;
   if (text.includes("只有「")) return "只有「";
   if (TEMPLATE_ONLY_RE.test(text)) return "，只有…正確。";
   return null;
