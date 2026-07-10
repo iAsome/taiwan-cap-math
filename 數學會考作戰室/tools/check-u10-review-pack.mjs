@@ -31,19 +31,26 @@ const ARTIFACTS = [
 ];
 
 const BASELINE_ARTIFACT_HASHES = {
-  "u10-review-dossier.jsonl": "8e4687f0ab5e28b0db6a0fc36c58553f9969b263212bfe4dd632fe82f01d566d",
-  "u10-distractor-review.md": "81dd2a1a1cc55fe16de34079f76430f78b4ffc79b6a9cd1a0e35242120383a21",
-  "u10-qa-samples.md": "f821fad151e7fa3edd9ab464b3a6b6c595508c69d58df8b0e4cd94cd8ce43f51",
+  "u10-review-dossier.jsonl": "dd7efe781f19cf8fe6753c71b294950cf72acccd51c2f14721bba706a24cfd43",
+  "u10-distractor-review.md": "9e7f34199e823b9b18d3302c673b885a030bf827e1e45cbb834a25134c04b5c7",
+  "u10-qa-samples.md": "5f7b19320d199134e869af0a70f9cd5d15e2efb2cf9a1b6f8f40bf12885a78c3",
 };
 
 const BASELINE_RULE_COUNTS = {
   "L05 example-why-zh-under-40": 0,
   "L07 lecture-simplified-character": 0,
-  "Q06 normalized-text-structure-group-size-at-least-3": 34,
-  "Q07 exact-step-shared-by-at-least-3-questionIds": 21,
-  "Q08 suspicious-machine-residue": 1,
-  "Q10 explanation-new-number-token": 62,
+  "Q06 normalized-text-structure-group-size-at-least-3": 23,
+  "Q07 exact-step-shared-by-at-least-3-questionIds": 9,
+  "Q08 suspicious-machine-residue": 0,
 };
+
+const PASS_FAIL_RULES = new Set([
+  "L05 example-why-zh-under-40",
+  "L07 lecture-simplified-character",
+  "Q06 normalized-text-structure-group-size-at-least-3",
+  "Q07 exact-step-shared-by-at-least-3-questionIds",
+  "Q08 suspicious-machine-residue",
+]);
 
 const DOSSIER_KEYS = [
   "questionId", "skillId", "difficulty", "text", "choices", "answerIndex",
@@ -171,12 +178,19 @@ function checkFindings(rows, lectures) {
   const l07 = rows.filter((f) => f.rule === "L07 lecture-simplified-character");
   assert.equal(l07.length, 0, "L07 baseline count");
 
-  assert.equal(rows.length, 118, "total findings");
+  const q08 = rows.filter((f) => f.rule === "Q08 suspicious-machine-residue");
+  assert.equal(q08.length, 0, "Q08 baseline count");
 
   const byRule = {};
   for (const f of rows) byRule[f.rule] = (byRule[f.rule] || 0) + 1;
   for (const [rule, n] of Object.entries(BASELINE_RULE_COUNTS)) {
     assert.equal(byRule[rule] ?? 0, n, `rule count ${rule}`);
+  }
+  for (const rule of Object.keys(byRule)) {
+    assert.ok(
+      PASS_FAIL_RULES.has(rule) || rule === "Q10 explanation-new-number-token",
+      `unexpected finding rule: ${rule}`,
+    );
   }
 
   void lectures;

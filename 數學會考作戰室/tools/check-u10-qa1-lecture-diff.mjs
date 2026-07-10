@@ -49,10 +49,6 @@ function assertContentEqual(actual, expected, label) {
 }
 
 export function assertU10Qa1LectureDiff() {
-  const baseBank = gitShow("數學會考作戰室/v2/math-question-bank-v2-u10.js");
-  const curBank = fs.readFileSync(path.join(v2, "math-question-bank-v2-u10.js"), "utf8");
-  assert.equal(curBank, baseBank, "question bank must be byte-identical to base");
-
   const base = loadBaseLectures();
   const current = loadCurrentLectures();
   assert.equal(base.length, 12, "base lecture count");

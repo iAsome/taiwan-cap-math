@@ -243,7 +243,7 @@ REMOVE BEFORE INTEGRATION.
   - 3: x² + 5x − 6
 - answerIndex: 0
 - correctChoice: x² + 5x + 6
-- explanation: 先用 x 去乘第二個括號，得到 x²+3x；再用 2 去乘，得到 2x+6。把兩段一次項 3x 與 2x 加起來是 5x，常數 6 直接保留，整理後 x²+5x+6。x²+6x+5 是把 3+2 誤算成 6、又把常數 6 與 5 對調；2x²+5x+6 則第一項 x·x 係數多乘，寫成 2x²。
+- explanation: 先用x乘第二個括號，得到x²+3x；再用2乘第二個括號，得到2x+6。一次項3x與2x相加為5x，常數6保留，所以可得x²+5x+6。x²+6x+5同時把一次項與常數算錯；2x²+5x+6則把x·x誤寫成2x²。
 - steps:
   - x 乘 x + 3：x² + 3x。
   - 2 乘 x + 3：2x + 6。
