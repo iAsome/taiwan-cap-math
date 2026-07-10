@@ -8,6 +8,7 @@ import { countZh } from "./v2-quality.mjs";
 import { U08_R1_BANNED } from "./v2-u08-r1-banned.mjs";
 import { U08_R2_BANNED } from "./v2-u08-r2-banned.mjs";
 import { U08_R3_BANNED } from "./v2-u08-r3-banned.mjs";
+import { U08_QA1_REQUIRED_LECTURES } from "./u08-qa1-lecture-manifest.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
@@ -111,14 +112,30 @@ function checkQuestions(questions) {
 }
 
 function checkLectures(lectures) {
+  const manifestIds = Object.keys(U08_QA1_REQUIRED_LECTURES);
+  assert.equal(manifestIds.length, 12, "manifest skill count");
   assert.equal(lectures.length, 12);
+  const skillIds = lectures.map((l) => l.skillId);
+  assert.equal(new Set(skillIds).size, 12, "unique lecture skillIds");
+
+  const lectureBlob = JSON.stringify(lectures);
+  assert.ok(!lectureBlob.includes("花坛"), "simplified 花坛 must be absent");
+  assert.ok(lectureBlob.includes("花壇"), "corrected 花壇 must be present");
+
   for (const l of lectures) {
+    assert.ok(typeof l.title === "string" && l.title.trim().length > 0, `${l.skillId} title`);
     assert.ok(countZh(l.concept) >= 80, l.skillId);
     assert.ok(l.stepGuide.length >= 5, l.skillId);
     assert.ok(l.examples.length >= 2, l.skillId);
     assert.ok(l.commonMistakes.length >= 4, l.skillId);
     assert.ok(!hasBanned(JSON.stringify(l)), `${l.skillId} lecture banned`);
     for (const s of l.stepGuide) checkStepSentence(s, `${l.skillId} stepGuide`);
+    for (const ex of l.examples) {
+      assert.ok(countZh(ex.why) >= 40, `${l.skillId} example why`);
+    }
+    const required = U08_QA1_REQUIRED_LECTURES[l.skillId];
+    assert.ok(required, `${l.skillId} manifest missing`);
+    assert.equal(JSON.stringify(l.examples), JSON.stringify(required.examples), `${l.skillId} examples manifest`);
   }
 }
 
