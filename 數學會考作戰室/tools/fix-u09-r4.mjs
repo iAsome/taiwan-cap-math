@@ -156,22 +156,8 @@ function tailOk(q, tail) {
   return true;
 }
 
-function padMin45(q, e) {
-  let out = e.endsWith("。") ? e : e + "。";
-  let guard = 0;
-  const wrongs = q.choices.filter((_, i) => i !== q.answerIndex);
-  const pads = [
-    w => `錯選${w}與題幹所列數字或所求量對不上。`,
-    w => `${w}是把部分資料誤當成最終答案。`,
-    w => `若得${w}，多半是漏加、多算或統計量用錯。`
-  ];
-  while (countZh(out) < 45 && guard++ < 12) {
-    const w = wrongs[(guard - 1) % wrongs.length];
-    const add = pads[(guard - 1) % pads.length](w);
-    if (!tailOk(q, add) || out.includes(add)) continue;
-    out += add;
-  }
-  return out;
+function padMin45(_q, e) {
+  return e.endsWith("。") ? e : e + "。";
 }
 
 function fixNumericPrefix(e) {
