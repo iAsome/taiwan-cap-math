@@ -172,41 +172,10 @@ function dedupe(e) {
   return out.length ? `${out.join("。")}。` : e;
 }
 
-function padTo45(q, e) {
-  let out = e.endsWith("。") ? e : `${e}。`;
-  const wrong = q.choices.filter((_, i) => i !== q.answerIndex);
-  for (const w of wrong) {
-    if (countZh(out) >= 45) break;
-    const bit = `選 ${w} 不符合本題資料。`;
-    if (!out.includes(`選 ${w}`)) out += bit;
-  }
-  if (countZh(out) < 45) {
-    const ans = q.choices[q.answerIndex];
-    const bit = `本題正確數值是 ${ans}，已把題目指定的各組次數全部加總。`;
-    if (!out.includes(bit.slice(0, 8))) out += bit;
-  }
-  return dedupe(out);
-}
-
-function enrichShort(q, e) {
-  let out = e.endsWith("。") ? e : `${e}。`;
-  const bankParts = stripR6(R5_FULL[q.questionId] || q.explanation).split("。").filter(Boolean);
-  for (const p of bankParts) {
-    if (PAD_FRAGMENT.test(p)) continue;
-    if (countZh(out) >= 45) break;
-    const k = p.replace(/\s+/g, "").slice(0, 12);
-    if (!out.replace(/\s+/g, "").includes(k)) out += `${p}。`;
-  }
-  return padTo45(q, out);
-}
-
 function finalize(q) {
   const raw = STAT_R6[q.questionId] || OVERRIDES[q.questionId] || R5_FULL[q.questionId] || q.explanation;
   let e = dedupe(stripR6(raw));
-  if (countZh(e) < 45) e = enrichShort(q, e);
-  else if (!e.endsWith("。")) e = `${e}。`;
-  if (countZh(e) < 45) e = padTo45(q, e);
-  return e;
+  return e.endsWith("。") ? e : `${e}。`;
 }
 
 const R6_BANNED = [

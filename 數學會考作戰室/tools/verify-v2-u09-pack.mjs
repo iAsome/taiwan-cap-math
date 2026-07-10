@@ -66,7 +66,11 @@ const U09_EXTRA_BANNED = [
   "次數表要先確認",
   "長條圖題要先找出",
   "折線圖題目須先對照",
-  "計算完成後比對各錯選數字來源"
+  "計算完成後比對各錯選數字來源",
+  "不符合本題資料",
+  "本題正確數值是",
+  "已把題目指定的各組次數全部加總",
+  "與本題列式結果不符"
 ];
 const U09_SC_BANNED = ["全体", "谨慎", "夸大"];
 const BAD_SYMBOL_RE = /<=|>=/;
@@ -93,7 +97,13 @@ function hasU09Banned(textOrArray) {
       if (part.includes(p)) return `SC:${p}`;
     }
     if (BAD_SYMBOL_RE.test(part)) return "<=/>=";
-    if (/錯選\d+與題幹/.test(part)) return "錯選N與題幹";
+    for (const [re, label] of [
+      [/[^\s，。；]+與本題列式結果不符/, "與本題列式結果不符"],
+      [/選\s*[^\s，。；]+\s*不符合本題資料/, "選X不符合本題資料"],
+      [/錯選\d+與題幹/, "錯選N與題幹"]
+    ]) {
+      if (re.test(part)) return label;
+    }
   }
   return null;
 }

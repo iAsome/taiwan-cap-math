@@ -6,6 +6,7 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { countZh, explanationOverRepeatsText } from "./v2-quality.mjs";
 import { R6_FULL } from "./fix-u09-r6-full.mjs";
+import { R7_REWRITE } from "./fix-u09-r7-rewrites.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const bankPath = path.join(toolsDir, "../v2/math-question-bank-v2-u09.js");
@@ -40,7 +41,10 @@ const R7_STRIP = [
   /本題正確數值是[^。；]+。?/g,
   /已把題目指定的各組次數全部加總。?/g,
   /題目指定的各組次數[^。；]*。?/g,
-  /[^。；]*全部加總[^。；]*。?/g
+  /[^。；]*全部加總[^。；]*。?/g,
+  /[，；]?[^\s，。；]+與本題列式結果不符。?/g,
+  /；[^\s，。；]+也不是依題意列式得到的答案。?/g,
+  /，勿把[^。]+誤當正解。?/g
 ];
 
 const R6_STRIP = [
@@ -359,31 +363,6 @@ const R7_HAND = {
     "閱讀統計報告時，最優先應確認資料來源與樣本是否可靠。只看圖形顏色是否好看、數字是否很大或報告頁數多少，都無法代替先查資料來源與樣本。",
 };
 
-const R7_EXTRA = {
-  "u09-s002-v005": "7人只含50−59與60−69兩組，不能把70−79算進「以下」。",
-  "u09-s001-v011": "分母必須用2023年320這個基準，不能用400或240。",
-  "u09-s005-v004": "人數要用總人數200去乘45%，不能把占比45當成人數。",
-  "u09-s005-v005": "增加率要把差20除以基準15%，不能把差值本身當答案。",
-  "u09-s005-v007": "120票是400張票乘30%，不能用錯誤的百分比去推算。",
-  "u09-s005-v009": "480人是120人除以夏季占比25%反推，不能用錯誤除數。",
-  "u09-s006-v005": "18會讓五數總和超過60，與平均12不符。",
-  "u09-s006-v007": "90是15乘6個數，不能只乘5個或把15當總和。",
-  "u09-s006-v010": "330除以4得82.5，80只是其中一次測驗分數，不是平均。",
-  "u09-s007-v006": "七個數只需取排序後第4個40，不必把30與40再平均。",
-  "u09-s007-v007": "加入50後中位變第3個35，30是加入前的中位。",
-  "u09-s007-v008": "165是五人排序後第3個，166.5不是兩側身高平均。",
-  "u09-s007-v009": "中位是15與19的平均17，16不是這兩數的平均。",
-  "u09-s007-v010": "350同時是六數的中位與平均，但不能只取300或400之一。",
-  "u09-s008-v004": "13只能由最大22減最小9得到，不能用其他兩數亂減。",
-  "u09-s008-v006": "20是120減100，等差數列仍要取頭尾相減。",
-  "u09-s008-v008": "23是61減38，17與20都不是這兩數相減。",
-  "u09-s008-v010": "全距20是40減20，不能把中間兩數相減。",
-  "u09-s008-v011": "眾數是37不是36；全距3是39減36不是4。",
-  "u09-s009-v004": "態度占20%的那項70也要乘上，漏乘會少算。",
-  "u09-s009-v006": "163.75是把6550除以40人，不能把兩性身高直接平均。",
-  "u09-s009-v009": "三項分別乘20%、50%、30%後相加得86，85像少加一項。"
-};
-
 function dedupe(e) {
   const parts = e.split("。").filter(Boolean);
   const seen = new Set();
@@ -398,53 +377,29 @@ function dedupe(e) {
   return out.length ? `${out.join("。")}。` : e;
 }
 
-function padShort(q, e) {
-  let out = e.endsWith("。") ? e : `${e}。`;
-  if (countZh(out) >= 45) return out;
-  const wrong = q.choices.filter((_, i) => i !== q.answerIndex);
-  for (const w of wrong) {
-    if (countZh(out) >= 45) break;
-    const ws = String(w);
-    if (out.includes(ws)) continue;
-    out = `${out.replace(/。$/, "")}；${ws}也不是依題意列式得到的答案。`;
-  }
-  if (countZh(out) < 45) {
-    for (const w of wrong) {
-      if (countZh(out) >= 45) break;
-      const ws = String(w);
-      const tag = `${ws}與本題列式結果不符`;
-      if (out.includes(tag)) continue;
-      out = `${out.replace(/。$/, "")}，${tag}。`;
-    }
-  }
-  if (countZh(out) < 45 && wrong.length) {
-    out = `${out.replace(/。$/, "")}，勿把${wrong[0]}誤當正解。`;
-  }
-  return out.endsWith("。") ? out : `${out}。`;
-}
-
 function finalize(q) {
+  if (R7_REWRITE[q.questionId]) return R7_REWRITE[q.questionId];
   let raw = R7_HAND[q.questionId];
-  if (raw) {
-    raw = raw.endsWith("。") ? raw : `${raw}。`;
-  } else {
+  if (raw) raw = dedupe(stripR7(raw));
+  else {
     raw = STAT_R6[q.questionId]
       || stripR7(OVERRIDES[q.questionId] || R6_FULL[q.questionId] || q.explanation);
     raw = dedupe(stripR7(raw));
-    raw = raw.endsWith("。") ? raw : `${raw}。`;
   }
-  if (R7_EXTRA[q.questionId] && countZh(raw) < 45) {
-    raw = `${raw.replace(/。$/, "")}。${R7_EXTRA[q.questionId]}`;
-  }
-  return padShort(q, raw);
+  return raw.endsWith("。") ? raw : `${raw}。`;
 }
 
 const R7_BANNED = [
   "不符合本題資料", "本題正確數值是", "已把題目指定的各組次數全部加總",
+  "與本題列式結果不符", "也不是依題意列式得到的答案", "誤當正解",
   "題目指定的各組次數", "全部加總", "依題幹已列數字逐步計算",
   "再確認所求的是哪一種統計量", "加權平均須先把各項乘以權重",
   "眾數看出現次數", "平均數相關題目要先分清", "次數表要先確認",
   "長條圖題要先找出", "折線圖題目須先對照", "計算完成後比對"
+];
+const R7_BANNED_RE = [
+  /[^\s，。；]+與本題列式結果不符/,
+  /選\s*[^\s，。；]+\s*不符合本題資料/
 ];
 
 const out = {};
@@ -453,8 +408,9 @@ for (const q of qs) {
   out[q.questionId] = finalize(q);
   const zh = countZh(out[q.questionId]);
   const bad = R7_BANNED.filter(b => out[q.questionId].includes(b));
+  const badRe = R7_BANNED_RE.find(re => re.test(out[q.questionId]));
   const rep = explanationOverRepeatsText(out[q.questionId], q.text);
-  if (zh < 45 || bad.length || rep) failed.push({ id: q.questionId, zh, bad, rep });
+  if (zh < 45 || bad.length || badRe || rep) failed.push({ id: q.questionId, zh, bad, badRe: badRe?.source, rep });
 }
 
 if (failed.length) {
