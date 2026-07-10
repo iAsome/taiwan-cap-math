@@ -6,7 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
 import { execFileSync } from "node:child_process";
-import { fileURLToPath, pathToFileURL } from "node:url";
+import { fileURLToPath } from "node:url";
 import { countZh } from "./v2-quality.mjs";
 
 const tools = path.dirname(fileURLToPath(import.meta.url));
@@ -30,10 +30,44 @@ const ARTIFACTS = [
   "u10-quality-findings.jsonl",
 ];
 
+const BASELINE_ARTIFACT_HASHES = {
+  "u10-review-dossier.jsonl": "8e4687f0ab5e28b0db6a0fc36c58553f9969b263212bfe4dd632fe82f01d566d",
+  "u10-distractor-review.md": "81dd2a1a1cc55fe16de34079f76430f78b4ffc79b6a9cd1a0e35242120383a21",
+  "u10-qa-samples.md": "f821fad151e7fa3edd9ab464b3a6b6c595508c69d58df8b0e4cd94cd8ce43f51",
+};
+
+const BASELINE_RULE_COUNTS = {
+  "L05 example-why-zh-under-40": 24,
+  "L07 lecture-simplified-character": 1,
+  "Q06 normalized-text-structure-group-size-at-least-3": 34,
+  "Q07 exact-step-shared-by-at-least-3-questionIds": 21,
+  "Q08 suspicious-machine-residue": 1,
+  "Q10 explanation-new-number-token": 62,
+};
+
+const DOSSIER_KEYS = [
+  "questionId", "skillId", "difficulty", "text", "choices", "answerIndex",
+  "correctChoice", "explanation", "steps", "commonMistake", "concept",
+];
+
+const LECTURE_KEYS = [
+  "skillId", "title", "concept", "conceptZh", "formula", "stepGuide",
+  "examples", "commonMistakes", "exampleWhyZh",
+];
+
+const FINDING_KEYS = ["scope", "id", "field", "rule", "evidence", "relatedIds"];
+
+const L05_FIELD_RE = /^examples\[(0|1)\]\.why$/;
+const L05_EVIDENCE_RE = /^\d+$/;
+
 const APPROVAL_CLAIM_RE = /(?:approved for release|release approved|content approved|通過審查|准予上線)/i;
 
 function sha256(filePath) {
   return crypto.createHash("sha256").update(fs.readFileSync(filePath)).digest("hex");
+}
+
+function exactKeys(obj, expected) {
+  assert.deepEqual([...Object.keys(obj)].sort(), [...expected].sort());
 }
 
 function loadPack() {
@@ -92,48 +126,61 @@ function checkMarkdownNotice(filePath) {
 
 function checkDossier(questions, dossier) {
   assert.equal(dossier.length, 144, "dossier count");
-  const keys = [
-    "questionId", "skillId", "difficulty", "text", "choices", "answerIndex",
-    "correctChoice", "explanation", "steps", "commonMistake", "concept",
-  ];
   for (let i = 0; i < questions.length; i++) {
     const q = questions[i];
     const d = dossier[i];
+    exactKeys(d, DOSSIER_KEYS);
     assert.equal(d.questionId, q.questionId, `dossier order ${i}`);
-    for (const k of keys) assert.ok(k in d, `${d.questionId} missing ${k}`);
     assert.equal(d.correctChoice, d.choices[d.answerIndex], d.questionId);
   }
-  const ids = new Set(dossier.map((d) => d.questionId));
-  assert.equal(ids.size, 144, "dossier unique questionIds");
+  assert.equal(new Set(dossier.map((d) => d.questionId)).size, 144, "dossier unique questionIds");
 }
 
 function checkLectureReview(lectures, rows) {
   assert.equal(rows.length, 12, "lecture count");
-  const keys = [
-    "skillId", "title", "concept", "conceptZh", "formula", "stepGuide",
-    "examples", "commonMistakes", "exampleWhyZh",
-  ];
   for (let i = 0; i < lectures.length; i++) {
     const l = lectures[i];
     const r = rows[i];
+    exactKeys(r, LECTURE_KEYS);
     assert.equal(r.skillId, l.skillId, `lecture order ${i}`);
-    for (const k of keys) assert.ok(k in r, `${r.skillId} missing ${k}`);
+    assert.ok(Number.isInteger(r.conceptZh) && r.conceptZh >= 0, `${r.skillId} conceptZh not integer`);
+    assert.equal(r.conceptZh, countZh(l.concept ?? ""), `${r.skillId} conceptZh mismatch`);
     assert.equal(r.exampleWhyZh.length, (l.examples || []).length, r.skillId);
     for (let j = 0; j < (l.examples || []).length; j++) {
       assert.equal(r.exampleWhyZh[j], countZh(l.examples[j].why || ""), `${r.skillId} example ${j}`);
     }
   }
-  const ids = new Set(rows.map((r) => r.skillId));
-  assert.equal(ids.size, 12, "lecture unique skillIds");
+  assert.equal(new Set(rows.map((r) => r.skillId)).size, 12, "lecture unique skillIds");
 }
 
-function checkFindings(rows) {
+function checkFindings(rows, lectures) {
   for (const f of rows) {
-    for (const k of ["scope", "id", "field", "rule", "evidence", "relatedIds"]) {
-      assert.ok(k in f, `finding missing ${k}`);
-    }
+    exactKeys(f, FINDING_KEYS);
     assert.ok(Array.isArray(f.relatedIds), `${f.rule} relatedIds not array`);
+    if (f.rule === "L05 example-why-zh-under-40") {
+      assert.ok(L05_FIELD_RE.test(f.field), `L05 bad field: ${f.field}`);
+      assert.ok(L05_EVIDENCE_RE.test(f.evidence), `L05 bad evidence: ${f.evidence}`);
+    }
   }
+
+  const l05 = rows.filter((f) => f.rule === "L05 example-why-zh-under-40");
+  assert.equal(l05.length, 24, "L05 baseline count");
+
+  const l07 = rows.filter((f) => f.rule === "L07 lecture-simplified-character");
+  assert.equal(l07.length, 1, "L07 baseline count");
+  assert.equal(l07[0].id, "polynomial-evaluation", "L07 skillId");
+  assert.equal(l07[0].field, "concept", "L07 field");
+  assert.equal(l07[0].evidence, "给", "L07 evidence");
+
+  assert.equal(rows.length, 143, "total findings");
+
+  const byRule = {};
+  for (const f of rows) byRule[f.rule] = (byRule[f.rule] || 0) + 1;
+  for (const [rule, n] of Object.entries(BASELINE_RULE_COUNTS)) {
+    assert.equal(byRule[rule] ?? 0, n, `rule count ${rule}`);
+  }
+
+  void lectures;
 }
 
 function runGenerator(out) {
@@ -171,13 +218,17 @@ for (const name of ARTIFACTS) {
   assert.ok(fs.existsSync(path.join(outDir, name)), `missing ${name}`);
 }
 
+for (const [name, hash] of Object.entries(BASELINE_ARTIFACT_HASHES)) {
+  assert.equal(sha256(path.join(outDir, name)), hash, `${name} baseline hash drift`);
+}
+
 const dossier = readJsonl(path.join(outDir, "u10-review-dossier.jsonl"));
 const lectureRows = readJsonl(path.join(outDir, "u10-lecture-review.jsonl"));
 const findings = readJsonl(path.join(outDir, "u10-quality-findings.jsonl"));
 
 checkDossier(questions, dossier);
 checkLectureReview(lectures, lectureRows);
-checkFindings(findings);
+checkFindings(findings, lectures);
 
 const distractor = fs.readFileSync(path.join(outDir, "u10-distractor-review.md"), "utf8");
 const qa = fs.readFileSync(path.join(outDir, "u10-qa-samples.md"), "utf8");

@@ -261,12 +261,13 @@ function buildFindings(questions, lectures) {
         rule: "L04 fewer-than-4-commonMistakes", evidence: `count=${(l.commonMistakes || []).length}`,
       });
     }
-    for (const ex of l.examples || []) {
+    for (let i = 0; i < (l.examples || []).length; i++) {
+      const ex = l.examples[i];
       const w = countZh(ex.why || "");
       if (w < 40) {
         pushFinding(findings, {
-          scope: "lecture", id: l.skillId, field: "examples",
-          rule: "L05 example-why-zh-under-40", evidence: `count=${w}; prompt=${(ex.prompt || "").slice(0, 40)}`,
+          scope: "lecture", id: l.skillId, field: `examples[${i}].why`,
+          rule: "L05 example-why-zh-under-40", evidence: String(w),
         });
       }
     }
@@ -314,7 +315,7 @@ function lectureRecord(l) {
     skillId: l.skillId,
     title: l.title ?? "",
     concept: l.concept ?? "",
-    conceptZh: l.conceptZh ?? l.concept ?? "",
+    conceptZh: countZh(l.concept ?? ""),
     formula: l.formula ?? "",
     stepGuide: l.stepGuide ?? [],
     examples: l.examples ?? [],
