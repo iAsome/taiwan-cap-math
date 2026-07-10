@@ -1,3 +1,5 @@
+/** @deprecated Review metadata only. This file is not proof of mathematical
+ *  correctness and must not be used as a release gate. */
 /** QA3 manual review manifest — evidence only; never generates question content. */
 export const QA3_MANIFEST = {
   "u09-s001-v001": {

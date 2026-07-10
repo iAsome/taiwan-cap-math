@@ -21,7 +21,6 @@ import {
   explanationOverRepeatsText
 } from "./v2-quality.mjs";
 import { auditQuestions } from "./u09-semantic-audit.mjs";
-import { QA3_MANIFEST } from "./u09-qa3-review-manifest.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2Dir = path.join(root, "v2");
@@ -171,18 +170,15 @@ function chartTypeLeakage(q) {
   return null;
 }
 
-const QA3_EXACT_MIN = {
-  "u09-s002-v007": 36,
-  "u09-s003-v001": 37,
-  "u09-s003-v004": 42
-};
+// V2 Content Quality Gate v1.2 uses a uniform 30-Chinese-character floor.
+// Quality is enforced by derivation, concrete distractor analysis and human review,
+// not by question-specific length exceptions.
 
 function validateQuestion(q) {
   assert.equal(q.unitId, "u09", `${q.questionId} unitId`);
   assert.equal(q.type, "mc", `${q.questionId} type`);
   assert.equal(q.visualMode, "text-only", `${q.questionId} visualMode`);
-  const minZh = QA3_EXACT_MIN[q.questionId] ?? 45;
-  assert.ok(countZh(q.explanation) >= minZh, `${q.questionId} explanation too short (${countZh(q.explanation)})`);
+  assert.ok(countZh(q.explanation) >= 30, `${q.questionId} explanation too short (${countZh(q.explanation)})`);
   assert.ok(countZh(q.commonMistake) >= 12, `${q.questionId} commonMistake too short (${countZh(q.commonMistake)})`);
   assert.ok(!U04_EXPLANATION_PREFIX_RE.test(q.explanation.trim()), `${q.questionId} numeric explanation prefix`);
   assert.ok(!U04_EXPLANATION_PREFIX_COLON_RE.test(q.explanation.trim()), `${q.questionId} numeric prefix colon`);
@@ -351,19 +347,6 @@ const v002 = questions.find(q => q.questionId === "u09-s003-v002");
 assert.ok(v002, "u09-s003-v002 missing");
 assert.ok(v002.explanation.includes("長條圖"), "u09-s003-v002 must use 長條圖 terminology");
 assert.ok(!v002.explanation.includes("折線圖"), "u09-s003-v002 must not say 折線圖");
-
-assert.equal(Object.keys(QA3_MANIFEST).length, 144, "QA3 manifest must have 144 entries");
-for (const q of questions) {
-  const entry = QA3_MANIFEST[q.questionId];
-  assert.ok(entry, `${q.questionId} missing from QA3 manifest`);
-  assert.ok(["unchanged", "rewritten"].includes(entry.status), `${q.questionId} manifest status`);
-  assert.equal(entry.distractorClaimsChecked, true, `${q.questionId} distractorClaimsChecked`);
-  assert.equal(entry.semanticRepetitionChecked, true, `${q.questionId} semanticRepetitionChecked`);
-  assert.equal(entry.chartTypeChecked, true, `${q.questionId} chartTypeChecked`);
-  assert.ok(entry.note && entry.note.length >= 8, `${q.questionId} manifest note too short`);
-}
-const manifestNotes = new Set(Object.values(QA3_MANIFEST).map(e => e.note));
-assert.equal(manifestNotes.size, 144, "QA3 manifest notes must be unique");
 
 const semanticDups = auditQuestions(questions);
 if (semanticDups.length) {

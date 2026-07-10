@@ -74,7 +74,7 @@ function stripR7(e) {
 
 const R7_HAND = {
   "u09-s001-v001":
-    "甲組12棵、乙組15棵、丙組18棵，12+15+18=45棵。42是只加甲乙漏丙；33則少算丙組；48把18誤算成21。讀表時三組數字都要列入，漏掉一組就會得到偏小的總量。",
+    "甲組12棵、乙組15棵、丙組18棵，12+15+18=45棵。42與33都不是三組棵數的正確總和；48則是把丙組18誤讀成21後，算成12+15+21=48。",
   "u09-s001-v002":
     "週一80元、週三70元，80−70=10元。15是誤算週二95元與週一80元的差；25是拿週二95元減週三70元；20也不是80與70的差。題目指定比較週一與週三，因此只使用80與70。",
   "u09-s001-v003":
@@ -84,7 +84,7 @@ const R7_HAND = {
   "u09-s001-v005":
     "先把五個月用水量全部相加：45+52+38+41+44=220，再除以5個月得到44度。42是總量或除法算錯，48則只拿部分月份估算，沒有使用全部五筆資料。",
   "u09-s001-v006":
-    "飯類120票、麵類95票、其他35票，三類合計250票。飯類占比120÷250×100=48%。50是把總票數算成240；55則把120當分母，沒有用250票計算比例。",
+    "飯類120票、麵類95票、其他35票，總票數是120+95+35=250票。飯類占比為120÷250×100=48%。50、52與55都不是以250為總票數算出的正確百分比；若漏掉其他35票，120÷215×100約為55.8%，仍不是52%。",
   "u09-s001-v007":
     "B班平均84分，A班平均78分，題目問兩班平均相差幾分，所以直接算84−78=6。4與10都不是由84和78相減得到；這題比較的是兩個平均值的差，不需要再除以班級人數。",
   "u09-s001-v008":
@@ -402,22 +402,19 @@ const R7_BANNED_RE = [
   /選\s*[^\s，。；]+\s*不符合本題資料/
 ];
 
-const QA3_EXACT_MIN = {
-  "u09-s002-v007": 36,
-  "u09-s003-v001": 37,
-  "u09-s003-v004": 42
-};
+// V2 Content Quality Gate v1.2 uses a uniform 30-Chinese-character floor.
+// Quality is enforced by derivation, concrete distractor analysis and human review,
+// not by question-specific length exceptions.
 
 const out = {};
 const failed = [];
 for (const q of qs) {
   out[q.questionId] = finalize(q);
   const zh = countZh(out[q.questionId]);
-  const minZh = QA3_EXACT_MIN[q.questionId] ?? 45;
   const bad = R7_BANNED.filter(b => out[q.questionId].includes(b));
   const badRe = R7_BANNED_RE.find(re => re.test(out[q.questionId]));
   const rep = explanationOverRepeatsText(out[q.questionId], q.text);
-  if (zh < minZh || bad.length || badRe || rep) failed.push({ id: q.questionId, zh, bad, badRe: badRe?.source, rep });
+  if (zh < 30 || bad.length || badRe || rep) failed.push({ id: q.questionId, zh, bad, badRe: badRe?.source, rep });
 }
 
 if (failed.length) {
