@@ -11,6 +11,7 @@ import { U08_R3_BANNED } from "./v2-u08-r3-banned.mjs";
 import { U08_QA1_REQUIRED_LECTURES } from "./u08-qa1-lecture-manifest.mjs";
 import { U08_QA2A_REQUIRED_QUESTIONS } from "./u08-qa2a-question-manifest.mjs";
 import { U08_QA2B1_REQUIRED_QUESTIONS } from "./u08-qa2b1-question-manifest.mjs";
+import { U08_QA2B2_REQUIRED_QUESTIONS } from "./u08-qa2b2-question-manifest.mjs";
 
 const MACHINE_RESIDUE = [
   "沒錯", "才對", "高帶錯", "數字帶錯", "公式用錯", "計算錯誤",
@@ -182,6 +183,29 @@ function checkQa2b1Manifest(questions) {
   );
 }
 
+function checkQa2b2Manifest(questions) {
+  const manifestIds = Object.keys(U08_QA2B2_REQUIRED_QUESTIONS);
+  assert.equal(manifestIds.length, 17, "QA2B2 manifest question count");
+
+  const byId = new Map(questions.map((q) => [q.questionId, q]));
+  for (const id of manifestIds) {
+    const matches = questions.filter((q) => q.questionId === id);
+    assert.equal(matches.length, 1, `${id} must appear exactly once`);
+  }
+
+  for (const [id, required] of Object.entries(U08_QA2B2_REQUIRED_QUESTIONS)) {
+    const q = byId.get(id);
+    assert.equal(
+      JSON.stringify(q.explanation),
+      JSON.stringify(required.explanation),
+      `${id}.explanation manifest`
+    );
+    for (const p of MACHINE_RESIDUE) {
+      assert.ok(!q.explanation.includes(p), `${id} explanation residue: ${p}`);
+    }
+  }
+}
+
 function checkLectures(lectures) {
   const manifestIds = Object.keys(U08_QA1_REQUIRED_LECTURES);
   assert.equal(manifestIds.length, 12, "manifest skill count");
@@ -214,5 +238,6 @@ const { questions, lectures } = loadU08();
 checkQuestions(questions);
 checkQa2aManifest(questions);
 checkQa2b1Manifest(questions);
+checkQa2b2Manifest(questions);
 checkLectures(lectures);
 console.log("verify-v2-u08-pack: OK — 144 questions, 12 lectures, all checks passed");
