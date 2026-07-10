@@ -10,6 +10,12 @@ import { U08_R2_BANNED } from "./v2-u08-r2-banned.mjs";
 import { U08_R3_BANNED } from "./v2-u08-r3-banned.mjs";
 import { U08_QA1_REQUIRED_LECTURES } from "./u08-qa1-lecture-manifest.mjs";
 import { U08_QA2A_REQUIRED_QUESTIONS } from "./u08-qa2a-question-manifest.mjs";
+import { U08_QA2B1_REQUIRED_QUESTIONS } from "./u08-qa2b1-question-manifest.mjs";
+
+const MACHINE_RESIDUE = [
+  "沒錯", "才對", "高帶錯", "數字帶錯", "公式用錯", "計算錯誤",
+  "其中一個算錯", "多乘", "少扣一點", "漏加倍",
+];
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
@@ -144,6 +150,38 @@ function checkQa2aManifest(questions) {
   assert.equal(v011.choices[v011.answerIndex], "0.6", "u08-s010-v011 correctChoice");
 }
 
+function checkQa2b1Manifest(questions) {
+  const manifestIds = Object.keys(U08_QA2B1_REQUIRED_QUESTIONS);
+  assert.equal(manifestIds.length, 10, "QA2B1 manifest question count");
+
+  const byId = new Map(questions.map((q) => [q.questionId, q]));
+  for (const id of manifestIds) {
+    const matches = questions.filter((q) => q.questionId === id);
+    assert.equal(matches.length, 1, `${id} must appear exactly once`);
+  }
+
+  for (const [id, required] of Object.entries(U08_QA2B1_REQUIRED_QUESTIONS)) {
+    const q = byId.get(id);
+    for (const [field, value] of Object.entries(required)) {
+      assert.equal(
+        JSON.stringify(q[field]),
+        JSON.stringify(value),
+        `${id}.${field} manifest`
+      );
+    }
+    for (const p of MACHINE_RESIDUE) {
+      assert.ok(!q.explanation.includes(p), `${id} explanation residue: ${p}`);
+    }
+  }
+
+  const v010 = byId.get("u08-s007-v010");
+  assert.equal(
+    v010.text,
+    U08_QA2B1_REQUIRED_QUESTIONS["u08-s007-v010"].text,
+    "u08-s007-v010 text"
+  );
+}
+
 function checkLectures(lectures) {
   const manifestIds = Object.keys(U08_QA1_REQUIRED_LECTURES);
   assert.equal(manifestIds.length, 12, "manifest skill count");
@@ -175,5 +213,6 @@ function checkLectures(lectures) {
 const { questions, lectures } = loadU08();
 checkQuestions(questions);
 checkQa2aManifest(questions);
+checkQa2b1Manifest(questions);
 checkLectures(lectures);
 console.log("verify-v2-u08-pack: OK — 144 questions, 12 lectures, all checks passed");
