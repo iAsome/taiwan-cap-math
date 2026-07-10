@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/** @deprecated Not part of active U09 rebuild. Use gen-u09-r7-full.mjs → fix-u09-r7.mjs → build-u09-pack.mjs. */
 /** One-shot generator for fix-u09-r5-full.mjs — run locally, commit output. */
 import fs from "node:fs";
 import path from "node:path";

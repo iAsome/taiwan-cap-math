@@ -20,6 +20,7 @@ import {
   stepsEmbedQuestionText,
   explanationOverRepeatsText
 } from "./v2-quality.mjs";
+import { auditQuestions } from "./u09-semantic-audit.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2Dir = path.join(root, "v2");
@@ -77,6 +78,11 @@ const U09_SC_BANNED = [
   "错误", "认为", "显示", "应当", "进行", "选择", "问题", "结果",
   "简单", "复杂", "个数", "数值", "全体", "谨慎", "夸大"
 ];
+const U09_SC_CHARS = [
+  "却", "这", "为", "从", "与", "应", "还", "后", "里", "对", "达", "无", "发", "过",
+  "别", "数", "学", "类", "组", "图", "题", "问", "结", "选", "错", "较", "范", "围",
+  "简", "复", "个", "间", "体", "据", "计", "显", "进"
+];
 const BAD_SYMBOL_RE = /<=|>=/;
 
 function splitExplanationSentences(text) {
@@ -133,6 +139,9 @@ function hasU09Banned(textOrArray) {
     }
     for (const p of U09_SC_BANNED) {
       if (part.includes(p)) return `SC:${p}`;
+    }
+    for (const ch of U09_SC_CHARS) {
+      if (part.includes(ch)) return `SC-char:${ch}`;
     }
     if (BAD_SYMBOL_RE.test(part)) return "<=/>=";
     for (const [re, label] of [
@@ -272,6 +281,32 @@ assert.ok(v009.text.includes("未滿200元"), "u09-s002-v009 text must contain �
 assert.ok(!v009.text.includes("200元以下"), "u09-s002-v009 text must not contain 200元以下");
 assert.equal(v009.answerIndex, 0, "u09-s002-v009 answerIndex");
 assert.equal(v009.choices[0], "23", "u09-s002-v009 choice");
+assert.ok(!v009.commonMistake.includes("却"), "u09-s002-v009 commonMistake must not contain 却");
+assert.ok(v009.commonMistake.includes("卻"), "u09-s002-v009 commonMistake must contain 卻");
+
+const REQUIRED_EXPL = {
+  "u09-s002-v007":
+    "21分鐘以上包含21−30與31−40兩組，14+8=22人。18漏加31−40的8人；26誤把11−20的9人算入；14只算21−30。因題目從21分鐘起算，應把21−30與31−40兩組次數合計；18與14都漏掉其中一組。",
+  "u09-s002-v008":
+    "有養寵物者為8+15+5=28人，全班共有12+8+15+5=40人，因此28÷40×100=70%。60是把分子誤算成24；65與55則使用了錯誤的分子或分母；沒養寵物12人不能算進分子，分母也必須是全班40人。",
+  "u09-s002-v010":
+    "數學15人、英文9人，15−9=6人。8是誤拿社會科7人計算；4不是15與9相減的結果；10則把比較題誤當成加總題；社會科7人與本題兩科比較無關。",
+  "u09-s002-v011":
+    "睡7小時或以上包含7小時12人、8小時10人及9小時以上3人，共12+10+3=25人。22漏加9小時以上的3人；30誤把6小時的8人算入；15只計入部分組別。",
+  "u09-s003-v001":
+    "A班40人、B班55人、C班35人，合計40+55+35=130人。120或125都漏算了部分班級；140則多加10人。求三班總數必須把A、B、C三個班級全部納入；漏算C班35人常得120或125。"
+};
+for (const [id, expl] of Object.entries(REQUIRED_EXPL)) {
+  const q = questions.find(x => x.questionId === id);
+  assert.ok(q, `${id} missing`);
+  assert.equal(q.explanation, expl, `${id} explanation mismatch`);
+}
+
+const semanticDups = auditQuestions(questions);
+if (semanticDups.length) {
+  const first = semanticDups[0];
+  assert.fail(`${first.questionId} semantic duplicate: ${first.a} / ${first.b} (${first.reason})`);
+}
 
 const v010 = questions.find(q => q.questionId === "u09-s010-v010");
 assert.ok(v010, "u09-s010-v010 missing");

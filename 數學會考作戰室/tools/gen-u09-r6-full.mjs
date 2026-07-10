@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/** @deprecated Not part of active U09 rebuild. Use gen-u09-r7-full.mjs → fix-u09-r7.mjs → build-u09-pack.mjs. */
 /** U09-R6: strip skill-level pads; hand-fix statistic skills; enrich short entries. */
 import fs from "node:fs";
 import path from "node:path";
