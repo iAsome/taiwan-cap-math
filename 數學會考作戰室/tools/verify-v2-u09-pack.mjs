@@ -170,6 +170,59 @@ function chartTypeLeakage(q) {
   return null;
 }
 
+const QA5A_REQUIRED_EXPLANATIONS = {
+  "u09-s001-v005":
+    "五個月用水量相加為45+52+38+41+44=220度，220÷5=44度。42、46、48都不是220除以5的結果；這題必須把五個月份全部計入，不能只取部分月份估算。",
+  "u09-s001-v009":
+    "六天氣溫中最高是25℃、最低是18℃，全距為25−18=7℃。5是25與20的差，不是最大值與最小值的差；6與8都不是25減18的結果。",
+  "u09-s001-v011":
+    "營業額由320萬增加到380萬，增加60萬；以2023年的320萬為基準，60÷320×100=18.75%。15、20與25都不是依這個基準算出的成長率。",
+  "u09-s002-v003":
+    "45公斤以上包含45−49、50−54與55−59三組，10+8+4=22人。18漏加55−59的4人；24誤把40−44的6人算入又漏掉55−59的4人；14只加45−49與55−59，漏掉50−54的8人。",
+  "u09-s002-v004":
+    "至少借閱1次包含1、2、3、4次四組，35+25+10+5=75人。95誤把0次的20人也算入；55只加0次與1次兩組；70漏加4次的5人。",
+  "u09-s002-v007":
+    "21分鐘以上包含21−30與31−40兩組，14+8=22人。18把31−40的8人誤換成0−10的4人；26在正確兩組之外又多加0−10的4人；14只計21−30，漏掉31−40。",
+  "u09-s002-v008":
+    "有養寵物者共有8+15+5=28人，全班共有12+8+15+5=40人，因此28÷40×100=70%。60、65與55都不是28除以40的結果；分子只能計入有養寵物的28人，分母要用全班40人。",
+  "u09-s002-v010":
+    "數學15人、英文9人，15−9=6人。8是把社會科7人當成比較對象後算15−7；4與10都不是數學15人減英文9人的結果。",
+  "u09-s002-v011":
+    "睡7小時或以上包含7小時12人、8小時10人與9小時以上3人，合計12+10+3=25人。22漏加9小時以上3人；30誤加6小時8人並漏掉9小時以上3人；15只加7小時與9小時以上兩組。",
+  "u09-s003-v005":
+    "四個社團共有30+25+20+15=90人。75漏加桌球社15人；70只加籃球、足球與桌球三組，漏掉排球社20人；85不是四組人數的正確總和。",
+  "u09-s003-v007":
+    "東區50戶最多、南區38戶最少，最多與最少相差50−38=12戶。8是東區50減西區42，只比較到次高值；10與15都不是最大值50減最小值38的結果。",
+  "u09-s003-v008":
+    "四區總人數為120+85+95+40=340人，南部有95人，95÷340×100約為27.9%，四捨五入得28%。所以26、30與25都不是95占340的正確百分比。",
+  "u09-s003-v010":
+    "紅茶60杯、奶茶55杯，奶茶比紅茶少60−55=5杯。10是誤用奶茶55減綠茶45；15是奶茶55減咖啡40；20是紅茶60減咖啡40，三者都拿錯比較對象。",
+  "u09-s004-v001":
+    "3月15度、1月10度，3月比1月高15−10=5度。3是誤算3月與2月的差；2是2月與1月的差；而4不是15減10的結果。",
+  "u09-s004-v002":
+    "週二55件到週三48件，變化量用後值減前值，48−55=−7件，表示減少7件。7把相減方向顛倒；3與−3都不是48減55的結果。",
+  "u09-s004-v005":
+    "1月為200元、4月為260元，期間共增加260−200=60元。40只計算1月到3月的增加量；80與50都不是4月260減1月200的結果。",
+  "u09-s004-v006":
+    "四天中最高是95分、最低是88分，最高與最低相差95−88=7分。5是95減週四90；4是週三92減最低88；8不是95減88的結果。",
+  "u09-s004-v007":
+    "12時有50人、10時有45人，12時比10時多50−45=5人。10是誤拿12時50人與下午2時40人相減；3與8都不是50減45的結果。",
+  "u09-s004-v009":
+    "五天讀書時間合計為30+45+40+50+35=200分鐘。180、210與190都不是這五個數的正確總和；題目要求五天合計，五天數值缺一不可。",
+  "u09-s006-v001":
+    "五人身高總和為150+155+160+158+162=785公分，因此785÷5=157公分。選項155、160與158都是個別身高，不是五人的平均身高。",
+  "u09-s006-v002":
+    "四天讀書時間合計為30+45+40+50=165分鐘，165÷4=41.25分鐘。40、42與43都不是165除以4的結果；平均必須先加總四天再除以4。",
+  "u09-s006-v003":
+    "三數平均為12，所以總和是12×3=36；第三數為36−10−14=12。10與14是已知的兩個數，16會使總和變成40、平均變成13又三分之一，不符合題意。",
+  "u09-s006-v004":
+    "平均80分、共有30人，總分為80×30=2400分。800是80×10；2000是80×25；240則不是80乘30的結果。已知平均與人數求總分時要用乘法。",
+  "u09-s006-v009":
+    "原四個數的總和為18×4=72，加入22後總和為94，共有5個數，所以94÷5=18.8。18是尚未加入新數前的平均；19是把18.8錯誤取整；20不是94除以5的結果。",
+  "u09-s006-v011":
+    "設原有n人，75n+80=76(n+1)，解得n=4。檢查其餘人數：原5人時新平均455÷6約75.83；原3人時305÷4=76.25；原6人時530÷7約75.71，只有原4人時380÷5=76。"
+};
+
 // V2 Content Quality Gate v1.2 uses a uniform 30-Chinese-character floor.
 // Quality is enforced by derivation, concrete distractor analysis and human review,
 // not by question-specific length exceptions.
@@ -180,11 +233,19 @@ function validateQuestion(q) {
   assert.equal(q.visualMode, "text-only", `${q.questionId} visualMode`);
   assert.ok(countZh(q.explanation) >= 30, `${q.questionId} explanation too short (${countZh(q.explanation)})`);
   assert.ok(countZh(q.commonMistake) >= 12, `${q.questionId} commonMistake too short (${countZh(q.commonMistake)})`);
-  assert.ok(!U04_EXPLANATION_PREFIX_RE.test(q.explanation.trim()), `${q.questionId} numeric explanation prefix`);
-  assert.ok(!U04_EXPLANATION_PREFIX_COLON_RE.test(q.explanation.trim()), `${q.questionId} numeric prefix colon`);
+  // QA5A exact explanation for u09-s004-v007 intentionally opens with 12時;
+  // fixNumericPrefix skip preserves that text (Conflict Resolution Decision 2).
+  if (q.questionId !== "u09-s004-v007") {
+    assert.ok(!U04_EXPLANATION_PREFIX_RE.test(q.explanation.trim()), `${q.questionId} numeric explanation prefix`);
+    assert.ok(!U04_EXPLANATION_PREFIX_COLON_RE.test(q.explanation.trim()), `${q.questionId} numeric prefix colon`);
+  }
   assert.ok(!hasBannedStep(q.steps), `${q.questionId} banned step: ${hasBannedStep(q.steps)}`);
   assert.ok(q.steps.length >= 3, `${q.questionId} needs 3 steps`);
-  const ban = hasU09Banned([q.explanation, q.text, ...q.steps, q.commonMistake, q.concept, ...q.choices]);
+  const qa5aExact = QA5A_REQUIRED_EXPLANATIONS[q.questionId];
+  const banScope = qa5aExact && q.explanation === qa5aExact
+    ? [q.text, ...q.steps, q.commonMistake, q.concept, ...q.choices]
+    : [q.explanation, q.text, ...q.steps, q.commonMistake, q.concept, ...q.choices];
+  const ban = hasU09Banned(banScope);
   assert.ok(!ban, `${q.questionId} banned: ${ban}`);
   const vague = u05ExplanationTooVague(q.explanation);
   assert.ok(!vague, `${q.questionId} vague explanation: ${vague}`);
@@ -307,9 +368,9 @@ const QA3_REQUIRED_EXPL = {
   "u09-s001-v004":
     "女生36人、男生24人，36−24=12人。10與14都是減法計算錯誤；16則不是36與24的差。題目問女生比男生多多少，所以用女生人數減男生人數，答案單位仍是人。",
   "u09-s002-v007":
-    "21分鐘以上包含21−30與31−40兩組，14+8=22人。18漏加31−40的8人；26誤把11−20的9人算入；14只算21−30。題目從21分鐘起算，因此11−20這組不列入。",
+    "21分鐘以上包含21−30與31−40兩組，14+8=22人。18把31−40的8人誤換成0−10的4人；26在正確兩組之外又多加0−10的4人；14只計21−30，漏掉31−40。",
   "u09-s002-v010":
-    "數學15人、英文9人，15−9=6人。8是誤拿社會科7人計算；4不是15與9相減的結果；10則把比較題誤當成加總題。國文、自然與社會三科資料都不參與這次比較。",
+    "數學15人、英文9人，15−9=6人。8是把社會科7人當成比較對象後算15−7；4與10都不是數學15人減英文9人的結果。",
   "u09-s003-v001":
     "A班40人、B班55人、C班35人，40+55+35=130人。120、125與140都不是三班人數的正確總和；120少算10人、125少算5人、140多算10人，都是加法計算錯誤。",
   "u09-s003-v002":
@@ -327,14 +388,21 @@ for (const [id, expl] of Object.entries(QA3_REQUIRED_EXPL)) {
 
 const QA2_PRESERVED_EXPL = {
   "u09-s002-v008":
-    "有養寵物者為8+15+5=28人，全班共有12+8+15+5=40人，因此28÷40×100=70%。60是把分子誤算成24；65與55則使用了錯誤的分子或分母；沒養寵物12人不能算進分子，分母也必須是全班40人。",
+    "有養寵物者共有8+15+5=28人，全班共有12+8+15+5=40人，因此28÷40×100=70%。60、65與55都不是28除以40的結果；分子只能計入有養寵物的28人，分母要用全班40人。",
   "u09-s002-v011":
-    "睡7小時或以上包含7小時12人、8小時10人及9小時以上3人，共12+10+3=25人。22漏加9小時以上的3人；30誤把6小時的8人算入；15只計入部分組別。"
+    "睡7小時或以上包含7小時12人、8小時10人與9小時以上3人，合計12+10+3=25人。22漏加9小時以上3人；30誤加6小時8人並漏掉9小時以上3人；15只加7小時與9小時以上兩組。"
 };
 for (const [id, expl] of Object.entries(QA2_PRESERVED_EXPL)) {
   const q = questions.find(x => x.questionId === id);
   assert.ok(q, `${id} missing`);
   assert.equal(q.explanation, expl, `${id} explanation mismatch`);
+}
+
+assert.equal(Object.keys(QA5A_REQUIRED_EXPLANATIONS).length, 25, "QA5A map must have 25 entries");
+for (const [id, expl] of Object.entries(QA5A_REQUIRED_EXPLANATIONS)) {
+  const q = questions.find(x => x.questionId === id);
+  assert.ok(q, `${id} missing`);
+  assert.equal(q.explanation, expl, `${id} QA5A explanation mismatch`);
 }
 
 const v001 = questions.find(q => q.questionId === "u09-s003-v001");
