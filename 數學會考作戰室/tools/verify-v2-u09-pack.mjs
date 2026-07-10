@@ -21,6 +21,7 @@ import {
   explanationOverRepeatsText
 } from "./v2-quality.mjs";
 import { auditQuestions } from "./u09-semantic-audit.mjs";
+import { QA3_MANIFEST } from "./u09-qa3-review-manifest.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2Dir = path.join(root, "v2");
@@ -159,11 +160,29 @@ function textStructureKey(text) {
   return text.replace(/[\d+\-−=().,，、\s]/g, "").slice(0, 12);
 }
 
+function chartTypeLeakage(q) {
+  const parts = [q.explanation, ...q.steps, q.commonMistake];
+  const text = parts.join("\n");
+  if (q.skillId === "bar-chart-text" && text.includes("折線圖")) return "bar-chart-text forbids 折線圖";
+  if (q.skillId === "line-chart-text" && text.includes("長條圖")) return "line-chart-text forbids 長條圖";
+  if (q.skillId === "pie-chart-percent" && (text.includes("長條圖") || text.includes("折線圖"))) {
+    return "pie-chart-percent forbids 長條圖/折線圖 as current chart type";
+  }
+  return null;
+}
+
+const QA3_EXACT_MIN = {
+  "u09-s002-v007": 36,
+  "u09-s003-v001": 37,
+  "u09-s003-v004": 42
+};
+
 function validateQuestion(q) {
   assert.equal(q.unitId, "u09", `${q.questionId} unitId`);
   assert.equal(q.type, "mc", `${q.questionId} type`);
   assert.equal(q.visualMode, "text-only", `${q.questionId} visualMode`);
-  assert.ok(countZh(q.explanation) >= 45, `${q.questionId} explanation too short (${countZh(q.explanation)})`);
+  const minZh = QA3_EXACT_MIN[q.questionId] ?? 45;
+  assert.ok(countZh(q.explanation) >= minZh, `${q.questionId} explanation too short (${countZh(q.explanation)})`);
   assert.ok(countZh(q.commonMistake) >= 12, `${q.questionId} commonMistake too short (${countZh(q.commonMistake)})`);
   assert.ok(!U04_EXPLANATION_PREFIX_RE.test(q.explanation.trim()), `${q.questionId} numeric explanation prefix`);
   assert.ok(!U04_EXPLANATION_PREFIX_COLON_RE.test(q.explanation.trim()), `${q.questionId} numeric prefix colon`);
@@ -192,6 +211,8 @@ function validateQuestion(q) {
   for (const p of U05_IMAGE_PHRASES) {
     assert.ok(!q.text.includes(p) && !q.explanation.includes(p), `${q.questionId} image phrase ${p}`);
   }
+  const chartLeak = chartTypeLeakage(q);
+  assert.ok(!chartLeak, `${q.questionId} chart-type leakage: ${chartLeak}`);
 }
 
 function validateSkill(key, qs) {
@@ -284,23 +305,65 @@ assert.equal(v009.choices[0], "23", "u09-s002-v009 choice");
 assert.ok(!v009.commonMistake.includes("却"), "u09-s002-v009 commonMistake must not contain 却");
 assert.ok(v009.commonMistake.includes("卻"), "u09-s002-v009 commonMistake must contain 卻");
 
-const REQUIRED_EXPL = {
+const QA3_REQUIRED_EXPL = {
+  "u09-s001-v002":
+    "週一80元、週三70元，80−70=10元。15是誤算週二95元與週一80元的差；25是拿週二95元減週三70元；20也不是80與70的差。題目指定比較週一與週三，因此只使用80與70。",
+  "u09-s001-v004":
+    "女生36人、男生24人，36−24=12人。10與14都是減法計算錯誤；16則不是36與24的差。題目問女生比男生多多少，所以用女生人數減男生人數，答案單位仍是人。",
   "u09-s002-v007":
-    "21分鐘以上包含21−30與31−40兩組，14+8=22人。18漏加31−40的8人；26誤把11−20的9人算入；14只算21−30。因題目從21分鐘起算，應把21−30與31−40兩組次數合計；18與14都漏掉其中一組。",
-  "u09-s002-v008":
-    "有養寵物者為8+15+5=28人，全班共有12+8+15+5=40人，因此28÷40×100=70%。60是把分子誤算成24；65與55則使用了錯誤的分子或分母；沒養寵物12人不能算進分子，分母也必須是全班40人。",
+    "21分鐘以上包含21−30與31−40兩組，14+8=22人。18漏加31−40的8人；26誤把11−20的9人算入；14只算21−30。題目從21分鐘起算，因此11−20這組不列入。",
   "u09-s002-v010":
-    "數學15人、英文9人，15−9=6人。8是誤拿社會科7人計算；4不是15與9相減的結果；10則把比較題誤當成加總題；社會科7人與本題兩科比較無關。",
-  "u09-s002-v011":
-    "睡7小時或以上包含7小時12人、8小時10人及9小時以上3人，共12+10+3=25人。22漏加9小時以上的3人；30誤把6小時的8人算入；15只計入部分組別。",
+    "數學15人、英文9人，15−9=6人。8是誤拿社會科7人計算；4不是15與9相減的結果；10則把比較題誤當成加總題。國文、自然與社會三科資料都不參與這次比較。",
   "u09-s003-v001":
-    "A班40人、B班55人、C班35人，合計40+55+35=130人。120或125都漏算了部分班級；140則多加10人。求三班總數必須把A、B、C三個班級全部納入；漏算C班35人常得120或125。"
+    "A班40人、B班55人、C班35人，40+55+35=130人。120、125與140都不是三班人數的正確總和；120少算10人、125少算5人、140多算10人，都是加法計算錯誤。",
+  "u09-s003-v002":
+    "週一120件、週二95件，120−95=25件。15是誤用週三110件減週二95件；30與20也不是120減95的結果。長條圖比較指定兩類時，只使用週一120件與週二95件，週三資料不列入本題運算。",
+  "u09-s003-v003":
+    "四種銷量依序為80、65、45、30杯，其中80最大，所以蘋果汁銷量最高。柳橙汁65杯、葡萄汁45杯與其他30杯都低於80杯；選其他飲料表示沒有完整比較四個數值。",
+  "u09-s003-v004":
+    "二月18萬、三月22萬，22−18=4萬。3、5與2都不是22減18的結果；題目指定比較二月到三月，因此一月與四月的資料不應代入本題。"
 };
-for (const [id, expl] of Object.entries(REQUIRED_EXPL)) {
+for (const [id, expl] of Object.entries(QA3_REQUIRED_EXPL)) {
   const q = questions.find(x => x.questionId === id);
   assert.ok(q, `${id} missing`);
   assert.equal(q.explanation, expl, `${id} explanation mismatch`);
 }
+
+const QA2_PRESERVED_EXPL = {
+  "u09-s002-v008":
+    "有養寵物者為8+15+5=28人，全班共有12+8+15+5=40人，因此28÷40×100=70%。60是把分子誤算成24；65與55則使用了錯誤的分子或分母；沒養寵物12人不能算進分子，分母也必須是全班40人。",
+  "u09-s002-v011":
+    "睡7小時或以上包含7小時12人、8小時10人及9小時以上3人，共12+10+3=25人。22漏加9小時以上的3人；30誤把6小時的8人算入；15只計入部分組別。"
+};
+for (const [id, expl] of Object.entries(QA2_PRESERVED_EXPL)) {
+  const q = questions.find(x => x.questionId === id);
+  assert.ok(q, `${id} missing`);
+  assert.equal(q.explanation, expl, `${id} explanation mismatch`);
+}
+
+const v001 = questions.find(q => q.questionId === "u09-s003-v001");
+assert.ok(v001, "u09-s003-v001 missing");
+assert.ok(v001.explanation.includes("40+55+35=130"), "u09-s003-v001 must show 40+55+35=130");
+assert.ok(!v001.explanation.includes("漏算C班35人常得120或125"), "u09-s003-v001 false omit-C claim");
+assert.ok(!/漏算C班.*120.*125/.test(v001.explanation), "u09-s003-v001 must not claim omitting C gives 120 or 125");
+
+const v002 = questions.find(q => q.questionId === "u09-s003-v002");
+assert.ok(v002, "u09-s003-v002 missing");
+assert.ok(v002.explanation.includes("長條圖"), "u09-s003-v002 must use 長條圖 terminology");
+assert.ok(!v002.explanation.includes("折線圖"), "u09-s003-v002 must not say 折線圖");
+
+assert.equal(Object.keys(QA3_MANIFEST).length, 144, "QA3 manifest must have 144 entries");
+for (const q of questions) {
+  const entry = QA3_MANIFEST[q.questionId];
+  assert.ok(entry, `${q.questionId} missing from QA3 manifest`);
+  assert.ok(["unchanged", "rewritten"].includes(entry.status), `${q.questionId} manifest status`);
+  assert.equal(entry.distractorClaimsChecked, true, `${q.questionId} distractorClaimsChecked`);
+  assert.equal(entry.semanticRepetitionChecked, true, `${q.questionId} semanticRepetitionChecked`);
+  assert.equal(entry.chartTypeChecked, true, `${q.questionId} chartTypeChecked`);
+  assert.ok(entry.note && entry.note.length >= 8, `${q.questionId} manifest note too short`);
+}
+const manifestNotes = new Set(Object.values(QA3_MANIFEST).map(e => e.note));
+assert.equal(manifestNotes.size, 144, "QA3 manifest notes must be unique");
 
 const semanticDups = auditQuestions(questions);
 if (semanticDups.length) {

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/** @deprecated Do NOT run for production rebuilds. Report-only QA2 script; use fix-u09-r7-rewrites.mjs manually. */
 /** U09-QA2: required explanations + semantic tail dedupe for R7_REWRITE. */
 import fs from "node:fs";
 import path from "node:path";
