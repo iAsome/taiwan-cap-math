@@ -18,9 +18,6 @@ function fixNumericPrefix(e) {
 function fixExplanation(q) {
   let e = R7_FULL[q.questionId] || q.explanation;
   if (findBannedPhrase(e)) e = e.replace(/[，,]\s*得\s+/g, "，結果是 ");
-  // QA5A exact text already begins with an explicit subject.
-  // Do not prepend the legacy numeric-prefix phrase.
-  if (q.questionId === "u09-s004-v007") return e;
   return fixNumericPrefix(e);
 }
 

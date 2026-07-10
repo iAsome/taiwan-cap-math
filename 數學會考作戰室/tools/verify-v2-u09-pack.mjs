@@ -206,11 +206,11 @@ const QA5A_REQUIRED_EXPLANATIONS = {
   "u09-s004-v006":
     "四天中最高是95分、最低是88分，最高與最低相差95−88=7分。5是95減週四90；4是週三92減最低88；8不是95減88的結果。",
   "u09-s004-v007":
-    "12時有50人、10時有45人，12時比10時多50−45=5人。10是誤拿12時50人與下午2時40人相減；3與8都不是50減45的結果。",
+    "比較12時與10時的人數：12時有50人、10時有45人，因此50−45=5人。10是誤拿12時50人與下午2時40人相減；3與8都不是50減45的結果。",
   "u09-s004-v009":
     "五天讀書時間合計為30+45+40+50+35=200分鐘。180、210與190都不是這五個數的正確總和；題目要求五天合計，五天數值缺一不可。",
   "u09-s006-v001":
-    "五人身高總和為150+155+160+158+162=785公分，因此785÷5=157公分。選項155、160與158都是個別身高，不是五人的平均身高。",
+    "五人身高總和為150+155+160+158+162=785公分，因此785÷5=157公分。155、160與158都只是其中一人的身高，不是五人的平均身高。",
   "u09-s006-v002":
     "四天讀書時間合計為30+45+40+50=165分鐘，165÷4=41.25分鐘。40、42與43都不是165除以4的結果；平均必須先加總四天再除以4。",
   "u09-s006-v003":
@@ -233,19 +233,11 @@ function validateQuestion(q) {
   assert.equal(q.visualMode, "text-only", `${q.questionId} visualMode`);
   assert.ok(countZh(q.explanation) >= 30, `${q.questionId} explanation too short (${countZh(q.explanation)})`);
   assert.ok(countZh(q.commonMistake) >= 12, `${q.questionId} commonMistake too short (${countZh(q.commonMistake)})`);
-  // QA5A exact explanation for u09-s004-v007 intentionally opens with 12時;
-  // fixNumericPrefix skip preserves that text (Conflict Resolution Decision 2).
-  if (q.questionId !== "u09-s004-v007") {
-    assert.ok(!U04_EXPLANATION_PREFIX_RE.test(q.explanation.trim()), `${q.questionId} numeric explanation prefix`);
-    assert.ok(!U04_EXPLANATION_PREFIX_COLON_RE.test(q.explanation.trim()), `${q.questionId} numeric prefix colon`);
-  }
+  assert.ok(!U04_EXPLANATION_PREFIX_RE.test(q.explanation.trim()), `${q.questionId} numeric explanation prefix`);
+  assert.ok(!U04_EXPLANATION_PREFIX_COLON_RE.test(q.explanation.trim()), `${q.questionId} numeric prefix colon`);
   assert.ok(!hasBannedStep(q.steps), `${q.questionId} banned step: ${hasBannedStep(q.steps)}`);
   assert.ok(q.steps.length >= 3, `${q.questionId} needs 3 steps`);
-  const qa5aExact = QA5A_REQUIRED_EXPLANATIONS[q.questionId];
-  const banScope = qa5aExact && q.explanation === qa5aExact
-    ? [q.text, ...q.steps, q.commonMistake, q.concept, ...q.choices]
-    : [q.explanation, q.text, ...q.steps, q.commonMistake, q.concept, ...q.choices];
-  const ban = hasU09Banned(banScope);
+  const ban = hasU09Banned([q.explanation, q.text, ...q.steps, q.commonMistake, q.concept, ...q.choices]);
   assert.ok(!ban, `${q.questionId} banned: ${ban}`);
   const vague = u05ExplanationTooVague(q.explanation);
   assert.ok(!vague, `${q.questionId} vague explanation: ${vague}`);
