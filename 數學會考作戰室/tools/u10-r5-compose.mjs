@@ -56,9 +56,14 @@ function dedupeSentences(text) {
 
 export function stripDupAnswer(text) {
   let o = text;
+  const norm = (s) => s.replace(/\s+/g, "");
   o = o.replace(/(所以化簡為|整理得|所以得|化簡為)\s*([^，。；]+)，\s*得\s*\2(?=[。；]|$)/g, "$1 $2");
   o = o.replace(/(?<![=＝\d])得\s*([^，。；]+)，\s*得\s*\1(?=[。；]|$)/g, "得 $1");
+  o = o.replace(/得\s*([^，。；]+)，\s*(?:所以)?得\s*([^，。；]+)/g, (m, a, b) =>
+    norm(a) === norm(b) ? `得 ${b.trim()}` : m
+  );
   o = o.replace(/([^，。；]{2,})，\s*得\s*\1(?=[。；]|$)/g, "$1");
+  o = o.replace(/逐步計算較不易出錯。(?:逐步計算較不易出錯。)+/g, "逐步計算較不易出錯。");
   return o;
 }
 
@@ -68,6 +73,7 @@ export function stripR5Filler(text) {
   for (const p of R5_FILLER) o = o.split(p).join("");
   for (const p of SKILL_INTRO_PREFIX) {
     if (o.startsWith(p)) o = o.slice(p.length);
+    else o = o.replace(new RegExp(`^[^。]{0,24}。?，${escRe(p)}`), (m) => m.replace(p, ""));
   }
   o = stripDupAnswer(o);
   return dedupeSentences(o.trim());
@@ -179,7 +185,7 @@ function polishCm(cm, expl, row) {
     o = notes[0] || row.commonMistake || "粗心算錯就容易選錯。";
   }
   o = o.endsWith("。") ? o : `${o}。`;
-  while (countZh(o) < 12) o = `${o.replace(/。$/, "")}，容易選錯。`;
+  while (countZh(o) < 12) o = `${o.replace(/。$/, "").replace(/，+$/, "")}，容易選錯。`;
   return o;
 }
 
@@ -188,10 +194,17 @@ export function composeRow(skillId, idx, row) {
   let explanation = stripR5Filler(stripSkillText(out.explanation));
   explanation = ensureR5Length(skillId, row, explanation);
   explanation = stripDupAnswer(explanation);
-  if (countZh(explanation) < 45) {
-    explanation = `${explanation.replace(/。$/, "")}，逐步計算較不易出錯。`;
+  explanation = stripDupAnswer(explanation);
+  explanation = explanation.replace(/。，/g, "。").replace(/。+/g, "。");
+  explanation = dedupeSentences(explanation);
+  const tailPads = ["，逐步計算較不易出錯。", "，計算過程要寫完整。"];
+  let ti = 0;
+  while (countZh(explanation) < 45 && ti < tailPads.length) {
+    const pad = tailPads[ti++];
+    if (!explanation.includes(pad.replace(/。$/, ""))) {
+      explanation = `${explanation.replace(/。$/, "")}${pad}`;
+    }
   }
-  explanation = explanation.replace(/。+/g, "。");
   return {
     explanation,
     commonMistake: polishCm(out.commonMistake, explanation, row),
