@@ -49,7 +49,7 @@ export const U10_R7_CHUNK = {
     commonMistake: "以為 0 什麼都不是，忽略 0 也是合法單項式。"
   },
   "polynomial-evaluation#0": {
-    explanation: "把 x = 2 放進 3x + 1，先算乘法 3×2 = 6，再把常數 1 加上去得 7。5 可能是把 2+1 先加後乘，違反先乘後加；6 則只算了 3×2 這一段，後面的 +1 完全漏掉，少加常數。",
+    explanation: "把 x = 2 放進 3x + 1，先算乘法 3×2 = 6，再把常數 1 加上去得 7。5 則把 2+1 先加後乘，違反先乘後加；6 則只算了 3×2 這一段，後面的 +1 完全漏掉，少加常數。",
     commonMistake: "只算出 3×2=6 就停住，忘記把常數 1 加進去。"
   },
   "polynomial-evaluation#1": {
@@ -65,7 +65,7 @@ export const U10_R7_CHUNK = {
     commonMistake: "x=0 時仍硬算 5x² 或 −3x 得到非零，沒看出兩項都歸零。"
   },
   "polynomial-evaluation#4": {
-    explanation: "x = 3 時，左括號 x + 1 = 4、右括號 x − 2 = 1，兩個括號相乘 4 × 1 = 4。2 可能是只算完一個括號就停，漏乘另一個；6 則把 4 + 2 或 4 + 1 當成乘法，加減與相乘搞混了。",
+    explanation: "x = 3 時，左括號 x + 1 = 4、右括號 x − 2 = 1，兩個括號相乘 4 × 1 = 4。2 則只算完一個括號就停，漏乘另一個；6 則把 4 + 2 或 4 + 1 當成乘法，加減與相乘搞混了，結果不是 4。",
     commonMistake: "只算出 x+1=4 就當最終值，忘了還要乘上 x−2=1。"
   },
   "polynomial-evaluation#5": {

@@ -8,87 +8,7 @@ import { countZh } from "./v2-quality.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
-const U10_BANNED = [
-  "寫完再回頭確認係數、指數與符號是否都處理到",
-  "展開後要檢查每一項的係數與符號，合併同類項後再與題意比對",
-  "書寫時要分項處理",
-  "符號或係數處理不完整",
-  "整理時把同次項分組，較不容易漏項或合併錯",
-  "二項式展開要四項相乘再合併同類項",
-  "交叉相乘四項都要寫出，再合併同類項",
-  "合併時字母與指數不變，只動係數",
-  "只有字母與指數完全相同的項才能合併",
-  "本題依題干所列式子逐步計算即可",
-  "代入後依運算順序逐步計算",
-  "接著",
-  "此題所求為",
-  "把代入與運算步驟寫完整即可",
-  "把同類項合併的步驟寫清楚即可",
-  "把乘法展開與合併步驟寫清楚即可",
-  "此錯法會讓本題結果不正確",
-  "同類項係數加減後",
-  "合併時只改係數",
-  "字相同、次方相同才算同類項",
-  "分配律要乘到括號內每一項",
-  "完全平方和要有中間項",
-  "完全平方差的中間項",
-  "平方差展開後中間項",
-  "平方差展開後中間項會抵消",
-  "先辨識是平方和",
-  "先辨識是平方和、平方差還是平方差公式",
-  "文字題先依題意列式",
-  "文字題先依題意列式，再展開化簡",
-  "去括號合併後",
-  "分配律展開整理後",
-  "四項相乘合併後",
-  "兩括號相乘要交叉相乘四項",
-  "完全平方展開整理後",
-  "平方差公式展開後",
-  "辨識型態並展開",
-  "依題意列式展開化簡",
-  "化簡整理後應得",
-  "最簡式為",
-  "展開式為",
-  "再合併同類項",
-  "三項缺一不可",
-  "三項都要算到",
-  "只剩兩個平方相減",
-  "就「",
-  "」而言",
-  "計算時每一項係數與正負號都要算清楚",
-  "每一步乘法或合併都要寫清楚",
-  "避免算錯係數與符號",
-  "化簡時粗心漏項或算錯係數就容易選錯",
-  "代入題目給定的值計算",
-  "逐步計算較不易出錯",
-  "代表計算某一步出錯",
-  "題目給定的值",
-  "代入時依運算順序先乘除後加減",
-  "代入時依運算順序",
-  "，，",
-  "。。",
-  "，。",
-  "。，",
-  "將已知數值代入代數式",
-  "先乘方再乘除、最後加減",
-  "多半是代入後某一步運算錯",
-  "某一步運算錯",
-  "常見於符號或減負數處理錯",
-  "符號或係數一個步驟算錯就會落到錯誤答案",
-  "代入後算到",
-  "表示運算順序或符號有誤",
-  "係數或指數處理錯",
-  "外項漏乘或符號錯",
-  "展開時漏乘或合併錯",
-  "才會得到",
-  "容易在這一題算錯符號或係數",
-  "粗心算錯就容易選錯",
-  "容易在這一題選錯",
-  "去括號或合併時符號處理錯就會選錯",
-  "因式分解為", "分解為", "求根", "公式解", "判別式", "高中", "餘式", "因式定理", "多項式除法",
-  "選項", "逐項", "驗算", "核對", "故應選", "答案為", "結果為", "若誤以為", "另外，選", "【", "】",
-  "<=", ">=", "如圖", "下圖", "請看圖"
-];
+import { U10_CONTENT_BANNED as U10_BANNED } from "./u10-content-banned.mjs";
 const BAD_SYMBOL_RE = /<=|>=/;
 const IMAGE_RE = /<img\b|<svg\b|canvas/i;
 const FACTORING_Q_RE = /因式分解|分解為[^何]|將.+分解/;
@@ -171,11 +91,19 @@ function stepOverlapCount(expl, steps) {
   return n;
 }
 
+function explanationEnding(text) {
+  const parts = text.split(/(?<=。)/).map((s) => s.trim()).filter(Boolean);
+  return parts[parts.length - 1] || "";
+}
+
 function checkQuestions(questions) {
   assert.equal(questions.length, 144);
   const bySkill = new Map();
   const diff = { basic: 0, standard: 0, advanced: 0, literacy: 0 };
   const ai = [0, 0, 0, 0];
+  const endingCount = new Map();
+  const BINOMIAL_FORBIDDEN = /完全平方|首平方|末平方|2ab/;
+  const REMINDER_RE = /容易錯|要小心|要盯緊|最易錯/;
   for (const q of questions) {
     ai[q.answerIndex]++;
     diff[q.difficulty]++;
@@ -188,12 +116,22 @@ function checkQuestions(questions) {
     assert.ok(q.steps.length >= 3, `${q.questionId} steps`);
     const blob = [q.text, q.explanation, q.commonMistake, ...q.steps, ...q.choices].join("\n");
     assert.ok(!hasBanned(blob), `${q.questionId} banned: ${hasBanned(blob)}`);
+    assert.ok(!q.explanation.includes("範例"), `${q.questionId} meta 範例`);
+    assert.ok(!REMINDER_RE.test(q.explanation + q.commonMistake), `${q.questionId} reminder tail`);
+    if (q.skillId === "binomial-multiply-basic") {
+      assert.ok(!BINOMIAL_FORBIDDEN.test(q.explanation), `${q.questionId} binomial has square-formula leak`);
+    }
     assert.ok(!FACTORING_Q_RE.test(q.text), `${q.questionId} factoring question`);
     assert.ok(!BAD_SYMBOL_RE.test(blob), `${q.questionId} bad symbol`);
     assert.ok(!IMAGE_RE.test(blob), `${q.questionId} image tag`);
     assert.ok(!hasDuplicateSentence(q.explanation), `${q.questionId} duplicate`);
     assert.ok(stepOverlapCount(q.explanation, q.steps) < 2, `${q.questionId} steps copied`);
     assert.notEqual(q.commonMistake, q.explanation, `${q.questionId} cm copied expl`);
+    const end = explanationEnding(q.explanation);
+    if (end.length >= 8) endingCount.set(end, (endingCount.get(end) || 0) + 1);
+  }
+  for (const [end, n] of endingCount) {
+    assert.ok(n <= 2, `explanation ending repeated ${n}x: ${end.slice(0, 40)}…`);
   }
   assert.equal(bySkill.size, 12);
   for (const [sid, items] of bySkill) {
