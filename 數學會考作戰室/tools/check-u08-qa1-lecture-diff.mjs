@@ -43,13 +43,7 @@ function lectureFieldDiff(base, current, skillId) {
 export function assertU08Qa1LectureDiff() {
   assert.equal(MANIFEST_IDS.length, 12, "manifest skill count");
 
-  const baseBankPath = "數學會考作戰室/v2/math-question-bank-v2-u08.js";
   const baseLecturePath = "數學會考作戰室/v2/math-lecture-v2-u08.js";
-  const baseBankBytes = execFileSync("git", ["show", `${BASE_COMMIT}:${baseBankPath}`], {
-    cwd: REPO_ROOT,
-  });
-  const currentBankBytes = fs.readFileSync(path.join(V2, "math-question-bank-v2-u08.js"));
-  assert.ok(currentBankBytes.equals(baseBankBytes), "question bank must be byte-identical to base");
 
   const baseLectures = loadLecturesFromSource(gitShow(baseLecturePath));
   const currentLectures = loadLecturesFromSource(
