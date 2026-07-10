@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-/** Report-only: fail if U09 bank differs from QA5B-1 base outside 13 authorized records (16 fields). */
+/** Report-only: fail if U09 bank differs from QA5B-1 base outside QA5B-1 + QA5B-2A authorized fields. */
 import { assertAllowedQuestionFieldDiffs } from "./u09-field-diff-core.mjs";
 
 const BASE = process.env.U09_QA5B1_BASE || "0f647bd54463b6fe99bc69792fa0f62394fe845c";
 
-const AUTHORIZED = {
+const QA5B1_AUTHORIZED = {
   "u09-s007-v001": ["explanation"],
   "u09-s007-v007": ["explanation"],
   "u09-s008-v002": ["explanation"],
@@ -20,17 +20,44 @@ const AUTHORIZED = {
   "u09-s009-v009": ["explanation"]
 };
 
-assertAllowedQuestionFieldDiffs({
+const QA5B2A_AUTHORIZED = {
+  "u09-s010-v001": ["text", "explanation", "steps", "commonMistake"],
+  "u09-s010-v008": ["text", "choices", "explanation", "steps", "commonMistake"],
+  "u09-s010-v009": ["text", "explanation", "steps", "commonMistake"],
+  "u09-s011-v008": ["text", "choices", "explanation", "steps", "commonMistake"],
+  "u09-s011-v010": ["choices", "explanation", "steps"],
+  "u09-s011-v012": ["text", "choices", "explanation", "steps", "commonMistake"],
+  "u09-s012-v002": ["text", "choices", "explanation", "steps", "commonMistake"],
+  "u09-s012-v009": ["choices", "explanation", "steps", "commonMistake"],
+  "u09-s012-v011": ["text", "explanation", "steps", "commonMistake"]
+};
+
+const CUMULATIVE_AUTHORIZED = { ...QA5B1_AUTHORIZED, ...QA5B2A_AUTHORIZED };
+
+const result = assertAllowedQuestionFieldDiffs({
   label: "check-u09-qa5b1-field-diff",
   baseCommit: BASE,
-  allowedFieldsByQuestionId: AUTHORIZED,
-  expectedChangedRecords: 13,
-  expectedChangedFields: 16
+  allowedFieldsByQuestionId: CUMULATIVE_AUTHORIZED,
+  expectedChangedRecords: 22,
+  expectedChangedFields: 55
 });
 
+const qa5b1Records = result.changedRecords.filter(id => QA5B1_AUTHORIZED[id]).length;
+const qa5b2aRecords = result.changedRecords.filter(id => QA5B2A_AUTHORIZED[id]).length;
+const qa5b1Fields = result.diffs.filter(
+  d => QA5B1_AUTHORIZED[d.questionId]?.includes(d.field)
+).length;
+const qa5b2aFields = result.diffs.filter(
+  d => QA5B2A_AUTHORIZED[d.questionId]?.includes(d.field)
+).length;
+
 console.log("check-u09-qa5b1-field-diff: OK");
-console.log("  authorized question records: 13");
-console.log("  authorized changed fields: 16");
+console.log(`  QA5B1 question records: ${qa5b1Records}`);
+console.log(`  QA5B1 changed fields: ${qa5b1Fields}`);
+console.log(`  QA5B2A question records: ${qa5b2aRecords}`);
+console.log(`  QA5B2A changed fields: ${qa5b2aFields}`);
+console.log(`  cumulative question records: ${result.changedRecords.length}`);
+console.log(`  cumulative changed fields: ${result.changedFields}`);
 console.log("  exhaustive top-level field scan: OK");
 console.log("  question sequence unchanged: OK");
 console.log("  lecture file unchanged: OK");
