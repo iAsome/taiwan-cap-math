@@ -37,8 +37,8 @@ const BASELINE_ARTIFACT_HASHES = {
 };
 
 const BASELINE_RULE_COUNTS = {
-  "L05 example-why-zh-under-40": 24,
-  "L07 lecture-simplified-character": 1,
+  "L05 example-why-zh-under-40": 0,
+  "L07 lecture-simplified-character": 0,
   "Q06 normalized-text-structure-group-size-at-least-3": 34,
   "Q07 exact-step-shared-by-at-least-3-questionIds": 21,
   "Q08 suspicious-machine-residue": 1,
@@ -143,11 +143,13 @@ function checkLectureReview(lectures, rows) {
     const r = rows[i];
     exactKeys(r, LECTURE_KEYS);
     assert.equal(r.skillId, l.skillId, `lecture order ${i}`);
+    assert.ok(typeof r.title === "string" && r.title.length > 0, `${r.skillId} empty title`);
     assert.ok(Number.isInteger(r.conceptZh) && r.conceptZh >= 0, `${r.skillId} conceptZh not integer`);
     assert.equal(r.conceptZh, countZh(l.concept ?? ""), `${r.skillId} conceptZh mismatch`);
     assert.equal(r.exampleWhyZh.length, (l.examples || []).length, r.skillId);
     for (let j = 0; j < (l.examples || []).length; j++) {
       assert.equal(r.exampleWhyZh[j], countZh(l.examples[j].why || ""), `${r.skillId} example ${j}`);
+      assert.ok(r.exampleWhyZh[j] >= 40, `${r.skillId} example ${j} why under 40`);
     }
   }
   assert.equal(new Set(rows.map((r) => r.skillId)).size, 12, "lecture unique skillIds");
@@ -164,15 +166,12 @@ function checkFindings(rows, lectures) {
   }
 
   const l05 = rows.filter((f) => f.rule === "L05 example-why-zh-under-40");
-  assert.equal(l05.length, 24, "L05 baseline count");
+  assert.equal(l05.length, 0, "L05 baseline count");
 
   const l07 = rows.filter((f) => f.rule === "L07 lecture-simplified-character");
-  assert.equal(l07.length, 1, "L07 baseline count");
-  assert.equal(l07[0].id, "polynomial-evaluation", "L07 skillId");
-  assert.equal(l07[0].field, "concept", "L07 field");
-  assert.equal(l07[0].evidence, "给", "L07 evidence");
+  assert.equal(l07.length, 0, "L07 baseline count");
 
-  assert.equal(rows.length, 143, "total findings");
+  assert.equal(rows.length, 118, "total findings");
 
   const byRule = {};
   for (const f of rows) byRule[f.rule] = (byRule[f.rule] || 0) + 1;

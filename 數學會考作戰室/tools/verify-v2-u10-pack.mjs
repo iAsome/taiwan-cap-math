@@ -9,6 +9,7 @@ import { countZh } from "./v2-quality.mjs";
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
 import { U10_CONTENT_BANNED as U10_BANNED } from "./u10-content-banned.mjs";
+import { U10_QA1_REQUIRED_LECTURES } from "./u10-qa1-lecture-manifest.mjs";
 const BAD_SYMBOL_RE = /<=|>=/;
 const IMAGE_RE = /<img\b|<svg\b|canvas/i;
 const FACTORING_Q_RE = /因式分解|分解為[^何]|將.+分解/;
@@ -148,12 +149,31 @@ function checkQuestions(questions) {
 
 function checkLectures(lectures) {
   assert.equal(lectures.length, 12);
+  const manifestSkills = Object.keys(U10_QA1_REQUIRED_LECTURES).sort();
+  const lectureSkills = [...new Set(lectures.map((l) => l.skillId))].sort();
+  assert.equal(manifestSkills.length, 12);
+  assert.equal(lectureSkills.length, 12);
+  assert.deepEqual(lectureSkills, manifestSkills.sort(), "lecture skillIds vs manifest");
+
+  const lectureBlob = JSON.stringify(lectures);
+  assert.ok(!lectureBlob.includes("给"), "lecture bank contains simplified 给");
+  assert.ok(lectureBlob.includes("給定數字"), "lecture bank missing 給定數字");
+
   for (const l of lectures) {
+    assert.ok(typeof l.title === "string" && l.title.length > 0, `${l.skillId} empty title`);
     assert.ok(countZh(l.concept) >= 80, l.skillId);
     assert.ok(l.stepGuide.length >= 5, l.skillId);
     assert.ok(l.examples.length >= 2, l.skillId);
     assert.ok(l.commonMistakes.length >= 4, l.skillId);
     assert.ok(!hasBanned(JSON.stringify(l)), l.skillId);
+    for (const ex of l.examples) {
+      assert.ok(countZh(ex.why || "") >= 40, `${l.skillId} example why`);
+    }
+    const patch = U10_QA1_REQUIRED_LECTURES[l.skillId];
+    assert.ok(patch, `manifest missing ${l.skillId}`);
+    for (const [key, val] of Object.entries(patch)) {
+      assert.equal(JSON.stringify(l[key]), JSON.stringify(val), `${l.skillId} manifest ${key}`);
+    }
   }
 }
 
