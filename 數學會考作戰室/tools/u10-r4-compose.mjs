@@ -200,11 +200,7 @@ function ensureLength(o, row, skillId) {
   const wrong = wrongs.map((w) => w.replace(/。$/, "")).join("；");
   let out = calc ? `${intro}，${calc}，得 ${ans}。` : `${intro}，得 ${ans}。`;
   if (wrong) out += `${wrong}。`;
-  const stem = row.text.replace(/[?？]/g, "");
-  if (countZh(out) < 45 && !out.includes("就「")) out = `就「${stem}」而言，${out}`;
-  if (countZh(out) < 45) out += "計算時每一項係數與正負號都要算清楚。";
-  if (countZh(out) < 45) out += "每一步乘法或合併都要寫清楚，避免算錯係數與符號。";
-  return out.endsWith("。") ? out : `${out}。`;
+    return out.endsWith("。") ? out : `${out}。`;
 }
 
 function buildExpl(skillId, row) {
@@ -267,7 +263,7 @@ function specificCm(note) {
 function finalizeCm(cm) {
   let o = (cm || "").trim();
   o = o.endsWith("。") ? o : `${o}。`;
-  const PAD = "，化簡時粗心漏項或算錯係數就容易選錯。";
+  const PAD = "，容易選錯。";
   while (countZh(o) < 12) o = `${o.replace(/。$/, "")}${PAD}`;
   return o;
 }
