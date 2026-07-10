@@ -81,6 +81,7 @@ function hasU09Banned(textOrArray) {
       if (part.includes(p)) return `SC:${p}`;
     }
     if (BAD_SYMBOL_RE.test(part)) return "<=/>=";
+    if (/錯選\d+與題幹/.test(part)) return "錯選N與題幹";
   }
   return null;
 }

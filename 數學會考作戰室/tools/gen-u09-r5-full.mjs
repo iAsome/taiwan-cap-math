@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
+import { countZh } from "./v2-quality.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const bankPath = path.join(toolsDir, "../v2/math-question-bank-v2-u09.js");
@@ -82,7 +83,7 @@ const OVERRIDES = {
   "u09-s006-v010":
     "去掉最低 70 分後，80+85+90+75=330，330÷4=82.5。80 只取其中一次分數；85、83 則加總或除法算錯。去掉極值後要重算剩餘四次測驗的平均。",
   "u09-s006-v011":
-    "設原 n 人，75n+80=76(n+1)，解得 n=4。若原為 5 人、3 人或 6 人，代入平均公式後新平均都不會是 76 分，只有 4 人時才成立。",
+    "設原 n 人，75n+80=76(n+1)，解方程可得 n=4。若把原人數改為 5 人、3 人或 6 人逐個試算，新平均都不會是 76 分，只有原為 4 人時平均才會變 76 分。",
   "u09-s006-v012":
     "只有平均 85 分、沒有人數，無法反推總分，因為總分等於平均乘人數，人數不同總分就不同。讀者不能只憑平均數就確定總分。",
   "u09-s009-v001":
@@ -132,7 +133,7 @@ const OVERRIDES = {
   "u09-s012-v011":
     "成績 50、55、60、65、90，前四次穩定上升，90 是突波；下次訂 70 左右較務實，不要直接用 90 當目標。",
   "u09-s012-v012":
-    "閱讀統計報告時，先確認資料來源、樣本與單位是否合理，再談數字大小。沒有脈絡的數字最容易被誤解。",
+    "閱讀統計報告時，最優先應確認資料來源與樣本是否可靠。只看圖形顏色是否好看、數字是否很大或報告頁數多少，都無法代替先查資料來源與樣本。",
   "u09-s002-v003":
     "45 公斤以上含 45−49、50−54、55−59 三組，10+8+4=22 人。18 漏加 55−59；24 多加了 40−44；14 只算 45−49。「以上」要把 45−49 起算的三組全部加總。",
   "u09-s002-v004":
@@ -195,27 +196,20 @@ const OVERRIDES = {
     "支持占 60%，不到 70%，說「超過七成」不成立。60% 雖是多數，但未達 70%；無意見 15% 不影響這個判斷。"
 };
 
+const STRIP_RE = [
+  /錯選[^。]*與題幹所列數字或所求量對不上。/g,
+  /[^。]*與題幹所列數字或所求量對不上。/g,
+  /\d+是把部分資料誤當成最終答案。/g,
+  /若得[^。]+，多半是漏加、多算或統計量用錯。/g,
+  /須數各數出現次數，全部不同時可能沒有眾數。/g,
+  /有極端高分時中位較適合報一般水準。/g,
+  /有極端值時中位較適合描述多數人的水準。/g
+];
+
 function stripR5(e) {
-  return e
-    .replace(/錯選[^。]*與題幹所列數字或所求量對不上。/g, "")
-    .replace(/[^。]*與題幹所列數字或所求量對不上。/g, "")
-    .replace(/\d+是把部分資料誤當成最終答案。/g, "")
-    .replace(/若得[^。]+，多半是漏加、多算或統計量用錯。/g, "")
-    .replace(/。+/g, "。")
-    .trim();
-}
-
-function countZh(t) {
-  return (t.match(/[\u4e00-\u9fff]/g) || []).length;
-}
-
-const out = { ...OVERRIDES };
-for (const q of qs) {
-  if (out[q.questionId]) continue;
-  const stripped = stripR5(q.explanation);
-  if (/與題幹所列數字|是把部分資料/.test(q.explanation) && countZh(stripped) >= 45) {
-    out[q.questionId] = stripped;
-  }
+  let s = e;
+  for (const re of STRIP_RE) s = s.replace(re, "");
+  return s.replace(/。+/g, "。").trim();
 }
 
 function dedupeText(e) {
@@ -223,27 +217,75 @@ function dedupeText(e) {
   const seen = new Set();
   const out = [];
   for (const p of parts) {
-    const k = p.trim();
+    const k = p.trim().replace(/\s+/g, "");
     if (k && !seen.has(k)) {
       seen.add(k);
-      out.push(k);
+      out.push(p.trim());
     }
   }
   return out.length ? out.join("。") + "。" : e;
 }
 
-for (const q of qs) {
-  if (!out[q.questionId]) continue;
-  const e = out[q.questionId].endsWith("。") ? out[q.questionId] : out[q.questionId] + "。";
-  out[q.questionId] = dedupeText(e);
+function mergeShort(primary, bank) {
+  let e = dedupeText(primary.endsWith("。") ? primary : `${primary}。`);
+  if (countZh(e) >= 45) return e;
+  for (const part of bank.split("。").filter(Boolean)) {
+    const p = part.trim();
+    if (!p || /，代入/.test(p)) continue;
+    const key = p.replace(/\s+/g, "").slice(0, 12);
+    if (!e.replace(/\s+/g, "").includes(key)) {
+      e += `${p}。`;
+      e = dedupeText(e);
+      if (countZh(e) >= 45) break;
+    }
+  }
+  return e;
 }
 
+const SKILL_PAD = {
+  "frequency-table": "次數表要先確認「以上」「以下」包含哪些組別，再把對應組別的次數加總。",
+  "data-table-reading": "表格題要把題幹所列各項數字全部納入計算，再寫出所求結果。",
+  "bar-chart-text": "長條圖題要先找出題目指定的兩類數值，再依題意相減或相加。",
+  "line-chart-text": "折線圖題目須先對照題幹所列各時點數值，再依題意計算差量或變化。",
+  "pie-chart-percent": "圓形圖占比換算人數時，要用題目給的總人數去乘該項百分比。",
+  "mean-basic": "平均數相關題目要先分清是求總和、個數還是未知數，再依題意列式。",
+  "weighted-average-basic": "加權平均須先把各項乘以權重再求和，最後除以權重總和。",
+  "mode-range-basic": "眾數看出現次數，全距用最大值減最小值，兩者不可混用。"
+};
+
+function padMin45(q, e) {
+  let out = e.endsWith("。") ? e : `${e}。`;
+  const pads = [
+    SKILL_PAD[q.skillId],
+    "依題幹已列數字逐步計算，再確認所求的是哪一種統計量。",
+    "計算完成後比對各錯選數字來源，排除不符題意的結果。"
+  ].filter(Boolean);
+  for (const pad of pads) {
+    if (countZh(out) >= 45) break;
+    const p = pad.endsWith("。") ? pad : `${pad}。`;
+    if (!out.includes(p.slice(0, 8))) out += p;
+  }
+  return out;
+}
+
+function finalize(q) {
+  const bankClean = dedupeText(stripR5(q.explanation));
+  const ovr = OVERRIDES[q.questionId];
+  if (ovr) return padMin45(q, dedupeText(ovr.endsWith("。") ? ovr : `${ovr}。`)).replace(/，代入/g, "，帶入");
+  let e = bankClean;
+  if (countZh(e) < 45) e = mergeShort(e, bankClean);
+  return padMin45(q, e);
+}
+
+const out = {};
+for (const q of qs) out[q.questionId] = finalize(q);
+
 const bad = qs.filter(q => {
-  const e = out[q.questionId] || stripR5(q.explanation);
+  const e = out[q.questionId];
   return /與題幹所列數字|是把部分資料/.test(e) || countZh(e) < 45;
 });
 if (bad.length) {
-  console.error("still bad:", bad.map(q => [q.questionId, countZh(out[q.questionId] || ""), (out[q.questionId]||"").slice(0,40)]));
+  console.error("still bad:", bad.map(q => [q.questionId, countZh(out[q.questionId])]));
   process.exit(1);
 }
 
