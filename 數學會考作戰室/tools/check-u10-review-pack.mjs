@@ -31,15 +31,15 @@ const ARTIFACTS = [
 ];
 
 const BASELINE_ARTIFACT_HASHES = {
-  "u10-review-dossier.jsonl": "00842a77fddac52b5d2e62c2dd4e33a81313cb51dfcf672eced5340428828dcc",
-  "u10-distractor-review.md": "a6a27faa2c0f7039946c8fbadcb6a7c8cac854049dc5a8b5b8e307395ce4b0b5",
+  "u10-review-dossier.jsonl": "6ef9fc14cf53c95ffaa05e4d540e79546a71b11f14f200e832ded24f12751c72",
+  "u10-distractor-review.md": "1b4972345e0ae2b6327fa27065ac73d8dd64a7eedb613880549e0cca2ba60268",
   "u10-qa-samples.md": "5f7b19320d199134e869af0a70f9cd5d15e2efb2cf9a1b6f8f40bf12885a78c3",
 };
 
 const BASELINE_RULE_COUNTS = {
   "L05 example-why-zh-under-40": 0,
   "L07 lecture-simplified-character": 0,
-  "Q06 normalized-text-structure-group-size-at-least-3": 12,
+  "Q06 normalized-text-structure-group-size-at-least-3": 0,
   "Q07 exact-step-shared-by-at-least-3-questionIds": 0,
   "Q08 suspicious-machine-residue": 0,
 };
