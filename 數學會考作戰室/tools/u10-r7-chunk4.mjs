@@ -1,0 +1,147 @@
+// U10-R7 chunk 4 — difference-of-squares-expand, formula-mixed-recognition, polynomial-literacy-context
+export const U10_R7_CHUNK = {
+  "difference-of-squares-expand#0": {
+    explanation: "左右括號一個加、一個減，底數都是 x 與 3，符合 (a+b)(a−b) 型，套用 a²−b²：先算 (x)²=x²，再算 3²=9，兩平方相減得 x²−9，中間 ±3x 會互相抵消。x²+9 是末項 9 前用了加號；x²−6x+9 則誤把式子當 (x−3)² 去展開，多算出 −6x 這一項。",
+    commonMistake: "平方差末項 9 前減號寫成加，或誤用 (x−3)² 完全平方式多算中間項。"
+  },
+  "difference-of-squares-expand#1": {
+    explanation: "看到底數相同、符號相反的配對，兩括號加減對稱、底數都是 2x 與 5，用 a²−b² 展開：第一項 (2x)²=4x²，第二項 5²=25，中間 ±10x 相消，整理 4x²−25。4x²+25 是 25 前加減弄反；4x²−20x+25 則按 (2x−5)² 算出 −20x；2x²−25 則 (2x)² 漏平方只寫 2x²。",
+    commonMistake: "末項 25 前面減號寫成加，或套用 (2x−5)² 多算 −20x 中間項。"
+  },
+  "difference-of-squares-expand#2": {
+    explanation: "括號內一正一負、底數都是 x 與 1，套用 (a+b)(a−b)=a²−b²：x² 減 1²，中間 ±x 抵消，得 x²−1。x²+1 把減 1² 寫成加；x²−2x+1 則當成 (x−1)² 去展開，多 −2x；x²+2x−1 則分配律展開時中間項符號弄錯。",
+    commonMistake: "1² 前面應是減號卻寫成加，或誤用 (x−1)² 完全平方式展開。"
+  },
+  "difference-of-squares-expand#3": {
+    explanation: "這題兩邊都是 3x 與 4 的加減配對，符合 (a+b)(a−b) 型，令 a=3x、b=4：先算 (3x)²=9x²，再算 4²=16，相減後 ±12x 相消，得 9x²−16。9x²+16 是 16 前符號反了；9x²−24x+16 則是 (3x−4)² 的展開；6x²−16 則 (3x)² 只乘 3 沒平方。展開時記得先判斷是不是平方差再下手。",
+    commonMistake: "16 前面用加號，或把平方差誤當 (3x−4)² 去展開多算中間項。"
+  },
+  "difference-of-squares-expand#4": {
+    explanation: "先用分配律分項展開 x(x−6)+6(x−6)=x²−6x+6x−36，正負 6x 相消；也可直接套 (a+b)(a−b)：x²−6²=x²−36。x²+36 是 36 前寫成加；x²−12x+36 則誤用 (x−6)² 多算 −12x；x²−6 則 6² 只算成 6 而漏平方。對照時可對照分配律與公式兩種寫法。",
+    commonMistake: "36 前加減符號寫錯，或誤當 (x−6)² 完全平方去算中間項。"
+  },
+  "difference-of-squares-expand#5": {
+    explanation: "這是 (a+b)(a−b) 型，a=5x，b=1：(5x)²=25x²，1²=1，相減得 25x²−1，±5x 全部抵消。25x²+1 是把減號寫成加號；25x²−10x+1 則誤當成 (5x−1)² 去展開；5x²−1 則 5x 只乘一次沒平方成 25x²。係數 5 要整個平方，不能只做一次乘法。",
+    commonMistake: "末項 1 的減號寫成加，或套用 (5x−1)² 多算 −10x 中間項。"
+  },
+  "difference-of-squares-expand#6": {
+    explanation: "左右括號一正一負、同名 9，套用 a²−b²：(x)²−9²=x²−81，±9x 兩項相加為 0。x²+81 把 81 前寫成加；x²−18x+81 則把式子當 (x−9)² 去算中間 −18x；x²−9 則 9² 只算成 9 而漏平方成 81。大數 81 來自 9 的平方，不是 9 本身。",
+    commonMistake: "9²=81 前面減號寫成加，或誤當 (x−9)² 展開多算中間項。"
+  },
+  "difference-of-squares-expand#7": {
+    explanation: "型式是底數 4x 與 3 一正一負的 (a+b)(a−b)，套用 a²−b²：(4x)²=16x²，3²=9，±12x 消去，得 16x²−9。16x²+9 是 9 前符號反了；16x²−24x+9 則按 (4x−3)² 展開；8x²−9 則 (4x)² 只算成 4×2=8 而漏平方。整項 (4x) 平方後係數會變成 16，不是 8。",
+    commonMistake: "(4x)² 漏平方只寫 8x²，或 9 前加減符號弄反。"
+  },
+  "difference-of-squares-expand#8": {
+    explanation: "先用分配律展開 x²−2x+2x−4，中間兩項相加為 0；也可直接套 (x)²−2²=x²−4。x²+4 把 4 前減號改成加；x²−4x+4 則按 (x−2)² 算出 −4x；x²−2 則 2² 只算成 2 而漏平方成 4。小數字 2 也要平方成 4，不能漏掉。",
+    commonMistake: "2²=4 前面應減卻變加，或誤用 (x−2)² 完全平方式展開。"
+  },
+  "difference-of-squares-expand#9": {
+    explanation: "底數 7x 與 2 一正一負，(7x+2)(7x−2) 屬 a²−b² 型：(7x)²=49x²，2²=4，±14x 相消，整理 49x²−4。49x²+4 末項加減反了；49x²−28x+4 則按 (7x−2)² 多算 −28x；7x²−4 則 7x 只乘一次沒有平方成 49x²。7x 整項平方後係數是 49 不是 7，7 也要整項平方成 49。",
+    commonMistake: "(7x)² 算成 7x² 而非 49x²，或末項 4 前減號寫成加。"
+  },
+  "difference-of-squares-expand#10": {
+    explanation: "配對是 x 與 8 一正一負，套 (a+b)(a−b)=a²−b²：x²−8²=x²−64，±8x 全部抵消。x²+64 是 64 前用了加；x²−16x+64 則誤當 (x−8)² 去展開；x²−8 則 8² 只算成 8 而漏平方成 64。8 的平方是 64，不是 8 本身，展開前先確認是不是平方差型。",
+    commonMistake: "8²=64 前面加減弄錯，或套用 (x−8)² 多算 −16x 中間項。"
+  },
+  "difference-of-squares-expand#11": {
+    explanation: "長方形面積=長×寬=(a+5)(a−5)，這是 (a+b)(a−b) 型：a²−5²=a²−25，±5a 互相抵消。a²+25 把減 25 寫成加；a²−10a+25 則誤當 (a−5)² 去展開；a²−5 則 5² 只算成 5 而漏平方。從長寬列式後，±5a 兩項會完全抵消。",
+    commonMistake: "從長寬列出式子後，25 前減號寫成加，或誤用 (a−5)² 展開。"
+  },
+  "formula-mixed-recognition#0": {
+    explanation: "括號內是相加，屬 (a+b)² 型，套用 x²+2ab+b²：x²+2·x·3+3²=x²+6x+9。x²−6x+9 則中間項用了減，把 2ab 算成 −6x；x²−9 是把整式誤當 (x+3)(x−3) 平方差，漏了 6x；x²+9 則 2ab 整項漏算。加號平方一定要算出 2ab 這個中間項。",
+    commonMistake: "加號平方卻把 2·x·3=6x 算成 −6x，或誤套 a²−b² 漏中間項。"
+  },
+  "formula-mixed-recognition#1": {
+    explanation: "減號在括號內，屬 (a−b)² 型，用 a²−2ab+b² 展開：x²−2·x·4+16=x²−8x+16。x²+8x+16 是中間 −8x 寫成 +8x；x²−16 則只算 x²−4² 漏了 2ab；x²+16 則中間 2ab 整項漏掉。減號平方的中間項係數要帶負號，減 4 的中間項固定是 −8x。",
+    commonMistake: "減號平方時 2·x·4=8x 的負號漏掉，變成 +8x 這一項。"
+  },
+  "formula-mixed-recognition#2": {
+    explanation: "一括號加、一括號減，且兩邊都是 x 與 5，符合 a²−b²：x²−5²=x²−25，±5x 相消。x²+10x+25 是把兩式相加當 (x+5)²；x²−10x+25 則誤當 (x−5)² 去展開；x²+25 則 25 前減號寫成加。兩括號異號時中間 x 項不會留下來。",
+    commonMistake: "異號配對卻用 (x±5)² 展開，多算出 ±10x 這一項。"
+  },
+  "formula-mixed-recognition#3": {
+    explanation: "括號內是相加，屬 (a+b)² 型，a=2x，b=1：(2x)²=4x²，2·2x·1=4x，1²=1，合併 4x²+4x+1。4x²−4x+1 是中間 4x 符號反了；4x²+1 則 2ab 整項漏算；4x²−1 則把式子誤當 (2x+1)(2x−1) 平方差。2x 整項平方後首項係數是 4 不是 2，首項 4x² 與中間 4x 都要寫出。",
+    commonMistake: "2·(2x)·1=4x 漏算或符號寫錯，只剩 4x²+1 或 4x²−4x+1。展開後要對照中間項係數正負。"
+  },
+  "formula-mixed-recognition#4": {
+    explanation: "括號內是相減，屬 (a−b)² 型：a=3x，b=2，(3x)²=9x²，−2·3x·2=−12x，2²=4，整理 9x²−12x+4。9x²+12x+4 是中間 −12x 變 +12x；9x²−4 則漏算 2ab 只留首尾；9x²+4 則中間 2ab 整項漏掉。3x 平方得 9x²，中間 −12x 不能漏，3x 平方得 9x²，中間 −12x 不能漏掉。",
+    commonMistake: "減號平方時中間 −12x 寫成 +12x，或 2ab 整項漏算。"
+  },
+  "formula-mixed-recognition#5": {
+    explanation: "兩括號 x 同底、7 異號，屬 a²−b² 型，用 x²−7²=x²−49，±7x 相消。x²+14x+49 是按 (x+7)² 算出 +14x；x²−14x+49 則按 (x−7)² 算出 −14x；x²+49 則 49 前減號寫成了加。7 的平方是 49，前面要寫減號，±7x 兩項相加後會完全抵消。",
+    commonMistake: "配對異號卻展開成 (x±7)²，多 +14x 或 −14x 這一項。"
+  },
+  "formula-mixed-recognition#6": {
+    explanation: "括號內是相加，加號平方 (a+b)²，a=4x，b=3：(4x)²=16x²，2·4x·3=24x，3²=9，得 16x²+24x+9。16x²−9 是把整式當 (4x+3)(4x−3) 平方差；16x²−24x+9 則中間項符號反了；16x²+9 則 2ab 漏算。4x 平方得 16x²，2·4x·3 得 24x，加號平方一定要算出 24x 這一項。",
+    commonMistake: "加號平方卻把 2·4x·3=24x 寫成 −24x，或誤套 a²−b²。加號平方與平方差不要混用。"
+  },
+  "formula-mixed-recognition#7": {
+    explanation: "5x 同底、1 一正一負，屬 a²−b² 型，套 (5x)²−1²=25x²−1，±5x 相消。25x²−10x+1 是按 (5x−1)² 算；25x²+10x+1 則按 (5x+1)² 算；25x²+1 則 1² 前用了加。兩括號只是順序對調，結果不變，中間 x 項會抵消，首項係數是 25。",
+    commonMistake: "異號配對誤當 (5x±1)² 展開，多出 ±10x 這項。"
+  },
+  "formula-mixed-recognition#8": {
+    explanation: "括號內是相減，屬 (a−b)² 型，b=1：x²−2·x·1+1²=x²−2x+1。x²+2x+1 是中間 −2x 寫成 +2x；x²−1 則只算 x²−1² 漏了中間 2ab；x²+1 則 2ab 整項漏掉，只剩首尾。減 1 的平方中間項一定是 −2x，減 1 的平方中間固定是 −2x。",
+    commonMistake: "減 1 的平方時，中間 −2x 寫成 +2x，或 2ab 漏算。"
+  },
+  "formula-mixed-recognition#9": {
+    explanation: "2x 與 3 異號配對，屬 a²−b² 型，用 (2x)²−3²=4x²−9，±6x 全部抵消。4x²+12x+9 是按 (2x+3)² 展開；4x²−12x+9 則按 (2x−3)² 展開；4x²+9 則末項 9 前減號變加。2x 平方得 4x²，3 平方得 9，2x 與 3 異號配對時中間 x 項不會留下。",
+    commonMistake: "平方差型卻按 (2x±3)² 展開，多 ±12x 這一項。"
+  },
+  "formula-mixed-recognition#10": {
+    explanation: "括號內是相加，加號在括號內，(a+b)²：x²+2·x·2+2²=x²+4x+4。x²−4 是把 (x+2)(x−2) 平方差弄混；x²−4x+4 則中間 4x 寫成 −4x；x²+4 則 2ab 整項漏算。加 2 的平方中間項是 +4x 不是減，加 2 的平方中間項一定是 +4x。",
+    commonMistake: "加號平方時 2·x·2=4x 漏算，或中間項符號寫反。"
+  },
+  "formula-mixed-recognition#11": {
+    explanation: "長方形面積=長×寬=(2a+1)(2a−1)，屬 a²−b²：(2a)²−1²=4a²−1，±2a 相消。4a²+4a+1 是把兩式當 (2a+1)²；4a²−4a+1 則當 (2a−1)²；4a²+1 則 1 前減號寫成加。長寬一正一負時可直接用平方差，2a 平方得 4a²，末項 1 前面要寫減號。",
+    commonMistake: "長寬異號卻展開成 (2a±1)²，多 ±4a 或弄錯末項符號。"
+  },
+  "polynomial-literacy-context#0": {
+    explanation: "矩形土地面積=長×寬=(x+4)(x+2)，分配律展開 x²+2x+4x+8，x 項 2x+4x 合併得 6x，整理 x²+6x+8。x²+8x+6 是 x 項合併錯、常數也弄反；2x²+6x+8 則 x² 只應一個卻多留係數 2；x²+6x+6 則常數 8 漏算。展開後記得把同類 x 項合併再寫答案。",
+    commonMistake: "展開後 x 項 2x+4x 合併成 8x 而非 6x，或常數 8 弄錯。"
+  },
+  "polynomial-literacy-context#1": {
+    explanation: "正方形面積=邊長²=(a+3)²，括號內相加，套用 (a+b)²：a²+2·a·3+9=a²+6a+9。a²+3a+9 只算一次 2ab 的一半；a²+9 則中間 6a 整項漏掉；a²+6a+6 則 3² 只算成 6 而漏平方成 9。正方形面積用邊長平方，不是邊長相加。",
+    commonMistake: "2·a·3=6a 只算成 3a，或中間項整段漏算只剩 a²+9。"
+  },
+  "polynomial-literacy-context#2": {
+    explanation: "長方形玻璃面積=(2y−1)(2y+1)，一正一負配對，套 (2y)²−1²=4y²−1，±2y 相消。4y²+4y−1 是把兩括號分項相加展開；4y²−4y−1 則符號弄錯；4y²+1 則 1 前減號寫成加。玻璃長寬異號，套用平方差最簡潔。",
+    commonMistake: "長寬異號配對卻分項相加，多算出 ±4y 這類中間項。"
+  },
+  "polynomial-literacy-context#3": {
+    explanation: "正方形菜園面積=(m−5)²，括號內相減，(a−b)² 型：m²−2·m·5+25=m²−10m+25。m²−5m+25 把 2ab 只算一半得 −5m；m²−25 則漏算中間 −10m 整項；m²+10m+25 則中間項符號全反。邊長減 5 時中間項係數是 −10m，菜園邊長減 5 時中間項係數是 −10m。",
+    commonMistake: "2·m·5=10m 只算成 5m，中間項係數少一半。減號平方中間項係數要算兩倍。"
+  },
+  "polynomial-literacy-context#4": {
+    explanation: "木板面積=(3x+2)(3x−2)，長寬一正一負，a²−b²：(3x)²−2²=9x²−4，±6x 抵消。9x²+12x−4 是分項相乘多算 x 項；9x²−12x+4 則誤當 (3x−2)²；9x²+4 則 4 前減號弄反。木板長寬配對後 ±6x 會互相抵消，木板長寬一正一負可直接用平方差。",
+    commonMistake: "平方差型卻分項相乘或誤用 (3x−2)²，多 ±12x 這類項。"
+  },
+  "polynomial-literacy-context#5": {
+    explanation: "矩形草坪面積=(n+6)(n−1)，長寬不同號，展開 n²−n+6n−6，合併 n 項 −n+6n=5n，得 n²+5n−6。n²+7n−6 是把 −n+6n 算成 +7n；n²−5n−6 則 6n 符號弄錯；n²+5n+6 則常數 −6 寫成 +6。長加寬不同號，要分項展開再合併。",
+    commonMistake: "展開後 n 項 −n 與 6n 合併錯，算成 7n 或 −5n。正負常數項也要一併檢查。"
+  },
+  "polynomial-literacy-context#6": {
+    explanation: "正方形磁磚面積=(t+8)²，邊長含加號，(a+b)²：t²+2·t·8+8²=t²+16t+64。t²+8t+64 把 2·t·8 只算成 8t；t²+64 則 16t 整項漏掉；t²+16t+16 則 8² 只算成 16 而漏平方成 64。邊長加 8 時 2·t·8 一定要算成 16t，磁磚邊長加 8 時中間項是 +16t。",
+    commonMistake: "2·t·8=16t 只算一次 8t，中間項係數少一半。"
+  },
+  "polynomial-literacy-context#7": {
+    explanation: "長方形桌布面積=(4a+1)(4a−1)，長寬一正一負，套 (4a)²−1²=16a²−1，±4a 相消。16a²+8a−1 是分項展開多算 a 項；16a²−8a−1 則符號弄錯；16a²+1 則 1 前減號寫成加。桌布長寬異號，平方差比分項乘快。",
+    commonMistake: "長寬異號卻分項相乘，多出 ±8a 這類中間項。"
+  },
+  "polynomial-literacy-context#8": {
+    explanation: "矩形花圃面積=(p−3)(p−2)，兩邊都是減號，分配律 p²−2p−3p+6，p 項 −2p−3p=−5p，整理 p²−5p+6。p²−p−6 是 −2p−3p 只算成 −p；p²+5p+6 則 p 項符號全反；p²−6 則常數 6 漏算。兩邊都減時展開會出現兩個負的 p 項。",
+    commonMistake: "兩個 p 項 −2p 與 −3p 合併錯，少減一次 3 得 −p。"
+  },
+  "polynomial-literacy-context#9": {
+    explanation: "正方形告示牌面積=(5w−3)²，邊長含減號，(a−b)²：(5w)²−2·5w·3+9=25w²−30w+9。25w²−15w+9 把 2·5w·3=30w 只算成 15w；25w²−9 則漏算中間 −30w；25w²+30w+9 則中間項符號全反。5w 整項平方得 25w²，再算 2ab，告示牌邊長減 3 時中間項是 −30w。",
+    commonMistake: "2·5w·3=30w 只算一半得 −15w，或中間 −30w 整項漏掉。"
+  },
+  "polynomial-literacy-context#10": {
+    explanation: "矩形地毯面積=(2b+5)(2b−5)，長寬一正一負，a²−b²：(2b)²−5²=4b²−25，±10b 抵消。4b²+20b−25 是按 (2b+5)² 多算 +20b；4b²−20b−25 則符號弄錯；4b²+25 則 25 前減號寫成加。地毯長寬 ±5 配對，±10b 會抵消，地毯長寬 ±5 配對後 ±10b 會抵消。",
+    commonMistake: "平方差型誤展開成 (2b+5)²，多 +20b 這項。長寬異號時不要套用完全平方。"
+  },
+  "polynomial-literacy-context#11": {
+    explanation: "矩形水池面積=長×寬=(x+1)(x+9)，展開 x²+9x+x+9，x 項合併得 10x，所以是 x²+10x+9。x²+8x+9 是 x 項 9x+x 算成 8x；x²+9x+9 則漏加第二個 x；x²+10x+1 則常數 9 漏算。水池長寬都是加號，分項展開再合併 x 項。",
+    commonMistake: "展開後 9x+x 合併成 8x，或漏加其中一個 x 項。"
+  }
+};
