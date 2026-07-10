@@ -11,6 +11,7 @@ const v2 = path.join(root, "v2");
 import { U10_CONTENT_BANNED as U10_BANNED } from "./u10-content-banned.mjs";
 import { U10_QA1_REQUIRED_LECTURES } from "./u10-qa1-lecture-manifest.mjs";
 import { U10_QA2A_REQUIRED_QUESTIONS } from "./u10-qa2a-question-manifest.mjs";
+import { U10_QA2B_REQUIRED_QUESTIONS } from "./u10-qa2b-question-manifest.mjs";
 const BAD_SYMBOL_RE = /<=|>=/;
 const IMAGE_RE = /<img\b|<svg\b|canvas/i;
 const FACTORING_Q_RE = /因式分解|分解為[^何]|將.+分解/;
@@ -166,6 +167,24 @@ function checkQa2aQuestions(questions) {
   }
 }
 
+function checkQa2bQuestions(questions) {
+  const manifestIds = Object.keys(U10_QA2B_REQUIRED_QUESTIONS).sort();
+  assert.equal(manifestIds.length, 9, "QA2B manifest count");
+  const bankIds = questions.map((q) => q.questionId);
+  for (const id of manifestIds) {
+    assert.equal(bankIds.filter((x) => x === id).length, 1, `${id} exactly once`);
+  }
+  for (const q of questions) {
+    const patch = U10_QA2B_REQUIRED_QUESTIONS[q.questionId];
+    if (!patch) continue;
+    for (const [key, val] of Object.entries(patch)) {
+      assert.equal(JSON.stringify(q[key]), JSON.stringify(val), `${q.questionId} manifest ${key}`);
+      const blob = typeof val === "string" ? val : JSON.stringify(val);
+      assert.ok(!hasBanned(blob), `${q.questionId}.${key} banned: ${hasBanned(blob)}`);
+    }
+  }
+}
+
 function checkLectures(lectures) {
   assert.equal(lectures.length, 12);
   const manifestSkills = Object.keys(U10_QA1_REQUIRED_LECTURES).sort();
@@ -199,6 +218,7 @@ function checkLectures(lectures) {
 const { questions, lectures } = loadU10();
 checkQuestions(questions);
 checkQa2aQuestions(questions);
+checkQa2bQuestions(questions);
 checkLectures(lectures);
 checkSyllabusMapping(questions);
 console.log("verify-v2-u10-pack: OK — 144 questions, 12 lectures, all checks passed");
