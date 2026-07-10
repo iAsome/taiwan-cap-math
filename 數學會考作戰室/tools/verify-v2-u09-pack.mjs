@@ -72,8 +72,46 @@ const U09_EXTRA_BANNED = [
   "已把題目指定的各組次數全部加總",
   "與本題列式結果不符"
 ];
-const U09_SC_BANNED = ["全体", "谨慎", "夸大"];
+const U09_SC_BANNED = [
+  "中间", "里面", "总体", "数据", "统计", "图表", "比较", "范围",
+  "错误", "认为", "显示", "应当", "进行", "选择", "问题", "结果",
+  "简单", "复杂", "个数", "数值", "全体", "谨慎", "夸大"
+];
 const BAD_SYMBOL_RE = /<=|>=/;
+
+function splitExplanationSentences(text) {
+  return text.split(/[。！？；]/).map(s => s.trim().replace(/[\u0020\u3000]+/g, "")).filter(Boolean);
+}
+
+function explanationExactDuplicate(explanation) {
+  const seen = new Set();
+  for (const s of splitExplanationSentences(explanation)) {
+    if (seen.has(s)) return s;
+    seen.add(s);
+  }
+  return null;
+}
+
+function normalizeNearDup(s) {
+  return s.replace(/[\d+\-−×÷=().,，、%元分人cmg\s]/gi, "");
+}
+
+function explanationNearDuplicate(explanation) {
+  const sents = splitExplanationSentences(explanation).filter(s => countZh(s) > 10);
+  for (let i = 0; i < sents.length; i++) {
+    for (let j = i + 1; j < sents.length; j++) {
+      const a = normalizeNearDup(sents[i]);
+      const b = normalizeNearDup(sents[j]);
+      if (!a || !b) continue;
+      const shorter = a.length <= b.length ? a : b;
+      const longer = a.length <= b.length ? b : a;
+      if (longer.includes(shorter) && shorter.length / longer.length >= 0.8) {
+        return { a: sents[i], b: sents[j] };
+      }
+    }
+  }
+  return null;
+}
 
 function loadJs(varName, filename) {
   const code = fs.readFileSync(path.join(v2Dir, filename), "utf8");
@@ -130,6 +168,10 @@ function validateQuestion(q) {
   assert.ok(!embed, `${q.questionId} steps embed text: ${embed}`);
   const over = explanationOverRepeatsText(q.explanation, q.text);
   assert.ok(!over, `${q.questionId} explanation repeats text: ${over}`);
+  const exactDup = explanationExactDuplicate(q.explanation);
+  assert.ok(!exactDup, `${q.questionId} explanation exact duplicate sentence: ${exactDup}`);
+  const nearDup = explanationNearDuplicate(q.explanation);
+  if (nearDup) assert.fail(`${q.questionId} explanation near duplicate: ${nearDup.a} / ${nearDup.b}`);
   const cq = conceptQuality(q.concept, q.explanation);
   assert.ok(!cq, `${q.questionId} concept: ${cq}`);
   const eq = explanationQuality(q.explanation, q.concept);
@@ -214,6 +256,22 @@ for (const l of lectures) {
   const bankExpl = bankExplBySkill.get(l.skillId) || new Set();
   validateLecture(l, bankExpl);
 }
+
+const v005 = questions.find(q => q.questionId === "u09-s002-v005");
+assert.ok(v005, "u09-s002-v005 missing");
+assert.ok(v005.text.includes("未滿70分"), "u09-s002-v005 text must contain 未滿70分");
+assert.ok(!v005.text.includes("70分以下"), "u09-s002-v005 text must not contain 70分以下");
+assert.equal(v005.answerIndex, 0, "u09-s002-v005 answerIndex");
+assert.equal(v005.choices[0], "7", "u09-s002-v005 choice");
+
+const v009 = questions.find(q => q.questionId === "u09-s002-v009");
+assert.ok(v009, "u09-s002-v009 missing");
+assert.ok(v009.text.includes("99元以下"), "u09-s002-v009 text must contain 99元以下");
+assert.ok(v009.text.includes("100−199元"), "u09-s002-v009 text must contain 100−199元");
+assert.ok(v009.text.includes("未滿200元"), "u09-s002-v009 text must contain 未滿200元");
+assert.ok(!v009.text.includes("200元以下"), "u09-s002-v009 text must not contain 200元以下");
+assert.equal(v009.answerIndex, 0, "u09-s002-v009 answerIndex");
+assert.equal(v009.choices[0], "23", "u09-s002-v009 choice");
 
 const v010 = questions.find(q => q.questionId === "u09-s010-v010");
 assert.ok(v010, "u09-s010-v010 missing");
