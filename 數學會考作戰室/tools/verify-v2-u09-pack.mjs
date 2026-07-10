@@ -416,6 +416,124 @@ const QA5B2A_REQUIRED_RECORDS = {
   }
 };
 
+const QA5B2B_REQUIRED_RECORDS = {
+  "u09-s010-v012": {
+    text:
+      "若把兩班視為同類學生的抽樣資料，A班20人、B班5人，兩班平均都是80。哪一班的樣本平均通常較穩定？",
+    explanation:
+      "在抽樣條件相近時，資料筆數越多，平均值通常越不容易被單一極端值大幅改變。A班有20人、B班只有5人，因此前者的估計較穩；這不表示A班每位學生都更接近80分。",
+    steps: [
+      "確認比較的是樣本平均的穩定程度。",
+      "A班20人，B班5人。",
+      "抽樣條件相近時，樣本較大的A班通常較穩定。"
+    ],
+    commonMistake:
+      "把樣本平均較穩定誤解成每位學生都接近平均"
+  },
+
+  "u09-s011-v007": {
+    text:
+      "某長條圖顯示甲、乙數值分別為20與18，但甲柱寬度畫成乙柱的3倍。主要會造成哪種誤導？",
+    choices: [
+      "改變甲的實際數值",
+      "使兩項總和超過100%",
+      "讓甲看起來遠高於乙",
+      "使平均數自動增加"
+    ],
+    explanation:
+      "甲的數值20只比乙的18多2，但把甲柱畫得寬3倍，會放大甲柱的視覺面積，使差距看起來遠大於實際的2。柱寬不會改變原始數值、總和或平均，問題在圖形比例與資料不一致。",
+    steps: [
+      "先比較實際數值20與18。",
+      "再檢查兩柱寬度是否一致。",
+      "甲柱過寬會誇大兩者的視覺差距。"
+    ],
+    commonMistake:
+      "只看長條面積大小而沒有對照實際數值"
+  },
+
+  "u09-s012-v003": {
+    text:
+      "新聞寫「某區案件數上升50%」，但去年2件、今年3件。讀者應如何解讀？",
+    choices: [
+      "案件數已大幅惡化",
+      "只要百分比正確就可信",
+      "基數小，應同時看增加1件",
+      "應改用眾數判斷"
+    ],
+    explanation:
+      "案件數由2件增加到3件，增加1件；增加率為(3−2)÷2×100%=50%。50%的數值沒有算錯，但基數只有2件，容易造成變化很大的印象，解讀時必須同時說明實際只增加1件。",
+    steps: [
+      "先算絕對增加量為1件。",
+      "再算增加率為50%。",
+      "基數很小時要同時呈現件數與百分比。"
+    ],
+    commonMistake:
+      "只看到50%的比例就忽略實際只增加1件"
+  },
+
+  "u09-s012-v005": {
+    text:
+      "兩商店平均評價都是4.5星，A有200則評論、B有10則。若其他條件相近，哪一店的平均評價通常較穩定？",
+    explanation:
+      "在評論來源與抽樣方式相近的前提下，A店有200則評論，B店只有10則；資料較多時，平均星等通常較不容易被少數極端評價大幅改變，所以A店的平均較穩定。但評論數多不代表店家品質一定較好。",
+    steps: [
+      "確認兩店平均同為4.5星。",
+      "比較評論數200則與10則。",
+      "其他條件相近時，A店平均通常較穩定。"
+    ],
+    commonMistake:
+      "把評論數較多直接推論成店家品質一定較好"
+  },
+
+  "u09-s012-v008": {
+    text:
+      "A校平均由30分升到45分，B校由80分升到90分。只比較進步率時，哪個敘述最合理？",
+    choices: [
+      "A校教學一定較好",
+      "B校教學一定較好",
+      "兩校進步率完全相同",
+      "A校進步率較高，但不能單憑比例判定教學成效"
+    ],
+    explanation:
+      "A校增加15分，進步率為15÷30×100%=50%；B校增加10分，進步率為10÷80×100%=12.5%。A校的比例較高，但兩校起點、試題難度與評分條件可能不同，不能只靠進步率斷定哪校教學成效一定較好。",
+    steps: [
+      "A校進步率為50%。",
+      "B校進步率為12.5%。",
+      "比例可比較，但教學成效還需考慮其他條件。"
+    ],
+    commonMistake:
+      "看到進步率較高就斷定教學成效一定較好"
+  },
+
+  "u09-s012-v010": {
+    text:
+      "問卷只提供「同意」與「非常同意」兩種回答，結果90%選擇同意類。主要問題是什麼？",
+    choices: [
+      "平均數算錯",
+      "回答設計有誘導",
+      "中位數使用錯誤",
+      "全距資料不足"
+    ],
+    explanation:
+      "可選回答只有「同意」與「非常同意」，受訪者無法表達反對或中立，問卷設計會把回答推向同意方向。因此90%只能反映受限制的作答方式，不能當成完整的意見分布。",
+    steps: [
+      "檢查問卷提供哪些回答。",
+      "發現沒有反對或中立回答。",
+      "判斷回答設計具有誘導性。"
+    ],
+    commonMistake:
+      "只看90%的比例而忽略可選回答是否完整"
+  },
+
+  "u09-s012-v012": {
+    steps: [
+      "確認資料來源與發布者。",
+      "檢查樣本數與抽樣方式。",
+      "再判斷圖表呈現與結論是否合理。"
+    ]
+  }
+};
+
 // V2 Content Quality Gate v1.2 uses a uniform 30-Chinese-character floor.
 // Quality is enforced by derivation, concrete distractor analysis and human review,
 // not by question-specific length exceptions.
@@ -608,6 +726,19 @@ for (const [id, fields] of Object.entries(QA5B2A_REQUIRED_RECORDS)) {
       assert.deepEqual([...q[field]], [...value], `${id} QA5B2A ${field} mismatch`);
     } else {
       assert.equal(q[field], value, `${id} QA5B2A ${field} mismatch`);
+    }
+  }
+}
+
+assert.equal(Object.keys(QA5B2B_REQUIRED_RECORDS).length, 7, "QA5B2B map must have 7 entries");
+for (const [id, fields] of Object.entries(QA5B2B_REQUIRED_RECORDS)) {
+  const q = questions.find(x => x.questionId === id);
+  assert.ok(q, `${id} missing`);
+  for (const [field, value] of Object.entries(fields)) {
+    if (Array.isArray(value)) {
+      assert.deepEqual([...q[field]], [...value], `${id} QA5B2B ${field} mismatch`);
+    } else {
+      assert.equal(q[field], value, `${id} QA5B2B ${field} mismatch`);
     }
   }
 }
