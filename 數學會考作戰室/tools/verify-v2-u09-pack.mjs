@@ -223,6 +223,64 @@ const QA5A_REQUIRED_EXPLANATIONS = {
     "設原有n人，75n+80=76(n+1)，解得n=4。檢查其餘人數：原5人時新平均455÷6約75.83；原3人時305÷4=76.25；原6人時530÷7約75.71，只有原4人時380÷5=76。"
 };
 
+const QA5B1_REQUIRED_RECORDS = {
+  "u09-s007-v001": {
+    explanation:
+      "五個數12、15、18、20、25已由小到大排列，共5筆資料，正中央第3個是18，所以中位數為18。15與20位在中央兩側；17既不是中央值，五數平均也同樣是18。"
+  },
+  "u09-s007-v007": {
+    explanation:
+      "原四個數15、25、35、45的中位數是(25+35)÷2=30。加入50後排成15、25、35、45、50，正中央第3個是35。30是加入前的中位數；40與32.5都不是新資料的中位數。"
+  },
+  "u09-s008-v002": {
+    explanation:
+      "五次分數中最大值是30、最小值是10，全距為30−10=20。15是用30減15，誤把第二小的15當成最小值；10是只算20−10；25不是30與10的差。"
+  },
+  "u09-s008-v004": {
+    explanation:
+      "這組分數中最大值是22、最小值是9，全距為22−9=13。10是用22減12；7是用22減15，兩者都沒有使用最小值9；15不是22與9的差。"
+  },
+  "u09-s008-v006": {
+    explanation:
+      "資料中最大值是120、最小值是100，全距為120−100=20。15是只算115−100；10是只算110−100，兩者都沒有使用最大值120；25不是120與100的差。"
+  },
+  "u09-s008-v007": {
+    explanation:
+      "資料中7出現3次，3、5、9各只出現1次，因此出現次數最多的是7，眾數為7。3、5與9的出現次數都少於7，不能作為這組資料的眾數。"
+  },
+  "u09-s008-v008": {
+    explanation:
+      "資料中最大值是61、最小值是38，全距為61−38=23。17是用55減38，誤把55當成最大值；20與15都不是61減38的結果。"
+  },
+  "u09-s008-v009": {
+    text: "五個數1、2、3、4、5各出現一次。眾數是多少？",
+    explanation:
+      "資料中的1、2、3、4、5各出現1次，沒有任何一個數的出現次數高於其他數，所以沒有眾數。3是中位數；1與5分別是最小值與最大值，都不是眾數。"
+  },
+  "u09-s008-v010": {
+    text: "等差數列20、25、30、35、40。全距是多少？",
+    explanation:
+      "資料中最大值是40、最小值是20，全距為40−20=20。10是只算30−20；5是只算25−20，兩者都只比較部分資料；0表示沒有差距，與最大值40和最小值20不符。",
+    commonMistake: "把公差或部分兩數的差誤當成整組資料的全距"
+  },
+  "u09-s008-v011": {
+    explanation:
+      "鞋號資料中37出現3次最多，所以眾數是37；最大值39、最小值36，全距為39−36=3。「36；3」把最小值36誤當眾數；「37；4」把全距算錯；「38；3」把只出現1次的38誤當眾數。"
+  },
+  "u09-s009-v004": {
+    explanation:
+      "三項加權分數為80×30%+90×50%+70×20%=24+45+14=83分。84、85與82都不是24、45、14的正確總和；總評必須先將每項分數乘占比，再把三項結果相加。"
+  },
+  "u09-s009-v007": {
+    explanation:
+      "三種肥料總價為2×10+3×8+1×12=56元，共有2+3+1=6包，所以平均每包56÷6約為9.33元。10只是甲肥料的單價；9與8.67都不是56除以6的結果。"
+  },
+  "u09-s009-v009": {
+    explanation:
+      "三項加權後分數為85×20%+90×50%+80×30%=17+45+24=86分。85是平時成績本身，不是加權後的總成績；87與84都不是17、45、24的正確總和。"
+  }
+};
+
 // V2 Content Quality Gate v1.2 uses a uniform 30-Chinese-character floor.
 // Quality is enforced by derivation, concrete distractor analysis and human review,
 // not by question-specific length exceptions.
@@ -395,6 +453,15 @@ for (const [id, expl] of Object.entries(QA5A_REQUIRED_EXPLANATIONS)) {
   const q = questions.find(x => x.questionId === id);
   assert.ok(q, `${id} missing`);
   assert.equal(q.explanation, expl, `${id} QA5A explanation mismatch`);
+}
+
+assert.equal(Object.keys(QA5B1_REQUIRED_RECORDS).length, 13, "QA5B1 map must have 13 entries");
+for (const [id, fields] of Object.entries(QA5B1_REQUIRED_RECORDS)) {
+  const q = questions.find(x => x.questionId === id);
+  assert.ok(q, `${id} missing`);
+  for (const [field, value] of Object.entries(fields)) {
+    assert.equal(q[field], value, `${id} QA5B1 ${field} mismatch`);
+  }
 }
 
 const v001 = questions.find(q => q.questionId === "u09-s003-v001");
