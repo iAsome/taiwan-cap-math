@@ -1,0 +1,52 @@
+name: U09 Release Gate
+
+on:
+  push:
+    branches:
+      - math-v2/u09-statistics-charts
+    paths:
+      - ".github/workflows/u09-release-gate.yml"
+      - "數學會考作戰室/**"
+  pull_request:
+    paths:
+      - ".github/workflows/u09-release-gate.yml"
+      - "數學會考作戰室/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: u09-release-gate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  u09-release-gate:
+    name: U09 release gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Run U09 release gate
+        working-directory: 數學會考作戰室
+        run: node tools/run-u09-release-gate.mjs
+
+      - name: Require clean checkout after gate
+        shell: bash
+        run: |
+          STATUS="$(git status --porcelain=v1 --untracked-files=all)"
+          if [ -n "$STATUS" ]; then
+            printf '%s\n' "$STATUS"
+            echo "Release gate left repository changes."
+            exit 1
+          fi
