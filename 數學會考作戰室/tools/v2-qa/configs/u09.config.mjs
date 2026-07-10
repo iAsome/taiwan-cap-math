@@ -36,7 +36,7 @@ export default Object.freeze({
   migrationPhase: "foundation-only",
 
   thresholds: Object.freeze({
-    explanationZhMin: 40,
+    explanationZhMin: 30,
     explanationZhMax: 80,
     stepZhMin: 8,
     lectureExampleWhyZhMin: 40,

@@ -45,7 +45,30 @@ export const LECTURE_FIELD_ALLOWLIST = Object.freeze([
 ]);
 
 export function isPlainObject(value) {
-  return value !== null && typeof value === "object" && !Array.isArray(value);
+  if (value === null || typeof value !== "object" || Array.isArray(value)) {
+    return false;
+  }
+  const proto = Object.getPrototypeOf(value);
+  return proto === Object.prototype || proto === null;
+}
+
+function assertUniqueFieldNames(fields, label) {
+  const seen = new Set();
+  for (const field of fields) {
+    assert.equal(typeof field, "string", `${label}: field names must be strings`);
+    assert.ok(!seen.has(field), `${label}: duplicate field name ${field}`);
+    seen.add(field);
+  }
+}
+
+function validateFieldNameList(fields, entity, label) {
+  assertUniqueFieldNames(fields, label);
+  const allowlist = entity === "question" ? QUESTION_FIELD_ALLOWLIST : LECTURE_FIELD_ALLOWLIST;
+  const idField = entity === "question" ? "questionId" : "skillId";
+  for (const field of fields) {
+    assert.notEqual(field, idField, `${label}: cannot list ${idField}`);
+    assert.ok(allowlist.includes(field), `${label}: unknown field ${field}`);
+  }
 }
 
 export function assertSha(value, label) {
@@ -61,13 +84,14 @@ export function resolveRepoRoot(fromDir = V2_QA_ROOT) {
   return path.resolve(resolveMathRoot(fromDir), "..");
 }
 
-export function resolveConfigPaths(unitConfig, fromDir = V2_QA_ROOT) {
-  const mathRoot = resolveMathRoot(fromDir);
-  const repoRoot = resolveRepoRoot(fromDir);
+export function resolveConfigPaths(unitConfig, fromDir = V2_QA_ROOT, overrides = {}) {
+  const v2qaRoot = overrides.v2qaRoot ?? path.resolve(fromDir);
+  const mathRoot = overrides.mathRoot ?? path.resolve(v2qaRoot, "../..");
+  const repoRoot = overrides.repoRoot ?? path.resolve(mathRoot, "..");
   return {
     mathRoot,
     repoRoot,
-    v2qaRoot: path.resolve(fromDir),
+    v2qaRoot,
     questionBank: path.join(mathRoot, unitConfig.paths.questionBank),
     lecture: path.join(mathRoot, unitConfig.paths.lecture),
     locks: path.join(mathRoot, unitConfig.paths.locks)
@@ -129,17 +153,15 @@ export function validateUnitConfig(unitConfig) {
 
 function validateAuthorizedFieldsEntries(entries, entity) {
   assert.ok(isPlainObject(entries), "entries must be an object");
+  const idField = entity === "question" ? "questionId" : "skillId";
   for (const [entityId, fields] of Object.entries(entries)) {
     assert.equal(typeof entityId, "string", "entry id must be a string");
     assert.ok(entityId.length > 0, "entry id must be non-empty");
     assert.ok(Array.isArray(fields), `${entityId}: authorized-fields entry must be an array`);
     assert.ok(fields.length > 0, `${entityId}: authorized-fields entry must not be empty`);
-    const allowlist = entity === "question" ? QUESTION_FIELD_ALLOWLIST : LECTURE_FIELD_ALLOWLIST;
-    const idField = entity === "question" ? "questionId" : "skillId";
+    validateFieldNameList(fields, entity, `${entityId}: authorized-fields`);
     for (const field of fields) {
-      assert.equal(typeof field, "string", `${entityId}: field names must be strings`);
       assert.notEqual(field, idField, `${entityId}: cannot authorize ${idField} changes`);
-      assert.ok(allowlist.includes(field), `${entityId}: unknown field ${field}`);
     }
   }
 }
@@ -170,13 +192,54 @@ function validateExactPatchEntries(entries, entity, allowedFields, perRecordAllo
   }
 }
 
-export function isJsonSerializable(value) {
-  try {
-    JSON.stringify(value);
-    return true;
-  } catch {
+export function isJsonSerializable(value, seen = new WeakSet()) {
+  if (value === undefined) {
     return false;
   }
+  if (value === null) {
+    return true;
+  }
+
+  const valueType = typeof value;
+  if (valueType === "string" || valueType === "boolean") {
+    return true;
+  }
+  if (valueType === "number") {
+    return Number.isFinite(value);
+  }
+  if (valueType === "bigint" || valueType === "function" || valueType === "symbol") {
+    return false;
+  }
+
+  if (valueType !== "object") {
+    return false;
+  }
+
+  if (seen.has(value)) {
+    return false;
+  }
+
+  if (Array.isArray(value)) {
+    seen.add(value);
+    for (const item of value) {
+      if (!isJsonSerializable(item, seen)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  if (!isPlainObject(value)) {
+    return false;
+  }
+
+  seen.add(value);
+  for (const key of Object.keys(value)) {
+    if (!isJsonSerializable(value[key], seen)) {
+      return false;
+    }
+  }
+  return true;
 }
 
 export function validateManifest(manifest) {
@@ -202,20 +265,14 @@ export function validateManifest(manifest) {
 
   if (manifest.allowedFields !== undefined) {
     assert.ok(Array.isArray(manifest.allowedFields), "allowedFields must be an array when present");
-    const allowlist = manifest.entity === "question" ? QUESTION_FIELD_ALLOWLIST : LECTURE_FIELD_ALLOWLIST;
-    for (const field of manifest.allowedFields) {
-      assert.ok(allowlist.includes(field), `allowedFields: unknown field ${field}`);
-    }
+    validateFieldNameList(manifest.allowedFields, manifest.entity, "allowedFields");
   }
 
   if (manifest.perRecordAllowedFields !== undefined) {
     assert.ok(isPlainObject(manifest.perRecordAllowedFields), "perRecordAllowedFields must be an object");
-    const allowlist = manifest.entity === "question" ? QUESTION_FIELD_ALLOWLIST : LECTURE_FIELD_ALLOWLIST;
     for (const [entityId, fields] of Object.entries(manifest.perRecordAllowedFields)) {
       assert.ok(Array.isArray(fields), `${entityId}: perRecordAllowedFields entry must be an array`);
-      for (const field of fields) {
-        assert.ok(allowlist.includes(field), `${entityId}: unknown field ${field}`);
-      }
+      validateFieldNameList(fields, manifest.entity, `${entityId}: perRecordAllowedFields`);
     }
   }
 
@@ -288,6 +345,6 @@ export function assertNoExecSyncInV2Qa(rootDir = V2_QA_ROOT) {
     }
   }
   if (violations.length) {
-    throw new Error(`execSync found in v2-qa tree: ${violations.sort().join(", ")}`);
+    throw new Error(`execSync found in v2-qa tree: ${violations.sort((a, b) => (a < b ? -1 : a > b ? 1 : 0)).join(", ")}`);
   }
 }

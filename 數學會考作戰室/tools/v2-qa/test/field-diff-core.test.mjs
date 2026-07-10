@@ -8,6 +8,7 @@ import {
   assertAuthorizedFieldsDiff,
   assertExactPatchDiff,
   collectTopLevelFieldDiffs,
+  ordinalCompare,
   sortDiffs
 } from "../core/field-diff-core.mjs";
 import { stableStringify } from "../core/deterministic-json.mjs";
@@ -23,6 +24,10 @@ import {
 
 const ID = "questionId";
 const LABEL = "field-diff-core-test";
+const CORE_SOURCE = readFileSync(
+  path.join(path.dirname(fileURLToPath(import.meta.url)), "../core/field-diff-core.mjs"),
+  "utf8"
+);
 
 function authThrows(before, after, options) {
   assert.throws(() =>
@@ -150,7 +155,7 @@ authThrows(baseBank, [questionRecord({ futureField: "x" }), baseBank[1]]);
   authThrows([beforeQ, baseBank[1]], [afterQ, baseBank[1]]);
 }
 
-// unsorted deterministic diff output
+// deterministic ordinal diff sorting
 {
   const before = [
     questionRecord({ questionId: "u09-s002-v001" }),
@@ -166,6 +171,8 @@ authThrows(baseBank, [questionRecord({ futureField: "x" }), baseBank[1]]);
     ["u09-s001-v001", "u09-s002-v001"]
   );
   assert.deepEqual(sortDiffs(diffs, ID), diffs);
+  assert.equal(ordinalCompare("B", "a"), -1);
+  assert.doesNotMatch(CORE_SOURCE, /localeCompare/);
 }
 
 // stable JSON preserves array order
@@ -267,7 +274,6 @@ assert.throws(() => assertByteIdentical("abc", "abd"));
     "../checkers/lecture-diff.mjs",
     "../checkers/manifest-lint.mjs"
   ];
-  const testDir = path.dirname(fileURLToPath(import.meta.url));
   for (const rel of modules) {
     await import(new URL(rel, import.meta.url).href);
   }

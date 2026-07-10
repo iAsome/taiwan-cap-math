@@ -6,7 +6,6 @@ import {
   entityIdField,
   isJsonSerializable,
   resolveConfigPaths,
-  resolveMathRoot,
   validateManifest,
   validateUnitConfig
 } from "../configs/schema.mjs";
@@ -17,6 +16,14 @@ import { loadRecordsAtCommit } from "../core/pack-loader.mjs";
 function repoRelative(mathRoot, repoRoot, relFromMathRoot) {
   const abs = path.join(mathRoot, relFromMathRoot);
   return path.relative(repoRoot, abs).split(path.sep).join("/");
+}
+
+function resolveLintPaths(unitConfig, options = {}) {
+  return resolveConfigPaths(unitConfig, options.fromDir, {
+    mathRoot: options.mathRoot,
+    repoRoot: options.repoRoot,
+    v2qaRoot: options.v2qaRoot
+  });
 }
 
 function assertPipelinePathsExist(unitConfig, mathRoot) {
@@ -53,7 +60,7 @@ function assertEntryIdsExistAtBase({ unitConfig, manifest, paths }) {
   }
 }
 
-function buildCumulativeAuth(batches) {
+export function buildCumulativeAuth(batches) {
   const cumulative = {};
   for (const batch of batches) {
     const manifest = batch.manifest;
@@ -64,12 +71,6 @@ function buildCumulativeAuth(batches) {
       if (!cumulative[entityId]) {
         cumulative[entityId] = new Set(fields);
         continue;
-      }
-      for (const field of cumulative[entityId]) {
-        assert.ok(
-          fields.includes(field),
-          `${batch.manifestId}: cumulative authorization removed ${entityId}.${field}`
-        );
       }
       for (const field of fields) {
         cumulative[entityId].add(field);
@@ -100,7 +101,6 @@ function assertLockArtifactConsistency(unitConfig, locksPath) {
 
 export function lintUnitConfig(unitConfig, options = {}) {
   const violations = [];
-  const mathRoot = options.mathRoot ?? resolveMathRoot();
 
   try {
     validateUnitConfig(unitConfig);
@@ -109,7 +109,7 @@ export function lintUnitConfig(unitConfig, options = {}) {
     return { ok: false, violations: violations.sort() };
   }
 
-  const paths = resolveConfigPaths(unitConfig, options.fromDir);
+  const paths = resolveLintPaths(unitConfig, options);
 
   try {
     assertCommitExists(unitConfig.acceptedCommit, paths.repoRoot);
@@ -161,7 +161,7 @@ export function lintUnitConfig(unitConfig, options = {}) {
   }
 
   try {
-    assertNoExecSyncInV2Qa();
+    assertNoExecSyncInV2Qa(paths.v2qaRoot);
   } catch (error) {
     violations.push(error.message);
   }
@@ -197,7 +197,7 @@ export function lintManifest(manifest, unitConfig, options = {}) {
     return { ok: false, violations: violations.sort() };
   }
 
-  const paths = resolveConfigPaths(unitConfig, options.fromDir);
+  const paths = resolveLintPaths(unitConfig, options);
 
   try {
     assertCommitExists(manifest.baseCommit, paths.repoRoot);

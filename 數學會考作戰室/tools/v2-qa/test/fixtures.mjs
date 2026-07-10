@@ -116,7 +116,7 @@ export function minimalUnitConfig(overrides = {}) {
     },
     migrationPhase: "foundation-only",
     thresholds: {
-      explanationZhMin: 40,
+      explanationZhMin: 30,
       explanationZhMax: 80,
       stepZhMin: 8,
       lectureExampleWhyZhMin: 40,

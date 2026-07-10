@@ -5,6 +5,22 @@ function hasOwn(record, field) {
   return Object.prototype.hasOwnProperty.call(record, field);
 }
 
+export function ordinalCompare(a, b) {
+  const sa = String(a);
+  const sb = String(b);
+  if (sa < sb) {
+    return -1;
+  }
+  if (sa > sb) {
+    return 1;
+  }
+  return 0;
+}
+
+export function ordinalSort(values) {
+  return [...values].sort(ordinalCompare);
+}
+
 export function collectTopLevelFieldDiffs(before, after, idField) {
   const beforeById = new Map(before.map(record => [record[idField], record]));
   const afterById = new Map(after.map(record => [record[idField], record]));
@@ -42,11 +58,11 @@ export function collectTopLevelFieldDiffs(before, after, idField) {
 
 export function sortDiffs(diffs, idField) {
   return [...diffs].sort((a, b) => {
-    const idCmp = String(a[idField]).localeCompare(String(b[idField]));
+    const idCmp = ordinalCompare(a[idField], b[idField]);
     if (idCmp !== 0) {
       return idCmp;
     }
-    return String(a.field).localeCompare(String(b.field));
+    return ordinalCompare(a.field, b.field);
   });
 }
 
@@ -90,7 +106,7 @@ function classifyStructuralChange(diff, before, after, idField) {
 function buildSummary({ label, changedRecords, changedFields, diffs, idField }) {
   return {
     label,
-    changedRecords: [...changedRecords].sort((a, b) => String(a).localeCompare(String(b))),
+    changedRecords: ordinalSort([...changedRecords]),
     changedRecordCount: changedRecords.size,
     changedFields,
     diffs: sortDiffs(diffs, idField)
@@ -153,10 +169,10 @@ export function assertAuthorizedFieldsDiff(options) {
   ).length;
 
   if (unauthorized.length) {
-    assert.fail(`${label}: unauthorized changes: ${[...unauthorized].sort().join(", ")}`);
+    assert.fail(`${label}: unauthorized changes: ${ordinalSort(unauthorized).join(", ")}`);
   }
   if (missing.length) {
-    assert.fail(`${label}: authorized fields not changed: ${[...missing].sort().join(", ")}`);
+    assert.fail(`${label}: authorized fields not changed: ${ordinalSort(missing).join(", ")}`);
   }
   if (changedRecords.size !== expected.changedRecords) {
     assert.fail(
@@ -177,7 +193,7 @@ function allowedFieldsForRecord(entityId, manifest) {
   const perRecord = manifest.perRecordAllowedFields?.[entityId] ?? [];
   const patchFields = Object.keys(manifest.entries[entityId] ?? {});
   const combined = new Set([...global, ...perRecord, ...patchFields]);
-  return [...combined].sort();
+  return ordinalSort([...combined]);
 }
 
 export function assertExactPatchDiff(options) {
@@ -254,10 +270,10 @@ export function assertExactPatchDiff(options) {
   }).length;
 
   if (unauthorized.length) {
-    assert.fail(`${label}: unauthorized changes: ${[...unauthorized].sort().join(", ")}`);
+    assert.fail(`${label}: unauthorized changes: ${ordinalSort(unauthorized).join(", ")}`);
   }
   if (missing.length) {
-    assert.fail(`${label}: manifest fields not changed: ${[...missing].sort().join(", ")}`);
+    assert.fail(`${label}: manifest fields not changed: ${ordinalSort(missing).join(", ")}`);
   }
   if (changedRecords.size !== expected.changedRecords) {
     assert.fail(
