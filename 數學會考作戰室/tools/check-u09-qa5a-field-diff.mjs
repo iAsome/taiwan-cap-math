@@ -1,18 +1,16 @@
 #!/usr/bin/env node
 /** Report-only: fail if U09 bank differs from base commit outside QA5A + QA5B-1 authorized fields. */
-import assert from "node:assert/strict";
-import { execSync } from "node:child_process";
-import vm from "node:vm";
+import { assertAllowedQuestionFieldDiffs } from "./u09-field-diff-core.mjs";
 
 const BASE = process.env.U09_QA5A_BASE || "c06ba8339ec5a1cf90f875e9d39c91f60af332fa";
 
-const QA5A_AUTHORIZED = new Set([
+const QA5A_IDS = [
   "u09-s001-v005", "u09-s001-v009", "u09-s001-v011",
   "u09-s002-v003", "u09-s002-v004", "u09-s002-v007", "u09-s002-v008", "u09-s002-v010", "u09-s002-v011",
   "u09-s003-v005", "u09-s003-v007", "u09-s003-v008", "u09-s003-v010",
   "u09-s004-v001", "u09-s004-v002", "u09-s004-v005", "u09-s004-v006", "u09-s004-v007", "u09-s004-v009",
   "u09-s006-v001", "u09-s006-v002", "u09-s006-v003", "u09-s006-v004", "u09-s006-v009", "u09-s006-v011"
-]);
+];
 
 const QA5B1_AUTHORIZED = {
   "u09-s007-v001": ["explanation"],
@@ -30,64 +28,33 @@ const QA5B1_AUTHORIZED = {
   "u09-s009-v009": ["explanation"]
 };
 
-function loadBank(code) {
-  const ctx = { window: {} };
-  vm.runInNewContext(code, ctx);
-  return ctx.window.MATH_QUESTION_BANK_V2_U09;
-}
+const QA5A_AUTHORIZED = Object.fromEntries(QA5A_IDS.map(id => [id, ["explanation"]]));
+const CUMULATIVE_AUTHORIZED = { ...QA5A_AUTHORIZED, ...QA5B1_AUTHORIZED };
 
-function allowedFieldChange(qid, field) {
-  if (field === "explanation") return QA5A_AUTHORIZED.has(qid) || QA5B1_AUTHORIZED[qid]?.includes("explanation");
-  return QA5B1_AUTHORIZED[qid]?.includes(field);
-}
+const result = assertAllowedQuestionFieldDiffs({
+  label: "check-u09-qa5a-field-diff",
+  baseCommit: BASE,
+  allowedFieldsByQuestionId: CUMULATIVE_AUTHORIZED,
+  expectedChangedRecords: 38,
+  expectedChangedFields: 41
+});
 
-const priorCode = execSync(`git -C .. show ${BASE}:數學會考作戰室/v2/math-question-bank-v2-u09.js`, { encoding: "utf8" });
-const { readFileSync } = await import("node:fs");
-const currentCode = readFileSync(new URL("../v2/math-question-bank-v2-u09.js", import.meta.url), "utf8");
-const prior = loadBank(priorCode);
-const current = loadBank(currentCode);
-
-assert.equal(current.length, 144, "current bank must have 144 questions");
-assert.equal(prior.length, 144, "base bank must have 144 questions");
-
-const fields = [
-  "text", "choices", "answerIndex", "steps", "commonMistake", "concept",
-  "difficulty", "skillId", "unitId", "type", "visualMode", "tags", "estimatedTimeSec"
-];
-const qa5aExplChanges = [];
-const qa5b1ExplChanges = [];
-const unauthorized = [];
-
-for (const q of current) {
-  const p = prior.find(x => x.questionId === q.questionId);
-  assert.ok(p, `missing in base: ${q.questionId}`);
-  if (q.explanation !== p.explanation) {
-    if (QA5A_AUTHORIZED.has(q.questionId)) qa5aExplChanges.push(q.questionId);
-    else if (QA5B1_AUTHORIZED[q.questionId]?.includes("explanation")) qa5b1ExplChanges.push(q.questionId);
-    else unauthorized.push(`${q.questionId}.explanation`);
-  }
-  for (const f of fields) {
-    if (JSON.stringify(q[f]) !== JSON.stringify(p[f])) {
-      if (!allowedFieldChange(q.questionId, f)) unauthorized.push(`${q.questionId}.${f}`);
-    }
-  }
-}
-
-const qa5aMissing = [...QA5A_AUTHORIZED].filter(id => !qa5aExplChanges.includes(id));
-const qa5b1Missing = Object.entries(QA5B1_AUTHORIZED)
-  .filter(([id, fs]) => fs.includes("explanation") && !qa5b1ExplChanges.includes(id))
-  .map(([id]) => id);
-
-if (unauthorized.length || qa5aMissing.length || qa5aExplChanges.length !== 25 || qa5b1Missing.length) {
-  console.error("check-u09-qa5a-field-diff: FAIL");
-  if (unauthorized.length) console.error("  unauthorized changes:", unauthorized.join(", "));
-  if (qa5aMissing.length) console.error("  QA5A IDs not changed:", qa5aMissing.join(", "));
-  if (qa5aExplChanges.length !== 25) console.error(`  QA5A explanation changes: ${qa5aExplChanges.length} (expected 25)`);
-  if (qa5b1Missing.length) console.error("  QA5B1 explanations not changed vs QA5A base:", qa5b1Missing.join(", "));
-  process.exit(1);
-}
+const qa5aSet = new Set(QA5A_IDS);
+const qa5aRecords = result.changedRecords.filter(id => qa5aSet.has(id)).length;
+const qa5b1Records = result.changedRecords.filter(id => QA5B1_AUTHORIZED[id]).length;
+const qa5aFields = result.diffs.filter(d => qa5aSet.has(d.questionId) && d.field === "explanation").length;
+const qa5b1Fields = result.diffs.filter(
+  d => QA5B1_AUTHORIZED[d.questionId]?.includes(d.field)
+).length;
 
 console.log("check-u09-qa5a-field-diff: OK");
-console.log(`  authorized explanation changes: ${qa5aExplChanges.length}`);
-console.log(`  QA5B1 explanation changes (also vs base): ${qa5b1ExplChanges.length}`);
+console.log(`  QA5A question records: ${qa5aRecords}`);
+console.log(`  QA5A changed fields: ${qa5aFields}`);
+console.log(`  QA5B1 question records: ${qa5b1Records}`);
+console.log(`  QA5B1 changed fields: ${qa5b1Fields}`);
+console.log(`  cumulative question records: ${result.changedRecords.length}`);
+console.log(`  cumulative changed fields: ${result.changedFields}`);
+console.log("  exhaustive top-level field scan: OK");
+console.log("  question sequence unchanged: OK");
+console.log("  lecture file unchanged: OK");
 console.log(`  base commit: ${BASE}`);
