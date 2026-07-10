@@ -9,8 +9,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const MATH_ROOT = path.resolve(__dirname, "..");
 const REPO_ROOT = path.resolve(MATH_ROOT, "..");
 
-export const QUESTION_BANK_PATH = "數學會考作戰室/v2/math-question-bank-v2-u09.js";
-export const LECTURE_PATH = "數學會考作戰室/v2/math-lecture-v2-u09.js";
+const QUESTION_BANK_PATH = "數學會考作戰室/v2/math-question-bank-v2-u09.js";
+const LECTURE_PATH = "數學會考作戰室/v2/math-lecture-v2-u09.js";
 
 const QUESTION_BANK_ABS = path.join(MATH_ROOT, "v2", "math-question-bank-v2-u09.js");
 const LECTURE_ABS = path.join(MATH_ROOT, "v2", "math-lecture-v2-u09.js");
@@ -90,26 +90,29 @@ export function readLectureFileAtCommit(commit) {
   });
 }
 
+export function assertByteIdentical(before, after, message = "byte content differs") {
+  const a = Buffer.isBuffer(before) ? before : Buffer.from(before);
+  const b = Buffer.isBuffer(after) ? after : Buffer.from(after);
+  if (!a.equals(b)) {
+    assert.fail(message);
+  }
+}
+
 export function assertLectureFileUnchanged(commit) {
   const before = readLectureFileAtCommit(commit);
   const after = readCurrentLectureFile();
-  assert.ok(before.equals(after), `lecture file byte mismatch vs ${commit}`);
+  assertByteIdentical(before, after, `lecture file byte mismatch vs ${commit}`);
 }
 
-export function assertAllowedQuestionFieldDiffs(options) {
+export function assertAllowedQuestionFieldDiffsForBanks(options) {
   const {
     label,
-    baseCommit,
+    before,
+    after,
     allowedFieldsByQuestionId,
     expectedChangedRecords,
     expectedChangedFields
   } = options;
-
-  const before = loadQuestionBankAtCommit(baseCommit);
-  const after = loadCurrentQuestionBank();
-
-  assert.equal(before.length, 144, `${label}: base bank must have 144 questions`);
-  assert.equal(after.length, 144, `${label}: current bank must have 144 questions`);
 
   assertQuestionIdsUnique(before);
   assertQuestionIdsUnique(after);
@@ -135,6 +138,10 @@ export function assertAllowedQuestionFieldDiffs(options) {
 
   for (const [questionId, fields] of Object.entries(allowedFieldsByQuestionId)) {
     for (const field of fields) {
+      if (field === "questionId") {
+        unauthorized.push(`${questionId}.questionId`);
+        continue;
+      }
       const changed = diffs.some(d => d.questionId === questionId && d.field === field);
       if (!changed) missing.push(`${questionId}.${field}`);
     }
@@ -157,11 +164,38 @@ export function assertAllowedQuestionFieldDiffs(options) {
     assert.fail(`${label}: changed fields ${changedFields} (expected ${expectedChangedFields})`);
   }
 
-  assertLectureFileUnchanged(baseCommit);
-
   return {
     changedRecords: [...changedRecords],
     changedFields,
     diffs
   };
+}
+
+export function assertAllowedQuestionFieldDiffs(options) {
+  const {
+    label,
+    baseCommit,
+    allowedFieldsByQuestionId,
+    expectedChangedRecords,
+    expectedChangedFields
+  } = options;
+
+  const before = loadQuestionBankAtCommit(baseCommit);
+  const after = loadCurrentQuestionBank();
+
+  assert.equal(before.length, 144, `${label}: base bank must have 144 questions`);
+  assert.equal(after.length, 144, `${label}: current bank must have 144 questions`);
+
+  const result = assertAllowedQuestionFieldDiffsForBanks({
+    label,
+    before,
+    after,
+    allowedFieldsByQuestionId,
+    expectedChangedRecords,
+    expectedChangedFields
+  });
+
+  assertLectureFileUnchanged(baseCommit);
+
+  return result;
 }

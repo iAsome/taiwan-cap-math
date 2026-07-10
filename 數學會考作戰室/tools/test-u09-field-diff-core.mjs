@@ -1,10 +1,18 @@
 #!/usr/bin/env node
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import {
-  assertQuestionIdsUnique,
-  assertQuestionSequenceUnchanged,
-  collectTopLevelQuestionFieldDiffs
+  assertAllowedQuestionFieldDiffsForBanks,
+  assertByteIdentical
 } from "./u09-field-diff-core.mjs";
+
+const LABEL = "self-test";
+const CORE_SOURCE = readFileSync(
+  path.join(path.dirname(fileURLToPath(import.meta.url)), "u09-field-diff-core.mjs"),
+  "utf8"
+);
 
 function q(overrides = {}) {
   return {
@@ -31,138 +39,73 @@ function q(overrides = {}) {
   };
 }
 
-function assertUnauthorized(before, after, field) {
-  const diffs = collectTopLevelQuestionFieldDiffs(before, after);
-  assert.ok(diffs.some(d => d.field === field), `expected unauthorized diff on ${field}`);
+function auth(before, after, overrides = {}) {
+  return assertAllowedQuestionFieldDiffsForBanks({
+    label: LABEL,
+    before,
+    after,
+    allowedFieldsByQuestionId: {},
+    expectedChangedRecords: 0,
+    expectedChangedFields: 0,
+    ...overrides
+  });
 }
 
-function runAuthorizationCheck(before, after, options) {
-  const {
-    allowedFieldsByQuestionId,
-    expectedChangedRecords,
-    expectedChangedFields
-  } = options;
-
-  assertQuestionIdsUnique(before);
-  assertQuestionIdsUnique(after);
-  assertQuestionSequenceUnchanged(before, after);
-
-  const diffs = collectTopLevelQuestionFieldDiffs(before, after);
-  const changedRecords = new Set();
-  const unauthorized = [];
-  const missing = [];
-
-  for (const diff of diffs) {
-    if (diff.field === "questionId") {
-      unauthorized.push(`${diff.questionId}.questionId`);
-      continue;
-    }
-    const allowed = allowedFieldsByQuestionId[diff.questionId];
-    if (allowed?.includes(diff.field)) {
-      changedRecords.add(diff.questionId);
-    } else {
-      unauthorized.push(`${diff.questionId}.${diff.field}`);
-    }
-  }
-
-  for (const [questionId, fields] of Object.entries(allowedFieldsByQuestionId)) {
-    for (const field of fields) {
-      const changed = diffs.some(d => d.questionId === questionId && d.field === field);
-      if (!changed) missing.push(`${questionId}.${field}`);
-    }
-  }
-
-  const changedFields = diffs.filter(
-    d => allowedFieldsByQuestionId[d.questionId]?.includes(d.field)
-  ).length;
-
-  return { unauthorized, missing, changedRecords, changedFields, diffs };
-}
-
-function assertLectureBytesEqual(before, after) {
-  const a = Buffer.isBuffer(before) ? before : Buffer.from(before);
-  const b = Buffer.isBuffer(after) ? after : Buffer.from(after);
-  assert.ok(a.equals(b), "lecture bytes differ");
+function authThrows(before, after, overrides = {}) {
+  assert.throws(() => auth(before, after, overrides));
 }
 
 const baseBank = [q(), q({ questionId: "u09-s001-v002", text: "題幹2" })];
 
 // 1-4: metadata fields
-assertUnauthorized(baseBank, [q({ title: "新標題" }), baseBank[1]], "title");
-assertUnauthorized(baseBank, [q({ topicId: "u09-other" }), baseBank[1]], "topicId");
-assertUnauthorized(baseBank, [q({ sourceScope: "OTHER" }), baseBank[1]], "sourceScope");
-assertUnauthorized(baseBank, [q({ numericUnitId: 10 }), baseBank[1]], "numericUnitId");
+authThrows(baseBank, [q({ title: "新標題" }), baseBank[1]]);
+authThrows(baseBank, [q({ topicId: "u09-other" }), baseBank[1]]);
+authThrows(baseBank, [q({ sourceScope: "OTHER" }), baseBank[1]]);
+authThrows(baseBank, [q({ numericUnitId: 10 }), baseBank[1]]);
 
 // 5: unknown future field
-assertUnauthorized(
-  baseBank,
-  [q({ futureField: "x" }), baseBank[1]],
-  "futureField"
-);
+authThrows(baseBank, [q({ futureField: "x" }), baseBank[1]]);
 
 // 6: deleted field (concept removed in after)
 {
   const beforeQ = q();
   const afterQ = q();
   delete afterQ.concept;
-  assertUnauthorized([beforeQ, baseBank[1]], [afterQ, baseBank[1]], "concept");
+  authThrows([beforeQ, baseBank[1]], [afterQ, baseBank[1]]);
 }
 
 // 7-8: array fields
-assertUnauthorized(
-  baseBank,
-  [q({ choices: ["A", "B", "C", "E"] }), baseBank[1]],
-  "choices"
-);
-assertUnauthorized(
-  baseBank,
-  [q({ steps: ["步驟1", "步驟2", "步驟X"] }), baseBank[1]],
-  "steps"
-);
+authThrows(baseBank, [q({ choices: ["A", "B", "C", "E"] }), baseBank[1]]);
+authThrows(baseBank, [q({ steps: ["步驟1", "步驟2", "步驟X"] }), baseBank[1]]);
 
-// 9: changed questionId (sequence protection; field diff matches by questionId key)
-{
-  const before = [q(), q({ questionId: "u09-s001-v002" })];
-  const after = [q({ questionId: "u09-s001-v999" }), q({ questionId: "u09-s001-v002" })];
-  assert.throws(() => assertQuestionSequenceUnchanged(before, after), /sequence changed/);
-}
+// 9: changed questionId
+authThrows(
+  [q(), q({ questionId: "u09-s001-v002" })],
+  [q({ questionId: "u09-s001-v999" }), q({ questionId: "u09-s001-v002" })]
+);
 
 // 10: reordered questions
-assert.throws(
-  () => assertQuestionSequenceUnchanged(baseBank, [baseBank[1], baseBank[0]]),
-  /sequence changed/
-);
+authThrows(baseBank, [baseBank[1], baseBank[0]]);
 
 // 11: duplicate questionId
-assert.throws(
-  () => assertQuestionIdsUnique([q(), q({ text: "other" })]),
-  /duplicate questionId/
-);
+authThrows([q(), q({ text: "other" })]);
 
 // 12: added question
-assert.throws(
-  () => assertQuestionSequenceUnchanged(baseBank, [...baseBank, q({ questionId: "u09-s001-v003" })]),
-  /length changed/
-);
+authThrows(baseBank, [...baseBank, q({ questionId: "u09-s001-v003" })]);
 
 // 13: removed question
-assert.throws(
-  () => assertQuestionSequenceUnchanged(baseBank, [baseBank[0]]),
-  /length changed/
-);
+authThrows(baseBank, [baseBank[0]]);
 
 // 14: authorized explanation change passes
 {
   const before = [q()];
   const after = [q({ explanation: "新解析" })];
-  const result = runAuthorizationCheck(before, after, {
+  const result = auth(before, after, {
     allowedFieldsByQuestionId: { "u09-s001-v001": ["explanation"] },
     expectedChangedRecords: 1,
     expectedChangedFields: 1
   });
-  assert.equal(result.unauthorized.length, 0);
-  assert.equal(result.missing.length, 0);
-  assert.equal(result.changedRecords.size, 1);
+  assert.deepEqual(result.changedRecords, ["u09-s001-v001"]);
   assert.equal(result.changedFields, 1);
 }
 
@@ -170,59 +113,54 @@ assert.throws(
 {
   const before = [q()];
   const after = [q({ text: "新題幹", explanation: "新解析" })];
-  const result = runAuthorizationCheck(before, after, {
+  const result = auth(before, after, {
     allowedFieldsByQuestionId: { "u09-s001-v001": ["text", "explanation"] },
     expectedChangedRecords: 1,
     expectedChangedFields: 2
   });
-  assert.equal(result.unauthorized.length, 0);
-  assert.equal(result.missing.length, 0);
-  assert.equal(result.changedRecords.size, 1);
+  assert.deepEqual(result.changedRecords, ["u09-s001-v001"]);
   assert.equal(result.changedFields, 2);
 }
 
-// 16: authorized field not changed fails
-{
-  const before = [q()];
-  const after = [q()];
-  const result = runAuthorizationCheck(before, after, {
-    allowedFieldsByQuestionId: { "u09-s001-v001": ["explanation"] },
-    expectedChangedRecords: 1,
-    expectedChangedFields: 1
-  });
-  assert.ok(result.missing.includes("u09-s001-v001.explanation"));
-}
+// 16: authorized field that did not change throws
+authThrows([q()], [q()], {
+  allowedFieldsByQuestionId: { "u09-s001-v001": ["explanation"] },
+  expectedChangedRecords: 1,
+  expectedChangedFields: 1
+});
 
-// 17: expected record-count mismatch fails
-{
-  const before = [q()];
-  const after = [q({ explanation: "新解析" })];
-  const result = runAuthorizationCheck(before, after, {
-    allowedFieldsByQuestionId: { "u09-s001-v001": ["explanation"] },
-    expectedChangedRecords: 2,
-    expectedChangedFields: 1
-  });
-  assert.equal(result.changedRecords.size, 1);
-  assert.notEqual(result.changedRecords.size, 2);
-}
+// 17: expected changed-record count mismatch throws
+authThrows([q()], [q({ explanation: "新解析" })], {
+  allowedFieldsByQuestionId: { "u09-s001-v001": ["explanation"] },
+  expectedChangedRecords: 2,
+  expectedChangedFields: 1
+});
 
-// 18: expected field-count mismatch fails
-{
-  const before = [q()];
-  const after = [q({ explanation: "新解析" })];
-  const result = runAuthorizationCheck(before, after, {
-    allowedFieldsByQuestionId: { "u09-s001-v001": ["explanation"] },
-    expectedChangedRecords: 1,
-    expectedChangedFields: 2
-  });
-  assert.equal(result.changedFields, 1);
-  assert.notEqual(result.changedFields, 2);
-}
+// 18: expected changed-field count mismatch throws
+authThrows([q()], [q({ explanation: "新解析" })], {
+  allowedFieldsByQuestionId: { "u09-s001-v001": ["explanation"] },
+  expectedChangedRecords: 1,
+  expectedChangedFields: 2
+});
 
-// lecture byte comparison
-assertLectureBytesEqual("lecture\n", "lecture\n");
-assert.throws(() => assertLectureBytesEqual("lecture\n", "lecture \n"), /lecture bytes differ/);
-assert.throws(() => assertLectureBytesEqual("a\r\n", "a\n"), /lecture bytes differ/);
+// direct byte comparison tests
+assertByteIdentical("lecture\n", "lecture\n");
+assertByteIdentical(Buffer.from("lecture\n"), Buffer.from("lecture\n"));
+assert.throws(() => assertByteIdentical("lecture\n", "lecture \n"));
+assert.throws(() => assertByteIdentical("a\r\n", "a\n"));
+assert.throws(() => assertByteIdentical("abc", "abd"));
+
+// wrapper delegation proof
+assert.match(CORE_SOURCE, /assertAllowedQuestionFieldDiffsForBanks\s*\(/);
+assert.match(
+  CORE_SOURCE,
+  /function assertAllowedQuestionFieldDiffs[\s\S]*assertAllowedQuestionFieldDiffsForBanks\s*\(/
+);
+assert.match(CORE_SOURCE, /function assertLectureFileUnchanged[\s\S]*assertByteIdentical\s*\(/);
+assert.doesNotMatch(CORE_SOURCE, /\bexecSync\b/);
+assert.match(CORE_SOURCE, /\bexecFileSync\b/);
+assert.doesNotMatch(CORE_SOURCE, /export const QUESTION_BANK_PATH/);
+assert.doesNotMatch(CORE_SOURCE, /export const LECTURE_PATH/);
 
 console.log("test-u09-field-diff-core: OK");
 console.log("  title detection: OK");
@@ -233,5 +171,7 @@ console.log("  unknown field detection: OK");
 console.log("  deleted field detection: OK");
 console.log("  array field detection: OK");
 console.log("  question identity and order protection: OK");
+console.log("  direct authorization helper tests: OK");
 console.log("  authorization-count protection: OK");
-console.log("  lecture byte comparison: OK");
+console.log("  direct byte comparison tests: OK");
+console.log("  production wrapper delegation: OK");
