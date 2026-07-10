@@ -1,0 +1,2740 @@
+TEMPORARY REVIEW ARTIFACT.
+NOT STUDENT-FACING.
+NOT A RELEASE APPROVAL.
+REMOVE BEFORE INTEGRATION.
+
+### u10-s001-v001
+
+- skillId: polynomial-terms
+- difficulty: basic
+- text: 下列哪一個是單項式？
+- choices:
+  - 0: 3x²
+  - 1: x + 1
+  - 2: x − y
+  - 3: x² + y²
+- answerIndex: 0
+- correctChoice: 3x²
+- explanation: 單項式整個式子只能由一項組成，中間不能有加減把它拆成兩塊。3x² 只有一個乘積項；x + 1 中間有加號，其實是兩項；x − y 被減號分成 x 與 y 兩項，都不是單項式。
+- steps:
+  - 單項式只能有一項。
+  - 3x² 沒有加減號分出的第二項。
+  - 因此 3x² 是單項式。
+- commonMistake: 看到 x − y 只有兩個字母就以為是一項，沒注意到減號已把式子拆成兩項。
+
+### u10-s001-v002
+
+- skillId: polynomial-terms
+- difficulty: basic
+- text: 單項式 −5x³ 的係數是多少？
+- choices:
+  - 0: 3
+  - 1: −5
+  - 2: x³
+  - 3: −5x³
+- answerIndex: 1
+- correctChoice: −5
+- explanation: 單項式 −5x³ 的係數是 x³ 前面那個含正負號的數字，也就是 −5。3 是 x 的次數不是係數；−5x³ 是整個單項式本身，不是係數這個概念。
+- steps:
+  - 找 x³ 前面的數。
+  - 含符號寫 −5。
+  - 係數是 −5。
+- commonMistake: 係數只寫 5 而漏掉負號，或把次數 3 當成係數。
+
+### u10-s001-v003
+
+- skillId: polynomial-terms
+- difficulty: basic
+- text: 單項式 4x²y 的次數是多少？
+- choices:
+  - 0: 2
+  - 1: 4
+  - 2: 3
+  - 3: 1
+- answerIndex: 2
+- correctChoice: 3
+- explanation: 4x²y 中 x 的指數是 2、y 的指數是 1（y 沒寫指數就是 1）。單項式次數要把各字母指數全部加起來：2 + 1 = 3。只拿 2 是忘了把 y 的指數也算進去。
+- steps:
+  - x 的指數是 2。
+  - y 的指數是 1。
+  - 次數 2 + 1 = 3。
+- commonMistake: 次數只取 x 的指數 2，沒把 y 的隱含指數 1 加進去。
+
+### u10-s001-v004
+
+- skillId: polynomial-terms
+- difficulty: basic
+- text: 下列哪兩個是同類項？
+- choices:
+  - 0: 3x 與 3x²
+  - 1: x + y 與 x − y
+  - 2: 5 與 5x
+  - 3: 2ab 與 −5ba
+- answerIndex: 3
+- correctChoice: 2ab 與 −5ba
+- explanation: 同類項要看各字母次數是否完全相同。2ab 與 −5ba 只是 a、b 書寫順序不同，都是 a¹b¹，所以是同類項。3x 是 x¹，3x² 是 x²，次數不同；5 與 5x 一個沒有 x、一個有 x，也不能配對。
+- steps:
+  - 比對字母種類與次數。
+  - 2ab 與 −5ba 都是 a¹b¹。
+  - 兩者是同類項。
+- commonMistake: 只看係數或只看字母個數，沒比對各字母次數是否相同。
+
+### u10-s001-v005
+
+- skillId: polynomial-terms
+- difficulty: standard
+- text: 常數 7 可以視為單項式嗎？
+- choices:
+  - 0: 可以，次數為 0
+  - 1: 不可以，沒有未知數
+  - 2: 可以，次數為 1
+  - 3: 不可以，必須有 x
+- answerIndex: 0
+- correctChoice: 可以，次數為 0
+- explanation: 常數 7 可以看成 7·x⁰，x 的指數 0 代表次數為 0，所以 7 是合法的單項式。「不可以，沒有未知數」忽略了 x⁰ 這種寫法；「次數為 1」則把指數搞錯了。
+- steps:
+  - 常數可看成 x⁰ 的係數。
+  - 指數 0 表示次數 0。
+  - 7 是次數 0 的單項式。
+- commonMistake: 以為單項式一定要有 x，忽略常數項也是單項式。
+
+### u10-s001-v006
+
+- skillId: polynomial-terms
+- difficulty: standard
+- text: 多項式 2x³ − x + 1 的次數是多少？
+- choices:
+  - 0: 1
+  - 1: 3
+  - 2: 2
+  - 3: 0
+- answerIndex: 1
+- correctChoice: 3
+- explanation: 多項式 2x³ − x + 1 各項次數分別是 3、1、0，整式的次數取最高次那一項，也就是 x³ 的 3。若答 1 是把 −x 的次數當成整式次數；答 0 則誤用常數項 1 的次數。
+- steps:
+  - 找出各項次數：3、1、0。
+  - 最高次是 x³ 的 3。
+  - 多項式次數為 3。
+- commonMistake: 用項數或常數項次數當整式次數，沒找最高次項。
+
+### u10-s001-v007
+
+- skillId: polynomial-terms
+- difficulty: standard
+- text: 多項式 3x² − 2x + 5 中，x 這一項的係數是多少？
+- choices:
+  - 0: 3
+  - 1: 5
+  - 2: −2
+  - 3: 2
+- answerIndex: 2
+- correctChoice: −2
+- explanation: 在 3x² − 2x + 5 這個三項式裡，x 的一次項是 −2x，係數要把前面的 −2 整個算進去才算對。3 是 x² 項的係數；5 是常數項；2 則漏看了 −2x 前面的負號，只取絕對值。
+- steps:
+  - 找含 x 且 x 的指數為 1 的項。
+  - 該項是 −2x。
+  - 係數是 −2。
+- commonMistake: x 項係數只寫 2，去括號變號錯或漏看減號。
+
+### u10-s001-v008
+
+- skillId: polynomial-terms
+- difficulty: standard
+- text: 下列哪一個是多項式？
+- choices:
+  - 0: 5/x
+  - 1: √x
+  - 2: 1/(x+1)
+  - 3: 2x² − 3x
+- answerIndex: 3
+- correctChoice: 2x² − 3x
+- explanation: 多項式要求各項指數都是非負整數，且分母不能含未知數。5/x 與 1/(x+1) 分母有 x；√x 指數是 1/2 不是整數。2x² − 3x 兩項都符合，才是多項式。
+- steps:
+  - 檢查是否分母有未知數。
+  - 檢查指數是否為非負整數。
+  - 2x² − 3x 符合，是多項式。
+- commonMistake: 把分式或根號式也當多項式，沒檢查指數與分母。
+
+### u10-s001-v009
+
+- skillId: polynomial-terms
+- difficulty: standard
+- text: 化簡前式 4a²b − 2ba²，下列敘述何者正確？
+- choices:
+  - 0: 是同類項，可合併係數
+  - 1: 不是同類項
+  - 2: 只能合併 a 項
+  - 3: 次數不同不能比
+- answerIndex: 0
+- correctChoice: 是同類項，可合併係數
+- explanation: 4a²b 與 −2ba² 比對：a 都是 2 次、b 都是 1 次，字母順序不同不影響判斷，兩者同類，係數 4 與 −2 可以合併。「不是同類項」是沒比對指數就下結論。
+- steps:
+  - 比對 a 的次數與 b 的次數。
+  - 兩項都是 a²b¹。
+  - 是同類項，可合併係數。
+- commonMistake: 字母順序不同就判斷不是同類項，沒比對各字母次數。
+
+### u10-s001-v010
+
+- skillId: polynomial-terms
+- difficulty: advanced
+- text: 正方形邊長 x 公分，面積以 x 表示，下列何者正確？
+- choices:
+  - 0: 2x
+  - 1: x²
+  - 2: 4x
+  - 3: x + x
+- answerIndex: 1
+- correctChoice: x²
+- explanation: 正方形面積 = 邊長 × 邊長，邊長 x 公分時面積是 x × x = x²。2x 是兩條邊相加（周長的一半概念）；4x 是周長 4 倍邊長；x + x 也只是兩邊相加不是相乘。
+- steps:
+  - 面積 = 邊長 × 邊長。
+  - 代入 x × x。
+  - 寫成 x²。
+- commonMistake: 周長與面積公式混淆，把 4x 或 2x 當面積。
+
+### u10-s001-v011
+
+- skillId: polynomial-terms
+- difficulty: advanced
+- text: 單項式 −3a²b³c 的次數是多少？
+- choices:
+  - 0: 3
+  - 1: 5
+  - 2: 6
+  - 3: 2
+- answerIndex: 2
+- correctChoice: 6
+- explanation: −3a²b³c 這個單項式裡，a 指數 2、b 指數 3、c 指數 1，次數規則是把三者全部相加：2 + 3 + 1 = 6。5 可能只加了 a、b 兩個指數就停；3 則只看了 b 的指數，沒把 a 和 c 也算進去。
+- steps:
+  - a 指數 2，b 指數 3，c 指數 1。
+  - 全部相加 2+3+1。
+  - 次數是 6。
+- commonMistake: 多字母次數只加兩個指數，指數相加錯。
+
+### u10-s001-v012
+
+- skillId: polynomial-terms
+- difficulty: literacy
+- text: 下列關於 0 的敘述，何者正確？
+- choices:
+  - 0: 0 不是單項式
+  - 1: 0 的係數不存在
+  - 2: 0 一定是多項式
+  - 3: 0 是次數為 0 的單項式
+- answerIndex: 3
+- correctChoice: 0 是次數為 0 的單項式
+- explanation: 0 可寫成 0·x⁰，係數是 0、次數也是 0，所以 0 是次數為 0 的單項式。「0 不是單項式」忽略了這個定義；「0 一定是多項式」則把單項式與多項式的層級搞混了。
+- steps:
+  - 0 可寫成 0·x⁰。
+  - 係數 0，次數 0。
+  - 0 是次數 0 的單項式。
+- commonMistake: 以為 0 什麼都不是，忽略 0 也是合法單項式。
+
+### u10-s002-v001
+
+- skillId: polynomial-evaluation
+- difficulty: basic
+- text: 當 x = 2 時，3x + 1 的值是多少？
+- choices:
+  - 0: 7
+  - 1: 5
+  - 2: 6
+  - 3: 8
+- answerIndex: 0
+- correctChoice: 7
+- explanation: 把 x = 2 放進 3x + 1，先算乘法 3×2 = 6，再把常數 1 加上去得 7。5 則把 2+1 先加後乘，違反先乘後加；6 則只算了 3×2 這一段，後面的 +1 完全漏掉，少加常數。
+- steps:
+  - 把 x 換成 2。
+  - 算 3×2 = 6。
+  - 6 + 1 = 7。
+- commonMistake: 只算出 3×2=6 就停住，忘記把常數 1 加進去。
+
+### u10-s002-v002
+
+- skillId: polynomial-evaluation
+- difficulty: basic
+- text: 當 x = −1 時，x² + 2x 的值是多少？
+- choices:
+  - 0: 1
+  - 1: −1
+  - 2: 3
+  - 3: −3
+- answerIndex: 1
+- correctChoice: −1
+- explanation: x 取負一時，平方項 (−1)² 等於正一，一次項 2x 等於負二，兩段合併正一加負二等於負一。若只留平方結果一就漏加一次項；若把一次項當正二去加則得三，正負方向整個弄錯了。
+- steps:
+  - x = −1 代入。
+  - (−1)² = 1，2x = −2。
+  - 1 + (−2) = −1。
+- commonMistake: 平方算完 1 就直接當答案，沒把 2x = −2 這一段加進去。
+
+### u10-s002-v003
+
+- skillId: polynomial-evaluation
+- difficulty: basic
+- text: 當 a = 3、b = −2 時，2a − b 的值是多少？
+- choices:
+  - 0: 4
+  - 1: 0
+  - 2: 8
+  - 3: −1
+- answerIndex: 2
+- correctChoice: 8
+- explanation: a 取三、b 取負二，先算 2a 得六，再算六減負二變六加二得八。四是把減 b 當減正二；零則把減 b 算成加負二，正負方向整個反了，少加四。
+- steps:
+  - a=3，b=−2 代入。
+  - 2a = 6。
+  - 6 − (−2) = 8。
+- commonMistake: 減去負數 b 時沒變加，把 6 − (−2) 誤算成 6 − 2 = 4。
+
+### u10-s002-v004
+
+- skillId: polynomial-evaluation
+- difficulty: basic
+- text: 當 x = 0 時，5x² − 3x + 4 的值是多少？
+- choices:
+  - 0: 0
+  - 1: −4
+  - 2: 1
+  - 3: 4
+- answerIndex: 3
+- correctChoice: 4
+- explanation: x 取零時，五次方項與一次項都含 x，乘出來全是零，整式只剩常數四。零是把含 x 的項硬算成非零；負四則把最後常數四的符號弄反，正負搞錯了。
+- steps:
+  - x = 0 代入。
+  - 5×0 與 −3×0 都是 0。
+  - 整式值 = 4。
+- commonMistake: x=0 時仍硬算 5x² 或 −3x 得到非零，沒看出兩項都歸零。
+
+### u10-s002-v005
+
+- skillId: polynomial-evaluation
+- difficulty: standard
+- text: 當 x = 3 時，(x + 1)(x − 2) 的值是多少？
+- choices:
+  - 0: 4
+  - 1: 2
+  - 2: 6
+  - 3: 10
+- answerIndex: 0
+- correctChoice: 4
+- explanation: x = 3 時，左括號 x + 1 = 4、右括號 x − 2 = 1，兩個括號相乘 4 × 1 = 4。2 則只算完一個括號就停，漏乘另一個；6 則把 4 + 2 或 4 + 1 當成乘法，加減與相乘搞混了，結果不是 4。
+- steps:
+  - x = 3 代入。
+  - 左括號 4，右括號 1。
+  - 4 × 1 = 4。
+- commonMistake: 只算出 x+1=4 就當最終值，忘了還要乘上 x−2=1。
+
+### u10-s002-v006
+
+- skillId: polynomial-evaluation
+- difficulty: standard
+- text: 當 y = −2 時，y³ − y 的值是多少？
+- choices:
+  - 0: 6
+  - 1: −6
+  - 2: −4
+  - 3: 0
+- answerIndex: 1
+- correctChoice: −6
+- explanation: y 取負二時，三次方 (−2)³ 等於負八，再減 y 變負八減負二等於負八加二得負六。六是把負六整體變號；負四則減 y 時沒把減負變加，少加二，正負方向弄錯了。
+- steps:
+  - y = −2。
+  - (−2)³ = −8。
+  - −8 − (−2) = −6。
+- commonMistake: 奇次方保留負號後，減 y 時沒把 −(−2) 變成 +2。
+
+### u10-s002-v007
+
+- skillId: polynomial-evaluation
+- difficulty: standard
+- text: 當 x = 1/2 時，4x + 3 的值是多少？
+- choices:
+  - 0: 4
+  - 1: 7
+  - 2: 5
+  - 3: 2
+- answerIndex: 2
+- correctChoice: 5
+- explanation: x 取二分之一，先算四乘二分之一得二，再加常數三得五。四是把四 x 誤當四或漏加常數；二則只算乘法段，常數三整段漏加，最後少加三。
+- steps:
+  - x = 1/2 代入。
+  - 4 × 1/2 = 2。
+  - 2 + 3 = 5。
+- commonMistake: 4×1/2 算完 2 就停，漏加後面的常數 3，最後少加了 3。
+
+### u10-s002-v008
+
+- skillId: polynomial-evaluation
+- difficulty: standard
+- text: 某商店每件 x 元，買 3 件再加手續費 10 元，總價代數式為 3x + 10。若 x = 50，總價多少元？
+- choices:
+  - 0: 150
+  - 1: 60
+  - 2: 140
+  - 3: 160
+- answerIndex: 3
+- correctChoice: 160
+- explanation: 總價先算三件乘五十得一百五十，再加上固定手續費十元，合計一百六十元。一百五十只算商品價漏加手續費；六十則可能漏乘三件或誤減手續費，兩段都算錯。
+- steps:
+  - 總價 3x + 10。
+  - x = 50 代入。
+  - 150 + 10 = 160。
+- commonMistake: 3×50 算完 150 就當總價，忘記加上固定手續費 10 元。
+
+### u10-s002-v009
+
+- skillId: polynomial-evaluation
+- difficulty: standard
+- text: 當 x = −3 時，2x² − x − 1 的值是多少？
+- choices:
+  - 0: 20
+  - 1: 8
+  - 2: 14
+  - 3: −20
+- answerIndex: 0
+- correctChoice: 20
+- explanation: x 取負三時，平方得九、二倍平方得十八，負 x 變負負得正三，最後十八加三減一等於二十。八是漏算負 x 那段；十四則把負 x 仍當負三去減，負號沒翻過來。
+- steps:
+  - x = −3，x² = 9。
+  - 2×9 = 18，−x = 3。
+  - 18 + 3 − 1 = 20。
+- commonMistake: x 為負時把 −x 仍當 −3，沒有先算出 −x = 3 再加回去。
+
+### u10-s002-v010
+
+- skillId: polynomial-evaluation
+- difficulty: advanced
+- text: 當 m = 2、n = −1 時，m² + mn 的值是多少？
+- choices:
+  - 0: 3
+  - 1: 2
+  - 2: 4
+  - 3: 0
+- answerIndex: 1
+- correctChoice: 2
+- explanation: m 取二、n 取負一，平方段得四，乘積段 mn 得負二，兩段相加四加負二得二。三是把 mn 算成正一變四加一；四則只算平方段，乘積段整段漏掉，少加一項。
+- steps:
+  - m=2，n=−1。
+  - m² = 4，mn = −2。
+  - 4 + (−2) = 2。
+- commonMistake: m² 算完 4 就停，沒把 mn = −2 加進去，整段 mn 漏算。
+
+### u10-s002-v011
+
+- skillId: polynomial-evaluation
+- difficulty: advanced
+- text: 當 x = 4 時，−x² + 5 的值是多少？
+- choices:
+  - 0: 11
+  - 1: −21
+  - 2: −11
+  - 3: 21
+- answerIndex: 2
+- correctChoice: −11
+- explanation: x 取四時，平方得十六，前面負號變負十六，再加五得負十一。十一是把負平方當正十六去加五；二十一则連負號都漏掉變十六加五，正負整個搞錯了。
+- steps:
+  - x = 4。
+  - x² = 16，−x² = −16。
+  - −16 + 5 = −11。
+- commonMistake: −x² 前面的負號漏看，把 −16+5 誤算成 16+5=21 或 11。
+
+### u10-s002-v012
+
+- skillId: polynomial-evaluation
+- difficulty: literacy
+- text: 已知 f(x) = x² − 3x，求 f(2) 的值。
+- choices:
+  - 0: 2
+  - 1: 10
+  - 2: −10
+  - 3: −2
+- answerIndex: 3
+- correctChoice: −2
+- explanation: 函數在 x 取二時，平方得四、三倍一次項得負六，相減得負二。二是把四減六只取絕對值；十則把減三 x 當加六去加四，正負整個反了，減法變加法。
+- steps:
+  - f(2) 表示 x = 2。
+  - 算 4 − 6。
+  - 得 −2。
+- commonMistake: 4 − 6 算成 +2，把負號結果誤取成正值。
+
+### u10-s003-v001
+
+- skillId: like-terms-combine
+- difficulty: basic
+- text: 化簡 3x + 5x。
+- choices:
+  - 0: 8x
+  - 1: 8x²
+  - 2: 15x
+  - 3: 15x²
+- answerIndex: 0
+- correctChoice: 8x
+- explanation: 3x 與 5x 字母部分都是 x，屬同類項，係數直接相加 3 + 5 = 8，寫成 8x。8x² 是把指數也加在一起；15x 則誤用 3×5 相乘，同類項合併應加係數不應乘。
+- steps:
+  - 3x 與 5x 是同類項。
+  - 係數 3 + 5 = 8。
+  - 寫成 8x。
+- commonMistake: 同類項合併時把係數 3 和 5 相乘得 15，而不是相加。
+
+### u10-s003-v002
+
+- skillId: like-terms-combine
+- difficulty: basic
+- text: 化簡 7y − 2y + y。
+- choices:
+  - 0: 5y
+  - 1: 6y
+  - 2: 4y
+  - 3: 9y
+- answerIndex: 1
+- correctChoice: 6y
+- explanation: 三項都是 y 的同類項，單獨寫 y 時係數視為一，合併七減二加一得六 y。五 y 是漏算單獨 y 那項的加一；四 y 則把減二 y 的符號弄錯，正負方向整個搞錯了。
+- steps:
+  - 三項都是 y 的同類項。
+  - 係數 7 − 2 + 1。
+  - 得 6y。
+- commonMistake: 單獨的 y 係數當 0 或漏加，7−2 只算成 5 得 5y。
+
+### u10-s003-v003
+
+- skillId: like-terms-combine
+- difficulty: basic
+- text: 化簡 4a² + 3a − 2a² + a。
+- choices:
+  - 0: 2a² + 2a
+  - 1: 6a² + 4a
+  - 2: 2a² + 4a
+  - 3: 6a² + 2a
+- answerIndex: 2
+- correctChoice: 2a² + 4a
+- explanation: 平方項四減二係數得二，一次項三加一係數得四，整理後二 a 平方加四 a。二 a 平方加二 a 是一次項漏加一；六 a 平方加四 a 則平方項誤用四加二，正負搞錯了。
+- steps:
+  - a² 項 4 − 2 = 2。
+  - a 項 3 + 1 = 4。
+  - 寫 2a² + 4a。
+- commonMistake: a 項 3+a 只保留 3 沒加 1，或 a² 項 4−2 誤算成 4+2 得 6a²。
+
+### u10-s003-v004
+
+- skillId: like-terms-combine
+- difficulty: basic
+- text: 化簡 −5x + 3 − 2x + 7。
+- choices:
+  - 0: −3x + 10
+  - 1: −7x + 4
+  - 2: −3x + 4
+  - 3: −7x + 10
+- answerIndex: 3
+- correctChoice: −7x + 10
+- explanation: x 項負五減二係數得負七，常數三加七得十，整理後負七 x 加十。負三 x 加十是把負五減二算成負三；負七 x 加四則常數合併錯，三加七漏算成四。
+- steps:
+  - 合併 x 項 −5 − 2。
+  - 合併常數 3 + 7。
+  - 得 −7x + 10。
+- commonMistake: 合併 x 項時 −5−2 算成 −3，或常數 3+7 漏加算成 4。
+
+### u10-s003-v005
+
+- skillId: like-terms-combine
+- difficulty: standard
+- text: 化簡 2ab + 5ba − ab。
+- choices:
+  - 0: 6ab
+  - 1: 7ab
+  - 2: 6a²b²
+  - 3: 8ab
+- answerIndex: 0
+- correctChoice: 6ab
+- explanation: ba 與 ab 同類，三項係數二加五減一得六 ab。七 ab 是減 ab 那項的減一漏掉只算二加五；六 a 平方 b 平方則把指數也加在一起，同類項合併只加係數不加指數。
+- steps:
+  - ba 與 ab 同類。
+  - 係數 2 + 5 − 1。
+  - 得 6ab。
+- commonMistake: ba 與 ab 視為不同類，或 −ab 的係數 −1 漏算變成 2+5=7。
+
+### u10-s003-v006
+
+- skillId: like-terms-combine
+- difficulty: standard
+- text: 化簡 3x² − x + 2 − 5x² + 4x。
+- choices:
+  - 0: 2x² + 3x + 2
+  - 1: −2x² + 3x + 2
+  - 2: −2x² − 5x + 2
+  - 3: 8x² + 3x + 2
+- answerIndex: 1
+- correctChoice: −2x² + 3x + 2
+- explanation: 平方項三減五得負二，一次項負一加四得三，常數二保留，整理負二 x 平方加三 x 加二。二 x 平方加三 x 加二是平方項正負反了；負二 x 平方減五 x 加二則一次項算錯。
+- steps:
+  - x² 項 3 − 5 = −2。
+  - x 項 −1 + 4 = 3。
+  - 常數 2，寫 −2x² + 3x + 2。
+- commonMistake: x² 項 3−5 算成 +2 得 2x²，或 x 一次項 −1+4 符號弄錯得 −5x。
+
+### u10-s003-v007
+
+- skillId: like-terms-combine
+- difficulty: standard
+- text: 下列化簡何者正確？原式 6m − 4n + 2m + n
+- choices:
+  - 0: 8m − 5n
+  - 1: 4m − 3n
+  - 2: 8m − 3n
+  - 3: 10m − 3n
+- answerIndex: 2
+- correctChoice: 8m − 3n
+- explanation: m 項六加二得八 m，n 項負四加一得負三 n，分組合併後得八 m 減三 n。八 m 減五 n 是 n 項負四加一算成負五；四 m 減三 n 則 m 項漏加二 m，少加一項。
+- steps:
+  - 合併 m：6 + 2 = 8。
+  - 合併 n：−4 + 1 = −3。
+  - 得 8m − 3n。
+- commonMistake: n 項 −4n+n 算成 −5n 少加 1，或 m 項 6+2 漏加算成 4m 少加。
+
+### u10-s003-v008
+
+- skillId: like-terms-combine
+- difficulty: standard
+- text: 化簡 x² + 3x + 1 − 2x² + x − 4。
+- choices:
+  - 0: x² + 4x − 3
+  - 1: −x² + 2x − 3
+  - 2: −3x² + 4x − 3
+  - 3: −x² + 4x − 3
+- answerIndex: 3
+- correctChoice: −x² + 4x − 3
+- explanation: 平方項一減二係數得負一，一次項三加一得四，常數一減四得負三，整理負 x 平方加四 x 減三。x 平方加四 x 減三是平方項正負反了；負 x 平方加二 x 減三則一次項少加一。
+- steps:
+  - x² 1 − 2 = −1。
+  - x 3 + 1 = 4。
+  - 常數 1 − 4 = −3。
+- commonMistake: x² 項 1−2 算成 +1 得 x²，或 x 項 3+1 只保留 3 漏加得 2x。
+
+### u10-s003-v009
+
+- skillId: like-terms-combine
+- difficulty: standard
+- text: 長方形長 (2x+1)、寬 x，周長化簡後為何？
+- choices:
+  - 0: 6x + 2
+  - 1: 2x² + x
+  - 2: 4x + 2
+  - 3: 3x + 1
+- answerIndex: 0
+- correctChoice: 6x + 2
+- explanation: 長加寬得三 x 加一，周長乘二展開得六 x 加二。二 x 平方加 x 是把長乘寬當周長算面積；四 x 加二則周長公式漏乘二或漏加寬，長寬概念整個搞混了。
+- steps:
+  - 長+寬 = 3x + 1。
+  - 周長 = 2(3x+1)。
+  - 展開得 6x + 2。
+- commonMistake: 用長×寬算面積 2x²+x，或周長公式漏乘 2 得 4x+2。
+
+### u10-s003-v010
+
+- skillId: like-terms-combine
+- difficulty: advanced
+- text: 化簡 −(3x − 2) + 5x。（先展開再合併）
+- choices:
+  - 0: 8x − 2
+  - 1: 2x + 2
+  - 2: 2x − 2
+  - 3: 8x + 2
+- answerIndex: 1
+- correctChoice: 2x + 2
+- explanation: 括號前負號要分配到每一項，展開得負三 x 加二，再加五 x 得二 x 加二。八 x 減二是括號內常數沒變正二；二 x 減二則常數二符號弄反，正負搞錯了。
+- steps:
+  - −(3x−2) = −3x + 2。
+  - 加 5x：2x + 2。
+  - 整理得 2x + 2。
+- commonMistake: −(3x−2) 只變 3x 的符號，括號內 −2 沒變 +2，常數漏分配。
+
+### u10-s003-v011
+
+- skillId: like-terms-combine
+- difficulty: advanced
+- text: 化簡 0.5x + 1.5x。
+- choices:
+  - 0: 2x²
+  - 1: 0.65x
+  - 2: 2x
+  - 3: 2.25x
+- answerIndex: 2
+- correctChoice: 2x
+- explanation: 零點五 x 與一點五 x 是同類項，小數係數直接相加得一點五加零點五得二 x。二 x 平方是把指數也加；零點六五 x 則小數對位錯，二點二五 x 則誤用相乘而非相加。
+- steps:
+  - 兩項都是 x 的同類項。
+  - 0.5 + 1.5 = 2。
+  - 寫 2x。
+- commonMistake: 小數係數 0.5+1.5 對位錯算成 0.65，或誤乘得 2.25x。
+
+### u10-s003-v012
+
+- skillId: like-terms-combine
+- difficulty: literacy
+- text: 化簡 4p²q − 2pq² + p²q。
+- choices:
+  - 0: 3p²q − 2pq²
+  - 1: 5p²q + pq²
+  - 2: 3p²q + pq²
+  - 3: 5p²q − 2pq²
+- answerIndex: 3
+- correctChoice: 5p²q − 2pq²
+- explanation: 四 p 平方 q 與 p 平方 q 同類，係數四加一得五 p 平方 q；負二 pq 平方無同類保留。三 p 平方 q 是四加一算成三少加一；五 p 平方 q 加 pq 平方則把減號弄反變加，符號搞錯了。
+- steps:
+  - 4p²q 與 p²q 同類，得 5p²q。
+  - −2pq² 無同類。
+  - 寫 5p²q − 2pq²。
+- commonMistake: p²q 與 pq² 字母次數不同卻硬合併，或 4+1 算成 3 得 3p²q。
+
+### u10-s004-v001
+
+- skillId: polynomial-add-subtract
+- difficulty: basic
+- text: 計算 (2x + 3) + (x − 1)。
+- choices:
+  - 0: 3x + 2
+  - 1: 3x + 4
+  - 2: x + 2
+  - 3: 3x − 4
+- answerIndex: 0
+- correctChoice: 3x + 2
+- explanation: 兩個多項式相加時，括號前是加號就可以直接去掉括號，不必變號。x 的一次項 2x 與 x 是同類項，係數 2 加 1 得 3x；常數項 3 減 1 得 2，整式化簡為 3x + 2。若寫 3x + 4，是把常數 3−1 誤算成 3+1；x + 2 則 x 項只保留 2x，沒把後面括號裡的 x 加進來。
+- steps:
+  - 去掉括號。
+  - 2x + x = 3x。
+  - 3 − 1 = 2。
+- commonMistake: 常數項 3 與 −1 相減時誤用加法，算成 3+1，最後寫成 3x + 4。
+
+### u10-s004-v002
+
+- skillId: polynomial-add-subtract
+- difficulty: basic
+- text: 計算 (5x − 2) − (2x − 1)。
+- choices:
+  - 0: 3x − 3
+  - 1: 3x − 1
+  - 2: 7x − 1
+  - 3: 7x − 3
+- answerIndex: 1
+- correctChoice: 3x − 1
+- explanation: 減去 (2x − 1) 時，括號前面是減號，括號內每一項都要變號，變成 5x − 2 − 2x + 1。x 的一次項 5 − 2 = 3，寫 3x；常數 −2 + 1 = −1，整理得 3x − 1。3x − 3 是把括號內 +1 仍當 −1；7x − 1 則把 5x 與 2x 相加成 7x，忘了前面是減法。
+- steps:
+  - −(2x−1) 變 −2x+1。
+  - 5x − 2x = 3x。
+  - −2 + 1 = −1。
+- commonMistake: 減 (2x−1) 時括號內 +1 沒變成 −1，常數 −2−1 算成 −3，寫成 3x − 3。
+
+### u10-s004-v003
+
+- skillId: polynomial-add-subtract
+- difficulty: basic
+- text: 計算 (3x² + x) + (x² − 2x)。
+- choices:
+  - 0: 4x² + 3x
+  - 1: 2x² − x
+  - 2: 4x² − x
+  - 3: 4x² + x
+- answerIndex: 2
+- correctChoice: 4x² − x
+- explanation: 去掉括號後，x² 的同類項係數 3 加 1 得 4，寫 4x²；x 的同類項 1 加 (−2) 得 −1，寫 −x。整式整理為 4x² − x。4x² + 3x 是把 x 項 1−2 算成 +1 再加 2；2x² − x 則 x² 只加 1，沒把第一個括號的 3 算進去。
+- steps:
+  - x² 項 3 + 1 = 4。
+  - x 項 1 − 2 = −1。
+  - 寫 4x² − x。
+- commonMistake: x 的一次項 1−2 算成 +1 再加 2，同類項合併錯誤，寫成 4x² + 3x。
+
+### u10-s004-v004
+
+- skillId: polynomial-add-subtract
+- difficulty: basic
+- text: 計算 (4 − 3x) + (2x + 5)。
+- choices:
+  - 0: 9 + x
+  - 1: −x − 1
+  - 2: 9 − 5x
+  - 3: 9 − x
+- answerIndex: 3
+- correctChoice: 9 − x
+- explanation: x 的一次項 −3x 與 2x 是同類項，係數 −3 加 2 得 −1，寫 −x；常數 4 加 5 得 9。習慣把常數放前面，整理為 9 − x。9 + x 是把 −3+2 誤算成 +3−2；−x − 1 則常數 4+5 誤算成 4−5，正負都弄反。
+- steps:
+  - x 項 −3x + 2x = −x。
+  - 常數 4 + 5 = 9。
+  - 寫 9 − x。
+- commonMistake: −3x 與 2x 合併時算成 +3x − 2x，x 項符號弄反，最後寫成 9 + x。
+
+### u10-s004-v005
+
+- skillId: polynomial-add-subtract
+- difficulty: standard
+- text: 計算 (x² + 3x + 2) − (x² − x + 1)。
+- choices:
+  - 0: 4x + 1
+  - 1: 4x + 3
+  - 2: 2x + 1
+  - 3: 4x − 1
+- answerIndex: 0
+- correctChoice: 4x + 1
+- explanation: 減去 (x² − x + 1) 時，括號前是減號，括號內每一項都要變號。x² 項 x² − x² 相消；x 項 3x − (−x) 變成 3x + x = 4x；常數 2 − 1 = 1，得 4x + 1。4x + 3 是把常數 2−(−1) 誤算成 2+1；2x + 1 則減式中 −x 變號時沒變成 +x，x 項只算 3−1。
+- steps:
+  - x² 項相消。
+  - x：3 + 1 = 4。
+  - 常數 2 − 1 = 1。
+- commonMistake: 減式中 −x 變號時沒變成 +x，x 項只算 3−1 得 2x，寫成 2x + 1。
+
+### u10-s004-v006
+
+- skillId: polynomial-add-subtract
+- difficulty: standard
+- text: 計算 2(3x + 1) − (x − 4)。（先展開）
+- choices:
+  - 0: 5x − 2
+  - 1: 5x + 6
+  - 2: 6x + 6
+  - 3: 6x − 2
+- answerIndex: 1
+- correctChoice: 5x + 6
+- explanation: 題目要求先展開：2(3x + 1) = 6x + 2，分配律要乘進括號內每一項。再減 (x − 4)，括號內變號得 6x + 2 − x + 4。x 項 6 − 1 = 5x，常數 2 + 4 = 6，整理得 5x + 6。5x − 2 是 −4 沒變 +4；6x + 6 則展開後沒減去後面的 x，只做了分配律。
+- steps:
+  - 展開 6x + 2。
+  - 減 x 加 4。
+  - 合併 5x + 6。
+- commonMistake: 減 (x−4) 時 −4 沒有變成 +4，常數 2+4 漏加，寫成 5x − 2。
+
+### u10-s004-v007
+
+- skillId: polynomial-add-subtract
+- difficulty: standard
+- text: 小明有 (5x+10) 元，花 (2x+3) 元，剩多少？
+- choices:
+  - 0: 3x + 13
+  - 1: 7x + 7
+  - 2: 3x + 7
+  - 3: 3x − 7
+- answerIndex: 2
+- correctChoice: 3x + 7
+- explanation: 剩錢用減法列式 (5x + 10) − (2x + 3)，花掉的錢整段放在減號後面。去括號變 5x + 10 − 2x − 3，x 項 5 − 2 = 3x，常數 10 − 3 = 7，得 3x + 7 元。3x + 13 是括號內 +3 沒變 −3，變成 10+3；7x + 7 則 x 項 5+2 而非 5−2，減法當加法。
+- steps:
+  - 列式 (5x+10) − (2x+3)。
+  - x 項 5 − 2 = 3。
+  - 常數 10 − 3 = 7。
+- commonMistake: 花錢減法時括號內 +3 沒變 −3，常數 10−3 誤算成 10+3，寫成 3x + 13。
+
+### u10-s004-v008
+
+- skillId: polynomial-add-subtract
+- difficulty: standard
+- text: 計算 (−2x + 5) + (3x − 8)。
+- choices:
+  - 0: x + 13
+  - 1: 5x − 3
+  - 2: −5x − 3
+  - 3: x − 3
+- answerIndex: 3
+- correctChoice: x − 3
+- explanation: x 的一次項 −2x 與 3x 合併，係數 −2 加 3 得 1，寫 x；常數 5 加 (−8) 得 −3，整理為 x − 3。x + 13 是把 5−8 誤算成 5+8，正負弄反；5x − 3 則 x 係數 −2+3 算成 5；−5x − 3 是兩項 x 係數都取絕對值再相加。
+- steps:
+  - x：−2 + 3 = 1。
+  - 常數 5 − 8 = −3。
+  - 得 x − 3。
+- commonMistake: 常數 5 與 −8 合併時算成 5+8，正負弄反，寫成 x + 13。
+
+### u10-s004-v009
+
+- skillId: polynomial-add-subtract
+- difficulty: standard
+- text: 計算 (4a − 3b) − (a + 2b)。
+- choices:
+  - 0: 3a − 5b
+  - 1: 3a + b
+  - 2: 5a − 5b
+  - 3: 3a − b
+- answerIndex: 0
+- correctChoice: 3a − 5b
+- explanation: 減 (a + 2b) 時括號前是減號，括號內每一項都要變號，不能只做一半。a 項 4a − a = 3a；b 項 −3b − 2b = −5b，兩個 b 項都是減，得 3a − 5b。3a + b 是把 b 項 −3−2 算成 −3+2；3a − b 則只減 2b 一次；5a − 5b 是 a 項 4−1 誤算成 4+1。
+- steps:
+  - a 項 4 − 1 = 3。
+  - b 項 −3 − 2 = −5。
+  - 得 3a − 5b。
+- commonMistake: b 項 −3b 減 2b 時算成 −3b+2b，減號沒延續到後面的項，寫成 3a + b。
+
+### u10-s004-v010
+
+- skillId: polynomial-add-subtract
+- difficulty: advanced
+- text: 計算 (x² + 2) − (2x² − 1)。
+- choices:
+  - 0: −x² + 1
+  - 1: −x² + 3
+  - 2: 3x² + 3
+  - 3: −3x² + 3
+- answerIndex: 1
+- correctChoice: −x² + 3
+- explanation: 減 (2x² − 1) 時括號內每一項都要變號，減號要延續到括號內所有項：x² 項 x² − 2x²，係數 1 − 2 = −1，寫 −x²；常數 2 − (−1) 變成 2 + 1 = 3，得 −x² + 3。−x² + 1 是把 2−(−1) 誤算成 2−1；3x² + 3 則 x² 相減弄成 1+2 相加，最高次項符號全反。
+- steps:
+  - x² 1 − 2 = −1。
+  - 常數 2 + 1 = 3。
+  - 得 −x² + 3。
+- commonMistake: 常數 2 減 (−1) 時沒有變成 2+1，只寫 2−1，最後得 −x² + 1。
+
+### u10-s004-v011
+
+- skillId: polynomial-add-subtract
+- difficulty: advanced
+- text: 計算 (6x − 1) + (−2x + 4) − (x − 2)。
+- choices:
+  - 0: 3x + 1
+  - 1: 9x + 5
+  - 2: 3x + 5
+  - 3: 3x − 5
+- answerIndex: 2
+- correctChoice: 3x + 5
+- explanation: 三個括號依序去括號，注意最後一個前面是減號。x 項 6 − 2 − 1 = 3x；常數 −1 + 4 + 2 = 5，得 3x + 5。3x + 1 是減 (x−2) 時 −2 沒變 +2，常數少 4；9x + 5 則最後 −x 沒減掉，6−2 變 6+2；3x − 5 是常數 −1+4−2 三項符號全反。
+- steps:
+  - x：6 − 2 − 1 = 3。
+  - 常數 −1 + 4 + 2 = 5。
+  - 得 3x + 5。
+- commonMistake: 減 (x−2) 時 −2 沒變 +2，常數 −1+4 只算成 −1，最後寫成 3x + 1。
+
+### u10-s004-v012
+
+- skillId: polynomial-add-subtract
+- difficulty: literacy
+- text: 若 A = 2x² + x，B = x² − 3x + 1，求 A − B。
+- choices:
+  - 0: x² − 2x − 1
+  - 1: 3x² + 4x − 1
+  - 2: x² + 4x + 1
+  - 3: x² + 4x − 1
+- answerIndex: 3
+- correctChoice: x² + 4x − 1
+- explanation: A − B 表示從 A 減去整個 B，B 的每一項都要變號，減號要延續到括號內所有項才算完整。(2x² + x) − (x² − 3x + 1) 變成 2x² + x − x² + 3x − 1。x² 項 2 − 1 = 1；x 項 1 + 3 = 4；常數 −1，得 x² + 4x − 1。x² − 2x − 1 是 1−(−3) 算成 1−3；x² + 4x + 1 則常數 +1 沒變 −1。
+- steps:
+  - 減 B 每一項變號。
+  - x²：2 − 1 = 1。
+  - x：1 + 3 = 4，常數 −1。
+- commonMistake: x 的一次項 1 減 (−3) 應變 1+3，若算成 1−3 就會得 x² − 2x − 1。
+
+### u10-s005-v001
+
+- skillId: monomial-multiply
+- difficulty: basic
+- text: 計算 3x · 4x。
+- choices:
+  - 0: 12x²
+  - 1: 7x
+  - 2: 12x
+  - 3: 7x²
+- answerIndex: 0
+- correctChoice: 12x²
+- explanation: 單項式相乘，係數與係數相乘、同底指數相加。係數 3 × 4 = 12，x 的指數 1 + 1 = 2，得 12x²。7x 是把係數 3 與 4 相加；12x 則 x 指數沒加，只保留一次方；7x² 雖然指數對了，係數仍用加法。
+- steps:
+  - 係數 3 × 4 = 12。
+  - x 指數 1 + 1 = 2。
+  - 得 12x²。
+- commonMistake: 單項式相乘時把係數 3 與 4 相加而非相乘，寫成 7x 或 7x²。
+
+### u10-s005-v002
+
+- skillId: monomial-multiply
+- difficulty: basic
+- text: 計算 (−2x²) · 5x³。
+- choices:
+  - 0: −10x⁶
+  - 1: −10x⁵
+  - 2: 3x⁵
+  - 3: 10x⁵
+- answerIndex: 1
+- correctChoice: −10x⁵
+- explanation: 單項式相乘，係數與係數相乘、同底指數相加。係數 (−2) × 5 = −10，負正相乘得負；x 指數 2 + 3 = 5，得 −10x⁵。−10x⁶ 是指數 2+3 多加了 1；3x⁵ 則係數 −2+5 用加法；10x⁵ 是 (−2)×5 的負號漏看，正負弄反。
+- steps:
+  - 係數 −2 × 5 = −10。
+  - 指數 2 + 3 = 5。
+  - 得 −10x⁵。
+- commonMistake: 指數 2+3 算成 6，或負係數 (−2)×5 的負號漏看，寫成 10x⁵。
+
+### u10-s005-v003
+
+- skillId: monomial-multiply
+- difficulty: basic
+- text: 計算 6a²b · (−3ab²)。
+- choices:
+  - 0: −18a²b²
+  - 1: 3a³b³
+  - 2: −18a³b³
+  - 3: −18a³b²
+- answerIndex: 2
+- correctChoice: −18a³b³
+- explanation: 多字母單項式相乘，係數與係數相乘，各字母指數分別相加。係數 6 × (−3) = −18；a 指數 2 + 1 = 3，b 指數 1 + 2 = 3，得 −18a³b³。−18a²b² 是 a、b 指數沒全加；−18a³b² 則 b 指數只加 1 沒加 2；3a³b³ 是把係數 6 與 −3 相加。
+- steps:
+  - 係數 −18。
+  - a 指數 3，b 指數 3。
+  - 得 −18a³b³。
+- commonMistake: b 的指數 1+2 只保留 1 沒加 2，字母指數合併不完整，寫成 −18a³b²。
+
+### u10-s005-v004
+
+- skillId: monomial-multiply
+- difficulty: basic
+- text: 計算 x⁴ · x²。
+- choices:
+  - 0: x⁸
+  - 1: 2x⁶
+  - 2: x²
+  - 3: x⁶
+- answerIndex: 3
+- correctChoice: x⁶
+- explanation: 同底 x 相乘，底數不變、指數相加：4 + 2 = 6，得 x⁶。x⁸ 是把指數 4 與 2 相乘，同底相乘規則用錯；2x⁶ 則多寫係數 2；x² 是把 4−2 誤用相減，除法規則混進乘法。
+- steps:
+  - 底數都是 x。
+  - 指數 4 + 2 = 6。
+  - 得 x⁶。
+- commonMistake: 同底相乘時把指數 4 與 2 相乘而非相加，寫成 x⁸。
+
+### u10-s005-v005
+
+- skillId: monomial-multiply
+- difficulty: standard
+- text: 計算 (−4y³) · (−2y)。
+- choices:
+  - 0: 8y⁴
+  - 1: −8y⁴
+  - 2: 6y⁴
+  - 3: 8y³
+- answerIndex: 0
+- correctChoice: 8y⁴
+- explanation: 係數 (−4) × (−2) = 8，負負得正，兩個負號相乘會得正數；y 指數 3 + 1 = 4，得 8y⁴。−8y⁴ 是負負沒變正，只處理一個負號；6y⁴ 則係數 −4+(−2) 用加法；8y³ 是 y 指數 3+1 沒加，次數少 1。
+- steps:
+  - 係數 8。
+  - 指數 3 + 1 = 4。
+  - 得 8y⁴。
+- commonMistake: 兩個負係數相乘仍保留一個負號，負負得正規則用錯，寫成 −8y⁴。
+
+### u10-s005-v006
+
+- skillId: monomial-multiply
+- difficulty: standard
+- text: 計算 5 · 3x²。
+- choices:
+  - 0: 8x²
+  - 1: 15x²
+  - 2: 15x
+  - 3: 8x
+- answerIndex: 1
+- correctChoice: 15x²
+- explanation: 常數 5 乘單項式 3x²：係數 5 × 3 = 15，x² 的指數不變仍為 2，得 15x²。8x² 是把 5+3 相加；15x 則 x² 次數掉成 x¹，指數沒保留；8x 是係數與指數都弄錯，加法與乘法混用。
+- steps:
+  - 係數 5 × 3 = 15。
+  - x² 保留。
+  - 得 15x²。
+- commonMistake: 常數乘單項式時把係數 5 與 3 相加，寫成 8x² 而非 15x²。
+
+### u10-s005-v007
+
+- skillId: monomial-multiply
+- difficulty: standard
+- text: 計算 (2x)³。（視為三個 2x 相乘）
+- choices:
+  - 0: 6x³
+  - 1: 8x
+  - 2: 8x³
+  - 3: 2x³
+- answerIndex: 2
+- correctChoice: 8x³
+- explanation: (2x)³ 表示整個 2x 連乘三次，不是只把 2 乘 3：係數 2³ = 8，x 連乘三次得 x³，所以 8x³。6x³ 是把 2×3 當係數，只乘 3 沒立方；2x³ 則只把 x 立方、2 沒立方；8x 是 x 指數沒乘 3，次數不足，整體規則用錯。
+- steps:
+  - 2³ = 8。
+  - x 乘三次得 x³。
+  - 得 8x³。
+- commonMistake: 把 (2x)³ 算成 2×3·x³，係數只乘 3 沒有算 2³=8，寫成 6x³。
+
+### u10-s005-v008
+
+- skillId: monomial-multiply
+- difficulty: standard
+- text: 長方形長 2x、寬 3x，面積是多少？
+- choices:
+  - 0: 5x
+  - 1: 6x
+  - 2: 5x²
+  - 3: 6x²
+- answerIndex: 3
+- correctChoice: 6x²
+- explanation: 長方形面積等於長乘寬，不能把長與寬相加。列式 2x × 3x，係數 2 × 3 = 6，x 指數 1 + 1 = 2，得 6x²。5x 是把長寬 2x+3x 相加，周長與面積混淆；6x 則 x 指數沒加；5x² 是係數 2+3 相加。
+- steps:
+  - 面積 = 長 × 寬。
+  - 2x × 3x。
+  - 得 6x²。
+- commonMistake: 面積題把長 2x 與寬 3x 相加，周長與面積公式混淆，寫成 5x。
+
+### u10-s005-v009
+
+- skillId: monomial-multiply
+- difficulty: standard
+- text: 計算 4m²n · 5mn³。
+- choices:
+  - 0: 20m³n⁴
+  - 1: 20m²n³
+  - 2: 9m³n⁴
+  - 3: 20mn⁴
+- answerIndex: 0
+- correctChoice: 20m³n⁴
+- explanation: 係數 4 × 5 = 20；m 指數 2 + 1 = 3，n 指數 1 + 3 = 4，兩個字母指數要分別相加，不能漏掉任何一個，得 20m³n⁴。20m²n³ 是 m、n 指數沒全加；9m³n⁴ 則係數 4+5 相加；20mn⁴ 是 m 指數 2+1 漏加，只保留 n 的變化。
+- steps:
+  - 係數 4×5=20。
+  - m：2+1，n：1+3。
+  - 得 20m³n⁴。
+- commonMistake: m 的指數 2+1 只保留 2 沒加 1，多字母指數合併不完整，寫成 20m²n⁴。
+
+### u10-s005-v010
+
+- skillId: monomial-multiply
+- difficulty: advanced
+- text: 計算 (−x²) · 3x · (−2x⁴)。
+- choices:
+  - 0: −6x⁷
+  - 1: 6x⁷
+  - 2: 6x⁶
+  - 3: −5x⁷
+- answerIndex: 1
+- correctChoice: 6x⁷
+- explanation: 三個因式連乘，係數 (−1) × 3 × (−2) = 6，兩個負號相乘得正；x 指數 2 + 1 + 4 = 7，三個指數全部相加，得 6x⁷。−6x⁷ 是只處理其中一個負號；6x⁶ 則指數 2+1+4 少加 1；−5x⁷ 是把係數用加法 −1+3+(−2)。
+- steps:
+  - 係數 (−1)×3×(−2)=6。
+  - 指數 2+1+4=7。
+  - 得 6x⁷。
+- commonMistake: 兩個負號相乘應為正，若只處理其中一個負號，就會把答案寫成 −6x⁷。
+
+### u10-s005-v011
+
+- skillId: monomial-multiply
+- difficulty: advanced
+- text: 計算 10x⁵ ÷ 2x²。（單項式除法，係數相除、指數相減）
+- choices:
+  - 0: 5x⁷
+  - 1: 8x³
+  - 2: 5x³
+  - 3: 5x²
+- answerIndex: 2
+- correctChoice: 5x³
+- explanation: 單項式除法：係數相除、同底指數相減，不能混用乘法的指數相加。係數 10 ÷ 2 = 5，x 指數 5 − 2 = 3，得 5x³。5x⁷ 是把指數 5−2 誤算成 5+2；8x³ 則係數 10−2 用減法；5x² 是指數只減 1，5−2 算成 2。
+- steps:
+  - 係數 10 ÷ 2 = 5。
+  - 指數 5 − 2 = 3。
+  - 得 5x³。
+- commonMistake: 指數相減 5−2 算成 5+2，除法指數規則用錯，寫成 5x⁷。
+
+### u10-s005-v012
+
+- skillId: monomial-multiply
+- difficulty: literacy
+- text: 計算 (−6a³b²) · (−a²b)。
+- choices:
+  - 0: −6a⁵b³
+  - 1: 6a⁶b²
+  - 2: −6a⁶b³
+  - 3: 6a⁵b³
+- answerIndex: 3
+- correctChoice: 6a⁵b³
+- explanation: 係數 (−6) × (−1) = 6，負負得正，兩個負號相乘會得正數；a 指數 3 + 2 = 5，b 指數 2 + 1 = 3，各字母指數分別相加，得 6a⁵b³。−6a⁵b³ 是負負沒變正；6a⁶b³ 則 a 指數 3+2 算成 6；6a⁶b² 是 b 指數 2+1 漏加。
+- steps:
+  - 係數 6。
+  - a 指數 5，b 指數 3。
+  - 得 6a⁵b³。
+- commonMistake: 負係數 (−6)×(−1) 符號弄錯，負負得正規則用錯，寫成 −6a⁵b³。
+
+### u10-s006-v001
+
+- skillId: monomial-polynomial-distribute
+- difficulty: basic
+- text: 計算 2(x + 3)。
+- choices:
+  - 0: 2x + 6
+  - 1: 2x + 3
+  - 2: x + 6
+  - 3: 2x + 5
+- answerIndex: 0
+- correctChoice: 2x + 6
+- explanation: 分配律要求 2 乘括號內每一項，不能只做一半。2×x = 2x，2×3 = 6，兩項都乘完得 2x + 6。2x + 3 是常數 3 沒乘 2，只乘了第一項；x + 6 則 x 沒乘 2；2x + 5 是把 3 誤算成 2+3 只加一次，分配不完整。
+- steps:
+  - 2 × x = 2x。
+  - 2 × 3 = 6。
+  - 得 2x + 6。
+- commonMistake: 分配律只乘第一項 x，常數 3 沒有乘 2，寫成 2x + 3。
+
+### u10-s006-v002
+
+- skillId: monomial-polynomial-distribute
+- difficulty: basic
+- text: 計算 −3(2x − 1)。
+- choices:
+  - 0: −6x − 3
+  - 1: −6x + 3
+  - 2: 6x + 3
+  - 3: −6x − 1
+- answerIndex: 1
+- correctChoice: −6x + 3
+- explanation: −3 要分別乘以括號內 2x 和 −1 兩項，分配律不能只做一半：−3×2x = −6x，−3×(−1) = +3，負負得正，得 −6x + 3。−6x − 3 是 −1 乘 −3 沒變正；6x + 3 則 −3×2x 符號反了；−6x − 1 是 −1 沒乘 3，第二項分配漏做。
+- steps:
+  - −3 × 2x = −6x。
+  - −3 × (−1) = 3。
+  - 得 −6x + 3。
+- commonMistake: −3 乘 (−1) 算成 −3 而非 +3，負負得正規則用錯，寫成 −6x − 3。
+
+### u10-s006-v003
+
+- skillId: monomial-polynomial-distribute
+- difficulty: basic
+- text: 計算 x(x + 4)。
+- choices:
+  - 0: x² + 4
+  - 1: 2x + 4
+  - 2: x² + 4x
+  - 3: x + 4x
+- answerIndex: 2
+- correctChoice: x² + 4x
+- explanation: x 要分別乘以括號內 x 和 4 兩項，分配律兩項都要乘到：x×x = x²，x×4 = 4x，兩項都乘完得 x² + 4x。x² + 4 是 4 沒乘 x，第二項分配漏做；2x + 4 則 x×x 誤當 x+x；x + 4x 是 x² 沒算出來，只寫 x 加 4x。
+- steps:
+  - x × x = x²。
+  - x × 4 = 4x。
+  - 得 x² + 4x。
+- commonMistake: x 乘 4 時漏掉 x，只把 4 寫出來，最後寫成 x² + 4。
+
+### u10-s006-v004
+
+- skillId: monomial-polynomial-distribute
+- difficulty: basic
+- text: 計算 4(2x² − x + 1)。
+- choices:
+  - 0: 8x² − x + 4
+  - 1: 6x² − 4x + 4
+  - 2: 8x² − 4x + 1
+  - 3: 8x² − 4x + 4
+- answerIndex: 3
+- correctChoice: 8x² − 4x + 4
+- explanation: 4 要乘括號內三項，每一項都不能漏，分配律要完整做完全部三項才算答對：4×2x² = 8x²，4×(−x) = −4x，4×1 = 4，整理得 8x² − 4x + 4。8x² − x + 4 是 −x 只乘 1 沒乘 4；6x² − 4x + 4 則 2+4 相加；8x² − 4x + 1 是常數 1 沒乘 4。
+- steps:
+  - 4×2x²=8x²。
+  - 4×(−x)=−4x。
+  - 4×1=4。
+- commonMistake: −x 項只乘 1 沒有乘 4，分配不完整，寫成 8x² − x + 4。
+
+### u10-s006-v005
+
+- skillId: monomial-polynomial-distribute
+- difficulty: standard
+- text: 計算 −2(3 − x)。
+- choices:
+  - 0: −6 + 2x
+  - 1: −6 − 2x
+  - 2: 6 + 2x
+  - 3: −6 + x
+- answerIndex: 0
+- correctChoice: −6 + 2x
+- explanation: −2 要分別乘以括號內 3 和 −x 兩項，分配律兩項都要乘到：−2×3 = −6，−2×(−x) = +2x，負負得正，得 −6 + 2x。−6 − 2x 是 −x 乘 −2 沒變正；6 + 2x 則 −6 符號反了；−6 + x 是 −x 只乘 1 沒乘 2，係數分配不完整。
+- steps:
+  - −2 × 3 = −6。
+  - −2 × (−x) = 2x。
+  - 得 −6 + 2x。
+- commonMistake: −2 乘 (−x) 沒有變成 +2x，負負得正規則用錯，寫成 −6 − 2x。
+
+### u10-s006-v006
+
+- skillId: monomial-polynomial-distribute
+- difficulty: standard
+- text: 計算 5x(2x + 1)。
+- choices:
+  - 0: 7x² + 5x
+  - 1: 10x² + 5x
+  - 2: 10x + 5
+  - 3: 10x² + 1
+- answerIndex: 1
+- correctChoice: 10x² + 5x
+- explanation: 5x 要分別乘以括號內 2x 和 1 兩項，分配律兩項都要乘到才算完整：5x×2x = 10x²，係數 5×2=10、指數 1+1=2；5x×1 = 5x，兩項都乘完得 10x² + 5x。7x² + 5x 是把 5+2 相加當 x² 係數；10x + 5 則 x² 次數掉；10x² + 1 是 1 沒乘 5x。
+- steps:
+  - 5x × 2x = 10x²。
+  - 5x × 1 = 5x。
+  - 得 10x² + 5x。
+- commonMistake: 5x 乘 2x 後 x 指數沒加，只保留一次方，寫成 10x + 5。
+
+### u10-s006-v007
+
+- skillId: monomial-polynomial-distribute
+- difficulty: standard
+- text: 長方形長 (x+2)、寬 3，面積展開後為何？
+- choices:
+  - 0: 3x + 2
+  - 1: x + 6
+  - 2: 3x + 6
+  - 3: 3x + 5
+- answerIndex: 2
+- correctChoice: 3x + 6
+- explanation: 長方形面積 = 寬 × 長，列式 3(x+2)，分配律要乘進括號內每一項。3×x = 3x，3×2 = 6，得 3x + 6。3x + 2 是常數 2 沒乘 3，分配只做一半；x + 6 則 x 沒乘 3；3x + 5 是把 2 誤算成 2+3 只加一次。
+- steps:
+  - 面積 = 3(x+2)。
+  - 3×x=3x，3×2=6。
+  - 得 3x + 6。
+- commonMistake: 寬 3 只乘 x 沒乘常數 2，分配律只做一半，寫成 3x + 2。
+
+### u10-s006-v008
+
+- skillId: monomial-polynomial-distribute
+- difficulty: standard
+- text: 計算 −x(4x − 3)。
+- choices:
+  - 0: −4x² − 3x
+  - 1: 4x² + 3x
+  - 2: −4x + 3x
+  - 3: −4x² + 3x
+- answerIndex: 3
+- correctChoice: −4x² + 3x
+- explanation: −x 要分別乘以括號內 4x 和 −3 兩項，分配律兩項都要乘到才算完整：−x×4x = −4x²，−x×(−3) = +3x，負負得正，得 −4x² + 3x。−4x² − 3x 是 −3 乘 −x 沒變正；4x² + 3x 則 −x 係數漏看；−4x + 3x 是 4x² 少一個 x，指數合併錯。
+- steps:
+  - −x × 4x = −4x²。
+  - −x × (−3) = 3x。
+  - 得 −4x² + 3x。
+- commonMistake: −x 乘 (−3) 時符號弄錯，負負得正規則用錯，寫成 −4x² − 3x。
+
+### u10-s006-v009
+
+- skillId: monomial-polynomial-distribute
+- difficulty: standard
+- text: 計算 2a(3a − 2b + 5)。
+- choices:
+  - 0: 6a² − 4ab + 10a
+  - 1: 6a² − 4b + 10a
+  - 2: 5a² − 4ab + 7a
+  - 3: 6a² − 2ab + 10a
+- answerIndex: 0
+- correctChoice: 6a² − 4ab + 10a
+- explanation: 2a 要乘括號內三項，每一項都要乘到，分配律要完整做完全部三項才算答對：2a×3a = 6a²，2a×(−2b) = −4ab，2a×5 = 10a，得 6a² − 4ab + 10a。6a² − 4b + 10a 是 −2b 只乘 2 沒乘 a；6a² − 2ab + 10a 則 −2 沒全乘；5a² − 4ab + 7a 是係數相加。
+- steps:
+  - 2a×3a=6a²。
+  - 2a×(−2b)=−4ab。
+  - 2a×5=10a。
+- commonMistake: −2b 項只乘 2 沒有乘 a，分配不完整，寫成 6a² − 4b + 10a。
+
+### u10-s006-v010
+
+- skillId: monomial-polynomial-distribute
+- difficulty: advanced
+- text: 計算 −4(x² + x − 1)。
+- choices:
+  - 0: −4x² − 4x − 4
+  - 1: −4x² − 4x + 4
+  - 2: −4x² + 4x + 4
+  - 3: −4x² − x + 4
+- answerIndex: 1
+- correctChoice: −4x² − 4x + 4
+- explanation: −4 要乘括號內三項，每一項都要乘到，分配律要完整做完全部三項：−4×x² = −4x²，−4×x = −4x，−4×(−1) = +4，負負得正，得 −4x² − 4x + 4。−4x² − 4x − 4 是最後 −1×(−4) 算成 −4；−4x² + 4x + 4 則 x 項符號反了；−4x² − x + 4 是 x 只乘 1。
+- steps:
+  - −4×x²=−4x²。
+  - −4×x=−4x。
+  - −4×(−1)=4。
+- commonMistake: −4 乘 (−1) 最後一項算成 −4 而非 +4，負負得正規則用錯，寫成 −4x² − 4x − 4。
+
+### u10-s006-v011
+
+- skillId: monomial-polynomial-distribute
+- difficulty: advanced
+- text: 計算 3xy(2x − y)。
+- choices:
+  - 0: 6x²y − 3xy
+  - 1: 5x²y − 3xy²
+  - 2: 6x²y − 3xy²
+  - 3: 6xy − 3xy²
+- answerIndex: 2
+- correctChoice: 6x²y − 3xy²
+- explanation: 3xy 要分別乘以括號內 2x 和 −y 兩項，分配律兩項都要乘到。第一項 3xy·2x = 6x²y，x 指數 1+1=2；第二項 3xy·(−y) = −3xy²，y 指數 1+1=2，得 6x²y − 3xy²。6x²y − 3xy 是第二項少乘一個 y；5x²y − 3xy² 則把係數 3 與 2 用加法。
+- steps:
+  - 3xy×2x=6x²y。
+  - 3xy×(−y)=−3xy²。
+  - 寫 6x²y − 3xy²。
+- commonMistake: 3xy 乘 −y 時 y 指數沒加 1，少乘一個 y，寫成 −3xy 而非 −3xy²。
+
+### u10-s006-v012
+
+- skillId: monomial-polynomial-distribute
+- difficulty: literacy
+- text: 計算 −(2x + 5) + 3(x − 1)。（先分配再合併）
+- choices:
+  - 0: x − 2
+  - 1: 5x − 8
+  - 2: x + 2
+  - 3: x − 8
+- answerIndex: 3
+- correctChoice: x − 8
+- explanation: 題目要求先分配再整理，兩段都要做完整才算答對：−(2x+5) = −2x−5，3(x−1) = 3x−3，相加得 −2x−5+3x−3。x 項 −2+3 = x，常數 −5−3 = −8，整理 x − 8。x − 2 是常數 −5−3 算成 −2；5x − 8 則 x 合併成 5x；x + 2 是常數符號全反。
+- steps:
+  - −(2x+5)=−2x−5。
+  - 3(x−1)=3x−3。
+  - 合併 x−8。
+- commonMistake: 常數 −5 與 −3 合併時算成 −2 而非 −8，正負或加法弄錯，寫成 x − 2。
+
+### u10-s007-v001
+
+- skillId: binomial-multiply-basic
+- difficulty: basic
+- text: (x + 2)(x + 3) 展開後為何？
+- choices:
+  - 0: x² + 5x + 6
+  - 1: x² + 6x + 5
+  - 2: 2x² + 5x + 6
+  - 3: x² + 5x − 6
+- answerIndex: 0
+- correctChoice: x² + 5x + 6
+- explanation: 先用 x 去乘第二個括號，得到 x²+3x；再用 2 去乘，得到 2x+6。把兩段一次項 3x 與 2x 加起來是 5x，常數 6 直接保留，整理後 x²+5x+6。x²+6x+5 是把 3+2 誤算成 6、又把常數 6 與 5 對調；2x²+5x+6 則第一項 x·x 係數多乘，寫成 2x²。
+- steps:
+  - x 乘 x + 3：x² + 3x。
+  - 2 乘 x + 3：2x + 6。
+  - 合併同類項：x² + 5x + 6。
+- commonMistake: 一次項 3x 加 2x 誤寫成 6x，或常數 6 與 5 位置對調。
+
+### u10-s007-v002
+
+- skillId: binomial-multiply-basic
+- difficulty: basic
+- text: (x − 1)(x + 4) 展開後為何？
+- choices:
+  - 0: x² + 5x − 4
+  - 1: x² + 3x − 4
+  - 2: x² − 3x − 4
+  - 3: x² + 4x − 1
+- answerIndex: 1
+- correctChoice: x² + 3x − 4
+- explanation: 依分配律，x 乘 (x+4) 得 x²+4x；−1 乘 (x+4) 得 −x−4。把 4x 與 −x 合併是 3x，常數 −4 保留，整理 x²+3x−4。x²+5x−4 是把 −1·x 當 +x 去加 4x 符號弄反；x²−3x−4 則 −1·x 的負號處理錯，變成再減 3x 而不是加 3x。一次項少 3x。
+- steps:
+  - x 乘 x + 4：x² + 4x。
+  - −1 乘 x + 4：−x − 4。
+  - 合併：x² + 3x − 4。
+- commonMistake: −1 乘 x 得 −x，卻當 +x 去跟 4x 相加，一次項變 5x。
+
+### u10-s007-v003
+
+- skillId: binomial-multiply-basic
+- difficulty: basic
+- text: (2x + 1)(x + 2) 展開後為何？
+- choices:
+  - 0: 2x² + 3x + 2
+  - 1: 3x² + 5x + 2
+  - 2: 2x² + 5x + 2
+  - 3: 2x² + 4x + 1
+- answerIndex: 2
+- correctChoice: 2x² + 5x + 2
+- explanation: 2x 乘 (x+2) 得 2x²+4x；1 乘 (x+2) 得 x+2。把 4x 加 x 是 5x，常數 2 保留，整理 2x²+5x+2。2x²+3x+2 是 4x+x 只加出 3x 少加 1x；3x²+5x+2 則 2x·x 的係數 2 漏乘，第一項誤寫成 3x² 不是 2x²。首項 2x 乘 x 時係數 2 要算進去不能漏。
+- steps:
+  - 2x 乘 x + 2：2x² + 4x。
+  - 1 乘 x + 2：x + 2。
+  - 合併：2x² + 5x + 2。
+- commonMistake: 4x 與 x 合併只寫 3x 少 1，或 2x·x 係數漏乘寫成 3x²。
+
+### u10-s007-v004
+
+- skillId: binomial-multiply-basic
+- difficulty: basic
+- text: (x − 3)(x − 2) 展開後為何？
+- choices:
+  - 0: x² − 5x − 6
+  - 1: x² + 5x + 6
+  - 2: x² − 6x + 5
+  - 3: x² − 5x + 6
+- answerIndex: 3
+- correctChoice: x² − 5x + 6
+- explanation: x 乘 (x−2) 得 x²−2x；−3 乘 (x−2) 得 −3x+6。把 −2x 與 −3x 合併 −5x，常數 +6 保留，得 x²−5x+6。x²−5x−6 是把 −3·(−2) 算成 −6 常數符號錯；x²+5x+6 則兩個一次項符號都弄反，−2x−3x 變 +5x。兩個負號相乘常數才會變正。
+- steps:
+  - x 乘 x − 2：x² − 2x。
+  - −3 乘 x − 2：−3x + 6。
+  - 合併：x² − 5x + 6。
+- commonMistake: −3 乘 −2 常數項算成 −6 符號錯，或 −2x−3x 符號全反變 +5x。
+
+### u10-s007-v005
+
+- skillId: binomial-multiply-basic
+- difficulty: standard
+- text: (3x + 2)(x − 1) 展開後為何？
+- choices:
+  - 0: 3x² − x − 2
+  - 1: 3x² + x − 2
+  - 2: 3x² − 5x − 2
+  - 3: 4x² − x − 2
+- answerIndex: 0
+- correctChoice: 3x² − x − 2
+- explanation: 3x 乘 (x−1) 得 3x²−3x；2 乘 (x−1) 得 2x−2。把 −3x 加 2x 是 −x，常數 −2 保留，整理 3x²−x−2。3x²+x−2 是把 −3x+2x 算成 +x 符號反了；3x²−5x−2 則 2x 與 −3x 加總算成 −5x，多減了一次 2x。一次項 −3x 加 2x 合併後是 −x 不是 +x，也不能把 2x 當 −2x 去加。
+- steps:
+  - 3x 乘 x − 1：3x² − 3x。
+  - 2 乘 x − 1：2x − 2。
+  - 合併：3x² − x − 2。
+- commonMistake: −3x+2x 合併符號弄反寫 +x，或 2x 與 −3x 加總誤算 −5x。
+
+### u10-s007-v006
+
+- skillId: binomial-multiply-basic
+- difficulty: standard
+- text: (x + 5)(2x − 1) 展開後為何？
+- choices:
+  - 0: 2x² + 10x − 5
+  - 1: 2x² + 9x − 5
+  - 2: 3x² + 9x − 5
+  - 3: 2x² + 9x + 5
+- answerIndex: 1
+- correctChoice: 2x² + 9x − 5
+- explanation: x 乘 (2x−1) 得 2x²−x；5 乘 (2x−1) 得 10x−5。把 −x 加 10x 是 9x，常數 −5 保留，得 2x²+9x−5。2x²+10x−5 是把 −x+10x 當 10x 漏減 1x；2x²+9x+5 則 5·(−1) 常數符號寫成 +5，負號漏看。5 乘 (2x−1) 要分別算出 10x 與 −5，−x+10x 合併是 9x 不是 10x，常數 5×(−1)=−5 不能寫 +5。
+- steps:
+  - x 乘 2x − 1：2x² − x。
+  - 5 乘 2x − 1：10x − 5。
+  - 合併：2x² + 9x − 5。
+- commonMistake: −x+10x 只保留 10x 漏減 1，或 5 乘 −1 常數項符號寫反。
+
+### u10-s007-v007
+
+- skillId: binomial-multiply-basic
+- difficulty: standard
+- text: (x − 4)(x + 7) 展開後為何？
+- choices:
+  - 0: x² − 3x − 28
+  - 1: x² + 11x − 28
+  - 2: x² + 3x − 28
+  - 3: x² + 3x + 28
+- answerIndex: 2
+- correctChoice: x² + 3x − 28
+- explanation: x 乘 (x+7) 得 x²+7x；−4 乘 (x+7) 得 −4x−28。把 7x 與 −4x 合併 3x，常數 −28 保留，整理 x²+3x−28。x²−3x−28 是把 −4x 當 +4x 去跟 7x 相減；x²+11x−28 則 7x−(−4x) 誤算成 11x，符號處理錯。7x 減 4x 合併得 3x 不是 11x，常數 (−4)×7=−28 不能寫成 +28 或漏算。
+- steps:
+  - x 乘 x + 7：x² + 7x。
+  - −4 乘 x + 7：−4x − 28。
+  - 合併：x² + 3x − 28。
+- commonMistake: −4 乘 x 得 −4x，卻當 +4x 跟 7x 相減，一次項變 −3x 而不是 3x。
+
+### u10-s007-v008
+
+- skillId: binomial-multiply-basic
+- difficulty: standard
+- text: (2x − 3)(x + 1) 展開後為何？
+- choices:
+  - 0: 2x² + x − 3
+  - 1: 2x² − 5x − 3
+  - 2: 3x² − x − 3
+  - 3: 2x² − x − 3
+- answerIndex: 3
+- correctChoice: 2x² − x − 3
+- explanation: 2x 乘 (x+1) 得 2x²+2x；−3 乘 (x+1) 得 −3x−3。把 2x 與 −3x 合併 −x，常數 −3 保留，得 2x²−x−3。2x²+x−3 是把 −3x 當 +x 去加 2x 符號反了；2x²−5x−3 則 2x−3x 算成 −5x，多減一次 2x 少加 4x。2x 與 −3x 合併只少 1x 得 −x，不是 −5x 也不是 +x，常數項 (−3)×1=−3。
+- steps:
+  - 2x 乘 x + 1：2x² + 2x。
+  - −3 乘 x + 1：−3x − 3。
+  - 合併：2x² − x − 3。
+- commonMistake: 2x−3x 合併算成 −5x 多減，或 −3x 符號弄反變 +x 得 2x²+x−3。
+
+### u10-s007-v009
+
+- skillId: binomial-multiply-basic
+- difficulty: standard
+- text: (x + 6)(x − 1) 展開後為何？
+- choices:
+  - 0: x² + 5x − 6
+  - 1: x² + 7x − 6
+  - 2: x² − 5x − 6
+  - 3: x² + 5x + 6
+- answerIndex: 0
+- correctChoice: x² + 5x − 6
+- explanation: x 乘 (x−1) 得 x²−x；6 乘 (x−1) 得 6x−6。把 −x 加 6x 是 5x，常數 −6 保留，整理 x²+5x−6。x²+7x−6 是把 −x+6x 算成 7x 多加了 1x；x²−5x−6 則 6x 符號弄反變 −6x 去跟 −x 合併，一次項變 −5x。6 乘 (x−1) 常數是 −6 不是 +6，−x+6x 合併是 5x 不是 7x。
+- steps:
+  - x 乘 x − 1：x² − x。
+  - 6 乘 x − 1：6x − 6。
+  - 合併：x² + 5x − 6。
+- commonMistake: −x+6x 加總寫 7x 多 1，或 6 乘 (x−1) 常數項符號弄反變 +6。
+
+### u10-s007-v010
+
+- skillId: binomial-multiply-basic
+- difficulty: advanced
+- text: (3x − 1)(2x + 3) 展開後為何？
+- choices:
+  - 0: 6x² + 11x − 3
+  - 1: 6x² + 7x − 3
+  - 2: 5x² + 7x − 3
+  - 3: 6x² + 7x + 3
+- answerIndex: 1
+- correctChoice: 6x² + 7x − 3
+- explanation: 3x 乘 (2x+3) 得 6x²+9x；−1 乘 (2x+3) 得 −2x−3。把 9x 與 −2x 合併 7x，常數 −3 保留，整理 6x²+7x−3。6x²+11x−3 是把 9x−2x 算成 11x 多加了 2x；6x²+7x+3 則常數項來自 (−1)×3=−3，漏掉 −1 的負號而寫成 +3。−1 乘 3 得 −3 常數不能寫 +3，一次項 9x−2x=7x。
+- steps:
+  - 3x 乘 2x + 3：6x² + 9x。
+  - −1 乘 2x + 3：−2x − 3。
+  - 合併：6x² + 7x − 3。
+- commonMistake: 9x−2x 合併寫 11x 多加了 2，或 −1 乘 3 常數項符號寫反。
+
+### u10-s007-v011
+
+- skillId: binomial-multiply-basic
+- difficulty: advanced
+- text: (x − 2)(3x + 4) 展開後為何？
+- choices:
+  - 0: 3x² + 2x − 8
+  - 1: 4x² − 2x − 8
+  - 2: 3x² − 2x − 8
+  - 3: 3x² − 6x − 8
+- answerIndex: 2
+- correctChoice: 3x² − 2x − 8
+- explanation: x 乘 (3x+4) 得 3x²+4x；−2 乘 (3x+4) 得 −6x−8。把 4x 與 −6x 合併 −2x，常數 −8 保留，得 3x²−2x−8。3x²+2x−8 是把 −6x 當 +2x 去加 4x 符號反了；3x²−6x−8 則 4x−6x 只減一次得 −6x，漏加 4x。−2 乘 (3x+4) 得 −6x−8，常數項 (−2)×4=−8 不能寫成 +8，4x 加 (−6x) 合併是 −2x 不是 −6x。
+- steps:
+  - x 乘 3x + 4：3x² + 4x。
+  - −2 乘 3x + 4：−6x − 8。
+  - 合併：3x² − 2x − 8。
+- commonMistake: 4x−6x 合併只寫 −6x 漏加 4x，或 −2·3x 符號弄反變 +6x。
+
+### u10-s007-v012
+
+- skillId: binomial-multiply-basic
+- difficulty: literacy
+- text: 一長方形長 (x + 2) 公分、寬 (x + 3) 公分，面積展開後為何？
+- choices:
+  - 0: x² + 5x + 5
+  - 1: 2x² + 5x + 6
+  - 2: x² + 6x + 5
+  - 3: x² + 5x + 6
+- answerIndex: 3
+- correctChoice: x² + 5x + 6
+- explanation: 長方形面積等於長乘寬，也就是 (x+2)(x+3)。x 乘 (x+3) 得 x²+3x，2 乘 (x+3) 得 2x+6，3x+2x=5x，常數 2×3=6，面積 x²+5x+6。x²+5x+5 常數 2×3 漏算成 5；x²+6x+5 則一次項與常數對調，6 與 5 位置錯。2 乘 (x+3) 得 2x+6 不能漏算。
+- steps:
+  - 面積 = 長 × 寬 = (x + 2)(x + 3)。
+  - 分配律展開：x² + 3x + 2x + 6。
+  - 合併得 x² + 5x + 6。
+- commonMistake: 長乘寬展開常數 2×3 漏算成 5，或 3x+2x 與常數 6 位置對調。
+
+### u10-s008-v001
+
+- skillId: square-sum-formula
+- difficulty: basic
+- text: (x + 3)² 展開後為何？
+- choices:
+  - 0: x² + 6x + 9
+  - 1: x² + 9
+  - 2: x² + 3x + 9
+  - 3: x² + 6x + 6
+- answerIndex: 0
+- correctChoice: x² + 6x + 9
+- explanation: (x+3)² 可寫成 (x+3)(x+3)：x²+3x+3x+9，兩段 3x 加起來 6x，整理 x²+6x+9。x²+9 是漏掉兩段 3x 中間項；x²+3x+9 則只保留一段 3x，忘了 2·x·3=6x 前面還要乘 2。分配律兩段 3x 加總才是 6x 不是 3x，2·x·3 要乘 2。2·x·3 要乘 2 得 6x。
+- steps:
+  - 寫成 (x + 3)(x + 3)。
+  - 展開：x² + 3x + 3x + 9。
+  - 合併一次項：x² + 6x + 9。
+- commonMistake: 展開只寫 x²+9 漏中間項，或 2·x·3 只算一次得 3x 漏乘 2。
+
+### u10-s008-v002
+
+- skillId: square-sum-formula
+- difficulty: basic
+- text: (2x + 1)² 展開後為何？
+- choices:
+  - 0: 4x² + 2x + 1
+  - 1: 4x² + 4x + 1
+  - 2: 2x² + 4x + 1
+  - 3: 4x² + 4x + 2
+- answerIndex: 1
+- correctChoice: 4x² + 4x + 1
+- explanation: (2x+1)² 第一項 (2x)²=4x²，中間 2·2x·1=4x，末項 1²=1，整理 4x²+4x+1。4x²+2x+1 是 2·2x·1 只算 2x 漏乘 2；2x²+4x+1 則 (2x)² 係數 2 漏平方，第一項誤寫 2x² 不是 4x²。係數 2x 平方時 2 也要平方。係數 2x 平方時 2 也要平方成 4。
+- steps:
+  - 第一項平方：(2x)² = 4x²。
+  - 中間項 2·2x·1 = 4x。
+  - 第二項平方：1² = 1，合併 4x² + 4x + 1。
+- commonMistake: 2·2x·1 只寫 2x 漏乘 2，或 (2x)² 只算 2x² 沒把 2 平方。首項 4x² 不是 2x²。
+
+### u10-s008-v003
+
+- skillId: square-sum-formula
+- difficulty: basic
+- text: (x + 5)² 展開後為何？
+- choices:
+  - 0: x² + 10x + 10
+  - 1: x² + 25
+  - 2: x² + 10x + 25
+  - 3: x² + 5x + 25
+- answerIndex: 2
+- correctChoice: x² + 10x + 25
+- explanation: (x+5)² 第一項 x²，中間 2·x·5=10x，末項 5²=25，整理 x²+10x+25。x²+10x+10 常數 5² 算成 10 不是 25；x²+5x+25 則 2·x·5 只算 x·5=5x 漏乘 2。5 平方是 25 不是 10。漏乘 2 時中間項只有 5x 不是 10x；5 平方是 25 不是 10。2·x·5 要乘 2 得 10x，10x 才是正確中間項。
+- steps:
+  - x² 是第一項平方。
+  - 2·x·5 = 10x 是中間項。
+  - 5² = 25，寫成 x² + 10x + 25。
+- commonMistake: 5² 算成 10 不是 25，或 2·x·5 只寫 5x 漏乘 2 得一半。
+
+### u10-s008-v004
+
+- skillId: square-sum-formula
+- difficulty: basic
+- text: (3x + 2)² 展開後為何？
+- choices:
+  - 0: 9x² + 6x + 4
+  - 1: 6x² + 12x + 4
+  - 2: 9x² + 12x + 2
+  - 3: 9x² + 12x + 4
+- answerIndex: 3
+- correctChoice: 9x² + 12x + 4
+- explanation: (3x+2)² 第一項 (3x)²=9x²，中間 2·3x·2=12x，末項 2²=4，整理 9x²+12x+4。9x²+6x+4 是 2·3x·2 只算 3x·2=6x 漏乘 2；9x²+12x+2 則 2² 常數算成 2 不是 4，平方漏算。3x 與 2 都要分別平方與乘 2。首項係數乘進去不能漏。首項 9x² 與中間 12x 都要寫出。
+- steps:
+  - (3x)² = 9x²。
+  - 2·3x·2 = 12x。
+  - 2² = 4，整理成 9x² + 12x + 4。
+- commonMistake: 2·3x·2 只算 3x·2 得 6x 漏乘 2，或 2² 算成 2 不是 4。常數平方要對照。
+
+### u10-s008-v005
+
+- skillId: square-sum-formula
+- difficulty: standard
+- text: (x + 7)² 展開後為何？
+- choices:
+  - 0: x² + 14x + 49
+  - 1: x² + 7x + 49
+  - 2: x² + 49
+  - 3: x² + 14x + 14
+- answerIndex: 0
+- correctChoice: x² + 14x + 49
+- explanation: (x+7)² 第一項 x²，中間 2·x·7=14x，末項 7²=49，整理 x²+14x+49。x²+7x+49 是 2·x·7 只算 x·7=7x 漏乘 2；x²+14x+14 則 7² 算成 14 不是 49，常數平方錯。7 平方是 49 中間是 14x。7 平方是 49 中間是 14x，2·x·7 要乘 2。2·x·7 要乘 2 得 14x，14x 才是正確中間項。
+- steps:
+  - 第一項 x² 不變。
+  - 中間項 2·x·7 = 14x。
+  - 常數 7² = 49，整理成 x² + 14x + 49。
+- commonMistake: 2·x·7 只寫 7x 漏乘 2，或 7² 誤算成 14 不是 49。中間項要乘 2。
+
+### u10-s008-v006
+
+- skillId: square-sum-formula
+- difficulty: standard
+- text: (4x + 1)² 展開後為何？
+- choices:
+  - 0: 16x² + 4x + 1
+  - 1: 16x² + 8x + 1
+  - 2: 8x² + 8x + 1
+  - 3: 16x² + 8x + 2
+- answerIndex: 1
+- correctChoice: 16x² + 8x + 1
+- explanation: (4x+1)² 第一項 (4x)²=16x²，中間 2·4x·1=8x，末項 1²=1，整理 16x²+8x+1。16x²+4x+1 是 2·4x·1 只算 4x·1=4x 漏乘 2；8x²+8x+1 則 (4x)² 係數 4 漏平方成 8x² 不是 16x²。4x 平方得 16x² 不是 8x²。4x 平方得 16x² 不是 8x²，2·4x·1 要乘 2。2·4x·1 要乘 2 得 8x，8x 才是正確中間項。
+- steps:
+  - (4x)² = 16x²。
+  - 2·4x·1 = 8x。
+  - 1² = 1，合併 16x² + 8x + 1。
+- commonMistake: 2·4x·1 只寫 4x 漏乘 2，或 (4x)² 只算 8x² 沒把 4 平方。首項平方易少算。
+
+### u10-s008-v007
+
+- skillId: square-sum-formula
+- difficulty: standard
+- text: (x + 2)² 展開後為何？
+- choices:
+  - 0: x² + 2x + 4
+  - 1: x² + 4
+  - 2: x² + 4x + 4
+  - 3: x² + 4x + 2
+- answerIndex: 2
+- correctChoice: x² + 4x + 4
+- explanation: (x+2)² 第一項 x²，中間 2·x·2=4x，末項 2²=4，整理 x²+4x+4。x²+2x+4 是 2·x·2 只算 x·2=2x 漏乘 2；x²+4 則整段 4x 中間項漏掉，只剩 x² 與常數 4 兩項。展開要有 x²、4x、4 三項，2·x·2 要乘 2。2·x·2 要乘 2 得 4x，4x 才是正確中間項。
+- steps:
+  - x² 是第一項。
+  - 2·x·2 = 4x 是中間項。
+  - 2² = 4，整理成 x² + 4x + 4。
+- commonMistake: 2·x·2 只寫 2x 漏乘 2，或展開漏掉整段 4x 中間項。
+
+### u10-s008-v008
+
+- skillId: square-sum-formula
+- difficulty: standard
+- text: (5x + 2)² 展開後為何？
+- choices:
+  - 0: 25x² + 10x + 4
+  - 1: 10x² + 20x + 4
+  - 2: 25x² + 20x + 2
+  - 3: 25x² + 20x + 4
+- answerIndex: 3
+- correctChoice: 25x² + 20x + 4
+- explanation: (5x+2)² 第一項 (5x)²=25x²，中間 2·5x·2=20x，末項 2²=4，整理 25x²+20x+4。25x²+10x+4 是 2·5x·2 只算 5x·2=10x 漏乘 2；25x²+20x+2 則 2² 常數算成 2 不是 4，平方漏算。5x 平方 25x² 中間 20x。5x 平方 25x² 中間 20x 末項 4，2·5x·2 要乘 2。2·5x·2 要乘 2 得 20x，20x 才是正確中間項。
+- steps:
+  - (5x)² = 25x²。
+  - 2·5x·2 = 20x。
+  - 2² = 4，整理成 25x² + 20x + 4。
+- commonMistake: 2·5x·2 只算 5x·2 得 10x 漏乘 2，或 2² 算成 2 不是 4。常數 2 平方是 4。
+
+### u10-s008-v009
+
+- skillId: square-sum-formula
+- difficulty: standard
+- text: (x + 1)² 展開後為何？
+- choices:
+  - 0: x² + 2x + 1
+  - 1: x² + 1
+  - 2: x² + x + 1
+  - 3: x² + 2x + 2
+- answerIndex: 0
+- correctChoice: x² + 2x + 1
+- explanation: (x+1)² 第一項 x²，中間 2·x·1=2x，末項 1²=1，整理 x²+2x+1。x²+1 漏掉 2x 中間項只剩兩項；x²+x+1 則 2·x·1 只算 x·1=x 漏乘 2。(x+1)² 展開要有 2x 中間項，2·x·1 要乘 2。2·x·1 要乘 2 得 2x，2x 才是正確中間項，末項 1 平方得 1。
+- steps:
+  - x² 是第一項平方。
+  - 2·x·1 = 2x。
+  - 1² = 1，整理成 x² + 2x + 1。
+- commonMistake: 展開只寫 x²+1 漏 2x 中間項，或 2·x·1 只寫 x 漏乘 2。
+
+### u10-s008-v010
+
+- skillId: square-sum-formula
+- difficulty: advanced
+- text: (2x + 3)² 展開後為何？
+- choices:
+  - 0: 4x² + 6x + 9
+  - 1: 4x² + 12x + 9
+  - 2: 2x² + 12x + 9
+  - 3: 4x² + 12x + 6
+- answerIndex: 1
+- correctChoice: 4x² + 12x + 9
+- explanation: (2x+3)² 第一項 (2x)²=4x²，中間 2·2x·3=12x，末項 3²=9，整理 4x²+12x+9。4x²+6x+9 是 2·2x·3 只算 2x·3=6x 漏乘 2；2x²+12x+9 則 (2x)² 係數 2 漏平方成 2x² 不是 4x²。2x 與 3 都要帶進公式。2x 平方 4x² 中間 12x 末項 9，2·2x·3 要乘 2。2·2x·3 要乘 2 得 12x，12x 才是正確中間項。
+- steps:
+  - (2x)² = 4x²。
+  - 2·2x·3 = 12x。
+  - 3² = 9，整理成 4x² + 12x + 9。
+- commonMistake: 2·2x·3 只算 2x·3 得 6x 漏乘 2，或 (2x)² 只寫 2x² 漏平方。首項 4x² 不是 2x²。
+
+### u10-s008-v011
+
+- skillId: square-sum-formula
+- difficulty: advanced
+- text: (x + 4)² 展開後為何？
+- choices:
+  - 0: x² + 4x + 16
+  - 1: x² + 16
+  - 2: x² + 8x + 16
+  - 3: x² + 8x + 8
+- answerIndex: 2
+- correctChoice: x² + 8x + 16
+- explanation: (x+4)² 第一項 x 平方得 x²，中間項 2·x·4=8x，末項 4 平方得 16，整理 x²+8x+16。x²+4x+16 是 2·x·4 只算 x·4=4x 漏乘 2；x²+8x+8 則 4² 常數算成 8 不是 16，平方漏算。2·x·4 就是 8x 不是 4x，末項 16 不能寫 8，三項都要寫齊。中間 8x 與末項 16 都要寫出，不能漏掉任一段。
+- steps:
+  - x² 保留。
+  - 2·x·4 = 8x。
+  - 4² = 16，整理成 x² + 8x + 16。
+- commonMistake: 2·x·4 只寫 4x 漏乘 2，或 4² 誤算成 8 不是 16，4 平方是 16。
+
+### u10-s008-v012
+
+- skillId: square-sum-formula
+- difficulty: literacy
+- text: 一正方形邊長 (x + 4) 公分，面積展開後為何？
+- choices:
+  - 0: x² + 4x + 16
+  - 1: x² + 16
+  - 2: x² + 8x + 8
+  - 3: x² + 8x + 16
+- answerIndex: 3
+- correctChoice: x² + 8x + 16
+- explanation: 正方形面積等於邊長平方，也就是 (x+4)²。第一項 x²，中間 2·x·4=8x，末項 4²=16，面積 x²+8x+16。x²+4x+16 是 2·x·4 只算 4x 漏乘 2；x²+8x+8 則 4² 算成 8 不是 16，常數平方錯。邊長平方跟代數展開是一回事。
+- steps:
+  - 面積 = 邊長² = (x + 4)²。
+  - 套用公式：x² + 2·x·4 + 16。
+  - 整理得 x² + 8x + 16。
+- commonMistake: 邊長平方展開 2·x·4 只寫 4x 漏乘 2，或 4² 算成 8 不是 16。
+
+### u10-s009-v001
+
+- skillId: square-difference-formula
+- difficulty: basic
+- text: (x − 2)² 展開後為何？
+- choices:
+  - 0: x² − 4x + 4
+  - 1: x² + 4x + 4
+  - 2: x² − 4
+  - 3: x² − 2x + 4
+- answerIndex: 0
+- correctChoice: x² − 4x + 4
+- explanation: (x−2)² 第一項 x²，中間 −2·x·2=−4x，末項 (−2)²=4，整理 x²−4x+4。x²+4x+4 中間項符號弄反變 +4x；x²−2x+4 則 −2·x·2 只算 x·2=2x 漏乘 2，且符號也可能錯。減號平方中間項仍是負的。一次項只有 −2x 不是 −4x。
+- steps:
+  - 第一項 x²。
+  - 中間項 −2·x·2 = −4x。
+  - 常數 2² = 4，整理成 x² − 4x + 4。
+- commonMistake: −2·x·2 中間項符號寫 +4x，或只算 x·2=2x 漏乘 2。中間項符號最易反。
+
+### u10-s009-v002
+
+- skillId: square-difference-formula
+- difficulty: basic
+- text: (x − 5)² 展開後為何？
+- choices:
+  - 0: x² − 5x + 25
+  - 1: x² − 10x + 25
+  - 2: x² + 10x + 25
+  - 3: x² − 25
+- answerIndex: 1
+- correctChoice: x² − 10x + 25
+- explanation: (x−5)² 第一項 x²，中間 −2·x·5=−10x，末項 5²=25，整理 x²−10x+25。x²−5x+25 是 −2·x·5 只算 x·5=5x 漏乘 2；x²+10x+25 則中間項符號全反變 +10x，跟完全平方和搞混。減 5 平方中間是 −10x。減 5 平方中間是 −10x 常數 25。
+- steps:
+  - x² 是第一項。
+  - −2·x·5 = −10x。
+  - 5² = 25，整理成 x² − 10x + 25。
+- commonMistake: −2·x·5 只寫 5x 漏乘 2，或中間項符號弄反寫 +10x。
+
+### u10-s009-v003
+
+- skillId: square-difference-formula
+- difficulty: basic
+- text: (2x − 1)² 展開後為何？
+- choices:
+  - 0: 4x² − 2x + 1
+  - 1: 2x² − 4x + 1
+  - 2: 4x² − 4x + 1
+  - 3: 4x² + 4x + 1
+- answerIndex: 2
+- correctChoice: 4x² − 4x + 1
+- explanation: (2x−1)² 第一項 (2x)²=4x²，中間 −2·2x·1=−4x，末項 1²=1，整理 4x²−4x+1。4x²−2x+1 是 −2·2x·1 只算 2x·1=2x 漏乘 2；4x²+4x+1 則中間項符號弄反變 +4x，跟 (2x+1)² 搞混。2x 減 1 平方跟加 1 中間符號相反。2x 減 1 平方中間符號與加 1 相反。
+- steps:
+  - (2x)² = 4x²。
+  - −2·2x·1 = −4x。
+  - 1² = 1，整理成 4x² − 4x + 1。
+- commonMistake: −2·2x·1 只算 2x·1 得 2x 漏乘 2，或中間項寫 +4x 符號反。
+
+### u10-s009-v004
+
+- skillId: square-difference-formula
+- difficulty: basic
+- text: (x − 7)² 展開後為何？
+- choices:
+  - 0: x² − 7x + 49
+  - 1: x² + 14x + 49
+  - 2: x² − 49
+  - 3: x² − 14x + 49
+- answerIndex: 3
+- correctChoice: x² − 14x + 49
+- explanation: (x−7)² 第一項 x²，中間 −2·x·7=−14x，末項 7²=49，整理 x²−14x+49。x²−7x+49 是 −2·x·7 只算 x·7=7x 漏乘 2；x²+14x+49 則中間項符號弄反變 +14x，跟 (x+7)² 搞混。減 7 平方中間 −14x 常數 49。減 7 平方中間 −14x 常數 49，2·x·7 要乘 2。2·x·7 要乘 2 得 −14x。
+- steps:
+  - x² 保留。
+  - −2·x·7 = −14x。
+  - 7² = 49，整理成 x² − 14x + 49。
+- commonMistake: −2·x·7 只寫 7x 漏乘 2，或中間項符號弄反寫 +14x。
+
+### u10-s009-v005
+
+- skillId: square-difference-formula
+- difficulty: standard
+- text: (3x − 2)² 展開後為何？
+- choices:
+  - 0: 9x² − 12x + 4
+  - 1: 9x² − 6x + 4
+  - 2: 9x² + 12x + 4
+  - 3: 6x² − 12x + 4
+- answerIndex: 0
+- correctChoice: 9x² − 12x + 4
+- explanation: (3x−2)² 第一項 (3x)²=9x²，中間 −2·3x·2=−12x，末項 2²=4，整理 9x²−12x+4。9x²−6x+4 是 −2·3x·2 只算 3x·2=6x 漏乘 2；9x²+12x+4 則中間項符號弄反變 +12x，跟 (3x+2)² 搞混。3x 減 2 中間 −12x 不是 −6x。3x 減 2 中間 −12x 不是 −6x，2·3x·2 要乘 2。2·3x·2 要乘 2 得 −12x，−12x 才是正確中間項。
+- steps:
+  - (3x)² = 9x²。
+  - −2·3x·2 = −12x。
+  - 2² = 4，整理成 9x² − 12x + 4。
+- commonMistake: −2·3x·2 只算 3x·2 得 6x 漏乘 2，或中間項寫 +12x 符號反。
+
+### u10-s009-v006
+
+- skillId: square-difference-formula
+- difficulty: standard
+- text: (x − 1)² 展開後為何？
+- choices:
+  - 0: x² − x + 1
+  - 1: x² − 2x + 1
+  - 2: x² − 1
+  - 3: x² + 2x + 1
+- answerIndex: 1
+- correctChoice: x² − 2x + 1
+- explanation: (x−1)² 第一項 x²，中間 −2·x·1=−2x，末項 1²=1，整理 x²−2x+1。x²−x+1 是 −2·x·1 只算 x·1=x 漏乘 2；x²+2x+1 則中間項符號弄反，跟 (x+1)² 完全搞混。減 1 平方是最常搞混的。首項係數乘進去不能漏。
+- steps:
+  - x² 是第一項。
+  - −2·x·1 = −2x。
+  - 1² = 1，整理成 x² − 2x + 1。
+- commonMistake: −2·x·1 只寫 x 漏乘 2，或中間項符號弄反跟完全平方和混淆。
+
+### u10-s009-v007
+
+- skillId: square-difference-formula
+- difficulty: standard
+- text: (4x − 3)² 展開後為何？
+- choices:
+  - 0: 16x² − 12x + 9
+  - 1: 16x² + 24x + 9
+  - 2: 16x² − 24x + 9
+  - 3: 8x² − 24x + 9
+- answerIndex: 2
+- correctChoice: 16x² − 24x + 9
+- explanation: (4x−3)² 第一項 (4x)²=16x²，中間 −2·4x·3=−24x，末項 3²=9，整理 16x²−24x+9。16x²−12x+9 是 −2·4x·3 只算 4x·3=12x 漏乘 2；16x²+24x+9 則中間項符號弄反變 +24x，跟 (4x+3)² 搞混。4x 減 3 中間 −24x 不是 −12x。4x 減 3 中間 −24x 不是 −12x，2·4x·3 要乘 2。2·4x·3 要乘 2 得 −24x，−24x 才是正確中間項。
+- steps:
+  - (4x)² = 16x²。
+  - −2·4x·3 = −24x。
+  - 3² = 9，整理成 16x² − 24x + 9。
+- commonMistake: −2·4x·3 只算 4x·3 得 12x 漏乘 2，或中間項寫 +24x 符號反。
+
+### u10-s009-v008
+
+- skillId: square-difference-formula
+- difficulty: standard
+- text: (x − 10)² 展開後為何？
+- choices:
+  - 0: x² − 10x + 100
+  - 1: x² + 20x + 100
+  - 2: x² − 100
+  - 3: x² − 20x + 100
+- answerIndex: 3
+- correctChoice: x² − 20x + 100
+- explanation: (x−10)² 第一項 x²，中間 −2·x·10=−20x，末項 10²=100，整理 x²−20x+100。x²−10x+100 是 −2·x·10 只算 x·10=10x 漏乘 2；x²+20x+100 則中間項符號弄反變 +20x，跟 (x+10)² 搞混。減 10 平方中間 −20x 常數 100。減 10 平方中間 −20x 常數 100，2·x·10 要乘 2。2·x·10 要乘 2 得 −20x。
+- steps:
+  - x² 保留。
+  - −2·x·10 = −20x。
+  - 10² = 100，整理成 x² − 20x + 100。
+- commonMistake: −2·x·10 只寫 10x 漏乘 2，或中間項符號弄反寫 +20x。
+
+### u10-s009-v009
+
+- skillId: square-difference-formula
+- difficulty: standard
+- text: (5x − 2)² 展開後為何？
+- choices:
+  - 0: 25x² − 20x + 4
+  - 1: 25x² − 10x + 4
+  - 2: 25x² + 20x + 4
+  - 3: 10x² − 20x + 4
+- answerIndex: 0
+- correctChoice: 25x² − 20x + 4
+- explanation: (5x−2)² 第一項 (5x)²=25x²，中間 −2·5x·2=−20x，末項 2²=4，整理 25x²−20x+4。25x²−10x+4 是 −2·5x·2 只算 5x·2=10x 漏乘 2；25x²+20x+4 則中間項符號弄反變 +20x，跟 (5x+2)² 搞混。5x 減 2 中間 −20x 不是 −10x。5x 減 2 中間 −20x 不是 −10x，2·5x·2 要乘 2。2·5x·2 要乘 2 得 −20x，−20x 才是正確中間項。
+- steps:
+  - (5x)² = 25x²。
+  - −2·5x·2 = −20x。
+  - 2² = 4，整理成 25x² − 20x + 4。
+- commonMistake: −2·5x·2 只算 5x·2 得 10x 漏乘 2，或中間項寫 +20x 符號反。
+
+### u10-s009-v010
+
+- skillId: square-difference-formula
+- difficulty: advanced
+- text: (x − 4)² 展開後為何？
+- choices:
+  - 0: x² − 4x + 16
+  - 1: x² − 8x + 16
+  - 2: x² + 8x + 16
+  - 3: x² − 16
+- answerIndex: 1
+- correctChoice: x² − 8x + 16
+- explanation: (x−4)² 第一項 x²，中間 −2·x·4=−8x，末項 4²=16，整理 x²−8x+16。x²−4x+16 是 −2·x·4 只算 x·4=4x 漏乘 2；x²+8x+16 則中間項符號弄反，跟 (x+4)² 完全搞混。減 4 跟加 4 中間項符號相反，−8x 不是 +8x 也不是 −4x，4² 常數仍是 16。
+- steps:
+  - x² 是第一項。
+  - −2·x·4 = −8x。
+  - 4² = 16，整理成 x² − 8x + 16。
+- commonMistake: −2·x·4 只寫 4x 漏乘 2，或中間項符號弄反跟 (x+4)² 混淆。
+
+### u10-s009-v011
+
+- skillId: square-difference-formula
+- difficulty: advanced
+- text: (2x − 5)² 展開後為何？
+- choices:
+  - 0: 4x² − 10x + 25
+  - 1: 4x² + 20x + 25
+  - 2: 4x² − 20x + 25
+  - 3: 4x² − 25
+- answerIndex: 2
+- correctChoice: 4x² − 20x + 25
+- explanation: (2x−5)² 第一項 (2x)²=4x²，中間 −2·2x·5=−20x，末項 5²=25，整理 4x²−20x+25。4x²−10x+25 是 −2·2x·5 只算 2x·5=10x 漏乘 2；4x²+20x+25 則中間項符號弄反變 +20x，跟 (2x+5)² 搞混。2x 減 5 中間 −20x 常數 25。2x 減 5 中間 −20x 常數 25，2·2x·5 要乘 2。2·2x·5 要乘 2 得 −20x，−20x 才是正確中間項。
+- steps:
+  - (2x)² = 4x²。
+  - −2·2x·5 = −20x。
+  - 5² = 25，整理成 4x² − 20x + 25。
+- commonMistake: −2·2x·5 只算 2x·5 得 10x 漏乘 2，或中間項寫 +20x 符號反。
+
+### u10-s009-v012
+
+- skillId: square-difference-formula
+- difficulty: literacy
+- text: 一正方形邊長 (x − 3) 公分，面積展開後為何？
+- choices:
+  - 0: x² − 3x + 9
+  - 1: x² + 6x + 9
+  - 2: x² − 9
+  - 3: x² − 6x + 9
+- answerIndex: 3
+- correctChoice: x² − 6x + 9
+- explanation: 正方形面積等於邊長平方，也就是 (x−3)²。第一項 x²，中間 −2·x·3=−6x，末項 3²=9，面積 x²−6x+9。x²−3x+9 是 −2·x·3 只算 x·3=3x 漏乘 2；x²+6x+9 則中間項符號弄反變 +6x，跟 (x+3)² 搞混。邊長 x−3 平方中間是 −6x。
+- steps:
+  - 面積 = 邊長² = (x − 3)²。
+  - 套用公式：x² − 2·x·3 + 9。
+  - 整理得 x² − 6x + 9。
+- commonMistake: −2·x·3 只寫 3x 漏乘 2，或中間項符號弄反寫 +6x。
+
+### u10-s010-v001
+
+- skillId: difference-of-squares-expand
+- difficulty: basic
+- text: (x + 3)(x − 3) 展開後為何？
+- choices:
+  - 0: x² − 9
+  - 1: x² + 9
+  - 2: x² − 6x + 9
+  - 3: x² + 6x − 9
+- answerIndex: 0
+- correctChoice: x² − 9
+- explanation: 左右括號一個加、一個減，底數都是 x 與 3，符合 (a+b)(a−b) 型，套用 a²−b²：先算 (x)²=x²，再算 3²=9，兩平方相減得 x²−9，中間 ±3x 會互相抵消。x²+9 是末項 9 前用了加號；x²−6x+9 則誤把式子當 (x−3)² 去展開，多算出 −6x 這一項。
+- steps:
+  - x 乘 x − 3：x² − 3x。
+  - 3 乘 x − 3：3x − 9。
+  - 合併：3x − 3x 消去，整理成 x² − 9。
+- commonMistake: 平方差末項 9 前減號寫成加，或誤用 (x−3)² 完全平方式多算中間項。
+
+### u10-s010-v002
+
+- skillId: difference-of-squares-expand
+- difficulty: basic
+- text: (2x + 5)(2x − 5) 展開後為何？
+- choices:
+  - 0: 4x² + 25
+  - 1: 4x² − 25
+  - 2: 4x² − 20x + 25
+  - 3: 2x² − 25
+- answerIndex: 1
+- correctChoice: 4x² − 25
+- explanation: 看到底數相同、符號相反的配對，兩括號加減對稱、底數都是 2x 與 5，用 a²−b² 展開：第一項 (2x)²=4x²，第二項 5²=25，中間 ±10x 相消，整理 4x²−25。4x²+25 是 25 前加減弄反；4x²−20x+25 則按 (2x−5)² 算出 −20x；2x²−25 則 (2x)² 漏平方只寫 2x²。
+- steps:
+  - 第一項 (2x)² = 4x²。
+  - 第二項 5² = 25。
+  - 中間項抵消，整理成 4x² − 25。
+- commonMistake: 末項 25 前面減號寫成加，或套用 (2x−5)² 多算 −20x 中間項。
+
+### u10-s010-v003
+
+- skillId: difference-of-squares-expand
+- difficulty: basic
+- text: (x + 1)(x − 1) 展開後為何？
+- choices:
+  - 0: x² + 1
+  - 1: x² − 2x + 1
+  - 2: x² − 1
+  - 3: x² + 2x − 1
+- answerIndex: 2
+- correctChoice: x² − 1
+- explanation: 括號內一正一負、底數都是 x 與 1，套用 (a+b)(a−b)=a²−b²：x² 減 1²，中間 ±x 抵消，得 x²−1。x²+1 把減 1² 寫成加；x²−2x+1 則當成 (x−1)² 去展開，多 −2x；x²+2x−1 則分配律展開時中間項符號弄錯。
+- steps:
+  - x 乘 x − 1：x² − x。
+  - 1 乘 x − 1：x − 1。
+  - 合併：x² − 1。
+- commonMistake: 1² 前面應是減號卻寫成加，或誤用 (x−1)² 完全平方式展開。
+
+### u10-s010-v004
+
+- skillId: difference-of-squares-expand
+- difficulty: basic
+- text: (3x + 4)(3x − 4) 展開後為何？
+- choices:
+  - 0: 9x² + 16
+  - 1: 9x² − 24x + 16
+  - 2: 6x² − 16
+  - 3: 9x² − 16
+- answerIndex: 3
+- correctChoice: 9x² − 16
+- explanation: 這題兩邊都是 3x 與 4 的加減配對，符合 (a+b)(a−b) 型，令 a=3x、b=4：先算 (3x)²=9x²，再算 4²=16，相減後 ±12x 相消，得 9x²−16。9x²+16 是 16 前符號反了；9x²−24x+16 則是 (3x−4)² 的展開；6x²−16 則 (3x)² 只乘 3 沒平方。展開時記得先判斷是不是平方差再下手。
+- steps:
+  - (3x)² = 9x²。
+  - 4² = 16。
+  - 中間項消去，整理成 9x² − 16。
+- commonMistake: 16 前面用加號，或把平方差誤當 (3x−4)² 去展開多算中間項。
+
+### u10-s010-v005
+
+- skillId: difference-of-squares-expand
+- difficulty: standard
+- text: (x + 6)(x − 6) 展開後為何？
+- choices:
+  - 0: x² − 36
+  - 1: x² + 36
+  - 2: x² − 12x + 36
+  - 3: x² − 6
+- answerIndex: 0
+- correctChoice: x² − 36
+- explanation: 先用分配律分項展開 x(x−6)+6(x−6)=x²−6x+6x−36，正負 6x 相消；也可直接套 (a+b)(a−b)：x²−6²=x²−36。x²+36 是 36 前寫成加；x²−12x+36 則誤用 (x−6)² 多算 −12x；x²−6 則 6² 只算成 6 而漏平方。對照時可對照分配律與公式兩種寫法。
+- steps:
+  - 分配律展開四項。
+  - +6x 與 −6x 抵消。
+  - 得 x² − 36。
+- commonMistake: 36 前加減符號寫錯，或誤當 (x−6)² 完全平方去算中間項。
+
+### u10-s010-v006
+
+- skillId: difference-of-squares-expand
+- difficulty: standard
+- text: (5x + 1)(5x − 1) 展開後為何？
+- choices:
+  - 0: 25x² + 1
+  - 1: 25x² − 1
+  - 2: 25x² − 10x + 1
+  - 3: 5x² − 1
+- answerIndex: 1
+- correctChoice: 25x² − 1
+- explanation: 這是 (a+b)(a−b) 型，a=5x，b=1：(5x)²=25x²，1²=1，相減得 25x²−1，±5x 全部抵消。25x²+1 是把減號寫成加號；25x²−10x+1 則誤當成 (5x−1)² 去展開；5x²−1 則 5x 只乘一次沒平方成 25x²。係數 5 要整個平方，不能只做一次乘法。
+- steps:
+  - (5x)² = 25x²。
+  - 1² = 1。
+  - 中間項消去，整理成 25x² − 1。
+- commonMistake: 末項 1 的減號寫成加，或套用 (5x−1)² 多算 −10x 中間項。
+
+### u10-s010-v007
+
+- skillId: difference-of-squares-expand
+- difficulty: standard
+- text: (x + 9)(x − 9) 展開後為何？
+- choices:
+  - 0: x² + 81
+  - 1: x² − 18x + 81
+  - 2: x² − 81
+  - 3: x² − 9
+- answerIndex: 2
+- correctChoice: x² − 81
+- explanation: 左右括號一正一負、同名 9，套用 a²−b²：(x)²−9²=x²−81，±9x 兩項相加為 0。x²+81 把 81 前寫成加；x²−18x+81 則把式子當 (x−9)² 去算中間 −18x；x²−9 則 9² 只算成 9 而漏平方成 81。大數 81 來自 9 的平方，不是 9 本身。
+- steps:
+  - 展開得 x² − 9x + 9x − 81。
+  - 中間兩項相加為 0。
+  - 得 x² − 81。
+- commonMistake: 9²=81 前面減號寫成加，或誤當 (x−9)² 展開多算中間項。
+
+### u10-s010-v008
+
+- skillId: difference-of-squares-expand
+- difficulty: standard
+- text: (4x + 3)(4x − 3) 展開後為何？
+- choices:
+  - 0: 16x² + 9
+  - 1: 16x² − 24x + 9
+  - 2: 8x² − 9
+  - 3: 16x² − 9
+- answerIndex: 3
+- correctChoice: 16x² − 9
+- explanation: 型式是底數 4x 與 3 一正一負的 (a+b)(a−b)，套用 a²−b²：(4x)²=16x²，3²=9，±12x 消去，得 16x²−9。16x²+9 是 9 前符號反了；16x²−24x+9 則按 (4x−3)² 展開；8x²−9 則 (4x)² 只算成 4×2=8 而漏平方。整項 (4x) 平方後係數會變成 16，不是 8。
+- steps:
+  - (4x)² = 16x²。
+  - 3² = 9。
+  - 得 16x² − 9。
+- commonMistake: (4x)² 漏平方只寫 8x²，或 9 前加減符號弄反。
+
+### u10-s010-v009
+
+- skillId: difference-of-squares-expand
+- difficulty: standard
+- text: (x + 2)(x − 2) 展開後為何？
+- choices:
+  - 0: x² − 4
+  - 1: x² + 4
+  - 2: x² − 4x + 4
+  - 3: x² − 2
+- answerIndex: 0
+- correctChoice: x² − 4
+- explanation: 先用分配律展開 x²−2x+2x−4，中間兩項相加為 0；也可直接套 (x)²−2²=x²−4。x²+4 把 4 前減號改成加；x²−4x+4 則按 (x−2)² 算出 −4x；x²−2 則 2² 只算成 2 而漏平方成 4。小數字 2 也要平方成 4，不能漏掉。
+- steps:
+  - 分配律：x² − 2x + 2x − 4。
+  - 中間項消去。
+  - 得 x² − 4。
+- commonMistake: 2²=4 前面應減卻變加，或誤用 (x−2)² 完全平方式展開。
+
+### u10-s010-v010
+
+- skillId: difference-of-squares-expand
+- difficulty: advanced
+- text: (7x + 2)(7x − 2) 展開後為何？
+- choices:
+  - 0: 49x² + 4
+  - 1: 49x² − 4
+  - 2: 49x² − 28x + 4
+  - 3: 7x² − 4
+- answerIndex: 1
+- correctChoice: 49x² − 4
+- explanation: 底數 7x 與 2 一正一負，(7x+2)(7x−2) 屬 a²−b² 型：(7x)²=49x²，2²=4，±14x 相消，整理 49x²−4。49x²+4 末項加減反了；49x²−28x+4 則按 (7x−2)² 多算 −28x；7x²−4 則 7x 只乘一次沒有平方成 49x²。7x 整項平方後係數是 49 不是 7，7 也要整項平方成 49。
+- steps:
+  - (7x)² = 49x²。
+  - 2² = 4。
+  - 中間項消去，整理成 49x² − 4。
+- commonMistake: (7x)² 算成 7x² 而非 49x²，或末項 4 前減號寫成加。
+
+### u10-s010-v011
+
+- skillId: difference-of-squares-expand
+- difficulty: advanced
+- text: (x + 8)(x − 8) 展開後為何？
+- choices:
+  - 0: x² + 64
+  - 1: x² − 16x + 64
+  - 2: x² − 64
+  - 3: x² − 8
+- answerIndex: 2
+- correctChoice: x² − 64
+- explanation: 配對是 x 與 8 一正一負，套 (a+b)(a−b)=a²−b²：x²−8²=x²−64，±8x 全部抵消。x²+64 是 64 前用了加；x²−16x+64 則誤當 (x−8)² 去展開；x²−8 則 8² 只算成 8 而漏平方成 64。8 的平方是 64，不是 8 本身，展開前先確認是不是平方差型。
+- steps:
+  - 展開四項。
+  - ±8x 抵消。
+  - 得 x² − 64。
+- commonMistake: 8²=64 前面加減弄錯，或套用 (x−8)² 多算 −16x 中間項。
+
+### u10-s010-v012
+
+- skillId: difference-of-squares-expand
+- difficulty: literacy
+- text: 一長方形長 (a + 5) 公尺、寬 (a − 5) 公尺，面積展開後為何？
+- choices:
+  - 0: a² + 25
+  - 1: a² − 10a + 25
+  - 2: a² − 5
+  - 3: a² − 25
+- answerIndex: 3
+- correctChoice: a² − 25
+- explanation: 長方形面積=長×寬=(a+5)(a−5)，這是 (a+b)(a−b) 型：a²−5²=a²−25，±5a 互相抵消。a²+25 把減 25 寫成加；a²−10a+25 則誤當 (a−5)² 去展開；a²−5 則 5² 只算成 5 而漏平方。從長寬列式後，±5a 兩項會完全抵消。
+- steps:
+  - 面積 = 長 × 寬 = (a + 5)(a − 5)。
+  - 套用平方差：a² − 5²。
+  - 得 a² − 25。
+- commonMistake: 從長寬列出式子後，25 前減號寫成加，或誤用 (a−5)² 展開。
+
+### u10-s011-v001
+
+- skillId: formula-mixed-recognition
+- difficulty: basic
+- text: (x + 3)² 的正確展開為何？
+- choices:
+  - 0: x² + 6x + 9
+  - 1: x² − 6x + 9
+  - 2: x² − 9
+  - 3: x² + 9
+- answerIndex: 0
+- correctChoice: x² + 6x + 9
+- explanation: 括號內是相加，屬 (a+b)² 型，套用 x²+2·x·3+3²=x²+6x+9。x²−6x+9 則中間項用了減，把 2·x·3 算成 −6x；x²−9 是把整式誤當 (x+3)(x−3) 平方差，漏了 6x；x²+9 則 2·x·3 整項漏算。加號平方的中間項 6x 不能漏掉。
+- steps:
+  - 型式是 (a + b)²，兩項中間為加。
+  - 套用 x² + 2·x·3 + 9。
+  - 得 x² + 6x + 9。
+- commonMistake: 加號平方卻把 2·x·3=6x 算成 −6x，或誤套 a²−b² 漏中間項。
+
+### u10-s011-v002
+
+- skillId: formula-mixed-recognition
+- difficulty: basic
+- text: (x − 4)² 的正確展開為何？
+- choices:
+  - 0: x² + 8x + 16
+  - 1: x² − 8x + 16
+  - 2: x² − 16
+  - 3: x² + 16
+- answerIndex: 1
+- correctChoice: x² − 8x + 16
+- explanation: 減號在括號內，屬 (a−b)² 型，用 a²−2ab+b² 展開：x²−2·x·4+16=x²−8x+16。x²+8x+16 是中間 −8x 寫成 +8x；x²−16 則只算 x²−4² 漏了 2ab；x²+16 則中間 2ab 整項漏掉。減號平方的中間項係數要帶負號，減 4 的中間項固定是 −8x。
+- steps:
+  - 型式是 (a − b)²。
+  - 中間項 −2·x·4 = −8x。
+  - 得 x² − 8x + 16。
+- commonMistake: 減號平方時 2·x·4=8x 的負號漏掉，變成 +8x 這一項。
+
+### u10-s011-v003
+
+- skillId: formula-mixed-recognition
+- difficulty: basic
+- text: (x + 5)(x − 5) 的正確展開為何？
+- choices:
+  - 0: x² + 10x + 25
+  - 1: x² − 10x + 25
+  - 2: x² − 25
+  - 3: x² + 25
+- answerIndex: 2
+- correctChoice: x² − 25
+- explanation: 一括號加、一括號減，且兩邊都是 x 與 5，符合 a²−b²：x²−5²=x²−25，±5x 相消。x²+10x+25 是把兩式相加當 (x+5)²；x²−10x+25 則誤當 (x−5)² 去展開；x²+25 則 25 前減號寫成加。兩括號異號時中間 x 項不會留下來。
+- steps:
+  - 兩括號：x + 5 與 x − 5，異號配對。
+  - 用平方差 a² − b²。
+  - 得 x² − 25。
+- commonMistake: 異號配對卻用 (x±5)² 展開，多算出 ±10x 這一項。
+
+### u10-s011-v004
+
+- skillId: formula-mixed-recognition
+- difficulty: basic
+- text: (2x + 1)² 的正確展開為何？
+- choices:
+  - 0: 4x² − 4x + 1
+  - 1: 4x² − 1
+  - 2: 4x² + 1
+  - 3: 4x² + 4x + 1
+- answerIndex: 3
+- correctChoice: 4x² + 4x + 1
+- explanation: 括號內是相加，屬 (a+b)² 型，a=2x，b=1：(2x)²=4x²，2·2x·1=4x，1²=1，合併 4x²+4x+1。4x²−4x+1 是中間 4x 符號反了；4x²+1 則 2ab 整項漏算；4x²−1 則把式子誤當 (2x+1)(2x−1) 平方差。2x 整項平方後首項係數是 4 不是 2，首項 4x² 與中間 4x 都要寫出。
+- steps:
+  - (2x)² = 4x²。
+  - 2·2x·1 = 4x。
+  - 1² = 1，整理成 4x² + 4x + 1。
+- commonMistake: 2·(2x)·1=4x 漏算或符號寫錯，只剩 4x²+1 或 4x²−4x+1，首項 4x² 不能漏。
+
+### u10-s011-v005
+
+- skillId: formula-mixed-recognition
+- difficulty: standard
+- text: 下列哪一個是 (3x − 2)² 的展開？
+- choices:
+  - 0: 9x² − 12x + 4
+  - 1: 9x² + 12x + 4
+  - 2: 9x² − 4
+  - 3: 9x² + 4
+- answerIndex: 0
+- correctChoice: 9x² − 12x + 4
+- explanation: 括號內是相減，屬 (a−b)² 型：a=3x，b=2，(3x)²=9x²，−2·3x·2=−12x，2²=4，整理 9x²−12x+4。9x²+12x+4 是中間 −12x 變 +12x；9x²−4 則漏算 2ab 只留首尾；9x²+4 則中間 2ab 整項漏掉。3x 平方得 9x²，中間 −12x 不能漏，3x 平方得 9x²，中間 −12x 不能漏掉。
+- steps:
+  - 確認 (3x − 2)² 是減號平方。
+  - −2·3x·2 = −12x。
+  - 得 9x² − 12x + 4。
+- commonMistake: 減號平方時中間 −12x 寫成 +12x，或 2ab 整項漏算。
+
+### u10-s011-v006
+
+- skillId: formula-mixed-recognition
+- difficulty: standard
+- text: 下列哪一個是 (x + 7)(x − 7) 的展開？
+- choices:
+  - 0: x² + 14x + 49
+  - 1: x² − 49
+  - 2: x² − 14x + 49
+  - 3: x² + 49
+- answerIndex: 1
+- correctChoice: x² − 49
+- explanation: 兩括號 x 同底、7 異號，屬 a²−b² 型，用 x²−7²=x²−49，±7x 相消。x²+14x+49 是按 (x+7)² 算出 +14x；x²−14x+49 則按 (x−7)² 算出 −14x；x²+49 則 49 前減號寫成了加。7 的平方是 49，前面要寫減號，±7x 兩項相加後會完全抵消。
+- steps:
+  - 兩括號一正一負，同名 7。
+  - 用 a² − b²。
+  - 得 x² − 49。
+- commonMistake: 配對異號卻展開成 (x±7)²，多 +14x 或 −14x 這一項。
+
+### u10-s011-v007
+
+- skillId: formula-mixed-recognition
+- difficulty: standard
+- text: (4x + 3)² 應展開成哪一式？
+- choices:
+  - 0: 16x² − 9
+  - 1: 16x² − 24x + 9
+  - 2: 16x² + 24x + 9
+  - 3: 16x² + 9
+- answerIndex: 2
+- correctChoice: 16x² + 24x + 9
+- explanation: 括號內是相加，加號平方 (a+b)²，a=4x，b=3：(4x)²=16x²，2·4x·3=24x，3²=9，得 16x²+24x+9。16x²−9 是把整式當 (4x+3)(4x−3) 平方差；16x²−24x+9 則中間項符號反了；16x²+9 則 2·4x·3 漏算。4x 平方得 16x²，中間 24x 不能漏，首項與中間項都要寫出。
+- steps:
+  - 型式 (a + b)²，a = 4x，b = 3。
+  - 2·4x·3 = 24x。
+  - 得 16x² + 24x + 9。
+- commonMistake: 加號平方卻把 2·4x·3=24x 寫成 −24x，或誤套 a²−b² 漏中間項。
+
+### u10-s011-v008
+
+- skillId: formula-mixed-recognition
+- difficulty: standard
+- text: (5x − 1)(5x + 1) 應展開成哪一式？
+- choices:
+  - 0: 25x² − 10x + 1
+  - 1: 25x² + 10x + 1
+  - 2: 25x² + 1
+  - 3: 25x² − 1
+- answerIndex: 3
+- correctChoice: 25x² − 1
+- explanation: 5x 同底、1 一正一負，屬 a²−b² 型，套 (5x)²−1²=25x²−1，±5x 相消。25x²−10x+1 是按 (5x−1)² 算；25x²+10x+1 則按 (5x+1)² 算；25x²+1 則 1² 前用了加。兩括號只是順序對調，結果不變，中間 x 項會抵消，首項係數是 25。
+- steps:
+  - 兩括號 5x ± 1，異號。
+  - (5x)² − 1²。
+  - 得 25x² − 1。
+- commonMistake: 異號配對誤當 (5x±1)² 展開，多出 ±10x 這項。
+
+### u10-s011-v009
+
+- skillId: formula-mixed-recognition
+- difficulty: standard
+- text: 下列哪一式等於 (x − 1)²？
+- choices:
+  - 0: x² − 2x + 1
+  - 1: x² + 2x + 1
+  - 2: x² − 1
+  - 3: x² + 1
+- answerIndex: 0
+- correctChoice: x² − 2x + 1
+- explanation: 括號內是相減，屬 (a−b)² 型，b=1：x²−2·x·1+1²=x²−2x+1。x²+2x+1 是中間 −2x 寫成 +2x；x²−1 則只算 x²−1² 漏了中間 2ab；x²+1 則 2ab 整項漏掉，只剩首尾。減 1 的平方中間項一定是 −2x，減 1 的平方中間固定是 −2x。
+- steps:
+  - 原式 (x − 1)²，減號平方。
+  - −2·x·1 = −2x。
+  - 得 x² − 2x + 1。
+- commonMistake: 減 1 的平方時，中間 −2x 寫成 +2x，或 2ab 漏算。
+
+### u10-s011-v010
+
+- skillId: formula-mixed-recognition
+- difficulty: advanced
+- text: 下列哪一式等於 (2x + 3)(2x − 3)？
+- choices:
+  - 0: 4x² + 12x + 9
+  - 1: 4x² − 9
+  - 2: 4x² − 12x + 9
+  - 3: 4x² + 9
+- answerIndex: 1
+- correctChoice: 4x² − 9
+- explanation: 2x 與 3 異號配對，屬 a²−b² 型，用 (2x)²−3²=4x²−9，±6x 全部抵消。4x²+12x+9 是按 (2x+3)² 展開；4x²−12x+9 則按 (2x−3)² 展開；4x²+9 則末項 9 前減號變加。2x 平方得 4x²，3 平方得 9，2x 與 3 異號配對時中間 x 項不會留下。
+- steps:
+  - 兩括號 2x ± 3，平方差型。
+  - (2x)² − 3²。
+  - 得 4x² − 9。
+- commonMistake: 平方差型卻按 (2x±3)² 展開，多 ±12x 這一項。
+
+### u10-s011-v011
+
+- skillId: formula-mixed-recognition
+- difficulty: advanced
+- text: 某式為 (x + 2)²，下列展開何者正確？
+- choices:
+  - 0: x² − 4
+  - 1: x² − 4x + 4
+  - 2: x² + 4x + 4
+  - 3: x² + 4
+- answerIndex: 2
+- correctChoice: x² + 4x + 4
+- explanation: 括號內是相加，加號在括號內，(a+b)²：x²+2·x·2+2²=x²+4x+4。x²−4 是把 (x+2)(x−2) 平方差弄混；x²−4x+4 則中間 4x 寫成 −4x；x²+4 則 2ab 整項漏算。加 2 的平方中間項是 +4x 不是減，加 2 的平方中間項一定是 +4x。
+- steps:
+  - 加號平方 (x + 2)²。
+  - 2·x·2 = 4x。
+  - 得 x² + 4x + 4。
+- commonMistake: 加號平方時 2·x·2=4x 漏算，或中間項符號寫反。
+
+### u10-s011-v012
+
+- skillId: formula-mixed-recognition
+- difficulty: literacy
+- text: 一長方形長 (2a + 1) 公分、寬 (2a − 1) 公分，面積展開後為何？
+- choices:
+  - 0: 4a² + 4a + 1
+  - 1: 4a² − 4a + 1
+  - 2: 4a² + 1
+  - 3: 4a² − 1
+- answerIndex: 3
+- correctChoice: 4a² − 1
+- explanation: 長方形面積=長×寬=(2a+1)(2a−1)，屬 a²−b²：(2a)²−1²=4a²−1，±2a 相消。4a²+4a+1 是把兩式當 (2a+1)²；4a²−4a+1 則當 (2a−1)²；4a²+1 則 1 前減號寫成加。長寬一正一負時可直接用平方差，2a 平方得 4a²，末項 1 前面要寫減號。
+- steps:
+  - 面積 = (2a + 1)(2a − 1)。
+  - 辨識平方差型。
+  - (2a)² − 1² = 4a² − 1。
+- commonMistake: 長寬異號卻展開成 (2a±1)²，多 ±4a 或弄錯末項符號。
+
+### u10-s012-v001
+
+- skillId: polynomial-literacy-context
+- difficulty: basic
+- text: 一塊矩形土地，東西向長 (x + 4) 公尺、南北向寬 (x + 2) 公尺，面積展開後為何？
+- choices:
+  - 0: x² + 6x + 8
+  - 1: x² + 8x + 6
+  - 2: 2x² + 6x + 8
+  - 3: x² + 6x + 6
+- answerIndex: 0
+- correctChoice: x² + 6x + 8
+- explanation: 矩形土地面積=長×寬=(x+4)(x+2)，分配律展開 x²+2x+4x+8，x 項 2x+4x 合併得 6x，整理 x²+6x+8。x²+8x+6 是 x 項合併錯、常數也弄反；2x²+6x+8 則 x² 只應一個卻多留係數 2；x²+6x+6 則常數 8 漏算。展開後記得把同類 x 項合併再寫答案。
+- steps:
+  - 面積 = (x + 4)(x + 2)。
+  - 分配律：x² + 2x + 4x + 8。
+  - 合併得 x² + 6x + 8。
+- commonMistake: 展開後 x 項 2x+4x 合併成 8x 而非 6x，或常數 8 弄錯。
+
+### u10-s012-v002
+
+- skillId: polynomial-literacy-context
+- difficulty: basic
+- text: 一張紙切成邊長 (a + 3) 公分的正方形，面積展開後為何？
+- choices:
+  - 0: a² + 3a + 9
+  - 1: a² + 6a + 9
+  - 2: a² + 9
+  - 3: a² + 6a + 6
+- answerIndex: 1
+- correctChoice: a² + 6a + 9
+- explanation: 正方形面積=邊長²=(a+3)²，括號內相加，套用 (a+b)²：a²+2·a·3+9=a²+6a+9。a²+3a+9 只算一次 2ab 的一半；a²+9 則中間 6a 整項漏掉；a²+6a+6 則 3² 只算成 6 而漏平方成 9。正方形面積用邊長平方，不是邊長相加。
+- steps:
+  - 面積 = 邊長² = (a + 3)²。
+  - a² + 2·a·3 + 9。
+  - 得 a² + 6a + 9。
+- commonMistake: 2·a·3=6a 只算成 3a，或中間項整段漏算只剩 a²+9。
+
+### u10-s012-v003
+
+- skillId: polynomial-literacy-context
+- difficulty: basic
+- text: 一塊長方形玻璃，長 (2y − 1) 公分、寬 (2y + 1) 公分，面積展開後為何？
+- choices:
+  - 0: 4y² + 4y − 1
+  - 1: 4y² − 4y − 1
+  - 2: 4y² − 1
+  - 3: 4y² + 1
+- answerIndex: 2
+- correctChoice: 4y² − 1
+- explanation: 長方形玻璃面積=(2y−1)(2y+1)，一正一負配對，套 (2y)²−1²=4y²−1，±2y 相消。4y²+4y−1 是把兩括號分項相加展開；4y²−4y−1 則符號弄錯；4y²+1 則 1 前減號寫成加。玻璃長寬異號，套用平方差最簡潔。
+- steps:
+  - 面積 = (2y − 1)(2y + 1)。
+  - 辨識平方差。
+  - (2y)² − 1² = 4y² − 1。
+- commonMistake: 長寬異號配對卻分項相加，多算出 ±4y 這類中間項。
+
+### u10-s012-v004
+
+- skillId: polynomial-literacy-context
+- difficulty: basic
+- text: 一塊菜園圍成邊長 (m − 5) 公尺的正方形，面積展開後為何？
+- choices:
+  - 0: m² − 5m + 25
+  - 1: m² + 10m + 25
+  - 2: m² − 25
+  - 3: m² − 10m + 25
+- answerIndex: 3
+- correctChoice: m² − 10m + 25
+- explanation: 正方形菜園面積=(m−5)²，括號內相減，(a−b)² 型：m²−2·m·5+25=m²−10m+25。m²−5m+25 把 2ab 只算一半得 −5m；m²−25 則漏算中間 −10m 整項；m²+10m+25 則中間項符號全反。邊長減 5 時中間項係數是 −10m，菜園邊長減 5 時中間項係數是 −10m。
+- steps:
+  - 面積 = (m − 5)²。
+  - −2·m·5 = −10m。
+  - 得 m² − 10m + 25。
+- commonMistake: 2·m·5=10m 只算成 5m，中間項係數少一半，邊長減 5 時中間是 −10m。
+
+### u10-s012-v005
+
+- skillId: polynomial-literacy-context
+- difficulty: standard
+- text: 一塊木板，長 (3x + 2) 公分、寬 (3x − 2) 公分，面積展開後為何？
+- choices:
+  - 0: 9x² − 4
+  - 1: 9x² + 12x − 4
+  - 2: 9x² − 12x + 4
+  - 3: 9x² + 4
+- answerIndex: 0
+- correctChoice: 9x² − 4
+- explanation: 木板面積=(3x+2)(3x−2)，長寬一正一負，a²−b²：(3x)²−2²=9x²−4，±6x 抵消。9x²+12x−4 是分項相乘多算 x 項；9x²−12x+4 則誤當 (3x−2)²；9x²+4 則 4 前減號弄反。木板長寬配對後 ±6x 會互相抵消，木板長寬一正一負可直接用平方差。
+- steps:
+  - 面積 = (3x + 2)(3x − 2)。
+  - (3x)² − 2²。
+  - 得 9x² − 4。
+- commonMistake: 平方差型卻分項相乘或誤用 (3x−2)²，多 ±12x 這類項。
+
+### u10-s012-v006
+
+- skillId: polynomial-literacy-context
+- difficulty: standard
+- text: 一塊矩形草坪，長 (n + 6) 公尺、寬 (n − 1) 公尺，面積展開後為何？
+- choices:
+  - 0: n² + 7n − 6
+  - 1: n² + 5n − 6
+  - 2: n² − 5n − 6
+  - 3: n² + 5n + 6
+- answerIndex: 1
+- correctChoice: n² + 5n − 6
+- explanation: 矩形草坪面積=(n+6)(n−1)，長寬不同號，展開 n²−n+6n−6，合併 n 項 −n+6n=5n，得 n²+5n−6。n²+7n−6 是把 −n+6n 算成 +7n；n²−5n−6 則 6n 符號弄錯；n²+5n+6 則常數 −6 寫成 +6。長加寬不同號，要分項展開再合併。
+- steps:
+  - 面積 = (n + 6)(n − 1)。
+  - n² − n + 6n − 6。
+  - 合併得 n² + 5n − 6。
+- commonMistake: 展開後 n 項 −n 與 6n 合併錯，算成 7n 或 −5n。正負常數項也要一併檢查。
+
+### u10-s012-v007
+
+- skillId: polynomial-literacy-context
+- difficulty: standard
+- text: 一塊正方形磁磚，邊長 (t + 8) 公分，面積展開後為何？
+- choices:
+  - 0: t² + 8t + 64
+  - 1: t² + 64
+  - 2: t² + 16t + 64
+  - 3: t² + 16t + 16
+- answerIndex: 2
+- correctChoice: t² + 16t + 64
+- explanation: 正方形磁磚面積=(t+8)²，邊長含加號，(a+b)²：t²+2·t·8+8²=t²+16t+64。t²+8t+64 把 2·t·8 只算成 8t；t²+64 則 16t 整項漏掉；t²+16t+16 則 8² 只算成 16 而漏平方成 64。邊長加 8 時 2·t·8 一定要算成 16t，磁磚邊長加 8 時中間項是 +16t。
+- steps:
+  - 面積 = (t + 8)²。
+  - 2·t·8 = 16t。
+  - 8² = 64，整理成 t² + 16t + 64。
+- commonMistake: 2·t·8=16t 只算一次 8t，中間項係數少一半。
+
+### u10-s012-v008
+
+- skillId: polynomial-literacy-context
+- difficulty: standard
+- text: 一塊長方形桌布，長 (4a + 1) 公分、寬 (4a − 1) 公分，面積展開後為何？
+- choices:
+  - 0: 16a² + 8a − 1
+  - 1: 16a² − 8a − 1
+  - 2: 16a² + 1
+  - 3: 16a² − 1
+- answerIndex: 3
+- correctChoice: 16a² − 1
+- explanation: 長方形桌布面積=(4a+1)(4a−1)，長寬一正一負，套 (4a)²−1²=16a²−1，±4a 相消。16a²+8a−1 是分項展開多算 a 項；16a²−8a−1 則符號弄錯；16a²+1 則 1 前減號寫成加。桌布長寬異號，平方差比分項乘快。
+- steps:
+  - 面積 = (4a + 1)(4a − 1)。
+  - 平方差：(4a)² − 1²。
+  - 得 16a² − 1。
+- commonMistake: 長寬異號卻分項相乘，多出 ±8a 這類中間項。
+
+### u10-s012-v009
+
+- skillId: polynomial-literacy-context
+- difficulty: standard
+- text: 一塊矩形花圃，長 (p − 3) 公尺、寬 (p − 2) 公尺，面積展開後為何？
+- choices:
+  - 0: p² − 5p + 6
+  - 1: p² − p − 6
+  - 2: p² + 5p + 6
+  - 3: p² − 6
+- answerIndex: 0
+- correctChoice: p² − 5p + 6
+- explanation: 矩形花圃面積=(p−3)(p−2)，兩邊都是減號，分配律 p²−2p−3p+6，p 項 −2p−3p=−5p，整理 p²−5p+6。p²−p−6 是 −2p−3p 只算成 −p；p²+5p+6 則 p 項符號全反；p²−6 則常數 6 漏算。兩邊都減時展開會出現兩個負的 p 項。
+- steps:
+  - 面積 = (p − 3)(p − 2)。
+  - p² − 2p − 3p + 6。
+  - 合併得 p² − 5p + 6。
+- commonMistake: 兩個 p 項 −2p 與 −3p 合併錯，少減一次 3 得 −p。
+
+### u10-s012-v010
+
+- skillId: polynomial-literacy-context
+- difficulty: advanced
+- text: 一塊正方形告示牌，邊長 (5w − 3) 公分，面積展開後為何？
+- choices:
+  - 0: 25w² − 15w + 9
+  - 1: 25w² − 30w + 9
+  - 2: 25w² + 30w + 9
+  - 3: 25w² − 9
+- answerIndex: 1
+- correctChoice: 25w² − 30w + 9
+- explanation: 正方形告示牌面積=(5w−3)²，邊長含減號，(a−b)²：(5w)²−2·5w·3+9=25w²−30w+9。25w²−15w+9 把 2·5w·3=30w 只算成 15w；25w²−9 則漏算中間 −30w；25w²+30w+9 則中間項符號全反。5w 整項平方得 25w²，再算 2ab，告示牌邊長減 3 時中間項是 −30w。
+- steps:
+  - 面積 = (5w − 3)²。
+  - (5w)² − 2·5w·3 + 9。
+  - 得 25w² − 30w + 9。
+- commonMistake: 2·5w·3=30w 只算一半得 −15w，或中間 −30w 整項漏掉。
+
+### u10-s012-v011
+
+- skillId: polynomial-literacy-context
+- difficulty: advanced
+- text: 一塊矩形地毯，長 (2b + 5) 公尺、寬 (2b − 5) 公尺，面積展開後為何？
+- choices:
+  - 0: 4b² + 20b − 25
+  - 1: 4b² − 20b − 25
+  - 2: 4b² − 25
+  - 3: 4b² + 25
+- answerIndex: 2
+- correctChoice: 4b² − 25
+- explanation: 矩形地毯面積=(2b+5)(2b−5)，長寬一正一負，a²−b²：(2b)²−5²=4b²−25，±10b 抵消。4b²+20b−25 是按 (2b+5)² 多算 +20b；4b²−20b−25 則符號弄錯；4b²+25 則 25 前減號寫成加。地毯長寬 ±5 配對，±10b 會抵消，地毯長寬 ±5 配對後 ±10b 會抵消。
+- steps:
+  - 面積 = (2b + 5)(2b − 5)。
+  - 平方差 (2b)² − 5²。
+  - 得 4b² − 25。
+- commonMistake: 平方差型誤展開成 (2b+5)²，多 +20b 這項。長寬異號時不要套用完全平方。
+
+### u10-s012-v012
+
+- skillId: polynomial-literacy-context
+- difficulty: literacy
+- text: 一塊矩形水池，長 (x + 1) 公尺、寬 (x + 9) 公尺，面積展開後為何？
+- choices:
+  - 0: x² + 8x + 9
+  - 1: x² + 9x + 9
+  - 2: x² + 10x + 1
+  - 3: x² + 10x + 9
+- answerIndex: 3
+- correctChoice: x² + 10x + 9
+- explanation: 矩形水池面積=長×寬=(x+1)(x+9)，展開 x²+9x+x+9，x 項合併得 10x，所以是 x²+10x+9。x²+8x+9 是 x 項 9x+x 算成 8x；x²+9x+9 則漏加第二個 x；x²+10x+1 則常數 9 漏算。水池長寬都是加號，分項展開再合併 x 項。
+- steps:
+  - 面積 = (x + 1)(x + 9)。
+  - x² + 9x + x + 9。
+  - 合併得 x² + 10x + 9。
+- commonMistake: 展開後 9x+x 合併成 8x，或漏加其中一個 x 項。
