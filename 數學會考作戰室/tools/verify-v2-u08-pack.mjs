@@ -9,6 +9,7 @@ import { U08_R1_BANNED } from "./v2-u08-r1-banned.mjs";
 import { U08_R2_BANNED } from "./v2-u08-r2-banned.mjs";
 import { U08_R3_BANNED } from "./v2-u08-r3-banned.mjs";
 import { U08_QA1_REQUIRED_LECTURES } from "./u08-qa1-lecture-manifest.mjs";
+import { U08_QA2A_REQUIRED_QUESTIONS } from "./u08-qa2a-question-manifest.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2 = path.join(root, "v2");
@@ -111,6 +112,38 @@ function checkQuestions(questions) {
   assert.deepEqual(ai, AI_EXPECTED);
 }
 
+function checkQa2aManifest(questions) {
+  const manifestIds = Object.keys(U08_QA2A_REQUIRED_QUESTIONS);
+  assert.equal(manifestIds.length, 16, "QA2A manifest question count");
+
+  const byId = new Map(questions.map((q) => [q.questionId, q]));
+  for (const id of manifestIds) {
+    const matches = questions.filter((q) => q.questionId === id);
+    assert.equal(matches.length, 1, `${id} must appear exactly once`);
+  }
+
+  for (const [id, required] of Object.entries(U08_QA2A_REQUIRED_QUESTIONS)) {
+    const q = byId.get(id);
+    for (const [field, value] of Object.entries(required)) {
+      assert.equal(
+        JSON.stringify(q[field]),
+        JSON.stringify(value),
+        `${id}.${field} manifest`
+      );
+    }
+  }
+
+  const bankBlob = JSON.stringify(questions);
+  assert.ok(!bankBlob.includes("组成"), "simplified 组成 must be absent");
+  assert.ok(!bankBlob.includes("向后"), "simplified 向后 must be absent");
+  assert.ok(!bankBlob.includes("公釐就是公分"), "公釐就是公分 must be absent");
+  assert.ok(bankBlob.includes("組成"), "corrected 組成 must be present");
+  assert.ok(bankBlob.includes("從前向後看"), "corrected 從前向後看 must be present");
+
+  const v011 = byId.get("u08-s010-v011");
+  assert.equal(v011.choices[v011.answerIndex], "0.6", "u08-s010-v011 correctChoice");
+}
+
 function checkLectures(lectures) {
   const manifestIds = Object.keys(U08_QA1_REQUIRED_LECTURES);
   assert.equal(manifestIds.length, 12, "manifest skill count");
@@ -141,5 +174,6 @@ function checkLectures(lectures) {
 
 const { questions, lectures } = loadU08();
 checkQuestions(questions);
+checkQa2aManifest(questions);
 checkLectures(lectures);
 console.log("verify-v2-u08-pack: OK — 144 questions, 12 lectures, all checks passed");
