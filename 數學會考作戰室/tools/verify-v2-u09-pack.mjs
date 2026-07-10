@@ -21,6 +21,7 @@ import {
   explanationOverRepeatsText
 } from "./v2-quality.mjs";
 import { auditQuestions } from "./u09-semantic-audit.mjs";
+import { QA5C_REQUIRED_LECTURES } from "./u09-qa5c-lecture-manifest.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const v2Dir = path.join(root, "v2");
@@ -71,7 +72,8 @@ const U09_EXTRA_BANNED = [
   "不符合本題資料",
   "本題正確數值是",
   "已把題目指定的各組次數全部加總",
-  "與本題列式結果不符"
+  "與本題列式結果不符",
+  "讀表時要把題目要求的全部資料都列入計算，再對照單位與題意。"
 ];
 const U09_SC_BANNED = [
   "中间", "里面", "总体", "数据", "统计", "图表", "比较", "范围",
@@ -81,7 +83,7 @@ const U09_SC_BANNED = [
 const U09_SC_CHARS = [
   "却", "这", "为", "从", "与", "应", "还", "后", "里", "对", "达", "无", "发", "过",
   "别", "数", "学", "类", "组", "图", "题", "问", "结", "选", "错", "较", "范", "围",
-  "简", "复", "个", "间", "体", "据", "计", "显", "进"
+  "简", "复", "个", "间", "体", "据", "计", "显", "进", "时"
 ];
 const BAD_SYMBOL_RE = /<=|>=/;
 
@@ -645,6 +647,21 @@ for (const [skillId, qs] of bySkill) {
 for (const l of lectures) {
   const bankExpl = bankExplBySkill.get(l.skillId) || new Set();
   validateLecture(l, bankExpl);
+}
+
+assert.equal(Object.keys(QA5C_REQUIRED_LECTURES).length, 12, "QA5C manifest must have 12 skillIds");
+const lectureBySkill = new Map(lectures.map(l => [l.skillId, l]));
+assert.equal(lectureBySkill.size, 12, "QA5C lectures must have 12 unique skillIds");
+for (const [skillId, fields] of Object.entries(QA5C_REQUIRED_LECTURES)) {
+  const l = lectureBySkill.get(skillId);
+  assert.ok(l, `${skillId} QA5C lecture missing`);
+  for (const [field, value] of Object.entries(fields)) {
+    if (Array.isArray(value)) {
+      assert.equal(JSON.stringify(l[field]), JSON.stringify(value), `${skillId} QA5C ${field} mismatch`);
+    } else {
+      assert.equal(l[field], value, `${skillId} QA5C ${field} mismatch`);
+    }
+  }
 }
 
 const v005 = questions.find(q => q.questionId === "u09-s002-v005");

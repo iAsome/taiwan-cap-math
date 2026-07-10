@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /** Report-only: fail if U09 bank differs from base commit outside QA5A + QA5B-1 + QA5B-2A authorized fields. */
 import { assertAllowedQuestionFieldDiffs } from "./u09-field-diff-core.mjs";
+import { assertU09Qa5cLectureDiff } from "./check-u09-qa5c-lecture-diff.mjs";
 
 const BASE = process.env.U09_QA5A_BASE || "c06ba8339ec5a1cf90f875e9d39c91f60af332fa";
 
@@ -58,7 +59,8 @@ const result = assertAllowedQuestionFieldDiffs({
   baseCommit: BASE,
   allowedFieldsByQuestionId: CUMULATIVE_AUTHORIZED,
   expectedChangedRecords: 54,
-  expectedChangedFields: 109
+  expectedChangedFields: 109,
+  lectureValidator: assertU09Qa5cLectureDiff
 });
 
 const qa5aSet = new Set(QA5A_IDS);
@@ -90,5 +92,5 @@ console.log(`  cumulative question records: ${result.changedRecords.length}`);
 console.log(`  cumulative changed fields: ${result.changedFields}`);
 console.log("  exhaustive top-level field scan: OK");
 console.log("  question sequence unchanged: OK");
-console.log("  lecture file unchanged: OK");
+console.log("  QA5C lecture authorization: OK");
 console.log(`  base commit: ${BASE}`);

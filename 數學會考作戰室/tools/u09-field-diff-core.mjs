@@ -177,7 +177,8 @@ export function assertAllowedQuestionFieldDiffs(options) {
     baseCommit,
     allowedFieldsByQuestionId,
     expectedChangedRecords,
-    expectedChangedFields
+    expectedChangedFields,
+    lectureValidator
   } = options;
 
   const before = loadQuestionBankAtCommit(baseCommit);
@@ -195,7 +196,12 @@ export function assertAllowedQuestionFieldDiffs(options) {
     expectedChangedFields
   });
 
-  assertLectureFileUnchanged(baseCommit);
+  if (lectureValidator) {
+    assert.equal(typeof lectureValidator, "function", `${label}: lectureValidator must be a function`);
+    lectureValidator();
+  } else {
+    assertLectureFileUnchanged(baseCommit);
+  }
 
   return result;
 }
