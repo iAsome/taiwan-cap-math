@@ -44,13 +44,24 @@ function countBy(items, field) {
   return Object.fromEntries(Object.entries(counts).sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0));
 }
 
+function findingSummary(unit, findings) {
+  const mechanical = findings.mechanical.filter(item => item.unit === unit);
+  const targeted = findings.requiresHumanReview.filter(item => item.unit === unit);
+  return {
+    mechanicalBySeverity: countBy(mechanical, "severity"),
+    mechanicalByCategory: countBy(mechanical, "category"),
+    targetedHumanReviewCount: targeted.length
+  };
+}
+
 export function runAudit({ taskPath, outputPath } = {}) {
   const task = validateTask(JSON.parse(readFileSync(path.resolve(taskPath), "utf8")));
   const policyHash = hashPolicy();
   assert.equal(task.policy.id, policy.id, "policy ID mismatch");
   assert.equal(task.policy.version, policy.version, "policy version mismatch");
   assert.equal(task.policy.hash, policyHash, "policy hash mismatch");
-  const results = [], perUnit = {};
+  const checks = new Set(task.checks);
+  const results = [], unitInventory = {};
   for (const unitId of task.units) {
     const item = inventory.units[unitId];
     assert(item, `inventory missing ${unitId}`); assert.equal(task.refs.units[unitId], item.ref, `${unitId} ref mismatch`);
@@ -59,23 +70,26 @@ export function runAudit({ taskPath, outputPath } = {}) {
     const lectures = loadBank(item.ref, item.lectureBankPath, `MATH_LECTURE_V2_${unitId}`);
     const skills = new Set(questions.map(q => q.skillId)).size;
     assert.deepEqual({ questions: questions.length, lectures: lectures.length, skills }, task.expectedInventory[unitId]);
-    results.push(auditQuestionBank({ unit: unitId, path: item.questionBankPath, questions, policy }));
-    results.push(auditLectureBank({ unit: unitId, path: item.lectureBankPath, lectures, policy }));
-    perUnit[unitId] = { questions: questions.length, lectures: lectures.length, skills };
+    results.push(auditQuestionBank({ unit: unitId, path: item.questionBankPath, questions, policy, checks }));
+    results.push(auditLectureBank({ unit: unitId, path: item.lectureBankPath, lectures, policy, checks }));
+    unitInventory[unitId] = { questions: questions.length, lectures: lectures.length, skills };
     void suffix;
   }
-  if (task.includeLegacy) for (const repoPath of inventory.legacySourcePaths) results.push(auditSourceText({ path: repoPath, text: readGit(task.refs.legacyUi, repoPath), policy }));
-  if (task.includeUi) for (const repoPath of inventory.uiPaths) results.push(auditSourceText({ path: repoPath, text: readGit(task.refs.legacyUi, repoPath), policy, unit: "UI" }));
+  if (task.includeLegacy) for (const repoPath of inventory.legacySourcePaths) results.push(auditSourceText({ path: repoPath, text: readGit(task.refs.legacyUi, repoPath), policy, checks }));
+  if (task.includeUi) for (const repoPath of inventory.uiPaths) results.push(auditSourceText({ path: repoPath, text: readGit(task.refs.legacyUi, repoPath), policy, unit: "UI", checks }));
   const merged = mergeAuditResults(results);
+  const scopes = [...task.units, ...(task.includeLegacy ? ["LEGACY"] : []), ...(task.includeUi ? ["UI"] : [])];
   const summary = {
     taskId: task.taskId,
     policy: { id: policy.id, version: policy.version, hash: policyHash },
-    perUnit,
-    counts: {
+    inventory: unitInventory,
+    findingsByScope: Object.fromEntries(scopes.map(unit => [unit, findingSummary(unit, merged)])),
+    totals: {
       mechanicalBySeverity: countBy(merged.mechanical, "severity"),
       mechanicalByCategory: countBy(merged.mechanical, "category"),
-      requiresHumanReview: merged.requiresHumanReview.length
+      targetedHumanReviewCount: merged.requiresHumanReview.length
     },
+    semanticDisclaimer: "Mechanical checks do not prove mathematical or pedagogical correctness; semantic acceptance remains owned by ChatGPT.",
     findings: merged
   };
   const json = `${stableSerialize(summary)}\n`;
@@ -87,9 +101,10 @@ export function main(argv = process.argv.slice(2)) {
   const args = parseArgs(argv);
   const result = runAudit({ taskPath: args.task, outputPath: args.output });
   console.log(`Policy: ${result.summary.policy.id} ${result.summary.policy.version} ${result.summary.policy.hash}`);
-  for (const [unit, counts] of Object.entries(result.summary.perUnit)) console.log(`${unit}: ${counts.questions} questions, ${counts.lectures} lectures, ${counts.skills} skills`);
-  console.log(`Mechanical findings by severity: ${JSON.stringify(result.summary.counts.mechanicalBySeverity)}`);
-  console.log(`Mechanical findings by category: ${JSON.stringify(result.summary.counts.mechanicalByCategory)}`);
+  for (const [unit, counts] of Object.entries(result.summary.inventory)) console.log(`${unit}: ${counts.questions} questions, ${counts.lectures} lectures, ${counts.skills} skills`);
+  console.log(`Mechanical findings by severity: ${JSON.stringify(result.summary.totals.mechanicalBySeverity)}`);
+  console.log(`Mechanical findings by category: ${JSON.stringify(result.summary.totals.mechanicalByCategory)}`);
+  console.log(`Targeted human-review candidates: ${result.summary.totals.targetedHumanReviewCount}`);
   console.log(result.json.trim());
 }
 

@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import policy from "../policies/math-tw-v1.mjs";
 import { hashPolicy, stableSerialize } from "../policies/policy-hash.mjs";
-import { auditLectureBank, auditQuestionBank, auditSourceText, sortFindings } from "../checkers/content-standard.mjs";
+import { auditLectureBank, auditQuestionBank, auditSourceText, selectStudentFacing, sortFindings } from "../checkers/content-standard.mjs";
 import { validLecture, validQuestion } from "./policy-fixtures.mjs";
 
 const q = overrides => auditQuestionBank({ unit: "U01", path: "fixture", questions: [validQuestion(overrides), validQuestion({ questionId: "u01-s001-v002", difficulty: "literacy" })], policy }).mechanical;
@@ -16,8 +16,8 @@ assert.notEqual(hashPolicy({ documentBytes: Buffer.from("changed") }), hashPolic
 assert.equal(stableSerialize({ b: 1, a: [2, 1] }), '{"a":[2,1],"b":1}');
 
 assert.equal(q().some(x => x.category === "terminology"), false);
-for (const token of ["公釐", "公厘", "厘米", "千米"]) assert(has(q({ text: `3${token}` }), "prohibited-token"));
-assert.equal(has(q({ text: "3公里" }), "prohibited-token"), false);
+for (const token of ["公釐", "公厘", "厘米", "千米"]) assert(has(q({ text: `3${token}` }), "prohibited-unit"));
+assert.equal(has(q({ text: "3公里" }), "prohibited-unit"), false);
 assert.equal(has(q({ text: "3公里" }), "contextual-simplified-token"), false);
 assert(has(q({ text: "這里有3公尺長" }), "contextual-simplified-token"));
 assert.equal(auditSourceText({ path: "x", text: "組 場", policy }).mechanical.length, 0);
@@ -40,6 +40,17 @@ assert(has(l({ commonMistakes: [] }), "lecture-common-mistakes-min"));
 assert(has(l({ examples: [{ q: "q", a: "a", why: "太短" }, validLecture().examples[1]] }), "lecture-example-why-min"));
 const missing = auditQuestionBank({ unit: "U01", path: "fixture", questions: [validQuestion({ difficulty: "basic" })], policy }).mechanical;
 assert(has(missing, "missing-advanced-coverage")); assert(has(missing, "missing-literacy-coverage"));
+
+const schemaOnly = new Set(["schema"]);
+assert.equal(auditQuestionBank({ unit: "U01", path: "fixture", questions: [validQuestion({ text: "3公釐" })], policy, checks: schemaOnly }).mechanical.some(x => x.rule === "prohibited-unit"), false);
+assert(auditQuestionBank({ unit: "U01", path: "fixture", questions: [validQuestion({ text: "3公釐" })], policy, checks: new Set(["schema", "units"]) }).mechanical.some(x => x.rule === "prohibited-unit"));
+assert.deepEqual(Object.keys(selectStudentFacing(validQuestion({ questionId: "组" }), policy)).sort(), ["choices", "commonMistake", "explanation", "steps", "text"].sort());
+assert.equal(auditQuestionBank({ unit: "U01", path: "fixture", questions: [validQuestion({ questionId: "组" })], policy }).mechanical.some(x => x.category === "terminology"), false);
+assert(auditQuestionBank({ unit: "U01", path: "fixture", questions: [validQuestion({ text: "组" })], policy }).mechanical.some(x => x.category === "terminology"));
+assert.equal(auditQuestionBank({ unit: "U01", path: "fixture", questions: [validQuestion()], policy }).requiresHumanReview.length, 0);
+assert.equal(auditLectureBank({ unit: "U01", path: "fixture", lectures: [validLecture()], policy }).requiresHumanReview.length, 0);
+const targeted = auditQuestionBank({ unit: "U01", path: "fixture", questions: [validQuestion({ text: "如圖所示，求長度。" })], policy }).requiresHumanReview;
+assert(targeted.some(x => x.rule === "undeclared-image-dependency-review" && x.evidence === "如圖所示，求長度。"));
 
 const ordered = q({ text: "3 x 4 <= 12", explanation: "太短" });
 assert.deepEqual(ordered, sortFindings([...ordered].reverse()));

@@ -29,22 +29,36 @@ function strings(value, field = "", out = []) {
   return out;
 }
 
-function textChecks(value, context, policy, findings) {
+export function selectStudentFacing(record, policy) {
+  return Object.fromEntries(policy.studentFacingFields.filter(field => field in record).map(field => [field, record[field]]));
+}
+
+function enabled(checks, check) { return checks.has(check); }
+
+function textChecks(value, context, policy, findings, requiresHumanReview, checks) {
   for (const { field, value: text } of strings(value)) {
-    for (const token of [...policy.terminology.prohibitedSimplified, ...policy.units.prohibited]) {
-      if (text.includes(token)) findings.push(finding({ ...context, field, severity: "HIGH", category: "terminology", rule: "prohibited-token", evidence: token }));
+    if (enabled(checks, "terminology")) {
+      for (const token of policy.terminology.prohibitedSimplified) {
+        if (text.includes(token)) findings.push(finding({ ...context, field, severity: "HIGH", category: "terminology", rule: "prohibited-token", evidence: token }));
+      }
+      for (const token of policy.terminology.contextualSimplified) {
+        let remaining = text;
+        for (const exception of policy.terminology.contextualExceptions.filter(item => item.token === token).flatMap(item => item.allowedWithin)) remaining = remaining.split(exception).join("");
+        if (remaining.includes(token)) findings.push(finding({ ...context, field, severity: "HIGH", category: "terminology", rule: "contextual-simplified-token", evidence: token }));
+      }
     }
-    for (const token of policy.terminology.contextualSimplified) {
-      let remaining = text;
-      for (const exception of policy.terminology.contextualExceptions.filter(item => item.token === token).flatMap(item => item.allowedWithin)) remaining = remaining.split(exception).join("");
-      if (remaining.includes(token)) findings.push(finding({ ...context, field, severity: "HIGH", category: "terminology", rule: "contextual-simplified-token", evidence: token }));
+    if (enabled(checks, "units")) {
+      for (const token of policy.units.prohibited) if (text.includes(token)) findings.push(finding({ ...context, field, severity: "HIGH", category: "units", rule: "prohibited-unit", evidence: token }));
+      for (const unit of policy.units.prose) if (new RegExp(`\\d\\s+${unit}`).test(text)) findings.push(finding({ ...context, field, severity: "MEDIUM", category: "units", rule: "spaced-chinese-unit", evidence: text }));
     }
-    for (const unit of policy.units.prose) if (new RegExp(`\\d\\s+${unit}`).test(text)) findings.push(finding({ ...context, field, severity: "MEDIUM", category: "units", rule: "spaced-chinese-unit", evidence: text }));
-    for (const token of policy.notation.prohibitedVisible) {
-      if (text.includes(token)) findings.push(finding({ ...context, field, severity: "MEDIUM", category: "notation", rule: "prohibited-visible-notation", evidence: token }));
+    if (enabled(checks, "notation")) {
+      for (const token of policy.notation.prohibitedVisible) if (text.includes(token)) findings.push(finding({ ...context, field, severity: "MEDIUM", category: "notation", rule: "prohibited-visible-notation", evidence: token }));
+      if (new RegExp(policy.notation.ambiguousNumericXPattern).test(text)) {
+        findings.push(finding({ ...context, field, severity: "MEDIUM", category: "notation", rule: "ambiguous-numeric-x", evidence: text }));
+        requiresHumanReview.push(finding({ ...context, field, severity: "MEDIUM", category: "notation", rule: "ambiguous-numeric-x-review", evidence: text, kind: "requiresHumanReview" }));
+      }
     }
-    if (new RegExp(policy.notation.ambiguousNumericXPattern).test(text)) findings.push(finding({ ...context, field, severity: "MEDIUM", category: "notation", rule: "ambiguous-numeric-x", evidence: text }));
-    for (const token of residue) if (text.includes(token)) findings.push(finding({ ...context, field, severity: "LOW", category: "residue", rule: "machine-residue", evidence: token }));
+    if (enabled(checks, "duplicates")) for (const token of residue) if (text.includes(token)) findings.push(finding({ ...context, field, severity: "LOW", category: "residue", rule: "machine-residue", evidence: token }));
   }
 }
 
@@ -67,7 +81,7 @@ function duplicateSentences(text) {
   return [...new Set(parts.filter((x, i) => parts.indexOf(x) !== i))];
 }
 
-export function auditQuestionBank({ unit, path, questions, policy }) {
+export function auditQuestionBank({ unit, path, questions, policy, checks = new Set(["schema", "thresholds", "terminology", "units", "notation", "duplicates", "visual", "coverage"]) }) {
   const mechanical = [], requiresHumanReview = [], ids = new Set(), skillDifficulty = new Map();
   for (const q of questions) {
     const context = { unit, path, recordId: q.questionId ?? "" };
@@ -76,47 +90,57 @@ export function auditQuestionBank({ unit, path, questions, policy }) {
     for (const field of requiredQuestionFields) if (!(field in q)) mechanical.push(finding({ ...context, field, severity: "BLOCKER", category: "schema", rule: "missing-required-field" }));
     if (!Array.isArray(q.choices) || !Number.isInteger(q.answerIndex) || q.answerIndex < 0 || q.answerIndex >= (q.choices?.length ?? 0)) mechanical.push(finding({ ...context, field: "answerIndex", severity: "BLOCKER", category: "unique-answer", rule: "answer-index-range", evidence: q.answerIndex }));
     else if (q.correctChoice !== undefined && q.correctChoice !== q.choices[q.answerIndex]) mechanical.push(finding({ ...context, field: "correctChoice", severity: "BLOCKER", category: "unique-answer", rule: "correct-choice-mismatch", evidence: q.correctChoice }));
-    if (chineseCount(q.explanation) < policy.questionThresholds.explanationChineseMin) mechanical.push(finding({ ...context, field: "explanation", severity: "MEDIUM", category: "explanation", rule: "question-explanation-min", evidence: chineseCount(q.explanation) }));
-    if (chineseCount(q.commonMistake) < policy.questionThresholds.commonMistakeChineseMin) mechanical.push(finding({ ...context, field: "commonMistake", severity: "MEDIUM", category: "distractor", rule: "common-mistake-min", evidence: chineseCount(q.commonMistake) }));
-    if (!Array.isArray(q.steps) || q.steps.length < policy.questionThresholds.stepsMin) mechanical.push(finding({ ...context, field: "steps", severity: "MEDIUM", category: "steps", rule: "question-steps-min", evidence: q.steps?.length ?? 0 }));
-    if (Array.isArray(q.steps) && new Set(q.steps).size !== q.steps.length) mechanical.push(finding({ ...context, field: "steps", severity: "MEDIUM", category: "residue", rule: "duplicate-exact-step", evidence: q.steps.join(" | ") }));
-    for (const sentence of duplicateSentences(q.explanation)) mechanical.push(finding({ ...context, field: "explanation", severity: "LOW", category: "residue", rule: "duplicate-explanation-sentence", evidence: sentence }));
-    if (imageMarkers.some(marker => String(q.text).includes(marker)) && !q.visual && q.visualMode !== "visual") mechanical.push(finding({ ...context, field: "text", severity: "MEDIUM", category: "visual", rule: "undeclared-image-dependency", evidence: q.text }));
-    textChecks(q, context, policy, mechanical);
-    if (Array.isArray(q.choices)) unitPresentation(q.choices, context, policy, mechanical);
+    if (enabled(checks, "thresholds")) {
+      if (chineseCount(q.explanation) < policy.questionThresholds.explanationChineseMin) mechanical.push(finding({ ...context, field: "explanation", severity: "MEDIUM", category: "explanation", rule: "question-explanation-min", evidence: chineseCount(q.explanation) }));
+      if (chineseCount(q.commonMistake) < policy.questionThresholds.commonMistakeChineseMin) mechanical.push(finding({ ...context, field: "commonMistake", severity: "MEDIUM", category: "distractor", rule: "common-mistake-min", evidence: chineseCount(q.commonMistake) }));
+      if (!Array.isArray(q.steps) || q.steps.length < policy.questionThresholds.stepsMin) mechanical.push(finding({ ...context, field: "steps", severity: "MEDIUM", category: "steps", rule: "question-steps-min", evidence: q.steps?.length ?? 0 }));
+    }
+    if (enabled(checks, "duplicates")) {
+      if (Array.isArray(q.steps) && new Set(q.steps).size !== q.steps.length) mechanical.push(finding({ ...context, field: "steps", severity: "MEDIUM", category: "residue", rule: "duplicate-exact-step", evidence: q.steps.join(" | ") }));
+      for (const sentence of duplicateSentences(q.explanation)) mechanical.push(finding({ ...context, field: "explanation", severity: "LOW", category: "residue", rule: "duplicate-explanation-sentence", evidence: sentence }));
+    }
+    if (enabled(checks, "visual") && imageMarkers.some(marker => String(q.text).includes(marker)) && !q.visual && q.visualMode !== "visual") {
+      mechanical.push(finding({ ...context, field: "text", severity: "MEDIUM", category: "visual", rule: "undeclared-image-dependency", evidence: q.text }));
+      requiresHumanReview.push(finding({ ...context, field: "text", severity: "MEDIUM", category: "visual", rule: "undeclared-image-dependency-review", evidence: q.text, kind: "requiresHumanReview" }));
+    }
+    textChecks(selectStudentFacing(q, policy), context, policy, mechanical, requiresHumanReview, checks);
+    if (enabled(checks, "units") && Array.isArray(q.choices)) unitPresentation(q.choices, context, policy, mechanical);
+    if (/^下列何者正確？?$/.test(String(q.text).trim())) requiresHumanReview.push(finding({ ...context, field: "text", severity: "MEDIUM", category: "stem", rule: "generic-stem-review", evidence: q.text, kind: "requiresHumanReview" }));
     const levels = skillDifficulty.get(q.skillId) ?? new Set(); levels.add(q.difficulty); skillDifficulty.set(q.skillId, levels);
-    requiresHumanReview.push(finding({ ...context, field: "*", severity: "MEDIUM", category: "correctness", rule: "semantic-mathematics-review-required", evidence: "Mechanical checks do not prove correctness.", kind: "requiresHumanReview" }));
   }
-  for (const [skillId, levels] of skillDifficulty) {
+  if (enabled(checks, "coverage")) for (const [skillId, levels] of skillDifficulty) {
     for (const level of ["advanced", "literacy"]) if (!levels.has(level)) mechanical.push(finding({ unit, path, recordId: skillId, field: "difficulty", severity: "MEDIUM", category: "coverage", rule: `missing-${level}-coverage`, evidence: [...levels].sort().join(",") }));
   }
   return { mechanical: sortFindings(mechanical), requiresHumanReview: sortFindings(requiresHumanReview) };
 }
 
-export function auditLectureBank({ unit, path, lectures, policy }) {
+export function auditLectureBank({ unit, path, lectures, policy, checks = new Set(["schema", "thresholds", "terminology", "units", "notation", "duplicates", "visual", "coverage"]) }) {
   const mechanical = [], requiresHumanReview = [], ids = new Set();
   for (const lecture of lectures) {
     const context = { unit, path, recordId: lecture.skillId ?? "" };
     if (!lecture.skillId || ids.has(lecture.skillId)) mechanical.push(finding({ ...context, severity: "BLOCKER", category: "schema", rule: "duplicate-or-missing-lecture-skill-id", evidence: lecture.skillId }));
     ids.add(lecture.skillId);
     for (const field of requiredLectureFields) if (!(field in lecture)) mechanical.push(finding({ ...context, field, severity: "BLOCKER", category: "schema", rule: "missing-required-field" }));
-    const t = policy.lectureThresholds;
-    if (chineseCount(lecture.concept) < t.conceptChineseMin) mechanical.push(finding({ ...context, field: "concept", severity: "MEDIUM", category: "lecture", rule: "lecture-concept-min", evidence: chineseCount(lecture.concept) }));
-    if (!Array.isArray(lecture.stepGuide) || lecture.stepGuide.length < t.stepGuideMin) mechanical.push(finding({ ...context, field: "stepGuide", severity: "MEDIUM", category: "lecture", rule: "lecture-step-guide-min", evidence: lecture.stepGuide?.length ?? 0 }));
-    if (!Array.isArray(lecture.examples) || lecture.examples.length < t.examplesMin) mechanical.push(finding({ ...context, field: "examples", severity: "MEDIUM", category: "lecture", rule: "lecture-examples-min", evidence: lecture.examples?.length ?? 0 }));
-    if (!Array.isArray(lecture.commonMistakes) || lecture.commonMistakes.length < t.commonMistakesMin) mechanical.push(finding({ ...context, field: "commonMistakes", severity: "MEDIUM", category: "lecture", rule: "lecture-common-mistakes-min", evidence: lecture.commonMistakes?.length ?? 0 }));
-    (lecture.examples ?? []).forEach((example, i) => { if (chineseCount(example.why) < t.exampleWhyChineseMin) mechanical.push(finding({ ...context, field: `examples[${i}].why`, severity: "MEDIUM", category: "lecture", rule: "lecture-example-why-min", evidence: chineseCount(example.why) })); });
-    textChecks(lecture, context, policy, mechanical);
-    requiresHumanReview.push(finding({ ...context, field: "*", severity: "MEDIUM", category: "correctness", rule: "semantic-lecture-review-required", evidence: "Mechanical checks do not prove lecture accuracy.", kind: "requiresHumanReview" }));
+    if (enabled(checks, "thresholds")) {
+      const t = policy.lectureThresholds;
+      if (chineseCount(lecture.concept) < t.conceptChineseMin) mechanical.push(finding({ ...context, field: "concept", severity: "MEDIUM", category: "lecture", rule: "lecture-concept-min", evidence: chineseCount(lecture.concept) }));
+      if (!Array.isArray(lecture.stepGuide) || lecture.stepGuide.length < t.stepGuideMin) mechanical.push(finding({ ...context, field: "stepGuide", severity: "MEDIUM", category: "lecture", rule: "lecture-step-guide-min", evidence: lecture.stepGuide?.length ?? 0 }));
+      if (!Array.isArray(lecture.examples) || lecture.examples.length < t.examplesMin) mechanical.push(finding({ ...context, field: "examples", severity: "MEDIUM", category: "lecture", rule: "lecture-examples-min", evidence: lecture.examples?.length ?? 0 }));
+      if (!Array.isArray(lecture.commonMistakes) || lecture.commonMistakes.length < t.commonMistakesMin) mechanical.push(finding({ ...context, field: "commonMistakes", severity: "MEDIUM", category: "lecture", rule: "lecture-common-mistakes-min", evidence: lecture.commonMistakes?.length ?? 0 }));
+      (lecture.examples ?? []).forEach((example, i) => { if (chineseCount(example.why) < t.exampleWhyChineseMin) mechanical.push(finding({ ...context, field: `examples[${i}].why`, severity: "MEDIUM", category: "lecture", rule: "lecture-example-why-min", evidence: chineseCount(example.why) })); });
+    }
+    textChecks(selectStudentFacing(lecture, policy), context, policy, mechanical, requiresHumanReview, checks);
   }
   return { mechanical: sortFindings(mechanical), requiresHumanReview: sortFindings(requiresHumanReview) };
 }
 
-export function auditSourceText({ path, text, policy, unit = "LEGACY" }) {
+export function auditSourceText({ path, text, policy, unit = "LEGACY", checks = new Set(["terminology", "units", "notation", "duplicates", "ui"]) }) {
   const mechanical = [], requiresHumanReview = [], context = { unit, path, recordId: "" };
-  textChecks(text, context, policy, mechanical);
-  const englishLabels = [...text.matchAll(/>([A-Z][A-Z0-9 ]{5,})</g)].map(match => match[1]);
-  for (const label of englishLabels) requiresHumanReview.push(finding({ ...context, field: "ui", severity: "LOW", category: "language", rule: "english-instruction-label-review", evidence: label, kind: "requiresHumanReview" }));
+  textChecks(text, context, policy, mechanical, requiresHumanReview, checks);
+  if (enabled(checks, "ui")) {
+    const englishLabels = [...text.matchAll(/>([A-Z][A-Z0-9 ]{5,})</g)].map(match => match[1]);
+    for (const label of englishLabels) requiresHumanReview.push(finding({ ...context, field: "ui", severity: "LOW", category: "language", rule: "english-instruction-label-review", evidence: label, kind: "requiresHumanReview" }));
+  }
   return { mechanical: sortFindings(mechanical), requiresHumanReview: sortFindings(requiresHumanReview) };
 }
 
