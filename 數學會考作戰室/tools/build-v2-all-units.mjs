@@ -6,6 +6,7 @@ import { writeJs } from "./v2-shared.mjs";
 import syllabus from "./v2-content/syllabus-source.mjs";
 import unitRegistry from "./v2-content/unit-registry.mjs";
 import migrationSource from "./v2-content/migration-source.mjs";
+import mockBlueprint from "./v2-content/mock-blueprint-source.mjs";
 import productionProfile from "./v2-qa/policies/math-v2-production-profile.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
@@ -106,7 +107,7 @@ function parseArgs(argv) {
 export async function buildV2Production({ outDir = DEFAULT_OUT_DIR, manifestDir = DEFAULT_MANIFEST_DIR, write = true } = {}) {
   const units = await loadUnits();
   const blueprints = makeBlueprints(units);
-  const core = { syllabus, profile: productionProfile, blueprints, migration: migrationSource, units: units.map(({ unit, questions, lectures }) => ({ unit, questions, lectures })) };
+  const core = { syllabus, profile: productionProfile, blueprints, mockBlueprint, migration: migrationSource, units: units.map(({ unit, questions, lectures }) => ({ unit, questions, lectures })) };
   const contentVersion = sha256(canonicalJson(core));
   const browserUnitManifest = {
     engineVersion: "2.0.0",
@@ -127,6 +128,7 @@ export async function buildV2Production({ outDir = DEFAULT_OUT_DIR, manifestDir 
     ["math-v2-production-profile.js", writeJs("MATH_V2_PRODUCTION_PROFILE", { ...productionProfile, contentVersion })],
     ["math-v2-unit-manifest.js", writeJs("MATH_V2_UNIT_MANIFEST", browserUnitManifest)],
     ["math-quiz-blueprints-v2.js", writeJs("MATH_QUIZ_BLUEPRINTS_V2", blueprints)],
+    ["math-mock-blueprint-v2.js", writeJs("MATH_MOCK_BLUEPRINT_V2", mockBlueprint)],
     ["math-migration-map.js", writeJs("MATH_MIGRATION_MAP", migrationSource)]
   ]);
   const qaManifests = [];

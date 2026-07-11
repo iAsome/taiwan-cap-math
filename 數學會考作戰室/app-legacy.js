@@ -1,8 +1,8 @@
 ﻿(() => {
   const { units, domains, strategies, archives, sourcePolicy, officialSources, publisherSources, tipAudits } = window.MATH_DATA;
-  const legacyUnits = window.MATH_LEGACY_SUPPORT_UNITS || units;
   const capAnalysis = window.CAP_ANALYSIS;
-  const isV2 = window.MATH_V2_PRODUCTION_MODE === true;
+  const lectureTaxonomy = window.LECTURE_TAXONOMY || {};
+  const quizTaxonomy = window.QUIZ_TAXONOMY || {};
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -49,7 +49,7 @@
     search: "",
     tipSearch: "",
     tipVerdict: "all",
-    completed: new Set(window.MATH_V2_STORAGE?.readCompleted?.() || JSON.parse(localStorage.getItem("capMath.completed") || "[]")),
+    completed: new Set(JSON.parse(localStorage.getItem("capMath.completed") || "[]")),
     exam: null,
     answers: [],
     submitted: false,
@@ -85,11 +85,11 @@
     return assessment.questions.map(q => [q.unitId, q.quizLevel || "", q.text, q.choices?.join("|") || q.answer].join("∷")).join("§");
   }
 
-  async function uniqueQuizAssessment(quizId) {
+  function uniqueQuizAssessment(quizId) {
     const used = readJson(`capMath.quizSignatures.${quizId}`, []);
     for (let attempt = 0; attempt < 80; attempt++) {
       const seed = Math.floor(Date.now() % 1000000000) + attempt * 9973 + Math.floor(Math.random() * 9000);
-      const assessment = await window.EXAM_ENGINE.generateQuiz(quizId, seed);
+      const assessment = window.EXAM_ENGINE.generateQuiz(quizId, seed);
       const signature = quizSignature(assessment);
       if (!used.includes(signature)) {
         localStorage.setItem(`capMath.quizSignatures.${quizId}`, JSON.stringify([signature, ...used].slice(0, 300)));
@@ -136,7 +136,7 @@
     return question.type === "mc" && record.answers[index] !== question.answer;
   }
 
-  async function startTopicDrill(questionIndex) {
+  function startTopicDrill(questionIndex) {
     const record = getPaperRecord(state.paperReview.recordId);
     if (!record) return;
     const question = record.exam.questions[questionIndex];
@@ -146,16 +146,14 @@
     const level = record.exam.level || 2;
     let subQuestions;
     try {
-      if (isV2 && question.skillId) {
-        subQuestions = await window.EXAM_ENGINE.generateCorrectionDrill(question, seed, 1, excludeKeys);
-      } else if (question.taxonomyQuizId && question.taxonomyTopicId) {
+      if (question.taxonomyQuizId && question.taxonomyTopicId) {
         try {
-          subQuestions = await window.EXAM_ENGINE.generateTopicDrill(question.taxonomyQuizId, question.taxonomyTopicId, seed, 1, excludeKeys);
+          subQuestions = window.EXAM_ENGINE.generateTopicDrill(question.taxonomyQuizId, question.taxonomyTopicId, seed, 1, excludeKeys);
         } catch {
-          subQuestions = await window.EXAM_ENGINE.generateUnitDrill(question.unitId, seed, 1, level, excludeKeys);
+          subQuestions = window.EXAM_ENGINE.generateUnitDrill(question.unitId, seed, 1, level, excludeKeys);
         }
       } else {
-        subQuestions = await window.EXAM_ENGINE.generateUnitDrill(question.unitId, seed, 1, level, excludeKeys);
+        subQuestions = window.EXAM_ENGINE.generateUnitDrill(question.unitId, seed, 1, level, excludeKeys);
       }
     } catch (error) {
       toast(error.message || "無法產生訂正練習");
@@ -247,33 +245,38 @@
     return units.filter(unit => (state.grade === "all" || String(unit.grade) === state.grade) && (!q || [unit.title, unit.domain, unit.summary, unit.core, unit.formula, unit.tips.join(" ")].join(" ").toLowerCase().includes(q)));
   }
 
-  function renderLectureArticle(lecture, quizId) {
-    const examples = lecture.examples.map((example, index) => `<div class="lecture-example"><p><strong>例題 ${index + 1}：</strong>${mathText(example.prompt)}</p><p><strong>答案：</strong>${mathText(example.answer)}</p><p><strong>為什麼：</strong>${mathText(example.why)}</p></div>`).join("");
-    return `<article class="lecture-topic-card" id="lecture-${esc(lecture.skillId)}">
-      <header><span class="lecture-chapter">${esc(lecture.skillId)}</span><h3>${esc(lecture.title)}</h3><small>${esc(lecture.summary)}</small></header>
-      <div class="lecture-blocks">
-        <div class="lecture-text"><h4>觀念</h4><p>${mathText(lecture.concept)}</p></div>
-        ${lecture.formula ? `<div class="lecture-formula">${mathBlock(lecture.formula)}</div>` : ""}
-        <div class="lecture-text"><h4>解題步驟</h4><ol>${lecture.stepGuide.map(step => `<li>${mathText(step)}</li>`).join("")}</ol></div>
-        ${examples}
-        <div class="lecture-pitfall"><strong>常見錯誤</strong><ul>${lecture.commonMistakes.map(mistake => `<li>${mathText(mistake)}</li>`).join("")}</ul></div>
-        ${lecture.fullScoreExtension ? `<div class="clarify-box"><strong>滿分延伸：</strong>${mathText(lecture.fullScoreExtension)}</div>` : ""}
-      </div>
-      <footer class="lecture-quiz-link"><a href="?quiz=${esc(quizId)}&seed=">練習本單元小考 →</a></footer>
+  function renderLectureBlock(block) {
+    if (block.type === "text") return `<div class="lecture-text">${block.html}</div>`;
+    if (block.type === "formula") return `<div class="lecture-formula">${mathBlock(block.content)}</div>`;
+    if (block.type === "example") {
+      return `<div class="lecture-example"><p><strong>例題：</strong>${mathText(block.q)}</p><p><strong>解：</strong>${mathText(block.a)}</p></div>`;
+    }
+    if (block.type === "pitfall") return `<div class="lecture-pitfall"><strong>常見陷阱</strong>${block.html}</div>`;
+    if (block.type === "diagram") return "";
+    return "";
+  }
+
+  function renderLectureArticle(key) {
+    const lecture = lectureTaxonomy[key];
+    if (!lecture) return `<p class="unit-empty">找不到講義 ${esc(key)}</p>`;
+    return `<article class="lecture-topic-card" id="lecture-${esc(key.replace(/\//g, "-"))}">
+      <header><span class="lecture-chapter">${esc(lecture.chapter)}</span><h3>${esc(lecture.title)}</h3><small>${esc(lecture.section)}</small></header>
+      <div class="lecture-blocks">${lecture.blocks.map(renderLectureBlock).join("")}</div>
+      <footer class="lecture-quiz-link"><a href="?quiz=${esc(lecture.quizId)}&seed=">小考練習 ${esc(lecture.quizId)} →</a></footer>
     </article>`;
   }
 
   function chaptersForUnit(unitId) {
-    return window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter" && item.unitIds.includes(unitId));
+    return window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter" && item.unitIds.includes(unitId) && quizTaxonomy[item.id]);
   }
 
-  async function renderHandbook() {
+  function renderHandbook() {
     const list = filteredUnits();
     if (!list.some(u => u.id === state.selectedUnit) && list.length) state.selectedUnit = list[0].id;
     const grouped = [7, 8, 9].map(grade => ({ grade, items: list.filter(u => u.grade === grade) })).filter(g => g.items.length);
     $("#unitIndex").innerHTML = grouped.map(group => `
       <div class="index-group"><strong>國中 ${group.grade === 7 ? "一年級" : group.grade === 8 ? "二年級" : "三年級"}</strong>
-        ${group.items.map(unit => `<button class="${unit.id === state.selectedUnit ? "active" : ""}" data-unit="${unit.id}"><span>${String(unit.id).padStart(2, "0")}</span><b>${esc(unit.title)}</b><i>${state.completed.has(unit.unitId) ? "✓" : ""}</i></button>`).join("")}
+        ${group.items.map(unit => `<button class="${unit.id === state.selectedUnit ? "active" : ""}" data-unit="${unit.id}"><span>${String(unit.id).padStart(2, "0")}</span><b>${esc(unit.title)}</b><i>${state.completed.has(unit.id) ? "✓" : ""}</i></button>`).join("")}
       </div>`).join("");
     $$("[data-unit]", $("#unitIndex")).forEach(button => button.addEventListener("click", () => {
       state.selectedUnit = Number(button.dataset.unit);
@@ -287,50 +290,49 @@
       updateLearningProgress();
       return;
     }
-    const selectedUnitId = unit.unitId;
-    $("#unitContent").innerHTML = `<div class="unit-empty" role="status">正在載入 ${esc(unit.title)} 的 ${unit.skillCount} 份技能講義……</div>`;
-    let lectures;
-    try {
-      lectures = await window.EXAM_ENGINE.engine.getLecturesByUnit(unit.unitId);
-    } catch (error) {
-      if (state.selectedUnit === unit.id) $("#unitContent").innerHTML = `<div class="unit-empty">講義載入失敗：${esc(error.message || error)}</div>`;
-      return;
-    }
-    if (state.selectedUnit !== unit.id || selectedUnitId !== unit.unitId) return;
-    const quizId = chaptersForUnit(unit.id)[0]?.id || `${unit.unitId}-all-skills`;
     $("#unitContent").innerHTML = `
       <article class="unit-card">
         <header class="unit-hero" data-number="${String(unit.id).padStart(2, "0")}">
-          <div class="unit-meta"><span>${esc(unit.gradeBand)}</span><span>${esc(unit.domain)}</span><span>${unit.skillCount} 項必修技能</span></div>
+          <div class="unit-meta"><span>國${unit.grade === 7 ? "一" : unit.grade === 8 ? "二" : "三"}</span><span>${esc(unit.domain)}</span><span>十年主概念編碼 ${String(unit.id).padStart(2, "0")}</span></div>
           <h2>${esc(unit.title)}</h2><p>${esc(unit.summary)}</p>
         </header>
         <div class="unit-body">
-          <section class="lesson-block"><div class="lesson-label">單元目標</div><div class="lesson-content"><h3>學完要能做到</h3><p>${mathText(unit.core)}</p><div class="clarify-box"><strong>範圍邊界：</strong> ${mathText(unit.clarify)}</div></div></section>
-          <section class="lesson-block taxonomy-lectures"><div class="lesson-label">技能講義</div><div class="lesson-content"><p>本單元共有 ${lectures.length} 份純文字技能講義；每份包含觀念、適用條件、步驟、兩個例題與四個常見錯誤。</p>${unit.topics.map(topic => `<details class="lecture-chapter" open><summary><strong>${esc(topic.title)}</strong><span>${topic.skills.length} 項技能</span></summary><div class="lecture-topic-list">${topic.skills.map(skill => renderLectureArticle(lectures.find(lecture => lecture.skillId === skill.skillId), quizId)).join("")}</div></details>`).join("")}</div></section>
+          <section class="lesson-block"><div class="lesson-label">核心觀念</div><div class="lesson-content"><h3>先把這件事想清楚</h3><p>${mathText(unit.core)}</p><div class="clarify-box"><strong>觀念澄清：</strong> ${mathText(unit.clarify)}</div></div></section>
+          <section class="lesson-block"><div class="lesson-label">公式與推導</div><div class="lesson-content"><div class="formula-box">${mathBlock(unit.formula)}</div><h3>公式不是憑空出現</h3><p>${mathText(unit.derivation)}</p></div></section>
+          ${unitSymbolHtml(unit)}
+          <section class="lesson-block"><div class="lesson-label">標準解題流程</div><div class="lesson-content"><ol>${unit.steps.map(step => `<li>${mathText(step)}</li>`).join("")}</ol></div></section>
+          <section class="lesson-block"><div class="lesson-label">會考快解技巧</div><div class="lesson-content"><ul class="tip-list">${unit.tips.map(tip => `<li>${mathText(tip)}</li>`).join("")}</ul></div></section>
+          ${chaptersForUnit(unit.id).length ? `<section class="lesson-block taxonomy-lectures"><div class="lesson-label">細分題型講義</div><div class="lesson-content"><p>以下依教育部章節題型表，列出與本單元相關的 ${chaptersForUnit(unit.id).reduce((n, ch) => n + (quizTaxonomy[ch.id]?.sections || []).reduce((s, sec) => s + sec.topics.length, 0), 0)} 個題型講義（純文字）。</p>${chaptersForUnit(unit.id).map(ch => `<details class="lecture-chapter"><summary><strong>${esc(ch.title.replace(/^國[一二三][上下]第[一二三四五六]單元：/, ""))}</strong><span>${esc(ch.id)}</span></summary><div class="lecture-topic-list">${(quizTaxonomy[ch.id]?.sections || []).flatMap(sec => sec.topics.map(t => renderLectureArticle(`${ch.id}/${t.id}`))).join("")}</div></details>`).join("")}</div></section>` : ""}
         </div>
-        <button class="complete-button ${state.completed.has(unit.unitId) ? "done" : ""}" data-complete="${unit.unitId}">${state.completed.has(unit.unitId) ? "✓ 已掌握這個單元（按一下取消）" : "標記為已掌握"}</button>
+        <button class="complete-button ${state.completed.has(unit.id) ? "done" : ""}" data-complete="${unit.id}">${state.completed.has(unit.id) ? "✓ 已掌握這個單元（按一下取消）" : "標記為已掌握"}</button>
       </article>`;
     $("[data-complete]").addEventListener("click", () => {
-      state.completed.has(unit.unitId) ? state.completed.delete(unit.unitId) : state.completed.add(unit.unitId);
-      window.MATH_V2_STORAGE.writeCompleted([...state.completed]);
+      state.completed.has(unit.id) ? state.completed.delete(unit.id) : state.completed.add(unit.id);
+      localStorage.setItem("capMath.completed", JSON.stringify([...state.completed]));
       updateLearningProgress();
       renderHandbook();
-      toast(state.completed.has(unit.unitId) ? "已記錄為掌握單元" : "已取消掌握標記");
+      toast(state.completed.has(unit.id) ? "已記錄為掌握單元" : "已取消掌握標記");
     });
     updateLearningProgress();
   }
 
   function renderAtlas() {
+    const chapters = window.EXAM_ENGINE.quizCatalog.filter(item => item.scope === "chapter" && quizTaxonomy[item.id]);
     $("#atlasContent").innerHTML = `
-      <section class="taxonomy-atlas"><p class="eyebrow">339 REQUIRED SKILLS</p><h2>23 單元完整技能地圖</h2><p>每項技能都有 12 題與 1 份講義；每個難度各 3 題，全部為純文字四選一。</p>
-        ${units.map(unit => `<details class="lecture-chapter atlas-chapter"><summary><strong>${unit.unitId.toUpperCase()}｜${esc(unit.title)}</strong><span>${unit.skillCount} 項技能</span></summary><div class="lecture-topic-list">${unit.topics.map(topic => `<div class="lecture-section"><h4>${esc(topic.title)}</h4><ul class="v2-skill-list">${topic.skills.map(skill => `<li><button type="button" data-atlas-unit="${unit.id}"><strong>${esc(skill.title)}</strong><span>12 題｜講義 1 份</span></button></li>`).join("")}</ul></div>`).join("")}</div></details>`).join("")}
+      <section class="taxonomy-atlas"><p class="eyebrow">537 TOPIC LECTURES</p><h2>依章節題型表的細分講義</h2><p>每個題型各 10 組變體題；小考種子碼決定每題用哪一組。點開章節可閱讀完整文字講義。</p>
+        ${chapters.map(ch => `<details class="lecture-chapter atlas-chapter"><summary><strong>${esc(ch.title)}</strong><span>${(quizTaxonomy[ch.id]?.sections || []).reduce((n, s) => n + s.topics.length, 0)} 題型</span></summary><div class="lecture-topic-list">${(quizTaxonomy[ch.id]?.sections || []).map(sec => `<div class="lecture-section"><h4>${esc(sec.title)}</h4>${sec.topics.map(t => renderLectureArticle(`${ch.id}/${t.id}`)).join("")}</div>`).join("")}</div></details>`).join("")}
       </section>
       <div class="domain-grid">${domains.map(d => `<article class="domain-card"><span>${d.mark}</span><h3>${esc(d.name)}</h3><p>${mathText(d.desc)}</p><ul>${d.skills.map(s => `<li>${mathText(s)}</li>`).join("")}</ul></article>`).join("")}</div>
-      <section class="strategy-section"><p class="eyebrow">PATTERN → TOOL</p><h2>常見題型的穩定處理方式</h2><table class="strategy-table"><thead><tr><th>題型</th><th>核心能力</th><th>穩定解法</th><th>最常失分</th></tr></thead><tbody>${strategies.map(row => `<tr>${row.map(cell => `<td>${mathText(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></section>`;
-    $$("[data-atlas-unit]", $("#atlasContent")).forEach(button => button.addEventListener("click", () => {
-      state.selectedUnit = Number(button.dataset.atlasUnit);
-      setView("handbook");
-    }));
+      <section class="strategy-section"><p class="eyebrow">PATTERN → TOOL</p><h2>八大常見題型：看到什麼，就啟動什麼</h2>
+        <table class="strategy-table"><thead><tr><th>題型</th><th>核心能力</th><th>穩定解法</th><th>最常失分</th></tr></thead><tbody>${strategies.map(row => `<tr>${row.map(cell => `<td>${mathText(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table>
+        <h2>非選擇題的 3 級分作答骨架</h2>
+        <div class="nonchoice-playbook">
+          <article><span>01</span><h3>定義</h3><p>先寫「設 x 為……」，讓未知數、單位與題目對上。</p></article>
+          <article><span>02</span><h3>策略</h3><p>列出關係式或幾何性質，交代為什麼可以這樣做。</p></article>
+          <article><span>03</span><h3>推導</h3><p>保留關鍵算式與理由；錯一個小計算，仍可能保有過程分。</p></article>
+          <article><span>04</span><h3>結論</h3><p>回到題目語境，寫單位、範圍與完整回答；別停在中間量。</p></article>
+        </div>
+      </section>`;
   }
 
 const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
@@ -428,7 +430,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
 
     const unitTotals = {};
     Object.values(primary).flat().forEach(unitId => unitTotals[unitId] = (unitTotals[unitId] || 0) + 1);
-    const matrixUnits = legacyUnits.filter(unit => unit.id <= 26).sort((a, b) => (unitTotals[b.id] || 0) - (unitTotals[a.id] || 0));
+    const matrixUnits = units.filter(unit => unit.id <= 26).sort((a, b) => (unitTotals[b.id] || 0) - (unitTotals[a.id] || 0));
     $("#conceptMatrixHead").innerHTML = `<tr><th>主概念（依十年題數排序）</th>${years.map(year => `<th>${year}</th>`).join("")}<th>合計</th><th>占比</th></tr>`;
     $("#conceptMatrixBody").innerHTML = matrixUnits.map(unit => {
       const count = unitTotals[unit.id] || 0;
@@ -454,28 +456,28 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       return `<details ${index === 0 ? "open" : ""}><summary><strong>${year}</strong><span>${info.curriculum}｜${info.mc} 題選擇＋${info.cr} 題非選｜80 分鐘</span><b>展開逐題編碼 ＋</b></summary><div class="ledger-body"><div class="ledger-ability"><span>概念 ${info.abilities.concept}</span><span>公式運算 ${info.abilities.procedure}</span><span>應用 ${info.abilities.application}</span><span>分析 ${info.abilities.analysis}</span></div><div class="ledger-questions">${primary[year].map((unitId, i) => {
         const isCr = i >= info.mc;
         const number = isCr ? `非${i - info.mc + 1}` : i + 1;
-        return `<article class="ledger-item ${isCr ? "cr" : ""}"><b>${number}</b><span>${esc(legacyUnits.find(unit => unit.id === unitId)?.title || `舊單元 ${unitId}`)}<small>${esc(capAnalysis.domainByUnit[unitId])}</small></span></article>`;
+        return `<article class="ledger-item ${isCr ? "cr" : ""}"><b>${number}</b><span>${esc(units[unitId - 1].title)}<small>${esc(capAnalysis.domainByUnit[unitId])}</small></span></article>`;
       }).join("")}</div><div class="cr-topic-list">${info.crTopics.map((topic, i) => `<p><strong>非選 ${i + 1}</strong>｜${esc(topic)}</p>`).join("")}</div></div></details>`;
     }).join("");
 
-    const bp = window.MATH_MOCK_BLUEPRINT_V2;
-    const domainText = Object.entries(bp.domainCounts).map(([name, count]) => `${name} ${count}`).join("、");
+    const bp = capAnalysis.strictBlueprint;
+    const domainText = Object.entries(bp.domainTargets).map(([name, range]) => `${name} ${range[0]}–${range[1]}`).join("、");
     $("#blueprintChecks").innerHTML = [
-      ["✓ 練習卷結構", `${bp.questionCount} 題四選一，${bp.minutes} 分鐘，不含非選擇題`],
-      ["✓ 十年資料校準", "單元權重由 106–115 年官方題本主概念編碼換算"],
-      ["✓ 六大主題題數", domainText],
-      ["✓ 難度配置", "依種子與強度固定分配基礎、標準、進階與素養題"],
-      ["✓ 跨年級", "每份模考至少涵蓋國一、國二與國三單元"],
-      ["✓ 可重現", "相同引擎、內容版本、藍圖與種子會選出相同題目"]
+      ["✓ 題本結構", `${bp.mc} 選擇＋${bp.cr} 非選，${bp.minutes} 分鐘`],
+      ["✓ 官方能力層次", `概念 6、公式運算 4、應用 12、分析 5`],
+      ["✓ 六大主題區間", domainText],
+      ["✓ 呈現形式", `閱讀題組 ${bp.presentation.readingSetItems[0]}–${bp.presentation.readingSetItems[1]} 題；附圖幾何 ${bp.presentation.geometryItems[0]}–${bp.presentation.geometryItems[1]} 題`],
+      ["✓ 題型排序", "選擇題依卷別種子打亂；閱讀題組保持連續；非選仍在第二部分"],
+      ["✓ 非選評分", "策略適切、過程合理完整、結論含單位與情境解釋"]
     ].map(([title, detail]) => `<div class="blueprint-check"><strong>${title}</strong><span>${esc(detail)}</span></div>`).join("");
   }
 
   function renderTipAudits() {
     const q = state.tipSearch.trim().toLowerCase();
-    const list = tipAudits.filter(item => (state.tipVerdict === "all" || item.verdict === state.tipVerdict) && (!q || [item.tip, item.condition, item.why, item.source, legacyUnits[item.unitId - 1]?.title].join(" ").toLowerCase().includes(q)));
+    const list = tipAudits.filter(item => (state.tipVerdict === "all" || item.verdict === state.tipVerdict) && (!q || [item.tip, item.condition, item.why, item.source, units[item.unitId - 1]?.title].join(" ").toLowerCase().includes(q)));
     const verdictClass = verdict => verdict === "通過" ? "pass" : verdict === "有條件" ? "conditional" : "reject";
     $("#tipAuditBody").innerHTML = list.length ? list.map(item => `
-      <tr><td>${mathText(item.tip)}<span class="audit-unit">${esc(legacyUnits[item.unitId - 1]?.title || "跨單元")}｜${esc(item.source)}</span></td><td><span class="verdict ${verdictClass(item.verdict)}">${esc(item.verdict)}</span></td><td>${mathText(item.condition)}</td><td>${mathText(item.why)}</td></tr>`).join("") : `<tr><td class="audit-empty" colspan="4">找不到符合條件的技巧。</td></tr>`;
+      <tr><td>${mathText(item.tip)}<span class="audit-unit">${esc(units[item.unitId - 1]?.title || "跨單元")}｜${esc(item.source)}</span></td><td><span class="verdict ${verdictClass(item.verdict)}">${esc(item.verdict)}</span></td><td>${mathText(item.condition)}</td><td>${mathText(item.why)}</td></tr>`).join("") : `<tr><td class="audit-empty" colspan="4">找不到符合條件的技巧。</td></tr>`;
     $("#auditCount").textContent = state.tipVerdict === "all" && !q ? tipAudits.length : `${list.length}/${tipAudits.length}`;
   }
 
@@ -493,7 +495,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
           unitId,
           type: isCr ? "非選" : "選擇",
           label: isCr ? `${year}-非${index - info.mc + 1}` : `${year}-${index + 1}`,
-          unitTitle: legacyUnits.find(unit => unit.id === unitId)?.title || `單元 ${unitId}`
+          unitTitle: units.find(unit => unit.id === unitId)?.title || `單元 ${unitId}`
         };
       }).filter(Boolean);
     });
@@ -513,7 +515,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     return `<article class="quiz-card ${item.term === "總複習" ? "total" : ""} ${isChapter ? "chapter" : ""}">
       <div class="quiz-card-top"><span>${esc(isChapter ? `${item.book} ${item.chapter}` : item.term)}</span><small>${item.questionCount || 12} 題｜${item.minutes || 25} 分鐘</small></div>
       <h3>${esc(item.title)}</h3>
-      <p>${isChapter ? "每項必修技能各抽 1 題；交卷後顯示完整詳解、步驟與常見錯誤。" : "四選一、即時計分、逐題詳解；題目只從此範圍生成。"}</p>
+      <p>${isChapter ? "本單元獨立題庫，依教育部章節切分；交卷後逐題顯示公式、詳解、技巧與易錯點。" : "四選一、即時計分、逐題詳解；題目只從此範圍生成。"}</p>
       <div class="quiz-unit-list">${scopeUnits.map(title => `<span>${esc(title)}</span>`).join("")}</div>
       ${capSummary(item, true)}
       <small class="quiz-official-code">課綱編碼：${esc(item.officialCodes)}</small>
@@ -537,13 +539,15 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const catalog = window.EXAM_ENGINE.quizCatalog;
     $("#quizCatalog").innerHTML = [7, 8, 9].map(grade => {
       const chapters = catalog.filter(item => item.grade === grade && item.scope === "chapter");
+      const reviews = ["上學期", "下學期", "總複習"].map(term => catalog.find(item => item.grade === grade && item.scope === "term" && item.term === term)).filter(Boolean);
       const upper = chapters.filter(item => item.term === "上學期");
       const lower = chapters.filter(item => item.term === "下學期");
       return `<section class="quiz-grade-section">
-        <div class="quiz-grade-heading"><h2>國${gradeName(grade)}</h2><span>${chapters.length} 份 Math V2 單元小考</span></div>
+        <div class="quiz-grade-heading"><h2>國${gradeName(grade)}</h2><span>先選上學期、下學期或總複習</span></div>
         <div class="quiz-track-grid">
-          ${upper.length ? quizTrack("上學期", `${upper.length} 個課綱單元小考`, upper, grade, "upper") : ""}
-          ${lower.length ? quizTrack("下學期", `${lower.length} 個課綱單元小考`, lower, grade, "lower") : ""}
+          ${quizTrack("上學期", `${upper.length} 個教育部單元小考`, upper, grade, "upper")}
+          ${quizTrack("下學期", `${lower.length} 個教育部單元小考`, lower, grade, "lower")}
+          ${quizTrack("總複習", "上學期總複習、下學期總複習、全年總複習", reviews, grade, "review")}
         </div>
       </section>`;
     }).join("");
@@ -631,8 +635,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     const record = getPaperRecord(recordId);
     if (!record) return toast("找不到這份考卷紀錄");
     state.paperReview = { recordId, mode, drill: null };
-    try { state.exam = window.MATH_V2_STORAGE?.restorePaper?.(record) || record.exam; }
-    catch { return toast("這份考卷紀錄已損壞，其他考卷不受影響"); }
+    state.exam = record.exam;
     state.answers = record.answers;
     state.submitted = true;
     state.totalSeconds = record.totalSeconds ?? (record.exam.minutes || 80) * 60;
@@ -656,7 +659,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   function configureExamHeader() {
     const isQuiz = state.exam?.kind === "quiz";
     const isArchive = state.exam?.kind === "archive";
-    $("#examEyebrow").textContent = PAPER_HISTORY_UI.examKindEyebrow(state.exam?.kind || "mock");
+    $("#examEyebrow").textContent = PAPER_HISTORY_UI.examKindEyebrow(state.exam.kind);
     $("#examTitle").textContent = isQuiz || isArchive ? state.exam.title : "會考數學模擬考";
     $("#examDescription").textContent = isQuiz
       ? `${state.exam.questions.length} 題四選一，共 ${state.exam.minutes || 25} 分鐘。官方課綱編碼：${state.exam.officialCodes}。`
@@ -693,33 +696,23 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     $("#examWorkspace").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  async function beginExam() {
+  function beginExam() {
     const seed = Math.max(1, Math.min(999999, Number($("#seedInput").value) || Math.floor(Date.now() % 999999)));
     const level = Number($("#levelSelect").value) || 2;
-    try {
-      toast("正在依固定藍圖載入本卷需要的單元……");
-      const assessment = await window.EXAM_ENGINE.generate(seed, level);
-      assessment.kind = "mock";
-      assessment.title = "國中教育會考數學科模擬題本";
-      assessment.minutes = 80;
-      launchAssessment(assessment);
-      localStorage.setItem("capMath.lastSeed", seed);
-    } catch (error) {
-      toast(error.message || "模擬考載入失敗");
-    }
+    const assessment = window.EXAM_ENGINE.generate(seed, level);
+    assessment.kind = "mock";
+    assessment.title = "國中教育會考數學科模擬題本";
+    assessment.minutes = 80;
+    launchAssessment(assessment);
+    localStorage.setItem("capMath.lastSeed", seed);
   }
 
-  async function beginQuiz(quizId, seedOverride) {
+  function beginQuiz(quizId, seedOverride) {
     const raw = seedOverride ?? $("#quizSeedInput")?.value;
     const seed = raw !== "" && raw != null ? Math.max(1, Math.min(999999, Number(raw) || 0)) : null;
-    try {
-      toast("正在載入本單元題庫……");
-      const assessment = seed ? await window.EXAM_ENGINE.generateQuiz(quizId, seed) : await uniqueQuizAssessment(quizId);
-      if (seed) localStorage.setItem("capMath.lastQuizSeed", String(seed));
-      launchAssessment(assessment);
-    } catch (error) {
-      toast(error.message || "小考載入失敗");
-    }
+    const assessment = seed ? window.EXAM_ENGINE.generateQuiz(quizId, seed) : uniqueQuizAssessment(quizId);
+    if (seed) localStorage.setItem("capMath.lastQuizSeed", String(seed));
+    launchAssessment(assessment);
   }
 
   function switchToFullExam() {
@@ -834,7 +827,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     return `<div class="solution"><h4>參考結論：${mathText(q.answer)}</h4><ol class="solution-steps">${q.steps.map(s => `<li>${mathText(s)}</li>`).join("")}</ol>${solutionNotes(q)}<table class="rubric">${rubricRows.map(row => `<tr><th>${esc(row[0])}</th><td>${mathText(row[1])}</td></tr>`).join("")}</table></div>`;
   }
   function solutionNotes(q) {
-    return `<div class="solution-grid"><div class="solution-note explanation-note"><strong>完整詳解</strong><p>${mathText(q.explanation || q.concept)}</p></div><div class="solution-note"><strong>本題觀念</strong><p>${mathText(q.concept)}</p></div>${q.formula ? `<div class="solution-note formula-note"><strong>可用公式</strong><div>${mathBlock(q.formula)}</div></div>` : ""}${questionSymbolHtml(q)}<div class="solution-note tip"><strong>檢查重點</strong><p>${mathText(q.tip)}</p></div><div class="solution-note trap"><strong>易錯警報</strong><p>${mathText(q.trap)}</p></div></div>`;
+    return `<div class="solution-grid"><div class="solution-note"><strong>本題觀念</strong><p>${mathText(q.concept)}</p></div><div class="solution-note formula-note"><strong>可用公式</strong><div>${mathBlock(q.formula)}</div></div>${questionSymbolHtml(q)}<div class="solution-note tip"><strong>快解技巧</strong><p>${mathText(q.tip)}</p></div><div class="solution-note trap"><strong>易錯警報</strong><p>${mathText(q.trap)}</p></div></div>`;
   }
 
   function bindExamInputs() {
@@ -912,8 +905,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       elapsedSeconds, overtimeSeconds, totalSeconds: state.totalSeconds,
       exam: state.exam,
       answers: state.answers,
-      corrections: {},
-      ...(window.MATH_V2_STORAGE?.paperMetadata?.(state.exam) || {})
+      corrections: {}
     });
     renderExam();
     updateTimer();
@@ -963,7 +955,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     if (lastSeed) $("#seedInput").value = lastSeed;
     if (localStorage.getItem("capMath.dark") === "1") { document.body.classList.add("dark"); $("#themeButton").textContent = "日"; }
     bindStaticEvents();
-    updateLearningProgress();
+    renderQuizCatalog(); renderHandbook(); renderAtlas(); renderAnalysis(); renderSources(); renderArchive(); updateLearningProgress();
     const requestedView = params.get("view");
     const requestedQuiz = params.get("quiz");
     const requestedSeed = params.get("seed");

@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
-import { execSync } from "node:child_process";
+import { execFileSync } from "node:child_process";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const errors = [];
@@ -44,7 +44,7 @@ function loadSubject(dir) {
 
 // Phase 1
 try {
-  execSync("node tools/verify-hub-links.js", { cwd: root, stdio: "pipe" });
+  execFileSync(process.execPath, ["tools/verify-hub-links.js"], { cwd: root, stdio: "pipe" });
 } catch {
   errors.push("Phase 1: verify-hub-links.js failed");
 }
@@ -65,6 +65,15 @@ let quizTotal = 0;
 let archiveTotal = 0;
 
 for (const dir of SUBJECT_DIRS) {
+  if (dir === "數學會考作戰室") {
+    try {
+      execFileSync(process.execPath, [path.join(dir, "tools/v2-qa/test/production-engine.test.mjs")], { cwd: root, stdio: "pipe" });
+      quizTotal += 23;
+    } catch (error) {
+      errors.push(`Phase 3: ${dir} V2 production engine failed: ${error.stderr?.toString().trim() || error.message}`);
+    }
+    continue;
+  }
   let w;
   try { w = loadSubject(dir); } catch (e) {
     errors.push(`Phase 3: ${dir} failed to load scripts: ${e.message}`);

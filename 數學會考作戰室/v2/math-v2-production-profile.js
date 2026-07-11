@@ -41,5 +41,5 @@ window.MATH_V2_PRODUCTION_PROFILE = {
     "defaultConsumer": "v2",
     "legacyDefaultConsumer": false
   },
-  "contentVersion": "2ad5692c5b9563afa988ff173b43dbf0bc06c57cdc7b4414fd69872174dc8c87"
+  "contentVersion": "86429e9311b7a52817a89a981d29bb33502abefe11f651877ec04ab502648741"
 };

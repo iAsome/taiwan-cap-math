@@ -10,7 +10,7 @@
   <meta name="description" content="依台灣國中教育會考規格設計的數學全範圍講義、模擬考與近十年歷屆考卷入口。">
   <title>會考數學作戰室</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260711a">
+  <link rel="stylesheet" href="styles.css?v=20260711a&amp;mv=20260712v2">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要內容</a>
@@ -53,7 +53,7 @@
             <div class="hero-copy">
               <p class="eyebrow">TAIWAN CAP MATH · 106–115</p>
               <h1 id="homeTitle">把會考數學，整理成一條看得見的路。</h1>
-              <p>28 個國中單元、六大命題主題、近十年官方題本，一個地方練完。每份模考依最新官方能力比例與十年實際分布組卷，交卷後逐題拆解「為什麼」。</p>
+              <p>23 個課綱單元、339 項必修技能、近十年官方題本，一個地方練完。每份模考依 106–115 年主概念分布組卷，交卷後逐題拆解「為什麼」。</p>
               <div class="hero-actions">
                 <button class="primary" data-view="exam">生成一份完整模考 <span>→</span></button>
                 <button class="secondary" data-view="handbook">打開全冊講義</button>
@@ -61,7 +61,7 @@
               <div class="hero-facts" aria-label="考試規格">
                 <div><strong>25</strong><span>選擇題模擬</span></div>
                 <div><strong>80</strong><span>分鐘</span></div>
-                <div><strong>278</strong><span>細分題型池</span></div>
+                <div><strong>4,068</strong><span>純文字四選一題</span></div>
                 <div><strong>275</strong><span>十年逐題分析</span></div>
               </div>
             </div>
@@ -83,7 +83,7 @@
             </div>
             <div class="feature-grid">
               <button class="feature-card coral" data-view="exam"><span class="feature-icon">✎</span><small>EXAM</small><h3>全範圍模擬考</h3><p>練習用 25 題選擇模擬，依題型池與十年主概念權重抽樣，含計時、答案卡與逐題詳解。</p><b>開始生成 →</b></button>
-              <button class="feature-card green" data-view="handbook"><span class="feature-icon">▤</span><small>HANDBOOK</small><h3>國一到國三講義</h3><p>28 單元的觀念澄清、公式推導、解題流程、陷阱與單元小測。</p><b>閱讀講義 →</b></button>
+              <button class="feature-card green" data-view="handbook"><span class="feature-icon">▤</span><small>HANDBOOK</small><h3>國一到國三講義</h3><p>23 單元、339 份技能講義，完整包含觀念、條件、流程、例題與常見錯誤。</p><b>閱讀講義 →</b></button>
               <button class="feature-card blue" data-view="atlas"><span class="feature-icon">◇</span><small>ATLAS</small><h3>題型與技巧地圖</h3><p>六大命題主題、閱讀情境題、圖表題與非選題得分策略。</p><b>查看地圖 →</b></button>
               <button class="feature-card gold" data-view="archive"><span class="feature-icon">◷</span><small>ARCHIVE</small><h3>近十年官方考卷</h3><p>106–115 年數學題本、參考答案與官方試題說明集中入口。</p><b>打開考卷館 →</b></button>
             </div>
@@ -111,7 +111,7 @@
           <div id="examWorkspace" class="exam-workspace hidden">
             <aside class="exam-rail">
               <div class="timer-card"><span id="timerLabel">剩餘時間</span><strong id="timer">80:00</strong><small id="timerState">模擬正式考試</small></div>
-              <div class="progress-card"><span><b id="answeredCount">0</b> / <b id="questionTotal">27</b> 已作答</span><div><i id="answerProgress"></i></div></div>
+              <div class="progress-card"><span><b id="answeredCount">0</b> / <b id="questionTotal">25</b> 已作答</span><div><i id="answerProgress"></i></div></div>
               <div class="question-grid" id="questionGrid" aria-label="題號導覽"></div>
               <div class="rail-legend"><span><i class="done"></i>已作答</span><span><i class="current"></i>目前</span></div>
               <button class="primary full" id="submitExam">交卷並看詳解</button>
@@ -124,7 +124,7 @@
 
         <section class="view" id="view-quiz" aria-labelledby="quizTitle">
           <div class="page-heading">
-            <div><p class="eyebrow">GRADE-SPECIFIC QUIZZES</p><h1 id="quizTitle">國一至國三單元小考題庫</h1><p>先選年級，再點上學期、下學期或總複習。每章小考涵蓋該章全部題型；<strong>種子碼</strong>決定每題用 10 組變體中的哪一組（留空則隨機，同 seed 全班同卷）。</p></div>
+            <div><p class="eyebrow">GRADE-SPECIFIC QUIZZES</p><h1 id="quizTitle">國一至國三單元小考題庫</h1><p>每個 V2 單元各有一份小考，每項技能固定抽 1 題；<strong>種子碼</strong>會決定難度、題目與選項順序（留空則隨機，同一 seed 可重現同卷）。</p></div>
             <label class="quiz-seed-global">預設種子碼<input id="quizSeedInput" type="number" min="1" max="999999" placeholder="隨機"></label>
           </div>
           <div class="quiz-basis"><strong>範圍邊界</strong><p>會考範圍以國家教育研究院《十二年國教數學領域課程綱要》與國中教育會考官方網站為最高依據；章節切分依教育部國中數學 1A～3B 公開章節順序。每張單元卡片都標註 106–115 年會考主概念題號，公開段考卷只用於校準題幹長度與難度，不擴張官方範圍。</p><a href="official-data/curriculum/十二年國教數學領域課程綱要.pdf" target="_blank" rel="noopener">開啟官方數學課綱 ↗</a></div>
@@ -144,8 +144,8 @@
 
         <section class="view" id="view-handbook" aria-labelledby="handbookTitle">
           <div class="page-heading">
-            <div><p class="eyebrow">GRADE 7 → GRADE 9</p><h1 id="handbookTitle">國中數學全冊會考講義</h1><p>用「觀念 → 推導 → 流程 → 陷阱 → 小測」串起每個單元。公式採臺灣國中課堂慣用符號，並以教育部版本資料作第二層對照；分數全部以上下堆疊式呈現。</p></div>
-            <div class="handbook-progress"><strong id="completedUnits">0 / 28</strong><span>單元已掌握</span><div><i id="handbookBar"></i></div></div>
+            <div><p class="eyebrow">GRADE 7 → GRADE 9</p><h1 id="handbookTitle">國中數學全冊會考講義</h1><p>用「觀念 → 條件 → 流程 → 例題 → 常見錯誤」串起 339 項技能。公式採臺灣國中課堂慣用符號，所有學生內容維持純文字。</p></div>
+            <div class="handbook-progress"><strong id="completedUnits">0 / 23</strong><span>單元已掌握</span><div><i id="handbookBar"></i></div></div>
           </div>
           <div class="filterbar">
             <label class="search"><span>⌕</span><input id="handbookSearch" type="search" placeholder="搜尋單元、公式或觀念"></label>
@@ -175,7 +175,7 @@
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">QUESTION FORMS</p><h2>題目怎麼出</h2></div><p>幾何附圖、生活情境、圖表判讀、閱讀題組與非選擇題分開計數。</p></div><div id="formAnalysis" class="form-analysis"></div></section>
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">UNIT LEDGER</p><h2>會考題目依教育部單元回填</h2></div><p>每一題會考主概念只標註到一個教育部章節，避免跨章重複灌水；點連結可直接進入該單元小考題庫。</p></div><div id="unitChapterLedger" class="unit-chapter-ledger"></div></section>
           <section class="analysis-section"><div class="section-heading"><div><p class="eyebrow">YEAR-BY-YEAR LEDGER</p><h2>每一屆逐題主概念帳本</h2></div><p>點開年度可核對題數、官方能力分布、兩題非選主題及各題歸類。</p></div><div id="yearLedger" class="year-ledger"></div></section>
-          <section class="analysis-section compliance-panel"><div><p class="eyebrow">GENERATOR COMPLIANCE</p><h2>嚴格模考生成規格</h2><p>全範圍模擬考改為練習用 25 題選擇，從 278 細分題型池依 106–115 主概念權重抽樣；學期／總複習小考亦為 25 題。歷屆官方題本仍保留 25＋2 結構。</p></div><div id="blueprintChecks" class="blueprint-checks"></div></section>
+          <section class="analysis-section compliance-panel"><div><p class="eyebrow">GENERATOR COMPLIANCE</p><h2>嚴格模考生成規格</h2><p>全範圍模擬考為練習用 25 題選擇，從 4,068 題 V2 題庫依 106–115 年主概念權重抽樣；單元小考則每項技能抽 1 題。歷屆官方題本下載內容不作改動。</p></div><div id="blueprintChecks" class="blueprint-checks"></div></section>
           <div class="research-limit"><strong>分類邊界</strong><p>官方資料公布每年度整體能力層次題數，但沒有逐題公布完整單元標籤。因此「題數、題型、能力總數」屬官方資料；「每題主概念、呈現形式」是本站依題目解題核心建立的研究編碼。遇到跨單元題只計一個主概念，並保留年度題號供回查。</p></div>
         </section>
 
@@ -224,20 +224,13 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="data.js?v=20260711a"></script>
-  <script src="analysis-data.js?v=20260711a"></script>
-  <script src="quiz-taxonomy.js?v=20260711a"></script>
-  <script src="quiz-variant-bank.js?v=20260711a"></script>
-  <script src="quiz-variants.js?v=20260711a"></script>
-
-  <script src="lecture-taxonomy.js?v=20260711a"></script>
-  <script src="../shared/fraction-markup.js?v=20260711a"></script>
-  <script src="../shared/text-only-policy.js?v=20260711a"></script>
-  <script src="../shared/paper-history-ui.js?v=20260711a"></script>
-  <script src="../shared/exam-choice-ui.js?v=20260711a"></script>
-  <script src="math-text-sanitize.js?v=20260711a"></script>
-  <script src="questions.js?v=20260711a"></script>
-
-  <script src="app.js?v=20260711a"></script>
+  <script src="data.js?v=20260711a&amp;mv=20260712v2"></script>
+  <script src="analysis-data.js?v=20260711a&amp;mv=20260712v2"></script>
+  <script src="../shared/fraction-markup.js?v=20260711a&amp;mv=20260712v2"></script>
+  <script src="../shared/text-only-policy.js?v=20260711a&amp;mv=20260712v2"></script>
+  <script src="../shared/paper-history-ui.js?v=20260711a&amp;mv=20260712v2"></script>
+  <script src="../shared/exam-choice-ui.js?v=20260711a&amp;mv=20260712v2"></script>
+  <script src="math-text-sanitize.js?v=20260711a&amp;mv=20260712v2"></script>
+  <script src="math-bootstrap.js?v=20260711a&amp;mv=20260712v2"></script>
 </body>
 </html>
