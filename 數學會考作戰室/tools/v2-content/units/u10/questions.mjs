@@ -1,0 +1,4756 @@
+export const QUESTIONS = [
+  {
+    "questionId": "u10-s001-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一個是單項式？",
+    "choices": [
+      "3x²",
+      "x + 1",
+      "x − y",
+      "x² + y²"
+    ],
+    "answerIndex": 0,
+    "explanation": "單項式整個式子只能由一項組成，中間不能有加減把它拆成兩塊。3x² 只有一個乘積項；x + 1 中間有加號，其實是兩項；x − y 被減號分成 x 與 y 兩項，都不是單項式。",
+    "steps": [
+      "單項式只能有一項。",
+      "3x² 沒有加減號分出的第二項。",
+      "因此 3x² 是單項式。"
+    ],
+    "commonMistake": "看到 x − y 只有兩個字母就以為是一項，沒注意到減號已把式子拆成兩項。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s001-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "單項式 −5x³ 的係數是多少？",
+    "choices": [
+      "3",
+      "−5",
+      "x³",
+      "−5x³"
+    ],
+    "answerIndex": 1,
+    "explanation": "單項式 −5x³ 的係數是 x³ 前面那個含正負號的數字，也就是 −5。3 是 x 的次數不是係數；−5x³ 是整個單項式本身，不是係數這個概念。",
+    "steps": [
+      "找 x³ 前面的數。",
+      "含符號寫 −5。",
+      "係數是 −5。"
+    ],
+    "commonMistake": "係數只寫 5 而漏掉負號，或把次數 3 當成係數。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s001-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "單項式 4x²y 的次數是多少？",
+    "choices": [
+      "2",
+      "4",
+      "3",
+      "1"
+    ],
+    "answerIndex": 2,
+    "explanation": "4x²y 中 x 的指數是 2、y 的指數是 1（y 沒寫指數就是 1）。單項式次數要把各字母指數全部加起來：2 + 1 = 3。只拿 2 是忘了把 y 的指數也算進去。",
+    "steps": [
+      "x 的指數是 2。",
+      "y 的指數是 1。",
+      "次數 2 + 1 = 3。"
+    ],
+    "commonMistake": "次數只取 x 的指數 2，沒把 y 的隱含指數 1 加進去。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s001-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪兩個是同類項？",
+    "choices": [
+      "3x 與 3x²",
+      "x + y 與 x − y",
+      "5 與 5x",
+      "2ab 與 −5ba"
+    ],
+    "answerIndex": 3,
+    "explanation": "同類項要看各字母次數是否完全相同。2ab 與 −5ba 只是 a、b 書寫順序不同，都是 a¹b¹，所以是同類項。3x 是 x¹，3x² 是 x²，次數不同；5 與 5x 一個沒有 x、一個有 x，也不能配對。",
+    "steps": [
+      "比對字母種類與次數。",
+      "2ab 與 −5ba 都是 a¹b¹。",
+      "兩者是同類項。"
+    ],
+    "commonMistake": "只看係數或只看字母個數，沒比對各字母次數是否相同。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s001-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "常數 7 可以視為單項式嗎？",
+    "choices": [
+      "可以，次數為 0",
+      "不可以，沒有未知數",
+      "可以，次數為 1",
+      "不可以，必須有 x"
+    ],
+    "answerIndex": 0,
+    "explanation": "常數 7 可以看成 7·x⁰，x 的指數 0 代表次數為 0，所以 7 是合法的單項式。「不可以，沒有未知數」忽略了 x⁰ 這種寫法；「次數為 1」則把指數搞錯了。",
+    "steps": [
+      "常數可看成 x⁰ 的係數。",
+      "指數 0 表示次數 0。",
+      "7 是次數 0 的單項式。"
+    ],
+    "commonMistake": "以為單項式一定要有 x，忽略常數項也是單項式。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s001-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "多項式 2x³ − x + 1 的次數是多少？",
+    "choices": [
+      "1",
+      "3",
+      "2",
+      "0"
+    ],
+    "answerIndex": 1,
+    "explanation": "多項式 2x³ − x + 1 各項次數分別是 3、1、0，整式的次數取最高次那一項，也就是 x³ 的 3。若答 1 是把 −x 的次數當成整式次數；答 0 則誤用常數項 1 的次數。",
+    "steps": [
+      "找出各項次數：3、1、0。",
+      "最高次是 x³ 的 3。",
+      "多項式次數為 3。"
+    ],
+    "commonMistake": "用項數或常數項次數當整式次數，沒找最高次項。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s001-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "多項式 3x² − 2x + 5 中，x 這一項的係數是多少？",
+    "choices": [
+      "3",
+      "5",
+      "−2",
+      "2"
+    ],
+    "answerIndex": 2,
+    "explanation": "在 3x² − 2x + 5 這個三項式裡，x 的一次項是 −2x，係數要把前面的 −2 整個算進去才算對。3 是 x² 項的係數；5 是常數項；2 則漏看了 −2x 前面的負號，只取絕對值。",
+    "steps": [
+      "找含 x 且 x 的指數為 1 的項。",
+      "該項是 −2x。",
+      "係數是 −2。"
+    ],
+    "commonMistake": "x 項係數只寫 2，去括號變號錯或漏看減號。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s001-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一個是多項式？",
+    "choices": [
+      "5/x",
+      "√x",
+      "1/(x+1)",
+      "2x² − 3x"
+    ],
+    "answerIndex": 3,
+    "explanation": "多項式要求各項指數都是非負整數，且分母不能含未知數。5/x 與 1/(x+1) 分母有 x；√x 指數是 1/2 不是整數。2x² − 3x 兩項都符合，才是多項式。",
+    "steps": [
+      "檢查是否分母有未知數。",
+      "檢查指數是否為非負整數。",
+      "2x² − 3x 符合，是多項式。"
+    ],
+    "commonMistake": "把分式或根號式也當多項式，沒檢查指數與分母。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s001-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡前式 4a²b − 2ba²，下列敘述何者正確？",
+    "choices": [
+      "是同類項，可合併係數",
+      "不是同類項",
+      "只能合併 a 項",
+      "次數不同不能比"
+    ],
+    "answerIndex": 0,
+    "explanation": "4a²b 與 −2ba² 比對：a 都是 2 次、b 都是 1 次，字母順序不同不影響判斷，兩者同類，係數 4 與 −2 可以合併。「不是同類項」是沒比對指數就下結論。",
+    "steps": [
+      "比對 a 的次數與 b 的次數。",
+      "兩項都是 a²b¹。",
+      "是同類項，可合併係數。"
+    ],
+    "commonMistake": "字母順序不同就判斷不是同類項，沒比對各字母次數。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s001-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "正方形邊長 x 公分，面積以 x 表示，下列何者正確？",
+    "choices": [
+      "2x",
+      "x²",
+      "4x",
+      "x + x"
+    ],
+    "answerIndex": 1,
+    "explanation": "正方形面積 = 邊長 × 邊長，邊長 x 公分時面積是 x × x = x²。2x 是兩條邊相加（周長的一半概念）；4x 是周長 4 倍邊長；x + x 也只是兩邊相加不是相乘。",
+    "steps": [
+      "面積 = 邊長 × 邊長。",
+      "代入 x × x。",
+      "寫成 x²。"
+    ],
+    "commonMistake": "周長與面積公式混淆，把 4x 或 2x 當面積。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s001-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "單項式 −3a²b³c 的次數是多少？",
+    "choices": [
+      "3",
+      "5",
+      "6",
+      "2"
+    ],
+    "answerIndex": 2,
+    "explanation": "−3a²b³c 這個單項式裡，a 指數 2、b 指數 3、c 指數 1，次數規則是把三者全部相加：2 + 3 + 1 = 6。5 可能只加了 a、b 兩個指數就停；3 則只看了 b 的指數，沒把 a 和 c 也算進去。",
+    "steps": [
+      "a 指數 2，b 指數 3，c 指數 1。",
+      "全部相加 2+3+1。",
+      "次數是 6。"
+    ],
+    "commonMistake": "多字母次數只加兩個指數，指數相加錯。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s001-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-terms",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列關於 0 的敘述，何者正確？",
+    "choices": [
+      "0 不是單項式",
+      "0 的係數不存在",
+      "0 一定是多項式",
+      "0 是次數為 0 的單項式"
+    ],
+    "answerIndex": 3,
+    "explanation": "0 可寫成 0·x⁰，係數是 0、次數也是 0，所以 0 是次數為 0 的單項式。「0 不是單項式」忽略了這個定義；「0 一定是多項式」則把單項式與多項式的層級搞混了。",
+    "steps": [
+      "0 可寫成 0·x⁰。",
+      "係數 0，次數 0。",
+      "0 是次數 0 的單項式。"
+    ],
+    "commonMistake": "以為 0 什麼都不是，忽略 0 也是合法單項式。",
+    "concept": "單項式、多項式、係數、次數、同類項的定義與辨識",
+    "tags": [
+      "多項式",
+      "polynomial-terms",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s002-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "當 x = 2 時，3x + 1 的值是多少？",
+    "choices": [
+      "7",
+      "5",
+      "6",
+      "8"
+    ],
+    "answerIndex": 0,
+    "explanation": "把 x = 2 放進 3x + 1，先算乘法 3×2 = 6，再把常數 1 加上去得 7。5 則把 2+1 先加後乘，違反先乘後加；6 則只算了 3×2 這一段，後面的 +1 完全漏掉，少加常數。",
+    "steps": [
+      "把 x 換成 2。",
+      "算 3×2 = 6。",
+      "6 + 1 = 7。"
+    ],
+    "commonMistake": "只算出 3×2=6 就停住，忘記把常數 1 加進去。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s002-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "當 x = −1 時，x² + 2x 的值是多少？",
+    "choices": [
+      "1",
+      "−1",
+      "3",
+      "−3"
+    ],
+    "answerIndex": 1,
+    "explanation": "x 取負一時，平方項 (−1)² 等於正一，一次項 2x 等於負二，兩段合併正一加負二等於負一。若只留平方結果一就漏加一次項；若把一次項當正二去加則得三，正負方向整個弄錯了。",
+    "steps": [
+      "x = −1 代入。",
+      "(−1)² = 1，2x = −2。",
+      "1 + (−2) = −1。"
+    ],
+    "commonMistake": "平方算完 1 就直接當答案，沒把 2x = −2 這一段加進去。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s002-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "當 a = 3、b = −2 時，2a − b 的值是多少？",
+    "choices": [
+      "4",
+      "0",
+      "8",
+      "−1"
+    ],
+    "answerIndex": 2,
+    "explanation": "a 取三、b 取負二，先算 2a 得六，再算六減負二變六加二得八。四是把減 b 當減正二；零則把減 b 算成加負二，正負方向整個反了，少加四。",
+    "steps": [
+      "a=3，b=−2 代入。",
+      "2a = 6。",
+      "6 − (−2) = 8。"
+    ],
+    "commonMistake": "減去負數 b 時沒變加，把 6 − (−2) 誤算成 6 − 2 = 4。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s002-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "當 x = 0 時，5x² − 3x + 4 的值是多少？",
+    "choices": [
+      "0",
+      "−4",
+      "1",
+      "4"
+    ],
+    "answerIndex": 3,
+    "explanation": "x 取零時，五次方項與一次項都含 x，乘出來全是零，整式只剩常數四。零是把含 x 的項硬算成非零；負四則把最後常數四的符號弄反，正負搞錯了。",
+    "steps": [
+      "x = 0 代入。",
+      "5×0 與 −3×0 都是 0。",
+      "整式值 = 4。"
+    ],
+    "commonMistake": "x=0 時仍硬算 5x² 或 −3x 得到非零，沒看出兩項都歸零。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s002-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "當 x = 3 時，(x + 1)(x − 2) 的值是多少？",
+    "choices": [
+      "4",
+      "2",
+      "6",
+      "10"
+    ],
+    "answerIndex": 0,
+    "explanation": "x = 3 時，左括號 x + 1 = 4、右括號 x − 2 = 1，兩個括號相乘 4 × 1 = 4。2 則只算完一個括號就停，漏乘另一個；6 則把 4 + 2 或 4 + 1 當成乘法，加減與相乘搞混了，結果不是 4。",
+    "steps": [
+      "x = 3 代入。",
+      "左括號 4，右括號 1。",
+      "4 × 1 = 4。"
+    ],
+    "commonMistake": "只算出 x+1=4 就當最終值，忘了還要乘上 x−2=1。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s002-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "當 y = −2 時，y³ − y 的值是多少？",
+    "choices": [
+      "6",
+      "−6",
+      "−4",
+      "0"
+    ],
+    "answerIndex": 1,
+    "explanation": "y 取負二時，三次方 (−2)³ 等於負八，再減 y 變負八減負二等於負八加二得負六。六是把負六整體變號；負四則減 y 時沒把減負變加，少加二，正負方向弄錯了。",
+    "steps": [
+      "y = −2。",
+      "(−2)³ = −8。",
+      "−8 − (−2) = −6。"
+    ],
+    "commonMistake": "奇次方保留負號後，減 y 時沒把 −(−2) 變成 +2。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s002-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "當 x = 1/2 時，4x + 3 的值是多少？",
+    "choices": [
+      "4",
+      "7",
+      "5",
+      "2"
+    ],
+    "answerIndex": 2,
+    "explanation": "x 取二分之一，先算四乘二分之一得二，再加常數三得五。四是把四 x 誤當四或漏加常數；二則只算乘法段，常數三整段漏加，最後少加三。",
+    "steps": [
+      "x = 1/2 代入。",
+      "4 × 1/2 = 2。",
+      "2 + 3 = 5。"
+    ],
+    "commonMistake": "4×1/2 算完 2 就停，漏加後面的常數 3，最後少加了 3。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s002-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某商店每件 x 元，買 3 件再加手續費 10 元，總價代數式為 3x + 10。若 x = 50，總價多少元？",
+    "choices": [
+      "150",
+      "60",
+      "140",
+      "160"
+    ],
+    "answerIndex": 3,
+    "explanation": "總價先算三件乘五十得一百五十，再加上固定手續費十元，合計一百六十元。一百五十只算商品價漏加手續費；六十則可能漏乘三件或誤減手續費，兩段都算錯。",
+    "steps": [
+      "總價 3x + 10。",
+      "x = 50 代入。",
+      "150 + 10 = 160。"
+    ],
+    "commonMistake": "3×50 算完 150 就當總價，忘記加上固定手續費 10 元。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s002-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "當 x = −3 時，2x² − x − 1 的值是多少？",
+    "choices": [
+      "20",
+      "8",
+      "14",
+      "−20"
+    ],
+    "answerIndex": 0,
+    "explanation": "x 取負三時，平方得九、二倍平方得十八，負 x 變負負得正三，最後十八加三減一等於二十。八是漏算負 x 那段；十四則把負 x 仍當負三去減，負號沒翻過來。",
+    "steps": [
+      "x = −3，x² = 9。",
+      "2×9 = 18，−x = 3。",
+      "18 + 3 − 1 = 20。"
+    ],
+    "commonMistake": "x 為負時把 −x 仍當 −3，沒有先算出 −x = 3 再加回去。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s002-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "當 m = 2、n = −1 時，m² + mn 的值是多少？",
+    "choices": [
+      "3",
+      "2",
+      "4",
+      "0"
+    ],
+    "answerIndex": 1,
+    "explanation": "m 取二、n 取負一，平方段得四，乘積段 mn 得負二，兩段相加四加負二得二。三是把 mn 算成正一變四加一；四則只算平方段，乘積段整段漏掉，少加一項。",
+    "steps": [
+      "m=2，n=−1。",
+      "m² = 4，mn = −2。",
+      "4 + (−2) = 2。"
+    ],
+    "commonMistake": "m² 算完 4 就停，沒把 mn = −2 加進去，整段 mn 漏算。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s002-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "當 x = 4 時，−x² + 5 的值是多少？",
+    "choices": [
+      "11",
+      "−21",
+      "−11",
+      "21"
+    ],
+    "answerIndex": 2,
+    "explanation": "x 取四時，平方得十六，前面負號變負十六，再加五得負十一。十一是把負平方當正十六去加五；二十一则連負號都漏掉變十六加五，正負整個搞錯了。",
+    "steps": [
+      "x = 4。",
+      "x² = 16，−x² = −16。",
+      "−16 + 5 = −11。"
+    ],
+    "commonMistake": "−x² 前面的負號漏看，把 −16+5 誤算成 16+5=21 或 11。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s002-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "polynomial-evaluation",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "已知 f(x) = x² − 3x，求 f(2) 的值。",
+    "choices": [
+      "2",
+      "10",
+      "−10",
+      "−2"
+    ],
+    "answerIndex": 3,
+    "explanation": "函數在 x 取二時，平方得四、三倍一次項得負六，相減得負二。二是把四減六只取絕對值；十則把減三 x 當加六去加四，正負整個反了，減法變加法。",
+    "steps": [
+      "f(2) 表示 x = 2。",
+      "算 4 − 6。",
+      "得 −2。"
+    ],
+    "commonMistake": "4 − 6 算成 +2，把負號結果誤取成正值。",
+    "concept": "將數值代入代數式中的未知數，依運算順序求出數值",
+    "tags": [
+      "多項式",
+      "polynomial-evaluation",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s003-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 3x + 5x。",
+    "choices": [
+      "8x",
+      "8x²",
+      "15x",
+      "15x²"
+    ],
+    "answerIndex": 0,
+    "explanation": "3x 與 5x 字母部分都是 x，屬同類項，係數直接相加 3 + 5 = 8，寫成 8x。8x² 是把指數也加在一起；15x 則誤用 3×5 相乘，同類項合併應加係數不應乘。",
+    "steps": [
+      "3x 與 5x 是同類項。",
+      "係數 3 + 5 = 8。",
+      "寫成 8x。"
+    ],
+    "commonMistake": "同類項合併時把係數 3 和 5 相乘得 15，而不是相加。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s003-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 7y − 2y + y。",
+    "choices": [
+      "5y",
+      "6y",
+      "4y",
+      "9y"
+    ],
+    "answerIndex": 1,
+    "explanation": "三項都是 y 的同類項，單獨寫 y 時係數視為一，合併七減二加一得六 y。五 y 是漏算單獨 y 那項的加一；四 y 則把減二 y 的符號弄錯，正負方向整個搞錯了。",
+    "steps": [
+      "三項都是 y 的同類項。",
+      "係數 7 − 2 + 1。",
+      "得 6y。"
+    ],
+    "commonMistake": "單獨的 y 係數當 0 或漏加，7−2 只算成 5 得 5y。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s003-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 4a² + 3a − 2a² + a。",
+    "choices": [
+      "2a² + 2a",
+      "6a² + 4a",
+      "2a² + 4a",
+      "6a² + 2a"
+    ],
+    "answerIndex": 2,
+    "explanation": "平方項四減二係數得二，一次項三加一係數得四，整理後二 a 平方加四 a。二 a 平方加二 a 是一次項漏加一；六 a 平方加四 a 則平方項誤用四加二，正負搞錯了。",
+    "steps": [
+      "a² 項 4 − 2 = 2。",
+      "a 項 3 + 1 = 4。",
+      "寫 2a² + 4a。"
+    ],
+    "commonMistake": "a 項 3+a 只保留 3 沒加 1，或 a² 項 4−2 誤算成 4+2 得 6a²。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s003-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 −5x + 3 − 2x + 7。",
+    "choices": [
+      "−3x + 10",
+      "−7x + 4",
+      "−3x + 4",
+      "−7x + 10"
+    ],
+    "answerIndex": 3,
+    "explanation": "x 項負五減二係數得負七，常數三加七得十，整理後負七 x 加十。負三 x 加十是把負五減二算成負三；負七 x 加四則常數合併錯，三加七漏算成四。",
+    "steps": [
+      "合併 x 項 −5 − 2。",
+      "合併常數 3 + 7。",
+      "得 −7x + 10。"
+    ],
+    "commonMistake": "合併 x 項時 −5−2 算成 −3，或常數 3+7 漏加算成 4。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s003-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 2ab + 5ba − ab。",
+    "choices": [
+      "6ab",
+      "7ab",
+      "6a²b²",
+      "8ab"
+    ],
+    "answerIndex": 0,
+    "explanation": "ba 與 ab 同類，三項係數二加五減一得六 ab。七 ab 是減 ab 那項的減一漏掉只算二加五；六 a 平方 b 平方則把指數也加在一起，同類項合併只加係數不加指數。",
+    "steps": [
+      "ba 與 ab 同類。",
+      "係數 2 + 5 − 1。",
+      "得 6ab。"
+    ],
+    "commonMistake": "ba 與 ab 視為不同類，或 −ab 的係數 −1 漏算變成 2+5=7。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s003-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 3x² − x + 2 − 5x² + 4x。",
+    "choices": [
+      "2x² + 3x + 2",
+      "−2x² + 3x + 2",
+      "−2x² − 5x + 2",
+      "8x² + 3x + 2"
+    ],
+    "answerIndex": 1,
+    "explanation": "平方項三減五得負二，一次項負一加四得三，常數二保留，整理負二 x 平方加三 x 加二。二 x 平方加三 x 加二是平方項正負反了；負二 x 平方減五 x 加二則一次項算錯。",
+    "steps": [
+      "x² 項 3 − 5 = −2。",
+      "x 項 −1 + 4 = 3。",
+      "常數 2，寫 −2x² + 3x + 2。"
+    ],
+    "commonMistake": "x² 項 3−5 算成 +2 得 2x²，或 x 一次項 −1+4 符號弄錯得 −5x。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s003-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列化簡何者正確？原式 6m − 4n + 2m + n",
+    "choices": [
+      "8m − 5n",
+      "4m − 3n",
+      "8m − 3n",
+      "10m − 3n"
+    ],
+    "answerIndex": 2,
+    "explanation": "m 項六加二得八 m，n 項負四加一得負三 n，分組合併後得八 m 減三 n。八 m 減五 n 是 n 項負四加一算成負五；四 m 減三 n 則 m 項漏加二 m，少加一項。",
+    "steps": [
+      "合併 m：6 + 2 = 8。",
+      "合併 n：−4 + 1 = −3。",
+      "得 8m − 3n。"
+    ],
+    "commonMistake": "n 項 −4n+n 算成 −5n 少加 1，或 m 項 6+2 漏加算成 4m 少加。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s003-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 x² + 3x + 1 − 2x² + x − 4。",
+    "choices": [
+      "x² + 4x − 3",
+      "−x² + 2x − 3",
+      "−3x² + 4x − 3",
+      "−x² + 4x − 3"
+    ],
+    "answerIndex": 3,
+    "explanation": "平方項一減二係數得負一，一次項三加一得四，常數一減四得負三，整理負 x 平方加四 x 減三。x 平方加四 x 減三是平方項正負反了；負 x 平方加二 x 減三則一次項少加一。",
+    "steps": [
+      "x² 1 − 2 = −1。",
+      "x 3 + 1 = 4。",
+      "常數 1 − 4 = −3。"
+    ],
+    "commonMistake": "x² 項 1−2 算成 +1 得 x²，或 x 項 3+1 只保留 3 漏加得 2x。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s003-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "長方形長 (2x+1)、寬 x，周長化簡後為何？",
+    "choices": [
+      "6x + 2",
+      "2x² + x",
+      "4x + 2",
+      "3x + 1"
+    ],
+    "answerIndex": 0,
+    "explanation": "長加寬得三 x 加一，周長乘二展開得六 x 加二。二 x 平方加 x 是把長乘寬當周長算面積；四 x 加二則周長公式漏乘二或漏加寬，長寬概念整個搞混了。",
+    "steps": [
+      "長+寬 = 3x + 1。",
+      "周長 = 2(3x+1)。",
+      "展開得 6x + 2。"
+    ],
+    "commonMistake": "用長×寬算面積 2x²+x，或周長公式漏乘 2 得 4x+2。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s003-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 −(3x − 2) + 5x。（先展開再合併）",
+    "choices": [
+      "8x − 2",
+      "2x + 2",
+      "2x − 2",
+      "8x + 2"
+    ],
+    "answerIndex": 1,
+    "explanation": "括號前負號要分配到每一項，展開得負三 x 加二，再加五 x 得二 x 加二。八 x 減二是括號內常數沒變正二；二 x 減二則常數二符號弄反，正負搞錯了。",
+    "steps": [
+      "−(3x−2) = −3x + 2。",
+      "加 5x：2x + 2。",
+      "整理得 2x + 2。"
+    ],
+    "commonMistake": "−(3x−2) 只變 3x 的符號，括號內 −2 沒變 +2，常數漏分配。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s003-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 0.5x + 1.5x。",
+    "choices": [
+      "2x²",
+      "0.65x",
+      "2x",
+      "2.25x"
+    ],
+    "answerIndex": 2,
+    "explanation": "零點五 x 與一點五 x 是同類項，小數係數直接相加得一點五加零點五得二 x。二 x 平方是把指數也加；零點六五 x 則小數對位錯，二點二五 x 則誤用相乘而非相加。",
+    "steps": [
+      "兩項都是 x 的同類項。",
+      "0.5 + 1.5 = 2。",
+      "寫 2x。"
+    ],
+    "commonMistake": "小數係數 0.5+1.5 對位錯算成 0.65，或誤乘得 2.25x。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s003-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-basics",
+    "skillId": "like-terms-combine",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 4p²q − 2pq² + p²q。",
+    "choices": [
+      "3p²q − 2pq²",
+      "5p²q + pq²",
+      "3p²q + pq²",
+      "5p²q − 2pq²"
+    ],
+    "answerIndex": 3,
+    "explanation": "四 p 平方 q 與 p 平方 q 同類，係數四加一得五 p 平方 q；負二 pq 平方無同類保留。三 p 平方 q 是四加一算成三少加一；五 p 平方 q 加 pq 平方則把減號弄反變加，符號搞錯了。",
+    "steps": [
+      "4p²q 與 p²q 同類，得 5p²q。",
+      "−2pq² 無同類。",
+      "寫 5p²q − 2pq²。"
+    ],
+    "commonMistake": "p²q 與 pq² 字母次數不同卻硬合併，或 4+1 算成 3 得 3p²q。",
+    "concept": "合併同類項：係數相加減，字母部分不變",
+    "tags": [
+      "多項式",
+      "like-terms-combine",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s004-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (2x + 3) + (x − 1)。",
+    "choices": [
+      "3x + 2",
+      "3x + 4",
+      "x + 2",
+      "3x − 4"
+    ],
+    "answerIndex": 0,
+    "explanation": "兩個多項式相加時，括號前是加號就可以直接去掉括號，不必變號。x 的一次項 2x 與 x 是同類項，係數 2 加 1 得 3x；常數項 3 減 1 得 2，整式化簡為 3x + 2。若寫 3x + 4，是把常數 3−1 誤算成 3+1；x + 2 則 x 項只保留 2x，沒把後面括號裡的 x 加進來。",
+    "steps": [
+      "去掉括號。",
+      "2x + x = 3x。",
+      "3 − 1 = 2。"
+    ],
+    "commonMistake": "常數項 3 與 −1 相減時誤用加法，算成 3+1，最後寫成 3x + 4。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s004-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (5x − 2) − (2x − 1)。",
+    "choices": [
+      "3x − 3",
+      "3x − 1",
+      "7x − 1",
+      "7x − 3"
+    ],
+    "answerIndex": 1,
+    "explanation": "減去 (2x − 1) 時，括號前面是減號，括號內每一項都要變號，變成 5x − 2 − 2x + 1。x 的一次項 5 − 2 = 3，寫 3x；常數 −2 + 1 = −1，整理得 3x − 1。3x − 3 是把括號內 +1 仍當 −1；7x − 1 則把 5x 與 2x 相加成 7x，忘了前面是減法。",
+    "steps": [
+      "−(2x−1) 變 −2x+1。",
+      "5x − 2x = 3x。",
+      "−2 + 1 = −1。"
+    ],
+    "commonMistake": "減 (2x−1) 時括號內 +1 沒變成 −1，常數 −2−1 算成 −3，寫成 3x − 3。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s004-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (3x² + x) + (x² − 2x)。",
+    "choices": [
+      "4x² + 3x",
+      "2x² − x",
+      "4x² − x",
+      "4x² + x"
+    ],
+    "answerIndex": 2,
+    "explanation": "去掉括號後，x² 的同類項係數 3 加 1 得 4，寫 4x²；x 的同類項 1 加 (−2) 得 −1，寫 −x。整式整理為 4x² − x。4x² + 3x 是把 x 項 1−2 算成 +1 再加 2；2x² − x 則 x² 只加 1，沒把第一個括號的 3 算進去。",
+    "steps": [
+      "x² 項 3 + 1 = 4。",
+      "x 項 1 − 2 = −1。",
+      "寫 4x² − x。"
+    ],
+    "commonMistake": "x 的一次項 1−2 算成 +1 再加 2，同類項合併錯誤，寫成 4x² + 3x。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s004-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (4 − 3x) + (2x + 5)。",
+    "choices": [
+      "9 + x",
+      "−x − 1",
+      "9 − 5x",
+      "9 − x"
+    ],
+    "answerIndex": 3,
+    "explanation": "x 的一次項 −3x 與 2x 是同類項，係數 −3 加 2 得 −1，寫 −x；常數 4 加 5 得 9。習慣把常數放前面，整理為 9 − x。9 + x 是把 −3+2 誤算成 +3−2；−x − 1 則常數 4+5 誤算成 4−5，正負都弄反。",
+    "steps": [
+      "x 項 −3x + 2x = −x。",
+      "常數 4 + 5 = 9。",
+      "寫 9 − x。"
+    ],
+    "commonMistake": "−3x 與 2x 合併時算成 +3x − 2x，x 項符號弄反，最後寫成 9 + x。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s004-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (x² + 3x + 2) − (x² − x + 1)。",
+    "choices": [
+      "4x + 1",
+      "4x + 3",
+      "2x + 1",
+      "4x − 1"
+    ],
+    "answerIndex": 0,
+    "explanation": "減去 (x² − x + 1) 時，括號前是減號，括號內每一項都要變號。x² 項 x² − x² 相消；x 項 3x − (−x) 變成 3x + x = 4x；常數 2 − 1 = 1，得 4x + 1。4x + 3 是把常數 2−(−1) 誤算成 2+1；2x + 1 則減式中 −x 變號時沒變成 +x，x 項只算 3−1。",
+    "steps": [
+      "x² 項相消。",
+      "x：3 + 1 = 4。",
+      "常數 2 − 1 = 1。"
+    ],
+    "commonMistake": "減式中 −x 變號時沒變成 +x，x 項只算 3−1 得 2x，寫成 2x + 1。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s004-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 2(3x + 1) − (x − 4)。（先展開）",
+    "choices": [
+      "5x − 2",
+      "5x + 6",
+      "6x + 6",
+      "6x − 2"
+    ],
+    "answerIndex": 1,
+    "explanation": "題目要求先展開：2(3x + 1) = 6x + 2，分配律要乘進括號內每一項。再減 (x − 4)，括號內變號得 6x + 2 − x + 4。x 項 6 − 1 = 5x，常數 2 + 4 = 6，整理得 5x + 6。5x − 2 是 −4 沒變 +4；6x + 6 則展開後沒減去後面的 x，只做了分配律。",
+    "steps": [
+      "展開 6x + 2。",
+      "減 x 加 4。",
+      "合併 5x + 6。"
+    ],
+    "commonMistake": "減 (x−4) 時 −4 沒有變成 +4，常數 2+4 漏加，寫成 5x − 2。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s004-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "小明有 (5x+10) 元，花 (2x+3) 元，剩多少？",
+    "choices": [
+      "3x + 13",
+      "7x + 7",
+      "3x + 7",
+      "3x − 7"
+    ],
+    "answerIndex": 2,
+    "explanation": "剩錢用減法列式 (5x + 10) − (2x + 3)，花掉的錢整段放在減號後面。去括號變 5x + 10 − 2x − 3，x 項 5 − 2 = 3x，常數 10 − 3 = 7，得 3x + 7 元。3x + 13 是括號內 +3 沒變 −3，變成 10+3；7x + 7 則 x 項 5+2 而非 5−2，減法當加法。",
+    "steps": [
+      "列式 (5x+10) − (2x+3)。",
+      "x 項 5 − 2 = 3。",
+      "常數 10 − 3 = 7。"
+    ],
+    "commonMistake": "花錢減法時括號內 +3 沒變 −3，常數 10−3 誤算成 10+3，寫成 3x + 13。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s004-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (−2x + 5) + (3x − 8)。",
+    "choices": [
+      "x + 13",
+      "5x − 3",
+      "−5x − 3",
+      "x − 3"
+    ],
+    "answerIndex": 3,
+    "explanation": "x 的一次項 −2x 與 3x 合併，係數 −2 加 3 得 1，寫 x；常數 5 加 (−8) 得 −3，整理為 x − 3。x + 13 是把 5−8 誤算成 5+8，正負弄反；5x − 3 則 x 係數 −2+3 算成 5；−5x − 3 是兩項 x 係數都取絕對值再相加。",
+    "steps": [
+      "x：−2 + 3 = 1。",
+      "常數 5 − 8 = −3。",
+      "得 x − 3。"
+    ],
+    "commonMistake": "常數 5 與 −8 合併時算成 5+8，正負弄反，寫成 x + 13。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s004-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (4a − 3b) − (a + 2b)。",
+    "choices": [
+      "3a − 5b",
+      "3a + b",
+      "5a − 5b",
+      "3a − b"
+    ],
+    "answerIndex": 0,
+    "explanation": "減 (a + 2b) 時括號前是減號，括號內每一項都要變號，不能只做一半。a 項 4a − a = 3a；b 項 −3b − 2b = −5b，兩個 b 項都是減，得 3a − 5b。3a + b 是把 b 項 −3−2 算成 −3+2；3a − b 則只減 2b 一次；5a − 5b 是 a 項 4−1 誤算成 4+1。",
+    "steps": [
+      "a 項 4 − 1 = 3。",
+      "b 項 −3 − 2 = −5。",
+      "得 3a − 5b。"
+    ],
+    "commonMistake": "b 項 −3b 減 2b 時算成 −3b+2b，減號沒延續到後面的項，寫成 3a + b。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s004-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (x² + 2) − (2x² − 1)。",
+    "choices": [
+      "−x² + 1",
+      "−x² + 3",
+      "3x² + 3",
+      "−3x² + 3"
+    ],
+    "answerIndex": 1,
+    "explanation": "減 (2x² − 1) 時括號內每一項都要變號，減號要延續到括號內所有項：x² 項 x² − 2x²，係數 1 − 2 = −1，寫 −x²；常數 2 − (−1) 變成 2 + 1 = 3，得 −x² + 3。−x² + 1 是把 2−(−1) 誤算成 2−1；3x² + 3 則 x² 相減弄成 1+2 相加，最高次項符號全反。",
+    "steps": [
+      "x² 1 − 2 = −1。",
+      "常數 2 + 1 = 3。",
+      "得 −x² + 3。"
+    ],
+    "commonMistake": "常數 2 減 (−1) 時沒有變成 2+1，只寫 2−1，最後得 −x² + 1。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s004-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (6x − 1) + (−2x + 4) − (x − 2)。",
+    "choices": [
+      "3x + 1",
+      "9x + 5",
+      "3x + 5",
+      "3x − 5"
+    ],
+    "answerIndex": 2,
+    "explanation": "三個括號依序去括號，注意最後一個前面是減號。x 項 6 − 2 − 1 = 3x；常數 −1 + 4 + 2 = 5，得 3x + 5。3x + 1 是減 (x−2) 時 −2 沒變 +2，常數少 4；9x + 5 則最後 −x 沒減掉，6−2 變 6+2；3x − 5 是常數 −1+4−2 三項符號全反。",
+    "steps": [
+      "x：6 − 2 − 1 = 3。",
+      "常數 −1 + 4 + 2 = 5。",
+      "得 3x + 5。"
+    ],
+    "commonMistake": "減 (x−2) 時 −2 沒變 +2，常數 −1+4 只算成 −1，最後寫成 3x + 1。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s004-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-add-subtract",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 A = 2x² + x，B = x² − 3x + 1，求 A − B。",
+    "choices": [
+      "x² − 2x − 1",
+      "3x² + 4x − 1",
+      "x² + 4x + 1",
+      "x² + 4x − 1"
+    ],
+    "answerIndex": 3,
+    "explanation": "A − B 表示從 A 減去整個 B，B 的每一項都要變號，減號要延續到括號內所有項才算完整。(2x² + x) − (x² − 3x + 1) 變成 2x² + x − x² + 3x − 1。x² 項 2 − 1 = 1；x 項 1 + 3 = 4；常數 −1，得 x² + 4x − 1。x² − 2x − 1 是 1−(−3) 算成 1−3；x² + 4x + 1 則常數 +1 沒變 −1。",
+    "steps": [
+      "減 B 每一項變號。",
+      "x²：2 − 1 = 1。",
+      "x：1 + 3 = 4，常數 −1。"
+    ],
+    "commonMistake": "x 的一次項 1 減 (−3) 應變 1+3，若算成 1−3 就會得 x² − 2x − 1。",
+    "concept": "多項式加減：去括號後合併同類項，減法要變號",
+    "tags": [
+      "多項式",
+      "polynomial-add-subtract",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s005-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 3x · 4x。",
+    "choices": [
+      "12x²",
+      "7x",
+      "12x",
+      "7x²"
+    ],
+    "answerIndex": 0,
+    "explanation": "單項式相乘，係數與係數相乘、同底指數相加。係數 3 × 4 = 12，x 的指數 1 + 1 = 2，得 12x²。7x 是把係數 3 與 4 相加；12x 則 x 指數沒加，只保留一次方；7x² 雖然指數對了，係數仍用加法。",
+    "steps": [
+      "係數 3 × 4 = 12。",
+      "x 指數 1 + 1 = 2。",
+      "得 12x²。"
+    ],
+    "commonMistake": "單項式相乘時把係數 3 與 4 相加而非相乘，寫成 7x 或 7x²。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s005-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (−2x²) · 5x³。",
+    "choices": [
+      "−10x⁶",
+      "−10x⁵",
+      "3x⁵",
+      "10x⁵"
+    ],
+    "answerIndex": 1,
+    "explanation": "單項式相乘，係數與係數相乘、同底指數相加。係數 (−2) × 5 = −10，負正相乘得負；x 指數 2 + 3 = 5，得 −10x⁵。−10x⁶ 是指數 2+3 多加了 1；3x⁵ 則係數 −2+5 用加法；10x⁵ 是 (−2)×5 的負號漏看，正負弄反。",
+    "steps": [
+      "係數 −2 × 5 = −10。",
+      "指數 2 + 3 = 5。",
+      "得 −10x⁵。"
+    ],
+    "commonMistake": "指數 2+3 算成 6，或負係數 (−2)×5 的負號漏看，寫成 10x⁵。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s005-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 6a²b · (−3ab²)。",
+    "choices": [
+      "−18a²b²",
+      "3a³b³",
+      "−18a³b³",
+      "−18a³b²"
+    ],
+    "answerIndex": 2,
+    "explanation": "多字母單項式相乘，係數與係數相乘，各字母指數分別相加。係數 6 × (−3) = −18；a 指數 2 + 1 = 3，b 指數 1 + 2 = 3，得 −18a³b³。−18a²b² 是 a、b 指數沒全加；−18a³b² 則 b 指數只加 1 沒加 2；3a³b³ 是把係數 6 與 −3 相加。",
+    "steps": [
+      "係數 −18。",
+      "a 指數 3，b 指數 3。",
+      "得 −18a³b³。"
+    ],
+    "commonMistake": "b 的指數 1+2 只保留 1 沒加 2，字母指數合併不完整，寫成 −18a³b²。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s005-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 x⁴ · x²。",
+    "choices": [
+      "x⁸",
+      "2x⁶",
+      "x²",
+      "x⁶"
+    ],
+    "answerIndex": 3,
+    "explanation": "同底 x 相乘，底數不變、指數相加：4 + 2 = 6，得 x⁶。x⁸ 是把指數 4 與 2 相乘，同底相乘規則用錯；2x⁶ 則多寫係數 2；x² 是把 4−2 誤用相減，除法規則混進乘法。",
+    "steps": [
+      "底數都是 x。",
+      "指數 4 + 2 = 6。",
+      "得 x⁶。"
+    ],
+    "commonMistake": "同底相乘時把指數 4 與 2 相乘而非相加，寫成 x⁸。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s005-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (−4y³) · (−2y)。",
+    "choices": [
+      "8y⁴",
+      "−8y⁴",
+      "6y⁴",
+      "8y³"
+    ],
+    "answerIndex": 0,
+    "explanation": "係數 (−4) × (−2) = 8，負負得正，兩個負號相乘會得正數；y 指數 3 + 1 = 4，得 8y⁴。−8y⁴ 是負負沒變正，只處理一個負號；6y⁴ 則係數 −4+(−2) 用加法；8y³ 是 y 指數 3+1 沒加，次數少 1。",
+    "steps": [
+      "係數 8。",
+      "指數 3 + 1 = 4。",
+      "得 8y⁴。"
+    ],
+    "commonMistake": "兩個負係數相乘仍保留一個負號，負負得正規則用錯，寫成 −8y⁴。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s005-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 5 · 3x²。",
+    "choices": [
+      "8x²",
+      "15x²",
+      "15x",
+      "8x"
+    ],
+    "answerIndex": 1,
+    "explanation": "常數 5 乘單項式 3x²：係數 5 × 3 = 15，x² 的指數不變仍為 2，得 15x²。8x² 是把 5+3 相加；15x 則 x² 次數掉成 x¹，指數沒保留；8x 是係數與指數都弄錯，加法與乘法混用。",
+    "steps": [
+      "係數 5 × 3 = 15。",
+      "x² 保留。",
+      "得 15x²。"
+    ],
+    "commonMistake": "常數乘單項式時把係數 5 與 3 相加，寫成 8x² 而非 15x²。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s005-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (2x)³。（視為三個 2x 相乘）",
+    "choices": [
+      "6x³",
+      "8x",
+      "8x³",
+      "2x³"
+    ],
+    "answerIndex": 2,
+    "explanation": "(2x)³ 表示整個 2x 連乘三次，不是只把 2 乘 3：係數 2³ = 8，x 連乘三次得 x³，所以 8x³。6x³ 是把 2×3 當係數，只乘 3 沒立方；2x³ 則只把 x 立方、2 沒立方；8x 是 x 指數沒乘 3，次數不足，整體規則用錯。",
+    "steps": [
+      "2³ = 8。",
+      "x 乘三次得 x³。",
+      "得 8x³。"
+    ],
+    "commonMistake": "把 (2x)³ 算成 2×3·x³，係數只乘 3 沒有算 2³=8，寫成 6x³。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s005-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "長方形長 2x、寬 3x，面積是多少？",
+    "choices": [
+      "5x",
+      "6x",
+      "5x²",
+      "6x²"
+    ],
+    "answerIndex": 3,
+    "explanation": "長方形面積等於長乘寬，不能把長與寬相加。列式 2x × 3x，係數 2 × 3 = 6，x 指數 1 + 1 = 2，得 6x²。5x 是把長寬 2x+3x 相加，周長與面積混淆；6x 則 x 指數沒加；5x² 是係數 2+3 相加。",
+    "steps": [
+      "面積 = 長 × 寬。",
+      "2x × 3x。",
+      "得 6x²。"
+    ],
+    "commonMistake": "面積題把長 2x 與寬 3x 相加，周長與面積公式混淆，寫成 5x。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s005-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 4m²n · 5mn³。",
+    "choices": [
+      "20m³n⁴",
+      "20m²n³",
+      "9m³n⁴",
+      "20mn⁴"
+    ],
+    "answerIndex": 0,
+    "explanation": "係數 4 × 5 = 20；m 指數 2 + 1 = 3，n 指數 1 + 3 = 4，兩個字母指數要分別相加，不能漏掉任何一個，得 20m³n⁴。20m²n³ 是 m、n 指數沒全加；9m³n⁴ 則係數 4+5 相加；20mn⁴ 是 m 指數 2+1 漏加，只保留 n 的變化。",
+    "steps": [
+      "係數 4×5=20。",
+      "m：2+1，n：1+3。",
+      "得 20m³n⁴。"
+    ],
+    "commonMistake": "m 的指數 2+1 只保留 2 沒加 1，多字母指數合併不完整，寫成 20m²n⁴。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s005-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (−x²) · 3x · (−2x⁴)。",
+    "choices": [
+      "−6x⁷",
+      "6x⁷",
+      "6x⁶",
+      "−5x⁷"
+    ],
+    "answerIndex": 1,
+    "explanation": "三個因式連乘，係數 (−1) × 3 × (−2) = 6，兩個負號相乘得正；x 指數 2 + 1 + 4 = 7，三個指數全部相加，得 6x⁷。−6x⁷ 是只處理其中一個負號；6x⁶ 則指數 2+1+4 少加 1；−5x⁷ 是把係數用加法 −1+3+(−2)。",
+    "steps": [
+      "係數 (−1)×3×(−2)=6。",
+      "指數 2+1+4=7。",
+      "得 6x⁷。"
+    ],
+    "commonMistake": "兩個負號相乘應為正，若只處理其中一個負號，就會把答案寫成 −6x⁷。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s005-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 10x⁵ ÷ 2x²。（單項式除法，係數相除、指數相減）",
+    "choices": [
+      "5x⁷",
+      "8x³",
+      "5x³",
+      "5x²"
+    ],
+    "answerIndex": 2,
+    "explanation": "單項式除法：係數相除、同底指數相減，不能混用乘法的指數相加。係數 10 ÷ 2 = 5，x 指數 5 − 2 = 3，得 5x³。5x⁷ 是把指數 5−2 誤算成 5+2；8x³ 則係數 10−2 用減法；5x² 是指數只減 1，5−2 算成 2。",
+    "steps": [
+      "係數 10 ÷ 2 = 5。",
+      "指數 5 − 2 = 3。",
+      "得 5x³。"
+    ],
+    "commonMistake": "指數相減 5−2 算成 5+2，除法指數規則用錯，寫成 5x⁷。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s005-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-multiply",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 (−6a³b²) · (−a²b)。",
+    "choices": [
+      "−6a⁵b³",
+      "6a⁶b²",
+      "−6a⁶b³",
+      "6a⁵b³"
+    ],
+    "answerIndex": 3,
+    "explanation": "係數 (−6) × (−1) = 6，負負得正，兩個負號相乘會得正數；a 指數 3 + 2 = 5，b 指數 2 + 1 = 3，各字母指數分別相加，得 6a⁵b³。−6a⁵b³ 是負負沒變正；6a⁶b³ 則 a 指數 3+2 算成 6；6a⁶b² 是 b 指數 2+1 漏加。",
+    "steps": [
+      "係數 6。",
+      "a 指數 5，b 指數 3。",
+      "得 6a⁵b³。"
+    ],
+    "commonMistake": "負係數 (−6)×(−1) 符號弄錯，負負得正規則用錯，寫成 −6a⁵b³。",
+    "concept": "單項式相乘：係數相乘，同底數指數相加",
+    "tags": [
+      "多項式",
+      "monomial-multiply",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s006-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 2(x + 3)。",
+    "choices": [
+      "2x + 6",
+      "2x + 3",
+      "x + 6",
+      "2x + 5"
+    ],
+    "answerIndex": 0,
+    "explanation": "分配律要求 2 乘括號內每一項，不能只做一半。2×x = 2x，2×3 = 6，兩項都乘完得 2x + 6。2x + 3 是常數 3 沒乘 2，只乘了第一項；x + 6 則 x 沒乘 2；2x + 5 是把 3 誤算成 2+3 只加一次，分配不完整。",
+    "steps": [
+      "2 × x = 2x。",
+      "2 × 3 = 6。",
+      "得 2x + 6。"
+    ],
+    "commonMistake": "分配律只乘第一項 x，常數 3 沒有乘 2，寫成 2x + 3。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s006-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 −3(2x − 1)。",
+    "choices": [
+      "−6x − 3",
+      "−6x + 3",
+      "6x + 3",
+      "−6x − 1"
+    ],
+    "answerIndex": 1,
+    "explanation": "−3 要分別乘以括號內 2x 和 −1 兩項，分配律不能只做一半：−3×2x = −6x，−3×(−1) = +3，負負得正，得 −6x + 3。−6x − 3 是 −1 乘 −3 沒變正；6x + 3 則 −3×2x 符號反了；−6x − 1 是 −1 沒乘 3，第二項分配漏做。",
+    "steps": [
+      "−3 × 2x = −6x。",
+      "−3 × (−1) = 3。",
+      "得 −6x + 3。"
+    ],
+    "commonMistake": "−3 乘 (−1) 算成 −3 而非 +3，負負得正規則用錯，寫成 −6x − 3。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s006-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 x(x + 4)。",
+    "choices": [
+      "x² + 4",
+      "2x + 4",
+      "x² + 4x",
+      "x + 4x"
+    ],
+    "answerIndex": 2,
+    "explanation": "x 要分別乘以括號內 x 和 4 兩項，分配律兩項都要乘到：x×x = x²，x×4 = 4x，兩項都乘完得 x² + 4x。x² + 4 是 4 沒乘 x，第二項分配漏做；2x + 4 則 x×x 誤當 x+x；x + 4x 是 x² 沒算出來，只寫 x 加 4x。",
+    "steps": [
+      "x × x = x²。",
+      "x × 4 = 4x。",
+      "得 x² + 4x。"
+    ],
+    "commonMistake": "x 乘 4 時漏掉 x，只把 4 寫出來，最後寫成 x² + 4。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s006-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 4(2x² − x + 1)。",
+    "choices": [
+      "8x² − x + 4",
+      "6x² − 4x + 4",
+      "8x² − 4x + 1",
+      "8x² − 4x + 4"
+    ],
+    "answerIndex": 3,
+    "explanation": "4 要乘括號內三項，每一項都不能漏，分配律要完整做完全部三項才算答對：4×2x² = 8x²，4×(−x) = −4x，4×1 = 4，整理得 8x² − 4x + 4。8x² − x + 4 是 −x 只乘 1 沒乘 4；6x² − 4x + 4 則 2+4 相加；8x² − 4x + 1 是常數 1 沒乘 4。",
+    "steps": [
+      "4×2x²=8x²。",
+      "4×(−x)=−4x。",
+      "4×1=4。"
+    ],
+    "commonMistake": "−x 項只乘 1 沒有乘 4，分配不完整，寫成 8x² − x + 4。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s006-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 −2(3 − x)。",
+    "choices": [
+      "−6 + 2x",
+      "−6 − 2x",
+      "6 + 2x",
+      "−6 + x"
+    ],
+    "answerIndex": 0,
+    "explanation": "−2 要分別乘以括號內 3 和 −x 兩項，分配律兩項都要乘到：−2×3 = −6，−2×(−x) = +2x，負負得正，得 −6 + 2x。−6 − 2x 是 −x 乘 −2 沒變正；6 + 2x 則 −6 符號反了；−6 + x 是 −x 只乘 1 沒乘 2，係數分配不完整。",
+    "steps": [
+      "−2 × 3 = −6。",
+      "−2 × (−x) = 2x。",
+      "得 −6 + 2x。"
+    ],
+    "commonMistake": "−2 乘 (−x) 沒有變成 +2x，負負得正規則用錯，寫成 −6 − 2x。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s006-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 5x(2x + 1)。",
+    "choices": [
+      "7x² + 5x",
+      "10x² + 5x",
+      "10x + 5",
+      "10x² + 1"
+    ],
+    "answerIndex": 1,
+    "explanation": "5x 要分別乘以括號內 2x 和 1 兩項，分配律兩項都要乘到才算完整：5x×2x = 10x²，係數 5×2=10、指數 1+1=2；5x×1 = 5x，兩項都乘完得 10x² + 5x。7x² + 5x 是把 5+2 相加當 x² 係數；10x + 5 則 x² 次數掉；10x² + 1 是 1 沒乘 5x。",
+    "steps": [
+      "5x × 2x = 10x²。",
+      "5x × 1 = 5x。",
+      "得 10x² + 5x。"
+    ],
+    "commonMistake": "5x 乘 2x 後 x 指數沒加，只保留一次方，寫成 10x + 5。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s006-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "長方形長 (x+2)、寬 3，面積展開後為何？",
+    "choices": [
+      "3x + 2",
+      "x + 6",
+      "3x + 6",
+      "3x + 5"
+    ],
+    "answerIndex": 2,
+    "explanation": "長方形面積 = 寬 × 長，列式 3(x+2)，分配律要乘進括號內每一項。3×x = 3x，3×2 = 6，得 3x + 6。3x + 2 是常數 2 沒乘 3，分配只做一半；x + 6 則 x 沒乘 3；3x + 5 是把 2 誤算成 2+3 只加一次。",
+    "steps": [
+      "面積 = 3(x+2)。",
+      "3×x=3x，3×2=6。",
+      "得 3x + 6。"
+    ],
+    "commonMistake": "寬 3 只乘 x 沒乘常數 2，分配律只做一半，寫成 3x + 2。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s006-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 −x(4x − 3)。",
+    "choices": [
+      "−4x² − 3x",
+      "4x² + 3x",
+      "−4x + 3x",
+      "−4x² + 3x"
+    ],
+    "answerIndex": 3,
+    "explanation": "−x 要分別乘以括號內 4x 和 −3 兩項，分配律兩項都要乘到才算完整：−x×4x = −4x²，−x×(−3) = +3x，負負得正，得 −4x² + 3x。−4x² − 3x 是 −3 乘 −x 沒變正；4x² + 3x 則 −x 係數漏看；−4x + 3x 是 4x² 少一個 x，指數合併錯。",
+    "steps": [
+      "−x × 4x = −4x²。",
+      "−x × (−3) = 3x。",
+      "得 −4x² + 3x。"
+    ],
+    "commonMistake": "−x 乘 (−3) 時符號弄錯，負負得正規則用錯，寫成 −4x² − 3x。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s006-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 2a(3a − 2b + 5)。",
+    "choices": [
+      "6a² − 4ab + 10a",
+      "6a² − 4b + 10a",
+      "5a² − 4ab + 7a",
+      "6a² − 2ab + 10a"
+    ],
+    "answerIndex": 0,
+    "explanation": "2a 要乘括號內三項，每一項都要乘到，分配律要完整做完全部三項才算答對：2a×3a = 6a²，2a×(−2b) = −4ab，2a×5 = 10a，得 6a² − 4ab + 10a。6a² − 4b + 10a 是 −2b 只乘 2 沒乘 a；6a² − 2ab + 10a 則 −2 沒全乘；5a² − 4ab + 7a 是係數相加。",
+    "steps": [
+      "2a×3a=6a²。",
+      "2a×(−2b)=−4ab。",
+      "2a×5=10a。"
+    ],
+    "commonMistake": "−2b 項只乘 2 沒有乘 a，分配不完整，寫成 6a² − 4b + 10a。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s006-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 −4(x² + x − 1)。",
+    "choices": [
+      "−4x² − 4x − 4",
+      "−4x² − 4x + 4",
+      "−4x² + 4x + 4",
+      "−4x² − x + 4"
+    ],
+    "answerIndex": 1,
+    "explanation": "−4 要乘括號內三項，每一項都要乘到，分配律要完整做完全部三項：−4×x² = −4x²，−4×x = −4x，−4×(−1) = +4，負負得正，得 −4x² − 4x + 4。−4x² − 4x − 4 是最後 −1×(−4) 算成 −4；−4x² + 4x + 4 則 x 項符號反了；−4x² − x + 4 是 x 只乘 1。",
+    "steps": [
+      "−4×x²=−4x²。",
+      "−4×x=−4x。",
+      "−4×(−1)=4。"
+    ],
+    "commonMistake": "−4 乘 (−1) 最後一項算成 −4 而非 +4，負負得正規則用錯，寫成 −4x² − 4x − 4。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s006-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 3xy(2x − y)。",
+    "choices": [
+      "6x²y − 3xy",
+      "5x²y − 3xy²",
+      "6x²y − 3xy²",
+      "6xy − 3xy²"
+    ],
+    "answerIndex": 2,
+    "explanation": "3xy 要分別乘以括號內 2x 和 −y 兩項，分配律兩項都要乘到。第一項 3xy·2x = 6x²y，x 指數 1+1=2；第二項 3xy·(−y) = −3xy²，y 指數 1+1=2，得 6x²y − 3xy²。6x²y − 3xy 是第二項少乘一個 y；5x²y − 3xy² 則把係數 3 與 2 用加法。",
+    "steps": [
+      "3xy×2x=6x²y。",
+      "3xy×(−y)=−3xy²。",
+      "寫 6x²y − 3xy²。"
+    ],
+    "commonMistake": "3xy 乘 −y 時 y 指數沒加 1，少乘一個 y，寫成 −3xy 而非 −3xy²。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s006-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "monomial-polynomial-distribute",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 −(2x + 5) + 3(x − 1)。（先分配再合併）",
+    "choices": [
+      "x − 2",
+      "5x − 8",
+      "x + 2",
+      "x − 8"
+    ],
+    "answerIndex": 3,
+    "explanation": "題目要求先分配再整理，兩段都要做完整才算答對：−(2x+5) = −2x−5，3(x−1) = 3x−3，相加得 −2x−5+3x−3。x 項 −2+3 = x，常數 −5−3 = −8，整理 x − 8。x − 2 是常數 −5−3 算成 −2；5x − 8 則 x 合併成 5x；x + 2 是常數符號全反。",
+    "steps": [
+      "−(2x+5)=−2x−5。",
+      "3(x−1)=3x−3。",
+      "合併 x−8。"
+    ],
+    "commonMistake": "常數 −5 與 −3 合併時算成 −2 而非 −8，正負或加法弄錯，寫成 x − 2。",
+    "concept": "單項式乘多項式：分配律，括號內每一項都要乘到",
+    "tags": [
+      "多項式",
+      "monomial-polynomial-distribute",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s007-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x + 2)(x + 3) 展開後為何？",
+    "choices": [
+      "x² + 5x + 6",
+      "x² + 6x + 5",
+      "2x² + 5x + 6",
+      "x² + 5x − 6"
+    ],
+    "answerIndex": 0,
+    "explanation": "先用x乘第二個括號，得到x²+3x；再用2乘第二個括號，得到2x+6。一次項3x與2x相加為5x，常數6保留，所以可得x²+5x+6。x²+6x+5同時把一次項與常數算錯；2x²+5x+6則把x·x誤寫成2x²。",
+    "steps": [
+      "x 乘 x + 3：x² + 3x。",
+      "2 乘 x + 3：2x + 6。",
+      "合併同類項：x² + 5x + 6。"
+    ],
+    "commonMistake": "一次項 3x 加 2x 誤寫成 6x，或常數 6 與 5 位置對調。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s007-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x − 1)(x + 4) 展開後為何？",
+    "choices": [
+      "x² + 5x − 4",
+      "x² + 3x − 4",
+      "x² − 3x − 4",
+      "x² + 4x − 1"
+    ],
+    "answerIndex": 1,
+    "explanation": "依分配律，x乘(x+4)得x²+4x；−1乘(x+4)得−x−4。合併4x與−x得到3x，常數為−4，整理後得到x²+3x−4。x²+5x−4把−x誤當成+x；x²−3x−4把正確的一次項+3x寫成−3x，正負號相反，兩者相差6x；x²+4x−1則沒有完成一次項合併，也把常數乘積算錯。",
+    "steps": [
+      "x 乘 x + 4：x² + 4x。",
+      "−1 乘 x + 4：−x − 4。",
+      "合併：x² + 3x − 4。"
+    ],
+    "commonMistake": "−1 乘 x 得 −x，卻當 +x 去跟 4x 相加，一次項變 5x。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s007-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(2x + 1)(x + 2) 展開後為何？",
+    "choices": [
+      "2x² + 3x + 2",
+      "3x² + 5x + 2",
+      "2x² + 5x + 2",
+      "2x² + 4x + 1"
+    ],
+    "answerIndex": 2,
+    "explanation": "2x 乘 (x+2) 得 2x²+4x；1 乘 (x+2) 得 x+2。把 4x 加 x 是 5x，常數 2 保留，整理 2x²+5x+2。2x²+3x+2 是 4x+x 只加出 3x 少加 1x；3x²+5x+2 則 2x·x 的係數 2 漏乘，第一項誤寫成 3x² 不是 2x²。首項 2x 乘 x 時係數 2 要算進去不能漏。",
+    "steps": [
+      "2x 乘 x + 2：2x² + 4x。",
+      "1 乘 x + 2：x + 2。",
+      "合併：2x² + 5x + 2。"
+    ],
+    "commonMistake": "4x 與 x 合併只寫 3x 少 1，或 2x·x 係數漏乘寫成 3x²。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s007-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x − 3)(x − 2) 展開後為何？",
+    "choices": [
+      "x² − 5x − 6",
+      "x² + 5x + 6",
+      "x² − 6x + 5",
+      "x² − 5x + 6"
+    ],
+    "answerIndex": 3,
+    "explanation": "x 乘 (x−2) 得 x²−2x；−3 乘 (x−2) 得 −3x+6。把 −2x 與 −3x 合併 −5x，常數 +6 保留，得 x²−5x+6。x²−5x−6 是把 −3·(−2) 算成 −6 常數符號錯；x²+5x+6 則兩個一次項符號都弄反，−2x−3x 變 +5x。兩個負號相乘常數才會變正。",
+    "steps": [
+      "x 乘 x − 2：x² − 2x。",
+      "−3 乘 x − 2：−3x + 6。",
+      "合併：x² − 5x + 6。"
+    ],
+    "commonMistake": "−3 乘 −2 常數項算成 −6 符號錯，或 −2x−3x 符號全反變 +5x。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s007-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(3x + 2)(x − 1) 展開後為何？",
+    "choices": [
+      "3x² − x − 2",
+      "3x² + x − 2",
+      "3x² − 5x − 2",
+      "4x² − x − 2"
+    ],
+    "answerIndex": 0,
+    "explanation": "3x 乘 (x−1) 得 3x²−3x；2 乘 (x−1) 得 2x−2。把 −3x 加 2x 是 −x，常數 −2 保留，整理 3x²−x−2。3x²+x−2 是把 −3x+2x 算成 +x 符號反了；3x²−5x−2 則 2x 與 −3x 加總算成 −5x，多減了一次 2x。一次項 −3x 加 2x 合併後是 −x 不是 +x，也不能把 2x 當 −2x 去加。",
+    "steps": [
+      "3x 乘 x − 1：3x² − 3x。",
+      "2 乘 x − 1：2x − 2。",
+      "合併：3x² − x − 2。"
+    ],
+    "commonMistake": "−3x+2x 合併符號弄反寫 +x，或 2x 與 −3x 加總誤算 −5x。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s007-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x + 5)(2x − 1) 展開後為何？",
+    "choices": [
+      "2x² + 10x − 5",
+      "2x² + 9x − 5",
+      "3x² + 9x − 5",
+      "2x² + 9x + 5"
+    ],
+    "answerIndex": 1,
+    "explanation": "x 乘 (2x−1) 得 2x²−x；5 乘 (2x−1) 得 10x−5。把 −x 加 10x 是 9x，常數 −5 保留，得 2x²+9x−5。2x²+10x−5 是把 −x+10x 當 10x 漏減 1x；2x²+9x+5 則 5·(−1) 常數符號寫成 +5，負號漏看。5 乘 (2x−1) 要分別算出 10x 與 −5，−x+10x 合併是 9x 不是 10x，常數 5×(−1)=−5 不能寫 +5。",
+    "steps": [
+      "x 乘 2x − 1：2x² − x。",
+      "5 乘 2x − 1：10x − 5。",
+      "合併：2x² + 9x − 5。"
+    ],
+    "commonMistake": "−x+10x 只保留 10x 漏減 1，或 5 乘 −1 常數項符號寫反。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s007-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x − 4)(x + 7) 展開後為何？",
+    "choices": [
+      "x² − 3x − 28",
+      "x² + 11x − 28",
+      "x² + 3x − 28",
+      "x² + 3x + 28"
+    ],
+    "answerIndex": 2,
+    "explanation": "x 乘 (x+7) 得 x²+7x；−4 乘 (x+7) 得 −4x−28。把 7x 與 −4x 合併 3x，常數 −28 保留，整理 x²+3x−28。x²−3x−28 是把 −4x 當 +4x 去跟 7x 相減；x²+11x−28 則 7x−(−4x) 誤算成 11x，符號處理錯。7x 減 4x 合併得 3x 不是 11x，常數 (−4)×7=−28 不能寫成 +28 或漏算。",
+    "steps": [
+      "x 乘 x + 7：x² + 7x。",
+      "−4 乘 x + 7：−4x − 28。",
+      "合併：x² + 3x − 28。"
+    ],
+    "commonMistake": "−4 乘 x 得 −4x，卻當 +4x 跟 7x 相減，一次項變 −3x 而不是 3x。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s007-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(2x − 3)(x + 1) 展開後為何？",
+    "choices": [
+      "2x² + x − 3",
+      "2x² − 5x − 3",
+      "3x² − x − 3",
+      "2x² − x − 3"
+    ],
+    "answerIndex": 3,
+    "explanation": "2x 乘 (x+1) 得 2x²+2x；−3 乘 (x+1) 得 −3x−3。把 2x 與 −3x 合併 −x，常數 −3 保留，得 2x²−x−3。2x²+x−3 是把 −3x 當 +x 去加 2x 符號反了；2x²−5x−3 則 2x−3x 算成 −5x，多減一次 2x 少加 4x。2x 與 −3x 合併只少 1x 得 −x，不是 −5x 也不是 +x，常數項 (−3)×1=−3。",
+    "steps": [
+      "2x 乘 x + 1：2x² + 2x。",
+      "−3 乘 x + 1：−3x − 3。",
+      "合併：2x² − x − 3。"
+    ],
+    "commonMistake": "2x−3x 合併算成 −5x 多減，或 −3x 符號弄反變 +x 得 2x²+x−3。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s007-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x + 6)(x − 1) 展開後為何？",
+    "choices": [
+      "x² + 5x − 6",
+      "x² + 7x − 6",
+      "x² − 5x − 6",
+      "x² + 5x + 6"
+    ],
+    "answerIndex": 0,
+    "explanation": "x 乘 (x−1) 得 x²−x；6 乘 (x−1) 得 6x−6。把 −x 加 6x 是 5x，常數 −6 保留，整理 x²+5x−6。x²+7x−6 是把 −x+6x 算成 7x 多加了 1x；x²−5x−6 則 6x 符號弄反變 −6x 去跟 −x 合併，一次項變 −5x。6 乘 (x−1) 常數是 −6 不是 +6，−x+6x 合併是 5x 不是 7x。",
+    "steps": [
+      "x 乘 x − 1：x² − x。",
+      "6 乘 x − 1：6x − 6。",
+      "合併：x² + 5x − 6。"
+    ],
+    "commonMistake": "−x+6x 加總寫 7x 多 1，或 6 乘 (x−1) 常數項符號弄反變 +6。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s007-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(3x − 1)(2x + 3) 展開後為何？",
+    "choices": [
+      "6x² + 11x − 3",
+      "6x² + 7x − 3",
+      "5x² + 7x − 3",
+      "6x² + 7x + 3"
+    ],
+    "answerIndex": 1,
+    "explanation": "3x 乘 (2x+3) 得 6x²+9x；−1 乘 (2x+3) 得 −2x−3。把 9x 與 −2x 合併 7x，常數 −3 保留，整理 6x²+7x−3。6x²+11x−3 是把 9x−2x 算成 11x 多加了 2x；6x²+7x+3 則常數項來自 (−1)×3=−3，漏掉 −1 的負號而寫成 +3。−1 乘 3 得 −3 常數不能寫 +3，一次項 9x−2x=7x。",
+    "steps": [
+      "3x 乘 2x + 3：6x² + 9x。",
+      "−1 乘 2x + 3：−2x − 3。",
+      "合併：6x² + 7x − 3。"
+    ],
+    "commonMistake": "9x−2x 合併寫 11x 多加了 2，或 −1 乘 3 常數項符號寫反。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s007-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x − 2)(3x + 4) 展開後為何？",
+    "choices": [
+      "3x² + 2x − 8",
+      "4x² − 2x − 8",
+      "3x² − 2x − 8",
+      "3x² − 6x − 8"
+    ],
+    "answerIndex": 2,
+    "explanation": "x 乘 (3x+4) 得 3x²+4x；−2 乘 (3x+4) 得 −6x−8。把 4x 與 −6x 合併 −2x，常數 −8 保留，得 3x²−2x−8。3x²+2x−8 是把 −6x 當 +2x 去加 4x 符號反了；3x²−6x−8 則 4x−6x 只減一次得 −6x，漏加 4x。−2 乘 (3x+4) 得 −6x−8，常數項 (−2)×4=−8 不能寫成 +8，4x 加 (−6x) 合併是 −2x 不是 −6x。",
+    "steps": [
+      "x 乘 3x + 4：3x² + 4x。",
+      "−2 乘 3x + 4：−6x − 8。",
+      "合併：3x² − 2x − 8。"
+    ],
+    "commonMistake": "4x−6x 合併只寫 −6x 漏加 4x，或 −2·3x 符號弄反變 +6x。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s007-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "binomial-multiply-basic",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一長方形長 (x + 2) 公分、寬 (x + 3) 公分，面積展開後為何？",
+    "choices": [
+      "x² + 5x + 5",
+      "2x² + 5x + 6",
+      "x² + 6x + 5",
+      "x² + 5x + 6"
+    ],
+    "answerIndex": 3,
+    "explanation": "長方形面積等於長乘寬，也就是 (x+2)(x+3)。x 乘 (x+3) 得 x²+3x，2 乘 (x+3) 得 2x+6，3x+2x=5x，常數 2×3=6，面積 x²+5x+6。x²+5x+5 常數 2×3 漏算成 5；x²+6x+5 則一次項與常數對調，6 與 5 位置錯。2 乘 (x+3) 得 2x+6 不能漏算。",
+    "steps": [
+      "面積 = 長 × 寬 = (x + 2)(x + 3)。",
+      "分配律展開：x² + 3x + 2x + 6。",
+      "合併得 x² + 5x + 6。"
+    ],
+    "commonMistake": "長乘寬展開常數 2×3 漏算成 5，或 3x+2x 與常數 6 位置對調。",
+    "concept": "二項式乘二項式先用分配律每一項分別相乘，再把同次項係數合併；注意正負號與係數相乘，最後整理成降冪排列的多項式",
+    "tags": [
+      "多項式",
+      "binomial-multiply-basic",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s008-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x + 3)² 展開後為何？",
+    "choices": [
+      "x² + 6x + 9",
+      "x² + 9",
+      "x² + 3x + 9",
+      "x² + 6x + 6"
+    ],
+    "answerIndex": 0,
+    "explanation": "(x+3)² 可寫成 (x+3)(x+3)：x²+3x+3x+9，兩段 3x 加起來 6x，整理 x²+6x+9。x²+9 是漏掉兩段 3x 中間項；x²+3x+9 則只保留一段 3x，忘了 2·x·3=6x 前面還要乘 2。分配律兩段 3x 加總才是 6x 不是 3x，2·x·3 要乘 2。2·x·3 要乘 2 得 6x。",
+    "steps": [
+      "寫成 (x + 3)(x + 3)。",
+      "展開：x² + 3x + 3x + 9。",
+      "合併一次項：x² + 6x + 9。"
+    ],
+    "commonMistake": "展開只寫 x²+9 漏中間項，或 2·x·3 只算一次得 3x 漏乘 2。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s008-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(2x + 1)² 展開後為何？",
+    "choices": [
+      "4x² + 2x + 1",
+      "4x² + 4x + 1",
+      "2x² + 4x + 1",
+      "4x² + 4x + 2"
+    ],
+    "answerIndex": 1,
+    "explanation": "在(2x+1)²中，首項(2x)²=4x²，中間項2×2x×1=4x，末項1²=1，因此得到4x²+4x+1。4x²+2x+1把中間項少算2x；2x²+4x+1沒有把係數2平方；4x²+4x+2則把1²誤算成2。計算整個2x的平方時，係數2與x都要平方。",
+    "steps": [
+      "第一項平方：(2x)² = 4x²。",
+      "中間項 2·2x·1 = 4x。",
+      "第二項平方：1² = 1，合併 4x² + 4x + 1。"
+    ],
+    "commonMistake": "2·2x·1 只寫 2x 漏乘 2，或 (2x)² 只算 2x² 沒把 2 平方。首項 4x² 不是 2x²。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s008-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 (x + 5)² = x² + □ + 25，□ 應填何式？",
+    "choices": [
+      "5x",
+      "25x",
+      "10x",
+      "10"
+    ],
+    "answerIndex": 2,
+    "explanation": "完全平方和公式為(a+b)²=a²+2ab+b²。這裡a=x、b=5，中間項是2×x×5=10x，所以空格應填10x。5x少乘了公式中的2；25x把常數平方誤當一次項；10則缺少未知數x，三者都不符合展開式。",
+    "steps": [
+      "把a設為x、b設為5。",
+      "計算交叉項2ab=2×x×5。",
+      "空格填入10x。"
+    ],
+    "commonMistake": "只計算x×5而漏乘2，會把中間項錯寫成5x。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s008-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "小安把 (3x + 2)² 寫成 9x² + 6x + 4，哪一項需要修正？",
+    "choices": [
+      "首項應改為 6x²",
+      "常數項應改為 2",
+      "中間項應改為 9x",
+      "中間項應改為 12x"
+    ],
+    "answerIndex": 3,
+    "explanation": "先檢查三個部分：(3x)²=9x²，2²=4，兩者都已寫對；中間項應是2×3x×2=12x，因此原式中的6x要改成12x。其餘三種修改反而會破壞正確的首項或常數項。",
+    "steps": [
+      "確認首項平方是9x²。",
+      "確認常數平方是4。",
+      "把中間的6x修正為12x。"
+    ],
+    "commonMistake": "只算3x×2而漏掉公式中的2，會得到錯誤的6x。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s008-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 x² + 14x + 49 = (x + k)²，則 k 為何？",
+    "choices": [
+      "7",
+      "14",
+      "49",
+      "2"
+    ],
+    "answerIndex": 0,
+    "explanation": "把(x+k)²展開成x²+2kx+k²，再與x²+14x+49比較。由一次項係數可得2k=14，所以k=7；同時7²=49，也符合常數項。14只是一次項係數，49是k²，2則無法同時滿足兩個條件，因此只有7符合。",
+    "steps": [
+      "寫出x²+2kx+k²。",
+      "由2k=14求出k=7。",
+      "確認k²與49一致。"
+    ],
+    "commonMistake": "把14直接當成k，忽略一次項係數其實是2k。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s008-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "展開 (4x + 1)² 時，x 項的係數是多少？",
+    "choices": [
+      "4",
+      "8",
+      "16",
+      "2"
+    ],
+    "answerIndex": 1,
+    "explanation": "在(4x+1)²中，a=4x、b=1，中間項為2ab=2×4x×1=8x，因此x項係數是8。4只算了4x×1而少乘2；16屬於首項平方的係數；2只是公式中的固定倍數，還沒有乘上4。因此只有8符合展開後的一次項。",
+    "steps": [
+      "辨認a=4x、b=1。",
+      "求出交叉項為8x。",
+      "讀出x項係數8。"
+    ],
+    "commonMistake": "把公式中的2單獨當成係數，或只算4x×1而得到4。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s008-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 (x + 2)² − x²，所得式子為何？",
+    "choices": [
+      "2x + 4",
+      "x² + 4x + 4",
+      "4x + 4",
+      "4x"
+    ],
+    "answerIndex": 2,
+    "explanation": "先展開(x+2)²=x²+4x+4，再減去原式後面的x²。兩個二次項互相抵消，只留下4x+4。2x+4少算一半交叉項；x²+4x+4尚未完成減法；4x則漏掉常數4，所以化簡後必須同時保留一次項與常數項。",
+    "steps": [
+      "先將平方展開成三項。",
+      "把後面的x²整項減去。",
+      "相消二次項後留下4x+4。"
+    ],
+    "commonMistake": "展開平方後忘記減去原來的x²，會保留多餘的二次項。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s008-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "正方形邊長由 5x 增加為 5x + 2，面積增加多少？",
+    "choices": [
+      "10x + 4",
+      "25x² + 4",
+      "20x",
+      "20x + 4"
+    ],
+    "answerIndex": 3,
+    "explanation": "新正方形面積為(5x+2)²=25x²+20x+4，原面積為(5x)²=25x²。兩者相減後，25x²互相抵消，面積增加20x+4。20x漏掉2²形成的4；25x²+4則沒有計入兩塊交叉區域，因此都不是完整的增加量。",
+    "steps": [
+      "列出新正方形面積(5x+2)²。",
+      "列出原正方形面積25x²。",
+      "兩面積相減得到20x+4。"
+    ],
+    "commonMistake": "只看到邊長增加2就寫20x，會漏掉2²形成的常數4。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s008-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "已知 (x + a)² 展開後 x 項係數為 2，則 a 為何？",
+    "choices": [
+      "1",
+      "2",
+      "−1",
+      "4"
+    ],
+    "answerIndex": 0,
+    "explanation": "由(x+a)²=x²+2ax+a²可知，x項係數是2a。題目給定係數為2，因此列式2a=2，解得a=1。若a=2，中間項會是4x；若a=−1，中間項會是−2x；a=4時係數更會變成8，所以只有1符合題意。",
+    "steps": [
+      "從公式讀出x項係數2a。",
+      "建立方程式2a=2。",
+      "解得a=1。"
+    ],
+    "commonMistake": "把x項係數直接當成a，會忽略公式中的倍數2。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s008-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一式平方後等於 4x² + 12x + 9？",
+    "choices": [
+      "(2x + 9)²",
+      "(2x + 3)²",
+      "(4x + 3)²",
+      "(2x + 6)²"
+    ],
+    "answerIndex": 1,
+    "explanation": "4x²表示第一項應是2x，9表示第二項應是3。用完全平方和計算，中間項2×2x×3=12x，正好符合原式，因此對應(2x+3)²。其他式子的首項、常數項或中間項都不一致。",
+    "steps": [
+      "由4x²判斷第一項為2x。",
+      "由9判斷第二項為3。",
+      "檢查中間項12x並寫成(2x+3)²。"
+    ],
+    "commonMistake": "只看首項平方而忽略常數與中間項，會挑到外形相近的錯誤式子。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s008-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 (x + 4)² = x² + 8x + c，則 c 為何？",
+    "choices": [
+      "8",
+      "12",
+      "16",
+      "20"
+    ],
+    "answerIndex": 2,
+    "explanation": "展開(x+4)²可得x²+2×x×4+4²，也就是x²+8x+16。題目已經給出x²與8x，所以剩下的常數c必須是16。8是一次項的係數；12與20都不是4的平方，無法補成完整展開式。",
+    "steps": [
+      "把常數4平方。",
+      "得到常數項16。",
+      "因此c=16。"
+    ],
+    "commonMistake": "把中間項係數8誤當常數c，會忽略末項必須是4²。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s008-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-sum-formula",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一正方形邊長 (x + 4) 公分，面積展開後為何？",
+    "choices": [
+      "x² + 4x + 16",
+      "x² + 16",
+      "x² + 8x + 8",
+      "x² + 8x + 16"
+    ],
+    "answerIndex": 3,
+    "explanation": "正方形面積等於邊長平方，也就是 (x+4)²。第一項 x²，中間 2·x·4=8x，末項 4²=16，面積 x²+8x+16。x²+4x+16 是 2·x·4 只算 4x 漏乘 2；x²+8x+8 則 4² 算成 8 不是 16，常數平方錯。邊長平方跟代數展開是一回事。",
+    "steps": [
+      "面積 = 邊長² = (x + 4)²。",
+      "套用公式：x² + 2·x·4 + 16。",
+      "整理得 x² + 8x + 16。"
+    ],
+    "commonMistake": "邊長平方展開 2·x·4 只寫 4x 漏乘 2，或 4² 算成 8 不是 16。",
+    "concept": "(a + b)² = a² + 2ab + b²，展開時要有中間項 2ab，不可只寫 a² + b²；代入文字或代數式時逐步計算",
+    "tags": [
+      "多項式",
+      "square-sum-formula",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s009-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x − 2)² 展開後為何？",
+    "choices": [
+      "x² − 4x + 4",
+      "x² + 4x + 4",
+      "x² − 4",
+      "x² − 2x + 4"
+    ],
+    "answerIndex": 0,
+    "explanation": "(x−2)² 第一項 x²，中間 −2·x·2=−4x，末項 (−2)²=4，整理 x²−4x+4。x²+4x+4 中間項符號弄反變 +4x；x²−2x+4 則 −2·x·2 只算 x·2=2x 漏乘 2，且符號也可能錯。減號平方中間項仍是負的。一次項只有 −2x 不是 −4x。",
+    "steps": [
+      "第一項 x²。",
+      "中間項 −2·x·2 = −4x。",
+      "常數 2² = 4，整理成 x² − 4x + 4。"
+    ],
+    "commonMistake": "−2·x·2 中間項符號寫 +4x，或只算 x·2=2x 漏乘 2。中間項符號最易反。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s009-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x − 5)² 展開後為何？",
+    "choices": [
+      "x² − 5x + 25",
+      "x² − 10x + 25",
+      "x² + 10x + 25",
+      "x² − 25"
+    ],
+    "answerIndex": 1,
+    "explanation": "把(x−5)²寫成(x−5)(x−5)，展開得到x²−5x−5x+25，兩個一次項合併為−10x，所以得到x²−10x+25。x²−5x+25只保留一個−5x；x²+10x+25把一次項符號寫反；x²−25漏掉一次項，也把常數符號寫錯。",
+    "steps": [
+      "x² 是第一項。",
+      "−2·x·5 = −10x。",
+      "5² = 25，整理成 x² − 10x + 25。"
+    ],
+    "commonMistake": "−2·x·5 只寫 5x 漏乘 2，或中間項符號弄反寫 +10x。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s009-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "小華把 (2x − 1)² 寫成 4x² − 2x + 1，哪一項需要修正？",
+    "choices": [
+      "首項應改為 2x²",
+      "常數項應改為 −1",
+      "中間項應改為 −4x",
+      "中間項應改為 4x"
+    ],
+    "answerIndex": 2,
+    "explanation": "首項(2x)²=4x²，常數項1²=1，這兩項都正確。中間項要計算−2×2x×1=−4x，因此原來的−2x應改為−4x。正4x的符號不符減法平方，其他修改也會破壞正確項。",
+    "steps": [
+      "確認首項平方為4x²。",
+      "確認常數平方為1。",
+      "把中間的−2x修正為−4x。"
+    ],
+    "commonMistake": "只算2x×1而漏掉前面的倍數2，會把中間項寫成−2x。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s009-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 (x − 7)² = x² + □ + 49，□ 應填何式？",
+    "choices": [
+      "−7x",
+      "14x",
+      "−49x",
+      "−14x"
+    ],
+    "answerIndex": 3,
+    "explanation": "利用(a−b)²=a²−2ab+b²，令a=x、b=7，交叉部分是−2×x×7=−14x，所以空格應填−14x。−7x少乘2；14x符號相反；−49x把常數平方誤放到一次項。完整展開應同時保留x²、−14x與49，三個部分的次數也要正確。",
+    "steps": [
+      "令a=x、b=7。",
+      "計算−2ab=−2×x×7。",
+      "空格填入−14x。"
+    ],
+    "commonMistake": "只計算x×7或忽略減號，會寫成−7x或14x。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s009-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 x² − 12x + 36 = (x − k)²，則 k 為何？",
+    "choices": [
+      "6",
+      "12",
+      "36",
+      "3"
+    ],
+    "answerIndex": 0,
+    "explanation": "展開(x−k)²可得x²−2kx+k²。比較一次項係數，−2k=−12，所以k=6；再檢查6²=36，也符合常數項。12只是一次項係數的絕對值，36是k的平方，3無法符合兩個條件。",
+    "steps": [
+      "寫出x²−2kx+k²。",
+      "由−2k=−12求得k=6。",
+      "確認k²等於36。"
+    ],
+    "commonMistake": "把12直接當成k，忽略一次項係數是−2k。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s009-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "展開 (x − 1)² 時，x 項的係數是多少？",
+    "choices": [
+      "−1",
+      "−2",
+      "1",
+      "2"
+    ],
+    "answerIndex": 1,
+    "explanation": "(x−1)²=x²−2×x×1+1²，所以一次項是−2x，x項係數為−2。−1少乘公式中的2；1與2都忽略減號。係數必須同時考慮倍數與正負號，不能只看括號中的1，否則會把一次項的大小或方向判斷錯誤。",
+    "steps": [
+      "辨認a=x、b=1。",
+      "求出交叉部分為−2x。",
+      "讀出x項係數−2。"
+    ],
+    "commonMistake": "只把括號中的−1當係數，沒有計算−2×x×1。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s009-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 (4x − 3)² − 16x²，所得式子為何？",
+    "choices": [
+      "−12x + 9",
+      "16x² − 24x + 9",
+      "−24x + 9",
+      "24x + 9"
+    ],
+    "answerIndex": 2,
+    "explanation": "先展開(4x−3)²=16x²−24x+9，再減去16x²，兩個二次項互相抵消，留下−24x+9。−12x+9少乘2；保留16x²表示尚未完成減法；24x+9把一次項符號寫反。完成相消後不應再出現二次項。",
+    "steps": [
+      "先展開平方成三項。",
+      "減去後面的16x²。",
+      "二次項相消後留下−24x+9。"
+    ],
+    "commonMistake": "展開後忘記減去16x²，或把−24x的負號改成正號。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s009-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 x > 10，正方形邊長由 x 縮短為 x − 10，面積減少多少？",
+    "choices": [
+      "20x + 100",
+      "x² − 20x + 100",
+      "10x − 100",
+      "20x − 100"
+    ],
+    "answerIndex": 3,
+    "explanation": "原面積是x²，新面積是(x−10)²=x²−20x+100。面積減少量要用原面積減新面積，得到x²−(x²−20x+100)=20x−100。20x+100把括號前的減號分配錯；新面積本身也不能直接當成減少量。",
+    "steps": [
+      "列出原面積x²。",
+      "展開新面積(x−10)²。",
+      "用原面積減新面積得到20x−100。"
+    ],
+    "commonMistake": "把新面積本身當成減少量，沒有計算原面積與新面積的差。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s009-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "已知 (x − a)² 展開後 x 項係數為 −20，則 a 為何？",
+    "choices": [
+      "10",
+      "20",
+      "−10",
+      "5"
+    ],
+    "answerIndex": 0,
+    "explanation": "(x−a)²=x²−2ax+a²，所以x項係數是−2a。題目給定係數−20，可列−2a=−20，解得a=10。a=20會產生−40x；a=−10會產生20x；a=5只會產生−10x。代回後可確認常數項是100，整個展開也與條件一致。",
+    "steps": [
+      "從公式讀出x項係數−2a。",
+      "建立方程式−2a=−20。",
+      "解得a=10。"
+    ],
+    "commonMistake": "把−20直接當成a，忽略一次項係數還包含−2。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s009-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一式平方後等於 x² − 8x + 16？",
+    "choices": [
+      "(x − 8)²",
+      "(x − 4)²",
+      "(x + 4)²",
+      "(x − 2)²"
+    ],
+    "answerIndex": 1,
+    "explanation": "首項x²表示第一項是x，常數16表示第二項的絕對值是4。因為一次項是−8x，所以括號中要使用減號，且−2×x×4=−8x，因此對應(x−4)²。其他三個式子的中間項或常數都不符合。",
+    "steps": [
+      "由x²判斷第一項為x。",
+      "由16判斷第二項大小為4。",
+      "用−8x確認括號是x−4。"
+    ],
+    "commonMistake": "只看常數16，沒有利用一次項的符號與係數判斷括號。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s009-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 (2x − 5)² = 4x² − 20x + c，則 c 為何？",
+    "choices": [
+      "10",
+      "20",
+      "25",
+      "−25"
+    ],
+    "answerIndex": 2,
+    "explanation": "展開(2x−5)²時，首項是(2x)²=4x²，交叉部分是−2×2x×5=−20x，常數項是5²=25。題目已列出前兩項，因此c必須等於25。10與20不是5的平方，−25的符號也不符，因為負數平方後仍為正數。",
+    "steps": [
+      "把常數5平方。",
+      "得到常數項25。",
+      "因此c=25。"
+    ],
+    "commonMistake": "把交叉部分的係數20當成常數，或因括號有減號而寫成−25。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s009-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "square-difference-formula",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一正方形邊長 (x − 3) 公分，面積展開後為何？",
+    "choices": [
+      "x² − 3x + 9",
+      "x² + 6x + 9",
+      "x² − 9",
+      "x² − 6x + 9"
+    ],
+    "answerIndex": 3,
+    "explanation": "正方形面積等於邊長平方，也就是 (x−3)²。第一項 x²，中間 −2·x·3=−6x，末項 3²=9，面積 x²−6x+9。x²−3x+9 是 −2·x·3 只算 x·3=3x 漏乘 2；x²+6x+9 則中間項符號弄反變 +6x，跟 (x+3)² 搞混。邊長 x−3 平方中間是 −6x。",
+    "steps": [
+      "面積 = 邊長² = (x − 3)²。",
+      "套用公式：x² − 2·x·3 + 9。",
+      "整理得 x² − 6x + 9。"
+    ],
+    "commonMistake": "−2·x·3 只寫 3x 漏乘 2，或中間項符號弄反寫 +6x。",
+    "concept": "(a − b)² = a² − 2ab + b²，中間項是減 2ab 不是加；最後一項 b² 仍是正數，展開後三項符號要逐步檢查",
+    "tags": [
+      "多項式",
+      "square-difference-formula",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s010-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x + 3)(x − 3) 展開後為何？",
+    "choices": [
+      "x² − 9",
+      "x² + 9",
+      "x² − 6x + 9",
+      "x² + 6x − 9"
+    ],
+    "answerIndex": 0,
+    "explanation": "左右括號一個加、一個減，底數都是 x 與 3，符合 (a+b)(a−b) 型，套用 a²−b²：先算 (x)²=x²，再算 3²=9，兩平方相減得 x²−9，中間 ±3x 會互相抵消。x²+9 是末項 9 前用了加號；x²−6x+9 則誤把式子當 (x−3)² 去展開，多算出 −6x 這一項。",
+    "steps": [
+      "x 乘 x − 3：x² − 3x。",
+      "3 乘 x − 3：3x − 9。",
+      "合併：3x − 3x 消去，整理成 x² − 9。"
+    ],
+    "commonMistake": "平方差末項 9 前減號寫成加，或誤用 (x−3)² 完全平方式多算中間項。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s010-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(2x + 5)(2x − 5) 展開後為何？",
+    "choices": [
+      "4x² + 25",
+      "4x² − 25",
+      "4x² − 20x + 25",
+      "2x² − 25"
+    ],
+    "answerIndex": 1,
+    "explanation": "看到底數相同、符號相反的配對，兩括號加減對稱、底數都是 2x 與 5，用 a²−b² 展開：第一項 (2x)²=4x²，第二項 5²=25，中間 ±10x 相消，整理 4x²−25。4x²+25 是 25 前加減弄反；4x²−20x+25 則按 (2x−5)² 算出 −20x；2x²−25 則 (2x)² 漏平方只寫 2x²。",
+    "steps": [
+      "第一項 (2x)² = 4x²。",
+      "第二項 5² = 25。",
+      "中間項抵消，整理成 4x² − 25。"
+    ],
+    "commonMistake": "末項 25 前面減號寫成加，或套用 (2x−5)² 多算 −20x 中間項。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s010-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 (x + 1)(x − 1) = x² + □，□ 應填何數？",
+    "choices": [
+      "1",
+      "−2",
+      "−1",
+      "2"
+    ],
+    "answerIndex": 2,
+    "explanation": "兩括號中的兩項相同，但第二項符號相反。展開可得x²−x+x−1，正負x相加為0，因此留下x²−1，空格要填−1。填1會把常數符號寫反；−2與2都不是1平方後的常數。",
+    "steps": [
+      "先把兩括號用分配律展開。",
+      "將−x與+x相加消去。",
+      "空格填入常數−1。"
+    ],
+    "commonMistake": "把最後的1²前面寫成加號，會誤填1。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s010-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "小安把 (3x + 4)(3x − 4) 寫成 9x² − 24x + 16，哪個修正正確？",
+    "choices": [
+      "首項改為 6x²",
+      "保留 −24x，並把 16 改為 −16",
+      "只刪去 −24x",
+      "刪去 −24x，並把 +16 改為 −16"
+    ],
+    "answerIndex": 3,
+    "explanation": "用分配律展開可得9x²−12x+12x−16，兩個一次項相加為0，所以正確式子是9x²−16。原式不但多出−24x，常數符號也錯，因此必須同時刪去−24x並把+16改成−16。",
+    "steps": [
+      "展開得到9x²−12x+12x−16。",
+      "將−12x與+12x相加為0。",
+      "保留9x²−16並完成兩處修正。"
+    ],
+    "commonMistake": "把式子當成(3x−4)²，會多寫一次項並把常數寫成正數。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s010-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 (x + 6)(x − 6) = x² − k，則 k 為何？",
+    "choices": [
+      "36",
+      "12",
+      "6",
+      "72"
+    ],
+    "answerIndex": 0,
+    "explanation": "兩括號展開為x²−6x+6x−36，正負6x相加為0，因此可寫成x²−36，所以k=36。12是把兩個6相加；6沒有平方；72則把36再乘2，三者都不符合常數部分。這也與6²=36一致。",
+    "steps": [
+      "展開兩括號得到四個乘積。",
+      "消去−6x與+6x。",
+      "比較x²−k可得k=36。"
+    ],
+    "commonMistake": "把k看成括號中的6，忘記常數要計算6²。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s010-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "展開 (5x + 1)(5x − 1) 時，常數項是多少？",
+    "choices": [
+      "1",
+      "−1",
+      "25",
+      "−25"
+    ],
+    "answerIndex": 1,
+    "explanation": "分配後可得25x²−5x+5x−1，兩個一次項相加為0，常數來自1×(−1)，所以常數項是−1。1忽略了負號；25與−25則把第一項係數的平方誤當成常數。常數與x的係數無關。",
+    "steps": [
+      "先算常數相乘1×(−1)。",
+      "判定常數乘積為−1。",
+      "確認一次項相消後常數不變。"
+    ],
+    "commonMistake": "只看到1²就寫正1，沒有保留兩括號中的相反符號。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s010-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "化簡 (x + 9)(x − 9) + 81，所得式子為何？",
+    "choices": [
+      "x² − 162",
+      "x² − 81",
+      "x²",
+      "x² + 81"
+    ],
+    "answerIndex": 2,
+    "explanation": "先展開(x+9)(x−9)=x²−81，再加上81，常數−81與+81互相抵消，最後只留下x²。x²−81尚未加上81；x²+81把原乘積常數漏掉；x²−162則把兩個81都當成負數。所以化簡後不含常數。",
+    "steps": [
+      "先把乘積化成x²−81。",
+      "再加上題目中的81。",
+      "常數相消後得到x²。"
+    ],
+    "commonMistake": "完成乘積後就停止，忘記還要加上式子外面的81。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s010-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 x > 3/4，長方形長為 4x + 3、寬為 4x − 3，它的面積比 16x² 少多少？",
+    "choices": [
+      "3",
+      "6",
+      "12",
+      "9"
+    ],
+    "answerIndex": 3,
+    "explanation": "長方形面積=(4x+3)(4x−3)=16x²−9，因此與16x²相比少了9。3只是括號中的常數；6是兩個3相加；12來自4×3，卻不是面積差。只有9等於3²並符合兩面積的差。",
+    "steps": [
+      "先列出長乘寬的面積式。",
+      "展開得到16x²−9。",
+      "與16x²比較可知少9。"
+    ],
+    "commonMistake": "把括號中的3直接當成面積差，沒有先完成乘法。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s010-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "已知 a > 0 且 (x + a)(x − a) = x² − 49，則 a 為何？",
+    "choices": [
+      "7",
+      "49",
+      "−7",
+      "14"
+    ],
+    "answerIndex": 0,
+    "explanation": "展開左式可得x²−a²，與x²−49比較可知a²=49。因為題目限定a>0，所以a=7。49是a的平方；−7不符合正數條件；14的平方是196，無法得到常數49。這也符合正負一次項相加為0的結構。",
+    "steps": [
+      "把左式寫成x²−a²。",
+      "比較常數得到a²=49。",
+      "利用a>0求得a=7。"
+    ],
+    "commonMistake": "看到49就直接令a=49，沒有先辨認它代表a²。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s010-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一組相乘後等於 49x² − 4？",
+    "choices": [
+      "(7x − 2)²",
+      "(7x + 2)(7x − 2)",
+      "(49x + 2)(x − 2)",
+      "(7x + 4)(7x − 4)"
+    ],
+    "answerIndex": 1,
+    "explanation": "49x²=(7x)²且4=2²，要得到兩個平方相減，可使用(7x+2)(7x−2)。第一個式子會出現一次項；第三個式子的首項與交叉部分不符；第四個式子的常數是16，所以只有第二組符合。",
+    "steps": [
+      "將49x²辨認為(7x)²。",
+      "將4辨認為2²。",
+      "配成(7x+2)(7x−2)。"
+    ],
+    "commonMistake": "只看首項相同，沒有檢查常數平方與括號符號。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s010-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 (x + 8)(x − 8) = x² + c，則 c 為何？",
+    "choices": [
+      "8",
+      "64",
+      "−64",
+      "−8"
+    ],
+    "answerIndex": 2,
+    "explanation": "展開(x+8)(x−8)可得x²−64，與x²+c比較後可知c=−64。64少了負號；8與−8都沒有把常數8平方。兩個括號中的常數符號相反，所以常數乘積必須是負數。",
+    "steps": [
+      "計算常數乘積8×(−8)。",
+      "得到常數部分−64。",
+      "比較x²+c可得c=−64。"
+    ],
+    "commonMistake": "只算8²=64卻漏掉相反符號造成的負號。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s010-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "difference-of-squares-expand",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一長方形長 (a + 5) 公尺、寬 (a − 5) 公尺，面積展開後為何？",
+    "choices": [
+      "a² + 25",
+      "a² − 10a + 25",
+      "a² − 5",
+      "a² − 25"
+    ],
+    "answerIndex": 3,
+    "explanation": "長方形面積=長×寬=(a+5)(a−5)，這是 (a+b)(a−b) 型：a²−5²=a²−25，±5a 互相抵消。a²+25 把減 25 寫成加；a²−10a+25 則誤當 (a−5)² 去展開；a²−5 則 5² 只算成 5 而漏平方。從長寬列式後，±5a 兩項會完全抵消。",
+    "steps": [
+      "面積 = 長 × 寬 = (a + 5)(a − 5)。",
+      "套用平方差：a² − 5²。",
+      "得 a² − 25。"
+    ],
+    "commonMistake": "從長寬列出式子後，25 前減號寫成加，或誤用 (a−5)² 展開。",
+    "concept": "(a + b)(a − b) = a² − b²，兩項中間符號一正一負，展開後中間項會消去只剩平方差；只做展開辨識，不反過來問因式分解",
+    "tags": [
+      "多項式",
+      "difference-of-squares-expand",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s011-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x + 3)² 的正確展開為何？",
+    "choices": [
+      "x² + 6x + 9",
+      "x² − 6x + 9",
+      "x² − 9",
+      "x² + 9"
+    ],
+    "answerIndex": 0,
+    "explanation": "括號內是相加，屬 (a+b)² 型，套用 x²+2·x·3+3²=x²+6x+9。x²−6x+9 則中間項用了減，把 2·x·3 算成 −6x；x²−9 是把整式誤當 (x+3)(x−3) 平方差，漏了 6x；x²+9 則 2·x·3 整項漏算。加號平方的中間項 6x 不能漏掉。",
+    "steps": [
+      "型式是 (a + b)²，兩項中間為加。",
+      "套用 x² + 2·x·3 + 9。",
+      "得 x² + 6x + 9。"
+    ],
+    "commonMistake": "加號平方卻把 2·x·3=6x 算成 −6x，或誤套 a²−b² 漏中間項。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s011-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x − 4)² 的正確展開為何？",
+    "choices": [
+      "x² + 8x + 16",
+      "x² − 8x + 16",
+      "x² − 16",
+      "x² + 16"
+    ],
+    "answerIndex": 1,
+    "explanation": "減號在括號內，屬 (a−b)² 型，用 a²−2ab+b² 展開：x²−2·x·4+16=x²−8x+16。x²+8x+16 是中間 −8x 寫成 +8x；x²−16 則只算 x²−4² 漏了 2ab；x²+16 則中間 2ab 整項漏掉。減號平方的中間項係數要帶負號，減 4 的中間項固定是 −8x。",
+    "steps": [
+      "型式是 (a − b)²。",
+      "中間項 −2·x·4 = −8x。",
+      "得 x² − 8x + 16。"
+    ],
+    "commonMistake": "減號平方時 2·x·4=8x 的負號漏掉，變成 +8x 這一項。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s011-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(x + 5)(x − 5) 的正確展開為何？",
+    "choices": [
+      "x² + 10x + 25",
+      "x² − 10x + 25",
+      "x² − 25",
+      "x² + 25"
+    ],
+    "answerIndex": 2,
+    "explanation": "一括號加、一括號減，且兩邊都是 x 與 5，符合 a²−b²：x²−5²=x²−25，±5x 相消。x²+10x+25 是把兩式相加當 (x+5)²；x²−10x+25 則誤當 (x−5)² 去展開；x²+25 則 25 前減號寫成加。兩括號異號時中間 x 項不會留下來。",
+    "steps": [
+      "兩括號：x + 5 與 x − 5，異號配對。",
+      "用平方差 a² − b²。",
+      "得 x² − 25。"
+    ],
+    "commonMistake": "異號配對卻用 (x±5)² 展開，多算出 ±10x 這一項。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s011-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(2x + 1)² 的正確展開為何？",
+    "choices": [
+      "4x² − 4x + 1",
+      "4x² − 1",
+      "4x² + 1",
+      "4x² + 4x + 1"
+    ],
+    "answerIndex": 3,
+    "explanation": "括號內是相加，屬 (a+b)² 型，a=2x，b=1：(2x)²=4x²，2·2x·1=4x，1²=1，合併 4x²+4x+1。4x²−4x+1 是中間 4x 符號反了；4x²+1 則 2ab 整項漏算；4x²−1 則把式子誤當 (2x+1)(2x−1) 平方差。2x 整項平方後首項係數是 4 不是 2，首項 4x² 與中間 4x 都要寫出。",
+    "steps": [
+      "(2x)² = 4x²。",
+      "2·2x·1 = 4x。",
+      "1² = 1，整理成 4x² + 4x + 1。"
+    ],
+    "commonMistake": "2·(2x)·1=4x 漏算或符號寫錯，只剩 4x²+1 或 4x²−4x+1，首項 4x² 不能漏。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s011-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一個是 (3x − 2)² 的展開？",
+    "choices": [
+      "9x² − 12x + 4",
+      "9x² + 12x + 4",
+      "9x² − 4",
+      "9x² + 4"
+    ],
+    "answerIndex": 0,
+    "explanation": "括號內是相減，屬 (a−b)² 型：a=3x，b=2，(3x)²=9x²，−2·3x·2=−12x，2²=4，整理 9x²−12x+4。9x²+12x+4 是中間 −12x 變 +12x；9x²−4 則漏算 2ab 只留首尾；9x²+4 則中間 2ab 整項漏掉。3x 平方得 9x²，中間 −12x 不能漏，3x 平方得 9x²，中間 −12x 不能漏掉。",
+    "steps": [
+      "確認 (3x − 2)² 是減號平方。",
+      "−2·3x·2 = −12x。",
+      "得 9x² − 12x + 4。"
+    ],
+    "commonMistake": "減號平方時中間 −12x 寫成 +12x，或 2ab 整項漏算。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s011-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一個是 (x + 7)(x − 7) 的展開？",
+    "choices": [
+      "x² + 14x + 49",
+      "x² − 49",
+      "x² − 14x + 49",
+      "x² + 49"
+    ],
+    "answerIndex": 1,
+    "explanation": "兩括號 x 同底、7 異號，屬 a²−b² 型，用 x²−7²=x²−49，±7x 相消。x²+14x+49 是按 (x+7)² 算出 +14x；x²−14x+49 則按 (x−7)² 算出 −14x；x²+49 則 49 前減號寫成了加。7 的平方是 49，前面要寫減號，±7x 兩項相加後會完全抵消。",
+    "steps": [
+      "兩括號一正一負，同名 7。",
+      "用 a² − b²。",
+      "得 x² − 49。"
+    ],
+    "commonMistake": "配對異號卻展開成 (x±7)²，多 +14x 或 −14x 這一項。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s011-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(4x + 3)² 應展開成哪一式？",
+    "choices": [
+      "16x² − 9",
+      "16x² − 24x + 9",
+      "16x² + 24x + 9",
+      "16x² + 9"
+    ],
+    "answerIndex": 2,
+    "explanation": "括號內是相加，加號平方 (a+b)²，a=4x，b=3：(4x)²=16x²，2·4x·3=24x，3²=9，得 16x²+24x+9。16x²−9 是把整式當 (4x+3)(4x−3) 平方差；16x²−24x+9 則中間項符號反了；16x²+9 則 2·4x·3 漏算。4x 平方得 16x²，中間 24x 不能漏，首項與中間項都要寫出。",
+    "steps": [
+      "型式 (a + b)²，a = 4x，b = 3。",
+      "2·4x·3 = 24x。",
+      "得 16x² + 24x + 9。"
+    ],
+    "commonMistake": "加號平方卻把 2·4x·3=24x 寫成 −24x，或誤套 a²−b² 漏中間項。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s011-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(5x − 1)(5x + 1) 應展開成哪一式？",
+    "choices": [
+      "25x² − 10x + 1",
+      "25x² + 10x + 1",
+      "25x² + 1",
+      "25x² − 1"
+    ],
+    "answerIndex": 3,
+    "explanation": "5x 同底、1 一正一負，屬 a²−b² 型，套 (5x)²−1²=25x²−1，±5x 相消。25x²−10x+1 是按 (5x−1)² 算；25x²+10x+1 則按 (5x+1)² 算；25x²+1 則 1² 前用了加。兩括號只是順序對調，結果不變，中間 x 項會抵消，首項係數是 25。",
+    "steps": [
+      "兩括號 5x ± 1，異號。",
+      "(5x)² − 1²。",
+      "得 25x² − 1。"
+    ],
+    "commonMistake": "異號配對誤當 (5x±1)² 展開，多出 ±10x 這項。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s011-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一式等於 (x − 1)²？",
+    "choices": [
+      "x² − 2x + 1",
+      "x² + 2x + 1",
+      "x² − 1",
+      "x² + 1"
+    ],
+    "answerIndex": 0,
+    "explanation": "括號內是相減，屬 (a−b)² 型，b=1：x²−2·x·1+1²=x²−2x+1。x²+2x+1 是中間 −2x 寫成 +2x；x²−1 則只算 x²−1² 漏了中間 2ab；x²+1 則 2ab 整項漏掉，只剩首尾。減 1 的平方中間項一定是 −2x，減 1 的平方中間固定是 −2x。",
+    "steps": [
+      "原式 (x − 1)²，減號平方。",
+      "−2·x·1 = −2x。",
+      "得 x² − 2x + 1。"
+    ],
+    "commonMistake": "減 1 的平方時，中間 −2x 寫成 +2x，或 2ab 漏算。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s011-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一式等於 (2x + 3)(2x − 3)？",
+    "choices": [
+      "4x² + 12x + 9",
+      "4x² − 9",
+      "4x² − 12x + 9",
+      "4x² + 9"
+    ],
+    "answerIndex": 1,
+    "explanation": "2x 與 3 異號配對，屬 a²−b² 型，用 (2x)²−3²=4x²−9，±6x 全部抵消。4x²+12x+9 是按 (2x+3)² 展開；4x²−12x+9 則按 (2x−3)² 展開；4x²+9 則末項 9 前減號變加。2x 平方得 4x²，3 平方得 9，2x 與 3 異號配對時中間 x 項不會留下。",
+    "steps": [
+      "兩括號 2x ± 3，平方差型。",
+      "(2x)² − 3²。",
+      "得 4x² − 9。"
+    ],
+    "commonMistake": "平方差型卻按 (2x±3)² 展開，多 ±12x 這一項。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s011-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某式為 (x + 2)²，下列展開何者正確？",
+    "choices": [
+      "x² − 4",
+      "x² − 4x + 4",
+      "x² + 4x + 4",
+      "x² + 4"
+    ],
+    "answerIndex": 2,
+    "explanation": "括號內是相加，加號在括號內，(a+b)²：x²+2·x·2+2²=x²+4x+4。x²−4 是把 (x+2)(x−2) 平方差弄混；x²−4x+4 則中間 4x 寫成 −4x；x²+4 則 2ab 整項漏算。加 2 的平方中間項是 +4x 不是減，加 2 的平方中間項一定是 +4x。",
+    "steps": [
+      "加號平方 (x + 2)²。",
+      "2·x·2 = 4x。",
+      "得 x² + 4x + 4。"
+    ],
+    "commonMistake": "加號平方時 2·x·2=4x 漏算，或中間項符號寫反。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s011-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-multiplication-formulas",
+    "skillId": "formula-mixed-recognition",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一長方形長 (2a + 1) 公分、寬 (2a − 1) 公分，面積展開後為何？",
+    "choices": [
+      "4a² + 4a + 1",
+      "4a² − 4a + 1",
+      "4a² + 1",
+      "4a² − 1"
+    ],
+    "answerIndex": 3,
+    "explanation": "長方形面積=長×寬=(2a+1)(2a−1)，屬 a²−b²：(2a)²−1²=4a²−1，±2a 相消。4a²+4a+1 是把兩式當 (2a+1)²；4a²−4a+1 則當 (2a−1)²；4a²+1 則 1 前減號寫成加。長寬一正一負時可直接用平方差，2a 平方得 4a²，末項 1 前面要寫減號。",
+    "steps": [
+      "面積 = (2a + 1)(2a − 1)。",
+      "辨識平方差型。",
+      "(2a)² − 1² = 4a² − 1。"
+    ],
+    "commonMistake": "長寬異號卻展開成 (2a±1)²，多 ±4a 或弄錯末項符號。",
+    "concept": "混合辨識三種乘法公式：(a+b)²、(a−b)²、(a+b)(a−b)，先看括號結構再選正確展開式，避免公式套錯",
+    "tags": [
+      "多項式",
+      "formula-mixed-recognition",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  },
+  {
+    "questionId": "u10-s012-v001",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一塊矩形土地，東西向長 (x + 4) 公尺、南北向寬 (x + 2) 公尺，面積展開後為何？",
+    "choices": [
+      "x² + 6x + 8",
+      "x² + 8x + 6",
+      "2x² + 6x + 8",
+      "x² + 6x + 6"
+    ],
+    "answerIndex": 0,
+    "explanation": "矩形土地面積=長×寬=(x+4)(x+2)，分配律展開 x²+2x+4x+8，x 項 2x+4x 合併得 6x，整理 x²+6x+8。x²+8x+6 是 x 項合併錯、常數也弄反；2x²+6x+8 則 x² 只應一個卻多留係數 2；x²+6x+6 則常數 8 漏算。展開後記得把同類 x 項合併再寫答案。",
+    "steps": [
+      "面積 = (x + 4)(x + 2)。",
+      "分配律：x² + 2x + 4x + 8。",
+      "合併得 x² + 6x + 8。"
+    ],
+    "commonMistake": "展開後 x 項 2x+4x 合併成 8x 而非 6x，或常數 8 弄錯。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s012-v002",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一張紙切成邊長 (a + 3) 公分的正方形，面積展開後為何？",
+    "choices": [
+      "a² + 3a + 9",
+      "a² + 6a + 9",
+      "a² + 9",
+      "a² + 6a + 6"
+    ],
+    "answerIndex": 1,
+    "explanation": "正方形面積=邊長²=(a+3)²，括號內相加，套用 (a+b)²：a²+2·a·3+9=a²+6a+9。a²+3a+9 只算一次 2ab 的一半；a²+9 則中間 6a 整項漏掉；a²+6a+6 則 3² 只算成 6 而漏平方成 9。正方形面積用邊長平方，不是邊長相加。",
+    "steps": [
+      "面積 = 邊長² = (a + 3)²。",
+      "a² + 2·a·3 + 9。",
+      "得 a² + 6a + 9。"
+    ],
+    "commonMistake": "2·a·3=6a 只算成 3a，或中間項整段漏算只剩 a²+9。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s012-v003",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一塊長方形玻璃，長 (2y − 1) 公分、寬 (2y + 1) 公分，面積展開後為何？",
+    "choices": [
+      "4y² + 4y − 1",
+      "4y² − 4y − 1",
+      "4y² − 1",
+      "4y² + 1"
+    ],
+    "answerIndex": 2,
+    "explanation": "長方形玻璃面積=(2y−1)(2y+1)，一正一負配對，套 (2y)²−1²=4y²−1，±2y 相消。4y²+4y−1 是把兩括號分項相加展開；4y²−4y−1 則符號弄錯；4y²+1 則 1 前減號寫成加。玻璃長寬異號，套用平方差最簡潔。",
+    "steps": [
+      "面積 = (2y − 1)(2y + 1)。",
+      "辨識平方差。",
+      "(2y)² − 1² = 4y² − 1。"
+    ],
+    "commonMistake": "長寬異號配對卻分項相加，多算出 ±4y 這類中間項。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s012-v004",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 m > 5，正方形菜園邊長由 m 公尺縮短為 m − 5 公尺，面積減少多少？",
+    "choices": [
+      "m² − 10m + 25",
+      "5m − 25",
+      "10m + 25",
+      "10m − 25"
+    ],
+    "answerIndex": 3,
+    "explanation": "原正方形面積是m²，縮短後面積為(m−5)²=m²−10m+25。面積減少量要用原面積減新面積，所以m²−(m²−10m+25)=10m−25。m²−10m+25是縮短後的面積；5m−25少算交叉部分；10m+25把括號前的減號分配錯。",
+    "steps": [
+      "原面積為m²。",
+      "新面積為(m−5)²=m²−10m+25。",
+      "原面積減新面積，得到10m−25。"
+    ],
+    "commonMistake": "把縮短後的面積直接當成減少量，沒有用原面積減去新面積。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "基礎概念"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s012-v005",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 x > 2/3，木板長為 3x + 2 公分、寬為 3x − 2 公分，它的面積比 9x² 少多少？",
+    "choices": [
+      "4",
+      "12x",
+      "9x² − 4",
+      "4x"
+    ],
+    "answerIndex": 0,
+    "explanation": "木板面積=(3x+2)(3x−2)=9x²−4，因此它比9x²少4平方公分。12x是把交叉乘積當成面積差；9x²−4是木板本身的面積；4x則把常數2與變數x錯誤相乘。兩個一次項互相抵消後，差值只來自2²。",
+    "steps": [
+      "列出木板面積(3x+2)(3x−2)。",
+      "利用平方差得到9x²−4。",
+      "與9x²比較，得知少4。"
+    ],
+    "commonMistake": "把木板面積本身當成與9x²的差，或把交叉項誤留在式子中。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s012-v006",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一塊矩形草坪，長 (n + 6) 公尺、寬 (n − 1) 公尺，面積展開後為何？",
+    "choices": [
+      "n² + 7n − 6",
+      "n² + 5n − 6",
+      "n² − 5n − 6",
+      "n² + 5n + 6"
+    ],
+    "answerIndex": 1,
+    "explanation": "矩形草坪面積=(n+6)(n−1)，長寬不同號，展開 n²−n+6n−6，合併 n 項 −n+6n=5n，得 n²+5n−6。n²+7n−6 是把 −n+6n 算成 +7n；n²−5n−6 則 6n 符號弄錯；n²+5n+6 則常數 −6 寫成 +6。長加寬不同號，要分項展開再合併。",
+    "steps": [
+      "面積 = (n + 6)(n − 1)。",
+      "n² − n + 6n − 6。",
+      "合併得 n² + 5n − 6。"
+    ],
+    "commonMistake": "展開後 n 項 −n 與 6n 合併錯，算成 7n 或 −5n。正負常數項也要一併檢查。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s012-v007",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "正方形磁磚邊長由 t 公分增加為 t + 8 公分，面積增加多少？",
+    "choices": [
+      "8t + 64",
+      "t² + 16t + 64",
+      "16t + 64",
+      "16t + 8"
+    ],
+    "answerIndex": 2,
+    "explanation": "原正方形面積是t²，邊長增加8公分後，新面積為(t+8)²=t²+16t+64。新面積減原面積後，t²互相抵消，所以增加量是16t+64。8t+64少算一塊交叉區域；新面積本身不是增加量；16t+8沒有把8平方。",
+    "steps": [
+      "原面積為t²。",
+      "新面積為(t+8)²=t²+16t+64。",
+      "新面積減原面積，得到16t+64。"
+    ],
+    "commonMistake": "只把邊長增加量乘一次t，會漏掉另一塊交叉區域與8²。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s012-v008",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一塊長方形桌布，長 (4a + 1) 公分、寬 (4a − 1) 公分，面積展開後為何？",
+    "choices": [
+      "16a² + 8a − 1",
+      "16a² − 8a − 1",
+      "16a² + 1",
+      "16a² − 1"
+    ],
+    "answerIndex": 3,
+    "explanation": "長方形桌布面積=(4a+1)(4a−1)，長寬一正一負，套 (4a)²−1²=16a²−1，±4a 相消。16a²+8a−1 是分項展開多算 a 項；16a²−8a−1 則符號弄錯；16a²+1 則 1 前減號寫成加。桌布長寬異號，平方差比分項乘快。",
+    "steps": [
+      "面積 = (4a + 1)(4a − 1)。",
+      "平方差：(4a)² − 1²。",
+      "得 16a² − 1。"
+    ],
+    "commonMistake": "長寬異號卻分項相乘，多出 ±8a 這類中間項。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s012-v009",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一塊矩形花圃，長 (p − 3) 公尺、寬 (p − 2) 公尺，面積展開後為何？",
+    "choices": [
+      "p² − 5p + 6",
+      "p² − p − 6",
+      "p² + 5p + 6",
+      "p² − 6"
+    ],
+    "answerIndex": 0,
+    "explanation": "矩形花圃面積=(p−3)(p−2)，兩邊都是減號，分配律 p²−2p−3p+6，p 項 −2p−3p=−5p，整理 p²−5p+6。p²−p−6 是 −2p−3p 只算成 −p；p²+5p+6 則 p 項符號全反；p²−6 則常數 6 漏算。兩邊都減時展開會出現兩個負的 p 項。",
+    "steps": [
+      "面積 = (p − 3)(p − 2)。",
+      "p² − 2p − 3p + 6。",
+      "合併得 p² − 5p + 6。"
+    ],
+    "commonMistake": "兩個 p 項 −2p 與 −3p 合併錯，少減一次 3 得 −p。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "應用"
+    ],
+    "estimatedTimeSec": 45
+  },
+  {
+    "questionId": "u10-s012-v010",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一塊正方形告示牌，邊長 (5w − 3) 公分，面積展開後為何？",
+    "choices": [
+      "25w² − 15w + 9",
+      "25w² − 30w + 9",
+      "25w² + 30w + 9",
+      "25w² − 9"
+    ],
+    "answerIndex": 1,
+    "explanation": "正方形告示牌面積=(5w−3)²，邊長含減號，(a−b)²：(5w)²−2·5w·3+9=25w²−30w+9。25w²−15w+9 把 2·5w·3=30w 只算成 15w；25w²−9 則漏算中間 −30w；25w²+30w+9 則中間項符號全反。5w 整項平方得 25w²，再算 2ab，告示牌邊長減 3 時中間項是 −30w。",
+    "steps": [
+      "面積 = (5w − 3)²。",
+      "(5w)² − 2·5w·3 + 9。",
+      "得 25w² − 30w + 9。"
+    ],
+    "commonMistake": "2·5w·3=30w 只算一半得 −15w，或中間 −30w 整項漏掉。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s012-v011",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 b > 5/2，矩形地毯長為 2b + 5 公尺、寬為 2b − 5 公尺，它的面積比 4b² 少多少？",
+    "choices": [
+      "10b",
+      "4b² − 25",
+      "25",
+      "5"
+    ],
+    "answerIndex": 2,
+    "explanation": "地毯面積=(2b+5)(2b−5)=4b²−25，所以它比4b²少25平方公尺。10b來自單一交叉乘積，但正負交叉項會互相抵消；4b²−25是地毯本身的面積；5只是括號中的常數，尚未平方。比較兩個面積時只需看相差的常數25。",
+    "steps": [
+      "列出地毯面積(2b+5)(2b−5)。",
+      "利用平方差得到4b²−25。",
+      "與4b²比較，得知少25。"
+    ],
+    "commonMistake": "把地毯面積直接當成差值，或只看到括號中的5而忘記平方。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "應用"
+    ],
+    "estimatedTimeSec": 75
+  },
+  {
+    "questionId": "u10-s012-v012",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-polynomial-ops",
+    "skillId": "polynomial-literacy-context",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一塊矩形水池，長 (x + 1) 公尺、寬 (x + 9) 公尺，面積展開後為何？",
+    "choices": [
+      "x² + 8x + 9",
+      "x² + 9x + 9",
+      "x² + 10x + 1",
+      "x² + 10x + 9"
+    ],
+    "answerIndex": 3,
+    "explanation": "矩形水池面積=長×寬=(x+1)(x+9)，展開 x²+9x+x+9，x 項合併得 10x，所以是 x²+10x+9。x²+8x+9 是 x 項 9x+x 算成 8x；x²+9x+9 則漏加第二個 x；x²+10x+1 則常數 9 漏算。水池長寬都是加號，分項展開再合併 x 項。",
+    "steps": [
+      "面積 = (x + 1)(x + 9)。",
+      "x² + 9x + x + 9。",
+      "合併得 x² + 10x + 9。"
+    ],
+    "commonMistake": "展開後 9x+x 合併成 8x，或漏加其中一個 x 項。",
+    "concept": "以長方形或正方形面積模型描述邊長代數式，用乘法公式或分配律展開面積式；全部文字描述，不用圖形",
+    "tags": [
+      "多項式",
+      "polynomial-literacy-context",
+      "素養"
+    ],
+    "estimatedTimeSec": 90
+  }
+];
+
+export default QUESTIONS;
