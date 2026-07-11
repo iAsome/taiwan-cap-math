@@ -31,25 +31,47 @@ const ARTIFACTS = [
 ];
 
 const BASELINE_ARTIFACT_HASHES = {
-  "u10-review-dossier.jsonl": "6ef9fc14cf53c95ffaa05e4d540e79546a71b11f14f200e832ded24f12751c72",
-  "u10-distractor-review.md": "1b4972345e0ae2b6327fa27065ac73d8dd64a7eedb613880549e0cca2ba60268",
-  "u10-qa-samples.md": "5f7b19320d199134e869af0a70f9cd5d15e2efb2cf9a1b6f8f40bf12885a78c3",
+  "u10-review-dossier.jsonl": "fff7cb09a3d34ad920be961c7c645ab234faa4e6421a16ee9fc5268dde2dbd1a",
+  "u10-distractor-review.md": "0a42b83632eecf1e129aba98a0f3cabdb88213e0e079abc59b1090a51cdf73c2",
+  "u10-qa-samples.md": "0a1b22cd7d5e98e959b805f47e51cc662b05aeed0197f68e33ca575452eb410a",
 };
 
 const BASELINE_RULE_COUNTS = {
+  "L01 concept-zh-under-80": 0,
+  "L02 fewer-than-5-stepGuide": 0,
+  "L03 fewer-than-2-examples": 0,
+  "L04 fewer-than-4-commonMistakes": 0,
   "L05 example-why-zh-under-40": 0,
+  "L06 lecture-suspicious-machine-residue": 0,
   "L07 lecture-simplified-character": 0,
+  "Q01 explanation-zh-under-30": 0,
+  "Q02 commonMistake-zh-under-12": 0,
+  "Q03 fewer-than-3-steps": 0,
+  "Q04 duplicate-sentence-inside-explanation": 0,
+  "Q05 exact-explanation-shared-across-questions": 0,
   "Q06 normalized-text-structure-group-size-at-least-3": 0,
   "Q07 exact-step-shared-by-at-least-3-questionIds": 0,
   "Q08 suspicious-machine-residue": 0,
+  "Q09 simplified-character": 0,
 };
 
 const PASS_FAIL_RULES = new Set([
+  "L01 concept-zh-under-80",
+  "L02 fewer-than-5-stepGuide",
+  "L03 fewer-than-2-examples",
+  "L04 fewer-than-4-commonMistakes",
   "L05 example-why-zh-under-40",
+  "L06 lecture-suspicious-machine-residue",
   "L07 lecture-simplified-character",
+  "Q01 explanation-zh-under-30",
+  "Q02 commonMistake-zh-under-12",
+  "Q03 fewer-than-3-steps",
+  "Q04 duplicate-sentence-inside-explanation",
+  "Q05 exact-explanation-shared-across-questions",
   "Q06 normalized-text-structure-group-size-at-least-3",
   "Q07 exact-step-shared-by-at-least-3-questionIds",
   "Q08 suspicious-machine-residue",
+  "Q09 simplified-character",
 ]);
 
 const DOSSIER_KEYS = [
