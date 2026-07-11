@@ -192,7 +192,7 @@ function validateExactPatchEntries(entries, entity, allowedFields, perRecordAllo
   }
 }
 
-export function isJsonSerializable(value, seen = new WeakSet()) {
+export function isJsonSerializable(value, stack = new WeakSet()) {
   if (value === undefined) {
     return false;
   }
@@ -215,31 +215,39 @@ export function isJsonSerializable(value, seen = new WeakSet()) {
     return false;
   }
 
-  if (seen.has(value)) {
+  if (stack.has(value)) {
     return false;
   }
 
   if (Array.isArray(value)) {
-    seen.add(value);
-    for (const item of value) {
-      if (!isJsonSerializable(item, seen)) {
-        return false;
+    stack.add(value);
+    try {
+      for (const item of value) {
+        if (!isJsonSerializable(item, stack)) {
+          return false;
+        }
       }
+      return true;
+    } finally {
+      stack.delete(value);
     }
-    return true;
   }
 
   if (!isPlainObject(value)) {
     return false;
   }
 
-  seen.add(value);
-  for (const key of Object.keys(value)) {
-    if (!isJsonSerializable(value[key], seen)) {
-      return false;
+  stack.add(value);
+  try {
+    for (const key of Object.keys(value)) {
+      if (!isJsonSerializable(value[key], stack)) {
+        return false;
+      }
     }
+    return true;
+  } finally {
+    stack.delete(value);
   }
-  return true;
 }
 
 export function validateManifest(manifest) {

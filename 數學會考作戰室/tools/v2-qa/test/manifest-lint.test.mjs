@@ -227,15 +227,50 @@ assert.equal(isJsonSerializable(1n), false);
 assert.equal(isJsonSerializable(Number.NaN), false);
 assert.equal(isJsonSerializable(Number.POSITIVE_INFINITY), false);
 assert.equal(isJsonSerializable(Number.NEGATIVE_INFINITY), false);
-{
-  const cyclic = [];
-  cyclic.push(cyclic);
-  assert.equal(isJsonSerializable(cyclic), false);
-}
 assert.equal(isJsonSerializable(new Date()), false);
 assert.equal(isJsonSerializable(new Map()), false);
 assert.equal(isJsonSerializable(new Set()), false);
 assert.equal(isJsonSerializable({ a: { b: undefined } }), false);
+
+// shared plain object accepted
+{
+  const sharedObject = { value: 1 };
+  assert.equal(isJsonSerializable({ first: sharedObject, second: sharedObject }), true);
+}
+
+// shared nested plain object accepted
+{
+  const inner = { value: 1 };
+  assert.equal(isJsonSerializable({ first: { inner }, second: { inner } }), true);
+}
+
+// shared array accepted
+{
+  const sharedArray = [1, 2];
+  assert.equal(isJsonSerializable({ first: sharedArray, second: sharedArray }), true);
+}
+
+// direct object cycle rejected
+{
+  const direct = {};
+  direct.self = direct;
+  assert.equal(isJsonSerializable(direct), false);
+}
+
+// indirect two-object cycle rejected
+{
+  const a = {};
+  const b = { a };
+  a.b = b;
+  assert.equal(isJsonSerializable(a), false);
+}
+
+// array cycle rejected
+{
+  const cyclicArray = [];
+  cyclicArray.push(cyclicArray);
+  assert.equal(isJsonSerializable(cyclicArray), false);
+}
 
 // duplicate field names rejected
 assert.throws(() =>
