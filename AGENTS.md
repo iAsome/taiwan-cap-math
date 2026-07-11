@@ -23,3 +23,13 @@
 
 - Do not delete official PDFs, `official-data`, or ten-year official download content.
 - Do not delete untracked `tmp_*`, debug logs, or scratch tools until the user confirms the cleanup list.
+
+## Mathematics Content Authority
+
+- `MATH_CONTENT_STANDARD_TW.md` is the sole normative authority for all student-facing mathematics content.
+- `數學會考作戰室/tools/v2-qa/policies/math-tw-v1.mjs` is only the deterministic machine-readable adapter for that document and must not contain an independently editable policy.
+- ChatGPT owns mathematics, pedagogy, terminology, notation, acceptance, migration and release decisions.
+- Executors may modify mathematics content only through an explicitly authorized task with fixed refs and declared file scope.
+- Previously accepted mathematics content is not exempt from a newer policy version or policy hash.
+- A required validation failure prohibits commit and push.
+- Completion means reporting results and stopping; executors must not autonomously begin another task, create a pull request or merge.

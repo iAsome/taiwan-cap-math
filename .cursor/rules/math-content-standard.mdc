@@ -1,0 +1,11 @@
+---
+description: Canonical Taiwan mathematics content authority
+globs: ["**/*math*", "數學會考作戰室/**"]
+alwaysApply: false
+---
+
+`MATH_CONTENT_STANDARD_TW.md` is the sole normative authority for student-facing mathematics.
+`math-tw-v1.mjs` is only its deterministic adapter; do not maintain policy prose there.
+ChatGPT owns mathematics, pedagogy, terminology, notation, acceptance, migration, and release decisions.
+Executors must use fixed refs and declared file scope and must not autonomously change content.
+If required validation fails, do not commit or push. Report the result and stop; do not create a PR or merge.

@@ -1,0 +1,42 @@
+{
+  "taskId": "MATH-V2-GLOBAL-RETRO-AUDIT",
+  "policy": {
+    "id": "math-content-standard-tw",
+    "version": "1.0.0",
+    "hash": "6914efe327bc5cf70480b354c85a4f5a897e3f728b9fef687413ab97dfdfed1a"
+  },
+  "refs": {
+    "sharedQa": "4bdfccf97b35d768224acb79859699143305fee0",
+    "legacyUi": "d4275613e3b4464c3fa7b22b7c9eed807feaa3ff",
+    "units": {
+      "U01": "d4275613e3b4464c3fa7b22b7c9eed807feaa3ff",
+      "U02": "d4275613e3b4464c3fa7b22b7c9eed807feaa3ff",
+      "U03": "d4275613e3b4464c3fa7b22b7c9eed807feaa3ff",
+      "U04": "d4275613e3b4464c3fa7b22b7c9eed807feaa3ff",
+      "U05": "d4275613e3b4464c3fa7b22b7c9eed807feaa3ff",
+      "U06": "d4275613e3b4464c3fa7b22b7c9eed807feaa3ff",
+      "U07": "d4275613e3b4464c3fa7b22b7c9eed807feaa3ff",
+      "U08": "56a55474dbcbdb65309eb83127e5280b358d168f",
+      "U09": "d60bdc261c9210465a0a59ede7028c933e305e7f",
+      "U10": "8c54029901b590ef9dc725c5da8ed0570488cf63"
+    }
+  },
+  "units": ["U01", "U02", "U03", "U04", "U05", "U06", "U07", "U08", "U09", "U10"],
+  "includeLegacy": true,
+  "includeUi": true,
+  "checks": ["schema", "thresholds", "terminology", "units", "notation", "duplicates", "visual", "coverage", "legacy", "ui", "policy"],
+  "expectedInventory": {
+    "U01": { "questions": 60, "lectures": 15, "skills": 15 },
+    "U02": { "questions": 60, "lectures": 15, "skills": 15 },
+    "U03": { "questions": 60, "lectures": 15, "skills": 15 },
+    "U04": { "questions": 168, "lectures": 14, "skills": 14 },
+    "U05": { "questions": 144, "lectures": 12, "skills": 12 },
+    "U06": { "questions": 144, "lectures": 12, "skills": 12 },
+    "U07": { "questions": 144, "lectures": 12, "skills": 12 },
+    "U08": { "questions": 144, "lectures": 12, "skills": 12 },
+    "U09": { "questions": 144, "lectures": 12, "skills": 12 },
+    "U10": { "questions": 144, "lectures": 12, "skills": 12 }
+  },
+  "automaticContentUpdates": false,
+  "automaticLockUpdates": false
+}
