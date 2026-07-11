@@ -29,7 +29,15 @@ export function buildPilotQuestions(unitId, pilotDef, skillMeta, rawQuestions, c
 export function buildPilotLectures(unitId, pilotDef, skillMeta, rawQuestions, content) {
   return pilotDef.skills.map(s => {
     const meta = skillMeta[s.skillId], templates = rawQuestions[s.skillId], contents = content[s.skillId];
-    const examples = templates.slice(0, 2).map(([q], ei) => { const c = contents[ei]; const lec = c.lectureExplanation && countZh(c.lectureExplanation) >= 30 ? c.lectureExplanation : c.explanation; return { question: q, explanation: lec }; });
+    const examples = templates.slice(0, 2).map(([q, choices, answerIndex], ei) => {
+      const c = contents[ei];
+      if (pilotDef.lectureExampleSchema === "canonical-v1") {
+        if (typeof c.lectureExplanation !== "string" || countZh(c.lectureExplanation) < 40) throw new Error(`canonical-v1 lectureExplanation invalid: ${s.skillId} example ${ei + 1}`);
+        return { prompt: q, answer: choices[answerIndex], why: c.lectureExplanation };
+      }
+      const lec = c.lectureExplanation && countZh(c.lectureExplanation) >= 30 ? c.lectureExplanation : c.explanation;
+      return { question: q, explanation: lec };
+    });
     return mkLecture({ unitId, topicId: s.topicId, skillId: s.skillId, title: s.title, concept: meta.lectureConcept, formula: meta.formula, stepGuide: meta.stepGuide, examples, commonMistakes: meta.lectureMistakes, quizLink: { unitId, skillId: s.skillId } });
   });
 }
