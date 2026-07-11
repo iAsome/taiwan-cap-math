@@ -1,27 +1,28 @@
 # Math V2 Source Role Summary
 
-- Commit: `7ecd21928086c767967eb45a1f68ea9d72db6adf`
-- Files inventoried: 298
-- Text/code files fully read: 263
-- Binary assets inventoried: 35
+- Working-tree base commit: `43ed270d06983617b74b7fc5bfe6f7041a31b185`
+- Files inventoried: 458
+- Text/code files fully read: 420
+- Binary assets inventoried: 38
 - Unknown classifications: 0
+- Self-excluded generated outputs: source-inventory.json, source-role-summary.md
 
 ## Roles
 
-- authoritative lecture source: 2
+- authoritative lecture source: 6
 - authoritative question source: 28
 - authoritative syllabus source: 2
-- builder: 14
-- checker: 30
-- generated artifact: 19
-- historical patch tool: 61
+- builder: 16
+- checker: 32
+- generated artifact: 52
+- historical patch tool: 133
 - legacy consumer: 71
-- lock: 1
-- manifest: 6
+- lock: 4
+- manifest: 29
 - official source data: 33
 - policy: 3
-- production consumer: 13
-- review output: 4
-- test: 11
+- production consumer: 21
+- review output: 14
+- test: 14
 
-Every text record was read in full by the inventory builder; binary records were hashed without content extraction.
+Every text record was read in full from the final working tree and assigned its Git blob SHA; binary records were hashed without content extraction. The two inventory outputs are excluded because a file cannot contain its own final hash.

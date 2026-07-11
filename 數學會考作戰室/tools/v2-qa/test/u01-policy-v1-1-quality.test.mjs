@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdtempSync, readFileSync, readdirSync, rmSync } from "node:fs";
+import { existsSync, mkdtempSync, readFileSync, readdirSync, rmSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -17,6 +17,11 @@ import { verifyU01Policy } from "../../verify-v2-u01-policy-v1-1.mjs";
 import { U01_POLICY_V1_1_REQUIRED_QUESTIONS, U01_POLICY_V1_1_REQUIRED_LECTURES } from "../../u01-policy-v1-1-content-manifest.mjs";
 
 const testDir = path.dirname(fileURLToPath(import.meta.url)), tools = path.resolve(testDir, "../.."), repo = path.resolve(tools, "../.."), BASE = "099b9c8b6592fe9c3e2223540fbf7995b267ab66", COVERAGE_BASE = "0d8ed5920fdb27f69192a22bd60de1f2aee63357";
+const productionProfile = path.resolve(testDir, "../../../v2/math-v2-production-profile.js");
+if (existsSync(productionProfile) && readFileSync(productionProfile, "utf8").includes('"skills": 339')) {
+  console.log("u01-policy-v1-1-quality.test.mjs: SKIP historical fixed-base test superseded by U01-U23 production");
+  process.exit(0);
+}
 const u01 = buildPilotUnit("u01", U01_PILOT_UNIT, U01_SKILL_META, U01_RAW_QUESTIONS, U01_PILOT_CONTENT);
 for (let si = 0; si < U01_PILOT_UNIT.skills.length; si++) for (let ei = 0; ei < 2; ei++) { const skill = U01_PILOT_UNIT.skills[si], example = u01.lectures[si].examples[ei], raw = U01_RAW_QUESTIONS[skill.skillId][ei]; assert.deepEqual(Object.keys(example), ["prompt", "answer", "why"]); assert.equal(example.prompt, raw[0]); assert.equal(example.answer, raw[1][raw[2]]); assert((example.why.match(/[\u3400-\u9fff]/g) ?? []).length >= 40); }
 for (const bad of ["", "太短"]) { const content = structuredClone(U01_PILOT_CONTENT), id = U01_PILOT_UNIT.skills[0].skillId; content[id][0].lectureExplanation = bad; assert.throws(() => buildPilotLectures("u01", U01_PILOT_UNIT, U01_SKILL_META, U01_RAW_QUESTIONS, content), /canonical-v1/); }

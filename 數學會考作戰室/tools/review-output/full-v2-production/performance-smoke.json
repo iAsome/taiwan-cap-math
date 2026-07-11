@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-07-11T17:32:26.651Z",
+  "engine": "v2",
+  "measurementsMs": {
+    "initialLoad": 199.74,
+    "openUnitLecture": 107.39,
+    "generateUnitQuiz": 109.85,
+    "generateMock": 93.5,
+    "openPaperHistory": 16.62
+  },
+  "assertions": [
+    {
+      "name": "default V2 loads no legacy banks and no V2 content bank initially",
+      "ok": true
+    },
+    {
+      "name": "lecture bank lazy-loads without question bank or graphics",
+      "ok": true
+    },
+    {
+      "name": "U01 quiz renders one unique question per skill",
+      "ok": true
+    },
+    {
+      "name": "mock renders 25 text-only questions and saves versioned history",
+      "ok": true
+    },
+    {
+      "name": "paper history opens saved V2 paper",
+      "ok": true
+    },
+    {
+      "name": "mobile viewport has no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "legacy rollback is functional and isolated",
+      "ok": true
+    }
+  ],
+  "browserErrors": 0,
+  "initialResourceCount": 18
+}

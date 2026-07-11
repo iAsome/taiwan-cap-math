@@ -13,6 +13,11 @@ import { BASE, PHASE_OUTPUTS, runCheck, withDetachedWorktree } from "../../check
 const testDir = path.dirname(fileURLToPath(import.meta.url));
 const toolsDir = path.resolve(testDir, "../..");
 const repoRoot = path.resolve(toolsDir, "../..");
+const productionProfile = path.resolve(testDir, "../../../v2/math-v2-production-profile.js");
+if (existsSync(productionProfile) && readFileSync(productionProfile, "utf8").includes('"skills": 339')) {
+  console.log("pilot-unit-source-split.test.mjs: SKIP historical fixed-base test superseded by U01-U23 production");
+  process.exit(0);
+}
 const units = [[U01_PILOT_UNIT, U01_RAW_QUESTIONS, U01_PILOT_CONTENT], [U02_PILOT_UNIT, U02_RAW_QUESTIONS, U02_PILOT_CONTENT], [U03_PILOT_UNIT, U03_RAW_QUESTIONS, U03_PILOT_CONTENT]];
 const sets = units.map(([unit, raw, content]) => { const ids = unit.skills.map(x => x.skillId); assert.equal(ids.length, 15); for (const id of ids) { assert.equal(raw[id].length, 4); assert.equal(content[id].length, 4); } return new Set(ids); });
 assert.equal(new Set([...sets[0], ...sets[1], ...sets[2]]).size, 45);

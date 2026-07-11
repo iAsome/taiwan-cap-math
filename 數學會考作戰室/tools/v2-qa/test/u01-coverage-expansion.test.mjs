@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdtempSync, readFileSync, readdirSync, rmSync } from "node:fs";
+import { existsSync, mkdtempSync, readFileSync, readdirSync, rmSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -28,6 +28,11 @@ import { U01_POLICY_V1_1_REQUIRED_QUESTIONS } from "../../u01-policy-v1-1-conten
 
 const testDir = path.dirname(fileURLToPath(import.meta.url));
 const tools = path.resolve(testDir, "../..");
+const productionProfile = path.resolve(testDir, "../../../v2/math-v2-production-profile.js");
+if (existsSync(productionProfile) && readFileSync(productionProfile, "utf8").includes('"skills": 339')) {
+  console.log("u01-coverage-expansion.test.mjs: SKIP historical fixed-base test superseded by U01-U23 production");
+  process.exit(0);
+}
 const repo = path.resolve(tools, "../..");
 const BASE = "0d8ed5920fdb27f69192a22bd60de1f2aee63357";
 const EXPECTED_ORDER = U01_COVERAGE_QUESTIONS.map(q => q.questionId);

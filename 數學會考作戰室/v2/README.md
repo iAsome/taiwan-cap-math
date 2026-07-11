@@ -1,68 +1,66 @@
-# v2 題庫架構（Phase 2A-R1 品質修正）
+# Math V2 正式題庫
 
-v2 **draft** — **尚未上線**，預設網站仍使用 v1 引擎；`index.html` / `app.js` 未接入 v2。
+Math V2 是數學網站的預設 production 內容。V1 僅保留於未出現在一般導覽的 `legacy.html`／`?legacy=1` 回退路由。
 
-## Phase 2A-R1 修正摘要
+## 正式規模
 
-- U01～U03 題庫（180 題）與講義（45 份）重寫：steps / concept / explanation / commonMistake 不得模板化。
-- raw bank `answerIndex` 依 skill 輪替分布（0～3），不再全部固定 A。
-- syllabus 擴充至 **≥330 skills**（U04～U23 僅 syllabus，**未生成題庫**）。
-- `legacyRefs` 逐條對照 v1 `QUIZ_TAXONOMY`；不存在者移出或留空待核。
-- 驗證器加嚴：題庫品質、講義模板句、syllabus 完整度、migration map 真實性。
+- 23 個課綱單元
+- 339 項必修技能
+- 4,068 題純文字四選一題
+- 339 份技能講義
+- 每技能 12 題：`basic`、`standard`、`advanced`、`literacy` 各 3 題
+- 每技能四個答案位置各 3 題
+- 每技能 1 份講義；例題格式固定為 `{ prompt, answer, why }`
 
-## 目前狀態
+每題至少有 45 個中文字的詳解、3 個有順序的步驟與具體常見錯誤。每份講義至少有 80 個中文字的觀念、5 個步驟、2 個完整例題與 4 個常見錯誤。學生內容禁止圖片、SVG、canvas 或隱藏圖形依賴。
 
-| 範圍 | 狀態 |
-|------|------|
-| U01～U03 題庫 | 品質修正版 pilot（每 skill 4 題） |
-| U01～U03 講義 | 品質修正版 pilot |
-| U04～U23 題庫 | **未生成** |
-| U04～U23 syllabus | 完整 coverage（待 Phase 2B 出題） |
-| v1 首頁 / 模考 / 小考 | **不受影響** |
+## 權威來源與產物
 
-## 檔案
+`tools/v2-content/syllabus-source.mjs` 是獨立課綱來源；`tools/v2-content/units/u01` 至 `u23` 是各單元的靜態權威題目與講義來源。`tools/build-v2-all-units.mjs` 是唯一 U01–U23 production builder，生成本資料夾的瀏覽器 bank、blueprint、manifest 與 migration map。
 
-| 檔案 | 用途 |
-|------|------|
-| `math-units-v2.js` | 23 單元總表 |
-| `math-syllabus-v2.js` | skill taxonomy 唯一真相來源 |
-| `math-syllabus-v2-gap-report.md` | 各單元 skill 覆蓋差距報告 |
-| `math-migration-map.js` | v1 → v2 對照 |
-| `math-migration-invalid-legacy-refs.json` | 已移除的無效 legacyRefs |
-| `math-question-schema-v2.js` | 題目 schema（steps ≥3） |
-| `math-question-bank-v2-u01.js`～`u03.js` | pilot 題庫（各 60 題） |
-| `math-lecture-v2-u01.js`～`u03.js` | pilot 講義 |
-| `math-quiz-blueprints-v2.js` | 單元小考藍圖 |
-| `math-engine-v2.js` | v2 測試引擎（非預設） |
+生成檔不可手改。內容修正必須先改權威 source，再重建並通過 source/generated equality。
 
-## 題目 schema（摘要）
+## 網站載入
 
-每題必含：`questionId`、`unitId`、`topicId`、`skillId`、`type: "mc"`、`visualMode: "text-only"`、`choices[4]`、`answerIndex`、`explanation`（≥30 中文字）、`steps`（≥3，禁模板句）、`concept`（一般化觀念）、`commonMistake`（對應該題）。
+預設頁只載入課綱 metadata、production profile、unit manifest、blueprint、V2 engine 與 UI bootstrap。題庫與講義由固定白名單路徑按需載入；初始頁不解析全部 4,068 題。
 
-## 驗證腳本
+- 單元小考：每項技能抽 1 題，20 分鐘，題目與選項依 seed 決定。
+- 模擬考：25 題四選一，80 分鐘，不含非選擇題。
+- 模考權重：依本機 `analysis-data.js` 的 106–115 年官方題本主概念編碼換算。
+- 相同 engine version、content version、blueprint 與 seed 會重現同卷。
 
-在 `數學會考作戰室/` 目錄執行：
+舊 `capMath.completed`、`capMath.quizSignatures.*` 與 `capMath.paperHistory` 不會被清除。V2 完成紀錄使用新增 key；舊完成紀錄會在讀取時映射，新考卷另存 engine/content version 與 seed。
+
+## 建置與驗證
+
+從 repository 根目錄執行：
 
 ```bash
-node tools/build-v2-phase2a.mjs   # 重建 v2 產物
-node tools/verify-v2-all.mjs
-node tools/verify-chapter-quizzes.js   # 確認 v1 不受影響
+node 數學會考作戰室/tools/build-v2-all-units.mjs
+node 數學會考作戰室/tools/verify-v2-all.mjs
+node 數學會考作戰室/tools/run-v2-full-release-gate.mjs
 ```
 
-個別腳本：`verify-v2-syllabus.mjs`、`verify-v2-question-bank.mjs`、`verify-v2-lecture.mjs`、`verify-v2-migration-map.mjs`、`verify-v2-text-only.mjs`。
+內容鎖只可由本次授權 task 明確寫入：
 
-## 測試引擎
-
-載入 v2 腳本後（**勿設為首頁預設**）：
-
-```js
-window.MATH_ENGINE_V2.generateUnitQuiz("u01", 42);
-window.MATH_ENGINE_V2.validateBank();
+```bash
+node 數學會考作戰室/tools/write-v2-production-locks.mjs --task MATH-V2-U01-U23-ONE-SHOT-FULL-PRODUCTION-R1
 ```
 
-## Phase 2B（下一階段）
+驗證模式只讀鎖，不會自動更新。三支早期 U01–U03 fixed-base 測試仍保留作考古證據；偵測到 339-skill production profile 時會明確輸出 historical skip，現在的放行依據是累積 gate。
 
-- **須先經 ChatGPT 審核 Phase 2A-R1 後才可開始。**
-- 生成 U04～U23 完整題庫（每 skill 目標 12 題）
-- 細化 migration map、接入 `?engine=v2` 測試入口
-- 與模考權重、考卷館整合（仍保留 v1）
+最近一次 Chrome 效能 smoke 見 `tools/review-output/full-v2-production/performance-smoke.json`；完整命令、工作目錄、exit code、輸出摘要與時間證據見同目錄的 `validation-evidence.json`。
+
+## 主要檔案
+
+| 路徑 | 用途 |
+|---|---|
+| `math-syllabus-v2.js` | 23 單元與 339 技能的瀏覽器 metadata |
+| `math-question-bank-v2-u01.js`～`u23.js` | 23 份題庫產物 |
+| `math-lecture-v2-u01.js`～`u23.js` | 23 份講義產物 |
+| `math-quiz-blueprints-v2.js` | 23 份單元小考藍圖 |
+| `math-mock-blueprint-v2.js` | 25 題模考領域、難度與單元權重 |
+| `math-v2-unit-manifest.js` | 固定 bank 路徑白名單與內容版本 |
+| `math-engine-v2.js` | 懶載入、組卷、訂正與復原引擎 |
+| `math-v2-content-manifest.json` | inventory 與 source/generated hash |
+| `math-v2-production-locks.json` | 61 個 production SHA-256 鎖 |
