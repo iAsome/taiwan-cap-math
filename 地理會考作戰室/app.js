@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   const { units, domains, strategies, archives, sourcePolicy, officialSources, publisherSources, tipAudits, groups } = window.GEOGRAPHY_DATA;
   const capAnalysis = window.GEOGRAPHY_ANALYSIS;
   const $ = (selector, root = document) => root.querySelector(selector);

@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   const { units, domains, strategies, archives, examFacts, sourcePolicy, officialSources, publisherSources, tipAudits } = window.SCIENCE_DATA;
   const physicsAnalysis = window.PHYSICS_ANALYSIS;
   const $ = (selector, root = document) => root.querySelector(selector);

@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   const { units, domains, strategies, archives, sourcePolicy, officialSources, publisherSources, tipAudits, groups } = window.CIVICS_DATA;
   const capAnalysis = window.CIVICS_ANALYSIS;
   const $ = (selector, root = document) => root.querySelector(selector);

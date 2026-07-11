@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   const { units, domains, strategies, archives, sourcePolicy, officialSources, publisherSources, tipAudits } = window.MATH_DATA;
   const capAnalysis = window.CAP_ANALYSIS;
   const lectureTaxonomy = window.LECTURE_TAXONOMY || {};

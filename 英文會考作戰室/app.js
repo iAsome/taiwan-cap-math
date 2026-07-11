@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   const { units, domains, strategies, archives, sourcePolicy, officialSources, publisherSources, tipAudits, groups } = window.ENGLISH_DATA;
   const capAnalysis = window.ENGLISH_ANALYSIS;
   const $ = (selector, root = document) => root.querySelector(selector);
@@ -173,7 +173,7 @@
     if (state.vocabData || state.vocabLoading) return state.vocabData;
     state.vocabLoading = true;
     try {
-      const res = await fetch(`vocab-3000.json?v=20260708b`);
+      const res = await fetch(`vocab-3000.json?v=20260711a`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       state.vocabData = await res.json();
       return state.vocabData;
