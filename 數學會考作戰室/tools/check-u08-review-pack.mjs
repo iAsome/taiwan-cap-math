@@ -51,6 +51,34 @@ const FINDING_KEYS = new Set([
   "scope", "id", "field", "rule", "evidence", "relatedIds",
 ]);
 
+const TAIWAN_BANNED = ["公釐", "公厘", "厘米", "千米", "操场", "给", "后", "组", "场"];
+
+const EXPECTED_FINDING_COUNTS = {
+  "Q01 explanation-zh-under-30": 0,
+  "Q02 commonMistake-zh-under-12": 0,
+  "Q03 fewer-than-3-steps": 0,
+  "Q04 duplicate-sentence-inside-explanation": 0,
+  "Q05 exact-explanation-shared-across-questions": 0,
+  "Q06 normalized-text-structure-group-size-at-least-3": 0,
+  "Q07 exact-step-shared-by-at-least-3-questionIds": 3,
+  "Q08 suspicious-machine-residue": 0,
+  "Q09 simplified-character": 2,
+  "L01 concept-zh-under-80": 0,
+  "L02 fewer-than-5-stepGuide": 0,
+  "L03 fewer-than-2-examples": 0,
+  "L04 fewer-than-4-commonMistakes": 0,
+  "L05 example-why-zh-under-40": 0,
+  "L06 lecture-suspicious-machine-residue": 0,
+  "L07 lecture-simplified-character": 0,
+};
+
+const STUDENT_FACING_ARTIFACTS = [
+  "u08-review-dossier.jsonl",
+  "u08-distractor-review.md",
+  "u08-qa-samples.md",
+  "u08-quality-findings.jsonl",
+];
+
 function sha256File(filePath) {
   const h = crypto.createHash("sha256");
   h.update(fs.readFileSync(filePath));
@@ -93,6 +121,45 @@ function assertNoApproval(text, label) {
   const body = text.startsWith(NOTICE) ? text.slice(NOTICE.length) : text;
   assert.ok(!/\b(APPROVED FOR RELEASE|RELEASE APPROVED|APPROVED)\b/i.test(body),
     `${label} contains positive approval claim`);
+}
+
+function hasTaiwanBanned(text) {
+  for (const p of TAIWAN_BANNED) if (text.includes(p)) return p;
+  return null;
+}
+
+function scanStudentFacingArtifacts() {
+  for (const f of STUDENT_FACING_ARTIFACTS) {
+    const raw = fs.readFileSync(path.join(OUT, f), "utf8");
+    const hit = hasTaiwanBanned(raw);
+    assert.ok(!hit, `${f} Taiwan banned: ${hit}`);
+  }
+}
+
+function validateFindingCounts(findings) {
+  const counts = new Map();
+  for (const row of findings) {
+    counts.set(row.rule, (counts.get(row.rule) || 0) + 1);
+  }
+
+  for (const [rule, expected] of Object.entries(EXPECTED_FINDING_COUNTS)) {
+    assert.equal(counts.get(rule) || 0, expected, `finding count ${rule}`);
+  }
+
+  const q09 = findings.filter((r) => r.rule === "Q09 simplified-character");
+  assert.equal(q09.length, 2, "Q09 finding count");
+  const q09Ids = q09.map((r) => r.id).sort();
+  assert.deepEqual(q09Ids, ["u08-s010-v007", "u08-s012-v005"], "Q09 question ids");
+  for (const row of q09) {
+    assert.equal(row.evidence, "里", `Q09 evidence for ${row.id}`);
+    const q = loadU08().questions.find((item) => item.questionId === row.id);
+    assert.ok(q, `${row.id} missing from bank`);
+    const blob = [q.text, q.explanation, q.commonMistake, ...q.steps, ...q.choices, q.concept].join("\n");
+    assert.ok(blob.includes("公里"), `${row.id} must contain 公里`);
+  }
+
+  const q10 = findings.filter((r) => r.rule === "Q10 explanation-new-number-token");
+  console.log(`Q10 informational: ${q10.length} findings`);
 }
 
 function validatePack({ questions, lectures }) {
@@ -146,6 +213,8 @@ function validatePack({ questions, lectures }) {
     for (const k of FINDING_KEYS) assert.ok(k in row, `finding missing ${k}`);
     assert.ok(Array.isArray(row.relatedIds), "relatedIds array");
   }
+  validateFindingCounts(findings);
+  scanStudentFacingArtifacts();
 }
 
 function runGenerator() {

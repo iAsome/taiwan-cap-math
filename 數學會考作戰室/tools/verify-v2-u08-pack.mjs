@@ -12,6 +12,7 @@ import { U08_QA1_REQUIRED_LECTURES } from "./u08-qa1-lecture-manifest.mjs";
 import { U08_QA2A_REQUIRED_QUESTIONS } from "./u08-qa2a-question-manifest.mjs";
 import { U08_QA2B1_REQUIRED_QUESTIONS } from "./u08-qa2b1-question-manifest.mjs";
 import { U08_QA2B2_REQUIRED_QUESTIONS } from "./u08-qa2b2-question-manifest.mjs";
+import { U08_QA3_REQUIRED_QUESTIONS } from "./u08-qa3-question-manifest.mjs";
 
 const MACHINE_RESIDUE = [
   "沒錯", "才對", "高帶錯", "數字帶錯", "公式用錯", "計算錯誤",
@@ -33,6 +34,14 @@ const STEP_SENTENCE_RE = /[。！？]$/;
 const DIFF_EXPECTED = { basic: 48, standard: 60, advanced: 24, literacy: 12 };
 const AI_EXPECTED = [36, 36, 36, 36];
 const AI_PER_SKILL = [3, 3, 3, 3];
+const TAIWAN_BANNED = ["公釐", "公厘", "厘米", "千米", "操场", "给", "后", "组", "场"];
+
+const MANIFEST_LAYERS = [
+  { name: "QA2A", data: U08_QA2A_REQUIRED_QUESTIONS, count: 16 },
+  { name: "QA2B1", data: U08_QA2B1_REQUIRED_QUESTIONS, count: 10 },
+  { name: "QA2B2", data: U08_QA2B2_REQUIRED_QUESTIONS, count: 17 },
+  { name: "QA3", data: U08_QA3_REQUIRED_QUESTIONS, count: 13 },
+];
 
 function loadU08() {
   const ctx = vm.createContext({ window: {} });
@@ -119,24 +128,87 @@ function checkQuestions(questions) {
   assert.deepEqual(ai, AI_EXPECTED);
 }
 
-function checkQa2aManifest(questions) {
-  const manifestIds = Object.keys(U08_QA2A_REQUIRED_QUESTIONS);
-  assert.equal(manifestIds.length, 16, "QA2A manifest question count");
+function hasTaiwanBanned(text) {
+  for (const p of TAIWAN_BANNED) if (text.includes(p)) return p;
+  return null;
+}
 
-  const byId = new Map(questions.map((q) => [q.questionId, q]));
-  for (const id of manifestIds) {
-    const matches = questions.filter((q) => q.questionId === id);
-    assert.equal(matches.length, 1, `${id} must appear exactly once`);
+function mergeManifestLayers(layers) {
+  const merged = {};
+  for (const layer of layers) {
+    for (const [id, fields] of Object.entries(layer.data)) {
+      merged[id] = { ...(merged[id] || {}), ...fields };
+    }
+  }
+  return merged;
+}
+
+function questionStudentBlob(q) {
+  return [q.text, q.explanation, q.commonMistake, ...q.steps, ...q.choices, q.concept].join("\n");
+}
+
+function lectureStudentBlob(l) {
+  const parts = [l.title, l.concept, l.formula, ...l.stepGuide, ...l.commonMistakes];
+  for (const ex of l.examples) {
+    parts.push(ex.prompt, ex.why);
+  }
+  return parts.join("\n");
+}
+
+function checkTaiwanTerminology(questions, lectures) {
+  for (const q of questions) {
+    const hit = hasTaiwanBanned(questionStudentBlob(q));
+    assert.ok(!hit, `${q.questionId} Taiwan banned: ${hit}`);
+  }
+  for (const l of lectures) {
+    const hit = hasTaiwanBanned(lectureStudentBlob(l));
+    assert.ok(!hit, `${l.skillId} lecture Taiwan banned: ${hit}`);
   }
 
-  for (const [id, required] of Object.entries(U08_QA2A_REQUIRED_QUESTIONS)) {
+  const bankBlob = JSON.stringify(questions);
+  assert.ok(bankBlob.includes("毫米"), "bank must contain 毫米");
+
+  const byId = new Map(questions.map((q) => [q.questionId, q]));
+  const v011 = byId.get("u08-s010-v011");
+  assert.equal(v011.text, "600毫米等於幾公尺？", "u08-s010-v011 text");
+  assert.ok(v011.explanation.includes("1公尺=100公分=1000毫米"), "u08-s010-v011 mm conversion");
+  assert.ok(v011.explanation.includes("1公分=10毫米"), "u08-s010-v011 cm-mm relation");
+  assert.equal(v011.choices[v011.answerIndex], "0.6", "u08-s010-v011 correctChoice");
+  assert.equal(v011.answerIndex, 2, "u08-s010-v011 answerIndex");
+}
+
+function checkCumulativeManifest(questions) {
+  for (const layer of MANIFEST_LAYERS) {
+    assert.equal(Object.keys(layer.data).length, layer.count, `${layer.name} manifest question count`);
+  }
+
+  const merged = mergeManifestLayers(MANIFEST_LAYERS);
+  const byId = new Map(questions.map((q) => [q.questionId, q]));
+
+  for (const id of Object.keys(merged)) {
+    const matches = questions.filter((q) => q.questionId === id);
+    assert.equal(matches.length, 1, `${id} must appear exactly once`);
     const q = byId.get(id);
-    for (const [field, value] of Object.entries(required)) {
+    for (const [field, value] of Object.entries(merged[id])) {
       assert.equal(
         JSON.stringify(q[field]),
         JSON.stringify(value),
-        `${id}.${field} manifest`
+        `${id}.${field} cumulative manifest`
       );
+    }
+  }
+
+  for (const [id, required] of Object.entries(U08_QA2B1_REQUIRED_QUESTIONS)) {
+    const q = byId.get(id);
+    for (const p of MACHINE_RESIDUE) {
+      assert.ok(!q.explanation.includes(p), `${id} explanation residue: ${p}`);
+    }
+  }
+
+  for (const id of Object.keys(U08_QA2B2_REQUIRED_QUESTIONS)) {
+    const q = byId.get(id);
+    for (const p of MACHINE_RESIDUE) {
+      assert.ok(!q.explanation.includes(p), `${id} explanation residue: ${p}`);
     }
   }
 
@@ -147,63 +219,33 @@ function checkQa2aManifest(questions) {
   assert.ok(bankBlob.includes("組成"), "corrected 組成 must be present");
   assert.ok(bankBlob.includes("從前向後看"), "corrected 從前向後看 must be present");
 
-  const v011 = byId.get("u08-s010-v011");
-  assert.equal(v011.choices[v011.answerIndex], "0.6", "u08-s010-v011 correctChoice");
-}
-
-function checkQa2b1Manifest(questions) {
-  const manifestIds = Object.keys(U08_QA2B1_REQUIRED_QUESTIONS);
-  assert.equal(manifestIds.length, 10, "QA2B1 manifest question count");
-
-  const byId = new Map(questions.map((q) => [q.questionId, q]));
-  for (const id of manifestIds) {
-    const matches = questions.filter((q) => q.questionId === id);
-    assert.equal(matches.length, 1, `${id} must appear exactly once`);
-  }
-
-  for (const [id, required] of Object.entries(U08_QA2B1_REQUIRED_QUESTIONS)) {
-    const q = byId.get(id);
-    for (const [field, value] of Object.entries(required)) {
-      assert.equal(
-        JSON.stringify(q[field]),
-        JSON.stringify(value),
-        `${id}.${field} manifest`
-      );
-    }
-    for (const p of MACHINE_RESIDUE) {
-      assert.ok(!q.explanation.includes(p), `${id} explanation residue: ${p}`);
-    }
-  }
-
   const v010 = byId.get("u08-s007-v010");
   assert.equal(
     v010.text,
     U08_QA2B1_REQUIRED_QUESTIONS["u08-s007-v010"].text,
     "u08-s007-v010 text"
   );
-}
 
-function checkQa2b2Manifest(questions) {
-  const manifestIds = Object.keys(U08_QA2B2_REQUIRED_QUESTIONS);
-  assert.equal(manifestIds.length, 17, "QA2B2 manifest question count");
-
-  const byId = new Map(questions.map((q) => [q.questionId, q]));
-  for (const id of manifestIds) {
-    const matches = questions.filter((q) => q.questionId === id);
-    assert.equal(matches.length, 1, `${id} must appear exactly once`);
-  }
-
-  for (const [id, required] of Object.entries(U08_QA2B2_REQUIRED_QUESTIONS)) {
-    const q = byId.get(id);
-    assert.equal(
-      JSON.stringify(q.explanation),
-      JSON.stringify(required.explanation),
-      `${id}.explanation manifest`
-    );
-    for (const p of MACHINE_RESIDUE) {
-      assert.ok(!q.explanation.includes(p), `${id} explanation residue: ${p}`);
-    }
-  }
+  assert.equal(
+    JSON.stringify(byId.get("u08-s010-v011").explanation),
+    JSON.stringify(U08_QA3_REQUIRED_QUESTIONS["u08-s010-v011"].explanation),
+    "u08-s010-v011.explanation QA3 override"
+  );
+  assert.equal(
+    JSON.stringify(byId.get("u08-s010-v011").steps),
+    JSON.stringify(U08_QA3_REQUIRED_QUESTIONS["u08-s010-v011"].steps),
+    "u08-s010-v011.steps QA3 override"
+  );
+  assert.equal(
+    JSON.stringify(byId.get("u08-s010-v011").commonMistake),
+    JSON.stringify(U08_QA3_REQUIRED_QUESTIONS["u08-s010-v011"].commonMistake),
+    "u08-s010-v011.commonMistake QA3 override"
+  );
+  assert.equal(
+    JSON.stringify(byId.get("u08-s012-v010").explanation),
+    JSON.stringify(U08_QA3_REQUIRED_QUESTIONS["u08-s012-v010"].explanation),
+    "u08-s012-v010.explanation QA3 override"
+  );
 }
 
 function checkLectures(lectures) {
@@ -236,8 +278,7 @@ function checkLectures(lectures) {
 
 const { questions, lectures } = loadU08();
 checkQuestions(questions);
-checkQa2aManifest(questions);
-checkQa2b1Manifest(questions);
-checkQa2b2Manifest(questions);
+checkCumulativeManifest(questions);
+checkTaiwanTerminology(questions, lectures);
 checkLectures(lectures);
 console.log("verify-v2-u08-pack: OK — 144 questions, 12 lectures, all checks passed");
