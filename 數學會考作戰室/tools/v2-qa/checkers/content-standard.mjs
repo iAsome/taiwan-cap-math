@@ -4,6 +4,8 @@ const imageMarkers = ["如圖", "下圖", "上圖", "右圖", "左圖", "附圖"
 const residue = ["TODO", "FIXME", "undefined", "NaN", "[object Object]", "請再核對一次", "依題意即可"];
 const requiredQuestionFields = ["questionId", "unitId", "skillId", "difficulty", "text", "choices", "answerIndex", "explanation", "steps", "commonMistake"];
 const requiredLectureFields = ["unitId", "skillId", "title", "concept", "formula", "stepGuide", "examples", "commonMistakes"];
+const canonicalExampleKeys = ["prompt", "answer", "why"];
+const legacyExampleKeys = ["question", "explanation"];
 
 export function chineseCount(value) {
   return (String(value ?? "").match(zh) ?? []).length;
@@ -35,6 +37,75 @@ export function selectStudentFacing(record, policy) {
 
 function enabled(checks, check) { return checks.has(check); }
 
+function familyOfUnit(unit, policy) {
+  for (const [family, units] of Object.entries(policy.units.families)) if (units.includes(unit)) return family;
+  return null;
+}
+
+function escapeRegex(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+export function classifyChoiceMeasurement(choice, policy) {
+  const text = String(choice ?? "").trim();
+  if (!text) return null;
+  for (const unit of [...policy.units.prose].sort((a, b) => b.length - a.length)) {
+    const match = text.match(new RegExp(`^(\\d+(?:\\.\\d+)?)(?:\\s*)(${escapeRegex(unit)})$`));
+    if (match) return { family: familyOfUnit(unit, policy), presentation: "chinese", unit, confident: true };
+  }
+  for (const unit of [...policy.units.symbols].sort((a, b) => b.length - a.length)) {
+    const match = text.match(new RegExp(`^(\\d+(?:\\.\\d+)?)\\s*(${escapeRegex(unit)})$`));
+    if (match) return { family: familyOfUnit(unit, policy), presentation: "latin", unit, confident: true };
+  }
+  return null;
+}
+
+function exampleSchema(example) {
+  const keys = Object.keys(example ?? {});
+  const canonical = canonicalExampleKeys.every(key => keys.includes(key));
+  const legacy = legacyExampleKeys.every(key => keys.includes(key));
+  const canonicalOnly = canonical && !legacyExampleKeys.some(key => keys.includes(key));
+  const legacyOnly = legacy && !canonicalExampleKeys.some(key => keys.includes(key));
+  if (canonicalOnly) return "canonical";
+  if (legacyOnly) return "legacy";
+  return "mixed";
+}
+
+function auditLectureExamples(lecture, context, policy, findings) {
+  const examples = lecture.examples ?? [];
+  const schemas = examples.map(example => exampleSchema(example));
+  const whyMin = policy.lectureThresholds.exampleWhyChineseMin;
+  if (schemas.some(schema => schema === "mixed")) {
+    examples.forEach((example, i) => {
+      if (exampleSchema(example) === "mixed") findings.push(finding({ ...context, field: `examples[${i}]`, severity: "BLOCKER", category: "lecture", rule: "lecture-example-schema", evidence: `keys=${Object.keys(example).sort().join(",")}` }));
+    });
+    return;
+  }
+  if (new Set(schemas).size > 1) {
+    examples.forEach((example, i) => findings.push(finding({ ...context, field: `examples[${i}]`, severity: "BLOCKER", category: "lecture", rule: "lecture-example-schema", evidence: `keys=${Object.keys(example).sort().join(",")}` })));
+    return;
+  }
+  if (schemas.every(schema => schema === "canonical")) {
+    examples.forEach((example, i) => {
+      if (!String(example.prompt ?? "").trim()) findings.push(finding({ ...context, field: `examples[${i}].prompt`, severity: "BLOCKER", category: "lecture", rule: "lecture-example-schema", evidence: `keys=${Object.keys(example).sort().join(",")}` }));
+      if (!String(example.answer ?? "").trim()) findings.push(finding({ ...context, field: `examples[${i}].answer`, severity: "BLOCKER", category: "lecture", rule: "lecture-example-schema", evidence: `keys=${Object.keys(example).sort().join(",")}` }));
+      if (chineseCount(example.why) < whyMin) findings.push(finding({ ...context, field: `examples[${i}].why`, severity: "MEDIUM", category: "lecture", rule: "lecture-example-why-min", evidence: chineseCount(example.why) }));
+    });
+    return;
+  }
+  if (schemas.every(schema => schema === "legacy")) {
+    const indexes = examples.map((_, i) => i);
+    findings.push(finding({ ...context, field: "examples", severity: "MEDIUM", category: "lecture", rule: "legacy-lecture-example-schema", evidence: `count=${examples.length};indexes=${indexes.join(",")}` }));
+    examples.forEach((example, i) => {
+      if (chineseCount(example.explanation) < whyMin) findings.push(finding({ ...context, field: `examples[${i}].explanation`, severity: "MEDIUM", category: "lecture", rule: "lecture-example-explanation-min", evidence: chineseCount(example.explanation) }));
+    });
+    return;
+  }
+  examples.forEach((example, i) => {
+    if (exampleSchema(example) === "mixed") findings.push(finding({ ...context, field: `examples[${i}]`, severity: "BLOCKER", category: "lecture", rule: "lecture-example-schema", evidence: `keys=${Object.keys(example).sort().join(",")}` }));
+  });
+}
+
 function textChecks(value, context, policy, findings, requiresHumanReview, checks) {
   for (const { field, value: text } of strings(value)) {
     if (enabled(checks, "terminology")) {
@@ -49,7 +120,6 @@ function textChecks(value, context, policy, findings, requiresHumanReview, check
     }
     if (enabled(checks, "units")) {
       for (const token of policy.units.prohibited) if (text.includes(token)) findings.push(finding({ ...context, field, severity: "HIGH", category: "units", rule: "prohibited-unit", evidence: token }));
-      for (const unit of policy.units.prose) if (new RegExp(`\\d\\s+${unit}`).test(text)) findings.push(finding({ ...context, field, severity: "MEDIUM", category: "units", rule: "spaced-chinese-unit", evidence: text }));
     }
     if (enabled(checks, "notation")) {
       for (const token of policy.notation.prohibitedVisible) if (text.includes(token)) findings.push(finding({ ...context, field, severity: "MEDIUM", category: "notation", rule: "prohibited-visible-notation", evidence: token }));
@@ -58,22 +128,23 @@ function textChecks(value, context, policy, findings, requiresHumanReview, check
         requiresHumanReview.push(finding({ ...context, field, severity: "MEDIUM", category: "notation", rule: "ambiguous-numeric-x-review", evidence: text, kind: "requiresHumanReview" }));
       }
     }
-    if (enabled(checks, "duplicates")) for (const token of residue) if (text.includes(token)) findings.push(finding({ ...context, field, severity: "LOW", category: "residue", rule: "machine-residue", evidence: token }));
+    if (enabled(checks, "duplicates")) for (const token of residue) if (text.includes(token)) findings.push(finding({ ...context, field, severity: "MEDIUM", category: "residue", rule: "machine-residue", evidence: token }));
   }
 }
 
-function unitPresentation(choices, context, policy, findings) {
-  const groups = choices.map(choice => {
-    const text = String(choice);
-    return {
-      chinese: policy.units.prose.some(unit => text.includes(unit)),
-      latin: policy.units.symbols.some(unit => new RegExp(`(?:^|\\d\\s*)${unit.replace(/[\u00b2\u00b3]/g, "\\$&")}(?:$|\\b)`).test(text))
-    };
-  });
-  if (groups.some(x => x.chinese) && groups.some(x => x.latin)) findings.push(finding({ ...context, field: "choices", severity: "MEDIUM", category: "units", rule: "mixed-unit-presentation", evidence: choices.join(" | ") }));
-  const tokens = Object.entries(policy.units.families).flatMap(([family, units]) => units.map(unit => ({ family, unit }))).sort((a, b) => b.unit.length - a.unit.length);
-  const families = choices.map(choice => tokens.find(item => String(choice).includes(item.unit))?.family);
-  if (families.every(Boolean) && new Set(families).size > 1) findings.push(finding({ ...context, field: "choices", severity: "MEDIUM", category: "units", rule: "mixed-unit-dimensions", evidence: choices.join(" | ") }));
+function unitPresentation(choices, context, policy, findings, requiresHumanReview) {
+  const classifications = choices.map(choice => classifyChoiceMeasurement(choice, policy));
+  const confident = classifications.filter(Boolean);
+  if (confident.some(item => item.presentation === "chinese") && confident.some(item => item.presentation === "latin")) {
+    findings.push(finding({ ...context, field: "choices", severity: "MEDIUM", category: "units", rule: "mixed-unit-presentation", evidence: choices.join(" | ") }));
+  }
+  if (classifications.every(Boolean) && new Set(classifications.map(item => item.family)).size > 1) {
+    const families = classifications.map(item => item.family).join(",");
+    requiresHumanReview.push(finding({
+      ...context, field: "choices", severity: "MEDIUM", category: "units", rule: "mixed-unit-dimensions-review",
+      evidence: `${choices.join(" | ")} :: families=${families}`, kind: "requiresHumanReview"
+    }));
+  }
 }
 
 function duplicateSentences(text) {
@@ -97,14 +168,14 @@ export function auditQuestionBank({ unit, path, questions, policy, checks = new 
     }
     if (enabled(checks, "duplicates")) {
       if (Array.isArray(q.steps) && new Set(q.steps).size !== q.steps.length) mechanical.push(finding({ ...context, field: "steps", severity: "MEDIUM", category: "residue", rule: "duplicate-exact-step", evidence: q.steps.join(" | ") }));
-      for (const sentence of duplicateSentences(q.explanation)) mechanical.push(finding({ ...context, field: "explanation", severity: "LOW", category: "residue", rule: "duplicate-explanation-sentence", evidence: sentence }));
+      for (const sentence of duplicateSentences(q.explanation)) mechanical.push(finding({ ...context, field: "explanation", severity: "MEDIUM", category: "residue", rule: "duplicate-explanation-sentence", evidence: sentence }));
     }
     if (enabled(checks, "visual") && imageMarkers.some(marker => String(q.text).includes(marker)) && !q.visual && q.visualMode !== "visual") {
       mechanical.push(finding({ ...context, field: "text", severity: "MEDIUM", category: "visual", rule: "undeclared-image-dependency", evidence: q.text }));
       requiresHumanReview.push(finding({ ...context, field: "text", severity: "MEDIUM", category: "visual", rule: "undeclared-image-dependency-review", evidence: q.text, kind: "requiresHumanReview" }));
     }
     textChecks(selectStudentFacing(q, policy), context, policy, mechanical, requiresHumanReview, checks);
-    if (enabled(checks, "units") && Array.isArray(q.choices)) unitPresentation(q.choices, context, policy, mechanical);
+    if (enabled(checks, "units") && Array.isArray(q.choices)) unitPresentation(q.choices, context, policy, mechanical, requiresHumanReview);
     if (/^下列何者正確？?$/.test(String(q.text).trim())) requiresHumanReview.push(finding({ ...context, field: "text", severity: "MEDIUM", category: "stem", rule: "generic-stem-review", evidence: q.text, kind: "requiresHumanReview" }));
     const levels = skillDifficulty.get(q.skillId) ?? new Set(); levels.add(q.difficulty); skillDifficulty.set(q.skillId, levels);
   }
@@ -127,7 +198,7 @@ export function auditLectureBank({ unit, path, lectures, policy, checks = new Se
       if (!Array.isArray(lecture.stepGuide) || lecture.stepGuide.length < t.stepGuideMin) mechanical.push(finding({ ...context, field: "stepGuide", severity: "MEDIUM", category: "lecture", rule: "lecture-step-guide-min", evidence: lecture.stepGuide?.length ?? 0 }));
       if (!Array.isArray(lecture.examples) || lecture.examples.length < t.examplesMin) mechanical.push(finding({ ...context, field: "examples", severity: "MEDIUM", category: "lecture", rule: "lecture-examples-min", evidence: lecture.examples?.length ?? 0 }));
       if (!Array.isArray(lecture.commonMistakes) || lecture.commonMistakes.length < t.commonMistakesMin) mechanical.push(finding({ ...context, field: "commonMistakes", severity: "MEDIUM", category: "lecture", rule: "lecture-common-mistakes-min", evidence: lecture.commonMistakes?.length ?? 0 }));
-      (lecture.examples ?? []).forEach((example, i) => { if (chineseCount(example.why) < t.exampleWhyChineseMin) mechanical.push(finding({ ...context, field: `examples[${i}].why`, severity: "MEDIUM", category: "lecture", rule: "lecture-example-why-min", evidence: chineseCount(example.why) })); });
+      auditLectureExamples(lecture, context, policy, mechanical);
     }
     textChecks(selectStudentFacing(lecture, policy), context, policy, mechanical, requiresHumanReview, checks);
   }
@@ -149,4 +220,11 @@ export function mergeAuditResults(results) {
     mechanical: sortFindings(results.flatMap(result => result.mechanical)),
     requiresHumanReview: sortFindings(results.flatMap(result => result.requiresHumanReview))
   };
+}
+
+export function isBlockingMechanicalFinding(finding, policy) {
+  if (finding.kind !== "mechanical") return false;
+  if (policy.severityPolicy.alwaysBlocking.includes(finding.severity)) return true;
+  if (finding.severity === "MEDIUM" && policy.severityPolicy.conditionalMediumCategories.includes(finding.category)) return true;
+  return false;
 }

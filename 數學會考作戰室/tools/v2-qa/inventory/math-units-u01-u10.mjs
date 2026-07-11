@@ -1,6 +1,6 @@
 const integrated = "d4275613e3b4464c3fa7b22b7c9eed807feaa3ff";
 export const sharedQaRef = "4bdfccf97b35d768224acb79859699143305fee0";
-export const legacyUiRef = integrated;
+export const legacyUiRef = "d7deac3c8ea77ae2e7f1c9ab95c6898ce6fc98d6";
 export const legacySourcePaths = ["數學會考作戰室/quiz-taxonomy.js", "數學會考作戰室/quiz-variant-bank.js", "數學會考作戰室/lecture-taxonomy.js", "數學會考作戰室/questions.js"];
 export const uiPaths = ["數學會考作戰室/index.html", "數學會考作戰室/app.js"];
 

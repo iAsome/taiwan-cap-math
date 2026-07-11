@@ -1,7 +1,7 @@
 # Math Content Standard TW v1
 
 Policy ID: `math-content-standard-tw`
-Policy version: `1.0.0`
+Policy version: `1.1.0`
 
 This document is the sole normative authority for all student-facing mathematics content in this repository. The machine adapter identifies deterministic checks but does not replace this document.
 
@@ -25,10 +25,11 @@ This document is the sole normative authority for all student-facing mathematics
 1. Canonical Taiwan prose units are 公里, 公尺, 公分, 毫米, 平方公尺, 平方公分, 立方公尺, 立方公分, 公升, 毫升, 公斤, 公克, and 毫克.
 2. Canonical symbols are `km`, `m`, `cm`, `mm`, `m²`, `cm²`, `m³`, `cm³`, `L`, `mL`, `kg`, `g`, and `mg`.
 3. Student-facing content MUST NOT use 公釐, 公厘, 厘米, 千米, 平方厘米, 立方厘米, 平米, or 千克.
-4. Chinese prose units MUST attach directly to the number, for example `3公尺`.
-5. Latin symbols MAY be used in formulas and choices. Parallel choices MUST NOT mix Chinese unit names and Latin symbols.
+4. A zero-width attachment or one ordinary space between a number and a Chinese prose unit are both accepted, for example `3公尺` and `3 公尺`. Unit spacing alone MUST NOT produce a mechanical or human-review finding, and existing spacing MUST NOT be automatically rewritten.
+5. Latin symbols MAY be used in formulas and choices. Parallel choices MUST NOT mix Chinese unit names and Latin symbols when unit classification is confident.
 6. Latin-symbol spacing in prose MUST be internally consistent. Version 1 MUST NOT destructively normalize spacing.
-7. Quantities and choices MUST use compatible dimensions, precision, and unit type.
+7. Latin unit symbols MUST be detected token-aware. A lowercase `m`, `m²`, or similar symbol embedded in an algebraic expression MUST NOT be classified as a metre or area unit. Compact Latin forms without a space are units only when the complete trimmed choice is a standalone numeric quantity followed by one supported unit symbol.
+8. Parallel choices SHOULD normally use the same quantity dimension. Mixed length, area, volume, or mass dimensions MAY be used as deliberate distractors when the skill tests recognition of the requested quantity. Mixed dimensions are not automatically incorrect; a confidently detected mixed-dimension choice set becomes a targeted human-review candidate, not a mechanical violation. ChatGPT decides whether each candidate is pedagogically justified.
 
 ## 4. Mathematical Notation
 
@@ -69,9 +70,10 @@ This document is the sole normative authority for all student-facing mathematics
 2. `concept` MUST contain at least 80 Chinese characters.
 3. `stepGuide` MUST contain at least five ordered entries.
 4. Every lecture MUST contain at least two examples and four plausible common mistakes.
-5. Every example prompt and answer MUST be correct, and every example `why` MUST contain at least 40 Chinese characters.
-6. Formulas MUST state necessary conditions and MUST NOT be overgeneralized.
-7. Lecture prose MUST NOT copy question explanations as padding.
+5. Every lecture example MUST use the canonical structure `{ prompt, answer, why }`. `prompt` and `answer` MUST be nonempty student-facing strings, and `why` MUST contain at least 40 Chinese characters.
+6. The transitional legacy structure `{ question, explanation }` remains release-blocking while reachable. When every example in a lecture consistently uses that legacy structure, emit exactly one lecture-level schema finding and evaluate each legacy `explanation` as provisional derivation text. A missing `why` MUST NOT be reported when a legacy `explanation` is present. Mixed or malformed example schemas MUST fail closed.
+7. Formulas MUST state necessary conditions and MUST NOT be overgeneralized.
+8. Lecture prose MUST NOT copy question explanations as padding.
 
 ## 8. Residue, Legacy, And UI
 
@@ -84,7 +86,7 @@ This document is the sole normative authority for all student-facing mathematics
 
 1. BLOCKER findings always block.
 2. HIGH findings always block.
-3. MEDIUM findings block when related to correctness, terminology, units, notation, stem completeness, unique answers, distractor truthfulness, hidden visual dependency, or curriculum scope.
+3. MEDIUM findings block when related to correctness, terminology, units, notation, stem completeness, unique answers, distractor truthfulness, explanations, steps, lectures, coverage, residue, hidden visual dependency, or curriculum scope.
 4. LOW findings are recorded as debt unless they cause ambiguity or misinformation.
 5. A release gate MUST fail closed on malformed policy, task, ref, bank, or internal checker errors.
 6. Policy findings are audit results, not runner crashes. No checker may automatically alter content or declare acceptance.

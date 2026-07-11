@@ -3,7 +3,7 @@ const symbols = ["km", "m", "cm", "mm", "m²", "cm²", "m³", "cm³", "L", "mL",
 
 export const policy = Object.freeze({
   id: "math-content-standard-tw",
-  version: "1.0.0",
+  version: "1.1.0",
   documentPath: "MATH_CONTENT_STANDARD_TW.md",
   authority: ["taiwan-12-year-curriculum", "official-cap", "moe-terminology", "legal-si", "full-score-objective"],
   studentFacingFields: ["title", "text", "choices", "concept", "formula", "explanation", "steps", "commonMistake", "stepGuide", "examples", "commonMistakes", "label", "description"],
@@ -23,7 +23,7 @@ export const policy = Object.freeze({
       mass: ["公斤", "公克", "毫克", "kg", "g", "mg"]
     },
     prohibited: ["公釐", "公厘", "厘米", "千米", "平方厘米", "立方厘米", "平米", "千克"],
-    chineseAttachToNumber: true,
+    chineseNumberSpacing: "optional-zero-or-one-space",
     parallelChoicesMustNotMixPresentation: true,
     normalizeLatinSpacing: false
   },
@@ -38,10 +38,11 @@ export const policy = Object.freeze({
   },
   questionThresholds: { explanationChineseMin: 45, commonMistakeChineseMin: 12, stepsMin: 3 },
   lectureThresholds: { conceptChineseMin: 80, stepGuideMin: 5, examplesMin: 2, commonMistakesMin: 4, exampleWhyChineseMin: 40 },
+  lectureExampleSchema: { canonical: ["prompt", "answer", "why"], legacy: ["question", "explanation"] },
   coverage: { advancedPerSkillMin: 1, literacyPerSkillMin: 1 },
   severityPolicy: {
     alwaysBlocking: ["BLOCKER", "HIGH"],
-    conditionalMediumCategories: ["correctness", "terminology", "units", "notation", "stem", "unique-answer", "distractor", "visual", "scope"],
+    conditionalMediumCategories: ["correctness", "terminology", "units", "notation", "stem", "unique-answer", "distractor", "explanation", "steps", "lecture", "coverage", "residue", "visual", "scope"],
     lowDefault: "debt-unless-ambiguous-or-misleading"
   },
   legacyPolicy: { releaseBlockingWhileReachable: true, generatedSameStandard: true, englishInstructionRequiresTraditionalChinese: true },

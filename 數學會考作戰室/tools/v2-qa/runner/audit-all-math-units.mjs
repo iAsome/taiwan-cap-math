@@ -9,7 +9,7 @@ import policy from "../policies/math-tw-v1.mjs";
 import { hashPolicy, stableSerialize } from "../policies/policy-hash.mjs";
 import inventory from "../inventory/math-units-u01-u10.mjs";
 import { validateTask } from "../tasks/schema.mjs";
-import { auditLectureBank, auditQuestionBank, auditSourceText, mergeAuditResults } from "../checkers/content-standard.mjs";
+import { auditLectureBank, auditQuestionBank, auditSourceText, isBlockingMechanicalFinding, mergeAuditResults } from "../checkers/content-standard.mjs";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../../../");
 
@@ -44,13 +44,20 @@ function countBy(items, field) {
   return Object.fromEntries(Object.entries(counts).sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0));
 }
 
-function findingSummary(unit, findings) {
+function blockingSummary(findings, policy) {
+  const blocking = findings.filter(item => isBlockingMechanicalFinding(item, policy));
+  return { blockingMechanicalCount: blocking.length, blockingMechanicalByCategory: countBy(blocking, "category") };
+}
+
+function findingSummary(unit, findings, policy) {
   const mechanical = findings.mechanical.filter(item => item.unit === unit);
   const targeted = findings.requiresHumanReview.filter(item => item.unit === unit);
+  const blocking = blockingSummary(mechanical, policy);
   return {
     mechanicalBySeverity: countBy(mechanical, "severity"),
     mechanicalByCategory: countBy(mechanical, "category"),
-    targetedHumanReviewCount: targeted.length
+    targetedHumanReviewCount: targeted.length,
+    ...blocking
   };
 }
 
@@ -79,15 +86,17 @@ export function runAudit({ taskPath, outputPath } = {}) {
   if (task.includeUi) for (const repoPath of inventory.uiPaths) results.push(auditSourceText({ path: repoPath, text: readGit(task.refs.legacyUi, repoPath), policy, unit: "UI", checks }));
   const merged = mergeAuditResults(results);
   const scopes = [...task.units, ...(task.includeLegacy ? ["LEGACY"] : []), ...(task.includeUi ? ["UI"] : [])];
+  const totalsBlocking = blockingSummary(merged.mechanical, policy);
   const summary = {
     taskId: task.taskId,
     policy: { id: policy.id, version: policy.version, hash: policyHash },
     inventory: unitInventory,
-    findingsByScope: Object.fromEntries(scopes.map(unit => [unit, findingSummary(unit, merged)])),
+    findingsByScope: Object.fromEntries(scopes.map(unit => [unit, findingSummary(unit, merged, policy)])),
     totals: {
       mechanicalBySeverity: countBy(merged.mechanical, "severity"),
       mechanicalByCategory: countBy(merged.mechanical, "category"),
-      targetedHumanReviewCount: merged.requiresHumanReview.length
+      targetedHumanReviewCount: merged.requiresHumanReview.length,
+      ...totalsBlocking
     },
     semanticDisclaimer: "Mechanical checks do not prove mathematical or pedagogical correctness; semantic acceptance remains owned by ChatGPT.",
     findings: merged
@@ -104,6 +113,8 @@ export function main(argv = process.argv.slice(2)) {
   for (const [unit, counts] of Object.entries(result.summary.inventory)) console.log(`${unit}: ${counts.questions} questions, ${counts.lectures} lectures, ${counts.skills} skills`);
   console.log(`Mechanical findings by severity: ${JSON.stringify(result.summary.totals.mechanicalBySeverity)}`);
   console.log(`Mechanical findings by category: ${JSON.stringify(result.summary.totals.mechanicalByCategory)}`);
+  console.log(`Blocking mechanical findings: ${result.summary.totals.blockingMechanicalCount}`);
+  console.log(`Blocking mechanical findings by category: ${JSON.stringify(result.summary.totals.blockingMechanicalByCategory)}`);
   console.log(`Targeted human-review candidates: ${result.summary.totals.targetedHumanReviewCount}`);
   console.log(result.json.trim());
 }
