@@ -1,0 +1,66 @@
+[
+  {
+    "questionIds": [
+      "u01-s004-v002",
+      "u01-s006-v004"
+    ],
+    "heuristic": "number-normalized-stem",
+    "disposition": "accepted-historical-human-review",
+    "rationale": "ChatGPT previously accepted both generic stems because each choice is a complete proposition and each record has exactly one defensible answer."
+  },
+  {
+    "questionIds": [
+      "u01-s005-v002",
+      "u01-s005-v003"
+    ],
+    "heuristic": "number-normalized-stem",
+    "disposition": "reviewed-distinct-mathematical-case",
+    "rationale": "The zero case is self-opposite, so it tests a boundary case rather than a number substitution."
+  },
+  {
+    "questionIds": [
+      "u01-s006-v002",
+      "u01-s006-v003"
+    ],
+    "heuristic": "number-normalized-stem",
+    "disposition": "reviewed-distinct-mathematical-case",
+    "rationale": "Absolute value at zero is a boundary case distinct from the distance of a nonzero value."
+  },
+  {
+    "questionIds": [
+      "u01-s008-v001",
+      "u01-s008-v004",
+      "u01-s011-v004"
+    ],
+    "heuristic": "number-normalized-stem",
+    "disposition": "reviewed-distinct-mathematical-case",
+    "rationale": "The records test unlike signs, additive inverses, and exponent precedence; normalization erased the decisive operators."
+  },
+  {
+    "questionIds": [
+      "u01-s009-v001",
+      "u01-s009-v004"
+    ],
+    "heuristic": "number-normalized-stem",
+    "disposition": "reviewed-distinct-mathematical-case",
+    "rationale": "The second record uses zero minus a negative number, a sign boundary case rather than a value-only substitution."
+  },
+  {
+    "questionIds": [
+      "u01-s012-v003",
+      "u01-s012-v004"
+    ],
+    "heuristic": "number-normalized-stem",
+    "disposition": "reviewed-distinct-mathematical-case",
+    "rationale": "Exponent one and exponent zero require different exponent laws and yield different conceptual conclusions."
+  },
+  {
+    "questionIds": [
+      "u01-s014-v001",
+      "u01-s014-v002"
+    ],
+    "heuristic": "number-normalized-stem",
+    "disposition": "reviewed-distinct-mathematical-case",
+    "rationale": "Large and sub-unit decimals require opposite decimal-point directions and positive versus negative powers of ten."
+  }
+]
