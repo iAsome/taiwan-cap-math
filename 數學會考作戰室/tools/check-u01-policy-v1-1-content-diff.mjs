@@ -92,7 +92,7 @@ function checkRecords(before, after, idField, manifest, allowed) {
 }
 
 export function validateManifestDiff(manifestQ = U01_POLICY_V1_1_REQUIRED_QUESTIONS, manifestL = U01_POLICY_V1_1_REQUIRED_LECTURES) {
-  const beforeQ = base(qPath, "MATH_QUESTION_BANK_V2_U01"), afterQ = current(qPath, "MATH_QUESTION_BANK_V2_U01");
+  const beforeQ = base(qPath, "MATH_QUESTION_BANK_V2_U01"), afterQ = current(qPath, "MATH_QUESTION_BANK_V2_U01").slice(0, 60);
   const beforeL = base(lPath, "MATH_LECTURE_V2_U01"), afterL = current(lPath, "MATH_LECTURE_V2_U01");
   checkRecords(beforeQ, afterQ, "questionId", manifestQ, qAllowed);
   checkRecords(beforeL, afterL, "skillId", manifestL, lAllowed);
@@ -101,12 +101,17 @@ export function validateManifestDiff(manifestQ = U01_POLICY_V1_1_REQUIRED_QUESTI
 export { checkRecords, qAllowed, lAllowed };
 
 export function runContentDiffCheck() {
-  const beforeQ = base(qPath, "MATH_QUESTION_BANK_V2_U01"), afterQ = current(qPath, "MATH_QUESTION_BANK_V2_U01");
+  const beforeQ = base(qPath, "MATH_QUESTION_BANK_V2_U01"), afterQAll = current(qPath, "MATH_QUESTION_BANK_V2_U01");
   const beforeL = base(lPath, "MATH_LECTURE_V2_U01"), afterL = current(lPath, "MATH_LECTURE_V2_U01");
-  assert.equal(afterQ.length, 60); assert.equal(afterL.length, 15);
+  assert(afterQAll.length >= 60);
+  const afterQ = afterQAll.slice(0, 60);
+  const appendedQuestionCount = afterQAll.length - 60;
+  assert.equal(afterL.length, 15);
   validateManifestDiff();
   const questions = checkRecords(beforeQ, afterQ, "questionId", U01_POLICY_V1_1_REQUIRED_QUESTIONS, qAllowed);
   const lectures = checkRecords(beforeL, afterL, "skillId", U01_POLICY_V1_1_REQUIRED_LECTURES, lAllowed);
+  assert.equal(appendedQuestionCount, 29);
+  for (const q of afterQAll.slice(60)) assert.equal(q.questionId in U01_POLICY_V1_1_REQUIRED_QUESTIONS, false, `${q.questionId} in old manifest`);
   assert.equal(questions.records, 60); assert.equal(questions.fields, 121); assert.equal(lectures.records, 15); assert.equal(lectures.fields, 62);
   assert.equal(Object.values(U01_POLICY_V1_1_REQUIRED_QUESTIONS).filter(x => "explanation" in x).length, 51);
   assert.equal(Object.values(U01_POLICY_V1_1_REQUIRED_QUESTIONS).filter(x => "commonMistake" in x).length, 60);
@@ -119,10 +124,10 @@ export function runContentDiffCheck() {
   const diversity = assertProseQuality(afterQ, afterL);
   for (const uid of ["u02", "u03"]) for (const kind of ["question-bank", "lecture"]) { const p = `數學會考作戰室/v2/math-${kind}-v2-${uid}.js`; assert(readFileSync(path.join(repoRoot, p)).equals(baseBytes(p)), `${p} changed`); }
   for (const uid of ["u02", "u03"]) { const p = `數學會考作戰室/tools/v2-${uid}-pilot-source.mjs`; assert(readFileSync(path.join(repoRoot, p)).equals(baseBytes(p)), `${p} changed`); }
-  return { questionRecords: 60, explanationChanges: 51, commonMistakeChanges: 60, textChanges: 3, stepsChanges: 3, conceptChanges: 4, lectureRecords: 15, lectureFieldChanges: 62, lectureConceptChanges: 15, lectureStepGuideChanges: 15, lectureExamplesChanges: 15, lectureCommonMistakesChanges: 15, lectureFormulaChanges: 2, diversity };
+  return { questionRecords: 60, explanationChanges: 51, commonMistakeChanges: 60, textChanges: 3, stepsChanges: 3, conceptChanges: 4, lectureRecords: 15, lectureFieldChanges: 62, lectureConceptChanges: 15, lectureStepGuideChanges: 15, lectureExamplesChanges: 15, lectureCommonMistakesChanges: 15, lectureFormulaChanges: 2, diversity, appendedQuestionCount };
 }
 
 if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url) {
   const r = runContentDiffCheck();
-  console.log(`changed question records ${r.questionRecords}; explanation ${r.explanationChanges}; commonMistake ${r.commonMistakeChanges}; text ${r.textChanges}; steps ${r.stepsChanges}; concept ${r.conceptChanges}; lecture records ${r.lectureRecords}; lecture fields ${r.lectureFieldChanges}; repeated fragments 0`);
+  console.log(`changed question records ${r.questionRecords}; explanation ${r.explanationChanges}; commonMistake ${r.commonMistakeChanges}; text ${r.textChanges}; steps ${r.stepsChanges}; concept ${r.conceptChanges}; lecture records ${r.lectureRecords}; lecture fields ${r.lectureFieldChanges}; repeated fragments 0; appendedQuestionCount ${r.appendedQuestionCount}`);
 }
