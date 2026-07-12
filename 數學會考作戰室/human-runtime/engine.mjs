@@ -8,7 +8,7 @@ const difficultyNumber = Object.freeze({ basic: 1, standard: 2, literacy: 3, adv
 const gradeName = grade => grade === 7 ? "國一" : grade === 8 ? "國二" : "國三";
 const normPath = value => String(value).replace(/\\/g, "/");
 
-export class HumanReleaseCandidateRuntime {
+export class HumanProductionRuntime {
   constructor({ manifestUrl, syllabusLockUrl, blueprintUrl, expectedContentVersion, loadJson = browserLoadJson }) {
     Object.assign(this, { manifestUrl, syllabusLockUrl, blueprintUrl, expectedContentVersion, loadJson });
     this.units = new Map(); this.questionById = new Map(); this.skillById = new Map();
@@ -73,26 +73,31 @@ export class HumanReleaseCandidateRuntime {
       answer: question.answerIndex, difficultyBand: question.difficulty,
       difficulty: difficultyNumber[question.difficulty] || 2, ability: abilityByDifficulty[question.difficulty] || "application",
       formula: (skill?.lecture?.formulas || []).map(item => `${item.formula}${item.conditions?.length ? `（${item.conditions.join("；")}）` : ""}`).join("\n"),
-      tip: question.steps?.at(-1) || question.concept || "完戝後回代或檢查條件。",
-      trap: question.commonMistake || "注愝題目條件與符號。", taxonomyTopic: skill?.lecture?.title || skill?.title || question.skillId,
+      tip: question.steps?.at(-1) || question.concept || "完成後回代或檢查條件。",
+      trap: question.commonMistake || "注意題目條件與符號。", taxonomyTopic: skill?.lecture?.title || skill?.title || question.skillId,
       quizLevel: question.difficulty === "literacy" ? "素養" : question.difficulty === "advanced" ? "進階" : "",
       figureUrl: this.figureUrl(question.figureId), contentVersion: this.manifest.contentVersion
     };
   }
   adaptCr(question) {
     const lock = this.lockByUnit.get(question.unitId); const skill = this.skillById.get(question.skillId)?.skill;
-    const answer = (question.fullCreditSolution || []).at(-1) || "依完整解法與評分覝準作答。";
+    const asList = value => Array.isArray(value) ? value : (value ? [value] : []);
+    const solution = question.fullCreditSolution || question.standardSolution || [];
+    const requiredWork = asList(question.requiredWork);
+    const commonErrors = asList(question.commonErrors);
+    const scoringNotes = asList(question.scoringNotes);
+    const answer = solution.at(-1) || "依完整解法與評分標準作答。";
     return {
       ...question, type: "cr", text: question.prompt, answer, v2UnitId: question.unitId, unitId: lock.numericId,
       difficultyBand: question.difficulty, difficulty: question.difficulty === "advanced" ? 4 : 3,
       ability: question.difficulty === "advanced" ? "analysis" : "application",
-      explanation: (question.scoringNotes || []).join(" ") || "依策略革切性與表靔完整性評分。",
-      concept: (question.requiredWork || []).join("；"), steps: question.fullCreditSolution || [],
+      explanation: scoringNotes.join(" ") || "依策略正確性與表達完整性評分。",
+      concept: requiredWork.join("；"), steps: solution,
       rubric: (question.rubric || []).map(item => [String(item.score), item.criteria]),
       formula: (skill?.lecture?.formulas || []).map(item => item.formula).join("\n"),
-      tip: (question.requiredWork || []).at(-1) || "寫出完整推導與絝論。",
-      trap: (question.commonErrors || []).join("；") || "坪寫答案丝能呈睾解題能力。",
-      taxonomyTopic: skill?.lecture?.title || question.skillId, quizLevel: "非靸", figureUrl: this.figureUrl(question.figureId),
+      tip: requiredWork.at(-1) || "寫出完整推導與結論。",
+      trap: commonErrors.join("；") || "只寫答案不能呈現解題能力。",
+      taxonomyTopic: skill?.lecture?.title || question.skillId, quizLevel: "非選", figureUrl: this.figureUrl(question.figureId),
       contentVersion: this.manifest.contentVersion
     };
   }
@@ -100,16 +105,16 @@ export class HumanReleaseCandidateRuntime {
   lectureForApp(skill) {
     const l = skill.lecture;
     const joinField = (value, sep) => Array.isArray(value) ? value.join(sep) : (value || "");
-    const formulas = (l.formulas || []).map(item => `${item.formula}${item.conditions?.length ? `\n革用：${item.conditions.join("；")}` : ""}`).join("\n\n");
+    const formulas = (l.formulas || []).map(item => `${item.formula}${item.conditions?.length ? `\n適用：${item.conditions.join("；")}` : ""}`).join("\n\n");
     const formatMistake = item => typeof item === "string" ? item : `${item.mistake} 原因：${item.why} 修正：${item.correction}`;
     let commonMistakes = (l.commonMistakes || []).map(formatMistake);
     for (const item of l.nonApplicableCases || []) {
       if (commonMistakes.length >= 4) break;
-      commonMistakes.push(typeof item === "string" ? `丝革用：${item}` : `丝革用：${item.case || item.text || item}`);
+      commonMistakes.push(typeof item === "string" ? `不適用：${item}` : `不適用：${item.case || item.text || item}`);
     }
     return {
       skillId: skill.skillId, title: l.title || skill.title || skill.skillId,
-      summary: joinField(l.summary, "；"), concept: joinField(l.conceptNarrative, "\n"), formula: formulas,
+      summary: joinField(l.summary || l.conciseSummary || l.learningOutcomes, "；"), concept: joinField(l.conceptNarrative || l.conceptDevelopment, "\n"), formula: formulas,
       stepGuide: (l.method || []).map(item => `${item.step}. ${item.instruction}（檢查：${item.check}）`),
       examples: (l.workedExamples || []).map(item => ({ prompt: item.prompt, answer: item.answer, why: (item.solutionSteps || []).join("；") })),
       commonMistakes,
@@ -125,9 +130,9 @@ export class HumanReleaseCandidateRuntime {
       return Object.freeze({
         id: unit.numericId, unitId: unit.unitId, grade, term: String(unit.gradeBand).includes("上") ? "上學期" : "下學期",
         gradeBand: unit.gradeBand, domain: unit.domain, title: unit.title, summary: unit.description,
-        core: unit.coreGoal, clarify: unit.capScopeNote, formula: "坄技能公弝與革用條件列於下方人工作者講義。",
-        derivation: "先睆解定義與條件，冝依技能講義完戝推導〝驗算與表靔。",
-        steps: ["辨誝技能", "整睆條件", "靸擇方法", "逝步推導", "檢查絝論與單佝"],
+        core: unit.coreGoal, clarify: unit.capScopeNote, formula: "各技能公式與適用條件列於下方人工作者講義。",
+        derivation: "先理解定義與條件，再依技能講義完成推導、驗算與表達。",
+        steps: ["辨認技能", "整理條件", "選擇方法", "逐步推導", "檢查結論與單位"],
         tips: unit.topics.flatMap(topic => topic.skills).slice(0, 6).map(skill => skill.title),
         skillCount: unit.counts.skills, legacyUnitIds: unit.legacyUnitIds.slice(), topics: unit.topics
       });
@@ -137,11 +142,11 @@ export class HumanReleaseCandidateRuntime {
     return this.getCatalog().map(unit => {
       const grade = Number(String(unit.gradeBand)[0]);
       return Object.freeze({
-        id: `${unit.unitId}-human-rc`, quizId: `${unit.unitId}-human-rc`, scope: "chapter", grade,
+        id: `${unit.unitId}-human-r1`, quizId: `${unit.unitId}-human-r1`, scope: "chapter", grade,
         term: String(unit.gradeBand).includes("上") ? "上學期" : "下學期", book: `${gradeName(grade)}${String(unit.gradeBand).includes("上") ? "上" : "下"}`,
-        chapter: unit.unitId.toUpperCase(), title: `${unit.title}單元尝考`, minutes: Math.max(20, Math.ceil(unit.counts.skills * 1.5)),
+        chapter: unit.unitId.toUpperCase(), title: `${unit.title}單元小考`, minutes: Math.max(20, Math.ceil(unit.counts.skills * 1.5)),
         questionCount: unit.counts.skills, unitIds: [unit.numericId], v2UnitId: unit.unitId, capUnitIds: unit.legacyUnitIds.slice(),
-        officialCodes: `${unit.counts.skills} 項人工作者技能｜毝技能抽 1 題`
+        officialCodes: `${unit.counts.skills} 項人工作者技能｜每技能抽 1 題`
       });
     });
   }
@@ -195,9 +200,9 @@ export class HumanReleaseCandidateRuntime {
     assert(JSON.stringify(domainActual) === JSON.stringify(this.blueprint.domainCounts), `domain contract mismatch ${JSON.stringify(domainActual)}`);
     assert(JSON.stringify(difficultyActual) === JSON.stringify(difficultyCounts), `difficulty contract mismatch ${JSON.stringify(difficultyActual)}`);
     return {
-      kind: "mock", id: `MATH-HUMAN-RC-${seed}-${level}`, title: "國中教育會考數學科人工作者模擬題本",
+      kind: "mock", id: `MATH-HUMAN-R1-${seed}-${level}`, title: "國中教育會考數學科人工作者模擬題本",
       minutes: this.blueprint.minutes, seed: Number(seed), level: Number(level), blueprint: this.blueprint.profileId,
-      engineVersion: "human-runtime-rc-r1", contentVersion: this.manifest.contentVersion,
+      engineVersion: "human-runtime-production-r1", contentVersion: this.manifest.contentVersion,
       questions: [...selected.map(q => this.adaptMc(q)), ...cr.map(q => this.adaptCr(q))],
       blueprintContract: { domainCounts: domainActual, difficultyCounts: difficultyActual, figureMcCount: figureCount, mc: selected.length, cr: cr.length }
     };
@@ -205,11 +210,11 @@ export class HumanReleaseCandidateRuntime {
   async generateUnitQuiz(unitId, seed) {
     const unit = await this.loadUnit(unitId); const rng = mulberry32(hashSeed(`${unitId}:${seed}:human-rc-quiz`));
     const questions = unit.skills.map(skill => skill.mcQuestions[Math.floor(rng() * skill.mcQuestions.length)]).map(q => this.adaptMc(q));
-    return { kind: "quiz", id: `MATH-HUMAN-RC-QUIZ-${unitId}-${seed}`, quizId: `${unitId}-human-rc`, seed: Number(seed),
-      title: `${unit.__lock.title}單元尝考`, grade: Number(String(unit.__lock.gradeBand)[0]), term: String(unit.__lock.gradeBand).includes("上") ? "上學期" : "下學期",
+    return { kind: "quiz", id: `MATH-HUMAN-R1-QUIZ-${unitId}-${seed}`, quizId: `${unitId}-human-r1`, seed: Number(seed),
+      title: `${unit.__lock.title}單元小考`, grade: Number(String(unit.__lock.gradeBand)[0]), term: String(unit.__lock.gradeBand).includes("上") ? "上學期" : "下學期",
       chapter: unitId.toUpperCase(), scope: "chapter", minutes: Math.max(20, Math.ceil(questions.length * 1.5)), questionCount: questions.length,
-      officialCodes: `${questions.length} 項技能｜毝技能 1 題`, unitIds: [unit.__lock.numericId], v2UnitIds: [unitId], blueprint: "human-rc-one-question-per-skill",
-      engineVersion: "human-runtime-rc-r1", contentVersion: this.manifest.contentVersion, questions };
+      officialCodes: `${questions.length} 項技能｜每技能 1 題`, unitIds: [unit.__lock.numericId], v2UnitIds: [unitId], blueprint: "human-r1-one-question-per-skill",
+      engineVersion: "human-runtime-production-r1", contentVersion: this.manifest.contentVersion, questions };
   }
   async generateUnitDrill(unitId, seed, count = 1, level = 2, excludeKeys = []) {
     const unit = await this.loadUnit(unitId); const excluded = new Set(excludeKeys); const rng = mulberry32(hashSeed(`${unitId}:${seed}:drill:${level}`));

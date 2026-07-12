@@ -1,0 +1,470 @@
+{
+  "status": "PASS_POST_CUTOVER_BROWSER_STABILITY_R1",
+  "browserExecutable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "browserVersion": "Chrome/150.0.7871.101",
+  "tests": [
+    {
+      "name": "generated-v2-rollback-before-stability",
+      "pass": true,
+      "engine": "generated-v2-rollback"
+    },
+    {
+      "name": "human-default-counts",
+      "pass": true,
+      "version": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+      "counts": {
+        "units": 23,
+        "skills": 339,
+        "lectures": 339,
+        "mcQuestions": 4068,
+        "constructedResponses": 678,
+        "figures": 178
+      },
+      "mock": {
+        "mc": 25,
+        "cr": 2,
+        "minutes": 80,
+        "same": true,
+        "different": true
+      },
+      "migration": {
+        "status": "COMPLETE",
+        "schemaVersion": "math-v2-human-storage-migration-r1",
+        "migratedAt": "2026-07-12T16:44:57.550Z",
+        "completed": {
+          "target": "capMath.human.r1.completed",
+          "action": "merged",
+          "count": 3
+        },
+        "paperHistory": {
+          "target": "capMath.human.r1.paperHistory",
+          "action": "copied-compatible-human-rc"
+        },
+        "legacyPaperHistoryBackup": {
+          "target": "capMath.human.r1.legacyPaperHistoryBackup",
+          "action": "archived-generated-history"
+        },
+        "dark": {
+          "target": "capMath.human.r1.dark",
+          "action": "no-source"
+        },
+        "lastSeed": {
+          "target": "capMath.human.r1.lastSeed",
+          "action": "no-source"
+        },
+        "lastQuizSeed": {
+          "target": "capMath.human.r1.lastQuizSeed",
+          "action": "no-source"
+        },
+        "quizSignatures": [],
+        "sourceKeysDeleted": false
+      },
+      "completed": [
+        "u03",
+        "u01",
+        "u02"
+      ],
+      "backup": [
+        {
+          "id": "legacy-generated-paper"
+        }
+      ]
+    },
+    {
+      "name": "mock-seed-stability",
+      "pass": true,
+      "mc": 25,
+      "cr": 2,
+      "minutes": 80,
+      "same": true,
+      "different": true
+    },
+    {
+      "name": "migration-first-run",
+      "pass": true,
+      "version": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+      "counts": {
+        "units": 23,
+        "skills": 339,
+        "lectures": 339,
+        "mcQuestions": 4068,
+        "constructedResponses": 678,
+        "figures": 178
+      },
+      "mock": {
+        "mc": 25,
+        "cr": 2,
+        "minutes": 80,
+        "same": true,
+        "different": true
+      },
+      "migration": {
+        "status": "COMPLETE",
+        "schemaVersion": "math-v2-human-storage-migration-r1",
+        "migratedAt": "2026-07-12T16:44:57.550Z",
+        "completed": {
+          "target": "capMath.human.r1.completed",
+          "action": "merged",
+          "count": 3
+        },
+        "paperHistory": {
+          "target": "capMath.human.r1.paperHistory",
+          "action": "copied-compatible-human-rc"
+        },
+        "legacyPaperHistoryBackup": {
+          "target": "capMath.human.r1.legacyPaperHistoryBackup",
+          "action": "archived-generated-history"
+        },
+        "dark": {
+          "target": "capMath.human.r1.dark",
+          "action": "no-source"
+        },
+        "lastSeed": {
+          "target": "capMath.human.r1.lastSeed",
+          "action": "no-source"
+        },
+        "lastQuizSeed": {
+          "target": "capMath.human.r1.lastQuizSeed",
+          "action": "no-source"
+        },
+        "quizSignatures": [],
+        "sourceKeysDeleted": false
+      },
+      "completed": [
+        "u03",
+        "u01",
+        "u02"
+      ],
+      "backup": [
+        {
+          "id": "legacy-generated-paper"
+        }
+      ]
+    },
+    {
+      "name": "migration-idempotent-reloads",
+      "pass": true,
+      "markerBefore": "{\"status\":\"COMPLETE\",\"schemaVersion\":\"math-v2-human-storage-migration-r1\",\"migratedAt\":\"2026-07-12T16:44:57.550Z\",\"completed\":{\"target\":\"capMath.human.r1.completed\",\"action\":\"merged\",\"count\":3},\"paperHistory\":{\"target\":\"capMath.human.r1.paperHistory\",\"action\":\"copied-compatible-human-rc\"},\"legacyPaperHistoryBackup\":{\"target\":\"capMath.human.r1.legacyPaperHistoryBackup\",\"action\":\"archived-generated-history\"},\"dark\":{\"target\":\"capMath.human.r1.dark\",\"action\":\"no-source\"},\"lastSeed\":{\"target\":\"capMath.human.r1.lastSeed\",\"action\":\"no-source\"},\"lastQuizSeed\":{\"target\":\"capMath.human.r1.lastQuizSeed\",\"action\":\"no-source\"},\"quizSignatures\":[],\"sourceKeysDeleted\":false}",
+      "idempotent": "{\"status\":\"COMPLETE\",\"schemaVersion\":\"math-v2-human-storage-migration-r1\",\"migratedAt\":\"2026-07-12T16:44:57.550Z\",\"completed\":{\"target\":\"capMath.human.r1.completed\",\"action\":\"merged\",\"count\":3},\"paperHistory\":{\"target\":\"capMath.human.r1.paperHistory\",\"action\":\"copied-compatible-human-rc\"},\"legacyPaperHistoryBackup\":{\"target\":\"capMath.human.r1.legacyPaperHistoryBackup\",\"action\":\"archived-generated-history\"},\"dark\":{\"target\":\"capMath.human.r1.dark\",\"action\":\"no-source\"},\"lastSeed\":{\"target\":\"capMath.human.r1.lastSeed\",\"action\":\"no-source\"},\"lastQuizSeed\":{\"target\":\"capMath.human.r1.lastQuizSeed\",\"action\":\"no-source\"},\"quizSignatures\":[],\"sourceKeysDeleted\":false}"
+    },
+    {
+      "name": "all-23-quizzes-browser",
+      "pass": true,
+      "quizzes": [
+        {
+          "quizId": "u01-human-r1",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u02-human-r1",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u03-human-r1",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u04-human-r1",
+          "count": 14,
+          "deterministic": true
+        },
+        {
+          "quizId": "u05-human-r1",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u06-human-r1",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u07-human-r1",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u08-human-r1",
+          "count": 14,
+          "deterministic": true
+        },
+        {
+          "quizId": "u09-human-r1",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u10-human-r1",
+          "count": 13,
+          "deterministic": true
+        },
+        {
+          "quizId": "u11-human-r1",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u12-human-r1",
+          "count": 10,
+          "deterministic": true
+        },
+        {
+          "quizId": "u13-human-r1",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u14-human-r1",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u15-human-r1",
+          "count": 13,
+          "deterministic": true
+        },
+        {
+          "quizId": "u16-human-r1",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u17-human-r1",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u18-human-r1",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u19-human-r1",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u20-human-r1",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u21-human-r1",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u22-human-r1",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u23-human-r1",
+          "count": 20,
+          "deterministic": true
+        }
+      ]
+    },
+    {
+      "name": "all-178-svg-decode",
+      "pass": true,
+      "count": 178,
+      "failures": []
+    },
+    {
+      "name": "all-23-handbook-navigation",
+      "pass": true,
+      "nav": [
+        {
+          "unit": "1",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "2",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "3",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "4",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "5",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "6",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "7",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "8",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "9",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "10",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "11",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "12",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "13",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "14",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "15",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "16",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "17",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "18",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "19",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "20",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "21",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "22",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        },
+        {
+          "unit": "23",
+          "expected": 15,
+          "actual": 15,
+          "title": "整數運算"
+        }
+      ]
+    },
+    {
+      "name": "visible-production-text-clean",
+      "pass": true,
+      "forbidden": []
+    },
+    {
+      "name": "paper-history-save",
+      "pass": true,
+      "id": "MATH-HUMAN-R1-11527-2-1783874699257",
+      "answered": 27,
+      "total": 27
+    },
+    {
+      "name": "correction-drill-persistence",
+      "pass": true,
+      "questionIndex": 0
+    },
+    {
+      "name": "mobile-390x844",
+      "pass": true,
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    {
+      "name": "accessibility-contract",
+      "pass": true,
+      "lang": "zh-Hant",
+      "nameless": 0,
+      "emptyAlt": 0
+    },
+    {
+      "name": "generated-v2-rollback-after-stability",
+      "pass": true
+    },
+    {
+      "name": "v1-rollback-after-stability",
+      "pass": true
+    }
+  ],
+  "passed": 15,
+  "failed": 0,
+  "httpRequestCount": 402,
+  "consoleErrors": [],
+  "runtimeExceptions": [],
+  "networkErrors": [],
+  "productionActivated": true,
+  "generatedV2RollbackAvailable": true,
+  "v1RollbackAvailable": true,
+  "oldDatabaseDeletionAllowed": false
+}

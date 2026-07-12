@@ -1,10 +1,10 @@
 import { HUMAN_PRODUCTION_CONFIG } from "./config.mjs";
-import { HumanReleaseCandidateRuntime } from "./engine.mjs";
+import { HumanProductionRuntime } from "./engine.mjs";
 import { migrateHumanProductionStorage } from "./storage-migration.mjs";
 
 export async function installHumanProductionRuntime() {
   const migration = migrateHumanProductionStorage();
-  const runtime = await new HumanReleaseCandidateRuntime({
+  const runtime = await new HumanProductionRuntime({
     manifestUrl: HUMAN_PRODUCTION_CONFIG.runtimeManifestUrl,
     syllabusLockUrl: HUMAN_PRODUCTION_CONFIG.syllabusLockUrl,
     blueprintUrl: HUMAN_PRODUCTION_CONFIG.releaseBlueprintUrl,

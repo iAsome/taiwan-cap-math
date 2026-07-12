@@ -7,7 +7,7 @@
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const esc = value => String(value).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const renderMath = (value, chunked = false) => FRACTION_MARKUP.renderMath(value, esc, chunked);
-  const mathText = value => renderMath(value).replace(/\n/g, "<br>");
+  const mathText = value => renderMath(value ?? "").replace(/\n/g, "<br>");
   const mathBlock = value => String(value).split("\n").map(line => `<span class="math-line">${renderMath(line, true)}</span>`).join("");
   const nl = mathText;
   const COMMON_SYMBOLS = [
@@ -276,11 +276,16 @@
       <div class="index-group"><strong>國中 ${group.grade === 7 ? "一年級" : group.grade === 8 ? "二年級" : "三年級"}</strong>
         ${group.items.map(unit => `<button class="${unit.id === state.selectedUnit ? "active" : ""}" data-unit="${unit.id}"><span>${String(unit.id).padStart(2, "0")}</span><b>${esc(unit.title)}</b><i>${state.completed.has(unit.unitId) ? "✓" : ""}</i></button>`).join("")}
       </div>`).join("");
-    $$("[data-unit]", $("#unitIndex")).forEach(button => button.addEventListener("click", () => {
-      state.selectedUnit = Number(button.dataset.unit);
-      renderHandbook();
-      if (window.innerWidth < 841) $("#unitContent").scrollIntoView({ behavior: "smooth", block: "start" });
-    }));
+    if (!$("#unitIndex").dataset.bound) {
+      $("#unitIndex").dataset.bound = "1";
+      $("#unitIndex").addEventListener("click", event => {
+        const button = event.target.closest("[data-unit]");
+        if (!button) return;
+        state.selectedUnit = Number(button.dataset.unit);
+        renderHandbook();
+        if (window.innerWidth < 841) $("#unitContent").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
 
     const unit = units.find(u => u.id === state.selectedUnit && list.some(x => x.id === u.id));
     if (!unit) {
@@ -541,7 +546,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       const upper = chapters.filter(item => item.term === "上學期");
       const lower = chapters.filter(item => item.term === "下學期");
       return `<section class="quiz-grade-section">
-        <div class="quiz-grade-heading"><h2>國${gradeName(grade)}</h2><span>${chapters.length} 份 Math V2 單元小考</span></div>
+        <div class="quiz-grade-heading"><h2>國${gradeName(grade)}</h2><span>${chapters.length} 份 Human Runtime 單元小考</span></div>
         <div class="quiz-track-grid">
           ${upper.length ? quizTrack("上學期", `${upper.length} 個課綱單元小考`, upper, grade, "upper") : ""}
           ${lower.length ? quizTrack("下學期", `${lower.length} 個課綱單元小考`, lower, grade, "lower") : ""}
@@ -618,14 +623,22 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
         ${PAPER_HISTORY_UI.renderScoreMath({ correct: record.correct, mcCount: record.mcCount, wrongTotal, uncorrected })}
         <div class="missed-units">${missed || "<span>沒有選擇題錯題</span>"}</div>
         <div class="paper-history-actions">
-          <button class="secondary" data-review-paper="${esc(record.id)}">查看詳解</button>
-          ${wrongTotal ? `<button class="secondary" data-review-wrong="${esc(record.id)}">錯題統整</button>` : ""}
+          <button type="button" class="secondary" data-review-paper="${esc(record.id)}">查看詳解</button>
+          ${wrongTotal ? `<button type="button" class="secondary" data-review-wrong="${esc(record.id)}">錯題統整</button>` : ""}
         </div>
       </article>`;
     }).join("") : `<div class="paper-history-empty"><h2>目前還沒有考過的卷子。</h2><p>完成任一小考或模擬考後，這裡會自動保存紀錄。</p><button class="primary" data-view="quiz">去做小考</button></div>`;
-    $$("[data-review-paper]", $("#paperHistoryList")).forEach(button => button.addEventListener("click", () => reviewSavedPaper(button.dataset.reviewPaper, "full")));
-    $$("[data-review-wrong]", $("#paperHistoryList")).forEach(button => button.addEventListener("click", () => reviewWrongPaper(button.dataset.reviewWrong)));
-    $$("[data-view]", $("#paperHistoryList")).forEach(button => button.addEventListener("click", () => setView(button.dataset.view)));
+    if (!$("#paperHistoryList").dataset.bound) {
+      $("#paperHistoryList").dataset.bound = "1";
+      $("#paperHistoryList").addEventListener("click", event => {
+        const reviewPaper = event.target.closest("[data-review-paper]");
+        if (reviewPaper) return reviewSavedPaper(reviewPaper.dataset.reviewPaper, "full");
+        const reviewWrong = event.target.closest("[data-review-wrong]");
+        if (reviewWrong) return reviewWrongPaper(reviewWrong.dataset.reviewWrong);
+        const viewButton = event.target.closest("[data-view]");
+        if (viewButton) return setView(viewButton.dataset.view);
+      });
+    }
   }
 
   function reviewSavedPaper(recordId, mode = "full") {
@@ -663,7 +676,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       ? `${state.exam.questions.length} 題四選一，共 ${state.exam.minutes || 25} 分鐘。官方課綱編碼：${state.exam.officialCodes}。`
       : isArchive
       ? `依 ${state.exam.year} 年官方公布題本製作的可作答電子試卷；計時結束後仍可繼續作答。`
-      : "練習用 25 題選擇＋2 題非選擇，共 80 分鐘。依人工作者 Release Candidate 藍圖抽樣。";
+      : "練習用 25 題選擇＋2 題非選擇，共 80 分鐘。依人工作者正式藍圖抽樣。";
     $("#examSetup").classList.toggle("hidden", isQuiz || isArchive);
     $("#quizExamSetup").classList.toggle("hidden", !isQuiz && !isArchive);
     if (isArchive) { $("#backToListButton").textContent = "返回歷屆十年"; $("#backToListButton").dataset.view = "archive"; }
@@ -671,7 +684,7 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
   }
 
   function launchAssessment(assessment) {
-    assessment = assessment; // Human RC preserves required figures.
+    assessment = assessment; // Human Runtime preserves required figures.
     state.paperReview = { recordId: null, mode: null, drill: null };
     state.exam = assessment;
     state.answers = assessment.questions.map(question => question.type === "mc" ? null : "");
@@ -802,8 +815,8 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
       <header class="paper-cover"><div><p class="eyebrow">官方題本重現</p><h2>${state.exam.year} 年國中教育會考數學科題本</h2><p>${mcCount} 題選擇＋${crCount} 題非選｜依官方公布題目製作為可作答電子試卷｜計時結束仍可繼續作答</p></div><div class="paper-stamp">${state.exam.year}<br>官方題本</div></header>
       <div class="paper-instructions"><div><strong>${mcCount}</strong><span>四選一｜官方原題</span></div><div><strong>${crCount}</strong><span>非選擇題｜策略與表達計分</span></div><div><strong>${state.exam.minutes || 80} min</strong><span>時間到可繼續作答</span></div></div>
       ${state.exam.omittedNote ? `<div class="quiz-paper-scope"><strong>收錄說明</strong><span>${esc(state.exam.omittedNote)}</span></div>` : ""}` : `
-      <header class="paper-cover"><div><p class="eyebrow">題型池抽樣 · 十年分布校準</p><h2>國中教育會考數學科模擬題本</h2><p>練習用 25 題選擇＋2 題非選｜80 分鐘｜人工作者 Release Candidate 藍圖</p></div><div class="paper-stamp">25＋2<br>RC</div></header>
-      <div class="paper-instructions"><div><strong>25</strong><span>四選一｜Human RC</span></div><div><strong>2</strong><span>非選｜策略與表達</span></div><div><strong>80</strong><span>分鐘｜可超時繼續作答</span></div></div>`;
+      <header class="paper-cover"><div><p class="eyebrow">題型池抽樣 · 十年分布校準</p><h2>國中教育會考數學科模擬題本</h2><p>練習用 25 題選擇＋2 題非選｜80 分鐘｜人工作者正式藍圖</p></div><div class="paper-stamp">25＋2<br>正式</div></header>
+      <div class="paper-instructions"><div><strong>25</strong><span>四選一｜Human Runtime</span></div><div><strong>2</strong><span>非選｜策略與表達</span></div><div><strong>80</strong><span>分鐘｜可超時繼續作答</span></div></div>`;
     const choiceHtml = hasConstructed ? qHtml.slice(0, constructedStart) : qHtml;
     const constructedHtml = hasConstructed ? `<div class="paper-section-title"><h3>第二部分：非選擇題</h3><span>策略適切＋推導完整＋結論清楚</span></div>${qHtml.slice(constructedStart)}` : "";
     const sectionTitle = isMock && !hasConstructed ? "" : `<div class="paper-section-title"><h3>${hasConstructed ? "第一部分：選擇題" : "試題"}</h3><span>每題只有一個正確或最佳答案</span></div>`;
@@ -829,10 +842,10 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
 
   function solutionHtml(q, index) {
     if (q.type === "mc") {
-      return `<div class="solution"><h4>正確答案：${letters[q.answer]}｜${mathText(q.choices[q.answer])}</h4><ol class="solution-steps">${q.steps.map(s => `<li>${mathText(s)}</li>`).join("")}</ol>${solutionNotes(q)}</div>`;
+      return `<div class="solution"><h4>正確答案：${letters[q.answer]}｜${mathText(q.choices[q.answer])}</h4><ol class="solution-steps">${(q.steps || []).map(s => `<li>${mathText(s)}</li>`).join("")}</ol>${solutionNotes(q)}</div>`;
     }
     const rubricRows = Array.isArray(q.rubric) ? q.rubric : [["評分要點", q.rubric]];
-    return `<div class="solution"><h4>參考結論：${mathText(q.answer)}</h4><ol class="solution-steps">${q.steps.map(s => `<li>${mathText(s)}</li>`).join("")}</ol>${solutionNotes(q)}<table class="rubric">${rubricRows.map(row => `<tr><th>${esc(row[0])}</th><td>${mathText(row[1])}</td></tr>`).join("")}</table></div>`;
+    return `<div class="solution"><h4>參考結論：${mathText(q.answer)}</h4><ol class="solution-steps">${(q.steps || []).map(s => `<li>${mathText(s)}</li>`).join("")}</ol>${solutionNotes(q)}<table class="rubric">${rubricRows.map(row => `<tr><th>${esc(row[0])}</th><td>${mathText(row[1])}</td></tr>`).join("")}</table></div>`;
   }
   function solutionNotes(q) {
     return `<div class="solution-grid"><div class="solution-note explanation-note"><strong>完整詳解</strong><p>${mathText(q.explanation || q.concept)}</p></div><div class="solution-note"><strong>本題觀念</strong><p>${mathText(q.concept)}</p></div>${q.formula ? `<div class="solution-note formula-note"><strong>可用公式</strong><div>${mathBlock(q.formula)}</div></div>` : ""}${questionSymbolHtml(q)}<div class="solution-note tip"><strong>檢查重點</strong><p>${mathText(q.tip)}</p></div><div class="solution-note trap"><strong>易錯警報</strong><p>${mathText(q.trap)}</p></div></div>`;
@@ -964,6 +977,9 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     if (lastSeed) $("#seedInput").value = lastSeed;
     if (localStorage.getItem("capMath.human.r1.dark") === "1") { document.body.classList.add("dark"); $("#themeButton").textContent = "日"; }
     bindStaticEvents();
+    $("#seedInput")?.setAttribute("aria-label", "卷別種子");
+    $("#levelSelect")?.setAttribute("aria-label", "數值強度");
+    window.__HUMAN_PAPER_REVIEW__ = { reviewWrongPaper, reviewSavedPaper };
     updateLearningProgress();
     const requestedView = params.get("view");
     const requestedQuiz = params.get("quiz");
@@ -977,5 +993,5 @@ const OFFICIAL_EXAMS_URL = "https://cap.rcpet.edu.tw/examination.html";
     } else if (requestedView && viewNames[requestedView]) setView(requestedView);
   }
   init();
-window.__HUMAN_RC_APP_READY__ = true;
+window.__HUMAN_PRODUCTION_APP_READY__ = true;
 })();
