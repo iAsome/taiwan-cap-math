@@ -1,0 +1,257 @@
+{
+  "lectureId": "u18-s014-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-applications",
+  "skillId": "ratio-perimeter-application",
+  "lockedSkillOrder": 14,
+  "lockedSkillTitle": "周長比應用",
+  "title": "周長比應用：模型縮圖與複合邊界的線性縮放",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能把比例尺或放大百分比轉成線性縮放倍數。",
+    "能以周長比等於相似比解決模型與縮圖問題。",
+    "能判斷複合圖形的外邊界是否也按同一倍數縮放。",
+    "能處理單位換算與實際材料長度。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "similar-shadow-problem",
+        "title": "影子測量",
+        "requiredLevel": "能運用「影子測量」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「影子測量」，先複習其核心判斷，再把方法推進到「周長比應用」。"
+  },
+  "glossary": [
+    {
+      "term": "比例尺",
+      "definition": "圖上長度與實際長度的比，須使用相同單位。"
+    },
+    {
+      "term": "外邊界",
+      "definition": "圖形最外圍一圈的線段總長，不包含內部接縫。"
+    },
+    {
+      "term": "放大率",
+      "definition": "新線性尺寸除以原線性尺寸所得倍數。"
+    },
+    {
+      "term": "材料餘量",
+      "definition": "實際施工時在幾何周長之外另加的接合或損耗長度。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "1:n",
+      "meaning": "圖上 1 個長度單位代表實際 n 個相同單位。"
+    },
+    {
+      "symbol": "P實=nP圖",
+      "meaning": "在比例尺 1:n 下，實際周長為圖上周長的 n 倍。"
+    },
+    {
+      "symbol": "P材料=P幾何+餘量",
+      "meaning": "材料需求若含接合量，需另行加上。"
+    }
+  ],
+  "conceptNarrative": [
+    "比例尺是線性比，因此周長與任何一條對應邊都使用同一倍數。計算前必須把圖上與實際單位統一。",
+    "相似的複合圖形若整體每一個線性尺寸都按同一倍數縮放，外邊界周長也按同一倍數縮放。不能只因兩圖形外觀近似就套用。",
+    "設計題常把『放大到原來的 120%』與『增加 120%』混淆。前者倍數 1.2，後者新值為原來的 2.2 倍。",
+    "材料題若有接縫、折返或損耗，這些固定附加量不隨圖形相似比自動縮放，需在幾何周長之外另算。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "比例尺周長關係",
+      "statement": "相似縮圖與實物的周長比等於比例尺的線性比。"
+    },
+    {
+      "name": "固定附加量",
+      "statement": "不屬於圖形邊界的接合餘量應在縮放後另加，不能納入周長比。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P實/P圖=實際長度/圖上長度",
+      "conditions": [
+        "圖形相似",
+        "單位一致"
+      ],
+      "meaning": "比例尺可直接套用到周長。"
+    },
+    {
+      "formula": "P新=rP原",
+      "conditions": [
+        "r 為線性放大倍數"
+      ],
+      "meaning": "整體周長按 r 變化。"
+    },
+    {
+      "formula": "材料長=P新+固定餘量",
+      "conditions": [
+        "題目明示接合或損耗"
+      ],
+      "meaning": "區分幾何量與施工量。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只有面積比例而未先開根號時，不能直接作為周長比。",
+    "固定寬度邊框加入後，內外圖形不一定相似。",
+    "內部線段總長不等於外邊界周長。",
+    "比例尺單位未統一時，數字比不能直接使用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認線性比、比例尺或放大率。",
+      "check": "是變為 120% 還是增加 120%？"
+    },
+    {
+      "step": 2,
+      "instruction": "統一圖上與實際單位。",
+      "check": "公分與公尺是否換算？"
+    },
+    {
+      "step": 3,
+      "instruction": "確認整體圖形相似及所求為外周長。",
+      "check": "是否含內部接縫？"
+    },
+    {
+      "step": 4,
+      "instruction": "以相似比乘原周長。",
+      "check": "是否誤用平方？"
+    },
+    {
+      "step": 5,
+      "instruction": "最後再加固定餘量並做大小檢查。",
+      "check": "餘量是否被重複縮放？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "地圖比例尺 1:25000，一塊相似園區在圖上的邊界周長為 18 公分，實際周長多少公裡？",
+      "solutionSteps": [
+        "實際周長=18×25000=450000 公分。",
+        "450000 公分=4500 公尺。",
+        "即 4.5 公裡。"
+      ],
+      "answer": "4.5 公裡"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "徽章設計整體放大到原來 135%，原外周長 80 公分，求新周長。",
+      "solutionSteps": [
+        "線性倍數為 1.35。",
+        "新周長=80×1.35。",
+        "得到 108 公分。"
+      ],
+      "answer": "108 公分"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "相似框架小:大=3:8，小框外周長 54 公分，大框製作另需 6 公分接合餘量，求材料長。",
+      "solutionSteps": [
+        "大框幾何周長=54×8/3=144 公分。",
+        "接合餘量不按比例縮放。",
+        "材料長=144+6=150 公分。"
+      ],
+      "answer": "150 公分"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩個長方形面積比 4:9，且已知相似，周長比為何？",
+      "solutionSteps": [
+        "相似比是面積比的正平方根。",
+        "√4:√9=2:3。",
+        "周長比等於相似比。"
+      ],
+      "answer": "2:3"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "比例尺 1:25000 直接把公分答案當公裡。",
+      "why": "漏做單位換算。",
+      "correction": "先算同單位，再換成所求單位。"
+    },
+    {
+      "mistake": "周長用放大率平方。",
+      "why": "與面積混淆。",
+      "correction": "周長是線性量。"
+    },
+    {
+      "mistake": "把增加 20% 當變為 20%。",
+      "why": "百分比基準不清。",
+      "correction": "增加 20% 的倍數是 1.2。"
+    },
+    {
+      "mistake": "固定接合餘量也乘縮放倍數。",
+      "why": "未區分圖形邊界與施工附加量。",
+      "correction": "先縮放幾何周長，再另加固定量。"
+    },
+    {
+      "mistake": "把內部接縫算入外周長。",
+      "why": "沒有追蹤外邊界。",
+      "correction": "沿最外圍走一圈只計一次。"
+    }
+  ],
+  "selfCheck": [
+    "比例尺單位一致嗎？",
+    "所求是幾何周長還是材料長？",
+    "圖形整體相似嗎？",
+    "周長只乘一次倍率嗎？",
+    "固定餘量是否最後才加？"
+  ],
+  "summary": [
+    "比例尺與周長都屬線性比。",
+    "相似複合圖形的外邊界按同一倍數縮放。",
+    "單位必須先統一。",
+    "固定施工餘量不隨圖形自動縮放。"
+  ],
+  "connections": {
+    "previous": "影子測量以線性比例求高度。",
+    "next": [
+      "面積比應用會處理材料面積與成本。",
+      "相似形素養題會同時出現周長、面積與比例尺。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s014-v001",
+      "u18-s014-v002",
+      "u18-s014-v003",
+      "u18-s014-v004",
+      "u18-s014-v005",
+      "u18-s014-v006",
+      "u18-s014-v007",
+      "u18-s014-v008",
+      "u18-s014-v009",
+      "u18-s014-v010",
+      "u18-s014-v011",
+      "u18-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s014-cr001",
+      "u18-s014-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "比例尺例題完整執行公分至公裡換算；百分比、面積反推周長比及固定接合餘量三種易混情境均分開處理，未把非幾何量納入縮放。"
+  },
+  "contentSha256": "14be488f0a164ebce17f13897e295ff94084c518689af53c0723748ba01e41a7"
+}

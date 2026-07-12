@@ -1,0 +1,254 @@
+{
+  "lectureId": "u18-s008-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-similarity",
+  "skillId": "similarity-sas",
+  "lockedSkillOrder": 8,
+  "lockedSkillTitle": "SAS 相似",
+  "title": "SAS 相似：兩邊成比例且夾角相等",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認兩組成比例邊之間的夾角。",
+    "能檢查兩組對應邊比是否相等。",
+    "能用 SAS 判定三角形相似並寫正確順序。",
+    "能辨認非夾角相等不足以使用 SAS。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "similarity-aa",
+        "title": "AA 相似",
+        "requiredLevel": "能運用「AA 相似」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「AA 相似」，先複習其核心判斷，再把方法推進到「SAS 相似」。"
+  },
+  "glossary": [
+    {
+      "term": "夾角",
+      "definition": "兩條指定邊共同端點所形成的角。"
+    },
+    {
+      "term": "SAS 判定",
+      "definition": "兩組對應邊成比例，且這兩組邊的夾角相等時，兩三角形相似。"
+    },
+    {
+      "term": "對應邊比",
+      "definition": "按同一方向比較兩三角形對應邊所得的比。"
+    },
+    {
+      "term": "非夾角",
+      "definition": "不位於兩組已知邊之間的角；只知非夾角相等通常不足以判定。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AB/DE=AC/DF",
+      "meaning": "A 周圍兩邊與 D 周圍兩邊成比例。"
+    },
+    {
+      "symbol": "∠A=∠D",
+      "meaning": "上述兩組邊的夾角相等。"
+    },
+    {
+      "symbol": "SAS",
+      "meaning": "Side-Angle-Side，邊角邊相似判定。"
+    }
+  ],
+  "conceptNarrative": [
+    "SAS 相似不是任意兩邊加任意一角。相等的角必須正好夾在兩組成比例的邊之間，這個位置條件是判定成立的關鍵。",
+    "先找相等角的頂點，再檢查從該頂點伸出的兩邊。例如比較 ∠A 與 ∠D，應比較 AB、AC 與 DE、DF。",
+    "兩組邊比必須使用同一方向。若 AB/DE=2/3，另一組也應寫 AC/DF，而不是 DF/AC。",
+    "若角不是夾角，可能出現兩個不同形狀的三角形都滿足資料，因此不能僅憑 SSA 判定相似。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "SAS 相似判定",
+      "statement": "若兩三角形有兩組對應邊成比例，且其夾角相等，則兩三角形相似。"
+    },
+    {
+      "name": "夾角定位",
+      "statement": "指定兩邊共有的頂點即為夾角頂點。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AB/DE=AC/DF 且 ∠A=∠D ⇒ △ABC∼△DEF",
+      "conditions": [
+        "∠A、∠D 分別是 AB 與 AC、DE 與 DF 的夾角"
+      ],
+      "meaning": "SAS 判定。"
+    },
+    {
+      "formula": "AB·DF=AC·DE",
+      "conditions": [
+        "用交叉相乘檢查兩邊比"
+      ],
+      "meaning": "兩組邊比例的等價式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "兩組邊成比例但所給相等角不是夾角時，不能使用 SAS。",
+    "只知道夾角相等但只有一組邊比，不足以判定。",
+    "兩組邊比若一組用小/大、另一組用大/小，結論無效。",
+    "角度相等必須有已知、共同角或幾何定理支持。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找出可能相等的夾角頂點。",
+      "check": "角的兩臂是哪兩條已知邊？"
+    },
+    {
+      "step": 2,
+      "instruction": "配對角兩側的邊。",
+      "check": "AB 對 DE、AC 對 DF 是否合理？"
+    },
+    {
+      "step": 3,
+      "instruction": "計算兩組邊比並統一方向。",
+      "check": "兩比是否完全相等？"
+    },
+    {
+      "step": 4,
+      "instruction": "說明夾角相等的理由。",
+      "check": "是已知角、共同角或對頂角？"
+    },
+    {
+      "step": 5,
+      "instruction": "依頂點配對寫相似結論。",
+      "check": "其餘頂點順序是否由邊配對決定？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "AB=6、AC=9、DE=10、DF=15，且 ∠A=∠D，判定兩三角形。",
+      "solutionSteps": [
+        "AB/DE=6/10=3/5。",
+        "AC/DF=9/15=3/5。",
+        "∠A、∠D 是兩組邊夾角，所以由 SAS 相似。"
+      ],
+      "answer": "相似"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "△ABC 與 △ADE 共用 ∠A，AB=4、AC=6、AD=10、AE=15，判定是否相似。",
+      "solutionSteps": [
+        "AB/AD=4/10=2/5。",
+        "AC/AE=6/15=2/5。",
+        "夾角 ∠A 共用，由 SAS 得相似。"
+      ],
+      "answer": "△ABC∼△ADE"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩三角形有邊 5、8 與 10、16 成比例，且一組非夾角相等，可否用 SAS？",
+      "solutionSteps": [
+        "兩組邊比雖相等。",
+        "但相等角不在兩組邊之間。",
+        "不符合 SAS 的夾角條件。"
+      ],
+      "answer": "不可"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "若 AB/DE=BC/EF 且 ∠B=∠E，應如何排列相似順序？",
+      "solutionSteps": [
+        "∠B、∠E 是 AB與BC、DE與EF 的夾角。",
+        "AB 對 DE，所以 A↔D；BC 對 EF，所以 C↔F。",
+        "得到 △ABC∼△DEF。"
+      ],
+      "answer": "△ABC∼△DEF"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到兩邊比相等就判相似。",
+      "why": "漏掉夾角條件。",
+      "correction": "再確認兩組邊的夾角相等。"
+    },
+    {
+      "mistake": "把非夾角當夾角。",
+      "why": "沒有找共同端點。",
+      "correction": "在兩條已知邊的共同端點圈出角。"
+    },
+    {
+      "mistake": "比例方向一正一反。",
+      "why": "只看數值能否約分。",
+      "correction": "所有分子取自同一三角形。"
+    },
+    {
+      "mistake": "相似順序只依角配一個頂點。",
+      "why": "其餘頂點未依邊配對。",
+      "correction": "用兩條邊的另一端決定剩餘配對。"
+    },
+    {
+      "mistake": "把 SAS 相似與 SAS 全等混同。",
+      "why": "忽略相似要求比例、全等要求邊長相等。",
+      "correction": "相似邊可不同長，只需同一比例。"
+    }
+  ],
+  "selfCheck": [
+    "相等角是兩組已知邊的夾角嗎？",
+    "兩組邊比方向一致嗎？",
+    "角相等有理由嗎？",
+    "頂點順序由角與邊共同決定嗎？",
+    "我是否誤用 SSA？"
+  ],
+  "summary": [
+    "SAS 相似需要兩組邊成比例與夾角相等。",
+    "夾角是兩條指定邊共同端點的角。",
+    "比例方向必須一致。",
+    "非夾角相等的 SSA 不足以判定。"
+  ],
+  "connections": {
+    "previous": "AA 使用兩組角判定相似。",
+    "next": [
+      "SSS 將用三組邊比例判定，不需角度資料。",
+      "相似比與周長比會使用判定後的固定縮放倍數。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u18-sas-q011",
+      "purpose": "協助辨認「SAS 相似」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s008-v001",
+      "u18-s008-v002",
+      "u18-s008-v003",
+      "u18-s008-v004",
+      "u18-s008-v005",
+      "u18-s008-v006",
+      "u18-s008-v007",
+      "u18-s008-v008",
+      "u18-s008-v009",
+      "u18-s008-v010",
+      "u18-s008-v011",
+      "u18-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s008-cr001",
+      "u18-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "所有 SAS 範例均逐一標明夾角的兩臂，並設置一個非夾角反例；比例方向與相似字母順序已交叉核對，避免把 SAS 相似誤寫成全等條件。"
+  },
+  "contentSha256": "a2459bbc2c3d9e5593b6045181b57fcc1a85f85f7f07385f065ef42994a1bcaf"
+}

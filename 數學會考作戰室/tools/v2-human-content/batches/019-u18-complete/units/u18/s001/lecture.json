@@ -1,0 +1,250 @@
+{
+  "lectureId": "u18-s001-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-ratio",
+  "skillId": "continued-ratio",
+  "lockedSkillOrder": 1,
+  "lockedSkillTitle": "連比化簡",
+  "title": "連比化簡：把三個以上的量放在同一把尺上",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能說明連比 a:b:c 表示三個同類量的相對倍數。",
+    "能以最大公因數化簡整數連比。",
+    "能先消去分數或小數，再把連比化成最簡整數比。",
+    "能檢查化簡前後各項是否乘除同一個正數。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "foundational-ratio-arithmetic",
+        "title": "國小分數、小數與比的基礎",
+        "requiredLevel": "能進行正數的乘除、分數與小數互換，並知道比的前後順序不能任意交換。"
+      }
+    ],
+    "bridgeExplanation": "本節從比、分數與小數的基礎開始，不假設學生已學過連比。"
+  },
+  "glossary": [
+    {
+      "term": "連比",
+      "definition": "把三個以上同類量依固定順序寫成的比，例如 a:b:c。"
+    },
+    {
+      "term": "最簡整數比",
+      "definition": "各項都是正整數，且所有項的最大公因數為 1 的連比。"
+    },
+    {
+      "term": "同比例放大或縮小",
+      "definition": "所有項同乘或同除一個不為 0 的數，連比所表示的關係不變。"
+    },
+    {
+      "term": "公分母",
+      "definition": "能同時成為多個分母倍數的數，用來消去分數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a:b:c",
+      "meaning": "第一量、第二量、第三量依序比較；順序不可任意交換。"
+    },
+    {
+      "symbol": "ka:kb:kc",
+      "meaning": "當 k>0 時，與 a:b:c 表示同一個連比。"
+    },
+    {
+      "symbol": "a/b",
+      "meaning": "分數項；化簡連比時可先乘所有分母的最小公倍數。"
+    }
+  ],
+  "conceptNarrative": [
+    "兩個量的比只比較一對量；連比則把三個以上的量放在同一個倍數系統中。2:3:5 可理解為三個量分別是同一基本單位的 2 倍、3 倍、5 倍。",
+    "化簡的核心不是逐項隨意約分，而是所有項必須同時乘或除同一個數。若只改其中一項，原本的相對關係就被破壞。",
+    "遇到分數連比，先乘公分母；遇到有限小數，先乘 10、100 等把各項化成整數，再找所有項的最大公因數。",
+    "連比一般以正量為主；若情境允許 0，需特別說明 0 項的意義。分母不能為 0，且用於分配時各項通常須為正。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "連比相等",
+      "statement": "若存在正數 k，使得 d=ka、e=kb、f=kc，則 a:b:c=d:e:f。"
+    },
+    {
+      "name": "最簡連比",
+      "statement": "整數連比中各項最大公因數為 1，且各項順序與原題一致。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a:b:c = ka:kb:kc（k>0）",
+      "conditions": [
+        "所有項同乘同一正數",
+        "項目順序不變"
+      ],
+      "meaning": "同比例放大不改變連比。"
+    },
+    {
+      "formula": "分數連比 × 各分母的最小公倍數",
+      "conditions": [
+        "先確認每個分母不為 0"
+      ],
+      "meaning": "把分數項同時化成整數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把 6:9:15 分別用不同除數處理成 2:3:5；正確做法是三項同除 3。",
+    "不能把 0.2:0.3:0.5 只把第一項乘 10。",
+    "連比中的順序有意義，2:3:5 不等於 3:2:5。",
+    "若三個量單位不同，必須先統一單位再寫連比。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認比較的是哪些量與順序。",
+      "check": "題目要求 A:B:C 還是其他順序？"
+    },
+    {
+      "step": 2,
+      "instruction": "先統一單位。",
+      "check": "公尺、公分或公斤、公克是否混用？"
+    },
+    {
+      "step": 3,
+      "instruction": "消去分數或小數，使所有項成為整數。",
+      "check": "是否所有項同乘同一數？"
+    },
+    {
+      "step": 4,
+      "instruction": "找全部項的最大公因數並同除。",
+      "check": "最後各項最大公因數是否為 1？"
+    },
+    {
+      "step": 5,
+      "instruction": "用倍數回查原連比。",
+      "check": "化簡後能否同乘同一數還原？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "化簡 18:30:42。",
+      "solutionSteps": [
+        "三項最大公因數是 6。",
+        "三項同除 6，得 3:5:7。",
+        "3、5、7 沒有共同因數。"
+      ],
+      "answer": "3:5:7"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "化簡 1/2:3/4:5/6。",
+      "solutionSteps": [
+        "分母 2、4、6 的最小公倍數是 12。",
+        "三項同乘 12，得 6:9:10。",
+        "6、9、10 的最大公因數為 1。"
+      ],
+      "answer": "6:9:10"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "化簡 0.45:0.6:1.05。",
+      "solutionSteps": [
+        "三項同乘 100，得 45:60:105。",
+        "最大公因數是 15。",
+        "同除 15，得 3:4:7。"
+      ],
+      "answer": "3:4:7"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "判斷 4:6:10 與 10:15:25 是否相等。",
+      "solutionSteps": [
+        "4:6:10 化簡為 2:3:5。",
+        "10:15:25 化簡也為 2:3:5。",
+        "兩者可由同一最簡連比表示。"
+      ],
+      "answer": "相等"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只約掉相鄰兩項的公因數。",
+      "why": "把連比誤當成兩個互不相關的比。",
+      "correction": "找全部項共同的因數，三項同除。"
+    },
+    {
+      "mistake": "消小數時各項乘不同倍數。",
+      "why": "只想把每一項各自變整數。",
+      "correction": "選同一個 10 的次方同乘所有項。"
+    },
+    {
+      "mistake": "化簡後交換項目順序。",
+      "why": "忽略連比對應的對象。",
+      "correction": "從題目抄下 A:B:C 的順序，答案沿用。"
+    },
+    {
+      "mistake": "不同單位直接相比。",
+      "why": "只看數字。",
+      "correction": "先把所有量換成同一單位。"
+    },
+    {
+      "mistake": "把 2:3:5 解讀成總共 5 份。",
+      "why": "把最後一項誤當總份數。",
+      "correction": "總份數是 2+3+5=10。"
+    }
+  ],
+  "selfCheck": [
+    "所有量的單位一致嗎？",
+    "我是否同時處理所有項？",
+    "最終各項是否為整數？",
+    "所有項的最大公因數是否為 1？",
+    "順序是否與題目一致？"
+  ],
+  "summary": [
+    "連比比較三個以上同類量的相對倍數。",
+    "化簡必須所有項同乘或同除同一數。",
+    "分數先乘公分母，小數先乘 10 的次方。",
+    "最簡整數比的全部項最大公因數為 1。"
+  ],
+  "connections": {
+    "previous": "承接分數、小數與比的基本運算。",
+    "next": [
+      "下一技能會把連比用於分配與求實際量。",
+      "比例線段會把同一倍數關係搬到幾何圖形。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s001-v001",
+      "u18-s001-v002",
+      "u18-s001-v003",
+      "u18-s001-v004",
+      "u18-s001-v005",
+      "u18-s001-v006",
+      "u18-s001-v007",
+      "u18-s001-v008",
+      "u18-s001-v009",
+      "u18-s001-v010",
+      "u18-s001-v011",
+      "u18-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s001-cr001",
+      "u18-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "逐項檢查整數、分數與小數三種化簡流程；特別確認沒有把連比分拆成互不相干的兩個比，並明示單位與順序限制。"
+  },
+  "contentSha256": "2f41d53140086698b4d2ad7cfa1d84a9efc78428e9ee2630e1c65169dc4cb8c3"
+}

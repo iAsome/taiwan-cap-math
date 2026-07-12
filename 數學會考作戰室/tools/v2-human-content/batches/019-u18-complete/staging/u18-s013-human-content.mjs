@@ -1,0 +1,1703 @@
+// SERIALIZATION OF REVIEWED CHATGPT HUMAN-AUTHORED CONTENT.
+
+// BATCH-LOCAL STAGING ONLY. DO NOT EDIT OR ACTIVATE IN PRODUCTION.
+
+export const UNIT_ID = "u18";
+
+export const SKILL_SLOT = "s013";
+
+export const SKILL_ID = "similar-shadow-problem";
+
+export const LECTURE = {
+  "lectureId": "u18-s013-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-applications",
+  "skillId": "similar-shadow-problem",
+  "lockedSkillOrder": 13,
+  "lockedSkillTitle": "影子測量",
+  "title": "影子測量：同一時刻的陽光把高度轉成影長比例",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能以同一時刻、同一地面與平行光線建立相似三角形。",
+    "能正確配對物高與影長。",
+    "能處理影子端點、基座與局部高度問題。",
+    "能判斷不同時間或不同坡度資料不可直接相比。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "similar-height-measure",
+        "title": "利用相似測高",
+        "requiredLevel": "能運用「利用相似測高」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「利用相似測高」，先複習其核心判斷，再把方法推進到「影子測量」。"
+  },
+  "glossary": [
+    {
+      "term": "影長",
+      "definition": "物體底部到影子尖端沿地面量得的長度。"
+    },
+    {
+      "term": "太陽仰角",
+      "definition": "陽光方向與水平地面形成的銳角。"
+    },
+    {
+      "term": "平行光線",
+      "definition": "在地面尺度下，可把同一時刻的太陽光視為方向相同。"
+    },
+    {
+      "term": "同時測量",
+      "definition": "確保不同物體受光方向相同，使仰角相等。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "H/L=h/l",
+      "meaning": "同時、同地面條件下，物高與影長的比相等。"
+    },
+    {
+      "symbol": "H=(L/l)h",
+      "meaning": "用已知物體的高與影長推未知高度。"
+    },
+    {
+      "symbol": "tan θ=H/L",
+      "meaning": "只作比例理解；本單元不要求三角函數運算。"
+    }
+  ],
+  "conceptNarrative": [
+    "太陽距離很遠，同一地區同一時刻照到各物體的光線可視為平行。鉛直物體與水平地面形成直角，光線又提供相同仰角，因此高物體與其影子、小標竿與其影子形成 AA 相似三角形。",
+    "比例必須是物高對物高、影長對影長。若樹高/樹影=標竿高/標竿影，兩側都保持高除以影。",
+    "影長是從物體底部到影尖，不是從觀測者或另一物體量起。若物體立在臺座上，要看題目問的是物體本身高度還是連同臺座總高。",
+    "不同時間太陽仰角會改變；斜坡上沿坡面量得的影長也不是水平影長，因此不能直接套用平地同時測量公式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "同時影子相似模型",
+      "statement": "同一時刻、同一水平地面上，兩鉛直物體與各自影子形成的直角三角形由 AA 相似。"
+    },
+    {
+      "name": "高影比",
+      "statement": "在固定太陽仰角下，物高除以影長為定值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "H₁/L₁=H₂/L₂",
+      "conditions": [
+        "同一時刻",
+        "地面水平",
+        "物體鉛直"
+      ],
+      "meaning": "兩物體的高影比相等。"
+    },
+    {
+      "formula": "H未知=L未知×(h已知/l已知)",
+      "conditions": [
+        "已知物與未知物共用同一仰角"
+      ],
+      "meaning": "由已知標竿求未知高度。"
+    }
+  ],
+  "nonApplicableCases": [
+    "上午與下午不同時間量得的影長不能直接配對。",
+    "一個物體在斜坡、另一個在水平地面時，沿地面影長通常不可直接比較。",
+    "物體傾斜時，其長度不等於鉛直高度。",
+    "陰天散射光或多個光源形成的影子不符合單一平行光線模型。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認兩次影長是否同時且在同一水平地面量得。",
+      "check": "太陽仰角是否相同？"
+    },
+    {
+      "step": 2,
+      "instruction": "畫出兩個高—影直角三角形。",
+      "check": "物體是否鉛直？"
+    },
+    {
+      "step": 3,
+      "instruction": "說明直角與陽光仰角相等，判定 AA 相似。",
+      "check": "是否只靠圖形外觀？"
+    },
+    {
+      "step": 4,
+      "instruction": "寫高/影=高/影的同方向比例。",
+      "check": "影長端點是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "求未知高並檢查臺座、單位與合理性。",
+      "check": "題目要本體高還是總高？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "1.2 公尺標竿影長 0.8 公尺，同時一棵樹影長 6 公尺，求樹高。",
+      "solutionSteps": [
+        "同時測量，兩三角形相似。",
+        "樹高/6=1.2/0.8=1.5。",
+        "樹高=9 公尺。"
+      ],
+      "answer": "9 公尺"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "旗桿高 7.5 公尺、影長 5 公尺；建物影長 18 公尺，求建物高。",
+      "solutionSteps": [
+        "高影比 7.5/5=1.5。",
+        "建物高=18×1.5。",
+        "得到 27 公尺。"
+      ],
+      "answer": "27 公尺"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "雕像立在 1 公尺臺座上，雕像連臺座影長 4 公尺；同時 1.5 公尺標竿影長 1 公尺，求雕像本體高。",
+      "solutionSteps": [
+        "總高/4=1.5/1，所以總高 6 公尺。",
+        "雕像本體高=6-1。",
+        "得到 5 公尺。"
+      ],
+      "answer": "5 公尺"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "上午標竿高 1 公尺、影長 2 公尺；下午樹影長 8 公尺，能否直接求樹高？",
+      "solutionSteps": [
+        "測量時間不同，太陽仰角可能不同。",
+        "兩組三角形不保證相似。",
+        "資料不足，不能直接求。"
+      ],
+      "answer": "不能"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把樹高對標竿影長。",
+      "why": "交叉配對錯誤。",
+      "correction": "同一物體的高與影保持在同一比中。"
+    },
+    {
+      "mistake": "不同時間資料直接相比。",
+      "why": "忽略太陽仰角改變。",
+      "correction": "必須同時測量或證明仰角相同。"
+    },
+    {
+      "mistake": "影長從錯誤起點量。",
+      "why": "沒有辨認物體底部。",
+      "correction": "影長由物體底部量到影尖。"
+    },
+    {
+      "mistake": "臺座高度重複加上。",
+      "why": "未看清已求的是總高。",
+      "correction": "先標明 H總=H本體+H臺座。"
+    },
+    {
+      "mistake": "物體斜放仍以長度當高度。",
+      "why": "混淆物長與鉛直高。",
+      "correction": "影子相似使用鉛直高度。"
+    }
+  ],
+  "selfCheck": [
+    "兩次測量同時嗎？",
+    "地面水平且物體鉛直嗎？",
+    "比例是否高對高、影對影？",
+    "影長起點正確嗎？",
+    "是否需要扣除臺座？"
+  ],
+  "summary": [
+    "同時陽光使不同物體具有相同太陽仰角。",
+    "物高與影長形成相似直角三角形。",
+    "高影比在同一條件下固定。",
+    "不同時間、斜坡或傾斜物體需重新建模。"
+  ],
+  "connections": {
+    "previous": "利用相似測高介紹 AA 測量模型。",
+    "next": [
+      "周長比應用會把線性縮放放入模型與設計情境。",
+      "相似形素養題會結合影子、比例與誤差判讀。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u18-shadow-q010",
+      "purpose": "協助辨認「影子測量」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s013-v001",
+      "u18-s013-v002",
+      "u18-s013-v003",
+      "u18-s013-v004",
+      "u18-s013-v005",
+      "u18-s013-v006",
+      "u18-s013-v007",
+      "u18-s013-v008",
+      "u18-s013-v009",
+      "u18-s013-v010",
+      "u18-s013-v011",
+      "u18-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s013-cr001",
+      "u18-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "逐題檢查同時性、水平地面、鉛直物體與影長起點；臺座題明確區分總高與本體高，並加入不同時間不可比較的資料充分性反例。"
+  },
+  "contentSha256": "f480c57098f8ab502db53936576e5d548c971380c2181b033602d2b7caf27c9d"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u18-s013-v001",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "basic",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "同一時刻，一根高 1.2 m 的直竿影長 0.8 m。附近旗桿影長 6 m，旗桿高多少？",
+    "text": "同一時刻，一根高 1.2 m 的直竿影長 0.8 m。附近旗桿影長 6 m，旗桿高多少？",
+    "givenConditions": [
+      "兩物體直立於同一水平地面",
+      "測量在同一時刻完成"
+    ],
+    "target": "求出唯一正確選項。",
+    "choices": [
+      "9 m",
+      "4 m",
+      "7.2 m",
+      "10 m"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "影長倍率為 6÷0.8=7.5，高度也乘 7.5，得 1.2×7.5=9 m。",
+    "explanation": "同一時刻太陽光方向相同，形成相似三角形；旗桿高/6=1.2/0.8，因此旗桿高=9 m。",
+    "steps": [
+      "列出高度比等於影長比。",
+      "H/6=1.2/0.8。",
+      "H=9。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "9 m",
+        "truth": true,
+        "reason": "依獨立推導可得到 9 m，符合所有已知條件。"
+      },
+      {
+        "choice": "4 m",
+        "truth": false,
+        "reason": "把影長直接相減。"
+      },
+      {
+        "choice": "7.2 m",
+        "truth": false,
+        "reason": "只把兩個已知量相乘。"
+      },
+      {
+        "choice": "10 m",
+        "truth": false,
+        "reason": "把 6÷0.8 後再加 1.2。"
+      }
+    ],
+    "misconceptionTarget": "把高度與影長錯誤相加或相減。",
+    "prerequisiteCheck": "能列比例式並解一元一次方程式。",
+    "estimatedTimeSec": 70,
+    "unitAndRoundingCheck": "高度與影長均以公尺表示。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "直接套用同時刻的高度比等於影長比。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "650898ca62e718953dc9a39ffe3b578893f426ea7e1ed959a8ed363e3012d6d2"
+  },
+  {
+    "questionId": "u18-s013-v002",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "basic",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "同一時刻，身高 160 cm 的學生影長 120 cm。若樹高 8 m，樹影長多少？",
+    "text": "同一時刻，身高 160 cm 的學生影長 120 cm。若樹高 8 m，樹影長多少？",
+    "givenConditions": [
+      "同一時刻",
+      "地面水平"
+    ],
+    "target": "求出唯一正確選項。",
+    "choices": [
+      "4.8 m",
+      "6 m",
+      "9.6 m",
+      "10 m"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "每 4 m 高對應 3 m 影，8 m 高是 2 倍，因此影長 6 m。",
+    "explanation": "先統一單位。學生高影比=160:120=4:3，所以樹影長=8×3/4=6 m。",
+    "steps": [
+      "化簡 160:120=4:3。",
+      "樹高 8 m 對應 4 份。",
+      "影長為 8×3/4=6 m。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "4.8 m",
+        "truth": false,
+        "reason": "把 8×120÷160 的單位誤認為公分。"
+      },
+      {
+        "choice": "6 m",
+        "truth": true,
+        "reason": "依獨立推導可得到 6 m，符合所有已知條件。"
+      },
+      {
+        "choice": "9.6 m",
+        "truth": false,
+        "reason": "比例方向顛倒。"
+      },
+      {
+        "choice": "10 m",
+        "truth": false,
+        "reason": "把高度差當影長。"
+      }
+    ],
+    "misconceptionTarget": "沒有統一單位或把比倒置。",
+    "prerequisiteCheck": "能化簡比並處理公分與公尺。",
+    "estimatedTimeSec": 70,
+    "unitAndRoundingCheck": "學生資料可先化成無單位比例，答案以 m 表示。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "需由高度求影長並處理單位。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "b6255670689559a61b8418331743f335b56c7eb928b799329d5a2ff448fd016e"
+  },
+  {
+    "questionId": "u18-s013-v003",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "basic",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "使用影子法測高時，下列哪一項是必要條件？",
+    "text": "使用影子法測高時，下列哪一項是必要條件？",
+    "givenConditions": [
+      "討論一般影子測量法"
+    ],
+    "target": "判斷建立相似三角形的必要條件。",
+    "choices": [
+      "兩物體高度必須相同",
+      "兩段影子長度必須相同",
+      "待測物影子必須比參考物短",
+      "參考物與待測物須在同一時刻受近似平行的陽光照射"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "若非同一時刻，太陽高度角可能改變，高影比不再相同；所以同時測量是必要條件。",
+    "explanation": "同一時刻可視為太陽光方向相同，兩個直角三角形才具有相同銳角而相似。",
+    "steps": [
+      "辨認影子法的相似來源。",
+      "地面與直立物形成直角。",
+      "同時刻確保陽光方向一致。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "兩物體高度必須相同",
+        "truth": false,
+        "reason": "相似只要求角度相同，不要求高度相同。"
+      },
+      {
+        "choice": "兩段影子長度必須相同",
+        "truth": false,
+        "reason": "影長可不同。"
+      },
+      {
+        "choice": "待測物影子必須比參考物短",
+        "truth": false,
+        "reason": "沒有此限制。"
+      },
+      {
+        "choice": "參考物與待測物須在同一時刻受近似平行的陽光照射",
+        "truth": true,
+        "reason": "依獨立推導可得到 參考物與待測物須在同一時刻受近似平行的陽光照射，符合所有已知條件。"
+      }
+    ],
+    "misconceptionTarget": "誤以為只要有影子就能任意比較。",
+    "prerequisiteCheck": "理解 AA 相似。",
+    "estimatedTimeSec": 60,
+    "unitAndRoundingCheck": "題目量綱一致，答案不需另行四捨五入。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "辨認方法成立的核心假設。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "611e13405fa7400787192b54a90230e81c24e434b916d0040830de5bb0892010"
+  },
+  {
+    "questionId": "u18-s013-v004",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "standard",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "某塔底比標竿底高 0.5 m。同一水平基準上量得標竿高 1.5 m、影長 1 m，塔在其所在地面的影長為 8 m。塔頂相對共同水平基準的高度是多少？",
+    "text": "某塔底比標竿底高 0.5 m。同一水平基準上量得標竿高 1.5 m、影長 1 m，塔在其所在地面的影長為 8 m。塔頂相對共同水平基準的高度是多少？",
+    "givenConditions": [
+      "同一時刻",
+      "兩處地面各自水平",
+      "塔與標竿均直立"
+    ],
+    "target": "求出唯一正確選項。",
+    "choices": [
+      "12 m",
+      "8.5 m",
+      "12.5 m",
+      "13 m"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "高影比為 1.5。塔身高 8×1.5=12 m，再加底部標高 0.5 m，得 12.5 m。",
+    "explanation": "塔相對所在地面的高度為 8×1.5/1=12 m；塔底高於共同基準 0.5 m，所以塔頂高度為 12.5 m。",
+    "steps": [
+      "先用影子比例求塔身高度 12 m。",
+      "辨認題問共同基準高度。",
+      "加上塔底地勢差 0.5 m。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "12 m",
+        "truth": false,
+        "reason": "只求塔相對其地面的高度，漏加地勢差。"
+      },
+      {
+        "choice": "8.5 m",
+        "truth": false,
+        "reason": "把影長與地勢差相加。"
+      },
+      {
+        "choice": "12.5 m",
+        "truth": true,
+        "reason": "依獨立推導可得到 12.5 m，符合所有已知條件。"
+      },
+      {
+        "choice": "13 m",
+        "truth": false,
+        "reason": "重複加入地勢差。"
+      }
+    ],
+    "misconceptionTarget": "求得塔身高後忽略地面高差。",
+    "prerequisiteCheck": "能區分物體高度與頂點標高。",
+    "estimatedTimeSec": 95,
+    "unitAndRoundingCheck": "所有量均為 m。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "兩階段：先相似測高，再處理共同基準。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "5c8f9e62f47c9917fe4b6170d0c2e8d82ae6dcffff679465e6fa7d68111ea0c0"
+  },
+  {
+    "questionId": "u18-s013-v005",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "standard",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "上午 9 時，竿高 1 m、影長 1.8 m；中午 12 時，樹影長 4 m。能否直接用這兩筆資料求樹高？",
+    "text": "上午 9 時，竿高 1 m、影長 1.8 m；中午 12 時，樹影長 4 m。能否直接用這兩筆資料求樹高？",
+    "givenConditions": [
+      "未提供兩時刻太陽高度角相同"
+    ],
+    "target": "判斷資料是否足以測高。",
+    "choices": [
+      "能，樹高為 4÷1.8 m",
+      "不能，因測量時刻不同，高影比可能不同",
+      "能，樹高為 7.2 m",
+      "不能，因樹與竿高度不同"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "若竿在 9 時的高影比為 1/1.8，樹在 12 時的高影比未提供，不能推定相等，因此無唯一樹高。",
+    "explanation": "影子法要求同一時刻或相同太陽高度角。9 時與 12 時的光線角度通常不同，資料不足。",
+    "steps": [
+      "檢查測量時間。",
+      "判斷高影比是否可共用。",
+      "因時刻不同而拒絕列比例。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "能，樹高為 4÷1.8 m",
+        "truth": false,
+        "reason": "誤把不同時刻比例視為相同。"
+      },
+      {
+        "choice": "不能，因測量時刻不同，高影比可能不同",
+        "truth": true,
+        "reason": "依獨立推導可得到 不能，因測量時刻不同，高影比可能不同，符合所有已知條件。"
+      },
+      {
+        "choice": "能，樹高為 7.2 m",
+        "truth": false,
+        "reason": "直接相乘但忽略時刻。"
+      },
+      {
+        "choice": "不能，因樹與竿高度不同",
+        "truth": false,
+        "reason": "高度不同不是不能比較的原因。"
+      }
+    ],
+    "misconceptionTarget": "只看到有一組參考比例就直接套用。",
+    "prerequisiteCheck": "理解影子法的同時刻條件。",
+    "estimatedTimeSec": 75,
+    "unitAndRoundingCheck": "題目量綱一致，答案不需另行四捨五入。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "需先審核資料可比性，而非立即計算。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "01b7ea85a41cf256c44d9434a931ee3933f91bf375821108abe49cfb08f45b79"
+  },
+  {
+    "questionId": "u18-s013-v006",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "standard",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "同一時刻，1.8 m 高的竿影長量成 1.2 m；建築物影長量成 15 m。若竿影長其實是 1.25 m，使用錯誤數據會使建築物高度估計如何改變？",
+    "text": "同一時刻，1.8 m 高的竿影長量成 1.2 m；建築物影長量成 15 m。若竿影長其實是 1.25 m，使用錯誤數據會使建築物高度估計如何改變？",
+    "givenConditions": [
+      "建築物影長與竿影長同時測得",
+      "其他測量無誤"
+    ],
+    "target": "求出唯一正確選項。",
+    "choices": [
+      "原估計偏小 0.9 m",
+      "原估計偏大 1.5 m",
+      "兩次估計相同",
+      "原估計偏大 0.9 m"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "參考影長被量得過短，使高影比被高估；精算差值為 22.5−21.6=0.9 m。",
+    "explanation": "錯誤估計=15×1.8/1.2=22.5 m；正確估計=15×1.8/1.25=21.6 m，故原估計偏大 0.9 m。",
+    "steps": [
+      "分別用錯誤與正確竿影長計算。",
+      "22.5−21.6=0.9。",
+      "判定原估計較大。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "原估計偏小 0.9 m",
+        "truth": false,
+        "reason": "方向相反。"
+      },
+      {
+        "choice": "原估計偏大 1.5 m",
+        "truth": false,
+        "reason": "沒有正確比較兩次估計。"
+      },
+      {
+        "choice": "兩次估計相同",
+        "truth": false,
+        "reason": "參考影長改變會改變比例。"
+      },
+      {
+        "choice": "原估計偏大 0.9 m",
+        "truth": true,
+        "reason": "依獨立推導可得到 原估計偏大 0.9 m，符合所有已知條件。"
+      }
+    ],
+    "misconceptionTarget": "只判斷誤差方向，沒有算實際差值。",
+    "prerequisiteCheck": "能比較兩個比例估計值。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingCheck": "兩次結果皆以 m 計算，差值亦為 m。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "要建立兩個模型並比較測量誤差。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "6b5567dd597ae14a9aadd05662fdbb13ba40822ecf63253131a98ba2913dd243"
+  },
+  {
+    "questionId": "u18-s013-v007",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "advanced",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "同一時刻，甲竿高 1.5 m、影長 x m；乙塔高 (4x+3) m、影長 9 m。若兩者高影比相同，x 為何？",
+    "text": "同一時刻，甲竿高 1.5 m、影長 x m；乙塔高 (4x+3) m、影長 9 m。若兩者高影比相同，x 為何？",
+    "givenConditions": [
+      "x>0",
+      "同一時刻"
+    ],
+    "target": "求出唯一正確選項。",
+    "choices": [
+      "0.75",
+      "2",
+      "1.5",
+      "2.25"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "代入 x=1.5：甲高影比 1.5/1.5=1；乙高為 9 m，影長 9 m，比值也為 1，故 x=1.5。",
+    "explanation": "1.5/x=(4x+3)/9。交叉相乘得 13.5=4x²+3x，即 8x²+6x−27=0=(4x−6)(2x+4.5)；正根 x=1.5。",
+    "steps": [
+      "列 1.5/x=(4x+3)/9。",
+      "整理為 8x²+6x−27=0。",
+      "取正根 x=1.5。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "0.75",
+        "truth": false,
+        "reason": "使用原先錯誤的交叉相乘常數。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "代入後兩邊比值不同。"
+      },
+      {
+        "choice": "1.5",
+        "truth": true,
+        "reason": "依獨立推導可得到 1.5，符合所有已知條件。"
+      },
+      {
+        "choice": "2.25",
+        "truth": false,
+        "reason": "取了負根的絕對值。"
+      }
+    ],
+    "misconceptionTarget": "解比例中的二次式時漏掉正值條件。",
+    "prerequisiteCheck": "能解可因式分解的二次方程式。",
+    "estimatedTimeSec": 120,
+    "unitAndRoundingCheck": "x 表示影長，單位為 m。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "比例模型導出二次方程式。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "8d763ff1c36a360c213f2b17ab376ad1e985d9262d6678e6e8f9b97336e1e1b9"
+  },
+  {
+    "questionId": "u18-s013-v008",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "advanced",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "兩根竿同時測影。甲高 120 cm、影長 80 cm；乙影長讀值為 201 cm。若尺的最小刻度為 2 cm，乙高度最合理的記錄為何？",
+    "text": "兩根竿同時測影。甲高 120 cm、影長 80 cm；乙影長讀值為 201 cm。若尺的最小刻度為 2 cm，乙高度最合理的記錄為何？",
+    "givenConditions": [
+      "甲乙同時測量",
+      "尺最小刻度 2 cm"
+    ],
+    "target": "求出唯一正確選項。",
+    "choices": [
+      "約 3.02 m",
+      "3.015 m，且視為完全精確",
+      "2.68 m",
+      "3.20 m"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "尺最小刻度 2 cm，不宜把推估寫成無誤差的 3.015000 m；約 3.02 m較合理。",
+    "explanation": "高影比=120/80=1.5，乙高≈201×1.5=301.5 cm=3.015 m；依量測精度記為約 3.02 m。",
+    "steps": [
+      "求高影比 1.5。",
+      "算 201×1.5=301.5 cm。",
+      "換成 3.015 m 並合理取到公分。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "約 3.02 m",
+        "truth": true,
+        "reason": "依獨立推導可得到 約 3.02 m，符合所有已知條件。"
+      },
+      {
+        "choice": "3.015 m，且視為完全精確",
+        "truth": false,
+        "reason": "精度表達過度。"
+      },
+      {
+        "choice": "2.68 m",
+        "truth": false,
+        "reason": "比例計算錯誤。"
+      },
+      {
+        "choice": "3.20 m",
+        "truth": false,
+        "reason": "把 201 近似成 200 後又誤算。"
+      }
+    ],
+    "misconceptionTarget": "忽略量測工具精度，給出過多有效位數。",
+    "prerequisiteCheck": "能換算 cm 與 m，並理解合理近似。",
+    "estimatedTimeSec": 110,
+    "unitAndRoundingCheck": "301.5 cm=3.015 m，最終合理近似為 3.02 m。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "結合比例、單位與量測精度判斷。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "4a2ad3466e6f4abbe42f07f6482a5dd2ccd9998550773d80b4c17b256f494920"
+  },
+  {
+    "questionId": "u18-s013-v009",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "advanced",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "某日同時測得 2 m 竿的影長為 1.6 m。若坡面與水平面夾角不可忽略，直接用沿坡面量得的 12 m 影長求樹高，主要問題是什麼？",
+    "text": "某日同時測得 2 m 竿的影長為 1.6 m。若坡面與水平面夾角不可忽略，直接用沿坡面量得的 12 m 影長求樹高，主要問題是什麼？",
+    "givenConditions": [
+      "參考竿在水平地面",
+      "樹影沿有坡度地面量測"
+    ],
+    "target": "求出唯一正確選項。",
+    "choices": [
+      "太陽光不是直線",
+      "樹高一定等於 15 m",
+      "比例法只適用於公分",
+      "沿坡影長不是水平距離，三角形對應邊不一致"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "相似比例必須配對同類邊。沿坡面距離比其水平投影長，直接代入會高估底邊並影響高度。",
+    "explanation": "參考竿的影長若在水平地面量得，對應的是水平底邊；坡面上的 12 m 是斜距，不能直接與水平底邊比較。",
+    "steps": [
+      "辨認兩個三角形的底邊定義。",
+      "檢查坡面長與水平距離不同。",
+      "判定資料需投影或補充坡角。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "太陽光不是直線",
+        "truth": false,
+        "reason": "在此模型中陽光近似直線。"
+      },
+      {
+        "choice": "樹高一定等於 15 m",
+        "truth": false,
+        "reason": "這正是錯誤模型算出的值，不能保證。"
+      },
+      {
+        "choice": "比例法只適用於公分",
+        "truth": false,
+        "reason": "比例與單位大小無關。"
+      },
+      {
+        "choice": "沿坡影長不是水平距離，三角形對應邊不一致",
+        "truth": true,
+        "reason": "依獨立推導可得到 沿坡影長不是水平距離，三角形對應邊不一致，符合所有已知條件。"
+      }
+    ],
+    "misconceptionTarget": "只看數字與單位相同，忽略幾何方向。",
+    "prerequisiteCheck": "理解相似三角形中對應邊須同類。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingCheck": "題目量綱一致，答案不需另行四捨五入。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "要審核地形造成的模型失效。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "626636061f323e0809610f73f6413a1e73deac2993da901ebbb7dec9a23dbe15"
+  },
+  {
+    "questionId": "u18-s013-v010",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "literacy",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "校園測量圖中，標竿 AB 高 1.5 m、影子 BC 長 2 m；旗桿 DE 的影子 EF 長 14 m，A、D 為頂端，B、E 為底端，C、F 為影端。依圖可求 DE 為何？",
+    "text": "校園測量圖中，標竿 AB 高 1.5 m、影子 BC 長 2 m；旗桿 DE 的影子 EF 長 14 m，A、D 為頂端，B、E 為底端，C、F 為影端。依圖可求 DE 為何？",
+    "givenConditions": [
+      "圖示不按比例",
+      "兩物體同時受陽光照射"
+    ],
+    "target": "求出唯一正確選項。",
+    "choices": [
+      "7 m",
+      "12.5 m",
+      "10.5 m",
+      "21 m"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "影長放大倍率 14/2=7，旗桿高度也為 1.5×7=10.5 m。",
+    "explanation": "△ABC 與 △DEF 因直角及共同陽光角相等而相似，DE/14=1.5/2，故 DE=10.5 m。",
+    "steps": [
+      "從圖辨認 AB↔DE、BC↔EF。",
+      "列 DE/14=1.5/2。",
+      "求 DE=10.5。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "7 m",
+        "truth": false,
+        "reason": "把 14÷2 當高度。"
+      },
+      {
+        "choice": "12.5 m",
+        "truth": false,
+        "reason": "把 14−2 後加 1.5。"
+      },
+      {
+        "choice": "10.5 m",
+        "truth": true,
+        "reason": "依獨立推導可得到 10.5 m，符合所有已知條件。"
+      },
+      {
+        "choice": "21 m",
+        "truth": false,
+        "reason": "只做 14×1.5 未除以 2。"
+      }
+    ],
+    "misconceptionTarget": "把圖上的非對應邊互相比較。",
+    "prerequisiteCheck": "能從圖形標記辨認對應邊。",
+    "estimatedTimeSec": 100,
+    "unitAndRoundingCheck": "答案以 m 表示。",
+    "ambiguityAndBoundaryAudit": "圖說明 A、D 是頂端且 B、E 是底端，對應關係唯一；圖不按比例。",
+    "difficultyReason": "需要讀取圖形標記後建立影子相似比例。",
+    "literacyContextNecessity": "校園實測情境需要圖形呈現頂點、底點與影端的對應。",
+    "visualMode": "figure-supported",
+    "figureId": "u18-shadow-q010",
+    "drawingSpecReference": "figures/u18/u18-shadow-q010.svg",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "857c33dd4e31cb69c0b72a8abe97bd96bbd1827943435d54229044f9da135957"
+  },
+  {
+    "questionId": "u18-s013-v011",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "literacy",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "工程人員在同一分鐘測得：1.8 m 標竿影長 1.2 m；路燈影長 4.6 m。路燈上方還有 0.3 m 不計入燈桿高度的裝飾。估計燈桿本體高度為何？",
+    "text": "工程人員在同一分鐘測得：1.8 m 標竿影長 1.2 m；路燈影長 4.6 m。路燈上方還有 0.3 m 不計入燈桿高度的裝飾。估計燈桿本體高度為何？",
+    "givenConditions": [
+      "標竿與路燈同時測量",
+      "裝飾垂直延伸於燈桿頂部"
+    ],
+    "target": "求出唯一正確選項。",
+    "choices": [
+      "6.6 m",
+      "6.9 m",
+      "3.07 m",
+      "7.2 m"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "高影比為 1.5，4.6 m 影對應 6.9 m 總高；裝飾不計本體，故 6.6 m。",
+    "explanation": "頂端總高=4.6×1.8/1.2=6.9 m；燈桿本體=6.9−0.3=6.6 m。",
+    "steps": [
+      "用影子比例求含裝飾總高。",
+      "辨認題目要本體高度。",
+      "扣除 0.3 m。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6.6 m",
+        "truth": true,
+        "reason": "依獨立推導可得到 6.6 m，符合所有已知條件。"
+      },
+      {
+        "choice": "6.9 m",
+        "truth": false,
+        "reason": "算到頂端總高，未扣除裝飾。"
+      },
+      {
+        "choice": "3.07 m",
+        "truth": false,
+        "reason": "把比例倒置。"
+      },
+      {
+        "choice": "7.2 m",
+        "truth": false,
+        "reason": "把裝飾高度加了兩次。"
+      }
+    ],
+    "misconceptionTarget": "沒有區分總高與本體高度。",
+    "prerequisiteCheck": "能做兩階段情境計算。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingCheck": "全程使用 m，不需換單位。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "情境包含相似推估與結構扣除。",
+    "literacyContextNecessity": "裝飾高度是否列入工程規格會改變最後答案，不能刪除。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "fa3d843b12f5f5a21c02cdab7772b6271f79959aa8c9b6000bf92ba4c4cca570"
+  },
+  {
+    "questionId": "u18-s013-v012",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "difficulty": "literacy",
+    "itemType": "multiple-choice",
+    "type": "mc",
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+    "prompt": "三組同學同時測同一棵樹，得到以下估計：甲用 1.5 m 竿與 1.0 m 影，樹影 8.0 m；乙用 1.2 m 竿與 0.8 m 影，樹影 8.1 m；丙用 1.8 m 竿與 1.2 m 影，樹影 7.9 m。哪個結論最合理？",
+    "text": "三組同學同時測同一棵樹，得到以下估計：甲用 1.5 m 竿與 1.0 m 影，樹影 8.0 m；乙用 1.2 m 竿與 0.8 m 影，樹影 8.1 m；丙用 1.8 m 竿與 1.2 m 影，樹影 7.9 m。哪個結論最合理？",
+    "givenConditions": [
+      "三組測量近乎同時",
+      "地面條件相同"
+    ],
+    "target": "求出唯一正確選項。",
+    "choices": [
+      "甲資料顯示樹高 8 m",
+      "三組高影比都為 1.5，樹高約 12 m，差異可視為讀值誤差",
+      "乙資料與其他兩組比例不同",
+      "丙資料證明樹高精確等於 11.85 m"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "平均估計=(12+12.15+11.85)/3=12 m；小幅差異符合影端判讀誤差。",
+    "explanation": "三組參考高影比皆為 1.5。估計分別 12.0、12.15、11.85 m，集中在 12 m 附近。",
+    "steps": [
+      "驗算三組參考高影比。",
+      "各自乘上樹影長。",
+      "比較估計值並作合理結論。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "甲資料顯示樹高 8 m",
+        "truth": false,
+        "reason": "忽略高影比。"
+      },
+      {
+        "choice": "三組高影比都為 1.5，樹高約 12 m，差異可視為讀值誤差",
+        "truth": true,
+        "reason": "依獨立推導可得到 三組高影比都為 1.5，樹高約 12 m，差異可視為讀值誤差，符合所有已知條件。"
+      },
+      {
+        "choice": "乙資料與其他兩組比例不同",
+        "truth": false,
+        "reason": "1.2/0.8 仍為 1.5。"
+      },
+      {
+        "choice": "丙資料證明樹高精確等於 11.85 m",
+        "truth": false,
+        "reason": "單一量測不可宣稱完全精確。"
+      }
+    ],
+    "misconceptionTarget": "看到不同估計值就認為比例法失效。",
+    "prerequisiteCheck": "能比較多組比例資料並理解量測誤差。",
+    "estimatedTimeSec": 120,
+    "unitAndRoundingCheck": "三組估計皆以 m 表示。",
+    "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+    "difficultyReason": "需整合多筆量測、比值一致性與誤差解讀。",
+    "literacyContextNecessity": "多組實測資料的可靠性判讀是情境核心。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "2e558c9dd4bce2e45a4c1b25ec0cd64c0dd41e7b62ff70eb29ddbf1044f50002"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u18-s013-cr001",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "itemType": "constructed-response",
+    "prompt": "同一時刻，1.5 m標竿影長1.0 m；樹影沿水平地面長7.4 m。求樹高。若影端讀值可能有±0.1 m誤差，樹高可能範圍為何？",
+    "requiredWork": "先求中心估計，再將影長上下界分別代入同一高影比。",
+    "standardSolution": "高影比=1.5/1.0=1.5，中心樹高=7.4×1.5=11.1 m。影長範圍7.3至7.5 m，因此樹高範圍10.95至11.25 m。",
+    "alternativeMethod": "高度誤差=1.5×0.1=0.15 m，所以11.1±0.15，即10.95至11.25。",
+    "reasoningSteps": [
+      "求高影比1.5。",
+      "中心估計11.1 m。",
+      "取影長下界7.3與上界7.5。",
+      "分別乘1.5得範圍。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "中心值與10.95至11.25 m範圍全部正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "中心值正確且誤差處理方向正確，但一個端點算錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "只求中心值或只把±0.1直接當高度誤差。"
+      },
+      {
+        "score": 0,
+        "criteria": "沒有呈現可辨識的相關比例或相似推理，或答案與過程均無法支持題目要求。"
+      }
+    ],
+    "partialCreditRules": [
+      "比例式或相似判定正確但後續算術錯誤，可依已完成的關鍵步驟給 2 分。",
+      "只有正確公式但沒有把題目數據正確代入，通常給 1 分。"
+    ],
+    "followThroughPolicy": "若早期僅有單一算術錯誤，後續使用該錯誤值的推理一致且方法正確，保留後續方法分；不得因錯誤值巧合得到正確答案而補足滿分。",
+    "unitAndNotationRules": "所有長度以m表示；範圍端點由小到大書寫。",
+    "answerOnlyPolicy": "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "independentReview": {
+      "decision": "pass",
+      "reviewNote": "用端點法與誤差倍率法交叉驗算，範圍一致。",
+      "reviewVersion": "human-cr-review-r1.0",
+      "reviewedAt": "2026-07-12",
+      "scopeCheck": "Taiwan junior-high CAP mathematics",
+      "rubricSpecificityCheck": "pass"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "contentSha256": "43d3022d5b60727bf5af46325bc87e4deb476515e41a34189d4a564f56106fe8"
+  },
+  {
+    "questionId": "u18-s013-cr002",
+    "unitId": "u18",
+    "numericUnitId": 18,
+    "topicId": "u18-applications",
+    "skillId": "similar-shadow-problem",
+    "lockedSkillOrder": 13,
+    "itemType": "constructed-response",
+    "prompt": "學生在9:00測得1 m竿影長1.7 m，在9:20測得樹影長8.5 m，未提供太陽高度角變化。說明為何不能可靠求樹高，並提出一種可行的補測方案。",
+    "requiredWork": "必須指出非同時測量使高影比可能改變，並提出能恢復同一光線角條件的方案。",
+    "standardSolution": "兩筆資料相隔20分鐘，太陽高度角可能改變，因此1/1.7不能直接當作9:20樹的高影比。可在9:20同時重新量竿影，或在9:00同時量樹影；取得同時刻資料後再列比例。",
+    "alternativeMethod": "若另有可靠太陽高度角資料，也可分別用正切關係校正；但不在本單元必要方法內。",
+    "reasoningSteps": [
+      "辨認時間不同。",
+      "說明太陽光角度與高影比可能改變。",
+      "拒絕直接套比例。",
+      "提出同時補測方案。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "原因與可行補測方案都完整，且不虛構樹高。"
+      },
+      {
+        "score": 2,
+        "criteria": "正確指出不能求但補測方案不夠具體；或方案正確但原因說明簡略。"
+      },
+      {
+        "score": 1,
+        "criteria": "只說『資料不足』沒有指出時刻條件。"
+      },
+      {
+        "score": 0,
+        "criteria": "沒有呈現可辨識的相關比例或相似推理，或答案與過程均無法支持題目要求。"
+      }
+    ],
+    "partialCreditRules": [
+      "比例式或相似判定正確但後續算術錯誤，可依已完成的關鍵步驟給 2 分。",
+      "只有正確公式但沒有把題目數據正確代入，通常給 1 分。"
+    ],
+    "followThroughPolicy": "若早期僅有單一算術錯誤，後續使用該錯誤值的推理一致且方法正確，保留後續方法分；不得因錯誤值巧合得到正確答案而補足滿分。",
+    "unitAndNotationRules": "本題重點是方法有效性，不需給高度數值。",
+    "answerOnlyPolicy": "只寫「不能」不給理由，給1分；直接算5 m不得分。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecReference": null,
+    "independentReview": {
+      "decision": "pass",
+      "reviewNote": "檢查資料確實缺少同時刻比例或角度校正，任何唯一數值都屬無根據。",
+      "reviewVersion": "human-cr-review-r1.0",
+      "reviewedAt": "2026-07-12",
+      "scopeCheck": "Taiwan junior-high CAP mathematics",
+      "rubricSpecificityCheck": "pass"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "contentSha256": "4bce16d870381d7c73b17dde1e3e7b68b42b2352ec26f1335135a6254df3a6e2"
+  }
+];
+
+export const SEMANTIC_REVIEWS = [
+  {
+    "reviewId": "u18-s013-v001-semantic-review-r1",
+    "questionId": "u18-s013-v001",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "650898ca62e718953dc9a39ffe3b578893f426ea7e1ed959a8ed363e3012d6d2",
+    "independentSolution": "影長倍率為 6÷0.8=7.5，高度也乘 7.5，得 1.2×7.5=9 m。",
+    "derivedAnswer": "9 m",
+    "storedAnswer": "9 m",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "高度與影長均以公尺表示。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "直接套用同時刻的高度比等於影長比。",
+    "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
+    "reviewerNote": "重新由已知條件獨立計算：影長倍率為 6÷0.8=7.5，高度也乘 7.5，得 1.2×7.5=9 m。 四個選項逐一核對後，只有「9 m」符合；主要排除點是「把高度與影長錯誤相加或相減。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v002-semantic-review-r1",
+    "questionId": "u18-s013-v002",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "b6255670689559a61b8418331743f335b56c7eb928b799329d5a2ff448fd016e",
+    "independentSolution": "每 4 m 高對應 3 m 影，8 m 高是 2 倍，因此影長 6 m。",
+    "derivedAnswer": "6 m",
+    "storedAnswer": "6 m",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "學生資料可先化成無單位比例，答案以 m 表示。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "需由高度求影長並處理單位。",
+    "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
+    "reviewerNote": "重新由已知條件獨立計算：每 4 m 高對應 3 m 影，8 m 高是 2 倍，因此影長 6 m。 四個選項逐一核對後，只有「6 m」符合；主要排除點是「沒有統一單位或把比倒置。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v003-semantic-review-r1",
+    "questionId": "u18-s013-v003",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "611e13405fa7400787192b54a90230e81c24e434b916d0040830de5bb0892010",
+    "independentSolution": "若非同一時刻，太陽高度角可能改變，高影比不再相同；所以同時測量是必要條件。",
+    "derivedAnswer": "參考物與待測物須在同一時刻受近似平行的陽光照射",
+    "storedAnswer": "參考物與待測物須在同一時刻受近似平行的陽光照射",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「判斷建立相似三角形的必要條件。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "題目量綱一致，答案不需另行四捨五入。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "辨認方法成立的核心假設。",
+    "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
+    "reviewerNote": "重新由已知條件獨立計算：若非同一時刻，太陽高度角可能改變，高影比不再相同；所以同時測量是必要條件。 四個選項逐一核對後，只有「參考物與待測物須在同一時刻受近似平行的陽光照射」符合；主要排除點是「誤以為只要有影子就能任意比較。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v004-semantic-review-r1",
+    "questionId": "u18-s013-v004",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "5c8f9e62f47c9917fe4b6170d0c2e8d82ae6dcffff679465e6fa7d68111ea0c0",
+    "independentSolution": "高影比為 1.5。塔身高 8×1.5=12 m，再加底部標高 0.5 m，得 12.5 m。",
+    "derivedAnswer": "12.5 m",
+    "storedAnswer": "12.5 m",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "所有量均為 m。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "兩階段：先相似測高，再處理共同基準。",
+    "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
+    "reviewerNote": "重新由已知條件獨立計算：高影比為 1.5。塔身高 8×1.5=12 m，再加底部標高 0.5 m，得 12.5 m。 四個選項逐一核對後，只有「12.5 m」符合；主要排除點是「求得塔身高後忽略地面高差。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v005-semantic-review-r1",
+    "questionId": "u18-s013-v005",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "01b7ea85a41cf256c44d9434a931ee3933f91bf375821108abe49cfb08f45b79",
+    "independentSolution": "若竿在 9 時的高影比為 1/1.8，樹在 12 時的高影比未提供，不能推定相等，因此無唯一樹高。",
+    "derivedAnswer": "不能，因測量時刻不同，高影比可能不同",
+    "storedAnswer": "不能，因測量時刻不同，高影比可能不同",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「判斷資料是否足以測高。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "題目量綱一致，答案不需另行四捨五入。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "需先審核資料可比性，而非立即計算。",
+    "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
+    "reviewerNote": "重新由已知條件獨立計算：若竿在 9 時的高影比為 1/1.8，樹在 12 時的高影比未提供，不能推定相等，因此無唯一樹高。 四個選項逐一核對後，只有「不能，因測量時刻不同，高影比可能不同」符合；主要排除點是「只看到有一組參考比例就直接套用。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v006-semantic-review-r1",
+    "questionId": "u18-s013-v006",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "6b5567dd597ae14a9aadd05662fdbb13ba40822ecf63253131a98ba2913dd243",
+    "independentSolution": "參考影長被量得過短，使高影比被高估；精算差值為 22.5−21.6=0.9 m。",
+    "derivedAnswer": "原估計偏大 0.9 m",
+    "storedAnswer": "原估計偏大 0.9 m",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "兩次結果皆以 m 計算，差值亦為 m。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "要建立兩個模型並比較測量誤差。",
+    "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
+    "reviewerNote": "重新由已知條件獨立計算：參考影長被量得過短，使高影比被高估；精算差值為 22.5−21.6=0.9 m。 四個選項逐一核對後，只有「原估計偏大 0.9 m」符合；主要排除點是「只判斷誤差方向，沒有算實際差值。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v007-semantic-review-r1",
+    "questionId": "u18-s013-v007",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "8d763ff1c36a360c213f2b17ab376ad1e985d9262d6678e6e8f9b97336e1e1b9",
+    "independentSolution": "代入 x=1.5：甲高影比 1.5/1.5=1；乙高為 9 m，影長 9 m，比值也為 1，故 x=1.5。",
+    "derivedAnswer": "1.5",
+    "storedAnswer": "1.5",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "x 表示影長，單位為 m。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "比例模型導出二次方程式。",
+    "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
+    "reviewerNote": "重新由已知條件獨立計算：代入 x=1.5：甲高影比 1.5/1.5=1；乙高為 9 m，影長 9 m，比值也為 1，故 x=1.5。 四個選項逐一核對後，只有「1.5」符合；主要排除點是「解比例中的二次式時漏掉正值條件。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v008-semantic-review-r1",
+    "questionId": "u18-s013-v008",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "4a2ad3466e6f4abbe42f07f6482a5dd2ccd9998550773d80b4c17b256f494920",
+    "independentSolution": "尺最小刻度 2 cm，不宜把推估寫成無誤差的 3.015000 m；約 3.02 m較合理。",
+    "derivedAnswer": "約 3.02 m",
+    "storedAnswer": "約 3.02 m",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "301.5 cm=3.015 m，最終合理近似為 3.02 m。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "結合比例、單位與量測精度判斷。",
+    "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
+    "reviewerNote": "重新由已知條件獨立計算：尺最小刻度 2 cm，不宜把推估寫成無誤差的 3.015000 m；約 3.02 m較合理。 四個選項逐一核對後，只有「約 3.02 m」符合；主要排除點是「忽略量測工具精度，給出過多有效位數。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v009-semantic-review-r1",
+    "questionId": "u18-s013-v009",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "626636061f323e0809610f73f6413a1e73deac2993da901ebbb7dec9a23dbe15",
+    "independentSolution": "相似比例必須配對同類邊。沿坡面距離比其水平投影長，直接代入會高估底邊並影響高度。",
+    "derivedAnswer": "沿坡影長不是水平距離，三角形對應邊不一致",
+    "storedAnswer": "沿坡影長不是水平距離，三角形對應邊不一致",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "題目量綱一致，答案不需另行四捨五入。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "要審核地形造成的模型失效。",
+    "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
+    "reviewerNote": "重新由已知條件獨立計算：相似比例必須配對同類邊。沿坡面距離比其水平投影長，直接代入會高估底邊並影響高度。 四個選項逐一核對後，只有「沿坡影長不是水平距離，三角形對應邊不一致」符合；主要排除點是「只看數字與單位相同，忽略幾何方向。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v010-semantic-review-r1",
+    "questionId": "u18-s013-v010",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "857c33dd4e31cb69c0b72a8abe97bd96bbd1827943435d54229044f9da135957",
+    "independentSolution": "影長放大倍率 14/2=7，旗桿高度也為 1.5×7=10.5 m。",
+    "derivedAnswer": "10.5 m",
+    "storedAnswer": "10.5 m",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "圖說明 A、D 是頂端且 B、E 是底端，對應關係唯一；圖不按比例。",
+      "units": "答案以 m 表示。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "需要讀取圖形標記後建立影子相似比例。",
+    "literacyNecessityReview": "校園實測情境需要圖形呈現頂點、底點與影端的對應。",
+    "reviewerNote": "重新由已知條件獨立計算：影長放大倍率 14/2=7，旗桿高度也為 1.5×7=10.5 m。 四個選項逐一核對後，只有「10.5 m」符合；主要排除點是「把圖上的非對應邊互相比較。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v011-semantic-review-r1",
+    "questionId": "u18-s013-v011",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "fa3d843b12f5f5a21c02cdab7772b6271f79959aa8c9b6000bf92ba4c4cca570",
+    "independentSolution": "高影比為 1.5，4.6 m 影對應 6.9 m 總高；裝飾不計本體，故 6.6 m。",
+    "derivedAnswer": "6.6 m",
+    "storedAnswer": "6.6 m",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "全程使用 m，不需換單位。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "情境包含相似推估與結構扣除。",
+    "literacyNecessityReview": "裝飾高度是否列入工程規格會改變最後答案，不能刪除。",
+    "reviewerNote": "重新由已知條件獨立計算：高影比為 1.5，4.6 m 影對應 6.9 m 總高；裝飾不計本體，故 6.6 m。 四個選項逐一核對後，只有「6.6 m」符合；主要排除點是「沒有區分總高與本體高度。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "reviewId": "u18-s013-v012-semantic-review-r1",
+    "questionId": "u18-s013-v012",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "reviewVersion": "human-review-r3.0",
+    "reviewedAt": "2026-07-12",
+    "contentSha256": "2e558c9dd4bce2e45a4c1b25ec0cd64c0dd41e7b62ff70eb29ddbf1044f50002",
+    "independentSolution": "平均估計=(12+12.15+11.85)/3=12 m；小幅差異符合影端判讀誤差。",
+    "derivedAnswer": "三組高影比都為 1.5，樹高約 12 m，差異可視為讀值誤差",
+    "storedAnswer": "三組高影比都為 1.5，樹高約 12 m，差異可視為讀值誤差",
+    "answerMatch": true,
+    "uniqueCorrectAnswer": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "ambiguityChecks": {
+      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
+      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
+      "units": "三組估計皆以 m 表示。",
+      "scope": "只使用國中會考範圍內的「影子測量」概念，未要求高中延伸。"
+    },
+    "difficultyReason": "需整合多筆量測、比值一致性與誤差解讀。",
+    "literacyNecessityReview": "多組實測資料的可靠性判讀是情境核心。",
+    "reviewerNote": "重新由已知條件獨立計算：平均估計=(12+12.15+11.85)/3=12 m；小幅差異符合影端判讀誤差。 四個選項逐一核對後，只有「三組高影比都為 1.5，樹高約 12 m，差異可視為讀值誤差」符合；主要排除點是「看到不同估計值就認為比例法失效。」。",
+    "reviewerDecision": "pass",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  }
+];
+
+export const DRAWING_SPECS = [
+  {
+    "figureId": "u18-shadow-q010",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "svgPath": "figures/u18/u18-shadow-q010.svg",
+    "canvas": {
+      "width": 640,
+      "height": 420,
+      "viewBox": "0 0 640 420"
+    },
+    "title": "標桿與旗桿的同時刻影子",
+    "altText": "同一水平地面上的標桿與旗桿及其影子，標示1.5公尺、2公尺與14公尺。",
+    "drawingSpec": {
+      "purpose": "呈現同時刻影子法的高影對應。",
+      "coordinateSystem": "SVG origin at upper-left; x increases rightward and y downward.",
+      "exactGeometry": {
+        "A": [
+          145,
+          235
+        ],
+        "B": [
+          145,
+          345
+        ],
+        "C": [
+          260,
+          345
+        ],
+        "D": [
+          440,
+          105
+        ],
+        "E": [
+          440,
+          345
+        ],
+        "F": [
+          590,
+          345
+        ]
+      },
+      "labels": {
+        "AB": "1.5 m",
+        "BC": "2 m",
+        "EF": "14 m",
+        "DE": "unknown"
+      },
+      "lineRules": {
+        "visible": [
+          "AB",
+          "BC",
+          "DE",
+          "EF"
+        ],
+        "dashed": [
+          "AC",
+          "DF"
+        ],
+        "parallel": [
+          "AC",
+          "DF"
+        ]
+      },
+      "symbolsAndMarks": {
+        "rightAngles": [
+          "ABC",
+          "DEF"
+        ]
+      },
+      "scalePolicy": "not-to-scale",
+      "visualInferenceWarning": "圖形不按比例；只能依標示與題目條件推理。",
+      "mobileConstraints": "At 320 CSS px width, primary labels must remain at least 9 px apparent height and no label may overlap a segment.",
+      "accessibility": {
+        "title": "標桿與旗桿的同時刻影子",
+        "description": "左側標桿AB高1.5公尺、影BC長2公尺；右側旗桿DE高未知、影EF長14公尺；兩條陽光斜線平行。",
+        "altText": "同一水平地面上的標桿與旗桿及其影子，標示1.5公尺、2公尺與14公尺。"
+      }
+    },
+    "svgAssertions": [
+      "id=\"ground-bcef\"",
+      "id=\"rod-ab-shadow\"",
+      "id=\"pole-de-shadow\"",
+      "14 m"
+    ],
+    "figureReview": {
+      "decision": "pass",
+      "reviewedAt": "2026-07-12",
+      "geometryCheck": "pass",
+      "mobileReadability": "pass",
+      "answerLeakageCheck": "pass",
+      "reviewNote": "兩底邊共線、兩物體垂直、光線斜率視覺相近；旗桿高度沒有數值或刻痕提示。"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "contentSha256": "cfd745bdeeb709e519f4f6115d5ba9ee9b7aea281c9705e03e092d4bcc22d77e"
+  }
+];
+

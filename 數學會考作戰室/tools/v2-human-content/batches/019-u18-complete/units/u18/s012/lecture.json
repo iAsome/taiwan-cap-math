@@ -1,0 +1,259 @@
+{
+  "lectureId": "u18-s012-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-applications",
+  "skillId": "similar-height-measure",
+  "lockedSkillOrder": 12,
+  "lockedSkillTitle": "利用相似測高",
+  "title": "利用相似測高：把難量的高度換成可量的水平距離",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認測高情境中的兩個相似直角三角形。",
+    "能說明相似成立的角度理由。",
+    "能建立高度與水平距離的正確對應比例。",
+    "能處理觀測者眼高、鏡面位置或基準高度的修正。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "similar-ratio-area",
+        "title": "相似比與面積比",
+        "requiredLevel": "能運用「相似比與面積比」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「相似比與面積比」，先複習其核心判斷，再把方法推進到「利用相似測高」。"
+  },
+  "glossary": [
+    {
+      "term": "視線",
+      "definition": "觀測者眼睛到目標頂端的直線。"
+    },
+    {
+      "term": "水平距離",
+      "definition": "沿地面量得的距離，與鉛直高度形成直角。"
+    },
+    {
+      "term": "眼高",
+      "definition": "觀測者眼睛離地面的高度；若比例只求眼睛以上高度，最後須加回。"
+    },
+    {
+      "term": "鏡面測高",
+      "definition": "利用入射角等於反射角，使兩個直角三角形相似的測量方法。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "H/D=h/d",
+      "meaning": "在兩個相似直角三角形中，高度比等於水平距離比。"
+    },
+    {
+      "symbol": "H總=H眼上+h眼",
+      "meaning": "若比例求得的是目標頂端高於眼睛水平線的高度，需加眼高。"
+    },
+    {
+      "symbol": "∠入射=∠反射",
+      "meaning": "鏡面法提供一組相等銳角。"
+    }
+  ],
+  "conceptNarrative": [
+    "直接量高樓或樹木的高度不方便，但可以在地面建立一個較小、可量的相似三角形。只要兩個三角形都有直角，且視線角或反射角相等，就可用 AA 判定相似。",
+    "比例的對應必須是鉛直高度對鉛直高度、水平距離對水平距離。把斜視線與地面距離混放會得到錯誤結果。",
+    "鏡面測高時，觀測者眼睛、鏡面與物體頂端形成兩個相似三角形。常用 物高/物到鏡面距離=眼高/人到鏡面距離。",
+    "若觀測角是從眼睛水平線量起，比例可能只求出頂端高於眼睛的部分，最後要判斷是否需加上眼高。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "相似測高模型",
+      "statement": "以鉛直高度、水平地面與共同視角形成的兩個直角三角形，可由 AA 判定相似。"
+    },
+    {
+      "name": "鏡面測高比例",
+      "statement": "在水平地面與鏡面反射條件下，物高:物到鏡面距離=眼高:人到鏡面距離。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "H/D=h/d",
+      "conditions": [
+        "兩組三角形相似",
+        "高度與水平距離正確對應"
+      ],
+      "meaning": "由可量小三角形推得未知高度。"
+    },
+    {
+      "formula": "H=(D/d)h",
+      "conditions": [
+        "d>0"
+      ],
+      "meaning": "直接求未知高度。"
+    }
+  ],
+  "nonApplicableCases": [
+    "地面明顯傾斜時，不能把地面距離當水平距離直接套公式。",
+    "視線角不同或鏡面未保持水平模型時，不保證相似。",
+    "斜邊距離不能替代水平距離。",
+    "若比例求的是眼睛以上高度，不能忘記加回眼高。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "畫出未知高三角形與可量小三角形。",
+      "check": "哪兩條是鉛直高、哪兩條是水平距離？"
+    },
+    {
+      "step": 2,
+      "instruction": "說明兩三角形相似的兩組角。",
+      "check": "直角與共同視角或反射角是否成立？"
+    },
+    {
+      "step": 3,
+      "instruction": "列出同類量的對應比例。",
+      "check": "高度對高度、水平距離對水平距離嗎？"
+    },
+    {
+      "step": 4,
+      "instruction": "求未知高度並保留單位。",
+      "check": "距離單位是否一致？"
+    },
+    {
+      "step": 5,
+      "instruction": "判斷是否需加入眼高或基座高度。",
+      "check": "求得的是總高還是局部高度？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "一根 1.5 公尺標竿距觀測點 2 公尺，與遠處塔頂在同一視線上；塔距觀測點 18 公尺，求塔高。",
+      "solutionSteps": [
+        "兩個直角三角形共享觀測角，故 AA 相似。",
+        "塔高/18=1.5/2。",
+        "塔高=13.5 公尺。"
+      ],
+      "answer": "13.5 公尺"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "鏡面距樹 12 公尺，距眼睛 1.8 公尺，眼高 1.5 公尺，求樹高。",
+      "solutionSteps": [
+        "樹高/12=1.5/1.8。",
+        "樹高=12×1.5/1.8=10。",
+        "比例直接使用總鉛直高度。"
+      ],
+      "answer": "10 公尺"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "觀測者眼高 1.6 公尺，眼睛到牆 8 公尺；一支 0.4 公尺尺豎在眼前 1 公尺並遮住牆頂，求牆高。",
+      "solutionSteps": [
+        "尺高對應牆頂高於眼睛的高度。",
+        "眼上高度/8=0.4/1，所以眼上高度 3.2 公尺。",
+        "牆總高=3.2+1.6=4.8 公尺。"
+      ],
+      "answer": "4.8 公尺"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某測高模型算出建物高/24=0.9/1.2，求建物高。",
+      "solutionSteps": [
+        "比例化簡 0.9/1.2=3/4。",
+        "建物高=24×3/4=18。",
+        "檢查大水平距離對應較大高度。"
+      ],
+      "answer": "18 公尺"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "高度對斜邊寫比例。",
+      "why": "只依圖上相近位置配對。",
+      "correction": "同類邊配對：鉛直對鉛直、水平對水平。"
+    },
+    {
+      "mistake": "沒有證明兩三角形相似。",
+      "why": "直接套公式。",
+      "correction": "說明兩直角與另一組相等角。"
+    },
+    {
+      "mistake": "忘記加眼高。",
+      "why": "未辨認比例求的是局部高度。",
+      "correction": "在圖上畫眼睛水平線。"
+    },
+    {
+      "mistake": "公分與公尺直接運算。",
+      "why": "忽略單位。",
+      "correction": "先統一距離單位。"
+    },
+    {
+      "mistake": "斜坡地面仍當水平。",
+      "why": "忽略模型前提。",
+      "correction": "改量水平投影或建立適合斜坡的模型。"
+    }
+  ],
+  "selfCheck": [
+    "我畫出兩個直角三角形了嗎？",
+    "相似的兩組角理由完整嗎？",
+    "高度與水平距離正確對應嗎？",
+    "單位一致嗎？",
+    "最後是否需加眼高或基座？"
+  ],
+  "summary": [
+    "測高利用兩個相似直角三角形。",
+    "高度比等於對應水平距離比。",
+    "鏡面法以反射角相等建立 AA。",
+    "眼高與地面水平是重要修正條件。"
+  ],
+  "connections": {
+    "previous": "面積比完成相似縮放的二維概念。",
+    "next": [
+      "影子測量會以同時陽光形成相同仰角。",
+      "素養題會混合測量誤差與多步比例。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u18-height-q010",
+      "purpose": "協助辨認「利用相似測高」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    },
+    {
+      "figureId": "u18-height-cr001",
+      "purpose": "協助辨認「利用相似測高」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s012-v001",
+      "u18-s012-v002",
+      "u18-s012-v003",
+      "u18-s012-v004",
+      "u18-s012-v005",
+      "u18-s012-v006",
+      "u18-s012-v007",
+      "u18-s012-v008",
+      "u18-s012-v009",
+      "u18-s012-v010",
+      "u18-s012-v011",
+      "u18-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s012-cr001",
+      "u18-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "四個測高模型均逐一辨認比例求得總高或眼上高度；鏡面、遮擋與標竿三種方法的角度理由、單位及地面水平前提均已明示。"
+  },
+  "contentSha256": "77f22e0421f33d18f4cde72aa1b5659644df5947243d84c53c0ecec5a3d7246c"
+}

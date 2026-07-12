@@ -1,0 +1,250 @@
+{
+  "lectureId": "u18-s010-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-applications",
+  "skillId": "similar-ratio-perimeter",
+  "lockedSkillOrder": 10,
+  "lockedSkillTitle": "相似比與周長比",
+  "title": "相似比與周長比：每一條邊同倍縮放，周長也同倍",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能依指定方向求相似比。",
+    "能說明相似多邊形的周長比等於相似比。",
+    "能由周長求相似比或未知周長。",
+    "能區分周長比與面積比的次方關係。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "similarity-sss",
+        "title": "SSS 相似",
+        "requiredLevel": "能運用「SSS 相似」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「SSS 相似」，先複習其核心判斷，再把方法推進到「相似比與周長比」。"
+  },
+  "glossary": [
+    {
+      "term": "線性量",
+      "definition": "長度、周長、高等只具有一次尺度的量。"
+    },
+    {
+      "term": "周長比",
+      "definition": "兩個相似圖形周長的比。"
+    },
+    {
+      "term": "縮放倍數",
+      "definition": "第二圖形對第一圖形的對應邊放大或縮小的倍數。"
+    },
+    {
+      "term": "方向",
+      "definition": "相似比以哪一圖形除以哪一圖形，順序不同會取倒數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "k=L₂/L₁",
+      "meaning": "由圖形 1 放大到圖形 2 的線性縮放倍數。"
+    },
+    {
+      "symbol": "P₂/P₁=k",
+      "meaning": "相似圖形的周長按同一倍數縮放。"
+    },
+    {
+      "symbol": "a:b",
+      "meaning": "若為圖形 A 對 B 的相似比，所有比值都維持 A/B 的方向。"
+    }
+  ],
+  "conceptNarrative": [
+    "相似圖形的每一條對應邊都乘上同一個倍數 k。周長是所有邊長的總和，所以總和也會乘 k。",
+    "例如三角形三邊由 3、4、5 放大為 6、8、10，每邊乘 2，周長由 12 變 24，也乘 2。",
+    "由周長比可以直接求相似比，反之亦然，但前提是兩圖形確實相似。非相似圖形即使周長比相同，也不能推得對應邊比。",
+    "周長屬線性量，使用 k；面積是二維量，使用 k²。把兩者混用是常見錯誤。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "周長縮放定理",
+      "statement": "兩相似多邊形的周長比等於任一組對應邊的比。"
+    },
+    {
+      "name": "方向一致性",
+      "statement": "若相似比取圖形 A:圖形 B，周長比也須取 PA:PB。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "PA/PB=對應邊A/對應邊B",
+      "conditions": [
+        "圖形 A、B 相似",
+        "比值方向一致"
+      ],
+      "meaning": "周長比等於相似比。"
+    },
+    {
+      "formula": "P₂=kP₁",
+      "conditions": [
+        "k 為由圖形 1 到圖形 2 的縮放倍數"
+      ],
+      "meaning": "求縮放後周長。"
+    }
+  ],
+  "nonApplicableCases": [
+    "兩圖形不相似時，不能由一組邊比推周長比。",
+    "周長比不是相似比的平方。",
+    "相似比方向改變時，周長比也要取倒數。",
+    "已知的是半周長或某段邊界時，不能直接當完整周長。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認兩圖形相似並固定比值方向。",
+      "check": "所求是 A:B 還是 B:A？"
+    },
+    {
+      "step": 2,
+      "instruction": "由任一組對應邊求相似比 k。",
+      "check": "邊是否真正對應？"
+    },
+    {
+      "step": 3,
+      "instruction": "令周長使用同一比值。",
+      "check": "是否誤平方？"
+    },
+    {
+      "step": 4,
+      "instruction": "交叉相乘或乘 k 求未知周長。",
+      "check": "放大時周長應變大嗎？"
+    },
+    {
+      "step": 5,
+      "instruction": "用各邊總和概念回查。",
+      "check": "結果是否符合線性縮放？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩相似三角形對應邊比為 3:5，小三角形周長 24，求大三角形周長。",
+      "solutionSteps": [
+        "周長比等於相似比 3:5。",
+        "24:P=3:5。",
+        "P=24×5/3=40。"
+      ],
+      "answer": "40"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩相似多邊形周長為 42 與 63，第一圖對第二圖的相似比為何？",
+      "solutionSteps": [
+        "相似比等於周長比。",
+        "42:63 化簡同除 21。",
+        "得 2:3。"
+      ],
+      "answer": "2:3"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "模型長度是實物的 1/50，實物周長 350 公尺，模型周長多少公尺？",
+      "solutionSteps": [
+        "模型:實物=1:50。",
+        "模型周長=350×1/50=7 公尺。",
+        "周長使用一次縮放。"
+      ],
+      "answer": "7 公尺"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "相似比 A:B=4:3，若 B 周長 27，求 A 周長。",
+      "solutionSteps": [
+        "PA:PB=4:3。",
+        "PA/27=4/3。",
+        "PA=36。"
+      ],
+      "answer": "36"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "周長比用 k²。",
+      "why": "與面積比混淆。",
+      "correction": "周長是長度總和，只乘 k。"
+    },
+    {
+      "mistake": "比值方向顛倒。",
+      "why": "未標明哪個圖形在前。",
+      "correction": "寫 PA:PB 與邊 A:邊 B 同方向。"
+    },
+    {
+      "mistake": "未確認圖形相似。",
+      "why": "看到邊長比就套公式。",
+      "correction": "題目需明示或先證明相似。"
+    },
+    {
+      "mistake": "把一段邊長當周長。",
+      "why": "混淆單邊與邊長總和。",
+      "correction": "確認 P 代表所有邊之和。"
+    },
+    {
+      "mistake": "縮小模型算出比實物更大。",
+      "why": "倍率方向錯。",
+      "correction": "做大小合理性檢查。"
+    }
+  ],
+  "selfCheck": [
+    "圖形真的相似嗎？",
+    "相似比方向已固定嗎？",
+    "周長比是否直接等於 k？",
+    "有沒有誤用平方？",
+    "放大或縮小的大小關係合理嗎？"
+  ],
+  "summary": [
+    "相似圖形的周長比等於相似比。",
+    "周長是線性量，只使用一次縮放倍數。",
+    "方向改變時比值取倒數。",
+    "公式只適用於相似圖形。"
+  ],
+  "connections": {
+    "previous": "SSS 判定能先確認圖形相似。",
+    "next": [
+      "面積比會把相似比平方。",
+      "周長比應用會處理模型、地圖與複合邊界。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s010-v001",
+      "u18-s010-v002",
+      "u18-s010-v003",
+      "u18-s010-v004",
+      "u18-s010-v005",
+      "u18-s010-v006",
+      "u18-s010-v007",
+      "u18-s010-v008",
+      "u18-s010-v009",
+      "u18-s010-v010",
+      "u18-s010-v011",
+      "u18-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s010-cr001",
+      "u18-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "所有例題均固定相似比方向並以線性尺度解釋，特別核對沒有把周長比平方；模型題的單位與縮小方向亦已回查。"
+  },
+  "contentSha256": "3b3504d1d284a4957371678911e0306f3b9aea4a51bd2013a7867e181c493523"
+}

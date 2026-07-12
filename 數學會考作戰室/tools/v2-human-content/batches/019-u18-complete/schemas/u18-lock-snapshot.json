@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "u18-authoring-lock-snapshot-r1",
+  "source": {
+    "repository": "iAsome/taiwan-cap-math",
+    "branch": "chatgpt/math-v2-human-authoring-r1",
+    "path": "數學會考作戰室/tools/v2-human-content/authoring/authoring-syllabus-lock-r2.json",
+    "handoffRecordedSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+    "githubBlobSha": "acaf8dfeaa9573841dd87698459a6328263dbb3d"
+  },
+  "unit": {
+    "unitId": "u18",
+    "numericId": 18,
+    "title": "連比與相似形",
+    "gradeBand": "9上",
+    "domain": "空間與形狀",
+    "description": "連比、比例線段、相似形與測量。",
+    "coreGoal": "能求相似比、周長比與面積比。",
+    "capScopeNote": "體積比只做縮放概念。",
+    "topics": [
+      {
+        "topicId": "u18-ratio",
+        "title": "連比",
+        "order": 1
+      },
+      {
+        "topicId": "u18-similarity",
+        "title": "相似形",
+        "order": 2
+      },
+      {
+        "topicId": "u18-applications",
+        "title": "生活應用",
+        "order": 3
+      },
+      {
+        "topicId": "u18-literacy",
+        "title": "素養應用",
+        "order": 4
+      }
+    ],
+    "skills": [
+      {
+        "slot": "s001",
+        "skillId": "continued-ratio",
+        "title": "連比化簡",
+        "order": 1,
+        "topicId": "u18-ratio",
+        "prerequisiteSkillIds": [],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s002",
+        "skillId": "continued-ratio-application",
+        "title": "連比應用",
+        "order": 2,
+        "topicId": "u18-ratio",
+        "prerequisiteSkillIds": [
+          "continued-ratio"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s003",
+        "skillId": "proportion-segment",
+        "title": "比例線段",
+        "order": 3,
+        "topicId": "u18-ratio",
+        "prerequisiteSkillIds": [
+          "continued-ratio-application"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s004",
+        "skillId": "continued-ratio-word",
+        "title": "連比應用題",
+        "order": 4,
+        "topicId": "u18-ratio",
+        "prerequisiteSkillIds": [
+          "proportion-segment"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s005",
+        "skillId": "continued-ratio-properties",
+        "title": "連比性質",
+        "order": 5,
+        "topicId": "u18-ratio",
+        "prerequisiteSkillIds": [
+          "continued-ratio-word"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s006",
+        "skillId": "similar-triangles",
+        "title": "相似三角形",
+        "order": 6,
+        "topicId": "u18-similarity",
+        "prerequisiteSkillIds": [
+          "continued-ratio-properties"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s007",
+        "skillId": "similarity-aa",
+        "title": "AA 相似",
+        "order": 7,
+        "topicId": "u18-similarity",
+        "prerequisiteSkillIds": [
+          "similar-triangles"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s008",
+        "skillId": "similarity-sas",
+        "title": "SAS 相似",
+        "order": 8,
+        "topicId": "u18-similarity",
+        "prerequisiteSkillIds": [
+          "similarity-aa"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s009",
+        "skillId": "similarity-sss",
+        "title": "SSS 相似",
+        "order": 9,
+        "topicId": "u18-similarity",
+        "prerequisiteSkillIds": [
+          "similarity-sas"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s010",
+        "skillId": "similar-ratio-perimeter",
+        "title": "相似比與周長比",
+        "order": 10,
+        "topicId": "u18-applications",
+        "prerequisiteSkillIds": [
+          "similarity-sss"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s011",
+        "skillId": "similar-ratio-area",
+        "title": "相似比與面積比",
+        "order": 11,
+        "topicId": "u18-applications",
+        "prerequisiteSkillIds": [
+          "similar-ratio-perimeter"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s012",
+        "skillId": "similar-height-measure",
+        "title": "利用相似測高",
+        "order": 12,
+        "topicId": "u18-applications",
+        "prerequisiteSkillIds": [
+          "similar-ratio-area"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s013",
+        "skillId": "similar-shadow-problem",
+        "title": "影子測量",
+        "order": 13,
+        "topicId": "u18-applications",
+        "prerequisiteSkillIds": [
+          "similar-height-measure"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s014",
+        "skillId": "ratio-perimeter-application",
+        "title": "周長比應用",
+        "order": 14,
+        "topicId": "u18-applications",
+        "prerequisiteSkillIds": [
+          "similar-shadow-problem"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s015",
+        "skillId": "ratio-area-application",
+        "title": "面積比應用",
+        "order": 15,
+        "topicId": "u18-applications",
+        "prerequisiteSkillIds": [
+          "ratio-perimeter-application"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      },
+      {
+        "slot": "s016",
+        "skillId": "similarity-literacy",
+        "title": "相似形素養題",
+        "order": 16,
+        "topicId": "u18-literacy",
+        "prerequisiteSkillIds": [
+          "ratio-area-application"
+        ],
+        "required": true,
+        "mcQuestionTarget": 12,
+        "constructedResponseMinimum": 2
+      }
+    ]
+  },
+  "lockedSkillCount": 16,
+  "productionActivationAllowed": false
+}

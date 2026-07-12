@@ -1,0 +1,256 @@
+{
+  "lectureId": "u18-s013-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-applications",
+  "skillId": "similar-shadow-problem",
+  "lockedSkillOrder": 13,
+  "lockedSkillTitle": "影子測量",
+  "title": "影子測量：同一時刻的陽光把高度轉成影長比例",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能以同一時刻、同一地面與平行光線建立相似三角形。",
+    "能正確配對物高與影長。",
+    "能處理影子端點、基座與局部高度問題。",
+    "能判斷不同時間或不同坡度資料不可直接相比。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "similar-height-measure",
+        "title": "利用相似測高",
+        "requiredLevel": "能運用「利用相似測高」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「利用相似測高」，先複習其核心判斷，再把方法推進到「影子測量」。"
+  },
+  "glossary": [
+    {
+      "term": "影長",
+      "definition": "物體底部到影子尖端沿地面量得的長度。"
+    },
+    {
+      "term": "太陽仰角",
+      "definition": "陽光方向與水平地面形成的銳角。"
+    },
+    {
+      "term": "平行光線",
+      "definition": "在地面尺度下，可把同一時刻的太陽光視為方向相同。"
+    },
+    {
+      "term": "同時測量",
+      "definition": "確保不同物體受光方向相同，使仰角相等。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "H/L=h/l",
+      "meaning": "同時、同地面條件下，物高與影長的比相等。"
+    },
+    {
+      "symbol": "H=(L/l)h",
+      "meaning": "用已知物體的高與影長推未知高度。"
+    },
+    {
+      "symbol": "tan θ=H/L",
+      "meaning": "只作比例理解；本單元不要求三角函數運算。"
+    }
+  ],
+  "conceptNarrative": [
+    "太陽距離很遠，同一地區同一時刻照到各物體的光線可視為平行。鉛直物體與水平地面形成直角，光線又提供相同仰角，因此高物體與其影子、小標竿與其影子形成 AA 相似三角形。",
+    "比例必須是物高對物高、影長對影長。若樹高/樹影=標竿高/標竿影，兩側都保持高除以影。",
+    "影長是從物體底部到影尖，不是從觀測者或另一物體量起。若物體立在臺座上，要看題目問的是物體本身高度還是連同臺座總高。",
+    "不同時間太陽仰角會改變；斜坡上沿坡面量得的影長也不是水平影長，因此不能直接套用平地同時測量公式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "同時影子相似模型",
+      "statement": "同一時刻、同一水平地面上，兩鉛直物體與各自影子形成的直角三角形由 AA 相似。"
+    },
+    {
+      "name": "高影比",
+      "statement": "在固定太陽仰角下，物高除以影長為定值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "H₁/L₁=H₂/L₂",
+      "conditions": [
+        "同一時刻",
+        "地面水平",
+        "物體鉛直"
+      ],
+      "meaning": "兩物體的高影比相等。"
+    },
+    {
+      "formula": "H未知=L未知×(h已知/l已知)",
+      "conditions": [
+        "已知物與未知物共用同一仰角"
+      ],
+      "meaning": "由已知標竿求未知高度。"
+    }
+  ],
+  "nonApplicableCases": [
+    "上午與下午不同時間量得的影長不能直接配對。",
+    "一個物體在斜坡、另一個在水平地面時，沿地面影長通常不可直接比較。",
+    "物體傾斜時，其長度不等於鉛直高度。",
+    "陰天散射光或多個光源形成的影子不符合單一平行光線模型。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認兩次影長是否同時且在同一水平地面量得。",
+      "check": "太陽仰角是否相同？"
+    },
+    {
+      "step": 2,
+      "instruction": "畫出兩個高—影直角三角形。",
+      "check": "物體是否鉛直？"
+    },
+    {
+      "step": 3,
+      "instruction": "說明直角與陽光仰角相等，判定 AA 相似。",
+      "check": "是否只靠圖形外觀？"
+    },
+    {
+      "step": 4,
+      "instruction": "寫高/影=高/影的同方向比例。",
+      "check": "影長端點是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "求未知高並檢查臺座、單位與合理性。",
+      "check": "題目要本體高還是總高？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "1.2 公尺標竿影長 0.8 公尺，同時一棵樹影長 6 公尺，求樹高。",
+      "solutionSteps": [
+        "同時測量，兩三角形相似。",
+        "樹高/6=1.2/0.8=1.5。",
+        "樹高=9 公尺。"
+      ],
+      "answer": "9 公尺"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "旗桿高 7.5 公尺、影長 5 公尺；建物影長 18 公尺，求建物高。",
+      "solutionSteps": [
+        "高影比 7.5/5=1.5。",
+        "建物高=18×1.5。",
+        "得到 27 公尺。"
+      ],
+      "answer": "27 公尺"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "雕像立在 1 公尺臺座上，雕像連臺座影長 4 公尺；同時 1.5 公尺標竿影長 1 公尺，求雕像本體高。",
+      "solutionSteps": [
+        "總高/4=1.5/1，所以總高 6 公尺。",
+        "雕像本體高=6-1。",
+        "得到 5 公尺。"
+      ],
+      "answer": "5 公尺"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "上午標竿高 1 公尺、影長 2 公尺；下午樹影長 8 公尺，能否直接求樹高？",
+      "solutionSteps": [
+        "測量時間不同，太陽仰角可能不同。",
+        "兩組三角形不保證相似。",
+        "資料不足，不能直接求。"
+      ],
+      "answer": "不能"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把樹高對標竿影長。",
+      "why": "交叉配對錯誤。",
+      "correction": "同一物體的高與影保持在同一比中。"
+    },
+    {
+      "mistake": "不同時間資料直接相比。",
+      "why": "忽略太陽仰角改變。",
+      "correction": "必須同時測量或證明仰角相同。"
+    },
+    {
+      "mistake": "影長從錯誤起點量。",
+      "why": "沒有辨認物體底部。",
+      "correction": "影長由物體底部量到影尖。"
+    },
+    {
+      "mistake": "臺座高度重複加上。",
+      "why": "未看清已求的是總高。",
+      "correction": "先標明 H總=H本體+H臺座。"
+    },
+    {
+      "mistake": "物體斜放仍以長度當高度。",
+      "why": "混淆物長與鉛直高。",
+      "correction": "影子相似使用鉛直高度。"
+    }
+  ],
+  "selfCheck": [
+    "兩次測量同時嗎？",
+    "地面水平且物體鉛直嗎？",
+    "比例是否高對高、影對影？",
+    "影長起點正確嗎？",
+    "是否需要扣除臺座？"
+  ],
+  "summary": [
+    "同時陽光使不同物體具有相同太陽仰角。",
+    "物高與影長形成相似直角三角形。",
+    "高影比在同一條件下固定。",
+    "不同時間、斜坡或傾斜物體需重新建模。"
+  ],
+  "connections": {
+    "previous": "利用相似測高介紹 AA 測量模型。",
+    "next": [
+      "周長比應用會把線性縮放放入模型與設計情境。",
+      "相似形素養題會結合影子、比例與誤差判讀。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u18-shadow-q010",
+      "purpose": "協助辨認「影子測量」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s013-v001",
+      "u18-s013-v002",
+      "u18-s013-v003",
+      "u18-s013-v004",
+      "u18-s013-v005",
+      "u18-s013-v006",
+      "u18-s013-v007",
+      "u18-s013-v008",
+      "u18-s013-v009",
+      "u18-s013-v010",
+      "u18-s013-v011",
+      "u18-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s013-cr001",
+      "u18-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "逐題檢查同時性、水平地面、鉛直物體與影長起點；臺座題明確區分總高與本體高，並加入不同時間不可比較的資料充分性反例。"
+  },
+  "contentSha256": "f480c57098f8ab502db53936576e5d548c971380c2181b033602d2b7caf27c9d"
+}

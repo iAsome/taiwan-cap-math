@@ -1,0 +1,254 @@
+{
+  "lectureId": "u18-s006-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-similarity",
+  "skillId": "similar-triangles",
+  "lockedSkillOrder": 6,
+  "lockedSkillTitle": "相似三角形",
+  "title": "相似三角形：形狀相同但大小可不同",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能以對應角相等與對應邊成比例說明三角形相似。",
+    "能依頂點順序寫出正確的相似記號。",
+    "能由相似關係求未知邊或未知角。",
+    "能區分相似與全等，並檢查相似比方向。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "continued-ratio-properties",
+        "title": "連比性質",
+        "requiredLevel": "能運用「連比性質」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「連比性質」，先複習其核心判斷，再把方法推進到「相似三角形」。"
+  },
+  "glossary": [
+    {
+      "term": "相似形",
+      "definition": "形狀相同但大小可以不同的圖形；對應角相等、對應邊成比例。"
+    },
+    {
+      "term": "對應頂點",
+      "definition": "在兩個相似圖形中具有相同角度位置的頂點。"
+    },
+    {
+      "term": "相似比",
+      "definition": "前一圖形的對應邊長除以後一圖形的對應邊長所得固定比值。"
+    },
+    {
+      "term": "全等",
+      "definition": "形狀與大小都相同；是相似比為 1 的特殊相似。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "△ABC∼△DEF",
+      "meaning": "A↔D、B↔E、C↔F，順序同時指定對應角與對應邊。"
+    },
+    {
+      "symbol": "AB/DE=BC/EF=CA/FD",
+      "meaning": "兩三角形對應邊的比相等。"
+    },
+    {
+      "symbol": "∠A=∠D",
+      "meaning": "A 與 D 為對應角。"
+    }
+  ],
+  "conceptNarrative": [
+    "相似不是『看起來像』，而是有精確的對應關係。兩個三角形相似時，三組對應角相等，三組對應邊按同一倍數縮放。",
+    "相似記號的字母順序非常重要。△ABC∼△DEF 表示第一個字母對第一個、第二個對第二個、第三個對第三個，因此 AB 對 DE、BC 對 EF、AC 對 DF。",
+    "相似比必須先說方向。若問 △ABC 對 △DEF 的相似比，就是 ABC 的邊除以 DEF 的對應邊；反向則取倒數。",
+    "全等三角形一定相似，但相似三角形不一定全等。只有當相似比為 1，大小才相同。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "三角形相似",
+      "statement": "兩三角形的對應角分別相等，且對應邊長成同一比例。"
+    },
+    {
+      "name": "相似比",
+      "statement": "按指定先後順序，以第一個三角形任一邊除以第二個三角形的對應邊所得比值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "△ABC∼△DEF ⇒ AB/DE=BC/EF=AC/DF",
+      "conditions": [
+        "頂點順序已正確對應"
+      ],
+      "meaning": "所有對應邊共用同一相似比。"
+    },
+    {
+      "formula": "∠A=∠D，∠B=∠E，∠C=∠F",
+      "conditions": [
+        "兩三角形相似"
+      ],
+      "meaning": "相似圖形的對應角相等。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只知道一組角相等，不能保證三角形相似。",
+    "只知道一組邊成比例，也不能保證相似。",
+    "不能把非對應邊放在同一比例式中。",
+    "圖形旋轉或翻轉不影響相似，但必須重新辨認對應順序。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "用角度、邊長或標記找出對應頂點。",
+      "check": "哪兩個角相等？"
+    },
+    {
+      "step": 2,
+      "instruction": "依對應順序寫相似記號。",
+      "check": "第一、第二、第三字母是否一一對應？"
+    },
+    {
+      "step": 3,
+      "instruction": "列出對應邊表。",
+      "check": "AB 對哪一邊？"
+    },
+    {
+      "step": 4,
+      "instruction": "固定相似比方向並列比例式。",
+      "check": "分子都來自同一個三角形嗎？"
+    },
+    {
+      "step": 5,
+      "instruction": "求未知量並以角和或比值回查。",
+      "check": "三組比是否一致？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "若 △ABC∼△DEF，AB=6、DE=9、BC=8，求 EF。",
+      "solutionSteps": [
+        "AB/DE=BC/EF。",
+        "6/9=8/EF。",
+        "6EF=72，所以 EF=12。"
+      ],
+      "answer": "12"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "若 △PQR∼△XYZ，∠P=48°、∠Q=67°，求 ∠Z。",
+      "solutionSteps": [
+        "三角形內角和為 180°。",
+        "∠R=180°-48°-67°=65°。",
+        "R 對應 Z，所以 ∠Z=65°。"
+      ],
+      "answer": "65°"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩三角形邊長分別為 3、4、5 與 6、8、10，是否相似？",
+      "solutionSteps": [
+        "依大小配對，3/6=4/8=5/10=1/2。",
+        "三組對應邊同一比值。",
+        "因此相似。"
+      ],
+      "answer": "相似"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "△ABC∼△KLM，且 A↔K、B↔L，邊 AC 對應哪一邊？",
+      "solutionSteps": [
+        "剩餘頂點 C↔M。",
+        "AC 的端點 A、C 分別對 K、M。",
+        "所以 AC 對 KM。"
+      ],
+      "answer": "KM"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "依圖形左右位置配邊。",
+      "why": "旋轉後視覺位置會改變。",
+      "correction": "依對應頂點而不是畫面方向。"
+    },
+    {
+      "mistake": "相似記號字母順序亂寫。",
+      "why": "只知道兩圖相似，未標對應。",
+      "correction": "先列頂點配對表。"
+    },
+    {
+      "mistake": "比例式分子方向混用。",
+      "why": "一個比用小/大，另一個用大/小。",
+      "correction": "所有分子固定來自同一三角形。"
+    },
+    {
+      "mistake": "把相似當成全等。",
+      "why": "忽略相似比可不等於 1。",
+      "correction": "只有相似比 1 才大小相同。"
+    },
+    {
+      "mistake": "由兩邊比例就直接判定相似。",
+      "why": "缺少夾角或第三邊條件。",
+      "correction": "使用 AA、SAS 或 SSS 判定。"
+    }
+  ],
+  "selfCheck": [
+    "我能列出三組對應頂點嗎？",
+    "相似記號順序正確嗎？",
+    "所有比例的方向一致嗎？",
+    "未知邊落在正確對應位置嗎？",
+    "相似比是否被誤當成 1？"
+  ],
+  "summary": [
+    "相似三角形的對應角相等、對應邊成比例。",
+    "相似記號的順序就是對應關係。",
+    "相似比有方向，反向要取倒數。",
+    "全等是相似比為 1 的特殊情形。"
+  ],
+  "connections": {
+    "previous": "連比性質提供三組對應邊的等比觀念。",
+    "next": [
+      "AA、SAS、SSS 會提供判定三角形相似的充分條件。",
+      "周長比與面積比由相似比延伸。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u18-similar-q010",
+      "purpose": "協助辨認「相似三角形」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s006-v001",
+      "u18-s006-v002",
+      "u18-s006-v003",
+      "u18-s006-v004",
+      "u18-s006-v005",
+      "u18-s006-v006",
+      "u18-s006-v007",
+      "u18-s006-v008",
+      "u18-s006-v009",
+      "u18-s006-v010",
+      "u18-s006-v011",
+      "u18-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s006-cr001",
+      "u18-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "檢查相似記號、對應角與對應邊表完全一致；所有比例式固定同一方向，並明確區分『定義』與後續三種『判定條件』。"
+  },
+  "contentSha256": "d4a64b4bf2a64eb3e1bb97c7da4a47ec6997d050055fa7a01e34a8815d8220c2"
+}

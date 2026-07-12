@@ -1,0 +1,248 @@
+{
+  "lectureId": "u18-s011-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-applications",
+  "skillId": "similar-ratio-area",
+  "lockedSkillOrder": 11,
+  "lockedSkillTitle": "相似比與面積比",
+  "title": "相似比與面積比：長和寬都縮放，面積乘上平方",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能由相似比求面積比。",
+    "能由面積比反推正的相似比。",
+    "能使用面積比例求未知面積。",
+    "能區分線性比、面積比與體積縮放概念。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "similar-ratio-perimeter",
+        "title": "相似比與周長比",
+        "requiredLevel": "能運用「相似比與周長比」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「相似比與周長比」，先複習其核心判斷，再把方法推進到「相似比與面積比」。"
+  },
+  "glossary": [
+    {
+      "term": "面積比",
+      "definition": "兩相似平面圖形面積的比。"
+    },
+    {
+      "term": "平方關係",
+      "definition": "若線性縮放 k，面積由兩個方向共同縮放為 k²。"
+    },
+    {
+      "term": "正平方根",
+      "definition": "由面積比反求長度比時，取正值，因長度為正。"
+    },
+    {
+      "term": "二維量",
+      "definition": "由兩個長度方向形成的量，例如面積。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "S₂/S₁=k²",
+      "meaning": "圖形 2 對圖形 1 的面積比等於線性縮放倍數平方。"
+    },
+    {
+      "symbol": "k=√(S₂/S₁)",
+      "meaning": "由面積比反求正的相似比。"
+    },
+    {
+      "symbol": "a²:b²",
+      "meaning": "相似比 a:b 對應的面積比。"
+    }
+  ],
+  "conceptNarrative": [
+    "相似圖形的長與寬都乘 k。以矩形為例，面積由長×寬變為 (k長)×(k寬)=k²×原面積；其他相似圖形也有相同結果。",
+    "相似比 2:3 時，面積比不是 2:3，而是 4:9。反過來，面積比 25:49 對應的正相似比是 5:7。",
+    "由面積求邊長比時必須先確認圖形相似。兩個任意圖形面積相同，形狀可能完全不同。",
+    "本單元只把體積比視為三個方向縮放的概念 k³，不延伸到高中相似立體證明。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "相似面積定理",
+      "statement": "兩相似平面圖形的面積比等於相似比的平方。"
+    },
+    {
+      "name": "反推相似比",
+      "statement": "面積比為 m:n 時，線性相似比為 √m:√n，取正值並化簡。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "SA/SB=(a/b)²",
+      "conditions": [
+        "圖形 A、B 相似",
+        "a/b 為 A 對 B 的相似比"
+      ],
+      "meaning": "由線性比求面積比。"
+    },
+    {
+      "formula": "a/b=√(SA/SB)",
+      "conditions": [
+        "長度為正"
+      ],
+      "meaning": "由面積比反推相似比。"
+    }
+  ],
+  "nonApplicableCases": [
+    "非相似圖形不能由相似比公式連結面積。",
+    "面積比不能直接等於相似比。",
+    "由面積比開根號時不能取負值作長度比。",
+    "周長比使用 k，不使用 k²。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認圖形相似並固定方向。",
+      "check": "面積 A:面積 B 對應哪個相似比？"
+    },
+    {
+      "step": 2,
+      "instruction": "若已知相似比，將兩項各自平方。",
+      "check": "是否平方了比的兩項？"
+    },
+    {
+      "step": 3,
+      "instruction": "若已知面積比，取正平方根。",
+      "check": "平方根可否化簡？"
+    },
+    {
+      "step": 4,
+      "instruction": "建立面積比例求未知量。",
+      "check": "單位是否為平方單位？"
+    },
+    {
+      "step": 5,
+      "instruction": "比較放大倍數與面積變化是否合理。",
+      "check": "線性放大 3 倍，面積應為 9 倍。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩相似三角形相似比為 3:4，求面積比。",
+      "solutionSteps": [
+        "面積比為相似比平方。",
+        "3²:4²=9:16。"
+      ],
+      "answer": "9:16"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩相似圖形面積比為 36:81，求相似比。",
+      "solutionSteps": [
+        "取正平方根得 6:9。",
+        "化簡為 2:3。"
+      ],
+      "answer": "2:3"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "小圖面積 20 平方公分，相似比小:大=2:5，求大圖面積。",
+      "solutionSteps": [
+        "面積比小:大=4:25。",
+        "20:S=4:25。",
+        "S=125 平方公分。"
+      ],
+      "answer": "125 平方公分"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "一張圖線性放大 150%，原面積 32 平方公分，新面積多少？",
+      "solutionSteps": [
+        "線性倍數為 1.5。",
+        "面積倍數 1.5²=2.25。",
+        "32×2.25=72。"
+      ],
+      "answer": "72 平方公分"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "面積比直接抄相似比。",
+      "why": "忽略兩個方向同時縮放。",
+      "correction": "把相似比兩項平方。"
+    },
+    {
+      "mistake": "只平方其中一項。",
+      "why": "把 (a:b)² 誤讀。",
+      "correction": "寫成 a²:b²。"
+    },
+    {
+      "mistake": "由面積比取平方而非平方根。",
+      "why": "反向操作混亂。",
+      "correction": "面積比反推長度比要開根號。"
+    },
+    {
+      "mistake": "面積單位寫成公分。",
+      "why": "忽略面積為平方單位。",
+      "correction": "答案寫平方公分或 cm²。"
+    },
+    {
+      "mistake": "把放大 150% 當增加 150%。",
+      "why": "百分比語意混淆。",
+      "correction": "放大為原來 150% 即倍數 1.5。"
+    }
+  ],
+  "selfCheck": [
+    "圖形相似嗎？",
+    "比值方向一致嗎？",
+    "由長度到面積是否平方？",
+    "由面積到長度是否取正平方根？",
+    "答案使用平方單位嗎？"
+  ],
+  "summary": [
+    "相似圖形面積比等於相似比平方。",
+    "面積比反推相似比要取正平方根。",
+    "周長用 k，面積用 k²。",
+    "公式前提是圖形相似。"
+  ],
+  "connections": {
+    "previous": "周長比是一次縮放。",
+    "next": [
+      "利用相似測高會回到線性邊長比例。",
+      "面積比應用會處理圖紙、材料與成本。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s011-v001",
+      "u18-s011-v002",
+      "u18-s011-v003",
+      "u18-s011-v004",
+      "u18-s011-v005",
+      "u18-s011-v006",
+      "u18-s011-v007",
+      "u18-s011-v008",
+      "u18-s011-v009",
+      "u18-s011-v010",
+      "u18-s011-v011",
+      "u18-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s011-cr001",
+      "u18-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "逐例核對平方與開根號方向，面積單位全部使用平方單位；百分比放大案例已明確區分『變為 150%』與『增加 150%』。"
+  },
+  "contentSha256": "17ddc675123700515951b61d3a28f926cf62197d8cc961b5578e700b99f5edce"
+}

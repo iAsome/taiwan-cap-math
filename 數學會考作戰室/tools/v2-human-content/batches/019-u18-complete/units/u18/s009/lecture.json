@@ -1,0 +1,255 @@
+{
+  "lectureId": "u18-s009-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-similarity",
+  "skillId": "similarity-sss",
+  "lockedSkillOrder": 9,
+  "lockedSkillTitle": "SSS 相似",
+  "title": "SSS 相似：三組對應邊都按同一比例縮放",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能依邊長大小與結構配對三組對應邊。",
+    "能檢查三組邊比是否相等。",
+    "能用 SSS 判定相似並寫出正確相似順序。",
+    "能先檢查三角形存在性，避免使用不成三角形的資料。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "similarity-sas",
+        "title": "SAS 相似",
+        "requiredLevel": "能運用「SAS 相似」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「SAS 相似」，先複習其核心判斷，再把方法推進到「SSS 相似」。"
+  },
+  "glossary": [
+    {
+      "term": "SSS 判定",
+      "definition": "三組對應邊的比都相等時，兩三角形相似。"
+    },
+    {
+      "term": "三角形不等式",
+      "definition": "任意兩邊長的和必須大於第三邊，才可形成三角形。"
+    },
+    {
+      "term": "對應配對",
+      "definition": "將兩三角形中按同一結構位置的邊放在同一比值中。"
+    },
+    {
+      "term": "縮放倍數",
+      "definition": "從一個三角形到另一個三角形，各對應邊共同乘上的正數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AB/DE=BC/EF=CA/FD",
+      "meaning": "三組對應邊皆為同一比值。"
+    },
+    {
+      "symbol": "SSS",
+      "meaning": "Side-Side-Side，邊邊邊相似判定。"
+    },
+    {
+      "symbol": "a+b>c",
+      "meaning": "三角形任兩邊和大於第三邊。"
+    }
+  ],
+  "conceptNarrative": [
+    "若一個三角形的三邊都按同一倍數變化，角度不會改變，因此形狀相同。SSS 判定就是把這個縮放關係寫成三組邊比相等。",
+    "配對時可先按長短排序作初步判斷：最長邊通常對最長邊、最短邊對最短邊。但正式答案仍要依頂點連接關係確認相似順序。",
+    "檢查比值時三組方向要一致。若第一組寫第一三角形除以第二三角形，後兩組也必須同方向。",
+    "在判定前先確認每一組邊確實能形成三角形。若 2、3、6 不能成三角形，就沒有可談的相似三角形。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "SSS 相似判定",
+      "statement": "若兩三角形的三組對應邊長成比例，則兩三角形相似。"
+    },
+    {
+      "name": "存在性前提",
+      "statement": "每組三邊都須符合三角形不等式，才能使用三角形相似判定。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AB/DE=BC/EF=CA/FD ⇒ △ABC∼△DEF",
+      "conditions": [
+        "三組邊正確對應",
+        "兩組資料皆可形成三角形"
+      ],
+      "meaning": "SSS 判定。"
+    },
+    {
+      "formula": "最短邊+次長邊>最長邊",
+      "conditions": [
+        "邊長均為正"
+      ],
+      "meaning": "檢查三角形存在性最精簡的方法。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只有兩組邊比相等，缺少夾角資訊時不能使用 SSS。",
+    "三組邊比例相等但其中一組資料不能形成三角形時，不存在相似三角形。",
+    "將最長邊對最短邊會造成錯誤配對。",
+    "三組比中混用相反方向，不能代表同一縮放倍數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "檢查兩組邊長都能形成三角形。",
+      "check": "最短邊加次長邊是否大於最長邊？"
+    },
+    {
+      "step": 2,
+      "instruction": "依長短與頂點結構配對三組邊。",
+      "check": "最長對最長、共享頂點關係一致嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "固定比值方向。",
+      "check": "所有分子是否來自同一三角形？"
+    },
+    {
+      "step": 4,
+      "instruction": "化簡三組邊比。",
+      "check": "三個比值完全相同嗎？"
+    },
+    {
+      "step": 5,
+      "instruction": "由邊端點寫相似順序。",
+      "check": "每一條對應邊的兩端配對一致嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "邊長 4、6、8 與 10、15、20 的三角形是否相似？",
+      "solutionSteps": [
+        "兩組均符合三角形不等式。",
+        "4/10=6/15=8/20=2/5。",
+        "三組對應邊同一比值，由 SSS 相似。"
+      ],
+      "answer": "相似"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "△ABC 邊 AB=5、BC=7、AC=8；△DEF 邊 DE=10、EF=14、DF=16，寫相似關係。",
+      "solutionSteps": [
+        "AB 對 DE、BC 對 EF、AC 對 DF，比例皆 1:2。",
+        "AB 與 BC 共點 B，DE 與 EF 共點 E，所以 B↔E。",
+        "得到 A↔D、C↔F，故 △ABC∼△DEF。"
+      ],
+      "answer": "△ABC∼△DEF"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "邊長 2、3、6 與 4、6、12 可否以 SSS 判定相似？",
+      "solutionSteps": [
+        "第一組 2+3=5<6，不能形成三角形。",
+        "第二組也有 4+6<12。",
+        "因此不存在兩個三角形，不能談 SSS 相似。"
+      ],
+      "answer": "不可"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "△PQR 三邊 9、12、15，另一三角形最短邊為 6，若相似，另外兩邊為何？",
+      "solutionSteps": [
+        "最短邊縮放比為 6/9=2/3。",
+        "其餘邊為 12×2/3=8、15×2/3=10。",
+        "6、8、10 可形成三角形。"
+      ],
+      "answer": "8、10"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只檢查兩組邊比。",
+      "why": "把 SSS 誤成兩邊條件。",
+      "correction": "三組對應邊比都要相等。"
+    },
+    {
+      "mistake": "未檢查三角形不等式。",
+      "why": "把任意三個正數當三角形邊。",
+      "correction": "先用最短+次長>最長。"
+    },
+    {
+      "mistake": "最長邊配到次長邊。",
+      "why": "只依數字可約分配對。",
+      "correction": "先排序，再核對頂點結構。"
+    },
+    {
+      "mistake": "第三個比取倒數。",
+      "why": "比值方向沒有固定。",
+      "correction": "所有分子固定同一圖形。"
+    },
+    {
+      "mistake": "相似順序只看邊長排序。",
+      "why": "忽略邊的端點關係。",
+      "correction": "用共享頂點決定頂點配對。"
+    }
+  ],
+  "selfCheck": [
+    "兩組資料都能成三角形嗎？",
+    "三組邊都已配對嗎？",
+    "比值方向一致嗎？",
+    "三個比值完全相同嗎？",
+    "相似字母順序符合邊端點嗎？"
+  ],
+  "summary": [
+    "SSS 相似需要三組對應邊成同一比例。",
+    "先確認三角形存在性。",
+    "配對可由長短開始，再用端點關係確認。",
+    "三組比必須方向一致。"
+  ],
+  "connections": {
+    "previous": "SAS 使用兩邊比例與夾角。",
+    "next": [
+      "相似比與周長比會把共同縮放倍數套用到整個周界。",
+      "面積比則是縮放倍數的平方。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u18-sss-q010",
+      "purpose": "協助辨認「SSS 相似」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s009-v001",
+      "u18-s009-v002",
+      "u18-s009-v003",
+      "u18-s009-v004",
+      "u18-s009-v005",
+      "u18-s009-v006",
+      "u18-s009-v007",
+      "u18-s009-v008",
+      "u18-s009-v009",
+      "u18-s009-v010",
+      "u18-s009-v011",
+      "u18-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s009-cr001",
+      "u18-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "逐題先做三角形不等式檢查，再驗證三組比例與端點配對；特別保留不能成三角形的反例，避免機械比值相等就判相似。"
+  },
+  "contentSha256": "08b59a447feeac5575777eedca7d053e350ec07307a06cac9b131af89614a2c5"
+}
