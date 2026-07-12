@@ -1,0 +1,170 @@
+{
+  "packageId": "math-v2-human-content-batch-013-u12-complete",
+  "schemaVersion": "2.0.0",
+  "immutableSource": true,
+  "baseBranch": "chatgpt/math-v2-human-authoring-r1",
+  "expectedBaseHead": "__CENTRAL_COORDINATOR_WILL_SUPPLY_EXPECTED_HEAD__",
+  "syllabusLockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+  "dependsOn": [
+    "math-v2-human-content-batch-001",
+    "math-v2-human-content-batch-002-u01-complete",
+    "math-v2-human-content-batch-003-u02-complete",
+    "math-v2-human-content-batch-004-u03-complete",
+    "authoring-syllabus-lock-r2"
+  ],
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "unitTitle": "因式分解",
+  "gradeBand": "8上",
+  "domain": "代數",
+  "topics": [
+    {
+      "topicId": "u12-methods",
+      "title": "因式分解方法",
+      "order": 1
+    },
+    {
+      "topicId": "u12-applications",
+      "title": "生活應用",
+      "order": 2
+    },
+    {
+      "topicId": "u12-literacy",
+      "title": "素養應用",
+      "order": 3
+    }
+  ],
+  "skills": [
+    {
+      "slot": "s001",
+      "topicId": "u12-methods",
+      "skillId": "factoring-common",
+      "lockedTitle": "提公因式",
+      "finalTitle": "提公因式",
+      "order": 1,
+      "prerequisiteSkillIds": []
+    },
+    {
+      "slot": "s002",
+      "topicId": "u12-methods",
+      "skillId": "factoring-formula",
+      "lockedTitle": "公式法",
+      "finalTitle": "公式法",
+      "order": 2,
+      "prerequisiteSkillIds": [
+        "factoring-common"
+      ]
+    },
+    {
+      "slot": "s003",
+      "topicId": "u12-methods",
+      "skillId": "factoring-cross",
+      "lockedTitle": "十字交乘法",
+      "finalTitle": "十字交乘法",
+      "order": 3,
+      "prerequisiteSkillIds": [
+        "factoring-formula"
+      ]
+    },
+    {
+      "slot": "s004",
+      "topicId": "u12-methods",
+      "skillId": "factoring-by-grouping",
+      "lockedTitle": "分組分解",
+      "finalTitle": "分組分解",
+      "order": 4,
+      "prerequisiteSkillIds": [
+        "factoring-cross"
+      ]
+    },
+    {
+      "slot": "s005",
+      "topicId": "u12-methods",
+      "skillId": "factoring-quadratic-trinomial",
+      "lockedTitle": "二次三項式分解",
+      "finalTitle": "二次三項式分解",
+      "order": 5,
+      "prerequisiteSkillIds": [
+        "factoring-by-grouping"
+      ]
+    },
+    {
+      "slot": "s006",
+      "topicId": "u12-methods",
+      "skillId": "factoring-common-mistake-sign",
+      "lockedTitle": "分解符號陷阱",
+      "finalTitle": "分解符號陷阱",
+      "order": 6,
+      "prerequisiteSkillIds": [
+        "factoring-quadratic-trinomial"
+      ]
+    },
+    {
+      "slot": "s007",
+      "topicId": "u12-applications",
+      "skillId": "factoring-application",
+      "lockedTitle": "因式分解應用",
+      "finalTitle": "因式分解應用",
+      "order": 7,
+      "prerequisiteSkillIds": [
+        "factoring-common-mistake-sign"
+      ]
+    },
+    {
+      "slot": "s008",
+      "topicId": "u12-applications",
+      "skillId": "factoring-check-expand",
+      "lockedTitle": "分解後展開檢查",
+      "finalTitle": "分解後展開檢查",
+      "order": 8,
+      "prerequisiteSkillIds": [
+        "factoring-application"
+      ]
+    },
+    {
+      "slot": "s009",
+      "topicId": "u12-applications",
+      "skillId": "factoring-word-area",
+      "lockedTitle": "面積式因式分解",
+      "finalTitle": "面積式因式分解",
+      "order": 9,
+      "prerequisiteSkillIds": [
+        "factoring-check-expand"
+      ]
+    },
+    {
+      "slot": "s010",
+      "topicId": "u12-literacy",
+      "skillId": "factoring-literacy",
+      "lockedTitle": "因式分解素養題",
+      "finalTitle": "因式分解素養題",
+      "order": 10,
+      "prerequisiteSkillIds": [
+        "factoring-word-area"
+      ]
+    }
+  ],
+  "counts": {
+    "skillCount": 10,
+    "lectureCount": 10,
+    "mcQuestionCount": 120,
+    "constructedResponseCount": 20,
+    "semanticReviewCount": 120,
+    "figureCount": 3,
+    "difficultyCounts": {
+      "basic": 30,
+      "standard": 30,
+      "advanced": 30,
+      "literacy": 30
+    },
+    "answerIndexCounts": [
+      30,
+      30,
+      30,
+      30
+    ]
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "productionActivationAllowed": false,
+  "allowedDestination": "數學會考作戰室/tools/v2-human-content/batches/013-u12-complete/"
+}

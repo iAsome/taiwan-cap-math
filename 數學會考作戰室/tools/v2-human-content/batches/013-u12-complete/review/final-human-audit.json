@@ -1,0 +1,92 @@
+{
+  "auditId": "u12-final-human-audit-r4.0",
+  "unitId": "u12",
+  "auditedAt": "2026-07-12",
+  "auditor": "ChatGPT human-authoring lead for Batch 013",
+  "scope": {
+    "lectures": 10,
+    "mcQuestions": 120,
+    "constructedResponses": 20,
+    "semanticReviews": 120,
+    "figures": 3
+  },
+  "inspectionPerformed": [
+    "逐一檢查十篇講義的定義、公式條件、例題與先後技能連接",
+    "逐一獨立重算 120 題選擇題並核對四個選項",
+    "逐一檢查 20 題申論解答、替代方法、0–3 評分規準與追蹤給分",
+    "檢查負號、括號、次方、係數、面積單位、整除與零除限制",
+    "檢查進階題是否需要多步判型或反證，而非只換大數字",
+    "檢查素養情境是否提供必要限制或資料",
+    "渲染並人工檢視三張 SVG 的標籤、可讀性與答案洩漏",
+    "確認未使用下一單元的一元二次方程式解法"
+  ],
+  "issuesFoundAndRepaired": [
+    {
+      "issueId": "U12-AUDIT-001",
+      "location": "s002 advanced MC draft",
+      "found": "一個干擾選項 (2x+6)(x-3) 與正解只差把 2 提入前括號，實際上等價，造成雙重正解。",
+      "repair": "改為 (2x+3)(x-6)，重新展開確認中間項與常數均不符。",
+      "status": "repaired"
+    },
+    {
+      "issueId": "U12-AUDIT-002",
+      "location": "s004 advanced MC draft",
+      "found": "原先某個「不能形成共同括號」選項仍可透過合法重排完成分組。",
+      "repair": "重寫三個錯誤分組，逐組提出後確認括號不相同且不互為相反式。",
+      "status": "repaired"
+    },
+    {
+      "issueId": "U12-AUDIT-003",
+      "location": "s005 advanced MC draft",
+      "found": "審核題的文字把正確候選誤標成需要修正，與獨立展開結果矛盾。",
+      "repair": "改為詢問原候選是否正確，答案明定「原候選正確」，並重算三項係數。",
+      "status": "repaired"
+    },
+    {
+      "issueId": "U12-AUDIT-004",
+      "location": "s008 parameter MC draft",
+      "found": "原多項式的首項與常數條件分別要求不同的 p，沒有任何單一答案。",
+      "repair": "將目標式調整為 2x²-x-15，使 (2x+p)(x-3) 的三個係數一致導出 p=5。",
+      "status": "repaired"
+    },
+    {
+      "issueId": "U12-AUDIT-005",
+      "location": "s008 counterexample MC draft",
+      "found": "原敘述與選項出現不只一個可反駁的代入值。",
+      "repair": "重寫為四種不同檢查行為；只有代入 x=1 得 12≠13 能作反例，其餘僅比較局部係數或得到相等結果。",
+      "status": "repaired"
+    },
+    {
+      "issueId": "U12-AUDIT-006",
+      "location": "s007–s010 several MC drafts",
+      "found": "編排答案位置時曾產生文字相同或代數等價的正解與干擾選項。",
+      "repair": "逐題展開或代入後更換干擾式，保留每題唯一正解與每技能 3/3/3/3 答案位置。",
+      "status": "repaired"
+    },
+    {
+      "issueId": "U12-AUDIT-007",
+      "location": "s003、s004、s006–s010 package curation",
+      "found": "初次組裝保留了若干比較用候選題，造成部分技能超過鎖定的 12 題，並破壞 3/3/3/3 分布。",
+      "repair": "依能力覆蓋與答案位置挑選最終題組，排除多餘草稿，重新編號並重算所有內容雜湊；最終每技能恰為 12 題。",
+      "status": "repaired"
+    },
+    {
+      "issueId": "U12-AUDIT-008",
+      "location": "s007 standard MC",
+      "found": "52²-48² 題中正解 400 曾同時出現在另一個選項，形成重複選項。",
+      "repair": "將錯誤選項改為 416，補上具體錯因並重新驗證唯一正解。",
+      "status": "repaired"
+    },
+    {
+      "issueId": "U12-AUDIT-009",
+      "location": "s002/s005 and s005/s006 MC wording",
+      "found": "數字骨架掃描發現兩組題幹只替換係數而語句結構過近。",
+      "repair": "分別改寫為完全平方辨識與先提出整體負號的任務，使測量能力、讀題操作與語句結構都不同。",
+      "status": "repaired"
+    }
+  ],
+  "unresolvedIssues": [],
+  "legacyContentUsed": false,
+  "productionActivationAllowed": false,
+  "decision": "pass-pending-central-coordinator-acceptance"
+}

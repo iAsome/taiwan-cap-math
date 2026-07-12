@@ -1,0 +1,248 @@
+{
+  "lectureId": "u12-s009-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-applications",
+  "skillId": "factoring-word-area",
+  "lockedSkillTitle": "面積式因式分解",
+  "title": "面積式因式分解：從共同邊長讀出長乘寬",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把長方形面積寫成長乘寬。",
+    "能由分割面積找共同邊長。",
+    "能由面積多項式求另一邊的代數式。",
+    "能檢查邊長正值條件。",
+    "能由因式求周長或比較設計。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "factoring-check-expand",
+      "requiredLevel": "能運用前一技能並以展開驗證結果；本講義會重新連接必要步驟。"
+    }
+  ],
+  "prerequisiteBridge": "先備技能為 factoring-check-expand；先確認能完成前一方法並保留所有符號，再進入本技能。",
+  "glossary": [
+    {
+      "term": "面積模型",
+      "definition": "用長方形分割表示分配律與因式分解。"
+    },
+    {
+      "term": "共同邊長",
+      "definition": "相鄰區塊共享的同一方向長度。"
+    },
+    {
+      "term": "總面積",
+      "definition": "各分區面積相加，也等於整體長乘寬。"
+    },
+    {
+      "term": "尺寸限制",
+      "definition": "實際長度必須大於 0。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "A=L×W",
+      "meaning": "長方形面積等於長乘寬。"
+    },
+    {
+      "symbol": "wx+wy=w(x+y)",
+      "meaning": "兩區共享寬 w，總長為 x+y。"
+    }
+  ],
+  "conceptNarrative": [
+    "面積相加對應展開；把總面積寫成長乘寬對應因式分解。",
+    "若各區共享高度，就可把高度提出，括號內是各區寬度的總和。",
+    "二次三項式分解成兩個一次式時，可把兩因式解讀為整體長與寬。",
+    "圖若未按比例，不能靠視覺判斷哪邊較長，必須依標示式子。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "面積式因式分解",
+      "statement": "將面積多項式分解為可作為長與寬的因式，並檢查其正值條件。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A=L×W",
+      "conditions": [
+        "L>0、W>0"
+      ],
+      "meaning": "長方形面積。"
+    },
+    {
+      "formula": "wx+wy=w(x+y)",
+      "conditions": [
+        "兩區共享邊長 w"
+      ],
+      "meaning": "分割面積合併。"
+    }
+  ],
+  "nonApplicableCases": [
+    "因式為負時不能直接當實際長度。",
+    "圖形未按比例時不能用目測取代代數。",
+    "不同方向的邊長不能誤當共同邊長提出。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認每個面積項對應哪一塊。",
+      "check": "標出共享方向。"
+    },
+    {
+      "step": 2,
+      "instruction": "找所有區塊共同邊長。",
+      "check": "它是可提出的因式。"
+    },
+    {
+      "step": 3,
+      "instruction": "把各區另一邊相加。",
+      "check": "形成括號。"
+    },
+    {
+      "step": 4,
+      "instruction": "若為三項式，選擇能乘回面積的兩因式。",
+      "check": "核對交叉項。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查邊長正值並回答周長等後續問題。",
+      "check": "不要停在分解式。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩區面積 8x^2 與 12x，共同高 4x",
+      "solutionSteps": [
+        "8x^2÷4x=2x。",
+        "12x÷4x=3。"
+      ],
+      "answer": "總寬 2x+3"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "面積 x^2+7x+10",
+      "solutionSteps": [
+        "5·2=10，5+2=7。"
+      ],
+      "answer": "邊長可為 x+5 與 x+2"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "面積 6x^2+13x+6",
+      "solutionSteps": [
+        "交叉和 9x+4x=13x。"
+      ],
+      "answer": "邊長可為 3x+2 與 2x+3"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "面積 2x^2-8 且一邊為 2(x-2)",
+      "solutionSteps": [
+        "2x^2-8=2(x-2)(x+2)。",
+        "需 x>2 才使已知邊長為正。"
+      ],
+      "answer": "另一邊為 x+2"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把面積項直接相加當邊長。",
+      "why": "混淆面積與長度。",
+      "correction": "先除以共同邊長。"
+    },
+    {
+      "mistake": "忽略單位平方。",
+      "why": "面積單位與長度不同。",
+      "correction": "面積用平方單位，邊長用長度單位。"
+    },
+    {
+      "mistake": "因式負也當長度。",
+      "why": "只做代數不查情境。",
+      "correction": "加入變數範圍。"
+    },
+    {
+      "mistake": "依圖目測因式。",
+      "why": "圖可能不按比例。",
+      "correction": "依標示運算。"
+    },
+    {
+      "mistake": "只找首尾乘積。",
+      "why": "中間面積不吻合。",
+      "correction": "展開查交叉項。"
+    },
+    {
+      "mistake": "求周長時只加兩邊。",
+      "why": "忘記相對邊。",
+      "correction": "周長為 2(L+W)。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "面積和對應展開，長乘寬對應因式分解。",
+    "共同邊長是公因式。",
+    "實際尺寸要檢查正值與單位。"
+  ],
+  "connections": {
+    "previous": "承接 factoring-check-expand。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u12-fig-common-area",
+      "purpose": "由共同邊長讀出另一尺寸。",
+      "altText": "共享高度的兩個面積區塊。"
+    },
+    {
+      "figureId": "u12-fig-group-wall",
+      "purpose": "由四區面積還原整體長寬。",
+      "altText": "四區拼接長方形。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s009-v001",
+      "u12-s009-v002",
+      "u12-s009-v003",
+      "u12-s009-v004",
+      "u12-s009-v005",
+      "u12-s009-v006",
+      "u12-s009-v007",
+      "u12-s009-v008",
+      "u12-s009-v009",
+      "u12-s009-v010",
+      "u12-s009-v011",
+      "u12-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s009-cr001",
+      "u12-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個面積例分別以除法與展開重算，並檢查長度正值、平方單位和不按比例警告；圖形資訊不洩漏答案。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "5a3b37d167f445e1fd9c3878dd7461b3f2b368a51a4b71eb6d3bb3b56e739c6b"
+}

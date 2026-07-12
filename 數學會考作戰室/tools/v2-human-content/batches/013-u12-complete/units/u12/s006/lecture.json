@@ -1,0 +1,239 @@
+{
+  "lectureId": "u12-s006-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-methods",
+  "skillId": "factoring-common-mistake-sign",
+  "lockedSkillTitle": "分解符號陷阱",
+  "title": "分解符號陷阱：負號要穿過整個括號",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能處理提出負公因式。",
+    "能辨認 a-b 與 b-a 的關係。",
+    "能正確判斷完全平方中間項符號。",
+    "能找出十字交乘的符號錯誤。",
+    "能用展開定位錯在哪一項。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "factoring-quadratic-trinomial",
+      "requiredLevel": "能運用前一技能並以展開驗證結果；本講義會重新連接必要步驟。"
+    }
+  ],
+  "prerequisiteBridge": "先備技能為 factoring-quadratic-trinomial；先確認能完成前一方法並保留所有符號，再進入本技能。",
+  "glossary": [
+    {
+      "term": "整體負號",
+      "definition": "乘在整個式子外的 -1。"
+    },
+    {
+      "term": "相反式",
+      "definition": "兩式互為 -1 倍，例如 a-b 與 b-a。"
+    },
+    {
+      "term": "符號回查",
+      "definition": "展開後逐項核對正負。"
+    },
+    {
+      "term": "首項正化",
+      "definition": "提出負因式使括號首項係數為正。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "-(a-b)",
+      "meaning": "等於 -a+b，也等於 b-a。"
+    },
+    {
+      "symbol": "(a-b)^2",
+      "meaning": "展開為 a^2-2ab+b^2。"
+    }
+  ],
+  "conceptNarrative": [
+    "負號乘進括號時，每一項都要改號。",
+    "a-b 與 b-a 不相等，而是互為相反式；這常決定分組能否成功。",
+    "常數為正的二次三項式若中間項為負，兩個常數因數通常同負。",
+    "最可靠的除錯不是看外觀，而是展開後比較每一項。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "相反括號",
+      "statement": "若 B= -A，則含 B 的一組可提出負號轉成 A。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "b-a=-(a-b)",
+      "conditions": [
+        "整個括號都反號"
+      ],
+      "meaning": "相反式關係。"
+    },
+    {
+      "formula": "(a-b)^2=a^2-2ab+b^2",
+      "conditions": [
+        "中間項必為負 2ab"
+      ],
+      "meaning": "差的平方。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只改括號第一項的符號。",
+    "不能把 -(a+b) 寫成 -a+b。",
+    "不能因兩個因式看起來相近就省略展開。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標記每個負號作用範圍。",
+      "check": "它乘單項還是整個括號？"
+    },
+    {
+      "step": 2,
+      "instruction": "若提出負公因式，逐項做除法。",
+      "check": "每項都檢查。"
+    },
+    {
+      "step": 3,
+      "instruction": "比對括號方向。",
+      "check": "是否相同、相反或完全不同？"
+    },
+    {
+      "step": 4,
+      "instruction": "寫出完整展開。",
+      "check": "保留交叉項。"
+    },
+    {
+      "step": 5,
+      "instruction": "指出第一個不一致的係數或符號。",
+      "check": "精確修正。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "-8x^2+12x",
+      "solutionSteps": [
+        "-8x^2÷(-4x)=2x。",
+        "12x÷(-4x)=-3。"
+      ],
+      "answer": "-4x(2x-3)"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "x(a-b)-3(b-a)",
+      "solutionSteps": [
+        "b-a=-(a-b)。",
+        "-3(b-a)=+3(a-b)。"
+      ],
+      "answer": "(a-b)(x+3)"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "y^2-10y+25",
+      "solutionSteps": [
+        "中間項為負。",
+        "兩括號都用 -5。"
+      ],
+      "answer": "(y-5)^2"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "-2m^2-7m-3",
+      "solutionSteps": [
+        "先提出 -1。",
+        "2m^2+7m+3=(2m+1)(m+3)。"
+      ],
+      "answer": "-(2m+1)(m+3)"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "-(a-b) 寫成 -a-b。",
+      "why": "沒有把負號分配到第二項。",
+      "correction": "正確為 -a+b。"
+    },
+    {
+      "mistake": "提出 -g 後括號照抄。",
+      "why": "未做除法。",
+      "correction": "每項除以 -g。"
+    },
+    {
+      "mistake": "負中間項卻用 (x+p)^2。",
+      "why": "只看末項正。",
+      "correction": "中間項決定括號符號。"
+    },
+    {
+      "mistake": "常數負時兩因式同號。",
+      "why": "忽略乘積符號。",
+      "correction": "常數負代表異號。"
+    },
+    {
+      "mistake": "把相反括號直接當相同。",
+      "why": "漏掉 -1。",
+      "correction": "先寫 b-a=-(a-b)。"
+    },
+    {
+      "mistake": "只代一個數檢查。",
+      "why": "單點相等不代表恆等。",
+      "correction": "完整展開比係數。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "負號作用整個括號時要全體改號。",
+    "相反括號差一個 -1。",
+    "展開可精確定位符號錯誤。"
+  ],
+  "connections": {
+    "previous": "承接 factoring-quadratic-trinomial。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s006-v001",
+      "u12-s006-v002",
+      "u12-s006-v003",
+      "u12-s006-v004",
+      "u12-s006-v005",
+      "u12-s006-v006",
+      "u12-s006-v007",
+      "u12-s006-v008",
+      "u12-s006-v009",
+      "u12-s006-v010",
+      "u12-s006-v011",
+      "u12-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s006-cr001",
+      "u12-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "所有例題以逐項除法和展開雙重核對；相反括號、負完全平方中間項與外層負號皆有具體錯誤對照。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "3349b30710567e855899003cbf1777179cb674962ddd6b74ac8310326235b20e"
+}

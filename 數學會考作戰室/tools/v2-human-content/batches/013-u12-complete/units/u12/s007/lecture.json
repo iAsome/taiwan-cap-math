@@ -1,0 +1,239 @@
+{
+  "lectureId": "u12-s007-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-applications",
+  "skillId": "factoring-application",
+  "lockedSkillTitle": "因式分解應用",
+  "title": "因式分解應用：把難算的式子改成好用的乘積",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能用平方差做心算。",
+    "能用完全平方簡化計算。",
+    "能由因式說明整除性。",
+    "能把多項式改寫成便於比較的形式。",
+    "能說明使用因式分解的必要性。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "factoring-common-mistake-sign",
+      "requiredLevel": "能運用前一技能並以展開驗證結果；本講義會重新連接必要步驟。"
+    }
+  ],
+  "prerequisiteBridge": "先備技能為 factoring-common-mistake-sign；先確認能完成前一方法並保留所有符號，再進入本技能。",
+  "glossary": [
+    {
+      "term": "整除",
+      "definition": "一數除以另一數，商為整數且無餘數。"
+    },
+    {
+      "term": "恆等式",
+      "definition": "對允許的每個變數值都成立的等式。"
+    },
+    {
+      "term": "結構化計算",
+      "definition": "先改寫式子再計算，避免直接展開大數。"
+    },
+    {
+      "term": "因數資訊",
+      "definition": "乘積形式直接顯示哪些量必為因數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "n(n+k)",
+      "meaning": "顯示此式含因數 n。"
+    },
+    {
+      "symbol": "(A+B)(A-B)",
+      "meaning": "可快速算 A^2-B^2。"
+    }
+  ],
+  "conceptNarrative": [
+    "因式分解不只為了寫答案，也能把大數平方差變成兩個小乘數。",
+    "若式子寫成 n×整數式，可立即說明它可被 n 整除，但要注意 n 的取值與除數不可為 0。",
+    "完全平方能把接近整數的計算化成單一平方。",
+    "應用題要先指出乘積形式帶來的資訊，而不是只完成形式轉換。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "因式分解應用",
+      "statement": "利用乘積形式完成計算、整除、比較或量的解讀。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A^2-B^2=(A+B)(A-B)",
+      "conditions": [
+        "適用平方差"
+      ],
+      "meaning": "快速乘法。"
+    },
+    {
+      "formula": "n^2+kn=n(n+k)",
+      "conditions": [
+        "n 為共同因式"
+      ],
+      "meaning": "顯示 n 整除整式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "除數可能為 0 時不能直接談除法。",
+    "因式分解只能重寫等值式，不能任意刪除因式。",
+    "實際情境中的長度因式還要檢查正值條件。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "判斷目標是計算、整除、比較或量的解讀。",
+      "check": "不要只看表面式子。"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇能暴露資訊的分解方法。",
+      "check": "平方差、完全平方或提公因式。"
+    },
+    {
+      "step": 3,
+      "instruction": "寫成乘積並執行目標操作。",
+      "check": "例如直接相乘或指出因數。"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查變數與情境限制。",
+      "check": "除數非零、長度為正。"
+    },
+    {
+      "step": 5,
+      "instruction": "用原式或估算回查。",
+      "check": "結果量級合理嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "63^2-37^2",
+      "solutionSteps": [
+        "分解成 (63+37)(63-37)。",
+        "100×26=2600。"
+      ],
+      "answer": "2600"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "98^2+4·98+4",
+      "solutionSteps": [
+        "辨認 98^2+2·98·2+2^2。",
+        "等於 (98+2)^2=100^2。"
+      ],
+      "answer": "10000"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "n^2+7n",
+      "solutionSteps": [
+        "提 n。",
+        "若 n 為整數，整式必為 n 的倍數。"
+      ],
+      "answer": "n(n+7)"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "x^2-16 與 x-4 的關係",
+      "solutionSteps": [
+        "乘積形式顯示 x-4 是因式。",
+        "但 x=4 時不能進一步把原式除以 x-4。"
+      ],
+      "answer": "x^2-16=(x-4)(x+4)"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "平方差直接算兩平方。",
+      "why": "忽略可簡化結構。",
+      "correction": "先改寫為和乘差。"
+    },
+    {
+      "mistake": "從 n(n+7) 把 n 約掉。",
+      "why": "沒有等式或分母條件。",
+      "correction": "分解不等於任意消去。"
+    },
+    {
+      "mistake": "宣稱可被 n 整除但 n=0。",
+      "why": "除數不可為 0。",
+      "correction": "加上 n≠0 或改說含因數 n。"
+    },
+    {
+      "mistake": "完全平方中間項辨認錯。",
+      "why": "2ab 算錯。",
+      "correction": "逐一找 a、b。"
+    },
+    {
+      "mistake": "只給乘積未回答情境問題。",
+      "why": "停在中間步驟。",
+      "correction": "回到所求量。"
+    },
+    {
+      "mistake": "忽略長度正值。",
+      "why": "代數因式可能為負。",
+      "correction": "依情境加上變數範圍。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "乘積形式能簡化計算並顯示因數。",
+    "整除與除法需檢查 0。",
+    "情境答案要回到原問題與限制。"
+  ],
+  "connections": {
+    "previous": "承接 factoring-common-mistake-sign。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s007-v001",
+      "u12-s007-v002",
+      "u12-s007-v003",
+      "u12-s007-v004",
+      "u12-s007-v005",
+      "u12-s007-v006",
+      "u12-s007-v007",
+      "u12-s007-v008",
+      "u12-s007-v009",
+      "u12-s007-v010",
+      "u12-s007-v011",
+      "u12-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s007-cr001",
+      "u12-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "例題分別重算平方差、完全平方、整除與零除限制；所有應用均指出分解後新增的可用資訊。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "9b236f838ea71bd9052a0df2dde484a70491d45ceb34228b22358592c6b67557"
+}

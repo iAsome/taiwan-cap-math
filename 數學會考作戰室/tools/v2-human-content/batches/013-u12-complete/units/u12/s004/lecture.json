@@ -1,0 +1,237 @@
+{
+  "lectureId": "u12-s004-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-methods",
+  "skillId": "factoring-by-grouping",
+  "lockedSkillTitle": "分組分解",
+  "title": "分組分解：讓不同小組提出同一個括號",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把四項分成兩組。",
+    "能在各組提出公因式。",
+    "能辨認兩組共同括號。",
+    "能在必要時調整項目順序或提出負號。",
+    "能用展開檢查分組結果。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "factoring-cross",
+      "requiredLevel": "能運用前一技能並以展開驗證結果；本講義會重新連接必要步驟。"
+    }
+  ],
+  "prerequisiteBridge": "先備技能為 factoring-cross；先確認能完成前一方法並保留所有符號，再進入本技能。",
+  "glossary": [
+    {
+      "term": "分組",
+      "definition": "把多項式項目暫時分成數組處理。"
+    },
+    {
+      "term": "共同二項式",
+      "definition": "各組提出後出現的相同括號。"
+    },
+    {
+      "term": "重排",
+      "definition": "利用加法交換律改變項目順序。"
+    },
+    {
+      "term": "整體因式",
+      "definition": "把整個括號視為一個共同乘數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "aM+bM",
+      "meaning": "M 為共同整體，等於 (a+b)M。"
+    },
+    {
+      "symbol": "(ax+ay)+(bx+by)",
+      "meaning": "先分組再得 (a+b)(x+y)。"
+    }
+  ],
+  "conceptNarrative": [
+    "分組的目的不是任意加括號，而是讓每組提出後得到完全相同的括號。",
+    "若兩括號只差整體負號，例如 x-2 與 2-x，可從其中一組提出 -1。",
+    "有時原順序無法形成共同括號，需要重排；重排不改變加法的值。",
+    "最後的共同括號再提出一次，才形成乘積。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "分組分解",
+      "statement": "將多項式分成數組，各組提公因式後再提出共同括號。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "ax+ay+bx+by=(a+b)(x+y)",
+      "conditions": [
+        "可分為 a(x+y)+b(x+y)"
+      ],
+      "meaning": "典型四項分組。"
+    }
+  ],
+  "nonApplicableCases": [
+    "分組後兩括號不同且不能靠整體負號轉換時，該分組沒有完成目的。",
+    "不能改變原項符號來製造相同括號。",
+    "只做到 a(x+y)+b(x+y) 還不是最終乘積形式。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "觀察哪些兩項有明顯公因式。",
+      "check": "先試自然相鄰分組。"
+    },
+    {
+      "step": 2,
+      "instruction": "各組分別提公因式。",
+      "check": "括號內項目順序盡量一致。"
+    },
+    {
+      "step": 3,
+      "instruction": "比較兩個括號。",
+      "check": "完全相同或互為相反式？"
+    },
+    {
+      "step": 4,
+      "instruction": "必要時重排或提出負號。",
+      "check": "只用合法的交換律與乘法。"
+    },
+    {
+      "step": 5,
+      "instruction": "提出共同括號並展開回查。",
+      "check": "核對四項。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "mx+my+nx+ny",
+      "solutionSteps": [
+        "前兩項提 m，後兩項提 n。",
+        "得到 m(x+y)+n(x+y)。"
+      ],
+      "answer": "(m+n)(x+y)"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "x^2+4x+3x+12",
+      "solutionSteps": [
+        "前組 x(x+4)，後組 3(x+4)。"
+      ],
+      "answer": "(x+3)(x+4)"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "6a^2-9a+4ab-6b",
+      "solutionSteps": [
+        "分成 (6a^2-9a)+(4ab-6b)。",
+        "提 3a(2a-3)+2b(2a-3)。"
+      ],
+      "answer": "(2a-3)(3a+2b)"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "pq-pr-2q+2r",
+      "solutionSteps": [
+        "前組 p(q-r)。",
+        "後組 -2(q-r)。"
+      ],
+      "answer": "(p-2)(q-r)"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "任意分組但沒有共同括號。",
+      "why": "只做表面加括號。",
+      "correction": "分組後要檢查括號相同。"
+    },
+    {
+      "mistake": "第二組提出負數時符號錯。",
+      "why": "除以負數未全反。",
+      "correction": "逐項除以負公因式。"
+    },
+    {
+      "mistake": "把 x+y 與 y+x 誤認不同。",
+      "why": "忽略加法交換律。",
+      "correction": "可先統一順序。"
+    },
+    {
+      "mistake": "把 x-y 與 y-x 誤認相同。",
+      "why": "忽略整體負號。",
+      "correction": "y-x=-(x-y)。"
+    },
+    {
+      "mistake": "只提各組公因式就停止。",
+      "why": "尚未成為單一乘積。",
+      "correction": "再提共同括號。"
+    },
+    {
+      "mistake": "重排時遺漏一項。",
+      "why": "抄寫不完整。",
+      "correction": "列出原式每項並逐一勾選。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "分組是為了製造相同括號。",
+    "括號相反時可提出負號。",
+    "重排與展開檢查能避免漏項。"
+  ],
+  "connections": {
+    "previous": "承接 factoring-cross。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u12-fig-group-wall",
+      "purpose": "展示四區分組後形成共同列寬與欄高。",
+      "altText": "二乘二四區面積 ax、ay、bx、by。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s004-v001",
+      "u12-s004-v002",
+      "u12-s004-v003",
+      "u12-s004-v004",
+      "u12-s004-v005",
+      "u12-s004-v006",
+      "u12-s004-v007",
+      "u12-s004-v008",
+      "u12-s004-v009",
+      "u12-s004-v010",
+      "u12-s004-v011",
+      "u12-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s004-cr001",
+      "u12-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個例題逐一回展並核對重排與負號；第三、第四例涵蓋非相鄰結構與相反括號，未越過國中因式分解範圍。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "032d4622402f777144abefd4cb0cfa4363f9500594860badf5a3393212ce58a9"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U12 human lecture",
+  "type": "object",
+  "required": [
+    "lectureId",
+    "unitId",
+    "topicId",
+    "skillId",
+    "title",
+    "workedExamples",
+    "commonMistakes",
+    "lectureReview",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "unitId": {
+      "const": "u12"
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}
