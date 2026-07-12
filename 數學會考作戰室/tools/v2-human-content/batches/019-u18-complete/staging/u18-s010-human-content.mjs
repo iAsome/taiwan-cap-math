@@ -606,8 +606,8 @@ export const QUESTIONS = [
     "itemType": "multiple-choice",
     "type": "mc",
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
-    "prompt": "某相似圖形線性放大為原来的 1.25 倍，原周長 64 cm，新周長為何？",
-    "text": "某相似圖形線性放大為原来的 1.25 倍，原周長 64 cm，新周長為何？",
+    "prompt": "某相似圖形線性放大為原來的 1.25 倍，原周長 64 cm，新周長為何？",
+    "text": "某相似圖形線性放大為原來的 1.25 倍，原周長 64 cm，新周長為何？",
     "givenConditions": [],
     "target": "求出唯一正確選項。",
     "choices": [
@@ -660,7 +660,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d425c2d88517e87d343fb151b79b2a7d451238a565c826d9657a34714a2d5765"
+    "contentSha256": "ebba9de56032c136dea16a63ea805fc031488630c247447837cf14a4c00c4199"
   },
   {
     "questionId": "u18-s010-v007",
@@ -1350,7 +1350,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-ratio-perimeter",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "d425c2d88517e87d343fb151b79b2a7d451238a565c826d9657a34714a2d5765",
+    "contentSha256": "ebba9de56032c136dea16a63ea805fc031488630c247447837cf14a4c00c4199",
     "independentSolution": "1.25=5/4，64×5/4=80。",
     "derivedAnswer": "80 cm",
     "storedAnswer": "80 cm",

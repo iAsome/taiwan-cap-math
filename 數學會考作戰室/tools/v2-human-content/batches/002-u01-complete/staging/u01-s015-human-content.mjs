@@ -271,7 +271,8 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "608d0021d4fa52c18e80cb7544cdc952e79e9f7d3218f9977913f77c0e126e6f"
+  "contentSha256": "04e152ee03783576f03c8380487bae78c284e227863a2ad2d019896ff5fd0afe",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
 export const QUESTIONS = [
@@ -340,7 +341,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始溫度與升高量都必要。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e6a772a8d0efc8962418f7da8030ff34b29c36a8e302cc225ed0532f53b2cb40"
+    "contentSha256": "ff0b6415f315dc791490ff5a65136608b489f13c1972ce78961d5bfba5d07107",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v002",
@@ -407,7 +409,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "入口基準與西負規則不可省略。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "27ed52975edb92f10ef013a5630903bf4b09a07f6f7623e7cc42d52891fa5759"
+    "contentSha256": "31e5c5774baf5f7286ade3672f705a84677b67bf673756707bf1598cb8b92b40",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v003",
@@ -474,7 +477,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "原負餘額與存入金額共同決定跨零結果。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8c62325af186180b52ad50a212ca5a2fbbddb301956fb767f9b25f81183933fc"
+    "contentSha256": "7921de10f53bf28bc00ad6ac707b257da30793f611de3ec29766a45658a5c077",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v004",
@@ -541,7 +545,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "最低、最高與「溫差」措辭共同決定絕對差。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "cf2ece31f666b3ed2c51f30fa5f3bea9efae7fc0ee9128127eb233644ed5bbd4"
+    "contentSha256": "e33e89cb11ddda0e1e2d7d5b24cf26642a0f0cb047eca54e3437d30e4a66cfd5",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v005",
@@ -608,7 +613,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "共同目標與兩個帶號偏差共同決定產量差。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "088407905db8a1755ec86381a8d0d9eb9ae8a97a37549631fc66dd7c97ed7912"
+    "contentSha256": "61ba1e9557e7d9bc0dfc8c8570aca815b2db6896bd39858c61cf0d64322defca",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v006",
@@ -675,7 +681,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "A、B數量級與差值要求都參與運算。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "988d4027b51c29095ffc5ed56b7f7acd05980588d9a0593119d2e24deba56091"
+    "contentSha256": "eac40da1fed282727f5b575862e752e5312ab6f768f4b5da7a033bfa52456243",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v007",
@@ -742,7 +749,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始、支出次數、每次金額與收入全部必要。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4bbd40dbe04a0017bdbbd2badae928f2e40da7ca63391efe275a299b30b04270"
+    "contentSha256": "7d6c6ea2b62c3c1b4b28c325d6672934bc54b018a47ae7a383c0db0cc044ba0d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v008",
@@ -809,7 +817,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始溫度與三次按順序調整皆不可省略。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c9b33b2347b65662cd04e9a95616e893800163fcfafd455660e1809f2460a727"
+    "contentSha256": "02c7b7628f48e57aff7c171274e00bbaa588a227f9e1f8513213a7b563ab039b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v009",
@@ -876,7 +885,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "每日產量、天數與總產量要求共同決定乘法。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bde32732869f516f88ec2ecae4734c433094e7cd8f8c64c3e3de1db5e26929b0"
+    "contentSha256": "335a68ef757f70b82698548e9549b751939ea68ea8be26bccc02b03cf1777513",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v010",
@@ -943,7 +953,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "三區坐標與指定行走順序共同決定兩段路程。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2f0b37192a7b09e8a9bac1ab361da4389e4dc43ab2b49c5744afc63e88ffb178"
+    "contentSha256": "2591e81952774eefd33ed283f43ed8c3fe184ca32689d8bbede203f27ac3013e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v011",
@@ -1010,7 +1021,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "基準、上午偏差與下午兩次調整都必要。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "78523aeb7e73bc8aa39ec2323bd35462eb04304ae448ae9398bef68640361f3c"
+    "contentSha256": "fa19688282408e5eba11f228665d3b3bab9e55ea26f9f05f5ce577df90f88d5b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-v012",
@@ -1077,7 +1089,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩個探測器距離與「A比B遠多少」決定相減次序。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "08ab5a73eaa5c80c5c535dde1353de0edd082869889c4e5d36fe0c98b3fd51b2"
+    "contentSha256": "ff513cf10ce9abf3684c1d7b6eabdfb1adaada4445552a25121d2df15ef3bc71",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 
@@ -1136,7 +1149,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "ccdd767b4709db134ae2478e8013e29ff3a2ee92fc093fb42ad36aecdbcd4b11"
+    "contentSha256": "836379f68191c4c66724fba459a85c317fa467b75e276128d4c15f97b0c6cc5b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s015-cr002",
@@ -1192,7 +1206,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "f44f0b3a86ca910dd1d6ba9f92af572b074f7b2f275fa764abffcc26c0c65d59"
+    "contentSha256": "5c217b7a6f10c615959aaf00707c5953da8218b6e9622938fedfe32104d4818d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 

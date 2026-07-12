@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="2289126cb60c42830c25617f358d1d7b2b07a01661970c4ae0664eabb2670be8";
+export const sourceDigest="529fc18a8259bf65a75f44d493ae153584028a78aea40c159d500ec38a01c7ff";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s006-lecture-r1",
@@ -1696,7 +1696,8 @@ export const skillBundle={
         "兩虛線分別過M、N並與對應邊垂直",
         "兩線交於O"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };

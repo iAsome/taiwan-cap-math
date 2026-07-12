@@ -966,7 +966,7 @@ export const QUESTIONS = [
     "steps": [
       "求水平距離倍率 7。",
       "參考桿高 0.6×7=4.2。",
-      "加相机高度 1.4。"
+      "加相機高度 1.4。"
     ],
     "optionAnalysis": [
       {
@@ -995,8 +995,8 @@ export const QUESTIONS = [
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "所有長度以 m。",
     "ambiguityAndBoundaryAudit": "題目說明參考桿在画面中對應镜头以上視角高度，需最後加镜头高度。",
-    "difficultyReason": "把相机取景模型與眼高修正結合。",
-    "literacyContextNecessity": "手机成像以镜头為觀察基準，必須區分镜头以上高度與旗桿總高。",
+    "difficultyReason": "把相機取景模型與眼高修正結合。",
+    "literacyContextNecessity": "手機成像以镜头為觀察基準，必須區分镜头以上高度與旗桿總高。",
     "visualMode": "text-only",
     "figureId": null,
     "drawingSpecReference": null,
@@ -1004,7 +1004,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b623db8f756364d119f46301ab56079aafc8d56192cfe857fd02faddaf89df66"
+    "contentSha256": "1f917aba361a95b7cf32ac0bb5f3a044f204c4e495773aa0eaf12e4bc4db1a86"
   },
   {
     "questionId": "u18-s012-v012",
@@ -1028,10 +1028,10 @@ export const QUESTIONS = [
       "可以且 H=60 m，不需其他條件"
     ],
     "answerIndex": 2,
-    "independentSolution": "同方向坡面可使一組角相同，但若小參考物或烟囱不平行、視線設置不同，AA 未必成立；需補充角度條件。",
+    "independentSolution": "同方向坡面可使一組角相同，但若小參考物或煙囪不平行、視線設置不同，AA 未必成立；需補充角度條件。",
     "explanation": "斜坡不自動破坏或保證相似；必須確認兩組三角形共享相同坡面方向、鉛直方向與視線角，使兩組角對應相等。",
     "steps": [
-      "不机械假設底邊水平。",
+      "不機械假設底邊水平。",
       "检查兩組三角形的角度結構。",
       "資料不足時保留條件判斷。"
     ],
@@ -1057,7 +1057,7 @@ export const QUESTIONS = [
         "reason": "數值計算不能替代相似成立證明。"
       }
     ],
-    "misconceptionTarget": "把水平地面當成相似法的唯一可能模型，或反過来只凭同坡度就保證相似。",
+    "misconceptionTarget": "把水平地面當成相似法的唯一可能模型，或反過來只憑同坡度就保證相似。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "本題不求數值；比例中的長度單位可一致。",
@@ -1071,7 +1071,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a491236a2671f4a61f6e593fc46dc0a346dedf680c6b31c9b4ca5b415f2a4657"
+    "contentSha256": "6ce1aa59720c4d3db851808460b433819f14fd4c958d1d15ab9663ae4b6a07cd"
   }
 ];
 
@@ -1514,7 +1514,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-height-measure",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "b623db8f756364d119f46301ab56079aafc8d56192cfe857fd02faddaf89df66",
+    "contentSha256": "1f917aba361a95b7cf32ac0bb5f3a044f204c4e495773aa0eaf12e4bc4db1a86",
     "independentSolution": "画面等高對應的是镜头水平線以上的部分，不含镜头離地高度；因此 4.2+1.4=5.6 m。",
     "derivedAnswer": "5.6 m",
     "storedAnswer": "5.6 m",
@@ -1532,8 +1532,8 @@ export const SEMANTIC_REVIEWS = [
       "units": "所有長度以 m。",
       "scope": "只使用國中會考範圍內的「利用相似測高」概念，未要求高中延伸。"
     },
-    "difficultyReason": "把相机取景模型與眼高修正結合。",
-    "literacyNecessityReview": "手机成像以镜头為觀察基準，必須區分镜头以上高度與旗桿總高。",
+    "difficultyReason": "把相機取景模型與眼高修正結合。",
+    "literacyNecessityReview": "手機成像以镜头為觀察基準，必須區分镜头以上高度與旗桿總高。",
     "reviewerNote": "重新由已知條件獨立計算：画面等高對應的是镜头水平線以上的部分，不含镜头離地高度；因此 4.2+1.4=5.6 m。 四個選項逐一核對後，只有「5.6 m」符合；主要排除點是「把參考桿高度解释為從地面到頂部而未识別取景基準。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
@@ -1545,8 +1545,8 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-height-measure",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "a491236a2671f4a61f6e593fc46dc0a346dedf680c6b31c9b4ca5b415f2a4657",
-    "independentSolution": "同方向坡面可使一組角相同，但若小參考物或烟囱不平行、視線設置不同，AA 未必成立；需補充角度條件。",
+    "contentSha256": "6ce1aa59720c4d3db851808460b433819f14fd4c958d1d15ab9663ae4b6a07cd",
+    "independentSolution": "同方向坡面可使一組角相同，但若小參考物或煙囪不平行、視線設置不同，AA 未必成立；需補充角度條件。",
     "derivedAnswer": "未必，還需確認兩三角形的對應角仍相等",
     "storedAnswer": "未必，還需確認兩三角形的對應角仍相等",
     "answerMatch": true,
@@ -1565,7 +1565,7 @@ export const SEMANTIC_REVIEWS = [
     },
     "difficultyReason": "评估非標準現場條件下模型假設是否充分。",
     "literacyNecessityReview": "現場坡度條件需要重新驗證几何模型，不能只看已寫好的比例式。",
-    "reviewerNote": "重新由已知條件獨立計算：同方向坡面可使一組角相同，但若小參考物或烟囱不平行、視線設置不同，AA 未必成立；需補充角度條件。 四個選項逐一核對後，只有「未必，還需確認兩三角形的對應角仍相等」符合；主要排除點是「把水平地面當成相似法的唯一可能模型，或反過来只凭同坡度就保證相似。」。",
+    "reviewerNote": "重新由已知條件獨立計算：同方向坡面可使一組角相同，但若小參考物或煙囪不平行、視線設置不同，AA 未必成立；需補充角度條件。 四個選項逐一核對後，只有「未必，還需確認兩三角形的對應角仍相等」符合；主要排除點是「把水平地面當成相似法的唯一可能模型，或反過來只憑同坡度就保證相似。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }

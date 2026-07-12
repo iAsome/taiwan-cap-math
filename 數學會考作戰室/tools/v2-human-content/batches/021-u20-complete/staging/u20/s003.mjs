@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="6878412ac2c63000a4764c881d04b0c829ab4ba4b44751caa77e6f8d69eef7e6";
+export const sourceDigest="2453b09cbbeab6688059cf03676eaf820c4e2968ed6cad7a69552f1d2c348415";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s003-lecture-r1",
@@ -1712,7 +1712,8 @@ export const skillBundle={
         "角1與角2位置可作平行線角關係",
         "角3位於c與t交點"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };

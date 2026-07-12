@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="042ec60e1ad7747323fb64318f95e718884d60baff860a484500f3cdccd7e616";
+export const sourceDigest="40d0f3d91abfff6f6ae573706f614e0333e3903aea6621e13b5e2d24738a22ec";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s002-lecture-r1",
@@ -1702,7 +1702,8 @@ export const skillBundle={
         "n與l有直角標記",
         "n與m無預先直角標記"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };

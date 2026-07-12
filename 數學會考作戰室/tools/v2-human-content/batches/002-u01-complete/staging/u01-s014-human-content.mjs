@@ -256,7 +256,8 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "f43450ea6c148f35c9efdb15bb3f89d6332b5b268f8ca297584dc81c1ff6ad2e"
+  "contentSha256": "b0ee4195fa1b6c36f4cc007636375d7b6707f3938148448b3260690373ef34b9",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
 export const QUESTIONS = [
@@ -322,7 +323,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bd7664cd4a0cf548e32c0eb0d8eddaa91b397d029e2a726b20ba2fc12369ac53"
+    "contentSha256": "fb7deb85cf4df66165f3306c1465f3436bbbfb405dcc89344cd924a731962c5d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v002",
@@ -386,7 +388,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "18557895f4eac3a9454ff57d950e979dbf0c21b2816cea3b2d5f83fbb5bf13a0"
+    "contentSha256": "59cf3e2f24cc0f1a0a8774e6babf25a1202012d78bb1f986055d3693e9de57b2",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v003",
@@ -450,7 +453,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d3eeb37b32498aa04182615b8056d7705dce59281452ede7ef5b3c84c12dafc3"
+    "contentSha256": "43734d0225c25985b78ba06509a8bc8aead39395ba1733ae7247916240ee111d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v004",
@@ -514,7 +518,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "876af7265bd202ce3ab7f579ec54c0600cc1ca90c793d69a5b4a52650626090f"
+    "contentSha256": "0eaa8357c1efedaa3b761fd91075431019e4836a0c1c2dfe9d9fdf502057d056",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v005",
@@ -578,7 +583,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6530d08141588a1b70ab8d7763ab160bf71797520c8f92ea53185e184c01c32b"
+    "contentSha256": "20716883157e97d9d4c70f287a4c885aed98bcbd6c21338fc4a60d1f4b73fb40",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v006",
@@ -642,7 +648,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8623894d41ce8c7f5e3f9f6af1b429057c139558fb825852b841d08a1ca15b1b"
+    "contentSha256": "00b58716545a74bef18e615a6cc7bf93e5a07f1f6ca7bd0918c29c8673a0a5ea",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v007",
@@ -706,7 +713,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "25b07954591dc225ad6cd0a6242178d015a620da374b74b55210824030370c0a"
+    "contentSha256": "8ebf4b8969ebf2d3b277b639b7d3ab34deed6317b3daeef61300e9cc66dd7f9e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v008",
@@ -770,7 +778,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d12b16dc144f3640a4b62399610f46f282c09e95c2685017b8ff0183aae65eeb"
+    "contentSha256": "f2c140155d0489da56a7533426537630dda6d6e21ec9f785eb7f54b8eabdb15c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v009",
@@ -834,7 +843,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3a178dc7cce834871e16e32c062a61879a7afac9d3a5f493dda010a085e1e115"
+    "contentSha256": "028a35a34bb0bc0fa0a40272051658442d046100bc0f9cbfc6b01dfb95bdf969",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v010",
@@ -898,7 +908,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "人口原始數字與標準形式要求共同決定係數和指數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "48e42e8492d6adafd906b1f5eb383417db5e9aabcdefc86e01800944c88e3520"
+    "contentSha256": "115c1b484fb943ec2886739a1de312123ce64ea2c03e733e7f98bcf1e01ef577",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v011",
@@ -962,7 +973,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "單個直徑、個數、首尾相接與單位都參與乘法。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e85fd0f899d68ae8c3b3ee574817d94e321955fdac37fad80c6dede8b8beea12"
+    "contentSha256": "e37062f7205d3ec74185d5cd38873c5240845251d117fe1496657564ff464db3",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-v012",
@@ -1026,7 +1038,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩站資料量與「合計」要求決定使用加法而非乘法。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "397c7c41b822f9d84ea4e0a0d0c74265e5f1a7515ee78f41bd3b493073c495ed"
+    "contentSha256": "b5b1ad9f928aea2efc580ae96493f6e78f158ac77840a1deb63bdd07b8ac8e80",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 
@@ -1083,7 +1096,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "d25b88974b8cf80565dd3a60e45eb5386b767d06b3d7919a3eb8ae68e3113667"
+    "contentSha256": "af2278d9b683c40f83882fb1b1dec1ffab33c91dee6f147c967e1e02932ece32",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s014-cr002",
@@ -1139,7 +1153,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "d74ca1b1433284f6bafde11d76fca21349b97b0b3f6f88466391a4e555aa0829"
+    "contentSha256": "11e06ea7277159da3e3fcb0e92b7bd9e253b9cdd58568a3d8c889c6b4dd2d237",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 

@@ -778,7 +778,7 @@ export const QUESTIONS = [
         "reason": "把每份誤算成 2 後乘 81。"
       }
     ],
-    "misconceptionTarget": "使用線性比 9:4 来處理面積差。",
+    "misconceptionTarget": "使用線性比 9:4 來處理面積差。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "面積差與面積均為 cm²。",
@@ -792,7 +792,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2715762a8b1c2e6356c4b302c54a5a1aa04cd67950562441ffd2c4e675474351"
+    "contentSha256": "d699afcabaa090409f5e5dcd5ada6027b976a5fe360e4484e4f2d88bfc23b888"
   },
   {
     "questionId": "u18-s011-v009",
@@ -1410,7 +1410,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-ratio-area",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "2715762a8b1c2e6356c4b302c54a5a1aa04cd67950562441ffd2c4e675474351",
+    "contentSha256": "d699afcabaa090409f5e5dcd5ada6027b976a5fe360e4484e4f2d88bfc23b888",
     "independentSolution": "設兩面積為 81k、16k；65k=130，k=2，小面積 32。",
     "derivedAnswer": "32 cm²",
     "storedAnswer": "32 cm²",
@@ -1430,7 +1430,7 @@ export const SEMANTIC_REVIEWS = [
     },
     "difficultyReason": "由面積比與面積差反求實際面積。",
     "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
-    "reviewerNote": "重新由已知條件獨立計算：設兩面積為 81k、16k；65k=130，k=2，小面積 32。 四個選項逐一核對後，只有「32 cm²」符合；主要排除點是「使用線性比 9:4 来處理面積差。」。",
+    "reviewerNote": "重新由已知條件獨立計算：設兩面積為 81k、16k；65k=130，k=2，小面積 32。 四個選項逐一核對後，只有「32 cm²」符合；主要排除點是「使用線性比 9:4 來處理面積差。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },

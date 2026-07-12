@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="26447a781396d14e4fe34dd694361fcb391739bcd717881199d4ad02af506794";
+export const sourceDigest="0fd1b6a615a603bdb092007c2d877206d8a327e3355777de456aec8ba5261f75";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s009-lecture-r1",
@@ -1687,7 +1687,8 @@ export const skillBundle={
         "H位於三角形外部",
         "延長線使用虛線"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     },
     {
       "figureId": "fig-u20-altitude-marking-01",
@@ -1733,7 +1734,8 @@ export const skillBundle={
         "右側虛線雖垂直BC但不通過頂點",
         "兩處直角標記位置清楚"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };

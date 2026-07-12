@@ -225,7 +225,8 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "7484656c9f1be4e79d83fad30148ca45afb0c25342dcd07eb5bbc6ff44cbfc9e"
+  "contentSha256": "07784bf21675e841eaafef0996e3e22c377867c442c4b68f0d160c1ad993b8e6",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
 export const QUESTIONS = [
@@ -288,7 +289,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "abc2b70ed2c028e5a32bc68e131f8bd618ab692fc0c83e4e6e61d6dd2feb7c29"
+    "contentSha256": "5a321674d35efc99e8995c003dcedfb21a8a64e2f21a7dc251fe5cbdacad1607",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v002",
@@ -349,7 +351,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9decccd5c1cfb28e361d36ab1b3c7df6f9a65f98eeb3d4b9a3e3d54b4b475f69"
+    "contentSha256": "a37494acf400f56ff741237608184b6bb7123f503d6278121a7993fedef47881",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v003",
@@ -410,7 +413,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0ee09c2a64dd3a4ec97ad666ccfa08e3fed2155ce63a7691337b8bc561dbfb78"
+    "contentSha256": "7e48d7ac6cebe6b680480e66344dff578a9280788ea2d2d76caca956fe29027d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v004",
@@ -471,7 +475,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "04236dc54eca26a42af1080e5a0589308ff8c52a1245bf29c1ffc1da03b6013f"
+    "contentSha256": "e565b7acb13739346667b0400e3cf99c5866dacf819b1c601ad245c885f80982",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v005",
@@ -532,7 +537,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c6db34e23356badcffe60e5097bc79f8f931e3f1c6861adfcefc22d2a30f8cdb"
+    "contentSha256": "48ac561d80fa3256985f124e91d74d778cbaa551a1441fc773c534ff807be3dc",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v006",
@@ -593,7 +599,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "83ad95e58d6a0f468ea2a1c21edf956c73c1e0d65e7589152b3d4dff3705709f"
+    "contentSha256": "8419eeebc431aba025028b4e1daed669233ec593517de155388b188d1ebbd341",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v007",
@@ -654,7 +661,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "cb331954faa6fc6834f6e334f5e4fa3ae514e9ce9eab2625b3d0ab737152b295"
+    "contentSha256": "f98f7befaa75fe10489a42a6d5ed88c797829bb35ba4899b30aed334bf5170c6",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v008",
@@ -715,7 +723,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1b8ee9951f0c6d68c88069b8eafa129310803493a7902a352ff97ca5330276d6"
+    "contentSha256": "35d43924652dadf664e2a52dde4e78b0e14869526d6617db926316a05f8097a8",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v009",
@@ -776,7 +785,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d2cdacdcba6cfa28fbe0be6fda6119ecb4f24f6e8f34dcb6e501764e921f1171"
+    "contentSha256": "2de44adbc8aa0d788110b6075ba0a24f192f13512f1937822cd6f24f66bd9ee1",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v010",
@@ -837,7 +847,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "「平均分且不剩」決定了必須檢查組數是否為 72 的因數；刪除情境就無法判定所問的分組條件。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ad43aab8f4cc753e10b2297fd07b9feb93871ae550f56319c7f753a810e3c99f"
+    "contentSha256": "23214a5deec47f76d2c219b58596ddb22a919afa85c8dc1ad64b935434e6a649",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v011",
@@ -898,7 +909,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "緞帶總長、整數公分與完全剪完三項資料共同限定整除關係，情境不可刪除。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "295793c45ef2841f87b950769f180c072ba1e49d47574a6d2f1b0d52052ba5f0"
+    "contentSha256": "a39a23e94ed9fc80fd176ea073ef2c95fbee5fd2da70b1f415012b5721e3a12a",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-v012",
@@ -959,7 +971,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "每區 14 席和總席數 196 是求區數的必要資料，必須依實際編區條件相除。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "fdd046e71f26d7fc34ec8c723c6ace609739dbb7068b466c0b860ba031850884"
+    "contentSha256": "4d2ec5d318566c169c72d9717d88f6d0660614b81df918b87ce25bb57b1c34b3",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 
@@ -1019,7 +1032,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "68ea5d164776082e14400f7bc0d4077c2e8cc426886147ac62f2bf87eb40d569"
+    "contentSha256": "c6dfdafebf3845151a4383a45b2aea0753f4c176e9c2ab8a265d0eb30cfe7186",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s001-cr002",
@@ -1076,7 +1090,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "2fd462dafc8d74da4ededa441657ba3e403667c6e04ff99dde86b69b194f5ca2"
+    "contentSha256": "be132995c5de5382ff23672f79354735fc3966adad314ef08e140d3525005f33",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 

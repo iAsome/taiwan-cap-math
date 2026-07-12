@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="090d9c66fdcb0b6e77f7c1cda10d1a1d1e9dd49fdd74b5c32e37a5930dbd42bc";
+export const sourceDigest="947c40cd5d877223f8aab39b19243fa9b791e94da24bbb837464bd4b719fadb4";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s011-lecture-r1",
@@ -1695,7 +1695,8 @@ export const skillBundle={
         "I到底邊半徑垂直",
         "圓與三邊相切"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };

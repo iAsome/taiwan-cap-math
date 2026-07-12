@@ -233,7 +233,8 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "49b87ae8e2445a9d8a5d7e312e80ba1cda1b89ca696581d362c108722166f2c2"
+  "contentSha256": "45d63dc3b35ea132aa35bce426eae63367c5e2568b2355bc26fde2e4c60e4ec0",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
 export const QUESTIONS = [
@@ -298,7 +299,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "社團總人數與服務組比例共同決定實際人數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "061a7e49d128cd336c37cea4af918225cc5cb5fd5579082aecb17e0c77c0c81c"
+    "contentSha256": "0ddf0f9a40d51419725c9af99f5030988e41719f6cde0aa3801d0425c85dce7d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v002",
@@ -361,7 +363,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "每份含糖量與盒內份數共同決定整盒含糖量。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "03923693a86be02c28fa779c85a35d747ac8d9473043ea69a07949b2747e299e"
+    "contentSha256": "b5e82d35c77899cdc0819d9348de9229eca3c9a5f366c762a1a6839349978338",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v003",
@@ -424,7 +427,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "週期12天與指定第60天共同決定是否落在活動時點。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a02d35cfeff55ead15da41798be4e54cf5dc6371170fd7d2bfd76734bd6d17c8"
+    "contentSha256": "322775a7a5c0a80cc73bb691ee0660f50cbc227942e13c4e61369d91faf39786",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v004",
@@ -487,7 +491,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "第二次比例明確以剩餘量為基準，不能與第一次直接相加。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "745af8951a2c228443fce42ce0c3bee5e53fa7adbb12e0ff6f94fda41df96b57"
+    "contentSha256": "0d6e827014a28be46261dd744638cf3ab467da3099f83837c214421558859427",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v005",
@@ -550,7 +555,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "進貨量、第一週百分率和第二週以原量為基準的分率共同決定剩餘庫存。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "812a695ea9f63125d42986c9847c0148ebb11bc2244bfbb3f9e282f4ee612ac6"
+    "contentSha256": "d83f34b3af93cfd153dee7e6d2ed920cbb55146a77508e585b291ade25957ebd",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v006",
@@ -613,7 +619,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩週期、起始時刻及截止時刻共同決定同步次數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "cedb3bf6bfc4a092233124a74049bf859f147b92108e46ec88d4734316801936"
+    "contentSha256": "e959946f1c3f3feae1c0372d5f2a1c5533b38bebb588e8c7e9181b15b1e46bd8",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v007",
@@ -676,7 +683,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "男女比例互補且人數差8，兩者共同建立1/6全班=8。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d45de7fade69e25c67cfdc723c3cf60b05950fbfc20bd347c626bdbd5125c9be"
+    "contentSha256": "825397cda63a3bee9b1366d29b2b7d48cd2d551126cca3623aacbcd7eec00f41",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v008",
@@ -739,7 +747,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "折扣、稅率與實付金額共同決定原價，計算順序不可交換為百分點加減。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e7fb59babc716043f2a3468f890d7cade3f51234e2b79cde3c125e3e3926ac4b"
+    "contentSha256": "810ff2b894e554db417eefeff183f4bda719138308e4e4f71ca70fbe84db4bc4",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v009",
@@ -802,7 +811,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "原長度比與各自完成率共同決定實際完成長度比。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "04b1da8f6e8121289425a060aa5ea090add201f54b0d7988db21e0a1b3b117d3"
+    "contentSha256": "3a9f599c8b35dd279e2d9b5ac0c4436db7faa68997f036d0c66dbeb4b5b9ae4b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v010",
@@ -865,7 +875,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "年費、每次費用與使用次數三項資料共同決定兩方案總價。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8da96e4595d4799e43a93cba72ec72e72680b414a157e969bd14362740159ee7"
+    "contentSha256": "3c800b429fe2af5a8a89b0f73c2f95ec0205df36f74095ac6db39bc2bb5e86cb",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v011",
@@ -928,7 +939,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "容量、目前比例與『目前水量的四分之一』共同決定新佔比，基準不得替換。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e57e97e6886fb6cbe42ac3e9b91205add4657f4e35a6951c1ce0c9b5429fe8eb"
+    "contentSha256": "ac1969c8a9a76fdafcfcd4a86acfc7d13f364b4f26bd6213d0ef71ca619aa1ed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-v012",
@@ -991,7 +1003,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩區週期、共同起點與到場時刻共同決定下一同步點及等待時間。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "de5875321c479709a7c2d08dd517dfb9b470e215c9d1ee51baf926d9f0f6e8a0"
+    "contentSha256": "611ffda7c658deec7247c4c257108dd503b41e0e4f003dfd2d8eb000d31797b3",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 
@@ -1049,7 +1062,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "130f4f03f123d9ba49af3b2e3eb6106464cfdd81757adba0217bbef68e1f6cec"
+    "contentSha256": "49c4f77962b6bb4e5b0de0c515daabb20372291f6c2d35df33c484dd1240406d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s015-cr002",
@@ -1104,7 +1118,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題目已明確要求「若不能」計算尚差時間，因此不會把負的剩餘時間誤當答案。",
       "decision": "pass"
     },
-    "contentSha256": "2c470fc32dd66454846e001b6d78d5072f3a252f475b9b24449932c80d4e5236"
+    "contentSha256": "79a7f5f1a55aac858f12428773909d4d193cd582d52f1f736ffde1bb6fb30a3e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 

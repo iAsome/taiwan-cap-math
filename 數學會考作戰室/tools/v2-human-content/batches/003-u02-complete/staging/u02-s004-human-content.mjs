@@ -222,7 +222,8 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "980dd82c26933531014df7474c82853f462bb1660fca392d2a23e35cf6fc8774"
+  "contentSha256": "658d47ca24c49238d7803d27e74daebc8df356f2e6b62ee01e4b8c3146eb488a",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
 export const QUESTIONS = [
@@ -287,7 +288,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7b992bc810ad00ebb8303ea4c32b278b7d607cbc5d85d9f0a00eb9538a040472"
+    "contentSha256": "1bdb8357095ce3545abe472d780beadd9d154c9befebd06c4e6a10f6ae1091af",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v002",
@@ -350,7 +352,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "acc5187f00a56c0766fe2907f63bbae5cf903465ecdcf3b1cc00c2d43400a6a5"
+    "contentSha256": "3c9722f59eabaf56cccd66be58b51129ff732feb458a152c70e05fe953bda273",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v003",
@@ -413,7 +416,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c01d198dd293b8188000bbb8e2f0455a745cfddaadce306efe1433758dcb745a"
+    "contentSha256": "e2cd25ac42ed131d1d0a0eb0b286b3b3a537c961bd4ea145f9c531fec270a40e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v004",
@@ -476,7 +480,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8c324dd97390ca3890d34432a2301c42e1ffef5bee300072a5ebbf9520cf0bfe"
+    "contentSha256": "1cc58ec94e7591e1943e0c1d4c85cdaefce3e7aea6ab49066e3308270cfe7efd",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v005",
@@ -539,7 +544,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1997b71f9a0462ea6eb8c759676b34d07df385bbf06c353ffb5e3923980dab99"
+    "contentSha256": "8e08b5c867cf0752b2a82c13458e74fd3862e2605ca437ae1fcfd0467db0e010",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v006",
@@ -602,7 +608,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "aa795f6479dc6329321849436897238a5ab9614721239db75d7aec998c9fbc96"
+    "contentSha256": "2efef4ce8919e45fa7b4fca6baf5fcf2c8344bb945279c02335583c0061f901f",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v007",
@@ -665,7 +672,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9118c65e9c1c9f2cad18deeb0c29f14a81484021b38c9fbaa8f2d5203075c44b"
+    "contentSha256": "c7979771ab8c74b8665d609586bf2740a6113cd952947885a4f52fb925b23430",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v008",
@@ -728,7 +736,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "933eb7cc6ae9f38dd0a6601e77f58ce790e4a82cdc49cf7d05f052584febf07b"
+    "contentSha256": "488e690bab4fbab8d879ca610d21291e693cdd403cee8fd19afa473a4d08311a",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v009",
@@ -791,7 +800,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7a6e07532f5bb3684a228fd0af493f4e8b65a38d0d0d4f1f6465b3946e7184b8"
+    "contentSha256": "9920d2fb1ad9d276023c1dbcfb9c1b5a68265cb76ffd01e569c23a5752f5ab8b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v010",
@@ -854,7 +864,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "紅藍數量、每袋相同與全部用完共同限定袋數為兩數公因數，最多條件指定最大公因數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0ff7e5932aa1deb08a2b93553a88002a8040a2155e9ebaeb4f9c122b6b13d1e0"
+    "contentSha256": "1f9bdb546e93b36e40141fff4baec3867c51d30e350b550af00fefc42bcc671e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v011",
@@ -917,7 +928,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩條長度、等長、最長與不剩餘共同決定最大公因數，情境條件不可刪除。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1ace119ea9a35e3f9dfdcc9b22f22350194056ffb8407ce715094a27312d4ad1"
+    "contentSha256": "5591ad1945a88ff424aaefb6df19fa2d5b3e300e8fb8478739ed30114438bc26",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-v012",
@@ -980,7 +992,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "長與寬、正方形、不裁切及最大四項條件共同限定貼紙邊長。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e90d236440c4f652dcfba18ef14ef503d9c3dd27d7a9ff45044e0c2e5591fc54"
+    "contentSha256": "ab933f08f98e5bd971d80bf300ab19f25decc06409779c4c5898053a82060ec1",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 
@@ -1038,7 +1051,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "e21eb14fd0fc7a461663e890f9c3aea20b6c7216424519fd956e98c31dc35591"
+    "contentSha256": "baa4e9fd714ac6d4401affb544bf49a49d3f68c196ce5182fcca0c51cd7cdd03",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s004-cr002",
@@ -1092,7 +1106,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "雖然題型以「兩個可能值」表述，但小於100的完整解集合恰為28、56；驗證後答案組唯一。",
       "decision": "pass"
     },
-    "contentSha256": "6c4cacc59444f8d83badaf392353adaa9a750258aabcb90e5eb3ccb855533d8b"
+    "contentSha256": "01451ee7212bc3e273ecf90a5e9d7c761b1c331c50eaa10f9e037c7a15fc3746",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 

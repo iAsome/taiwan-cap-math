@@ -1947,7 +1947,7 @@ export default [
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
       "只檢查20+21>29",
-      "把29²算错"
+      "把29²算錯"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -1964,7 +1964,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "9a19bf057d261aed385c08326152735d932fef8599ee8a5b7bfd2f0404ae1156"
+    "contentSha256": "7847a2883e2789d8a29e043014c29a1f0fcdb13eac1ad1faa80ad368a1c4f2b7"
   },
   {
     "questionId": "u11-s014-cr002",

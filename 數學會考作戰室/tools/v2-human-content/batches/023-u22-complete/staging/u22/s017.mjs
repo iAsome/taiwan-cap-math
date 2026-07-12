@@ -1157,7 +1157,7 @@ export default {
         "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
         "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
       ],
-      "followThroughPolicy": "若百分率四捨五入為27%可接受；前步算術錯後依自己的真/假陽性正确組成比例，可給追蹤分。",
+      "followThroughPolicy": "若百分率四捨五入為27%可接受；前步算術錯後依自己的真/假陽性正確組成比例，可給追蹤分。",
       "unitNotationRules": "人數為估算人次；最終比例可寫26.9%或約27%。",
       "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
       "commonErrors": [
@@ -1178,7 +1178,7 @@ export default {
       },
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
-      "contentSha256": "ddb2b80bc4bf1aac362ea900936355c5d551dc828181468bdff1b9266be6e2a6"
+      "contentSha256": "1e4b93ecf582b4e19d01bf252e71145e8dbe5943794385b99f3182686850f388"
     }
   ],
   "semanticReviews": [

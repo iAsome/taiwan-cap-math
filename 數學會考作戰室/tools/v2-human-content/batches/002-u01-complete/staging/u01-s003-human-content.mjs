@@ -4,7 +4,7 @@ export const LECTURE = {
   "unitId": "u01",
   "topicId": "u01-integer-basics",
   "skillId": "integer-number-line-position",
-  "title": "數線位置：從原點、方向和刻度讀出坐標",
+  "title": "數線位置：從原點與方向和刻度讀出坐標",
   "audience": "國中零基礎至會考滿分",
   "reviewStatus": "independently-reviewed",
   "learningOutcomes": [
@@ -248,7 +248,8 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "015f041ff15a28aa1e6a69ab6d3b23d1555923ab419dfaec91a156bef04c3f65"
+  "contentSha256": "a220caa78add28dd6f08478b88a9ad6ae9d6bc6f5a9641b96ab2b0b4071c2072",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
 export const QUESTIONS = [
@@ -314,7 +315,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "07deede4424fdd6702390d519e52a6ab0fb52e61c889d28a9da3b147b01c1d89"
+    "contentSha256": "be38d6c82647269e8567126250dbec703f7db488c143f430af74300ed8687475",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v002",
@@ -378,7 +380,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ebb1d048716ecdd2bc0d6780121ca7deed857aedf2a5ebabe8e8045d5329afb1"
+    "contentSha256": "07e7b4c71fd2a4eaaf3d32b3259e0ce3609faec6918c4dde3801b8df2e739ca9",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v003",
@@ -442,7 +445,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1510f816c411ab5d886d4fa464b9e9681070888ff4414aa59127dabaebf45fab"
+    "contentSha256": "9c42da0e4d6a64dc726f6c374e69ee6e2f872a49d8304471585ea54c2c02e3d5",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v004",
@@ -506,7 +510,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d77972ef90a12b1fcc61506f21af2f56e10e6f337a74005a0cd6792163a220f0"
+    "contentSha256": "d6d0c882dbb73f00181dff18bd965de18566676a5bae757de62929e5d9296453",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v005",
@@ -570,7 +575,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2cd702af826a9db06823b8528267edda4333a8721faebacbdd85da1fee44d159"
+    "contentSha256": "731ae9fa08cfaa9280712ef6625dd1450ba224e909a637b0a931fef1428a29da",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v006",
@@ -634,7 +640,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "623a2f369914d58c37fbfbd732167369e8fafd833cbb30c9c808129b51305a1c"
+    "contentSha256": "1ccb1f7c872f7316c0deacf0ffaa8e1084ba687fe26f2dab43214705987c5638",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v007",
@@ -698,7 +705,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "13b9cb3c772d8aa09fee5d0b2355fc67c6e119bf822a2b3d150145206b773cea"
+    "contentSha256": "3aafafbf7870d881d95d62f4b87327f413d8d663c1ccf74db3941cad11efc82a",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v008",
@@ -762,7 +770,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "416a99d41e36c8d9dbb9e59d113eabd335a4307281cbac8711170cd2466d79ab"
+    "contentSha256": "0b004c9d4edae22935e5f6dd4e671dc2af3a885912c1c28af291b87f7495191e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v009",
@@ -826,7 +835,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "cb51f072a791c16a81e0da1f74eb74820daee30c71516668a950a87f3d76c500"
+    "contentSha256": "a23dc449967a9288e4298853deb3d9424a6c053a15ceaf9a4f532bfa1cbb14d3",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v010",
@@ -890,7 +900,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "閘門基準、東西正負規則、起點與兩段移動都影響答案。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ee0dd45811a3dbc78eb38092eb467ab687392fe60f7588f82c8d393644a45a56"
+    "contentSha256": "227a3a3ce614f0e8f6350dcf98351059cde9fe02a37d2b7f9b8b578db919813d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v011",
@@ -954,7 +965,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "中央站基準、向西為負、A位置與B相對位移都是必要資訊。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9e88844ee3d5b9f2ffc7b5ec65b7f98c306ba49d75d6a1b587c7f47003e0d82c"
+    "contentSha256": "27edc30420aa586cc638d6514c1cc1fca106bf921c39312b53147109c54b5a0c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-v012",
@@ -1018,7 +1030,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始分數、左右方向、兩回合移動與每格單位共同決定結果。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1b82909a7a5dd18e305bcf651d9d9f7446563417be7d7d1fda6f9f16f7a9c249"
+    "contentSha256": "3b1607641c602d0d417bc81d4faa48e484ee58e97603543ba972fc3b49991cd7",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 
@@ -1078,7 +1091,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "0c8b469ed1ee41fbc4cfe1140a0a213e627f63237536fe0f51ba1563a52e4472"
+    "contentSha256": "0a3c2fca98cf17aeb5efb562da5d8152408e2a56b13bada240bccb23a09e8014",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s003-cr002",
@@ -1135,7 +1149,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "cfed91e6120e844f5b0237266b22a64aa6245dfeb619b8b3f6ab8a8e6296a2c5"
+    "contentSha256": "a16d8caa2ffcf33a2f1563be39bc5f84407dbb34c51b7c193dc39f568245a0fb",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 
@@ -1175,7 +1190,8 @@ export const DRAWING_SPECS = [
       "reviewedAt": "2026-07-12",
       "decision": "pass"
     },
-    "contentSha256": "872d266cd6101d210a05b95d6fa0c86ea7b67db6f471795e538bcce2ac04ac2d"
+    "contentSha256": "3c4c6a9118cf075fd7168a982603b44608054021a3185744e38587a3a7edffb4",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "figureId": "fig-u01-s003-v006",
@@ -1212,6 +1228,7 @@ export const DRAWING_SPECS = [
       "reviewedAt": "2026-07-12",
       "decision": "pass"
     },
-    "contentSha256": "e4a44892fad59adc89e625f907e06da044a124a496160c51f96af080b213bed5"
+    "contentSha256": "1e6283781e3a2102f7edd00867c1524225518928249bdd76bb7d5ede22767aa1",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

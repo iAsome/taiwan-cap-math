@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="ad61d426b9ca08367957de36ec45fa12b90fb88e6be5ccd0ec2f58d7b098c52f";
+export const sourceDigest="9a184b577963b53fa21225145d46d3448b4b6e45610d829e6d06f7e4dd540eb9";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s013-lecture-r1",
@@ -1685,7 +1685,8 @@ export const skillBundle={
         "BP通過B並垂直AC",
         "兩高交於P"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     },
     {
       "figureId": "fig-u20-centers-compare-01",
@@ -1736,7 +1737,8 @@ export const skillBundle={
         "丙表示角平分線",
         "三圖不標中心名稱答案"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     },
     {
       "figureId": "fig-u20-orthocenter-textbook-01",
@@ -1783,7 +1785,8 @@ export const skillBundle={
         "延長線清楚",
         "圖未寫出『垂心』答案詞"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };

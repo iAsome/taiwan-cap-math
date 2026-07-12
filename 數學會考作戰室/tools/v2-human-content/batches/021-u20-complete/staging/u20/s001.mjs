@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="0735f813197d6e3e43581ffab59cece904dd3561e0cea169765fc0453f0727fa";
+export const sourceDigest="0e288480ed01da7477fd86775fe470a3a9a899397eb9ca22bbea4cf1a30e9d96";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s001-lecture-r1",
@@ -1693,7 +1693,8 @@ export const skillBundle={
         "BO與OD標示等長",
         "未標示整個四邊形平行或對稱"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     },
     {
       "figureId": "fig-u20-proof-map-01",
@@ -1753,7 +1754,8 @@ export const skillBundle={
         "b與t無直角標記",
         "圖形未按比例"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };

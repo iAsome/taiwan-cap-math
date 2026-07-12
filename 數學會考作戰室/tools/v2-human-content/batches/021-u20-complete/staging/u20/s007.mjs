@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="959bca0f7402df924d50ac19f08a357a4140493884ecf6807f030f9f29a5cd7a";
+export const sourceDigest="2f4cdbb409b8bd65448da57a1fafb523981bd547cddaa90f148d3b328e10b147";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s007-lecture-r1",
@@ -1687,7 +1687,8 @@ export const skillBundle={
         "三條半徑到邊且有直角標記",
         "不標示I到頂點等距"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };

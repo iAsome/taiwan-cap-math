@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="3e6a22245a6f3fc8f1ba4ef465a8cf940b971c833e29ce728ae2e668e423217f";
+export const sourceDigest="4d9d203946f5dd40fe414f145f1fa27ec1c07fd9e5b084c98185d596d8ff9cc7";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s008-lecture-r1",
@@ -1695,7 +1695,8 @@ export const skillBundle={
         "AM、BN、CP交於G",
         "不標示垂直或角平分"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };

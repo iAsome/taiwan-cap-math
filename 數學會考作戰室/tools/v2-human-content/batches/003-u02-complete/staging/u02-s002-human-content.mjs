@@ -218,7 +218,8 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "e4b73516627d5f6a3ff9efca5bb7bd9d853605a38d8490ad793d422a3aee42c1"
+  "contentSha256": "867ee1af3ee5a509371ca62f045ef399257731c44184b32d336c20f199c4db11",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
 export const QUESTIONS = [
@@ -283,7 +284,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bd80f80913eeda0cf08844c69d7610965ec8aa1acc0673d6df7d0134dc9afd07"
+    "contentSha256": "0e07716da48ccd56253e3d63108862bb3e9fb243a1557c977af7fe2c9995e77c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v002",
@@ -346,7 +348,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "05619a218ce9e45bc1c6b1f4abfbf82b5214b4a0206fce7ce97e09eb87c0dd2c"
+    "contentSha256": "ff2f4372da2c3b211b6e5d9394722e4c31f0f456be713d687fdfb6f49a528297",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v003",
@@ -409,7 +412,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "93e616426e1f91917632448890f5cc6f7d6715f7aaccfb5a9012c93127a1384e"
+    "contentSha256": "18a32505c47f3b3f61113f589e4f01de401efbc50907b79550b00aa21bf1c815",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v004",
@@ -472,7 +476,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7d02075b4ff5fc80a7564ecc86209f201f3d77a59422f893c2e6200b077fc6c6"
+    "contentSha256": "f5452b368d875e4bcd8c2f4e959fb9c3284d33ff05c504f0d28c8ee16c8c94da",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v005",
@@ -535,7 +540,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "523003eca7e01faef474c16bc3c8b4c0125f22c2831bf3175a7a7f94b0aa3b07"
+    "contentSha256": "4ba73dc79549e104ae19315bcc64454522fd8a6e3787694300ea2585a2f21584",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v006",
@@ -598,7 +604,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f569420e5b1477988da80b7ac7609289bc5fa355eb106a70e95ab1d3734a47fd"
+    "contentSha256": "aa9125144bc12f710963c9b45465fddb1c68ecb7c48595d94eb237f8251ad30c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v007",
@@ -661,7 +668,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "af46b6801d7de9a4ccb428bd11492165ccf4a25dbd14ee15bd1cb8bbf711f75f"
+    "contentSha256": "30ba2acbcab711fe54020298a3e38f0df99f34ef0d8ebd66c2d6b6a5cbf95627",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v008",
@@ -724,7 +732,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "fffd0a0b4a4e0881139af06568a38b0262d546052f3ee7a21a2e9eb38554b5fb"
+    "contentSha256": "30264b90ed7255fd2fab469e40ee7cf91fc76e2522da175eb591c27b0d2df98a",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v009",
@@ -787,7 +796,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "52b1dcadaaacfa97666397ab1eb2256f0a1198aa99a33fc1534bd2287c004ce8"
+    "contentSha256": "53fc1e9222636a7863b25389105bcb2717fd9acee45f197afbfada7644fd85f9",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v010",
@@ -850,7 +860,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "學生總數、不得剩人及兩邊都大於 1 共同決定要檢查 29 是否有非平凡因數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b5b79a59efdff815b95013b4e37daa621aa00e91a6038a209b50d454e0a2ed2e"
+    "contentSha256": "8c96d591743d3e05c54650e92c0d256e2495c0f0b5ed3b118d6c3162a6a04119",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v011",
@@ -913,7 +924,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "條碼範圍與十位數限制界定候選值，質數判定是情境中的必要條件。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a85ea9de9e771717317f3a15875f2888d624930d66105c87da6391e8907b1c47"
+    "contentSha256": "4cc4496eab1f97d3feac55be417f48292dd8713649793f1fade2b1974a48f941",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-v012",
@@ -976,7 +988,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "至少 2 袋、每袋至少 2 張及不剩三項條件共同排除質數的兩種平凡分法。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6d062a3cd64b6168ecf2aaee8cdf5729e84b2b4650dd98b80ec3d94c43ab1f19"
+    "contentSha256": "9d3ada5094d67ed32a6971b064887d66b2deab6811520a8f6afab794df39da82",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 
@@ -1033,7 +1046,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "db81a863db9534d4a932a02035280703ecb8a31fa5de747f230873cb40678991"
+    "contentSha256": "c7f1d4cff0745a14e1e446df79df0b6c1cde61903b6e5be4d452f21dc50279cf",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u02-s002-cr002",
@@ -1087,7 +1101,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "7e40a41222a7967657e80bdbb643926509bd1688aa62f87bdd2d976d9d9fb660"
+    "contentSha256": "c5ccaf818e1393a726520953e17360247f4e1cf5582d7d529915434121603a5c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 

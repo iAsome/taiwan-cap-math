@@ -1105,7 +1105,7 @@ export const CONSTRUCTED_RESPONSES = [
       },
       {
         "score": 0,
-        "criteria": "用9×180求內角和，或未利用正多邊形条件就任意平均。"
+        "criteria": "用9×180求內角和，或未利用正多邊形條件就任意平均。"
       }
     ],
     "partialCreditRules": [
@@ -1132,7 +1132,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "4a2bce426630038ff6a97c538812129c1fa42684058177b4d4bdbe0620499729"
+    "contentSha256": "ce487575e41a8e78502dab67a58a683a14d833d82fd15007a07742551fa0b65d"
   },
   {
     "questionId": "u08-s007-cr002",

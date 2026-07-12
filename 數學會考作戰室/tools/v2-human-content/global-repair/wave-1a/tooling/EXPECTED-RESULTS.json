@@ -1,0 +1,38 @@
+{
+  "wave": "global-repair-wave-1a-r1",
+  "requiredStartingHead": "e761034ca7391039323a3c011844dc0e6aa2e813",
+  "affectedBatches": [
+    "001",
+    "002-u01-complete",
+    "003-u02-complete",
+    "004-u03-complete",
+    "009-u08-complete",
+    "012-u11-complete",
+    "019-u18-complete",
+    "021-u20-complete",
+    "023-u22-complete"
+  ],
+  "expectedBefore": {
+    "contentAuthorityGapCount": 834,
+    "legacyIsolationIssueCount": 4,
+    "simplifiedIssueCount": 43,
+    "titlePunctuationIssueCount": 3
+  },
+  "expectedAfter": {
+    "globalAuditStatus": "PASS_GLOBAL_STRUCTURE",
+    "batchVerifierPassed": 24,
+    "skillDirectories": 339,
+    "lectures": 339,
+    "mcQuestions": 4068,
+    "constructedResponses": 678,
+    "semanticReviews": 4068,
+    "contentAuthorityGapCount": 0,
+    "legacyIsolationIssueCount": 0,
+    "simplifiedIssueCount": 0,
+    "titlePunctuationIssueCount": 0,
+    "crossUnitPromptSkeletonGroupCount": 7,
+    "numberSwapCandidateGroupCount": 29,
+    "productionActivationAllowed": false,
+    "oldDatabaseDeletionAllowed": false
+  }
+}

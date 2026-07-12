@@ -926,7 +926,7 @@ export const QUESTIONS = [
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "本題為條件判斷，無單位。",
-    "ambiguityAndBoundaryAudit": "視線與地面共線關系已明示，所缺的第二組角来自垂直條件。",
+    "ambiguityAndBoundaryAudit": "視線與地面共線關系已明示，所缺的第二組角來自垂直條件。",
     "difficultyReason": "從測量裝置條件判斷 AA 模型是否有效。",
     "literacyContextNecessity": "實際測量必須確認標桿與塔的鉛直性，否則几何模型不成立。",
     "visualMode": "figure-supported",
@@ -936,7 +936,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "65d94aaec25bb97426a71299a5ab4e4cccb34b94db23e79f1488a0a30474fed8"
+    "contentSha256": "3f4fa42940cb25e1bec09d8c616f8b57fac3fd5502b4f7123250ada0500efbf9"
   },
   {
     "questionId": "u18-s007-v011",
@@ -949,8 +949,8 @@ export const QUESTIONS = [
     "itemType": "multiple-choice",
     "type": "mc",
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
-    "prompt": "攝影师以平行地面滑軌拍攝一面牆。相机在 C，牆底為 B、牆頂為 A；小取景框對應點 D、E 滿足 DE∥AB。若 CD=30 cm、CE=20 cm、CB=150 cm，則由 AA 相似可求牆高 AB 與框高 DE 的比為何？",
-    "text": "攝影师以平行地面滑軌拍攝一面牆。相机在 C，牆底為 B、牆頂為 A；小取景框對應點 D、E 滿足 DE∥AB。若 CD=30 cm、CE=20 cm、CB=150 cm，則由 AA 相似可求牆高 AB 與框高 DE 的比為何？",
+    "prompt": "攝影師以平行地面滑軌拍攝一面牆。相機在 C，牆底為 B、牆頂為 A；小取景框對應點 D、E 滿足 DE∥AB。若 CD=30 cm、CE=20 cm、CB=150 cm，則由 AA 相似可求牆高 AB 與框高 DE 的比為何？",
+    "text": "攝影師以平行地面滑軌拍攝一面牆。相機在 C，牆底為 B、牆頂為 A；小取景框對應點 D、E 滿足 DE∥AB。若 CD=30 cm、CE=20 cm、CB=150 cm，則由 AA 相似可求牆高 AB 與框高 DE 的比為何？",
     "givenConditions": [],
     "target": "求出唯一正確選項。",
     "choices": [
@@ -1003,7 +1003,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "34b790ba5c79c756f6531433571c41ffb7957a057ad28e842440cfbce4f0a6e2"
+    "contentSha256": "8698591878b6b44c5c4097a7414d5d864ec2b5b132b27e9fb5b3e25e688a6f51"
   },
   {
     "questionId": "u18-s007-v012",
@@ -1062,7 +1062,7 @@ export const QUESTIONS = [
     "unitAndRoundingCheck": "本題不計算高度；已知長度單位一致。",
     "ambiguityAndBoundaryAudit": "題目明確說樹處為坡地，且影長沿坡面測得，不能視為水平投影。",
     "difficultyReason": "评估真實測量條件是否滿足 AA，而非單纯比例計算。",
-    "literacyContextNecessity": "現場坡度会使影子測量失效，必須判斷模型條件而非机械算出高度。",
+    "literacyContextNecessity": "現場坡度会使影子測量失效，必須判斷模型條件而非機械算出高度。",
     "visualMode": "text-only",
     "figureId": null,
     "drawingSpecReference": null,
@@ -1070,7 +1070,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "73bb9c2ece7093c907ca32470016f2340aef33599d08efef5ca9b77189180b96"
+    "contentSha256": "a2d5900b247557391a81eb159f3370d73a65ea4469545bbbda597c56271f6819"
   }
 ];
 
@@ -1482,7 +1482,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similarity-aa",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "65d94aaec25bb97426a71299a5ab4e4cccb34b94db23e79f1488a0a30474fed8",
+    "contentSha256": "3f4fa42940cb25e1bec09d8c616f8b57fac3fd5502b4f7123250ada0500efbf9",
     "independentSolution": "P 點的夹角相同；若標桿與塔均垂直地面，則 B 與塔底的角均為 90°，兩組角足夠。",
     "derivedAnswer": "標桿與塔都垂直地面",
     "storedAnswer": "標桿與塔都垂直地面",
@@ -1496,7 +1496,7 @@ export const SEMANTIC_REVIEWS = [
     ],
     "ambiguityChecks": {
       "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
-      "boundary": "視線與地面共線關系已明示，所缺的第二組角来自垂直條件。",
+      "boundary": "視線與地面共線關系已明示，所缺的第二組角來自垂直條件。",
       "units": "本題為條件判斷，無單位。",
       "scope": "只使用國中會考範圍內的「AA 相似」概念，未要求高中延伸。"
     },
@@ -1513,7 +1513,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similarity-aa",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "34b790ba5c79c756f6531433571c41ffb7957a057ad28e842440cfbce4f0a6e2",
+    "contentSha256": "8698591878b6b44c5c4097a7414d5d864ec2b5b132b27e9fb5b3e25e688a6f51",
     "independentSolution": "小對大線性比為 CD/CB=1/5，因此大牆高對框高是 5/1。",
     "derivedAnswer": "5:1",
     "storedAnswer": "5:1",
@@ -1544,7 +1544,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similarity-aa",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "73bb9c2ece7093c907ca32470016f2340aef33599d08efef5ca9b77189180b96",
+    "contentSha256": "a2d5900b247557391a81eb159f3370d73a65ea4469545bbbda597c56271f6819",
     "independentSolution": "標桿三角形以水平地面形成直角；坡面處的邊與鉛直樹干不一定形成相同角，因此兩三角形不保證有兩組相等角。",
     "derivedAnswer": "不能，坡面影長不一定對應同一水平角模型",
     "storedAnswer": "不能，坡面影長不一定對應同一水平角模型",
@@ -1563,7 +1563,7 @@ export const SEMANTIC_REVIEWS = [
       "scope": "只使用國中會考範圍內的「AA 相似」概念，未要求高中延伸。"
     },
     "difficultyReason": "评估真實測量條件是否滿足 AA，而非單纯比例計算。",
-    "literacyNecessityReview": "現場坡度会使影子測量失效，必須判斷模型條件而非机械算出高度。",
+    "literacyNecessityReview": "現場坡度会使影子測量失效，必須判斷模型條件而非機械算出高度。",
     "reviewerNote": "重新由已知條件獨立計算：標桿三角形以水平地面形成直角；坡面處的邊與鉛直樹干不一定形成相同角，因此兩三角形不保證有兩組相等角。 四個選項逐一核對後，只有「不能，坡面影長不一定對應同一水平角模型」符合；主要排除點是「只看到同一陽光就忽略地面几何條件。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"

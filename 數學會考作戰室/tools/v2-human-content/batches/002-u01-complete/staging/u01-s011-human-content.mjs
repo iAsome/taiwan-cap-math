@@ -4,7 +4,7 @@ export const LECTURE = {
   "unitId": "u01",
   "topicId": "u01-integer-arithmetic",
   "skillId": "integer-mixed-operations",
-  "title": "整數四則混合：依序處理括號、乘除、加減",
+  "title": "整數四則混合：依序處理括號與乘除和加減",
   "audience": "國中零基礎至會考滿分",
   "reviewStatus": "independently-reviewed",
   "learningOutcomes": [
@@ -247,7 +247,8 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "4cf529ec6ce654bf4453800ed852b4e71c9cfca04c01a439289b44a7f213f62a"
+  "contentSha256": "81ea334152405500f2186a9e2de0a6b6238a643b1f8d15a02eba3b0da4bcefb0",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
 export const QUESTIONS = [
@@ -313,7 +314,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "667ceae8a02c990d22184c3e29f276715f017afb0a6a78c190903dff337ca254"
+    "contentSha256": "136cac6e8a2d671a54095cd771c65cbad8ee5fd291c4c1f1677b456ae3513626",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v002",
@@ -377,7 +379,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "403d70ce181bb4e3242f06fa8dcd98a571405d96f8afc8706b2be4d5f376870c"
+    "contentSha256": "87e80d28a37cc8ed0278aa4443b2e90d60647e72c39ba6dd5f385af6c00f89e7",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v003",
@@ -441,7 +444,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "78070e28655f13a307473fdbefb00ca27d13fb5fa1be05aceeff6ac564b74232"
+    "contentSha256": "e8b9c605d93fe0c5cb13ca77ac1e622ba315bbfa677794b452f0661b71f221f8",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v004",
@@ -477,7 +481,7 @@ export const QUESTIONS = [
       {
         "choice": "3",
         "truth": false,
-        "reason": "错误分组。"
+        "reason": "錯誤分組。"
       },
       {
         "choice": "21",
@@ -505,7 +509,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "598a78a03a90a8f3ceeb91fdd6e1bd10854dc388c78c24e2b95aadd487674c17"
+    "contentSha256": "cf18e1699cda88260dacc92dcaa813cb8a0b12787aca6c7609d570aa882a6432",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v005",
@@ -551,7 +556,7 @@ export const QUESTIONS = [
       {
         "choice": "-33",
         "truth": false,
-        "reason": "錯誤分组。"
+        "reason": "錯誤分組。"
       }
     ],
     "commonMistake": "把16-3先算成13。",
@@ -569,7 +574,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "41c6d143cf6031c4f8fec5cd281723c4104613ad553b7e149a510d539b8fc8a7"
+    "contentSha256": "c853b9fc8f7a6f24ede63cda52a160a82f2cd485bd8e8734ef563b6a2bd6636c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v006",
@@ -633,7 +639,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "37ba78e77b64bc5323f0bc7a15f1c3a59b978f1a763c70de847e6e74594d1b14"
+    "contentSha256": "484cd483a41dc3882bfdf9c6d82f47296dbe08a1572911179c6647642f463936",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v007",
@@ -697,7 +704,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "cecb6cb8085cde0ddb985b175d258040a66d38d58ba66dfc56fcc8c008d91533"
+    "contentSha256": "667fdd6522e51e24642d06d759b31e5701d77959369cf851796776b240405241",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v008",
@@ -761,7 +769,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1f3ebc6762cbba04ec18fd081959da7510ee2595196051ea5b2c01ab2f346d46"
+    "contentSha256": "1c42f057d5ca5b28d255c65be4359134c82392df83f9cee5441132a40c5f4c84",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v009",
@@ -825,7 +834,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "68dc65603a5c3706b8f0a34037e61f86b587ce086fae1697d6508de0b7381097"
+    "contentSha256": "94d7160d1fdbbc29a59e9627e9903fb7965e38d09ac0d58dc03808fd8784282f",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v010",
@@ -889,7 +899,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始點數、每次扣點、次數與補發都不可省略。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4761e0cdf34d1f36bd15d6a51275f82a8c86c4ad1d0492f1e95d0294331d77cc"
+    "contentSha256": "591eb2384553c1bd9f1a31b69656e4125baf48757c9d8bf52c5faf24a683da27",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v011",
@@ -953,7 +964,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始負餘額、每日金額、天數與手續費共同決定結果。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "be94b781506a24cbe410adc48f8470d5dbea1e27c332d6ba89997c1df9e83055"
+    "contentSha256": "ce4a0f7d6142ea4d627d15b6f0e3496adfc8ccfd39874d5b9eea10f711f583fd",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-v012",
@@ -1017,7 +1029,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始分數、答對答錯數量與每題分值全部必要。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e2c3ddea6b64d79305bc680b9620896842f7dbdcceb38cb724fb1d4ed8b1a754"
+    "contentSha256": "5a3acea5f01a6c8344938b66c55ecd01829820681982f7ad0d9bba984c2271ba",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 
@@ -1076,7 +1089,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "8a73545814f94c1bd97de5c2fa22e99362a0cedb5dde89db226b3770837d8269"
+    "contentSha256": "335a6e21451f4fd70ba7b1845948ecccbeaca9045060292072a9f917f0a5c1d6",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s011-cr002",
@@ -1132,7 +1146,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "1dc2bc2a56b98961d8cf1d2d43e214ee2526a30b98f96c0563128c0110840ead"
+    "contentSha256": "41d43df13ffc8df06909d73bab47e241afbeae5b3f3d0f47aaa63710415782d8",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 

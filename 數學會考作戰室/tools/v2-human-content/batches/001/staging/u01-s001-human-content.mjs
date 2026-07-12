@@ -4,7 +4,7 @@ export const LECTURE = {
   "unitId": "u01",
   "topicId": "u01-integer-basics",
   "skillId": "integer-number-classification",
-  "title": "數的分類：整數、有理數與無理數",
+  "title": "數的分類：整數與有理數和無理數",
   "audience": "國中零基礎至會考滿分",
   "reviewStatus": "independently-reviewed",
   "learningOutcomes": [
@@ -343,7 +343,8 @@ export const LECTURE = {
     "symbolDefinitionsComplete": true,
     "reviewNote": "Every definition, edge case, worked example and counterexample was checked independently."
   },
-  "contentSha256": "ab4e18eadc8fe5715c88e4917f828321bf56a4a754d7316f48bafb9bc5a3a785"
+  "contentSha256": "689a11c5767db5e5ad31043fee4992eced0967ed1fbe0565cc86c7fcaddc939e",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
 export const QUESTIONS = [
@@ -407,7 +408,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "cff13a8dfac2dbde086c5d138ac8c0165c9c85b0047e69086620dbe122989100"
+    "contentSha256": "971cd90eb756d2e3c06293b5750d774ab91d5698bcc3de971214633e170c59e6",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v002",
@@ -469,7 +471,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3ed436d5ff8362600584caa33abc9e3d93cd75f2c733b638748e12447fbbb676"
+    "contentSha256": "e424c81b486bd0599abbd85bf554ae2ff79148272000250af87b042803891821",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v003",
@@ -531,7 +534,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2226715a84fe4c1ce8ca1797585f649fbc696dcae279710c63bfd044016e80c4"
+    "contentSha256": "4bf0f291c6b21df0350fd6669341cc9a48a8154467c929c02d073cdbfb5d38bd",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v004",
@@ -593,7 +597,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d5ba76b810c7583752bbffb0e3a0106795d82a1deef758d2983388511279ce59"
+    "contentSha256": "43f02e10e09a5e21b947b22ed4cdf1b64d58e0d500113bdf7a05928f92f27711",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v005",
@@ -655,7 +660,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7626cfe96cc295dbda2bd18d60422130874b63fd13cab82956e46d6194eb51a0"
+    "contentSha256": "0f5557095178fd3a33d57af79e25a5abc067bcc0fbb1a322d50f63f1257e7f7d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v006",
@@ -717,7 +723,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f72d41808dae4c7f029b50a5d2ffcd0d7e9da633c512721ba9d827363396d797"
+    "contentSha256": "a36a5f983a04cd7e980e490f72937dfc4537a4d9d14a31d94402db03c491fa22",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v007",
@@ -779,7 +786,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "778c078d81801529bb2c209703040e79d26c1bfd34b2218e830b48696166ede6"
+    "contentSha256": "a6e94617d640c653e13f808260ef606276e5a4062de2737c88143b65f02cf474",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v008",
@@ -841,7 +849,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "cd4edbfa18c4f03bf560d257599ebccbf2f9642c1a5bfea424c0dae0922732f8"
+    "contentSha256": "bb000fbb3e05132cbf06afd7285b50e8c7a92eedffed10c92b283f136c0bbd11",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v009",
@@ -903,7 +912,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9a88048b8b9f8c03bd6f8fc4d9048c1fa640b4e16161ad398f495337797bb3b6"
+    "contentSha256": "89122892675bd0165fdd66c59f8b2300fb69276fc8a6cdeb3f9101967a8e025d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v010",
@@ -965,7 +975,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "情境提供「只能用兩整數之比精確儲存」的操作限制；若移除限制，就沒有「哪筆無法儲存」這個問題。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "fec6a0b8af317e9eb01d120f31be46617ff3be959eb4501d7be8342b5703ed20"
+    "contentSha256": "c951d70d22f35445a50c81b4ad70e8c42451551ee8f0a579246556013d8e55c3",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v011",
@@ -1027,7 +1038,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "「不得使用近似小數」使精確可分數化成為必要條件，直接影響可接受的尺寸。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ebfde9d8d4d3eb6052c3d53bae4fe68713aa8081f62af26545774da2ff7f43e9"
+    "contentSha256": "3879dba9a55378b06e24f9c32e16ecda7d0253b0968c599c6d507f6044c5f435",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-v012",
@@ -1089,7 +1101,8 @@ export const QUESTIONS = [
     "literacyContextNecessity": "程式的「先化簡再標記」流程決定判斷順序；若忽略此流程，會得到錯誤分類。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a84b75ad88b3efe8b7023aac03e277ae9a05d91536bce699a390ca25667f651b"
+    "contentSha256": "2912df841ad7fdd14416a0a895f0abf412f204a530bebc2260b332ecae1fca1d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
 
@@ -1153,7 +1166,8 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "6127b2320146c9bdbc903ba617ba87acb79609ed830071bea0b03d2ef16edfd8"
+    "contentSha256": "ee0bd9f73d08674cbf29235127d4bd402c6a20122feb78cf542e123f1cd69106",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u01-s001-cr002",
@@ -1212,6 +1226,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "allow equivalent valid counterexamples",
       "decision": "pass"
     },
-    "contentSha256": "73a91e460f6742226b34987774c8d250ce1d5ab9da7a2cedd81fd5c7fd13e408"
+    "contentSha256": "ae63e8f8049370b9c7704d31769a3ea64308ceedb5247c9c6462427746ea9741",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

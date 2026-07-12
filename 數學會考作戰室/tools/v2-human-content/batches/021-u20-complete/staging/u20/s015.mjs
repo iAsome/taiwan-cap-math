@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="bfbc2dc6d02aa83f9480da36cc5b2ca7ee2290a364ad47697aeb058251d714c1";
+export const sourceDigest="825ec950abe4edcd4e89a3b55ae50c45eb6a4638a7e621e73309ae3f614f0a1d";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s015-lecture-r1",
@@ -1711,7 +1711,8 @@ export const skillBundle={
         "AD與BC有直角標記",
         "未預先標示AB與AC等長"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     },
     {
       "figureId": "fig-u20-proof-literacy-sign-01",
@@ -1757,7 +1758,8 @@ export const skillBundle={
         "三個到邊垂距可見",
         "未直接繪出圓或標示內心答案"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };

@@ -1,5 +1,5 @@
 // Generated only by serialization from approved reviewed source. Do not edit.
-export const sourceDigest="062acd314ee1fdd3db7d804c29c6fc1b58c919af00161dcc7c45c0c99c74190e";
+export const sourceDigest="82102460ebd87e0a454ad9626aceab7890bb1cc1a3bce1e1bdfd2715a230cea7";
 export const skillBundle={
   "lecture": {
     "lectureId": "u20-s004-lecture-r1",
@@ -1679,7 +1679,8 @@ export const skillBundle={
         "AB與AC有相同等長刻痕",
         "未標示角度或中點"
       ],
-      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage"
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     }
   ]
 };
