@@ -1,0 +1,213 @@
+{
+  "lectureId": "u04-s012-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-apps",
+  "skillId": "system-rate-problem",
+  "lockedSkillTitle": "速率與行程問題",
+  "title": "速率與行程問題：每一段都用路程等於速率乘時間",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "速率與行程問題",
+    "scope": "使用路程等於速率乘時間，區分相向、同向與分段行程。"
+  },
+  "prerequisiteBridge": "先備技能 system-quantity-price-problem 已建立必要基礎；本節將其用於「使用路程等於速率乘時間，區分相向、同向與分段行程。」",
+  "learningGoals": [
+    "能區分路程、速率與時間。",
+    "能處理相向、同向追趕與分段行程。",
+    "能先統一時間和距離單位。",
+    "能將未知速率或未知時間建立為聯立方程式。"
+  ],
+  "vocabulary": [
+    {
+      "term": "路程",
+      "definition": "移動所經過的長度。"
+    },
+    {
+      "term": "速率",
+      "definition": "每單位時間行進的路程。"
+    },
+    {
+      "term": "相向",
+      "definition": "從兩端朝彼此移動。"
+    },
+    {
+      "term": "同向追趕",
+      "definition": "後方較快者縮短與前方的距離差。"
+    },
+    {
+      "term": "分段行程",
+      "definition": "不同路段使用不同速率或時間。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "d=vt",
+      "meaning": "路程=速率×時間。"
+    },
+    {
+      "symbol": "(v₁+v₂)t=D",
+      "meaning": "相向同時出發，相遇時路程和為總距離。"
+    },
+    {
+      "symbol": "(v₁-v₂)t=D",
+      "meaning": "同向追趕且 v₁>v₂，縮短距離為初距。"
+    }
+  ],
+  "conceptDevelopment": [
+    "先為每個人或每一段各寫 d=vt，再依題意把路程相加、相減或設為相等。",
+    "分鐘與小時不可直接混用；30 分鐘要寫成 0.5 小時。",
+    "來迴路程相同不代表來回時間相同。"
+  ],
+  "definitions": [
+    {
+      "name": "相遇條件",
+      "statement": "相向時兩者路程和等於原距離。"
+    },
+    {
+      "name": "追及條件",
+      "statement": "同向時快者比慢者多走的路程等於原先距離。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "d=vt",
+      "conditions": [
+        "路程、速率、時間單位相容。"
+      ],
+      "meaning": "所有行程模型的基礎。"
+    }
+  ],
+  "invalidUseCases": [
+    "不可用速率相加處理同向追趕。",
+    "不可把 20 分鐘直接當 20 小時。",
+    "平均速率通常不是兩速率的算術平均，除非時間相等。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "畫文字流程或表格",
+      "check": "列每段 v、t、d。"
+    },
+    {
+      "step": 2,
+      "instruction": "統一單位",
+      "check": "分鐘換小時、公里與公尺統一。"
+    },
+    {
+      "step": 3,
+      "instruction": "逐段寫 d=vt",
+      "check": "不要先合併。"
+    },
+    {
+      "step": 4,
+      "instruction": "依相遇、追及或總路程列第二關係",
+      "check": "建立聯立。"
+    },
+    {
+      "step": 5,
+      "instruction": "求解並檢查時間正值",
+      "check": "代迴路程。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩地相距 180 公里，兩車相向 2 小時相遇，速率差 10。",
+      "solutionSteps": [
+        "設快車 x、慢車 y。",
+        "x+y=90、x-y=10。"
+      ],
+      "answer": "速率 50、40 公里/時。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "甲先行 12 公里，乙同向追趕，2 小時追上，乙比甲快多少？",
+      "solutionSteps": [
+        "追趕縮短 12 公里。",
+        "(v乙-v甲)×2=12。"
+      ],
+      "answer": "快 6 公里/時。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "上坡 3 公里、下坡 3 公里，速率 x、y，總時間 1 小時且下坡比上坡快 6。",
+      "solutionSteps": [
+        "3/x+3/y=1 不是二元一次。",
+        "本單元不以聯立一次方程式處理此形式。"
+      ],
+      "answer": "屬本單元邊界外的非線性形式。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "步行 4 公里/時、騎車 12 公里/時，共 2 小時走 16 公里。",
+      "solutionSteps": [
+        "設步行 x 小時、騎車 y 小時。",
+        "x+y=2、4x+12y=16。"
+      ],
+      "answer": "各 1 小時。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "相向用速率差",
+      "correction": "相向路程和對應速率和。"
+    },
+    {
+      "mistake": "同向用速率和",
+      "correction": "追趕看相對速率差。"
+    },
+    {
+      "mistake": "時間單位未換算",
+      "correction": "先把分鐘除以 60。"
+    },
+    {
+      "mistake": "把含 1/x 的式子當二元一次",
+      "correction": "未知數在分母不是一次方程式。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "30 分鐘是幾小時？",
+      "answer": "0.5 小時。"
+    },
+    {
+      "prompt": "相向相遇用速率和還差？",
+      "answer": "和。"
+    },
+    {
+      "prompt": "同向追趕用什麼？",
+      "answer": "快慢速率差。"
+    },
+    {
+      "prompt": "d=vt 中單位要如何？",
+      "answer": "相互一致。"
+    }
+  ],
+  "summary": [
+    "每段先寫 d=vt。",
+    "相向看路程和，同向追趕看路程差。",
+    "先統一單位。",
+    "含未知速率倒數的非線性題不屬本技能。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-quantity-price-problem 已建立必要基礎；本節將其用於「使用路程等於速率乘時間，區分相向、同向與分段行程。」",
+    "next": "下一技能「基礎混合問題」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "刻意標示等路程來回造成 1/x 的非線性邊界，不強行納入一次聯立；其餘例題均由線性時間或速率條件建立。",
+    "reviewNote": "刻意標示等路程來回造成 1/x 的非線性邊界，不強行納入一次聯立；其餘例題均由線性時間或速率條件建立。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "b702a8a43acae3f3dc0e0d1f6b38940717f7cf5150e2146478e1370af679f5b6"
+}

@@ -1,0 +1,208 @@
+{
+  "lectureId": "u04-s013-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-apps",
+  "skillId": "system-mixture-basic",
+  "lockedSkillTitle": "基礎混合問題",
+  "title": "基礎混合問題：總量與成分量都要守恆",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "基礎混合問題",
+    "scope": "以總量守恆與成分量或總價守恆建立聯立方程式。"
+  },
+  "prerequisiteBridge": "先備技能 system-rate-problem 已建立必要基礎；本節將其用於「以總量守恆與成分量或總價守恆建立聯立方程式。」",
+  "learningGoals": [
+    "能區分混合物總量與其中成分量。",
+    "能把百分濃度轉為小數或分數。",
+    "能建立總量式與成分量式。",
+    "能處理單價混合與基本濃度混合。"
+  ],
+  "vocabulary": [
+    {
+      "term": "濃度",
+      "definition": "成分量佔混合物總量的比例。"
+    },
+    {
+      "term": "成分量",
+      "definition": "濃度乘混合物總量。"
+    },
+    {
+      "term": "總量守恆",
+      "definition": "混合前各量相加等於混合後總量。"
+    },
+    {
+      "term": "加權平均",
+      "definition": "混合後比例介於原兩比例之間。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "cx",
+      "meaning": "濃度 c 的溶液 x 單位中，成分量為 cx。"
+    },
+    {
+      "symbol": "x+y=T",
+      "meaning": "兩種混合物總量。"
+    },
+    {
+      "symbol": "c₁x+c₂y=cT",
+      "meaning": "成分量守恆。"
+    }
+  ],
+  "conceptDevelopment": [
+    "濃度不是直接相加；要先算每一份溶液內含多少成分。",
+    "若兩種濃度為 10% 與 30%，混合後濃度必介於 10% 與 30% 之間。",
+    "價格混合也使用同樣的加權總價概念。"
+  ],
+  "definitions": [
+    {
+      "name": "濃度",
+      "statement": "成分量÷總量。"
+    },
+    {
+      "name": "純成分量",
+      "statement": "濃度×溶液量。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x+y=T，c₁x+c₂y=cT",
+      "conditions": [
+        "各量使用同一重量或容量單位，百分率先化為小數。"
+      ],
+      "meaning": "標準兩液混合模型。"
+    }
+  ],
+  "invalidUseCases": [
+    "10%+20% 不代表混合後 30%。",
+    "毫升與公升須先統一。",
+    "本單元不處理化學反應、密度變化或體積不守恆等高中情境。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "設兩種混合物用量",
+      "check": "統一單位。"
+    },
+    {
+      "step": 2,
+      "instruction": "列總量式",
+      "check": "x+y=T。"
+    },
+    {
+      "step": 3,
+      "instruction": "把百分率化成小數",
+      "check": "例如 20%=0.2。"
+    },
+    {
+      "step": 4,
+      "instruction": "列成分量式",
+      "check": "濃度×用量後相加。"
+    },
+    {
+      "step": 5,
+      "instruction": "解並檢查濃度範圍",
+      "check": "答案非負。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "10% 與 30% 食鹽水配成 20% 共 500 克。",
+      "solutionSteps": [
+        "x+y=500。",
+        "0.1x+0.3y=100。"
+      ],
+      "answer": "各 250 克。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "每公斤 60 元與 90 元米混成每公斤 72 元共 20 公斤。",
+      "solutionSteps": [
+        "x+y=20。",
+        "60x+90y=72×20。"
+      ],
+      "answer": "便宜米 12 公斤、較貴米 8 公斤。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "20% 溶液與清水配成 8% 共 300 克。",
+      "solutionSteps": [
+        "清水濃度 0%。",
+        "x+y=300、0.2x=24。"
+      ],
+      "answer": "20% 溶液 120 克、清水 180 克。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "40% 與 60% 溶液能否配出 70%？",
+      "solutionSteps": [
+        "混合後濃度應介於兩者之間。"
+      ],
+      "answer": "不能以非負用量配出。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "直接平均兩濃度",
+      "correction": "只有等量混合時才是算術平均。"
+    },
+    {
+      "mistake": "百分率未除以 100",
+      "correction": "20% 應用 0.2。"
+    },
+    {
+      "mistake": "只列成分式不列總量",
+      "correction": "缺少第二個條件。"
+    },
+    {
+      "mistake": "忽略混合後濃度範圍",
+      "correction": "可快速檢查不合理資料。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "15% 的 200 克含成分多少？",
+      "answer": "30 克。"
+    },
+    {
+      "prompt": "清水濃度視為多少？",
+      "answer": "0%。"
+    },
+    {
+      "prompt": "混合 10% 與 30% 可得 35% 嗎？",
+      "answer": "不可以。"
+    },
+    {
+      "prompt": "兩條守恆式是什麼？",
+      "answer": "總量守恆與成分量守恆。"
+    }
+  ],
+  "summary": [
+    "先列總量，再列成分量。",
+    "濃度要乘用量。",
+    "百分率先化小數。",
+    "結果應介於原濃度範圍。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-rate-problem 已建立必要基礎；本節將其用於「以總量守恆與成分量或總價守恆建立聯立方程式。」",
+    "next": "下一技能「聯立方程式素養題」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "三個可解示例均以總量與成分量獨立回算，另以 70% 反例檢查非負限制；內容明確排除化學反應與密度等高中議題。",
+    "reviewNote": "三個可解示例均以總量與成分量獨立回算，另以 70% 反例檢查非負限制；內容明確排除化學反應與密度等高中議題。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "9a24dad26d60facae8807270b8e845d631e9b78b6d9294d894fa9f8351ad3cd7"
+}

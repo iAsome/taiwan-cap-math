@@ -1,0 +1,214 @@
+{
+  "lectureId": "u04-s014-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-apps",
+  "skillId": "system-literacy-context",
+  "lockedSkillTitle": "聯立方程式素養題",
+  "title": "聯立方程式素養題：從資料規則找出兩個獨立條件",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "聯立方程式素養題",
+    "scope": "從表格、方案與活動規則中辨認兩個條件，建立模型並解釋答案。"
+  },
+  "prerequisiteBridge": "先備技能 system-mixture-basic 已建立必要基礎；本節將其用於「從表格、方案與活動規則中辨認兩個條件，建立模型並解釋答案。」",
+  "learningGoals": [
+    "能讀懂表格、方案或活動規則中的量與單位。",
+    "能排除無關資訊並定義適當未知數。",
+    "能建立、求解並解釋聯立方程式。",
+    "能比較方案、驗證限制並說明模型假設。"
+  ],
+  "vocabulary": [
+    {
+      "term": "資料欄位",
+      "definition": "表格中每一欄代表的量。"
+    },
+    {
+      "term": "固定費用",
+      "definition": "不隨使用量改變的費用。"
+    },
+    {
+      "term": "變動費用",
+      "definition": "隨數量或時間改變的費用。"
+    },
+    {
+      "term": "模型假設",
+      "definition": "為使方程式成立而依題意採用的條件。"
+    },
+    {
+      "term": "敏感資訊",
+      "definition": "會改變答案的關鍵資料。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "總費用=固定費+單位費×用量",
+      "meaning": "線性方案常見模型。"
+    },
+    {
+      "symbol": "ax+by=c",
+      "meaning": "把表格中的單位貢獻轉成總量。"
+    }
+  ],
+  "conceptDevelopment": [
+    "素養題的難點常在辨認資訊，而不是計算本身。先問：未知的是哪兩個量？哪兩段資料能形成獨立等式？",
+    "表格的欄名與單位是方程式的一部分；同一數字在「元/次」與「次」欄中意義不同。",
+    "算出數值後仍要回答題目真正問的比較、限制或決策。"
+  ],
+  "definitions": [
+    {
+      "name": "必要資訊",
+      "statement": "缺少後就不能唯一建立模型的資料。"
+    },
+    {
+      "name": "冗餘資訊",
+      "statement": "可用於檢查，但不是求解所必需。"
+    },
+    {
+      "name": "線性規則",
+      "statement": "每增加一單位，總量固定增加同一數值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "固定量+單位貢獻×數量=總量",
+      "conditions": [
+        "單位貢獻固定且無階梯費率。"
+      ],
+      "meaning": "把方案或表格轉為一次式。"
+    }
+  ],
+  "invalidUseCases": [
+    "階梯費率、平方成長或乘積型關係不一定是二元一次。",
+    "不能忽略表格註記，例如費用是否含基本量。",
+    "題目問最省方案時，僅求交點還要比較指定使用量。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "標記所求與單位",
+      "check": "先不急著算。"
+    },
+    {
+      "step": 2,
+      "instruction": "整理必要資料",
+      "check": "可改寫成小表格。"
+    },
+    {
+      "step": 3,
+      "instruction": "定義兩未知數",
+      "check": "保持意義固定。"
+    },
+    {
+      "step": 4,
+      "instruction": "建立兩個獨立等式",
+      "check": "檢查是否線性。"
+    },
+    {
+      "step": 5,
+      "instruction": "求解並回到情境回答",
+      "check": "比較、取整與限制都要說明。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩種活動票共 80 張，成人每張 250 元、學生 150 元，收入 15600 元。",
+      "solutionSteps": [
+        "設成人 x、學生 y。",
+        "x+y=80、250x+150y=15600。"
+      ],
+      "answer": "成人 36、學生 44。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "某方案基本費 100 元，每次 20 元；另一方案基本費 220 元，每次 10 元。何時同價？",
+      "solutionSteps": [
+        "100+20x=220+10x。",
+        "10x=120。"
+      ],
+      "answer": "12 次時同價。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "表格顯示兩種餐盒的熱量與蛋白質，需選共 5 盒且蛋白質 90 克。",
+      "solutionSteps": [
+        "設兩種盒數 x、y。",
+        "以盒數總和和蛋白質總和列式。",
+        "熱量欄可用來計算解後總熱量。"
+      ],
+      "answer": "先由必要欄求盒數，再用冗餘欄回答延伸問題。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "判斷「每超過 10 次後單價改變」是否可直接用一條一次式。",
+      "solutionSteps": [
+        "單價分段改變。",
+        "需分情況，不能用單一固定斜率。"
+      ],
+      "answer": "不屬單一線性規則。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到所有數字都塞進方程式",
+      "correction": "先區分必要與延伸資訊。"
+    },
+    {
+      "mistake": "忽略固定費",
+      "correction": "方案費用不只是單價乘次數。"
+    },
+    {
+      "mistake": "解出交點就直接判某方案永遠較便宜",
+      "correction": "還要比較交點兩側。"
+    },
+    {
+      "mistake": "把分段費率當單一一次式",
+      "correction": "須依區間分情況。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "固定費會隨使用量改變嗎？",
+      "answer": "不會。"
+    },
+    {
+      "prompt": "元/次乘次得到什麼單位？",
+      "answer": "元。"
+    },
+    {
+      "prompt": "兩式完全成比例能唯一求解嗎？",
+      "answer": "不能。"
+    },
+    {
+      "prompt": "算出數字後最後一步？",
+      "answer": "用題目語言解釋並檢查限制。"
+    }
+  ],
+  "summary": [
+    "先找所求與必要資料。",
+    "單位與表格註記不可忽略。",
+    "建立兩個獨立線性條件。",
+    "解後要做情境決策與限制檢查。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-mixture-basic 已建立必要基礎；本節將其用於「從表格、方案與活動規則中辨認兩個條件，建立模型並解釋答案。」",
+    "next": "下一技能將把本單元方法整合到較長的資料情境。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "示例涵蓋表格、固定費、延伸欄與分段規則邊界；每一情境都說明資料為何必要，沒有將裝飾性故事當素養。",
+    "reviewNote": "示例涵蓋表格、固定費、延伸欄與分段規則邊界；每一情境都說明資料為何必要，沒有將裝飾性故事當素養。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "78caf834182d850f0cc4c667300c833180b1fa8b9c1515780b811cc255b2db95"
+}

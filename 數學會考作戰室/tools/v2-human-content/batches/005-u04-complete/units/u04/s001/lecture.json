@@ -1,0 +1,219 @@
+{
+  "lectureId": "u04-s001-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-basics",
+  "skillId": "system-two-variable-equation-definition",
+  "lockedSkillTitle": "二元一次方程式的判斷",
+  "title": "二元一次方程式的判斷：看未知數種類與次數",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "二元一次方程式的判斷",
+    "scope": "判斷式子是否同時只有兩個未知數，且每個未知數的次數都是 1。"
+  },
+  "prerequisiteBridge": "本技能是本單元起點；先備只需能讀等號、未知數與一次項。",
+  "learningGoals": [
+    "能說出二元、一次與方程式三個條件。",
+    "能將式子整理後再判斷，而不是隻看表面。",
+    "能排除含 xy、平方、未知數在分母等非一次形式。",
+    "能辨認缺少某一未知數係數為 0 的特殊寫法。"
+  ],
+  "vocabulary": [
+    {
+      "term": "未知數",
+      "definition": "尚未確定的數，常用 x、y 表示。"
+    },
+    {
+      "term": "二元",
+      "definition": "式中實際出現兩種未知數。"
+    },
+    {
+      "term": "一次",
+      "definition": "每一項中未知數的最高次數都是 1，且未知數彼此不相乘。"
+    },
+    {
+      "term": "方程式",
+      "definition": "含等號，表示左右兩邊相等的式子。"
+    },
+    {
+      "term": "係數",
+      "definition": "乘在未知數前面的數，例如 3x 的係數是 3。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax+by=c",
+      "meaning": "二元一次方程式的一般形式，其中 a、b 不可同時為 0。"
+    },
+    {
+      "symbol": "x²",
+      "meaning": "x 的二次方，因此不是一次。"
+    },
+    {
+      "symbol": "xy",
+      "meaning": "兩個未知數相乘，總次數為 2，因此不是一次。"
+    }
+  ],
+  "conceptDevelopment": [
+    "判斷時要逐項檢查：有沒有等號、未知數是不是恰有兩種、未知數是否都只出現一次。",
+    "式子可先移項與合併同類項。例如 x+y=x-y+4 整理成 2y=4，只剩一種未知數，因此不屬於真正含兩元的方程式。",
+    "一般形式 ax+by=c 中，a、b 可以有一個是 0，但若課程要求「實際含兩個未知數」，題目通常需兩個係數皆非 0；本單元採用實際出現兩未知數的判準。"
+  ],
+  "definitions": [
+    {
+      "name": "二元一次方程式",
+      "statement": "含有兩種未知數，且每一未知數的次數都是 1 的等式。"
+    },
+    {
+      "name": "一次項",
+      "statement": "未知數只乘一次，例如 -5y。"
+    },
+    {
+      "name": "常數項",
+      "statement": "不含未知數的項，例如 7。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "ax+by=c",
+      "conditions": [
+        "a、b、c 為已知數，且 a、b 皆非 0 時，式中實際含 x、y 兩元。"
+      ],
+      "meaning": "用係數與常數表示所有二元一次方程式。"
+    }
+  ],
+  "invalidUseCases": [
+    "沒有等號的 3x+2y 只是代數式，不是方程式。",
+    "含 x²、xy、1/x、√x 的式子不是二元一次方程式。",
+    "整理後若一個未知數消失，要依整理後的實際形式判斷。",
+    "未知數名稱不限 x、y，但必須只有兩種。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "先找等號",
+      "check": "沒有等號立即排除。"
+    },
+    {
+      "step": 2,
+      "instruction": "列出未知數種類",
+      "check": "確認恰有兩種。"
+    },
+    {
+      "step": 3,
+      "instruction": "整理左右兩邊",
+      "check": "移項並合併同類項。"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查每一項",
+      "check": "不可有平方、相乘、分母含未知數或根號。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查兩元是否仍存在",
+      "check": "整理後兩種未知數的係數都不可消失。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 3x-2y=7。",
+      "solutionSteps": [
+        "有等號。",
+        "未知數為 x、y。",
+        "x、y 都是一次且沒有相乘。"
+      ],
+      "answer": "是二元一次方程式。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "判斷 x+y=xy。",
+      "solutionSteps": [
+        "右邊含 xy。",
+        "xy 是兩個未知數相乘，總次數為 2。"
+      ],
+      "answer": "不是二元一次方程式。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "判斷 2(x+y)-x=5。",
+      "solutionSteps": [
+        "展開得 2x+2y-x=5。",
+        "合併成 x+2y=5。"
+      ],
+      "answer": "整理後仍是二元一次方程式。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "判斷 x+y=x-y+4。",
+      "solutionSteps": [
+        "兩邊同減 x 得 y=-y+4。",
+        "整理成 2y=4，只剩 y。"
+      ],
+      "answer": "整理後不是實際含兩元的方程式。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只看到 x、y 就判定是二元一次",
+      "correction": "還要檢查等號與次數。"
+    },
+    {
+      "mistake": "把 xy 當成兩個一次項",
+      "correction": "xy 是乘積，不是 x 項加 y 項。"
+    },
+    {
+      "mistake": "不先化簡",
+      "correction": "化簡後可能有未知數消失。"
+    },
+    {
+      "mistake": "認為係數是分數就不是一次",
+      "correction": "係數可為整數、分數或小數，只要未知數次數為 1。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "2a+3b=9 是否符合？",
+      "answer": "符合；有兩元且皆一次。"
+    },
+    {
+      "prompt": "m/n+2m=1 是否符合？",
+      "answer": "不符合；n 在分母。"
+    },
+    {
+      "prompt": "p+q-p=6 是否符合？",
+      "answer": "化簡後 q=6，只剩一元。"
+    },
+    {
+      "prompt": "為何 4x+5y 不算方程式？",
+      "answer": "缺少等號。"
+    }
+  ],
+  "summary": [
+    "二元指兩種未知數，一次指未知數不平方、不相乘、不在分母。",
+    "判斷前先整理。",
+    "有等號才是方程式。",
+    "ax+by=c 是一般形式。"
+  ],
+  "connections": {
+    "previous": "本技能是本單元起點；先備只需能讀等號、未知數與一次項。",
+    "next": "下一技能「有序數對與解的判斷」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "逐一核對「等號、未知數種類、化簡後次數」三層判準；特別檢查了 xy、未知數在分母與化簡消去一元等邊界，未引入坐標圖形。",
+    "reviewNote": "逐一核對「等號、未知數種類、化簡後次數」三層判準；特別檢查了 xy、未知數在分母與化簡消去一元等邊界，未引入坐標圖形。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "1b312439695d757e953bfc7616955f6c98399d993047767a9a883fa9df93e8d1"
+}

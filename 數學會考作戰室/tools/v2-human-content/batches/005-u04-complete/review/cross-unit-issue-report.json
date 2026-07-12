@@ -1,0 +1,6 @@
+{
+  "unitId": "u04",
+  "issues": [],
+  "limitation": "This package can reject duplicates inside U04 but cannot compare against the other 19 units being authored concurrently. The central coordinator must run cross-unit reconciliation after all packages return.",
+  "coordinatorActionRequired": "Merge unit-content-fingerprints.json files and compare exact prompt hashes, normalized prompt hashes and number-stripped skeleton hashes before acceptance."
+}

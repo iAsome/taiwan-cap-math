@@ -1,0 +1,1110 @@
+// SERIALIZATION OF REVIEWED CHATGPT_HUMAN_AUTHORED_R1 CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u04-s007-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-methods",
+  "skillId": "system-special-cases",
+  "lockedSkillTitle": "無解與唯一解與無限多解",
+  "title": "無解與唯一解與無限多解：看消去後留下什麼",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "無解與唯一解與無限多解",
+    "scope": "由消去後的結果判斷聯立方程式解的型態。"
+  },
+  "prerequisiteBridge": "先備技能 system-elimination-scaling 已建立必要基礎；本節將其用於「由消去後的結果判斷聯立方程式解的型態。」",
+  "learningGoals": [
+    "能由正常的一元等式判斷唯一解。",
+    "能由 0=非 0 判斷無解。",
+    "能由 0=0 判斷無限多解。",
+    "能用係數比例判斷參數造成的解型態。"
+  ],
+  "vocabulary": [
+    {
+      "term": "唯一解",
+      "definition": "只有一組有序數對同時滿足兩式。"
+    },
+    {
+      "term": "無解",
+      "definition": "沒有任何有序數對同時滿足兩式。"
+    },
+    {
+      "term": "無限多解",
+      "definition": "兩式實際代表同一條件，所有一式的解都滿足另一式。"
+    },
+    {
+      "term": "矛盾式",
+      "definition": "例如 0=5，永遠不成立。"
+    },
+    {
+      "term": "恆等式",
+      "definition": "例如 0=0，永遠成立。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "0=非0",
+      "meaning": "代表條件互相矛盾。"
+    },
+    {
+      "symbol": "0=0",
+      "meaning": "代表一式是另一式的倍數，沒有新增限制。"
+    }
+  ],
+  "conceptDevelopment": [
+    "消去後若得到 x=某數或 y=某數，通常能再求另一未知數，為唯一解。",
+    "若所有未知數都消失卻得到錯誤等式，例如 0=4，表示兩個條件不可能同時成立。",
+    "若得到 0=0，表示兩式等價，只剩一個獨立條件，因此有無限多組解。"
+  ],
+  "definitions": [
+    {
+      "name": "獨立條件",
+      "statement": "不能由另一方程式整體乘倍數得到的條件。"
+    },
+    {
+      "name": "相依條件",
+      "statement": "一式是另一式的非零倍數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a₁/a₂=b₁/b₂≠c₁/c₂",
+      "conditions": [
+        "分母係數非 0 時。"
+      ],
+      "meaning": "未知數係數成比例但常數不成比例，無解。"
+    },
+    {
+      "formula": "a₁/a₂=b₁/b₂=c₁/c₂",
+      "conditions": [
+        "分母係數非 0 時。"
+      ],
+      "meaning": "整式成比例，無限多解。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能看到未知數消失就一律說無解。",
+    "0=0 不是解為 x=0、y=0。",
+    "比例判斷須包含常數項，不能只比 x 係數。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "先以消去法處理",
+      "check": "必要時倍數放大。"
+    },
+    {
+      "step": 2,
+      "instruction": "觀察結果",
+      "check": "是否仍有未知數。"
+    },
+    {
+      "step": 3,
+      "instruction": "正常一元式",
+      "check": "判唯一解並回代。"
+    },
+    {
+      "step": 4,
+      "instruction": "矛盾式 0=k，k≠0",
+      "check": "判無解。"
+    },
+    {
+      "step": 5,
+      "instruction": "恆等式 0=0",
+      "check": "判無限多解。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "x+y=3，x-y=1。",
+      "solutionSteps": [
+        "相加得 2x=4。",
+        "可求 x=2、y=1。"
+      ],
+      "answer": "唯一解。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "x+y=3，2x+2y=8。",
+      "solutionSteps": [
+        "第二式與第一式兩倍比較：2x+2y 應等於 6，卻要求 8。",
+        "相減得 0=2。"
+      ],
+      "answer": "無解。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "x+y=3，2x+2y=6。",
+      "solutionSteps": [
+        "第二式正是第一式兩倍。",
+        "消去得 0=0。"
+      ],
+      "answer": "無限多解。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "kx+y=2 與 2x+2y=5 何時可能無解？",
+      "solutionSteps": [
+        "若 k=1，第一式乘 2 得 2x+2y=4，與第二式常數不同。"
+      ],
+      "answer": "k=1 時無解。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 0=0 解讀成 x=y=0",
+      "correction": "它表示方程式重複，並未固定 x、y。"
+    },
+    {
+      "mistake": "把 0=5 當成 x=5",
+      "correction": "未知數已消失，這是矛盾。"
+    },
+    {
+      "mistake": "只看一個係數比例",
+      "correction": "必須比較 x、y 與常數。"
+    },
+    {
+      "mistake": "未化簡就判斷",
+      "correction": "先整理到相同排列再比較。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "消去得 3x=6 是哪型？",
+      "answer": "唯一解。"
+    },
+    {
+      "prompt": "消去得 0=-7 呢？",
+      "answer": "無解。"
+    },
+    {
+      "prompt": "消去得 0=0 呢？",
+      "answer": "無限多解。"
+    },
+    {
+      "prompt": "無限多解代表每個數對都可以嗎？",
+      "answer": "不是；必須滿足剩下的那一個方程式。"
+    }
+  ],
+  "summary": [
+    "正常一元式通常代表唯一解。",
+    "0=非0 代表無解。",
+    "0=0 代表無限多解。",
+    "比例判斷要包含常數項。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-elimination-scaling 已建立必要基礎；本節將其用於「由消去後的結果判斷聯立方程式解的型態。」",
+    "next": "下一技能「情境列聯立方程式」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "分別獨立推導三種解型態，確認 0=0 並非所有數對而是所有滿足共同方程式的數對；參數例只在國中比例與消去範圍。",
+    "reviewNote": "分別獨立推導三種解型態，確認 0=0 並非所有數對而是所有滿足共同方程式的數對；參數例只在國中比例與消去範圍。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "afa6ff7f3b1851a6f9664af6b05dd12897a18697f835bfd3b6f57eb605efc4b8"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u04-s007-v001",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "basic",
+    "itemType": "mc",
+    "prompt": "消去後得到 3x=12，這組聯立方程式通常屬於哪一型？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "由正常一元式判唯一解",
+    "choices": [
+      "無解",
+      "無限多解",
+      "唯一解",
+      "無法分類"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "3x=12 得 x=4，通常再由原式唯一求 y。",
+    "explanation": "消去後留下正常一元方程式代表一個確定值。",
+    "steps": [
+      "解一元式。",
+      "判斷可回代。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "無解",
+        "truth": false,
+        "reason": "3x=12 可解。"
+      },
+      {
+        "choice": "無限多解",
+        "truth": false,
+        "reason": "結果不是 0=0。"
+      },
+      {
+        "choice": "唯一解",
+        "truth": true,
+        "reason": "正常一元方程式提供確定未知數值。"
+      },
+      {
+        "choice": "無法分類",
+        "truth": false,
+        "reason": "可先求 x=4 再回代。"
+      }
+    ],
+    "misconceptionTarget": "看到只剩一元就以為缺資料",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「由正常一元式判唯一解」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "最基本解型辨認。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "45d252cf89646b2a7a0a0fd3a9f06fb9c0b5c8310312f747a00fe13a0ebbd196"
+  },
+  {
+    "questionId": "u04-s007-v002",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "basic",
+    "itemType": "mc",
+    "prompt": "消去後得到 0=5，解的型態為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "辨認矛盾式",
+    "choices": [
+      "無解",
+      "唯一解",
+      "無限多解",
+      "x=5"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "0 不可能等於 5，因此沒有數對能同時滿足原兩式。",
+    "explanation": "矛盾式代表條件不相容。",
+    "steps": [
+      "辨認 0=非0。",
+      "判定永遠不成立。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "無解",
+        "truth": true,
+        "reason": "0=5 永遠不成立。"
+      },
+      {
+        "choice": "唯一解",
+        "truth": false,
+        "reason": "沒有未知數可解且等式錯誤。"
+      },
+      {
+        "choice": "無限多解",
+        "truth": false,
+        "reason": "0=5 不是恆等式。"
+      },
+      {
+        "choice": "x=5",
+        "truth": false,
+        "reason": "x 已被消去。"
+      }
+    ],
+    "misconceptionTarget": "把常數 5 當未知數值",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「辨認矛盾式」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "直接定義題。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "d7087f5d650970b0045e32b944ee061c3f576abffd6e4216e3b1b82ec21d79d0"
+  },
+  {
+    "questionId": "u04-s007-v003",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "basic",
+    "itemType": "mc",
+    "prompt": "消去後得到 0=0，最正確的解釋是？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "辨認恆等式與範圍",
+    "choices": [
+      "唯一解 (0,0)",
+      "無解",
+      "所有數對都是解",
+      "無限多解"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "0=0 表示兩式相依，只剩一個獨立方程式，因此其所有解形成無限多組共同解。",
+    "explanation": "無限多解不等於任意數對。",
+    "steps": [
+      "辨認恆等式。",
+      "保留原方程式限制。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "唯一解 (0,0)",
+        "truth": false,
+        "reason": "0=0 未固定 x、y。"
+      },
+      {
+        "choice": "無解",
+        "truth": false,
+        "reason": "0=0 永遠成立，不是矛盾。"
+      },
+      {
+        "choice": "所有數對都是解",
+        "truth": false,
+        "reason": "仍需滿足剩下的原方程式。"
+      },
+      {
+        "choice": "無限多解",
+        "truth": true,
+        "reason": "兩式重複同一條件，留下無限多組共同解。"
+      }
+    ],
+    "misconceptionTarget": "把 0=0 解成 x=y=0 或所有數對",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「辨認恆等式與範圍」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "定義但含邊界澄清。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "f2129c72cebd798f5fa0e78d6c5f6a2e2e34c5aaa668c796cf6bfc88ff446b2c"
+  },
+  {
+    "questionId": "u04-s007-v004",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "standard",
+    "itemType": "mc",
+    "prompt": "x+y=3 與 2x+2y=6 的解型態為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "由整式倍數判無限多解",
+    "choices": [
+      "唯一解",
+      "無限多解",
+      "無解",
+      "只有 (1,2)"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "第二式是第一式的 2 倍；相減得 0=0。",
+    "explanation": "整式完全成比例。",
+    "steps": [
+      "比較係數與常數比例。",
+      "確認全部為 2 倍。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "唯一解",
+        "truth": false,
+        "reason": "第二式未增加新限制。"
+      },
+      {
+        "choice": "無限多解",
+        "truth": true,
+        "reason": "兩式等價。"
+      },
+      {
+        "choice": "無解",
+        "truth": false,
+        "reason": "兩式相容。"
+      },
+      {
+        "choice": "只有 (1,2)",
+        "truth": false,
+        "reason": "(1,2) 只是其中一組。"
+      }
+    ],
+    "misconceptionTarget": "只找到一組就停止",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「由整式倍數判無限多解」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "需比較三項比例。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "3fa93ad20b160dc199a90b93070717d8945119f472c7f5c1bbbe08928d0f48fa"
+  },
+  {
+    "questionId": "u04-s007-v005",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "standard",
+    "itemType": "mc",
+    "prompt": "把第一式整式乘 2 後，左邊與第二式完全相同，但右邊分別為 6 與 8。此聯立的解型態為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "由常數比例不符判無解",
+    "choices": [
+      "唯一解",
+      "無限多解",
+      "只有 (0,4)",
+      "無解"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "第一式乘 2 應為 2x+2y=6，卻要求等於 8；消去得 0=2。",
+    "explanation": "未知數係數成比例但常數不成比例。",
+    "steps": [
+      "放大第一式。",
+      "比較常數。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "唯一解",
+        "truth": false,
+        "reason": "係數相同方向但常數矛盾。"
+      },
+      {
+        "choice": "無限多解",
+        "truth": false,
+        "reason": "常數 8 不是 6。"
+      },
+      {
+        "choice": "只有 (0,4)",
+        "truth": false,
+        "reason": "該數對不滿足第一式。"
+      },
+      {
+        "choice": "無解",
+        "truth": true,
+        "reason": "兩條平行限制互相矛盾。"
+      }
+    ],
+    "misconceptionTarget": "只看未知數係數相同比例就判無限多",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「由常數比例不符判無解」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "標準比例辨認。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "e8d700f7276b8aaaefadca4f2acc1e37e08e914478402c5cb5a8c2adfc5543dd"
+  },
+  {
+    "questionId": "u04-s007-v006",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "standard",
+    "itemType": "mc",
+    "prompt": "x+y=5 與 x-y=1 的解型態為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "實際求解確認唯一型",
+    "choices": [
+      "無解",
+      "唯一解",
+      "無限多解",
+      "所有 x+y=5 的解"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "相加得 2x=6，x=3，再得 y=2。",
+    "explanation": "兩個獨立條件交會於一組解。",
+    "steps": [
+      "消去 y。",
+      "回代。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "無解",
+        "truth": false,
+        "reason": "兩式可求共同解。"
+      },
+      {
+        "choice": "唯一解",
+        "truth": true,
+        "reason": "共同解唯一為 (3,2)。"
+      },
+      {
+        "choice": "無限多解",
+        "truth": false,
+        "reason": "兩式不成比例。"
+      },
+      {
+        "choice": "所有 x+y=5 的解",
+        "truth": false,
+        "reason": "第二式會進一步篩選。"
+      }
+    ],
+    "misconceptionTarget": "只憑外觀分類",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「實際求解確認唯一型」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "需完成簡短運算。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "a8ccee277987560061ae0977c141a98e684e0bce51a66ebaec6ea554dbf95d34"
+  },
+  {
+    "questionId": "u04-s007-v007",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "advanced",
+    "itemType": "mc",
+    "prompt": "kx+y=2 與 2x+2y=5 在 k 為何值時無解？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "參數造成無解",
+    "choices": [
+      "0",
+      "2",
+      "1",
+      "5/2"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "k=1 時第一式×2 為 2x+2y=4，與第二式 2x+2y=5 矛盾。",
+    "explanation": "要無解需未知數係數成比例而常數不同。",
+    "steps": [
+      "令第二式 x、y 係數比為第一式 2 倍。",
+      "得 k=1。",
+      "比較常數 4 與 5。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "0",
+        "truth": false,
+        "reason": "可得 y=2 與 2x+4=5，有唯一解。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "係數比不一致，通常唯一解。"
+      },
+      {
+        "choice": "1",
+        "truth": true,
+        "reason": "k=1 時消去得到 0=1。"
+      },
+      {
+        "choice": "5/2",
+        "truth": false,
+        "reason": "係數不成比例。"
+      }
+    ],
+    "misconceptionTarget": "只令某一係數相同",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「參數造成無解」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "需同時匹配兩個未知數係數。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "4c4e6daced1d84f2cf001fcdc481c56ded26edd3edf77e296299faaa0d7cef94"
+  },
+  {
+    "questionId": "u04-s007-v008",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "advanced",
+    "itemType": "mc",
+    "prompt": "kx+2y=4 與 3x+6y=12 在 k 為何值時無限多解？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "參數造成整式等價",
+    "choices": [
+      "1",
+      "3",
+      "6",
+      "2"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "第二式常數與 y 係數都是第一式的 3 倍，因此 x 係數也需 3k=3，得 k=1。",
+    "explanation": "三項必須同一比例。",
+    "steps": [
+      "確定倍數 3。",
+      "列 3k=3。",
+      "求 k=1。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1",
+        "truth": true,
+        "reason": "k=1 時第一式乘 3 完全等於第二式。"
+      },
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "第一式×3 得 9x+6y。"
+      },
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "x 係數比例錯誤。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "第一式×3 得 6x+6y。"
+      }
+    ],
+    "misconceptionTarget": "只比較常數或 y 係數",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「參數造成整式等價」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "三項比例綜合。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "9604e34dafe0c6ed973ec74a6ac35f9233aa9f7cbffe73e307148bbb124c7952"
+  },
+  {
+    "questionId": "u04-s007-v009",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "advanced",
+    "itemType": "mc",
+    "prompt": "方程式 ax+by=c 與 2ax+2by=2c，在 a、b 不同時為 0 的前提下，解型態為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "抽象係數下判斷相依",
+    "choices": [
+      "唯一解",
+      "無限多解",
+      "無解",
+      "視 c 正負決定"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "第二式是第一式整式乘 2，兩式解集合相同。",
+    "explanation": "即使係數用參數列示，只要完整倍數關係成立就相依。",
+    "steps": [
+      "比較每一項。",
+      "確認統一倍數 2。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "唯一解",
+        "truth": false,
+        "reason": "第二式只是重複條件。"
+      },
+      {
+        "choice": "無限多解",
+        "truth": true,
+        "reason": "第二式沒有新增獨立條件。"
+      },
+      {
+        "choice": "無解",
+        "truth": false,
+        "reason": "兩式完全相容。"
+      },
+      {
+        "choice": "視 c 正負決定",
+        "truth": false,
+        "reason": "倍數關係與 c 正負無關。"
+      }
+    ],
+    "misconceptionTarget": "參數形式讓人誤以為不確定",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「抽象係數下判斷相依」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "從具體數字提升到一般關係。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "3763b453379e2f96df9af08142f40fd6784a1a3d04cdf56ee5b94023ed66f5a2"
+  },
+  {
+    "questionId": "u04-s007-v010",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "literacy",
+    "itemType": "mc",
+    "prompt": "兩份會員方案紀錄為 100+20x=y 與 200+40x=2y。這兩條紀錄提供幾個獨立條件？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "辨認重複的方案資料",
+    "choices": [
+      "2 個",
+      "0 個",
+      "1 個",
+      "視 x 大小而定"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "第一式乘 2 正好得到第二式，所以只有一個獨立條件。",
+    "explanation": "外觀不同的方案記錄可能是同一規則重複。",
+    "steps": [
+      "將第一式整式乘 2。",
+      "逐項比對。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2 個",
+        "truth": false,
+        "reason": "第二式是第一式兩倍。"
+      },
+      {
+        "choice": "0 個",
+        "truth": false,
+        "reason": "第一式仍提供一個條件。"
+      },
+      {
+        "choice": "1 個",
+        "truth": true,
+        "reason": "第二條只是第一條的等價改寫。"
+      },
+      {
+        "choice": "視 x 大小而定",
+        "truth": false,
+        "reason": "倍數關係與 x 值無關。"
+      }
+    ],
+    "misconceptionTarget": "看到兩列資料就認為有兩個條件",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "兩式均為元的等量關係。",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「辨認重複的方案資料」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "固定費與單位費都同倍放大是必要判斷。",
+    "literacyContextNecessity": "方案金額結構決定兩式相依，情境幫助理解重複資料。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "7c4a5cbd446c7d1652945b8be57a3e54c4b905a3e746886d3a0864accf3219e3"
+  },
+  {
+    "questionId": "u04-s007-v011",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "literacy",
+    "itemType": "mc",
+    "prompt": "品質檢查規則 A：x+y=10；規則 B：2x+2y=25。是否可能有產品同時通過？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "把無解解釋回品質情境",
+    "choices": [
+      "不可能",
+      "一定有一組",
+      "有無限多組",
+      "只有 x=y=5"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "規則 A 乘 2 得 2x+2y=20，與 B 要求 25 衝突。",
+    "explanation": "品質規則中的無解表示沒有任何產品資料能同時合格。",
+    "steps": [
+      "放大規則 A。",
+      "比較 20 與 25。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "不可能",
+        "truth": true,
+        "reason": "消去後得到 0=5。"
+      },
+      {
+        "choice": "一定有一組",
+        "truth": false,
+        "reason": "兩規則相互矛盾。"
+      },
+      {
+        "choice": "有無限多組",
+        "truth": false,
+        "reason": "常數比例不符。"
+      },
+      {
+        "choice": "只有 x=y=5",
+        "truth": false,
+        "reason": "代入 B 得 20≠25。"
+      }
+    ],
+    "misconceptionTarget": "把 x=y=5 當作直覺答案",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「把無解解釋回品質情境」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "規則衝突是情境核心。",
+    "literacyContextNecessity": "兩個品質門檻共同造成矛盾，移除任一則不再無解。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "c8a60ae70457bfb67afab83753cf5a36ed8a1559cbf6f5a1e72345d7cbc5f414"
+  },
+  {
+    "questionId": "u04-s007-v012",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "literacy",
+    "itemType": "mc",
+    "prompt": "某表格的兩欄條件消去後得到 0=0。下列哪個報告敘述最精確？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "將無限多解寫成準確報告",
+    "choices": [
+      "所有填入值都合法",
+      "資料一定錯誤",
+      "只有填 0 才合法",
+      "兩欄資料重複同一限制，仍需滿足其中一欄"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "0=0 說明兩條件相依，不是沒有限制；可保留任一原式描述所有共同解。",
+    "explanation": "報告需區分「重複資料」與「無條件」。",
+    "steps": [
+      "解釋消去結果。",
+      "保留原式限制。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "所有填入值都合法",
+        "truth": false,
+        "reason": "仍受原限制。"
+      },
+      {
+        "choice": "資料一定錯誤",
+        "truth": false,
+        "reason": "0=0 代表相容。"
+      },
+      {
+        "choice": "只有填 0 才合法",
+        "truth": false,
+        "reason": "沒有固定為 0。"
+      },
+      {
+        "choice": "兩欄資料重複同一限制，仍需滿足其中一欄",
+        "truth": true,
+        "reason": "相依條件可刪一欄，但不能刪掉全部限制。"
+      }
+    ],
+    "misconceptionTarget": "把無限多解誤寫為任意值",
+    "prerequisiteCheck": "只需先備 system-elimination-scaling，並使用本技能「無解與唯一解與無限多解」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「將無限多解寫成準確報告」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "資料審查語境迫使說明限制仍存在。",
+    "literacyContextNecessity": "表格重複欄的解釋是數學結論的一部分，不是裝飾。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "a7423c35ed88bd2ed4fa4935d590458f6c1b621f4d335e48d898b0b59f82ef2f"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u04-s007-cr001",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "standard",
+    "itemType": "constructed-response",
+    "prompt": "判斷下列三組聯立方程式的解型態並說明消去結果：A. x+y=3、x-y=1；B. x+y=3、2x+2y=6；C. x+y=3、2x+2y=8。",
+    "requiredWork": [
+      "三組分別寫唯一解、無解或無限多解。",
+      "至少展示關鍵消去式。"
+    ],
+    "standardSolution": [
+      "A 相加得 2x=4，可求 (2,1)，唯一解。",
+      "B 第二式減第一式兩倍得 0=0，無限多解。",
+      "C 第二式減第一式兩倍得 0=2，無解。"
+    ],
+    "alternativeMethods": [
+      "可用整式比例說明 B 完全成比例、C 常數不成比例。"
+    ],
+    "reasoningSteps": [
+      "依序消去。",
+      "區分正常一元式、恆等式、矛盾式。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "三類與理由全部正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "三類正確但一項理由不完整。"
+      },
+      {
+        "score": 1,
+        "criteria": "至少一類及其消去理由正確。"
+      },
+      {
+        "score": 0,
+        "criteria": "混淆 0=0 與 0=非0，且無有效分類。"
+      }
+    ],
+    "partialCreditRules": [
+      "每組一分。"
+    ],
+    "followThroughPolicy": "若 A 數對算錯但明確判唯一解，A 可給半分並計入總分判斷。",
+    "unitNotationRules": "本題無單位。",
+    "answerOnlyPolicy": "只寫三類無理由，最高 2 分。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "independentReview": {
+      "derivedResult": "A唯一解、B無限多解、C無解。",
+      "ambiguityAudit": "題意給定量、變數與所求明確；沒有第二種會改變答案的合理解釋。",
+      "boundaryAudit": "只使用本技能與已鎖定先備技能。",
+      "decision": "pass",
+      "reviewNote": "獨立完成三組消去，確認 B 與 C 僅常數不同卻導致不同型態。",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "5eb209e6b97be1e514f53dfbee0e5d423e1f024cb10568a8f2cced0d5f979513"
+  },
+  {
+    "questionId": "u04-s007-cr002",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-special-cases",
+    "difficulty": "advanced",
+    "itemType": "constructed-response",
+    "prompt": "對聯立 kx+2y=4、3x+6y=12，分別求 k 使其有無限多解或無解；其餘 k 的解型態為何？",
+    "requiredWork": [
+      "比較整式比例。",
+      "三種參數範圍都要說明。"
+    ],
+    "standardSolution": [
+      "第二式的 y 係數與常數是第一式的 3 倍。",
+      "若 3k=3，即 k=1，第一式乘 3 完全等於第二式，故無限多解。",
+      "要無解需未知數係數成比例但常數不成比例；此處 y 與常數比例已同為 3，因此沒有任何 k 產生無解。",
+      "k≠1 時係數不成比例，故唯一解。"
+    ],
+    "alternativeMethods": [
+      "可用消去：第一式乘 3 後與第二式相減，得到 (3k-3)x=0，再分 k=1 與 k≠1。"
+    ],
+    "reasoningSteps": [
+      "找固定比例。",
+      "分參數。",
+      "說明無解集合為空。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完整得到 k=1 無限多解、無 k 無解、其餘唯一解。"
+      },
+      {
+        "score": 2,
+        "criteria": "主要分類正確但“無解不存在”理由略少。"
+      },
+      {
+        "score": 1,
+        "criteria": "只正確得到 k=1 無限多解。"
+      },
+      {
+        "score": 0,
+        "criteria": "誤稱 k≠1 無解或只給單一數值無分類。"
+      }
+    ],
+    "partialCreditRules": [
+      "無限多解一分，無解分析一分，其餘唯一解一分。"
+    ],
+    "followThroughPolicy": "若把 3k=3 解錯，但分類邏輯完整可給 2 分。",
+    "unitNotationRules": "k 無單位；“沒有 k”須明確寫出。",
+    "answerOnlyPolicy": "只答 k=1 最高 1 分。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "independentReview": {
+      "derivedResult": "k=1 無限多解；不存在無解參數；k≠1 唯一解。",
+      "ambiguityAudit": "題意給定量、變數與所求明確；沒有第二種會改變答案的合理解釋。",
+      "boundaryAudit": "只使用本技能與已鎖定先備技能。",
+      "decision": "pass",
+      "reviewNote": "獨立以消去式 (3k-3)x=0 與原 y 係數檢查，確認無矛盾參數。",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "2ab03d6f8c4a5e5f0877a037d01d5a9af22949e95cad62985d2ffa3fd96a058d"
+  }
+];
+
+export const DRAWING_SPECS = [];

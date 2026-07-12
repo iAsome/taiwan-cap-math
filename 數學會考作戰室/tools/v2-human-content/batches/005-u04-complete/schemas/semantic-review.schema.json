@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U04 question-specific semantic review",
+  "type": "object",
+  "required": [
+    "questionId",
+    "contentSha256",
+    "independentRecalculation",
+    "optionTruth",
+    "uniqueCorrectAnswer",
+    "ambiguityChecks",
+    "reviewerDecision",
+    "contentAuthority"
+  ],
+  "properties": {
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  },
+  "additionalProperties": true
+}

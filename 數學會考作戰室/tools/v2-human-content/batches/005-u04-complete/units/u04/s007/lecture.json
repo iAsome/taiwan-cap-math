@@ -1,0 +1,215 @@
+{
+  "lectureId": "u04-s007-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-methods",
+  "skillId": "system-special-cases",
+  "lockedSkillTitle": "無解與唯一解與無限多解",
+  "title": "無解與唯一解與無限多解：看消去後留下什麼",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "無解與唯一解與無限多解",
+    "scope": "由消去後的結果判斷聯立方程式解的型態。"
+  },
+  "prerequisiteBridge": "先備技能 system-elimination-scaling 已建立必要基礎；本節將其用於「由消去後的結果判斷聯立方程式解的型態。」",
+  "learningGoals": [
+    "能由正常的一元等式判斷唯一解。",
+    "能由 0=非 0 判斷無解。",
+    "能由 0=0 判斷無限多解。",
+    "能用係數比例判斷參數造成的解型態。"
+  ],
+  "vocabulary": [
+    {
+      "term": "唯一解",
+      "definition": "只有一組有序數對同時滿足兩式。"
+    },
+    {
+      "term": "無解",
+      "definition": "沒有任何有序數對同時滿足兩式。"
+    },
+    {
+      "term": "無限多解",
+      "definition": "兩式實際代表同一條件，所有一式的解都滿足另一式。"
+    },
+    {
+      "term": "矛盾式",
+      "definition": "例如 0=5，永遠不成立。"
+    },
+    {
+      "term": "恆等式",
+      "definition": "例如 0=0，永遠成立。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "0=非0",
+      "meaning": "代表條件互相矛盾。"
+    },
+    {
+      "symbol": "0=0",
+      "meaning": "代表一式是另一式的倍數，沒有新增限制。"
+    }
+  ],
+  "conceptDevelopment": [
+    "消去後若得到 x=某數或 y=某數，通常能再求另一未知數，為唯一解。",
+    "若所有未知數都消失卻得到錯誤等式，例如 0=4，表示兩個條件不可能同時成立。",
+    "若得到 0=0，表示兩式等價，只剩一個獨立條件，因此有無限多組解。"
+  ],
+  "definitions": [
+    {
+      "name": "獨立條件",
+      "statement": "不能由另一方程式整體乘倍數得到的條件。"
+    },
+    {
+      "name": "相依條件",
+      "statement": "一式是另一式的非零倍數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a₁/a₂=b₁/b₂≠c₁/c₂",
+      "conditions": [
+        "分母係數非 0 時。"
+      ],
+      "meaning": "未知數係數成比例但常數不成比例，無解。"
+    },
+    {
+      "formula": "a₁/a₂=b₁/b₂=c₁/c₂",
+      "conditions": [
+        "分母係數非 0 時。"
+      ],
+      "meaning": "整式成比例，無限多解。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能看到未知數消失就一律說無解。",
+    "0=0 不是解為 x=0、y=0。",
+    "比例判斷須包含常數項，不能只比 x 係數。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "先以消去法處理",
+      "check": "必要時倍數放大。"
+    },
+    {
+      "step": 2,
+      "instruction": "觀察結果",
+      "check": "是否仍有未知數。"
+    },
+    {
+      "step": 3,
+      "instruction": "正常一元式",
+      "check": "判唯一解並回代。"
+    },
+    {
+      "step": 4,
+      "instruction": "矛盾式 0=k，k≠0",
+      "check": "判無解。"
+    },
+    {
+      "step": 5,
+      "instruction": "恆等式 0=0",
+      "check": "判無限多解。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "x+y=3，x-y=1。",
+      "solutionSteps": [
+        "相加得 2x=4。",
+        "可求 x=2、y=1。"
+      ],
+      "answer": "唯一解。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "x+y=3，2x+2y=8。",
+      "solutionSteps": [
+        "第二式與第一式兩倍比較：2x+2y 應等於 6，卻要求 8。",
+        "相減得 0=2。"
+      ],
+      "answer": "無解。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "x+y=3，2x+2y=6。",
+      "solutionSteps": [
+        "第二式正是第一式兩倍。",
+        "消去得 0=0。"
+      ],
+      "answer": "無限多解。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "kx+y=2 與 2x+2y=5 何時可能無解？",
+      "solutionSteps": [
+        "若 k=1，第一式乘 2 得 2x+2y=4，與第二式常數不同。"
+      ],
+      "answer": "k=1 時無解。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 0=0 解讀成 x=y=0",
+      "correction": "它表示方程式重複，並未固定 x、y。"
+    },
+    {
+      "mistake": "把 0=5 當成 x=5",
+      "correction": "未知數已消失，這是矛盾。"
+    },
+    {
+      "mistake": "只看一個係數比例",
+      "correction": "必須比較 x、y 與常數。"
+    },
+    {
+      "mistake": "未化簡就判斷",
+      "correction": "先整理到相同排列再比較。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "消去得 3x=6 是哪型？",
+      "answer": "唯一解。"
+    },
+    {
+      "prompt": "消去得 0=-7 呢？",
+      "answer": "無解。"
+    },
+    {
+      "prompt": "消去得 0=0 呢？",
+      "answer": "無限多解。"
+    },
+    {
+      "prompt": "無限多解代表每個數對都可以嗎？",
+      "answer": "不是；必須滿足剩下的那一個方程式。"
+    }
+  ],
+  "summary": [
+    "正常一元式通常代表唯一解。",
+    "0=非0 代表無解。",
+    "0=0 代表無限多解。",
+    "比例判斷要包含常數項。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-elimination-scaling 已建立必要基礎；本節將其用於「由消去後的結果判斷聯立方程式解的型態。」",
+    "next": "下一技能「情境列聯立方程式」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "分別獨立推導三種解型態，確認 0=0 並非所有數對而是所有滿足共同方程式的數對；參數例只在國中比例與消去範圍。",
+    "reviewNote": "分別獨立推導三種解型態，確認 0=0 並非所有數對而是所有滿足共同方程式的數對；參數例只在國中比例與消去範圍。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "afa6ff7f3b1851a6f9664af6b05dd12897a18697f835bfd3b6f57eb605efc4b8"
+}
