@@ -1,0 +1,241 @@
+{
+  "lectureId": "u17-s012-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-quadrilaterals",
+  "skillId": "quadrilateral-area",
+  "lockedTitle": "四邊形面積",
+  "title": "四邊形面積：分割成會算的圖形，再檢查是否重疊或漏算",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：special-quadrilateral。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "用對角線把四邊形分成兩個三角形",
+    "選擇平行四邊形、矩形、菱形等公式",
+    "處理複合與挖空面積"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "special-quadrilateral",
+      "requiredLevel": "能正確使用「special-quadrilateral」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "分割",
+      "definition": "把圖形切成互不重疊的簡單圖形"
+    },
+    {
+      "term": "補形",
+      "definition": "補成較容易計算的大圖形再扣除"
+    },
+    {
+      "term": "高",
+      "definition": "到所選底的垂直距離"
+    },
+    {
+      "term": "平方單位",
+      "definition": "面積必須使用的單位"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "一般四邊形沒有單一只靠四邊長就能求面積的公式。常用方法是畫對角線，分成兩個三角形。",
+    "選底後，高一定要垂直於該底。分割後各部分不可重疊，也不可留下空隙。",
+    "複合圖形可用相加或大面積減去挖空面積。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "分割",
+      "statement": "把圖形切成互不重疊的簡單圖形"
+    },
+    {
+      "name": "補形",
+      "statement": "補成較容易計算的大圖形再扣除"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "四邊形面積=兩個三角形面積和",
+      "conditions": [
+        "以一條對角線分割"
+      ],
+      "meaning": "用於四邊形面積中符合條件的推理或計算。"
+    },
+    {
+      "formula": "平行四邊形面積=底×高",
+      "conditions": [
+        "高垂直於底"
+      ],
+      "meaning": "用於四邊形面積中符合條件的推理或計算。"
+    },
+    {
+      "formula": "菱形面積=兩對角線乘積÷2",
+      "conditions": [
+        "對角線互相垂直"
+      ],
+      "meaning": "用於四邊形面積中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "判斷能否直接套特殊四邊形公式",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "若不能，選對角線分割",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "為每一部分找底與高",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "相加或相減",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查平方單位與合理大小",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "對角線10，兩側高3與5",
+      "solutionSteps": [
+        "面積=10×3÷2+10×5÷2=40。"
+      ],
+      "answer": "面積=10×3÷2+10×5÷2=40。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "平行四邊形底8高6",
+      "solutionSteps": [
+        "面積48。"
+      ],
+      "answer": "面積48。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "菱形對角線12與7",
+      "solutionSteps": [
+        "面積42。"
+      ],
+      "answer": "面積42。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "矩形60挖去三角形12",
+      "solutionSteps": [
+        "剩48。"
+      ],
+      "answer": "剩48。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只知道四邊長就硬求一般四邊形面積",
+      "why": "資訊通常不足",
+      "correction": "資訊通常不足"
+    },
+    {
+      "mistake": "把斜邊當高",
+      "why": "高須垂直",
+      "correction": "高須垂直"
+    },
+    {
+      "mistake": "分割部分重疊",
+      "why": "相加前確認互不重疊",
+      "correction": "相加前確認互不重疊"
+    },
+    {
+      "mistake": "忘記三角形除2",
+      "why": "分割後每個三角形都要除2",
+      "correction": "分割後每個三角形都要除2"
+    },
+    {
+      "mistake": "面積寫公分",
+      "why": "應寫平方公分",
+      "correction": "應寫平方公分"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「四邊形面積」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "一般四邊形沒有單一只靠四邊長就能求面積的公式。常用方法是畫對角線，分成兩個三角形。",
+    "四邊形面積=兩個三角形面積和",
+    "解題時先確認「以一條對角線分割」。"
+  ],
+  "connections": {
+    "previous": "承接special-quadrilateral。",
+    "next": "下一技能依鎖定順序為rhombus-properties。"
+  },
+  "figureReferences": [
+    "u17-s012-fig001"
+  ],
+  "figureAccessibility": "一般四邊形ABCD以AC分成兩三角形，從B與D向AC畫垂線高h1、h2。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s012-v001",
+      "u17-s012-v002",
+      "u17-s012-v003",
+      "u17-s012-v004",
+      "u17-s012-v005",
+      "u17-s012-v006",
+      "u17-s012-v007",
+      "u17-s012-v008",
+      "u17-s012-v009",
+      "u17-s012-v010",
+      "u17-s012-v011",
+      "u17-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s012-cr001",
+      "u17-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "內容涵蓋直接公式、分割與補形三種策略，並把一般四邊形資訊不足列為重要邊界。"
+  },
+  "contentSha256": "f25b66c8fda45ef3d284f3f2a6de04fddab65856b352a0eef073d94b68e27049"
+}

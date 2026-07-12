@@ -1,0 +1,1261 @@
+// SERIALIZATION OF REVIEWED CHATGPT HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u17-s011-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-quadrilaterals",
+  "skillId": "special-quadrilateral",
+  "lockedTitle": "特殊四邊形",
+  "title": "特殊四邊形：用包含關係整理，不把類別切斷",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallel-lines-distance。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "辨認梯形、平行四邊形、矩形、菱形與正方形",
+    "理解類別包含關係",
+    "依充分條件分類"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallel-lines-distance",
+      "requiredLevel": "能正確使用「parallel-lines-distance」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "梯形",
+      "definition": "至少一組對邊平行的四邊形，本課採包含式分類"
+    },
+    {
+      "term": "矩形",
+      "definition": "有四個直角的平行四邊形"
+    },
+    {
+      "term": "菱形",
+      "definition": "四邊等長的平行四邊形"
+    },
+    {
+      "term": "正方形",
+      "definition": "同時是矩形與菱形"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "分類時，一個圖形可以同時屬於多個類別。正方形是矩形、菱形、平行四邊形，也符合至少一組對邊平行的梯形廣義定義。",
+    "判斷要看定義的充分條件，不靠外觀。",
+    "「所有正方形都是矩形」正確，但「所有矩形都是正方形」錯，因為矩形不一定四邊等長。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "梯形",
+      "statement": "至少一組對邊平行的四邊形，本課採包含式分類"
+    },
+    {
+      "name": "矩形",
+      "statement": "有四個直角的平行四邊形"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "正方形 ⊂ 矩形 ⊂ 平行四邊形",
+      "conditions": [
+        "類別包含"
+      ],
+      "meaning": "用於特殊四邊形中符合條件的推理或計算。"
+    },
+    {
+      "formula": "正方形 ⊂ 菱形 ⊂ 平行四邊形",
+      "conditions": [
+        "類別包含"
+      ],
+      "meaning": "用於特殊四邊形中符合條件的推理或計算。"
+    },
+    {
+      "formula": "矩形∩菱形=正方形",
+      "conditions": [
+        "同時具四直角與四邊等長"
+      ],
+      "meaning": "用於特殊四邊形中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出題目給的邊與角條件",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "先判是否為平行四邊形",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "再檢查四直角或四邊等長",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "找最精確類別",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "同時保留所有成立的上位類別",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "四個直角且鄰邊不等",
+      "solutionSteps": [
+        "矩形，不是正方形。"
+      ],
+      "answer": "矩形，不是正方形。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "四邊等長但無直角",
+      "solutionSteps": [
+        "菱形。"
+      ],
+      "answer": "菱形。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "四邊等長且一角90°",
+      "solutionSteps": [
+        "正方形。"
+      ],
+      "answer": "正方形。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "只有一組對邊平行",
+      "solutionSteps": [
+        "梯形，未必平行四邊形。"
+      ],
+      "answer": "梯形，未必平行四邊形。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "正方形不算矩形",
+      "why": "它滿足矩形定義",
+      "correction": "它滿足矩形定義"
+    },
+    {
+      "mistake": "菱形一定有四直角",
+      "why": "菱形只保證四邊等長",
+      "correction": "菱形只保證四邊等長"
+    },
+    {
+      "mistake": "矩形四邊都相等",
+      "why": "矩形只保證對邊等長",
+      "correction": "矩形只保證對邊等長"
+    },
+    {
+      "mistake": "看起來歪就不是平行四邊形",
+      "why": "外觀不影響定義",
+      "correction": "外觀不影響定義"
+    },
+    {
+      "mistake": "用必要條件當充分條件",
+      "why": "例如對角線等長不一定就是矩形，還需其他條件",
+      "correction": "例如對角線等長不一定就是矩形，還需其他條件"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「特殊四邊形」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "分類時，一個圖形可以同時屬於多個類別。正方形是矩形、菱形、平行四邊形，也符合至少一組對邊平行的梯形廣義定義。",
+    "正方形 ⊂ 矩形 ⊂ 平行四邊形",
+    "解題時先確認「類別包含」。"
+  ],
+  "connections": {
+    "previous": "承接parallel-lines-distance。",
+    "next": "下一技能依鎖定順序為quadrilateral-area。"
+  },
+  "figureReferences": [
+    "u17-s011-fig001"
+  ],
+  "figureAccessibility": "以巢狀框與交集表示平行四邊形包含矩形和菱形，正方形位於兩者交集。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s011-v001",
+      "u17-s011-v002",
+      "u17-s011-v003",
+      "u17-s011-v004",
+      "u17-s011-v005",
+      "u17-s011-v006",
+      "u17-s011-v007",
+      "u17-s011-v008",
+      "u17-s011-v009",
+      "u17-s011-v010",
+      "u17-s011-v011",
+      "u17-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s011-cr001",
+      "u17-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義採清楚的包含式分類並說明梯形用語約定，避免類別互斥的常見誤解。"
+  },
+  "contentSha256": "c4633be285de4eb773407c649c50716ab83375616122b55d075cad93c2a2ddaa"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u17-s011-v001",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "basic",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "四個內角都是90°的平行四邊形稱為什麼？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "依角條件分類。",
+    "choices": [
+      "菱形",
+      "梯形",
+      "矩形",
+      "風箏形"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "重新依題目條件計算：矩形的定義是四角皆為直角的平行四邊形。",
+    "explanation": "矩形的定義是四角皆為直角的平行四邊形。",
+    "steps": [
+      "矩形的定義是四角皆為直角的平行四邊形。",
+      "因此選擇「矩形」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "菱形",
+        "truth": false,
+        "reason": "選項「菱形」不符合題意；依矩形定義。應得到「矩形」，此錯誤常源自：只看外觀或邊長分類。"
+      },
+      {
+        "choice": "梯形",
+        "truth": false,
+        "reason": "選項「梯形」不符合題意；依矩形定義。應得到「矩形」，此錯誤常源自：只看外觀或邊長分類。"
+      },
+      {
+        "choice": "矩形",
+        "truth": true,
+        "reason": "依獨立重算「矩形的定義是四角皆為直角的平行四邊形。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "風箏形",
+        "truth": false,
+        "reason": "選項「風箏形」不符合題意；依矩形定義。應得到「矩形」，此錯誤常源自：只看外觀或邊長分類。"
+      }
+    ],
+    "misconceptionTarget": "只看外觀或邊長分類。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「依角條件分類。」；四個選項互異，只有矩形符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "直接定義題。",
+    "literacyContextNecessity": null,
+    "visualMode": "figure-supported",
+    "figureId": "u17-s011-fig001",
+    "drawingSpecRef": "units/u17/s011/drawing-specs.jsonl#u17-s011-fig001",
+    "semanticReviewId": "u17-s011-v001-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "e16387e2cfeb5b45abb9f4c53d942ed1f9cb71eb72aad51087f13e90ac70962e"
+  },
+  {
+    "questionId": "u17-s011-v002",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "basic",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "四邊等長的平行四邊形稱為什麼？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "依邊條件分類。",
+    "choices": [
+      "矩形",
+      "梯形",
+      "一般四邊形但無專名",
+      "菱形"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "重新依題目條件計算：菱形是四邊等長的平行四邊形。",
+    "explanation": "菱形是四邊等長的平行四邊形。",
+    "steps": [
+      "菱形是四邊等長的平行四邊形。",
+      "因此選擇「菱形」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "矩形",
+        "truth": false,
+        "reason": "選項「矩形」不符合題意；依菱形定義。應得到「菱形」，此錯誤常源自：誤以為四邊等長必有直角。"
+      },
+      {
+        "choice": "梯形",
+        "truth": false,
+        "reason": "選項「梯形」不符合題意；依菱形定義。應得到「菱形」，此錯誤常源自：誤以為四邊等長必有直角。"
+      },
+      {
+        "choice": "一般四邊形但無專名",
+        "truth": false,
+        "reason": "選項「一般四邊形但無專名」不符合題意；依菱形定義。應得到「菱形」，此錯誤常源自：誤以為四邊等長必有直角。"
+      },
+      {
+        "choice": "菱形",
+        "truth": true,
+        "reason": "依獨立重算「菱形是四邊等長的平行四邊形。」，此選項正確回答所求。"
+      }
+    ],
+    "misconceptionTarget": "誤以為四邊等長必有直角。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「依邊條件分類。」；四個選項互異，只有菱形符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "直接定義題。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v002-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "c1c572af912cbdbdb0b7bfd409b216999571b5ba7cc91c1b57d2d056958bceda"
+  },
+  {
+    "questionId": "u17-s011-v003",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "basic",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "同時是矩形與菱形的四邊形必為何者？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "由兩組性質判定正方形。",
+    "choices": [
+      "正方形",
+      "梯形",
+      "一般平行四邊形",
+      "風箏形"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "重新依題目條件計算：同時四角為90°且四邊等長，就是正方形。",
+    "explanation": "同時四角為90°且四邊等長，就是正方形。",
+    "steps": [
+      "同時四角為90°且四邊等長，就是正方形。",
+      "因此選擇「正方形」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "正方形",
+        "truth": true,
+        "reason": "依獨立重算「同時四角為90°且四邊等長，就是正方形。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "梯形",
+        "truth": false,
+        "reason": "選項「梯形」不符合題意；依正方形包含關係。應得到「正方形」，此錯誤常源自：把類別視為互斥。"
+      },
+      {
+        "choice": "一般平行四邊形",
+        "truth": false,
+        "reason": "選項「一般平行四邊形」不符合題意；依正方形包含關係。應得到「正方形」，此錯誤常源自：把類別視為互斥。"
+      },
+      {
+        "choice": "風箏形",
+        "truth": false,
+        "reason": "選項「風箏形」不符合題意；依正方形包含關係。應得到「正方形」，此錯誤常源自：把類別視為互斥。"
+      }
+    ],
+    "misconceptionTarget": "把類別視為互斥。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「由兩組性質判定正方形。」；四個選項互異，只有正方形符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "基本分類整合。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v003-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "7e01665d2cf94f17f84ca347270ebcf0af667d0de3304cc184c67581cfbda51c"
+  },
+  {
+    "questionId": "u17-s011-v004",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "standard",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "關於特殊四邊形的包含關係，下列敘述何者正確？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "判斷包含命題。",
+    "choices": [
+      "每個矩形都是正方形",
+      "每個正方形都是矩形",
+      "每個菱形都有四個直角",
+      "每個梯形都有兩組對邊平行"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "重新依題目條件計算：正方形符合矩形四角皆90°的定義。",
+    "explanation": "正方形符合矩形四角皆90°的定義。",
+    "steps": [
+      "正方形符合矩形四角皆90°的定義。",
+      "因此選擇「每個正方形都是矩形」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "每個矩形都是正方形",
+        "truth": false,
+        "reason": "選項「每個矩形都是正方形」不符合題意；依類別包含關係。應得到「每個正方形都是矩形」，此錯誤常源自：把充分條件反向使用。"
+      },
+      {
+        "choice": "每個正方形都是矩形",
+        "truth": true,
+        "reason": "依獨立重算「正方形符合矩形四角皆90°的定義。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "每個菱形都有四個直角",
+        "truth": false,
+        "reason": "選項「每個菱形都有四個直角」不符合題意；依類別包含關係。應得到「每個正方形都是矩形」，此錯誤常源自：把充分條件反向使用。"
+      },
+      {
+        "choice": "每個梯形都有兩組對邊平行",
+        "truth": false,
+        "reason": "選項「每個梯形都有兩組對邊平行」不符合題意；依類別包含關係。應得到「每個正方形都是矩形」，此錯誤常源自：把充分條件反向使用。"
+      }
+    ],
+    "misconceptionTarget": "把充分條件反向使用。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「判斷包含命題。」；四個選項互異，只有每個正方形都是矩形符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需辨認單向包含。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v004-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "33ae27095c9690256497c53fe96bd37371cab0bbe0e205b11e31dd93cfe5f5d8"
+  },
+  {
+    "questionId": "u17-s011-v005",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "standard",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一個平行四邊形有一個角為90°，它必為何者？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "由附加直角分類。",
+    "choices": [
+      "菱形",
+      "梯形但非平行四邊形",
+      "正方形",
+      "矩形"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "重新依題目條件計算：平行四邊形鄰角互補、對角相等，一角90°會使四角皆90°，故為矩形；邊未必全等。",
+    "explanation": "平行四邊形鄰角互補、對角相等，一角90°會使四角皆90°，故為矩形；邊未必全等。",
+    "steps": [
+      "平行四邊形鄰角互補、對角相等，一角90°會使四角皆90°，故為矩形；邊未必全等。",
+      "因此選擇「矩形」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "菱形",
+        "truth": false,
+        "reason": "選項「菱形」不符合題意；依矩形判定。應得到「矩形」，此錯誤常源自：過度判定為正方形。"
+      },
+      {
+        "choice": "梯形但非平行四邊形",
+        "truth": false,
+        "reason": "選項「梯形但非平行四邊形」不符合題意；依矩形判定。應得到「矩形」，此錯誤常源自：過度判定為正方形。"
+      },
+      {
+        "choice": "正方形",
+        "truth": false,
+        "reason": "選項「正方形」不符合題意；依矩形判定。應得到「矩形」，此錯誤常源自：過度判定為正方形。"
+      },
+      {
+        "choice": "矩形",
+        "truth": true,
+        "reason": "依獨立重算「平行四邊形鄰角互補、對角相等，一角90°會使四角皆90°，故為矩形；邊未必全等。」，此選項正確回答所求。"
+      }
+    ],
+    "misconceptionTarget": "過度判定為正方形。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「由附加直角分類。」；四個選項互異，只有矩形符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需用平行四邊形角性質。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v005-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "1a239c2bfa7c00c4f3339a0eba264f7ceda2f8d5c13b90f021b93eb09fa3d92c"
+  },
+  {
+    "questionId": "u17-s011-v006",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "standard",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一個平行四邊形有一組相鄰邊等長，它必為何者？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "由附加邊長條件分類。",
+    "choices": [
+      "菱形",
+      "矩形",
+      "梯形",
+      "只能是正方形"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "重新依題目條件計算：平行四邊形對邊等長，再加鄰邊等長，四邊皆等長，故為菱形。",
+    "explanation": "平行四邊形對邊等長，再加鄰邊等長，四邊皆等長，故為菱形。",
+    "steps": [
+      "平行四邊形對邊等長，再加鄰邊等長，四邊皆等長，故為菱形。",
+      "因此選擇「菱形」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "菱形",
+        "truth": true,
+        "reason": "依獨立重算「平行四邊形對邊等長，再加鄰邊等長，四邊皆等長，故為菱形。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "矩形",
+        "truth": false,
+        "reason": "選項「矩形」不符合題意；依菱形判定。應得到「菱形」，此錯誤常源自：以鄰邊等長誤判矩形。"
+      },
+      {
+        "choice": "梯形",
+        "truth": false,
+        "reason": "選項「梯形」不符合題意；依菱形判定。應得到「菱形」，此錯誤常源自：以鄰邊等長誤判矩形。"
+      },
+      {
+        "choice": "只能是正方形",
+        "truth": false,
+        "reason": "選項「只能是正方形」不符合題意；依菱形判定。應得到「菱形」，此錯誤常源自：以鄰邊等長誤判矩形。"
+      }
+    ],
+    "misconceptionTarget": "以鄰邊等長誤判矩形。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「由附加邊長條件分類。」；四個選項互異，只有菱形符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需串聯對邊等長。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v006-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "e97c9938d7001bca86db2fc91780e5f3449b0f48e972a90e411b2ca75307012d"
+  },
+  {
+    "questionId": "u17-s011-v007",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "advanced",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪個條件不能單獨保證平行四邊形是正方形？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "辨認不足條件。",
+    "choices": [
+      "一角90°且一組鄰邊等長",
+      "對角線等長",
+      "同時是矩形與菱形",
+      "四邊等長且一角90°"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "重新依題目條件計算：對角線等長只能保證其為矩形，未必四邊等長。",
+    "explanation": "對角線等長只能保證其為矩形，未必四邊等長。",
+    "steps": [
+      "對角線等長只能保證其為矩形，未必四邊等長。",
+      "因此選擇「對角線等長」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "一角90°且一組鄰邊等長",
+        "truth": false,
+        "reason": "選項「一角90°且一組鄰邊等長」不符合題意；依正方形需要矩形與菱形條件。應得到「對角線等長」，此錯誤常源自：把矩形判定當正方形判定。"
+      },
+      {
+        "choice": "對角線等長",
+        "truth": true,
+        "reason": "依獨立重算「對角線等長只能保證其為矩形，未必四邊等長。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "同時是矩形與菱形",
+        "truth": false,
+        "reason": "選項「同時是矩形與菱形」不符合題意；依正方形需要矩形與菱形條件。應得到「對角線等長」，此錯誤常源自：把矩形判定當正方形判定。"
+      },
+      {
+        "choice": "四邊等長且一角90°",
+        "truth": false,
+        "reason": "選項「四邊等長且一角90°」不符合題意；依正方形需要矩形與菱形條件。應得到「對角線等長」，此錯誤常源自：把矩形判定當正方形判定。"
+      }
+    ],
+    "misconceptionTarget": "把矩形判定當正方形判定。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「辨認不足條件。」；四個選項互異，只有對角線等長符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "比較多組充分條件。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v007-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "ab73c8c9aed62c8a524f9567e280a23a658d9c385cc211c2042aec63aa4d2944"
+  },
+  {
+    "questionId": "u17-s011-v008",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "advanced",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一個四邊形有四個直角，長為8、寬為5。它最精確的分類是？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "從尺寸與角度分類。",
+    "choices": [
+      "正方形",
+      "菱形但不是矩形",
+      "矩形但不是正方形",
+      "只能稱平行四邊形"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "重新依題目條件計算：四個直角使其為矩形；相鄰邊8與5不等，所以不是正方形。",
+    "explanation": "四個直角使其為矩形；相鄰邊8與5不等，所以不是正方形。",
+    "steps": [
+      "四個直角使其為矩形；相鄰邊8與5不等，所以不是正方形。",
+      "因此選擇「矩形但不是正方形」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "正方形",
+        "truth": false,
+        "reason": "選項「正方形」不符合題意；依精確分類與排除。應得到「矩形但不是正方形」，此錯誤常源自：只看四直角就判正方形。"
+      },
+      {
+        "choice": "菱形但不是矩形",
+        "truth": false,
+        "reason": "選項「菱形但不是矩形」不符合題意；依精確分類與排除。應得到「矩形但不是正方形」，此錯誤常源自：只看四直角就判正方形。"
+      },
+      {
+        "choice": "矩形但不是正方形",
+        "truth": true,
+        "reason": "依獨立重算「四個直角使其為矩形；相鄰邊8與5不等，所以不是正方形。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "只能稱平行四邊形",
+        "truth": false,
+        "reason": "選項「只能稱平行四邊形」不符合題意；依精確分類與排除。應得到「矩形但不是正方形」，此錯誤常源自：只看四直角就判正方形。"
+      }
+    ],
+    "misconceptionTarget": "只看四直角就判正方形。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「從尺寸與角度分類。」；四個選項互異，只有矩形但不是正方形符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需同時確認成立與不成立類別。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v008-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "185e52655d1b312995833b9881637cd3e705604760957b54277c728079c08f01"
+  },
+  {
+    "questionId": "u17-s011-v009",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "advanced",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某四邊形四邊等長，且一個內角為60°。最精確分類為何？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "由邊與角精確分類。",
+    "choices": [
+      "菱形但不是正方形",
+      "矩形",
+      "正方形",
+      "一般梯形而非平行四邊形"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "重新依題目條件計算：四邊等長的四邊形在本課條件下為菱形；角60°不是直角，所以不是正方形。",
+    "explanation": "四邊等長的四邊形在本課條件下為菱形；角60°不是直角，所以不是正方形。",
+    "steps": [
+      "四邊等長的四邊形在本課條件下為菱形；角60°不是直角，所以不是正方形。",
+      "因此選擇「菱形但不是正方形」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "菱形但不是正方形",
+        "truth": true,
+        "reason": "依獨立重算「四邊等長的四邊形在本課條件下為菱形；角60°不是直角，所以不是正方形。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "矩形",
+        "truth": false,
+        "reason": "選項「矩形」不符合題意；依菱形與正方形區別。應得到「菱形但不是正方形」，此錯誤常源自：認為四邊等長就是正方形。"
+      },
+      {
+        "choice": "正方形",
+        "truth": false,
+        "reason": "選項「正方形」不符合題意；依菱形與正方形區別。應得到「菱形但不是正方形」，此錯誤常源自：認為四邊等長就是正方形。"
+      },
+      {
+        "choice": "一般梯形而非平行四邊形",
+        "truth": false,
+        "reason": "選項「一般梯形而非平行四邊形」不符合題意；依菱形與正方形區別。應得到「菱形但不是正方形」，此錯誤常源自：認為四邊等長就是正方形。"
+      }
+    ],
+    "misconceptionTarget": "認為四邊等長就是正方形。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「由邊與角精確分類。」；四個選項互異，只有菱形但不是正方形符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需排除直角條件。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v009-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "47f1664b0f3dc84b9908dac823f6744cb407bbbaf76d786315fb899d4a81476c"
+  },
+  {
+    "questionId": "u17-s011-v010",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "literacy",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "產品標籤要求「四邊等長且四角皆90°」。應選哪種裁切模板？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "將文字規格轉成圖形類別。",
+    "choices": [
+      "矩形但非正方形",
+      "正方形",
+      "菱形但非正方形",
+      "任意平行四邊形"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "重新依題目條件計算：兩組條件同時成立即正方形。",
+    "explanation": "兩組條件同時成立即正方形。",
+    "steps": [
+      "兩組條件同時成立即正方形。",
+      "因此選擇「正方形」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "矩形但非正方形",
+        "truth": false,
+        "reason": "選項「矩形但非正方形」不符合題意；依規格條件分類。應得到「正方形」，此錯誤常源自：只採其中一組條件。"
+      },
+      {
+        "choice": "正方形",
+        "truth": true,
+        "reason": "依獨立重算「兩組條件同時成立即正方形。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "菱形但非正方形",
+        "truth": false,
+        "reason": "選項「菱形但非正方形」不符合題意；依規格條件分類。應得到「正方形」，此錯誤常源自：只採其中一組條件。"
+      },
+      {
+        "choice": "任意平行四邊形",
+        "truth": false,
+        "reason": "選項「任意平行四邊形」不符合題意；依規格條件分類。應得到「正方形」，此錯誤常源自：只採其中一組條件。"
+      }
+    ],
+    "misconceptionTarget": "只採其中一組條件。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 120,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「將文字規格轉成圖形類別。」；四個選項互異，只有正方形符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "情境資料同時限制邊與角。",
+    "literacyContextNecessity": "標籤模板必須同時滿足等邊與直角，生活條件不可刪除。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v010-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "d0a52ca5a3965407275b31c15fbdcfaf96790e54251a69bd0acd334bfa939efd"
+  },
+  {
+    "questionId": "u17-s011-v011",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "literacy",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "建築圖標示一扇窗四角皆為直角，兩條相鄰邊分別1.2公尺與1.8公尺。下列描述何者正確？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "依建築尺寸精確分類。",
+    "choices": [
+      "它是菱形且不是矩形",
+      "它是正方形",
+      "它是矩形且不是正方形",
+      "無法判定是否為矩形"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "重新依題目條件計算：四角直角確定為矩形；相鄰邊不等排除正方形。",
+    "explanation": "四角直角確定為矩形；相鄰邊不等排除正方形。",
+    "steps": [
+      "四角直角確定為矩形；相鄰邊不等排除正方形。",
+      "因此選擇「它是矩形且不是正方形」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "它是菱形且不是矩形",
+        "truth": false,
+        "reason": "選項「它是菱形且不是矩形」不符合題意；依圖面分類。應得到「它是矩形且不是正方形」，此錯誤常源自：忽略尺寸差異。"
+      },
+      {
+        "choice": "它是正方形",
+        "truth": false,
+        "reason": "選項「它是正方形」不符合題意；依圖面分類。應得到「它是矩形且不是正方形」，此錯誤常源自：忽略尺寸差異。"
+      },
+      {
+        "choice": "它是矩形且不是正方形",
+        "truth": true,
+        "reason": "依獨立重算「四角直角確定為矩形；相鄰邊不等排除正方形。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "無法判定是否為矩形",
+        "truth": false,
+        "reason": "選項「無法判定是否為矩形」不符合題意；依圖面分類。應得到「它是矩形且不是正方形」，此錯誤常源自：忽略尺寸差異。"
+      }
+    ],
+    "misconceptionTarget": "忽略尺寸差異。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 120,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「依建築尺寸精確分類。」；四個選項互異，只有它是矩形且不是正方形符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需結合角與邊。",
+    "literacyContextNecessity": "窗型分類影響後續面積與材料計算。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v011-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "c9f96517a49d673186dff6b521a4a2ff35688cef99cd8d342cc9bdebc5746851"
+  },
+  {
+    "questionId": "u17-s011-v012",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "literacy",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "分類系統採「梯形為至少一組對邊平行的四邊形」。在此約定下，正方形是否也是梯形？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "依明示定義判斷類別。",
+    "choices": [
+      "否，梯形只能有一組對邊平行",
+      "否，正方形沒有平行邊",
+      "只有旋轉後才是",
+      "是，因它至少有一組對邊平行"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "重新依題目條件計算：正方形有兩組對邊平行，當然滿足「至少一組」的廣義梯形定義。",
+    "explanation": "正方形有兩組對邊平行，當然滿足「至少一組」的廣義梯形定義。",
+    "steps": [
+      "正方形有兩組對邊平行，當然滿足「至少一組」的廣義梯形定義。",
+      "因此選擇「是，因它至少有一組對邊平行」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "否，梯形只能有一組對邊平行",
+        "truth": false,
+        "reason": "選項「否，梯形只能有一組對邊平行」不符合題意；依定義約定與包含關係。應得到「是，因它至少有一組對邊平行」，此錯誤常源自：套用「恰一組」的另一種定義。"
+      },
+      {
+        "choice": "否，正方形沒有平行邊",
+        "truth": false,
+        "reason": "選項「否，正方形沒有平行邊」不符合題意；依定義約定與包含關係。應得到「是，因它至少有一組對邊平行」，此錯誤常源自：套用「恰一組」的另一種定義。"
+      },
+      {
+        "choice": "只有旋轉後才是",
+        "truth": false,
+        "reason": "選項「只有旋轉後才是」不符合題意；依定義約定與包含關係。應得到「是，因它至少有一組對邊平行」，此錯誤常源自：套用「恰一組」的另一種定義。"
+      },
+      {
+        "choice": "是，因它至少有一組對邊平行",
+        "truth": true,
+        "reason": "依獨立重算「正方形有兩組對邊平行，當然滿足「至少一組」的廣義梯形定義。」，此選項正確回答所求。"
+      }
+    ],
+    "misconceptionTarget": "套用「恰一組」的另一種定義。",
+    "prerequisiteCheck": "只使用先備技能parallel-lines-distance與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 120,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「依明示定義判斷類別。」；四個選項互異，只有是，因它至少有一組對邊平行符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需注意題目採用的分類約定。",
+    "literacyContextNecessity": "分類資料庫的定義會直接改變標籤結果。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s011-v012-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "ff803b0354e028e62a0dfe6a65f39e0be0c7be52d242a388e3bdb1e86056a6eb"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u17-s011-cr001",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "prompt": "依包含關係說明為何正方形同時是矩形、菱形與平行四邊形，並各寫一項符合的定義條件。",
+    "requiredWork": [
+      "三種類別都要說明",
+      "使用定義而非外觀",
+      "指出包含關係"
+    ],
+    "standardSolution": [
+      "正方形四角皆90°，所以是矩形。",
+      "正方形四邊等長，所以是菱形。",
+      "正方形兩組對邊分別平行，所以是平行四邊形。"
+    ],
+    "alternativeMethods": [
+      [
+        "可先說正方形同時是矩形與菱形，而兩者都屬平行四邊形。"
+      ]
+    ],
+    "reasoningSteps": [
+      "正方形四角皆90°，所以是矩形。",
+      "正方形四邊等長，所以是菱形。",
+      "正方形兩組對邊分別平行，所以是平行四邊形。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完整處理「類別包含與定義」，列式、理由與結果「正方形屬於三種類別」均正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "主要方法與幾何性質正確，且已得到大部分「正方形屬於三種類別」；僅有一處算術、單位或理由缺漏。"
+      },
+      {
+        "score": 1,
+        "criteria": "能指出本題應使用的核心性質並完成至少一個有效步驟，但尚未正確完成「類別包含與定義」。"
+      },
+      {
+        "score": 0,
+        "criteria": "未使用與「特殊四邊形」相關的有效條件，或答案與推理均無法支持「正方形屬於三種類別」。"
+      }
+    ],
+    "partialCreditRules": [
+      "正確列出本題關鍵關係但算術未完成，可依完成程度給1至2分。",
+      "只得到部分結果時，必須有可辨認的「類別包含與定義」推理才給分。"
+    ],
+    "followThroughPolicy": "若前段只有單一算術錯誤，後續依其結果正確推理可保留相應方法分。",
+    "unitNotationRules": "角度以度表示，長度與面積保留題目單位。",
+    "answerOnlyPolicy": "只有最終答案而無題目要求的列式或理由，最高1分；證明題只寫結論不得分。",
+    "visualMode": "figure-supported",
+    "figureId": "u17-s011-fig001",
+    "drawingSpecRef": "units/u17/s011/drawing-specs.jsonl#u17-s011-fig001",
+    "independentReview": {
+      "derivedResult": "正方形屬於三種類別",
+      "recalculation": "正方形四角皆90°，所以是矩形。；正方形四邊等長，所以是菱形。；正方形兩組對邊分別平行，所以是平行四邊形。",
+      "ambiguity": "所求量與評分焦點「類別包含與定義」明確；替代方法不改變標準結果。",
+      "decision": "pass"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "5bb6273aba9eb154be137b3ed5efe2271194043134f815f8272d18effac861b7"
+  },
+  {
+    "questionId": "u17-s011-cr002",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "prompt": "一個平行四邊形有一角90°且AB=BC。請逐步判定它的最精確類別。",
+    "requiredWork": [
+      "先由直角判矩形",
+      "由鄰邊等長判菱形",
+      "綜合為正方形"
+    ],
+    "standardSolution": [
+      "平行四邊形有一角90°，故為矩形。",
+      "平行四邊形有一組鄰邊等長，故四邊等長，是菱形。",
+      "同時為矩形與菱形，所以是正方形。"
+    ],
+    "alternativeMethods": [
+      [
+        "可直接由四角90°與四邊等長下正方形結論，但需補出如何得到這些性質。"
+      ]
+    ],
+    "reasoningSteps": [
+      "平行四邊形有一角90°，故為矩形。",
+      "平行四邊形有一組鄰邊等長，故四邊等長，是菱形。",
+      "同時為矩形與菱形，所以是正方形。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完整處理「多重判定」，列式、理由與結果「正方形」均正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "主要方法與幾何性質正確，且已得到大部分「正方形」；僅有一處算術、單位或理由缺漏。"
+      },
+      {
+        "score": 1,
+        "criteria": "能指出本題應使用的核心性質並完成至少一個有效步驟，但尚未正確完成「多重判定」。"
+      },
+      {
+        "score": 0,
+        "criteria": "未使用與「特殊四邊形」相關的有效條件，或答案與推理均無法支持「正方形」。"
+      }
+    ],
+    "partialCreditRules": [
+      "正確列出本題關鍵關係但算術未完成，可依完成程度給1至2分。",
+      "只得到部分結果時，必須有可辨認的「多重判定」推理才給分。"
+    ],
+    "followThroughPolicy": "若前段只有單一算術錯誤，後續依其結果正確推理可保留相應方法分。",
+    "unitNotationRules": "角度以度表示，長度與面積保留題目單位。",
+    "answerOnlyPolicy": "只有最終答案而無題目要求的列式或理由，最高1分；證明題只寫結論不得分。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "independentReview": {
+      "derivedResult": "正方形",
+      "recalculation": "平行四邊形有一角90°，故為矩形。；平行四邊形有一組鄰邊等長，故四邊等長，是菱形。；同時為矩形與菱形，所以是正方形。",
+      "ambiguity": "所求量與評分焦點「多重判定」明確；替代方法不改變標準結果。",
+      "decision": "pass"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "b8d12964a9f5c95e97227acea771e46d02ef62c227e8499c5e4be36a8dbbf14a"
+  }
+];
+
+export const DRAWING_SPECS = [
+  {
+    "figureId": "u17-s011-fig001",
+    "unitId": "u17",
+    "topicId": "u17-quadrilaterals",
+    "skillId": "special-quadrilateral",
+    "purpose": "支援「特殊四邊形」的空間位置、性質或證明閱讀，不提供題目答案。",
+    "svgPath": "figures/u17/u17-s011-fig001.svg",
+    "canvas": {
+      "width": 400,
+      "height": 300,
+      "viewBox": "0 0 400 300"
+    },
+    "drawingSpec": {
+      "title": "特殊四邊形包含關係",
+      "description": "以巢狀框與交集表示平行四邊形包含矩形和菱形，正方形位於兩者交集。",
+      "coordinateSystem": "SVG user space, origin at upper-left",
+      "layoutConstraints": "主要線段與文字保留至少20單位邊界；標籤不得遮住交點與角弧。",
+      "visibleLineRule": "實線表示題目已知邊或直線。",
+      "hiddenLineRule": "本平面幾何圖無隱藏線；輔助垂線可用虛線。",
+      "labels": "所有字母、角度、等式與關係均按本技能專屬配置。",
+      "tickMarks": "等長、平行、直角只在數學上需要時標示。",
+      "units": "示意圖不直接量長；數值單位由題幹提供。",
+      "arrowsAndSymbols": "平行箭頭、直角記號或角弧依技能使用。",
+      "scale": "not-to-scale",
+      "scaleWarning": "圖形不一定按比例，禁止以目測長短或角度作答。"
+    },
+    "altText": "以巢狀框與交集表示平行四邊形包含矩形和菱形，正方形位於兩者交集。 圖形不一定按比例。",
+    "svgTitle": "特殊四邊形包含關係",
+    "svgDesc": "以巢狀框與交集表示平行四邊形包含矩形和菱形，正方形位於兩者交集。",
+    "mobileReadability": "400×300檢視下主要線條、交點與核心文字仍可辨識；長句置於空白區。",
+    "answerLeakageReview": "圖只呈現定義結構或已知關係，不標示任何題目未給的未知答案。",
+    "svgAssertions": [
+      "平行四邊形",
+      "矩形",
+      "菱形",
+      "正方形",
+      "role=\"img\"",
+      "<title",
+      "<desc"
+    ],
+    "figureReview": {
+      "decision": "pass",
+      "manualRenderedInspection": true,
+      "reviewNote": "已渲染檢查特殊四邊形包含關係：線段未被裁切，文字未遮住核心交點，且不按比例警告已置於desc。"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "contentSha256": "8b3901d5ee1545a305e4ddebd46b5ff7fff67934a1635add967dea01bef9a64a"
+  }
+];

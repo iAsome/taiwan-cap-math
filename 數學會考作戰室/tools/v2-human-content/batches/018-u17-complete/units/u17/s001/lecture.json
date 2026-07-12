@@ -1,0 +1,236 @@
+{
+  "lectureId": "u17-s001-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallel-angle",
+  "lockedTitle": "平行線截角",
+  "title": "平行線截角：先認位置，再決定相等或互補",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "本技能為本單元起點，從兩直線相交與角的基本概念開始。",
+  "learningOutcomes": [
+    "辨認截線與兩條被截直線",
+    "用對頂角、鄰補角與平行線角關係求角",
+    "不靠圖形外觀判斷平行"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    {
+      "term": "截線",
+      "definition": "同時與兩條直線相交的直線"
+    },
+    {
+      "term": "內角",
+      "definition": "位在兩條直線之間的角"
+    },
+    {
+      "term": "外角",
+      "definition": "位在兩條直線外側的角"
+    },
+    {
+      "term": "鄰補角",
+      "definition": "共用一邊且另兩邊成一直線，和為180°"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "一條截線穿過兩條直線時會形成八個角。先分清交點、內外與截線兩側，再套用關係。",
+    "只有題目給出平行或可先證明平行時，內錯角與同位角相等、同側內角互補才成立。",
+    "同一交點的對頂角相等，鄰補角和為180°，這兩條規則不需要平行條件。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "截線",
+      "statement": "同時與兩條直線相交的直線"
+    },
+    {
+      "name": "內角",
+      "statement": "位在兩條直線之間的角"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "對頂角相等",
+      "conditions": [
+        "兩直線相交時"
+      ],
+      "meaning": "用於平行線截角中符合條件的推理或計算。"
+    },
+    {
+      "formula": "鄰補角和為180°",
+      "conditions": [
+        "兩角共用一邊且其餘兩邊成一直線"
+      ],
+      "meaning": "用於平行線截角中符合條件的推理或計算。"
+    },
+    {
+      "formula": "內錯角相等、同位角相等、同側內角和180°",
+      "conditions": [
+        "兩被截直線平行"
+      ],
+      "meaning": "用於平行線截角中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出兩條直線與截線",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "先用對頂角或鄰補角整理同一交點",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "確認平行條件",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "依位置選內錯角、同位角或同側內角",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "代回檢查角度介於0°與180°",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "已知一個銳角為65°，求其對頂角",
+      "solutionSteps": [
+        "對頂角相等，所以為65°。"
+      ],
+      "answer": "對頂角相等，所以為65°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "已知鄰補角之一為112°",
+      "solutionSteps": [
+        "另一角為180°-112°=68°。"
+      ],
+      "answer": "另一角為180°-112°=68°。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩平行線被截，某內錯角為47°",
+      "solutionSteps": [
+        "其內錯角為47°。"
+      ],
+      "answer": "其內錯角為47°。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩平行線被截，同側內角之一為123°",
+      "solutionSteps": [
+        "另一角為57°。"
+      ],
+      "answer": "另一角為57°。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到Z形就直接判相等",
+      "why": "若兩線未證明平行，Z形外觀不能當理由",
+      "correction": "若兩線未證明平行，Z形外觀不能當理由"
+    },
+    {
+      "mistake": "把鄰補角說成相等",
+      "why": "鄰補角通常不相等，而是和為180°",
+      "correction": "鄰補角通常不相等，而是和為180°"
+    },
+    {
+      "mistake": "忽略角的位置",
+      "why": "先辨認內外與截線兩側",
+      "correction": "先辨認內外與截線兩側"
+    },
+    {
+      "mistake": "把銳角算成大於180°",
+      "why": "單一平面角應介於0°與180°",
+      "correction": "單一平面角應介於0°與180°"
+    },
+    {
+      "mistake": "只看圖的傾斜程度",
+      "why": "示意圖不一定按比例",
+      "correction": "示意圖不一定按比例"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「平行線截角」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "一條截線穿過兩條直線時會形成八個角。先分清交點、內外與截線兩側，再套用關係。",
+    "對頂角相等",
+    "解題時先確認「兩直線相交時」。"
+  ],
+  "connections": {
+    "previous": "本單元起點。",
+    "next": "下一技能依鎖定順序為parallel-properties。"
+  },
+  "figureReferences": [
+    "u17-s001-fig001"
+  ],
+  "figureAccessibility": "兩條水平平行線被斜截線穿過，標示一個68度角、其對頂角、內錯角與同側內角。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s001-v001",
+      "u17-s001-v002",
+      "u17-s001-v003",
+      "u17-s001-v004",
+      "u17-s001-v005",
+      "u17-s001-v006",
+      "u17-s001-v007",
+      "u17-s001-v008",
+      "u17-s001-v009",
+      "u17-s001-v010",
+      "u17-s001-v011",
+      "u17-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s001-cr001",
+      "u17-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "本講義先區分不需平行條件的交角規則，再引入需要平行條件的截角規則，避免零基礎學生把所有看似相同位置的角都判成相等。"
+  },
+  "contentSha256": "a803a35075df74055ee849a23a0d2bf4f4e118b805fc09d2f67b49804ac3fe80"
+}

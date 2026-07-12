@@ -1,0 +1,248 @@
+{
+  "lectureId": "u17-s018-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-proof",
+  "skillId": "quadrilateral-proof-basic",
+  "lockedTitle": "四邊形證明基本",
+  "title": "四邊形證明基本：用定義和判定與全等建立可靠證明",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：quadrilateral-literacy。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "依目標選擇平行四邊形或特殊四邊形判定",
+    "以全等或角關係補足條件",
+    "寫出不循環的證明"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadrilateral-literacy",
+      "requiredLevel": "能正確使用「quadrilateral-literacy」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "判定定理",
+      "definition": "由足夠條件確認圖形類型的定理"
+    },
+    {
+      "term": "充分條件",
+      "definition": "條件成立即可保證結論"
+    },
+    {
+      "term": "全等三角形",
+      "definition": "形狀與大小完全相同的三角形"
+    },
+    {
+      "term": "輔助線",
+      "definition": "為推理而新增且合法的線段"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "證明四邊形通常先問「要證成哪一類」，再倒推最容易取得的判定條件。",
+    "平行四邊形常用判定：兩組對邊分別平行、兩組對邊分別等長、一組對邊平行且等長、兩對角線互相平分。",
+    "要證矩形可在平行四邊形上再證一角90°或對角線等長；要證菱形可再證一組鄰邊等長或對角線垂直。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "判定定理",
+      "statement": "由足夠條件確認圖形類型的定理"
+    },
+    {
+      "name": "充分條件",
+      "statement": "條件成立即可保證結論"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "兩組對邊分別等長 ⇒ 平行四邊形",
+      "conditions": [
+        "四邊形頂點依序"
+      ],
+      "meaning": "用於四邊形證明基本中符合條件的推理或計算。"
+    },
+    {
+      "formula": "對角線互相平分 ⇒ 平行四邊形",
+      "conditions": [
+        "兩對角線交於同一點"
+      ],
+      "meaning": "用於四邊形證明基本中符合條件的推理或計算。"
+    },
+    {
+      "formula": "平行四邊形且一角90° ⇒ 矩形",
+      "conditions": [
+        "矩形判定"
+      ],
+      "meaning": "用於四邊形證明基本中符合條件的推理或計算。"
+    },
+    {
+      "formula": "平行四邊形且鄰邊等長 ⇒ 菱形",
+      "conditions": [
+        "菱形判定"
+      ],
+      "meaning": "用於四邊形證明基本中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "明確寫已知與待證",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "選一條判定定理作目標",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "從已知推得該定理所需條件",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "逐步寫敘述與理由",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "最後引用判定並檢查未使用結論本身",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "AB=CD且BC=AD",
+      "solutionSteps": [
+        "兩組對邊分別等長，故ABCD為平行四邊形。"
+      ],
+      "answer": "兩組對邊分別等長，故ABCD為平行四邊形。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "AO=OC且BO=OD",
+      "solutionSteps": [
+        "對角線互相平分，故為平行四邊形。"
+      ],
+      "answer": "對角線互相平分，故為平行四邊形。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "已證平行四邊形且∠A=90°",
+      "solutionSteps": [
+        "故為矩形。"
+      ],
+      "answer": "故為矩形。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "已證平行四邊形且AB=BC",
+      "solutionSteps": [
+        "故為菱形。"
+      ],
+      "answer": "故為菱形。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只列條件不說套哪個判定",
+      "why": "最後要引用明確定理",
+      "correction": "最後要引用明確定理"
+    },
+    {
+      "mistake": "用待證結論推出中間步驟",
+      "why": "形成循環論證",
+      "correction": "形成循環論證"
+    },
+    {
+      "mistake": "一組對邊等長就判平行四邊形",
+      "why": "條件不足",
+      "correction": "條件不足"
+    },
+    {
+      "mistake": "把矩形判定與性質方向混淆",
+      "why": "證明時要確認使用的是逆向充分條件",
+      "correction": "證明時要確認使用的是逆向充分條件"
+    },
+    {
+      "mistake": "全等對應邊配錯",
+      "why": "頂點順序與對應關係須一致",
+      "correction": "頂點順序與對應關係須一致"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「四邊形證明基本」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "證明四邊形通常先問「要證成哪一類」，再倒推最容易取得的判定條件。",
+    "兩組對邊分別等長 ⇒ 平行四邊形",
+    "解題時先確認「四邊形頂點依序」。"
+  ],
+  "connections": {
+    "previous": "承接quadrilateral-literacy。",
+    "next": "本單元最後技能，供跨單元整合。"
+  },
+  "figureReferences": [
+    "u17-s018-fig001"
+  ],
+  "figureAccessibility": "四邊形ABCD的兩對角線交於O，標示AO=OC、BO=OD與直角，供分階段證明使用。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s018-v001",
+      "u17-s018-v002",
+      "u17-s018-v003",
+      "u17-s018-v004",
+      "u17-s018-v005",
+      "u17-s018-v006",
+      "u17-s018-v007",
+      "u17-s018-v008",
+      "u17-s018-v009",
+      "u17-s018-v010",
+      "u17-s018-v011",
+      "u17-s018-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s018-cr001",
+      "u17-s018-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義以倒推判定條件為主軸，涵蓋平行四邊形、矩形與菱形的基礎證明，未引入高中向量或解析幾何。"
+  },
+  "contentSha256": "68bae663308a610e17188350dbd004e30211ba5065c460acb78ca2999fccd1c3"
+}

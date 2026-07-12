@@ -1,0 +1,234 @@
+{
+  "lectureId": "u17-s005-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallel-alternate-interior",
+  "lockedTitle": "內錯角",
+  "title": "內錯角：辨認Z形只是提示，平行條件才是理由",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallelogram-properties。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "正確辨認一對內錯角",
+    "運用平行時內錯角相等",
+    "用內錯角相等判定平行"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallelogram-properties",
+      "requiredLevel": "能正確使用「parallelogram-properties」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "內錯角",
+      "definition": "位在兩直線之間且分居截線兩側的一對角"
+    },
+    {
+      "term": "截線兩側",
+      "definition": "以截線為界的相反側"
+    },
+    {
+      "term": "Z形",
+      "definition": "常見辨認提示，不能取代條件"
+    },
+    {
+      "term": "逆定理",
+      "definition": "內錯角相等可判兩線平行"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "內錯角必須同時滿足「內部」與「截線異側」。",
+    "兩線平行時，內錯角相等；反過來，若一對內錯角相等，也能判定兩線平行。",
+    "Z形可以幫忙找位置，但圖若旋轉，仍應依定義判斷。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "內錯角",
+      "statement": "位在兩直線之間且分居截線兩側的一對角"
+    },
+    {
+      "name": "截線兩側",
+      "statement": "以截線為界的相反側"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a∥b ⇒ 內錯角相等",
+      "conditions": [
+        "同一截線"
+      ],
+      "meaning": "用於內錯角中符合條件的推理或計算。"
+    },
+    {
+      "formula": "內錯角相等 ⇒ a∥b",
+      "conditions": [
+        "角位置正確"
+      ],
+      "meaning": "用於內錯角中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找截線",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "圈出兩線之間的內部區域",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "在截線兩側各選一角",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "確認兩角為內錯角",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "依題意使用性質或逆性質",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "a∥b，內錯角之一38°",
+      "solutionSteps": [
+        "另一角38°。"
+      ],
+      "answer": "另一角38°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "內錯角為4x+3與6x-21",
+      "solutionSteps": [
+        "令兩者相等，得x=12。"
+      ],
+      "answer": "令兩者相等，得x=12。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "一內一外的兩角",
+      "solutionSteps": [
+        "不是內錯角。"
+      ],
+      "answer": "不是內錯角。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "內錯角相等",
+      "solutionSteps": [
+        "可判兩線平行。"
+      ],
+      "answer": "可判兩線平行。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只要在截線兩側就叫內錯角",
+      "why": "還必須都在兩線內部",
+      "correction": "還必須都在兩線內部"
+    },
+    {
+      "mistake": "平行未給定就直接令角相等",
+      "why": "需先證明平行或用逆性質作結論",
+      "correction": "需先證明平行或用逆性質作結論"
+    },
+    {
+      "mistake": "把同側內角當內錯角",
+      "why": "同側與異側不同",
+      "correction": "同側與異側不同"
+    },
+    {
+      "mistake": "依Z字朝向判斷",
+      "why": "圖可旋轉，應看位置",
+      "correction": "圖可旋轉，應看位置"
+    },
+    {
+      "mistake": "把角度相加成180°",
+      "why": "內錯角在平行時相等",
+      "correction": "內錯角在平行時相等"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「內錯角」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "內錯角必須同時滿足「內部」與「截線異側」。",
+    "a∥b ⇒ 內錯角相等",
+    "解題時先確認「同一截線」。"
+  ],
+  "connections": {
+    "previous": "承接parallelogram-properties。",
+    "next": "下一技能依鎖定順序為parallel-corresponding。"
+  },
+  "figureReferences": [
+    "u17-s005-fig001"
+  ],
+  "figureAccessibility": "兩平行線與截線構成Z形，兩個內錯角以弧線標出。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s005-v001",
+      "u17-s005-v002",
+      "u17-s005-v003",
+      "u17-s005-v004",
+      "u17-s005-v005",
+      "u17-s005-v006",
+      "u17-s005-v007",
+      "u17-s005-v008",
+      "u17-s005-v009",
+      "u17-s005-v010",
+      "u17-s005-v011",
+      "u17-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s005-cr001",
+      "u17-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義用位置定義取代圖形口訣，並並列性質與逆性質，避免學生只背Z形。"
+  },
+  "contentSha256": "a981c24d1b69a2c6ca07e87132eaf1fce68bb6bc60f8011e6ba85e9acce2fc8d"
+}

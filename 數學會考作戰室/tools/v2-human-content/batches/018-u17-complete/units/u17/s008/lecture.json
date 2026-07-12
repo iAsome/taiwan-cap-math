@@ -1,0 +1,241 @@
+{
+  "lectureId": "u17-s008-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallelogram-opposite-sides",
+  "lockedTitle": "平行四邊形對邊",
+  "title": "平行四邊形對邊：平行與等長是兩種不同資訊",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallel-consecutive-interior。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "正確配對兩組對邊",
+    "運用對邊平行與等長",
+    "由一組對邊平行且等長判定平行四邊形"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallel-consecutive-interior",
+      "requiredLevel": "能正確使用「parallel-consecutive-interior」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "對邊",
+      "definition": "不共頂點的兩條邊"
+    },
+    {
+      "term": "等長記號",
+      "definition": "相同短線表示長度相等"
+    },
+    {
+      "term": "一組對邊平行且等長",
+      "definition": "可判定四邊形為平行四邊形"
+    },
+    {
+      "term": "周長",
+      "definition": "四邊長度總和"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "在ABCD中，AB與CD是一組對邊，BC與AD是另一組。",
+    "平行四邊形的兩組對邊分別平行且分別等長。平行說方向，等長說長度，不能混為同一件事。",
+    "判定時，只要證明一組對邊同時平行且等長，就足以得到平行四邊形。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "對邊",
+      "statement": "不共頂點的兩條邊"
+    },
+    {
+      "name": "等長記號",
+      "statement": "相同短線表示長度相等"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AB=CD，BC=AD",
+      "conditions": [
+        "ABCD為平行四邊形"
+      ],
+      "meaning": "用於平行四邊形對邊中符合條件的推理或計算。"
+    },
+    {
+      "formula": "AB∥CD 且 AB=CD ⇒ ABCD為平行四邊形",
+      "conditions": [
+        "頂點依序排列"
+      ],
+      "meaning": "用於平行四邊形對邊中符合條件的推理或計算。"
+    },
+    {
+      "formula": "周長=2(AB+BC)",
+      "conditions": [
+        "相鄰邊為AB、BC"
+      ],
+      "meaning": "用於平行四邊形對邊中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "依頂點順序列出對邊",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "辨認題目給的是平行或等長",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "套用性質或判定",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "建立長度方程",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "用周長或正值檢查",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "AB=3x+1、CD=16",
+      "solutionSteps": [
+        "3x+1=16，x=5。"
+      ],
+      "answer": "3x+1=16，x=5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "AB=9、BC=6",
+      "solutionSteps": [
+        "周長30。"
+      ],
+      "answer": "周長30。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "AB∥CD且AB=CD",
+      "solutionSteps": [
+        "可判ABCD為平行四邊形。"
+      ],
+      "answer": "可判ABCD為平行四邊形。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "只有AB=CD",
+      "solutionSteps": [
+        "不足以判定。"
+      ],
+      "answer": "不足以判定。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把相鄰邊當對邊",
+      "why": "AB與BC共頂點，不是對邊",
+      "correction": "AB與BC共頂點，不是對邊"
+    },
+    {
+      "mistake": "由平行直接說長度相等",
+      "why": "需利用平行四邊形整體條件",
+      "correction": "需利用平行四邊形整體條件"
+    },
+    {
+      "mistake": "只證明一組對邊平行",
+      "why": "可能只是梯形",
+      "correction": "可能只是梯形"
+    },
+    {
+      "mistake": "周長只算AB+BC",
+      "why": "應乘2",
+      "correction": "應乘2"
+    },
+    {
+      "mistake": "解出負邊長仍接受",
+      "why": "邊長必須為正",
+      "correction": "邊長必須為正"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「平行四邊形對邊」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "在ABCD中，AB與CD是一組對邊，BC與AD是另一組。",
+    "AB=CD，BC=AD",
+    "解題時先確認「ABCD為平行四邊形」。"
+  ],
+  "connections": {
+    "previous": "承接parallel-consecutive-interior。",
+    "next": "下一技能依鎖定順序為parallelogram-diagonal。"
+  },
+  "figureReferences": [
+    "u17-s008-fig001"
+  ],
+  "figureAccessibility": "平行四邊形ABCD，AB與CD各有雙刻線，BC與AD各有單刻線。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s008-v001",
+      "u17-s008-v002",
+      "u17-s008-v003",
+      "u17-s008-v004",
+      "u17-s008-v005",
+      "u17-s008-v006",
+      "u17-s008-v007",
+      "u17-s008-v008",
+      "u17-s008-v009",
+      "u17-s008-v010",
+      "u17-s008-v011",
+      "u17-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s008-cr001",
+      "u17-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義刻意分離方向性質與長度性質，並加入一組對邊平行且等長的判定。"
+  },
+  "contentSha256": "87a81b74c4c5af1d3ae07909687cf9b82d61da4030c592eb80fbf4d6a5b2cbdc"
+}

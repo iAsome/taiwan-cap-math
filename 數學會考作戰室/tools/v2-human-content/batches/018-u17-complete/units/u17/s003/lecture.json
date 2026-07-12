@@ -1,0 +1,241 @@
+{
+  "lectureId": "u17-s003-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallel-proof-basic",
+  "lockedTitle": "平行線證明基本",
+  "title": "平行線證明基本：條件和推理與結論缺一不可",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallel-properties。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "把已知條件翻成可用角關係",
+    "選擇一條最短的平行判定鏈",
+    "用理由支持每一步"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallel-properties",
+      "requiredLevel": "能正確使用「parallel-properties」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "已知",
+      "definition": "題目直接給出的資訊"
+    },
+    {
+      "term": "待證",
+      "definition": "最後必須得到的結論"
+    },
+    {
+      "term": "推論",
+      "definition": "由已知和定理得到的新事實"
+    },
+    {
+      "term": "證明鏈",
+      "definition": "按因果順序連接的敘述與理由"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "證明不是把答案寫長，而是讓每一步都能由已知或已學定理推出。",
+    "證明兩線平行常用三條路：同位角相等、內錯角相等、同側內角互補。",
+    "若角度需先由對頂角、三角形內角和或鄰補角算出，應先完成該步，再套平行判定。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "已知",
+      "statement": "題目直接給出的資訊"
+    },
+    {
+      "name": "待證",
+      "statement": "最後必須得到的結論"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "同位角相等 ⇒ 平行",
+      "conditions": [
+        "同一截線形成"
+      ],
+      "meaning": "用於平行線證明基本中符合條件的推理或計算。"
+    },
+    {
+      "formula": "內錯角相等 ⇒ 平行",
+      "conditions": [
+        "同一截線形成"
+      ],
+      "meaning": "用於平行線證明基本中符合條件的推理或計算。"
+    },
+    {
+      "formula": "同側內角和180° ⇒ 平行",
+      "conditions": [
+        "同一截線形成"
+      ],
+      "meaning": "用於平行線證明基本中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫出已知與待證",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "找一對能連到待證的角",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "計算或證明角相等或互補",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "引用正確的平行判定",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查是否循環論證",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "已知同位角各56°",
+      "solutionSteps": [
+        "由同位角相等判兩線平行。"
+      ],
+      "answer": "由同位角相等判兩線平行。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "內錯角分別3x+5與5x-35且相等",
+      "solutionSteps": [
+        "解得x=20，再以內錯角相等判平行。"
+      ],
+      "answer": "解得x=20，再以內錯角相等判平行。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "同側內角為2x+20與4x+10且和180°",
+      "solutionSteps": [
+        "解得x=25，故兩線平行。"
+      ],
+      "answer": "解得x=25，故兩線平行。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "只知兩個角相等但非對應位置",
+      "solutionSteps": [
+        "資訊不足，不能判定。"
+      ],
+      "answer": "資訊不足，不能判定。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只寫「所以平行」不寫理由",
+      "why": "須指出使用哪一種角判定",
+      "correction": "須指出使用哪一種角判定"
+    },
+    {
+      "mistake": "先假設平行再說角相等",
+      "why": "這是循環論證",
+      "correction": "這是循環論證"
+    },
+    {
+      "mistake": "解出x後未回到幾何結論",
+      "why": "代數只是中間步驟",
+      "correction": "代數只是中間步驟"
+    },
+    {
+      "mistake": "把內錯角和寫成180°",
+      "why": "內錯角在平行時相等",
+      "correction": "內錯角在平行時相等"
+    },
+    {
+      "mistake": "使用圖上未標示的等長或垂直",
+      "why": "示意圖不能當已知",
+      "correction": "示意圖不能當已知"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「平行線證明基本」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "證明不是把答案寫長，而是讓每一步都能由已知或已學定理推出。",
+    "同位角相等 ⇒ 平行",
+    "解題時先確認「同一截線形成」。"
+  ],
+  "connections": {
+    "previous": "承接parallel-properties。",
+    "next": "下一技能依鎖定順序為parallelogram-properties。"
+  },
+  "figureReferences": [
+    "u17-s003-fig001"
+  ],
+  "figureAccessibility": "由已知角關係經計算到平行判定的四步流程框。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s003-v001",
+      "u17-s003-v002",
+      "u17-s003-v003",
+      "u17-s003-v004",
+      "u17-s003-v005",
+      "u17-s003-v006",
+      "u17-s003-v007",
+      "u17-s003-v008",
+      "u17-s003-v009",
+      "u17-s003-v010",
+      "u17-s003-v011",
+      "u17-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s003-cr001",
+      "u17-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義把證明拆成可檢查的因果鏈，並特別排除「先假設平行」的循環論證，符合本技能的基本證明邊界。"
+  },
+  "contentSha256": "de45226710dab7deaa9a0afc31c7ec70c4e7accdef7c2705ee79f012ead69f3a"
+}

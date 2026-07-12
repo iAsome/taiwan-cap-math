@@ -1,0 +1,234 @@
+{
+  "lectureId": "u17-s007-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallel-consecutive-interior",
+  "lockedTitle": "同側內角",
+  "title": "同側內角：同在內部與同在截線一側",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallel-corresponding。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "辨認同側內角",
+    "運用平行時同側內角互補",
+    "由互補判定平行"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallel-corresponding",
+      "requiredLevel": "能正確使用「parallel-corresponding」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "同側內角",
+      "definition": "位於兩直線之間且在截線同一側的一對角"
+    },
+    {
+      "term": "互補",
+      "definition": "兩角和為180°"
+    },
+    {
+      "term": "U形",
+      "definition": "常見辨認提示"
+    },
+    {
+      "term": "逆性質",
+      "definition": "同側內角互補可判平行"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "同側內角的兩個條件是內部和同側，缺一不可。",
+    "兩線平行時，同側內角和為180°；若一對同側內角和為180°，也可判兩線平行。",
+    "互補不代表兩角各90°，除非另有相等條件。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "同側內角",
+      "statement": "位於兩直線之間且在截線同一側的一對角"
+    },
+    {
+      "name": "互補",
+      "statement": "兩角和為180°"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a∥b ⇒ α+β=180°",
+      "conditions": [
+        "α、β為同側內角"
+      ],
+      "meaning": "用於同側內角中符合條件的推理或計算。"
+    },
+    {
+      "formula": "α+β=180° ⇒ a∥b",
+      "conditions": [
+        "α、β位置正確"
+      ],
+      "meaning": "用於同側內角中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確定兩線間的內部區域",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "選同一側的兩個內角",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "確認它們由同一截線形成",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "用180°建立方程",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查兩角皆介於0°與180°",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "一角124°",
+      "solutionSteps": [
+        "另一角56°。"
+      ],
+      "answer": "另一角56°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩角為3x與2x+30",
+      "solutionSteps": [
+        "3x+2x+30=180，x=30。"
+      ],
+      "answer": "3x+2x+30=180，x=30。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩角皆90°",
+      "solutionSteps": [
+        "和180°，可判平行。"
+      ],
+      "answer": "和180°，可判平行。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩角和170°",
+      "solutionSteps": [
+        "不能用此條件判平行。"
+      ],
+      "answer": "不能用此條件判平行。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把互補寫成相等",
+      "why": "互補是和180°",
+      "correction": "互補是和180°"
+    },
+    {
+      "mistake": "認為互補角一定都是90°",
+      "why": "只有相等又互補才各90°",
+      "correction": "只有相等又互補才各90°"
+    },
+    {
+      "mistake": "選到截線兩側",
+      "why": "那可能是內錯角",
+      "correction": "那可能是內錯角"
+    },
+    {
+      "mistake": "不確認內部位置",
+      "why": "外角不屬同側內角",
+      "correction": "外角不屬同側內角"
+    },
+    {
+      "mistake": "漏寫度數單位",
+      "why": "角度答案要有°",
+      "correction": "角度答案要有°"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「同側內角」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "同側內角的兩個條件是內部和同側，缺一不可。",
+    "a∥b ⇒ α+β=180°",
+    "解題時先確認「α、β為同側內角」。"
+  ],
+  "connections": {
+    "previous": "承接parallel-corresponding。",
+    "next": "下一技能依鎖定順序為parallelogram-opposite-sides。"
+  },
+  "figureReferences": [
+    "u17-s007-fig001"
+  ],
+  "figureAccessibility": "兩平行線與截線構成U形提示，內部同側兩角標示為α與β。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s007-v001",
+      "u17-s007-v002",
+      "u17-s007-v003",
+      "u17-s007-v004",
+      "u17-s007-v005",
+      "u17-s007-v006",
+      "u17-s007-v007",
+      "u17-s007-v008",
+      "u17-s007-v009",
+      "u17-s007-v010",
+      "u17-s007-v011",
+      "u17-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s007-cr001",
+      "u17-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義強調互補與相等的差別，並提供由性質到逆性質的雙向使用。"
+  },
+  "contentSha256": "2e55f1ee77e11fb9c1fb76712daaeba4c5140a03a4cbc3e99f65b0e7bfb09adc"
+}
