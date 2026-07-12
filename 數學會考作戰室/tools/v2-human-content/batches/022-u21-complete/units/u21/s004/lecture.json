@@ -1,0 +1,282 @@
+{
+  "lectureId": "u21-s004-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-graphs",
+  "skillId": "quadratic-graph-forms",
+  "lockedTitle": "圖形表徵",
+  "title": "同一個二次函數的三種語言：方程式與表格和圖形",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-graph-forms"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由方程式計算表格中的函數值。",
+    "能由表格辨認對稱與頂點線索。",
+    "能檢查一個座標點是否在指定圖形上。",
+    "能在方程式、表格和圖形之間保持同一個數學關係。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-standard-to-graph",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "先會由 y=ax² 代入求值；本節不新增更高階公式，而是練習把同一規則用三種方式表達。",
+  "glossary": [
+    {
+      "term": "方程式表徵",
+      "definition": "用符號式寫出 x 與 y 的關係。"
+    },
+    {
+      "term": "表格表徵",
+      "definition": "列出若干輸入 x 與對應輸出 y。"
+    },
+    {
+      "term": "圖形表徵",
+      "definition": "把所有符合關係的點畫在座標平面。"
+    },
+    {
+      "term": "代入檢查",
+      "definition": "把點的 x、y 放回式子，檢查等式是否成立。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "f(x)",
+      "meaning": "x 經函數規則運算後得到的值。"
+    },
+    {
+      "symbol": "(p,q) 在圖上",
+      "meaning": "必須滿足 q=f(p)。"
+    },
+    {
+      "symbol": "x→y",
+      "meaning": "輸入 x 對應到輸出 y。"
+    }
+  ],
+  "conceptNarrative": [
+    "方程式給的是完整規則；表格只列出部分輸入；圖形把所有允許輸入的對應點一起呈現。",
+    "由式子到表格時，每一列都要重新代入，不能把 x 的差直接當成 y 的差。二次函數的 y 差通常不是固定值。",
+    "由表格到圖形時，點的位置受座標刻度控制；表格中對稱的 x 值若有相同 y，透露對稱軸在中間。",
+    "判斷點是否在圖形上最可靠的方法是代入，而不是看點好像靠近曲線。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等價表徵",
+      "statement": "不同形式描述完全相同的輸入輸出關係。"
+    },
+    {
+      "name": "圖上點判準",
+      "statement": "點 (p,q) 在 y=f(x) 圖上，當且僅當 q=f(p)。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "q=f(p)",
+      "conditions": [
+        "檢查點 (p,q)"
+      ],
+      "meaning": "代入後等式成立即為圖上點。"
+    },
+    {
+      "formula": "y=a(x-h)²+k",
+      "conditions": [
+        "a≠0"
+      ],
+      "meaning": "可由選定 x 建表並畫圖。"
+    }
+  ],
+  "nonApplicableCases": [
+    "表格只列三點，不能任意補成直線。",
+    "兩個表格若 x 值不同，不能只比較 y 欄就判定同一函數。",
+    "點靠近曲線不代表在曲線上，必須符合精確方程式。",
+    "從圖形讀值時若刻度未標，不能聲稱精確座標。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認現在拿到的是式子、表格或圖。",
+      "check": "所求是另一種表徵還是某個特徵？"
+    },
+    {
+      "step": 2,
+      "instruction": "由式子建表時選靠近對稱軸的 x。",
+      "check": "是否包含頂點附近與左右成對值？"
+    },
+    {
+      "step": 3,
+      "instruction": "逐列代入並保留括號。",
+      "check": "平方、負號與常數是否算對？"
+    },
+    {
+      "step": 4,
+      "instruction": "標點後依對稱和平滑性連線。",
+      "check": "曲線是否通過每個已算點？"
+    },
+    {
+      "step": 5,
+      "instruction": "用另一個未使用的 x 值驗證。",
+      "check": "新算點是否也符合所畫趨勢？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "為 y=x²-1 建立 x=-2,-1,0,1,2 的表格。",
+      "solutionSteps": [
+        "依序平方再減 1。",
+        "得到 y=3,0,-1,0,3。"
+      ],
+      "answer": "點為 (-2,3),(-1,0),(0,-1),(1,0),(2,3)。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "點 (3,7) 是否在 y=x²-2 上？",
+      "solutionSteps": [
+        "代 x=3 得 9-2=7。",
+        "與點的 y=7 相同。"
+      ],
+      "answer": "在圖上。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "表格中 x=-4 與 x=2 時 y 相同，可能的對稱軸為何？",
+      "solutionSteps": [
+        "兩個 x 的平均為 (-4+2)/2=-1。",
+        "等高點位於 x=-1 兩側各 3。"
+      ],
+      "answer": "x=-1。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "y=-2x² 的表格中 x=1 與 x=-1 的 y 值。",
+      "solutionSteps": [
+        "兩者平方都為 1。",
+        "乘 -2 都得 -2。"
+      ],
+      "answer": "兩者皆為 -2。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "為何只用 (0,0) 與 (1,1) 不能區分 y=x 與 y=x²？",
+      "solutionSteps": [
+        "兩個函數都通過這兩點。",
+        "需再測例如 x=2，前者 y=2、後者 y=4。"
+      ],
+      "answer": "有限點可能同時符合不同規則，需用更多條件。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "代入一列或檢查單點。",
+    "standard": "完成表格並讀出對稱。",
+    "advanced": "由不完整表格排除多個候選函數。",
+    "literacy": "讀取感測資料表與軌跡圖，確認模型是否一致。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把表格相鄰 y 差當固定。",
+      "why": "誤套一次函數特徵。",
+      "correction": "二次函數應逐列代入，不假設等差。"
+    },
+    {
+      "mistake": "代負數時省略括號。",
+      "why": "平方只作用到數字而非整個負數。",
+      "correction": "寫成 (-2)²。"
+    },
+    {
+      "mistake": "圖形只連表格中的點。",
+      "why": "忽略中間還有無限多輸入。",
+      "correction": "以平滑曲線表示完整函數。"
+    },
+    {
+      "mistake": "用肉眼判斷點在曲線上。",
+      "why": "忽略圖可能非精確比例。",
+      "correction": "將座標代回方程式。"
+    },
+    {
+      "mistake": "交換表格的 x、y 欄。",
+      "why": "未確認輸入與輸出角色。",
+      "correction": "先讀欄名再標點。"
+    },
+    {
+      "mistake": "看到同高兩點就認為頂點在兩點中點。",
+      "why": "中點給的是對稱軸，不一定給頂點 y。",
+      "correction": "先求軸，再另找軸上的最低或最高點。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "點 (2,5) 是否在 y=x²+1 上？",
+      "answer": "是。"
+    },
+    {
+      "prompt": "y=-x²+3 在 x=-2 時的 y？",
+      "answer": "-1。"
+    },
+    {
+      "prompt": "等高 x=-1、5 的對稱軸？",
+      "answer": "x=2。"
+    },
+    {
+      "prompt": "表格中的五點就是全部圖形嗎？",
+      "answer": "不是。"
+    }
+  ],
+  "summary": [
+    "方程式是規則，表格是部分對應，圖形是所有對應點。",
+    "判斷圖上點要檢查 q=f(p)。",
+    "建表時選對稱軸附近且左右成對的 x 最有效。",
+    "二次函數的相鄰 y 差通常不固定。"
+  ],
+  "connections": {
+    "previous": "使用 y=ax² 的代入、對稱與寬窄知識。",
+    "next": [
+      "下一技能會專注由係數符號判斷開口方向。",
+      "之後可用頂點式更快完成三種表徵轉換。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s004-01"
+  ],
+  "accessibilityNotes": [
+    "表格與座標點使用相同字母標記，曲線旁直接標註方程式。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s004-v001",
+      "u21-s004-v002",
+      "u21-s004-v003",
+      "u21-s004-v004",
+      "u21-s004-v005",
+      "u21-s004-v006",
+      "u21-s004-v007",
+      "u21-s004-v008",
+      "u21-s004-v009",
+      "u21-s004-v010",
+      "u21-s004-v011",
+      "u21-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s004-cr001",
+      "u21-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重算 y=x²-1 的五列數值與點 (3,7) 代入，並檢查「有限點可能符合多個函數」的例子確實以 x=2 成功區分。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "0fae0f3d0604ef8d218f57bb88d06e1d5639ad58e5e51314a0303d4412d602b4"
+}

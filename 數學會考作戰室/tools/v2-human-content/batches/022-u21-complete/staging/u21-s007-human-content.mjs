@@ -1,0 +1,1864 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE={
+  "lectureId": "u21-s007-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-graphs",
+  "skillId": "quadratic-vertex-form-basic",
+  "lockedTitle": "頂點式基本",
+  "title": "讀懂 y=a(x-h)²+k：頂點式的每一個符號",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由頂點式讀出頂點、對稱軸與開口。",
+    "能由頂點與一個圖上點求 a。",
+    "能將簡單頂點式展開成一般式。",
+    "能避免把括號內符號與 h 讀反。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-axis-symmetry",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "已會由一般式或等高點求對稱軸；本節把頂點、軸與係數整合在同一個式子。",
+  "glossary": [
+    {
+      "term": "頂點式",
+      "definition": "y=a(x-h)²+k，a≠0。"
+    },
+    {
+      "term": "水平位移量 h",
+      "definition": "頂點的 x 座標，也是對稱軸的位置。"
+    },
+    {
+      "term": "垂直位移量 k",
+      "definition": "頂點的 y 座標。"
+    },
+    {
+      "term": "外係數 a",
+      "definition": "決定開口方向與寬窄。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "y=a(x-h)²+k",
+      "meaning": "頂點為 (h,k) 的二次函數。"
+    },
+    {
+      "symbol": "V(h,k)",
+      "meaning": "頂點座標。"
+    },
+    {
+      "symbol": "x=h",
+      "meaning": "對稱軸。"
+    }
+  ],
+  "conceptNarrative": [
+    "平方項 (x-h)² 最小為 0，發生在 x=h，所以頂點必在 x=h。此時 y=k。",
+    "括號中若寫 x+3，應看成 x-(-3)，故 h=-3。",
+    "a>0 時，a(x-h)²≥0，y≥k，頂點是最低點；a<0 時 y≤k，頂點是最高點。",
+    "知道頂點後，若再給一個圖上點，就能代入求 a，進而唯一確定函數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "頂點式",
+      "statement": "二次函數 y=a(x-h)²+k（a≠0），其頂點為 (h,k)、對稱軸為 x=h。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "V=(h,k)",
+      "conditions": [
+        "式子已寫成 y=a(x-h)²+k"
+      ],
+      "meaning": "直接讀頂點。"
+    },
+    {
+      "formula": "a=(y-k)/(x-h)²",
+      "conditions": [
+        "給定非頂點圖上點且 x≠h"
+      ],
+      "meaning": "由一點與頂點求 a。"
+    },
+    {
+      "formula": "a(x-h)²+k=ax²-2ahx+ah²+k",
+      "conditions": [
+        "需要展開比較係數"
+      ],
+      "meaning": "頂點式轉一般式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "若給的點就是頂點，代入後 0=0，不能由該點單獨求 a。",
+    "a=0 不構成二次函數。",
+    "不能把 y=a(x-h²)+k 誤認為頂點式。",
+    "頂點式展開時 (x-h)² 不等於 x²-h²。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把括號寫成 x-h 的樣子。",
+      "check": "若是加號，h 是否為負？"
+    },
+    {
+      "step": 2,
+      "instruction": "讀出 h、k。",
+      "check": "頂點是否寫成 (h,k)？"
+    },
+    {
+      "step": 3,
+      "instruction": "看 a 的符號與絕對值。",
+      "check": "方向與寬窄是否分開判斷？"
+    },
+    {
+      "step": 4,
+      "instruction": "需要求 a 時代入額外圖上點。",
+      "check": "點的 x 與 y 是否都代入？"
+    },
+    {
+      "step": 5,
+      "instruction": "以對稱點或展開式驗算。",
+      "check": "代回原點或給定點是否成立？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "讀取 y=2(x-3)²-5 的頂點與軸。",
+      "solutionSteps": [
+        "h=3、k=-5。",
+        "頂點 (3,-5)，軸 x=3。"
+      ],
+      "answer": "頂點 (3,-5)，對稱軸 x=3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "讀取 y=-(x+4)²+1。",
+      "solutionSteps": [
+        "x+4=x-(-4)，h=-4。",
+        "a=-1，開口向下，k=1。"
+      ],
+      "answer": "頂點 (-4,1)，軸 x=-4，開口向下。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "頂點 (2,3)，且圖過 (4,11)，求函數。",
+      "solutionSteps": [
+        "設 y=a(x-2)²+3。",
+        "11=4a+3，得 a=2。"
+      ],
+      "answer": "y=2(x-2)²+3。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "展開 y=(x-1)²-4。",
+      "solutionSteps": [
+        "(x-1)²=x²-2x+1。",
+        "再減 4 得 x²-2x-3。"
+      ],
+      "answer": "y=x²-2x-3。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "y=-3(x-2)²+8 的最大值。",
+      "solutionSteps": [
+        "a<0，頂點是最高點。",
+        "頂點 y=k=8。"
+      ],
+      "answer": "最大值 8。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "直接讀 a、h、k。",
+    "standard": "由一點求 a 或展開。",
+    "advanced": "由多項圖形條件建立頂點式。",
+    "literacy": "把最高高度與發生位置翻成 k 與 h。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "x+3 讀成 h=3。",
+      "why": "未把頂點式固定為 x-h。",
+      "correction": "x+3=x-(-3)，故 h=-3。"
+    },
+    {
+      "mistake": "頂點寫成 (k,h)。",
+      "why": "交換水平與垂直角色。",
+      "correction": "頂點固定為 (h,k)。"
+    },
+    {
+      "mistake": "a 只決定開口，不影響寬窄。",
+      "why": "忽略 |a|。",
+      "correction": "符號看方向，絕對值看寬窄。"
+    },
+    {
+      "mistake": "(x-h)² 展開漏 -2hx。",
+      "why": "錯用平方差。",
+      "correction": "套 (x-h)²=x²-2hx+h²。"
+    },
+    {
+      "mistake": "用頂點本身求 a。",
+      "why": "代入只得到 0=0。",
+      "correction": "必須使用另一個 x≠h 的圖上點。"
+    },
+    {
+      "mistake": "把 k 當 y 截距。",
+      "why": "混淆頂點高與 x=0 的值。",
+      "correction": "y 截距需代 x=0 計算。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "y=4(x+2)²-7 的頂點？",
+      "answer": "(-2,-7)。"
+    },
+    {
+      "prompt": "y=-0.5(x-6)²+9 的軸？",
+      "answer": "x=6。"
+    },
+    {
+      "prompt": "頂點 (0,1)、過 (2,9)，a？",
+      "answer": "2。"
+    },
+    {
+      "prompt": "(x+1)² 展開？",
+      "answer": "x²+2x+1。"
+    }
+  ],
+  "summary": [
+    "頂點式 y=a(x-h)²+k 直接給頂點 (h,k) 與軸 x=h。",
+    "括號內符號要反讀。",
+    "a 的符號判方向，|a| 判寬窄。",
+    "頂點加一個非頂點圖上點可求 a。"
+  ],
+  "connections": {
+    "previous": "整合對稱軸三種求法與開口判準。",
+    "next": [
+      "下一技能會用頂點式有效選點建表。",
+      "最大最小值將直接讀取 k。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s007-01"
+  ],
+  "accessibilityNotes": [
+    "圖上以箭頭分別連到 a、h、k 的幾何意義，並附文字而非單靠位置。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s007-v001",
+      "u21-s007-v002",
+      "u21-s007-v003",
+      "u21-s007-v004",
+      "u21-s007-v005",
+      "u21-s007-v006",
+      "u21-s007-v007",
+      "u21-s007-v008",
+      "u21-s007-v009",
+      "u21-s007-v010",
+      "u21-s007-v011",
+      "u21-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s007-cr001",
+      "u21-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重新代入 (4,11) 驗證 a=2，展開 (x-1)²-4 得 x²-2x-3；另核對 x+4 的 h=-4 與開口向下敘述。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "dff83424cacb03984ace1ba415e6e119f68707324c80731d478e367d14d3f1bc"
+};
+
+export const QUESTIONS=[
+  {
+    "questionId": "u21-s007-v001",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "函數 y=3(x-2)²-4 的頂點為何？",
+    "givenConditions": [
+      "式子為頂點式"
+    ],
+    "target": "由 h、k 讀頂點",
+    "text": "函數 y=3(x-2)²-4 的頂點為何？",
+    "choices": [
+      "(-2,-4)",
+      "(2,4)",
+      "(2,-4)",
+      "(3,-4)"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "令平方項為 0 得 x=2，此時 y=-4。",
+    "explanation": "頂點式 y=a(x-h)²+k 的頂點為 (h,k)，所以是 (2,-4)。",
+    "steps": [
+      "辨認 x-2 得 h=2",
+      "辨認 k=-4"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "(-2,-4)",
+        "truth": false,
+        "reason": "把括號內符號直接照讀。"
+      },
+      {
+        "choice": "(2,4)",
+        "truth": false,
+        "reason": "把式外 -4 的符號讀反。"
+      },
+      {
+        "choice": "(2,-4)",
+        "truth": true,
+        "reason": "h=2、k=-4。"
+      },
+      {
+        "choice": "(3,-4)",
+        "truth": false,
+        "reason": "把外係數 3 當 x 座標。"
+      }
+    ],
+    "misconceptionTarget": "把 a、h、k 的角色混淆",
+    "concept": "頂點式讀點",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 45,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由 h、k 讀頂點」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「把 a、h、k 的角色混淆」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "basic：直接讀頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "直接讀頂點",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "a4a5c29b1d4977eb4f14bea7c65bf1543098329a1a80b65faa0eeb1d7f9befa5"
+  },
+  {
+    "questionId": "u21-s007-v002",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "函數 y=-(x+5)²+7 的頂點為何？",
+    "givenConditions": [
+      "x+5=x-(-5)"
+    ],
+    "target": "處理括號內加號",
+    "text": "函數 y=-(x+5)²+7 的頂點為何？",
+    "choices": [
+      "(-5,7)",
+      "(5,7)",
+      "(-5,-7)",
+      "(-1,7)"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "平方項在 x=-5 時為 0，所以頂點 (-5,7)。",
+    "explanation": "使 x+5=0 的 x 是 -5；式外常數為 7。",
+    "steps": [
+      "解 x+5=0",
+      "讀 k=7"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "(-5,7)",
+        "truth": true,
+        "reason": "h=-5、k=7。"
+      },
+      {
+        "choice": "(5,7)",
+        "truth": false,
+        "reason": "未反讀水平符號。"
+      },
+      {
+        "choice": "(-5,-7)",
+        "truth": false,
+        "reason": "把 k 符號改錯。"
+      },
+      {
+        "choice": "(-1,7)",
+        "truth": false,
+        "reason": "把 a=-1 當 h。"
+      }
+    ],
+    "misconceptionTarget": "看到 +5 就寫頂點 x=5",
+    "concept": "頂點式符號反讀",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 45,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「處理括號內加號」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「看到 +5 就寫頂點 x=5」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "basic：正確讀水平位置；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "正確讀水平位置",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "83db5f768dc4228338d750074e502a5c3f1ec52e3aeb1d1d2c21b2f322ddbd91"
+  },
+  {
+    "questionId": "u21-s007-v003",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "對 y=-2(x-1)²+6，下列敘述何者正確？",
+    "givenConditions": [
+      "a=-2,h=1,k=6"
+    ],
+    "target": "同時讀取頂點、軸與開口",
+    "text": "對 y=-2(x-1)²+6，下列敘述何者正確？",
+    "choices": [
+      "頂點 (-1,6)，開口向下",
+      "頂點 (1,-6)，開口向上",
+      "對稱軸 y=1，開口向下",
+      "頂點 (1,6)，對稱軸 x=1，開口向下"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "唯一同時正確的是頂點 (1,6)、軸 x=1、向下。",
+    "explanation": "由頂點式直接讀 h=1、k=6，外係數為負。",
+    "steps": [
+      "讀三個參數",
+      "轉成圖形特徵"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "頂點 (-1,6)，開口向下",
+        "truth": false,
+        "reason": "h 應為 1。"
+      },
+      {
+        "choice": "頂點 (1,-6)，開口向上",
+        "truth": false,
+        "reason": "k 與 a 符號都讀錯。"
+      },
+      {
+        "choice": "對稱軸 y=1，開口向下",
+        "truth": false,
+        "reason": "軸應為垂直線 x=1。"
+      },
+      {
+        "choice": "頂點 (1,6)，對稱軸 x=1，開口向下",
+        "truth": true,
+        "reason": "三項分別由 h、k 與 a<0 得到。"
+      }
+    ],
+    "misconceptionTarget": "只對其中一個參數就忽略其他錯誤",
+    "concept": "頂點式綜合判讀",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「同時讀取頂點、軸與開口」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「只對其中一個參數就忽略其他錯誤」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "basic：整合 a、h、k；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "整合 a、h、k",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "74932161b8614cac5a9eff3ac5679b2456f15f148ef993d50a883645866495f3"
+  },
+  {
+    "questionId": "u21-s007-v004",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "點 P(4,y) 在 y=2(x-1)²-3 上，y 為何？",
+    "givenConditions": [
+      "x=4"
+    ],
+    "target": "代入頂點式求圖上點",
+    "text": "點 P(4,y) 在 y=2(x-1)²-3 上，y 為何？",
+    "choices": [
+      "3",
+      "15",
+      "33",
+      "21"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "f(4)=18-3=15。",
+    "explanation": "先算括號 3，再平方 9、乘 2、減 3。",
+    "steps": [
+      "4-1=3",
+      "2×3²-3=15"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "只算 4-1，漏平方與係數。"
+      },
+      {
+        "choice": "15",
+        "truth": true,
+        "reason": "2(4-1)²-3=2×9-3=15。"
+      },
+      {
+        "choice": "33",
+        "truth": false,
+        "reason": "先算 2×(4-1) 再平方，括號順序錯。"
+      },
+      {
+        "choice": "21",
+        "truth": false,
+        "reason": "算 2×9+3，常數符號錯。"
+      }
+    ],
+    "misconceptionTarget": "把 2(x-1)² 當 [2(x-1)]²",
+    "concept": "頂點式代入順序",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 65,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「代入頂點式求圖上點」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「把 2(x-1)² 當 [2(x-1)]²」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "standard：多步代入；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "多步代入",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "854cfade56a8f9e33b6ab3f6174655712075193c0d8eeada7ccd6cc15f46930b"
+  },
+  {
+    "questionId": "u21-s007-v005",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "某拋物線頂點為 (3,-2)，且開口向上，可寫成下列哪種形式？",
+    "givenConditions": [
+      "a 必為正且非零"
+    ],
+    "target": "由頂點與方向選頂點式",
+    "text": "某拋物線頂點為 (3,-2)，且開口向上，可寫成下列哪種形式？",
+    "choices": [
+      "y=2(x-3)²-2",
+      "y=-2(x-3)²-2",
+      "y=2(x+3)²-2",
+      "y=2(x-3)²+2"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "只有第一式同時給 V(3,-2) 與 a>0。",
+    "explanation": "頂點決定 x-3 與 -2，向上要求平方項外係數為正。",
+    "steps": [
+      "用頂點建立 (x-3)²-2",
+      "選正 a"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "y=2(x-3)²-2",
+        "truth": true,
+        "reason": "h=3、k=-2、a=2>0。"
+      },
+      {
+        "choice": "y=-2(x-3)²-2",
+        "truth": false,
+        "reason": "頂點正確但開口向下。"
+      },
+      {
+        "choice": "y=2(x+3)²-2",
+        "truth": false,
+        "reason": "頂點 x=-3。"
+      },
+      {
+        "choice": "y=2(x-3)²+2",
+        "truth": false,
+        "reason": "頂點 y=2。"
+      }
+    ],
+    "misconceptionTarget": "只檢查開口或只檢查頂點",
+    "concept": "由圖形條件選頂點式",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由頂點與方向選頂點式」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「只檢查開口或只檢查頂點」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "standard：從頂點建立候選式；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "從頂點建立候選式",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "c62a07f3bccc65e7c366ab292943d9f5e197525dac49992c41abe3611948ac52"
+  },
+  {
+    "questionId": "u21-s007-v006",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "將 y=(x+2)²-5 展開成一般式，結果為何？",
+    "givenConditions": [
+      "使用 (x+2)²=x²+4x+4"
+    ],
+    "target": "頂點式展開",
+    "text": "將 y=(x+2)²-5 展開成一般式，結果為何？",
+    "choices": [
+      "y=x²+4x+9",
+      "y=x²+2x-3",
+      "y=x²+4x-1",
+      "y=x²+4-5"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "一般式是 y=x²+4x-1。",
+    "explanation": "完整平方產生中間項 4x，再合併常數 4-5。",
+    "steps": [
+      "展開平方",
+      "合併常數"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "y=x²+4x+9",
+        "truth": false,
+        "reason": "把 -5 變成 +5。"
+      },
+      {
+        "choice": "y=x²+2x-3",
+        "truth": false,
+        "reason": "平方展開的中間項少一倍。"
+      },
+      {
+        "choice": "y=x²+4x-1",
+        "truth": true,
+        "reason": "x²+4x+4-5=x²+4x-1。"
+      },
+      {
+        "choice": "y=x²+4-5",
+        "truth": false,
+        "reason": "漏掉中間項 4x。"
+      }
+    ],
+    "misconceptionTarget": "把 (x+2)² 當 x²+4",
+    "concept": "完全平方展開",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 70,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「頂點式展開」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「把 (x+2)² 當 x²+4」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "standard：頂點式轉一般式；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "頂點式轉一般式",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "a0b4a392f19098c52d5a3dbad5ff1897487483f8830accf1e0fec7880a91b120"
+  },
+  {
+    "questionId": "u21-s007-v007",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "函數 y=a(x-2)²+1 通過點 (4,9)，a 為何？",
+    "givenConditions": [
+      "點不是頂點"
+    ],
+    "target": "由頂點與一點求 a",
+    "text": "函數 y=a(x-2)²+1 通過點 (4,9)，a 為何？",
+    "choices": [
+      "1",
+      "2",
+      "4",
+      "-2"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "a=(9-1)/(4-2)²=8/4=2。",
+    "explanation": "把點座標代入，先減 k，再除以水平距離平方。",
+    "steps": [
+      "建立 9=4a+1",
+      "解 4a=8"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1",
+        "truth": false,
+        "reason": "只算 9-8 或未除平方距離。"
+      },
+      {
+        "choice": "2",
+        "truth": true,
+        "reason": "9=a(2)²+1，故 8=4a，a=2。"
+      },
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "把 9-1=8 再除以 2。"
+      },
+      {
+        "choice": "-2",
+        "truth": false,
+        "reason": "符號與向上點位矛盾。"
+      }
+    ],
+    "misconceptionTarget": "用 y 差除以 x 差而非平方",
+    "concept": "由非頂點點求 a",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由頂點與一點求 a」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「用 y 差除以 x 差而非平方」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "advanced：由一點完成頂點式；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由一點完成頂點式",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "052892346bcef5a3223a71921b07b3841045ec795d278c4280a5a4a47bc66ed9"
+  },
+  {
+    "questionId": "u21-s007-v008",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "頂點為 (-1,5) 的拋物線通過 (1,-3)。其函數為何？",
+    "givenConditions": [
+      "使用 y=a(x+1)²+5"
+    ],
+    "target": "由頂點與圖上點重建函數",
+    "text": "頂點為 (-1,5) 的拋物線通過 (1,-3)。其函數為何？",
+    "choices": [
+      "y=2(x+1)²+5",
+      "y=-2(x-1)²+5",
+      "y=-8(x+1)²+5",
+      "y=-2(x+1)²+5"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "a=-2，代回 x=1 得 -8+5=-3。",
+    "explanation": "先以頂點寫 y=a(x+1)²+5，再代點求 -8=4a。",
+    "steps": [
+      "建立頂點式",
+      "代 (1,-3) 解 a"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "y=2(x+1)²+5",
+        "truth": false,
+        "reason": "代入 (1,-3) 會得 13。"
+      },
+      {
+        "choice": "y=-2(x-1)²+5",
+        "truth": false,
+        "reason": "頂點水平位置變成 1。"
+      },
+      {
+        "choice": "y=-8(x+1)²+5",
+        "truth": false,
+        "reason": "把 y 差 -8 直接當 a，漏除 4。"
+      },
+      {
+        "choice": "y=-2(x+1)²+5",
+        "truth": true,
+        "reason": "-3=4a+5，得 a=-2。"
+      }
+    ],
+    "misconceptionTarget": "把 y 差直接當外係數",
+    "concept": "由頂點和一點唯一決定函數",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由頂點與圖上點重建函數」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「把 y 差直接當外係數」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "advanced：重建完整頂點式；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "重建完整頂點式",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "e5a73fbadc9db3e5c21837ce00c3ff627b299796b2a99bef76d5946123b29255"
+  },
+  {
+    "questionId": "u21-s007-v009",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "若 y=m(x-3)²-4 通過原點，m 為何？",
+    "givenConditions": [
+      "原點 (0,0) 在圖上"
+    ],
+    "target": "用特殊點求參數",
+    "text": "若 y=m(x-3)²-4 通過原點，m 為何？",
+    "choices": [
+      "4/3",
+      "-4/9",
+      "4/9",
+      "9/4"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "m=4/9，且非零，函數仍為二次函數。",
+    "explanation": "將 x=0、y=0 代入，得到 9m=4。",
+    "steps": [
+      "代入原點",
+      "解 m=4/9"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "4/3",
+        "truth": false,
+        "reason": "把 3² 誤作 3。"
+      },
+      {
+        "choice": "-4/9",
+        "truth": false,
+        "reason": "移項符號錯誤。"
+      },
+      {
+        "choice": "4/9",
+        "truth": true,
+        "reason": "0=m(0-3)²-4=9m-4，所以 m=4/9。"
+      },
+      {
+        "choice": "9/4",
+        "truth": false,
+        "reason": "將除法倒置。"
+      }
+    ],
+    "misconceptionTarget": "把平方距離 9 寫成 3",
+    "concept": "由原點條件求參數",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「用特殊點求參數」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「把平方距離 9 寫成 3」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "advanced：參數分數求解；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "參數分數求解",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "fb4bed11bc0676dd4134c7e2e0b77a954931f380e5f5776e03e70065a761d3ec"
+  },
+  {
+    "questionId": "u21-s007-v010",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "literacy",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "水柱高度模型 h(t)=-4(t-1.5)²+12，t 為秒、h 為公尺。頂點的實際意義為何？",
+    "givenConditions": [
+      "有效時間包含 t=1.5",
+      "a<0"
+    ],
+    "target": "解釋頂點式模型中的 h、k",
+    "text": "水柱高度模型 h(t)=-4(t-1.5)²+12，t 為秒、h 為公尺。頂點的實際意義為何？",
+    "choices": [
+      "水柱在 12 秒時高 1.5 公尺",
+      "水柱在 1.5 秒時達最高 12 公尺",
+      "水柱在 1.5 秒時最低 12 公尺",
+      "水柱起始高度必為 12 公尺"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "h(t)≤12，且 t=1.5 取得 12。",
+    "explanation": "頂點式直接給時間 1.5 與高度 12；負外係數使其為最高值。",
+    "steps": [
+      "讀頂點 (1.5,12)",
+      "由 a<0 判最高"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "水柱在 12 秒時高 1.5 公尺",
+        "truth": false,
+        "reason": "交換座標與單位。"
+      },
+      {
+        "choice": "水柱在 1.5 秒時達最高 12 公尺",
+        "truth": true,
+        "reason": "a<0，頂點 (1.5,12) 是最高點。"
+      },
+      {
+        "choice": "水柱在 1.5 秒時最低 12 公尺",
+        "truth": false,
+        "reason": "向下開口頂點是最高。"
+      },
+      {
+        "choice": "水柱起始高度必為 12 公尺",
+        "truth": false,
+        "reason": "12 是頂點高度，不是 h(0)。"
+      }
+    ],
+    "misconceptionTarget": "交換 h 與 k 的物理角色",
+    "concept": "頂點式的情境語意",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 70,
+    "unitCheck": "第一座標單位秒，第二座標單位公尺。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「解釋頂點式模型中的 h、k」。",
+      "domainBoundary": "t=1.5 位於模型有效時間內。",
+      "alternateReading": "若把題目誤讀為「交換 h 與 k 的物理角色」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "literacy：解讀水柱最高點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "時間與高度單位不同，頂點兩座標必須分別解釋；水柱情境也決定向下頂點代表最高而非最低。",
+    "authoringIntent": "解讀水柱最高點",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "9360ae3a73bfb01372d518b5cf8db370ca22f6c4ee41ff7f8ca7ad0af2bd52cb"
+  },
+  {
+    "questionId": "u21-s007-v011",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "literacy",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "某攤位收益模型 R(n)=-10(n-20)²+5000，n 為每日顧客數。下列哪個敘述正確？",
+    "givenConditions": [
+      "n 為非負整數",
+      "模型適用於 0≤n≤40"
+    ],
+    "target": "由收益頂點式讀最佳數量",
+    "text": "某攤位收益模型 R(n)=-10(n-20)²+5000，n 為每日顧客數。下列哪個敘述正確？",
+    "choices": [
+      "n=-20 時收益最大",
+      "n=20 時收益最小",
+      "收益最大為 20 元",
+      "n=20 時收益最大為 5000 元"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "R(20)=5000，且其他 n 使平方項扣除非負量。",
+    "explanation": "頂點式中 h=20、k=5000，負 a 代表最大收益。",
+    "steps": [
+      "讀 h=20,k=5000",
+      "檢查 n=20 在範圍"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "n=-20 時收益最大",
+        "truth": false,
+        "reason": "括號內 n-20 對應 h=20。"
+      },
+      {
+        "choice": "n=20 時收益最小",
+        "truth": false,
+        "reason": "開口向下。"
+      },
+      {
+        "choice": "收益最大為 20 元",
+        "truth": false,
+        "reason": "20 是顧客數，不是收益。"
+      },
+      {
+        "choice": "n=20 時收益最大為 5000 元",
+        "truth": true,
+        "reason": "a=-10<0，頂點 (20,5000) 是最高點。"
+      }
+    ],
+    "misconceptionTarget": "把括號符號或座標角色讀反",
+    "concept": "收益模型最佳點",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "n 單位人，R 單位元。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由收益頂點式讀最佳數量」。",
+      "domainBoundary": "n=20 是 0 到 40 的整數。",
+      "alternateReading": "若把題目誤讀為「把括號符號或座標角色讀反」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "literacy：解讀最佳顧客數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "顧客數與收益使用不同單位，必須同時報告最佳 n 與最大金額；非負整數範圍也讓 n=20 合理。",
+    "authoringIntent": "解讀最佳顧客數",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "e44213d43e5abbe588caa16a6fdb4a834d9de9b54b85fdae951f7e8ee44876cb"
+  },
+  {
+    "questionId": "u21-s007-v012",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "literacy",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "感測器誤差模型 E(x)=0.5(x+2)²-1。誤差最低時的輸入 x 為何？",
+    "givenConditions": [
+      "a=0.5>0"
+    ],
+    "target": "由向上頂點式找最小位置",
+    "text": "感測器誤差模型 E(x)=0.5(x+2)²-1。誤差最低時的輸入 x 為何？",
+    "choices": [
+      "x=-2",
+      "x=2",
+      "x=-1",
+      "x=0.5"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "E(-2)=-1，任何其他 x 都增加非負的 0.5(x+2)²。",
+    "explanation": "向上開口的最低點在頂點，x+2=0 得 x=-2。",
+    "steps": [
+      "判斷 a>0",
+      "解 x+2=0"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "x=-2",
+        "truth": true,
+        "reason": "平方項在 x+2=0 時最小。"
+      },
+      {
+        "choice": "x=2",
+        "truth": false,
+        "reason": "括號符號未反讀。"
+      },
+      {
+        "choice": "x=-1",
+        "truth": false,
+        "reason": "把 k=-1 當輸入。"
+      },
+      {
+        "choice": "x=0.5",
+        "truth": false,
+        "reason": "把 a 當輸入位置。"
+      }
+    ],
+    "misconceptionTarget": "把最小值 -1 當 x",
+    "concept": "誤差模型最小位置",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 70,
+    "unitCheck": "題目未指定 x 的物理單位；所求為輸入值，不是誤差值。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由向上頂點式找最小位置」。",
+      "domainBoundary": "模型未另限 x，-2 是允許輸入。",
+      "alternateReading": "若把題目誤讀為「把最小值 -1 當 x」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "literacy：找校正最佳輸入；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "感測器情境區分「最低誤差值」與「發生的輸入」；題目問 x，因此不能只回答 -1。",
+    "authoringIntent": "找校正最佳輸入",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "7c2039eaf6abd883c779b8f438c2aeb1ca4e16f27baee1d6aeec5b07ccac1c2c"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES=[
+  {
+    "questionId": "u21-s007-cr001",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "函數 y=-3(x+2)²+12。請寫出頂點、對稱軸、開口方向、最大值與最大值發生的 x，並求 y 截距。",
+    "givenConditions": [
+      "函數為完整實數域"
+    ],
+    "target": "從頂點式讀特徵並代 x=0",
+    "requiredWork": [
+      "正確反讀 h=-2。",
+      "由 a<0 判開口與最大值。",
+      "代 x=0 求 y 截距。"
+    ],
+    "fullCreditSolution": [
+      "頂點為 (-2,12)，對稱軸 x=-2。",
+      "a=-3<0，開口向下；最大值為 12，在 x=-2 時取得。",
+      "x=0 時 y=-3(2)²+12=0，所以 y 截距為 (0,0)。"
+    ],
+    "alternativeSolutions": [
+      "可先畫頂點與對稱軸，再以點 (0,0) 驗證。"
+    ],
+    "reasoningSteps": [
+      "頂點為 (-2,12)，對稱軸 x=-2。",
+      "a=-3<0，開口向下；最大值為 12，在 x=-2 時取得。",
+      "x=0 時 y=-3(2)²+12=0，所以 y 截距為 (0,0)。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "頂點、軸、方向、最大值與位置、y 截距六項全對且有代入。"
+      },
+      {
+        "score": 2,
+        "criteria": "大部分特徵正確，最多漏一項或 y 截距有單一算術錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "能正確讀出頂點與軸，或正確判斷向下與最大值。"
+      },
+      {
+        "score": 0,
+        "criteria": "h 符號、方向與極值皆錯，且無有效代入。"
+      }
+    ],
+    "partialCreditRules": [
+      "大部分特徵正確，最多漏一項或 y 截距有單一算術錯。",
+      "能正確讀出頂點與軸，或正確判斷向下與最大值。"
+    ],
+    "followThroughPolicy": "各特徵分項評分；y 截距算錯不影響頂點與極值分。若只漏座標括號可扣表示分。",
+    "unitAndNotationRules": [
+      "頂點與截距寫座標。",
+      "對稱軸寫 x=-2。",
+      "本題無物理單位。"
+    ],
+    "answerOnlyPolicy": "只列答案無代入求 y 截距，最高 2 分。",
+    "commonErrors": [
+      "把 x+2 讀成 h=2。",
+      "把最大值寫成 x=-2。",
+      "把 y 截距直接寫 k=12。"
+    ],
+    "independentReview": {
+      "derivedResult": "頂點 (-2,12)，軸 x=-2，向下，最大值 12 在 x=-2，y 截距 (0,0)。",
+      "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "b166f67ebc46a3aba437286c2503f1fc0f622bc9ab354a6ebaa4e882021a5f34"
+  },
+  {
+    "questionId": "u21-s007-cr002",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+    },
+    "prompt": "一條拋物線頂點為 (4,-3)，並通過點 P(1,15)。求其頂點式，再求與 P 對稱的點 Q，最後展開成一般式。",
+    "givenConditions": [
+      "a≠0",
+      "P 為非頂點圖上點"
+    ],
+    "target": "由頂點與一點求函數並轉換表徵",
+    "requiredWork": [
+      "設 y=a(x-4)²-3。",
+      "代入 P 求 a。",
+      "由軸 x=4 求 Q。",
+      "展開頂點式。"
+    ],
+    "fullCreditSolution": [
+      "15=a(1-4)²-3=9a-3，所以 18=9a，a=2。",
+      "頂點式為 y=2(x-4)²-3。",
+      "P 的 x=1 到軸 4 距離 3，另一側 x=7，故 Q=(7,15)。",
+      "展開：2(x²-8x+16)-3=2x²-16x+29。"
+    ],
+    "alternativeSolutions": [
+      "可用鏡射公式 x_Q=2×4-1=7；展開後代 x=4 驗證 y=-3。"
+    ],
+    "reasoningSteps": [
+      "15=a(1-4)²-3=9a-3，所以 18=9a，a=2。",
+      "頂點式為 y=2(x-4)²-3。",
+      "P 的 x=1 到軸 4 距離 3，另一側 x=7，故 Q=(7,15)。",
+      "展開：2(x²-8x+16)-3=2x²-16x+29。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "頂點式、Q=(7,15)、一般式 2x²-16x+29 全對且步驟完整。"
+      },
+      {
+        "score": 2,
+        "criteria": "三部分中兩部分完整正確，或只有單一展開算術錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "能正確設 y=a(x-4)²-3 並列出 15=9a-3。"
+      },
+      {
+        "score": 0,
+        "criteria": "頂點式符號錯、未代點，且無有效對稱或展開。"
+      }
+    ],
+    "partialCreditRules": [
+      "三部分中兩部分完整正確，或只有單一展開算術錯。",
+      "能正確設 y=a(x-4)²-3 並列出 15=9a-3。"
+    ],
+    "followThroughPolicy": "若 a 算錯但後續使用自得 a 一致完成 Q 與展開，可給方法追蹤分；Q 的幾何部分不依賴 a，獨立計分。",
+    "unitAndNotationRules": [
+      "座標依 (x,y)。",
+      "一般式依 x²、x、常數排列。"
+    ],
+    "answerOnlyPolicy": "只寫頂點式答案而無 Q 與一般式，最高 1 分。",
+    "commonErrors": [
+      "用 15=3a-3，漏平方。",
+      "Q 寫成 (4,15)。",
+      "展開 (x-4)² 漏 -8x。"
+    ],
+    "independentReview": {
+      "derivedResult": "y=2(x-4)²-3，Q=(7,15)，一般式 y=2x²-16x+29。",
+      "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "27fb5e8031396389c1c8e88588acb887d010ca27709abf57f314db1b2c2e9f61"
+  }
+];
+
+export const SEMANTIC_REVIEWS=[
+  {
+    "questionId": "u21-s007-v001",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "a4a5c29b1d4977eb4f14bea7c65bf1543098329a1a80b65faa0eeb1d7f9befa5",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "令平方項為 0 得 x=2，此時 y=-4。",
+    "derivedAnswer": "(2,-4)",
+    "storedAnswer": "(2,-4)",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「(2,-4)」。逐項反證其餘選項：「(-2,-4)」不成立，因為把括號內符號直接照讀。；「(2,4)」不成立，因為把式外 -4 的符號讀反。；「(3,-4)」不成立，因為把外係數 3 當 x 座標。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是由 h、k 讀頂點，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「由 h、k 讀頂點」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把 a、h、k 的角色混淆」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「(2,-4)」。"
+    },
+    "difficultyReason": "basic：直接讀頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由 h、k 讀頂點，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「函數 y=3(x-2)²-4 的頂點為何？」獨立重算：令平方項為 0 得 x=2，此時 y=-4。；所得答案為「(2,-4)」。四選項逐項核對：「(-2,-4)」=假，把括號內符號直接照讀。；「(2,4)」=假，把式外 -4 的符號讀反。；「(2,-4)」=真，h=2、k=-4。；「(3,-4)」=假，把外係數 3 當 x 座標。。難度判定依據：basic：直接讀頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v002",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "83db5f768dc4228338d750074e502a5c3f1ec52e3aeb1d1d2c21b2f322ddbd91",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "平方項在 x=-5 時為 0，所以頂點 (-5,7)。",
+    "derivedAnswer": "(-5,7)",
+    "storedAnswer": "(-5,7)",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「(-5,7)」。逐項反證其餘選項：「(5,7)」不成立，因為未反讀水平符號。；「(-5,-7)」不成立，因為把 k 符號改錯。；「(-1,7)」不成立，因為把 a=-1 當 h。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是處理括號內加號，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「處理括號內加號」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「看到 +5 就寫頂點 x=5」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「(-5,7)」。"
+    },
+    "difficultyReason": "basic：正確讀水平位置；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求處理括號內加號，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「函數 y=-(x+5)²+7 的頂點為何？」獨立重算：平方項在 x=-5 時為 0，所以頂點 (-5,7)。；所得答案為「(-5,7)」。四選項逐項核對：「(-5,7)」=真，h=-5、k=7。；「(5,7)」=假，未反讀水平符號。；「(-5,-7)」=假，把 k 符號改錯。；「(-1,7)」=假，把 a=-1 當 h。。難度判定依據：basic：正確讀水平位置；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v003",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "74932161b8614cac5a9eff3ac5679b2456f15f148ef993d50a883645866495f3",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "唯一同時正確的是頂點 (1,6)、軸 x=1、向下。",
+    "derivedAnswer": "頂點 (1,6)，對稱軸 x=1，開口向下",
+    "storedAnswer": "頂點 (1,6)，對稱軸 x=1，開口向下",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「頂點 (1,6)，對稱軸 x=1，開口向下」。逐項反證其餘選項：「頂點 (-1,6)，開口向下」不成立，因為h 應為 1。；「頂點 (1,-6)，開口向上」不成立，因為k 與 a 符號都讀錯。；「對稱軸 y=1，開口向下」不成立，因為軸應為垂直線 x=1。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是同時讀取頂點、軸與開口，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「同時讀取頂點、軸與開口」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「只對其中一個參數就忽略其他錯誤」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「頂點 (1,6)，對稱軸 x=1，開口向下」。"
+    },
+    "difficultyReason": "basic：整合 a、h、k；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求同時讀取頂點、軸與開口，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「對 y=-2(x-1)²+6，下列敘述何者正確？」獨立重算：唯一同時正確的是頂點 (1,6)、軸 x=1、向下。；所得答案為「頂點 (1,6)，對稱軸 x=1，開口向下」。四選項逐項核對：「頂點 (-1,6)，開口向下」=假，h 應為 1。；「頂點 (1,-6)，開口向上」=假，k 與 a 符號都讀錯。；「對稱軸 y=1，開口向下」=假，軸應為垂直線 x=1。；「頂點 (1,6)，對稱軸 x=1，開口向下」=真，三項分別由 h、k 與 a<0 得到。。難度判定依據：basic：整合 a、h、k；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v004",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "854cfade56a8f9e33b6ab3f6174655712075193c0d8eeada7ccd6cc15f46930b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "f(4)=18-3=15。",
+    "derivedAnswer": "15",
+    "storedAnswer": "15",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「15」。逐項反證其餘選項：「3」不成立，因為只算 4-1，漏平方與係數。；「33」不成立，因為先算 2×(4-1) 再平方，括號順序錯。；「21」不成立，因為算 2×9+3，常數符號錯。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是代入頂點式求圖上點，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「代入頂點式求圖上點」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把 2(x-1)² 當 [2(x-1)]²」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「15」。"
+    },
+    "difficultyReason": "standard：多步代入；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求代入頂點式求圖上點，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「點 P(4,y) 在 y=2(x-1)²-3 上，y 為何？」獨立重算：f(4)=18-3=15。；所得答案為「15」。四選項逐項核對：「3」=假，只算 4-1，漏平方與係數。；「15」=真，2(4-1)²-3=2×9-3=15。；「33」=假，先算 2×(4-1) 再平方，括號順序錯。；「21」=假，算 2×9+3，常數符號錯。。難度判定依據：standard：多步代入；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v005",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "c62a07f3bccc65e7c366ab292943d9f5e197525dac49992c41abe3611948ac52",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "只有第一式同時給 V(3,-2) 與 a>0。",
+    "derivedAnswer": "y=2(x-3)²-2",
+    "storedAnswer": "y=2(x-3)²-2",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「y=2(x-3)²-2」。逐項反證其餘選項：「y=-2(x-3)²-2」不成立，因為頂點正確但開口向下。；「y=2(x+3)²-2」不成立，因為頂點 x=-3。；「y=2(x-3)²+2」不成立，因為頂點 y=2。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是由頂點與方向選頂點式，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「由頂點與方向選頂點式」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「只檢查開口或只檢查頂點」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「y=2(x-3)²-2」。"
+    },
+    "difficultyReason": "standard：從頂點建立候選式；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由頂點與方向選頂點式，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「某拋物線頂點為 (3,-2)，且開口向上，可寫成下列哪種形式？」獨立重算：只有第一式同時給 V(3,-2) 與 a>0。；所得答案為「y=2(x-3)²-2」。四選項逐項核對：「y=2(x-3)²-2」=真，h=3、k=-2、a=2>0。；「y=-2(x-3)²-2」=假，頂點正確但開口向下。；「y=2(x+3)²-2」=假，頂點 x=-3。；「y=2(x-3)²+2」=假，頂點 y=2。。難度判定依據：standard：從頂點建立候選式；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v006",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "a0b4a392f19098c52d5a3dbad5ff1897487483f8830accf1e0fec7880a91b120",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "一般式是 y=x²+4x-1。",
+    "derivedAnswer": "y=x²+4x-1",
+    "storedAnswer": "y=x²+4x-1",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「y=x²+4x-1」。逐項反證其餘選項：「y=x²+4x+9」不成立，因為把 -5 變成 +5。；「y=x²+2x-3」不成立，因為平方展開的中間項少一倍。；「y=x²+4-5」不成立，因為漏掉中間項 4x。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是頂點式展開，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「頂點式展開」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把 (x+2)² 當 x²+4」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「y=x²+4x-1」。"
+    },
+    "difficultyReason": "standard：頂點式轉一般式；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求頂點式展開，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「將 y=(x+2)²-5 展開成一般式，結果為何？」獨立重算：一般式是 y=x²+4x-1。；所得答案為「y=x²+4x-1」。四選項逐項核對：「y=x²+4x+9」=假，把 -5 變成 +5。；「y=x²+2x-3」=假，平方展開的中間項少一倍。；「y=x²+4x-1」=真，x²+4x+4-5=x²+4x-1。；「y=x²+4-5」=假，漏掉中間項 4x。。難度判定依據：standard：頂點式轉一般式；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v007",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "052892346bcef5a3223a71921b07b3841045ec795d278c4280a5a4a47bc66ed9",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "a=(9-1)/(4-2)²=8/4=2。",
+    "derivedAnswer": "2",
+    "storedAnswer": "2",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「2」。逐項反證其餘選項：「1」不成立，因為只算 9-8 或未除平方距離。；「4」不成立，因為把 9-1=8 再除以 2。；「-2」不成立，因為符號與向上點位矛盾。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是由頂點與一點求 a，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「由頂點與一點求 a」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「用 y 差除以 x 差而非平方」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「2」。"
+    },
+    "difficultyReason": "advanced：由一點完成頂點式；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由頂點與一點求 a，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「函數 y=a(x-2)²+1 通過點 (4,9)，a 為何？」獨立重算：a=(9-1)/(4-2)²=8/4=2。；所得答案為「2」。四選項逐項核對：「1」=假，只算 9-8 或未除平方距離。；「2」=真，9=a(2)²+1，故 8=4a，a=2。；「4」=假，把 9-1=8 再除以 2。；「-2」=假，符號與向上點位矛盾。。難度判定依據：advanced：由一點完成頂點式；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v008",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "e5a73fbadc9db3e5c21837ce00c3ff627b299796b2a99bef76d5946123b29255",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "a=-2，代回 x=1 得 -8+5=-3。",
+    "derivedAnswer": "y=-2(x+1)²+5",
+    "storedAnswer": "y=-2(x+1)²+5",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「y=-2(x+1)²+5」。逐項反證其餘選項：「y=2(x+1)²+5」不成立，因為代入 (1,-3) 會得 13。；「y=-2(x-1)²+5」不成立，因為頂點水平位置變成 1。；「y=-8(x+1)²+5」不成立，因為把 y 差 -8 直接當 a，漏除 4。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是由頂點與圖上點重建函數，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「由頂點與圖上點重建函數」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把 y 差直接當外係數」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「y=-2(x+1)²+5」。"
+    },
+    "difficultyReason": "advanced：重建完整頂點式；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由頂點與圖上點重建函數，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「頂點為 (-1,5) 的拋物線通過 (1,-3)。其函數為何？」獨立重算：a=-2，代回 x=1 得 -8+5=-3。；所得答案為「y=-2(x+1)²+5」。四選項逐項核對：「y=2(x+1)²+5」=假，代入 (1,-3) 會得 13。；「y=-2(x-1)²+5」=假，頂點水平位置變成 1。；「y=-8(x+1)²+5」=假，把 y 差 -8 直接當 a，漏除 4。；「y=-2(x+1)²+5」=真，-3=4a+5，得 a=-2。。難度判定依據：advanced：重建完整頂點式；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v009",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "fb4bed11bc0676dd4134c7e2e0b77a954931f380e5f5776e03e70065a761d3ec",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "m=4/9，且非零，函數仍為二次函數。",
+    "derivedAnswer": "4/9",
+    "storedAnswer": "4/9",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「4/9」。逐項反證其餘選項：「4/3」不成立，因為把 3² 誤作 3。；「-4/9」不成立，因為移項符號錯誤。；「9/4」不成立，因為將除法倒置。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是用特殊點求參數，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「用特殊點求參數」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把平方距離 9 寫成 3」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「4/9」。"
+    },
+    "difficultyReason": "advanced：參數分數求解；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求用特殊點求參數，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「若 y=m(x-3)²-4 通過原點，m 為何？」獨立重算：m=4/9，且非零，函數仍為二次函數。；所得答案為「4/9」。四選項逐項核對：「4/3」=假，把 3² 誤作 3。；「-4/9」=假，移項符號錯誤。；「4/9」=真，0=m(0-3)²-4=9m-4，所以 m=4/9。；「9/4」=假，將除法倒置。。難度判定依據：advanced：參數分數求解；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v010",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "9360ae3a73bfb01372d518b5cf8db370ca22f6c4ee41ff7f8ca7ad0af2bd52cb",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "h(t)≤12，且 t=1.5 取得 12。",
+    "derivedAnswer": "水柱在 1.5 秒時達最高 12 公尺",
+    "storedAnswer": "水柱在 1.5 秒時達最高 12 公尺",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「水柱在 1.5 秒時達最高 12 公尺」。逐項反證其餘選項：「水柱在 12 秒時高 1.5 公尺」不成立，因為交換座標與單位。；「水柱在 1.5 秒時最低 12 公尺」不成立，因為向下開口頂點是最高。；「水柱起始高度必為 12 公尺」不成立，因為12 是頂點高度，不是 h(0)。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是解釋頂點式模型中的 h、k，沒有未定義的新符號。",
+      "unitConflict": "單位審查：第一座標單位秒，第二座標單位公尺。 本題四個選項皆回應同一所求量「解釋頂點式模型中的 h、k」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：t=1.5 位於模型有效時間內。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「交換 h 與 k 的物理角色」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「水柱在 1.5 秒時達最高 12 公尺」。"
+    },
+    "difficultyReason": "literacy：解讀水柱最高點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "時間與高度單位不同，頂點兩座標必須分別解釋；水柱情境也決定向下頂點代表最高而非最低。",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求解釋頂點式模型中的 h、k，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「水柱高度模型 h(t)=-4(t-1.5)²+12，t 為秒、h 為公尺。頂點的實際意義為何？」獨立重算：h(t)≤12，且 t=1.5 取得 12。；所得答案為「水柱在 1.5 秒時達最高 12 公尺」。四選項逐項核對：「水柱在 12 秒時高 1.5 公尺」=假，交換座標與單位。；「水柱在 1.5 秒時達最高 12 公尺」=真，a<0，頂點 (1.5,12) 是最高點。；「水柱在 1.5 秒時最低 12 公尺」=假，向下開口頂點是最高。；「水柱起始高度必為 12 公尺」=假，12 是頂點高度，不是 h(0)。。難度判定依據：literacy：解讀水柱最高點；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v011",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "e44213d43e5abbe588caa16a6fdb4a834d9de9b54b85fdae951f7e8ee44876cb",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "R(20)=5000，且其他 n 使平方項扣除非負量。",
+    "derivedAnswer": "n=20 時收益最大為 5000 元",
+    "storedAnswer": "n=20 時收益最大為 5000 元",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「n=20 時收益最大為 5000 元」。逐項反證其餘選項：「n=-20 時收益最大」不成立，因為括號內 n-20 對應 h=20。；「n=20 時收益最小」不成立，因為開口向下。；「收益最大為 20 元」不成立，因為20 是顧客數，不是收益。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是由收益頂點式讀最佳數量，沒有未定義的新符號。",
+      "unitConflict": "單位審查：n 單位人，R 單位元。 本題四個選項皆回應同一所求量「由收益頂點式讀最佳數量」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：n=20 是 0 到 40 的整數。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把括號符號或座標角色讀反」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「n=20 時收益最大為 5000 元」。"
+    },
+    "difficultyReason": "literacy：解讀最佳顧客數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "顧客數與收益使用不同單位，必須同時報告最佳 n 與最大金額；非負整數範圍也讓 n=20 合理。",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由收益頂點式讀最佳數量，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「某攤位收益模型 R(n)=-10(n-20)²+5000，n 為每日顧客數。下列哪個敘述正確？」獨立重算：R(20)=5000，且其他 n 使平方項扣除非負量。；所得答案為「n=20 時收益最大為 5000 元」。四選項逐項核對：「n=-20 時收益最大」=假，括號內 n-20 對應 h=20。；「n=20 時收益最小」=假，開口向下。；「收益最大為 20 元」=假，20 是顧客數，不是收益。；「n=20 時收益最大為 5000 元」=真，a=-10<0，頂點 (20,5000) 是最高點。。難度判定依據：literacy：解讀最佳顧客數；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s007-v012",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex-form-basic",
+    "contentSha256": "7c2039eaf6abd883c779b8f438c2aeb1ca4e16f27baee1d6aeec5b07ccac1c2c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "E(-2)=-1，任何其他 x 都增加非負的 0.5(x+2)²。",
+    "derivedAnswer": "x=-2",
+    "storedAnswer": "x=-2",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「x=-2」。逐項反證其餘選項：「x=2」不成立，因為括號符號未反讀。；「x=-1」不成立，因為把 k=-1 當輸入。；「x=0.5」不成立，因為把 a 當輸入位置。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-vertex-form-basic」講義中先定義；本題目標是由向上頂點式找最小位置，沒有未定義的新符號。",
+      "unitConflict": "單位審查：題目未指定 x 的物理單位；所求為輸入值，不是誤差值。 本題四個選項皆回應同一所求量「由向上頂點式找最小位置」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：模型未另限 x，-2 是允許輸入。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把最小值 -1 當 x」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「x=-2」。"
+    },
+    "difficultyReason": "literacy：找校正最佳輸入；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "感測器情境區分「最低誤差值」與「發生的輸入」；題目問 x，因此不能只回答 -1。",
+    "prerequisiteCheck": "需先能使用 quadratic-axis-symmetry 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由向上頂點式找最小位置，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「感測器誤差模型 E(x)=0.5(x+2)²-1。誤差最低時的輸入 x 為何？」獨立重算：E(-2)=-1，任何其他 x 都增加非負的 0.5(x+2)²。；所得答案為「x=-2」。四選項逐項核對：「x=-2」=真，平方項在 x+2=0 時最小。；「x=2」=假，括號符號未反讀。；「x=-1」=假，把 k=-1 當輸入。；「x=0.5」=假，把 a 當輸入位置。。難度判定依據：literacy：找校正最佳輸入；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  }
+];
+
+export const DRAWING_SPECS=[
+  {
+    "figureId": "u21-fig-s007-01",
+    "drawingSpecId": "u21-draw-s007-01",
+    "unitId": "u21",
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-vertex-form-basic",
+    "title": "頂點式參數意義",
+    "svgPath": "figures/u21/u21-fig-s007-01.svg",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "altText": "本圖以高對比線條與文字標籤呈現：y=2(x-3)²-4 的頂點、軸與 a、h、k 三個參數說明框。",
+    "drawingSpec": {
+      "canvas": {
+        "width": 700,
+        "height": 420
+      },
+      "viewBox": "0 0 700 420",
+      "coordinateSystem": "SVG 原點在左上；所有座標與曲線位置依本圖明列的像素配置。",
+      "elements": "本技能專用的座標軸、拋物線、標記點、文字與必要輔助線，詳見 SVG 元素。",
+      "labels": "所有關鍵方程式、頂點、對稱軸、端點或表格欄位直接以文字標示。",
+      "tickMarks": "圖形以關鍵座標文字為主；未標一般刻度時不得由外觀估讀其他座標。",
+      "units": "情境圖依文字標示秒、公尺或平方單位；純座標圖使用無單位座標。",
+      "lineRules": "實線為函數曲線或座標軸，虛線為對稱軸、限制邊界或比較曲線；用途由文字同步說明。",
+      "scalePolicy": "同一圖內比較寬窄時使用同一比例；未標示的距離不得作精確數值推論。",
+      "notToScaleWarning": "除明列座標外，不可只憑圖形外觀推算未標示數值。",
+      "mobileConstraints": "最小主要字級 16 px，關鍵線寬至少 2 px，640 至 760 寬 viewBox 可等比例縮放。",
+      "answerLeakageControl": "圖形只呈現講義所需結構或題幹已給資訊；不得把未給的選擇題答案直接標成結論。"
+    },
+    "svgAssertions": [
+      "<title>",
+      "<desc>",
+      "role=\"img\"",
+      "stroke=\"black\""
+    ],
+    "geometryAssertions": [
+      "SVG viewBox 與 width、height 均存在。",
+      "關鍵點與輔助線座標在畫布範圍內。",
+      "文字標籤不依賴顏色區分。"
+    ],
+    "figureReview": {
+      "mathematicalAccuracy": "pass",
+      "mobileReadability": "pass",
+      "answerLeakage": "pass",
+      "manualVisualInspection": "pass",
+      "reviewNote": "人工檢視 u21-fig-s007-01：y=2(x-3)²-4 的頂點、軸與 a、h、k 三個參數說明框。 已核對曲線方向、標記座標、虛實線語意、文字可讀性與畫布邊界，未以未標刻度洩漏額外答案。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "b2c5876095510ded508429953d0ef2adbdc5fbad8c74af97319a6fa38688a00b"
+  }
+];

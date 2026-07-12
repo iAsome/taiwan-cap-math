@@ -1,0 +1,282 @@
+{
+  "lectureId": "u21-s001-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-basics",
+  "skillId": "quadratic-function-graph",
+  "lockedTitle": "拋物線圖形",
+  "title": "從輸入輸出到拋物線：認識二次函數圖形",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-function-graph"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能判斷一個式子是否為一元二次函數。",
+    "能由數值表把點標在座標平面上。",
+    "能說明二次函數圖形為平滑且左右對稱的拋物線。",
+    "能區分函數圖形與單獨幾個資料點。"
+  ],
+  "prerequisites": [],
+  "prerequisiteBridge": "本技能是 U21 的起點；先複習座標點 (x,y)、代入與平方的意義，不要求先知道拋物線公式。",
+  "glossary": [
+    {
+      "term": "函數",
+      "definition": "每一個允許的 x 都只對應一個 y 的規則。"
+    },
+    {
+      "term": "二次函數",
+      "definition": "最高次項為 x²，且 x² 的係數不為 0 的一元函數。"
+    },
+    {
+      "term": "圖形",
+      "definition": "所有符合函數規則的座標點所形成的集合。"
+    },
+    {
+      "term": "拋物線",
+      "definition": "二次函數在座標平面上的平滑 U 形或倒 U 形曲線。"
+    },
+    {
+      "term": "係數",
+      "definition": "乘在變數或其冪次前的數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(x,y)",
+      "meaning": "座標點，x 是橫座標，y 是縱座標。"
+    },
+    {
+      "symbol": "y=ax²+bx+c",
+      "meaning": "一元二次函數的一般表示，a≠0。"
+    },
+    {
+      "symbol": "x²",
+      "meaning": "x×x，不是 2x。"
+    }
+  ],
+  "conceptNarrative": [
+    "先從規則 y=x² 觀察：x=-2,-1,0,1,2 時，y=4,1,0,1,4。把這五個點標出後，左右兩側出現成對的高度。",
+    "函數圖形不是只由五個點組成；所有實數 x 都能代入，因此點與點之間還有無限多個點，連成平滑曲線。",
+    "二次函數的最高次為 2，所以它不同於直線函數 y=mx+b。圖形通常會彎曲，且具有一條對稱軸。",
+    "式子中即使有 x²，只要 x² 項互相消掉，最後最高次不是 2，就不能視為二次函數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "一元二次函數",
+      "statement": "可整理為 y=ax²+bx+c，且 a、b、c 為常數、a≠0 的函數。"
+    },
+    {
+      "name": "拋物線圖形",
+      "statement": "所有滿足二次函數方程式的點 (x,y) 所形成的連續曲線。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "y=ax²+bx+c",
+      "conditions": [
+        "a≠0",
+        "x 為自變數",
+        "a、b、c 為固定常數"
+      ],
+      "meaning": "判斷是否為一元二次函數的基本形式。"
+    },
+    {
+      "formula": "x²=x×x",
+      "conditions": [
+        "x 可為正數、0 或負數"
+      ],
+      "meaning": "負數平方後為非負數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "y=3x+2 的最高次是 1，圖形是直線，不是二次函數。",
+    "y=5/x 含有 x 在分母，不能整理成 ax²+bx+c。",
+    "y=(x+1)²-x² 可整理成 2x+1，二次項消去後不是二次函數。",
+    "只看到三個散點不能直接斷定它們來自二次函數，還需要規則或更多條件。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先把式子整理並確認只有一個變數 x。",
+      "check": "是否可寫成多項式形式？"
+    },
+    {
+      "step": 2,
+      "instruction": "找最高次項。",
+      "check": "最高次是否恰為 2，且係數不為 0？"
+    },
+    {
+      "step": 3,
+      "instruction": "選幾個 x 值代入求 y。",
+      "check": "平方與負號是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "把所得座標點依刻度標出。",
+      "check": "橫軸是 x、縱軸是 y 嗎？"
+    },
+    {
+      "step": 5,
+      "instruction": "用平滑曲線連接並觀察對稱。",
+      "check": "沒有把曲線畫成折線，也沒有任意延伸到錯誤方向。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 y=2x²-3x+1 是否為二次函數。",
+      "solutionSteps": [
+        "最高次項為 2x²。",
+        "x² 的係數 2 不為 0。"
+      ],
+      "answer": "是二次函數。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "判斷 y=(x+2)(x-2)-x² 是否為二次函數。",
+      "solutionSteps": [
+        "展開得 x²-4-x²。",
+        "整理為 y=-4，最高次為 0。"
+      ],
+      "answer": "不是二次函數。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "求 y=x² 在 x=-3 與 x=2 時的點。",
+      "solutionSteps": [
+        "x=-3 時 y=(-3)²=9。",
+        "x=2 時 y=2²=4。"
+      ],
+      "answer": "(-3,9) 與 (2,4)。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "y=-x² 的圖形和 y=x² 的主要方向有何不同？",
+      "solutionSteps": [
+        "相同 x 下，y 值互為相反數。",
+        "所有點相當於對 x 軸上下翻轉。"
+      ],
+      "answer": "y=-x² 開口向下，y=x² 開口向上。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "為什麼 y=x² 的 (-4,16) 與 (4,16) 成對出現？",
+      "solutionSteps": [
+        "(-4)²=16。",
+        "4²=16，正負相反的 x 平方相同。"
+      ],
+      "answer": "因平方使相反數得到相同函數值。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認二次函數與代入平方。",
+    "standard": "由表格或式子判讀拋物線特徵。",
+    "advanced": "處理整理後二次項消去或複合條件。",
+    "literacy": "把高度、面積或距離模型中的 x 與 y 對應到拋物線。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把 x² 看成 2x。",
+      "why": "混淆平方與乘以 2。",
+      "correction": "把 x² 寫成 x×x 再代入。"
+    },
+    {
+      "mistake": "負數平方仍寫負數。",
+      "why": "漏掉括號。",
+      "correction": "(-3)²=(-3)×(-3)=9。"
+    },
+    {
+      "mistake": "只要看見 x² 就認定是二次函數。",
+      "why": "未先整理同類項。",
+      "correction": "先展開化簡，再判斷最高次。"
+    },
+    {
+      "mistake": "把幾個點用折線連起來。",
+      "why": "把函數表當成離散資料。",
+      "correction": "二次函數在實數範圍內形成平滑曲線。"
+    },
+    {
+      "mistake": "交換 x 軸與 y 軸。",
+      "why": "沒有按座標順序讀點。",
+      "correction": "(x,y) 先橫後縱。"
+    },
+    {
+      "mistake": "認為拋物線一定開口向上。",
+      "why": "忽略 x² 係數可為負。",
+      "correction": "先看最高次係數的正負。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "y=7-2x² 是否為二次函數？",
+      "answer": "是，x² 係數為 -2。"
+    },
+    {
+      "prompt": "y=x(x+1)-x² 是否為二次函數？",
+      "answer": "不是，整理為 y=x。"
+    },
+    {
+      "prompt": "y=x² 在 x=-2 時的 y 值？",
+      "answer": "4。"
+    },
+    {
+      "prompt": "函數圖形只包含表格列出的點嗎？",
+      "answer": "不是，所有允許的 x 都有對應點。"
+    }
+  ],
+  "summary": [
+    "二次函數可整理為 y=ax²+bx+c 且 a≠0。",
+    "其圖形是平滑的拋物線，不是折線。",
+    "作圖時先代入、標點，再依函數特徵連成曲線。",
+    "判斷前必須先整理，避免二次項其實已消去。"
+  ],
+  "connections": {
+    "previous": "承接座標、代入與平方運算。",
+    "next": [
+      "下一技能會在拋物線上找出頂點與對稱軸。",
+      "後續會用係數與頂點式預測圖形。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s001-01"
+  ],
+  "accessibilityNotes": [
+    "圖中以實線曲線、粗黑座標軸與文字標籤共同表達，不只依靠顏色。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s001-v001",
+      "u21-s001-v002",
+      "u21-s001-v003",
+      "u21-s001-v004",
+      "u21-s001-v005",
+      "u21-s001-v006",
+      "u21-s001-v007",
+      "u21-s001-v008",
+      "u21-s001-v009",
+      "u21-s001-v010",
+      "u21-s001-v011",
+      "u21-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s001-cr001",
+      "u21-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重算 y=x² 的對稱點、二次項消去例與負號平方；確認一般式僅作辨認用途，未引入微積分或高中函數理論。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "93ddde24c475e0ca56efb9ad2483598770c69da5261d8d21a142630c962ba1bb"
+}

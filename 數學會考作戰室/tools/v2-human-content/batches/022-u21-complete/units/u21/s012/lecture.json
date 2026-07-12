@@ -1,0 +1,283 @@
+{
+  "lectureId": "u21-s012-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-transformations",
+  "skillId": "quadratic-shift",
+  "lockedTitle": "平移概念",
+  "title": "從 y=ax² 移動到 y=a(x-h)²+k：拋物線平移",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-shift"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能判斷水平與垂直平移方向和距離。",
+    "能由原函數與平移量寫新函數。",
+    "能比較平移前後頂點、軸、開口與寬窄。",
+    "能避免把括號內水平符號讀反。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-function-literacy",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "已會讀頂點式的 a、h、k；本節把 h、k 解釋為整條圖形的水平與垂直移動。",
+  "glossary": [
+    {
+      "term": "平移",
+      "definition": "圖形每一個點都沿相同方向移動相同距離，形狀不變。"
+    },
+    {
+      "term": "水平平移",
+      "definition": "所有點的 x 座標同加一個數。"
+    },
+    {
+      "term": "垂直平移",
+      "definition": "所有點的 y 座標同加一個數。"
+    },
+    {
+      "term": "形狀不變",
+      "definition": "開口方向與寬窄不因平移改變。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "y=f(x-h)",
+      "meaning": "把 y=f(x) 向右平移 h；h>0。"
+    },
+    {
+      "symbol": "y=f(x)+k",
+      "meaning": "向上平移 k；k>0。"
+    },
+    {
+      "symbol": "(x,y)→(x+h,y+k)",
+      "meaning": "每個點向右 h、向上 k。"
+    }
+  ],
+  "conceptNarrative": [
+    "先看最簡單 y=x² 的頂點 (0,0)。改成 y=(x-3)²，平方為 0 的位置從 x=0 變成 x=3，所以整圖向右 3。",
+    "水平平移的符號看似相反，是因為要讓括號變成 0：x-3=0 在 x=3。",
+    "式子外加 k 直接改變所有 y 值，所以 k>0 向上、k<0 向下。",
+    "平移只改位置，不改 a；因此開口方向與寬窄保持。若 a 也改變，就不只是平移。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "二次函數平移",
+      "statement": "由 y=ax² 經向右 h、向上 k 得 y=a(x-h)²+k，a 不變。"
+    },
+    {
+      "name": "平移後頂點",
+      "statement": "原頂點 (0,0) 移至 (h,k)。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "y=a(x-h)²+k",
+      "conditions": [
+        "由 y=ax² 平移",
+        "a 保持不變"
+      ],
+      "meaning": "向右 h、向上 k；負值代表相反方向。"
+    },
+    {
+      "formula": "(p,q)→(p+h,q+k)",
+      "conditions": [
+        "所有圖上點採相同位移"
+      ],
+      "meaning": "追蹤特定點的平移。"
+    }
+  ],
+  "nonApplicableCases": [
+    "a 改變會造成伸縮或翻轉，不是純平移。",
+    "y=a(x+h)² 不是向右 h，而是向左 h。",
+    "只有頂點移動相同不足以證明整圖是平移，還要 a 相同。",
+    "水平與垂直平移可依任一順序進行，結果相同。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把原式與新式都寫成頂點式。",
+      "check": "a 是否相同？"
+    },
+    {
+      "step": 2,
+      "instruction": "比較頂點座標。",
+      "check": "Δx=h₂-h₁、Δy=k₂-k₁。"
+    },
+    {
+      "step": 3,
+      "instruction": "把正負轉成方向。",
+      "check": "水平括號符號是否反讀？"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查開口與寬窄。",
+      "check": "純平移時 a 必須不變。"
+    },
+    {
+      "step": 5,
+      "instruction": "追蹤一個非頂點點驗算。",
+      "check": "每個點是否移動相同向量？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "y=x² 向右 4、向下 2。",
+      "solutionSteps": [
+        "右 4 改成 (x-4)²。",
+        "下 2 在式外減 2。"
+      ],
+      "answer": "y=(x-4)²-2。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "y=3x² 變成 y=3(x+5)²+1。",
+      "solutionSteps": [
+        "a 同為 3，形狀不變。",
+        "頂點從 (0,0) 到 (-5,1)。"
+      ],
+      "answer": "向左 5、向上 1。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "y=-(x-2)²+7 向左 3。",
+      "solutionSteps": [
+        "原頂點 x=2，左 3 到 -1。",
+        "a、k 不變。"
+      ],
+      "answer": "y=-(x+1)²+7。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "y=2(x-1)² 與 y=-2(x-1)² 是否為平移關係？",
+      "solutionSteps": [
+        "a 從 2 變 -2。",
+        "開口翻轉，形狀方向改變。"
+      ],
+      "answer": "不是純平移。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "點 (2,5) 向右 3、下 4 後。",
+      "solutionSteps": [
+        "x 加 3 得 5。",
+        "y 減 4 得 1。"
+      ],
+      "answer": "(5,1)。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "讀取單一水平或垂直平移。",
+    "standard": "同時處理兩方向並寫新式。",
+    "advanced": "比較兩個任意頂點式的位移向量與 a。",
+    "literacy": "解釋軌跡、拱門或設計曲線整體搬移後的座標變化。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "(x-4)² 說向左 4。",
+      "why": "直接照括號符號讀。",
+      "correction": "解 x-4=0 得新頂點 x=4，故向右。"
+    },
+    {
+      "mistake": "式外 +3 說向下。",
+      "why": "混淆內外符號規則。",
+      "correction": "外加直接使所有 y 增加，故向上。"
+    },
+    {
+      "mistake": "a 改變仍稱純平移。",
+      "why": "只比較頂點。",
+      "correction": "平移必須保持 a。"
+    },
+    {
+      "mistake": "只移頂點，不移其他點。",
+      "why": "未理解整圖同向量移動。",
+      "correction": "每個點都加同一 (Δx,Δy)。"
+    },
+    {
+      "mistake": "從 x=2 左移 3 寫 x=5。",
+      "why": "方向算反。",
+      "correction": "左移是 x 減 3。"
+    },
+    {
+      "mistake": "展開後看不出位移就猜。",
+      "why": "未先化為頂點式。",
+      "correction": "比較 h、k 前先完成平方或使用已知頂點。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "y=x² 向左 2 的新式？",
+      "answer": "y=(x+2)²。"
+    },
+    {
+      "prompt": "y=x² 向上 6？",
+      "answer": "y=x²+6。"
+    },
+    {
+      "prompt": "y=4(x-1)²-3 的頂點位移？",
+      "answer": "右 1、下 3。"
+    },
+    {
+      "prompt": "a 從 1 變 4 是純平移嗎？",
+      "answer": "不是。"
+    }
+  ],
+  "summary": [
+    "y=a(x-h)²+k 是 y=ax² 向右 h、向上 k 的結果。",
+    "水平符號反讀，垂直符號直接讀。",
+    "平移後 a 不變，所以方向與寬窄不變。",
+    "可用頂點差或任一點的位移向量驗算。"
+  ],
+  "connections": {
+    "previous": "使用素養情境中的頂點與圖形解釋。",
+    "next": [
+      "本技能完成 U21；後續綜合題可同時結合平移、極值與模型。",
+      "回顧時可由 a、h、k 一次描述形狀與位置。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s012-01"
+  ],
+  "accessibilityNotes": [
+    "原圖與平移後圖以實線和虛線加文字名稱區分，並畫出頂點位移箭頭。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s012-v001",
+      "u21-s012-v002",
+      "u21-s012-v003",
+      "u21-s012-v004",
+      "u21-s012-v005",
+      "u21-s012-v006",
+      "u21-s012-v007",
+      "u21-s012-v008",
+      "u21-s012-v009",
+      "u21-s012-v010",
+      "u21-s012-v011",
+      "u21-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s012-cr001",
+      "u21-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數平移範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐點驗算右 4 下 2、左 5 上 1 與頂點 x=2 左移 3 的新式；確認所有純平移例均保持 a，翻轉例明確判為非平移。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "b01b12817287fef1477829f00d506736b2d09aa8d81fdf749e9b262ab2a4e7fa"
+}

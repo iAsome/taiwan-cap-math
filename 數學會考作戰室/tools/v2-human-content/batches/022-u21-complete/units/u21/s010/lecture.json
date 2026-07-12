@@ -1,0 +1,290 @@
+{
+  "lectureId": "u21-s010-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-applications",
+  "skillId": "quadratic-application-area",
+  "lockedTitle": "拋物線面積應用",
+  "title": "把幾何面積變成二次函數：建模與最佳化",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-application-area"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從周長或邊長關係建立面積式。",
+    "能將面積式整理成二次函數。",
+    "能在合理邊長範圍內求最大面積。",
+    "能用單位與幾何限制檢查答案。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-max-min",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "已會求二次函數最大最小值；本節新增的核心是把長與寬的文字條件翻成同一變數。",
+  "glossary": [
+    {
+      "term": "建模",
+      "definition": "把實際條件改寫成數學變數、式子與範圍。"
+    },
+    {
+      "term": "固定周長",
+      "definition": "長與寬的總和被限制，改變一邊會連動另一邊。"
+    },
+    {
+      "term": "面積函數",
+      "definition": "以某一邊長 x 表示面積 A(x)。"
+    },
+    {
+      "term": "可行範圍",
+      "definition": "使所有實際長度為正且符合題意的 x 範圍。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "A(x)",
+      "meaning": "面積隨 x 改變的函數。"
+    },
+    {
+      "symbol": "L、W",
+      "meaning": "長與寬。"
+    },
+    {
+      "symbol": "cm²、m²",
+      "meaning": "面積單位，必須平方。"
+    }
+  ],
+  "conceptNarrative": [
+    "長方形面積是長×寬。若周長固定，長與寬不能各自獨立；先由周長式把其中一邊改寫成另一邊的式子。",
+    "例如周長 20，設寬 x，則長 10-x，面積 A=x(10-x)=-x²+10x，是開口向下的拋物線。",
+    "代數得到的 x 仍要放回幾何：x>0 且 10-x>0，所以 0<x<10。",
+    "面積最大值題的答案常有兩層：最佳邊長與最大面積，兩者單位不同，不能只報其中之一。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "面積二次模型",
+      "statement": "當兩個線性長度因子相乘時，面積可形成二次函數。"
+    },
+    {
+      "name": "可行解",
+      "statement": "同時符合代數方程與正長度、題目範圍及單位的解。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A=L×W",
+      "conditions": [
+        "長、寬使用相同長度單位"
+      ],
+      "meaning": "長方形面積。"
+    },
+    {
+      "formula": "2(L+W)=P",
+      "conditions": [
+        "P 為長方形周長"
+      ],
+      "meaning": "固定周長關係。"
+    },
+    {
+      "formula": "A=x(S-x)",
+      "conditions": [
+        "L+W=S",
+        "0<x<S"
+      ],
+      "meaning": "固定長寬和的面積模型。"
+    }
+  ],
+  "nonApplicableCases": [
+    "「拋物線面積應用」不是計算曲線下方面積，不使用積分。",
+    "邊長等於 0 的退化圖形通常不算長方形。",
+    "長與寬單位不同時要先統一。",
+    "若題目要求整數邊長，連續模型的頂點還要檢查鄰近整數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "設定一個邊長為 x 並標單位。",
+      "check": "x 代表長、寬或距離？"
+    },
+    {
+      "step": 2,
+      "instruction": "用條件表示另一個長度。",
+      "check": "周長是否先除以 2？"
+    },
+    {
+      "step": 3,
+      "instruction": "寫 A=長×寬並整理。",
+      "check": "是否得到二次函數？"
+    },
+    {
+      "step": 4,
+      "instruction": "寫出可行範圍。",
+      "check": "每個長度都必須為正或符合題目。"
+    },
+    {
+      "step": 5,
+      "instruction": "求頂點並回到情境。",
+      "check": "同時回答邊長、最大面積與正確單位。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "周長 24 cm 的長方形，設寬 x，寫面積函數。",
+      "solutionSteps": [
+        "長+寬=12，所以長=12-x。",
+        "A=x(12-x)=-x²+12x。"
+      ],
+      "answer": "A=-x²+12x，0<x<12。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "上題最大面積與邊長。",
+      "solutionSteps": [
+        "A=-(x-6)²+36。",
+        "x=6 時長也為 6。"
+      ],
+      "answer": "6 cm×6 cm，最大面積 36 cm²。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "一面靠牆、用 30 m 柵欄圍其餘三邊，設垂直牆的寬 x。",
+      "solutionSteps": [
+        "另一邊長為 30-2x。",
+        "A=x(30-2x)=-2x²+30x。"
+      ],
+      "answer": "A=-2x²+30x，0<x<15。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "上題何時面積最大？",
+      "solutionSteps": [
+        "對稱軸 x=-30/(2×-2)=7.5。",
+        "長=30-15=15。"
+      ],
+      "answer": "寬 7.5 m、長 15 m，最大面積 112.5 m²。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "若邊長必須是整數，頂點在 x=4.5，要怎麼處理？",
+      "solutionSteps": [
+        "檢查相鄰整數 x=4、5。",
+        "比較兩個可行面積。"
+      ],
+      "answer": "不能直接用 4.5，需比較 4 與 5。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "從長寬直接寫面積。",
+    "standard": "由固定周長建立二次函數。",
+    "advanced": "處理靠牆、整數邊長與可行範圍。",
+    "literacy": "比較場地設計方案並說明最佳尺寸。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "周長 P 直接寫長+寬=P。",
+      "why": "漏掉長方形有兩組邊。",
+      "correction": "先寫 2(L+W)=P。"
+    },
+    {
+      "mistake": "只求最大面積不求尺寸。",
+      "why": "忽略題目可能有兩個所求。",
+      "correction": "讀清楚要值、位置或兩者。"
+    },
+    {
+      "mistake": "面積單位寫 cm。",
+      "why": "未平方長度單位。",
+      "correction": "面積用 cm²、m²。"
+    },
+    {
+      "mistake": "忽略 x 的正值範圍。",
+      "why": "代數式允許負數但幾何不允許。",
+      "correction": "確保每個邊長都大於 0。"
+    },
+    {
+      "mistake": "靠牆題仍用四邊周長。",
+      "why": "未依實際使用柵欄的邊數建式。",
+      "correction": "畫簡圖標出只有三邊用料。"
+    },
+    {
+      "mistake": "整數限制仍交小數頂點。",
+      "why": "未檢查離散條件。",
+      "correction": "比較頂點附近可行整數。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "周長 40，設寬 x，長？",
+      "answer": "20-x。"
+    },
+    {
+      "prompt": "A=x(20-x) 的開口？",
+      "answer": "向下。"
+    },
+    {
+      "prompt": "最大面積發生在長寬關係？",
+      "answer": "長等於寬。"
+    },
+    {
+      "prompt": "邊長 5 m、8 m 的面積單位？",
+      "answer": "40 m²。"
+    }
+  ],
+  "summary": [
+    "先用條件把兩個長度化成同一變數。",
+    "面積是兩個線性因子的乘積，形成二次函數。",
+    "求極值前必須寫可行範圍。",
+    "答案要回報尺寸、面積與正確單位。"
+  ],
+  "connections": {
+    "previous": "套用最大最小值與區間判斷。",
+    "next": [
+      "下一技能會把更長的生活資訊整理成二次函數模型。",
+      "平移概念可解釋面積式改寫成頂點式的意義。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s010-01"
+  ],
+  "accessibilityNotes": [
+    "長方形各邊以文字和尺寸式標示，右側面積拋物線另標可行範圍。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s010-v001",
+      "u21-s010-v002",
+      "u21-s010-v003",
+      "u21-s010-v004",
+      "u21-s010-v005",
+      "u21-s010-v006",
+      "u21-s010-v007",
+      "u21-s010-v008",
+      "u21-s010-v009",
+      "u21-s010-v010",
+      "u21-s010-v011",
+      "u21-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s010-cr001",
+      "u21-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍，不涉及曲線下面積",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重算周長 24 的正方形最大面積 36 cm²，以及三邊 30 m 柵欄模型頂點 x=7.5、長 15、面積 112.5；確認未使用積分。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "806b4b4ddc2331862fd118771ebca2110614085f7b999ed35822c68427beb47a"
+}

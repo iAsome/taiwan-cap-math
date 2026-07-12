@@ -1,0 +1,1868 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE={
+  "lectureId": "u21-s011-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-literacy",
+  "skillId": "quadratic-function-literacy",
+  "lockedTitle": "二次函數素養題",
+  "title": "二次函數素養題：讀模型與限範圍和解釋答案",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-function-literacy"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從文字、表格或圖形辨認變數與單位。",
+    "能判讀模型中頂點、截距與對稱的實際意義。",
+    "能只在合理定義域內回答問題。",
+    "能評估模型預測是否超出資料與情境。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-application-area",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "已會建面積模型與求極值；本節把前面技能整合到拋射、拱門、收益與量測資料等情境。",
+  "glossary": [
+    {
+      "term": "模型",
+      "definition": "用函數近似描述實際量之間的關係。"
+    },
+    {
+      "term": "自變數",
+      "definition": "主動選取或時間推進的輸入量。"
+    },
+    {
+      "term": "應變數",
+      "definition": "隨輸入變化的輸出量。"
+    },
+    {
+      "term": "截距",
+      "definition": "圖形與座標軸交會的位置。"
+    },
+    {
+      "term": "外插",
+      "definition": "在觀測範圍之外使用模型預測。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "h(t)",
+      "meaning": "高度 h 隨時間 t 變化。"
+    },
+    {
+      "symbol": "R(x)",
+      "meaning": "收益或收入 R 隨數量 x 變化。"
+    },
+    {
+      "symbol": "0≤t≤T",
+      "meaning": "只討論事件開始到結束的合理時間。"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題先讀情境，不要一看到式子就急著算。變數名稱、單位與允許範圍決定答案能否成立。",
+    "頂點在不同情境可代表最高高度、最大收益、最低成本或最佳面積；必須用開口與量的意義判斷。",
+    "截距也有語意：h(0) 是初始高度；正的時間截距可能是物體落地時刻，但負時間截距通常不符合事件。",
+    "模型只是題目給定範圍內的描述。把公式延伸到負時間或遠超資料的數量，雖可代數計算，卻可能沒有實際意義。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "情境定義域",
+      "statement": "由時間、距離、數量、容量或安全條件限制的允許輸入集合。"
+    },
+    {
+      "name": "模型解釋",
+      "statement": "把計算得到的 x、y 連同單位與情境角色轉迴文字。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "頂點 (h,k)",
+      "conditions": [
+        "模型為 a(x-h)²+k"
+      ],
+      "meaning": "h 是最佳或轉折輸入，k 是對應輸出。"
+    },
+    {
+      "formula": "f(x)=0",
+      "conditions": [
+        "題意把輸出 0 視為地面、無收益或邊界"
+      ],
+      "meaning": "求與 x 軸交點並篩選合理解。"
+    }
+  ],
+  "nonApplicableCases": [
+    "負時間的代數解通常不屬事件定義域。",
+    "圖形不是按比例時不能用目測高度代替標示數據。",
+    "相關資料看似拋物線不等於已證明因果關係。",
+    "模型在給定區間有效，不代表可無限外插。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出每個變數的意義、單位與範圍。",
+      "check": "x、y 各代表什麼？"
+    },
+    {
+      "step": 2,
+      "instruction": "確認題目要值、時刻、位置或敘述。",
+      "check": "是否有多個所求？"
+    },
+    {
+      "step": 3,
+      "instruction": "選用頂點、代入、對稱或解零點。",
+      "check": "方法與問題對應嗎？"
+    },
+    {
+      "step": 4,
+      "instruction": "刪除不合理的代數解。",
+      "check": "是否符合非負、時間或容量限制？"
+    },
+    {
+      "step": 5,
+      "instruction": "用完整句子與單位解釋。",
+      "check": "答案是否能被不看計算的人理解？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "球高 h(t)=-(t-2)²+9，頂點意義為何？",
+      "solutionSteps": [
+        "t=2 時 h=9，且開口向下。",
+        "t 是秒、h 是公尺。"
+      ],
+      "answer": "球在 2 秒時達最高 9 公尺。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "同模型 h(0)=5 代表什麼？",
+      "solutionSteps": [
+        "代 t=0 得 5。",
+        "t=0 是開始時刻。"
+      ],
+      "answer": "球開始時離地 5 公尺。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "收益 R(x)=-2(x-30)²+1800，x 為售出件數。",
+      "solutionSteps": [
+        "開口向下，頂點 x=30。",
+        "R=1800。"
+      ],
+      "answer": "售出 30 件時收益最大為 1800 元。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "模型給 t=-1 與 t=5 時高度為 0，哪個可作落地時間？",
+      "solutionSteps": [
+        "事件從 t=0 開始。",
+        "-1 不在合理範圍。"
+      ],
+      "answer": "t=5 秒。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "資料只涵蓋 0≤x≤50，能否用模型預測 x=500？",
+      "solutionSteps": [
+        "500 遠超資料範圍。",
+        "代數可算但模型可靠性沒有保證。"
+      ],
+      "answer": "不宜直接外插為可信預測。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認變數、單位與頂點語意。",
+    "standard": "由式子求指定時刻或合理零點。",
+    "advanced": "整合圖表、範圍與多個條件。",
+    "literacy": "評估模型限制並以完整語句解釋結論。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "只寫 9，不寫公尺與時刻。",
+      "why": "沒有把值放回情境。",
+      "correction": "同時說明何時、何量、何單位。"
+    },
+    {
+      "mistake": "保留負時間解。",
+      "why": "只解方程未檢查定義域。",
+      "correction": "先寫事件的時間範圍。"
+    },
+    {
+      "mistake": "把頂點 x、y 意義交換。",
+      "why": "忽略自變數與應變數。",
+      "correction": "先標軸與單位。"
+    },
+    {
+      "mistake": "用圖形外觀估精確數值。",
+      "why": "忽略不按比例警告。",
+      "correction": "只用刻度、標示與公式。"
+    },
+    {
+      "mistake": "認為模型對所有 x 永遠有效。",
+      "why": "忽略資料與情境範圍。",
+      "correction": "指出內插或外插限制。"
+    },
+    {
+      "mistake": "看到最大值就認為越多越好。",
+      "why": "忽略頂點後函數下降。",
+      "correction": "以拋物線整體趨勢解釋。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "h(t) 頂點 (3,12) 的情境解釋？",
+      "answer": "3 個時間單位時高度最高或最低為 12，需再看開口。"
+    },
+    {
+      "prompt": "時間解 -2、6，事件 t≥0，保留哪個？",
+      "answer": "6。"
+    },
+    {
+      "prompt": "答案 250 應補什麼？",
+      "answer": "變數意義、單位與發生位置。"
+    },
+    {
+      "prompt": "資料到 x=20，可直接信 x=200 的預測嗎？",
+      "answer": "不宜，屬遠距外插。"
+    }
+  ],
+  "summary": [
+    "先讀變數、單位與合理定義域，再運算。",
+    "頂點、截距與對稱都要翻回情境意義。",
+    "代數解需經非負、時間與容量等條件篩選。",
+    "模型超出資料範圍時要保留判斷。"
+  ],
+  "connections": {
+    "previous": "整合面積建模、極值與圖形判讀。",
+    "next": [
+      "下一技能用平移快速比較不同二次函數模型。",
+      "本技能也是 U21 綜合會考題的主要整合點。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s011-01"
+  ],
+  "accessibilityNotes": [
+    "軌跡圖直接標示時間與高度單位、頂點與落地點，並附不按比例警告。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s011-v001",
+      "u21-s011-v002",
+      "u21-s011-v003",
+      "u21-s011-v004",
+      "u21-s011-v005",
+      "u21-s011-v006",
+      "u21-s011-v007",
+      "u21-s011-v008",
+      "u21-s011-v009",
+      "u21-s011-v010",
+      "u21-s011-v011",
+      "u21-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s011-cr001",
+      "u21-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數素養範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重算 h(t)=-(t-2)²+9 的 h(0)=5 與頂點語意，並核對負時間根的排除及外插警告均由情境定義域而非額外假設導出。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "7db219766f13eb9d8bc7c882a4ec048109e85e8f43a9fe2b971d5c2117bb9d12"
+};
+
+export const QUESTIONS=[
+  {
+    "questionId": "u21-s011-v001",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "basic",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "模型 h(t)=-5t²+20t+1 中，t 代表秒、h 代表公尺。h(0) 的意義是什麼？",
+    "givenConditions": [
+      "事件從 t=0 開始"
+    ],
+    "target": "解釋函數在零輸入的情境意義",
+    "text": "模型 h(t)=-5t²+20t+1 中，t 代表秒、h 代表公尺。h(0) 的意義是什麼？",
+    "choices": [
+      "物體落地的時間",
+      "物體的最高高度",
+      "物體開始時的高度",
+      "物體移動的總時間"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "h(0)=1 公尺，語意是開始時離地 1 公尺。",
+    "explanation": "函數在 t=0 的輸出描述事件開始瞬間的高度。",
+    "steps": [
+      "辨認輸入 t 的角色",
+      "將 h(0) 翻成初始高度"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "物體落地的時間",
+        "truth": false,
+        "reason": "落地需解 h(t)=0。"
+      },
+      {
+        "choice": "物體的最高高度",
+        "truth": false,
+        "reason": "最高高度要找頂點。"
+      },
+      {
+        "choice": "物體開始時的高度",
+        "truth": true,
+        "reason": "t=0 是開始時刻，h(0) 是初始高度。"
+      },
+      {
+        "choice": "物體移動的總時間",
+        "truth": false,
+        "reason": "h(0) 是高度值，不是時間長度。"
+      }
+    ],
+    "misconceptionTarget": "看到 0 就誤認為落地或無高度",
+    "concept": "函數值的情境解釋",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 55,
+    "unitCheck": "t 為秒，h 為公尺；h(0) 是公尺量。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「解釋函數在零輸入的情境意義」。",
+      "domainBoundary": "t=0 是有效定義域起點。",
+      "alternateReading": "若把題目誤讀為「看到 0 就誤認為落地或無高度」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "basic：解釋初始值；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "解釋初始值",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "3bebe31ebfa5243d64370850dc2a35d51b5eede5c41b5c32ba185525be1e4d1d"
+  },
+  {
+    "questionId": "u21-s011-v002",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "basic",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "一座拱門模型 y=-0.5(x-4)²+8，x 是距左側基準的公尺數。拱門最高點的水平位置為何？",
+    "givenConditions": [
+      "a<0",
+      "頂點 (4,8)"
+    ],
+    "target": "從頂點式解釋最高位置",
+    "text": "一座拱門模型 y=-0.5(x-4)²+8，x 是距左側基準的公尺數。拱門最高點的水平位置為何？",
+    "choices": [
+      "距基準 8 公尺",
+      "距基準 4 公尺",
+      "距基準 -4 公尺",
+      "無法判斷"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "最高點在 x=4 m。",
+    "explanation": "頂點第一座標是水平位置 4，第二座標 8 是高度。",
+    "steps": [
+      "讀 h=4,k=8",
+      "由 a<0 判頂點最高"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "距基準 8 公尺",
+        "truth": false,
+        "reason": "8 是最高高度。"
+      },
+      {
+        "choice": "距基準 4 公尺",
+        "truth": true,
+        "reason": "向下頂點 x=4 是最高點位置。"
+      },
+      {
+        "choice": "距基準 -4 公尺",
+        "truth": false,
+        "reason": "括號符號讀反。"
+      },
+      {
+        "choice": "無法判斷",
+        "truth": false,
+        "reason": "式子已給完整頂點。"
+      }
+    ],
+    "misconceptionTarget": "交換水平位置和高度",
+    "concept": "頂點座標與單位",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 55,
+    "unitCheck": "x 以 m 表示，答案為水平位置 4 m。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「從頂點式解釋最高位置」。",
+      "domainBoundary": "頂點屬於模型可見拱形範圍。",
+      "alternateReading": "若把題目誤讀為「交換水平位置和高度」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "basic：解釋拱門最高位置；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "解釋拱門最高位置",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "abe8b80ac8888b9eaab4b1663da4699248c48bfb28f8cd7c6e4607975a28917c"
+  },
+  {
+    "questionId": "u21-s011-v003",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "basic",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "某活動收益 R(n)=-20(n-15)²+6000，n 為參加人數。R 的最大值為何？",
+    "givenConditions": [
+      "n 可取合理非負整數",
+      "15 為可行人數"
+    ],
+    "target": "讀取向下模型的最大輸出",
+    "text": "某活動收益 R(n)=-20(n-15)²+6000，n 為參加人數。R 的最大值為何？",
+    "choices": [
+      "15 元",
+      "20 元",
+      "沒有最大值",
+      "6000 元"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "R(n)≤6000，最大值 6000 元。",
+    "explanation": "當 n=15 時平方項為 0，收益達 6000 元。",
+    "steps": [
+      "識別 a<0",
+      "讀頂點輸出"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "15 元",
+        "truth": false,
+        "reason": "15 是參加人數。"
+      },
+      {
+        "choice": "20 元",
+        "truth": false,
+        "reason": "20 是係數絕對值。"
+      },
+      {
+        "choice": "沒有最大值",
+        "truth": false,
+        "reason": "向下拋物線有最高點。"
+      },
+      {
+        "choice": "6000 元",
+        "truth": true,
+        "reason": "負平方項最大為 0，頂點輸出 6000。"
+      }
+    ],
+    "misconceptionTarget": "把輸入人數當輸出金額",
+    "concept": "情境最大輸出",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 50,
+    "unitCheck": "R 單位元，n 單位人。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「讀取向下模型的最大輸出」。",
+      "domainBoundary": "n=15 是合理非負整數。",
+      "alternateReading": "若把題目誤讀為「把輸入人數當輸出金額」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "basic：讀取收益最大值；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "讀取收益最大值",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "5c184d99997228b8da731b2dae85e67ebc06dd2ea2d9375bb86a5025edec9ed8"
+  },
+  {
+    "questionId": "u21-s011-v004",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "standard",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "球的高度 h(t)=-(t-1)²+4。解 h(t)=0 得 t=-1、3。若球在 t=0 後開始記錄，落地時間應取哪個？",
+    "givenConditions": [
+      "時間定義域 t≥0"
+    ],
+    "target": "篩選符合情境的方程解",
+    "text": "球的高度 h(t)=-(t-1)²+4。解 h(t)=0 得 t=-1、3。若球在 t=0 後開始記錄，落地時間應取哪個？",
+    "choices": [
+      "3 秒",
+      "-1 秒",
+      "2 秒",
+      "4 秒"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "落地時間 3 秒；負根僅是模型向過去延伸的交點。",
+    "explanation": "兩個代數根都使高度為 0，但只有非負的 3 秒屬於事件。",
+    "steps": [
+      "列出兩根",
+      "用 t≥0 篩選"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3 秒",
+        "truth": true,
+        "reason": "-1 秒在記錄開始前，不屬於定義域。"
+      },
+      {
+        "choice": "-1 秒",
+        "truth": false,
+        "reason": "代數上是根，但不合事件時間。"
+      },
+      {
+        "choice": "2 秒",
+        "truth": false,
+        "reason": "這是兩根間距的一半，不是根。"
+      },
+      {
+        "choice": "4 秒",
+        "truth": false,
+        "reason": "把最高高度當時間。"
+      }
+    ],
+    "misconceptionTarget": "保留所有代數根不看時間",
+    "concept": "定義域篩選",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "t 單位秒。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「篩選符合情境的方程解」。",
+      "domainBoundary": "事件只接受 t≥0，故排除 -1。",
+      "alternateReading": "若把題目誤讀為「保留所有代數根不看時間」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "standard：從兩根選合理時間；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "從兩根選合理時間",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "aa3a0936b5ebe6e1677fe1307de9afd37c4c0fce28af54c912e295128a02756b"
+  },
+  {
+    "questionId": "u21-s011-v005",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "standard",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "某產品利潤模型 P(x)=-2(x-40)²+3200，只適用 10≤x≤60。下列哪個結論正確？",
+    "givenConditions": [
+      "x 為銷售量",
+      "頂點 x=40 在範圍"
+    ],
+    "target": "檢查模型頂點是否在有效區間",
+    "text": "某產品利潤模型 P(x)=-2(x-40)²+3200，只適用 10≤x≤60。下列哪個結論正確？",
+    "choices": [
+      "銷售 40 件時利潤最小",
+      "銷售 40 件時利潤最大為 3200 元",
+      "最大利潤在 x=60，因為數量最多",
+      "不能使用頂點，因為模型有限制範圍"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "P(40)=3200，為區間最大值。",
+    "explanation": "先檢查 40 在 [10,60]，再用 a<0 判頂點為最大。",
+    "steps": [
+      "檢查定義域",
+      "解釋頂點"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "銷售 40 件時利潤最小",
+        "truth": false,
+        "reason": "方向判反。"
+      },
+      {
+        "choice": "銷售 40 件時利潤最大為 3200 元",
+        "truth": true,
+        "reason": "頂點可行且開口向下。"
+      },
+      {
+        "choice": "最大利潤在 x=60，因為數量最多",
+        "truth": false,
+        "reason": "二次模型頂點後利潤下降。"
+      },
+      {
+        "choice": "不能使用頂點，因為模型有限制範圍",
+        "truth": false,
+        "reason": "頂點在範圍內，反而可直接使用。"
+      }
+    ],
+    "misconceptionTarget": "把銷售量越多誤認利潤越高",
+    "concept": "有效區間內的最佳點",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "x 單位件，P 單位元。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「檢查模型頂點是否在有效區間」。",
+      "domainBoundary": "40 位於有效範圍 10≤x≤60。",
+      "alternateReading": "若把題目誤讀為「把銷售量越多誤認利潤越高」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "standard：驗證商業模型頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "驗證商業模型頂點",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "aab39834fab06bff5e286bef9e5e135052e8d805c290aa19cd281cc7c7bcc6f5"
+  },
+  {
+    "questionId": "u21-s011-v006",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "standard",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "一個噴泉高度表記錄 t=0,1,2,3,4 秒時 h=1,6,9,10,9 公尺。若資料來自對稱拋物線且最高點在整秒，下列推論何者最合理？",
+    "givenConditions": [
+      "表格可能尚未列到完整下降段"
+    ],
+    "target": "由數據趨勢定位可能頂點並避免過度推斷",
+    "text": "一個噴泉高度表記錄 t=0,1,2,3,4 秒時 h=1,6,9,10,9 公尺。若資料來自對稱拋物線且最高點在整秒，下列推論何者最合理？",
+    "choices": [
+      "最高點一定在 t=4 秒",
+      "高度每秒固定增加",
+      "最高點可能在 t=3 秒，h=10 公尺",
+      "模型一定關於 t=2 對稱"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "合理頂點為 (3,10)；其他敘述與表中數值衝突。",
+    "explanation": "h(2)=h(4)=9 且中央 h(3)=10 較高，支持對稱軸 t=3。",
+    "steps": [
+      "找等高時刻 2、4",
+      "讀中間時刻 3 的高度"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "最高點一定在 t=4 秒",
+        "truth": false,
+        "reason": "4 秒高度低於 3 秒。"
+      },
+      {
+        "choice": "高度每秒固定增加",
+        "truth": false,
+        "reason": "相鄰差 5、3、1、-1 不固定。"
+      },
+      {
+        "choice": "最高點可能在 t=3 秒，h=10 公尺",
+        "truth": true,
+        "reason": "表中 3 秒值最大，且 2、4 秒同為 9 顯示關於 3 對稱。"
+      },
+      {
+        "choice": "模型一定關於 t=2 對稱",
+        "truth": false,
+        "reason": "t=2 兩側 1、3 秒值 6、10 不相等。"
+      }
+    ],
+    "misconceptionTarget": "把最後一列或等差趨勢當最高點",
+    "concept": "從量測表讀對稱頂點",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 85,
+    "unitCheck": "t 秒、h 公尺。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由數據趨勢定位可能頂點並避免過度推斷」。",
+      "domainBoundary": "推論限定「資料來自對稱拋物線且最高點在整秒」。",
+      "alternateReading": "若把題目誤讀為「把最後一列或等差趨勢當最高點」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "standard：用數據辨認頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "用數據辨認頂點",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "ec7963a9874e89fcdf05f7ab8ec614714340888b6f0c8c2f559c62c033ed7063"
+  },
+  {
+    "questionId": "u21-s011-v007",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "advanced",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "橋拱模型 y=-0.25(x-8)²+16，只保留 y≥0 的實體部分。橋拱左右端點的水平位置為何？",
+    "givenConditions": [
+      "端點滿足 y=0"
+    ],
+    "target": "由模型求合理零點並解釋實體範圍",
+    "text": "橋拱模型 y=-0.25(x-8)²+16，只保留 y≥0 的實體部分。橋拱左右端點的水平位置為何？",
+    "choices": [
+      "x=0 與 x=16",
+      "x=-8 與 x=8",
+      "x=4 與 x=12",
+      "只有 x=8"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "實體跨度從 x=0 到 x=16。",
+    "explanation": "令高度為 0，移項後平方距離為 64，因此距中心 8 左右各 8。",
+    "steps": [
+      "解 (x-8)²=64",
+      "寫 x=8±8"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "x=0 與 x=16",
+        "truth": true,
+        "reason": "0=-0.25(x-8)²+16，得 (x-8)²=64，x=0、16。"
+      },
+      {
+        "choice": "x=-8 與 x=8",
+        "truth": false,
+        "reason": "把 h=8 當半寬中心錯誤。"
+      },
+      {
+        "choice": "x=4 與 x=12",
+        "truth": false,
+        "reason": "平方根錯取 4。"
+      },
+      {
+        "choice": "只有 x=8",
+        "truth": false,
+        "reason": "x=8 是最高點，不是端點。"
+      }
+    ],
+    "misconceptionTarget": "把頂點位置當端點或漏負根",
+    "concept": "拱橋零點與實體範圍",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 100,
+    "unitCheck": "x 為公尺位置。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由模型求合理零點並解釋實體範圍」。",
+      "domainBoundary": "實體部分以 y≥0 限制，兩個零點均納入邊界。",
+      "alternateReading": "若把題目誤讀為「把頂點位置當端點或漏負根」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "advanced：求橋拱跨度端點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "求橋拱跨度端點",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "b04a2303b47a761a815c5b72305d0ae853ffbc45ca3d951fbd5b74eb6356faac"
+  },
+  {
+    "questionId": "u21-s011-v008",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "advanced",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "模型 S(x)=-x²+12x 表示一塊展示板的可見面積（平方公尺），但實際設計只允許 2≤x≤5。此範圍內最大面積在哪個 x？",
+    "givenConditions": [
+      "全域頂點 x=6 不在範圍"
+    ],
+    "target": "在受限情境中不用不可行頂點",
+    "text": "模型 S(x)=-x²+12x 表示一塊展示板的可見面積（平方公尺），但實際設計只允許 2≤x≤5。此範圍內最大面積在哪個 x？",
+    "choices": [
+      "x=6",
+      "x=2",
+      "無法判斷",
+      "x=5"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "最大在 x=5，面積 35 平方公尺。",
+    "explanation": "先求軸 x=6，發現區間全在軸左側，函數隨 x 增加；也可比較端點。",
+    "steps": [
+      "檢查頂點可行性",
+      "比較 S(2),S(5)"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "x=6",
+        "truth": false,
+        "reason": "全域頂點不在設計範圍。"
+      },
+      {
+        "choice": "x=2",
+        "truth": false,
+        "reason": "左端面積較小。"
+      },
+      {
+        "choice": "無法判斷",
+        "truth": false,
+        "reason": "式子與閉區間足夠。"
+      },
+      {
+        "choice": "x=5",
+        "truth": true,
+        "reason": "在 [2,5] 內函數仍上升；S(5)=35 大於 S(2)=20。"
+      }
+    ],
+    "misconceptionTarget": "不檢查限制直接使用全域頂點",
+    "concept": "模型限制範圍內優化",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 100,
+    "unitCheck": "x 為設計長度參數，S 為 m²。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「在受限情境中不用不可行頂點」。",
+      "domainBoundary": "只允許閉區間 [2,5]，x=6 必須排除。",
+      "alternateReading": "若把題目誤讀為「不檢查限制直接使用全域頂點」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "advanced：處理不可行最佳點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "處理不可行最佳點",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "1c1b33383ceef99cb19196fffc3ad59c8e6d11057ef4b0c8e88e304653808db4"
+  },
+  {
+    "questionId": "u21-s011-v009",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "advanced",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "某模型 f(x)=a(x-2)²+5 的資料顯示 x=0 時 f=13。若 f 表示成本且頂點是最低成本，a 為何？",
+    "givenConditions": [
+      "頂點最低意味著 a>0",
+      "點 (0,13) 在圖上"
+    ],
+    "target": "結合情境方向與數據求參數",
+    "text": "某模型 f(x)=a(x-2)²+5 的資料顯示 x=0 時 f=13。若 f 表示成本且頂點是最低成本，a 為何？",
+    "choices": [
+      "-2",
+      "2",
+      "4",
+      "8"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "a=2，模型向上，頂點成本 5 為最低。",
+    "explanation": "代入數據求 a=2，再用成本最低的情境檢查符號為正。",
+    "steps": [
+      "建立 13=4a+5",
+      "解 a=2 並驗證方向"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-2",
+        "truth": false,
+        "reason": "代入會得 -3，且頂點會是最高。"
+      },
+      {
+        "choice": "2",
+        "truth": true,
+        "reason": "13=4a+5，得 a=2，且正值符合最低頂點。"
+      },
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "把 13-5=8 除以 2 而非 4。"
+      },
+      {
+        "choice": "8",
+        "truth": false,
+        "reason": "把輸出差直接當 a。"
+      }
+    ],
+    "misconceptionTarget": "只解數值不檢查方向",
+    "concept": "參數求解與情境交叉驗證",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "a 的單位依模型定義，本題只求數值。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「結合情境方向與數據求參數」。",
+      "domainBoundary": "x=0 是模型資料點，頂點 x=2 也在討論範圍。",
+      "alternateReading": "若把題目誤讀為「只解數值不檢查方向」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "advanced：由成本數據確定模型；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由成本數據確定模型",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "d2acec602d21af27ed15cc4f848d4ef630b53ef66b4ac05e512b0c9afca4050c"
+  },
+  {
+    "questionId": "u21-s011-v010",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "literacy",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "球軌跡 h(t)=-5(t-2)²+22。安全網高度為 17 m，設在 t=1 秒對應的位置。球會在網頂上方、剛好網頂或下方？",
+    "givenConditions": [
+      "h 與網高同用 m"
+    ],
+    "target": "將指定時刻模型值與門檻比較",
+    "text": "球軌跡 h(t)=-5(t-2)²+22。安全網高度為 17 m，設在 t=1 秒對應的位置。球會在網頂上方、剛好網頂或下方？",
+    "choices": [
+      "在網頂上方 5 m",
+      "在網頂下方 5 m",
+      "無法比較",
+      "剛好在網頂"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "球在該位置剛好達到網頂高度。",
+    "explanation": "代入 t=1 得 17，與網頂高度完全相同。",
+    "steps": [
+      "計算 t-2=-1",
+      "得到 h=17 並比較"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "在網頂上方 5 m",
+        "truth": false,
+        "reason": "把平方項扣除誤作 0。"
+      },
+      {
+        "choice": "在網頂下方 5 m",
+        "truth": false,
+        "reason": "把 22-5=17 與 17 的差錯認 5。"
+      },
+      {
+        "choice": "無法比較",
+        "truth": false,
+        "reason": "模型與網高單位一致且時刻明確。"
+      },
+      {
+        "choice": "剛好在網頂",
+        "truth": true,
+        "reason": "h(1)=-5(1)²+22=17。"
+      }
+    ],
+    "misconceptionTarget": "算出函數值卻未與基準相減或比較",
+    "concept": "模型值與安全閾值比較",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 80,
+    "unitCheck": "h 與網高都為 m，可直接比較。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「將指定時刻模型值與門檻比較」。",
+      "domainBoundary": "t=1 在軌跡有效時間內。",
+      "alternateReading": "若把題目誤讀為「算出函數值卻未與基準相減或比較」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "literacy：判斷球與安全網關係；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "安全網高度是必須比較的情境門檻；只計算 h(1) 而不與 17 m 比較，無法完成題目。",
+    "authoringIntent": "判斷球與安全網關係",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "fd6c76387479770aaf035acbbf72e43dee8fb6f62fd3e9d5b379b4036246ae1b"
+  },
+  {
+    "questionId": "u21-s011-v011",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "literacy",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "音樂會收入模型 R(n)=-100(n-30)²+90000，n 是售出「百張票」的數量，0≤n≤50。最高收入為何？",
+    "givenConditions": [
+      "n 單位為百張，不是單張",
+      "R 單位元"
+    ],
+    "target": "正確讀取縮放單位與最大值",
+    "text": "音樂會收入模型 R(n)=-100(n-30)²+90000，n 是售出「百張票」的數量，0≤n≤50。最高收入為何？",
+    "choices": [
+      "90000 元，售出 3000 張票時",
+      "90000 元，售出 30 張票時",
+      "3000 元，售出 90000 張票時",
+      "50000 元，售出 9000 張票時"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "售出 3000 張時收入最高 90000 元。",
+    "explanation": "最大收入是 k=90000 元；頂點位置 n=30 需換算為 3000 張票。",
+    "steps": [
+      "讀頂點 n=30,R=90000",
+      "換算 30×100 張"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "90000 元，售出 3000 張票時",
+        "truth": true,
+        "reason": "頂點 n=30 代表 30 百張=3000 張。"
+      },
+      {
+        "choice": "90000 元，售出 30 張票時",
+        "truth": false,
+        "reason": "忽略 n 的百張單位。"
+      },
+      {
+        "choice": "3000 元，售出 90000 張票時",
+        "truth": false,
+        "reason": "交換輸入輸出並混亂單位。"
+      },
+      {
+        "choice": "50000 元，售出 9000 張票時",
+        "truth": false,
+        "reason": "未依頂點式讀取。"
+      }
+    ],
+    "misconceptionTarget": "把模型變量 n 當實際張數",
+    "concept": "帶縮放單位的頂點解釋",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 85,
+    "unitCheck": "n×100 得實際票數，R 單位元。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「正確讀取縮放單位與最大值」。",
+      "domainBoundary": "n=30 在 0≤n≤50，且可對應整百張銷售。",
+      "alternateReading": "若把題目誤讀為「把模型變量 n 當實際張數」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "literacy：解讀百張單位模型；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "「n 是百張票的數量」是核心信息；若不換算，會把最佳銷量少寫一百倍，雖然代數頂點本身正確。",
+    "authoringIntent": "解讀百張單位模型",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "8d6a81286b932ff987e811e01a598838bfc4611d0044e3c150a124ec89d1527b"
+  },
+  {
+    "questionId": "u21-s011-v012",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "literacy",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "研究資料只在 0≤x≤10 支持模型 y=-(x-5)²+30。有人用它預測 x=100 時的 y。最適當的評價是什麼？",
+    "givenConditions": [
+      "代數上可代入",
+      "經驗有效範圍有限"
+    ],
+    "target": "評估遠距外插的可靠性",
+    "text": "研究資料只在 0≤x≤10 支持模型 y=-(x-5)²+30。有人用它預測 x=100 時的 y。最適當的評價是什麼？",
+    "choices": [
+      "完全不能做任何代數計算",
+      "預測一定正確，因為二次函數有明確公式",
+      "可以算出數值，但不能僅憑此模型把它當成可靠實際預測",
+      "只要結果為負數就一定錯"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "最合理結論是數值可計算，但不能直接當作可靠實際預測。",
+    "explanation": "區分「數學代入」與「模型可信度」；100 可算但不在 0 到 10 的證據範圍。",
+    "steps": [
+      "確認 100 超出區間",
+      "說明外插限制"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "完全不能做任何代數計算",
+        "truth": false,
+        "reason": "公式仍可代入，只是實際解釋不可靠。"
+      },
+      {
+        "choice": "預測一定正確，因為二次函數有明確公式",
+        "truth": false,
+        "reason": "模型公式不保證超範圍有效。"
+      },
+      {
+        "choice": "可以算出數值，但不能僅憑此模型把它當成可靠實際預測",
+        "truth": true,
+        "reason": "x=100 遠超資料支持範圍，屬於外插。"
+      },
+      {
+        "choice": "只要結果為負數就一定錯",
+        "truth": false,
+        "reason": "負值是否合理取決於量的意義，核心問題是超範圍。"
+      }
+    ],
+    "misconceptionTarget": "把公式存在誤當無限有效",
+    "concept": "模型外插限制",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "題目未指定 y 單位，評價重點是模型範圍。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「評估遠距外插的可靠性」。",
+      "domainBoundary": "x=100 不在資料支持的 0≤x≤10。",
+      "alternateReading": "若把題目誤讀為「把公式存在誤當無限有效」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "literacy：評估模型使用邊界；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "研究資料範圍是模型可信度的一部分；題目不是單純算函數值，而是判斷超出資料區間後的預測責任。",
+    "authoringIntent": "評估模型使用邊界",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "7139b7cef3406df244c2c903f147655c070700df6a45666921dc473ba9428e3c"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES=[
+  {
+    "questionId": "u21-s011-cr001",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "一顆球的高度模型為 h(t)=-(t-3)²+16，t 以秒、h 以公尺表示，且只考慮 t≥0。求初始高度、最高高度與時刻，以及球落地時間；解釋為何捨去另一個代數解。",
+    "givenConditions": [
+      "事件從 t=0 開始",
+      "落地時 h=0"
+    ],
+    "target": "完整解釋軌跡模型",
+    "requiredWork": [
+      "計算 h(0)。",
+      "讀頂點並解釋單位。",
+      "解 h(t)=0 並篩選時間。"
+    ],
+    "fullCreditSolution": [
+      "初始高度 h(0)=-9+16=7 公尺。",
+      "頂點 (3,16)，所以 3 秒時最高 16 公尺。",
+      "落地：0=-(t-3)²+16，(t-3)²=16，t=7 或 -1。",
+      "因只考慮 t≥0，-1 秒在記錄開始前，故落地時間為 7 秒。"
+    ],
+    "alternativeSolutions": [
+      "可畫時間軸標示 -1、0、3、7，說明負根屬於模型向過去延伸。"
+    ],
+    "reasoningSteps": [
+      "初始高度 h(0)=-9+16=7 公尺。",
+      "頂點 (3,16)，所以 3 秒時最高 16 公尺。",
+      "落地：0=-(t-3)²+16，(t-3)²=16，t=7 或 -1。",
+      "因只考慮 t≥0，-1 秒在記錄開始前，故落地時間為 7 秒。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "初始 7 m、最高 16 m 在 3 s、落地 7 s 全對，並解釋排除 -1 s。"
+      },
+      {
+        "score": 2,
+        "criteria": "三項中兩項完整正確，或解根只有單一符號錯誤但有定義域篩選。"
+      },
+      {
+        "score": 1,
+        "criteria": "能正確讀頂點或正確建立 (t-3)²=16。"
+      },
+      {
+        "score": 0,
+        "criteria": "交換時間與高度、保留負時間且無有效理由。"
+      }
+    ],
+    "partialCreditRules": [
+      "三項中兩項完整正確，或解根只有單一符號錯誤但有定義域篩選。",
+      "能正確讀頂點或正確建立 (t-3)²=16。"
+    ],
+    "followThroughPolicy": "若平方根步驟正確但 t=3±4 算錯一根，定義域篩選與頂點部分仍獨立給分。",
+    "unitAndNotationRules": [
+      "t 單位秒，h 單位公尺。",
+      "最高值與發生時刻分開敘述。"
+    ],
+    "answerOnlyPolicy": "只寫三個數無單位與負根說明，最高 2 分。",
+    "commonErrors": [
+      "把 h(0) 寫 16。",
+      "只取平方根 4 而寫 t=4。",
+      "同時保留 -1 秒為實際落地。"
+    ],
+    "independentReview": {
+      "derivedResult": "初始 7 m；3 s 時最高 16 m；7 s 落地，捨去 -1 s。",
+      "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "d25e4f4913bc6dff6a978a2571b51f4172ee7700184ca0c571969c6df7bfd3ae"
+  },
+  {
+    "questionId": "u21-s011-cr002",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-literacy"
+    },
+    "prompt": "某公司用 P(x)=-2(x-50)²+5000 表示每週利潤（元），模型只適用 20≤x≤65，x 為售出件數且必須是整數。回答：(1) 模型內的最大利潤與銷量；(2) x=70 的代入值能否作為可信預測；(3) 若實際只能售出偶數件，最佳銷量是否改變。",
+    "givenConditions": [
+      "x 為整數",
+      "模型有效區間 [20,65]"
+    ],
+    "target": "綜合極值、定義域、離散條件與外插",
+    "requiredWork": [
+      "檢查頂點 x=50 是否可行。",
+      "評價 x=70 是否超出模型範圍。",
+      "檢查 50 是否滿足偶數限制。"
+    ],
+    "fullCreditSolution": [
+      "a=-2<0，頂點 (50,5000)，且 50 在 [20,65]，所以最大利潤 5000 元，售出 50 件。",
+      "x=70 雖可代入公式，但超出模型適用範圍，不能僅憑此式當作可信實際預測。",
+      "50 是偶數，因此加入「只能售出偶數件」後，最佳銷量與最大利潤都不改變。"
+    ],
+    "alternativeSolutions": [
+      "可比較鄰近偶數 48、52 的利潤都低於 5000，作為離散驗證。"
+    ],
+    "reasoningSteps": [
+      "a=-2<0，頂點 (50,5000)，且 50 在 [20,65]，所以最大利潤 5000 元，售出 50 件。",
+      "x=70 雖可代入公式，但超出模型適用範圍，不能僅憑此式當作可信實際預測。",
+      "50 是偶數，因此加入「只能售出偶數件」後，最佳銷量與最大利潤都不改變。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "三問全部正確，明確給 50 件、5000 元、外插限制與偶數條件不改變結論。"
+      },
+      {
+        "score": 2,
+        "criteria": "前兩問正確但偶數說明不足，或三問中有一處輕微表達遺漏。"
+      },
+      {
+        "score": 1,
+        "criteria": "能正確讀頂點並檢查 50 在範圍，或清楚指出 70 超範圍。"
+      },
+      {
+        "score": 0,
+        "criteria": "用 x=65 當最大、接受 70 為可靠預測，且忽略整數與偶數條件。"
+      }
+    ],
+    "partialCreditRules": [
+      "前兩問正確但偶數說明不足，或三問中有一處輕微表達遺漏。",
+      "能正確讀頂點並檢查 50 在範圍，或清楚指出 70 超範圍。"
+    ],
+    "followThroughPolicy": "三小題獨立評分；若最大利潤算術錯但頂點與範圍判斷正確，可保留主要方法分。",
+    "unitAndNotationRules": [
+      "x 單位件且為整數。",
+      "P 單位元。"
+    ],
+    "answerOnlyPolicy": "只寫「50、5000」不回答外插與偶數，最高 1 分。",
+    "commonErrors": [
+      "認為銷量越大利潤越大。",
+      "公式可算就認定外插可靠。",
+      "看到偶數限制就盲目改為 48 或 52。"
+    ],
+    "independentReview": {
+      "derivedResult": "50 件時最大 5000 元；70 件超範圍不宜可信；偶數限制不改變最佳解。",
+      "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "08b674ccf636c872818012f431f60d46624e679513afa0f4d34802e55b49ffd0"
+  }
+];
+
+export const SEMANTIC_REVIEWS=[
+  {
+    "questionId": "u21-s011-v001",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "3bebe31ebfa5243d64370850dc2a35d51b5eede5c41b5c32ba185525be1e4d1d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "h(0)=1 公尺，語意是開始時離地 1 公尺。",
+    "derivedAnswer": "物體開始時的高度",
+    "storedAnswer": "物體開始時的高度",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「物體開始時的高度」。逐項反證其餘選項：「物體落地的時間」不成立，因為落地需解 h(t)=0。；「物體的最高高度」不成立，因為最高高度要找頂點。；「物體移動的總時間」不成立，因為h(0) 是高度值，不是時間長度。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是解釋函數在零輸入的情境意義，沒有未定義的新符號。",
+      "unitConflict": "單位審查：t 為秒，h 為公尺；h(0) 是公尺量。 本題四個選項皆回應同一所求量「解釋函數在零輸入的情境意義」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：t=0 是有效定義域起點。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「看到 0 就誤認為落地或無高度」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「物體開始時的高度」。"
+    },
+    "difficultyReason": "basic：解釋初始值；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求解釋函數在零輸入的情境意義，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「模型 h(t)=-5t²+20t+1 中，t 代表秒、h 代表公尺。h(0) 的意義是什麼？」獨立重算：h(0)=1 公尺，語意是開始時離地 1 公尺。；所得答案為「物體開始時的高度」。四選項逐項核對：「物體落地的時間」=假，落地需解 h(t)=0。；「物體的最高高度」=假，最高高度要找頂點。；「物體開始時的高度」=真，t=0 是開始時刻，h(0) 是初始高度。；「物體移動的總時間」=假，h(0) 是高度值，不是時間長度。。難度判定依據：basic：解釋初始值；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v002",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "abe8b80ac8888b9eaab4b1663da4699248c48bfb28f8cd7c6e4607975a28917c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "最高點在 x=4 m。",
+    "derivedAnswer": "距基準 4 公尺",
+    "storedAnswer": "距基準 4 公尺",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「距基準 4 公尺」。逐項反證其餘選項：「距基準 8 公尺」不成立，因為8 是最高高度。；「距基準 -4 公尺」不成立，因為括號符號讀反。；「無法判斷」不成立，因為式子已給完整頂點。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是從頂點式解釋最高位置，沒有未定義的新符號。",
+      "unitConflict": "單位審查：x 以 m 表示，答案為水平位置 4 m。 本題四個選項皆回應同一所求量「從頂點式解釋最高位置」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：頂點屬於模型可見拱形範圍。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「交換水平位置和高度」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「距基準 4 公尺」。"
+    },
+    "difficultyReason": "basic：解釋拱門最高位置；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求從頂點式解釋最高位置，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「一座拱門模型 y=-0.5(x-4)²+8，x 是距左側基準的公尺數。拱門最高點的水平位置為何？」獨立重算：最高點在 x=4 m。；所得答案為「距基準 4 公尺」。四選項逐項核對：「距基準 8 公尺」=假，8 是最高高度。；「距基準 4 公尺」=真，向下頂點 x=4 是最高點位置。；「距基準 -4 公尺」=假，括號符號讀反。；「無法判斷」=假，式子已給完整頂點。。難度判定依據：basic：解釋拱門最高位置；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v003",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "5c184d99997228b8da731b2dae85e67ebc06dd2ea2d9375bb86a5025edec9ed8",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "R(n)≤6000，最大值 6000 元。",
+    "derivedAnswer": "6000 元",
+    "storedAnswer": "6000 元",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「6000 元」。逐項反證其餘選項：「15 元」不成立，因為15 是參加人數。；「20 元」不成立，因為20 是係數絕對值。；「沒有最大值」不成立，因為向下拋物線有最高點。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是讀取向下模型的最大輸出，沒有未定義的新符號。",
+      "unitConflict": "單位審查：R 單位元，n 單位人。 本題四個選項皆回應同一所求量「讀取向下模型的最大輸出」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：n=15 是合理非負整數。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把輸入人數當輸出金額」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「6000 元」。"
+    },
+    "difficultyReason": "basic：讀取收益最大值；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求讀取向下模型的最大輸出，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「某活動收益 R(n)=-20(n-15)²+6000，n 為參加人數。R 的最大值為何？」獨立重算：R(n)≤6000，最大值 6000 元。；所得答案為「6000 元」。四選項逐項核對：「15 元」=假，15 是參加人數。；「20 元」=假，20 是係數絕對值。；「沒有最大值」=假，向下拋物線有最高點。；「6000 元」=真，負平方項最大為 0，頂點輸出 6000。。難度判定依據：basic：讀取收益最大值；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v004",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "aa3a0936b5ebe6e1677fe1307de9afd37c4c0fce28af54c912e295128a02756b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "落地時間 3 秒；負根僅是模型向過去延伸的交點。",
+    "derivedAnswer": "3 秒",
+    "storedAnswer": "3 秒",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「3 秒」。逐項反證其餘選項：「-1 秒」不成立，因為代數上是根，但不合事件時間。；「2 秒」不成立，因為這是兩根間距的一半，不是根。；「4 秒」不成立，因為把最高高度當時間。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是篩選符合情境的方程解，沒有未定義的新符號。",
+      "unitConflict": "單位審查：t 單位秒。 本題四個選項皆回應同一所求量「篩選符合情境的方程解」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：事件只接受 t≥0，故排除 -1。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「保留所有代數根不看時間」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「3 秒」。"
+    },
+    "difficultyReason": "standard：從兩根選合理時間；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求篩選符合情境的方程解，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「球的高度 h(t)=-(t-1)²+4。解 h(t)=0 得 t=-1、3。若球在 t=0 後開始記錄，落地時間應取哪個？」獨立重算：落地時間 3 秒；負根僅是模型向過去延伸的交點。；所得答案為「3 秒」。四選項逐項核對：「3 秒」=真，-1 秒在記錄開始前，不屬於定義域。；「-1 秒」=假，代數上是根，但不合事件時間。；「2 秒」=假，這是兩根間距的一半，不是根。；「4 秒」=假，把最高高度當時間。。難度判定依據：standard：從兩根選合理時間；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v005",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "aab39834fab06bff5e286bef9e5e135052e8d805c290aa19cd281cc7c7bcc6f5",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "P(40)=3200，為區間最大值。",
+    "derivedAnswer": "銷售 40 件時利潤最大為 3200 元",
+    "storedAnswer": "銷售 40 件時利潤最大為 3200 元",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「銷售 40 件時利潤最大為 3200 元」。逐項反證其餘選項：「銷售 40 件時利潤最小」不成立，因為方向判反。；「最大利潤在 x=60，因為數量最多」不成立，因為二次模型頂點後利潤下降。；「不能使用頂點，因為模型有限制範圍」不成立，因為頂點在範圍內，反而可直接使用。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是檢查模型頂點是否在有效區間，沒有未定義的新符號。",
+      "unitConflict": "單位審查：x 單位件，P 單位元。 本題四個選項皆回應同一所求量「檢查模型頂點是否在有效區間」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：40 位於有效範圍 10≤x≤60。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把銷售量越多誤認利潤越高」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「銷售 40 件時利潤最大為 3200 元」。"
+    },
+    "difficultyReason": "standard：驗證商業模型頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求檢查模型頂點是否在有效區間，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「某產品利潤模型 P(x)=-2(x-40)²+3200，只適用 10≤x≤60。下列哪個結論正確？」獨立重算：P(40)=3200，為區間最大值。；所得答案為「銷售 40 件時利潤最大為 3200 元」。四選項逐項核對：「銷售 40 件時利潤最小」=假，方向判反。；「銷售 40 件時利潤最大為 3200 元」=真，頂點可行且開口向下。；「最大利潤在 x=60，因為數量最多」=假，二次模型頂點後利潤下降。；「不能使用頂點，因為模型有限制範圍」=假，頂點在範圍內，反而可直接使用。。難度判定依據：standard：驗證商業模型頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v006",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "ec7963a9874e89fcdf05f7ab8ec614714340888b6f0c8c2f559c62c033ed7063",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "合理頂點為 (3,10)；其他敘述與表中數值衝突。",
+    "derivedAnswer": "最高點可能在 t=3 秒，h=10 公尺",
+    "storedAnswer": "最高點可能在 t=3 秒，h=10 公尺",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「最高點可能在 t=3 秒，h=10 公尺」。逐項反證其餘選項：「最高點一定在 t=4 秒」不成立，因為4 秒高度低於 3 秒。；「高度每秒固定增加」不成立，因為相鄰差 5、3、1、-1 不固定。；「模型一定關於 t=2 對稱」不成立，因為t=2 兩側 1、3 秒值 6、10 不相等。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是由數據趨勢定位可能頂點並避免過度推斷，沒有未定義的新符號。",
+      "unitConflict": "單位審查：t 秒、h 公尺。 本題四個選項皆回應同一所求量「由數據趨勢定位可能頂點並避免過度推斷」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：推論限定「資料來自對稱拋物線且最高點在整秒」。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把最後一列或等差趨勢當最高點」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「最高點可能在 t=3 秒，h=10 公尺」。"
+    },
+    "difficultyReason": "standard：用數據辨認頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由數據趨勢定位可能頂點並避免過度推斷，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「一個噴泉高度表記錄 t=0,1,2,3,4 秒時 h=1,6,9,10,9 公尺。若資料來自對稱拋物線且最高點在整秒，下列推論何者最合理？」獨立重算：合理頂點為 (3,10)；其他敘述與表中數值衝突。；所得答案為「最高點可能在 t=3 秒，h=10 公尺」。四選項逐項核對：「最高點一定在 t=4 秒」=假，4 秒高度低於 3 秒。；「高度每秒固定增加」=假，相鄰差 5、3、1、-1 不固定。；「最高點可能在 t=3 秒，h=10 公尺」=真，表中 3 秒值最大，且 2、4 秒同為 9 顯示關於 3 對稱。；「模型一定關於 t=2 對稱」=假，t=2 兩側 1、3 秒值 6、10 不相等。。難度判定依據：standard：用數據辨認頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v007",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "b04a2303b47a761a815c5b72305d0ae853ffbc45ca3d951fbd5b74eb6356faac",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "實體跨度從 x=0 到 x=16。",
+    "derivedAnswer": "x=0 與 x=16",
+    "storedAnswer": "x=0 與 x=16",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「x=0 與 x=16」。逐項反證其餘選項：「x=-8 與 x=8」不成立，因為把 h=8 當半寬中心錯誤。；「x=4 與 x=12」不成立，因為平方根錯取 4。；「只有 x=8」不成立，因為x=8 是最高點，不是端點。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是由模型求合理零點並解釋實體範圍，沒有未定義的新符號。",
+      "unitConflict": "單位審查：x 為公尺位置。 本題四個選項皆回應同一所求量「由模型求合理零點並解釋實體範圍」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：實體部分以 y≥0 限制，兩個零點均納入邊界。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把頂點位置當端點或漏負根」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「x=0 與 x=16」。"
+    },
+    "difficultyReason": "advanced：求橋拱跨度端點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由模型求合理零點並解釋實體範圍，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「橋拱模型 y=-0.25(x-8)²+16，只保留 y≥0 的實體部分。橋拱左右端點的水平位置為何？」獨立重算：實體跨度從 x=0 到 x=16。；所得答案為「x=0 與 x=16」。四選項逐項核對：「x=0 與 x=16」=真，0=-0.25(x-8)²+16，得 (x-8)²=64，x=0、16。；「x=-8 與 x=8」=假，把 h=8 當半寬中心錯誤。；「x=4 與 x=12」=假，平方根錯取 4。；「只有 x=8」=假，x=8 是最高點，不是端點。。難度判定依據：advanced：求橋拱跨度端點；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v008",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "1c1b33383ceef99cb19196fffc3ad59c8e6d11057ef4b0c8e88e304653808db4",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "最大在 x=5，面積 35 平方公尺。",
+    "derivedAnswer": "x=5",
+    "storedAnswer": "x=5",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「x=5」。逐項反證其餘選項：「x=6」不成立，因為全域頂點不在設計範圍。；「x=2」不成立，因為左端面積較小。；「無法判斷」不成立，因為式子與閉區間足夠。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是在受限情境中不用不可行頂點，沒有未定義的新符號。",
+      "unitConflict": "單位審查：x 為設計長度參數，S 為 m²。 本題四個選項皆回應同一所求量「在受限情境中不用不可行頂點」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：只允許閉區間 [2,5]，x=6 必須排除。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「不檢查限制直接使用全域頂點」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「x=5」。"
+    },
+    "difficultyReason": "advanced：處理不可行最佳點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求在受限情境中不用不可行頂點，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「模型 S(x)=-x²+12x 表示一塊展示板的可見面積（平方公尺），但實際設計只允許 2≤x≤5。此範圍內最大面積在哪個 x？」獨立重算：最大在 x=5，面積 35 平方公尺。；所得答案為「x=5」。四選項逐項核對：「x=6」=假，全域頂點不在設計範圍。；「x=2」=假，左端面積較小。；「無法判斷」=假，式子與閉區間足夠。；「x=5」=真，在 [2,5] 內函數仍上升；S(5)=35 大於 S(2)=20。。難度判定依據：advanced：處理不可行最佳點；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v009",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "d2acec602d21af27ed15cc4f848d4ef630b53ef66b4ac05e512b0c9afca4050c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "a=2，模型向上，頂點成本 5 為最低。",
+    "derivedAnswer": "2",
+    "storedAnswer": "2",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「2」。逐項反證其餘選項：「-2」不成立，因為代入會得 -3，且頂點會是最高。；「4」不成立，因為把 13-5=8 除以 2 而非 4。；「8」不成立，因為把輸出差直接當 a。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是結合情境方向與數據求參數，沒有未定義的新符號。",
+      "unitConflict": "單位審查：a 的單位依模型定義，本題只求數值。 本題四個選項皆回應同一所求量「結合情境方向與數據求參數」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：x=0 是模型資料點，頂點 x=2 也在討論範圍。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「只解數值不檢查方向」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「2」。"
+    },
+    "difficultyReason": "advanced：由成本數據確定模型；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求結合情境方向與數據求參數，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「某模型 f(x)=a(x-2)²+5 的資料顯示 x=0 時 f=13。若 f 表示成本且頂點是最低成本，a 為何？」獨立重算：a=2，模型向上，頂點成本 5 為最低。；所得答案為「2」。四選項逐項核對：「-2」=假，代入會得 -3，且頂點會是最高。；「2」=真，13=4a+5，得 a=2，且正值符合最低頂點。；「4」=假，把 13-5=8 除以 2 而非 4。；「8」=假，把輸出差直接當 a。。難度判定依據：advanced：由成本數據確定模型；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v010",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "fd6c76387479770aaf035acbbf72e43dee8fb6f62fd3e9d5b379b4036246ae1b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "球在該位置剛好達到網頂高度。",
+    "derivedAnswer": "剛好在網頂",
+    "storedAnswer": "剛好在網頂",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「剛好在網頂」。逐項反證其餘選項：「在網頂上方 5 m」不成立，因為把平方項扣除誤作 0。；「在網頂下方 5 m」不成立，因為把 22-5=17 與 17 的差錯認 5。；「無法比較」不成立，因為模型與網高單位一致且時刻明確。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是將指定時刻模型值與門檻比較，沒有未定義的新符號。",
+      "unitConflict": "單位審查：h 與網高都為 m，可直接比較。 本題四個選項皆回應同一所求量「將指定時刻模型值與門檻比較」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：t=1 在軌跡有效時間內。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「算出函數值卻未與基準相減或比較」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「剛好在網頂」。"
+    },
+    "difficultyReason": "literacy：判斷球與安全網關係；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "安全網高度是必須比較的情境門檻；只計算 h(1) 而不與 17 m 比較，無法完成題目。",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求將指定時刻模型值與門檻比較，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「球軌跡 h(t)=-5(t-2)²+22。安全網高度為 17 m，設在 t=1 秒對應的位置。球會在網頂上方、剛好網頂或下方？」獨立重算：球在該位置剛好達到網頂高度。；所得答案為「剛好在網頂」。四選項逐項核對：「在網頂上方 5 m」=假，把平方項扣除誤作 0。；「在網頂下方 5 m」=假，把 22-5=17 與 17 的差錯認 5。；「無法比較」=假，模型與網高單位一致且時刻明確。；「剛好在網頂」=真，h(1)=-5(1)²+22=17。。難度判定依據：literacy：判斷球與安全網關係；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v011",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "8d6a81286b932ff987e811e01a598838bfc4611d0044e3c150a124ec89d1527b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "售出 3000 張時收入最高 90000 元。",
+    "derivedAnswer": "90000 元，售出 3000 張票時",
+    "storedAnswer": "90000 元，售出 3000 張票時",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「90000 元，售出 3000 張票時」。逐項反證其餘選項：「90000 元，售出 30 張票時」不成立，因為忽略 n 的百張單位。；「3000 元，售出 90000 張票時」不成立，因為交換輸入輸出並混亂單位。；「50000 元，售出 9000 張票時」不成立，因為未依頂點式讀取。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是正確讀取縮放單位與最大值，沒有未定義的新符號。",
+      "unitConflict": "單位審查：n×100 得實際票數，R 單位元。 本題四個選項皆回應同一所求量「正確讀取縮放單位與最大值」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：n=30 在 0≤n≤50，且可對應整百張銷售。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把模型變量 n 當實際張數」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「90000 元，售出 3000 張票時」。"
+    },
+    "difficultyReason": "literacy：解讀百張單位模型；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "「n 是百張票的數量」是核心信息；若不換算，會把最佳銷量少寫一百倍，雖然代數頂點本身正確。",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求正確讀取縮放單位與最大值，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「音樂會收入模型 R(n)=-100(n-30)²+90000，n 是售出「百張票」的數量，0≤n≤50。最高收入為何？」獨立重算：售出 3000 張時收入最高 90000 元。；所得答案為「90000 元，售出 3000 張票時」。四選項逐項核對：「90000 元，售出 3000 張票時」=真，頂點 n=30 代表 30 百張=3000 張。；「90000 元，售出 30 張票時」=假，忽略 n 的百張單位。；「3000 元，售出 90000 張票時」=假，交換輸入輸出並混亂單位。；「50000 元，售出 9000 張票時」=假，未依頂點式讀取。。難度判定依據：literacy：解讀百張單位模型；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s011-v012",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "contentSha256": "7139b7cef3406df244c2c903f147655c070700df6a45666921dc473ba9428e3c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "最合理結論是數值可計算，但不能直接當作可靠實際預測。",
+    "derivedAnswer": "可以算出數值，但不能僅憑此模型把它當成可靠實際預測",
+    "storedAnswer": "可以算出數值，但不能僅憑此模型把它當成可靠實際預測",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「可以算出數值，但不能僅憑此模型把它當成可靠實際預測」。逐項反證其餘選項：「完全不能做任何代數計算」不成立，因為公式仍可代入，只是實際解釋不可靠。；「預測一定正確，因為二次函數有明確公式」不成立，因為模型公式不保證超範圍有效。；「只要結果為負數就一定錯」不成立，因為負值是否合理取決於量的意義，核心問題是超範圍。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-function-literacy」講義中先定義；本題目標是評估遠距外插的可靠性，沒有未定義的新符號。",
+      "unitConflict": "單位審查：題目未指定 y 單位，評價重點是模型範圍。 本題四個選項皆回應同一所求量「評估遠距外插的可靠性」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：x=100 不在資料支持的 0≤x≤10。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把公式存在誤當無限有效」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「可以算出數值，但不能僅憑此模型把它當成可靠實際預測」。"
+    },
+    "difficultyReason": "literacy：評估模型使用邊界；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "研究資料範圍是模型可信度的一部分；題目不是單純算函數值，而是判斷超出資料區間後的預測責任。",
+    "prerequisiteCheck": "需先能使用 quadratic-application-area 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求評估遠距外插的可靠性，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「研究資料只在 0≤x≤10 支持模型 y=-(x-5)²+30。有人用它預測 x=100 時的 y。最適當的評價是什麼？」獨立重算：最合理結論是數值可計算，但不能直接當作可靠實際預測。；所得答案為「可以算出數值，但不能僅憑此模型把它當成可靠實際預測」。四選項逐項核對：「完全不能做任何代數計算」=假，公式仍可代入，只是實際解釋不可靠。；「預測一定正確，因為二次函數有明確公式」=假，模型公式不保證超範圍有效。；「可以算出數值，但不能僅憑此模型把它當成可靠實際預測」=真，x=100 遠超資料支持範圍，屬於外插。；「只要結果為負數就一定錯」=假，負值是否合理取決於量的意義，核心問題是超範圍。。難度判定依據：literacy：評估模型使用邊界；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  }
+];
+
+export const DRAWING_SPECS=[
+  {
+    "figureId": "u21-fig-s011-01",
+    "drawingSpecId": "u21-draw-s011-01",
+    "unitId": "u21",
+    "topicId": "u21-literacy",
+    "skillId": "quadratic-function-literacy",
+    "title": "軌跡模型與定義域",
+    "svgPath": "figures/u21/u21-fig-s011-01.svg",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "altText": "本圖以高對比線條與文字標籤呈現：球體高度 h=-(t-3)²+16 標出初始、最高與落地，負時間根標為事件前。",
+    "drawingSpec": {
+      "canvas": {
+        "width": 720,
+        "height": 420
+      },
+      "viewBox": "0 0 720 420",
+      "coordinateSystem": "SVG 原點在左上；所有座標與曲線位置依本圖明列的像素配置。",
+      "elements": "本技能專用的座標軸、拋物線、標記點、文字與必要輔助線，詳見 SVG 元素。",
+      "labels": "所有關鍵方程式、頂點、對稱軸、端點或表格欄位直接以文字標示。",
+      "tickMarks": "圖形以關鍵座標文字為主；未標一般刻度時不得由外觀估讀其他座標。",
+      "units": "情境圖依文字標示秒、公尺或平方單位；純座標圖使用無單位座標。",
+      "lineRules": "實線為函數曲線或座標軸，虛線為對稱軸、限制邊界或比較曲線；用途由文字同步說明。",
+      "scalePolicy": "同一圖內比較寬窄時使用同一比例；未標示的距離不得作精確數值推論。",
+      "notToScaleWarning": "除明列座標外，不可只憑圖形外觀推算未標示數值。",
+      "mobileConstraints": "最小主要字級 16 px，關鍵線寬至少 2 px，640 至 760 寬 viewBox 可等比例縮放。",
+      "answerLeakageControl": "圖形只呈現講義所需結構或題幹已給資訊；不得把未給的選擇題答案直接標成結論。"
+    },
+    "svgAssertions": [
+      "<title>",
+      "<desc>",
+      "role=\"img\"",
+      "stroke=\"black\""
+    ],
+    "geometryAssertions": [
+      "SVG viewBox 與 width、height 均存在。",
+      "關鍵點與輔助線座標在畫布範圍內。",
+      "文字標籤不依賴顏色區分。"
+    ],
+    "figureReview": {
+      "mathematicalAccuracy": "pass",
+      "mobileReadability": "pass",
+      "answerLeakage": "pass",
+      "manualVisualInspection": "pass",
+      "reviewNote": "人工檢視 u21-fig-s011-01：球體高度 h=-(t-3)²+16 標出初始、最高與落地，負時間根標為事件前。 已核對曲線方向、標記座標、虛實線語意、文字可讀性與畫布邊界，未以未標刻度洩漏額外答案。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "7cf5fa5dcb46beb82bc6bde5ba7b58596a7b0f3e2c04e899119f9720f7a45c1d"
+  }
+];

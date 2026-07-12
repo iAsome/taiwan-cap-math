@@ -1,0 +1,275 @@
+{
+  "lectureId": "u21-s008-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-graphs",
+  "skillId": "quadratic-table-graph",
+  "lockedTitle": "列表作圖概念",
+  "title": "有效列表再作圖：用對稱減少計算",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-table-graph"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能依頂點與對稱軸選擇合適 x 值。",
+    "能正確完成二次函數值表。",
+    "能利用對稱填補等高值並檢查算錯。",
+    "能把表格點畫成平滑且方向正確的拋物線。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-vertex-form-basic",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "已會讀頂點式；本節把 h 當作表格中央，選取 h±1、h±2 等成對輸入。",
+  "glossary": [
+    {
+      "term": "值表",
+      "definition": "依序列出 x 與函數值 y 的表格。"
+    },
+    {
+      "term": "對稱選點",
+      "definition": "以對稱軸為中心選取等距的 x。"
+    },
+    {
+      "term": "關鍵點",
+      "definition": "頂點、截距或能清楚控制曲線形狀的點。"
+    },
+    {
+      "term": "作圖尺度",
+      "definition": "每一格代表多少單位。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "h-d、h、h+d",
+      "meaning": "以對稱軸 x=h 為中心的成對 x。"
+    },
+    {
+      "symbol": "f(h-d)=f(h+d)",
+      "meaning": "對稱點函數值相同。"
+    },
+    {
+      "symbol": "Δx",
+      "meaning": "選點時橫座標的固定間隔。"
+    }
+  ],
+  "conceptNarrative": [
+    "亂選 x 可能得到很大的 y 或看不出頂點。最有效的表格是把對稱軸放在中央。",
+    "頂點式中，h±d 代入後平方都是 d²，因此成對的 y 必相同。這既能省計算，也能當作錯誤檢查。",
+    "畫圖不是把點用直線段硬接，而是依開口、頂點與對稱性畫平滑曲線。",
+    "若 y 值超出紙面，可改用較小 Δx 或調整刻度，但不能改變函數值來塞進圖。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "對稱值表",
+      "statement": "以 x=h 為中心，選取等距輸入，所得函數值左右相同。"
+    },
+    {
+      "name": "充分作圖點",
+      "statement": "能顯示頂點、方向與曲率的有限代表點；完整圖形仍包含無限多點。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "f(h±d)=ad²+k",
+      "conditions": [
+        "f(x)=a(x-h)²+k"
+      ],
+      "meaning": "快速計算成對值。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不同 x 間隔也可作圖，但不能假設表格左右位置對稱。",
+    "只有兩點通常不足以決定拋物線形狀。",
+    "表格對稱不等於 y 值依序等差。",
+    "圖形延伸方向必須符合 a 的符號。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "由式子找 h、k 與開口。",
+      "check": "頂點和軸是否先確定？"
+    },
+    {
+      "step": 2,
+      "instruction": "選 x=h、h±1、h±2。",
+      "check": "數值是否適合題目刻度？"
+    },
+    {
+      "step": 3,
+      "instruction": "先算頂點，再算一側。",
+      "check": "平方與係數運算是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "用對稱填另一側。",
+      "check": "相同距離的 y 是否一致？"
+    },
+    {
+      "step": 5,
+      "instruction": "標點並畫平滑曲線。",
+      "check": "頂點、開口和所有點都吻合嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "為 y=(x-2)²-1 選五個最方便的 x。",
+      "solutionSteps": [
+        "對稱軸 x=2。",
+        "選 0、1、2、3、4。"
+      ],
+      "answer": "x=0,1,2,3,4。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "完成上題 y 值。",
+      "solutionSteps": [
+        "距軸 2、1、0、1、2。",
+        "平方後減 1 得 3、0、-1、0、3。"
+      ],
+      "answer": "y=3,0,-1,0,3。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "y=-2(x+1)²+4 在 x=-3 與 x=1 的值。",
+      "solutionSteps": [
+        "兩者距軸 x=-1 都是 2。",
+        "y=-2×4+4=-4。"
+      ],
+      "answer": "兩者皆 -4。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "表格左右不對稱：x=1,2,4，能否作圖？",
+      "solutionSteps": [
+        "可以逐點代入。",
+        "但若補上 x=0 與 x=3 等對稱點，形狀更可靠。"
+      ],
+      "answer": "可以，但宜補對稱點。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "若點 (2,-1) 是向上拋物線最低點，連線時要注意什麼？",
+      "solutionSteps": [
+        "曲線在該點改變下降與上升方向。",
+        "兩側應平滑上升，不可穿過更低 y。"
+      ],
+      "answer": "以 (2,-1) 為頂點平滑向上延伸。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "完成單一代入值。",
+    "standard": "完成對稱五點表。",
+    "advanced": "由部分表格偵測錯值或反推 h。",
+    "literacy": "依量測範圍選取合理時間或位置建立模型圖。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "表格只選軸的一側。",
+      "why": "圖形會缺少對稱資訊。",
+      "correction": "至少選一組 h±d。"
+    },
+    {
+      "mistake": "把 h±1 代成括號值 h±1-h。",
+      "why": "未整體代入。",
+      "correction": "先算 x-h 再平方。"
+    },
+    {
+      "mistake": "左右同距卻算出不同 y。",
+      "why": "至少一側計算有誤。",
+      "correction": "利用 f(h-d)=f(h+d) 查錯。"
+    },
+    {
+      "mistake": "用折線連點。",
+      "why": "把連續曲線當離散線段。",
+      "correction": "依曲率畫平滑拋物線。"
+    },
+    {
+      "mistake": "忽略座標尺度。",
+      "why": "點位置與數值不一致。",
+      "correction": "先標每格單位。"
+    },
+    {
+      "mistake": "為了放進圖而更改 y 值。",
+      "why": "把作圖限制凌駕函數。",
+      "correction": "調整刻度或選較近的 x。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "y=(x-3)² 的五個方便 x？",
+      "answer": "1,2,3,4,5。"
+    },
+    {
+      "prompt": "距軸 2 時，y=2(x-1)²-3 的值？",
+      "answer": "5。"
+    },
+    {
+      "prompt": "f(0)=7、軸 x=2，f(4)？",
+      "answer": "7。"
+    },
+    {
+      "prompt": "二次函數點之間應畫折線嗎？",
+      "answer": "不應，應畫平滑曲線。"
+    }
+  ],
+  "summary": [
+    "以對稱軸為中心選點最有效。",
+    "h±d 的函數值相同，可省算並查錯。",
+    "表格先包含頂點，再加入左右成對點。",
+    "作圖需符合刻度、開口與平滑性。"
+  ],
+  "connections": {
+    "previous": "使用頂點式直接讀 h、k。",
+    "next": [
+      "下一技能會由頂點與開口判斷最大或最小值。",
+      "素養題會從有限資料表讀取模型特徵。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s008-01"
+  ],
+  "accessibilityNotes": [
+    "表格欄位、座標點代號與圖中標籤一致，並以文字說明對稱配對。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s008-v001",
+      "u21-s008-v002",
+      "u21-s008-v003",
+      "u21-s008-v004",
+      "u21-s008-v005",
+      "u21-s008-v006",
+      "u21-s008-v007",
+      "u21-s008-v008",
+      "u21-s008-v009",
+      "u21-s008-v010",
+      "u21-s008-v011",
+      "u21-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s008-cr001",
+      "u21-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐格重算 y=(x-2)²-1 的五點值與 y=-2(x+1)²+4 的對稱值；確認作圖方法沒有把有限表格誤說成完整點集。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "f81301a8840ccff14d83386fad6fbce445896799aa22ebf1ffe5da11ba0c48b9"
+}
