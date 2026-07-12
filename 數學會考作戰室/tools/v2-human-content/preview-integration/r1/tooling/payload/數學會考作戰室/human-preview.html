@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#17212b">
+  <title>Math V2 Human Runtime 隔離預覽</title>
+  <link rel="stylesheet" href="human-preview/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">ISOLATED HUMAN RUNTIME PREVIEW R1</p>
+      <h1>數學會考作戰室 · 人工作者隔離預覽</h1>
+      <p class="warning">此頁不是正式學生入口。預設 generated V2 與 V1 rollback 均未變更。</p>
+    </div>
+    <nav aria-label="回滾與對照入口">
+      <a href="index.html">現有 generated V2</a>
+      <a href="index.html?legacy=1">V1 rollback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="status-panel" aria-live="polite">
+      <div><span>狀態</span><strong id="runtimeStatus">載入中</strong></div>
+      <div><span>內容版本</span><code id="contentVersion">—</code></div>
+      <div><span>資料量</span><strong id="runtimeCounts">—</strong></div>
+      <button id="selfCheckButton" type="button">執行 deterministic self-check</button>
+    </section>
+
+    <section class="controls">
+      <label>單元<select id="unitSelect"></select></label>
+      <label>技能<select id="skillSelect"></select></label>
+      <label>種子<input id="seedInput" type="number" min="1" max="999999" value="11527"></label>
+      <button id="loadSkillButton" type="button">閱讀技能講義</button>
+      <button id="unitQuizButton" type="button">產生單元小考</button>
+      <button id="mockButton" type="button">產生工程模考 25＋2</button>
+    </section>
+
+    <section id="catalogPanel" class="catalog" aria-label="單元目錄"></section>
+    <section id="contentPanel" class="content-panel" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <span>Preview-only · noindex · 不寫入 production localStorage</span>
+    <span>localStorage namespace: <code>capMath.humanPreview.r1.*</code></span>
+  </footer>
+  <script type="module" src="human-preview/app.mjs"></script>
+</body>
+</html>
