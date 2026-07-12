@@ -1,0 +1,264 @@
+{
+  "lectureId": "u08-s002-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-elements",
+  "skillId": "angle-types-measure",
+  "lockedSkillTitle": "角的種類與互餘互補",
+  "title": "角的種類與互餘互補：先判範圍再做加法",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能以度數判斷銳角、直角、鈍角與平角。",
+    "能求一個角的餘角或補角。",
+    "能辨別互餘與互補是兩角關係，不是單一角名稱。",
+    "能處理含未知數的互餘互補關係。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "geometry-basic-elements"
+    ],
+    "bridgeExplanation": "先把角記號中的頂點與兩邊辨認清楚，再加入角度大小。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "geometry-basic-elements",
+      "requiredLevel": "能正確讀寫 ∠ABC，並知道 B 是頂點。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "角度",
+      "definition": "衡量角張開程度的量，常用度（°）表示。"
+    },
+    {
+      "term": "銳角",
+      "definition": "大於 0° 且小於 90° 的角。"
+    },
+    {
+      "term": "直角",
+      "definition": "恰為 90° 的角。"
+    },
+    {
+      "term": "鈍角",
+      "definition": "大於 90° 且小於 180° 的角。"
+    },
+    {
+      "term": "平角",
+      "definition": "恰為 180° 的角。"
+    },
+    {
+      "term": "互餘",
+      "definition": "兩角度數和為 90°。"
+    },
+    {
+      "term": "互補",
+      "definition": "兩角度數和為 180°。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "m∠ABC",
+      "meaning": "角 ABC 的度數。"
+    },
+    {
+      "symbol": "°",
+      "meaning": "度，角度單位。"
+    },
+    {
+      "symbol": "90°-x°",
+      "meaning": "x° 的餘角，前提是結果為非負且情境成立。"
+    },
+    {
+      "symbol": "180°-x°",
+      "meaning": "x° 的補角。"
+    }
+  ],
+  "conceptDevelopment": [
+    "角的種類由度數範圍決定，不由角畫得長短或方向決定。角的兩邊延長不會改變角度。",
+    "互餘只看兩角總和是否為 90°；互補只看總和是否為 180°。兩角不必相鄰，也不必畫在一起。",
+    "一個銳角的餘角仍是銳角；直角的餘角是 0°，但在一般國中幾何中 0° 不稱為普通角，因此題目常限制為正角。",
+    "求餘角或補角時先寫總和，再用總量減已知角。若含未知數，建立等式後再解。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "餘角",
+      "statement": "與指定角相加為 90° 的角。"
+    },
+    {
+      "name": "補角",
+      "statement": "與指定角相加為 180° 的角。"
+    },
+    {
+      "name": "優角外的會考範圍",
+      "statement": "本技能只處理 0° 到 180° 的基本角分類，不引入超過 180° 的角。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x+y=90°",
+      "conditions": [
+        "x、y 為互餘兩角的度數"
+      ],
+      "meaning": "表示兩角互餘。"
+    },
+    {
+      "formula": "x+y=180°",
+      "conditions": [
+        "x、y 為互補兩角的度數"
+      ],
+      "meaning": "表示兩角互補。"
+    },
+    {
+      "formula": "餘角=90°-已知角",
+      "conditions": [
+        "已知角不大於 90° 且題意允許 0°"
+      ],
+      "meaning": "由直角總量扣除。"
+    },
+    {
+      "formula": "補角=180°-已知角",
+      "conditions": [
+        "已知角不大於 180°"
+      ],
+      "meaning": "由平角總量扣除。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能因兩角都很小就判定互餘，必須計算總和。",
+    "不能把 90° 誤分成銳角，也不能把 180° 誤分成鈍角。",
+    "一個角可能同時有不同位置的餘角，但度數相同；位置不影響度數關係。",
+    "未限制角度為正時，要留意 0° 是否被題意排除。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "先讀角度並標出界線 90°、180°。",
+      "check": "等於界線與介於界線必須分開。"
+    },
+    {
+      "step": 2,
+      "instruction": "若問互餘或互補，先寫總和。",
+      "check": "互餘寫 90°，互補寫 180°。"
+    },
+    {
+      "step": 3,
+      "instruction": "用總和減去已知角或建立等式。",
+      "check": "保留度數單位，未知數求出後回代。"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查結果範圍。",
+      "check": "餘角應在 0° 到 90°；補角應在 0° 到 180°。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 38°、90°、127°、180° 的種類。",
+      "solutionSteps": [
+        "38 介於 0 與 90，為銳角。",
+        "90 為直角；127 介於 90 與 180，為鈍角；180 為平角。"
+      ],
+      "answer": "依序為銳角、直角、鈍角、平角。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "角 A 為 64°，它的餘角是多少？",
+      "solutionSteps": [
+        "互餘總和為 90°。",
+        "90°-64°=26°。"
+      ],
+      "answer": "26°。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "角 B 為 113°，它的補角是多少？",
+      "solutionSteps": [
+        "互補總和為 180°。",
+        "180°-113°=67°。"
+      ],
+      "answer": "67°。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩互補角度數分別為 2x° 與 (x+30)°，求 x。",
+      "solutionSteps": [
+        "建立 2x+x+30=180。",
+        "3x=150，x=50。",
+        "兩角為 100° 與 80°，總和 180°。"
+      ],
+      "answer": "x=50。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "以數值範圍分類角。",
+    "standard": "直接求餘角或補角。",
+    "advanced": "以代數式建立互餘互補方程。",
+    "literacy": "閱讀轉彎、坡面或開啟角度規格時，辨認題目是角的大小還是兩角總和。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把 90° 稱為銳角。",
+      "why": "把小於等於 90° 混為一類。",
+      "correction": "銳角必須嚴格小於 90°。"
+    },
+    {
+      "mistake": "把 180° 稱為鈍角。",
+      "why": "忽略鈍角嚴格小於 180°。",
+      "correction": "180° 是平角。"
+    },
+    {
+      "mistake": "求 40° 的餘角算成 180°-40°。",
+      "why": "混淆互餘與互補。",
+      "correction": "餘角總和 90°，補角總和 180°。"
+    },
+    {
+      "mistake": "認為互餘角必須相鄰。",
+      "why": "把圖形位置當成定義。",
+      "correction": "只要度數和為 90° 即互餘。"
+    },
+    {
+      "mistake": "方程式漏寫括號。",
+      "why": "未把整個角度表達式相加。",
+      "correction": "先把每個角完整括起再建立總和。"
+    },
+    {
+      "mistake": "答案漏寫度數符號。",
+      "why": "把角度當成純數。",
+      "correction": "結果應附 °。"
+    }
+  ],
+  "selfCheckItems": [
+    "我能精確處理 90° 與 180° 的邊界嗎？",
+    "我是否先確認題目說互餘或互補？",
+    "未知數求出後是否回代檢查總和？",
+    "答案是否附度數單位？"
+  ],
+  "conciseSummary": [
+    "銳角小於 90°；直角等於 90°；鈍角介於 90° 與 180°；平角等於 180°。",
+    "互餘和為 90°，互補和為 180°。",
+    "先寫總和，再求未知角。"
+  ],
+  "connections": {
+    "previous": "上一技能提供角的頂點與記號，現在加入角度與分類。",
+    "next": [
+      "下一技能會用直角與平角關係處理垂直、對頂角和鄰補角。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "逐一檢查 0°、90°、180° 的分類邊界，並回代代數例題得到 100°+80°=180°；互餘與互補的公式均標明適用條件。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "60aa9853e65527440c3ff8b2a5a80fd46684cb83d0da926e1f63a2f3c5a7b480"
+}

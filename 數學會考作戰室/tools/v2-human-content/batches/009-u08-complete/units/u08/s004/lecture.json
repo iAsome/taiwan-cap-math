@@ -1,0 +1,231 @@
+{
+  "lectureId": "u08-s004-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-elements",
+  "skillId": "triangle-angle-sum",
+  "lockedSkillTitle": "三角形內角和",
+  "title": "三角形內角和：三個內角固定合為 180°",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能利用三角形內角和求未知角。",
+    "能判斷三個角度能否成為三角形內角。",
+    "能處理含未知數的三角形角度。",
+    "能利用外角與不相鄰兩內角的關係。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "parallel-perpendicular-angles"
+    ],
+    "bridgeExplanation": "由平角 180° 與相交線角度關係，進入三角形三內角的固定總和。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "parallel-perpendicular-angles",
+      "requiredLevel": "能使用鄰補角和為 180°，並解一元一次等式。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "內角",
+      "definition": "三角形內部由兩邊形成的角。"
+    },
+    {
+      "term": "外角",
+      "definition": "延長三角形一邊後，延長線與相鄰邊形成的外部角。"
+    },
+    {
+      "term": "不相鄰內角",
+      "definition": "與指定外角不共邊的兩個內角。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∠A+∠B+∠C=180°",
+      "meaning": "三角形 ABC 的三內角和。"
+    },
+    {
+      "symbol": "外角=兩個不相鄰內角和",
+      "meaning": "由內角和與鄰補角推得。"
+    }
+  ],
+  "conceptDevelopment": [
+    "任何平面三角形，不論形狀、大小或方向，三個內角總和都是 180°。",
+    "若已知兩角，第三角等於 180° 減去兩已知角；若三角都以代數式表示，就把三式相加等於 180°。",
+    "三個正角若要成為三角形內角，除了總和 180°，每一角還必須大於 0° 且小於 180°。",
+    "外角和相鄰內角形成平角，因此外角等於另外兩個不相鄰內角之和。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "三角形內角和定理",
+      "statement": "任一平面三角形三內角度數和為 180°。"
+    },
+    {
+      "name": "三角形外角性質",
+      "statement": "一個外角等於與它不相鄰的兩內角度數和。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A+B+C=180°",
+      "conditions": [
+        "A、B、C 為同一三角形的三內角"
+      ],
+      "meaning": "求未知內角。"
+    },
+    {
+      "formula": "第三角=180°-第一角-第二角",
+      "conditions": [
+        "兩已知角皆為有效內角且和小於 180°"
+      ],
+      "meaning": "直接求第三角。"
+    },
+    {
+      "formula": "外角=遠端內角1+遠端內角2",
+      "conditions": [
+        "外角由一邊延長形成"
+      ],
+      "meaning": "用兩不相鄰內角求外角。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能把四邊形或空間三角面以外的角直接套用 180°。",
+    "若兩已知角和已達 180°，不存在正的第三內角。",
+    "外角不是三個內角的總和。",
+    "題目若給的是頂點外側角，要先判斷是否為外角或對頂角。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "確認三個角屬於同一三角形。",
+      "check": "角的位置或文字標示要一致。"
+    },
+    {
+      "step": 2,
+      "instruction": "列出內角總和 180°。",
+      "check": "不要把外角直接加入。"
+    },
+    {
+      "step": 3,
+      "instruction": "代入已知角或代數式求未知量。",
+      "check": "運算時保留括號。"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查每個內角皆介於 0° 與 180°。",
+      "check": "三角總和再驗算為 180°。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "三角形兩內角為 48°、67°，第三角為何？",
+      "solutionSteps": [
+        "第三角=180°-48°-67°。",
+        "計算得 65°。"
+      ],
+      "answer": "65°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "三角形三內角為 x°、2x°、3x°，求 x。",
+      "solutionSteps": [
+        "x+2x+3x=180。",
+        "6x=180，x=30。"
+      ],
+      "answer": "x=30。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "30°、70°、80° 能否成為同一三角形的三內角？",
+      "solutionSteps": [
+        "三角和為 30+70+80=180。",
+        "三角皆為正且小於 180。"
+      ],
+      "answer": "可以。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某三角形一外角為 125°，其中一個不相鄰內角為 52°，另一個為何？",
+      "solutionSteps": [
+        "外角等於兩不相鄰內角和。",
+        "125°-52°=73°。"
+      ],
+      "answer": "73°。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "由兩角直接求第三角。",
+    "standard": "判斷角組是否可構成三角形。",
+    "advanced": "用代數式與外角性質求角。",
+    "literacy": "屋架、標誌或折線轉角的文字條件可轉成三角形角度總和。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "用 360° 當三角形內角和。",
+      "why": "把四邊形或一周角混入。",
+      "correction": "三角形固定是 180°。"
+    },
+    {
+      "mistake": "只算 180°-其中一角。",
+      "why": "漏掉另一已知內角。",
+      "correction": "先列三角總和式再代入。"
+    },
+    {
+      "mistake": "三角和為 180° 就忽略負角。",
+      "why": "未檢查角度範圍。",
+      "correction": "每一內角必須大於 0°。"
+    },
+    {
+      "mistake": "把外角加進三內角和。",
+      "why": "混淆內外位置。",
+      "correction": "外角與相鄰內角互補，不是第四個內角。"
+    },
+    {
+      "mistake": "代數式漏括號。",
+      "why": "把整個角度式拆錯。",
+      "correction": "每個角度表達式完整相加。"
+    },
+    {
+      "mistake": "求出第三角後漏寫 °。",
+      "why": "單位不完整。",
+      "correction": "角度答案附度數符號。"
+    }
+  ],
+  "selfCheckItems": [
+    "三個角是否同屬一個三角形？",
+    "我是否用 180° 而不是 360°？",
+    "每個角是否為正且小於 180°？",
+    "若有外角，我是否辨認相鄰與不相鄰內角？"
+  ],
+  "conciseSummary": [
+    "三角形內角和為 180°。",
+    "第三角等於 180° 減兩已知角。",
+    "角組除總和外還須每角為正。",
+    "外角等於兩個不相鄰內角和。"
+  ],
+  "connections": {
+    "previous": "上一技能的平角與鄰補角提供 180° 的角度關係。",
+    "next": [
+      "下一技能使用內角大小將三角形分為銳角、直角與鈍角三角形。"
+    ]
+  },
+  "figureReferences": [
+    "u08-s004-fig001"
+  ],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "四個例題逐一驗算角度總和；30°+70°+80°=180° 且皆為正，外角例題 52°+73°=125°，沒有引入三角形全等或相似。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "e2410d96688575b64f2ce07f77baf7e148cdf2fd1b8a1b9973edd8fbe3c9a708"
+}

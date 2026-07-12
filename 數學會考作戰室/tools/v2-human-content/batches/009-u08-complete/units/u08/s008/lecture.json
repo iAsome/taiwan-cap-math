@@ -1,0 +1,249 @@
+{
+  "lectureId": "u08-s008-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-symmetry",
+  "skillId": "perpendicular-bisector-symmetry",
+  "lockedSkillTitle": "垂直平分線與線對稱",
+  "title": "垂直平分線與線對稱：等距和垂直與鏡射",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認線段垂直平分線的兩個必要條件。",
+    "能使用垂直平分線上的點到兩端點等距。",
+    "能由到兩端點等距反推點在垂直平分線上。",
+    "能描述線對稱圖形中對應點、對稱軸與垂直平分關係。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "polygon-angle-basic"
+    ],
+    "bridgeExplanation": "先前已會辨認垂直與線段端點，現在把『垂直』和『通過中點』合併成垂直平分線。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "polygon-angle-basic",
+      "requiredLevel": "能使用點線記號、垂直關係與基本圖形語言；多邊形內角和不是本技能計算重點。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "中點",
+      "definition": "把線段分成兩段等長的點。"
+    },
+    {
+      "term": "垂直平分線",
+      "definition": "垂直於一線段且通過該線段中點的直線。"
+    },
+    {
+      "term": "等距",
+      "definition": "到兩個指定點的距離相等。"
+    },
+    {
+      "term": "線對稱",
+      "definition": "圖形沿某直線翻折後可完全重合。"
+    },
+    {
+      "term": "對稱軸",
+      "definition": "使圖形翻折重合的直線。"
+    },
+    {
+      "term": "對應點",
+      "definition": "翻折前後互相重合的一對點。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "PA=PB",
+      "meaning": "點 P 到 A、B 的距離相等。"
+    },
+    {
+      "symbol": "l ⟂ AB",
+      "meaning": "直線 l 垂直線段 AB 所在直線。"
+    },
+    {
+      "symbol": "M 為 AB 中點",
+      "meaning": "AM=MB 且 M 在線段 AB 上。"
+    }
+  ],
+  "conceptDevelopment": [
+    "『垂直平分線』同時要求垂直與平分，少一個條件都不成立。只通過中點但斜著穿過，或垂直但不經中點，都不是垂直平分線。",
+    "若 P 在 AB 的垂直平分線上，則 PA=PB。反過來，若 PA=PB，則 P 位於 AB 的垂直平分線上。這是雙向性質。",
+    "在線對稱中，對稱軸是每一對對應點連線的垂直平分線。因此對應點到對稱軸距離相等，連線與軸垂直。",
+    "位在對稱軸上的點翻折後仍在原位置，它可以視為自己的對應點。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "垂直平分線定理",
+      "statement": "線段垂直平分線上的任一點，到線段兩端點等距。"
+    },
+    {
+      "name": "垂直平分線定理逆敘述",
+      "statement": "到線段兩端點等距的點，位於該線段的垂直平分線上。"
+    },
+    {
+      "name": "線對稱圖形",
+      "statement": "存在至少一條直線，使圖形沿該直線翻折後與原圖完全重合。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P 在 AB 的垂直平分線上 ⇒ PA=PB",
+      "conditions": [
+        "P 為平面上的點"
+      ],
+      "meaning": "由位置推出距離相等。"
+    },
+    {
+      "formula": "PA=PB ⇒ P 在 AB 的垂直平分線上",
+      "conditions": [
+        "A、B 為相異點"
+      ],
+      "meaning": "由等距反推位置。"
+    },
+    {
+      "formula": "對應點到對稱軸距離相等",
+      "conditions": [
+        "兩點關於該軸對稱"
+      ],
+      "meaning": "鏡射保持距離。"
+    }
+  ],
+  "invalidUseCases": [
+    "一條線只與 AB 垂直，不一定平分 AB。",
+    "一條線只通過 AB 中點，不一定與 AB 垂直。",
+    "PA=PB 不能推出 P 是 AB 的中點；P 可能在垂直平分線上任何位置。",
+    "圖形看起來平衡不等於一定線對稱，必須能翻折重合。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "判斷垂直平分線時分別檢查垂直與中點。",
+      "check": "兩個條件都要成立。"
+    },
+    {
+      "step": 2,
+      "instruction": "遇到等距 PA=PB，辨認被比較的端點 A、B。",
+      "check": "把 P 放到 AB 的垂直平分線上。"
+    },
+    {
+      "step": 3,
+      "instruction": "遇到線對稱，配對對應點。",
+      "check": "對稱軸應垂直平分對應點連線。"
+    },
+    {
+      "step": 4,
+      "instruction": "回頭檢查方向。",
+      "check": "從在軸上推等距，或從等距推在軸上，敘述方向不可混亂。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "直線 l 垂直 AB 且通過 AB 中點 M，l 是什麼？",
+      "solutionSteps": [
+        "l 與 AB 垂直。",
+        "l 通過 AB 中點，兩條件皆成立。"
+      ],
+      "answer": "l 是 AB 的垂直平分線。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "P 在 AB 的垂直平分線上，PA=7 公分，PB 為多少？",
+      "solutionSteps": [
+        "垂直平分線上的點到兩端等距。",
+        "PB=PA=7 公分。"
+      ],
+      "answer": "7 公分。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "若 QA=QB，Q 的位置必在哪一條直線上？",
+      "solutionSteps": [
+        "到 A、B 等距。",
+        "依逆敘述，Q 在 AB 的垂直平分線上。"
+      ],
+      "answer": "線段 AB 的垂直平分線。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "A 與 A' 關於直線 k 對稱，線段 AA' 與 k 有何關係？",
+      "solutionSteps": [
+        "對稱軸垂直平分對應點連線。",
+        "所以 k ⟂ AA' 且通過 AA' 中點。"
+      ],
+      "answer": "k 是 AA' 的垂直平分線。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "辨認垂直與中點兩條件。",
+    "standard": "由垂直平分線求等距長度。",
+    "advanced": "使用逆敘述與多個等距條件定位點。",
+    "literacy": "基地臺、救援站或道路設施若需到兩地等距，其可能位置形成一條垂直平分線。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "只見垂直就稱垂直平分線。",
+      "why": "漏掉通過中點。",
+      "correction": "同時核對垂直與平分。"
+    },
+    {
+      "mistake": "只見中點就稱垂直平分線。",
+      "why": "漏掉 90°。",
+      "correction": "還需證明與線段垂直。"
+    },
+    {
+      "mistake": "PA=PB 就說 P 是 AB 中點。",
+      "why": "把等距點與中點混淆。",
+      "correction": "P 在 AB 的垂直平分線上，不必在線段 AB 上。"
+    },
+    {
+      "mistake": "對稱點連線平行對稱軸。",
+      "why": "誤解鏡射方向。",
+      "correction": "對應點連線應垂直對稱軸。"
+    },
+    {
+      "mistake": "認為軸上點會移到另一側。",
+      "why": "忽略軸上距離為 0。",
+      "correction": "軸上點翻折後位置不變。"
+    },
+    {
+      "mistake": "用圖形看起來相似判線對稱。",
+      "why": "相似不等於重合。",
+      "correction": "應檢查每一點翻折後是否對應。"
+    }
+  ],
+  "selfCheckItems": [
+    "我是否同時檢查垂直和中點？",
+    "從在垂直平分線上能推出哪個等距式？",
+    "從 PA=PB 能反推什麼位置？",
+    "對稱軸如何處理一對對應點的連線？"
+  ],
+  "conciseSummary": [
+    "垂直平分線同時垂直且通過中點。",
+    "軸上點到線段兩端等距。",
+    "到兩端等距的點在垂直平分線上。",
+    "對稱軸垂直平分對應點連線。"
+  ],
+  "connections": {
+    "previous": "前面技能提供點線、垂直與多邊形語言。",
+    "next": [
+      "下一技能進入周長與面積，線對稱可協助分割或重組圖形。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "逐一檢查正定理與逆敘述的方向；PA=PB 只推出 P 在線段 AB 的垂直平分線上，未誤寫為中點，線對稱對應點連線的垂直平分關係完整。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "419ccd9e4ec72ef78f029cfe7bdbe38c505fb58875b8aa03f95762ff5191da7f"
+}

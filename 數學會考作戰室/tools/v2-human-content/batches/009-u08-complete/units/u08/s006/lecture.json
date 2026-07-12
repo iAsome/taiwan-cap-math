@@ -1,0 +1,248 @@
+{
+  "lectureId": "u08-s006-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-elements",
+  "skillId": "quadrilateral-basic",
+  "lockedSkillTitle": "四邊形基本性質",
+  "title": "四邊形基本性質：用必要條件辨認特殊四邊形",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認平行四邊形、長方形、菱形、正方形與梯形。",
+    "能使用四邊形內角和 360°。",
+    "能理解特殊四邊形的包含關係。",
+    "能由已知邊角性質判斷可確定與不可確定的結論。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "triangle-basic-classification"
+    ],
+    "bridgeExplanation": "由三角形的邊角分類擴展到四邊形，並把四邊形切成兩個三角形理解內角和。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "triangle-basic-classification",
+      "requiredLevel": "能依邊長與角度條件分類，並使用三角形內角和。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "四邊形",
+      "definition": "由四條線段首尾相接形成的封閉平面圖形。"
+    },
+    {
+      "term": "平行四邊形",
+      "definition": "兩組對邊分別平行。"
+    },
+    {
+      "term": "長方形",
+      "definition": "四個內角皆為直角的平行四邊形。"
+    },
+    {
+      "term": "菱形",
+      "definition": "四邊等長的平行四邊形。"
+    },
+    {
+      "term": "正方形",
+      "definition": "四邊等長且四角皆直角。"
+    },
+    {
+      "term": "梯形",
+      "definition": "本課採至少一組對邊平行的廣義定義；題目若另有定義依題意。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AB ∥ CD",
+      "meaning": "四邊形 ABCD 中邊 AB 與 CD 平行。"
+    },
+    {
+      "symbol": "AB=BC=CD=DA",
+      "meaning": "四邊形四邊等長。"
+    }
+  ],
+  "conceptDevelopment": [
+    "一般四邊形內角和為 360°，可畫一條對角線分成兩個三角形理解。",
+    "辨認特殊四邊形要看定義的必要條件，不是看名稱印象。平行四邊形要求兩組對邊平行；長方形再加入四直角；菱形再加入四邊等長。",
+    "正方形同時符合長方形與菱形定義，也是平行四邊形。這是包含關係，不是只能選一個名稱。",
+    "同樣的局部條件可能不足以唯一分類。例如只有一組對邊平行，只能確定符合梯形廣義定義，不能直接說是平行四邊形。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "對邊",
+      "statement": "四邊形中不共頂點的兩邊。"
+    },
+    {
+      "name": "鄰邊",
+      "statement": "共用一個頂點的兩邊。"
+    },
+    {
+      "name": "對角",
+      "statement": "不相鄰的兩個內角。"
+    },
+    {
+      "name": "對角線",
+      "statement": "連接不相鄰兩頂點的線段。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "四邊形內角和=360°",
+      "conditions": [
+        "單純四邊形，國中範圍採一般凸四邊形文字情境"
+      ],
+      "meaning": "由兩個三角形內角和得到。"
+    },
+    {
+      "formula": "平行四邊形對邊等長且對角相等",
+      "conditions": [
+        "已確定為平行四邊形"
+      ],
+      "meaning": "可求未知邊角。"
+    },
+    {
+      "formula": "平行四邊形鄰角互補",
+      "conditions": [
+        "已確定為平行四邊形"
+      ],
+      "meaning": "相鄰內角和 180°。"
+    }
+  ],
+  "invalidUseCases": [
+    "四邊等長不表示一定有四個直角；那可能是非正方形菱形。",
+    "四個直角不表示四邊等長；那可能是非正方形長方形。",
+    "只有一組對邊等長不足以判定平行四邊形。",
+    "不同教材對梯形可能採『恰一組』或『至少一組』平行，必須依題目定義。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "列出題目明示的平行、等長與直角條件。",
+      "check": "不要從外觀補條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "先檢查最基本定義。",
+      "check": "兩組對邊平行可判平行四邊形。"
+    },
+    {
+      "step": 3,
+      "instruction": "再檢查額外條件。",
+      "check": "四直角判長方形；四邊等長判菱形；兩者皆有判正方形。"
+    },
+    {
+      "step": 4,
+      "instruction": "若求角度，使用 360° 或特殊四邊形性質。",
+      "check": "最後說明能確定到哪一層。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "四邊形三內角為 80°、95°、105°，第四角為何？",
+      "solutionSteps": [
+        "四邊形內角和 360°。",
+        "360°-80°-95°-105°=80°。"
+      ],
+      "answer": "80°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "某四邊形兩組對邊分別平行，可先判定為何種圖形？",
+      "solutionSteps": [
+        "這正是平行四邊形的定義。"
+      ],
+      "answer": "平行四邊形。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "某平行四邊形四邊等長，但沒有直角，最精確可稱為何？",
+      "solutionSteps": [
+        "四邊等長的平行四邊形是菱形。",
+        "沒有直角，所以不能稱正方形。"
+      ],
+      "answer": "菱形。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某四邊形四邊等長且四角皆為 90°，它同時屬於哪些常見類別？",
+      "solutionSteps": [
+        "四角直角符合長方形；四邊等長符合菱形。",
+        "兩組對邊平行，亦為平行四邊形；最具體名稱是正方形。"
+      ],
+      "answer": "正方形、長方形、菱形與平行四邊形。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "辨認各特殊四邊形定義。",
+    "standard": "用 360° 求未知角。",
+    "advanced": "分析包含關係與條件是否充分。",
+    "literacy": "地板、窗框與零件規格常只提供部分平行、等長或直角條件，需判斷能否保證形狀。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把四邊形內角和寫成 180°。",
+      "why": "未理解可分成兩個三角形。",
+      "correction": "內角和為 2×180°=360°。"
+    },
+    {
+      "mistake": "四邊等長就判正方形。",
+      "why": "漏掉四直角條件。",
+      "correction": "只能先判菱形；有直角才是正方形。"
+    },
+    {
+      "mistake": "四角直角就判正方形。",
+      "why": "漏掉四邊等長。",
+      "correction": "只能先判長方形。"
+    },
+    {
+      "mistake": "認為正方形不是長方形。",
+      "why": "把分類當互斥名稱。",
+      "correction": "正方形符合長方形定義。"
+    },
+    {
+      "mistake": "一組對邊平行就判平行四邊形。",
+      "why": "少了一組平行條件。",
+      "correction": "平行四邊形要求兩組對邊分別平行。"
+    },
+    {
+      "mistake": "忽略梯形定義差異。",
+      "why": "不同教材慣例不同。",
+      "correction": "題目若明示定義，依題意作答並說明。"
+    }
+  ],
+  "selfCheckItems": [
+    "我是否只使用題目提供的條件？",
+    "內角和是否用 360°？",
+    "我能說明正方形與長方形、菱形的包含關係嗎？",
+    "梯形定義是否由題目指定？"
+  ],
+  "conciseSummary": [
+    "四邊形內角和 360°。",
+    "平行四邊形有兩組對邊平行。",
+    "長方形有四直角，菱形有四等邊，正方形同時具備。",
+    "分類可能有包含關係。"
+  ],
+  "connections": {
+    "previous": "上一技能訓練以邊與角分類三角形。",
+    "next": [
+      "下一技能將四邊形內角和推廣到任意 n 邊形。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "逐項以定義檢查特殊四邊形包含關係；內角例題重算 80+95+105+80=360，並明示梯形定義可能依題目採廣義或狹義。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "cfc7bcd947f90efea40e71403fef8bb9e3933fc72bd5c416e49003ee24af87bb"
+}

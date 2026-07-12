@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "u08-authoring-lock-snapshot-r1",
+  "source": {
+    "repository": "iAsome/taiwan-cap-math",
+    "branch": "chatgpt/math-v2-human-authoring-r1",
+    "sourcePath": "數學會考作戰室/tools/v2-human-content/authoring/authoring-syllabus-lock-r2.json",
+    "recordedSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+    "sourceHeadRecordedInLock": "2929747191b6050c53a3a3d6ce1af0385600712c"
+  },
+  "unit": {
+    "unitId": "u08",
+    "numericId": 8,
+    "title": "平面幾何圖形與三視圖",
+    "gradeBand": "7下",
+    "domain": "空間與形狀",
+    "legacyUnitIds": [
+      11
+    ],
+    "description": "基本圖形、垂直平分、線對稱、三視圖。",
+    "coreGoal": "能辨識圖形關係並由文字理解三視圖。",
+    "capScopeNote": "依數學必要性使用圖形；文字敘述與圖形標示必須一致，圖形未按比例時須明示。",
+    "topics": [
+      {
+        "topicId": "u08-elements",
+        "title": "基本圖形與角",
+        "order": 1,
+        "skills": [
+          {
+            "slot": "s001",
+            "skillId": "geometry-basic-elements",
+            "title": "點和線的基本元素與角的記號",
+            "order": 1,
+            "topicId": "u08-elements",
+            "prerequisiteSkillIds": []
+          },
+          {
+            "slot": "s002",
+            "skillId": "angle-types-measure",
+            "title": "角的種類與互餘互補",
+            "order": 2,
+            "topicId": "u08-elements",
+            "prerequisiteSkillIds": [
+              "geometry-basic-elements"
+            ]
+          },
+          {
+            "slot": "s003",
+            "skillId": "parallel-perpendicular-angles",
+            "title": "平行垂直與對頂角",
+            "order": 3,
+            "topicId": "u08-elements",
+            "prerequisiteSkillIds": [
+              "angle-types-measure"
+            ]
+          },
+          {
+            "slot": "s004",
+            "skillId": "triangle-angle-sum",
+            "title": "三角形內角和",
+            "order": 4,
+            "topicId": "u08-elements",
+            "prerequisiteSkillIds": [
+              "parallel-perpendicular-angles"
+            ]
+          },
+          {
+            "slot": "s005",
+            "skillId": "triangle-basic-classification",
+            "title": "三角形基本分類",
+            "order": 5,
+            "topicId": "u08-elements",
+            "prerequisiteSkillIds": [
+              "triangle-angle-sum"
+            ]
+          },
+          {
+            "slot": "s006",
+            "skillId": "quadrilateral-basic",
+            "title": "四邊形基本性質",
+            "order": 6,
+            "topicId": "u08-elements",
+            "prerequisiteSkillIds": [
+              "triangle-basic-classification"
+            ]
+          },
+          {
+            "slot": "s007",
+            "skillId": "polygon-angle-basic",
+            "title": "多邊形內角和",
+            "order": 7,
+            "topicId": "u08-elements",
+            "prerequisiteSkillIds": [
+              "quadrilateral-basic"
+            ]
+          }
+        ]
+      },
+      {
+        "topicId": "u08-symmetry",
+        "title": "對稱與垂直平分線",
+        "order": 2,
+        "skills": [
+          {
+            "slot": "s008",
+            "skillId": "perpendicular-bisector-symmetry",
+            "title": "垂直平分線與線對稱",
+            "order": 8,
+            "topicId": "u08-symmetry",
+            "prerequisiteSkillIds": [
+              "polygon-angle-basic"
+            ]
+          }
+        ]
+      },
+      {
+        "topicId": "u08-measure",
+        "title": "平面圖形度量",
+        "order": 3,
+        "skills": [
+          {
+            "slot": "s009",
+            "skillId": "perimeter-area-basic",
+            "title": "周長與面積基本判斷",
+            "order": 9,
+            "topicId": "u08-measure",
+            "prerequisiteSkillIds": [
+              "perpendicular-bisector-symmetry"
+            ]
+          },
+          {
+            "slot": "s010",
+            "skillId": "composite-area-text",
+            "title": "文字敘述的複合面積",
+            "order": 10,
+            "topicId": "u08-measure",
+            "prerequisiteSkillIds": [
+              "perimeter-area-basic"
+            ]
+          },
+          {
+            "slot": "s011",
+            "skillId": "unit-conversion-geometry",
+            "title": "幾何量的單位換算",
+            "order": 11,
+            "topicId": "u08-measure",
+            "prerequisiteSkillIds": [
+              "composite-area-text"
+            ]
+          }
+        ]
+      },
+      {
+        "topicId": "u08-views",
+        "title": "三視圖",
+        "order": 4,
+        "skills": [
+          {
+            "slot": "s012",
+            "skillId": "solid-views-basic",
+            "title": "三視圖基本判讀",
+            "order": 12,
+            "topicId": "u08-views",
+            "prerequisiteSkillIds": [
+              "unit-conversion-geometry"
+            ]
+          },
+          {
+            "slot": "s013",
+            "skillId": "orthographic-description",
+            "title": "三視圖文字描述",
+            "order": 13,
+            "topicId": "u08-views",
+            "prerequisiteSkillIds": [
+              "solid-views-basic"
+            ]
+          }
+        ]
+      },
+      {
+        "topicId": "u08-literacy",
+        "title": "幾何素養",
+        "order": 5,
+        "skills": [
+          {
+            "slot": "s014",
+            "skillId": "geometry-literacy-context",
+            "title": "平面幾何與三視圖素養",
+            "order": 14,
+            "topicId": "u08-literacy",
+            "prerequisiteSkillIds": [
+              "orthographic-description"
+            ]
+          }
+        ]
+      }
+    ],
+    "lockedSkillCount": 14
+  }
+}

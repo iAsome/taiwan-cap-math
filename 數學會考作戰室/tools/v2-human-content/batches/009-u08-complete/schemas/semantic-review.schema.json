@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U08 Human Semantic Review",
+  "type": "object",
+  "required": [
+    "questionId",
+    "contentSha256",
+    "independentSolution",
+    "derivedAnswer",
+    "storedAnswer",
+    "answerMatch",
+    "optionTruth",
+    "uniqueCorrectAnswer",
+    "ambiguityChecks",
+    "reviewerDecision",
+    "reviewSha256"
+  ],
+  "properties": {
+    "reviewerDecision": {
+      "const": "pass"
+    },
+    "uniqueCorrectAnswer": {
+      "const": true
+    }
+  }
+}

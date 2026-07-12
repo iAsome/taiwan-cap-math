@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "u08-final-human-audit-r1",
+  "unitId": "u08",
+  "auditDate": "2026-07-12",
+  "auditorAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "scope": {
+    "lectures": 14,
+    "mcQuestions": 168,
+    "constructedResponses": 28,
+    "semanticReviews": 168,
+    "figures": 0
+  },
+  "manualChecks": [
+    "逐題重新計算答案，未信任預存 answerIndex。",
+    "逐一檢查四個選項真值與排除理由。",
+    "逐題檢查負號、括號、分數、指數、角度與平方單位。",
+    "檢查角度範圍、三角形存在條件、四邊形分類邊界。",
+    "檢查三視圖欄列最大值、占用格下界與可達配置。",
+    "檢查進階題不是只更換數字，素養題的情境條件不可刪除。",
+    "檢查未使用 U09 以後或高中範圍方法。",
+    "確認 capScopeNote 的全文字描述邊界，因此沒有建立圖形。"
+  ],
+  "actualIssuesFoundAndRepaired": [
+    {
+      "issueId": "U08-AUDIT-001",
+      "severity": "high",
+      "record": "u08-s004-v008",
+      "found": "原草稿同時給定兩角相差18°、第三角70°及倍數1.5，條件無法同時成立，且選項與解說不一致。",
+      "repair": "整題改寫為第三角50°、其餘兩角比2：3，獨立重算較小角52°並逐項重建選項。",
+      "verification": "52+78+50=180，且52：78=2：3；唯一正確選項。"
+    },
+    {
+      "issueId": "U08-AUDIT-002",
+      "severity": "high",
+      "record": "u08-s010-v008",
+      "found": "原草稿由外框與中央面積反求等寬走道，會導入二次方程或根式，超出本技能鎖定範圍，且預存答案不相符。",
+      "repair": "改為兩條垂直相交道路的聯集面積，保留進階複合面積核心並移除未來單元代數。",
+      "verification": "24×2+18×2−2×2=80平方公尺，另以48+(18−2)×2=80驗算。"
+    },
+    {
+      "issueId": "U08-AUDIT-003",
+      "severity": "high",
+      "record": "u08-s012-v012",
+      "found": "原選項含5塊與6塊；在6個俯視占用格且最高3層的條件下，兩者都不可能，違反唯一正解。",
+      "repair": "保留5塊為唯一不可能值，將其他選項改為可構造的8、10、14塊。",
+      "verification": "8=3+1+1+1+1+1；10=3+3+1+1+1+1；14=3+3+3+3+1+1。"
+    },
+    {
+      "issueId": "U08-AUDIT-004",
+      "severity": "medium",
+      "record": "u08-s006-v002",
+      "found": "原草稿把「梯形」列為錯誤選項，但廣義梯形定義可能包含平行四邊形，造成分類邊界歧義。",
+      "repair": "題幹改為要求最精確類別，並以「只有一組對邊平行的四邊形」取代梯形選項。",
+      "verification": "兩組對邊分別平行只直接符合平行四邊形，四選項唯一。"
+    },
+    {
+      "issueId": "U08-AUDIT-005",
+      "severity": "low",
+      "record": "u08-s008-lecture-r1 and u08-s012-lecture-r1",
+      "found": "兩個講義標題曾使用頓號，違反批次內部標題標點規則。",
+      "repair": "將並列頓號改為「和」，內容語意不變。",
+      "verification": "所有技能與講義標題掃描後均不含頓號。"
+    }
+  ],
+  "unresolvedUnitIssues": [],
+  "crossUnitDuplicateLimitation": "只能驗證 U08 內部；其他平行批次尚未可見，跨單元近似題須由中央協調者完成。",
+  "decision": "PASS_PENDING_CENTRAL_CROSS_UNIT_RECONCILIATION"
+}
