@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const version = "20260712v2";
+  const version = "20260712v2gen";
   const legacy = /(?:^|[?&])legacy=1(?:&|$)/.test(window.location?.search || "");
   const v2Scripts = [
     "v2/math-syllabus-v2.js",
