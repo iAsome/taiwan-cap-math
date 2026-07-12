@@ -1,13 +1,6 @@
 import { HUMAN_PREVIEW_CONFIG } from "./config.mjs";
 import { HumanPreviewRuntime, questionSignature } from "./engine.mjs";
 
-if (!document.querySelector('link[rel="icon"]')) {
-  const link = document.createElement("link");
-  link.rel = "icon";
-  link.href = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%2317212b'/%3E%3C/svg%3E";
-  document.head.appendChild(link);
-}
-
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? "").replace(/[&<>\"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
 const list = values => Array.isArray(values) && values.length
@@ -31,27 +24,21 @@ function setStatus(text) {
   $("runtimeStatus").textContent = text;
 }
 
-let busyTail = Promise.resolve();
-
 async function withBusy(button, label, action) {
-  const run = async () => {
-    actionInProgress = true;
-    setStatus("LOADING");
-    const controls = [...document.querySelectorAll("button, select, input")];
-    const priorDisabled = controls.map(control => control.disabled);
-    controls.forEach(control => { control.disabled = true; });
-    const priorText = button?.tagName === "BUTTON" ? button.textContent : null;
-    if (button?.tagName === "BUTTON") button.textContent = label;
-    try {
-      return await action();
-    } finally {
-      controls.forEach((control, index) => { control.disabled = priorDisabled[index]; });
-      if (button?.tagName === "BUTTON" && priorText != null) button.textContent = priorText;
-      actionInProgress = false;
-    }
-  };
-  busyTail = busyTail.then(run, run);
-  return busyTail;
+  if (actionInProgress) return;
+  actionInProgress = true;
+  const controls = [...document.querySelectorAll("button, select, input")];
+  const priorDisabled = controls.map(control => control.disabled);
+  controls.forEach(control => { control.disabled = true; });
+  const priorText = button?.textContent;
+  if (button) button.textContent = label;
+  try {
+    return await action();
+  } finally {
+    controls.forEach((control, index) => { control.disabled = priorDisabled[index]; });
+    if (button && priorText != null) button.textContent = priorText;
+    actionInProgress = false;
+  }
 }
 
 function figureHtml(question) {
@@ -102,9 +89,6 @@ function renderCr(question, number) {
   </article>`;
 }
 
-const displaySkillTitle = skill => skill.title || skill.lecture?.skillTitle || skill.lecture?.lockedSkillTitle || skill.skillId;
-const displayLectureTitle = skill => skill.lecture?.title || skill.lecture?.lockedSkillTitle || skill.title || skill.lecture?.skillTitle || skill.skillId;
-
 function renderLecture(skill) {
   const lecture = skill.lecture;
   const prerequisiteRows = rows(lecture.prerequisites || [], item => [esc(item.name), esc(item.requiredLevel)]);
@@ -124,7 +108,7 @@ function renderLecture(skill) {
 
   $("contentPanel").innerHTML = `<article class="lecture" data-skill-id="${esc(skill.skillId)}">
     <p class="eyebrow">${esc(skill.skillId)}</p>
-    <h2>${esc(displayLectureTitle(skill))}</h2>
+    <h2>${esc(lecture.title)}</h2>
     <p class="question-meta">${esc(skill.topicId)}｜${esc(lecture.audience || "")}</p>
     <div class="lecture-grid">
       <section class="block"><h3>學習目標</h3>${list(lecture.learningOutcomes)}</section>
@@ -146,11 +130,10 @@ function renderLecture(skill) {
   localStorage.setItem(`${HUMAN_PREVIEW_CONFIG.storagePrefix}lastSkill`, skill.skillId);
 }
 
-async function loadSelectedUnit(unitId = $("unitSelect").value) {
-  currentUnit = await runtime.loadUnit(unitId);
-  $("skillSelect").innerHTML = currentUnit.skills.map((skill, index) => `<option value="${index}">${esc(displaySkillTitle(skill))}</option>`).join("");
+async function loadSelectedUnit() {
+  currentUnit = await runtime.loadUnit($("unitSelect").value);
+  $("skillSelect").innerHTML = currentUnit.skills.map((skill, index) => `<option value="${index}">${esc(skill.title)}</option>`).join("");
   renderLecture(currentUnit.skills[0]);
-  setStatus("PREVIEW READY");
 }
 
 function renderCatalog() {
@@ -164,7 +147,7 @@ function renderCatalog() {
     const button = event.target.closest("button[data-unit]");
     if (!button) return;
     $("unitSelect").value = button.dataset.unit;
-    await withBusy(button, "載入中…", () => loadSelectedUnit(button.dataset.unit));
+    await withBusy(button, "載入中…", loadSelectedUnit);
     scrollTo({ top: $("contentPanel").offsetTop - 20, behavior: "smooth" });
   });
 }
@@ -185,10 +168,7 @@ async function start() {
   });
 }
 
-$("unitSelect").addEventListener("change", event => {
-  const unitId = event.currentTarget.value;
-  withBusy(event.currentTarget, "載入中…", () => loadSelectedUnit(unitId));
-});
+$("unitSelect").addEventListener("change", event => withBusy(event.currentTarget, "載入中…", loadSelectedUnit));
 $("skillSelect").addEventListener("change", () => renderLecture(currentUnit.skills[Number($("skillSelect").value)]));
 $("loadSkillButton").addEventListener("click", () => renderLecture(currentUnit.skills[Number($("skillSelect").value)]));
 $("unitQuizButton").addEventListener("click", event => withBusy(event.currentTarget, "產生中…", async () => {

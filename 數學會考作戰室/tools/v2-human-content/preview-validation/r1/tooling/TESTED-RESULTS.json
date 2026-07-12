@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "math-v2-human-preview-browser-ui-validation-kit-test-r1",
+  "toolingSelfTest": "PASS_TOOLING_SELF_TEST",
+  "nodeSyntaxChecks": "PASS",
+  "cdpBrowserLaunchAndConnection": "PASS",
+  "fullBrowserNavigationInAuthoringContainer": "BLOCKED_BY_CONTAINER_BROWSER_POLICY",
+  "containerNavigationError": "net::ERR_BLOCKED_BY_ADMINISTRATOR",
+  "interpretation": "The kit correctly stops when the browser environment blocks local HTTP navigation. Cursor must run the mandatory browser suite with an unrestricted local Chrome, Chromium, or Edge. No commit is permitted if the browser suite cannot execute or does not pass.",
+  "productionActivationAllowed": false,
+  "oldDatabaseDeletionAllowed": false
+}
