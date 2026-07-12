@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U16 constructed response",
+  "type": "object",
+  "required": [
+    "questionId",
+    "prompt",
+    "requiredWork",
+    "fullCreditSolution",
+    "rubric",
+    "followThroughPolicy",
+    "answerOnlyPolicy",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "rubric": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

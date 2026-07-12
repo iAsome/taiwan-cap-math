@@ -1,0 +1,1748 @@
+// Deterministically emitted from reviewed CHATGPT_HUMAN_AUTHORED_R1 source.
+// Do not edit this staging module by hand.
+export const skillData={
+  "slot": "s017",
+  "lecture": {
+    "lectureId": "u16-s017-lecture-r1",
+    "unitId": "u16",
+    "numericUnitId": 16,
+    "topicId": "u16-properties",
+    "skillId": "triangle-altitude",
+    "skillOrder": 17,
+    "originalLockedTitle": "高線概念",
+    "title": "高線概念：從頂點向對邊所在直線作垂線",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能辨認三角形高線與垂足。",
+      "能理解銳角、直角與鈍角三角形的高線位置不同。",
+      "能分辨高線、中線與中垂線。",
+      "能用底乘高除以二計算面積並選擇相對應的底與高。"
+    ],
+    "prerequisiteBridge": "中線要求落在對邊中點；高線改以垂直為核心。過點作垂線技能已提供作圖方法，現在把指定點設為三角形頂點、已知直線設為對邊所在直線。",
+    "prerequisites": [
+      {
+        "skillId": "triangle-medians",
+        "requiredLevel": "能使用先備技能「中線概念」的核心定義與基本運算，並能說明其與本節的連結。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "三角形高線",
+        "definition": "由一頂點向其對邊所在直線作垂線所得的線段。"
+      },
+      {
+        "term": "垂足",
+        "definition": "高線與對邊所在直線的交點。"
+      },
+      {
+        "term": "底",
+        "definition": "選作面積計算基準的三角形邊。"
+      },
+      {
+        "term": "對應高",
+        "definition": "從底的對面頂點到該底所在直線的垂直距離。"
+      },
+      {
+        "term": "對邊所在直線",
+        "definition": "包含對邊並可向兩端延長的整條直線。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "AD⊥BC",
+        "meaning": "若 D 在直線 BC 上，AD 是從 A 對 BC 的高線。"
+      },
+      {
+        "symbol": "h_a",
+        "meaning": "對邊 a 的高；本課可用文字表達，不強制符號。"
+      },
+      {
+        "symbol": "面積=底×高÷2",
+        "meaning": "底與高必須互相垂直且彼此對應。"
+      }
+    ],
+    "conceptNarrative": [
+      "高線一端是頂點，另一端落在對邊所在直線上，並與該直線成 90°。",
+      "銳角三角形三條高都在內部；直角三角形兩條直角邊互為高，第三條高從直角頂點到斜邊；鈍角三角形有兩條高落在對邊延長線上。",
+      "因此高線的垂足不一定在對邊線段內，但一定在對邊所在直線上。",
+      "高線不要求平分對邊；中垂線則要求過中點且垂直，但未必通過三角形頂點。",
+      "面積公式中可選任何一邊作底，但必須搭配從對面頂點到該底所在直線的垂直距離。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "三角形高線",
+        "statement": "由三角形一頂點向其對邊所在直線所作的垂線段。"
+      },
+      {
+        "name": "垂心",
+        "statement": "三條高所在直線的交點；銳角在內、直角在直角頂點、鈍角在外。"
+      },
+      {
+        "name": "三角形面積",
+        "statement": "任選一邊作底，面積等於底乘對應高再除以 2。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "A=bh/2",
+        "conditions": [
+          "b 為底長",
+          "h 為對應垂直高度",
+          "單位一致"
+        ],
+        "meaning": "三角形面積。"
+      },
+      {
+        "formula": "h=2A/b",
+        "conditions": [
+          "b>0"
+        ],
+        "meaning": "由面積與底求高。"
+      }
+    ],
+    "nonApplicableCases": [
+      "從頂點到對邊的任意斜線不是高線。",
+      "垂足不在邊線段內不代表不是高線，鈍角三角形常落在延長線。",
+      "中線不一定是高線，除非另有垂直條件。",
+      "面積公式不能搭配非對應的底與高。",
+      "高線長度是正值，不使用帶方向的負距離。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "選定頂點與其對邊。",
+        "check": "對邊是否不接觸該頂點？"
+      },
+      {
+        "step": 2,
+        "instruction": "必要時延長對邊。",
+        "check": "鈍角情形垂足是否可能在外部？"
+      },
+      {
+        "step": 3,
+        "instruction": "由頂點作對邊所在直線的垂線。",
+        "check": "垂直符號是否為 90°？"
+      },
+      {
+        "step": 4,
+        "instruction": "辨認垂足與高線段。",
+        "check": "高線端點是否為頂點與垂足？"
+      },
+      {
+        "step": 5,
+        "instruction": "面積題配對底與高。",
+        "check": "兩者是否垂直、單位一致？"
+      },
+      {
+        "step": 6,
+        "instruction": "檢查位置類型。",
+        "check": "銳角、直角、鈍角三角形的高線位置是否合理？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "D 在 BC 上且 AD⊥BC，判斷 AD。",
+        "solutionSteps": [
+          "A 是 △ABC 頂點。",
+          "AD 對邊 BC 所在直線垂直。"
+        ],
+        "answer": "AD 是 BC 上的高線。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "鈍角三角形從銳角頂點作高，垂足可能在哪裡？",
+        "solutionSteps": [
+          "對邊方向需延長。",
+          "垂足可落在對邊延長線上。"
+        ],
+        "answer": "可能在三角形外部。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "底 12 公分、高 7 公分，求面積。",
+        "solutionSteps": [
+          "12×7÷2=42。"
+        ],
+        "answer": "42 平方公分。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "面積 54 平方公分，底 9 公分，求對應高。",
+        "solutionSteps": [
+          "h=2×54÷9。",
+          "108÷9=12。"
+        ],
+        "answer": "12 公分。"
+      },
+      {
+        "exampleId": "L5",
+        "prompt": "直角三角形兩股為 6、8，取 6 為底時對應高是多少？",
+        "solutionSteps": [
+          "兩股互相垂直。",
+          "另一股 8 是對底 6 的高。"
+        ],
+        "answer": "8。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "高線一定在三角形內。",
+        "why": "只看銳角三角形。",
+        "correction": "鈍角三角形部分高線落在延長線上。"
+      },
+      {
+        "mistake": "高線一定平分底邊。",
+        "why": "混同等腰三線合一。",
+        "correction": "一般高線只保證垂直。"
+      },
+      {
+        "mistake": "把中垂線當高線。",
+        "why": "都有垂直符號。",
+        "correction": "高線必通過三角形頂點；中垂線必過邊中點。"
+      },
+      {
+        "mistake": "底與任意垂直線段配對。",
+        "why": "忽略高須從對面頂點到該底。",
+        "correction": "選底後再找對面頂點的垂直距離。"
+      },
+      {
+        "mistake": "面積漏除以 2。",
+        "why": "與平行四邊形公式混淆。",
+        "correction": "三角形是同底同高平行四邊形的一半。"
+      },
+      {
+        "mistake": "面積單位寫公分。",
+        "why": "未區分長度與面積。",
+        "correction": "底高相乘後使用平方單位。"
+      }
+    ],
+    "selfCheck": [
+      "高線是否從頂點出發？",
+      "是否垂直於對邊所在直線？",
+      "垂足可否在延長線上？",
+      "我有分清高線與中線、中垂線嗎？",
+      "面積使用的是對應底高且平方單位嗎？"
+    ],
+    "summary": [
+      "高線從頂點向對邊所在直線作垂線。",
+      "垂足可在邊上或延長線上。",
+      "一般高線不平分底邊，也不等於中垂線。",
+      "面積為對應底乘高除以 2。"
+    ],
+    "connections": {
+      "previous": "中線重點是中點；高線重點是垂直。",
+      "next": [
+        "最後的素養技能會綜合全等、邊角、作圖、中線與高線。",
+        "U17 平行與四邊形面積也會反覆使用高。"
+      ]
+    },
+    "figureReferences": [
+      "u16-fig-017-altitude"
+    ],
+    "accessibilityNotes": [
+      "u16-fig-017-altitude 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u16-s017-v001",
+        "u16-s017-v002",
+        "u16-s017-v003",
+        "u16-s017-v004",
+        "u16-s017-v005",
+        "u16-s017-v006",
+        "u16-s017-v007",
+        "u16-s017-v008",
+        "u16-s017-v009",
+        "u16-s017-v010",
+        "u16-s017-v011",
+        "u16-s017-v012"
+      ],
+      "constructedResponseIds": [
+        "u16-s017-cr001",
+        "u16-s017-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "針對「高線概念」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+      "reviewVersion": "human-lecture-review-u16-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "ab5fc51af9e828504410d5b359b02da889962a17ba152782c6fdbe265efe4d02"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u16-s017-v001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-017-altitude",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形從頂點 A 向對邊 BC 所在直線作垂線，垂足為 H。哪一條線段是對 BC 的高？",
+      "givenConditions": [
+        "AH⊥BC所在直線"
+      ],
+      "target": "辨認高線",
+      "choices": [
+        "AB",
+        "BH",
+        "AH",
+        "CH"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "AH符合頂點到對邊所在直線垂直的定義。",
+      "explanation": "由頂點A到對邊BC所在直線的垂直線段AH就是高。 確認起點是A。 確認終點H在BC所在直線且垂直。",
+      "steps": [
+        "確認起點是A。",
+        "確認終點H在BC所在直線且垂直。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "AB",
+          "truth": false,
+          "reason": "AB通常不垂直BC。"
+        },
+        {
+          "choice": "BH",
+          "truth": false,
+          "reason": "BH位於底邊上。"
+        },
+        {
+          "choice": "AH",
+          "truth": true,
+          "reason": "由頂點A到對邊BC所在直線的垂直線段AH就是高。"
+        },
+        {
+          "choice": "CH",
+          "truth": false,
+          "reason": "CH也位於底邊所在直線。"
+        }
+      ],
+      "misconceptionTarget": "只要碰到垂足就把底邊的一段當高。",
+      "prerequisiteCheck": "認識垂直符號。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "無數值計算。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "即使H在延長線上，AH仍是對BC的高。",
+      "difficultyReason": "基礎題，直接辨認定義。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認高線。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "14ed94b9ed507457e8ec9cbf3859bc32a6d9d43c3653d3064985232f01165ca8"
+    },
+    {
+      "questionId": "u16-s017-v002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一個非退化三角形共有幾條高？",
+      "givenConditions": [
+        "每個頂點皆可向對邊所在直線作垂線"
+      ],
+      "target": "知道高線數量",
+      "choices": [
+        "1條",
+        "2條",
+        "6條",
+        "3條"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "任意非退化三角形都有3條高。",
+      "explanation": "三個頂點各對應一條高，所以共有3條。 數三個頂點。 每頂點有唯一對邊所在直線。",
+      "steps": [
+        "數三個頂點。",
+        "每頂點有唯一對邊所在直線。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1條",
+          "truth": false,
+          "reason": "只把圖中畫出的高當成唯一。"
+        },
+        {
+          "choice": "2條",
+          "truth": false,
+          "reason": "漏掉一個頂點。"
+        },
+        {
+          "choice": "6條",
+          "truth": false,
+          "reason": "把同一頂點向同一直線的垂線重複計算。"
+        },
+        {
+          "choice": "3條",
+          "truth": true,
+          "reason": "三個頂點各對應一條高，所以共有3條。"
+        }
+      ],
+      "misconceptionTarget": "認為鈍角三角形外部的高不算。",
+      "prerequisiteCheck": "認識三頂點。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "無近似。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "高可在三角形內、邊上或外部，數量仍為3。",
+      "difficultyReason": "基礎題，概念計數。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "確認各類三角形的高數量。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "b6208f48f1e31ef247c15d1f782d6a0385e29f532a912756dabe85ed70e5baaa"
+    },
+    {
+      "questionId": "u16-s017-v003",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "直角三角形 ABC 中，∠C=90°。下列哪兩條邊本身也是高？",
+      "givenConditions": [
+        "AC⊥BC"
+      ],
+      "target": "辨認直角三角形的高",
+      "choices": [
+        "AB 與 AC",
+        "AB 與 BC",
+        "只有從C到AB的垂線",
+        "AC 與 BC"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "兩股AC、BC互相垂直，因此各自也是一條高。",
+      "explanation": "AC垂直BC；以BC為底時AC是高，以AC為底時BC是高。 利用C處直角。 分別把兩股視為底與高。",
+      "steps": [
+        "利用C處直角。",
+        "分別把兩股視為底與高。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "AB 與 AC",
+          "truth": false,
+          "reason": "斜邊AB不垂直於其對邊。"
+        },
+        {
+          "choice": "AB 與 BC",
+          "truth": false,
+          "reason": "同樣誤把斜邊當高。"
+        },
+        {
+          "choice": "只有從C到AB的垂線",
+          "truth": false,
+          "reason": "另外兩股也分別是高。"
+        },
+        {
+          "choice": "AC 與 BC",
+          "truth": true,
+          "reason": "AC垂直BC；以BC為底時AC是高，以AC為底時BC是高。"
+        }
+      ],
+      "misconceptionTarget": "以為高一定畫在三角形內且不能是邊。",
+      "prerequisiteCheck": "理解直角。",
+      "estimatedTimeSec": "65",
+      "unitAndRoundingCheck": "無長度單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "題目問『哪兩條邊本身』，不包含斜邊上的第三條高。",
+      "difficultyReason": "基礎題，辨認特殊位置。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "直角三角形高線。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "fa279d6a4be5e2b8ef1f2980620d5913fe0971834155c324ba7efb791473d402"
+    },
+    {
+      "questionId": "u16-s017-v004",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-017-altitude",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形以 12 cm 為底，對應高為 7 cm，面積是多少？",
+      "givenConditions": [
+        "底與高互相垂直"
+      ],
+      "target": "用底與高計算面積",
+      "choices": [
+        "19 cm²",
+        "84 cm²",
+        "38 cm²",
+        "42 cm²"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "12×7/2=42。",
+      "explanation": "面積=12×7÷2=42 cm²。 確認7 cm是對應於12 cm底的高。 代入底×高÷2。",
+      "steps": [
+        "確認7 cm是對應於12 cm底的高。",
+        "代入底×高÷2。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "19 cm²",
+          "truth": false,
+          "reason": "把底與高相加。"
+        },
+        {
+          "choice": "84 cm²",
+          "truth": false,
+          "reason": "漏除以2。"
+        },
+        {
+          "choice": "38 cm²",
+          "truth": false,
+          "reason": "乘法計算錯誤。"
+        },
+        {
+          "choice": "42 cm²",
+          "truth": true,
+          "reason": "面積=12×7÷2=42 cm²。"
+        }
+      ],
+      "misconceptionTarget": "任何一條線段都可與任意底配對。",
+      "prerequisiteCheck": "會做乘除。",
+      "estimatedTimeSec": "70",
+      "unitAndRoundingCheck": "底、高為cm，面積用cm²。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "底高對應明確且精確。",
+      "difficultyReason": "標準題，直接使用面積公式但需注意對應。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由高求面積。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "ffaec1a268e2f1890d53a9ed3a5235170bf2c59207f14665dfe4cc54ea1f9c1f"
+    },
+    {
+      "questionId": "u16-s017-v005",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形面積為 54 cm²，以 9 cm 的邊為底，對應高是多少？",
+      "givenConditions": [
+        "面積=底×高÷2"
+      ],
+      "target": "由面積反求高",
+      "choices": [
+        "12 cm",
+        "6 cm",
+        "9 cm",
+        "24 cm"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "h=12 cm；驗算9×12÷2=54。",
+      "explanation": "54=9×h÷2，所以h=54×2÷9=12 cm。 方程兩邊乘2。 再除以底9。",
+      "steps": [
+        "方程兩邊乘2。",
+        "再除以底9。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12 cm",
+          "truth": true,
+          "reason": "54=9×h÷2，所以h=54×2÷9=12 cm。"
+        },
+        {
+          "choice": "6 cm",
+          "truth": false,
+          "reason": "只算54÷9。"
+        },
+        {
+          "choice": "9 cm",
+          "truth": false,
+          "reason": "誤認底與高相等。"
+        },
+        {
+          "choice": "24 cm",
+          "truth": false,
+          "reason": "多乘一次2。"
+        }
+      ],
+      "misconceptionTarget": "反算時忘記面積公式中的1/2。",
+      "prerequisiteCheck": "會解單一步驟方程。",
+      "estimatedTimeSec": "80",
+      "unitAndRoundingCheck": "答案長度cm，面積cm²。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "正高為12且驗算吻合。",
+      "difficultyReason": "標準題，從面積逆推高。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "反求高度。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "720b929bc676c279d577467b21d388e1bc6d48f6bd93795ea447fb140881095f"
+    },
+    {
+      "questionId": "u16-s017-v006",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "鈍角三角形從一個銳角頂點向其對邊所在直線作高，垂足可能位於哪裡？",
+      "givenConditions": [
+        "所作高對應鈍角頂點以外的某個頂點"
+      ],
+      "target": "理解鈍角三角形高的延長線位置",
+      "choices": [
+        "一定在對邊線段內",
+        "對邊的延長線上",
+        "一定在頂點本身",
+        "不存在垂足"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "高是到『對邊所在直線』，不要求垂足在線段內。",
+      "explanation": "鈍角三角形從兩個銳角頂點作高時，垂足落在相應對邊的延長線上。 想像延長對邊。 從銳角頂點作垂線。",
+      "steps": [
+        "想像延長對邊。",
+        "從銳角頂點作垂線。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "一定在對邊線段內",
+          "truth": false,
+          "reason": "鈍角三角形有兩條高落在外部延長線。"
+        },
+        {
+          "choice": "對邊的延長線上",
+          "truth": true,
+          "reason": "鈍角三角形從兩個銳角頂點作高時，垂足落在相應對邊的延長線上。"
+        },
+        {
+          "choice": "一定在頂點本身",
+          "truth": false,
+          "reason": "只有特殊直角情況可能重合。"
+        },
+        {
+          "choice": "不存在垂足",
+          "truth": false,
+          "reason": "直線外一點總可作唯一垂線。"
+        }
+      ],
+      "misconceptionTarget": "把對邊線段與所在直線混為一談。",
+      "prerequisiteCheck": "理解延長線。",
+      "estimatedTimeSec": "85",
+      "unitAndRoundingCheck": "無數值。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "題幹使用『可能』且指定銳角頂點，敘述正確。",
+      "difficultyReason": "標準題，處理高線的邊界定義。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認外部高。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "7f25edfc9cee7c9ef9f86a33ff53a9724ce3389a4925bca1e65dfe7d0585fb59"
+    },
+    {
+      "questionId": "u16-s017-v007",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "△ABC 中，從 A 到 BC 的高為 8 cm，BC=15 cm。D 是 BC 中點。△ABD 與 △ACD 的面積差是多少？",
+      "givenConditions": [
+        "D在線段BC上"
+      ],
+      "target": "結合中點與共同高",
+      "choices": [
+        "0 cm²",
+        "30 cm²",
+        "60 cm²",
+        "120 cm²"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "兩面積各為7.5×8÷2=30 cm²，差0。",
+      "explanation": "BD=DC=7.5 cm，兩小三角形對BC所在直線的高都為8 cm，面積相等，差0。 由中點得兩底相等。 共同高相同。 相等面積相減為0。",
+      "steps": [
+        "由中點得兩底相等。",
+        "共同高相同。",
+        "相等面積相減為0。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0 cm²",
+          "truth": true,
+          "reason": "BD=DC=7.5 cm，兩小三角形對BC所在直線的高都為8 cm，面積相等，差0。"
+        },
+        {
+          "choice": "30 cm²",
+          "truth": false,
+          "reason": "只算其中一個面積。"
+        },
+        {
+          "choice": "60 cm²",
+          "truth": false,
+          "reason": "算出整個三角形面積。"
+        },
+        {
+          "choice": "120 cm²",
+          "truth": false,
+          "reason": "漏除以2且未比較。"
+        }
+      ],
+      "misconceptionTarget": "看到高8就直接和15相乘。",
+      "prerequisiteCheck": "已會中線等分面積。",
+      "estimatedTimeSec": "105",
+      "unitAndRoundingCheck": "面積差單位cm²；7.5為精確小數。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "D為中點保證底相等，不受三角形斜形影響。",
+      "difficultyReason": "進階題，整合中線、高與面積差。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "比較共高三角形面積。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "d1aab58ff6153ac459c5a92be489ee6104844662b9f9f25d03c7726fe18ff006"
+    },
+    {
+      "questionId": "u16-s017-v008",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "同一個三角形三邊長為 6、8、10。分別以三邊為底時，對應高由大到小的順序為何？",
+      "givenConditions": [
+        "三種算法對應同一固定面積"
+      ],
+      "target": "理解固定面積下底與高反比",
+      "choices": [
+        "以10為底的高＞以8為底的高＞以6為底的高",
+        "三個高相等",
+        "以6為底的高＞以8為底的高＞以10為底的高",
+        "以8為底的高最大，其餘相等"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "6最短故對應高最大，10最長故高最小。",
+      "explanation": "同一面積S下h=2S÷底，底越短，高越長。 固定三角形面積。 比較6、8、10的倒數。",
+      "steps": [
+        "固定三角形面積。",
+        "比較6、8、10的倒數。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "以10為底的高＞以8為底的高＞以6為底的高",
+          "truth": false,
+          "reason": "把底越長誤認高越長。"
+        },
+        {
+          "choice": "三個高相等",
+          "truth": false,
+          "reason": "只有特殊等邊三角形才如此。"
+        },
+        {
+          "choice": "以6為底的高＞以8為底的高＞以10為底的高",
+          "truth": true,
+          "reason": "同一面積S下h=2S÷底，底越短，高越長。"
+        },
+        {
+          "choice": "以8為底的高最大，其餘相等",
+          "truth": false,
+          "reason": "無此對稱條件。"
+        }
+      ],
+      "misconceptionTarget": "只看圖形方向或畫出的垂直程度。",
+      "prerequisiteCheck": "理解面積公式。",
+      "estimatedTimeSec": "110",
+      "unitAndRoundingCheck": "長度同單位，不需算實際高。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "三邊互異，排序唯一。",
+      "difficultyReason": "進階題，從公式推出反比例排序。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "比較三條高。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "22a9cf33813b4c6c037676e5047f6434bc49322d1a02cf9fcbb0023324771e2c"
+    },
+    {
+      "questionId": "u16-s017-v009",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形面積為 36 cm²。以邊 a 為底時高為 9 cm；以邊 b 為底時高為 6 cm。a：b 為多少？",
+      "givenConditions": [
+        "a、b皆為正長度"
+      ],
+      "target": "用同面積建立底高反比",
+      "choices": [
+        "3：2",
+        "2：3",
+        "1：1",
+        "4：9"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "底與高反比，a:b=6:9=2:3。",
+      "explanation": "a=72÷9=8，b=72÷6=12，所以a:b=8:12=2:3。 由2S=72。 分別求兩底。 化簡比。",
+      "steps": [
+        "由2S=72。",
+        "分別求兩底。",
+        "化簡比。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3：2",
+          "truth": false,
+          "reason": "把底與高同比。"
+        },
+        {
+          "choice": "2：3",
+          "truth": true,
+          "reason": "a=72÷9=8，b=72÷6=12，所以a:b=8:12=2:3。"
+        },
+        {
+          "choice": "1：1",
+          "truth": false,
+          "reason": "忽略高不同。"
+        },
+        {
+          "choice": "4：9",
+          "truth": false,
+          "reason": "將高度平方。"
+        }
+      ],
+      "misconceptionTarget": "將高的比直接當底的比。",
+      "prerequisiteCheck": "會化簡比。",
+      "estimatedTimeSec": "115",
+      "unitAndRoundingCheck": "長度單位相同，比例無單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "正底長唯一且兩種面積算式一致。",
+      "difficultyReason": "進階題，需跨兩組底高比較。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "固定面積的底高關係。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "2291a1be5fb77396b64dc122e3aaed08929b73c47111b260c7007c84d303c0be"
+    },
+    {
+      "questionId": "u16-s017-v010",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-017-altitude",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "消防梯與地面、牆面形成直角三角形。牆腳到梯腳為 3.6 m，梯子在牆上到達高度 4.8 m。以地面段為底，三角形的高是多少？",
+      "givenConditions": [
+        "牆面與地面垂直"
+      ],
+      "target": "從實物判定對應高",
+      "choices": [
+        "3.6 m",
+        "4.8 m",
+        "6.0 m",
+        "8.4 m"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "高為牆上垂直高度4.8 m。",
+      "explanation": "地面段為底時，與地面垂直的牆面段4.8 m就是高。 確認底是水平地面段。 找與底垂直且從對頂點到達底線的線段。",
+      "steps": [
+        "確認底是水平地面段。",
+        "找與底垂直且從對頂點到達底線的線段。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3.6 m",
+          "truth": false,
+          "reason": "這是所選底。"
+        },
+        {
+          "choice": "4.8 m",
+          "truth": true,
+          "reason": "地面段為底時，與地面垂直的牆面段4.8 m就是高。"
+        },
+        {
+          "choice": "6.0 m",
+          "truth": false,
+          "reason": "這是梯長，非對地面底的高。"
+        },
+        {
+          "choice": "8.4 m",
+          "truth": false,
+          "reason": "把兩股相加。"
+        }
+      ],
+      "misconceptionTarget": "把最長的斜邊當成高。",
+      "prerequisiteCheck": "辨認直角與底。",
+      "estimatedTimeSec": "85",
+      "unitAndRoundingCheck": "單位m，題目不要求計算梯長。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "牆地垂直條件明確，對應高唯一。",
+      "difficultyReason": "素養題，需從實物三線辨認底與高。",
+      "literacyContextNecessity": "『牆與地面垂直』及指定底決定哪一段是高；刪除場景會失去實物線段角色。",
+      "authoringIntent": "辨認梯子模型的高。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "6cca370bcbce44c8e84f30c66389e079ef74d06a81359c9729c652c88286e225"
+    },
+    {
+      "questionId": "u16-s017-v011",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形廣告旗面積為 1.35 m²，底邊長 1.8 m。為裁切支撐桿，設計者需要底邊到對頂點的垂直距離。該距離是多少？",
+      "givenConditions": [
+        "旗面視為平面三角形"
+      ],
+      "target": "由面積資料求實際高度",
+      "choices": [
+        "0.75 m",
+        "1.2 m",
+        "1.5 m",
+        "2.7 m"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "所需垂直距離1.5 m。",
+      "explanation": "h=2×1.35÷1.8=2.7÷1.8=1.5 m。 把垂直距離設為h。 由面積公式反算。 檢查1.8×1.5÷2=1.35。",
+      "steps": [
+        "把垂直距離設為h。",
+        "由面積公式反算。",
+        "檢查1.8×1.5÷2=1.35。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.75 m",
+          "truth": false,
+          "reason": "忘記面積公式要乘2反算。"
+        },
+        {
+          "choice": "1.2 m",
+          "truth": false,
+          "reason": "除法計算錯誤。"
+        },
+        {
+          "choice": "1.5 m",
+          "truth": true,
+          "reason": "h=2×1.35÷1.8=2.7÷1.8=1.5 m。"
+        },
+        {
+          "choice": "2.7 m",
+          "truth": false,
+          "reason": "只把面積乘2未除以底。"
+        }
+      ],
+      "misconceptionTarget": "把斜邊長當高度。",
+      "prerequisiteCheck": "會做小數除法。",
+      "estimatedTimeSec": "100",
+      "unitAndRoundingCheck": "面積m²除以底m得到m。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "答案代回精確符合面積。",
+      "difficultyReason": "素養題，材料裁切需要的是指定底的垂直距離。",
+      "literacyContextNecessity": "設計者的『垂直距離』界定了高度而非任一邊長；面積與底資料直接服務裁切。",
+      "authoringIntent": "計算旗面支撐高度。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "7149865a9036c0a53f7d90bffdd667ee98e6233fb212127473d9483c5d1dc275"
+    },
+    {
+      "questionId": "u16-s017-v012",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "測量人員要比較兩塊三角形地的面積。甲地底為 20 m、高為 13 m；乙地底為 26 m、高為 10 m。下列判斷何者正確？",
+      "givenConditions": [
+        "兩組高均對應各自所列底"
+      ],
+      "target": "用底高乘積比較面積",
+      "choices": [
+        "兩地面積相等，皆為130 m²",
+        "甲地較大，因13＞10",
+        "乙地較大，因26＞20",
+        "甲地260 m²、乙地260 m²"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "兩個底高乘積都是260，除2後皆130 m²。",
+      "explanation": "甲=20×13÷2=130；乙=26×10÷2=130，面積相等。 分別確認底高配對。 計算兩面積。 比較結果。",
+      "steps": [
+        "分別確認底高配對。",
+        "計算兩面積。",
+        "比較結果。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "兩地面積相等，皆為130 m²",
+          "truth": true,
+          "reason": "甲=20×13÷2=130；乙=26×10÷2=130，面積相等。"
+        },
+        {
+          "choice": "甲地較大，因13＞10",
+          "truth": false,
+          "reason": "只比較高，忽略底。"
+        },
+        {
+          "choice": "乙地較大，因26＞20",
+          "truth": false,
+          "reason": "只比較底，忽略高。"
+        },
+        {
+          "choice": "甲地260 m²、乙地260 m²",
+          "truth": false,
+          "reason": "漏除以2，雖比較相等但面積值錯。"
+        }
+      ],
+      "misconceptionTarget": "單獨比較底或高。",
+      "prerequisiteCheck": "會使用三角形面積公式。",
+      "estimatedTimeSec": "105",
+      "unitAndRoundingCheck": "底高m，面積m²。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "每組對應關係明確，答案包含正確數值。",
+      "difficultyReason": "素養題，需整合兩筆測量資料而非憑單一尺寸判斷。",
+      "literacyContextNecessity": "土地測量提供兩組不同底高，情境要求比較方案；刪除資料配對會改變任務。",
+      "authoringIntent": "比較土地面積。",
+      "tags": [
+        "空間與形狀",
+        "高線概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "47b3c90535848bcafdd2b7c9f3301ba367ecb723b2944d16bb125a683dddfdfb"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u16-s017-cr001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-017-altitude",
+      "prompt": "三角形土地面積為 96 m²，以一條長 16 m 的邊為底。求對應高，並說明若垂足落在底邊延長線上，面積公式是否仍可使用。",
+      "requiredWork": [
+        "由S=bh/2反求h。",
+        "算出12 m。",
+        "說明高是到對邊所在直線的垂直距離。"
+      ],
+      "fullCreditSolution": [
+        "96=16×h÷2，所以h=12 m。",
+        "即使垂足在邊的延長線上，只要使用到該底邊所在直線的垂直距離，面積公式仍成立。"
+      ],
+      "alternativeSolutions": [
+        "可算h=2S÷b=192÷16=12。"
+      ],
+      "reasoningSteps": [
+        "96=16×h÷2，所以h=12 m。",
+        "即使垂足在邊的延長線上，只要使用到該底邊所在直線的垂直距離，面積公式仍成立。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "高12 m，並正確說明外部垂足時仍使用對底線的垂直距離。"
+        },
+        {
+          "score": 2,
+          "criteria": "計算正確但延長線說明簡略，或概念正確有單一算術錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "只求出12 m，未回答公式適用性。"
+        },
+        {
+          "score": 0,
+          "criteria": "忘記乘2得6 m，或認為垂足不在線段內就沒有高。"
+        }
+      ],
+      "partialCreditRules": [
+        "計算正確但延長線說明簡略，或概念正確有單一算術錯。",
+        "只求出12 m，未回答公式適用性。"
+      ],
+      "followThroughPolicy": "若只在反算中漏乘2但第二部分定義完整，最高2分。",
+      "unitAndNotationRules": "面積m²、底與高m；高取正距離。",
+      "answerOnlyPolicy": "只寫12 m最多1分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "把斜邊當高。",
+        "認為鈍角三角形不能用底高公式。"
+      ],
+      "independentReview": {
+        "derivedResult": "高12 m；垂足在延長線時公式仍適用。",
+        "ambiguity": "高指非負垂直距離，不以有向長度處理。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "3576acc1d7d207982540e04fa40b6207534cb53c0e0a59740bd0b60632739667"
+    },
+    {
+      "questionId": "u16-s017-cr002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-properties",
+      "skillId": "triangle-altitude",
+      "skillOrder": 17,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "同一三角形以邊 a、b 為底時，對應高分別為 9 cm、12 cm，且 a+b=28 cm。求a、b與三角形面積。",
+      "requiredWork": [
+        "利用同面積得9a=12b。",
+        "化簡a：b=4：3。",
+        "配合和28求邊。",
+        "計算面積。"
+      ],
+      "fullCreditSolution": [
+        "由a×9÷2=b×12÷2，得9a=12b，所以a:b=4:3。",
+        "共7份=28，a=16 cm、b=12 cm。",
+        "面積=16×9÷2=72 cm²，亦等於12×12÷2。"
+      ],
+      "alternativeSolutions": [
+        "可設a=4k、b=3k，由7k=28得k=4。"
+      ],
+      "reasoningSteps": [
+        "由a×9÷2=b×12÷2，得9a=12b，所以a:b=4:3。",
+        "共7份=28，a=16 cm、b=12 cm。",
+        "面積=16×9÷2=72 cm²，亦等於12×12÷2。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "a=16、b=12、面積72 cm²，且兩種底高驗算一致。"
+        },
+        {
+          "score": 2,
+          "criteria": "比例與兩邊正確，但面積有單一算術錯；或面積正確但驗算省略。"
+        },
+        {
+          "score": 1,
+          "criteria": "能建立9a=12b或求出4：3，未完成和條件。"
+        },
+        {
+          "score": 0,
+          "criteria": "把底與高同比得3：4、忽略同一面積或無作答。"
+        }
+      ],
+      "partialCreditRules": [
+        "比例與兩邊正確，但面積有單一算術錯；或面積正確但驗算省略。",
+        "能建立9a=12b或求出4：3，未完成和條件。"
+      ],
+      "followThroughPolicy": "若比例方向錯但後續代入兩面積自行發現並修正，可依最後正確程度給分；未修正最多1分。",
+      "unitAndNotationRules": "邊長cm、面積cm²；a+b為同單位。",
+      "answerOnlyPolicy": "只答16、12、72無推理，最多1分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "寫a:b=9:12。",
+        "面積漏除2。"
+      ],
+      "independentReview": {
+        "derivedResult": "a=16 cm，b=12 cm，面積72 cm²。",
+        "ambiguity": "a、b為正邊，比例與和給唯一正解。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "424fa45337f267a7a2c1b6060396a52182db6705ee035bb55c27e1313a859f97"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u16-s017-v001",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "14ed94b9ed507457e8ec9cbf3859bc32a6d9d43c3653d3064985232f01165ca8",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "AH符合頂點到對邊所在直線垂直的定義。",
+      "derivedAnswer": "AH",
+      "storedAnswer": "AH",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「AH」；另外三個選項逐一排除：「AB」：AB通常不垂直BC。；「BH」：BH位於底邊上。；「CH」：CH也位於底邊所在直線。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無數值計算。",
+        "roundingConflict": "依精確資料獨立推導為「AH」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "即使H在延長線上，AH仍是對BC的高。",
+        "alternateReading": "若採常見誤讀「只要碰到垂足就把底邊的一段當高。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，直接辨認定義。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "認識垂直符號。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「辨認高線」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三角形從頂點 A 向對邊 BC 所在直線作垂線，垂足為 H。哪一條線段是對 BC 的高？」獨立重算：AH符合頂點到對邊所在直線垂直的定義。 正確選項「AH」。四選項核對：AB=假，AB通常不垂直BC。；BH=假，BH位於底邊上。；AH=真，由頂點A到對邊BC所在直線的垂直線段AH就是高。；CH=假，CH也位於底邊所在直線。 邊界：即使H在延長線上，AH仍是對BC的高。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v002",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "b6208f48f1e31ef247c15d1f782d6a0385e29f532a912756dabe85ed70e5baaa",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "任意非退化三角形都有3條高。",
+      "derivedAnswer": "3條",
+      "storedAnswer": "3條",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「3條」；另外三個選項逐一排除：「1條」：只把圖中畫出的高當成唯一。；「2條」：漏掉一個頂點。；「6條」：把同一頂點向同一直線的垂線重複計算。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無近似。",
+        "roundingConflict": "依精確資料獨立推導為「3條」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "高可在三角形內、邊上或外部，數量仍為3。",
+        "alternateReading": "若採常見誤讀「認為鈍角三角形外部的高不算。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，概念計數。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "認識三頂點。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「知道高線數量」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一個非退化三角形共有幾條高？」獨立重算：任意非退化三角形都有3條高。 正確選項「3條」。四選項核對：1條=假，只把圖中畫出的高當成唯一。；2條=假，漏掉一個頂點。；6條=假，把同一頂點向同一直線的垂線重複計算。；3條=真，三個頂點各對應一條高，所以共有3條。 邊界：高可在三角形內、邊上或外部，數量仍為3。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v003",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "fa279d6a4be5e2b8ef1f2980620d5913fe0971834155c324ba7efb791473d402",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "兩股AC、BC互相垂直，因此各自也是一條高。",
+      "derivedAnswer": "AC 與 BC",
+      "storedAnswer": "AC 與 BC",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「AC 與 BC」；另外三個選項逐一排除：「AB 與 AC」：斜邊AB不垂直於其對邊。；「AB 與 BC」：同樣誤把斜邊當高。；「只有從C到AB的垂線」：另外兩股也分別是高。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無長度單位。",
+        "roundingConflict": "依精確資料獨立推導為「AC 與 BC」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "題目問『哪兩條邊本身』，不包含斜邊上的第三條高。",
+        "alternateReading": "若採常見誤讀「以為高一定畫在三角形內且不能是邊。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，辨認特殊位置。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "理解直角。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「辨認直角三角形的高」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「直角三角形 ABC 中，∠C=90°。下列哪兩條邊本身也是高？」獨立重算：兩股AC、BC互相垂直，因此各自也是一條高。 正確選項「AC 與 BC」。四選項核對：AB 與 AC=假，斜邊AB不垂直於其對邊。；AB 與 BC=假，同樣誤把斜邊當高。；只有從C到AB的垂線=假，另外兩股也分別是高。；AC 與 BC=真，AC垂直BC；以BC為底時AC是高，以AC為底時BC是高。 邊界：題目問『哪兩條邊本身』，不包含斜邊上的第三條高。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v004",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "ffaec1a268e2f1890d53a9ed3a5235170bf2c59207f14665dfe4cc54ea1f9c1f",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "12×7/2=42。",
+      "derivedAnswer": "42 cm²",
+      "storedAnswer": "42 cm²",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「42 cm²」；另外三個選項逐一排除：「19 cm²」：把底與高相加。；「84 cm²」：漏除以2。；「38 cm²」：乘法計算錯誤。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "底、高為cm，面積用cm²。",
+        "roundingConflict": "依精確資料獨立推導為「42 cm²」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "底高對應明確且精確。",
+        "alternateReading": "若採常見誤讀「任何一條線段都可與任意底配對。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，直接使用面積公式但需注意對應。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會做乘除。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「用底與高計算面積」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三角形以 12 cm 為底，對應高為 7 cm，面積是多少？」獨立重算：12×7/2=42。 正確選項「42 cm²」。四選項核對：19 cm²=假，把底與高相加。；84 cm²=假，漏除以2。；38 cm²=假，乘法計算錯誤。；42 cm²=真，面積=12×7÷2=42 cm²。 邊界：底高對應明確且精確。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v005",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "720b929bc676c279d577467b21d388e1bc6d48f6bd93795ea447fb140881095f",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "h=12 cm；驗算9×12÷2=54。",
+      "derivedAnswer": "12 cm",
+      "storedAnswer": "12 cm",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「12 cm」；另外三個選項逐一排除：「6 cm」：只算54÷9。；「9 cm」：誤認底與高相等。；「24 cm」：多乘一次2。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "答案長度cm，面積cm²。",
+        "roundingConflict": "依精確資料獨立推導為「12 cm」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "正高為12且驗算吻合。",
+        "alternateReading": "若採常見誤讀「反算時忘記面積公式中的1/2。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，從面積逆推高。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會解單一步驟方程。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「由面積反求高」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三角形面積為 54 cm²，以 9 cm 的邊為底，對應高是多少？」獨立重算：h=12 cm；驗算9×12÷2=54。 正確選項「12 cm」。四選項核對：12 cm=真，54=9×h÷2，所以h=54×2÷9=12 cm。；6 cm=假，只算54÷9。；9 cm=假，誤認底與高相等。；24 cm=假，多乘一次2。 邊界：正高為12且驗算吻合。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v006",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "7f25edfc9cee7c9ef9f86a33ff53a9724ce3389a4925bca1e65dfe7d0585fb59",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "高是到『對邊所在直線』，不要求垂足在線段內。",
+      "derivedAnswer": "對邊的延長線上",
+      "storedAnswer": "對邊的延長線上",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「對邊的延長線上」；另外三個選項逐一排除：「一定在對邊線段內」：鈍角三角形有兩條高落在外部延長線。；「一定在頂點本身」：只有特殊直角情況可能重合。；「不存在垂足」：直線外一點總可作唯一垂線。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無數值。",
+        "roundingConflict": "依精確資料獨立推導為「對邊的延長線上」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "題幹使用『可能』且指定銳角頂點，敘述正確。",
+        "alternateReading": "若採常見誤讀「把對邊線段與所在直線混為一談。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，處理高線的邊界定義。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "理解延長線。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「理解鈍角三角形高的延長線位置」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「鈍角三角形從一個銳角頂點向其對邊所在直線作高，垂足可能位於哪裡？」獨立重算：高是到『對邊所在直線』，不要求垂足在線段內。 正確選項「對邊的延長線上」。四選項核對：一定在對邊線段內=假，鈍角三角形有兩條高落在外部延長線。；對邊的延長線上=真，鈍角三角形從兩個銳角頂點作高時，垂足落在相應對邊的延長線上。；一定在頂點本身=假，只有特殊直角情況可能重合。；不存在垂足=假，直線外一點總可作唯一垂線。 邊界：題幹使用『可能』且指定銳角頂點，敘述正確。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v007",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "d1aab58ff6153ac459c5a92be489ee6104844662b9f9f25d03c7726fe18ff006",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "兩面積各為7.5×8÷2=30 cm²，差0。",
+      "derivedAnswer": "0 cm²",
+      "storedAnswer": "0 cm²",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「0 cm²」；另外三個選項逐一排除：「30 cm²」：只算其中一個面積。；「60 cm²」：算出整個三角形面積。；「120 cm²」：漏除以2且未比較。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "面積差單位cm²；7.5為精確小數。",
+        "roundingConflict": "依精確資料獨立推導為「0 cm²」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "D為中點保證底相等，不受三角形斜形影響。",
+        "alternateReading": "若採常見誤讀「看到高8就直接和15相乘。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，整合中線、高與面積差。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "已會中線等分面積。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「結合中點與共同高」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「△ABC 中，從 A 到 BC 的高為 8 cm，BC=15 cm。D 是 BC 中點。△ABD 與 △ACD 的面積差是多少？」獨立重算：兩面積各為7.5×8÷2=30 cm²，差0。 正確選項「0 cm²」。四選項核對：0 cm²=真，BD=DC=7.5 cm，兩小三角形對BC所在直線的高都為8 cm，面積相等，差0。；30 cm²=假，只算其中一個面積。；60 cm²=假，算出整個三角形面積。；120 cm²=假，漏除以2且未比較。 邊界：D為中點保證底相等，不受三角形斜形影響。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v008",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "22a9cf33813b4c6c037676e5047f6434bc49322d1a02cf9fcbb0023324771e2c",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "6最短故對應高最大，10最長故高最小。",
+      "derivedAnswer": "以6為底的高＞以8為底的高＞以10為底的高",
+      "storedAnswer": "以6為底的高＞以8為底的高＞以10為底的高",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「以6為底的高＞以8為底的高＞以10為底的高」；另外三個選項逐一排除：「以10為底的高＞以8為底的高＞以6為底的高」：把底越長誤認高越長。；「三個高相等」：只有特殊等邊三角形才如此。；「以8為底的高最大，其餘相等」：無此對稱條件。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "長度同單位，不需算實際高。",
+        "roundingConflict": "依精確資料獨立推導為「以6為底的高＞以8為底的高＞以10為底的高」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "三邊互異，排序唯一。",
+        "alternateReading": "若採常見誤讀「只看圖形方向或畫出的垂直程度。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，從公式推出反比例排序。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "理解面積公式。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「理解固定面積下底與高反比」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「同一個三角形三邊長為 6、8、10。分別以三邊為底時，對應高由大到小的順序為何？」獨立重算：6最短故對應高最大，10最長故高最小。 正確選項「以6為底的高＞以8為底的高＞以10為底的高」。四選項核對：以10為底的高＞以8為底的高＞以6為底的高=假，把底越長誤認高越長。；三個高相等=假，只有特殊等邊三角形才如此。；以6為底的高＞以8為底的高＞以10為底的高=真，同一面積S下h=2S÷底，底越短，高越長。；以8為底的高最大，其餘相等=假，無此對稱條件。 邊界：三邊互異，排序唯一。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v009",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "2291a1be5fb77396b64dc122e3aaed08929b73c47111b260c7007c84d303c0be",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "底與高反比，a:b=6:9=2:3。",
+      "derivedAnswer": "2：3",
+      "storedAnswer": "2：3",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「2：3」；另外三個選項逐一排除：「3：2」：把底與高同比。；「1：1」：忽略高不同。；「4：9」：將高度平方。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "長度單位相同，比例無單位。",
+        "roundingConflict": "依精確資料獨立推導為「2：3」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "正底長唯一且兩種面積算式一致。",
+        "alternateReading": "若採常見誤讀「將高的比直接當底的比。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，需跨兩組底高比較。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會化簡比。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「用同面積建立底高反比」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三角形面積為 36 cm²。以邊 a 為底時高為 9 cm；以邊 b 為底時高為 6 cm。a：b 為多少？」獨立重算：底與高反比，a:b=6:9=2:3。 正確選項「2：3」。四選項核對：3：2=假，把底與高同比。；2：3=真，a=72÷9=8，b=72÷6=12，所以a:b=8:12=2:3。；1：1=假，忽略高不同。；4：9=假，將高度平方。 邊界：正底長唯一且兩種面積算式一致。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v010",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "6cca370bcbce44c8e84f30c66389e079ef74d06a81359c9729c652c88286e225",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "高為牆上垂直高度4.8 m。",
+      "derivedAnswer": "4.8 m",
+      "storedAnswer": "4.8 m",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「4.8 m」；另外三個選項逐一排除：「3.6 m」：這是所選底。；「6.0 m」：這是梯長，非對地面底的高。；「8.4 m」：把兩股相加。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "單位m，題目不要求計算梯長。",
+        "roundingConflict": "依精確資料獨立推導為「4.8 m」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "牆地垂直條件明確，對應高唯一。",
+        "alternateReading": "若採常見誤讀「把最長的斜邊當成高。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，需從實物三線辨認底與高。",
+      "literacyContextNecessity": "『牆與地面垂直』及指定底決定哪一段是高；刪除場景會失去實物線段角色。",
+      "prerequisiteCheck": "辨認直角與底。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「從實物判定對應高」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「消防梯與地面、牆面形成直角三角形。牆腳到梯腳為 3.6 m，梯子在牆上到達高度 4.8 m。以地面段為底，三角形的高是多少？」獨立重算：高為牆上垂直高度4.8 m。 正確選項「4.8 m」。四選項核對：3.6 m=假，這是所選底。；4.8 m=真，地面段為底時，與地面垂直的牆面段4.8 m就是高。；6.0 m=假，這是梯長，非對地面底的高。；8.4 m=假，把兩股相加。 邊界：牆地垂直條件明確，對應高唯一。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v011",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "7149865a9036c0a53f7d90bffdd667ee98e6233fb212127473d9483c5d1dc275",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "所需垂直距離1.5 m。",
+      "derivedAnswer": "1.5 m",
+      "storedAnswer": "1.5 m",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「1.5 m」；另外三個選項逐一排除：「0.75 m」：忘記面積公式要乘2反算。；「1.2 m」：除法計算錯誤。；「2.7 m」：只把面積乘2未除以底。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "面積m²除以底m得到m。",
+        "roundingConflict": "依精確資料獨立推導為「1.5 m」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "答案代回精確符合面積。",
+        "alternateReading": "若採常見誤讀「把斜邊長當高度。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，材料裁切需要的是指定底的垂直距離。",
+      "literacyContextNecessity": "設計者的『垂直距離』界定了高度而非任一邊長；面積與底資料直接服務裁切。",
+      "prerequisiteCheck": "會做小數除法。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「由面積資料求實際高度」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三角形廣告旗面積為 1.35 m²，底邊長 1.8 m。為裁切支撐桿，設計者需要底邊到對頂點的垂直距離。該距離是多少？」獨立重算：所需垂直距離1.5 m。 正確選項「1.5 m」。四選項核對：0.75 m=假，忘記面積公式要乘2反算。；1.2 m=假，除法計算錯誤。；1.5 m=真，h=2×1.35÷1.8=2.7÷1.8=1.5 m。；2.7 m=假，只把面積乘2未除以底。 邊界：答案代回精確符合面積。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s017-v012",
+      "unitId": "u16",
+      "skillId": "triangle-altitude",
+      "contentSha256": "47b3c90535848bcafdd2b7c9f3301ba367ecb723b2944d16bb125a683dddfdfb",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "兩個底高乘積都是260，除2後皆130 m²。",
+      "derivedAnswer": "兩地面積相等，皆為130 m²",
+      "storedAnswer": "兩地面積相等，皆為130 m²",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「兩地面積相等，皆為130 m²」；另外三個選項逐一排除：「甲地較大，因13＞10」：只比較高，忽略底。；「乙地較大，因26＞20」：只比較底，忽略高。；「甲地260 m²、乙地260 m²」：漏除以2，雖比較相等但面積值錯。",
+        "undefinedSymbol": "題幹符號與詞語已在「高線概念」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "底高m，面積m²。",
+        "roundingConflict": "依精確資料獨立推導為「兩地面積相等，皆為130 m²」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "每組對應關係明確，答案包含正確數值。",
+        "alternateReading": "若採常見誤讀「單獨比較底或高。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，需整合兩筆測量資料而非憑單一尺寸判斷。",
+      "literacyContextNecessity": "土地測量提供兩組不同底高，情境要求比較方案；刪除資料配對會改變任務。",
+      "prerequisiteCheck": "會使用三角形面積公式。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「用底高乘積比較面積」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「測量人員要比較兩塊三角形地的面積。甲地底為 20 m、高為 13 m；乙地底為 26 m、高為 10 m。下列判斷何者正確？」獨立重算：兩個底高乘積都是260，除2後皆130 m²。 正確選項「兩地面積相等，皆為130 m²」。四選項核對：兩地面積相等，皆為130 m²=真，甲=20×13÷2=130；乙=26×10÷2=130，面積相等。；甲地較大，因13＞10=假，只比較高，忽略底。；乙地較大，因26＞20=假，只比較底，忽略高。；甲地260 m²、乙地260 m²=假，漏除以2，雖比較相等但面積值錯。 邊界：每組對應關係明確，答案包含正確數值。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u16-fig-017-altitude",
+      "unitId": "u16",
+      "slot": "s017",
+      "title": "三角形高到對邊所在直線",
+      "altText": "左側銳角三角形的高落在底邊內，右側鈍角三角形的高落在底邊延長線，兩處皆標直角。",
+      "svgPath": "figures/u16/u16-fig-017-altitude.svg",
+      "drawingSpec": {
+        "canvas": {
+          "width": 360,
+          "height": 240,
+          "viewBox": "0 0 360 240"
+        },
+        "coordinateSystem": "左上角為(0,0)，x向右、y向下。",
+        "geometry": "左三角形(25,185)、(95,50)、(165,185)，高x=95；右鈍角三角形底邊自(230,185)至(340,185)，向左虛線延長至(180,185)，頂點(205,65)，高x=205落在底邊延長線。",
+        "visibleLineRules": "主要邊線使用2.5px黑色實線；輔助線使用1.5px虛線；弧線不得遮住頂點標籤。",
+        "hiddenLineRules": "平面圖無隱藏邊；未畫出的延長線不得由視覺自行推定。",
+        "labels": "兩圖說明置底；高字在垂線旁。",
+        "tickMarksAndSymbols": "相等邊以同數量短刻痕表示；直角以小正方形；相等角以同型圓弧。",
+        "units": "示意圖無長度單位，題目另有數值時以題幹為準。",
+        "arrows": "只在延長線或行進方向使用箭頭。",
+        "toScale": false,
+        "notToScaleWarning": "圖形不按比例，請依標記與題目條件判斷。",
+        "mobileLayout": "360×240畫布；最小文字14px；標籤與線段保持至少6px間距。",
+        "answerLeakageControl": "圖中只呈現已知結構與定義標記，不標示題目所求數值或正確選項。"
+      },
+      "svgAssertions": [
+        "垂足可在延長線",
+        "stroke-dasharray",
+        "M205 65 V185",
+        "高</text>"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "mobileReadability": "360px寬預覽下，頂點、刻痕、直角符號與延長線箭頭仍可辨識。",
+        "answerLeakage": "未顯示任何題目答案；只保留概念所需結構。",
+        "geometryCheck": "已核對右圖鈍角位於底點(230,185)，頂點投影(205,185)確實落在底邊左側延長線。",
+        "reviewNote": "高線位置圖已逐線檢查：左圖垂足位於底邊內；右圖底邊從x=230起，頂點投影x=205落在虛線延長區，直角符號位於正確垂足；未依視覺量角推答案。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "de2eed1586800013f9aaa3a5b7e78f61c2e90929dfc06b6543d4f932b7cf7f8d"
+    }
+  ]
+};
+export default skillData;

@@ -1,0 +1,280 @@
+{
+  "lectureId": "u16-s006-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-congruence",
+  "skillId": "isosceles-properties",
+  "skillOrder": 6,
+  "originalLockedTitle": "等腰三角形性質",
+  "title": "等腰三角形性質：等邊對等角與頂角平分線三合一",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能由兩腰相等推出兩底角相等。",
+    "能由兩底角相等反推對邊相等。",
+    "能理解等腰三角形頂角平分線同時是底邊中線與高線。",
+    "能利用內角和及等腰性質求角度或邊長。"
+  ],
+  "prerequisiteBridge": "已會辨認等腰三角形、使用 SAS/ASA/AAS 證明全等。現在把圖形沿對稱軸分成兩個三角形，可建立等腰三角形最重要的性質。",
+  "prerequisites": [
+    {
+      "skillId": "triangle-asa-aas",
+      "requiredLevel": "能使用先備技能「ASA 與 AAS」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "等邊對等角",
+      "definition": "三角形中相等的兩邊所對的兩角相等。"
+    },
+    {
+      "term": "等角對等邊",
+      "definition": "三角形中相等的兩角所對的兩邊相等。"
+    },
+    {
+      "term": "頂角平分線",
+      "definition": "把頂角分成兩個相等角的射線或線段。"
+    },
+    {
+      "term": "底邊中線",
+      "definition": "由頂點連到底邊中點的線段。"
+    },
+    {
+      "term": "底邊高線",
+      "definition": "由頂點向底邊作垂線所得線段。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AB=AC ⇒ ∠B=∠C",
+      "meaning": "等邊對等角。"
+    },
+    {
+      "symbol": "∠B=∠C ⇒ AB=AC",
+      "meaning": "等角對等邊。"
+    },
+    {
+      "symbol": "AD 平分 ∠A",
+      "meaning": "若 AB=AC，則同時可得 BD=DC 且 AD⊥BC。"
+    }
+  ],
+  "conceptNarrative": [
+    "在 △ABC 中若 AB=AC，從 A 向底邊作角平分線 AD。兩個小三角形有 AB=AC、∠BAD=∠CAD、AD 共用，所以以 SAS 全等。",
+    "全等後得到 ∠B=∠C、BD=DC、∠ADB=∠ADC。後兩角相等又成一直線，因此各為 90°。",
+    "所以在等腰三角形中，從頂角出發的角平分線、中線與高線是同一條線；任知其中一種身分便可推出另外兩種。",
+    "逆向也成立：若三角形兩角相等，則其對邊相等，可判定等腰。",
+    "求角時先辨認誰是頂角與底角，再用兩底角相等及內角和 180°。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等腰三角形底角定理",
+      "statement": "等腰三角形的兩個底角相等。"
+    },
+    {
+      "name": "底角定理逆命題",
+      "statement": "三角形若有兩角相等，則兩角所對的邊相等。"
+    },
+    {
+      "name": "三線合一",
+      "statement": "等腰三角形頂角的角平分線、底邊中線與底邊高線重合。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AB=AC ⇒ ∠B=∠C",
+      "conditions": [
+        "△ABC 可成立"
+      ],
+      "meaning": "等邊對等角。"
+    },
+    {
+      "formula": "若 ∠A=θ，則 ∠B=∠C=(180°−θ)÷2",
+      "conditions": [
+        "AB=AC，A 為頂角"
+      ],
+      "meaning": "由頂角求底角。"
+    },
+    {
+      "formula": "若底角為 β，則頂角=180°−2β",
+      "conditions": [
+        "兩底角相等"
+      ],
+      "meaning": "由底角求頂角。"
+    }
+  ],
+  "nonApplicableCases": [
+    "三線合一只針對由等腰三角形頂角連到底邊的那條線。",
+    "任意一條中線不一定是高線或角平分線。",
+    "若相等邊辨認錯誤，頂角與底角也會錯。",
+    "外角不能直接代入三角形內角和。",
+    "底角相等的逆命題需在同一個三角形內使用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "由等長邊找出頂角與底角。",
+      "check": "相等邊共同端點是否為頂角？"
+    },
+    {
+      "step": 2,
+      "instruction": "寫出兩底角相等。",
+      "check": "是否找的是相等邊各自對面的角？"
+    },
+    {
+      "step": 3,
+      "instruction": "套用內角和。",
+      "check": "頂角加兩個底角是否為 180°？"
+    },
+    {
+      "step": 4,
+      "instruction": "遇到頂角到基底的線段，辨認三線合一。",
+      "check": "它是否已知為角平分線、中線或高線之一？"
+    },
+    {
+      "step": 5,
+      "instruction": "求邊時可使用等角對等邊。",
+      "check": "相等角所對的邊是否正確？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "AB=AC，∠A=40°，求 ∠B、∠C。",
+      "solutionSteps": [
+        "∠B=∠C。",
+        "兩底角和為 180°−40°=140°。",
+        "每個底角為 70°。"
+      ],
+      "answer": "∠B=∠C=70°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "等腰三角形一個底角為 52°，求頂角。",
+      "solutionSteps": [
+        "另一底角也為 52°。",
+        "頂角=180°−104°。"
+      ],
+      "answer": "76°。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "AB=AC，AD 平分 ∠A 且 D 在 BC 上，可推出哪些結論？",
+      "solutionSteps": [
+        "△ABD≅△ACD（SAS）。",
+        "對應邊 BD=DC，對應角 ∠ADB=∠ADC。",
+        "兩角互為鄰補且相等，所以皆 90°。"
+      ],
+      "answer": "BD=DC 且 AD⊥BC。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "△ABC 中 ∠B=∠C，若 AB=9，求 AC。",
+      "solutionSteps": [
+        "相等角所對邊相等。",
+        "∠B 對 AC，∠C 對 AB。"
+      ],
+      "answer": "AC=9。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "等腰三角形頂角與底角比為 2:1，求三角。",
+      "solutionSteps": [
+        "設底角 x，頂角 2x。",
+        "2x+x+x=180°，得 x=45°。"
+      ],
+      "answer": "頂角 90°，兩底角各 45°。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把兩腰所夾角當底角。",
+      "why": "未由共同端點辨認。",
+      "correction": "兩腰共同端點的角是頂角。"
+    },
+    {
+      "mistake": "等腰就認為三角都相等。",
+      "why": "與等邊混淆。",
+      "correction": "等腰只保證兩底角相等。"
+    },
+    {
+      "mistake": "用 180°−底角 後直接除 2。",
+      "why": "沒有先判斷已知角是頂角還是底角。",
+      "correction": "先標註角色，再建立角和。"
+    },
+    {
+      "mistake": "任何中線都套三線合一。",
+      "why": "忽略等腰與頂角條件。",
+      "correction": "必須從等腰三角形頂角連到底邊。"
+    },
+    {
+      "mistake": "等角對錯邊。",
+      "why": "看相鄰邊而非對邊。",
+      "correction": "角的對邊是不接觸該角的那條邊。"
+    },
+    {
+      "mistake": "把外角當成底角。",
+      "why": "未辨別三角形內外。",
+      "correction": "內角位於三角形內部，外角需先轉換。"
+    }
+  ],
+  "selfCheck": [
+    "我能由 AB=AC 正確找出 ∠B=∠C 嗎？",
+    "已知角是頂角還是底角？",
+    "我會用 180°−頂角後除以 2 嗎？",
+    "三線合一的線段是否由頂角出發？",
+    "我能由等角反推正確對邊相等嗎？"
+  ],
+  "summary": [
+    "等腰三角形等邊對等角，逆向等角對等邊。",
+    "頂角平分線、底邊中線與底邊高線三線合一。",
+    "角度題先辨認頂角與底角，再用內角和。",
+    "性質成立可由兩個小三角形全等證明。"
+  ],
+  "connections": {
+    "previous": "利用 SAS、ASA 等全等判定建立性質。",
+    "next": [
+      "等邊三角形把等腰性質套用到三組邊。",
+      "中線與高線技能會再次區分不同線段。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-006-isosceles-symmetry"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-006-isosceles-symmetry 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s006-v001",
+      "u16-s006-v002",
+      "u16-s006-v003",
+      "u16-s006-v004",
+      "u16-s006-v005",
+      "u16-s006-v006",
+      "u16-s006-v007",
+      "u16-s006-v008",
+      "u16-s006-v009",
+      "u16-s006-v010",
+      "u16-s006-v011",
+      "u16-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s006-cr001",
+      "u16-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「等腰三角形性質」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "7f2dbe01b29601460b4aed939d580dfea579f59a6a3a8d7488cf9c0e289787ea"
+}

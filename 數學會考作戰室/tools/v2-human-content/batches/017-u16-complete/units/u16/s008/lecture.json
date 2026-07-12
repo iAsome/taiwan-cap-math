@@ -1,0 +1,265 @@
+{
+  "lectureId": "u16-s008-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-construction",
+  "skillId": "compass-construction",
+  "skillOrder": 8,
+  "originalLockedTitle": "尺規作圖步驟",
+  "title": "尺規作圖步驟：用圓規搬移距離並用直尺連線",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能說明尺規作圖中直尺與圓規各自允許的操作。",
+    "能依圓弧交點理解等距與作圖正確性的理由。",
+    "能按順序描述作一線段等長線段、作中垂線與作角平分線的基本流程。",
+    "能分辨作圖痕跡與最後答案線，並保留足以驗證的圓弧。"
+  ],
+  "prerequisiteBridge": "等邊三角形可由兩個同半徑圓的交點構造，顯示尺規作圖的核心：圓上各點到圓心等距。現在把這種等距關係轉成標準作圖步驟。",
+  "prerequisites": [
+    {
+      "skillId": "equilateral-properties",
+      "requiredLevel": "能使用先備技能「等邊三角形性質」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "無刻度直尺",
+      "definition": "只用來畫過兩點的直線或延長線，不直接量長度。"
+    },
+    {
+      "term": "圓規",
+      "definition": "以指定點為圓心、指定線段為半徑畫圓或圓弧，並可搬移距離。"
+    },
+    {
+      "term": "作圖痕跡",
+      "definition": "圓弧、交點與輔助線，提供作圖依據。"
+    },
+    {
+      "term": "中垂線",
+      "definition": "通過線段中點且垂直於該線段的直線。"
+    },
+    {
+      "term": "角平分線",
+      "definition": "把一個角分成兩個相等角的射線。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "以 A 為圓心、AB 為半徑作弧",
+      "meaning": "圓弧上每點到 A 的距離均等於 AB。"
+    },
+    {
+      "symbol": "兩弧交於 P、Q",
+      "meaning": "P、Q 同時滿足到兩圓心的距離條件。"
+    },
+    {
+      "symbol": "作直線 PQ",
+      "meaning": "用無刻度直尺連接 P、Q 並可延長。"
+    }
+  ],
+  "conceptNarrative": [
+    "尺規作圖不是量測後描畫，而是用幾何性質保證結果。直尺沒有刻度，圓規負責複製距離。",
+    "以 A 為圓心、固定半徑畫弧，弧上所有點都與 A 等距；兩個圓弧的交點同時滿足兩個等距條件。",
+    "作線段中垂線時，以兩端點為圓心畫相同半徑且半徑大於線段一半，兩弧交點連線即同時到兩端等距，因此通過中點並垂直原線段。",
+    "作角平分線時，先用同一弧在兩邊截出等距點，再以這兩點為圓心畫同半徑弧，連接角頂點與交點。",
+    "完整文字步驟應交代圓心、半徑、交點名稱與最後連線，不能只說『畫弧』。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "尺規作圖",
+      "statement": "只使用無刻度直尺與圓規，依有限步驟構造滿足指定幾何條件的圖形。"
+    },
+    {
+      "name": "等距軌跡",
+      "statement": "到兩定點等距的點位於兩點連線的中垂線上。"
+    },
+    {
+      "name": "圓的基本性質",
+      "statement": "同一圓或同半徑圓弧上的半徑皆相等。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "PA=PB ⇒ P 在線段 AB 的中垂線上",
+      "conditions": [
+        "A、B 為不同定點"
+      ],
+      "meaning": "中垂線作圖的正確性依據。"
+    },
+    {
+      "formula": "以 A 為圓心、AB 為半徑 ⇒ AP=AB",
+      "conditions": [
+        "P 位於所畫圓弧上"
+      ],
+      "meaning": "圓規搬移距離。"
+    }
+  ],
+  "nonApplicableCases": [
+    "用有刻度直尺直接量取長度不屬於純尺規作圖。",
+    "圓弧半徑太小而不相交時，無法得到所需交點。",
+    "只畫一個圓弧交點通常不足以決定一條直線。",
+    "省略圓心或半徑資訊，步驟不可重現。",
+    "擦掉所有圓弧會失去驗證作圖依據，正式作圖通常保留必要痕跡。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先讀清楚要保留的條件：等長、等角、垂直或平分。",
+      "check": "最後要得到點、線段、射線還是直線？"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇圓心與半徑，畫第一組圓弧。",
+      "check": "半徑是否由已知線段或相同開口取得？"
+    },
+    {
+      "step": 3,
+      "instruction": "以另一個關鍵點為圓心畫相交圓弧。",
+      "check": "兩弧是否有足夠交點？"
+    },
+    {
+      "step": 4,
+      "instruction": "命名交點並用直尺連接指定點。",
+      "check": "連線對應哪個幾何目標？"
+    },
+    {
+      "step": 5,
+      "instruction": "用等距或全等理由驗證。",
+      "check": "為何該線垂直、平分或等長？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "在射線 PX 上作 PQ=AB。",
+      "solutionSteps": [
+        "以 P 為圓心、AB 為半徑畫弧，交射線 PX 於 Q。",
+        "因 Q 在此弧上，所以 PQ=AB。"
+      ],
+      "answer": "Q 即所求點。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "作線段 AB 的中垂線。",
+      "solutionSteps": [
+        "以 A、B 為圓心，用相同且大於 AB 一半的半徑畫弧，交於 P、Q。",
+        "連接 P、Q。",
+        "P、Q 都到 A、B 等距。"
+      ],
+      "answer": "直線 PQ 為 AB 的中垂線。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "作 ∠AOB 的角平分線。",
+      "solutionSteps": [
+        "以 O 為圓心作弧，交 OA、OB 於 C、D。",
+        "以 C、D 為圓心、相同半徑作弧，交於 P。",
+        "作射線 OP。"
+      ],
+      "answer": "OP 平分 ∠AOB。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "用尺規作等邊三角形，已知底邊 AB。",
+      "solutionSteps": [
+        "以 A 為圓心、AB 為半徑作弧。",
+        "以 B 為圓心、BA 為半徑作弧，交於 C。",
+        "連接 AC、BC。"
+      ],
+      "answer": "AB=AC=BC，△ABC 為等邊三角形。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "用直尺刻度量距離。",
+      "why": "混入測量工具。",
+      "correction": "用圓規開口搬移已知線段。"
+    },
+    {
+      "mistake": "只寫『畫兩個圓』。",
+      "why": "缺少圓心與半徑。",
+      "correction": "每一步明確寫『以誰為圓心、以哪段為半徑』。"
+    },
+    {
+      "mistake": "作中垂線時兩次半徑不同。",
+      "why": "無法保證交點到 A、B 等距。",
+      "correction": "圓規開口保持不變。"
+    },
+    {
+      "mistake": "半徑不大於 AB 一半。",
+      "why": "兩弧可能相切或不相交，無法得到兩交點。",
+      "correction": "選大於 AB/2 的相同半徑。"
+    },
+    {
+      "mistake": "把交點連到錯誤端點。",
+      "why": "未確認最後目標。",
+      "correction": "中垂線連兩弧交點；角平分線連角頂點與弧交點。"
+    },
+    {
+      "mistake": "只描述步驟不說理由。",
+      "why": "無法確認構造正確。",
+      "correction": "用同圓半徑相等、等距軌跡或全等說明。"
+    }
+  ],
+  "selfCheck": [
+    "每個圓弧都寫出圓心與半徑了嗎？",
+    "直尺是否只用於連點與延長？",
+    "兩弧需要相交時半徑是否足夠？",
+    "最後連的是正確兩點嗎？",
+    "我能用等距或全等驗證結果嗎？"
+  ],
+  "summary": [
+    "無刻度直尺畫直線，圓規搬移距離與畫圓弧。",
+    "圓弧交點把等距條件轉成可見的點。",
+    "作圖步驟必須交代圓心、半徑、交點與連線。",
+    "正確性要由幾何性質而非量測外觀保證。"
+  ],
+  "connections": {
+    "previous": "等邊三角形展示同半徑圓弧的等長效果。",
+    "next": [
+      "下一技能完整處理複製角。",
+      "之後將用同樣等距思想過點作垂線。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-008-construction-tools"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-008-construction-tools 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s008-v001",
+      "u16-s008-v002",
+      "u16-s008-v003",
+      "u16-s008-v004",
+      "u16-s008-v005",
+      "u16-s008-v006",
+      "u16-s008-v007",
+      "u16-s008-v008",
+      "u16-s008-v009",
+      "u16-s008-v010",
+      "u16-s008-v011",
+      "u16-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s008-cr001",
+      "u16-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「尺規作圖步驟」逐段核對定義、適用條件與反例；重新演算4個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "e6d8287e0c3edb9bb10813dc9d30d571c2c3d9f0f4cc5eb4dad9cae247f1cd6a"
+}

@@ -1,0 +1,1759 @@
+// Deterministically emitted from reviewed CHATGPT_HUMAN_AUTHORED_R1 source.
+// Do not edit this staging module by hand.
+export const skillData={
+  "slot": "s006",
+  "lecture": {
+    "lectureId": "u16-s006-lecture-r1",
+    "unitId": "u16",
+    "numericUnitId": 16,
+    "topicId": "u16-congruence",
+    "skillId": "isosceles-properties",
+    "skillOrder": 6,
+    "originalLockedTitle": "等腰三角形性質",
+    "title": "等腰三角形性質：等邊對等角與頂角平分線三合一",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能由兩腰相等推出兩底角相等。",
+      "能由兩底角相等反推對邊相等。",
+      "能理解等腰三角形頂角平分線同時是底邊中線與高線。",
+      "能利用內角和及等腰性質求角度或邊長。"
+    ],
+    "prerequisiteBridge": "已會辨認等腰三角形、使用 SAS/ASA/AAS 證明全等。現在把圖形沿對稱軸分成兩個三角形，可建立等腰三角形最重要的性質。",
+    "prerequisites": [
+      {
+        "skillId": "triangle-asa-aas",
+        "requiredLevel": "能使用先備技能「ASA 與 AAS」的核心定義與基本運算，並能說明其與本節的連結。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "等邊對等角",
+        "definition": "三角形中相等的兩邊所對的兩角相等。"
+      },
+      {
+        "term": "等角對等邊",
+        "definition": "三角形中相等的兩角所對的兩邊相等。"
+      },
+      {
+        "term": "頂角平分線",
+        "definition": "把頂角分成兩個相等角的射線或線段。"
+      },
+      {
+        "term": "底邊中線",
+        "definition": "由頂點連到底邊中點的線段。"
+      },
+      {
+        "term": "底邊高線",
+        "definition": "由頂點向底邊作垂線所得線段。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "AB=AC ⇒ ∠B=∠C",
+        "meaning": "等邊對等角。"
+      },
+      {
+        "symbol": "∠B=∠C ⇒ AB=AC",
+        "meaning": "等角對等邊。"
+      },
+      {
+        "symbol": "AD 平分 ∠A",
+        "meaning": "若 AB=AC，則同時可得 BD=DC 且 AD⊥BC。"
+      }
+    ],
+    "conceptNarrative": [
+      "在 △ABC 中若 AB=AC，從 A 向底邊作角平分線 AD。兩個小三角形有 AB=AC、∠BAD=∠CAD、AD 共用，所以以 SAS 全等。",
+      "全等後得到 ∠B=∠C、BD=DC、∠ADB=∠ADC。後兩角相等又成一直線，因此各為 90°。",
+      "所以在等腰三角形中，從頂角出發的角平分線、中線與高線是同一條線；任知其中一種身分便可推出另外兩種。",
+      "逆向也成立：若三角形兩角相等，則其對邊相等，可判定等腰。",
+      "求角時先辨認誰是頂角與底角，再用兩底角相等及內角和 180°。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "等腰三角形底角定理",
+        "statement": "等腰三角形的兩個底角相等。"
+      },
+      {
+        "name": "底角定理逆命題",
+        "statement": "三角形若有兩角相等，則兩角所對的邊相等。"
+      },
+      {
+        "name": "三線合一",
+        "statement": "等腰三角形頂角的角平分線、底邊中線與底邊高線重合。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "AB=AC ⇒ ∠B=∠C",
+        "conditions": [
+          "△ABC 可成立"
+        ],
+        "meaning": "等邊對等角。"
+      },
+      {
+        "formula": "若 ∠A=θ，則 ∠B=∠C=(180°−θ)÷2",
+        "conditions": [
+          "AB=AC，A 為頂角"
+        ],
+        "meaning": "由頂角求底角。"
+      },
+      {
+        "formula": "若底角為 β，則頂角=180°−2β",
+        "conditions": [
+          "兩底角相等"
+        ],
+        "meaning": "由底角求頂角。"
+      }
+    ],
+    "nonApplicableCases": [
+      "三線合一只針對由等腰三角形頂角連到底邊的那條線。",
+      "任意一條中線不一定是高線或角平分線。",
+      "若相等邊辨認錯誤，頂角與底角也會錯。",
+      "外角不能直接代入三角形內角和。",
+      "底角相等的逆命題需在同一個三角形內使用。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "由等長邊找出頂角與底角。",
+        "check": "相等邊共同端點是否為頂角？"
+      },
+      {
+        "step": 2,
+        "instruction": "寫出兩底角相等。",
+        "check": "是否找的是相等邊各自對面的角？"
+      },
+      {
+        "step": 3,
+        "instruction": "套用內角和。",
+        "check": "頂角加兩個底角是否為 180°？"
+      },
+      {
+        "step": 4,
+        "instruction": "遇到頂角到基底的線段，辨認三線合一。",
+        "check": "它是否已知為角平分線、中線或高線之一？"
+      },
+      {
+        "step": 5,
+        "instruction": "求邊時可使用等角對等邊。",
+        "check": "相等角所對的邊是否正確？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "AB=AC，∠A=40°，求 ∠B、∠C。",
+        "solutionSteps": [
+          "∠B=∠C。",
+          "兩底角和為 180°−40°=140°。",
+          "每個底角為 70°。"
+        ],
+        "answer": "∠B=∠C=70°。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "等腰三角形一個底角為 52°，求頂角。",
+        "solutionSteps": [
+          "另一底角也為 52°。",
+          "頂角=180°−104°。"
+        ],
+        "answer": "76°。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "AB=AC，AD 平分 ∠A 且 D 在 BC 上，可推出哪些結論？",
+        "solutionSteps": [
+          "△ABD≅△ACD（SAS）。",
+          "對應邊 BD=DC，對應角 ∠ADB=∠ADC。",
+          "兩角互為鄰補且相等，所以皆 90°。"
+        ],
+        "answer": "BD=DC 且 AD⊥BC。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "△ABC 中 ∠B=∠C，若 AB=9，求 AC。",
+        "solutionSteps": [
+          "相等角所對邊相等。",
+          "∠B 對 AC，∠C 對 AB。"
+        ],
+        "answer": "AC=9。"
+      },
+      {
+        "exampleId": "L5",
+        "prompt": "等腰三角形頂角與底角比為 2:1，求三角。",
+        "solutionSteps": [
+          "設底角 x，頂角 2x。",
+          "2x+x+x=180°，得 x=45°。"
+        ],
+        "answer": "頂角 90°，兩底角各 45°。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把兩腰所夾角當底角。",
+        "why": "未由共同端點辨認。",
+        "correction": "兩腰共同端點的角是頂角。"
+      },
+      {
+        "mistake": "等腰就認為三角都相等。",
+        "why": "與等邊混淆。",
+        "correction": "等腰只保證兩底角相等。"
+      },
+      {
+        "mistake": "用 180°−底角 後直接除 2。",
+        "why": "沒有先判斷已知角是頂角還是底角。",
+        "correction": "先標註角色，再建立角和。"
+      },
+      {
+        "mistake": "任何中線都套三線合一。",
+        "why": "忽略等腰與頂角條件。",
+        "correction": "必須從等腰三角形頂角連到底邊。"
+      },
+      {
+        "mistake": "等角對錯邊。",
+        "why": "看相鄰邊而非對邊。",
+        "correction": "角的對邊是不接觸該角的那條邊。"
+      },
+      {
+        "mistake": "把外角當成底角。",
+        "why": "未辨別三角形內外。",
+        "correction": "內角位於三角形內部，外角需先轉換。"
+      }
+    ],
+    "selfCheck": [
+      "我能由 AB=AC 正確找出 ∠B=∠C 嗎？",
+      "已知角是頂角還是底角？",
+      "我會用 180°−頂角後除以 2 嗎？",
+      "三線合一的線段是否由頂角出發？",
+      "我能由等角反推正確對邊相等嗎？"
+    ],
+    "summary": [
+      "等腰三角形等邊對等角，逆向等角對等邊。",
+      "頂角平分線、底邊中線與底邊高線三線合一。",
+      "角度題先辨認頂角與底角，再用內角和。",
+      "性質成立可由兩個小三角形全等證明。"
+    ],
+    "connections": {
+      "previous": "利用 SAS、ASA 等全等判定建立性質。",
+      "next": [
+        "等邊三角形把等腰性質套用到三組邊。",
+        "中線與高線技能會再次區分不同線段。"
+      ]
+    },
+    "figureReferences": [
+      "u16-fig-006-isosceles-symmetry"
+    ],
+    "accessibilityNotes": [
+      "u16-fig-006-isosceles-symmetry 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u16-s006-v001",
+        "u16-s006-v002",
+        "u16-s006-v003",
+        "u16-s006-v004",
+        "u16-s006-v005",
+        "u16-s006-v006",
+        "u16-s006-v007",
+        "u16-s006-v008",
+        "u16-s006-v009",
+        "u16-s006-v010",
+        "u16-s006-v011",
+        "u16-s006-v012"
+      ],
+      "constructedResponseIds": [
+        "u16-s006-cr001",
+        "u16-s006-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "針對「等腰三角形性質」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+      "reviewVersion": "human-lecture-review-u16-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "7f2dbe01b29601460b4aed939d580dfea579f59a6a3a8d7488cf9c0e289787ea"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u16-s006-v001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "△ABC 中 AB=AC，則下列何者必定成立？",
+      "givenConditions": [
+        "A 為兩腰共同端點"
+      ],
+      "target": "套用等腰底角定理",
+      "choices": [
+        "∠B=∠C",
+        "∠A=∠B",
+        "BC=AB",
+        "∠A=60°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "AB=AC ⇒ ∠C=∠B。",
+      "explanation": "相等邊 AB、AC 所對角分別為 ∠C、∠B，因此兩底角相等。 找 AB 的對角 C。 找 AC 的對角 B。 等邊對等角。",
+      "steps": [
+        "找 AB 的對角 C。",
+        "找 AC 的對角 B。",
+        "等邊對等角。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "∠B=∠C",
+          "truth": true,
+          "reason": "相等邊 AB、AC 所對角分別為 ∠C、∠B，因此兩底角相等。"
+        },
+        {
+          "choice": "∠A=∠B",
+          "truth": false,
+          "reason": "頂角不必等於底角。"
+        },
+        {
+          "choice": "BC=AB",
+          "truth": false,
+          "reason": "底邊不必等於腰。"
+        },
+        {
+          "choice": "∠A=60°",
+          "truth": false,
+          "reason": "等腰頂角可有多種角度。"
+        }
+      ],
+      "misconceptionTarget": "把等腰誤當等邊。",
+      "prerequisiteCheck": "會找邊的對角。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "無數值與單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "三角形存在已假設；結論不依圖形方向。",
+      "difficultyReason": "基礎題，直接套底角定理。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "使用等邊對等角。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "72f4b8d428c4d1d6d96b179c9b64bf109638284fa609db5729a0316182bd545b"
+    },
+    {
+      "questionId": "u16-s006-v002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等腰三角形頂角為 40°，每個底角是多少？",
+      "givenConditions": [
+        "兩底角相等"
+      ],
+      "target": "由頂角求底角",
+      "choices": [
+        "40°",
+        "80°",
+        "140°",
+        "70°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "底角相等，故各為 70°。",
+      "explanation": "兩底角和 180°−40°=140°，每個為 70°。 180°−40°=140°。 140°÷2=70°。",
+      "steps": [
+        "180°−40°=140°。",
+        "140°÷2=70°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "40°",
+          "truth": false,
+          "reason": "把三角都設成頂角。"
+        },
+        {
+          "choice": "80°",
+          "truth": false,
+          "reason": "只用 180−2×50 等錯誤。"
+        },
+        {
+          "choice": "140°",
+          "truth": false,
+          "reason": "得到兩底角總和而未除以 2。"
+        },
+        {
+          "choice": "70°",
+          "truth": true,
+          "reason": "兩底角和 180°−40°=140°，每個為 70°。"
+        }
+      ],
+      "misconceptionTarget": "算出底角總和後忘記平均。",
+      "prerequisiteCheck": "會用內角和與除法。",
+      "estimatedTimeSec": "60",
+      "unitAndRoundingCheck": "角度精確，無取整。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "40° 在合法頂角範圍，底角為正。",
+      "difficultyReason": "基礎題，兩步角度計算。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由頂角求底角。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "42f464462b027a98e0d4045bde5e018079225ebc7e83a795664d0bc8de4d6f22"
+    },
+    {
+      "questionId": "u16-s006-v003",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "△PQR 中 ∠Q=∠R。可直接推出哪一項？",
+      "givenConditions": [
+        "三角形內兩角相等"
+      ],
+      "target": "使用等角對等邊",
+      "choices": [
+        "QR=PQ",
+        "∠P=90°",
+        "PQ=PR",
+        "三邊全相等"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "∠Q=∠R ⇒ PR=PQ。",
+      "explanation": "∠Q 的對邊是 PR，∠R 的對邊是 PQ；等角對等邊。 找 ∠Q 對邊 PR。 找 ∠R 對邊 PQ。",
+      "steps": [
+        "找 ∠Q 對邊 PR。",
+        "找 ∠R 對邊 PQ。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "QR=PQ",
+          "truth": false,
+          "reason": "∠R 對 PQ，∠Q 對 PR。"
+        },
+        {
+          "choice": "∠P=90°",
+          "truth": false,
+          "reason": "沒有直角條件。"
+        },
+        {
+          "choice": "PQ=PR",
+          "truth": true,
+          "reason": "∠Q 的對邊是 PR，∠R 的對邊是 PQ；等角對等邊。"
+        },
+        {
+          "choice": "三邊全相等",
+          "truth": false,
+          "reason": "只保證一對邊相等。"
+        }
+      ],
+      "misconceptionTarget": "把相等角旁邊的邊當對邊。",
+      "prerequisiteCheck": "會辨認角的對邊。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "無量值或單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "只推出一對邊相等，不足以判等邊。",
+      "difficultyReason": "基礎題，直接用逆性質。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "使用等角對等邊。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "3214ae6cbffe8e43a9a9c7c77a231772f655122f0bc0a116864b7e5b4eaf26a9"
+    },
+    {
+      "questionId": "u16-s006-v004",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等腰三角形一個底角為 58°，頂角是多少？",
+      "givenConditions": [
+        "另一底角也為 58°"
+      ],
+      "target": "由底角求頂角",
+      "choices": [
+        "64°",
+        "58°",
+        "116°",
+        "122°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "兩個 58° 佔 116°，剩餘 64°。",
+      "explanation": "頂角=180°−2×58°=64°。 兩底角和 116°。 180°−116°=64°。",
+      "steps": [
+        "兩底角和 116°。",
+        "180°−116°=64°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "64°",
+          "truth": true,
+          "reason": "頂角=180°−2×58°=64°。"
+        },
+        {
+          "choice": "58°",
+          "truth": false,
+          "reason": "頂角不必與底角相等。"
+        },
+        {
+          "choice": "116°",
+          "truth": false,
+          "reason": "這是兩底角和。"
+        },
+        {
+          "choice": "122°",
+          "truth": false,
+          "reason": "只做 180−58，漏掉另一底角。"
+        }
+      ],
+      "misconceptionTarget": "只扣一個底角。",
+      "prerequisiteCheck": "會用兩底角相等。",
+      "estimatedTimeSec": "70",
+      "unitAndRoundingCheck": "精確角度，無四捨五入。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "結果 64° 合法且三角和驗算為 180°。",
+      "difficultyReason": "標準題，需辨認已知角角色。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由底角求頂角。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "86102615177b6912a776719c8f94694bb0e62ac701b1e474031334a0285066f6"
+    },
+    {
+      "questionId": "u16-s006-v005",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-006-isosceles-symmetry",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "AB=AC，D 在 BC 上，且 AD 平分 ∠A。下列哪一項也必定成立？",
+      "givenConditions": [
+        "△ABC 為等腰三角形"
+      ],
+      "target": "使用等腰三線合一",
+      "choices": [
+        "AD=BC",
+        "∠B=90°",
+        "AB⊥AC",
+        "BD=DC 且 AD⊥BC"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "因此 D 是 BC 中點且 AD 垂直 BC。",
+      "explanation": "等腰三角形頂角平分線同時是底邊中線與高線。 確認 AD 從頂角 A 到底邊 BC。 已知它平分頂角。 套三線合一。",
+      "steps": [
+        "確認 AD 從頂角 A 到底邊 BC。",
+        "已知它平分頂角。",
+        "套三線合一。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "AD=BC",
+          "truth": false,
+          "reason": "三線合一不保證長度相等。"
+        },
+        {
+          "choice": "∠B=90°",
+          "truth": false,
+          "reason": "垂直角在 D，不在 B。"
+        },
+        {
+          "choice": "AB⊥AC",
+          "truth": false,
+          "reason": "兩腰夾角不必為直角。"
+        },
+        {
+          "choice": "BD=DC 且 AD⊥BC",
+          "truth": true,
+          "reason": "等腰三角形頂角平分線同時是底邊中線與高線。"
+        }
+      ],
+      "misconceptionTarget": "把三線合一誤解為所有線段長度相等。",
+      "prerequisiteCheck": "知道角平分線、中線、高線定義。",
+      "estimatedTimeSec": "85",
+      "unitAndRoundingCheck": "純幾何關係，無單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "D 在底邊上已給，三線合一條件完整。",
+      "difficultyReason": "標準題，綜合兩個同時結論。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "使用三線合一。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "38a2491a2b358112c7daa7c8ec1c6921ff3bb08f20f36a5126a95ecba31338b7"
+    },
+    {
+      "questionId": "u16-s006-v006",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等腰 △ABC 中 AB=AC，AD 是 BC 的中線。則 ∠BAD 與 ∠DAC 的關係為何？",
+      "givenConditions": [
+        "D 是 BC 中點"
+      ],
+      "target": "由中線推出角平分線",
+      "choices": [
+        "∠BAD+∠DAC=90°",
+        "∠BAD=∠DAC",
+        "∠BAD=∠ABC",
+        "無法判斷"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "AD 平分 ∠A，故兩部分相等。",
+      "explanation": "在等腰三角形中，由頂角連到底邊中點的中線也是角平分線。 確認 A 是頂角。 AD 連到 BC 中點。 套三線合一。",
+      "steps": [
+        "確認 A 是頂角。",
+        "AD 連到 BC 中點。",
+        "套三線合一。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "∠BAD+∠DAC=90°",
+          "truth": false,
+          "reason": "頂角不必為 90°。"
+        },
+        {
+          "choice": "∠BAD=∠DAC",
+          "truth": true,
+          "reason": "在等腰三角形中，由頂角連到底邊中點的中線也是角平分線。"
+        },
+        {
+          "choice": "∠BAD=∠ABC",
+          "truth": false,
+          "reason": "沒有此一般關係。"
+        },
+        {
+          "choice": "無法判斷",
+          "truth": false,
+          "reason": "等腰頂點中線三線合一。"
+        }
+      ],
+      "misconceptionTarget": "認為只知道中線不足，忘記等腰特殊性。",
+      "prerequisiteCheck": "會辨認頂角與底邊。",
+      "estimatedTimeSec": "80",
+      "unitAndRoundingCheck": "無量值。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "若不是等腰確實無法推角平分；題目已給 AB=AC。",
+      "difficultyReason": "標準題，從三線合一的另一方向使用。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由中線推角平分。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "53b19bfab7c9301b3096ffd7194b864261dc9ff2fae7ef90210a12df7cd625c1"
+    },
+    {
+      "questionId": "u16-s006-v007",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等腰三角形頂角與一個底角的比為 4:1，三個角為何？",
+      "givenConditions": [
+        "兩底角相等"
+      ],
+      "target": "建立比例方程",
+      "choices": [
+        "90°、45°、45°",
+        "120°、30°、30°",
+        "100°、40°、40°",
+        "144°、18°、18°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "三角為 120、30、30，和 180 且比例 4:1。",
+      "explanation": "設底角 x，頂角 4x，則 4x+x+x=180，x=30。 設底角 x。 建立 6x=180。 得 x=30、頂角 120。",
+      "steps": [
+        "設底角 x。",
+        "建立 6x=180。",
+        "得 x=30、頂角 120。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "90°、45°、45°",
+          "truth": false,
+          "reason": "比例為 2:1，不是 4:1。"
+        },
+        {
+          "choice": "120°、30°、30°",
+          "truth": true,
+          "reason": "設底角 x，頂角 4x，則 4x+x+x=180，x=30。"
+        },
+        {
+          "choice": "100°、40°、40°",
+          "truth": false,
+          "reason": "比例為 2.5:1。"
+        },
+        {
+          "choice": "144°、18°、18°",
+          "truth": false,
+          "reason": "頂角與底角比為 8:1。"
+        }
+      ],
+      "misconceptionTarget": "把只有一個底角加進角和。",
+      "prerequisiteCheck": "會解一元一次方程。",
+      "estimatedTimeSec": "120",
+      "unitAndRoundingCheck": "角度精確，比例無單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "頂角 120° 為鈍角但合法；兩底角正。",
+      "difficultyReason": "進階題，需把等腰與比例轉成方程。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "處理角度比例。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "45f1db4b34ba60f689580d3e9bdd1bac54eacd31da35f52677798521ad56ecf7"
+    },
+    {
+      "questionId": "u16-s006-v008",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "△ABC 中 AB=AC，D 為 BC 中點。若 ∠ADB=88°，這組條件是否可能？",
+      "givenConditions": [
+        "AD 為頂點 A 到底邊中點的中線"
+      ],
+      "target": "用三線合一檢查資料一致性",
+      "choices": [
+        "可能，因 88° 接近 90°",
+        "可能，等腰只保證底角相等",
+        "不可能，AD 應垂直 BC，所以 ∠ADB=90°",
+        "不可能，因 ∠ADB 應為 45°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "理想幾何中必為 90°，所以條件無法同時成立。",
+      "explanation": "等腰頂點中線也是高線，因此與 BC 形成 90°，88° 矛盾。 由 D 中點得 AD 是中線。 等腰三線合一得 AD⊥BC。 比較 88° 與 90°。",
+      "steps": [
+        "由 D 中點得 AD 是中線。",
+        "等腰三線合一得 AD⊥BC。",
+        "比較 88° 與 90°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "可能，因 88° 接近 90°",
+          "truth": false,
+          "reason": "幾何條件要求精確垂直。"
+        },
+        {
+          "choice": "可能，等腰只保證底角相等",
+          "truth": false,
+          "reason": "頂點中線還會成為高線。"
+        },
+        {
+          "choice": "不可能，AD 應垂直 BC，所以 ∠ADB=90°",
+          "truth": true,
+          "reason": "等腰頂點中線也是高線，因此與 BC 形成 90°，88° 矛盾。"
+        },
+        {
+          "choice": "不可能，因 ∠ADB 應為 45°",
+          "truth": false,
+          "reason": "垂直角應為 90°。"
+        }
+      ],
+      "misconceptionTarget": "把接近值當成相等或漏用三線合一。",
+      "prerequisiteCheck": "會由中點辨認中線。",
+      "estimatedTimeSec": "110",
+      "unitAndRoundingCheck": "角度按題目精確值，不採測量容差或四捨五入。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "若是實測有誤差可另談，但數學題條件是精確命題。",
+      "difficultyReason": "進階題，審查條件一致性。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "用性質偵測矛盾。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "f6cc0f75f4be8b077d9888fd490b53435ae6f294320f9a2d0a4c60213cdd2978"
+    },
+    {
+      "questionId": "u16-s006-v009",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等腰 △ABC 中 AB=AC，外角（在 B 點延長 BC）為 110°。求頂角 ∠A。",
+      "givenConditions": [
+        "B 點內角與外角互補",
+        "∠B=∠C"
+      ],
+      "target": "結合外角與等腰性質",
+      "choices": [
+        "40°",
+        "70°",
+        "110°",
+        "30°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "三角為 40、70、70，外角與 B 內角互補驗算成立。",
+      "explanation": "B 點內角=180−110=70°，C 底角也 70°，頂角=40°。 求 ∠B=70°。 等腰得 ∠C=70°。 180−140=40°。",
+      "steps": [
+        "求 ∠B=70°。",
+        "等腰得 ∠C=70°。",
+        "180−140=40°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "40°",
+          "truth": true,
+          "reason": "B 點內角=180−110=70°，C 底角也 70°，頂角=40°。"
+        },
+        {
+          "choice": "70°",
+          "truth": false,
+          "reason": "這是 B 點內角，不是頂角。"
+        },
+        {
+          "choice": "110°",
+          "truth": false,
+          "reason": "把外角當頂角。"
+        },
+        {
+          "choice": "30°",
+          "truth": false,
+          "reason": "角和計算錯誤。"
+        }
+      ],
+      "misconceptionTarget": "把外角直接當底角或只扣一次 70。",
+      "prerequisiteCheck": "會用鄰補角、底角定理與內角和。",
+      "estimatedTimeSec": "130",
+      "unitAndRoundingCheck": "角度皆精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "延長方向已指明，所稱外角唯一；結果在合法範圍。",
+      "difficultyReason": "進階題，跨用三項角度性質。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "等腰與外角綜合。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "be19d5a8256ffdc709e1c21da860f0e22f96a88af8043f606ef374d277c44c77"
+    },
+    {
+      "questionId": "u16-s006-v010",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "帳篷正面為等腰三角形，兩側斜邊相等，頂端夾角 36°。兩個底角各為多少？",
+      "givenConditions": [
+        "地面橫邊為底邊"
+      ],
+      "target": "求結構底角",
+      "choices": [
+        "36°",
+        "72°",
+        "108°",
+        "144°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "等腰結構左右底角各 72°。",
+      "explanation": "兩底角相等，和為 144°，各 72°。 180°−36°=144°。 144°÷2=72°。",
+      "steps": [
+        "180°−36°=144°。",
+        "144°÷2=72°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "36°",
+          "truth": false,
+          "reason": "把底角誤設為頂角。"
+        },
+        {
+          "choice": "72°",
+          "truth": true,
+          "reason": "兩底角相等，和為 144°，各 72°。"
+        },
+        {
+          "choice": "108°",
+          "truth": false,
+          "reason": "這是兩底角和。"
+        },
+        {
+          "choice": "144°",
+          "truth": false,
+          "reason": "只做 180−36，未除以 2。"
+        }
+      ],
+      "misconceptionTarget": "把兩底角總和當單一角。",
+      "prerequisiteCheck": "會把兩側等長轉成等腰。",
+      "estimatedTimeSec": "90",
+      "unitAndRoundingCheck": "角度為度；長度未參與，無單位混算。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "帳篷圖形視為非退化平面三角形，36° 合法。",
+      "difficultyReason": "素養題，頂角決定兩側與地面的接合角。",
+      "literacyContextNecessity": "底角影響支架接合，情境角度不可刪除。",
+      "authoringIntent": "計算帳篷接地角。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "24e4b4da92cb8165b0a8702dc25af8ea31f5c955c6bb23c63593e0c61e836adc"
+    },
+    {
+      "questionId": "u16-s006-v011",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-018-truss-literacy",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一根中央支柱 AD 由等腰屋架頂點 A 接到底樑 BC 的中點 D。哪個施工結論可由幾何性質直接保證？",
+      "givenConditions": [
+        "AB=AC",
+        "BD=DC"
+      ],
+      "target": "辨認等腰頂點中線的附加功能",
+      "choices": [
+        "AD 長度等於 AB",
+        "AD 平分底樑的角度",
+        "AD 與底樑 BC 垂直，且平分頂角",
+        "屋架三邊都相等"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "施工上支柱自然與底樑成 90°，並把頂角分成相等兩角。",
+      "explanation": "AD 是等腰三角形由頂點到對邊中點的中線，因此同時是高線與角平分線。 由 D 中點確認 AD 為中線。 AB=AC 確認等腰頂點 A。 套三線合一。",
+      "steps": [
+        "由 D 中點確認 AD 為中線。",
+        "AB=AC 確認等腰頂點 A。",
+        "套三線合一。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "AD 長度等於 AB",
+          "truth": false,
+          "reason": "三線合一不給長度相等。"
+        },
+        {
+          "choice": "AD 平分底樑的角度",
+          "truth": false,
+          "reason": "底樑是線段，不是角。"
+        },
+        {
+          "choice": "AD 與底樑 BC 垂直，且平分頂角",
+          "truth": true,
+          "reason": "AD 是等腰三角形由頂點到對邊中點的中線，因此同時是高線與角平分線。"
+        },
+        {
+          "choice": "屋架三邊都相等",
+          "truth": false,
+          "reason": "只知兩腰相等。"
+        }
+      ],
+      "misconceptionTarget": "把中線只當平分底邊，忽略等腰特殊性。",
+      "prerequisiteCheck": "會將屋架元件映射到中線。",
+      "estimatedTimeSec": "120",
+      "unitAndRoundingCheck": "長度同單位但不需計算；垂直與等角為精確模型。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "實際施工公差不在題目範圍；理想結構下結論成立。",
+      "difficultyReason": "素養題，中央支柱位置決定垂直與對稱施工。",
+      "literacyContextNecessity": "中點與等腰規格是直接保證垂直的必要條件。",
+      "authoringIntent": "由屋架中線判斷施工性質。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "7737ec99c2465f71386936ae1dffa6a28e7dc7df5dca809fa40db78f59dbf45d"
+    },
+    {
+      "questionId": "u16-s006-v012",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某測距裝置偵測到三角形區域的兩個角都為 47°。下列哪個結論可直接加入報告？",
+      "givenConditions": [
+        "兩角位於同一三角形的不同頂點"
+      ],
+      "target": "由等角反推等邊",
+      "choices": [
+        "第三角也是 47°",
+        "三角形是等邊",
+        "兩個 47° 角相鄰的所有邊都等長",
+        "兩個 47° 角所對的兩邊等長"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "第三角 180−94=86°，所以為非等邊的等腰三角形；相等的是兩個 47° 的對邊。",
+      "explanation": "同一三角形內等角對等邊，因此兩角對邊相等。 確認兩角相等。 各找不接觸角頂點的對邊。 寫兩對邊等長。",
+      "steps": [
+        "確認兩角相等。",
+        "各找不接觸角頂點的對邊。",
+        "寫兩對邊等長。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "第三角也是 47°",
+          "truth": false,
+          "reason": "第三角為 86°。"
+        },
+        {
+          "choice": "三角形是等邊",
+          "truth": false,
+          "reason": "只有兩角相等。"
+        },
+        {
+          "choice": "兩個 47° 角相鄰的所有邊都等長",
+          "truth": false,
+          "reason": "只保證各自的對邊相等。"
+        },
+        {
+          "choice": "兩個 47° 角所對的兩邊等長",
+          "truth": true,
+          "reason": "同一三角形內等角對等邊，因此兩角對邊相等。"
+        }
+      ],
+      "misconceptionTarget": "把相鄰邊與對邊混淆或誤判等邊。",
+      "prerequisiteCheck": "會由角找對邊並算第三角驗查。",
+      "estimatedTimeSec": "110",
+      "unitAndRoundingCheck": "角度精確；未給邊長單位也不影響等長結論。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "兩個角位置雖未命名，但結論以『各自所對邊』表達，不產生配對歧義。",
+      "difficultyReason": "素養題，測得角度可轉成邊長相等的質性結論。",
+      "literacyContextNecessity": "裝置只量角，報告能合法推得的邊資訊正是情境核心。",
+      "authoringIntent": "從感測角度推結構等腰。",
+      "tags": [
+        "空間與形狀",
+        "等腰三角形性質",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "005e3bee9fb4b04db651db28475be4ca5b01920b247b4b477164ab615b900c3b"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u16-s006-cr001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-006-isosceles-symmetry",
+      "prompt": "在等腰 △ABC 中，AB=AC，D 是 BC 中點。證明 AD⊥BC，並指出 AD 還平分哪一個角。",
+      "requiredWork": [
+        "比較△ABD與△ACD。",
+        "列出AB=AC、BD=DC、AD共同。",
+        "用SSS證全等。",
+        "由相鄰等角與平角推出垂直。"
+      ],
+      "fullCreditSolution": [
+        "AB=AC、BD=DC、AD=AD，故△ABD≅△ACD（SSS）。",
+        "所以∠ADB=∠ADC；兩角又為線性對角，和180°，故各90°，AD⊥BC。",
+        "全等亦得∠BAD=∠DAC，所以AD平分∠A。"
+      ],
+      "alternativeSolutions": [
+        "也可從等腰三角形頂角中線的三線合一性質作結論，但需說明其適用條件。"
+      ],
+      "reasoningSteps": [
+        "AB=AC、BD=DC、AD=AD，故△ABD≅△ACD（SSS）。",
+        "所以∠ADB=∠ADC；兩角又為線性對角，和180°，故各90°，AD⊥BC。",
+        "全等亦得∠BAD=∠DAC，所以AD平分∠A。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整SSS證明、推出兩垂足角各90°，並正確指出AD平分∠A。"
+        },
+        {
+          "score": 2,
+          "criteria": "全等證明與兩個結論大致正確，但漏共同邊或漏說線性對角。"
+        },
+        {
+          "score": 1,
+          "criteria": "只引用三線合一得到垂直與角平分，未展開證明。"
+        },
+        {
+          "score": 0,
+          "criteria": "錯用ASA、把AD說成平分底角，或無有效作答。"
+        }
+      ],
+      "partialCreditRules": [
+        "全等證明與兩個結論大致正確，但漏共同邊或漏說線性對角。",
+        "只引用三線合一得到垂直與角平分，未展開證明。"
+      ],
+      "followThroughPolicy": "若全等式順序有一處錯但三組邊與後續角對應清楚，最高2分。",
+      "unitAndNotationRules": "垂直寫AD⊥BC；角平分寫∠BAD=∠DAC。",
+      "answerOnlyPolicy": "只寫『三線合一』最多1分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "未證∠ADB與∠ADC為90°。",
+        "把D為中點誤讀成AD中點。"
+      ],
+      "independentReview": {
+        "derivedResult": "AD⊥BC且∠BAD=∠DAC。",
+        "ambiguity": "AB=AC明定A為頂角，D為底BC中點，三線合一方向唯一。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "e1f7ca464923415b76ad40966aeb691d5c96fcd3daed28164485f5fb0becce43"
+    },
+    {
+      "questionId": "u16-s006-cr002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "isosceles-properties",
+      "skillOrder": 6,
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "等腰 △ABC 中，AB=AC，底角∠B=(3x+6)°，頂角∠A=(2x+18)°。求x與三個內角。",
+      "requiredWork": [
+        "使用∠B=∠C。",
+        "列(2x+18)+2(3x+6)=180。",
+        "解x並代回。"
+      ],
+      "fullCreditSolution": [
+        "2x+18+6x+12=180，8x=150，x=18.75。",
+        "∠B=∠C=62.25°，∠A=55.5°。",
+        "驗算55.5+62.25+62.25=180。"
+      ],
+      "alternativeSolutions": [
+        "可令底角為b，先由2b+A=180再代入兩個代數式。"
+      ],
+      "reasoningSteps": [
+        "2x+18+6x+12=180，8x=150，x=18.75。",
+        "∠B=∠C=62.25°，∠A=55.5°。",
+        "驗算55.5+62.25+62.25=180。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "x=18.75，三角55.5°、62.25°、62.25°且驗算正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "列式正確但有單一小數運算錯，後續代回一致；或答案正確但驗算省略。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道兩底角相等並列出正確總和式，但未解完。"
+        },
+        {
+          "score": 0,
+          "criteria": "只把兩個給定角相加成180，或未使用等腰條件。"
+        }
+      ],
+      "partialCreditRules": [
+        "列式正確但有單一小數運算錯，後續代回一致；或答案正確但驗算省略。",
+        "知道兩底角相等並列出正確總和式，但未解完。"
+      ],
+      "followThroughPolicy": "若x算術錯誤但代回後兩底角相等且總和方法一致，可給2分；若得負角仍未察覺，最多1分。",
+      "unitAndNotationRules": "x無單位；角度保留°，有限小數可寫分數形式。",
+      "answerOnlyPolicy": "只列三個角無方程，最多1分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "漏乘第二個底角。",
+        "把AB=AC對應成A=B。"
+      ],
+      "independentReview": {
+        "derivedResult": "x=18.75；∠A=55.5°，∠B=∠C=62.25°。",
+        "ambiguity": "角式均為精確量，允許18又3/4與相應分數角。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "77764cf7b011cd7f9d34320592865f297037f18b3c8e665138b7b6b3335a5cdd"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u16-s006-v001",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "72f4b8d428c4d1d6d96b179c9b64bf109638284fa609db5729a0316182bd545b",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "AB=AC ⇒ ∠C=∠B。",
+      "derivedAnswer": "∠B=∠C",
+      "storedAnswer": "∠B=∠C",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「∠B=∠C」；另外三個選項逐一排除：「∠A=∠B」：頂角不必等於底角。；「BC=AB」：底邊不必等於腰。；「∠A=60°」：等腰頂角可有多種角度。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無數值與單位。",
+        "roundingConflict": "依精確資料獨立推導為「∠B=∠C」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "三角形存在已假設；結論不依圖形方向。",
+        "alternateReading": "若採常見誤讀「把等腰誤當等邊。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，直接套底角定理。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會找邊的對角。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「套用等腰底角定理」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「△ABC 中 AB=AC，則下列何者必定成立？」獨立重算：AB=AC ⇒ ∠C=∠B。 正確選項「∠B=∠C」。四選項核對：∠B=∠C=真，相等邊 AB、AC 所對角分別為 ∠C、∠B，因此兩底角相等。；∠A=∠B=假，頂角不必等於底角。；BC=AB=假，底邊不必等於腰。；∠A=60°=假，等腰頂角可有多種角度。 邊界：三角形存在已假設；結論不依圖形方向。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v002",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "42f464462b027a98e0d4045bde5e018079225ebc7e83a795664d0bc8de4d6f22",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "底角相等，故各為 70°。",
+      "derivedAnswer": "70°",
+      "storedAnswer": "70°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「70°」；另外三個選項逐一排除：「40°」：把三角都設成頂角。；「80°」：只用 180−2×50 等錯誤。；「140°」：得到兩底角總和而未除以 2。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度精確，無取整。",
+        "roundingConflict": "依精確資料獨立推導為「70°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "40° 在合法頂角範圍，底角為正。",
+        "alternateReading": "若採常見誤讀「算出底角總和後忘記平均。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，兩步角度計算。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會用內角和與除法。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「由頂角求底角」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等腰三角形頂角為 40°，每個底角是多少？」獨立重算：底角相等，故各為 70°。 正確選項「70°」。四選項核對：40°=假，把三角都設成頂角。；80°=假，只用 180−2×50 等錯誤。；140°=假，得到兩底角總和而未除以 2。；70°=真，兩底角和 180°−40°=140°，每個為 70°。 邊界：40° 在合法頂角範圍，底角為正。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v003",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "3214ae6cbffe8e43a9a9c7c77a231772f655122f0bc0a116864b7e5b4eaf26a9",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "∠Q=∠R ⇒ PR=PQ。",
+      "derivedAnswer": "PQ=PR",
+      "storedAnswer": "PQ=PR",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「PQ=PR」；另外三個選項逐一排除：「QR=PQ」：∠R 對 PQ，∠Q 對 PR。；「∠P=90°」：沒有直角條件。；「三邊全相等」：只保證一對邊相等。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無量值或單位。",
+        "roundingConflict": "依精確資料獨立推導為「PQ=PR」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "只推出一對邊相等，不足以判等邊。",
+        "alternateReading": "若採常見誤讀「把相等角旁邊的邊當對邊。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，直接用逆性質。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會辨認角的對邊。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「使用等角對等邊」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「△PQR 中 ∠Q=∠R。可直接推出哪一項？」獨立重算：∠Q=∠R ⇒ PR=PQ。 正確選項「PQ=PR」。四選項核對：QR=PQ=假，∠R 對 PQ，∠Q 對 PR。；∠P=90°=假，沒有直角條件。；PQ=PR=真，∠Q 的對邊是 PR，∠R 的對邊是 PQ；等角對等邊。；三邊全相等=假，只保證一對邊相等。 邊界：只推出一對邊相等，不足以判等邊。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v004",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "86102615177b6912a776719c8f94694bb0e62ac701b1e474031334a0285066f6",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "兩個 58° 佔 116°，剩餘 64°。",
+      "derivedAnswer": "64°",
+      "storedAnswer": "64°",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「64°」；另外三個選項逐一排除：「58°」：頂角不必與底角相等。；「116°」：這是兩底角和。；「122°」：只做 180−58，漏掉另一底角。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "精確角度，無四捨五入。",
+        "roundingConflict": "依精確資料獨立推導為「64°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "結果 64° 合法且三角和驗算為 180°。",
+        "alternateReading": "若採常見誤讀「只扣一個底角。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，需辨認已知角角色。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會用兩底角相等。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「由底角求頂角」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等腰三角形一個底角為 58°，頂角是多少？」獨立重算：兩個 58° 佔 116°，剩餘 64°。 正確選項「64°」。四選項核對：64°=真，頂角=180°−2×58°=64°。；58°=假，頂角不必與底角相等。；116°=假，這是兩底角和。；122°=假，只做 180−58，漏掉另一底角。 邊界：結果 64° 合法且三角和驗算為 180°。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v005",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "38a2491a2b358112c7daa7c8ec1c6921ff3bb08f20f36a5126a95ecba31338b7",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "因此 D 是 BC 中點且 AD 垂直 BC。",
+      "derivedAnswer": "BD=DC 且 AD⊥BC",
+      "storedAnswer": "BD=DC 且 AD⊥BC",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「BD=DC 且 AD⊥BC」；另外三個選項逐一排除：「AD=BC」：三線合一不保證長度相等。；「∠B=90°」：垂直角在 D，不在 B。；「AB⊥AC」：兩腰夾角不必為直角。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "純幾何關係，無單位。",
+        "roundingConflict": "依精確資料獨立推導為「BD=DC 且 AD⊥BC」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "D 在底邊上已給，三線合一條件完整。",
+        "alternateReading": "若採常見誤讀「把三線合一誤解為所有線段長度相等。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，綜合兩個同時結論。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "知道角平分線、中線、高線定義。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「使用等腰三線合一」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「AB=AC，D 在 BC 上，且 AD 平分 ∠A。下列哪一項也必定成立？」獨立重算：因此 D 是 BC 中點且 AD 垂直 BC。 正確選項「BD=DC 且 AD⊥BC」。四選項核對：AD=BC=假，三線合一不保證長度相等。；∠B=90°=假，垂直角在 D，不在 B。；AB⊥AC=假，兩腰夾角不必為直角。；BD=DC 且 AD⊥BC=真，等腰三角形頂角平分線同時是底邊中線與高線。 邊界：D 在底邊上已給，三線合一條件完整。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v006",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "53b19bfab7c9301b3096ffd7194b864261dc9ff2fae7ef90210a12df7cd625c1",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "AD 平分 ∠A，故兩部分相等。",
+      "derivedAnswer": "∠BAD=∠DAC",
+      "storedAnswer": "∠BAD=∠DAC",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「∠BAD=∠DAC」；另外三個選項逐一排除：「∠BAD+∠DAC=90°」：頂角不必為 90°。；「∠BAD=∠ABC」：沒有此一般關係。；「無法判斷」：等腰頂點中線三線合一。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無量值。",
+        "roundingConflict": "依精確資料獨立推導為「∠BAD=∠DAC」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "若不是等腰確實無法推角平分；題目已給 AB=AC。",
+        "alternateReading": "若採常見誤讀「認為只知道中線不足，忘記等腰特殊性。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，從三線合一的另一方向使用。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會辨認頂角與底邊。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「由中線推出角平分線」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等腰 △ABC 中 AB=AC，AD 是 BC 的中線。則 ∠BAD 與 ∠DAC 的關係為何？」獨立重算：AD 平分 ∠A，故兩部分相等。 正確選項「∠BAD=∠DAC」。四選項核對：∠BAD+∠DAC=90°=假，頂角不必為 90°。；∠BAD=∠DAC=真，在等腰三角形中，由頂角連到底邊中點的中線也是角平分線。；∠BAD=∠ABC=假，沒有此一般關係。；無法判斷=假，等腰頂點中線三線合一。 邊界：若不是等腰確實無法推角平分；題目已給 AB=AC。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v007",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "45f1db4b34ba60f689580d3e9bdd1bac54eacd31da35f52677798521ad56ecf7",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "三角為 120、30、30，和 180 且比例 4:1。",
+      "derivedAnswer": "120°、30°、30°",
+      "storedAnswer": "120°、30°、30°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「120°、30°、30°」；另外三個選項逐一排除：「90°、45°、45°」：比例為 2:1，不是 4:1。；「100°、40°、40°」：比例為 2.5:1。；「144°、18°、18°」：頂角與底角比為 8:1。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度精確，比例無單位。",
+        "roundingConflict": "依精確資料獨立推導為「120°、30°、30°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "頂角 120° 為鈍角但合法；兩底角正。",
+        "alternateReading": "若採常見誤讀「把只有一個底角加進角和。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，需把等腰與比例轉成方程。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會解一元一次方程。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「建立比例方程」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等腰三角形頂角與一個底角的比為 4:1，三個角為何？」獨立重算：三角為 120、30、30，和 180 且比例 4:1。 正確選項「120°、30°、30°」。四選項核對：90°、45°、45°=假，比例為 2:1，不是 4:1。；120°、30°、30°=真，設底角 x，頂角 4x，則 4x+x+x=180，x=30。；100°、40°、40°=假，比例為 2.5:1。；144°、18°、18°=假，頂角與底角比為 8:1。 邊界：頂角 120° 為鈍角但合法；兩底角正。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v008",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "f6cc0f75f4be8b077d9888fd490b53435ae6f294320f9a2d0a4c60213cdd2978",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "理想幾何中必為 90°，所以條件無法同時成立。",
+      "derivedAnswer": "不可能，AD 應垂直 BC，所以 ∠ADB=90°",
+      "storedAnswer": "不可能，AD 應垂直 BC，所以 ∠ADB=90°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「不可能，AD 應垂直 BC，所以 ∠ADB=90°」；另外三個選項逐一排除：「可能，因 88° 接近 90°」：幾何條件要求精確垂直。；「可能，等腰只保證底角相等」：頂點中線還會成為高線。；「不可能，因 ∠ADB 應為 45°」：垂直角應為 90°。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度按題目精確值，不採測量容差或四捨五入。",
+        "roundingConflict": "依精確資料獨立推導為「不可能，AD 應垂直 BC，所以 ∠ADB=90°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "若是實測有誤差可另談，但數學題條件是精確命題。",
+        "alternateReading": "若採常見誤讀「把接近值當成相等或漏用三線合一。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，審查條件一致性。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會由中點辨認中線。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「用三線合一檢查資料一致性」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「△ABC 中 AB=AC，D 為 BC 中點。若 ∠ADB=88°，這組條件是否可能？」獨立重算：理想幾何中必為 90°，所以條件無法同時成立。 正確選項「不可能，AD 應垂直 BC，所以 ∠ADB=90°」。四選項核對：可能，因 88° 接近 90°=假，幾何條件要求精確垂直。；可能，等腰只保證底角相等=假，頂點中線還會成為高線。；不可能，AD 應垂直 BC，所以 ∠ADB=90°=真，等腰頂點中線也是高線，因此與 BC 形成 90°，88° 矛盾。；不可能，因 ∠ADB 應為 45°=假，垂直角應為 90°。 邊界：若是實測有誤差可另談，但數學題條件是精確命題。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v009",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "be19d5a8256ffdc709e1c21da860f0e22f96a88af8043f606ef374d277c44c77",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "三角為 40、70、70，外角與 B 內角互補驗算成立。",
+      "derivedAnswer": "40°",
+      "storedAnswer": "40°",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「40°」；另外三個選項逐一排除：「70°」：這是 B 點內角，不是頂角。；「110°」：把外角當頂角。；「30°」：角和計算錯誤。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度皆精確。",
+        "roundingConflict": "依精確資料獨立推導為「40°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "延長方向已指明，所稱外角唯一；結果在合法範圍。",
+        "alternateReading": "若採常見誤讀「把外角直接當底角或只扣一次 70。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，跨用三項角度性質。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會用鄰補角、底角定理與內角和。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「結合外角與等腰性質」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等腰 △ABC 中 AB=AC，外角（在 B 點延長 BC）為 110°。求頂角 ∠A。」獨立重算：三角為 40、70、70，外角與 B 內角互補驗算成立。 正確選項「40°」。四選項核對：40°=真，B 點內角=180−110=70°，C 底角也 70°，頂角=40°。；70°=假，這是 B 點內角，不是頂角。；110°=假，把外角當頂角。；30°=假，角和計算錯誤。 邊界：延長方向已指明，所稱外角唯一；結果在合法範圍。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v010",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "24e4b4da92cb8165b0a8702dc25af8ea31f5c955c6bb23c63593e0c61e836adc",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "等腰結構左右底角各 72°。",
+      "derivedAnswer": "72°",
+      "storedAnswer": "72°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「72°」；另外三個選項逐一排除：「36°」：把底角誤設為頂角。；「108°」：這是兩底角和。；「144°」：只做 180−36，未除以 2。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度為度；長度未參與，無單位混算。",
+        "roundingConflict": "依精確資料獨立推導為「72°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "帳篷圖形視為非退化平面三角形，36° 合法。",
+        "alternateReading": "若採常見誤讀「把兩底角總和當單一角。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，頂角決定兩側與地面的接合角。",
+      "literacyContextNecessity": "底角影響支架接合，情境角度不可刪除。",
+      "prerequisiteCheck": "會把兩側等長轉成等腰。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「求結構底角」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「帳篷正面為等腰三角形，兩側斜邊相等，頂端夾角 36°。兩個底角各為多少？」獨立重算：等腰結構左右底角各 72°。 正確選項「72°」。四選項核對：36°=假，把底角誤設為頂角。；72°=真，兩底角相等，和為 144°，各 72°。；108°=假，這是兩底角和。；144°=假，只做 180−36，未除以 2。 邊界：帳篷圖形視為非退化平面三角形，36° 合法。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v011",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "7737ec99c2465f71386936ae1dffa6a28e7dc7df5dca809fa40db78f59dbf45d",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "施工上支柱自然與底樑成 90°，並把頂角分成相等兩角。",
+      "derivedAnswer": "AD 與底樑 BC 垂直，且平分頂角",
+      "storedAnswer": "AD 與底樑 BC 垂直，且平分頂角",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「AD 與底樑 BC 垂直，且平分頂角」；另外三個選項逐一排除：「AD 長度等於 AB」：三線合一不給長度相等。；「AD 平分底樑的角度」：底樑是線段，不是角。；「屋架三邊都相等」：只知兩腰相等。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "長度同單位但不需計算；垂直與等角為精確模型。",
+        "roundingConflict": "依精確資料獨立推導為「AD 與底樑 BC 垂直，且平分頂角」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "實際施工公差不在題目範圍；理想結構下結論成立。",
+        "alternateReading": "若採常見誤讀「把中線只當平分底邊，忽略等腰特殊性。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，中央支柱位置決定垂直與對稱施工。",
+      "literacyContextNecessity": "中點與等腰規格是直接保證垂直的必要條件。",
+      "prerequisiteCheck": "會將屋架元件映射到中線。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「辨認等腰頂點中線的附加功能」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一根中央支柱 AD 由等腰屋架頂點 A 接到底樑 BC 的中點 D。哪個施工結論可由幾何性質直接保證？」獨立重算：施工上支柱自然與底樑成 90°，並把頂角分成相等兩角。 正確選項「AD 與底樑 BC 垂直，且平分頂角」。四選項核對：AD 長度等於 AB=假，三線合一不給長度相等。；AD 平分底樑的角度=假，底樑是線段，不是角。；AD 與底樑 BC 垂直，且平分頂角=真，AD 是等腰三角形由頂點到對邊中點的中線，因此同時是高線與角平分線。；屋架三邊都相等=假，只知兩腰相等。 邊界：實際施工公差不在題目範圍；理想結構下結論成立。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s006-v012",
+      "unitId": "u16",
+      "skillId": "isosceles-properties",
+      "contentSha256": "005e3bee9fb4b04db651db28475be4ca5b01920b247b4b477164ab615b900c3b",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "第三角 180−94=86°，所以為非等邊的等腰三角形；相等的是兩個 47° 的對邊。",
+      "derivedAnswer": "兩個 47° 角所對的兩邊等長",
+      "storedAnswer": "兩個 47° 角所對的兩邊等長",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「兩個 47° 角所對的兩邊等長」；另外三個選項逐一排除：「第三角也是 47°」：第三角為 86°。；「三角形是等邊」：只有兩角相等。；「兩個 47° 角相鄰的所有邊都等長」：只保證各自的對邊相等。",
+        "undefinedSymbol": "題幹符號與詞語已在「等腰三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度精確；未給邊長單位也不影響等長結論。",
+        "roundingConflict": "依精確資料獨立推導為「兩個 47° 角所對的兩邊等長」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "兩個角位置雖未命名，但結論以『各自所對邊』表達，不產生配對歧義。",
+        "alternateReading": "若採常見誤讀「把相鄰邊與對邊混淆或誤判等邊。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，測得角度可轉成邊長相等的質性結論。",
+      "literacyContextNecessity": "裝置只量角，報告能合法推得的邊資訊正是情境核心。",
+      "prerequisiteCheck": "會由角找對邊並算第三角驗查。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「由等角反推等邊」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某測距裝置偵測到三角形區域的兩個角都為 47°。下列哪個結論可直接加入報告？」獨立重算：第三角 180−94=86°，所以為非等邊的等腰三角形；相等的是兩個 47° 的對邊。 正確選項「兩個 47° 角所對的兩邊等長」。四選項核對：第三角也是 47°=假，第三角為 86°。；三角形是等邊=假，只有兩角相等。；兩個 47° 角相鄰的所有邊都等長=假，只保證各自的對邊相等。；兩個 47° 角所對的兩邊等長=真，同一三角形內等角對等邊，因此兩角對邊相等。 邊界：兩個角位置雖未命名，但結論以『各自所對邊』表達，不產生配對歧義。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u16-fig-006-isosceles-symmetry",
+      "unitId": "u16",
+      "slot": "s006",
+      "title": "等腰三角形頂角中線的三線合一",
+      "altText": "等腰三角形頂點A連到底邊中點D，底邊兩段同刻痕，D處有直角符號，頂角兩側有相等角弧。",
+      "svgPath": "figures/u16/u16-fig-006-isosceles-symmetry.svg",
+      "drawingSpec": {
+        "canvas": {
+          "width": 360,
+          "height": 240,
+          "viewBox": "0 0 360 240"
+        },
+        "coordinateSystem": "左上角為(0,0)，x向右、y向下。",
+        "geometry": "A(180,35)、B(55,190)、C(305,190)、D(180,190)；AB=AC、BD=DC、AD垂直BC且平分頂角。",
+        "visibleLineRules": "主要邊線使用2.5px黑色實線；輔助線使用1.5px虛線；弧線不得遮住頂點標籤。",
+        "hiddenLineRules": "平面圖無隱藏邊；未畫出的延長線不得由視覺自行推定。",
+        "labels": "A、B、C、D標於頂點外側；性質文字置畫布底部。",
+        "tickMarksAndSymbols": "相等邊以同數量短刻痕表示；直角以小正方形；相等角以同型圓弧。",
+        "units": "示意圖無長度單位，題目另有數值時以題幹為準。",
+        "arrows": "只在延長線或行進方向使用箭頭。",
+        "toScale": false,
+        "notToScaleWarning": "圖形不按比例，請依標記與題目條件判斷。",
+        "mobileLayout": "360×240畫布；最小文字14px；標籤與線段保持至少6px間距。",
+        "answerLeakageControl": "圖中只呈現已知結構與定義標記，不標示題目所求數值或正確選項。"
+      },
+      "svgAssertions": [
+        "AD：中線、高線、角平分線",
+        "M180 174 h16 v16",
+        "A</text>",
+        "D</text>"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "mobileReadability": "360px寬預覽下，頂點、刻痕、直角符號與延長線箭頭仍可辨識。",
+        "answerLeakage": "未顯示任何題目答案；只保留概念所需結構。",
+        "geometryCheck": "已依列出的座標逐項核對端點、交點、刻痕與文字位置。",
+        "reviewNote": "等腰三角形頂角中線的三線合一已逐線檢查：A(180,35)、B(55,190)、C(305,190)、D(180,190)；AB=AC、BD=DC、AD垂直BC且平分頂角。；標籤配置為A、B、C、D標於頂點外側；性質文字置畫布底部。，未依視覺比例暗示未給定量。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "9ad78ca2cbb408a760ad06ba79c23658abc6e3b5a15394a361216a2c1259a2b0"
+    }
+  ]
+};
+export default skillData;

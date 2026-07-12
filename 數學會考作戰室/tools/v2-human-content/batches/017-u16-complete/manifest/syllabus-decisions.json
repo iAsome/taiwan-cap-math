@@ -1,0 +1,27 @@
+{
+  "unitId": "u16",
+  "lockedSkillCountVerified": 18,
+  "lockedSkillIdsPreserved": true,
+  "lockedOrderPreserved": true,
+  "prerequisitesPreserved": true,
+  "skillTitleChanges": [],
+  "lectureDisplayTitlePolicy": "Locked skill titles remain unchanged. Each lecture has an expanded human-facing title for teaching clarity without changing skill identity.",
+  "punctuationPolicy": "No locked or lecture title uses the punctuation 、; conjunctions use 和 or 與.",
+  "boundaryDecisions": [
+    {
+      "skillId": "isosceles-equilateral",
+      "decision": "Use inclusive mathematical definition: every equilateral triangle is also isosceles; when exactly two equal sides are intended, the prompt states 恰有兩邊相等.",
+      "reason": "Avoids contradictory classification conventions."
+    },
+    {
+      "skillId": "compass-construction",
+      "decision": "Use figures despite global lock visualMode text-only.",
+      "reason": "The lock explicitly says visualMode is generic metadata; construction steps materially benefit from diagrams."
+    },
+    {
+      "skillId": "triangle-medians",
+      "decision": "Include centroid 2:1 ratio and equal-area consequences.",
+      "reason": "The locked note explicitly connects the median concept with the centroid, and both are junior-high CAP scope."
+    }
+  ]
+}

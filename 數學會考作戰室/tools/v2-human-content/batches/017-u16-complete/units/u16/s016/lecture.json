@@ -1,0 +1,279 @@
+{
+  "lectureId": "u16-s016-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-properties",
+  "skillId": "triangle-medians",
+  "skillOrder": 16,
+  "originalLockedTitle": "中線概念",
+  "title": "中線概念：從頂點連到對邊中點",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認三角形中線的起點、終點與中點條件。",
+    "能由中點求被分線段兩部分長度。",
+    "能知道每個三角形有三條中線，且三中線交於同一點。",
+    "能分辨中線、高線、中垂線與角平分線。"
+  ],
+  "prerequisiteBridge": "等腰與等邊三角形中曾出現『由頂角連到底邊中點』。現在不假設等腰，正式定義任何三角形的中線；一般情況下它不必垂直，也不必平分頂角。",
+  "prerequisites": [
+    {
+      "skillId": "exterior-angle-sum",
+      "requiredLevel": "能使用先備技能「多邊形外角和」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "中點",
+      "definition": "線段上到兩端距離相等的點。"
+    },
+    {
+      "term": "三角形中線",
+      "definition": "由一個頂點連到其對邊中點的線段。"
+    },
+    {
+      "term": "對邊",
+      "definition": "不接觸該頂點的三角形邊。"
+    },
+    {
+      "term": "重心",
+      "definition": "三條中線的共同交點；本技能只建立交會概念，不延伸向量或面積座標。"
+    },
+    {
+      "term": "中垂線",
+      "definition": "通過一條線段中點且垂直該線段的直線，不必通過三角形頂點。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "M 為 BC 中點",
+      "meaning": "B、M、C 共線且 BM=MC。"
+    },
+    {
+      "symbol": "AM 為 △ABC 的中線",
+      "meaning": "A 是頂點，M 是對邊 BC 的中點。"
+    },
+    {
+      "symbol": "三中線交於 G",
+      "meaning": "G 稱為重心。"
+    }
+  ],
+  "conceptNarrative": [
+    "中線的定義包含兩個必要條件：一端是三角形頂點，另一端是對邊中點。",
+    "只通過中點但起點不是對面頂點，不是該三角形的中線；從頂點出發但落點不是中點，也不是中線。",
+    "每個頂點都可連到其對邊中點，因此一個三角形有三條中線。",
+    "三條中線一定交於同一點重心，而且重心位於三角形內部。",
+    "在一般三角形，中線不必垂直對邊，也不必平分頂角；只有等腰等特殊條件下才可能三線合一。",
+    "中線把三角形分成底相等且高相同的兩個小三角形，所以兩部分面積相等；此為常見應用。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "三角形中線",
+      "statement": "連接三角形一個頂點與其對邊中點的線段。"
+    },
+    {
+      "name": "重心",
+      "statement": "三角形三條中線的交點。"
+    },
+    {
+      "name": "中線面積性質",
+      "statement": "一條中線把三角形分成面積相等的兩個三角形。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "BM=MC=BC÷2",
+      "conditions": [
+        "M 為 BC 中點"
+      ],
+      "meaning": "中點分段。"
+    },
+    {
+      "formula": "面積(△ABM)=面積(△ACM)",
+      "conditions": [
+        "AM 為中線，兩小三角形對 BC 有相同高"
+      ],
+      "meaning": "中線平分三角形面積。"
+    },
+    {
+      "formula": "AG:GM=2:1",
+      "conditions": [
+        "G 為重心，M 為 BC 中點"
+      ],
+      "meaning": "會考常見重心分中線比例；由頂點到重心較長。"
+    }
+  ],
+  "nonApplicableCases": [
+    "中線不等於線段的中垂線。",
+    "一般三角形中線不一定垂直對邊。",
+    "一般三角形中線不一定平分頂角。",
+    "落點在對邊延長線上不可能是對邊中點，因此不是中線。",
+    "重心 2:1 比例是頂點到重心：重心到中點，不能顛倒。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認線段一端是三角形頂點。",
+      "check": "它所對的邊是哪一條？"
+    },
+    {
+      "step": 2,
+      "instruction": "確認另一端位於對邊且把對邊分成兩段相等。",
+      "check": "是否有 BM=MC 或中點文字？"
+    },
+    {
+      "step": 3,
+      "instruction": "若求分段，使用對邊長除以 2。",
+      "check": "單位是否一致？"
+    },
+    {
+      "step": 4,
+      "instruction": "若涉及面積，利用同高與等底。",
+      "check": "兩小三角形是否共用從頂點到對邊的高？"
+    },
+    {
+      "step": 5,
+      "instruction": "若涉及重心，沿同一中線使用 2:1。",
+      "check": "較長段是否靠近頂點？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "M 為 BC 中點，判斷 AM。",
+      "solutionSteps": [
+        "A 是 △ABC 的頂點。",
+        "M 是對邊 BC 的中點。"
+      ],
+      "answer": "AM 是 △ABC 的中線。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "BC=18，M 為 BC 中點，求 BM、MC。",
+      "solutionSteps": [
+        "中點分成兩段相等。",
+        "18÷2=9。"
+      ],
+      "answer": "BM=MC=9。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "AM 為中線，△ABC 面積 30，求 △ABM 面積。",
+      "solutionSteps": [
+        "BM=MC。",
+        "兩小三角形對直線 BC 高相同，面積相等。"
+      ],
+      "answer": "15。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "G 為重心，AG=12，求 GM。",
+      "solutionSteps": [
+        "AG:GM=2:1。",
+        "GM=12÷2。"
+      ],
+      "answer": "6。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "一線段由 A 連到 BC 且與 BC 垂直，能否必定稱中線？",
+      "solutionSteps": [
+        "垂直只表示高線。",
+        "還需垂足為 BC 中點。"
+      ],
+      "answer": "不能，除非再知其平分 BC。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到通過中點的線就叫中線。",
+      "why": "漏掉必須從對面頂點出發。",
+      "correction": "中線兩端角色都要檢查。"
+    },
+    {
+      "mistake": "把中線當垂線。",
+      "why": "受等腰三線合一印象影響。",
+      "correction": "一般三角形中兩者獨立。"
+    },
+    {
+      "mistake": "把中線當角平分線。",
+      "why": "只看線段位於圖形中央。",
+      "correction": "需另外有等角標記才可平分角。"
+    },
+    {
+      "mistake": "重心比例寫成 1:2。",
+      "why": "未記方向。",
+      "correction": "從頂點到重心：重心到中點=2:1。"
+    },
+    {
+      "mistake": "中線把周長平分。",
+      "why": "把面積性質誤套到周長。",
+      "correction": "中線必平分面積，但不必平分周長。"
+    },
+    {
+      "mistake": "落點在對邊延長線仍稱中線。",
+      "why": "忽略中點必在線段上。",
+      "correction": "中點位於對邊線段內。"
+    }
+  ],
+  "selfCheck": [
+    "線段是否從頂點到對邊中點？",
+    "中點兩側長度是否相等？",
+    "我是否誤把中線當成垂線或角平分線？",
+    "中線分出的兩個面積是否相等？",
+    "重心比例方向是否為頂點側 2、底邊側 1？"
+  ],
+  "summary": [
+    "中線從頂點連到對邊中點。",
+    "每個三角形有三條中線，交於重心。",
+    "一條中線平分三角形面積。",
+    "一般中線不必垂直或平分角；重心沿中線分成 2:1。"
+  ],
+  "connections": {
+    "previous": "多邊形角度後回到三角形內部線段。",
+    "next": [
+      "高線只要求垂直，不要求落在中點。",
+      "三角形素養題常結合中線面積與重心比例。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-016-median"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-016-median 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s016-v001",
+      "u16-s016-v002",
+      "u16-s016-v003",
+      "u16-s016-v004",
+      "u16-s016-v005",
+      "u16-s016-v006",
+      "u16-s016-v007",
+      "u16-s016-v008",
+      "u16-s016-v009",
+      "u16-s016-v010",
+      "u16-s016-v011",
+      "u16-s016-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s016-cr001",
+      "u16-s016-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「中線概念」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "5e2761def61fa30b25903dfdcd8f9fa668fc69accd1852d02c835f4bab9752c1"
+}

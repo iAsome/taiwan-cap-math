@@ -1,0 +1,240 @@
+{
+  "unitId": "u16",
+  "numericId": 16,
+  "title": "三角形的性質與尺規作圖",
+  "gradeBand": "8下",
+  "domain": "空間與形狀",
+  "description": "角、全等、尺規作圖、三角形性質。",
+  "coreGoal": "能判斷全等並理解尺規作圖意義。",
+  "capScopeNote": "作圖以概念與步驟文字描述。",
+  "lockedSkillCount": 18,
+  "topics": [
+    {
+      "topicId": "u16-congruence",
+      "title": "三角形全等",
+      "order": 1,
+      "skillIds": [
+        "triangle-congruence",
+        "triangle-congruence-proof",
+        "isosceles-equilateral",
+        "triangle-sss-sas",
+        "triangle-asa-aas",
+        "isosceles-properties",
+        "equilateral-properties"
+      ]
+    },
+    {
+      "topicId": "u16-construction",
+      "title": "尺規作圖",
+      "order": 2,
+      "skillIds": [
+        "compass-construction",
+        "compass-copy-angle",
+        "compass-perpendicular",
+        "construction-word-steps"
+      ]
+    },
+    {
+      "topicId": "u16-properties",
+      "title": "性質",
+      "order": 3,
+      "skillIds": [
+        "triangle-inequality",
+        "angle-sum-exterior",
+        "triangle-side-angle-relation",
+        "exterior-angle-sum",
+        "triangle-medians",
+        "triangle-altitude"
+      ]
+    },
+    {
+      "topicId": "u16-literacy",
+      "title": "素養應用",
+      "order": 4,
+      "skillIds": [
+        "triangle-literacy"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "slot": "s001",
+      "skillId": "triangle-congruence",
+      "title": "全等判定",
+      "order": 1,
+      "topicId": "u16-congruence",
+      "prerequisiteSkillIds": []
+    },
+    {
+      "slot": "s002",
+      "skillId": "triangle-congruence-proof",
+      "title": "全等證明",
+      "order": 2,
+      "topicId": "u16-congruence",
+      "prerequisiteSkillIds": [
+        "triangle-congruence"
+      ]
+    },
+    {
+      "slot": "s003",
+      "skillId": "isosceles-equilateral",
+      "title": "等腰與等邊三角形",
+      "order": 3,
+      "topicId": "u16-congruence",
+      "prerequisiteSkillIds": [
+        "triangle-congruence-proof"
+      ]
+    },
+    {
+      "slot": "s004",
+      "skillId": "triangle-sss-sas",
+      "title": "SSS 與 SAS",
+      "order": 4,
+      "topicId": "u16-congruence",
+      "prerequisiteSkillIds": [
+        "isosceles-equilateral"
+      ]
+    },
+    {
+      "slot": "s005",
+      "skillId": "triangle-asa-aas",
+      "title": "ASA 與 AAS",
+      "order": 5,
+      "topicId": "u16-congruence",
+      "prerequisiteSkillIds": [
+        "triangle-sss-sas"
+      ]
+    },
+    {
+      "slot": "s006",
+      "skillId": "isosceles-properties",
+      "title": "等腰三角形性質",
+      "order": 6,
+      "topicId": "u16-congruence",
+      "prerequisiteSkillIds": [
+        "triangle-asa-aas"
+      ]
+    },
+    {
+      "slot": "s007",
+      "skillId": "equilateral-properties",
+      "title": "等邊三角形性質",
+      "order": 7,
+      "topicId": "u16-congruence",
+      "prerequisiteSkillIds": [
+        "isosceles-properties"
+      ]
+    },
+    {
+      "slot": "s008",
+      "skillId": "compass-construction",
+      "title": "尺規作圖步驟",
+      "order": 8,
+      "topicId": "u16-construction",
+      "prerequisiteSkillIds": [
+        "equilateral-properties"
+      ]
+    },
+    {
+      "slot": "s009",
+      "skillId": "compass-copy-angle",
+      "title": "複製角",
+      "order": 9,
+      "topicId": "u16-construction",
+      "prerequisiteSkillIds": [
+        "compass-construction"
+      ]
+    },
+    {
+      "slot": "s010",
+      "skillId": "compass-perpendicular",
+      "title": "過點作垂線",
+      "order": 10,
+      "topicId": "u16-construction",
+      "prerequisiteSkillIds": [
+        "compass-copy-angle"
+      ]
+    },
+    {
+      "slot": "s011",
+      "skillId": "construction-word-steps",
+      "title": "作圖步驟文字題",
+      "order": 11,
+      "topicId": "u16-construction",
+      "prerequisiteSkillIds": [
+        "compass-perpendicular"
+      ]
+    },
+    {
+      "slot": "s012",
+      "skillId": "triangle-inequality",
+      "title": "三角形邊長關係",
+      "order": 12,
+      "topicId": "u16-properties",
+      "prerequisiteSkillIds": [
+        "construction-word-steps"
+      ]
+    },
+    {
+      "slot": "s013",
+      "skillId": "angle-sum-exterior",
+      "title": "外角定理",
+      "order": 13,
+      "topicId": "u16-properties",
+      "prerequisiteSkillIds": [
+        "triangle-inequality"
+      ]
+    },
+    {
+      "slot": "s014",
+      "skillId": "triangle-side-angle-relation",
+      "title": "邊角關係",
+      "order": 14,
+      "topicId": "u16-properties",
+      "prerequisiteSkillIds": [
+        "angle-sum-exterior"
+      ]
+    },
+    {
+      "slot": "s015",
+      "skillId": "exterior-angle-sum",
+      "title": "多邊形外角和",
+      "order": 15,
+      "topicId": "u16-properties",
+      "prerequisiteSkillIds": [
+        "triangle-side-angle-relation"
+      ]
+    },
+    {
+      "slot": "s016",
+      "skillId": "triangle-medians",
+      "title": "中線概念",
+      "order": 16,
+      "topicId": "u16-properties",
+      "prerequisiteSkillIds": [
+        "exterior-angle-sum"
+      ]
+    },
+    {
+      "slot": "s017",
+      "skillId": "triangle-altitude",
+      "title": "高線概念",
+      "order": 17,
+      "topicId": "u16-properties",
+      "prerequisiteSkillIds": [
+        "triangle-medians"
+      ]
+    },
+    {
+      "slot": "s018",
+      "skillId": "triangle-literacy",
+      "title": "三角形素養題",
+      "order": 18,
+      "topicId": "u16-literacy",
+      "prerequisiteSkillIds": [
+        "triangle-altitude"
+      ]
+    }
+  ],
+  "authoritativeLockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc"
+}

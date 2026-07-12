@@ -1,0 +1,1742 @@
+// Deterministically emitted from reviewed CHATGPT_HUMAN_AUTHORED_R1 source.
+// Do not edit this staging module by hand.
+export const skillData={
+  "slot": "s008",
+  "lecture": {
+    "lectureId": "u16-s008-lecture-r1",
+    "unitId": "u16",
+    "numericUnitId": 16,
+    "topicId": "u16-construction",
+    "skillId": "compass-construction",
+    "skillOrder": 8,
+    "originalLockedTitle": "尺規作圖步驟",
+    "title": "尺規作圖步驟：用圓規搬移距離並用直尺連線",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能說明尺規作圖中直尺與圓規各自允許的操作。",
+      "能依圓弧交點理解等距與作圖正確性的理由。",
+      "能按順序描述作一線段等長線段、作中垂線與作角平分線的基本流程。",
+      "能分辨作圖痕跡與最後答案線，並保留足以驗證的圓弧。"
+    ],
+    "prerequisiteBridge": "等邊三角形可由兩個同半徑圓的交點構造，顯示尺規作圖的核心：圓上各點到圓心等距。現在把這種等距關係轉成標準作圖步驟。",
+    "prerequisites": [
+      {
+        "skillId": "equilateral-properties",
+        "requiredLevel": "能使用先備技能「等邊三角形性質」的核心定義與基本運算，並能說明其與本節的連結。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "無刻度直尺",
+        "definition": "只用來畫過兩點的直線或延長線，不直接量長度。"
+      },
+      {
+        "term": "圓規",
+        "definition": "以指定點為圓心、指定線段為半徑畫圓或圓弧，並可搬移距離。"
+      },
+      {
+        "term": "作圖痕跡",
+        "definition": "圓弧、交點與輔助線，提供作圖依據。"
+      },
+      {
+        "term": "中垂線",
+        "definition": "通過線段中點且垂直於該線段的直線。"
+      },
+      {
+        "term": "角平分線",
+        "definition": "把一個角分成兩個相等角的射線。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "以 A 為圓心、AB 為半徑作弧",
+        "meaning": "圓弧上每點到 A 的距離均等於 AB。"
+      },
+      {
+        "symbol": "兩弧交於 P、Q",
+        "meaning": "P、Q 同時滿足到兩圓心的距離條件。"
+      },
+      {
+        "symbol": "作直線 PQ",
+        "meaning": "用無刻度直尺連接 P、Q 並可延長。"
+      }
+    ],
+    "conceptNarrative": [
+      "尺規作圖不是量測後描畫，而是用幾何性質保證結果。直尺沒有刻度，圓規負責複製距離。",
+      "以 A 為圓心、固定半徑畫弧，弧上所有點都與 A 等距；兩個圓弧的交點同時滿足兩個等距條件。",
+      "作線段中垂線時，以兩端點為圓心畫相同半徑且半徑大於線段一半，兩弧交點連線即同時到兩端等距，因此通過中點並垂直原線段。",
+      "作角平分線時，先用同一弧在兩邊截出等距點，再以這兩點為圓心畫同半徑弧，連接角頂點與交點。",
+      "完整文字步驟應交代圓心、半徑、交點名稱與最後連線，不能只說『畫弧』。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "尺規作圖",
+        "statement": "只使用無刻度直尺與圓規，依有限步驟構造滿足指定幾何條件的圖形。"
+      },
+      {
+        "name": "等距軌跡",
+        "statement": "到兩定點等距的點位於兩點連線的中垂線上。"
+      },
+      {
+        "name": "圓的基本性質",
+        "statement": "同一圓或同半徑圓弧上的半徑皆相等。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "PA=PB ⇒ P 在線段 AB 的中垂線上",
+        "conditions": [
+          "A、B 為不同定點"
+        ],
+        "meaning": "中垂線作圖的正確性依據。"
+      },
+      {
+        "formula": "以 A 為圓心、AB 為半徑 ⇒ AP=AB",
+        "conditions": [
+          "P 位於所畫圓弧上"
+        ],
+        "meaning": "圓規搬移距離。"
+      }
+    ],
+    "nonApplicableCases": [
+      "用有刻度直尺直接量取長度不屬於純尺規作圖。",
+      "圓弧半徑太小而不相交時，無法得到所需交點。",
+      "只畫一個圓弧交點通常不足以決定一條直線。",
+      "省略圓心或半徑資訊，步驟不可重現。",
+      "擦掉所有圓弧會失去驗證作圖依據，正式作圖通常保留必要痕跡。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先讀清楚要保留的條件：等長、等角、垂直或平分。",
+        "check": "最後要得到點、線段、射線還是直線？"
+      },
+      {
+        "step": 2,
+        "instruction": "選擇圓心與半徑，畫第一組圓弧。",
+        "check": "半徑是否由已知線段或相同開口取得？"
+      },
+      {
+        "step": 3,
+        "instruction": "以另一個關鍵點為圓心畫相交圓弧。",
+        "check": "兩弧是否有足夠交點？"
+      },
+      {
+        "step": 4,
+        "instruction": "命名交點並用直尺連接指定點。",
+        "check": "連線對應哪個幾何目標？"
+      },
+      {
+        "step": 5,
+        "instruction": "用等距或全等理由驗證。",
+        "check": "為何該線垂直、平分或等長？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "在射線 PX 上作 PQ=AB。",
+        "solutionSteps": [
+          "以 P 為圓心、AB 為半徑畫弧，交射線 PX 於 Q。",
+          "因 Q 在此弧上，所以 PQ=AB。"
+        ],
+        "answer": "Q 即所求點。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "作線段 AB 的中垂線。",
+        "solutionSteps": [
+          "以 A、B 為圓心，用相同且大於 AB 一半的半徑畫弧，交於 P、Q。",
+          "連接 P、Q。",
+          "P、Q 都到 A、B 等距。"
+        ],
+        "answer": "直線 PQ 為 AB 的中垂線。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "作 ∠AOB 的角平分線。",
+        "solutionSteps": [
+          "以 O 為圓心作弧，交 OA、OB 於 C、D。",
+          "以 C、D 為圓心、相同半徑作弧，交於 P。",
+          "作射線 OP。"
+        ],
+        "answer": "OP 平分 ∠AOB。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "用尺規作等邊三角形，已知底邊 AB。",
+        "solutionSteps": [
+          "以 A 為圓心、AB 為半徑作弧。",
+          "以 B 為圓心、BA 為半徑作弧，交於 C。",
+          "連接 AC、BC。"
+        ],
+        "answer": "AB=AC=BC，△ABC 為等邊三角形。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "用直尺刻度量距離。",
+        "why": "混入測量工具。",
+        "correction": "用圓規開口搬移已知線段。"
+      },
+      {
+        "mistake": "只寫『畫兩個圓』。",
+        "why": "缺少圓心與半徑。",
+        "correction": "每一步明確寫『以誰為圓心、以哪段為半徑』。"
+      },
+      {
+        "mistake": "作中垂線時兩次半徑不同。",
+        "why": "無法保證交點到 A、B 等距。",
+        "correction": "圓規開口保持不變。"
+      },
+      {
+        "mistake": "半徑不大於 AB 一半。",
+        "why": "兩弧可能相切或不相交，無法得到兩交點。",
+        "correction": "選大於 AB/2 的相同半徑。"
+      },
+      {
+        "mistake": "把交點連到錯誤端點。",
+        "why": "未確認最後目標。",
+        "correction": "中垂線連兩弧交點；角平分線連角頂點與弧交點。"
+      },
+      {
+        "mistake": "只描述步驟不說理由。",
+        "why": "無法確認構造正確。",
+        "correction": "用同圓半徑相等、等距軌跡或全等說明。"
+      }
+    ],
+    "selfCheck": [
+      "每個圓弧都寫出圓心與半徑了嗎？",
+      "直尺是否只用於連點與延長？",
+      "兩弧需要相交時半徑是否足夠？",
+      "最後連的是正確兩點嗎？",
+      "我能用等距或全等驗證結果嗎？"
+    ],
+    "summary": [
+      "無刻度直尺畫直線，圓規搬移距離與畫圓弧。",
+      "圓弧交點把等距條件轉成可見的點。",
+      "作圖步驟必須交代圓心、半徑、交點與連線。",
+      "正確性要由幾何性質而非量測外觀保證。"
+    ],
+    "connections": {
+      "previous": "等邊三角形展示同半徑圓弧的等長效果。",
+      "next": [
+        "下一技能完整處理複製角。",
+        "之後將用同樣等距思想過點作垂線。"
+      ]
+    },
+    "figureReferences": [
+      "u16-fig-008-construction-tools"
+    ],
+    "accessibilityNotes": [
+      "u16-fig-008-construction-tools 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u16-s008-v001",
+        "u16-s008-v002",
+        "u16-s008-v003",
+        "u16-s008-v004",
+        "u16-s008-v005",
+        "u16-s008-v006",
+        "u16-s008-v007",
+        "u16-s008-v008",
+        "u16-s008-v009",
+        "u16-s008-v010",
+        "u16-s008-v011",
+        "u16-s008-v012"
+      ],
+      "constructedResponseIds": [
+        "u16-s008-cr001",
+        "u16-s008-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "針對「尺規作圖步驟」逐段核對定義、適用條件與反例；重新演算4個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+      "reviewVersion": "human-lecture-review-u16-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "e6d8287e0c3edb9bb10813dc9d30d571c2c3d9f0f4cc5eb4dad9cae247f1cd6a"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u16-s008-v001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "純尺規作圖中的直尺應如何使用？",
+      "givenConditions": [
+        "使用無刻度直尺"
+      ],
+      "target": "辨認允許操作",
+      "choices": [
+        "直接量出 5 公分",
+        "直接量出 60°",
+        "把圓規開口固定",
+        "通過兩個已知點畫直線或延長線"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "通過兩點可唯一畫一直線，符合尺規規則。",
+      "explanation": "無刻度直尺只決定直線，不負責量長或量角。 列出工具限制。 直尺的合法操作是連點、延長。",
+      "steps": [
+        "列出工具限制。",
+        "直尺的合法操作是連點、延長。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "直接量出 5 公分",
+          "truth": false,
+          "reason": "無刻度直尺不能量距離。"
+        },
+        {
+          "choice": "直接量出 60°",
+          "truth": false,
+          "reason": "量角需量角器，不是直尺功能。"
+        },
+        {
+          "choice": "把圓規開口固定",
+          "truth": false,
+          "reason": "這是圓規操作。"
+        },
+        {
+          "choice": "通過兩個已知點畫直線或延長線",
+          "truth": true,
+          "reason": "無刻度直尺只決定直線，不負責量長或量角。"
+        }
+      ],
+      "misconceptionTarget": "把一般有刻度直尺的量測功能帶入。",
+      "prerequisiteCheck": "知道點與直線概念。",
+      "estimatedTimeSec": "45",
+      "unitAndRoundingCheck": "不涉及單位；刻度明確禁止。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "『純尺規』排除量角器與刻度量測。",
+      "difficultyReason": "基礎題，辨認工具規則。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "理解無刻度直尺。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "09ea2e916a362edbba7a8050df60bf959c26f0058b61c49bafcc01daa04efd1a"
+    },
+    {
+      "questionId": "u16-s008-v002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "以 A 為圓心、AB 為半徑畫弧，若 P 在此弧上，則必有哪個關係？",
+      "givenConditions": [
+        "圓規開口保持 AB"
+      ],
+      "target": "使用同圓半徑相等",
+      "choices": [
+        "BP=AB",
+        "AP=AB",
+        "AP⊥AB",
+        "P 是 AB 中點"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "依圓定義 AP=AB。",
+      "explanation": "弧上各點到圓心 A 的距離都等於半徑 AB。 確認圓心 A。 確認半徑 AB。 P 在弧上。",
+      "steps": [
+        "確認圓心 A。",
+        "確認半徑 AB。",
+        "P 在弧上。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "BP=AB",
+          "truth": false,
+          "reason": "B 不是此圓的圓心，未必成立。"
+        },
+        {
+          "choice": "AP=AB",
+          "truth": true,
+          "reason": "弧上各點到圓心 A 的距離都等於半徑 AB。"
+        },
+        {
+          "choice": "AP⊥AB",
+          "truth": false,
+          "reason": "半徑之間不必垂直。"
+        },
+        {
+          "choice": "P 是 AB 中點",
+          "truth": false,
+          "reason": "弧上點通常不在線段 AB 上。"
+        }
+      ],
+      "misconceptionTarget": "把半徑關係錯配到非圓心 B。",
+      "prerequisiteCheck": "會讀『以誰為圓心』。",
+      "estimatedTimeSec": "45",
+      "unitAndRoundingCheck": "AP、AB 為同類長度，無換算。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "若只畫部分圓弧，弧上點仍滿足同半徑。",
+      "difficultyReason": "基礎題，直接使用圓定義。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "解讀圓弧。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "7434ad761ae3f819751a8f6cca167a22a9ed3e96e16f74b4051fec882039b3be"
+    },
+    {
+      "questionId": "u16-s008-v003",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "作線段 AB 的中垂線時，為何以 A、B 為圓心畫弧要使用相同半徑？",
+      "givenConditions": [
+        "兩弧交於 P、Q"
+      ],
+      "target": "建立等距條件",
+      "choices": [
+        "使 AB 變長",
+        "使 P、Q 都落在 AB 上",
+        "使兩弧一定只有一個交點",
+        "使 P、Q 到 A、B 的距離分別相等"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "等距點連線才可保證通過中點並垂直 AB。",
+      "explanation": "相同半徑給 PA=PB、QA=QB，兩交點都位於 AB 的中垂線。 P 同時在兩弧上。 兩弧半徑相同，得 PA=PB。 Q 同理。",
+      "steps": [
+        "P 同時在兩弧上。",
+        "兩弧半徑相同，得 PA=PB。",
+        "Q 同理。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "使 AB 變長",
+          "truth": false,
+          "reason": "作圖不改變原線段。"
+        },
+        {
+          "choice": "使 P、Q 都落在 AB 上",
+          "truth": false,
+          "reason": "交點通常在 AB 兩側。"
+        },
+        {
+          "choice": "使兩弧一定只有一個交點",
+          "truth": false,
+          "reason": "中垂線需兩個交點，通常要求兩個。"
+        },
+        {
+          "choice": "使 P、Q 到 A、B 的距離分別相等",
+          "truth": true,
+          "reason": "相同半徑給 PA=PB、QA=QB，兩交點都位於 AB 的中垂線。"
+        }
+      ],
+      "misconceptionTarget": "只把相同半徑視為畫面對稱，不知道等距理由。",
+      "prerequisiteCheck": "知道圓上點到圓心等於半徑。",
+      "estimatedTimeSec": "70",
+      "unitAndRoundingCheck": "半徑可任取同一長度，無固定單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "半徑還須足夠大以有兩交點；題目只問相同的作用。",
+      "difficultyReason": "基礎題，理解作圖理由。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "說明中垂線弧的作用。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "0913ede42acd387c2b9708eb7a44df0411e9bc2785e9276b02ff0ee265a921b3"
+    },
+    {
+      "questionId": "u16-s008-v004",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "在射線 PX 上作 PQ=AB，最直接的步驟是哪一項？",
+      "givenConditions": [
+        "P 為射線端點"
+      ],
+      "target": "用圓規搬移線段",
+      "choices": [
+        "以 A 為圓心、PX 為半徑畫弧",
+        "用直尺量 AB 再在 PX 上刻度",
+        "以 P 為圓心、AB 為半徑畫弧，交 PX 於 Q",
+        "以 B 為圓心、AP 為半徑畫弧"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "同圓半徑性質直接給 PQ=AB。",
+      "explanation": "Q 在以 P 為圓心、AB 為半徑的弧上，因此 PQ=AB。 設定圓心為新線段起點 P。 圓規開口取 AB。 弧與射線交點定為 Q。",
+      "steps": [
+        "設定圓心為新線段起點 P。",
+        "圓規開口取 AB。",
+        "弧與射線交點定為 Q。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "以 A 為圓心、PX 為半徑畫弧",
+          "truth": false,
+          "reason": "圓心與半徑都不對應所求。"
+        },
+        {
+          "choice": "用直尺量 AB 再在 PX 上刻度",
+          "truth": false,
+          "reason": "純尺規不使用刻度。"
+        },
+        {
+          "choice": "以 P 為圓心、AB 為半徑畫弧，交 PX 於 Q",
+          "truth": true,
+          "reason": "Q 在以 P 為圓心、AB 為半徑的弧上，因此 PQ=AB。"
+        },
+        {
+          "choice": "以 B 為圓心、AP 為半徑畫弧",
+          "truth": false,
+          "reason": "不能保證 PQ=AB。"
+        }
+      ],
+      "misconceptionTarget": "圓心沒有設在新線段端點。",
+      "prerequisiteCheck": "會讀射線端點與圓規半徑。",
+      "estimatedTimeSec": "80",
+      "unitAndRoundingCheck": "AB、PQ 同為長度；不需知道數值或單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "射線與圓弧在指定方向有唯一交點（除 P 外）。",
+      "difficultyReason": "標準題，選擇可重現步驟。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "複製線段。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "349420f9ed1c75fa7782cd9ec2f84766212cb9b0dc0fbcad59d629de2f5d5efa"
+    },
+    {
+      "questionId": "u16-s008-v005",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "作線段 AB 的中垂線時，若所選共同半徑小於 AB 的一半，會發生什麼事？",
+      "givenConditions": [
+        "兩圓心距離為 AB"
+      ],
+      "target": "檢查圓弧相交條件",
+      "choices": [
+        "兩弧有兩個交點",
+        "兩弧相切於 AB 中點",
+        "兩弧不相交，無法取得兩個交點",
+        "仍可直接連接 A、B 作中垂線"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "沒有 P、Q 便無法用兩交點決定中垂線。",
+      "explanation": "兩個相同半徑圓的半徑和小於圓心距離，彼此分離。 兩半徑和 < AB。 所以兩圓無交點。",
+      "steps": [
+        "兩半徑和 < AB。",
+        "所以兩圓無交點。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "兩弧有兩個交點",
+          "truth": false,
+          "reason": "需半徑大於 AB/2。"
+        },
+        {
+          "choice": "兩弧相切於 AB 中點",
+          "truth": false,
+          "reason": "半徑等於 AB/2 才相切。"
+        },
+        {
+          "choice": "兩弧不相交，無法取得兩個交點",
+          "truth": true,
+          "reason": "兩個相同半徑圓的半徑和小於圓心距離，彼此分離。"
+        },
+        {
+          "choice": "仍可直接連接 A、B 作中垂線",
+          "truth": false,
+          "reason": "AB 本身不是其垂線。"
+        }
+      ],
+      "misconceptionTarget": "忽略半徑大小只記得要相同。",
+      "prerequisiteCheck": "知道兩圓相交的直觀條件。",
+      "estimatedTimeSec": "90",
+      "unitAndRoundingCheck": "所有量同單位；不需近似。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "題目明確是小於一半，排除相切邊界。",
+      "difficultyReason": "標準題，檢查作圖可行性。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認弧不相交。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "a2bb92e1d13f7da2e712f9be20b749fed7e7f18e5e5d2c54031af9c49ae9bab5"
+    },
+    {
+      "questionId": "u16-s008-v006",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "作 ∠AOB 的角平分線，第一道以 O 為圓心的圓弧交 OA、OB 於 C、D。下一步最合理的是什麼？",
+      "givenConditions": [
+        "OC=OD"
+      ],
+      "target": "完成角平分線構造",
+      "choices": [
+        "以 C、D 為圓心、相同半徑畫弧交於 P，再作射線 OP",
+        "直接連接 C、D",
+        "以 O 為圓心再畫任意弧",
+        "以 C 為圓心畫弧後直接連 O、C"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "OC=OD、CP=DP、OP 共用，故兩小三角形全等。",
+      "explanation": "以 C、D 同半徑取得到兩點等距的 P，△OCP 與 △ODP 以 SSS 全等，OP 平分角。 保持 C、D 作對稱圓心。 取得交點 P。 連接角頂點 O 與 P。",
+      "steps": [
+        "保持 C、D 作對稱圓心。",
+        "取得交點 P。",
+        "連接角頂點 O 與 P。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "以 C、D 為圓心、相同半徑畫弧交於 P，再作射線 OP",
+          "truth": true,
+          "reason": "以 C、D 同半徑取得到兩點等距的 P，△OCP 與 △ODP 以 SSS 全等，OP 平分角。"
+        },
+        {
+          "choice": "直接連接 C、D",
+          "truth": false,
+          "reason": "CD 是弦，不是角平分線。"
+        },
+        {
+          "choice": "以 O 為圓心再畫任意弧",
+          "truth": false,
+          "reason": "不會產生平分方向的新點。"
+        },
+        {
+          "choice": "以 C 為圓心畫弧後直接連 O、C",
+          "truth": false,
+          "reason": "OC 就是原角一邊。"
+        }
+      ],
+      "misconceptionTarget": "把第一弧的弦 CD 當成答案線。",
+      "prerequisiteCheck": "會用圓弧交點與 SSS。",
+      "estimatedTimeSec": "105",
+      "unitAndRoundingCheck": "無量值單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "P 可在角內或相對位置選取；作角內平分線時取角內交點。",
+      "difficultyReason": "標準題，從中間狀態完成作圖。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "完成角平分線。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "67bb02565068b90b1109ed302af8de551ce1eddbc0a69fe16c1d500aa7d1c90a"
+    },
+    {
+      "questionId": "u16-s008-v007",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某作圖步驟寫『以 A、B 為圓心，分別取任意半徑作弧，交於 P、Q；連 PQ』。若兩次半徑不相同，何者正確？",
+      "givenConditions": [
+        "目標聲稱 PQ 是 AB 中垂線"
+      ],
+      "target": "審查作圖缺陷",
+      "choices": [
+        "不能保證 P、Q 到 A、B 等距，因此不能保證是中垂線",
+        "仍必為中垂線，只要有兩交點",
+        "必與 AB 平行",
+        "必平分 ∠A"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "P、Q 落在固定距離差的軌跡，不是 AB 中垂線。",
+      "explanation": "不同半徑只能得 PA=r1、PB=r2，若 r1≠r2 就沒有 PA=PB。 寫出 P 在兩圓上的距離。 比較兩半徑。 等距條件失敗。",
+      "steps": [
+        "寫出 P 在兩圓上的距離。",
+        "比較兩半徑。",
+        "等距條件失敗。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "不能保證 P、Q 到 A、B 等距，因此不能保證是中垂線",
+          "truth": true,
+          "reason": "不同半徑只能得 PA=r1、PB=r2，若 r1≠r2 就沒有 PA=PB。"
+        },
+        {
+          "choice": "仍必為中垂線，只要有兩交點",
+          "truth": false,
+          "reason": "交點可同時滿足不同距離，未必等距。"
+        },
+        {
+          "choice": "必與 AB 平行",
+          "truth": false,
+          "reason": "沒有平行理由。"
+        },
+        {
+          "choice": "必平分 ∠A",
+          "truth": false,
+          "reason": "作圖對象是線段端點，不是角。"
+        }
+      ],
+      "misconceptionTarget": "認為只要圖形對稱畫法形式相似就成立。",
+      "prerequisiteCheck": "會把半徑寫成距離等式。",
+      "estimatedTimeSec": "120",
+      "unitAndRoundingCheck": "半徑單位相同但數值不同；問題非換算。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "即使偶然某特殊位置看似垂直，也無定理保證。",
+      "difficultyReason": "進階題，審核文字規格中的必要條件。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "找出作圖規則缺失。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "38dd27f6219bf4e4dc39f83e4d21968920a462a2d1ce3c681739e1e7dddab109"
+    },
+    {
+      "questionId": "u16-s008-v008",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "已知線段 AB，要用尺規作等邊 △ABC。兩個以 A、B 為圓心且半徑 AB 的圓通常有兩個交點。選其中任一交點作 C，所得兩圖的關係為何？",
+      "givenConditions": [
+        "平面中 AB 固定"
+      ],
+      "target": "理解鏡射解的有效性",
+      "choices": [
+        "只有上方交點有效",
+        "兩個結果互為 AB 的鏡射，且彼此全等",
+        "兩個結果大小不同",
+        "兩圖只相似不全等"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "鏡射不改變大小與形狀，兩作圖答案都有效，除非題目指定側。",
+      "explanation": "任一交點都到 A、B 距離 AB，因此兩個三角形皆等邊並以 SSS 全等。 兩交點 C1、C2 皆滿足 AC=BC=AB。 三邊相同。 位置在 AB 兩側，互為鏡射。",
+      "steps": [
+        "兩交點 C1、C2 皆滿足 AC=BC=AB。",
+        "三邊相同。",
+        "位置在 AB 兩側，互為鏡射。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只有上方交點有效",
+          "truth": false,
+          "reason": "兩側都滿足 AC=BC=AB。"
+        },
+        {
+          "choice": "兩個結果互為 AB 的鏡射，且彼此全等",
+          "truth": true,
+          "reason": "任一交點都到 A、B 距離 AB，因此兩個三角形皆等邊並以 SSS 全等。"
+        },
+        {
+          "choice": "兩個結果大小不同",
+          "truth": false,
+          "reason": "三邊規格完全相同。"
+        },
+        {
+          "choice": "兩圖只相似不全等",
+          "truth": false,
+          "reason": "三邊相等可用 SSS。"
+        }
+      ],
+      "misconceptionTarget": "把方向不同誤認為不同全等類型。",
+      "prerequisiteCheck": "知道鏡射仍屬全等。",
+      "estimatedTimeSec": "120",
+      "unitAndRoundingCheck": "AB 為同一長度單位，無近似。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "題目未指定哪一側，因此兩個交點都合法。",
+      "difficultyReason": "進階題，處理作圖多解與等價性。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判斷兩個合法交點。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "94141ff050416bc5872ce195baa3f6ef33877bc7500bb831ae92d4140f691e5e"
+    },
+    {
+      "questionId": "u16-s008-v009",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "要作線段 AB 的中垂線，圓弧半徑等於 AB/2 時，兩弧只在中點 M 相切。為何仍不足以完成標準作圖？",
+      "givenConditions": [
+        "直線需由兩個不同點決定"
+      ],
+      "target": "分析邊界情形",
+      "choices": [
+        "因 M 不在 AB 上",
+        "因兩弧半徑不相等",
+        "只有一個交點 M，無法由兩弧交點決定中垂線方向",
+        "因中垂線不存在"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "因此標準作法要求半徑大於 AB/2，取得上下兩交點。",
+      "explanation": "一個點可通過無數直線；需另一個不在 AB 上的等距點確定垂直方向。 半徑和等於 AB，兩圓相切。 唯一交點 M 在 AB 上。 缺第二個交點決定直線。",
+      "steps": [
+        "半徑和等於 AB，兩圓相切。",
+        "唯一交點 M 在 AB 上。",
+        "缺第二個交點決定直線。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "因 M 不在 AB 上",
+          "truth": false,
+          "reason": "M 正是 AB 中點。"
+        },
+        {
+          "choice": "因兩弧半徑不相等",
+          "truth": false,
+          "reason": "兩半徑其實相等。"
+        },
+        {
+          "choice": "只有一個交點 M，無法由兩弧交點決定中垂線方向",
+          "truth": true,
+          "reason": "一個點可通過無數直線；需另一個不在 AB 上的等距點確定垂直方向。"
+        },
+        {
+          "choice": "因中垂線不存在",
+          "truth": false,
+          "reason": "中垂線存在，只是此步驟資訊不足。"
+        }
+      ],
+      "misconceptionTarget": "把找到中點誤當已找到整條中垂線。",
+      "prerequisiteCheck": "知道兩點決定一直線。",
+      "estimatedTimeSec": "130",
+      "unitAndRoundingCheck": "等號邊界精確，不涉及四捨五入。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "題目說標準作圖，排除另用其他步驟再建立第二點。",
+      "difficultyReason": "進階題，分析相切邊界。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "理解半徑嚴格大於一半。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "a6f08e1acfbdbc4ed651c9584965f820088dc5ed693149a86a37508c6eb50abe"
+    },
+    {
+      "questionId": "u16-s008-v010",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "施工圖要求『不使用刻度』把一段 1.8 公尺長的樣板距離搬到另一條射線上。最合規的方法是哪一項？",
+      "givenConditions": [
+        "樣板線段 AB 已存在",
+        "新射線端點為 P"
+      ],
+      "target": "將實務量距轉成尺規操作",
+      "choices": [
+        "保持圓規開口為 AB，以 P 為圓心畫弧截射線",
+        "用直尺讀 1.8 再畫刻度",
+        "目測相同長度",
+        "把射線延長到看起來一樣"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "PQ=AB，因此即使不知道數值也能精確搬移。",
+      "explanation": "圓規可直接保存 AB 的幾何距離，不必讀出數值。 圓規取 AB。 不改開口移至 P。 弧交射線得新端點 Q。",
+      "steps": [
+        "圓規取 AB。",
+        "不改開口移至 P。",
+        "弧交射線得新端點 Q。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "保持圓規開口為 AB，以 P 為圓心畫弧截射線",
+          "truth": true,
+          "reason": "圓規可直接保存 AB 的幾何距離，不必讀出數值。"
+        },
+        {
+          "choice": "用直尺讀 1.8 再畫刻度",
+          "truth": false,
+          "reason": "違反不使用刻度。"
+        },
+        {
+          "choice": "目測相同長度",
+          "truth": false,
+          "reason": "無法驗證精確。"
+        },
+        {
+          "choice": "把射線延長到看起來一樣",
+          "truth": false,
+          "reason": "延長不會自動取得等距點。"
+        }
+      ],
+      "misconceptionTarget": "把尺規作圖誤解成先量數值再重畫。",
+      "prerequisiteCheck": "會把樣板距離視為圓規半徑。",
+      "estimatedTimeSec": "100",
+      "unitAndRoundingCheck": "1.8 公尺只是說明實際尺度；作圖中不需轉成公分或取整。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "圓規開口在理想模型中不變，施工誤差不在題目範圍。",
+      "difficultyReason": "素養題，規範『不使用刻度』使圓規搬移成必要方法。",
+      "literacyContextNecessity": "情境規範直接決定工具選擇。",
+      "authoringIntent": "搬移樣板距離。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "b7dda55c47217ab0eac27d4771e77d59a4a08ffdb62fda1b8d2c9e2c5608dc11"
+    },
+    {
+      "questionId": "u16-s008-v011",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一名學生依文字說明作 AB 的中垂線：以 A、B 為圓心，用相同半徑作弧；兩弧交於 P、Q；最後卻連接 A、B。錯誤在哪一步？",
+      "givenConditions": [
+        "P、Q 為兩個等距交點"
+      ],
+      "target": "辨認最後連線錯誤",
+      "choices": [
+        "圓心應改成 P、Q",
+        "最後應連接 P、Q，而不是再次連接 A、B",
+        "兩次半徑應不同",
+        "不需要任何交點"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "連 AB 只重畫原線，與其自身不垂直。",
+      "explanation": "AB 是原線段本身；中垂線由兩個到 A、B 等距的點 P、Q 決定。 前兩步產生 P、Q。 PA=PB、QA=QB。 連 PQ 才是等距軌跡。",
+      "steps": [
+        "前兩步產生 P、Q。",
+        "PA=PB、QA=QB。",
+        "連 PQ 才是等距軌跡。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "圓心應改成 P、Q",
+          "truth": false,
+          "reason": "第一步以端點為圓心正確。"
+        },
+        {
+          "choice": "最後應連接 P、Q，而不是再次連接 A、B",
+          "truth": true,
+          "reason": "AB 是原線段本身；中垂線由兩個到 A、B 等距的點 P、Q 決定。"
+        },
+        {
+          "choice": "兩次半徑應不同",
+          "truth": false,
+          "reason": "必須相同。"
+        },
+        {
+          "choice": "不需要任何交點",
+          "truth": false,
+          "reason": "兩交點用來決定中垂線。"
+        }
+      ],
+      "misconceptionTarget": "只檢查圓弧步驟，忽略最後輸出線。",
+      "prerequisiteCheck": "會追蹤作圖目標與端點。",
+      "estimatedTimeSec": "105",
+      "unitAndRoundingCheck": "無量值單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "P、Q 為不同交點已明示，直線 PQ 唯一。",
+      "difficultyReason": "素養題，錯誤診斷需定位到最後操作。",
+      "literacyContextNecessity": "教學情境需要辨認可執行步驟中的單一錯誤。",
+      "authoringIntent": "修正學生作圖。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "ead90b81ebb6e31ad8891273208c7f53642b8b92ca1dfac4a8ada18555dbd117"
+    },
+    {
+      "questionId": "u16-s008-v012",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某導航程式要用幾何方式找出到 A、B 兩個基地等距的路徑。尺規作圖應優先建構哪一條線？",
+      "givenConditions": [
+        "A、B 為兩個不同定點"
+      ],
+      "target": "把等距需求對應到軌跡",
+      "choices": [
+        "直線 AB",
+        "以 A 為圓心的任意圓",
+        "通過 A 的垂線",
+        "線段 AB 的中垂線"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "用 A、B 同半徑交弧取得兩點後連線，即得到所需路徑。",
+      "explanation": "所有到 A、B 等距的點構成 AB 的中垂線。 將『到兩基地等距』寫成 PA=PB。 套用等距軌跡。",
+      "steps": [
+        "將『到兩基地等距』寫成 PA=PB。",
+        "套用等距軌跡。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "直線 AB",
+          "truth": false,
+          "reason": "直線上除中點外，到兩端距離不同。"
+        },
+        {
+          "choice": "以 A 為圓心的任意圓",
+          "truth": false,
+          "reason": "只能固定到 A 的距離。"
+        },
+        {
+          "choice": "通過 A 的垂線",
+          "truth": false,
+          "reason": "不保證到 B 等距。"
+        },
+        {
+          "choice": "線段 AB 的中垂線",
+          "truth": true,
+          "reason": "所有到 A、B 等距的點構成 AB 的中垂線。"
+        }
+      ],
+      "misconceptionTarget": "把兩基地連線本身當等距軌跡。",
+      "prerequisiteCheck": "會把文字條件轉成中垂線。",
+      "estimatedTimeSec": "105",
+      "unitAndRoundingCheck": "基地距離使用同一地圖尺度；本題不需數值。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "A、B 不同，故中垂線唯一；地球曲率等現實因素不在平面模型。",
+      "difficultyReason": "素養題，等距路徑的功能需求直接決定作圖。",
+      "literacyContextNecessity": "導航需求是中垂線的實際意義，不能刪除。",
+      "authoringIntent": "建構等距導航線。",
+      "tags": [
+        "空間與形狀",
+        "尺規作圖步驟",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "28d9c1e727ca3742c06b03590e4a32bb443e9c8d0ec838de9676f27e68a20165"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u16-s008-cr001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-008-construction-tools",
+      "prompt": "說明用無刻度直尺與圓規作出線段 AB 的垂直平分線的完整步驟，並解釋為何作出的直線同時垂直且平分 AB。",
+      "requiredWork": [
+        "圓規半徑須大於AB一半。",
+        "以A、B為圓心畫等半徑弧。",
+        "連結兩個交點。",
+        "用等距性說明正確性。"
+      ],
+      "fullCreditSolution": [
+        "取大於AB一半的任意半徑。",
+        "分別以A、B為圓心、同半徑在AB兩側畫弧，交於P、Q。",
+        "用直尺連結P、Q。因PA=PB且QA=QB，P、Q都在AB的垂直平分線上，所以PQ垂直AB並通過AB中點。"
+      ],
+      "alternativeSolutions": [
+        "可先只在一側取交點P，再在另一側取Q；關鍵是兩次圓規開口不變。"
+      ],
+      "reasoningSteps": [
+        "取大於AB一半的任意半徑。",
+        "分別以A、B為圓心、同半徑在AB兩側畫弧，交於P、Q。",
+        "用直尺連結P、Q。因PA=PB且QA=QB，P、Q都在AB的垂直平分線上，所以PQ垂直AB並通過AB中點。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "步驟次序、等半徑條件與兩交點完整，並以P、Q到A、B等距證明垂直平分。"
+        },
+        {
+          "score": 2,
+          "criteria": "作圖步驟基本正確，但未明說半徑大於一半或正確性理由不完整。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道以A、B為圓心畫等弧並連交點，但漏一側交點或未說明目的。"
+        },
+        {
+          "score": 0,
+          "criteria": "改用量角器/有刻度量中點，改變圓規開口造成無交點，或無有效步驟。"
+        }
+      ],
+      "partialCreditRules": [
+        "作圖步驟基本正確，但未明說半徑大於一半或正確性理由不完整。",
+        "知道以A、B為圓心畫等弧並連交點，但漏一側交點或未說明目的。"
+      ],
+      "followThroughPolicy": "若半徑條件漏寫但所述確有兩交點，最高2分；若只畫一個交點，無法唯一決定直線，最高1分。",
+      "unitAndNotationRules": "點名與線段一致；不得以量測刻度作為必要步驟；『等半徑』需明確。",
+      "answerOnlyPolicy": "只寫『畫垂直平分線』不列操作，0分；只列工具名稱不計分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "圓規開口前後不同。",
+        "只用一個弧交點就畫線。"
+      ],
+      "independentReview": {
+        "derivedResult": "以A、B為圓心畫等半徑雙弧，連兩交點得垂直平分線。",
+        "ambiguity": "交點可命名不同，圓弧可畫完整圓或必要弧段，皆為等價作法。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "21ae0483e2b45a7b588d8a22cbe00a98b921befe346fbe531266fd00a5e1f5f6"
+    },
+    {
+      "questionId": "u16-s008-cr002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-construction",
+      "skillOrder": 8,
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "尺規作圖中，為何『用直尺量出 AB 的一半並做記號』不是合格的純尺規作圖步驟？請改寫成合格方法。",
+      "requiredWork": [
+        "指出直尺無刻度。",
+        "說明不能依數值量測。",
+        "提供用等半徑弧找中點的方法。"
+      ],
+      "fullCreditSolution": [
+        "純尺規作圖的直尺只用來畫直線，不能量長度。",
+        "應以A、B為圓心畫相同且大於半長的弧，連接上下交點得垂直平分線；該線與AB交點才是中點。"
+      ],
+      "alternativeSolutions": [
+        "也可先作垂直平分線，再把交點命名為M，不必知道AB的數值長度。"
+      ],
+      "reasoningSteps": [
+        "純尺規作圖的直尺只用來畫直線，不能量長度。",
+        "應以A、B為圓心畫相同且大於半長的弧，連接上下交點得垂直平分線；該線與AB交點才是中點。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "明確指出無刻度限制，並提出不靠量測、可確定中點的完整等弧方法。"
+        },
+        {
+          "score": 2,
+          "criteria": "理由正確且方法方向正確，但步驟略缺交點或連線。"
+        },
+        {
+          "score": 1,
+          "criteria": "只指出『不能量』，未提出替代方法。"
+        },
+        {
+          "score": 0,
+          "criteria": "認為直尺可讀刻度，或替代方法仍依賴數值量測。"
+        }
+      ],
+      "partialCreditRules": [
+        "理由正確且方法方向正確，但步驟略缺交點或連線。",
+        "只指出『不能量』，未提出替代方法。"
+      ],
+      "followThroughPolicy": "若替代方法僅寫『作垂直平分線』但前段限制解釋完整，最高2分。",
+      "unitAndNotationRules": "應使用『無刻度直尺』；中點可用M表示。",
+      "answerOnlyPolicy": "只回答『不合格』無說明，0分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "把一般文具直尺功能帶入數學尺規。",
+        "以目測一半替代作圖。"
+      ],
+      "independentReview": {
+        "derivedResult": "無刻度直尺不能量半長；須用等弧作垂直平分線找中點。",
+        "ambiguity": "合格方法不限定弧畫在上下或左右，只要構造等距交點。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "8a674df9fed50aa5e9e6f2680c597e1ed65c68dc8fc79f10cf87b460e480d523"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u16-s008-v001",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "09ea2e916a362edbba7a8050df60bf959c26f0058b61c49bafcc01daa04efd1a",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "通過兩點可唯一畫一直線，符合尺規規則。",
+      "derivedAnswer": "通過兩個已知點畫直線或延長線",
+      "storedAnswer": "通過兩個已知點畫直線或延長線",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「通過兩個已知點畫直線或延長線」；另外三個選項逐一排除：「直接量出 5 公分」：無刻度直尺不能量距離。；「直接量出 60°」：量角需量角器，不是直尺功能。；「把圓規開口固定」：這是圓規操作。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "不涉及單位；刻度明確禁止。",
+        "roundingConflict": "依精確資料獨立推導為「通過兩個已知點畫直線或延長線」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "『純尺規』排除量角器與刻度量測。",
+        "alternateReading": "若採常見誤讀「把一般有刻度直尺的量測功能帶入。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，辨認工具規則。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "知道點與直線概念。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「辨認允許操作」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「純尺規作圖中的直尺應如何使用？」獨立重算：通過兩點可唯一畫一直線，符合尺規規則。 正確選項「通過兩個已知點畫直線或延長線」。四選項核對：直接量出 5 公分=假，無刻度直尺不能量距離。；直接量出 60°=假，量角需量角器，不是直尺功能。；把圓規開口固定=假，這是圓規操作。；通過兩個已知點畫直線或延長線=真，無刻度直尺只決定直線，不負責量長或量角。 邊界：『純尺規』排除量角器與刻度量測。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v002",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "7434ad761ae3f819751a8f6cca167a22a9ed3e96e16f74b4051fec882039b3be",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "依圓定義 AP=AB。",
+      "derivedAnswer": "AP=AB",
+      "storedAnswer": "AP=AB",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「AP=AB」；另外三個選項逐一排除：「BP=AB」：B 不是此圓的圓心，未必成立。；「AP⊥AB」：半徑之間不必垂直。；「P 是 AB 中點」：弧上點通常不在線段 AB 上。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "AP、AB 為同類長度，無換算。",
+        "roundingConflict": "依精確資料獨立推導為「AP=AB」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "若只畫部分圓弧，弧上點仍滿足同半徑。",
+        "alternateReading": "若採常見誤讀「把半徑關係錯配到非圓心 B。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，直接使用圓定義。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會讀『以誰為圓心』。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「使用同圓半徑相等」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「以 A 為圓心、AB 為半徑畫弧，若 P 在此弧上，則必有哪個關係？」獨立重算：依圓定義 AP=AB。 正確選項「AP=AB」。四選項核對：BP=AB=假，B 不是此圓的圓心，未必成立。；AP=AB=真，弧上各點到圓心 A 的距離都等於半徑 AB。；AP⊥AB=假，半徑之間不必垂直。；P 是 AB 中點=假，弧上點通常不在線段 AB 上。 邊界：若只畫部分圓弧，弧上點仍滿足同半徑。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v003",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "0913ede42acd387c2b9708eb7a44df0411e9bc2785e9276b02ff0ee265a921b3",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "等距點連線才可保證通過中點並垂直 AB。",
+      "derivedAnswer": "使 P、Q 到 A、B 的距離分別相等",
+      "storedAnswer": "使 P、Q 到 A、B 的距離分別相等",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「使 P、Q 到 A、B 的距離分別相等」；另外三個選項逐一排除：「使 AB 變長」：作圖不改變原線段。；「使 P、Q 都落在 AB 上」：交點通常在 AB 兩側。；「使兩弧一定只有一個交點」：中垂線需兩個交點，通常要求兩個。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "半徑可任取同一長度，無固定單位。",
+        "roundingConflict": "依精確資料獨立推導為「使 P、Q 到 A、B 的距離分別相等」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "半徑還須足夠大以有兩交點；題目只問相同的作用。",
+        "alternateReading": "若採常見誤讀「只把相同半徑視為畫面對稱，不知道等距理由。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，理解作圖理由。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "知道圓上點到圓心等於半徑。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「建立等距條件」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「作線段 AB 的中垂線時，為何以 A、B 為圓心畫弧要使用相同半徑？」獨立重算：等距點連線才可保證通過中點並垂直 AB。 正確選項「使 P、Q 到 A、B 的距離分別相等」。四選項核對：使 AB 變長=假，作圖不改變原線段。；使 P、Q 都落在 AB 上=假，交點通常在 AB 兩側。；使兩弧一定只有一個交點=假，中垂線需兩個交點，通常要求兩個。；使 P、Q 到 A、B 的距離分別相等=真，相同半徑給 PA=PB、QA=QB，兩交點都位於 AB 的中垂線。 邊界：半徑還須足夠大以有兩交點；題目只問相同的作用。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v004",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "349420f9ed1c75fa7782cd9ec2f84766212cb9b0dc0fbcad59d629de2f5d5efa",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "同圓半徑性質直接給 PQ=AB。",
+      "derivedAnswer": "以 P 為圓心、AB 為半徑畫弧，交 PX 於 Q",
+      "storedAnswer": "以 P 為圓心、AB 為半徑畫弧，交 PX 於 Q",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「以 P 為圓心、AB 為半徑畫弧，交 PX 於 Q」；另外三個選項逐一排除：「以 A 為圓心、PX 為半徑畫弧」：圓心與半徑都不對應所求。；「用直尺量 AB 再在 PX 上刻度」：純尺規不使用刻度。；「以 B 為圓心、AP 為半徑畫弧」：不能保證 PQ=AB。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "AB、PQ 同為長度；不需知道數值或單位。",
+        "roundingConflict": "依精確資料獨立推導為「以 P 為圓心、AB 為半徑畫弧，交 PX 於 Q」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "射線與圓弧在指定方向有唯一交點（除 P 外）。",
+        "alternateReading": "若採常見誤讀「圓心沒有設在新線段端點。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，選擇可重現步驟。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會讀射線端點與圓規半徑。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「用圓規搬移線段」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「在射線 PX 上作 PQ=AB，最直接的步驟是哪一項？」獨立重算：同圓半徑性質直接給 PQ=AB。 正確選項「以 P 為圓心、AB 為半徑畫弧，交 PX 於 Q」。四選項核對：以 A 為圓心、PX 為半徑畫弧=假，圓心與半徑都不對應所求。；用直尺量 AB 再在 PX 上刻度=假，純尺規不使用刻度。；以 P 為圓心、AB 為半徑畫弧，交 PX 於 Q=真，Q 在以 P 為圓心、AB 為半徑的弧上，因此 PQ=AB。；以 B 為圓心、AP 為半徑畫弧=假，不能保證 PQ=AB。 邊界：射線與圓弧在指定方向有唯一交點（除 P 外）。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v005",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "a2bb92e1d13f7da2e712f9be20b749fed7e7f18e5e5d2c54031af9c49ae9bab5",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "沒有 P、Q 便無法用兩交點決定中垂線。",
+      "derivedAnswer": "兩弧不相交，無法取得兩個交點",
+      "storedAnswer": "兩弧不相交，無法取得兩個交點",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「兩弧不相交，無法取得兩個交點」；另外三個選項逐一排除：「兩弧有兩個交點」：需半徑大於 AB/2。；「兩弧相切於 AB 中點」：半徑等於 AB/2 才相切。；「仍可直接連接 A、B 作中垂線」：AB 本身不是其垂線。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "所有量同單位；不需近似。",
+        "roundingConflict": "依精確資料獨立推導為「兩弧不相交，無法取得兩個交點」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "題目明確是小於一半，排除相切邊界。",
+        "alternateReading": "若採常見誤讀「忽略半徑大小只記得要相同。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，檢查作圖可行性。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "知道兩圓相交的直觀條件。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「檢查圓弧相交條件」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「作線段 AB 的中垂線時，若所選共同半徑小於 AB 的一半，會發生什麼事？」獨立重算：沒有 P、Q 便無法用兩交點決定中垂線。 正確選項「兩弧不相交，無法取得兩個交點」。四選項核對：兩弧有兩個交點=假，需半徑大於 AB/2。；兩弧相切於 AB 中點=假，半徑等於 AB/2 才相切。；兩弧不相交，無法取得兩個交點=真，兩個相同半徑圓的半徑和小於圓心距離，彼此分離。；仍可直接連接 A、B 作中垂線=假，AB 本身不是其垂線。 邊界：題目明確是小於一半，排除相切邊界。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v006",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "67bb02565068b90b1109ed302af8de551ce1eddbc0a69fe16c1d500aa7d1c90a",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "OC=OD、CP=DP、OP 共用，故兩小三角形全等。",
+      "derivedAnswer": "以 C、D 為圓心、相同半徑畫弧交於 P，再作射線 OP",
+      "storedAnswer": "以 C、D 為圓心、相同半徑畫弧交於 P，再作射線 OP",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「以 C、D 為圓心、相同半徑畫弧交於 P，再作射線 OP」；另外三個選項逐一排除：「直接連接 C、D」：CD 是弦，不是角平分線。；「以 O 為圓心再畫任意弧」：不會產生平分方向的新點。；「以 C 為圓心畫弧後直接連 O、C」：OC 就是原角一邊。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無量值單位。",
+        "roundingConflict": "依精確資料獨立推導為「以 C、D 為圓心、相同半徑畫弧交於 P，再作射線 OP」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "P 可在角內或相對位置選取；作角內平分線時取角內交點。",
+        "alternateReading": "若採常見誤讀「把第一弧的弦 CD 當成答案線。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，從中間狀態完成作圖。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會用圓弧交點與 SSS。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「完成角平分線構造」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「作 ∠AOB 的角平分線，第一道以 O 為圓心的圓弧交 OA、OB 於 C、D。下一步最合理的是什麼？」獨立重算：OC=OD、CP=DP、OP 共用，故兩小三角形全等。 正確選項「以 C、D 為圓心、相同半徑畫弧交於 P，再作射線 OP」。四選項核對：以 C、D 為圓心、相同半徑畫弧交於 P，再作射線 OP=真，以 C、D 同半徑取得到兩點等距的 P，△OCP 與 △ODP 以 SSS 全等，OP 平分角。；直接連接 C、D=假，CD 是弦，不是角平分線。；以 O 為圓心再畫任意弧=假，不會產生平分方向的新點。；以 C 為圓心畫弧後直接連 O、C=假，OC 就是原角一邊。 邊界：P 可在角內或相對位置選取；作角內平分線時取角內交點。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v007",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "38dd27f6219bf4e4dc39f83e4d21968920a462a2d1ce3c681739e1e7dddab109",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "P、Q 落在固定距離差的軌跡，不是 AB 中垂線。",
+      "derivedAnswer": "不能保證 P、Q 到 A、B 等距，因此不能保證是中垂線",
+      "storedAnswer": "不能保證 P、Q 到 A、B 等距，因此不能保證是中垂線",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「不能保證 P、Q 到 A、B 等距，因此不能保證是中垂線」；另外三個選項逐一排除：「仍必為中垂線，只要有兩交點」：交點可同時滿足不同距離，未必等距。；「必與 AB 平行」：沒有平行理由。；「必平分 ∠A」：作圖對象是線段端點，不是角。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "半徑單位相同但數值不同；問題非換算。",
+        "roundingConflict": "依精確資料獨立推導為「不能保證 P、Q 到 A、B 等距，因此不能保證是中垂線」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "即使偶然某特殊位置看似垂直，也無定理保證。",
+        "alternateReading": "若採常見誤讀「認為只要圖形對稱畫法形式相似就成立。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，審核文字規格中的必要條件。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會把半徑寫成距離等式。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「審查作圖缺陷」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某作圖步驟寫『以 A、B 為圓心，分別取任意半徑作弧，交於 P、Q；連 PQ』。若兩次半徑不相同，何者正確？」獨立重算：P、Q 落在固定距離差的軌跡，不是 AB 中垂線。 正確選項「不能保證 P、Q 到 A、B 等距，因此不能保證是中垂線」。四選項核對：不能保證 P、Q 到 A、B 等距，因此不能保證是中垂線=真，不同半徑只能得 PA=r1、PB=r2，若 r1≠r2 就沒有 PA=PB。；仍必為中垂線，只要有兩交點=假，交點可同時滿足不同距離，未必等距。；必與 AB 平行=假，沒有平行理由。；必平分 ∠A=假，作圖對象是線段端點，不是角。 邊界：即使偶然某特殊位置看似垂直，也無定理保證。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v008",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "94141ff050416bc5872ce195baa3f6ef33877bc7500bb831ae92d4140f691e5e",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "鏡射不改變大小與形狀，兩作圖答案都有效，除非題目指定側。",
+      "derivedAnswer": "兩個結果互為 AB 的鏡射，且彼此全等",
+      "storedAnswer": "兩個結果互為 AB 的鏡射，且彼此全等",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「兩個結果互為 AB 的鏡射，且彼此全等」；另外三個選項逐一排除：「只有上方交點有效」：兩側都滿足 AC=BC=AB。；「兩個結果大小不同」：三邊規格完全相同。；「兩圖只相似不全等」：三邊相等可用 SSS。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "AB 為同一長度單位，無近似。",
+        "roundingConflict": "依精確資料獨立推導為「兩個結果互為 AB 的鏡射，且彼此全等」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "題目未指定哪一側，因此兩個交點都合法。",
+        "alternateReading": "若採常見誤讀「把方向不同誤認為不同全等類型。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，處理作圖多解與等價性。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "知道鏡射仍屬全等。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「理解鏡射解的有效性」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「已知線段 AB，要用尺規作等邊 △ABC。兩個以 A、B 為圓心且半徑 AB 的圓通常有兩個交點。選其中任一交點作 C，所得兩圖的關係為何？」獨立重算：鏡射不改變大小與形狀，兩作圖答案都有效，除非題目指定側。 正確選項「兩個結果互為 AB 的鏡射，且彼此全等」。四選項核對：只有上方交點有效=假，兩側都滿足 AC=BC=AB。；兩個結果互為 AB 的鏡射，且彼此全等=真，任一交點都到 A、B 距離 AB，因此兩個三角形皆等邊並以 SSS 全等。；兩個結果大小不同=假，三邊規格完全相同。；兩圖只相似不全等=假，三邊相等可用 SSS。 邊界：題目未指定哪一側，因此兩個交點都合法。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v009",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "a6f08e1acfbdbc4ed651c9584965f820088dc5ed693149a86a37508c6eb50abe",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "因此標準作法要求半徑大於 AB/2，取得上下兩交點。",
+      "derivedAnswer": "只有一個交點 M，無法由兩弧交點決定中垂線方向",
+      "storedAnswer": "只有一個交點 M，無法由兩弧交點決定中垂線方向",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「只有一個交點 M，無法由兩弧交點決定中垂線方向」；另外三個選項逐一排除：「因 M 不在 AB 上」：M 正是 AB 中點。；「因兩弧半徑不相等」：兩半徑其實相等。；「因中垂線不存在」：中垂線存在，只是此步驟資訊不足。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "等號邊界精確，不涉及四捨五入。",
+        "roundingConflict": "依精確資料獨立推導為「只有一個交點 M，無法由兩弧交點決定中垂線方向」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "題目說標準作圖，排除另用其他步驟再建立第二點。",
+        "alternateReading": "若採常見誤讀「把找到中點誤當已找到整條中垂線。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，分析相切邊界。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "知道兩點決定一直線。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「分析邊界情形」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「要作線段 AB 的中垂線，圓弧半徑等於 AB/2 時，兩弧只在中點 M 相切。為何仍不足以完成標準作圖？」獨立重算：因此標準作法要求半徑大於 AB/2，取得上下兩交點。 正確選項「只有一個交點 M，無法由兩弧交點決定中垂線方向」。四選項核對：因 M 不在 AB 上=假，M 正是 AB 中點。；因兩弧半徑不相等=假，兩半徑其實相等。；只有一個交點 M，無法由兩弧交點決定中垂線方向=真，一個點可通過無數直線；需另一個不在 AB 上的等距點確定垂直方向。；因中垂線不存在=假，中垂線存在，只是此步驟資訊不足。 邊界：題目說標準作圖，排除另用其他步驟再建立第二點。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v010",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "b7dda55c47217ab0eac27d4771e77d59a4a08ffdb62fda1b8d2c9e2c5608dc11",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "PQ=AB，因此即使不知道數值也能精確搬移。",
+      "derivedAnswer": "保持圓規開口為 AB，以 P 為圓心畫弧截射線",
+      "storedAnswer": "保持圓規開口為 AB，以 P 為圓心畫弧截射線",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「保持圓規開口為 AB，以 P 為圓心畫弧截射線」；另外三個選項逐一排除：「用直尺讀 1.8 再畫刻度」：違反不使用刻度。；「目測相同長度」：無法驗證精確。；「把射線延長到看起來一樣」：延長不會自動取得等距點。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "1.8 公尺只是說明實際尺度；作圖中不需轉成公分或取整。",
+        "roundingConflict": "依精確資料獨立推導為「保持圓規開口為 AB，以 P 為圓心畫弧截射線」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "圓規開口在理想模型中不變，施工誤差不在題目範圍。",
+        "alternateReading": "若採常見誤讀「把尺規作圖誤解成先量數值再重畫。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，規範『不使用刻度』使圓規搬移成必要方法。",
+      "literacyContextNecessity": "情境規範直接決定工具選擇。",
+      "prerequisiteCheck": "會把樣板距離視為圓規半徑。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「將實務量距轉成尺規操作」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「施工圖要求『不使用刻度』把一段 1.8 公尺長的樣板距離搬到另一條射線上。最合規的方法是哪一項？」獨立重算：PQ=AB，因此即使不知道數值也能精確搬移。 正確選項「保持圓規開口為 AB，以 P 為圓心畫弧截射線」。四選項核對：保持圓規開口為 AB，以 P 為圓心畫弧截射線=真，圓規可直接保存 AB 的幾何距離，不必讀出數值。；用直尺讀 1.8 再畫刻度=假，違反不使用刻度。；目測相同長度=假，無法驗證精確。；把射線延長到看起來一樣=假，延長不會自動取得等距點。 邊界：圓規開口在理想模型中不變，施工誤差不在題目範圍。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v011",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "ead90b81ebb6e31ad8891273208c7f53642b8b92ca1dfac4a8ada18555dbd117",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "連 AB 只重畫原線，與其自身不垂直。",
+      "derivedAnswer": "最後應連接 P、Q，而不是再次連接 A、B",
+      "storedAnswer": "最後應連接 P、Q，而不是再次連接 A、B",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「最後應連接 P、Q，而不是再次連接 A、B」；另外三個選項逐一排除：「圓心應改成 P、Q」：第一步以端點為圓心正確。；「兩次半徑應不同」：必須相同。；「不需要任何交點」：兩交點用來決定中垂線。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無量值單位。",
+        "roundingConflict": "依精確資料獨立推導為「最後應連接 P、Q，而不是再次連接 A、B」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "P、Q 為不同交點已明示，直線 PQ 唯一。",
+        "alternateReading": "若採常見誤讀「只檢查圓弧步驟，忽略最後輸出線。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，錯誤診斷需定位到最後操作。",
+      "literacyContextNecessity": "教學情境需要辨認可執行步驟中的單一錯誤。",
+      "prerequisiteCheck": "會追蹤作圖目標與端點。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「辨認最後連線錯誤」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一名學生依文字說明作 AB 的中垂線：以 A、B 為圓心，用相同半徑作弧；兩弧交於 P、Q；最後卻連接 A、B。錯誤在哪一步？」獨立重算：連 AB 只重畫原線，與其自身不垂直。 正確選項「最後應連接 P、Q，而不是再次連接 A、B」。四選項核對：圓心應改成 P、Q=假，第一步以端點為圓心正確。；最後應連接 P、Q，而不是再次連接 A、B=真，AB 是原線段本身；中垂線由兩個到 A、B 等距的點 P、Q 決定。；兩次半徑應不同=假，必須相同。；不需要任何交點=假，兩交點用來決定中垂線。 邊界：P、Q 為不同交點已明示，直線 PQ 唯一。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s008-v012",
+      "unitId": "u16",
+      "skillId": "compass-construction",
+      "contentSha256": "28d9c1e727ca3742c06b03590e4a32bb443e9c8d0ec838de9676f27e68a20165",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "用 A、B 同半徑交弧取得兩點後連線，即得到所需路徑。",
+      "derivedAnswer": "線段 AB 的中垂線",
+      "storedAnswer": "線段 AB 的中垂線",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「線段 AB 的中垂線」；另外三個選項逐一排除：「直線 AB」：直線上除中點外，到兩端距離不同。；「以 A 為圓心的任意圓」：只能固定到 A 的距離。；「通過 A 的垂線」：不保證到 B 等距。",
+        "undefinedSymbol": "題幹符號與詞語已在「尺規作圖步驟」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "基地距離使用同一地圖尺度；本題不需數值。",
+        "roundingConflict": "依精確資料獨立推導為「線段 AB 的中垂線」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "A、B 不同，故中垂線唯一；地球曲率等現實因素不在平面模型。",
+        "alternateReading": "若採常見誤讀「把兩基地連線本身當等距軌跡。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，等距路徑的功能需求直接決定作圖。",
+      "literacyContextNecessity": "導航需求是中垂線的實際意義，不能刪除。",
+      "prerequisiteCheck": "會把文字條件轉成中垂線。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「把等距需求對應到軌跡」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某導航程式要用幾何方式找出到 A、B 兩個基地等距的路徑。尺規作圖應優先建構哪一條線？」獨立重算：用 A、B 同半徑交弧取得兩點後連線，即得到所需路徑。 正確選項「線段 AB 的中垂線」。四選項核對：直線 AB=假，直線上除中點外，到兩端距離不同。；以 A 為圓心的任意圓=假，只能固定到 A 的距離。；通過 A 的垂線=假，不保證到 B 等距。；線段 AB 的中垂線=真，所有到 A、B 等距的點構成 AB 的中垂線。 邊界：A、B 不同，故中垂線唯一；地球曲率等現實因素不在平面模型。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u16-fig-008-construction-tools",
+      "unitId": "u16",
+      "slot": "s008",
+      "title": "無刻度直尺與圓規的允許操作",
+      "altText": "左側畫無刻度直尺只能連兩點，右側畫圓規跨距搬運，中央列出不可直接量長度的警示。",
+      "svgPath": "figures/u16/u16-fig-008-construction-tools.svg",
+      "drawingSpec": {
+        "canvas": {
+          "width": 360,
+          "height": 240,
+          "viewBox": "0 0 360 240"
+        },
+        "coordinateSystem": "左上角為(0,0)，x向右、y向下。",
+        "geometry": "無刻度直尺矩形(25,65,135,24)；兩點(45,150)、(140,150)及連線；圓規腳(235,55)、(205,175)、(270,175)與半徑95示意弧。",
+        "visibleLineRules": "主要邊線使用2.5px黑色實線；輔助線使用1.5px虛線；弧線不得遮住頂點標籤。",
+        "hiddenLineRules": "平面圖無隱藏邊；未畫出的延長線不得由視覺自行推定。",
+        "labels": "左右工具名稱在圖上方；禁止事項置底部中央。",
+        "tickMarksAndSymbols": "相等邊以同數量短刻痕表示；直角以小正方形；相等角以同型圓弧。",
+        "units": "示意圖無長度單位，題目另有數值時以題幹為準。",
+        "arrows": "只在延長線或行進方向使用箭頭。",
+        "toScale": false,
+        "notToScaleWarning": "圖形不按比例，請依標記與題目條件判斷。",
+        "mobileLayout": "360×240畫布；最小文字14px；標籤與線段保持至少6px間距。",
+        "answerLeakageControl": "圖中只呈現已知結構與定義標記，不標示題目所求數值或正確選項。"
+      },
+      "svgAssertions": [
+        "禁止以刻度量半長或角度",
+        "rect x=\"25\"",
+        "A95 95",
+        "圓規：搬運距離"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "mobileReadability": "360px寬預覽下，頂點、刻痕、直角符號與延長線箭頭仍可辨識。",
+        "answerLeakage": "未顯示任何題目答案；只保留概念所需結構。",
+        "geometryCheck": "已依列出的座標逐項核對端點、交點、刻痕與文字位置。",
+        "reviewNote": "無刻度直尺與圓規的允許操作已逐線檢查：無刻度直尺矩形(25,65,135,24)；兩點(45,150)、(140,150)及連線；圓規腳(235,55)、(205,175)、(270,175)與半徑95示意弧。；標籤配置為左右工具名稱在圖上方；禁止事項置底部中央。，未依視覺比例暗示未給定量。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "4f599336adef30d8fbdde7aaddc2582740b6c99695da350c26d11551e29c3366"
+    }
+  ]
+};
+export default skillData;

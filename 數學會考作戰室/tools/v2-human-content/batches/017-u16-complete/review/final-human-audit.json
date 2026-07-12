@@ -1,0 +1,97 @@
+{
+  "auditId": "u16-final-human-audit-r1.0",
+  "unitId": "u16",
+  "auditedAt": "2026-07-12",
+  "auditor": "ChatGPT human-authoring lead for batch 017",
+  "scope": {
+    "lectures": 18,
+    "mcQuestions": 216,
+    "constructedResponses": 36,
+    "semanticReviews": 216,
+    "figures": 18
+  },
+  "checks": {
+    "allLockedSkillsPresent": "pass",
+    "allAnswersIndependentlyResolved": "pass",
+    "allFourChoicesAnalyzed": "pass",
+    "rubricsQuestionSpecific": "pass",
+    "strictInequalityBoundaries": "pass",
+    "correspondenceOrder": "pass",
+    "unitsAndDegreeSymbols": "pass",
+    "advancedItemsGenuinelyMultistep": "pass",
+    "literacyContextsMathematicallyNecessary": "pass",
+    "futureUnitKnowledgeAvoided": "pass",
+    "legacyContentUsed": false
+  },
+  "actualIssuesFoundAndRepaired": [
+    {
+      "issueId": "U16-AUD-001",
+      "location": "s012 triangle-inequality advanced algebra item",
+      "found": "Initial mental simplification of (x+1)+(2x+2)>x+4 was recorded as x>1.",
+      "repair": "Recomputed 3x+3>x+4 to 2x>1 and corrected the condition to x>1/2.",
+      "verification": "Substitution x=0.6 satisfies all three triangle inequalities; x=0.5 gives equality and is excluded."
+    },
+    {
+      "issueId": "U16-AUD-002",
+      "location": "s003 isosceles-equilateral integer boundary items",
+      "found": "The inclusive definition of isosceles allowed x=1 for sides x,x,2x−1, while an intended 'exactly two equal sides' item would require x=2.",
+      "repair": "Kept one item explicitly teaching the inclusive x=1 case and rewrote the second to say 恰有兩邊相等, making x=2 the correct minimum.",
+      "verification": "x=1 gives 1,1,1; x=2 gives 2,2,3."
+    },
+    {
+      "issueId": "U16-AUD-003",
+      "location": "s013 exterior-angle literacy consistency audit",
+      "found": "A draft treated the top angle 65° as an answer even though the additional 'external angle is 35° larger' label contradicted the other data.",
+      "repair": "Changed the target to a consistency judgment and made 'no triangle satisfies all exact labels' the unique answer.",
+      "verification": "Right exterior angle=116° and top angle=65°; difference=51°, not35°."
+    },
+    {
+      "issueId": "U16-AUD-004",
+      "location": "s014 side-angle relation items 4, 7 and 9",
+      "found": "Draft review exposed an equality missed after substitution, a fixed-edge angle-order contradiction, and an ambiguous use of 'smallest' that could allow a tie.",
+      "repair": "Changed item4 to ∠A=∠C<∠B; item7 to 0 possible lengths; item9 now states 唯一最小角 and counts x=4 to8.",
+      "verification": "Substitution and opposite-side mapping were recomputed independently for each item."
+    },
+    {
+      "issueId": "U16-AUD-005",
+      "location": "s016 median advanced data-sufficiency item",
+      "found": "A draft explanation warned that AG and GE cannot be directly added, but then incorrectly concluded BE could not be determined.",
+      "repair": "Used GE alone on median BE: BG:GE=2:1, so BE=6+3=9; AG is explicitly identified as irrelevant data.",
+      "verification": "All used segments lie on BE; no cross-line addition remains."
+    },
+    {
+      "issueId": "U16-AUD-006",
+      "location": "s018 literacy question list",
+      "found": "A corrected bridge-safety item temporarily coexisted with its unrepaired predecessor, producing 13 questions and duplicate wording.",
+      "repair": "Removed the predecessor and retained the corrected noncompliance version, restoring exactly12 questions.",
+      "verification": "s018 count=12; normalized prompt scan has no duplicates."
+    },
+    {
+      "issueId": "U16-AUD-007",
+      "location": "u16-fig-017-altitude",
+      "found": "The first right-side coordinate draft described an external altitude but placed the perpendicular foot inside the base segment.",
+      "repair": "Moved the obtuse triangle base start to x=230 and the apex projection to x=205, with the segment x=180–230 explicitly drawn as an extension.",
+      "verification": "The foot (205,185) is left of the actual base segment [230,340]."
+    },
+    {
+      "issueId": "U16-AUD-008",
+      "location": "lecture display titles",
+      "found": "Two expanded lecture titles used the punctuation 、.",
+      "repair": "Replaced the internal list punctuation with conjunctions 和 and 與 without changing locked skill titles.",
+      "verification": "Title punctuation scan returns zero occurrences."
+    },
+    {
+      "issueId": "U16-AUD-009",
+      "location": "u16-fig-002 and u16-fig-004 rendered previews",
+      "found": "The first rendered contact sheet showed the '共同邊 AC' label sitting directly on the diagonal and the '夾角' label touching the SAS angle arc.",
+      "repair": "Moved the common-edge label below the diagonal and the included-angle label above the apex.",
+      "verification": "Re-rendered at 360×240; both labels are readable without covering the marked segment or angle."
+    }
+  ],
+  "remainingKnownLimitations": [
+    "Cross-unit near-duplicate reconciliation cannot be completed while 19 other unit packages are authored in parallel.",
+    "The central coordinator must run the global fingerprint scan and shared-schema reconciliation before integration.",
+    "No production activation or legacy retirement was attempted."
+  ],
+  "decision": "PASS_FOR_CENTRAL_COORDINATOR_ACCEPTANCE"
+}

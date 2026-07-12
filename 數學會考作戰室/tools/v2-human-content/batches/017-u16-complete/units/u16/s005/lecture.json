@@ -1,0 +1,267 @@
+{
+  "lectureId": "u16-s005-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-congruence",
+  "skillId": "triangle-asa-aas",
+  "skillOrder": 5,
+  "originalLockedTitle": "ASA 與 AAS",
+  "title": "ASA 與 AAS：兩角確定形狀再用一邊固定大小",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認兩角及夾邊相等的 ASA 判定。",
+    "能辨認兩角及非夾邊相等的 AAS 判定。",
+    "能利用三角形內角和補出第三角後完成判定。",
+    "能正確判斷一組邊資料如何固定原本僅由角決定的大小。"
+  ],
+  "prerequisiteBridge": "SSS 與 SAS 以邊資料鎖定三角形。本技能改從角出發：兩角決定第三角與形狀，但還需一組邊長固定尺度。",
+  "prerequisites": [
+    {
+      "skillId": "triangle-sss-sas",
+      "requiredLevel": "能使用先備技能「SSS 與 SAS」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "ASA",
+      "definition": "Angle-Side-Angle，兩組對應角及其夾邊分別相等。"
+    },
+    {
+      "term": "AAS",
+      "definition": "Angle-Angle-Side，兩組對應角及一組非夾邊分別相等。"
+    },
+    {
+      "term": "夾邊",
+      "definition": "連接兩個指定角頂點的邊。"
+    },
+    {
+      "term": "非夾邊",
+      "definition": "不是兩個指定角之間的那條邊。"
+    },
+    {
+      "term": "尺度",
+      "definition": "圖形的實際大小；同角度三角形仍可有不同尺度。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∠A=∠D、AB=DE、∠B=∠E",
+      "meaning": "邊 AB、DE 夾在兩已知角之間，為 ASA。"
+    },
+    {
+      "symbol": "∠A=∠D、∠B=∠E、AC=DF",
+      "meaning": "AC、DF 不是兩已知角的夾邊，為 AAS。"
+    },
+    {
+      "symbol": "∠C=180°−∠A−∠B",
+      "meaning": "利用三角形內角和求第三角。"
+    }
+  ],
+  "conceptNarrative": [
+    "兩個角一旦固定，第三角也由內角和 180° 決定，因此三角形的形狀已固定。",
+    "若沒有任何邊長，三角形仍可等比例放大或縮小，所以 AAA 不能判定全等。",
+    "加入一組對應邊相等便固定尺度。若該邊夾在兩已知角之間，是 ASA；若不是，是 AAS。",
+    "某些題目只直接給一對角，但可由直角、對頂角、平行線或內角和得到另一對角。",
+    "ASA 與 AAS 都是有效判定，不必強行把 AAS 改名為 ASA；但可先求第三角再選最清楚的理由。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "ASA 全等判定",
+      "statement": "兩組對應角及其夾邊分別相等，則兩三角形全等。"
+    },
+    {
+      "name": "AAS 全等判定",
+      "statement": "兩組對應角及一組對應非夾邊分別相等，則兩三角形全等。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "∠A=∠D、AB=DE、∠B=∠E ⇒ △ABC≅△DEF",
+      "conditions": [
+        "AB、DE 為兩已知角的夾邊"
+      ],
+      "meaning": "ASA。"
+    },
+    {
+      "formula": "∠A=∠D、∠B=∠E、BC=EF ⇒ △ABC≅△DEF",
+      "conditions": [
+        "BC、EF 為非夾邊"
+      ],
+      "meaning": "AAS。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只有兩角或三角相等但沒有邊長時，只能確定相似。",
+    "角的對應若配錯，即使數值相同也會寫錯全等式。",
+    "把已知邊誤認為夾邊會混淆 ASA 與 AAS，但不影響其有效性時仍應正確命名。",
+    "若三個角資料和不等於 180°，題目條件無法形成三角形。",
+    "不可由圖形外觀推測未標示角相等。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出兩組已知或可推得的相等角。",
+      "check": "理由是已知、直角、對頂角、平行線或內角和？"
+    },
+    {
+      "step": 2,
+      "instruction": "找出兩角頂點之間的邊。",
+      "check": "該邊就是夾邊。"
+    },
+    {
+      "step": 3,
+      "instruction": "比較題目給的相等邊位置。",
+      "check": "是夾邊則 ASA，否則 AAS。"
+    },
+    {
+      "step": 4,
+      "instruction": "必要時用內角和補第三角。",
+      "check": "180° 減去兩角是否計算正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "按角與邊對應寫全等式。",
+      "check": "每個頂點位置是否一致？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "∠A=∠D、AB=DE、∠B=∠E，判定 △ABC 與 △DEF。",
+      "solutionSteps": [
+        "AB 與 DE 分別連接兩個已知角的頂點。",
+        "兩角及夾邊相等。"
+      ],
+      "answer": "△ABC≅△DEF（ASA）。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "∠A=∠D、∠B=∠E、AC=DF，判定。",
+      "solutionSteps": [
+        "兩角已相等。",
+        "AC、DF 不是 A-B 與 D-E 之間的夾邊。"
+      ],
+      "answer": "可用 AAS。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "△ABC 與 △DEF 中，∠A=50°、∠B=70°、∠D=50°、∠E=70°，且 BC=EF。",
+      "solutionSteps": [
+        "兩組角分別相等。",
+        "BC、EF 為非夾邊。"
+      ],
+      "answer": "兩三角形全等（AAS）。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩直角三角形另有一銳角相等，且兩直角頂點間對應股相等，如何判定？",
+      "solutionSteps": [
+        "兩直角相等，另一組銳角相等。",
+        "給定股連接兩已知角的頂點。"
+      ],
+      "answer": "可用 ASA。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "已知 ∠A=∠D、∠B=∠E，但沒有邊長，能否判定全等？",
+      "solutionSteps": [
+        "可由內角和得第三角相等。",
+        "仍只有 AAA，大小未固定。"
+      ],
+      "answer": "不能判定全等。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "兩角相等就判全等。",
+      "why": "忘了相似三角形可不同大小。",
+      "correction": "ASA 或 AAS 都還需要一組對應邊。"
+    },
+    {
+      "mistake": "把所有兩角一邊題都寫 ASA。",
+      "why": "未辨認夾邊。",
+      "correction": "先連接兩已知角頂點，再看已知邊是否就是那一邊。"
+    },
+    {
+      "mistake": "內角和補角時計算成 360°。",
+      "why": "混用多邊形或周角。",
+      "correction": "單一三角形內角和固定為 180°。"
+    },
+    {
+      "mistake": "角相同但頂點配對錯誤。",
+      "why": "只看數值。",
+      "correction": "同時利用已知邊端點確認對應。"
+    },
+    {
+      "mistake": "把 AAS 認為無效。",
+      "why": "誤以為只有課本列出的 SSS、SAS、ASA。",
+      "correction": "兩角已決定第三角，所以任一對應邊都能固定大小。"
+    },
+    {
+      "mistake": "由圖猜某兩角相等。",
+      "why": "忽略圖不按比例。",
+      "correction": "每組角相等必須有文字、符號或定理理由。"
+    }
+  ],
+  "selfCheck": [
+    "我能指出兩已知角的夾邊嗎？",
+    "是否至少有一組對應邊相等？",
+    "我能用 180° 補出第三角嗎？",
+    "我是否正確區分 ASA 與 AAS？",
+    "全等式的角與邊對應一致嗎？"
+  ],
+  "summary": [
+    "兩角決定三角形形狀，一邊固定大小。",
+    "兩角加夾邊是 ASA；兩角加非夾邊是 AAS。",
+    "AAA 仍不足以判定全等。",
+    "角的來源與頂點對應都要寫清楚。"
+  ],
+  "connections": {
+    "previous": "承接 SSS、SAS 的判定與對應方法。",
+    "next": [
+      "等腰三角形底角相等可用 ASA 或 SAS 證明。",
+      "後續幾何證明常由角度關係補足 AAS。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-005-asa-aas"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-005-asa-aas 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s005-v001",
+      "u16-s005-v002",
+      "u16-s005-v003",
+      "u16-s005-v004",
+      "u16-s005-v005",
+      "u16-s005-v006",
+      "u16-s005-v007",
+      "u16-s005-v008",
+      "u16-s005-v009",
+      "u16-s005-v010",
+      "u16-s005-v011",
+      "u16-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s005-cr001",
+      "u16-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「ASA 與 AAS」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "eead0ff25a020636e02e8f4240f553762729d99c00fdd9ab6f29a1c318ec6519"
+}
