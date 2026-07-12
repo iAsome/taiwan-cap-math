@@ -1,0 +1,236 @@
+{
+  "lectureId": "u22-s018-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-literacy",
+  "skillId": "statistics-probability-literacy",
+  "lockedSkillOrder": 18,
+  "title": "統計機率素養：整合統計圖表與隨機抽取，辨識推論限制。",
+  "originalLockedTitle": "統計機率素養",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把累積次數或比例轉成經驗機率。",
+    "能說明盒狀圖不足以精算某些事件。",
+    "能辨識抽樣偏差與母體限制。",
+    "能透明處理離群值與資料清理。"
+  ],
+  "prerequisiteSkillIds": [
+    "probability-literacy"
+  ],
+  "prerequisiteBridge": "整合U22全部統計與機率技能。",
+  "glossary": [
+    {
+      "term": "經驗機率",
+      "definition": "由觀察次數除以總次數所得的比例。"
+    },
+    {
+      "term": "代表性",
+      "definition": "樣本能否合理反映欲推論母體。"
+    },
+    {
+      "term": "抽樣框",
+      "definition": "實際有機會被選入樣本的對象集合。"
+    },
+    {
+      "term": "資料治理",
+      "definition": "記錄資料來源、清理規則與修改理由。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "經驗機率=符合筆數/總筆數",
+      "meaning": "從資料中等機會抽一筆。"
+    },
+    {
+      "symbol": "箱體位置比例≈1/2",
+      "meaning": "一般無大量端點重複時。"
+    }
+  ],
+  "conceptNarrative": [
+    "統計圖提供分布摘要，機率問題則需要分子、分母與抽取機制。",
+    "盒狀圖只給最大值100，不能知道100出現幾次，也不知道總筆數，因此不能算抽到100的精確機率。",
+    "累積次數若總數已知，可以直接除以總數得到不超過某值的經驗機率。",
+    "隨機只在自行車社抽樣，即使社內程序公平，對全校通學方式仍有抽樣框偏差。",
+    "先刪離群值再宣稱沒有離群是循環式報告，必須揭露原始標記、刪除理由與分析影響。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "樣本推論界線",
+      "statement": "結論不得超過實際抽樣框。"
+    },
+    {
+      "name": "群體摘要限制",
+      "statement": "中位數或Q3不能直接轉成跨組個體勝率。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P(抽到事件)=事件筆數/N",
+      "conditions": [
+        "原資料各筆等機會。"
+      ],
+      "meaning": "原資料各筆等機會。"
+    },
+    {
+      "formula": "累積比例=C/N",
+      "conditions": [
+        "累積次數C、總數N。"
+      ],
+      "meaning": "累積次數C、總數N。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把五數摘要當五筆原始資料。",
+    "不能由Q3高低算兩個隨機個體誰較高的精確機率。",
+    "大樣本不能自動修正系統性抽樣偏差。",
+    "離群值不可為了得到漂亮結論而無紀錄刪除。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認資料來源",
+      "check": "原始資料、盒狀圖、累積圖或抽樣。"
+    },
+    {
+      "step": 2,
+      "instruction": "找可用分子分母",
+      "check": "若缺少就明說不可算。"
+    },
+    {
+      "step": 3,
+      "instruction": "檢查抽取機制",
+      "check": "每筆是否等機會。"
+    },
+    {
+      "step": 4,
+      "instruction": "限制推論母體",
+      "check": "時間、地點與人群。"
+    },
+    {
+      "step": 5,
+      "instruction": "揭露資料處理",
+      "check": "離群與缺值規則。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "40筆中累積30",
+      "solutionSteps": [
+        "經驗機率3/4。"
+      ],
+      "answer": "經驗機率3/4。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "五數10、20、25、30、100",
+      "solutionSteps": [
+        "不能由五數算抽到100機率。"
+      ],
+      "answer": "不能由五數算抽到100機率。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "只在自行車社抽通學方式",
+      "solutionSteps": [
+        "抽樣框偏差。"
+      ],
+      "answer": "抽樣框偏差。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "先刪離群再稱無離群",
+      "solutionSteps": [
+        "需揭露原始結果與刪除理由。"
+      ],
+      "answer": "需揭露原始結果與刪除理由。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "Q3較高就說隨機個體75%會贏",
+      "why": "百分位不是跨組勝率。",
+      "correction": "百分位不是跨組勝率。"
+    },
+    {
+      "mistake": "樣本大就忽略取樣時段",
+      "why": "代表性不由數量單獨保證。",
+      "correction": "代表性不由數量單獨保證。"
+    },
+    {
+      "mistake": "離群候選直接判造假",
+      "why": "統計標記不能證明原因。",
+      "correction": "統計標記不能證明原因。"
+    },
+    {
+      "mistake": "把箱體50%說成嚴格一半",
+      "why": "重複值時需用約。",
+      "correction": "重複值時需用約。"
+    }
+  ],
+  "selfCheck": [
+    "資料是否提供精確頻數？",
+    "抽取單位是否等機會？",
+    "樣本代表哪個母體？",
+    "結論是否超過摘要資訊？",
+    "資料清理是否可追溯？"
+  ],
+  "summary": [
+    "統計摘要與機率計算需要不同資訊。",
+    "經驗機率要有符合筆數與總數。",
+    "代表性取決於抽樣框與程序。",
+    "透明處理離群值是分析品質的一部分。"
+  ],
+  "connections": {
+    "previous": "整合U22全部統計與機率技能。",
+    "next": [
+      "本單元完成後，後續可在立體幾何與跨科資料題中持續運用有限推論。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u22-stat-prob-combined"
+  ],
+  "figureAccessibility": [
+    {
+      "figureId": "fig-u22-stat-prob-combined",
+      "altText": "上方為甲乙兩校同尺度盒狀圖，下方為甲校80人與乙校120人的抽樣比例條。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s018-v001",
+      "u22-s018-v002",
+      "u22-s018-v003",
+      "u22-s018-v004",
+      "u22-s018-v005",
+      "u22-s018-v006",
+      "u22-s018-v007",
+      "u22-s018-v008",
+      "u22-s018-v009",
+      "u22-s018-v010",
+      "u22-s018-v011",
+      "u22-s018-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s018-cr001",
+      "u22-s018-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "逐題檢查盒狀圖能否提供分子分母、抽樣框是否涵蓋母體，以及離群處理是否形成循環論證；所有不可算題均明確指出缺少資訊。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "整合統計圖表與隨機抽取，辨識推論限制。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "29a394eeb96b712911324795b06647a5f9eb5fc79bc0d2e01487b90cd0301c42"
+}

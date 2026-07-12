@@ -1,0 +1,223 @@
+{
+  "unitId": "u22",
+  "lockedUnitTitle": "統計與機率",
+  "lockedTopics": [
+    {
+      "topicId": "u22-quartiles",
+      "title": "四分位數與分布",
+      "order": 1
+    },
+    {
+      "topicId": "u22-probability",
+      "title": "機率",
+      "order": 2
+    },
+    {
+      "topicId": "u22-literacy",
+      "title": "素養應用",
+      "order": 3
+    }
+  ],
+  "skillDecisions": [
+    {
+      "skillId": "quartile-calculation",
+      "order": 1,
+      "originalTitle": "四分位數",
+      "finalTitle": "四分位數",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": []
+    },
+    {
+      "skillId": "box-plot",
+      "order": 2,
+      "originalTitle": "盒狀圖",
+      "finalTitle": "盒狀圖",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "quartile-calculation"
+      ]
+    },
+    {
+      "skillId": "box-plot-interpret",
+      "order": 3,
+      "originalTitle": "盒狀圖判讀",
+      "finalTitle": "盒狀圖判讀",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "box-plot"
+      ]
+    },
+    {
+      "skillId": "quartile-position",
+      "order": 4,
+      "originalTitle": "四分位數位置",
+      "finalTitle": "四分位數位置",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "box-plot-interpret"
+      ]
+    },
+    {
+      "skillId": "box-plot-components",
+      "order": 5,
+      "originalTitle": "盒狀圖五數",
+      "finalTitle": "盒狀圖五數",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "quartile-position"
+      ]
+    },
+    {
+      "skillId": "iqr-outlier-basic",
+      "order": 6,
+      "originalTitle": "IQR 與離群值",
+      "finalTitle": "IQR 與離群值",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "box-plot-components"
+      ]
+    },
+    {
+      "skillId": "ogive-read",
+      "order": 7,
+      "originalTitle": "累積次數折線圖",
+      "finalTitle": "累積次數折線圖",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "iqr-outlier-basic"
+      ]
+    },
+    {
+      "skillId": "range-iqr-compare",
+      "order": 8,
+      "originalTitle": "全距與 IQR 比較",
+      "finalTitle": "全距與 IQR 比較",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "ogive-read"
+      ]
+    },
+    {
+      "skillId": "box-plot-compare",
+      "order": 9,
+      "originalTitle": "兩盒狀圖比較",
+      "finalTitle": "兩盒狀圖比較",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "range-iqr-compare"
+      ]
+    },
+    {
+      "skillId": "probability-basic",
+      "order": 10,
+      "originalTitle": "古典機率",
+      "finalTitle": "古典機率",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "box-plot-compare"
+      ]
+    },
+    {
+      "skillId": "probability-complement",
+      "order": 11,
+      "originalTitle": "餘事機率",
+      "finalTitle": "餘事機率",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "probability-basic"
+      ]
+    },
+    {
+      "skillId": "probability-tree-basic",
+      "order": 12,
+      "originalTitle": "樹狀圖基本",
+      "finalTitle": "樹狀圖基本",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "probability-complement"
+      ]
+    },
+    {
+      "skillId": "probability-sample-space",
+      "order": 13,
+      "originalTitle": "樣本空間",
+      "finalTitle": "樣本空間",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "probability-tree-basic"
+      ]
+    },
+    {
+      "skillId": "probability-equally-likely",
+      "order": 14,
+      "originalTitle": "等可能機率",
+      "finalTitle": "等可能機率",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "probability-sample-space"
+      ]
+    },
+    {
+      "skillId": "probability-two-stage",
+      "order": 15,
+      "originalTitle": "兩階段機率",
+      "finalTitle": "兩階段機率",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "probability-equally-likely"
+      ]
+    },
+    {
+      "skillId": "probability-word",
+      "order": 16,
+      "originalTitle": "機率應用題",
+      "finalTitle": "機率應用題",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "probability-two-stage"
+      ]
+    },
+    {
+      "skillId": "probability-literacy",
+      "order": 17,
+      "originalTitle": "機率素養題",
+      "finalTitle": "機率素養題",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "probability-word"
+      ]
+    },
+    {
+      "skillId": "statistics-probability-literacy",
+      "order": 18,
+      "originalTitle": "統計機率素養",
+      "finalTitle": "統計機率素養",
+      "titleChanged": false,
+      "reason": "鎖定標題清楚且不含會與外層分隔混淆的頓號，因此保留。",
+      "prerequisiteSkillIds": [
+        "probability-literacy"
+      ]
+    }
+  ],
+  "skillAdded": false,
+  "skillRemoved": false,
+  "skillMoved": false,
+  "boundaryDecision": "遵守國中會考範圍；不使用nPr/nCr深公式，不以分組插值作高中延伸。"
+}

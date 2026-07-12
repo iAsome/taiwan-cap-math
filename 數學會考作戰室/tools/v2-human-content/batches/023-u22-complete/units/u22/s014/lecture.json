@@ -1,0 +1,232 @@
+{
+  "lectureId": "u22-s014-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-probability",
+  "skillId": "probability-equally-likely",
+  "lockedSkillOrder": 14,
+  "title": "等可能機率：先判斷基本結果是否等可能，再決定能否直接計數。",
+  "originalLockedTitle": "等可能機率",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能判斷公平骰、卡片與轉盤的基本結果是否等可能。",
+    "能區分事件類別與基本結果。",
+    "能找出不公平映射。",
+    "能設計指定標籤等可能的機制。"
+  ],
+  "prerequisiteSkillIds": [
+    "probability-sample-space"
+  ],
+  "prerequisiteBridge": "承接樣本空間的完整列舉。",
+  "glossary": [
+    {
+      "term": "公平機制",
+      "definition": "對指定基本結果給予相同機會的隨機機制。"
+    },
+    {
+      "term": "權重",
+      "definition": "某事件包含的等可能基本結果數或面積比例。"
+    },
+    {
+      "term": "映射",
+      "definition": "把底層亂數結果分配到標籤事件。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "等可能事件機率=各自對應基本結果數/全部基本結果數",
+      "meaning": "底層基本結果等可能。"
+    },
+    {
+      "symbol": "轉盤機率=扇形角度/360°",
+      "meaning": "均勻轉盤。"
+    }
+  ],
+  "conceptNarrative": [
+    "公平六面骰的面等可能，但「成功=1至4」「失敗=5至6」兩事件不等可能。",
+    "同樣卡片每張等可能，重複標籤會讓標籤事件機率不同。",
+    "轉盤區域數相同不表示等可能；要比較面積或中心角。",
+    "兩骰點數和2到12雖有11種，對應配對數不同。",
+    "數位亂數映射若區間長度不同，輸出標籤就不等可能。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "基本結果等可能",
+      "statement": "可直接計數的前提。"
+    },
+    {
+      "name": "事件等可能",
+      "statement": "不同事件所含總權重相同。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P(標籤)=對應底層結果數/底層結果總數",
+      "conditions": [
+        "底層等可能。"
+      ],
+      "meaning": "底層等可能。"
+    },
+    {
+      "formula": "P(扇形)=θ/360°",
+      "conditions": [
+        "指針均勻。"
+      ],
+      "meaning": "指針均勻。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能因只有兩類就各1/2。",
+    "不能因有三個標籤就各1/3。",
+    "物理機制是否公平需題目明定或實驗支持。",
+    "抽樣每班同額不一定使每位學生等機會。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找底層單位",
+      "check": "面、卡片、整數或角度。"
+    },
+    {
+      "step": 2,
+      "instruction": "確認底層公平",
+      "check": "題目條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "數每事件權重",
+      "check": "重複標籤要累加。"
+    },
+    {
+      "step": 4,
+      "instruction": "比較權重",
+      "check": "相同才等可能。"
+    },
+    {
+      "step": 5,
+      "instruction": "審核宣稱",
+      "check": "揭露映射與假設。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "1紅4藍同樣球",
+      "solutionSteps": [
+        "紅1/5、藍4/5。"
+      ],
+      "answer": "紅1/5、藍4/5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩骰和2與7",
+      "solutionSteps": [
+        "1/36對6/36。"
+      ],
+      "answer": "1/36對6/36。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "轉盤60°、60°、120°、120°",
+      "solutionSteps": [
+        "前兩等、後兩等。"
+      ],
+      "answer": "前兩等、後兩等。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "亂數0至99映射50、30、20個值",
+      "solutionSteps": [
+        "輸出50%、30%、20%。"
+      ],
+      "answer": "輸出50%、30%、20%。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把事件種類數當分母",
+      "why": "分母應是底層等可能結果。",
+      "correction": "分母應是底層等可能結果。"
+    },
+    {
+      "mistake": "看到公平骰就說遊戲公平",
+      "why": "映射可能偏向某事件。",
+      "correction": "映射可能偏向某事件。"
+    },
+    {
+      "mistake": "忽略區間含端點的整數個數",
+      "why": "逐段計數。",
+      "correction": "逐段計數。"
+    },
+    {
+      "mistake": "每班同抽2人就說每人等機會",
+      "why": "班級大小不同時機率不同。",
+      "correction": "班級大小不同時機率不同。"
+    }
+  ],
+  "selfCheck": [
+    "基本結果是什麼？",
+    "它們是否等可能？",
+    "每個事件包含多少權重？",
+    "轉盤角度或映射區間是否相同？",
+    "抽樣公平針對的是班級還是個人？"
+  ],
+  "summary": [
+    "等可能要在正確層級判斷。",
+    "公平底層經不均映射可產生不等輸出。",
+    "事件名稱數量不決定機率。",
+    "公平宣稱應可由機制驗證。"
+  ],
+  "connections": {
+    "previous": "承接樣本空間的完整列舉。",
+    "next": [
+      "下一技能計算放回與不放回的兩階段機率。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u22-spinner-weighted"
+  ],
+  "figureAccessibility": [
+    {
+      "figureId": "fig-u22-spinner-weighted",
+      "altText": "圓形轉盤分成60度A區、120度B區、180度C區，三區面積不同。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s014-v001",
+      "u22-s014-v002",
+      "u22-s014-v003",
+      "u22-s014-v004",
+      "u22-s014-v005",
+      "u22-s014-v006",
+      "u22-s014-v007",
+      "u22-s014-v008",
+      "u22-s014-v009",
+      "u22-s014-v010",
+      "u22-s014-v011",
+      "u22-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s014-cr001",
+      "u22-s014-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "逐一核對球數、骰面配對、角度與亂數區間；所有等可能判斷均回到底層實體或整數結果。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "先判斷基本結果是否等可能，再決定能否直接計數。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "d58989b7941e4891d6fe18c607c97931a639e1c408b9be66641536c0f67e743b"
+}

@@ -1,0 +1,236 @@
+{
+  "lectureId": "u22-s001-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-quartiles",
+  "skillId": "quartile-calculation",
+  "lockedSkillOrder": 1,
+  "title": "四分位數：以排序後資料的中位數與上下半部中位數求 Q1與Q2與Q3。",
+  "originalLockedTitle": "四分位數",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能先排序資料並求Q1、Q2、Q3。",
+    "能依資料筆數奇偶正確切分上下半部。",
+    "能說明四分位數是位置量而非固定資料值。",
+    "能由四分位數求IQR。"
+  ],
+  "prerequisiteSkillIds": [],
+  "prerequisiteBridge": "承接先前單元的排序、平均與中位數概念。",
+  "glossary": [
+    {
+      "term": "四分位數",
+      "definition": "把排序後資料約分成四個等量區段的三個分界位置量。"
+    },
+    {
+      "term": "中位數",
+      "definition": "排序後位於中央的值，又稱Q2。"
+    },
+    {
+      "term": "半分法",
+      "definition": "先求中位數，再分別求上下半部中位數的方法。"
+    },
+    {
+      "term": "IQR",
+      "definition": "Q3與Q1之差，描述中間50%的跨度。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "Q1",
+      "meaning": "第一四分位數。"
+    },
+    {
+      "symbol": "Q2",
+      "meaning": "第二四分位數，也就是中位數。"
+    },
+    {
+      "symbol": "Q3",
+      "meaning": "第三四分位數。"
+    },
+    {
+      "symbol": "IQR=Q3-Q1",
+      "meaning": "四分位距。"
+    }
+  ],
+  "conceptNarrative": [
+    "四分位數一定先建立在排序上；原始資料出現順序沒有位置意義。",
+    "本單元採國中常用半分法：偶數筆直接分成等量兩半；奇數筆先取總中位數，求Q1與Q3時排除該中位數。",
+    "上下半部各自仍要依中位數規則處理，所以半部若有偶數筆，要平均中央兩筆。",
+    "Q1、Q2、Q3可能不是原始資料中的某一筆，例如中央兩筆平均後得到小數。",
+    "四分位數描述位置，不代表剛好有25%的人等於Q1。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "四分位數",
+      "statement": "排序後將資料位置分成四部分的分界量。"
+    },
+    {
+      "name": "四分位距",
+      "statement": "IQR=Q3-Q1，只看中間一半資料的跨度。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "Q2=(中央左值+中央右值)÷2",
+      "conditions": [
+        "資料筆數為偶數時。"
+      ],
+      "meaning": "資料筆數為偶數時。"
+    },
+    {
+      "formula": "IQR=Q3-Q1",
+      "conditions": [
+        "Q1、Q3已依同一規則求得時。"
+      ],
+      "meaning": "Q1、Q3已依同一規則求得時。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未排序不可直接取位置。",
+    "不同教材若另定插值規則，必須依題幹；本批次題目會明定半分法。",
+    "不能把最大值與最小值當Q3與Q1。",
+    "不能由Q1、Q3直接推得平均數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先排序",
+      "check": "由小到大列出並核對筆數。"
+    },
+    {
+      "step": 2,
+      "instruction": "求Q2",
+      "check": "依整組筆數奇偶取中央值或中央平均。"
+    },
+    {
+      "step": 3,
+      "instruction": "切上下半部",
+      "check": "奇數筆排除Q2，偶數筆直接平分。"
+    },
+    {
+      "step": 4,
+      "instruction": "求Q1與Q3",
+      "check": "各半部再求中位數。"
+    },
+    {
+      "step": 5,
+      "instruction": "回查順序",
+      "check": "確認最小值≤Q1≤Q2≤Q3≤最大值。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "資料2、4、6、8、10、12、14、16",
+      "solutionSteps": [
+        "Q2=(8+10)÷2=9；Q1=(4+6)÷2=5；Q3=(12+14)÷2=13。"
+      ],
+      "answer": "Q2=(8+10)÷2=9；Q1=(4+6)÷2=5；Q3=(12+14)÷2=13。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "9筆資料1、3、4、6、8、10、11、15、20",
+      "solutionSteps": [
+        "Q2=8；排除8後，Q1=(3+4)÷2=3.5，Q3=(11+15)÷2=13。"
+      ],
+      "answer": "Q2=8；排除8後，Q1=(3+4)÷2=3.5，Q3=(11+15)÷2=13。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "Q1=12、Q3=19",
+      "solutionSteps": [
+        "IQR=7。"
+      ],
+      "answer": "IQR=7。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "8筆資料中Q2=10且中央右值12",
+      "solutionSteps": [
+        "中央左值x滿足(x+12)÷2=10，所以x=8。"
+      ],
+      "answer": "中央左值x滿足(x+12)÷2=10，所以x=8。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "未排序就找第幾筆",
+      "why": "位置會錯；先排序再編號。",
+      "correction": "位置會錯；先排序再編號。"
+    },
+    {
+      "mistake": "奇數筆把Q2放進上下兩半",
+      "why": "會重複中央資料；依本節規則排除。",
+      "correction": "會重複中央資料；依本節規則排除。"
+    },
+    {
+      "mistake": "半部為偶數卻只取一筆",
+      "why": "應平均該半部中央兩筆。",
+      "correction": "應平均該半部中央兩筆。"
+    },
+    {
+      "mistake": "把Q1寫成資料總數的四分之一",
+      "why": "四分之一是位置概念，不是資料值。",
+      "correction": "四分之一是位置概念，不是資料值。"
+    }
+  ],
+  "selfCheck": [
+    "資料是否已排序？",
+    "筆數奇偶是否判對？",
+    "奇數筆是否依題幹排除總中位數？",
+    "五數順序是否非遞減？",
+    "IQR是否非負？"
+  ],
+  "summary": [
+    "先排序，再求Q2，再分半求Q1與Q3。",
+    "位置規則要一致，遇不同規則以題幹為準。",
+    "Q1到Q3涵蓋中間約50%的位置。",
+    "IQR只描述中段跨度。"
+  ],
+  "connections": {
+    "previous": "承接先前單元的排序、平均與中位數概念。",
+    "next": [
+      "下一技能把五數摘要轉成盒狀圖。",
+      "後續會用Q1、Q3判斷IQR與離群值。"
+    ]
+  },
+  "figureReferences": [],
+  "figureAccessibility": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s001-v001",
+      "u22-s001-v002",
+      "u22-s001-v003",
+      "u22-s001-v004",
+      "u22-s001-v005",
+      "u22-s001-v006",
+      "u22-s001-v007",
+      "u22-s001-v008",
+      "u22-s001-v009",
+      "u22-s001-v010",
+      "u22-s001-v011",
+      "u22-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s001-cr001",
+      "u22-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "逐例重算奇偶筆數、中央位置與平均；特別核對9筆資料排除中位數後的上下半部，所有四分位數均符合非遞減順序。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "以排序後資料的中位數與上下半部中位數求 Q1、Q2、Q3。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "b179c4c033ae4cef008338849a74476a1a015825c81bfa78ff4dc60cc37367da"
+}

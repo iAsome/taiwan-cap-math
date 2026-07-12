@@ -1,0 +1,229 @@
+{
+  "lectureId": "u22-s017-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-literacy",
+  "skillId": "probability-literacy",
+  "lockedSkillOrder": 17,
+  "title": "機率素養題：解讀規則與風險與期望次數與公平性。",
+  "originalLockedTitle": "機率素養題",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能區分機率、相對次數與期望值。",
+    "能計算簡單長期期望。",
+    "能辨識賭徒謬誤與誤導宣傳。",
+    "能在期望與風險之間作有限比較。"
+  ],
+  "prerequisiteSkillIds": [
+    "probability-word"
+  ],
+  "prerequisiteBridge": "承接機率應用題與兩階段計算。",
+  "glossary": [
+    {
+      "term": "期望值",
+      "definition": "大量重複時每次結果的理論平均。"
+    },
+    {
+      "term": "相對次數",
+      "definition": "事件發生次數除以試驗總次數。"
+    },
+    {
+      "term": "獨立",
+      "definition": "前一次結果不改變下一次機率。"
+    },
+    {
+      "term": "賭徒謬誤",
+      "definition": "誤認隨機結果會因過去偏向而短期補償。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "E=Σ(結果值×機率)",
+      "meaning": "離散結果的簡單期望。"
+    },
+    {
+      "symbol": "期望次數=試驗次數×單次機率",
+      "meaning": "條件穩定時。"
+    }
+  ],
+  "conceptNarrative": [
+    "期望值可能不是任何一次實際可得到的結果，例如每局期望3分但單局只得0或12。",
+    "機率20%描述長期比例傾向，不保證每5次恰好一次。",
+    "公平硬幣連出5次正面，第6次仍是1/2；獨立性排除「該出反面」的想法。",
+    "比較遊戲時要把固定成本扣除，再比較淨收益期望。",
+    "期望相同的方案風險可不同，題目若只問期望就不能偷偷加入個人風險偏好。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "公平遊戲",
+      "statement": "以淨收益期望0作為一種數學判準。"
+    },
+    {
+      "name": "模擬估計",
+      "statement": "用大量隨機試驗相對次數近似理論機率。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "淨期望=獎金期望-固定成本",
+      "conditions": [
+        "每局成本固定。"
+      ],
+      "meaning": "每局成本固定。"
+    },
+    {
+      "formula": "E=aP(a)+bP(b)+…",
+      "conditions": [
+        "結果互斥且完整。"
+      ],
+      "meaning": "結果互斥且完整。"
+    }
+  ],
+  "nonApplicableCases": [
+    "期望不是保證。",
+    "短期連續結果不改變獨立試驗下一次機率。",
+    "模擬27%不能證明理論機率恰為27%。",
+    "高期望不代表每個人都應選，若題目問風險需另分析。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列結果與機率",
+      "check": "含負分與成本。"
+    },
+    {
+      "step": 2,
+      "instruction": "各自相乘",
+      "check": "保持正負號。"
+    },
+    {
+      "step": 3,
+      "instruction": "加總期望",
+      "check": "確認單位。"
+    },
+    {
+      "step": 4,
+      "instruction": "比較題目指定指標",
+      "check": "期望、保證或風險。"
+    },
+    {
+      "step": 5,
+      "instruction": "審核語句",
+      "check": "拒絕必然、補償與誇大。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "1/4得12，其餘0",
+      "solutionSteps": [
+        "期望3分。"
+      ],
+      "answer": "期望3分。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "入場6，1/5得20",
+      "solutionSteps": [
+        "獎金期望4，淨期望-2元。"
+      ],
+      "answer": "獎金期望4，淨期望-2元。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "骰6得10，其餘扣1",
+      "solutionSteps": [
+        "期望5/6點。"
+      ],
+      "answer": "期望5/6點。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "100次事件率1%",
+      "solutionSteps": [
+        "期望1次，但實際可不同。"
+      ],
+      "answer": "期望1次，但實際可不同。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "最高獎金當平均",
+      "why": "要乘機率。",
+      "correction": "要乘機率。"
+    },
+    {
+      "mistake": "只計獎金不扣成本",
+      "why": "比較淨收益時要扣。",
+      "correction": "比較淨收益時要扣。"
+    },
+    {
+      "mistake": "連敗後說下一次較易中",
+      "why": "若獨立則不變。",
+      "correction": "若獨立則不變。"
+    },
+    {
+      "mistake": "相對次數等同理論值",
+      "why": "有限模擬有波動。",
+      "correction": "有限模擬有波動。"
+    }
+  ],
+  "selfCheck": [
+    "結果是否互斥且完整？",
+    "成本與負值是否納入？",
+    "答案是期望還是單次保證？",
+    "是否誤用過去結果改變獨立機率？",
+    "模擬次數是否揭露？"
+  ],
+  "summary": [
+    "機率描述不確定性，期望描述長期平均。",
+    "獨立試驗不因連勝連敗自動補償。",
+    "遊戲公平要看淨期望。",
+    "模擬是估計，不是證明。"
+  ],
+  "connections": {
+    "previous": "承接機率應用題與兩階段計算。",
+    "next": [
+      "最後技能整合統計摘要、抽樣與機率推論。"
+    ]
+  },
+  "figureReferences": [],
+  "figureAccessibility": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s017-v001",
+      "u22-s017-v002",
+      "u22-s017-v003",
+      "u22-s017-v004",
+      "u22-s017-v005",
+      "u22-s017-v006",
+      "u22-s017-v007",
+      "u22-s017-v008",
+      "u22-s017-v009",
+      "u22-s017-v010",
+      "u22-s017-v011",
+      "u22-s017-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s017-cr001",
+      "u22-s017-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "重算四個期望案例並核對負號與成本；所有宣稱題均檢查獨立條件，避免把長期比例改寫為固定週期。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "解讀規則、風險、期望次數與公平性。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "ec904cdc83a0a5b8b3009999e1d8c279bcd8c548ddad3e2a8ebc3ae68e9754ca"
+}

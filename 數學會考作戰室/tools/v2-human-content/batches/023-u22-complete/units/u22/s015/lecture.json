@@ -1,0 +1,236 @@
+{
+  "lectureId": "u22-s015-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-probability",
+  "skillId": "probability-two-stage",
+  "lockedSkillOrder": 15,
+  "title": "兩階段機率：處理放回與不放回的兩階段機率。",
+  "originalLockedTitle": "兩階段機率",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能計算兩階段指定路徑機率。",
+    "能分辨放回與不放回的第二階段分母。",
+    "能把不同順序的互斥路徑相加。",
+    "能處理來源加權與條件成功率。"
+  ],
+  "prerequisiteSkillIds": [
+    "probability-equally-likely"
+  ],
+  "prerequisiteBridge": "承接樹狀圖、樣本空間與等可能判斷。",
+  "glossary": [
+    {
+      "term": "放回抽取",
+      "definition": "第一抽後恢復原組成，下一抽機率不變。"
+    },
+    {
+      "term": "不放回抽取",
+      "definition": "第一抽後組成改變，下一抽機率依結果更新。"
+    },
+    {
+      "term": "聯合機率",
+      "definition": "兩階段事件同時成立的機率。"
+    },
+    {
+      "term": "總機率",
+      "definition": "把互斥來源路徑的機率加總。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "P(A且B)=P(A)×P(B在A後)",
+      "meaning": "沿路相乘。"
+    },
+    {
+      "symbol": "P(E)=各互斥E路徑機率和",
+      "meaning": "跨路相加。"
+    }
+  ],
+  "conceptNarrative": [
+    "兩階段的第二個分支機率是到達第一結果後的比例。",
+    "放回時分子與分母恢復；不放回時總數少1，若抽走目標顏色，該顏色數也少1。",
+    "「一白一黑不限順序」包含白黑與黑白兩條路徑。",
+    "來源A、B有不同占比與不良率時，要用來源占比加權，不能直接平均不良率。",
+    "若只指定第二次結果，可列第一階段所有可能路徑再加總。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "指定順序",
+      "statement": "例如先白後黑，只取一條路徑。"
+    },
+    {
+      "name": "不限順序",
+      "statement": "符合條件的所有順序皆納入。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "放回同類兩次=(a/n)²",
+      "conditions": [
+        "每次機率相同。"
+      ],
+      "meaning": "每次機率相同。"
+    },
+    {
+      "formula": "不放回同類兩次=(a/n)((a-1)/(n-1))",
+      "conditions": [
+        "第一抽為該類後。"
+      ],
+      "meaning": "第一抽為該類後。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不放回不可沿用原分母。",
+    "不限順序不可漏掉反向路徑。",
+    "來源比例未合1時先補或檢查。",
+    "條件機率不能當全體機率。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "畫兩層樹",
+      "check": "標第一階段。"
+    },
+    {
+      "step": 2,
+      "instruction": "更新第二層",
+      "check": "依放回與第一結果。"
+    },
+    {
+      "step": 3,
+      "instruction": "圈事件路徑",
+      "check": "注意順序。"
+    },
+    {
+      "step": 4,
+      "instruction": "沿路乘",
+      "check": "每條獨立計算。"
+    },
+    {
+      "step": 5,
+      "instruction": "跨路加與驗算",
+      "check": "結果不超過1。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "2紅3藍放回兩紅",
+      "solutionSteps": [
+        "(2/5)²=4/25。"
+      ],
+      "answer": "(2/5)²=4/25。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "2紅3藍不放回兩紅",
+      "solutionSteps": [
+        "(2/5)(1/4)=1/10。"
+      ],
+      "answer": "(2/5)(1/4)=1/10。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "3白2黑不放回一白一黑",
+      "solutionSteps": [
+        "3/10+3/10=3/5。"
+      ],
+      "answer": "3/10+3/10=3/5。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "A占0.7不良2%，B占0.3不良5%",
+      "solutionSteps": [
+        "總不良0.014+0.015=0.029。"
+      ],
+      "answer": "總不良0.014+0.015=0.029。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "放回與不放回答案相同",
+      "why": "更新第二層檢查。",
+      "correction": "更新第二層檢查。"
+    },
+    {
+      "mistake": "恰好一次直接乘2p",
+      "why": "還需乘另一階段不發生率。",
+      "correction": "還需乘另一階段不發生率。"
+    },
+    {
+      "mistake": "兩條路徑條件率直接相加",
+      "why": "先乘來源機率。",
+      "correction": "先乘來源機率。"
+    },
+    {
+      "mistake": "把百分比2寫成2",
+      "why": "先轉0.02。",
+      "correction": "先轉0.02。"
+    }
+  ],
+  "selfCheck": [
+    "第二階段分母是否更新？",
+    "事件是否指定順序？",
+    "所有有利路徑是否列全？",
+    "百分比是否轉成小數或分數？",
+    "總機率是否合理？"
+  ],
+  "summary": [
+    "兩階段仍是沿路乘、跨路加。",
+    "放回決定第二層是否改變。",
+    "不限順序通常有多條路徑。",
+    "不同來源要做權重加總。"
+  ],
+  "connections": {
+    "previous": "承接樹狀圖、樣本空間與等可能判斷。",
+    "next": [
+      "下一技能把文字限制翻成事件與路徑。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u22-tree-without-replacement"
+  ],
+  "figureAccessibility": [
+    {
+      "figureId": "fig-u22-tree-without-replacement",
+      "altText": "袋中3紅2藍不放回抽兩球的樹狀圖，第二層分母由5改為4。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s015-v001",
+      "u22-s015-v002",
+      "u22-s015-v003",
+      "u22-s015-v004",
+      "u22-s015-v005",
+      "u22-s015-v006",
+      "u22-s015-v007",
+      "u22-s015-v008",
+      "u22-s015-v009",
+      "u22-s015-v010",
+      "u22-s015-v011",
+      "u22-s015-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s015-cr001",
+      "u22-s015-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "獨立重算放回4/25、不放回1/10與一白一黑3/5；品質加權0.029同時用百分比與小數交叉驗證。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "處理放回與不放回的兩階段機率。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "27932f51ea3b957a98c84a636dcd13414cf43daf3d520c29b3d3e4f5ac1d0d96"
+}

@@ -1,0 +1,241 @@
+{
+  "lectureId": "u22-s006-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-quartiles",
+  "skillId": "iqr-outlier-basic",
+  "lockedSkillOrder": 6,
+  "title": "IQR 與離群值：計算 IQR 並以 1.5×IQR 判斷離群值界線。",
+  "originalLockedTitle": "IQR 與離群值",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能計算IQR與1.5倍IQR。",
+    "能求上下離群界線。",
+    "能分辨等於界線與超出界線。",
+    "能把離群標記解讀為查核訊號而非定罪。"
+  ],
+  "prerequisiteSkillIds": [
+    "box-plot-components"
+  ],
+  "prerequisiteBridge": "承接五數摘要與IQR。",
+  "glossary": [
+    {
+      "term": "下界",
+      "definition": "Q1-1.5×IQR。"
+    },
+    {
+      "term": "上界",
+      "definition": "Q3+1.5×IQR。"
+    },
+    {
+      "term": "離群值候選",
+      "definition": "小於下界或大於上界的觀測值。"
+    },
+    {
+      "term": "穩健性",
+      "definition": "統計量對少數極端值相對不敏感的性質。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "IQR=Q3-Q1",
+      "meaning": "中間50%跨度。"
+    },
+    {
+      "symbol": "下界=Q1-1.5IQR",
+      "meaning": "低端判定界線。"
+    },
+    {
+      "symbol": "上界=Q3+1.5IQR",
+      "meaning": "高端判定界線。"
+    }
+  ],
+  "conceptNarrative": [
+    "離群規則先以Q1、Q3得到IQR，再向兩側延伸1.5倍IQR。",
+    "觀測值必須嚴格小於下界或嚴格大於上界才被標記；等於界線不算超出。",
+    "離群值可能來自量測錯誤、輸入錯誤、罕見但真實事件或不同族群，規則本身不判定原因。",
+    "刪除離群值會改變分析，必須有事先規則與實質理由。",
+    "IQR=0時上下界重合，任何不同值都會超界，這是數學結果但需審慎解讀。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "1.5IQR規則",
+      "statement": "以四分位距建立內圍欄的常用判定。"
+    },
+    {
+      "name": "界線值",
+      "statement": "恰好等於上下界，仍位於允許範圍內。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x<Q1-1.5IQR",
+      "conditions": [
+        "x為下端離群候選。"
+      ],
+      "meaning": "x為下端離群候選。"
+    },
+    {
+      "formula": "x>Q3+1.5IQR",
+      "conditions": [
+        "x為上端離群候選。"
+      ],
+      "meaning": "x為上端離群候選。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把低於Q1的所有值都當離群。",
+    "不能把等於界線的值標為離群。",
+    "不能僅由離群標記判定作弊、故障或造假。",
+    "題目若使用不同倍數或定義，必須依題幹。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "算IQR",
+      "check": "Q3-Q1。"
+    },
+    {
+      "step": 2,
+      "instruction": "算延伸量",
+      "check": "1.5×IQR。"
+    },
+    {
+      "step": 3,
+      "instruction": "算兩界線",
+      "check": "Q1減、Q3加。"
+    },
+    {
+      "step": 4,
+      "instruction": "逐值比較",
+      "check": "注意嚴格不等號。"
+    },
+    {
+      "step": 5,
+      "instruction": "說明後續",
+      "check": "標記後查核，不直接刪除。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "Q1=12、Q3=20",
+      "solutionSteps": [
+        "IQR8，界線0與32。"
+      ],
+      "answer": "IQR8，界線0與32。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "Q1=20、Q3=32",
+      "solutionSteps": [
+        "IQR12，界線2與50；2與50不算離群。"
+      ],
+      "answer": "IQR12，界線2與50；2與50不算離群。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "Q1=15、Q3=23，候選-1、3、36",
+      "solutionSteps": [
+        "界線3與35，所以-1與36離群。"
+      ],
+      "answer": "界線3與35，所以-1與36離群。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "IQR=0且Q1=Q3=7",
+      "solutionSteps": [
+        "界線都7，任何非7值超界。"
+      ],
+      "answer": "界線都7，任何非7值超界。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "用Q1、Q3直接作界線",
+      "why": "還需加減1.5IQR。",
+      "correction": "還需加減1.5IQR。"
+    },
+    {
+      "mistake": "只檢查一側",
+      "why": "兩端都要檢查。",
+      "correction": "兩端都要檢查。"
+    },
+    {
+      "mistake": "界線值也刪除",
+      "why": "規則是嚴格超出。",
+      "correction": "規則是嚴格超出。"
+    },
+    {
+      "mistake": "發現離群就改資料",
+      "why": "先保留原始值並查核。",
+      "correction": "先保留原始值並查核。"
+    }
+  ],
+  "selfCheck": [
+    "IQR是否算對？",
+    "1.5倍是否乘對？",
+    "上下界是否從正確四分位數出發？",
+    "比較符號是否嚴格？",
+    "結論是否超過統計證據？"
+  ],
+  "summary": [
+    "IQR建立中段尺度。",
+    "上下界是Q1與Q3向外延伸1.5IQR。",
+    "等於界線不算離群。",
+    "離群是查核起點，不是原因判決。"
+  ],
+  "connections": {
+    "previous": "承接五數摘要與IQR。",
+    "next": [
+      "下一技能用累積圖定位四分位位置。",
+      "之後比較全距與IQR對端點的敏感度。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u22-boxplot-outlier"
+  ],
+  "figureAccessibility": [
+    {
+      "figureId": "fig-u22-boxplot-outlier",
+      "altText": "數軸顯示Q1為18、Q3為30、下離群界線0、上離群界線48，候選點負1、0、48、49。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s006-v001",
+      "u22-s006-v002",
+      "u22-s006-v003",
+      "u22-s006-v004",
+      "u22-s006-v005",
+      "u22-s006-v006",
+      "u22-s006-v007",
+      "u22-s006-v008",
+      "u22-s006-v009",
+      "u22-s006-v010",
+      "u22-s006-v011",
+      "u22-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s006-cr001",
+      "u22-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "手算三組界線並逐值比較；初稿曾出現一題下界與上界無法同時成立，已改為一致資料並將矛盾檢查列入稽核。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "計算 IQR 並以 1.5×IQR 判斷離群值界線。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "776dda15408e7bfbeacdb84d915b987bc79a0495b8a28ca316799526f1e25b0d"
+}

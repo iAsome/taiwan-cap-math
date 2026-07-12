@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U22 constructed response",
+  "type": "object",
+  "required": [
+    "questionId",
+    "prompt",
+    "standardSolution",
+    "rubric",
+    "followThroughPolicy",
+    "answerOnlyResponseHandling",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

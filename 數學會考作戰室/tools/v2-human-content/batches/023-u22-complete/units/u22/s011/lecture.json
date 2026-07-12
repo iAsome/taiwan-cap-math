@@ -1,0 +1,224 @@
+{
+  "lectureId": "u22-s011-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-probability",
+  "skillId": "probability-complement",
+  "lockedSkillOrder": 11,
+  "title": "餘事機率：用 P(A 的餘事)=1-P(A) 處理至少一次或不是等事件。",
+  "originalLockedTitle": "餘事機率",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認事件與其餘事。",
+    "能用1-P(A)簡化計算。",
+    "能用餘事處理至少一次。",
+    "能避免把長期機率當短期保證。"
+  ],
+  "prerequisiteSkillIds": [
+    "probability-basic"
+  ],
+  "prerequisiteBridge": "承接單階段古典機率。",
+  "glossary": [
+    {
+      "term": "餘事",
+      "definition": "事件A不發生的所有結果，記作A的餘事。"
+    },
+    {
+      "term": "至少一次",
+      "definition": "一次以上，餘事通常是零次。"
+    },
+    {
+      "term": "互斥且完備",
+      "definition": "A與其餘事不能同時發生且合起來是全部結果。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "P(A的餘事)=1-P(A)",
+      "meaning": "餘事公式。"
+    },
+    {
+      "symbol": "P(A)+P(A的餘事)=1",
+      "meaning": "總機率。"
+    }
+  ],
+  "conceptNarrative": [
+    "餘事不是任意另一事件，而是「除了A以外的全部」。",
+    "「至少一次成功」的餘事是「一次都沒成功」，通常比直接列所有成功情況簡單。",
+    "二分類情境中合格與不合格可互為餘事，但若還有待判定類別，就不能直接相減。",
+    "重複獨立試驗時，先算全部失敗路徑再用1減。",
+    "機率20%不表示每5次固定一次，也不表示久未發生後下一次必發生。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "餘事事件",
+      "statement": "S中不屬於A的結果。"
+    },
+    {
+      "name": "至少一次公式",
+      "statement": "1-P(零次)，需先正確計算零次。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P(至少一次)=1-P(零次)",
+      "conditions": [
+        "重複試驗。"
+      ],
+      "meaning": "重複試驗。"
+    },
+    {
+      "formula": "P(兩次都不發生)=q×q",
+      "conditions": [
+        "兩次獨立且每次不發生率q。"
+      ],
+      "meaning": "兩次獨立且每次不發生率q。"
+    }
+  ],
+  "nonApplicableCases": [
+    "分類未涵蓋全部時不可當餘事。",
+    "至少一次不能只算恰好一次。",
+    "獨立性未給定時不能直接相乘。",
+    "連續未發生不改變固定獨立試驗下一次機率。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫出原事件",
+      "check": "用精確語句。"
+    },
+    {
+      "step": 2,
+      "instruction": "找完整否定",
+      "check": "檢查互斥且合起來全部。"
+    },
+    {
+      "step": 3,
+      "instruction": "計算較簡單一側",
+      "check": "必要時沿路相乘。"
+    },
+    {
+      "step": 4,
+      "instruction": "用1減",
+      "check": "保持分數或小數精確。"
+    },
+    {
+      "step": 5,
+      "instruction": "解讀",
+      "check": "不作短期保證。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "P(A)=0.35",
+      "solutionSteps": [
+        "餘事0.65。"
+      ],
+      "answer": "餘事0.65。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩次硬幣至少一正",
+      "solutionSteps": [
+        "1-P(反反)=1-1/4=3/4。"
+      ],
+      "answer": "1-P(反反)=1-1/4=3/4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩天不故障率0.98且獨立",
+      "solutionSteps": [
+        "至少一天故障=1-0.98²=0.0396。"
+      ],
+      "answer": "至少一天故障=1-0.98²=0.0396。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "P(A餘)=2P(A)",
+      "solutionSteps": [
+        "1-p=2p，p=1/3。"
+      ],
+      "answer": "1-p=2p，p=1/3。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把餘事寫成另一個相關事件",
+      "why": "檢查是否涵蓋所有非A結果。",
+      "correction": "檢查是否涵蓋所有非A結果。"
+    },
+    {
+      "mistake": "直接把兩次成功率相加",
+      "why": "會重複計數。",
+      "correction": "會重複計數。"
+    },
+    {
+      "mistake": "至少一次等於恰好一次",
+      "why": "漏掉兩次都成功。",
+      "correction": "漏掉兩次都成功。"
+    },
+    {
+      "mistake": "把0.0396四捨五入成0.04卻未說明",
+      "why": "題目要精確時保留。",
+      "correction": "題目要精確時保留。"
+    }
+  ],
+  "selfCheck": [
+    "餘事是否真的是完整否定？",
+    "兩事件機率是否合計1？",
+    "重複試驗是否有獨立假設？",
+    "至少一次是否用零次的餘事？"
+  ],
+  "summary": [
+    "餘事公式是1減。",
+    "至少一次常由零次最容易求。",
+    "分類要互斥且完備。",
+    "機率不等於固定發生次序。"
+  ],
+  "connections": {
+    "previous": "承接單階段古典機率。",
+    "next": [
+      "下一技能用樹狀圖明確呈現多階段路徑。"
+    ]
+  },
+  "figureReferences": [],
+  "figureAccessibility": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s011-v001",
+      "u22-s011-v002",
+      "u22-s011-v003",
+      "u22-s011-v004",
+      "u22-s011-v005",
+      "u22-s011-v006",
+      "u22-s011-v007",
+      "u22-s011-v008",
+      "u22-s011-v009",
+      "u22-s011-v010",
+      "u22-s011-v011",
+      "u22-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s011-cr001",
+      "u22-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "獨立重算分數、小數與百分比案例；確認0.98²=0.9604，餘事0.0396，且所有至少一次題都先定義零次事件。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "用 P(A 的餘事)=1-P(A) 處理至少一次或不是等事件。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "35c995492965475f8e1ef39393fd94751d5dffae65345245b8f17297d1da60ef"
+}

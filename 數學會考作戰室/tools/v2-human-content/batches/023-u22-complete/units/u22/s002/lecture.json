@@ -1,0 +1,246 @@
+{
+  "lectureId": "u22-s002-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-quartiles",
+  "skillId": "box-plot",
+  "lockedSkillOrder": 2,
+  "title": "盒狀圖：由五數摘要繪製盒狀圖並理解箱體與鬚線。",
+  "originalLockedTitle": "盒狀圖",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由五數摘要畫水平盒狀圖。",
+    "能辨認箱體、中位數線與左右鬚線。",
+    "能在有刻度數軸上正確定位。",
+    "能檢查圖形是否洩漏答案或誤用比例。"
+  ],
+  "prerequisiteSkillIds": [
+    "quartile-calculation"
+  ],
+  "prerequisiteBridge": "以前一技能算出的Q1、Q2、Q3與端點為輸入。",
+  "glossary": [
+    {
+      "term": "五數摘要",
+      "definition": "最小值、Q1、中位數、Q3、最大值。"
+    },
+    {
+      "term": "箱體",
+      "definition": "從Q1延伸到Q3的長方形。"
+    },
+    {
+      "term": "鬚線",
+      "definition": "由最小值連到Q1及由Q3連到最大值的線段。"
+    },
+    {
+      "term": "中位數線",
+      "definition": "箱內位於Q2座標的線。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "min≤Q1≤Q2≤Q3≤max",
+      "meaning": "五數合法順序。"
+    },
+    {
+      "symbol": "箱寬=Q3-Q1",
+      "meaning": "即IQR。"
+    },
+    {
+      "symbol": "總跨度=max-min",
+      "meaning": "即全距。"
+    }
+  ],
+  "conceptNarrative": [
+    "盒狀圖不是把每一筆資料畫出來，而是用五個位置量壓縮分布。",
+    "水平盒狀圖通常數值由左向右增加；垂直圖則由下向上增加。",
+    "箱體只畫Q1到Q3，中位數線在箱內，最小值和最大值在鬚線末端。",
+    "若數軸每格代表不同數值，必須先依刻度定位，不能只數格子。",
+    "五數可重合，因此中位數線可能貼在箱體邊界，鬚線也可能長度為0。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "標準盒狀圖",
+      "statement": "以五數摘要呈現位置與分散的圖。"
+    },
+    {
+      "name": "五數重合",
+      "statement": "當資料重複時，相鄰構件可以在同一座標。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "左鬚長=Q1-min",
+      "conditions": [
+        "水平圖左側外段。"
+      ],
+      "meaning": "水平圖左側外段。"
+    },
+    {
+      "formula": "箱體左半=Q2-Q1",
+      "conditions": [
+        "中間第二四分位區段。"
+      ],
+      "meaning": "中間第二四分位區段。"
+    },
+    {
+      "formula": "箱體右半=Q3-Q2",
+      "conditions": [
+        "中間第三四分位區段。"
+      ],
+      "meaning": "中間第三四分位區段。"
+    },
+    {
+      "formula": "右鬚長=max-Q3",
+      "conditions": [
+        "高端外段。"
+      ],
+      "meaning": "高端外段。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把最小值到最大值整段畫成箱體。",
+    "不能用平均數取代中位數線。",
+    "不同刻度的兩圖不可直接比較格數。",
+    "未提供離群值繪法時，不自行把端點改成內圍欄。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "取得五數",
+      "check": "依固定順序寫出。"
+    },
+    {
+      "step": 2,
+      "instruction": "畫數軸",
+      "check": "設定範圍與等距刻度。"
+    },
+    {
+      "step": 3,
+      "instruction": "畫箱體",
+      "check": "在Q1、Q3處立邊並連成箱。"
+    },
+    {
+      "step": 4,
+      "instruction": "畫中位數線",
+      "check": "在Q2處畫線。"
+    },
+    {
+      "step": 5,
+      "instruction": "畫鬚線",
+      "check": "連到最小值與最大值，再核對座標。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "五數3、7、9、12、18",
+      "solutionSteps": [
+        "箱體7到12，中位數線9，鬚線到3與18。"
+      ],
+      "answer": "箱體7到12，中位數線9，鬚線到3與18。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "五數5、5、8、11、11",
+      "solutionSteps": [
+        "左鬚與右鬚長度均0，圖仍合法。"
+      ],
+      "answer": "左鬚與右鬚長度均0，圖仍合法。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "數軸每格2，Q3=18",
+      "solutionSteps": [
+        "Q3必定位在標18的刻度，而不是第18格。"
+      ],
+      "answer": "Q3必定位在標18的刻度，而不是第18格。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把五數五個點等距排列",
+      "why": "盒狀圖位置由數值比例決定。",
+      "correction": "盒狀圖位置由數值比例決定。"
+    },
+    {
+      "mistake": "箱內線畫在箱中央",
+      "why": "中位數未必是Q1與Q3的平均。",
+      "correction": "中位數未必是Q1與Q3的平均。"
+    },
+    {
+      "mistake": "漏畫鬚線端帽",
+      "why": "會使最小值與最大值不清楚。",
+      "correction": "會使最小值與最大值不清楚。"
+    },
+    {
+      "mistake": "把圖寬當資料筆數",
+      "why": "標準盒狀圖不顯示樣本數。",
+      "correction": "標準盒狀圖不顯示樣本數。"
+    }
+  ],
+  "selfCheck": [
+    "箱體端點是否為Q1與Q3？",
+    "中位數線是否在Q2座標？",
+    "鬚線是否連到min與max？",
+    "各段長度是否符合相鄰差？",
+    "圖是否標示不按比例時的警語？"
+  ],
+  "summary": [
+    "盒狀圖由五數摘要構成。",
+    "箱寬是IQR，總跨度是全距。",
+    "刻度決定位置，不是構件順序等距。",
+    "相鄰構件可以重合。"
+  ],
+  "connections": {
+    "previous": "以前一技能算出的Q1、Q2、Q3與端點為輸入。",
+    "next": [
+      "下一技能從盒狀圖作有限且正確的分布判讀。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u22-boxplot-basic"
+  ],
+  "figureAccessibility": [
+    {
+      "figureId": "fig-u22-boxplot-basic",
+      "altText": "水平盒狀圖，數軸4到26，最小值4、第一四分位數9、中位數13、第三四分位數18、最大值26。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s002-v001",
+      "u22-s002-v002",
+      "u22-s002-v003",
+      "u22-s002-v004",
+      "u22-s002-v005",
+      "u22-s002-v006",
+      "u22-s002-v007",
+      "u22-s002-v008",
+      "u22-s002-v009",
+      "u22-s002-v010",
+      "u22-s002-v011",
+      "u22-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s002-cr001",
+      "u22-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "以三組五數手動換算各段長度，確認箱體與鬚線未互換；檢查重合構件與刻度案例後，圖形仍可唯一定位。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "由五數摘要繪製盒狀圖並理解箱體與鬚線。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "e58586a523ad81de260e8c77db690cd98aee8165ee65dca9c1e94dcdf3daca3e"
+}

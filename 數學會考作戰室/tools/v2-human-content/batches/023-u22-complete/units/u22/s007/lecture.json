@@ -1,0 +1,232 @@
+{
+  "lectureId": "u22-s007-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-quartiles",
+  "skillId": "ogive-read",
+  "lockedSkillOrder": 7,
+  "title": "累積次數折線圖：讀取累積次數與區間次數與四分位位置。",
+  "originalLockedTitle": "累積次數折線圖",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能讀累積次數終點與總數。",
+    "能用相鄰累積差求區間次數。",
+    "能定位中位數與四分位數所在組。",
+    "能檢查累積序列是否非遞減。"
+  ],
+  "prerequisiteSkillIds": [
+    "iqr-outlier-basic"
+  ],
+  "prerequisiteBridge": "承接四分位位置與離群概念。",
+  "glossary": [
+    {
+      "term": "累積次數",
+      "definition": "截至某上界為止的資料總數。"
+    },
+    {
+      "term": "組次數",
+      "definition": "只落在某一區間內的資料數。"
+    },
+    {
+      "term": "累積次數折線圖",
+      "definition": "以組上界為橫軸、累積次數為縱軸連點的圖。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "第k組次數=Ck-C(k-1)",
+      "meaning": "相鄰累積次數相減。"
+    },
+    {
+      "symbol": "最後累積次數=N",
+      "meaning": "圖涵蓋全部資料時。"
+    }
+  ],
+  "conceptNarrative": [
+    "累積次數是「到目前為止」的總和，所以只能持平或上升。",
+    "某組本身的次數要用該組上界累積值減前一組上界累積值。",
+    "總數N的中位位置約在中央筆，Q1約在N/4附近，Q3約在3N/4附近；把位置與累積值比較可定位所在組。",
+    "分組圖通常不能知道組內每筆實際值，因此只能說四分位數位於哪一區間。",
+    "折線斜率陡表示該區間增加人數多，但不能把斜率當連續密度精算。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "終點",
+      "statement": "最後組上界與總累積次數。"
+    },
+    {
+      "name": "非遞減性",
+      "statement": "後一累積值不得小於前一值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "區間次數=後累積-前累積",
+      "conditions": [
+        "端點分組規則一致時。"
+      ],
+      "meaning": "端點分組規則一致時。"
+    },
+    {
+      "formula": "經驗機率=累積次數÷總數",
+      "conditions": [
+        "從資料隨機抽一筆時。"
+      ],
+      "meaning": "從資料隨機抽一筆時。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把累積次數直接當組次數。",
+    "不能接受下降的累積折線。",
+    "不能在未提供假設時做組內線性插值。",
+    "不同圖的總數不同時不能只比累積高度。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "讀點",
+      "check": "確認橫軸上界與縱軸累積值。"
+    },
+    {
+      "step": 2,
+      "instruction": "求組次數",
+      "check": "取相鄰差。"
+    },
+    {
+      "step": 3,
+      "instruction": "找總數",
+      "check": "讀最後縱座標。"
+    },
+    {
+      "step": 4,
+      "instruction": "定位位置",
+      "check": "用第幾筆與累積值夾住。"
+    },
+    {
+      "step": 5,
+      "instruction": "限制結論",
+      "check": "只報組別或已能確定的次數。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "累積8與15",
+      "solutionSteps": [
+        "該相鄰組次數7。"
+      ],
+      "answer": "該相鄰組次數7。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "32筆，累積到20為13、到30為25",
+      "solutionSteps": [
+        "中位第16、17筆位於20到30組。"
+      ],
+      "answer": "中位第16、17筆位於20到30組。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "60筆，累積29到47",
+      "solutionSteps": [
+        "Q3約第45筆，位於該組。"
+      ],
+      "answer": "Q3約第45筆，位於該組。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "序列5、12、10、19",
+      "solutionSteps": [
+        "12降到10，資料不可能。"
+      ],
+      "answer": "12降到10，資料不可能。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "相鄰差方向寫反",
+      "why": "後減前才非負。",
+      "correction": "後減前才非負。"
+    },
+    {
+      "mistake": "用總數減前累積求中間組",
+      "why": "會混入後面所有組。",
+      "correction": "會混入後面所有組。"
+    },
+    {
+      "mistake": "把Q3數值寫成總數的75%",
+      "why": "75%先表示位置，不是橫軸值。",
+      "correction": "75%先表示位置，不是橫軸值。"
+    },
+    {
+      "mistake": "圖線下降仍照算",
+      "why": "先判定圖或資料錯誤。",
+      "correction": "先判定圖或資料錯誤。"
+    }
+  ],
+  "selfCheck": [
+    "累積值是否非遞減？",
+    "最後值是否等於總數？",
+    "區間次數是否用相鄰差？",
+    "四分位位置是否落在正確累積區間？"
+  ],
+  "summary": [
+    "累積圖的核心是「相鄰差」與「位置夾住」。",
+    "終點給總數。",
+    "四分位數在分組資料中通常只能定位組別。",
+    "下降的累積線不合法。"
+  ],
+  "connections": {
+    "previous": "承接四分位位置與離群概念。",
+    "next": [
+      "下一技能比較全距與IQR。",
+      "統計機率綜合題會把累積次數轉成抽樣機率。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u22-ogive"
+  ],
+  "figureAccessibility": [
+    {
+      "figureId": "fig-u22-ogive",
+      "altText": "累積次數折線圖，點為50分4人、60分10人、70分22人、80分34人、90分40人。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s007-v001",
+      "u22-s007-v002",
+      "u22-s007-v003",
+      "u22-s007-v004",
+      "u22-s007-v005",
+      "u22-s007-v006",
+      "u22-s007-v007",
+      "u22-s007-v008",
+      "u22-s007-v009",
+      "u22-s007-v010",
+      "u22-s007-v011",
+      "u22-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s007-cr001",
+      "u22-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "以總數32、48、60三種案例逐一定位中央與Q3位置；確認所有累積序列非遞減且相鄰差總和回到終點總數。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "讀取累積次數、區間次數與四分位位置。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "31d71537ae0e574d8f1e7c5441e2a946226e24b11f5aeb8b508d2233edf835da"
+}

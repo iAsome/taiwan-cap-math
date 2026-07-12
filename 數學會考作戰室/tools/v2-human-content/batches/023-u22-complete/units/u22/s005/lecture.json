@@ -1,0 +1,239 @@
+{
+  "lectureId": "u22-s005-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-quartiles",
+  "skillId": "box-plot-components",
+  "lockedSkillOrder": 5,
+  "title": "盒狀圖五數：辨識最小值與Q1與中位數與Q3與最大值及其順序。",
+  "originalLockedTitle": "盒狀圖五數",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能依序說出五數摘要。",
+    "能檢查未知五數是否符合非遞減限制。",
+    "能由全距、IQR或段長反求缺少構件。",
+    "能解讀構件重合。"
+  ],
+  "prerequisiteSkillIds": [
+    "quartile-position"
+  ],
+  "prerequisiteBridge": "承接四分位位置與盒狀圖構件。",
+  "glossary": [
+    {
+      "term": "最小值",
+      "definition": "資料中最小觀測值。"
+    },
+    {
+      "term": "最大值",
+      "definition": "資料中最大觀測值。"
+    },
+    {
+      "term": "五數摘要",
+      "definition": "min、Q1、Q2、Q3、max。"
+    },
+    {
+      "term": "構件重合",
+      "definition": "相鄰位置量數值相等，圖上線條落在同一處。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "min≤Q1≤Q2≤Q3≤max",
+      "meaning": "五數必要順序。"
+    },
+    {
+      "symbol": "全距=max-min",
+      "meaning": "端點差。"
+    },
+    {
+      "symbol": "IQR=Q3-Q1",
+      "meaning": "箱體寬。"
+    }
+  ],
+  "conceptNarrative": [
+    "五數摘要第三項是中位數，不是平均數。",
+    "五數只要求非遞減；大量重複值時Q1可以等於中位數，Q3也可以等於最大值。",
+    "未知構件題先建立它在相鄰兩數之間的範圍，再使用給定距離。",
+    "所有資料加同一常數，五數全體平移；乘正數，五數與所有距離按比例縮放。",
+    "若乘負數，排序會反轉，超出本技能一般盒狀圖轉換重點，需重新排序。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "合法五數",
+      "statement": "五項依序非遞減且皆來自同一資料尺度。"
+    },
+    {
+      "name": "標準中央構件",
+      "statement": "Q2即中位數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "Q2-Q1",
+      "conditions": [
+        "箱體左半長。"
+      ],
+      "meaning": "箱體左半長。"
+    },
+    {
+      "formula": "Q3-Q2",
+      "conditions": [
+        "箱體右半長。"
+      ],
+      "meaning": "箱體右半長。"
+    },
+    {
+      "formula": "max-Q3與Q1-min",
+      "conditions": [
+        "兩側鬚長。"
+      ],
+      "meaning": "兩側鬚長。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把平均數直接放進標準五數。",
+    "不能要求五項嚴格遞增。",
+    "不同單位的五數不可直接組成一圖。",
+    "由五數無法重建全部原始資料。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫順序鏈",
+      "check": "把未知數放在正確位置。"
+    },
+    {
+      "step": 2,
+      "instruction": "列距離式",
+      "check": "依全距、IQR或比例。"
+    },
+    {
+      "step": 3,
+      "instruction": "解未知數",
+      "check": "保留分數或小數。"
+    },
+    {
+      "step": 4,
+      "instruction": "驗順序",
+      "check": "確認不越過相鄰構件。"
+    },
+    {
+      "step": 5,
+      "instruction": "解讀圖形",
+      "check": "說明是否重合及哪段長度為0。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "2、a、8、15、19",
+      "solutionSteps": [
+        "a必須介於2與8。"
+      ],
+      "answer": "a必須介於2與8。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "m、8、13、20、31且全距27",
+      "solutionSteps": [
+        "31-m=27，m=4。"
+      ],
+      "answer": "31-m=27，m=4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "Q1=16、Q3=28，右半為左半2倍",
+      "solutionSteps": [
+        "中位數20。"
+      ],
+      "answer": "中位數20。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "五數3、5、7、11、14全部乘2",
+      "solutionSteps": [
+        "變6、10、14、22、28。"
+      ],
+      "answer": "變6、10、14、22、28。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到五個數就認定合法",
+      "why": "逐對檢查順序。",
+      "correction": "逐對檢查順序。"
+    },
+    {
+      "mistake": "Q1等於中位數就說不可能",
+      "why": "重複值可造成重合。",
+      "correction": "重複值可造成重合。"
+    },
+    {
+      "mistake": "距離題把座標相加",
+      "why": "線段長用右減左。",
+      "correction": "線段長用右減左。"
+    },
+    {
+      "mistake": "只轉換箱體不轉換鬚線",
+      "why": "全體資料轉換會影響五數全部。",
+      "correction": "全體資料轉換會影響五數全部。"
+    }
+  ],
+  "selfCheck": [
+    "五項是否非遞減？",
+    "第三項是否中位數？",
+    "距離是否使用右值減左值？",
+    "未知值是否落在相鄰構件之間？"
+  ],
+  "summary": [
+    "五數摘要是有順序限制的位置量。",
+    "相等合法，逆序不合法。",
+    "全距由端點，IQR由Q1與Q3。",
+    "資料轉換需同步作用於全部五數。"
+  ],
+  "connections": {
+    "previous": "承接四分位位置與盒狀圖構件。",
+    "next": [
+      "下一技能利用Q1、Q3計算IQR與離群界線。"
+    ]
+  },
+  "figureReferences": [],
+  "figureAccessibility": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s005-v001",
+      "u22-s005-v002",
+      "u22-s005-v003",
+      "u22-s005-v004",
+      "u22-s005-v005",
+      "u22-s005-v006",
+      "u22-s005-v007",
+      "u22-s005-v008",
+      "u22-s005-v009",
+      "u22-s005-v010",
+      "u22-s005-v011",
+      "u22-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s005-cr001",
+      "u22-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "逐題驗證未知值解後仍滿足順序；以Q1=16、Q3=28案例代回20，左右半長4與8確實為2倍。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "辨識最小值、Q1、中位數、Q3、最大值及其順序。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "1b4bd6388787cc230fd6d8cf614269ccd93bfc29190d0281c377173386f1f7e3"
+}

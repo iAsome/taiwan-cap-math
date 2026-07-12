@@ -1,0 +1,228 @@
+{
+  "lectureId": "u22-s016-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-probability",
+  "skillId": "probability-word",
+  "lockedSkillOrder": 16,
+  "title": "機率應用題：把生活條件翻成事件與樣本空間與機率。",
+  "originalLockedTitle": "機率應用題",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把至少、不小於、含端點等文字翻成集合。",
+    "能辨認單一參加者與整體發放的不同分母。",
+    "能處理複合條件與限制。",
+    "能限制抽樣與機率結論。"
+  ],
+  "prerequisiteSkillIds": [
+    "probability-two-stage"
+  ],
+  "prerequisiteBridge": "整合古典機率、餘事、樹狀圖與兩階段機率。",
+  "glossary": [
+    {
+      "term": "至少",
+      "definition": "大於或等於指定次數。"
+    },
+    {
+      "term": "恰好",
+      "definition": "等於指定次數。"
+    },
+    {
+      "term": "不小於",
+      "definition": "大於或等於。"
+    },
+    {
+      "term": "但不能",
+      "definition": "先符合前條件，再排除後條件。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "至少一次=1-零次",
+      "meaning": "常用翻譯。"
+    },
+    {
+      "symbol": "含兩端區間",
+      "meaning": "兩個端點均納入有利結果。"
+    }
+  ],
+  "conceptNarrative": [
+    "文字題最先處理語意，不急著算。",
+    "「至少一張紅」的完整否定是「零張紅」，不是「恰好一張黑」。",
+    "「介於3與7含兩端」在整數樣本中是3、4、5、6、7。",
+    "單一參加者拿獎牌的機率以全部隨機票為分母，不一定以參加者人數或已發票數為分母。",
+    "歷史相對次數可以估計未來機率，但資料必須具代表性且不能改寫成保證。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "事件翻譯",
+      "statement": "把自然語言變成集合、路徑或不等式。"
+    },
+    {
+      "name": "母體限制",
+      "statement": "結論只能推到抽樣設計代表的對象。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P=有利基本結果/全部基本結果",
+      "conditions": [
+        "等可能時。"
+      ],
+      "meaning": "等可能時。"
+    },
+    {
+      "formula": "加權總機率=Σ來源率×條件率",
+      "conditions": [
+        "多來源文字表格。"
+      ],
+      "meaning": "多來源文字表格。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能忽略等號端點。",
+    "不能把樣本結果當母體必然。",
+    "不能用未限制的乘法結果忽略禁用組合。",
+    "醫療、品質或行為情境不能由統計標記直接作因果判斷。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈關鍵詞",
+      "check": "至少、恰好、含端點、放回等。"
+    },
+    {
+      "step": 2,
+      "instruction": "定義一次試驗與分母",
+      "check": "誰被等機會抽中。"
+    },
+    {
+      "step": 3,
+      "instruction": "列有利集合或路徑",
+      "check": "處理限制與重疊。"
+    },
+    {
+      "step": 4,
+      "instruction": "計算",
+      "check": "選直接法、餘事或樹狀圖。"
+    },
+    {
+      "step": 5,
+      "instruction": "回到語境",
+      "check": "保留單位與推論界線。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "1到10抽介於3與7含端點",
+      "solutionSteps": [
+        "5/10=1/2。"
+      ],
+      "answer": "5/10=1/2。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "末兩碼至少一個0",
+      "solutionSteps": [
+        "1-81/100=19/100。"
+      ],
+      "answer": "1-81/100=19/100。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "1到50被6整除但不被4整除",
+      "solutionSteps": [
+        "6、18、30、42，共4個。"
+      ],
+      "answer": "6、18、30、42，共4個。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "來源機率0.5、0.3、0.2配延誤率0.1、0.2、0.4",
+      "solutionSteps": [
+        "總延誤0.19。"
+      ],
+      "answer": "總延誤0.19。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "至少讀成恰好",
+      "why": "用完整否定檢查。",
+      "correction": "用完整否定檢查。"
+    },
+    {
+      "mistake": "不小於漏等號",
+      "why": "把中文改寫≥。",
+      "correction": "把中文改寫≥。"
+    },
+    {
+      "mistake": "分母選成未中獎票數",
+      "why": "先定義全部等可能基本結果。",
+      "correction": "先定義全部等可能基本結果。"
+    },
+    {
+      "mistake": "抽樣全合格就說母體100%合格",
+      "why": "未抽部分仍有不確定。",
+      "correction": "未抽部分仍有不確定。"
+    }
+  ],
+  "selfCheck": [
+    "關鍵詞是否正確翻譯？",
+    "樣本空間與分母是誰？",
+    "端點、順序、放回是否清楚？",
+    "答案單位與推論範圍是否回到情境？"
+  ],
+  "summary": [
+    "文字題先翻譯事件。",
+    "分母取決於一次隨機試驗。",
+    "限制條件必須反映在樣本空間。",
+    "抽樣證據不等於全體保證。"
+  ],
+  "connections": {
+    "previous": "整合古典機率、餘事、樹狀圖與兩階段機率。",
+    "next": [
+      "下一技能評估遊戲公平、風險與機率宣稱。"
+    ]
+  },
+  "figureReferences": [],
+  "figureAccessibility": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s016-v001",
+      "u22-s016-v002",
+      "u22-s016-v003",
+      "u22-s016-v004",
+      "u22-s016-v005",
+      "u22-s016-v006",
+      "u22-s016-v007",
+      "u22-s016-v008",
+      "u22-s016-v009",
+      "u22-s016-v010",
+      "u22-s016-v011",
+      "u22-s016-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s016-cr001",
+      "u22-s016-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "逐題將中文條件改寫成集合或路徑；檢查「至少一個0」包含00但只計一次，並核對抽樣題沒有把樣本結論誇成母體必然。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "把生活條件翻成事件、樣本空間與機率。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "9a04739b58facb3d4c0a21f78234284992525fe1db18e42a6ca4061fbbb78c51"
+}
