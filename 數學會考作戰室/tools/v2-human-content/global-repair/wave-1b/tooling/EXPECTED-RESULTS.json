@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "math-v2-global-repair-wave-1b-expected-r1",
+  "requiredStartingHead": "1dfe2624a092189506352cb133f6dd0a92cc1fee",
+  "requiredStartingSubject": "fix(math-v2): apply global repair wave 1a",
+  "replacementCount": 12,
+  "affectedBatches": [
+    "003-u02-complete",
+    "009-u08-complete",
+    "011-u10-complete",
+    "018-u17-complete",
+    "024-u23-complete"
+  ],
+  "affectedBatchCount": 5,
+  "allBatchVerifierCount": 24,
+  "allBatchVerifierPassed": 24,
+  "globalAuditStatus": "PASS_GLOBAL_STRUCTURE",
+  "expectedCounts": {
+    "skillDirectories": 339,
+    "lectures": 339,
+    "mcQuestions": 4068,
+    "constructedResponses": 678,
+    "semanticReviews": 4068,
+    "drawingSpecs": 178,
+    "svgFigures": 178
+  },
+  "expectedRawDuplicateCounts": {
+    "exactMcPromptGroups": 0,
+    "crossUnitPromptSkeletonGroups": 0,
+    "numberSwapCandidateGroups": 22,
+    "exactConstructedResponseGroups": 0
+  },
+  "adjudicatedRetainedNumberSwapGroups": 22,
+  "unresolvedDuplicateGroups": 0,
+  "productionActivationAllowed": false,
+  "oldDatabaseDeletionAllowed": false
+}

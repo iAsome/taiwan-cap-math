@@ -211,55 +211,59 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-      "prompt": "化簡 3x+5x。",
-      "givenConditions": [],
-      "target": "合併一次同類項",
+      "prompt": "小安把 4x+3x 化簡成 7x²。下列哪一項最能指出他的錯誤？",
+      "givenConditions": [
+        "小安的錯誤結果為 7x²。"
+      ],
+      "target": "診斷同類項合併時誤改指數的錯誤",
       "choices": [
-        "15x",
-        "8",
-        "8x",
-        "x⁸"
+        "係數應相乘，所以應得到 12x",
+        "常數項沒有一起相加",
+        "同類項相加只加係數，字母與指數保持不變",
+        "x 與 x 相加時應把指數加成 2"
       ],
       "answerIndex": 2,
       "independentSolution": {
-        "derivation": "3x+5x=(3+5)x=8x。",
-        "derivedChoice": "8x",
+        "derivation": "4x 與 3x 是同類項，相加時只把係數 4 和 3 相加，x 的指數仍是 1；正確結果是 7x。",
+        "derivedChoice": "同類項相加只加係數，字母與指數保持不變",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "文字部分相同，只加係數。",
+      "explanation": "同類項相加只處理係數，字母部分和指數保持不變。",
       "steps": [
-        "3x+5x=(3+5)x=8x。"
+        "辨認 4x 與 3x 的字母部分同為 x。",
+        "計算係數 4+3=7。",
+        "保留 x¹，得到 7x，因此 7x² 的錯誤是改變了指數。"
       ],
       "optionAnalysis": [
         {
-          "choice": "15x",
+          "choice": "係數應相乘，所以應得到 12x",
           "truth": false,
-          "reason": "把係數相乘。"
+          "reason": "同類項相加不是把係數相乘。"
         },
         {
-          "choice": "8",
+          "choice": "常數項沒有一起相加",
           "truth": false,
-          "reason": "漏寫 x。"
+          "reason": "原式沒有常數項，問題不在漏加常數。"
         },
         {
-          "choice": "8x",
+          "choice": "同類項相加只加係數，字母與指數保持不變",
           "truth": true,
-          "reason": "8x 正確。"
+          "reason": "這正確指出只加係數並保留字母與指數。"
         },
         {
-          "choice": "x⁸",
+          "choice": "x 與 x 相加時應把指數加成 2",
           "truth": false,
-          "reason": "誤把加法變成指數相加。"
+          "reason": "指數相加是同底數相乘的規則，不適用於同類項相加。"
         }
       ],
-      "misconceptionTarget": "同類項加法誤用乘法規則",
-      "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
+      "misconceptionTarget": "把同類項加法誤套用為同底數乘法的指數規則",
+      "prerequisiteCheck": "只使用多項式項、係數與同類項定義。",
       "estimatedTimeSec": 90,
-      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
-      "roundingCheck": "全程精確運算，不需四捨五入。",
-      "ambiguityAudit": "題幹指定「合併一次同類項」且四個選項以同一表示層級作答；逐項重算後只有「8x」成立。",
-      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
-      "difficultyReason": "基礎：合併一次同類項，以單一核心定義或一步運算完成。",
+      "unitCheck": "純代數表示，不涉及單位。",
+      "roundingCheck": "全程精確運算。",
+      "ambiguityAudit": "題目要求診斷 7x² 的錯誤，只有第三項正確描述規則。",
+      "boundaryAudit": "只使用國中多項式同類項合併。",
+      "difficultyReason": "基礎：辨認同類項合併時係數與字母部分的角色。",
       "literacyContextNecessity": null,
       "visualMode": "text-only",
       "figureId": null,
@@ -267,7 +271,7 @@ export default {
       "semanticReviewRef": "u10-s003-v001-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "522aa05ec9cc3dd557417e5b5484e10fcb716b92344b39628dfcca28b6f4ece7"
+      "contentSha256": "cc0ad5477cf29a6c8992dac25e80cfa70946b954bdd9da59d708e02b801d2b24"
     },
     {
       "questionId": "u10-s003-v002",
@@ -351,55 +355,59 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-      "prompt": "化簡 6a-2a+3。",
-      "givenConditions": [],
-      "target": "含常數的合併",
+      "prompt": "將 6a−2b+3a+5 合併同類項，結果為何？",
+      "givenConditions": [
+        "a 項、b 項與常數項必須分別處理。"
+      ],
+      "target": "辨認不同字母項並正確合併同類項",
       "choices": [
-        "4a+3",
-        "4a",
-        "8a+3",
-        "4a³"
+        "9a−2b+5",
+        "7a+b+5",
+        "9ab+5",
+        "9a−2b"
       ],
       "answerIndex": 0,
       "independentSolution": {
-        "derivation": "6a-2a=4a，常數 3 保留。",
-        "derivedChoice": "4a+3",
+        "derivation": "6a 與 3a 可合併為 9a；−2b 沒有其他 b 項，常數 5 也保留，所以得到 9a−2b+5。",
+        "derivedChoice": "9a−2b+5",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "只合併 a 項，得到 4a+3。",
+      "explanation": "只有 6a 和 3a 是同類項；−2b 與常數 5 都必須保留。",
       "steps": [
-        "6a-2a=4a，常數 3 保留。"
+        "將 a 項分組：6a+3a=9a。",
+        "b 項只有 −2b，保持不變。",
+        "常數 5 保持不變，得到 9a−2b+5。"
       ],
       "optionAnalysis": [
         {
-          "choice": "4a+3",
+          "choice": "9a−2b+5",
           "truth": true,
-          "reason": "只合併 a 項，得到 4a+3。"
+          "reason": "正確合併 a 項並保留 b 項與常數。"
         },
         {
-          "choice": "4a",
+          "choice": "7a+b+5",
           "truth": false,
-          "reason": "漏掉常數。"
+          "reason": "把 a 項與 b 項錯誤混合。"
         },
         {
-          "choice": "8a+3",
+          "choice": "9ab+5",
           "truth": false,
-          "reason": "把減法看加法。"
+          "reason": "把加減項誤寫成乘積 ab。"
         },
         {
-          "choice": "4a³",
+          "choice": "9a−2b",
           "truth": false,
-          "reason": "誤改指數。"
+          "reason": "漏掉常數 5。"
         }
       ],
-      "misconceptionTarget": "合併後漏常數或改指數",
-      "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
+      "misconceptionTarget": "把不同字母的項合併，或在化簡時漏掉未合併項",
+      "prerequisiteCheck": "只使用項、同類項與加減法。",
       "estimatedTimeSec": 90,
-      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
-      "roundingCheck": "全程精確運算，不需四捨五入。",
-      "ambiguityAudit": "題幹指定「含常數的合併」且四個選項以同一表示層級作答；逐項重算後只有「4a+3」成立。",
-      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
-      "difficultyReason": "基礎：含常數的合併，以單一核心定義或一步運算完成。",
+      "unitCheck": "純代數表示，不涉及單位。",
+      "roundingCheck": "全程精確運算。",
+      "ambiguityAudit": "a 項、b 項與常數項分類唯一，只有第一項等價於原式。",
+      "boundaryAudit": "只使用國中多項式同類項合併。",
+      "difficultyReason": "基礎：需先分類不同字母項，再合併唯一一組同類項。",
       "literacyContextNecessity": null,
       "visualMode": "text-only",
       "figureId": null,
@@ -407,7 +415,7 @@ export default {
       "semanticReviewRef": "u10-s003-v003-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a3dbdcb3742437258fc675b4f2d23ab6c6f5a421c571420ec2549484cad1f788"
+      "contentSha256": "4cd8ac514837bbf3e049b27f1a19f7a0c28fb9cd0844eba47847be60b3a1ede0"
     },
     {
       "questionId": "u10-s003-v004",
@@ -1181,12 +1189,12 @@ export default {
     {
       "reviewId": "u10-s003-v001-review",
       "questionId": "u10-s003-v001",
-      "questionContentSha256": "522aa05ec9cc3dd557417e5b5484e10fcb716b92344b39628dfcca28b6f4ece7",
+      "questionContentSha256": "cc0ad5477cf29a6c8992dac25e80cfa70946b954bdd9da59d708e02b801d2b24",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "3x+5x=(3+5)x=8x。",
-      "derivedAnswer": "8x",
-      "storedAnswer": "8x",
+      "independentSolution": "4x 與 3x 是同類項，相加時只把係數 4 和 3 相加，x 的指數仍是 1；正確結果是 7x。",
+      "derivedAnswer": "同類項相加只加係數，字母與指數保持不變",
+      "storedAnswer": "同類項相加只加係數，字母與指數保持不變",
       "answerMatch": true,
       "optionTruth": [
         false,
@@ -1196,21 +1204,21 @@ export default {
       ],
       "uniqueCorrectAnswer": true,
       "ambiguityChecks": {
-        "secondCorrectAnswer": "逐一檢查四選項：15x：把係數相乘。；8：漏寫 x。；8x：8x 正確。；x⁸：誤把加法變成指數相加。",
-        "undefinedSymbol": "題幹用語均在「同類項合併」講義定義。",
-        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
-        "roundingConflict": "全程精確運算，不需四捨五入。",
-        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
-        "alternateReading": "常見誤讀「同類項加法誤用乘法規則」會導向錯誤選項，不能形成第二個正解。"
+        "secondCorrectAnswer": "獨立重算得到「同類項相加只加係數，字母與指數保持不變」。其餘選項逐項檢查：「係數應相乘，所以應得到 12x」誤用係數乘法；「常數項沒有一起相加」提到不存在的常數項；「x 與 x 相加時應把指數加成 2」誤用同底數乘法規則",
+        "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「診斷同類項合併錯誤」。",
+        "unitConflict": "純數或代數表示，不涉及不相容單位。",
+        "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。",
+        "domainBoundary": "只使用國中教育會考範圍與該技能已定義內容。",
+        "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。"
       },
-      "difficultyReason": "基礎：合併一次同類項，以單一核心定義或一步運算完成。",
+      "difficultyReason": "基礎：不只計算結果，還要指出指數不應改變的原因。",
       "literacyContextNecessity": null,
-      "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
-      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "prerequisiteCheck": "只使用項、係數、字母部分與同類項定義。",
+      "languageCheck": "錯誤結果與診斷目標均明示，四個選項互斥。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「化簡 3x+5x。」獨立重算：3x+5x=(3+5)x=8x。 正解「8x」；四個選項理由均已逐項核對。",
+      "reviewerNote": "本題已由和 U03 完全相同的直接化簡，改為錯誤診斷；唯一正確為第三項。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "22cb05d61864b38bda6e0e7e1c6e1d406670dd4dc7125e2faefdbe4313e4d899"
+      "contentSha256": "8d34f5d0b6d826aa75f43dd710850d20643abe10a37d60827c856464ab060e28"
     },
     {
       "reviewId": "u10-s003-v002-review",
@@ -1249,12 +1257,12 @@ export default {
     {
       "reviewId": "u10-s003-v003-review",
       "questionId": "u10-s003-v003",
-      "questionContentSha256": "a3dbdcb3742437258fc675b4f2d23ab6c6f5a421c571420ec2549484cad1f788",
+      "questionContentSha256": "4cd8ac514837bbf3e049b27f1a19f7a0c28fb9cd0844eba47847be60b3a1ede0",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "6a-2a=4a，常數 3 保留。",
-      "derivedAnswer": "4a+3",
-      "storedAnswer": "4a+3",
+      "independentSolution": "6a 與 3a 可合併為 9a；−2b 沒有其他 b 項，常數 5 也保留，所以得到 9a−2b+5。",
+      "derivedAnswer": "9a−2b+5",
+      "storedAnswer": "9a−2b+5",
       "answerMatch": true,
       "optionTruth": [
         true,
@@ -1264,21 +1272,21 @@ export default {
       ],
       "uniqueCorrectAnswer": true,
       "ambiguityChecks": {
-        "secondCorrectAnswer": "逐一檢查四選項：4a+3：只合併 a 項，得到 4a+3。；4a：漏掉常數。；8a+3：把減法看加法。；4a³：誤改指數。",
-        "undefinedSymbol": "題幹用語均在「同類項合併」講義定義。",
-        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
-        "roundingConflict": "全程精確運算，不需四捨五入。",
-        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
-        "alternateReading": "常見誤讀「合併後漏常數或改指數」會導向錯誤選項，不能形成第二個正解。"
+        "secondCorrectAnswer": "獨立重算得到「9a−2b+5」。其餘選項逐項檢查：「7a+b+5」混合不同字母項；「9ab+5」誤成乘法；「9a−2b」漏掉常數",
+        "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「辨認並合併同類項」。",
+        "unitConflict": "純數或代數表示，不涉及不相容單位。",
+        "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。",
+        "domainBoundary": "只使用國中教育會考範圍與該技能已定義內容。",
+        "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。"
       },
-      "difficultyReason": "基礎：含常數的合併，以單一核心定義或一步運算完成。",
+      "difficultyReason": "基礎：需分辨 a 項、b 項及常數項，避免跨類合併。",
       "literacyContextNecessity": null,
-      "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
-      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "prerequisiteCheck": "只使用多項式項與同類項定義。",
+      "languageCheck": "式子與所求結果完整，使用一致代數符號。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「化簡 6a-2a+3。」獨立重算：6a-2a=4a，常數 3 保留。 正解「4a+3」；四個選項理由均已逐項核對。",
+      "reviewerNote": "本題改為多類項分類，與 U03 的單一字母直接合併題區隔。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "dbabae1208051634d5a0daab684e7d94d5ad1a6f7f1e0238b9707bc2ec408fe3"
+      "contentSha256": "153f61004fe4f5872b5320e2da72d051a4bfaf8777a3641c9b2dfa7efc87fc3e"
     },
     {
       "reviewId": "u10-s003-v004-review",

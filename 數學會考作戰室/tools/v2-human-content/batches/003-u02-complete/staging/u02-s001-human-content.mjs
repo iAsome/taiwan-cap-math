@@ -489,7 +489,7 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "CAP_108_JUNIOR_MATH",
-    "text": "下列哪一個敘述正確？",
+    "text": "關於正整數的因數與倍數，下列哪一個敘述正確？",
     "choices": [
       "1 是每個正整數的因數",
       "0 是每個正整數的因數",
@@ -497,35 +497,35 @@ export const QUESTIONS = [
       "12 是 5 的倍數"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：任一正整數 n 都有 n÷1=n；因此 1 一定是 n 的因數。所以答案是「1 是每個正整數的因數」。",
+    "explanation": "依因數與倍數的定義逐項判斷。任一正整數 n 都可寫成 1×n，因此 1 是每個正整數的因數。",
     "steps": [
-      "任一正整數 n 都有 n÷1=n",
-      "因此 1 一定是 n 的因數"
+      "以 n 表示任一正整數，n÷1=n 為整數。",
+      "排除除以 0、無限多個正因數及 12 是 5 的倍數等錯誤敘述。"
     ],
     "optionAnalysis": [
       {
         "choice": "1 是每個正整數的因數",
         "truth": true,
-        "reason": "n÷1=n，總是整數。"
+        "reason": "n÷1=n，對每個正整數都成立。"
       },
       {
         "choice": "0 是每個正整數的因數",
         "truth": false,
-        "reason": "除以 0 沒有定義。"
+        "reason": "因數判斷需要作除法，而除以 0 沒有定義。"
       },
       {
         "choice": "每個正整數都有無限多個正因數",
         "truth": false,
-        "reason": "正因數個數有限。"
+        "reason": "每個固定正整數只有有限個正因數。"
       },
       {
         "choice": "12 是 5 的倍數",
         "truth": false,
-        "reason": "12÷5 不是整數。"
+        "reason": "12÷5 不是整數，所以 12 不是 5 的倍數。"
       }
     ],
-    "commonMistake": "把 0 當成可以作除數的因數。",
-    "concept": "因數定義依賴整除，0 不能作除數。",
+    "commonMistake": "忽略因數定義中的整除條件，或把 0 當成可作除數。",
+    "concept": "因數與倍數必須以整除關係判斷。",
     "tags": [
       "數與量",
       "因數與倍數",
@@ -533,11 +533,11 @@ export const QUESTIONS = [
     ],
     "estimatedTimeSec": "60",
     "prerequisiteSkillIds": [],
-    "authoringIntent": "判斷因數性質。",
+    "authoringIntent": "用正整數範圍內的定義判斷因數與倍數性質。",
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "48ac561d80fa3256985f124e91d74d778cbaa551a1441fc773c534ff807be3dc",
+    "contentSha256": "264fe2e7a3aa222eeff5fcc896b66fad168e34ba5c77dd77f595e8b2fbcb3dd8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {

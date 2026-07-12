@@ -494,7 +494,7 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "CAP_108_JUNIOR_MATH",
-    "text": "將 7/12、5/8、2/3 由小到大排列，何者正確？",
+    "text": "比較 7/12、5/8 與 2/3 後，下列哪一條不等式鏈正確？",
     "choices": [
       "7/12＜5/8＜2/3",
       "5/8＜7/12＜2/3",
@@ -502,35 +502,36 @@ export const QUESTIONS = [
       "2/3＜5/8＜7/12"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：通分到24：14/24、15/24、16/24；因此7/12<5/8<2/3。所以答案是「7/12＜5/8＜2/3」。",
+    "explanation": "以 24 為共同分母，三個分數依序為 14/24、15/24、16/24，因此正確大小鏈為 7/12＜5/8＜2/3。",
     "steps": [
-      "通分到24：14/24、15/24、16/24",
-      "因此7/12<5/8<2/3"
+      "取共同分母 24。",
+      "將三數改寫為 14/24、15/24、16/24。",
+      "比較分子後寫出完整不等式鏈。"
     ],
     "optionAnalysis": [
       {
         "choice": "7/12＜5/8＜2/3",
         "truth": true,
-        "reason": "14<15<16，正確。"
+        "reason": "14/24＜15/24＜16/24。"
       },
       {
         "choice": "5/8＜7/12＜2/3",
         "truth": false,
-        "reason": "前兩項顛倒。"
+        "reason": "5/8=15/24，大於 7/12=14/24。"
       },
       {
         "choice": "7/12＜2/3＜5/8",
         "truth": false,
-        "reason": "2/3與5/8顛倒。"
+        "reason": "2/3=16/24，大於 5/8=15/24。"
       },
       {
         "choice": "2/3＜5/8＜7/12",
         "truth": false,
-        "reason": "順序完全相反。"
+        "reason": "把最大值 2/3 放在最前面。"
       }
     ],
-    "commonMistake": "多個分數用不同基準比較，造成排序矛盾。",
-    "concept": "統一分母後可一致排序。",
+    "commonMistake": "只比較原分子或原分母，沒有先建立共同分母。",
+    "concept": "異分母分數可通分後比較。",
     "tags": [
       "數與量",
       "分數大小比較",
@@ -540,11 +541,11 @@ export const QUESTIONS = [
     "prerequisiteSkillIds": [
       "fraction-lcm-application"
     ],
-    "authoringIntent": "排序三個分數。",
+    "authoringIntent": "使用共同分母辨認完整分數大小鏈。",
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b27af811c6567bd1d1c86a0d25f7100bab1d6f0afcfc75fb6aae7df971c79609",
+    "contentSha256": "08f85aeb12c1ddcb5993e2471cfed5502c3403420f036ce71028e62b6cbdce6c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {

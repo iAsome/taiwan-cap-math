@@ -321,54 +321,57 @@ export const QUESTIONS = [
     "type": "mc",
     "itemType": "single-choice",
     "sourceScope": "CAP_108_JUNIOR_MATH",
-    "text": "四邊形三個內角為80°、95°、110°，第四角是多少？",
+    "text": "四邊形有兩個直角，另外兩個內角相等。每一個相等的內角是多少？",
     "givenConditions": [
-      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      "四邊形內角和為 360°。",
+      "其中兩個內角各為 90°。",
+      "其餘兩個內角相等。"
     ],
-    "target": "由三角求第四角。",
+    "target": "利用內角和與相等關係求每一個未知角",
     "choices": [
-      "75°",
-      "65°",
-      "85°",
-      "285°"
+      "90°",
+      "45°",
+      "180°",
+      "270°"
     ],
     "answerIndex": 0,
-    "independentSolution": "重新依題目條件計算：第四角=360°-(80°+95°+110°)=75°。",
-    "explanation": "第四角=360°-(80°+95°+110°)=75°。",
+    "independentSolution": "四邊形內角和為 360°；兩個直角合計 180°，其餘兩角合計 180°，又因兩角相等，所以每角為 90°。",
+    "explanation": "先扣除兩個直角，再把剩餘角度平均分給兩個相等角。",
     "steps": [
-      "第四角=360°-(80°+95°+110°)=75°。",
-      "因此選擇「75°」。"
+      "360°−90°−90°=180°。",
+      "180°÷2=90°。",
+      "因此每一個相等的內角為 90°。"
     ],
     "optionAnalysis": [
       {
-        "choice": "75°",
+        "choice": "90°",
         "truth": true,
-        "reason": "依獨立重算「第四角=360°-(80°+95°+110°)=75°。」，此選項正確回答所求。"
+        "reason": "兩個直角合計 180°，剩餘 180° 平分給兩個相等角，因此每角正好是 90°。"
       },
       {
-        "choice": "65°",
+        "choice": "45°",
         "truth": false,
-        "reason": "選項「65°」不符合題意；依四角和360°。應得到「75°」，此錯誤常源自：用180°扣除。"
+        "reason": "45° 是把剩餘 180° 錯誤除以四；題目只有兩個相等的未知角，應除以二。"
       },
       {
-        "choice": "85°",
+        "choice": "180°",
         "truth": false,
-        "reason": "選項「85°」不符合題意；依四角和360°。應得到「75°」，此錯誤常源自：用180°扣除。"
+        "reason": "180° 是兩個未知角合計的角度，不是每一個未知內角各自的大小。"
       },
       {
-        "choice": "285°",
+        "choice": "270°",
         "truth": false,
-        "reason": "選項「285°」不符合題意；依四角和360°。應得到「75°」，此錯誤常源自：用180°扣除。"
+        "reason": "270° 只扣除一個直角，忽略題目還有第二個 90° 直角與兩角相等條件。"
       }
     ],
-    "misconceptionTarget": "用180°扣除。",
-    "prerequisiteCheck": "只使用先備技能trapezoid-area與本技能定義，不使用後續單元知識。",
+    "misconceptionTarget": "求出兩個未知角總和後忘記除以 2",
+    "prerequisiteCheck": "只使用四邊形內角和、直角與相等關係。",
     "estimatedTimeSec": 60,
-    "unitCheck": "角度或長度單位依題意一致",
-    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
-    "ambiguityAudit": "題目明確要求「由三角求第四角。」；四個選項互異，只有75°符合獨立重算。",
-    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
-    "difficultyReason": "直接計算。",
+    "unitCheck": "角度以度表示。",
+    "roundingCheck": "全部角度為精確值。",
+    "ambiguityAudit": "兩個未知角明示相等，因此由總和可唯一決定每角 90°。",
+    "boundaryAudit": "只使用國中平面幾何角度關係。",
+    "difficultyReason": "基礎：先扣除已知角，再平均分配剩餘角度。",
     "literacyContextNecessity": null,
     "visualMode": "text-only",
     "figureId": null,
@@ -378,7 +381,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "af19322c1b56ca0c606890196ee156f64380ea91c826b14cabcda8cd64b2f453"
+    "contentSha256": "639a5fe08e72862fa546c4acb246a2663b5ae495da28383b265d9d2ff5a6d01b"
   },
   {
     "questionId": "u17-s016-v003",

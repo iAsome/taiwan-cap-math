@@ -431,43 +431,44 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "CAP_108_JUNIOR_MATH",
-    "text": "2又5/6-1又1/3 等於多少？",
+    "text": "把 2又5/6 化成假分數，再判斷它位於哪兩個相鄰整數之間。下列哪一個敘述正確？",
     "choices": [
-      "1又1/6",
-      "2又1/2",
-      "1又2/3",
-      "1又1/2"
+      "13/6，介於 1 和 2 之間",
+      "15/6，介於 2 和 3 之間",
+      "16/6，介於 2 和 3 之間",
+      "17/6，介於 2 和 3 之間"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：1又1/3=1又2/6；2又5/6-1又2/6=1又3/6=1又1/2。所以答案是「1又1/2」。",
+    "explanation": "先以「整數×分母＋分子」得到 17/6，再和 12/6、18/6 比較，可知介於 2 和 3 之間。",
     "steps": [
-      "1又1/3=1又2/6",
-      "2又5/6-1又2/6=1又3/6=1又1/2"
+      "2×6+5=17，所以 2又5/6=17/6。",
+      "2=12/6，3=18/6。",
+      "12/6＜17/6＜18/6。"
     ],
     "optionAnalysis": [
       {
-        "choice": "1又1/6",
+        "choice": "13/6，介於 1 和 2 之間",
         "truth": false,
-        "reason": "分數差錯。"
+        "reason": "13/6 不是 2又5/6 的轉換結果。"
       },
       {
-        "choice": "2又1/2",
+        "choice": "15/6，介於 2 和 3 之間",
         "truth": false,
-        "reason": "整數部分未減。"
+        "reason": "15/6=2又1/2，不等於原數。"
       },
       {
-        "choice": "1又2/3",
+        "choice": "16/6，介於 2 和 3 之間",
         "truth": false,
-        "reason": "未約分或通分錯。"
+        "reason": "16/6=2又2/3，不等於原數。"
       },
       {
-        "choice": "1又1/2",
+        "choice": "17/6，介於 2 和 3 之間",
         "truth": true,
-        "reason": "1又1/2正確。"
+        "reason": "17/6 等於 2又5/6，且介於 2 和 3 之間。"
       }
     ],
-    "commonMistake": "1/3沒有通分成2/6。",
-    "concept": "帶分數同分母後可分別相減。",
+    "commonMistake": "只做 2+5，沒有以整數部分乘分母。",
+    "concept": "帶分數化假分數後可用相鄰整數的同分母表示判斷位置。",
     "tags": [
       "數與量",
       "帶分數與假分數",
@@ -477,11 +478,11 @@ export const QUESTIONS = [
     "prerequisiteSkillIds": [
       "fraction-multiply-divide"
     ],
-    "authoringIntent": "帶分數減法。",
+    "authoringIntent": "結合帶分數轉換與大小定位。",
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6bdd7e2c7a1dfdc332def6a0a3c0051d19928108a9c51666832bbb4addd5472e",
+    "contentSha256": "859d2747a478fda4856b719450da6bf0110f093c4a569ba81fe0b15346aa773c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -495,43 +496,43 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "CAP_108_JUNIOR_MATH",
-    "text": "4又1/5+2又3/10 等於多少？",
+    "text": "假分數 23/5 化成帶分數後，哪一個表示正確？",
     "choices": [
-      "6又1/2",
-      "6又2/5",
-      "7又1/2",
-      "6又4/15"
+      "4又3/5",
+      "4又2/5",
+      "5又3/5",
+      "3又4/5"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：1/5=2/10；4+2+(2/10+3/10)=6又5/10=6又1/2。所以答案是「6又1/2」。",
+    "explanation": "用 23 除以 5，商 4 是整數部分，餘數 3 是分子，分母仍為 5，所以為 4又3/5。",
     "steps": [
-      "1/5=2/10",
-      "4+2+(2/10+3/10)=6又5/10=6又1/2"
+      "計算 23÷5=4 餘 3。",
+      "將商寫成整數部分，餘數寫在原分母 5 上。"
     ],
     "optionAnalysis": [
       {
-        "choice": "6又1/2",
+        "choice": "4又3/5",
         "truth": true,
-        "reason": "6又1/2正確。"
+        "reason": "4×5+3=23。"
       },
       {
-        "choice": "6又2/5",
+        "choice": "4又2/5",
         "truth": false,
-        "reason": "分數相加錯。"
+        "reason": "4×5+2=22，不等於 23。"
       },
       {
-        "choice": "7又1/2",
+        "choice": "5又3/5",
         "truth": false,
-        "reason": "沒有超過1，不應進位。"
+        "reason": "整數部分應是除法的商 4，不是 5。"
       },
       {
-        "choice": "6又4/15",
+        "choice": "3又4/5",
         "truth": false,
-        "reason": "分母直接相加。"
+        "reason": "3×5+4=19，不等於 23。"
       }
     ],
-    "commonMistake": "把1/5與3/10的分母相加。",
-    "concept": "帶分數加法先統一分母。",
+    "commonMistake": "把除數 5 當成整數部分，或把商與餘數對調。",
+    "concept": "假分數化帶分數時，商為整數部分、餘數為分子。",
     "tags": [
       "數與量",
       "帶分數與假分數",
@@ -541,11 +542,11 @@ export const QUESTIONS = [
     "prerequisiteSkillIds": [
       "fraction-multiply-divide"
     ],
-    "authoringIntent": "異分母帶分數加法。",
+    "authoringIntent": "由除法的商與餘數完成假分數轉換。",
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f47db8891f5b92e7e7aa7e699b5700f3f23923c67f1ede147a683b9f46e0347b",
+    "contentSha256": "5ab8d8446bde2cbc7136de1a13e5e30a8c8a8a9687e15aa8d78dbf39ed558123",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {

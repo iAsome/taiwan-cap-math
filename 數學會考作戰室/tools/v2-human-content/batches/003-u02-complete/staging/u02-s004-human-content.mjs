@@ -302,43 +302,44 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "CAP_108_JUNIOR_MATH",
-    "text": "45 和 60 的最大公因數是多少？",
+    "text": "已知 45=3²×5，60=2²×3×5。求最大公因數時，共同質因數應組成下列哪一個算式？",
     "choices": [
       "5",
-      "15",
-      "20",
-      "30"
+      "3×5",
+      "2²×5",
+      "2×3×5"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：45=3²×5，60=2²×3×5；共同質因數取較小指數得3×5=15。所以答案是「15」。",
+    "explanation": "最大公因數只取兩數共同出現的質因數，且每一個共同質因數取較小指數，所以得到 3×5。",
     "steps": [
-      "45=3²×5，60=2²×3×5",
-      "共同質因數取較小指數得3×5=15"
+      "比較 45=3²×5 與 60=2²×3×5。",
+      "共同質因數為 3 和 5，分別取指數 1。",
+      "得到 3×5。"
     ],
     "optionAnalysis": [
       {
         "choice": "5",
         "truth": false,
-        "reason": "5 是公因數但不是最大。"
+        "reason": "只取 5，漏掉共同質因數 3。"
       },
       {
-        "choice": "15",
+        "choice": "3×5",
         "truth": true,
-        "reason": "15 是最大共同因數。"
+        "reason": "共同質因數 3 和 5 都取較小指數 1。"
       },
       {
-        "choice": "20",
+        "choice": "2²×5",
         "truth": false,
-        "reason": "20不能整除45。"
+        "reason": "2 不是 45 的質因數，不能放入共同部分。"
       },
       {
-        "choice": "30",
+        "choice": "2×3×5",
         "truth": false,
-        "reason": "30不能整除45。"
+        "reason": "2 不是共同質因數。"
       }
     ],
-    "commonMistake": "共同質因數沒有全部取出。",
-    "concept": "求 GCD 時共同質因數取較小指數。",
+    "commonMistake": "把只出現在其中一個數的質因數也放入最大公因數。",
+    "concept": "求 GCD 時，只取共同質因數並取較小指數。",
     "tags": [
       "數與量",
       "最大公因數",
@@ -348,11 +349,11 @@ export const QUESTIONS = [
     "prerequisiteSkillIds": [
       "fraction-prime-factorization"
     ],
-    "authoringIntent": "用質因數分解求 GCD。",
+    "authoringIntent": "辨認質因數分解法中最大公因數的共同部分。",
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3c9722f59eabaf56cccd66be58b51129ff732feb458a152c70e05fe953bda273",
+    "contentSha256": "4d9e48db6b791c1fbbd93f507dd53e51800cae518b84ee5dd6ccb5e3b1391c26",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {

@@ -298,43 +298,44 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "CAP_108_JUNIOR_MATH",
-    "text": "12 和 18 的最小公倍數是多少？",
+    "text": "已知 12=2²×3，18=2×3²。求最小公倍數時，應取各質因數的較大指數，得到哪一個算式？",
     "choices": [
-      "24",
-      "36",
-      "54",
-      "72"
+      "2×3²",
+      "2²×3²",
+      "2²×3",
+      "2³×3²"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：12=2²×3，18=2×3²；取較大指數得2²×3²=36。所以答案是「36」。",
+    "explanation": "最小公倍數要涵蓋兩數中的所有質因數，對每一個質因數取較大指數，因此為 2²×3²。",
     "steps": [
-      "12=2²×3，18=2×3²",
-      "取較大指數得2²×3²=36"
+      "比較 12=2²×3 與 18=2×3²。",
+      "2 的較大指數為 2，3 的較大指數為 2。",
+      "得到 2²×3²。"
     ],
     "optionAnalysis": [
       {
-        "choice": "24",
+        "choice": "2×3²",
         "truth": false,
-        "reason": "24不是18的倍數。"
+        "reason": "2 只取一次，不能涵蓋 12 中的 2²。"
       },
       {
-        "choice": "36",
+        "choice": "2²×3²",
         "truth": true,
-        "reason": "36同時為兩數倍數且最小。"
+        "reason": "2 和 3 都取兩數中較大的指數 2。"
       },
       {
-        "choice": "54",
+        "choice": "2²×3",
         "truth": false,
-        "reason": "54不是12的倍數。"
+        "reason": "3 只取一次，不能涵蓋 18 中的 3²。"
       },
       {
-        "choice": "72",
+        "choice": "2³×3²",
         "truth": false,
-        "reason": "72是共同倍數但較大。"
+        "reason": "2 的指數 3 超過必要值，所得共同倍數不是最小。"
       }
     ],
-    "commonMistake": "求 LCM 時把共同因數只取一次。",
-    "concept": "LCM 對所有質因數取較大指數。",
+    "commonMistake": "把較大指數取錯，或取超過必要的指數。",
+    "concept": "求 LCM 時，各質因數取兩數中較大指數。",
     "tags": [
       "數與量",
       "最小公倍數",
@@ -344,11 +345,11 @@ export const QUESTIONS = [
     "prerequisiteSkillIds": [
       "fraction-gcd-basic"
     ],
-    "authoringIntent": "用質因數分解求 LCM。",
+    "authoringIntent": "辨認質因數分解法中最小公倍數的指數選擇。",
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "024adb7f41dd58d9694bace81f16c9e0870aab2f0718ca32766b3a44da5fb1f6",
+    "contentSha256": "30760417febd9b3c17f7f36b4e02aad8105cfef91aefe344308c5006819b6f13",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {

@@ -617,59 +617,61 @@ export const QUESTIONS = [
     "figureId": null,
     "drawingSpecRef": null,
     "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
-    "text": "梯形上底 8 公分、下底 14 公分、高 5 公分，面積是多少？",
+    "text": "一個長方形長 11 公分、寬 5 公分；另一個梯形上底 8 公分、下底 14 公分、高 5 公分。兩個圖形的面積關係為何？",
     "givenConditions": [
-      "上底 8、下底 14、高 5 公分。"
+      "長方形長 11 公分、寬 5 公分。",
+      "梯形上底 8 公分、下底 14 公分、高 5 公分。"
     ],
-    "target": "求梯形面積",
+    "target": "比較長方形與梯形面積",
     "choices": [
-      "110 平方公分",
-      "70 平方公分",
-      "55 平方公分",
-      "30 平方公分"
+      "長方形面積比梯形大 25 平方公分",
+      "梯形面積比長方形大 25 平方公分",
+      "兩個圖形的面積相等",
+      "資料不足，無法比較"
     ],
     "answerIndex": 2,
-    "independentSolution": "面積 55 平方公分。",
-    "explanation": "使用兩平行底的平均乘高。",
+    "independentSolution": "長方形面積=11×5=55；梯形面積=(8+14)×5÷2=55，所以兩者相等。",
+    "explanation": "分別使用長方形與梯形面積公式，兩者都得到 55 平方公分。",
     "steps": [
-      "兩底和 22。",
-      "22×5÷2=55。"
+      "長方形：11×5=55 平方公分。",
+      "梯形：(8+14)×5÷2=55 平方公分。",
+      "比較後可知面積相等。"
     ],
     "optionAnalysis": [
       {
-        "choice": "110 平方公分",
+        "choice": "長方形面積比梯形大 25 平方公分",
         "truth": false,
-        "reason": "忘記除以 2。"
+        "reason": "長方形面積是 55，沒有多 25。"
       },
       {
-        "choice": "70 平方公分",
+        "choice": "梯形面積比長方形大 25 平方公分",
         "truth": false,
-        "reason": "只用下底×高。"
+        "reason": "梯形面積也是 55，沒有多 25。"
       },
       {
-        "choice": "55 平方公分",
+        "choice": "兩個圖形的面積相等",
         "truth": true,
-        "reason": "梯形面積=(8+14)×5÷2=22×5÷2=55。"
+        "reason": "兩者面積都為 55 平方公分。"
       },
       {
-        "choice": "30 平方公分",
+        "choice": "資料不足，無法比較",
         "truth": false,
-        "reason": "用兩底差乘高。"
+        "reason": "兩圖形計算面積所需資料都已提供。"
       }
     ],
-    "misconceptionTarget": "漏除以 2 或只用一個底。",
-    "prerequisiteCheck": "能使用梯形公式。",
+    "misconceptionTarget": "只計算其中一個圖形，或忘記梯形公式要除以 2。",
+    "prerequisiteCheck": "能使用長方形與梯形面積公式。",
     "estimatedTimeSec": 90,
-    "unitCheck": "所有長度為公分，答案平方公分。",
-    "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
-    "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
-    "difficultyReason": "標準多步運算。",
+    "unitCheck": "所有長度為公分，面積為平方公分。",
+    "roundingCheck": "全部資料為精確值。",
+    "ambiguityBoundaryAudit": "兩圖形的必要尺寸皆完整，面積可唯一計算。",
+    "difficultyReason": "標準：需選用兩種面積公式並比較結果。",
     "literacyContextNecessity": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "833bd85221e8e5dc6ef5e9cbb17fde5ff7fb43a04695fbd2fc8c1f4daca8133d"
+    "contentSha256": "b4edbc6b38d8820e62428ac3511ce08208567981aa18184b89abdb428f2c2b6f"
   },
   {
     "questionId": "u08-s009-v007",
@@ -1422,12 +1424,12 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v006",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "833bd85221e8e5dc6ef5e9cbb17fde5ff7fb43a04695fbd2fc8c1f4daca8133d",
+    "contentSha256": "b4edbc6b38d8820e62428ac3511ce08208567981aa18184b89abdb428f2c2b6f",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-    "independentSolution": "也可先平均底長 11，再乘高 5。",
-    "derivedAnswer": "55 平方公分",
-    "storedAnswer": "55 平方公分",
+    "independentSolution": "長方形面積為 11×5=55；梯形兩底的平均長度是 (8+14)÷2=11，再乘高 5 也得到 55，所以兩者面積相等。",
+    "derivedAnswer": "兩個圖形的面積相等",
+    "storedAnswer": "兩個圖形的面積相等",
     "answerMatch": true,
     "optionTruth": [
       false,
@@ -1437,21 +1439,21 @@ export const SEMANTIC_REVIEWS = [
     ],
     "uniqueCorrectAnswer": true,
     "ambiguityChecks": {
-      "secondCorrectAnswer": "逐一代回題意後，只有「55 平方公分」符合目標「求梯形面積」。其餘選項分別違反：忘記除以 2。；只用下底×高。；用兩底差乘高。",
-      "undefinedSymbol": "題幹中的符號與名詞均屬技能「周長與面積基本判斷」講義已定義範圍；本題特別使用：上底 8、下底 14、高 5 公分。",
-      "unitConflict": "所有長度為公分，答案平方公分。",
-      "roundingConflict": "全部資料為精確值，不涉及四捨五入。",
-      "domainBoundary": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
-      "alternateReading": "已以所求量「求梯形面積」重新讀題，並針對誤解「漏除以 2 或只用一個底。」排除另一解讀。"
+      "secondCorrectAnswer": "獨立重算得到「兩個圖形的面積相等」。其餘選項逐項檢查：「長方形面積比梯形大 25 平方公分」與 55、55 的計算不符；「梯形面積比長方形大 25 平方公分」與 55、55 的計算不符；「資料不足，無法比較」錯，必要尺寸均已提供",
+      "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「比較兩種平面圖形的面積」。",
+      "unitConflict": "所有長度為公分，面積統一為平方公分。",
+      "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。",
+      "domainBoundary": "只使用國中平面圖形面積公式。",
+      "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。 即使改從公式或圖形定義重新讀題，也仍得到相同唯一答案。"
     },
-    "difficultyReason": "標準多步運算。",
+    "difficultyReason": "標準：需分別計算長方形與梯形，再進行比較。",
     "literacyContextNecessity": null,
-    "prerequisiteCheck": "能使用梯形公式。",
-    "languageCheck": "題幹明示必要條件與所求量；關鍵詞為「求梯形面積」，沒有依未提供圖形或比例推論。",
+    "prerequisiteCheck": "已會長方形與梯形面積公式。",
+    "languageCheck": "兩圖形尺寸與比較目標完整明示。",
     "reviewerDecision": "pass",
-    "reviewerNote": "獨立重算：也可先平均底長 11，再乘高 5。 正確選項為「55 平方公分」。四選項逐項核對後真值序列為 [False, False, True, False]；邊界檢查：只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+    "reviewerNote": "已使用與題解不同的方式獨立重算：長方形面積為 11×5=55；梯形兩底的平均長度是 (8+14)÷2=11，再乘高 5 也得到 55，所以兩者面積相等。 正確選項為「兩個圖形的面積相等」。其餘三項逐項代回後均不符合題目條件；單位、邊界與可能的另一種讀法也已核對，沒有第二個正確答案。",
     "reviewedAt": "2026-07-12",
-    "reviewSha256": "911a6fc24d5857f2e8c965aff423de3887a2f709526638e989ed15bf697767c7"
+    "reviewSha256": "faaf1bc58ec65d733a0c74714b86ea40313b569ad4f3bdd4fc5903d677327820"
   },
   {
     "questionId": "u08-s009-v007",

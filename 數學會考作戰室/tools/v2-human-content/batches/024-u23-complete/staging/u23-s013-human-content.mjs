@@ -858,8 +858,8 @@ export const QUESTIONS = [
     "contentSha256": "7ab3759fe850662efbe66e46c57f2a8fa7f5494c8607cc17f0e0cdc1ba12caf2"
   },
   {
-    "prompt": "下列哪一個等式正確？",
-    "text": "下列哪一個等式正確？",
+    "prompt": "核對體積與容量的常用換算後，下列哪一個等式同時具有正確量綱與倍率？",
+    "text": "核對體積與容量的常用換算後，下列哪一個等式同時具有正確量綱與倍率？",
     "choices": [
       "1 cm²=1 mL",
       "1 cm³=1 mL",
@@ -867,46 +867,48 @@ export const QUESTIONS = [
       "1 L=100 cm³"
     ],
     "answerIndex": 1,
-    "independentSolution": "不參照答案欄，重新使用題目條件計算：逐項核對維度與倍率。所得結果是「1 cm³=1 mL」。",
-    "explanation": "1立方公分等於1毫升。平方公分是面積，不能等於容量；1立方公尺等於1,000,000立方公分；1公升等於1000立方公分。",
+    "independentSolution": "不參照答案欄，逐項核對量綱與倍率。1 mL 定義為 1 cm³。平方公分是面積單位；1 m³=(100 cm)³=1,000,000 cm³；1 L=1000 mL=1000 cm³。 因此唯一正確為「1 cm³=1 mL」。",
+    "explanation": "1 mL 定義為 1 cm³。平方公分是面積單位；1 m³=(100 cm)³=1,000,000 cm³；1 L=1000 mL=1000 cm³。",
     "steps": [
-      "逐項核對維度與倍率"
+      "先排除面積單位 cm² 與容量 mL 的混用。",
+      "將 1 m³ 依三個方向都乘 100，得到 1,000,000 cm³。",
+      "以 1 L=1000 mL=1000 cm³ 核對容量換算。"
     ],
     "optionAnalysis": [
       {
         "choice": "1 cm²=1 mL",
         "truth": false,
-        "reason": "維度不同。"
+        "reason": "cm² 是面積單位，不能和容量 mL 相等。"
       },
       {
         "choice": "1 cm³=1 mL",
         "truth": true,
-        "reason": "依獨立計算「逐項核對維度與倍率」，此選項符合所求「正確等式」。"
+        "reason": "1 mL 的體積正好是 1 cm³。"
       },
       {
         "choice": "1 m³=1000 cm³",
         "truth": false,
-        "reason": "少1000倍。"
+        "reason": "1 m³=1,000,000 cm³，不是 1000 cm³。"
       },
       {
         "choice": "1 L=100 cm³",
         "truth": false,
-        "reason": "少10倍。"
+        "reason": "1 L=1000 cm³，不是 100 cm³。"
       }
     ],
-    "misconceptionTarget": "把面積單位與容量直接相等。",
-    "authoringIntent": "辨識體積容量換算的維度。",
+    "misconceptionTarget": "只換一個方向的長度倍率，或混淆面積、體積與容量單位。",
+    "authoringIntent": "同時檢查量綱與立方倍率的體積容量換算。",
     "difficulty": "advanced",
     "givenConditions": [
-      "常用單位定義"
+      "使用 1 mL=1 cm³、1 L=1000 mL 與 1 m=100 cm 等常用定義。"
     ],
-    "target": "正確等式",
-    "difficultyReason": "進階：四個近似敘述中檢查維度與倍率。",
-    "prerequisiteCheck": "已會各單位關係。 本題只再使用先備「surface-area-net」與本技能定義。",
+    "target": "辨認量綱與倍率都正確的體積和容量等式",
+    "difficultyReason": "進階：四個選項分別設置量綱錯誤、立方倍率錯誤與容量倍率錯誤。",
+    "prerequisiteCheck": "已會長度單位換算、立方單位意義與 1 mL=1 cm³。",
     "estimatedTimeSec": 90,
-    "unitCheck": "單位等式。 所求「正確等式」與四個選項採同一單位或同一無單位比值。",
-    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
-    "ambiguityBoundaryAudit": "僅一項正確。 題幹已完整限制「正確等式」的範圍與取值方向。",
+    "unitCheck": "逐項核對面積、體積與容量量綱；只有 cm³ 與 mL 可按定義直接等量。",
+    "roundingCheck": "全部換算為精確定義，不涉及近似。",
+    "ambiguityBoundaryAudit": "題幹要求量綱與倍率同時正確，四項中只有 1 cm³=1 mL 符合。",
     "literacyContextNecessity": null,
     "figureId": null,
     "drawingSpecId": null,
@@ -929,7 +931,7 @@ export const QUESTIONS = [
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
-    "contentSha256": "1bf54e84d5101b3fb4993b5a8a00a8d1a40bc931d48a45085df5a7a73fa434e3"
+    "contentSha256": "555f595b7d7d60223f5bf7f2ed6d474c23c073931c3bd75bf13d07f8b86e7267"
   },
   {
     "prompt": "一個水箱容量標示 1.2 立方公尺。若每桶可裝 15 公升，至少需要幾桶才能裝下同樣多的水？",

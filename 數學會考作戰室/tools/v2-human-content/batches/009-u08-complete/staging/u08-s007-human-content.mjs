@@ -461,59 +461,59 @@ export const QUESTIONS = [
     "figureId": null,
     "drawingSpecRef": null,
     "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
-    "text": "八邊形的內角和是多少？",
+    "text": "某凸多邊形的內角和為 1080°，它是幾邊形？",
     "givenConditions": [
-      "凸八邊形。"
+      "凸多邊形，邊數為大於 2 的整數。"
     ],
-    "target": "求八邊形內角和",
+    "target": "由內角和反求邊數",
     "choices": [
-      "900°",
-      "1080°",
-      "1260°",
-      "1440°"
+      "七邊形",
+      "八邊形",
+      "九邊形",
+      "十邊形"
     ],
     "answerIndex": 1,
-    "independentSolution": "八邊形內角和 1080°。",
-    "explanation": "代入內角和公式。",
+    "independentSolution": "設邊數為 n，(n-2)×180°=1080°，所以 n-2=6，n=8。",
+    "explanation": "將內角和公式反向使用：(n−2)×180°=1080°，解得 n=8。",
     "steps": [
-      "8−2=6。",
-      "6×180=1080。"
+      "1080÷180=6。",
+      "n−2=6，所以 n=8。"
     ],
     "optionAnalysis": [
       {
-        "choice": "900°",
+        "choice": "七邊形",
         "truth": false,
-        "reason": "900° 是七邊形內角和。"
+        "reason": "七邊形內角和為 900°。"
       },
       {
-        "choice": "1080°",
+        "choice": "八邊形",
         "truth": true,
-        "reason": "(8−2)×180=6×180=1080°。"
+        "reason": "(8−2)×180°=1080°。"
       },
       {
-        "choice": "1260°",
+        "choice": "九邊形",
         "truth": false,
-        "reason": "1260° 是九邊形內角和。"
+        "reason": "九邊形內角和為 1260°。"
       },
       {
-        "choice": "1440°",
+        "choice": "十邊形",
         "truth": false,
-        "reason": "把 8×180°。"
+        "reason": "十邊形內角和為 1440°。"
       }
     ],
-    "misconceptionTarget": "忘記減 2。",
-    "prerequisiteCheck": "能使用多邊形公式。",
+    "misconceptionTarget": "把三角形個數 6 直接當成邊數。",
+    "prerequisiteCheck": "已會多邊形內角和公式與一元一次式的簡單逆運算。",
     "estimatedTimeSec": 90,
-    "unitCheck": "角度以 ° 表示。",
-    "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
-    "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
-    "difficultyReason": "標準數值代入。",
+    "unitCheck": "內角和以度為單位，答案是邊數名稱。",
+    "roundingCheck": "1080° 與 180° 都是精確值。",
+    "ambiguityBoundaryAudit": "限凸多邊形；由公式得到唯一整數邊數 8。",
+    "difficultyReason": "標準：反向使用公式並從三角形個數還原邊數。",
     "literacyContextNecessity": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "87094416ccdd6cd2a72821df0f1fc4e0c7d5fd980247966cbd48859c190d5422"
+    "contentSha256": "fae4aea7b5f74f5f4f259144adfde127bfda09f9aa81ac93714b678ce15f2d7e"
   },
   {
     "questionId": "u08-s007-v005",
@@ -1321,12 +1321,12 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v004",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "87094416ccdd6cd2a72821df0f1fc4e0c7d5fd980247966cbd48859c190d5422",
+    "contentSha256": "fae4aea7b5f74f5f4f259144adfde127bfda09f9aa81ac93714b678ce15f2d7e",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-    "independentSolution": "由一頂點分成六個三角形確認。",
-    "derivedAnswer": "1080°",
-    "storedAnswer": "1080°",
+    "independentSolution": "1080° 等於 6×180°，表示由一個頂點可分成 6 個三角形；因此 n−2=6，得到 n=8。",
+    "derivedAnswer": "八邊形",
+    "storedAnswer": "八邊形",
     "answerMatch": true,
     "optionTruth": [
       false,
@@ -1336,21 +1336,21 @@ export const SEMANTIC_REVIEWS = [
     ],
     "uniqueCorrectAnswer": true,
     "ambiguityChecks": {
-      "secondCorrectAnswer": "逐一代回題意後，只有「1080°」符合目標「求八邊形內角和」。其餘選項分別違反：900° 是七邊形內角和。；1260° 是九邊形內角和。；把 8×180°。",
-      "undefinedSymbol": "題幹中的符號與名詞均屬技能「多邊形內角和」講義已定義範圍；本題特別使用：凸八邊形。",
-      "unitConflict": "角度以 ° 表示。",
-      "roundingConflict": "全部資料為精確值，不涉及四捨五入。",
-      "domainBoundary": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
-      "alternateReading": "已以所求量「求八邊形內角和」重新讀題，並針對誤解「忘記減 2。」排除另一解讀。"
+      "secondCorrectAnswer": "獨立重算得到「八邊形」。其餘選項逐項檢查：「七邊形」對應 900°；「九邊形」對應 1260°；「十邊形」對應 1440°",
+      "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「由內角和反求多邊形邊數」。",
+      "unitConflict": "角度以度表示，答案為邊數名稱。",
+      "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。",
+      "domainBoundary": "只使用凸多邊形內角和公式。",
+      "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。 即使改從公式或圖形定義重新讀題，也仍得到相同唯一答案。"
     },
-    "difficultyReason": "標準數值代入。",
+    "difficultyReason": "標準：需反向使用內角和公式並辨認 n−2 的意義。",
     "literacyContextNecessity": null,
-    "prerequisiteCheck": "能使用多邊形公式。",
-    "languageCheck": "題幹明示必要條件與所求量；關鍵詞為「求八邊形內角和」，沒有依未提供圖形或比例推論。",
+    "prerequisiteCheck": "已會多邊形內角和公式及簡單方程式。",
+    "languageCheck": "凸多邊形條件、內角和與所求邊數均明示。",
     "reviewerDecision": "pass",
-    "reviewerNote": "獨立重算：由一頂點分成六個三角形確認。 正確選項為「1080°」。四選項逐項核對後真值序列為 [False, True, False, False]；邊界檢查：只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+    "reviewerNote": "已使用與題解不同的方式獨立重算：1080° 等於 6×180°，表示由一個頂點可分成 6 個三角形；因此 n−2=6，得到 n=8。 正確選項為「八邊形」。其餘三項逐項代回後均不符合題目條件；單位、邊界與可能的另一種讀法也已核對，沒有第二個正確答案。",
     "reviewedAt": "2026-07-12",
-    "reviewSha256": "d8e44bea0f6cac6eaf13a3b38c3ecdf9af82d1af11b0ec2759d3a046c66edbae"
+    "reviewSha256": "b2397c5422803003a3d47dcdc33d133c2a6b8e81e3d69b6572ad1aa35bb0a1f1"
   },
   {
     "questionId": "u08-s007-v005",
