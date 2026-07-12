@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "math-v2-production-cutover-package-r1",
+  "requiredStartingHead": "a0e7cf60310aa80b5ca03ed4bc243a2c7f76228c",
+  "requiredStartingSubject": "test(math-v2): rehearse controlled human runtime cutover r1",
+  "requiredPriorStatus": "PASS_CONTROLLED_HUMAN_RUNTIME_CUTOVER_REHEARSAL_R1",
+  "requiredPriorNextStage": "PRODUCTION_CUTOVER_PACKAGE_R1",
+  "requiredRcStatus": "PASS_HUMAN_RUNTIME_RELEASE_CANDIDATE_R1",
+  "contentVersion": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+  "productionStoragePrefix": "capMath.human.r1.",
+  "preCutoverTagName": "math-v2-pre-human-cutover-r1",
+  "expectedCounts": {
+    "units": 23,
+    "skills": 339,
+    "lectures": 339,
+    "mcQuestions": 4068,
+    "constructedResponses": 678,
+    "figures": 178
+  },
+  "productionActivationAllowed": false,
+  "studentRouteChangeAllowed": false,
+  "oldDatabaseDeletionAllowed": false,
+  "mergeAllowed": false,
+  "nextAuthorizedStage": "CONTROLLED_PRODUCTION_CUTOVER_R1"
+}

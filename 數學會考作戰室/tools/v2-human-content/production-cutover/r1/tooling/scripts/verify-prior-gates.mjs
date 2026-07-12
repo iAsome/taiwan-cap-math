@@ -1,0 +1,7 @@
+import path from"node:path";import{assert,parseArgs,readJson,writeJson,runGit}from"./lib/common.mjs";
+const a=parseArgs(process.argv.slice(2));assert(a.repo&&a.root,"Usage --repo --root");const repo=path.resolve(a.repo),root=path.resolve(a.root),tool=path.join(root,"tooling"),ev=path.join(root,"evidence"),ex=readJson(path.join(tool,"EXPECTED-RESULTS.json"));
+assert(runGit(repo,["rev-parse","HEAD"])===ex.requiredStartingHead,"HEAD mismatch");assert(runGit(repo,["log","-1","--format=%s"])===ex.requiredStartingSubject,"subject mismatch");assert(runGit(repo,["status","--short","--untracked-files=all"])==="","repo not clean");
+const reh=readJson(path.join(repo,"數學會考作戰室/tools/v2-human-content/cutover-rehearsal/r1/evidence/controlled-cutover-rehearsal-r1-summary.json"));
+const rc=readJson(path.join(repo,"數學會考作戰室/tools/v2-human-content/release-candidate/r1/evidence/human-runtime-rc-r1-summary.json"));
+assert(reh.status===ex.requiredPriorStatus&&reh.nextAuthorizedStage===ex.requiredPriorNextStage,"rehearsal gate mismatch");assert(rc.status===ex.requiredRcStatus&&rc.contentVersion===ex.contentVersion,"RC gate mismatch");
+const out={status:"PASS_PRODUCTION_CUTOVER_EVIDENCE_CHAIN_R1",rehearsal:reh.status,releaseCandidate:rc.status,contentVersion:ex.contentVersion,issues:[],productionActivationAllowed:false,oldDatabaseDeletionAllowed:false};writeJson(path.join(ev,"evidence-chain.json"),out);console.log(JSON.stringify(out,null,2));

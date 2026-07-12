@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "math-v2-final-retirement-manifest-draft-r1",
+  "status": "DRAFT_NOT_EXECUTABLE_BEFORE_POST_CUTOVER_GATE",
+  "generatedV2Roots": [
+    "數學會考作戰室/tools/v2-content",
+    "數學會考作戰室/v2"
+  ],
+  "generatedV2Generator": [
+    "數學會考作戰室/tools/author-v2-production-content.mjs"
+  ],
+  "v1ServedRuntimeDeleteAfterHumanOnlyLoader": [
+    "數學會考作戰室/questions.js",
+    "數學會考作戰室/app-legacy.js",
+    "數學會考作戰室/quiz-taxonomy.js",
+    "數學會考作戰室/quiz-variant-bank.js",
+    "數學會考作戰室/quiz-variants.js",
+    "數學會考作戰室/lecture-taxonomy.js",
+    "數學會考作戰室/legacy.html"
+  ],
+  "replacedByHumanRuntime": [
+    "數學會考作戰室/data.js",
+    "數學會考作戰室/analysis-data.js"
+  ],
+  "keepUntilFinalPurityGate": [
+    "數學會考作戰室/data.js",
+    "數學會考作戰室/analysis-data.js"
+  ],
+  "inventorySourceSha256": "805cbde4837ffde8e8bd1286cc48deda48419a82b33a26ff5cdf1e91fb55f6ce",
+  "inventoryCounts": {
+    "generatedSourceFiles": 73,
+    "generatedSourceBytes": 13503428,
+    "rollbackBaselineFiles": 7
+  },
+  "retirementExecuted": false,
+  "oldDatabaseDeletionAllowed": false
+}
