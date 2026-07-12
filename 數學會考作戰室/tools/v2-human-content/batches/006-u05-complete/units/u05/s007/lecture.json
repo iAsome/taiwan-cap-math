@@ -1,0 +1,238 @@
+{
+  "lectureId": "u05-s007-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-coordinate-ops",
+  "skillId": "coordinate-rectangle-area",
+  "lockedTitle": "坐標平面中的長方形與面積",
+  "title": "坐標平面中的長方形：由坐標差求邊長與面積",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認邊平行坐標軸的長方形。",
+    "能由頂點坐標求寬與高。",
+    "能計算周長與面積。",
+    "能由三個頂點補出第四個頂點。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "requiredLevel": "能說明並正確使用「水平距離與垂直距離」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "軸平行長方形",
+      "definition": "四邊分別平行 x 軸或 y 軸的長方形。"
+    },
+    {
+      "term": "寬",
+      "definition": "左右兩條垂直邊的 x 坐標差。"
+    },
+    {
+      "term": "高",
+      "definition": "上下兩條水平邊的 y 坐標差。"
+    },
+    {
+      "term": "對角頂點",
+      "definition": "不在同一邊上的兩個相對頂點。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "寬=|x右-x左|",
+      "meaning": "長方形水平方向邊長。"
+    },
+    {
+      "symbol": "高=|y上-y下|",
+      "meaning": "長方形垂直方向邊長。"
+    },
+    {
+      "symbol": "A=寬×高",
+      "meaning": "長方形面積。"
+    },
+    {
+      "symbol": "P=2(寬+高)",
+      "meaning": "長方形周長。"
+    }
+  ],
+  "conceptNarrative": [
+    "邊平行坐標軸時，同一條垂直邊上的點有相同 x，同一條水平邊上的點有相同 y。",
+    "給對角頂點即可取得兩個不同的 x 值與兩個不同的 y 值，並組成另外兩個頂點。",
+    "邊長用絕對差，面積使用平方單位，周長使用長度單位。",
+    "若圖形不是軸平行長方形，不能只用 x、y 範圍直接當邊長。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "軸平行長方形邊長",
+      "statement": "寬為兩種 x 坐標之差，高為兩種 y 坐標之差。"
+    },
+    {
+      "name": "第四頂點規則",
+      "statement": "三個頂點中各出現的兩種 x 與兩種 y 必須各配對兩次。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "面積=|x2-x1|×|y2-y1|",
+      "conditions": [
+        "(x1,y1)、(x2,y2) 為對角頂點",
+        "長方形邊平行坐標軸"
+      ],
+      "meaning": "由水平與垂直跨度求面積。"
+    }
+  ],
+  "nonApplicableCases": [
+    "斜放長方形不直接適用跨度乘積。",
+    "面積不可寫成一次單位。",
+    "周長不可只算寬+高。",
+    "三點若無法形成兩種 x、兩種 y 的配對，未必是軸平行長方形的三頂點。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認邊平行坐標軸。",
+      "check": "是否能由相同 x 或相同 y 配邊？"
+    },
+    {
+      "step": 2,
+      "instruction": "找兩種 x。",
+      "check": "寬是多少？"
+    },
+    {
+      "step": 3,
+      "instruction": "找兩種 y。",
+      "check": "高是多少？"
+    },
+    {
+      "step": 4,
+      "instruction": "依題目求周長、面積或第四點。",
+      "check": "單位是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查四個頂點配對。",
+      "check": "每種 x、y 是否各出現兩次？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "對角點 A=(-2,1)、C=(5,6)，求面積。",
+      "solutionSteps": [
+        "寬=|5-(-2)|=7。",
+        "高=|6-1|=5，面積=35。"
+      ],
+      "answer": "35 平方單位。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "寬 4、高 9 的軸平行長方形周長。",
+      "solutionSteps": [
+        "寬+高=13。",
+        "周長=2×13=26。"
+      ],
+      "answer": "26 單位。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "A=(1,2)、B=(1,7)、C=(6,7)，求第四點。",
+      "solutionSteps": [
+        "A、B 同 x，B、C 同 y。",
+        "缺少 x=6、y=2 的組合。"
+      ],
+      "answer": "(6,2)。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "長方形 x 介於 -4 與 3，y 介於 -1 與 5。",
+      "solutionSteps": [
+        "寬=7，高=6。",
+        "面積=42。"
+      ],
+      "answer": "42 平方單位。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 -4 到 3 的寬算成 -1。",
+      "why": "直接做帶號相加。",
+      "correction": "使用絕對差 3-(-4)=7。"
+    },
+    {
+      "mistake": "面積寫成 35 單位。",
+      "why": "忽略二維量。",
+      "correction": "面積用平方單位。"
+    },
+    {
+      "mistake": "周長只算寬+高。",
+      "why": "漏掉相對兩邊。",
+      "correction": "乘以 2。"
+    },
+    {
+      "mistake": "第四點把 x、y 都取新值。",
+      "why": "沒有檢查既有兩種分量。",
+      "correction": "第四點只補缺少的組合。"
+    },
+    {
+      "mistake": "任何四個點都用跨度乘積。",
+      "why": "忽略軸平行長方形前提。",
+      "correction": "先確認同 x、同 y 配邊。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認軸平行？",
+    "寬高是否使用絕對差？",
+    "面積與周長單位是否不同？",
+    "第四點是否補的是缺少組合？"
+  ],
+  "summary": [
+    "寬由 x 差，高由 y 差。",
+    "面積=寬×高。",
+    "周長=2(寬+高)。",
+    "第四頂點由兩種 x、兩種 y 交叉配對。"
+  ],
+  "connections": {
+    "previous": "承接水平距離與垂直距離。",
+    "next": [
+      "下一節由點與方程式理解直線圖形。",
+      "後續素養題會把地圖區域視為軸平行長方形。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s007-v001",
+      "u05-s007-v002",
+      "u05-s007-v003",
+      "u05-s007-v004",
+      "u05-s007-v005",
+      "u05-s007-v006",
+      "u05-s007-v007",
+      "u05-s007-v008",
+      "u05-s007-v009",
+      "u05-s007-v010",
+      "u05-s007-v011",
+      "u05-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s007-cr001",
+      "u05-s007-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "人工核算四例的坐標差、周長倍數、第四點配對與面積單位；範圍只限軸平行長方形，明確排除斜放圖形的錯套。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "d65fea2bc0b9749e5d0bb234fbc435d877bf03e316b102b58fb99fe56c96a87b"
+}

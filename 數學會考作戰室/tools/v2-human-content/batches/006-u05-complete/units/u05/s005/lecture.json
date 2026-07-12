@@ -1,0 +1,238 @@
+{
+  "lectureId": "u05-s005-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-coordinate-ops",
+  "skillId": "coordinate-translation",
+  "lockedTitle": "點的平移",
+  "title": "點的平移：左右改 x，上下改 y",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能寫出水平或垂直平移後的坐標。",
+    "能處理連續多步平移。",
+    "能由終點反推原點。",
+    "能判斷兩點之間需要的平移方向與單位數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-plot-description",
+      "requiredLevel": "能說明並正確使用「描點與位置描述」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "平移",
+      "definition": "每個點依相同方向與相同距離移動。"
+    },
+    {
+      "term": "水平平移",
+      "definition": "只改變橫坐標 x。"
+    },
+    {
+      "term": "垂直平移",
+      "definition": "只改變縱坐標 y。"
+    },
+    {
+      "term": "反推",
+      "definition": "由平移後位置逆向找回原位置。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(x+a,y)",
+      "meaning": "向右 a 單位後的坐標。"
+    },
+    {
+      "symbol": "(x-a,y)",
+      "meaning": "向左 a 單位後的坐標。"
+    },
+    {
+      "symbol": "(x,y+b)",
+      "meaning": "向上 b 單位後的坐標。"
+    },
+    {
+      "symbol": "(x,y-b)",
+      "meaning": "向下 b 單位後的坐標。"
+    }
+  ],
+  "conceptNarrative": [
+    "平移不會交換 x、y，也不會改變不相關的分量。",
+    "向右與向上使相應分量增加；向左與向下使相應分量減少。",
+    "連續平移可分步計算，也可先求水平與垂直的淨改變量。",
+    "反推原點時要做相反方向的移動，不能再重做一次同方向平移。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "水平平移",
+      "statement": "P=(x,y) 向右 a 單位成 (x+a,y)，向左 a 單位成 (x-a,y)。"
+    },
+    {
+      "name": "垂直平移",
+      "statement": "P=(x,y) 向上 b 單位成 (x,y+b)，向下 b 單位成 (x,y-b)。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P'=(x+Δx,y+Δy)",
+      "conditions": [
+        "Δx、Δy 為帶正負號的改變量",
+        "只討論平行坐標軸的平移"
+      ],
+      "meaning": "把水平與垂直位移分別加到兩個分量。"
+    }
+  ],
+  "nonApplicableCases": [
+    "旋轉、鏡射不是本節平移。",
+    "斜移若未給水平與垂直改變量，不能只用一個數。",
+    "距離為正，但向左向下的改變量為負。",
+    "反推時不能忘記改用相反號。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出原坐標。",
+      "check": "哪個是 x，哪個是 y？"
+    },
+    {
+      "step": 2,
+      "instruction": "把方向翻成 Δx、Δy。",
+      "check": "左右是否只影響 x？"
+    },
+    {
+      "step": 3,
+      "instruction": "分量相加。",
+      "check": "負數加減是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "若要求原點，改用逆向平移。",
+      "check": "是否把方向反過來？"
+    },
+    {
+      "step": 5,
+      "instruction": "比較前後差。",
+      "check": "終點減起點是否等於位移？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "A=(2,-3) 向右 5。",
+      "solutionSteps": [
+        "x=2+5=7。",
+        "y 保持 -3。"
+      ],
+      "answer": "(7,-3)。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "B=(-4,6) 向下 9。",
+      "solutionSteps": [
+        "x 保持 -4。",
+        "y=6-9=-3。"
+      ],
+      "answer": "(-4,-3)。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "C=(1,2) 先左 3 再上 4。",
+      "solutionSteps": [
+        "x=1-3=-2。",
+        "y=2+4=6。"
+      ],
+      "answer": "(-2,6)。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "D 平移右 7、下 2 後為 (5,-1)，求 D。",
+      "solutionSteps": [
+        "原 x=5-7=-2。",
+        "原 y=-1+2=1。"
+      ],
+      "answer": "D=(-2,1)。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "向右同時增加 x、y。",
+      "why": "把平移當成整點一起變大。",
+      "correction": "水平移動只改 x。"
+    },
+    {
+      "mistake": "向下計算 y+距離。",
+      "why": "忽略方向符號。",
+      "correction": "向下使 y 減少。"
+    },
+    {
+      "mistake": "負數左移時把絕對值變小。",
+      "why": "以靠近 0 取代真正相減。",
+      "correction": "直接算 x-距離。"
+    },
+    {
+      "mistake": "反推仍做同方向。",
+      "why": "未使用逆運算。",
+      "correction": "終點往相反方向走回原點。"
+    },
+    {
+      "mistake": "把兩段位移相乘。",
+      "why": "混淆累加與倍數。",
+      "correction": "同方向改變量應相加。"
+    }
+  ],
+  "selfCheck": [
+    "我是否只改對應分量？",
+    "方向是否轉成正確正負號？",
+    "反推時是否使用相反位移？",
+    "終點減起點是否能驗證答案？"
+  ],
+  "summary": [
+    "右加 x、左減 x。",
+    "上加 y、下減 y。",
+    "多步平移可合併淨位移。",
+    "反推要做相反方向。"
+  ],
+  "connections": {
+    "previous": "承接描點與路線描述，已能把方向轉成坐標改變。",
+    "next": [
+      "下一節把同 x 或同 y 的坐標差解讀成距離。",
+      "長方形邊長也會使用這些差值。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s005-v001",
+      "u05-s005-v002",
+      "u05-s005-v003",
+      "u05-s005-v004",
+      "u05-s005-v005",
+      "u05-s005-v006",
+      "u05-s005-v007",
+      "u05-s005-v008",
+      "u05-s005-v009",
+      "u05-s005-v010",
+      "u05-s005-v011",
+      "u05-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s005-cr001",
+      "u05-s005-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "四例逐一以終點減起點驗算，包含正負數、跨越坐標軸、多步與反推；確認平移未誤用旋轉或交換坐標。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "951e244a23cf8b18ffa07f1e6028535844bd0bec5acc163150e17887709f2481"
+}

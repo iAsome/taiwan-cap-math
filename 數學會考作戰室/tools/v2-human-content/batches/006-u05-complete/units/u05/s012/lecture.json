@@ -1,0 +1,234 @@
+{
+  "lectureId": "u05-s012-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-coordinate-literacy",
+  "skillId": "coordinate-literacy-context",
+  "lockedTitle": "坐標素養題",
+  "title": "坐標素養題：把地圖和座位與路線資訊轉成數學",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能建立情境中的原點、正方向與單位格。",
+    "能把地圖或座位資訊轉成坐標。",
+    "能整合平移、距離、長方形與交點。",
+    "能檢查答案在情境中的方向、單位與限制。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-line-intersection",
+      "requiredLevel": "能說明並正確使用「兩直線交點與聯立方程式」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "坐標模型",
+      "definition": "用原點、兩軸、方向與單位表示真實或虛構情境。"
+    },
+    {
+      "term": "比例單位",
+      "definition": "每一坐標單位對應的實際長度或格數。"
+    },
+    {
+      "term": "可行區域",
+      "definition": "同時滿足多個位置或路線限制的點集合。"
+    },
+    {
+      "term": "轉換",
+      "definition": "在情境語言與坐標、方程式之間來回表達。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "1 格 = k 公尺",
+      "meaning": "把坐標差換成實際長度。"
+    },
+    {
+      "symbol": "(0,0)",
+      "meaning": "情境中指定的基準位置。"
+    },
+    {
+      "symbol": "x 正向 / y 正向",
+      "meaning": "題目定義的東西或左右上下方向。"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題的第一步不是立刻計算，而是找出坐標系如何對應情境。",
+    "同一個坐標可因題目定義代表東西、南北、座位列號或遊戲格線，不能套用未給的方向。",
+    "算出坐標差後，還要乘上每格代表的實際單位；面積則要平方換算。",
+    "答案要回到情境檢查，例如位置是否在校園範圍內、路線是否真的符合限制。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "情境坐標化",
+      "statement": "指定原點、正方向與單位後，每個位置可用 (x,y) 表示。"
+    },
+    {
+      "name": "情境驗證",
+      "statement": "數學結果必須同時符合坐標條件、範圍限制與實際單位。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "實際長度=坐標距離×每格長度",
+      "conditions": [
+        "格線等距",
+        "路線為水平或垂直時使用相應坐標差"
+      ],
+      "meaning": "把抽象單位換成情境單位。"
+    }
+  ],
+  "nonApplicableCases": [
+    "題目未說北方是 y 正向時，不能自行假設。",
+    "斜向最短距離不在本單元一般公式範圍，除非題目拆成格線路線。",
+    "每格長度不為 1 時不能省略換算。",
+    "面積換算需平方比例。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "定義模型。",
+      "check": "原點、正方向、每格單位是什麼？"
+    },
+    {
+      "step": 2,
+      "instruction": "把資訊翻成坐標或方程式。",
+      "check": "每個數值代表哪個量？"
+    },
+    {
+      "step": 3,
+      "instruction": "選用本單元技能。",
+      "check": "是平移、軸距、長方形還是交點？"
+    },
+    {
+      "step": 4,
+      "instruction": "完成計算與單位換算。",
+      "check": "長度與面積單位是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "回到情境審核。",
+      "check": "位置與限制是否合理？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "校門為原點，東為 x 正、北為 y 正；圖書館在西 3 格、北 2 格。",
+      "solutionSteps": [
+        "西使 x=-3。",
+        "北使 y=2。"
+      ],
+      "answer": "圖書館坐標 (-3,2)。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "每格 20 公尺，A=(1,4)、B=(6,4)。",
+      "solutionSteps": [
+        "同 y，格線距離 5 格。",
+        "5×20=100。"
+      ],
+      "answer": "實際距離 100 公尺。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "座位表以講臺為原點，右為 x 正、後為 y 正；學生由 (-2,3) 向右 5 格。",
+      "solutionSteps": [
+        "x=-2+5=3。",
+        "y 保持 3。"
+      ],
+      "answer": "新座位 (3,3)。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩條巡邏規則 x+y=6 與 x-y=2 的交會點。",
+      "solutionSteps": [
+        "相加得 2x=8，x=4。",
+        "代回得 y=2。"
+      ],
+      "answer": "交會點 (4,2)。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "直接把東西南北套成固定符號。",
+      "why": "忽略題目自訂方向。",
+      "correction": "先抄下正方向定義。"
+    },
+    {
+      "mistake": "忘記每格 20 公尺。",
+      "why": "把格數當實際長度。",
+      "correction": "最後乘比例單位。"
+    },
+    {
+      "mistake": "面積只乘一次比例。",
+      "why": "混淆長度與面積縮放。",
+      "correction": "面積每邊都要換算。"
+    },
+    {
+      "mistake": "算出坐標卻不檢查範圍。",
+      "why": "只完成代數。",
+      "correction": "回看是否位於允許區域。"
+    },
+    {
+      "mistake": "把情境裝飾視為無關而漏掉限制。",
+      "why": "未辨認文字中的必要條件。",
+      "correction": "把每個方向、單位、邊界標記成數學條件。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先定義原點與正方向？",
+    "每格實際長度是否換算？",
+    "使用的公式是否符合水平、垂直或軸平行前提？",
+    "答案是否回到情境檢查？"
+  ],
+  "summary": [
+    "素養題先建模再計算。",
+    "方向依題目定義，不自行假設。",
+    "格數需換算實際單位。",
+    "最後檢查範圍與情境合理性。"
+  ],
+  "connections": {
+    "previous": "整合 U05 前十一個技能。",
+    "next": [
+      "完成 U05 後，可在後續比例尺、函數與幾何單元繼續使用坐標模型。",
+      "跨單元時仍需遵守各公式的適用條件。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s012-v001",
+      "u05-s012-v002",
+      "u05-s012-v003",
+      "u05-s012-v004",
+      "u05-s012-v005",
+      "u05-s012-v006",
+      "u05-s012-v007",
+      "u05-s012-v008",
+      "u05-s012-v009",
+      "u05-s012-v010",
+      "u05-s012-v011",
+      "u05-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s012-cr001",
+      "u05-s012-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "人工逐題對照情境方向、每格單位與代數模型；四例涵蓋方位、距離換算、座位平移與兩規則交點，且每個情境資訊都實際參與求解。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "61307bbb459cd2b9905c71412dfd62ee070971d6f0592e9196f1fb8f3dbf8cd5"
+}

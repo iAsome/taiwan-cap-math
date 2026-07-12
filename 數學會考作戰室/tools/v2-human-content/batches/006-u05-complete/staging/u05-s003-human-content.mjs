@@ -1,0 +1,1576 @@
+// SERIALIZATION OF REVIEWED CHATGPT HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const CONTENT_AUTHORITY = "CHATGPT_HUMAN_AUTHORED_R1";
+export const LECTURE = {
+  "lectureId": "u05-s003-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-coordinate-basics",
+  "skillId": "coordinate-axis-points",
+  "lockedTitle": "坐標軸上的點",
+  "title": "坐標軸上的點：零分量與到軸距離",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能判斷點位於 x 軸、y 軸或原點。",
+    "能由軸上條件補出缺少的坐標分量。",
+    "能計算點到 x 軸與 y 軸的垂直距離。",
+    "能區分『在軸上』與『到軸距離』。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-quadrant",
+      "requiredLevel": "能說明並正確使用「象限判斷」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "x 軸上的點",
+      "definition": "縱坐標 y=0 的點。"
+    },
+    {
+      "term": "y 軸上的點",
+      "definition": "橫坐標 x=0 的點。"
+    },
+    {
+      "term": "到 x 軸的距離",
+      "definition": "點的縱坐標絕對值 |y|。"
+    },
+    {
+      "term": "到 y 軸的距離",
+      "definition": "點的橫坐標絕對值 |x|。"
+    },
+    {
+      "term": "原點",
+      "definition": "同時在兩軸上，坐標 (0,0)。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "y=0",
+      "meaning": "點在 x 軸上的條件。"
+    },
+    {
+      "symbol": "x=0",
+      "meaning": "點在 y 軸上的條件。"
+    },
+    {
+      "symbol": "|y|",
+      "meaning": "點到 x 軸的距離。"
+    },
+    {
+      "symbol": "|x|",
+      "meaning": "點到 y 軸的距離。"
+    }
+  ],
+  "conceptNarrative": [
+    "軸上的點不是少一個坐標，而是其中一個坐標恰為 0。",
+    "到某一條軸的最短距離，沿著與該軸垂直的方向測量。",
+    "點到 x 軸看上下高度，所以用 |y|；點到 y 軸看左右距離，所以用 |x|。",
+    "距離不帶負號，即使點位於負方向，仍取絕對值。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "x 軸條件",
+      "statement": "P=(a,b) 在 x 軸上當且僅當 b=0。"
+    },
+    {
+      "name": "y 軸條件",
+      "statement": "P=(a,b) 在 y 軸上當且僅當 a=0。"
+    },
+    {
+      "name": "到軸距離",
+      "statement": "P=(a,b) 到 x 軸距離為 |b|，到 y 軸距離為 |a|。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "d(P,x軸)=|y|",
+      "conditions": [
+        "坐標軸互相垂直",
+        "使用相同單位格"
+      ],
+      "meaning": "垂直方向只需消去縱坐標。"
+    },
+    {
+      "formula": "d(P,y軸)=|x|",
+      "conditions": [
+        "坐標軸互相垂直",
+        "使用相同單位格"
+      ],
+      "meaning": "水平方向只需消去橫坐標。"
+    }
+  ],
+  "nonApplicableCases": [
+    "一般斜線不適用 |x| 或 |y| 的到線距離規則。",
+    "不要把到 x 軸距離誤看成 |x|。",
+    "軸上點仍有完整兩個坐標。",
+    "距離為 0 只表示點在該軸上，不一定是原點。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先找軸名。",
+      "check": "題目問 x 軸還是 y 軸？"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷哪個分量必須為 0。",
+      "check": "x 軸使 y=0；y 軸使 x=0。"
+    },
+    {
+      "step": 3,
+      "instruction": "若求距離，取另一個分量的絕對值。",
+      "check": "距離是否非負？"
+    },
+    {
+      "step": 4,
+      "instruction": "處理原點例外。",
+      "check": "兩個分量是否都為 0？"
+    },
+    {
+      "step": 5,
+      "instruction": "把答案代回位置檢查。",
+      "check": "是否真的落在指定軸上？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "P=(-6,0) 位於哪裡？",
+      "solutionSteps": [
+        "y=0。",
+        "因此位於 x 軸。"
+      ],
+      "answer": "P 在 x 軸上，不屬象限。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "Q=(0,9) 到 x 軸多遠？",
+      "solutionSteps": [
+        "到 x 軸看 |y|。",
+        "|9|=9。"
+      ],
+      "answer": "9 單位。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "R=(-4,7) 到 y 軸多遠？",
+      "solutionSteps": [
+        "到 y 軸看 |x|。",
+        "|-4|=4。"
+      ],
+      "answer": "4 單位。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "點 S=(a,-2) 在 y 軸上，求 a。",
+      "solutionSteps": [
+        "y 軸上的點滿足 x=0。",
+        "a 是橫坐標。"
+      ],
+      "answer": "a=0。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "認為 x 軸上的點要 x=0。",
+      "why": "把軸名與分量名稱直接配對。",
+      "correction": "x 軸是水平線，垂直高度 y 必須為 0。"
+    },
+    {
+      "mistake": "到 x 軸距離使用 |x|。",
+      "why": "忽略距離方向。",
+      "correction": "到 x 軸是上下距離，應看 |y|。"
+    },
+    {
+      "mistake": "把 (-3,0) 判為第三象限。",
+      "why": "只看 x 的負號。",
+      "correction": "y=0 已表示在軸上。"
+    },
+    {
+      "mistake": "把距離寫成 -5。",
+      "why": "忘記距離非負。",
+      "correction": "一律取絕對值。"
+    },
+    {
+      "mistake": "認為到兩軸距離都為 0 的點有很多個。",
+      "why": "未同時使用 x=0、y=0。",
+      "correction": "只有原點同時在兩軸上。"
+    }
+  ],
+  "selfCheck": [
+    "我能說明為何 x 軸上是 y=0 嗎？",
+    "求到 x 軸距離時是否使用 |y|？",
+    "距離是否保持非負？",
+    "我是否把原點與一般軸上點分開？"
+  ],
+  "summary": [
+    "x 軸：y=0；y 軸：x=0。",
+    "到 x 軸距離是 |y|。",
+    "到 y 軸距離是 |x|。",
+    "原點同時在兩軸上。"
+  ],
+  "connections": {
+    "previous": "承接象限判斷中的零分量例外。",
+    "next": [
+      "下一節用完整文字描述如何從原點描點。",
+      "之後水平與垂直距離會把相同坐標分量相減。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s003-v001",
+      "u05-s003-v002",
+      "u05-s003-v003",
+      "u05-s003-v004",
+      "u05-s003-v005",
+      "u05-s003-v006",
+      "u05-s003-v007",
+      "u05-s003-v008",
+      "u05-s003-v009",
+      "u05-s003-v010",
+      "u05-s003-v011",
+      "u05-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s003-cr001",
+      "u05-s003-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "逐項檢查軸名、零分量與距離公式的交叉關係；四例分別驗證 x 軸、到 x 軸、到 y 軸與參數反推，並確認所有距離均為非負。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "f387c454776b072646c71e592d20442810b06cd7aa764d084adf131b70bbe165"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u05-s003-v001",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "請判斷 A=(7,0) 所在的坐標軸位置。",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "辨認 x 軸正半軸",
+    "choices": [
+      "y 軸正半軸上",
+      "第一象限",
+      "x 軸正半軸上",
+      "原點"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "A 的 y=0，所以在 x 軸上；x=7>0，因此在 x 軸正半軸。",
+    "explanation": "A 的 y=0，所以在 x 軸上；x=7>0，因此在 x 軸正半軸。",
+    "steps": [
+      "先由 y=0 判定 x 軸。",
+      "再由 x>0 判定正半軸。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "y 軸正半軸上",
+        "truth": false,
+        "reason": "y 軸應有 x=0。"
+      },
+      {
+        "choice": "第一象限",
+        "truth": false,
+        "reason": "象限點兩分量皆非 0。"
+      },
+      {
+        "choice": "x 軸正半軸上",
+        "truth": true,
+        "reason": "y=0 且 x>0。"
+      },
+      {
+        "choice": "原點",
+        "truth": false,
+        "reason": "原點需 x=y=0。"
+      }
+    ],
+    "misconceptionTarget": "看到正數 7 就直接判第一象限。",
+    "prerequisiteCheck": "需知道 x 軸上的點滿足 y=0。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "A 不是原點，且題意無圖形比例問題。",
+    "difficultyReason": "直接使用零分量與正負半軸，屬基礎題。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "辨認 x 軸正半軸",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "ce7a5ffa5396ca63bd5f150ef3220c87d40c55fe591a874c5f6c3cb31538c1b3"
+  },
+  {
+    "questionId": "u05-s003-v002",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "下列哪個點在 y 軸上？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "由零分量辨認 y 軸",
+    "choices": [
+      "(0,-6)",
+      "(-6,0)",
+      "(6,6)",
+      "(-6,6)"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "y 軸上的點橫坐標必為 0；只有 (0,-6) 符合。",
+    "explanation": "y 軸上的點橫坐標必為 0；只有 (0,-6) 符合。",
+    "steps": [
+      "檢查每個選項第一分量。",
+      "第一分量為 0 者在 y 軸。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "(0,-6)",
+        "truth": true,
+        "reason": "x=0，位於 y 軸負半軸。"
+      },
+      {
+        "choice": "(-6,0)",
+        "truth": false,
+        "reason": "y=0，位於 x 軸。"
+      },
+      {
+        "choice": "(6,6)",
+        "truth": false,
+        "reason": "在第一象限。"
+      },
+      {
+        "choice": "(-6,6)",
+        "truth": false,
+        "reason": "在第二象限。"
+      }
+    ],
+    "misconceptionTarget": "把『y 軸』誤記成 y=0。",
+    "prerequisiteCheck": "需分清 x 軸與 y 軸條件。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "候選點均精確給定，只有一點橫坐標為 0。",
+    "difficultyReason": "只需一次定義判斷。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由零分量辨認 y 軸",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "9ba1f9d6c01f47e75b43214a47edb96c4e037bf13ebbc23ddfdabd3a4734d8ef"
+  },
+  {
+    "questionId": "u05-s003-v003",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "點 P=(-4,3) 到 y 軸的距離是多少？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "計算點到 y 軸距離",
+    "choices": [
+      "3",
+      "7",
+      "1",
+      "4"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "到 y 軸看橫坐標的絕對值，|-4|=4。",
+    "explanation": "到 y 軸看橫坐標的絕對值，|-4|=4。",
+    "steps": [
+      "找 x=-4。",
+      "取絕對值得 4。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "誤取 |y|，那是到 x 軸距離。"
+      },
+      {
+        "choice": "7",
+        "truth": false,
+        "reason": "把兩個絕對值相加。"
+      },
+      {
+        "choice": "1",
+        "truth": false,
+        "reason": "把兩坐標相減。"
+      },
+      {
+        "choice": "4",
+        "truth": true,
+        "reason": "到 y 軸的水平距離為 |x|=4。"
+      }
+    ],
+    "misconceptionTarget": "把到 y 軸距離誤用縱坐標。",
+    "prerequisiteCheck": "需理解橫坐標表示左右距離。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "坐標單位相同，距離非負且不需要一般兩點距離公式。",
+    "difficultyReason": "直接套用 |x|，屬基礎計算。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "計算點到 y 軸距離",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "7c3b6dd6780da2fee7695e368c8d141660afbd06cab7444de40ce29d266aeee3"
+  },
+  {
+    "questionId": "u05-s003-v004",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "若 Q=(a,0) 且 Q 在 x 軸負半軸上，則 a 必須滿足哪個條件？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "由半軸位置反推參數",
+    "choices": [
+      "a>0",
+      "a<0",
+      "a=0",
+      "a≠0"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "Q 已因 y=0 在 x 軸上；負半軸要求橫坐標 a<0。",
+    "explanation": "Q 已因 y=0 在 x 軸上；負半軸要求橫坐標 a<0。",
+    "steps": [
+      "確認 y=0。",
+      "由負半軸得 a<0。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "a>0",
+        "truth": false,
+        "reason": "會在正半軸。"
+      },
+      {
+        "choice": "a<0",
+        "truth": true,
+        "reason": "x 軸負半軸的橫坐標為負。"
+      },
+      {
+        "choice": "a=0",
+        "truth": false,
+        "reason": "會在原點，不屬負半軸。"
+      },
+      {
+        "choice": "a≠0",
+        "truth": false,
+        "reason": "也包含正半軸，條件過寬。"
+      }
+    ],
+    "misconceptionTarget": "把原點包含進負半軸，或只寫非零。",
+    "prerequisiteCheck": "需會解讀軸上點與正負方向。",
+    "estimatedTimeSec": 100,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "負半軸通常不含原點，因此使用嚴格不等式。",
+    "difficultyReason": "需要區分負半軸與原點邊界，屬標準。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由半軸位置反推參數",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "82b0779469c4f615dae17d9eb27839537a724d2d6b5f7c10d3ea391172fd7130"
+  },
+  {
+    "questionId": "u05-s003-v005",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "點 R=(5,-8) 到 x 軸與 y 軸的距離分別是多少？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "同時計算到兩軸距離",
+    "choices": [
+      "5 與 8",
+      "13 與 13",
+      "8 與 5",
+      "3 與 3"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "到 x 軸看 |y|=8；到 y 軸看 |x|=5，依題目順序為 8 與 5。",
+    "explanation": "到 x 軸看 |y|=8；到 y 軸看 |x|=5，依題目順序為 8 與 5。",
+    "steps": [
+      "到 x 軸取 |-8|=8。",
+      "到 y 軸取 |5|=5。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "5 與 8",
+        "truth": false,
+        "reason": "把兩個距離順序交換。"
+      },
+      {
+        "choice": "13 與 13",
+        "truth": false,
+        "reason": "誤把絕對值相加。"
+      },
+      {
+        "choice": "8 與 5",
+        "truth": true,
+        "reason": "軸名與對應分量正確。"
+      },
+      {
+        "choice": "3 與 3",
+        "truth": false,
+        "reason": "誤取兩坐標差。"
+      }
+    ],
+    "misconceptionTarget": "知道公式但未依題目順序作答。",
+    "prerequisiteCheck": "需掌握兩個到軸距離公式。",
+    "estimatedTimeSec": 100,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "題目問『分別』且順序明確為 x 軸再 y 軸。",
+    "difficultyReason": "需交叉配對兩個軸與兩個分量，屬標準。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "同時計算到兩軸距離",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "1ecc97f0b4173d00118c7f0d8827873e27b26ad982ed296690ffe5148f052fcf"
+  },
+  {
+    "questionId": "u05-s003-v006",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "若點 S=(0,b) 到 x 軸的距離為 6，則 b 可能為何？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "由到軸距離反推兩個坐標",
+    "choices": [
+      "6 或 -6",
+      "只有 6",
+      "只有 -6",
+      "0 或 6"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "到 x 軸距離是 |b|，所以 |b|=6，得到 b=6 或 b=-6。",
+    "explanation": "到 x 軸距離是 |b|，所以 |b|=6，得到 b=6 或 b=-6。",
+    "steps": [
+      "建立 |b|=6。",
+      "考慮上方與下方兩個位置。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6 或 -6",
+        "truth": true,
+        "reason": "兩者到 x 軸距離都為 6。"
+      },
+      {
+        "choice": "只有 6",
+        "truth": false,
+        "reason": "漏掉 y 軸下方位置。"
+      },
+      {
+        "choice": "只有 -6",
+        "truth": false,
+        "reason": "漏掉 y 軸上方位置。"
+      },
+      {
+        "choice": "0 或 6",
+        "truth": false,
+        "reason": "b=0 的距離為 0。"
+      }
+    ],
+    "misconceptionTarget": "由距離反推位置時只考慮正方向。",
+    "prerequisiteCheck": "需知道距離非負與絕對值意義。",
+    "estimatedTimeSec": 100,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "距離只給大小，因此上、下兩側均可能。",
+    "difficultyReason": "需要解絕對值條件並保留兩解，屬標準。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由到軸距離反推兩個坐標",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "0ef12b47ec225d147a43d8290f8de26aaac88d89c2b40a52d4abc25197ec1c14"
+  },
+  {
+    "questionId": "u05-s003-v007",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "點 T=(2m-4,m+1) 在 y 軸上，求 T 到 x 軸的距離。",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "參數軸上條件與距離整合",
+    "choices": [
+      "0",
+      "2",
+      "5",
+      "3"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "在 y 軸上要求 2m-4=0，得 m=2；此時 T=(0,3)，到 x 軸距離為 |3|=3。",
+    "explanation": "在 y 軸上要求 2m-4=0，得 m=2；此時 T=(0,3)，到 x 軸距離為 |3|=3。",
+    "steps": [
+      "由 x=0 解 2m-4=0。",
+      "代入 y=m+1=3，再取絕對值。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "0",
+        "truth": false,
+        "reason": "把在 y 軸誤認為到 x 軸距離為 0。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "只回報 m，未求距離。"
+      },
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "把兩個表達式錯誤相加。"
+      },
+      {
+        "choice": "3",
+        "truth": true,
+        "reason": "參數與距離計算都正確。"
+      }
+    ],
+    "misconceptionTarget": "求出參數後未繼續求題目真正要求的距離。",
+    "prerequisiteCheck": "需會解一元一次方程式與代入。",
+    "estimatedTimeSec": 135,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "y 軸上的點不必在 x 軸；距離由縱坐標決定。",
+    "difficultyReason": "需兩階段：先用軸上條件求 m，再求到另一軸距離。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "參數軸上條件與距離整合",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "0f61eb13daf911055717cea8a8239cc86ec9285e10baf2a922ce2a03b772cbf1"
+  },
+  {
+    "questionId": "u05-s003-v008",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "若 A=(p,q) 到 x 軸距離為 4，到 y 軸距離為 7，且 A 在第二象限，則 A 為何？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "由兩軸距離與象限唯一定位",
+    "choices": [
+      "(7,4)",
+      "(-7,4)",
+      "(-4,7)",
+      "(-7,-4)"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "到 y 軸距離 7 表示 |p|=7；第二象限使 p<0，所以 p=-7。到 x 軸距離 4 表示 |q|=4；第二象限使 q>0，所以 q=4。",
+    "explanation": "到 y 軸距離 7 表示 |p|=7；第二象限使 p<0，所以 p=-7。到 x 軸距離 4 表示 |q|=4；第二象限使 q>0，所以 q=4。",
+    "steps": [
+      "由第二象限選 p=-7。",
+      "由第二象限選 q=4。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "(7,4)",
+        "truth": false,
+        "reason": "距離符合但在第一象限。"
+      },
+      {
+        "choice": "(-7,4)",
+        "truth": true,
+        "reason": "距兩軸與第二象限均符合。"
+      },
+      {
+        "choice": "(-4,7)",
+        "truth": false,
+        "reason": "交換兩個距離。"
+      },
+      {
+        "choice": "(-7,-4)",
+        "truth": false,
+        "reason": "在第三象限。"
+      }
+    ],
+    "misconceptionTarget": "把到 x 軸與到 y 軸的距離分量交換。",
+    "prerequisiteCheck": "需掌握象限與到軸距離。",
+    "estimatedTimeSec": 135,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "距離本有四個符號組合，象限條件將其縮成唯一點。",
+    "difficultyReason": "需結合兩個絕對值與象限符號，屬進階。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由兩軸距離與象限唯一定位",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "c8918e05898ec647a618815e29b3cf5fb86759fe9f5979cb15917a7a2c470095"
+  },
+  {
+    "questionId": "u05-s003-v009",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "點 B=(k,2k-6) 同時在兩條坐標軸上，則 k 為何？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "檢查原點條件的相容性",
+    "choices": [
+      "0",
+      "3",
+      "不存在這樣的 k",
+      "6"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "同時在兩軸上表示 B 必須是 (0,0)。需 k=0 且 2k-6=0；前者給 k=0，後者給 k=3，無法同時成立。",
+    "explanation": "同時在兩軸上表示 B 必須是 (0,0)。需 k=0 且 2k-6=0；前者給 k=0，後者給 k=3，無法同時成立。",
+    "steps": [
+      "由原點條件列 k=0。",
+      "同時列 2k-6=0 得 k=3，條件矛盾。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "0",
+        "truth": false,
+        "reason": "此時 B=(0,-6)，只在 y 軸。"
+      },
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "此時 B=(3,0)，只在 x 軸。"
+      },
+      {
+        "choice": "不存在這樣的 k",
+        "truth": true,
+        "reason": "兩個零分量條件互相矛盾。"
+      },
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "此時 B=(6,6)，在第一象限。"
+      }
+    ],
+    "misconceptionTarget": "只檢查一個分量為 0 就宣稱同時在兩軸。",
+    "prerequisiteCheck": "需會把幾何條件轉成兩個方程式。",
+    "estimatedTimeSec": 135,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "不存在也可作為唯一正確答案；四選項逐一可驗。",
+    "difficultyReason": "需辨認『同時在兩軸』等同原點並檢查兩式相容性。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "檢查原點條件的相容性",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "ea6f679b1b0c335b6ffd6e5e3903bea967a8f3d5ca978eb07ef7e5e725c2e411"
+  },
+  {
+    "questionId": "u05-s003-v010",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "地下停車場平面以電梯為原點，每格 2 公尺。車位 C 的坐標為 (0,-9)。C 到 x 軸代表的中央通道實際距離是多少？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "將到軸格數換算實際距離",
+    "choices": [
+      "18 公尺",
+      "9 公尺",
+      "11 公尺",
+      "0 公尺"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "到 x 軸的格數為 |-9|=9 格，每格 2 公尺，所以實際距離 9×2=18 公尺。",
+    "explanation": "到 x 軸的格數為 |-9|=9 格，每格 2 公尺，所以實際距離 9×2=18 公尺。",
+    "steps": [
+      "求格線距離 9 格。",
+      "乘每格 2 公尺。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "18 公尺",
+        "truth": true,
+        "reason": "9 格乘 2 公尺正確。"
+      },
+      {
+        "choice": "9 公尺",
+        "truth": false,
+        "reason": "只報格數，未換算。"
+      },
+      {
+        "choice": "11 公尺",
+        "truth": false,
+        "reason": "誤把格數與每格長度相加。"
+      },
+      {
+        "choice": "0 公尺",
+        "truth": false,
+        "reason": "因 x=0 誤以為到 x 軸距離為 0。"
+      }
+    ],
+    "misconceptionTarget": "忽略每格代表的實際長度，或看錯要到哪一軸。",
+    "prerequisiteCheck": "需會到 x 軸距離公式。",
+    "estimatedTimeSec": 150,
+    "unitCheck": "先以格計算，再乘 2 公尺/格；最終單位為公尺。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "x=0 只表示在 y 軸；中央通道是 x 軸，距離由 y 決定。",
+    "difficultyReason": "情境中比例單位不可省略，需完成兩步換算。",
+    "literacyContextNecessity": "每格 2 公尺決定實際距離；移除停車場比例後只能得到 9 格，不能回答公尺。",
+    "authoringIntent": "將到軸格數換算實際距離",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "da784152620c9f96f96a7bbe2e0d5d27013cce348da0624972198ddc4407da1a"
+  },
+  {
+    "questionId": "u05-s003-v011",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "倉儲機器人位於 (a,0)，表示它正在主通道上。若它離原點 12 公尺且每坐標單位為 1 公尺，可能的位置為何？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "在主通道上由距離反推位置",
+    "choices": [
+      "只有 (12,0)",
+      "只有 (-12,0)",
+      "(0,12) 或 (0,-12)",
+      "(12,0) 或 (-12,0)"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "在 x 軸上已知 y=0；離原點 12 公尺表示 |a|=12，所以 a=12 或 -12。",
+    "explanation": "在 x 軸上已知 y=0；離原點 12 公尺表示 |a|=12，所以 a=12 或 -12。",
+    "steps": [
+      "由主通道條件保留 y=0。",
+      "解 |a|=12 得左右兩點。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "只有 (12,0)",
+        "truth": false,
+        "reason": "漏掉負半軸。"
+      },
+      {
+        "choice": "只有 (-12,0)",
+        "truth": false,
+        "reason": "漏掉正半軸。"
+      },
+      {
+        "choice": "(0,12) 或 (0,-12)",
+        "truth": false,
+        "reason": "改成 y 軸上的點。"
+      },
+      {
+        "choice": "(12,0) 或 (-12,0)",
+        "truth": true,
+        "reason": "左右兩側都距原點 12。"
+      }
+    ],
+    "misconceptionTarget": "距離只考慮正方向，或交換通道所對應的軸。",
+    "prerequisiteCheck": "需會解軸上距離的絕對值。",
+    "estimatedTimeSec": 150,
+    "unitCheck": "每單位 1 公尺，因此 12 單位直接對應 12 公尺。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "『離原點 12 公尺』沿 x 軸測量，兩側都符合。",
+    "difficultyReason": "需結合情境中的軸上限制與左右兩解。",
+    "literacyContextNecessity": "機器人在主通道 y=0 的限制把可能位置縮到兩個；情境中的通道資訊直接參與求解。",
+    "authoringIntent": "在主通道上由距離反推位置",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "f5ebd7042b84695f3b3274623f6cfdbb571033b1de31d9597ee2869977003db3"
+  },
+  {
+    "questionId": "u05-s003-v012",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "城市地圖把河道設為 y 軸。某設施到河道 5 公里，且位於河道東側、赤道基準線南側 2 公里。若東、北為正向，設施坐標為何？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "由地理軸距與方位建立坐標",
+    "choices": [
+      "(-5,-2)",
+      "(5,-2)",
+      "(2,-5)",
+      "(5,2)"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "到 y 軸 5 公里表示 |x|=5；在東側所以 x=5。南側 2 公里表示 y=-2。",
+    "explanation": "到 y 軸 5 公里表示 |x|=5；在東側所以 x=5。南側 2 公里表示 y=-2。",
+    "steps": [
+      "由河道 y 軸距離與東側得 x=5。",
+      "由南側得 y=-2。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "(-5,-2)",
+        "truth": false,
+        "reason": "位於河道西側。"
+      },
+      {
+        "choice": "(5,-2)",
+        "truth": true,
+        "reason": "東 5、南 2 均符合。"
+      },
+      {
+        "choice": "(2,-5)",
+        "truth": false,
+        "reason": "交換兩個距離。"
+      },
+      {
+        "choice": "(5,2)",
+        "truth": false,
+        "reason": "位於北側。"
+      }
+    ],
+    "misconceptionTarget": "把到 y 軸距離寫進 y 分量，或忽略方位符號。",
+    "prerequisiteCheck": "需掌握到 y 軸距離與方向。",
+    "estimatedTimeSec": 150,
+    "unitCheck": "兩分量均以公里為坐標單位，答案保持 (x,y) 順序。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "東北正向已明示；公里距離直接作坐標單位。",
+    "difficultyReason": "需把河道、東西與南北三項資訊整合成坐標。",
+    "literacyContextNecessity": "河道被建模為 y 軸，『到河道』決定 |x|；東側與南側再決定符號，情境不可刪除。",
+    "authoringIntent": "由地理軸距與方位建立坐標",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "ecea4f9bd84855b2164bdff48516db4b2905452bbbd21966517bf6b0a3358adb"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u05-s003-cr001",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "點 A=(-7,4)。求 A 到 x 軸與 y 軸的距離，並解釋為何兩個答案都不是負數。",
+    "requiredWork": [
+      "分別使用 |y| 與 |x|。",
+      "說明距離非負。"
+    ],
+    "fullCreditSolution": [
+      "A 到 x 軸的距離為 |4|=4。",
+      "A 到 y 軸的距離為 |-7|=7。",
+      "負號只表示位於 y 軸左側；距離是長度，所以取絕對值且不為負。"
+    ],
+    "alternativeSolutions": [
+      "可描述從 A 垂直走 4 單位到 x 軸、水平走 7 單位到 y 軸。"
+    ],
+    "reasoningSteps": [
+      "A 到 x 軸的距離為 |4|=4。",
+      "A 到 y 軸的距離為 |-7|=7。",
+      "負號只表示位於 y 軸左側；距離是長度，所以取絕對值且不為負。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "距離 4、7 均正確，且說明距離為長度要取絕對值。"
+      },
+      {
+        "score": 2,
+        "criteria": "兩距離正確但解釋不足，或交換作答順序但文字軸名清楚。"
+      },
+      {
+        "score": 1,
+        "criteria": "只算對一個距離，並呈現使用坐標絕對值的概念。"
+      },
+      {
+        "score": 0,
+        "criteria": "寫成 -7 或把兩坐標相加，未理解到軸距離。"
+      }
+    ],
+    "partialCreditRules": [
+      "若答案順序交換但各自標明軸名，不扣分。"
+    ],
+    "followThroughPolicy": "若把某一軸對應的坐標分量交換，後續絕對值計算正確，可給該計算步驟分，但軸名與距離配對分不得給。",
+    "unitAndNotationRules": "答案須分別標明「到 x 軸 4 單位」與「到 y 軸 7 單位」；距離不得寫成負數。",
+    "answerOnlyPolicy": "只寫 4、7 且軸名配對正確但沒有說明絕對值意義，最高給 2 分。",
+    "commonErrors": [
+      "到 x 軸使用 |x|。",
+      "把到 y 軸距離寫成 -7。"
+    ],
+    "independentReview": {
+      "derivedResult": "一個軸距算錯不連帶扣另一個；解釋仍可獨立得部分分。",
+      "ambiguity": "距離單位若題目未指定，可寫『單位』；不得寫負距離。",
+      "decision": "pass",
+      "reviewNote": "重新由題目條件推導結果為 一個軸距算錯不連帶扣另一個；解釋仍可獨立得部分分。；並逐項核對評分規準與可接受的等價表示。"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "79151aa9a35b946b5796fe28064e9c5a71e269d5373257666faba34d2a0ee4f1"
+  },
+  {
+    "questionId": "u05-s003-cr002",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-basics",
+    "skillId": "coordinate-axis-points",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "點 P=(a,b) 到 x 軸距離為 3，到 y 軸距離為 5，且 P 位於第四象限。求 P，並列出若沒有象限條件時原本有哪四種可能。",
+    "requiredWork": [
+      "由距離寫出 |b|=3、|a|=5。",
+      "用第四象限選符號。",
+      "列出四種原始組合。"
+    ],
+    "fullCreditSolution": [
+      "距離條件給 a=±5、b=±3。",
+      "沒有象限條件時，可能為 (5,3)、(5,-3)、(-5,3)、(-5,-3)。",
+      "第四象限要求 a>0、b<0，所以 P=(5,-3)。"
+    ],
+    "alternativeSolutions": [
+      "可先畫正負符號表，再以第四象限 (+,-) 選出答案。"
+    ],
+    "reasoningSteps": [
+      "距離條件給 a=±5、b=±3。",
+      "沒有象限條件時，可能為 (5,3)、(5,-3)、(-5,3)、(-5,-3)。",
+      "第四象限要求 a>0、b<0，所以 P=(5,-3)。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "列出四種可能並正確選得 P=(5,-3)。"
+      },
+      {
+        "score": 2,
+        "criteria": "最終點正確且有距離與象限理由，但未完整列四種。"
+      },
+      {
+        "score": 1,
+        "criteria": "知道 a=±5、b=±3，但象限選符號錯或漏組合。"
+      },
+      {
+        "score": 0,
+        "criteria": "把距離 3、5 交換且未使用象限。"
+      }
+    ],
+    "partialCreditRules": [
+      "四種可能順序不拘；重複點不算完整列舉。"
+    ],
+    "followThroughPolicy": "若先列四種可能時漏掉一個，但能依第四象限正負號正確選出 (5,-3)，可保留象限判斷分；若象限符號錯則不給最終點分。",
+    "unitAndNotationRules": "點須寫成 P=(5,-3)；四種候選均用有序對表示，先橫坐標後縱坐標。",
+    "answerOnlyPolicy": "只寫 P=(5,-3) 而未列出沒有象限限制時的四種可能，最高給 2 分。",
+    "commonErrors": [
+      "到 x 軸距離錯放成 |a|。",
+      "第四象限寫成 (-,+)。"
+    ],
+    "independentReview": {
+      "derivedResult": "若學生交換兩個距離但後續象限選符號一致，可給 1 分，不給最終點分。",
+      "ambiguity": "坐標順序為 (到 y 軸所決定的 x, 到 x 軸所決定的 y)。",
+      "decision": "pass",
+      "reviewNote": "重新由題目條件推導結果為 若學生交換兩個距離但後續象限選符號一致，可給 1 分，不給最終點分。；並逐項核對評分規準與可接受的等價表示。"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "a73581a6b4289498b0880ebd7c1d5740623741811f99e0c5cf8a69dc451af366"
+  }
+];
+
+export const SEMANTIC_REVIEWS = [
+  {
+    "questionId": "u05-s003-v001",
+    "contentSha256": "ce7a5ffa5396ca63bd5f150ef3220c87d40c55fe591a874c5f6c3cb31538c1b3",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "A 的 y=0，所以在 x 軸上；x=7>0，因此在 x 軸正半軸。",
+    "derivedAnswer": "x 軸正半軸上",
+    "storedAnswer": "x 軸正半軸上",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「x 軸正半軸上」；其餘三項逐項檢查：「y 軸正半軸上」不成立，y 軸應有 x=0。；「第一象限」不成立，象限點兩分量皆非 0。；「原點」不成立，原點需 x=y=0。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "A 不是原點，且題意無圖形比例問題。",
+      "alternateReading": "常見誤讀是「看到正數 7 就直接判第一象限。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "直接使用零分量與正負半軸，屬基礎題。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需知道 x 軸上的點滿足 y=0。",
+    "languageCheck": "題幹所求為「辨認 x 軸正半軸」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「請判斷 A=(7,0) 所在的坐標軸位置。」重新依序處理：A 的 y=0，所以在 x 軸上；x=7>0，因此在 x 軸正半軸。 正確選項為「x 軸正半軸上」。三個干擾項均對應不同錯誤：「y 軸正半軸上」不成立，y 軸應有 x=0。；「第一象限」不成立，象限點兩分量皆非 0。；「原點」不成立，原點需 x=y=0。。邊界審查：A 不是原點，且題意無圖形比例問題。 難度理由：直接使用零分量與正負半軸，屬基礎題。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v002",
+    "contentSha256": "9ba1f9d6c01f47e75b43214a47edb96c4e037bf13ebbc23ddfdabd3a4734d8ef",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "y 軸上的點橫坐標必為 0；只有 (0,-6) 符合。",
+    "derivedAnswer": "(0,-6)",
+    "storedAnswer": "(0,-6)",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「(0,-6)」；其餘三項逐項檢查：「(-6,0)」不成立，y=0，位於 x 軸。；「(6,6)」不成立，在第一象限。；「(-6,6)」不成立，在第二象限。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "候選點均精確給定，只有一點橫坐標為 0。",
+      "alternateReading": "常見誤讀是「把『y 軸』誤記成 y=0。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "只需一次定義判斷。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需分清 x 軸與 y 軸條件。",
+    "languageCheck": "題幹所求為「由零分量辨認 y 軸」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「下列哪個點在 y 軸上？」重新依序處理：y 軸上的點橫坐標必為 0；只有 (0,-6) 符合。 正確選項為「(0,-6)」。三個干擾項均對應不同錯誤：「(-6,0)」不成立，y=0，位於 x 軸。；「(6,6)」不成立，在第一象限。；「(-6,6)」不成立，在第二象限。。邊界審查：候選點均精確給定，只有一點橫坐標為 0。 難度理由：只需一次定義判斷。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v003",
+    "contentSha256": "7c3b6dd6780da2fee7695e368c8d141660afbd06cab7444de40ce29d266aeee3",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "到 y 軸看橫坐標的絕對值，|-4|=4。",
+    "derivedAnswer": "4",
+    "storedAnswer": "4",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「4」；其餘三項逐項檢查：「3」不成立，誤取 |y|，那是到 x 軸距離。；「7」不成立，把兩個絕對值相加。；「1」不成立，把兩坐標相減。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "坐標單位相同，距離非負且不需要一般兩點距離公式。",
+      "alternateReading": "常見誤讀是「把到 y 軸距離誤用縱坐標。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "直接套用 |x|，屬基礎計算。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需理解橫坐標表示左右距離。",
+    "languageCheck": "題幹所求為「計算點到 y 軸距離」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「點 P=(-4,3) 到 y 軸的距離是多少？」重新依序處理：到 y 軸看橫坐標的絕對值，|-4|=4。 正確選項為「4」。三個干擾項均對應不同錯誤：「3」不成立，誤取 |y|，那是到 x 軸距離。；「7」不成立，把兩個絕對值相加。；「1」不成立，把兩坐標相減。。邊界審查：坐標單位相同，距離非負且不需要一般兩點距離公式。 難度理由：直接套用 |x|，屬基礎計算。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v004",
+    "contentSha256": "82b0779469c4f615dae17d9eb27839537a724d2d6b5f7c10d3ea391172fd7130",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "Q 已因 y=0 在 x 軸上；負半軸要求橫坐標 a<0。",
+    "derivedAnswer": "a<0",
+    "storedAnswer": "a<0",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「a<0」；其餘三項逐項檢查：「a>0」不成立，會在正半軸。；「a=0」不成立，會在原點，不屬負半軸。；「a≠0」不成立，也包含正半軸，條件過寬。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "負半軸通常不含原點，因此使用嚴格不等式。",
+      "alternateReading": "常見誤讀是「把原點包含進負半軸，或只寫非零。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需要區分負半軸與原點邊界，屬標準。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會解讀軸上點與正負方向。",
+    "languageCheck": "題幹所求為「由半軸位置反推參數」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「若 Q=(a,0) 且 Q 在 x 軸負半軸上，則 a 必須滿足哪個條件？」重新依序處理：Q 已因 y=0 在 x 軸上；負半軸要求橫坐標 a<0。 正確選項為「a<0」。三個干擾項均對應不同錯誤：「a>0」不成立，會在正半軸。；「a=0」不成立，會在原點，不屬負半軸。；「a≠0」不成立，也包含正半軸，條件過寬。。邊界審查：負半軸通常不含原點，因此使用嚴格不等式。 難度理由：需要區分負半軸與原點邊界，屬標準。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v005",
+    "contentSha256": "1ecc97f0b4173d00118c7f0d8827873e27b26ad982ed296690ffe5148f052fcf",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "到 x 軸看 |y|=8；到 y 軸看 |x|=5，依題目順序為 8 與 5。",
+    "derivedAnswer": "8 與 5",
+    "storedAnswer": "8 與 5",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「8 與 5」；其餘三項逐項檢查：「5 與 8」不成立，把兩個距離順序交換。；「13 與 13」不成立，誤把絕對值相加。；「3 與 3」不成立，誤取兩坐標差。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "題目問『分別』且順序明確為 x 軸再 y 軸。",
+      "alternateReading": "常見誤讀是「知道公式但未依題目順序作答。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需交叉配對兩個軸與兩個分量，屬標準。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需掌握兩個到軸距離公式。",
+    "languageCheck": "題幹所求為「同時計算到兩軸距離」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「點 R=(5,-8) 到 x 軸與 y 軸的距離分別是多少？」重新依序處理：到 x 軸看 |y|=8；到 y 軸看 |x|=5，依題目順序為 8 與 5。 正確選項為「8 與 5」。三個干擾項均對應不同錯誤：「5 與 8」不成立，把兩個距離順序交換。；「13 與 13」不成立，誤把絕對值相加。；「3 與 3」不成立，誤取兩坐標差。。邊界審查：題目問『分別』且順序明確為 x 軸再 y 軸。 難度理由：需交叉配對兩個軸與兩個分量，屬標準。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v006",
+    "contentSha256": "0ef12b47ec225d147a43d8290f8de26aaac88d89c2b40a52d4abc25197ec1c14",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "到 x 軸距離是 |b|，所以 |b|=6，得到 b=6 或 b=-6。",
+    "derivedAnswer": "6 或 -6",
+    "storedAnswer": "6 或 -6",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「6 或 -6」；其餘三項逐項檢查：「只有 6」不成立，漏掉 y 軸下方位置。；「只有 -6」不成立，漏掉 y 軸上方位置。；「0 或 6」不成立，b=0 的距離為 0。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "距離只給大小，因此上、下兩側均可能。",
+      "alternateReading": "常見誤讀是「由距離反推位置時只考慮正方向。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需要解絕對值條件並保留兩解，屬標準。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需知道距離非負與絕對值意義。",
+    "languageCheck": "題幹所求為「由到軸距離反推兩個坐標」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「若點 S=(0,b) 到 x 軸的距離為 6，則 b 可能為何？」重新依序處理：到 x 軸距離是 |b|，所以 |b|=6，得到 b=6 或 b=-6。 正確選項為「6 或 -6」。三個干擾項均對應不同錯誤：「只有 6」不成立，漏掉 y 軸下方位置。；「只有 -6」不成立，漏掉 y 軸上方位置。；「0 或 6」不成立，b=0 的距離為 0。。邊界審查：距離只給大小，因此上、下兩側均可能。 難度理由：需要解絕對值條件並保留兩解，屬標準。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v007",
+    "contentSha256": "0f61eb13daf911055717cea8a8239cc86ec9285e10baf2a922ce2a03b772cbf1",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "在 y 軸上要求 2m-4=0，得 m=2；此時 T=(0,3)，到 x 軸距離為 |3|=3。",
+    "derivedAnswer": "3",
+    "storedAnswer": "3",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「3」；其餘三項逐項檢查：「0」不成立，把在 y 軸誤認為到 x 軸距離為 0。；「2」不成立，只回報 m，未求距離。；「5」不成立，把兩個表達式錯誤相加。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "y 軸上的點不必在 x 軸；距離由縱坐標決定。",
+      "alternateReading": "常見誤讀是「求出參數後未繼續求題目真正要求的距離。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需兩階段：先用軸上條件求 m，再求到另一軸距離。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會解一元一次方程式與代入。",
+    "languageCheck": "題幹所求為「參數軸上條件與距離整合」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「點 T=(2m-4,m+1) 在 y 軸上，求 T 到 x 軸的距離。」重新依序處理：在 y 軸上要求 2m-4=0，得 m=2；此時 T=(0,3)，到 x 軸距離為 |3|=3。 正確選項為「3」。三個干擾項均對應不同錯誤：「0」不成立，把在 y 軸誤認為到 x 軸距離為 0。；「2」不成立，只回報 m，未求距離。；「5」不成立，把兩個表達式錯誤相加。。邊界審查：y 軸上的點不必在 x 軸；距離由縱坐標決定。 難度理由：需兩階段：先用軸上條件求 m，再求到另一軸距離。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v008",
+    "contentSha256": "c8918e05898ec647a618815e29b3cf5fb86759fe9f5979cb15917a7a2c470095",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "到 y 軸距離 7 表示 |p|=7；第二象限使 p<0，所以 p=-7。到 x 軸距離 4 表示 |q|=4；第二象限使 q>0，所以 q=4。",
+    "derivedAnswer": "(-7,4)",
+    "storedAnswer": "(-7,4)",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「(-7,4)」；其餘三項逐項檢查：「(7,4)」不成立，距離符合但在第一象限。；「(-4,7)」不成立，交換兩個距離。；「(-7,-4)」不成立，在第三象限。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "距離本有四個符號組合，象限條件將其縮成唯一點。",
+      "alternateReading": "常見誤讀是「把到 x 軸與到 y 軸的距離分量交換。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需結合兩個絕對值與象限符號，屬進階。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需掌握象限與到軸距離。",
+    "languageCheck": "題幹所求為「由兩軸距離與象限唯一定位」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「若 A=(p,q) 到 x 軸距離為 4，到 y 軸距離為 7，且 A 在第二象限，則 A 為何？」重新依序處理：到 y 軸距離 7 表示 |p|=7；第二象限使 p<0，所以 p=-7。到 x 軸距離 4 表示 |q|=4；第二象限使 q>0，所以 q=4。 正確選項為「(-7,4)」。三個干擾項均對應不同錯誤：「(7,4)」不成立，距離符合但在第一象限。；「(-4,7)」不成立，交換兩個距離。；「(-7,-4)」不成立，在第三象限。。邊界審查：距離本有四個符號組合，象限條件將其縮成唯一點。 難度理由：需結合兩個絕對值與象限符號，屬進階。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v009",
+    "contentSha256": "ea6f679b1b0c335b6ffd6e5e3903bea967a8f3d5ca978eb07ef7e5e725c2e411",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "同時在兩軸上表示 B 必須是 (0,0)。需 k=0 且 2k-6=0；前者給 k=0，後者給 k=3，無法同時成立。",
+    "derivedAnswer": "不存在這樣的 k",
+    "storedAnswer": "不存在這樣的 k",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「不存在這樣的 k」；其餘三項逐項檢查：「0」不成立，此時 B=(0,-6)，只在 y 軸。；「3」不成立，此時 B=(3,0)，只在 x 軸。；「6」不成立，此時 B=(6,6)，在第一象限。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "不存在也可作為唯一正確答案；四選項逐一可驗。",
+      "alternateReading": "常見誤讀是「只檢查一個分量為 0 就宣稱同時在兩軸。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需辨認『同時在兩軸』等同原點並檢查兩式相容性。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會把幾何條件轉成兩個方程式。",
+    "languageCheck": "題幹所求為「檢查原點條件的相容性」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「點 B=(k,2k-6) 同時在兩條坐標軸上，則 k 為何？」重新依序處理：同時在兩軸上表示 B 必須是 (0,0)。需 k=0 且 2k-6=0；前者給 k=0，後者給 k=3，無法同時成立。 正確選項為「不存在這樣的 k」。三個干擾項均對應不同錯誤：「0」不成立，此時 B=(0,-6)，只在 y 軸。；「3」不成立，此時 B=(3,0)，只在 x 軸。；「6」不成立，此時 B=(6,6)，在第一象限。。邊界審查：不存在也可作為唯一正確答案；四選項逐一可驗。 難度理由：需辨認『同時在兩軸』等同原點並檢查兩式相容性。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v010",
+    "contentSha256": "da784152620c9f96f96a7bbe2e0d5d27013cce348da0624972198ddc4407da1a",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "到 x 軸的格數為 |-9|=9 格，每格 2 公尺，所以實際距離 9×2=18 公尺。",
+    "derivedAnswer": "18 公尺",
+    "storedAnswer": "18 公尺",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「18 公尺」；其餘三項逐項檢查：「9 公尺」不成立，只報格數，未換算。；「11 公尺」不成立，誤把格數與每格長度相加。；「0 公尺」不成立，因 x=0 誤以為到 x 軸距離為 0。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "先以格計算，再乘 2 公尺/格；最終單位為公尺。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "x=0 只表示在 y 軸；中央通道是 x 軸，距離由 y 決定。",
+      "alternateReading": "常見誤讀是「忽略每格代表的實際長度，或看錯要到哪一軸。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "情境中比例單位不可省略，需完成兩步換算。",
+    "literacyContextNecessity": "每格 2 公尺決定實際距離；移除停車場比例後只能得到 9 格，不能回答公尺。",
+    "prerequisiteCheck": "需會到 x 軸距離公式。",
+    "languageCheck": "題幹所求為「將到軸格數換算實際距離」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「地下停車場平面以電梯為原點，每格 2 公尺。車位 C 的坐標為 (0,-9)。C 到 x 軸代表的中央通道實際距離是多少？」重新依序處理：到 x 軸的格數為 |-9|=9 格，每格 2 公尺，所以實際距離 9×2=18 公尺。 正確選項為「18 公尺」。三個干擾項均對應不同錯誤：「9 公尺」不成立，只報格數，未換算。；「11 公尺」不成立，誤把格數與每格長度相加。；「0 公尺」不成立，因 x=0 誤以為到 x 軸距離為 0。。邊界審查：x=0 只表示在 y 軸；中央通道是 x 軸，距離由 y 決定。 難度理由：情境中比例單位不可省略，需完成兩步換算。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v011",
+    "contentSha256": "f5ebd7042b84695f3b3274623f6cfdbb571033b1de31d9597ee2869977003db3",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "在 x 軸上已知 y=0；離原點 12 公尺表示 |a|=12，所以 a=12 或 -12。",
+    "derivedAnswer": "(12,0) 或 (-12,0)",
+    "storedAnswer": "(12,0) 或 (-12,0)",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「(12,0) 或 (-12,0)」；其餘三項逐項檢查：「只有 (12,0)」不成立，漏掉負半軸。；「只有 (-12,0)」不成立，漏掉正半軸。；「(0,12) 或 (0,-12)」不成立，改成 y 軸上的點。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "每單位 1 公尺，因此 12 單位直接對應 12 公尺。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "『離原點 12 公尺』沿 x 軸測量，兩側都符合。",
+      "alternateReading": "常見誤讀是「距離只考慮正方向，或交換通道所對應的軸。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需結合情境中的軸上限制與左右兩解。",
+    "literacyContextNecessity": "機器人在主通道 y=0 的限制把可能位置縮到兩個；情境中的通道資訊直接參與求解。",
+    "prerequisiteCheck": "需會解軸上距離的絕對值。",
+    "languageCheck": "題幹所求為「在主通道上由距離反推位置」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「倉儲機器人位於 (a,0)，表示它正在主通道上。若它離原點 12 公尺且每坐標單位為 1 公尺，可能的位置為何？」重新依序處理：在 x 軸上已知 y=0；離原點 12 公尺表示 |a|=12，所以 a=12 或 -12。 正確選項為「(12,0) 或 (-12,0)」。三個干擾項均對應不同錯誤：「只有 (12,0)」不成立，漏掉負半軸。；「只有 (-12,0)」不成立，漏掉正半軸。；「(0,12) 或 (0,-12)」不成立，改成 y 軸上的點。。邊界審查：『離原點 12 公尺』沿 x 軸測量，兩側都符合。 難度理由：需結合情境中的軸上限制與左右兩解。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s003-v012",
+    "contentSha256": "ecea4f9bd84855b2164bdff48516db4b2905452bbbd21966517bf6b0a3358adb",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "到 y 軸 5 公里表示 |x|=5；在東側所以 x=5。南側 2 公里表示 y=-2。",
+    "derivedAnswer": "(5,-2)",
+    "storedAnswer": "(5,-2)",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「(5,-2)」；其餘三項逐項檢查：「(-5,-2)」不成立，位於河道西側。；「(2,-5)」不成立，交換兩個距離。；「(5,2)」不成立，位於北側。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標軸上的點」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "兩分量均以公里為坐標單位，答案保持 (x,y) 順序。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "東北正向已明示；公里距離直接作坐標單位。",
+      "alternateReading": "常見誤讀是「把到 y 軸距離寫進 y 分量，或忽略方位符號。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需把河道、東西與南北三項資訊整合成坐標。",
+    "literacyContextNecessity": "河道被建模為 y 軸，『到河道』決定 |x|；東側與南側再決定符號，情境不可刪除。",
+    "prerequisiteCheck": "需掌握到 y 軸距離與方向。",
+    "languageCheck": "題幹所求為「由地理軸距與方位建立坐標」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「城市地圖把河道設為 y 軸。某設施到河道 5 公里，且位於河道東側、赤道基準線南側 2 公里。若東、北為正向，設施坐標為何？」重新依序處理：到 y 軸 5 公里表示 |x|=5；在東側所以 x=5。南側 2 公里表示 y=-2。 正確選項為「(5,-2)」。三個干擾項均對應不同錯誤：「(-5,-2)」不成立，位於河道西側。；「(2,-5)」不成立，交換兩個距離。；「(5,2)」不成立，位於北側。。邊界審查：東北正向已明示；公里距離直接作坐標單位。 難度理由：需把河道、東西與南北三項資訊整合成坐標。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  }
+];
+
+export const DRAWING_SPECS = [];

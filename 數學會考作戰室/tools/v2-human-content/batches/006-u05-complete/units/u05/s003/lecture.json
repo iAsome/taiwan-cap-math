@@ -1,0 +1,254 @@
+{
+  "lectureId": "u05-s003-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-coordinate-basics",
+  "skillId": "coordinate-axis-points",
+  "lockedTitle": "坐標軸上的點",
+  "title": "坐標軸上的點：零分量與到軸距離",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能判斷點位於 x 軸、y 軸或原點。",
+    "能由軸上條件補出缺少的坐標分量。",
+    "能計算點到 x 軸與 y 軸的垂直距離。",
+    "能區分『在軸上』與『到軸距離』。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-quadrant",
+      "requiredLevel": "能說明並正確使用「象限判斷」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "x 軸上的點",
+      "definition": "縱坐標 y=0 的點。"
+    },
+    {
+      "term": "y 軸上的點",
+      "definition": "橫坐標 x=0 的點。"
+    },
+    {
+      "term": "到 x 軸的距離",
+      "definition": "點的縱坐標絕對值 |y|。"
+    },
+    {
+      "term": "到 y 軸的距離",
+      "definition": "點的橫坐標絕對值 |x|。"
+    },
+    {
+      "term": "原點",
+      "definition": "同時在兩軸上，坐標 (0,0)。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "y=0",
+      "meaning": "點在 x 軸上的條件。"
+    },
+    {
+      "symbol": "x=0",
+      "meaning": "點在 y 軸上的條件。"
+    },
+    {
+      "symbol": "|y|",
+      "meaning": "點到 x 軸的距離。"
+    },
+    {
+      "symbol": "|x|",
+      "meaning": "點到 y 軸的距離。"
+    }
+  ],
+  "conceptNarrative": [
+    "軸上的點不是少一個坐標，而是其中一個坐標恰為 0。",
+    "到某一條軸的最短距離，沿著與該軸垂直的方向測量。",
+    "點到 x 軸看上下高度，所以用 |y|；點到 y 軸看左右距離，所以用 |x|。",
+    "距離不帶負號，即使點位於負方向，仍取絕對值。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "x 軸條件",
+      "statement": "P=(a,b) 在 x 軸上當且僅當 b=0。"
+    },
+    {
+      "name": "y 軸條件",
+      "statement": "P=(a,b) 在 y 軸上當且僅當 a=0。"
+    },
+    {
+      "name": "到軸距離",
+      "statement": "P=(a,b) 到 x 軸距離為 |b|，到 y 軸距離為 |a|。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "d(P,x軸)=|y|",
+      "conditions": [
+        "坐標軸互相垂直",
+        "使用相同單位格"
+      ],
+      "meaning": "垂直方向只需消去縱坐標。"
+    },
+    {
+      "formula": "d(P,y軸)=|x|",
+      "conditions": [
+        "坐標軸互相垂直",
+        "使用相同單位格"
+      ],
+      "meaning": "水平方向只需消去橫坐標。"
+    }
+  ],
+  "nonApplicableCases": [
+    "一般斜線不適用 |x| 或 |y| 的到線距離規則。",
+    "不要把到 x 軸距離誤看成 |x|。",
+    "軸上點仍有完整兩個坐標。",
+    "距離為 0 只表示點在該軸上，不一定是原點。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先找軸名。",
+      "check": "題目問 x 軸還是 y 軸？"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷哪個分量必須為 0。",
+      "check": "x 軸使 y=0；y 軸使 x=0。"
+    },
+    {
+      "step": 3,
+      "instruction": "若求距離，取另一個分量的絕對值。",
+      "check": "距離是否非負？"
+    },
+    {
+      "step": 4,
+      "instruction": "處理原點例外。",
+      "check": "兩個分量是否都為 0？"
+    },
+    {
+      "step": 5,
+      "instruction": "把答案代回位置檢查。",
+      "check": "是否真的落在指定軸上？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "P=(-6,0) 位於哪裡？",
+      "solutionSteps": [
+        "y=0。",
+        "因此位於 x 軸。"
+      ],
+      "answer": "P 在 x 軸上，不屬象限。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "Q=(0,9) 到 x 軸多遠？",
+      "solutionSteps": [
+        "到 x 軸看 |y|。",
+        "|9|=9。"
+      ],
+      "answer": "9 單位。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "R=(-4,7) 到 y 軸多遠？",
+      "solutionSteps": [
+        "到 y 軸看 |x|。",
+        "|-4|=4。"
+      ],
+      "answer": "4 單位。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "點 S=(a,-2) 在 y 軸上，求 a。",
+      "solutionSteps": [
+        "y 軸上的點滿足 x=0。",
+        "a 是橫坐標。"
+      ],
+      "answer": "a=0。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "認為 x 軸上的點要 x=0。",
+      "why": "把軸名與分量名稱直接配對。",
+      "correction": "x 軸是水平線，垂直高度 y 必須為 0。"
+    },
+    {
+      "mistake": "到 x 軸距離使用 |x|。",
+      "why": "忽略距離方向。",
+      "correction": "到 x 軸是上下距離，應看 |y|。"
+    },
+    {
+      "mistake": "把 (-3,0) 判為第三象限。",
+      "why": "只看 x 的負號。",
+      "correction": "y=0 已表示在軸上。"
+    },
+    {
+      "mistake": "把距離寫成 -5。",
+      "why": "忘記距離非負。",
+      "correction": "一律取絕對值。"
+    },
+    {
+      "mistake": "認為到兩軸距離都為 0 的點有很多個。",
+      "why": "未同時使用 x=0、y=0。",
+      "correction": "只有原點同時在兩軸上。"
+    }
+  ],
+  "selfCheck": [
+    "我能說明為何 x 軸上是 y=0 嗎？",
+    "求到 x 軸距離時是否使用 |y|？",
+    "距離是否保持非負？",
+    "我是否把原點與一般軸上點分開？"
+  ],
+  "summary": [
+    "x 軸：y=0；y 軸：x=0。",
+    "到 x 軸距離是 |y|。",
+    "到 y 軸距離是 |x|。",
+    "原點同時在兩軸上。"
+  ],
+  "connections": {
+    "previous": "承接象限判斷中的零分量例外。",
+    "next": [
+      "下一節用完整文字描述如何從原點描點。",
+      "之後水平與垂直距離會把相同坐標分量相減。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s003-v001",
+      "u05-s003-v002",
+      "u05-s003-v003",
+      "u05-s003-v004",
+      "u05-s003-v005",
+      "u05-s003-v006",
+      "u05-s003-v007",
+      "u05-s003-v008",
+      "u05-s003-v009",
+      "u05-s003-v010",
+      "u05-s003-v011",
+      "u05-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s003-cr001",
+      "u05-s003-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "逐項檢查軸名、零分量與距離公式的交叉關係；四例分別驗證 x 軸、到 x 軸、到 y 軸與參數反推，並確認所有距離均為非負。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "f387c454776b072646c71e592d20442810b06cd7aa764d084adf131b70bbe165"
+}

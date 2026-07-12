@@ -1,0 +1,248 @@
+{
+  "lectureId": "u05-s002-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-coordinate-basics",
+  "skillId": "coordinate-quadrant",
+  "lockedTitle": "象限判斷",
+  "title": "象限判斷：用 x 和 y 的正負號定位",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說出四個象限的編號方向。",
+    "能由 x、y 正負號判斷所在象限。",
+    "能反推某象限中的坐標符號。",
+    "能說明坐標軸上的點不屬任何象限。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-point-reading",
+      "requiredLevel": "能說明並正確使用「坐標讀法與點的位置」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "象限",
+      "definition": "x 軸與 y 軸把平面分成的四個區域。"
+    },
+    {
+      "term": "第一象限",
+      "definition": "x>0 且 y>0 的區域。"
+    },
+    {
+      "term": "第二象限",
+      "definition": "x<0 且 y>0 的區域。"
+    },
+    {
+      "term": "第三象限",
+      "definition": "x<0 且 y<0 的區域。"
+    },
+    {
+      "term": "第四象限",
+      "definition": "x>0 且 y<0 的區域。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "Ⅰ、Ⅱ、Ⅲ、Ⅳ",
+      "meaning": "依逆時針方向標示第一至第四象限。"
+    },
+    {
+      "symbol": "x>0",
+      "meaning": "點在 y 軸右側。"
+    },
+    {
+      "symbol": "x<0",
+      "meaning": "點在 y 軸左側。"
+    },
+    {
+      "symbol": "y>0 / y<0",
+      "meaning": "分別表示點在 x 軸上方 / 下方。"
+    }
+  ],
+  "conceptNarrative": [
+    "四個象限從右上方開始，依逆時針順序編號。",
+    "判斷象限不必先畫圖；只要依序看 x 的正負與 y 的正負。",
+    "坐標中若有任一分量為 0，點就在坐標軸上，因此不能硬套四象限。",
+    "象限只描述區域，不表示點離原點多遠。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "第一象限",
+      "statement": "x>0 且 y>0。"
+    },
+    {
+      "name": "第二象限",
+      "statement": "x<0 且 y>0。"
+    },
+    {
+      "name": "第三象限",
+      "statement": "x<0 且 y<0。"
+    },
+    {
+      "name": "第四象限",
+      "statement": "x>0 且 y<0。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "象限符號表",
+      "conditions": [
+        "x、y 均不為 0"
+      ],
+      "meaning": "Ⅰ:(+,+)，Ⅱ:(-,+)，Ⅲ:(-,-)，Ⅳ:(+,-)。"
+    }
+  ],
+  "nonApplicableCases": [
+    "x=0 或 y=0 時不談象限。",
+    "不能只看一個分量就決定象限。",
+    "象限編號不是順時針排列。",
+    "坐標絕對值大小不影響象限。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先檢查是否有 0。",
+      "check": "若有 0，是否應改判坐標軸？"
+    },
+    {
+      "step": 2,
+      "instruction": "看 x 正負。",
+      "check": "在左半平面還是右半平面？"
+    },
+    {
+      "step": 3,
+      "instruction": "看 y 正負。",
+      "check": "在上半平面還是下半平面？"
+    },
+    {
+      "step": 4,
+      "instruction": "對照符號表。",
+      "check": "是否得到唯一象限？"
+    },
+    {
+      "step": 5,
+      "instruction": "用位置語言驗算。",
+      "check": "例如左上是否確為第二象限？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 A=(-4,7) 的象限。",
+      "solutionSteps": [
+        "x<0 表示左。",
+        "y>0 表示上。"
+      ],
+      "answer": "左上方，第二象限。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "第三象限中的點，其坐標符號如何？",
+      "solutionSteps": [
+        "第三象限在左下。",
+        "左使 x<0，下使 y<0。"
+      ],
+      "answer": "(-,-)。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "B=(6,0) 在哪一象限？",
+      "solutionSteps": [
+        "y=0。",
+        "點在 x 軸上。"
+      ],
+      "answer": "不屬任何象限。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "若 P=(a,-3) 在第四象限，a 的條件是什麼？",
+      "solutionSteps": [
+        "第四象限為 (+,-)。",
+        "第二分量已為負，因此 a 必須為正。"
+      ],
+      "answer": "a>0。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把第二象限寫成 (+,-)。",
+      "why": "把象限順序記成順時針。",
+      "correction": "從右上逆時針寫出四個符號組合。"
+    },
+    {
+      "mistake": "看到兩個負號就答第四象限。",
+      "why": "只記編號不理解位置。",
+      "correction": "兩負是左下，應為第三象限。"
+    },
+    {
+      "mistake": "把 (0,5) 判為第一或第二象限。",
+      "why": "忽略 0 代表在軸上。",
+      "correction": "先做零分量檢查。"
+    },
+    {
+      "mistake": "認為數值較大就屬較大的象限編號。",
+      "why": "混淆編號與大小。",
+      "correction": "象限由正負號決定，不由絕對值決定。"
+    },
+    {
+      "mistake": "只由 x<0 判定第二象限。",
+      "why": "漏看 y 的上下方向。",
+      "correction": "x<0 可能在第二或第三象限，仍要看 y。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先排除坐標軸上的點？",
+    "我是否由右上開始逆時針編號？",
+    "我是否同時檢查 x 與 y？",
+    "我能由象限反推兩個分量符號嗎？"
+  ],
+  "summary": [
+    "Ⅰ:(+,+)，Ⅱ:(-,+)，Ⅲ:(-,-)，Ⅳ:(+,-)。",
+    "象限從右上逆時針編號。",
+    "任一分量為 0 時，點不屬象限。"
+  ],
+  "connections": {
+    "previous": "承接坐標讀法，已能把 x 解讀為左右、y 解讀為上下。",
+    "next": [
+      "下一節專門處理坐標軸上的點與到軸距離。",
+      "之後平移可能讓點跨越象限。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s002-v001",
+      "u05-s002-v002",
+      "u05-s002-v003",
+      "u05-s002-v004",
+      "u05-s002-v005",
+      "u05-s002-v006",
+      "u05-s002-v007",
+      "u05-s002-v008",
+      "u05-s002-v009",
+      "u05-s002-v010",
+      "u05-s002-v011",
+      "u05-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s002-cr001",
+      "u05-s002-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "人工檢查四象限符號表、逆時針編號及零分量例外；例題包含直接判斷、反推符號、軸上例外與含參數條件，所有結論均由左右上下重新驗證。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "f37763e398917a7f28560170f721bc8a8b7c2952663a4dcba66bc785e8cf981a"
+}
