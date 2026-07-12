@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Human-authored MC Question",
+  "type": "object",
+  "required": [
+    "questionId",
+    "unitId",
+    "topicId",
+    "skillId",
+    "difficulty",
+    "type",
+    "text",
+    "choices",
+    "answerIndex",
+    "explanation",
+    "steps",
+    "optionAnalysis",
+    "contentSha256"
+  ],
+  "properties": {
+    "questionId": {
+      "type": "string"
+    },
+    "type": {
+      "const": "mc"
+    },
+    "choices": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "string"
+      }
+    },
+    "answerIndex": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "optionAnalysis": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "contentSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}
