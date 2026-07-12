@@ -1,0 +1,150 @@
+{
+  "lectureId": "u15-s006-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-graphs",
+  "skillId": "function-table-graph",
+  "skillSlot": "s006",
+  "skillTitle": "函數表與圖形",
+  "order": 6,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": "function-domain-range-basic",
+      "title": "定義域值域基本",
+      "requiredLevel": "能從公式或有限輸入集合列出對應輸出，並分清定義域與值域。",
+      "bridge": "表格把每個輸入與輸出排成列；坐標圖再把每列資料寫成點 (x,y)，讓變化趨勢可視化。"
+    }
+  ],
+  "learningGoals": [
+    "在表格、序對與坐標圖之間轉換",
+    "判斷點是否在函數圖形上",
+    "由表格辨認線型變化"
+  ],
+  "vocabulary": [
+    {
+      "term": "坐標點",
+      "meaning": "以 (x,y) 表示一組輸入與輸出"
+    },
+    {
+      "term": "函數表",
+      "meaning": "按列記錄 x 與對應 y"
+    },
+    {
+      "term": "圖形",
+      "meaning": "所有對應點在坐標平面上的集合"
+    }
+  ],
+  "conceptDevelopment": [
+    "函數表的一列 x=a、y=b 對應圖上的點 (a,b)。順序不能顛倒。把多列點標上後，可以觀察它們是否在同一直線或形成其他形狀。",
+    "判斷圖形是不是 y 關於 x 的函數，可想像垂直線掃過：同一 x 不可碰到兩個不同點。"
+  ],
+  "definitionsAndMeaning": "函數表的一列 x=a、y=b 對應圖上的點 (a,b)。順序不能顛倒。把多列點標上後，可以觀察它們是否在同一直線或形成其他形狀。",
+  "formulasAndConditions": [
+    "表格列 (x,y) ↔ 坐標點 (x,y)。",
+    "線型表格在 x 等距增加時，y 的差通常固定。"
+  ],
+  "invalidUseCases": [
+    "把點寫成 (y,x)。",
+    "只憑點排列整齊就說是函數。",
+    "以橫線測試取代垂直線測試。"
+  ],
+  "stepByStepMethod": [
+    "逐列把 x 放在橫坐標、y 放在縱坐標。",
+    "檢查刻度與單位。",
+    "判斷點是否符合規則。",
+    "需要判定函數時，檢查同一 x 是否只有一個 y。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s006-ex01",
+      "title": "表到點",
+      "prompt": "函數表的一列為 x=-1、y=3。把這列資料畫成坐標點時應寫成哪個序對？",
+      "solution": "x=-1、y=3 對應點 (-1,3)。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s006-ex02",
+      "title": "點到表",
+      "prompt": "圖上有點 (2,-4)。把它填回 x、y 函數表時，兩欄各填多少？",
+      "solution": "點 (2,-4) 應記成 x=2、y=-4。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s006-ex03",
+      "title": "直線趨勢",
+      "prompt": "某表中 x 每增加 1，y 都增加 2。這些點在坐標平面上會呈現什麼共同趨勢？",
+      "solution": "x 每增加 1，y 都增加 2，點落在斜率固定的直線上。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s006-ex04",
+      "title": "垂直線判定",
+      "prompt": "一個圓形圖案可否整體視為 y 關於 x 的函數圖形？用垂直線檢驗說明。",
+      "solution": "圓形在多數 x 位置有上下兩點，因此整個圓不是 y 關於 x 的函數。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s006-m01",
+      "wrongReasoning": "坐標順序顛倒。",
+      "correction": "序對固定先寫輸入 x、後寫輸出 y；表格 x=-1、y=3 對應的是 (-1,3)，不是 (3,-1)。"
+    },
+    {
+      "mistakeId": "s006-m02",
+      "wrongReasoning": "漏看負號。",
+      "correction": "讀表或讀點時把正負號與數值一起抄下，可先對照該點位於哪個象限再檢查符號。"
+    },
+    {
+      "mistakeId": "s006-m03",
+      "wrongReasoning": "縱軸刻度不是每格 1 卻直接讀格數。",
+      "correction": "先讀坐標軸標示，例如每格可能代表 2 或 5；用「格數×每格數值」取得坐標，不能把格數直接當答案。"
+    },
+    {
+      "mistakeId": "s006-m04",
+      "wrongReasoning": "把同一 x 的兩點忽略。",
+      "correction": "對每個固定 x 想像畫一條垂直線；若同一條垂直線碰到兩個圖上點，該圖不是 y 關於 x 的函數。"
+    },
+    {
+      "mistakeId": "s006-m05",
+      "wrongReasoning": "把相鄰 y 差固定誤當成所有非等距 x 也可直接比較。",
+      "correction": "比較平均變化要用 Δy/Δx；只有各列的 Δx 相同時，才可直接比較相鄰 y 的差。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "表中 x=3、y=-2 對應哪個點？",
+      "answer": "(3,-2)"
+    },
+    {
+      "prompt": "點 (-4,1) 的輸入是？",
+      "answer": "-4"
+    },
+    {
+      "prompt": "同一 x 有兩個不同 y 的圖形是否為函數？",
+      "answer": "不是。"
+    }
+  ],
+  "summary": "表格每列就是圖上的一點；讀圖必須守住 x 在前、y 在後。",
+  "previousSkillConnection": "function-domain-range-basic",
+  "nextSkillConnection": "linear-function-graph",
+  "figureRefs": [
+    "u15-fig-table-points"
+  ],
+  "accessibilityNotes": [
+    "圖形 u15-fig-table-points 另附繁體中文替代文字與不按比例警告。"
+  ],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「函數表與圖形」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能以自己的話說明「定義域值域基本」並完成基本判斷或計算。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "604d6d07f1f34bd6c283876c16bb5b035e42230b1ad68d8e85a280c102b1daeb"
+}

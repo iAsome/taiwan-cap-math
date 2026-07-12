@@ -1,0 +1,149 @@
+{
+  "lectureId": "u15-s001-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-basics",
+  "skillId": "function-definition",
+  "skillSlot": "s001",
+  "skillTitle": "函數定義",
+  "order": 1,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": null,
+      "title": "國小數量對應與基本代數",
+      "requiredLevel": "能讀懂表格中的一列資料，並分辨先給的數與算出的數。",
+      "bridge": "從日常「輸入一個條件，得到一個結果」開始建立函數概念。"
+    }
+  ],
+  "learningGoals": [
+    "判斷一個對應關係是否為函數",
+    "說明「每個輸入恰有一個輸出」的真正含義",
+    "辨認表格、序對、文字與箭線圖中的函數"
+  ],
+  "vocabulary": [
+    {
+      "term": "輸入",
+      "meaning": "先指定或選取的值"
+    },
+    {
+      "term": "輸出",
+      "meaning": "依規則由輸入決定的值"
+    },
+    {
+      "term": "對應",
+      "meaning": "把一個輸入連到某個輸出"
+    },
+    {
+      "term": "函數",
+      "meaning": "每個允許輸入都恰好對應一個輸出的關係"
+    }
+  ],
+  "conceptDevelopment": [
+    "函數不是「看起來像公式」才算。表格、箭線圖、文字規則都能表達函數。核心只有一條：在指定的輸入範圍內，每一個輸入必須有且只有一個輸出。",
+    "不同輸入可以得到相同輸出，例如兩位學生可以同月出生；這不違反函數。真正違反的是同一輸入被指定兩個不同輸出，或題目宣告某輸入可用卻沒有輸出。"
+  ],
+  "definitionsAndMeaning": "函數不是「看起來像公式」才算。表格、箭線圖、文字規則都能表達函數。核心只有一條：在指定的輸入範圍內，每一個輸入必須有且只有一個輸出。",
+  "formulasAndConditions": [
+    "判定句：對每個輸入 x，都存在唯一的輸出 y。",
+    "「唯一」限制的是同一個 x 的輸出數量，不限制不同 x 是否共用同一個 y。"
+  ],
+  "invalidUseCases": [
+    "只檢查輸出是否重複，便判定不是函數。",
+    "忽略題目宣告的輸入集合，沒有檢查某個輸入是否漏配。"
+  ],
+  "stepByStepMethod": [
+    "先找出題目指定的輸入集合。",
+    "逐一檢查每個輸入有沒有輸出。",
+    "再檢查同一輸入是否連到兩個不同輸出。",
+    "全部都恰有一個輸出時，才判定為函數。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s001-ex01",
+      "title": "箭線圖判定",
+      "prompt": "集合 A={1,2,3} 中，1→紅、2→藍、3→紅。把 A 的元素當輸入、顏色當輸出，此箭線圖是否表示函數？說明理由。",
+      "solution": "A={1,2,3}，1→紅、2→藍、3→紅。每個輸入只有一箭，因此是函數；紅被共用不影響。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s001-ex02",
+      "title": "序對判定",
+      "prompt": "關係 R={(1,4),(2,5),(1,6)} 以第一坐標為輸入。R 是否為函數？指出造成判定的輸入。",
+      "solution": "{(1,4),(2,5),(1,6)} 中輸入 1 對應 4 與 6，因此不是函數。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s001-ex03",
+      "title": "相同序對重複",
+      "prompt": "關係 S={(2,7),(2,7),(3,8)} 重複寫了一次相同序對。忽略重複紀錄後，S 是否仍為函數？",
+      "solution": "{(2,7),(2,7),(3,8)} 即使重複寫 (2,7)，輸入 2 的輸出仍只有 7，可視為函數關係。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s001-ex04",
+      "title": "生活規則",
+      "prompt": "某班資料規定每個學號只屬於一名學生，並記錄該生的座號。把學號當輸入、座號當輸出，是否形成函數？",
+      "solution": "學號→該生座號，在班級資料固定時，每個學號只有一個座號，所以是函數。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s001-m01",
+      "wrongReasoning": "把「輸出重複」誤認成違規。",
+      "correction": "函數允許多個輸入得到同一輸出；應逐一固定輸入，確認每個輸入只有一個輸出。"
+    },
+    {
+      "mistakeId": "s001-m02",
+      "wrongReasoning": "看到兩個箭頭指向同一輸出就判錯。",
+      "correction": "兩箭頭匯到同一輸出是多對一，仍可為函數；違規的是同一輸入分叉到不同輸出。"
+    },
+    {
+      "mistakeId": "s001-m03",
+      "wrongReasoning": "忽略同一輸入在表格不同列出現不同輸出。",
+      "correction": "把第一坐標相同的資料集中比較；只要其中出現兩個不同第二坐標，就不是函數。"
+    },
+    {
+      "mistakeId": "s001-m04",
+      "wrongReasoning": "只看公式外觀，不檢查輸入限制。",
+      "correction": "先確認公式在題目定義域的每個輸入都能算出且只有一值；僅看「有公式」不能完成判定。"
+    },
+    {
+      "mistakeId": "s001-m05",
+      "wrongReasoning": "把「有規律」當成函數的充分條件。",
+      "correction": "規律可能漏掉某些輸入或給出多個結果；函數判準是全體輸入都有且只有一個輸出，不是看起來有規律。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "每位學生→生日月份是否必為函數？",
+      "answer": "是，每位學生只有一個生日月份。"
+    },
+    {
+      "prompt": "生日月份→學生是否必為函數？",
+      "answer": "不一定，同一月份常對應多人。"
+    },
+    {
+      "prompt": "同一輸入重複得到相同輸出是否違規？",
+      "answer": "不違規，輸出仍唯一。"
+    }
+  ],
+  "summary": "函數判定只抓住「每個允許輸入恰有一個輸出」。",
+  "previousSkillConnection": null,
+  "nextSkillConnection": "function-value",
+  "figureRefs": [],
+  "accessibilityNotes": [],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「函數定義」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能讀懂表格中的一列資料，並分辨先給的數與算出的數。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "2bac528531e593781a5ce978c2495b273868c04c75756f928bacd2c2ee8a621e"
+}

@@ -1,0 +1,150 @@
+{
+  "lectureId": "u15-s008-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-graphs",
+  "skillId": "linear-function-slope-intercept",
+  "skillSlot": "s008",
+  "skillTitle": "斜截式",
+  "order": 8,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": "linear-function-graph",
+      "title": "線型函數圖形",
+      "requiredLevel": "能由線型函數公式找點、由兩點辨認直線，並能解讀直線的上升、下降與交點。",
+      "bridge": "把線型函數整理成 y=ax+b 後，a 直接描述每增加 1 單位輸入時的輸出變化，b 則是 x=0 時的輸出。"
+    }
+  ],
+  "learningGoals": [
+    "從 y=ax+b 讀出斜率與 y 軸截距",
+    "把其他一次方程式整理成斜截式",
+    "由斜率與一點建立線型函數"
+  ],
+  "vocabulary": [
+    {
+      "term": "斜截式",
+      "meaning": "y=ax+b 的表示法"
+    },
+    {
+      "term": "斜率 a",
+      "meaning": "x 每增加 1 時 y 的改變量"
+    },
+    {
+      "term": "y 軸截距 b",
+      "meaning": "x=0 時的 y 值"
+    }
+  ],
+  "conceptDevelopment": [
+    "斜截式把兩個關鍵資訊直接放在式子裡：a 表示每單位輸入造成的輸出改變，b 表示起始值。",
+    "方程式若不是 y=…，要先把 y 單獨留在一邊，才能正確讀取 a、b。"
+  ],
+  "definitionsAndMeaning": "斜截式把兩個關鍵資訊直接放在式子裡：a 表示每單位輸入造成的輸出改變，b 表示起始值。",
+  "formulasAndConditions": [
+    "y=ax+b。",
+    "已知斜率 a 與點 (x₀,y₀)：b=y₀-ax₀。"
+  ],
+  "invalidUseCases": [
+    "把常數項前的符號讀錯。",
+    "未整理方程式就直接把 x 係數當斜率。",
+    "把斜率與截距的角色交換。"
+  ],
+  "stepByStepMethod": [
+    "先整理成 y=ax+b。",
+    "連同正負號讀出 a。",
+    "常數項即 b，截距點是 (0,b)。",
+    "若由一點求式，先用 b=y-ax。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s008-ex01",
+      "title": "直接讀取",
+      "prompt": "在 y=-3x+5 中，分別指出斜率 a、y 軸截距 b 與截距點。",
+      "solution": "y=-3x+5 中 a=-3、b=5。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s008-ex02",
+      "title": "整理方程式",
+      "prompt": "把 2x-y=4 整理成 y=ax+b，並指出整理時每一步的符號變化。",
+      "solution": "2x-y=4 ⇒ y=2x-4。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s008-ex03",
+      "title": "由點和斜率",
+      "prompt": "一直線斜率為 -2 且通過 (3,1)。代入 y=ax+b 求 b，再寫出方程式。",
+      "solution": "斜率 -2 且過 (3,1)：b=1-(-2×3)=7，所以 y=-2x+7。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s008-ex04",
+      "title": "比較陡峭",
+      "prompt": "在相同坐標尺度下，比較 y=4x+1 與 y=-2x+1 的陡峭程度。應比較 a 還是 |a|？",
+      "solution": "|a| 越大，在相同坐標尺度下直線越陡。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s008-m01",
+      "wrongReasoning": "漏掉斜率的負號。",
+      "correction": "斜率包含正負號；y=-3x+5 的 a 是 -3，負號決定直線向右下降。"
+    },
+    {
+      "mistakeId": "s008-m02",
+      "wrongReasoning": "把截距點寫成 (b,0)。",
+      "correction": "y 軸截距是 x=0 時的 y 值，因此截距點為 (0,b)；(b,0) 是 x 軸上的另一種點。"
+    },
+    {
+      "mistakeId": "s008-m03",
+      "wrongReasoning": "整理移項時符號錯。",
+      "correction": "整理到 y 單獨一邊時，每次加減同一項或整式同除係數，逐行檢查移項後符號。"
+    },
+    {
+      "mistakeId": "s008-m04",
+      "wrongReasoning": "以為斜率大就一定函數值較大。",
+      "correction": "斜率只描述變化速度；兩直線的函數值大小還受截距與所選 x 影響，不能只看 a。"
+    },
+    {
+      "mistakeId": "s008-m05",
+      "wrongReasoning": "比較陡峭時只比 a 而不比 |a|。",
+      "correction": "陡峭程度看每 1 單位水平變化造成的垂直變化量大小，所以比較 |a|；正負只表示方向。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "y=4x-7 的 a、b？",
+      "answer": "a=4，b=-7。"
+    },
+    {
+      "prompt": "x+y=6 的斜截式？",
+      "answer": "y=-x+6。"
+    },
+    {
+      "prompt": "斜率 2 過 (1,5) 的 b？",
+      "answer": "3。"
+    }
+  ],
+  "summary": "斜截式 y=ax+b 讓變化率 a 與起始值 b 一眼可見。",
+  "previousSkillConnection": "linear-function-graph",
+  "nextSkillConnection": "linear-function-rate",
+  "figureRefs": [
+    "u15-fig-slope-intercept"
+  ],
+  "accessibilityNotes": [
+    "圖形 u15-fig-slope-intercept 另附繁體中文替代文字與不按比例警告。"
+  ],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「斜截式」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能以自己的話說明「線型函數圖形」並完成基本判斷或計算。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "ac9ed6b39ac5227d632c49bfaacb9baf0e28abb319bfdfcd26826bcee6b2be0a"
+}

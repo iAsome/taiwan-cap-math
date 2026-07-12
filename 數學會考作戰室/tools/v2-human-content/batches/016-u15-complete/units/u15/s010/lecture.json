@@ -1,0 +1,150 @@
+{
+  "lectureId": "u15-s010-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-graphs",
+  "skillId": "function-graph-read-point",
+  "skillSlot": "s010",
+  "skillTitle": "由圖讀函數值",
+  "order": 10,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": "linear-function-rate",
+      "title": "速率與線型函數",
+      "requiredLevel": "能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。",
+      "bridge": "已知圖形的刻度與坐標後，可反向從指定 x 找 y、從指定 y 找 x，並由交點解讀兩個函數同值。"
+    }
+  ],
+  "learningGoals": [
+    "由圖讀取指定輸入的函數值",
+    "由指定輸出反找可能輸入",
+    "解讀交點、截距與區間資訊"
+  ],
+  "vocabulary": [
+    {
+      "term": "讀值",
+      "meaning": "由坐標尺度找出點的 x、y"
+    },
+    {
+      "term": "交點",
+      "meaning": "兩圖形共有的點"
+    },
+    {
+      "term": "截距",
+      "meaning": "圖形與坐標軸相交處"
+    }
+  ],
+  "conceptDevelopment": [
+    "讀 f(a) 時，先從 x 軸找到 a，垂直移到圖形，再水平讀 y。反過來找 f(x)=b，先從 y 軸找到 b，水平移到圖形，再向下讀所有可能 x。",
+    "圖形刻度不一定每格 1；也不能因線條看起來通過某處就忽略標示尺度。"
+  ],
+  "definitionsAndMeaning": "讀 f(a) 時，先從 x 軸找到 a，垂直移到圖形，再水平讀 y。反過來找 f(x)=b，先從 y 軸找到 b，水平移到圖形，再向下讀所有可能 x。",
+  "formulasAndConditions": [
+    "點 (a,b) 在圖上 ⇔ f(a)=b。",
+    "兩函數交點 (c,d) ⇔ f(c)=g(c)=d。"
+  ],
+  "invalidUseCases": [
+    "從 x 軸直接讀成函數值。",
+    "忽略一個水平線可能交圖形多次。",
+    "依圖形外觀估值而不看刻度。"
+  ],
+  "stepByStepMethod": [
+    "確認橫軸、縱軸名稱與單位。",
+    "讀清每格刻度。",
+    "依問題先固定 x 或 y。",
+    "沿垂直或水平輔助線找到圖形，再讀另一坐標。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s010-ex01",
+      "title": "讀函數值",
+      "prompt": "函數圖形上標示點 (2,5)。由圖讀出 f(2)，並說明橫坐標與縱坐標的角色。",
+      "solution": "圖上有點 (2,5)，所以 f(2)=5。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s010-ex02",
+      "title": "反找輸入",
+      "prompt": "水平線 y=4 與某函數圖形交於 x=-1、3。由圖找出方程 f(x)=4 的所有解。",
+      "solution": "若水平線 y=4 與圖交於 x=-1、3，則 f(x)=4 的解有兩個。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s010-ex03",
+      "title": "讀交點",
+      "prompt": "函數 f 與 g 的圖形交於 (1,2)。寫出此交點對 f(1) 與 g(1) 的意義。",
+      "solution": "f、g 交於 (1,2)，表示 f(1)=g(1)=2。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s010-ex04",
+      "title": "讀正負",
+      "prompt": "由圖判讀函數值正負：圖形位於 x 軸上方、x 軸上及下方時，f(x) 分別與 0 有何關係？",
+      "solution": "圖形在 x 軸上方時 f(x)>0，在下方時 f(x)<0。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s010-m01",
+      "wrongReasoning": "把 (2,5) 解讀成 f(5)=2。",
+      "correction": "點 (2,5) 的第一坐標是輸入、第二坐標是輸出，因此是 f(2)=5，不能交換成 f(5)=2。"
+    },
+    {
+      "mistakeId": "s010-m02",
+      "wrongReasoning": "忽略負刻度。",
+      "correction": "先讀軸上 0 的位置與刻度方向，再數到指定點；負刻度位於原點左方或下方，不可只看格數。"
+    },
+    {
+      "mistakeId": "s010-m03",
+      "wrongReasoning": "只回報交點的 x 或 y。",
+      "correction": "交點要同時報告 x 與 y；x 表示兩函數在哪個輸入同值，y 表示共同的函數值。"
+    },
+    {
+      "mistakeId": "s010-m04",
+      "wrongReasoning": "把線段端點之外也當成定義域。",
+      "correction": "先確認圖形實際畫出的定義域；線段端點以外即使延長趨勢明顯，也不能自行當作函數的一部分。"
+    },
+    {
+      "mistakeId": "s010-m05",
+      "wrongReasoning": "圖不按比例時靠目測長度推答案。",
+      "correction": "圖若標示不按比例，答案只能依刻度、標籤與確切坐標；線段看起來較長或較陡不能代替數值。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "點 (-3,4) 在圖上，f(-3)=？",
+      "answer": "4"
+    },
+    {
+      "prompt": "f(x)=0 的位置在圖上稱什麼？",
+      "answer": "x 軸交點。"
+    },
+    {
+      "prompt": "兩圖交點表示什麼？",
+      "answer": "同一輸入下兩函數值相等。"
+    }
+  ],
+  "summary": "讀圖時先固定題目給的坐標，再沿正確方向找另一坐標。",
+  "previousSkillConnection": "linear-function-rate",
+  "nextSkillConnection": "piecewise-linear-basic",
+  "figureRefs": [
+    "u15-fig-read-point"
+  ],
+  "accessibilityNotes": [
+    "圖形 u15-fig-read-point 另附繁體中文替代文字與不按比例警告。"
+  ],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「由圖讀函數值」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能以自己的話說明「速率與線型函數」並完成基本判斷或計算。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "be8aed07e1f1ed386a4b9c695dec89ed4c4c42cc6b9bfab4aaa3fefd8400db59"
+}

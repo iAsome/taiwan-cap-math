@@ -1,0 +1,188 @@
+{
+  "unitId": "u15",
+  "auditVersion": "u15-final-human-audit-r1",
+  "auditedAt": "2026-07-12T16:00:00+08:00",
+  "auditor": "ChatGPT human authoring lead for batch 016",
+  "scope": [
+    "13 lectures",
+    "156 MC questions and answers",
+    "26 constructed-response solutions and rubrics",
+    "14 SVG figures",
+    "negative signs, parentheses, fractions, units, endpoints and model domains",
+    "future-unit knowledge and number-swapped variants"
+  ],
+  "actualIssuesFoundAndRepaired": [
+    {
+      "issueId": "U15-AUDIT-001",
+      "found": "方案比較題初稿把 4x+60=6x+20 的交點誤標為 10。",
+      "repair": "重新聯立得到 x=20，改正正解、三個干擾選項、解題步驟與錯因分析。",
+      "files": [
+        "units/u15/s012/mc-questions.jsonl",
+        "units/u15/s012/semantic-reviews.jsonl"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-002",
+      "found": "分段反求題初稿的正確選項文字重複寫成「x=1 或 x=1」，且未把第二段候選的區間淘汰寫清楚。",
+      "repair": "改為「只有 x=1」，並明示第二段方程也得到 1 但不符合 x≥2。",
+      "files": [
+        "units/u15/s011/mc-questions.jsonl",
+        "units/u15/s011/semantic-reviews.jsonl"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-003",
+      "found": "函數素養技能初稿超額寫成 14 題，會破壞每技能精確 12 題與 3/3/3/3 難度分布。",
+      "repair": "保留能力面向不重複的 12 題，移除兩題額外草稿，恢復鎖定計數。",
+      "files": [
+        "units/u15/s013/mc-questions.jsonl"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-004",
+      "found": "若多題共用泛用函數圖，部分標示點與個別題幹數值不一致，亦不符合題目專屬繪圖規格。",
+      "repair": "刪除非必要圖形引用；需要讀圖的題目改用唯一 figureId 與專屬坐標，講義圖另行獨立。",
+      "files": [
+        "figures/u15",
+        "units/u15/s006",
+        "units/u15/s010",
+        "units/u15/s011"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-005",
+      "found": "正規化重複掃描發現 u15-s002-mc04 與 u15-s002-mc01 原本都只要求把一個數代入一次函數求值，差異主要是字母與數值。",
+      "repair": "將 mc04 改為分別求 g(-1) 與 g(1) 後計算兩函數值之差，並重寫四選項分析、獨立解答與語意審查。",
+      "files": [
+        "units/u15/s002/mc-questions.jsonl",
+        "units/u15/s002/semantic-reviews.jsonl",
+        "review/unit-content-fingerprints.json"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-006",
+      "found": "近似題掃描發現 u15-s004-mc02 原本與 u15-s002-mc01 都是把指定數值代入一次函數求值，未充分區分「函數記號」與「函數值」技能。",
+      "repair": "將 s004-mc02 改為辨認 f(0) 括號內 0 的語意，保留基礎難度並重寫所有選項與審查證據。",
+      "files": [
+        "units/u15/s004/mc-questions.jsonl",
+        "units/u15/s004/semantic-reviews.jsonl",
+        "review/unit-content-fingerprints.json"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-007",
+      "found": "人工範圍稽核發現函數概念、函數值、函數記號與值域的少數草稿使用平方函數或平方根作例，與 U15「限線型函數」的單元邊界不一致；另有一題距離規則缺少共同參考點。",
+      "repair": "將所有非線型例題改為線型函數、常數函數或有限序對關係，重寫相應講義、選擇題、非選擇題、選項錯因與審查；並把距離明確定義為到原點 0 的距離。",
+      "files": [
+        "units/u15/s001/",
+        "units/u15/s002/",
+        "units/u15/s003/",
+        "units/u15/s004/",
+        "units/u15/s005/",
+        "review/unit-content-fingerprints.json"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-008",
+      "found": "最終人工講義稽核發現部分技能的例題 prompt 只有短標題，且 s001、s006 至 s013 的錯誤修正沿用通用句，雖可通過結構檢查，但不足以直接支援零基礎學生自學。",
+      "repair": "把 13 節共 52 個例題提示改寫成完整可作答題目，將通用先備橋接改為技能間的具體能力銜接，並把原有通用錯誤修正逐項改成對應負號、坐標順序、分界條件、單位或模型限制的明確做法。",
+      "files": [
+        "units/u15/s001/lecture.json",
+        "units/u15/s002/lecture.json",
+        "units/u15/s003/lecture.json",
+        "units/u15/s004/lecture.json",
+        "units/u15/s005/lecture.json",
+        "units/u15/s006/lecture.json",
+        "units/u15/s007/lecture.json",
+        "units/u15/s008/lecture.json",
+        "units/u15/s009/lecture.json",
+        "units/u15/s010/lecture.json",
+        "units/u15/s011/lecture.json",
+        "units/u15/s012/lecture.json",
+        "units/u15/s013/lecture.json"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-009",
+      "found": "逐欄重複稽核發現，多數選擇題的 givenConditions、unitAndRoundingCheck 與 ambiguityAndBoundaryAudit 仍是共用概括句；部分非選擇題的延續計分與只寫答案政策也未直接連到該題工作。",
+      "repair": "把每題已完成的獨立語意審查證據回填至題目條件、單位與邊界欄，並以各題唯一的先備目標、partial-credit rules 與 rubric 具體化 prerequisiteCheck、followThroughPolicy、unitAndNotationRules 與 answerOnlyPolicy。未改變任何題目答案。",
+      "files": [
+        "units/u15/s001/",
+        "units/u15/s002/",
+        "units/u15/s003/",
+        "units/u15/s004/",
+        "units/u15/s005/",
+        "units/u15/s006/",
+        "units/u15/s007/",
+        "units/u15/s008/",
+        "units/u15/s009/",
+        "units/u15/s010/",
+        "units/u15/s011/",
+        "units/u15/s012/",
+        "units/u15/s013/"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-010",
+      "found": "將 14 個 SVG 實際渲染成 640×420 PNG 並製作 contact sheet 後，發現共用圖的 x 軸字母與最右刻度過近；速率圖的 (0,40) 與差量標籤重疊；兩張交點圖的函數名稱、交點文字有遮擋。",
+      "repair": "逐一調整 SVG 文字坐標：把 x 軸標籤移至箭頭右方，分離速率圖起點與 Δt/ΔV 標籤，並把 f、g 與交點標籤移到各自線段旁；重新渲染 14 圖確認無遮擋。另把所有文字與具 id 幾何元素的精確 SVG 坐標寫回 drawingSpec。",
+      "files": [
+        "figures/u15/",
+        "units/u15/s006/drawing-specs.jsonl",
+        "units/u15/s007/drawing-specs.jsonl",
+        "units/u15/s008/drawing-specs.jsonl",
+        "units/u15/s009/drawing-specs.jsonl",
+        "units/u15/s010/drawing-specs.jsonl",
+        "units/u15/s011/drawing-specs.jsonl",
+        "review/figure-reviews.jsonl"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-011",
+      "found": "26 題非選擇題答案重算皆正確，但 rubric 與 partial-credit rules 中仍有多題沿用概括性的「主要方法正確」框架，未明確指出各子任務與核心錯誤的分數上限。",
+      "repair": "逐題重寫全部 104 個 0–3 分規準與 52 條部分給分規則，具體區分模型、求值、交點、端點、單位、分段、情境解釋等子任務；同步更新延續錯誤與只寫答案政策。",
+      "files": [
+        "units/u15/s001/constructed-response.jsonl",
+        "units/u15/s002/constructed-response.jsonl",
+        "units/u15/s003/constructed-response.jsonl",
+        "units/u15/s004/constructed-response.jsonl",
+        "units/u15/s005/constructed-response.jsonl",
+        "units/u15/s006/constructed-response.jsonl",
+        "units/u15/s007/constructed-response.jsonl",
+        "units/u15/s008/constructed-response.jsonl",
+        "units/u15/s009/constructed-response.jsonl",
+        "units/u15/s010/constructed-response.jsonl",
+        "units/u15/s011/constructed-response.jsonl",
+        "units/u15/s012/constructed-response.jsonl",
+        "units/u15/s013/constructed-response.jsonl"
+      ]
+    },
+    {
+      "issueId": "U15-AUDIT-012",
+      "found": "在移除非線型例題後重新執行正規化重複掃描，u15-s002-mc02 與 u15-s002-mc01 都成為「把一個指定輸入代入一次函數求值」，即使負號與數值不同，能力結構仍過近。",
+      "repair": "將 u15-s002-mc02 改為分別求 g(-2) 與 g(0) 後比較兩個函數值大小，重新撰寫四個選項、錯因、獨立解答、條件與語意審查；答案索引仍維持該技能的 3/3/3/3 配額。",
+      "files": [
+        "units/u15/s002/mc-questions.jsonl",
+        "units/u15/s002/semantic-reviews.jsonl",
+        "review/unit-content-fingerprints.json"
+      ]
+    }
+  ],
+  "remainingKnownIssues": [],
+  "manualConclusions": {
+    "advancedItemsGenuinelyAdvanced": true,
+    "literacyContextsMathematicallyNecessary": true,
+    "noNumberSwapFamiliesAccepted": true,
+    "noFutureUnitKnowledgeRequired": true,
+    "allAnswersRecomputed": true,
+    "productionActivationAllowed": false,
+    "allLectureExamplesHaveCompletePrompts": true,
+    "allCommonMistakeCorrectionsAreSkillSpecific": true,
+    "questionConditionAndBoundaryFieldsAreQuestionSpecific": true,
+    "constructedResponsePoliciesAreQuestionSpecific": true,
+    "allFiguresRenderedAndManuallyInspected": true,
+    "figureLabelOverlapAfterRepair": false,
+    "figureAnswerLeakageFound": false,
+    "allConstructedResponseRubricsQuestionSpecific": true
+  }
+}

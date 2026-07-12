@@ -1,0 +1,147 @@
+{
+  "lectureId": "u15-s013-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-literacy",
+  "skillId": "function-literacy",
+  "skillSlot": "s013",
+  "skillTitle": "函數素養題",
+  "order": 13,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": "linear-function-application",
+      "title": "線型函數應用",
+      "requiredLevel": "能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。",
+      "bridge": "最後把公式、表格、圖形、分段規則及單位整合，用證據評估生活資料中的主張、圖表呈現與模型限制。"
+    }
+  ],
+  "learningGoals": [
+    "從長文字、表格與圖形擷取函數資訊",
+    "判讀模型假設、單位與適用範圍",
+    "評估以函數支持的生活主張"
+  ],
+  "vocabulary": [
+    {
+      "term": "數學模型",
+      "meaning": "對現實關係的簡化表示"
+    },
+    {
+      "term": "適用範圍",
+      "meaning": "模型可合理使用的輸入區間"
+    },
+    {
+      "term": "資料證據",
+      "meaning": "支持或反駁主張的數值與關係"
+    }
+  ],
+  "conceptDevelopment": [
+    "素養題不是把故事中的所有數字都拿來算，而是先判斷哪些量形成函數、規則在哪個範圍有效、問題真正要比較什麼。",
+    "圖表可能使用截斷坐標軸或不同刻度，造成視覺誤導。判斷主張要回到實際數值、單位與模型假設。"
+  ],
+  "definitionsAndMeaning": "素養題不是把故事中的所有數字都拿來算，而是先判斷哪些量形成函數、規則在哪個範圍有效、問題真正要比較什麼。",
+  "formulasAndConditions": [
+    "建模流程：情境→變數與單位→關係式或表圖→計算→情境檢核。",
+    "比較主張時，可用差值函數 D(x)=方案甲-方案乙 判斷正負。"
+  ],
+  "invalidUseCases": [
+    "看到「直線」就無限制外推。",
+    "只看圖形傾斜程度，不看軸刻度。",
+    "忽略分段規則或資料收集條件。"
+  ],
+  "stepByStepMethod": [
+    "圈出問題、變數、單位與限制。",
+    "把文字轉成表格、式子或圖形。",
+    "選擇必要資料完成計算。",
+    "檢查答案是否在定義域內。",
+    "以完整句子解釋數值對原情境的意義。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s013-ex01",
+      "title": "截斷坐標軸",
+      "prompt": "圖表的縱軸只從 98 畫到 102，兩方案實際只差 2 元。說明截斷坐標軸如何影響視覺判斷。",
+      "solution": "兩方案差 2 元，若縱軸只畫 98 到 102，視覺差距會被放大。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s013-ex02",
+      "title": "分段費率",
+      "prompt": "用水費採分段費率。計算前應先從哪些資訊判斷用量跨過哪一個級距？",
+      "solution": "先判斷用量是否跨級距，再計算各段費用。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s013-ex03",
+      "title": "模型外推",
+      "prompt": "實驗只觀察 0 至 10 分鐘且資料近似直線。能否直接用同一直線預測 3 小時後？說明模型限制。",
+      "solution": "只觀察 0 至 10 分鐘的線性降溫，不保證 3 小時後仍依同一直線。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s013-ex04",
+      "title": "方案主張",
+      "prompt": "兩個收費方案的圖形有一個交點。如何判斷交點左右各是哪個方案較省，而不能只說交點代表同價？",
+      "solution": "交點表示同價；交點左右哪個較省要再代入測試或比較斜率。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s013-m01",
+      "wrongReasoning": "把背景敘述中的無關數字加入公式。",
+      "correction": "先標出每個數字的單位與角色；只有會影響輸入、固定量、變化率或限制條件的資料才放入模型。"
+    },
+    {
+      "mistakeId": "s013-m02",
+      "wrongReasoning": "漏掉單位轉換。",
+      "correction": "把分鐘與小時、毫升與公升等先換成同一單位，再代入公式；答案也要附上對應單位。"
+    },
+    {
+      "mistakeId": "s013-m03",
+      "wrongReasoning": "用圖形視覺面積代替坐標值。",
+      "correction": "圖形判讀依坐標刻度、點與斜率，不以線下面積或視覺長度代替函數值，除非題目明確定義面積意義。"
+    },
+    {
+      "mistakeId": "s013-m04",
+      "wrongReasoning": "得到負數時間仍接受。",
+      "correction": "時間、件數等情境量通常有非負限制；代數解若為負數，應回到定義域判定為不合情境或無可行解。"
+    },
+    {
+      "mistakeId": "s013-m05",
+      "wrongReasoning": "只寫答案不解釋主張是否成立。",
+      "correction": "素養題要求評估主張時，需列出代入、比較或圖表證據，再用完整句回答成立範圍，不能只寫選項或數字。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "圖表縱軸不從 0 開始時要注意什麼？",
+      "answer": "視覺差距可能被放大。"
+    },
+    {
+      "prompt": "模型只由短時間資料建立，可無限外推嗎？",
+      "answer": "不可以。"
+    },
+    {
+      "prompt": "素養題最後一步是？",
+      "answer": "回到情境檢查並解釋。"
+    }
+  ],
+  "summary": "函數素養題要同時處理數學關係、單位、限制、圖表呈現與主張合理性。",
+  "previousSkillConnection": "linear-function-application",
+  "nextSkillConnection": null,
+  "figureRefs": [],
+  "accessibilityNotes": [],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「函數素養題」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能以自己的話說明「線型函數應用」並完成基本判斷或計算。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "e7e874c9522caed995091390c9e344e62b9c3954b61ece433897008c8630e674"
+}
