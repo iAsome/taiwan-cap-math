@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-labelledby="t d">
+<title id="t">三個相同長方形的塗色模型</title><desc id="d">三個相同長方形，前兩個全部填滿，第三個分成三等份並填滿第一份。</desc>
+<defs>
+<pattern id="diag" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M-3 3 L3 -3 M0 12 L12 0 M9 15 L15 9" stroke="currentColor" stroke-width="2"/></pattern>
+<pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2" fill="currentColor"/></pattern>
+<pattern id="cross" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 0 L12 12 M12 0 L0 12" stroke="currentColor" stroke-width="1.5"/></pattern>
+</defs>
+<text x="450" y="40" text-anchor="middle" font-size="23">相同大小的完整單位</text>
+<rect x="70" y="75" width="220" height="120" fill="url(#diag)" stroke="currentColor" stroke-width="3"/>
+<rect x="340" y="75" width="220" height="120" fill="url(#dots)" stroke="currentColor" stroke-width="3"/>
+<rect x="610" y="75" width="73.33" height="120" fill="url(#cross)"/>
+<rect x="610" y="75" width="220" height="120" fill="none" stroke="currentColor" stroke-width="3"/>
+<line x1="683.33" y1="75" x2="683.33" y2="195" stroke="currentColor" stroke-width="2"/>
+<line x1="756.67" y1="75" x2="756.67" y2="195" stroke="currentColor" stroke-width="2"/>
+</svg>

@@ -1,0 +1,257 @@
+{
+  "status": "PASS_HUMAN_ONLY_BROWSER_GATE_R1",
+  "browserExecutable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "browserVersion": "Chrome/150.0.7871.101",
+  "tests": [
+    {
+      "name": "human-only-default",
+      "pass": true,
+      "version": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+      "productionRuntime": true,
+      "counts": {
+        "units": 23,
+        "skills": 339,
+        "lectures": 339,
+        "mcQuestions": 4068,
+        "constructedResponses": 678,
+        "figures": 178
+      },
+      "mock": {
+        "mc": 25,
+        "cr": 2,
+        "minutes": 80
+      },
+      "retirement": {
+        "status": "COMPLETE",
+        "schemaVersion": "math-v2-legacy-storage-retirement-r1",
+        "retiredAt": "2026-07-12T17:04:24.504Z",
+        "deletedKeys": [
+          "capMath.completed",
+          "capMath.humanRc.r1.completed",
+          "capMath.paperHistory"
+        ],
+        "backupVerified": true
+      },
+      "backup": [
+        {
+          "id": "old-history"
+        }
+      ],
+      "oldKeys": []
+    },
+    {
+      "name": "human-only-mock",
+      "pass": true,
+      "mc": 25,
+      "cr": 2,
+      "minutes": 80
+    },
+    {
+      "name": "legacy-storage-retired",
+      "pass": true,
+      "version": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+      "productionRuntime": true,
+      "counts": {
+        "units": 23,
+        "skills": 339,
+        "lectures": 339,
+        "mcQuestions": 4068,
+        "constructedResponses": 678,
+        "figures": 178
+      },
+      "mock": {
+        "mc": 25,
+        "cr": 2,
+        "minutes": 80
+      },
+      "retirement": {
+        "status": "COMPLETE",
+        "schemaVersion": "math-v2-legacy-storage-retirement-r1",
+        "retiredAt": "2026-07-12T17:04:24.504Z",
+        "deletedKeys": [
+          "capMath.completed",
+          "capMath.humanRc.r1.completed",
+          "capMath.paperHistory"
+        ],
+        "backupVerified": true
+      },
+      "backup": [
+        {
+          "id": "old-history"
+        }
+      ],
+      "oldKeys": []
+    },
+    {
+      "name": "human-only-178-figures",
+      "pass": true,
+      "count": 178,
+      "failures": []
+    },
+    {
+      "name": "human-only-23-quizzes",
+      "pass": true,
+      "quizzes": [
+        {
+          "id": "u01-human-r1",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "id": "u02-human-r1",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "id": "u03-human-r1",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "id": "u04-human-r1",
+          "count": 14,
+          "deterministic": true
+        },
+        {
+          "id": "u05-human-r1",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "id": "u06-human-r1",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "id": "u07-human-r1",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "id": "u08-human-r1",
+          "count": 14,
+          "deterministic": true
+        },
+        {
+          "id": "u09-human-r1",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "id": "u10-human-r1",
+          "count": 13,
+          "deterministic": true
+        },
+        {
+          "id": "u11-human-r1",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "id": "u12-human-r1",
+          "count": 10,
+          "deterministic": true
+        },
+        {
+          "id": "u13-human-r1",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "id": "u14-human-r1",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "id": "u15-human-r1",
+          "count": 13,
+          "deterministic": true
+        },
+        {
+          "id": "u16-human-r1",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "id": "u17-human-r1",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "id": "u18-human-r1",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "id": "u19-human-r1",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "id": "u20-human-r1",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "id": "u21-human-r1",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "id": "u22-human-r1",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "id": "u23-human-r1",
+          "count": 20,
+          "deterministic": true
+        }
+      ]
+    },
+    {
+      "name": "production-visible-text-purity",
+      "pass": true,
+      "forbidden": []
+    },
+    {
+      "name": "human-only-mobile",
+      "pass": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "questions": 27
+    },
+    {
+      "name": "retired-query-ignored-generated=1",
+      "pass": true,
+      "mode": {
+        "mode": "human-production-r1",
+        "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+        "humanDefault": true,
+        "generatedRollbackAvailable": false,
+        "v1RollbackAvailable": false,
+        "oldRuntimesRetired": true
+      }
+    },
+    {
+      "name": "retired-query-ignored-legacy=1",
+      "pass": true,
+      "mode": {
+        "mode": "human-production-r1",
+        "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+        "humanDefault": true,
+        "generatedRollbackAvailable": false,
+        "v1RollbackAvailable": false,
+        "oldRuntimesRetired": true
+      }
+    }
+  ],
+  "passed": 9,
+  "failed": 0,
+  "httpRequestCount": 307,
+  "consoleErrors": [],
+  "runtimeExceptions": [],
+  "networkErrors": [],
+  "humanOnly": true,
+  "oldDatabaseDeleted": true
+}

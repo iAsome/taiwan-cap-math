@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "math-v2-final-retirement-release-superflow-r1",
+  "requiredStartingHead": "eadecdc55e3a2c2d3c4ae75f480656c87f654c5b",
+  "requiredStartingSubject": "fix(math-v2): repair production text and pass stability gate r1",
+  "requiredStabilityStatus": "PASS_POST_CUTOVER_STABILITY_GATE_R1",
+  "requiredStabilityNextStage": "OLD_RUNTIME_RETIREMENT_PACKAGE_R1",
+  "contentVersion": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+  "preCutoverTag": "math-v2-pre-human-cutover-r1",
+  "preCutoverTagTarget": "b52116364e145b564aaf394ef798dda9d2b7b2ec",
+  "preRetirementTag": "math-v2-pre-old-runtime-retirement-r1",
+  "finalReleaseTag": "math-v2-human-runtime-r1",
+  "expectedCounts": {
+    "units": 23,
+    "skills": 339,
+    "lectures": 339,
+    "mcQuestions": 4068,
+    "constructedResponses": 678,
+    "figures": 178
+  },
+  "commitSubjects": [
+    "chore(math-v2): retire generated and legacy runtimes r1",
+    "test(math-v2): pass human-only repository purity gate r1",
+    "release(math-v2): finalize human-authored math site r1"
+  ],
+  "finalStatus": "PASS_MATH_V2_FINAL_RETIREMENT_AND_RELEASE_SUPERFLOW_R1",
+  "productionRuntime": "HUMAN_ONLY",
+  "oldDatabaseDeletionAllowed": true,
+  "mergeAllowedAfterFinalGate": true
+}

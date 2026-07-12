@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="u18-height-q010-title u18-height-q010-desc">
+<title id="u18-height-q010-title">鏡面反射測塔高</title>
+<desc id="u18-height-q010-desc">塔底 T、鏡面 M、觀測者腳點 P 位於同一直線；塔垂直於地面，眼睛 E 在 P 上方，視線由塔頂 S 經鏡面 M 反射到 E。</desc>
+<rect width="640" height="420" fill="white"/>
+<style>
+.line{stroke:#111;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#333;stroke-width:2;fill:none}
+.dash{stroke:#555;stroke-width:2;stroke-dasharray:8 7;fill:none}
+.mark{stroke:#111;stroke-width:2}
+.txt{font-family:"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-size:22px;fill:#111}
+.small{font-family:"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-size:18px;fill:#111}
+.note{font-family:"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-size:16px;fill:#333}
+</style>
+<line id="ground-tmp" class="line" x1="70" y1="345" x2="590" y2="345"/>
+<line id="tower-ts" class="line" x1="105" y1="345" x2="105" y2="70"/>
+<line id="eye-pe" class="line" x1="535" y1="345" x2="535" y2="285"/>
+<rect id="mirror-m" x="390" y="338" width="40" height="8" fill="#ddd" stroke="#111" stroke-width="2"/>
+<line id="ray-sm" class="dash" x1="105" y1="70" x2="410" y2="342"/>
+<line id="ray-me" class="dash" x1="410" y1="342" x2="535" y2="285"/>
+<text class="txt" x="75" y="375">T</text><text class="txt" x="83" y="58">S</text><text class="txt" x="399" y="375">M</text>
+<text class="txt" x="540" y="375">P</text><text class="txt" x="542" y="280">E</text>
+<text class="small" x="230" y="370">18 m</text><text class="small" x="455" y="370">3 m</text><text class="small" x="545" y="320">1.5 m</text>
+<path id="right-t" class="thin" d="M105 330 h15 v15"/><path id="right-p" class="thin" d="M535 330 h-15 v15"/>
+<text class="note" x="175" y="410">虛線為光線路徑，圖不按比例</text>
+</svg>

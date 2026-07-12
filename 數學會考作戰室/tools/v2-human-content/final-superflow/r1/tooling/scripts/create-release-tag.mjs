@@ -1,0 +1,15 @@
+import fs from "node:fs";
+import path from "node:path";
+import { parseArgs,readJson,assert,runGit,runGitResult,writeJson } from "./lib/common.mjs";
+const a=parseArgs(process.argv.slice(2));assert(a.repo&&a.root&&a.releaseCommit&&a.output,"Usage --repo --root --releaseCommit --output");
+const repo=path.resolve(a.repo),root=path.resolve(a.root),output=path.resolve(a.output),ex=readJson(path.join(root,"tooling/EXPECTED-RESULTS.json"));
+assert(runGit(repo,["rev-parse","HEAD"])===a.releaseCommit&&runGit(repo,["log","-1","--format=%s"])===ex.commitSubjects[2],"release commit mismatch");
+assert(runGit(repo,["status","--short","--untracked-files=all"])==="","clean required");
+assert(runGitResult(repo,["rev-parse",`refs/tags/${ex.finalReleaseTag}`]).status!==0,"release tag exists");
+assert(runGit(repo,["ls-remote","--tags","origin",`refs/tags/${ex.finalReleaseTag}`,`refs/tags/${ex.finalReleaseTag}^{}`])==="","remote release tag exists");
+runGit(repo,["tag","-a",ex.finalReleaseTag,a.releaseCommit,"-m","Math V2 Human Runtime R1 final release"]);
+runGit(repo,["push","origin",`refs/tags/${ex.finalReleaseTag}`]);
+const remote=runGit(repo,["ls-remote","--tags","origin",`refs/tags/${ex.finalReleaseTag}`,`refs/tags/${ex.finalReleaseTag}^{}`]);
+assert(remote.includes(a.releaseCommit),"remote release tag mismatch");
+const out={status:"CREATED_AND_PUSHED_FINAL_RELEASE_TAG_R1",tag:ex.finalReleaseTag,target:a.releaseCommit,remoteLines:remote.split(/\r?\n/).filter(Boolean)};
+writeJson(path.join(output,"final-release-tag.json"),out);console.log(JSON.stringify(out,null,2));

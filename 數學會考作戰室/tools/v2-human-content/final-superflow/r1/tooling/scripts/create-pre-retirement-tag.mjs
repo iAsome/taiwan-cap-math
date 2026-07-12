@@ -1,0 +1,14 @@
+import path from "node:path";
+import { parseArgs,readJson,writeJson,assert,runGit,runGitResult } from "./lib/common.mjs";
+const a=parseArgs(process.argv.slice(2));assert(a.repo&&a.root,"Usage --repo --root");
+const repo=path.resolve(a.repo),root=path.resolve(a.root),ev=path.join(root,"evidence"),ex=readJson(path.join(root,"tooling/EXPECTED-RESULTS.json"));
+assert(runGit(repo,["rev-parse","HEAD"])===ex.requiredStartingHead,"HEAD changed");
+assert(runGit(repo,["status","--short","--untracked-files=all"]).split(/\r?\n/).filter(Boolean).every(line=>line.includes("tools/v2-human-content/final-superflow/r1/")),"unexpected pre-tag changes");
+const local=runGitResult(repo,["rev-parse",`refs/tags/${ex.preRetirementTag}`]);assert(local.status!==0,"local retirement tag exists");
+assert(runGit(repo,["ls-remote","--tags","origin",`refs/tags/${ex.preRetirementTag}`,`refs/tags/${ex.preRetirementTag}^{}`])==="","remote retirement tag exists");
+runGit(repo,["tag","-a",ex.preRetirementTag,ex.requiredStartingHead,"-m","Math V2 pre-old-runtime-retirement R1"]);
+runGit(repo,["push","origin",`refs/tags/${ex.preRetirementTag}`]);
+const remote=runGit(repo,["ls-remote","--tags","origin",`refs/tags/${ex.preRetirementTag}`,`refs/tags/${ex.preRetirementTag}^{}`]);
+assert(runGit(repo,["rev-list","-n","1",ex.preRetirementTag])===ex.requiredStartingHead&&remote.includes(ex.requiredStartingHead),"tag verification failed");
+const out={status:"CREATED_AND_PUSHED_PRE_RETIREMENT_TAG_R1",tag:ex.preRetirementTag,target:ex.requiredStartingHead,remoteLines:remote.split(/\r?\n/).filter(Boolean),oldDatabaseDeletionAllowed:false};
+writeJson(path.join(ev,"pre-retirement-tag.json"),out);console.log(JSON.stringify(out,null,2));

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="u18-sas-q011-title u18-sas-q011-desc">
+<title id="u18-sas-q011-title">道路交叉角與兩側距離</title>
+<desc id="u18-sas-q011-desc">左側為地圖上從 O 出發的兩道路 OA、OB，右側為實地從 O' 出發的 OA'、OB'；兩夾角以相同角弧標記。</desc>
+<rect width="640" height="420" fill="white"/>
+<style>
+.line{stroke:#111;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#333;stroke-width:2;fill:none}
+.dash{stroke:#555;stroke-width:2;stroke-dasharray:8 7;fill:none}
+.mark{stroke:#111;stroke-width:2}
+.txt{font-family:"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-size:22px;fill:#111}
+.small{font-family:"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-size:18px;fill:#111}
+.note{font-family:"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-size:16px;fill:#333}
+</style>
+<line id="map-oa" class="line" x1="85" y1="315" x2="265" y2="110"/>
+<line id="map-ob" class="line" x1="85" y1="315" x2="300" y2="315"/>
+<line id="site-oa" class="line" x1="360" y1="315" x2="520" y2="120"/>
+<line id="site-ob" class="line" x1="360" y1="315" x2="590" y2="315"/>
+<path id="angle-o" class="thin" d="M120 315 Q115 278 145 247"/>
+<path id="angle-op" class="thin" d="M395 315 Q390 278 420 247"/>
+<text class="txt" x="60" y="350">O</text><text class="txt" x="265" y="100">A</text><text class="txt" x="306" y="350">B</text>
+<text class="txt" x="335" y="350">O′</text><text class="txt" x="520" y="110">A′</text><text class="txt" x="595" y="350">B′</text>
+<text class="small" x="145" y="190">3 cm</text><text class="small" x="160" y="338">4.5 cm</text>
+<text class="small" x="420" y="195">1.2 km</text><text class="small" x="445" y="338">1.8 km</text>
+<text class="note" x="145" y="400">相同角弧表示道路夾角相等</text>
+</svg>
