@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "math-v2-controlled-cutover-rehearsal-r1",
+  "requiredStartingHead": "3fc899d2fb343b3a8e6dd9f8ba9c7be8e1edb7a0",
+  "requiredStartingSubject": "feat(math-v2): build human runtime release candidate r1",
+  "requiredPriorStatus": "PASS_HUMAN_RUNTIME_RELEASE_CANDIDATE_R1",
+  "requiredPriorNextStage": "CONTROLLED_HUMAN_RUNTIME_CUTOVER_REHEARSAL_R1",
+  "contentVersion": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+  "rehearsalPhases": [
+    "GENERATED_V2_BASELINE",
+    "V1_BASELINE",
+    "HUMAN_DEFAULT",
+    "GENERATED_V2_QUERY_ROLLBACK",
+    "V1_QUERY_ROLLBACK",
+    "RESTORED_GENERATED_V2_DEFAULT",
+    "RESTORED_V1_ROLLBACK"
+  ],
+  "productionActivationAllowed": false,
+  "studentRouteChangeAllowed": false,
+  "oldDatabaseDeletionAllowed": false,
+  "mergeAllowed": false,
+  "nextAuthorizedStage": "PRODUCTION_CUTOVER_PACKAGE_R1"
+}
