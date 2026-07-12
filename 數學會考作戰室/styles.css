@@ -236,6 +236,15 @@ input:focus, select:focus, textarea:focus { border-color: var(--green); box-shad
 .lecture-pitfall { border-left: 3px solid #e85d4c; padding: 8px 12px; margin: 10px 0; background: #fff8f6; }
 .lecture-topic-card { border: 1px solid #d5dcd7; border-radius: 10px; padding: 14px 16px; margin: 10px 0; background: white; }
 .lecture-topic-card header h3 { margin: 4px 0; }
+.lecture-topic-card h4 { margin: 14px 0 6px; }
+.lecture-topic-card .lecture-example + .lecture-example { margin-top: 10px; }
+.lecture-topic-card .lecture-pitfall ul { margin: 8px 0 0; padding-left: 20px; }
+.explanation-note { grid-column: 1 / -1; }
+.v2-skill-list { list-style: none; padding: 0; margin: 8px 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+.v2-skill-list button { width: 100%; min-height: 54px; padding: 9px 11px; border: 1px solid #d5dcd7; border-radius: 8px; background: var(--paper); color: var(--ink); text-align: left; cursor: pointer; }
+.v2-skill-list button strong, .v2-skill-list button span { display: block; }
+.v2-skill-list button span { margin-top: 3px; color: var(--muted); font-size: .68rem; }
+.v2-skill-list button:hover, .v2-skill-list button:focus-visible { border-color: var(--green); outline: 2px solid color-mix(in srgb, var(--green) 25%, transparent); outline-offset: 1px; }
 .lecture-chapter { margin: 12px 0; border: 1px solid #d5dcd7; border-radius: 10px; padding: 0 12px; }
 .lecture-chapter summary { cursor: pointer; padding: 12px 0; list-style: none; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
 .lecture-section h4 { margin: 16px 0 8px; color: var(--muted); font-size: .92rem; }
@@ -565,6 +574,7 @@ body.dark .paper-history-empty { background: #15342f; }
 }
 
 @media (max-width: 840px) {
+  .v2-skill-list { grid-template-columns: 1fr; }
   .sidebar { transform: translateX(-100%); width: 244px; transition: transform .25s ease; box-shadow: 18px 0 45px rgba(0,0,0,.25); }
   body.menu-open .sidebar { transform: translateX(0); }
   .main-column { margin-left: 0; }

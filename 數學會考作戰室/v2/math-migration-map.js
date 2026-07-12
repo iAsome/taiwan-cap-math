@@ -1,1215 +1,4298 @@
-window.MATH_MIGRATION_MAP = {
-  "version": "2.0.0-draft-r1-u05",
-  "unitMap": {
-    "1": [
-      "u01"
-    ],
-    "2": [
-      "u01"
-    ],
-    "3": [
-      "u02"
-    ],
-    "4": [
-      "u02"
-    ],
-    "5": [
-      "u03"
-    ],
-    "6": [
-      "u04"
-    ],
-    "7": [
-      "u05"
-    ],
-    "8": [
-      "u06"
-    ],
-    "9": [
-      "u07"
-    ],
-    "10": [
-      "u09"
-    ],
-    "11": [
-      "u08"
-    ],
-    "12": [
-      "u10"
-    ],
-    "13": [
-      "u11"
-    ],
-    "14": [
-      "u12"
-    ],
-    "15": [
-      "u13"
-    ],
-    "16": [
-      "u14"
-    ],
-    "17": [
-      "u15"
-    ],
-    "18": [
-      "u16"
-    ],
-    "19": [
-      "u17"
-    ],
-    "20": [
-      "u22"
-    ],
-    "21": [
-      "u18"
-    ],
-    "22": [
-      "u19"
-    ],
-    "23": [
-      "u20"
-    ],
-    "24": [
-      "u21"
-    ],
-    "25": [
-      "u22"
-    ],
-    "26": [
-      "u23"
-    ],
-    "28": [
-      "u09"
-    ]
+window.MATH_MIGRATION_MAP = [
+  {
+    "legacyRef": "g7-1-c1/number-classification",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-number-classification",
+    "legacyTitle": "數的分類",
+    "matchScore": 8.1667
   },
-  "topicMap": {
-    "g7-1-c1/number-classification": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-basics",
-      "v2SkillId": "integer-number-classification",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/number-line": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-basics",
-      "v2SkillId": "integer-number-line-position",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/opposite-and-absolute-overview": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-basics",
-      "v2SkillId": "integer-number-comparison",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/signed-number-concept": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-basics",
-      "v2SkillId": "integer-positive-negative-meaning",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/opposite-number-concept": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-basics",
-      "v2SkillId": "integer-opposite-number",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/absolute-value-concept": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-basics",
-      "v2SkillId": "integer-absolute-value-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/opposite-and-absolute-evaluation": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-basics",
-      "v2SkillId": "integer-absolute-value-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/absolute-value-position": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-basics",
-      "v2SkillId": "integer-absolute-value-distance",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/addition-operation": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-arithmetic",
-      "v2SkillId": "integer-addition",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/subtraction-operation": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-arithmetic",
-      "v2SkillId": "integer-subtraction",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/multiplication-division-operation": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-arithmetic",
-      "v2SkillId": "integer-multiplication-division",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/operation-rules": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-arithmetic",
-      "v2SkillId": "integer-mixed-operations",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/four-operations": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-arithmetic",
-      "v2SkillId": "integer-mixed-operations",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/distance-and-midpoint": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-basics",
-      "v2SkillId": "integer-absolute-value-distance",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/integer-arithmetic": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-arithmetic",
-      "v2SkillId": "integer-mixed-operations",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/distributive-law": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-arithmetic",
-      "v2SkillId": "integer-mixed-operations",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/commutative-associative-law": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-arithmetic",
-      "v2SkillId": "integer-mixed-operations",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/operation-order": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-arithmetic",
-      "v2SkillId": "integer-mixed-operations",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/absolute-difference-distance": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-basics",
-      "v2SkillId": "integer-absolute-value-distance",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/arithmetic-application": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-literacy",
-      "v2SkillId": "integer-literacy-context",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/exponent-notation": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-exponents",
-      "v2SkillId": "integer-exponent-meaning",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/zero-negative-exponent": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-exponents",
-      "v2SkillId": "integer-exponent-meaning",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/exponent-comparison": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-exponents",
-      "v2SkillId": "integer-exponent-laws",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/exponent-laws": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-exponents",
-      "v2SkillId": "integer-exponent-laws",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/scientific-notation": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-exponents",
-      "v2SkillId": "integer-scientific-notation",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/scientific-notation-digits": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-exponents",
-      "v2SkillId": "integer-scientific-notation",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/scientific-notation-comparison": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-exponents",
-      "v2SkillId": "integer-scientific-notation",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/exponent-arithmetic": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-exponents",
-      "v2SkillId": "integer-exponent-laws",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/exponent-law-calculation": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-exponents",
-      "v2SkillId": "integer-exponent-laws",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c1/exponent-size-comparison": {
-      "v2UnitId": "u01",
-      "v2TopicId": "u01-integer-exponents",
-      "v2SkillId": "integer-exponent-laws",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/factor-and-multiple": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-factor-multiple",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/divisibility-rules": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-factor-multiple",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/prime-and-composite": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-prime-composite",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/prime-factor": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-prime-factorization",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/prime-factorization-standard": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-prime-factorization",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/factor-identification-application": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-factor-multiple",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/multiple-identification-application": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-factor-multiple",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/prime-composite-identification": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-prime-composite",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/standard-form-application": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-prime-factorization",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/factor-multiple-standard-form": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-prime-factorization",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/common-factor-gcd": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-gcd-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/coprime-concept": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-gcd-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/common-multiple-lcm": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-lcm-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/coprime-identification": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-gcd-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/find-gcd-and-lcm": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-lcm-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/gcd-compare-size": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-gcd-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/lcm-find-dividend": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-lcm-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/gcd-application": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors-apps",
-      "v2SkillId": "fraction-gcd-application",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/lcm-application": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors-apps",
-      "v2SkillId": "fraction-lcm-application",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/gcd-lcm-evaluation": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-factors",
-      "v2SkillId": "fraction-lcm-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/fraction-basics": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-fraction-ops",
-      "v2SkillId": "fraction-mixed-number",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/positive-fraction-compare": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-fraction-ops",
-      "v2SkillId": "fraction-compare",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/fraction-add-subtract": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-fraction-ops",
-      "v2SkillId": "fraction-add-subtract",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/fraction-multiply-divide": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-fraction-ops",
-      "v2SkillId": "fraction-multiply-divide",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/fraction-four-operations": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-fraction-ops",
-      "v2SkillId": "fraction-complex-fraction-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/fraction-compare-application": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-fraction-ratio",
-      "v2SkillId": "fraction-percent-discount",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c2/fraction-four-ops-application": {
-      "v2UnitId": "u02",
-      "v2TopicId": "u02-fraction-literacy",
-      "v2SkillId": "fraction-literacy-context",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/literal-expression-setup": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-expression",
-      "v2SkillId": "linear-expression-substitution",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/multiplication-shorthand": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-expression",
-      "v2SkillId": "linear-expression-substitution",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/linear-expression-concept": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-expression",
-      "v2SkillId": "linear-expression-simplify",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/linear-expression-operation": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-expression",
-      "v2SkillId": "linear-expression-simplify",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/linear-expression-value": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-expression",
-      "v2SkillId": "linear-expression-substitution",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/linear-expression-simplify": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-expression",
-      "v2SkillId": "linear-expression-simplify",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/linear-expression-word-setup": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-expression",
-      "v2SkillId": "linear-expression-substitution",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/linear-expression-setup-and-evaluate": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-expression",
-      "v2SkillId": "linear-expression-substitution",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/linear-expression-application": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-apps",
-      "v2SkillId": "linear-equation-age-problem",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/linear-equation-concept": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-solving",
-      "v2SkillId": "linear-equation-basic-solving",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/linear-equation-solution": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-reasoning",
-      "v2SkillId": "linear-equation-reasonableness",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/balance-and-transposition": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-solving",
-      "v2SkillId": "linear-equation-balance-property",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/solve-linear-equation": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-solving",
-      "v2SkillId": "linear-equation-fractions",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/word-problem-steps": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-apps",
-      "v2SkillId": "linear-equation-rate-problem",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/balance-property-concept": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-solving",
-      "v2SkillId": "linear-equation-balance-property",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/solution-and-parameter": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-solving",
-      "v2SkillId": "linear-equation-check-solution",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/linear-equation-word-setup": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-apps",
-      "v2SkillId": "linear-equation-consecutive-integers",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/distribution-problem": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-apps",
-      "v2SkillId": "linear-equation-distribution-problem",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/water-saving-problem": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-reasoning",
-      "v2SkillId": "linear-equation-literacy-context",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/shopping-problem": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-apps",
-      "v2SkillId": "linear-equation-money-problem",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/plan-comparison-problem": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-reasoning",
-      "v2SkillId": "linear-equation-plan-comparison",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-1-c3/discount-problem": {
-      "v2UnitId": "u03",
-      "v2TopicId": "u03-linear-equation-apps",
-      "v2SkillId": "linear-equation-money-problem",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/two-variable-linear-expression": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-two-variable-equation-definition",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/two-variable-expression-simplify": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-two-variable-equation-definition",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/two-variable-linear-equation": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-two-variable-equation-definition",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/two-variable-equation-solution": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-ordered-pair-solution-check",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/two-variable-expression-value": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-ordered-pair-solution-check",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/two-variable-expression-word-setup": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-apps",
-      "v2SkillId": "system-quantity-price-problem",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/two-variable-expression-setup-evaluate": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-ordered-pair-solution-check",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/two-variable-equation-solution-evaluate": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-ordered-pair-solution-check",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/two-variable-integer-solutions": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-ordered-pair-solution-check",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/two-variable-equation-word-application": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-apps",
-      "v2SkillId": "system-word-setup-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/linear-system-concept": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-solution-meaning",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/linear-system-solution-concept": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-solution-meaning",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/solve-linear-system": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-methods",
-      "v2SkillId": "system-elimination-method",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/special-linear-system": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-methods",
-      "v2SkillId": "system-special-cases",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/system-word-problem-steps": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-apps",
-      "v2SkillId": "system-word-setup-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/system-solution-parameter": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-basics",
-      "v2SkillId": "system-solution-meaning",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/system-discount-problem": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-apps",
-      "v2SkillId": "system-quantity-price-problem",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/system-quantity-problem": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-apps",
-      "v2SkillId": "system-chicken-rabbit-problem",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/system-digit-problem": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-apps",
-      "v2SkillId": "system-word-setup-basic",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c1/system-rate-problem": {
-      "v2UnitId": "u04",
-      "v2TopicId": "u04-system-apps",
-      "v2SkillId": "system-rate-problem",
-      "action": "reuse-after-schema-conversion",
-      "notes": "概念可沿用，但需轉成 v2 schema。"
-    },
-    "g7-2-c2/coordinate-plane": {
-      "v2UnitId": "u05",
-      "v2TopicId": "u05-linear-graph",
-      "v2SkillId": "coordinate-line-intersection",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c2/point-coordinates": {
-      "v2UnitId": "u05",
-      "v2TopicId": "u05-linear-graph",
-      "v2SkillId": "coordinate-point-on-line",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c2/distance-to-axes": {
-      "v2UnitId": "u05",
-      "v2TopicId": "u05-coordinate-basics",
-      "v2SkillId": "coordinate-axis-points",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c3/ratio-and-value": {
-      "v2UnitId": "u06",
-      "v2TopicId": "u06-ratio-apps",
-      "v2SkillId": "ratio-part-total",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c3/equal-ratios": {
-      "v2UnitId": "u06",
-      "v2TopicId": "u06-ratio-basics",
-      "v2SkillId": "proportion-solve",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c3/ratio-properties": {
-      "v2UnitId": "u06",
-      "v2TopicId": "u06-ratio-apps",
-      "v2SkillId": "proportion-property",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c4/linear-inequality-concept": {
-      "v2UnitId": "u07",
-      "v2TopicId": "u07-inequality-apps",
-      "v2SkillId": "inequality-number-line",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c4/inequality-word-association": {
-      "v2UnitId": "u07",
-      "v2TopicId": "u07-inequality-apps",
-      "v2SkillId": "inequality-reasonableness",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c4/inequality-solution-concept": {
-      "v2UnitId": "u07",
-      "v2TopicId": "u07-inequality-apps",
-      "v2SkillId": "inequality-integer-solutions",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c6/figure-notation": {
-      "v2UnitId": "u08",
-      "v2TopicId": "u08-orthographic",
-      "v2SkillId": "angle-notation",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c6/perpendicular": {
-      "v2UnitId": "u08",
-      "v2TopicId": "u08-orthographic",
-      "v2SkillId": "perpendicular-basic",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c5/contingency-frequency-table": {
-      "v2UnitId": "u09",
-      "v2TopicId": "u09-central-tendency",
-      "v2SkillId": "contingency-table",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c5/histogram-frequency-polyline": {
-      "v2UnitId": "u09",
-      "v2TopicId": "u09-central-tendency",
-      "v2SkillId": "histogram-read",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g7-2-c5/cumulative-relative-frequency": {
-      "v2UnitId": "u09",
-      "v2TopicId": "u09-central-tendency",
-      "v2SkillId": "cumulative-frequency",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c1/common-multiplication-formulas": {
-      "v2UnitId": "u10",
-      "v2TopicId": "u10-polynomial-ops",
-      "v2SkillId": "mult-formula-expand",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c1/formula-evaluate": {
-      "v2UnitId": "u10",
-      "v2TopicId": "u10-polynomial-ops",
-      "v2SkillId": "mult-formula-evaluate",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c1/distributive-evaluate": {
-      "v2UnitId": "u10",
-      "v2TopicId": "u10-polynomial-ops",
-      "v2SkillId": "distributive-evaluate",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c2/sqrt-meaning": {
-      "v2UnitId": "u11",
-      "v2TopicId": "u11-pythagorean",
-      "v2SkillId": "sqrt-perfect-square",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c2/sqrt-notation": {
-      "v2UnitId": "u11",
-      "v2TopicId": "u11-pythagorean",
-      "v2SkillId": "sqrt-notation",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c2/sqrt-finding-technique": {
-      "v2UnitId": "u11",
-      "v2TopicId": "u11-pythagorean",
-      "v2SkillId": "coordinate-distance-pythagorean",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c3/factorization-concept": {
-      "v2UnitId": "u12",
-      "v2TopicId": "u12-factoring-apps",
-      "v2SkillId": "factoring-application",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c3/common-factor": {
-      "v2UnitId": "u12",
-      "v2TopicId": "u12-factoring-methods",
-      "v2SkillId": "factoring-common",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c4/quadratic-equation-concept": {
-      "v2UnitId": "u13",
-      "v2TopicId": "u13-quadratic-apps",
-      "v2SkillId": "quadratic-standard-form",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c4/quadratic-solution": {
-      "v2UnitId": "u13",
-      "v2TopicId": "u13-quadratic-apps",
-      "v2SkillId": "quadratic-formula-basic",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c4/solve-quadratic": {
-      "v2UnitId": "u13",
-      "v2TopicId": "u13-quadratic-apps",
-      "v2SkillId": "quadratic-solve-by-factoring",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-2-c1/sequence-concept": {
-      "v2UnitId": "u14",
-      "v2TopicId": "u14-series",
-      "v2SkillId": "sequence-nth-term",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-2-c1/arithmetic-sequence": {
-      "v2UnitId": "u14",
-      "v2TopicId": "u14-series",
-      "v2SkillId": "arithmetic-series-sum",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-2-c1/arithmetic-mean": {
-      "v2UnitId": "u14",
-      "v2TopicId": "u14-series",
-      "v2SkillId": "arithmetic-mean-term",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-2-c2/independent-dependent-variable": {
-      "v2UnitId": "u15",
-      "v2TopicId": "u15-linear-function",
-      "v2SkillId": "function-input-output",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-2-c2/function-concept": {
-      "v2UnitId": "u15",
-      "v2TopicId": "u15-linear-function",
-      "v2SkillId": "linear-function-application",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-2-c3/angle-concept": {
-      "v2UnitId": "u16",
-      "v2TopicId": "u16-triangle-congruence",
-      "v2SkillId": "isosceles-equilateral",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-2-c3/compass-straightedge": {
-      "v2UnitId": "u16",
-      "v2TopicId": "u16-construction",
-      "v2SkillId": "compass-copy-angle",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-2-c3/angle-basic-calculation": {
-      "v2UnitId": "u16",
-      "v2TopicId": "u16-construction",
-      "v2SkillId": "triangle-inequality",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-2-c4/parallel-lines-concept": {
-      "v2UnitId": "u17",
-      "v2TopicId": "u17-quadrilateral",
-      "v2SkillId": "quadrilateral-area",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-2-c4/parallel-transversal-angles": {
-      "v2UnitId": "u17",
-      "v2TopicId": "u17-quadrilateral",
-      "v2SkillId": "parallel-alternate-interior",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-1-c1/continued-ratio-concept": {
-      "v2UnitId": "u18",
-      "v2TopicId": "u18-similarity",
-      "v2SkillId": "similar-ratio-area",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-1-c1/continued-ratio-properties": {
-      "v2UnitId": "u18",
-      "v2TopicId": "u18-similarity",
-      "v2SkillId": "continued-ratio-properties",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-1-c1/continued-proportion": {
-      "v2UnitId": "u18",
-      "v2TopicId": "u18-similarity",
-      "v2SkillId": "continued-ratio-word",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-1-c2/circle-vocabulary": {
-      "v2UnitId": "u19",
-      "v2TopicId": "u19-circle-tangent",
-      "v2SkillId": "circle-chord",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-1-c2/arc-length-sector": {
-      "v2UnitId": "u19",
-      "v2TopicId": "u19-circle-tangent",
-      "v2SkillId": "arc-length-formula",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-1-c2/sector-area-perimeter": {
-      "v2UnitId": "u19",
-      "v2TopicId": "u19-circle-measure",
-      "v2SkillId": "circle-composite-area",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-1-c3/proof-concept": {
-      "v2UnitId": "u20",
-      "v2TopicId": "u20-triangle-centers",
-      "v2SkillId": "proof-fill-reason",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-1-c3/geometry-proof-properties": {
-      "v2UnitId": "u20",
-      "v2TopicId": "u20-triangle-centers",
-      "v2SkillId": "orthocenter-basic",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-2-c1/quadratic-function-concept": {
-      "v2UnitId": "u21",
-      "v2TopicId": "u21-quadratic-function",
-      "v2SkillId": "quadratic-standard-to-graph",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-2-c1/quadratic-graph-forms": {
-      "v2UnitId": "u21",
-      "v2TopicId": "u21-quadratic-function",
-      "v2SkillId": "quadratic-graph-forms",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-2-c1/opening-direction": {
-      "v2UnitId": "u21",
-      "v2TopicId": "u21-quadratic-function",
-      "v2SkillId": "quadratic-opening",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-2-c2/quartile-concept": {
-      "v2UnitId": "u22",
-      "v2TopicId": "u22-probability",
-      "v2SkillId": "quartile-position",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-2-c2/ogive-quartile-group": {
-      "v2UnitId": "u22",
-      "v2TopicId": "u22-probability",
-      "v2SkillId": "ogive-read",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-2-c2/range-iqr": {
-      "v2UnitId": "u22",
-      "v2TopicId": "u22-probability",
-      "v2SkillId": "range-iqr-compare",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-2-c3/plane-plane": {
-      "v2UnitId": "u23",
-      "v2TopicId": "u23-solid-measure",
-      "v2SkillId": "prism-surface-area",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-2-c3/line-plane": {
-      "v2UnitId": "u23",
-      "v2TopicId": "u23-solid-measure",
-      "v2SkillId": "prism-volume",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g9-2-c3/line-line": {
-      "v2UnitId": "u23",
-      "v2TopicId": "u23-solid-measure",
-      "v2SkillId": "pyramid-cone-volume",
-      "action": "reuse-after-schema-conversion",
-      "status": "pending-detailed-review",
-      "notes": "粗略對應，待 Phase B 細審。"
-    },
-    "g8-1-c5/*": {
-      "v2UnitId": "u09",
-      "v2TopicId": "u09-data-display",
-      "v2SkillId": "histogram-read",
-      "action": "rewrite-required",
-      "reason": "no-v1-taxonomy",
-      "notes": "g8-1-c5 無 v1 taxonomy，需重寫。"
-    }
+  {
+    "legacyRef": "g7-1-c1/number-line",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-number-line-position",
+    "legacyTitle": "數線",
+    "matchScore": 4.1667
   },
-  "invalidLegacyRefs": [],
-  "unmappedLegacyTopics": [],
-  "deprecatedLegacyTopics": [
-    {
-      "legacyUnitId": 27,
-      "title": "綜合情境建模與非選擇題表達",
-      "action": "strategy-literacy-tags-only",
-      "notes": "不作 v2 正式單元，改為全站 strategy/literacy tags。"
-    }
-  ]
-};
+  {
+    "legacyRef": "g7-1-c1/opposite-and-absolute-overview",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-opposite-number",
+    "legacyTitle": "相反數與絕對值",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g7-1-c1/signed-number-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-positive-negative-meaning",
+    "legacyTitle": "正負數的概念",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g7-1-c1/opposite-number-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-opposite-number",
+    "legacyTitle": "相反數的概念",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g7-1-c1/absolute-value-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-absolute-value-basic",
+    "legacyTitle": "絕對值的概念",
+    "matchScore": 5.6667
+  },
+  {
+    "legacyRef": "g7-1-c1/opposite-and-absolute-evaluation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-opposite-number",
+    "legacyTitle": "相反數與絕對值的求值",
+    "matchScore": 3.1667
+  },
+  {
+    "legacyRef": "g7-1-c1/absolute-value-position",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-absolute-value-basic",
+    "legacyTitle": "絕對值與數線上點的位置",
+    "matchScore": 3.9167
+  },
+  {
+    "legacyRef": "g7-1-c1/addition-operation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-addition",
+    "legacyTitle": "加法運算",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-1-c1/subtraction-operation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-subtraction",
+    "legacyTitle": "減法運算",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-1-c1/multiplication-division-operation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-multiplication-division",
+    "legacyTitle": "乘除運算",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g7-1-c1/operation-rules",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-number-classification",
+    "legacyTitle": "運算規律",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-1-c1/four-operations",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-mixed-operations",
+    "legacyTitle": "四則運算",
+    "matchScore": 2.3333
+  },
+  {
+    "legacyRef": "g7-1-c1/distance-and-midpoint",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-absolute-value-distance",
+    "legacyTitle": "數線上兩點間的距離與中點坐標",
+    "matchScore": 1.4545
+  },
+  {
+    "legacyRef": "g7-1-c1/integer-arithmetic",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-mixed-operations",
+    "legacyTitle": "數的四則運算",
+    "matchScore": 3.3333
+  },
+  {
+    "legacyRef": "g7-1-c1/distributive-law",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-number-classification",
+    "legacyTitle": "分配律的應用",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-1-c1/commutative-associative-law",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-number-classification",
+    "legacyTitle": "交換律和結合律的應用",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-1-c1/operation-order",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-number-classification",
+    "legacyTitle": "依運算規則求值",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-1-c1/absolute-difference-distance",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-absolute-value-basic",
+    "legacyTitle": "｜a－b｜幾何意義的應用",
+    "matchScore": 2.3333
+  },
+  {
+    "legacyRef": "g7-1-c1/arithmetic-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-mixed-operations",
+    "legacyTitle": "四則運算的應用",
+    "matchScore": 1
+  },
+  {
+    "legacyRef": "g7-1-c1/exponent-notation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-exponent-laws",
+    "legacyTitle": "指數記法與性質",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g7-1-c1/zero-negative-exponent",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-exponent-meaning",
+    "legacyTitle": "a⁰與10⁻ᵐ",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g7-1-c1/exponent-comparison",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-number-comparison",
+    "legacyTitle": "指數的比較大小",
+    "matchScore": 3.3333
+  },
+  {
+    "legacyRef": "g7-1-c1/exponent-laws",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-exponent-laws",
+    "legacyTitle": "指數律",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g7-1-c1/scientific-notation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-scientific-notation",
+    "legacyTitle": "科學記號表示法",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g7-1-c1/scientific-notation-digits",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-scientific-notation",
+    "legacyTitle": "科學記號與位數的判別",
+    "matchScore": 5.3095
+  },
+  {
+    "legacyRef": "g7-1-c1/scientific-notation-comparison",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-scientific-notation",
+    "legacyTitle": "科學記號與數的比較大小",
+    "matchScore": 5.0417
+  },
+  {
+    "legacyRef": "g7-1-c1/exponent-arithmetic",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-exponent-meaning",
+    "legacyTitle": "含有指數的四則運算",
+    "matchScore": 2.0476
+  },
+  {
+    "legacyRef": "g7-1-c1/exponent-law-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-exponent-laws",
+    "legacyTitle": "利用指數律做計算",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g7-1-c1/exponent-size-comparison",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u01",
+    "skillId": "integer-number-comparison",
+    "legacyTitle": "利用指數律比較數的大小",
+    "matchScore": 3.4762
+  },
+  {
+    "legacyRef": "g7-1-c2/factor-and-multiple",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-factor-multiple",
+    "legacyTitle": "因數與倍數",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g7-1-c2/divisibility-rules",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-factor-multiple",
+    "legacyTitle": "特殊整數的倍數判別法",
+    "matchScore": 1.4286
+  },
+  {
+    "legacyRef": "g7-1-c2/prime-and-composite",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-prime-composite",
+    "legacyTitle": "質數與合數",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g7-1-c2/prime-factor",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-prime-factorization",
+    "legacyTitle": "質因數",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g7-1-c2/prime-factorization-standard",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-prime-factorization",
+    "legacyTitle": "質因數分解與標準分解式",
+    "matchScore": 5.6667
+  },
+  {
+    "legacyRef": "g7-1-c2/factor-identification-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-factor-multiple",
+    "legacyTitle": "因數判別的應用",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g7-1-c2/multiple-identification-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-factor-multiple",
+    "legacyTitle": "倍數判別的應用",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g7-1-c2/prime-composite-identification",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-prime-composite",
+    "legacyTitle": "質數與合數的判別",
+    "matchScore": 6.1667
+  },
+  {
+    "legacyRef": "g7-1-c2/standard-form-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-gcd-application",
+    "legacyTitle": "標準分解式的應用",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g7-1-c2/factor-multiple-standard-form",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-factor-multiple",
+    "legacyTitle": "因數和倍數與標準分解式",
+    "matchScore": 3.1111
+  },
+  {
+    "legacyRef": "g7-1-c2/common-factor-gcd",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-gcd-basic",
+    "legacyTitle": "公因數與最大公因數",
+    "matchScore": 5.8333
+  },
+  {
+    "legacyRef": "g7-1-c2/coprime-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-factor-multiple",
+    "legacyTitle": "互質",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-1-c2/common-multiple-lcm",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-lcm-basic",
+    "legacyTitle": "公倍數與最小公倍數",
+    "matchScore": 5.8333
+  },
+  {
+    "legacyRef": "g7-1-c2/coprime-identification",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-factor-multiple",
+    "legacyTitle": "互質的判別",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-1-c2/find-gcd-and-lcm",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-gcd-basic",
+    "legacyTitle": "求最大公因數與最小公倍數",
+    "matchScore": 3.7222
+  },
+  {
+    "legacyRef": "g7-1-c2/gcd-compare-size",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-gcd-basic",
+    "legacyTitle": "利用最大公因數比較大小",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g7-1-c2/lcm-find-dividend",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-lcm-basic",
+    "legacyTitle": "利用最小公倍數求被除數",
+    "matchScore": 4.6905
+  },
+  {
+    "legacyRef": "g7-1-c2/gcd-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-gcd-application",
+    "legacyTitle": "最大公因數的應用",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g7-1-c2/lcm-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-lcm-application",
+    "legacyTitle": "最小公倍數的應用",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g7-1-c2/gcd-lcm-evaluation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-gcd-basic",
+    "legacyTitle": "最大公因數與最小公倍數的求值",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g7-1-c2/fraction-basics",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-complex-fraction-basic",
+    "legacyTitle": "分數的基本概念",
+    "matchScore": 3.75
+  },
+  {
+    "legacyRef": "g7-1-c2/positive-fraction-compare",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-compare",
+    "legacyTitle": "正分數大小的比較",
+    "matchScore": 7.3333
+  },
+  {
+    "legacyRef": "g7-1-c2/fraction-add-subtract",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-add-subtract",
+    "legacyTitle": "分數的加減",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g7-1-c2/fraction-multiply-divide",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-multiply-divide",
+    "legacyTitle": "分數的乘除",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g7-1-c2/fraction-four-operations",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-compare",
+    "legacyTitle": "分數的四則運算",
+    "matchScore": 2.3333
+  },
+  {
+    "legacyRef": "g7-1-c2/fraction-compare-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-compare",
+    "legacyTitle": "分數大小的比較與應用",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g7-1-c2/fraction-four-ops-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u02",
+    "skillId": "fraction-gcd-application",
+    "legacyTitle": "分數四則運算的應用",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-1-c3/literal-expression-setup",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-substitution",
+    "legacyTitle": "文字符號的列式",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g7-1-c3/multiplication-shorthand",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-substitution",
+    "legacyTitle": "乘號的簡記",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-1-c3/linear-expression-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-simplify",
+    "legacyTitle": "一元一次式",
+    "matchScore": 6.5
+  },
+  {
+    "legacyRef": "g7-1-c3/linear-expression-operation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-simplify",
+    "legacyTitle": "一元一次式的運算",
+    "matchScore": 6
+  },
+  {
+    "legacyRef": "g7-1-c3/linear-expression-value",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-simplify",
+    "legacyTitle": "一元一次式的值",
+    "matchScore": 6
+  },
+  {
+    "legacyRef": "g7-1-c3/linear-expression-simplify",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-simplify",
+    "legacyTitle": "一元一次式的化簡",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g7-1-c3/linear-expression-word-setup",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-simplify",
+    "legacyTitle": "一元一次式的列式",
+    "matchScore": 6
+  },
+  {
+    "legacyRef": "g7-1-c3/linear-expression-setup-and-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-simplify",
+    "legacyTitle": "一元一次式的列式與求值",
+    "matchScore": 4.4571
+  },
+  {
+    "legacyRef": "g7-1-c3/linear-expression-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-simplify",
+    "legacyTitle": "一元一次式的應用",
+    "matchScore": 6.5
+  },
+  {
+    "legacyRef": "g7-1-c3/linear-equation-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-equation-basic-solving",
+    "legacyTitle": "一元一次方程式",
+    "matchScore": 7.4524
+  },
+  {
+    "legacyRef": "g7-1-c3/linear-equation-solution",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-equation-basic-solving",
+    "legacyTitle": "一元一次方程式的解",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g7-1-c3/balance-and-transposition",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-equation-balance-property",
+    "legacyTitle": "等量公理與移項法則",
+    "matchScore": 4
+  },
+  {
+    "legacyRef": "g7-1-c3/solve-linear-equation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-equation-basic-solving",
+    "legacyTitle": "解一元一次方程式",
+    "matchScore": 6.9524
+  },
+  {
+    "legacyRef": "g7-1-c3/word-problem-steps",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-substitution",
+    "legacyTitle": "解應用問題的步驟",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-1-c3/balance-property-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-equation-balance-property",
+    "legacyTitle": "等量公理的概念",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g7-1-c3/solution-and-parameter",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-equation-check-solution",
+    "legacyTitle": "方程式的解與求值問題",
+    "matchScore": 4
+  },
+  {
+    "legacyRef": "g7-1-c3/linear-equation-word-setup",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-equation-basic-solving",
+    "legacyTitle": "一元一次方程式的列式",
+    "matchScore": 6.4167
+  },
+  {
+    "legacyRef": "g7-1-c3/distribution-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-equation-distribution-problem",
+    "legacyTitle": "分配問題",
+    "matchScore": 6.8333
+  },
+  {
+    "legacyRef": "g7-1-c3/water-saving-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-substitution",
+    "legacyTitle": "省水問題",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-1-c3/shopping-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-substitution",
+    "legacyTitle": "購物問題",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-1-c3/plan-comparison-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-equation-plan-comparison",
+    "legacyTitle": "方案問題",
+    "matchScore": 4.1667
+  },
+  {
+    "legacyRef": "g7-1-c3/discount-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u03",
+    "skillId": "linear-expression-substitution",
+    "legacyTitle": "折扣問題",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-2-c1/two-variable-linear-expression",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "二元一次式",
+    "matchScore": 4.1
+  },
+  {
+    "legacyRef": "g7-2-c1/two-variable-expression-simplify",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "二元一次式的化簡",
+    "matchScore": 4.1
+  },
+  {
+    "legacyRef": "g7-2-c1/two-variable-linear-equation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "二元一次方程式",
+    "matchScore": 7.9
+  },
+  {
+    "legacyRef": "g7-2-c1/two-variable-equation-solution",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "二元一次方程式的解",
+    "matchScore": 7.1857
+  },
+  {
+    "legacyRef": "g7-2-c1/two-variable-expression-value",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "二元一次式的值",
+    "matchScore": 4.1
+  },
+  {
+    "legacyRef": "g7-2-c1/two-variable-expression-word-setup",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "二元一次式的列式",
+    "matchScore": 4.1
+  },
+  {
+    "legacyRef": "g7-2-c1/two-variable-expression-setup-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "二元一次式的列式與求值",
+    "matchScore": 3.7429
+  },
+  {
+    "legacyRef": "g7-2-c1/two-variable-equation-solution-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "二元一次方程式的解與求值問題",
+    "matchScore": 6.65
+  },
+  {
+    "legacyRef": "g7-2-c1/two-variable-integer-solutions",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "二元一次方程式的整數解",
+    "matchScore": 5.4333
+  },
+  {
+    "legacyRef": "g7-2-c1/two-variable-equation-word-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "二元一次方程式的列式與應用",
+    "matchScore": 6.65
+  },
+  {
+    "legacyRef": "g7-2-c1/linear-system-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-word-setup-basic",
+    "legacyTitle": "二元一次聯立方程式",
+    "matchScore": 4.5
+  },
+  {
+    "legacyRef": "g7-2-c1/linear-system-solution-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-solution-meaning",
+    "legacyTitle": "二元一次聯立方程式的解",
+    "matchScore": 5.4444
+  },
+  {
+    "legacyRef": "g7-2-c1/solve-linear-system",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-two-variable-equation-definition",
+    "legacyTitle": "解二元一次聯立方程式",
+    "matchScore": 3.5778
+  },
+  {
+    "legacyRef": "g7-2-c1/special-linear-system",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-solution-meaning",
+    "legacyTitle": "特殊型聯立方程式的解法",
+    "matchScore": 4.4583
+  },
+  {
+    "legacyRef": "g7-2-c1/system-word-problem-steps",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-word-setup-basic",
+    "legacyTitle": "解應用問題的步驟",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-2-c1/system-solution-parameter",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-solution-meaning",
+    "legacyTitle": "方程式的解與求值問題",
+    "matchScore": 4.8095
+  },
+  {
+    "legacyRef": "g7-2-c1/system-discount-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-word-setup-basic",
+    "legacyTitle": "折扣問題",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-2-c1/system-quantity-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-quantity-price-problem",
+    "legacyTitle": "數量問題",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g7-2-c1/system-digit-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-word-setup-basic",
+    "legacyTitle": "數字運算問題",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-2-c1/system-rate-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u04",
+    "skillId": "system-rate-problem",
+    "legacyTitle": "速率問題",
+    "matchScore": 6.1667
+  },
+  {
+    "legacyRef": "g7-2-c2/coordinate-plane",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-rectangle-area",
+    "legacyTitle": "直角坐標平面",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g7-2-c2/point-coordinates",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-point-reading",
+    "legacyTitle": "坐標平面上點的坐標",
+    "matchScore": 2.1667
+  },
+  {
+    "legacyRef": "g7-2-c2/distance-to-axes",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-horizontal-vertical-distance",
+    "legacyTitle": "點到兩軸的距離",
+    "matchScore": 1.8333
+  },
+  {
+    "legacyRef": "g7-2-c2/point-translation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-translation",
+    "legacyTitle": "點的平移",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g7-2-c2/quadrant",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-quadrant",
+    "legacyTitle": "象限",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g7-2-c2/point-and-axes-distances",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-point-reading",
+    "legacyTitle": "點與兩軸的距離",
+    "matchScore": 1
+  },
+  {
+    "legacyRef": "g7-2-c2/coincident-points",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-axis-points",
+    "legacyTitle": "點的重合",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g7-2-c2/point-position-identification",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-point-reading",
+    "legacyTitle": "點的位置的判別",
+    "matchScore": 3.3333
+  },
+  {
+    "legacyRef": "g7-2-c2/polygon-area-from-points",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-rectangle-area",
+    "legacyTitle": "點所連成圖形的面積",
+    "matchScore": 1.5556
+  },
+  {
+    "legacyRef": "g7-2-c2/linear-equation-graph",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-linear-equation-graph",
+    "legacyTitle": "二元一次方程式的圖形",
+    "matchScore": 8.5
+  },
+  {
+    "legacyRef": "g7-2-c2/linear-graph-type",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-linear-equation-graph",
+    "legacyTitle": "二元一次方程式圖形的類型",
+    "matchScore": 6.25
+  },
+  {
+    "legacyRef": "g7-2-c2/line-through-two-points",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-line-intersection",
+    "legacyTitle": "求過相異兩點的直線方程式",
+    "matchScore": 2.6667
+  },
+  {
+    "legacyRef": "g7-2-c2/linear-system-graph",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-linear-equation-graph",
+    "legacyTitle": "二元一次聯立方程式的圖形",
+    "matchScore": 5.125
+  },
+  {
+    "legacyRef": "g7-2-c2/point-on-line-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-point-on-line",
+    "legacyTitle": "點在直線上的求值問題",
+    "matchScore": 5.5
+  },
+  {
+    "legacyRef": "g7-2-c2/line-axis-intercepts",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-line-intersection",
+    "legacyTitle": "直線與兩軸的交點",
+    "matchScore": 2.4444
+  },
+  {
+    "legacyRef": "g7-2-c2/find-line-equation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-line-intersection",
+    "legacyTitle": "求直線方程式",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g7-2-c2/line-equation-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-line-intersection",
+    "legacyTitle": "求直線方程式與應用",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g7-2-c2/two-lines-intersection",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-line-intersection",
+    "legacyTitle": "兩直線相交的問題",
+    "matchScore": 2.4444
+  },
+  {
+    "legacyRef": "g7-2-c2/system-graph-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-linear-equation-graph",
+    "legacyTitle": "聯立方程式圖形的求值問題",
+    "matchScore": 2.6667
+  },
+  {
+    "legacyRef": "g7-2-c2/graph-quadrant-identification",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u05",
+    "skillId": "coordinate-quadrant",
+    "legacyTitle": "方程式圖形與象限的判別",
+    "matchScore": 2.6667
+  },
+  {
+    "legacyRef": "g7-2-c3/ratio-and-value",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "ratio-simplify",
+    "legacyTitle": "比與比值",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g7-2-c3/equal-ratios",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "ratio-simplify",
+    "legacyTitle": "相等的比",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-2-c3/ratio-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "ratio-simplify",
+    "legacyTitle": "比的性質",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g7-2-c3/simplest-integer-ratio",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "ratio-simplify",
+    "legacyTitle": "最簡整數比",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g7-2-c3/proportion",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "proportion-property",
+    "legacyTitle": "比例式",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g7-2-c3/proportion-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "proportion-property",
+    "legacyTitle": "比例式的性質",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g7-2-c3/ratio-arithmetic",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "ratio-simplify",
+    "legacyTitle": "比的運算",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-2-c3/proportion-arithmetic",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "proportion-property",
+    "legacyTitle": "比例式的運算",
+    "matchScore": 5
+  },
+  {
+    "legacyRef": "g7-2-c3/ratio-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "ratio-simplify",
+    "legacyTitle": "比的應用問題",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g7-2-c3/proportion-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "proportion-property",
+    "legacyTitle": "比例式的應用問題",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g7-2-c3/ratio-proportion-comprehensive",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "proportion-property",
+    "legacyTitle": "比與比例式的綜合應用",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g7-2-c3/direct-proportion",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "direct-variation",
+    "legacyTitle": "正比",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g7-2-c3/inverse-proportion",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "inverse-variation",
+    "legacyTitle": "反比",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g7-2-c3/identify-proportion-from-formula",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "direct-variation",
+    "legacyTitle": "由式子判別正比和反比",
+    "matchScore": 1.0556
+  },
+  {
+    "legacyRef": "g7-2-c3/identify-proportion-from-word",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "proportion-solve",
+    "legacyTitle": "由文字敘述判別正比和反比",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g7-2-c3/direct-proportion-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "direct-variation",
+    "legacyTitle": "正比的求值問題",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g7-2-c3/inverse-proportion-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "inverse-variation",
+    "legacyTitle": "反比的求值問題",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g7-2-c3/direct-inverse-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u06",
+    "skillId": "direct-variation",
+    "legacyTitle": "正比和反比的應用問題",
+    "matchScore": 3.0833
+  },
+  {
+    "legacyRef": "g7-2-c4/linear-inequality-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-solve-basic",
+    "legacyTitle": "一元一次不等式",
+    "matchScore": 6.7857
+  },
+  {
+    "legacyRef": "g7-2-c4/inequality-word-association",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-word-problem",
+    "legacyTitle": "不等式列式的聯想",
+    "matchScore": 4.1667
+  },
+  {
+    "legacyRef": "g7-2-c4/inequality-solution-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-solve-basic",
+    "legacyTitle": "一元一次不等式的解",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g7-2-c4/inequality-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-word-problem",
+    "legacyTitle": "不等式的運算性質",
+    "matchScore": 5
+  },
+  {
+    "legacyRef": "g7-2-c4/write-inequality",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-word-problem",
+    "legacyTitle": "列不等式",
+    "matchScore": 5.8333
+  },
+  {
+    "legacyRef": "g7-2-c4/range-from-chart",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-range",
+    "legacyTitle": "由圖表判別範圍",
+    "matchScore": 2.1667
+  },
+  {
+    "legacyRef": "g7-2-c4/inequality-property-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-word-problem",
+    "legacyTitle": "不等式運算性質的應用",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g7-2-c4/solve-linear-inequality",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-solve-basic",
+    "legacyTitle": "解一元一次不等式",
+    "matchScore": 6.9524
+  },
+  {
+    "legacyRef": "g7-2-c4/inequality-solution-number-line",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-solve-basic",
+    "legacyTitle": "一元一次不等式解的圖示",
+    "matchScore": 5.3889
+  },
+  {
+    "legacyRef": "g7-2-c4/inequality-word-problem-steps",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-symbol",
+    "legacyTitle": "解應用問題的步驟",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-2-c4/inequality-graph-shading",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-number-line",
+    "legacyTitle": "不等式解的圖示",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g7-2-c4/max-min-integer-solution",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-integer-solutions",
+    "legacyTitle": "不等式的最大或最小整數解",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g7-2-c4/reverse-from-solution",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-solve-basic",
+    "legacyTitle": "由不等式的解逆推求值",
+    "matchScore": 2.1429
+  },
+  {
+    "legacyRef": "g7-2-c4/interval-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-symbol",
+    "legacyTitle": "區間問題",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-2-c4/inequality-shopping",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-symbol",
+    "legacyTitle": "購物問題",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-2-c4/inequality-distribution",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-symbol",
+    "legacyTitle": "分配問題",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-2-c4/inequality-decision",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u07",
+    "skillId": "inequality-symbol",
+    "legacyTitle": "決策問題",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-2-c6/figure-notation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "polygon-angle-basic",
+    "legacyTitle": "點、線、角、多邊形的標記與對角線",
+    "matchScore": 1
+  },
+  {
+    "legacyRef": "g7-2-c6/perpendicular",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "parallel-perpendicular-angles",
+    "legacyTitle": "垂直",
+    "matchScore": 2.6667
+  },
+  {
+    "legacyRef": "g7-2-c6/perpendicular-foot",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "parallel-perpendicular-angles",
+    "legacyTitle": "垂線與垂足",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g7-2-c6/point-to-line-distance",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "geometry-basic-elements",
+    "legacyTitle": "點到直線的距離",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-2-c6/bisection-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "perpendicular-bisector-symmetry",
+    "legacyTitle": "平分",
+    "matchScore": 1.2143
+  },
+  {
+    "legacyRef": "g7-2-c6/perpendicular-bisector",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "perpendicular-bisector-symmetry",
+    "legacyTitle": "垂直平分線",
+    "matchScore": 6.0238
+  },
+  {
+    "legacyRef": "g7-2-c6/angle-bisector",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "perpendicular-bisector-symmetry",
+    "legacyTitle": "角平分線",
+    "matchScore": 2.7619
+  },
+  {
+    "legacyRef": "g7-2-c6/perp-bisector-property",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "perpendicular-bisector-symmetry",
+    "legacyTitle": "中垂線的性質",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g7-2-c6/segment-bisection",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "perpendicular-bisector-symmetry",
+    "legacyTitle": "線段的平分",
+    "matchScore": 0.7143
+  },
+  {
+    "legacyRef": "g7-2-c6/angle-bisection",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "polygon-angle-basic",
+    "legacyTitle": "角的平分",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g7-2-c6/segment-count-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "geometry-basic-elements",
+    "legacyTitle": "線段個數的應用",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g7-2-c6/line-symmetric-figure",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "perpendicular-bisector-symmetry",
+    "legacyTitle": "線對稱圖形",
+    "matchScore": 1.9286
+  },
+  {
+    "legacyRef": "g7-2-c6/find-symmetric-point",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "perpendicular-bisector-symmetry",
+    "legacyTitle": "找到對稱點",
+    "matchScore": 0.7143
+  },
+  {
+    "legacyRef": "g7-2-c6/polygon-diagonals-symmetry",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "polygon-angle-basic",
+    "legacyTitle": "常見多邊形的對角線與對稱軸",
+    "matchScore": 2.3333
+  },
+  {
+    "legacyRef": "g7-2-c6/view-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "solid-views-basic",
+    "legacyTitle": "視圖",
+    "matchScore": 1.75
+  },
+  {
+    "legacyRef": "g7-2-c6/three-views",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "solid-views-basic",
+    "legacyTitle": "三視圖",
+    "matchScore": 5
+  },
+  {
+    "legacyRef": "g7-2-c6/symmetric-segment-length",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "perpendicular-bisector-symmetry",
+    "legacyTitle": "對稱線段等長的應用",
+    "matchScore": 0.7143
+  },
+  {
+    "legacyRef": "g7-2-c6/symmetric-angle-equal",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "angle-types-measure",
+    "legacyTitle": "對稱角相等的應用",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g7-2-c6/coordinate-point-symmetry",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "perpendicular-bisector-symmetry",
+    "legacyTitle": "坐標平面上點的對稱",
+    "matchScore": 2.0476
+  },
+  {
+    "legacyRef": "g7-2-c6/draw-three-views",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "solid-views-basic",
+    "legacyTitle": "繪製三視圖",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g7-2-c6/different-direction-views",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "solid-views-basic",
+    "legacyTitle": "不同方向的視圖",
+    "matchScore": 2.3333
+  },
+  {
+    "legacyRef": "g7-2-c6/three-view-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u08",
+    "skillId": "solid-views-basic",
+    "legacyTitle": "三視圖的活用題",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g7-2-c5/contingency-frequency-table",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "frequency-table",
+    "legacyTitle": "列聯表與次數分配表",
+    "matchScore": 5.5238
+  },
+  {
+    "legacyRef": "g7-2-c5/histogram-frequency-polyline",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "line-chart-text",
+    "legacyTitle": "次數分配直方圖與次數分配折線圖",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g7-2-c5/cumulative-relative-frequency",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "cumulative-frequency",
+    "legacyTitle": "累積次數和相對次數與累積相對次數",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g7-2-c5/cumulative-frequency-tables",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "cumulative-frequency",
+    "legacyTitle": "累積次數分配表和相對次數分配表與累積相對次數分配表",
+    "matchScore": 4.4167
+  },
+  {
+    "legacyRef": "g7-2-c5/cumulative-frequency-polyline-charts",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "cumulative-frequency",
+    "legacyTitle": "累積次數分配折線圖和相對次數分配折線圖與累積相對次數分配折線圖",
+    "matchScore": 3.5714
+  },
+  {
+    "legacyRef": "g7-2-c5/contingency-table-interpret",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "contingency-table",
+    "legacyTitle": "列聯表的製作與判讀",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g7-2-c5/pie-chart-interpret",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "pie-chart-percent",
+    "legacyTitle": "圓形圖的判讀",
+    "matchScore": 4.6667
+  },
+  {
+    "legacyRef": "g7-2-c5/histogram-interpret",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "histogram-read",
+    "legacyTitle": "直方圖的判讀",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g7-2-c5/line-chart-interpret",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "line-chart-text",
+    "legacyTitle": "折線圖的判讀",
+    "matchScore": 4.0952
+  },
+  {
+    "legacyRef": "g7-2-c5/cross-chart-interpret",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "bar-chart-text",
+    "legacyTitle": "兩種統計圖表的交互判讀",
+    "matchScore": 1.8889
+  },
+  {
+    "legacyRef": "g7-2-c5/mean",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "mean-basic",
+    "legacyTitle": "平均數",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g7-2-c5/median",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "median-basic",
+    "legacyTitle": "中位數",
+    "matchScore": 7
+  },
+  {
+    "legacyRef": "g7-2-c5/mode",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "mode-range-basic",
+    "legacyTitle": "眾數",
+    "matchScore": 4.1667
+  },
+  {
+    "legacyRef": "g7-2-c5/mean-median-mode",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "mean-basic",
+    "legacyTitle": "平均數、中位數與眾數",
+    "matchScore": 3.2619
+  },
+  {
+    "legacyRef": "g7-2-c5/statistics-from-chart",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "misleading-statistics-basic",
+    "legacyTitle": "由統計圖表求統計量",
+    "matchScore": 2.1667
+  },
+  {
+    "legacyRef": "g7-2-c5/identify-statistic-group",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "data-table-reading",
+    "legacyTitle": "由統計圖表判別統計量組別",
+    "matchScore": 0.5
+  },
+  {
+    "legacyRef": "g7-2-c5/statistics-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u09",
+    "skillId": "misleading-statistics-basic",
+    "legacyTitle": "統計量的應用",
+    "matchScore": 2.8333
+  },
+  {
+    "legacyRef": "g8-1-c1/common-multiplication-formulas",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "formula-mixed-recognition",
+    "legacyTitle": "常用的乘法公式",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g8-1-c1/formula-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "formula-mixed-recognition",
+    "legacyTitle": "利用乘法公式求值",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g8-1-c1/distributive-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-terms",
+    "legacyTitle": "利用分配律求值",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g8-1-c1/formula-compare-size",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "formula-mixed-recognition",
+    "legacyTitle": "利用乘法公式比較大小",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g8-1-c1/formula-area",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "formula-mixed-recognition",
+    "legacyTitle": "利用乘法公式求面積",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g8-1-c1/formula-substitution",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "formula-mixed-recognition",
+    "legacyTitle": "利用乘法公式代換求值",
+    "matchScore": 3.3333
+  },
+  {
+    "legacyRef": "g8-1-c1/polynomial-meaning",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-terms",
+    "legacyTitle": "多項式的意義",
+    "matchScore": 4
+  },
+  {
+    "legacyRef": "g8-1-c1/polynomial-vocabulary",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-terms",
+    "legacyTitle": "多項式的相關名詞",
+    "matchScore": 3.6667
+  },
+  {
+    "legacyRef": "g8-1-c1/constant-polynomial",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-terms",
+    "legacyTitle": "常數多項式",
+    "matchScore": 4
+  },
+  {
+    "legacyRef": "g8-1-c1/polynomial-arrangement",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-terms",
+    "legacyTitle": "多項式的排列",
+    "matchScore": 4
+  },
+  {
+    "legacyRef": "g8-1-c1/polynomial-add-subtract",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-add-subtract",
+    "legacyTitle": "多項式的加減運算",
+    "matchScore": 7.8333
+  },
+  {
+    "legacyRef": "g8-1-c1/polynomial-multiply",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "monomial-polynomial-distribute",
+    "legacyTitle": "多項式的乘法運算",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g8-1-c1/polynomial-divide",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-terms",
+    "legacyTitle": "多項式的除法運算",
+    "matchScore": 4
+  },
+  {
+    "legacyRef": "g8-1-c1/polynomial-degree-after-op",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-degree-coefficient",
+    "legacyTitle": "多項式運算後的次數",
+    "matchScore": 3.875
+  },
+  {
+    "legacyRef": "g8-1-c1/polynomial-degree-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-degree-coefficient",
+    "legacyTitle": "多項式次數的求值問題",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g8-1-c1/equal-polynomials",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-terms",
+    "legacyTitle": "兩多項式相等的求值問題",
+    "matchScore": 1.6667
+  },
+  {
+    "legacyRef": "g8-1-c1/polynomial-multiply-divide",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "monomial-polynomial-distribute",
+    "legacyTitle": "多項式的乘除運算",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g8-1-c1/product-coefficient",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-degree-coefficient",
+    "legacyTitle": "多項式乘積的係數問題",
+    "matchScore": 3.2083
+  },
+  {
+    "legacyRef": "g8-1-c1/division-relationship",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-terms",
+    "legacyTitle": "多項式除法運算的關係式",
+    "matchScore": 1.25
+  },
+  {
+    "legacyRef": "g8-1-c1/polynomial-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u10",
+    "skillId": "polynomial-terms",
+    "legacyTitle": "多項式運算的應用",
+    "matchScore": 4
+  },
+  {
+    "legacyRef": "g8-1-c2/sqrt-meaning",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-meaning",
+    "legacyTitle": "平方根的意義",
+    "matchScore": 6.8333
+  },
+  {
+    "legacyRef": "g8-1-c2/sqrt-notation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "sqrt-notation",
+    "legacyTitle": "平方根的表示法",
+    "matchScore": 7
+  },
+  {
+    "legacyRef": "g8-1-c2/sqrt-finding-technique",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "sqrt-notation",
+    "legacyTitle": "求平方根的技巧",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g8-1-c2/sqrt-a-squared-simplify",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-simplify",
+    "legacyTitle": "√a² 與 √a² 的化簡",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g8-1-c2/perfect-square-number",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "sqrt-perfect-square",
+    "legacyTitle": "完全平方數",
+    "matchScore": 6.5
+  },
+  {
+    "legacyRef": "g8-1-c2/sqrt-compare-size",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "sqrt-comparison",
+    "legacyTitle": "平方根的比較大小",
+    "matchScore": 4.6667
+  },
+  {
+    "legacyRef": "g8-1-c2/sqrt-approximate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "sqrt-notation",
+    "legacyTitle": "求 √a 的近似值",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g8-1-c2/prime-factorization-sqrt",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "sqrt-notation",
+    "legacyTitle": "質因數分解求 √a² 的值",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g8-1-c2/sqrt-meaning-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-meaning",
+    "legacyTitle": "平方根的意義與求值",
+    "matchScore": 5.8333
+  },
+  {
+    "legacyRef": "g8-1-c2/compare-sqrt-a-b",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "sqrt-comparison",
+    "legacyTitle": "比較 √a 與 √b 的大小",
+    "matchScore": 3.6667
+  },
+  {
+    "legacyRef": "g8-1-c2/decimal-approximation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-meaning",
+    "legacyTitle": "十分逼近法的應用",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g8-1-c2/perfect-square-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "sqrt-perfect-square",
+    "legacyTitle": "完全平方數的求值問題",
+    "matchScore": 6
+  },
+  {
+    "legacyRef": "g8-1-c2/radical-multiply",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-meaning",
+    "legacyTitle": "乘法運算",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g8-1-c2/radical-divide",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-meaning",
+    "legacyTitle": "除法運算",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g8-1-c2/simplest-radical-form",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-simplify",
+    "legacyTitle": "最簡根式",
+    "matchScore": 1.6667
+  },
+  {
+    "legacyRef": "g8-1-c2/radical-simplify",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-simplify",
+    "legacyTitle": "根式的化簡",
+    "matchScore": 6.8333
+  },
+  {
+    "legacyRef": "g8-1-c2/like-radicals",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-meaning",
+    "legacyTitle": "同類方根",
+    "matchScore": 1.25
+  },
+  {
+    "legacyRef": "g8-1-c2/radical-add-subtract",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-meaning",
+    "legacyTitle": "加減運算",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g8-1-c2/radical-four-ops-intro",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-arithmetic",
+    "legacyTitle": "四則運算",
+    "matchScore": 1.6667
+  },
+  {
+    "legacyRef": "g8-1-c2/radical-multiply-divide",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-simplify",
+    "legacyTitle": "根式的乘除運算",
+    "matchScore": 1
+  },
+  {
+    "legacyRef": "g8-1-c2/radical-add-subtract-advanced",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-simplify",
+    "legacyTitle": "根式的加減運算",
+    "matchScore": 1
+  },
+  {
+    "legacyRef": "g8-1-c2/rationalize-denominator",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "sqrt-rationalize-simple",
+    "legacyTitle": "利用平方差公式有理化分母",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g8-1-c2/radical-four-ops-full",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "square-root-arithmetic",
+    "legacyTitle": "根式的四則運算",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g8-1-c2/radical-compare-size",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "sqrt-comparison",
+    "legacyTitle": "根式的比較大小",
+    "matchScore": 1.6667
+  },
+  {
+    "legacyRef": "g8-1-c2/radical-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "pythagorean-application",
+    "legacyTitle": "根式運算的應用",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g8-1-c2/pythagorean-theorem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "pythagorean-theorem",
+    "legacyTitle": "畢氏定理",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g8-1-c2/altitude-on-hypotenuse",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "right-triangle-identify",
+    "legacyTitle": "直角三角形斜邊上的高",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g8-1-c2/coordinate-distance",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "coordinate-distance-pythagorean",
+    "legacyTitle": "坐標平面上兩點的距離",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g8-1-c2/altitude-by-pythagorean",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "pythagorean-theorem",
+    "legacyTitle": "利用畢氏定理求斜邊上的高",
+    "matchScore": 3.9762
+  },
+  {
+    "legacyRef": "g8-1-c2/find-side-pythagorean",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "pythagorean-theorem",
+    "legacyTitle": "利用畢氏定理求邊長",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g8-1-c2/find-area-pythagorean",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "pythagorean-theorem",
+    "legacyTitle": "利用畢氏定理求面積",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g8-1-c2/pythagorean-life-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u11",
+    "skillId": "pythagorean-application",
+    "legacyTitle": "畢氏定理在生活中的應用",
+    "matchScore": 5.3095
+  },
+  {
+    "legacyRef": "g8-1-c3/factor-and-multiple",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-common",
+    "legacyTitle": "因式與倍式",
+    "matchScore": 1.6667
+  },
+  {
+    "legacyRef": "g8-1-c3/factorization-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "legacyTitle": "因式分解",
+    "matchScore": 5.5
+  },
+  {
+    "legacyRef": "g8-1-c3/common-factor",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-common",
+    "legacyTitle": "公因式",
+    "matchScore": 5.8333
+  },
+  {
+    "legacyRef": "g8-1-c3/gcf-factoring",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-common",
+    "legacyTitle": "利用提公因式法作因式分解",
+    "matchScore": 4.6429
+  },
+  {
+    "legacyRef": "g8-1-c3/formula-factoring",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-formula",
+    "legacyTitle": "利用乘法公式作因式分解",
+    "matchScore": 5.2143
+  },
+  {
+    "legacyRef": "g8-1-c3/cross-multiplication-factoring",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-cross",
+    "legacyTitle": "利用十字交乘法作因式分解",
+    "matchScore": 5.0417
+  },
+  {
+    "legacyRef": "g8-1-c3/factor-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "legacyTitle": "因式的應用與因式分解",
+    "matchScore": 6.25
+  },
+  {
+    "legacyRef": "g8-1-c3/multiple-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "legacyTitle": "倍式的應用與因式分解",
+    "matchScore": 5.5
+  },
+  {
+    "legacyRef": "g8-1-c3/substitution-factoring",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "legacyTitle": "式子的代換與因式分解",
+    "matchScore": 4.6429
+  },
+  {
+    "legacyRef": "g8-1-c3/coefficient-by-factoring",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "legacyTitle": "利用因式分解求係數",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g8-1-c3/standard-form-factoring",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "legacyTitle": "利用因式分解求標準分解式",
+    "matchScore": 3.9762
+  },
+  {
+    "legacyRef": "g8-1-c3/factoring-word-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "legacyTitle": "因式分解的應用問題",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g8-1-c4/quadratic-equation-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-word-problem",
+    "legacyTitle": "一元二次方程式",
+    "matchScore": 5.8333
+  },
+  {
+    "legacyRef": "g8-1-c4/quadratic-solution",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-word-problem",
+    "legacyTitle": "一元二次方程式的解",
+    "matchScore": 5.3571
+  },
+  {
+    "legacyRef": "g8-1-c4/solve-quadratic",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-word-problem",
+    "legacyTitle": "解一元二次方程式",
+    "matchScore": 5.3571
+  },
+  {
+    "legacyRef": "g8-1-c4/factor-method-quadratic",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-factor",
+    "legacyTitle": "因式分解法解一元二次方程式",
+    "matchScore": 4.5303
+  },
+  {
+    "legacyRef": "g8-1-c4/quadratic-identification",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-word-problem",
+    "legacyTitle": "一元二次方程式的判別",
+    "matchScore": 5
+  },
+  {
+    "legacyRef": "g8-1-c4/quadratic-solution-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-word-problem",
+    "legacyTitle": "一元二次方程式的解與求值",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g8-1-c4/substitution-solve-equation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-solve-by-factoring",
+    "legacyTitle": "式子的代換與解方程式",
+    "matchScore": 2.4286
+  },
+  {
+    "legacyRef": "g8-1-c4/equation-solution-find-equation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-word-problem",
+    "legacyTitle": "方程式的解與求方程式",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g8-1-c4/sqrt-concept-quadratic",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-square-root-method",
+    "legacyTitle": "平方根的概念",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g8-1-c4/complete-square-form",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-complete-square-basic",
+    "legacyTitle": "配成完全平方式",
+    "matchScore": 2.6667
+  },
+  {
+    "legacyRef": "g8-1-c4/completing-square-method",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-completing-square",
+    "legacyTitle": "配方法解一元二次方程式",
+    "matchScore": 3.7222
+  },
+  {
+    "legacyRef": "g8-1-c4/quadratic-formula",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-formula",
+    "legacyTitle": "一元二次方程式的公式解",
+    "matchScore": 5.6111
+  },
+  {
+    "legacyRef": "g8-1-c4/discriminant-cases",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-discriminant",
+    "legacyTitle": "判別式與解的情形",
+    "matchScore": 4.5
+  },
+  {
+    "legacyRef": "g8-1-c4/sqrt-method-quadratic",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-square-root-method",
+    "legacyTitle": "平方根概念解一元二次方程式",
+    "matchScore": 4
+  },
+  {
+    "legacyRef": "g8-1-c4/discriminant-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-discriminant",
+    "legacyTitle": "判別式的應用",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g8-1-c4/completing-square-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-completing-square",
+    "legacyTitle": "配方法與求值問題",
+    "matchScore": 5.6667
+  },
+  {
+    "legacyRef": "g8-1-c4/formula-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-formula",
+    "legacyTitle": "公式解與求值問題",
+    "matchScore": 5.8333
+  },
+  {
+    "legacyRef": "g8-1-c4/quadratic-word-steps",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-factor",
+    "legacyTitle": "解應用問題的步驟",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g8-1-c4/quadratic-area-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-area-problem",
+    "legacyTitle": "面積問題",
+    "matchScore": 5.75
+  },
+  {
+    "legacyRef": "g8-1-c4/quadratic-distribution-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-factor",
+    "legacyTitle": "分配問題",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g8-1-c4/quadratic-life-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u13",
+    "skillId": "quadratic-factor",
+    "legacyTitle": "生活中的應用問題",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g8-2-c1/sequence-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "sequence-pattern",
+    "legacyTitle": "數列",
+    "matchScore": 4.1667
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-sequence",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-sequence-nth",
+    "legacyTitle": "等差數列",
+    "matchScore": 5.6667
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-mean",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-mean-term",
+    "legacyTitle": "等差中項",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g8-2-c1/sequence-pattern",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "sequence-pattern",
+    "legacyTitle": "數列的規律性",
+    "matchScore": 8.25
+  },
+  {
+    "legacyRef": "g8-2-c1/figural-sequence-pattern",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "sequence-pattern",
+    "legacyTitle": "圖形數列規律性",
+    "matchScore": 6.9167
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-nth-term-and-count",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-sequence-nth",
+    "legacyTitle": "求等差數列的第 n 項和項數",
+    "matchScore": 5.4333
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-last-term-and-diff",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-sequence-common-diff",
+    "legacyTitle": "求等差數列的末項和公差",
+    "matchScore": 2.85
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-from-general-term",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-mean-term",
+    "legacyTitle": "已知 an 一般項求首項和公差",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-sign-change-term",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-mean-term",
+    "legacyTitle": "求數列開始為正或負的項",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g8-2-c1/insert-arithmetic-sequence",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-sequence-nth",
+    "legacyTitle": "插入等差數列並求公差",
+    "matchScore": 4.5417
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-nth-term-word",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-sequence-nth",
+    "legacyTitle": "求等差數列的第 n 項列的問題",
+    "matchScore": 7.4524
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-mean-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-mean-term",
+    "legacyTitle": "等差中項的求值問題",
+    "matchScore": 6.9167
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-mean-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-mean-term",
+    "legacyTitle": "等差中項的應用",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-sequence-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-sequence-nth",
+    "legacyTitle": "等差數列的應用問題",
+    "matchScore": 5.6667
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-series",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-series-word",
+    "legacyTitle": "等差級數",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-series-sum-formula",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-series-sum",
+    "legacyTitle": "等差級數前 n 項和公式",
+    "matchScore": 4.6667
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-series-sum",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-series-sum",
+    "legacyTitle": "求等差級數和",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-series-max-min-sum",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-series-sum",
+    "legacyTitle": "求等差級數最大或最小的和",
+    "matchScore": 4.0667
+  },
+  {
+    "legacyRef": "g8-2-c1/arithmetic-series-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "arithmetic-series-word",
+    "legacyTitle": "等差級數的應用問題",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g8-2-c1/geometric-sequence",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "geometric-basic",
+    "legacyTitle": "等比數列",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g8-2-c1/geometric-mean",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "geometric-basic",
+    "legacyTitle": "等比中項",
+    "matchScore": 3.6667
+  },
+  {
+    "legacyRef": "g8-2-c1/geometric-nth-term",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "geometric-nth-basic",
+    "legacyTitle": "求等比數列第 n 項",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g8-2-c1/geometric-term-count",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "geometric-basic",
+    "legacyTitle": "求等比數列的項數",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g8-2-c1/geometric-first-term-and-ratio",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "geometric-basic",
+    "legacyTitle": "求等比數列首項和公比",
+    "matchScore": 3.175
+  },
+  {
+    "legacyRef": "g8-2-c1/geometric-first-term-ratio-problem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "geometric-basic",
+    "legacyTitle": "求等比數列首項和公比的問題",
+    "matchScore": 3.375
+  },
+  {
+    "legacyRef": "g8-2-c1/geometric-n-numbers",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "geometric-basic",
+    "legacyTitle": "求數個成等比數列的問題",
+    "matchScore": 5
+  },
+  {
+    "legacyRef": "g8-2-c1/geometric-mean-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "geometric-basic",
+    "legacyTitle": "求等比中項的應用",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g8-2-c1/geometric-sequence-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u14",
+    "skillId": "geometric-basic",
+    "legacyTitle": "等比數列的應用問題",
+    "matchScore": 6.8333
+  },
+  {
+    "legacyRef": "g8-2-c2/variable-and-constant",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-input-output",
+    "legacyTitle": "變數與常數",
+    "matchScore": 1.25
+  },
+  {
+    "legacyRef": "g8-2-c2/independent-dependent-variable",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-input-output",
+    "legacyTitle": "自變數與應變數",
+    "matchScore": 5.5
+  },
+  {
+    "legacyRef": "g8-2-c2/function-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-value",
+    "legacyTitle": "函數",
+    "matchScore": 5
+  },
+  {
+    "legacyRef": "g8-2-c2/function-value-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-value",
+    "legacyTitle": "函數值",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g8-2-c2/evaluate-function-value",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-value",
+    "legacyTitle": "求函數值",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g8-2-c2/equal-function-value",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-value",
+    "legacyTitle": "函數值相等的求值問題",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g8-2-c2/function-value-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-value",
+    "legacyTitle": "函數值的應用",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g8-2-c2/function-graph",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-table-graph",
+    "legacyTitle": "函數的圖形",
+    "matchScore": 5.6667
+  },
+  {
+    "legacyRef": "g8-2-c2/linear-function-and-graph",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "linear-function-graph",
+    "legacyTitle": "線型函數及其圖形",
+    "matchScore": 7.25
+  },
+  {
+    "legacyRef": "g8-2-c2/find-linear-function",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "linear-function-graph",
+    "legacyTitle": "求線型函數",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g8-2-c2/function-type-identification",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-definition",
+    "legacyTitle": "函數類型的判別",
+    "matchScore": 2.3333
+  },
+  {
+    "legacyRef": "g8-2-c2/function-graph-identification",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-table-graph",
+    "legacyTitle": "函數圖形的判別",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g8-2-c2/linear-from-function-value",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "linear-function-graph",
+    "legacyTitle": "已知函數值求線型函數",
+    "matchScore": 4.6429
+  },
+  {
+    "legacyRef": "g8-2-c2/linear-from-points",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "linear-function-graph",
+    "legacyTitle": "已知圖形上的點求線型函數",
+    "matchScore": 3.9762
+  },
+  {
+    "legacyRef": "g8-2-c2/intersection-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-definition",
+    "legacyTitle": "利用函數圖形的交點求值",
+    "matchScore": 1.25
+  },
+  {
+    "legacyRef": "g8-2-c2/intersection-compare",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "function-definition",
+    "legacyTitle": "利用函數圖形的交點比大小",
+    "matchScore": 0.8333
+  },
+  {
+    "legacyRef": "g8-2-c2/linear-function-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u15",
+    "skillId": "linear-function-application",
+    "legacyTitle": "線型函數的應用問題",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g8-2-c3/angle-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "compass-copy-angle",
+    "legacyTitle": "角",
+    "matchScore": 1.8333
+  },
+  {
+    "legacyRef": "g8-2-c3/compass-straightedge",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "compass-construction",
+    "legacyTitle": "尺規作圖",
+    "matchScore": 5.5
+  },
+  {
+    "legacyRef": "g8-2-c3/angle-basic-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "compass-copy-angle",
+    "legacyTitle": "角度的基本計算",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g8-2-c3/straight-angle-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "compass-copy-angle",
+    "legacyTitle": "平角的計算",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g8-2-c3/complementary-supplementary",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-congruence",
+    "legacyTitle": "餘角與補角",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g8-2-c3/vertical-angles",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-congruence",
+    "legacyTitle": "對頂角的計算",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g8-2-c3/reflection-angle-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "compass-copy-angle",
+    "legacyTitle": "反射角度的應用",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g8-2-c3/triangle-interior-exterior",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-inequality",
+    "legacyTitle": "三角形的內角與外角",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g8-2-c3/triangle-angle-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-literacy",
+    "legacyTitle": "三角形內、外角的計算",
+    "matchScore": 3.3333
+  },
+  {
+    "legacyRef": "g8-2-c3/quadrilateral-angle-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "exterior-angle-sum",
+    "legacyTitle": "四邊形角度的計算",
+    "matchScore": 2.3333
+  },
+  {
+    "legacyRef": "g8-2-c3/polygon-angle-variable",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "exterior-angle-sum",
+    "legacyTitle": "n 邊形度數變動時計算",
+    "matchScore": 2.0476
+  },
+  {
+    "legacyRef": "g8-2-c3/paper-folding-angle",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "compass-copy-angle",
+    "legacyTitle": "紙片翻摺求角度",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g8-2-c3/figure-eight-angle",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-side-angle-relation",
+    "legacyTitle": "利用 8 字型關係求角度",
+    "matchScore": 1.8333
+  },
+  {
+    "legacyRef": "g8-2-c3/y-shape-angle",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-side-angle-relation",
+    "legacyTitle": "利用 Y 字型關係求角度",
+    "matchScore": 1.8333
+  },
+  {
+    "legacyRef": "g8-2-c3/isosceles-folding",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "isosceles-properties",
+    "legacyTitle": "等腰三角形摺疊的計算",
+    "matchScore": 5.8333
+  },
+  {
+    "legacyRef": "g8-2-c3/regular-polygon-angle",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "exterior-angle-sum",
+    "legacyTitle": "正 n 邊形角度的計算",
+    "matchScore": 2.3333
+  },
+  {
+    "legacyRef": "g8-2-c3/polygon-congruence",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-congruence",
+    "legacyTitle": "多邊形的全等",
+    "matchScore": 3.25
+  },
+  {
+    "legacyRef": "g8-2-c3/triangle-congruence-criteria",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-congruence",
+    "legacyTitle": "三角形全等的判別",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g8-2-c3/polygon-correspondence",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "exterior-angle-sum",
+    "legacyTitle": "多邊形的對應關係",
+    "matchScore": 1.6667
+  },
+  {
+    "legacyRef": "g8-2-c3/triangle-congruence-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-congruence",
+    "legacyTitle": "三角形全等的判別應用",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g8-2-c3/perpendicular-bisector",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "compass-perpendicular",
+    "legacyTitle": "中垂線性質的應用",
+    "matchScore": 3.25
+  },
+  {
+    "legacyRef": "g8-2-c3/angle-bisector",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "compass-copy-angle",
+    "legacyTitle": "角平分線性質的應用",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g8-2-c3/equilateral-height-area",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "isosceles-equilateral",
+    "legacyTitle": "正三角形的高與面積",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g8-2-c3/isosceles-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "isosceles-properties",
+    "legacyTitle": "等腰三角形性質的應用",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g8-2-c3/congruence-properties-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "isosceles-properties",
+    "legacyTitle": "三角形全等性質的應用",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g8-2-c3/triangle-side-angle-relation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-side-angle-relation",
+    "legacyTitle": "三角形的邊角關係",
+    "matchScore": 7
+  },
+  {
+    "legacyRef": "g8-2-c3/side-length-range",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-side-angle-relation",
+    "legacyTitle": "求邊長的範圍",
+    "matchScore": 1
+  },
+  {
+    "legacyRef": "g8-2-c3/perimeter-from-range",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-inequality",
+    "legacyTitle": "由邊長的範圍求周長",
+    "matchScore": 0.8333
+  },
+  {
+    "legacyRef": "g8-2-c3/larger-side-larger-angle",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-side-angle-relation",
+    "legacyTitle": "大邊對大角",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g8-2-c3/larger-angle-larger-side",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-side-angle-relation",
+    "legacyTitle": "大角對大邊",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g8-2-c3/side-angle-inequality-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u16",
+    "skillId": "triangle-inequality",
+    "legacyTitle": "三角形邊角不等關係的應用",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g8-2-c4/parallel-lines-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-properties",
+    "legacyTitle": "平行線",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g8-2-c4/parallel-transversal-angles",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-angle",
+    "legacyTitle": "平行線的截角性質",
+    "matchScore": 6.8333
+  },
+  {
+    "legacyRef": "g8-2-c4/parallel-lines-test",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-lines-distance",
+    "legacyTitle": "平行線的判別",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g8-2-c4/parallel-lines-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-properties",
+    "legacyTitle": "兩直線平行的相關性質",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g8-2-c4/parallel-perpendicular-corresponding",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-corresponding",
+    "legacyTitle": "一般角的兩邊與另一角的兩邊分別平行或垂直的關係",
+    "matchScore": 2.6667
+  },
+  {
+    "legacyRef": "g8-2-c4/parallel-lines-distance",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-lines-distance",
+    "legacyTitle": "兩平行線間的距離處處相等",
+    "matchScore": 5.5
+  },
+  {
+    "legacyRef": "g8-2-c4/transversal-angle-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-angle",
+    "legacyTitle": "利用平行線截角性質求角度",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g8-2-c4/triangle-parallel-transversal",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-angle",
+    "legacyTitle": "三角形與平行線截角性質",
+    "matchScore": 4.6905
+  },
+  {
+    "legacyRef": "g8-2-c4/parallel-test-and-value",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-properties",
+    "legacyTitle": "平行線的判別與求值",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g8-2-c4/zigzag-between-parallels",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-properties",
+    "legacyTitle": "兩平行線間折線角度的問題",
+    "matchScore": 1.75
+  },
+  {
+    "legacyRef": "g8-2-c4/quadrilateral-zigzag-parallels",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "special-quadrilateral",
+    "legacyTitle": "四邊形與平行線間折線角度",
+    "matchScore": 2.3333
+  },
+  {
+    "legacyRef": "g8-2-c4/regular-polygon-zigzag-parallels",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-properties",
+    "legacyTitle": "正多邊形與平行線間折線角度",
+    "matchScore": 1.4091
+  },
+  {
+    "legacyRef": "g8-2-c4/paper-folding-parallels",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-properties",
+    "legacyTitle": "利用平行線性質處理摺紙的問題",
+    "matchScore": 2.1667
+  },
+  {
+    "legacyRef": "g8-2-c4/parallelogram-definition",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallelogram-properties",
+    "legacyTitle": "平行四邊形的定義",
+    "matchScore": 5.8333
+  },
+  {
+    "legacyRef": "g8-2-c4/parallelogram-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallelogram-properties",
+    "legacyTitle": "平行四邊形的性質",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g8-2-c4/parallelogram-test",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallelogram-properties",
+    "legacyTitle": "平行四邊形的判別性質",
+    "matchScore": 5.8333
+  },
+  {
+    "legacyRef": "g8-2-c4/parallelogram-perimeter-area",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallelogram-properties",
+    "legacyTitle": "平行四邊形的面積與周長",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g8-2-c4/parallelogram-opposite-sides",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallelogram-opposite-sides",
+    "legacyTitle": "平行四邊形對邊相等",
+    "matchScore": 8.25
+  },
+  {
+    "legacyRef": "g8-2-c4/parallelogram-opposite-angles",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallelogram-opposite-sides",
+    "legacyTitle": "平行四邊形對角相等",
+    "matchScore": 5.7917
+  },
+  {
+    "legacyRef": "g8-2-c4/parallelogram-diagonals-bisect",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallelogram-diagonal",
+    "legacyTitle": "平行四邊形對角線互相平分",
+    "matchScore": 5.0152
+  },
+  {
+    "legacyRef": "g8-2-c4/parallelogram-area-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallelogram-properties",
+    "legacyTitle": "平行四邊形面積的計算",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g8-2-c4/parallelogram-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallelogram-properties",
+    "legacyTitle": "平行四邊形性質的應用",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g8-2-c4/special-quad-diagonal-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallelogram-diagonal",
+    "legacyTitle": "特殊四邊形的對角線性質",
+    "matchScore": 4.5714
+  },
+  {
+    "legacyRef": "g8-2-c4/diagonal-test-special-quad",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "special-quadrilateral",
+    "legacyTitle": "利用對角線性質判別特殊四邊形",
+    "matchScore": 3.7222
+  },
+  {
+    "legacyRef": "g8-2-c4/perpendicular-diagonals-area",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "quadrilateral-area",
+    "legacyTitle": "兩對角線垂直的四邊形面積",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g8-2-c4/trapezoid-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "trapezoid-area",
+    "legacyTitle": "梯形",
+    "matchScore": 4.1667
+  },
+  {
+    "legacyRef": "g8-2-c4/isosceles-trapezoid",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "trapezoid-area",
+    "legacyTitle": "等腰梯形",
+    "matchScore": 3.6667
+  },
+  {
+    "legacyRef": "g8-2-c4/special-quad-properties-test",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "special-quadrilateral",
+    "legacyTitle": "特殊四邊形的性質與判別",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g8-2-c4/rhombus-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "rhombus-properties",
+    "legacyTitle": "菱形的性質",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g8-2-c4/kite-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "parallel-properties",
+    "legacyTitle": "箏形的性質",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g8-2-c4/rectangle-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "rectangle-square-properties",
+    "legacyTitle": "長方形的性質",
+    "matchScore": 3.9167
+  },
+  {
+    "legacyRef": "g8-2-c4/square-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "rectangle-square-properties",
+    "legacyTitle": "正方形的性質",
+    "matchScore": 5.6667
+  },
+  {
+    "legacyRef": "g8-2-c4/trapezoid-angle-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "trapezoid-area",
+    "legacyTitle": "梯形角度的計算",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g8-2-c4/trapezoid-length-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "trapezoid-area",
+    "legacyTitle": "梯形長度的計算",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g8-2-c4/trapezoid-midsegment",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "trapezoid-area",
+    "legacyTitle": "梯形兩腰中點連線段的問題",
+    "matchScore": 2.625
+  },
+  {
+    "legacyRef": "g8-2-c4/trapezoid-area-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u17",
+    "skillId": "trapezoid-area",
+    "legacyTitle": "梯形面積的計算",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g9-1-c1/continued-ratio-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "continued-ratio-word",
+    "legacyTitle": "連比",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g9-1-c1/continued-ratio-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "continued-ratio-properties",
+    "legacyTitle": "連比的性質",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g9-1-c1/continued-proportion",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "continued-ratio-word",
+    "legacyTitle": "連比例式",
+    "matchScore": 4.1667
+  },
+  {
+    "legacyRef": "g9-1-c1/find-continued-ratio",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "continued-ratio-application",
+    "legacyTitle": "求連比",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g9-1-c1/continued-proportion-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "continued-ratio-properties",
+    "legacyTitle": "連比例式的性質",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g9-1-c1/continued-proportion-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "continued-ratio-application",
+    "legacyTitle": "連比例式的求值問題",
+    "matchScore": 3.0833
+  },
+  {
+    "legacyRef": "g9-1-c1/continued-ratio-change",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "continued-ratio-application",
+    "legacyTitle": "求連比的變化題",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g9-1-c1/continued-ratio-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "continued-ratio-application",
+    "legacyTitle": "連比的求值問題",
+    "matchScore": 5.6667
+  },
+  {
+    "legacyRef": "g9-1-c1/continued-ratio-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "continued-ratio-application",
+    "legacyTitle": "連比的應用問題",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g9-1-c1/equal-height-triangle-area-ratio",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "ratio-area-application",
+    "legacyTitle": "等高或同高三角形的面積比",
+    "matchScore": 3.1
+  },
+  {
+    "legacyRef": "g9-1-c1/parallel-proportional-segments",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "proportion-segment",
+    "legacyTitle": "平行線截比例線段性質",
+    "matchScore": 2.6429
+  },
+  {
+    "legacyRef": "g9-1-c1/parallel-proportional-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "proportion-segment",
+    "legacyTitle": "平行線截比例線段性質的應用",
+    "matchScore": 2.6429
+  },
+  {
+    "legacyRef": "g9-1-c1/midsegment-theorem",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "三角形兩邊中點連線性質",
+    "matchScore": 1.25
+  },
+  {
+    "legacyRef": "g9-1-c1/equal-height-area-ratio",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "ratio-area-application",
+    "legacyTitle": "等高三角形的面積比",
+    "matchScore": 3.9286
+  },
+  {
+    "legacyRef": "g9-1-c1/parallel-proportional-problems",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "proportion-segment",
+    "legacyTitle": "平行線截比例線段的問題",
+    "matchScore": 2.6429
+  },
+  {
+    "legacyRef": "g9-1-c1/midsegment-problems",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "三角形兩邊中點連線的問題",
+    "matchScore": 1.25
+  },
+  {
+    "legacyRef": "g9-1-c1/midsegment-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "continued-ratio-application",
+    "legacyTitle": "三角形兩邊中點連線的應用",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g9-1-c1/two-parallels-proportional",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "proportion-segment",
+    "legacyTitle": "兩組平行線截比例線段的求值問題",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c1/parallel-proportional-word",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "proportion-segment",
+    "legacyTitle": "平行線截比例線段的應用",
+    "matchScore": 2.6429
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-figures",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "相似形",
+    "matchScore": 3.25
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-figures-test",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "相似形的判別",
+    "matchScore": 2.5833
+  },
+  {
+    "legacyRef": "g9-1-c1/triangle-similarity-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "三角形的相似性質與判別",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-polygon-angle-side",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "相似多邊形的邊角關係",
+    "matchScore": 1.625
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-polygon-test",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "相似多邊形的判別",
+    "matchScore": 2.1667
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-polygon-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "相似多邊形的應用",
+    "matchScore": 2.5833
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-triangle-test",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "相似三角形的判別",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-triangle-test-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "相似三角形的判別與應用",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-segment-length",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "利用三角形的相似性質求線段長",
+    "matchScore": 3.4762
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-ratio-relations",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-ratio-area",
+    "legacyTitle": "相似三角形對應邊、周長、面積的比的關係",
+    "matchScore": 3.7381
+  },
+  {
+    "legacyRef": "g9-1-c1/right-triangle-mother-child",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "直角三角形的母子相似性質",
+    "matchScore": 1.875
+  },
+  {
+    "legacyRef": "g9-1-c1/life-measurement",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-shadow-problem",
+    "legacyTitle": "生活中的測量問題",
+    "matchScore": 1.25
+  },
+  {
+    "legacyRef": "g9-1-c1/special-right-triangle-ratio",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-ratio-perimeter",
+    "legacyTitle": "特殊直角三角形的邊長比",
+    "matchScore": 1.5556
+  },
+  {
+    "legacyRef": "g9-1-c1/right-triangle-side-ratio",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-ratio-perimeter",
+    "legacyTitle": "直角三角形的邊長比值",
+    "matchScore": 1.625
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-perimeter-area-ratio",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-ratio-area",
+    "legacyTitle": "相似三角形的周長、面積比",
+    "matchScore": 4.6667
+  },
+  {
+    "legacyRef": "g9-1-c1/similar-measurement",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "利用三角形相似性質作測量",
+    "matchScore": 4.1429
+  },
+  {
+    "legacyRef": "g9-1-c1/special-right-ratio-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "ratio-perimeter-application",
+    "legacyTitle": "特殊直角三角形邊長比的應用",
+    "matchScore": 2.5556
+  },
+  {
+    "legacyRef": "g9-1-c1/triangle-similarity-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u18",
+    "skillId": "similar-triangles",
+    "legacyTitle": "三角形相似性質的應用",
+    "matchScore": 3.75
+  },
+  {
+    "legacyRef": "g9-1-c2/circle-vocabulary",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "circle-chord",
+    "legacyTitle": "圓的相關名詞",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c2/arc-length-sector",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "arc-length",
+    "legacyTitle": "圓弧長與扇形",
+    "matchScore": 4.4167
+  },
+  {
+    "legacyRef": "g9-1-c2/sector-area-perimeter",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "sector-area",
+    "legacyTitle": "扇面的面積與周長",
+    "matchScore": 3.6667
+  },
+  {
+    "legacyRef": "g9-1-c2/overlapping-sector",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "sector-area",
+    "legacyTitle": "扇形重疊部分的面積與周長",
+    "matchScore": 3.1111
+  },
+  {
+    "legacyRef": "g9-1-c2/rotation-sweep",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "central-inscribed-angle",
+    "legacyTitle": "圖形旋轉掃過的軌跡或區域",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g9-1-c2/point-circle-position",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "circle-chord",
+    "legacyTitle": "點與圓的位置關係",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g9-1-c2/line-circle-position",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "circle-chord",
+    "legacyTitle": "直線 L 與圓 O 的位置關係",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g9-1-c2/tangent-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "tangent-properties",
+    "legacyTitle": "圓的切線性質與判別性質",
+    "matchScore": 5.75
+  },
+  {
+    "legacyRef": "g9-1-c2/external-tangent-pair",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "tangent-properties",
+    "legacyTitle": "過圓外一點的兩切線性質",
+    "matchScore": 2.5476
+  },
+  {
+    "legacyRef": "g9-1-c2/circumscribed-quadrilateral",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "inscribed-quadrilateral",
+    "legacyTitle": "圓外切四邊形性質",
+    "matchScore": 4
+  },
+  {
+    "legacyRef": "g9-1-c2/chord-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "circle-chord",
+    "legacyTitle": "弦的性質",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g9-1-c2/chord-distance",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "circle-chord",
+    "legacyTitle": "弦心距",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c2/tangent-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "tangent-properties",
+    "legacyTitle": "圓切線性質的應用",
+    "matchScore": 5
+  },
+  {
+    "legacyRef": "g9-1-c2/equal-tangent-segments",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "two-tangent-segments",
+    "legacyTitle": "切線段等長的應用",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g9-1-c2/radius-chord-distance",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "tangent-radius",
+    "legacyTitle": "半徑、弦與弦心距的關係",
+    "matchScore": 2.0476
+  },
+  {
+    "legacyRef": "g9-1-c2/arc-degree",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "arc-angle",
+    "legacyTitle": "弧的度數",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c2/central-angle-chord",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "central-inscribed-angle",
+    "legacyTitle": "圓心角與弦的關係",
+    "matchScore": 4.6667
+  },
+  {
+    "legacyRef": "g9-1-c2/inscribed-angle",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "inscribed-angle-theorem",
+    "legacyTitle": "圓周角",
+    "matchScore": 5.6667
+  },
+  {
+    "legacyRef": "g9-1-c2/inscribed-angle-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "inscribed-angle-theorem",
+    "legacyTitle": "圓周角的相關性質",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g9-1-c2/central-inscribed-arc",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "central-inscribed-angle",
+    "legacyTitle": "圓心角、圓周角與弧的度數",
+    "matchScore": 6.2917
+  },
+  {
+    "legacyRef": "g9-1-c2/semicircle-right-angle",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "central-inscribed-angle",
+    "legacyTitle": "半圓所對圓周角為直角",
+    "matchScore": 2.4444
+  },
+  {
+    "legacyRef": "g9-1-c2/parallel-equal-arcs",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "central-inscribed-angle",
+    "legacyTitle": "平行線截等弧",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g9-1-c2/cyclic-quadrilateral",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "inscribed-quadrilateral",
+    "legacyTitle": "圓內接四邊形對角互補",
+    "matchScore": 5.2778
+  },
+  {
+    "legacyRef": "g9-1-c2/two-circles-intersection",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "two-tangent-segments",
+    "legacyTitle": "兩圓相交的度數問題",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g9-1-c2/circle-combined-geometry",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u19",
+    "skillId": "circle-chord",
+    "legacyTitle": "圓結合其他幾何性質的問題",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g9-1-c3/proof-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "geometry-proof-basic",
+    "legacyTitle": "證明",
+    "matchScore": 4.1667
+  },
+  {
+    "legacyRef": "g9-1-c3/geometry-proof-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "geometry-proof-basic",
+    "legacyTitle": "幾何證明常用的性質",
+    "matchScore": 6.1667
+  },
+  {
+    "legacyRef": "g9-1-c3/algebra-proof-assumptions",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "geometry-proof-basic",
+    "legacyTitle": "代數證明常用的假設",
+    "matchScore": 2.0476
+  },
+  {
+    "legacyRef": "g9-1-c3/geometry-proof",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "geometry-proof-basic",
+    "legacyTitle": "幾何證明",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g9-1-c3/algebra-proof",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "geometry-proof-basic",
+    "legacyTitle": "代數證明",
+    "matchScore": 3.6667
+  },
+  {
+    "legacyRef": "g9-1-c3/geometry-proof-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "geometry-proof-basic",
+    "legacyTitle": "幾何證明與應用",
+    "matchScore": 8.1667
+  },
+  {
+    "legacyRef": "g9-1-c3/construction-geometric-reasoning",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "geometry-proof-basic",
+    "legacyTitle": "尺規作圖與幾何推理",
+    "matchScore": 0.7143
+  },
+  {
+    "legacyRef": "g9-1-c3/circumcenter-meaning",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "circumcenter",
+    "legacyTitle": "意義",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c3/circumcenter-construction",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "circumcenter",
+    "legacyTitle": "作法",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c3/circumcenter-position",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "circumcenter",
+    "legacyTitle": "位置",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c3/circumcenter-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "circumcenter",
+    "legacyTitle": "性質",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g9-1-c3/circumcenter-angle-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "circumcenter",
+    "legacyTitle": "外心與角度的計算",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g9-1-c3/circumcenter-shared-angle",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "circumcenter",
+    "legacyTitle": "兩三角形同外心的角度計算",
+    "matchScore": 2.4583
+  },
+  {
+    "legacyRef": "g9-1-c3/circumcenter-isosceles-radius",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "circumcenter",
+    "legacyTitle": "等腰三角形外接圓半徑的計算",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g9-1-c3/circumcenter-right-area",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "circumcenter",
+    "legacyTitle": "直角三角形外接圓面積的計算",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g9-1-c3/incenter-meaning",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "incenter",
+    "legacyTitle": "意義",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c3/incenter-construction",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "incenter",
+    "legacyTitle": "作法",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c3/incenter-position",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "incenter",
+    "legacyTitle": "位置",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c3/incenter-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "incenter",
+    "legacyTitle": "性質",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g9-1-c3/incenter-angle-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "incenter",
+    "legacyTitle": "內心與角度的計算",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g9-1-c3/incenter-tangent-length",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "incenter",
+    "legacyTitle": "切線段長的計算",
+    "matchScore": 1.3333
+  },
+  {
+    "legacyRef": "g9-1-c3/incenter-length-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "incenter",
+    "legacyTitle": "內心與長度的計算",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g9-1-c3/incenter-area-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "incenter",
+    "legacyTitle": "內心與面積的計算",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g9-1-c3/centroid-meaning",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "centroid",
+    "legacyTitle": "意義",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c3/centroid-construction",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "centroid",
+    "legacyTitle": "作法",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c3/centroid-position",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "centroid",
+    "legacyTitle": "位置",
+    "matchScore": 2
+  },
+  {
+    "legacyRef": "g9-1-c3/centroid-properties",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "centroid",
+    "legacyTitle": "性質",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g9-1-c3/centroid-length-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "centroid",
+    "legacyTitle": "重心與長度的計算",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g9-1-c3/centroid-area-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "centroid",
+    "legacyTitle": "重心與面積的計算",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g9-1-c3/centroid-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "centroid",
+    "legacyTitle": "重心性質的應用",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g9-1-c3/special-isosceles-centers",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "triangle-center-word",
+    "legacyTitle": "等腰三角形",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g9-1-c3/special-right-centers",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "triangle-center-word",
+    "legacyTitle": "直角三角形",
+    "matchScore": 2.5
+  },
+  {
+    "legacyRef": "g9-1-c3/special-equilateral-centers",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "triangle-center-word",
+    "legacyTitle": "正三角形",
+    "matchScore": 3.3333
+  },
+  {
+    "legacyRef": "g9-1-c3/special-centers-problems",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u20",
+    "skillId": "triangle-center-word",
+    "legacyTitle": "特殊三角形三心的相關問題",
+    "matchScore": 1.25
+  },
+  {
+    "legacyRef": "g9-2-c1/quadratic-function-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "legacyTitle": "二次函數",
+    "matchScore": 6.1667
+  },
+  {
+    "legacyRef": "g9-2-c1/quadratic-graph-forms",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-graph-forms",
+    "legacyTitle": "二次函數 y = ax² 與 y = a(x - h)² + k 的圖形",
+    "matchScore": 4
+  },
+  {
+    "legacyRef": "g9-2-c1/opening-direction",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-opening",
+    "legacyTitle": "二次函數圖形的開口方向",
+    "matchScore": 4.6429
+  },
+  {
+    "legacyRef": "g9-2-c1/vertex-coordinates",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex",
+    "legacyTitle": "二次函數圖形的頂點座標",
+    "matchScore": 2.7143
+  },
+  {
+    "legacyRef": "g9-2-c1/axis-of-symmetry",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-axis-symmetry",
+    "legacyTitle": "二次函數圖形的對稱軸",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g9-2-c1/opening-size",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-opening",
+    "legacyTitle": "二次函數圖形的開口大小",
+    "matchScore": 2.7143
+  },
+  {
+    "legacyRef": "g9-2-c1/graph-translation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "legacyTitle": "二次函數圖形的平移",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g9-2-c1/find-quadratic-function",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "legacyTitle": "求二次函數",
+    "matchScore": 6.1667
+  },
+  {
+    "legacyRef": "g9-2-c1/opening-size-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-opening",
+    "legacyTitle": "函數圖形開口大小的應用",
+    "matchScore": 2.3333
+  },
+  {
+    "legacyRef": "g9-2-c1/graph-key-features",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "legacyTitle": "求二次函數圖形的基本要項",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g9-2-c1/horizontal-line-intersection",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "legacyTitle": "二次函數圖形與水平線交點",
+    "matchScore": 1.875
+  },
+  {
+    "legacyRef": "g9-2-c1/quadratic-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "legacyTitle": "二次函數的應用",
+    "matchScore": 4.8333
+  },
+  {
+    "legacyRef": "g9-2-c1/vertex-form-max-min",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-max-min",
+    "legacyTitle": "二次函數 y = a(x - h)² + k 的最大值或最小值",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g9-2-c1/vertex-position",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-vertex",
+    "legacyTitle": "二次函數圖形的頂點位置",
+    "matchScore": 2.7143
+  },
+  {
+    "legacyRef": "g9-2-c1/quadratic-value-change",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "legacyTitle": "二次函數值的變化",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g9-2-c1/max-min-discrimination",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-max-min",
+    "legacyTitle": "二次函數最大值或最小值的判別",
+    "matchScore": 3.9167
+  },
+  {
+    "legacyRef": "g9-2-c1/x-intercept-count",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-function-literacy",
+    "legacyTitle": "二次函數圖形與 x 軸交點數",
+    "matchScore": 1.875
+  },
+  {
+    "legacyRef": "g9-2-c1/given-max-min-evaluate",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-max-min",
+    "legacyTitle": "已知最大、小值的求值問題",
+    "matchScore": 3.6667
+  },
+  {
+    "legacyRef": "g9-2-c1/given-max-min-find-function",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u21",
+    "skillId": "quadratic-max-min",
+    "legacyTitle": "已知最大、小值求二次函數",
+    "matchScore": 2.7111
+  },
+  {
+    "legacyRef": "g9-2-c2/quartile-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "quartile-calculation",
+    "legacyTitle": "四分位數",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g9-2-c2/ogive-quartile-group",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "ogive-read",
+    "legacyTitle": "中間累積次數分配折線圖判斷 Qm（m＝1、2、3） 所在組別",
+    "matchScore": 2.5833
+  },
+  {
+    "legacyRef": "g9-2-c2/range-iqr",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "range-iqr-compare",
+    "legacyTitle": "全距與四分位距",
+    "matchScore": 3.5
+  },
+  {
+    "legacyRef": "g9-2-c2/boxplot-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "box-plot",
+    "legacyTitle": "盒狀圖",
+    "matchScore": 5.5
+  },
+  {
+    "legacyRef": "g9-2-c2/quartile-boxplot-drawing",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "quartile-calculation",
+    "legacyTitle": "求四分位數與盒狀圖的繪製",
+    "matchScore": 3.7083
+  },
+  {
+    "legacyRef": "g9-2-c2/quartile-group-judgment",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "quartile-calculation",
+    "legacyTitle": "四分位數所在組別的判斷",
+    "matchScore": 3.9762
+  },
+  {
+    "legacyRef": "g9-2-c2/single-boxplot-reading",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "box-plot-interpret",
+    "legacyTitle": "單一盒狀圖的判讀",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g9-2-c2/two-boxplot-comparison",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "box-plot-interpret",
+    "legacyTitle": "兩盒狀圖的判讀與比較",
+    "matchScore": 3.3571
+  },
+  {
+    "legacyRef": "g9-2-c2/probability-concept",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "probability-word",
+    "legacyTitle": "機率的概念",
+    "matchScore": 9.5
+  },
+  {
+    "legacyRef": "g9-2-c2/tree-diagram",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "probability-tree-basic",
+    "legacyTitle": "樹狀圖",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g9-2-c2/probability-methods",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "probability-word",
+    "legacyTitle": "機率的求法",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g9-2-c2/single-event-probability",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "probability-word",
+    "legacyTitle": "單一事件的機率",
+    "matchScore": 2.8333
+  },
+  {
+    "legacyRef": "g9-2-c2/compound-event-probability",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "probability-word",
+    "legacyTitle": "組合事件的機率",
+    "matchScore": 2.8333
+  },
+  {
+    "legacyRef": "g9-2-c2/simple-probability",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "probability-word",
+    "legacyTitle": "簡單的機率問題",
+    "matchScore": 4.1667
+  },
+  {
+    "legacyRef": "g9-2-c2/card-probability",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "probability-word",
+    "legacyTitle": "撲克牌的機率問題",
+    "matchScore": 3.75
+  },
+  {
+    "legacyRef": "g9-2-c2/life-probability",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u22",
+    "skillId": "probability-word",
+    "legacyTitle": "生活中的機率",
+    "matchScore": 3.75
+  },
+  {
+    "legacyRef": "g9-2-c3/plane-plane",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "solid-nets",
+    "legacyTitle": "平面與平面",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g9-2-c3/line-plane",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "solid-nets",
+    "legacyTitle": "直線與平面",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g9-2-c3/line-line",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "solid-nets",
+    "legacyTitle": "直線與直線",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g9-2-c3/space-line-plane-relations",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "solid-nets",
+    "legacyTitle": "空間中線與平面間的關係",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g9-2-c3/space-distance",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "solid-nets",
+    "legacyTitle": "空間中兩點距離的計算",
+    "matchScore": 0
+  },
+  {
+    "legacyRef": "g9-2-c3/prism",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "solid-prism-concept",
+    "legacyTitle": "角柱",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g9-2-c3/cylinder",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "solid-cylinder-concept",
+    "legacyTitle": "圓柱",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g9-2-c3/net-reading",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "solid-nets",
+    "legacyTitle": "展開圖的判讀",
+    "matchScore": 3
+  },
+  {
+    "legacyRef": "g9-2-c3/net-volume-surface",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "surface-area-net",
+    "legacyTitle": "由展開圖求體積與表面積",
+    "matchScore": 5.7917
+  },
+  {
+    "legacyRef": "g9-2-c3/prism-cylinder-calc",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "prism-volume",
+    "legacyTitle": "求柱體的體積與表面積",
+    "matchScore": 4.3333
+  },
+  {
+    "legacyRef": "g9-2-c3/pyramid",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "solid-pyramid-concept",
+    "legacyTitle": "角錐",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g9-2-c3/cone",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "solid-cone-concept",
+    "legacyTitle": "圓錐",
+    "matchScore": 7.5
+  },
+  {
+    "legacyRef": "g9-2-c3/pyramid-surface-area",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "prism-surface-area",
+    "legacyTitle": "求角錐的表面積",
+    "matchScore": 5.1667
+  },
+  {
+    "legacyRef": "g9-2-c3/pyramid-surface-application",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "prism-surface-area",
+    "legacyTitle": "角錐表面積的應用",
+    "matchScore": 3.8333
+  },
+  {
+    "legacyRef": "g9-2-c3/cone-net-surface",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "surface-area-net",
+    "legacyTitle": "由展開圖求圓錐的表面積",
+    "matchScore": 5.7917
+  },
+  {
+    "legacyRef": "g9-2-c3/cone-surface-calculation",
+    "status": "mapped-to-v2-skill",
+    "unitId": "u23",
+    "skillId": "prism-surface-area",
+    "legacyTitle": "圓錐表面積的計算",
+    "matchScore": 3.8333
+  }
+];
