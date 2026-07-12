@@ -1,0 +1,232 @@
+{
+  "lectureId": "u07-s005-lecture-r1",
+  "unitId": "u07",
+  "topicId": "u07-basics",
+  "skillId": "inequality-sign-flip",
+  "title": "乘除負數變號：用數線次序理解方向反轉",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明乘除負數時不等號為何反向。",
+    "能正確解未知數係數為負的一元一次不等式。",
+    "能區分移項與負數乘除兩種不同規則。",
+    "能用代入或數值例子檢查變號。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inequality-number-line",
+      "requiredLevel": "能將大小關係連結到數線左右次序。"
+    }
+  ],
+  "prerequisiteBridge": {
+    "inequality-number-line": "能將大小關係連結到數線左右次序。"
+  },
+  "glossary": [
+    {
+      "term": "方向反轉",
+      "definition": "不等號由＞變＜、由≥變≤，反之亦然。"
+    },
+    {
+      "term": "負倍數",
+      "definition": "乘上一個小於 0 的數。"
+    },
+    {
+      "term": "次序反轉",
+      "definition": "數線上的大小順序經乘負數後左右對調。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a>b, k<0 ⇒ ak<bk",
+      "meaning": "乘負數後，原本較大的乘積反而較小。"
+    },
+    {
+      "symbol": "−x>3 ⇔ x<−3",
+      "meaning": "兩邊除以 −1，必須反向。"
+    }
+  ],
+  "conceptNarrative": [
+    "先用 5>2 觀察：兩邊乘 −1 得 −5<−2，大小次序倒轉。",
+    "乘除負數會同時做「縮放」與「關於 0 的翻轉」，因此不等號必須反向，才能保留原解集。",
+    "移項只是兩邊同加減，不會變號；只有整個不等式兩邊同乘或同除負數時才變號。",
+    "乘除正數方向不變；乘除 0 會失去資訊，不能用來解不等式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "負數乘法次序律",
+      "statement": "若 a>b 且 k<0，則 ak<bk。"
+    },
+    {
+      "name": "負數除法次序律",
+      "statement": "若 a>b 且 k<0，則 a÷k<b÷k。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "−ax>b（a>0）⇔ x<−b/a",
+      "conditions": [
+        "兩邊除以 −a<0"
+      ],
+      "meaning": "除以負係數後反向。"
+    },
+    {
+      "formula": "a>b ⇒ −a<−b",
+      "conditions": [
+        "兩邊乘 −1"
+      ],
+      "meaning": "最基本的變號例子。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能在加減負數時變號。",
+    "不能因為式子中「看見負號」就立即變號；必須真的對兩邊做乘除負數。",
+    "不能乘除 0 來消去未知數。",
+    "若兩邊同除以含未知數的式子，因其正負未知，超出本單元安全方法。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先整理未知數項。",
+      "check": "目前是否真的要乘或除負數？"
+    },
+    {
+      "step": 2,
+      "instruction": "執行負數乘除並同時反向不等號。",
+      "check": "＞與＜互換，≥與≤互換。"
+    },
+    {
+      "step": 3,
+      "instruction": "寫成 x 在左側的標準形式。",
+      "check": "端點正負號是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "取一個解集內的值代回原式。",
+      "check": "若未變號，代入是否會失敗？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 −2x>8。",
+      "solutionSteps": [
+        "兩邊同除以 −2。",
+        "因除以負數，＞改成＜，得到 x<−4。"
+      ],
+      "answer": "x<−4。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 6−3x≤15。",
+      "solutionSteps": [
+        "兩邊同減 6，得 −3x≤9。",
+        "除以 −3 並反向，得 x≥−3。"
+      ],
+      "answer": "x≥−3。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 4x−7>6x+1。",
+      "solutionSteps": [
+        "兩邊同減 6x，得 −2x−7>1。",
+        "加 7 得 −2x>8；除以 −2 變號。"
+      ],
+      "answer": "x<−4。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "說明為何 −5<−2。",
+      "solutionSteps": [
+        "原本 5>2。",
+        "兩邊乘 −1 後，數線位置左右對調。"
+      ],
+      "answer": "乘負數使大小順序反轉。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "−2x>8 得 x>−4。",
+      "why": "除以負數卻未變號。",
+      "correction": "應為 x<−4。"
+    },
+    {
+      "mistake": "x−3<5 因為減 3 而變號。",
+      "why": "把減負數與除負數混淆。",
+      "correction": "同加減不變號。"
+    },
+    {
+      "mistake": "移項 −3x 時就變號。",
+      "why": "誤判操作種類。",
+      "correction": "移項只改該項加減號，不改不等號。"
+    },
+    {
+      "mistake": "兩邊乘 0 消去所有項。",
+      "why": "乘 0 會把不同數都變成 0，失去等價性。",
+      "correction": "解不等式不可用 0 作乘除因子。"
+    },
+    {
+      "mistake": "−6x≤−12 得 x≤2。",
+      "why": "忘記同除負數反向。",
+      "correction": "正確為 x≥2。"
+    },
+    {
+      "mistake": "變號後端點仍寫錯正負。",
+      "why": "只注意符號方向，未完成除法。",
+      "correction": "同時計算數值與方向。"
+    }
+  ],
+  "selfCheck": [
+    "我能說出變號發生的精確操作嗎？",
+    "我能用 5>2 的例子說明次序反轉嗎？",
+    "我是否把端點數值也正確除完？",
+    "我有代回原式檢查方向嗎？"
+  ],
+  "summary": [
+    "乘除正數不變號。",
+    "乘除負數必須反向。",
+    "同加減與移項不會改變不等號方向。",
+    "乘除 0 不可用。"
+  ],
+  "connections": {
+    "previous": "承接數線左右次序與基本不等式解法。",
+    "next": [
+      "下一節將利用正確方向列出整數解。",
+      "後續複合範圍也需要在每個不等式中正確變號。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u07-s005-v001",
+      "u07-s005-v002",
+      "u07-s005-v003",
+      "u07-s005-v004",
+      "u07-s005-v005",
+      "u07-s005-v006",
+      "u07-s005-v007",
+      "u07-s005-v008",
+      "u07-s005-v009",
+      "u07-s005-v010",
+      "u07-s005-v011",
+      "u07-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u07-s005-cr001",
+      "u07-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以 5>2 乘 −1 的次序反轉作原理驗證，並逐步重算三個負係數例題；人工檢查所有嚴格與含等號符號的對應反向。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "4eb9bdf939159c8219d3ad606d53eb66f3c0eb994fdecb9703d22d15caa509ed"
+}

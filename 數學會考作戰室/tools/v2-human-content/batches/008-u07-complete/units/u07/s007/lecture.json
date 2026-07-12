@@ -1,0 +1,238 @@
+{
+  "lectureId": "u07-s007-lecture-r1",
+  "unitId": "u07",
+  "topicId": "u07-solution-sets",
+  "skillId": "inequality-and-word",
+  "title": "不等式與且的語意：同時成立就是交集",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把「且」翻成兩個條件同時成立。",
+    "能求兩個單邊不等式的共同解集。",
+    "能辨識無解、單點與區間。",
+    "能由情境中的雙重限制建立複合不等式。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inequality-integer-solutions",
+      "requiredLevel": "能判斷端點包含性並列出範圍內整數。"
+    }
+  ],
+  "prerequisiteBridge": {
+    "inequality-integer-solutions": "能判斷端點包含性並列出範圍內整數。"
+  },
+  "glossary": [
+    {
+      "term": "且",
+      "definition": "兩個條件都必須成立。"
+    },
+    {
+      "term": "共同解集",
+      "definition": "同時屬於兩個解集的部分。"
+    },
+    {
+      "term": "交集",
+      "definition": "兩個集合共有的元素。"
+    },
+    {
+      "term": "雙邊不等式",
+      "definition": "用兩個不等號同時限制同一未知數，例如 2<x≤5。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x>2 且 x≤5",
+      "meaning": "同時大於 2 且不超過 5，可寫 2<x≤5。"
+    },
+    {
+      "symbol": "∩",
+      "meaning": "集合交集，本單元以「共同部分」理解即可。"
+    }
+  ],
+  "conceptNarrative": [
+    "「且」像兩道門，數值必須同時通過兩個條件。",
+    "在數線上畫出兩個解集後，只保留重疊部分。",
+    "若條件方向相向，常形成有限區間；若彼此分離，可能無解。",
+    "兩個含等號條件若只在同一端點相遇，交集可能只有一個數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "且的解集",
+      "statement": "條件 A 且 B 的解集，是 A 的解集與 B 的解集的共同部分。"
+    },
+    {
+      "name": "雙邊寫法",
+      "statement": "a<x≤b 同時表示 x>a 與 x≤b。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x>a 且 x≤b ⇔ a<x≤b",
+      "conditions": [
+        "a<b 時形成非空區間"
+      ],
+      "meaning": "合併雙重限制。"
+    },
+    {
+      "formula": "x≥a 且 x≤a ⇔ x=a",
+      "conditions": [
+        "兩端都包含同一點"
+      ],
+      "meaning": "交集可退化成單點。"
+    }
+  ],
+  "nonApplicableCases": [
+    "「且」不能把兩個解集直接全部合併，那是「或」的概念。",
+    "若左端大於右端，不能照樣寫成區間，應判斷是否無解。",
+    "雙邊不等式三部分需保持由小到大排列。",
+    "解複合不等式時，每個子不等式都需獨立遵守負數變號。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把語句拆成兩個不等式。",
+      "check": "每個條件是否都必要？"
+    },
+    {
+      "step": 2,
+      "instruction": "各自求解。",
+      "check": "負數乘除是否正確變號？"
+    },
+    {
+      "step": 3,
+      "instruction": "在同一數線找共同部分。",
+      "check": "只留下重疊區域。"
+    },
+    {
+      "step": 4,
+      "instruction": "整理成雙邊不等式或說明無解。",
+      "check": "端點包含性是否保留？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "求 x>1 且 x≤4 的共同解。",
+      "solutionSteps": [
+        "第一條件在 1 右側，第二條件在 4 左側含 4。",
+        "重疊為 1<x≤4。"
+      ],
+      "answer": "1<x≤4。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "求 x≤−2 且 x>3 的共同解。",
+      "solutionSteps": [
+        "第一解集在 −2 左側，第二在 3 右側。",
+        "兩者沒有重疊。"
+      ],
+      "answer": "無解。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "求 x≥5 且 x≤5。",
+      "solutionSteps": [
+        "兩條件都只共同包含 5。",
+        "交集為單點。"
+      ],
+      "answer": "x=5。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某遊樂設施要求身高至少 120 公分且未滿 150 公分。",
+      "solutionSteps": [
+        "至少 120 表示 h≥120。",
+        "未滿 150 表示 h<150。"
+      ],
+      "answer": "120≤h<150。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 x>1 且 x≤4 寫成 x>1 或 x≤4 的全部。",
+      "why": "把且誤解成聯集。",
+      "correction": "只取同時成立的 1<x≤4。"
+    },
+    {
+      "mistake": "x≤−2 且 x>3 仍列出兩段。",
+      "why": "沒有找共同部分。",
+      "correction": "兩段不重疊，答案無解。"
+    },
+    {
+      "mistake": "至少 120 寫 h>120。",
+      "why": "漏掉「至少」包含等於。",
+      "correction": "應為 h≥120。"
+    },
+    {
+      "mistake": "未滿 150 寫 h≤150。",
+      "why": "把「未滿」誤成「不超過」。",
+      "correction": "未滿不含 150，寫 h<150。"
+    },
+    {
+      "mistake": "雙邊寫成 4≥x>1 後誤讀方向。",
+      "why": "未按小到大排列。",
+      "correction": "標準寫成 1<x≤4。"
+    },
+    {
+      "mistake": "兩條件各自成立就選答案，未驗證同一 x 同時成立。",
+      "why": "忽略共同性。",
+      "correction": "用同一候選值代入兩條件。"
+    }
+  ],
+  "selfCheck": [
+    "我是否把每個語意詞翻成正確不等號？",
+    "我取得的是重疊而不是全部嗎？",
+    "端點是否可能形成單點？",
+    "左右界順序是否合理？"
+  ],
+  "summary": [
+    "且代表同時成立，取共同部分。",
+    "雙邊不等式可濃縮兩個相向限制。",
+    "交集可能是區間、單點或空集合。",
+    "端點是否包含由原條件決定。"
+  ],
+  "connections": {
+    "previous": "承接整數解與數線端點判讀。",
+    "next": [
+      "下一節將練習更多中文範圍敘述與最大最小語意。",
+      "應用題常用「至少且至多」建立可行範圍。"
+    ]
+  },
+  "figureReferences": [
+    "u07-fig-and-intersection"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u07-s007-v001",
+      "u07-s007-v002",
+      "u07-s007-v003",
+      "u07-s007-v004",
+      "u07-s007-v005",
+      "u07-s007-v006",
+      "u07-s007-v007",
+      "u07-s007-v008",
+      "u07-s007-v009",
+      "u07-s007-v010",
+      "u07-s007-v011",
+      "u07-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u07-s007-cr001",
+      "u07-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以區間、無解、單點與身高限制四種型態檢查「且」的交集語意；圖形的兩層射線與重疊帶均人工核對端點包含性。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "b4b1ef07f71f076c316efaca06f125515a72e4dfb32ab581fa8c459370e88ea0"
+}

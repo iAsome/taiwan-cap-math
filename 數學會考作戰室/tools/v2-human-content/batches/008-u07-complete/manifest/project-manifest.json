@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "math-v2-human-content-batch-manifest-r4",
+  "packageId": "008-u07-complete",
+  "rootDirectory": "math-v2-human-content-batch-008-u07-complete",
+  "unitId": "u07",
+  "numericUnitId": 7,
+  "unitTitle": "一元一次不等式",
+  "gradeBand": "7下",
+  "domain": "代數",
+  "authoringBranch": "chatgpt/math-v2-human-authoring-r1",
+  "syllabusLockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+  "lockedSkillCount": 12,
+  "skills": [
+    {
+      "slot": "s001",
+      "skillId": "inequality-symbol",
+      "title": "不等號與數線",
+      "topicId": "u07-basics",
+      "topicTitle": "不等式概念與解法",
+      "order": 1,
+      "prerequisites": []
+    },
+    {
+      "slot": "s002",
+      "skillId": "inequality-solve-basic",
+      "title": "一元一次不等式解法",
+      "topicId": "u07-basics",
+      "topicTitle": "不等式概念與解法",
+      "order": 2,
+      "prerequisites": [
+        "inequality-symbol"
+      ]
+    },
+    {
+      "slot": "s003",
+      "skillId": "inequality-transposition",
+      "title": "不等式移項",
+      "topicId": "u07-basics",
+      "topicTitle": "不等式概念與解法",
+      "order": 3,
+      "prerequisites": [
+        "inequality-solve-basic"
+      ]
+    },
+    {
+      "slot": "s004",
+      "skillId": "inequality-number-line",
+      "title": "不等式解的數線表示",
+      "topicId": "u07-basics",
+      "topicTitle": "不等式概念與解法",
+      "order": 4,
+      "prerequisites": [
+        "inequality-transposition"
+      ]
+    },
+    {
+      "slot": "s005",
+      "skillId": "inequality-sign-flip",
+      "title": "乘除負數變號",
+      "topicId": "u07-basics",
+      "topicTitle": "不等式概念與解法",
+      "order": 5,
+      "prerequisites": [
+        "inequality-number-line"
+      ]
+    },
+    {
+      "slot": "s006",
+      "skillId": "inequality-integer-solutions",
+      "title": "不等式整數解",
+      "topicId": "u07-solution-sets",
+      "topicTitle": "解集與範圍",
+      "order": 6,
+      "prerequisites": [
+        "inequality-sign-flip"
+      ]
+    },
+    {
+      "slot": "s007",
+      "skillId": "inequality-and-word",
+      "title": "不等式與且的語意",
+      "topicId": "u07-solution-sets",
+      "topicTitle": "解集與範圍",
+      "order": 7,
+      "prerequisites": [
+        "inequality-integer-solutions"
+      ]
+    },
+    {
+      "slot": "s008",
+      "skillId": "inequality-range",
+      "title": "解的範圍敘述",
+      "topicId": "u07-solution-sets",
+      "topicTitle": "解集與範圍",
+      "order": 8,
+      "prerequisites": [
+        "inequality-and-word"
+      ]
+    },
+    {
+      "slot": "s009",
+      "skillId": "inequality-word-problem",
+      "title": "不等式應用題",
+      "topicId": "u07-applications",
+      "topicTitle": "不等式應用",
+      "order": 9,
+      "prerequisites": [
+        "inequality-range"
+      ]
+    },
+    {
+      "slot": "s010",
+      "skillId": "inequality-reasonableness",
+      "title": "不等式合理性",
+      "topicId": "u07-applications",
+      "topicTitle": "不等式應用",
+      "order": 10,
+      "prerequisites": [
+        "inequality-word-problem"
+      ]
+    },
+    {
+      "slot": "s011",
+      "skillId": "inequality-budget",
+      "title": "預算不等式應用",
+      "topicId": "u07-applications",
+      "topicTitle": "不等式應用",
+      "order": 11,
+      "prerequisites": [
+        "inequality-reasonableness"
+      ]
+    },
+    {
+      "slot": "s012",
+      "skillId": "inequality-literacy",
+      "title": "不等式素養題",
+      "topicId": "u07-literacy",
+      "topicTitle": "不等式素養",
+      "order": 12,
+      "prerequisites": [
+        "inequality-budget"
+      ]
+    }
+  ],
+  "counts": {
+    "lectures": 12,
+    "mcQuestions": 144,
+    "constructedResponses": 24,
+    "semanticReviews": 144,
+    "figures": 3
+  },
+  "difficultyCounts": {
+    "basic": 36,
+    "standard": 36,
+    "advanced": 36,
+    "literacy": 36
+  },
+  "answerIndexCounts": {
+    "0": 36,
+    "1": 36,
+    "2": 36,
+    "3": 36
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "humanAuthored": true,
+  "individuallyReviewed": true,
+  "productionActivationAllowed": false,
+  "expectedIntegrationPath": "數學會考作戰室/tools/v2-human-content/batches/008-u07-complete/",
+  "parallelPackage": true,
+  "centralCoordinatorApprovalRequired": true
+}

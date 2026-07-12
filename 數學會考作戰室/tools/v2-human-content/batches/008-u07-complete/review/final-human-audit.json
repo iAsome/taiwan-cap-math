@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "final-human-audit-r1",
+  "unitId": "u07",
+  "reviewedAt": "2026-07-12",
+  "reviewer": "ChatGPT human-authoring authority",
+  "decision": "pass-for-central-acceptance",
+  "recordsManuallyInspected": {
+    "lectures": 12,
+    "mcQuestions": 144,
+    "constructedResponses": 24,
+    "figuresRenderedOrSourceInspected": 3
+  },
+  "actualIssuesFoundAndRepaired": [
+    {
+      "recordId": "u07-fig-symbol-number-line",
+      "issueFound": "首次實際渲染發現上方基準線箭頭與向右解集射線箭頭靠得過近，視覺上像重複箭頭。",
+      "repairApplied": "移除兩條灰黑基準線自身的末端箭頭，只保留粗解集射線的方向箭頭，並重新渲染檢查。",
+      "verification": "manual rendered-image inspection after repair"
+    },
+    {
+      "recordId": "u07-s004-v007",
+      "issueFound": "原草稿的 a=2 與 a=2.5 均符合，造成兩個正確選項。",
+      "repairApplied": "將候選 2 改為 1.9，並重寫四選項分析，使唯一可行參數為 2.5。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s006-v007",
+      "issueFound": "獨立重算得到 90，但原四個選項沒有 90。",
+      "repairApplied": "更換為 81、84、90、96，補上各錯誤來源並指定唯一正確選項 90。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s008-v009",
+      "issueFound": "原題問能保證最大整數為 12，卻有 x≤12.9、x<13、x≤12 三個正確選項。",
+      "repairApplied": "改為反向詢問「不能保證」，並重寫解析，使 x<12 成為唯一答案。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s011-v005",
+      "issueFound": "原草稿重複列出兩個「8 包」選項，破壞選項唯一性。",
+      "repairApplied": "改為 7、8、9、10 包並逐項驗算，唯一答案為 8 包。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s001-v006",
+      "issueFound": "草稿答案索引 2 與獨立重算所得選項索引 1 不一致。",
+      "repairApplied": "以獨立解答「2 個」定位正確選項，更新答案索引與四選項真偽。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s001-v009",
+      "issueFound": "草稿答案索引 2 與獨立重算所得選項索引 1 不一致。",
+      "repairApplied": "以獨立解答「x>−2 與 −2<x」定位正確選項，更新答案索引與四選項真偽。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s001-v010",
+      "issueFound": "草稿答案索引 3 與獨立重算所得選項索引 2 不一致。",
+      "repairApplied": "以獨立解答「−6°C」定位正確選項，更新答案索引與四選項真偽。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s002-v011",
+      "issueFound": "草稿答案索引 1 與獨立重算所得選項索引 0 不一致。",
+      "repairApplied": "以獨立解答「8 分鐘」定位正確選項，更新答案索引與四選項真偽。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s002-v012",
+      "issueFound": "草稿答案索引 0 與獨立重算所得選項索引 2 不一致。",
+      "repairApplied": "以獨立解答「5 圈」定位正確選項，更新答案索引與四選項真偽。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s003-v012",
+      "issueFound": "草稿答案索引 3 與獨立重算所得選項索引 2 不一致。",
+      "repairApplied": "以獨立解答「5 分鐘」定位正確選項，更新答案索引與四選項真偽。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s004-v004",
+      "issueFound": "草稿答案索引 2 與獨立重算所得選項索引 3 不一致。",
+      "repairApplied": "以獨立解答「3 實心向左」定位正確選項，更新答案索引與四選項真偽。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s005-v010",
+      "issueFound": "草稿答案索引 3 與獨立重算所得選項索引 2 不一致。",
+      "repairApplied": "以獨立解答「5 小時」定位正確選項，更新答案索引與四選項真偽。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s005-v012",
+      "issueFound": "草稿答案索引 2 與獨立重算所得選項索引 1 不一致。",
+      "repairApplied": "以獨立解答「5 日」定位正確選項，更新答案索引與四選項真偽。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s012-v012",
+      "issueFound": "草稿答案索引 2 與獨立重算所得選項索引 1 不一致。",
+      "repairApplied": "以獨立解答「4 小時」定位正確選項，更新答案索引與四選項真偽。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s002-v005",
+      "issueFound": "單元結構指紋首次掃描發現此題與負係數題只在數字及符號上過近。",
+      "repairApplied": "將題幹改成指定「兩邊先同加 9」的等價運算任務，保留基本解法焦點並與負數變號題區隔。",
+      "verification": "independently recomputed after repair"
+    },
+    {
+      "recordId": "u07-s003-v004",
+      "issueFound": "較嚴格的去標點結構掃描發現此題與另一題主要只差係數與負號。",
+      "repairApplied": "將題幹改為明確要求先展開括號，聚焦分配律與移項的雙技能，與負係數變號題區隔。",
+      "verification": "independently recomputed after repair"
+    }
+  ],
+  "issueCount": 17,
+  "additionalChecks": {
+    "negativeSignsParenthesesFractions": "pass",
+    "strictAndInclusiveEndpoints": "pass",
+    "negativeMultiplyDivideSignFlip": "pass",
+    "integerOffByOne": "pass",
+    "unitsAndRounding": "pass",
+    "alternativeInterpretations": "pass",
+    "advancedDifficulty": "pass",
+    "literacyNecessity": "pass",
+    "numberSwapVariants": "pass-within-u07-after-one-repair",
+    "futureKnowledgeLeak": "pass"
+  },
+  "honestyNote": "只記錄撰寫、獨立重算與首次結構指紋掃描時實際發現並修復的問題；未虛構額外修正。",
+  "productionActivationAllowed": false
+}

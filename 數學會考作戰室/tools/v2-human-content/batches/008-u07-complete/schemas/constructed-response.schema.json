@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "title": "U07 constructed response",
+  "type": "object",
+  "required": [
+    "questionId",
+    "prompt",
+    "requiredWork",
+    "fullCreditSolution",
+    "rubric",
+    "followThroughPolicy",
+    "independentReview",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "unitId": {
+      "const": "u07"
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

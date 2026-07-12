@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "title": "U07 MC semantic review",
+  "type": "object",
+  "required": [
+    "reviewId",
+    "questionId",
+    "contentSha256",
+    "independentSolution",
+    "answerMatch",
+    "uniqueCorrectAnswer",
+    "reviewerDecision",
+    "reviewerNote"
+  ],
+  "properties": {
+    "unitId": {
+      "const": "u07"
+    }
+  }
+}
