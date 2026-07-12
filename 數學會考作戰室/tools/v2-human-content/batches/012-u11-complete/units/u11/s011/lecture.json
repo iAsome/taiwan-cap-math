@@ -1,0 +1,258 @@
+{
+  "lectureId": "u11-s011-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-pythagorean",
+  "skillId": "coordinate-distance-pythagorean",
+  "lockedSkillOrder": 11,
+  "lockedTitle": "坐標平面距離",
+  "title": "坐標平面距離：由水平差與垂直差求斜邊",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能求兩點水平差與垂直差",
+    "能由畢氏定理推得距離公式",
+    "能處理負坐標、同水平線與比例尺"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "pythagorean-application",
+      "requiredLevel": "能使用前一技能「畢氏定理應用」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "水平差",
+      "definition": "兩點x坐標之差的絕對值。"
+    },
+    {
+      "term": "垂直差",
+      "definition": "兩點y坐標之差的絕對值。"
+    },
+    {
+      "term": "兩點距離",
+      "definition": "連接兩點的線段長。"
+    },
+    {
+      "term": "坐標單位",
+      "definition": "坐標每一格代表的實際長度。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "Δx=x₂-x₁",
+      "meaning": "水平有向差。"
+    },
+    {
+      "symbol": "Δy=y₂-y₁",
+      "meaning": "垂直有向差。"
+    },
+    {
+      "symbol": "d=√((Δx)²+(Δy)²)",
+      "meaning": "兩點直線距離。"
+    }
+  ],
+  "conceptNarrative": [
+    "兩點與水平、垂直投影形成直角三角形。",
+    "座標差可為負，但平方後不影響距離；也可先取絕對值。",
+    "同x或同y是特殊情況，可直接用單一坐標差。",
+    "若每格代表實際長度，先求座標單位距離，再乘比例。",
+    "反求未知坐標時可能有兩個方向的解。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "距離公式",
+      "statement": "平面兩點P(x₁,y₁)、Q(x₂,y₂)距離為√((x₂-x₁)²+(y₂-y₁)²)。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "d²=(x₂-x₁)²+(y₂-y₁)²",
+      "conditions": [
+        "歐氏平面直角坐標。"
+      ],
+      "meaning": "水平差與垂直差為兩股。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能直接把四個坐標相加。",
+    "負坐標相減要加括號。",
+    "折線格數不是直線距離。",
+    "比例尺不能在計算後忘記。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫出兩點坐標並固定次序。",
+      "check": "x對x、y對y。"
+    },
+    {
+      "step": 2,
+      "instruction": "計算Δx與Δy。",
+      "check": "減負數要用括號。"
+    },
+    {
+      "step": 3,
+      "instruction": "平方兩差並相加。",
+      "check": "符號平方後消失。"
+    },
+    {
+      "step": 4,
+      "instruction": "開正平方根。",
+      "check": "距離非負。"
+    },
+    {
+      "step": 5,
+      "instruction": "套用坐標尺度。",
+      "check": "轉成實際單位與精度。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "P(2,3)、Q(8,11)。",
+      "solutionSteps": [
+        "Δx=6，Δy=8。"
+      ],
+      "answer": "距離10。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "P(-4,1)、Q(2,1)。",
+      "solutionSteps": [
+        "同水平線。",
+        "|2-(-4)|。"
+      ],
+      "answer": "6。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "P(0,0)、Q(a,4)距離5且a>0。",
+      "solutionSteps": [
+        "a²+16=25。"
+      ],
+      "answer": "a=3。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "每格5公尺，圖上差5格與12格。",
+      "solutionSteps": [
+        "圖上距離13格。",
+        "乘5。"
+      ],
+      "answer": "65公尺。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "(-2)到4的差是2。",
+      "why": "減負數錯誤。",
+      "correction": "4-(-2)=6。"
+    },
+    {
+      "mistake": "距離=|Δx|+|Δy|。",
+      "why": "這是沿格線折線距離。",
+      "correction": "直線距離用平方和。"
+    },
+    {
+      "mistake": "算到d²=100答100。",
+      "why": "漏開平方。",
+      "correction": "d=10。"
+    },
+    {
+      "mistake": "反求坐標只留正解。",
+      "why": "坐標可能在兩側。",
+      "correction": "依條件保留±。"
+    },
+    {
+      "mistake": "同一坐標也平方全部數值。",
+      "why": "把位置當差。",
+      "correction": "先計算坐標差。"
+    },
+    {
+      "mistake": "忘記每格代表10公尺。",
+      "why": "只答圖上單位。",
+      "correction": "最後乘比例尺。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "坐標距離是水平差與垂直差形成的斜邊。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "寫出兩點坐標並固定次序。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "(-2)到4的差是2。；修正：4-(-2)=6。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "比例與單位換算完成嗎？"
+    }
+  ],
+  "summary": [
+    "坐標距離是水平差與垂直差形成的斜邊。",
+    "先求座標單位，再換實際尺度。"
+  ],
+  "connections": {
+    "previous": "需要 s010 的直角模型與整數坐標運算。",
+    "next": [
+      "s012 將由距離與一個差反求另一個差。",
+      "s016 會整合地圖比例與近似。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u11-s011-coordinate"
+  ],
+  "accessibilityNotes": [
+    "坐標平面上A在原點、B在(3,4)，虛線畫出水平差3與垂直差4，實線連接AB。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s011-v001",
+      "u11-s011-v002",
+      "u11-s011-v003",
+      "u11-s011-v004",
+      "u11-s011-v005",
+      "u11-s011-v006",
+      "u11-s011-v007",
+      "u11-s011-v008",
+      "u11-s011-v009",
+      "u11-s011-v010",
+      "u11-s011-v011",
+      "u11-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s011-cr001",
+      "u11-s011-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「坐標平面距離」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「(-2)到4的差是2。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "c50d22c5acfd90efa2fe8e51d8a2ab63c5123fcd6320e87b4c3756191775612f"
+}

@@ -1,0 +1,268 @@
+{
+  "lectureId": "u11-s005-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-square-root",
+  "skillId": "sqrt-notation",
+  "lockedSkillOrder": 5,
+  "lockedTitle": "平方根記號",
+  "title": "平方根記號：分清主平方根與正負兩解",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能分辨√a、±√a與x²=a",
+    "能正確使用(√a)²=a與√(a²)=|a|",
+    "能檢查被開方數在實數範圍是否非負"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "square-root-estimate",
+      "requiredLevel": "能使用前一技能「平方根估算」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "根號符號",
+      "definition": "√a 表示a的非負平方根。"
+    },
+    {
+      "term": "正負號±",
+      "definition": "同時表示正與負兩種可能。"
+    },
+    {
+      "term": "主平方根",
+      "definition": "非負平方根，根號符號的值。"
+    },
+    {
+      "term": "定義域",
+      "definition": "讓根式在實數範圍有意義的輸入範圍。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "√a",
+      "meaning": "a≥0時的非負平方根。"
+    },
+    {
+      "symbol": "±√a",
+      "meaning": "√a與-√a兩個數。"
+    },
+    {
+      "symbol": "(√a)²=a",
+      "meaning": "a≥0。"
+    },
+    {
+      "symbol": "√(a²)=|a|",
+      "meaning": "a為任意實數。"
+    }
+  ],
+  "conceptNarrative": [
+    "根號本身是一個單值記號，所以√25=5，不寫±5。",
+    "解平方方程時，因正負兩數平方相同，需寫x=±√a。",
+    "平方後再開主平方根會消除符號，結果是絕對值。",
+    "被開方數為負時，在本單元的實數範圍沒有定義。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "主平方根",
+      "statement": "√a 是唯一非負且平方為a的實數。"
+    },
+    {
+      "name": "平方方程解",
+      "statement": "a>0時x²=a有兩解±√a。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(√a)²=a",
+      "conditions": [
+        "a≥0。"
+      ],
+      "meaning": "先開主平方根再平方回a。"
+    },
+    {
+      "formula": "√(a²)=|a|",
+      "conditions": [
+        "a∈R。"
+      ],
+      "meaning": "先平方再取非負根。"
+    }
+  ],
+  "nonApplicableCases": [
+    "√a 不代表兩個值。",
+    "± 必須寫在根號外且作用於整個根式。",
+    "√(a²)=a 只有在a≥0時成立。",
+    "實數根式不能接受負被開方數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認題目是求根式值還是解方程。",
+      "check": "根式值單一，平方方程可能雙解。"
+    },
+    {
+      "step": 2,
+      "instruction": "檢查被開方數非負。",
+      "check": "負值時說明實數範圍無意義。"
+    },
+    {
+      "step": 3,
+      "instruction": "依符號執行運算。",
+      "check": "看清±、括號與平方位置。"
+    },
+    {
+      "step": 4,
+      "instruction": "使用絕對值處理√(a²)。",
+      "check": "再依a的正負化簡。"
+    },
+    {
+      "step": 5,
+      "instruction": "回代驗算。",
+      "check": "根式值應非負。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "計算√100。",
+      "solutionSteps": [
+        "主平方根非負。"
+      ],
+      "answer": "10。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解x²=100。",
+      "solutionSteps": [
+        "正負10平方皆為100。"
+      ],
+      "answer": "x=±10。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "若t=-8，求√(t²)。",
+      "solutionSteps": [
+        "t²=64。",
+        "主平方根為8。"
+      ],
+      "answer": "8。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "判斷√(x-3)有實數意義的條件。",
+      "solutionSteps": [
+        "被開方數需≥0。",
+        "x-3≥0。"
+      ],
+      "answer": "x≥3。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "√16=±4。",
+      "why": "根號是主平方根單值。",
+      "correction": "√16=4。"
+    },
+    {
+      "mistake": "解x²=16只寫x=4。",
+      "why": "方程需列出兩根。",
+      "correction": "x=±4。"
+    },
+    {
+      "mistake": "√((-6)²)=-6。",
+      "why": "主平方根不能為負。",
+      "correction": "結果為6。"
+    },
+    {
+      "mistake": "√(-9)=-3。",
+      "why": "平方驗算不成立。",
+      "correction": "實數範圍無意義。"
+    },
+    {
+      "mistake": "±√9=±9。",
+      "why": "先算√9=3。",
+      "correction": "結果為±3。"
+    },
+    {
+      "mistake": "把根號線只看成作用於第一個數。",
+      "why": "根號範圍辨識錯誤。",
+      "correction": "確認被開方式完整括號。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "√a 是非負單值；±√a 是兩個數。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "辨認題目是求根式值還是解方程。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "√16=±4。；修正：√16=4。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "√(a²)是否需要絕對值？"
+    }
+  ],
+  "summary": [
+    "√a 是非負單值；±√a 是兩個數。",
+    "(√a)²與√(a²)的條件不同。"
+  ],
+  "connections": {
+    "previous": "承接 s001 的平方根意義與 s004 的非負近似。",
+    "next": [
+      "s006 會快速計算完全平方數的主平方根。",
+      "s007 會在分母中操作根號記號。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s005-v001",
+      "u11-s005-v002",
+      "u11-s005-v003",
+      "u11-s005-v004",
+      "u11-s005-v005",
+      "u11-s005-v006",
+      "u11-s005-v007",
+      "u11-s005-v008",
+      "u11-s005-v009",
+      "u11-s005-v010",
+      "u11-s005-v011",
+      "u11-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s005-cr001",
+      "u11-s005-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「平方根記號」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「√16=±4。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "d6dd460b0a6da365869d543e4b850b22991307904d7886b2b94d329d49ab131b"
+}

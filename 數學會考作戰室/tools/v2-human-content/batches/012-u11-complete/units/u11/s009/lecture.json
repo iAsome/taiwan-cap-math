@@ -1,0 +1,256 @@
+{
+  "lectureId": "u11-s009-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-pythagorean",
+  "skillId": "pythagorean-theorem",
+  "lockedSkillOrder": 9,
+  "lockedTitle": "畢氏定理",
+  "title": "畢氏定理：從直角辨認兩股與斜邊",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認直角、兩股與斜邊",
+    "能由兩股平方和求斜邊",
+    "能處理根式邊長並說明長度取正"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "sqrt-comparison",
+      "requiredLevel": "能使用前一技能「平方根大小比較」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "直角三角形",
+      "definition": "含一個90°角的三角形。"
+    },
+    {
+      "term": "股",
+      "definition": "夾出直角的兩條邊。"
+    },
+    {
+      "term": "斜邊",
+      "definition": "直角的對邊，也是三邊中最長。"
+    },
+    {
+      "term": "畢氏定理",
+      "definition": "兩股平方和等於斜邊平方。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a²+b²=c²",
+      "meaning": "a,b為兩股，c為斜邊。"
+    },
+    {
+      "symbol": "c=√(a²+b²)",
+      "meaning": "由兩股求斜邊，取正根。"
+    }
+  ],
+  "conceptNarrative": [
+    "定理只適用於直角三角形，套公式前先找直角。",
+    "斜邊永遠在直角對面，不能由圖形朝向判定。",
+    "公式處理的是邊長平方，不是邊長直接相加。",
+    "求得c²後仍要開平方；因c是長度，只取正值。",
+    "3-4-5、5-12-13等數組可加速，但不能取代公式驗證。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "畢氏定理",
+      "statement": "直角三角形中，兩股平方和等於斜邊平方。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a²+b²=c²",
+      "conditions": [
+        "三角形必須為直角，c必須是斜邊。"
+      ],
+      "meaning": "由面積關係得到的邊長平方等式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "一般三角形不能直接套用。",
+    "不能把c寫成a+b。",
+    "圖未按比例時不能目測哪邊長。",
+    "平方根結果的負值不適合邊長。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認存在直角。",
+      "check": "題目文字、直角符號或矩形性質。"
+    },
+    {
+      "step": 2,
+      "instruction": "標出兩股與斜邊。",
+      "check": "斜邊是直角對邊。"
+    },
+    {
+      "step": 3,
+      "instruction": "代入a²+b²=c²。",
+      "check": "不要混淆邊角色。"
+    },
+    {
+      "step": 4,
+      "instruction": "完成平方和並開平方。",
+      "check": "根式化到最簡。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查斜邊是否最長。",
+      "check": "單位與量級合理。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩股7與24，求斜邊。",
+      "solutionSteps": [
+        "c²=49+576=625。",
+        "c取正根。"
+      ],
+      "answer": "25。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩股√6與√10。",
+      "solutionSteps": [
+        "c²=6+10=16。"
+      ],
+      "answer": "4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "等腰直角三角形股長8。",
+      "solutionSteps": [
+        "c²=64+64=128。",
+        "√128=8√2。"
+      ],
+      "answer": "8√2。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩股平方分別20與29。",
+      "solutionSteps": [
+        "斜邊平方49。"
+      ],
+      "answer": "7。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把直角兩邊相加求斜邊。",
+      "why": "忽略平方關係。",
+      "correction": "使用√(a²+b²)。"
+    },
+    {
+      "mistake": "把短邊當斜邊。",
+      "why": "沒找直角對邊。",
+      "correction": "先標直角，再找其對邊。"
+    },
+    {
+      "mistake": "算到c²=169就答169。",
+      "why": "漏開平方。",
+      "correction": "c=13。"
+    },
+    {
+      "mistake": "答c=±13。",
+      "why": "長度不取負。",
+      "correction": "只保留13。"
+    },
+    {
+      "mistake": "根式結果未化簡。",
+      "why": "答案形式未完成。",
+      "correction": "提出平方因數。"
+    },
+    {
+      "mistake": "一般三角形也套公式。",
+      "why": "缺少直角前提。",
+      "correction": "確認90°條件。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "直角三角形：兩股平方和=斜邊平方。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "確認存在直角。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "把直角兩邊相加求斜邊。；修正：使用√(a²+b²)。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "根式與單位完成了嗎？"
+    }
+  ],
+  "summary": [
+    "直角三角形：兩股平方和=斜邊平方。",
+    "斜邊最長，邊長取正。"
+  ],
+  "connections": {
+    "previous": "需要 s008 的根式比較與 s003 的根式運算。",
+    "next": [
+      "s010 將把實物情境轉成直角三角形。",
+      "s015 會研究定理的逆命題。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u11-s009-right-triangle",
+    "fig-u11-s009-square-diagonal"
+  ],
+  "accessibilityNotes": [
+    "直角三角形左下角標示直角，兩股標a和b，斜邊標c，上方寫a平方加b平方等於c平方。",
+    "邊長10公分的正方形，畫出一條對角線d，角落有直角符號。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s009-v001",
+      "u11-s009-v002",
+      "u11-s009-v003",
+      "u11-s009-v004",
+      "u11-s009-v005",
+      "u11-s009-v006",
+      "u11-s009-v007",
+      "u11-s009-v008",
+      "u11-s009-v009",
+      "u11-s009-v010",
+      "u11-s009-v011",
+      "u11-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s009-cr001",
+      "u11-s009-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「畢氏定理」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「把直角兩邊相加求斜邊。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "19bbe1d42e23ff09f675c122fda044c2527ed59de7320a83dbcb50da28b386f9"
+}

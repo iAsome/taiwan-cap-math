@@ -1,0 +1,254 @@
+{
+  "lectureId": "u11-s010-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-pythagorean",
+  "skillId": "pythagorean-application",
+  "lockedSkillOrder": 10,
+  "lockedTitle": "畢氏定理應用",
+  "title": "畢氏定理應用：把實物轉成直角模型",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從矩形、梯子、斜坡中建立直角三角形",
+    "能判斷所求量是斜邊或股",
+    "能處理兩階段與近似應用"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "pythagorean-theorem",
+      "requiredLevel": "能使用前一技能「畢氏定理」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "對角線",
+      "definition": "連接多邊形不相鄰頂點的線段。"
+    },
+    {
+      "term": "水平投影",
+      "definition": "斜線在水平方向的長度。"
+    },
+    {
+      "term": "垂直高度",
+      "definition": "與水平面垂直的距離。"
+    },
+    {
+      "term": "空間對角線",
+      "definition": "跨越長方體相對頂點的線段。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "矩形對角線d=√(長²+寬²)",
+      "meaning": "矩形角為直角。"
+    },
+    {
+      "symbol": "未知股=√(斜邊²-已知股²)",
+      "meaning": "斜邊必須最大。"
+    }
+  ],
+  "conceptNarrative": [
+    "應用題的主要難點不是計算，而是找到互相垂直的兩個方向。",
+    "矩形對角線、繃直纜線、梯子與斜坡通常是斜邊。",
+    "題目問高度或水平距離時，常是已知斜邊求股。",
+    "組合圖形可能先求一段對角線，再建立第二個直角三角形。",
+    "「至少」通常表示理想直線距離，但仍要讀是否有鬆弛或安全餘量。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "直角模型",
+      "statement": "把實際物件抽象成由兩股與斜邊組成的三角形。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "d²=x²+y²",
+      "conditions": [
+        "x,y互相垂直。"
+      ],
+      "meaning": "求跨越兩方向的直線距離。"
+    }
+  ],
+  "nonApplicableCases": [
+    "牆若未說垂直地面，不能自動套用。",
+    "纜線有下垂時，其實際長度不等於直線距離。",
+    "長方形周長或面積不能代替對角線。",
+    "近似題要依指定精度作答。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "畫簡圖或在文字中標水平、垂直。",
+      "check": "確認90°。"
+    },
+    {
+      "step": 2,
+      "instruction": "指出斜邊。",
+      "check": "通常是跨兩方向的直線。"
+    },
+    {
+      "step": 3,
+      "instruction": "決定用平方和或平方差。",
+      "check": "求斜邊用加，求股用減。"
+    },
+    {
+      "step": 4,
+      "instruction": "計算並化簡或估算。",
+      "check": "注意小數與根式。"
+    },
+    {
+      "step": 5,
+      "instruction": "回到情境檢查限制。",
+      "check": "至少、最多、單位與可行性。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "矩形7×24的對角線。",
+      "solutionSteps": [
+        "√(49+576)。"
+      ],
+      "answer": "25。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "梯長17、離牆8，求高。",
+      "solutionSteps": [
+        "√(289-64)。"
+      ],
+      "answer": "15。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "正方形邊長a。",
+      "solutionSteps": [
+        "兩股均a。",
+        "d²=2a²。"
+      ],
+      "answer": "a√2。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "長方體底面6×8、高24的空間對角線。",
+      "solutionSteps": [
+        "底面對角10。",
+        "再求√(10²+24²)。"
+      ],
+      "answer": "26。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "對角線=長+寬。",
+      "why": "把折線路徑當直線。",
+      "correction": "用平方和開根。"
+    },
+    {
+      "mistake": "梯子求高度用10²+6²。",
+      "why": "梯子本身是斜邊。",
+      "correction": "用斜邊平方減水平平方。"
+    },
+    {
+      "mistake": "忽略牆地垂直條件。",
+      "why": "模型前提未確認。",
+      "correction": "找明示或幾何性質。"
+    },
+    {
+      "mistake": "空間題一次亂加三邊。",
+      "why": "未建立兩階段直角三角形。",
+      "correction": "先求底面對角。"
+    },
+    {
+      "mistake": "近似值沒有按位數。",
+      "why": "格式不符。",
+      "correction": "最後再四捨五入。"
+    },
+    {
+      "mistake": "把最短直線與實際鬆弛纜線混同。",
+      "why": "物理限制不同。",
+      "correction": "依題目理想化條件作答。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "先建模，再決定平方和或平方差。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "畫簡圖或在文字中標水平、垂直。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "對角線=長+寬。；修正：用平方和開根。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "近似與單位符合要求嗎？"
+    }
+  ],
+  "summary": [
+    "先建模，再決定平方和或平方差。",
+    "實際限制決定理想畢氏結果如何解讀。"
+  ],
+  "connections": {
+    "previous": "需要 s009 的畢氏定理。",
+    "next": [
+      "s011 會把水平與垂直差改為坐標差。",
+      "s013 將在沒有圖時完成文字建模。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u11-s010-ladder"
+  ],
+  "accessibilityNotes": [
+    "垂直牆面與水平地面形成直角，一把10公尺梯子斜靠牆，梯腳離牆6公尺，高度標h。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s010-v001",
+      "u11-s010-v002",
+      "u11-s010-v003",
+      "u11-s010-v004",
+      "u11-s010-v005",
+      "u11-s010-v006",
+      "u11-s010-v007",
+      "u11-s010-v008",
+      "u11-s010-v009",
+      "u11-s010-v010",
+      "u11-s010-v011",
+      "u11-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s010-cr001",
+      "u11-s010-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「畢氏定理應用」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「對角線=長+寬。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "bc942a451765366ca4d6518459fd66492f6bdac9bf37a5716e479d469a2e0716"
+}

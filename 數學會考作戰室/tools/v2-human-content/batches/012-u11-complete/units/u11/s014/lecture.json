@@ -1,0 +1,255 @@
+{
+  "lectureId": "u11-s014-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-pythagorean",
+  "skillId": "right-triangle-identify",
+  "lockedSkillOrder": 14,
+  "lockedTitle": "直角三角形判定",
+  "title": "直角三角形判定：排序後檢查平方關係",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能先確認三邊可構成三角形",
+    "能以最長邊平方判定直角",
+    "能處理根式、小數與未知邊判定"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "pythagorean-word",
+      "requiredLevel": "能使用前一技能「畢氏定理文字應用」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "直角三角形判定",
+      "definition": "由三邊資料確認是否含直角。"
+    },
+    {
+      "term": "最長邊",
+      "definition": "直角成立時會成為斜邊。"
+    },
+    {
+      "term": "三角形不等式",
+      "definition": "任兩邊和大於第三邊。"
+    },
+    {
+      "term": "平方檢查",
+      "definition": "兩短邊平方和與最長邊平方比較。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a²+b²=c²",
+      "meaning": "a≤b≤c且三邊可成三角形時，成立則為直角。"
+    }
+  ],
+  "conceptNarrative": [
+    "判定程序先排序，避免把短邊平方放在等式右側。",
+    "三角形不等式只證明能形成三角形，不能單獨證明直角。",
+    "若平方等式成立，最長邊所對角為直角。",
+    "根式邊可直接平方，常比先估小數更準確。",
+    "量測題若未給誤差容許，必須按題目數值精確判定。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "判定準則",
+      "statement": "三邊a≤b≤c若a²+b²=c²，則為直角三角形。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a+b>c",
+      "conditions": [
+        "先確認可成三角形。"
+      ],
+      "meaning": "排序後只需檢查兩短邊和大於最長邊。"
+    },
+    {
+      "formula": "a²+b²=c²",
+      "conditions": [
+        "判定直角。"
+      ],
+      "meaning": "等式需精確成立。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能因為三邊是整數就判直角。",
+    "接近畢氏數組不等於成立。",
+    "a+b>c不是直角判定。",
+    "圖看起來垂直不是證明。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "將三邊由小到大排序。",
+      "check": "記最長邊c。"
+    },
+    {
+      "step": 2,
+      "instruction": "檢查能否成三角形。",
+      "check": "a+b>c。"
+    },
+    {
+      "step": 3,
+      "instruction": "計算a²+b²與c²。",
+      "check": "保留精確值。"
+    },
+    {
+      "step": 4,
+      "instruction": "判斷是否相等。",
+      "check": "相等才是直角。"
+    },
+    {
+      "step": 5,
+      "instruction": "指出直角在c的對面。",
+      "check": "完成幾何結論。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判定9,12,15。",
+      "solutionSteps": [
+        "81+144=225。"
+      ],
+      "answer": "是直角三角形。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "判定4,6,7。",
+      "solutionSteps": [
+        "16+36=52≠49。"
+      ],
+      "answer": "不是。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "判定√8,√17,5。",
+      "solutionSteps": [
+        "8+17=25。"
+      ],
+      "answer": "是。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "三邊x,20,29且29為斜邊。",
+      "solutionSteps": [
+        "x²=841-400=441。"
+      ],
+      "answer": "x=21。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "6+8>10所以是直角。",
+      "why": "只驗證三角形不等式。",
+      "correction": "再檢查平方。"
+    },
+    {
+      "mistake": "用6²+10²=8²。",
+      "why": "未排序最長邊。",
+      "correction": "右側放10²。"
+    },
+    {
+      "mistake": "5,6,7看起來像直角。",
+      "why": "視覺或直覺不可靠。",
+      "correction": "精確比較平方。"
+    },
+    {
+      "mistake": "根式先四捨五入再判定。",
+      "why": "可能破壞等式。",
+      "correction": "直接平方精確根式。"
+    },
+    {
+      "mistake": "只算平方和但不說結論。",
+      "why": "論證未完成。",
+      "correction": "指出是否相等與角型。"
+    },
+    {
+      "mistake": "接近等式就判直角。",
+      "why": "題目未給容差。",
+      "correction": "必須精確相等。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "排序、成三角形、比較平方。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "將三邊由小到大排序。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "6+8>10所以是直角。；修正：再檢查平方。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "等式是精確相等嗎？"
+    }
+  ],
+  "summary": [
+    "排序、成三角形、比較平方。",
+    "相等時最長邊對角為直角。"
+  ],
+  "connections": {
+    "previous": "需要 s013 的直角模型與平方運算。",
+    "next": [
+      "s015 將把判定寫成完整逆命題。",
+      "s016 會在品管與規格情境使用。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u11-s014-triangle-check"
+  ],
+  "accessibilityNotes": [
+    "三角形三邊標30、40、50，最長邊為50，左下角畫直角，並標示平方關係。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s014-v001",
+      "u11-s014-v002",
+      "u11-s014-v003",
+      "u11-s014-v004",
+      "u11-s014-v005",
+      "u11-s014-v006",
+      "u11-s014-v007",
+      "u11-s014-v008",
+      "u11-s014-v009",
+      "u11-s014-v010",
+      "u11-s014-v011",
+      "u11-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s014-cr001",
+      "u11-s014-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「直角三角形判定」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「6+8>10所以是直角。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "08ddeca41450058f3d7e660cace03a74cb4cb26ce7f89e523ee9e5bfc85b70b2"
+}

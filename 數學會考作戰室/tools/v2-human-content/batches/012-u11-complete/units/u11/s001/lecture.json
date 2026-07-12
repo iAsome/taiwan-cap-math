@@ -1,0 +1,267 @@
+{
+  "lectureId": "u11-s001-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-square-root",
+  "skillId": "square-root-meaning",
+  "lockedSkillOrder": 1,
+  "lockedTitle": "平方根意義",
+  "title": "平方根意義：從平方反推可能值",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能用「平方後得到原數」說明平方根",
+    "能判斷正數、0、負數在實數範圍的平方根個數",
+    "能區分代數方程的兩根與幾何長度的正值"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "u01-u10-foundation",
+      "requiredLevel": "能進行整數、分數、小數的四則與平方，並理解正負數和基本代數記號。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "平方根",
+      "definition": "若 x²=a，則 x 是 a 的平方根。"
+    },
+    {
+      "term": "正平方根",
+      "definition": "正數 a 的兩個平方根中較大的那一個。"
+    },
+    {
+      "term": "負平方根",
+      "definition": "正數 a 的兩個平方根中較小的那一個。"
+    },
+    {
+      "term": "實數範圍",
+      "definition": "本單元不引入複數；負數沒有實數平方根。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x²=a",
+      "meaning": "x 平方後等於 a。"
+    },
+    {
+      "symbol": "±r",
+      "meaning": "表示 r 與 -r 兩個數。"
+    },
+    {
+      "symbol": "√a",
+      "meaning": "只表示 a 的非負平方根，詳細記號在 s005。"
+    }
+  ],
+  "conceptNarrative": [
+    "平方根是平方運算的反向問題：問「哪個數乘自己會得到 a」。",
+    "正數的平方根成對出現，因 r²=(-r)²。",
+    "0 的平方根只有 0，因正負 0 是同一個數。",
+    "任何實數平方皆非負，所以負數在本課範圍沒有平方根。",
+    "實際長度、面積邊長或速率等量通常只接受非負候選值。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "平方根定義",
+      "statement": "x²=a 時，x 稱為 a 的平方根。"
+    },
+    {
+      "name": "平方根個數",
+      "statement": "a>0 有兩個；a=0 有一個；a<0 在實數範圍沒有。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x²=a",
+      "conditions": [
+        "先找平方後等於 a 的實數；a>0 時通常得到一正一負。"
+      ],
+      "meaning": "a 為實數且本單元只處理實數解。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能因為「平方根」有根號字樣就自動只寫正值；題目問「所有平方根」時要完整列出。",
+    "負數前有負號不代表其平方仍為負，例如(-4)²=16。",
+    "幾何邊長不能填負數，即使代數方程有負根。",
+    "沒有先確認實數範圍時，不應自行延伸到複數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把題意改寫成 x²=a。",
+      "check": "確認題目問所有平方根、主平方根，或實際量。"
+    },
+    {
+      "step": 2,
+      "instruction": "找出平方後等於 a 的候選值。",
+      "check": "正負候選都要驗算。"
+    },
+    {
+      "step": 3,
+      "instruction": "依 a 的正負判斷解的個數。",
+      "check": "a<0 時在實數範圍停止。"
+    },
+    {
+      "step": 4,
+      "instruction": "套用情境限制。",
+      "check": "長度、速率與數量通常取非負。"
+    },
+    {
+      "step": 5,
+      "instruction": "把候選值平方驗算。",
+      "check": "每個保留值都必須回到 a。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "求 64 的所有平方根。",
+      "solutionSteps": [
+        "8²=64。",
+        "(-8)²=64。",
+        "兩個值都符合定義。"
+      ],
+      "answer": "8 與 -8。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "求 0 的平方根。",
+      "solutionSteps": [
+        "設x²=0。",
+        "只有x=0。"
+      ],
+      "answer": "0。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "方程 z²=1.44 的實數解。",
+      "solutionSteps": [
+        "1.2²=1.44。",
+        "正負1.2平方相同。"
+      ],
+      "answer": "z=±1.2。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "正方形面積121平方公分，求邊長。",
+      "solutionSteps": [
+        "邊長s滿足s²=121。",
+        "代數候選±11。",
+        "長度取正值。"
+      ],
+      "answer": "11公分。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 36 的平方根寫成只有 6。",
+      "why": "混淆「所有平方根」與「√36」。",
+      "correction": "若問所有平方根，要寫6與-6。"
+    },
+    {
+      "mistake": "認為 -5 的平方是 -25。",
+      "why": "負號也在括號內相乘。",
+      "correction": "(-5)²=(-5)(-5)=25。"
+    },
+    {
+      "mistake": "說 0 有兩個平方根 ±0。",
+      "why": "+0與-0是同一個數。",
+      "correction": "平方根只有0一個。"
+    },
+    {
+      "mistake": "給正方形邊長 -7。",
+      "why": "忽略長度非負。",
+      "correction": "代數負根須由情境排除。"
+    },
+    {
+      "mistake": "說 √(-9)=-3。",
+      "why": "(-3)²=9不是-9。",
+      "correction": "實數範圍無解。"
+    },
+    {
+      "mistake": "把平方根當除以2。",
+      "why": "平方的逆運算不是對半。",
+      "correction": "用候選值平方驗算。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "平方根回答「平方後得到原數」的問題。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "把題意改寫成 x²=a。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "把 36 的平方根寫成只有 6。；修正：若問所有平方根，要寫6與-6。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "我有排除負數的實數平方根嗎？"
+    }
+  ],
+  "summary": [
+    "平方根回答「平方後得到原數」的問題。",
+    "正數兩根互為相反數，0只有一根，負數無實數根。",
+    "情境量可能只保留非負根。"
+  ],
+  "connections": {
+    "previous": "先備為整數、分數、小數平方與正負數運算。",
+    "next": [
+      "下一技能會把平方因數從根號內提出。",
+      "s005 將嚴格區分 √a 與 ±√a。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u11-s001-square-area"
+  ],
+  "accessibilityNotes": [
+    "一個正方形，中央標示面積196平方公分，下方以s大於0表示邊長。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s001-v001",
+      "u11-s001-v002",
+      "u11-s001-v003",
+      "u11-s001-v004",
+      "u11-s001-v005",
+      "u11-s001-v006",
+      "u11-s001-v007",
+      "u11-s001-v008",
+      "u11-s001-v009",
+      "u11-s001-v010",
+      "u11-s001-v011",
+      "u11-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s001-cr001",
+      "u11-s001-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「平方根意義」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「把 36 的平方根寫成只有 6。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "f144599a67fb03b057799e2db22e5f979eccb64ab7b4e0ddaa84ae80859b29cd"
+}

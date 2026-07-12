@@ -1,0 +1,4127 @@
+// Deterministically emitted from reviewed source. Do not edit.
+export default [
+  {
+    "lectureId": "u11-s001-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "square-root-meaning",
+    "lockedSkillOrder": 1,
+    "lockedTitle": "平方根意義",
+    "title": "平方根意義：從平方反推可能值",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能用「平方後得到原數」說明平方根",
+      "能判斷正數、0、負數在實數範圍的平方根個數",
+      "能區分代數方程的兩根與幾何長度的正值"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "u01-u10-foundation",
+        "requiredLevel": "能進行整數、分數、小數的四則與平方，並理解正負數和基本代數記號。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "平方根",
+        "definition": "若 x²=a，則 x 是 a 的平方根。"
+      },
+      {
+        "term": "正平方根",
+        "definition": "正數 a 的兩個平方根中較大的那一個。"
+      },
+      {
+        "term": "負平方根",
+        "definition": "正數 a 的兩個平方根中較小的那一個。"
+      },
+      {
+        "term": "實數範圍",
+        "definition": "本單元不引入複數；負數沒有實數平方根。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "x²=a",
+        "meaning": "x 平方後等於 a。"
+      },
+      {
+        "symbol": "±r",
+        "meaning": "表示 r 與 -r 兩個數。"
+      },
+      {
+        "symbol": "√a",
+        "meaning": "只表示 a 的非負平方根，詳細記號在 s005。"
+      }
+    ],
+    "conceptNarrative": [
+      "平方根是平方運算的反向問題：問「哪個數乘自己會得到 a」。",
+      "正數的平方根成對出現，因 r²=(-r)²。",
+      "0 的平方根只有 0，因正負 0 是同一個數。",
+      "任何實數平方皆非負，所以負數在本課範圍沒有平方根。",
+      "實際長度、面積邊長或速率等量通常只接受非負候選值。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "平方根定義",
+        "statement": "x²=a 時，x 稱為 a 的平方根。"
+      },
+      {
+        "name": "平方根個數",
+        "statement": "a>0 有兩個；a=0 有一個；a<0 在實數範圍沒有。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "x²=a",
+        "conditions": [
+          "先找平方後等於 a 的實數；a>0 時通常得到一正一負。"
+        ],
+        "meaning": "a 為實數且本單元只處理實數解。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能因為「平方根」有根號字樣就自動只寫正值；題目問「所有平方根」時要完整列出。",
+      "負數前有負號不代表其平方仍為負，例如(-4)²=16。",
+      "幾何邊長不能填負數，即使代數方程有負根。",
+      "沒有先確認實數範圍時，不應自行延伸到複數。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "把題意改寫成 x²=a。",
+        "check": "確認題目問所有平方根、主平方根，或實際量。"
+      },
+      {
+        "step": 2,
+        "instruction": "找出平方後等於 a 的候選值。",
+        "check": "正負候選都要驗算。"
+      },
+      {
+        "step": 3,
+        "instruction": "依 a 的正負判斷解的個數。",
+        "check": "a<0 時在實數範圍停止。"
+      },
+      {
+        "step": 4,
+        "instruction": "套用情境限制。",
+        "check": "長度、速率與數量通常取非負。"
+      },
+      {
+        "step": 5,
+        "instruction": "把候選值平方驗算。",
+        "check": "每個保留值都必須回到 a。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "求 64 的所有平方根。",
+        "solutionSteps": [
+          "8²=64。",
+          "(-8)²=64。",
+          "兩個值都符合定義。"
+        ],
+        "answer": "8 與 -8。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "求 0 的平方根。",
+        "solutionSteps": [
+          "設x²=0。",
+          "只有x=0。"
+        ],
+        "answer": "0。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "方程 z²=1.44 的實數解。",
+        "solutionSteps": [
+          "1.2²=1.44。",
+          "正負1.2平方相同。"
+        ],
+        "answer": "z=±1.2。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "正方形面積121平方公分，求邊長。",
+        "solutionSteps": [
+          "邊長s滿足s²=121。",
+          "代數候選±11。",
+          "長度取正值。"
+        ],
+        "answer": "11公分。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把 36 的平方根寫成只有 6。",
+        "why": "混淆「所有平方根」與「√36」。",
+        "correction": "若問所有平方根，要寫6與-6。"
+      },
+      {
+        "mistake": "認為 -5 的平方是 -25。",
+        "why": "負號也在括號內相乘。",
+        "correction": "(-5)²=(-5)(-5)=25。"
+      },
+      {
+        "mistake": "說 0 有兩個平方根 ±0。",
+        "why": "+0與-0是同一個數。",
+        "correction": "平方根只有0一個。"
+      },
+      {
+        "mistake": "給正方形邊長 -7。",
+        "why": "忽略長度非負。",
+        "correction": "代數負根須由情境排除。"
+      },
+      {
+        "mistake": "說 √(-9)=-3。",
+        "why": "(-3)²=9不是-9。",
+        "correction": "實數範圍無解。"
+      },
+      {
+        "mistake": "把平方根當除以2。",
+        "why": "平方的逆運算不是對半。",
+        "correction": "用候選值平方驗算。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "平方根回答「平方後得到原數」的問題。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "把題意改寫成 x²=a。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "把 36 的平方根寫成只有 6。；修正：若問所有平方根，要寫6與-6。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "我有排除負數的實數平方根嗎？"
+      }
+    ],
+    "summary": [
+      "平方根回答「平方後得到原數」的問題。",
+      "正數兩根互為相反數，0只有一根，負數無實數根。",
+      "情境量可能只保留非負根。"
+    ],
+    "connections": {
+      "previous": "先備為整數、分數、小數平方與正負數運算。",
+      "next": [
+        "下一技能會把平方因數從根號內提出。",
+        "s005 將嚴格區分 √a 與 ±√a。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s001-square-area"
+    ],
+    "accessibilityNotes": [
+      "一個正方形，中央標示面積196平方公分，下方以s大於0表示邊長。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s001-v001",
+        "u11-s001-v002",
+        "u11-s001-v003",
+        "u11-s001-v004",
+        "u11-s001-v005",
+        "u11-s001-v006",
+        "u11-s001-v007",
+        "u11-s001-v008",
+        "u11-s001-v009",
+        "u11-s001-v010",
+        "u11-s001-v011",
+        "u11-s001-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s001-cr001",
+        "u11-s001-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「平方根意義」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「把 36 的平方根寫成只有 6。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "f144599a67fb03b057799e2db22e5f979eccb64ab7b4e0ddaa84ae80859b29cd"
+  },
+  {
+    "lectureId": "u11-s002-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "square-root-simplify",
+    "lockedSkillOrder": 2,
+    "lockedTitle": "根式化簡",
+    "title": "根式化簡：提出平方因數並保持等值",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能找出被開方數中的完全平方因數",
+      "能將根式化到根號內不含可提出平方因數",
+      "能檢查化簡前後平方值相同"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "square-root-meaning",
+        "requiredLevel": "能使用前一技能「平方根意義」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "根式",
+        "definition": "含有平方根記號的數式。"
+      },
+      {
+        "term": "完全平方因數",
+        "definition": "可寫成整數平方的因數，如4、9、16。"
+      },
+      {
+        "term": "最簡根式",
+        "definition": "根號內不含大於1的完全平方因數，且分母無待處理根式。"
+      },
+      {
+        "term": "提出因數",
+        "definition": "利用√(m²n)=m√n。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "√a",
+        "meaning": "a 的非負平方根。"
+      },
+      {
+        "symbol": "m√n",
+        "meaning": "m 乘以 √n。"
+      },
+      {
+        "symbol": "√(m²n)=m√n",
+        "meaning": "m≥0 時可將平方因數提出。"
+      }
+    ],
+    "conceptNarrative": [
+      "化簡不是改變數值，而是把相同數寫成容易運算的形式。",
+      "最有效的方法是找最大的完全平方因數，但逐步提出也可得到相同結果。",
+      "根號外係數與根號內因數分工：成對的質因數可提出一個。",
+      "化簡完成後，根號內不能再含4、9、16等平方因數。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "最簡根式條件",
+        "statement": "根號內為正整數時，不含大於1的完全平方因數。"
+      },
+      {
+        "name": "等值化簡",
+        "statement": "若a,b≥0，√(ab)=√a√b。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "√(k²m)=k√m",
+        "conditions": [
+          "k≥0、m≥0。"
+        ],
+        "meaning": "把完全平方 k² 開成 k。"
+      },
+      {
+        "formula": "c√a",
+        "conditions": [
+          "先化簡√a，再乘回係數c。"
+        ],
+        "meaning": "係數不可遺漏。"
+      }
+    ],
+    "nonApplicableCases": [
+      "√(a+b)一般不能拆成√a+√b。",
+      "提出36時要變成6，不是36。",
+      "3√12中的3不能被忘記。",
+      "根號內仍含4或9時通常還沒最簡。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "分解被開方數。",
+        "check": "優先尋找最大完全平方因數。"
+      },
+      {
+        "step": 2,
+        "instruction": "把它寫成平方因數×剩餘因數。",
+        "check": "剩餘因數應為正整數。"
+      },
+      {
+        "step": 3,
+        "instruction": "對平方因數開平方並移到根號外。",
+        "check": "√36=6，不是36。"
+      },
+      {
+        "step": 4,
+        "instruction": "乘回原有係數。",
+        "check": "檢查外部係數。"
+      },
+      {
+        "step": 5,
+        "instruction": "確認根號內不能再化簡。",
+        "check": "逐一檢查4、9、16等因數。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "化簡√28。",
+        "solutionSteps": [
+          "28=4×7。",
+          "√4=2。"
+        ],
+        "answer": "2√7。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "化簡√147。",
+        "solutionSteps": [
+          "147=49×3。",
+          "√49=7。"
+        ],
+        "answer": "7√3。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "化簡2√75。",
+        "solutionSteps": [
+          "√75=5√3。",
+          "乘回2。"
+        ],
+        "answer": "10√3。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "化簡√(2⁵×3²)。",
+        "solutionSteps": [
+          "2⁵×3²=(2⁴×3²)×2。",
+          "提出2²×3。"
+        ],
+        "answer": "12√2。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "√48=16√3。",
+        "why": "把平方因數16直接提出。",
+        "correction": "√16=4，所以是4√3。"
+      },
+      {
+        "mistake": "√12=√4+√3。",
+        "why": "錯用根號加法拆分。",
+        "correction": "應用乘法分解√(4×3)。"
+      },
+      {
+        "mistake": "2√18=3√2。",
+        "why": "漏乘原係數2。",
+        "correction": "√18=3√2，所以為6√2。"
+      },
+      {
+        "mistake": "√72=3√8後停止。",
+        "why": "根號內8仍含4。",
+        "correction": "繼續化為6√2。"
+      },
+      {
+        "mistake": "把√50化成25√2。",
+        "why": "未對25開平方。",
+        "correction": "應為5√2。"
+      },
+      {
+        "mistake": "只用小數近似取代精確化簡。",
+        "why": "題目要求根式精確值。",
+        "correction": "保留最簡根式，除非要求近似。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "找平方因數、開平方、留下不能成對的因數。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "分解被開方數。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "√48=16√3。；修正：√16=4，所以是4√3。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "化簡前後平方或近似值是否一致？"
+      }
+    ],
+    "summary": [
+      "找平方因數、開平方、留下不能成對的因數。",
+      "最簡根式是等值而更易運算的寫法。"
+    ],
+    "connections": {
+      "previous": "需要 s001 的平方根意義與整數質因數分解。",
+      "next": [
+        "s003 將先化簡再做根式四則。",
+        "s006 會建立完全平方數辨識速度。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s002-v001",
+        "u11-s002-v002",
+        "u11-s002-v003",
+        "u11-s002-v004",
+        "u11-s002-v005",
+        "u11-s002-v006",
+        "u11-s002-v007",
+        "u11-s002-v008",
+        "u11-s002-v009",
+        "u11-s002-v010",
+        "u11-s002-v011",
+        "u11-s002-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s002-cr001",
+        "u11-s002-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「根式化簡」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「√48=16√3。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "13c9cf9acf426f4a55c7710d6aa83d21a7ac5a64a309a8590e466d8638f4e46b"
+  },
+  {
+    "lectureId": "u11-s003-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "square-root-arithmetic",
+    "lockedSkillOrder": 3,
+    "lockedTitle": "根式四則",
+    "title": "根式四則：先化簡再選運算規則",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能辨認同類根式並加減係數",
+      "能正確進行根式乘除",
+      "能運用平方差與先化簡策略降低錯誤"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "square-root-simplify",
+        "requiredLevel": "能使用前一技能「根式化簡」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "同類根式",
+        "definition": "化簡後根號部分完全相同的根式。"
+      },
+      {
+        "term": "係數",
+        "definition": "乘在根式前的數。"
+      },
+      {
+        "term": "共軛形式",
+        "definition": "A+B與A-B的配對。"
+      },
+      {
+        "term": "根式乘法",
+        "definition": "非負被開方數可在根號內相乘。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "a√m+b√m=(a+b)√m",
+        "meaning": "只對同類根式成立。"
+      },
+      {
+        "symbol": "√a√b=√(ab)",
+        "meaning": "a,b≥0。"
+      },
+      {
+        "symbol": "√a/√b=√(a/b)",
+        "meaning": "a≥0,b>0。"
+      }
+    ],
+    "conceptNarrative": [
+      "根式加減像代數同類項：√2與3√2可合併，√2與√3不能直接合併。",
+      "判斷同類前必須先化簡，例如√8與√18其實都是√2的倍數。",
+      "乘法與除法可以處理被開方數，但加法不能照搬。",
+      "遇到(A+B)(A-B)可用平方差消去交叉根式項。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "根式加減",
+        "statement": "只合併化簡後相同根號部分的係數。"
+      },
+      {
+        "name": "根式乘除",
+        "statement": "在定義域允許時，可合併被開方數。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "a√m±b√m=(a±b)√m",
+        "conditions": [
+          "m≥0。"
+        ],
+        "meaning": "同類根式係數運算。"
+      },
+      {
+        "formula": "(√a+√b)(√a-√b)=a-b",
+        "conditions": [
+          "a,b≥0。"
+        ],
+        "meaning": "平方差。"
+      }
+    ],
+    "nonApplicableCases": [
+      "√a+√b通常不等於√(a+b)。",
+      "除法分母不能為0。",
+      "平方整個和時不能只平方每一項。",
+      "單位不同的長度不能直接相加。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先化簡每個根式。",
+        "check": "找出真正的同類根式。"
+      },
+      {
+        "step": 2,
+        "instruction": "辨認運算種類。",
+        "check": "加減與乘除規則不同。"
+      },
+      {
+        "step": 3,
+        "instruction": "保留括號與正負號。",
+        "check": "尤其注意減號分配。"
+      },
+      {
+        "step": 4,
+        "instruction": "完成係數或被開方數運算。",
+        "check": "結果再化簡。"
+      },
+      {
+        "step": 5,
+        "instruction": "用平方或近似值快速檢查。",
+        "check": "確認量級與符號合理。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "計算4√7-√7。",
+        "solutionSteps": [
+          "同類根式。",
+          "係數4-1。"
+        ],
+        "answer": "3√7。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "計算√20+√45。",
+        "solutionSteps": [
+          "化簡為2√5與3√5。",
+          "合併係數。"
+        ],
+        "answer": "5√5。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "計算√10×√40。",
+        "solutionSteps": [
+          "合併成√400。",
+          "取主平方根。"
+        ],
+        "answer": "20。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "計算(√11+2)(√11-2)。",
+        "solutionSteps": [
+          "使用平方差。",
+          "11-4。"
+        ],
+        "answer": "7。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "√2+√3=√5。",
+        "why": "把乘法性質錯套到加法。",
+        "correction": "不同類根式不能合併。"
+      },
+      {
+        "mistake": "√12+√3=√15。",
+        "why": "未先化簡。",
+        "correction": "2√3+√3=3√3。"
+      },
+      {
+        "mistake": "(√5)²=√25。",
+        "why": "雖數值同為5但推理混亂。",
+        "correction": "直接使用(√5)²=5。"
+      },
+      {
+        "mistake": "√6×√24=√30。",
+        "why": "乘法時誤加被開方數。",
+        "correction": "應為√144=12。"
+      },
+      {
+        "mistake": "根式除法把分子分母分別相減。",
+        "why": "除法規則錯誤。",
+        "correction": "可合併成商的平方根。"
+      },
+      {
+        "mistake": "合併係數時漏掉負號。",
+        "why": "沒有把減號視為係數的一部分。",
+        "correction": "先寫成有號係數再相加。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "根式加減先找同類，乘除可合併被開方數。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "先化簡每個根式。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "√2+√3=√5。；修正：不同類根式不能合併。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "最後結果還能化簡嗎？"
+      }
+    ],
+    "summary": [
+      "根式加減先找同類，乘除可合併被開方數。",
+      "平方差常使根式乘積化為有理數。"
+    ],
+    "connections": {
+      "previous": "需要 s002 的根式化簡。",
+      "next": [
+        "s004 將估算根式大小。",
+        "s007 會把根式除法延伸到分母有理化。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s003-v001",
+        "u11-s003-v002",
+        "u11-s003-v003",
+        "u11-s003-v004",
+        "u11-s003-v005",
+        "u11-s003-v006",
+        "u11-s003-v007",
+        "u11-s003-v008",
+        "u11-s003-v009",
+        "u11-s003-v010",
+        "u11-s003-v011",
+        "u11-s003-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s003-cr001",
+        "u11-s003-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「根式四則」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「√2+√3=√5。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "b307da0f5e5f94f958342f47ff79342347700b13b5f8af35f0df8e913debc615"
+  },
+  {
+    "lectureId": "u11-s004-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "square-root-estimate",
+    "lockedSkillOrder": 4,
+    "lockedTitle": "平方根估算",
+    "title": "平方根估算：用平方界線控制精度",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能用相鄰完全平方數夾住平方根",
+      "能依指定小數位進行四捨五入",
+      "能以平方檢查近似值是否合理"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "square-root-arithmetic",
+        "requiredLevel": "能使用前一技能「根式四則」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "夾估",
+        "definition": "用上下界把未知平方根限制在一段範圍。"
+      },
+      {
+        "term": "完全平方數",
+        "definition": "整數平方所得的數。"
+      },
+      {
+        "term": "近似值",
+        "definition": "在指定精度下接近真值的數。"
+      },
+      {
+        "term": "進位界線",
+        "definition": "四捨五入時兩候選值的中點。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "n²<a<(n+1)²",
+        "meaning": "可推出n<√a<n+1。"
+      },
+      {
+        "symbol": "≈",
+        "meaning": "表示近似相等，不是完全相等。"
+      }
+    ],
+    "conceptNarrative": [
+      "平方根估算的核心是反向平方，而不是盲目試除。",
+      "找整數範圍後，若要求一位小數，可比較十分位候選或中點平方。",
+      "四捨五入到一位小數時，應檢查百分位是否達5；不一定要算出很多位。",
+      "近似值必須標示≈，精確根式仍使用=。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "整數夾估",
+        "statement": "若n²<a<(n+1)²且n≥0，則n<√a<n+1。"
+      },
+      {
+        "name": "一位小數四捨五入",
+        "statement": "比較真值與x.x5的進位界線。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "平方比較",
+        "conditions": [
+          "比較數皆非負時，可比較平方而不改變大小次序。"
+        ],
+        "meaning": "候選值需非負。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能把√a估成a/2。",
+      "√50不是7.0，因等號會表示完全相等。",
+      "比較負數平方根時不能直接使用同樣方向。",
+      "題目要求精確值時不可擅自改成小數。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "找出a左右的相鄰完全平方數。",
+        "check": "先得到整數區間。"
+      },
+      {
+        "step": 2,
+        "instruction": "確認題目要求的精度。",
+        "check": "整數、十分位或百分位。"
+      },
+      {
+        "step": 3,
+        "instruction": "選取候選小數並平方。",
+        "check": "平方值低於a表示候選偏低。"
+      },
+      {
+        "step": 4,
+        "instruction": "檢查四捨五入中點。",
+        "check": "避免只看上下端。"
+      },
+      {
+        "step": 5,
+        "instruction": "使用≈並保留單位。",
+        "check": "精確與近似符號分開。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "估√30的整數範圍。",
+        "solutionSteps": [
+          "25<30<36。"
+        ],
+        "answer": "5<√30<6。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "√3取一位小數。",
+        "solutionSteps": [
+          "1.7²=2.89，1.8²=3.24。",
+          "1.75²=3.0625>3。"
+        ],
+        "answer": "約1.7。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "判斷√120是否大於11。",
+        "solutionSteps": [
+          "11²=121。",
+          "120<121。"
+        ],
+        "answer": "√120<11。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "找最接近√250的整數。",
+        "solutionSteps": [
+          "15²=225，16²=256。",
+          "250更靠近256且超過15.5²。"
+        ],
+        "answer": "16。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "由49<50就寫√50=7。",
+        "why": "忽略不等號與等號差異。",
+        "correction": "應寫√50>7或近似7.1。"
+      },
+      {
+        "mistake": "一位小數只比較7.0與7.1的平方。",
+        "why": "未檢查四捨五入中點。",
+        "correction": "比較7.05²。"
+      },
+      {
+        "mistake": "將≈寫成=。",
+        "why": "把近似值當精確值。",
+        "correction": "估算結果使用≈。"
+      },
+      {
+        "mistake": "平方6.3得到12.6。",
+        "why": "把平方誤作乘2。",
+        "correction": "6.3²=39.69。"
+      },
+      {
+        "mistake": "忽略題目指定小數位。",
+        "why": "答案格式不符。",
+        "correction": "最後依規格四捨五入。"
+      },
+      {
+        "mistake": "使用計算機結果卻不檢查量級。",
+        "why": "輸入或小數點錯誤不易發現。",
+        "correction": "先用完全平方數建立範圍。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "先用完全平方數夾住，再用候選平方細分。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "找出a左右的相鄰完全平方數。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "由49<50就寫√50=7。；修正：應寫√50>7或近似7.1。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "我用了≈且保留指定小數位嗎？"
+      }
+    ],
+    "summary": [
+      "先用完全平方數夾住，再用候選平方細分。",
+      "精度與等號符號是答案的一部分。"
+    ],
+    "connections": {
+      "previous": "需要 s003 的平方與根式運算。",
+      "next": [
+        "s008 將使用平方比較根式大小。",
+        "畢氏應用常需估算斜邊。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s004-numberline-estimate"
+    ],
+    "accessibilityNotes": [
+      "數線標出8.3、8.4、8.5，√70的位置落在8.3與8.4之間且較接近8.4。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s004-v001",
+        "u11-s004-v002",
+        "u11-s004-v003",
+        "u11-s004-v004",
+        "u11-s004-v005",
+        "u11-s004-v006",
+        "u11-s004-v007",
+        "u11-s004-v008",
+        "u11-s004-v009",
+        "u11-s004-v010",
+        "u11-s004-v011",
+        "u11-s004-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s004-cr001",
+        "u11-s004-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「平方根估算」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「由49<50就寫√50=7。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "2ce54dd5320ee07dff813b91141d6e83e8149d7a6c545bafa9c301f69707bf16"
+  },
+  {
+    "lectureId": "u11-s005-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "sqrt-notation",
+    "lockedSkillOrder": 5,
+    "lockedTitle": "平方根記號",
+    "title": "平方根記號：分清主平方根與正負兩解",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能分辨√a、±√a與x²=a",
+      "能正確使用(√a)²=a與√(a²)=|a|",
+      "能檢查被開方數在實數範圍是否非負"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "square-root-estimate",
+        "requiredLevel": "能使用前一技能「平方根估算」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "根號符號",
+        "definition": "√a 表示a的非負平方根。"
+      },
+      {
+        "term": "正負號±",
+        "definition": "同時表示正與負兩種可能。"
+      },
+      {
+        "term": "主平方根",
+        "definition": "非負平方根，根號符號的值。"
+      },
+      {
+        "term": "定義域",
+        "definition": "讓根式在實數範圍有意義的輸入範圍。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "√a",
+        "meaning": "a≥0時的非負平方根。"
+      },
+      {
+        "symbol": "±√a",
+        "meaning": "√a與-√a兩個數。"
+      },
+      {
+        "symbol": "(√a)²=a",
+        "meaning": "a≥0。"
+      },
+      {
+        "symbol": "√(a²)=|a|",
+        "meaning": "a為任意實數。"
+      }
+    ],
+    "conceptNarrative": [
+      "根號本身是一個單值記號，所以√25=5，不寫±5。",
+      "解平方方程時，因正負兩數平方相同，需寫x=±√a。",
+      "平方後再開主平方根會消除符號，結果是絕對值。",
+      "被開方數為負時，在本單元的實數範圍沒有定義。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "主平方根",
+        "statement": "√a 是唯一非負且平方為a的實數。"
+      },
+      {
+        "name": "平方方程解",
+        "statement": "a>0時x²=a有兩解±√a。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "(√a)²=a",
+        "conditions": [
+          "a≥0。"
+        ],
+        "meaning": "先開主平方根再平方回a。"
+      },
+      {
+        "formula": "√(a²)=|a|",
+        "conditions": [
+          "a∈R。"
+        ],
+        "meaning": "先平方再取非負根。"
+      }
+    ],
+    "nonApplicableCases": [
+      "√a 不代表兩個值。",
+      "± 必須寫在根號外且作用於整個根式。",
+      "√(a²)=a 只有在a≥0時成立。",
+      "實數根式不能接受負被開方數。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "辨認題目是求根式值還是解方程。",
+        "check": "根式值單一，平方方程可能雙解。"
+      },
+      {
+        "step": 2,
+        "instruction": "檢查被開方數非負。",
+        "check": "負值時說明實數範圍無意義。"
+      },
+      {
+        "step": 3,
+        "instruction": "依符號執行運算。",
+        "check": "看清±、括號與平方位置。"
+      },
+      {
+        "step": 4,
+        "instruction": "使用絕對值處理√(a²)。",
+        "check": "再依a的正負化簡。"
+      },
+      {
+        "step": 5,
+        "instruction": "回代驗算。",
+        "check": "根式值應非負。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "計算√100。",
+        "solutionSteps": [
+          "主平方根非負。"
+        ],
+        "answer": "10。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "解x²=100。",
+        "solutionSteps": [
+          "正負10平方皆為100。"
+        ],
+        "answer": "x=±10。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "若t=-8，求√(t²)。",
+        "solutionSteps": [
+          "t²=64。",
+          "主平方根為8。"
+        ],
+        "answer": "8。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "判斷√(x-3)有實數意義的條件。",
+        "solutionSteps": [
+          "被開方數需≥0。",
+          "x-3≥0。"
+        ],
+        "answer": "x≥3。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "√16=±4。",
+        "why": "根號是主平方根單值。",
+        "correction": "√16=4。"
+      },
+      {
+        "mistake": "解x²=16只寫x=4。",
+        "why": "方程需列出兩根。",
+        "correction": "x=±4。"
+      },
+      {
+        "mistake": "√((-6)²)=-6。",
+        "why": "主平方根不能為負。",
+        "correction": "結果為6。"
+      },
+      {
+        "mistake": "√(-9)=-3。",
+        "why": "平方驗算不成立。",
+        "correction": "實數範圍無意義。"
+      },
+      {
+        "mistake": "±√9=±9。",
+        "why": "先算√9=3。",
+        "correction": "結果為±3。"
+      },
+      {
+        "mistake": "把根號線只看成作用於第一個數。",
+        "why": "根號範圍辨識錯誤。",
+        "correction": "確認被開方式完整括號。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "√a 是非負單值；±√a 是兩個數。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "辨認題目是求根式值還是解方程。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "√16=±4。；修正：√16=4。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "√(a²)是否需要絕對值？"
+      }
+    ],
+    "summary": [
+      "√a 是非負單值；±√a 是兩個數。",
+      "(√a)²與√(a²)的條件不同。"
+    ],
+    "connections": {
+      "previous": "承接 s001 的平方根意義與 s004 的非負近似。",
+      "next": [
+        "s006 會快速計算完全平方數的主平方根。",
+        "s007 會在分母中操作根號記號。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s005-v001",
+        "u11-s005-v002",
+        "u11-s005-v003",
+        "u11-s005-v004",
+        "u11-s005-v005",
+        "u11-s005-v006",
+        "u11-s005-v007",
+        "u11-s005-v008",
+        "u11-s005-v009",
+        "u11-s005-v010",
+        "u11-s005-v011",
+        "u11-s005-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s005-cr001",
+        "u11-s005-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「平方根記號」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「√16=±4。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "d6dd460b0a6da365869d543e4b850b22991307904d7886b2b94d329d49ab131b"
+  },
+  {
+    "lectureId": "u11-s006-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "sqrt-perfect-square",
+    "lockedSkillOrder": 6,
+    "lockedTitle": "完全平方數平方根",
+    "title": "完全平方數平方根：建立平方表與邊界感",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能熟練1²至30²中的常用值",
+      "能判定整數是否為完全平方數",
+      "能處理區間、計數與邊界問題"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "sqrt-notation",
+        "requiredLevel": "能使用前一技能「平方根記號」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "完全平方數",
+        "definition": "可寫成整數平方的非負整數。"
+      },
+      {
+        "term": "平方表",
+        "definition": "整數與其平方的對照。"
+      },
+      {
+        "term": "底數",
+        "definition": "平方運算中被乘兩次的數。"
+      },
+      {
+        "term": "平方數區間",
+        "definition": "由相鄰底數平方形成的範圍。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "n²",
+        "meaning": "n×n。"
+      },
+      {
+        "symbol": "√(n²)=|n|",
+        "meaning": "n為整數時仍取非負值。"
+      }
+    ],
+    "conceptNarrative": [
+      "熟記平方數能加速根式化簡、估算與畢氏數組辨識。",
+      "判斷一個正整數是否為完全平方數，可找其平方根是否為整數。",
+      "區間計數時應轉成底數範圍，特別注意是否包含端點。",
+      "0=0²也是完全平方數，但「正完全平方數」不包含0。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "完全平方數",
+        "statement": "存在整數n使N=n²。"
+      },
+      {
+        "name": "正完全平方數",
+        "statement": "n≠0時的n²。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "1²,2²,…",
+        "conditions": [
+          "常用表至少熟悉至20²。"
+        ],
+        "meaning": "用於快速判定與估算。"
+      }
+    ],
+    "nonApplicableCases": [
+      "偶數不一定是完全平方數。",
+      "完全平方數不只由正整數平方得到，負整數平方相同。",
+      "題目說1到100時不能算入0。",
+      "小於與小於等於的邊界不可混淆。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先判斷問題是求平方、開平方或計數。",
+        "check": "不要把平方當乘2。"
+      },
+      {
+        "step": 2,
+        "instruction": "列出附近底數。",
+        "check": "用平方表定位。"
+      },
+      {
+        "step": 3,
+        "instruction": "檢查端點是否包含。",
+        "check": "看清「介於」「含」等詞。"
+      },
+      {
+        "step": 4,
+        "instruction": "若為實際長度，取正平方根。",
+        "check": "底數可能正負但長度非負。"
+      },
+      {
+        "step": 5,
+        "instruction": "以乘法驗算。",
+        "check": "n×n應回到原數。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "求17²。",
+        "solutionSteps": [
+          "17×17=289。"
+        ],
+        "answer": "289。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "判斷196是否完全平方數。",
+        "solutionSteps": [
+          "14²=196。"
+        ],
+        "answer": "是。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "找小於200的最大完全平方數。",
+        "solutionSteps": [
+          "14²=196。",
+          "15²=225超過。"
+        ],
+        "answer": "196。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "計數50到150間的完全平方數。",
+        "solutionSteps": [
+          "8²=64至12²=144。",
+          "底數8,9,10,11,12。"
+        ],
+        "answer": "5個。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "15²=30。",
+        "why": "把平方當乘2。",
+        "correction": "15²=225。"
+      },
+      {
+        "mistake": "所有偶數都是平方數。",
+        "why": "只看奇偶性不足。",
+        "correction": "檢查整數平方根。"
+      },
+      {
+        "mistake": "√144=±12。",
+        "why": "根號是主平方根。",
+        "correction": "√144=12。"
+      },
+      {
+        "mistake": "1到100有11個正平方數。",
+        "why": "錯把0算入。",
+        "correction": "1²到10²共10個。"
+      },
+      {
+        "mistake": "小於81仍包含81。",
+        "why": "忽略嚴格不等式。",
+        "correction": "最大應看8²=64。"
+      },
+      {
+        "mistake": "只背平方表不驗算陌生數。",
+        "why": "記憶可能錯位。",
+        "correction": "用鄰近平方或乘法確認。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "完全平方數是整數平方。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "先判斷問題是求平方、開平方或計數。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "15²=30。；修正：15²=225。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "實際量是否只取正值？"
+      }
+    ],
+    "summary": [
+      "完全平方數是整數平方。",
+      "區間問題轉成底數區間最穩定。"
+    ],
+    "connections": {
+      "previous": "需要 s005 的主平方根記號。",
+      "next": [
+        "s007 有理化會使用根式平方。",
+        "s008 比較與畢氏定理都依賴平方表。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s006-v001",
+        "u11-s006-v002",
+        "u11-s006-v003",
+        "u11-s006-v004",
+        "u11-s006-v005",
+        "u11-s006-v006",
+        "u11-s006-v007",
+        "u11-s006-v008",
+        "u11-s006-v009",
+        "u11-s006-v010",
+        "u11-s006-v011",
+        "u11-s006-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s006-cr001",
+        "u11-s006-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「完全平方數平方根」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「15²=30。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "f1e37e0cd5622a82997140c14f4e5fd120125cda030b8c5da13cb63390213ec6"
+  },
+  {
+    "lectureId": "u11-s007-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "sqrt-rationalize-simple",
+    "lockedSkillOrder": 7,
+    "lockedTitle": "分母有理化基本",
+    "title": "分母有理化基本：用等值乘法移除根號",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能說明有理化是等值改寫",
+      "能處理a/√b與含係數單根式分母",
+      "能在有理化後繼續約分至最簡"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "sqrt-perfect-square",
+        "requiredLevel": "能使用前一技能「完全平方數平方根」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "有理數分母",
+        "definition": "分母不含無理根式。"
+      },
+      {
+        "term": "分母有理化",
+        "definition": "以等值乘法移除分母根式。"
+      },
+      {
+        "term": "等值分數",
+        "definition": "分子分母同乘非零數後值不變。"
+      },
+      {
+        "term": "約分",
+        "definition": "分子分母除以共同非零因數。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "√b/√b=1",
+        "meaning": "b>0。"
+      },
+      {
+        "symbol": "a/√b=a√b/b",
+        "meaning": "b>0。"
+      },
+      {
+        "symbol": "a/(c√b)=a√b/(cb)",
+        "meaning": "b>0且c≠0。"
+      }
+    ],
+    "conceptNarrative": [
+      "有理化的本質是乘以1，不是只改分母。",
+      "分母√b同乘√b後成b，因√b×√b=b。",
+      "先化簡再有理化常能減少運算，例如√3/√6先約成1/√2。",
+      "有理化後若分子分母有公因數，仍要約分。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "單根式分母有理化",
+        "statement": "分母形如c√b時，同乘√b。"
+      },
+      {
+        "name": "最簡有理化形式",
+        "statement": "分母為有理數且整體已約分。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "a/√b × √b/√b=a√b/b",
+        "conditions": [
+          "b>0。"
+        ],
+        "meaning": "同乘非零的1。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能只把分母√b改成b而不改分子。",
+      "本技能不處理含兩項分母的共軛有理化。",
+      "分母為0時原式無意義。",
+      "得到有理分母後仍需檢查約分。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先化簡分子與分母。",
+        "check": "可能直接約去根式。"
+      },
+      {
+        "step": 2,
+        "instruction": "確認分母是單一根式。",
+        "check": "本技能只處理基本型。"
+      },
+      {
+        "step": 3,
+        "instruction": "選擇同乘的根式。",
+        "check": "通常與分母根式相同。"
+      },
+      {
+        "step": 4,
+        "instruction": "分子分母同步相乘。",
+        "check": "保持等值。"
+      },
+      {
+        "step": 5,
+        "instruction": "化簡與約分。",
+        "check": "確認分母無根號。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "有理化4/√7。",
+        "solutionSteps": [
+          "同乘√7。",
+          "分母成7。"
+        ],
+        "answer": "4√7/7。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "有理化9/(2√3)。",
+        "solutionSteps": [
+          "同乘√3。",
+          "得9√3/6再約分。"
+        ],
+        "answer": "3√3/2。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "化簡√5/√20。",
+        "solutionSteps": [
+          "√20=2√5。",
+          "直接約分。"
+        ],
+        "answer": "1/2。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "化簡1/√3+2/√3。",
+        "solutionSteps": [
+          "先合併分子。",
+          "3/√3=√3。"
+        ],
+        "answer": "√3。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "1/√2=1/2。",
+        "why": "只平方分母。",
+        "correction": "分子也要乘√2。"
+      },
+      {
+        "mistake": "3/√5=3√5。",
+        "why": "漏掉分母5。",
+        "correction": "應為3√5/5。"
+      },
+      {
+        "mistake": "有理化後7√7/21就停止。",
+        "why": "尚可約7。",
+        "correction": "化為√7/3。"
+      },
+      {
+        "mistake": "看到根式分母就一定先同乘。",
+        "why": "可能先化簡更快。",
+        "correction": "先檢查可否約分。"
+      },
+      {
+        "mistake": "同乘不同的根式使分母仍有根號。",
+        "why": "乘法因子選錯。",
+        "correction": "選能讓分母成平方的根式。"
+      },
+      {
+        "mistake": "把分母有理化當近似小數。",
+        "why": "有理化是精確等值改寫。",
+        "correction": "全程保留等號。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "同乘適當根式使分母成平方。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "先化簡分子與分母。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "1/√2=1/2。；修正：分子也要乘√2。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "最後還能約分嗎？"
+      }
+    ],
+    "summary": [
+      "同乘適當根式使分母成平方。",
+      "有理化後還要化簡與約分。"
+    ],
+    "connections": {
+      "previous": "需要 s003 的根式乘除與 s006 的平方。",
+      "next": [
+        "s008 將比較不同根式形式。",
+        "後續應用可使用更易計算的有理化結果。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s007-v001",
+        "u11-s007-v002",
+        "u11-s007-v003",
+        "u11-s007-v004",
+        "u11-s007-v005",
+        "u11-s007-v006",
+        "u11-s007-v007",
+        "u11-s007-v008",
+        "u11-s007-v009",
+        "u11-s007-v010",
+        "u11-s007-v011",
+        "u11-s007-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s007-cr001",
+        "u11-s007-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「分母有理化基本」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「1/√2=1/2。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "b549e81df77f630ee747b055a113a947e9fcc2c3bab6b9f941db7d6e0f3dc930"
+  },
+  {
+    "lectureId": "u11-s008-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "sqrt-comparison",
+    "lockedSkillOrder": 8,
+    "lockedTitle": "平方根大小比較",
+    "title": "平方根大小比較：用平方做精確判斷",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能比較√a與整數",
+      "能比較含係數與負號的根式",
+      "能處理排序與根式不等式"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "sqrt-rationalize-simple",
+        "requiredLevel": "能使用前一技能「分母有理化基本」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "單調性",
+        "definition": "非負數越大，其平方根越大。"
+      },
+      {
+        "term": "平方比較",
+        "definition": "正數大小可由平方大小判定。"
+      },
+      {
+        "term": "相反數次序",
+        "definition": "正數大小取負後方向反轉。"
+      },
+      {
+        "term": "等值轉換",
+        "definition": "將整數或係數根式改寫成可比較形式。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "a<b⇒√a<√b",
+        "meaning": "a,b≥0。"
+      },
+      {
+        "symbol": "(m√n)²=m²n",
+        "meaning": "m√n≥0時可用於比較。"
+      }
+    ],
+    "conceptNarrative": [
+      "比較√a與k時，可把k寫成√(k²)。",
+      "比較m√n與√p時，兩者非負即可平方。",
+      "兩個負根式先比較其正值，再反轉大小方向。",
+      "根式和可能要先化簡，不能只看單一被開方數。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "非負根式比較",
+        "statement": "平方函數在非負範圍遞增。"
+      },
+      {
+        "name": "負值比較",
+        "statement": "乘以-1時不等號反向。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "m√n ? √p",
+        "conditions": [
+          "若兩邊非負，改比較m²n與p。"
+        ],
+        "meaning": "避免小數近似誤差。"
+      }
+    ],
+    "nonApplicableCases": [
+      "平方比較前要確認兩邊非負。",
+      "不能只比較根號內數而忽略外係數。",
+      "負號會反轉次序。",
+      "近似相同不代表相等。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先化簡所有根式。",
+        "check": "避免不同外觀掩蓋同值。"
+      },
+      {
+        "step": 2,
+        "instruction": "判斷正負。",
+        "check": "決定能否直接平方。"
+      },
+      {
+        "step": 3,
+        "instruction": "轉成共同形式。",
+        "check": "全寫根式或比較平方。"
+      },
+      {
+        "step": 4,
+        "instruction": "完成大小判斷。",
+        "check": "負數時記得反向。"
+      },
+      {
+        "step": 5,
+        "instruction": "用整數區間或小數驗算。",
+        "check": "排除量級錯誤。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "比較√15與4。",
+        "solutionSteps": [
+          "4=√16。",
+          "15<16。"
+        ],
+        "answer": "√15<4。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "比較2√5與√21。",
+        "solutionSteps": [
+          "平方為20與21。"
+        ],
+        "answer": "2√5<√21。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "比較-√10與-3。",
+        "solutionSteps": [
+          "√10>3。",
+          "取負反向。"
+        ],
+        "answer": "-√10<-3。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "排序√6、√8、√7。",
+        "solutionSteps": [
+          "同為非負根式。",
+          "比較被開方數。"
+        ],
+        "answer": "√6<√7<√8。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "3√2<√10，因2<10。",
+        "why": "忽略外係數3。",
+        "correction": "比較平方18與10。"
+      },
+      {
+        "mistake": "-√5>-2，因√5>2。",
+        "why": "取負後方向反轉。",
+        "correction": "-√5<-2。"
+      },
+      {
+        "mistake": "√49>7。",
+        "why": "兩者其實相等。",
+        "correction": "√49=7。"
+      },
+      {
+        "mistake": "比較時先取粗略整數。",
+        "why": "可能把很接近的數判錯。",
+        "correction": "使用平方精確比較。"
+      },
+      {
+        "mistake": "兩邊含根號就直接去掉根號。",
+        "why": "外係數與正負可能不同。",
+        "correction": "先確認形式與非負性。"
+      },
+      {
+        "mistake": "把a<b推出√a>√b。",
+        "why": "單調方向錯。",
+        "correction": "非負範圍平方根保持次序。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "非負根式可用平方比較。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "先化簡所有根式。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "3√2<√10，因2<10。；修正：比較平方18與10。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "我能用平方精確驗算嗎？"
+      }
+    ],
+    "summary": [
+      "非負根式可用平方比較。",
+      "外係數、負號與化簡都會影響次序。"
+    ],
+    "connections": {
+      "previous": "需要 s004 的估算、s003 的化簡與平方。",
+      "next": [
+        "s009 畢氏定理會比較邊長並辨認斜邊。",
+        "s016 素養題常需在近似值間決策。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s008-v001",
+        "u11-s008-v002",
+        "u11-s008-v003",
+        "u11-s008-v004",
+        "u11-s008-v005",
+        "u11-s008-v006",
+        "u11-s008-v007",
+        "u11-s008-v008",
+        "u11-s008-v009",
+        "u11-s008-v010",
+        "u11-s008-v011",
+        "u11-s008-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s008-cr001",
+        "u11-s008-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「平方根大小比較」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「3√2<√10，因2<10。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "12e48ff5f1210d24f1bc95b3f3c3041a854c65545d3cab42220b874ebd393e1c"
+  },
+  {
+    "lectureId": "u11-s009-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-pythagorean",
+    "skillId": "pythagorean-theorem",
+    "lockedSkillOrder": 9,
+    "lockedTitle": "畢氏定理",
+    "title": "畢氏定理：從直角辨認兩股與斜邊",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能辨認直角、兩股與斜邊",
+      "能由兩股平方和求斜邊",
+      "能處理根式邊長並說明長度取正"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "sqrt-comparison",
+        "requiredLevel": "能使用前一技能「平方根大小比較」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "直角三角形",
+        "definition": "含一個90°角的三角形。"
+      },
+      {
+        "term": "股",
+        "definition": "夾出直角的兩條邊。"
+      },
+      {
+        "term": "斜邊",
+        "definition": "直角的對邊，也是三邊中最長。"
+      },
+      {
+        "term": "畢氏定理",
+        "definition": "兩股平方和等於斜邊平方。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "a²+b²=c²",
+        "meaning": "a,b為兩股，c為斜邊。"
+      },
+      {
+        "symbol": "c=√(a²+b²)",
+        "meaning": "由兩股求斜邊，取正根。"
+      }
+    ],
+    "conceptNarrative": [
+      "定理只適用於直角三角形，套公式前先找直角。",
+      "斜邊永遠在直角對面，不能由圖形朝向判定。",
+      "公式處理的是邊長平方，不是邊長直接相加。",
+      "求得c²後仍要開平方；因c是長度，只取正值。",
+      "3-4-5、5-12-13等數組可加速，但不能取代公式驗證。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "畢氏定理",
+        "statement": "直角三角形中，兩股平方和等於斜邊平方。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "a²+b²=c²",
+        "conditions": [
+          "三角形必須為直角，c必須是斜邊。"
+        ],
+        "meaning": "由面積關係得到的邊長平方等式。"
+      }
+    ],
+    "nonApplicableCases": [
+      "一般三角形不能直接套用。",
+      "不能把c寫成a+b。",
+      "圖未按比例時不能目測哪邊長。",
+      "平方根結果的負值不適合邊長。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認存在直角。",
+        "check": "題目文字、直角符號或矩形性質。"
+      },
+      {
+        "step": 2,
+        "instruction": "標出兩股與斜邊。",
+        "check": "斜邊是直角對邊。"
+      },
+      {
+        "step": 3,
+        "instruction": "代入a²+b²=c²。",
+        "check": "不要混淆邊角色。"
+      },
+      {
+        "step": 4,
+        "instruction": "完成平方和並開平方。",
+        "check": "根式化到最簡。"
+      },
+      {
+        "step": 5,
+        "instruction": "檢查斜邊是否最長。",
+        "check": "單位與量級合理。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "兩股7與24，求斜邊。",
+        "solutionSteps": [
+          "c²=49+576=625。",
+          "c取正根。"
+        ],
+        "answer": "25。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "兩股√6與√10。",
+        "solutionSteps": [
+          "c²=6+10=16。"
+        ],
+        "answer": "4。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "等腰直角三角形股長8。",
+        "solutionSteps": [
+          "c²=64+64=128。",
+          "√128=8√2。"
+        ],
+        "answer": "8√2。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "兩股平方分別20與29。",
+        "solutionSteps": [
+          "斜邊平方49。"
+        ],
+        "answer": "7。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把直角兩邊相加求斜邊。",
+        "why": "忽略平方關係。",
+        "correction": "使用√(a²+b²)。"
+      },
+      {
+        "mistake": "把短邊當斜邊。",
+        "why": "沒找直角對邊。",
+        "correction": "先標直角，再找其對邊。"
+      },
+      {
+        "mistake": "算到c²=169就答169。",
+        "why": "漏開平方。",
+        "correction": "c=13。"
+      },
+      {
+        "mistake": "答c=±13。",
+        "why": "長度不取負。",
+        "correction": "只保留13。"
+      },
+      {
+        "mistake": "根式結果未化簡。",
+        "why": "答案形式未完成。",
+        "correction": "提出平方因數。"
+      },
+      {
+        "mistake": "一般三角形也套公式。",
+        "why": "缺少直角前提。",
+        "correction": "確認90°條件。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "直角三角形：兩股平方和=斜邊平方。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "確認存在直角。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "把直角兩邊相加求斜邊。；修正：使用√(a²+b²)。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "根式與單位完成了嗎？"
+      }
+    ],
+    "summary": [
+      "直角三角形：兩股平方和=斜邊平方。",
+      "斜邊最長，邊長取正。"
+    ],
+    "connections": {
+      "previous": "需要 s008 的根式比較與 s003 的根式運算。",
+      "next": [
+        "s010 將把實物情境轉成直角三角形。",
+        "s015 會研究定理的逆命題。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s009-right-triangle",
+      "fig-u11-s009-square-diagonal"
+    ],
+    "accessibilityNotes": [
+      "直角三角形左下角標示直角，兩股標a和b，斜邊標c，上方寫a平方加b平方等於c平方。",
+      "邊長10公分的正方形，畫出一條對角線d，角落有直角符號。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s009-v001",
+        "u11-s009-v002",
+        "u11-s009-v003",
+        "u11-s009-v004",
+        "u11-s009-v005",
+        "u11-s009-v006",
+        "u11-s009-v007",
+        "u11-s009-v008",
+        "u11-s009-v009",
+        "u11-s009-v010",
+        "u11-s009-v011",
+        "u11-s009-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s009-cr001",
+        "u11-s009-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「畢氏定理」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「把直角兩邊相加求斜邊。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "19bbe1d42e23ff09f675c122fda044c2527ed59de7320a83dbcb50da28b386f9"
+  },
+  {
+    "lectureId": "u11-s010-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-pythagorean",
+    "skillId": "pythagorean-application",
+    "lockedSkillOrder": 10,
+    "lockedTitle": "畢氏定理應用",
+    "title": "畢氏定理應用：把實物轉成直角模型",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能從矩形、梯子、斜坡中建立直角三角形",
+      "能判斷所求量是斜邊或股",
+      "能處理兩階段與近似應用"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "pythagorean-theorem",
+        "requiredLevel": "能使用前一技能「畢氏定理」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "對角線",
+        "definition": "連接多邊形不相鄰頂點的線段。"
+      },
+      {
+        "term": "水平投影",
+        "definition": "斜線在水平方向的長度。"
+      },
+      {
+        "term": "垂直高度",
+        "definition": "與水平面垂直的距離。"
+      },
+      {
+        "term": "空間對角線",
+        "definition": "跨越長方體相對頂點的線段。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "矩形對角線d=√(長²+寬²)",
+        "meaning": "矩形角為直角。"
+      },
+      {
+        "symbol": "未知股=√(斜邊²-已知股²)",
+        "meaning": "斜邊必須最大。"
+      }
+    ],
+    "conceptNarrative": [
+      "應用題的主要難點不是計算，而是找到互相垂直的兩個方向。",
+      "矩形對角線、繃直纜線、梯子與斜坡通常是斜邊。",
+      "題目問高度或水平距離時，常是已知斜邊求股。",
+      "組合圖形可能先求一段對角線，再建立第二個直角三角形。",
+      "「至少」通常表示理想直線距離，但仍要讀是否有鬆弛或安全餘量。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "直角模型",
+        "statement": "把實際物件抽象成由兩股與斜邊組成的三角形。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "d²=x²+y²",
+        "conditions": [
+          "x,y互相垂直。"
+        ],
+        "meaning": "求跨越兩方向的直線距離。"
+      }
+    ],
+    "nonApplicableCases": [
+      "牆若未說垂直地面，不能自動套用。",
+      "纜線有下垂時，其實際長度不等於直線距離。",
+      "長方形周長或面積不能代替對角線。",
+      "近似題要依指定精度作答。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "畫簡圖或在文字中標水平、垂直。",
+        "check": "確認90°。"
+      },
+      {
+        "step": 2,
+        "instruction": "指出斜邊。",
+        "check": "通常是跨兩方向的直線。"
+      },
+      {
+        "step": 3,
+        "instruction": "決定用平方和或平方差。",
+        "check": "求斜邊用加，求股用減。"
+      },
+      {
+        "step": 4,
+        "instruction": "計算並化簡或估算。",
+        "check": "注意小數與根式。"
+      },
+      {
+        "step": 5,
+        "instruction": "回到情境檢查限制。",
+        "check": "至少、最多、單位與可行性。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "矩形7×24的對角線。",
+        "solutionSteps": [
+          "√(49+576)。"
+        ],
+        "answer": "25。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "梯長17、離牆8，求高。",
+        "solutionSteps": [
+          "√(289-64)。"
+        ],
+        "answer": "15。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "正方形邊長a。",
+        "solutionSteps": [
+          "兩股均a。",
+          "d²=2a²。"
+        ],
+        "answer": "a√2。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "長方體底面6×8、高24的空間對角線。",
+        "solutionSteps": [
+          "底面對角10。",
+          "再求√(10²+24²)。"
+        ],
+        "answer": "26。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "對角線=長+寬。",
+        "why": "把折線路徑當直線。",
+        "correction": "用平方和開根。"
+      },
+      {
+        "mistake": "梯子求高度用10²+6²。",
+        "why": "梯子本身是斜邊。",
+        "correction": "用斜邊平方減水平平方。"
+      },
+      {
+        "mistake": "忽略牆地垂直條件。",
+        "why": "模型前提未確認。",
+        "correction": "找明示或幾何性質。"
+      },
+      {
+        "mistake": "空間題一次亂加三邊。",
+        "why": "未建立兩階段直角三角形。",
+        "correction": "先求底面對角。"
+      },
+      {
+        "mistake": "近似值沒有按位數。",
+        "why": "格式不符。",
+        "correction": "最後再四捨五入。"
+      },
+      {
+        "mistake": "把最短直線與實際鬆弛纜線混同。",
+        "why": "物理限制不同。",
+        "correction": "依題目理想化條件作答。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "先建模，再決定平方和或平方差。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "畫簡圖或在文字中標水平、垂直。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "對角線=長+寬。；修正：用平方和開根。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "近似與單位符合要求嗎？"
+      }
+    ],
+    "summary": [
+      "先建模，再決定平方和或平方差。",
+      "實際限制決定理想畢氏結果如何解讀。"
+    ],
+    "connections": {
+      "previous": "需要 s009 的畢氏定理。",
+      "next": [
+        "s011 會把水平與垂直差改為坐標差。",
+        "s013 將在沒有圖時完成文字建模。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s010-ladder"
+    ],
+    "accessibilityNotes": [
+      "垂直牆面與水平地面形成直角，一把10公尺梯子斜靠牆，梯腳離牆6公尺，高度標h。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s010-v001",
+        "u11-s010-v002",
+        "u11-s010-v003",
+        "u11-s010-v004",
+        "u11-s010-v005",
+        "u11-s010-v006",
+        "u11-s010-v007",
+        "u11-s010-v008",
+        "u11-s010-v009",
+        "u11-s010-v010",
+        "u11-s010-v011",
+        "u11-s010-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s010-cr001",
+        "u11-s010-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「畢氏定理應用」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「對角線=長+寬。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "bc942a451765366ca4d6518459fd66492f6bdac9bf37a5716e479d469a2e0716"
+  },
+  {
+    "lectureId": "u11-s011-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-pythagorean",
+    "skillId": "coordinate-distance-pythagorean",
+    "lockedSkillOrder": 11,
+    "lockedTitle": "坐標平面距離",
+    "title": "坐標平面距離：由水平差與垂直差求斜邊",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能求兩點水平差與垂直差",
+      "能由畢氏定理推得距離公式",
+      "能處理負坐標、同水平線與比例尺"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "pythagorean-application",
+        "requiredLevel": "能使用前一技能「畢氏定理應用」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "水平差",
+        "definition": "兩點x坐標之差的絕對值。"
+      },
+      {
+        "term": "垂直差",
+        "definition": "兩點y坐標之差的絕對值。"
+      },
+      {
+        "term": "兩點距離",
+        "definition": "連接兩點的線段長。"
+      },
+      {
+        "term": "坐標單位",
+        "definition": "坐標每一格代表的實際長度。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "Δx=x₂-x₁",
+        "meaning": "水平有向差。"
+      },
+      {
+        "symbol": "Δy=y₂-y₁",
+        "meaning": "垂直有向差。"
+      },
+      {
+        "symbol": "d=√((Δx)²+(Δy)²)",
+        "meaning": "兩點直線距離。"
+      }
+    ],
+    "conceptNarrative": [
+      "兩點與水平、垂直投影形成直角三角形。",
+      "座標差可為負，但平方後不影響距離；也可先取絕對值。",
+      "同x或同y是特殊情況，可直接用單一坐標差。",
+      "若每格代表實際長度，先求座標單位距離，再乘比例。",
+      "反求未知坐標時可能有兩個方向的解。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "距離公式",
+        "statement": "平面兩點P(x₁,y₁)、Q(x₂,y₂)距離為√((x₂-x₁)²+(y₂-y₁)²)。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "d²=(x₂-x₁)²+(y₂-y₁)²",
+        "conditions": [
+          "歐氏平面直角坐標。"
+        ],
+        "meaning": "水平差與垂直差為兩股。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能直接把四個坐標相加。",
+      "負坐標相減要加括號。",
+      "折線格數不是直線距離。",
+      "比例尺不能在計算後忘記。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "寫出兩點坐標並固定次序。",
+        "check": "x對x、y對y。"
+      },
+      {
+        "step": 2,
+        "instruction": "計算Δx與Δy。",
+        "check": "減負數要用括號。"
+      },
+      {
+        "step": 3,
+        "instruction": "平方兩差並相加。",
+        "check": "符號平方後消失。"
+      },
+      {
+        "step": 4,
+        "instruction": "開正平方根。",
+        "check": "距離非負。"
+      },
+      {
+        "step": 5,
+        "instruction": "套用坐標尺度。",
+        "check": "轉成實際單位與精度。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "P(2,3)、Q(8,11)。",
+        "solutionSteps": [
+          "Δx=6，Δy=8。"
+        ],
+        "answer": "距離10。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "P(-4,1)、Q(2,1)。",
+        "solutionSteps": [
+          "同水平線。",
+          "|2-(-4)|。"
+        ],
+        "answer": "6。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "P(0,0)、Q(a,4)距離5且a>0。",
+        "solutionSteps": [
+          "a²+16=25。"
+        ],
+        "answer": "a=3。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "每格5公尺，圖上差5格與12格。",
+        "solutionSteps": [
+          "圖上距離13格。",
+          "乘5。"
+        ],
+        "answer": "65公尺。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "(-2)到4的差是2。",
+        "why": "減負數錯誤。",
+        "correction": "4-(-2)=6。"
+      },
+      {
+        "mistake": "距離=|Δx|+|Δy|。",
+        "why": "這是沿格線折線距離。",
+        "correction": "直線距離用平方和。"
+      },
+      {
+        "mistake": "算到d²=100答100。",
+        "why": "漏開平方。",
+        "correction": "d=10。"
+      },
+      {
+        "mistake": "反求坐標只留正解。",
+        "why": "坐標可能在兩側。",
+        "correction": "依條件保留±。"
+      },
+      {
+        "mistake": "同一坐標也平方全部數值。",
+        "why": "把位置當差。",
+        "correction": "先計算坐標差。"
+      },
+      {
+        "mistake": "忘記每格代表10公尺。",
+        "why": "只答圖上單位。",
+        "correction": "最後乘比例尺。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "坐標距離是水平差與垂直差形成的斜邊。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "寫出兩點坐標並固定次序。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "(-2)到4的差是2。；修正：4-(-2)=6。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "比例與單位換算完成嗎？"
+      }
+    ],
+    "summary": [
+      "坐標距離是水平差與垂直差形成的斜邊。",
+      "先求座標單位，再換實際尺度。"
+    ],
+    "connections": {
+      "previous": "需要 s010 的直角模型與整數坐標運算。",
+      "next": [
+        "s012 將由距離與一個差反求另一個差。",
+        "s016 會整合地圖比例與近似。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s011-coordinate"
+    ],
+    "accessibilityNotes": [
+      "坐標平面上A在原點、B在(3,4)，虛線畫出水平差3與垂直差4，實線連接AB。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s011-v001",
+        "u11-s011-v002",
+        "u11-s011-v003",
+        "u11-s011-v004",
+        "u11-s011-v005",
+        "u11-s011-v006",
+        "u11-s011-v007",
+        "u11-s011-v008",
+        "u11-s011-v009",
+        "u11-s011-v010",
+        "u11-s011-v011",
+        "u11-s011-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s011-cr001",
+        "u11-s011-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「坐標平面距離」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「(-2)到4的差是2。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "c50d22c5acfd90efa2fe8e51d8a2ab63c5123fcd6320e87b4c3756191775612f"
+  },
+  {
+    "lectureId": "u11-s012-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-pythagorean",
+    "skillId": "pythagorean-find-leg",
+    "lockedSkillOrder": 12,
+    "lockedTitle": "已知斜邊求股",
+    "title": "已知斜邊求股：平方差與正長度",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能確認斜邊是已知最大邊",
+      "能用平方差求未知股",
+      "能處理根式、小數與比例型未知股"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "coordinate-distance-pythagorean",
+        "requiredLevel": "能使用前一技能「坐標平面距離」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "已知斜邊求股",
+        "definition": "由c²-a²得到另一股平方。"
+      },
+      {
+        "term": "平方差",
+        "definition": "c²-a²=(c-a)(c+a)。"
+      },
+      {
+        "term": "畢氏數組比例",
+        "definition": "等比例放大後仍為直角三角形。"
+      },
+      {
+        "term": "正根",
+        "definition": "幾何邊長只取非負解。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "b=√(c²-a²)",
+        "meaning": "c為斜邊且c>a>0。"
+      }
+    ],
+    "conceptNarrative": [
+      "求股一定使用斜邊平方減已知股平方，順序不可顛倒。",
+      "斜邊應大於任一股；若資料不符合，要先質疑模型。",
+      "平方差公式可簡化大數，例如29²-20²。",
+      "未知坐標可正可負，但未知「股長」只取正。",
+      "比例型題可先辨認3-4-5、5-12-13等基本數組。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "求股公式",
+        "statement": "在直角三角形中，若c為斜邊，b=√(c²-a²)。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "c²-a²=b²",
+        "conditions": [
+          "c>a≥0。"
+        ],
+        "meaning": "平方差必為非負。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能用c-a代替√(c²-a²)。",
+      "若已知邊比斜邊大，資料不可能。",
+      "結果負根不能作邊長。",
+      "平方差算出後仍須開平方。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認哪個已知量是斜邊。",
+        "check": "它必須最大。"
+      },
+      {
+        "step": 2,
+        "instruction": "寫未知股平方=斜邊平方-已知股平方。",
+        "check": "減法順序固定。"
+      },
+      {
+        "step": 3,
+        "instruction": "利用平方差或直接計算。",
+        "check": "降低大數錯誤。"
+      },
+      {
+        "step": 4,
+        "instruction": "開平方並取正。",
+        "check": "化簡根式。"
+      },
+      {
+        "step": 5,
+        "instruction": "檢查兩股皆短於斜邊。",
+        "check": "代回畢氏定理。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "斜邊15、一股9。",
+        "solutionSteps": [
+          "225-81=144。"
+        ],
+        "answer": "另一股12。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "斜邊√34、一股3。",
+        "solutionSteps": [
+          "34-9=25。"
+        ],
+        "answer": "另一股5。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "斜邊37、一股12。",
+        "solutionSteps": [
+          "37²-12²=(25)(49)=1225。"
+        ],
+        "answer": "另一股35。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "兩股比8:15、斜邊34。",
+        "solutionSteps": [
+          "基本比8:15:17。",
+          "放大2倍。"
+        ],
+        "answer": "兩股16與30。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "13與5直接相減得8。",
+        "why": "長度不能直接相減求股。",
+        "correction": "√(169-25)=12。"
+      },
+      {
+        "mistake": "使用13²+5²。",
+        "why": "求股卻使用平方和。",
+        "correction": "斜邊平方減股平方。"
+      },
+      {
+        "mistake": "答±12。",
+        "why": "股長非負。",
+        "correction": "只取12。"
+      },
+      {
+        "mistake": "平方差得到144就停止。",
+        "why": "144是股長平方。",
+        "correction": "再開平方。"
+      },
+      {
+        "mistake": "把較短邊當斜邊。",
+        "why": "平方差可能負。",
+        "correction": "先找最大邊。"
+      },
+      {
+        "mistake": "比例題只使用比例分子。",
+        "why": "比例缺少斜邊份數。",
+        "correction": "由平方關係求完整數組。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "未知股=√(斜邊²-已知股²)。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "確認哪個已知量是斜邊。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "13與5直接相減得8。；修正：√(169-25)=12。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "代回後平方和成立嗎？"
+      }
+    ],
+    "summary": [
+      "未知股=√(斜邊²-已知股²)。",
+      "先辨認邊角色，再處理平方差。"
+    ],
+    "connections": {
+      "previous": "需要 s011 的距離結構與 s009 定理。",
+      "next": [
+        "s013 將在全文字情境辨認未知股。",
+        "s014 會反過來用三邊判定直角。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s012-find-leg"
+    ],
+    "accessibilityNotes": [
+      "直角三角形斜邊標13，一股標5，底邊未知b，並寫出b等於13平方減5平方的平方根。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s012-v001",
+        "u11-s012-v002",
+        "u11-s012-v003",
+        "u11-s012-v004",
+        "u11-s012-v005",
+        "u11-s012-v006",
+        "u11-s012-v007",
+        "u11-s012-v008",
+        "u11-s012-v009",
+        "u11-s012-v010",
+        "u11-s012-v011",
+        "u11-s012-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s012-cr001",
+        "u11-s012-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「已知斜邊求股」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「13與5直接相減得8。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "cbd6c02425e5903ab96034788002c3e0341dc8ca54e32e13c162ca5301500b68"
+  },
+  {
+    "lectureId": "u11-s013-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-pythagorean",
+    "skillId": "pythagorean-word",
+    "lockedSkillOrder": 13,
+    "lockedTitle": "畢氏定理文字應用",
+    "title": "畢氏定理文字應用：沒有圖也能重建直角關係",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能從全文字找出互相垂直的位移",
+      "能區分路程與起終點直線距離",
+      "能完成樹折、纜線、航向等兩階段問題"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "pythagorean-find-leg",
+        "requiredLevel": "能使用前一技能「已知斜邊求股」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "路程",
+        "definition": "實際走過各段長度總和。"
+      },
+      {
+        "term": "位移長度",
+        "definition": "起點到終點的直線距離。"
+      },
+      {
+        "term": "正下方",
+        "definition": "表示與地面方向垂直。"
+      },
+      {
+        "term": "繃直",
+        "definition": "線段可視為兩點間直線。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "直線距離=√(水平位移²+垂直位移²)",
+        "meaning": "兩位移方向互相垂直。"
+      }
+    ],
+    "conceptNarrative": [
+      "全文字題必須自己重建圖形；先圈出方向詞與垂直關係。",
+      "向東再向北的路程是兩段和，位移長度是斜邊。",
+      "樹折題求原高時，先求折斷段，再加未折斷段。",
+      "「至少多長」常表示兩點直線距離，但若有鬆弛需另加。",
+      "問「少走多少」要比較兩種路程，不只求一條。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "文字建模",
+        "statement": "把方向、位置與物件關係轉成直角三角形。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "d²=x²+y²",
+        "conditions": [
+          "x與y為互相垂直的位移分量。"
+        ],
+        "meaning": "不是任意兩段路程。"
+      }
+    ],
+    "nonApplicableCases": [
+      "沒有垂直關係不能套用。",
+      "路程與位移不可互換。",
+      "樹折題折斷部分不是原樹高。",
+      "忽略「返回」「再」「至少」會漏算。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "圈出方向與動作順序。",
+        "check": "東西與南北互相垂直。"
+      },
+      {
+        "step": 2,
+        "instruction": "列出所求是路程、距離或總高度。",
+        "check": "避免答非所問。"
+      },
+      {
+        "step": 3,
+        "instruction": "建立直角三角形的兩股與斜邊。",
+        "check": "必要時文字標記。"
+      },
+      {
+        "step": 4,
+        "instruction": "使用畢氏定理。",
+        "check": "兩階段題分開計算。"
+      },
+      {
+        "step": 5,
+        "instruction": "回讀完整句子。",
+        "check": "是否還要相加、相減或比較。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "向西8再向南15，求位移。",
+        "solutionSteps": [
+          "兩方向垂直。"
+        ],
+        "answer": "17公里。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "原路程23，直線距離17，少走多少。",
+        "solutionSteps": [
+          "比較兩者。"
+        ],
+        "answer": "6。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "樹折點高12、梢離根5。",
+        "solutionSteps": [
+          "折段13。",
+          "原高12+13。"
+        ],
+        "answer": "25。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "桿高20、固定點距15。",
+        "solutionSteps": [
+          "線為斜邊。"
+        ],
+        "answer": "25。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把東3北4的距離答7。",
+        "why": "混淆路程與位移。",
+        "correction": "直線距離5。"
+      },
+      {
+        "mistake": "樹折題只答斜邊。",
+        "why": "題目問原高。",
+        "correction": "加上未折斷段。"
+      },
+      {
+        "mistake": "忽略「返回起點」。",
+        "why": "漏算最後一段。",
+        "correction": "按時間順序列所有路段。"
+      },
+      {
+        "mistake": "把「正下方」當同一點。",
+        "why": "未理解垂直投影。",
+        "correction": "建立水平距離與高度。"
+      },
+      {
+        "mistake": "少走多少只答直線距離。",
+        "why": "比較問題未完成。",
+        "correction": "原路程減新路程。"
+      },
+      {
+        "mistake": "文字沒有圖就拒絕作答。",
+        "why": "方向資訊已足夠建模。",
+        "correction": "自行畫簡圖或列分量。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "文字題先重建直角關係，再計算。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "圈出方向與動作順序。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "把東3北4的距離答7。；修正：直線距離5。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "答案句完整回應問題嗎？"
+      }
+    ],
+    "summary": [
+      "文字題先重建直角關係，再計算。",
+      "路程、位移與物件總長必須分清。"
+    ],
+    "connections": {
+      "previous": "需要 s012 的求股與 s010 的情境建模。",
+      "next": [
+        "s014 將由三邊資料判斷是否直角。",
+        "s016 將加入表格、成本與規格限制。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s013-v001",
+        "u11-s013-v002",
+        "u11-s013-v003",
+        "u11-s013-v004",
+        "u11-s013-v005",
+        "u11-s013-v006",
+        "u11-s013-v007",
+        "u11-s013-v008",
+        "u11-s013-v009",
+        "u11-s013-v010",
+        "u11-s013-v011",
+        "u11-s013-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s013-cr001",
+        "u11-s013-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「畢氏定理文字應用」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「把東3北4的距離答7。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "0cc3b9e42a1d2e03e9e2aceb49eda1bc56cf4dc27c38c6dfa70fe1f9a86665b6"
+  },
+  {
+    "lectureId": "u11-s014-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-pythagorean",
+    "skillId": "right-triangle-identify",
+    "lockedSkillOrder": 14,
+    "lockedTitle": "直角三角形判定",
+    "title": "直角三角形判定：排序後檢查平方關係",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能先確認三邊可構成三角形",
+      "能以最長邊平方判定直角",
+      "能處理根式、小數與未知邊判定"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "pythagorean-word",
+        "requiredLevel": "能使用前一技能「畢氏定理文字應用」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "直角三角形判定",
+        "definition": "由三邊資料確認是否含直角。"
+      },
+      {
+        "term": "最長邊",
+        "definition": "直角成立時會成為斜邊。"
+      },
+      {
+        "term": "三角形不等式",
+        "definition": "任兩邊和大於第三邊。"
+      },
+      {
+        "term": "平方檢查",
+        "definition": "兩短邊平方和與最長邊平方比較。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "a²+b²=c²",
+        "meaning": "a≤b≤c且三邊可成三角形時，成立則為直角。"
+      }
+    ],
+    "conceptNarrative": [
+      "判定程序先排序，避免把短邊平方放在等式右側。",
+      "三角形不等式只證明能形成三角形，不能單獨證明直角。",
+      "若平方等式成立，最長邊所對角為直角。",
+      "根式邊可直接平方，常比先估小數更準確。",
+      "量測題若未給誤差容許，必須按題目數值精確判定。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "判定準則",
+        "statement": "三邊a≤b≤c若a²+b²=c²，則為直角三角形。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "a+b>c",
+        "conditions": [
+          "先確認可成三角形。"
+        ],
+        "meaning": "排序後只需檢查兩短邊和大於最長邊。"
+      },
+      {
+        "formula": "a²+b²=c²",
+        "conditions": [
+          "判定直角。"
+        ],
+        "meaning": "等式需精確成立。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能因為三邊是整數就判直角。",
+      "接近畢氏數組不等於成立。",
+      "a+b>c不是直角判定。",
+      "圖看起來垂直不是證明。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "將三邊由小到大排序。",
+        "check": "記最長邊c。"
+      },
+      {
+        "step": 2,
+        "instruction": "檢查能否成三角形。",
+        "check": "a+b>c。"
+      },
+      {
+        "step": 3,
+        "instruction": "計算a²+b²與c²。",
+        "check": "保留精確值。"
+      },
+      {
+        "step": 4,
+        "instruction": "判斷是否相等。",
+        "check": "相等才是直角。"
+      },
+      {
+        "step": 5,
+        "instruction": "指出直角在c的對面。",
+        "check": "完成幾何結論。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "判定9,12,15。",
+        "solutionSteps": [
+          "81+144=225。"
+        ],
+        "answer": "是直角三角形。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "判定4,6,7。",
+        "solutionSteps": [
+          "16+36=52≠49。"
+        ],
+        "answer": "不是。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "判定√8,√17,5。",
+        "solutionSteps": [
+          "8+17=25。"
+        ],
+        "answer": "是。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "三邊x,20,29且29為斜邊。",
+        "solutionSteps": [
+          "x²=841-400=441。"
+        ],
+        "answer": "x=21。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "6+8>10所以是直角。",
+        "why": "只驗證三角形不等式。",
+        "correction": "再檢查平方。"
+      },
+      {
+        "mistake": "用6²+10²=8²。",
+        "why": "未排序最長邊。",
+        "correction": "右側放10²。"
+      },
+      {
+        "mistake": "5,6,7看起來像直角。",
+        "why": "視覺或直覺不可靠。",
+        "correction": "精確比較平方。"
+      },
+      {
+        "mistake": "根式先四捨五入再判定。",
+        "why": "可能破壞等式。",
+        "correction": "直接平方精確根式。"
+      },
+      {
+        "mistake": "只算平方和但不說結論。",
+        "why": "論證未完成。",
+        "correction": "指出是否相等與角型。"
+      },
+      {
+        "mistake": "接近等式就判直角。",
+        "why": "題目未給容差。",
+        "correction": "必須精確相等。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "排序、成三角形、比較平方。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "將三邊由小到大排序。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "6+8>10所以是直角。；修正：再檢查平方。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "等式是精確相等嗎？"
+      }
+    ],
+    "summary": [
+      "排序、成三角形、比較平方。",
+      "相等時最長邊對角為直角。"
+    ],
+    "connections": {
+      "previous": "需要 s013 的直角模型與平方運算。",
+      "next": [
+        "s015 將把判定寫成完整逆命題。",
+        "s016 會在品管與規格情境使用。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s014-triangle-check"
+    ],
+    "accessibilityNotes": [
+      "三角形三邊標30、40、50，最長邊為50，左下角畫直角，並標示平方關係。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s014-v001",
+        "u11-s014-v002",
+        "u11-s014-v003",
+        "u11-s014-v004",
+        "u11-s014-v005",
+        "u11-s014-v006",
+        "u11-s014-v007",
+        "u11-s014-v008",
+        "u11-s014-v009",
+        "u11-s014-v010",
+        "u11-s014-v011",
+        "u11-s014-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s014-cr001",
+        "u11-s014-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「直角三角形判定」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「6+8>10所以是直角。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "08ddeca41450058f3d7e660cace03a74cb4cb26ce7f89e523ee9e5bfc85b70b2"
+  },
+  {
+    "lectureId": "u11-s015-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-pythagorean",
+    "skillId": "pythagorean-converse-basic",
+    "lockedSkillOrder": 15,
+    "lockedTitle": "畢氏定理逆命題基本",
+    "title": "畢氏定理逆命題基本：由邊長條件推出直角",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能區分畢氏定理與其逆命題",
+      "能說明逆命題所需的完整前提",
+      "能用逆命題寫出合法判定論證"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "right-triangle-identify",
+        "requiredLevel": "能使用前一技能「直角三角形判定」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "命題",
+        "definition": "具有真假判斷的陳述。"
+      },
+      {
+        "term": "逆命題",
+        "definition": "交換原命題的條件與結論。"
+      },
+      {
+        "term": "充分條件",
+        "definition": "一旦成立便足以推出結論的條件。"
+      },
+      {
+        "term": "斜邊候選",
+        "definition": "三邊中最長邊。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "直角⇒a²+b²=c²",
+        "meaning": "畢氏定理原命題。"
+      },
+      {
+        "symbol": "a²+b²=c²⇒直角",
+        "meaning": "在a,b,c為同一三角形三邊且c最長時的逆命題。"
+      }
+    ],
+    "conceptNarrative": [
+      "原命題從已知直角推出邊長關係；逆命題從邊長關係推出直角。",
+      "逆命題不是把公式倒著念而已，必須保留「同一三角形三邊」與「c為最長邊」。",
+      "排序是演算法可靠性的核心，因輸入順序可能任意。",
+      "同比縮放三邊會讓等式兩側同乘k²，因此直角性保留。",
+      "目測像90°或平方值接近，都不是逆命題的精確前提。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "畢氏定理逆命題",
+        "statement": "若三角形兩短邊平方和等於最長邊平方，則其最長邊所對角為直角。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "a²+b²=c²⇒∠C=90°",
+        "conditions": [
+          "a,b,c為三角形三邊且c最大。"
+        ],
+        "meaning": "由邊長條件判角。"
+      }
+    ],
+    "nonApplicableCases": [
+      "代數等式中的三個數若不是三角形三邊，不能推出幾何結論。",
+      "三角形不等式不是直角的充分條件。",
+      "近似相等需另有容差規範才可工程判定。",
+      "不能把原命題當逆命題的文字答案。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "寫清已知三數是同一三角形三邊。",
+        "check": "先確認幾何對象。"
+      },
+      {
+        "step": 2,
+        "instruction": "排序並指定最長邊c。",
+        "check": "確保斜邊候選。"
+      },
+      {
+        "step": 3,
+        "instruction": "驗證a²+b²=c²。",
+        "check": "使用精確值。"
+      },
+      {
+        "step": 4,
+        "instruction": "明確引用逆命題。",
+        "check": "不是只寫「所以」。"
+      },
+      {
+        "step": 5,
+        "instruction": "指出c所對角為直角。",
+        "check": "完成結論位置。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "說明3,4,5為何能判直角。",
+        "solutionSteps": [
+          "三邊可成三角形。",
+          "3²+4²=5²。",
+          "依逆命題。"
+        ],
+        "answer": "5的對角為直角。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "區分原命題與逆命題。",
+        "solutionSteps": [
+          "原：角推出邊。",
+          "逆：邊推出角。"
+        ],
+        "answer": "條件與結論交換。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "判定縮放後6,8,10。",
+        "solutionSteps": [
+          "平方等式同乘4。"
+        ],
+        "answer": "仍為直角。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "評估「接近等式即可」。",
+        "solutionSteps": [
+          "逆命題要求等號。",
+          "未給容差。"
+        ],
+        "answer": "不能直接判定。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把「直角則平方和」當逆命題。",
+        "why": "條件結論未交換。",
+        "correction": "逆命題從平方和推出直角。"
+      },
+      {
+        "mistake": "只寫a²+b²=c²，沒說c最大。",
+        "why": "邊角色不完整。",
+        "correction": "先排序。"
+      },
+      {
+        "mistake": "三個任意數滿足等式就說有直角。",
+        "why": "缺少三角形前提。",
+        "correction": "確認是同一三角形三邊。"
+      },
+      {
+        "mistake": "a+b>c所以直角。",
+        "why": "只證明可成三角形。",
+        "correction": "需平方等式。"
+      },
+      {
+        "mistake": "量測接近就用等號。",
+        "why": "忽略誤差規範。",
+        "correction": "無容差時不能判。"
+      },
+      {
+        "mistake": "判定後沒指出哪個角直。",
+        "why": "幾何結論不完整。",
+        "correction": "最長邊所對角為直角。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "逆命題由精確邊長關係推出直角。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "寫清已知三數是同一三角形三邊。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "把「直角則平方和」當逆命題。；修正：逆命題從平方和推出直角。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "推理有明確引用與角位置嗎？"
+      }
+    ],
+    "summary": [
+      "逆命題由精確邊長關係推出直角。",
+      "前提、排序與結論位置缺一不可。"
+    ],
+    "connections": {
+      "previous": "需要 s014 的計算判定。",
+      "next": [
+        "s016 將把完整判定用於品管、演算法與決策。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s015-v001",
+        "u11-s015-v002",
+        "u11-s015-v003",
+        "u11-s015-v004",
+        "u11-s015-v005",
+        "u11-s015-v006",
+        "u11-s015-v007",
+        "u11-s015-v008",
+        "u11-s015-v009",
+        "u11-s015-v010",
+        "u11-s015-v011",
+        "u11-s015-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s015-cr001",
+        "u11-s015-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「畢氏定理逆命題基本」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「把「直角則平方和」當逆命題。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "ce7c1577694bcec9535792cd5331ea6703bc8db4d5085cbdedf04607a7357a72"
+  },
+  {
+    "lectureId": "u11-s016-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-literacy",
+    "skillId": "root-literacy",
+    "lockedSkillOrder": 16,
+    "lockedTitle": "平方根素養題",
+    "title": "平方根素養題：在規格與限制下做數學決策",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能從表格、規格與文字選擇根式工具",
+      "能在精確值、近似值與限制間切換",
+      "能完成多步決策並說明模型限制"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "pythagorean-converse-basic",
+        "requiredLevel": "能使用前一技能「畢氏定理逆命題基本」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "素養題",
+        "definition": "需理解情境、選模型、計算並解讀結果的問題。"
+      },
+      {
+        "term": "規格門檻",
+        "definition": "合格判定的上限、下限或範圍。"
+      },
+      {
+        "term": "模型限制",
+        "definition": "為了計算而採用的簡化假設。"
+      },
+      {
+        "term": "精確值與近似值",
+        "definition": "根式保留完整值；小數依需求近似。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "面積→邊長",
+        "meaning": "正方形邊長=√面積。"
+      },
+      {
+        "symbol": "距離→畢氏",
+        "meaning": "互相垂直分量平方和開根。"
+      },
+      {
+        "symbol": "判定→逆命題",
+        "meaning": "三邊平方關係判角。"
+      }
+    ],
+    "conceptNarrative": [
+      "素養題先辨認資料用途，不是每個數都要使用。",
+      "精確根式適合後續代數運算；工程顯示或規格可能要求小數。",
+      "成本題要同時計算長度與每單位成本，不能只選短路。",
+      "可行性題需把計算結果與「至少、最多、範圍內」比較。",
+      "模型結論只在假設內成立，例如忽略厚度、彎曲或地形。",
+      "答題最後應用完整句說明決策與理由。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "數學建模循環",
+        "statement": "理解情境→建立關係→計算→檢查→解讀。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "總成本=長度×單位成本",
+        "conditions": [
+          "單位一致。"
+        ],
+        "meaning": "不能只比較其中一項。"
+      },
+      {
+        "formula": "合格判定",
+        "conditions": [
+          "計算值與規格門檻比較。"
+        ],
+        "meaning": "注意嚴格或包含等號。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能看到根號就一律化成小數。",
+      "不能忽略單位成本、比例尺或安全門檻。",
+      "不能把理想平面模型無條件套到真實三維物件。",
+      "近似值不得用於需要精確等式的逆命題判定。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "整理已知、所求與限制。",
+        "check": "標出單位與精度。"
+      },
+      {
+        "step": 2,
+        "instruction": "選擇平方根、化簡、比較、畢氏或逆命題。",
+        "check": "說明為何適用。"
+      },
+      {
+        "step": 3,
+        "instruction": "先求精確中間值。",
+        "check": "避免過早四捨五入。"
+      },
+      {
+        "step": 4,
+        "instruction": "依規格轉成近似或決策。",
+        "check": "比較上下限與成本。"
+      },
+      {
+        "step": 5,
+        "instruction": "寫出含限制的結論。",
+        "check": "說明理想化假設。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "面積72的方板，求最簡邊長。",
+        "solutionSteps": [
+          "√72=6√2。"
+        ],
+        "answer": "6√2。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "坐標差9與12、每格2公尺。",
+        "solutionSteps": [
+          "圖上距離15。",
+          "實際30。"
+        ],
+        "answer": "30公尺。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "路長10、單價1.4與路長13、單價1。",
+        "solutionSteps": [
+          "成本14與13。"
+        ],
+        "answer": "第二方案較低。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "門框1.5×2，桿長2.4。",
+        "solutionSteps": [
+          "對角2.5。",
+          "理想平面下2.4<2.5。"
+        ],
+        "answer": "可能通過。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "直接把所有數相加。",
+        "why": "未建立資料角色。",
+        "correction": "先列關係式。"
+      },
+      {
+        "mistake": "過早四捨五入。",
+        "why": "累積誤差可能改變判定。",
+        "correction": "最後一步再近似。"
+      },
+      {
+        "mistake": "只比較路長不比較成本。",
+        "why": "忽略單位價格。",
+        "correction": "算總成本。"
+      },
+      {
+        "mistake": "安全門檻13，12.9說接近所以合格。",
+        "why": "忽略至少的嚴格意義。",
+        "correction": "12.9<13不合格。"
+      },
+      {
+        "mistake": "有理想模型就當真實一定可行。",
+        "why": "未說明厚度等限制。",
+        "correction": "限定結論適用範圍。"
+      },
+      {
+        "mistake": "答案只有數字沒有決策。",
+        "why": "未回應情境問題。",
+        "correction": "寫完整結論與理由。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "素養題不只算數，還要選模型、遵守規格並解讀。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "整理已知、所求與限制。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "直接把所有數相加。；修正：先列關係式。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "結論有寫模型限制嗎？"
+      }
+    ],
+    "summary": [
+      "素養題不只算數，還要選模型、遵守規格並解讀。",
+      "精確值、近似值與決策各有適當時機。"
+    ],
+    "connections": {
+      "previous": "整合 s001 至 s015 的平方根、根式與畢氏技能。",
+      "next": [
+        "下一單元可把這些建模與代數技能用於更複雜式子與方程。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s016-screen-diagonal"
+    ],
+    "accessibilityNotes": [
+      "正方形螢幕邊長12公分，畫出從左下到右上的對角線，標示保護膜至少需要長度d。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s016-v001",
+        "u11-s016-v002",
+        "u11-s016-v003",
+        "u11-s016-v004",
+        "u11-s016-v005",
+        "u11-s016-v006",
+        "u11-s016-v007",
+        "u11-s016-v008",
+        "u11-s016-v009",
+        "u11-s016-v010",
+        "u11-s016-v011",
+        "u11-s016-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s016-cr001",
+        "u11-s016-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「平方根素養題」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「直接把所有數相加。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "2421f6b45a9907802f85d216c800e79bc51980ded9840401fc0689e1b8b29679"
+  }
+];

@@ -1,0 +1,245 @@
+{
+  "lectureId": "u11-s013-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-pythagorean",
+  "skillId": "pythagorean-word",
+  "lockedSkillOrder": 13,
+  "lockedTitle": "畢氏定理文字應用",
+  "title": "畢氏定理文字應用：沒有圖也能重建直角關係",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從全文字找出互相垂直的位移",
+    "能區分路程與起終點直線距離",
+    "能完成樹折、纜線、航向等兩階段問題"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "pythagorean-find-leg",
+      "requiredLevel": "能使用前一技能「已知斜邊求股」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "路程",
+      "definition": "實際走過各段長度總和。"
+    },
+    {
+      "term": "位移長度",
+      "definition": "起點到終點的直線距離。"
+    },
+    {
+      "term": "正下方",
+      "definition": "表示與地面方向垂直。"
+    },
+    {
+      "term": "繃直",
+      "definition": "線段可視為兩點間直線。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "直線距離=√(水平位移²+垂直位移²)",
+      "meaning": "兩位移方向互相垂直。"
+    }
+  ],
+  "conceptNarrative": [
+    "全文字題必須自己重建圖形；先圈出方向詞與垂直關係。",
+    "向東再向北的路程是兩段和，位移長度是斜邊。",
+    "樹折題求原高時，先求折斷段，再加未折斷段。",
+    "「至少多長」常表示兩點直線距離，但若有鬆弛需另加。",
+    "問「少走多少」要比較兩種路程，不只求一條。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "文字建模",
+      "statement": "把方向、位置與物件關係轉成直角三角形。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "d²=x²+y²",
+      "conditions": [
+        "x與y為互相垂直的位移分量。"
+      ],
+      "meaning": "不是任意兩段路程。"
+    }
+  ],
+  "nonApplicableCases": [
+    "沒有垂直關係不能套用。",
+    "路程與位移不可互換。",
+    "樹折題折斷部分不是原樹高。",
+    "忽略「返回」「再」「至少」會漏算。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出方向與動作順序。",
+      "check": "東西與南北互相垂直。"
+    },
+    {
+      "step": 2,
+      "instruction": "列出所求是路程、距離或總高度。",
+      "check": "避免答非所問。"
+    },
+    {
+      "step": 3,
+      "instruction": "建立直角三角形的兩股與斜邊。",
+      "check": "必要時文字標記。"
+    },
+    {
+      "step": 4,
+      "instruction": "使用畢氏定理。",
+      "check": "兩階段題分開計算。"
+    },
+    {
+      "step": 5,
+      "instruction": "回讀完整句子。",
+      "check": "是否還要相加、相減或比較。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "向西8再向南15，求位移。",
+      "solutionSteps": [
+        "兩方向垂直。"
+      ],
+      "answer": "17公里。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "原路程23，直線距離17，少走多少。",
+      "solutionSteps": [
+        "比較兩者。"
+      ],
+      "answer": "6。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "樹折點高12、梢離根5。",
+      "solutionSteps": [
+        "折段13。",
+        "原高12+13。"
+      ],
+      "answer": "25。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "桿高20、固定點距15。",
+      "solutionSteps": [
+        "線為斜邊。"
+      ],
+      "answer": "25。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把東3北4的距離答7。",
+      "why": "混淆路程與位移。",
+      "correction": "直線距離5。"
+    },
+    {
+      "mistake": "樹折題只答斜邊。",
+      "why": "題目問原高。",
+      "correction": "加上未折斷段。"
+    },
+    {
+      "mistake": "忽略「返回起點」。",
+      "why": "漏算最後一段。",
+      "correction": "按時間順序列所有路段。"
+    },
+    {
+      "mistake": "把「正下方」當同一點。",
+      "why": "未理解垂直投影。",
+      "correction": "建立水平距離與高度。"
+    },
+    {
+      "mistake": "少走多少只答直線距離。",
+      "why": "比較問題未完成。",
+      "correction": "原路程減新路程。"
+    },
+    {
+      "mistake": "文字沒有圖就拒絕作答。",
+      "why": "方向資訊已足夠建模。",
+      "correction": "自行畫簡圖或列分量。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "文字題先重建直角關係，再計算。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "圈出方向與動作順序。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "把東3北4的距離答7。；修正：直線距離5。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "答案句完整回應問題嗎？"
+    }
+  ],
+  "summary": [
+    "文字題先重建直角關係，再計算。",
+    "路程、位移與物件總長必須分清。"
+  ],
+  "connections": {
+    "previous": "需要 s012 的求股與 s010 的情境建模。",
+    "next": [
+      "s014 將由三邊資料判斷是否直角。",
+      "s016 將加入表格、成本與規格限制。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s013-v001",
+      "u11-s013-v002",
+      "u11-s013-v003",
+      "u11-s013-v004",
+      "u11-s013-v005",
+      "u11-s013-v006",
+      "u11-s013-v007",
+      "u11-s013-v008",
+      "u11-s013-v009",
+      "u11-s013-v010",
+      "u11-s013-v011",
+      "u11-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s013-cr001",
+      "u11-s013-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「畢氏定理文字應用」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「把東3北4的距離答7。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "0cc3b9e42a1d2e03e9e2aceb49eda1bc56cf4dc27c38c6dfa70fe1f9a86665b6"
+}

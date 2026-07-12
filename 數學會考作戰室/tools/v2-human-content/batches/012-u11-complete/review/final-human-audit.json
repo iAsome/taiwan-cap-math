@@ -1,0 +1,55 @@
+{
+  "unitId": "u11",
+  "auditDate": "2026-07-12",
+  "auditor": "CHATGPT_AUTHOR_AND_REVIEWER",
+  "scope": {
+    "lectures": 16,
+    "mcQuestions": 192,
+    "constructedResponse": 32,
+    "semanticReviews": 192,
+    "figures": 9
+  },
+  "manualChecks": [
+    "recomputed every stored MC answer independently",
+    "checked all four choices for exactly one truth value",
+    "checked negative signs, parentheses, radicals, exponents and units",
+    "checked all CR standard answers, alternative methods and rubrics",
+    "checked future-skill leakage and CAP boundary",
+    "rendered every SVG at native and 320-pixel width",
+    "reviewed advanced difficulty and literacy-context necessity",
+    "reviewed number-swapped and cosmetic-context duplication"
+  ],
+  "actualIssuesFoundAndRepaired": [
+    {
+      "issueId": "U11-AUDIT-001",
+      "location": "u11/s004/v007",
+      "found": "The draft distractor 33 also rounded to 5.7, creating two correct choices with 32.",
+      "repair": "Replaced 33 with 34 and independently recomputed the rounding interval 31.9225≤m<33.0625.",
+      "verification": "Only 32 among the final four choices rounds to 5.7."
+    },
+    {
+      "issueId": "U11-AUDIT-002",
+      "location": "u11/s002, s007, s008, s009, s012, s013 basic sets",
+      "found": "Nine draft items were too close to number-swapped direct-computation siblings.",
+      "repair": "Re-authored them as continuation-step, dual-condition, equivalence-principle, error-diagnosis, inference-chain, formula-selection, or direction-plus-distance tasks.",
+      "verification": "Final prompts test distinguishable capabilities and their structural fingerprints are different."
+    },
+    {
+      "issueId": "U11-AUDIT-003",
+      "location": "u11/s002, s005, s008, s011, s014",
+      "found": "The structural duplicate scan identified twelve additional prompts whose wording collapsed to the same pattern after numbers and units were removed.",
+      "repair": "Re-authored the prompts and conditions to test distinct actions: completing a supplied factorization, checking two simultaneous conditions, applying the main-square-root convention, using supplied displacement components, and diagnosing misuse of a nearby Pythagorean triple.",
+      "verification": "The final exact and structural duplicate scan passes for all 224 MC and constructed-response prompts in the unit."
+    },
+    {
+      "issueId": "U11-AUDIT-004",
+      "location": "u11/s016 question inventory",
+      "found": "The first root-literacy draft contained thirteen MC items instead of the locked total of twelve.",
+      "repair": "Removed the safety-brace specification item because its reasoning substantially overlapped the earlier find-leg and application skills; retained three literacy tasks with different decision structures.",
+      "verification": "s016 now contains exactly three basic, three standard, three advanced and three literacy items, with a 3/3/3/3 answer-index distribution."
+    }
+  ],
+  "unresolvedIssues": [],
+  "oldContentUsed": false,
+  "decision": "pass-pending-central-coordinator-cross-unit-audit"
+}

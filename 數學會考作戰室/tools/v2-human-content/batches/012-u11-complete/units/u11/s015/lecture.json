@@ -1,0 +1,251 @@
+{
+  "lectureId": "u11-s015-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-pythagorean",
+  "skillId": "pythagorean-converse-basic",
+  "lockedSkillOrder": 15,
+  "lockedTitle": "畢氏定理逆命題基本",
+  "title": "畢氏定理逆命題基本：由邊長條件推出直角",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能區分畢氏定理與其逆命題",
+    "能說明逆命題所需的完整前提",
+    "能用逆命題寫出合法判定論證"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "right-triangle-identify",
+      "requiredLevel": "能使用前一技能「直角三角形判定」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "命題",
+      "definition": "具有真假判斷的陳述。"
+    },
+    {
+      "term": "逆命題",
+      "definition": "交換原命題的條件與結論。"
+    },
+    {
+      "term": "充分條件",
+      "definition": "一旦成立便足以推出結論的條件。"
+    },
+    {
+      "term": "斜邊候選",
+      "definition": "三邊中最長邊。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "直角⇒a²+b²=c²",
+      "meaning": "畢氏定理原命題。"
+    },
+    {
+      "symbol": "a²+b²=c²⇒直角",
+      "meaning": "在a,b,c為同一三角形三邊且c最長時的逆命題。"
+    }
+  ],
+  "conceptNarrative": [
+    "原命題從已知直角推出邊長關係；逆命題從邊長關係推出直角。",
+    "逆命題不是把公式倒著念而已，必須保留「同一三角形三邊」與「c為最長邊」。",
+    "排序是演算法可靠性的核心，因輸入順序可能任意。",
+    "同比縮放三邊會讓等式兩側同乘k²，因此直角性保留。",
+    "目測像90°或平方值接近，都不是逆命題的精確前提。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "畢氏定理逆命題",
+      "statement": "若三角形兩短邊平方和等於最長邊平方，則其最長邊所對角為直角。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a²+b²=c²⇒∠C=90°",
+      "conditions": [
+        "a,b,c為三角形三邊且c最大。"
+      ],
+      "meaning": "由邊長條件判角。"
+    }
+  ],
+  "nonApplicableCases": [
+    "代數等式中的三個數若不是三角形三邊，不能推出幾何結論。",
+    "三角形不等式不是直角的充分條件。",
+    "近似相等需另有容差規範才可工程判定。",
+    "不能把原命題當逆命題的文字答案。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫清已知三數是同一三角形三邊。",
+      "check": "先確認幾何對象。"
+    },
+    {
+      "step": 2,
+      "instruction": "排序並指定最長邊c。",
+      "check": "確保斜邊候選。"
+    },
+    {
+      "step": 3,
+      "instruction": "驗證a²+b²=c²。",
+      "check": "使用精確值。"
+    },
+    {
+      "step": 4,
+      "instruction": "明確引用逆命題。",
+      "check": "不是只寫「所以」。"
+    },
+    {
+      "step": 5,
+      "instruction": "指出c所對角為直角。",
+      "check": "完成結論位置。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "說明3,4,5為何能判直角。",
+      "solutionSteps": [
+        "三邊可成三角形。",
+        "3²+4²=5²。",
+        "依逆命題。"
+      ],
+      "answer": "5的對角為直角。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "區分原命題與逆命題。",
+      "solutionSteps": [
+        "原：角推出邊。",
+        "逆：邊推出角。"
+      ],
+      "answer": "條件與結論交換。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "判定縮放後6,8,10。",
+      "solutionSteps": [
+        "平方等式同乘4。"
+      ],
+      "answer": "仍為直角。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "評估「接近等式即可」。",
+      "solutionSteps": [
+        "逆命題要求等號。",
+        "未給容差。"
+      ],
+      "answer": "不能直接判定。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把「直角則平方和」當逆命題。",
+      "why": "條件結論未交換。",
+      "correction": "逆命題從平方和推出直角。"
+    },
+    {
+      "mistake": "只寫a²+b²=c²，沒說c最大。",
+      "why": "邊角色不完整。",
+      "correction": "先排序。"
+    },
+    {
+      "mistake": "三個任意數滿足等式就說有直角。",
+      "why": "缺少三角形前提。",
+      "correction": "確認是同一三角形三邊。"
+    },
+    {
+      "mistake": "a+b>c所以直角。",
+      "why": "只證明可成三角形。",
+      "correction": "需平方等式。"
+    },
+    {
+      "mistake": "量測接近就用等號。",
+      "why": "忽略誤差規範。",
+      "correction": "無容差時不能判。"
+    },
+    {
+      "mistake": "判定後沒指出哪個角直。",
+      "why": "幾何結論不完整。",
+      "correction": "最長邊所對角為直角。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "逆命題由精確邊長關係推出直角。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "寫清已知三數是同一三角形三邊。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "把「直角則平方和」當逆命題。；修正：逆命題從平方和推出直角。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "推理有明確引用與角位置嗎？"
+    }
+  ],
+  "summary": [
+    "逆命題由精確邊長關係推出直角。",
+    "前提、排序與結論位置缺一不可。"
+  ],
+  "connections": {
+    "previous": "需要 s014 的計算判定。",
+    "next": [
+      "s016 將把完整判定用於品管、演算法與決策。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s015-v001",
+      "u11-s015-v002",
+      "u11-s015-v003",
+      "u11-s015-v004",
+      "u11-s015-v005",
+      "u11-s015-v006",
+      "u11-s015-v007",
+      "u11-s015-v008",
+      "u11-s015-v009",
+      "u11-s015-v010",
+      "u11-s015-v011",
+      "u11-s015-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s015-cr001",
+      "u11-s015-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「畢氏定理逆命題基本」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「把「直角則平方和」當逆命題。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "ce7c1577694bcec9535792cd5331ea6703bc8db4d5085cbdedf04607a7357a72"
+}
