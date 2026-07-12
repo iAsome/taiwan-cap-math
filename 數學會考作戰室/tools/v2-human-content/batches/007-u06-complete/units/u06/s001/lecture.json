@@ -1,0 +1,260 @@
+{
+  "lectureId": "u06-s001-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-ratio-basics",
+  "skillId": "ratio-simplify",
+  "lockedSkillTitle": "比的化簡",
+  "title": "比的化簡：先統一單位再找最簡整數比",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "比與比例式基礎",
+    "skillOrder": 1,
+    "lockedPrerequisiteSkillIds": [],
+    "capBoundary": "只處理兩量的比與最簡整數比；連比的完整技巧留在 U18。"
+  },
+  "prerequisiteBridge": "本技能從整數、分數、小數的四則運算出發。即使沒有前置技能 ID，也必須先會約分、通分、把小數化成整數，以及辨認相同單位。",
+  "learningOutcomes": [
+    "能說明 a:b 表示 a÷b，且後項 b 不可為 0。",
+    "能將整數比、分數比、小數比化成互質整數比。",
+    "能先換成相同單位再化簡。",
+    "能判斷兩個比是否等值，並解釋共同乘除的理由。"
+  ],
+  "glossary": [
+    {
+      "term": "比",
+      "definition": "用除法比較兩個同類量的關係，寫作前項:後項。"
+    },
+    {
+      "term": "前項",
+      "definition": "比號左邊的量。"
+    },
+    {
+      "term": "後項",
+      "definition": "比號右邊的量；因為相當於除數，所以不能是 0。"
+    },
+    {
+      "term": "比值",
+      "definition": "前項除以後項所得的數。"
+    },
+    {
+      "term": "最簡整數比",
+      "definition": "前項與後項都是整數，而且最大公因數為 1 的比。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a:b",
+      "meaning": "a 與 b 的比，等同 a÷b；b≠0。"
+    },
+    {
+      "symbol": "a:b=ka:kb",
+      "meaning": "k≠0 時，前後項同乘 k，比值不變。"
+    },
+    {
+      "symbol": "a:b=(a÷d):(b÷d)",
+      "meaning": "d 為前後項的共同非零因數時，可同除 d。"
+    }
+  ],
+  "conceptNarrative": [
+    "比不是兩個數並排而已，而是用除法表達相對大小。例如 6:9 的比值是 6÷9=2/3。",
+    "化簡的目標不是把每一項變小，而是保持比值不變並得到互質整數。6:9 同除以 3 得 2:3。",
+    "若含小數，可同乘 10、100 等消去小數；若含分數，可同乘所有分母的最小公倍數。",
+    "不同單位不能直接約分。2 公尺:80 公分要先改成 200 公分:80 公分，才得到 5:2。",
+    "比的順序有意義。男生:女生與女生:男生通常不同，不能任意交換。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等值比",
+      "statement": "若 a:b 與 c:d 的比值相等，即 a/b=c/d，則兩比等值；b、d 均不可為 0。"
+    },
+    {
+      "name": "最簡整數比",
+      "statement": "前後項皆為整數，且除 1 外沒有共同正因數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a:b=a/b",
+      "conditions": [
+        "b≠0"
+      ],
+      "meaning": "以除法理解比值。"
+    },
+    {
+      "formula": "a:b=ka:kb",
+      "conditions": [
+        "k≠0"
+      ],
+      "meaning": "前後項同乘同一非零數，比值不變。"
+    },
+    {
+      "formula": "分數比同乘分母最小公倍數",
+      "conditions": [
+        "所有分母均非0"
+      ],
+      "meaning": "先化成整數比，再約成互質。"
+    }
+  ],
+  "nonApplicableCases": [
+    "後項為 0 時，比值沒有定義。",
+    "未統一公尺與公分、公斤與公克等單位時，不可直接化簡。",
+    "只除前項或只除後項會改變比值。",
+    "把 4:6 化成 2:2 並非同除同一數，屬錯誤。",
+    "最簡比要求整數；0.5:1 雖等值，仍應寫成 1:2。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認比較順序與後項是否為 0。",
+      "check": "題目要的是甲:乙還是乙:甲？"
+    },
+    {
+      "step": 2,
+      "instruction": "若是有單位的量，先換成相同單位。",
+      "check": "兩項是否都用公分、克或同一時間單位？"
+    },
+    {
+      "step": 3,
+      "instruction": "消去分數或小數。",
+      "check": "同乘的數是否作用在前後兩項？"
+    },
+    {
+      "step": 4,
+      "instruction": "找前後項最大公因數並同除。",
+      "check": "結果是否都是整數且互質？"
+    },
+    {
+      "step": 5,
+      "instruction": "用比值驗算。",
+      "check": "原比與答案的前項÷後項是否相等？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "將 42:63 化成最簡整數比。",
+      "solutionSteps": [
+        "42 與 63 的最大公因數是 21。",
+        "前後項同除以 21：42:63=2:3。"
+      ],
+      "answer": "2:3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "將 0.84:1.4 化簡。",
+      "solutionSteps": [
+        "同乘 100 得 84:140。",
+        "再同除以 28 得 3:5。"
+      ],
+      "answer": "3:5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "將 5/6:7/9 化簡。",
+      "solutionSteps": [
+        "分母 6、9 的最小公倍數是 18，前後項同乘 18。",
+        "得到 15:14，兩項互質。"
+      ],
+      "answer": "15:14。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "將 1.8 公尺:75 公分化簡。",
+      "solutionSteps": [
+        "1.8 公尺=180 公分。",
+        "180:75 同除以 15 得 12:5。"
+      ],
+      "answer": "12:5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 12:18 寫成 6:3。",
+      "why": "前後項沒有同除同一數。",
+      "correction": "同除以 6 應為 2:3。"
+    },
+    {
+      "mistake": "2 公尺:50 公分直接寫 2:50。",
+      "why": "單位不同，數字不能直接比較。",
+      "correction": "改成 200:50=4:1。"
+    },
+    {
+      "mistake": "化到 6:9 就停止。",
+      "why": "前後項仍有公因數 3。",
+      "correction": "繼續同除以 3 得 2:3。"
+    },
+    {
+      "mistake": "把 3:5 與 5:3 視為相同。",
+      "why": "忽略比較順序。",
+      "correction": "分別算 3/5 與 5/3。"
+    },
+    {
+      "mistake": "將 0.2:0.6 寫成 2:6 後沒有再約。",
+      "why": "只完成整數化，尚未最簡。",
+      "correction": "2:6=1:3。"
+    },
+    {
+      "mistake": "接受 4:0。",
+      "why": "0 不能作除數。",
+      "correction": "後項為 0 的比值沒有定義。"
+    }
+  ],
+  "selfCheck": [
+    "我有先確認比的順序嗎？",
+    "兩個量的單位一致嗎？",
+    "小數或分數是否同時處理兩項？",
+    "結果是否為互質整數？",
+    "原比值與化簡後比值相同嗎？"
+  ],
+  "summary": [
+    "比 a:b 表示 a÷b，後項不可為 0。",
+    "化簡必須對前後項做相同的非零乘除。",
+    "小數比先整數化，分數比先消分母。",
+    "有單位時先統一單位，最後檢查互質與比值。"
+  ],
+  "connections": {
+    "previous": "承接整數、分數與小數運算。",
+    "next": [
+      "等值比可寫成比例式並求未知數。",
+      "部分量與總量問題會使用最簡比的份數。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s001-v001",
+      "u06-s001-v002",
+      "u06-s001-v003",
+      "u06-s001-v004",
+      "u06-s001-v005",
+      "u06-s001-v006",
+      "u06-s001-v007",
+      "u06-s001-v008",
+      "u06-s001-v009",
+      "u06-s001-v010",
+      "u06-s001-v011",
+      "u06-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s001-cr001",
+      "u06-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一重算四個例題的共同因數、分母最小公倍數與單位換算，並檢查後項為零、順序交換、只除單項等失效情況；內容未引入連比的完整分配技巧。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "e628d4e894be10b91df059d0a63666809c62a1c57db930bcaa0b658c19fdc06e"
+}

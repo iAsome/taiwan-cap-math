@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U06 MC semantic review",
+  "type": "object",
+  "required": [
+    "reviewId",
+    "questionId",
+    "contentSha256",
+    "independentSolution",
+    "derivedAnswer",
+    "storedAnswer",
+    "optionTruth",
+    "ambiguityChecks",
+    "difficultyReason",
+    "reviewerNote",
+    "reviewerDecision"
+  ],
+  "properties": {
+    "reviewerDecision": {
+      "const": "pass"
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "lectureId": "u06-s005-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-variation",
+  "skillId": "direct-variation",
+  "lockedSkillTitle": "正比",
+  "title": "正比：比值固定的兩量關係",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "正比與反比",
+    "skillOrder": 5,
+    "lockedPrerequisiteSkillIds": [
+      "proportion-property"
+    ],
+    "capBoundary": "處理 y=kx 的正比判斷、表格、簡單圖形敘述與生活應用；不使用高中函數形式化理論。"
+  },
+  "prerequisiteBridge": "比例式讓兩組資料的 y:x 相等。當所有資料都維持相同比值 k，就形成正比關係。",
+  "learningOutcomes": [
+    "能以 y/x 固定或 y=kx 判斷正比。",
+    "能由一組非零資料求正比常數 k。",
+    "能補完正比表格並解生活問題。",
+    "能辨認通過原點的直線特徵，但不只靠外觀判斷。"
+  ],
+  "glossary": [
+    {
+      "term": "正比",
+      "definition": "兩量的比值固定；一量乘幾倍，另一量也乘同樣倍數。"
+    },
+    {
+      "term": "正比常數",
+      "definition": "y=kx 中固定不變的 k，也就是 y/x。"
+    },
+    {
+      "term": "成對資料",
+      "definition": "同一情況下相對應的 x 與 y 值。"
+    },
+    {
+      "term": "原點",
+      "definition": "座標 (0,0)。正比圖形在可延伸時通過原點。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "y∝x",
+      "meaning": "y 與 x 成正比。"
+    },
+    {
+      "symbol": "y=kx",
+      "meaning": "k 為固定的正比常數。"
+    },
+    {
+      "symbol": "k=y/x",
+      "meaning": "x≠0 時由一組資料求 k。"
+    }
+  ],
+  "conceptNarrative": [
+    "正比不是兩量同時增加而已，而是 y÷x 在所有成對資料中相同。",
+    "若單價固定，總價=單價×數量，因此總價與數量成正比。",
+    "x 變成 3 倍時，y 也變成 3 倍；x 減半時，y 也減半。",
+    "y=kx 的圖形是通過原點的直線，但只看到兩點連成直線還不夠，必須確認原點或比值。",
+    "k 可以是正數、負數或 0 的代數情形；生活量通常再受非負限制。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "正比關係",
+      "statement": "存在固定常數 k，使每一組資料都滿足 y=kx。"
+    },
+    {
+      "name": "正比常數",
+      "statement": "當 x≠0 時，固定比值 y/x。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "y=kx",
+      "conditions": [
+        "k 固定"
+      ],
+      "meaning": "正比標準式。"
+    },
+    {
+      "formula": "y1/x1=y2/x2",
+      "conditions": [
+        "x1、x2≠0"
+      ],
+      "meaning": "兩組正比資料的比值相同。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只有一組資料無法證明所有情況皆為正比。",
+    "y=x+3 雖是直線，卻不通過原點，不是正比。",
+    "x、y 同時增加不代表比值固定。",
+    "固定加同一數量不是固定倍數。",
+    "生活情境若有基本費，總費用通常不是正比。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認比較的是同一對變數。",
+      "check": "x、y 的單位與意義固定嗎？"
+    },
+    {
+      "step": 2,
+      "instruction": "用一組 x≠0 的資料算 k=y/x。",
+      "check": "除法順序是否一致？"
+    },
+    {
+      "step": 3,
+      "instruction": "用其他資料檢查同一 k。",
+      "check": "每組比值都相同嗎？"
+    },
+    {
+      "step": 4,
+      "instruction": "寫 y=kx 並求未知數。",
+      "check": "代入單位後是否合理？"
+    },
+    {
+      "step": 5,
+      "instruction": "用倍數變化或原點特徵驗算。",
+      "check": "x 乘倍數時 y 是否同倍變化？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "y 與 x 成正比，x=4 時 y=10，求 k。",
+      "solutionSteps": [
+        "k=y/x=10/4。",
+        "化簡得 k=5/2。"
+      ],
+      "answer": "k=5/2。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "承上，x=14 時求 y。",
+      "solutionSteps": [
+        "寫 y=(5/2)x。",
+        "代入 14 得 y=35。"
+      ],
+      "answer": "35。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "表格資料 (2,6)、(5,15)、(8,25) 是否正比？",
+      "solutionSteps": [
+        "前三組比值分別為 3、3、25/8。",
+        "比值不全相同。"
+      ],
+      "answer": "不是正比。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "固定每公尺布 120 元，買 x 公尺付 y 元，寫關係式。",
+      "solutionSteps": [
+        "每一公尺都增加 120 元，無基本費。",
+        "總價=120×長度。"
+      ],
+      "answer": "y=120x。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到兩量同增就判正比。",
+      "why": "未檢查固定比值。",
+      "correction": "計算每組 y/x。"
+    },
+    {
+      "mistake": "把 k 算成 x/y。",
+      "why": "除法順序顛倒。",
+      "correction": "由 y=kx 得 k=y/x。"
+    },
+    {
+      "mistake": "把 y=3x+2 當正比。",
+      "why": "忽略固定項使圖形不過原點。",
+      "correction": "正比必可寫成 y=kx。"
+    },
+    {
+      "mistake": "x=0 時用 y/x 求 k。",
+      "why": "除以 0 無定義。",
+      "correction": "用非零 x 的資料求 k。"
+    },
+    {
+      "mistake": "單價固定但另有運費仍判正比。",
+      "why": "基本費破壞固定比值。",
+      "correction": "總價=單價×數量+運費。"
+    },
+    {
+      "mistake": "表格只檢查一列。",
+      "why": "無法保證其他資料符合。",
+      "correction": "逐組算比值。"
+    }
+  ],
+  "selfCheck": [
+    "我檢查的是 y/x 而非差值嗎？",
+    "正比常數在每組資料都相同嗎？",
+    "關係式可寫成 y=kx 嗎？",
+    "圖形若使用，是否通過原點？",
+    "情境中有沒有基本費或門檻？"
+  ],
+  "summary": [
+    "正比的本質是 y/x 固定。",
+    "標準式為 y=kx。",
+    "倍數變化同步，圖形為通過原點的直線。",
+    "只同增、只有一組資料或有固定加項都不足以判正比。"
+  ],
+  "connections": {
+    "previous": "比例式性質說明不同資料組的比值相等。",
+    "next": [
+      "反比改以乘積固定來描述。",
+      "比例尺是圖上長與實際長的正比關係。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s005-v001",
+      "u06-s005-v002",
+      "u06-s005-v003",
+      "u06-s005-v004",
+      "u06-s005-v005",
+      "u06-s005-v006",
+      "u06-s005-v007",
+      "u06-s005-v008",
+      "u06-s005-v009",
+      "u06-s005-v010",
+      "u06-s005-v011",
+      "u06-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s005-cr001",
+      "u06-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐組重算 6/2、15/5、25/8，確認第三組破壞固定比值；並以基本費反例區分線性關係與正比，所有式子皆標明 x≠0 才可用 y/x 求常數。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "c96945152af982db06609a8c8b3ebee129f440506778955b45f5f7d3c5e46bf4"
+}

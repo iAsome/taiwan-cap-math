@@ -1,0 +1,1709 @@
+// Deterministically serialized reviewed U06 content. Do not edit.
+export default {
+  "lecture": {
+    "lectureId": "u06-s001-lecture-r1",
+    "unitId": "u06",
+    "numericUnitId": 6,
+    "topicId": "u06-ratio-basics",
+    "skillId": "ratio-simplify",
+    "lockedSkillTitle": "比的化簡",
+    "title": "比的化簡：先統一單位再找最簡整數比",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "skillIdentity": {
+      "unitTitle": "比例式",
+      "topicTitle": "比與比例式基礎",
+      "skillOrder": 1,
+      "lockedPrerequisiteSkillIds": [],
+      "capBoundary": "只處理兩量的比與最簡整數比；連比的完整技巧留在 U18。"
+    },
+    "prerequisiteBridge": "本技能從整數、分數、小數的四則運算出發。即使沒有前置技能 ID，也必須先會約分、通分、把小數化成整數，以及辨認相同單位。",
+    "learningOutcomes": [
+      "能說明 a:b 表示 a÷b，且後項 b 不可為 0。",
+      "能將整數比、分數比、小數比化成互質整數比。",
+      "能先換成相同單位再化簡。",
+      "能判斷兩個比是否等值，並解釋共同乘除的理由。"
+    ],
+    "glossary": [
+      {
+        "term": "比",
+        "definition": "用除法比較兩個同類量的關係，寫作前項:後項。"
+      },
+      {
+        "term": "前項",
+        "definition": "比號左邊的量。"
+      },
+      {
+        "term": "後項",
+        "definition": "比號右邊的量；因為相當於除數，所以不能是 0。"
+      },
+      {
+        "term": "比值",
+        "definition": "前項除以後項所得的數。"
+      },
+      {
+        "term": "最簡整數比",
+        "definition": "前項與後項都是整數，而且最大公因數為 1 的比。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "a:b",
+        "meaning": "a 與 b 的比，等同 a÷b；b≠0。"
+      },
+      {
+        "symbol": "a:b=ka:kb",
+        "meaning": "k≠0 時，前後項同乘 k，比值不變。"
+      },
+      {
+        "symbol": "a:b=(a÷d):(b÷d)",
+        "meaning": "d 為前後項的共同非零因數時，可同除 d。"
+      }
+    ],
+    "conceptNarrative": [
+      "比不是兩個數並排而已，而是用除法表達相對大小。例如 6:9 的比值是 6÷9=2/3。",
+      "化簡的目標不是把每一項變小，而是保持比值不變並得到互質整數。6:9 同除以 3 得 2:3。",
+      "若含小數，可同乘 10、100 等消去小數；若含分數，可同乘所有分母的最小公倍數。",
+      "不同單位不能直接約分。2 公尺:80 公分要先改成 200 公分:80 公分，才得到 5:2。",
+      "比的順序有意義。男生:女生與女生:男生通常不同，不能任意交換。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "等值比",
+        "statement": "若 a:b 與 c:d 的比值相等，即 a/b=c/d，則兩比等值；b、d 均不可為 0。"
+      },
+      {
+        "name": "最簡整數比",
+        "statement": "前後項皆為整數，且除 1 外沒有共同正因數。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "a:b=a/b",
+        "conditions": [
+          "b≠0"
+        ],
+        "meaning": "以除法理解比值。"
+      },
+      {
+        "formula": "a:b=ka:kb",
+        "conditions": [
+          "k≠0"
+        ],
+        "meaning": "前後項同乘同一非零數，比值不變。"
+      },
+      {
+        "formula": "分數比同乘分母最小公倍數",
+        "conditions": [
+          "所有分母均非0"
+        ],
+        "meaning": "先化成整數比，再約成互質。"
+      }
+    ],
+    "nonApplicableCases": [
+      "後項為 0 時，比值沒有定義。",
+      "未統一公尺與公分、公斤與公克等單位時，不可直接化簡。",
+      "只除前項或只除後項會改變比值。",
+      "把 4:6 化成 2:2 並非同除同一數，屬錯誤。",
+      "最簡比要求整數；0.5:1 雖等值，仍應寫成 1:2。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認比較順序與後項是否為 0。",
+        "check": "題目要的是甲:乙還是乙:甲？"
+      },
+      {
+        "step": 2,
+        "instruction": "若是有單位的量，先換成相同單位。",
+        "check": "兩項是否都用公分、克或同一時間單位？"
+      },
+      {
+        "step": 3,
+        "instruction": "消去分數或小數。",
+        "check": "同乘的數是否作用在前後兩項？"
+      },
+      {
+        "step": 4,
+        "instruction": "找前後項最大公因數並同除。",
+        "check": "結果是否都是整數且互質？"
+      },
+      {
+        "step": 5,
+        "instruction": "用比值驗算。",
+        "check": "原比與答案的前項÷後項是否相等？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "將 42:63 化成最簡整數比。",
+        "solutionSteps": [
+          "42 與 63 的最大公因數是 21。",
+          "前後項同除以 21：42:63=2:3。"
+        ],
+        "answer": "2:3。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "將 0.84:1.4 化簡。",
+        "solutionSteps": [
+          "同乘 100 得 84:140。",
+          "再同除以 28 得 3:5。"
+        ],
+        "answer": "3:5。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "將 5/6:7/9 化簡。",
+        "solutionSteps": [
+          "分母 6、9 的最小公倍數是 18，前後項同乘 18。",
+          "得到 15:14，兩項互質。"
+        ],
+        "answer": "15:14。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "將 1.8 公尺:75 公分化簡。",
+        "solutionSteps": [
+          "1.8 公尺=180 公分。",
+          "180:75 同除以 15 得 12:5。"
+        ],
+        "answer": "12:5。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把 12:18 寫成 6:3。",
+        "why": "前後項沒有同除同一數。",
+        "correction": "同除以 6 應為 2:3。"
+      },
+      {
+        "mistake": "2 公尺:50 公分直接寫 2:50。",
+        "why": "單位不同，數字不能直接比較。",
+        "correction": "改成 200:50=4:1。"
+      },
+      {
+        "mistake": "化到 6:9 就停止。",
+        "why": "前後項仍有公因數 3。",
+        "correction": "繼續同除以 3 得 2:3。"
+      },
+      {
+        "mistake": "把 3:5 與 5:3 視為相同。",
+        "why": "忽略比較順序。",
+        "correction": "分別算 3/5 與 5/3。"
+      },
+      {
+        "mistake": "將 0.2:0.6 寫成 2:6 後沒有再約。",
+        "why": "只完成整數化，尚未最簡。",
+        "correction": "2:6=1:3。"
+      },
+      {
+        "mistake": "接受 4:0。",
+        "why": "0 不能作除數。",
+        "correction": "後項為 0 的比值沒有定義。"
+      }
+    ],
+    "selfCheck": [
+      "我有先確認比的順序嗎？",
+      "兩個量的單位一致嗎？",
+      "小數或分數是否同時處理兩項？",
+      "結果是否為互質整數？",
+      "原比值與化簡後比值相同嗎？"
+    ],
+    "summary": [
+      "比 a:b 表示 a÷b，後項不可為 0。",
+      "化簡必須對前後項做相同的非零乘除。",
+      "小數比先整數化，分數比先消分母。",
+      "有單位時先統一單位，最後檢查互質與比值。"
+    ],
+    "connections": {
+      "previous": "承接整數、分數與小數運算。",
+      "next": [
+        "等值比可寫成比例式並求未知數。",
+        "部分量與總量問題會使用最簡比的份數。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u06-s001-v001",
+        "u06-s001-v002",
+        "u06-s001-v003",
+        "u06-s001-v004",
+        "u06-s001-v005",
+        "u06-s001-v006",
+        "u06-s001-v007",
+        "u06-s001-v008",
+        "u06-s001-v009",
+        "u06-s001-v010",
+        "u06-s001-v011",
+        "u06-s001-v012"
+      ],
+      "constructedResponseIds": [
+        "u06-s001-cr001",
+        "u06-s001-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "contentAuthorityConfirmed": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐一重算四個例題的共同因數、分母最小公倍數與單位換算，並檢查後項為零、順序交換、只除單項等失效情況；內容未引入連比的完整分配技巧。",
+      "reviewVersion": "human-lecture-review-u06-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "e628d4e894be10b91df059d0a63666809c62a1c57db930bcaa0b658c19fdc06e"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u06-s001-v001",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "將 18:24 化成最簡整數比。",
+      "text": "將 18:24 化成最簡整數比。",
+      "givenConditions": "前項 18、後項 24，後項非 0。",
+      "target": "求最簡整數比",
+      "choices": [
+        "3:4",
+        "2:3",
+        "4:5",
+        "6:7"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "直接算 18/24=3/4，因此最簡整數比是 3:4。",
+      "mainExplanation": "最大公因數是 6，前後項同除可保持比值，所以 18:24=3:4。",
+      "explanation": "最大公因數是 6，前後項同除可保持比值，所以 18:24=3:4。",
+      "steps": [
+        "gcd(18,24)=6",
+        "18÷6=3，24÷6=4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3:4",
+          "truth": true,
+          "reason": "18、24 同除以最大公因數 6 得 3:4。"
+        },
+        {
+          "choice": "2:3",
+          "truth": false,
+          "reason": "2:3 的比值是 2/3，不等於 18/24。"
+        },
+        {
+          "choice": "4:5",
+          "truth": false,
+          "reason": "4:5 的比值是 0.8，不等於 0.75。"
+        },
+        {
+          "choice": "6:7",
+          "truth": false,
+          "reason": "6:7 仍與原比不同。"
+        }
+      ],
+      "misconceptionTarget": "只把兩數各自化小，未同除同一公因數。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 50,
+      "unitCheck": "無單位，兩項可直接比較。",
+      "roundingCheck": "無需近似。",
+      "ambiguityBoundaryAudit": "答案要求互質整數，3 與 4 互質。",
+      "difficultyReason": "單一步驟整數約分。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "91cfd86980ff498036bc78b623f252f3a12d5c200b089f43cb1046af6c6968d6"
+    },
+    {
+      "questionId": "u06-s001-v002",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "一張長方形卡片的寬是 6 公分、高是 15 公分。若把卡片等比例縮小，寬與高的最簡整數比應保持為何？",
+      "text": "一張長方形卡片的寬是 6 公分、高是 15 公分。若把卡片等比例縮小，寬與高的最簡整數比應保持為何？",
+      "givenConditions": "寬6公分；高15公分；等比例縮放不改變比值",
+      "target": "用實際尺寸建立並化簡比",
+      "choices": [
+        "3:5",
+        "2:5",
+        "5:2",
+        "6:5"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "寬與高的比為 6:15，兩項同除以最大公因數 3，得到 2:5。等比例縮放後此比不變。",
+      "mainExplanation": "先按題目順序寫成寬:高，再把兩項同除以3。",
+      "explanation": "先按題目順序寫成寬:高，再把兩項同除以3。",
+      "steps": [
+        "按題目順序寫成6:15。",
+        "兩項同除以最大公因數3。",
+        "檢查2與5互質。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3:5",
+          "truth": false,
+          "reason": "3:5的比值不等於6÷15。"
+        },
+        {
+          "choice": "2:5",
+          "truth": true,
+          "reason": "6:15同除3得到2:5。"
+        },
+        {
+          "choice": "5:2",
+          "truth": false,
+          "reason": "5:2把寬高順序顛倒。"
+        },
+        {
+          "choice": "6:5",
+          "truth": false,
+          "reason": "6:5只化簡其中一項。"
+        }
+      ],
+      "misconceptionTarget": "把比的順序顛倒或只化簡其中一項。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 60,
+      "unitCheck": "兩項同為純數。",
+      "roundingCheck": "精確計算，不用四捨五入。",
+      "ambiguityBoundaryAudit": "寬高順序與單位均明示，答案唯一。",
+      "difficultyReason": "基礎：依指定順序建立尺寸比並約成最簡。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "fc55bc08dad1b3e5f725eccb9c3d4462e8378e8e1bf72de07de748a9fc34ea7c"
+    },
+    {
+      "questionId": "u06-s001-v003",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "將 3/4:5/8 化成最簡整數比。",
+      "text": "將 3/4:5/8 化成最簡整數比。",
+      "givenConditions": "兩個分母皆非 0。",
+      "target": "化簡分數比",
+      "choices": [
+        "3:5",
+        "5:6",
+        "6:5",
+        "12:5"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "比值為 (3/4)÷(5/8)=3/4×8/5=6/5，所以比為 6:5。",
+      "mainExplanation": "分母 4、8 的最小公倍數是 8；同乘後得 6:5，已互質。",
+      "explanation": "分母 4、8 的最小公倍數是 8；同乘後得 6:5，已互質。",
+      "steps": [
+        "(3/4)×8=6",
+        "(5/8)×8=5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3:5",
+          "truth": false,
+          "reason": "只消去第一個分母，改變比值。"
+        },
+        {
+          "choice": "5:6",
+          "truth": false,
+          "reason": "把前後項顛倒。"
+        },
+        {
+          "choice": "6:5",
+          "truth": true,
+          "reason": "前後項同乘 8 得 6:5。"
+        },
+        {
+          "choice": "12:5",
+          "truth": false,
+          "reason": "第一項多乘 2。"
+        }
+      ],
+      "misconceptionTarget": "除分數時忘記乘倒數或把比的順序反轉。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 70,
+      "unitCheck": "無單位。",
+      "roundingCheck": "全程為精確分數。",
+      "ambiguityBoundaryAudit": "6 與 5 互質且後項非 0。",
+      "difficultyReason": "需要分數除法觀念。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "02647019431b6d903874d0cc321c09292433795855635f1c63b9eb50d7da069f"
+    },
+    {
+      "questionId": "u06-s001-v004",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "2.4 公尺:80 公分的最簡整數比為何？",
+      "text": "2.4 公尺:80 公分的最簡整數比為何？",
+      "givenConditions": "公尺與公分需先統一。",
+      "target": "處理不同單位的比",
+      "choices": [
+        "3:10",
+        "24:8",
+        "1:3",
+        "3:1"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "2.4 公尺÷0.8 公尺=3，因此前項:後項=3:1。",
+      "mainExplanation": "先統一成公分，再約分得 3:1。",
+      "explanation": "先統一成公分，再約分得 3:1。",
+      "steps": [
+        "2.4公尺=240公分",
+        "240與80同除80"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3:10",
+          "truth": false,
+          "reason": "把 2.4 直接視為 240 卻又多除 10。"
+        },
+        {
+          "choice": "24:8",
+          "truth": false,
+          "reason": "24:8 雖等值但不是最簡。"
+        },
+        {
+          "choice": "1:3",
+          "truth": false,
+          "reason": "將比較順序倒置。"
+        },
+        {
+          "choice": "3:1",
+          "truth": true,
+          "reason": "2.4 公尺=240 公分，240:80=3:1。"
+        }
+      ],
+      "misconceptionTarget": "未統一單位或把前後項順序顛倒。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 80,
+      "unitCheck": "統一為公分後約分。",
+      "roundingCheck": "2.4 為精確值，不取近似。",
+      "ambiguityBoundaryAudit": "題意明確指定 2.4 公尺在前。",
+      "difficultyReason": "需同時完成單位換算與化簡。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "32e8458cf04e7be3375c49dc71b27b75010144b0fdeebbd3665261e91f020624"
+    },
+    {
+      "questionId": "u06-s001-v005",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "下列哪一個比與 14:21 等值且已化為最簡？",
+      "text": "下列哪一個比與 14:21 等值且已化為最簡？",
+      "givenConditions": "答案需符合兩個條件。",
+      "target": "同時判斷等值與最簡",
+      "choices": [
+        "7:14",
+        "2:3",
+        "4:6",
+        "3:2"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "14/21=2/3，四個選項中只有 2:3 同時等值且最簡。",
+      "mainExplanation": "原比的最大公因數是 7，最簡比為 2:3。",
+      "explanation": "原比的最大公因數是 7，最簡比為 2:3。",
+      "steps": [
+        "14÷7=2",
+        "21÷7=3"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "7:14",
+          "truth": false,
+          "reason": "7:14=1:2，不等值。"
+        },
+        {
+          "choice": "2:3",
+          "truth": true,
+          "reason": "14、21 同除以 7 得 2:3。"
+        },
+        {
+          "choice": "4:6",
+          "truth": false,
+          "reason": "4:6 等值但尚可同除以 2，不是最簡。"
+        },
+        {
+          "choice": "3:2",
+          "truth": false,
+          "reason": "3:2 是倒比。"
+        }
+      ],
+      "misconceptionTarget": "只檢查等值而忽略『最簡』。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 75,
+      "unitCheck": "無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "4:6 被刻意排除，因題幹要求已化最簡。",
+      "difficultyReason": "雙條件判斷。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7932dfb78cf1ac4ec912dab27c421da255ddf35528a6a19c454d705f7d65aa21"
+    },
+    {
+      "questionId": "u06-s001-v006",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "將 1又1/2:2又1/4 化成最簡整數比。",
+      "text": "將 1又1/2:2又1/4 化成最簡整數比。",
+      "givenConditions": "兩個帶分數皆為正且後項非0。",
+      "target": "化簡帶分數比",
+      "choices": [
+        "3:4",
+        "4:5",
+        "2:3",
+        "6:9"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "比值 (3/2)÷(9/4)=2/3，因此最簡比 2:3。",
+      "mainExplanation": "帶分數先化假分數，再消分母與約分。",
+      "explanation": "帶分數先化假分數，再消分母與約分。",
+      "steps": [
+        "3/2:9/4",
+        "同乘4得6:9",
+        "同除3得2:3"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3:4",
+          "truth": false,
+          "reason": "3:4 忽略第二個帶分數的分母。"
+        },
+        {
+          "choice": "4:5",
+          "truth": false,
+          "reason": "4:5 並非等值比。"
+        },
+        {
+          "choice": "2:3",
+          "truth": true,
+          "reason": "1又1/2=3/2，2又1/4=9/4；同乘 4 得 6:9，再約成 2:3。"
+        },
+        {
+          "choice": "6:9",
+          "truth": false,
+          "reason": "6:9 等值但不是最簡。"
+        }
+      ],
+      "misconceptionTarget": "帶分數轉換錯誤或停在未最簡的 6:9。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 100,
+      "unitCheck": "無單位。",
+      "roundingCheck": "精確分數。",
+      "ambiguityBoundaryAudit": "題目要求最簡整數比。",
+      "difficultyReason": "三步驟分數處理。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ade7a12aa5f94f86088bfb5d5b0d14ad4245e77e86c21463b9a0dab41c802681"
+    },
+    {
+      "questionId": "u06-s001-v007",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "若 36:n 化成最簡比為 4:7，則 n 為何？",
+      "text": "若 36:n 化成最簡比為 4:7，則 n 為何？",
+      "givenConditions": "n 為正數且後項不可為0。",
+      "target": "由最簡比反求原項",
+      "choices": [
+        "42",
+        "54",
+        "72",
+        "63"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "36:63 同除以 9 得 4:7，直接驗證 n=63。",
+      "mainExplanation": "由 36/ n=4/7，交叉相乘 4n=252，得 n=63。",
+      "explanation": "由 36/ n=4/7，交叉相乘 4n=252，得 n=63。",
+      "steps": [
+        "36÷4=9",
+        "7×9=63"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "42",
+          "truth": false,
+          "reason": "42 對應每份6，前項會是24。"
+        },
+        {
+          "choice": "54",
+          "truth": false,
+          "reason": "54 使比為2:3。"
+        },
+        {
+          "choice": "72",
+          "truth": false,
+          "reason": "72 使比為1:2。"
+        },
+        {
+          "choice": "63",
+          "truth": true,
+          "reason": "36 對應 4 份，每份 9；n 對應 7 份，所以 n=63。"
+        }
+      ],
+      "misconceptionTarget": "只對一項乘倍率或把 4、7 相加。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "只有一個正數 n 使比例成立。",
+      "difficultyReason": "需要由比的倍率反推未知項。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "bb7379b5aaffbeafe3ae7821d3994b09d76c2b3696bfbbba6aa1388b73a1a6dd"
+    },
+    {
+      "questionId": "u06-s001-v008",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "某比的前後項皆為正整數，化簡後為 5:8，且兩項和為 91。原比為何？",
+      "text": "某比的前後項皆為正整數，化簡後為 5:8，且兩項和為 91。原比為何？",
+      "givenConditions": "兩項為正整數。",
+      "target": "由最簡比與總和還原兩項",
+      "choices": [
+        "35:56",
+        "25:66",
+        "40:51",
+        "45:46"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "35:56 同除7為5:8，且35+56=91，雙條件皆成立。",
+      "mainExplanation": "令原比為 5k:8k，13k=91，k=7。",
+      "explanation": "令原比為 5k:8k，13k=91，k=7。",
+      "steps": [
+        "5k+8k=91",
+        "k=7",
+        "得到35:56"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "35:56",
+          "truth": true,
+          "reason": "總份數 13，每份 91÷13=7，所以原比 35:56。"
+        },
+        {
+          "choice": "25:66",
+          "truth": false,
+          "reason": "25:66 雖和91，但比值不是5:8。"
+        },
+        {
+          "choice": "40:51",
+          "truth": false,
+          "reason": "40:51 和91但不符5:8。"
+        },
+        {
+          "choice": "45:46",
+          "truth": false,
+          "reason": "45:46 近似1:1。"
+        }
+      ],
+      "misconceptionTarget": "只使用總和條件而未檢查比值。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 110,
+      "unitCheck": "無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "正整數 k 唯一為7。",
+      "difficultyReason": "結合份數與總和的兩條件。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6c070ab0de4bc4d93947333e616c65b093d1d3a00711f434866e478ed6e642cd"
+    },
+    {
+      "questionId": "u06-s001-v009",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "84:126 化成最簡比後，前後項的和是多少？",
+      "text": "84:126 化成最簡比後，前後項的和是多少？",
+      "givenConditions": "84、126為正整數。",
+      "target": "最簡比的衍生量",
+      "choices": [
+        "3",
+        "7",
+        "5",
+        "10"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "84/126=2/3，因此最簡比項和為 2+3=5。",
+      "mainExplanation": "先求最大公因數 42，再計算最簡比兩項和。",
+      "explanation": "先求最大公因數 42，再計算最簡比兩項和。",
+      "steps": [
+        "84÷42=2",
+        "126÷42=3",
+        "2+3=5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "3 是後項，不是兩項和。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "7 來自錯誤約分 3:4。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "84、126 同除以 42 得 2:3，和為 5。"
+        },
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "10 是把 2:3 再同乘2後的和，非最簡比。"
+        }
+      ],
+      "misconceptionTarget": "未先化到最簡便求和。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "題目問化簡後的項和，不是原數和。",
+      "difficultyReason": "兩階段計算。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9574b6c01a5e63a6af57ab398937eacb5ebb71ddeba6eaa04927958a11813f09"
+    },
+    {
+      "questionId": "u06-s001-v010",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "果汁配方使用 750 公克果肉與 1.2 公斤水。果肉:水的最簡比為何？",
+      "text": "果汁配方使用 750 公克果肉與 1.2 公斤水。果肉:水的最簡比為何？",
+      "givenConditions": "配方比例需保留果肉在前、水在後。",
+      "target": "在配方標示中化簡跨單位比",
+      "choices": [
+        "3:4",
+        "5:12",
+        "8:5",
+        "5:8"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "750÷1200=0.625=5/8，因此果肉:水=5:8。",
+      "mainExplanation": "把水換成1200公克後，750/1200=5/8。",
+      "explanation": "把水換成1200公克後，750/1200=5/8。",
+      "steps": [
+        "統一為公克",
+        "750:1200",
+        "同除150"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3:4",
+          "truth": false,
+          "reason": "3:4 對應900:1200。"
+        },
+        {
+          "choice": "5:12",
+          "truth": false,
+          "reason": "5:12 忽略共同因數。"
+        },
+        {
+          "choice": "8:5",
+          "truth": false,
+          "reason": "8:5 是水:果肉。"
+        },
+        {
+          "choice": "5:8",
+          "truth": true,
+          "reason": "1.2公斤=1200公克，750:1200 同除150得5:8。"
+        }
+      ],
+      "misconceptionTarget": "未換公斤或把順序反成水:果肉。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 100,
+      "unitCheck": "公斤換公克後比較。",
+      "roundingCheck": "1.2公斤視為精確標示。",
+      "ambiguityBoundaryAudit": "情境中的單位換算不可省略，否則數字比無意義。",
+      "difficultyReason": "素養題需解讀配方與單位。",
+      "literacyContextNecessity": "配方的兩種材料用不同單位，必須換算才能得到可用比例。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "5df924487abc848bfd8c23257341116642dc5c6eec0c4f4d9f77662144861bbd"
+    },
+    {
+      "questionId": "u06-s001-v011",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "校隊 48 人中有 18 人是七年級。七年級人數:全隊人數的最簡比為何？",
+      "text": "校隊 48 人中有 18 人是七年級。七年級人數:全隊人數的最簡比為何？",
+      "givenConditions": "全隊48已包含七年級18。",
+      "target": "辨認情境中的比之分母",
+      "choices": [
+        "3:8",
+        "3:5",
+        "5:8",
+        "8:3"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "18/48=3/8，故部分對總量為3:8。",
+      "mainExplanation": "題目指定部分:總量，直接化簡18:48。",
+      "explanation": "題目指定部分:總量，直接化簡18:48。",
+      "steps": [
+        "辨認部分量18",
+        "總量48",
+        "同除6得3:8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3:8",
+          "truth": true,
+          "reason": "18:48 同除以 6 得 3:8。"
+        },
+        {
+          "choice": "3:5",
+          "truth": false,
+          "reason": "3:5 是七年級:非七年級。"
+        },
+        {
+          "choice": "5:8",
+          "truth": false,
+          "reason": "5:8 是非七年級:全隊。"
+        },
+        {
+          "choice": "8:3",
+          "truth": false,
+          "reason": "8:3 是倒比。"
+        }
+      ],
+      "misconceptionTarget": "把總量誤改成非七年級人數30。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 90,
+      "unitCheck": "人數單位一致。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "題幹明確問七年級:全隊，不是七年級:其他。",
+      "difficultyReason": "需要讀懂部分與總量的角色。",
+      "literacyContextNecessity": "若刪除『全隊』語意就會改變分母，因此情境是數學必要的。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "2803f15bc92a5a429578c8d9216b88dd28ced0c71f639159338bed73bd5069c2"
+    },
+    {
+      "questionId": "u06-s001-v012",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "一條步道前 1.5 公里為木棧道，後 900 公尺為石板路。木棧道長:石板路長的最簡比為何？",
+      "text": "一條步道前 1.5 公里為木棧道，後 900 公尺為石板路。木棧道長:石板路長的最簡比為何？",
+      "givenConditions": "兩段長度皆為正。",
+      "target": "在路程資料中建立最簡比",
+      "choices": [
+        "3:5",
+        "5:3",
+        "5:9",
+        "15:9"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "1500/900=5/3，故最簡比5:3。",
+      "mainExplanation": "統一為公尺後化簡，並保持題目指定順序。",
+      "explanation": "統一為公尺後化簡，並保持題目指定順序。",
+      "steps": [
+        "1.5公里=1500公尺",
+        "1500:900",
+        "同除300"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3:5",
+          "truth": false,
+          "reason": "3:5 是反向比。"
+        },
+        {
+          "choice": "5:3",
+          "truth": true,
+          "reason": "1.5公里=1500公尺，1500:900同除300得5:3。"
+        },
+        {
+          "choice": "5:9",
+          "truth": false,
+          "reason": "5:9 把1.5公里誤當500公尺。"
+        },
+        {
+          "choice": "15:9",
+          "truth": false,
+          "reason": "15:9 等值但不是最簡。"
+        }
+      ],
+      "misconceptionTarget": "單位換算錯誤或停在未最簡比。",
+      "prerequisiteCheck": {
+        "skillIds": [],
+        "evidence": "本題只使用已鎖定前置技能 ['無'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 100,
+      "unitCheck": "公里換公尺。",
+      "roundingCheck": "1.5公里為精確值。",
+      "ambiguityBoundaryAudit": "前後兩段已明確且無重疊。",
+      "difficultyReason": "同時考單位與順序。",
+      "literacyContextNecessity": "路線分段資訊決定前項與後項，不能移除情境而保持同一任務。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "418a48e3905c81bd6def6a08e00cef25b4e8d88f23111b9711231d70d2b3b954"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u06-s001-cr001",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "將 2.7 公尺:1.08 公尺化成最簡整數比，並用比值驗算。",
+      "target": "化簡含小數的同比",
+      "requiredWork": [
+        "寫出消去小數的共同倍率。",
+        "化到互質整數。",
+        "比較原比值與最簡比值。"
+      ],
+      "fullCreditSolution": [
+        "2.7:1.08 同乘100得270:108。",
+        "270與108的最大公因數為54，同除得5:2。",
+        "原比值2.7÷1.08=2.5，5÷2=2.5，兩者相同。"
+      ],
+      "alternativeSolutions": [
+        "可先同除0.54，直接得到5:2。"
+      ],
+      "reasoningSteps": [
+        "2.7:1.08 同乘100得270:108。",
+        "270與108的最大公因數為54，同除得5:2。",
+        "原比值2.7÷1.08=2.5，5÷2=2.5，兩者相同。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "得到5:2，完整呈現共同乘除並以比值2.5驗算。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案5:2正確，但驗算或最大公因數說明缺一。"
+        },
+        {
+          "score": 1,
+          "criteria": "能將小數化為270:108或得到等值但未最簡的比。"
+        },
+        {
+          "score": 0,
+          "criteria": "只改一項小數點、答案不等值或未作答。"
+        }
+      ],
+      "partialCreditRules": [
+        "等值但未最簡最多1分。",
+        "比值驗算正確但約分計算小錯，可依其前一步給1分。"
+      ],
+      "followThroughPolicy": "若前一步把270:108約成15:6，後續再約成5:2可得滿分；若共同倍率寫錯但後續比值驗證發現並修正，按修正後成果計分。",
+      "unitNotationRules": "兩項同為公尺，可省略單位於比內；驗算需保留等號與小數2.5。",
+      "answerOnlyPolicy": "只寫5:2且無過程，最多2分。",
+      "commonErrors": [
+        "只把2.7乘100。",
+        "停在15:6。",
+        "把順序寫成2:5。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "5:2，兩個比值皆為2.5。",
+        "ambiguity": "題目兩項同單位、後項非0，答案唯一。",
+        "scope": "U06 locked skill only; no future-unit method required.",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "ce26e7f067955f1dba7f69bd3eae01db3790019bff9f07cf5a3e568dea8aaccf"
+    },
+    {
+      "questionId": "u06-s001-cr002",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-simplify",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "將 3/10 公斤:450 公克化成最簡整數比，說明為何不能直接約分 3:450。",
+      "target": "跨單位比的化簡與理由",
+      "requiredWork": [
+        "先統一公斤與公克。",
+        "化成最簡整數比。",
+        "解釋不同單位數字不可直接比較。"
+      ],
+      "fullCreditSolution": [
+        "3/10 公斤=300公克。",
+        "所以原比為300:450，同除150得2:3。",
+        "3與450分別來自公斤分數的分子與公克數，單位和量值基準不同，不能直接組成3:450。"
+      ],
+      "alternativeSolutions": [
+        "也可把450公克化為0.45公斤，0.3:0.45=30:45=2:3。"
+      ],
+      "reasoningSteps": [
+        "3/10 公斤=300公克。",
+        "所以原比為300:450，同除150得2:3。",
+        "3與450分別來自公斤分數的分子與公克數，單位和量值基準不同，不能直接組成3:450。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確統一單位並得2:3，且清楚說明3不是0.3公斤的完整數值。"
+        },
+        {
+          "score": 2,
+          "criteria": "得2:3且有單位換算，但解釋簡略。"
+        },
+        {
+          "score": 1,
+          "criteria": "能換成300:450或0.3:0.45，但未完成最簡。"
+        },
+        {
+          "score": 0,
+          "criteria": "直接以3:450約分或結果不等值。"
+        }
+      ],
+      "partialCreditRules": [
+        "單位換算正確是核心；只寫正答無說明最多2分。",
+        "把0.3公斤誤成30公克但後續一致運算，不給單位核心分。"
+      ],
+      "followThroughPolicy": "若學生先用錯換算但明確以原比值檢查並自行修正，依最終正確過程評分；未修正的錯誤不給後續跟隨分。",
+      "unitNotationRules": "答案比不帶單位，但過程必須標示300公克或0.3公斤。",
+      "answerOnlyPolicy": "只寫2:3最多1分，因題目明確要求說明。",
+      "commonErrors": [
+        "把3/10視為3。",
+        "1公斤=100公克。",
+        "化成2:3後又顛倒。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "300:450=2:3。",
+        "ambiguity": "兩種換算路徑一致，無四捨五入。",
+        "scope": "U06 locked skill only; no future-unit method required.",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "9b098b5b0481151fe015e622b95d2c7c73dee931402d09b4784a09c7658cda30"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "reviewId": "u06-s001-v001-semantic-review-r1",
+      "questionId": "u06-s001-v001",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "91cfd86980ff498036bc78b623f252f3a12d5c200b089f43cb1046af6c6968d6",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "直接算 18/24=3/4，因此最簡整數比是 3:4。",
+      "derivedAnswer": "3:4",
+      "storedAnswer": "3:4",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "18、24 同除以最大公因數 6 得 3:4。",
+        "2:3 的比值是 2/3，不等於 18/24。",
+        "4:5 的比值是 0.8，不等於 0.75。",
+        "6:7 仍與原比不同。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「求最簡整數比」，已明示必要條件：前項 18、後項 24，後項非 0。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位，兩項可直接比較。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：答案要求互質整數，3 與 4 互質。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無需近似。。"
+      },
+      "difficultyReason": "單一步驟整數約分。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：直接算 18/24=3/4，因此最簡整數比是 3:4。 正確選項為「3:4」。逐項檢查後，唯一為真的理由是「18、24 同除以最大公因數 6 得 3:4。」；其餘三項分別因「2:3 的比值是 2/3，不等於 18/24。」、「4:5 的比值是 0.8，不等於 0.75。」、「6:7 仍與原比不同。」而排除。邊界與語意再檢查：答案要求互質整數，3 與 4 互質。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v002-semantic-review-r1",
+      "questionId": "u06-s001-v002",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "fc55bc08dad1b3e5f725eccb9c3d4462e8378e8e1bf72de07de748a9fc34ea7c",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "寬與高的比為 6:15，兩項同除以最大公因數 3，得到 2:5。等比例縮放後此比不變。",
+      "derivedAnswer": "2:5",
+      "storedAnswer": "2:5",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "3:5的比值不等於6÷15。",
+        "6:15同除3得到2:5。",
+        "5:2把寬高順序顛倒。",
+        "6:5只化簡其中一項。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹明確要求「用實際尺寸建立並化簡比」，沒有第二種合理所求。",
+        "units": "單位審查結果：兩項同為純數。；因此選項可在同一基準下比較。",
+        "boundary": "寬高順序與單位均明示，答案唯一。",
+        "rounding": "近似與取整審查：精確計算，不用四捨五入。。"
+      },
+      "difficultyReason": "基礎：依指定順序建立尺寸比並約成最簡。",
+      "literacyNecessity": null,
+      "reviewerNote": "u06-s001-v002 中央修訂後獨立重算：寬與高的比為 6:15，兩項同除以最大公因數 3，得到 2:5。等比例縮放後此比不變。 四個選項逐項核對，唯一正解為「2:5」；其餘選項排除理由為：3:5的比值不等於6÷15。；5:2把寬高順序顛倒。；6:5只化簡其中一項。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v003-semantic-review-r1",
+      "questionId": "u06-s001-v003",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "02647019431b6d903874d0cc321c09292433795855635f1c63b9eb50d7da069f",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "比值為 (3/4)÷(5/8)=3/4×8/5=6/5，所以比為 6:5。",
+      "derivedAnswer": "6:5",
+      "storedAnswer": "6:5",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "只消去第一個分母，改變比值。",
+        "把前後項顛倒。",
+        "前後項同乘 8 得 6:5。",
+        "第一項多乘 2。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「化簡分數比」，已明示必要條件：兩個分母皆非 0。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：6 與 5 互質且後項非 0。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：全程為精確分數。。"
+      },
+      "difficultyReason": "需要分數除法觀念。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：比值為 (3/4)÷(5/8)=3/4×8/5=6/5，所以比為 6:5。 正確選項為「6:5」。逐項檢查後，唯一為真的理由是「前後項同乘 8 得 6:5。」；其餘三項分別因「只消去第一個分母，改變比值。」、「把前後項顛倒。」、「第一項多乘 2。」而排除。邊界與語意再檢查：6 與 5 互質且後項非 0。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v004-semantic-review-r1",
+      "questionId": "u06-s001-v004",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "32e8458cf04e7be3375c49dc71b27b75010144b0fdeebbd3665261e91f020624",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "2.4 公尺÷0.8 公尺=3，因此前項:後項=3:1。",
+      "derivedAnswer": "3:1",
+      "storedAnswer": "3:1",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "把 2.4 直接視為 240 卻又多除 10。",
+        "24:8 雖等值但不是最簡。",
+        "將比較順序倒置。",
+        "2.4 公尺=240 公分，240:80=3:1。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「處理不同單位的比」，已明示必要條件：公尺與公分需先統一。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：統一為公分後約分。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：題意明確指定 2.4 公尺在前。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：2.4 為精確值，不取近似。。"
+      },
+      "difficultyReason": "需同時完成單位換算與化簡。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：2.4 公尺÷0.8 公尺=3，因此前項:後項=3:1。 正確選項為「3:1」。逐項檢查後，唯一為真的理由是「2.4 公尺=240 公分，240:80=3:1。」；其餘三項分別因「把 2.4 直接視為 240 卻又多除 10。」、「24:8 雖等值但不是最簡。」、「將比較順序倒置。」而排除。邊界與語意再檢查：題意明確指定 2.4 公尺在前。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v005-semantic-review-r1",
+      "questionId": "u06-s001-v005",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "7932dfb78cf1ac4ec912dab27c421da255ddf35528a6a19c454d705f7d65aa21",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "14/21=2/3，四個選項中只有 2:3 同時等值且最簡。",
+      "derivedAnswer": "2:3",
+      "storedAnswer": "2:3",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "7:14=1:2，不等值。",
+        "14、21 同除以 7 得 2:3。",
+        "4:6 等值但尚可同除以 2，不是最簡。",
+        "3:2 是倒比。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「同時判斷等值與最簡」，已明示必要條件：答案需符合兩個條件。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：4:6 被刻意排除，因題幹要求已化最簡。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "雙條件判斷。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：14/21=2/3，四個選項中只有 2:3 同時等值且最簡。 正確選項為「2:3」。逐項檢查後，唯一為真的理由是「14、21 同除以 7 得 2:3。」；其餘三項分別因「7:14=1:2，不等值。」、「4:6 等值但尚可同除以 2，不是最簡。」、「3:2 是倒比。」而排除。邊界與語意再檢查：4:6 被刻意排除，因題幹要求已化最簡。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v006-semantic-review-r1",
+      "questionId": "u06-s001-v006",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "ade7a12aa5f94f86088bfb5d5b0d14ad4245e77e86c21463b9a0dab41c802681",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "比值 (3/2)÷(9/4)=2/3，因此最簡比 2:3。",
+      "derivedAnswer": "2:3",
+      "storedAnswer": "2:3",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "3:4 忽略第二個帶分數的分母。",
+        "4:5 並非等值比。",
+        "1又1/2=3/2，2又1/4=9/4；同乘 4 得 6:9，再約成 2:3。",
+        "6:9 等值但不是最簡。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「化簡帶分數比」，已明示必要條件：兩個帶分數皆為正且後項非0。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：題目要求最簡整數比。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：精確分數。。"
+      },
+      "difficultyReason": "三步驟分數處理。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：比值 (3/2)÷(9/4)=2/3，因此最簡比 2:3。 正確選項為「2:3」。逐項檢查後，唯一為真的理由是「1又1/2=3/2，2又1/4=9/4；同乘 4 得 6:9，再約成 2:3。」；其餘三項分別因「3:4 忽略第二個帶分數的分母。」、「4:5 並非等值比。」、「6:9 等值但不是最簡。」而排除。邊界與語意再檢查：題目要求最簡整數比。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v007-semantic-review-r1",
+      "questionId": "u06-s001-v007",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "bb7379b5aaffbeafe3ae7821d3994b09d76c2b3696bfbbba6aa1388b73a1a6dd",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "36:63 同除以 9 得 4:7，直接驗證 n=63。",
+      "derivedAnswer": "63",
+      "storedAnswer": "63",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "42 對應每份6，前項會是24。",
+        "54 使比為2:3。",
+        "72 使比為1:2。",
+        "36 對應 4 份，每份 9；n 對應 7 份，所以 n=63。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由最簡比反求原項」，已明示必要條件：n 為正數且後項不可為0。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：只有一個正數 n 使比例成立。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "需要由比的倍率反推未知項。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：36:63 同除以 9 得 4:7，直接驗證 n=63。 正確選項為「63」。逐項檢查後，唯一為真的理由是「36 對應 4 份，每份 9；n 對應 7 份，所以 n=63。」；其餘三項分別因「42 對應每份6，前項會是24。」、「54 使比為2:3。」、「72 使比為1:2。」而排除。邊界與語意再檢查：只有一個正數 n 使比例成立。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v008-semantic-review-r1",
+      "questionId": "u06-s001-v008",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "6c070ab0de4bc4d93947333e616c65b093d1d3a00711f434866e478ed6e642cd",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "35:56 同除7為5:8，且35+56=91，雙條件皆成立。",
+      "derivedAnswer": "35:56",
+      "storedAnswer": "35:56",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "總份數 13，每份 91÷13=7，所以原比 35:56。",
+        "25:66 雖和91，但比值不是5:8。",
+        "40:51 和91但不符5:8。",
+        "45:46 近似1:1。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由最簡比與總和還原兩項」，已明示必要條件：兩項為正整數。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：正整數 k 唯一為7。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "結合份數與總和的兩條件。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：35:56 同除7為5:8，且35+56=91，雙條件皆成立。 正確選項為「35:56」。逐項檢查後，唯一為真的理由是「總份數 13，每份 91÷13=7，所以原比 35:56。」；其餘三項分別因「25:66 雖和91，但比值不是5:8。」、「40:51 和91但不符5:8。」、「45:46 近似1:1。」而排除。邊界與語意再檢查：正整數 k 唯一為7。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v009-semantic-review-r1",
+      "questionId": "u06-s001-v009",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "9574b6c01a5e63a6af57ab398937eacb5ebb71ddeba6eaa04927958a11813f09",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "84/126=2/3，因此最簡比項和為 2+3=5。",
+      "derivedAnswer": "5",
+      "storedAnswer": "5",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "3 是後項，不是兩項和。",
+        "7 來自錯誤約分 3:4。",
+        "84、126 同除以 42 得 2:3，和為 5。",
+        "10 是把 2:3 再同乘2後的和，非最簡比。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「最簡比的衍生量」，已明示必要條件：84、126為正整數。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：題目問化簡後的項和，不是原數和。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "兩階段計算。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：84/126=2/3，因此最簡比項和為 2+3=5。 正確選項為「5」。逐項檢查後，唯一為真的理由是「84、126 同除以 42 得 2:3，和為 5。」；其餘三項分別因「3 是後項，不是兩項和。」、「7 來自錯誤約分 3:4。」、「10 是把 2:3 再同乘2後的和，非最簡比。」而排除。邊界與語意再檢查：題目問化簡後的項和，不是原數和。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v010-semantic-review-r1",
+      "questionId": "u06-s001-v010",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "5df924487abc848bfd8c23257341116642dc5c6eec0c4f4d9f77662144861bbd",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "750÷1200=0.625=5/8，因此果肉:水=5:8。",
+      "derivedAnswer": "5:8",
+      "storedAnswer": "5:8",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "3:4 對應900:1200。",
+        "5:12 忽略共同因數。",
+        "8:5 是水:果肉。",
+        "1.2公斤=1200公克，750:1200 同除150得5:8。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「在配方標示中化簡跨單位比」，已明示必要條件：配方比例需保留果肉在前、水在後。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公斤換公克後比較。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：情境中的單位換算不可省略，否則數字比無意義。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：1.2公斤視為精確標示。。"
+      },
+      "difficultyReason": "素養題需解讀配方與單位。",
+      "literacyNecessity": "配方的兩種材料用不同單位，必須換算才能得到可用比例。",
+      "reviewerNote": "獨立重算：750÷1200=0.625=5/8，因此果肉:水=5:8。 正確選項為「5:8」。逐項檢查後，唯一為真的理由是「1.2公斤=1200公克，750:1200 同除150得5:8。」；其餘三項分別因「3:4 對應900:1200。」、「5:12 忽略共同因數。」、「8:5 是水:果肉。」而排除。邊界與語意再檢查：情境中的單位換算不可省略，否則數字比無意義。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v011-semantic-review-r1",
+      "questionId": "u06-s001-v011",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "2803f15bc92a5a429578c8d9216b88dd28ced0c71f639159338bed73bd5069c2",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "18/48=3/8，故部分對總量為3:8。",
+      "derivedAnswer": "3:8",
+      "storedAnswer": "3:8",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "18:48 同除以 6 得 3:8。",
+        "3:5 是七年級:非七年級。",
+        "5:8 是非七年級:全隊。",
+        "8:3 是倒比。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「辨認情境中的比之分母」，已明示必要條件：全隊48已包含七年級18。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：人數單位一致。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：題幹明確問七年級:全隊，不是七年級:其他。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "需要讀懂部分與總量的角色。",
+      "literacyNecessity": "若刪除『全隊』語意就會改變分母，因此情境是數學必要的。",
+      "reviewerNote": "獨立重算：18/48=3/8，故部分對總量為3:8。 正確選項為「3:8」。逐項檢查後，唯一為真的理由是「18:48 同除以 6 得 3:8。」；其餘三項分別因「3:5 是七年級:非七年級。」、「5:8 是非七年級:全隊。」、「8:3 是倒比。」而排除。邊界與語意再檢查：題幹明確問七年級:全隊，不是七年級:其他。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s001-v012-semantic-review-r1",
+      "questionId": "u06-s001-v012",
+      "unitId": "u06",
+      "skillId": "ratio-simplify",
+      "contentSha256": "418a48e3905c81bd6def6a08e00cef25b4e8d88f23111b9711231d70d2b3b954",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "1500/900=5/3，故最簡比5:3。",
+      "derivedAnswer": "5:3",
+      "storedAnswer": "5:3",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "3:5 是反向比。",
+        "1.5公里=1500公尺，1500:900同除300得5:3。",
+        "5:9 把1.5公里誤當500公尺。",
+        "15:9 等值但不是最簡。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「在路程資料中建立最簡比」，已明示必要條件：兩段長度皆為正。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公里換公尺。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：前後兩段已明確且無重疊。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：1.5公里為精確值。。"
+      },
+      "difficultyReason": "同時考單位與順序。",
+      "literacyNecessity": "路線分段資訊決定前項與後項，不能移除情境而保持同一任務。",
+      "reviewerNote": "獨立重算：1500/900=5/3，故最簡比5:3。 正確選項為「5:3」。逐項檢查後，唯一為真的理由是「1.5公里=1500公尺，1500:900同除300得5:3。」；其餘三項分別因「3:5 是反向比。」、「5:9 把1.5公里誤當500公尺。」、「15:9 等值但不是最簡。」而排除。邊界與語意再檢查：前後兩段已明確且無重疊。",
+      "reviewerDecision": "pass"
+    }
+  ],
+  "drawingSpecs": []
+};

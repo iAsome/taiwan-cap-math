@@ -1,0 +1,252 @@
+{
+  "lectureId": "u06-s010-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-applications",
+  "skillId": "continued-ratio-preview",
+  "lockedSkillTitle": "連比預備",
+  "title": "連比預備：對齊共同項再合併",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "比例應用",
+    "skillOrder": 10,
+    "lockedPrerequisiteSkillIds": [
+      "ratio-word-problem"
+    ],
+    "capBoundary": "只建立 A:B 與 B:C 的共同項對齊與簡單三量讀法；U18 才進行完整連比章節與更複雜分配。"
+  },
+  "prerequisiteBridge": "兩個比若共享同一個量，例如 A:B 與 B:C，可以把 B 的份數調成相同後，得到一致的三量關係。",
+  "learningOutcomes": [
+    "能辨認兩個比中的共同項。",
+    "能以最小公倍數對齊共同項份數。",
+    "能寫出簡單 A:B:C 並檢查回原兩比。",
+    "能避免把比的項直接相接或相乘。"
+  ],
+  "glossary": [
+    {
+      "term": "連比",
+      "definition": "用同一份量同時比較三個以上量，例如 A:B:C。"
+    },
+    {
+      "term": "共同項",
+      "definition": "出現在兩個比中的同一個量，例如 A:B 與 B:C 的 B。"
+    },
+    {
+      "term": "對齊",
+      "definition": "把共同項在兩個等值比中的份數調成相同。"
+    },
+    {
+      "term": "一致性檢查",
+      "definition": "從連比取出相鄰兩項，化簡後應回到原比。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "A:B=m:n",
+      "meaning": "A 與 B 的份數關係。"
+    },
+    {
+      "symbol": "B:C=p:q",
+      "meaning": "B 與 C 的份數關係。"
+    },
+    {
+      "symbol": "A:B:C",
+      "meaning": "三量使用同一單位份數的比較。"
+    }
+  ],
+  "conceptNarrative": [
+    "不能直接由 A:B=2:3、B:C=4:5 寫 A:B:C=2:3:5，因為 B 在兩個比中分別是 3 份與 4 份。",
+    "先找 3 與 4 的最小公倍數 12；第一比乘 4 得 8:12，第二比乘 3 得 12:15。",
+    "因此可寫 A:B:C=8:12:15，且 A:B=2:3、B:C=4:5 都能還原。",
+    "共同項必須真的是同一量；同名不同時點或不同單位的量不能直接對齊。",
+    "本技能重點是建立一致份數，不進入 U18 的複雜多段連比技巧。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "共同項對齊",
+      "statement": "將兩個等值比的共同量調整到相同份數，再合併成三量比。"
+    },
+    {
+      "name": "連比檢查",
+      "statement": "連比中任兩相關項取出化簡，應符合原給定比。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "若 A:B=m:n、B:C=p:q，令 L=lcm(n,p)",
+      "conditions": [
+        "B 為同一量",
+        "n、p>0"
+      ],
+      "meaning": "共同項目標份數。"
+    },
+    {
+      "formula": "A:B:C=m(L/n):L:q(L/p)",
+      "conditions": [
+        "份數為正整數"
+      ],
+      "meaning": "簡單對齊公式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "把 2:3 與 4:5 直接接成 2:3:5。",
+    "共同項位於不同位置時未先辨認，例如 A:B 與 C:B。",
+    "共同項數值未對齊便合併。",
+    "把兩個比的全部項相乘，得到不必要的大比。",
+    "把本節預備內容擴張成跨單元的完整連比分配定理。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出兩個比代表的共同量。",
+      "check": "真的是同一對象、同一時點與同一單位嗎？"
+    },
+    {
+      "step": 2,
+      "instruction": "讀出共同項在兩比中的份數。",
+      "check": "位置是前項還是後項？"
+    },
+    {
+      "step": 3,
+      "instruction": "找這兩個份數的最小公倍數。",
+      "check": "可否用更小共同倍數？"
+    },
+    {
+      "step": 4,
+      "instruction": "把每個比整體放大到共同項一致。",
+      "check": "前後項是否同乘？"
+    },
+    {
+      "step": 5,
+      "instruction": "合併並回代檢查兩個原比。",
+      "check": "取出 A:B、B:C 是否化簡正確？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "A:B=2:3，B:C=4:5，求 A:B:C。",
+      "solutionSteps": [
+        "共同項 B 的份數 3、4，最小公倍數 12。",
+        "2:3 放大 4 倍得 8:12；4:5 放大 3 倍得 12:15。"
+      ],
+      "answer": "8:12:15。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "甲:乙=5:6，丙:乙=7:4，寫甲:乙:丙。",
+      "solutionSteps": [
+        "共同項乙為 6 與 4 份，對齊到 12。",
+        "甲:乙=10:12；丙:乙=21:12，所以甲:乙:丙=10:12:21。"
+      ],
+      "answer": "10:12:21。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "X:Y=3:8，Y:Z=2:7。",
+      "solutionSteps": [
+        "Y 的 8 與 2 對齊到 8。",
+        "第二比乘 4 得 Y:Z=8:28。"
+      ],
+      "answer": "X:Y:Z=3:8:28。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "檢查 12:18:25 是否符合 A:B=2:3、B:C=18:25。",
+      "solutionSteps": [
+        "12:18 化簡為 2:3。",
+        "18:25 已最簡，兩個條件皆符合。"
+      ],
+      "answer": "符合。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "2:3 與 4:5 合成 2:3:5。",
+      "why": "B 的份數 3 與 4 不一致。",
+      "correction": "先對齊到 12。"
+    },
+    {
+      "mistake": "只放大共同項，其他項不變。",
+      "why": "破壞原比值。",
+      "correction": "一個比的前後項同乘。"
+    },
+    {
+      "mistake": "甲:乙與丙:乙 中把丙放到中間。",
+      "why": "未按照要求順序排列。",
+      "correction": "先寫目標順序甲:乙:丙。"
+    },
+    {
+      "mistake": "共同項用兩數相乘而不化最小。",
+      "why": "雖可能等值但不簡潔。",
+      "correction": "優先用最小公倍數。"
+    },
+    {
+      "mistake": "同名但不同單位仍直接對齊。",
+      "why": "量不真正相同。",
+      "correction": "先統一單位與語意。"
+    },
+    {
+      "mistake": "合併後不回查原比。",
+      "why": "順序錯誤不易發現。",
+      "correction": "抽出兩組比化簡驗算。"
+    }
+  ],
+  "selfCheck": [
+    "共同項是哪一個量？",
+    "它在兩個比中各幾份？",
+    "我使用最小公倍數對齊嗎？",
+    "每個比是否整體放大？",
+    "合併後能還原兩個原比嗎？"
+  ],
+  "summary": [
+    "連比預備的核心是對齊共同項。",
+    "對齊時整個比同乘，不能只改共同項。",
+    "合併後依指定順序排列。",
+    "最後拆回原兩比驗算。"
+  ],
+  "connections": {
+    "previous": "比例應用題提供實際量之間的兩兩比。",
+    "next": [
+      "比例複合應用會使用對齊後的份數進行多步推算。",
+      "完整連比內容保留在 U18。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s010-v001",
+      "u06-s010-v002",
+      "u06-s010-v003",
+      "u06-s010-v004",
+      "u06-s010-v005",
+      "u06-s010-v006",
+      "u06-s010-v007",
+      "u06-s010-v008",
+      "u06-s010-v009",
+      "u06-s010-v010",
+      "u06-s010-v011",
+      "u06-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s010-cr001",
+      "u06-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "三個合併例題均先用共同項最小公倍數重新對齊，再拆回兩個原比驗證；範圍刻意停在簡單三量一致份數，不引入 U18 的完整連比分配與複雜轉換。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "c3e11b222df171aed18a499665d0dad0e95884474b841da372ca8bd60d2569c8"
+}

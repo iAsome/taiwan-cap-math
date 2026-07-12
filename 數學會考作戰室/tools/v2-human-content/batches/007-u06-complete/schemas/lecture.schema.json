@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U06 human-authored lecture",
+  "type": "object",
+  "required": [
+    "lectureId",
+    "unitId",
+    "topicId",
+    "skillId",
+    "title",
+    "contentAuthority",
+    "learningOutcomes",
+    "conceptNarrative",
+    "workedExamples",
+    "commonMistakes",
+    "lectureReview",
+    "contentSha256"
+  ],
+  "properties": {
+    "unitId": {
+      "const": "u06"
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    "contentSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

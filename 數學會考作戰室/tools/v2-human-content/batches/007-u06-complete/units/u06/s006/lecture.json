@@ -1,0 +1,251 @@
+{
+  "lectureId": "u06-s006-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-variation",
+  "skillId": "inverse-variation",
+  "lockedSkillTitle": "反比",
+  "title": "反比：乘積固定的兩量關係",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "正比與反比",
+    "skillOrder": 6,
+    "lockedPrerequisiteSkillIds": [
+      "direct-variation"
+    ],
+    "capBoundary": "處理 xy=k 的反比判斷、數值求解與常見工作效率情境；不使用微積分或高中函數理論。"
+  },
+  "prerequisiteBridge": "正比以比值固定描述同倍變化；反比則在總量固定時，一量放大，另一量按相反倍數縮小。",
+  "learningOutcomes": [
+    "能以 xy 固定或 y=k/x 判斷反比。",
+    "能由一組非零資料求反比常數。",
+    "能用相反倍數或乘積解未知數。",
+    "能辨別總工作量固定與效率固定等必要條件。"
+  ],
+  "glossary": [
+    {
+      "term": "反比",
+      "definition": "兩量乘積固定；一量乘幾倍，另一量除以同樣倍數。"
+    },
+    {
+      "term": "反比常數",
+      "definition": "xy=k 中固定的乘積 k。"
+    },
+    {
+      "term": "固定總量",
+      "definition": "例如路程、工作量或矩形面積在比較過程中不改變。"
+    },
+    {
+      "term": "相反倍數",
+      "definition": "x 乘 r 倍時，y 乘 1/r 倍。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "y∝1/x",
+      "meaning": "y 與 x 成反比。"
+    },
+    {
+      "symbol": "xy=k",
+      "meaning": "x、y 的乘積固定。"
+    },
+    {
+      "symbol": "y=k/x",
+      "meaning": "x≠0 時的反比關係式。"
+    }
+  ],
+  "conceptNarrative": [
+    "反比不是一增一減就足夠，而是每組 x×y 都相同。",
+    "固定路程下，速度×時間=路程，因此速度與時間成反比。",
+    "工人數與天數成反比需要每位工人的效率相同，且總工作量不變。",
+    "x 變成 4 倍時，y 變成 1/4；若只少固定數量，通常不是反比。",
+    "x、y 不能為 0，因為 y=k/x 需除以 x；生活量還常限制為正。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "反比關係",
+      "statement": "存在固定非零或指定常數 k，使每組非零資料滿足 xy=k。"
+    },
+    {
+      "name": "反比常數",
+      "statement": "每組成對資料的固定乘積。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "xy=k",
+      "conditions": [
+        "x、y 在關係中不取使式子失去情境意義的值"
+      ],
+      "meaning": "反比乘積形式。"
+    },
+    {
+      "formula": "x1y1=x2y2",
+      "conditions": [
+        "同一固定總量與相同條件"
+      ],
+      "meaning": "兩組反比資料比較。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只看到 x 增加、y 減少便判反比。",
+    "工作題中每人效率不同時不能直接用人數×天數。",
+    "總路程改變時，速度與時間的乘積不再同一常數。",
+    "x=0 時 y=k/x 沒有定義。",
+    "有固定準備時間的總耗時不一定與機器數成反比。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找出可能固定的總量。",
+      "check": "路程、面積、工作量是否真的不變？"
+    },
+    {
+      "step": 2,
+      "instruction": "計算每組乘積 xy。",
+      "check": "是否所有乘積相同？"
+    },
+    {
+      "step": 3,
+      "instruction": "寫出 k 或 x1y1=x2y2。",
+      "check": "單位乘積有沒有意義？"
+    },
+    {
+      "step": 4,
+      "instruction": "解未知數。",
+      "check": "倍數方向是否相反？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查條件與情境。",
+      "check": "效率、工作時間、整數限制是否一致？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "x、y 成反比，x=6、y=8，求 k。",
+      "solutionSteps": [
+        "k=xy。",
+        "k=6×8=48。"
+      ],
+      "answer": "48。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "承上，x=12 時求 y。",
+      "solutionSteps": [
+        "12y=48。",
+        "y=4。"
+      ],
+      "answer": "4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "資料 (2,18)、(3,12)、(6,7) 是否反比？",
+      "solutionSteps": [
+        "乘積為 36、36、42。",
+        "乘積不全相同。"
+      ],
+      "answer": "不是反比。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "同效率 8 人做 15 天的工作，改 12 人需幾天？",
+      "solutionSteps": [
+        "總人日數 8×15=120。",
+        "12×天數=120，得 10 天。"
+      ],
+      "answer": "10 天。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把反比常數算成 y/x。",
+      "why": "混用正比判準。",
+      "correction": "反比檢查 xy。"
+    },
+    {
+      "mistake": "人數加倍，天數也加倍。",
+      "why": "倍數方向弄反。",
+      "correction": "總工作固定時天數減半。"
+    },
+    {
+      "mistake": "不同效率工人仍用人數×天數。",
+      "why": "忽略模型條件。",
+      "correction": "先換成相同效率或總工作率。"
+    },
+    {
+      "mistake": "只用一組資料宣稱反比。",
+      "why": "一組資料無法辨別關係。",
+      "correction": "需有規則或多組資料。"
+    },
+    {
+      "mistake": "接受 x=0 的反比點。",
+      "why": "除法無定義。",
+      "correction": "反比圖形不通過座標軸。"
+    },
+    {
+      "mistake": "固定路程題把速度相加。",
+      "why": "應保持速度×時間。",
+      "correction": "列 v1t1=v2t2。"
+    }
+  ],
+  "selfCheck": [
+    "固定的是乘積而不是比值嗎？",
+    "比較條件與總量相同嗎？",
+    "x 乘倍數後 y 有按相反倍數變化嗎？",
+    "是否排除 0？",
+    "人數或件數答案需要整數嗎？"
+  ],
+  "summary": [
+    "反比的本質是 xy 固定。",
+    "一量乘 r 倍，另一量除以 r。",
+    "工作、速度情境必須先確認總量與效率條件。",
+    "一增一減只是表面，乘積檢查才是判準。"
+  ],
+  "connections": {
+    "previous": "正比以比值固定，反比以乘積固定。",
+    "next": [
+      "反比圖形將不同的成對資料呈現在座標平面。",
+      "複合應用會同時出現正比與反比步驟。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s006-v001",
+      "u06-s006-v002",
+      "u06-s006-v003",
+      "u06-s006-v004",
+      "u06-s006-v005",
+      "u06-s006-v006",
+      "u06-s006-v007",
+      "u06-s006-v008",
+      "u06-s006-v009",
+      "u06-s006-v010",
+      "u06-s006-v011",
+      "u06-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s006-cr001",
+      "u06-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重新計算三組資料乘積 36、36、42，確認不能因前兩組成立就忽略第三組；工作例以 120 人日驗算，並明列同效率與總工作固定兩項必要假設。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "1c14b48be8447fc951f4ad6510c03baa7d3687c036b280d711f9de8c99185ffa"
+}

@@ -1,0 +1,263 @@
+{
+  "lectureId": "u06-s004-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-ratio-basics",
+  "skillId": "proportion-property",
+  "lockedSkillTitle": "比例式性質",
+  "title": "比例式性質：乘積不變與合法變形",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "比與比例式基礎",
+    "skillOrder": 4,
+    "lockedPrerequisiteSkillIds": [
+      "ratio-part-total"
+    ],
+    "capBoundary": "使用國中比例式的交叉乘積、倒比與和比等可由代數驗證的變形；不延伸至高中的複雜比例定理。"
+  },
+  "prerequisiteBridge": "已會解 a:b=c:d。現在不只求單一未知數，而是理解哪些變形必然保留等值，哪些只是看起來對稱卻不成立。",
+  "learningOutcomes": [
+    "能由 a:b=c:d 推得 ad=bc，反向使用時確認分母非零。",
+    "能判斷同時倒比、交換內項等合法變形。",
+    "能證明 (a+b):b=(c+d):d 等和比性質。",
+    "能用反例辨認只改一邊或亂加減的錯誤。"
+  ],
+  "glossary": [
+    {
+      "term": "外項乘積",
+      "definition": "a:b=c:d 中 a×d。"
+    },
+    {
+      "term": "內項乘積",
+      "definition": "a:b=c:d 中 b×c。"
+    },
+    {
+      "term": "倒比",
+      "definition": "同時交換每個比的前項與後項。"
+    },
+    {
+      "term": "和比",
+      "definition": "由原比例把前後項的和與其中一項比較，例如 (a+b):b。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a:b=c:d",
+      "meaning": "a/b=c/d，b、d≠0。"
+    },
+    {
+      "symbol": "b:a=d:c",
+      "meaning": "原比例兩邊同時倒比，需 a、c≠0。"
+    },
+    {
+      "symbol": "(a+b):b=(c+d):d",
+      "meaning": "兩邊都把 1 加到原比值上所得的和比。"
+    }
+  ],
+  "conceptNarrative": [
+    "比例式的核心是同一比值 k。若 a/b=c/d=k，則 a=kb、c=kd。",
+    "外項乘積等於內項乘積可用來判斷四個數能否排成比例，也可求未知數。",
+    "兩邊同時倒數會保留相等，但若原分子為 0，倒比會出現 0 作後項，必須額外限制。",
+    "和比性質不是把四項任意相加，而是兩邊做同一代數操作：a/b+1=c/d+1。",
+    "只交換一個比、只在一邊加數或交叉相加，都沒有一般保證。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "比例式基本性質",
+      "statement": "當 b、d≠0 時，a:b=c:d 當且僅當 ad=bc。"
+    },
+    {
+      "name": "合法比例變形",
+      "statement": "由等式兩邊進行同一可逆運算，且不破壞分母非零條件所得的比例。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a:b=c:d ⇒ ad=bc",
+      "conditions": [
+        "b≠0",
+        "d≠0"
+      ],
+      "meaning": "外項積等於內項積。"
+    },
+    {
+      "formula": "a:b=c:d ⇒ b:a=d:c",
+      "conditions": [
+        "a≠0",
+        "b≠0",
+        "c≠0",
+        "d≠0"
+      ],
+      "meaning": "同時倒比。"
+    },
+    {
+      "formula": "a:b=c:d ⇒ (a+b):b=(c+d):d",
+      "conditions": [
+        "b≠0",
+        "d≠0"
+      ],
+      "meaning": "和比性質。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只把左邊 a:b 倒成 b:a，右邊不變。",
+    "由 a/b=c/d 推成 (a+c)/(b+d)=a/b 雖有時成立，但不能在未檢查分母與結構下機械套用。",
+    "原分子為 0 時直接倒比會使後項為 0。",
+    "交叉乘積相等但原比例分母為 0，仍不能宣稱原比例有定義。",
+    "把 a:b=c:d 誤推成 a+c=b+d。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先寫所有後項非零條件。",
+      "check": "變形後是否出現新的後項？"
+    },
+    {
+      "step": 2,
+      "instruction": "把比例式改寫成分數等式或共同比值 k。",
+      "check": "每項角色是否清楚？"
+    },
+    {
+      "step": 3,
+      "instruction": "對等式兩邊做相同運算。",
+      "check": "倒數、加 1 或乘除是否兩邊同步？"
+    },
+    {
+      "step": 4,
+      "instruction": "還原成比的形式。",
+      "check": "新比例的順序與分母是否合法？"
+    },
+    {
+      "step": 5,
+      "instruction": "可用一組具體數代入反查。",
+      "check": "若命題宣稱必然成立，是否能被反例推翻？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "已知 6:9=10:15，驗證乘積性質。",
+      "solutionSteps": [
+        "外項積 6×15=90。",
+        "內項積 9×10=90，兩者相等。"
+      ],
+      "answer": "比例式符合基本性質。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "若 a:b=3:4，求 (a+b):b。",
+      "solutionSteps": [
+        "令 a=3k、b=4k。",
+        "(a+b):b=7k:4k=7:4。"
+      ],
+      "answer": "7:4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "由 2:5=8:20 寫出同時倒比。",
+      "solutionSteps": [
+        "兩邊前後項同時交換。",
+        "得到 5:2=20:8，兩邊比值皆 2.5。"
+      ],
+      "answer": "5:2=20:8。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "已知 a:b=c:d=2:7，求 (b-a):b。",
+      "solutionSteps": [
+        "令 a=2k、b=7k。",
+        "(b-a):b=5k:7k=5:7。"
+      ],
+      "answer": "5:7。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "外項認成 a、c。",
+      "why": "只看同一列位置。",
+      "correction": "a、d 在比例式兩端，才是外項。"
+    },
+    {
+      "mistake": "只倒左比。",
+      "why": "沒有對等式兩邊做相同操作。",
+      "correction": "左右兩比同步倒比。"
+    },
+    {
+      "mistake": "0:3=0:5 後寫 3:0=5:0。",
+      "why": "倒比後後項為 0。",
+      "correction": "倒比需原前項非零。"
+    },
+    {
+      "mistake": "由 a:b=c:d 推 a+b=c+d。",
+      "why": "比例相同不代表總量相同。",
+      "correction": "令 a=kb、c=kd 檢查。"
+    },
+    {
+      "mistake": "和比時寫 (a+b):a=(c+d):d。",
+      "why": "左右分母角色不一致。",
+      "correction": "同一變形應對應相同位置。"
+    },
+    {
+      "mistake": "只看交叉積，忽略原後項為 0。",
+      "why": "乘積等式可能有意義，但比例式本身沒有。",
+      "correction": "先檢查定義域。"
+    }
+  ],
+  "selfCheck": [
+    "原比例與新比例的後項都非零嗎？",
+    "外項與內項辨認正確嗎？",
+    "運算是否同步作用在等式兩邊？",
+    "可以用共同比值 k 證明嗎？",
+    "隨機代入等值比能通過嗎？"
+  ],
+  "summary": [
+    "比例式的基本性質是 ad=bc，但分母非零不可省略。",
+    "同時倒比與和比可由等式同操作證明。",
+    "任何變形都要保持對應順序與定義域。",
+    "可用共同比值 k 或具體反例檢查命題。"
+  ],
+  "connections": {
+    "previous": "由部分量模型理解 a=mk、b=nk。",
+    "next": [
+      "正比可視為 y:x 固定。",
+      "反比則改為 xy 固定。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s004-v001",
+      "u06-s004-v002",
+      "u06-s004-v003",
+      "u06-s004-v004",
+      "u06-s004-v005",
+      "u06-s004-v006",
+      "u06-s004-v007",
+      "u06-s004-v008",
+      "u06-s004-v009",
+      "u06-s004-v010",
+      "u06-s004-v011",
+      "u06-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s004-cr001",
+      "u06-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐式以共同比值 k 與具體數 2:5=8:20 雙重驗證倒比、和比與差比；另檢查 0 作原分子時倒比失效，避免把交叉乘積條件誤當成無條件定義。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "9cf201d81b909fc6364b94ee239622960a1e9fa0d458504a92e994f9dc8134ec"
+}

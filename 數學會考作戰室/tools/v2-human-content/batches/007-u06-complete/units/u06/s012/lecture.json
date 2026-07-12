@@ -1,0 +1,262 @@
+{
+  "lectureId": "u06-s012-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-literacy",
+  "skillId": "ratio-literacy",
+  "lockedSkillTitle": "比例素養題",
+  "title": "比例素養題：讀取資料與檢查條件和公平比較",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "比例素養",
+    "skillOrder": 12,
+    "lockedPrerequisiteSkillIds": [
+      "ratio-composite-problem"
+    ],
+    "capBoundary": "整合國中比例式範圍的表格、標示、方案與實際限制；不依賴高中統計推論。"
+  },
+  "prerequisiteBridge": "前 11 個技能提供計算工具。本技能要求先理解資料來源、比較基準與條件，再選擇合適的比率模型。",
+  "learningOutcomes": [
+    "能從表格、標籤與文字中找出必要資料。",
+    "能選擇公平的比較基準，例如每單位價格或每人用量。",
+    "能辨認總量比與單位率可能給出不同結論。",
+    "能說明假設、限制、四捨五入與結果意義。"
+  ],
+  "glossary": [
+    {
+      "term": "比較基準",
+      "definition": "為公平比較而統一的單位，例如每 100 克價格。"
+    },
+    {
+      "term": "單位率",
+      "definition": "把分母調成 1 的率。"
+    },
+    {
+      "term": "必要資訊",
+      "definition": "足以回答問題且真正進入模型的資料。"
+    },
+    {
+      "term": "限制條件",
+      "definition": "容量、整包購買、最低費用、時段或誤差等現實規則。"
+    },
+    {
+      "term": "誤導比較",
+      "definition": "使用不同分母、不同範圍或只看總量造成的不公平結論。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "每單位值=總量/單位數",
+      "meaning": "統一分母後比較。"
+    },
+    {
+      "symbol": "百分率=部分/總量×100%",
+      "meaning": "分母必須是正確總量。"
+    },
+    {
+      "symbol": "約",
+      "meaning": "結果經四捨五入，需標明精確程度。"
+    }
+  ],
+  "conceptNarrative": [
+    "總價較低不代表更便宜，包裝大小不同時應比較每克、每毫升或每件價格。",
+    "總人數較多的地區案件數可能較多，但每萬人率反而較低；結論取決於問題問總量還是風險率。",
+    "圖表中的基準可能不是 0，視覺差距會被放大；比例判斷應讀數值與單位。",
+    "現實題常有整包購買、容量上限、起跳費等限制，純比例計算後還要套用規則。",
+    "資料不足時，正確作法是指出缺少什麼，而不是自行假設一個數字。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "公平比例比較",
+      "statement": "把比較量換到相同分母、相同單位與相同條件後再判斷。"
+    },
+    {
+      "name": "素養解答",
+      "statement": "包含數學結果、使用資料、假設限制與對情境的解釋。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "單位價格=價格/數量",
+      "conditions": [
+        "商品品質與計價條件可比較"
+      ],
+      "meaning": "價格公平比較。"
+    },
+    {
+      "formula": "每萬人率=事件數/人口×10000",
+      "conditions": [
+        "期間與事件定義相同"
+      ],
+      "meaning": "不同人口規模比較。"
+    },
+    {
+      "formula": "所需包數=向上取整(需求量/每包量)",
+      "conditions": [
+        "只能整包購買"
+      ],
+      "meaning": "比例結果結合離散限制。"
+    }
+  ],
+  "nonApplicableCases": [
+    "分母不同卻直接比較百分比或總數。",
+    "忽略活動期間、品質、容量等條件。",
+    "只能整包購買時把 2.3 包當可購買答案。",
+    "圖表截斷座標軸後僅靠柱高判倍率。",
+    "資料不足仍給出唯一結論。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先寫問題真正要比較或求什麼。",
+      "check": "總量、單位率、百分率還是實際購買量？"
+    },
+    {
+      "step": 2,
+      "instruction": "列出必要資料與單位。",
+      "check": "期間、人口、容量、價格條件一致嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "統一比較基準並選模型。",
+      "check": "分母是否相同？"
+    },
+    {
+      "step": 4,
+      "instruction": "計算後套用現實限制。",
+      "check": "需整數、上限、最低費或四捨五入嗎？"
+    },
+    {
+      "step": 5,
+      "instruction": "用完整句子解釋結論與限制。",
+      "check": "結論是否超出資料能支持的範圍？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "A 包 450 克 81 元，B 包 700 克 119 元，哪包每 100 克較便宜？",
+      "solutionSteps": [
+        "A 每 100 克為 81÷450×100=18 元。",
+        "B 每 100 克為 119÷700×100=17 元。"
+      ],
+      "answer": "B 包較便宜，每 100 克少 1 元。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "甲地 40 件、人口 8 萬；乙地 54 件、人口 12 萬，比較每萬人件數。",
+      "solutionSteps": [
+        "甲為 40/80000×10000=5。",
+        "乙為 54/120000×10000=4.5。"
+      ],
+      "answer": "甲地每萬人件數較高。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "活動需 5.2 公升飲料，每瓶 1.5 公升且只能買整瓶，至少幾瓶？",
+      "solutionSteps": [
+        "5.2÷1.5≈3.47。",
+        "3 瓶不足，需向上取整為 4 瓶。"
+      ],
+      "answer": "4 瓶。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某圖表只顯示 95 到 100 的滿意度，甲 98、乙 96；能否說甲是乙的兩倍？",
+      "solutionSteps": [
+        "實際比值 98/96≈1.021，不是 2。",
+        "截斷軸只放大視覺差距。"
+      ],
+      "answer": "不能；甲約為乙的 1.02 倍。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只看包裝總價。",
+      "why": "數量不同，基準不公平。",
+      "correction": "換算每克或每 100 克。"
+    },
+    {
+      "mistake": "只看事件總數比較風險。",
+      "why": "人口分母不同。",
+      "correction": "計算相同人口基準的率。"
+    },
+    {
+      "mistake": "3.47 瓶四捨五入成 3 瓶。",
+      "why": "最低需求必須向上取整。",
+      "correction": "檢查 3 瓶容量不足。"
+    },
+    {
+      "mistake": "把柱狀圖視覺高度當數值倍率。",
+      "why": "座標軸可能截斷。",
+      "correction": "讀標示數字計算比值。"
+    },
+    {
+      "mistake": "忽略不同期間。",
+      "why": "一年與一月資料不可直接比總量。",
+      "correction": "先換成同期間率。"
+    },
+    {
+      "mistake": "資料缺少容量仍選最便宜方案。",
+      "why": "無法求單位價格。",
+      "correction": "指出需要容量資訊。"
+    }
+  ],
+  "selfCheck": [
+    "比較基準相同嗎？",
+    "分母與期間一致嗎？",
+    "有整包、最低費或容量限制嗎？",
+    "圖表視覺與數值是否一致？",
+    "我的結論有說明假設與範圍嗎？"
+  ],
+  "summary": [
+    "比例素養先決定公平基準，再計算。",
+    "總量、單位率與百分率回答不同問題。",
+    "現實限制可能使純比例答案需要調整。",
+    "資料不足或圖表誤導時，要明確指出。"
+  ],
+  "connections": {
+    "previous": "比例複合應用提供分段建模與中間量檢查。",
+    "next": [
+      "後續各單元的素養題都會延續同基準、同單位與限制審查。",
+      "U18 將完整發展連比與更深入比例分配。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s012-v001",
+      "u06-s012-v002",
+      "u06-s012-v003",
+      "u06-s012-v004",
+      "u06-s012-v005",
+      "u06-s012-v006",
+      "u06-s012-v007",
+      "u06-s012-v008",
+      "u06-s012-v009",
+      "u06-s012-v010",
+      "u06-s012-v011",
+      "u06-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s012-cr001",
+      "u06-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個例題分別重算每百克價格、每萬人率、向上取整與截斷軸比值；確認結論用語只支持資料範圍，並把不同期間、容量缺失與整包限制明列為必要審查。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "f3cbe70d65f8d7960ca5694f639c04b85f2213c23c1e5c64ddc24ab887013945"
+}

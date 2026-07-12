@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U06 human-authored MC item",
+  "type": "object",
+  "required": [
+    "questionId",
+    "unitId",
+    "topicId",
+    "skillId",
+    "difficulty",
+    "prompt",
+    "choices",
+    "answerIndex",
+    "independentSolution",
+    "optionAnalysis",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "unitId": {
+      "const": "u06"
+    },
+    "difficulty": {
+      "enum": [
+        "basic",
+        "standard",
+        "advanced",
+        "literacy"
+      ]
+    },
+    "choices": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "answerIndex": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}
