@@ -1,0 +1,241 @@
+{
+  "lectureId": "u19-s017-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-tangents",
+  "skillId": "two-tangent-segments",
+  "title": "切線段相等",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s017",
+    "lockedSkillId": "two-tangent-segments",
+    "lockedOrder": 17,
+    "scope": "使用同一圓外點引出的兩切線段相等。"
+  },
+  "learningOutcomes": [
+    "能使用同一圓外點兩切線段相等。",
+    "能列代數式求未知切線長。",
+    "能與周長或畢氏定理結合。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "tangent-radius",
+      "requiredLevel": "能使用「切線與半徑」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「切線與半徑」的結論，連接到本技能「切線段相等」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "圓外點",
+      "definition": "位於圓外的點。"
+    },
+    {
+      "term": "兩切線段",
+      "definition": "同一圓外點到兩個切點的線段。"
+    },
+    {
+      "term": "切線段相等定理",
+      "definition": "PA、PB為由P引至同圓的切線段時，PA=PB。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "從同一個圓外點 P 向同一圓作兩條切線，兩個切點雖在不同位置，但 PA 與 PB 長度相等。",
+    "理由可由連接圓心後的兩個直角三角形全等理解。",
+    "定理要求同一外點、同一圓、兩條都是真切線，三個條件缺一不可。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "圓外點",
+      "statement": "位於圓外的點。"
+    },
+    {
+      "name": "兩切線段",
+      "statement": "同一圓外點到兩個切點的線段。"
+    },
+    {
+      "name": "切線段相等定理",
+      "statement": "PA、PB為由P引至同圓的切線段時，PA=PB。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "PA=PB",
+      "conditions": [
+        "P為同一圓外點，A、B為兩切點"
+      ],
+      "meaning": "兩切線段相等"
+    }
+  ],
+  "nonApplicableCases": [
+    "不同外點的切線段不必相等。",
+    "一條切線與一條割線不能直接判相等。",
+    "連接到圓上任意點的線段不一定是切線段。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找共同外點P。",
+      "check": "完成此步後，確認仍在「切線段相等」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "確認A、B為同一圓的切點。",
+      "check": "完成此步後，確認仍在「切線段相等」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "列PA=PB。",
+      "check": "完成此步後，確認仍在「切線段相等」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "代入代數式求未知數。",
+      "check": "完成此步後，確認仍在「切線段相等」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "回代確認長度為正。",
+      "check": "完成此步後，確認仍在「切線段相等」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s017-L1",
+      "prompt": "PA、PB為切線段，PA=9。",
+      "solutionSteps": [
+        "同外點兩切線段相等。"
+      ],
+      "answer": "PB=9。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s017-L2",
+      "prompt": "PA=3x+1，PB=5x−7。",
+      "solutionSteps": [
+        "3x+1=5x−7。",
+        "x=4。"
+      ],
+      "answer": "x=4。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s017-L3",
+      "prompt": "PA=12，求兩切線段總長。",
+      "solutionSteps": [
+        "PB=12。",
+        "總長24。"
+      ],
+      "answer": "24。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s017-L4",
+      "prompt": "△PAB周長32，AB=10。",
+      "solutionSteps": [
+        "PA=PB。",
+        "2PA+10=32。"
+      ],
+      "answer": "PA=11。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「切線段相等」的定義、符號與單一步驟關係。",
+    "standard": "把「切線段相等」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「切線段相等」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「切線段相等」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "看到兩條線碰圓就判相等",
+      "why": "未確認同一外點與切線",
+      "correction": "逐條檢查條件"
+    },
+    {
+      "mistake": "把切點間弦AB也判等於PA",
+      "why": "定理只比較兩切線段",
+      "correction": "相等的是PA與PB"
+    },
+    {
+      "mistake": "列式時把常數移項錯",
+      "why": "代數運算錯",
+      "correction": "回代兩邊驗證"
+    },
+    {
+      "mistake": "求出負長度仍接受",
+      "why": "未做幾何範圍檢查",
+      "correction": "長度必須大於0"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「切線段相等」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "同一圓外點引出的兩切線段相等。",
+    "相等的是外點到兩切點的線段。",
+    "可與代數、周長及直角三角形結合。"
+  ],
+  "connections": {
+    "previous": "承接「切線與半徑」。",
+    "next": "下一技能為「圓素養題」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s017-fig001",
+      "purpose": "圓 O 外點 P 向圓作 PA、PB 兩切線，兩線段以相同刻痕表示等長。",
+      "altText": "圓 O 外點 P 向圓作 PA、PB 兩切線，兩線段以相同刻痕表示等長。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s017-v001",
+      "u19-s017-v002",
+      "u19-s017-v003",
+      "u19-s017-v004",
+      "u19-s017-v005",
+      "u19-s017-v006",
+      "u19-s017-v007",
+      "u19-s017-v008",
+      "u19-s017-v009",
+      "u19-s017-v010",
+      "u19-s017-v011",
+      "u19-s017-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s017-cr001",
+      "u19-s017-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「切線段相等」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：使用同一圓外點引出的兩切線段相等。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "7f4b4b8eb6b17f32a94ce0a07e5c19bae33faba3d7886d2edbb489f6ee86d4ab"
+}

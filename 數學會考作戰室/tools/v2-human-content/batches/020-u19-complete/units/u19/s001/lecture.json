@@ -1,0 +1,224 @@
+{
+  "lectureId": "u19-s001-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-angles",
+  "skillId": "central-inscribed-angle",
+  "title": "圓心角與圓周角",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s001",
+    "lockedSkillId": "central-inscribed-angle",
+    "lockedOrder": 1,
+    "scope": "辨認頂點位置並區分圓心角與圓周角。"
+  },
+  "learningOutcomes": [
+    "能由角的頂點判定圓心角或圓周角。",
+    "能指出一個角所截的弧。",
+    "能避免把圓內任意角誤稱為圓周角。"
+  ],
+  "prerequisites": [],
+  "prerequisiteBridge": "本技能是U19起點，先建立圓上點、圓心、角與弧的精確語言。",
+  "glossary": [
+    {
+      "term": "圓心角",
+      "definition": "頂點在圓心，兩邊都是半徑的角。"
+    },
+    {
+      "term": "圓周角",
+      "definition": "頂點在圓周上，兩邊與圓各交於另一點的角。"
+    },
+    {
+      "term": "所對弧",
+      "definition": "角的兩邊在圓上截出的那段弧。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "判斷角的種類，第一步不是看角畫得大或小，而是看頂點放在哪裡。",
+    "頂點在圓心才是圓心角；頂點在圓周上且兩邊都是弦的方向，才是圓周角。",
+    "同一條弧可以同時有圓心角與圓周角，但兩者的大小關係要到後續技能再使用。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "圓心角",
+      "statement": "頂點在圓心，兩邊都是半徑的角。"
+    },
+    {
+      "name": "圓周角",
+      "statement": "頂點在圓周上，兩邊與圓各交於另一點的角。"
+    },
+    {
+      "name": "所對弧",
+      "statement": "角的兩邊在圓上截出的那段弧。"
+    }
+  ],
+  "formulas": [],
+  "nonApplicableCases": [
+    "頂點在圓內但不在圓心的角，不是圓心角。",
+    "頂點在圓外的角，不是圓周角。",
+    "只有一邊穿過圓而另一邊未形成弦時，不能直接套用圓周角性質。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先標出圓心 O。",
+      "check": "完成此步後，確認仍在「圓心角與圓周角」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "確認角的頂點位置。",
+      "check": "完成此步後，確認仍在「圓心角與圓周角」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "沿角的兩邊找到圓上的交點。",
+      "check": "完成此步後，確認仍在「圓心角與圓周角」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "寫出角名與所對弧。",
+      "check": "完成此步後，確認仍在「圓心角與圓周角」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s001-L1",
+      "prompt": "圓心 O，A、B 在圓上，判斷 ∠AOB。",
+      "solutionSteps": [
+        "頂點是 O。",
+        "OA、OB 都是半徑。"
+      ],
+      "answer": "∠AOB 是圓心角。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s001-L2",
+      "prompt": "A、B、C 在圓上，判斷 ∠ACB。",
+      "solutionSteps": [
+        "頂點 C 在圓周上。",
+        "CA、CB 都是弦。"
+      ],
+      "answer": "∠ACB 是圓周角。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s001-L3",
+      "prompt": "點 P 在圓內但 P≠O，判斷 ∠APB。",
+      "solutionSteps": [
+        "頂點不在圓心。",
+        "頂點也不在圓周。"
+      ],
+      "answer": "不是本節定義的圓心角或圓周角。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s001-L4",
+      "prompt": "∠ADB 的兩邊交圓於 A、B。指出所對弧。",
+      "solutionSteps": [
+        "角的端點是 A、B。",
+        "選不含頂點 D 的弧。"
+      ],
+      "answer": "所對弧為弧 AB。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「圓心角與圓周角」的定義、符號與單一步驟關係。",
+    "standard": "把「圓心角與圓周角」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「圓心角與圓周角」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「圓心角與圓周角」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "只看角畫在圓內就叫圓心角",
+      "why": "忽略頂點必須是圓心",
+      "correction": "先找圓心標記再判定"
+    },
+    {
+      "mistake": "把圓上任意兩線形成的角都叫圓周角",
+      "why": "未檢查兩邊是否為弦方向",
+      "correction": "確認兩邊都連到圓上另一點"
+    },
+    {
+      "mistake": "所對弧包含圓周角頂點",
+      "why": "選錯弧的方向",
+      "correction": "圓周角所對弧不含其頂點"
+    },
+    {
+      "mistake": "用角的大小判斷種類",
+      "why": "種類由位置而非大小決定",
+      "correction": "先看頂點再看兩邊"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「圓心角與圓周角」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "圓心角的頂點在圓心。",
+    "圓周角的頂點在圓周上。",
+    "所對弧由角的兩邊在圓上的端點決定。"
+  ],
+  "connections": {
+    "previous": "U19起始技能。",
+    "next": "下一技能為「弧與角」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s001-fig001",
+      "purpose": "圓 O 上有 A、B、C 三點，畫出圓心角 AOB 與圓周角 ACB，並以不同弧線標示共同端點。",
+      "altText": "圓 O 上有 A、B、C 三點，畫出圓心角 AOB 與圓周角 ACB，並以不同弧線標示共同端點。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s001-v001",
+      "u19-s001-v002",
+      "u19-s001-v003",
+      "u19-s001-v004",
+      "u19-s001-v005",
+      "u19-s001-v006",
+      "u19-s001-v007",
+      "u19-s001-v008",
+      "u19-s001-v009",
+      "u19-s001-v010",
+      "u19-s001-v011",
+      "u19-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s001-cr001",
+      "u19-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「圓心角與圓周角」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：辨認頂點位置並區分圓心角與圓周角。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "24862856042a899d17f3ec6aa85f79beedc9b05a07b3db01574c6dc24f9bca8a"
+}

@@ -1,0 +1,236 @@
+{
+  "unitId": "u19",
+  "numericId": 19,
+  "title": "圓",
+  "gradeBand": "9上",
+  "domain": "空間與形狀",
+  "description": "圓周角、弧長扇形、切線與弦。",
+  "coreGoal": "能求弧長、扇形面積並用圓性質解題。",
+  "capScopeNote": "使用 ∠、△ 等標準符號。",
+  "topics": [
+    {
+      "topicId": "u19-angles",
+      "title": "圓與角",
+      "order": 1,
+      "skills": [
+        {
+          "slot": "s001",
+          "skillId": "central-inscribed-angle",
+          "title": "圓心角與圓周角",
+          "order": 1,
+          "topicId": "u19-angles",
+          "prerequisiteSkillIds": [],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s002",
+          "skillId": "arc-angle",
+          "title": "弧與角",
+          "order": 2,
+          "topicId": "u19-angles",
+          "prerequisiteSkillIds": [
+            "central-inscribed-angle"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s003",
+          "skillId": "inscribed-quadrilateral",
+          "title": "圓內接四邊形",
+          "order": 3,
+          "topicId": "u19-angles",
+          "prerequisiteSkillIds": [
+            "arc-angle"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s004",
+          "skillId": "arc-length",
+          "title": "弧長",
+          "order": 4,
+          "topicId": "u19-angles",
+          "prerequisiteSkillIds": [
+            "inscribed-quadrilateral"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s005",
+          "skillId": "circle-chord",
+          "title": "弦與弧",
+          "order": 5,
+          "topicId": "u19-angles",
+          "prerequisiteSkillIds": [
+            "arc-length"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s006",
+          "skillId": "inscribed-angle-theorem",
+          "title": "圓周角定理",
+          "order": 6,
+          "topicId": "u19-angles",
+          "prerequisiteSkillIds": [
+            "circle-chord"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s007",
+          "skillId": "central-angle-arc",
+          "title": "圓心角與弧",
+          "order": 7,
+          "topicId": "u19-angles",
+          "prerequisiteSkillIds": [
+            "inscribed-angle-theorem"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s008",
+          "skillId": "arc-length-formula",
+          "title": "弧長公式",
+          "order": 8,
+          "topicId": "u19-angles",
+          "prerequisiteSkillIds": [
+            "central-angle-arc"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s009",
+          "skillId": "circle-inscribed-basic",
+          "title": "內接角應用",
+          "order": 9,
+          "topicId": "u19-angles",
+          "prerequisiteSkillIds": [
+            "arc-length-formula"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        }
+      ]
+    },
+    {
+      "topicId": "u19-measure",
+      "title": "度量",
+      "order": 2,
+      "skills": [
+        {
+          "slot": "s010",
+          "skillId": "sector-area",
+          "title": "扇形面積",
+          "order": 10,
+          "topicId": "u19-measure",
+          "prerequisiteSkillIds": [
+            "circle-inscribed-basic"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s011",
+          "skillId": "circle-composite-area",
+          "title": "圓複合面積",
+          "order": 11,
+          "topicId": "u19-measure",
+          "prerequisiteSkillIds": [
+            "sector-area"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s012",
+          "skillId": "sector-perimeter",
+          "title": "扇形周長",
+          "order": 12,
+          "topicId": "u19-measure",
+          "prerequisiteSkillIds": [
+            "circle-composite-area"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s013",
+          "skillId": "circle-area",
+          "title": "圓面積",
+          "order": 13,
+          "topicId": "u19-measure",
+          "prerequisiteSkillIds": [
+            "sector-perimeter"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s014",
+          "skillId": "circle-composite-perimeter",
+          "title": "圓組合周長",
+          "order": 14,
+          "topicId": "u19-measure",
+          "prerequisiteSkillIds": [
+            "circle-area"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        }
+      ]
+    },
+    {
+      "topicId": "u19-tangents",
+      "title": "切線",
+      "order": 3,
+      "skills": [
+        {
+          "slot": "s015",
+          "skillId": "tangent-properties",
+          "title": "切線性質",
+          "order": 15,
+          "topicId": "u19-tangents",
+          "prerequisiteSkillIds": [
+            "circle-composite-perimeter"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s016",
+          "skillId": "tangent-radius",
+          "title": "切線與半徑",
+          "order": 16,
+          "topicId": "u19-tangents",
+          "prerequisiteSkillIds": [
+            "tangent-properties"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        },
+        {
+          "slot": "s017",
+          "skillId": "two-tangent-segments",
+          "title": "切線段相等",
+          "order": 17,
+          "topicId": "u19-tangents",
+          "prerequisiteSkillIds": [
+            "tangent-radius"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        }
+      ]
+    },
+    {
+      "topicId": "u19-literacy",
+      "title": "素養應用",
+      "order": 4,
+      "skills": [
+        {
+          "slot": "s018",
+          "skillId": "circle-literacy",
+          "title": "圓素養題",
+          "order": 18,
+          "topicId": "u19-literacy",
+          "prerequisiteSkillIds": [
+            "two-tangent-segments"
+          ],
+          "capBoundary": "限國中會考範圍；不含高中延伸。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "lectureId": "u19-s002-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-angles",
+  "skillId": "arc-angle",
+  "title": "弧與角",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s002",
+    "lockedSkillId": "arc-angle",
+    "lockedOrder": 2,
+    "scope": "由弧的度數連結圓心角與圓周角。"
+  },
+  "learningOutcomes": [
+    "能理解弧的度數與圓心角相同。",
+    "能由弧度數求圓周角。",
+    "能分辨優弧與劣弧。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "central-inscribed-angle",
+      "requiredLevel": "能使用「圓心角與圓周角」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「圓心角與圓周角」的結論，連接到本技能「弧與角」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "弧的度數",
+      "definition": "用對應圓心角的度數表示弧的大小。"
+    },
+    {
+      "term": "劣弧",
+      "definition": "小於半圓的弧。"
+    },
+    {
+      "term": "優弧",
+      "definition": "大於半圓的弧。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "弧長是長度，弧的度數是角度，兩者不能混為同一個量。",
+    "弧 AB 的度數等於圓心角 ∠AOB 的度數。",
+    "圓周角的大小是它所對弧度數的一半；若題目給的是優弧，要先確認角所對的是哪一段弧。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "弧的度數",
+      "statement": "用對應圓心角的度數表示弧的大小。"
+    },
+    {
+      "name": "劣弧",
+      "statement": "小於半圓的弧。"
+    },
+    {
+      "name": "優弧",
+      "statement": "大於半圓的弧。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "m(弧AB)=∠AOB",
+      "conditions": [
+        "O 為圓心"
+      ],
+      "meaning": "弧的度數等於所對圓心角"
+    },
+    {
+      "formula": "圓周角=所對弧度數÷2",
+      "conditions": [
+        "角頂點在圓周且所對弧明確"
+      ],
+      "meaning": "由弧求角"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把 8 cm 的弧長直接當成 8°。",
+    "圓周角所對弧若不是題目給定的那一段，不能直接除以 2。",
+    "整圓是 360°，優弧常需用 360° 減劣弧。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認角的端點。",
+      "check": "完成此步後，確認仍在「弧與角」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "判定所對的是劣弧或優弧。",
+      "check": "完成此步後，確認仍在「弧與角」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "必要時用 360° 求另一弧。",
+      "check": "完成此步後，確認仍在「弧與角」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "圓心角取同度數，圓周角取一半。",
+      "check": "完成此步後，確認仍在「弧與角」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s002-L1",
+      "prompt": "弧 AB 為 100°，求 ∠AOB。",
+      "solutionSteps": [
+        "O 是圓心。",
+        "圓心角與弧同度數。"
+      ],
+      "answer": "100°。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s002-L2",
+      "prompt": "弧 AB 為 140°，C 在另一弧上，求 ∠ACB。",
+      "solutionSteps": [
+        "∠ACB 所對弧 AB。",
+        "140°÷2=70°。"
+      ],
+      "answer": "70°。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s002-L3",
+      "prompt": "劣弧 AB 為 80°，求優弧 AB。",
+      "solutionSteps": [
+        "整圓 360°。",
+        "360°−80°=280°。"
+      ],
+      "answer": "280°。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s002-L4",
+      "prompt": "圓周角為 55°，求所對弧。",
+      "solutionSteps": [
+        "弧度數為圓周角兩倍。",
+        "55°×2=110°。"
+      ],
+      "answer": "110°。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「弧與角」的定義、符號與單一步驟關係。",
+    "standard": "把「弧與角」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「弧與角」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「弧與角」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把弧度數和弧長單位混用",
+      "why": "一個是角度一個是長度",
+      "correction": "先檢查單位 ° 或 cm"
+    },
+    {
+      "mistake": "圓周角直接等於弧度數",
+      "why": "忘記一半關係",
+      "correction": "圓周角乘 2 才是所對弧"
+    },
+    {
+      "mistake": "忽略優弧與劣弧",
+      "why": "只看到端點相同",
+      "correction": "用是否含指定點決定弧"
+    },
+    {
+      "mistake": "把整圓當 180°",
+      "why": "混淆半圓",
+      "correction": "整圓 360°，半圓 180°"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「弧與角」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "弧的度數等於所對圓心角。",
+    "圓周角等於所對弧的一半。",
+    "同端點的優弧與劣弧度數和為 360°。"
+  ],
+  "connections": {
+    "previous": "承接「圓心角與圓周角」。",
+    "next": "下一技能為「圓內接四邊形」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s002-fig001",
+      "purpose": "圓 O 中以粗弧標出劣弧 AB，圓周點 C 連到 A、B，顯示弧 AB 與角 ACB 的對應。",
+      "altText": "圓 O 中以粗弧標出劣弧 AB，圓周點 C 連到 A、B，顯示弧 AB 與角 ACB 的對應。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s002-v001",
+      "u19-s002-v002",
+      "u19-s002-v003",
+      "u19-s002-v004",
+      "u19-s002-v005",
+      "u19-s002-v006",
+      "u19-s002-v007",
+      "u19-s002-v008",
+      "u19-s002-v009",
+      "u19-s002-v010",
+      "u19-s002-v011",
+      "u19-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s002-cr001",
+      "u19-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「弧與角」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：由弧的度數連結圓心角與圓周角。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "4977facc182fd66437eaa08e228409cea34d2fd54ecb50a63fa9e93db0e41a41"
+}

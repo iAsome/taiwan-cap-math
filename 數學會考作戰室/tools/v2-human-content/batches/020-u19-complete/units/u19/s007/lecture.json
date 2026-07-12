@@ -1,0 +1,243 @@
+{
+  "lectureId": "u19-s007-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-angles",
+  "skillId": "central-angle-arc",
+  "title": "圓心角與弧",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s007",
+    "lockedSkillId": "central-angle-arc",
+    "lockedOrder": 7,
+    "scope": "以圓心角度數判定所對弧度數。"
+  },
+  "learningOutcomes": [
+    "能由圓心角決定弧度數。",
+    "能把多個圓心角與整圓360°連結。",
+    "能處理優弧與反角。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inscribed-angle-theorem",
+      "requiredLevel": "能使用「圓周角定理」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「圓周角定理」的結論，連接到本技能「圓心角與弧」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "反角",
+      "definition": "大於180°且小於360°的角。"
+    },
+    {
+      "term": "扇形",
+      "definition": "由兩條半徑與其間弧圍成的圖形。"
+    },
+    {
+      "term": "整圓角",
+      "definition": "繞圓心一周為360°。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "圓心角與它所對弧的度數一一對應，因此分割圓心角也等於分割整個圓。",
+    "若三條半徑把圓分成三部分，三個圓心角總和必為360°。",
+    "優弧所對的是反角，不能只讀圖中較小的角。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "反角",
+      "statement": "大於180°且小於360°的角。"
+    },
+    {
+      "name": "扇形",
+      "statement": "由兩條半徑與其間弧圍成的圖形。"
+    },
+    {
+      "name": "整圓角",
+      "statement": "繞圓心一周為360°。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "m(弧AB)=∠AOB",
+      "conditions": [
+        "O為圓心且角與弧方向一致"
+      ],
+      "meaning": "圓心角弧對應"
+    },
+    {
+      "formula": "所有中心角總和=360°",
+      "conditions": [
+        "各扇形恰好分割整圓"
+      ],
+      "meaning": "整圓關係"
+    }
+  ],
+  "nonApplicableCases": [
+    "優弧不能配較小圓心角。",
+    "中心角若重疊或未覆蓋整圓，不能直接相加為360°。",
+    "圓周角不與弧同度數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "判定題目指的是劣弧或優弧。",
+      "check": "完成此步後，確認仍在「圓心角與弧」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "找出相同端點的圓心角。",
+      "check": "完成此步後，確認仍在「圓心角與弧」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "需要時用360°扣除已知中心角。",
+      "check": "完成此步後，確認仍在「圓心角與弧」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "用同度數寫出弧。",
+      "check": "完成此步後，確認仍在「圓心角與弧」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s007-L1",
+      "prompt": "∠AOB=75°，求劣弧AB。",
+      "solutionSteps": [
+        "圓心角與劣弧同度數。"
+      ],
+      "answer": "75°。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s007-L2",
+      "prompt": "劣弧AB=130°，求優弧AB。",
+      "solutionSteps": [
+        "整圓360°。",
+        "360°−130°=230°。"
+      ],
+      "answer": "230°。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s007-L3",
+      "prompt": "三個中心角為 x、2x、3x。",
+      "solutionSteps": [
+        "總和6x=360°。",
+        "x=60°。"
+      ],
+      "answer": "三角為60°、120°、180°。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s007-L4",
+      "prompt": "優弧PQ為280°，求較小∠POQ。",
+      "solutionSteps": [
+        "較小角對劣弧。",
+        "360°−280°=80°。"
+      ],
+      "answer": "80°。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「圓心角與弧」的定義、符號與單一步驟關係。",
+    "standard": "把「圓心角與弧」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「圓心角與弧」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「圓心角與弧」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "所有弧都配小於180°角",
+      "why": "忽略優弧",
+      "correction": "優弧對反角"
+    },
+    {
+      "mistake": "中心角和寫180°",
+      "why": "混淆三角形內角和",
+      "correction": "繞圓心一周是360°"
+    },
+    {
+      "mistake": "弧度數加長度單位",
+      "why": "單位混淆",
+      "correction": "弧度數用°"
+    },
+    {
+      "mistake": "未判明方向就用360°減",
+      "why": "可能題目已給劣弧",
+      "correction": "先讀弧名稱與經過點"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「圓心角與弧」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "圓心角與所對弧同度數。",
+    "中心角分割整圓時總和360°。",
+    "優弧對應反角。"
+  ],
+  "connections": {
+    "previous": "承接「圓周角定理」。",
+    "next": "下一技能為「弧長公式」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s007-fig001",
+      "purpose": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。",
+      "altText": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s007-v001",
+      "u19-s007-v002",
+      "u19-s007-v003",
+      "u19-s007-v004",
+      "u19-s007-v005",
+      "u19-s007-v006",
+      "u19-s007-v007",
+      "u19-s007-v008",
+      "u19-s007-v009",
+      "u19-s007-v010",
+      "u19-s007-v011",
+      "u19-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s007-cr001",
+      "u19-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「圓心角與弧」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：以圓心角度數判定所對弧度數。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "89fc8b1735a1f13cf4f89753cc192a9c8767cf28f61147de1167dbc419120ada"
+}

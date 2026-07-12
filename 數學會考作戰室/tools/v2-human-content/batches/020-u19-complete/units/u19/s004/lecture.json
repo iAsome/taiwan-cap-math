@@ -1,0 +1,244 @@
+{
+  "lectureId": "u19-s004-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-angles",
+  "skillId": "arc-length",
+  "title": "弧長",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s004",
+    "lockedSkillId": "arc-length",
+    "lockedOrder": 4,
+    "scope": "理解弧長是圓周長的一部分。"
+  },
+  "learningOutcomes": [
+    "能把弧長理解為圓周長的一部分。",
+    "能以比例求簡單弧長。",
+    "能分辨弧長與弦長。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inscribed-quadrilateral",
+      "requiredLevel": "能使用「圓內接四邊形」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「圓內接四邊形」的結論，連接到本技能「弧長」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "弧長",
+      "definition": "沿圓周從一點到另一點的曲線長度。"
+    },
+    {
+      "term": "圓周長",
+      "definition": "繞圓一周的長度 2πr。"
+    },
+    {
+      "term": "弦長",
+      "definition": "連接圓上兩點的線段長度。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "弧長沿著曲線量，弦長則走兩點間的直線，除非兩點重合，兩者通常不同。",
+    "半圓弧長是整個圓周長的一半，四分之一圓弧長是四分之一。",
+    "弧長與中心角成正比，這個比例觀念是正式公式的基礎。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "弧長",
+      "statement": "沿圓周從一點到另一點的曲線長度。"
+    },
+    {
+      "name": "圓周長",
+      "statement": "繞圓一周的長度 2πr。"
+    },
+    {
+      "name": "弦長",
+      "statement": "連接圓上兩點的線段長度。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "半圓弧長=πr",
+      "conditions": [
+        "半徑為 r"
+      ],
+      "meaning": "整圓周長的一半"
+    },
+    {
+      "formula": "四分之一圓弧長=πr/2",
+      "conditions": [
+        "中心角90°"
+      ],
+      "meaning": "整圓周長的四分之一"
+    }
+  ],
+  "nonApplicableCases": [
+    "弧長不能用兩端點的直線距離代替。",
+    "弧的度數不是弧長。",
+    "半圓圖形的周長還要加直徑，但半圓弧長本身不用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先判斷弧占整圓幾分之幾。",
+      "check": "完成此步後，確認仍在「弧長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "求整圓周長 2πr。",
+      "check": "完成此步後，確認仍在「弧長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "乘上所占分率。",
+      "check": "完成此步後，確認仍在「弧長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "保留 π 或依題意取近似值並標單位。",
+      "check": "完成此步後，確認仍在「弧長」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s004-L1",
+      "prompt": "半徑 6 的半圓弧長。",
+      "solutionSteps": [
+        "整圓周長 12π。",
+        "取一半得 6π。"
+      ],
+      "answer": "6π。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s004-L2",
+      "prompt": "半徑 8 的四分之一圓弧長。",
+      "solutionSteps": [
+        "整圓周長 16π。",
+        "取四分之一得 4π。"
+      ],
+      "answer": "4π。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s004-L3",
+      "prompt": "直徑 10 的半圓弧長。",
+      "solutionSteps": [
+        "半徑為5。",
+        "πr=5π。"
+      ],
+      "answer": "5π。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s004-L4",
+      "prompt": "半徑 3，270° 優弧長。",
+      "solutionSteps": [
+        "270°占整圓3/4。",
+        "2π×3×3/4=9π/2。"
+      ],
+      "answer": "9π/2。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「弧長」的定義、符號與單一步驟關係。",
+    "standard": "把「弧長」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「弧長」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「弧長」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把半徑當直徑代入",
+      "why": "未先判讀題目給定量",
+      "correction": "直徑除以2才是半徑"
+    },
+    {
+      "mistake": "求半圓弧長時加直徑",
+      "why": "混淆弧長與圖形周長",
+      "correction": "題目只問弧長就不加直線"
+    },
+    {
+      "mistake": "把90°當成二分之一圓",
+      "why": "比例判斷錯",
+      "correction": "90/360=1/4"
+    },
+    {
+      "mistake": "答案漏寫長度單位",
+      "why": "只顧計算",
+      "correction": "弧長單位與半徑相同"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「弧長」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "弧長是圓周長的一部分。",
+    "先求比例再乘 2πr。",
+    "弧長、弧度數與弦長是不同量。"
+  ],
+  "connections": {
+    "previous": "承接「圓內接四邊形」。",
+    "next": "下一技能為「弦與弧」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s004-fig001",
+      "purpose": "圓上 A、B 之間以粗線標示曲線弧長，並用虛線畫弦 AB，提醒兩者不同。",
+      "altText": "圓上 A、B 之間以粗線標示曲線弧長，並用虛線畫弦 AB，提醒兩者不同。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s004-v001",
+      "u19-s004-v002",
+      "u19-s004-v003",
+      "u19-s004-v004",
+      "u19-s004-v005",
+      "u19-s004-v006",
+      "u19-s004-v007",
+      "u19-s004-v008",
+      "u19-s004-v009",
+      "u19-s004-v010",
+      "u19-s004-v011",
+      "u19-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s004-cr001",
+      "u19-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「弧長」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：理解弧長是圓周長的一部分。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "74792404aa1d8bc65bc36db078eaf63e05390933a858a695fe36eb6bd4a7fa9b"
+}

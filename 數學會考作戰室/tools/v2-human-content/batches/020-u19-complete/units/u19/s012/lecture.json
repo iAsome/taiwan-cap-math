@@ -1,0 +1,249 @@
+{
+  "lectureId": "u19-s012-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-measure",
+  "skillId": "sector-perimeter",
+  "title": "扇形周長",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s012",
+    "lockedSkillId": "sector-perimeter",
+    "lockedOrder": 12,
+    "scope": "分清扇形周長與弧長，補上兩條半徑。"
+  },
+  "learningOutcomes": [
+    "能計算扇形周長。",
+    "能分辨弧長與扇形周長。",
+    "能處理含直徑或多段邊界的扇形。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "circle-composite-area",
+      "requiredLevel": "能使用「圓複合面積」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「圓複合面積」的結論，連接到本技能「扇形周長」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "扇形周長",
+      "definition": "一段弧加兩條半徑的總長。"
+    },
+    {
+      "term": "邊界",
+      "definition": "圍成圖形的所有線段與曲線。"
+    },
+    {
+      "term": "弧長",
+      "definition": "扇形周長中的曲線部分。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "扇形周長不是只有弧長。從一個端點繞完整個扇形邊界，會走一段弧，再走兩條半徑。",
+    "半圓圖形的周長是半圓弧長加直徑，因為兩條共線半徑合成直徑。",
+    "畫路徑箭頭或逐段列出，是避免漏邊與重複計算的可靠方法。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "扇形周長",
+      "statement": "一段弧加兩條半徑的總長。"
+    },
+    {
+      "name": "邊界",
+      "statement": "圍成圖形的所有線段與曲線。"
+    },
+    {
+      "name": "弧長",
+      "statement": "扇形周長中的曲線部分。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P=L+2r",
+      "conditions": [
+        "L為扇形弧長"
+      ],
+      "meaning": "扇形周長"
+    },
+    {
+      "formula": "半圓周長=πr+2r",
+      "conditions": [
+        "包含弧與直徑"
+      ],
+      "meaning": "半圓圖形邊界"
+    }
+  ],
+  "nonApplicableCases": [
+    "若只問弧長，不可加半徑。",
+    "若圖形挖去一個扇形，新增的半徑邊界也要納入。",
+    "內部輔助線不屬於外周長。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "沿邊界走一圈。",
+      "check": "完成此步後，確認仍在「扇形周長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "把曲線與直線分開列。",
+      "check": "完成此步後，確認仍在「扇形周長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "計算弧長。",
+      "check": "完成此步後，確認仍在「扇形周長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "加入所有實際外露直線段。",
+      "check": "完成此步後，確認仍在「扇形周長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "確認起點與終點相接且無重複。",
+      "check": "完成此步後，確認仍在「扇形周長」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s012-L1",
+      "prompt": "r=6，θ=60°的扇形周長。",
+      "solutionSteps": [
+        "弧長=2π。",
+        "加兩半徑12。"
+      ],
+      "answer": "12+2π。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s012-L2",
+      "prompt": "r=5的半圓周長。",
+      "solutionSteps": [
+        "半圓弧5π。",
+        "直徑10。"
+      ],
+      "answer": "10+5π。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s012-L3",
+      "prompt": "r=9，θ=240°扇形周長。",
+      "solutionSteps": [
+        "弧長=12π。",
+        "加18。"
+      ],
+      "answer": "18+12π。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s012-L4",
+      "prompt": "扇形周長20+4π，r=10。求弧長。",
+      "solutionSteps": [
+        "兩半徑和20。",
+        "扣除後為4π。"
+      ],
+      "answer": "4π。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「扇形周長」的定義、符號與單一步驟關係。",
+    "standard": "把「扇形周長」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「扇形周長」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「扇形周長」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "只算弧長",
+      "why": "漏掉兩條半徑",
+      "correction": "沿邊界逐段列"
+    },
+    {
+      "mistake": "扇形周長加直徑",
+      "why": "一般扇形的兩直邊是半徑",
+      "correction": "只有半圓可合成直徑"
+    },
+    {
+      "mistake": "把內部半徑也算進周長",
+      "why": "混淆輔助線與邊界",
+      "correction": "只算外露線"
+    },
+    {
+      "mistake": "周長答案使用平方單位",
+      "why": "量綱混淆",
+      "correction": "周長用長度單位"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「扇形周長」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "扇形周長=弧長+2r。",
+    "半圓周長=半圓弧+直徑。",
+    "用走邊界方法避免漏算。"
+  ],
+  "connections": {
+    "previous": "承接「圓複合面積」。",
+    "next": "下一技能為「圓面積」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s012-fig001",
+      "purpose": "扇形的弧線以粗線標 L，兩條半徑分別標 r，外框箭頭表示周長需走完三段。",
+      "altText": "扇形的弧線以粗線標 L，兩條半徑分別標 r，外框箭頭表示周長需走完三段。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s012-v001",
+      "u19-s012-v002",
+      "u19-s012-v003",
+      "u19-s012-v004",
+      "u19-s012-v005",
+      "u19-s012-v006",
+      "u19-s012-v007",
+      "u19-s012-v008",
+      "u19-s012-v009",
+      "u19-s012-v010",
+      "u19-s012-v011",
+      "u19-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s012-cr001",
+      "u19-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「扇形周長」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：分清扇形周長與弧長，補上兩條半徑。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "96dfca614efe0c9afb030e6c8f86bcbd13a1e57a6c94574c5f805484c1fe4591"
+}

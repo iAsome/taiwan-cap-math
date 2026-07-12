@@ -1,0 +1,248 @@
+{
+  "lectureId": "u19-s016-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-tangents",
+  "skillId": "tangent-radius",
+  "title": "切線與半徑",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s016",
+    "lockedSkillId": "tangent-radius",
+    "lockedOrder": 16,
+    "scope": "使用切點半徑垂直切線形成直角三角形。"
+  },
+  "learningOutcomes": [
+    "能使用切點半徑垂直切線。",
+    "能建立圓心、切點、圓外點的直角三角形。",
+    "能以畢氏定理解長度。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "tangent-properties",
+      "requiredLevel": "能使用「切線性質」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「切線性質」的結論，連接到本技能「切線與半徑」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "切點半徑",
+      "definition": "圓心連到切點的半徑。"
+    },
+    {
+      "term": "垂直",
+      "definition": "兩直線相交成90°。"
+    },
+    {
+      "term": "切線長",
+      "definition": "圓外點到切點的線段長。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "圓的切線在切點處與該點半徑垂直。這把圓問題轉成直角三角形問題。",
+    "若 P 是圓外點、T 是切點、O 是圓心，則 OT⊥PT，OP 是直角三角形斜邊。",
+    "斜邊一定最長，可用此快速檢查代入位置是否正確。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "切點半徑",
+      "statement": "圓心連到切點的半徑。"
+    },
+    {
+      "name": "垂直",
+      "statement": "兩直線相交成90°。"
+    },
+    {
+      "name": "切線長",
+      "statement": "圓外點到切點的線段長。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "OT⊥PT",
+      "conditions": [
+        "T為切點，O為圓心"
+      ],
+      "meaning": "切線半徑性質"
+    },
+    {
+      "formula": "OP²=OT²+PT²",
+      "conditions": [
+        "△OPT在T為直角"
+      ],
+      "meaning": "畢氏定理"
+    }
+  ],
+  "nonApplicableCases": [
+    "半徑與切線只在切點處保證垂直。",
+    "OP不是半徑，P在圓外。",
+    "若直線不是切線，不能直接建立直角。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認T是切點。",
+      "check": "完成此步後，確認仍在「切線與半徑」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "連接O與T並標90°。",
+      "check": "完成此步後，確認仍在「切線與半徑」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "辨認OP為斜邊。",
+      "check": "完成此步後，確認仍在「切線與半徑」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "套用畢氏定理。",
+      "check": "完成此步後，確認仍在「切線與半徑」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查斜邊大於兩股。",
+      "check": "完成此步後，確認仍在「切線與半徑」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s016-L1",
+      "prompt": "OT=6，PT=8。求OP。",
+      "solutionSteps": [
+        "OP²=36+64=100。",
+        "OP=10。"
+      ],
+      "answer": "10。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s016-L2",
+      "prompt": "OP=13，OT=5。求PT。",
+      "solutionSteps": [
+        "PT²=169−25=144。",
+        "PT=12。"
+      ],
+      "answer": "12。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s016-L3",
+      "prompt": "切線與切點半徑夾角。",
+      "solutionSteps": [
+        "依性質。"
+      ],
+      "answer": "90°。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s016-L4",
+      "prompt": "OP=17，PT=15。求半徑。",
+      "solutionSteps": [
+        "OT²=289−225=64。",
+        "OT=8。"
+      ],
+      "answer": "8。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「切線與半徑」的定義、符號與單一步驟關係。",
+    "standard": "把「切線與半徑」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「切線與半徑」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「切線與半徑」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把OP當半徑",
+      "why": "P在圓外",
+      "correction": "半徑是OT"
+    },
+    {
+      "mistake": "畢氏式把斜邊放錯",
+      "why": "未辨認直角對邊",
+      "correction": "OP為斜邊"
+    },
+    {
+      "mistake": "任一半徑都判與切線垂直",
+      "why": "只有切點半徑",
+      "correction": "半徑端點必須是T"
+    },
+    {
+      "mistake": "平方差算完未開根",
+      "why": "求的是長度不是平方",
+      "correction": "取正平方根"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「切線與半徑」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "切線與切點半徑垂直。",
+    "O、T、P形成直角三角形。",
+    "OP是斜邊，可用畢氏定理求長度。"
+  ],
+  "connections": {
+    "previous": "承接「切線性質」。",
+    "next": "下一技能為「切線段相等」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s016-fig001",
+      "purpose": "圓 O 在 T 點與直線 PT 相切，連接 OP、OT，T 點畫直角符號。",
+      "altText": "圓 O 在 T 點與直線 PT 相切，連接 OP、OT，T 點畫直角符號。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s016-v001",
+      "u19-s016-v002",
+      "u19-s016-v003",
+      "u19-s016-v004",
+      "u19-s016-v005",
+      "u19-s016-v006",
+      "u19-s016-v007",
+      "u19-s016-v008",
+      "u19-s016-v009",
+      "u19-s016-v010",
+      "u19-s016-v011",
+      "u19-s016-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s016-cr001",
+      "u19-s016-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「切線與半徑」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：使用切點半徑垂直切線形成直角三角形。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "1f6039d75795856e7435353e86e87701e58d01fad768c880f53032499aba3d11"
+}

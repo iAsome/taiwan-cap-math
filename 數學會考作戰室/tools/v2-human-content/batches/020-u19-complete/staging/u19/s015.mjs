@@ -1,0 +1,1660 @@
+export const u19_s015 = {
+  "lecture": {
+    "lectureId": "u19-s015-lecture-r1",
+    "unitId": "u19",
+    "numericUnitId": 19,
+    "topicId": "u19-tangents",
+    "skillId": "tangent-properties",
+    "title": "切線性質",
+    "unitTitle": "圓",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "skillIdentity": {
+      "slot": "s015",
+      "lockedSkillId": "tangent-properties",
+      "lockedOrder": 15,
+      "scope": "判別直線與圓的位置及切線的唯一交點。"
+    },
+    "learningOutcomes": [
+      "能判斷割線、切線與相離直線。",
+      "能使用切線只有一個公共點。",
+      "能用圓心到直線距離比較半徑。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "circle-composite-perimeter",
+        "requiredLevel": "能使用「圓組合周長」的核心定義與基本運算，並辨認其適用條件。"
+      }
+    ],
+    "prerequisiteBridge": "先由前一技能「圓組合周長」的結論，連接到本技能「切線性質」所需的新判斷。",
+    "glossary": [
+      {
+        "term": "切線",
+        "definition": "與圓只有一個公共點的直線。"
+      },
+      {
+        "term": "切點",
+        "definition": "切線與圓唯一的公共點。"
+      },
+      {
+        "term": "割線",
+        "definition": "與圓有兩個公共點的直線。"
+      },
+      {
+        "term": "相離",
+        "definition": "直線與圓沒有公共點。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "O",
+        "meaning": "圓心。"
+      },
+      {
+        "symbol": "∠ABC",
+        "meaning": "頂點是B的角。"
+      },
+      {
+        "symbol": "π",
+        "meaning": "圓周率；題目未要求近似時保留π。"
+      }
+    ],
+    "conceptNarrative": [
+      "直線與圓的位置可用公共點個數分類，也可比較圓心到直線的垂直距離 d 與半徑 r。",
+      "d<r 時直線穿過圓形成兩交點；d=r 時恰好相切；d>r 時相離。",
+      "切線判別需要垂直距離，不是任意一段從圓心到直線的斜線距離。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "切線",
+        "statement": "與圓只有一個公共點的直線。"
+      },
+      {
+        "name": "切點",
+        "statement": "切線與圓唯一的公共點。"
+      },
+      {
+        "name": "割線",
+        "statement": "與圓有兩個公共點的直線。"
+      },
+      {
+        "name": "相離",
+        "statement": "直線與圓沒有公共點。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "d<r：割線",
+        "conditions": [
+          "d為圓心到直線垂直距離"
+        ],
+        "meaning": "兩交點"
+      },
+      {
+        "formula": "d=r：切線",
+        "conditions": [
+          "d為垂直距離"
+        ],
+        "meaning": "一交點"
+      },
+      {
+        "formula": "d>r：相離",
+        "conditions": [
+          "d為垂直距離"
+        ],
+        "meaning": "零交點"
+      }
+    ],
+    "nonApplicableCases": [
+      "直線段只有一端碰圓，若延長後穿過圓，仍不是切線。",
+      "比較的 d 必須是垂直距離。",
+      "圖上看似接觸不代表相切，需有條件或數值。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "畫出圓心到直線的垂線。",
+        "check": "完成此步後，確認仍在「切線性質」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 2,
+        "instruction": "標出垂直距離d與半徑r。",
+        "check": "完成此步後，確認仍在「切線性質」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 3,
+        "instruction": "比較d和r。",
+        "check": "完成此步後，確認仍在「切線性質」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 4,
+        "instruction": "依0、1、2個公共點分類。",
+        "check": "完成此步後，確認仍在「切線性質」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 5,
+        "instruction": "若為切線再標切點。",
+        "check": "完成此步後，確認仍在「切線性質」的CAP範圍且沒有只憑圖形目測。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "s015-L1",
+        "prompt": "r=5，圓心到直線距離3。",
+        "solutionSteps": [
+          "3<5。"
+        ],
+        "answer": "割線。",
+        "level": "basic"
+      },
+      {
+        "exampleId": "s015-L2",
+        "prompt": "r=7，距離7。",
+        "solutionSteps": [
+          "d=r。"
+        ],
+        "answer": "切線。",
+        "level": "standard"
+      },
+      {
+        "exampleId": "s015-L3",
+        "prompt": "r=4，距離6。",
+        "solutionSteps": [
+          "6>4。"
+        ],
+        "answer": "相離。",
+        "level": "advanced"
+      },
+      {
+        "exampleId": "s015-L4",
+        "prompt": "直線與圓有兩交點。",
+        "solutionSteps": [
+          "依定義。"
+        ],
+        "answer": "割線。",
+        "level": "connection"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "辨認「切線性質」的定義、符號與單一步驟關係。",
+      "standard": "把「切線性質」與前置技能、比例或一次代數連接。",
+      "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「切線性質」。",
+      "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「切線性質」的數學模型。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "只看圖判斷",
+        "why": "圖可能不按比例",
+        "correction": "比較d與r"
+      },
+      {
+        "mistake": "把斜距離當圓心到線距離",
+        "why": "最短距離才是垂直距離",
+        "correction": "先作垂線"
+      },
+      {
+        "mistake": "一個可見交點就認切線",
+        "why": "線段圖可能截斷",
+        "correction": "考慮整條直線"
+      },
+      {
+        "mistake": "把切點當圓心",
+        "why": "名詞混淆",
+        "correction": "切點在圓周，圓心在圓內"
+      }
+    ],
+    "selfCheck": [
+      "我是否先確認「切線性質」的適用條件？",
+      "我是否分清半徑、直徑、弦、弧與角的角色？",
+      "我是否寫出必要單位，並在最後才取近似值？",
+      "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+    ],
+    "summary": [
+      "切線與圓只有一個公共點。",
+      "用圓心到直線垂直距離d與r比較。",
+      "d<r割線，d=r切線，d>r相離。"
+    ],
+    "connections": {
+      "previous": "承接「圓組合周長」。",
+      "next": "下一技能為「切線與半徑」。"
+    },
+    "figureReferences": [
+      {
+        "figureId": "u19-s015-fig001",
+        "purpose": "同一圓旁畫出割線、切線與相離直線，並由圓心作三條垂直距離。",
+        "altText": "同一圓旁畫出割線、切線與相離直線，並由圓心作三條垂直距離。，不可按比例目測。"
+      }
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u19-s015-v001",
+        "u19-s015-v002",
+        "u19-s015-v003",
+        "u19-s015-v004",
+        "u19-s015-v005",
+        "u19-s015-v006",
+        "u19-s015-v007",
+        "u19-s015-v008",
+        "u19-s015-v009",
+        "u19-s015-v010",
+        "u19-s015-v011",
+        "u19-s015-v012"
+      ],
+      "constructedResponseIds": [
+        "u19-s015-cr001",
+        "u19-s015-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐段回讀「切線性質」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：判別直線與圓的位置及切線的唯一交點。",
+      "reviewVersion": "human-lecture-review-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "contentSha256": "ea40417787a5fa9efcecdbbe7d074e21e3108d9ed4f79a19317916e85dce46c4"
+  },
+  "questions": [
+    {
+      "questionId": "u19-s015-v001",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s015-fig001",
+      "drawingSpecId": "u19-s015-fig001",
+      "prompt": "半徑 5 cm 的圓，圓心到直線 ℓ 的垂直距離為 3 cm。直線 ℓ 與圓的位置關係為何？",
+      "text": "半徑 5 cm 的圓，圓心到直線 ℓ 的垂直距離為 3 cm。直線 ℓ 與圓的位置關係為何？",
+      "givenConditions": "r=5 cm；d=3 cm。",
+      "target": "判斷直線與圓位置。",
+      "choices": [
+        "割線",
+        "切線",
+        "相離",
+        "直徑"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「r=5 cm；d=3 cm。」重算：因為d=3<r=5，直線穿過圓並有兩個交點，所以是割線。",
+      "explanation": "因為d=3<r=5，直線穿過圓並有兩個交點，所以是割線。 因此唯一正確選項是「割線」。",
+      "steps": [
+        "比較d與r。",
+        "3<5，判為割線。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "割線",
+          "truth": true,
+          "reason": "依題目條件重新計算：因為d=3<r=5，直線穿過圓並有兩個交點，所以是割線。"
+        },
+        {
+          "choice": "切線",
+          "truth": false,
+          "reason": "切線需d=r。"
+        },
+        {
+          "choice": "相離",
+          "truth": false,
+          "reason": "相離需d>r。"
+        },
+        {
+          "choice": "直徑",
+          "truth": false,
+          "reason": "直徑是線段，不是位置關係。"
+        }
+      ],
+      "misconceptionTarget": "把d<r誤判為切線。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 50,
+      "unitCheck": "u19-s015-v001 已核對所求量「判斷直線與圓位置。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由距離判斷割線。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v001。",
+      "difficultyReason": "basic：由距離判斷割線。 解題需完成「比較d與r。；3<5，判為割線。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由距離判斷割線。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "c3e64a36ef3d4c2ac4e9d40df3c280bb8df2a3bd8c02b09d11e6c7d13865a9b2"
+    },
+    {
+      "questionId": "u19-s015-v002",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "半徑 7 m 的圓，圓心到直線的垂直距離也是 7 m。此直線是什麼？",
+      "text": "半徑 7 m 的圓，圓心到直線的垂直距離也是 7 m。此直線是什麼？",
+      "givenConditions": "r=7 m；d=7 m。",
+      "target": "分類直線。",
+      "choices": [
+        "割線",
+        "切線",
+        "相離",
+        "弦"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「r=7 m；d=7 m。」重算：d=r時直線與圓只有一個公共點，故為切線。",
+      "explanation": "d=r時直線與圓只有一個公共點，故為切線。 因此唯一正確選項是「切線」。",
+      "steps": [
+        "比較d=r。",
+        "判定一個公共點。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "割線",
+          "truth": false,
+          "reason": "割線需d<r。"
+        },
+        {
+          "choice": "切線",
+          "truth": true,
+          "reason": "依題目條件重新計算：d=r時直線與圓只有一個公共點，故為切線。"
+        },
+        {
+          "choice": "相離",
+          "truth": false,
+          "reason": "相離需d>r。"
+        },
+        {
+          "choice": "弦",
+          "truth": false,
+          "reason": "弦是圓內線段。"
+        }
+      ],
+      "misconceptionTarget": "不熟悉d=r的臨界情況。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 50,
+      "unitCheck": "u19-s015-v002 已核對所求量「分類直線。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由等距判斷切線。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v002。",
+      "difficultyReason": "basic：由等距判斷切線。 解題需完成「比較d=r。；判定一個公共點。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由等距判斷切線。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "ec640cced72c94112d17b6492b7050b0fb81e5396dc2397faed866d3453d648b"
+    },
+    {
+      "questionId": "u19-s015-v003",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "半徑 4 cm 的圓，圓心到直線距離為 6 cm。兩者有幾個公共點？",
+      "text": "半徑 4 cm 的圓，圓心到直線距離為 6 cm。兩者有幾個公共點？",
+      "givenConditions": "r=4；d=6。",
+      "target": "求交點數。",
+      "choices": [
+        "1 個",
+        "2 個",
+        "0 個",
+        "無限多個"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「r=4；d=6。」重算：d=6>r=4，直線在圓外，沒有公共點。",
+      "explanation": "d=6>r=4，直線在圓外，沒有公共點。 因此唯一正確選項是「0 個」。",
+      "steps": [
+        "比較6>4。",
+        "相離所以0交點。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1 個",
+          "truth": false,
+          "reason": "1個是切線。"
+        },
+        {
+          "choice": "2 個",
+          "truth": false,
+          "reason": "2個是割線。"
+        },
+        {
+          "choice": "0 個",
+          "truth": true,
+          "reason": "依題目條件重新計算：d=6>r=4，直線在圓外，沒有公共點。"
+        },
+        {
+          "choice": "無限多個",
+          "truth": false,
+          "reason": "直線與圓不會無限重合。"
+        }
+      ],
+      "misconceptionTarget": "公共點數與距離比較對應錯。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 50,
+      "unitCheck": "u19-s015-v003 已核對所求量「求交點數。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由距離求公共點數。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v003。",
+      "difficultyReason": "basic：由距離求公共點數。 解題需完成「比較6>4。；相離所以0交點。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由距離求公共點數。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "1ff05632c9e60aef1a12dd1bb76178c7edb849568027b3ea8d6e2fefae299c3b"
+    },
+    {
+      "questionId": "u19-s015-v004",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "某圓半徑為 9 cm。若直線與圓有兩個交點，圓心到直線的垂直距離 d 應滿足何者？",
+      "text": "某圓半徑為 9 cm。若直線與圓有兩個交點，圓心到直線的垂直距離 d 應滿足何者？",
+      "givenConditions": "r=9；直線有兩交點。",
+      "target": "求d範圍。",
+      "choices": [
+        "0≤d<9",
+        "d=9",
+        "d>9",
+        "d≤0"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「r=9；直線有兩交點。」重算：兩交點表示割線，因此d<r=9；距離非負，所以0≤d<9。",
+      "explanation": "兩交點表示割線，因此d<r=9；距離非負，所以0≤d<9。 因此唯一正確選項是「0≤d<9」。",
+      "steps": [
+        "由兩交點判割線。",
+        "加入距離非負。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0≤d<9",
+          "truth": true,
+          "reason": "依題目條件重新計算：兩交點表示割線，因此d<r=9；距離非負，所以0≤d<9。"
+        },
+        {
+          "choice": "d=9",
+          "truth": false,
+          "reason": "d=9是切線。"
+        },
+        {
+          "choice": "d>9",
+          "truth": false,
+          "reason": "d>9相離。"
+        },
+        {
+          "choice": "d≤0",
+          "truth": false,
+          "reason": "距離不能為負且d=0也可能是直徑所在割線。"
+        }
+      ],
+      "misconceptionTarget": "只記d<r而忽略距離範圍。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "u19-s015-v004 已核對所求量「求d範圍。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由交點數反推距離範圍。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v004。",
+      "difficultyReason": "standard：由交點數反推距離範圍。 解題需完成「由兩交點判割線。；加入距離非負。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由交點數反推距離範圍。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "654de378120822042a0a530fe531f1f9ffff474936d2ea023e04071fcca424da"
+    },
+    {
+      "questionId": "u19-s015-v005",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓心 O 到直線 ℓ 的最短距離為 x+2，圓半徑為 10。若 ℓ 為切線，求 x。",
+      "text": "圓心 O 到直線 ℓ 的最短距離為 x+2，圓半徑為 10。若 ℓ 為切線，求 x。",
+      "givenConditions": "d=x+2；r=10；ℓ切圓。",
+      "target": "求x。",
+      "choices": [
+        "6",
+        "10",
+        "12",
+        "8"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「d=x+2；r=10；ℓ切圓。」重算：切線時d=r，所以x+2=10，x=8。",
+      "explanation": "切線時d=r，所以x+2=10，x=8。 因此唯一正確選項是「8」。",
+      "steps": [
+        "列x+2=10。",
+        "解x=8。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "回代d=8不是半徑。"
+        },
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "回代d=12。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "回代d=14。"
+        },
+        {
+          "choice": "8",
+          "truth": true,
+          "reason": "依題目條件重新計算：切線時d=r，所以x+2=10，x=8。"
+        }
+      ],
+      "misconceptionTarget": "忘記切線條件d=r。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "u19-s015-v005 已核對所求量「求x。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「用切線條件解代數。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v005。",
+      "difficultyReason": "standard：用切線條件解代數。 解題需完成「列x+2=10。；解x=8。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "用切線條件解代數。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "0ad63229e529fa94ba2c84ad88c6f54cc8a8bdff0fffe7d41be09b493a6e6404"
+    },
+    {
+      "questionId": "u19-s015-v006",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "一條直線與圓只有一個公共點 T。下列何者必然正確？",
+      "text": "一條直線與圓只有一個公共點 T。下列何者必然正確？",
+      "givenConditions": "直線與圓唯一公共點為T。",
+      "target": "判斷名稱。",
+      "choices": [
+        "T 是切點，該直線是切線",
+        "T 是圓心",
+        "該直線是直徑",
+        "直線與圓相離"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「直線與圓唯一公共點為T。」重算：依定義，與圓只有一個公共點的直線為切線，唯一公共點為切點。",
+      "explanation": "依定義，與圓只有一個公共點的直線為切線，唯一公共點為切點。 因此唯一正確選項是「T 是切點，該直線是切線」。",
+      "steps": [
+        "由公共點數分類。",
+        "命名T為切點。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "T 是切點，該直線是切線",
+          "truth": true,
+          "reason": "依題目條件重新計算：依定義，與圓只有一個公共點的直線為切線，唯一公共點為切點。"
+        },
+        {
+          "choice": "T 是圓心",
+          "truth": false,
+          "reason": "圓心通常不在線與圓交點。"
+        },
+        {
+          "choice": "該直線是直徑",
+          "truth": false,
+          "reason": "直徑是圓內線段且有兩端點。"
+        },
+        {
+          "choice": "直線與圓相離",
+          "truth": false,
+          "reason": "相離沒有公共點。"
+        }
+      ],
+      "misconceptionTarget": "名詞對應錯。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 65,
+      "unitCheck": "u19-s015-v006 已核對所求量「判斷名稱。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由公共點定義辨認切線。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v006。",
+      "difficultyReason": "standard：由公共點定義辨認切線。 解題需完成「由公共點數分類。；命名T為切點。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由公共點定義辨認切線。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "2681e2754fde5718f1164b341c68dd5e61a89dc026bdead689f9e5d36b5048a8"
+    },
+    {
+      "questionId": "u19-s015-v007",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s015-fig001",
+      "drawingSpecId": "u19-s015-fig001",
+      "prompt": "圓半徑為 6，圓心到直線距離為 |x−2|。若直線為切線，x 的可能值為何？",
+      "text": "圓半徑為 6，圓心到直線距離為 |x−2|。若直線為切線，x 的可能值為何？",
+      "givenConditions": "r=6；d=|x−2|。",
+      "target": "求切線時x。",
+      "choices": [
+        "4 或 8",
+        "−8 或 4",
+        "−4 或 8",
+        "只有8"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「r=6；d=|x−2|。」重算：切線條件|x−2|=6，所以x−2=6或−6，得x=8或−4。",
+      "explanation": "切線條件|x−2|=6，所以x−2=6或−6，得x=8或−4。 因此唯一正確選項是「−4 或 8」。",
+      "steps": [
+        "列絕對值方程。",
+        "分兩種情況解。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4 或 8",
+          "truth": false,
+          "reason": "x=4不滿足距離6。"
+        },
+        {
+          "choice": "−8 或 4",
+          "truth": false,
+          "reason": "兩值皆錯。"
+        },
+        {
+          "choice": "−4 或 8",
+          "truth": true,
+          "reason": "依題目條件重新計算：切線條件|x−2|=6，所以x−2=6或−6，得x=8或−4。"
+        },
+        {
+          "choice": "只有8",
+          "truth": false,
+          "reason": "漏掉負向代數解；距離本身仍為正。"
+        }
+      ],
+      "misconceptionTarget": "絕對值方程只解一個分支。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 110,
+      "unitCheck": "u19-s015-v007 已核對所求量「求切線時x。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「結合切線距離與絕對值。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v007。",
+      "difficultyReason": "advanced：結合切線距離與絕對值。 解題需完成「列絕對值方程。；分兩種情況解。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "結合切線距離與絕對值。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "cf3767cca03b9d52ff54f275261f3f0dbf1e2b32857ecf01a9c9471163491db4"
+    },
+    {
+      "questionId": "u19-s015-v008",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓半徑為 5，直線到圓心距離為 2x−1。若直線為割線且距離有效，x 的範圍為何？",
+      "text": "圓半徑為 5，直線到圓心距離為 2x−1。若直線為割線且距離有效，x 的範圍為何？",
+      "givenConditions": "r=5；d=2x−1。",
+      "target": "求x範圍。",
+      "choices": [
+        "x<3",
+        "x≥3",
+        "1/2≤x<3",
+        "0≤x≤5"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「r=5；d=2x−1。」重算：割線需0≤d<5，因此0≤2x−1<5，解得1/2≤x<3。",
+      "explanation": "割線需0≤d<5，因此0≤2x−1<5，解得1/2≤x<3。 因此唯一正確選項是「1/2≤x<3」。",
+      "steps": [
+        "列0≤2x−1<5。",
+        "各邊加1再除2。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x<3",
+          "truth": false,
+          "reason": "漏掉距離非負限制。"
+        },
+        {
+          "choice": "x≥3",
+          "truth": false,
+          "reason": "這是切線或相離範圍。"
+        },
+        {
+          "choice": "1/2≤x<3",
+          "truth": true,
+          "reason": "依題目條件重新計算：割線需0≤d<5，因此0≤2x−1<5，解得1/2≤x<3。"
+        },
+        {
+          "choice": "0≤x≤5",
+          "truth": false,
+          "reason": "範圍與d不符。"
+        }
+      ],
+      "misconceptionTarget": "只使用d<r，忽略d不能為負。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 120,
+      "unitCheck": "u19-s015-v008 已核對所求量「求x範圍。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由割線條件解雙重不等式。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v008。",
+      "difficultyReason": "advanced：由割線條件解雙重不等式。 解題需完成「列0≤2x−1<5。；各邊加1再除2。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由割線條件解雙重不等式。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "9866f6c370fac8cbff0ab6e42a2fc4fa4862b26313b4ccf9ac578d55664fccd0"
+    },
+    {
+      "questionId": "u19-s015-v009",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "同一圓的三條直線到圓心距離分別為 r−1、r、r+1，其中 r>1。三者依序為何？",
+      "text": "同一圓的三條直線到圓心距離分別為 r−1、r、r+1，其中 r>1。三者依序為何？",
+      "givenConditions": "r>1；距離r−1、r、r+1。",
+      "target": "依序分類。",
+      "choices": [
+        "切線、割線、相離",
+        "割線、相離、切線",
+        "相離、切線、割線",
+        "割線、切線、相離"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「r>1；距離r−1、r、r+1。」重算：依d與r比較：r−1<r為割線；r=r為切線；r+1>r為相離。",
+      "explanation": "依d與r比較：r−1<r為割線；r=r為切線；r+1>r為相離。 因此唯一正確選項是「割線、切線、相離」。",
+      "steps": [
+        "逐一比較。",
+        "按順序分類。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "切線、割線、相離",
+          "truth": false,
+          "reason": "前兩者順序錯。"
+        },
+        {
+          "choice": "割線、相離、切線",
+          "truth": false,
+          "reason": "後兩者錯。"
+        },
+        {
+          "choice": "相離、切線、割線",
+          "truth": false,
+          "reason": "第一與第三顛倒。"
+        },
+        {
+          "choice": "割線、切線、相離",
+          "truth": true,
+          "reason": "依題目條件重新計算：依d與r比較：r−1<r為割線；r=r為切線；r+1>r為相離。"
+        }
+      ],
+      "misconceptionTarget": "臨界值與大小方向混淆。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 95,
+      "unitCheck": "u19-s015-v009 已核對所求量「依序分類。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「同時分類三條直線。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v009。",
+      "difficultyReason": "advanced：同時分類三條直線。 解題需完成「逐一比較。；按順序分類。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "同時分類三條直線。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "cf72a4d957c3e7825b472df856cc4966c9ee0a5bdefc58b9057fb7905ae77096"
+    },
+    {
+      "questionId": "u19-s015-v010",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形水塔半徑 12 m，一條筆直道路中心線距水塔中心 12 m。忽略道路寬度，中心線與水塔外圍關係為何？",
+      "text": "圓形水塔半徑 12 m，一條筆直道路中心線距水塔中心 12 m。忽略道路寬度，中心線與水塔外圍關係為何？",
+      "givenConditions": "水塔圓形截面r=12；道路中心線距中心12。",
+      "target": "判斷位置。",
+      "choices": [
+        "相交於兩點",
+        "完全分離",
+        "通過圓心",
+        "相切"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「水塔圓形截面r=12；道路中心線距中心12。」重算：道路中心線到圓心距離等於半徑，所以恰有一個公共點。",
+      "explanation": "道路中心線到圓心距離等於半徑，所以恰有一個公共點。 因此唯一正確選項是「相切」。",
+      "steps": [
+        "d=12、r=12。",
+        "判為切線。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "相交於兩點",
+          "truth": false,
+          "reason": "兩交點需d<r。"
+        },
+        {
+          "choice": "完全分離",
+          "truth": false,
+          "reason": "分離需d>r。"
+        },
+        {
+          "choice": "通過圓心",
+          "truth": false,
+          "reason": "通過圓心需d=0。"
+        },
+        {
+          "choice": "相切",
+          "truth": true,
+          "reason": "依題目條件重新計算：道路中心線到圓心距離等於半徑，所以恰有一個公共點。"
+        }
+      ],
+      "misconceptionTarget": "未把道路中心線視為直線或忘記臨界值。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "u19-s015-v010 已核對所求量「判斷位置。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「把安全道路配置轉成切線。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v010。",
+      "difficultyReason": "literacy：把安全道路配置轉成切線。 解題需完成「d=12、r=12。；判為切線。」。",
+      "literacyContextNecessity": "道路與水塔是否接觸由最短距離和半徑比較決定。",
+      "authoringIntent": "把安全道路配置轉成切線。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "97872f0bcacb3edde7856a15b666e472a1681d7fdcbd0d22c6e93bab8cb119af"
+    },
+    {
+      "questionId": "u19-s015-v011",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形花圃半徑 5 m，一條灌溉管線直線距花圃中心 4 m。管線穿過花圃邊界幾次？",
+      "text": "圓形花圃半徑 5 m，一條灌溉管線直線距花圃中心 4 m。管線穿過花圃邊界幾次？",
+      "givenConditions": "r=5；d=4。",
+      "target": "求穿越邊界次數。",
+      "choices": [
+        "0 次",
+        "2 次",
+        "1 次",
+        "無法判定"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「r=5；d=4。」重算：4<5，管線是割線，與圓周有兩個交點。",
+      "explanation": "4<5，管線是割線，與圓周有兩個交點。 因此唯一正確選項是「2 次」。",
+      "steps": [
+        "比較d<r。",
+        "割線有兩交點。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0 次",
+          "truth": false,
+          "reason": "相離才0次。"
+        },
+        {
+          "choice": "2 次",
+          "truth": true,
+          "reason": "依題目條件重新計算：4<5，管線是割線，與圓周有兩個交點。"
+        },
+        {
+          "choice": "1 次",
+          "truth": false,
+          "reason": "切線才1次。"
+        },
+        {
+          "choice": "無法判定",
+          "truth": false,
+          "reason": "資料已足夠。"
+        }
+      ],
+      "misconceptionTarget": "把「穿過內部」誤判只有一次交界。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "u19-s015-v011 已核對所求量「求穿越邊界次數。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「判斷管線穿越圓形區域。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v011。",
+      "difficultyReason": "literacy：判斷管線穿越圓形區域。 解題需完成「比較d<r。；割線有兩交點。」。",
+      "literacyContextNecessity": "管線施工需知道進入與離開花圃的兩個交點。",
+      "authoringIntent": "判斷管線穿越圓形區域。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "988e58a29ef773a67d19e0458bd19bed2faef9f4280341444cc1df14ab0b5fb5"
+    },
+    {
+      "questionId": "u19-s015-v012",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "雷達圓形警戒區半徑 30 km，某航線到中心最短距離 32 km。航線與警戒區關係為何？",
+      "text": "雷達圓形警戒區半徑 30 km，某航線到中心最短距離 32 km。航線與警戒區關係為何？",
+      "givenConditions": "r=30 km；d=32 km。",
+      "target": "分類航線。",
+      "choices": [
+        "切線",
+        "相離",
+        "割線",
+        "航線是直徑"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「r=30 km；d=32 km。」重算：32>30，航線不進入警戒區，與圓相離。",
+      "explanation": "32>30，航線不進入警戒區，與圓相離。 因此唯一正確選項是「相離」。",
+      "steps": [
+        "比較32>30。",
+        "判0交點。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "切線",
+          "truth": false,
+          "reason": "切線需相等。"
+        },
+        {
+          "choice": "相離",
+          "truth": true,
+          "reason": "依題目條件重新計算：32>30，航線不進入警戒區，與圓相離。"
+        },
+        {
+          "choice": "割線",
+          "truth": false,
+          "reason": "割線需較小。"
+        },
+        {
+          "choice": "航線是直徑",
+          "truth": false,
+          "reason": "直徑需通過中心。"
+        }
+      ],
+      "misconceptionTarget": "只因數值接近就判切線。",
+      "prerequisiteCheck": "需先能使用「圓組合周長」；本題未使用後續技能。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "u19-s015-v012 已核對所求量「分類航線。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「用距離判斷航線是否進入警戒區。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s015-v012。",
+      "difficultyReason": "literacy：用距離判斷航線是否進入警戒區。 解題需完成「比較32>30。；判0交點。」。",
+      "literacyContextNecessity": "是否進入警戒區取決於航線到中心的最短距離。",
+      "authoringIntent": "用距離判斷航線是否進入警戒區。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "ca0d1df7baffec0447836c77a05760ae7d9e0f5dc5491e029e8d01fa7346d83a"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u19-s015-cr001",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "itemType": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s015-fig001",
+      "drawingSpecId": "u19-s015-fig001",
+      "prompt": "半徑為 8 cm 的圓，直線到圓心的垂直距離 d=2x−3。若直線為割線，求 x 的範圍。",
+      "requiredWork": [
+        "使用0≤d<r。",
+        "解雙重不等式。",
+        "說明端點是否包含。"
+      ],
+      "standardSolution": [
+        "0≤2x−3<8。",
+        "3≤2x<11。",
+        "3/2≤x<11/2。",
+        "左端可包含，因d=0時直線通過圓心仍為割線；右端不可包含，d=8時為切線。"
+      ],
+      "fullCreditSolution": [
+        "0≤2x−3<8。",
+        "3≤2x<11。",
+        "3/2≤x<11/2。",
+        "左端可包含，因d=0時直線通過圓心仍為割線；右端不可包含，d=8時為切線。"
+      ],
+      "alternativeSolutions": [
+        "可分成2x−3≥0與2x−3<8兩式取交集。"
+      ],
+      "reasoningSteps": [
+        "0≤2x−3<8。",
+        "3≤2x<11。",
+        "3/2≤x<11/2。",
+        "左端可包含，因d=0時直線通過圓心仍為割線；右端不可包含，d=8時為切線。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "範圍3/2≤x<11/2及端點理由完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "範圍正確但端點理由略。"
+        },
+        {
+          "score": 1,
+          "criteria": "只得到x<11/2或列出0≤d<8。"
+        },
+        {
+          "score": 0,
+          "criteria": "用d≥8。"
+        }
+      ],
+      "partialCreditRules": [
+        "距離非負與割線條件各有分。"
+      ],
+      "followThroughPolicy": "若不等式運算小錯但0≤2x−3<8正確，給1分。",
+      "unitNotationRules": "x無單位；距離cm。",
+      "answerOnlyPolicy": "只寫正確範圍給2分。",
+      "commonErrors": [
+        "漏d≥0。",
+        "把切線端點8包含。"
+      ],
+      "independentReview": {
+        "derivedResult": "3/2≤x<11/2。",
+        "ambiguity": "距離與割線條件明確。",
+        "decision": "pass",
+        "reviewNote": "u19-s015-cr001 由題目條件另行推導得到「3/2≤x<11/2。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewedAt": "2026-07-12"
+      },
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "f064b719e4d4daed7313c8e5bb76381208bb751c4bdd0257e50755ab237628fb"
+    },
+    {
+      "questionId": "u19-s015-cr002",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "itemType": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "同一圓半徑為 5 m，三條直線到圓心距離分別為 3 m、5 m、7 m。請分類三條直線並寫出各自公共點數。",
+      "requiredWork": [
+        "逐一比較d與r。",
+        "寫割線/切線/相離。",
+        "寫2/1/0個公共點。"
+      ],
+      "standardSolution": [
+        "d=3<5：割線，2個公共點。",
+        "d=5=r：切線，1個公共點。",
+        "d=7>5：相離，0個公共點。"
+      ],
+      "fullCreditSolution": [
+        "d=3<5：割線，2個公共點。",
+        "d=5=r：切線，1個公共點。",
+        "d=7>5：相離，0個公共點。"
+      ],
+      "alternativeSolutions": [
+        "可列表呈現距離、關係、交點數。"
+      ],
+      "reasoningSteps": [
+        "d=3<5：割線，2個公共點。",
+        "d=5=r：切線，1個公共點。",
+        "d=7>5：相離，0個公共點。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "三條分類與公共點數全對。"
+        },
+        {
+          "score": 2,
+          "criteria": "只錯一項。"
+        },
+        {
+          "score": 1,
+          "criteria": "至少一項正確且知道比較d與r。"
+        },
+        {
+          "score": 0,
+          "criteria": "分類無規律。"
+        }
+      ],
+      "partialCreditRules": [
+        "每一條可獨立給分。"
+      ],
+      "followThroughPolicy": "前一條錯不影響後兩條。",
+      "unitNotationRules": "距離m；公共點數為整數。",
+      "answerOnlyPolicy": "只列三個名稱全對但未寫交點數，給2分。",
+      "commonErrors": [
+        "把d>r判割線。",
+        "切線寫2交點。"
+      ],
+      "independentReview": {
+        "derivedResult": "依序割線2點、切線1點、相離0點。",
+        "ambiguity": "每個距離相對半徑明確。",
+        "decision": "pass",
+        "reviewNote": "u19-s015-cr002 由題目條件另行推導得到「依序割線2點、切線1點、相離0點。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewedAt": "2026-07-12"
+      },
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "e570dab5853a971fc92e8e5771d978887bcde25de04d7917bdb87772ff1b9da2"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u19-s015-v001",
+      "contentSha256": "c3e64a36ef3d4c2ac4e9d40df3c280bb8df2a3bd8c02b09d11e6c7d13865a9b2",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「r=5 cm；d=3 cm。」重算：因為d=3<r=5，直線穿過圓並有兩個交點，所以是割線。",
+      "derivedAnswer": "割線",
+      "storedAnswer": "割線",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「割線」符合；三個干擾項分別因「切線需d=r。；相離需d>r。；直徑是線段，不是位置關係。」而排除。",
+        "undefinedSymbol": "u19-s015-v001 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「判斷直線與圓位置。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由距離判斷割線。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「r=5 cm；d=3 cm。」重讀，所求「判斷直線與圓位置。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為basic，核心任務是由距離判斷割線。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「半徑 5 cm 的圓，圓心到直線 ℓ 的垂直距離為 3 cm。直線 ℓ 與圓的位置關係為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v001 人工重算：因為d=3<r=5，直線穿過圓並有兩個交點，所以是割線。 正確選項為「割線」。四項真值依序為真,假,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v002",
+      "contentSha256": "ec640cced72c94112d17b6492b7050b0fb81e5396dc2397faed866d3453d648b",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「r=7 m；d=7 m。」重算：d=r時直線與圓只有一個公共點，故為切線。",
+      "derivedAnswer": "切線",
+      "storedAnswer": "切線",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「切線」符合；三個干擾項分別因「割線需d<r。；相離需d>r。；弦是圓內線段。」而排除。",
+        "undefinedSymbol": "u19-s015-v002 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「分類直線。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由等距判斷切線。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「r=7 m；d=7 m。」重讀，所求「分類直線。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為basic，核心任務是由等距判斷切線。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「半徑 7 m 的圓，圓心到直線的垂直距離也是 7 m。此直線是什麼？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v002 人工重算：d=r時直線與圓只有一個公共點，故為切線。 正確選項為「切線」。四項真值依序為假,真,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v003",
+      "contentSha256": "1ff05632c9e60aef1a12dd1bb76178c7edb849568027b3ea8d6e2fefae299c3b",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「r=4；d=6。」重算：d=6>r=4，直線在圓外，沒有公共點。",
+      "derivedAnswer": "0 個",
+      "storedAnswer": "0 個",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「0 個」符合；三個干擾項分別因「1個是切線。；2個是割線。；直線與圓不會無限重合。」而排除。",
+        "undefinedSymbol": "u19-s015-v003 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「求交點數。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由距離求公共點數。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「r=4；d=6。」重讀，所求「求交點數。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為basic，核心任務是由距離求公共點數。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「半徑 4 cm 的圓，圓心到直線距離為 6 cm。兩者有幾個公共點？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v003 人工重算：d=6>r=4，直線在圓外，沒有公共點。 正確選項為「0 個」。四項真值依序為假,假,真,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v004",
+      "contentSha256": "654de378120822042a0a530fe531f1f9ffff474936d2ea023e04071fcca424da",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「r=9；直線有兩交點。」重算：兩交點表示割線，因此d<r=9；距離非負，所以0≤d<9。",
+      "derivedAnswer": "0≤d<9",
+      "storedAnswer": "0≤d<9",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「0≤d<9」符合；三個干擾項分別因「d=9是切線。；d>9相離。；距離不能為負且d=0也可能是直徑所在割線。」而排除。",
+        "undefinedSymbol": "u19-s015-v004 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「求d範圍。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由交點數反推距離範圍。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「r=9；直線有兩交點。」重讀，所求「求d範圍。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為standard，核心任務是由交點數反推距離範圍。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「某圓半徑為 9 cm。若直線與圓有兩個交點，圓心到直線的垂直距離 d 應滿足何者？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v004 人工重算：兩交點表示割線，因此d<r=9；距離非負，所以0≤d<9。 正確選項為「0≤d<9」。四項真值依序為真,假,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v005",
+      "contentSha256": "0ad63229e529fa94ba2c84ad88c6f54cc8a8bdff0fffe7d41be09b493a6e6404",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「d=x+2；r=10；ℓ切圓。」重算：切線時d=r，所以x+2=10，x=8。",
+      "derivedAnswer": "8",
+      "storedAnswer": "8",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「8」符合；三個干擾項分別因「回代d=8不是半徑。；回代d=12。；回代d=14。」而排除。",
+        "undefinedSymbol": "u19-s015-v005 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「求x。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「用切線條件解代數。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「d=x+2；r=10；ℓ切圓。」重讀，所求「求x。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為standard，核心任務是用切線條件解代數。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓心 O 到直線 ℓ 的最短距離為 x+2，圓半徑為 10。若 ℓ 為切線，求 x。」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v005 人工重算：切線時d=r，所以x+2=10，x=8。 正確選項為「8」。四項真值依序為假,假,假,真；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v006",
+      "contentSha256": "2681e2754fde5718f1164b341c68dd5e61a89dc026bdead689f9e5d36b5048a8",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「直線與圓唯一公共點為T。」重算：依定義，與圓只有一個公共點的直線為切線，唯一公共點為切點。",
+      "derivedAnswer": "T 是切點，該直線是切線",
+      "storedAnswer": "T 是切點，該直線是切線",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「T 是切點，該直線是切線」符合；三個干擾項分別因「圓心通常不在線與圓交點。；直徑是圓內線段且有兩端點。；相離沒有公共點。」而排除。",
+        "undefinedSymbol": "u19-s015-v006 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「判斷名稱。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由公共點定義辨認切線。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「直線與圓唯一公共點為T。」重讀，所求「判斷名稱。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為standard，核心任務是由公共點定義辨認切線。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「一條直線與圓只有一個公共點 T。下列何者必然正確？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v006 人工重算：依定義，與圓只有一個公共點的直線為切線，唯一公共點為切點。 正確選項為「T 是切點，該直線是切線」。四項真值依序為真,假,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v007",
+      "contentSha256": "cf3767cca03b9d52ff54f275261f3f0dbf1e2b32857ecf01a9c9471163491db4",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「r=6；d=|x−2|。」重算：切線條件|x−2|=6，所以x−2=6或−6，得x=8或−4。",
+      "derivedAnswer": "−4 或 8",
+      "storedAnswer": "−4 或 8",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「−4 或 8」符合；三個干擾項分別因「x=4不滿足距離6。；兩值皆錯。；漏掉負向代數解；距離本身仍為正。」而排除。",
+        "undefinedSymbol": "u19-s015-v007 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「求切線時x。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「結合切線距離與絕對值。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「r=6；d=|x−2|。」重讀，所求「求切線時x。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為advanced，核心任務是結合切線距離與絕對值。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓半徑為 6，圓心到直線距離為 |x−2|。若直線為切線，x 的可能值為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v007 人工重算：切線條件|x−2|=6，所以x−2=6或−6，得x=8或−4。 正確選項為「−4 或 8」。四項真值依序為假,假,真,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v008",
+      "contentSha256": "9866f6c370fac8cbff0ab6e42a2fc4fa4862b26313b4ccf9ac578d55664fccd0",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「r=5；d=2x−1。」重算：割線需0≤d<5，因此0≤2x−1<5，解得1/2≤x<3。",
+      "derivedAnswer": "1/2≤x<3",
+      "storedAnswer": "1/2≤x<3",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「1/2≤x<3」符合；三個干擾項分別因「漏掉距離非負限制。；這是切線或相離範圍。；範圍與d不符。」而排除。",
+        "undefinedSymbol": "u19-s015-v008 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「求x範圍。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由割線條件解雙重不等式。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「r=5；d=2x−1。」重讀，所求「求x範圍。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為advanced，核心任務是由割線條件解雙重不等式。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓半徑為 5，直線到圓心距離為 2x−1。若直線為割線且距離有效，x 的範圍為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v008 人工重算：割線需0≤d<5，因此0≤2x−1<5，解得1/2≤x<3。 正確選項為「1/2≤x<3」。四項真值依序為假,假,真,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v009",
+      "contentSha256": "cf72a4d957c3e7825b472df856cc4966c9ee0a5bdefc58b9057fb7905ae77096",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「r>1；距離r−1、r、r+1。」重算：依d與r比較：r−1<r為割線；r=r為切線；r+1>r為相離。",
+      "derivedAnswer": "割線、切線、相離",
+      "storedAnswer": "割線、切線、相離",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「割線、切線、相離」符合；三個干擾項分別因「前兩者順序錯。；後兩者錯。；第一與第三顛倒。」而排除。",
+        "undefinedSymbol": "u19-s015-v009 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「依序分類。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「同時分類三條直線。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「r>1；距離r−1、r、r+1。」重讀，所求「依序分類。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為advanced，核心任務是同時分類三條直線。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「同一圓的三條直線到圓心距離分別為 r−1、r、r+1，其中 r>1。三者依序為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v009 人工重算：依d與r比較：r−1<r為割線；r=r為切線；r+1>r為相離。 正確選項為「割線、切線、相離」。四項真值依序為假,假,假,真；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v010",
+      "contentSha256": "97872f0bcacb3edde7856a15b666e472a1681d7fdcbd0d22c6e93bab8cb119af",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「水塔圓形截面r=12；道路中心線距中心12。」重算：道路中心線到圓心距離等於半徑，所以恰有一個公共點。",
+      "derivedAnswer": "相切",
+      "storedAnswer": "相切",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「相切」符合；三個干擾項分別因「兩交點需d<r。；分離需d>r。；通過圓心需d=0。」而排除。",
+        "undefinedSymbol": "u19-s015-v010 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「判斷位置。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「把安全道路配置轉成切線。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「水塔圓形截面r=12；道路中心線距中心12。」重讀，所求「判斷位置。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為literacy，核心任務是把安全道路配置轉成切線。，而非只依題序標示。",
+      "literacyContextNecessity": "道路與水塔是否接觸由最短距離和半徑比較決定。",
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓形水塔半徑 12 m，一條筆直道路中心線距水塔中心 12 m。忽略道路寬度，中心線與水塔外圍關係為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v010 人工重算：道路中心線到圓心距離等於半徑，所以恰有一個公共點。 正確選項為「相切」。四項真值依序為假,假,假,真；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v011",
+      "contentSha256": "988e58a29ef773a67d19e0458bd19bed2faef9f4280341444cc1df14ab0b5fb5",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「r=5；d=4。」重算：4<5，管線是割線，與圓周有兩個交點。",
+      "derivedAnswer": "2 次",
+      "storedAnswer": "2 次",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「2 次」符合；三個干擾項分別因「相離才0次。；切線才1次。；資料已足夠。」而排除。",
+        "undefinedSymbol": "u19-s015-v011 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「求穿越邊界次數。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「判斷管線穿越圓形區域。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「r=5；d=4。」重讀，所求「求穿越邊界次數。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為literacy，核心任務是判斷管線穿越圓形區域。，而非只依題序標示。",
+      "literacyContextNecessity": "管線施工需知道進入與離開花圃的兩個交點。",
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓形花圃半徑 5 m，一條灌溉管線直線距花圃中心 4 m。管線穿過花圃邊界幾次？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v011 人工重算：4<5，管線是割線，與圓周有兩個交點。 正確選項為「2 次」。四項真值依序為假,真,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s015-v012",
+      "contentSha256": "ca0d1df7baffec0447836c77a05760ae7d9e0f5dc5491e029e8d01fa7346d83a",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「r=30 km；d=32 km。」重算：32>30，航線不進入警戒區，與圓相離。",
+      "derivedAnswer": "相離",
+      "storedAnswer": "相離",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「相離」符合；三個干擾項分別因「切線需相等。；割線需較小。；直徑需通過中心。」而排除。",
+        "undefinedSymbol": "u19-s015-v012 使用的圓心、弧、角、半徑、直徑、切線或π均已在「切線性質」講義定義。",
+        "unitConflict": "題目所求為「分類航線。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「用距離判斷航線是否進入警戒區。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「r=30 km；d=32 km。」重讀，所求「分類航線。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為literacy，核心任務是用距離判斷航線是否進入警戒區。，而非只依題序標示。",
+      "literacyContextNecessity": "是否進入警戒區取決於航線到中心的最短距離。",
+      "prerequisiteCheck": "只依賴circle-composite-perimeter，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「雷達圓形警戒區半徑 30 km，某航線到中心最短距離 32 km。航線與警戒區關係為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s015-v012 人工重算：32>30，航線不進入警戒區，與圓相離。 正確選項為「相離」。四項真值依序為假,真,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u19-s015-fig001",
+      "unitId": "u19",
+      "topicId": "u19-tangents",
+      "skillId": "tangent-properties",
+      "svgPath": "figures/u19/u19-s015-fig001.svg",
+      "canvas": {
+        "width": 360,
+        "height": 240,
+        "viewBox": "0 0 360 240"
+      },
+      "drawingSpec": {
+        "purpose": "支援「切線性質」中需要辨認點、線、弧、角或邊界的題目。",
+        "coordinateSystem": "SVG x向右、y向下；所有座標以360×240畫布為準。",
+        "geometry": "同一圓旁畫出割線、切線與相離直線，並由圓心作三條垂直距離。",
+        "visibleLines": "所有作答所需實線均以2px以上深色描邊；強調弧以5px描邊。",
+        "hiddenLines": "只有內部共邊或量測輔助線使用虛線；未指定者不得自行添加。",
+        "labels": "標籤位置已在SVG以固定座標給定，避免遮住交點、角弧或刻痕。",
+        "symbols": "直角符號、等長刻痕、箭頭及角度符號僅在數學條件需要時出現。",
+        "scalePolicy": "示意圖不保證按實際長度或角度比例繪製。",
+        "visualInferenceWarning": "不得以目測長短、角度或對稱性取代題目條件與定理。",
+        "mobileReadability": "360×240檢視下文字至少16px，關鍵線至少2px，無微小數值標籤。",
+        "answerLeakage": "圖中不標示任何題目要求計算的最終數值或正確選項。"
+      },
+      "altText": "同一圓旁畫出割線、切線與相離直線，並由圓心作三條垂直距離。 圖形僅協助辨認結構，不可依比例目測答案。",
+      "svgTitle": "直線與圓三種位置圖",
+      "svgDescription": "同一圓旁畫出割線、切線與相離直線，並由圓心作三條垂直距離。",
+      "svgAssertions": [
+        "role=\"img\"",
+        "<title",
+        "<desc",
+        "viewBox=\"0 0 360 240\"",
+        ">割線</text>",
+        ">切線</text>",
+        ">相離</text>"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderInspected": true,
+        "mobileReadable": true,
+        "answerLeakageFound": false,
+        "reviewNote": "已逐項檢查 u19-s015-fig001 的點位、線段、弧線、標籤與輔助符號；此圖專門呈現「切線性質」的結構，未包含可直接推得題庫答案的數值。",
+        "reviewVersion": "human-figure-review-r1.0",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "2ed1070c90e8a43de127c502900e7dddc8d6fc662deb9e472b6e7a263a254e2c"
+    }
+  ]
+};
+export default u19_s015;
