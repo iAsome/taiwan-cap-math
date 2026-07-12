@@ -1,0 +1,221 @@
+{
+  "lectureId": "u02-s005-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-factors",
+  "skillId": "fraction-lcm-basic",
+  "title": "最小公倍數：找出多個週期第一次共同重合的位置",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能列倍數或用質因數分解求LCM。",
+    "能求三數最小公倍數。",
+    "能處理一數為另一數倍數的特例。",
+    "能由LCM反向判斷可能的原數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-gcd-basic",
+      "requiredLevel": "能分解質因數並區分共同因數與共同倍數。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "公倍數",
+      "definition": "同時是兩個或多個整數倍數的數。"
+    },
+    {
+      "term": "最小公倍數",
+      "definition": "正公倍數中最小者。"
+    },
+    {
+      "term": "LCM",
+      "definition": "least common multiple 的縮寫。"
+    },
+    {
+      "term": "共同週期",
+      "definition": "多個週期同時完成一次整數次迴圈的時間。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "lcm(a,b)",
+      "meaning": "a與b的最小公倍數。"
+    }
+  ],
+  "conceptNarrative": [
+    "LCM要包含每個原數需要的全部質因數。",
+    "同一質因數取各數中最大指數，才能讓結果被所有原數整除。",
+    "若a是b的倍數，lcm(a,b)=a。",
+    "所有正共同倍數都是LCM的正整數倍。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "最小公倍數",
+      "statement": "同時被所有指定正整數整除的最小正整數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "lcm=所有質因數的較大指數乘積",
+      "conditions": [
+        "先完成各數質因數分解"
+      ],
+      "meaning": "質因數法。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把0當作要求的最小正公倍數。",
+    "求GCD時不使用最大指數。",
+    "只找到任一共同倍數仍須檢查更小者。",
+    "時間情境需再把分鐘換成實際時刻。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "分解各數。",
+      "check": "底數與指數是否正確？"
+    },
+    {
+      "step": 2,
+      "instruction": "收集出現過的所有質因數。",
+      "check": "有無只出現在某一數的底數？"
+    },
+    {
+      "step": 3,
+      "instruction": "各底數取最大指數。",
+      "check": "是否足以被每個原數整除？"
+    },
+    {
+      "step": 4,
+      "instruction": "相乘得到LCM。",
+      "check": "用原數逐一除結果。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查最小性與情境。",
+      "check": "是否是第一次共同時刻？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "求 lcm(8,12)。",
+      "solutionSteps": [
+        "8=2³，12=2²×3。",
+        "取2³×3。"
+      ],
+      "answer": "24。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "求 lcm(18,30,40)。",
+      "solutionSteps": [
+        "分解為2×3²、2×3×5、2³×5。",
+        "取2³×3²×5。"
+      ],
+      "answer": "360。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "已知9整除45。",
+      "solutionSteps": [
+        "45同時是9與45的倍數。",
+        "最小者就是45。"
+      ],
+      "answer": "lcm(9,45)=45。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "共同週期為36分鐘的事件，若每12分鐘發生一次，在第1分鐘至第36分鐘內（含第36分鐘）共發生幾次？",
+      "solutionSteps": [
+        "發生時刻為第12、24、36分鐘。",
+        "不含起點，含共同終點，共3次。"
+      ],
+      "answer": "3次。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "共同質因數取最小指數。",
+      "why": "混用GCD規則。",
+      "correction": "LCM取最大指數。"
+    },
+    {
+      "mistake": "漏掉只出現在一數的質因數。",
+      "why": "只找共同部分。",
+      "correction": "LCM要包含聯集。"
+    },
+    {
+      "mistake": "取兩數乘積不約去重複。",
+      "why": "雖是共同倍數但不一定最小。",
+      "correction": "用最大指數法。"
+    },
+    {
+      "mistake": "一數是另一數倍數仍相乘。",
+      "why": "忽略整除特例。",
+      "correction": "直接取較大數。"
+    },
+    {
+      "mistake": "求得分鐘數卻答鐘點錯。",
+      "why": "未從起始時刻換算。",
+      "correction": "把週期加到起點。"
+    },
+    {
+      "mistake": "區間計數含不含端點不清。",
+      "why": "未讀『不含今天』『含終點』。",
+      "correction": "逐一列LCM倍數。"
+    }
+  ],
+  "selfCheck": [
+    "結果是否被所有原數整除？",
+    "所有質因數是否都收集？",
+    "指數是否取最大？",
+    "是否為最小正共同倍數？",
+    "時間答案是否完成時刻換算？"
+  ],
+  "summary": [
+    "LCM是第一次共同重合的正位置。",
+    "質因數法取所有底數最大指數。",
+    "一數為另一數倍數時取較大數。",
+    "後續共同倍數都是LCM的倍數。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-gcd-basic，需能完成其基本判斷與計算。",
+    "next": [
+      "最大公因數應用處理最大分組。",
+      "最小公倍數應用處理事件同步。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s005-v001",
+      "u02-s005-v002",
+      "u02-s005-v003",
+      "u02-s005-v004",
+      "u02-s005-v005",
+      "u02-s005-v006",
+      "u02-s005-v007",
+      "u02-s005-v008",
+      "u02-s005-v009",
+      "u02-s005-v010",
+      "u02-s005-v011",
+      "u02-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s005-cr001",
+      "u02-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以倍數列表與質因數最大指數交叉驗算24、360與45；每個結果均可被所有原數整除且無更小共同倍數。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "85723e24c54254b158f82a8cce4824fbe4c42f2f58dfe93aeae93852e1796917"
+}

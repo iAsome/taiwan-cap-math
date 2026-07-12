@@ -1,0 +1,232 @@
+{
+  "lectureId": "u02-s009-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-fraction-ops",
+  "skillId": "fraction-add-subtract",
+  "title": "分數加減：先統一單位分數，再處理符號和括號與剩餘量",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能完成同分母與異分母加減。",
+    "能處理負分數與減去負分數。",
+    "能計算含括號的多步分數式。",
+    "能把完成、使用與剩餘情境翻成正確加減。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-compare",
+      "requiredLevel": "能找共同分母並理解等值分數。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "公分母",
+      "definition": "能被各分母整除的共同分母。"
+    },
+    {
+      "term": "通分",
+      "definition": "把分數改寫成相同分母。"
+    },
+    {
+      "term": "約分",
+      "definition": "分子分母同除公因數化簡。"
+    },
+    {
+      "term": "相反數",
+      "definition": "與原數相加為0的數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a/b±c/d",
+      "meaning": "先找bd或更小公分母。"
+    }
+  ],
+  "conceptNarrative": [
+    "分母代表單位分數的大小；單位不同不能直接合併，所以異分母加減先通分。",
+    "通分只改寫形式，不改變分數值。",
+    "負分數的分子可按整數加減規則運算。",
+    "減去負分數等於加上正分數；多層括號由內向外。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "異分母加減",
+      "statement": "改寫成同分母後加減分子，分母不變。"
+    },
+    {
+      "name": "最簡分數",
+      "statement": "分子分母最大公因數為1。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a/b+c/d=(ad+bc)/bd",
+      "conditions": [
+        "b、d非0"
+      ],
+      "meaning": "通用加法公式。"
+    },
+    {
+      "formula": "a/b-c/d=(ad-bc)/bd",
+      "conditions": [
+        "b、d非0"
+      ],
+      "meaning": "通用減法公式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "分母不能直接相加或相減。",
+    "通分後分母保持共同分母。",
+    "帶分數若需借位要先統一分母。",
+    "情境中的『剩下』通常要用1或總量減去已用量。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認加法、減法與括號。",
+      "check": "文字是增加、使用還是剩餘？"
+    },
+    {
+      "step": 2,
+      "instruction": "求最小公分母。",
+      "check": "是否可用LCM？"
+    },
+    {
+      "step": 3,
+      "instruction": "通分。",
+      "check": "分數值是否保持？"
+    },
+    {
+      "step": 4,
+      "instruction": "加減分子並保留分母。",
+      "check": "符號是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "約分或化帶分數並驗算。",
+      "check": "結果大小是否合理？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "2/9+5/12。",
+      "solutionSteps": [
+        "公分母36。",
+        "8/36+15/36=23/36。"
+      ],
+      "answer": "23/36。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "7/10-2/15。",
+      "solutionSteps": [
+        "公分母30。",
+        "21/30-4/30=17/30。"
+      ],
+      "answer": "17/30。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "-5/8+3/4。",
+      "solutionSteps": [
+        "3/4=6/8。",
+        "-5/8+6/8=1/8。"
+      ],
+      "answer": "1/8。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "1-[3/5-(1/4+1/10)]。",
+      "solutionSteps": [
+        "內括號=7/20。",
+        "3/5-7/20=1/4，再用1減。"
+      ],
+      "answer": "3/4。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "分母直接相加。",
+      "why": "把不同單位分數當同單位。",
+      "correction": "先通分。"
+    },
+    {
+      "mistake": "通分只乘分母。",
+      "why": "沒有等比例改分子。",
+      "correction": "分子分母同乘。"
+    },
+    {
+      "mistake": "減負數仍保留減號。",
+      "why": "未轉成加相反數。",
+      "correction": "a-(-b)=a+b。"
+    },
+    {
+      "mistake": "括號順序錯。",
+      "why": "由外向內算。",
+      "correction": "先處理最內層。"
+    },
+    {
+      "mistake": "結果未約分。",
+      "why": "答案形式不完整。",
+      "correction": "以GCD約分。"
+    },
+    {
+      "mistake": "剩餘比例只算已完成量。",
+      "why": "問句方向錯。",
+      "correction": "用整體1減累計部分。"
+    }
+  ],
+  "selfCheck": [
+    "公分母選得正確嗎？",
+    "每個分子是否同步放大？",
+    "負號與括號是否保留？",
+    "結果是否約分？",
+    "情境結果是否介於合理範圍？"
+  ],
+  "summary": [
+    "分數加減先統一分母。",
+    "通分不改變值。",
+    "負號依整數規則處理。",
+    "剩餘量通常需要用整體減已用量。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-compare，需能完成其基本判斷與計算。",
+    "next": [
+      "分數的乘法和除法不需要通分。",
+      "帶分數加減會增加借位與進位。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s009-v001",
+      "u02-s009-v002",
+      "u02-s009-v003",
+      "u02-s009-v004",
+      "u02-s009-v005",
+      "u02-s009-v006",
+      "u02-s009-v007",
+      "u02-s009-v008",
+      "u02-s009-v009",
+      "u02-s009-v010",
+      "u02-s009-v011",
+      "u02-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s009-cr001",
+      "u02-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以共同分母重新計算四個例題，並用小數估值檢查結果方向；負號、括號與整體1的角色均獨立核對。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "23567b5c1e4e8da84d8f1c3107a9d0288aa984d5e1f5b78abd1d65ca20ab154b"
+}

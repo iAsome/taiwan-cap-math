@@ -1,0 +1,225 @@
+{
+  "lectureId": "u02-s008-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-fraction-ops",
+  "skillId": "fraction-compare",
+  "title": "分數大小比較：在同分母和同分子與負數和近似值之間建立一致順序",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能比較同分母與同分子正分數。",
+    "能用通分或交叉相乘比較一般分數。",
+    "能比較負分數並在數線上定位。",
+    "能排序多個接近的分數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-lcm-application",
+      "requiredLevel": "能求公倍數，作為通分共同分母。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "同分母",
+      "definition": "兩分數分母相同。"
+    },
+    {
+      "term": "同分子",
+      "definition": "兩分數分子相同。"
+    },
+    {
+      "term": "通分",
+      "definition": "改寫成相同分母的等值分數。"
+    },
+    {
+      "term": "交叉相乘",
+      "definition": "對正分母分數比較ad與bc。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a/b ? c/d",
+      "meaning": "在b、d為正時，可比較ad與bc。"
+    }
+  ],
+  "conceptNarrative": [
+    "同分母時，每一份大小相同，分子較大者取的份數較多。",
+    "同分子正分數中，分母越大每份越小，因此整體越小。",
+    "一般分數可通分或交叉相乘。",
+    "兩個負數比較時，數線越右越大；絕對值較大的負數反而較小。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等值分數",
+      "statement": "分子分母同乘或同除非零整數，值不變。"
+    },
+    {
+      "name": "分數順序",
+      "statement": "依其在數線上的位置由左到右遞增。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a/b<c/d ⇔ ad<bc",
+      "conditions": [
+        "b>0、d>0"
+      ],
+      "meaning": "交叉相乘比較。"
+    }
+  ],
+  "nonApplicableCases": [
+    "分母有負號時先把負號移到分子。",
+    "近似小數若截斷太少位可能造成誤判。",
+    "圖形面積不同不能只看塗色格數。",
+    "同分子規則對負分數要重新考慮符號。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先整理符號與約分。",
+      "check": "分母是否為正？"
+    },
+    {
+      "step": 2,
+      "instruction": "看是否同分母或同分子。",
+      "check": "能否使用快速規則？"
+    },
+    {
+      "step": 3,
+      "instruction": "否則通分或交叉相乘。",
+      "check": "共同分母是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "負數時用數線檢查方向。",
+      "check": "越右是否越大？"
+    },
+    {
+      "step": 5,
+      "instruction": "多個分數使用同一比較標準。",
+      "check": "排序是否自洽？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "比較5/12與7/12。",
+      "solutionSteps": [
+        "同分母。",
+        "5<7。"
+      ],
+      "answer": "5/12<7/12。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "比較4/9與4/7。",
+      "solutionSteps": [
+        "同分子正分數。",
+        "7<9，所以4/7較大。"
+      ],
+      "answer": "4/9<4/7。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "比較-5/6與-4/5。",
+      "solutionSteps": [
+        "通分為-25/30、-24/30。",
+        "-25/30較小。"
+      ],
+      "answer": "-5/6<-4/5。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "排序7/15、5/12、9/20。",
+      "solutionSteps": [
+        "通分60得28、25、27。",
+        "依分子排序。"
+      ],
+      "answer": "5/12<9/20<7/15。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "分母大就判分數大。",
+      "why": "忽略每份變小。",
+      "correction": "分子相同正分數中分母小者大。"
+    },
+    {
+      "mistake": "交叉相乘後比較錯配。",
+      "why": "未固定a/b與c/d位置。",
+      "correction": "比較ad與bc並標清來源。"
+    },
+    {
+      "mistake": "負分數沿用絕對值順序。",
+      "why": "忘記數線方向。",
+      "correction": "負數絕對值大者較小。"
+    },
+    {
+      "mistake": "化小數只看一位。",
+      "why": "近似精度不足。",
+      "correction": "使用交叉相乘作精確比較。"
+    },
+    {
+      "mistake": "排序每一對使用不同錯誤基準。",
+      "why": "結果不具傳遞性。",
+      "correction": "統一通分。"
+    },
+    {
+      "mistake": "圖形不同大小卻比較塗色格數。",
+      "why": "單位整體不同。",
+      "correction": "先確認整體等大。"
+    }
+  ],
+  "selfCheck": [
+    "分母是否都為正？",
+    "有快速同分母或同分子法嗎？",
+    "交叉積是否配對正確？",
+    "負數方向是否反轉？",
+    "排序是否可由數線驗證？"
+  ],
+  "summary": [
+    "同分母比分子。",
+    "同分子正分數分母小者大。",
+    "一般分數可通分或交叉相乘。",
+    "負分數要依數線位置。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-lcm-application，需能完成其基本判斷與計算。",
+    "next": [
+      "分數加減需要通分。",
+      "帶分數與百分率都會使用大小比較。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s008-v001",
+      "u02-s008-v002",
+      "u02-s008-v003",
+      "u02-s008-v004",
+      "u02-s008-v005",
+      "u02-s008-v006",
+      "u02-s008-v007",
+      "u02-s008-v008",
+      "u02-s008-v009",
+      "u02-s008-v010",
+      "u02-s008-v011",
+      "u02-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s008-cr001",
+      "u02-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "所有例題以通分與交叉相乘雙重驗算；負分數另以數線順序核對，17/24、13/18、29/40與1/18距離均重新計算。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "ab42277758401363d7c11c6280845fc549566888de8296dbfd1f023ae98d1dda"
+}

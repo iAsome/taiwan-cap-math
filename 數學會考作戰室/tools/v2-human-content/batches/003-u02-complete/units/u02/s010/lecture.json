@@ -1,0 +1,232 @@
+{
+  "lectureId": "u02-s010-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-fraction-ops",
+  "skillId": "fraction-multiply-divide",
+  "title": "分數的乘法和除法：用倍量和倒數與每份大小解決比例分裝",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能完成正負分數乘法。",
+    "能把除以分數改成乘倒數。",
+    "能先約分再乘以降低計算錯誤。",
+    "能判斷部分中的部分、份數與反求整體。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-add-subtract",
+      "requiredLevel": "能處理分數符號、約分與基本四則順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "倒數",
+      "definition": "兩數乘積為1時互為倒數。"
+    },
+    {
+      "term": "交叉約分",
+      "definition": "乘法前在分子分母間約去公因數。"
+    },
+    {
+      "term": "部分中的部分",
+      "definition": "一個比例作用在另一部分上，通常用乘法。"
+    },
+    {
+      "term": "份數",
+      "definition": "總量可分成多少個指定大小的份。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(a/b)⁻¹=b/a",
+      "meaning": "a、b皆非0時的倒數。"
+    }
+  ],
+  "conceptNarrative": [
+    "分數乘法把分子相乘、分母相乘，能先交叉約分。",
+    "除以非零分數等於乘它的倒數。",
+    "『某量的a/b』是乘法；『總量可分成每份c/d多少份』是除法。",
+    "負數乘除的符號依整數規則：同號正、異號負。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "分數乘法",
+      "statement": "a/b×c/d=ac/bd。"
+    },
+    {
+      "name": "分數除法",
+      "statement": "a/b÷c/d=a/b×d/c，c、d非0。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a/b×c/d=ac/bd",
+      "conditions": [
+        "b、d非0"
+      ],
+      "meaning": "分數乘法。"
+    },
+    {
+      "formula": "a/b÷c/d=ad/bc",
+      "conditions": [
+        "b、c、d非0"
+      ],
+      "meaning": "乘倒數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "0沒有倒數。",
+    "除數不得為0。",
+    "分數乘法不需通分。",
+    "『其中的』與『平均分成』代表不同運算。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先判斷乘法或除法。",
+      "check": "題目問部分量還是份數？"
+    },
+    {
+      "step": 2,
+      "instruction": "處理正負號。",
+      "check": "同號還是異號？"
+    },
+    {
+      "step": 3,
+      "instruction": "除法改乘倒數。",
+      "check": "倒的是除數，不是被除數。"
+    },
+    {
+      "step": 4,
+      "instruction": "先約分再乘。",
+      "check": "可否降低數字？"
+    },
+    {
+      "step": 5,
+      "instruction": "化簡並放回情境。",
+      "check": "份數、容量或比例是否合理？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "7/12×9/14。",
+      "solutionSteps": [
+        "交叉約分7與14、9與12。",
+        "得3/8。"
+      ],
+      "answer": "3/8。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "5/6÷25/18。",
+      "solutionSteps": [
+        "乘18/25。",
+        "約分得3/5。"
+      ],
+      "answer": "3/5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "全班40人的3/8再取其中2/5。",
+      "solutionSteps": [
+        "40×3/8=15。",
+        "15×2/5=6。"
+      ],
+      "answer": "6人。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "9公升每瓶3/5公升。",
+      "solutionSteps": [
+        "9÷3/5。",
+        "9×5/3=15。"
+      ],
+      "answer": "15瓶。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "乘法先通分。",
+      "why": "混用加減規則。",
+      "correction": "直接分子乘分子、分母乘分母。"
+    },
+    {
+      "mistake": "除法倒錯被除數。",
+      "why": "未辨認除數。",
+      "correction": "只把第二個分數顛倒。"
+    },
+    {
+      "mistake": "0也取倒數。",
+      "why": "忽略倒數存在條件。",
+      "correction": "除數為0時無定義。"
+    },
+    {
+      "mistake": "『其中的』用加法。",
+      "why": "未理解部分中的部分。",
+      "correction": "連續比例相乘。"
+    },
+    {
+      "mistake": "總量乘每份量求份數。",
+      "why": "運算方向反。",
+      "correction": "份數=總量÷每份量。"
+    },
+    {
+      "mistake": "負號漏掉。",
+      "why": "只計算絕對值。",
+      "correction": "先判斷符號再算大小。"
+    }
+  ],
+  "selfCheck": [
+    "除數是否非0？",
+    "倒數是否只作用在除數？",
+    "能否先約分？",
+    "符號是否正確？",
+    "情境問的是部分量還是份數？"
+  ],
+  "summary": [
+    "乘法分子乘分子、分母乘分母。",
+    "除法改乘倒數。",
+    "乘法前可交叉約分。",
+    "部分中的部分用乘法，份數用除法。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-add-subtract，需能完成其基本判斷與計算。",
+    "next": [
+      "帶分數的乘法和除法前通常化成假分數。",
+      "繁分數的主分數線就是除法。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s010-v001",
+      "u02-s010-v002",
+      "u02-s010-v003",
+      "u02-s010-v004",
+      "u02-s010-v005",
+      "u02-s010-v006",
+      "u02-s010-v007",
+      "u02-s010-v008",
+      "u02-s010-v009",
+      "u02-s010-v010",
+      "u02-s010-v011",
+      "u02-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s010-cr001",
+      "u02-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例均以未約分直接乘與先約分兩路重算；除法結果再乘回除數恢復被除數，符號與0條件單獨檢查。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "226d81564ec8c95734c90453798122fa6ad60e011c12354da5438d7c9c2722d1"
+}

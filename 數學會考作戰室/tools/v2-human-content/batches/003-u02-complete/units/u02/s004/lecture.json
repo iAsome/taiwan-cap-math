@@ -1,0 +1,225 @@
+{
+  "lectureId": "u02-s004-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-factors",
+  "skillId": "fraction-gcd-basic",
+  "title": "最大公因數：找出能同時整除多個數的最大單位",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能列因數或用質因數分解求兩數GCD。",
+    "能求三個數的最大公因數。",
+    "能處理一數整除另一數的特例。",
+    "能反向檢查指定GCD條件。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-prime-factorization",
+      "requiredLevel": "能正確分解整數並讀取各質因數指數。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "公因數",
+      "definition": "同時是兩個或多個整數因數的數。"
+    },
+    {
+      "term": "最大公因數",
+      "definition": "所有正公因數中最大的。"
+    },
+    {
+      "term": "互質",
+      "definition": "最大公因數為1。"
+    },
+    {
+      "term": "GCD",
+      "definition": "greatest common divisor 的縮寫。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "gcd(a,b)",
+      "meaning": "a與b的最大公因數。"
+    }
+  ],
+  "conceptNarrative": [
+    "GCD只保留每個數都具有的質因數。",
+    "共同質因數的指數要取各數中最小值，因為共同因數不能超過任何一數的供應量。",
+    "若a整除b，則gcd(a,b)=a。",
+    "GCD可把多個數同時約成沒有更大共同因數的比例。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "最大公因數",
+      "statement": "同時整除所有指定整數的最大正整數。"
+    },
+    {
+      "name": "互質",
+      "statement": "兩數最大公因數為1。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "gcd=共同質因數的較小指數乘積",
+      "conditions": [
+        "先完成所有數的質因數分解"
+      ],
+      "meaning": "質因數法。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不是所有題目都要把兩數相乘。",
+    "非整數不在本節GCD定義範圍。",
+    "共同因數不等於所有因數聯集。",
+    "求最小公倍數時不能使用較小指數規則。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "分解每個數。",
+      "check": "質因數與指數是否正確？"
+    },
+    {
+      "step": 2,
+      "instruction": "圈出所有數共同出現的質因數。",
+      "check": "缺少於任一數的底數要排除。"
+    },
+    {
+      "step": 3,
+      "instruction": "每個共同底數取最小指數。",
+      "check": "哪一數供應最少？"
+    },
+    {
+      "step": 4,
+      "instruction": "相乘得到GCD。",
+      "check": "結果是否整除每個原數？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查最大性。",
+      "check": "是否還能乘更大的共同因數？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "求 gcd(48,72)。",
+      "solutionSteps": [
+        "48=2⁴×3。",
+        "72=2³×3²，取2³×3。"
+      ],
+      "answer": "24。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "求 gcd(45,75,105)。",
+      "solutionSteps": [
+        "分解後共同含3×5。",
+        "更高指數無法同時保留。"
+      ],
+      "answer": "15。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "已知15整除60。",
+      "solutionSteps": [
+        "15同時整除15與60。",
+        "共同因數不可能大於15。"
+      ],
+      "answer": "gcd(15,60)=15。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "把84:126約成最簡整數比。",
+      "solutionSteps": [
+        "gcd=42。",
+        "兩數同除42。"
+      ],
+      "answer": "2:3。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把共同質因數取較大指數。",
+      "why": "混用LCM規則。",
+      "correction": "GCD取較小指數。"
+    },
+    {
+      "mistake": "只找出一個公因數就停止。",
+      "why": "未檢查最大性。",
+      "correction": "比較所有共同因數或用質因數法。"
+    },
+    {
+      "mistake": "三數題只算前兩數。",
+      "why": "第三數可能缺少某因數。",
+      "correction": "結果還要與第三數求GCD。"
+    },
+    {
+      "mistake": "把互質理解成都是質數。",
+      "why": "互質只描述共同因數。",
+      "correction": "如8與15皆合數但互質。"
+    },
+    {
+      "mistake": "一數整除另一數仍算成1。",
+      "why": "忽略較小數本身是共同因數。",
+      "correction": "直接取較小數。"
+    },
+    {
+      "mistake": "求得結果後未驗整除。",
+      "why": "算術錯誤難發現。",
+      "correction": "用每個原數除以GCD。"
+    }
+  ],
+  "selfCheck": [
+    "結果是否整除每個原數？",
+    "共同底數是否完整？",
+    "指數是否取最小？",
+    "多數題是否納入全部數？",
+    "是否混成LCM？"
+  ],
+  "summary": [
+    "GCD是最大共同整除單位。",
+    "質因數法取共同底數的最小指數。",
+    "一數整除另一數時取較小數。",
+    "互質表示GCD為1。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-prime-factorization，需能完成其基本判斷與計算。",
+    "next": [
+      "最小公倍數使用相反的最大指數原則。",
+      "最大分組與最大切割會直接使用GCD。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s004-v001",
+      "u02-s004-v002",
+      "u02-s004-v003",
+      "u02-s004-v004",
+      "u02-s004-v005",
+      "u02-s004-v006",
+      "u02-s004-v007",
+      "u02-s004-v008",
+      "u02-s004-v009",
+      "u02-s004-v010",
+      "u02-s004-v011",
+      "u02-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s004-cr001",
+      "u02-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重新分解48、72、45、75、105與84、126，GCD均能整除全部原數；互質與整除特例另行核對。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "980dd82c26933531014df7474c82853f462bb1660fca392d2a23e35cf6fc8774"
+}

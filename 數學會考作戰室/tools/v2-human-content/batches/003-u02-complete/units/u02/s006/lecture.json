@@ -1,0 +1,217 @@
+{
+  "lectureId": "u02-s006-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-factors-apps",
+  "skillId": "fraction-gcd-application",
+  "title": "最大公因數應用：把最多分組和最長切割與最大正方形翻成 GCD",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從『最多相同組』辨認GCD模型。",
+    "能從『最長等段且不剩』辨認GCD模型。",
+    "能求每組內容、總段數或正方形塊數。",
+    "能分清問題問的是組數、每組數量或單位長度。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-lcm-basic",
+      "requiredLevel": "能計算GCD與LCM，並知道GCD是共同整除的最大單位。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "最大分組",
+      "definition": "在全部用完且每組內容相同下，使組數最多。"
+    },
+    {
+      "term": "最大切割單位",
+      "definition": "能整除所有原長且數值最大的段長。"
+    },
+    {
+      "term": "鋪滿",
+      "definition": "不重疊、不裁切且沒有空隙。"
+    },
+    {
+      "term": "每組內容",
+      "definition": "各類總量除以組數後所得數量。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "gcd(a,b)",
+      "meaning": "可作為最大組數或最大單位長度。"
+    }
+  ],
+  "conceptNarrative": [
+    "『最多組且每組相同』表示組數要同時整除各總量，故取GCD。",
+    "『最長小段且不剩』表示段長要同時整除各原長，故取GCD。",
+    "求出GCD後仍要依題目繼續：問每組內容就相除，問總段數就把各商相加，問鋪面塊數就把長寬方向商相乘。",
+    "GCD是中間量還是最終答案，必須由題目問句判斷。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "最大相同組數",
+      "statement": "同時整除所有物品總量的最大正整數。"
+    },
+    {
+      "name": "最大正方形邊長",
+      "statement": "同時整除長與寬的最大正整數。"
+    }
+  ],
+  "formulas": [],
+  "nonApplicableCases": [
+    "題目只說平均分但未說最多時，可能有多個可行組數。",
+    "題目允許剩餘或裁切時，不一定使用GCD。",
+    "問總塊數時不能只答邊長。",
+    "不同長度單位要先統一。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出所有總量或邊長。",
+      "check": "是否同單位？"
+    },
+    {
+      "step": 2,
+      "instruction": "找關鍵詞最多、最長、不剩、相同。",
+      "check": "是否符合GCD模型？"
+    },
+    {
+      "step": 3,
+      "instruction": "計算GCD。",
+      "check": "結果能否整除全部量？"
+    },
+    {
+      "step": 4,
+      "instruction": "依問句做後續除法。",
+      "check": "問組數、每組內容、段數還是面積？"
+    },
+    {
+      "step": 5,
+      "instruction": "放回情境驗算。",
+      "check": "全部是否用完、鋪滿或剪完？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "36顆紅球與48顆藍球做最多相同袋。",
+      "solutionSteps": [
+        "gcd(36,48)=12。",
+        "每袋紅3、藍4。"
+      ],
+      "answer": "12袋，每袋7顆。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "90與150公分繩剪最長等段。",
+      "solutionSteps": [
+        "gcd=30。",
+        "段數3+5=8。"
+      ],
+      "answer": "每段30公分，共8段。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "120×168公分牆鋪最大正方形。",
+      "solutionSteps": [
+        "gcd=24。",
+        "長5塊、寬7塊。"
+      ],
+      "answer": "邊長24公分，共35塊。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "84、126、210件物品做最多禮盒。",
+      "solutionSteps": [
+        "三數gcd=42。",
+        "每盒2、3、5件。"
+      ],
+      "answer": "42盒，每盒10件。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把GCD當每組物品數。",
+      "why": "未看清GCD代表組數。",
+      "correction": "先寫單位：袋、段或公分。"
+    },
+    {
+      "mistake": "求段長後未求總段數。",
+      "why": "問句要求第二步。",
+      "correction": "各長度除以段長再加總。"
+    },
+    {
+      "mistake": "鋪面塊數用長商加寬商。",
+      "why": "平面排列應相乘。",
+      "correction": "長方向塊數×寬方向塊數。"
+    },
+    {
+      "mistake": "只使用兩個數，漏掉第三類物品。",
+      "why": "多類分組需共同整除全部。",
+      "correction": "計算多數GCD。"
+    },
+    {
+      "mistake": "選到可行但不是最大的數。",
+      "why": "忽略最多或最長。",
+      "correction": "確認沒有更大共同因數。"
+    },
+    {
+      "mistake": "公分與公尺直接求GCD。",
+      "why": "單位不一致。",
+      "correction": "先換成同一整數單位。"
+    }
+  ],
+  "selfCheck": [
+    "關鍵詞是否明確指向GCD？",
+    "GCD在本題代表什麼單位？",
+    "是否還有第二步？",
+    "所有物品是否全部用完？",
+    "平面塊數是否用乘法？"
+  ],
+  "summary": [
+    "最多相同組數、最長等段與最大正方形邊長都是GCD模型。",
+    "GCD常只是中間量。",
+    "每組內容用總量除組數。",
+    "總塊數依一維加總或二維相乘。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-lcm-basic，需能完成其基本判斷與計算。",
+    "next": [
+      "最小公倍數應用處理再次同步。",
+      "分數運算會使用GCD約分。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s006-v001",
+      "u02-s006-v002",
+      "u02-s006-v003",
+      "u02-s006-v004",
+      "u02-s006-v005",
+      "u02-s006-v006",
+      "u02-s006-v007",
+      "u02-s006-v008",
+      "u02-s006-v009",
+      "u02-s006-v010",
+      "u02-s006-v011",
+      "u02-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s006-cr001",
+      "u02-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一以物品數除組數、原長除段長與牆面長寬除邊長驗算；42包、24公分與35塊均能還原原始數量且無剩餘。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "5aa7e85e3d1dcb078ab205d5f760a50b7eb63591d67dfce180b142f6d5274df4"
+}

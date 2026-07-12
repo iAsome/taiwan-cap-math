@@ -1,0 +1,232 @@
+{
+  "lectureId": "u02-s014-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-fraction-ratio",
+  "skillId": "fraction-base-quantity",
+  "title": "基準量判斷：先找百分率的 100%，再決定乘法或除法",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認比較量、基準量與分率。",
+    "能從『A是B的p%』找出B為基準。",
+    "能由部分與分率反求整體。",
+    "能處理『比…多/少』與含稅價的反向問題。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-percent-discount",
+      "requiredLevel": "能把百分率轉成倍率並完成基本折扣、增減計算。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "基準量",
+      "definition": "被視為100%或完整1的量。"
+    },
+    {
+      "term": "比較量",
+      "definition": "拿來與基準量比較的量。"
+    },
+    {
+      "term": "分率",
+      "definition": "比較量佔基準量的比例。"
+    },
+    {
+      "term": "差額",
+      "definition": "新舊兩量相減的變化量。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "比較量=基準量×分率",
+      "meaning": "三量基本關係。"
+    }
+  ],
+  "conceptNarrative": [
+    "『A是B的p%』中，B是100%的基準，A是比較量。",
+    "『A比B多p%』表示A=B×(1+p%)，百分率仍以B為基準。",
+    "已知比較量求基準量要除以分率。",
+    "含稅價、折後價與增加後的量都是新量，反求原量應除以對應倍率。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "基準量",
+      "statement": "百分率所依據的100%量。"
+    },
+    {
+      "name": "比較量",
+      "statement": "基準量乘分率後的對應量。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "基準量=比較量÷分率",
+      "conditions": [
+        "分率非0"
+      ],
+      "meaning": "反求整體。"
+    },
+    {
+      "formula": "新量=原量×(1±率)",
+      "conditions": [
+        "原量為基準"
+      ],
+      "meaning": "增減關係。"
+    }
+  ],
+  "nonApplicableCases": [
+    "兩個百分率若基準不同，不能直接相減。",
+    "『比A多』與『A比…多』語序會改變基準。",
+    "含稅率若題目另有定義要按說明。",
+    "分率為0時不能由0部分唯一反求整體。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出『的』『比』『佔』等關係詞。",
+      "check": "誰被當作完整100%？"
+    },
+    {
+      "step": 2,
+      "instruction": "寫成等式。",
+      "check": "比較量=基準量×分率嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "判斷乘或除。",
+      "check": "已知整體還是部分？"
+    },
+    {
+      "step": 4,
+      "instruction": "多層關係改寫為倍率鏈。",
+      "check": "每一步基準是否更新？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原句。",
+      "check": "所得量乘分率是否回到已知比較量？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "甲是乙的35%，甲=70。",
+      "solutionSteps": [
+        "70=乙×0.35。",
+        "乙=200。"
+      ],
+      "answer": "乙為200。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "今年比去年多12%，今年1120。",
+      "solutionSteps": [
+        "今年=去年×1.12。",
+        "去年=1000。"
+      ],
+      "answer": "去年1000。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "女生佔全班48%，女生24人。",
+      "solutionSteps": [
+        "24=全班×0.48。",
+        "全班=50。"
+      ],
+      "answer": "50人。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "含稅價1050，稅率5%。",
+      "solutionSteps": [
+        "1050=未稅×1.05。",
+        "未稅=1000。"
+      ],
+      "answer": "1000元。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把句首量當基準。",
+      "why": "未看『的』後物件。",
+      "correction": "寫等式確認。"
+    },
+    {
+      "mistake": "比較量求整體仍乘分率。",
+      "why": "方向反。",
+      "correction": "用除法。"
+    },
+    {
+      "mistake": "比原量多20%寫成0.2倍。",
+      "why": "漏掉原來的100%。",
+      "correction": "倍率1.2。"
+    },
+    {
+      "mistake": "A比B少25%就用A×0.75求B。",
+      "why": "基準錯置。",
+      "correction": "A=0.75B，故B=A÷0.75。"
+    },
+    {
+      "mistake": "不同基準百分率直接相減。",
+      "why": "百分數看似可比較但對應量不同。",
+      "correction": "分別求實際量。"
+    },
+    {
+      "mistake": "反求含稅價直接減5%。",
+      "why": "5%以未稅價為基準。",
+      "correction": "除以1.05。"
+    }
+  ],
+  "selfCheck": [
+    "誰是100%？",
+    "能否寫比較量=基準量×分率？",
+    "反求整體是否用除法？",
+    "『比誰多/少』的物件正確嗎？",
+    "代回後是否重現原比較量？"
+  ],
+  "summary": [
+    "基準量是百分率的100%。",
+    "比較量=基準量×分率。",
+    "反求基準量用除法。",
+    "增減語句的基準是『比』後面的量。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-percent-discount，需能完成其基本判斷與計算。",
+    "next": [
+      "綜合應用會在同題切換多個基準。",
+      "一次方程式可處理更復雜的未知基準量。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s014-v001",
+      "u02-s014-v002",
+      "u02-s014-v003",
+      "u02-s014-v004",
+      "u02-s014-v005",
+      "u02-s014-v006",
+      "u02-s014-v007",
+      "u02-s014-v008",
+      "u02-s014-v009",
+      "u02-s014-v010",
+      "u02-s014-v011",
+      "u02-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s014-cr001",
+      "u02-s014-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例均以代回分率或倍率恢復原比較量；552÷1.15、100÷(5/8)與90/160的基準分母分別核對，不混用新舊量。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "998698f16b1908405742988dbd8f1fe976318987a5b1ca31b1be7f7e972f56fb"
+}

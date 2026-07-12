@@ -1,0 +1,1099 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u02-s007-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-factors-apps",
+  "skillId": "fraction-lcm-application",
+  "title": "最小公倍數應用：用共同週期處理再次同步與等待時間",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從『再次同時』『下一次共同』辨認LCM模型。",
+    "能把LCM分鐘數換成實際時刻。",
+    "能計算指定區間內的同步次數。",
+    "能處理三個以上週期與不含起點的條件。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-gcd-application",
+      "requiredLevel": "能區分最大分組的GCD模型與共同週期的LCM模型。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "週期",
+      "definition": "事件每隔固定時間重複一次。"
+    },
+    {
+      "term": "共同起點",
+      "definition": "多事件在同一時刻同時發生。"
+    },
+    {
+      "term": "同步",
+      "definition": "多個週期在同一時刻重合。"
+    },
+    {
+      "term": "等待時間",
+      "definition": "從指定到達時刻到下一同步時刻的差。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "T=lcm(t₁,t₂,…)",
+      "meaning": "共同週期T。"
+    }
+  ],
+  "conceptNarrative": [
+    "每個事件發生時刻都是其週期的倍數。",
+    "多事件再次同時發生，時間差必須是所有週期的共同倍數；第一次重合取LCM。",
+    "若題目給鐘點，先求經過分鐘，再加回起始時間。",
+    "區間計數時要處理起點是否算、終點是否包含。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "下一同步時刻",
+      "statement": "共同起點加上最小正共同週期。"
+    },
+    {
+      "name": "同步次數",
+      "statement": "區間中正LCM倍數的個數，依端點規則調整。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "共同週期=lcm(各週期)",
+      "conditions": [
+        "各週期使用同一時間單位"
+      ],
+      "meaning": "第一次再次同步的間隔。"
+    }
+  ],
+  "nonApplicableCases": [
+    "事件不是固定週期時不能直接用LCM。",
+    "起始時刻不同且沒有共同起點時需先建立同餘條件，本節不作深題。",
+    "只問某一事件次數時未必需LCM。",
+    "分鐘與小時要統一。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出各週期與共同起點。",
+      "check": "單位是否一致？"
+    },
+    {
+      "step": 2,
+      "instruction": "求LCM。",
+      "check": "是否為第一次再次同步？"
+    },
+    {
+      "step": 3,
+      "instruction": "換算成實際時刻。",
+      "check": "有無跨小時或隔天？"
+    },
+    {
+      "step": 4,
+      "instruction": "若問次數，列LCM倍數。",
+      "check": "起點、終點是否計入？"
+    },
+    {
+      "step": 5,
+      "instruction": "核對每個事件。",
+      "check": "同步時刻除以每個週期是否為整數？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "6與8分鐘週期同步。",
+      "solutionSteps": [
+        "lcm=24。",
+        "24同時為6×4與8×3。"
+      ],
+      "answer": "24分鐘後。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "8:30起每15、20分鐘。",
+      "solutionSteps": [
+        "lcm=60分鐘。",
+        "8:30加1小時。"
+      ],
+      "answer": "9:30。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "12、18分鐘，兩小時內同步幾次？",
+      "solutionSteps": [
+        "lcm=36。",
+        "36、72、108分鐘三次；144超過120。"
+      ],
+      "answer": "不含起點共3次。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "每20、30、45天維護。",
+      "solutionSteps": [
+        "取2²×3²×5。",
+        "得到180。"
+      ],
+      "answer": "180天後。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把週期相加。",
+      "why": "共同倍數不等於和。",
+      "correction": "求LCM。"
+    },
+    {
+      "mistake": "直接取較大週期。",
+      "why": "較大者未必被另一週期整除。",
+      "correction": "檢查整除。"
+    },
+    {
+      "mistake": "只求分鐘不換成鐘點。",
+      "why": "答案型態未完成。",
+      "correction": "加回共同起點。"
+    },
+    {
+      "mistake": "把起點也算作『再』一次。",
+      "why": "忽略不含現在。",
+      "correction": "只列正LCM倍數。"
+    },
+    {
+      "mistake": "漏看終點含不含。",
+      "why": "區間邊界處理錯。",
+      "correction": "依題文字列出最後一個時刻。"
+    },
+    {
+      "mistake": "三週期只算前兩個。",
+      "why": "第三事件可能不同步。",
+      "correction": "求三數LCM。"
+    }
+  ],
+  "selfCheck": [
+    "各事件真的固定週期嗎？",
+    "共同起點是何時？",
+    "LCM是否除得盡所有週期？",
+    "實際時刻是否換算正確？",
+    "起點與終點計數規則是否清楚？"
+  ],
+  "summary": [
+    "再次同步的時間差是各週期LCM。",
+    "鐘點題要把間隔加回起點。",
+    "次數題列LCM的正倍數。",
+    "多週期要全部納入。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-gcd-application，需能完成其基本判斷與計算。",
+    "next": [
+      "分數大小比較將轉入有理數運算。",
+      "綜合素養題會結合週期與到場等待。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s007-v001",
+      "u02-s007-v002",
+      "u02-s007-v003",
+      "u02-s007-v004",
+      "u02-s007-v005",
+      "u02-s007-v006",
+      "u02-s007-v007",
+      "u02-s007-v008",
+      "u02-s007-v009",
+      "u02-s007-v010",
+      "u02-s007-v011",
+      "u02-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s007-cr001",
+      "u02-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一將共同週期除以每個原週期驗證，並重建所有鐘面時刻與區間端點；180分鐘、48秒倍數與11:00時刻均無提前同步。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "f7d0c8f3fb3a92a2f02ce697a4ef96d2904a446a3bf33b64b8cd7b1acfb4c846"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u02-s007-v001",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "甲鐘每 4 分鐘響一次，乙鐘每 6 分鐘響一次。現在同時響，幾分鐘後第一次再同時響？",
+    "choices": [
+      "12 分鐘",
+      "10 分鐘",
+      "18 分鐘",
+      "24 分鐘"
+    ],
+    "answerIndex": 0,
+    "explanation": "依題意逐步處理：再次同時響的時間是4與6的最小公倍數；lcm(4,6)=12。所以答案是「12 分鐘」。",
+    "steps": [
+      "再次同時響的時間是4與6的最小公倍數",
+      "lcm(4,6)=12"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "12 分鐘",
+        "truth": true,
+        "reason": "12是最早共同時刻。"
+      },
+      {
+        "choice": "10 分鐘",
+        "truth": false,
+        "reason": "10不是4或6共同倍數。"
+      },
+      {
+        "choice": "18 分鐘",
+        "truth": false,
+        "reason": "18不是4的倍數。"
+      },
+      {
+        "choice": "24 分鐘",
+        "truth": false,
+        "reason": "24較晚。"
+      }
+    ],
+    "commonMistake": "只把兩個週期相加。",
+    "concept": "同步時間是週期的 LCM。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "辨認雙週期同步。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "70e47db381b169db94f15093ca0ed4fd6cd12d23ef4e47677acf1310aef64e09"
+  },
+  {
+    "questionId": "u02-s007-v002",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "A 車每 10 分鐘一班，B 車每 15 分鐘一班，上午 7:00 同時發車。下一次同時發車是何時？",
+    "choices": [
+      "7:15",
+      "7:30",
+      "7:45",
+      "8:00"
+    ],
+    "answerIndex": 1,
+    "explanation": "依題意逐步處理：lcm(10,15)=30分鐘；7:00後30分鐘為7:30。所以答案是「7:30」。",
+    "steps": [
+      "lcm(10,15)=30分鐘",
+      "7:00後30分鐘為7:30"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "7:15",
+        "truth": false,
+        "reason": "15分鐘不是10的倍數。"
+      },
+      {
+        "choice": "7:30",
+        "truth": true,
+        "reason": "30分鐘後是7:30。"
+      },
+      {
+        "choice": "7:45",
+        "truth": false,
+        "reason": "45不是10的倍數。"
+      },
+      {
+        "choice": "8:00",
+        "truth": false,
+        "reason": "60分鐘不是最早。"
+      }
+    ],
+    "commonMistake": "直接取較大週期15分鐘。",
+    "concept": "求 LCM 後要換算成時刻。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "由週期求下一共同時刻。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "1ecf4fe750655461b0d8122003f08e749f83f6d102062b58fd5008cf7a6dc554"
+  },
+  {
+    "questionId": "u02-s007-v003",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "三盞燈分別每 3、4、6 秒閃一次，現在同時閃。最少幾秒後再同時閃？",
+    "choices": [
+      "6 秒",
+      "8 秒",
+      "12 秒",
+      "24 秒"
+    ],
+    "answerIndex": 2,
+    "explanation": "依題意逐步處理：lcm(3,4,6)=12；12是三者第一個共同倍數。所以答案是「12 秒」。",
+    "steps": [
+      "lcm(3,4,6)=12",
+      "12是三者第一個共同倍數"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6 秒",
+        "truth": false,
+        "reason": "6不是4的倍數。"
+      },
+      {
+        "choice": "8 秒",
+        "truth": false,
+        "reason": "8不是3或6的倍數。"
+      },
+      {
+        "choice": "12 秒",
+        "truth": true,
+        "reason": "12同時整除三週期。"
+      },
+      {
+        "choice": "24 秒",
+        "truth": false,
+        "reason": "24較晚。"
+      }
+    ],
+    "commonMistake": "只求其中兩個週期。",
+    "concept": "三事件同步需三數 LCM。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "辨認三週期同步。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "0dd2201f0638d16e5e5d3b0c00819938223c54c9be182b2909fcc5c4ccd47c84"
+  },
+  {
+    "questionId": "u02-s007-v004",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "甲每 8 天巡檢一次，乙每 12 天巡檢一次。今天共同巡檢後，48 天內（不含今天）會共同巡檢幾次？",
+    "choices": [
+      "1 次",
+      "3 次",
+      "4 次",
+      "2 次"
+    ],
+    "answerIndex": 3,
+    "explanation": "依題意逐步處理：共同週期lcm(8,12)=24天；48天內的共同日為第24、48天，共2次。所以答案是「2 次」。",
+    "steps": [
+      "共同週期lcm(8,12)=24天",
+      "48天內的共同日為第24、48天，共2次"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1 次",
+        "truth": false,
+        "reason": "只算第24天。"
+      },
+      {
+        "choice": "3 次",
+        "truth": false,
+        "reason": "多算一個不存在時刻。"
+      },
+      {
+        "choice": "4 次",
+        "truth": false,
+        "reason": "把每12天都算共同。"
+      },
+      {
+        "choice": "2 次",
+        "truth": true,
+        "reason": "第24與48天，共2次。"
+      }
+    ],
+    "commonMistake": "「48天內」是否包含第48天未判讀；此處題目明示48天內含第48天。",
+    "concept": "共同時刻是 LCM 的倍數，需依區間計數。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "計數區間內同步次數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "46487e906c736fcab34cc88f820c0e492920994128e61317716c9b7320eb0601"
+  },
+  {
+    "questionId": "u02-s007-v005",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "兩個齒輪標記分別每轉 18 齒、24 齒回到起點。至少經過幾齒位置後兩標記再同時回起點？",
+    "choices": [
+      "72 齒",
+      "48 齒",
+      "96 齒",
+      "144 齒"
+    ],
+    "answerIndex": 0,
+    "explanation": "依題意逐步處理：lcm(18,24)=72；72÷18=4、72÷24=3。所以答案是「72 齒」。",
+    "steps": [
+      "lcm(18,24)=72",
+      "72÷18=4、72÷24=3"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "72 齒",
+        "truth": true,
+        "reason": "72同時為兩週期倍數且最小。"
+      },
+      {
+        "choice": "48 齒",
+        "truth": false,
+        "reason": "48不是18的倍數。"
+      },
+      {
+        "choice": "96 齒",
+        "truth": false,
+        "reason": "96不是18的倍數。"
+      },
+      {
+        "choice": "144 齒",
+        "truth": false,
+        "reason": "144較晚。"
+      }
+    ],
+    "commonMistake": "把齒數相乘而未約去共同因數。",
+    "concept": "機械週期重合仍使用 LCM。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "求旋轉週期重合。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "3c750b2d4eab8b5a34e042be58fcd4d7b05a2c46f182e8fe97c9362d422b0776"
+  },
+  {
+    "questionId": "u02-s007-v006",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "A 活動每 14 天舉行，B 活動每 21 天舉行。兩活動今天同日舉行，下一次同日後，A 共舉行幾次（含下一次同日那次，不含今天）？",
+    "choices": [
+      "2 次",
+      "3 次",
+      "4 次",
+      "6 次"
+    ],
+    "answerIndex": 1,
+    "explanation": "依題意逐步處理：共同週期lcm(14,21)=42天；42÷14=3，所以A舉行3次。所以答案是「3 次」。",
+    "steps": [
+      "共同週期lcm(14,21)=42天",
+      "42÷14=3，所以A舉行3次"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2 次",
+        "truth": false,
+        "reason": "只算42前的兩次。"
+      },
+      {
+        "choice": "3 次",
+        "truth": true,
+        "reason": "第14、28、42天共3次。"
+      },
+      {
+        "choice": "4 次",
+        "truth": false,
+        "reason": "4次需56天。"
+      },
+      {
+        "choice": "6 次",
+        "truth": false,
+        "reason": "6次需84天。"
+      }
+    ],
+    "commonMistake": "只回答同步天數，沒有再求 A 的次數。",
+    "concept": "共同週期除以單一週期可求期間發生次數。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "由同步週期求事件次數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "286dc29dae201c1986a4cb67281df5b480b99fcf794463aee48db8979cc6dda8"
+  },
+  {
+    "questionId": "u02-s007-v007",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "甲機器每 12 分鐘停機檢查，乙每 18 分鐘停機檢查。上午 9:00 同時檢查；到中午 12:00 前（不含12:00），再同時檢查幾次？",
+    "choices": [
+      "3 次",
+      "5 次",
+      "4 次",
+      "6 次"
+    ],
+    "answerIndex": 2,
+    "explanation": "依題意逐步處理：共同週期lcm(12,18)=36分鐘；9:36、10:12、10:48、11:24，共4次。所以答案是「4 次」。",
+    "steps": [
+      "共同週期lcm(12,18)=36分鐘",
+      "9:36、10:12、10:48、11:24，共4次"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3 次",
+        "truth": false,
+        "reason": "漏算一個時刻。"
+      },
+      {
+        "choice": "5 次",
+        "truth": false,
+        "reason": "多算12:00或非共同時刻。"
+      },
+      {
+        "choice": "4 次",
+        "truth": true,
+        "reason": "四個時刻正確。"
+      },
+      {
+        "choice": "6 次",
+        "truth": false,
+        "reason": "把每30分鐘估算。"
+      }
+    ],
+    "commonMistake": "沒有精確處理起點與終點是否包含。",
+    "concept": "同步時刻依共同週期逐一列出。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "區間同步計數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "78d09735e435cbda536addc20d89b1d34f43ed80dc7ddb86448d947ce945f8c2"
+  },
+  {
+    "questionId": "u02-s007-v008",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "三項維護週期為 20、30、45 天，今天同時維護。最少幾天後再同時維護？",
+    "choices": [
+      "90 天",
+      "120 天",
+      "150 天",
+      "180 天"
+    ],
+    "answerIndex": 3,
+    "explanation": "依題意逐步處理：20=2²×5，30=2×3×5，45=3²×5；LCM=2²×3²×5=180。所以答案是「180 天」。",
+    "steps": [
+      "20=2²×5，30=2×3×5，45=3²×5",
+      "LCM=2²×3²×5=180"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "90 天",
+        "truth": false,
+        "reason": "90不是20的倍數。"
+      },
+      {
+        "choice": "120 天",
+        "truth": false,
+        "reason": "120不是45的倍數。"
+      },
+      {
+        "choice": "150 天",
+        "truth": false,
+        "reason": "150不是20或45共同倍數。"
+      },
+      {
+        "choice": "180 天",
+        "truth": true,
+        "reason": "180同時符合。"
+      }
+    ],
+    "commonMistake": "只算兩個週期的 LCM。",
+    "concept": "多週期取所有質因數最大指數。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "求三週期大型同步。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "a7f74ef24a2540bf64e9880acbf9689d501194ff7653f9b80b6b3c7afd0754d7"
+  },
+  {
+    "questionId": "u02-s007-v009",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "A 每 16 分鐘一次，B 每 24 分鐘一次。兩者同時開始後，在第 240 分鐘以前（含240）共有幾次同時發生？不含起點。",
+    "choices": [
+      "5 次",
+      "4 次",
+      "6 次",
+      "8 次"
+    ],
+    "answerIndex": 0,
+    "explanation": "依題意逐步處理：共同週期lcm(16,24)=48；48、96、144、192、240，共5次。所以答案是「5 次」。",
+    "steps": [
+      "共同週期lcm(16,24)=48",
+      "48、96、144、192、240，共5次"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "5 次",
+        "truth": true,
+        "reason": "共有5次。"
+      },
+      {
+        "choice": "4 次",
+        "truth": false,
+        "reason": "漏算240會得4次。"
+      },
+      {
+        "choice": "6 次",
+        "truth": false,
+        "reason": "把每40分鐘估算會錯。"
+      },
+      {
+        "choice": "8 次",
+        "truth": false,
+        "reason": "8次不是48的倍數個數。"
+      }
+    ],
+    "commonMistake": "區間端點與起點是否計入未區分。",
+    "concept": "用 floor(上限÷LCM) 可計數，並依題意處理起點。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "精確計數同步事件。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "e803dd621bfda3330b2960895bee84e1971bb84bc8a2b42da87e10d2c794d91c"
+  },
+  {
+    "questionId": "u02-s007-v010",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "藥物 A 每 6 小時服一次，B 每 8 小時服一次。早上 6:00 同時服用，下一次同時服用是何時？",
+    "choices": [
+      "當晚 8:00",
+      "隔天早上 6:00",
+      "隔天中午 12:00",
+      "當晚 10:00"
+    ],
+    "answerIndex": 1,
+    "explanation": "依題意逐步處理：lcm(6,8)=24小時；早上6:00後24小時為隔天早上6:00。所以答案是「隔天早上 6:00」。",
+    "steps": [
+      "lcm(6,8)=24小時",
+      "早上6:00後24小時為隔天早上6:00"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "當晚 8:00",
+        "truth": false,
+        "reason": "14小時後並非共同週期。"
+      },
+      {
+        "choice": "隔天早上 6:00",
+        "truth": true,
+        "reason": "24小時後正確。"
+      },
+      {
+        "choice": "隔天中午 12:00",
+        "truth": false,
+        "reason": "30小時不是最早。"
+      },
+      {
+        "choice": "當晚 10:00",
+        "truth": false,
+        "reason": "16小時只符合8小時週期。"
+      }
+    ],
+    "commonMistake": "把6+8=14小時。",
+    "concept": "用藥同步需以小時週期 LCM 換算時刻。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "literacy"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "醫療時程同步。",
+    "literacyContextNecessity": "服藥間隔、共同起始時刻及下一次要求共同決定24小時後的實際時刻。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "5527c773b494c6c13154d66a3bc7b4367e58f44e1cdbc17586c4ef30b2fe3031"
+  },
+  {
+    "questionId": "u02-s007-v011",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "自動灑水器 A 每 9 分鐘啟動，B 每 12 分鐘啟動。下午 2:00 同時啟動；下午 3:30 前（含3:30）會再同時啟動幾次？",
+    "choices": [
+      "1 次",
+      "3 次",
+      "2 次",
+      "4 次"
+    ],
+    "answerIndex": 2,
+    "explanation": "依題意逐步處理：共同週期lcm(9,12)=36分鐘；2:36、3:12 兩次，3:48已超過。所以答案是「2 次」。",
+    "steps": [
+      "共同週期lcm(9,12)=36分鐘",
+      "2:36、3:12 兩次，3:48已超過"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1 次",
+        "truth": false,
+        "reason": "只算第一次。"
+      },
+      {
+        "choice": "3 次",
+        "truth": false,
+        "reason": "多算3:48。"
+      },
+      {
+        "choice": "2 次",
+        "truth": true,
+        "reason": "2:36與3:12，共2次。"
+      },
+      {
+        "choice": "4 次",
+        "truth": false,
+        "reason": "把每18分鐘算共同。"
+      }
+    ],
+    "commonMistake": "把90分鐘除以較短週期。",
+    "concept": "先求共同週期，再列實際時刻。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "literacy"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "時段內同步計數。",
+    "literacyContextNecessity": "起始時刻、90分鐘區間與兩個灑水週期都參與判斷，不能化成單一無情境算式。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "d9f2b8a532c0c72170628fc9c615498be152421cd4c3f2b658408c6c79d302dc"
+  },
+  {
+    "questionId": "u02-s007-v012",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "展覽有三段影片，每段分別每 12、15、20 分鐘從頭重播。上午 10:00 同時開始，下一次同時從頭播放是何時？",
+    "choices": [
+      "10:30",
+      "10:40",
+      "10:45",
+      "11:00"
+    ],
+    "answerIndex": 3,
+    "explanation": "依題意逐步處理：lcm(12,15,20)=60分鐘；10:00後60分鐘是11:00。所以答案是「11:00」。",
+    "steps": [
+      "lcm(12,15,20)=60分鐘",
+      "10:00後60分鐘是11:00"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "10:30",
+        "truth": false,
+        "reason": "30不是12、20共同倍數。"
+      },
+      {
+        "choice": "10:40",
+        "truth": false,
+        "reason": "40不是12、15共同倍數。"
+      },
+      {
+        "choice": "10:45",
+        "truth": false,
+        "reason": "45不是12、20共同倍數。"
+      },
+      {
+        "choice": "11:00",
+        "truth": true,
+        "reason": "60分鐘後11:00。"
+      }
+    ],
+    "commonMistake": "只看兩個週期或取最大週期。",
+    "concept": "三段重播同步使用三數 LCM。",
+    "tags": [
+      "數與量",
+      "最小公倍數應用",
+      "literacy"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-gcd-application"
+    ],
+    "authoringIntent": "影音排程同步。",
+    "literacyContextNecessity": "三段重播週期與共同起始時間共同決定一小時後的鐘點。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "7a7d623a144e37fffb99479a3de2266685f0e167acdd4b7cad0029e36b29b049"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u02-s007-cr001",
+    "unitId": "u02",
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "三種裝置分別每 12、18、30 分鐘檢查一次，上午 8:00 同時檢查。求下一次同時檢查的時刻。",
+    "requiredWork": [
+      "求三數LCM。",
+      "把分鐘加回8:00。"
+    ],
+    "fullCreditSolution": [
+      "12=2²×3，18=2×3²，30=2×3×5。",
+      "LCM=2²×3²×5=180分鐘。",
+      "8:00後180分鐘為11:00。"
+    ],
+    "alternativeSolutions": [
+      "可列倍數交集，但須證明最早。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "LCM=180與11:00均正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "共同間隔正確但時刻換算小錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "找到共同倍數但非最小。"
+      },
+      {
+        "score": 0,
+        "criteria": "只取最大週期30分鐘。"
+      }
+    ],
+    "scoringNotes": [
+      "不計8:00本身，因為問下一次。"
+    ],
+    "commonErrors": [
+      "答8:30。",
+      "180分鐘換算成1小時80分。"
+    ],
+    "independentReview": {
+      "derivedResult": "上午11:00。",
+      "ambiguity": "題意與資料足夠，答案唯一。",
+      "decision": "pass"
+    },
+    "contentSha256": "ef9bb326c0df9637d72cb9d2d9f9aad9b99b0eb4b805e59827119454cea692a2"
+  },
+  {
+    "questionId": "u02-s007-cr002",
+    "unitId": "u02",
+    "topicId": "u02-factors-apps",
+    "skillId": "fraction-lcm-application",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "A燈每 16 秒閃一次，B燈每 24 秒閃一次。兩燈在第0秒同時閃。第 1 秒到第 300 秒之間（含300）同時閃幾次？列出時刻。",
+    "requiredWork": [
+      "求LCM。",
+      "列出不超過300的正倍數。",
+      "不計第0秒。"
+    ],
+    "fullCreditSolution": [
+      "lcm(16,24)=48秒。",
+      "正倍數為48、96、144、192、240、288。",
+      "共6次；336超過300。"
+    ],
+    "alternativeSolutions": [
+      "可用⌊300/48⌋=6，再列出驗證。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "六個時刻與6次完整。"
+      },
+      {
+        "score": 2,
+        "criteria": "次數正確但漏列一個時刻。"
+      },
+      {
+        "score": 1,
+        "criteria": "LCM正確但區間計數錯。"
+      },
+      {
+        "score": 0,
+        "criteria": "以16或24直接計數。"
+      }
+    ],
+    "scoringNotes": [
+      "300不是48倍數，不額外計入。"
+    ],
+    "commonErrors": [
+      "把0秒算一次。",
+      "把300秒算同步。"
+    ],
+    "independentReview": {
+      "derivedResult": "48、96、144、192、240、288秒，共6次。",
+      "ambiguity": "題意與資料足夠，答案唯一。",
+      "decision": "pass"
+    },
+    "contentSha256": "3d5cb739524c43b475cbb25b0c974e41b0cd68cd751880dc70eb388bfbf2d599"
+  }
+];
+
+export const DRAWING_SPECS = [];

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Human-authored drawing specification",
+  "type": "object",
+  "required": [
+    "figureId",
+    "unitId",
+    "skillId",
+    "altText",
+    "drawingSpec",
+    "svgPath",
+    "svgAssertions",
+    "figureReview",
+    "contentSha256"
+  ],
+  "properties": {
+    "figureId": {
+      "type": "string"
+    },
+    "altText": {
+      "type": "string",
+      "minLength": 20
+    },
+    "drawingSpec": {
+      "type": "object",
+      "minProperties": 6
+    },
+    "svgAssertions": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "figureReview": {
+      "type": "object"
+    },
+    "contentSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

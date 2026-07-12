@@ -1,0 +1,236 @@
+{
+  "lectureId": "u02-s015-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-fraction-literacy",
+  "skillId": "fraction-literacy-context",
+  "title": "分數與百分率和週期的綜合情境應用：先辨識每筆資料的基準，再建立多步模型",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能在同題組合分率、百分率、GCD/LCM與費用模型。",
+    "能辨認連續比例中基準是否改變。",
+    "能比較方案總成本與實際完成量。",
+    "能解釋每一步的單位與合理性。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-base-quantity",
+      "requiredLevel": "能辨認基準量、比較量與分率，並反求整體。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "模型",
+      "definition": "把情境關係寫成數學式。"
+    },
+    {
+      "term": "固定費用",
+      "definition": "不隨次數變化的費用。"
+    },
+    {
+      "term": "變動費用",
+      "definition": "隨次數或數量變化的費用。"
+    },
+    {
+      "term": "基準轉換",
+      "definition": "後一步百分率改以新的量為100%。"
+    },
+    {
+      "term": "時間軸",
+      "definition": "依共同起點標示週期事件。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "總成本=固定費用+單價×次數",
+      "meaning": "線性費用模型。"
+    }
+  ],
+  "conceptNarrative": [
+    "綜合題的難點通常不是單一運算，而是決定每一步該用哪個基準。",
+    "『剩餘的1/3』與『原量的1/3』不同：前者先更新基準。",
+    "方案比較需把固定費用與按次費用都算成總成本。",
+    "週期等待題先由共同起點列同步時刻，再與到場時刻相減。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "連續比例",
+      "statement": "每一步分率作用在題目指定的當時基準量。"
+    },
+    {
+      "name": "方案比較",
+      "statement": "在同一使用條件下比較各方案總量。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "剩餘量=初始量×各階段保留倍率乘積",
+      "conditions": [
+        "各階段明確以當前剩餘為基準"
+      ],
+      "meaning": "連續消耗。"
+    },
+    {
+      "formula": "共同間隔=lcm(各週期)",
+      "conditions": [
+        "存在共同起點"
+      ],
+      "meaning": "同步模型。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能看到多個分數就全部相加。",
+    "不能把不同基準的百分率當同一比例。",
+    "費用方案需在同一次數下比較。",
+    "週期事件若起點不同，不能只求LCM。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "整理資料表：量、單位、基準。",
+      "check": "每個百分率以誰為整體？"
+    },
+    {
+      "step": 2,
+      "instruction": "畫運算流程或時間軸。",
+      "check": "先後順序為何？"
+    },
+    {
+      "step": 3,
+      "instruction": "逐步列式並寫單位。",
+      "check": "乘、除、加、減的理由？"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查中間量範圍。",
+      "check": "比例是否在合理區間？"
+    },
+    {
+      "step": 5,
+      "instruction": "比較或代回。",
+      "check": "最終答案是否回應問句？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "貨物先出2/5，再出剩餘1/4。",
+      "solutionSteps": [
+        "第一步剩3/5。",
+        "第二步保留3/4，合計9/20。"
+      ],
+      "answer": "剩原量9/20。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "會員方案固定1000元，每次60元；單次120元，使用20次。",
+      "solutionSteps": [
+        "會員2200元。",
+        "單次2400元。"
+      ],
+      "answer": "會員省200元。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "男女比5:7，男生完成率80%、女生75%。",
+      "solutionSteps": [
+        "完成量比5×0.8:7×0.75。",
+        "化簡4:5.25=16:21。"
+      ],
+      "answer": "16:21。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "每18、30分鐘同步，9:00起；10:10到。",
+      "solutionSteps": [
+        "LCM=90分鐘，同步10:30。",
+        "等待20分鐘。"
+      ],
+      "answer": "20分鐘。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "所有比例直接相加。",
+      "why": "忽略『其中』『剩餘』改變基準。",
+      "correction": "寫出每一步作用物件。"
+    },
+    {
+      "mistake": "只比較單價。",
+      "why": "漏掉固定費用。",
+      "correction": "計算完整總成本。"
+    },
+    {
+      "mistake": "完成率直接比較實際完成量。",
+      "why": "總量不同。",
+      "correction": "總量×完成率。"
+    },
+    {
+      "mistake": "從到場時刻重新起算週期。",
+      "why": "忽略共同起點。",
+      "correction": "先列全域性同步時刻。"
+    },
+    {
+      "mistake": "中間結果無單位。",
+      "why": "無法判斷加減是否合法。",
+      "correction": "每步保留單位。"
+    },
+    {
+      "mistake": "得到答案未檢查範圍。",
+      "why": "比例可能超過1或人數非整數。",
+      "correction": "做合理性檢驗。"
+    }
+  ],
+  "selfCheck": [
+    "每個比例的基準量標出了嗎？",
+    "先後順序是否明確？",
+    "不同單位是否轉換？",
+    "方案是否在相同條件比較？",
+    "結果是否符合人數、容量、時間或金額範圍？"
+  ],
+  "summary": [
+    "綜合題先建模再運算。",
+    "基準轉換是連續比例核心。",
+    "方案比較要算總成本。",
+    "週期題要以共同起點建立時間軸。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-base-quantity，需能完成其基本判斷與計算。",
+    "next": [
+      "一元一次方程式將把未知量系統化。",
+      "後續統計與函式題會更常使用資料表與模型。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s015-v001",
+      "u02-s015-v002",
+      "u02-s015-v003",
+      "u02-s015-v004",
+      "u02-s015-v005",
+      "u02-s015-v006",
+      "u02-s015-v007",
+      "u02-s015-v008",
+      "u02-s015-v009",
+      "u02-s015-v010",
+      "u02-s015-v011",
+      "u02-s015-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s015-cr001",
+      "u02-s015-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四類模型分別以乘回、成本差、比例化簡與時間軸複核；240戶、方案差額、2/3比例和10:12共同時刻均獨立重算。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "49b87ae8e2445a9d8a5d7e312e80ba1cda1b89ca696581d362c108722166f2c2"
+}

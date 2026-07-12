@@ -1,0 +1,1100 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u02-s012-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-fraction-ops",
+  "skillId": "fraction-complex-fraction-basic",
+  "title": "繁分數基本化簡：把主分數線讀成除法，分層處理上下運算",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認繁分數的主分數線。",
+    "能把繁分數改寫成分數除法。",
+    "能先化簡分子與分母再做最後除法。",
+    "能處理一層或兩層的基本繁分數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-mixed-number",
+      "requiredLevel": "能把帶分數轉假分數並完成分數的乘法和除法。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "繁分數",
+      "definition": "分子或分母本身含分數的分數式。"
+    },
+    {
+      "term": "主分數線",
+      "definition": "最外層、分隔整個分子與分母的分數線。"
+    },
+    {
+      "term": "分子區",
+      "definition": "主分數線上方的完整算式。"
+    },
+    {
+      "term": "分母區",
+      "definition": "主分數線下方的完整算式。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(a/b)/(c/d)",
+      "meaning": "表示a/b÷c/d。"
+    }
+  ],
+  "conceptNarrative": [
+    "主分數線代表上方整體除以下方整體。",
+    "若上下含加減，先各自化簡；最後才把主分數線改成乘倒數。",
+    "可使用同乘上下各分母最小公倍數的方法清除小分母，但本節以基本乘倒數為主。",
+    "分母區最後結果不得為0。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "繁分數",
+      "statement": "分子或分母至少一方含分數的分數。"
+    },
+    {
+      "name": "主除法",
+      "statement": "整個分子值除以整個分母值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(a/b)/(c/d)=ad/bc",
+      "conditions": [
+        "b、c、d非0"
+      ],
+      "meaning": "基本繁分數化簡。"
+    }
+  ],
+  "nonApplicableCases": [
+    "分母區等於0時原式無定義。",
+    "不能把所有分子相乘、所有分母相乘而忽略主除法。",
+    "括號層級不清時必須重寫。",
+    "超出基本多層代數繁分式不在本節範圍。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找最長或最外層主分數線。",
+      "check": "哪些項屬於完整分子與分母？"
+    },
+    {
+      "step": 2,
+      "instruction": "分別算上方與下方。",
+      "check": "括號是否先完成？"
+    },
+    {
+      "step": 3,
+      "instruction": "確認下方不為0。",
+      "check": "除數可否取倒數？"
+    },
+    {
+      "step": 4,
+      "instruction": "改寫成乘倒數並約分。",
+      "check": "倒的是整個分母值。"
+    },
+    {
+      "step": 5,
+      "instruction": "估值或乘回驗算。",
+      "check": "結果大小方向合理嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "(2/5)/(3/10)。",
+      "solutionSteps": [
+        "改寫2/5÷3/10。",
+        "乘10/3並約分。"
+      ],
+      "answer": "4/3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "4/(5/6)。",
+      "solutionSteps": [
+        "4寫成4/1。",
+        "4×6/5。"
+      ],
+      "answer": "24/5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "(1/2+1/3)/(7/6)。",
+      "solutionSteps": [
+        "上方=5/6。",
+        "5/6÷7/6=5/7。"
+      ],
+      "answer": "5/7。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "(3/4)/(1-1/4)。",
+      "solutionSteps": [
+        "下方=3/4。",
+        "同一非零數相除。"
+      ],
+      "answer": "1。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把主分數線當乘號。",
+      "why": "未讀出除法。",
+      "correction": "改寫成上方÷下方。"
+    },
+    {
+      "mistake": "只把分母區其中一項取倒數。",
+      "why": "未把下方視為整體。",
+      "correction": "先算完整分母值。"
+    },
+    {
+      "mistake": "上下含加減卻直接交叉乘。",
+      "why": "省略括號內運算。",
+      "correction": "分別化簡上下。"
+    },
+    {
+      "mistake": "分母區算成0仍繼續。",
+      "why": "忽略除以0。",
+      "correction": "先做定義域檢查。"
+    },
+    {
+      "mistake": "多層繁分數由外向內亂拆。",
+      "why": "未按括號層級。",
+      "correction": "先算最內層或明確括號。"
+    },
+    {
+      "mistake": "結果未約分或未估值。",
+      "why": "算術錯未發現。",
+      "correction": "約分並乘回除數。"
+    }
+  ],
+  "selfCheck": [
+    "主分數線是哪一條？",
+    "分子與分母是否各自化簡？",
+    "分母值是否非0？",
+    "是否只倒除數？",
+    "結果乘回分母是否等於分子？"
+  ],
+  "summary": [
+    "繁分數主線代表除法。",
+    "上下各自先化簡。",
+    "最後除以分母值，即乘其倒數。",
+    "分母區不可為0。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-mixed-number，需能完成其基本判斷與計算。",
+    "next": [
+      "百分率可以寫成分數後參與繁分數。",
+      "基準量反求本質上是部分量除以分率。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s012-v001",
+      "u02-s012-v002",
+      "u02-s012-v003",
+      "u02-s012-v004",
+      "u02-s012-v005",
+      "u02-s012-v006",
+      "u02-s012-v007",
+      "u02-s012-v008",
+      "u02-s012-v009",
+      "u02-s012-v010",
+      "u02-s012-v011",
+      "u02-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s012-cr001",
+      "u02-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個例題均先獨立計算上下值，再以乘回驗證商；分母非0條件逐題確認，多層範圍限制在國中基本化簡。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "1b5c2db95a9e25020beb29e2637ddf6ccf94bc8779278b9c31fd8b823d2a73f8"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u02-s012-v001",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(1/2)/(3/4) 等於多少？",
+    "choices": [
+      "2/3",
+      "3/8",
+      "3/2",
+      "6/4"
+    ],
+    "answerIndex": 0,
+    "explanation": "依題意逐步處理：(1/2)÷(3/4)=(1/2)×(4/3)；=2/3。所以答案是「2/3」。",
+    "steps": [
+      "(1/2)÷(3/4)=(1/2)×(4/3)",
+      "=2/3"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2/3",
+        "truth": true,
+        "reason": "乘倒數得2/3。"
+      },
+      {
+        "choice": "3/8",
+        "truth": false,
+        "reason": "直接分子相乘。"
+      },
+      {
+        "choice": "3/2",
+        "truth": false,
+        "reason": "倒數方向相反。"
+      },
+      {
+        "choice": "6/4",
+        "truth": false,
+        "reason": "未約分且數值錯。"
+      }
+    ],
+    "commonMistake": "把大分數線看成乘法。",
+    "concept": "繁分數的主分數線表示除法。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "基本繁分數化簡。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "612e02a8c668c660e115c8199c0006f0c3d3040f731a79d78e45e161034f335a"
+  },
+  {
+    "questionId": "u02-s012-v002",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(5/6)/(10/9) 等於多少？",
+    "choices": [
+      "25/27",
+      "3/4",
+      "4/3",
+      "50/54"
+    ],
+    "answerIndex": 1,
+    "explanation": "依題意逐步處理：5/6÷10/9=5/6×9/10；=45/60=3/4。所以答案是「3/4」。",
+    "steps": [
+      "5/6÷10/9=5/6×9/10",
+      "=45/60=3/4"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "25/27",
+        "truth": false,
+        "reason": "未取倒數。"
+      },
+      {
+        "choice": "3/4",
+        "truth": true,
+        "reason": "3/4正確。"
+      },
+      {
+        "choice": "4/3",
+        "truth": false,
+        "reason": "倒數方向錯。"
+      },
+      {
+        "choice": "50/54",
+        "truth": false,
+        "reason": "直接上下分子分母相乘。"
+      }
+    ],
+    "commonMistake": "分母分數沒有取倒數。",
+    "concept": "除以分數等於乘倒數。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "兩個分數形成的繁分數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "f39a6337d950770f499a7152f5b7b7378c7e038680a43b180254f47ccd215906"
+  },
+  {
+    "questionId": "u02-s012-v003",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(3/5)/2 等於多少？",
+    "choices": [
+      "6/5",
+      "3/3",
+      "3/10",
+      "2/5"
+    ],
+    "answerIndex": 2,
+    "explanation": "依題意逐步處理：2可寫成2/1；3/5÷2/1=3/5×1/2=3/10。所以答案是「3/10」。",
+    "steps": [
+      "2可寫成2/1",
+      "3/5÷2/1=3/5×1/2=3/10"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6/5",
+        "truth": false,
+        "reason": "把除2當乘2。"
+      },
+      {
+        "choice": "3/3",
+        "truth": false,
+        "reason": "分母相加錯。"
+      },
+      {
+        "choice": "3/10",
+        "truth": true,
+        "reason": "3/10正確。"
+      },
+      {
+        "choice": "2/5",
+        "truth": false,
+        "reason": "沒有依除法計算。"
+      }
+    ],
+    "commonMistake": "整數在繁分數分母時未改寫成分數。",
+    "concept": "除以整數等於乘其倒數。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "分母為整數的繁分數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "a359e15131d56d5888f37797020ad0010c44804c9668890255ad85bb64f5bd53"
+  },
+  {
+    "questionId": "u02-s012-v004",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "3/(4/5) 等於多少？",
+    "choices": [
+      "3/5",
+      "12/5",
+      "5/12",
+      "15/4"
+    ],
+    "answerIndex": 3,
+    "explanation": "依題意逐步處理：3=3/1；3÷4/5=3×5/4=15/4。所以答案是「15/4」。",
+    "steps": [
+      "3=3/1",
+      "3÷4/5=3×5/4=15/4"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3/5",
+        "truth": false,
+        "reason": "只乘分子。"
+      },
+      {
+        "choice": "12/5",
+        "truth": false,
+        "reason": "把除法當乘法。"
+      },
+      {
+        "choice": "5/12",
+        "truth": false,
+        "reason": "取錯倒數。"
+      },
+      {
+        "choice": "15/4",
+        "truth": true,
+        "reason": "15/4正確。"
+      }
+    ],
+    "commonMistake": "把3放入分母或未取倒數。",
+    "concept": "整數除以分數仍使用乘倒數。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "分子為整數的繁分數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "4a1945062d3649fbb781d4baec5752e9d80f6bdde48255f5424171d49d0cc4d2"
+  },
+  {
+    "questionId": "u02-s012-v005",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(2/3+1/6)/(5/4) 等於多少？",
+    "choices": [
+      "2/3",
+      "5/6",
+      "3/5",
+      "4/5"
+    ],
+    "answerIndex": 0,
+    "explanation": "依題意逐步處理：上方2/3+1/6=5/6；5/6÷5/4=5/6×4/5=2/3。所以答案是「2/3」。",
+    "steps": [
+      "上方2/3+1/6=5/6",
+      "5/6÷5/4=5/6×4/5=2/3"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2/3",
+        "truth": true,
+        "reason": "2/3正確。"
+      },
+      {
+        "choice": "5/6",
+        "truth": false,
+        "reason": "只算上方。"
+      },
+      {
+        "choice": "3/5",
+        "truth": false,
+        "reason": "倒數或約分錯。"
+      },
+      {
+        "choice": "4/5",
+        "truth": false,
+        "reason": "把5/6乘5/4。"
+      }
+    ],
+    "commonMistake": "沒有先算主分數線上方的加法。",
+    "concept": "先化簡分子、分母，再做最後除法。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "含加法的繁分數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "755ae6ee1b3884bd738d645fd964908f8b6d626cf455b349ac2945f041c5b453"
+  },
+  {
+    "questionId": "u02-s012-v006",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(7/8)/(1-3/8) 等於多少？",
+    "choices": [
+      "5/7",
+      "7/5",
+      "7/8",
+      "1"
+    ],
+    "answerIndex": 1,
+    "explanation": "依題意逐步處理：下方1-3/8=5/8；7/8÷5/8=7/5。所以答案是「7/5」。",
+    "steps": [
+      "下方1-3/8=5/8",
+      "7/8÷5/8=7/5"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "5/7",
+        "truth": false,
+        "reason": "上下顛倒。"
+      },
+      {
+        "choice": "7/5",
+        "truth": true,
+        "reason": "7/5正確。"
+      },
+      {
+        "choice": "7/8",
+        "truth": false,
+        "reason": "只抄分子。"
+      },
+      {
+        "choice": "1",
+        "truth": false,
+        "reason": "把相同分母誤認為比值1。"
+      }
+    ],
+    "commonMistake": "分母中的括號未先計算。",
+    "concept": "主分數線上下各自先化簡。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "分母含減法的繁分數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "2f55142e600244be365aa0c8f4bd2d5664c6fb8c8433d7d43b3ed774533628f5"
+  },
+  {
+    "questionId": "u02-s012-v007",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "[(1/2)/(3/4)]÷(5/6) 等於多少？",
+    "choices": [
+      "2/5",
+      "5/9",
+      "4/5",
+      "9/5"
+    ],
+    "answerIndex": 2,
+    "explanation": "依題意逐步處理：內層1/2÷3/4=2/3；2/3÷5/6=2/3×6/5=4/5。所以答案是「4/5」。",
+    "steps": [
+      "內層1/2÷3/4=2/3",
+      "2/3÷5/6=2/3×6/5=4/5"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2/5",
+        "truth": false,
+        "reason": "漏乘倒數。"
+      },
+      {
+        "choice": "5/9",
+        "truth": false,
+        "reason": "倒數或約分錯。"
+      },
+      {
+        "choice": "4/5",
+        "truth": true,
+        "reason": "4/5正確。"
+      },
+      {
+        "choice": "9/5",
+        "truth": false,
+        "reason": "是錯誤倒數。"
+      }
+    ],
+    "commonMistake": "多層除法沒有由內而外。",
+    "concept": "巢狀繁分數按括號層級處理。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "兩層繁分數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "fa3b85d4acd9381f0bb693a6f50df5525d371b18981aa81931fda42fd1b5c4bf"
+  },
+  {
+    "questionId": "u02-s012-v008",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(3/4-1/6)/(2/3+1/9) 等於多少？",
+    "choices": [
+      "7/12",
+      "7/9",
+      "4/3",
+      "3/4"
+    ],
+    "answerIndex": 3,
+    "explanation": "依題意逐步處理：上方=7/12；下方=7/9；7/12÷7/9=3/4。所以答案是「3/4」。",
+    "steps": [
+      "上方=7/12",
+      "下方=7/9；7/12÷7/9=3/4"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "7/12",
+        "truth": false,
+        "reason": "只算上方。"
+      },
+      {
+        "choice": "7/9",
+        "truth": false,
+        "reason": "只算下方。"
+      },
+      {
+        "choice": "4/3",
+        "truth": false,
+        "reason": "結果倒數。"
+      },
+      {
+        "choice": "3/4",
+        "truth": true,
+        "reason": "3/4正確。"
+      }
+    ],
+    "commonMistake": "上下各自通分後，最後除法忘記取倒數。",
+    "concept": "先分別化簡上下，再約掉共同因子。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "上下皆含運算的繁分數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "0ca1099013cd5b8232d3d8d030cf50e27005102a7344941542bea1cc5b7ea113"
+  },
+  {
+    "questionId": "u02-s012-v009",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 x=(a/b)/(c/d)，且 a,b,c,d 均非 0，則 x 等於何者？",
+    "choices": [
+      "ad/(bc)",
+      "ac/(bd)",
+      "bd/(ac)",
+      "bc/(ad)"
+    ],
+    "answerIndex": 0,
+    "explanation": "依題意逐步處理：a/b÷c/d=a/b×d/c；=ad/(bc)。所以答案是「ad/(bc)」。",
+    "steps": [
+      "a/b÷c/d=a/b×d/c",
+      "=ad/(bc)"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "ad/(bc)",
+        "truth": true,
+        "reason": "乘以倒數後得ad/bc。"
+      },
+      {
+        "choice": "ac/(bd)",
+        "truth": false,
+        "reason": "這是直接相乘。"
+      },
+      {
+        "choice": "bd/(ac)",
+        "truth": false,
+        "reason": "是正確結果的倒數。"
+      },
+      {
+        "choice": "bc/(ad)",
+        "truth": false,
+        "reason": "配對錯誤。"
+      }
+    ],
+    "commonMistake": "記成分子對分子、分母對分母相除。",
+    "concept": "繁分數一般式等於外項乘外項、內項乘內項的比。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "符號化繁分數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "50a590e500a9734c9e858e679b417f4ee6800297344018f73c15ea0afd124cfa"
+  },
+  {
+    "questionId": "u02-s012-v010",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "濃縮液配方要求原液 3/5 公升平均分成每份 3/20 公升，可分幾份？",
+    "choices": [
+      "3 份",
+      "4 份",
+      "5 份",
+      "6 份"
+    ],
+    "answerIndex": 1,
+    "explanation": "依題意逐步處理：份數=(3/5)/(3/20)；=3/5×20/3=4。所以答案是「4 份」。",
+    "steps": [
+      "份數=(3/5)/(3/20)",
+      "=3/5×20/3=4"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3 份",
+        "truth": false,
+        "reason": "3是原液分子。"
+      },
+      {
+        "choice": "4 份",
+        "truth": true,
+        "reason": "4份正確。"
+      },
+      {
+        "choice": "5 份",
+        "truth": false,
+        "reason": "5是分母誤讀。"
+      },
+      {
+        "choice": "6 份",
+        "truth": false,
+        "reason": "(3/5)÷(3/20)=4，不是6，因此6份不符總量。"
+      }
+    ],
+    "commonMistake": "把總量與每份量相乘。",
+    "concept": "份數=總量÷每份量，形式即繁分數。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "literacy"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "用繁分數求份數。",
+    "literacyContextNecessity": "總原液量與每份容量共同形成除法，份數不能由任一資料單獨決定。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "52bc4d3563098fca1c4448fff572fcc3a10764010b341708259997ded80d9453"
+  },
+  {
+    "questionId": "u02-s012-v011",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某測試中，完成測試的樣本佔全部樣本的 7/8；完成者中有 2/3 達到優良。達到優良者佔全部樣本的比例為何？",
+    "choices": [
+      "5/12",
+      "5/8",
+      "7/12",
+      "21/24"
+    ],
+    "answerIndex": 2,
+    "explanation": "依題意逐步處理：把完成測試者視為全部樣本的7/8。；在完成者中再取2/3。；(7/8)×(2/3)=14/24=7/12。。所以答案是「7/12」。",
+    "steps": [
+      "把完成測試者視為全部樣本的7/8。",
+      "在完成者中再取2/3。",
+      "(7/8)×(2/3)=14/24=7/12。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "5/12",
+        "truth": false,
+        "reason": "5/12不是兩個分率的乘積。"
+      },
+      {
+        "choice": "5/8",
+        "truth": false,
+        "reason": "5/8沒有同時處理7/8與2/3。"
+      },
+      {
+        "choice": "7/12",
+        "truth": true,
+        "reason": "(7/8)×(2/3)=7/12，正確。"
+      },
+      {
+        "choice": "21/24",
+        "truth": false,
+        "reason": "21/24等於7/8，代表只保留第一層比例。"
+      }
+    ],
+    "commonMistake": "把「完成者中的比例」誤當成用 7/8 除以 2/3。",
+    "concept": "部分中的一部分佔整體的比例，要把兩個分率相乘。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "literacy"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "由兩層母群比例判斷應使用乘法。",
+    "literacyContextNecessity": "兩層比例描述要求先判斷『其中的』是乘法，避免把所有分數排列都視為繁分數。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "72ba2930cf49da9b2366646134b988cfe551da0e4662a144e59e8eb7a5349f27"
+  },
+  {
+    "questionId": "u02-s012-v012",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一段 5/6 公尺的木條，每小段長 1/12 公尺，全部切完可得幾段？",
+    "choices": [
+      "8 段",
+      "9 段",
+      "11 段",
+      "10 段"
+    ],
+    "answerIndex": 3,
+    "explanation": "依題意逐步處理：段數=(5/6)/(1/12)；=5/6×12=10。所以答案是「10 段」。",
+    "steps": [
+      "段數=(5/6)/(1/12)",
+      "=5/6×12=10"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "8 段",
+        "truth": false,
+        "reason": "8段只用2/3公尺。"
+      },
+      {
+        "choice": "9 段",
+        "truth": false,
+        "reason": "9段用3/4公尺。"
+      },
+      {
+        "choice": "11 段",
+        "truth": false,
+        "reason": "11段超過。"
+      },
+      {
+        "choice": "10 段",
+        "truth": true,
+        "reason": "10段正好用完。"
+      }
+    ],
+    "commonMistake": "倒數後約分錯誤。",
+    "concept": "總長除以段長可寫成繁分數。",
+    "tags": [
+      "數與量",
+      "繁分數基本化簡",
+      "literacy"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-mixed-number"
+    ],
+    "authoringIntent": "切割段數。",
+    "literacyContextNecessity": "總長與單段長度是形成繁分數的上下兩個量，全部切完決定商需為整數。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "794cf987527ff2202a8ff888a26657146347005e9dc72889199e5b5d20642f56"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u02-s012-cr001",
+    "unitId": "u02",
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "化簡繁分數 (3/4+5/6)/(7/8-1/3)，寫出分子、分母各自計算。",
+    "requiredWork": [
+      "先算主分數線上下。",
+      "確認分母非0。",
+      "最後乘倒數並約分。"
+    ],
+    "fullCreditSolution": [
+      "上方3/4+5/6=9/12+10/12=19/12。",
+      "下方7/8-1/3=21/24-8/24=13/24。",
+      "(19/12)÷(13/24)=19/12×24/13=38/13。"
+    ],
+    "alternativeSolutions": [
+      "也可上下同乘24，直接得38/13。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "上下計算與38/13完整。"
+      },
+      {
+        "score": 2,
+        "criteria": "答案正確但一處過程略缺。"
+      },
+      {
+        "score": 1,
+        "criteria": "能正確算出上方或下方之一。"
+      },
+      {
+        "score": 0,
+        "criteria": "把主分數線當乘法。"
+      }
+    ],
+    "scoringNotes": [
+      "38/13可寫2又12/13。"
+    ],
+    "commonErrors": [
+      "下方通分錯誤。",
+      "只取1/3倒數。"
+    ],
+    "independentReview": {
+      "derivedResult": "38/13。",
+      "ambiguity": "題意與資料足夠，答案唯一。",
+      "decision": "pass"
+    },
+    "contentSha256": "58e3e439499cdeb6dc8aed1199cbd735f53890898a027b4264e75c414535a97c"
+  },
+  {
+    "questionId": "u02-s012-cr002",
+    "unitId": "u02",
+    "topicId": "u02-fraction-ops",
+    "skillId": "fraction-complex-fraction-basic",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "設 x=[(1/2)/(3/5)]/[(7/10)/(14/15)]，求 x 並逐層驗算。",
+    "requiredWork": [
+      "先算兩個內層繁分數。",
+      "再算外層除法。"
+    ],
+    "fullCreditSolution": [
+      "左內層1/2÷3/5=5/6。",
+      "右內層7/10÷14/15=7/10×15/14=3/4。",
+      "x=5/6÷3/4=5/6×4/3=10/9。"
+    ],
+    "alternativeSolutions": [
+      "可將原式改寫為(1/2×5/3)×(14/15×10/7)。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "兩內層與x=10/9均正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "答案正確但一層說明不足。"
+      },
+      {
+        "score": 1,
+        "criteria": "至少正確完成一個內層。"
+      },
+      {
+        "score": 0,
+        "criteria": "層級混亂且結果錯誤。"
+      }
+    ],
+    "scoringNotes": [
+      "所有除數均非0。"
+    ],
+    "commonErrors": [
+      "一次把所有分子相乘。",
+      "外層倒錯左值。"
+    ],
+    "independentReview": {
+      "derivedResult": "x=10/9。",
+      "ambiguity": "題意與資料足夠，答案唯一。",
+      "decision": "pass"
+    },
+    "contentSha256": "0a2ed6d83ad431390a935109904963ca41b491710b6b3e0a6d217aea9e0ef828"
+  }
+];
+
+export const DRAWING_SPECS = [];

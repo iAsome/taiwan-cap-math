@@ -1,0 +1,240 @@
+{
+  "lectureId": "u02-s013-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-fraction-ratio",
+  "skillId": "fraction-percent-discount",
+  "title": "百分率和折扣與成數：把百分率轉成倍率，正確處理連續價格變動",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能在百分率、分數與小數間互換。",
+    "能計算折扣、漲價、降價與成數。",
+    "能由折後價反求原價。",
+    "能用倍率處理連續變動、稅率與促銷比較。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-complex-fraction-basic",
+      "requiredLevel": "能以分數除法反求整體，並處理基本比例式。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "百分率",
+      "definition": "以100為基準的比率。"
+    },
+    {
+      "term": "折數",
+      "definition": "售價佔原價的十分之幾。"
+    },
+    {
+      "term": "成數",
+      "definition": "增減量佔基準量的十分之幾。"
+    },
+    {
+      "term": "倍率",
+      "definition": "新量除以原量，例如增加20%對應1.2。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "p%",
+      "meaning": "p/100。"
+    },
+    {
+      "symbol": "八五折",
+      "meaning": "原價的85%。"
+    },
+    {
+      "symbol": "一成五",
+      "meaning": "15%。"
+    }
+  ],
+  "conceptNarrative": [
+    "p%=p/100。",
+    "八折表示付80%，不是減少8%。",
+    "增加p%後乘1+p%，減少p%後乘1-p%。",
+    "連續變動的基準會更新，因此倍率相乘，百分點不能直接相加減。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "折扣",
+      "statement": "售價=原價×折數。"
+    },
+    {
+      "name": "增減率",
+      "statement": "變化量÷原基準量。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "售價=原價×折數",
+      "conditions": [
+        "折數轉為小數或分數"
+      ],
+      "meaning": "折扣計算。"
+    },
+    {
+      "formula": "新量=原量×(1±率)",
+      "conditions": [
+        "增加用+、減少用-"
+      ],
+      "meaning": "增減變化。"
+    }
+  ],
+  "nonApplicableCases": [
+    "『減20%』與『打八折』等價，但『打二折』不是減20%。",
+    "第二件折扣只作用第二件。",
+    "加稅百分率通常以未稅或折後價為基準。",
+    "連續變動不能用百分率簡單相抵。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認基準量。",
+      "check": "百分率以誰為100%？"
+    },
+    {
+      "step": 2,
+      "instruction": "把百分率、折數或成數轉為倍率。",
+      "check": "八折=0.8嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "依順序相乘或相除。",
+      "check": "已知原量還是新量？"
+    },
+    {
+      "step": 4,
+      "instruction": "處理定額優惠。",
+      "check": "先後順序是否明確？"
+    },
+    {
+      "step": 5,
+      "instruction": "比較與驗算。",
+      "check": "折扣後是否合理降低？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "1500元打七折。",
+      "solutionSteps": [
+        "七折=0.7。",
+        "1500×0.7。"
+      ],
+      "answer": "1050元。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "售價680元為八折價。",
+      "solutionSteps": [
+        "原價×0.8=680。",
+        "680÷0.8。"
+      ],
+      "answer": "850元。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "先漲10%再降10%。",
+      "solutionSteps": [
+        "倍率1.1×0.9=0.99。",
+        "不是回到原價。"
+      ],
+      "answer": "比原價少1%。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "九折後加5%稅。",
+      "solutionSteps": [
+        "總倍率0.9×1.05。",
+        "=0.945。"
+      ],
+      "answer": "實付原價94.5%。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把八折當減8%。",
+      "why": "混淆十分制與百分制。",
+      "correction": "八折=80%。"
+    },
+    {
+      "mistake": "已知折後價仍乘折數。",
+      "why": "運算方向錯。",
+      "correction": "反求原價要除。"
+    },
+    {
+      "mistake": "漲20%後倍率寫0.2。",
+      "why": "只寫增加部分。",
+      "correction": "新量倍率是1.2。"
+    },
+    {
+      "mistake": "連續百分率直接相加減。",
+      "why": "忽略基準更新。",
+      "correction": "倍率相乘。"
+    },
+    {
+      "mistake": "第二件優惠套到兩件。",
+      "why": "未讀適用範圍。",
+      "correction": "逐件列價。"
+    },
+    {
+      "mistake": "百分率與金額直接相加。",
+      "why": "單位不同。",
+      "correction": "先求百分金額。"
+    }
+  ],
+  "selfCheck": [
+    "百分率的基準量是誰？",
+    "折數是否轉成正確倍率？",
+    "已知的是原價還是售價？",
+    "連續變化是否用乘法？",
+    "定額優惠順序是否照題意？"
+  ],
+  "summary": [
+    "百分率以100為基準。",
+    "折數以10為基準。",
+    "增減後使用1±率倍率。",
+    "連續變化倍率相乘。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-complex-fraction-basic，需能完成其基本判斷與計算。",
+    "next": [
+      "基準量判斷會系統處理百分語句中的比較物件。",
+      "綜合應用會比較方案與多階段變化。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s013-v001",
+      "u02-s013-v002",
+      "u02-s013-v003",
+      "u02-s013-v004",
+      "u02-s013-v005",
+      "u02-s013-v006",
+      "u02-s013-v007",
+      "u02-s013-v008",
+      "u02-s013-v009",
+      "u02-s013-v010",
+      "u02-s013-v011",
+      "u02-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s013-cr001",
+      "u02-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "折扣、成數、漲跌與稅率例題均以代回原價方式核對；八八折、折價券與5%服務費的先後基準已逐步重算，連續倍率不誤加。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "f9bef7ef788e178c3c93b56e99effde63b87babb40efb43013404af52aef1036"
+}
