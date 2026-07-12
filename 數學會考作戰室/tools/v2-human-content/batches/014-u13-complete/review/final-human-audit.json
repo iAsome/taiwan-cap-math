@@ -1,0 +1,59 @@
+{
+  "auditVersion": "u13-final-human-audit-r1.0",
+  "reviewedAt": "2026-07-12",
+  "scope": "15 lectures, 180 MC, 30 CR, 180 semantic reviews, 4 figures",
+  "actualIssuesFoundAndRepaired": [
+    {
+      "location": "units/u13/s013/lecture.json worked example L3",
+      "found": "The draft stated outer area 168 m² while claiming x=3; (10+2·3)(6+2·3)=192.",
+      "repair": "Changed the outer area to 192 m² and the reduced equation to x²+8x-33=0.",
+      "verification": "16×12=192 and (3-3)(3+11)=0."
+    },
+    {
+      "location": "units/u13/s015/mc-questions.jsonl u13-s015-v008",
+      "found": "The draft stated remaining area 60 after cutting 12 from a 6×10 rectangle; the actual remainder is 48.",
+      "repair": "Changed the remaining area to 48 and corrected the equation to x²+4x-60=0 with roots 6 and -10.",
+      "verification": "6×10-12=48; the negative root is invalid as a length."
+    },
+    {
+      "location": "units/u13/s008/mc-questions.jsonl u13-s008-v012",
+      "found": "One boundary-audit phrase contained the Simplified Chinese character 负.",
+      "repair": "Replaced it with the Taiwan Traditional Chinese form 負 in the item and linked semantic review.",
+      "verification": "A targeted text scan found no remaining occurrence of 负 in authored unit records."
+    },
+    {
+      "location": "unit-wide MC capability differentiation review",
+      "found": "A normalized-prompt scan exposed several pairs whose surface task could be read as number-swapped variants, especially direct root solving and consecutive-integer prompts.",
+      "repair": "Reframed selected items to test smaller-root comparison, target-sum conversion, total-after-reconstruction, and row-versus-per-row role conversion; also strengthened distinct formula and parameter prompts.",
+      "verification": "The exact normalized duplicate scan passes, and the revised items require different mathematical outputs rather than cosmetic context changes."
+    },
+    {
+      "location": "units/u13/s015/lecture.json worked example L1 and linked seating figure",
+      "found": "The draft lecture described n people per row and n+2 rows, while the linked SVG defined n rows and n+2 people per row; the product was equal but the semantic roles conflicted.",
+      "repair": "Aligned the lecture example with the figure: n rows, n+2 people per row, then answered 6 rows and 8 people per row.",
+      "verification": "The lecture, MC item, CR item, SVG labels, and alt text now use the same row-versus-per-row roles."
+    },
+    {
+      "location": "units/u13/s009/constructed-response.jsonl cr002 and s011 cr002",
+      "found": "Manual scope review found a quadratic inequality with irrational boundaries and a root-sum coefficient check that could rely on knowledge beyond the locked junior-high boundary.",
+      "repair": "Replaced them with a linear discriminant parameter bound plus integer maximum, and a Δ>0 explanation of two formula branches.",
+      "verification": "Both revised items use only U13 prerequisite methods and no future-unit theorem."
+    }
+  ],
+  "manualChecks": {
+    "negativeSigns": "pass",
+    "parentheses": "pass",
+    "fractions": "pass",
+    "roots": "pass",
+    "exponents": "pass",
+    "units": "pass",
+    "domainAndBoundary": "pass",
+    "alternativeInterpretations": "pass",
+    "advancedDifficulty": "pass",
+    "literacyNecessity": "pass",
+    "futureUnitKnowledge": "pass"
+  },
+  "unresolvedLocalIssues": [],
+  "crossUnitComparisonUnavailable": true,
+  "productionActivationAllowed": false
+}

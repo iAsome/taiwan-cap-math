@@ -1,0 +1,245 @@
+{
+  "lectureId": "u13-s015-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-literacy",
+  "skillId": "quadratic-literacy",
+  "lockedOrder": 15,
+  "originalLockedTitle": "二次方程式素養題",
+  "title": "二次方程式素養整合題",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從表格、規則文字與示意圖擷取必要資料。",
+    "能選擇未知數並建立二次模型。",
+    "能比較多個代數根與多重限制。",
+    "能解釋模型、答案與限制之間的理由。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-consecutive-product",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "整合前 14 個技能，從公式與解法提升到跨表格、圖文與限制的完整推理。",
+  "glossary": [
+    {
+      "term": "數學素養",
+      "definition": "在真實或仿真情境中辨識數學關係、建立模型、運算並解釋結果。"
+    },
+    {
+      "term": "必要資料",
+      "definition": "會影響列式或答案的條件。"
+    },
+    {
+      "term": "多重限制",
+      "definition": "例如整數、正數、容量、時間區間同時存在。"
+    },
+    {
+      "term": "模型檢核",
+      "definition": "確認方程式與原情境的量、單位與限制一致。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "模型→根→限制→結論",
+      "meaning": "素養題的四階段推理鏈。"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題不一定計算更難，難點常在資料選擇與語意轉換。",
+    "先把文字、表格、圖中的量分成已知、未知、限制與要求。",
+    "同一二次方程式可能有兩個代數根，但容量、整數或時間範圍只接受其中一個。",
+    "有時兩根都不合限制，正確結論是「無符合方案」。",
+    "答案要用完整句子說明為何採用或排除某根，不能只留下數字。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "素養建模",
+      "statement": "從情境辨識變量與關係，建立可驗證的數學模型，求解並解釋。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "情境條件集合 = 代數方程式條件 + 定義域限制",
+      "conditions": [
+        "所有限制均需明列"
+      ],
+      "meaning": "代數根只是候選，必須通過完整條件集合。"
+    }
+  ],
+  "nonApplicableCases": [
+    "圖表中的裝飾資訊不一定需要列式。",
+    "不能因答案看起來合理就跳過驗根。",
+    "近似值須符合題目精度，若可保留精確值應優先保留。",
+    "不同模型可能產生相同單位，但只有符合文字關係者正確。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "整理資料為已知、未知、關係、限制。",
+      "check": "是否忽略表格註記或圖說？"
+    },
+    {
+      "step": 2,
+      "instruction": "選未知數並寫出各量表示式。",
+      "check": "單位是否一致？"
+    },
+    {
+      "step": 3,
+      "instruction": "建立二次方程式。",
+      "check": "每個情境條件是否有對應？"
+    },
+    {
+      "step": 4,
+      "instruction": "求全部代數根並驗根。",
+      "check": "是否有計算或抄寫錯誤？"
+    },
+    {
+      "step": 5,
+      "instruction": "逐條套用限制並解釋結論。",
+      "check": "為何保留或排除是否說清楚？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "座位共有 n 排、每排 n+2 人，總人數 48，求排數與每排人數。",
+      "solutionSteps": [
+        "列 n(n+2)=48。",
+        "根為 6、-8，排數取正整數。",
+        "再算 n+2=8。"
+      ],
+      "answer": "6 排，每排 8 人。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "商品有 n 位購買者，每人價格 50-n 元，收入 600 元且 n≤25。",
+      "solutionSteps": [
+        "列 n(50-n)=600。",
+        "根為 20、30。",
+        "容量限制保留 20。"
+      ],
+      "answer": "n=20。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "高度模型 h=-t²+8t+9，求落地的正時間。",
+      "solutionSteps": [
+        "令 h=0。",
+        "方程式根為 9、-1。",
+        "時間取 t=9。"
+      ],
+      "answer": "9 秒。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "評分模型 (x-3)²=20，規定 0≤x≤5。",
+      "solutionSteps": [
+        "根為 3±2√5，約 -1.47 與 7.47。",
+        "兩者都超出區間。"
+      ],
+      "answer": "沒有符合規定的 x。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "180 km 行程提速 15 km/h 後少 1 小時，求原速。",
+      "solutionSteps": [
+        "180/v-180/(v+15)=1。",
+        "得 v²+15v-2700=0。",
+        "正根 v=45。"
+      ],
+      "answer": "45 km/h。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把所有數字都塞進方程式。",
+      "why": "未分辨必要與裝飾資料。",
+      "correction": "先寫關係表。"
+    },
+    {
+      "mistake": "得到兩根就都作答。",
+      "why": "忽略容量或範圍。",
+      "correction": "逐條套限制。"
+    },
+    {
+      "mistake": "兩根都不合時硬選較接近者。",
+      "why": "把精確限制改成近似。",
+      "correction": "結論應為無符合方案。"
+    },
+    {
+      "mistake": "只寫數字不說理由。",
+      "why": "素養題要求模型解釋。",
+      "correction": "說明列式與排除根。"
+    },
+    {
+      "mistake": "表格單位與公式單位不一致。",
+      "why": "量綱錯誤。",
+      "correction": "先統一單位。"
+    },
+    {
+      "mistake": "用圖形比例估計未標示量。",
+      "why": "示意圖可能不按比例。",
+      "correction": "只使用明示資料。"
+    }
+  ],
+  "selfCheck": [
+    "必要資料是否完整？",
+    "未知數與單位是否清楚？",
+    "模型是否對應文字關係？",
+    "所有根是否驗證？",
+    "每個限制是否逐條套用並解釋？"
+  ],
+  "summary": [
+    "素養題重視資料選擇、建模、運算與解釋。",
+    "代數根需通過多重限制。",
+    "可能只有一根、兩根或無符合方案。",
+    "完整答案應說明保留與排除理由。"
+  ],
+  "connections": {
+    "previous": "整合前 14 個技能，從公式與解法提升到跨表格、圖文與限制的完整推理。",
+    "next": [
+      "本單元完成後，可在後續函數與幾何情境中辨認二次關係。",
+      "跨單元複習時應先確認題目是否真的需要二次方程式。"
+    ]
+  },
+  "figureReferences": [
+    "u13-fig-seating-array",
+    "u13-fig-literacy-layout"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s015-v001",
+      "u13-s015-v002",
+      "u13-s015-v003",
+      "u13-s015-v004",
+      "u13-s015-v005",
+      "u13-s015-v006",
+      "u13-s015-v007",
+      "u13-s015-v008",
+      "u13-s015-v009",
+      "u13-s015-v010",
+      "u13-s015-v011",
+      "u13-s015-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s015-cr001",
+      "u13-s015-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "五例均以原情境重算並逐條套限制；確認價格模型 20、30 兩根中僅 20 符合容量，區間例兩根皆不合而非強選，速度例代回時間差正好 1 小時。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "8aa02bc716ebdee5b55bdb4183e6f0cab92b5f30d03e6e799bd924b81fef8b46"
+}

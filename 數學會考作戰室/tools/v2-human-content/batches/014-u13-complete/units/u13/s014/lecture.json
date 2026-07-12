@@ -1,0 +1,251 @@
+{
+  "lectureId": "u13-s014-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-applications",
+  "skillId": "quadratic-consecutive-product",
+  "lockedOrder": 14,
+  "originalLockedTitle": "連續整數乘積",
+  "title": "連續整數乘積問題",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能用 x、x+1 表示連續整數。",
+    "能用 x、x+2 表示連續偶數或奇數。",
+    "能由乘積條件列二次方程式。",
+    "能處理正負整數與順序限制。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-area-problem",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "承接面積中「兩邊相差固定量」的模型，改為離散整數並加入奇偶與符號限制。",
+  "glossary": [
+    {
+      "term": "連續整數",
+      "definition": "相鄰且相差 1 的整數，如 7、8。"
+    },
+    {
+      "term": "連續偶數",
+      "definition": "相鄰的偶數，相差 2。"
+    },
+    {
+      "term": "連續奇數",
+      "definition": "相鄰的奇數，相差 2。"
+    },
+    {
+      "term": "較小整數",
+      "definition": "兩數中數值較小者，常設為 x。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x,x+1",
+      "meaning": "兩個連續整數。"
+    },
+    {
+      "symbol": "x,x+2",
+      "meaning": "兩個連續偶數或兩個連續奇數；需另說明 x 的奇偶性。"
+    },
+    {
+      "symbol": "x,x+1,x+2",
+      "meaning": "三個連續整數。"
+    }
+  ],
+  "conceptNarrative": [
+    "表示連續數時要依數線順序，較大者是在較小者上加固定差。",
+    "連續偶數與連續奇數都相差 2，但 x 本身需符合指定奇偶性。",
+    "乘積為正時，兩數可能同為正或同為負；題目若只說整數，兩組都要檢查。",
+    "題目若說正整數、標籤編號或人數，通常排除負組。",
+    "解出較小數後，仍要回報完整數對或數列。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "連續整數模型",
+      "statement": "較小整數為 x，下一個為 x+1。"
+    },
+    {
+      "name": "連續同奇偶模型",
+      "statement": "較小數為 x，下一個同奇偶整數為 x+2。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x(x+1)=P",
+      "conditions": [
+        "兩個連續整數乘積為 P"
+      ],
+      "meaning": "最基本連續乘積模型。"
+    },
+    {
+      "formula": "x(x+2)=P",
+      "conditions": [
+        "兩個連續偶數或奇數"
+      ],
+      "meaning": "同奇偶相鄰整數模型。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未說正整數時不能自動刪除負整數組。",
+    "連續偶數不是 x、x+1。",
+    "求得 x 後不能只回答 x，若題目問兩數需列完整。",
+    "乘積條件之外的和、範圍或符號條件也要套用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認連續類型與符號限制。",
+      "check": "相差 1 還是 2？"
+    },
+    {
+      "step": 2,
+      "instruction": "設較小整數 x，表示其餘數。",
+      "check": "x 的奇偶性是否需註明？"
+    },
+    {
+      "step": 3,
+      "instruction": "依乘積或其他關係列方程式。",
+      "check": "是否保留所有條件？"
+    },
+    {
+      "step": 4,
+      "instruction": "解方程式並找所有整數候選。",
+      "check": "正負兩組是否都考慮？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回並以完整數對作答。",
+      "check": "順序與限制是否吻合？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩個連續正整數乘積為 56。",
+      "solutionSteps": [
+        "設較小數 x，x(x+1)=56。",
+        "(x+8)(x-7)=0。",
+        "正整數取 x=7。"
+      ],
+      "answer": "7、8。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩個連續整數乘積為 20，且兩數皆負。",
+      "solutionSteps": [
+        "x(x+1)=20。",
+        "x=4 或 -5。",
+        "皆負取 x=-5。"
+      ],
+      "answer": "-5、-4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩個連續偶數乘積為 48。",
+      "solutionSteps": [
+        "設較小正偶數 x，x(x+2)=48。",
+        "(x+8)(x-6)=0。"
+      ],
+      "answer": "6、8。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "三個連續正整數中，第一個與第三個乘積為 80。",
+      "solutionSteps": [
+        "設為 x、x+1、x+2。",
+        "x(x+2)=80，得 x=8 或 -10。",
+        "正數取 8。"
+      ],
+      "answer": "8、9、10。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "連續整數寫 x、2x。",
+      "why": "把相差 1 誤成倍數。",
+      "correction": "寫 x、x+1。"
+    },
+    {
+      "mistake": "連續偶數寫 x、x+1。",
+      "why": "忽略奇偶相鄰差 2。",
+      "correction": "寫 x、x+2。"
+    },
+    {
+      "mistake": "乘積正只找正整數。",
+      "why": "兩個負數相乘也為正。",
+      "correction": "依題目是否限制正數決定。"
+    },
+    {
+      "mistake": "只回答較小數。",
+      "why": "題目問完整數對。",
+      "correction": "回報所有數。"
+    },
+    {
+      "mistake": "解出非整數仍接受。",
+      "why": "連續整數必須是整數。",
+      "correction": "檢查整數性。"
+    },
+    {
+      "mistake": "未按大小排列。",
+      "why": "x 的角色混亂。",
+      "correction": "先定義 x 為較小者。"
+    }
+  ],
+  "selfCheck": [
+    "相差量是 1 還是 2？",
+    "是否有正負或奇偶限制？",
+    "正負整數組都檢查了嗎？",
+    "答案是否為整數？",
+    "是否回報完整數列？"
+  ],
+  "summary": [
+    "連續整數用固定差表示。",
+    "乘積題常形成可因式分解的二次方程式。",
+    "正乘積可能來自兩正或兩負。",
+    "答案需回到完整數對與限制。"
+  ],
+  "connections": {
+    "previous": "承接面積中「兩邊相差固定量」的模型，改為離散整數並加入奇偶與符號限制。",
+    "next": [
+      "最後一節會把整數、面積、收入與時間資料整合。",
+      "跨單元題需先判斷連續條件是否真的存在。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s014-v001",
+      "u13-s014-v002",
+      "u13-s014-v003",
+      "u13-s014-v004",
+      "u13-s014-v005",
+      "u13-s014-v006",
+      "u13-s014-v007",
+      "u13-s014-v008",
+      "u13-s014-v009",
+      "u13-s014-v010",
+      "u13-s014-v011",
+      "u13-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s014-cr001",
+      "u13-s014-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "四例均把完整數列乘回；確認乘積 20 同時有正組 4、5 與負組 -5、-4，並依「皆負」保留後者；偶數與三數模型的固定差皆正確。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "b18db10d570878b902ea6f9a7c7382a8bbe8ae742bf1f4dd72e42a3dda4f5c3b"
+}

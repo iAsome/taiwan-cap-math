@@ -1,0 +1,258 @@
+{
+  "lectureId": "u13-s013-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-applications",
+  "skillId": "quadratic-area-problem",
+  "lockedOrder": 13,
+  "originalLockedTitle": "面積問題列方程",
+  "title": "面積問題列一元二次方程式",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由長方形與正方形面積公式列二次方程式。",
+    "能正確表示增加、縮短、外擴後的邊長。",
+    "能由圖文條件辨認總面積與剩餘面積。",
+    "能排除非正長度並附平方單位。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-word-problem",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "承接一般文字應用，進一步使用圖形結構、面積單位與幾何限制。",
+  "glossary": [
+    {
+      "term": "面積模型",
+      "definition": "用邊長乘積表示平面區域大小。"
+    },
+    {
+      "term": "外框",
+      "definition": "在原圖形四周增加固定寬度的區域。"
+    },
+    {
+      "term": "挖除面積",
+      "definition": "總面積減去被移除部分。"
+    },
+    {
+      "term": "平方單位",
+      "definition": "面積單位，如 cm²、m²。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "A=lw",
+      "meaning": "長方形面積=長×寬。"
+    },
+    {
+      "symbol": "A=s²",
+      "meaning": "正方形面積=邊長平方。"
+    },
+    {
+      "symbol": "(L+2t)(W+2t)",
+      "meaning": "長方形四周外擴 t 後的外框總面積。"
+    }
+  ],
+  "conceptNarrative": [
+    "圖形題先標示每一段長度，再決定哪些量相乘。",
+    "「長比寬多 d」可設寬 x、長 x+d。",
+    "四周外擴 t 時，每個方向兩側都增加，總長與總寬各增加 2t。",
+    "挖除或鋪設剩餘面積時，用總面積減被移除面積。",
+    "代數解若使任何邊長為 0 或負數，必須排除。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "長方形面積",
+      "statement": "A=長×寬。"
+    },
+    {
+      "name": "正方形面積",
+      "statement": "A=邊長²。"
+    },
+    {
+      "name": "外擴尺寸",
+      "statement": "四周等寬 t 的外框使長與寬各增加 2t。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x(x+d)=A",
+      "conditions": [
+        "寬為 x、長為 x+d"
+      ],
+      "meaning": "固定長寬差的面積方程式。"
+    },
+    {
+      "formula": "(L+2t)(W+2t)=A外",
+      "conditions": [
+        "四周外擴相同寬度 t"
+      ],
+      "meaning": "外框總面積。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能由未按比例圖形直接量出長度。",
+    "四周加寬 t 不是只把長與寬各加 t。",
+    "周長與面積單位不可混用。",
+    "面積為正不代表每個代數根都能作邊長。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認圖形分區與已知長度。",
+      "check": "圖是否註明不按比例？"
+    },
+    {
+      "step": 2,
+      "instruction": "設一個邊長為 x，表示其他邊長。",
+      "check": "增加量是否算對側數？"
+    },
+    {
+      "step": 3,
+      "instruction": "依面積加減關係列式。",
+      "check": "平方單位是否一致？"
+    },
+    {
+      "step": 4,
+      "instruction": "解二次方程式。",
+      "check": "是否求出全部根？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查每段長度為正並回圖驗算。",
+      "check": "圖中每個區域面積是否吻合？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "長方形寬 x、長 x+4，面積 60，求邊長。",
+      "solutionSteps": [
+        "x(x+4)=60。",
+        "(x+10)(x-6)=0。",
+        "排除 x=-10。"
+      ],
+      "answer": "寬 6、長 10。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "長方形周長固定為 28，面積 48，求可能的寬 x。",
+      "solutionSteps": [
+        "長為 14-x。",
+        "x(14-x)=48。",
+        "解得 x=6 或 8。"
+      ],
+      "answer": "邊長為 6 與 8。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "10 m×6 m 長方形四周外擴 x m，總面積 192 m²。",
+      "solutionSteps": [
+        "列 (10+2x)(6+2x)=192。",
+        "化簡得 x²+8x-33=0。"
+      ],
+      "answer": "x=3 m。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "正方形切去 3 cm×4 cm 小長方形後剩 84 cm²，求正方形邊長。",
+      "solutionSteps": [
+        "設邊長 x，列 x²-12=84。",
+        "x²=96，取正平方根。"
+      ],
+      "answer": "x=4√6 cm。",
+      "capabilityConnection": "需排除負平方根並保留精確根式。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "長比寬多 4 寫成 4x。",
+      "why": "差與倍數混淆。",
+      "correction": "寫 x+4。"
+    },
+    {
+      "mistake": "外擴寬 x 只加一次。",
+      "why": "忽略左右或上下兩側。",
+      "correction": "尺寸增加 2x。"
+    },
+    {
+      "mistake": "面積式寫成 2(l+w)。",
+      "why": "混用周長公式。",
+      "correction": "面積用乘積。"
+    },
+    {
+      "mistake": "保留負邊長。",
+      "why": "未套用幾何限制。",
+      "correction": "所有線段長度須正。"
+    },
+    {
+      "mistake": "根式邊長取 ±。",
+      "why": "幾何長度只取正值。",
+      "correction": "代數開平方後排除負值。"
+    },
+    {
+      "mistake": "從示意圖比例猜答案。",
+      "why": "圖可能不按比例。",
+      "correction": "只依標示與方程式。"
+    }
+  ],
+  "selfCheck": [
+    "每個邊長表示式正確嗎？",
+    "外擴是否增加兩側？",
+    "列的是面積而非周長嗎？",
+    "平方單位是否寫出？",
+    "所有邊長是否為正？"
+  ],
+  "summary": [
+    "面積問題以邊長乘積建立二次方程式。",
+    "圖形增加量需依方向計算。",
+    "外框通常使每個尺寸增加 2t。",
+    "負根不能作幾何長度。"
+  ],
+  "connections": {
+    "previous": "承接一般文字應用，進一步使用圖形結構、面積單位與幾何限制。",
+    "next": [
+      "下一節把固定差由邊長轉為連續整數。",
+      "素養整合題會混合面積圖、範圍與資料條件。"
+    ]
+  },
+  "figureReferences": [
+    "u13-fig-rectangle-difference",
+    "u13-fig-uniform-border"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s013-v001",
+      "u13-s013-v002",
+      "u13-s013-v003",
+      "u13-s013-v004",
+      "u13-s013-v005",
+      "u13-s013-v006",
+      "u13-s013-v007",
+      "u13-s013-v008",
+      "u13-s013-v009",
+      "u13-s013-v010",
+      "u13-s013-v011",
+      "u13-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s013-cr001",
+      "u13-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "四例均用面積回算；外擴例代入 x=3 得 16×12=192？人工複核發現原例總面積數值不一致，已將教學與題庫採用的有效模型統一為總面積 192 m²，避免錯誤；其餘根式與周長模型逐段檢查。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "ebd99cf90c607c46aea17e78bd0b0e846106816db003109cbd3eb2de4fce2975"
+}

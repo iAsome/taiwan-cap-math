@@ -1,0 +1,227 @@
+{
+  "lectureId": "u13-s010-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-check-root",
+  "lockedOrder": 10,
+  "originalLockedTitle": "二次方程解的檢查",
+  "title": "二次方程式解的代入檢查",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把候選值代入原方程式左右兩邊。",
+    "能正確處理負數平方與括號。",
+    "能檢查一組所謂解是否完整且正確。",
+    "能由已知根反求參數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-roots-count",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "承接根個數判斷；知道可能有幾根後，進一步確認每個候選值真實成立。",
+  "glossary": [
+    {
+      "term": "代入檢查",
+      "definition": "把候選值代回原方程式，確認左右兩邊相等。"
+    },
+    {
+      "term": "候選值",
+      "definition": "可能是根、但尚未驗證的數。"
+    },
+    {
+      "term": "驗根",
+      "definition": "確認候選值使原方程式成立。"
+    },
+    {
+      "term": "完整解集",
+      "definition": "包含所有且只有真正根的答案集合。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "P(r)=0",
+      "meaning": "把 x=r 代入左側多項式 P(x)，結果為 0，則 r 是根。"
+    }
+  ],
+  "conceptNarrative": [
+    "驗根應代回原方程式，而不是只代回可能已抄錯的中間式。",
+    "負數代入平方時要加括號，例如 x=-2 時 x²=(-2)²=4。",
+    "候選值使左式為 0 才是標準式的根；若原式左右皆非 0，只要相等也成立。",
+    "檢查一組答案時，要逐個驗證，並思考是否可能漏根。",
+    "已知某值是根時，可代入含參數方程式形成參數的一次方程式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "根的檢查",
+      "statement": "r 是方程式 F(x)=G(x) 的根，當且僅當 F(r)=G(r)。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "ar²+br+c=0",
+      "conditions": [
+        "原方程式已寫為 ax²+bx+c=0"
+      ],
+      "meaning": "檢查 r 是否為根。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只檢查因式分解後的式子不足以排除整理時的抄寫錯誤。",
+    "近似小數若題目要求精確根，不能只憑四捨五入後看似相等。",
+    "驗證兩個列出的根都正確，仍不自動證明沒有第三個根；二次方程式至多兩根可作補充理由。",
+    "情境限制是驗根後的第二層檢查。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "保留原方程式。",
+      "check": "是否未被錯誤變形？"
+    },
+    {
+      "step": 2,
+      "instruction": "用括號代入候選值。",
+      "check": "負號是否包含在平方內？"
+    },
+    {
+      "step": 3,
+      "instruction": "分別計算左右兩邊或標準式值。",
+      "check": "每一步符號是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "比較結果並判定是否為根。",
+      "check": "左右是否完全相等？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查解集完整性與情境。",
+      "check": "二次方程式是否已列所有根？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "檢查 x=2 是否為 x²-5x+6=0 的根。",
+      "solutionSteps": [
+        "代入得 4-10+6=0。"
+      ],
+      "answer": "是。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "檢查 x=-3 是否為 x²+4x+3=0 的根。",
+      "solutionSteps": [
+        "(-3)²+4(-3)+3=9-12+3=0。"
+      ],
+      "answer": "是。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "檢查 x=-2 是否為 x²+3x-10=0 的根。",
+      "solutionSteps": [
+        "4-6-10=-12。",
+        "結果不為 0。"
+      ],
+      "answer": "不是。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "若 x=3 是 x²+kx-12=0 的根，求 k。",
+      "solutionSteps": [
+        "代入：9+3k-12=0。",
+        "3k=3。"
+      ],
+      "answer": "k=1。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "x=-2 時把 x² 算成 -4。",
+      "why": "沒有把負數放入括號平方。",
+      "correction": "寫 (-2)²=4。"
+    },
+    {
+      "mistake": "只看候選值接近答案。",
+      "why": "根必須精確成立。",
+      "correction": "完整代入計算。"
+    },
+    {
+      "mistake": "代回錯誤的中間式。",
+      "why": "無法檢查先前變形。",
+      "correction": "代回原題。"
+    },
+    {
+      "mistake": "只驗一個列出的根。",
+      "why": "另一個可能錯。",
+      "correction": "逐一驗證全部候選。"
+    },
+    {
+      "mistake": "標準式代入結果非 0 仍判為根。",
+      "why": "判準錯誤。",
+      "correction": "結果必須等於 0。"
+    },
+    {
+      "mistake": "代數根通過就忽略長度限制。",
+      "why": "驗根與情境合理性是兩層檢查。",
+      "correction": "再套用定義域。"
+    }
+  ],
+  "selfCheck": [
+    "是否代回原方程式？",
+    "負數是否加括號？",
+    "左右是否逐項計算？",
+    "所有候選都驗了嗎？",
+    "情境限制是否再檢查？"
+  ],
+  "summary": [
+    "根必須代入後使原等式成立。",
+    "負數平方是驗根常見陷阱。",
+    "每個候選值都需獨立驗證。",
+    "已知根可反求參數。"
+  ],
+  "connections": {
+    "previous": "承接根個數判斷；知道可能有幾根後，進一步確認每個候選值真實成立。",
+    "next": [
+      "下一節用公式解求得候選根後，必須以本節方法檢查。",
+      "應用題還要在驗根後做情境篩選。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s010-v001",
+      "u13-s010-v002",
+      "u13-s010-v003",
+      "u13-s010-v004",
+      "u13-s010-v005",
+      "u13-s010-v006",
+      "u13-s010-v007",
+      "u13-s010-v008",
+      "u13-s010-v009",
+      "u13-s010-v010",
+      "u13-s010-v011",
+      "u13-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s010-cr001",
+      "u13-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "四例均直接代回原式而非中間式；特別核對 (-3)² 的括號、x=-2 案例確實得到 -12，以及參數 k=1 代回後 9+3-12=0。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "7b81078ee774e1209d74d79550c5552c84fa5dd2dc3c5ec88b2965ece8d5f0a8"
+}

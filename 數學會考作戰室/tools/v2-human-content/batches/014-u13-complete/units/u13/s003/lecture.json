@@ -1,0 +1,239 @@
+{
+  "lectureId": "u13-s003-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-formula",
+  "lockedOrder": 3,
+  "originalLockedTitle": "公式解",
+  "title": "公式解的原理與結構",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能正確辨認公式中的 a、b、c。",
+    "能說明根號內 b²-4ac 與分母 2a 的來源角色。",
+    "能正確處理負號、括號與根號化簡。",
+    "能用公式得到有理根或無理根。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-completing-square",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "由一般配方法推得公式結構；本節著重公式各部分的意義與正確書寫。",
+  "glossary": [
+    {
+      "term": "公式解",
+      "definition": "將標準式係數代入一元二次方程式求根公式。"
+    },
+    {
+      "term": "判別式",
+      "definition": "公式根號內的 b²-4ac。"
+    },
+    {
+      "term": "有理根",
+      "definition": "可寫成兩個整數比的根。"
+    },
+    {
+      "term": "無理根",
+      "definition": "不能寫成整數比，常以未完全開方的根式表示。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax²+bx+c=0",
+      "meaning": "一元二次方程式標準式，且 a≠0。"
+    },
+    {
+      "symbol": "x=(-b±√(b²-4ac))/(2a)",
+      "meaning": "一元二次方程式求根公式。"
+    }
+  ],
+  "conceptNarrative": [
+    "公式不是另一條孤立規則，而是把一般方程式配方後得到的結果。",
+    "代入前一定先整理成 ax²+bx+c=0；移項會改變係數符號。",
+    "b 若為負數，-b 會變正；b² 必須把整個 b 放在括號內平方。",
+    "分母是整個 2a，不能只除根號部分。",
+    "根號可化簡時要化簡，但不能把 √(u+v) 拆成 √u+√v。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "求根公式",
+      "statement": "對 ax²+bx+c=0 且 a≠0，x=(-b±√(b²-4ac))/(2a)。"
+    },
+    {
+      "name": "係數辨認",
+      "statement": "a、b、c 必須取自等號右邊為 0 的標準式，包含正負號。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x=(-b±√(b²-4ac))/(2a)",
+      "conditions": [
+        "a≠0",
+        "方程式已整理為標準式",
+        "在實數範圍需 b²-4ac≥0"
+      ],
+      "meaning": "一次求出所有實數根。"
+    }
+  ],
+  "nonApplicableCases": [
+    "方程式未移項前不能直接讀 a、b、c。",
+    "a=0 時不是一元二次方程式，公式分母也會為 0。",
+    "判別式為負時，不在國中實數範圍求複數根。",
+    "不能把 ± 當作只選一個符號。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "整理成 ax²+bx+c=0。",
+      "check": "右邊是否為 0？"
+    },
+    {
+      "step": 2,
+      "instruction": "連同符號寫出 a、b、c。",
+      "check": "b、c 的負號是否保留？"
+    },
+    {
+      "step": 3,
+      "instruction": "先算判別式 b²-4ac。",
+      "check": "括號與乘法符號是否完整？"
+    },
+    {
+      "step": 4,
+      "instruction": "代入 -b±√Δ 並除以 2a。",
+      "check": "分母是否包住整個分子？"
+    },
+    {
+      "step": 5,
+      "instruction": "化簡兩個根並代回驗算。",
+      "check": "根式與分數是否約到最簡？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 x²-2x-1=0。",
+      "solutionSteps": [
+        "a=1，b=-2，c=-1，Δ=8。",
+        "x=(2±√8)/2=1±√2。"
+      ],
+      "answer": "x=1±√2。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 2x²+x-3=0。",
+      "solutionSteps": [
+        "Δ=1+24=25。",
+        "x=(-1±5)/4。"
+      ],
+      "answer": "x=1 或 x=-3/2。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 -x²+4x+5=0。",
+      "solutionSteps": [
+        "可先乘 -1 得 x²-4x-5=0。",
+        "Δ=36，x=(4±6)/2。"
+      ],
+      "answer": "x=5 或 x=-1。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解 4x²+4x-1=0。",
+      "solutionSteps": [
+        "Δ=16+16=32。",
+        "x=(-4±4√2)/8。"
+      ],
+      "answer": "x=(-1±√2)/2。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 -b 寫成 b。",
+      "why": "忽略公式最前面的負號。",
+      "correction": "先單獨計算 -b。"
+    },
+    {
+      "mistake": "b=-3 時算 b²=-9。",
+      "why": "未把負數平方。",
+      "correction": "寫 (-3)²=9。"
+    },
+    {
+      "mistake": "分母只寫 2。",
+      "why": "漏乘 a。",
+      "correction": "分母完整寫 2a。"
+    },
+    {
+      "mistake": "未先移項就讀係數。",
+      "why": "係數不是標準式係數。",
+      "correction": "先使右邊為 0。"
+    },
+    {
+      "mistake": "把 √32 留成不可再化簡。",
+      "why": "未抽出完全平方因數。",
+      "correction": "√32=4√2。"
+    },
+    {
+      "mistake": "只寫加號分支。",
+      "why": "漏掉另一個根。",
+      "correction": "± 要分成兩次計算。"
+    }
+  ],
+  "selfCheck": [
+    "標準式是否正確？",
+    "a、b、c 是否含符號？",
+    "Δ 是否先獨立計算？",
+    "分母是否為 2a？",
+    "兩個 ± 分支是否都化簡？"
+  ],
+  "summary": [
+    "公式解適用所有一元二次方程式。",
+    "正確辨認係數比背公式更重要。",
+    "括號、負號、分母是最常見失分點。",
+    "答案須保留精確根式並驗算。"
+  ],
+  "connections": {
+    "previous": "由一般配方法推得公式結構；本節著重公式各部分的意義與正確書寫。",
+    "next": [
+      "下一節專門研究根號內的判別式。",
+      "後續公式解基本技能會集中在直接代入與運算熟練。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s003-v001",
+      "u13-s003-v002",
+      "u13-s003-v003",
+      "u13-s003-v004",
+      "u13-s003-v005",
+      "u13-s003-v006",
+      "u13-s003-v007",
+      "u13-s003-v008",
+      "u13-s003-v009",
+      "u13-s003-v010",
+      "u13-s003-v011",
+      "u13-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s003-cr001",
+      "u13-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "逐式重新計算四題判別式與分母，並把所得根代回；確認負 a 題先乘 -1 不改變解集，√32 化為 4√2 後分數約簡無誤。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "c829ae3f8548f690be7a3f33aa5faf0ab05ea91371deb022b6796c04e1f80955"
+}
