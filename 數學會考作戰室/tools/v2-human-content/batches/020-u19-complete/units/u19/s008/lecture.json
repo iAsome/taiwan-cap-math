@@ -1,0 +1,249 @@
+{
+  "lectureId": "u19-s008-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-angles",
+  "skillId": "arc-length-formula",
+  "title": "弧長公式",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s008",
+    "lockedSkillId": "arc-length-formula",
+    "lockedOrder": 8,
+    "scope": "正確套用 L=(θ/360°)×2πr 並反求未知量。"
+  },
+  "learningOutcomes": [
+    "能套用一般弧長公式。",
+    "能反求半徑或圓心角。",
+    "能依題意保留π或取近似值。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "central-angle-arc",
+      "requiredLevel": "能使用「圓心角與弧」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「圓心角與弧」的結論，連接到本技能「弧長公式」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "θ",
+      "definition": "弧所對圓心角的度數。"
+    },
+    {
+      "term": "比例因子 θ/360°",
+      "definition": "弧占整圓的比例。"
+    },
+    {
+      "term": "精確值",
+      "definition": "保留π等符號、不先取小數近似的值。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "一般弧長公式只是「整圓周長乘弧所占比例」。",
+    "θ 必須使用度數且與指定弧一致，r 必須是半徑。",
+    "反求時把未知量保留在等式中，最後再檢查角度是否介於0°與360°。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "θ",
+      "statement": "弧所對圓心角的度數。"
+    },
+    {
+      "name": "比例因子 θ/360°",
+      "statement": "弧占整圓的比例。"
+    },
+    {
+      "name": "精確值",
+      "statement": "保留π等符號、不先取小數近似的值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "L=(θ/360°)×2πr",
+      "conditions": [
+        "0°<θ≤360°，r>0"
+      ],
+      "meaning": "弧長公式"
+    },
+    {
+      "formula": "θ=360°L/(2πr)",
+      "conditions": [
+        "L、r已知"
+      ],
+      "meaning": "反求圓心角"
+    }
+  ],
+  "nonApplicableCases": [
+    "把直徑直接當 r 會得到兩倍答案。",
+    "θ 若是圓周角，需先乘2得到所對弧的圓心角。",
+    "題目要求精確值時不應把π先換成3.14。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認半徑與中心角。",
+      "check": "完成此步後，確認仍在「弧長公式」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "算 θ/360 的最簡分率。",
+      "check": "完成此步後，確認仍在「弧長公式」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "乘2πr並約分。",
+      "check": "完成此步後，確認仍在「弧長公式」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "依題意處理π與單位。",
+      "check": "完成此步後，確認仍在「弧長公式」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "代回整圓比例檢查。",
+      "check": "完成此步後，確認仍在「弧長公式」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s008-L1",
+      "prompt": "r=9，θ=80°。",
+      "solutionSteps": [
+        "80/360=2/9。",
+        "L=(2/9)×18π=4π。"
+      ],
+      "answer": "4π。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s008-L2",
+      "prompt": "r=12，L=6π。求θ。",
+      "solutionSteps": [
+        "整圓周長24π。",
+        "6π/24π=1/4，θ=90°。"
+      ],
+      "answer": "90°。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s008-L3",
+      "prompt": "直徑14，θ=180°。",
+      "solutionSteps": [
+        "r=7。",
+        "L=1/2×14π=7π。"
+      ],
+      "answer": "7π。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s008-L4",
+      "prompt": "r=10，θ=72°，π取3.14。",
+      "solutionSteps": [
+        "72/360=1/5。",
+        "L=1/5×20×3.14=12.56。"
+      ],
+      "answer": "12.56。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「弧長公式」的定義、符號與單一步驟關係。",
+    "standard": "把「弧長公式」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「弧長公式」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「弧長公式」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "θ直接除以180",
+      "why": "誤把半圓比例當一般公式",
+      "correction": "一般分母是360"
+    },
+    {
+      "mistake": "直徑未除2",
+      "why": "半徑辨認錯",
+      "correction": "先寫r=d/2"
+    },
+    {
+      "mistake": "圓周角直接代θ",
+      "why": "公式中的θ是圓心角",
+      "correction": "圓周角先乘2"
+    },
+    {
+      "mistake": "過早把π取3.14",
+      "why": "造成精確值或連續計算誤差",
+      "correction": "題目要求才近似"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「弧長公式」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "弧長等於圓周長乘θ/360。",
+    "公式中的θ是圓心角。",
+    "反求後要檢查角度與單位。"
+  ],
+  "connections": {
+    "previous": "承接「圓心角與弧」。",
+    "next": "下一技能為「內接角應用」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s008-fig001",
+      "purpose": "圓 O 顯示半徑 r、中心角 θ 與對應粗弧 L，三個公式量均清楚標示。",
+      "altText": "圓 O 顯示半徑 r、中心角 θ 與對應粗弧 L，三個公式量均清楚標示。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s008-v001",
+      "u19-s008-v002",
+      "u19-s008-v003",
+      "u19-s008-v004",
+      "u19-s008-v005",
+      "u19-s008-v006",
+      "u19-s008-v007",
+      "u19-s008-v008",
+      "u19-s008-v009",
+      "u19-s008-v010",
+      "u19-s008-v011",
+      "u19-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s008-cr001",
+      "u19-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「弧長公式」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：正確套用 L=(θ/360°)×2πr 並反求未知量。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "feda68e18a02e1901514b562d2e711128f897363f06a90d688641d6686a45bfd"
+}

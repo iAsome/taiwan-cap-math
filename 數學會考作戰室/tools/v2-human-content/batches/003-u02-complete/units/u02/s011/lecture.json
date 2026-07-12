@@ -1,0 +1,227 @@
+{
+  "lectureId": "u02-s011-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-fraction-ops",
+  "skillId": "fraction-mixed-number",
+  "title": "帶分數與假分數：在完整單位和餘數與分數運算間正確轉換",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能互換帶分數與假分數。",
+    "能用圖形解釋整數部分與分數部分。",
+    "能完成帶分數加減的進位與借位。",
+    "能在乘除前把帶分數化成假分數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-multiply-divide",
+      "requiredLevel": "能把分數通分、約分並完成分數加減乘除，且知道整數可寫成分母為1的分數。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "真分數",
+      "definition": "分子小於分母的正分數。"
+    },
+    {
+      "term": "假分數",
+      "definition": "分子大於或等於分母的分數。"
+    },
+    {
+      "term": "帶分數",
+      "definition": "整數部分加上一個真分數。"
+    },
+    {
+      "term": "借位",
+      "definition": "把一個完整單位改寫成分母/分母。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a b/c",
+      "meaning": "代表a+b/c，不是a×b/c。"
+    }
+  ],
+  "conceptNarrative": [
+    "假分數的分子除以分母，商是完整單位數，餘數是剩餘份數。",
+    "帶分數化假分數時，整數部分包含每個完整單位的所有分母份數。",
+    "加法分數部分超過1要進位；減法分數部分不夠減要借1。",
+    "乘除帶分數前化成假分數，可避免把整數與分數分開錯算。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "帶分數轉假分數",
+      "statement": "a b/c=(ac+b)/c。"
+    },
+    {
+      "name": "假分數轉帶分數",
+      "statement": "分子÷分母的商為整數部分，餘數為新分子。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a b/c=(ac+b)/c",
+      "conditions": [
+        "a為非負整數",
+        "0≤b<c"
+      ],
+      "meaning": "帶分數轉換。"
+    }
+  ],
+  "nonApplicableCases": [
+    "負帶分數的符號需作用於整個值，本節以清楚括號表示。",
+    "分數部分等於1時應進位成整數。",
+    "乘除時不能把整數部分與分數部分各自運算。",
+    "圖形比較必須使用等大的完整單位。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認目前形式。",
+      "check": "是假分數還是帶分數？"
+    },
+    {
+      "step": 2,
+      "instruction": "依方向轉換。",
+      "check": "乘分母加分子或做除法？"
+    },
+    {
+      "step": 3,
+      "instruction": "加減時先通分。",
+      "check": "是否需要進位或借位？"
+    },
+    {
+      "step": 4,
+      "instruction": "乘除時先化假分數。",
+      "check": "是否可約分？"
+    },
+    {
+      "step": 5,
+      "instruction": "回到題目要求形式。",
+      "check": "要最簡分數、假分數或帶分數？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "17/5 化帶分數。",
+      "solutionSteps": [
+        "17÷5=3餘2。",
+        "分母保持5。"
+      ],
+      "answer": "3又2/5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "4又3/7 化假分數。",
+      "solutionSteps": [
+        "4×7+3=31。",
+        "分母7。"
+      ],
+      "answer": "31/7。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "3又5/8+2又7/8。",
+      "solutionSteps": [
+        "分數和12/8=1又4/8。",
+        "整數合併並約分。"
+      ],
+      "answer": "6又1/2。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "7-3又4/5。",
+      "solutionSteps": [
+        "7改寫成6又5/5。",
+        "6又5/5-3又4/5=3又1/5。"
+      ],
+      "answer": "3又1/5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把3又2/5寫成5/5。",
+      "why": "忽略整數部分含三個完整單位。",
+      "correction": "算3×5+2。"
+    },
+    {
+      "mistake": "假分數除法的商餘數互換。",
+      "why": "未理解商與餘數角色。",
+      "correction": "商作整數、餘數作分子。"
+    },
+    {
+      "mistake": "加法超過1不進位。",
+      "why": "答案仍是假分數部分。",
+      "correction": "把分數部分化帶分數。"
+    },
+    {
+      "mistake": "減法不夠減直接得到負分子。",
+      "why": "未借完整單位。",
+      "correction": "把1改寫成分母/分母。"
+    },
+    {
+      "mistake": "乘法分開算整數和分數。",
+      "why": "把加法結構誤作乘法分配。",
+      "correction": "先全部化假分數。"
+    },
+    {
+      "mistake": "圖示完整單位大小不同。",
+      "why": "基準單位不一致。",
+      "correction": "每個完整圖形必須等大。"
+    }
+  ],
+  "selfCheck": [
+    "整數部分乘分母後是否加分子？",
+    "假分數除法的餘數是否小於分母？",
+    "加法是否需要進位？",
+    "減法是否需要借位？",
+    "乘除前是否化假分數？"
+  ],
+  "summary": [
+    "帶分數是整數加真分數。",
+    "轉假分數用整數×分母+分子。",
+    "假分數轉換用商與餘數。",
+    "加減處理進借位，乘除先化假分數。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-multiply-divide，需能完成其基本判斷與計算。",
+    "next": [
+      "繁分數會把分數或帶分數放在主分數線上下。",
+      "百分率可與帶分數實際量結合。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s011-v001",
+      "u02-s011-v002",
+      "u02-s011-v003",
+      "u02-s011-v004",
+      "u02-s011-v005",
+      "u02-s011-v006",
+      "u02-s011-v007",
+      "u02-s011-v008",
+      "u02-s011-v009",
+      "u02-s011-v010",
+      "u02-s011-v011",
+      "u02-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s011-cr001",
+      "u02-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一用反向轉換核對17/5與31/7；加法例題化為52/8=13/2，減法例題化為35/5-19/5=16/5，與3又1/5一致。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "fd81a7d986f1a7a29cd306d41ec137c424f07d0d9a9c4265f41b75a73897dce3",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

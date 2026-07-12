@@ -1,0 +1,243 @@
+{
+  "lectureId": "u13-s012-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-applications",
+  "skillId": "quadratic-word-problem",
+  "lockedOrder": 12,
+  "originalLockedTitle": "二次方程式應用",
+  "title": "二次方程式文字應用",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從文字中選定未知數與合理範圍。",
+    "能把乘積、平方、差與總量關係列成方程式。",
+    "能解方程式並排除不合情境的根。",
+    "能以原情境語句作答並附單位。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-formula-basic",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "承接公式解基本代入，開始把自然語言關係轉成可解的二次方程式。",
+  "glossary": [
+    {
+      "term": "設未知數",
+      "definition": "用 x 代表題目要求或容易表達其他量的數。"
+    },
+    {
+      "term": "列方程式",
+      "definition": "把文字中的相等關係翻成含 x 的等式。"
+    },
+    {
+      "term": "情境限制",
+      "definition": "正數、整數、容量、時間等題意要求。"
+    },
+    {
+      "term": "可接受解",
+      "definition": "既是代數根，又符合所有情境限制的答案。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x(x+d)=P",
+      "meaning": "兩個相差 d 的量乘積為 P。"
+    },
+    {
+      "symbol": "R=n(p-kn)",
+      "meaning": "數量與隨數量改變的單價形成二次收入模型。"
+    }
+  ],
+  "conceptNarrative": [
+    "應用題的核心是「關係」而不是故事名詞。",
+    "先設最自然的未知數，再把其他量用 x 表示。",
+    "列式前可用單位檢查：長度×長度是面積，速度×時間是距離。",
+    "解出兩根後，負數、非整數或超過容量的根可能不合情境。",
+    "最後把答案代回原文字條件，不只代回代數式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "建模流程",
+      "statement": "讀條件→設未知數→表示其他量→列等式→解→檢查→情境作答。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "較大數=x+d，乘積=x(x+d)",
+      "conditions": [
+        "兩量相差固定 d"
+      ],
+      "meaning": "常見數量關係。"
+    },
+    {
+      "formula": "時間=距離÷速度",
+      "conditions": [
+        "速度不為 0"
+      ],
+      "meaning": "速度改變造成時間差時可形成二次方程式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只看到數字就相乘，必須先確認各量關係。",
+    "若設 x 為分母中的速度，需先註明 x>0。",
+    "代數負根在年齡、人數、長度中通常不合題意。",
+    "題目若要求整數，非整數根需排除並說明。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出要求量、相等關係與限制。",
+      "check": "是否有正數、整數或範圍？"
+    },
+    {
+      "step": 2,
+      "instruction": "設 x 並用 x 表示其他量。",
+      "check": "每個表示式是否符合文字關係？"
+    },
+    {
+      "step": 3,
+      "instruction": "依總量或乘積列方程式。",
+      "check": "等號兩邊單位是否一致？"
+    },
+    {
+      "step": 4,
+      "instruction": "選合適方法解方程式。",
+      "check": "是否求出全部代數根？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回情境篩選並作答。",
+      "check": "單位與題目問法是否完整？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "正數 x 與 x+3 的乘積為 40，求 x。",
+      "solutionSteps": [
+        "列 x(x+3)=40。",
+        "整理為 (x+8)(x-5)=0。",
+        "正數限制排除 -8。"
+      ],
+      "answer": "x=5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩個相差 4 的正數乘積為 45，求較小數。",
+      "solutionSteps": [
+        "設較小數 x，較大數 x+4。",
+        "x(x+4)=45，得 (x+9)(x-5)=0。"
+      ],
+      "answer": "較小數為 5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "速度增加 10 km/h 後，120 km 行程少 1 小時，求原速。",
+      "solutionSteps": [
+        "設原速 x>0。",
+        "120/x-120/(x+10)=1。",
+        "化簡得 x²+10x-1200=0。"
+      ],
+      "answer": "原速 30 km/h。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "每人收費 300-5n 元，共 n 人，收入 4000 元，且 n≤30，求 n。",
+      "solutionSteps": [
+        "列 n(300-5n)=4000。",
+        "化簡得 n²-60n+800=0，根為 20、40。",
+        "容量排除 40。"
+      ],
+      "answer": "n=20。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "未設未知數就直接列式。",
+      "why": "量的角色不清楚。",
+      "correction": "先寫 x 代表什麼與範圍。"
+    },
+    {
+      "mistake": "相差 4 寫成 4x。",
+      "why": "把加法差距誤成倍數。",
+      "correction": "另一量寫 x+4。"
+    },
+    {
+      "mistake": "時間題寫速度÷距離。",
+      "why": "公式顛倒。",
+      "correction": "時間=距離÷速度。"
+    },
+    {
+      "mistake": "只保留較小代數根而不看情境。",
+      "why": "篩選理由不足。",
+      "correction": "逐根代回限制。"
+    },
+    {
+      "mistake": "答案沒有單位。",
+      "why": "情境作答不完整。",
+      "correction": "寫 km/h、人、元等。"
+    },
+    {
+      "mistake": "列式單位不一致。",
+      "why": "模型關係錯誤。",
+      "correction": "用量綱檢查等號兩邊。"
+    }
+  ],
+  "selfCheck": [
+    "x 代表什麼且範圍為何？",
+    "其他量是否用 x 正確表示？",
+    "方程式兩邊單位一致嗎？",
+    "所有代數根都求出了嗎？",
+    "排除根的理由與單位完整嗎？"
+  ],
+  "summary": [
+    "應用題先建模再計算。",
+    "未知數與範圍必須先說明。",
+    "列式可用單位檢查。",
+    "代數根還需通過情境限制。"
+  ],
+  "connections": {
+    "previous": "承接公式解基本代入，開始把自然語言關係轉成可解的二次方程式。",
+    "next": [
+      "下一節專注長方形、正方形與外框面積。",
+      "連續整數技能會處理相鄰整數的固定差。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s012-v001",
+      "u13-s012-v002",
+      "u13-s012-v003",
+      "u13-s012-v004",
+      "u13-s012-v005",
+      "u13-s012-v006",
+      "u13-s012-v007",
+      "u13-s012-v008",
+      "u13-s012-v009",
+      "u13-s012-v010",
+      "u13-s012-v011",
+      "u13-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s012-cr001",
+      "u13-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "四例均把答案代回原文字條件；確認速度題清除分母後原速 30 使時間差 1 小時，收入題兩根皆為代數解但 40 超過容量。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "f0e1ee8941fbf82708f84350a76aea258869c1ab6131a33f98021295236d882e"
+}

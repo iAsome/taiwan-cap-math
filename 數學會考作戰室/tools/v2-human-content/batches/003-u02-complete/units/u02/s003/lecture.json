@@ -1,0 +1,227 @@
+{
+  "lectureId": "u02-s003-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-factors",
+  "skillId": "fraction-prime-factorization",
+  "title": "質因數分解：把合數拆成唯一的質數乘積",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能用短除法或因數樹完成質因數分解。",
+    "能用指數整理重複質因數。",
+    "能由分解式還原原數。",
+    "能用指數奇偶判斷完全平方。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-prime-composite",
+      "requiredLevel": "能辨認質數與合數，知道分解必須持續到質數。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "質因數",
+      "definition": "同時是質數又是某數因數的數。"
+    },
+    {
+      "term": "質因數分解",
+      "definition": "把大於1的整數寫成質數乘積。"
+    },
+    {
+      "term": "因數樹",
+      "definition": "把合數逐層拆成兩因數直到葉節點皆為質數。"
+    },
+    {
+      "term": "指數",
+      "definition": "相同質因數重複出現的次數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "p^a",
+      "meaning": "質數p連乘a次。"
+    }
+  ],
+  "conceptNarrative": [
+    "任何大於1的合數都能持續拆成質數乘積。",
+    "分解路徑可以不同，但質因數及其指數最後相同。",
+    "因數樹所有葉節點都要納入乘積，不能只讀一條分支。",
+    "完全平方數的每個質因數指數都是偶數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "質因數分解",
+      "statement": "n>1寫成p₁^a₁p₂^a₂…，各p為不同質數。"
+    },
+    {
+      "name": "標準排列",
+      "statement": "通常依質因數由小到大排列。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "n=p₁^a₁p₂^a₂…",
+      "conditions": [
+        "n為大於1的正整數",
+        "各p為質數"
+      ],
+      "meaning": "標準質因數分解。"
+    }
+  ],
+  "nonApplicableCases": [
+    "1沒有質因數分解。",
+    "因數中仍有合數時，分解尚未完成。",
+    "指數0的質因數通常不寫。",
+    "完全平方判斷只看質因數指數，不看數字外觀。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先用最小質數2試除。",
+      "check": "是否為偶數？"
+    },
+    {
+      "step": 2,
+      "instruction": "依序嘗試3、5、7。",
+      "check": "每次除後商仍須繼續分解。"
+    },
+    {
+      "step": 3,
+      "instruction": "直到商為1。",
+      "check": "所有除數是否皆為質數？"
+    },
+    {
+      "step": 4,
+      "instruction": "把相同質因數合併成指數。",
+      "check": "出現幾次？"
+    },
+    {
+      "step": 5,
+      "instruction": "乘回驗算。",
+      "check": "乘積是否回到原數？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "分解 90。",
+      "solutionSteps": [
+        "90=2×45。",
+        "45=3²×5。"
+      ],
+      "answer": "2×3²×5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "由因數樹 72→8×9。",
+      "solutionSteps": [
+        "8=2³。",
+        "9=3²。"
+      ],
+      "answer": "72=2³×3²。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "還原 2⁴×3×5。",
+      "solutionSteps": [
+        "2⁴=16。",
+        "16×3×5=240。"
+      ],
+      "answer": "240。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "使 18 乘最小整數成完全平方。",
+      "solutionSteps": [
+        "18=2×3²。",
+        "補一個2得2²×3²。"
+      ],
+      "answer": "乘2。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "寫成6×15就停止。",
+      "why": "兩因數仍為合數。",
+      "correction": "繼續拆到每個因數都是質數。"
+    },
+    {
+      "mistake": "漏掉因數樹某分支。",
+      "why": "只沿一條路徑讀葉節點。",
+      "correction": "收集全部葉節點並乘回。"
+    },
+    {
+      "mistake": "把2×2×3寫成2×3²。",
+      "why": "重複次數配錯底數。",
+      "correction": "同底數才合併指數。"
+    },
+    {
+      "mistake": "把2³算成2×3。",
+      "why": "誤解指數。",
+      "correction": "2³=2×2×2。"
+    },
+    {
+      "mistake": "把1寫進質因數分解。",
+      "why": "把因數與質因數混淆。",
+      "correction": "1不是質數，不寫入。"
+    },
+    {
+      "mistake": "未乘回驗算。",
+      "why": "分解過程算術錯誤未被發現。",
+      "correction": "最後計算質數乘積。"
+    }
+  ],
+  "selfCheck": [
+    "所有末端因數都是質數嗎？",
+    "相同質因數出現次數正確嗎？",
+    "是否由小到大整理？",
+    "乘回是否等於原數？",
+    "完全平方題是否逐一檢查指數奇偶？"
+  ],
+  "summary": [
+    "質因數分解把合數拆成質數乘積。",
+    "不同分解路徑得到同一標準結果。",
+    "指數記錄重複質因數。",
+    "完全平方的質因數指數皆為偶數。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-prime-composite，需能完成其基本判斷與計算。",
+    "next": [
+      "最大公因數會取共同質因數較小指數。",
+      "最小公倍數會取所有質因數較大指數。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s003-v001",
+      "u02-s003-v002",
+      "u02-s003-v003",
+      "u02-s003-v004",
+      "u02-s003-v005",
+      "u02-s003-v006",
+      "u02-s003-v007",
+      "u02-s003-v008",
+      "u02-s003-v009",
+      "u02-s003-v010",
+      "u02-s003-v011",
+      "u02-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s003-cr001",
+      "u02-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以短除、因數樹與乘回三種方式交叉核對90、72、240；完全平方補因數的指數由奇轉偶，未超出會考範圍。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "ed48ed59fbc6543131b8fdbf3a415a0f573441db41d5e4dba18c9d2c07fa2674",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

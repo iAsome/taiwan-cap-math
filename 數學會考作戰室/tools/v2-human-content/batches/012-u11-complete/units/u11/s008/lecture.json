@@ -1,0 +1,254 @@
+{
+  "lectureId": "u11-s008-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-square-root",
+  "skillId": "sqrt-comparison",
+  "lockedSkillOrder": 8,
+  "lockedTitle": "平方根大小比較",
+  "title": "平方根大小比較：用平方做精確判斷",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能比較√a與整數",
+    "能比較含係數與負號的根式",
+    "能處理排序與根式不等式"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "sqrt-rationalize-simple",
+      "requiredLevel": "能使用前一技能「分母有理化基本」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "單調性",
+      "definition": "非負數越大，其平方根越大。"
+    },
+    {
+      "term": "平方比較",
+      "definition": "正數大小可由平方大小判定。"
+    },
+    {
+      "term": "相反數次序",
+      "definition": "正數大小取負後方向反轉。"
+    },
+    {
+      "term": "等值轉換",
+      "definition": "將整數或係數根式改寫成可比較形式。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a<b⇒√a<√b",
+      "meaning": "a,b≥0。"
+    },
+    {
+      "symbol": "(m√n)²=m²n",
+      "meaning": "m√n≥0時可用於比較。"
+    }
+  ],
+  "conceptNarrative": [
+    "比較√a與k時，可把k寫成√(k²)。",
+    "比較m√n與√p時，兩者非負即可平方。",
+    "兩個負根式先比較其正值，再反轉大小方向。",
+    "根式和可能要先化簡，不能只看單一被開方數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "非負根式比較",
+      "statement": "平方函數在非負範圍遞增。"
+    },
+    {
+      "name": "負值比較",
+      "statement": "乘以-1時不等號反向。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "m√n ? √p",
+      "conditions": [
+        "若兩邊非負，改比較m²n與p。"
+      ],
+      "meaning": "避免小數近似誤差。"
+    }
+  ],
+  "nonApplicableCases": [
+    "平方比較前要確認兩邊非負。",
+    "不能只比較根號內數而忽略外係數。",
+    "負號會反轉次序。",
+    "近似相同不代表相等。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先化簡所有根式。",
+      "check": "避免不同外觀掩蓋同值。"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷正負。",
+      "check": "決定能否直接平方。"
+    },
+    {
+      "step": 3,
+      "instruction": "轉成共同形式。",
+      "check": "全寫根式或比較平方。"
+    },
+    {
+      "step": 4,
+      "instruction": "完成大小判斷。",
+      "check": "負數時記得反向。"
+    },
+    {
+      "step": 5,
+      "instruction": "用整數區間或小數驗算。",
+      "check": "排除量級錯誤。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "比較√15與4。",
+      "solutionSteps": [
+        "4=√16。",
+        "15<16。"
+      ],
+      "answer": "√15<4。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "比較2√5與√21。",
+      "solutionSteps": [
+        "平方為20與21。"
+      ],
+      "answer": "2√5<√21。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "比較-√10與-3。",
+      "solutionSteps": [
+        "√10>3。",
+        "取負反向。"
+      ],
+      "answer": "-√10<-3。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "排序√6、√8、√7。",
+      "solutionSteps": [
+        "同為非負根式。",
+        "比較被開方數。"
+      ],
+      "answer": "√6<√7<√8。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "3√2<√10，因2<10。",
+      "why": "忽略外係數3。",
+      "correction": "比較平方18與10。"
+    },
+    {
+      "mistake": "-√5>-2，因√5>2。",
+      "why": "取負後方向反轉。",
+      "correction": "-√5<-2。"
+    },
+    {
+      "mistake": "√49>7。",
+      "why": "兩者其實相等。",
+      "correction": "√49=7。"
+    },
+    {
+      "mistake": "比較時先取粗略整數。",
+      "why": "可能把很接近的數判錯。",
+      "correction": "使用平方精確比較。"
+    },
+    {
+      "mistake": "兩邊含根號就直接去掉根號。",
+      "why": "外係數與正負可能不同。",
+      "correction": "先確認形式與非負性。"
+    },
+    {
+      "mistake": "把a<b推出√a>√b。",
+      "why": "單調方向錯。",
+      "correction": "非負範圍平方根保持次序。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "非負根式可用平方比較。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "先化簡所有根式。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "3√2<√10，因2<10。；修正：比較平方18與10。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "我能用平方精確驗算嗎？"
+    }
+  ],
+  "summary": [
+    "非負根式可用平方比較。",
+    "外係數、負號與化簡都會影響次序。"
+  ],
+  "connections": {
+    "previous": "需要 s004 的估算、s003 的化簡與平方。",
+    "next": [
+      "s009 畢氏定理會比較邊長並辨認斜邊。",
+      "s016 素養題常需在近似值間決策。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s008-v001",
+      "u11-s008-v002",
+      "u11-s008-v003",
+      "u11-s008-v004",
+      "u11-s008-v005",
+      "u11-s008-v006",
+      "u11-s008-v007",
+      "u11-s008-v008",
+      "u11-s008-v009",
+      "u11-s008-v010",
+      "u11-s008-v011",
+      "u11-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s008-cr001",
+      "u11-s008-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「平方根大小比較」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「3√2<√10，因2<10。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "12e48ff5f1210d24f1bc95b3f3c3041a854c65545d3cab42220b874ebd393e1c"
+}

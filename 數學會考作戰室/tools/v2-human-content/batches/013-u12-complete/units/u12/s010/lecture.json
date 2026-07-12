@@ -1,0 +1,245 @@
+{
+  "lectureId": "u12-s010-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-literacy",
+  "skillId": "factoring-literacy",
+  "lockedSkillTitle": "因式分解素養題",
+  "title": "因式分解素養題：從資料與限制中找出乘積結構",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從長敘述擷取代數量。",
+    "能判斷因式分解是否比直接展開有效。",
+    "能把乘積因式翻回情境意義。",
+    "能處理整除、尺寸與成本限制。",
+    "能完成多步驟比較並說明理由。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "factoring-word-area",
+      "requiredLevel": "能運用前一技能並以展開驗證結果；本講義會重新連接必要步驟。"
+    }
+  ],
+  "prerequisiteBridge": "先備技能為 factoring-word-area；先確認能完成前一方法並保留所有符號，再進入本技能。",
+  "glossary": [
+    {
+      "term": "數學建模",
+      "definition": "把情境中的量與關係寫成數學式。"
+    },
+    {
+      "term": "必要條件",
+      "definition": "答案要成立必須滿足的限制。"
+    },
+    {
+      "term": "可行方案",
+      "definition": "同時符合代數關係與情境限制的選擇。"
+    },
+    {
+      "term": "素養題",
+      "definition": "需要閱讀、選模、運算與解釋的整合題。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "總量=每組數×組數",
+      "meaning": "分組情境的乘積關係。"
+    },
+    {
+      "symbol": "面積=長×寬",
+      "meaning": "尺寸情境的乘積關係。"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題先辨認「要找什麼」，再選擇因式分解，而不是看到多項式就機械分解。",
+    "乘積中的每個因式通常代表每組數量、排數、邊長或共同成本。",
+    "代數上等價不代表情境上都可行；負長度、零組數或不整除都要排除。",
+    "資料表與方案比較要用同一標準，清楚寫出分解如何支持決策。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "素養型因式分解",
+      "statement": "在真實限制下建立多項式，分解並解讀因式以完成決策。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "總數=每組數×組數",
+      "conditions": [
+        "兩者通常為正整數"
+      ],
+      "meaning": "包裝與排列。"
+    },
+    {
+      "formula": "總面積=長×寬",
+      "conditions": [
+        "長寬為正"
+      ],
+      "meaning": "空間規劃。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只分解式子但不解釋因式，未完成情境任務。",
+    "得到多組代數因式時，不能忽略正整數或尺寸限制。",
+    "不同方案單位不同時不能直接比較。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "畫線標出已知量、限制與所求。",
+      "check": "先確認單位。"
+    },
+    {
+      "step": 2,
+      "instruction": "建立多項式或辨認資料中的式子。",
+      "check": "每一項來源要可說明。"
+    },
+    {
+      "step": 3,
+      "instruction": "選擇最能顯示情境結構的分解。",
+      "check": "共同因式、公式或十字交乘。"
+    },
+    {
+      "step": 4,
+      "instruction": "解讀各因式並篩除不可行值。",
+      "check": "正值、整數、非零。"
+    },
+    {
+      "step": 5,
+      "instruction": "完成比較或決策，回到文字作答。",
+      "check": "說明為何。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "活動座位總數 n^2+9n",
+      "solutionSteps": [
+        "n 可解讀為排數。",
+        "每排 n+9 席。"
+      ],
+      "answer": "n(n+9)"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "正方形外框材料差 52^2-48^2",
+      "solutionSteps": [
+        "用和乘差 100×4。",
+        "避免計算兩個平方。"
+      ],
+      "answer": "400"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "展示板面積 x^2+11x+24",
+      "solutionSteps": [
+        "兩邊可能為 x+3、x+8。",
+        "需 x>-3，實際常取 x>0。"
+      ],
+      "answer": "(x+3)(x+8)"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩方案成本差 4m^2-25",
+      "solutionSteps": [
+        "乘積可用來判斷差值符號。",
+        "還需依 m 的實際範圍判斷。"
+      ],
+      "answer": "(2m-5)(2m+5)"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "忽略題目要比較而只算一方案。",
+      "why": "未抓所求。",
+      "correction": "先寫比較標準。"
+    },
+    {
+      "mistake": "因式解讀顛倒單位。",
+      "why": "未標單位。",
+      "correction": "每個因式都註明代表量。"
+    },
+    {
+      "mistake": "接受負長度。",
+      "why": "只看代數。",
+      "correction": "套回情境限制。"
+    },
+    {
+      "mistake": "把總數因式當唯一排列方向。",
+      "why": "忽略長寬或排列可交換。",
+      "correction": "說明交換後仍同一配置。"
+    },
+    {
+      "mistake": "表格數值直接相加。",
+      "why": "未建立關係。",
+      "correction": "先辨認共同因式或平方差。"
+    },
+    {
+      "mistake": "答案無理由。",
+      "why": "缺少決策證據。",
+      "correction": "引用分解式與限制。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "先讀所求與限制，再建式。",
+    "因式要翻回情境意義。",
+    "代數正確後仍要檢查可行性與單位。"
+  ],
+  "connections": {
+    "previous": "承接 factoring-word-area。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u12-fig-square-frame",
+      "purpose": "支援真實面積差情境的閱讀。",
+      "altText": "正方形外框面積差。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s010-v001",
+      "u12-s010-v002",
+      "u12-s010-v003",
+      "u12-s010-v004",
+      "u12-s010-v005",
+      "u12-s010-v006",
+      "u12-s010-v007",
+      "u12-s010-v008",
+      "u12-s010-v009",
+      "u12-s010-v010",
+      "u12-s010-v011",
+      "u12-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s010-cr001",
+      "u12-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個情境例分別驗證排列、平方差、尺寸與方案差；每例均交代因式意義及正值或單位限制，沒有把情境當裝飾。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "ba61c9e6b5c62120e4f58f0ba3c41a142a6544c2272376aadfd55efafbd15555"
+}

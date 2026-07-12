@@ -1,0 +1,285 @@
+{
+  "lectureId": "u21-s007-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-graphs",
+  "skillId": "quadratic-vertex-form-basic",
+  "lockedTitle": "頂點式基本",
+  "title": "讀懂 y=a(x-h)²+k：頂點式的每一個符號",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-vertex-form-basic"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由頂點式讀出頂點、對稱軸與開口。",
+    "能由頂點與一個圖上點求 a。",
+    "能將簡單頂點式展開成一般式。",
+    "能避免把括號內符號與 h 讀反。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-axis-symmetry",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "已會由一般式或等高點求對稱軸；本節把頂點、軸與係數整合在同一個式子。",
+  "glossary": [
+    {
+      "term": "頂點式",
+      "definition": "y=a(x-h)²+k，a≠0。"
+    },
+    {
+      "term": "水平位移量 h",
+      "definition": "頂點的 x 座標，也是對稱軸的位置。"
+    },
+    {
+      "term": "垂直位移量 k",
+      "definition": "頂點的 y 座標。"
+    },
+    {
+      "term": "外係數 a",
+      "definition": "決定開口方向與寬窄。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "y=a(x-h)²+k",
+      "meaning": "頂點為 (h,k) 的二次函數。"
+    },
+    {
+      "symbol": "V(h,k)",
+      "meaning": "頂點座標。"
+    },
+    {
+      "symbol": "x=h",
+      "meaning": "對稱軸。"
+    }
+  ],
+  "conceptNarrative": [
+    "平方項 (x-h)² 最小為 0，發生在 x=h，所以頂點必在 x=h。此時 y=k。",
+    "括號中若寫 x+3，應看成 x-(-3)，故 h=-3。",
+    "a>0 時，a(x-h)²≥0，y≥k，頂點是最低點；a<0 時 y≤k，頂點是最高點。",
+    "知道頂點後，若再給一個圖上點，就能代入求 a，進而唯一確定函數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "頂點式",
+      "statement": "二次函數 y=a(x-h)²+k（a≠0），其頂點為 (h,k)、對稱軸為 x=h。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "V=(h,k)",
+      "conditions": [
+        "式子已寫成 y=a(x-h)²+k"
+      ],
+      "meaning": "直接讀頂點。"
+    },
+    {
+      "formula": "a=(y-k)/(x-h)²",
+      "conditions": [
+        "給定非頂點圖上點且 x≠h"
+      ],
+      "meaning": "由一點與頂點求 a。"
+    },
+    {
+      "formula": "a(x-h)²+k=ax²-2ahx+ah²+k",
+      "conditions": [
+        "需要展開比較係數"
+      ],
+      "meaning": "頂點式轉一般式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "若給的點就是頂點，代入後 0=0，不能由該點單獨求 a。",
+    "a=0 不構成二次函數。",
+    "不能把 y=a(x-h²)+k 誤認為頂點式。",
+    "頂點式展開時 (x-h)² 不等於 x²-h²。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把括號寫成 x-h 的樣子。",
+      "check": "若是加號，h 是否為負？"
+    },
+    {
+      "step": 2,
+      "instruction": "讀出 h、k。",
+      "check": "頂點是否寫成 (h,k)？"
+    },
+    {
+      "step": 3,
+      "instruction": "看 a 的符號與絕對值。",
+      "check": "方向與寬窄是否分開判斷？"
+    },
+    {
+      "step": 4,
+      "instruction": "需要求 a 時代入額外圖上點。",
+      "check": "點的 x 與 y 是否都代入？"
+    },
+    {
+      "step": 5,
+      "instruction": "以對稱點或展開式驗算。",
+      "check": "代回原點或給定點是否成立？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "讀取 y=2(x-3)²-5 的頂點與軸。",
+      "solutionSteps": [
+        "h=3、k=-5。",
+        "頂點 (3,-5)，軸 x=3。"
+      ],
+      "answer": "頂點 (3,-5)，對稱軸 x=3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "讀取 y=-(x+4)²+1。",
+      "solutionSteps": [
+        "x+4=x-(-4)，h=-4。",
+        "a=-1，開口向下，k=1。"
+      ],
+      "answer": "頂點 (-4,1)，軸 x=-4，開口向下。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "頂點 (2,3)，且圖過 (4,11)，求函數。",
+      "solutionSteps": [
+        "設 y=a(x-2)²+3。",
+        "11=4a+3，得 a=2。"
+      ],
+      "answer": "y=2(x-2)²+3。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "展開 y=(x-1)²-4。",
+      "solutionSteps": [
+        "(x-1)²=x²-2x+1。",
+        "再減 4 得 x²-2x-3。"
+      ],
+      "answer": "y=x²-2x-3。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "y=-3(x-2)²+8 的最大值。",
+      "solutionSteps": [
+        "a<0，頂點是最高點。",
+        "頂點 y=k=8。"
+      ],
+      "answer": "最大值 8。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "直接讀 a、h、k。",
+    "standard": "由一點求 a 或展開。",
+    "advanced": "由多項圖形條件建立頂點式。",
+    "literacy": "把最高高度與發生位置翻成 k 與 h。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "x+3 讀成 h=3。",
+      "why": "未把頂點式固定為 x-h。",
+      "correction": "x+3=x-(-3)，故 h=-3。"
+    },
+    {
+      "mistake": "頂點寫成 (k,h)。",
+      "why": "交換水平與垂直角色。",
+      "correction": "頂點固定為 (h,k)。"
+    },
+    {
+      "mistake": "a 只決定開口，不影響寬窄。",
+      "why": "忽略 |a|。",
+      "correction": "符號看方向，絕對值看寬窄。"
+    },
+    {
+      "mistake": "(x-h)² 展開漏 -2hx。",
+      "why": "錯用平方差。",
+      "correction": "套 (x-h)²=x²-2hx+h²。"
+    },
+    {
+      "mistake": "用頂點本身求 a。",
+      "why": "代入只得到 0=0。",
+      "correction": "必須使用另一個 x≠h 的圖上點。"
+    },
+    {
+      "mistake": "把 k 當 y 截距。",
+      "why": "混淆頂點高與 x=0 的值。",
+      "correction": "y 截距需代 x=0 計算。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "y=4(x+2)²-7 的頂點？",
+      "answer": "(-2,-7)。"
+    },
+    {
+      "prompt": "y=-0.5(x-6)²+9 的軸？",
+      "answer": "x=6。"
+    },
+    {
+      "prompt": "頂點 (0,1)、過 (2,9)，a？",
+      "answer": "2。"
+    },
+    {
+      "prompt": "(x+1)² 展開？",
+      "answer": "x²+2x+1。"
+    }
+  ],
+  "summary": [
+    "頂點式 y=a(x-h)²+k 直接給頂點 (h,k) 與軸 x=h。",
+    "括號內符號要反讀。",
+    "a 的符號判方向，|a| 判寬窄。",
+    "頂點加一個非頂點圖上點可求 a。"
+  ],
+  "connections": {
+    "previous": "整合對稱軸三種求法與開口判準。",
+    "next": [
+      "下一技能會用頂點式有效選點建表。",
+      "最大最小值將直接讀取 k。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s007-01"
+  ],
+  "accessibilityNotes": [
+    "圖上以箭頭分別連到 a、h、k 的幾何意義，並附文字而非單靠位置。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s007-v001",
+      "u21-s007-v002",
+      "u21-s007-v003",
+      "u21-s007-v004",
+      "u21-s007-v005",
+      "u21-s007-v006",
+      "u21-s007-v007",
+      "u21-s007-v008",
+      "u21-s007-v009",
+      "u21-s007-v010",
+      "u21-s007-v011",
+      "u21-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s007-cr001",
+      "u21-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重新代入 (4,11) 驗證 a=2，展開 (x-1)²-4 得 x²-2x-3；另核對 x+4 的 h=-4 與開口向下敘述。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "dff83424cacb03984ace1ba415e6e119f68707324c80731d478e367d14d3f1bc"
+}

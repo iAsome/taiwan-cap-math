@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "unitId",
+    "skillId",
+    "contentAuthority",
+    "questionId",
+    "independentSolution",
+    "reviewerDecision"
+  ],
+  "properties": {
+    "unitId": {
+      "const": "u21"
+    },
+    "skillId": {
+      "type": "string"
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  },
+  "additionalProperties": true
+}

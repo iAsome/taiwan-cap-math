@@ -1,0 +1,1721 @@
+// Deterministically serialized reviewed U06 content. Do not edit.
+export default {
+  "lecture": {
+    "lectureId": "u06-s006-lecture-r1",
+    "unitId": "u06",
+    "numericUnitId": 6,
+    "topicId": "u06-variation",
+    "skillId": "inverse-variation",
+    "lockedSkillTitle": "反比",
+    "title": "反比：乘積固定的兩量關係",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "skillIdentity": {
+      "unitTitle": "比例式",
+      "topicTitle": "正比與反比",
+      "skillOrder": 6,
+      "lockedPrerequisiteSkillIds": [
+        "direct-variation"
+      ],
+      "capBoundary": "處理 xy=k 的反比判斷、數值求解與常見工作效率情境；不使用微積分或高中函數理論。"
+    },
+    "prerequisiteBridge": "正比以比值固定描述同倍變化；反比則在總量固定時，一量放大，另一量按相反倍數縮小。",
+    "learningOutcomes": [
+      "能以 xy 固定或 y=k/x 判斷反比。",
+      "能由一組非零資料求反比常數。",
+      "能用相反倍數或乘積解未知數。",
+      "能辨別總工作量固定與效率固定等必要條件。"
+    ],
+    "glossary": [
+      {
+        "term": "反比",
+        "definition": "兩量乘積固定；一量乘幾倍，另一量除以同樣倍數。"
+      },
+      {
+        "term": "反比常數",
+        "definition": "xy=k 中固定的乘積 k。"
+      },
+      {
+        "term": "固定總量",
+        "definition": "例如路程、工作量或矩形面積在比較過程中不改變。"
+      },
+      {
+        "term": "相反倍數",
+        "definition": "x 乘 r 倍時，y 乘 1/r 倍。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "y∝1/x",
+        "meaning": "y 與 x 成反比。"
+      },
+      {
+        "symbol": "xy=k",
+        "meaning": "x、y 的乘積固定。"
+      },
+      {
+        "symbol": "y=k/x",
+        "meaning": "x≠0 時的反比關係式。"
+      }
+    ],
+    "conceptNarrative": [
+      "反比不是一增一減就足夠，而是每組 x×y 都相同。",
+      "固定路程下，速度×時間=路程，因此速度與時間成反比。",
+      "工人數與天數成反比需要每位工人的效率相同，且總工作量不變。",
+      "x 變成 4 倍時，y 變成 1/4；若只少固定數量，通常不是反比。",
+      "x、y 不能為 0，因為 y=k/x 需除以 x；生活量還常限制為正。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "反比關係",
+        "statement": "存在固定非零或指定常數 k，使每組非零資料滿足 xy=k。"
+      },
+      {
+        "name": "反比常數",
+        "statement": "每組成對資料的固定乘積。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "xy=k",
+        "conditions": [
+          "x、y 在關係中不取使式子失去情境意義的值"
+        ],
+        "meaning": "反比乘積形式。"
+      },
+      {
+        "formula": "x1y1=x2y2",
+        "conditions": [
+          "同一固定總量與相同條件"
+        ],
+        "meaning": "兩組反比資料比較。"
+      }
+    ],
+    "nonApplicableCases": [
+      "只看到 x 增加、y 減少便判反比。",
+      "工作題中每人效率不同時不能直接用人數×天數。",
+      "總路程改變時，速度與時間的乘積不再同一常數。",
+      "x=0 時 y=k/x 沒有定義。",
+      "有固定準備時間的總耗時不一定與機器數成反比。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "找出可能固定的總量。",
+        "check": "路程、面積、工作量是否真的不變？"
+      },
+      {
+        "step": 2,
+        "instruction": "計算每組乘積 xy。",
+        "check": "是否所有乘積相同？"
+      },
+      {
+        "step": 3,
+        "instruction": "寫出 k 或 x1y1=x2y2。",
+        "check": "單位乘積有沒有意義？"
+      },
+      {
+        "step": 4,
+        "instruction": "解未知數。",
+        "check": "倍數方向是否相反？"
+      },
+      {
+        "step": 5,
+        "instruction": "檢查條件與情境。",
+        "check": "效率、工作時間、整數限制是否一致？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "x、y 成反比，x=6、y=8，求 k。",
+        "solutionSteps": [
+          "k=xy。",
+          "k=6×8=48。"
+        ],
+        "answer": "48。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "承上，x=12 時求 y。",
+        "solutionSteps": [
+          "12y=48。",
+          "y=4。"
+        ],
+        "answer": "4。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "資料 (2,18)、(3,12)、(6,7) 是否反比？",
+        "solutionSteps": [
+          "乘積為 36、36、42。",
+          "乘積不全相同。"
+        ],
+        "answer": "不是反比。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "同效率 8 人做 15 天的工作，改 12 人需幾天？",
+        "solutionSteps": [
+          "總人日數 8×15=120。",
+          "12×天數=120，得 10 天。"
+        ],
+        "answer": "10 天。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把反比常數算成 y/x。",
+        "why": "混用正比判準。",
+        "correction": "反比檢查 xy。"
+      },
+      {
+        "mistake": "人數加倍，天數也加倍。",
+        "why": "倍數方向弄反。",
+        "correction": "總工作固定時天數減半。"
+      },
+      {
+        "mistake": "不同效率工人仍用人數×天數。",
+        "why": "忽略模型條件。",
+        "correction": "先換成相同效率或總工作率。"
+      },
+      {
+        "mistake": "只用一組資料宣稱反比。",
+        "why": "一組資料無法辨別關係。",
+        "correction": "需有規則或多組資料。"
+      },
+      {
+        "mistake": "接受 x=0 的反比點。",
+        "why": "除法無定義。",
+        "correction": "反比圖形不通過座標軸。"
+      },
+      {
+        "mistake": "固定路程題把速度相加。",
+        "why": "應保持速度×時間。",
+        "correction": "列 v1t1=v2t2。"
+      }
+    ],
+    "selfCheck": [
+      "固定的是乘積而不是比值嗎？",
+      "比較條件與總量相同嗎？",
+      "x 乘倍數後 y 有按相反倍數變化嗎？",
+      "是否排除 0？",
+      "人數或件數答案需要整數嗎？"
+    ],
+    "summary": [
+      "反比的本質是 xy 固定。",
+      "一量乘 r 倍，另一量除以 r。",
+      "工作、速度情境必須先確認總量與效率條件。",
+      "一增一減只是表面，乘積檢查才是判準。"
+    ],
+    "connections": {
+      "previous": "正比以比值固定，反比以乘積固定。",
+      "next": [
+        "反比圖形將不同的成對資料呈現在座標平面。",
+        "複合應用會同時出現正比與反比步驟。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u06-s006-v001",
+        "u06-s006-v002",
+        "u06-s006-v003",
+        "u06-s006-v004",
+        "u06-s006-v005",
+        "u06-s006-v006",
+        "u06-s006-v007",
+        "u06-s006-v008",
+        "u06-s006-v009",
+        "u06-s006-v010",
+        "u06-s006-v011",
+        "u06-s006-v012"
+      ],
+      "constructedResponseIds": [
+        "u06-s006-cr001",
+        "u06-s006-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "contentAuthorityConfirmed": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "重新計算三組資料乘積 36、36、42，確認不能因前兩組成立就忽略第三組；工作例以 120 人日驗算，並明列同效率與總工作固定兩項必要假設。",
+      "reviewVersion": "human-lecture-review-u06-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "1c14b48be8447fc951f4ad6510c03baa7d3687c036b280d711f9de8c99185ffa"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u06-s006-v001",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "x、y 成反比，x=6、y=8。反比常數 k 為何？",
+      "text": "x、y 成反比，x=6、y=8。反比常數 k 為何？",
+      "givenConditions": "x、y非0。",
+      "target": "求反比常數",
+      "choices": [
+        "14",
+        "48",
+        "3/4",
+        "4/3"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "代入y=48/x，x=6時y=8。",
+      "mainExplanation": "反比常數是乘積。",
+      "explanation": "反比常數是乘積。",
+      "steps": [
+        "由反比關係求固定乘積：6×8=48",
+        "把48代回 xy，可驗證每組資料都應維持相同乘積"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "14",
+          "truth": false,
+          "reason": "14是和。"
+        },
+        {
+          "choice": "48",
+          "truth": true,
+          "reason": "k=xy=6×8=48。"
+        },
+        {
+          "choice": "3/4",
+          "truth": false,
+          "reason": "3/4是x/y。"
+        },
+        {
+          "choice": "4/3",
+          "truth": false,
+          "reason": "4/3是y/x。"
+        }
+      ],
+      "misconceptionTarget": "把反比常數當比值。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 45,
+      "unitCheck": "無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "單組資料加反比條件足以定k。",
+      "difficultyReason": "基礎乘積。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "da9d61b025f259d69e07e2bda94a9c3fcaca255172184bd3681de062575cedd6"
+    },
+    {
+      "questionId": "u06-s006-v002",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "y=36/x。當 x=9 時，y 為何？",
+      "text": "y=36/x。當 x=9 時，y 為何？",
+      "givenConditions": "x=9≠0。",
+      "target": "由反比式求值",
+      "choices": [
+        "3",
+        "27",
+        "45",
+        "4"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "反比常數為 xy=12×3=36；當 x=9 時，y=36÷9=4，並以9×4=36驗算。",
+      "mainExplanation": "直接代入反比式。",
+      "explanation": "直接代入反比式。",
+      "steps": [
+        "先由已知資料求反比常數：12×3=36",
+        "當x=9時，y=36÷9=4，並驗算9×4=36"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "3是36÷12。"
+        },
+        {
+          "choice": "27",
+          "truth": false,
+          "reason": "27是36-9。"
+        },
+        {
+          "choice": "45",
+          "truth": false,
+          "reason": "45是36+9。"
+        },
+        {
+          "choice": "4",
+          "truth": true,
+          "reason": "y=36÷9=4。"
+        }
+      ],
+      "misconceptionTarget": "把除法當加減。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 45,
+      "unitCheck": "無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "關係式完整。",
+      "difficultyReason": "先辨認 xy 固定，再以 12÷3 求 y，屬於反比基礎代入。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "232f1f37c68eaaa46b1a8dc7d02eb2a4b1580623b201095a2663b33b8718d50b"
+    },
+    {
+      "questionId": "u06-s006-v003",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "下列哪組資料呈反比？",
+      "text": "下列哪組資料呈反比？",
+      "givenConditions": "各x、y非0。",
+      "target": "從表格判斷反比",
+      "choices": [
+        "(2,18)、(3,13)、(6,6)",
+        "(2,5)、(4,7)、(6,9)",
+        "(2,18)、(3,12)、(6,6)",
+        "(3,4)、(6,8)、(9,12)"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "可寫y=36/x。",
+      "mainExplanation": "逐組計算xy。",
+      "explanation": "逐組計算xy。",
+      "steps": [
+        "2×18=36",
+        "3×12=36",
+        "6×6=36"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "(2,18)、(3,13)、(6,6)",
+          "truth": false,
+          "reason": "第二組乘積39。"
+        },
+        {
+          "choice": "(2,5)、(4,7)、(6,9)",
+          "truth": false,
+          "reason": "差值固定2但乘積不同。"
+        },
+        {
+          "choice": "(2,18)、(3,12)、(6,6)",
+          "truth": true,
+          "reason": "乘積皆為36。"
+        },
+        {
+          "choice": "(3,4)、(6,8)、(9,12)",
+          "truth": false,
+          "reason": "比值固定4/3。"
+        }
+      ],
+      "misconceptionTarget": "只看一增一減或固定差。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 75,
+      "unitCheck": "無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "成對順序明確。",
+      "difficultyReason": "多組乘積檢查。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "0e19d17e9ce539971078b3e74fa34837ef6184a4f3ce23112d7ce42cd7ebbe48"
+    },
+    {
+      "questionId": "u06-s006-v004",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "x、y 成反比，x=4 時 y=15。當 x=10 時，y 為何？",
+      "text": "x、y 成反比，x=4 時 y=15。當 x=10 時，y 為何？",
+      "givenConditions": "x非0。",
+      "target": "由一組反比資料求另一組",
+      "choices": [
+        "6",
+        "3",
+        "9",
+        "37.5"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "10×6=60。",
+      "mainExplanation": "保持乘積4×15=10×y。",
+      "explanation": "保持乘積4×15=10×y。",
+      "steps": [
+        "k=60",
+        "10y=60",
+        "y=6"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6",
+          "truth": true,
+          "reason": "k=60，y=60/10=6。"
+        },
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "3把15除5。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "9是15-6。"
+        },
+        {
+          "choice": "37.5",
+          "truth": false,
+          "reason": "37.5把反比當正比。"
+        }
+      ],
+      "misconceptionTarget": "把x倍率2.5也乘到y。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 75,
+      "unitCheck": "無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "正值解唯一。",
+      "difficultyReason": "先求反比常數再換算新 y，兩步都必須保留乘積不變。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ccee5efa93ac1c7dda7dc33cf35dbb789bd66fb0fd12046640a33fc9527968a4"
+    },
+    {
+      "questionId": "u06-s006-v005",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "若 x、y 成反比，x 變為原來的 3 倍，y 會如何？",
+      "text": "若 x、y 成反比，x 變為原來的 3 倍，y 會如何？",
+      "givenConditions": "x、y非0。",
+      "target": "判斷倍數變化",
+      "choices": [
+        "變為原來的3倍",
+        "增加3",
+        "減少3",
+        "變為原來的1/3"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "新乘積3x×y/3=xy。",
+      "mainExplanation": "令xy=k，(3x)y'=k，因此y'=y/3。",
+      "explanation": "令xy=k，(3x)y'=k，因此y'=y/3。",
+      "steps": [
+        "xy=k",
+        "3xy'=k",
+        "y'=y/3"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "變為原來的3倍",
+          "truth": false,
+          "reason": "同倍變化是正比。"
+        },
+        {
+          "choice": "增加3",
+          "truth": false,
+          "reason": "固定差不是反比。"
+        },
+        {
+          "choice": "減少3",
+          "truth": false,
+          "reason": "減少3取決於原值。"
+        },
+        {
+          "choice": "變為原來的1/3",
+          "truth": true,
+          "reason": "乘積固定，所以y需除以3。"
+        }
+      ],
+      "misconceptionTarget": "把反比與正比混淆。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 70,
+      "unitCheck": "無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "題目問倍率而非差量。",
+      "difficultyReason": "概念推理。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "edb06609af8d186805cb47666546d0acaefca34739987ac0ef4a2153b96cfd4f"
+    },
+    {
+      "questionId": "u06-s006-v006",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "正數 x、y 成反比，且 x:y=2:9、xy=72。x 為何？",
+      "text": "正數 x、y 成反比，且 x:y=2:9、xy=72。x 為何？",
+      "givenConditions": "x、y為正。",
+      "target": "結合比與反比常數",
+      "choices": [
+        "2",
+        "4",
+        "8",
+        "18"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "4×18=72且4:18=2:9。",
+      "mainExplanation": "比例與乘積共同決定實際值。",
+      "explanation": "比例與乘積共同決定實際值。",
+      "steps": [
+        "18k²=72",
+        "k=2",
+        "x=4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "2是份數。"
+        },
+        {
+          "choice": "4",
+          "truth": true,
+          "reason": "令x=2k、y=9k，18k²=72，k=2，x=4。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "8不是x。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "18是份數乘積。"
+        }
+      ],
+      "misconceptionTarget": "把k²當k。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 125,
+      "unitCheck": "無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "正值排除負根。",
+      "difficultyReason": "多條件求值。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3521978c8e4cc814fc7b374f4382615de838835dd3ea2a9905a1f4f4389afc23"
+    },
+    {
+      "questionId": "u06-s006-v007",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "同一路程下，車速由 60 公里/時提高到 75 公里/時，原需 5 小時，新時間為何？",
+      "text": "同一路程下，車速由 60 公里/時提高到 75 公里/時，原需 5 小時，新時間為何？",
+      "givenConditions": "路程相同且速度穩定。",
+      "target": "固定路程速度時間反比",
+      "choices": [
+        "4小時",
+        "3小時",
+        "6.25小時",
+        "7.5小時"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "75×4=300。",
+      "mainExplanation": "用v1t1=v2t2。",
+      "explanation": "用v1t1=v2t2。",
+      "steps": [
+        "60×5=75t",
+        "t=4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4小時",
+          "truth": true,
+          "reason": "固定路程60×5=300公里，新時間300÷75=4。"
+        },
+        {
+          "choice": "3小時",
+          "truth": false,
+          "reason": "直接減2。"
+        },
+        {
+          "choice": "6.25小時",
+          "truth": false,
+          "reason": "把時間乘75/60。"
+        },
+        {
+          "choice": "7.5小時",
+          "truth": false,
+          "reason": "把速度增加量加到時間。"
+        }
+      ],
+      "misconceptionTarget": "把反比方向弄反。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 90,
+      "unitCheck": "公里/時×時=公里。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "不計停車。",
+      "difficultyReason": "情境反比建模。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f4ee48c46150e8d45c37e3ed90100a15a17d94dd170d10c9e8cf79eb6dc1a130"
+    },
+    {
+      "questionId": "u06-s006-v008",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "同效率工人完成固定工作，8 人需 15 天。若 12 人工作，需幾天？",
+      "text": "同效率工人完成固定工作，8 人需 15 天。若 12 人工作，需幾天？",
+      "givenConditions": "每人效率與每日工時相同。",
+      "target": "工作量固定反比",
+      "choices": [
+        "6天",
+        "18天",
+        "10天",
+        "22.5天"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "12×10=120人日。",
+      "mainExplanation": "人數×天數固定。",
+      "explanation": "人數×天數固定。",
+      "steps": [
+        "8×15=12t",
+        "t=10"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6天",
+          "truth": false,
+          "reason": "直接減人數差。"
+        },
+        {
+          "choice": "18天",
+          "truth": false,
+          "reason": "誤用正比。"
+        },
+        {
+          "choice": "10天",
+          "truth": true,
+          "reason": "總人日8×15=120，120÷12=10。"
+        },
+        {
+          "choice": "22.5天",
+          "truth": false,
+          "reason": "把15乘1.5。"
+        }
+      ],
+      "misconceptionTarget": "忽略效率相同。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 85,
+      "unitCheck": "人×天。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "結果為整天。",
+      "difficultyReason": "標準工作反比。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4764b9110b209dfb781a75ab572a445d0fd9641247977b280db6a91d592698c4"
+    },
+    {
+      "questionId": "u06-s006-v009",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "矩形面積固定為 96 平方公分。長由 12 公分改為 16 公分，寬變為多少？",
+      "text": "矩形面積固定為 96 平方公分。長由 12 公分改為 16 公分，寬變為多少？",
+      "givenConditions": "面積固定。",
+      "target": "固定面積反比",
+      "choices": [
+        "6公分",
+        "4公分",
+        "8公分",
+        "12公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "16×6=96。",
+      "mainExplanation": "固定面積下長×寬=96。",
+      "explanation": "固定面積下長×寬=96。",
+      "steps": [
+        "原寬8",
+        "新寬6"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6公分",
+          "truth": true,
+          "reason": "寬=96÷16=6。"
+        },
+        {
+          "choice": "4公分",
+          "truth": false,
+          "reason": "面積64。"
+        },
+        {
+          "choice": "8公分",
+          "truth": false,
+          "reason": "8是原寬。"
+        },
+        {
+          "choice": "12公分",
+          "truth": false,
+          "reason": "面積192。"
+        }
+      ],
+      "misconceptionTarget": "用固定差。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 90,
+      "unitCheck": "公分×公分。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "長寬正。",
+      "difficultyReason": "幾何情境反比。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ac1a1f6d5739f9423033c184099cdad630c3bc28b2b1b18e9c1ce8609221b577"
+    },
+    {
+      "questionId": "u06-s006-v010",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "24 公升水箱由相同流量水龍頭注水。3 個水龍頭需 8 分鐘，4 個需多久？",
+      "text": "24 公升水箱由相同流量水龍頭注水。3 個水龍頭需 8 分鐘，4 個需多久？",
+      "givenConditions": "起始狀態相同、各龍頭流量相同。",
+      "target": "設備數與時間反比",
+      "choices": [
+        "5分鐘",
+        "8分鐘",
+        "6分鐘",
+        "10又2/3分鐘"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "固定工作量為3個水龍頭×8分鐘=24龍頭分鐘；改用4個水龍頭時，時間=24÷4=6分鐘。",
+      "mainExplanation": "每個水龍頭流量相同且同時開啟。",
+      "explanation": "每個水龍頭流量相同且同時開啟。",
+      "steps": [
+        "3×8=24龍頭分鐘",
+        "24÷4=6"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5分鐘",
+          "truth": false,
+          "reason": "不足總流量。"
+        },
+        {
+          "choice": "8分鐘",
+          "truth": false,
+          "reason": "未考慮多一個。"
+        },
+        {
+          "choice": "6分鐘",
+          "truth": true,
+          "reason": "水龍頭數×時間固定，3×8=4t，t=6。"
+        },
+        {
+          "choice": "10又2/3分鐘",
+          "truth": false,
+          "reason": "方向反了。"
+        }
+      ],
+      "misconceptionTarget": "忽略相同流量。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 90,
+      "unitCheck": "分鐘。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "不含延遲。",
+      "difficultyReason": "生活條件判讀。",
+      "literacyContextNecessity": "水箱容量固定且每個水龍頭流量相同，設備數增加會直接改變完成時間，情境條件是判斷反比不可刪除的核心。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "efa8b5ed84f4b8efa847e41d6aadacf41dab6124ec364edbaf46c9c1c643aeee"
+    },
+    {
+      "questionId": "u06-s006-v011",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "固定 600 MB 資料，速率 12 MB/s 需 50 秒。速率 20 MB/s 時，理想時間多少？",
+      "text": "固定 600 MB 資料，速率 12 MB/s 需 50 秒。速率 20 MB/s 時，理想時間多少？",
+      "givenConditions": "無延遲與速率波動。",
+      "target": "固定資料量反比",
+      "choices": [
+        "20秒",
+        "30秒",
+        "38秒",
+        "83又1/3秒"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "20×30=600。",
+      "mainExplanation": "速率×時間固定。",
+      "explanation": "速率×時間固定。",
+      "steps": [
+        "12×50=600",
+        "600/20=30"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20秒",
+          "truth": false,
+          "reason": "直接減速率差。"
+        },
+        {
+          "choice": "30秒",
+          "truth": true,
+          "reason": "資料量12×50=600，600÷20=30。"
+        },
+        {
+          "choice": "38秒",
+          "truth": false,
+          "reason": "線性減法。"
+        },
+        {
+          "choice": "83又1/3秒",
+          "truth": false,
+          "reason": "比例方向反。"
+        }
+      ],
+      "misconceptionTarget": "較快速率卻算更久。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 95,
+      "unitCheck": "MB/s×s。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "題目明示理想。",
+      "difficultyReason": "科技情境。",
+      "literacyContextNecessity": "固定資料量與理想條件是必要資訊。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "bf842044945a2df4025562c1518274fe22281bb5d3135a124c13803faf12c2cc"
+    },
+    {
+      "questionId": "u06-s006-v012",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "同一批貨用相同容量貨車運送。6 輛各跑 5 趟可完成；改用 8 輛，至少各跑幾趟？",
+      "text": "同一批貨用相同容量貨車運送。6 輛各跑 5 趟可完成；改用 8 輛，至少各跑幾趟？",
+      "givenConditions": "容量相同、貨量固定、趟數整數。",
+      "target": "反比結合向上取整",
+      "choices": [
+        "3趟",
+        "3.75趟",
+        "5趟",
+        "4趟"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "8×4=32≥30，8×3=24<30。",
+      "mainExplanation": "先算理論值，再套整數限制。",
+      "explanation": "先算理論值，再套整數限制。",
+      "steps": [
+        "6×5=30",
+        "30/8=3.75",
+        "向上取整4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3趟",
+          "truth": false,
+          "reason": "24車趟不足。"
+        },
+        {
+          "choice": "3.75趟",
+          "truth": false,
+          "reason": "不能跑0.75趟。"
+        },
+        {
+          "choice": "5趟",
+          "truth": false,
+          "reason": "足夠但非至少。"
+        },
+        {
+          "choice": "4趟",
+          "truth": true,
+          "reason": "總車趟30，30÷8=3.75；趟數須整數且至少完成，向上取整4。"
+        }
+      ],
+      "misconceptionTarget": "直接四捨五入。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "direct-variation"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['direct-variation'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 120,
+      "unitCheck": "車趟。",
+      "roundingCheck": "因至少需向上取整。",
+      "ambiguityBoundaryAudit": "各車可跑相同上限趟數。",
+      "difficultyReason": "素養反比。",
+      "literacyContextNecessity": "整趟與至少條件會改變純比例答案。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c12791254be560898f63d38ff3e0b1f14e33f2c0ad874c8ed38ec1a0c67e1b76"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u06-s006-cr001",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "x、y 成反比，x=5時y=18。求關係式與x=12時的y。",
+      "target": "建立反比式",
+      "requiredWork": [
+        "求固定乘積k。",
+        "寫y=k/x。",
+        "代入並驗算。"
+      ],
+      "fullCreditSolution": [
+        "k=5×18=90。",
+        "關係式y=90/x。",
+        "x=12時y=90/12=15/2；12×15/2=90。"
+      ],
+      "alternativeSolutions": [
+        "可用5×18=12y直接求y=15/2。"
+      ],
+      "reasoningSteps": [
+        "k=5×18=90。",
+        "關係式y=90/x。",
+        "x=12時y=90/12=15/2；12×15/2=90。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "k=90、關係式y=90/x、y=15/2且驗算乘積。"
+        },
+        {
+          "score": 2,
+          "criteria": "關係式與求值正確但漏驗算。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道乘積固定並列5×18=12y，但算術錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "使用y/x固定或得到同向倍數。"
+        }
+      ],
+      "partialCreditRules": [
+        "分數15/2或7.5皆可。",
+        "關係式需包含x≠0的理解。"
+      ],
+      "followThroughPolicy": "乘積方程正確後的除法錯誤可給1分；若錯用正比，不採跟隨。",
+      "unitNotationRules": "無單位；可註明x≠0。",
+      "answerOnlyPolicy": "只寫7.5最多1分。",
+      "commonErrors": [
+        "k算成18/5。",
+        "x增大時y也增大。",
+        "把90/12約錯。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "y=90/x；x=12時y=15/2。",
+        "ambiguity": "反比條件與非零資料足以唯一決定。",
+        "scope": "U06 locked skill only; no future-unit method required.",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "b900773d213fcdda418be47ca26d86361b61c41e6dc64cb029d2144b1e431e39"
+    },
+    {
+      "questionId": "u06-s006-cr002",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-variation",
+      "skillId": "inverse-variation",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "同效率的10人原預計12天完成工作。做了4天後，有2人離開。還需幾天完成？",
+      "target": "分段工作反比",
+      "requiredWork": [
+        "以人日表示總工作量。",
+        "扣除前4天完成量。",
+        "用剩餘8人求剩餘天數。"
+      ],
+      "fullCreditSolution": [
+        "總工作量10×12=120人日。",
+        "前4天完成10×4=40人日，剩80人日。",
+        "剩8人工作需80÷8=10天。"
+      ],
+      "alternativeSolutions": [
+        "也可用完成比例：前4天完成1/3，剩2/3；原總120人日的2/3為80。"
+      ],
+      "reasoningSteps": [
+        "總工作量10×12=120人日。",
+        "前4天完成10×4=40人日，剩80人日。",
+        "剩8人工作需80÷8=10天。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整得到總120、已做40、剩80與還需10天。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案10天正確且主要分段過程成立，但漏一個中間量。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確算出剩80人日，但最後除法或人數使用有錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "直接把12按10:8放大而忽略已做4天。"
+        }
+      ],
+      "partialCreditRules": [
+        "題目問『還需』，不是總工期；若答總14天但有過程，可依是否同時指出還需10天評分。"
+      ],
+      "followThroughPolicy": "若總工作量算術錯，後續一致扣除與除以8可給1分；若忽略分段，不給跟隨。",
+      "unitNotationRules": "單位需區分人日與天；最後答10天。",
+      "answerOnlyPolicy": "只寫10天最多2分。",
+      "commonErrors": [
+        "把離開2人從天數減去。",
+        "用8人完成全部120人日。",
+        "回答總工期14天而未答還需。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "還需10天。",
+        "ambiguity": "每人效率與每日工時固定，離開發生在4天後，條件充分。",
+        "scope": "U06 locked skill only; no future-unit method required.",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "b5c07f64a45b42e935e76941f4814a0630fb0316bf0bd1f4ab759df7fcc4df62"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "reviewId": "u06-s006-v001-semantic-review-r1",
+      "questionId": "u06-s006-v001",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "da9d61b025f259d69e07e2bda94a9c3fcaca255172184bd3681de062575cedd6",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "代入y=48/x，x=6時y=8。",
+      "derivedAnswer": "48",
+      "storedAnswer": "48",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "14是和。",
+        "k=xy=6×8=48。",
+        "3/4是x/y。",
+        "4/3是y/x。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「求反比常數」，已明示必要條件：x、y非0。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：單組資料加反比條件足以定k。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "基礎乘積。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：代入y=48/x，x=6時y=8。 正確選項為「48」。逐項檢查後，唯一為真的理由是「k=xy=6×8=48。」；其餘三項分別因「14是和。」、「3/4是x/y。」、「4/3是y/x。」而排除。邊界與語意再檢查：單組資料加反比條件足以定k。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v002-semantic-review-r1",
+      "questionId": "u06-s006-v002",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "232f1f37c68eaaa46b1a8dc7d02eb2a4b1580623b201095a2663b33b8718d50b",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "反比常數為 xy=12×3=36；當 x=9 時，y=36÷9=4，並以9×4=36驗算。",
+      "derivedAnswer": "4",
+      "storedAnswer": "4",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "3是36÷12。",
+        "27是36-9。",
+        "45是36+9。",
+        "y=36÷9=4。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由反比式求值」，已明示必要條件：x=9≠0。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：關係式完整。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "先辨認 xy 固定，再以 12÷3 求 y，屬於反比基礎代入。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：反比常數為 xy=12×3=36；當 x=9 時，y=36÷9=4，並以9×4=36驗算。 正確選項為「4」。逐項核對四個選項後，只有該選項符合題幹全部條件；其餘選項的排除理由依序為：3是36÷12。；27是36-9。；45是36+9。。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v003-semantic-review-r1",
+      "questionId": "u06-s006-v003",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "0e19d17e9ce539971078b3e74fa34837ef6184a4f3ce23112d7ce42cd7ebbe48",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "可寫y=36/x。",
+      "derivedAnswer": "(2,18)、(3,12)、(6,6)",
+      "storedAnswer": "(2,18)、(3,12)、(6,6)",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "第二組乘積39。",
+        "差值固定2但乘積不同。",
+        "乘積皆為36。",
+        "比值固定4/3。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「從表格判斷反比」，已明示必要條件：各x、y非0。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：成對順序明確。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "多組乘積檢查。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：可寫y=36/x。 正確選項為「(2,18)、(3,12)、(6,6)」。逐項檢查後，唯一為真的理由是「乘積皆為36。」；其餘三項分別因「第二組乘積39。」、「差值固定2但乘積不同。」、「比值固定4/3。」而排除。邊界與語意再檢查：成對順序明確。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v004-semantic-review-r1",
+      "questionId": "u06-s006-v004",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "ccee5efa93ac1c7dda7dc33cf35dbb789bd66fb0fd12046640a33fc9527968a4",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "10×6=60。",
+      "derivedAnswer": "6",
+      "storedAnswer": "6",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "k=60，y=60/10=6。",
+        "3把15除5。",
+        "9是15-6。",
+        "37.5把反比當正比。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由一組反比資料求另一組」，已明示必要條件：x非0。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：正值解唯一。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "先求反比常數再換算新 y，兩步都必須保留乘積不變。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：10×6=60。 正確選項為「6」。逐項檢查後，唯一為真的理由是「k=60，y=60/10=6。」；其餘三項分別因「3把15除5。」、「9是15-6。」、「37.5把反比當正比。」而排除。邊界與語意再檢查：正值解唯一。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v005-semantic-review-r1",
+      "questionId": "u06-s006-v005",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "edb06609af8d186805cb47666546d0acaefca34739987ac0ef4a2153b96cfd4f",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "新乘積3x×y/3=xy。",
+      "derivedAnswer": "變為原來的1/3",
+      "storedAnswer": "變為原來的1/3",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "同倍變化是正比。",
+        "固定差不是反比。",
+        "減少3取決於原值。",
+        "乘積固定，所以y需除以3。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「判斷倍數變化」，已明示必要條件：x、y非0。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：題目問倍率而非差量。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "概念推理。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：新乘積3x×y/3=xy。 正確選項為「變為原來的1/3」。逐項檢查後，唯一為真的理由是「乘積固定，所以y需除以3。」；其餘三項分別因「同倍變化是正比。」、「固定差不是反比。」、「減少3取決於原值。」而排除。邊界與語意再檢查：題目問倍率而非差量。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v006-semantic-review-r1",
+      "questionId": "u06-s006-v006",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "3521978c8e4cc814fc7b374f4382615de838835dd3ea2a9905a1f4f4389afc23",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "4×18=72且4:18=2:9。",
+      "derivedAnswer": "4",
+      "storedAnswer": "4",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "2是份數。",
+        "令x=2k、y=9k，18k²=72，k=2，x=4。",
+        "8不是x。",
+        "18是份數乘積。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「結合比與反比常數」，已明示必要條件：x、y為正。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：正值排除負根。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "多條件求值。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：4×18=72且4:18=2:9。 正確選項為「4」。逐項檢查後，唯一為真的理由是「令x=2k、y=9k，18k²=72，k=2，x=4。」；其餘三項分別因「2是份數。」、「8不是x。」、「18是份數乘積。」而排除。邊界與語意再檢查：正值排除負根。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v007-semantic-review-r1",
+      "questionId": "u06-s006-v007",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "f4ee48c46150e8d45c37e3ed90100a15a17d94dd170d10c9e8cf79eb6dc1a130",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "75×4=300。",
+      "derivedAnswer": "4小時",
+      "storedAnswer": "4小時",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "固定路程60×5=300公里，新時間300÷75=4。",
+        "直接減2。",
+        "把時間乘75/60。",
+        "把速度增加量加到時間。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「固定路程速度時間反比」，已明示必要條件：路程相同且速度穩定。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公里/時×時=公里。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：不計停車。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "情境反比建模。",
+      "literacyNecessity": "同一路程是乘積不變的必要條件。",
+      "reviewerNote": "獨立重算：75×4=300。 正確選項為「4小時」。逐項檢查後，唯一為真的理由是「固定路程60×5=300公里，新時間300÷75=4。」；其餘三項分別因「直接減2。」、「把時間乘75/60。」、「把速度增加量加到時間。」而排除。邊界與語意再檢查：不計停車。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v008-semantic-review-r1",
+      "questionId": "u06-s006-v008",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "4764b9110b209dfb781a75ab572a445d0fd9641247977b280db6a91d592698c4",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "12×10=120人日。",
+      "derivedAnswer": "10天",
+      "storedAnswer": "10天",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "直接減人數差。",
+        "誤用正比。",
+        "總人日8×15=120，120÷12=10。",
+        "把15乘1.5。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「工作量固定反比」，已明示必要條件：每人效率與每日工時相同。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：人×天。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：結果為整天。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "標準工作反比。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：12×10=120人日。 正確選項為「10天」。逐項檢查後，唯一為真的理由是「總人日8×15=120，120÷12=10。」；其餘三項分別因「直接減人數差。」、「誤用正比。」、「把15乘1.5。」而排除。邊界與語意再檢查：結果為整天。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v009-semantic-review-r1",
+      "questionId": "u06-s006-v009",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "ac1a1f6d5739f9423033c184099cdad630c3bc28b2b1b18e9c1ce8609221b577",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "16×6=96。",
+      "derivedAnswer": "6公分",
+      "storedAnswer": "6公分",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "寬=96÷16=6。",
+        "面積64。",
+        "8是原寬。",
+        "面積192。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「固定面積反比」，已明示必要條件：面積固定。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公分×公分。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：長寬正。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "幾何情境反比。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：16×6=96。 正確選項為「6公分」。逐項檢查後，唯一為真的理由是「寬=96÷16=6。」；其餘三項分別因「面積64。」、「8是原寬。」、「面積192。」而排除。邊界與語意再檢查：長寬正。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v010-semantic-review-r1",
+      "questionId": "u06-s006-v010",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "efa8b5ed84f4b8efa847e41d6aadacf41dab6124ec364edbaf46c9c1c643aeee",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "固定工作量為3個水龍頭×8分鐘=24龍頭分鐘；改用4個水龍頭時，時間=24÷4=6分鐘。",
+      "derivedAnswer": "6分鐘",
+      "storedAnswer": "6分鐘",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "不足總流量。",
+        "未考慮多一個。",
+        "水龍頭數×時間固定，3×8=4t，t=6。",
+        "方向反了。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「設備數與時間反比」，已明示必要條件：起始狀態相同、各龍頭流量相同。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：分鐘。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：不含延遲。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "生活條件判讀。",
+      "literacyNecessity": "水箱容量固定且每個水龍頭流量相同，設備數增加會直接改變完成時間，情境條件是判斷反比不可刪除的核心。",
+      "reviewerNote": "獨立重算：固定工作量為3個水龍頭×8分鐘=24龍頭分鐘；改用4個水龍頭時，時間=24÷4=6分鐘。 正確選項為「6分鐘」。逐項核對四個選項後，只有該選項符合題幹全部條件；其餘選項的排除理由依序為：不足總流量。；未考慮多一個。；方向反了。。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v011-semantic-review-r1",
+      "questionId": "u06-s006-v011",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "bf842044945a2df4025562c1518274fe22281bb5d3135a124c13803faf12c2cc",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "20×30=600。",
+      "derivedAnswer": "30秒",
+      "storedAnswer": "30秒",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "直接減速率差。",
+        "資料量12×50=600，600÷20=30。",
+        "線性減法。",
+        "比例方向反。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「固定資料量反比」，已明示必要條件：無延遲與速率波動。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：MB/s×s。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：題目明示理想。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "科技情境。",
+      "literacyNecessity": "固定資料量與理想條件是必要資訊。",
+      "reviewerNote": "獨立重算：20×30=600。 正確選項為「30秒」。逐項檢查後，唯一為真的理由是「資料量12×50=600，600÷20=30。」；其餘三項分別因「直接減速率差。」、「線性減法。」、「比例方向反。」而排除。邊界與語意再檢查：題目明示理想。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s006-v012-semantic-review-r1",
+      "questionId": "u06-s006-v012",
+      "unitId": "u06",
+      "skillId": "inverse-variation",
+      "contentSha256": "c12791254be560898f63d38ff3e0b1f14e33f2c0ad874c8ed38ec1a0c67e1b76",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "8×4=32≥30，8×3=24<30。",
+      "derivedAnswer": "4趟",
+      "storedAnswer": "4趟",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "24車趟不足。",
+        "不能跑0.75趟。",
+        "足夠但非至少。",
+        "總車趟30，30÷8=3.75；趟數須整數且至少完成，向上取整4。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「反比結合向上取整」，已明示必要條件：容量相同、貨量固定、趟數整數。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：車趟。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：各車可跑相同上限趟數。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：因至少需向上取整。。"
+      },
+      "difficultyReason": "素養反比。",
+      "literacyNecessity": "整趟與至少條件會改變純比例答案。",
+      "reviewerNote": "獨立重算：8×4=32≥30，8×3=24<30。 正確選項為「4趟」。逐項檢查後，唯一為真的理由是「總車趟30，30÷8=3.75；趟數須整數且至少完成，向上取整4。」；其餘三項分別因「24車趟不足。」、「不能跑0.75趟。」、「足夠但非至少。」而排除。邊界與語意再檢查：各車可跑相同上限趟數。",
+      "reviewerDecision": "pass"
+    }
+  ],
+  "drawingSpecs": []
+};

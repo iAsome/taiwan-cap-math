@@ -1,0 +1,239 @@
+{
+  "lectureId": "u22-s009-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-quartiles",
+  "skillId": "box-plot-compare",
+  "lockedSkillOrder": 9,
+  "title": "兩盒狀圖比較：以中位數與IQR與全距與偏態比較兩組資料。",
+  "originalLockedTitle": "兩盒狀圖比較",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能在同尺度下比較兩盒狀圖。",
+    "能同時比較中位數、IQR與全距。",
+    "能辨識箱體重疊與端點重疊。",
+    "能寫出不超過證據的比較句。"
+  ],
+  "prerequisiteSkillIds": [
+    "range-iqr-compare"
+  ],
+  "prerequisiteBridge": "整合前面所有四分位與盒狀圖技能。",
+  "glossary": [
+    {
+      "term": "中心位置比較",
+      "definition": "以中位數高低比較典型中心。"
+    },
+    {
+      "term": "中段分散比較",
+      "definition": "以IQR大小比較中間50%。"
+    },
+    {
+      "term": "整體分散比較",
+      "definition": "以全距比較端點跨度。"
+    },
+    {
+      "term": "重疊",
+      "definition": "兩組位置區間交錯，個體可能互有高低。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "Δ中位數=Q2甲-Q2乙",
+      "meaning": "中心差。"
+    },
+    {
+      "symbol": "IQR甲與IQR乙",
+      "meaning": "箱寬比較。"
+    },
+    {
+      "symbol": "R甲與R乙",
+      "meaning": "總跨度比較。"
+    }
+  ],
+  "conceptNarrative": [
+    "比較前先確定兩圖數軸方向、單位與刻度相同。",
+    "中位數較高只代表中心位置較高；若分布重疊，不能說每一筆都高。",
+    "箱體完全在另一箱體右側表示Q1甲>Q3乙，但鬚線仍可能重疊。",
+    "相同五數摘要不代表原始資料或筆數相同。",
+    "實務決策可依需求在中心、穩定度與極端風險間取捨，但要說明指標。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "雙重條件比較",
+      "statement": "同時滿足例如中心較高且全距較小。"
+    },
+    {
+      "name": "保守結論",
+      "statement": "使用「中位數較高」「較可能較穩定」而非絕對個體敘述。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "IQR=箱寬",
+      "conditions": [
+        "同尺度圖可直接比較數值。"
+      ],
+      "meaning": "同尺度圖可直接比較數值。"
+    },
+    {
+      "formula": "R=max-min",
+      "conditions": [
+        "由兩端計算。"
+      ],
+      "meaning": "由兩端計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不同刻度不可直接比視覺寬度。",
+    "不能由盒狀圖比較平均數。",
+    "不能由中位數比較推出個體勝率。",
+    "不能把樣本數相同當分布完整資訊。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "同尺度檢查",
+      "check": "必要時換算。"
+    },
+    {
+      "step": 2,
+      "instruction": "比中心",
+      "check": "記中位數。"
+    },
+    {
+      "step": 3,
+      "instruction": "比中段",
+      "check": "算IQR。"
+    },
+    {
+      "step": 4,
+      "instruction": "比整體",
+      "check": "算全距與看重疊。"
+    },
+    {
+      "step": 5,
+      "instruction": "依題目需求下結論",
+      "check": "附上不能推出的事項。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "甲五數5、10、14、18、25；乙6、9、15、21、24",
+      "solutionSteps": [
+        "乙中位高1且IQR大4。"
+      ],
+      "answer": "乙中位高1且IQR大4。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "A 0、10、11、12、40；B 5、8、11、14、17",
+      "solutionSteps": [
+        "中位相同；A IQR小、全距大。"
+      ],
+      "answer": "中位相同；A IQR小、全距大。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "甲每格2、箱4格；乙每格5、箱2格",
+      "solutionSteps": [
+        "IQR甲8、乙10。"
+      ],
+      "answer": "IQR甲8、乙10。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "箱體完全分離但鬚線重疊",
+      "solutionSteps": [
+        "只能說中間50%位置分離。"
+      ],
+      "answer": "只能說中間50%位置分離。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只看中位數便選「全面較好」",
+      "why": "還要看分散與任務需求。",
+      "correction": "還要看分散與任務需求。"
+    },
+    {
+      "mistake": "只看圖上格數",
+      "why": "先換成實際刻度。",
+      "correction": "先換成實際刻度。"
+    },
+    {
+      "mistake": "相同盒狀圖就說資料相同",
+      "why": "摘要遺失內部細節。",
+      "correction": "摘要遺失內部細節。"
+    },
+    {
+      "mistake": "把重疊解讀為沒有差異",
+      "why": "中心或分散仍可不同。",
+      "correction": "中心或分散仍可不同。"
+    }
+  ],
+  "selfCheck": [
+    "單位刻度是否一致？",
+    "三個指標是否分開比較？",
+    "是否把群體結論誇成個體必然？",
+    "決策需求是否明確？"
+  ],
+  "summary": [
+    "比較兩盒狀圖要同時看中心、中段與端點。",
+    "不同指標可能互有優勢。",
+    "重疊使個體結論不確定。",
+    "報告句子需與證據強度一致。"
+  ],
+  "connections": {
+    "previous": "整合前面所有四分位與盒狀圖技能。",
+    "next": [
+      "下一主題進入機率；統計摘要仍會在綜合素養題中使用。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u22-boxplot-compare"
+  ],
+  "figureAccessibility": [
+    {
+      "figureId": "fig-u22-boxplot-compare",
+      "altText": "同一數軸上的甲乙兩個水平盒狀圖。甲五數4、10、15、18、24；乙五數6、9、15、22、25。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s009-v001",
+      "u22-s009-v002",
+      "u22-s009-v003",
+      "u22-s009-v004",
+      "u22-s009-v005",
+      "u22-s009-v006",
+      "u22-s009-v007",
+      "u22-s009-v008",
+      "u22-s009-v009",
+      "u22-s009-v010",
+      "u22-s009-v011",
+      "u22-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s009-cr001",
+      "u22-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "以三組五數逐項重算中位數、IQR與全距；所有結論均移除「每位」「一定」等盒狀圖無法支持的措辭。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "以中位數、IQR、全距與偏態比較兩組資料。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "32becafdc25f6c61d21196528848f8e0d7ba72ab6cca4bb14e5dabe792d2f478"
+}

@@ -1,0 +1,239 @@
+{
+  "lectureId": "u03-s006-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-solving",
+  "skillId": "linear-equation-fractions",
+  "title": "含分母的一元一次方程式：用最小公倍數一次消除分母",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能解單一分母與多分母的一元一次方程式。",
+    "能選擇所有分母的最小公倍數。",
+    "能在消分母時乘到等式中的每一項。",
+    "能保留分數解並代回原式。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-parentheses",
+      "requiredLevel": "能正確展開括號與合併同類項，熟悉分數通分和最小公倍數。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "分母",
+      "definition": "分數線下方的數，表示平均分成的份數。"
+    },
+    {
+      "term": "最小公倍數",
+      "definition": "可同時被所有分母整除的最小正整數。"
+    },
+    {
+      "term": "消分母",
+      "definition": "等式兩邊同乘分母的公倍數，使分數項化為整數係數。"
+    },
+    {
+      "term": "精確解",
+      "definition": "以整數或最簡分數表示，不任意取近似值。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(ax+b)/m",
+      "meaning": "整個分子ax+b都除以m。"
+    },
+    {
+      "symbol": "LCM(m,n)",
+      "meaning": "m與n的最小公倍數。"
+    }
+  ],
+  "conceptNarrative": [
+    "含分母方程式仍只使用等量公理。",
+    "最穩定方法是找所有分母的最小公倍數，讓等式每一項都乘上它。",
+    "若分子有括號，消分母後仍須完整保留分子結構。",
+    "解是分數並不表示錯誤；只要代回原式左右相等即可。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "消分母原理",
+      "statement": "若等式兩邊同乘非零數M，等式仍成立。"
+    },
+    {
+      "name": "最小公倍數策略",
+      "statement": "M取所有分母的最小公倍數，可避免多餘大係數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x/m=a ⇒ x=am",
+      "conditions": [
+        "m≠0"
+      ],
+      "meaning": "單一分母方程式。"
+    },
+    {
+      "formula": "A/m+B/n=C",
+      "conditions": [
+        "m、n皆非0"
+      ],
+      "meaning": "可同乘LCM(m,n)。"
+    }
+  ],
+  "nonApplicableCases": [
+    "分母為0的式子沒有定義。",
+    "不能只乘含未知數的分數項而漏乘常數或等式右邊。",
+    "不能把分母直接搬到另一邊卻改成加減。",
+    "若小數可化成分數或同乘10，也可精確消除。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出等式中所有分母。",
+      "check": "括號整體是否位於分子？"
+    },
+    {
+      "step": 2,
+      "instruction": "求最小公倍數。",
+      "check": "是否同時整除每個分母？"
+    },
+    {
+      "step": 3,
+      "instruction": "等式每一項都乘該公倍數。",
+      "check": "右邊與常數項是否漏乘？"
+    },
+    {
+      "step": 4,
+      "instruction": "展開、合併並解基本方程式。",
+      "check": "負號與括號是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原分數式。",
+      "check": "左右是否精確相等？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解x/6=5。",
+      "solutionSteps": [
+        "兩邊同乘6。",
+        "x=30。"
+      ],
+      "answer": "30。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解(x+4)/3=7。",
+      "solutionSteps": [
+        "乘3得x+4=21。",
+        "x=17。"
+      ],
+      "answer": "17。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解x/4+x/6=5。",
+      "solutionSteps": [
+        "同乘12得3x+2x=60。",
+        "5x=60，x=12。"
+      ],
+      "answer": "12。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解(2x-1)/3-(x+2)/4=2。",
+      "solutionSteps": [
+        "同乘12得4(2x-1)-3(x+2)=24。",
+        "8x-4-3x-6=24。",
+        "5x=34，x=34/5。"
+      ],
+      "answer": "34/5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "最小公倍數只乘左邊。",
+      "why": "破壞等量關係。",
+      "correction": "等式兩邊每一項都乘。"
+    },
+    {
+      "mistake": "消分母時漏乘常數項。",
+      "why": "只注意含x的分數。",
+      "correction": "逐項標記乘數。"
+    },
+    {
+      "mistake": "把(x+2)/3寫成x+2/3。",
+      "why": "誤解分數線作用範圍。",
+      "correction": "保留完整分子括號。"
+    },
+    {
+      "mistake": "多個分母直接相乘後算錯。",
+      "why": "未找較小公倍數且係數過大。",
+      "correction": "優先使用最小公倍數。"
+    },
+    {
+      "mistake": "分數解擅自取整。",
+      "why": "預設情境答案一定整數。",
+      "correction": "先代回，再依情境判斷。"
+    },
+    {
+      "mistake": "代回時使用消分母後的式子而非原式。",
+      "why": "無法檢查消分母步驟。",
+      "correction": "一定代回最初方程式。"
+    }
+  ],
+  "selfCheck": [
+    "所有分母是否非零？",
+    "最小公倍數是否正確？",
+    "每一項是否都被乘到？",
+    "括號與負號是否保留？",
+    "答案是否代回原分數式？"
+  ],
+  "summary": [
+    "消分母是等量公理的應用。",
+    "最小公倍數可簡化係數。",
+    "每一項都必須同乘。",
+    "分數解可完全正確。"
+  ],
+  "connections": {
+    "previous": "需要熟悉括號方程式、分數通分與最小公倍數。",
+    "next": [
+      "方程式解的檢查將直接把候選值代回原分數式。",
+      "後續應用題可能產生分數或小數解，需再檢查情境。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s006-v001",
+      "u03-s006-v002",
+      "u03-s006-v003",
+      "u03-s006-v004",
+      "u03-s006-v005",
+      "u03-s006-v006",
+      "u03-s006-v007",
+      "u03-s006-v008",
+      "u03-s006-v009",
+      "u03-s006-v010",
+      "u03-s006-v011",
+      "u03-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s006-cr001",
+      "u03-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例分別代回原式：30/6=5、(17+4)/3=7、12/4+12/6=5、(2×34/5-1)/3-(34/5+2)/4=2；並確認所有分母非零及等式每項皆同乘。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "daee3b53117dc146b431c5eb1c236d1214312d9c1d82a122dbf3b60fea196f10",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

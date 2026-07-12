@@ -1,0 +1,246 @@
+{
+  "lectureId": "u17-s017-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-literacy",
+  "skillId": "quadrilateral-literacy",
+  "lockedTitle": "四邊形素養題",
+  "title": "四邊形素養題：把圖面和尺寸與限制翻成幾何模型",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：quadrilateral-angle-sum。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "從生活資料辨認四邊形類型與必要尺寸",
+    "選擇周長、面積或角度模型",
+    "解釋結果與單位並檢查限制"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadrilateral-angle-sum",
+      "requiredLevel": "能正確使用「quadrilateral-angle-sum」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "模型化",
+      "definition": "把情境資訊轉成數學圖形與關係"
+    },
+    {
+      "term": "有效尺寸",
+      "definition": "真正參與計算的長、高、底或角"
+    },
+    {
+      "term": "材料損耗",
+      "definition": "裁切或施工時額外增加的用量"
+    },
+    {
+      "term": "可行性檢查",
+      "definition": "結果是否符合尺寸、成本與幾何限制"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題的困難常在資訊篩選，而不是公式本身。先確定題目要的是邊界長度、覆蓋面積、角度，還是分類。",
+    "圖面中的斜邊、標示方向、比例尺與單位都可能影響模型。",
+    "計算後要回到情境，例如材料通常需要向上取整，面積單位要換成平方公尺。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "模型化",
+      "statement": "把情境資訊轉成數學圖形與關係"
+    },
+    {
+      "name": "有效尺寸",
+      "statement": "真正參與計算的長、高、底或角"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "材料片數=總面積÷每片有效面積",
+      "conditions": [
+        "若不可裁成零碎片，最後向上取整"
+      ],
+      "meaning": "用於四邊形素養題中符合條件的推理或計算。"
+    },
+    {
+      "formula": "邊框長度=外周長-不需施工的開口",
+      "conditions": [
+        "依情境扣除"
+      ],
+      "meaning": "用於四邊形素養題中符合條件的推理或計算。"
+    },
+    {
+      "formula": "成本=數量×單價",
+      "conditions": [
+        "數量須先符合包裝或整數限制"
+      ],
+      "meaning": "用於四邊形素養題中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出問題真正所求",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "整理圖形類型與有效尺寸",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "統一單位",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "選公式並列式",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "依情境處理取整、損耗或扣除",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 6,
+      "instruction": "用文字解釋答案",
+      "check": "完成第6步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "梯形花圃兩底12與8、高5",
+      "solutionSteps": [
+        "面積50平方公尺。"
+      ],
+      "answer": "面積50平方公尺。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "每片地磚0.24平方公尺，需鋪10平方公尺",
+      "solutionSteps": [
+        "至少42片。"
+      ],
+      "answer": "至少42片。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "矩形框有1公尺門口不裝框",
+      "solutionSteps": [
+        "周長扣1公尺。"
+      ],
+      "answer": "周長扣1公尺。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "圖示不按比例",
+      "solutionSteps": [
+        "不能量圖估算，需用標示數值。"
+      ],
+      "answer": "不能量圖估算，需用標示數值。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把所有數字都代入",
+      "why": "先判斷哪些是有效尺寸",
+      "correction": "先判斷哪些是有效尺寸"
+    },
+    {
+      "mistake": "面積除以單片面積後捨去小數",
+      "why": "材料片數通常向上取整",
+      "correction": "材料片數通常向上取整"
+    },
+    {
+      "mistake": "公分與公尺混算",
+      "why": "先統一單位",
+      "correction": "先統一單位"
+    },
+    {
+      "mistake": "忽略門口或挖空",
+      "why": "依施工範圍加減",
+      "correction": "依施工範圍加減"
+    },
+    {
+      "mistake": "只有數字沒有情境結論",
+      "why": "需附單位與可行性說明",
+      "correction": "需附單位與可行性說明"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「四邊形素養題」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "素養題的困難常在資訊篩選，而不是公式本身。先確定題目要的是邊界長度、覆蓋面積、角度，還是分類。",
+    "材料片數=總面積÷每片有效面積",
+    "解題時先確認「若不可裁成零碎片，最後向上取整」。"
+  ],
+  "connections": {
+    "previous": "承接quadrilateral-angle-sum。",
+    "next": "下一技能依鎖定順序為quadrilateral-proof-basic。"
+  },
+  "figureReferences": [
+    "u17-s017-fig001"
+  ],
+  "figureAccessibility": "梯形花圃附兩底、高、入口與材料區域標示，提醒分開計算面積與周長。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s017-v001",
+      "u17-s017-v002",
+      "u17-s017-v003",
+      "u17-s017-v004",
+      "u17-s017-v005",
+      "u17-s017-v006",
+      "u17-s017-v007",
+      "u17-s017-v008",
+      "u17-s017-v009",
+      "u17-s017-v010",
+      "u17-s017-v011",
+      "u17-s017-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s017-cr001",
+      "u17-s017-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義把素養題拆成資訊篩選、模型、計算與情境檢查四層，避免只堆疊生活名詞。"
+  },
+  "contentSha256": "ff406c636e2856510be2d4c8e069cf18894f81ce8451c162b138287ab8d7d240"
+}

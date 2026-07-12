@@ -1,0 +1,242 @@
+{
+  "lectureId": "u03-s015-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-reasoning",
+  "skillId": "linear-equation-literacy-context",
+  "title": "一元一次方程式綜合素養題：從真實規則建立可驗證模型",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從多段文字、表格或圖示找出已知量與未知量。",
+    "能區分初始量、固定變化、按量變化與剩餘量。",
+    "能建立一元一次方程式並說明每一項來源。",
+    "能以單位、範圍與原情境完成最終驗證。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-plan-comparison",
+      "requiredLevel": "能為兩種方案建立總費用式，求同價點並判斷區間。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "數學模型",
+      "definition": "用式子或方程式表達真實情境中的數量關係。"
+    },
+    {
+      "term": "初始量",
+      "definition": "變化開始前已存在的數量。"
+    },
+    {
+      "term": "變化率",
+      "definition": "每一單位時間或數量造成的固定增減。"
+    },
+    {
+      "term": "限制條件",
+      "definition": "答案必須符合的容量、整數、非負或範圍規則。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "A+rx=T",
+      "meaning": "初始量A加每單位變化r乘次數x等於目標T。"
+    },
+    {
+      "symbol": "A-rx=T",
+      "meaning": "初始量隨x個單位固定減少後達到T。"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題不是在計算題前加故事，而是情境規則真正決定方程式結構。",
+    "先把資料依角色分類：初始量、每次變化、固定費、總量、剩餘量。",
+    "多階段情境要判斷哪些變化重複x次、哪些只發生一次。",
+    "解完後用原情境逐項重建結果，檢查單位、容量與整數性。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "線性累積模型",
+      "statement": "目標量=初始量+每次變化×次數。"
+    },
+    {
+      "name": "多層費用模型",
+      "statement": "總額=固定部分+按量部分±折抵或剩餘。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A+rx=T",
+      "conditions": [
+        "每次變化固定",
+        "x為同一單位的次數"
+      ],
+      "meaning": "固定增加。"
+    },
+    {
+      "formula": "A-rx=T",
+      "conditions": [
+        "每次減少固定且不跨越題目限制"
+      ],
+      "meaning": "固定減少。"
+    }
+  ],
+  "nonApplicableCases": [
+    "情境中的費率若分段，不能強行用單一線性式。",
+    "不同單位未換算前不能放入同一方程式。",
+    "資料不足時應判定不能唯一求解。",
+    "素養題答案仍需在國中一元一次範圍內，不用高階模型。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "閱讀題目後先寫所求量與單位。",
+      "check": "未知數代表什麼？"
+    },
+    {
+      "step": 2,
+      "instruction": "將資料分類為初始、固定、變動、目標。",
+      "check": "每個數量作用一次或多次？"
+    },
+    {
+      "step": 3,
+      "instruction": "用一句話說明等號兩邊代表什麼。",
+      "check": "方程式是否符合情境流程？"
+    },
+    {
+      "step": 4,
+      "instruction": "解方程式並保留精確單位。",
+      "check": "運算是否仍是一元一次？"
+    },
+    {
+      "step": 5,
+      "instruction": "回到情境重建總量。",
+      "check": "容量、整數與範圍是否通過？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "已有250公斤物資，每天增加18公斤，幾天後達430公斤？",
+      "solutionSteps": [
+        "250+18x=430。",
+        "18x=180。",
+        "x=10。"
+      ],
+      "answer": "10天。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "水槽160公升，每分鐘淨流出5公升，降到85公升需多久？",
+      "solutionSteps": [
+        "160-5t=85。",
+        "5t=75。",
+        "t=15。"
+      ],
+      "answer": "15分鐘。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "活動收入每人120元，固定支出1800元，淨收入3000元。",
+      "solutionSteps": [
+        "120x-1800=3000。",
+        "120x=4800。",
+        "x=40。"
+      ],
+      "answer": "40人。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "方案含10單位，超過每單位25元，超額費150元。",
+      "solutionSteps": [
+        "超過量150÷25=6。",
+        "總量10+6。"
+      ],
+      "answer": "16單位。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到數字就全部相加。",
+      "why": "未辨認角色與方向。",
+      "correction": "先分類資料。"
+    },
+    {
+      "mistake": "每次變化只算一次。",
+      "why": "漏乘時間或次數。",
+      "correction": "寫成rx。"
+    },
+    {
+      "mistake": "固定費也乘次數。",
+      "why": "混淆固定與變動。",
+      "correction": "固定項放在括號外。"
+    },
+    {
+      "mistake": "分段費率當單一費率。",
+      "why": "忽略門檻。",
+      "correction": "先判斷使用量落在哪一段。"
+    },
+    {
+      "mistake": "解出數字未附單位。",
+      "why": "無法確認未知數意義。",
+      "correction": "從設未知數開始標示單位。"
+    },
+    {
+      "mistake": "未回到情境驗證。",
+      "why": "可能接受超容量或小數人數。",
+      "correction": "重建原總量並檢查限制。"
+    }
+  ],
+  "selfCheck": [
+    "未知數與單位是否先寫清楚？",
+    "每個資料的角色是否分類？",
+    "重複變化是否乘次數？",
+    "等號兩邊是否代表同一總量？",
+    "答案是否回到情境驗證？"
+  ],
+  "summary": [
+    "真正的素養情境決定列式。",
+    "初始量與變化率要分開。",
+    "每份與整體層級不可混淆。",
+    "解後需用情境限制驗收。"
+  ],
+  "connections": {
+    "previous": "整合U03前十四個技能，並使用U01、U02的整數、分數與百分率能力。",
+    "next": [
+      "下一單元將把未知數擴充為兩個，建立二元一次聯立方程式。",
+      "最終模考會以多來源資料與完整作答要求綜合評量。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s015-v001",
+      "u03-s015-v002",
+      "u03-s015-v003",
+      "u03-s015-v004",
+      "u03-s015-v005",
+      "u03-s015-v006",
+      "u03-s015-v007",
+      "u03-s015-v008",
+      "u03-s015-v009",
+      "u03-s015-v010",
+      "u03-s015-v011",
+      "u03-s015-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s015-cr001",
+      "u03-s015-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例分別驗算250+18×10=430、160-5×15=85、120×40-1800=3000、10+150÷25=16；逐項核對初始量、變化率、固定支出與超額門檻。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "0a89ef4bc770df947113a432389e3bf2c8c5d531f9deade4ef45e8018a12d781",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

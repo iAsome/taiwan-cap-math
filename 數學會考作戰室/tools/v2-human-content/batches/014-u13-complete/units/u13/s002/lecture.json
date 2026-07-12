@@ -1,0 +1,246 @@
+{
+  "lectureId": "u13-s002-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-completing-square",
+  "lockedOrder": 2,
+  "originalLockedTitle": "配方法",
+  "title": "配方法的一般步驟",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由 x²+2px 補成 (x+p)²。",
+    "能對方程式兩邊加上同一數維持等式。",
+    "能處理首項係數不為 1 的情況。",
+    "能由完全平方形式使用平方根求解。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-factor",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "承接因式分解法；當二次式不易分解時，配方法提供普遍可用的轉換。",
+  "glossary": [
+    {
+      "term": "配方法",
+      "definition": "藉由加減同一數，把二次式改寫成完全平方的方法。"
+    },
+    {
+      "term": "完全平方",
+      "definition": "可寫成 (x+p)² 的二次式。"
+    },
+    {
+      "term": "平方項係數",
+      "definition": "x² 前的係數；配方前通常先化為 1。"
+    },
+    {
+      "term": "等式性質",
+      "definition": "等式兩邊同加、同減或同除以非零數，等式仍成立。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x²+2px+p²=(x+p)²",
+      "meaning": "中間項係數的一半是 p，需補 p²。"
+    },
+    {
+      "symbol": "±√k",
+      "meaning": "當 y²=k 且 k>0 時，y 有正負兩個值。"
+    }
+  ],
+  "conceptNarrative": [
+    "配方的核心不是背固定數字，而是看 x 的係數。",
+    "對 x²+bx，先取 b/2，再平方，補入 (b/2)²。",
+    "在方程式中補數時，左右兩邊都要加同一數；在單純改寫代數式時，可用「加後再減」保持值不變。",
+    "若 a≠1，先把整個方程式除以 a，再對 x² 項配方。",
+    "完成平方後，利用平方根解法並檢查右邊是否為負。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "完全平方公式",
+      "statement": "x²+2px+p²=(x+p)²。"
+    },
+    {
+      "name": "配方法",
+      "statement": "將 ax²+bx+c=0 轉換為 (x-h)²=k 的等價方程式。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x²+bx=(x+b/2)²-(b/2)²",
+      "conditions": [
+        "x² 係數為 1"
+      ],
+      "meaning": "把任意一次項納入平方。"
+    },
+    {
+      "formula": "ax²+bx+c=0 ⇒ x²+(b/a)x=-c/a",
+      "conditions": [
+        "a≠0",
+        "先除以 a"
+      ],
+      "meaning": "為一般配方準備。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只在左邊加補數會改變方程式的解。",
+    "未先除以 a 就直接取 b/2，通常會配錯。",
+    "得到平方等於負數時，在實數範圍沒有解。",
+    "開平方時漏掉負號分支會少一個根。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "整理方程式，把常數移到右邊。",
+      "check": "二次項與一次項是否留在左邊？"
+    },
+    {
+      "step": 2,
+      "instruction": "若 x² 係數不為 1，兩邊同除以該係數。",
+      "check": "除數是否非零且每一項都除到？"
+    },
+    {
+      "step": 3,
+      "instruction": "取 x 係數的一半再平方。",
+      "check": "補數是否為 (b/2)²？"
+    },
+    {
+      "step": 4,
+      "instruction": "兩邊同加補數並把左邊寫成平方。",
+      "check": "展開平方能否回到左式？"
+    },
+    {
+      "step": 5,
+      "instruction": "開平方求解並驗算。",
+      "check": "是否寫 ± 並處理實數範圍？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "把 x²+8x+3 改寫成完全平方形式。",
+      "solutionSteps": [
+        "8 的一半是 4，平方為 16。",
+        "x²+8x+3=(x+4)²-16+3。"
+      ],
+      "answer": "(x+4)²-13。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 x²+6x=7。",
+      "solutionSteps": [
+        "兩邊加 9，得 (x+3)²=16。",
+        "x+3=±4。"
+      ],
+      "answer": "x=1 或 x=-7。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 2x²-8x-10=0。",
+      "solutionSteps": [
+        "先除以 2：x²-4x=5。",
+        "兩邊加 4： (x-2)²=9。",
+        "x-2=±3。"
+      ],
+      "answer": "x=5 或 x=-1。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "判斷 x²+4x+8=0 是否有實數解。",
+      "solutionSteps": [
+        "配方得 (x+2)²=-4。",
+        "實數平方不會是負數。"
+      ],
+      "answer": "沒有實數解。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 x²+6x 補成 (x+6)²。",
+      "why": "沒有先把一次項係數除以 2。",
+      "correction": "應補 9，寫成 (x+3)²。"
+    },
+    {
+      "mistake": "只在一邊加 9。",
+      "why": "破壞等式。",
+      "correction": "方程式兩邊必須同加。"
+    },
+    {
+      "mistake": "2x²+8x 中直接補 16。",
+      "why": "未先把二次項係數化為 1。",
+      "correction": "先整式除以 2。"
+    },
+    {
+      "mistake": "開平方只取正值。",
+      "why": "忽略平方的負根。",
+      "correction": "寫成 x-h=±√k。"
+    },
+    {
+      "mistake": "把 (x-3)² 展開成 x²-9。",
+      "why": "漏掉中間項 -6x。",
+      "correction": "使用 (a-b)²=a²-2ab+b²。"
+    },
+    {
+      "mistake": "平方等於負數仍寫根號答案。",
+      "why": "忽略實數範圍。",
+      "correction": "判定無實數解。"
+    }
+  ],
+  "selfCheck": [
+    "x² 係數是否先化為 1？",
+    "補數是否是一次項係數一半的平方？",
+    "兩邊是否做相同操作？",
+    "完全平方展開是否正確？",
+    "開平方是否保留 ±？"
+  ],
+  "summary": [
+    "配方法把二次式轉成一個平方加常數。",
+    "補數由一次項係數的一半決定。",
+    "方程式兩邊必須同步加補數。",
+    "完成平方後再用平方根解法。"
+  ],
+  "connections": {
+    "previous": "承接因式分解法；當二次式不易分解時，配方法提供普遍可用的轉換。",
+    "next": [
+      "下一節由一般配方推得公式解。",
+      "基本配方法技能會專注首項係數為 1 的熟練操作。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s002-v001",
+      "u13-s002-v002",
+      "u13-s002-v003",
+      "u13-s002-v004",
+      "u13-s002-v005",
+      "u13-s002-v006",
+      "u13-s002-v007",
+      "u13-s002-v008",
+      "u13-s002-v009",
+      "u13-s002-v010",
+      "u13-s002-v011",
+      "u13-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s002-cr001",
+      "u13-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "重新展開四個完成平方式並逐根代回；確認 2x² 案例先整式除以 2、x²+4x+8 的右端為 -4，因此在實數範圍確實無解。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "490714d89732c4fc45988d6e6554f13a36e4c3ae67ca53aeddb8dbed7e18af36"
+}

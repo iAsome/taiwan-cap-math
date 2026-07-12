@@ -1,0 +1,248 @@
+{
+  "lectureId": "u08-s014-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-literacy",
+  "skillId": "geometry-literacy-context",
+  "lockedSkillTitle": "平面幾何與三視圖素養",
+  "title": "平面幾何與三視圖素養：把規格文字轉成可驗證條件",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能從生活規格辨認角度、平行垂直、對稱、周長與面積。",
+    "能判斷資料是否足以支持幾何結論。",
+    "能整合單位換算與複合面積。",
+    "能用三視圖文字條件檢核立體設計。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "orthographic-description"
+    ],
+    "bridgeExplanation": "本技能整合 U08 前 13 個技能，重點不是新公式，而是辨認情境中的量、條件與限制。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "orthographic-description",
+      "requiredLevel": "能把俯視占用位置與正側視高度序列轉成約束，並檢查相容性。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "規格",
+      "definition": "對尺寸、角度、形狀或位置關係的明確要求。"
+    },
+    {
+      "term": "充分資訊",
+      "definition": "足以唯一或可靠支持所問結論的資料。"
+    },
+    {
+      "term": "安全餘量",
+      "definition": "實際設計值與限制值之間保留的差距。"
+    },
+    {
+      "term": "比例示意",
+      "definition": "只表達關係，不一定按真實比例繪製。"
+    },
+    {
+      "term": "模型驗證",
+      "definition": "把情境轉成數學關係後檢查是否符合全部條件。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "≤、≥",
+      "meaning": "規格中的上限與下限。"
+    },
+    {
+      "symbol": "誤差±a",
+      "meaning": "允許值在標示值上下 a 的範圍。"
+    },
+    {
+      "symbol": "P、A",
+      "meaning": "分別代表周長與面積。"
+    }
+  ],
+  "conceptDevelopment": [
+    "素養題先決定在問什麼量，再選工具。『圍一圈』對應周長，『鋪滿』對應面積，『保持等距』對應垂直平分線，『從上方看』對應俯視圖。",
+    "生活資料常混有無關資訊。先整理必要條件：單位是否一致、圖形是否正多邊形、三視圖方向是否指定、示意圖是否按比例。",
+    "幾何結論需要充分條件。看起來像正方形不夠；必須有四等邊與四直角，或其他可推出這些性質的條件。",
+    "答案不只要算對，也要解釋限制。例如材料面積要考慮挖孔，安全角度要比較上限，三視圖方案要同時滿足三方向。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "數學建模",
+      "statement": "把真實情境中的對象、量與限制轉成數學表示。"
+    },
+    {
+      "name": "結果解釋",
+      "statement": "把數值連同單位、方向與可行性翻回原情境。"
+    },
+    {
+      "name": "資訊充分性",
+      "statement": "判斷現有條件能否唯一決定或保證所問性質。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "需求量=基本量±增減區域",
+      "conditions": [
+        "先辨認保留、挖除或重疊"
+      ],
+      "meaning": "處理材料與面積。"
+    },
+    {
+      "formula": "允許範圍=[標示值−誤差, 標示值+誤差]",
+      "conditions": [
+        "誤差以同單位表示"
+      ],
+      "meaning": "檢查規格。"
+    },
+    {
+      "formula": "視圖條件=占用位置+兩方向最大高度",
+      "conditions": [
+        "方向與順序明確"
+      ],
+      "meaning": "檢核方塊或模組配置。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能把示意圖外觀當成未給出的等長、平行或直角條件。",
+    "不能忽略單位換算後直接比較。",
+    "不能只用一張視圖斷定立體內部結構。",
+    "結果符合數值但違反幾何條件時仍不可行。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "圈出所求量與限制詞。",
+      "check": "特別注意至少、至多、恰好、等距、垂直與從哪個方向看。"
+    },
+    {
+      "step": 2,
+      "instruction": "建立幾何模型。",
+      "check": "列圖形、尺寸、角度、占用位置或高度條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "統一單位並計算。",
+      "check": "選擇周長、面積、角度或視圖工具。"
+    },
+    {
+      "step": 4,
+      "instruction": "做可行性與資訊充分性檢查。",
+      "check": "確認沒有依圖猜測，並把結果連同單位和理由寫回情境。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "操場長 80 公尺、寬 50 公尺，只在外圍設置欄杆，需求量是哪一種幾何量？",
+      "solutionSteps": [
+        "欄杆沿邊界一周。",
+        "因此求周長，不求面積。"
+      ],
+      "answer": "周長。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩村設置到兩村距離相同的救援點，其可能位置如何描述？",
+      "solutionSteps": [
+        "到兩定點等距。",
+        "所有可能點形成兩村連線的垂直平分線。"
+      ],
+      "answer": "位於兩村連線的垂直平分線上。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "一塊 6 m×4 m 板材挖去 80 cm×50 cm 開口，求剩餘面積。",
+      "solutionSteps": [
+        "先把開口換為 0.8 m×0.5 m，面積 0.4 m²。",
+        "板材面積 24 m²。",
+        "剩餘 24−0.4=23.6 m²。"
+      ],
+      "answer": "23.6 平方公尺。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某堆疊正視最高 4 層，但側視文字說每列最高至多 3 層，設計是否可行？",
+      "solutionSteps": [
+        "正視最高 4 表示存在一堆高度 4。",
+        "該堆從側面也屬某列，使側視至少有一列高度 4。",
+        "與至多 3 衝突。"
+      ],
+      "answer": "不可行。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "辨認情境對應的幾何量。",
+    "standard": "把規格轉成單一步驟或多步計算。",
+    "advanced": "判斷資訊充分性、相容性與最少需求。",
+    "literacy": "工程、建築、土地、包裝與安全設計都要求數值正確並符合幾何條件。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "看到長與寬就直接相乘。",
+      "why": "未先判斷題目要周長或面積。",
+      "correction": "先圈所求量。"
+    },
+    {
+      "mistake": "到兩村等距就取連線中點一個位置。",
+      "why": "忽略平面上所有等距點。",
+      "correction": "可能位置是一整條垂直平分線。"
+    },
+    {
+      "mistake": "公分開口直接從平方公尺扣。",
+      "why": "單位不一致。",
+      "correction": "先統一長度或面積單位。"
+    },
+    {
+      "mistake": "示意圖像正方形就套正方形公式。",
+      "why": "沒有充分條件。",
+      "correction": "需四等邊與四直角等可靠條件。"
+    },
+    {
+      "mistake": "三視圖各自合理就認為整體相容。",
+      "why": "未檢查三者是否來自同一立體。",
+      "correction": "比較占用位置與最大高度的共同限制。"
+    },
+    {
+      "mistake": "只給數值不解釋可行性。",
+      "why": "沒有回到情境。",
+      "correction": "答案附單位、比較與結論。"
+    }
+  ],
+  "selfCheckItems": [
+    "我先辨認所求量了嗎？",
+    "資料單位是否一致？",
+    "結論是否需要未提供的等長、平行或直角條件？",
+    "三視圖是否同時相容？",
+    "答案是否回到情境並說明理由？"
+  ],
+  "conciseSummary": [
+    "素養題先建模，再計算，最後解釋。",
+    "周長、面積、等距與三視圖各有不同訊號詞。",
+    "資訊不足時不可由外觀補條件。",
+    "單位、邊界與可行性都要檢查。"
+  ],
+  "connections": {
+    "previous": "前 13 技能提供平面幾何、單位與三視圖工具。",
+    "next": [
+      "U08 完成後，後續單元可把這些圖形語言用於更深入的幾何推理、座標或相似關係。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "逐一核對欄杆對應周長、等距點形成垂直平分線、板材剩餘 23.6 m²，以及正視 4 層與側視至多 3 層的衝突；沒有引入鎖定範圍外定理。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "f8a480939a7b3f7566cb30ea77991fd6c123c13af086aff00df6127277befb92"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "title": "U23 drawing specification",
+  "required": [
+    "figureId",
+    "drawingSpecId",
+    "svgPath",
+    "canvas",
+    "drawingSpec",
+    "altText",
+    "svgAssertions",
+    "figureReview",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

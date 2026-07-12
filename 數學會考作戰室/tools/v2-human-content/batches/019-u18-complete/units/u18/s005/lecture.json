@@ -1,0 +1,257 @@
+{
+  "lectureId": "u18-s005-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-ratio",
+  "skillId": "continued-ratio-properties",
+  "lockedSkillOrder": 5,
+  "lockedSkillTitle": "連比性質",
+  "title": "連比性質：在和與差及比例式之間推理",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能判斷兩個連比是否等值。",
+    "能利用連比推得部分和、部分差與總量的比。",
+    "能由等比關係建立比例式並求未知量。",
+    "能辨認交換順序、倒比與同比例伸縮的差異。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "continued-ratio-word",
+        "title": "連比應用題",
+        "requiredLevel": "能運用「連比應用題」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「連比應用題」，先複習其核心判斷，再把方法推進到「連比性質」。"
+  },
+  "glossary": [
+    {
+      "term": "等值連比",
+      "definition": "各對應項可由同一非零倍數轉換的連比。"
+    },
+    {
+      "term": "合比",
+      "definition": "由各項相加形成的新比，例如 a:b:c 可推得 (a+b):c。"
+    },
+    {
+      "term": "分比",
+      "definition": "由各項相減形成的新比，使用時須注意差為正及順序。"
+    },
+    {
+      "term": "倒比",
+      "definition": "將二項比的前後項交換；連比若改順序，對應對象也隨之改變。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a:b:c=d:e:f",
+      "meaning": "存在同一倍數使三組對應項相等。"
+    },
+    {
+      "symbol": "a/(a+b+c)",
+      "meaning": "第一部分占總量的比例。"
+    },
+    {
+      "symbol": "(a+b):(b+c)",
+      "meaning": "可由同一連比中的部分和形成的新比。"
+    }
+  ],
+  "conceptNarrative": [
+    "連比 a:b:c 可設為 ak:bk:ck，因此任何由這三個量做相同線性組合的比，都可用份數直接計算。例如 A:B:C=2:3:5，則 (A+B):C=5:5=1:1。",
+    "同比例伸縮不改變關係，但交換項目會改變對應對象。A:B:C=2:3:4 不代表 B:A:C 仍是 2:3:4，而應為 3:2:4。",
+    "由連比求占比時，分母必須是所問整體。例如 A 占 A+B+C 的比例為 a/(a+b+c)，不是 a/c。",
+    "涉及差時要保留方向。若 A:B=5:3，則 A-B 是 2 份；若寫 B-A，則是 -2 份，在長度或人數情境中通常改問正差。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "連比不變性",
+      "statement": "所有項同乘或同除同一非零數，對應比值不變。"
+    },
+    {
+      "name": "份數運算性質",
+      "statement": "若 A:B:C=a:b:c，則 A=ak、B=bk、C=ck，可將和差條件化為份數和差。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A/(A+B+C)=a/(a+b+c)",
+      "conditions": [
+        "A:B:C=a:b:c",
+        "總量不為 0"
+      ],
+      "meaning": "由連比求部分占總量的比例。"
+    },
+    {
+      "formula": "(A+B):(B+C)=(a+b):(b+c)",
+      "conditions": [
+        "使用同一組共同倍數 k"
+      ],
+      "meaning": "共同倍數可在新比中約去。"
+    },
+    {
+      "formula": "(A-B):C=(a-b):c",
+      "conditions": [
+        "差的順序一致"
+      ],
+      "meaning": "由份數差求實際差的比例。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能從 A:B:C=2:3:5 推得 A:B=2:5；前兩項仍是 2:3。",
+    "各項若分別乘不同數，連比通常改變。",
+    "把項目重新排序時，必須同步更改量名。",
+    "求部分占總量時不能把總份數誤寫成最後一項。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把實際量寫成 ak、bk、ck。",
+      "check": "三量是否共用同一 k？"
+    },
+    {
+      "step": 2,
+      "instruction": "將題目所求的和、差或占比用 ak、bk、ck 表示。",
+      "check": "括號與差的順序正確嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "約去共同倍數 k。",
+      "check": "分母是否可能為 0？"
+    },
+    {
+      "step": 4,
+      "instruction": "化簡得到份數關係。",
+      "check": "結果是否維持題目要求的順序？"
+    },
+    {
+      "step": 5,
+      "instruction": "用一組實際倍數數值回查。",
+      "check": "選 k=1 或其他正數能否驗證？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "A:B:C=3:4:8，求 (A+B):C。",
+      "solutionSteps": [
+        "設 A=3k、B=4k、C=8k。",
+        "A+B=7k。",
+        "(A+B):C=7k:8k=7:8。"
+      ],
+      "answer": "7:8"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "X:Y:Z=5:2:3，求 Y 占總量的比例。",
+      "solutionSteps": [
+        "總份數 5+2+3=10。",
+        "Y 為 2 份。",
+        "占比 2/10=1/5。"
+      ],
+      "answer": "1/5"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "P:Q:R=7:4:2，求 (P-Q):(Q-R)。",
+      "solutionSteps": [
+        "P-Q 為 3 份。",
+        "Q-R 為 2 份。",
+        "比為 3:2。"
+      ],
+      "answer": "3:2"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "a:b:c=2:6:9，若改寫成 c:a:b，結果為何？",
+      "solutionSteps": [
+        "原對應是 a=2k、b=6k、c=9k。",
+        "依新順序列 c、a、b。",
+        "得到 9:2:6。"
+      ],
+      "answer": "9:2:6"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只要數字相同就認為順序無關。",
+      "why": "忽略比的對應性。",
+      "correction": "量名改順序，份數也同樣重排。"
+    },
+    {
+      "mistake": "A+B 的份數寫成 ab。",
+      "why": "混淆加法與乘法。",
+      "correction": "A+B=(a+b)k。"
+    },
+    {
+      "mistake": "部分占比的分母只用另外兩項。",
+      "why": "未辨認題目中的整體。",
+      "correction": "將所有構成整體的份數相加。"
+    },
+    {
+      "mistake": "差的先後顛倒。",
+      "why": "只取絕對差。",
+      "correction": "依題目順序寫 A-B 或 B-A。"
+    },
+    {
+      "mistake": "認為任何三項同時變動都保持連比。",
+      "why": "忽略必須是同一倍數。",
+      "correction": "檢查每一項的新值除以舊值是否相同。"
+    }
+  ],
+  "selfCheck": [
+    "所有實際量是否以同一 k 表示？",
+    "所求整體包含哪些項？",
+    "和差的括號正確嗎？",
+    "重新排序時量名與份數同步嗎？",
+    "我能用 k=1 驗證嗎？"
+  ],
+  "summary": [
+    "等值連比來自所有項乘除同一數。",
+    "和與差可直接在份數上運算。",
+    "部分占比等於該份數除以整體份數。",
+    "順序改變會改變連比的意義。"
+  ],
+  "connections": {
+    "previous": "連比應用題提供文字轉比與橋接量經驗。",
+    "next": [
+      "相似三角形會把對應邊寫成等值連比。",
+      "周長比與面積比將使用同一縮放倍數。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s005-v001",
+      "u18-s005-v002",
+      "u18-s005-v003",
+      "u18-s005-v004",
+      "u18-s005-v005",
+      "u18-s005-v006",
+      "u18-s005-v007",
+      "u18-s005-v008",
+      "u18-s005-v009",
+      "u18-s005-v010",
+      "u18-s005-v011",
+      "u18-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s005-cr001",
+      "u18-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "驗證所有合比、分比與占比均由共同倍數推導，未使用未證明的比例規則；重排範例清楚區分數值集合相同與對應順序不同。"
+  },
+  "contentSha256": "1d12ef0b58ef674176575685b658d56e499c0a7b1bea050972bf7f4444d35431"
+}

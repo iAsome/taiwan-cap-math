@@ -1,0 +1,1263 @@
+// SERIALIZATION OF REVIEWED CHATGPT HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u17-s012-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-quadrilaterals",
+  "skillId": "quadrilateral-area",
+  "lockedTitle": "四邊形面積",
+  "title": "四邊形面積：分割成會算的圖形，再檢查是否重疊或漏算",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：special-quadrilateral。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "用對角線把四邊形分成兩個三角形",
+    "選擇平行四邊形、矩形、菱形等公式",
+    "處理複合與挖空面積"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "special-quadrilateral",
+      "requiredLevel": "能正確使用「special-quadrilateral」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "分割",
+      "definition": "把圖形切成互不重疊的簡單圖形"
+    },
+    {
+      "term": "補形",
+      "definition": "補成較容易計算的大圖形再扣除"
+    },
+    {
+      "term": "高",
+      "definition": "到所選底的垂直距離"
+    },
+    {
+      "term": "平方單位",
+      "definition": "面積必須使用的單位"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "一般四邊形沒有單一只靠四邊長就能求面積的公式。常用方法是畫對角線，分成兩個三角形。",
+    "選底後，高一定要垂直於該底。分割後各部分不可重疊，也不可留下空隙。",
+    "複合圖形可用相加或大面積減去挖空面積。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "分割",
+      "statement": "把圖形切成互不重疊的簡單圖形"
+    },
+    {
+      "name": "補形",
+      "statement": "補成較容易計算的大圖形再扣除"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "四邊形面積=兩個三角形面積和",
+      "conditions": [
+        "以一條對角線分割"
+      ],
+      "meaning": "用於四邊形面積中符合條件的推理或計算。"
+    },
+    {
+      "formula": "平行四邊形面積=底×高",
+      "conditions": [
+        "高垂直於底"
+      ],
+      "meaning": "用於四邊形面積中符合條件的推理或計算。"
+    },
+    {
+      "formula": "菱形面積=兩對角線乘積÷2",
+      "conditions": [
+        "對角線互相垂直"
+      ],
+      "meaning": "用於四邊形面積中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "判斷能否直接套特殊四邊形公式",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "若不能，選對角線分割",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "為每一部分找底與高",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "相加或相減",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查平方單位與合理大小",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "對角線10，兩側高3與5",
+      "solutionSteps": [
+        "面積=10×3÷2+10×5÷2=40。"
+      ],
+      "answer": "面積=10×3÷2+10×5÷2=40。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "平行四邊形底8高6",
+      "solutionSteps": [
+        "面積48。"
+      ],
+      "answer": "面積48。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "菱形對角線12與7",
+      "solutionSteps": [
+        "面積42。"
+      ],
+      "answer": "面積42。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "矩形60挖去三角形12",
+      "solutionSteps": [
+        "剩48。"
+      ],
+      "answer": "剩48。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只知道四邊長就硬求一般四邊形面積",
+      "why": "資訊通常不足",
+      "correction": "資訊通常不足"
+    },
+    {
+      "mistake": "把斜邊當高",
+      "why": "高須垂直",
+      "correction": "高須垂直"
+    },
+    {
+      "mistake": "分割部分重疊",
+      "why": "相加前確認互不重疊",
+      "correction": "相加前確認互不重疊"
+    },
+    {
+      "mistake": "忘記三角形除2",
+      "why": "分割後每個三角形都要除2",
+      "correction": "分割後每個三角形都要除2"
+    },
+    {
+      "mistake": "面積寫公分",
+      "why": "應寫平方公分",
+      "correction": "應寫平方公分"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「四邊形面積」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "一般四邊形沒有單一只靠四邊長就能求面積的公式。常用方法是畫對角線，分成兩個三角形。",
+    "四邊形面積=兩個三角形面積和",
+    "解題時先確認「以一條對角線分割」。"
+  ],
+  "connections": {
+    "previous": "承接special-quadrilateral。",
+    "next": "下一技能依鎖定順序為rhombus-properties。"
+  },
+  "figureReferences": [
+    "u17-s012-fig001"
+  ],
+  "figureAccessibility": "一般四邊形ABCD以AC分成兩三角形，從B與D向AC畫垂線高h1、h2。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s012-v001",
+      "u17-s012-v002",
+      "u17-s012-v003",
+      "u17-s012-v004",
+      "u17-s012-v005",
+      "u17-s012-v006",
+      "u17-s012-v007",
+      "u17-s012-v008",
+      "u17-s012-v009",
+      "u17-s012-v010",
+      "u17-s012-v011",
+      "u17-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s012-cr001",
+      "u17-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "內容涵蓋直接公式、分割與補形三種策略，並把一般四邊形資訊不足列為重要邊界。"
+  },
+  "contentSha256": "f25b66c8fda45ef3d284f3f2a6de04fddab65856b352a0eef073d94b68e27049"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u17-s012-v001",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "basic",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "平行四邊形底8公分、高5公分，面積是多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "直接求面積。",
+    "choices": [
+      "13平方公分",
+      "20平方公分",
+      "80平方公分",
+      "40平方公分"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "重新依題目條件計算：面積=底×高=8×5=40平方公分。",
+    "explanation": "面積=底×高=8×5=40平方公分。",
+    "steps": [
+      "面積=底×高=8×5=40平方公分。",
+      "因此選擇「40平方公分」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "13平方公分",
+        "truth": false,
+        "reason": "選項「13平方公分」不符合題意；依平行四邊形面積。應得到「40平方公分」，此錯誤常源自：誤用三角形除2或只相加。"
+      },
+      {
+        "choice": "20平方公分",
+        "truth": false,
+        "reason": "選項「20平方公分」不符合題意；依平行四邊形面積。應得到「40平方公分」，此錯誤常源自：誤用三角形除2或只相加。"
+      },
+      {
+        "choice": "80平方公分",
+        "truth": false,
+        "reason": "選項「80平方公分」不符合題意；依平行四邊形面積。應得到「40平方公分」，此錯誤常源自：誤用三角形除2或只相加。"
+      },
+      {
+        "choice": "40平方公分",
+        "truth": true,
+        "reason": "依獨立重算「面積=底×高=8×5=40平方公分。」，此選項正確回答所求。"
+      }
+    ],
+    "misconceptionTarget": "誤用三角形除2或只相加。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「直接求面積。」；四個選項互異，只有40平方公分符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "基本公式。",
+    "literacyContextNecessity": null,
+    "visualMode": "figure-supported",
+    "figureId": "u17-s012-fig001",
+    "drawingSpecRef": "units/u17/s012/drawing-specs.jsonl#u17-s012-fig001",
+    "semanticReviewId": "u17-s012-v001-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "9967765649a568cfcd103dd0409768d08d4a113b86157af0548b4ea04b84f29e"
+  },
+  {
+    "questionId": "u17-s012-v002",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "basic",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一般四邊形沿一條長10公分的對角線分成兩三角形，兩側對該對角線的高為3公分與7公分。面積為何？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "用共同底分割一般四邊形。",
+    "choices": [
+      "50平方公分",
+      "35平方公分",
+      "70平方公分",
+      "100平方公分"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "重新依題目條件計算：面積=10×3÷2+10×7÷2=15+35=50平方公分。",
+    "explanation": "面積=10×3÷2+10×7÷2=15+35=50平方公分。",
+    "steps": [
+      "面積=10×3÷2+10×7÷2=15+35=50平方公分。",
+      "因此選擇「50平方公分」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "50平方公分",
+        "truth": true,
+        "reason": "依獨立重算「面積=10×3÷2+10×7÷2=15+35=50平方公分。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "35平方公分",
+        "truth": false,
+        "reason": "選項「35平方公分」不符合題意；依對角線分割法。應得到「50平方公分」，此錯誤常源自：只算其中一個三角形或忘記除2。"
+      },
+      {
+        "choice": "70平方公分",
+        "truth": false,
+        "reason": "選項「70平方公分」不符合題意；依對角線分割法。應得到「50平方公分」，此錯誤常源自：只算其中一個三角形或忘記除2。"
+      },
+      {
+        "choice": "100平方公分",
+        "truth": false,
+        "reason": "選項「100平方公分」不符合題意；依對角線分割法。應得到「50平方公分」，此錯誤常源自：只算其中一個三角形或忘記除2。"
+      }
+    ],
+    "misconceptionTarget": "只算其中一個三角形或忘記除2。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「用共同底分割一般四邊形。」；四個選項互異，只有50平方公分符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "兩部分相加。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v002-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "28616c3b30cf01d0e71097d494609cffb12651f4939f37c92c7d0d380881a508"
+  },
+  {
+    "questionId": "u17-s012-v003",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "basic",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "菱形兩對角線長12公分與9公分，面積是多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "由對角線求面積。",
+    "choices": [
+      "21平方公分",
+      "54平方公分",
+      "108平方公分",
+      "216平方公分"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "重新依題目條件計算：菱形面積=12×9÷2=54平方公分。",
+    "explanation": "菱形面積=12×9÷2=54平方公分。",
+    "steps": [
+      "菱形面積=12×9÷2=54平方公分。",
+      "因此選擇「54平方公分」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "21平方公分",
+        "truth": false,
+        "reason": "選項「21平方公分」不符合題意；依菱形對角線面積公式。應得到「54平方公分」，此錯誤常源自：忘記除2。"
+      },
+      {
+        "choice": "54平方公分",
+        "truth": true,
+        "reason": "依獨立重算「菱形面積=12×9÷2=54平方公分。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "108平方公分",
+        "truth": false,
+        "reason": "選項「108平方公分」不符合題意；依菱形對角線面積公式。應得到「54平方公分」，此錯誤常源自：忘記除2。"
+      },
+      {
+        "choice": "216平方公分",
+        "truth": false,
+        "reason": "選項「216平方公分」不符合題意；依菱形對角線面積公式。應得到「54平方公分」，此錯誤常源自：忘記除2。"
+      }
+    ],
+    "misconceptionTarget": "忘記除2。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「由對角線求面積。」；四個選項互異，只有54平方公分符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "基本公式。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v003-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "a384c5057cbe3d244b2e2c7c9ecc73c4f1d82207cb87e1128a85954cd6777f52"
+  },
+  {
+    "questionId": "u17-s012-v004",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "standard",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一個四邊形分成面積18與27平方公分的兩個不重疊三角形，四邊形面積是多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "合併分割面積。",
+    "choices": [
+      "9平方公分",
+      "486平方公分",
+      "45平方公分",
+      "54平方公分"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "重新依題目條件計算：分割無重疊且無空隙，總面積18+27=45。",
+    "explanation": "分割無重疊且無空隙，總面積18+27=45。",
+    "steps": [
+      "分割無重疊且無空隙，總面積18+27=45。",
+      "因此選擇「45平方公分」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "9平方公分",
+        "truth": false,
+        "reason": "選項「9平方公分」不符合題意；依分割面積相加。應得到「45平方公分」，此錯誤常源自：相減或相乘。"
+      },
+      {
+        "choice": "486平方公分",
+        "truth": false,
+        "reason": "選項「486平方公分」不符合題意；依分割面積相加。應得到「45平方公分」，此錯誤常源自：相減或相乘。"
+      },
+      {
+        "choice": "45平方公分",
+        "truth": true,
+        "reason": "依獨立重算「分割無重疊且無空隙，總面積18+27=45。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "54平方公分",
+        "truth": false,
+        "reason": "選項「54平方公分」不符合題意；依分割面積相加。應得到「45平方公分」，此錯誤常源自：相減或相乘。"
+      }
+    ],
+    "misconceptionTarget": "相減或相乘。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「合併分割面積。」；四個選項互異，只有45平方公分符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "單一步驟但需理解分割。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v004-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "5f1e56cfc4897861b070091ca68bdeed823f22ea7d3c64cc717f25a4fefe2ff0"
+  },
+  {
+    "questionId": "u17-s012-v005",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "standard",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "平行四邊形面積72平方公分，底9公分，高是多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "由面積反求垂直高度。",
+    "choices": [
+      "8公分",
+      "4公分",
+      "9公分",
+      "63公分"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "重新依題目條件計算：72=9×h，所以h=8公分。",
+    "explanation": "72=9×h，所以h=8公分。",
+    "steps": [
+      "72=9×h，所以h=8公分。",
+      "因此選擇「8公分」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "8公分",
+        "truth": true,
+        "reason": "依獨立重算「72=9×h，所以h=8公分。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "4公分",
+        "truth": false,
+        "reason": "選項「4公分」不符合題意；依反求高。應得到「8公分」，此錯誤常源自：誤除2。"
+      },
+      {
+        "choice": "9公分",
+        "truth": false,
+        "reason": "選項「9公分」不符合題意；依反求高。應得到「8公分」，此錯誤常源自：誤除2。"
+      },
+      {
+        "choice": "63公分",
+        "truth": false,
+        "reason": "選項「63公分」不符合題意；依反求高。應得到「8公分」，此錯誤常源自：誤除2。"
+      }
+    ],
+    "misconceptionTarget": "誤除2。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「由面積反求垂直高度。」；四個選項互異，只有8公分符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "反用公式。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v005-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "21b1968a7962fdc0e5ee2228c2a5d692853bd30dab129c08cf744d4474a944ac"
+  },
+  {
+    "questionId": "u17-s012-v006",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "standard",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一般四邊形以對角線d分成兩三角形。若d=16公分，兩側高分別4與5公分，面積為何？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "處理兩個不同高。",
+    "choices": [
+      "36平方公分",
+      "72平方公分",
+      "80平方公分",
+      "144平方公分"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "重新依題目條件計算：16×4÷2+16×5÷2=32+40=72。",
+    "explanation": "16×4÷2+16×5÷2=32+40=72。",
+    "steps": [
+      "16×4÷2+16×5÷2=32+40=72。",
+      "因此選擇「72平方公分」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "36平方公分",
+        "truth": false,
+        "reason": "選項「36平方公分」不符合題意；依共同底分割。應得到「72平方公分」，此錯誤常源自：把兩高相乘或漏一半。"
+      },
+      {
+        "choice": "72平方公分",
+        "truth": true,
+        "reason": "依獨立重算「16×4÷2+16×5÷2=32+40=72。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "80平方公分",
+        "truth": false,
+        "reason": "選項「80平方公分」不符合題意；依共同底分割。應得到「72平方公分」，此錯誤常源自：把兩高相乘或漏一半。"
+      },
+      {
+        "choice": "144平方公分",
+        "truth": false,
+        "reason": "選項「144平方公分」不符合題意；依共同底分割。應得到「72平方公分」，此錯誤常源自：把兩高相乘或漏一半。"
+      }
+    ],
+    "misconceptionTarget": "把兩高相乘或漏一半。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「處理兩個不同高。」；四個選項互異，只有72平方公分符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需整合兩部分。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v006-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "985b04dac1fb6fdaa3c858b11cd8919860aa445f04edb1ce585eda06c22a9a3f"
+  },
+  {
+    "questionId": "u17-s012-v007",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "advanced",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一項資訊通常不足以決定一般四邊形面積？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "辨認資訊不足。",
+    "choices": [
+      "一條對角線及其兩側高",
+      "平行四邊形的底與高",
+      "只有四條邊長",
+      "菱形的兩條對角線"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "重新依題目條件計算：一般四邊形即使四邊長固定，形狀可變，面積未必唯一。",
+    "explanation": "一般四邊形即使四邊長固定，形狀可變，面積未必唯一。",
+    "steps": [
+      "一般四邊形即使四邊長固定，形狀可變，面積未必唯一。",
+      "因此選擇「只有四條邊長」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "一條對角線及其兩側高",
+        "truth": false,
+        "reason": "選項「一條對角線及其兩側高」不符合題意；依面積資訊充分性。應得到「只有四條邊長」，此錯誤常源自：以為邊長總能決定面積。"
+      },
+      {
+        "choice": "平行四邊形的底與高",
+        "truth": false,
+        "reason": "選項「平行四邊形的底與高」不符合題意；依面積資訊充分性。應得到「只有四條邊長」，此錯誤常源自：以為邊長總能決定面積。"
+      },
+      {
+        "choice": "只有四條邊長",
+        "truth": true,
+        "reason": "依獨立重算「一般四邊形即使四邊長固定，形狀可變，面積未必唯一。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "菱形的兩條對角線",
+        "truth": false,
+        "reason": "選項「菱形的兩條對角線」不符合題意；依面積資訊充分性。應得到「只有四條邊長」，此錯誤常源自：以為邊長總能決定面積。"
+      }
+    ],
+    "misconceptionTarget": "以為邊長總能決定面積。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「辨認資訊不足。」；四個選項互異，只有只有四條邊長符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "概念邊界。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v007-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "2c471b0459f3f4a788c505baa92525dd1865ef149dc8e6fb57d59720db91ce02"
+  },
+  {
+    "questionId": "u17-s012-v008",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "advanced",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一個矩形面積96平方公分，挖去面積18平方公分的三角形，剩餘面積為何？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "複合圖形扣除。",
+    "choices": [
+      "114平方公分",
+      "48平方公分",
+      "1728平方公分",
+      "78平方公分"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "重新依題目條件計算：剩餘面積=96-18=78平方公分。",
+    "explanation": "剩餘面積=96-18=78平方公分。",
+    "steps": [
+      "剩餘面積=96-18=78平方公分。",
+      "因此選擇「78平方公分」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "114平方公分",
+        "truth": false,
+        "reason": "選項「114平方公分」不符合題意；依挖空使用減法。應得到「78平方公分」，此錯誤常源自：將挖空面積相加。"
+      },
+      {
+        "choice": "48平方公分",
+        "truth": false,
+        "reason": "選項「48平方公分」不符合題意；依挖空使用減法。應得到「78平方公分」，此錯誤常源自：將挖空面積相加。"
+      },
+      {
+        "choice": "1728平方公分",
+        "truth": false,
+        "reason": "選項「1728平方公分」不符合題意；依挖空使用減法。應得到「78平方公分」，此錯誤常源自：將挖空面積相加。"
+      },
+      {
+        "choice": "78平方公分",
+        "truth": true,
+        "reason": "依獨立重算「剩餘面積=96-18=78平方公分。」，此選項正確回答所求。"
+      }
+    ],
+    "misconceptionTarget": "將挖空面積相加。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「複合圖形扣除。」；四個選項互異，只有78平方公分符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需辨認相減。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v008-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "dcdab3a1af387728e44276b4a8394ef665a421c662054c5a456ec2d7ea5b56c0"
+  },
+  {
+    "questionId": "u17-s012-v009",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "advanced",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "四邊形ABCD以AC分割，△ABC與△ACD對AC的高比為2:3。若兩三角形面積和為75平方公分，較大三角形面積為何？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "由高比求分割面積。",
+    "choices": [
+      "25平方公分",
+      "45平方公分",
+      "30平方公分",
+      "50平方公分"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "重新依題目條件計算：兩三角形共底AC，面積比等於高比2:3；總5份，較大3份=45。",
+    "explanation": "兩三角形共底AC，面積比等於高比2:3；總5份，較大3份=45。",
+    "steps": [
+      "兩三角形共底AC，面積比等於高比2:3；總5份，較大3份=45。",
+      "因此選擇「45平方公分」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "25平方公分",
+        "truth": false,
+        "reason": "選項「25平方公分」不符合題意；依共底三角形面積比。應得到「45平方公分」，此錯誤常源自：將總面積按2:3反配。"
+      },
+      {
+        "choice": "45平方公分",
+        "truth": true,
+        "reason": "依獨立重算「兩三角形共底AC，面積比等於高比2:3；總5份，較大3份=45。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "30平方公分",
+        "truth": false,
+        "reason": "選項「30平方公分」不符合題意；依共底三角形面積比。應得到「45平方公分」，此錯誤常源自：將總面積按2:3反配。"
+      },
+      {
+        "choice": "50平方公分",
+        "truth": false,
+        "reason": "選項「50平方公分」不符合題意；依共底三角形面積比。應得到「45平方公分」，此錯誤常源自：將總面積按2:3反配。"
+      }
+    ],
+    "misconceptionTarget": "將總面積按2:3反配。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「由高比求分割面積。」；四個選項互異，只有45平方公分符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "比例與分割整合。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v009-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "0f5278e699744ef5648264afe19f539e71bff756686fe131e62dfe0d0ed184a3"
+  },
+  {
+    "questionId": "u17-s012-v010",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "literacy",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一塊平行四邊形帆布底2.4公尺、高1.5公尺，每平方公尺重0.8公斤。帆布總重多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "由幾何量推材料重量。",
+    "choices": [
+      "1.92公斤",
+      "3.6公斤",
+      "2.88公斤",
+      "4.7公斤"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "重新依題目條件計算：面積=2.4×1.5=3.6平方公尺；重量=3.6×0.8=2.88公斤。",
+    "explanation": "面積=2.4×1.5=3.6平方公尺；重量=3.6×0.8=2.88公斤。",
+    "steps": [
+      "面積=2.4×1.5=3.6平方公尺；重量=3.6×0.8=2.88公斤。",
+      "因此選擇「2.88公斤」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1.92公斤",
+        "truth": false,
+        "reason": "選項「1.92公斤」不符合題意；依先求面積再乘單位重量。應得到「2.88公斤」，此錯誤常源自：把周長或底高和當面積。"
+      },
+      {
+        "choice": "3.6公斤",
+        "truth": false,
+        "reason": "選項「3.6公斤」不符合題意；依先求面積再乘單位重量。應得到「2.88公斤」，此錯誤常源自：把周長或底高和當面積。"
+      },
+      {
+        "choice": "2.88公斤",
+        "truth": true,
+        "reason": "依獨立重算「面積=2.4×1.5=3.6平方公尺；重量=3.6×0.8=2.88公斤。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "4.7公斤",
+        "truth": false,
+        "reason": "選項「4.7公斤」不符合題意；依先求面積再乘單位重量。應得到「2.88公斤」，此錯誤常源自：把周長或底高和當面積。"
+      }
+    ],
+    "misconceptionTarget": "把周長或底高和當面積。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 120,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「由幾何量推材料重量。」；四個選項互異，只有2.88公斤符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "兩階段且需保留單位。",
+    "literacyContextNecessity": "材料重量取決於實際覆蓋面積，情境不可刪除。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v010-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "534721f73e8cd1ff8179bcf3500c3559c968e895373e5c18db7219d88bdb399b"
+  },
+  {
+    "questionId": "u17-s012-v011",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "literacy",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一塊不規則四邊形土地沿對角線分成兩區，共同底長30公尺，兩側垂直高為12公尺與8公尺。土地面積多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "以測量資料求不規則土地面積。",
+    "choices": [
+      "240平方公尺",
+      "360平方公尺",
+      "600平方公尺",
+      "300平方公尺"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "重新依題目條件計算：面積=30×12÷2+30×8÷2=180+120=300平方公尺。",
+    "explanation": "面積=30×12÷2+30×8÷2=180+120=300平方公尺。",
+    "steps": [
+      "面積=30×12÷2+30×8÷2=180+120=300平方公尺。",
+      "因此選擇「300平方公尺」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "240平方公尺",
+        "truth": false,
+        "reason": "選項「240平方公尺」不符合題意；依土地用對角線分割。應得到「300平方公尺」，此錯誤常源自：把兩高相減或忘記除2。"
+      },
+      {
+        "choice": "360平方公尺",
+        "truth": false,
+        "reason": "選項「360平方公尺」不符合題意；依土地用對角線分割。應得到「300平方公尺」，此錯誤常源自：把兩高相減或忘記除2。"
+      },
+      {
+        "choice": "600平方公尺",
+        "truth": false,
+        "reason": "選項「600平方公尺」不符合題意；依土地用對角線分割。應得到「300平方公尺」，此錯誤常源自：把兩高相減或忘記除2。"
+      },
+      {
+        "choice": "300平方公尺",
+        "truth": true,
+        "reason": "依獨立重算「面積=30×12÷2+30×8÷2=180+120=300平方公尺。」，此選項正確回答所求。"
+      }
+    ],
+    "misconceptionTarget": "把兩高相減或忘記除2。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 120,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「以測量資料求不規則土地面積。」；四個選項互異，只有300平方公尺符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需從兩側高計算兩三角形。",
+    "literacyContextNecessity": "不規則土地無法只用外觀，對角線與兩側高是必要測量。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v011-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "5898af12e84c2ec39e409edfbdd87adf7d04e034756c84eb94fc24c308f11ab2"
+  },
+  {
+    "questionId": "u17-s012-v012",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "literacy",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "地磚圖案由一個面積64平方公分的正方形挖去中央面積10平方公分的菱形。每片實際著色面積為何？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "判讀圖案的有效面積。",
+    "choices": [
+      "54平方公分",
+      "74平方公分",
+      "32平方公分",
+      "640平方公分"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "重新依題目條件計算：實際著色面積=64-10=54平方公分。",
+    "explanation": "實際著色面積=64-10=54平方公分。",
+    "steps": [
+      "實際著色面積=64-10=54平方公分。",
+      "因此選擇「54平方公分」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "54平方公分",
+        "truth": true,
+        "reason": "依獨立重算「實際著色面積=64-10=54平方公分。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "74平方公分",
+        "truth": false,
+        "reason": "選項「74平方公分」不符合題意；依挖空面積。應得到「54平方公分」，此錯誤常源自：把挖空圖形加回。"
+      },
+      {
+        "choice": "32平方公分",
+        "truth": false,
+        "reason": "選項「32平方公分」不符合題意；依挖空面積。應得到「54平方公分」，此錯誤常源自：把挖空圖形加回。"
+      },
+      {
+        "choice": "640平方公分",
+        "truth": false,
+        "reason": "選項「640平方公分」不符合題意；依挖空面積。應得到「54平方公分」，此錯誤常源自：把挖空圖形加回。"
+      }
+    ],
+    "misconceptionTarget": "把挖空圖形加回。",
+    "prerequisiteCheck": "只使用先備技能special-quadrilateral與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 120,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「判讀圖案的有效面積。」；四個選項互異，只有54平方公分符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "情境要求辨認著色範圍。",
+    "literacyContextNecessity": "著色材料只覆蓋扣除中央後的區域。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s012-v012-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "01ccae7d1b0cabe229ff2c803538042bd2a5788ab48ed10ed3e0d9362d4a73d6"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u17-s012-cr001",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "prompt": "四邊形ABCD以對角線AC分成兩三角形。AC=18公分，B、D到AC的高分別5公分與7公分。求四邊形面積。",
+    "requiredWork": [
+      "分別求兩三角形面積",
+      "相加",
+      "使用平方單位"
+    ],
+    "standardSolution": [
+      "△ABC面積=18×5÷2=45。",
+      "△ACD面積=18×7÷2=63。",
+      "四邊形面積=45+63=108平方公分。"
+    ],
+    "alternativeMethods": [
+      [
+        "可合併為18×(5+7)÷2=108。"
+      ]
+    ],
+    "reasoningSteps": [
+      "△ABC面積=18×5÷2=45。",
+      "△ACD面積=18×7÷2=63。",
+      "四邊形面積=45+63=108平方公分。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完整處理「一般四邊形分割法」，列式、理由與結果「108平方公分」均正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "主要方法與幾何性質正確，且已得到大部分「108平方公分」；僅有一處算術、單位或理由缺漏。"
+      },
+      {
+        "score": 1,
+        "criteria": "能指出本題應使用的核心性質並完成至少一個有效步驟，但尚未正確完成「一般四邊形分割法」。"
+      },
+      {
+        "score": 0,
+        "criteria": "未使用與「四邊形面積」相關的有效條件，或答案與推理均無法支持「108平方公分」。"
+      }
+    ],
+    "partialCreditRules": [
+      "正確列出本題關鍵關係但算術未完成，可依完成程度給1至2分。",
+      "只得到部分結果時，必須有可辨認的「一般四邊形分割法」推理才給分。"
+    ],
+    "followThroughPolicy": "若前段只有單一算術錯誤，後續依其結果正確推理可保留相應方法分。",
+    "unitNotationRules": "角度以度表示，長度與面積保留題目單位。",
+    "answerOnlyPolicy": "只有最終答案而無題目要求的列式或理由，最高1分；證明題只寫結論不得分。",
+    "visualMode": "figure-supported",
+    "figureId": "u17-s012-fig001",
+    "drawingSpecRef": "units/u17/s012/drawing-specs.jsonl#u17-s012-fig001",
+    "independentReview": {
+      "derivedResult": "108平方公分",
+      "recalculation": "△ABC面積=18×5÷2=45。；△ACD面積=18×7÷2=63。；四邊形面積=45+63=108平方公分。",
+      "ambiguity": "所求量與評分焦點「一般四邊形分割法」明確；替代方法不改變標準結果。",
+      "decision": "pass"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "4acbdf9682b2727f09691fcdd54d91411e54098491d72e707e223535f2fe4d19"
+  },
+  {
+    "questionId": "u17-s012-cr002",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "prompt": "一個矩形面積120平方公分，內部挖去一個兩對角線為10與6公分的菱形。求剩餘面積，並說明菱形公式中的除2。",
+    "requiredWork": [
+      "先求菱形面積",
+      "由矩形扣除",
+      "說明對角線乘積的一半"
+    ],
+    "standardSolution": [
+      "菱形面積=10×6÷2=30平方公分。",
+      "剩餘面積=120-30=90平方公分。",
+      "兩條垂直對角線把菱形分成四個直角三角形，總面積等於對角線乘積的一半。"
+    ],
+    "alternativeMethods": [
+      [
+        "也可把四個直角三角形的面積相加得到30。"
+      ]
+    ],
+    "reasoningSteps": [
+      "菱形面積=10×6÷2=30平方公分。",
+      "剩餘面積=120-30=90平方公分。",
+      "兩條垂直對角線把菱形分成四個直角三角形，總面積等於對角線乘積的一半。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完整處理「複合面積與公式解釋」，列式、理由與結果「90平方公分」均正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "主要方法與幾何性質正確，且已得到大部分「90平方公分」；僅有一處算術、單位或理由缺漏。"
+      },
+      {
+        "score": 1,
+        "criteria": "能指出本題應使用的核心性質並完成至少一個有效步驟，但尚未正確完成「複合面積與公式解釋」。"
+      },
+      {
+        "score": 0,
+        "criteria": "未使用與「四邊形面積」相關的有效條件，或答案與推理均無法支持「90平方公分」。"
+      }
+    ],
+    "partialCreditRules": [
+      "正確列出本題關鍵關係但算術未完成，可依完成程度給1至2分。",
+      "只得到部分結果時，必須有可辨認的「複合面積與公式解釋」推理才給分。"
+    ],
+    "followThroughPolicy": "若前段只有單一算術錯誤，後續依其結果正確推理可保留相應方法分。",
+    "unitNotationRules": "角度以度表示，長度與面積保留題目單位。",
+    "answerOnlyPolicy": "只有最終答案而無題目要求的列式或理由，最高1分；證明題只寫結論不得分。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "independentReview": {
+      "derivedResult": "90平方公分",
+      "recalculation": "菱形面積=10×6÷2=30平方公分。；剩餘面積=120-30=90平方公分。；兩條垂直對角線把菱形分成四個直角三角形，總面積等於對角線乘積的一半。",
+      "ambiguity": "所求量與評分焦點「複合面積與公式解釋」明確；替代方法不改變標準結果。",
+      "decision": "pass"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "6fffdc06e80786314499ca849381b63601d38d6dbd145d0bd96b73b8b5a1ce2d"
+  }
+];
+
+export const DRAWING_SPECS = [
+  {
+    "figureId": "u17-s012-fig001",
+    "unitId": "u17",
+    "topicId": "u17-quadrilaterals",
+    "skillId": "quadrilateral-area",
+    "purpose": "支援「四邊形面積」的空間位置、性質或證明閱讀，不提供題目答案。",
+    "svgPath": "figures/u17/u17-s012-fig001.svg",
+    "canvas": {
+      "width": 400,
+      "height": 300,
+      "viewBox": "0 0 400 300"
+    },
+    "drawingSpec": {
+      "title": "四邊形沿對角線分割",
+      "description": "一般四邊形ABCD以AC分成兩三角形，從B與D向AC畫垂線高h1、h2。",
+      "coordinateSystem": "SVG user space, origin at upper-left",
+      "layoutConstraints": "主要線段與文字保留至少20單位邊界；標籤不得遮住交點與角弧。",
+      "visibleLineRule": "實線表示題目已知邊或直線。",
+      "hiddenLineRule": "本平面幾何圖無隱藏線；輔助垂線可用虛線。",
+      "labels": "所有字母、角度、等式與關係均按本技能專屬配置。",
+      "tickMarks": "等長、平行、直角只在數學上需要時標示。",
+      "units": "示意圖不直接量長；數值單位由題幹提供。",
+      "arrowsAndSymbols": "平行箭頭、直角記號或角弧依技能使用。",
+      "scale": "not-to-scale",
+      "scaleWarning": "圖形不一定按比例，禁止以目測長短或角度作答。"
+    },
+    "altText": "一般四邊形ABCD以AC分成兩三角形，從B與D向AC畫垂線高h1、h2。 圖形不一定按比例。",
+    "svgTitle": "四邊形沿對角線分割",
+    "svgDesc": "一般四邊形ABCD以AC分成兩三角形，從B與D向AC畫垂線高h1、h2。",
+    "mobileReadability": "400×300檢視下主要線條、交點與核心文字仍可辨識；長句置於空白區。",
+    "answerLeakageReview": "圖只呈現定義結構或已知關係，不標示任何題目未給的未知答案。",
+    "svgAssertions": [
+      "h₁",
+      "h₂",
+      "A",
+      "B",
+      "C",
+      "D",
+      "role=\"img\"",
+      "<title",
+      "<desc"
+    ],
+    "figureReview": {
+      "decision": "pass",
+      "manualRenderedInspection": true,
+      "reviewNote": "已渲染檢查四邊形沿對角線分割：線段未被裁切，文字未遮住核心交點，且不按比例警告已置於desc。"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "contentSha256": "26d96b3b7c7f0e71b2ae3ff2f690b97d7a12ed9bae7ba97f6627fa8cbec06d3b"
+  }
+];

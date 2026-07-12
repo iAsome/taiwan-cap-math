@@ -1,0 +1,198 @@
+{
+  "lectureId": "u10-s002-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-concepts",
+  "skillId": "polynomial-evaluation",
+  "lockedTitle": "多項式代入求值",
+  "title": "多項式代入求值：先完整替換再計算",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能將同一未知數的每一處都代入指定值。",
+    "代入負數時能使用括號保留符號。",
+    "能依指數、乘除、加減順序求出精確值。"
+  ],
+  "prerequisites": [
+    "polynomial-terms"
+  ],
+  "prerequisiteBridge": "先備技能 polynomial-terms 已建立下一步所需概念；本節專注於將指定數值完整代入並依運算順序求值。",
+  "glossary": [
+    {
+      "term": "代入",
+      "definition": "用指定的數替換式中每一個同名未知數。"
+    },
+    {
+      "term": "求值",
+      "definition": "代入後完成運算得到數值。"
+    },
+    {
+      "term": "運算順序",
+      "definition": "先括號與次方，再乘除，最後加減。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "P(x)",
+      "meaning": "表示多項式 P 在未知數 x 下的式子。"
+    },
+    {
+      "symbol": "P(-2)",
+      "meaning": "把 P(x) 中每個 x 都換成 -2。"
+    }
+  ],
+  "conceptNarrative": [
+    "代入不是只替換一個 x，而是所有 x 都要替換。",
+    "代入負數務必加括號，例如 x² 在 x=-3 時是 (-3)²=9，不是 -3²=-9。",
+    "同一式中可能同時有 x²、x 與常數，應分項計算再合併。",
+    "若情境限制 x 的意義，例如長度不能為負，代數上可求值但解釋時仍要檢查情境範圍。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "多項式的值",
+      "statement": "指定未知數後，多項式依運算順序算得的數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P(a)",
+      "conditions": [
+        "將 P(x) 的每一個 x 替換為 a"
+      ],
+      "meaning": "a 必須符合題目給定或情境限制。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把 x² 直接替換成 a；應替換成 a²。",
+    "負數代入不加括號容易錯誤。",
+    "不能先隨意合併不同次方項。",
+    "題目若有兩個未知數，必須分別按指定值代入。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出式中所有未知數。",
+      "check": "完成此步後，確認內容仍符合「將指定數值完整代入並依運算順序求值」。"
+    },
+    {
+      "step": 2,
+      "instruction": "每一處都以括號替換成指定值。",
+      "check": "完成此步後，確認內容仍符合「將指定數值完整代入並依運算順序求值」。"
+    },
+    {
+      "step": 3,
+      "instruction": "先算次方。",
+      "check": "完成此步後，確認內容仍符合「將指定數值完整代入並依運算順序求值」。"
+    },
+    {
+      "step": 4,
+      "instruction": "再算各項乘法。",
+      "check": "完成此步後，確認內容仍符合「將指定數值完整代入並依運算順序求值」。"
+    },
+    {
+      "step": 5,
+      "instruction": "最後依正負號加減並檢查情境單位。",
+      "check": "完成此步後，確認內容仍符合「將指定數值完整代入並依運算順序求值」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "P(x)=2x²-3x+1，求 P(2)。",
+      "solutionSteps": [
+        "2(2²)-3(2)+1=8-6+1。"
+      ],
+      "answer": "3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "Q(x)=-x²+4x，求 Q(-3)。",
+      "solutionSteps": [
+        "-(-3)²+4(-3)=-9-12。"
+      ],
+      "answer": "-21。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "R(a,b)=2a-b，a=-1、b=5。",
+      "solutionSteps": [
+        "2(-1)-5=-2-5。"
+      ],
+      "answer": "-7。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 (-2)² 算成 -4",
+      "why": "未把負數整體平方",
+      "correction": "先寫括號，再算為 4。"
+    },
+    {
+      "mistake": "只代入第一個 x",
+      "why": "忽略同名未知數代表同一數",
+      "correction": "逐一標記每個 x。"
+    },
+    {
+      "mistake": "把 3x² 代入 x=2 算成 6²",
+      "why": "把係數也放入平方",
+      "correction": "3×(2²)=12。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能將同一未知數的每一處都代入指定值？",
+    "我是否能代入負數時能使用括號保留符號？",
+    "我是否能能依指數、乘除、加減順序求出精確值？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "所有同名未知數都要代入。",
+    "負數代入一定加括號。",
+    "先次方，再乘除，後加減。",
+    "情境題最後檢查單位與可行範圍。"
+  ],
+  "connections": {
+    "previous": "上一技能 多項式的項與係數 提供本節所需工具。",
+    "next": [
+      "下一節會將文字部分相同的項合併，先化簡再求值可降低計算量。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibility": {
+    "figureAltTextsRequired": false,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s002-v001",
+      "u10-s002-v002",
+      "u10-s002-v003",
+      "u10-s002-v004",
+      "u10-s002-v005",
+      "u10-s002-v006",
+      "u10-s002-v007",
+      "u10-s002-v008",
+      "u10-s002-v009",
+      "u10-s002-v010",
+      "u10-s002-v011",
+      "u10-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s002-cr001",
+      "u10-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「多項式代入求值：先完整替換再計算」：定義、3 個例題、錯誤推理與下一技能銜接均針對 polynomial-evaluation；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "d1e0ce9a86822b0e39659145ab7b4d7a620f779096f39184d6a6444eca87c2ff"
+}

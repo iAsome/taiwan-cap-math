@@ -1,0 +1,6 @@
+import path from "node:path";
+import { parseArgs,readJson,writeJson,assert,runGit,collectFiles,fileManifest } from "./lib/common.mjs";
+const a=parseArgs(process.argv.slice(2));assert(a.repo&&a.root&&a.retirementCommit,"Usage --repo --root --retirementCommit");const repo=path.resolve(a.repo),root=path.resolve(a.root),ex=readJson(path.join(root,"tooling/EXPECTED-RESULTS.json")),report=readJson(path.join(root,"evidence/purity/repository-purity.json"));
+assert(report.status==="PASS_HUMAN_ONLY_REPOSITORY_PURITY_GATE_R1"&&report.retirementCommit===a.retirementCommit,"purity not passed");assert(runGit(repo,["rev-parse","HEAD"])===a.retirementCommit,"HEAD changed");
+const summary={status:"PASS_HUMAN_ONLY_REPOSITORY_PURITY_PHASE_R1",retirementCommit:a.retirementCommit,activeLegacyReferences:0,retiredFilesRemaining:0,humanRuntimeOnly:true,oldDatabaseDeleted:true,nextCommitSubject:ex.commitSubjects[1],nextStage:"FINAL_HUMAN_AUTHORED_RELEASE_GATE_R1"};
+writeJson(path.join(root,"evidence/purity/purity-phase-summary.json"),summary);const files=collectFiles(path.join(root,"evidence/purity"));writeJson(path.join(root,"purity-phase-evidence-sha256.json"),{schemaVersion:"math-v2-purity-phase-evidence-r1",files:fileManifest(root,files)});console.log(JSON.stringify(summary,null,2));

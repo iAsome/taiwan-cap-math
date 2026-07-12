@@ -1,0 +1,259 @@
+{
+  "lectureId": "u16-s010-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-construction",
+  "skillId": "compass-perpendicular",
+  "skillOrder": 10,
+  "originalLockedTitle": "過點作垂線",
+  "title": "過點作垂線：分別處理點在線上與點在線外",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能用尺規作出通過指定點且垂直於已知直線的直線。",
+    "能分辨指定點在線上與在線外的兩種作圖流程。",
+    "能利用等距點與中垂線性質說明作圖正確。",
+    "能判斷圓弧半徑與交點不足時的作圖錯誤。"
+  ],
+  "prerequisiteBridge": "已會用弧交點建立等距關係。過點作垂線的核心是先在已知直線上取得兩個到指定點對稱或等距的點，再作它們的中垂線。",
+  "prerequisites": [
+    {
+      "skillId": "compass-copy-angle",
+      "requiredLevel": "能使用先備技能「複製角」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "垂線",
+      "definition": "與已知直線相交成 90° 的直線。"
+    },
+    {
+      "term": "垂足",
+      "definition": "垂線與已知直線的交點。"
+    },
+    {
+      "term": "點在線上",
+      "definition": "指定點本身位於已知直線，垂足就是該點。"
+    },
+    {
+      "term": "點在線外",
+      "definition": "指定點不在已知直線，需先找到通過該點的中垂線結構。"
+    },
+    {
+      "term": "中垂線",
+      "definition": "到線段兩端點等距之點的集合所在直線。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "P∈ℓ",
+      "meaning": "點 P 在直線 ℓ 上。"
+    },
+    {
+      "symbol": "P∉ℓ",
+      "meaning": "點 P 不在直線 ℓ 上。"
+    },
+    {
+      "symbol": "m⊥ℓ",
+      "meaning": "直線 m 與 ℓ 垂直。"
+    }
+  ],
+  "conceptNarrative": [
+    "若 P 在線 ℓ 上，以 P 為圓心畫弧交 ℓ 於 A、B，便有 PA=PB，P 是 AB 中點；再作 AB 的中垂線即可通過 P 且垂直 ℓ。",
+    "若 P 在線外，以 P 為圓心畫弧交 ℓ 於 A、B，得到 PA=PB；再以 A、B 為圓心畫相同弧交於 P 的另一側 Q，則 QA=QB。P、Q 都在 AB 的中垂線上，所以 PQ⊥ℓ。",
+    "點在線外時，第一圓弧半徑必須大到能與直線相交兩點。",
+    "最後答案是一條直線，不只是垂足或弧交點。",
+    "作圖理由均來自『到 A、B 等距的點在線段 AB 的中垂線上』。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "過線上一點作垂線",
+      "statement": "以該點為中點構造線段，再作該線段中垂線。"
+    },
+    {
+      "name": "過線外一點作垂線",
+      "statement": "先在直線上取得到外點等距的兩點，再找另一個到兩點等距的點，連接兩等距點。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "PA=PB 且 QA=QB ⇒ 直線 PQ 為 AB 的中垂線",
+      "conditions": [
+        "P、Q 為不同點"
+      ],
+      "meaning": "得到 PQ⊥AB。"
+    },
+    {
+      "formula": "A、B∈ℓ 且 PQ⊥AB ⇒ PQ⊥ℓ",
+      "conditions": [
+        "AB 位於直線 ℓ 上"
+      ],
+      "meaning": "所作直線垂直已知直線。"
+    }
+  ],
+  "nonApplicableCases": [
+    "線外點第一弧只與直線相交一點時，不能建立線段 AB。",
+    "以 A、B 為圓心時半徑不同，不能保證 Q 到 A、B 等距。",
+    "最後連接 A、B 只是原直線，不是垂線。",
+    "點在線上與在線外的流程不能不加辨別地互換。",
+    "用直尺目測 90° 不符合尺規作圖要求。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先判斷 P 是否在已知直線 ℓ 上。",
+      "check": "垂足是否已經指定為 P？"
+    },
+    {
+      "step": 2,
+      "instruction": "以 P 為圓心畫弧，讓弧與 ℓ 交於 A、B。",
+      "check": "是否確實取得兩個不同交點？"
+    },
+    {
+      "step": 3,
+      "instruction": "以 A、B 為圓心、相同半徑畫弧。",
+      "check": "在線上情形取任一側兩弧交點；在線外情形取 P 以外的另一交點 Q。"
+    },
+    {
+      "step": 4,
+      "instruction": "連接所需兩個等距點。",
+      "check": "在線上時連 P 與弧交點；在線外時連 P、Q。"
+    },
+    {
+      "step": 5,
+      "instruction": "以中垂線性質驗證垂直。",
+      "check": "兩個連線上的點是否都到 A、B 等距？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "P 在線 ℓ 上，如何先取得對稱點 A、B？",
+      "solutionSteps": [
+        "以 P 為圓心任取半徑畫弧。",
+        "弧與 ℓ 的兩個交點為 A、B，故 PA=PB。"
+      ],
+      "answer": "A、B 位於 P 兩側且 P 為 AB 中點。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "P 在線外，第一圓弧的半徑有何要求？",
+      "solutionSteps": [
+        "圓需穿過直線 ℓ。",
+        "要產生兩個交點而非相切。"
+      ],
+      "answer": "半徑須大於 P 到 ℓ 的距離。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "線外作圖得到 A、B、Q，為何 PQ 垂直 ℓ？",
+      "solutionSteps": [
+        "PA=PB，所以 P 在 AB 中垂線上。",
+        "QA=QB，所以 Q 也在 AB 中垂線上。",
+        "P、Q 決定 AB 的中垂線。"
+      ],
+      "answer": "PQ⊥AB，而 AB 在 ℓ 上，所以 PQ⊥ℓ。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "作圖後只畫線段 PQ 是否足夠？",
+      "solutionSteps": [
+        "題目若要求直線，線段只表示部分。",
+        "可用直尺延長 PQ。"
+      ],
+      "answer": "應作或延長為通過 P、Q 的直線。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "未先判斷點是否在線上。",
+      "why": "兩種流程的垂足角色不同。",
+      "correction": "第一步標記 P∈ℓ 或 P∉ℓ。"
+    },
+    {
+      "mistake": "線外情形第一弧半徑太小。",
+      "why": "無法與直線交兩點。",
+      "correction": "開大圓規至穿越直線。"
+    },
+    {
+      "mistake": "A、B 為圓心時使用不同半徑。",
+      "why": "Q 不再到兩點等距。",
+      "correction": "保持圓規開口不變。"
+    },
+    {
+      "mistake": "把 AB 畫成答案。",
+      "why": "AB 位於原直線。",
+      "correction": "答案要連接兩個等距點 P、Q。"
+    },
+    {
+      "mistake": "只找到一個等距點。",
+      "why": "一點不能決定中垂線方向。",
+      "correction": "利用 P 與另一弧交點 Q 共同決定直線。"
+    },
+    {
+      "mistake": "以目測直角作驗證。",
+      "why": "圖可能不精準。",
+      "correction": "用 PA=PB、QA=QB 的中垂線理由。"
+    }
+  ],
+  "selfCheck": [
+    "我先判斷了 P 在線上還是線外嗎？",
+    "第一弧是否與直線有兩個交點？",
+    "以 A、B 畫弧時半徑是否相同？",
+    "最後連線是否通過指定點 P？",
+    "我能用中垂線性質說明 90° 嗎？"
+  ],
+  "summary": [
+    "過點作垂線分為點在線上與點在線外。",
+    "兩種作法都先取得直線上的等距端點 A、B。",
+    "兩個到 A、B 等距的點決定 AB 的中垂線。",
+    "作圖正確性來自等距，不來自目測。"
+  ],
+  "connections": {
+    "previous": "複製角用 SSS 搬移角；本技能用中垂線等距軌跡。",
+    "next": [
+      "下一技能要求從文字辨認作圖目標與步驟順序。",
+      "高線概念會把垂線用在三角形頂點與對邊。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-010-perpendicular"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-010-perpendicular 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s010-v001",
+      "u16-s010-v002",
+      "u16-s010-v003",
+      "u16-s010-v004",
+      "u16-s010-v005",
+      "u16-s010-v006",
+      "u16-s010-v007",
+      "u16-s010-v008",
+      "u16-s010-v009",
+      "u16-s010-v010",
+      "u16-s010-v011",
+      "u16-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s010-cr001",
+      "u16-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「過點作垂線」逐段核對定義、適用條件與反例；重新演算4個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "157c6cb7a0d7c1b6b71fe1a902a488c8d2afe24112c613901cf9d997b392574e"
+}

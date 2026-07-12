@@ -1,0 +1,229 @@
+{
+  "lectureId": "u22-s013-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-probability",
+  "skillId": "probability-sample-space",
+  "lockedSkillOrder": 13,
+  "title": "樣本空間：依順序與是否放回等條件完整列出樣本空間。",
+  "originalLockedTitle": "樣本空間",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能依題目記錄方式列出樣本空間。",
+    "能區分有序與無序結果。",
+    "能處理放回、不放回與限制條件。",
+    "能辨識記錄值不一定等可能。"
+  ],
+  "prerequisiteSkillIds": [
+    "probability-tree-basic"
+  ],
+  "prerequisiteBridge": "承接樹狀圖末端路徑。",
+  "glossary": [
+    {
+      "term": "樣本點",
+      "definition": "樣本空間中的一個完整基本結果。"
+    },
+    {
+      "term": "有序結果",
+      "definition": "先後次序不同即視為不同。"
+    },
+    {
+      "term": "放回",
+      "definition": "抽後歸還，使下一次候選恢復。"
+    },
+    {
+      "term": "映射結果",
+      "definition": "把原始結果記成奇偶、和或其他摘要值。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "乘法原理",
+      "meaning": "連續選擇且每一前綴後有固定選項數時，相乘。"
+    },
+    {
+      "symbol": "限制後計數",
+      "meaning": "先列完整候選，再刪除不合條件者。"
+    }
+  ],
+  "conceptNarrative": [
+    "樣本空間必須依一次試驗實際記錄內容定義。",
+    "兩次硬幣若記順序，正反與反正不同；若只記正面個數，則會合併成另一層級的結果。",
+    "放回抽取允許同一標籤重複；不放回則第二次候選數減少。",
+    "只記兩骰和時可能值2到12，但這些和不等可能；計算機率宜回到36個有序配對。",
+    "限制條件可能讓樹不規則，不能直接套原始乘積。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "完整性",
+      "statement": "沒有漏掉任何合法結果。"
+    },
+    {
+      "name": "互斥性",
+      "statement": "一次試驗不會同時落入兩個不同樣本點。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "n×m",
+      "conditions": [
+        "兩階段且每個第一階段結果後都有m種。"
+      ],
+      "meaning": "兩階段且每個第一階段結果後都有m種。"
+    },
+    {
+      "formula": "n(n-1)",
+      "conditions": [
+        "n個不同物不放回依序取2個，不使用排列公式名稱。"
+      ],
+      "meaning": "n個不同物不放回依序取2個，不使用排列公式名稱。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把事件的有利結果當完整樣本空間。",
+    "不放回時不能保留AA等重複實體結果。",
+    "映射後的不同標籤不可自動假設等可能。",
+    "限制只禁某一結果時不可擴大解讀。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "說明記錄單位",
+      "check": "是卡片、順序、和還是分類。"
+    },
+    {
+      "step": 2,
+      "instruction": "列第一階段",
+      "check": "全部可能。"
+    },
+    {
+      "step": 3,
+      "instruction": "展開後續",
+      "check": "依放回與條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "刪非法結果",
+      "check": "逐條核對。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查完整與等可能性",
+      "check": "計數前再確認。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩硬幣記順序",
+      "solutionSteps": [
+        "正正、正反、反正、反反。"
+      ],
+      "answer": "正正、正反、反正、反反。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "A、B、C放回抽兩次",
+      "solutionSteps": [
+        "9個有序結果。"
+      ],
+      "answer": "9個有序結果。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "A、B、C不放回抽兩次",
+      "solutionSteps": [
+        "AB、AC、BA、BC、CA、CB。"
+      ],
+      "answer": "AB、AC、BA、BC、CA、CB。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "1到4不重複取兩數只記和",
+      "solutionSteps": [
+        "和3到7，但各和不等可能。"
+      ],
+      "answer": "和3到7，但各和不等可能。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把正反與反正合併",
+      "why": "題目若記順序就不可。",
+      "correction": "題目若記順序就不可。"
+    },
+    {
+      "mistake": "放回題少算重複結果",
+      "why": "第二次候選已恢復。",
+      "correction": "第二次候選已恢復。"
+    },
+    {
+      "mistake": "不放回題列AA",
+      "why": "同一實體不能再抽。",
+      "correction": "同一實體不能再抽。"
+    },
+    {
+      "mistake": "把不同和當等可能",
+      "why": "先數每個和對應多少原始結果。",
+      "correction": "先數每個和對應多少原始結果。"
+    }
+  ],
+  "selfCheck": [
+    "樣本點是否完整到最後階段？",
+    "順序是否要記？",
+    "放回條件是否反映？",
+    "限制是否只刪除真正不合法結果？",
+    "記錄後結果是否仍等可能？"
+  ],
+  "summary": [
+    "樣本空間由試驗與記錄規則共同決定。",
+    "順序、放回與限制會改變結果數。",
+    "映射結果可合併多個基本結果。",
+    "完整不等於等可能。"
+  ],
+  "connections": {
+    "previous": "承接樹狀圖末端路徑。",
+    "next": [
+      "下一技能專門判斷哪些結果等可能。"
+    ]
+  },
+  "figureReferences": [],
+  "figureAccessibility": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s013-v001",
+      "u22-s013-v002",
+      "u22-s013-v003",
+      "u22-s013-v004",
+      "u22-s013-v005",
+      "u22-s013-v006",
+      "u22-s013-v007",
+      "u22-s013-v008",
+      "u22-s013-v009",
+      "u22-s013-v010",
+      "u22-s013-v011",
+      "u22-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s013-cr001",
+      "u22-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "完整列舉放回9項、不放回6項與兩骰和的映射；確認所有限制題刪除結果數與文字條件一致。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "依順序、是否放回等條件完整列出樣本空間。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "2db2bdb6244ad2fb938ad4b3c1b71f7a38589764f41011e81be33081f0986fc9"
+}

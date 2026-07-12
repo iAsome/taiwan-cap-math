@@ -1,0 +1,253 @@
+{
+  "lectureId": "u06-s007-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-variation",
+  "skillId": "inverse-variation-graph",
+  "lockedSkillTitle": "反比圖形概念",
+  "title": "反比圖形概念：不碰座標軸的彎曲分支",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "正比與反比",
+    "skillOrder": 7,
+    "lockedPrerequisiteSkillIds": [
+      "inverse-variation"
+    ],
+    "capBoundary": "以國中程度辨認 y=k/x 的點、象限與趨勢；不討論漸近線極限、微分或正式雙曲線理論。"
+  },
+  "prerequisiteBridge": "已知反比資料滿足 xy=k。把每組 (x,y) 標在座標平面，就能觀察乘積固定所形成的圖形。",
+  "learningOutcomes": [
+    "能判斷點是否在 y=k/x 圖形上。",
+    "能依 k 的正負判斷圖形所在象限。",
+    "能說明圖形不通過 x 軸或 y 軸。",
+    "能從圖形或資料判讀 x 增大時 y 的變化，但不靠比例尺猜答案。"
+  ],
+  "glossary": [
+    {
+      "term": "座標點",
+      "definition": "用 (x,y) 表示平面上一個位置。"
+    },
+    {
+      "term": "象限",
+      "definition": "x 軸與 y 軸把平面分成的四個區域。"
+    },
+    {
+      "term": "分支",
+      "definition": "反比圖形在不同象限中彼此不相連的部分。"
+    },
+    {
+      "term": "不按比例繪製",
+      "definition": "圖形只呈現結構，不能用目測距離取代計算。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(x,y)",
+      "meaning": "先讀橫座標 x，再讀縱座標 y。"
+    },
+    {
+      "symbol": "y=k/x",
+      "meaning": "x≠0，且點需滿足 xy=k。"
+    },
+    {
+      "symbol": "k>0 或 k<0",
+      "meaning": "決定 x、y 同號或異號，進而決定象限。"
+    }
+  ],
+  "conceptNarrative": [
+    "每個圖上點都必須滿足 xy=k，因此可用乘積檢查，不必依賴目測。",
+    "k>0 時 x、y 同號，圖形在第一、第三象限；k<0 時異號，在第二、第四象限。",
+    "因 x 不能為 0，圖形不碰 y 軸；若 k≠0，y 也不會為 0，所以不碰 x 軸。",
+    "在第一象限且 k>0 時，x 增大，y 會減小，但曲線不是直線。",
+    "圖形靠近座標軸不代表碰到座標軸；國中階段只需理解『不通過』，不使用極限語言。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "反比圖形",
+      "statement": "所有滿足 y=k/x、x≠0 的點集合。"
+    },
+    {
+      "name": "象限判斷",
+      "statement": "k=xy；k>0 表示 x、y 同號，k<0 表示異號。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "點 (a,b) 在圖上 ⇔ ab=k",
+      "conditions": [
+        "a≠0"
+      ],
+      "meaning": "以乘積判點。"
+    },
+    {
+      "formula": "k>0：第一與第三象限；k<0：第二與第四象限",
+      "conditions": [
+        "k≠0"
+      ],
+      "meaning": "由符號判分支位置。"
+    }
+  ],
+  "nonApplicableCases": [
+    "反比圖形不是一條通過原點的直線。",
+    "曲線看似接近座標軸，不能說與座標軸相交。",
+    "只看圖上高度猜 k，應使用標示座標計算。",
+    "k 的正負不能由單一未標座標的草圖可靠判定。",
+    "x=0 或 y=0 不屬於 k≠0 的反比圖形。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "讀出關係式的 k。",
+      "check": "是 y=12/x 還是 y=-12/x？"
+    },
+    {
+      "step": 2,
+      "instruction": "用 xy=k 檢查標示點。",
+      "check": "負號與座標順序正確嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "由 k 的符號判象限。",
+      "check": "x、y 應同號還是異號？"
+    },
+    {
+      "step": 4,
+      "instruction": "描述變化趨勢。",
+      "check": "限定在哪一個象限與 x 範圍？"
+    },
+    {
+      "step": 5,
+      "instruction": "確認不通過座標軸並避免目測。",
+      "check": "是否把靠近誤說成相交？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "點 (3,4) 是否在 y=12/x 上？",
+      "solutionSteps": [
+        "計算 3×4=12。",
+        "乘積等於 k。"
+      ],
+      "answer": "在圖形上。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "y=-8/x 的圖形在哪些象限？",
+      "solutionSteps": [
+        "k=-8<0，x、y 異號。",
+        "異號點位於第二、第四象限。"
+      ],
+      "answer": "第二與第四象限。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "在 y=24/x 的第一象限分支上，x 從 4 變 8，y 如何變？",
+      "solutionSteps": [
+        "x=4 時 y=6；x=8 時 y=3。",
+        "x 加倍，y 減半。"
+      ],
+      "answer": "由 6 變 3。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "反比圖形能否經過 (0,5)？",
+      "solutionSteps": [
+        "代入需計算 y=k/0，沒有定義。",
+        "因此任何 x=0 的點都不在圖上。"
+      ],
+      "answer": "不能。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把反比圖畫成負斜率直線。",
+      "why": "只注意一增一減。",
+      "correction": "用多組乘積固定點看出彎曲。"
+    },
+    {
+      "mistake": "k>0 卻選第二、第四象限。",
+      "why": "忽略乘積正表示同號。",
+      "correction": "列同號組合 (+,+)、(-,-)。"
+    },
+    {
+      "mistake": "認為圖形通過原點。",
+      "why": "套用正比圖形特徵。",
+      "correction": "x=0 時無定義。"
+    },
+    {
+      "mistake": "點 (2,5) 因靠近曲線就判在 y=12/x 上。",
+      "why": "以目測取代計算。",
+      "correction": "2×5=10≠12。"
+    },
+    {
+      "mistake": "只檢查 x+y。",
+      "why": "反比常數是乘積。",
+      "correction": "計算 xy。"
+    },
+    {
+      "mistake": "未限定象限便說 x 越大 y 越小。",
+      "why": "負值區間的語句可能混亂。",
+      "correction": "說明在第一象限或指定分支。"
+    }
+  ],
+  "selfCheck": [
+    "我用 xy=k 判點嗎？",
+    "k 的正負與象限一致嗎？",
+    "是否排除 x=0、y=0？",
+    "我描述的是曲線而非直線嗎？",
+    "是否避免從不按比例圖形直接量答案？"
+  ],
+  "summary": [
+    "反比圖形由 xy=k 的點組成。",
+    "k>0 在第一、第三象限；k<0 在第二、第四象限。",
+    "圖形彎曲且不通過座標軸。",
+    "判點與求值都應計算，不依賴目測。"
+  ],
+  "connections": {
+    "previous": "乘積固定提供每個圖上點的代數檢查。",
+    "next": [
+      "比例尺將圖上距離與實際距離建立正比。",
+      "素養題常要從圖表辨別正比與反比。"
+    ]
+  },
+  "figureReferences": [
+    "u06-fig-inverse-graph-01"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s007-v001",
+      "u06-s007-v002",
+      "u06-s007-v003",
+      "u06-s007-v004",
+      "u06-s007-v005",
+      "u06-s007-v006",
+      "u06-s007-v007",
+      "u06-s007-v008",
+      "u06-s007-v009",
+      "u06-s007-v010",
+      "u06-s007-v011",
+      "u06-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s007-cr001",
+      "u06-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以 xy=12 逐點核對圖中 (2,6)、(3,4)、(4,3)、(6,2)，並檢查曲線未碰兩軸、標題與替代文字未洩漏題目答案；象限敘述限制在 k 的正負與國中範圍。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "5ce28e4df230707b88ae05a67c7b3ed38f4e33fa7bfc8014841125eef63f5101"
+}

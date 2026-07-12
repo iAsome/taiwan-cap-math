@@ -1,0 +1,241 @@
+{
+  "lectureId": "u08-s007-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-elements",
+  "skillId": "polygon-angle-basic",
+  "lockedSkillTitle": "多邊形內角和",
+  "title": "多邊形內角和：從一個頂點分成 n−2 個三角形",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能使用 (n−2)×180° 求凸 n 邊形內角和。",
+    "能由內角和反求邊數。",
+    "能求正多邊形每個內角與外角。",
+    "能分辨內角和、單一內角與外角和。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "quadrilateral-basic"
+    ],
+    "bridgeExplanation": "四邊形可分成兩個三角形；同理，凸 n 邊形由一個頂點可分成 n−2 個三角形。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "quadrilateral-basic",
+      "requiredLevel": "能使用四邊形內角和 360°，並理解對角線分割。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "多邊形",
+      "definition": "由至少三條線段首尾相接形成的封閉平面圖形。"
+    },
+    {
+      "term": "n 邊形",
+      "definition": "有 n 條邊與 n 個頂點的多邊形。"
+    },
+    {
+      "term": "正多邊形",
+      "definition": "各邊等長且各內角相等的多邊形。"
+    },
+    {
+      "term": "外角",
+      "definition": "沿一邊前進後轉向下一邊時形成的外部轉角。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(n−2)×180°",
+      "meaning": "凸 n 邊形內角和。"
+    },
+    {
+      "symbol": "360°/n",
+      "meaning": "正 n 邊形每個外角。"
+    },
+    {
+      "symbol": "180°−360°/n",
+      "meaning": "正 n 邊形每個內角。"
+    }
+  ],
+  "conceptDevelopment": [
+    "從凸 n 邊形的一個頂點連到所有不相鄰頂點，可分成 n−2 個互不重疊三角形，因此內角和為 (n−2)×180°。",
+    "公式中的 n 是邊數，不是三角形數。三角形數是 n−2。",
+    "任意凸多邊形每個頂點各取同方向外角，外角和為 360°。若是正多邊形，每個外角相等，所以為 360°÷n。",
+    "正多邊形每個內角與相鄰外角互補，因此可用 180°−360°/n。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "凸多邊形",
+      "statement": "任兩點連線都位於圖形內部或邊界；本技能公式以國中常見凸多邊形為主。"
+    },
+    {
+      "name": "內角和",
+      "statement": "所有內角度數相加的總量。"
+    },
+    {
+      "name": "外角和",
+      "statement": "沿同一方向在每個頂點取一個外角的總和，為 360°。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "內角和=(n−2)×180°",
+      "conditions": [
+        "n 為整數且 n≥3；本技能採凸多邊形"
+      ],
+      "meaning": "求總內角。"
+    },
+    {
+      "formula": "正 n 邊形每個內角=((n−2)×180°)/n",
+      "conditions": [
+        "各內角相等"
+      ],
+      "meaning": "把內角和平均分。"
+    },
+    {
+      "formula": "正 n 邊形每個外角=360°/n",
+      "conditions": [
+        "每頂點取同方向外角"
+      ],
+      "meaning": "用一周轉角平均分。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能把 n×180° 當內角和。",
+    "一般多邊形各內角不一定相等，不能直接用內角和除以 n，除非題目說正多邊形或等角。",
+    "外角和 360° 不等於每個外角 360°。",
+    "反求 n 後必須是大於等於 3 的整數。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "先確認邊數 n 與是否為正多邊形。",
+      "check": "只有正多邊形才能平均分內角。"
+    },
+    {
+      "step": 2,
+      "instruction": "求內角和先算 n−2。",
+      "check": "再乘 180°。"
+    },
+    {
+      "step": 3,
+      "instruction": "反求邊數時令 (n−2)×180°=已知內角和。",
+      "check": "解出 n 並檢查整數。"
+    },
+    {
+      "step": 4,
+      "instruction": "求正多邊形單角可由內角和除 n 或先求外角。",
+      "check": "最後檢查內角與外角相加 180°。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "六邊形內角和為多少？",
+      "solutionSteps": [
+        "n=6。",
+        "(6−2)×180°=720°。"
+      ],
+      "answer": "720°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "某凸多邊形內角和為 1260°，有幾邊？",
+      "solutionSteps": [
+        "(n−2)×180=1260。",
+        "n−2=7，n=9。"
+      ],
+      "answer": "9 邊。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "正八邊形每個外角為多少？",
+      "solutionSteps": [
+        "外角和 360°。",
+        "360°÷8=45°。"
+      ],
+      "answer": "45°。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "正十二邊形每個內角為多少？",
+      "solutionSteps": [
+        "每個外角=360°÷12=30°。",
+        "內角=180°−30°=150°。"
+      ],
+      "answer": "150°。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "代入邊數求內角和。",
+    "standard": "由內角和反求邊數。",
+    "advanced": "結合正多邊形的單一內角與外角。",
+    "literacy": "鋪面、標誌與機械零件的正多邊形規格可由邊數推算轉角。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "六邊形算 6×180°。",
+      "why": "漏掉從一頂點分割後只有 n−2 個三角形。",
+      "correction": "應算 (6−2)×180°。"
+    },
+    {
+      "mistake": "一般六邊形每角都算 120°。",
+      "why": "未確認等角。",
+      "correction": "只有正六邊形或等角六邊形才能平均分。"
+    },
+    {
+      "mistake": "把外角和寫成 180°。",
+      "why": "與三角形內角和混淆。",
+      "correction": "沿一周的外角和為 360°。"
+    },
+    {
+      "mistake": "反求 n 得小數仍接受。",
+      "why": "邊數必須是整數。",
+      "correction": "檢查內角和是否可能。"
+    },
+    {
+      "mistake": "正多邊形內角用 360°÷n。",
+      "why": "那是每個外角。",
+      "correction": "內角=180°−外角。"
+    },
+    {
+      "mistake": "n=2 代入公式。",
+      "why": "二邊形不是本課多邊形。",
+      "correction": "要求 n≥3。"
+    }
+  ],
+  "selfCheckItems": [
+    "n 是邊數嗎？",
+    "我是否先算 n−2？",
+    "只有正多邊形才把內角和平均嗎？",
+    "內角與相鄰外角是否合為 180°？"
+  ],
+  "conciseSummary": [
+    "凸 n 邊形內角和為 (n−2)×180°。",
+    "外角和為 360°。",
+    "正 n 邊形每個外角為 360°/n。",
+    "反求邊數要得到 n≥3 的整數。"
+  ],
+  "connections": {
+    "previous": "上一技能以兩個三角形說明四邊形內角和。",
+    "next": [
+      "下一技能轉向垂直平分線與線對稱，使用等距與鏡射關係。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "重新計算六、九、八、十二邊形例題；1260÷180=7 後加 2 得 9，正十二邊形外角 30°、內角 150°，公式條件限定 n≥3 與正多邊形平均。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "144ce2e9284087542a5831d84f3c670bd5a33d5d399327d96bfb48bb3d7f0e4b"
+}

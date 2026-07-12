@@ -1,0 +1,237 @@
+{
+  "lectureId": "u07-s003-lecture-r1",
+  "unitId": "u07",
+  "topicId": "u07-basics",
+  "skillId": "inequality-transposition",
+  "title": "不等式移項：把同加同減寫成可靠的簡記",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明移項其實是兩邊同加或同減。",
+    "能整理含括號與兩邊都有 x 的不等式。",
+    "能判斷先展開、合併或移項的合理順序。",
+    "能避免只改符號卻漏項。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inequality-solve-basic",
+      "requiredLevel": "能用兩邊同加減與同除正數解基本不等式。"
+    }
+  ],
+  "prerequisiteBridge": {
+    "inequality-solve-basic": "能用兩邊同加減與同除正數解基本不等式。"
+  },
+  "glossary": [
+    {
+      "term": "移項",
+      "definition": "把兩邊同加或同減同一項的過程，用「跨越不等號後改符號」作簡寫。"
+    },
+    {
+      "term": "同類項",
+      "definition": "未知數部分完全相同，可以合併係數的項。"
+    },
+    {
+      "term": "展開",
+      "definition": "用分配律去掉括號。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "3x−5>x+7",
+      "meaning": "未知數項與常數項分布在不等號兩邊。"
+    },
+    {
+      "symbol": "2(x+1)",
+      "meaning": "需用分配律展開為 2x+2。"
+    }
+  ],
+  "conceptNarrative": [
+    "「移項變號」不是魔法規則；它是左右兩邊同時加上相反項後，省略中間步驟。",
+    "兩邊都有 x 時，通常先把 x 項集中一邊、常數集中另一邊。",
+    "括號存在時先正確展開，再合併同類項。",
+    "哪一邊放 x 都可以，但選擇能使係數為正，通常較不易在最後遇到負數除法。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "移項等價性",
+      "statement": "A+B>C 等價於 A>C−B，因為兩邊同減 B。"
+    },
+    {
+      "name": "合併同類項",
+      "statement": "ax+bx=(a+b)x。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A+B>C ⇔ A>C−B",
+      "conditions": [
+        "B 為同一個完整項"
+      ],
+      "meaning": "跨越不等號的簡記。"
+    },
+    {
+      "formula": "k(a+b)=ka+kb",
+      "conditions": [
+        "k 需乘括號內每一項"
+      ],
+      "meaning": "先展開再整理。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能跨越不等號後忘記改加減號。",
+    "乘法因子或整個括號不能當成單一加減項直接移動。",
+    "移項本身不會使不等號變向；只有乘除負數才會。",
+    "同類項未合併前不要直接除係數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先去括號並合併各邊同類項。",
+      "check": "分配律是否乘到每一項？"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇把 x 項集中到一側。",
+      "check": "是否能讓最後係數為正？"
+    },
+    {
+      "step": 3,
+      "instruction": "把常數集中到另一側。",
+      "check": "每個跨越的不完整項是否正確改符號？"
+    },
+    {
+      "step": 4,
+      "instruction": "除以係數並寫解集。",
+      "check": "若係數為負，是否記得變號？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原式檢查。",
+      "check": "是否代入尚未整理的原式？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 3x−5>x+7。",
+      "solutionSteps": [
+        "兩邊同減 x：2x−5>7。",
+        "兩邊同加 5：2x>12，再除以 2。"
+      ],
+      "answer": "x>6。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 5x+4≤2x+19。",
+      "solutionSteps": [
+        "兩邊同減 2x，得 3x+4≤19。",
+        "兩邊同減 4，再除以 3。"
+      ],
+      "answer": "x≤5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 2(x+3)<x+10。",
+      "solutionSteps": [
+        "展開為 2x+6<x+10。",
+        "移項得 x<4。"
+      ],
+      "answer": "x<4。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解 7−2x≥3−x。",
+      "solutionSteps": [
+        "兩邊同加 2x：7≥3+x。",
+        "兩邊同減 3：4≥x，改寫為 x≤4。"
+      ],
+      "answer": "x≤4。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "移項時連不等號一起反向。",
+      "why": "混淆移項與除以負數。",
+      "correction": "單純同加減不變號。"
+    },
+    {
+      "mistake": "2(x+3) 展開成 2x+3。",
+      "why": "分配律漏乘常數。",
+      "correction": "2 同時乘 x 和 3。"
+    },
+    {
+      "mistake": "3x−5>x+7 移項成 3x+x>7+5。",
+      "why": "x 跨越後未變成 −x。",
+      "correction": "應為 3x−x>7+5。"
+    },
+    {
+      "mistake": "把 4≥x 改寫成 x≥4。",
+      "why": "交換左右卻未保持大小語意。",
+      "correction": "4≥x 等價於 x≤4。"
+    },
+    {
+      "mistake": "兩邊都有 x 就把 x 消掉。",
+      "why": "未依係數相減。",
+      "correction": "例如 5x−2x=3x。"
+    },
+    {
+      "mistake": "整理後不回原式驗算。",
+      "why": "無法發現括號展開或移項漏符號。",
+      "correction": "代一個邊界內的數到原式。"
+    }
+  ],
+  "selfCheck": [
+    "我能把每次移項說回兩邊同加減嗎？",
+    "括號是否完整展開？",
+    "移項是否只改加減號而不改不等號方向？",
+    "最後交換左右時是否正確讀成 x 的範圍？"
+  ],
+  "summary": [
+    "移項是同加同減的簡記。",
+    "先展開與合併，再集中 x 項和常數項。",
+    "同加減不會使不等號反向。",
+    "最後仍需依係數正負決定除法規則。"
+  ],
+  "connections": {
+    "previous": "承接基本不等式解法。",
+    "next": [
+      "下一節將把整理後的解集畫在數線上。",
+      "第五技能會專門解釋負數變號的原因。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u07-s003-v001",
+      "u07-s003-v002",
+      "u07-s003-v003",
+      "u07-s003-v004",
+      "u07-s003-v005",
+      "u07-s003-v006",
+      "u07-s003-v007",
+      "u07-s003-v008",
+      "u07-s003-v009",
+      "u07-s003-v010",
+      "u07-s003-v011",
+      "u07-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u07-s003-cr001",
+      "u07-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個例題涵蓋兩邊有 x、括號分配、改寫 4≥x 與避免負係數的策略；人工逐項檢查移項符號與原式代入結果。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "ab8cb0aab5c65d0ce9275e8194217d63a1ff630b11a48ac3643be0eccc6d6c60"
+}

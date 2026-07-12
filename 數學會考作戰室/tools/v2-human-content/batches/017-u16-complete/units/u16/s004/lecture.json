@@ -1,0 +1,269 @@
+{
+  "lectureId": "u16-s004-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-congruence",
+  "skillId": "triangle-sss-sas",
+  "skillOrder": 4,
+  "originalLockedTitle": "SSS 與 SAS",
+  "title": "SSS 與 SAS：用邊長和夾角唯一決定三角形",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認三組對應邊相等的 SSS 判定。",
+    "能辨認兩組對應邊與夾角相等的 SAS 判定。",
+    "能區分夾角與非夾角，避免把 SSA 誤作 SAS。",
+    "能在共用邊、中點或角平分線題型中補出 SSS 或 SAS 所需條件。"
+  ],
+  "prerequisiteBridge": "已建立全等判定總覽與證明格式。本技能集中處理以邊為主的兩種判定，核心問題是『資料是否把三角形鎖定成唯一形狀』。",
+  "prerequisites": [
+    {
+      "skillId": "isosceles-equilateral",
+      "requiredLevel": "能使用先備技能「等腰與等邊三角形」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "SSS",
+      "definition": "Side-Side-Side，三組對應邊分別相等。"
+    },
+    {
+      "term": "SAS",
+      "definition": "Side-Angle-Side，兩組對應邊及其夾角分別相等。"
+    },
+    {
+      "term": "夾角",
+      "definition": "由兩條指定邊共同形成的角。"
+    },
+    {
+      "term": "非夾角",
+      "definition": "不位於兩條指定邊共同端點的角。"
+    },
+    {
+      "term": "剛性",
+      "definition": "邊長或邊角資料使圖形不能再自由改變形狀。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "SSS",
+      "meaning": "三組邊長資料足以判定兩三角形全等。"
+    },
+    {
+      "symbol": "SAS",
+      "meaning": "兩邊及兩邊共同端點的角相等。"
+    },
+    {
+      "symbol": "AB=DE、AC=DF、∠A=∠D",
+      "meaning": "∠A 與 ∠D 分別是兩組已知邊的夾角。"
+    }
+  ],
+  "conceptNarrative": [
+    "三根固定長度的棒首尾相接時，只能形成同一大小與形狀的三角形（鏡射後仍全等），所以 SSS 成立。",
+    "兩根固定長度的棒若連接角度也固定，第三個端點位置便被決定，所以 SAS 成立。",
+    "SAS 中的角必須是兩條已知邊的共同端點角。若角位於另一端，可能有兩個不同位置，這就是一般 SSA 的歧義。",
+    "共用邊可直接提供一組相等；中點可提供兩段相等；角平分線可提供夾角相等，常與 SAS 配合。",
+    "判定只需足夠資料，不代表題目一定把 S、A、S 按順序寫出，需先重整。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "SSS 全等判定",
+      "statement": "若兩三角形的三組對應邊分別相等，則兩三角形全等。"
+    },
+    {
+      "name": "SAS 全等判定",
+      "statement": "若兩三角形的兩組對應邊及其夾角分別相等，則兩三角形全等。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AB=DE、BC=EF、CA=FD ⇒ △ABC≅△DEF",
+      "conditions": [
+        "三組邊的端點對應一致"
+      ],
+      "meaning": "SSS。"
+    },
+    {
+      "formula": "AB=DE、AC=DF、∠BAC=∠EDF ⇒ △ABC≅△DEF",
+      "conditions": [
+        "∠BAC 與 ∠EDF 分別為已知兩邊的夾角"
+      ],
+      "meaning": "SAS。"
+    }
+  ],
+  "nonApplicableCases": [
+    "兩邊及非夾角相等通常是 SSA，不能直接判定。",
+    "只知道兩邊相等，夾角仍可改變。",
+    "三邊資料若不符合三角形不等式，根本無法形成三角形。",
+    "把某邊對錯對應邊會導致錯誤全等式。",
+    "圖中未標示的長度不能因外觀看似相等而使用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出所有已知邊長相等關係。",
+      "check": "是否包含共用邊或中點產生的等長？"
+    },
+    {
+      "step": 2,
+      "instruction": "若已有三組邊，檢查對應後使用 SSS。",
+      "check": "三組是否連成相同頂點對應？"
+    },
+    {
+      "step": 3,
+      "instruction": "若只有兩組邊，尋找角資料。",
+      "check": "角是否在兩條已知邊共同端點？"
+    },
+    {
+      "step": 4,
+      "instruction": "若是夾角，使用 SAS；若不是，暫停。",
+      "check": "是否誤把 SSA 當成 SAS？"
+    },
+    {
+      "step": 5,
+      "instruction": "按端點對應寫全等式並推出所求。",
+      "check": "所求是否為正確對應部分？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "AB=DE=5、BC=EF=7、CA=FD=8，判斷兩三角形。",
+      "solutionSteps": [
+        "三組對應邊分別相等。",
+        "邊的端點對應為 A↔D、B↔E、C↔F。"
+      ],
+      "answer": "△ABC≅△DEF（SSS）。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "AB=PQ、AC=PR、∠A=∠P，判斷條件。",
+      "solutionSteps": [
+        "∠A 是 AB、AC 的夾角。",
+        "∠P 是 PQ、PR 的夾角。"
+      ],
+      "answer": "可用 SAS 判定。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "AB=DE、BC=EF、∠A=∠D，能否用 SAS？",
+      "solutionSteps": [
+        "兩已知邊 AB、BC 的夾角是 ∠B。",
+        "給定的是 ∠A，不是夾角。"
+      ],
+      "answer": "不能直接用 SAS；資料型態為 SSA。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "M 為 AB 中點，CM 為共用邊，且 AC=BC。證明 △AMC≅△BMC。",
+      "solutionSteps": [
+        "AM=MB（中點）。",
+        "CM=CM（共用邊）。",
+        "AC=BC（已知）。"
+      ],
+      "answer": "△AMC≅△BMC（SSS）。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "AD 平分 ∠A，AB=AC。證明 △ABD 與 △ACD 全等。",
+      "solutionSteps": [
+        "AB=AC。",
+        "∠BAD=∠CAD。",
+        "AD=AD。"
+      ],
+      "answer": "△ABD≅△ACD（SAS）。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到兩邊一角就選 SAS。",
+      "why": "沒確認角的位置。",
+      "correction": "夾角必在兩已知邊共同端點。"
+    },
+    {
+      "mistake": "三組邊相等卻寫 ASA。",
+      "why": "只記縮寫未連結資料種類。",
+      "correction": "S 代表 side；三個 S 就是三邊。"
+    },
+    {
+      "mistake": "漏用共用邊。",
+      "why": "認為同一條邊不算條件。",
+      "correction": "線段與自身相等，可正式列入。"
+    },
+    {
+      "mistake": "中點只用共線，不用等長。",
+      "why": "未展開中點定義。",
+      "correction": "中點同時給共線與兩段相等，證明常用等長。"
+    },
+    {
+      "mistake": "配對順序由圖上位置決定。",
+      "why": "把左上對左上當成規則。",
+      "correction": "由等長邊共同端點決定對應。"
+    },
+    {
+      "mistake": "忽略三邊能否成三角形。",
+      "why": "機械套用 SSS。",
+      "correction": "若資料本身不存在三角形，就沒有全等對象。"
+    }
+  ],
+  "selfCheck": [
+    "我能清楚指出哪個角是夾角嗎？",
+    "我是否把共用邊與中點條件列出？",
+    "三組邊的對應是否一致？",
+    "我能說明一般 SSA 不足的原因嗎？",
+    "全等式是否按端點對應書寫？"
+  ],
+  "summary": [
+    "SSS 用三組對應邊；SAS 用兩組對應邊及夾角。",
+    "夾角位置是區分 SAS 與 SSA 的關鍵。",
+    "共用邊、中點與角平分線常補足判定條件。",
+    "任何判定都要先建立正確對應。"
+  ],
+  "connections": {
+    "previous": "使用全等證明理由鏈與等腰分類語言。",
+    "next": [
+      "下一技能處理以角為主的 ASA 與 AAS。",
+      "等腰性質證明會常用 SAS。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-004-sss-sas"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-004-sss-sas 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s004-v001",
+      "u16-s004-v002",
+      "u16-s004-v003",
+      "u16-s004-v004",
+      "u16-s004-v005",
+      "u16-s004-v006",
+      "u16-s004-v007",
+      "u16-s004-v008",
+      "u16-s004-v009",
+      "u16-s004-v010",
+      "u16-s004-v011",
+      "u16-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s004-cr001",
+      "u16-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「SSS 與 SAS」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "7a08768062d32c310934cc49b3491ec8265658e8f156b11e79612945ca053c29"
+}

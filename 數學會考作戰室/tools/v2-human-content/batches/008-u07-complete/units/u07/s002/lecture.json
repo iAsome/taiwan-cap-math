@@ -1,0 +1,232 @@
+{
+  "lectureId": "u07-s002-lecture-r1",
+  "unitId": "u07",
+  "topicId": "u07-basics",
+  "skillId": "inequality-solve-basic",
+  "title": "一元一次不等式解法：用同向等值操作保留解集",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能理解解不等式是找出所有使關係成立的 x。",
+    "能在不等式兩邊同加或同減同一數。",
+    "能在兩邊同乘或同除正數。",
+    "能把答案代回原式檢查。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inequality-symbol",
+      "requiredLevel": "能讀懂四種不等號並判斷解集方向。"
+    }
+  ],
+  "prerequisiteBridge": {
+    "inequality-symbol": "能讀懂四種不等號並判斷解集方向。"
+  },
+  "glossary": [
+    {
+      "term": "一元一次不等式",
+      "definition": "只含一個未知數，且未知數最高次數為 1 的不等式。"
+    },
+    {
+      "term": "同向等值操作",
+      "definition": "在不等式兩邊做不改變大小方向的相同運算。"
+    },
+    {
+      "term": "係數",
+      "definition": "乘在未知數前面的數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax+b>c",
+      "meaning": "一元一次不等式的一般外形之一。"
+    },
+    {
+      "symbol": "⇔",
+      "meaning": "前後兩個不等式具有相同解集。"
+    }
+  ],
+  "conceptNarrative": [
+    "解不等式與解方程式都要讓未知數單獨，但結果通常是一段範圍，不是單一數。",
+    "兩邊同加或同減相同數，大小關係不變。",
+    "兩邊同乘或同除正數，大小關係也不變。",
+    "本節先處理正係數；若最後需要除以負數，必須使用下一節後段的變號規則。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等價不等式",
+      "statement": "若兩個不等式的解集完全相同，就稱它們等價。"
+    },
+    {
+      "name": "正數倍操作",
+      "statement": "若 a>b 且 k>0，則 ak>bk；除以正數也保持方向。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a>b ⇒ a+c>b+c",
+      "conditions": [
+        "c 為任意實數"
+      ],
+      "meaning": "兩邊同加同一數不變號。"
+    },
+    {
+      "formula": "a>b 且 k>0 ⇒ ak>bk",
+      "conditions": [
+        "k 必須為正數"
+      ],
+      "meaning": "乘除正數不變號。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只在其中一邊加減。",
+    "除數不能是 0。",
+    "若乘除的數是負數，不能沿用本節「不變號」規則。",
+    "得到 x 的範圍後，不可把端點誤當成唯一答案。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "消去未知數旁的常數。",
+      "check": "兩邊是否做相同加減？"
+    },
+    {
+      "step": 2,
+      "instruction": "使未知數係數成為 1。",
+      "check": "目前除的是正數還是負數？"
+    },
+    {
+      "step": 3,
+      "instruction": "整理成 x 在左邊的標準形式。",
+      "check": "交換兩邊時是否保持關係等價？"
+    },
+    {
+      "step": 4,
+      "instruction": "挑端點內外各一數代入。",
+      "check": "內部數成立、外部數不成立嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 x+5>9。",
+      "solutionSteps": [
+        "兩邊同減 5，得 x>4。",
+        "代入 x=5：10>9 成立。"
+      ],
+      "answer": "x>4。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 x−7≤2。",
+      "solutionSteps": [
+        "兩邊同加 7。",
+        "得到 x≤9。"
+      ],
+      "answer": "x≤9。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 3x<15。",
+      "solutionSteps": [
+        "兩邊同除以正數 3。",
+        "不等號方向不變。"
+      ],
+      "answer": "x<5。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解 2x+3≥11。",
+      "solutionSteps": [
+        "兩邊同減 3，得 2x≥8。",
+        "兩邊同除以 2，得 x≥4。"
+      ],
+      "answer": "x≥4。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "x+5>9 只把左邊減 5。",
+      "why": "破壞兩邊原有比較。",
+      "correction": "兩邊同減 5。"
+    },
+    {
+      "mistake": "3x<15 除以 3 後寫 x>5。",
+      "why": "誤以為任何除法都變號。",
+      "correction": "除以正數不變號。"
+    },
+    {
+      "mistake": "x−7≤2 寫成 x≤−5。",
+      "why": "移除 −7 時符號處理錯。",
+      "correction": "兩邊同加 7。"
+    },
+    {
+      "mistake": "把 x≥4 解讀為 x=4。",
+      "why": "沿用方程式單一解思維。",
+      "correction": "4 以及所有更大的數都是解。"
+    },
+    {
+      "mistake": "驗算只代端點。",
+      "why": "端點可能剛好成立，無法確認方向。",
+      "correction": "另代範圍內與範圍外各一數。"
+    },
+    {
+      "mistake": "將 2x+3≥11 先除以 2 卻漏除常數 3。",
+      "why": "沒有對整個左右式做同一運算。",
+      "correction": "先移除常數或將整個式子各項同除。"
+    }
+  ],
+  "selfCheck": [
+    "每一步是否對左右兩邊做同一運算？",
+    "乘除的數是否為正數？",
+    "最後答案是否為範圍而非單一數？",
+    "我是否用原式驗算方向？"
+  ],
+  "summary": [
+    "同加同減任意數，不等號方向不變。",
+    "同乘同除正數，不等號方向不變。",
+    "目標是讓 x 單獨。",
+    "答案要以解集範圍表示並代回檢查。"
+  ],
+  "connections": {
+    "previous": "承接不等號與數線的讀法。",
+    "next": [
+      "下一節會把多項式整理與移項連在一起。",
+      "乘除負數的例外規則將在第五技能完整處理。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u07-s002-v001",
+      "u07-s002-v002",
+      "u07-s002-v003",
+      "u07-s002-v004",
+      "u07-s002-v005",
+      "u07-s002-v006",
+      "u07-s002-v007",
+      "u07-s002-v008",
+      "u07-s002-v009",
+      "u07-s002-v010",
+      "u07-s002-v011",
+      "u07-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u07-s002-cr001",
+      "u07-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐步重算四題並以代入原式確認；特別區分正數除法不變號與尚未進入的負數變號，避免零基礎學生過早混用規則。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "8f19bb8e73b7e4f4ccc91d3a23aef7de24799ce494d5e6ea9ca27a3f1067c93d"
+}

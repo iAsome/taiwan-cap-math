@@ -1,0 +1,1674 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u12-s007-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-applications",
+  "skillId": "factoring-application",
+  "lockedSkillTitle": "因式分解應用",
+  "title": "因式分解應用：把難算的式子改成好用的乘積",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能用平方差做心算。",
+    "能用完全平方簡化計算。",
+    "能由因式說明整除性。",
+    "能把多項式改寫成便於比較的形式。",
+    "能說明使用因式分解的必要性。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "factoring-common-mistake-sign",
+      "requiredLevel": "能運用前一技能並以展開驗證結果；本講義會重新連接必要步驟。"
+    }
+  ],
+  "prerequisiteBridge": "先備技能為 factoring-common-mistake-sign；先確認能完成前一方法並保留所有符號，再進入本技能。",
+  "glossary": [
+    {
+      "term": "整除",
+      "definition": "一數除以另一數，商為整數且無餘數。"
+    },
+    {
+      "term": "恆等式",
+      "definition": "對允許的每個變數值都成立的等式。"
+    },
+    {
+      "term": "結構化計算",
+      "definition": "先改寫式子再計算，避免直接展開大數。"
+    },
+    {
+      "term": "因數資訊",
+      "definition": "乘積形式直接顯示哪些量必為因數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "n(n+k)",
+      "meaning": "顯示此式含因數 n。"
+    },
+    {
+      "symbol": "(A+B)(A-B)",
+      "meaning": "可快速算 A^2-B^2。"
+    }
+  ],
+  "conceptNarrative": [
+    "因式分解不只為了寫答案，也能把大數平方差變成兩個小乘數。",
+    "若式子寫成 n×整數式，可立即說明它可被 n 整除，但要注意 n 的取值與除數不可為 0。",
+    "完全平方能把接近整數的計算化成單一平方。",
+    "應用題要先指出乘積形式帶來的資訊，而不是只完成形式轉換。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "因式分解應用",
+      "statement": "利用乘積形式完成計算、整除、比較或量的解讀。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A^2-B^2=(A+B)(A-B)",
+      "conditions": [
+        "適用平方差"
+      ],
+      "meaning": "快速乘法。"
+    },
+    {
+      "formula": "n^2+kn=n(n+k)",
+      "conditions": [
+        "n 為共同因式"
+      ],
+      "meaning": "顯示 n 整除整式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "除數可能為 0 時不能直接談除法。",
+    "因式分解只能重寫等值式，不能任意刪除因式。",
+    "實際情境中的長度因式還要檢查正值條件。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "判斷目標是計算、整除、比較或量的解讀。",
+      "check": "不要只看表面式子。"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇能暴露資訊的分解方法。",
+      "check": "平方差、完全平方或提公因式。"
+    },
+    {
+      "step": 3,
+      "instruction": "寫成乘積並執行目標操作。",
+      "check": "例如直接相乘或指出因數。"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查變數與情境限制。",
+      "check": "除數非零、長度為正。"
+    },
+    {
+      "step": 5,
+      "instruction": "用原式或估算回查。",
+      "check": "結果量級合理嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "63^2-37^2",
+      "solutionSteps": [
+        "分解成 (63+37)(63-37)。",
+        "100×26=2600。"
+      ],
+      "answer": "2600"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "98^2+4·98+4",
+      "solutionSteps": [
+        "辨認 98^2+2·98·2+2^2。",
+        "等於 (98+2)^2=100^2。"
+      ],
+      "answer": "10000"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "n^2+7n",
+      "solutionSteps": [
+        "提 n。",
+        "若 n 為整數，整式必為 n 的倍數。"
+      ],
+      "answer": "n(n+7)"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "x^2-16 與 x-4 的關係",
+      "solutionSteps": [
+        "乘積形式顯示 x-4 是因式。",
+        "但 x=4 時不能進一步把原式除以 x-4。"
+      ],
+      "answer": "x^2-16=(x-4)(x+4)"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "平方差直接算兩平方。",
+      "why": "忽略可簡化結構。",
+      "correction": "先改寫為和乘差。"
+    },
+    {
+      "mistake": "從 n(n+7) 把 n 約掉。",
+      "why": "沒有等式或分母條件。",
+      "correction": "分解不等於任意消去。"
+    },
+    {
+      "mistake": "宣稱可被 n 整除但 n=0。",
+      "why": "除數不可為 0。",
+      "correction": "加上 n≠0 或改說含因數 n。"
+    },
+    {
+      "mistake": "完全平方中間項辨認錯。",
+      "why": "2ab 算錯。",
+      "correction": "逐一找 a、b。"
+    },
+    {
+      "mistake": "只給乘積未回答情境問題。",
+      "why": "停在中間步驟。",
+      "correction": "回到所求量。"
+    },
+    {
+      "mistake": "忽略長度正值。",
+      "why": "代數因式可能為負。",
+      "correction": "依情境加上變數範圍。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "乘積形式能簡化計算並顯示因數。",
+    "整除與除法需檢查 0。",
+    "情境答案要回到原問題與限制。"
+  ],
+  "connections": {
+    "previous": "承接 factoring-common-mistake-sign。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s007-v001",
+      "u12-s007-v002",
+      "u12-s007-v003",
+      "u12-s007-v004",
+      "u12-s007-v005",
+      "u12-s007-v006",
+      "u12-s007-v007",
+      "u12-s007-v008",
+      "u12-s007-v009",
+      "u12-s007-v010",
+      "u12-s007-v011",
+      "u12-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s007-cr001",
+      "u12-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "例題分別重算平方差、完全平方、整除與零除限制；所有應用均指出分解後新增的可用資訊。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "9b236f838ea71bd9052a0df2dde484a70491d45ceb34228b22358592c6b67557"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u12-s007-v001",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "不直接算兩個平方，23²-17² 的值為何？",
+    "givenConditions": [
+      "使用平方差。"
+    ],
+    "target": "用和乘差快速計算。",
+    "choices": [
+      "36",
+      "400",
+      "240",
+      "120"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "直接回查 529-289=240。",
+    "explanation": "23²-17²=(23+17)(23-17)=40×6=240。",
+    "steps": [
+      "辨認平方差。",
+      "計算和 40、差 6。",
+      "相乘。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "36",
+        "truth": false,
+        "reason": "只算 (23-17)²。"
+      },
+      {
+        "choice": "400",
+        "truth": false,
+        "reason": "只算 23+17 的平方或誤用。"
+      },
+      {
+        "choice": "240",
+        "truth": true,
+        "reason": "(23+17)(23-17)=40×6=240。"
+      },
+      {
+        "choice": "120",
+        "truth": false,
+        "reason": "40×6 少算一半。"
+      }
+    ],
+    "misconceptionTarget": "把平方差當差的平方。",
+    "prerequisiteCheck": "需會平方差公式。",
+    "estimatedTimeSec": 60,
+    "unitAndRoundingChecks": "純數值；結果精確。",
+    "ambiguityAndBoundaryAudit": "無單位與範圍歧義。",
+    "difficultyReason": "基本公式應用與心算。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "用因式分解降低計算量。",
+    "concept": "平方差心算",
+    "tags": [
+      "代數",
+      "因式分解",
+      "basic",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "a9cacce4c3d366f27bf6a9547e111beee31302bdbb1fbf98d6172788311a783c"
+  },
+  {
+    "questionId": "u12-s007-v002",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "99²+2×99+1 的值為何？",
+    "givenConditions": [
+      "使用完全平方。"
+    ],
+    "target": "辨認 (99+1)²。",
+    "choices": [
+      "10000",
+      "9802",
+      "1000",
+      "9999"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "直接算 9801+198+1=10000。",
+    "explanation": "式子是 (99+1)²=100²=10000。",
+    "steps": [
+      "對照 a²+2ab+b²。",
+      "取 a=99、b=1。",
+      "計算 100²。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "10000",
+        "truth": true,
+        "reason": "99²+2·99·1+1²=100²。"
+      },
+      {
+        "choice": "9802",
+        "truth": false,
+        "reason": "只把 99² 與 1 相加，漏中間項。"
+      },
+      {
+        "choice": "1000",
+        "truth": false,
+        "reason": "100² 位值錯。"
+      },
+      {
+        "choice": "9999",
+        "truth": false,
+        "reason": "把完全平方誤當 100²-1。"
+      }
+    ],
+    "misconceptionTarget": "看見 99 就用 100²-1。",
+    "prerequisiteCheck": "需會完全平方公式。",
+    "estimatedTimeSec": 60,
+    "unitAndRoundingChecks": "無單位；精確。",
+    "ambiguityAndBoundaryAudit": "所有運算為整數。",
+    "difficultyReason": "基本完全平方應用。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "用完全平方簡化接近整百的計算。",
+    "concept": "完全平方心算",
+    "tags": [
+      "代數",
+      "因式分解",
+      "basic",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "d98b944126571b197e3d3d855c49a268c40b897cb039f450b1f0cf787bf8d968"
+  },
+  {
+    "questionId": "u12-s007-v003",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "n²+6n 可因式分解為 n(n+6)。若 n 為非零整數，這個形式直接說明何者？",
+    "givenConditions": [
+      "n≠0 且為整數。"
+    ],
+    "target": "解讀共同因式與整除。",
+    "choices": [
+      "n²+6n 一定可被 6 整除",
+      "n²+6n 永遠等於 6n²",
+      "n²+6n 一定是正數",
+      "n²+6n 可被 n 整除"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "整除結論來自乘積形式，不需指定 n 的正負。",
+    "explanation": "n²+6n=n(n+6)，兩因子均為整數且 n 非零，所以除以 n 的商為 n+6。",
+    "steps": [
+      "提出 n。",
+      "確認 n+6 為整數。",
+      "確認除數 n 不為 0。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "n²+6n 一定可被 6 整除",
+        "truth": false,
+        "reason": "n² 不一定是 6 的倍數。"
+      },
+      {
+        "choice": "n²+6n 永遠等於 6n²",
+        "truth": false,
+        "reason": "分解不會改變次方。"
+      },
+      {
+        "choice": "n²+6n 一定是正數",
+        "truth": false,
+        "reason": "n 為負時不一定。"
+      },
+      {
+        "choice": "n²+6n 可被 n 整除",
+        "truth": true,
+        "reason": "乘積中含因數 n，另一因子 n+6 也是整數。"
+      }
+    ],
+    "misconceptionTarget": "看到常數 6 就誤判可被 6 整除。",
+    "prerequisiteCheck": "需會整數與整除。",
+    "estimatedTimeSec": 75,
+    "unitAndRoundingChecks": "無實際單位；商精確。",
+    "ambiguityAndBoundaryAudit": "明示 n≠0，避免零作除數。",
+    "difficultyReason": "從因式解讀整除，需注意除數非零。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "用共同因式說明整除性。",
+    "concept": "整除資訊",
+    "tags": [
+      "代數",
+      "因式分解",
+      "basic",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "9691edf18f47537f457e905fa7656799e20605ff615dee81abdc55b97010b9fc"
+  },
+  {
+    "questionId": "u12-s007-v004",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "計算 52²-48²，最有效的結果為何？",
+    "givenConditions": [
+      "用平方差。"
+    ],
+    "target": "把接近數轉成和乘差。",
+    "choices": [
+      "4",
+      "400",
+      "416",
+      "5200"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "2704-2304=400。",
+    "explanation": "52²-48²=100×4=400。",
+    "steps": [
+      "求和 100。",
+      "求差 4。",
+      "相乘。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "只算兩數差，漏乘兩數和。"
+      },
+      {
+        "choice": "400",
+        "truth": true,
+        "reason": "(52+48)(52-48)=100×4。"
+      },
+      {
+        "choice": "416",
+        "truth": false,
+        "reason": "把平方差公式的結果 400 又多加 16。"
+      },
+      {
+        "choice": "5200",
+        "truth": false,
+        "reason": "把和 100 乘 52。"
+      }
+    ],
+    "misconceptionTarget": "把平方差誤算成差的平方，或在正確乘積後多加一次差平方。",
+    "prerequisiteCheck": "需會平方差公式。",
+    "estimatedTimeSec": 75,
+    "unitAndRoundingChecks": "無單位；精確。",
+    "ambiguityAndBoundaryAudit": "四個選項互異，只有 400 符合平方差計算。",
+    "difficultyReason": "需辨認最有效計算策略。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "用結構化計算避免大平方。",
+    "concept": "接近整數平方差",
+    "tags": [
+      "代數",
+      "因式分解",
+      "standard",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "d68a4ab9fdd14e975e0e1ea17aed86ff4cda8556777fd716be646d924291917e"
+  },
+  {
+    "questionId": "u12-s007-v005",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 A=75²-25²，利用因式分解可寫成哪個最容易計算的乘積？",
+    "givenConditions": [
+      "A 為整數。"
+    ],
+    "target": "選擇和乘差形式。",
+    "choices": [
+      "50×50",
+      "75×50",
+      "100×50",
+      "100×25"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "若再算得 5000，與 5625-625 相同。",
+    "explanation": "平方差直接給 A=(75+25)(75-25)=100×50。",
+    "steps": [
+      "辨認平方差。",
+      "分別算和、差。",
+      "不必先求最終值。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "50×50",
+        "truth": false,
+        "reason": "把兩個因式都寫成差。"
+      },
+      {
+        "choice": "75×50",
+        "truth": false,
+        "reason": "漏加 25。"
+      },
+      {
+        "choice": "100×50",
+        "truth": true,
+        "reason": "(75+25)(75-25)=100×50。"
+      },
+      {
+        "choice": "100×25",
+        "truth": false,
+        "reason": "第二因式應為 50。"
+      }
+    ],
+    "misconceptionTarget": "把和與差混淆。",
+    "prerequisiteCheck": "需會平方差。",
+    "estimatedTimeSec": 75,
+    "unitAndRoundingChecks": "無單位；精確。",
+    "ambiguityAndBoundaryAudit": "題目問乘積形式，不要求化為單一數。",
+    "difficultyReason": "要求選擇便於計算的等價形式。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "辨認最有用的因式形式。",
+    "concept": "結構化乘積",
+    "tags": [
+      "代數",
+      "因式分解",
+      "standard",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "c7e0c4fdb7e7f179967f6bf77e4342664816faee995168df64dea3d164ff22ed"
+  },
+  {
+    "questionId": "u12-s007-v006",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "對任意整數 k，k²-k 為何一定是偶數？",
+    "givenConditions": [
+      "k 為整數。"
+    ],
+    "target": "因式分解並利用相鄰整數。",
+    "choices": [
+      "k(k-1) 是兩個相鄰整數的乘積",
+      "k² 與 k 都一定是偶數",
+      "k(k+1) 與原式相同",
+      "因為兩項相減一定是偶數"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "例如 k 奇則 k-1 偶；k 偶則 k 本身偶，涵蓋所有整數。",
+    "explanation": "k²-k=k(k-1)，k 與 k-1 相鄰，其中必有一個偶數。",
+    "steps": [
+      "提出 k。",
+      "辨認兩因子相鄰。",
+      "用奇偶性得乘積偶。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "k(k-1) 是兩個相鄰整數的乘積",
+        "truth": true,
+        "reason": "相鄰兩整數必有一個偶數，因此乘積為偶數。"
+      },
+      {
+        "choice": "k² 與 k 都一定是偶數",
+        "truth": false,
+        "reason": "k 可為奇數。"
+      },
+      {
+        "choice": "k(k+1) 與原式相同",
+        "truth": false,
+        "reason": "k(k+1)=k²+k。"
+      },
+      {
+        "choice": "因為兩項相減一定是偶數",
+        "truth": false,
+        "reason": "奇偶不同時相減可為奇數。"
+      }
+    ],
+    "misconceptionTarget": "只看平方或相減，沒有完整奇偶論證。",
+    "prerequisiteCheck": "需理解奇偶與相鄰整數。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingChecks": "無單位；結論對負整數也成立。",
+    "ambiguityAndBoundaryAudit": "不以除以 k 論證，避免 k=0 問題。",
+    "difficultyReason": "需要把因式資訊連到數論理由。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "用因式分解證明偶數性。",
+    "concept": "奇偶證明",
+    "tags": [
+      "代數",
+      "因式分解",
+      "standard",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "d77ebbcd842909df0569bd7ff8ad85bf5cef0f32f4b6ec7869f5519c34d1079a"
+  },
+  {
+    "questionId": "u12-s007-v007",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 x+y=20，求 x²-y² 可改寫成哪個式子以便只再知道 x-y 就能計算？",
+    "givenConditions": [
+      "x、y 為數。"
+    ],
+    "target": "利用平方差與已知和。",
+    "choices": [
+      "400-(x-y)",
+      "(x-y)²",
+      "20(x+y)",
+      "20(x-y)"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "展開 20(x-y) 在 x+y=20 的條件下等於原式。",
+    "explanation": "x²-y²=(x+y)(x-y)=20(x-y)。",
+    "steps": [
+      "套平方差。",
+      "代入已知和 20。",
+      "保留未知差。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "400-(x-y)",
+        "truth": false,
+        "reason": "沒有平方差依據。"
+      },
+      {
+        "choice": "(x-y)²",
+        "truth": false,
+        "reason": "差的平方不是平方差。"
+      },
+      {
+        "choice": "20(x+y)",
+        "truth": false,
+        "reason": "會變成 400，漏掉差。"
+      },
+      {
+        "choice": "20(x-y)",
+        "truth": true,
+        "reason": "x²-y²=(x+y)(x-y)，且 x+y=20。"
+      }
+    ],
+    "misconceptionTarget": "把平方差當差平方。",
+    "prerequisiteCheck": "需會代入條件與平方差。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingChecks": "無單位；若 x、y 有同一單位，兩邊皆平方單位。",
+    "ambiguityAndBoundaryAudit": "只在給定 x+y=20 條件下等價，題幹已明示。",
+    "difficultyReason": "需要利用條件替換其中一因式。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "把因式分解與條件結合。",
+    "concept": "條件化簡",
+    "tags": [
+      "代數",
+      "因式分解",
+      "advanced",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "36c9397003137475e0d486c74a4181b6ddcae4340f5c74ddd2fe1508a6d332fe"
+  },
+  {
+    "questionId": "u12-s007-v008",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "對正整數 n，n³+3n²+2n 完整因式分解後，最能說明其為 6 的倍數的形式為何？",
+    "givenConditions": [
+      "n 為正整數。"
+    ],
+    "target": "分解成三個連續整數乘積。",
+    "choices": [
+      "n(n+3)+2n",
+      "n(n+1)(n+2)",
+      "n²(n+3)+2n",
+      "6(n³+n)"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "因此乘積同時含因數 2 與 3，必為 6 的倍數。",
+    "explanation": "n³+3n²+2n=n(n²+3n+2)=n(n+1)(n+2)。",
+    "steps": [
+      "提出 n。",
+      "分解二次三項式。",
+      "辨認三個連續整數中有一偶數且一個為 3 的倍數。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "n(n+3)+2n",
+        "truth": false,
+        "reason": "不是單一乘積，無法直接看 6。"
+      },
+      {
+        "choice": "n(n+1)(n+2)",
+        "truth": true,
+        "reason": "先提 n，括號 n²+3n+2=(n+1)(n+2)。"
+      },
+      {
+        "choice": "n²(n+3)+2n",
+        "truth": false,
+        "reason": "只是重排原式。"
+      },
+      {
+        "choice": "6(n³+n)",
+        "truth": false,
+        "reason": "展開不等於原式。"
+      }
+    ],
+    "misconceptionTarget": "只完成提 n，未繼續分解以顯示連續性。",
+    "prerequisiteCheck": "需會完整分解與連續整數整除。",
+    "estimatedTimeSec": 135,
+    "unitAndRoundingChecks": "無單位；n 正整數，結論精確。",
+    "ambiguityAndBoundaryAudit": "不使用除法取消 n；n=0 雖也成立，但題幹限定正整數。",
+    "difficultyReason": "多層分解後作整除推理。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "用完整因式顯示 6 的倍數。",
+    "concept": "連續整數整除",
+    "tags": [
+      "代數",
+      "因式分解",
+      "advanced",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "b977121f2495840b5d81b10042d82a8d7f9910ae3cd35429bcc4d1bb20eed9d0"
+  },
+  {
+    "questionId": "u12-s007-v009",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "已知 x≠4。將 (x²-16)÷(x-4) 先因式分解後，結果為何？",
+    "givenConditions": [
+      "x≠4，避免分母為 0。"
+    ],
+    "target": "用平方差約去合法共同因式。",
+    "choices": [
+      "x-4",
+      "x²+16",
+      "x+4",
+      "1"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "代數結果在原定義域 x≠4 上成立。",
+    "explanation": "分子分解為 (x-4)(x+4)，因 x-4≠0，可約成 x+4。",
+    "steps": [
+      "先因式分解分子。",
+      "檢查 x≠4。",
+      "約去共同非零因式。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "x-4",
+        "truth": false,
+        "reason": "約去後保留錯誤因式。"
+      },
+      {
+        "choice": "x²+16",
+        "truth": false,
+        "reason": "平方差分解錯。"
+      },
+      {
+        "choice": "x+4",
+        "truth": true,
+        "reason": "x²-16=(x-4)(x+4)，在 x≠4 時可約去 x-4。"
+      },
+      {
+        "choice": "1",
+        "truth": false,
+        "reason": "把兩個不同因式都消去。"
+      }
+    ],
+    "misconceptionTarget": "未檢查分母為 0，或把平方差當平方和。",
+    "prerequisiteCheck": "需會基本代數分式約分；不求方程式根。",
+    "estimatedTimeSec": 120,
+    "unitAndRoundingChecks": "無單位；結果精確。",
+    "ambiguityAndBoundaryAudit": "保留原限制 x≠4，即使化簡式 x+4 在 x=4 有值也不能擴張原題。",
+    "difficultyReason": "涉及分式約分與定義域限制。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "用因式分解合法約分。",
+    "concept": "定義域約分",
+    "tags": [
+      "代數",
+      "因式分解",
+      "advanced",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "ec3c8a415356b0b7f727d60df6318ab203d55a02073c50727dea08b715f61c0d"
+  },
+  {
+    "questionId": "u12-s007-v010",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一家印刷廠兩批海報數量差為 101²-99² 張。用因式分解計算，差多少張？",
+    "givenConditions": [
+      "數量為整數。"
+    ],
+    "target": "用平方差快速取得差值。",
+    "choices": [
+      "400 張",
+      "4 張",
+      "200 張",
+      "202 張"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "直接平方回查 10201-9801=400。",
+    "explanation": "平方差轉成 200×2=400。",
+    "steps": [
+      "辨認兩批數量是平方數。",
+      "算和 200、差 2。",
+      "相乘並附單位。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "400 張",
+        "truth": true,
+        "reason": "(101+99)(101-99)=200×2=400。"
+      },
+      {
+        "choice": "4 張",
+        "truth": false,
+        "reason": "只算差的平方。"
+      },
+      {
+        "choice": "200 張",
+        "truth": false,
+        "reason": "只算兩數和。"
+      },
+      {
+        "choice": "202 張",
+        "truth": false,
+        "reason": "把和與差相加。"
+      }
+    ],
+    "misconceptionTarget": "把數量差誤當邊長差。",
+    "prerequisiteCheck": "需會平方差。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingChecks": "答案單位張；整數精確。",
+    "ambiguityAndBoundaryAudit": "第一批較多，差值應為正。",
+    "difficultyReason": "情境要求避免大數平方並保留單位。",
+    "literacyContextNecessity": "兩批數量以平方模型給出，平方差是計算差值的必要結構。",
+    "authoringIntent": "計算兩批產量差。",
+    "concept": "生產差值",
+    "tags": [
+      "代數",
+      "因式分解",
+      "literacy",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "f39bb6d5f52ecc122ce3786c58a057e84923d9cef83145201abc601750407bbd"
+  },
+  {
+    "questionId": "u12-s007-v011",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某活動有 n 排座位，每排 n+5 席，總座位數可寫成 n²+5n。乘積形式最直接顯示哪兩個量？",
+    "givenConditions": [
+      "n 為正整數。"
+    ],
+    "target": "解讀 n(n+5)。",
+    "choices": [
+      "總排數 n² 與額外 5 排",
+      "每排 n 席與總共 5 席",
+      "兩個面積邊長 n² 與 5n",
+      "排數 n 與每排 n+5 席"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "乘回得到總座位數。",
+    "explanation": "n²+5n=n(n+5)，兩因式正好對應排數與每排席數。",
+    "steps": [
+      "提出 n。",
+      "將兩因式對照題意。",
+      "確認 n>0。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "總排數 n² 與額外 5 排",
+        "truth": false,
+        "reason": "n² 是乘積項，不是排數。"
+      },
+      {
+        "choice": "每排 n 席與總共 5 席",
+        "truth": false,
+        "reason": "漏掉 n+5。"
+      },
+      {
+        "choice": "兩個面積邊長 n² 與 5n",
+        "truth": false,
+        "reason": "情境是座位計數。"
+      },
+      {
+        "choice": "排數 n 與每排 n+5 席",
+        "truth": true,
+        "reason": "總數=排數×每排席數。"
+      }
+    ],
+    "misconceptionTarget": "只做形式分解，未解讀因式。",
+    "prerequisiteCheck": "需知道乘法計數原理。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingChecks": "兩因式皆為無單位計數，乘積為席；無近似。",
+    "ambiguityAndBoundaryAudit": "n 正整數，排數與席數皆正。",
+    "difficultyReason": "情境意義是題目核心。",
+    "literacyContextNecessity": "排數與每排席數無法從展開式直接看出，因式分解恢復安排結構。",
+    "authoringIntent": "由乘積還原座位安排。",
+    "concept": "排列解讀",
+    "tags": [
+      "代數",
+      "因式分解",
+      "literacy",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "c5b77e97f19ffbc723c725e2057b55dfa288490f4fa0847901c91356f2d9c5dd"
+  },
+  {
+    "questionId": "u12-s007-v012",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "資料中心每分鐘處理量為 m²+7m 筆。若 m 為正整數，哪個敘述可由因式分解直接得到？",
+    "givenConditions": [
+      "m>0 且為整數。"
+    ],
+    "target": "解讀 m(m+7)。",
+    "choices": [
+      "處理量一定是 7 的倍數",
+      "處理量可分成 m 組，每組 m+7 筆",
+      "每組一定有 7 筆",
+      "總量一定是平方數"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "乘回即原處理量，分組均為整數。",
+    "explanation": "m²+7m=m(m+7)，可解讀為 m 組、每組 m+7 筆。",
+    "steps": [
+      "提出 m。",
+      "利用 m 正整數確認分組數。",
+      "回到資料處理語意。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "處理量一定是 7 的倍數",
+        "truth": false,
+        "reason": "m² 不一定被 7 整除。"
+      },
+      {
+        "choice": "處理量可分成 m 組，每組 m+7 筆",
+        "truth": true,
+        "reason": "乘積形式直接給出整數分組。"
+      },
+      {
+        "choice": "每組一定有 7 筆",
+        "truth": false,
+        "reason": "另一因子是 m+7。"
+      },
+      {
+        "choice": "總量一定是平方數",
+        "truth": false,
+        "reason": "m(m+7) 一般不是平方。"
+      }
+    ],
+    "misconceptionTarget": "看到常數 7 就宣稱 7 的倍數。",
+    "prerequisiteCheck": "需理解整數分組。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingChecks": "單位筆；m 與 m+7 是計數，無近似。",
+    "ambiguityAndBoundaryAudit": "m>0 排除零組。",
+    "difficultyReason": "需從代數乘積作可行整數分組。",
+    "literacyContextNecessity": "資料分組必須是整數，題幹 m 正整數使因式的情境解讀成立。",
+    "authoringIntent": "把處理量模型解讀為分組。",
+    "concept": "資料分組",
+    "tags": [
+      "代數",
+      "因式分解",
+      "literacy",
+      "因式分解應用"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "c58632d6bfe408839afc763b68a67536073913fefb05644284893e3c0006f8b0"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u12-s007-cr001",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "不用直接計算 103² 與 97²，求 103²-97²，並說明因式分解如何降低計算量。",
+    "requiredWork": [
+      "辨認平方差。",
+      "算和與差。",
+      "完成乘法並附理由。"
+    ],
+    "fullCreditSolution": [
+      "103²-97²=(103+97)(103-97)。",
+      "=200×6=1200。",
+      "原本兩個四位數平方改成整百乘單位數。"
+    ],
+    "alternativeSolutions": [
+      "可直接平方回查：10609-9409=1200，但不能取代主要因式分解過程。"
+    ],
+    "reasoningSteps": [
+      "公式把兩次平方與一次減法改為兩次簡單加減與一次乘法。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "正確寫出 200×6=1200，並具體說明計算簡化。"
+      },
+      {
+        "score": 2,
+        "criteria": "答案與平方差步驟正確，但未說明效率；或一處小算術錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "能寫 (103+97)(103-97) 但未完成。"
+      },
+      {
+        "score": 0,
+        "criteria": "寫成 (103-97)² 或結果完全不符。"
+      }
+    ],
+    "partialCreditRules": [
+      "只直接平方算對最高 1 分，因未依題意。",
+      "答案需是正的差值。"
+    ],
+    "followThroughPolicy": "若和或差抄錯但公式正確，依後續一致可給 1 至 2 分；若公式本身錯不給方法分。",
+    "unitAndNotationRules": [
+      "無實際單位。",
+      "結果精確。"
+    ],
+    "answerOnlyPolicy": "只答 1200 無過程最高 1 分。",
+    "commonErrors": [
+      "把平方差當差平方 36。",
+      "103+97 算成 210。"
+    ],
+    "independentReview": {
+      "derivedResult": "1200。",
+      "ambiguity": "題目指定不用直接平方，替代回查只作驗證。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "a9212bd8ef9e63b0c9a6e6a8bfc7bb85e28bbede5c3adc096b381678005cd3f6"
+  },
+  {
+    "questionId": "u12-s007-cr002",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-application",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "證明對任意整數 n，n³-n 一定是 6 的倍數。必須使用因式分解與連續整數性質。",
+    "requiredWork": [
+      "完整因式分解。",
+      "指出三個連續整數。",
+      "分別說明因數 2 與 3。"
+    ],
+    "fullCreditSolution": [
+      "n³-n=n(n²-1)=n(n-1)(n+1)。",
+      "n-1、n、n+1 是三個連續整數。",
+      "三個連續整數中至少一個為偶數，且恰有一個是 3 的倍數，因此乘積含因數 2 與 3，是 6 的倍數。"
+    ],
+    "alternativeSolutions": [
+      "可依 n 除以 3 的餘數分類，再配合奇偶；但仍需先寫出三連續因式。"
+    ],
+    "reasoningSteps": [
+      "平方差完成第二層分解。",
+      "連續性提供整除資訊。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完整分解為 (n-1)n(n+1)，並正確論證其中含 2 與 3 的因數。"
+      },
+      {
+        "score": 2,
+        "criteria": "分解正確且只完整說明偶數或 3 的倍數其中一部分。"
+      },
+      {
+        "score": 1,
+        "criteria": "能分解到 n(n²-1) 或提到連續整數，但證明不完整。"
+      },
+      {
+        "score": 0,
+        "criteria": "只用若干數值例子，或錯誤宣稱每個因子都被 6 整除。"
+      }
+    ],
+    "partialCreditRules": [
+      "n 可為負或 0，證明仍成立。",
+      "只舉例不能替代一般證明。"
+    ],
+    "followThroughPolicy": "若把因式順序寫為 n(n+1)(n-1) 不影響；若漏一個因式則不能取得完整整除分。",
+    "unitAndNotationRules": [
+      "n 為整數。",
+      "「6 的倍數」包含 0 與負倍數。"
+    ],
+    "answerOnlyPolicy": "只答「是」或只列幾個例子，最高 0 至 1 分。",
+    "commonErrors": [
+      "認為三連續整數都必為偶數。",
+      "只證明是 2 的倍數，漏 3。"
+    ],
+    "independentReview": {
+      "derivedResult": "n³-n=(n-1)n(n+1)，必為 6 的倍數。",
+      "ambiguity": "不使用數學歸納法或模運算作唯一方法，保持國中可讀性。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "d7727d72dcf3419aa86e58bb4d2aee6f9d8dd059896a7f2c8369163d246ec69d"
+  }
+];
+
+export const SEMANTIC_REVIEWS = [
+  {
+    "questionId": "u12-s007-v001",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "a9cacce4c3d366f27bf6a9547e111beee31302bdbb1fbf98d6172788311a783c",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "直接回查 529-289=240。",
+    "derivedAnswer": "240",
+    "storedAnswer": "240",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「不直接算兩個平方，23²-17² 的值為何？」逐一展開或回代；正解「240」成立。「36」不成立：只算 (23-17)²。；「400」不成立：只算 23+17 的平方或誤用。；「120」不成立：40×6 少算一半。",
+      "undefinedSymbol": "題幹已給條件為「使用平方差。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「用和乘差快速計算。」。",
+      "unitConflict": "本題單位審查：純數值；結果精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；純數值；結果精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：無單位與範圍歧義。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「用和乘差快速計算。」閱讀後，常見誤讀為「把平方差當差的平方。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "基本公式應用與心算。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會平方差公式。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v001：直接回查 529-289=240。 因此導出「240」。再逐項檢查四選項真值為 [False, False, True, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「用和乘差快速計算。」，並特別排除「把平方差當差的平方。」。難度理由是「基本公式應用與心算。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v002",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "d98b944126571b197e3d3d855c49a268c40b897cb039f450b1f0cf787bf8d968",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "直接算 9801+198+1=10000。",
+    "derivedAnswer": "10000",
+    "storedAnswer": "10000",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「99²+2×99+1 的值為何？」逐一展開或回代；正解「10000」成立。「9802」不成立：只把 99² 與 1 相加，漏中間項。；「1000」不成立：100² 位值錯。；「9999」不成立：把完全平方誤當 100²-1。",
+      "undefinedSymbol": "題幹已給條件為「使用完全平方。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「辨認 (99+1)²。」。",
+      "unitConflict": "本題單位審查：無單位；精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：所有運算為整數。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「辨認 (99+1)²。」閱讀後，常見誤讀為「看見 99 就用 100²-1。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "基本完全平方應用。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會完全平方公式。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v002：直接算 9801+198+1=10000。 因此導出「10000」。再逐項檢查四選項真值為 [True, False, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「辨認 (99+1)²。」，並特別排除「看見 99 就用 100²-1。」。難度理由是「基本完全平方應用。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v003",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "9691edf18f47537f457e905fa7656799e20605ff615dee81abdc55b97010b9fc",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "整除結論來自乘積形式，不需指定 n 的正負。",
+    "derivedAnswer": "n²+6n 可被 n 整除",
+    "storedAnswer": "n²+6n 可被 n 整除",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「n²+6n 可因式分解為 n(n+6)。若 n 為非零整數，這個形式直接說明何者？」逐一展開或回代；正解「n²+6n 可被 n 整除」成立。「n²+6n 一定可被 6 整除」不成立：n² 不一定是 6 的倍數。；「n²+6n 永遠等於 6n²」不成立：分解不會改變次方。；「n²+6n 一定是正數」不成立：n 為負時不一定。",
+      "undefinedSymbol": "題幹已給條件為「n≠0 且為整數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「解讀共同因式與整除。」。",
+      "unitConflict": "本題單位審查：無實際單位；商精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無實際單位；商精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：明示 n≠0，避免零作除數。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「解讀共同因式與整除。」閱讀後，常見誤讀為「看到常數 6 就誤判可被 6 整除。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "從因式解讀整除，需注意除數非零。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會整數與整除。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v003：整除結論來自乘積形式，不需指定 n 的正負。 因此導出「n²+6n 可被 n 整除」。再逐項檢查四選項真值為 [False, False, False, True]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「解讀共同因式與整除。」，並特別排除「看到常數 6 就誤判可被 6 整除。」。難度理由是「從因式解讀整除，需注意除數非零。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v004",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "d68a4ab9fdd14e975e0e1ea17aed86ff4cda8556777fd716be646d924291917e",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "2704-2304=400。",
+    "derivedAnswer": "400",
+    "storedAnswer": "400",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「計算 52²-48²，最有效的結果為何？」逐一展開或回代；正解「400」成立。「4」不成立：只算兩數差，漏乘兩數和。；「416」不成立：把平方差公式的結果 400 又多加 16。；「5200」不成立：把和 100 乘 52。",
+      "undefinedSymbol": "題幹已給條件為「用平方差。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「把接近數轉成和乘差。」。",
+      "unitConflict": "本題單位審查：無單位；精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：四個選項互異，只有 400 符合平方差計算。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「把接近數轉成和乘差。」閱讀後，常見誤讀為「把平方差誤算成差的平方，或在正確乘積後多加一次差平方。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "需辨認最有效計算策略。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會平方差公式。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v004：2704-2304=400。 因此導出「400」。再逐項檢查四選項真值為 [False, True, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「把接近數轉成和乘差。」，並特別排除「把平方差誤算成差的平方，或在正確乘積後多加一次差平方。」。難度理由是「需辨認最有效計算策略。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v005",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "c7e0c4fdb7e7f179967f6bf77e4342664816faee995168df64dea3d164ff22ed",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "若再算得 5000，與 5625-625 相同。",
+    "derivedAnswer": "100×50",
+    "storedAnswer": "100×50",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「若 A=75²-25²，利用因式分解可寫成哪個最容易計算的乘積？」逐一展開或回代；正解「100×50」成立。「50×50」不成立：把兩個因式都寫成差。；「75×50」不成立：漏加 25。；「100×25」不成立：第二因式應為 50。",
+      "undefinedSymbol": "題幹已給條件為「A 為整數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「選擇和乘差形式。」。",
+      "unitConflict": "本題單位審查：無單位；精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：題目問乘積形式，不要求化為單一數。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「選擇和乘差形式。」閱讀後，常見誤讀為「把和與差混淆。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "要求選擇便於計算的等價形式。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會平方差。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v005：若再算得 5000，與 5625-625 相同。 因此導出「100×50」。再逐項檢查四選項真值為 [False, False, True, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「選擇和乘差形式。」，並特別排除「把和與差混淆。」。難度理由是「要求選擇便於計算的等價形式。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v006",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "d77ebbcd842909df0569bd7ff8ad85bf5cef0f32f4b6ec7869f5519c34d1079a",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "例如 k 奇則 k-1 偶；k 偶則 k 本身偶，涵蓋所有整數。",
+    "derivedAnswer": "k(k-1) 是兩個相鄰整數的乘積",
+    "storedAnswer": "k(k-1) 是兩個相鄰整數的乘積",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「對任意整數 k，k²-k 為何一定是偶數？」逐一展開或回代；正解「k(k-1) 是兩個相鄰整數的乘積」成立。「k² 與 k 都一定是偶數」不成立：k 可為奇數。；「k(k+1) 與原式相同」不成立：k(k+1)=k²+k。；「因為兩項相減一定是偶數」不成立：奇偶不同時相減可為奇數。",
+      "undefinedSymbol": "題幹已給條件為「k 為整數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「因式分解並利用相鄰整數。」。",
+      "unitConflict": "本題單位審查：無單位；結論對負整數也成立。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；結論對負整數也成立。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：不以除以 k 論證，避免 k=0 問題。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「因式分解並利用相鄰整數。」閱讀後，常見誤讀為「只看平方或相減，沒有完整奇偶論證。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "需要把因式資訊連到數論理由。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需理解奇偶與相鄰整數。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v006：例如 k 奇則 k-1 偶；k 偶則 k 本身偶，涵蓋所有整數。 因此導出「k(k-1) 是兩個相鄰整數的乘積」。再逐項檢查四選項真值為 [True, False, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「因式分解並利用相鄰整數。」，並特別排除「只看平方或相減，沒有完整奇偶論證。」。難度理由是「需要把因式資訊連到數論理由。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v007",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "36c9397003137475e0d486c74a4181b6ddcae4340f5c74ddd2fe1508a6d332fe",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "展開 20(x-y) 在 x+y=20 的條件下等於原式。",
+    "derivedAnswer": "20(x-y)",
+    "storedAnswer": "20(x-y)",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「若 x+y=20，求 x²-y² 可改寫成哪個式子以便只再知道 x-y 就能計算？」逐一展開或回代；正解「20(x-y)」成立。「400-(x-y)」不成立：沒有平方差依據。；「(x-y)²」不成立：差的平方不是平方差。；「20(x+y)」不成立：會變成 400，漏掉差。",
+      "undefinedSymbol": "題幹已給條件為「x、y 為數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「利用平方差與已知和。」。",
+      "unitConflict": "本題單位審查：無單位；若 x、y 有同一單位，兩邊皆平方單位。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；若 x、y 有同一單位，兩邊皆平方單位。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：只在給定 x+y=20 條件下等價，題幹已明示。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「利用平方差與已知和。」閱讀後，常見誤讀為「把平方差當差平方。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "需要利用條件替換其中一因式。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會代入條件與平方差。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v007：展開 20(x-y) 在 x+y=20 的條件下等於原式。 因此導出「20(x-y)」。再逐項檢查四選項真值為 [False, False, False, True]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「利用平方差與已知和。」，並特別排除「把平方差當差平方。」。難度理由是「需要利用條件替換其中一因式。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v008",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "b977121f2495840b5d81b10042d82a8d7f9910ae3cd35429bcc4d1bb20eed9d0",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "因此乘積同時含因數 2 與 3，必為 6 的倍數。",
+    "derivedAnswer": "n(n+1)(n+2)",
+    "storedAnswer": "n(n+1)(n+2)",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「對正整數 n，n³+3n²+2n 完整因式分解後，最能說明其為 6 的倍數的形式為何？」逐一展開或回代；正解「n(n+1)(n+2)」成立。「n(n+3)+2n」不成立：不是單一乘積，無法直接看 6。；「n²(n+3)+2n」不成立：只是重排原式。；「6(n³+n)」不成立：展開不等於原式。",
+      "undefinedSymbol": "題幹已給條件為「n 為正整數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「分解成三個連續整數乘積。」。",
+      "unitConflict": "本題單位審查：無單位；n 正整數，結論精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；n 正整數，結論精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：不使用除法取消 n；n=0 雖也成立，但題幹限定正整數。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「分解成三個連續整數乘積。」閱讀後，常見誤讀為「只完成提 n，未繼續分解以顯示連續性。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "多層分解後作整除推理。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會完整分解與連續整數整除。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v008：因此乘積同時含因數 2 與 3，必為 6 的倍數。 因此導出「n(n+1)(n+2)」。再逐項檢查四選項真值為 [False, True, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「分解成三個連續整數乘積。」，並特別排除「只完成提 n，未繼續分解以顯示連續性。」。難度理由是「多層分解後作整除推理。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v009",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "ec3c8a415356b0b7f727d60df6318ab203d55a02073c50727dea08b715f61c0d",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "代數結果在原定義域 x≠4 上成立。",
+    "derivedAnswer": "x+4",
+    "storedAnswer": "x+4",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「已知 x≠4。將 (x²-16)÷(x-4) 先因式分解後，結果為何？」逐一展開或回代；正解「x+4」成立。「x-4」不成立：約去後保留錯誤因式。；「x²+16」不成立：平方差分解錯。；「1」不成立：把兩個不同因式都消去。",
+      "undefinedSymbol": "題幹已給條件為「x≠4，避免分母為 0。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「用平方差約去合法共同因式。」。",
+      "unitConflict": "本題單位審查：無單位；結果精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；結果精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：保留原限制 x≠4，即使化簡式 x+4 在 x=4 有值也不能擴張原題。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「用平方差約去合法共同因式。」閱讀後，常見誤讀為「未檢查分母為 0，或把平方差當平方和。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "涉及分式約分與定義域限制。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會基本代數分式約分；不求方程式根。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v009：代數結果在原定義域 x≠4 上成立。 因此導出「x+4」。再逐項檢查四選項真值為 [False, False, True, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「用平方差約去合法共同因式。」，並特別排除「未檢查分母為 0，或把平方差當平方和。」。難度理由是「涉及分式約分與定義域限制。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v010",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "f39bb6d5f52ecc122ce3786c58a057e84923d9cef83145201abc601750407bbd",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "直接平方回查 10201-9801=400。",
+    "derivedAnswer": "400 張",
+    "storedAnswer": "400 張",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「一家印刷廠兩批海報數量差為 101²-99² 張。用因式分解計算，差多少張？」逐一展開或回代；正解「400 張」成立。「4 張」不成立：只算差的平方。；「200 張」不成立：只算兩數和。；「202 張」不成立：把和與差相加。",
+      "undefinedSymbol": "題幹已給條件為「數量為整數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「用平方差快速取得差值。」。",
+      "unitConflict": "本題單位審查：答案單位張；整數精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；答案單位張；整數精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：第一批較多，差值應為正。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「用平方差快速取得差值。」閱讀後，常見誤讀為「把數量差誤當邊長差。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "情境要求避免大數平方並保留單位。",
+    "literacyContextNecessity": "兩批數量以平方模型給出，平方差是計算差值的必要結構。",
+    "prerequisiteCheck": "需會平方差。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v010：直接平方回查 10201-9801=400。 因此導出「400 張」。再逐項檢查四選項真值為 [True, False, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「用平方差快速取得差值。」，並特別排除「把數量差誤當邊長差。」。難度理由是「情境要求避免大數平方並保留單位。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v011",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "c5b77e97f19ffbc723c725e2057b55dfa288490f4fa0847901c91356f2d9c5dd",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "乘回得到總座位數。",
+    "derivedAnswer": "排數 n 與每排 n+5 席",
+    "storedAnswer": "排數 n 與每排 n+5 席",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「某活動有 n 排座位，每排 n+5 席，總座位數可寫成 n²+5n。乘積形式最直接顯示哪兩個量？」逐一展開或回代；正解「排數 n 與每排 n+5 席」成立。「總排數 n² 與額外 5 排」不成立：n² 是乘積項，不是排數。；「每排 n 席與總共 5 席」不成立：漏掉 n+5。；「兩個面積邊長 n² 與 5n」不成立：情境是座位計數。",
+      "undefinedSymbol": "題幹已給條件為「n 為正整數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「解讀 n(n+5)。」。",
+      "unitConflict": "本題單位審查：兩因式皆為無單位計數，乘積為席；無近似。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；兩因式皆為無單位計數，乘積為席；無近似。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：n 正整數，排數與席數皆正。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「解讀 n(n+5)。」閱讀後，常見誤讀為「只做形式分解，未解讀因式。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "情境意義是題目核心。",
+    "literacyContextNecessity": "排數與每排席數無法從展開式直接看出，因式分解恢復安排結構。",
+    "prerequisiteCheck": "需知道乘法計數原理。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v011：乘回得到總座位數。 因此導出「排數 n 與每排 n+5 席」。再逐項檢查四選項真值為 [False, False, False, True]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「解讀 n(n+5)。」，並特別排除「只做形式分解，未解讀因式。」。難度理由是「情境意義是題目核心。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s007-v012",
+    "unitId": "u12",
+    "skillId": "factoring-application",
+    "contentSha256": "c58632d6bfe408839afc763b68a67536073913fefb05644284893e3c0006f8b0",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "乘回即原處理量，分組均為整數。",
+    "derivedAnswer": "處理量可分成 m 組，每組 m+7 筆",
+    "storedAnswer": "處理量可分成 m 組，每組 m+7 筆",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「資料中心每分鐘處理量為 m²+7m 筆。若 m 為正整數，哪個敘述可由因式分解直接得到？」逐一展開或回代；正解「處理量可分成 m 組，每組 m+7 筆」成立。「處理量一定是 7 的倍數」不成立：m² 不一定被 7 整除。；「每組一定有 7 筆」不成立：另一因子是 m+7。；「總量一定是平方數」不成立：m(m+7) 一般不是平方。",
+      "undefinedSymbol": "題幹已給條件為「m>0 且為整數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「解讀 m(m+7)。」。",
+      "unitConflict": "本題單位審查：單位筆；m 與 m+7 是計數，無近似。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；單位筆；m 與 m+7 是計數，無近似。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：m>0 排除零組。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「解讀 m(m+7)。」閱讀後，常見誤讀為「看到常數 7 就宣稱 7 的倍數。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "需從代數乘積作可行整數分組。",
+    "literacyContextNecessity": "資料分組必須是整數，題幹 m 正整數使因式的情境解讀成立。",
+    "prerequisiteCheck": "需理解整數分組。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s007-v012：乘回即原處理量，分組均為整數。 因此導出「處理量可分成 m 組，每組 m+7 筆」。再逐項檢查四選項真值為 [False, True, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「解讀 m(m+7)。」，並特別排除「看到常數 7 就宣稱 7 的倍數。」。難度理由是「需從代數乘積作可行整數分組。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  }
+];
+
+export const DRAWING_SPECS = [];

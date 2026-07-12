@@ -1,0 +1,264 @@
+{
+  "lectureId": "u16-s009-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-construction",
+  "skillId": "compass-copy-angle",
+  "skillOrder": 9,
+  "originalLockedTitle": "複製角",
+  "title": "複製角：把角邊上的弦長關係搬到新頂點",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能依標準尺規步驟複製一個已知角。",
+    "能說明第一次圓弧固定兩邊上的等距點，第二次開口搬移弦長。",
+    "能辨認應保持不變的圓規開口與交點。",
+    "能用 SSS 說明原角與複製角相等。"
+  ],
+  "prerequisiteBridge": "已會描述圓心、半徑與交點。複製角不是用量角器讀度數，而是複製同一半徑圓弧上的弦長，使兩個小三角形三邊對應相等。",
+  "prerequisites": [
+    {
+      "skillId": "compass-construction",
+      "requiredLevel": "能使用先備技能「尺規作圖步驟」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "已知角",
+      "definition": "要被複製的角，例如 ∠AOB。"
+    },
+    {
+      "term": "新頂點",
+      "definition": "要作出等角的位置，例如 P。"
+    },
+    {
+      "term": "基準射線",
+      "definition": "新角其中一邊，決定複製角的方向。"
+    },
+    {
+      "term": "截點",
+      "definition": "圓弧與角的兩邊相交所得的點。"
+    },
+    {
+      "term": "弦長",
+      "definition": "同一圓上兩點間的線段長度，本作圖用圓規搬移。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "以 O 為圓心作弧，交 OA、OB 於 C、D",
+      "meaning": "OC=OD，固定原角兩邊上的等距點。"
+    },
+    {
+      "symbol": "以 P 為圓心、OC 為半徑作弧，交基準射線於 E",
+      "meaning": "PE=OC。"
+    },
+    {
+      "symbol": "以 E 為圓心、CD 為半徑作弧，交前弧於 F",
+      "meaning": "EF=CD。"
+    }
+  ],
+  "conceptNarrative": [
+    "先在原角兩邊用同一圓弧截出 C、D，使 OC=OD；線段 CD 記錄了原角在該半徑下張開的程度。",
+    "到新頂點 P，以相同半徑作弧並在基準射線上取 E，使 PE=OC。",
+    "再把圓規開到 CD，以 E 為圓心截取 F，使 EF=CD；因 F 也在以 P 為圓心的弧上，所以 PF=OD。",
+    "△OCD 與 △PEF 三邊分別相等，依 SSS 全等，因此 ∠COD=∠EPF。",
+    "弧交點可能有基準射線兩側兩個選擇，題目若指定同側或方向，必須選正確一個。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "複製角作圖",
+      "statement": "只用無刻度直尺與圓規，在指定頂點與基準射線上作出和已知角相等的角。"
+    },
+    {
+      "name": "弦長保存",
+      "statement": "在相同半徑下，兩端弦長相等可配合 SSS 保證圓心角相等。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "OC=PE、OD=PF、CD=EF ⇒ △OCD≅△PEF",
+      "conditions": [
+        "F 位於以 P 為圓心的同半徑弧上"
+      ],
+      "meaning": "SSS 驗證複製角。"
+    },
+    {
+      "formula": "△OCD≅△PEF ⇒ ∠COD=∠EPF",
+      "conditions": [
+        "對應頂點 O↔P"
+      ],
+      "meaning": "得到原角與新角相等。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只搬移一段半徑，沒有搬移弦長，不能固定角度。",
+    "第二次在原角截弦後若改變圓規開口，不能保證等角。",
+    "把新弧圓心設在基準射線上的截點而非新頂點，會作錯。",
+    "交點選在基準射線錯側時，可能得到方向相反的角。",
+    "用量角器量度後畫角不是尺規複製角。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "在原角以頂點 O 為圓心畫弧，交兩邊於 C、D。",
+      "check": "OC 與 OD 是否為同一圓半徑？"
+    },
+    {
+      "step": 2,
+      "instruction": "在新頂點 P 以相同半徑畫弧，交基準射線於 E。",
+      "check": "PE 是否等於 OC？"
+    },
+    {
+      "step": 3,
+      "instruction": "將圓規開口調為 CD。",
+      "check": "此開口是否完整保存至下一步？"
+    },
+    {
+      "step": 4,
+      "instruction": "以 E 為圓心截新弧於 F。",
+      "check": "選取交點方向是否符合題意？"
+    },
+    {
+      "step": 5,
+      "instruction": "作射線 PF。",
+      "check": "∠EPF 是否為所求複製角？"
+    },
+    {
+      "step": 6,
+      "instruction": "用 SSS 驗證。",
+      "check": "三組對應邊是否為 OC↔PE、OD↔PF、CD↔EF？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "說明複製 ∠AOB 時第一道圓弧的作用。",
+      "solutionSteps": [
+        "以 O 為圓心同時截兩邊。",
+        "得到 OC=OD，並形成弦 CD。"
+      ],
+      "answer": "建立相同半徑與記錄角張開程度的弦。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "新角頂點為 P，基準射線為 PX。第一個新截點 E 應如何取得？",
+      "solutionSteps": [
+        "保持原先半徑 OC。",
+        "以 P 為圓心畫弧，交 PX 於 E。"
+      ],
+      "answer": "使 PE=OC。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "為何必須搬移 CD？",
+      "solutionSteps": [
+        "只有兩個半徑相等仍可改變夾角。",
+        "CD 固定兩個弧上點的距離，配合三邊形成 SSS。"
+      ],
+      "answer": "固定新角大小。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "作完後如何證明 ∠AOB=∠XPF？",
+      "solutionSteps": [
+        "原小三角形與新小三角形有兩組半徑和一組弦相等。",
+        "兩三角形 SSS 全等。",
+        "圓心角為對應角。"
+      ],
+      "answer": "由 SSS 得兩角相等。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "用不同半徑作新頂點的第一弧。",
+      "why": "三邊對應失去一組等長。",
+      "correction": "第一次原弧與新弧保持同一圓規開口。"
+    },
+    {
+      "mistake": "把 OC 當成需搬移的弦。",
+      "why": "混淆半徑與 C、D 間距離。",
+      "correction": "角大小由弦 CD 搬移，半徑另保持。"
+    },
+    {
+      "mistake": "以 P 為圓心搬移 CD。",
+      "why": "正確圓心應是基準射線截點 E。",
+      "correction": "用 E 為圓心，使 EF=CD。"
+    },
+    {
+      "mistake": "未作射線 PF。",
+      "why": "只留下交點，未形成新角邊。",
+      "correction": "最後連接新頂點 P 與 F。"
+    },
+    {
+      "mistake": "選錯弧交點造成反向。",
+      "why": "忽略題目指定側。",
+      "correction": "先判斷新角應在基準射線哪一側。"
+    },
+    {
+      "mistake": "用 ASA 當驗證。",
+      "why": "尚未知道新角相等，會循環。",
+      "correction": "以三組可作出的邊長使用 SSS。"
+    }
+  ],
+  "selfCheck": [
+    "原弧與新弧半徑是否相同？",
+    "我有搬移原弧兩截點的弦長嗎？",
+    "第二次截弧的圓心是否為新基準截點？",
+    "最後射線是否從新頂點出發？",
+    "驗證是否使用 SSS 而非預先假設等角？"
+  ],
+  "summary": [
+    "複製角靠搬移相同半徑與弦長，不靠量角器。",
+    "原角與新角內的小三角形以 SSS 全等。",
+    "圓心、半徑、交點與方向都必須明確。",
+    "弦長是固定角張開程度的關鍵資料。"
+  ],
+  "connections": {
+    "previous": "沿用尺規作圖的圓心、半徑與交點語言。",
+    "next": [
+      "過點作垂線也會用等距點與弧交點。",
+      "作圖文字題會要求重排和判讀這些步驟。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-009-copy-angle"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-009-copy-angle 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s009-v001",
+      "u16-s009-v002",
+      "u16-s009-v003",
+      "u16-s009-v004",
+      "u16-s009-v005",
+      "u16-s009-v006",
+      "u16-s009-v007",
+      "u16-s009-v008",
+      "u16-s009-v009",
+      "u16-s009-v010",
+      "u16-s009-v011",
+      "u16-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s009-cr001",
+      "u16-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「複製角」逐段核對定義、適用條件與反例；重新演算4個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "a6dd21195bf004d3fc74691691df7b02abe2c6dba1c5ebff75430cf8ea023628"
+}

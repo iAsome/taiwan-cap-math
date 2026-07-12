@@ -1,0 +1,1159 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+// CONTENT AUTHORITY: CHATGPT_HUMAN_AUTHORED_R1
+// OLD GENERATED CONTENT MUST NOT BE IMPORTED OR MERGED.
+export const LECTURE = {
+  "lectureId": "u03-s006-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-solving",
+  "skillId": "linear-equation-fractions",
+  "title": "含分母的一元一次方程式：用最小公倍數一次消除分母",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能解單一分母與多分母的一元一次方程式。",
+    "能選擇所有分母的最小公倍數。",
+    "能在消分母時乘到等式中的每一項。",
+    "能保留分數解並代回原式。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-parentheses",
+      "requiredLevel": "能正確展開括號與合併同類項，熟悉分數通分和最小公倍數。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "分母",
+      "definition": "分數線下方的數，表示平均分成的份數。"
+    },
+    {
+      "term": "最小公倍數",
+      "definition": "可同時被所有分母整除的最小正整數。"
+    },
+    {
+      "term": "消分母",
+      "definition": "等式兩邊同乘分母的公倍數，使分數項化為整數係數。"
+    },
+    {
+      "term": "精確解",
+      "definition": "以整數或最簡分數表示，不任意取近似值。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(ax+b)/m",
+      "meaning": "整個分子ax+b都除以m。"
+    },
+    {
+      "symbol": "LCM(m,n)",
+      "meaning": "m與n的最小公倍數。"
+    }
+  ],
+  "conceptNarrative": [
+    "含分母方程式仍只使用等量公理。",
+    "最穩定方法是找所有分母的最小公倍數，讓等式每一項都乘上它。",
+    "若分子有括號，消分母後仍須完整保留分子結構。",
+    "解是分數並不表示錯誤；只要代回原式左右相等即可。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "消分母原理",
+      "statement": "若等式兩邊同乘非零數M，等式仍成立。"
+    },
+    {
+      "name": "最小公倍數策略",
+      "statement": "M取所有分母的最小公倍數，可避免多餘大係數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x/m=a ⇒ x=am",
+      "conditions": [
+        "m≠0"
+      ],
+      "meaning": "單一分母方程式。"
+    },
+    {
+      "formula": "A/m+B/n=C",
+      "conditions": [
+        "m、n皆非0"
+      ],
+      "meaning": "可同乘LCM(m,n)。"
+    }
+  ],
+  "nonApplicableCases": [
+    "分母為0的式子沒有定義。",
+    "不能只乘含未知數的分數項而漏乘常數或等式右邊。",
+    "不能把分母直接搬到另一邊卻改成加減。",
+    "若小數可化成分數或同乘10，也可精確消除。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出等式中所有分母。",
+      "check": "括號整體是否位於分子？"
+    },
+    {
+      "step": 2,
+      "instruction": "求最小公倍數。",
+      "check": "是否同時整除每個分母？"
+    },
+    {
+      "step": 3,
+      "instruction": "等式每一項都乘該公倍數。",
+      "check": "右邊與常數項是否漏乘？"
+    },
+    {
+      "step": 4,
+      "instruction": "展開、合併並解基本方程式。",
+      "check": "負號與括號是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原分數式。",
+      "check": "左右是否精確相等？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解x/6=5。",
+      "solutionSteps": [
+        "兩邊同乘6。",
+        "x=30。"
+      ],
+      "answer": "30。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解(x+4)/3=7。",
+      "solutionSteps": [
+        "乘3得x+4=21。",
+        "x=17。"
+      ],
+      "answer": "17。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解x/4+x/6=5。",
+      "solutionSteps": [
+        "同乘12得3x+2x=60。",
+        "5x=60，x=12。"
+      ],
+      "answer": "12。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解(2x-1)/3-(x+2)/4=2。",
+      "solutionSteps": [
+        "同乘12得4(2x-1)-3(x+2)=24。",
+        "8x-4-3x-6=24。",
+        "5x=34，x=34/5。"
+      ],
+      "answer": "34/5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "最小公倍數只乘左邊。",
+      "why": "破壞等量關係。",
+      "correction": "等式兩邊每一項都乘。"
+    },
+    {
+      "mistake": "消分母時漏乘常數項。",
+      "why": "只注意含x的分數。",
+      "correction": "逐項標記乘數。"
+    },
+    {
+      "mistake": "把(x+2)/3寫成x+2/3。",
+      "why": "誤解分數線作用範圍。",
+      "correction": "保留完整分子括號。"
+    },
+    {
+      "mistake": "多個分母直接相乘後算錯。",
+      "why": "未找較小公倍數且係數過大。",
+      "correction": "優先使用最小公倍數。"
+    },
+    {
+      "mistake": "分數解擅自取整。",
+      "why": "預設情境答案一定整數。",
+      "correction": "先代回，再依情境判斷。"
+    },
+    {
+      "mistake": "代回時使用消分母後的式子而非原式。",
+      "why": "無法檢查消分母步驟。",
+      "correction": "一定代回最初方程式。"
+    }
+  ],
+  "selfCheck": [
+    "所有分母是否非零？",
+    "最小公倍數是否正確？",
+    "每一項是否都被乘到？",
+    "括號與負號是否保留？",
+    "答案是否代回原分數式？"
+  ],
+  "summary": [
+    "消分母是等量公理的應用。",
+    "最小公倍數可簡化係數。",
+    "每一項都必須同乘。",
+    "分數解可完全正確。"
+  ],
+  "connections": {
+    "previous": "需要熟悉括號方程式、分數通分與最小公倍數。",
+    "next": [
+      "方程式解的檢查將直接把候選值代回原分數式。",
+      "後續應用題可能產生分數或小數解，需再檢查情境。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s006-v001",
+      "u03-s006-v002",
+      "u03-s006-v003",
+      "u03-s006-v004",
+      "u03-s006-v005",
+      "u03-s006-v006",
+      "u03-s006-v007",
+      "u03-s006-v008",
+      "u03-s006-v009",
+      "u03-s006-v010",
+      "u03-s006-v011",
+      "u03-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s006-cr001",
+      "u03-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例分別代回原式：30/6=5、(17+4)/3=7、12/4+12/6=5、(2×34/5-1)/3-(34/5+2)/4=2；並確認所有分母非零及等式每項皆同乘。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "daee3b53117dc146b431c5eb1c236d1214312d9c1d82a122dbf3b60fea196f10",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u03-s006-v001",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解 x/3＝7。",
+    "choices": [
+      "21",
+      "7/3",
+      "10",
+      "24"
+    ],
+    "answerIndex": 0,
+    "explanation": "兩邊同乘3；x=7×3=21。所以答案是「21」。",
+    "steps": [
+      "將等式兩邊同乘 3。",
+      "得到 x＝7×3。",
+      "計算得 x＝21，代回 21÷3＝7。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "21",
+        "truth": true,
+        "reason": "兩邊同乘3，x=21。 因此此選項符合題目。"
+      },
+      {
+        "choice": "7/3",
+        "truth": false,
+        "reason": "把7再除3。"
+      },
+      {
+        "choice": "10",
+        "truth": false,
+        "reason": "把3加到7。"
+      },
+      {
+        "choice": "24",
+        "truth": false,
+        "reason": "把3與7相加後再乘。"
+      }
+    ],
+    "commonMistake": "看到分母就再除一次。",
+    "concept": "乘分母可消去除法。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "解最基本分母型方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "af888bbd1144c0383249730f0d91f2674570ea3b445847fcd221db06d9ac2074",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v002",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解 x/4＋2＝5。",
+    "choices": [
+      "3",
+      "12",
+      "7",
+      "20"
+    ],
+    "answerIndex": 1,
+    "explanation": "消去常數2；x/4=3；乘4得12。所以答案是「12」。",
+    "steps": [
+      "消去常數2",
+      "x/4=3",
+      "乘4得12"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "把3當答案。"
+      },
+      {
+        "choice": "12",
+        "truth": true,
+        "reason": "兩邊減2得x/4=3，再乘4得x=12。 因此此選項符合題目。"
+      },
+      {
+        "choice": "7",
+        "truth": false,
+        "reason": "把4加到3。"
+      },
+      {
+        "choice": "20",
+        "truth": false,
+        "reason": "直接5×4。"
+      }
+    ],
+    "commonMistake": "未先扣除常數。",
+    "concept": "先消常數再消分母。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "兩步解含分母方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "38396e12d018d1f5a7e06c3b7950e5a8ce105179784267a63d439b4e156ba172",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v003",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解 (x－1)/5＝3。",
+    "choices": [
+      "14",
+      "15",
+      "16",
+      "20"
+    ],
+    "answerIndex": 2,
+    "explanation": "消分母得x-1=15；兩邊加1；x=16。所以答案是「16」。",
+    "steps": [
+      "消分母得x-1=15",
+      "兩邊加1",
+      "x=16"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "14",
+        "truth": false,
+        "reason": "把15減1。"
+      },
+      {
+        "choice": "15",
+        "truth": false,
+        "reason": "算到15停止。"
+      },
+      {
+        "choice": "16",
+        "truth": true,
+        "reason": "兩邊乘5得x-1=15，再加1得x=16。 因此此選項符合題目。"
+      },
+      {
+        "choice": "20",
+        "truth": false,
+        "reason": "把3+1再乘5。"
+      }
+    ],
+    "commonMistake": "只讓x除5而忽略-1。",
+    "concept": "先乘分母再解括號內。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "整個分子視為被5除。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "a97cf7d5a4518cd58a27f7abcc0a113da9e94c1abed949cf57ebabec35985059",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v004",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解 x/2－x/5＝9。",
+    "choices": [
+      "18",
+      "45",
+      "90",
+      "30"
+    ],
+    "answerIndex": 3,
+    "explanation": "通分為3x/10=9；兩邊乘10得3x=90；除3得30。所以答案是「30」。",
+    "steps": [
+      "通分為3x/10=9",
+      "兩邊乘10得3x=90",
+      "除3得30"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "18",
+        "truth": false,
+        "reason": "只把9乘2。"
+      },
+      {
+        "choice": "45",
+        "truth": false,
+        "reason": "把分母相加成7。"
+      },
+      {
+        "choice": "90",
+        "truth": false,
+        "reason": "乘10後忘記除3。"
+      },
+      {
+        "choice": "30",
+        "truth": true,
+        "reason": "通分得(5x-2x)/10=9，即3x/10=9；兩邊乘10再除3，x=30。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "分母直接相減或相加。",
+    "concept": "通分後再解係數。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "合併同一未知數的分數係數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "5c54f3ddb5386644cbb5df2a904c0bf22ff63d205d184cf038e43e6bd46bafb7",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v005",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解 (2x＋3)/4＝5。",
+    "choices": [
+      "7",
+      "17/2",
+      "17",
+      "23/2"
+    ],
+    "answerIndex": 1,
+    "explanation": "消分母得到2x+3=20；減3得2x=17；除2得17/2。所以答案是「17/2」。",
+    "steps": [
+      "消分母得到2x+3=20",
+      "減3得2x=17",
+      "除2得17/2"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "7",
+        "truth": false,
+        "reason": "把17除以錯誤係數。"
+      },
+      {
+        "choice": "17/2",
+        "truth": true,
+        "reason": "兩邊乘4得2x+3=20，減3得2x=17，所以x=17/2。 因此此選項符合題目。"
+      },
+      {
+        "choice": "17",
+        "truth": false,
+        "reason": "算到2x=17即停止。"
+      },
+      {
+        "choice": "23/2",
+        "truth": false,
+        "reason": "把20+3後除2。"
+      }
+    ],
+    "commonMistake": "為了整數答案擅自四捨五入。",
+    "concept": "解可為非整數，應保留精確分數。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "接受含分數解的分母方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "a546676eed7d7a115c89935abcad80288d3417e49e587957098edb413cfdf93b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v006",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解 x/3＋1/2＝5/6。",
+    "choices": [
+      "1/3",
+      "2",
+      "1",
+      "4"
+    ],
+    "answerIndex": 2,
+    "explanation": "通分求5/6-1/2=1/3；得到x/3=1/3；兩邊乘3得1。所以答案是「1」。",
+    "steps": [
+      "通分求5/6-1/2=1/3",
+      "得到x/3=1/3",
+      "兩邊乘3得1"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1/3",
+        "truth": false,
+        "reason": "把x/3當作x。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "把1/2移項後加。"
+      },
+      {
+        "choice": "1",
+        "truth": true,
+        "reason": "兩邊減1/2：x/3=5/6-3/6=1/3，因此x=1。 因此此選項符合題目。"
+      },
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "分數相減錯誤。"
+      }
+    ],
+    "commonMistake": "把不同分母的分子分母各自相減。",
+    "concept": "先精確通分再消分母。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "處理常數分數與未知數分數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "3f14ff82d8ca11c2826e523710c7b950196ffd48e53ea872520a05e1d1646f03",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v007",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解 (x－2)/3＋(x＋1)/6＝4。",
+    "choices": [
+      "7",
+      "8",
+      "11",
+      "9"
+    ],
+    "answerIndex": 3,
+    "explanation": "以最小公倍數6消分母；展開得3x-3=24；解得x=9。所以答案是「9」。",
+    "steps": [
+      "以最小公倍數6消分母",
+      "展開得3x-3=24",
+      "解得x=9"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "7",
+        "truth": false,
+        "reason": "展開常數錯誤。"
+      },
+      {
+        "choice": "8",
+        "truth": false,
+        "reason": "把3x-3=24解成8。"
+      },
+      {
+        "choice": "11",
+        "truth": false,
+        "reason": "漏掉第二個分子。"
+      },
+      {
+        "choice": "9",
+        "truth": true,
+        "reason": "兩邊乘6得2(x-2)+(x+1)=24，化簡3x-3=24，所以x=9。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "消分母時漏乘某一項。",
+    "concept": "每一項都要乘6。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "以最小公倍數一次消除多個分母。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "7b74fecf558072ab6034bfc532aa7e1d222d9009b0528246a9a26b880e44c4b0",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v008",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解 (3x－1)/5－(x＋2)/2＝1。",
+    "choices": [
+      "22",
+      "12",
+      "18",
+      "24"
+    ],
+    "answerIndex": 0,
+    "explanation": "乘10消分母；展開合併得x-12=10；所以x=22。所以答案是「22」。",
+    "steps": [
+      "乘10消分母",
+      "展開合併得x-12=10",
+      "所以x=22"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "22",
+        "truth": true,
+        "reason": "兩邊乘10得2(3x-1)-5(x+2)=10；化簡6x-2-5x-10=10，得x=22。 因此此選項符合題目。"
+      },
+      {
+        "choice": "12",
+        "truth": false,
+        "reason": "把常數-12移項方向錯。"
+      },
+      {
+        "choice": "18",
+        "truth": false,
+        "reason": "把6x-5x算錯。"
+      },
+      {
+        "choice": "24",
+        "truth": false,
+        "reason": "漏乘右邊的1。"
+      }
+    ],
+    "commonMistake": "把-5(x+2)展成-5x+10。",
+    "concept": "消分母後仍須正確分配負號。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "處理兩個分母與括號前負號。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "fe7a81f182108760569c7b0dd84a1a14b1f292d5c9732a63a3a177645a18499b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v009",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解 x/0.4＝15。",
+    "choices": [
+      "3.75",
+      "15.4",
+      "6",
+      "37.5"
+    ],
+    "answerIndex": 2,
+    "explanation": "辨認x除以0.4；兩邊乘0.4；得到6。所以答案是「6」。",
+    "steps": [
+      "辨認x除以0.4",
+      "兩邊乘0.4",
+      "得到6"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3.75",
+        "truth": false,
+        "reason": "再用15除0.4。"
+      },
+      {
+        "choice": "15.4",
+        "truth": false,
+        "reason": "把0.4加到15。"
+      },
+      {
+        "choice": "6",
+        "truth": true,
+        "reason": "兩邊乘0.4，x=15×0.4=6。 因此此選項符合題目。"
+      },
+      {
+        "choice": "37.5",
+        "truth": false,
+        "reason": "把15×0.4小數點放錯。"
+      }
+    ],
+    "commonMistake": "看到除號就固定再做除法。",
+    "concept": "除以0.4的逆運算是乘0.4。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "理解小數分母的逆運算。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "a7d7a8bbcb22cf60e5b26b1066cda87c7ac445b940427660d3149480e3730652",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v010",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某水槽預定在 3 分鐘內等量流入 x 公升。流入 1 分鐘後，另加入 4 公升備用水，此時槽內新增水量共 16 公升。預定 3 分鐘的流入總量 x 是多少？",
+    "choices": [
+      "12",
+      "20",
+      "48",
+      "36"
+    ],
+    "answerIndex": 3,
+    "explanation": "每分鐘流入量是 x/3 公升。流入 1 分鐘後另加 4 公升，因此列 x/3＋4＝16。兩邊同減 4 得 x/3＝12，再同乘 3，得 x＝36 公升。",
+    "steps": [
+      "依「3 分鐘內等量流入 x 公升」，寫出每分鐘流入量 x/3 公升。",
+      "依 1 分鐘流入量加上 4 公升等於 16 公升，列 x/3＋4＝16。",
+      "同減 4、再同乘 3，得到 x＝36 公升。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "12",
+        "truth": false,
+        "reason": "12 是流入 1 分鐘的水量，不是預定 3 分鐘的總流入量。"
+      },
+      {
+        "choice": "20",
+        "truth": false,
+        "reason": "把 16 與 4 相加，沒有依題意先扣除另加的備用水。"
+      },
+      {
+        "choice": "48",
+        "truth": false,
+        "reason": "直接計算 16×3，錯把另加的 4 公升也重複計入三次。"
+      },
+      {
+        "choice": "36",
+        "truth": true,
+        "reason": "x/3＋4＝16，所以 x/3＝12，三分鐘總量 x＝36 公升。"
+      }
+    ],
+    "commonMistake": "求出每分鐘流入 12 公升後便停止，沒有再換算成 3 分鐘的總流入量。",
+    "concept": "總量平均分成 3 分鐘時，每分鐘量為 x/3；另加入的 4 公升只出現一次。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "由三分鐘總量建立每分鐘量，並區分固定另加量。",
+    "literacyContextNecessity": "三分鐘總量、等量流入、一分鐘已流入量與另加4公升共同決定方程式 x/3＋4＝16；任一資料刪除都無法求出總量。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "b771a0cf1510f1006bf8b5cc0759321c0e407213feb56ed8191d0f85edfdc0f4",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v011",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一本書讀完四分之一後，再讀 30 頁，累計讀了 90 頁。全書有 x 頁，求 x。",
+    "choices": [
+      "240",
+      "120",
+      "360",
+      "480"
+    ],
+    "answerIndex": 0,
+    "explanation": "列已讀頁數x/4+30=90；減30得x/4=60；乘4得240。所以答案是「240」。",
+    "steps": [
+      "列已讀頁數x/4+30=90",
+      "減30得x/4=60",
+      "乘4得240"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "240",
+        "truth": true,
+        "reason": "x/4+30=90；x/4=60，所以x=240。 因此此選項符合題目。"
+      },
+      {
+        "choice": "120",
+        "truth": false,
+        "reason": "把90+30當全書。"
+      },
+      {
+        "choice": "360",
+        "truth": false,
+        "reason": "把90×4未扣30。"
+      },
+      {
+        "choice": "480",
+        "truth": false,
+        "reason": "把四分之一誤成除2。"
+      }
+    ],
+    "commonMistake": "把30頁也乘4。",
+    "concept": "四分之一全書用x/4表示。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "由部分量與固定頁數回推總量。",
+    "literacyContextNecessity": "先讀全書四分之一再讀固定30頁的順序與量型決定x/4+30=90，情境不可省略。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "079c9735dd01341f90ec131e4e72768911ca495b1d3f9ebc760d9b17c4f4ed8c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-v012",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一桶麵粉用掉總量的 2/3，剩下 1.5 公斤。原有多少公斤？",
+    "choices": [
+      "1",
+      "4.5",
+      "2.25",
+      "6"
+    ],
+    "answerIndex": 1,
+    "explanation": "剩餘比例為1/3；列x/3=1.5；乘3得4.5公斤。所以答案是「4.5」。",
+    "steps": [
+      "剩餘比例為1/3",
+      "列x/3=1.5",
+      "乘3得4.5公斤"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1",
+        "truth": false,
+        "reason": "把剩餘量當總量。"
+      },
+      {
+        "choice": "4.5",
+        "truth": true,
+        "reason": "剩下的是總量1/3；設x公斤，x-2x/3=1.5，即x/3=1.5，所以x=4.5。 因此此選項符合題目。"
+      },
+      {
+        "choice": "2.25",
+        "truth": false,
+        "reason": "只用1.5÷(2/3)。"
+      },
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "把1.5乘4。"
+      }
+    ],
+    "commonMistake": "把2/3當成剩餘比例。",
+    "concept": "總量減用量後才等於剩餘量。",
+    "tags": [
+      "代數",
+      "含分母的一元一次方程式",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-parentheses"
+    ],
+    "authoringIntent": "由用掉比例判斷剩餘比例。",
+    "literacyContextNecessity": "使用比例與剩餘重量共同決定剩餘是全量的1/3，若刪除「用掉」方向就會得到不同方程式。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "6ec5d7cefe3eb3ae8921fcfd10d23e888ef26f11a00136c1c56ad6dcc6495f3c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u03-s006-cr001",
+    "unitId": "u03",
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "解 (x－3)/4＋(x＋1)/6＝5，完整寫出消分母過程並驗算。",
+    "requiredWork": [
+      "找分母4與6的最小公倍數12。",
+      "等式每一項同乘12。",
+      "解答後代回原式。"
+    ],
+    "fullCreditSolution": [
+      "同乘12：3(x-3)+2(x+1)=60。",
+      "3x-9+2x+2=60，5x-7=60。",
+      "5x=67，x=67/5。",
+      "代回兩分數和為5。"
+    ],
+    "alternativeSolutions": [
+      "可先通分左邊再解，但不得漏乘任何一項。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "消分母、化簡、求得67/5並完成驗算。"
+      },
+      {
+        "score": 2,
+        "criteria": "方法正確但一處算術錯，或無驗算。"
+      },
+      {
+        "score": 1,
+        "criteria": "知道同乘12且能寫出部分展開。"
+      },
+      {
+        "score": 0,
+        "criteria": "消分母破壞等式或無有效步驟。"
+      }
+    ],
+    "scoringNotes": [
+      "等價且完整的代數步驟可接受。",
+      "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
+    ],
+    "commonErrors": [
+      "只乘左邊含x的項。",
+      "把12×5漏寫。"
+    ],
+    "independentReview": {
+      "derivedResult": "x=67/5",
+      "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
+      "decision": "pass"
+    },
+    "contentSha256": "c152190c230dca7d6a34edf84bd785e864acaad64c2fb5690d703b83dec1b1e0",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s006-cr002",
+    "unitId": "u03",
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-fractions",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "某桶果汁的 3/5 倒入容器後，再補入 2 公升，容器內共有 14 公升。原桶有 x 公升，求 x。",
+    "requiredWork": [
+      "列3x/5+2=14。",
+      "消分母或先移常數。",
+      "附公升並檢查正值。"
+    ],
+    "fullCreditSolution": [
+      "3x/5+2=14。",
+      "3x/5=12。",
+      "3x=60，x=20公升。"
+    ],
+    "alternativeSolutions": [
+      "可由14-2=12是原量的3/5，算12÷3×5。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "列式、解20公升並說明比例方向。"
+      },
+      {
+        "score": 2,
+        "criteria": "列式正確但一處運算錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "能指出12公升是原量的3/5。"
+      },
+      {
+        "score": 0,
+        "criteria": "比例與補入量方向皆錯。"
+      }
+    ],
+    "scoringNotes": [
+      "等價且完整的代數步驟可接受。",
+      "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
+    ],
+    "commonErrors": [
+      "把3/5當剩餘比例。",
+      "先把2公升乘5而未保持等式。"
+    ],
+    "independentReview": {
+      "derivedResult": "20公升",
+      "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
+      "decision": "pass"
+    },
+    "contentSha256": "01bdbe093cb6999296b0a8fa676a9d4b5180c63ab0b6173ec7e46fabbb1fc4f8",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  }
+];
+
+export const DRAWING_SPECS = [];

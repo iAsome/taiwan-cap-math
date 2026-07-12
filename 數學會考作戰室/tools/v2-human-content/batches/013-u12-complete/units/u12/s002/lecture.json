@@ -1,0 +1,260 @@
+{
+  "lectureId": "u12-s002-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-methods",
+  "skillId": "factoring-formula",
+  "lockedSkillTitle": "公式法",
+  "title": "公式法：看見平方差與完全平方結構",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認平方差 a^2-b^2。",
+    "能辨認完全平方三項式。",
+    "能分辨 x^2+b^2 不是平方差。",
+    "能在使用公式前先提公因式。",
+    "能以展開驗證公式分解。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "factoring-common",
+      "requiredLevel": "能運用前一技能並以展開驗證結果；本講義會重新連接必要步驟。"
+    }
+  ],
+  "prerequisiteBridge": "先備技能為 factoring-common；先確認能完成前一方法並保留所有符號，再進入本技能。",
+  "glossary": [
+    {
+      "term": "平方差",
+      "definition": "兩個平方量相減的式子。"
+    },
+    {
+      "term": "完全平方三項式",
+      "definition": "可寫成某個二項式平方的三項式。"
+    },
+    {
+      "term": "中間項",
+      "definition": "完全平方展開中的 ±2ab。"
+    },
+    {
+      "term": "公式法",
+      "definition": "辨認固定乘法公式的結構後直接分解。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a^2-b^2",
+      "meaning": "兩平方之差。"
+    },
+    {
+      "symbol": "(a+b)^2",
+      "meaning": "a^2+2ab+b^2。"
+    },
+    {
+      "symbol": "(a-b)^2",
+      "meaning": "a^2-2ab+b^2。"
+    }
+  ],
+  "conceptNarrative": [
+    "平方差來自 (a+b)(a-b)=a^2-b^2，中間交叉項互相抵消。",
+    "完全平方三項式的首末項必須都是平方，中間項還要等於首末平方根乘積的兩倍。",
+    "符號由中間項決定：正中間項配 (a+b)^2，負中間項配 (a-b)^2。",
+    "若各項先有公因式，應先提出，才能露出公式結構。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "平方差公式",
+      "statement": "a^2-b^2=(a+b)(a-b)。"
+    },
+    {
+      "name": "完全平方公式",
+      "statement": "a^2±2ab+b^2=(a±b)^2。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a^2-b^2=(a+b)(a-b)",
+      "conditions": [
+        "兩項都是平方且中間是減號"
+      ],
+      "meaning": "平方差。"
+    },
+    {
+      "formula": "a^2+2ab+b^2=(a+b)^2",
+      "conditions": [
+        "中間項恰為 +2ab"
+      ],
+      "meaning": "和的平方。"
+    },
+    {
+      "formula": "a^2-2ab+b^2=(a-b)^2",
+      "conditions": [
+        "中間項恰為 -2ab"
+      ],
+      "meaning": "差的平方。"
+    }
+  ],
+  "nonApplicableCases": [
+    "a^2+b^2 在國中整數係數範圍不能套平方差。",
+    "首末項是平方但中間項不是 ±2ab 時，不能硬套完全平方。",
+    "若 a 或 b 的辨認錯誤，中間項檢查會失敗。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先看是否有公因式。",
+      "check": "有就先提出。"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷是兩項還是三項。",
+      "check": "兩項相減可能是平方差；三項可能是完全平方。"
+    },
+    {
+      "step": 3,
+      "instruction": "找首末項平方根。",
+      "check": "平方根需能在目前係數範圍表達。"
+    },
+    {
+      "step": 4,
+      "instruction": "核對中間符號與 2ab。",
+      "check": "不相等就改用其他方法。"
+    },
+    {
+      "step": 5,
+      "instruction": "套公式並展開檢查。",
+      "check": "每項係數與符號都要一致。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "x^2-49",
+      "solutionSteps": [
+        "x^2 與 49=7^2。",
+        "兩平方相減。"
+      ],
+      "answer": "(x+7)(x-7)"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "4y^2+12y+9",
+      "solutionSteps": [
+        "首項根為 2y，末項根為 3。",
+        "2·2y·3=12y，符號為正。"
+      ],
+      "answer": "(2y+3)^2"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "25m^2-20mn+4n^2",
+      "solutionSteps": [
+        "首末平方根為 5m、2n。",
+        "中間項 -2·5m·2n=-20mn。"
+      ],
+      "answer": "(5m-2n)^2"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "3a^2-75",
+      "solutionSteps": [
+        "先提出 3 得 a^2-25。",
+        "再用平方差。"
+      ],
+      "answer": "3(a+5)(a-5)"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把 a^2+b^2 當平方差。",
+      "why": "只看到兩個平方。",
+      "correction": "公式要求減號。"
+    },
+    {
+      "mistake": "完全平方只檢查首末項。",
+      "why": "漏查中間項。",
+      "correction": "必須等於 ±2ab。"
+    },
+    {
+      "mistake": "把 (a-b)^2 寫成 a^2-b^2。",
+      "why": "忽略交叉項。",
+      "correction": "展開是 a^2-2ab+b^2。"
+    },
+    {
+      "mistake": "平方差兩括號都同號。",
+      "why": "忘記一正一負。",
+      "correction": "必須是 (a+b)(a-b)。"
+    },
+    {
+      "mistake": "有公因式卻直接套公式。",
+      "why": "外層因式遺失。",
+      "correction": "先提出再分解。"
+    },
+    {
+      "mistake": "分解後未完成。",
+      "why": "括號內仍是平方差。",
+      "correction": "繼續分到不可再分。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "兩平方相減用平方差。",
+    "完全平方必須核對首末平方與中間 2ab。",
+    "先提公因式，再套公式，最後展開。"
+  ],
+  "connections": {
+    "previous": "承接 factoring-common。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u12-fig-square-frame",
+      "purpose": "用外內正方形面積差連結平方差公式。",
+      "altText": "外正方形 A 與內正方形 B 的面積差。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s002-v001",
+      "u12-s002-v002",
+      "u12-s002-v003",
+      "u12-s002-v004",
+      "u12-s002-v005",
+      "u12-s002-v006",
+      "u12-s002-v007",
+      "u12-s002-v008",
+      "u12-s002-v009",
+      "u12-s002-v010",
+      "u12-s002-v011",
+      "u12-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s002-cr001",
+      "u12-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "三種公式均以獨立展開重算；特別核對平方和不可套用與先提公因式案例，符號和中間項條件完整。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "f83e588b58fa16b0a9949e4978f5455b684cca6b8e96cf1a44ca160282ecb2c9"
+}

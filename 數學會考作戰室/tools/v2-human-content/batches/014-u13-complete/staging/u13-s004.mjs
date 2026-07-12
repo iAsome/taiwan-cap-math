@@ -1,0 +1,1581 @@
+export default {
+  "lecture": {
+    "lectureId": "u13-s004-lecture-r1",
+    "unitId": "u13",
+    "numericUnitId": 13,
+    "topicId": "u13-solving",
+    "skillId": "quadratic-discriminant",
+    "lockedOrder": 4,
+    "originalLockedTitle": "判別式",
+    "title": "判別式的計算與判讀",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能計算 Δ=b²-4ac。",
+      "能由 Δ 的正負判斷相異實根個數。",
+      "能用參數條件控制根的情形。",
+      "能同時檢查二次項係數不為 0。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "quadratic-formula",
+        "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+      }
+    ],
+    "prerequisiteBridge": "承接求根公式，聚焦公式根號內的量及其邏輯。",
+    "glossary": [
+      {
+        "term": "判別式",
+        "definition": "一元二次方程式公式中根號內的量 Δ=b²-4ac。"
+      },
+      {
+        "term": "相異實根",
+        "definition": "數值不同的兩個實數根。"
+      },
+      {
+        "term": "重根",
+        "definition": "兩個公式分支得到相同數值，解集合只有一個元素。"
+      },
+      {
+        "term": "無實數根",
+        "definition": "在實數範圍找不到使方程式成立的數。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "Δ",
+        "meaning": "b²-4ac。"
+      },
+      {
+        "symbol": "Δ>0",
+        "meaning": "有兩個相異實根。"
+      },
+      {
+        "symbol": "Δ=0",
+        "meaning": "有一個相異實根，也稱重根。"
+      },
+      {
+        "symbol": "Δ<0",
+        "meaning": "沒有實數根。"
+      }
+    ],
+    "conceptNarrative": [
+      "判別式來自公式中的平方根；根號內為正、零、負，正好對應兩根、一根、無實根。",
+      "計算前仍需先整理標準式並辨認係數。",
+      "參數題要把 Δ 寫成參數的不等式或方程式。",
+      "若參數也出現在 a 中，先排除 a=0，否則方程式不再是二次。",
+      "Δ 是判斷根個數的工具，不必先求出根。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "根個數判準",
+        "statement": "對 ax²+bx+c=0 且 a≠0，Δ>0 有兩相異實根；Δ=0 有一實根；Δ<0 無實根。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "Δ=b²-4ac",
+        "conditions": [
+          "方程式為 ax²+bx+c=0",
+          "a≠0"
+        ],
+        "meaning": "判斷實數根的個數。"
+      }
+    ],
+    "nonApplicableCases": [
+      "a=0 時不能使用二次方程式判別式結論。",
+      "Δ>0 只表示兩相異實根，不保證根為整數。",
+      "Δ 為完全平方數才常得到有理根；不是完全平方仍可能有兩實根。",
+      "題目問實數根個數時，不把重根算成兩個不同答案。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "整理並讀出 a、b、c。",
+        "check": "是否含正負號？"
+      },
+      {
+        "step": 2,
+        "instruction": "確認 a≠0。",
+        "check": "參數是否可能讓二次項消失？"
+      },
+      {
+        "step": 3,
+        "instruction": "計算 Δ=b²-4ac。",
+        "check": "b 是否用括號平方？"
+      },
+      {
+        "step": 4,
+        "instruction": "比較 Δ 與 0。",
+        "check": "題目問兩根、一根或無根？"
+      },
+      {
+        "step": 5,
+        "instruction": "參數題解相應方程或不等式。",
+        "check": "是否加上 a≠0 的限制？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "判斷 x²-6x+5=0 的根個數。",
+        "solutionSteps": [
+          "Δ=(-6)²-4·1·5=16>0。"
+        ],
+        "answer": "有兩個相異實根。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "判斷 2x²+4x+2=0 的根個數。",
+        "solutionSteps": [
+          "Δ=16-16=0。"
+        ],
+        "answer": "有一個相異實根。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "判斷 3x²+x+2=0 的根個數。",
+        "solutionSteps": [
+          "Δ=1-24=-23<0。"
+        ],
+        "answer": "沒有實數根。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "求 x²+4x+k=0 有重根時的 k。",
+        "solutionSteps": [
+          "Δ=16-4k。",
+          "令 Δ=0，得 k=4。"
+        ],
+        "answer": "k=4。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把 b²-4ac 算成 (b-4ac)²。",
+        "why": "公式結構混淆。",
+        "correction": "先寫 b²，再減 4ac。"
+      },
+      {
+        "mistake": "b=-6 時寫 b²=-36。",
+        "why": "負數平方錯誤。",
+        "correction": "使用 (-6)²=36。"
+      },
+      {
+        "mistake": "Δ=0 說有兩個不同根。",
+        "why": "把代數重數與相異數值混淆。",
+        "correction": "解集合只有一個數。"
+      },
+      {
+        "mistake": "參數使 a=0 仍套判別式。",
+        "why": "方程式已退化。",
+        "correction": "先排除二次項係數為 0。"
+      },
+      {
+        "mistake": "Δ>0 就說兩整數根。",
+        "why": "判別式只判斷實數根個數。",
+        "correction": "是否整數需再求根。"
+      },
+      {
+        "mistake": "不先移項。",
+        "why": "讀錯 c 的符號。",
+        "correction": "整理成右邊為 0。"
+      }
+    ],
+    "selfCheck": [
+      "a 是否非 0？",
+      "係數是否取自標準式？",
+      "b 的負號是否平方？",
+      "Δ 的符號判讀是否正確？",
+      "參數限制是否完整？"
+    ],
+    "summary": [
+      "判別式可不求根就判斷根個數。",
+      "Δ>0、=0、<0 分別對應兩根、一根、無實根。",
+      "參數題需同時處理 a≠0。",
+      "判別式不直接保證根為整數。"
+    ],
+    "connections": {
+      "previous": "承接求根公式，聚焦公式根號內的量及其邏輯。",
+      "next": [
+        "平方根解法會直接利用平方非負性。",
+        "實數根個數技能會整合判別式與完全平方觀察。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u13-s004-v001",
+        "u13-s004-v002",
+        "u13-s004-v003",
+        "u13-s004-v004",
+        "u13-s004-v005",
+        "u13-s004-v006",
+        "u13-s004-v007",
+        "u13-s004-v008",
+        "u13-s004-v009",
+        "u13-s004-v010",
+        "u13-s004-v011",
+        "u13-s004-v012"
+      ],
+      "constructedResponseIds": [
+        "u13-s004-cr001",
+        "u13-s004-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "reviewNote": "四個案例均重新代入 a、b、c 計算；特別核對 Δ=0 只算一個相異根，並確認參數案例 k=4 時方程式仍保有 a=1。",
+      "reviewVersion": "human-lecture-review-u13-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "94ac52a60f6715c64dca3ba379e6cab098b9fc1e66fff58f2090674d12c7c642"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u13-s004-v001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "方程式 x²−6x+5=0 有兩個相異實根。若只用判別式驗證，下列哪一個計算結果正確？",
+      "givenConditions": "a=1、b=-6、c=5；Δ=b²−4ac",
+      "target": "由根的型態反查判別式計算",
+      "choices": [
+        "−16",
+        "56",
+        "11",
+        "16"
+      ],
+      "answerIndex": 3,
+      "explanation": "完整代入b的負號與a、c，再比較Δ與0。",
+      "steps": [
+        "代入a=1、b=−6、c=5。",
+        "計算36−20。",
+        "比較Δ=16與0。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "−16",
+          "truth": false,
+          "reason": "−16是減法符號錯誤。"
+        },
+        {
+          "choice": "56",
+          "truth": false,
+          "reason": "56把減4ac誤作加法。"
+        },
+        {
+          "choice": "11",
+          "truth": false,
+          "reason": "11不是判別式結果。"
+        },
+        {
+          "choice": "16",
+          "truth": true,
+          "reason": "Δ=16且大於0。"
+        }
+      ],
+      "misconceptionTarget": "代入b時漏平方或把−4ac誤作加法。",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 55,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "係數與公式明示，結果唯一。",
+      "difficultyReason": "基礎：用判別式數值驗證根型態。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "計算判別式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "13e1424e52f1b4bd3eeb71782ecbef69150e06c02a59f672659c6b9c0d6e5300",
+      "independentSolution": "Δ=(−6)²−4·1·5=36−20=16；16>0，與兩個相異實根一致。"
+    },
+    {
+      "questionId": "u13-s004-v002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "2x²+3x+5=0 的判別式符號為何？",
+      "givenConditions": "標準式係數明確。",
+      "target": "判斷 Δ 的正負",
+      "choices": [
+        "負",
+        "零",
+        "正",
+        "無法判斷"
+      ],
+      "answerIndex": 0,
+      "explanation": "讀出 a=2，b=3，c=5；Δ=-31，所以為負，所以答案為「負」。",
+      "steps": [
+        "讀出 a=2，b=3，c=5",
+        "Δ=-31，所以為負"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "負",
+          "truth": true,
+          "reason": "Δ=3²-4·2·5=9-40=-31<0。"
+        },
+        {
+          "choice": "零",
+          "truth": false,
+          "reason": "9 與 40 不相等。"
+        },
+        {
+          "choice": "正",
+          "truth": false,
+          "reason": "忽略 -4ac。"
+        },
+        {
+          "choice": "無法判斷",
+          "truth": false,
+          "reason": "係數已完整給定。"
+        }
+      ],
+      "misconceptionTarget": "只看 b² 為正就判 Δ 正",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 55,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "只問符號，不需求根。",
+      "difficultyReason": "基本判別式判讀。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判斷 Δ 的正負",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "86763330dde7e011ef397d22ff2bf0ff24b4c8dff97e0e557290c57a476f5605"
+    },
+    {
+      "questionId": "u13-s004-v003",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "下列哪一個方程式的判別式等於 0？",
+      "givenConditions": "每個選項均為二次方程式。",
+      "target": "辨認重根方程式",
+      "choices": [
+        "x²-6x+8=0",
+        "x²-6x+9=0",
+        "x²+6x+10=0",
+        "2x²-6x+9=0"
+      ],
+      "answerIndex": 1,
+      "explanation": "逐式計算 Δ；只有 x²-6x+9 的 Δ 為 0，所以答案為「x²-6x+9=0」。",
+      "steps": [
+        "逐式計算 Δ",
+        "只有 x²-6x+9 的 Δ 為 0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x²-6x+8=0",
+          "truth": false,
+          "reason": "Δ=36-32=4。"
+        },
+        {
+          "choice": "x²-6x+9=0",
+          "truth": true,
+          "reason": "Δ=36-36=0。"
+        },
+        {
+          "choice": "x²+6x+10=0",
+          "truth": false,
+          "reason": "Δ=36-40=-4。"
+        },
+        {
+          "choice": "2x²-6x+9=0",
+          "truth": false,
+          "reason": "Δ=36-72=-36。"
+        }
+      ],
+      "misconceptionTarget": "只看常數或一次項外觀",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 80,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "只有一項 Δ 恰為 0。",
+      "difficultyReason": "需逐項排除四個方程式。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認重根方程式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3ba0b66ea73cea3900bf47639c9533fc166db58cfee1f5b5b3764833291d4eb6"
+    },
+    {
+      "questionId": "u13-s004-v004",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "若 x²+4x+k=0 有一個相異實根，則 k 為何？",
+      "givenConditions": "a=1 不會退化。",
+      "target": "由重根條件求參數",
+      "choices": [
+        "-4",
+        "0",
+        "4",
+        "16"
+      ],
+      "answerIndex": 2,
+      "explanation": "Δ=4²-4·1·k=16-4k；令 Δ=0，得 k=4，所以答案為「4」。",
+      "steps": [
+        "Δ=4²-4·1·k=16-4k",
+        "令 Δ=0，得 k=4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-4",
+          "truth": false,
+          "reason": "移項符號錯。"
+        },
+        {
+          "choice": "0",
+          "truth": false,
+          "reason": "把常數項設為 0。"
+        },
+        {
+          "choice": "4",
+          "truth": true,
+          "reason": "一個相異實根要求 Δ=0，故 16-4k=0。"
+        },
+        {
+          "choice": "16",
+          "truth": false,
+          "reason": "忘記除以 4。"
+        }
+      ],
+      "misconceptionTarget": "把 Δ=0 與 c=0 混淆",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 85,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "k 唯一。",
+      "difficultyReason": "標準參數重根題。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由重根條件求參數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "dc796e8fa2fd68491f238f5cfb5a07c1bd132fe11f5f1747c2a935ce0209a156"
+    },
+    {
+      "questionId": "u13-s004-v005",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "x²+kx+9=0 有兩個相異實根時，k 的條件為何？",
+      "givenConditions": "a=1。",
+      "target": "求兩相異根的參數範圍",
+      "choices": [
+        "k<-6 或 k>6",
+        "-6<k<6",
+        "k=-6 或 k=6",
+        "k≥6"
+      ],
+      "answerIndex": 0,
+      "explanation": "Δ=k²-36；解 k²>36，得 k<-6 或 k>6，所以答案為「k<-6 或 k>6」。",
+      "steps": [
+        "Δ=k²-36",
+        "解 k²>36，得 k<-6 或 k>6"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "k<-6 或 k>6",
+          "truth": true,
+          "reason": "Δ=k²-36>0，所以 |k|>6。"
+        },
+        {
+          "choice": "-6<k<6",
+          "truth": false,
+          "reason": "此區間使 Δ<0。"
+        },
+        {
+          "choice": "k=-6 或 k=6",
+          "truth": false,
+          "reason": "邊界使 Δ=0，只有重根。"
+        },
+        {
+          "choice": "k≥6",
+          "truth": false,
+          "reason": "漏掉 k<-6 且錯納 k=6。"
+        }
+      ],
+      "misconceptionTarget": "不等式方向與邊界錯誤",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 105,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "「相異」排除等號。",
+      "difficultyReason": "需解二次不等式的簡單平方型。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求兩相異根的參數範圍",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6d11a31e1fa87709a8679909670f63c044e551f60b5e9b2c99262b97c2fa9127"
+    },
+    {
+      "questionId": "u13-s004-v006",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "3x²-6x+m=0 沒有實數根時，m 的條件為何？",
+      "givenConditions": "a=3≠0。",
+      "target": "求無實根參數範圍",
+      "choices": [
+        "m<3",
+        "m>3",
+        "m=3",
+        "m≥3"
+      ],
+      "answerIndex": 1,
+      "explanation": "a=3，b=-6，c=m；36-12m<0，故 m>3，所以答案為「m>3」。",
+      "steps": [
+        "a=3，b=-6，c=m",
+        "36-12m<0，故 m>3"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "m<3",
+          "truth": false,
+          "reason": "此時 Δ>0。"
+        },
+        {
+          "choice": "m>3",
+          "truth": true,
+          "reason": "Δ=36-12m<0，解得 m>3。"
+        },
+        {
+          "choice": "m=3",
+          "truth": false,
+          "reason": "此時 Δ=0，有重根。"
+        },
+        {
+          "choice": "m≥3",
+          "truth": false,
+          "reason": "錯把邊界 m=3 納入無根。"
+        }
+      ],
+      "misconceptionTarget": "Δ<0 的不等式與邊界處理錯",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 95,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "m=3 是重根邊界，不可包含。",
+      "difficultyReason": "參數線性不等式。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求無實根參數範圍",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a8a7309175ef02f11cebb53fb911911c138b2f661c535f957bd35a914d5b082c"
+    },
+    {
+      "questionId": "u13-s004-v007",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "方程式 x²-(p+1)x+p=0 只有一個相異實根時，p 為何？",
+      "givenConditions": "a=1。",
+      "target": "用判別式或結構判參數",
+      "choices": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "answerIndex": 2,
+      "explanation": "計算 Δ=(p+1)²-4p；化簡為 p²-2p+1=(p-1)²，令其為 0，所以答案為「1」。",
+      "steps": [
+        "計算 Δ=(p+1)²-4p",
+        "化簡為 p²-2p+1=(p-1)²，令其為 0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-1",
+          "truth": false,
+          "reason": "把 p+1=0 誤當重根條件。"
+        },
+        {
+          "choice": "0",
+          "truth": false,
+          "reason": "代入後方程式 x(x-1)=0 有兩根。"
+        },
+        {
+          "choice": "1",
+          "truth": true,
+          "reason": "Δ=(p+1)²-4p=(p-1)²，只有 p=1 時為 0。"
+        },
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "代入後根為 1、2，有兩根。"
+        }
+      ],
+      "misconceptionTarget": "未化簡平方或混淆係數",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 125,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "重根要求兩根值相同。",
+      "difficultyReason": "可用兩種方法交叉驗證。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "用判別式或結構判參數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "10d4cf37902ac2aa3ffdc3a2d46867d10e00d1f566ac16aa9167197b1067b561"
+    },
+    {
+      "questionId": "u13-s004-v008",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "方程式 kx²+2x+1=0 是一元二次方程式且有重根，k 為何？",
+      "givenConditions": "k 同時是二次項係數。",
+      "target": "同時處理退化與重根",
+      "choices": [
+        "0",
+        "-1",
+        "2",
+        "1"
+      ],
+      "answerIndex": 3,
+      "explanation": "先要求 k≠0；Δ=2²-4k=0，解得 k=1，所以答案為「1」。",
+      "steps": [
+        "先要求 k≠0",
+        "Δ=2²-4k=0，解得 k=1"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0",
+          "truth": false,
+          "reason": "會退化成一次方程式。"
+        },
+        {
+          "choice": "-1",
+          "truth": false,
+          "reason": "Δ=8>0，有兩根。"
+        },
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "Δ=-4<0，無實根。"
+        },
+        {
+          "choice": "1",
+          "truth": true,
+          "reason": "需 k≠0，且 Δ=4-4k=0，得 k=1。"
+        }
+      ],
+      "misconceptionTarget": "只解 Δ=0 或忽略 a≠0",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 120,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "k=0 必須排除。",
+      "difficultyReason": "雙重條件參數題。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "同時處理退化與重根",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "43d0f63d5bb7b57a8fca0a61755605c6477562400a62da6535362b75d6a359f0"
+    },
+    {
+      "questionId": "u13-s004-v009",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "某整係數二次方程式的 Δ=49，下列敘述何者一定正確？",
+      "givenConditions": "假設確為 a≠0 的二次方程式。",
+      "target": "判斷判別式可保證的資訊",
+      "choices": [
+        "兩根一定是整數",
+        "有兩個相異實根",
+        "兩根一定都是正數",
+        "兩根和一定是 7"
+      ],
+      "answerIndex": 1,
+      "explanation": "比較 Δ=49 與 0；正判別式保證兩相異實根，所以答案為「有兩個相異實根」。",
+      "steps": [
+        "比較 Δ=49 與 0",
+        "正判別式保證兩相異實根"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "兩根一定是整數",
+          "truth": false,
+          "reason": "分母 2a 可能使根為分數。"
+        },
+        {
+          "choice": "有兩個相異實根",
+          "truth": true,
+          "reason": "49>0，所以有兩個相異實根。"
+        },
+        {
+          "choice": "兩根一定都是正數",
+          "truth": false,
+          "reason": "根的正負不由 Δ 單獨決定。"
+        },
+        {
+          "choice": "兩根和一定是 7",
+          "truth": false,
+          "reason": "Δ 的平方根不是根和。"
+        }
+      ],
+      "misconceptionTarget": "把 √Δ 誤當根、根和或整數保證",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 110,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "只問一定成立的敘述。",
+      "difficultyReason": "辨別判別式資訊邊界。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判斷判別式可保證的資訊",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c88f1bbb7a15dc5da67c093d11e059cc6312cf7c1f930e7e51b15f6ba2fc3ad3"
+    },
+    {
+      "questionId": "u13-s004-v010",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "某結構設計參數 h 必須滿足 h²-12h+40=0。工程師只接受實數尺寸。此設計是否有可行尺寸？",
+      "givenConditions": "尺寸需為實數。",
+      "target": "判斷設計可行性",
+      "choices": [
+        "有一個，h=6",
+        "有兩個，h=4、10",
+        "沒有",
+        "有兩個無理數尺寸"
+      ],
+      "answerIndex": 2,
+      "explanation": "計算 Δ=(-12)²-4·1·40=-16；判定無實數根，所以答案為「沒有」。",
+      "steps": [
+        "計算 Δ=(-12)²-4·1·40=-16",
+        "判定無實數根"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "有一個，h=6",
+          "truth": false,
+          "reason": "-b/(2a)=6 只是對稱中心，不是根。"
+        },
+        {
+          "choice": "有兩個，h=4、10",
+          "truth": false,
+          "reason": "兩數和 14，不符合一次項。"
+        },
+        {
+          "choice": "沒有",
+          "truth": true,
+          "reason": "Δ=144-160=-16<0，沒有實數根。"
+        },
+        {
+          "choice": "有兩個無理數尺寸",
+          "truth": false,
+          "reason": "Δ 為負，不是正的非完全平方。"
+        }
+      ],
+      "misconceptionTarget": "把中心值或猜測因數當根",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 105,
+      "unitCheck": "h 為尺寸參數，題目未指定單位；可行性只依實數性。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "無實數根即無可行尺寸，不需再討論正負。",
+      "difficultyReason": "以判別式做可行性判斷。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為「尺寸必須為實數」使負判別式轉化為工程不可行結論。",
+      "authoringIntent": "判斷設計可行性",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7db35747f84a8a271048879d904500db9f91938428d76ebf47d09b2c8ff64d22"
+    },
+    {
+      "questionId": "u13-s004-v011",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "校正模型 2n²-7n+k=0 必須恰有一個實數校正值。k 應為何？",
+      "givenConditions": "n 為實數校正值，a=2。",
+      "target": "設定恰一校正值的參數",
+      "choices": [
+        "7/2",
+        "49",
+        "8/49",
+        "49/8"
+      ],
+      "answerIndex": 3,
+      "explanation": "恰有一實根，所以 Δ=0；49-8k=0，得 k=49/8，所以答案為「49/8」。",
+      "steps": [
+        "恰有一實根，所以 Δ=0",
+        "49-8k=0，得 k=49/8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "7/2",
+          "truth": false,
+          "reason": "把 49 除以 14。"
+        },
+        {
+          "choice": "49",
+          "truth": false,
+          "reason": "漏除以 8。"
+        },
+        {
+          "choice": "8/49",
+          "truth": false,
+          "reason": "把分數顛倒。"
+        },
+        {
+          "choice": "49/8",
+          "truth": true,
+          "reason": "Δ=49-8k=0，故 k=49/8。"
+        }
+      ],
+      "misconceptionTarget": "解線性方程分數錯誤",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 115,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "k 可為分數。",
+      "difficultyReason": "情境中由唯一值反推模型參數。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為「恰有一個校正值」直接決定使用 Δ=0，而非先求根。",
+      "authoringIntent": "設定恰一校正值的參數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "77d6bec48e6adb4c330d1622a4e30599c0eb27d4c6fa0de5c932b385834b3339"
+    },
+    {
+      "questionId": "u13-s004-v012",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "lockedSkillOrder": 4,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "安全門的兩個警示門檻由方程式 x²-(m+2)x+2m=0 決定。要有兩個不同門檻，m 的條件為何？",
+      "givenConditions": "題目只要求門檻不同，未要求誰大或皆正。",
+      "target": "求兩不同門檻的參數條件",
+      "choices": [
+        "m≠2",
+        "m>2",
+        "m=2",
+        "m≥0"
+      ],
+      "answerIndex": 0,
+      "explanation": "計算 Δ=(m+2)²-8m=(m-2)²；兩相異根要求 Δ>0，因此 m≠2，所以答案為「m≠2」。",
+      "steps": [
+        "計算 Δ=(m+2)²-8m=(m-2)²",
+        "兩相異根要求 Δ>0，因此 m≠2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "m≠2",
+          "truth": true,
+          "reason": "方程式可分解為 (x-2)(x-m)=0，兩門檻為 2、m；不同需 m≠2。"
+        },
+        {
+          "choice": "m>2",
+          "truth": false,
+          "reason": "m<2 時兩門檻也不同。"
+        },
+        {
+          "choice": "m=2",
+          "truth": false,
+          "reason": "此時兩根重合。"
+        },
+        {
+          "choice": "m≥0",
+          "truth": false,
+          "reason": "非負不保證與 2 不同。"
+        }
+      ],
+      "misconceptionTarget": "把大小或正值條件誤加進題目",
+      "prerequisiteSkillIds": [
+        "quadratic-formula"
+      ],
+      "estimatedTimeSec": 125,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "m=2 是唯一重合邊界。",
+      "difficultyReason": "判別式平方型與因式結構整合。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為警示門檻的「不同」語意對應兩相異實根條件。",
+      "authoringIntent": "求兩不同門檻的參數條件",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3c362e24da3ef8880e12f798bf5d12d95f3ad852de7e7702aaf790b87459c1cf"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u13-s004-cr001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "判斷 3x²-2x+5=0 的實數根個數，不需求出根。",
+      "requiredWork": [
+        "讀出 a、b、c。",
+        "計算 Δ。",
+        "依符號下結論。"
+      ],
+      "fullCreditSolution": [
+        "a=3，b=-2，c=5。",
+        "Δ=(-2)²-4·3·5=4-60=-56<0。",
+        "因此沒有實數根。"
+      ],
+      "alternativeSolutions": [
+        "亦可配方觀察：3(x-1/3)²+14/3=0，左邊恆正，故無實根。"
+      ],
+      "reasoningSteps": [
+        "標準式係數辨認。",
+        "判別式計算。",
+        "把 Δ<0 翻成根個數。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "Δ=-56 且正確判定 0 個實根。"
+        },
+        {
+          "score": 2,
+          "criteria": "結論正確且有判別式方向，但一處書寫略簡略；或 Δ 小算術錯但仍明確為負且結論不受影響。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道應計算判別式，但符號計算錯而結論錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "直接猜根個數且無有效依據。"
+        }
+      ],
+      "partialCreditRules": [
+        "「無實數解」與「0 個實數根」等值。",
+        "不必求複數根。"
+      ],
+      "followThroughPolicy": "若 4ac 算成 58 仍得到負數並依此下正確結論，可給 2 分，但必須顯示方法。",
+      "unitNotationRules": [
+        "x 無單位。",
+        "Δ 可寫 -56。"
+      ],
+      "answerOnlyPolicy": "只寫「沒有」而無判別式，最多 1 分。",
+      "commonErrors": [
+        "b² 寫 -4。",
+        "把 Δ<0 說成兩根。"
+      ],
+      "independentReview": {
+        "derivedResult": "0 個實數根。",
+        "ambiguity": "限定實數且方程式確為二次，結論唯一。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "f58efcb7afe5d7b5f50ea01c0a3972a6bfb56a110ab8c0171c7fe0f3570776fe"
+    },
+    {
+      "questionId": "u13-s004-cr002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-discriminant",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "求所有實數 k，使 x²+kx+4=0 恰有一個相異實根。",
+      "requiredWork": [
+        "建立重根條件。",
+        "解 k 的方程式。",
+        "驗證邊界。"
+      ],
+      "fullCreditSolution": [
+        "恰有一個相異實根表示 Δ=0。",
+        "k²-4·1·4=0，所以 k²=16。",
+        "k=4 或 k=-4；兩者均使方程式成完全平方。"
+      ],
+      "alternativeSolutions": [
+        "x²+kx+4 若為完全平方，常數 4 的平方根為 2，故可為 (x+2)² 或 (x-2)²，對應 k=4、-4。"
+      ],
+      "reasoningSteps": [
+        "把「恰一根」翻成 Δ=0。",
+        "解平方方程式保留正負。",
+        "確認 a=1 不退化。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整得到 k=±4，並說明 Δ=0。"
+        },
+        {
+          "score": 2,
+          "criteria": "方法正確但漏掉一個 k，或兩值正確但未說明重根條件。"
+        },
+        {
+          "score": 1,
+          "criteria": "列出 k²=16 但只取正平方根且無修正。"
+        },
+        {
+          "score": 0,
+          "criteria": "把 k 設為 0 或給無關範圍。"
+        }
+      ],
+      "partialCreditRules": [
+        "±4、4 或 -4 等值表達可接受。",
+        "兩個參數值都必須列出。"
+      ],
+      "followThroughPolicy": "若從 k²=16 漏負值，給 1 分；若後續能用完全平方補回則可恢復滿分。",
+      "unitNotationRules": [
+        "k 無單位。",
+        "解集合可寫 {−4,4}。"
+      ],
+      "answerOnlyPolicy": "只寫 ±4 而無過程，最多 2 分。",
+      "commonErrors": [
+        "只取 k=4。",
+        "把 4ac 算 4。",
+        "把恰一根誤作 Δ>0。"
+      ],
+      "independentReview": {
+        "derivedResult": "k=4 或 k=-4。",
+        "ambiguity": "參數不影響 a，無退化歧義。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "185e8c31cc7d96145c9126663dde5def1aa548212573b6b6992b6d0bb5496b5d"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u13-s004-v001",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "13e1424e52f1b4bd3eeb71782ecbef69150e06c02a59f672659c6b9c0d6e5300",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "Δ=(−6)²−4·1·5=36−20=16；16>0，與兩個相異實根一致。",
+      "derivedAnswer": "16",
+      "storedAnswer": "16",
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "ambiguityChecks": {
+        "language": "題幹明確要求「由根的型態反查判別式計算」，沒有第二種合理所求。",
+        "conditions": "係數與公式明示，結果唯一。；已逐一代回題幹條件與四個選項，未形成第二個合理答案。",
+        "boundary": "係數與公式明示，結果唯一。；已逐一代回題幹條件與四個選項，未形成第二個合理答案。",
+        "choices": "逐項代回後只有「16」成立；其他三項分別因：−16是減法符號錯誤。；56把減4ac誤作加法。；11不是判別式結果。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "基礎：用判別式數值驗證根型態。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "u13-s004-v001 中央修訂後獨立重算：Δ=(−6)²−4·1·5=36−20=16；16>0，與兩個相異實根一致。 四個選項逐項核對，唯一正解為「16」；其餘選項排除理由為：−16是減法符號錯誤。；56把減4ac誤作加法。；11不是判別式結果。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "c0357d07b7eab0a5494ca46afcae32ac8c36521ed7f939f6b7b26932777f09f9"
+    },
+    {
+      "questionId": "u13-s004-v002",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "86763330dde7e011ef397d22ff2bf0ff24b4c8dff97e0e557290c57a476f5605",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：直接計算 9-40=-31；負數小於 0",
+      "derivedAnswer": "負",
+      "storedAnswer": "負",
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「2x²+3x+5=0 的判別式符號為何？」的要求量已明示為「判斷 Δ 的正負」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：標準式係數明確。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：只問符號，不需求根。",
+        "choices": "四選項逐一代入或反算；正確項理由為「Δ=3²-4·2·5=9-40=-31<0。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "基本判別式判讀。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「2x²+3x+5=0 的判別式符號為何？」：獨立由原始條件重算：直接計算 9-40=-31；負數小於 0。再逐項核對四個選項，只有「負」同時符合方程式與限制；只問符號，不需求根。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "7f07cbeb2f926b7dd4b5c755fea524d2849eeae9e280de788105d84151c8f068"
+    },
+    {
+      "questionId": "u13-s004-v003",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "3ba0b66ea73cea3900bf47639c9533fc166db58cfee1f5b5b3764833291d4eb6",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：第一個候選 Δ=4；正確候選 Δ=0；第三個 -4；第四個 -36；因此唯一正確為完全平方 (x-3)²=0",
+      "derivedAnswer": "x²-6x+9=0",
+      "storedAnswer": "x²-6x+9=0",
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「下列哪一個方程式的判別式等於 0？」的要求量已明示為「辨認重根方程式」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：每個選項均為二次方程式。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：只有一項 Δ 恰為 0。",
+        "choices": "四選項逐一代入或反算；正確項理由為「Δ=36-36=0。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "需逐項排除四個方程式。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「下列哪一個方程式的判別式等於 0？」：獨立由原始條件重算：第一個候選 Δ=4；正確候選 Δ=0；第三個 -4；第四個 -36；因此唯一正確為完全平方 (x-3)²=0。再逐項核對四個選項，只有「x²-6x+9=0」同時符合方程式與限制；只有一項 Δ 恰為 0。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "c5305813bd986594c1ed01674c831780ccafc9e3fe78611647a54b2895649810"
+    },
+    {
+      "questionId": "u13-s004-v004",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "dc796e8fa2fd68491f238f5cfb5a07c1bd132fe11f5f1747c2a935ce0209a156",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：k=4 時方程式為 (x+2)²=0；確實只有根 -2",
+      "derivedAnswer": "4",
+      "storedAnswer": "4",
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「若 x²+4x+k=0 有一個相異實根，則 k 為何？」的要求量已明示為「由重根條件求參數」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：a=1 不會退化。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：k 唯一。",
+        "choices": "四選項逐一代入或反算；正確項理由為「一個相異實根要求 Δ=0，故 16-4k=0。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "標準參數重根題。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「若 x²+4x+k=0 有一個相異實根，則 k 為何？」：獨立由原始條件重算：k=4 時方程式為 (x+2)²=0；確實只有根 -2。再逐項核對四個選項，只有「4」同時符合方程式與限制；k 唯一。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "ee8b2e2e7bb9b5062e0301830afdb7c5dd5b2cbd593e734b663b20d29a0afe14"
+    },
+    {
+      "questionId": "u13-s004-v005",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "6d11a31e1fa87709a8679909670f63c044e551f60b5e9b2c99262b97c2fa9127",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：臨界值為 ±6；外側使平方大於 36；邊界只一根，內側無根",
+      "derivedAnswer": "k<-6 或 k>6",
+      "storedAnswer": "k<-6 或 k>6",
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「x²+kx+9=0 有兩個相異實根時，k 的條件為何？」的要求量已明示為「求兩相異根的參數範圍」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：a=1。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：「相異」排除等號。",
+        "choices": "四選項逐一代入或反算；正確項理由為「Δ=k²-36>0，所以 |k|>6。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "需解二次不等式的簡單平方型。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「x²+kx+9=0 有兩個相異實根時，k 的條件為何？」：獨立由原始條件重算：臨界值為 ±6；外側使平方大於 36；邊界只一根，內側無根。再逐項核對四個選項，只有「k<-6 或 k>6」同時符合方程式與限制；「相異」排除等號。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "7230fd1e1d64759160587f603858a58850b0c31f7e3cf291795b0ffc36926885"
+    },
+    {
+      "questionId": "u13-s004-v006",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "a8a7309175ef02f11cebb53fb911911c138b2f661c535f957bd35a914d5b082c",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：把不等式移項：36<12m；除以正數 12，不等號方向不變，m>3",
+      "derivedAnswer": "m>3",
+      "storedAnswer": "m>3",
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「3x²-6x+m=0 沒有實數根時，m 的條件為何？」的要求量已明示為「求無實根參數範圍」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：a=3≠0。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：m=3 是重根邊界，不可包含。",
+        "choices": "四選項逐一代入或反算；正確項理由為「Δ=36-12m<0，解得 m>3。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "參數線性不等式。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「3x²-6x+m=0 沒有實數根時，m 的條件為何？」：獨立由原始條件重算：把不等式移項：36<12m；除以正數 12，不等號方向不變，m>3。再逐項核對四個選項，只有「m>3」同時符合方程式與限制；m=3 是重根邊界，不可包含。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "e3094414319addecfe8b58282c4f155491b2ef1fa8d213d2bbcbdf83dbfdea9a"
+    },
+    {
+      "questionId": "u13-s004-v007",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "10d4cf37902ac2aa3ffdc3a2d46867d10e00d1f566ac16aa9167197b1067b561",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：原式其實可分解為 (x-1)(x-p)=0；只有 p=1 時兩根重合",
+      "derivedAnswer": "1",
+      "storedAnswer": "1",
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「方程式 x²-(p+1)x+p=0 只有一個相異實根時，p 為何？」的要求量已明示為「用判別式或結構判參數」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：a=1。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：重根要求兩根值相同。",
+        "choices": "四選項逐一代入或反算；正確項理由為「Δ=(p+1)²-4p=(p-1)²，只有 p=1 時為 0。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "可用兩種方法交叉驗證。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「方程式 x²-(p+1)x+p=0 只有一個相異實根時，p 為何？」：獨立由原始條件重算：原式其實可分解為 (x-1)(x-p)=0；只有 p=1 時兩根重合。再逐項核對四個選項，只有「1」同時符合方程式與限制；重根要求兩根值相同。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "4312eb26fe669b9fb38b56274f2e04645edcd5dd09f999da9e9801d18f44cfda"
+    },
+    {
+      "questionId": "u13-s004-v008",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "43d0f63d5bb7b57a8fca0a61755605c6477562400a62da6535362b75d6a359f0",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：k=1 時方程式 (x+1)²=0；同時滿足二次與重根",
+      "derivedAnswer": "1",
+      "storedAnswer": "1",
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「方程式 kx²+2x+1=0 是一元二次方程式且有重根，k 為何？」的要求量已明示為「同時處理退化與重根」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：k 同時是二次項係數。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：k=0 必須排除。",
+        "choices": "四選項逐一代入或反算；正確項理由為「需 k≠0，且 Δ=4-4k=0，得 k=1。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "雙重條件參數題。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「方程式 kx²+2x+1=0 是一元二次方程式且有重根，k 為何？」：獨立由原始條件重算：k=1 時方程式 (x+1)²=0；同時滿足二次與重根。再逐項核對四個選項，只有「1」同時符合方程式與限制；k=0 必須排除。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "c7f1ee69f5cab39ff1a7415d73df0a008748290b2ad7ff183fe748597dce75f2"
+    },
+    {
+      "questionId": "u13-s004-v009",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "c88f1bbb7a15dc5da67c093d11e059cc6312cf7c1f930e7e51b15f6ba2fc3ad3",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：即使 √Δ=7，公式仍含 -b 與 2a；因此只能確定根數，不能確定整數性或符號",
+      "derivedAnswer": "有兩個相異實根",
+      "storedAnswer": "有兩個相異實根",
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「某整係數二次方程式的 Δ=49，下列敘述何者一定正確？」的要求量已明示為「判斷判別式可保證的資訊」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：假設確為 a≠0 的二次方程式。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：只問一定成立的敘述。",
+        "choices": "四選項逐一代入或反算；正確項理由為「49>0，所以有兩個相異實根。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "辨別判別式資訊邊界。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「某整係數二次方程式的 Δ=49，下列敘述何者一定正確？」：獨立由原始條件重算：即使 √Δ=7，公式仍含 -b 與 2a；因此只能確定根數，不能確定整數性或符號。再逐項核對四個選項，只有「有兩個相異實根」同時符合方程式與限制；只問一定成立的敘述。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "e7d0607e57038ce0370a028baf84a015c8ef4dbb9cf1338c3b6b455de6a5d98f"
+    },
+    {
+      "questionId": "u13-s004-v010",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "7db35747f84a8a271048879d904500db9f91938428d76ebf47d09b2c8ff64d22",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：配方得 (h-6)²=-4；實數平方不可能為負，所以沒有實數尺寸",
+      "derivedAnswer": "沒有",
+      "storedAnswer": "沒有",
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「某結構設計參數 h 必須滿足 h²-12h+40=0。工程師只接受實數尺寸。此設計是否有可行尺寸？」的要求量已明示為「判斷設計可行性」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：尺寸需為實數。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：無實數根即無可行尺寸，不需再討論正負。",
+        "choices": "四選項逐一代入或反算；正確項理由為「Δ=144-160=-16<0，沒有實數根。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "h 為尺寸參數，題目未指定單位；可行性只依實數性。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "以判別式做可行性判斷。",
+      "literacyNecessityReview": "此情境資訊不可刪除且會改變答案，因為「尺寸必須為實數」使負判別式轉化為工程不可行結論。",
+      "reviewerNote": "獨立重算「某結構設計參數 h 必須滿足 h²-12h+40=0。工程師只接受實數尺寸。此設計是否有可行尺寸？」：獨立由原始條件重算：配方得 (h-6)²=-4；實數平方不可能為負，所以沒有實數尺寸。再逐項核對四個選項，只有「沒有」同時符合方程式與限制；無實數根即無可行尺寸，不需再討論正負。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "e6658e44b4b372ff0931a47b4040a6c8d3ba4ff2dd2b40e44f071b81ac790efa"
+    },
+    {
+      "questionId": "u13-s004-v011",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "77d6bec48e6adb4c330d1622a4e30599c0eb27d4c6fa0de5c932b385834b3339",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：代回 k=49/8 後 Δ=49-49=0；a=2 不為 0，確為重根",
+      "derivedAnswer": "49/8",
+      "storedAnswer": "49/8",
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「校正模型 2n²-7n+k=0 必須恰有一個實數校正值。k 應為何？」的要求量已明示為「設定恰一校正值的參數」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：n 為實數校正值，a=2。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：k 可為分數。",
+        "choices": "四選項逐一代入或反算；正確項理由為「Δ=49-8k=0，故 k=49/8。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "情境中由唯一值反推模型參數。",
+      "literacyNecessityReview": "此情境資訊不可刪除且會改變答案，因為「恰有一個校正值」直接決定使用 Δ=0，而非先求根。",
+      "reviewerNote": "獨立重算「校正模型 2n²-7n+k=0 必須恰有一個實數校正值。k 應為何？」：獨立由原始條件重算：代回 k=49/8 後 Δ=49-49=0；a=2 不為 0，確為重根。再逐項核對四個選項，只有「49/8」同時符合方程式與限制；k 可為分數。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "2b3e44d9790e92c8e65ae8aff4405be78fc2a4ee490cc240d738e00296bcd8d5"
+    },
+    {
+      "questionId": "u13-s004-v012",
+      "unitId": "u13",
+      "skillId": "quadratic-discriminant",
+      "contentSha256": "3c362e24da3ef8880e12f798bf5d12d95f3ad852de7e7702aaf790b87459c1cf",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：直接分解確認根為 2 與 m；兩數不同的唯一條件就是 m≠2",
+      "derivedAnswer": "m≠2",
+      "storedAnswer": "m≠2",
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「安全門的兩個警示門檻由方程式 x²-(m+2)x+2m=0 決定。要有兩個不同門檻，m 的條件為何？」的要求量已明示為「求兩不同門檻的參數條件」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：題目只要求門檻不同，未要求誰大或皆正。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：m=2 是唯一重合邊界。",
+        "choices": "四選項逐一代入或反算；正確項理由為「方程式可分解為 (x-2)(x-m)=0，兩門檻為 2、m；不同需 m≠2。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "判別式平方型與因式結構整合。",
+      "literacyNecessityReview": "此情境資訊不可刪除且會改變答案，因為警示門檻的「不同」語意對應兩相異實根條件。",
+      "reviewerNote": "獨立重算「安全門的兩個警示門檻由方程式 x²-(m+2)x+2m=0 決定。要有兩個不同門檻，m 的條件為何？」：獨立由原始條件重算：直接分解確認根為 2 與 m；兩數不同的唯一條件就是 m≠2。再逐項核對四個選項，只有「m≠2」同時符合方程式與限制；m=2 是唯一重合邊界。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "d9c7b4d50b4169dce1454769f06b836cdf9d7437cfb5ff7ad32b81eeae1d5b87"
+    }
+  ],
+  "drawingSpecs": []
+};

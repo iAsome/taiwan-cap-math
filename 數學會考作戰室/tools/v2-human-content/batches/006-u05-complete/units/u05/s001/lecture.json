@@ -1,0 +1,241 @@
+{
+  "lectureId": "u05-s001-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-coordinate-basics",
+  "skillId": "coordinate-point-reading",
+  "lockedTitle": "坐標讀法與點的位置",
+  "title": "坐標讀法與點的位置：先讀 x 再讀 y",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能指出橫軸、縱軸與原點的角色。",
+    "能把點的位置寫成有序數對 (x,y)。",
+    "能由坐標說明點相對原點的左右與上下位置。",
+    "能辨認把 x、y 對調所造成的位置錯誤。"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    {
+      "term": "平面直角坐標系",
+      "definition": "由互相垂直的 x 軸與 y 軸建立的位置表示系統。"
+    },
+    {
+      "term": "原點",
+      "definition": "兩軸交會處，坐標為 (0,0)。"
+    },
+    {
+      "term": "橫坐標",
+      "definition": "有序數對中的第一個數，表示左右位置。"
+    },
+    {
+      "term": "縱坐標",
+      "definition": "有序數對中的第二個數，表示上下位置。"
+    },
+    {
+      "term": "有序數對",
+      "definition": "有固定先後次序的兩個數，寫成 (x,y)。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(x,y)",
+      "meaning": "點的坐標；先寫橫坐標 x，再寫縱坐標 y。"
+    },
+    {
+      "symbol": "O",
+      "meaning": "常用來表示原點。"
+    },
+    {
+      "symbol": "x 軸",
+      "meaning": "水平方向的坐標軸。"
+    },
+    {
+      "symbol": "y 軸",
+      "meaning": "垂直方向的坐標軸。"
+    }
+  ],
+  "conceptNarrative": [
+    "坐標平面把位置拆成兩次移動：先沿水平方向決定 x，再沿垂直方向決定 y。",
+    "正的 x 在原點右側，負的 x 在原點左側；正的 y 在原點上方，負的 y 在原點下方。",
+    "括號內的兩個數不是可交換的集合；(2,-3) 與 (-3,2) 通常是不同點。",
+    "原點是所有坐標讀法的共同基準，不能從任意位置開始計算。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "點的坐標",
+      "statement": "點 P 的坐標 (a,b) 表示：由原點先水平移動到 x=a，再垂直移動到 y=b。"
+    },
+    {
+      "name": "橫坐標",
+      "statement": "點在左右方向相對原點的位置數值。"
+    },
+    {
+      "name": "縱坐標",
+      "statement": "點在上下方向相對原點的位置數值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P=(x,y)",
+      "conditions": [
+        "x、y 為可表示位置的數",
+        "順序固定"
+      ],
+      "meaning": "用一對有順序的數唯一描述平面上的點。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把 (x,y) 看成 x+y。",
+    "不能先讀上下再讀左右。",
+    "題目只給一個數時，尚不足以決定平面上的一般點。",
+    "沒有單位格長資訊時，不能由視覺估計實際距離。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找基準：確認原點與兩軸。",
+      "check": "是否知道右、左、上、下各代表哪個正負方向？"
+    },
+    {
+      "step": 2,
+      "instruction": "讀第一個數。",
+      "check": "第一個數是否只控制左右？"
+    },
+    {
+      "step": 3,
+      "instruction": "讀第二個數。",
+      "check": "第二個數是否只控制上下？"
+    },
+    {
+      "step": 4,
+      "instruction": "合併成完整位置敘述。",
+      "check": "是否把正負號也說清楚？"
+    },
+    {
+      "step": 5,
+      "instruction": "反向檢查。",
+      "check": "把位置敘述還原成 (x,y) 是否一致？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "點 A=(4,-2) 在原點哪個方向？",
+      "solutionSteps": [
+        "x=4>0，所以在右側。",
+        "y=-2<0，所以在下方。"
+      ],
+      "answer": "A 在原點右方 4 單位、下方 2 單位。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "把「由原點向左 3 單位、向上 5 單位」寫成坐標。",
+      "solutionSteps": [
+        "向左使 x=-3。",
+        "向上使 y=5。"
+      ],
+      "answer": "(-3,5)。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "比較 P=(2,-6) 與 Q=(-6,2)。",
+      "solutionSteps": [
+        "P 的 x 正、y 負。",
+        "Q 的 x 負、y 正。"
+      ],
+      "answer": "兩點位置不同，不能交換坐標順序。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "哪個點的橫坐標為 0、縱坐標為 -7？",
+      "solutionSteps": [
+        "第一個數放 0。",
+        "第二個數放 -7。"
+      ],
+      "answer": "(0,-7)。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 (3,-5) 讀成先下 5 再右 3。",
+      "why": "忽略有序數對的固定順序。",
+      "correction": "口訣只用來檢查：先 x 左右，再 y 上下。"
+    },
+    {
+      "mistake": "把負號當成距離為負。",
+      "why": "位置方向與距離大小混淆。",
+      "correction": "負號表示方向；移動長度仍是正的 5 單位。"
+    },
+    {
+      "mistake": "把 (0,4) 說成原點。",
+      "why": "只看到一個分量是 0。",
+      "correction": "原點必須兩個分量都為 0。"
+    },
+    {
+      "mistake": "把括號當成乘法。",
+      "why": "不熟悉坐標記號。",
+      "correction": "(x,y) 是有序數對，不是 x×y。"
+    },
+    {
+      "mistake": "從某個點而不是原點讀坐標。",
+      "why": "忘記坐標的共同基準。",
+      "correction": "未另行說明時一律從原點讀。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先讀 x 再讀 y？",
+    "我是否把正負號翻成正確方向？",
+    "我是否知道只有 (0,0) 是原點？",
+    "我是否避免把坐標對調？"
+  ],
+  "summary": [
+    "坐標以 (x,y) 表示。",
+    "x 管左右，y 管上下。",
+    "正負號表示相對原點的方向。",
+    "有序數對的順序不可交換。"
+  ],
+  "connections": {
+    "previous": "本節是 U05 起點，承接整數正負號與數線方向。",
+    "next": [
+      "下一節利用 x、y 的正負組合判斷象限。",
+      "之後會把坐標用於平移、距離與直線。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s001-v001",
+      "u05-s001-v002",
+      "u05-s001-v003",
+      "u05-s001-v004",
+      "u05-s001-v005",
+      "u05-s001-v006",
+      "u05-s001-v007",
+      "u05-s001-v008",
+      "u05-s001-v009",
+      "u05-s001-v010",
+      "u05-s001-v011",
+      "u05-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s001-cr001",
+      "u05-s001-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "逐句核對 x 先於 y、正負方向與原點條件；四個例題分別涵蓋讀點、寫點、對調錯誤與零分量，未引入象限名稱以免提前依賴下一技能。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "2989642b9ba4da1499b5ed3c784e699dd2614cd7a87932925536693a122dd967"
+}

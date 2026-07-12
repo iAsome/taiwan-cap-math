@@ -1,0 +1,1591 @@
+// Emitted from reviewed immutable source. Do not edit.
+export default {
+  "lecture": {
+    "lectureId": "u22-s003-lecture-r1",
+    "unitId": "u22",
+    "numericUnitId": 22,
+    "topicId": "u22-quartiles",
+    "skillId": "box-plot-interpret",
+    "lockedSkillOrder": 3,
+    "title": "盒狀圖判讀：由盒狀圖讀出位置與集中程度與分散情形。",
+    "originalLockedTitle": "盒狀圖判讀",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能由箱體讀取中間約50%的範圍。",
+      "能用中位數比較中心位置。",
+      "能用箱寬、鬚長描述局部分散。",
+      "能避免由盒狀圖推論平均數、筆數或每個個體。"
+    ],
+    "prerequisiteSkillIds": [
+      "box-plot"
+    ],
+    "prerequisiteBridge": "承接盒狀圖構件與五數摘要。",
+    "glossary": [
+      {
+        "term": "位置比例",
+        "definition": "依排序位置約分成25%、50%、75%的描述。"
+      },
+      {
+        "term": "分布重疊",
+        "definition": "兩組數值範圍或箱體交錯。"
+      },
+      {
+        "term": "長尾",
+        "definition": "某側位置跨度明顯較長。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "Q1到Q3",
+        "meaning": "中間約50%的位置。"
+      },
+      {
+        "symbol": "min到max",
+        "meaning": "全部觀測的端點跨度。"
+      }
+    ],
+    "conceptNarrative": [
+      "盒狀圖的每個四分位區段約含相同比例資料，但圖上長度可以很不同。",
+      "中位數線靠近Q1，表示Q1到中位數這四分之一位置較集中，不表示該區筆數較少。",
+      "長鬚代表該外側四分之一的數值跨度大；可能有偏態或極端端點，但不能單憑圖判定原因。",
+      "兩圖中位數高低可比較中心位置，不能保證某組每一筆都較高。",
+      "標準盒狀圖通常看不到平均數、眾數、樣本數與每筆資料。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "有限推論",
+        "statement": "只陳述圖形直接支持的中心、位置與分散結論。"
+      },
+      {
+        "name": "過度推論",
+        "statement": "把群體摘要改寫成個體必然或因果原因。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "IQR=箱寬",
+        "conditions": [
+          "判斷中間50%集中程度。"
+        ],
+        "meaning": "判斷中間50%集中程度。"
+      },
+      {
+        "formula": "全距=兩鬚端點差",
+        "conditions": [
+          "判斷整體跨度。"
+        ],
+        "meaning": "判斷整體跨度。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能由中位數較高推出平均數一定較高。",
+      "不能由箱體不重疊推出所有資料不重疊。",
+      "不能把長鬚直接命名為資料錯誤。",
+      "不能由盒狀圖判定樣本數大小。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先確認同尺度",
+        "check": "不同單位或刻度先換算。"
+      },
+      {
+        "step": 2,
+        "instruction": "讀中心",
+        "check": "比較中位數。"
+      },
+      {
+        "step": 3,
+        "instruction": "讀中段",
+        "check": "比較箱體位置與寬度。"
+      },
+      {
+        "step": 4,
+        "instruction": "讀尾端",
+        "check": "比較鬚線與端點。"
+      },
+      {
+        "step": 5,
+        "instruction": "限制語句",
+        "check": "使用「中位數較高」「中段較分散」等精確表述。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "五數4、8、10、13、25",
+        "solutionSteps": [
+          "右鬚12大於左鬚4，高端位置較分散。"
+        ],
+        "answer": "右鬚12大於左鬚4，高端位置較分散。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "兩組中位數20與24",
+        "solutionSteps": [
+          "只能說第二組中位位置較高。"
+        ],
+        "answer": "只能說第二組中位位置較高。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "相同Q1、Q2、Q3但端點不同",
+        "solutionSteps": [
+          "IQR相同，全距可不同。"
+        ],
+        "answer": "IQR相同，全距可不同。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "說「75%資料高於Q3」",
+        "why": "方向顛倒；約75%不高於Q3。",
+        "correction": "方向顛倒；約75%不高於Q3。"
+      },
+      {
+        "mistake": "說「箱寬大表示人較多」",
+        "why": "箱寬是數值跨度。",
+        "correction": "箱寬是數值跨度。"
+      },
+      {
+        "mistake": "用圖形像不像對稱直接下定論",
+        "why": "先計算各段長度。",
+        "correction": "先計算各段長度。"
+      },
+      {
+        "mistake": "忽略圖的刻度",
+        "why": "視覺寬度必須換成實際數值。",
+        "correction": "視覺寬度必須換成實際數值。"
+      }
+    ],
+    "selfCheck": [
+      "結論是否只用圖中資訊？",
+      "是否把約略位置比例說成嚴格筆數？",
+      "是否誤提平均數或樣本數？",
+      "兩圖是否同單位同刻度？"
+    ],
+    "summary": [
+      "中位數看中心，IQR看中段，全距看端點。",
+      "每段寬度表示數值跨度，不表示資料筆數。",
+      "圖形支持群體摘要，不保證個體關係。",
+      "遇重疊分布應使用保守語句。"
+    ],
+    "connections": {
+      "previous": "承接盒狀圖構件與五數摘要。",
+      "next": [
+        "下一技能回到排序位置，精確定位四分位數。",
+        "後續比較兩盒狀圖時會同時使用中心與分散。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u22-boxplot-compare"
+    ],
+    "figureAccessibility": [
+      {
+        "figureId": "fig-u22-boxplot-compare",
+        "altText": "同一數軸上的甲乙兩個水平盒狀圖。甲五數4、10、15、18、24；乙五數6、9、15、22、25。"
+      }
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u22-s003-v001",
+        "u22-s003-v002",
+        "u22-s003-v003",
+        "u22-s003-v004",
+        "u22-s003-v005",
+        "u22-s003-v006",
+        "u22-s003-v007",
+        "u22-s003-v008",
+        "u22-s003-v009",
+        "u22-s003-v010",
+        "u22-s003-v011",
+        "u22-s003-v012"
+      ],
+      "constructedResponseIds": [
+        "u22-s003-cr001",
+        "u22-s003-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "skillSpecificReviewEvidence": "逐句檢查所有可推與不可推結論；用五數4、8、10、13、25重算左右鬚，確認右側跨度12而非以視覺猜測。",
+      "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+      "contentBoundary": "由盒狀圖讀出位置、集中程度與分散情形。",
+      "reviewVersion": "human-lecture-review-u22-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "c91ed4268cf52de7d9d6618c9f81e781762ef8abf2511b8c2c8e985d5e9215b7"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u22-s003-v001",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "由盒狀圖讀得 Q1=12、Q3=20。中間約50%的資料落在哪個區間？",
+      "text": "由盒狀圖讀得 Q1=12、Q3=20。中間約50%的資料落在哪個區間？",
+      "givenConditions": [],
+      "target": "解讀箱體涵蓋比例",
+      "choices": [
+        "最小值到最大值",
+        "12以下",
+        "12 到 20",
+        "20以上"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "盒狀圖的箱體從Q1到Q3，代表中間約50%的排序位置。",
+      "explanation": "盒狀圖的箱體從Q1到Q3，代表中間約50%的排序位置。",
+      "steps": [
+        "辨認箱體端點。",
+        "將Q1到Q3解讀為中間一半。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "最小值到最大值",
+          "truth": false,
+          "reason": "那是全部資料的範圍。"
+        },
+        {
+          "choice": "12以下",
+          "truth": false,
+          "reason": "約是較低四分之一。"
+        },
+        {
+          "choice": "12 到 20",
+          "truth": true,
+          "reason": "正確。獨立重算：盒狀圖的箱體從Q1到Q3，代表中間約50%的排序位置。"
+        },
+        {
+          "choice": "20以上",
+          "truth": false,
+          "reason": "約是較高四分之一。"
+        }
+      ],
+      "misconceptionTarget": "把箱體看成全部資料。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "「約50%」是位置比例，遇重複值時實際筆數可不同。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：解讀箱體涵蓋比例",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "解讀箱體涵蓋比例",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "186d0425fb0edb0e21ffdcd2835a73d6cab8317493af81f389b581ea8b82ef5c"
+    },
+    {
+      "questionId": "u22-s003-v002",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某盒狀圖的中位數為35。下列何者可合理解讀？",
+      "text": "某盒狀圖的中位數為35。下列何者可合理解讀？",
+      "givenConditions": [],
+      "target": "解讀中位數",
+      "choices": [
+        "所有資料平均為35",
+        "恰有一半資料等於35",
+        "最大值是70",
+        "約一半資料不大於35，約一半不小於35"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "中位數把排序後資料分成前後兩部分，因此可說約一半不大於35、約一半不小於35。",
+      "explanation": "中位數把排序後資料分成前後兩部分，因此可說約一半不大於35、約一半不小於35。",
+      "steps": [
+        "使用中位數位置定義。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "所有資料平均為35",
+          "truth": false,
+          "reason": "中位數不等於平均數。"
+        },
+        {
+          "choice": "恰有一半資料等於35",
+          "truth": false,
+          "reason": "中位數不表示資料集中在該值。"
+        },
+        {
+          "choice": "最大值是70",
+          "truth": false,
+          "reason": "無法由中位數推得最大值。"
+        },
+        {
+          "choice": "約一半資料不大於35，約一半不小於35",
+          "truth": true,
+          "reason": "正確。獨立重算：中位數把排序後資料分成前後兩部分，因此可說約一半不大於35、約一半不小於35。"
+        }
+      ],
+      "misconceptionTarget": "把中位數當平均數或眾數。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "重複值可能使「一半」不是嚴格筆數切割，故用約。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：解讀中位數",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "解讀中位數",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "2dd4fdd1866dd3948438ec364616820773efc652bacc5ed42935f30aea8aaeac"
+    },
+    {
+      "questionId": "u22-s003-v003",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "兩個盒狀圖的箱寬分別為6與14。若其他資訊未知，能確定什麼？",
+      "text": "兩個盒狀圖的箱寬分別為6與14。若其他資訊未知，能確定什麼？",
+      "givenConditions": [],
+      "target": "由箱寬比較分散",
+      "choices": [
+        "第二組的 IQR 較大",
+        "第二組平均數較大",
+        "第二組最大值較大",
+        "第一組資料筆數較少"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "箱寬就是Q3-Q1=IQR；14>6，所以第二組中間50%的分散較大。",
+      "explanation": "箱寬就是Q3-Q1=IQR；14>6，所以第二組中間50%的分散較大。",
+      "steps": [
+        "把箱寬對應IQR。",
+        "比較14與6。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "第二組的 IQR 較大",
+          "truth": true,
+          "reason": "正確。獨立重算：箱寬就是Q3-Q1=IQR；14>6，所以第二組中間50%的分散較大。"
+        },
+        {
+          "choice": "第二組平均數較大",
+          "truth": false,
+          "reason": "盒狀圖箱寬不提供平均數。"
+        },
+        {
+          "choice": "第二組最大值較大",
+          "truth": false,
+          "reason": "最大值需看鬚線端點。"
+        },
+        {
+          "choice": "第一組資料筆數較少",
+          "truth": false,
+          "reason": "盒狀圖通常不顯示筆數。"
+        }
+      ],
+      "misconceptionTarget": "以箱寬推論平均數或樣本數。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "只可推中段分散，不可推全部範圍。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：由箱寬比較分散",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "由箱寬比較分散",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "7d44ee94d467c3c0cb674d20a0994a9537a377259559a469b355ce67c932aee3"
+    },
+    {
+      "questionId": "u22-s003-v004",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "盒狀圖五數為 4、8、10、13、25。哪一側的尾巴較長？",
+      "text": "盒狀圖五數為 4、8、10、13、25。哪一側的尾巴較長？",
+      "givenConditions": [],
+      "target": "以鬚線判讀尾部",
+      "choices": [
+        "左側",
+        "右側",
+        "兩側相同",
+        "無法比較"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "左鬚長4，右鬚長25-13=12，因此右側尾巴較長。",
+      "explanation": "左鬚長4，右鬚長25-13=12，因此右側尾巴較長。",
+      "steps": [
+        "算左右鬚長。",
+        "比較4與12。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "左側",
+          "truth": false,
+          "reason": "左鬚長8-4=4，小於右鬚。"
+        },
+        {
+          "choice": "右側",
+          "truth": true,
+          "reason": "正確。獨立重算：左鬚長4，右鬚長25-13=12，因此右側尾巴較長。"
+        },
+        {
+          "choice": "兩側相同",
+          "truth": false,
+          "reason": "右鬚長12，不等於4。"
+        },
+        {
+          "choice": "無法比較",
+          "truth": false,
+          "reason": "五數已足以比較鬚長。"
+        }
+      ],
+      "misconceptionTarget": "看箱體左右半而不是鬚線。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "長鬚僅表示該四分之一位置跨度大，不代表每筆資料均勻。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：以鬚線判讀尾部",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "以鬚線判讀尾部",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "86345adf7de4a293fca1d9e4efd5002bd87c17e5d20397b734ef1c3538c3aa33"
+    },
+    {
+      "questionId": "u22-s003-v005",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某盒狀圖中，中位數線非常靠近Q1，而Q3到最大值的鬚線又很長。最合理的描述是什麼？",
+      "text": "某盒狀圖中，中位數線非常靠近Q1，而Q3到最大值的鬚線又很長。最合理的描述是什麼？",
+      "givenConditions": [],
+      "target": "判讀分布偏向",
+      "choices": [
+        "較小的一半完全相同",
+        "資料一定左右對稱",
+        "較大的數值一側分散較開",
+        "所有數都集中在Q3"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "中位數靠Q1表示箱體右半較寬，右鬚又長，顯示較大值一側的位置跨度較大。",
+      "explanation": "中位數靠Q1表示箱體右半較寬，右鬚又長，顯示較大值一側的位置跨度較大。",
+      "steps": [
+        "比較箱體兩半。",
+        "再比較右鬚。",
+        "綜合判斷右側較分散。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "較小的一半完全相同",
+          "truth": false,
+          "reason": "靠近不代表相同。"
+        },
+        {
+          "choice": "資料一定左右對稱",
+          "truth": false,
+          "reason": "圖形明顯不對稱。"
+        },
+        {
+          "choice": "較大的數值一側分散較開",
+          "truth": true,
+          "reason": "正確。獨立重算：中位數靠Q1表示箱體右半較寬，右鬚又長，顯示較大值一側的位置跨度較大。"
+        },
+        {
+          "choice": "所有數都集中在Q3",
+          "truth": false,
+          "reason": "盒狀圖不能支持此結論。"
+        }
+      ],
+      "misconceptionTarget": "把圖形不對稱直接說成資料筆數不相等。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "盒狀圖各四分位區段約含相同比例，但寬度不同。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：判讀分布偏向",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "判讀分布偏向",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "c9e0604defb6edb14af7cb3027326a9052eb85132077b70d2f70617890607f0d"
+    },
+    {
+      "questionId": "u22-s003-v006",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某班成績盒狀圖顯示最小值45、Q1=60、中位數72、Q3=84、最大值96。下列何者一定錯誤？",
+      "text": "某班成績盒狀圖顯示最小值45、Q1=60、中位數72、Q3=84、最大值96。下列何者一定錯誤？",
+      "givenConditions": [],
+      "target": "判斷盒狀圖比例敘述",
+      "choices": [
+        "約25%的人成績不高於60",
+        "約50%的人成績不高於72",
+        "最高成績為96",
+        "至少75%的人成績高於84"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "Q3=84表示約75%資料不高於84、約25%不低於84，不可能由此推得至少75%高於84。",
+      "explanation": "Q3=84表示約75%資料不高於84、約25%不低於84，不可能由此推得至少75%高於84。",
+      "steps": [
+        "解讀Q3的位置比例。",
+        "逐項核對。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "約25%的人成績不高於60",
+          "truth": false,
+          "reason": "Q1可作此位置解讀。"
+        },
+        {
+          "choice": "約50%的人成績不高於72",
+          "truth": false,
+          "reason": "中位數可作此位置解讀。"
+        },
+        {
+          "choice": "最高成績為96",
+          "truth": false,
+          "reason": "最大值直接由圖得知。"
+        },
+        {
+          "choice": "至少75%的人成績高於84",
+          "truth": true,
+          "reason": "正確。獨立重算：Q3=84表示約75%資料不高於84、約25%不低於84，不可能由此推得至少75%高於84。"
+        }
+      ],
+      "misconceptionTarget": "把Q3上下兩側比例顛倒。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "使用約略比例，避免重複分數的邊界問題。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：判斷盒狀圖比例敘述",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "判斷盒狀圖比例敘述",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "370e7d8a6798b6242cd26440b1ffdf6380cbd5b5ef7510cb1df323a010dd5092"
+    },
+    {
+      "questionId": "u22-s003-v007",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "盒狀圖A五數為 0、4、5、6、20。若只看箱體，最容易忽略哪項資訊？",
+      "text": "盒狀圖A五數為 0、4、5、6、20。若只看箱體，最容易忽略哪項資訊？",
+      "givenConditions": [],
+      "target": "區分中段與整體分散",
+      "choices": [
+        "極端端點造成的大全距",
+        "中位數位置",
+        "IQR大小",
+        "Q1與Q3"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "箱體僅涵蓋4到6，IQR=2；但全距20，長鬚反映端點很遠。只看箱體會忽略大全距。",
+      "explanation": "箱體僅涵蓋4到6，IQR=2；但全距20，長鬚反映端點很遠。只看箱體會忽略大全距。",
+      "steps": [
+        "比較IQR與全距。",
+        "辨認長鬚資訊。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "極端端點造成的大全距",
+          "truth": true,
+          "reason": "正確。獨立重算：箱體僅涵蓋4到6，IQR=2；但全距20，長鬚反映端點很遠。只看箱體會忽略大全距。"
+        },
+        {
+          "choice": "中位數位置",
+          "truth": false,
+          "reason": "箱內線可見中位數。"
+        },
+        {
+          "choice": "IQR大小",
+          "truth": false,
+          "reason": "箱寬直接顯示IQR。"
+        },
+        {
+          "choice": "Q1與Q3",
+          "truth": false,
+          "reason": "箱體端點就是Q1與Q3。"
+        }
+      ],
+      "misconceptionTarget": "只看箱體便以為所有資料都集中。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "盒狀圖未顯示每一筆資料，僅呈現位置摘要。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：區分中段與整體分散",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "區分中段與整體分散",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "623f53e0dd2a3a73d5dbfbf4d19bb261a43630a217f470fa9fa518477aa9fdf0"
+    },
+    {
+      "questionId": "u22-s003-v008",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "兩組資料的盒狀圖有相同Q1、Q2、Q3，但A的最小值和最大值更遠。下列何者正確？",
+      "text": "兩組資料的盒狀圖有相同Q1、Q2、Q3，但A的最小值和最大值更遠。下列何者正確？",
+      "givenConditions": [],
+      "target": "同時判讀兩種分散量",
+      "choices": [
+        "A的中位數較大",
+        "兩組IQR相同，但A的全距較大",
+        "A的IQR較大",
+        "兩組全距相同"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "Q1、Q3相同使IQR相同；A的兩端更外側，使最大值減最小值較大。",
+      "explanation": "Q1、Q3相同使IQR相同；A的兩端更外側，使最大值減最小值較大。",
+      "steps": [
+        "由Q1、Q3判IQR。",
+        "由兩端判全距。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "A的中位數較大",
+          "truth": false,
+          "reason": "題目已說Q2相同。"
+        },
+        {
+          "choice": "兩組IQR相同，但A的全距較大",
+          "truth": true,
+          "reason": "正確。獨立重算：Q1、Q3相同使IQR相同；A的兩端更外側，使最大值減最小值較大。"
+        },
+        {
+          "choice": "A的IQR較大",
+          "truth": false,
+          "reason": "Q1與Q3相同故IQR相同。"
+        },
+        {
+          "choice": "兩組全距相同",
+          "truth": false,
+          "reason": "A端點更遠故全距較大。"
+        }
+      ],
+      "misconceptionTarget": "把鬚線變長誤當箱寬變大。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "「更遠」指相對共同中間位置向外延伸。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：同時判讀兩種分散量",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "同時判讀兩種分散量",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "112b65e40d755ca20235d76453fd065b8432f87ee5267c6ddd5e6282fbf3a828"
+    },
+    {
+      "questionId": "u22-s003-v009",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某盒狀圖顯示 Q1=18、中位數=18、Q3=24。下列何者可能發生？",
+      "text": "某盒狀圖顯示 Q1=18、中位數=18、Q3=24。下列何者可能發生？",
+      "givenConditions": [],
+      "target": "處理重複值的盒狀圖",
+      "choices": [
+        "Q1不可能等於中位數",
+        "IQR一定為0",
+        "至少有一部分資料重複在18",
+        "所有資料都等於18"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "位置量可以相同，常見原因是多筆資料在18；但Q3=24顯示並非全部都等於18。",
+      "explanation": "位置量可以相同，常見原因是多筆資料在18；但Q3=24顯示並非全部都等於18。",
+      "steps": [
+        "接受四分位數可重合。",
+        "由Q3排除全部相同。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "Q1不可能等於中位數",
+          "truth": false,
+          "reason": "資料有重複時可以相等。"
+        },
+        {
+          "choice": "IQR一定為0",
+          "truth": false,
+          "reason": "IQR=24-18=6。"
+        },
+        {
+          "choice": "至少有一部分資料重複在18",
+          "truth": true,
+          "reason": "正確。獨立重算：位置量可以相同，常見原因是多筆資料在18；但Q3=24顯示並非全部都等於18。"
+        },
+        {
+          "choice": "所有資料都等於18",
+          "truth": false,
+          "reason": "Q3=24否定此說法。"
+        }
+      ],
+      "misconceptionTarget": "誤以為五數必須嚴格遞增。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "五數摘要只需非遞減，不必嚴格遞增。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：處理重複值的盒狀圖",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "處理重複值的盒狀圖",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "77c48ddcf1dbf0c59587bdd66105972f0fda88dd9d8a750b6e7d52f28e08a842"
+    },
+    {
+      "questionId": "u22-s003-v010",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某醫療站候診時間盒狀圖五數為 5、12、18、26、55 分鐘。站方想描述「多數典型候診」而降低極長候診的影響，較適合報告哪一組？",
+      "text": "某醫療站候診時間盒狀圖五數為 5、12、18、26、55 分鐘。站方想描述「多數典型候診」而降低極長候診的影響，較適合報告哪一組？",
+      "givenConditions": [],
+      "target": "選擇穩健統計摘要",
+      "choices": [
+        "平均數與全距50",
+        "最小值5與最大值55",
+        "Q1=12與最大值55",
+        "中位數18與IQR14"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "中位數對極端值較穩健，IQR=26-12=14描述中間50%，適合呈現典型候診。",
+      "explanation": "中位數對極端值較穩健，IQR=26-12=14描述中間50%，適合呈現典型候診。",
+      "steps": [
+        "辨認長右鬚與極端端點。",
+        "選中位數與IQR。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "平均數與全距50",
+          "truth": false,
+          "reason": "題目未給平均數，且全距受55影響大。"
+        },
+        {
+          "choice": "最小值5與最大值55",
+          "truth": false,
+          "reason": "只呈現極端端點。"
+        },
+        {
+          "choice": "Q1=12與最大值55",
+          "truth": false,
+          "reason": "混合中段與極端，無法概括典型分布。"
+        },
+        {
+          "choice": "中位數18與IQR14",
+          "truth": true,
+          "reason": "正確。獨立重算：中位數對極端值較穩健，IQR=26-12=14描述中間50%，適合呈現典型候診。"
+        }
+      ],
+      "misconceptionTarget": "任何情況都優先報告最大值與全距。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "候診時間單位皆為分鐘。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "「典型」指中間分布，而非否認長候診存在。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：選擇穩健統計摘要",
+      "literacyContextNecessity": "候診時間有明顯長尾，選擇摘要方式會影響服務品質解讀。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "選擇穩健統計摘要",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "1436c85512d9bfe9f517351ecd03dd99681793e78bd4619a9437c04b57ee9998"
+    },
+    {
+      "questionId": "u22-s003-v011",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "甲乙兩班測驗盒狀圖中，甲的中位數較高，但甲的箱體也較寬。最精確的結論是什麼？",
+      "text": "甲乙兩班測驗盒狀圖中，甲的中位數較高，但甲的箱體也較寬。最精確的結論是什麼？",
+      "givenConditions": [],
+      "target": "用兩個特徵作有限結論",
+      "choices": [
+        "甲的典型中心較高，但中間50%分散也較大",
+        "甲每位學生都比乙高",
+        "甲平均數一定較高",
+        "乙的全距一定較大"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "中位數較高支持中心位置較高；箱寬較大支持IQR較大。其他逐人、平均或全距結論都超出圖示。",
+      "explanation": "中位數較高支持中心位置較高；箱寬較大支持IQR較大。其他逐人、平均或全距結論都超出圖示。",
+      "steps": [
+        "分別解讀中位數與箱寬。",
+        "避免把群體摘要變成個體結論。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "甲的典型中心較高，但中間50%分散也較大",
+          "truth": true,
+          "reason": "正確。獨立重算：中位數較高支持中心位置較高；箱寬較大支持IQR較大。其他逐人、平均或全距結論都超出圖示。"
+        },
+        {
+          "choice": "甲每位學生都比乙高",
+          "truth": false,
+          "reason": "盒狀圖可能重疊，不能逐人比較。"
+        },
+        {
+          "choice": "甲平均數一定較高",
+          "truth": false,
+          "reason": "中位數高不保證平均數高。"
+        },
+        {
+          "choice": "乙的全距一定較大",
+          "truth": false,
+          "reason": "箱寬不能決定全距。"
+        }
+      ],
+      "misconceptionTarget": "由群體分布摘要推斷每一個個體。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "未提供實際五數與重疊程度，不能作更強推論。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：用兩個特徵作有限結論",
+      "literacyContextNecessity": "班級比較需要同時呈現中心與分散，避免只看單一指標。",
+      "visualMode": "figure",
+      "figureId": "fig-u22-boxplot-compare",
+      "drawingSpecReference": "fig-u22-boxplot-compare",
+      "authoringIntent": "用兩個特徵作有限結論",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "cb9cfdacd7bb6bcc4dc8d609577daeb50ebd17692b2fca961181a3736e33dc64"
+    },
+    {
+      "questionId": "u22-s003-v012",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某工廠兩條產線的成品長度盒狀圖顯示：A的中位數接近規格中心且IQR小；B的中位數也接近中心但IQR大。若只考慮穩定度，應如何判斷？",
+      "text": "某工廠兩條產線的成品長度盒狀圖顯示：A的中位數接近規格中心且IQR小；B的中位數也接近中心但IQR大。若只考慮穩定度，應如何判斷？",
+      "givenConditions": [],
+      "target": "以盒狀圖判斷製程穩定",
+      "choices": [
+        "B較穩定",
+        "A較穩定",
+        "兩者同樣穩定",
+        "無法比較"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "兩者中心都接近規格中心時，IQR較小的A其中間50%更集中，穩定度較佳。",
+      "explanation": "兩者中心都接近規格中心時，IQR較小的A其中間50%更集中，穩定度較佳。",
+      "steps": [
+        "固定中心條件。",
+        "比較IQR。",
+        "選較小者A。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "B較穩定",
+          "truth": false,
+          "reason": "B的IQR較大，代表中段波動較大。"
+        },
+        {
+          "choice": "A較穩定",
+          "truth": true,
+          "reason": "正確。獨立重算：兩者中心都接近規格中心時，IQR較小的A其中間50%更集中，穩定度較佳。"
+        },
+        {
+          "choice": "兩者同樣穩定",
+          "truth": false,
+          "reason": "中位數相近不代表分散相同。"
+        },
+        {
+          "choice": "無法比較",
+          "truth": false,
+          "reason": "IQR已提供穩定度所需的中段分散資訊。"
+        }
+      ],
+      "misconceptionTarget": "只看中心是否正確，忽略製程波動。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "兩產線以相同長度單位與刻度比較。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "此結論限定「只考慮穩定度」，不含良率與離群值。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：以盒狀圖判斷製程穩定",
+      "literacyContextNecessity": "製程品質需區分準確度與穩定度，箱寬直接影響判斷。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "以盒狀圖判斷製程穩定",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "68e169c1357a3536c9dd611326575bb9e99f91be9386a235cd2142ef1b49d829"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u22-s003-cr001",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "甲組五數為 2、8、12、15、30；乙組五數為 5、9、14、20、24。比較兩組的中位數、IQR、全距，並各寫一句不能由盒狀圖確定的事情。",
+      "requiredWork": [
+        "計算三項指標。",
+        "比較方向。",
+        "指出至少一項資訊限制。"
+      ],
+      "standardSolution": [
+        "甲：中位12、IQR7、全距28。乙：中位14、IQR11、全距19。",
+        "乙中心較高且中間50%較分散；甲整體端點跨度較大。",
+        "不能確定兩組平均數、樣本數或任一甲資料必低於任一乙資料。"
+      ],
+      "reasoningSteps": [
+        "甲：中位12、IQR7、全距28。乙：中位14、IQR11、全距19。",
+        "乙中心較高且中間50%較分散；甲整體端點跨度較大。",
+        "不能確定兩組平均數、樣本數或任一甲資料必低於任一乙資料。"
+      ],
+      "alternativeMethods": [
+        "可畫兩盒狀圖後讀取相同結論，但計算需明示。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "六個數值、三項比較與一項正確限制均完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "三項指標中只有一個算術錯，且限制敘述正確。"
+        },
+        {
+          "score": 1,
+          "criteria": "能正確比較至少中位數與一種分散量。"
+        },
+        {
+          "score": 0,
+          "criteria": "只寫「乙較好」等無指標結論。"
+        }
+      ],
+      "partialCreditRules": [
+        "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
+        "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
+      ],
+      "followThroughPolicy": "若某一IQR算錯但後續比較依其錯值一致，該比較可給方法分；過度個體推論不給該限制分。",
+      "unitNotationRules": "無特殊單位；分數須可辨識且機率介於0與1。",
+      "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
+      "commonErrors": [
+        "把IQR算成全距。",
+        "由中位數推平均數。",
+        "說乙每筆都較高。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "recomputedResult": "甲：中位12、IQR7、全距28。乙：中位14、IQR11、全距19。；乙中心較高且中間50%較分散；甲整體端點跨度較大。；不能確定兩組平均數、樣本數或任一甲資料必低於任一乙資料。",
+        "alternativeMethodCheck": "可畫兩盒狀圖後讀取相同結論，但計算需明示。",
+        "ambiguityBoundaryCheck": "題目所需規則、母體、抽取方式、端點與單位均已明示；評分規準依本題步驟逐項核對。",
+        "rubricSpecificity": "pass",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "4da6279f0fe7dc53bea9fd48ca82a7e70f48570f3db698bd864679b7e4b2976e"
+    },
+    {
+      "questionId": "u22-s003-cr002",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot-interpret",
+      "lockedSkillOrder": 3,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "某報告看到盒狀圖右鬚很長，就寫「右側四分之一的人數比左側四分之一多」。請判斷並改寫成合理句子。",
+      "requiredWork": [
+        "指出原句錯誤。",
+        "說明盒狀圖每個四分位區段代表位置比例。",
+        "提出不超過圖示的改寫。"
+      ],
+      "standardSolution": [
+        "原句錯，鬚線長度表示數值跨度，不表示人數較多。",
+        "合理改寫：高端約四分之一資料的數值跨度比低端約四分之一大，右側尾端較分散。"
+      ],
+      "reasoningSteps": [
+        "原句錯，鬚線長度表示數值跨度，不表示人數較多。",
+        "合理改寫：高端約四分之一資料的數值跨度比低端約四分之一大，右側尾端較分散。"
+      ],
+      "alternativeMethods": [
+        "也可寫「Q3到最大值的距離大於最小值到Q1」，但不能說明原因。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "清楚否定人數推論，正確解釋跨度並提供嚴謹改寫。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心判斷正確但改寫缺少「約四分之一」或「跨度」一項。"
+        },
+        {
+          "score": 1,
+          "criteria": "只說原句錯，能提到長度不是人數。"
+        },
+        {
+          "score": 0,
+          "criteria": "接受原句或改成另一個無證據的因果句。"
+        }
+      ],
+      "partialCreditRules": [
+        "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
+        "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
+      ],
+      "followThroughPolicy": "若學生只用公式比較右鬚與左鬚但未談人數含義，最高1分。",
+      "unitNotationRules": "無特殊單位；分數須可辨識且機率介於0與1。",
+      "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
+      "commonErrors": [
+        "說右側資料一定有離群值。",
+        "說右側人數一定更多。",
+        "說右側平均較大。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "recomputedResult": "原句錯，鬚線長度表示數值跨度，不表示人數較多。；合理改寫：高端約四分之一資料的數值跨度比低端約四分之一大，右側尾端較分散。",
+        "alternativeMethodCheck": "也可寫「Q3到最大值的距離大於最小值到Q1」，但不能說明原因。",
+        "ambiguityBoundaryCheck": "題目所需規則、母體、抽取方式、端點與單位均已明示；評分規準依本題步驟逐項核對。",
+        "rubricSpecificity": "pass",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "85c3529f88c4b513a54411474d64c82ca5c07a52a4ace42b34d1c073351ea0d4"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u22-s003-v001",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "186d0425fb0edb0e21ffdcd2835a73d6cab8317493af81f389b581ea8b82ef5c",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "盒狀圖的箱體從Q1到Q3，代表中間約50%的排序位置。",
+      "derivedAnswer": "12 到 20",
+      "storedAnswer": "12 到 20",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「12 到 20」；其餘選項逐項排除：「最小值到最大值」：那是全部資料的範圍。；「12以下」：約是較低四分之一。；「20以上」：約是較高四分之一。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「解讀箱體涵蓋比例」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "「約50%」是位置比例，遇重複值時實際筆數可不同。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把箱體看成全部資料。」不會形成第二正解。"
+      },
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：解讀箱體涵蓋比例",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「由盒狀圖讀得 Q1=12、Q3=20。中間約50%的資料落在哪個區間？」；獨立解法「盒狀圖的箱體從Q1到Q3，代表中間約50%的排序位置。」；四選項真值為假,假,真,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v002",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "2dd4fdd1866dd3948438ec364616820773efc652bacc5ed42935f30aea8aaeac",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "中位數把排序後資料分成前後兩部分，因此可說約一半不大於35、約一半不小於35。",
+      "derivedAnswer": "約一半資料不大於35，約一半不小於35",
+      "storedAnswer": "約一半資料不大於35，約一半不小於35",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「約一半資料不大於35，約一半不小於35」；其餘選項逐項排除：「所有資料平均為35」：中位數不等於平均數。；「恰有一半資料等於35」：中位數不表示資料集中在該值。；「最大值是70」：無法由中位數推得最大值。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「解讀中位數」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "重複值可能使「一半」不是嚴格筆數切割，故用約。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把中位數當平均數或眾數。」不會形成第二正解。"
+      },
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：解讀中位數",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某盒狀圖的中位數為35。下列何者可合理解讀？」；獨立解法「中位數把排序後資料分成前後兩部分，因此可說約一半不大於35、約一半不小於35。」；四選項真值為假,假,假,真。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v003",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "7d44ee94d467c3c0cb674d20a0994a9537a377259559a469b355ce67c932aee3",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "箱寬就是Q3-Q1=IQR；14>6，所以第二組中間50%的分散較大。",
+      "derivedAnswer": "第二組的 IQR 較大",
+      "storedAnswer": "第二組的 IQR 較大",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「第二組的 IQR 較大」；其餘選項逐項排除：「第二組平均數較大」：盒狀圖箱寬不提供平均數。；「第二組最大值較大」：最大值需看鬚線端點。；「第一組資料筆數較少」：盒狀圖通常不顯示筆數。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「由箱寬比較分散」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "只可推中段分散，不可推全部範圍。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「以箱寬推論平均數或樣本數。」不會形成第二正解。"
+      },
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：由箱寬比較分散",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「兩個盒狀圖的箱寬分別為6與14。若其他資訊未知，能確定什麼？」；獨立解法「箱寬就是Q3-Q1=IQR；14>6，所以第二組中間50%的分散較大。」；四選項真值為真,假,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v004",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "86345adf7de4a293fca1d9e4efd5002bd87c17e5d20397b734ef1c3538c3aa33",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "左鬚長4，右鬚長25-13=12，因此右側尾巴較長。",
+      "derivedAnswer": "右側",
+      "storedAnswer": "右側",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「右側」；其餘選項逐項排除：「左側」：左鬚長8-4=4，小於右鬚。；「兩側相同」：右鬚長12，不等於4。；「無法比較」：五數已足以比較鬚長。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「以鬚線判讀尾部」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "長鬚僅表示該四分之一位置跨度大，不代表每筆資料均勻。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「看箱體左右半而不是鬚線。」不會形成第二正解。"
+      },
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：以鬚線判讀尾部",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「盒狀圖五數為 4、8、10、13、25。哪一側的尾巴較長？」；獨立解法「左鬚長4，右鬚長25-13=12，因此右側尾巴較長。」；四選項真值為假,真,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v005",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "c9e0604defb6edb14af7cb3027326a9052eb85132077b70d2f70617890607f0d",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "中位數靠Q1表示箱體右半較寬，右鬚又長，顯示較大值一側的位置跨度較大。",
+      "derivedAnswer": "較大的數值一側分散較開",
+      "storedAnswer": "較大的數值一側分散較開",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「較大的數值一側分散較開」；其餘選項逐項排除：「較小的一半完全相同」：靠近不代表相同。；「資料一定左右對稱」：圖形明顯不對稱。；「所有數都集中在Q3」：盒狀圖不能支持此結論。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「判讀分布偏向」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "盒狀圖各四分位區段約含相同比例，但寬度不同。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把圖形不對稱直接說成資料筆數不相等。」不會形成第二正解。"
+      },
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：判讀分布偏向",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某盒狀圖中，中位數線非常靠近Q1，而Q3到最大值的鬚線又很長。最合理的描述是什麼？」；獨立解法「中位數靠Q1表示箱體右半較寬，右鬚又長，顯示較大值一側的位置跨度較大。」；四選項真值為假,假,真,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v006",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "370e7d8a6798b6242cd26440b1ffdf6380cbd5b5ef7510cb1df323a010dd5092",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "Q3=84表示約75%資料不高於84、約25%不低於84，不可能由此推得至少75%高於84。",
+      "derivedAnswer": "至少75%的人成績高於84",
+      "storedAnswer": "至少75%的人成績高於84",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「至少75%的人成績高於84」；其餘選項逐項排除：「約25%的人成績不高於60」：Q1可作此位置解讀。；「約50%的人成績不高於72」：中位數可作此位置解讀。；「最高成績為96」：最大值直接由圖得知。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「判斷盒狀圖比例敘述」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "使用約略比例，避免重複分數的邊界問題。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把Q3上下兩側比例顛倒。」不會形成第二正解。"
+      },
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：判斷盒狀圖比例敘述",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某班成績盒狀圖顯示最小值45、Q1=60、中位數72、Q3=84、最大值96。下列何者一定錯誤？」；獨立解法「Q3=84表示約75%資料不高於84、約25%不低於84，不可能由此推得至少75%高於84。」；四選項真值為假,假,假,真。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v007",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "623f53e0dd2a3a73d5dbfbf4d19bb261a43630a217f470fa9fa518477aa9fdf0",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "箱體僅涵蓋4到6，IQR=2；但全距20，長鬚反映端點很遠。只看箱體會忽略大全距。",
+      "derivedAnswer": "極端端點造成的大全距",
+      "storedAnswer": "極端端點造成的大全距",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「極端端點造成的大全距」；其餘選項逐項排除：「中位數位置」：箱內線可見中位數。；「IQR大小」：箱寬直接顯示IQR。；「Q1與Q3」：箱體端點就是Q1與Q3。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「區分中段與整體分散」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "盒狀圖未顯示每一筆資料，僅呈現位置摘要。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「只看箱體便以為所有資料都集中。」不會形成第二正解。"
+      },
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：區分中段與整體分散",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「盒狀圖A五數為 0、4、5、6、20。若只看箱體，最容易忽略哪項資訊？」；獨立解法「箱體僅涵蓋4到6，IQR=2；但全距20，長鬚反映端點很遠。只看箱體會忽略大全距。」；四選項真值為真,假,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v008",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "112b65e40d755ca20235d76453fd065b8432f87ee5267c6ddd5e6282fbf3a828",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "Q1、Q3相同使IQR相同；A的兩端更外側，使最大值減最小值較大。",
+      "derivedAnswer": "兩組IQR相同，但A的全距較大",
+      "storedAnswer": "兩組IQR相同，但A的全距較大",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「兩組IQR相同，但A的全距較大」；其餘選項逐項排除：「A的中位數較大」：題目已說Q2相同。；「A的IQR較大」：Q1與Q3相同故IQR相同。；「兩組全距相同」：A端點更遠故全距較大。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「同時判讀兩種分散量」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "「更遠」指相對共同中間位置向外延伸。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把鬚線變長誤當箱寬變大。」不會形成第二正解。"
+      },
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：同時判讀兩種分散量",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「兩組資料的盒狀圖有相同Q1、Q2、Q3，但A的最小值和最大值更遠。下列何者正確？」；獨立解法「Q1、Q3相同使IQR相同；A的兩端更外側，使最大值減最小值較大。」；四選項真值為假,真,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v009",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "77c48ddcf1dbf0c59587bdd66105972f0fda88dd9d8a750b6e7d52f28e08a842",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "位置量可以相同，常見原因是多筆資料在18；但Q3=24顯示並非全部都等於18。",
+      "derivedAnswer": "至少有一部分資料重複在18",
+      "storedAnswer": "至少有一部分資料重複在18",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「至少有一部分資料重複在18」；其餘選項逐項排除：「Q1不可能等於中位數」：資料有重複時可以相等。；「IQR一定為0」：IQR=24-18=6。；「所有資料都等於18」：Q3=24否定此說法。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「處理重複值的盒狀圖」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "五數摘要只需非遞減，不必嚴格遞增。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「誤以為五數必須嚴格遞增。」不會形成第二正解。"
+      },
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：處理重複值的盒狀圖",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某盒狀圖顯示 Q1=18、中位數=18、Q3=24。下列何者可能發生？」；獨立解法「位置量可以相同，常見原因是多筆資料在18；但Q3=24顯示並非全部都等於18。」；四選項真值為假,假,真,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v010",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "1436c85512d9bfe9f517351ecd03dd99681793e78bd4619a9437c04b57ee9998",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "中位數對極端值較穩健，IQR=26-12=14描述中間50%，適合呈現典型候診。",
+      "derivedAnswer": "中位數18與IQR14",
+      "storedAnswer": "中位數18與IQR14",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「中位數18與IQR14」；其餘選項逐項排除：「平均數與全距50」：題目未給平均數，且全距受55影響大。；「最小值5與最大值55」：只呈現極端端點。；「Q1=12與最大值55」：混合中段與極端，無法概括典型分布。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「選擇穩健統計摘要」。",
+        "unitConflict": "候診時間單位皆為分鐘。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "「典型」指中間分布，而非否認長候診存在。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「任何情況都優先報告最大值與全距。」不會形成第二正解。"
+      },
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：選擇穩健統計摘要",
+      "literacyContextNecessity": "候診時間有明顯長尾，選擇摘要方式會影響服務品質解讀。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某醫療站候診時間盒狀圖五數為 5、12、18、26、55 分鐘。站方想描述「多數典型候診」而降低極長候診的影響，較適合報告哪一組？」；獨立解法「中位數對極端值較穩健，IQR=26-12=14描述中間50%，適合呈現典型候診。」；四選項真值為假,假,假,真。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v011",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "cb9cfdacd7bb6bcc4dc8d609577daeb50ebd17692b2fca961181a3736e33dc64",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "中位數較高支持中心位置較高；箱寬較大支持IQR較大。其他逐人、平均或全距結論都超出圖示。",
+      "derivedAnswer": "甲的典型中心較高，但中間50%分散也較大",
+      "storedAnswer": "甲的典型中心較高，但中間50%分散也較大",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「甲的典型中心較高，但中間50%分散也較大」；其餘選項逐項排除：「甲每位學生都比乙高」：盒狀圖可能重疊，不能逐人比較。；「甲平均數一定較高」：中位數高不保證平均數高。；「乙的全距一定較大」：箱寬不能決定全距。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「用兩個特徵作有限結論」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "未提供實際五數與重疊程度，不能作更強推論。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「由群體分布摘要推斷每一個個體。」不會形成第二正解。"
+      },
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：用兩個特徵作有限結論",
+      "literacyContextNecessity": "班級比較需要同時呈現中心與分散，避免只看單一指標。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「甲乙兩班測驗盒狀圖中，甲的中位數較高，但甲的箱體也較寬。最精確的結論是什麼？」；獨立解法「中位數較高支持中心位置較高；箱寬較大支持IQR較大。其他逐人、平均或全距結論都超出圖示。」；四選項真值為真,假,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s003-v012",
+      "unitId": "u22",
+      "skillId": "box-plot-interpret",
+      "contentSha256": "68e169c1357a3536c9dd611326575bb9e99f91be9386a235cd2142ef1b49d829",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "兩者中心都接近規格中心時，IQR較小的A其中間50%更集中，穩定度較佳。",
+      "derivedAnswer": "A較穩定",
+      "storedAnswer": "A較穩定",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「A較穩定」；其餘選項逐項排除：「B較穩定」：B的IQR較大，代表中段波動較大。；「兩者同樣穩定」：中位數相近不代表分散相同。；「無法比較」：IQR已提供穩定度所需的中段分散資訊。",
+        "undefinedSymbol": "題幹術語均已在「盒狀圖判讀」講義定義；實際目標為「以盒狀圖判斷製程穩定」。",
+        "unitConflict": "兩產線以相同長度單位與刻度比較。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "此結論限定「只考慮穩定度」，不含良率與離群值。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「只看中心是否正確，忽略製程波動。」不會形成第二正解。"
+      },
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：以盒狀圖判斷製程穩定",
+      "literacyContextNecessity": "製程品質需區分準確度與穩定度，箱寬直接影響判斷。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：box-plot。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某工廠兩條產線的成品長度盒狀圖顯示：A的中位數接近規格中心且IQR小；B的中位數也接近中心但IQR大。若只考慮穩定度，應如何判斷？」；獨立解法「兩者中心都接近規格中心時，IQR較小的A其中間50%更集中，穩定度較佳。」；四選項真值為假,真,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    }
+  ],
+  "drawingSpecs": []
+};

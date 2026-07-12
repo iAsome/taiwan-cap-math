@@ -1,0 +1,227 @@
+{
+  "lectureId": "u09-s004-lecture-r1",
+  "unitId": "u09",
+  "numericUnitId": 9,
+  "topicId": "u09-display",
+  "skillId": "line-chart-text",
+  "lockedTitle": "折線圖與次數分配折線圖",
+  "title": "折線圖與次數分配折線圖：讀出時序與組中點",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "reviewStatus": "independently-reviewed",
+  "prerequisiteBridge": {
+    "skillIds": [
+      "bar-chart-text"
+    ],
+    "explanation": "需能讀取座標刻度、類別數值與柱圖比較。"
+  },
+  "learningGoals": [
+    "由資料點讀取指定時點值。",
+    "計算相鄰變化與平均變化率。",
+    "比較兩條折線的水準與波動。",
+    "理解次數分配折線圖的橫軸組中點。",
+    "審核門檻、恢復與改善幅度等敘述。"
+  ],
+  "vocabulary": [
+    {
+      "term": "資料點",
+      "meaning": "一個橫軸位置與縱軸數值組成的點。"
+    },
+    {
+      "term": "相鄰變化",
+      "meaning": "後一點減前一點。"
+    },
+    {
+      "term": "平均變化率",
+      "meaning": "縱向改變除以橫向經過量。"
+    },
+    {
+      "term": "組中點",
+      "meaning": "組下限與上限的平均，作為次數分配折線圖橫座標。"
+    },
+    {
+      "term": "水平線段",
+      "meaning": "相鄰兩點數值相同。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(x,y)",
+      "meaning": "x 為時間或組中點，y 為測量值或次數。"
+    },
+    {
+      "symbol": "後值－前值",
+      "meaning": "帶正負方向的變化量。"
+    }
+  ],
+  "conceptDevelopment": [
+    "折線圖通常用於具有順序的時間或數值區間。",
+    "連線幫助看趨勢，但已測資料仍是各資料點；未測時刻不能自動當成真實測值。",
+    "增加最多要逐段計算後值減前值，而不是只找最高點。",
+    "平均變化率還要除以橫軸間隔。",
+    "次數分配折線圖的縱座標才是次數，橫座標是組中點。"
+  ],
+  "definitions": [
+    {
+      "name": "折線圖",
+      "statement": "依橫軸順序連接資料點，呈現變化的統計圖。"
+    },
+    {
+      "name": "次數分配折線圖",
+      "statement": "以各組組中點為橫座標、次數為縱座標後連線的圖。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "相鄰變化量＝後值－前值",
+      "conditions": [
+        "兩點同單位"
+      ]
+    },
+    {
+      "formula": "平均每單位變化＝縱差÷橫差",
+      "conditions": [
+        "橫差不為 0"
+      ]
+    },
+    {
+      "formula": "總次數＝各資料點縱座標相加",
+      "conditions": [
+        "縱軸為次數"
+      ]
+    }
+  ],
+  "invalidUseCases": [
+    "把折線中間任意位置當成實際觀測。",
+    "只看最高點判斷哪一段增加最多。",
+    "把組中點相加當總次數。",
+    "用終值較高判斷改善幅度一定較大。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "action": "讀橫軸順序與縱軸單位。"
+    },
+    {
+      "step": 2,
+      "action": "只在資料點讀值。"
+    },
+    {
+      "step": 3,
+      "action": "比較變化時逐段做後減前。"
+    },
+    {
+      "step": 4,
+      "action": "若問每小時或每單位，除以橫軸間隔。"
+    },
+    {
+      "step": 5,
+      "action": "次數分配折線圖只加縱座標求總數。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "L1",
+      "prompt": "數值 80、92、88、104，哪段增加最多？",
+      "solution": [
+        "變化 +12、-4、+16。"
+      ],
+      "answer": "第 3 到第 4 段。"
+    },
+    {
+      "id": "L2",
+      "prompt": "點 (2,18)、(5,30) 的平均每小時增加。",
+      "solution": [
+        "縱差 12，橫差 3。",
+        "12÷3=4。"
+      ],
+      "answer": "每小時 4。"
+    },
+    {
+      "id": "L3",
+      "prompt": "次數點 (5,2)、(15,6)、(25,4)。",
+      "solution": [
+        "只加縱座標 2+6+4。"
+      ],
+      "answer": "總次數 12。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "最高點 104 所以前一段一定增最多。",
+      "why": "未比較每段起點。",
+      "fix": "逐段算差。"
+    },
+    {
+      "wrong": "30-18=12 就答每小時 12。",
+      "why": "忽略經過 3 小時。",
+      "fix": "再除橫差。"
+    },
+    {
+      "wrong": "組中點 15 當次數。",
+      "why": "混淆兩軸。",
+      "fix": "次數讀縱軸。"
+    },
+    {
+      "wrong": "最近一期回升就說已恢復起始水準。",
+      "why": "未與起點比較。",
+      "fix": "直接比起始與終值。"
+    }
+  ],
+  "selfCheck": [
+    "我讀的是資料點嗎？",
+    "問的是總變化還是每單位變化？",
+    "兩條線比較的是終值還是改善幅度？",
+    "次數圖的縱座標是否被正確加總？"
+  ],
+  "summary": [
+    "折線圖強調順序與變化。",
+    "增加最多需逐段算差。",
+    "平均變化率還要除橫差。",
+    "次數分配折線圖以組中點作橫座標。"
+  ],
+  "connections": {
+    "previous": "長條圖建立座標尺度與比較基礎。",
+    "next": [
+      "圓形圖把各類比例轉為整圓的百分比或角度。",
+      "累積次數圖表也會利用順序，但數值代表截至某點的總和。"
+    ]
+  },
+  "figureReferences": [
+    "u09-fig-line-01",
+    "u09-fig-line-02"
+  ],
+  "accessibilityNotes": "圖形數值同時寫入替代文字，連線不承載未在文字出現的關鍵資訊。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u09-s004-v001",
+      "u09-s004-v002",
+      "u09-s004-v003",
+      "u09-s004-v004",
+      "u09-s004-v005",
+      "u09-s004-v006",
+      "u09-s004-v007",
+      "u09-s004-v008",
+      "u09-s004-v009",
+      "u09-s004-v010",
+      "u09-s004-v011",
+      "u09-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u09-s004-cr001",
+      "u09-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "區分單點、相鄰差、平均變化率、雙線比較與組中點。",
+    "scopeCheck": "符合國中會考範圍；未引入四分位數與盒狀圖。",
+    "prerequisiteAudit": "需能讀取座標刻度、類別數值與柱圖比較。",
+    "symbolAndUnitAudit": "所有符號在使用前定義；單位與取位規則在例題中明示。",
+    "skillSpecificEvidence": "百分點、門檻與改善幅度均有精確語言限制。",
+    "legacyContentUsed": false,
+    "decision": "pass"
+  },
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "contentSha256": "4416f59680515e9c45766b5a30d8071f4e448a292fac5909dadc9d05ecf905a3"
+}

@@ -1,0 +1,288 @@
+{
+  "lectureId": "u16-s001-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-congruence",
+  "skillId": "triangle-congruence",
+  "skillOrder": 1,
+  "originalLockedTitle": "全等判定",
+  "title": "全等判定：先看對應再判斷能否唯一決定三角形",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能說明兩個三角形全等代表形狀與大小完全相同。",
+    "能依頂點順序正確寫出全等符號並找出對應邊與對應角。",
+    "能辨認 SSS、SAS、ASA、AAS 與直角三角形的 RHS 判定條件。",
+    "能指出 AAA 與一般 SSA 只能保證相似或可能有兩種圖形，不能作為全等判定。"
+  ],
+  "prerequisiteBridge": "本技能從已學過的線段長度、角度、三角形內角和與基本作圖概念出發；先不要求完整證明，而是建立『哪些資料足以唯一決定一個三角形』的判斷框架。",
+  "prerequisites": [
+    {
+      "skillId": "u16-entry-foundation",
+      "requiredLevel": "本技能從已學過的線段長度、角度、三角形內角和與基本作圖概念出發；先不要求完整證明，而是建立『哪些資料足以唯一決定一個三角形』的判斷框架。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "全等",
+      "definition": "兩個圖形經平移、旋轉或翻轉後可以完全重合。"
+    },
+    {
+      "term": "對應頂點",
+      "definition": "重合時彼此落在同一位置的兩個頂點。"
+    },
+    {
+      "term": "對應邊",
+      "definition": "連接對應頂點的邊，長度相等。"
+    },
+    {
+      "term": "對應角",
+      "definition": "位於對應頂點的角，角度相等。"
+    },
+    {
+      "term": "判定條件",
+      "definition": "只需檢查部分邊角資料，就能保證兩三角形全等的充分條件。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "△ABC≅△DEF",
+      "meaning": "A 對應 D、B 對應 E、C 對應 F，兩三角形全等。"
+    },
+    {
+      "symbol": "AB=DE",
+      "meaning": "對應邊 AB 與 DE 等長。"
+    },
+    {
+      "symbol": "∠A=∠D",
+      "meaning": "對應角 A 與 D 等大。"
+    }
+  ],
+  "conceptNarrative": [
+    "全等不是『看起來差不多』，而是所有對應邊相等且所有對應角相等，能完全重合。",
+    "寫全等式時的頂點順序很重要。若 A 對應 D，B 對應 F，C 對應 E，就應寫成 △ABC≅△DFE，而不是任意排列。",
+    "實際判定不必量完六個量。某些三組資料已能唯一決定三角形，例如三邊、兩邊及其夾角、兩角及其中一邊。",
+    "AAA 只固定形狀，大小仍可放大或縮小；一般 SSA 可能畫出兩個不同三角形，因此不能直接判定全等。",
+    "直角三角形若斜邊與一股分別相等，可用 RHS，因為直角已固定且資料足以唯一決定。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "全等三角形",
+      "statement": "若兩三角形可經剛體運動完全重合，則稱兩三角形全等。"
+    },
+    {
+      "name": "SSS",
+      "statement": "三組對應邊分別相等，則兩三角形全等。"
+    },
+    {
+      "name": "SAS",
+      "statement": "兩組對應邊及其夾角分別相等，則兩三角形全等。"
+    },
+    {
+      "name": "ASA",
+      "statement": "兩組對應角及其夾邊分別相等，則兩三角形全等。"
+    },
+    {
+      "name": "AAS",
+      "statement": "兩組對應角及一組非夾邊分別相等，則兩三角形全等。"
+    },
+    {
+      "name": "RHS",
+      "statement": "兩直角三角形的斜邊與一組對應股分別相等，則兩三角形全等。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "△ABC≅△DEF ⇒ AB=DE、BC=EF、CA=FD",
+      "conditions": [
+        "全等式頂點順序已正確對應"
+      ],
+      "meaning": "全等後可得到對應邊相等。"
+    },
+    {
+      "formula": "△ABC≅△DEF ⇒ ∠A=∠D、∠B=∠E、∠C=∠F",
+      "conditions": [
+        "全等式頂點順序已正確對應"
+      ],
+      "meaning": "全等後可得到對應角相等。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只知道三角形三角相等（AAA）時不能判定全等。",
+    "一般三角形只知道兩邊與一個非夾角（SSA）時不能直接判定全等。",
+    "只知道兩邊相等但沒有角資料，通常仍可改變夾角。",
+    "圖形未按比例繪製時，不能用目測邊長或角度判斷。",
+    "全等式若頂點順序錯誤，後續對應關係也會全部錯置。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出已知的相等邊與相等角。",
+      "check": "每一筆資料是否確實是兩三角形之間的對應量？"
+    },
+    {
+      "step": 2,
+      "instruction": "先配對頂點。",
+      "check": "由相等角、共用邊或端點關係確認誰對應誰。"
+    },
+    {
+      "step": 3,
+      "instruction": "辨認資料型態。",
+      "check": "是 SSS、SAS、ASA、AAS、RHS，還是無效的 AAA、SSA？"
+    },
+    {
+      "step": 4,
+      "instruction": "確認 SAS 的角是夾角，ASA 的邊是夾邊。",
+      "check": "角或邊的位置是否位於兩個已知量之間？"
+    },
+    {
+      "step": 5,
+      "instruction": "按對應順序寫全等式。",
+      "check": "全等式三個位置是否一一對應？"
+    },
+    {
+      "step": 6,
+      "instruction": "再利用全等推出未知量。",
+      "check": "所求量是否為對應邊或對應角？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "已知 AB=DE、BC=EF、CA=FD，判斷 △ABC 與 △DEF。",
+      "solutionSteps": [
+        "三組對應邊分別相等。",
+        "符合 SSS 判定。"
+      ],
+      "answer": "△ABC≅△DEF（SSS）。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "已知 AB=DE、AC=DF、∠A=∠D，判斷所用條件。",
+      "solutionSteps": [
+        "∠A 位在 AB 與 AC 之間，∠D 位在 DE 與 DF 之間。",
+        "兩邊及夾角相等。"
+      ],
+      "answer": "可用 SAS 判定全等。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩三角形的三個角都分別為 40°、60°、80°，能否判定全等？",
+      "solutionSteps": [
+        "三角相等只固定形狀。",
+        "邊長可以成同比例放大或縮小。"
+      ],
+      "answer": "不能；AAA 只能保證相似。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "若 △PQR≅△XYZ，且 P 對應 X、Q 對應 Y，則 QR 對應哪一邊？",
+      "solutionSteps": [
+        "剩餘頂點 R 對應 Z。",
+        "QR 連接 Q、R，因此對應 YZ。"
+      ],
+      "answer": "YZ。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "兩個直角三角形的斜邊皆為 10，且一股皆為 6，能否判定全等？",
+      "solutionSteps": [
+        "兩圖均為直角三角形。",
+        "斜邊與一股分別相等。"
+      ],
+      "answer": "能，用 RHS。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到三個角相等就選全等。",
+      "why": "把相似與全等混為一談。",
+      "correction": "AAA 沒有固定大小，仍需至少一組邊長資料。"
+    },
+    {
+      "mistake": "SAS 中使用非夾角。",
+      "why": "只數到兩邊一角，未檢查位置。",
+      "correction": "夾角必須同時接觸兩條已知邊。"
+    },
+    {
+      "mistake": "把 SSA 當成 SAS。",
+      "why": "忽略角是否在兩已知邊之間。",
+      "correction": "畫草圖檢查角的兩邊是否正是已知邊。"
+    },
+    {
+      "mistake": "全等式頂點任意排列。",
+      "why": "只在意三角形名稱，沒有建立對應。",
+      "correction": "依對應頂點逐位置寫出。"
+    },
+    {
+      "mistake": "由圖看起來一樣便判定全等。",
+      "why": "把示意圖當作量測證據。",
+      "correction": "只使用題目標記或可證明的邊角關係。"
+    },
+    {
+      "mistake": "已知全等後仍重新計算對應量。",
+      "why": "未使用全等的直接結果。",
+      "correction": "先由全等式讀出對應邊與對應角即可。"
+    }
+  ],
+  "selfCheck": [
+    "我能否用一句話說明全等與相似的差別？",
+    "我是否先配對頂點再寫全等式？",
+    "我有檢查 SAS 的角是否為夾角嗎？",
+    "我能說明 AAA 和一般 SSA 為何不足嗎？",
+    "我是否只使用題目給定或已證明的資料？"
+  ],
+  "summary": [
+    "全等表示形狀與大小完全相同，對應邊和對應角皆相等。",
+    "有效判定包含 SSS、SAS、ASA、AAS 與直角三角形 RHS。",
+    "AAA 與一般 SSA 不是全等判定。",
+    "全等式的頂點順序決定全部對應關係。"
+  ],
+  "connections": {
+    "previous": "承接角度、線段與三角形基本元素。",
+    "next": [
+      "下一技能會把判定條件寫成完整全等證明。",
+      "後續等腰與等邊性質可用全等證明。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-001-congruence-correspondence"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-001-congruence-correspondence 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s001-v001",
+      "u16-s001-v002",
+      "u16-s001-v003",
+      "u16-s001-v004",
+      "u16-s001-v005",
+      "u16-s001-v006",
+      "u16-s001-v007",
+      "u16-s001-v008",
+      "u16-s001-v009",
+      "u16-s001-v010",
+      "u16-s001-v011",
+      "u16-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s001-cr001",
+      "u16-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「全等判定」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "c43ad30956ccb508cf51fd73ead6e6b98d54c09159a0b76e84c90f77f0a20b4d"
+}

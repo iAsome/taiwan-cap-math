@@ -1,0 +1,225 @@
+{
+  "lectureId": "u09-s006-lecture-r1",
+  "unitId": "u09",
+  "numericUnitId": 9,
+  "topicId": "u09-display",
+  "skillId": "histogram-read",
+  "lockedTitle": "直方圖文字判讀",
+  "title": "直方圖文字判讀：相連柱子表示連續區間",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "reviewStatus": "independently-reviewed",
+  "prerequisiteBridge": {
+    "skillIds": [
+      "pie-chart-percent"
+    ],
+    "explanation": "需理解圓形圖比例、長條圖刻度，並能讀次數分配表。"
+  },
+  "learningGoals": [
+    "區分直方圖與長條圖。",
+    "讀懂組界、組距與柱高次數。",
+    "處理端點歸屬。",
+    "由多柱求總數、門檻內人數與缺柱。",
+    "限制由最高柱推論平均或個別值。"
+  ],
+  "vocabulary": [
+    {
+      "term": "直方圖",
+      "meaning": "以相連長方形呈現連續數值區間次數的圖。"
+    },
+    {
+      "term": "組界",
+      "meaning": "相鄰分組的邊界值。"
+    },
+    {
+      "term": "組距",
+      "meaning": "組上限與組下限的差。"
+    },
+    {
+      "term": "左含右不含",
+      "meaning": "區間 [a,b) 包含 a 但不包含 b。"
+    },
+    {
+      "term": "眾數組",
+      "meaning": "次數最高的組。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "[a,b)",
+      "meaning": "a≤x<b。"
+    },
+    {
+      "symbol": "f",
+      "meaning": "該區間內的次數。"
+    }
+  ],
+  "conceptDevelopment": [
+    "直方圖橫軸是連續數值區間，因此柱子通常相連。",
+    "在本單元會考範圍內採相同組距且縱軸為次數，柱高可直接比較次數。",
+    "邊界值要依括號規則歸組，不能重複或漏掉。",
+    "門檻若恰為組界，可精確累加整組；若落在組內，僅靠直方圖通常不能知道組內細分。",
+    "最高柱只說哪個區間最常見，不能單獨決定平均。"
+  ],
+  "definitions": [
+    {
+      "name": "組次數",
+      "statement": "落在指定區間內的資料筆數。"
+    },
+    {
+      "name": "完整分組",
+      "statement": "各組互不重疊且合起來涵蓋全部資料。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "總次數＝各柱高度相加",
+      "conditions": [
+        "縱軸為次數且各組互斥"
+      ]
+    },
+    {
+      "formula": "缺柱高度＝總數－其他柱高合計",
+      "conditions": [
+        "只有一組缺值"
+      ]
+    },
+    {
+      "formula": "區間累積次數＝相關完整組柱高相加",
+      "conditions": [
+        "門檻與組界對齊"
+      ]
+    }
+  ],
+  "invalidUseCases": [
+    "把組上限 20 當作該柱次數。",
+    "資料值 20 同時計入 [10,20) 與 [20,30)。",
+    "門檻落在組內卻聲稱精確人數。",
+    "由最高柱斷言平均一定在該組。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "action": "讀橫軸組界與縱軸意義。"
+    },
+    {
+      "step": 2,
+      "action": "確認端點包含規則。"
+    },
+    {
+      "step": 3,
+      "action": "讀柱高作為各組次數。"
+    },
+    {
+      "step": 4,
+      "action": "按門檻選完整組累加或相減。"
+    },
+    {
+      "step": 5,
+      "action": "判斷結論是否超出分組資料能支持的範圍。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "L1",
+      "prompt": "[10,20) 柱高 7。",
+      "solution": [
+        "表示 10≤x<20 有 7 筆。"
+      ],
+      "answer": "7 筆。"
+    },
+    {
+      "id": "L2",
+      "prompt": "資料值由 9.8 更正為 10.2，組界是 10。",
+      "solution": [
+        "原在 [5,10)，新在 [10,15)。"
+      ],
+      "answer": "前組減 1、後組加 1。"
+    },
+    {
+      "id": "L3",
+      "prompt": "20 分鐘內的候診人數。",
+      "solution": [
+        "若門檻是組界，累加 0–10 與 10–20 兩柱。"
+      ],
+      "answer": "由前兩柱合計。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "柱子相連只是美觀。",
+      "why": "未理解連續區間。",
+      "fix": "把每柱寫成不等式。"
+    },
+    {
+      "wrong": "20 算進前後兩組。",
+      "why": "忽略端點規則。",
+      "fix": "採左含右不含。"
+    },
+    {
+      "wrong": "最高柱就是平均。",
+      "why": "混淆眾數組與平均。",
+      "fix": "平均需全部資料。"
+    },
+    {
+      "wrong": "只加門檻所在柱。",
+      "why": "忽略更低區間也符合。",
+      "fix": "累加所有門檻內完整組。"
+    }
+  ],
+  "selfCheck": [
+    "每一柱代表哪個不等式？",
+    "端點歸哪一組？",
+    "縱軸是次數嗎？",
+    "我的結論需要組內細節嗎？"
+  ],
+  "summary": [
+    "直方圖呈現連續區間，柱子相連。",
+    "組界資料只歸一組。",
+    "總數是柱高合計。",
+    "分組圖不能支持不存在的組內精確資訊。"
+  ],
+  "connections": {
+    "previous": "長條圖刻度與次數表提供讀圖基礎。",
+    "next": [
+      "累積次數把直方圖各組從左到右逐步加總。",
+      "中位數可由排序位置理解，但本單元不以四分位數解讀圖。"
+    ]
+  },
+  "figureReferences": [
+    "u09-fig-hist-01"
+  ],
+  "accessibilityNotes": "圖的組界、柱高與端點規則完整列於 alt text。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u09-s006-v001",
+      "u09-s006-v002",
+      "u09-s006-v003",
+      "u09-s006-v004",
+      "u09-s006-v005",
+      "u09-s006-v006",
+      "u09-s006-v007",
+      "u09-s006-v008",
+      "u09-s006-v009",
+      "u09-s006-v010",
+      "u09-s006-v011",
+      "u09-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u09-s006-cr001",
+      "u09-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "明確限制相同組距、縱軸為次數的會考範圍，避免引入密度圖。",
+    "scopeCheck": "符合國中會考範圍；未引入四分位數與盒狀圖。",
+    "prerequisiteAudit": "需理解圓形圖比例、長條圖刻度，並能讀次數分配表。",
+    "symbolAndUnitAudit": "所有符號在使用前定義；單位與取位規則在例題中明示。",
+    "skillSpecificEvidence": "邊界、門檻、資料更正與過度推論均有具體例子。",
+    "legacyContentUsed": false,
+    "decision": "pass"
+  },
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "contentSha256": "3897066e45b5f5ecd801b209d97b50f6001851a7d0e2c0bc5ce46dd9327d3f3a"
+}

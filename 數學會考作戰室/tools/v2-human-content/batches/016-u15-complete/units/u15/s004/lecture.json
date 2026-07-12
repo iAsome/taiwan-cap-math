@@ -1,0 +1,146 @@
+{
+  "lectureId": "u15-s004-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-basics",
+  "skillId": "function-notation",
+  "skillSlot": "s004",
+  "skillTitle": "函數記號 f(x)",
+  "order": 4,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": "function-input-output",
+      "title": "自變數與應變數",
+      "requiredLevel": "能在情境中分辨輸入量與輸出量，且知道同一輸入在函數中只有一個輸出。",
+      "bridge": "把「某規則在某輸入下的輸出」濃縮寫成 f(x)，可更精確地代入數值、代數式及比較不同函數。"
+    }
+  ],
+  "learningGoals": [
+    "正確解讀 f(x) 的語意",
+    "處理 f(a+1) 等整體代入",
+    "從變形的輸入記號求指定函數值"
+  ],
+  "vocabulary": [
+    {
+      "term": "函數名稱",
+      "meaning": "如 f、g、h，用來區分不同規則"
+    },
+    {
+      "term": "f(x)",
+      "meaning": "函數 f 在輸入 x 時的輸出"
+    },
+    {
+      "term": "引數",
+      "meaning": "括號內送入函數的輸入"
+    }
+  ],
+  "conceptDevelopment": [
+    "f(x) 是一整個輸出記號，不是 f 乘 x。字母 f 代表規則，括號內的值代表送入規則的輸入。",
+    "若 f(x)=2x+3，則 f(a+1)=2(a+1)+3。括號內 a+1 必須整體取代每個 x。"
+  ],
+  "definitionsAndMeaning": "f(x) 是一整個輸出記號，不是 f 乘 x。字母 f 代表規則，括號內的值代表送入規則的輸入。",
+  "formulasAndConditions": [
+    "f(a)：把規則中的 x 全換成 a。",
+    "若已知 f(x+1)，要找 f(4)，先令 x+1=4。"
+  ],
+  "invalidUseCases": [
+    "把 f(x) 拆成 f×x。",
+    "只把 x 換成 a，卻漏掉括號。",
+    "看到 f(2x) 就把函數值再乘 2。"
+  ],
+  "stepByStepMethod": [
+    "辨認函數名稱與括號內輸入。",
+    "若有明確公式，整體代入。",
+    "若只給 f(x+常數) 的關係，先令括號內等於所求輸入。",
+    "最後檢查函數名稱是否一致。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s004-ex01",
+      "title": "直接代入",
+      "prompt": "已知 f(x)=4x-1，求 f(3)，並解釋 f(3) 中的 3 代表什麼。",
+      "solution": "f(x)=4x-1，f(3)=11。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s004-ex02",
+      "title": "整體代入",
+      "prompt": "已知 g(x)=3x-2，求 g(a+1)，並將結果化簡。",
+      "solution": "把 a+1 整體取代 x：g(a+1)=3(a+1)-2=3a+1。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s004-ex03",
+      "title": "反向對齊輸入",
+      "prompt": "已知 f(x+1)=2x+5，求 f(4)。應先令括號內的輸入等於多少？",
+      "solution": "若 f(x+1)=2x+5，求 f(4)：x=3，所以 f(4)=11。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s004-ex04",
+      "title": "不同函數",
+      "prompt": "若 f(x)=2x+1、g(x)=5-x，分別求 f(2) 與 g(2)，並說明為何相同輸入未必得到相同輸出。",
+      "solution": "f(2) 與 g(2) 可能不同，因為規則名稱不同。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s004-m01",
+      "wrongReasoning": "把 f(3) 寫成 3f。",
+      "correction": "f 是函數名稱，f(3) 是輸入 3 的輸出記號，不能改寫為 3f。"
+    },
+    {
+      "mistakeId": "s004-m02",
+      "wrongReasoning": "把 f(a+1) 錯算成 f(a)+1。",
+      "correction": "先依 f 的規則計算完整輸入 a+1；除非規則特殊，不能把函數記號拆成 f(a)+1。"
+    },
+    {
+      "mistakeId": "s004-m03",
+      "wrongReasoning": "代入 a+1 時只把 x 換成 a，再把 +1 放在式子外。",
+      "correction": "括號內 a+1 是完整輸入，原式中的每個 x 都必須整體換成 (a+1)。"
+    },
+    {
+      "mistakeId": "s004-m04",
+      "wrongReasoning": "用 f 的規則計算 g。",
+      "correction": "f 與 g 代表不同規則；必須使用題目指定的函數名稱對應公式。"
+    },
+    {
+      "mistakeId": "s004-m05",
+      "wrongReasoning": "對齊輸入時令 x=所求值而非括號內等於所求值。",
+      "correction": "要找 f(指定值)，應令已知記號的整個括號內容等於指定值，再解出中間變數。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "f(x)=2x+5，f(0)=？",
+      "answer": "5"
+    },
+    {
+      "prompt": "g(x)=3x-2，g(a-1)=？",
+      "answer": "3(a-1)-2=3a-5"
+    },
+    {
+      "prompt": "f(x+2)=3x，f(5)=？",
+      "answer": "令 x=3，得 9。"
+    }
+  ],
+  "summary": "f(x) 是「把 x 送入規則 f 後的輸出」，括號內輸入要整體處理。",
+  "previousSkillConnection": "function-input-output",
+  "nextSkillConnection": "function-domain-range-basic",
+  "figureRefs": [],
+  "accessibilityNotes": [],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「函數記號 f(x)」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能以自己的話說明「自變數與應變數」並完成基本判斷或計算。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "ccd89b2d78b0f9d8568f638e985b9bc3f2a274d3433d0d36b9d66758d0ee6b5a"
+}

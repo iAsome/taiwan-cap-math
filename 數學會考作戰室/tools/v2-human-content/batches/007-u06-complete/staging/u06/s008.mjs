@@ -1,0 +1,1819 @@
+// Deterministically serialized reviewed U06 content. Do not edit.
+export default {
+  "lecture": {
+    "lectureId": "u06-s008-lecture-r1",
+    "unitId": "u06",
+    "numericUnitId": 6,
+    "topicId": "u06-applications",
+    "skillId": "scale-drawing",
+    "lockedSkillTitle": "比例尺",
+    "title": "比例尺：圖上距離與實際距離的同單位比",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "skillIdentity": {
+      "unitTitle": "比例式",
+      "topicTitle": "比例應用",
+      "skillOrder": 8,
+      "lockedPrerequisiteSkillIds": [
+        "inverse-variation-graph"
+      ],
+      "capBoundary": "處理數字比例尺、圖上與實際長度、簡單面積倍率；不延伸到地理投影誤差。"
+    },
+    "prerequisiteBridge": "比例尺是圖上長度:實際長度的固定比，因此本質上是正比。關鍵不是公式多，而是先統一單位與辨認方向。",
+    "learningOutcomes": [
+      "能解讀 1:n 的數字比例尺。",
+      "能在公分、公尺、公里間正確換算。",
+      "能由圖上距離求實際距離，或反求圖上距離。",
+      "能理解長度放大 n 倍時面積放大 n² 倍。"
+    ],
+    "glossary": [
+      {
+        "term": "比例尺",
+        "definition": "圖上距離與實際距離的比，兩者必須使用相同單位。"
+      },
+      {
+        "term": "圖上距離",
+        "definition": "地圖、設計圖或模型上量得的長度。"
+      },
+      {
+        "term": "實際距離",
+        "definition": "真實物體或地面上的對應長度。"
+      },
+      {
+        "term": "縮尺",
+        "definition": "把實際物縮小畫在圖上，例如 1:50000。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "1:n",
+        "meaning": "圖上 1 個長度單位代表實際 n 個相同長度單位。"
+      },
+      {
+        "symbol": "圖上距離/實際距離=1/n",
+        "meaning": "兩者須先換成同單位。"
+      },
+      {
+        "symbol": "1 km=100000 cm",
+        "meaning": "地圖常用的公分與公里換算。"
+      }
+    ],
+    "conceptNarrative": [
+      "比例尺 1:50000 表示圖上 1 公分代表實際 50000 公分，也就是 500 公尺。",
+      "求實際距離通常用圖上距離×縮小倍數；反求圖上距離則用實際距離÷縮小倍數。",
+      "單位換算可在列比例式前或後進行，但比例中的兩項必須同單位。",
+      "若圖的每一條長度都縮為 1/n，面積會縮為 1/n²，不能只乘一次 n。",
+      "印刷或螢幕縮放可能改變實際量得長度，所以題目若註明『不按比例』，不可拿尺量。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "數字比例尺",
+        "statement": "以 1:n 表示圖上長度是實際長度的 1/n。"
+      },
+      {
+        "name": "面積比例",
+        "statement": "相似圖形的長度比為 1:n 時，面積比為 1:n²。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "實際距離=圖上距離×n",
+        "conditions": [
+          "比例尺為1:n",
+          "單位一致"
+        ],
+        "meaning": "由圖求實際。"
+      },
+      {
+        "formula": "圖上距離=實際距離÷n",
+        "conditions": [
+          "比例尺為1:n",
+          "單位一致"
+        ],
+        "meaning": "由實際求圖。"
+      },
+      {
+        "formula": "面積比=(長度比)²",
+        "conditions": [
+          "對應圖形相似"
+        ],
+        "meaning": "面積倍率。"
+      }
+    ],
+    "nonApplicableCases": [
+      "把 1:50000 讀成圖上 1 公分代表 50000 公里。",
+      "未將公里換成公分便直接列 3:6。",
+      "比例尺方向寫成實際:圖上。",
+      "面積題仍只乘長度倍率一次。",
+      "用尺量標示『示意圖不按比例』的線段。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "寫清楚比例尺方向：圖上:實際。",
+        "check": "是否把順序顛倒？"
+      },
+      {
+        "step": 2,
+        "instruction": "把兩個距離換成同單位。",
+        "check": "公里到公分是否乘 100000？"
+      },
+      {
+        "step": 3,
+        "instruction": "列比例式或用倍率。",
+        "check": "求的是圖上還是實際？"
+      },
+      {
+        "step": 4,
+        "instruction": "完成計算並換成題目要求單位。",
+        "check": "數量級合理嗎？"
+      },
+      {
+        "step": 5,
+        "instruction": "若涉及面積，平方長度倍率。",
+        "check": "是否誤用線性倍率？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "比例尺 1:25000，圖上 6 公分，實際多遠？",
+        "solutionSteps": [
+          "實際為 6×25000=150000 公分。",
+          "150000 公分=1.5 公里。"
+        ],
+        "answer": "1.5 公里。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "比例尺 1:80000，實際 4 公里，圖上幾公分？",
+        "solutionSteps": [
+          "4 公里=400000 公分。",
+          "400000÷80000=5。"
+        ],
+        "answer": "5 公分。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "模型長 18 公分，實物長 4.5 公尺，求比例尺。",
+        "solutionSteps": [
+          "4.5 公尺=450 公分。",
+          "18:450=1:25。"
+        ],
+        "answer": "1:25。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "平面圖比例尺 1:100，圖上房間面積 24 平方公分，實際面積？",
+        "solutionSteps": [
+          "長度倍率為 100，面積倍率為 10000。",
+          "24×10000=240000 平方公分=24 平方公尺。"
+        ],
+        "answer": "24 平方公尺。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "1:20000 寫成實際÷圖上=1/20000。",
+        "why": "方向顛倒。",
+        "correction": "圖上÷實際=1/20000。"
+      },
+      {
+        "mistake": "2 公分代表 2 萬公里。",
+        "why": "忽略相同單位。",
+        "correction": "先讀作 2×20000 公分。"
+      },
+      {
+        "mistake": "公里換公分只乘 1000。",
+        "why": "把公尺與公分漏一層。",
+        "correction": "1 公里=100000 公分。"
+      },
+      {
+        "mistake": "求圖上距離時仍乘 n。",
+        "why": "沒有辨認未知量。",
+        "correction": "實際距離除以 n。"
+      },
+      {
+        "mistake": "面積只乘 n。",
+        "why": "面積含兩個長度方向。",
+        "correction": "乘 n²。"
+      },
+      {
+        "mistake": "從示意圖目測長度。",
+        "why": "圖可能縮放或不按比例。",
+        "correction": "只使用題目標示數值。"
+      }
+    ],
+    "selfCheck": [
+      "比例尺順序是圖上:實際嗎？",
+      "兩項已換成相同單位嗎？",
+      "乘或除 n 的方向正確嗎？",
+      "答案單位符合題目嗎？",
+      "面積是否使用平方倍率？"
+    ],
+    "summary": [
+      "比例尺是圖上距離與實際距離的同單位比。",
+      "1:n 表示實際長是圖上長的 n 倍。",
+      "公里與公分換算是常見關鍵。",
+      "面積倍率是長度倍率的平方。"
+    ],
+    "connections": {
+      "previous": "比例尺是 y=kx 的正比實例。",
+      "next": [
+        "比例應用題會把單價、配方、速度等關係轉成比例式。",
+        "複合題可能連續使用比例尺與其他比率。"
+      ]
+    },
+    "figureReferences": [
+      "u06-fig-scale-map-01"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u06-s008-v001",
+        "u06-s008-v002",
+        "u06-s008-v003",
+        "u06-s008-v004",
+        "u06-s008-v005",
+        "u06-s008-v006",
+        "u06-s008-v007",
+        "u06-s008-v008",
+        "u06-s008-v009",
+        "u06-s008-v010",
+        "u06-s008-v011",
+        "u06-s008-v012"
+      ],
+      "constructedResponseIds": [
+        "u06-s008-cr001",
+        "u06-s008-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "contentAuthorityConfirmed": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "重新換算 150000 公分=1.5 公里、400000÷80000=5 與 4.5 公尺=450 公分；面積例另以 18 公尺×約 13.33 公尺的等面積概念核對 24 平方公尺，確認使用平方倍率。",
+      "reviewVersion": "human-lecture-review-u06-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "72e174ab58ea4237286bff6e25b799fbc7f20a23c5f5fa8a7990107589fd28d9"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u06-s008-v001",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "比例尺 1:50000 表示圖上 1 公分代表實際多少公尺？",
+      "text": "比例尺 1:50000 表示圖上 1 公分代表實際多少公尺？",
+      "givenConditions": "圖上與實際使用相同長度單位。",
+      "target": "解讀數字比例尺",
+      "choices": [
+        "50公尺",
+        "5000公尺",
+        "50000公尺",
+        "500公尺"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "500公尺=50000公分。",
+      "mainExplanation": "1:50000的兩項同單位，將50000公分換算。",
+      "explanation": "1:50000的兩項同單位，將50000公分換算。",
+      "steps": [
+        "比例尺1：50,000表示圖上1 cm對應實際50,000 cm",
+        "50,000 cm÷100=500 m，所以答案為500公尺"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "50公尺",
+          "truth": false,
+          "reason": "少除一個10。"
+        },
+        {
+          "choice": "5000公尺",
+          "truth": false,
+          "reason": "多一個0。"
+        },
+        {
+          "choice": "50000公尺",
+          "truth": false,
+          "reason": "未把公分換成公尺。"
+        },
+        {
+          "choice": "500公尺",
+          "truth": true,
+          "reason": "50000公分=500公尺。"
+        }
+      ],
+      "misconceptionTarget": "把比例尺後項直接當公尺。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 55,
+      "unitCheck": "公分轉公尺。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "1公尺=100公分。",
+      "difficultyReason": "基礎單位換算。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "99c6e85892cf2ab1664c9846c06ad43e5a55a2ff70a0cd95c0f7bbedd9d14546"
+    },
+    {
+      "questionId": "u06-s008-v002",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "比例尺 1:25000，圖上 4 公分的實際距離為何？",
+      "text": "比例尺 1:25000，圖上 4 公分的實際距離為何？",
+      "givenConditions": "比例尺固定。",
+      "target": "由圖上距離求實際距離",
+      "choices": [
+        "100公尺",
+        "1公里",
+        "2.5公里",
+        "10公里"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "1公里在圖上為100000/25000=4公分。",
+      "mainExplanation": "先求實際公分，再換公里。",
+      "explanation": "先求實際公分，再換公里。",
+      "steps": [
+        "4×25000=100000公分",
+        "=1公里"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "100公尺",
+          "truth": false,
+          "reason": "少乘10。"
+        },
+        {
+          "choice": "1公里",
+          "truth": true,
+          "reason": "4×25000=100000公分=1公里。"
+        },
+        {
+          "choice": "2.5公里",
+          "truth": false,
+          "reason": "把4當10公分。"
+        },
+        {
+          "choice": "10公里",
+          "truth": false,
+          "reason": "公分換公里錯。"
+        }
+      ],
+      "misconceptionTarget": "公里與公分換算錯誤。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 65,
+      "unitCheck": "1公里=100000公分。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "圖上4公分為標示值。",
+      "difficultyReason": "基礎比例尺。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "5b1dfdc9d2251d09434921b0fab256014203b2d780bd6e5c02067788ad540132"
+    },
+    {
+      "questionId": "u06-s008-v003",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "比例尺 1:80000，實際 2.4 公里在圖上長多少公分？",
+      "text": "比例尺 1:80000，實際 2.4 公里在圖上長多少公分？",
+      "givenConditions": "比例尺1:80000。",
+      "target": "由實際距離反求圖上",
+      "choices": [
+        "3公分",
+        "1.92公分",
+        "12公分",
+        "30公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "3×80000=240000公分。",
+      "mainExplanation": "實際距離除以縮小倍數。",
+      "explanation": "實際距離除以縮小倍數。",
+      "steps": [
+        "先把實際距離2.4 km換成240,000 cm",
+        "240,000÷80,000=3，所以圖上距離為3 cm"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3公分",
+          "truth": true,
+          "reason": "2.4公里=240000公分，除80000得3。"
+        },
+        {
+          "choice": "1.92公分",
+          "truth": false,
+          "reason": "把2.4×0.8。"
+        },
+        {
+          "choice": "12公分",
+          "truth": false,
+          "reason": "少除一個0。"
+        },
+        {
+          "choice": "30公分",
+          "truth": false,
+          "reason": "公里換公分或除法錯。"
+        }
+      ],
+      "misconceptionTarget": "求圖上距離時仍乘比例尺後項。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 70,
+      "unitCheck": "公里換公分。",
+      "roundingCheck": "2.4為精確值。",
+      "ambiguityBoundaryAudit": "答案應小於實際數值且單位為公分。",
+      "difficultyReason": "基礎反向計算。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "03a851d61e49e3f8edf27c5b55665448d09129b493df0835ebd82e3cd68b228e"
+    },
+    {
+      "questionId": "u06-s008-v004",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "模型車長 18 公分，實車長 4.5 公尺。模型比例尺為何？",
+      "text": "模型車長 18 公分，實車長 4.5 公尺。模型比例尺為何？",
+      "givenConditions": "模型與實車對應同一長度。",
+      "target": "由兩個長度求比例尺",
+      "choices": [
+        "1:4",
+        "1:40",
+        "1:25",
+        "4:25"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "18×25=450。",
+      "mainExplanation": "統一單位後化簡模型:實物。",
+      "explanation": "統一單位後化簡模型:實物。",
+      "steps": [
+        "450公分",
+        "18:450",
+        "同除18"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1:4",
+          "truth": false,
+          "reason": "只用4.5與18。"
+        },
+        {
+          "choice": "1:40",
+          "truth": false,
+          "reason": "450÷18誤成40。"
+        },
+        {
+          "choice": "1:25",
+          "truth": true,
+          "reason": "4.5公尺=450公分，18:450=1:25。"
+        },
+        {
+          "choice": "4:25",
+          "truth": false,
+          "reason": "未化成圖上:實際。"
+        }
+      ],
+      "misconceptionTarget": "比例尺方向或單位錯。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 85,
+      "unitCheck": "公尺轉公分。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "模型為前項。",
+      "difficultyReason": "標準反求比例尺。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7c3d4129c522de0782af195acc69bbc838602df0fb3510f5ce6199c9b4ab01f9"
+    },
+    {
+      "questionId": "u06-s008-v005",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "地圖比例尺 1:60000，兩地圖上距離 7.5 公分。實際距離為何？",
+      "text": "地圖比例尺 1:60000，兩地圖上距離 7.5 公分。實際距離為何？",
+      "givenConditions": "比例尺固定。",
+      "target": "小數圖距求實距",
+      "choices": [
+        "0.45公里",
+        "4.5公里",
+        "7.5公里",
+        "45公里"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "4.5公里換回圖上為7.5公分。",
+      "mainExplanation": "完成乘法與公分轉公里。",
+      "explanation": "完成乘法與公分轉公里。",
+      "steps": [
+        "450000公分",
+        "÷100000=4.5公里"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.45公里",
+          "truth": false,
+          "reason": "少一個10。"
+        },
+        {
+          "choice": "4.5公里",
+          "truth": true,
+          "reason": "7.5×60000=450000公分=4.5公里。"
+        },
+        {
+          "choice": "7.5公里",
+          "truth": false,
+          "reason": "把圖上數字直接當公里。"
+        },
+        {
+          "choice": "45公里",
+          "truth": false,
+          "reason": "多一個10。"
+        }
+      ],
+      "misconceptionTarget": "數量級判斷不足。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 90,
+      "unitCheck": "公分與公里。",
+      "roundingCheck": "精確小數。",
+      "ambiguityBoundaryAudit": "結果介於合理公里級。",
+      "difficultyReason": "標準小數運算。",
+      "literacyContextNecessity": null,
+      "visualMode": "figure-supported",
+      "figureId": "u06-fig-scale-map-01",
+      "drawingSpecRef": "units/u06/s008/drawing-specs.jsonl#u06-fig-scale-map-01",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "06163b851a7311991aad87bb0d729aa8b6e65a07816d0b72f44f72b262e61b95"
+    },
+    {
+      "questionId": "u06-s008-v006",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "一張平面圖比例尺 1:200。圖上長方形長 6 公分、寬 4 公分，實際周長多少公尺？",
+      "text": "一張平面圖比例尺 1:200。圖上長方形長 6 公分、寬 4 公分，實際周長多少公尺？",
+      "givenConditions": "長方形且各邊按同倍率。",
+      "target": "比例尺與周長整合",
+      "choices": [
+        "20公尺",
+        "24公尺",
+        "80公尺",
+        "40公尺"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "圖上周長20公分×200=4000公分=40公尺。",
+      "mainExplanation": "先將兩邊長放大200倍，再算周長。",
+      "explanation": "先將兩邊長放大200倍，再算周長。",
+      "steps": [
+        "6×200=1200公分=12公尺",
+        "4×200=800公分=8公尺",
+        "周長40公尺"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20公尺",
+          "truth": false,
+          "reason": "只算長寬和。"
+        },
+        {
+          "choice": "24公尺",
+          "truth": false,
+          "reason": "把圖上面積24當周長。"
+        },
+        {
+          "choice": "80公尺",
+          "truth": false,
+          "reason": "周長重複乘2。"
+        },
+        {
+          "choice": "40公尺",
+          "truth": true,
+          "reason": "實際長12公尺、寬8公尺，周長2(12+8)=40。"
+        }
+      ],
+      "misconceptionTarget": "把周長與面積公式混淆。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 105,
+      "unitCheck": "公分轉公尺。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "可用先周長後縮放驗證。",
+      "difficultyReason": "多步幾何與比例尺。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ff6db34036d8363a90d040a2cd9ce443f5fe0b18a2c74ca89e4643eeb824ee54"
+    },
+    {
+      "questionId": "u06-s008-v007",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "比例尺 1:100 的平面圖上，某正方形面積為 25 平方公分。實際面積為何？",
+      "text": "比例尺 1:100 的平面圖上，某正方形面積為 25 平方公分。實際面積為何？",
+      "givenConditions": "圖形相似且比例尺作用於兩個長度方向。",
+      "target": "比例尺的面積倍率",
+      "choices": [
+        "0.25平方公尺",
+        "250平方公尺",
+        "25平方公尺",
+        "2500平方公尺"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "圖上正方形邊5公分，實際邊5公尺，面積25平方公尺。",
+      "mainExplanation": "面積倍率需平方，平方單位換算也需平方處理。",
+      "explanation": "面積倍率需平方，平方單位換算也需平方處理。",
+      "steps": [
+        "25×100²=250000平方公分",
+        "250000÷10000=25平方公尺"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.25平方公尺",
+          "truth": false,
+          "reason": "只把25平方公分換單位，未放大面積。"
+        },
+        {
+          "choice": "250平方公尺",
+          "truth": false,
+          "reason": "多乘10倍。"
+        },
+        {
+          "choice": "25平方公尺",
+          "truth": true,
+          "reason": "長度倍率100，面積倍率10000；25×10000=250000平方公分=25平方公尺。"
+        },
+        {
+          "choice": "2500平方公尺",
+          "truth": false,
+          "reason": "把平方公分轉平方公尺漏除10000。"
+        }
+      ],
+      "misconceptionTarget": "只用長度倍率或平方單位換算錯誤。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 130,
+      "unitCheck": "平方公分轉平方公尺。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "1平方公尺=10000平方公分。",
+      "difficultyReason": "高階面積倍率。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b281729e9e89efd8b38d08775b16efeafa75faf6bc8edc330c96a4da64101b2b"
+    },
+    {
+      "questionId": "u06-s008-v008",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "某地圖印刷時長、寬都放大為原來的 150%，原比例尺 1:90000。放大後比例尺為何？",
+      "text": "某地圖印刷時長、寬都放大為原來的 150%，原比例尺 1:90000。放大後比例尺為何？",
+      "givenConditions": "印刷均勻放大且實際地物不變。",
+      "target": "印刷縮放後更新比例尺",
+      "choices": [
+        "1:60000",
+        "1:135000",
+        "1:90000",
+        "3:200000"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "原圖1公分代表90000公分；放大後1.5公分代表同距，故1公分代表60000。",
+      "mainExplanation": "同一實際距離下圖上距離放大，縮小倍數變小。",
+      "explanation": "同一實際距離下圖上距離放大，縮小倍數變小。",
+      "steps": [
+        "新圖距=1.5舊圖距",
+        "新分母=90000/1.5=60000"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1:60000",
+          "truth": true,
+          "reason": "圖上同一實距變為1.5倍，比例尺分母90000÷1.5=60000。"
+        },
+        {
+          "choice": "1:135000",
+          "truth": false,
+          "reason": "把分母也乘1.5。"
+        },
+        {
+          "choice": "1:90000",
+          "truth": false,
+          "reason": "忽略印刷放大。"
+        },
+        {
+          "choice": "3:200000",
+          "truth": false,
+          "reason": "比例值不等於1/60000。"
+        }
+      ],
+      "misconceptionTarget": "比例尺分母跟圖形同向放大。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 130,
+      "unitCheck": "同單位比。",
+      "roundingCheck": "150%=1.5精確。",
+      "ambiguityBoundaryAudit": "長寬均勻放大，不扭曲。",
+      "difficultyReason": "抽象比例尺變換。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e4eba2356f64af3fda90ebb485ea117dad6c711b20646b943f3164bb84aefd99"
+    },
+    {
+      "questionId": "u06-s008-v009",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "兩張地圖比例尺分別為甲 1:40000、乙 1:100000。表示同一段實際道路時，甲圖上的線段長是乙圖的幾倍？",
+      "text": "兩張地圖比例尺分別為甲 1:40000、乙 1:100000。表示同一段實際道路時，甲圖上的線段長是乙圖的幾倍？",
+      "givenConditions": "同一實際道路。",
+      "target": "比較兩種比例尺圖距",
+      "choices": [
+        "0.4倍",
+        "1.5倍",
+        "2.5倍",
+        "4倍"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "若實距4公里，甲10公分、乙4公分，比2.5。",
+      "mainExplanation": "同一實距在分母較小的地圖上畫得較長。",
+      "explanation": "同一實距在分母較小的地圖上畫得較長。",
+      "steps": [
+        "L甲=D/40000",
+        "L乙=D/100000",
+        "比=2.5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.4倍",
+          "truth": false,
+          "reason": "0.4是反向比。"
+        },
+        {
+          "choice": "1.5倍",
+          "truth": false,
+          "reason": "用分母相減。"
+        },
+        {
+          "choice": "2.5倍",
+          "truth": true,
+          "reason": "圖上長與比例尺分母成反比，100000/40000=2.5。"
+        },
+        {
+          "choice": "4倍",
+          "truth": false,
+          "reason": "把100000/25000。"
+        }
+      ],
+      "misconceptionTarget": "只看分母大小未求倍率。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 120,
+      "unitCheck": "倍數無單位。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "兩圖未縮放變形。",
+      "difficultyReason": "跨比例尺比較。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b2418c88e18c8d96a7242d9dd26c452f5a6755507ac02cbf812632dcf419c5c8"
+    },
+    {
+      "questionId": "u06-s008-v010",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "校園地圖比例尺 1:2000，圖上操場長 5 公分。實際長多少公尺？",
+      "text": "校園地圖比例尺 1:2000，圖上操場長 5 公分。實際長多少公尺？",
+      "givenConditions": "比例尺與標示線段對應。",
+      "target": "在校園圖讀實際長度",
+      "choices": [
+        "100公尺",
+        "10公尺",
+        "250公尺",
+        "1000公尺"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "100公尺換回10000公分，除2000得5公分。",
+      "mainExplanation": "圖距乘比例尺分母。",
+      "explanation": "圖距乘比例尺分母。",
+      "steps": [
+        "10000公分",
+        "=100公尺"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "100公尺",
+          "truth": true,
+          "reason": "5×2000=10000公分=100公尺。"
+        },
+        {
+          "choice": "10公尺",
+          "truth": false,
+          "reason": "少除一個10。"
+        },
+        {
+          "choice": "250公尺",
+          "truth": false,
+          "reason": "把5×50。"
+        },
+        {
+          "choice": "1000公尺",
+          "truth": false,
+          "reason": "未正確換單位。"
+        }
+      ],
+      "misconceptionTarget": "把公分直接當公尺。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 80,
+      "unitCheck": "公分轉公尺。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "圖示僅提供標示長度，不需目測。",
+      "difficultyReason": "生活地圖應用。",
+      "literacyContextNecessity": "校園比例尺決定圖上與實際的轉換。",
+      "visualMode": "figure-supported",
+      "figureId": "u06-fig-scale-map-01",
+      "drawingSpecRef": "units/u06/s008/drawing-specs.jsonl#u06-fig-scale-map-01",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d603bc69d459d613e8cc45e64dbf26f4eb56726bcffff44f7f84ba8b6b0c0587"
+    },
+    {
+      "questionId": "u06-s008-v011",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "建築圖比例尺 1:50，圖上門寬 1.8 公分。實際門寬多少公分？",
+      "text": "建築圖比例尺 1:50，圖上門寬 1.8 公分。實際門寬多少公分？",
+      "givenConditions": "圖上與實際均用公分。",
+      "target": "建築圖尺寸換算",
+      "choices": [
+        "36公分",
+        "50公分",
+        "180公分",
+        "90公分"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "90÷50=1.8。",
+      "mainExplanation": "同單位直接放大50倍。",
+      "explanation": "同單位直接放大50倍。",
+      "steps": [
+        "圖上1.8 cm按每1 cm代表50 km換算",
+        "1.8×50=90，所以實際距離為90 km"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "36公分",
+          "truth": false,
+          "reason": "1.8×20。"
+        },
+        {
+          "choice": "50公分",
+          "truth": false,
+          "reason": "把比例尺後項直接作答案。"
+        },
+        {
+          "choice": "180公分",
+          "truth": false,
+          "reason": "多乘2。"
+        },
+        {
+          "choice": "90公分",
+          "truth": true,
+          "reason": "1.8×50=90。"
+        }
+      ],
+      "misconceptionTarget": "小數乘整數錯誤。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 75,
+      "unitCheck": "公分。",
+      "roundingCheck": "精確到題目給定位數。",
+      "ambiguityBoundaryAudit": "不需換其他單位。",
+      "difficultyReason": "小數比例尺應用。",
+      "literacyContextNecessity": "門寬情境提供合理尺寸檢查，90公分符合常見量級。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c2d2ba11bb09d592a75fb29964c1f6d624658bcfa2454616f2a1c8db617cb130"
+    },
+    {
+      "questionId": "u06-s008-v012",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "登山圖比例尺 1:50000，路線在圖上量得 8.6 公分。考量路線起伏，實際行走距離比平面距離多 20%。約需走多少公里？",
+      "text": "登山圖比例尺 1:50000，路線在圖上量得 8.6 公分。考量路線起伏，實際行走距離比平面距離多 20%。約需走多少公里？",
+      "givenConditions": "起伏增量以平面距離為基準。",
+      "target": "比例尺與百分比複合",
+      "choices": [
+        "4.3公里",
+        "5.16公里",
+        "5公里",
+        "6.2公里"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "5.16/1.2=4.3，逆向驗證。",
+      "mainExplanation": "先用比例尺求平面距離，再套起伏倍率。",
+      "explanation": "先用比例尺求平面距離，再套起伏倍率。",
+      "steps": [
+        "平面4.3公里",
+        "乘1.2",
+        "5.16公里"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4.3公里",
+          "truth": false,
+          "reason": "4.3只算平面距離。"
+        },
+        {
+          "choice": "5.16公里",
+          "truth": true,
+          "reason": "平面距離8.6×50000=430000公分=4.3公里；行走距離4.3×1.2=5.16。"
+        },
+        {
+          "choice": "5公里",
+          "truth": false,
+          "reason": "把5.16過早取整。"
+        },
+        {
+          "choice": "6.2公里",
+          "truth": false,
+          "reason": "計算20%錯。"
+        }
+      ],
+      "misconceptionTarget": "忘記第二步或把20%加成20公里。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "inverse-variation-graph"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 120,
+      "unitCheck": "公分轉公里。",
+      "roundingCheck": "題目問約但選項保留到0.01公里，不再取整。",
+      "ambiguityBoundaryAudit": "20%視為給定估計。",
+      "difficultyReason": "同時處理地圖比例尺、單位轉換與路線比較，屬於比例尺複合素養。",
+      "literacyContextNecessity": "地形起伏條件改變最後距離，不能只做比例尺。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ee2573fa9edd9542c49cdba06d51f3ffc4362a016b4ee245b32c91f407e3d7a7"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u06-s008-cr001",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "地圖比例尺1:40000，圖上A到B為6.5公分。求實際距離，以公里表示，並在圖中標示的同一路段上寫出換算。",
+      "target": "由地圖求實距",
+      "requiredWork": [
+        "圖距乘比例尺分母。",
+        "把公分換成公里。",
+        "用反算驗證。"
+      ],
+      "fullCreditSolution": [
+        "實際距離=6.5×40000=260000公分。",
+        "260000公分=2.6公里。",
+        "反算2.6公里=260000公分，除40000得6.5公分。"
+      ],
+      "alternativeSolutions": [
+        "可先求1公分代表0.4公里，再算6.5×0.4=2.6公里。"
+      ],
+      "reasoningSteps": [
+        "實際距離=6.5×40000=260000公分。",
+        "260000公分=2.6公里。",
+        "反算2.6公里=260000公分，除40000得6.5公分。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "得到2.6公里，公分換算與反算完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "2.6公里正確但漏反算或中間單位。"
+        },
+        {
+          "score": 1,
+          "criteria": "得到260000公分但公里換算錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "直接答260000公里或比例尺方向錯。"
+        }
+      ],
+      "partialCreditRules": [
+        "單位換算是主要得分點。",
+        "只在示意圖上量線段而不用標示6.5公分不給分。"
+      ],
+      "followThroughPolicy": "若乘法正確但公里換算差10倍，給1分；後續依錯誤公里值不再加分。",
+      "unitNotationRules": "最後必須以公里表示；1公里=100000公分。",
+      "answerOnlyPolicy": "只寫2.6公里最多2分。",
+      "commonErrors": [
+        "把1:40000當1公分代表40000公里。",
+        "6.5÷40000。",
+        "使用尺量示意圖。"
+      ],
+      "visualMode": "figure-supported",
+      "figureId": "u06-fig-scale-map-01",
+      "drawingSpecRef": "units/u06/s008/drawing-specs.jsonl#u06-fig-scale-map-01",
+      "independentReview": {
+        "derivedResult": "2.6公里。",
+        "ambiguity": "圖上標示值與比例尺充分，圖不按比例警告排除量測。",
+        "scope": "U06 locked skill only; no future-unit method required.",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "fa43f950a79ed761c3d03500d1cf6b9ecafeae4be250faca0b42ad8bc613cb1d"
+    },
+    {
+      "questionId": "u06-s008-cr002",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "一張1:200的平面圖上，長方形長8公分、寬5公分。求實際面積，以平方公尺表示，並解釋為何不能只把圖上面積乘200。",
+      "target": "比例尺面積倍率",
+      "requiredWork": [
+        "求實際長寬或使用面積倍率。",
+        "正確處理平方單位。",
+        "說明面積倍率為200²。"
+      ],
+      "fullCreditSolution": [
+        "實際長=8×200=1600公分=16公尺，實際寬=5×200=1000公分=10公尺。",
+        "實際面積=16×10=160平方公尺。",
+        "長和寬都放大200倍，所以面積放大200×200=40000倍，不是只乘200。"
+      ],
+      "alternativeSolutions": [
+        "圖上面積40平方公分×40000=1600000平方公分=160平方公尺。"
+      ],
+      "reasoningSteps": [
+        "實際長=8×200=1600公分=16公尺，實際寬=5×200=1000公分=10公尺。",
+        "實際面積=16×10=160平方公尺。",
+        "長和寬都放大200倍，所以面積放大200×200=40000倍，不是只乘200。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "得到160平方公尺，並清楚說明面積倍率200²。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確且有長寬換算，但未明確解釋平方倍率。"
+        },
+        {
+          "score": 1,
+          "criteria": "能算出實際長16公尺與寬10公尺，但面積或單位錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "只用40×200或無有效過程。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩種方法皆可滿分。",
+        "平方公分轉平方公尺需除10000。"
+      ],
+      "followThroughPolicy": "若長寬之一換算小錯，後續使用其值一致算面積可給1分；若核心只乘200，不採跟隨。",
+      "unitNotationRules": "最後用平方公尺；中間可用公分。",
+      "answerOnlyPolicy": "只寫160平方公尺最多2分。",
+      "commonErrors": [
+        "面積倍率只用200。",
+        "1600000平方公分寫成16000平方公尺。",
+        "周長與面積混淆。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "160平方公尺，面積倍率40000。",
+        "ambiguity": "長方形與比例尺條件完整。",
+        "scope": "U06 locked skill only; no future-unit method required.",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "853e035f694f70edf97011a6b190a7669a48b3c05f8f0fab0bd2a7d1a945d5b5"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "reviewId": "u06-s008-v001-semantic-review-r1",
+      "questionId": "u06-s008-v001",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "99c6e85892cf2ab1664c9846c06ad43e5a55a2ff70a0cd95c0f7bbedd9d14546",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "500公尺=50000公分。",
+      "derivedAnswer": "500公尺",
+      "storedAnswer": "500公尺",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "少除一個10。",
+        "多一個0。",
+        "未把公分換成公尺。",
+        "50000公分=500公尺。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「解讀數字比例尺」，已明示必要條件：圖上與實際使用相同長度單位。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公分轉公尺。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：1公尺=100公分。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "基礎單位換算。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：500公尺=50000公分。 正確選項為「500公尺」。逐項檢查後，唯一為真的理由是「50000公分=500公尺。」；其餘三項分別因「少除一個10。」、「多一個0。」、「未把公分換成公尺。」而排除。邊界與語意再檢查：1公尺=100公分。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v002-semantic-review-r1",
+      "questionId": "u06-s008-v002",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "5b1dfdc9d2251d09434921b0fab256014203b2d780bd6e5c02067788ad540132",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "1公里在圖上為100000/25000=4公分。",
+      "derivedAnswer": "1公里",
+      "storedAnswer": "1公里",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "少乘10。",
+        "4×25000=100000公分=1公里。",
+        "把4當10公分。",
+        "公分換公里錯。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由圖上距離求實際距離」，已明示必要條件：比例尺固定。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：1公里=100000公分。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：圖上4公分為標示值。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "基礎比例尺。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：1公里在圖上為100000/25000=4公分。 正確選項為「1公里」。逐項檢查後，唯一為真的理由是「4×25000=100000公分=1公里。」；其餘三項分別因「少乘10。」、「把4當10公分。」、「公分換公里錯。」而排除。邊界與語意再檢查：圖上4公分為標示值。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v003-semantic-review-r1",
+      "questionId": "u06-s008-v003",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "03a851d61e49e3f8edf27c5b55665448d09129b493df0835ebd82e3cd68b228e",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "3×80000=240000公分。",
+      "derivedAnswer": "3公分",
+      "storedAnswer": "3公分",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "2.4公里=240000公分，除80000得3。",
+        "把2.4×0.8。",
+        "少除一個0。",
+        "公里換公分或除法錯。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由實際距離反求圖上」，已明示必要條件：比例尺1:80000。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公里換公分。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：答案應小於實際數值且單位為公分。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：2.4為精確值。。"
+      },
+      "difficultyReason": "基礎反向計算。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：3×80000=240000公分。 正確選項為「3公分」。逐項檢查後，唯一為真的理由是「2.4公里=240000公分，除80000得3。」；其餘三項分別因「把2.4×0.8。」、「少除一個0。」、「公里換公分或除法錯。」而排除。邊界與語意再檢查：答案應小於實際數值且單位為公分。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v004-semantic-review-r1",
+      "questionId": "u06-s008-v004",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "7c3d4129c522de0782af195acc69bbc838602df0fb3510f5ce6199c9b4ab01f9",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "18×25=450。",
+      "derivedAnswer": "1:25",
+      "storedAnswer": "1:25",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "只用4.5與18。",
+        "450÷18誤成40。",
+        "4.5公尺=450公分，18:450=1:25。",
+        "未化成圖上:實際。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由兩個長度求比例尺」，已明示必要條件：模型與實車對應同一長度。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公尺轉公分。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：模型為前項。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "標準反求比例尺。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：18×25=450。 正確選項為「1:25」。逐項檢查後，唯一為真的理由是「4.5公尺=450公分，18:450=1:25。」；其餘三項分別因「只用4.5與18。」、「450÷18誤成40。」、「未化成圖上:實際。」而排除。邊界與語意再檢查：模型為前項。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v005-semantic-review-r1",
+      "questionId": "u06-s008-v005",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "06163b851a7311991aad87bb0d729aa8b6e65a07816d0b72f44f72b262e61b95",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "4.5公里換回圖上為7.5公分。",
+      "derivedAnswer": "4.5公里",
+      "storedAnswer": "4.5公里",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "少一個10。",
+        "7.5×60000=450000公分=4.5公里。",
+        "把圖上數字直接當公里。",
+        "多一個10。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「小數圖距求實距」，已明示必要條件：比例尺固定。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公分與公里。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：結果介於合理公里級。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：精確小數。。"
+      },
+      "difficultyReason": "標準小數運算。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：4.5公里換回圖上為7.5公分。 正確選項為「4.5公里」。逐項檢查後，唯一為真的理由是「7.5×60000=450000公分=4.5公里。」；其餘三項分別因「少一個10。」、「把圖上數字直接當公里。」、「多一個10。」而排除。邊界與語意再檢查：結果介於合理公里級。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v006-semantic-review-r1",
+      "questionId": "u06-s008-v006",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "ff6db34036d8363a90d040a2cd9ce443f5fe0b18a2c74ca89e4643eeb824ee54",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "圖上周長20公分×200=4000公分=40公尺。",
+      "derivedAnswer": "40公尺",
+      "storedAnswer": "40公尺",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "只算長寬和。",
+        "把圖上面積24當周長。",
+        "周長重複乘2。",
+        "實際長12公尺、寬8公尺，周長2(12+8)=40。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「比例尺與周長整合」，已明示必要條件：長方形且各邊按同倍率。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公分轉公尺。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：可用先周長後縮放驗證。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "多步幾何與比例尺。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：圖上周長20公分×200=4000公分=40公尺。 正確選項為「40公尺」。逐項檢查後，唯一為真的理由是「實際長12公尺、寬8公尺，周長2(12+8)=40。」；其餘三項分別因「只算長寬和。」、「把圖上面積24當周長。」、「周長重複乘2。」而排除。邊界與語意再檢查：可用先周長後縮放驗證。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v007-semantic-review-r1",
+      "questionId": "u06-s008-v007",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "b281729e9e89efd8b38d08775b16efeafa75faf6bc8edc330c96a4da64101b2b",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "圖上正方形邊5公分，實際邊5公尺，面積25平方公尺。",
+      "derivedAnswer": "25平方公尺",
+      "storedAnswer": "25平方公尺",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "只把25平方公分換單位，未放大面積。",
+        "多乘10倍。",
+        "長度倍率100，面積倍率10000；25×10000=250000平方公分=25平方公尺。",
+        "把平方公分轉平方公尺漏除10000。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「比例尺的面積倍率」，已明示必要條件：圖形相似且比例尺作用於兩個長度方向。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：平方公分轉平方公尺。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：1平方公尺=10000平方公分。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "高階面積倍率。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：圖上正方形邊5公分，實際邊5公尺，面積25平方公尺。 正確選項為「25平方公尺」。逐項檢查後，唯一為真的理由是「長度倍率100，面積倍率10000；25×10000=250000平方公分=25平方公尺。」；其餘三項分別因「只把25平方公分換單位，未放大面積。」、「多乘10倍。」、「把平方公分轉平方公尺漏除10000。」而排除。邊界與語意再檢查：1平方公尺=10000平方公分。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v008-semantic-review-r1",
+      "questionId": "u06-s008-v008",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "e4eba2356f64af3fda90ebb485ea117dad6c711b20646b943f3164bb84aefd99",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "原圖1公分代表90000公分；放大後1.5公分代表同距，故1公分代表60000。",
+      "derivedAnswer": "1:60000",
+      "storedAnswer": "1:60000",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "圖上同一實距變為1.5倍，比例尺分母90000÷1.5=60000。",
+        "把分母也乘1.5。",
+        "忽略印刷放大。",
+        "比例值不等於1/60000。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「印刷縮放後更新比例尺」，已明示必要條件：印刷均勻放大且實際地物不變。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：同單位比。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：長寬均勻放大，不扭曲。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：150%=1.5精確。。"
+      },
+      "difficultyReason": "抽象比例尺變換。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：原圖1公分代表90000公分；放大後1.5公分代表同距，故1公分代表60000。 正確選項為「1:60000」。逐項檢查後，唯一為真的理由是「圖上同一實距變為1.5倍，比例尺分母90000÷1.5=60000。」；其餘三項分別因「把分母也乘1.5。」、「忽略印刷放大。」、「比例值不等於1/60000。」而排除。邊界與語意再檢查：長寬均勻放大，不扭曲。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v009-semantic-review-r1",
+      "questionId": "u06-s008-v009",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "b2418c88e18c8d96a7242d9dd26c452f5a6755507ac02cbf812632dcf419c5c8",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "若實距4公里，甲10公分、乙4公分，比2.5。",
+      "derivedAnswer": "2.5倍",
+      "storedAnswer": "2.5倍",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "0.4是反向比。",
+        "用分母相減。",
+        "圖上長與比例尺分母成反比，100000/40000=2.5。",
+        "把100000/25000。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「比較兩種比例尺圖距」，已明示必要條件：同一實際道路。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：倍數無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：兩圖未縮放變形。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "跨比例尺比較。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：若實距4公里，甲10公分、乙4公分，比2.5。 正確選項為「2.5倍」。逐項檢查後，唯一為真的理由是「圖上長與比例尺分母成反比，100000/40000=2.5。」；其餘三項分別因「0.4是反向比。」、「用分母相減。」、「把100000/25000。」而排除。邊界與語意再檢查：兩圖未縮放變形。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v010-semantic-review-r1",
+      "questionId": "u06-s008-v010",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "d603bc69d459d613e8cc45e64dbf26f4eb56726bcffff44f7f84ba8b6b0c0587",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "100公尺換回10000公分，除2000得5公分。",
+      "derivedAnswer": "100公尺",
+      "storedAnswer": "100公尺",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "5×2000=10000公分=100公尺。",
+        "少除一個10。",
+        "把5×50。",
+        "未正確換單位。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「在校園圖讀實際長度」，已明示必要條件：比例尺與標示線段對應。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公分轉公尺。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：圖示僅提供標示長度，不需目測。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "生活地圖應用。",
+      "literacyNecessity": "校園比例尺決定圖上與實際的轉換。",
+      "reviewerNote": "獨立重算：100公尺換回10000公分，除2000得5公分。 正確選項為「100公尺」。逐項檢查後，唯一為真的理由是「5×2000=10000公分=100公尺。」；其餘三項分別因「少除一個10。」、「把5×50。」、「未正確換單位。」而排除。邊界與語意再檢查：圖示僅提供標示長度，不需目測。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v011-semantic-review-r1",
+      "questionId": "u06-s008-v011",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "c2d2ba11bb09d592a75fb29964c1f6d624658bcfa2454616f2a1c8db617cb130",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "90÷50=1.8。",
+      "derivedAnswer": "90公分",
+      "storedAnswer": "90公分",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "1.8×20。",
+        "把比例尺後項直接作答案。",
+        "多乘2。",
+        "1.8×50=90。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「建築圖尺寸換算」，已明示必要條件：圖上與實際均用公分。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公分。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：不需換其他單位。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：精確到題目給定位數。。"
+      },
+      "difficultyReason": "小數比例尺應用。",
+      "literacyNecessity": "門寬情境提供合理尺寸檢查，90公分符合常見量級。",
+      "reviewerNote": "獨立重算：90÷50=1.8。 正確選項為「90公分」。逐項檢查後，唯一為真的理由是「1.8×50=90。」；其餘三項分別因「1.8×20。」、「把比例尺後項直接作答案。」、「多乘2。」而排除。邊界與語意再檢查：不需換其他單位。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s008-v012-semantic-review-r1",
+      "questionId": "u06-s008-v012",
+      "unitId": "u06",
+      "skillId": "scale-drawing",
+      "contentSha256": "ee2573fa9edd9542c49cdba06d51f3ffc4362a016b4ee245b32c91f407e3d7a7",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "5.16/1.2=4.3，逆向驗證。",
+      "derivedAnswer": "5.16公里",
+      "storedAnswer": "5.16公里",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "4.3只算平面距離。",
+        "平面距離8.6×50000=430000公分=4.3公里；行走距離4.3×1.2=5.16。",
+        "把5.16過早取整。",
+        "計算20%錯。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「比例尺與百分比複合」，已明示必要條件：起伏增量以平面距離為基準。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公分轉公里。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：20%視為給定估計。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：題目問約但選項保留到0.01公里，不再取整。。"
+      },
+      "difficultyReason": "同時處理地圖比例尺、單位轉換與路線比較，屬於比例尺複合素養。",
+      "literacyNecessity": "地形起伏條件改變最後距離，不能只做比例尺。",
+      "reviewerNote": "獨立重算：5.16/1.2=4.3，逆向驗證。 正確選項為「5.16公里」。逐項檢查後，唯一為真的理由是「平面距離8.6×50000=430000公分=4.3公里；行走距離4.3×1.2=5.16。」；其餘三項分別因「4.3只算平面距離。」、「把5.16過早取整。」、「計算20%錯。」而排除。邊界與語意再檢查：20%視為給定估計。",
+      "reviewerDecision": "pass"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u06-fig-scale-map-01",
+      "unitId": "u06",
+      "topicId": "u06-applications",
+      "skillId": "scale-drawing",
+      "purpose": "把圖上距離、實際距離和數值比例尺集中在同一圖中，強化先統一單位再換算的程序。",
+      "svgPath": "figures/u06/u06-fig-scale-map-01.svg",
+      "canvas": {
+        "width": 720,
+        "height": 360,
+        "viewBox": "0 0 720 360"
+      },
+      "drawingSpec": {
+        "pointA": {
+          "center": [
+            130,
+            145
+          ],
+          "radius": 10,
+          "label": [
+            130,
+            105
+          ]
+        },
+        "pointB": {
+          "center": [
+            590,
+            145
+          ],
+          "radius": 10,
+          "label": [
+            590,
+            105
+          ]
+        },
+        "routeLine": "from (140,145) to (580,145), stroke 5",
+        "endpointTicks": [
+          "x=130, y=120..170",
+          "x=590, y=120..170"
+        ],
+        "distanceLabel": {
+          "text": "圖上距離 3.6 cm",
+          "x": 360,
+          "y": 125
+        },
+        "scaleBar": "from (250,220) to (470,220) with endpoint ticks",
+        "scaleLabel": {
+          "text": "比例尺 1：50,000",
+          "x": 360,
+          "y": 260
+        },
+        "visibleLines": "A、B 連線和比例尺示意橫線均為實線",
+        "hiddenLines": "無",
+        "scaleStatus": "not-to-scale map schematic"
+      },
+      "labelsAndPositions": [
+        "A、B 位於端點上方",
+        "3.6 cm 位於連線中央上方",
+        "比例尺置於下方中央",
+        "不按比例警語置於最下方"
+      ],
+      "ticksUnitsArrows": "端點刻線顯示量測界線；單位 cm 明列；無方向箭頭。",
+      "toScale": false,
+      "visualInferenceWarning": "A、B 的螢幕像素距離不是 3.6 cm；只能使用題面標示和比例尺計算。",
+      "altText": "A、B 兩點的圖上距離標示為三點六公分，比例尺是一比五萬，並提醒示意圖不按實際距離繪製。",
+      "svgTitle": "比例尺一比五萬的地圖線段示意圖",
+      "svgDesc": "A、B 兩點與三點六公分圖距及一比五萬比例尺的示意圖。",
+      "mobileReadabilityReview": "360 px 手機顯示時，A、B 與 3.6 cm 不重疊；比例尺文字保持單行可辨識。",
+      "answerLeakageReview": "圖僅提供題目必要資料，不直接標示換算後的 1.8 km，學生仍須處理 50,000 cm 與公里換算。",
+      "manualVisualInspection": {
+        "status": "pass-after-render",
+        "inspectionNote": "以 720×360 PNG 實際轉譯檢查；A、B 端點、3.6 cm、1：50,000 和不按比例警語均清楚，線段與文字無重疊。"
+      },
+      "svgAssertions": [
+        "<title id=\"title\">比例尺一比五萬的地圖線段示意圖</title>",
+        "圖上距離 3.6 cm",
+        "比例尺 1：50,000",
+        "示意圖不按實際方向或距離繪製"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "reviewNote": "第一次轉譯發現透明背景的跨預覽器可讀性問題；加入白底及繁中字型後重繪，端點、圖距、比例尺與警語全部清晰，且未直接顯示 1.8 km 答案。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "f1e9f757f8a2bfe4dc6c0bc81eb92109df2687a49b9bb16d0989b25b4160b1db"
+    }
+  ]
+};

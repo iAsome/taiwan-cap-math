@@ -1,0 +1,79 @@
+{
+  "auditId": "u02-batch-003-final-manual-audit-r3.0",
+  "unitId": "u02",
+  "reviewedAt": "2026-07-12",
+  "decision": "pass-staging-only",
+  "reviewedCounts": {
+    "lectures": 15,
+    "mcQuestions": 180,
+    "constructedResponses": 30,
+    "semanticReviews": 180,
+    "svgFigures": 3
+  },
+  "procedures": [
+    "逐題閱讀並重算180題題幹、四個選項、答案、解析與獨立解法。",
+    "逐一核對720個選項真值與錯誤來源，檢查是否存在第二個正確答案。",
+    "逐題重算30題非選擇題，核對替代方法、0至3分規準與部分得分條件。",
+    "逐篇核對15篇講義的定義、公式條件、不適用情形、四個例題、六個常見錯誤與先備順序。",
+    "逐張將3個SVG與題幹、drawing spec、座標、標籤、比例和alt text交叉核對。"
+  ],
+  "issuesFoundAndResolved": [
+    {
+      "id": "B003-R3-001",
+      "affected": "U02全部文字內容",
+      "issue": "初稿混有少量簡體字形。",
+      "resolution": "以臺灣繁體轉換後逐段複核專有名詞、數學符號與公里等固定用字，並重算全部內容雜湊。"
+    },
+    {
+      "id": "B003-R3-002",
+      "affected": [
+        "fraction-multiply-divide",
+        "fraction-percent-discount",
+        "fraction-literacy-context"
+      ],
+      "issue": "來源技能名稱過度壓縮或屬題型標籤，且部分名稱含頓號。",
+      "resolution": "分別定為「分數的乘法和除法」「百分率和折扣與成數」「分數與百分率和週期的綜合情境應用」。"
+    },
+    {
+      "id": "B003-R3-003",
+      "affected": "u02-s004-cr002",
+      "issue": "原審查文字未明確說明允許值是否唯一。",
+      "resolution": "完整列舉gcd(84,n)=28且n<100的解，確認只有28與56，並把規準改為接受完整唯一解集合。"
+    },
+    {
+      "id": "B003-R3-004",
+      "affected": "u02-s012-v011",
+      "issue": "原句「透過7/8的樣本」語意不自然，可能妨礙判斷兩層比例。",
+      "resolution": "改寫為完成測試者佔7/8、其中2/3達優良，並重新撰寫四選項理由與獨立解法。"
+    },
+    {
+      "id": "B003-R3-005",
+      "affected": "u02-s013-cr001",
+      "issue": "服務費究竟以折扣後或折價券後金額計算不夠明確。",
+      "resolution": "題幹明定以使用折價券後的金額為基準，再重算答案2152.5元。"
+    },
+    {
+      "id": "B003-R3-006",
+      "affected": "u02-s015-cr002",
+      "issue": "原題問「看完後剩多久」但影片實際無法看完。",
+      "resolution": "改為先判斷可行性；不能看完時明確求尚差33分鐘，消除負時間或不存在量的歧義。"
+    },
+    {
+      "id": "B003-R3-007",
+      "affected": [
+        "u02-s011-v006",
+        "fig-u02-s011-v006.svg"
+      ],
+      "issue": "初版題幹問哪個圖示表示2又1/3，但只附一張正確圖，且圖下直接標出1、1與1/3，造成刺激形式不一致並洩漏答案。",
+      "resolution": "改為由單一塗色模型判讀總量；選項改成四個帶分數，移除圖下數值標籤，重新核對三等分座標、alt text與選項真值。"
+    },
+    {
+      "id": "B003-R3-008",
+      "affected": "u02-s005 lecture example L4",
+      "issue": "原例題只說共同週期36分鐘、每12分鐘發生幾次，未明定是否包含起點與終點。",
+      "resolution": "改為第1分鐘至第36分鐘且包含第36分鐘，明列12、24、36三次，消除端點歧義。"
+    }
+  ],
+  "openIssues": [],
+  "productionActivationAllowed": false
+}

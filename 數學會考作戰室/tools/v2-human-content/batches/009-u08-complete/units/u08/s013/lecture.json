@@ -1,0 +1,246 @@
+{
+  "lectureId": "u08-s013-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-views",
+  "skillId": "orthographic-description",
+  "lockedSkillTitle": "三視圖文字描述",
+  "title": "三視圖文字描述：把輪廓條件轉成列高與欄高",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能把文字版俯視占用位置轉成底面配置。",
+    "能把正視圖與側視圖的高度序列解讀為最高欄高。",
+    "能檢查三個視圖是否相容。",
+    "能求可能的最少或最多方塊數。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "solid-views-basic"
+    ],
+    "bridgeExplanation": "先知道各視圖保留的方向，再把圖像改寫成明確的座標位置與高度序列。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "solid-views-basic",
+      "requiredLevel": "能辨認正視、俯視、側視所保留的方向，並理解遮蔽與欄高。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "底面格",
+      "definition": "俯視圖中的一個占用位置。"
+    },
+    {
+      "term": "高度序列",
+      "definition": "依固定方向列出各欄可見最高方塊數。"
+    },
+    {
+      "term": "列",
+      "definition": "本課文字座標中，沿前後方向排列的一組位置。"
+    },
+    {
+      "term": "欄",
+      "definition": "沿左右方向排列的一組位置。"
+    },
+    {
+      "term": "相容",
+      "definition": "存在至少一個立體同時符合所有視圖條件。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(x,y)",
+      "meaning": "底面第 x 欄、第 y 列的位置；題目會明確約定方向。"
+    },
+    {
+      "symbol": "[2,1,3]",
+      "meaning": "依指定順序三欄的最高高度。"
+    },
+    {
+      "symbol": "h(x,y)",
+      "meaning": "位置 (x,y) 的堆疊高度，若占用則為正整數。"
+    }
+  ],
+  "conceptDevelopment": [
+    "文字三視圖必須先定義座標方向。俯視提供哪些 (x,y) 有方塊；正視高度序列通常給每個 x 欄在所有 y 中的最大高度；側視則給每個 y 列在所有 x 中的最大高度。",
+    "若正視某欄高度為 3，表示該欄至少有一個位置高度 3，不代表該欄每個位置都高 3。",
+    "求最少方塊數時，盡量讓同一高堆同時滿足正視與側視的最大值；求最多時，在不超過各欄與各列上限下提高其他占用位置。",
+    "相容性檢查包括：俯視占用位置是否能承擔所需高度；正視與側視的全域最高值應一致，因為都是同一立體的最高高度。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "正視欄高",
+      "statement": "對固定 x，所有占用 y 位置高度的最大值。"
+    },
+    {
+      "name": "側視列高",
+      "statement": "對固定 y，所有占用 x 位置高度的最大值。"
+    },
+    {
+      "name": "最少方塊配置",
+      "statement": "在滿足全部視圖條件下，使所有 h(x,y) 總和最小。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "正視第 x 欄=max_y h(x,y)",
+      "conditions": [
+        "該 x 欄至少有一個俯視占用位置"
+      ],
+      "meaning": "沿前後方向投影後只見最高輪廓。"
+    },
+    {
+      "formula": "側視第 y 列=max_x h(x,y)",
+      "conditions": [
+        "該 y 列至少有一個俯視占用位置"
+      ],
+      "meaning": "沿左右方向投影後只見最高輪廓。"
+    },
+    {
+      "formula": "總方塊數=Σh(x,y)",
+      "conditions": [
+        "只對俯視占用位置求和"
+      ],
+      "meaning": "每一位置高度即方塊數。"
+    }
+  ],
+  "invalidUseCases": [
+    "正視高度 3 不能解讀為整欄每個底面格都有 3 塊。",
+    "俯視未占用的位置高度必須是 0，不能為了滿足側視偷偷加方塊。",
+    "正視與側視的最大高度不同時，不一定相容；需檢查是否有方向或順序誤讀。",
+    "沒有俯視位置資訊時，最少與最多方塊數常無法唯一。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "明確寫出所有俯視占用座標。",
+      "check": "未列出的座標高度設 0。"
+    },
+    {
+      "step": 2,
+      "instruction": "把正視序列轉成每個 x 的最大值條件。",
+      "check": "每欄至少一個位置達到該高度。"
+    },
+    {
+      "step": 3,
+      "instruction": "把側視序列轉成每個 y 的最大值條件。",
+      "check": "每列至少一個位置達到該高度。"
+    },
+    {
+      "step": 4,
+      "instruction": "配置高度並逐欄逐列驗證。",
+      "check": "求最少時合併高峰；求最多時不超過雙向上限。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "俯視占用 (1,1)、(1,2)、(2,1)，正視兩欄高度 [2,1]。這表示什麼？",
+      "solutionSteps": [
+        "x=1 欄兩位置中最高為 2。",
+        "x=2 欄唯一位置高度為 1。"
+      ],
+      "answer": "max(h11,h12)=2，且 h21=1。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "若側視兩列高度 [2,1]，且沿用上例，配置 h11=2、h12=1、h21=1 是否相容？",
+      "solutionSteps": [
+        "正視 x1 最大 2、x2 最大 1。",
+        "側視 y1 max(2,1)=2，y2=1。"
+      ],
+      "answer": "相容。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "俯視只有 (1,1)、(2,1)，正視 [3,2]，側視只有一列高度 [3]，最少方塊數？",
+      "solutionSteps": [
+        "兩占用位置各要達正視高度 3、2。",
+        "側視最大為 3 已自然滿足。",
+        "總數 3+2=5。"
+      ],
+      "answer": "5 塊。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "正視最高為 4，側視所有列最高都不超過 3，能否相容？",
+      "solutionSteps": [
+        "同一立體全域最高高度從任何水平視向都相同。",
+        "正視需有高度 4，但側視沒有任何列可容納 4。"
+      ],
+      "answer": "不能相容。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "把視圖文字轉成最大值條件。",
+    "standard": "驗證指定高度配置。",
+    "advanced": "求最少或最多方塊數與檢查相容性。",
+    "literacy": "倉儲堆疊、城市天際線與貨架配置可用俯視占位和兩方向最高高度描述。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把正視序列當每格高度。",
+      "why": "忽略投影只留最大值。",
+      "correction": "每個值是該欄最大高度。"
+    },
+    {
+      "mistake": "在俯視空格加方塊。",
+      "why": "無視占用限制。",
+      "correction": "未占用位置高度固定為 0。"
+    },
+    {
+      "mistake": "只驗正視不驗側視。",
+      "why": "配置可能違反另一方向。",
+      "correction": "完成後逐 x 欄與 y 列取最大值。"
+    },
+    {
+      "mistake": "正視 [3,2] 就把側視寫成 [3,2]。",
+      "why": "兩序列方向與格數不同。",
+      "correction": "側視依前後列而非左右欄。"
+    },
+    {
+      "mistake": "求最少時讓每格都達到欄高。",
+      "why": "過度配置。",
+      "correction": "只需至少一格達每個最大值。"
+    },
+    {
+      "mistake": "認為不同最大高度仍可相容。",
+      "why": "忽略全域最高方塊同時會出現在兩水平視圖。",
+      "correction": "正視與側視的最大值必須相同。"
+    }
+  ],
+  "selfCheckItems": [
+    "座標方向是否明確？",
+    "每個視圖值是最大值還是總和？",
+    "俯視空格是否保持 0？",
+    "配置後是否同時通過正視與側視？"
+  ],
+  "conciseSummary": [
+    "俯視決定占用位置。",
+    "正視與側視給欄或列的最大高度。",
+    "總方塊數是各占用位置高度總和。",
+    "最少配置可讓同一高堆同時滿足兩方向需求。"
+  ],
+  "connections": {
+    "previous": "上一技能建立三視圖的方向與投影概念。",
+    "next": [
+      "最後一技能把角度、面積、單位與三視圖整合到真實資訊判讀。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "以座標與最大值逐一驗證四例；配置 (2,1,1) 同時產生正視 [2,1] 與側視 [2,1]，最少方塊例為 5，並檢查兩水平視圖的全域最大高度一致。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "eda8ee21332da9364e88133d69de7aa278a0d5c3100f3288291f26cafc70219e"
+}

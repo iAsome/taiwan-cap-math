@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const here=path.dirname(fileURLToPath(import.meta.url));
+const root=path.resolve(here,'..');
+const readJsonl=p=>fs.readFileSync(path.join(root,p),'utf8').split(/\r?\n/).filter(Boolean).map(JSON.parse);
+const lecture=JSON.parse(fs.readFileSync(path.join(root,'units/u01/s001/lecture.json'),'utf8'));
+const questions=readJsonl('units/u01/s001/mc-questions.jsonl');
+const constructedResponses=readJsonl('units/u01/s001/constructed-response.jsonl');
+const out=path.join(root,'staging/u01-s001-human-content.mjs');
+fs.mkdirSync(path.dirname(out),{recursive:true});
+const banner='// GENERATED ONLY AS A SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT. DO NOT ACTIVATE DIRECTLY.\n';
+const body=banner+`export const LECTURE = ${JSON.stringify(lecture,null,2)};\n\nexport const QUESTIONS = ${JSON.stringify(questions,null,2)};\n\nexport const CONSTRUCTED_RESPONSES = ${JSON.stringify(constructedResponses,null,2)};\n`;
+fs.writeFileSync(out,body,'utf8');
+console.log(out);

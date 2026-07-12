@@ -1,0 +1,146 @@
+{
+  "lectureId": "u15-s012-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-applications",
+  "skillId": "linear-function-application",
+  "skillSlot": "s012",
+  "skillTitle": "線型函數應用",
+  "order": 12,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": "piecewise-linear-basic",
+      "title": "分段線型基本",
+      "requiredLevel": "能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。",
+      "bridge": "分段能力讓我們處理較複雜方案；本節回到單一線型模型，從固定量與每單位變化建立公式、比較方案並檢查合理範圍。"
+    }
+  ],
+  "learningGoals": [
+    "把固定費與單位費轉成線型函數",
+    "由兩筆情境資料建立模型",
+    "用模型比較方案、預測與解釋結果"
+  ],
+  "vocabulary": [
+    {
+      "term": "固定量",
+      "meaning": "輸入為 0 時仍存在的起始值"
+    },
+    {
+      "term": "單位變動量",
+      "meaning": "每增加一單位輸入造成的輸出改變"
+    },
+    {
+      "term": "模型",
+      "meaning": "用函數表示情境關係"
+    }
+  ],
+  "conceptDevelopment": [
+    "許多生活費用可寫成 y=ax+b：a 是每單位增加量，b 是固定起始量。建模前要先定義 x、y 與單位。",
+    "求出交點可比較兩方案何時同價；但最後還要檢查輸入是否符合整數、非負或容量限制。"
+  ],
+  "definitionsAndMeaning": "許多生活費用可寫成 y=ax+b：a 是每單位增加量，b 是固定起始量。建模前要先定義 x、y 與單位。",
+  "formulasAndConditions": [
+    "總量=單位變動量×數量+固定量。",
+    "兩方案同值：a₁x+b₁=a₂x+b₂。"
+  ],
+  "invalidUseCases": [
+    "把固定費乘上數量。",
+    "解出交點後忽略整數限制。",
+    "把預測延伸到模型不適用範圍。"
+  ],
+  "stepByStepMethod": [
+    "定義自變數、應變數與單位。",
+    "找出每單位變化 a 與起始值 b。",
+    "建立 y=ax+b。",
+    "代入、聯立或解方程，最後回到情境檢查。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s012-ex01",
+      "title": "影印費",
+      "prompt": "影印店收開機費 20 元，每印 1 張再收 3 元。以 x 表示張數，建立總費用 C 的線型函數。",
+      "solution": "開機費 20 元，每張 3 元：C=3x+20。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s012-ex02",
+      "title": "兩點建模",
+      "prompt": "購買 2 件商品共 110 元，購買 5 件共 200 元，且總價與件數呈線型關係。求單位變化與模型。",
+      "solution": "2 件 110 元、5 件 200 元，單位增加 30 元，模型 y=30x+50。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s012-ex03",
+      "title": "方案比較",
+      "prompt": "方案 A 的費用為 4x+60，方案 B 為 6x+20。求兩方案同價時的 x，並判斷交點意義。",
+      "solution": "A=4x+60、B=6x+20，同價於 x=10。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s012-ex04",
+      "title": "限制檢查",
+      "prompt": "某線型模型算出需要 7.5 箱商品，但實際只能整箱購買。應如何解讀或調整此結果？",
+      "solution": "若 x 是箱數，解得 7.5 箱時不能直接作為可購箱數。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s012-m01",
+      "wrongReasoning": "交換斜率與截距。",
+      "correction": "在 y=ax+b 中，a 對應每增加 1 單位的費用或變化，b 是 x=0 時仍存在的固定量；用單位檢查兩者不可交換。"
+    },
+    {
+      "mistakeId": "s012-m02",
+      "wrongReasoning": "只算單位費而漏固定費。",
+      "correction": "總費用要寫成固定費＋單位費×數量；即使 x=0 沒有用量，只要方案仍收費就要保留截距。"
+    },
+    {
+      "mistakeId": "s012-m03",
+      "wrongReasoning": "聯立移項符號錯。",
+      "correction": "比較兩方案時令兩個完整費用式相等，移項後重新代回兩式核對同價，避免單靠一邊運算。"
+    },
+    {
+      "mistakeId": "s012-m04",
+      "wrongReasoning": "未解釋 x=0 的意義。",
+      "correction": "x=0 時的輸出是模型截距；應依情境解釋為起始量、基本費或初始高度，而不是只寫一個數。"
+    },
+    {
+      "mistakeId": "s012-m05",
+      "wrongReasoning": "模型外插超過題目允許範圍。",
+      "correction": "模型只能在題目給定的時間、數量或容量範圍內使用；超出資料區間時要明示外插不一定可靠。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "固定 80 元，每公里 12 元，式子？",
+      "answer": "y=12x+80"
+    },
+    {
+      "prompt": "y=5x+30 的 30 表示？",
+      "answer": "固定起始量。"
+    },
+    {
+      "prompt": "比較方案交點後還要檢查什麼？",
+      "answer": "定義域與實際限制。"
+    }
+  ],
+  "summary": "線型應用的核心是辨認固定量 b、單位變動量 a，並檢查模型範圍。",
+  "previousSkillConnection": "piecewise-linear-basic",
+  "nextSkillConnection": "function-literacy",
+  "figureRefs": [],
+  "accessibilityNotes": [],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「線型函數應用」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能以自己的話說明「分段線型基本」並完成基本判斷或計算。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "d1715ce7b60329b110974e9cb5e2a1f914c89b3f1ed1980f5865a653f3f841dd"
+}

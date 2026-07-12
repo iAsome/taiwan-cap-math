@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "math-v2-production-cutover-plan-r1",
+  "contentVersion": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+  "sequence": [
+    "create-and-push-immutable-tag",
+    "apply-staged-payload",
+    "commit-cutover",
+    "run-node-gate",
+    "run-browser-gate",
+    "verify-generated-and-v1-rollbacks",
+    "authorize-retirement-separately"
+  ],
+  "rollbackScript": "ops/rollback-to-precutover-tag.mjs",
+  "oldDatabaseDeletionDuringCutover": false
+}

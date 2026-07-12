@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U20 semantic review",
+  "type": "object",
+  "required": [
+    "questionId",
+    "contentSha256",
+    "independentSolution",
+    "optionTruth",
+    "uniqueCorrectAnswer",
+    "reviewerNote",
+    "contentAuthority",
+    "reviewSha256"
+  ],
+  "properties": {
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

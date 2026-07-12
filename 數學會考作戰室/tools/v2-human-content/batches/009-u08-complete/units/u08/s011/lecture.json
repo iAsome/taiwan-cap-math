@@ -1,0 +1,252 @@
+{
+  "lectureId": "u08-s011-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-measure",
+  "skillId": "unit-conversion-geometry",
+  "lockedSkillTitle": "幾何量的單位換算",
+  "title": "幾何量的單位換算：面積倍率要平方",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能進行公釐、公分、公尺與公里的長度換算。",
+    "能正確換算平方公分、平方公尺與平方公里。",
+    "能理解長度倍率與面積倍率不同。",
+    "能在幾何計算前統一單位。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "composite-area-text"
+    ],
+    "bridgeExplanation": "複合面積計算若尺寸單位不同，必須先統一；面積單位的倍率是長度倍率的平方。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "composite-area-text",
+      "requiredLevel": "能辨認長度與面積，並用平方單位表示面積。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "長度單位",
+      "definition": "描述一維距離，如公分、公尺。"
+    },
+    {
+      "term": "面積單位",
+      "definition": "描述二維大小，如平方公分、平方公尺。"
+    },
+    {
+      "term": "平方單位",
+      "definition": "邊長為一單位的正方形面積。"
+    },
+    {
+      "term": "公畝",
+      "definition": "100 平方公尺，符號 a。"
+    },
+    {
+      "term": "公頃",
+      "definition": "10,000 平方公尺，符號 ha。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "1 m=100 cm",
+      "meaning": "公尺與公分的長度關係。"
+    },
+    {
+      "symbol": "1 m²=10,000 cm²",
+      "meaning": "因 100×100=10,000。"
+    },
+    {
+      "symbol": "1 km²=1,000,000 m²",
+      "meaning": "因 1,000×1,000=1,000,000。"
+    },
+    {
+      "symbol": "1 ha=10,000 m²",
+      "meaning": "公頃與平方公尺關係。"
+    }
+  ],
+  "conceptDevelopment": [
+    "長度換算沿一個方向乘倍率；面積有長與寬兩個方向，所以倍率要平方。",
+    "1 公尺等於 100 公分，因此 1 平方公尺可想成 100 公分×100 公分，共 10,000 平方公分。",
+    "大單位換小單位數值變大；小單位換大單位數值變小。先判方向，再決定乘除。",
+    "幾何公式代入前，所有長度必須統一成同一單位；計算完再依要求換答案單位。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "單位一致",
+      "statement": "同一運算中的相加、相減及長寬乘積須使用可相容且已統一的單位。"
+    },
+    {
+      "name": "面積倍率平方",
+      "statement": "若長度單位倍率為 k，對應面積單位倍率為 k²。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "1 cm=10 mm",
+      "conditions": [
+        "長度"
+      ],
+      "meaning": "公分轉公釐乘 10。"
+    },
+    {
+      "formula": "1 m=100 cm",
+      "conditions": [
+        "長度"
+      ],
+      "meaning": "公尺轉公分乘 100。"
+    },
+    {
+      "formula": "1 m²=10,000 cm²",
+      "conditions": [
+        "面積"
+      ],
+      "meaning": "公尺平方轉公分平方乘 10,000。"
+    },
+    {
+      "formula": "1 km²=100 ha",
+      "conditions": [
+        "面積"
+      ],
+      "meaning": "1 km²=1,000,000 m²，1 ha=10,000 m²。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能把 1 m² 換成 100 cm²。",
+    "周長換算使用長度倍率，不使用平方倍率。",
+    "面積數值與單位不可只改其中一個。",
+    "公分與平方公分是不同種類的量，不能直接比較。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "先辨認量是一維長度還是二維面積。",
+      "check": "看單位是否帶平方。"
+    },
+    {
+      "step": 2,
+      "instruction": "寫出基本單位關係。",
+      "check": "例如 1 m=100 cm。"
+    },
+    {
+      "step": 3,
+      "instruction": "面積時把倍率平方。",
+      "check": "100²=10,000。"
+    },
+    {
+      "step": 4,
+      "instruction": "判斷大轉小乘、小轉大除，並回寫完整單位。",
+      "check": "用估量檢查數值變大或變小是否合理。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "3.6 公尺等於多少公分？",
+      "solutionSteps": [
+        "1 公尺=100 公分。",
+        "3.6×100=360。"
+      ],
+      "answer": "360 公分。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "25,000 平方公分等於多少平方公尺？",
+      "solutionSteps": [
+        "1 平方公尺=10,000 平方公分。",
+        "25,000÷10,000=2.5。"
+      ],
+      "answer": "2.5 平方公尺。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "0.08 平方公里等於多少公頃？",
+      "solutionSteps": [
+        "1 平方公里=100 公頃。",
+        "0.08×100=8。"
+      ],
+      "answer": "8 公頃。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "長 2 公尺、寬 75 公分的長方形面積，以平方公分表示。",
+      "solutionSteps": [
+        "2 公尺=200 公分。",
+        "200×75=15,000。"
+      ],
+      "answer": "15,000 平方公分。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "直接做單一步長度或面積換算。",
+    "standard": "在公式代入前統一單位。",
+    "advanced": "公頃、平方公里與混合小數倍率。",
+    "literacy": "土地、建材與圖面常混用公分、公尺、公頃，錯把倍率平方會造成百倍或萬倍誤差。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "1 m² 寫成 100 cm²。",
+      "why": "只換一個方向。",
+      "correction": "應為 100×100=10,000 cm²。"
+    },
+    {
+      "mistake": "周長公尺轉公分乘 10,000。",
+      "why": "把面積倍率用在長度。",
+      "correction": "周長只乘 100。"
+    },
+    {
+      "mistake": "大單位轉小單位反而除。",
+      "why": "換算方向錯。",
+      "correction": "大轉小數值應變大。"
+    },
+    {
+      "mistake": "2 m×75 cm 直接乘 150。",
+      "why": "單位未統一。",
+      "correction": "先把 2 m 換成 200 cm。"
+    },
+    {
+      "mistake": "平方公里與公頃混成 1:1000。",
+      "why": "未由平方公尺推導。",
+      "correction": "1 km²=100 ha。"
+    },
+    {
+      "mistake": "換算後只寫數字。",
+      "why": "缺少量的種類。",
+      "correction": "答案必須附正確單位與平方。"
+    }
+  ],
+  "selfCheckItems": [
+    "量是長度還是面積？",
+    "倍率是否需要平方？",
+    "大轉小時數值是否變大？",
+    "代入面積公式前長與寬是否同單位？"
+  ],
+  "conciseSummary": [
+    "長度倍率是一維，面積倍率要平方。",
+    "1 m²=10,000 cm²。",
+    "1 km²=100 ha。",
+    "幾何運算前先統一單位。"
+  ],
+  "connections": {
+    "previous": "上一技能的複合面積需要一致的尺寸單位。",
+    "next": [
+      "下一技能進入三視圖，會區分長、寬、高三個方向及其在各視圖中的呈現。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "逐步驗算 3.6 m=360 cm、25,000 cm²=2.5 m²、0.08 km²=8 ha，以及 200×75=15,000 cm²；長度與面積倍率未混用。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "9b72cdd87f101178085c042bb0d9a4772018ae7fc0f1060b9fcf1d08a2e6bf89"
+}

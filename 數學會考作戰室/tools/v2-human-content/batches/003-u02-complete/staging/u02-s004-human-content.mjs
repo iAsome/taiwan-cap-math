@@ -1,0 +1,1115 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u02-s004-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-factors",
+  "skillId": "fraction-gcd-basic",
+  "title": "最大公因數：找出能同時整除多個數的最大單位",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能列因數或用質因數分解求兩數GCD。",
+    "能求三個數的最大公因數。",
+    "能處理一數整除另一數的特例。",
+    "能反向檢查指定GCD條件。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-prime-factorization",
+      "requiredLevel": "能正確分解整數並讀取各質因數指數。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "公因數",
+      "definition": "同時是兩個或多個整數因數的數。"
+    },
+    {
+      "term": "最大公因數",
+      "definition": "所有正公因數中最大的。"
+    },
+    {
+      "term": "互質",
+      "definition": "最大公因數為1。"
+    },
+    {
+      "term": "GCD",
+      "definition": "greatest common divisor 的縮寫。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "gcd(a,b)",
+      "meaning": "a與b的最大公因數。"
+    }
+  ],
+  "conceptNarrative": [
+    "GCD只保留每個數都具有的質因數。",
+    "共同質因數的指數要取各數中最小值，因為共同因數不能超過任何一數的供應量。",
+    "若a整除b，則gcd(a,b)=a。",
+    "GCD可把多個數同時約成沒有更大共同因數的比例。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "最大公因數",
+      "statement": "同時整除所有指定整數的最大正整數。"
+    },
+    {
+      "name": "互質",
+      "statement": "兩數最大公因數為1。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "gcd=共同質因數的較小指數乘積",
+      "conditions": [
+        "先完成所有數的質因數分解"
+      ],
+      "meaning": "質因數法。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不是所有題目都要把兩數相乘。",
+    "非整數不在本節GCD定義範圍。",
+    "共同因數不等於所有因數聯集。",
+    "求最小公倍數時不能使用較小指數規則。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "分解每個數。",
+      "check": "質因數與指數是否正確？"
+    },
+    {
+      "step": 2,
+      "instruction": "圈出所有數共同出現的質因數。",
+      "check": "缺少於任一數的底數要排除。"
+    },
+    {
+      "step": 3,
+      "instruction": "每個共同底數取最小指數。",
+      "check": "哪一數供應最少？"
+    },
+    {
+      "step": 4,
+      "instruction": "相乘得到GCD。",
+      "check": "結果是否整除每個原數？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查最大性。",
+      "check": "是否還能乘更大的共同因數？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "求 gcd(48,72)。",
+      "solutionSteps": [
+        "48=2⁴×3。",
+        "72=2³×3²，取2³×3。"
+      ],
+      "answer": "24。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "求 gcd(45,75,105)。",
+      "solutionSteps": [
+        "分解後共同含3×5。",
+        "更高指數無法同時保留。"
+      ],
+      "answer": "15。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "已知15整除60。",
+      "solutionSteps": [
+        "15同時整除15與60。",
+        "共同因數不可能大於15。"
+      ],
+      "answer": "gcd(15,60)=15。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "把84:126約成最簡整數比。",
+      "solutionSteps": [
+        "gcd=42。",
+        "兩數同除42。"
+      ],
+      "answer": "2:3。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把共同質因數取較大指數。",
+      "why": "混用LCM規則。",
+      "correction": "GCD取較小指數。"
+    },
+    {
+      "mistake": "只找出一個公因數就停止。",
+      "why": "未檢查最大性。",
+      "correction": "比較所有共同因數或用質因數法。"
+    },
+    {
+      "mistake": "三數題只算前兩數。",
+      "why": "第三數可能缺少某因數。",
+      "correction": "結果還要與第三數求GCD。"
+    },
+    {
+      "mistake": "把互質理解成都是質數。",
+      "why": "互質只描述共同因數。",
+      "correction": "如8與15皆合數但互質。"
+    },
+    {
+      "mistake": "一數整除另一數仍算成1。",
+      "why": "忽略較小數本身是共同因數。",
+      "correction": "直接取較小數。"
+    },
+    {
+      "mistake": "求得結果後未驗整除。",
+      "why": "算術錯誤難發現。",
+      "correction": "用每個原數除以GCD。"
+    }
+  ],
+  "selfCheck": [
+    "結果是否整除每個原數？",
+    "共同底數是否完整？",
+    "指數是否取最小？",
+    "多數題是否納入全部數？",
+    "是否混成LCM？"
+  ],
+  "summary": [
+    "GCD是最大共同整除單位。",
+    "質因數法取共同底數的最小指數。",
+    "一數整除另一數時取較小數。",
+    "互質表示GCD為1。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-prime-factorization，需能完成其基本判斷與計算。",
+    "next": [
+      "最小公倍數使用相反的最大指數原則。",
+      "最大分組與最大切割會直接使用GCD。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s004-v001",
+      "u02-s004-v002",
+      "u02-s004-v003",
+      "u02-s004-v004",
+      "u02-s004-v005",
+      "u02-s004-v006",
+      "u02-s004-v007",
+      "u02-s004-v008",
+      "u02-s004-v009",
+      "u02-s004-v010",
+      "u02-s004-v011",
+      "u02-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s004-cr001",
+      "u02-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重新分解48、72、45、75、105與84、126，GCD均能整除全部原數；互質與整除特例另行核對。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "658d47ca24c49238d7803d27e74daebc8df356f2e6b62ee01e4b8c3146eb488a",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u02-s004-v001",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "18 和 24 的最大公因數是多少？",
+    "choices": [
+      "6",
+      "8",
+      "12",
+      "72"
+    ],
+    "answerIndex": 0,
+    "explanation": "依題意逐步處理：18 的因數有1、2、3、6、9、18；24 的因數有1、2、3、4、6、8、12、24；最大共同者為6。所以答案是「6」。",
+    "steps": [
+      "18 的因數有1、2、3、6、9、18",
+      "24 的因數有1、2、3、4、6、8、12、24；最大共同者為6"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6",
+        "truth": true,
+        "reason": "6 同時整除18、24且是最大。"
+      },
+      {
+        "choice": "8",
+        "truth": false,
+        "reason": "8不能整除18。"
+      },
+      {
+        "choice": "12",
+        "truth": false,
+        "reason": "12不能整除18。"
+      },
+      {
+        "choice": "72",
+        "truth": false,
+        "reason": "72是公倍數方向。"
+      }
+    ],
+    "commonMistake": "把最小公倍數當成最大公因數。",
+    "concept": "最大公因數是兩數共同因數中最大的。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "直接求兩數 GCD。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "1bdb8357095ce3545abe472d780beadd9d154c9befebd06c4e6a10f6ae1091af",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v002",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "已知 45=3²×5，60=2²×3×5。求最大公因數時，共同質因數應組成下列哪一個算式？",
+    "choices": [
+      "5",
+      "3×5",
+      "2²×5",
+      "2×3×5"
+    ],
+    "answerIndex": 1,
+    "explanation": "最大公因數只取兩數共同出現的質因數，且每一個共同質因數取較小指數，所以得到 3×5。",
+    "steps": [
+      "比較 45=3²×5 與 60=2²×3×5。",
+      "共同質因數為 3 和 5，分別取指數 1。",
+      "得到 3×5。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "只取 5，漏掉共同質因數 3。"
+      },
+      {
+        "choice": "3×5",
+        "truth": true,
+        "reason": "共同質因數 3 和 5 都取較小指數 1。"
+      },
+      {
+        "choice": "2²×5",
+        "truth": false,
+        "reason": "2 不是 45 的質因數，不能放入共同部分。"
+      },
+      {
+        "choice": "2×3×5",
+        "truth": false,
+        "reason": "2 不是共同質因數。"
+      }
+    ],
+    "commonMistake": "把只出現在其中一個數的質因數也放入最大公因數。",
+    "concept": "求 GCD 時，只取共同質因數並取較小指數。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "辨認質因數分解法中最大公因數的共同部分。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "4d9e48db6b791c1fbbd93f507dd53e51800cae518b84ee5dd6ccb5e3b1391c26",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v003",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "12、18、30 的最大公因數是多少？",
+    "choices": [
+      "2",
+      "3",
+      "6",
+      "12"
+    ],
+    "answerIndex": 2,
+    "explanation": "依題意逐步處理：三數都可被6整除；沒有比6更大的數同時整除三者。所以答案是「6」。",
+    "steps": [
+      "三數都可被6整除",
+      "沒有比6更大的數同時整除三者"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "2 是公因數但不是最大。"
+      },
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "3 是公因數但不是最大。"
+      },
+      {
+        "choice": "6",
+        "truth": true,
+        "reason": "6 同時整除三數。"
+      },
+      {
+        "choice": "12",
+        "truth": false,
+        "reason": "12不能整除18與30。"
+      }
+    ],
+    "commonMistake": "只比較前兩個數，忘記第三個。",
+    "concept": "多數 GCD 必須同時整除所有數。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "求三數 GCD。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "e2cd25ac42ed131d1d0a0eb0b286b3b3a537c961bd4ea145f9c531fec270a40e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v004",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 a 能整除 b，則 a 與 b 的最大公因數為何？",
+    "choices": [
+      "1",
+      "b",
+      "a+b",
+      "a"
+    ],
+    "answerIndex": 3,
+    "explanation": "依題意逐步處理：a 是 b 的因數，因此 a 同時整除 a、b；任何共同因數不可能大於 a。所以答案是「a」。",
+    "steps": [
+      "a 是 b 的因數，因此 a 同時整除 a、b",
+      "任何共同因數不可能大於 a"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1",
+        "truth": false,
+        "reason": "不一定互質。"
+      },
+      {
+        "choice": "b",
+        "truth": false,
+        "reason": "b通常大於a，不能整除a。"
+      },
+      {
+        "choice": "a+b",
+        "truth": false,
+        "reason": "和不是共同因數。"
+      },
+      {
+        "choice": "a",
+        "truth": true,
+        "reason": "GCD(a,b)=a。"
+      }
+    ],
+    "commonMistake": "以為所有兩數的最大公因數都是1。",
+    "concept": "一數整除另一數時，較小者就是 GCD。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "由整除關係判定兩數的最大公因數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "1cc58ec94e7591e1943e0c1d4c85cdaefce3e7aea6ab49066e3308270cfe7efd",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v005",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "84 與 126 的最大公因數是多少？",
+    "choices": [
+      "42",
+      "21",
+      "14",
+      "252"
+    ],
+    "answerIndex": 0,
+    "explanation": "依題意逐步處理：84=2²×3×7，126=2×3²×7；共同部分為2×3×7=42。所以答案是「42」。",
+    "steps": [
+      "84=2²×3×7，126=2×3²×7",
+      "共同部分為2×3×7=42"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "42",
+        "truth": true,
+        "reason": "42 同時整除兩數。"
+      },
+      {
+        "choice": "21",
+        "truth": false,
+        "reason": "21仍可再乘2。"
+      },
+      {
+        "choice": "14",
+        "truth": false,
+        "reason": "14漏掉質因數3。"
+      },
+      {
+        "choice": "252",
+        "truth": false,
+        "reason": "252是公倍數。"
+      }
+    ],
+    "commonMistake": "共同指數取較大而算成公倍數。",
+    "concept": "GCD 取共同底數的較小指數。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "精確求較大數 GCD。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "8e08b5c867cf0752b2a82c13458e74fd3862e2605ca437ae1fcfd0467db0e010",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v006",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "已知 gcd(36,n)=12。下列哪一個可能是 n？",
+    "choices": [
+      "18",
+      "24",
+      "30",
+      "54"
+    ],
+    "answerIndex": 1,
+    "explanation": "依題意逐步處理：gcd(36,24)=12；其餘選項與36的最大公因數不是12。所以答案是「24」。",
+    "steps": [
+      "gcd(36,24)=12",
+      "其餘選項與36的最大公因數不是12"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "18",
+        "truth": false,
+        "reason": "gcd(36,18)=18。"
+      },
+      {
+        "choice": "24",
+        "truth": true,
+        "reason": "gcd(36,24)=12。"
+      },
+      {
+        "choice": "30",
+        "truth": false,
+        "reason": "gcd(36,30)=6。"
+      },
+      {
+        "choice": "54",
+        "truth": false,
+        "reason": "gcd(36,54)=18。"
+      }
+    ],
+    "commonMistake": "只檢查 n 是否為12的倍數，沒檢查是否有更大公因數。",
+    "concept": "指定 GCD 要排除額外共同因數。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "反向檢查 GCD。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "2efef4ce8919e45fa7b4fca6baf5fcf2c8344bb945279c02335583c0061f901f",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v007",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 gcd(2³×3²×5, 2²×3⁴×7)=2ᵃ×3ᵇ，則 a+b 等於多少？",
+    "choices": [
+      "3",
+      "5",
+      "4",
+      "6"
+    ],
+    "answerIndex": 2,
+    "explanation": "依題意逐步處理：共同底數為2與3；較小指數分別是2、2，所以a+b=4。所以答案是「4」。",
+    "steps": [
+      "共同底數為2與3",
+      "較小指數分別是2、2，所以a+b=4"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "把其中一個指數少算會得3。"
+      },
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "取一大一小可能得5。"
+      },
+      {
+        "choice": "4",
+        "truth": true,
+        "reason": "2+2=4。"
+      },
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "把較大指數相加會得6。"
+      }
+    ],
+    "commonMistake": "求 GCD 時誤取較大指數。",
+    "concept": "GCD 對共同質因數取較小指數。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "以符號分解式求 GCD 引數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "c7979771ab8c74b8665d609586bf2740a6113cd952947885a4f52fb925b23430",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v008",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "三個數 72、108、180 的最大公因數是多少？",
+    "choices": [
+      "6",
+      "12",
+      "18",
+      "36"
+    ],
+    "answerIndex": 3,
+    "explanation": "依題意逐步處理：72=2³×3²，108=2²×3³，180=2²×3²×5；共同部分2²×3²=36。所以答案是「36」。",
+    "steps": [
+      "72=2³×3²，108=2²×3³，180=2²×3²×5",
+      "共同部分2²×3²=36"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "6雖為共同因數，但72、108與180還共同含有更大的因數36。"
+      },
+      {
+        "choice": "12",
+        "truth": false,
+        "reason": "12漏一個3。"
+      },
+      {
+        "choice": "18",
+        "truth": false,
+        "reason": "18漏一個2。"
+      },
+      {
+        "choice": "36",
+        "truth": true,
+        "reason": "36同時整除三數且最大。"
+      }
+    ],
+    "commonMistake": "只求前兩數 GCD 就停止。",
+    "concept": "三數 GCD 取所有數共同質因數的最小指數。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "求三數較大 GCD。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "488e690bab4fbab8d879ca610d21291e693cdd403cee8fd19afa473a4d08311a",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v009",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 gcd(48,72)=d，則 48÷d+72÷d 等於多少？",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answerIndex": 0,
+    "explanation": "依題意逐步處理：d=24；48÷24+72÷24=2+3=5。所以答案是「5」。",
+    "steps": [
+      "d=24",
+      "48÷24+72÷24=2+3=5"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "5",
+        "truth": true,
+        "reason": "計算得5。"
+      },
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "把d誤算12會得10。"
+      },
+      {
+        "choice": "7",
+        "truth": false,
+        "reason": "沒有對應正確商和。"
+      },
+      {
+        "choice": "8",
+        "truth": false,
+        "reason": "不是直接把兩商相乘。"
+      }
+    ],
+    "commonMistake": "先把 GCD 算錯，後續即使運算正確也失分。",
+    "concept": "可用 GCD 將兩數同時約成互質比。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "把 GCD 用於約化。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "9920d2fb1ad9d276023c1dbcfb9c1b5a68265cb76ffd01e569c23a5752f5ab8b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v010",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "有 48 顆紅珠與 60 顆藍珠，要分成內容完全相同且全部用完的最多袋數。最多可分幾袋？",
+    "choices": [
+      "6 袋",
+      "12 袋",
+      "15 袋",
+      "20 袋"
+    ],
+    "answerIndex": 1,
+    "explanation": "依題意逐步處理：袋數必須同時整除48與60；gcd(48,60)=12。所以答案是「12 袋」。",
+    "steps": [
+      "袋數必須同時整除48與60",
+      "gcd(48,60)=12"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6 袋",
+        "truth": false,
+        "reason": "6可行但不是最多。"
+      },
+      {
+        "choice": "12 袋",
+        "truth": true,
+        "reason": "12是最大共同因數。"
+      },
+      {
+        "choice": "15 袋",
+        "truth": false,
+        "reason": "15不能整除48。"
+      },
+      {
+        "choice": "20 袋",
+        "truth": false,
+        "reason": "20不能整除48。"
+      }
+    ],
+    "commonMistake": "把每袋珠數當成袋數。",
+    "concept": "最多相同組數就是各總量的 GCD。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "literacy"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "用 GCD 求最大分組數。",
+    "literacyContextNecessity": "紅藍數量、每袋相同與全部用完共同限定袋數為兩數公因數，最多條件指定最大公因數。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "1f9bdb546e93b36e40141fff4baec3867c51d30e350b550af00fefc42bcc671e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v011",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "兩條繩子長 84 公分與 126 公分，要剪成等長且最長的小段，不剩餘。每段多長？",
+    "choices": [
+      "14 公分",
+      "21 公分",
+      "42 公分",
+      "63 公分"
+    ],
+    "answerIndex": 2,
+    "explanation": "依題意逐步處理：段長要同時整除84、126；gcd=42。所以答案是「42 公分」。",
+    "steps": [
+      "段長要同時整除84、126",
+      "gcd=42"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "14 公分",
+        "truth": false,
+        "reason": "14可行但不是最長。"
+      },
+      {
+        "choice": "21 公分",
+        "truth": false,
+        "reason": "21可行但不是最長。"
+      },
+      {
+        "choice": "42 公分",
+        "truth": true,
+        "reason": "42是最大共同因數。"
+      },
+      {
+        "choice": "63 公分",
+        "truth": false,
+        "reason": "63不能整除84。"
+      }
+    ],
+    "commonMistake": "看到共同因數就停止，沒有找最大。",
+    "concept": "最長等段長度就是 GCD。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "literacy"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "用 GCD 求最大切割單位。",
+    "literacyContextNecessity": "兩條長度、等長、最長與不剩餘共同決定最大公因數，情境條件不可刪除。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "5591ad1945a88ff424aaefb6df19fa2d5b3e300e8fb8478739ed30114438bc26",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-v012",
+    "unitId": "u02",
+    "numericUnitId": 2,
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一面 96 公分×144 公分的長方形看板，要用邊長相同且最大的正方形貼紙鋪滿、不裁切。貼紙邊長是多少？",
+    "choices": [
+      "12 公分",
+      "24 公分",
+      "36 公分",
+      "48 公分"
+    ],
+    "answerIndex": 3,
+    "explanation": "依題意逐步處理：正方形邊長要同時整除96與144；gcd(96,144)=48。所以答案是「48 公分」。",
+    "steps": [
+      "正方形邊長要同時整除96與144",
+      "gcd(96,144)=48"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "12 公分",
+        "truth": false,
+        "reason": "12可鋪但不是最大。"
+      },
+      {
+        "choice": "24 公分",
+        "truth": false,
+        "reason": "24可鋪但不是最大。"
+      },
+      {
+        "choice": "36 公分",
+        "truth": false,
+        "reason": "36不能整除96。"
+      },
+      {
+        "choice": "48 公分",
+        "truth": true,
+        "reason": "48同時整除兩邊且最大。"
+      }
+    ],
+    "commonMistake": "以面積相除而沒有先找可同時整除兩邊的邊長。",
+    "concept": "最大正方形邊長是長寬的 GCD。",
+    "tags": [
+      "數與量",
+      "最大公因數",
+      "literacy"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "fraction-prime-factorization"
+    ],
+    "authoringIntent": "用 GCD 解鋪面問題。",
+    "literacyContextNecessity": "長與寬、正方形、不裁切及最大四項條件共同限定貼紙邊長。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "ab933f08f98e5bd971d80bf300ab19f25decc06409779c4c5898053a82060ec1",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u02-s004-cr001",
+    "unitId": "u02",
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "用質因數分解求 144、180、252 的最大公因數。",
+    "requiredWork": [
+      "三數都要分解。",
+      "共同質因數取較小指數。"
+    ],
+    "fullCreditSolution": [
+      "144=2⁴×3²。",
+      "180=2²×3²×5。",
+      "252=2²×3²×7。",
+      "共同部分2²×3²=36。"
+    ],
+    "alternativeSolutions": [
+      "可先gcd(144,180)=36，再與252求gcd仍為36。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "三分解與GCD=36完整。"
+      },
+      {
+        "score": 2,
+        "criteria": "答案正確但一個分解書寫小錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "找到共同因數但非最大，或僅算兩數。"
+      },
+      {
+        "score": 0,
+        "criteria": "使用LCM規則或答案不整除三數。"
+      }
+    ],
+    "scoringNotes": [
+      "結果必須能整除三個數。"
+    ],
+    "commonErrors": [
+      "把5或7納入。",
+      "2指數取4。"
+    ],
+    "independentReview": {
+      "derivedResult": "gcd=36。",
+      "ambiguity": "題意與資料足夠，答案唯一。",
+      "decision": "pass"
+    },
+    "contentSha256": "baa4e9fd714ac6d4401affb544bf49a49d3f68c196ce5182fcca0c51cd7cdd03",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u02-s004-cr002",
+    "unitId": "u02",
+    "topicId": "u02-factors",
+    "skillId": "fraction-gcd-basic",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "已知 gcd(84,n)=28，且 n<100。寫出兩個可能的 n，並驗證。",
+    "requiredWork": [
+      "寫出兩個小於100的正整數例子。",
+      "分別計算或分解並驗證最大公因數確為28。",
+      "不得重複同一個例子。"
+    ],
+    "fullCreditSolution": [
+      "例如n=28：gcd(84,28)=28。",
+      "例如n=56：84=2²×3×7，56=2³×7，共同2²×7=28。"
+    ],
+    "alternativeSolutions": [
+      "可選其他符合條件的例子；所有有效例子為28與56，因此兩個都必須寫出。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "兩個小於100的有效n並逐一驗證GCD=28。"
+      },
+      {
+        "score": 2,
+        "criteria": "兩個答案正確但只驗證一個。"
+      },
+      {
+        "score": 1,
+        "criteria": "只有一個有效n。"
+      },
+      {
+        "score": 0,
+        "criteria": "所給n的GCD不是28。"
+      }
+    ],
+    "scoringNotes": [
+      "n=0不採用正整數語境。"
+    ],
+    "commonErrors": [
+      "給42，GCD為42。",
+      "給70，GCD為14。"
+    ],
+    "independentReview": {
+      "derivedResult": "小於100的可能值只有28、56，因此所求兩個例子為n=28、56。",
+      "ambiguity": "雖然題型以「兩個可能值」表述，但小於100的完整解集合恰為28、56；驗證後答案組唯一。",
+      "decision": "pass"
+    },
+    "contentSha256": "01451ee7212bc3e273ecf90a5e9d7c761b1c331c50eaa10f9e037c7a15fc3746",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  }
+];
+
+export const DRAWING_SPECS = [];

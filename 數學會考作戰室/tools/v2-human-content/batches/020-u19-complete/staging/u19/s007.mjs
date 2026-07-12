@@ -1,0 +1,1646 @@
+export const u19_s007 = {
+  "lecture": {
+    "lectureId": "u19-s007-lecture-r1",
+    "unitId": "u19",
+    "numericUnitId": 19,
+    "topicId": "u19-angles",
+    "skillId": "central-angle-arc",
+    "title": "圓心角與弧",
+    "unitTitle": "圓",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "skillIdentity": {
+      "slot": "s007",
+      "lockedSkillId": "central-angle-arc",
+      "lockedOrder": 7,
+      "scope": "以圓心角度數判定所對弧度數。"
+    },
+    "learningOutcomes": [
+      "能由圓心角決定弧度數。",
+      "能把多個圓心角與整圓360°連結。",
+      "能處理優弧與反角。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "inscribed-angle-theorem",
+        "requiredLevel": "能使用「圓周角定理」的核心定義與基本運算，並辨認其適用條件。"
+      }
+    ],
+    "prerequisiteBridge": "先由前一技能「圓周角定理」的結論，連接到本技能「圓心角與弧」所需的新判斷。",
+    "glossary": [
+      {
+        "term": "反角",
+        "definition": "大於180°且小於360°的角。"
+      },
+      {
+        "term": "扇形",
+        "definition": "由兩條半徑與其間弧圍成的圖形。"
+      },
+      {
+        "term": "整圓角",
+        "definition": "繞圓心一周為360°。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "O",
+        "meaning": "圓心。"
+      },
+      {
+        "symbol": "∠ABC",
+        "meaning": "頂點是B的角。"
+      },
+      {
+        "symbol": "π",
+        "meaning": "圓周率；題目未要求近似時保留π。"
+      }
+    ],
+    "conceptNarrative": [
+      "圓心角與它所對弧的度數一一對應，因此分割圓心角也等於分割整個圓。",
+      "若三條半徑把圓分成三部分，三個圓心角總和必為360°。",
+      "優弧所對的是反角，不能只讀圖中較小的角。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "反角",
+        "statement": "大於180°且小於360°的角。"
+      },
+      {
+        "name": "扇形",
+        "statement": "由兩條半徑與其間弧圍成的圖形。"
+      },
+      {
+        "name": "整圓角",
+        "statement": "繞圓心一周為360°。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "m(弧AB)=∠AOB",
+        "conditions": [
+          "O為圓心且角與弧方向一致"
+        ],
+        "meaning": "圓心角弧對應"
+      },
+      {
+        "formula": "所有中心角總和=360°",
+        "conditions": [
+          "各扇形恰好分割整圓"
+        ],
+        "meaning": "整圓關係"
+      }
+    ],
+    "nonApplicableCases": [
+      "優弧不能配較小圓心角。",
+      "中心角若重疊或未覆蓋整圓，不能直接相加為360°。",
+      "圓周角不與弧同度數。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "判定題目指的是劣弧或優弧。",
+        "check": "完成此步後，確認仍在「圓心角與弧」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 2,
+        "instruction": "找出相同端點的圓心角。",
+        "check": "完成此步後，確認仍在「圓心角與弧」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 3,
+        "instruction": "需要時用360°扣除已知中心角。",
+        "check": "完成此步後，確認仍在「圓心角與弧」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 4,
+        "instruction": "用同度數寫出弧。",
+        "check": "完成此步後，確認仍在「圓心角與弧」的CAP範圍且沒有只憑圖形目測。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "s007-L1",
+        "prompt": "∠AOB=75°，求劣弧AB。",
+        "solutionSteps": [
+          "圓心角與劣弧同度數。"
+        ],
+        "answer": "75°。",
+        "level": "basic"
+      },
+      {
+        "exampleId": "s007-L2",
+        "prompt": "劣弧AB=130°，求優弧AB。",
+        "solutionSteps": [
+          "整圓360°。",
+          "360°−130°=230°。"
+        ],
+        "answer": "230°。",
+        "level": "standard"
+      },
+      {
+        "exampleId": "s007-L3",
+        "prompt": "三個中心角為 x、2x、3x。",
+        "solutionSteps": [
+          "總和6x=360°。",
+          "x=60°。"
+        ],
+        "answer": "三角為60°、120°、180°。",
+        "level": "advanced"
+      },
+      {
+        "exampleId": "s007-L4",
+        "prompt": "優弧PQ為280°，求較小∠POQ。",
+        "solutionSteps": [
+          "較小角對劣弧。",
+          "360°−280°=80°。"
+        ],
+        "answer": "80°。",
+        "level": "connection"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "辨認「圓心角與弧」的定義、符號與單一步驟關係。",
+      "standard": "把「圓心角與弧」與前置技能、比例或一次代數連接。",
+      "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「圓心角與弧」。",
+      "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「圓心角與弧」的數學模型。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "所有弧都配小於180°角",
+        "why": "忽略優弧",
+        "correction": "優弧對反角"
+      },
+      {
+        "mistake": "中心角和寫180°",
+        "why": "混淆三角形內角和",
+        "correction": "繞圓心一周是360°"
+      },
+      {
+        "mistake": "弧度數加長度單位",
+        "why": "單位混淆",
+        "correction": "弧度數用°"
+      },
+      {
+        "mistake": "未判明方向就用360°減",
+        "why": "可能題目已給劣弧",
+        "correction": "先讀弧名稱與經過點"
+      }
+    ],
+    "selfCheck": [
+      "我是否先確認「圓心角與弧」的適用條件？",
+      "我是否分清半徑、直徑、弦、弧與角的角色？",
+      "我是否寫出必要單位，並在最後才取近似值？",
+      "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+    ],
+    "summary": [
+      "圓心角與所對弧同度數。",
+      "中心角分割整圓時總和360°。",
+      "優弧對應反角。"
+    ],
+    "connections": {
+      "previous": "承接「圓周角定理」。",
+      "next": "下一技能為「弧長公式」。"
+    },
+    "figureReferences": [
+      {
+        "figureId": "u19-s007-fig001",
+        "purpose": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。",
+        "altText": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。，不可按比例目測。"
+      }
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u19-s007-v001",
+        "u19-s007-v002",
+        "u19-s007-v003",
+        "u19-s007-v004",
+        "u19-s007-v005",
+        "u19-s007-v006",
+        "u19-s007-v007",
+        "u19-s007-v008",
+        "u19-s007-v009",
+        "u19-s007-v010",
+        "u19-s007-v011",
+        "u19-s007-v012"
+      ],
+      "constructedResponseIds": [
+        "u19-s007-cr001",
+        "u19-s007-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐段回讀「圓心角與弧」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：以圓心角度數判定所對弧度數。",
+      "reviewVersion": "human-lecture-review-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "contentSha256": "89fc8b1735a1f13cf4f89753cc192a9c8767cf28f61147de1167dbc419120ada"
+  },
+  "questions": [
+    {
+      "questionId": "u19-s007-v001",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s007-fig001",
+      "drawingSpecId": "u19-s007-fig001",
+      "prompt": "圓 O 被三條半徑 OA、OB、OC 分成三個圓心角。若 ∠AOB=135°、∠BOC=95°，其餘的 ∠COA 為何？",
+      "text": "圓 O 被三條半徑 OA、OB、OC 分成三個圓心角。若 ∠AOB=135°、∠BOC=95°，其餘的 ∠COA 為何？",
+      "givenConditions": "三個圓心角恰好繞圓心 O 一周，總和為 360°。",
+      "target": "由一周角扣除兩個已知圓心角。",
+      "choices": [
+        "95°",
+        "230°",
+        "130°",
+        "135°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接把圓心周圍三角相加：∠COA=360°−135°−95°=130°。",
+      "explanation": "圓心周圍所有連續圓心角的總和是 360°，所以剩餘角為 130°。",
+      "steps": [
+        "寫出 135°+95°+∠COA=360°。",
+        "計算 360−135−95=130。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "95°",
+          "truth": false,
+          "reason": "只是抄寫其中一個已知角，沒有扣除兩個已知區域。"
+        },
+        {
+          "choice": "230°",
+          "truth": false,
+          "reason": "135+95=230 是已知兩角總和，不是剩餘角。"
+        },
+        {
+          "choice": "130°",
+          "truth": true,
+          "reason": "360−135−95=130，三角合計正好 360°。"
+        },
+        {
+          "choice": "135°",
+          "truth": false,
+          "reason": "誤以為剩餘區域與 ∠AOB 相等，題目沒有等分條件。"
+        }
+      ],
+      "misconceptionTarget": "把已知圓心角總和誤當成剩餘圓心角，或忽略一周角為 360°。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 50,
+      "unitCheck": "四個選項皆為角度，且 130° 為正並小於 360°。",
+      "roundingCheck": "角度皆為整數，不涉及近似；已確認不會因四捨五入產生第二答案。",
+      "ambiguityAudit": "題幹明確說三條半徑形成三個連續圓心角並繞圓心一周，因此剩餘角只有一個。",
+      "boundaryAudit": "只使用一周角 360° 與圓心角分割，符合國中會考範圍。",
+      "difficultyReason": "basic：須先建立三個圓心角合成一周的關係，再作兩次減法。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "以整圓分割檢查圓心角與弧的整體結構，避免重複直接問圓心角等於所對弧。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "e3bd518ac53c3d9df296c0fd9b69189a5dfacf78cd32409427abdb3d0fefb262"
+    },
+    {
+      "questionId": "u19-s007-v002",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "劣弧 CD=78°，O 為圓心，則較小的 ∠COD 為何？",
+      "text": "劣弧 CD=78°，O 為圓心，則較小的 ∠COD 為何？",
+      "givenConditions": "O為圓心；劣弧CD=78°。",
+      "target": "求較小∠COD。",
+      "choices": [
+        "39°",
+        "102°",
+        "282°",
+        "78°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「O為圓心；劣弧CD=78°。」重算：較小圓心角與劣弧CD同度數，為78°。",
+      "explanation": "較小圓心角與劣弧CD同度數，為78°。 因此唯一正確選項是「78°」。",
+      "steps": [
+        "辨認劣弧對較小圓心角。",
+        "寫78°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "39°",
+          "truth": false,
+          "reason": "錯取一半。"
+        },
+        {
+          "choice": "102°",
+          "truth": false,
+          "reason": "錯取補角。"
+        },
+        {
+          "choice": "282°",
+          "truth": false,
+          "reason": "282°是反角。"
+        },
+        {
+          "choice": "78°",
+          "truth": true,
+          "reason": "依題目條件重新計算：較小圓心角與劣弧CD同度數，為78°。"
+        }
+      ],
+      "misconceptionTarget": "把劣弧配到反角。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "u19-s007-v002 已核對所求量「求較小∠COD。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由劣弧求較小圓心角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v002。",
+      "difficultyReason": "basic：由劣弧求較小圓心角。 解題需完成「辨認劣弧對較小圓心角。；寫78°。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由劣弧求較小圓心角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "0cd0a4b13393ff2f72c0f9200a7d870472b80916d02338b2c2616873b9824242"
+    },
+    {
+      "questionId": "u19-s007-v003",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "兩條半徑 OA、OB 形成的較小圓心角是 70°。沿另一方向由 OA 轉到 OB 所形成的反角為何？",
+      "text": "兩條半徑 OA、OB 形成的較小圓心角是 70°。沿另一方向由 OA 轉到 OB 所形成的反角為何？",
+      "givenConditions": "較小圓心角與同端點反角合成 360°。",
+      "target": "求同端點的反角。",
+      "choices": [
+        "110°",
+        "290°",
+        "145°",
+        "70°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不看儲存答案，直接用一周角：反角=360°−70°=290°。",
+      "explanation": "同兩條半徑形成的較小角和反角合計 360°，所以反角是 290°。",
+      "steps": [
+        "辨認題目要的是大於 180° 的反角。",
+        "計算 360−70=290。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "110°",
+          "truth": false,
+          "reason": "110° 是 180°−70°，錯把一周角改成平角。"
+        },
+        {
+          "choice": "290°",
+          "truth": true,
+          "reason": "360°−70°=290°，且結果大於 180°，符合反角。"
+        },
+        {
+          "choice": "145°",
+          "truth": false,
+          "reason": "把 290° 又除以 2，混入圓周角關係。"
+        },
+        {
+          "choice": "70°",
+          "truth": false,
+          "reason": "只是原來的較小圓心角，不是另一方向的反角。"
+        }
+      ],
+      "misconceptionTarget": "把反角與補角或圓周角混淆。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 50,
+      "unitCheck": "四個選項皆為角度；反角 290° 位於 180° 到 360° 之間。",
+      "roundingCheck": "無近似或四捨五入；已確認不會因四捨五入產生第二答案。",
+      "ambiguityAudit": "題幹明確指定較小角為 70°，並要求沿另一方向形成的反角，所以不是求優弧或圓周角。",
+      "boundaryAudit": "只使用反角和一周角的國中基礎概念，且未使用高中弧度制、圓冪或解析幾何方法。",
+      "difficultyReason": "basic：辨認反角後，以 360° 減去較小圓心角。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "區分圓心反角、補角和圓周角，避免與弧的優劣互補題只換數字。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "297af65e8d6a4b337b61aca1eb91cdb1bba33b1bd7823005beae34804ea32190"
+    },
+    {
+      "questionId": "u19-s007-v004",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "三條半徑把整圓分成 80°、125° 與 x° 三個圓心角。求 x。",
+      "text": "三條半徑把整圓分成 80°、125° 與 x° 三個圓心角。求 x。",
+      "givenConditions": "三角恰好分割整圓。",
+      "target": "求第三中心角。",
+      "choices": [
+        "155°",
+        "145°",
+        "165°",
+        "205°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「三角恰好分割整圓。」重算：完整分割整圓時中心角總和360°，x=360−80−125=155°。",
+      "explanation": "完整分割整圓時中心角總和360°，x=360−80−125=155°。 因此唯一正確選項是「155°」。",
+      "steps": [
+        "80+125=205。",
+        "360−205=155。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "155°",
+          "truth": true,
+          "reason": "依題目條件重新計算：完整分割整圓時中心角總和360°，x=360−80−125=155°。"
+        },
+        {
+          "choice": "145°",
+          "truth": false,
+          "reason": "減法錯誤。"
+        },
+        {
+          "choice": "165°",
+          "truth": false,
+          "reason": "總和算成370。"
+        },
+        {
+          "choice": "205°",
+          "truth": false,
+          "reason": "錯用410。"
+        }
+      ],
+      "misconceptionTarget": "把中心角總和當180°或算術錯。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 70,
+      "unitCheck": "u19-s007-v004 已核對所求量「求第三中心角。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「利用整圓中心角總和。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v004。",
+      "difficultyReason": "standard：利用整圓中心角總和。 解題需完成「80+125=205。；360−205=155。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "利用整圓中心角總和。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "6d653284b03eadb5ebddda4cd2146b06a13d8260123391b2fc414d3081e6d2e9"
+    },
+    {
+      "questionId": "u19-s007-v005",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓心 O 周圍三弧度數比為 1:2:5。最小弧為何？",
+      "text": "圓心 O 周圍三弧度數比為 1:2:5。最小弧為何？",
+      "givenConditions": "三弧完整分割整圓，比例1:2:5。",
+      "target": "求最小弧。",
+      "choices": [
+        "22.5°",
+        "45°",
+        "72°",
+        "90°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「三弧完整分割整圓，比例1:2:5。」重算：共8份，360°÷8=45°，最小弧為1份45°。",
+      "explanation": "共8份，360°÷8=45°，最小弧為1份45°。 因此唯一正確選項是「45°」。",
+      "steps": [
+        "1+2+5=8。",
+        "360÷8=45。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "22.5°",
+          "truth": false,
+          "reason": "把半圓180分8。"
+        },
+        {
+          "choice": "45°",
+          "truth": true,
+          "reason": "依題目條件重新計算：共8份，360°÷8=45°，最小弧為1份45°。"
+        },
+        {
+          "choice": "72°",
+          "truth": false,
+          "reason": "錯用5份。"
+        },
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "錯當兩份。"
+        }
+      ],
+      "misconceptionTarget": "比例總份數或整圓角度錯。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "u19-s007-v005 已核對所求量「求最小弧。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由比例分割整圓。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v005。",
+      "difficultyReason": "standard：由比例分割整圓。 解題需完成「1+2+5=8。；360÷8=45。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由比例分割整圓。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "1ec28338b7b930285238424a60a7bfb0b3cae697f8b56a54bc2dcc0d37b925a7"
+    },
+    {
+      "questionId": "u19-s007-v006",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "劣弧 AB=4x°，優弧 AB=(7x+30)°。求 x。",
+      "text": "劣弧 AB=4x°，優弧 AB=(7x+30)°。求 x。",
+      "givenConditions": "兩弧為同端點互補弧段。",
+      "target": "求x。",
+      "choices": [
+        "30",
+        "20",
+        "25",
+        "40"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「兩弧為同端點互補弧段。」重算：同端點兩弧和360°：4x+7x+30=360，11x=330，x=30。",
+      "explanation": "同端點兩弧和360°：4x+7x+30=360，11x=330，x=30。 因此唯一正確選項是「30」。",
+      "steps": [
+        "列11x+30=360。",
+        "解得x=30。",
+        "回代120°+240°=360°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "30",
+          "truth": true,
+          "reason": "依題目條件重新計算：同端點兩弧和360°：4x+7x+30=360，11x=330，x=30。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "回代80°+170°不足360°。"
+        },
+        {
+          "choice": "25",
+          "truth": false,
+          "reason": "回代100°+205°不足。"
+        },
+        {
+          "choice": "40",
+          "truth": false,
+          "reason": "回代160°+310°超過。"
+        }
+      ],
+      "misconceptionTarget": "忘記兩弧合為整圓。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "u19-s007-v006 已核對所求量「求x。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由優劣弧代數式求參數。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v006。",
+      "difficultyReason": "standard：由優劣弧代數式求參數。 解題需完成「列11x+30=360。；解得x=30。；回代120°+240°=360°。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由優劣弧代數式求參數。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "7e74efb1047a1100ee51149e4917590aeb7cd5be666d2e44a4454456707d60d2"
+    },
+    {
+      "questionId": "u19-s007-v007",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s007-fig001",
+      "drawingSpecId": "u19-s007-fig001",
+      "prompt": "圓 O 中，較小 ∠AOB=(2x+10)°，同端點反角為(4x+20)°。求較小 ∠AOB。",
+      "text": "圓 O 中，較小 ∠AOB=(2x+10)°，同端點反角為(4x+20)°。求較小 ∠AOB。",
+      "givenConditions": "兩角同端點且合為整圓。",
+      "target": "求較小角。",
+      "choices": [
+        "120°",
+        "55°",
+        "110°",
+        "240°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「兩角同端點且合為整圓。」重算：較小圓心角與反角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。",
+      "explanation": "較小圓心角與反角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。 因此唯一正確選項是「120°」。",
+      "steps": [
+        "列6x+30=360。",
+        "解x=55。",
+        "代回較小角120°，反角240°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "120°",
+          "truth": true,
+          "reason": "依題目條件重新計算：較小圓心角與反角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。"
+        },
+        {
+          "choice": "55°",
+          "truth": false,
+          "reason": "55是x，不是角度。"
+        },
+        {
+          "choice": "110°",
+          "truth": false,
+          "reason": "代數回代少10°。"
+        },
+        {
+          "choice": "240°",
+          "truth": false,
+          "reason": "240°是反角。"
+        }
+      ],
+      "misconceptionTarget": "只解出參數便當成角度，或沒有區分較小角與反角。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 120,
+      "unitCheck": "u19-s007-v007 已核對所求量「求較小角。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由圓心角與反角的總和求指定角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v007。",
+      "difficultyReason": "advanced：由圓心角與反角的總和求指定角。 解題需完成「列6x+30=360。；解x=55。；代回較小角120°，反角240°。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由圓心角與反角的總和求指定角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "2c00c4abd6923929ffc23af581c8bae363a392db328f8bf0d56fdd479e699533"
+    },
+    {
+      "questionId": "u19-s007-v008",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "四條半徑把圓分成連續四弧，度數依序為 x、x+20、2x、3x−10。求最大弧。",
+      "text": "四條半徑把圓分成連續四弧，度數依序為 x、x+20、2x、3x−10。求最大弧。",
+      "givenConditions": "四弧完整且依式表示。",
+      "target": "求最大弧度數。",
+      "choices": [
+        "70°",
+        "140°",
+        "120°",
+        "150°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「四弧完整且依式表示。」重算：總和7x+10=360，x=50。四弧為50°、70°、100°、140°，最大140°。",
+      "explanation": "總和7x+10=360，x=50。四弧為50°、70°、100°、140°，最大140°。 因此唯一正確選項是「140°」。",
+      "steps": [
+        "列x+x+20+2x+3x−10=360。",
+        "7x+10=360，x=50。",
+        "比較四弧。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "70°",
+          "truth": false,
+          "reason": "是第二弧。"
+        },
+        {
+          "choice": "140°",
+          "truth": true,
+          "reason": "依題目條件重新計算：總和7x+10=360，x=50。四弧為50°、70°、100°、140°，最大140°。"
+        },
+        {
+          "choice": "120°",
+          "truth": false,
+          "reason": "不存在於回代。"
+        },
+        {
+          "choice": "150°",
+          "truth": false,
+          "reason": "把3x當未減10。"
+        }
+      ],
+      "misconceptionTarget": "合併常數或比較弧度數錯。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 120,
+      "unitCheck": "u19-s007-v008 已核對所求量「求最大弧度數。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「多段中心角代數分割。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v008。",
+      "difficultyReason": "advanced：多段中心角代數分割。 解題需完成「列x+x+20+2x+3x−10=360。；7x+10=360，x=50。；比較四弧。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "多段中心角代數分割。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "6b71c4ab87ad316659db5b7ec203ca6025c0e096bfed530631a769e31a860e4f"
+    },
+    {
+      "questionId": "u19-s007-v009",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "劣弧 AB 為 160°。點 C 將優弧 AB 分成弧 AC:弧 CB=2:3。求弧 CB。",
+      "text": "劣弧 AB 為 160°。點 C 將優弧 AB 分成弧 AC:弧 CB=2:3。求弧 CB。",
+      "givenConditions": "劣弧AB=160°；C在優弧上；AC:CB=2:3。",
+      "target": "求弧CB。",
+      "choices": [
+        "80°",
+        "96°",
+        "120°",
+        "144°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「劣弧AB=160°；C在優弧上；AC:CB=2:3。」重算：優弧AB=200°，分成5份，每份40°，弧CB=3份120°。",
+      "explanation": "優弧AB=200°，分成5份，每份40°，弧CB=3份120°。 因此唯一正確選項是「120°」。",
+      "steps": [
+        "360−160=200。",
+        "200÷5=40。",
+        "3×40=120。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "80°",
+          "truth": false,
+          "reason": "把劣弧直接分比。"
+        },
+        {
+          "choice": "96°",
+          "truth": false,
+          "reason": "比例計算錯。"
+        },
+        {
+          "choice": "120°",
+          "truth": true,
+          "reason": "依題目條件重新計算：優弧AB=200°，分成5份，每份40°，弧CB=3份120°。"
+        },
+        {
+          "choice": "144°",
+          "truth": false,
+          "reason": "用優弧的3/5但算錯。"
+        }
+      ],
+      "misconceptionTarget": "未先求優弧就分配。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 115,
+      "unitCheck": "u19-s007-v009 已核對所求量「求弧CB。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「結合優弧與弧段比例。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v009。",
+      "difficultyReason": "advanced：結合優弧與弧段比例。 解題需完成「360−160=200。；200÷5=40。；3×40=120。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "結合優弧與弧段比例。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "69f206c1ef910c6383e5e8a6a02d6913d41e2ed77d8e1c7d87f22a8cf4417ede"
+    },
+    {
+      "questionId": "u19-s007-v010",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形轉盤分成 6 個中心角相等的區域，每區所對弧度數為何？",
+      "text": "圓形轉盤分成 6 個中心角相等的區域，每區所對弧度數為何？",
+      "givenConditions": "轉盤完整等分6區。",
+      "target": "求每區弧度數。",
+      "choices": [
+        "30°",
+        "90°",
+        "120°",
+        "60°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「轉盤完整等分6區。」重算：整圓360°平均分6份，每份60°。",
+      "explanation": "整圓360°平均分6份，每份60°。 因此唯一正確選項是「60°」。",
+      "steps": [
+        "360÷6=60。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "30°",
+          "truth": false,
+          "reason": "錯除12。"
+        },
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "錯分4份。"
+        },
+        {
+          "choice": "120°",
+          "truth": false,
+          "reason": "錯分3份。"
+        },
+        {
+          "choice": "60°",
+          "truth": true,
+          "reason": "依題目條件重新計算：整圓360°平均分6份，每份60°。"
+        }
+      ],
+      "misconceptionTarget": "把區域數與分割線數混淆。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 65,
+      "unitCheck": "u19-s007-v010 已核對所求量「求每區弧度數。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「將等分轉盤轉成中心角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v010。",
+      "difficultyReason": "literacy：將等分轉盤轉成中心角。 解題需完成「360÷6=60。」。",
+      "literacyContextNecessity": "每區中獎區域由中心角大小決定。",
+      "authoringIntent": "將等分轉盤轉成中心角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "0850ea40d361d3aba75e5c09d0d37e2331b435dead7d4e1686aa479810f57a0d"
+    },
+    {
+      "questionId": "u19-s007-v011",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形灑水器先掃過 210°，剩下未掃區域對應的中心角為何？",
+      "text": "圓形灑水器先掃過 210°，剩下未掃區域對應的中心角為何？",
+      "givenConditions": "掃描不重疊且總範圍為整圓。",
+      "target": "求未掃中心角。",
+      "choices": [
+        "105°",
+        "170°",
+        "210°",
+        "150°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「掃描不重疊且總範圍為整圓。」重算：未掃角度=360°−210°=150°。",
+      "explanation": "未掃角度=360°−210°=150°。 因此唯一正確選項是「150°」。",
+      "steps": [
+        "整圓360°。",
+        "扣除已掃210°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "105°",
+          "truth": false,
+          "reason": "錯取一半。"
+        },
+        {
+          "choice": "170°",
+          "truth": false,
+          "reason": "減法錯。"
+        },
+        {
+          "choice": "210°",
+          "truth": false,
+          "reason": "重複已掃角度。"
+        },
+        {
+          "choice": "150°",
+          "truth": true,
+          "reason": "依題目條件重新計算：未掃角度=360°−210°=150°。"
+        }
+      ],
+      "misconceptionTarget": "把已掃角度直接當未掃角度。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 70,
+      "unitCheck": "u19-s007-v011 已核對所求量「求未掃中心角。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由已掃扇區求剩餘中心角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v011。",
+      "difficultyReason": "literacy：由已掃扇區求剩餘中心角。 解題需完成「整圓360°。；扣除已掃210°。」。",
+      "literacyContextNecessity": "未掃區域是整圓扣除已掃區域，情境需要完整360°模型。",
+      "authoringIntent": "由已掃扇區求剩餘中心角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "c3aa1ae33447b47f9ea92fb6ae41a9d0da7b725f2d34b5488a3b3a995f1c49cb"
+    },
+    {
+      "questionId": "u19-s007-v012",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形會議桌中央的旋轉盤設三個停靠區，中心角比 3:4:5。最大區中心角為何？",
+      "text": "圓形會議桌中央的旋轉盤設三個停靠區，中心角比 3:4:5。最大區中心角為何？",
+      "givenConditions": "三區完整分割整圓，比例3:4:5。",
+      "target": "求最大區角度。",
+      "choices": [
+        "90°",
+        "120°",
+        "150°",
+        "180°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「三區完整分割整圓，比例3:4:5。」重算：總份數12，每份30°，最大區5份=150°。",
+      "explanation": "總份數12，每份30°，最大區5份=150°。 因此唯一正確選項是「150°」。",
+      "steps": [
+        "3+4+5=12。",
+        "360÷12=30。",
+        "5×30=150。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "最小區。"
+        },
+        {
+          "choice": "120°",
+          "truth": false,
+          "reason": "中間區。"
+        },
+        {
+          "choice": "150°",
+          "truth": true,
+          "reason": "依題目條件重新計算：總份數12，每份30°，最大區5份=150°。"
+        },
+        {
+          "choice": "180°",
+          "truth": false,
+          "reason": "錯把最大區當半圓。"
+        }
+      ],
+      "misconceptionTarget": "比例對應區域錯位。",
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "estimatedTimeSec": 85,
+      "unitCheck": "u19-s007-v012 已核對所求量「求最大區角度。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「依比例設計旋轉盤區域。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v012。",
+      "difficultyReason": "literacy：依比例設計旋轉盤區域。 解題需完成「3+4+5=12。；360÷12=30。；5×30=150。」。",
+      "literacyContextNecessity": "停靠區占比直接以中心角比例呈現。",
+      "authoringIntent": "依比例設計旋轉盤區域。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "3854f84bcf1cb55807f221b0bd3bdfdfa99c2aac1a717d30ea00ab8d7c631f46"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u19-s007-cr001",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "itemType": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s007-fig001",
+      "drawingSpecId": "u19-s007-fig001",
+      "prompt": "三條半徑把圓分成三弧，度數比為 2:3:7。求三弧度數及最大弧所對反角。",
+      "requiredWork": [
+        "求總份數。",
+        "分配360°。",
+        "指出最大弧的反角。"
+      ],
+      "standardSolution": [
+        "總份數2+3+7=12，每份30°。",
+        "三弧依序60°、90°、210°。",
+        "最大弧所對圓心反角為210°。"
+      ],
+      "fullCreditSolution": [
+        "總份數2+3+7=12，每份30°。",
+        "三弧依序60°、90°、210°。",
+        "最大弧所對圓心反角為210°。"
+      ],
+      "alternativeSolutions": [
+        "可先求最大弧360×7/12=210°，再求其餘。"
+      ],
+      "reasoningSteps": [
+        "總份數2+3+7=12，每份30°。",
+        "三弧依序60°、90°、210°。",
+        "最大弧所對圓心反角為210°。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "60°、90°、210°與反角判定完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "三弧正確但未說反角，或一個算術錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確求每份30°。"
+        },
+        {
+          "score": 0,
+          "criteria": "用180°分配。"
+        }
+      ],
+      "partialCreditRules": [
+        "比例分配與反角各自給分。"
+      ],
+      "followThroughPolicy": "若每份算錯但三弧仍按2:3:7且總和一致，可給1分。",
+      "unitNotationRules": "弧與角皆用°。",
+      "answerOnlyPolicy": "只列三弧正確給2分。",
+      "commonErrors": [
+        "總份數算成10。",
+        "最大弧仍用較小角150°。"
+      ],
+      "independentReview": {
+        "derivedResult": "三弧60°、90°、210°；最大弧反角210°。",
+        "ambiguity": "比例完整分割整圓，唯一。",
+        "decision": "pass",
+        "reviewNote": "u19-s007-cr001 由題目條件另行推導得到「三弧60°、90°、210°；最大弧反角210°。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewedAt": "2026-07-12"
+      },
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "87b061cbbcd946aa7012826df4552f4890760485e3c0ec20a149f21c70226fcb"
+    },
+    {
+      "questionId": "u19-s007-cr002",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "itemType": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "劣弧 AB=(4x−10)°，優弧 AB=(7x+40)°。求 x 及兩弧。",
+      "requiredWork": [
+        "使用兩弧和360°。",
+        "解x。",
+        "回代並檢查劣弧小於180°。"
+      ],
+      "standardSolution": [
+        "4x−10+7x+40=360。",
+        "11x+30=360，x=30。",
+        "劣弧110°，優弧250°，和360°。"
+      ],
+      "fullCreditSolution": [
+        "4x−10+7x+40=360。",
+        "11x+30=360，x=30。",
+        "劣弧110°，優弧250°，和360°。"
+      ],
+      "alternativeSolutions": [
+        "可由優弧=360°−劣弧列式。"
+      ],
+      "reasoningSteps": [
+        "4x−10+7x+40=360。",
+        "11x+30=360，x=30。",
+        "劣弧110°，優弧250°，和360°。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "x=30、110°、250°且檢查完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "x正確但回代或名稱缺一。"
+        },
+        {
+          "score": 1,
+          "criteria": "列出正確總和方程。"
+        },
+        {
+          "score": 0,
+          "criteria": "用180°作總和。"
+        }
+      ],
+      "partialCreditRules": [
+        "方程正確給1分。"
+      ],
+      "followThroughPolicy": "若x算錯但兩弧仍由其值相加360°，給方法分。",
+      "unitNotationRules": "弧度數用°。",
+      "answerOnlyPolicy": "只寫x=30給2分。",
+      "commonErrors": [
+        "常數合併成−50。",
+        "把優弧與劣弧設相等。"
+      ],
+      "independentReview": {
+        "derivedResult": "x=30，劣弧110°，優弧250°。",
+        "ambiguity": "回代符合優劣弧範圍，唯一。",
+        "decision": "pass",
+        "reviewNote": "u19-s007-cr002 由題目條件另行推導得到「x=30，劣弧110°，優弧250°。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewedAt": "2026-07-12"
+      },
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "01c337f0c412c6e39b9d41b97fe93a8f10cc80d10c55e428a8cad66502cb31e9"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u19-s007-v001",
+      "contentSha256": "e3bd518ac53c3d9df296c0fd9b69189a5dfacf78cd32409427abdb3d0fefb262",
+      "reviewVersion": "central-human-review-r1.1",
+      "independentSolution": "不採用儲存答案，直接把圓心周圍三角相加：∠COA=360°−135°−95°=130°。",
+      "derivedAnswer": "130°",
+      "storedAnswer": "130°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算後只有「130°」符合。其餘三項分別因「只是抄寫其中一個已知角，沒有扣除兩個已知區域。；135+95=230 是已知兩角總和，不是剩餘角。；誤以為剩餘區域與 ∠AOB 相等，題目沒有等分條件。」而排除。",
+        "undefinedSymbol": "u19-s007-v001 所用圓心、圓周、弧、角、直徑、半徑或 π 均已在 U19 先備講義中定義，沒有未說明符號。",
+        "unitConflict": "四個選項皆為角度，且 130° 為正並小於 360°。",
+        "roundingConflict": "角度皆為整數，不涉及近似；已確認不會因四捨五入產生第二答案。",
+        "domainBoundary": "只使用一周角 360° 與圓心角分割，符合國中會考範圍。",
+        "alternateReading": "題幹明確說三條半徑形成三個連續圓心角並繞圓心一周，因此剩餘角只有一個。"
+      },
+      "difficultyReason": "basic：須先建立三個圓心角合成一周的關係，再作兩次減法。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "languageCheck": "題幹「圓 O 被三條半徑 OA、OB、OC 分成三個圓心角。若 ∠AOB=135°、∠BOC=95°，其餘的 ∠COA 為何？」採臺灣繁體中文，條件、所求量與比較基準均完整。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v001 中央人工重算：不採用儲存答案，直接把圓心周圍三角相加：∠COA=360°−135°−95°=130°。 正確選項為「130°」，四項真值與每個干擾項錯因均已重新核對。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "roundingConflict": null
+    },
+    {
+      "questionId": "u19-s007-v002",
+      "contentSha256": "0cd0a4b13393ff2f72c0f9200a7d870472b80916d02338b2c2616873b9824242",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「O為圓心；劣弧CD=78°。」重算：較小圓心角與劣弧CD同度數，為78°。",
+      "derivedAnswer": "78°",
+      "storedAnswer": "78°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「78°」符合；三個干擾項分別因「錯取一半。；錯取補角。；282°是反角。」而排除。",
+        "undefinedSymbol": "u19-s007-v002 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
+        "unitConflict": "題目所求為「求較小∠COD。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由劣弧求較小圓心角。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「O為圓心；劣弧CD=78°。」重讀，所求「求較小∠COD。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為basic，核心任務是由劣弧求較小圓心角。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「劣弧 CD=78°，O 為圓心，則較小的 ∠COD 為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v002 人工重算：較小圓心角與劣弧CD同度數，為78°。 正確選項為「78°」。四項真值依序為假,假,假,真；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s007-v003",
+      "contentSha256": "297af65e8d6a4b337b61aca1eb91cdb1bba33b1bd7823005beae34804ea32190",
+      "reviewVersion": "central-human-review-r1.1",
+      "independentSolution": "不看儲存答案，直接用一周角：反角=360°−70°=290°。",
+      "derivedAnswer": "290°",
+      "storedAnswer": "290°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算後只有「290°」符合。其餘三項分別因「110° 是 180°−70°，錯把一周角改成平角。；把 290° 又除以 2，混入圓周角關係。；只是原來的較小圓心角，不是另一方向的反角。」而排除。",
+        "undefinedSymbol": "u19-s007-v003 所用圓心、圓周、弧、角、直徑、半徑或 π 均已在 U19 先備講義中定義，沒有未說明符號。",
+        "unitConflict": "四個選項皆為角度；反角 290° 位於 180° 到 360° 之間。",
+        "roundingConflict": "無近似或四捨五入；已確認不會因四捨五入產生第二答案。",
+        "domainBoundary": "只使用反角和一周角的國中基礎概念，且未使用高中弧度制、圓冪或解析幾何方法。",
+        "alternateReading": "題幹明確指定較小角為 70°，並要求沿另一方向形成的反角，所以不是求優弧或圓周角。"
+      },
+      "difficultyReason": "basic：辨認反角後，以 360° 減去較小圓心角。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
+      "languageCheck": "題幹「兩條半徑 OA、OB 形成的較小圓心角是 70°。沿另一方向由 OA 轉到 OB 所形成的反角為何？」採臺灣繁體中文，條件、所求量與比較基準均完整。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v003 中央人工重算：不看儲存答案，直接用一周角：反角=360°−70°=290°。 正確選項為「290°」，四項真值與每個干擾項錯因均已重新核對。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "roundingConflict": null
+    },
+    {
+      "questionId": "u19-s007-v004",
+      "contentSha256": "6d653284b03eadb5ebddda4cd2146b06a13d8260123391b2fc414d3081e6d2e9",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「三角恰好分割整圓。」重算：完整分割整圓時中心角總和360°，x=360−80−125=155°。",
+      "derivedAnswer": "155°",
+      "storedAnswer": "155°",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「155°」符合；三個干擾項分別因「減法錯誤。；總和算成370。；錯用410。」而排除。",
+        "undefinedSymbol": "u19-s007-v004 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
+        "unitConflict": "題目所求為「求第三中心角。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「利用整圓中心角總和。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「三角恰好分割整圓。」重讀，所求「求第三中心角。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為standard，核心任務是利用整圓中心角總和。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「三條半徑把整圓分成 80°、125° 與 x° 三個圓心角。求 x。」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v004 人工重算：完整分割整圓時中心角總和360°，x=360−80−125=155°。 正確選項為「155°」。四項真值依序為真,假,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s007-v005",
+      "contentSha256": "1ec28338b7b930285238424a60a7bfb0b3cae697f8b56a54bc2dcc0d37b925a7",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「三弧完整分割整圓，比例1:2:5。」重算：共8份，360°÷8=45°，最小弧為1份45°。",
+      "derivedAnswer": "45°",
+      "storedAnswer": "45°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「45°」符合；三個干擾項分別因「把半圓180分8。；錯用5份。；錯當兩份。」而排除。",
+        "undefinedSymbol": "u19-s007-v005 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
+        "unitConflict": "題目所求為「求最小弧。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由比例分割整圓。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「三弧完整分割整圓，比例1:2:5。」重讀，所求「求最小弧。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為standard，核心任務是由比例分割整圓。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓心 O 周圍三弧度數比為 1:2:5。最小弧為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v005 人工重算：共8份，360°÷8=45°，最小弧為1份45°。 正確選項為「45°」。四項真值依序為假,真,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s007-v006",
+      "contentSha256": "7e74efb1047a1100ee51149e4917590aeb7cd5be666d2e44a4454456707d60d2",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「兩弧為同端點互補弧段。」重算：同端點兩弧和360°：4x+7x+30=360，11x=330，x=30。",
+      "derivedAnswer": "30",
+      "storedAnswer": "30",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「30」符合；三個干擾項分別因「回代80°+170°不足360°。；回代100°+205°不足。；回代160°+310°超過。」而排除。",
+        "undefinedSymbol": "u19-s007-v006 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
+        "unitConflict": "題目所求為「求x。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由優劣弧代數式求參數。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「兩弧為同端點互補弧段。」重讀，所求「求x。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為standard，核心任務是由優劣弧代數式求參數。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「劣弧 AB=4x°，優弧 AB=(7x+30)°。求 x。」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v006 人工重算：同端點兩弧和360°：4x+7x+30=360，11x=330，x=30。 正確選項為「30」。四項真值依序為真,假,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s007-v007",
+      "contentSha256": "2c00c4abd6923929ffc23af581c8bae363a392db328f8bf0d56fdd479e699533",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「兩角同端點且合為整圓。」重算：較小圓心角與反角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。",
+      "derivedAnswer": "120°",
+      "storedAnswer": "120°",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「120°」符合；三個干擾項分別因「55是x，不是角度。；代數回代少10°。；240°是反角。」而排除。",
+        "undefinedSymbol": "u19-s007-v007 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
+        "unitConflict": "題目所求為「求較小角。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由圓心角與反角的總和求指定角。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「兩角同端點且合為整圓。」重讀，所求「求較小角。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為advanced，核心任務是由圓心角與反角的總和求指定角。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓 O 中，較小 ∠AOB=(2x+10)°，同端點反角為(4x+20)°。求較小 ∠AOB。」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v007 人工重算：較小圓心角與反角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。 正確選項為「120°」。四項真值依序為真,假,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s007-v008",
+      "contentSha256": "6b71c4ab87ad316659db5b7ec203ca6025c0e096bfed530631a769e31a860e4f",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「四弧完整且依式表示。」重算：總和7x+10=360，x=50。四弧為50°、70°、100°、140°，最大140°。",
+      "derivedAnswer": "140°",
+      "storedAnswer": "140°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「140°」符合；三個干擾項分別因「是第二弧。；不存在於回代。；把3x當未減10。」而排除。",
+        "undefinedSymbol": "u19-s007-v008 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
+        "unitConflict": "題目所求為「求最大弧度數。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「多段中心角代數分割。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「四弧完整且依式表示。」重讀，所求「求最大弧度數。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為advanced，核心任務是多段中心角代數分割。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「四條半徑把圓分成連續四弧，度數依序為 x、x+20、2x、3x−10。求最大弧。」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v008 人工重算：總和7x+10=360，x=50。四弧為50°、70°、100°、140°，最大140°。 正確選項為「140°」。四項真值依序為假,真,假,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s007-v009",
+      "contentSha256": "69f206c1ef910c6383e5e8a6a02d6913d41e2ed77d8e1c7d87f22a8cf4417ede",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「劣弧AB=160°；C在優弧上；AC:CB=2:3。」重算：優弧AB=200°，分成5份，每份40°，弧CB=3份120°。",
+      "derivedAnswer": "120°",
+      "storedAnswer": "120°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「120°」符合；三個干擾項分別因「把劣弧直接分比。；比例計算錯。；用優弧的3/5但算錯。」而排除。",
+        "undefinedSymbol": "u19-s007-v009 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
+        "unitConflict": "題目所求為「求弧CB。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「結合優弧與弧段比例。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「劣弧AB=160°；C在優弧上；AC:CB=2:3。」重讀，所求「求弧CB。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為advanced，核心任務是結合優弧與弧段比例。，而非只依題序標示。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「劣弧 AB 為 160°。點 C 將優弧 AB 分成弧 AC:弧 CB=2:3。求弧 CB。」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v009 人工重算：優弧AB=200°，分成5份，每份40°，弧CB=3份120°。 正確選項為「120°」。四項真值依序為假,假,真,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s007-v010",
+      "contentSha256": "0850ea40d361d3aba75e5c09d0d37e2331b435dead7d4e1686aa479810f57a0d",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「轉盤完整等分6區。」重算：整圓360°平均分6份，每份60°。",
+      "derivedAnswer": "60°",
+      "storedAnswer": "60°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「60°」符合；三個干擾項分別因「錯除12。；錯分4份。；錯分3份。」而排除。",
+        "undefinedSymbol": "u19-s007-v010 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
+        "unitConflict": "題目所求為「求每區弧度數。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「將等分轉盤轉成中心角。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「轉盤完整等分6區。」重讀，所求「求每區弧度數。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為literacy，核心任務是將等分轉盤轉成中心角。，而非只依題序標示。",
+      "literacyContextNecessity": "每區中獎區域由中心角大小決定。",
+      "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓形轉盤分成 6 個中心角相等的區域，每區所對弧度數為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v010 人工重算：整圓360°平均分6份，每份60°。 正確選項為「60°」。四項真值依序為假,假,假,真；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s007-v011",
+      "contentSha256": "c3aa1ae33447b47f9ea92fb6ae41a9d0da7b725f2d34b5488a3b3a995f1c49cb",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「掃描不重疊且總範圍為整圓。」重算：未掃角度=360°−210°=150°。",
+      "derivedAnswer": "150°",
+      "storedAnswer": "150°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「150°」符合；三個干擾項分別因「錯取一半。；減法錯。；重複已掃角度。」而排除。",
+        "undefinedSymbol": "u19-s007-v011 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
+        "unitConflict": "題目所求為「求未掃中心角。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「由已掃扇區求剩餘中心角。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「掃描不重疊且總範圍為整圓。」重讀，所求「求未掃中心角。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為literacy，核心任務是由已掃扇區求剩餘中心角。，而非只依題序標示。",
+      "literacyContextNecessity": "未掃區域是整圓扣除已掃區域，情境需要完整360°模型。",
+      "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓形灑水器先掃過 210°，剩下未掃區域對應的中心角為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v011 人工重算：未掃角度=360°−210°=150°。 正確選項為「150°」。四項真值依序為假,假,假,真；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u19-s007-v012",
+      "contentSha256": "3854f84bcf1cb55807f221b0bd3bdfdfa99c2aac1a717d30ea00ab8d7c631f46",
+      "reviewVersion": "human-review-r1.0",
+      "independentSolution": "不採用儲存答案，直接依「三區完整分割整圓，比例3:4:5。」重算：總份數12，每份30°，最大區5份=150°。",
+      "derivedAnswer": "150°",
+      "storedAnswer": "150°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項核對四選項後，只有「150°」符合；三個干擾項分別因「最小區。；中間區。；錯把最大區當半圓。」而排除。",
+        "undefinedSymbol": "u19-s007-v012 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
+        "unitConflict": "題目所求為「求最大區角度。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
+        "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
+        "domainBoundary": "本題僅測「依比例設計旋轉盤區域。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "alternateReading": "依給定條件「三區完整分割整圓，比例3:4:5。」重讀，所求「求最大區角度。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
+      },
+      "difficultyReason": "將題目完整重算後確認難度為literacy，核心任務是依比例設計旋轉盤區域。，而非只依題序標示。",
+      "literacyContextNecessity": "停靠區占比直接以中心角比例呈現。",
+      "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓形會議桌中央的旋轉盤設三個停靠區，中心角比 3:4:5。最大區中心角為何？」未省略比較基準或所求量。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u19-s007-v012 人工重算：總份數12，每份30°，最大區5份=150°。 正確選項為「150°」。四項真值依序為假,假,真,假；干擾項錯因均已逐一對應。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u19-s007-fig001",
+      "unitId": "u19",
+      "topicId": "u19-angles",
+      "skillId": "central-angle-arc",
+      "svgPath": "figures/u19/u19-s007-fig001.svg",
+      "canvas": {
+        "width": 360,
+        "height": 240,
+        "viewBox": "0 0 360 240"
+      },
+      "drawingSpec": {
+        "purpose": "支援「圓心角與弧」中需要辨認點、線、弧、角或邊界的題目。",
+        "coordinateSystem": "SVG x向右、y向下；所有座標以360×240畫布為準。",
+        "geometry": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。",
+        "visibleLines": "所有作答所需實線均以2px以上深色描邊；強調弧以5px描邊。",
+        "hiddenLines": "只有內部共邊或量測輔助線使用虛線；未指定者不得自行添加。",
+        "labels": "標籤位置已在SVG以固定座標給定，避免遮住交點、角弧或刻痕。",
+        "symbols": "直角符號、等長刻痕、箭頭及角度符號僅在數學條件需要時出現。",
+        "scalePolicy": "示意圖不保證按實際長度或角度比例繪製。",
+        "visualInferenceWarning": "不得以目測長短、角度或對稱性取代題目條件與定理。",
+        "mobileReadability": "360×240檢視下文字至少16px，關鍵線至少2px，無微小數值標籤。",
+        "answerLeakage": "圖中不標示任何題目要求計算的最終數值或正確選項。"
+      },
+      "altText": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。 圖形僅協助辨認結構，不可依比例目測答案。",
+      "svgTitle": "整圓中心角分割圖",
+      "svgDescription": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。",
+      "svgAssertions": [
+        "role=\"img\"",
+        "<title",
+        "<desc",
+        "viewBox=\"0 0 360 240\"",
+        "class=\"arrow\"",
+        ">反角</text>",
+        ">θ</text>"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderInspected": true,
+        "mobileReadable": true,
+        "answerLeakageFound": false,
+        "reviewNote": "已逐項檢查 u19-s007-fig001 的點位、線段、弧線、標籤與輔助符號；此圖專門呈現「圓心角與弧」的結構，未包含可直接推得題庫答案的數值。",
+        "reviewVersion": "human-figure-review-r1.0",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "ed124fd3594f01396c266ad3ca7a653da2965409e442d9a5e192d49cdab9e247"
+    }
+  ]
+};
+export default u19_s007;

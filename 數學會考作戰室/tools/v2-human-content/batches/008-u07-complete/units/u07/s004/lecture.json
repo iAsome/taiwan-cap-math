@@ -1,0 +1,238 @@
+{
+  "lectureId": "u07-s004-lecture-r1",
+  "unitId": "u07",
+  "topicId": "u07-basics",
+  "skillId": "inequality-number-line",
+  "title": "不等式解的數線表示：端點和方向與圖文互譯",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能依解集選擇空心點或實心點。",
+    "能判斷射線方向。",
+    "能由數線圖寫出不等式。",
+    "能比較兩種數線表示是否同一解集。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inequality-transposition",
+      "requiredLevel": "能先把不等式整理成 x 與常數的比較。"
+    }
+  ],
+  "prerequisiteBridge": {
+    "inequality-transposition": "能先把不等式整理成 x 與常數的比較。"
+  },
+  "glossary": [
+    {
+      "term": "射線",
+      "definition": "從一個端點向單一方向無限延伸的圖形。"
+    },
+    {
+      "term": "開端點",
+      "definition": "端點不屬於解集，以空心圓表示。"
+    },
+    {
+      "term": "閉端點",
+      "definition": "端點屬於解集，以實心圓表示。"
+    },
+    {
+      "term": "刻度",
+      "definition": "數線上用來表示數值位置的等距標記。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "○────▶",
+      "meaning": "空心端點並向右延伸，代表大於且不含端點。"
+    },
+    {
+      "symbol": "◀────●",
+      "meaning": "向左延伸且實心端點，代表小於或等於端點。"
+    }
+  ],
+  "conceptNarrative": [
+    "先完成代數解法，再把 x 的標準形式轉成圖。",
+    "端點符號只回答「是否包含」，射線方向回答「比端點大或小」。",
+    "數線必須有方向、端點數值與足夠刻度，不能僅憑圓點位置猜值。",
+    "由圖回寫時，先讀方向，再讀端點是否填滿。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "開端點",
+      "statement": "對應 x>a 或 x<a，端點 a 不符合。"
+    },
+    {
+      "name": "閉端點",
+      "statement": "對應 x≥a 或 x≤a，端點 a 符合。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x<a → a 空心，向左",
+      "conditions": [
+        "標準數線向右為正方向"
+      ],
+      "meaning": "嚴格小於的圖形。"
+    },
+    {
+      "formula": "x≥a → a 實心，向右",
+      "conditions": [
+        "標準數線向右為正方向"
+      ],
+      "meaning": "包含端點的大於範圍。"
+    }
+  ],
+  "nonApplicableCases": [
+    "若題目限定整數解，仍應先畫連續解集，再標明整數點或另行列舉。",
+    "數線圖若比例不精確，只能讀標示值，不能量距離。",
+    "兩邊都有式子的原不等式不能直接拿任一常數作端點。",
+    "不含端點不代表離端點最近的整數也排除。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把答案整理為 x□a。",
+      "check": "x 是否在左側？"
+    },
+    {
+      "step": 2,
+      "instruction": "看是否含等號決定圓點。",
+      "check": "≥、≤ 實心；＞、＜ 空心。"
+    },
+    {
+      "step": 3,
+      "instruction": "看大小決定方向。",
+      "check": "大於向右、小於向左。"
+    },
+    {
+      "step": 4,
+      "instruction": "用一個圖上點與一個圖外點代入。",
+      "check": "圖示與代數解集是否一致？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "畫出 x>−1。",
+      "solutionSteps": [
+        "−1 不包含，畫空心點。",
+        "大於 −1，向右延伸。"
+      ],
+      "answer": "−1 空心，射線向右。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "畫出 x≤3。",
+      "solutionSteps": [
+        "3 包含，畫實心點。",
+        "小於或等於 3，向左延伸。"
+      ],
+      "answer": "3 實心，射線向左。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "圖上 2 為實心點且向右，寫出解集。",
+      "solutionSteps": [
+        "向右表示大於。",
+        "實心表示包含 2。"
+      ],
+      "answer": "x≥2。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解 2x−1<5 並畫圖。",
+      "solutionSteps": [
+        "2x<6，所以 x<3。",
+        "3 空心，向左延伸。"
+      ],
+      "answer": "x<3；數線在 3 空心向左。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "x≤3 畫成 3 空心。",
+      "why": "忽略等號。",
+      "correction": "≤ 包含 3，畫實心。"
+    },
+    {
+      "mistake": "x>−1 因端點是負數而向左。",
+      "why": "把負號與方向混淆。",
+      "correction": "只看「大於」就向右。"
+    },
+    {
+      "mistake": "圖向右就寫 x<a。",
+      "why": "沒有連結右側較大。",
+      "correction": "標準數線右側數值增加。"
+    },
+    {
+      "mistake": "把箭頭畫在圓點上而沒有延伸線。",
+      "why": "圖形資訊不完整。",
+      "correction": "畫射線並在末端加箭頭。"
+    },
+    {
+      "mistake": "由未標比例的圖量出端點。",
+      "why": "把示意圖當作精密測量圖。",
+      "correction": "只採用標示數值。"
+    },
+    {
+      "mistake": "解完 x<3 卻在圖上標 5。",
+      "why": "把原式常數當端點。",
+      "correction": "端點必須來自最後標準解。"
+    }
+  ],
+  "selfCheck": [
+    "端點是否包含？",
+    "方向是否和大於或小於一致？",
+    "端點標示是否來自最後解集？",
+    "圖上任取一點代入是否成立？"
+  ],
+  "summary": [
+    "先解代數，再畫數線。",
+    "空心表示不含，實心表示包含。",
+    "大於向右，小於向左。",
+    "讀圖時先看方向，再看端點。"
+  ],
+  "connections": {
+    "previous": "承接移項後的標準解集。",
+    "next": [
+      "下一節會解釋除以負數後為何方向反轉。",
+      "第六技能會從連續解集挑出整數解。"
+    ]
+  },
+  "figureReferences": [
+    "u07-fig-number-line-translation"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u07-s004-v001",
+      "u07-s004-v002",
+      "u07-s004-v003",
+      "u07-s004-v004",
+      "u07-s004-v005",
+      "u07-s004-v006",
+      "u07-s004-v007",
+      "u07-s004-v008",
+      "u07-s004-v009",
+      "u07-s004-v010",
+      "u07-s004-v011",
+      "u07-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u07-s004-cr001",
+      "u07-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一核對四種端點與方向組合，並以 x<3 的完整解題鏈驗證代數與圖示一致；SVG 僅作語意示意，不依比例洩漏答案。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "37098e6803b174eb767f55249e5af12af0675e66fd5968cafd5ebf8249f29078"
+}

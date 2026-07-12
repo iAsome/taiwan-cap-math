@@ -1,0 +1,241 @@
+{
+  "lectureId": "u17-s002-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallel-properties",
+  "lockedTitle": "平行線性質",
+  "title": "平行線性質：把方向不變轉成角度關係",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallel-angle。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "理解平行線在同一平面內不相交",
+    "由平行推出角相等或互補",
+    "由角關係反向判定平行"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallel-angle",
+      "requiredLevel": "能正確使用「parallel-angle」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "平行線",
+      "definition": "同一平面內永不相交的兩條直線"
+    },
+    {
+      "term": "平行記號",
+      "definition": "用相同箭頭標示平行"
+    },
+    {
+      "term": "必要條件",
+      "definition": "缺少時結論不一定成立"
+    },
+    {
+      "term": "逆性質",
+      "definition": "把原命題的條件與結論交換"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "平行不是「看起來差不多同方向」，而是題目給定或由幾何條件證明。",
+    "平行線被任一截線所截，會產生固定的角度關係；這些關係也可反過來作為判定平行的工具。",
+    "平行具有傳遞性：若a∥b且b∥c，則a∥c。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "平行線",
+      "statement": "同一平面內永不相交的兩條直線"
+    },
+    {
+      "name": "平行記號",
+      "statement": "用相同箭頭標示平行"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a∥b 且 b∥c ⇒ a∥c",
+      "conditions": [
+        "三條直線在同一平面"
+      ],
+      "meaning": "用於平行線性質中符合條件的推理或計算。"
+    },
+    {
+      "formula": "同位角相等 ⇒ 兩線平行",
+      "conditions": [
+        "兩角由同一截線形成且位置確為同位角"
+      ],
+      "meaning": "用於平行線性質中符合條件的推理或計算。"
+    },
+    {
+      "formula": "同側內角和180° ⇒ 兩線平行",
+      "conditions": [
+        "兩角由同一截線形成且位於內部同側"
+      ],
+      "meaning": "用於平行線性質中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認直線位於同一平面",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "找明示平行記號或可用的角條件",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "選擇性質或逆性質",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "寫出完整理由",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查是否偷用了未證明的平行",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "a∥b且b∥c",
+      "solutionSteps": [
+        "可得a∥c。"
+      ],
+      "answer": "可得a∥c。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "同位角皆為72°",
+      "solutionSteps": [
+        "可判兩線平行。"
+      ],
+      "answer": "可判兩線平行。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "同側內角為98°與82°",
+      "solutionSteps": [
+        "和180°，可判兩線平行。"
+      ],
+      "answer": "和180°，可判兩線平行。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩線距離看似相同",
+      "solutionSteps": [
+        "僅憑圖形不能判平行。"
+      ],
+      "answer": "僅憑圖形不能判平行。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把不相交當成任何空間中的平行",
+      "why": "國中平面幾何須在同一平面",
+      "correction": "國中平面幾何須在同一平面"
+    },
+    {
+      "mistake": "角相等卻未確認角的位置",
+      "why": "只有特定位置的角可作判定",
+      "correction": "只有特定位置的角可作判定"
+    },
+    {
+      "mistake": "把傳遞性寫反",
+      "why": "應有共同平行對象",
+      "correction": "應有共同平行對象"
+    },
+    {
+      "mistake": "用結論證明自己",
+      "why": "不能先假設待證的平行",
+      "correction": "不能先假設待證的平行"
+    },
+    {
+      "mistake": "將垂直誤當平行",
+      "why": "垂直會相交成90°",
+      "correction": "垂直會相交成90°"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「平行線性質」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "平行不是「看起來差不多同方向」，而是題目給定或由幾何條件證明。",
+    "a∥b 且 b∥c ⇒ a∥c",
+    "解題時先確認「三條直線在同一平面」。"
+  ],
+  "connections": {
+    "previous": "承接parallel-angle。",
+    "next": "下一技能依鎖定順序為parallel-proof-basic。"
+  },
+  "figureReferences": [
+    "u17-s002-fig001"
+  ],
+  "figureAccessibility": "三條水平線a、b、c使用相同箭頭標記，斜截線跨越三線。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s002-v001",
+      "u17-s002-v002",
+      "u17-s002-v003",
+      "u17-s002-v004",
+      "u17-s002-v005",
+      "u17-s002-v006",
+      "u17-s002-v007",
+      "u17-s002-v008",
+      "u17-s002-v009",
+      "u17-s002-v010",
+      "u17-s002-v011",
+      "u17-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s002-cr001",
+      "u17-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "內容同時處理由平行推出角關係與由角關係判定平行，並明確標示逆性質所需的位置條件。"
+  },
+  "contentSha256": "317691b85f4b04c4d49796d8cb53e96a54865c6ea36ffcffb5b1d0e72c7d2d5a"
+}

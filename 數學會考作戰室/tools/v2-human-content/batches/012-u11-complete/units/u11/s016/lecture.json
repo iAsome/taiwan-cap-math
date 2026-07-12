@@ -1,0 +1,265 @@
+{
+  "lectureId": "u11-s016-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-literacy",
+  "skillId": "root-literacy",
+  "lockedSkillOrder": 16,
+  "lockedTitle": "平方根素養題",
+  "title": "平方根素養題：在規格與限制下做數學決策",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從表格、規格與文字選擇根式工具",
+    "能在精確值、近似值與限制間切換",
+    "能完成多步決策並說明模型限制"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "pythagorean-converse-basic",
+      "requiredLevel": "能使用前一技能「畢氏定理逆命題基本」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "素養題",
+      "definition": "需理解情境、選模型、計算並解讀結果的問題。"
+    },
+    {
+      "term": "規格門檻",
+      "definition": "合格判定的上限、下限或範圍。"
+    },
+    {
+      "term": "模型限制",
+      "definition": "為了計算而採用的簡化假設。"
+    },
+    {
+      "term": "精確值與近似值",
+      "definition": "根式保留完整值；小數依需求近似。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "面積→邊長",
+      "meaning": "正方形邊長=√面積。"
+    },
+    {
+      "symbol": "距離→畢氏",
+      "meaning": "互相垂直分量平方和開根。"
+    },
+    {
+      "symbol": "判定→逆命題",
+      "meaning": "三邊平方關係判角。"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題先辨認資料用途，不是每個數都要使用。",
+    "精確根式適合後續代數運算；工程顯示或規格可能要求小數。",
+    "成本題要同時計算長度與每單位成本，不能只選短路。",
+    "可行性題需把計算結果與「至少、最多、範圍內」比較。",
+    "模型結論只在假設內成立，例如忽略厚度、彎曲或地形。",
+    "答題最後應用完整句說明決策與理由。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "數學建模循環",
+      "statement": "理解情境→建立關係→計算→檢查→解讀。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "總成本=長度×單位成本",
+      "conditions": [
+        "單位一致。"
+      ],
+      "meaning": "不能只比較其中一項。"
+    },
+    {
+      "formula": "合格判定",
+      "conditions": [
+        "計算值與規格門檻比較。"
+      ],
+      "meaning": "注意嚴格或包含等號。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能看到根號就一律化成小數。",
+    "不能忽略單位成本、比例尺或安全門檻。",
+    "不能把理想平面模型無條件套到真實三維物件。",
+    "近似值不得用於需要精確等式的逆命題判定。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "整理已知、所求與限制。",
+      "check": "標出單位與精度。"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇平方根、化簡、比較、畢氏或逆命題。",
+      "check": "說明為何適用。"
+    },
+    {
+      "step": 3,
+      "instruction": "先求精確中間值。",
+      "check": "避免過早四捨五入。"
+    },
+    {
+      "step": 4,
+      "instruction": "依規格轉成近似或決策。",
+      "check": "比較上下限與成本。"
+    },
+    {
+      "step": 5,
+      "instruction": "寫出含限制的結論。",
+      "check": "說明理想化假設。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "面積72的方板，求最簡邊長。",
+      "solutionSteps": [
+        "√72=6√2。"
+      ],
+      "answer": "6√2。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "坐標差9與12、每格2公尺。",
+      "solutionSteps": [
+        "圖上距離15。",
+        "實際30。"
+      ],
+      "answer": "30公尺。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "路長10、單價1.4與路長13、單價1。",
+      "solutionSteps": [
+        "成本14與13。"
+      ],
+      "answer": "第二方案較低。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "門框1.5×2，桿長2.4。",
+      "solutionSteps": [
+        "對角2.5。",
+        "理想平面下2.4<2.5。"
+      ],
+      "answer": "可能通過。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "直接把所有數相加。",
+      "why": "未建立資料角色。",
+      "correction": "先列關係式。"
+    },
+    {
+      "mistake": "過早四捨五入。",
+      "why": "累積誤差可能改變判定。",
+      "correction": "最後一步再近似。"
+    },
+    {
+      "mistake": "只比較路長不比較成本。",
+      "why": "忽略單位價格。",
+      "correction": "算總成本。"
+    },
+    {
+      "mistake": "安全門檻13，12.9說接近所以合格。",
+      "why": "忽略至少的嚴格意義。",
+      "correction": "12.9<13不合格。"
+    },
+    {
+      "mistake": "有理想模型就當真實一定可行。",
+      "why": "未說明厚度等限制。",
+      "correction": "限定結論適用範圍。"
+    },
+    {
+      "mistake": "答案只有數字沒有決策。",
+      "why": "未回應情境問題。",
+      "correction": "寫完整結論與理由。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "素養題不只算數，還要選模型、遵守規格並解讀。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "整理已知、所求與限制。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "直接把所有數相加。；修正：先列關係式。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "結論有寫模型限制嗎？"
+    }
+  ],
+  "summary": [
+    "素養題不只算數，還要選模型、遵守規格並解讀。",
+    "精確值、近似值與決策各有適當時機。"
+  ],
+  "connections": {
+    "previous": "整合 s001 至 s015 的平方根、根式與畢氏技能。",
+    "next": [
+      "下一單元可把這些建模與代數技能用於更複雜式子與方程。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u11-s016-screen-diagonal"
+  ],
+  "accessibilityNotes": [
+    "正方形螢幕邊長12公分，畫出從左下到右上的對角線，標示保護膜至少需要長度d。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s016-v001",
+      "u11-s016-v002",
+      "u11-s016-v003",
+      "u11-s016-v004",
+      "u11-s016-v005",
+      "u11-s016-v006",
+      "u11-s016-v007",
+      "u11-s016-v008",
+      "u11-s016-v009",
+      "u11-s016-v010",
+      "u11-s016-v011",
+      "u11-s016-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s016-cr001",
+      "u11-s016-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「平方根素養題」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「直接把所有數相加。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "2421f6b45a9907802f85d216c800e79bc51980ded9840401fc0689e1b8b29679"
+}

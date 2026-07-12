@@ -1,0 +1,269 @@
+{
+  "lectureId": "u16-s002-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-congruence",
+  "skillId": "triangle-congruence-proof",
+  "skillOrder": 2,
+  "originalLockedTitle": "全等證明",
+  "title": "全等證明：把已知條件排成可檢查的理由鏈",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能以『已知、推得、判定、結論』的順序寫出三角形全等證明。",
+    "能辨認共用邊、對頂角、角平分線、中點等隱含可用條件。",
+    "能正確指定全等判定並按對應順序寫全等式。",
+    "能由全等三角形的對應部分相等推出邊長或角度結論。"
+  ],
+  "prerequisiteBridge": "已知有效全等判定後，本技能進一步練習把題目中的資料轉成邏輯理由。證明不是把結論重寫一次，而是讓每一步都能追溯到已知、定義或已證定理。",
+  "prerequisites": [
+    {
+      "skillId": "triangle-congruence",
+      "requiredLevel": "能使用先備技能「全等判定」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "證明",
+      "definition": "用已知條件與已成立定理，逐步推出結論的論證。"
+    },
+    {
+      "term": "共用邊",
+      "definition": "同一條線段同時屬於兩個三角形，因此與自己相等。"
+    },
+    {
+      "term": "對頂角",
+      "definition": "兩直線相交時，位置相對的兩角相等。"
+    },
+    {
+      "term": "中點",
+      "definition": "把一條線段分成兩段相等線段的點。"
+    },
+    {
+      "term": "CPCTC",
+      "definition": "全等三角形的對應部分相等；國中可直接寫『全等三角形對應邊或對應角相等』。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AB=AB",
+      "meaning": "同一條共用邊與自己相等。"
+    },
+    {
+      "symbol": "M 為 AB 中點",
+      "meaning": "AM=MB。"
+    },
+    {
+      "symbol": "∠1=∠2",
+      "meaning": "需附理由，例如角平分線、對頂角或已知。"
+    },
+    {
+      "symbol": "∴",
+      "meaning": "因此，用來標示由前述理由推出的結論。"
+    }
+  ],
+  "conceptNarrative": [
+    "一份可靠證明先列出可以使用的事實，再選擇判定條件；不能先宣稱全等，再拿全等當理由補條件。",
+    "題目常把一項條件藏在定義裡。例如 M 是 AB 中點，就能得到 AM=MB；AD 是角平分線，就能得到兩個角相等。",
+    "共用邊不需題目另外寫出，但仍須在證明中明確列為『共用邊』。",
+    "全等式的順序必須與三組對應資料一致，否則即使判定種類正確，結論仍可能對錯邊或對錯角。",
+    "完成全等後，才能用對應部分相等求未知量。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "直接證明框架",
+      "statement": "先由已知與定義取得三組足夠條件，再套用全等判定，最後由對應部分相等得到目標。"
+    },
+    {
+      "name": "中點定義",
+      "statement": "若 M 為 AB 中點，則 A、M、B 共線且 AM=MB。"
+    },
+    {
+      "name": "角平分線定義",
+      "statement": "若 AD 平分 ∠BAC，則 ∠BAD=∠DAC。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "三組條件 ⇒ △1≅△2 ⇒ 對應部分相等",
+      "conditions": [
+        "三組條件確實符合有效判定",
+        "全等式順序正確"
+      ],
+      "meaning": "全等證明的基本邏輯鏈。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把待證結論當作已知條件。",
+    "不能只寫『看圖可知』而不給定理或定義。",
+    "不能在尚未證明全等前使用『對應邊相等』。",
+    "若只有 AAA 或一般 SSA，證明鏈仍不足。",
+    "圖上看似中點或垂直，若無標記或文字條件，不能擅自使用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出待證的兩個三角形。",
+      "check": "兩三角形是否真的包含題目所給條件？"
+    },
+    {
+      "step": 2,
+      "instruction": "把文字條件翻成邊角等式。",
+      "check": "中點、平分線、垂直等定義是否已展開？"
+    },
+    {
+      "step": 3,
+      "instruction": "尋找共用邊、對頂角或直角。",
+      "check": "每個隱含條件是否能寫出正確理由？"
+    },
+    {
+      "step": 4,
+      "instruction": "排列三組資料並辨認判定。",
+      "check": "是否為 SSS、SAS、ASA、AAS 或 RHS？"
+    },
+    {
+      "step": 5,
+      "instruction": "依對應順序寫全等式。",
+      "check": "每個位置與已列資料一致嗎？"
+    },
+    {
+      "step": 6,
+      "instruction": "用全等三角形對應部分相等收尾。",
+      "check": "最後推出的量是否正是題目所求？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "AD 平分 ∠BAC，且 AB=AC。證明 △ABD≅△ACD。",
+      "solutionSteps": [
+        "AB=AC（已知）。",
+        "∠BAD=∠CAD（角平分線定義）。",
+        "AD=AD（共用邊）。",
+        "兩邊及夾角相等。"
+      ],
+      "answer": "△ABD≅△ACD（SAS）。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "M 是 AB 中點，CM⊥AB。證明 △AMC≅△BMC。",
+      "solutionSteps": [
+        "AM=MB（中點定義）。",
+        "∠AMC=∠BMC=90°（垂直）。",
+        "CM=CM（共用邊）。"
+      ],
+      "answer": "△AMC≅△BMC（SAS）。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩直線 AB 與 CD 交於 O，且 AO=BO、CO=DO。證明 △AOC≅△BOD。",
+      "solutionSteps": [
+        "AO=BO、CO=DO（已知）。",
+        "∠AOC=∠BOD（對頂角）。",
+        "兩邊及夾角相等。"
+      ],
+      "answer": "△AOC≅△BOD（SAS）。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "已證 △PQR≅△XYZ，且 PQ=7、∠R=48°。求 XY 與 ∠Z。",
+      "solutionSteps": [
+        "全等式給 P↔X、Q↔Y、R↔Z。",
+        "PQ 對應 XY，∠R 對應 ∠Z。"
+      ],
+      "answer": "XY=7，∠Z=48°。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把『要證明 AB=AC』先列成 AB=AC。",
+      "why": "循環論證。",
+      "correction": "只能使用題目已知、定義或先前已證結果。"
+    },
+    {
+      "mistake": "只寫三組等式，不寫理由。",
+      "why": "讀者無法確認來源。",
+      "correction": "每一行附上已知、共用邊、對頂角或定義。"
+    },
+    {
+      "mistake": "看見共用線段卻漏寫。",
+      "why": "以為顯而易見不必記錄。",
+      "correction": "證明中仍需明列 AB=AB（共用邊）。"
+    },
+    {
+      "mistake": "判定寫 SAS，但角不是夾角。",
+      "why": "只計數未檢查位置。",
+      "correction": "標出兩條已知邊共同端點，夾角必在該點。"
+    },
+    {
+      "mistake": "全等式順序與資料不一致。",
+      "why": "未先配對頂點。",
+      "correction": "用每組相等邊的端點交會決定對應頂點。"
+    },
+    {
+      "mistake": "全等後推出非對應量相等。",
+      "why": "忽略全等式位置。",
+      "correction": "按第一對第一、第二對第二、第三對第三讀取。"
+    }
+  ],
+  "selfCheck": [
+    "我的每個等式都有合法來源嗎？",
+    "是否不小心使用了待證結論？",
+    "我有把中點、角平分線或垂直展開嗎？",
+    "全等式順序是否與三組資料一致？",
+    "最後一步是否明確寫出對應部分相等？"
+  ],
+  "summary": [
+    "證明要形成由已知到結論的單向理由鏈。",
+    "定義、共用邊與對頂角常提供關鍵條件。",
+    "判定種類與全等式順序都必須正確。",
+    "證明全等後，才可使用對應部分相等。"
+  ],
+  "connections": {
+    "previous": "使用上一技能的全等判定清單。",
+    "next": [
+      "等腰與等邊三角形的性質可由拆成兩個三角形後證明全等。",
+      "後續幾何證明會反覆使用同一理由鏈結構。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-002-congruence-proof"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-002-congruence-proof 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s002-v001",
+      "u16-s002-v002",
+      "u16-s002-v003",
+      "u16-s002-v004",
+      "u16-s002-v005",
+      "u16-s002-v006",
+      "u16-s002-v007",
+      "u16-s002-v008",
+      "u16-s002-v009",
+      "u16-s002-v010",
+      "u16-s002-v011",
+      "u16-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s002-cr001",
+      "u16-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「全等證明」逐段核對定義、適用條件與反例；重新演算4個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "5c8efbca69c89a13750bb88a957cdc857618ef186685696d66fe14f7dabc4dd7"
+}

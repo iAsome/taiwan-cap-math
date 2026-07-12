@@ -1,0 +1,99 @@
+{
+  "auditId": "u10-final-human-audit-r1",
+  "unitId": "u10",
+  "reviewedAt": "2026-07-12",
+  "reviewer": "ChatGPT human authoring coordinator for assigned unit",
+  "scope": {
+    "lectures": 13,
+    "mcQuestions": 156,
+    "constructedResponses": 26,
+    "semanticReviews": 156,
+    "figures": 4
+  },
+  "manualInspectionCoverage": [
+    "每篇講義的符號定義、例題、錯誤推理與先後連結",
+    "每題 MC 的獨立解、正確選項與四選項理由",
+    "每題非選題的標準解、替代法、0至3分規準與追蹤給分",
+    "所有負號、括號、次方、單位與變數可行範圍",
+    "進階題是否包含參數、抵消、整體代換或多步條件",
+    "素養情境是否真正決定運算、單位或範圍",
+    "四張 SVG 原始碼、渲染圖、行動版可讀性與答案洩漏"
+  ],
+  "actualIssuesFoundAndRepaired": [
+    {
+      "issueId": "U10-AUDIT-001",
+      "location": "s002 第 3 題草稿",
+      "found": "正確數值 6 原先對應錯誤 answerIndex。",
+      "repair": "重新定位正確選項，並在最後答案位置平衡時連同逐選項理由同步移動。",
+      "verification": "獨立計算 2(2²)-2=6。"
+    },
+    {
+      "issueId": "U10-AUDIT-002",
+      "location": "s002 進階反查草稿",
+      "found": "第一版 P(k)=0 與第二版 P(k)=20 的候選值均沒有正確選項。",
+      "repair": "改寫為 P(x)=x³-3x、P(k)=18，候選 k=3；逐一代入四個候選。",
+      "verification": "P(3)=27-9=18，其餘候選不等於 18。"
+    },
+    {
+      "issueId": "U10-AUDIT-003",
+      "location": "s010 內縮土地素養題",
+      "found": "四邊各向內縮 1 公尺時，草稿答案位置曾指向 39²，忽略一條邊兩端共減 2。",
+      "repair": "新邊長明確改為 38 公尺，答案 1444 平方公尺。",
+      "verification": "(40-2)²=38²=1444。"
+    },
+    {
+      "issueId": "U10-AUDIT-004",
+      "location": "s013 花園鋪面題",
+      "found": "草稿 answerIndex 指向外框未扣草地的式子。",
+      "repair": "正解改為外面積減內面積 8x+24，並同步修正選項分析。",
+      "verification": "(x+6)(x+4)-x(x+2)=8x+24。"
+    },
+    {
+      "issueId": "U10-AUDIT-005",
+      "location": "s006 最後一題題幹",
+      "found": "草稿殘留不完整句「每平方公尺需 -」。",
+      "repair": "重寫為每區面積與區域數的完整總面積情境。",
+      "verification": "題幹現在具完整主詞、數量關係與單位。"
+    },
+    {
+      "issueId": "U10-AUDIT-006",
+      "location": "全單元選擇題答案位置",
+      "found": "初稿各技能答案索引分布不平均。",
+      "repair": "只重新排列已人工撰寫的四個選項與對應理由，不改變題幹、正解或數學內容；13 技能各自採不同序列。",
+      "verification": "每技能索引 0、1、2、3 各 3 題，全單元各 39 題。"
+    },
+    {
+      "issueId": "U10-AUDIT-007",
+      "location": "s009、s010、s012 題幹指紋",
+      "found": "第一輪近似重複掃描抓到 4 組只更換數字的展開或平方計算草稿。",
+      "repair": "分別改寫為讀取中間係數、辨認中間項、由展開式反認公式、反向使用平方差，能力目標不再相同。",
+      "verification": "數字與單位遮罩後的題幹指紋均唯一。"
+    },
+    {
+      "issueId": "U10-AUDIT-008",
+      "location": "s005 第一題非選題解答",
+      "found": "第一個算式序列化後出現重複等號「==」。",
+      "repair": "刪除多餘等號，保留清楚的去括號算式與下一行等式。",
+      "verification": "完整算式為 4x²-3x+6-x²-5x+2=3x²-8x+8。"
+    },
+    {
+      "issueId": "U10-AUDIT-009",
+      "location": "4 個 SVG 圖形字型宣告",
+      "found": "第一次以無頭渲染器檢查時，繁體中文標籤因未指定 CJK 字型而顯示為缺字方框。",
+      "repair": "在每個 SVG 根元素指定 Noto Sans CJK TC 與 sans-serif 後備字型，重新渲染逐圖檢查。",
+      "verification": "四圖的中文、代數符號、尺寸線與區域標籤均可讀，無裁切、重疊或答案洩漏。"
+    },
+    {
+      "issueId": "U10-AUDIT-010",
+      "location": "u10-fig-difference-squares-rectangle 左側尺寸標籤",
+      "found": "加入繁體字型後，旋轉的「x-5 公尺」標籤左緣超出原畫布。",
+      "repair": "改用以垂直尺寸中點為基準的旋轉文字座標與置中錨點，使完整標籤留在 viewBox 內。",
+      "verification": "重新渲染後標籤完整可見，與尺寸箭頭和矩形外框均無重疊。"
+    }
+  ],
+  "unresolvedIssues": [],
+  "legacyContentUsed": false,
+  "oldProductionRuntimeModified": false,
+  "decision": "pass-after-repairs",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

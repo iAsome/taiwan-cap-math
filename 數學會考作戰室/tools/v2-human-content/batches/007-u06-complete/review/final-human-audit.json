@@ -1,0 +1,187 @@
+{
+  "auditId": "u06-final-human-audit-r1",
+  "unitId": "u06",
+  "reviewedAt": "2026-07-12",
+  "scope": {
+    "lecturesInspected": 12,
+    "mcQuestionsInspected": 144,
+    "constructedResponsesInspected": 24,
+    "semanticReviewsInspected": 144,
+    "svgFiguresRenderedAndInspected": 3
+  },
+  "inspectionChecklist": {
+    "negativeSignsParenthesesFractionsRootsExponentsUnits": "checked where applicable",
+    "domainAndBoundaryConditions": "checked",
+    "alternativeInterpretations": "checked",
+    "advancedDifficultyAuthenticity": "checked",
+    "literacyContextNecessity": "checked",
+    "numberSwapVariants": "checked within U06",
+    "futureUnitKnowledge": "checked; U18 boundary preserved",
+    "answerPositionAndDifficultyDistributions": "checked 3/3/3/3 per skill",
+    "figureMobileReadabilityAndLeakage": "checked after rendering"
+  },
+  "actualIssuesFoundAndRepaired": [
+    {
+      "issueId": "U06-AUDIT-001",
+      "location": "u06-s002-v008",
+      "found": "交叉相乘後得到 x=7/3，但初稿正答誤設為 7。",
+      "repair": "將正答改為 7/3，重新配置三個干擾選項與逐項理由，並以代回比例式驗證。",
+      "severity": "answer-correctness"
+    },
+    {
+      "issueId": "U06-AUDIT-002",
+      "location": "u06-s003-v007",
+      "found": "甲由15增加4後為19，乙為25；初稿把新比誤設為4:5。",
+      "repair": "正答改為19:25，重寫選項理由。",
+      "severity": "answer-correctness"
+    },
+    {
+      "issueId": "U06-AUDIT-003",
+      "location": "u06-s003-v008",
+      "found": "移動6個使兩者差距縮少12，總量應為44；初稿正答誤設66。",
+      "repair": "正答改為44，並用16與28移動後皆22驗算。",
+      "severity": "answer-correctness"
+    },
+    {
+      "issueId": "U06-AUDIT-004",
+      "location": "u06-s003-v009",
+      "found": "原數據導致甲=37.5，與數量題的整數語意不協調。",
+      "repair": "將變動數據改為甲加6、乙減4，使每份k=8、甲=24，保留原本的複合變動能力。",
+      "severity": "boundary-ambiguity"
+    },
+    {
+      "issueId": "U06-AUDIT-005",
+      "location": "u06-s008-v007",
+      "found": "1:100 的面積倍率為10000，25平方公分對應25平方公尺；初稿誤設2500平方公尺。",
+      "repair": "正答改為25平方公尺，重新設計干擾選項以區分長度倍率、面積倍率與平方單位換算。",
+      "severity": "unit-and-scale"
+    },
+    {
+      "issueId": "U06-AUDIT-006",
+      "location": "u06-s009-v009",
+      "found": "初稿得到138.75件，與完整件數情境產生離散邊界。",
+      "repair": "將原8分鐘產量調整為160件，使分段理論產量為185件，避免不必要的半件歧義。",
+      "severity": "context-validity"
+    },
+    {
+      "issueId": "U06-AUDIT-007",
+      "location": "u06-s010-v008",
+      "found": "總量78不是對齊後43份的整數倍，卻設定整數答案16。",
+      "repair": "把總量改為86，使每份2、A=16，並保留共同項對齊與總量分配要求。",
+      "severity": "data-consistency"
+    },
+    {
+      "issueId": "U06-AUDIT-008",
+      "location": "u06-s010-v009",
+      "found": "對齊後甲:乙:丙=9:12:10，差1份=7，所以乙=84；初稿誤設28。",
+      "repair": "正答改為84，重寫干擾選項。",
+      "severity": "answer-correctness"
+    },
+    {
+      "issueId": "U06-AUDIT-009",
+      "location": "u06-s011-v004",
+      "found": "乙原得4000元，保留80%為3200元；初稿誤設2560元。",
+      "repair": "正答改為3200元，逐步區分總額分配與乙個人捐款。",
+      "severity": "answer-correctness"
+    },
+    {
+      "issueId": "U06-AUDIT-010",
+      "location": "u06-s011-v005",
+      "found": "0.5:3.1 的最簡整數比為5:31，初稿正答1:6.2不是整數比且與選項衝突。",
+      "repair": "題幹明示最簡整數比，正答改為5:31並更新干擾選項。",
+      "severity": "format-and-answer"
+    },
+    {
+      "issueId": "U06-AUDIT-011",
+      "location": "u06-s011-v006",
+      "found": "模型面積75平方公分在1:40下對應12平方公尺；初稿誤設1.2。",
+      "repair": "正答改為12平方公尺並以邊長實例驗算。",
+      "severity": "unit-and-scale"
+    },
+    {
+      "issueId": "U06-AUDIT-012",
+      "location": "u06-s012-v006",
+      "found": "方案甲350元、乙750元，差額400元；初稿誤設100元。",
+      "repair": "正答改為甲便宜400元，重寫選項理由。",
+      "severity": "answer-correctness"
+    },
+    {
+      "issueId": "U06-AUDIT-013",
+      "scope": "all-three-svg-figures",
+      "finding": "首次實際轉譯使用透明背景，深色預覽器中黑色座標軸與標籤幾乎不可見。",
+      "repair": "在三張 SVG 加入完整白色背景矩形，重新轉譯並進行人工目視檢查。",
+      "verification": "第二次轉譯後，三圖均以白底呈現，繁中文字與黑色線段清楚可讀；另指定 Noto Sans CJK TC 與微軟正黑體後再確認字形。"
+    },
+    {
+      "issueId": "U06-AUDIT-014",
+      "scope": "u06-fig-inverse-graph-01",
+      "finding": "第二次轉譯發現五個標示座標中的部分點沒有落在所繪曲線上，會造成圖形與 xy＝12 的資料不一致。",
+      "repair": "重設五個點的畫布座標，並改寫曲線路徑，使曲線依序通過全部五點且維持遞減、靠近兩軸而不相交。",
+      "verification": "重新轉譯後逐點目視確認，並以五組座標乘積皆為 12 驗算。"
+    },
+    {
+      "issueId": "U06-AUDIT-015",
+      "scope": "u06-s006-v010 and u06-s012-v012",
+      "finding": "語意審查前的欄位檢查發現一題素養必要性說明過短，另一題漏填該欄位。",
+      "repair": "依各題不可刪除的真實情境條件補寫具體說明，並重算題目雜湊及同步語意審查引用。",
+      "verification": "36 題 literacy 題皆有非空、題目特定且至少 15 字的情境必要性說明。"
+    },
+    {
+      "issueId": "U06-AUDIT-016",
+      "scope": "seven MC semantic-review records",
+      "finding": "重複證據掃描發現「基礎代入」「標準兩步」「複合素養」等難度理由在不同題目重複，無法充分說明各題實際認知負荷。",
+      "repair": "逐題改寫為具體指出該題的操作步驟、圖形判讀或單位整合要求，並同步重算內容雜湊。",
+      "verification": "144 筆 difficultyReason 現在全部唯一，且對應各自題目。"
+    },
+    {
+      "issueId": "U06-AUDIT-017",
+      "scope": "u06-s010-v003",
+      "finding": "結構近似掃描發現原題與同技能另一題只更換符號和數字，雖數值不同但認知操作幾乎相同。",
+      "repair": "重寫為先合併共同比再利用 X 的實際值求 Z，增加第二個必要推理步驟；重新設計四選項、逐項分析、獨立解答與語意審查。",
+      "verification": "保留答案位置 index 2 與 basic 配額，但題目結構已不再是單純數字替換。"
+    },
+    {
+      "issueId": "U06-AUDIT-018",
+      "scope": "u06-s005-v003, u06-s006-v002 and u06-s006-v010",
+      "finding": "驗證器發現三題獨立解答過度簡短，雖答案正確，但未完整呈現不依賴儲存答案的重算過程。",
+      "repair": "補寫比值逐組檢查、反比常數求解及固定工作量換算，並同步更新逐題審查與內容雜湊。",
+      "verification": "144 題獨立解答皆至少包含具體運算或條件判斷，且不等同主解說。"
+    },
+    {
+      "issueId": "U06-AUDIT-019",
+      "scope": "u06-s005-cr001 and u06-s010-cr001",
+      "finding": "評分規準深度檢查發現兩個分數層級的描述過短，不能清楚區分學生錯用模型或漏驗算的情況。",
+      "repair": "補明錯用固定差或反比乘積的零分條件，以及連比正確但未驗算原始兩比的二分條件，並重算 CR 雜湊。",
+      "verification": "24 題共 96 個 rubric criteria 均為題目特定且至少 12 字。"
+    },
+    {
+      "issueId": "U06-AUDIT-020",
+      "scope": "eight MC items across s006, s008, s009 and s012",
+      "finding": "步驟完整性檢查發現八題只留下單一算式，未把單位轉換、模型建立或答案詮釋分開呈現。",
+      "repair": "逐題補成至少兩個可追蹤步驟，明確區分求常數、換單位、計算與驗算或詮釋，並同步更新雜湊。",
+      "verification": "144 題 MC 的 steps 欄位均至少兩步，且不是把同一句機械拆行。"
+    },
+    {
+      "issueId": "U06-AUDIT-021",
+      "scope": "u06-s009-v002 and u06-s010-v005",
+      "finding": "四選項分析檢查發現兩個錯誤選項只寫「少算」或「倒比」，不足以指出學生究竟在哪一步犯錯。",
+      "repair": "改寫為未按完整比例放大與前後項顛倒的具體原因，並同步更新語意審查及題目雜湊。",
+      "verification": "576 筆選項分析均與選項對齊且具有至少四字的具體理由。"
+    },
+    {
+      "issueId": "U06-AUDIT-022",
+      "scope": "u06-s012 lecture title",
+      "finding": "標題規則檢查發現講義延伸標題含有內部頓號，可能與外層項目分隔混淆。",
+      "repair": "改為「比例素養題：讀取資料與檢查條件和公平比較」，保留 lockedSkillTitle「比例素養題」及技能 ID 不變，並重算講義雜湊。",
+      "verification": "12 篇講義標題與 12 個鎖定技能標題皆不含頓號。"
+    }
+  ],
+  "postRepairResult": "pass",
+  "unresolvedIssues": [],
+  "limitations": [
+    "Cross-unit duplicate checking against the other nineteen concurrently authored packages is not possible in this conversation and remains a central-coordinator task."
+  ],
+  "legacyContentUsed": false,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "productionActivationAllowed": false
+}

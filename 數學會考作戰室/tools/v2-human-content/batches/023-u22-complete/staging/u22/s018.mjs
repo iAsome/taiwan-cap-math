@@ -1,0 +1,1642 @@
+// Emitted from reviewed immutable source. Do not edit.
+export default {
+  "lecture": {
+    "lectureId": "u22-s018-lecture-r1",
+    "unitId": "u22",
+    "numericUnitId": 22,
+    "topicId": "u22-literacy",
+    "skillId": "statistics-probability-literacy",
+    "lockedSkillOrder": 18,
+    "title": "統計機率素養：整合統計圖表與隨機抽取，辨識推論限制。",
+    "originalLockedTitle": "統計機率素養",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能把累積次數或比例轉成經驗機率。",
+      "能說明盒狀圖不足以精算某些事件。",
+      "能辨識抽樣偏差與母體限制。",
+      "能透明處理離群值與資料清理。"
+    ],
+    "prerequisiteSkillIds": [
+      "probability-literacy"
+    ],
+    "prerequisiteBridge": "整合U22全部統計與機率技能。",
+    "glossary": [
+      {
+        "term": "經驗機率",
+        "definition": "由觀察次數除以總次數所得的比例。"
+      },
+      {
+        "term": "代表性",
+        "definition": "樣本能否合理反映欲推論母體。"
+      },
+      {
+        "term": "抽樣框",
+        "definition": "實際有機會被選入樣本的對象集合。"
+      },
+      {
+        "term": "資料治理",
+        "definition": "記錄資料來源、清理規則與修改理由。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "經驗機率=符合筆數/總筆數",
+        "meaning": "從資料中等機會抽一筆。"
+      },
+      {
+        "symbol": "箱體位置比例≈1/2",
+        "meaning": "一般無大量端點重複時。"
+      }
+    ],
+    "conceptNarrative": [
+      "統計圖提供分布摘要，機率問題則需要分子、分母與抽取機制。",
+      "盒狀圖只給最大值100，不能知道100出現幾次，也不知道總筆數，因此不能算抽到100的精確機率。",
+      "累積次數若總數已知，可以直接除以總數得到不超過某值的經驗機率。",
+      "隨機只在自行車社抽樣，即使社內程序公平，對全校通學方式仍有抽樣框偏差。",
+      "先刪離群值再宣稱沒有離群是循環式報告，必須揭露原始標記、刪除理由與分析影響。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "樣本推論界線",
+        "statement": "結論不得超過實際抽樣框。"
+      },
+      {
+        "name": "群體摘要限制",
+        "statement": "中位數或Q3不能直接轉成跨組個體勝率。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "P(抽到事件)=事件筆數/N",
+        "conditions": [
+          "原資料各筆等機會。"
+        ],
+        "meaning": "原資料各筆等機會。"
+      },
+      {
+        "formula": "累積比例=C/N",
+        "conditions": [
+          "累積次數C、總數N。"
+        ],
+        "meaning": "累積次數C、總數N。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能把五數摘要當五筆原始資料。",
+      "不能由Q3高低算兩個隨機個體誰較高的精確機率。",
+      "大樣本不能自動修正系統性抽樣偏差。",
+      "離群值不可為了得到漂亮結論而無紀錄刪除。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "辨認資料來源",
+        "check": "原始資料、盒狀圖、累積圖或抽樣。"
+      },
+      {
+        "step": 2,
+        "instruction": "找可用分子分母",
+        "check": "若缺少就明說不可算。"
+      },
+      {
+        "step": 3,
+        "instruction": "檢查抽取機制",
+        "check": "每筆是否等機會。"
+      },
+      {
+        "step": 4,
+        "instruction": "限制推論母體",
+        "check": "時間、地點與人群。"
+      },
+      {
+        "step": 5,
+        "instruction": "揭露資料處理",
+        "check": "離群與缺值規則。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "40筆中累積30",
+        "solutionSteps": [
+          "經驗機率3/4。"
+        ],
+        "answer": "經驗機率3/4。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "五數10、20、25、30、100",
+        "solutionSteps": [
+          "不能由五數算抽到100機率。"
+        ],
+        "answer": "不能由五數算抽到100機率。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "只在自行車社抽通學方式",
+        "solutionSteps": [
+          "抽樣框偏差。"
+        ],
+        "answer": "抽樣框偏差。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "先刪離群再稱無離群",
+        "solutionSteps": [
+          "需揭露原始結果與刪除理由。"
+        ],
+        "answer": "需揭露原始結果與刪除理由。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Q3較高就說隨機個體75%會贏",
+        "why": "百分位不是跨組勝率。",
+        "correction": "百分位不是跨組勝率。"
+      },
+      {
+        "mistake": "樣本大就忽略取樣時段",
+        "why": "代表性不由數量單獨保證。",
+        "correction": "代表性不由數量單獨保證。"
+      },
+      {
+        "mistake": "離群候選直接判造假",
+        "why": "統計標記不能證明原因。",
+        "correction": "統計標記不能證明原因。"
+      },
+      {
+        "mistake": "把箱體50%說成嚴格一半",
+        "why": "重複值時需用約。",
+        "correction": "重複值時需用約。"
+      }
+    ],
+    "selfCheck": [
+      "資料是否提供精確頻數？",
+      "抽取單位是否等機會？",
+      "樣本代表哪個母體？",
+      "結論是否超過摘要資訊？",
+      "資料清理是否可追溯？"
+    ],
+    "summary": [
+      "統計摘要與機率計算需要不同資訊。",
+      "經驗機率要有符合筆數與總數。",
+      "代表性取決於抽樣框與程序。",
+      "透明處理離群值是分析品質的一部分。"
+    ],
+    "connections": {
+      "previous": "整合U22全部統計與機率技能。",
+      "next": [
+        "本單元完成後，後續可在立體幾何與跨科資料題中持續運用有限推論。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u22-stat-prob-combined"
+    ],
+    "figureAccessibility": [
+      {
+        "figureId": "fig-u22-stat-prob-combined",
+        "altText": "上方為甲乙兩校同尺度盒狀圖，下方為甲校80人與乙校120人的抽樣比例條。"
+      }
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u22-s018-v001",
+        "u22-s018-v002",
+        "u22-s018-v003",
+        "u22-s018-v004",
+        "u22-s018-v005",
+        "u22-s018-v006",
+        "u22-s018-v007",
+        "u22-s018-v008",
+        "u22-s018-v009",
+        "u22-s018-v010",
+        "u22-s018-v011",
+        "u22-s018-v012"
+      ],
+      "constructedResponseIds": [
+        "u22-s018-cr001",
+        "u22-s018-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "skillSpecificReviewEvidence": "逐題檢查盒狀圖能否提供分子分母、抽樣框是否涵蓋母體，以及離群處理是否形成循環論證；所有不可算題均明確指出缺少資訊。",
+      "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+      "contentBoundary": "整合統計圖表與隨機抽取，辨識推論限制。",
+      "reviewVersion": "human-lecture-review-u22-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "29a394eeb96b712911324795b06647a5f9eb5fc79bc0d2e01487b90cd0301c42"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u22-s018-v001",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某資料盒狀圖的箱體表示中間約50%。若從原資料的觀測筆中等機會抽一筆，抽到箱體位置範圍內的機率約為何？",
+      "text": "某資料盒狀圖的箱體表示中間約50%。若從原資料的觀測筆中等機會抽一筆，抽到箱體位置範圍內的機率約為何？",
+      "givenConditions": [],
+      "target": "由盒狀圖估抽樣機率",
+      "choices": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "Q1到Q3涵蓋中間約50%的排序位置，所以隨機抽到此範圍約1/2。",
+      "explanation": "Q1到Q3涵蓋中間約50%的排序位置，所以隨機抽到此範圍約1/2。",
+      "steps": [
+        "連結位置比例與抽樣機率。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/4",
+          "truth": false,
+          "reason": "只算一個四分位區段。"
+        },
+        {
+          "choice": "1/2",
+          "truth": true,
+          "reason": "正確。獨立重算：Q1到Q3涵蓋中間約50%的排序位置，所以隨機抽到此範圍約1/2。"
+        },
+        {
+          "choice": "3/4",
+          "truth": false,
+          "reason": "把箱外與箱內對調。"
+        },
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "誤以為所有資料都在箱體。"
+        }
+      ],
+      "misconceptionTarget": "把箱體當全部範圍。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "重複值可使嚴格落在端點內的比例不同，故用約。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：由盒狀圖估抽樣機率",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "由盒狀圖估抽樣機率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "6e349ab0eb579a1a4eb736be6e573ca24546b4d96b99e2e797e50bc4fc93ef5d"
+    },
+    {
+      "questionId": "u22-s018-v002",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "一組資料有40筆，累積圖顯示不超過某值有30筆。隨機抽一筆不超過該值的機率為何？",
+      "text": "一組資料有40筆，累積圖顯示不超過某值有30筆。隨機抽一筆不超過該值的機率為何？",
+      "givenConditions": [],
+      "target": "由累積次數求經驗機率",
+      "choices": [
+        "1/4",
+        "30",
+        "4/3",
+        "3/4"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "有利30筆、總40筆，機率30/40=3/4。",
+      "explanation": "有利30筆、總40筆，機率30/40=3/4。",
+      "steps": [
+        "把累積次數轉為有利筆數。",
+        "除以總筆數。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/4",
+          "truth": false,
+          "reason": "算成超過該值。"
+        },
+        {
+          "choice": "30",
+          "truth": false,
+          "reason": "未除以總數。"
+        },
+        {
+          "choice": "4/3",
+          "truth": false,
+          "reason": "分子分母顛倒。"
+        },
+        {
+          "choice": "3/4",
+          "truth": true,
+          "reason": "正確。獨立重算：有利30筆、總40筆，機率30/40=3/4。"
+        }
+      ],
+      "misconceptionTarget": "把累積次數直接當機率。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "每筆觀測被抽中的機會相同。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：由累積次數求經驗機率",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "由累積次數求經驗機率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "17733d62083b4870ea5c572abbc3868e4db30f24f88016b4e5452515d9a31ac5"
+    },
+    {
+      "questionId": "u22-s018-v003",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "甲班盒狀圖中位數較高。從甲乙兩班各隨機抽一名學生，能否保證甲生分數較高？",
+      "text": "甲班盒狀圖中位數較高。從甲乙兩班各隨機抽一名學生，能否保證甲生分數較高？",
+      "givenConditions": [],
+      "target": "限制由統計圖作機率推論",
+      "choices": [
+        "不能，兩班分布可能重疊",
+        "能，中位數較高代表每人較高",
+        "能，只要甲Q3較高",
+        "不能，因盒狀圖完全沒有資訊"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "中位數只比較中心位置；若兩圖重疊，抽到的個體可能反向。",
+      "explanation": "中位數只比較中心位置；若兩圖重疊，抽到的個體可能反向。",
+      "steps": [
+        "區分群體摘要與隨機個體。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "不能，兩班分布可能重疊",
+          "truth": true,
+          "reason": "正確。獨立重算：中位數只比較中心位置；若兩圖重疊，抽到的個體可能反向。"
+        },
+        {
+          "choice": "能，中位數較高代表每人較高",
+          "truth": false,
+          "reason": "群體中心不等於逐人。"
+        },
+        {
+          "choice": "能，只要甲Q3較高",
+          "truth": false,
+          "reason": "Q3高仍不能保證單次比較。"
+        },
+        {
+          "choice": "不能，因盒狀圖完全沒有資訊",
+          "truth": false,
+          "reason": "盒狀圖有分布摘要，只是不足以保證。"
+        }
+      ],
+      "misconceptionTarget": "把中心差異當個體必然關係。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "要算精確勝率需更完整分布。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：限制由統計圖作機率推論",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "限制由統計圖作機率推論",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "01d0692fa3cd14a64453684b7dee898fd60b46e3ccdfee18ce40ac0212baa464"
+    },
+    {
+      "questionId": "u22-s018-v004",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某校1000人中抽100人調查通學方式。若只在自行車社抽樣，主要問題是什麼？",
+      "text": "某校1000人中抽100人調查通學方式。若只在自行車社抽樣，主要問題是什麼？",
+      "givenConditions": [],
+      "target": "辨識抽樣偏差",
+      "choices": [
+        "樣本數100一定太少",
+        "機率必定大於1",
+        "樣本偏向騎自行車者，不能代表全校",
+        "只要用盒狀圖就能修正"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "抽樣框只含自行車社，讓不同通學方式學生入樣機率不公平，估計會偏。",
+      "explanation": "抽樣框只含自行車社，讓不同通學方式學生入樣機率不公平，估計會偏。",
+      "steps": [
+        "檢查誰有機會入樣。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "樣本數100一定太少",
+          "truth": false,
+          "reason": "問題核心是選取方式偏差。"
+        },
+        {
+          "choice": "機率必定大於1",
+          "truth": false,
+          "reason": "與機率範圍無關。"
+        },
+        {
+          "choice": "樣本偏向騎自行車者，不能代表全校",
+          "truth": true,
+          "reason": "正確。獨立重算：抽樣框只含自行車社，讓不同通學方式學生入樣機率不公平，估計會偏。"
+        },
+        {
+          "choice": "只要用盒狀圖就能修正",
+          "truth": false,
+          "reason": "圖形不能消除抽樣偏差。"
+        }
+      ],
+      "misconceptionTarget": "只看樣本數不看代表性。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "即使社團內隨機，對全校仍非代表性抽樣。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：辨識抽樣偏差",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "辨識抽樣偏差",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "b0a42993e1c8e852df17b932c26512a7467baa3194b9ae2eb5093653fe75025f"
+    },
+    {
+      "questionId": "u22-s018-v005",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "資料五數為 10、20、25、30、100。若隨機抽一筆，能由盒狀圖精確算出抽到100的機率嗎？",
+      "text": "資料五數為 10、20、25、30、100。若隨機抽一筆，能由盒狀圖精確算出抽到100的機率嗎？",
+      "givenConditions": [],
+      "target": "辨識統計摘要的機率限制",
+      "choices": [
+        "不能，盒狀圖不知道100出現幾次與總筆數",
+        "能，機率為1/5",
+        "能，機率為1/4",
+        "能，機率為1/2"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "盒狀圖只說最大值為100，未提供樣本數及100的重複次數，因此無法精算。",
+      "explanation": "盒狀圖只說最大值為100，未提供樣本數及100的重複次數，因此無法精算。",
+      "steps": [
+        "辨認五數不是頻數。",
+        "指出缺少分子與分母。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "不能，盒狀圖不知道100出現幾次與總筆數",
+          "truth": true,
+          "reason": "正確。獨立重算：盒狀圖只說最大值為100，未提供樣本數及100的重複次數，因此無法精算。"
+        },
+        {
+          "choice": "能，機率為1/5",
+          "truth": false,
+          "reason": "五個摘要值不是五筆資料。"
+        },
+        {
+          "choice": "能，機率為1/4",
+          "truth": false,
+          "reason": "最大值不代表最高四分之一都等於100。"
+        },
+        {
+          "choice": "能，機率為1/2",
+          "truth": false,
+          "reason": "中位數與最大值無此關係。"
+        }
+      ],
+      "misconceptionTarget": "把五數摘要當成完整五筆樣本。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "若題目明定所有原始資料才可計算。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：辨識統計摘要的機率限制",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "辨識統計摘要的機率限制",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "9c1e945f3d6b6acbe7fdc3ca4fd55d92e2397e2bc31d4ac23da9624a7552873b"
+    },
+    {
+      "questionId": "u22-s018-v006",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某累積圖總數80，到Q1所在上界累積20。隨機抽一筆落在該上界以下的經驗機率為何？",
+      "text": "某累積圖總數80，到Q1所在上界累積20。隨機抽一筆落在該上界以下的經驗機率為何？",
+      "givenConditions": [],
+      "target": "把累積位置轉為機率",
+      "choices": [
+        "3/4",
+        "20",
+        "1/4",
+        "1/5"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "累積20筆占80筆，20/80=1/4。",
+      "explanation": "累積20筆占80筆，20/80=1/4。",
+      "steps": [
+        "讀累積次數。",
+        "除以總數。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3/4",
+          "truth": false,
+          "reason": "算成其餘資料。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "未除以80。"
+        },
+        {
+          "choice": "1/4",
+          "truth": true,
+          "reason": "正確。獨立重算：累積20筆占80筆，20/80=1/4。"
+        },
+        {
+          "choice": "1/5",
+          "truth": false,
+          "reason": "約分錯誤。"
+        }
+      ],
+      "misconceptionTarget": "把四分位名稱與機率比例混亂。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "端點重複值可能使實際Q1位置解讀需謹慎，但題目直接給累積20。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：把累積位置轉為機率",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "把累積位置轉為機率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "01b6f83da2a21b77831dd621620cf0ce033c29599b95fb8e32154cf6e1228ada"
+    },
+    {
+      "questionId": "u22-s018-v007",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某批產品重量Q1=9、Q3=11，離群上界14。若隨機抽到重量15的產品，最正確的處理是什麼？",
+      "text": "某批產品重量Q1=9、Q3=11，離群上界14。若隨機抽到重量15的產品，最正確的處理是什麼？",
+      "givenConditions": [],
+      "target": "整合離群判斷與資料倫理",
+      "choices": [
+        "直接判定產品造假",
+        "忽略，因只抽到一件",
+        "把15改成11再分析",
+        "標記為統計離群候選並進一步查核"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "15>14，依規則為離群候選；後續需查量測、製程或真實特殊品。",
+      "explanation": "15>14，依規則為離群候選；後續需查量測、製程或真實特殊品。",
+      "steps": [
+        "套用界線。",
+        "限制因果結論。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "直接判定產品造假",
+          "truth": false,
+          "reason": "統計標記不能證明原因。"
+        },
+        {
+          "choice": "忽略，因只抽到一件",
+          "truth": false,
+          "reason": "單件仍可觸發查核。"
+        },
+        {
+          "choice": "把15改成11再分析",
+          "truth": false,
+          "reason": "不得任意修改觀測。"
+        },
+        {
+          "choice": "標記為統計離群候選並進一步查核",
+          "truth": true,
+          "reason": "正確。獨立重算：15>14，依規則為離群候選；後續需查量測、製程或真實特殊品。"
+        }
+      ],
+      "misconceptionTarget": "把離群值自動刪除或定罪。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "是否排除需有預先規則與實質理由。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：整合離群判斷與資料倫理",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "整合離群判斷與資料倫理",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "13ee9622fc30ff6e65492583e27b960faf41c1be5abc7fbbe35432d50f1aa75d"
+    },
+    {
+      "questionId": "u22-s018-v008",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "甲乙兩地每日用水量盒狀圖中，甲IQR小但全距大。若隨機抽一天，哪個敘述最合理？",
+      "text": "甲乙兩地每日用水量盒狀圖中，甲IQR小但全距大。若隨機抽一天，哪個敘述最合理？",
+      "givenConditions": [],
+      "target": "整合兩種分散量作有限推論",
+      "choices": [
+        "甲每一天都很穩定",
+        "甲多數日較集中，但少數端點可能離中段較遠",
+        "甲一定有資料錯誤",
+        "甲的平均一定較小"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "小IQR描述中間多數集中；大全距提醒端點遠。兩者可同時成立。",
+      "explanation": "小IQR描述中間多數集中；大全距提醒端點遠。兩者可同時成立。",
+      "steps": [
+        "分開解讀IQR與全距。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "甲每一天都很穩定",
+          "truth": false,
+          "reason": "大全距顯示端點波動。"
+        },
+        {
+          "choice": "甲多數日較集中，但少數端點可能離中段較遠",
+          "truth": true,
+          "reason": "正確。獨立重算：小IQR描述中間多數集中；大全距提醒端點遠。兩者可同時成立。"
+        },
+        {
+          "choice": "甲一定有資料錯誤",
+          "truth": false,
+          "reason": "大全距不必然是錯誤。"
+        },
+        {
+          "choice": "甲的平均一定較小",
+          "truth": false,
+          "reason": "分散量不決定平均。"
+        }
+      ],
+      "misconceptionTarget": "用單一「穩定」涵蓋所有日子。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "不能由摘要確定端點原因或機率。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：整合兩種分散量作有限推論",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "整合兩種分散量作有限推論",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "1b59fa897b8b8afbdc44e3c686567c894d347f718752785344eefc8f4460230d"
+    },
+    {
+      "questionId": "u22-s018-v009",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某問卷選項A、B、C的樣本比例為50%、30%、20%。若隨機從已回收問卷抽一份，抽到B的機率是多少？",
+      "text": "某問卷選項A、B、C的樣本比例為50%、30%、20%。若隨機從已回收問卷抽一份，抽到B的機率是多少？",
+      "givenConditions": [],
+      "target": "由統計比例建立經驗機率",
+      "choices": [
+        "20%",
+        "1/3",
+        "50%",
+        "30%"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "從已回收問卷等機會抽取時，經驗機率等於B所占比例30%。",
+      "explanation": "從已回收問卷等機會抽取時，經驗機率等於B所占比例30%。",
+      "steps": [
+        "把樣本比例視為頻率。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20%",
+          "truth": false,
+          "reason": "這是C。"
+        },
+        {
+          "choice": "1/3",
+          "truth": false,
+          "reason": "三類不等比例。"
+        },
+        {
+          "choice": "50%",
+          "truth": false,
+          "reason": "這是A。"
+        },
+        {
+          "choice": "30%",
+          "truth": true,
+          "reason": "正確。獨立重算：從已回收問卷等機會抽取時，經驗機率等於B所占比例30%。"
+        }
+      ],
+      "misconceptionTarget": "看到三類便平均。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "只代表已回收問卷，不必然代表母體。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：由統計比例建立經驗機率",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "由統計比例建立經驗機率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "c9bd8a52bf80698e163aab7da55a1dd4b120e5e2b5ac74845303ddfa734a963b"
+    },
+    {
+      "questionId": "u22-s018-v010",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "兩班各有40人。甲班Q3=85，乙班Q3=78。若各班隨機抽一人，哪句最嚴謹？",
+      "text": "兩班各有40人。甲班Q3=85，乙班Q3=78。若各班隨機抽一人，哪句最嚴謹？",
+      "givenConditions": [],
+      "target": "限制跨分布機率推論",
+      "choices": [
+        "甲生至少有75%機率較高",
+        "不能只由Q3算出甲生成績高於乙生的精確機率",
+        "乙生一定較低",
+        "兩人分數相同機率一定為0"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "Q3只給各自75%位置值，缺少完整分布與交叉比較資料，無法精算兩個隨機個體的勝率。",
+      "explanation": "Q3只給各自75%位置值，缺少完整分布與交叉比較資料，無法精算兩個隨機個體的勝率。",
+      "steps": [
+        "辨認所需為兩分布聯合比較。",
+        "指出Q3資訊不足。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "甲生至少有75%機率較高",
+          "truth": false,
+          "reason": "Q3比較不是跨班勝率。"
+        },
+        {
+          "choice": "不能只由Q3算出甲生成績高於乙生的精確機率",
+          "truth": true,
+          "reason": "正確。獨立重算：Q3只給各自75%位置值，缺少完整分布與交叉比較資料，無法精算兩個隨機個體的勝率。"
+        },
+        {
+          "choice": "乙生一定較低",
+          "truth": false,
+          "reason": "分布可能重疊。"
+        },
+        {
+          "choice": "兩人分數相同機率一定為0",
+          "truth": false,
+          "reason": "離散分數可能相同。"
+        }
+      ],
+      "misconceptionTarget": "把百分位位置當跨組勝率。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "兩班樣本數相同也不足以補全分布。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：限制跨分布機率推論",
+      "literacyContextNecessity": "教育比較應避免把單一百分位變成個人勝負機率。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "限制跨分布機率推論",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "b54089103b59e1ba0376beb5a790b89f675521f98657d285c2bc7eb722cf221d"
+    },
+    {
+      "questionId": "u22-s018-v011",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某平台顯示「90%使用者等待不超過8分鐘」，但資料只來自凌晨時段。若要推論全天使用者，主要缺陷是什麼？",
+      "text": "某平台顯示「90%使用者等待不超過8分鐘」，但資料只來自凌晨時段。若要推論全天使用者，主要缺陷是什麼？",
+      "givenConditions": [],
+      "target": "審核服務數據代表性",
+      "choices": [
+        "90%不可能是機率",
+        "8分鐘不是整數",
+        "時段樣本可能不具全天代表性",
+        "只要樣本很多就一定可推全天"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "凌晨流量與全天可能不同，抽樣時段造成涵蓋偏差；需跨時段抽樣或限制結論。",
+      "explanation": "凌晨流量與全天可能不同，抽樣時段造成涵蓋偏差；需跨時段抽樣或限制結論。",
+      "steps": [
+        "核對資料來源範圍。",
+        "限制母體推論。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "90%不可能是機率",
+          "truth": false,
+          "reason": "百分比可表示經驗比例。"
+        },
+        {
+          "choice": "8分鐘不是整數",
+          "truth": false,
+          "reason": "時間可為連續量。"
+        },
+        {
+          "choice": "時段樣本可能不具全天代表性",
+          "truth": true,
+          "reason": "正確。獨立重算：凌晨流量與全天可能不同，抽樣時段造成涵蓋偏差；需跨時段抽樣或限制結論。"
+        },
+        {
+          "choice": "只要樣本很多就一定可推全天",
+          "truth": false,
+          "reason": "大樣本不能修正系統性時段偏差。"
+        }
+      ],
+      "misconceptionTarget": "只看樣本量而忽略抽樣框。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "等待時間單位為分鐘。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "結論若只寫凌晨使用者則可成立。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：審核服務數據代表性",
+      "literacyContextNecessity": "平台指標必須揭露取樣時段，否則百分位會誤導。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "審核服務數據代表性",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "60e813207bfe3b8d51a8ae6c30d1b208a1433d8ba72febd64f49a89442f91ec6"
+    },
+    {
+      "questionId": "u22-s018-v012",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某研究先依盒狀圖刪除所有離群值，再報告「資料沒有離群值」。這個結論有何問題？",
+      "text": "某研究先依盒狀圖刪除所有離群值，再報告「資料沒有離群值」。這個結論有何問題？",
+      "givenConditions": [],
+      "target": "整合統計判斷與研究透明",
+      "choices": [
+        "結論是由刪除規則造成，應揭露原始離群與刪除理由",
+        "沒有問題，刪除後確實沒有",
+        "盒狀圖不能找離群值",
+        "離群值必須永遠保留"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "先刪再宣稱不存在是循環描述；應報原始資料、判定規則、處理原因及敏感度。",
+      "explanation": "先刪再宣稱不存在是循環描述；應報原始資料、判定規則、處理原因及敏感度。",
+      "steps": [
+        "辨認處理流程。",
+        "要求透明揭露。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "結論是由刪除規則造成，應揭露原始離群與刪除理由",
+          "truth": true,
+          "reason": "正確。獨立重算：先刪再宣稱不存在是循環描述；應報原始資料、判定規則、處理原因及敏感度。"
+        },
+        {
+          "choice": "沒有問題，刪除後確實沒有",
+          "truth": false,
+          "reason": "忽略循環式處理與資訊透明。"
+        },
+        {
+          "choice": "盒狀圖不能找離群值",
+          "truth": false,
+          "reason": "配合IQR規則可以標記候選。"
+        },
+        {
+          "choice": "離群值必須永遠保留",
+          "truth": false,
+          "reason": "是否保留取決於研究目的與正當理由。"
+        }
+      ],
+      "misconceptionTarget": "把資料清理結果冒充原始資料性質。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "離群可是真實事件，不得僅因影響結果而刪。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：整合統計判斷與研究透明",
+      "literacyContextNecessity": "資料治理需要可追溯的離群處理紀錄。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "整合統計判斷與研究透明",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "7f1e8badbd60d3e4d03eb28ef0fa40b263f8889ea6578f8a5c67d0b0b66903f1"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u22-s018-cr001",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "甲校抽樣80人，通學時間五數為10、18、25、35、70分鐘；乙校抽樣120人，五數為12、20、27、32、48分鐘。先比較兩校中位數、IQR與全距，再回答：從兩校合計200名樣本中隨機抽一人，抽到甲校樣本的機率是多少？哪些結論不能延伸到全校所有學生？",
+      "requiredWork": [
+        "計算兩校三項統計量。",
+        "依樣本數求抽中甲校機率。",
+        "區分樣本描述與母體推論。"
+      ],
+      "standardSolution": [
+        "甲：中位25、IQR=17、全距=60；乙：中位27、IQR=12、全距=36。",
+        "合併樣本中抽到甲校樣本機率=80/200=2/5。",
+        "只能描述這兩批樣本；若抽樣方式不具代表性，不能斷言兩校全體學生必有相同分布，也不能說每位乙校學生都比甲校快或慢。"
+      ],
+      "reasoningSteps": [
+        "甲：中位25、IQR=17、全距=60；乙：中位27、IQR=12、全距=36。",
+        "合併樣本中抽到甲校樣本機率=80/200=2/5。",
+        "只能描述這兩批樣本；若抽樣方式不具代表性，不能斷言兩校全體學生必有相同分布，也不能說每位乙校學生都比甲校快或慢。"
+      ],
+      "alternativeMethods": [
+        "可用同尺度盒狀圖比較，再用樣本人數比80:120=2:3。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "六個統計值、2/5與至少一項正確推論限制完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "只有一個差值錯，機率與限制正確。"
+        },
+        {
+          "score": 1,
+          "criteria": "能正確比較中位數或IQR並算出2/5。"
+        },
+        {
+          "score": 0,
+          "criteria": "以盒狀圖推所有個體，或機率用1/2忽略樣本數。"
+        }
+      ],
+      "partialCreditRules": [
+        "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
+        "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
+      ],
+      "followThroughPolicy": "若統計差值有一處算術錯但後續比較依錯值一致，保留方法分；缺推論限制最高2分。",
+      "unitNotationRules": "時間單位為分鐘；機率無單位。",
+      "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
+      "commonErrors": [
+        "因兩校各一個盒狀圖就判抽中各1/2。",
+        "把全距當IQR。",
+        "把樣本結果當全校定律。"
+      ],
+      "visualMode": "figure",
+      "figureId": "fig-u22-stat-prob-combined",
+      "drawingSpecReference": "fig-u22-stat-prob-combined",
+      "independentReview": {
+        "recomputedResult": "甲：中位25、IQR=17、全距=60；乙：中位27、IQR=12、全距=36。；合併樣本中抽到甲校樣本機率=80/200=2/5。；只能描述這兩批樣本；若抽樣方式不具代表性，不能斷言兩校全體學生必有相同分布，也不能說每位乙校學生都比甲校快或慢。",
+        "alternativeMethodCheck": "可用同尺度盒狀圖比較，再用樣本人數比80:120=2:3。",
+        "ambiguityBoundaryCheck": "題目所需規則、母體、抽取方式、端點與單位均已明示；評分規準依本題步驟逐項核對。",
+        "rubricSpecificity": "pass",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "5ace61e7df6b21bf5dfe64465d8f049ff68b98c2bcfab5788787b0fd3898b340"
+    },
+    {
+      "questionId": "u22-s018-cr002",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-literacy",
+      "skillId": "statistics-probability-literacy",
+      "lockedSkillOrder": 18,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "某平台把使用者分成低、中、高三種每週使用時數區間，樣本累積人數依序為25、70、100。平台從這100人中等可能抽一人發優惠券。(1) 三組各有幾人？(2) 抽到高使用組的機率？(3) 若低使用組中有40%續訂、中使用組60%、高使用組80%，估算抽中者會續訂的機率。(4) 說明此結果不等於所有平台使用者的真實續訂率。",
+      "requiredWork": [
+        "由累積人數求各組人數。",
+        "依組人數求抽中機率。",
+        "用分組加權求續訂機率。",
+        "說明樣本代表性限制。"
+      ],
+      "standardSolution": [
+        "三組人數：低25，中70-25=45，高100-70=30。",
+        "P(高)=30/100=0.30。",
+        "續訂機率=(25/100)(0.40)+(45/100)(0.60)+(30/100)(0.80)=0.10+0.27+0.24=0.61。",
+        "0.61是依這100人與給定組內率的估算；若樣本偏向特定使用者，不能直接視為全平台母體率。"
+      ],
+      "reasoningSteps": [
+        "三組人數：低25，中70-25=45，高100-70=30。",
+        "P(高)=30/100=0.30。",
+        "續訂機率=(25/100)(0.40)+(45/100)(0.60)+(30/100)(0.80)=0.10+0.27+0.24=0.61。",
+        "0.61是依這100人與給定組內率的估算；若樣本偏向特定使用者，不能直接視為全平台母體率。"
+      ],
+      "alternativeMethods": [
+        "可換成人數：預期續訂10+27+24=61人，故61/100。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "三組人數、0.30、0.61與母體限制全部完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "只錯一組人數或一項乘法，後續加權依錯值一致。"
+        },
+        {
+          "score": 1,
+          "criteria": "能正確求三組人數並建立至少兩項加權。"
+        },
+        {
+          "score": 0,
+          "criteria": "把累積25、70、100直接當三組人數或把三個續訂率直接平均。"
+        }
+      ],
+      "partialCreditRules": [
+        "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
+        "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
+      ],
+      "followThroughPolicy": "早期組別人數算術錯可追蹤給分，最高2分；未寫推論限制最高2分。",
+      "unitNotationRules": "人數單位為人，續訂機率可寫0.61或61%。",
+      "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
+      "commonErrors": [
+        "高組誤寫100人。",
+        "續訂率算(40%+60%+80%)/3。",
+        "忽略抽樣偏差。"
+      ],
+      "visualMode": "figure",
+      "figureId": "fig-u22-stat-prob-combined",
+      "drawingSpecReference": "fig-u22-stat-prob-combined",
+      "independentReview": {
+        "recomputedResult": "三組人數：低25，中70-25=45，高100-70=30。；P(高)=30/100=0.30。；續訂機率=(25/100)(0.40)+(45/100)(0.60)+(30/100)(0.80)=0.10+0.27+0.24=0.61。；0.61是依這100人與給定組內率的估算；若樣本偏向特定使用者，不能直接視為全平台母體率。",
+        "alternativeMethodCheck": "可換成人數：預期續訂10+27+24=61人，故61/100。",
+        "ambiguityBoundaryCheck": "題目所需規則、母體、抽取方式、端點與單位均已明示；評分規準依本題步驟逐項核對。",
+        "rubricSpecificity": "pass",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "3c1e3b7d9157218a9b9030ada6c12466400a13c5bd931848a071dbc18057a5d0"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u22-s018-v001",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "6e349ab0eb579a1a4eb736be6e573ca24546b4d96b99e2e797e50bc4fc93ef5d",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "Q1到Q3涵蓋中間約50%的排序位置，所以隨機抽到此範圍約1/2。",
+      "derivedAnswer": "1/2",
+      "storedAnswer": "1/2",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「1/2」；其餘選項逐項排除：「1/4」：只算一個四分位區段。；「3/4」：把箱外與箱內對調。；「1」：誤以為所有資料都在箱體。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「由盒狀圖估抽樣機率」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "重複值可使嚴格落在端點內的比例不同，故用約。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把箱體當全部範圍。」不會形成第二正解。"
+      },
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：由盒狀圖估抽樣機率",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某資料盒狀圖的箱體表示中間約50%。若從原資料的觀測筆中等機會抽一筆，抽到箱體位置範圍內的機率約為何？」；獨立解法「Q1到Q3涵蓋中間約50%的排序位置，所以隨機抽到此範圍約1/2。」；四選項真值為假,真,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v002",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "17733d62083b4870ea5c572abbc3868e4db30f24f88016b4e5452515d9a31ac5",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "有利30筆、總40筆，機率30/40=3/4。",
+      "derivedAnswer": "3/4",
+      "storedAnswer": "3/4",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「3/4」；其餘選項逐項排除：「1/4」：算成超過該值。；「30」：未除以總數。；「4/3」：分子分母顛倒。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「由累積次數求經驗機率」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "每筆觀測被抽中的機會相同。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把累積次數直接當機率。」不會形成第二正解。"
+      },
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：由累積次數求經驗機率",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一組資料有40筆，累積圖顯示不超過某值有30筆。隨機抽一筆不超過該值的機率為何？」；獨立解法「有利30筆、總40筆，機率30/40=3/4。」；四選項真值為假,假,假,真。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v003",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "01d0692fa3cd14a64453684b7dee898fd60b46e3ccdfee18ce40ac0212baa464",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "中位數只比較中心位置；若兩圖重疊，抽到的個體可能反向。",
+      "derivedAnswer": "不能，兩班分布可能重疊",
+      "storedAnswer": "不能，兩班分布可能重疊",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「不能，兩班分布可能重疊」；其餘選項逐項排除：「能，中位數較高代表每人較高」：群體中心不等於逐人。；「能，只要甲Q3較高」：Q3高仍不能保證單次比較。；「不能，因盒狀圖完全沒有資訊」：盒狀圖有分布摘要，只是不足以保證。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「限制由統計圖作機率推論」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "要算精確勝率需更完整分布。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把中心差異當個體必然關係。」不會形成第二正解。"
+      },
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：限制由統計圖作機率推論",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「甲班盒狀圖中位數較高。從甲乙兩班各隨機抽一名學生，能否保證甲生分數較高？」；獨立解法「中位數只比較中心位置；若兩圖重疊，抽到的個體可能反向。」；四選項真值為真,假,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v004",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "b0a42993e1c8e852df17b932c26512a7467baa3194b9ae2eb5093653fe75025f",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "抽樣框只含自行車社，讓不同通學方式學生入樣機率不公平，估計會偏。",
+      "derivedAnswer": "樣本偏向騎自行車者，不能代表全校",
+      "storedAnswer": "樣本偏向騎自行車者，不能代表全校",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「樣本偏向騎自行車者，不能代表全校」；其餘選項逐項排除：「樣本數100一定太少」：問題核心是選取方式偏差。；「機率必定大於1」：與機率範圍無關。；「只要用盒狀圖就能修正」：圖形不能消除抽樣偏差。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「辨識抽樣偏差」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "即使社團內隨機，對全校仍非代表性抽樣。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「只看樣本數不看代表性。」不會形成第二正解。"
+      },
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：辨識抽樣偏差",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某校1000人中抽100人調查通學方式。若只在自行車社抽樣，主要問題是什麼？」；獨立解法「抽樣框只含自行車社，讓不同通學方式學生入樣機率不公平，估計會偏。」；四選項真值為假,假,真,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v005",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "9c1e945f3d6b6acbe7fdc3ca4fd55d92e2397e2bc31d4ac23da9624a7552873b",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "盒狀圖只說最大值為100，未提供樣本數及100的重複次數，因此無法精算。",
+      "derivedAnswer": "不能，盒狀圖不知道100出現幾次與總筆數",
+      "storedAnswer": "不能，盒狀圖不知道100出現幾次與總筆數",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「不能，盒狀圖不知道100出現幾次與總筆數」；其餘選項逐項排除：「能，機率為1/5」：五個摘要值不是五筆資料。；「能，機率為1/4」：最大值不代表最高四分之一都等於100。；「能，機率為1/2」：中位數與最大值無此關係。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「辨識統計摘要的機率限制」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "若題目明定所有原始資料才可計算。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把五數摘要當成完整五筆樣本。」不會形成第二正解。"
+      },
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：辨識統計摘要的機率限制",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「資料五數為 10、20、25、30、100。若隨機抽一筆，能由盒狀圖精確算出抽到100的機率嗎？」；獨立解法「盒狀圖只說最大值為100，未提供樣本數及100的重複次數，因此無法精算。」；四選項真值為真,假,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v006",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "01b6f83da2a21b77831dd621620cf0ce033c29599b95fb8e32154cf6e1228ada",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "累積20筆占80筆，20/80=1/4。",
+      "derivedAnswer": "1/4",
+      "storedAnswer": "1/4",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「1/4」；其餘選項逐項排除：「3/4」：算成其餘資料。；「20」：未除以80。；「1/5」：約分錯誤。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「把累積位置轉為機率」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "端點重複值可能使實際Q1位置解讀需謹慎，但題目直接給累積20。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把四分位名稱與機率比例混亂。」不會形成第二正解。"
+      },
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：把累積位置轉為機率",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某累積圖總數80，到Q1所在上界累積20。隨機抽一筆落在該上界以下的經驗機率為何？」；獨立解法「累積20筆占80筆，20/80=1/4。」；四選項真值為假,假,真,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v007",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "13ee9622fc30ff6e65492583e27b960faf41c1be5abc7fbbe35432d50f1aa75d",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "15>14，依規則為離群候選；後續需查量測、製程或真實特殊品。",
+      "derivedAnswer": "標記為統計離群候選並進一步查核",
+      "storedAnswer": "標記為統計離群候選並進一步查核",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「標記為統計離群候選並進一步查核」；其餘選項逐項排除：「直接判定產品造假」：統計標記不能證明原因。；「忽略，因只抽到一件」：單件仍可觸發查核。；「把15改成11再分析」：不得任意修改觀測。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「整合離群判斷與資料倫理」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "是否排除需有預先規則與實質理由。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把離群值自動刪除或定罪。」不會形成第二正解。"
+      },
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：整合離群判斷與資料倫理",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某批產品重量Q1=9、Q3=11，離群上界14。若隨機抽到重量15的產品，最正確的處理是什麼？」；獨立解法「15>14，依規則為離群候選；後續需查量測、製程或真實特殊品。」；四選項真值為假,假,假,真。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v008",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "1b59fa897b8b8afbdc44e3c686567c894d347f718752785344eefc8f4460230d",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "小IQR描述中間多數集中；大全距提醒端點遠。兩者可同時成立。",
+      "derivedAnswer": "甲多數日較集中，但少數端點可能離中段較遠",
+      "storedAnswer": "甲多數日較集中，但少數端點可能離中段較遠",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「甲多數日較集中，但少數端點可能離中段較遠」；其餘選項逐項排除：「甲每一天都很穩定」：大全距顯示端點波動。；「甲一定有資料錯誤」：大全距不必然是錯誤。；「甲的平均一定較小」：分散量不決定平均。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「整合兩種分散量作有限推論」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "不能由摘要確定端點原因或機率。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「用單一「穩定」涵蓋所有日子。」不會形成第二正解。"
+      },
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：整合兩種分散量作有限推論",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「甲乙兩地每日用水量盒狀圖中，甲IQR小但全距大。若隨機抽一天，哪個敘述最合理？」；獨立解法「小IQR描述中間多數集中；大全距提醒端點遠。兩者可同時成立。」；四選項真值為假,真,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v009",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "c9bd8a52bf80698e163aab7da55a1dd4b120e5e2b5ac74845303ddfa734a963b",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "從已回收問卷等機會抽取時，經驗機率等於B所占比例30%。",
+      "derivedAnswer": "30%",
+      "storedAnswer": "30%",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「30%」；其餘選項逐項排除：「20%」：這是C。；「1/3」：三類不等比例。；「50%」：這是A。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「由統計比例建立經驗機率」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "只代表已回收問卷，不必然代表母體。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「看到三類便平均。」不會形成第二正解。"
+      },
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：由統計比例建立經驗機率",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某問卷選項A、B、C的樣本比例為50%、30%、20%。若隨機從已回收問卷抽一份，抽到B的機率是多少？」；獨立解法「從已回收問卷等機會抽取時，經驗機率等於B所占比例30%。」；四選項真值為假,假,假,真。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v010",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "b54089103b59e1ba0376beb5a790b89f675521f98657d285c2bc7eb722cf221d",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "Q3只給各自75%位置值，缺少完整分布與交叉比較資料，無法精算兩個隨機個體的勝率。",
+      "derivedAnswer": "不能只由Q3算出甲生成績高於乙生的精確機率",
+      "storedAnswer": "不能只由Q3算出甲生成績高於乙生的精確機率",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「不能只由Q3算出甲生成績高於乙生的精確機率」；其餘選項逐項排除：「甲生至少有75%機率較高」：Q3比較不是跨班勝率。；「乙生一定較低」：分布可能重疊。；「兩人分數相同機率一定為0」：離散分數可能相同。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「限制跨分布機率推論」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "兩班樣本數相同也不足以補全分布。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把百分位位置當跨組勝率。」不會形成第二正解。"
+      },
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：限制跨分布機率推論",
+      "literacyContextNecessity": "教育比較應避免把單一百分位變成個人勝負機率。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「兩班各有40人。甲班Q3=85，乙班Q3=78。若各班隨機抽一人，哪句最嚴謹？」；獨立解法「Q3只給各自75%位置值，缺少完整分布與交叉比較資料，無法精算兩個隨機個體的勝率。」；四選項真值為假,真,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v011",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "60e813207bfe3b8d51a8ae6c30d1b208a1433d8ba72febd64f49a89442f91ec6",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "凌晨流量與全天可能不同，抽樣時段造成涵蓋偏差；需跨時段抽樣或限制結論。",
+      "derivedAnswer": "時段樣本可能不具全天代表性",
+      "storedAnswer": "時段樣本可能不具全天代表性",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「時段樣本可能不具全天代表性」；其餘選項逐項排除：「90%不可能是機率」：百分比可表示經驗比例。；「8分鐘不是整數」：時間可為連續量。；「只要樣本很多就一定可推全天」：大樣本不能修正系統性時段偏差。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「審核服務數據代表性」。",
+        "unitConflict": "等待時間單位為分鐘。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "結論若只寫凌晨使用者則可成立。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「只看樣本量而忽略抽樣框。」不會形成第二正解。"
+      },
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：審核服務數據代表性",
+      "literacyContextNecessity": "平台指標必須揭露取樣時段，否則百分位會誤導。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某平台顯示「90%使用者等待不超過8分鐘」，但資料只來自凌晨時段。若要推論全天使用者，主要缺陷是什麼？」；獨立解法「凌晨流量與全天可能不同，抽樣時段造成涵蓋偏差；需跨時段抽樣或限制結論。」；四選項真值為假,假,真,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s018-v012",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "contentSha256": "7f1e8badbd60d3e4d03eb28ef0fa40b263f8889ea6578f8a5c67d0b0b66903f1",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "先刪再宣稱不存在是循環描述；應報原始資料、判定規則、處理原因及敏感度。",
+      "derivedAnswer": "結論是由刪除規則造成，應揭露原始離群與刪除理由",
+      "storedAnswer": "結論是由刪除規則造成，應揭露原始離群與刪除理由",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「結論是由刪除規則造成，應揭露原始離群與刪除理由」；其餘選項逐項排除：「沒有問題，刪除後確實沒有」：忽略循環式處理與資訊透明。；「盒狀圖不能找離群值」：配合IQR規則可以標記候選。；「離群值必須永遠保留」：是否保留取決於研究目的與正當理由。",
+        "undefinedSymbol": "題幹術語均已在「統計機率素養」講義定義；實際目標為「整合統計判斷與研究透明」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "離群可是真實事件，不得僅因影響結果而刪。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把資料清理結果冒充原始資料性質。」不會形成第二正解。"
+      },
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：整合統計判斷與研究透明",
+      "literacyContextNecessity": "資料治理需要可追溯的離群處理紀錄。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-literacy。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某研究先依盒狀圖刪除所有離群值，再報告「資料沒有離群值」。這個結論有何問題？」；獨立解法「先刪再宣稱不存在是循環描述；應報原始資料、判定規則、處理原因及敏感度。」；四選項真值為真,假,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u22-stat-prob-combined",
+      "unitId": "u22",
+      "skillId": "statistics-probability-literacy",
+      "drawingPurpose": "支援同時比較統計摘要並以樣本數80比120計算抽到甲校樣本機率。",
+      "canvas": {
+        "width": 900,
+        "height": 480
+      },
+      "viewBox": "0 0 900 480",
+      "coordinateSystem": "SVG pixels; origin at upper-left; x increases right and y increases down.",
+      "layoutConstraints": [
+        "共用0到80分鐘數軸",
+        "甲五數10、18、25、35、70",
+        "乙五數12、20、27、32、48",
+        "200人比例條分成甲80與乙120",
+        "抽樣與母體推論警語"
+      ],
+      "visibleLineRules": "All mathematical boundaries and axes use solid black lines; helper gridlines, when present, are lighter and never encode an answer by color.",
+      "hiddenLineRules": "No hidden geometric lines are needed. Dashed lines are used only for explicitly labelled statistical fences.",
+      "labelsAndPositions": "Labels are placed adjacent to their corresponding points, branches, sectors or groups with at least 14 px text.",
+      "tickMarksUnitsArrowsSymbols": "Axes include labelled ticks and units where applicable; tree branches show exact fractions; arrowheads do not replace numeric labels.",
+      "toScale": true,
+      "visualInferenceWarning": null,
+      "altText": "上方為甲乙兩校同尺度盒狀圖，下方為甲校80人與乙校120人的抽樣比例條。",
+      "svgTitle": "支援同時比較統計摘要並以樣本數80比120計算抽到甲校樣本機率。",
+      "svgDescription": "上方為甲乙兩校同尺度盒狀圖，下方為甲校80人與乙校120人的抽樣比例條。",
+      "mobileReadabilityReview": "Reviewed at 360 CSS px width; minimum label size remains legible and no labels overlap critical marks.",
+      "answerLeakageReview": "The figure contains only data explicitly supplied by its associated prompt or lecture example; it does not mark a multiple-choice option as correct.",
+      "geometryTokenAssertions": {
+        "aSample": 80,
+        "bSample": 120,
+        "total": 200,
+        "pA": "2/5",
+        "sharedScale": true
+      },
+      "manualVisualInspection": "pass; rendered PNG inspected for clipping, label overlap, scale consistency and mathematical placement.",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ]
+};

@@ -1,0 +1,234 @@
+{
+  "lectureId": "u05-s009-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-linear-graph",
+  "skillId": "coordinate-point-on-line",
+  "lockedTitle": "判斷點是否在直線上",
+  "title": "判斷點是否在直線上：代入後檢查等式",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把點的 x、y 正確代入方程式。",
+    "能以左右兩邊是否相等判斷點在線上。",
+    "能由在線條件求參數。",
+    "能同時檢查多個候選點。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-linear-equation-graph",
+      "requiredLevel": "能說明並正確使用「二元一次方程式圖形」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "代入",
+      "definition": "以指定數值取代方程式中的未知數。"
+    },
+    {
+      "term": "在線上",
+      "definition": "點的坐標是一組方程式的解。"
+    },
+    {
+      "term": "不在線上",
+      "definition": "代入後等式不成立。"
+    },
+    {
+      "term": "參數",
+      "definition": "題目中代表待求固定數值的字母。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "LHS",
+      "meaning": "等式左邊代入後的值。"
+    },
+    {
+      "symbol": "RHS",
+      "meaning": "等式右邊代入後的值。"
+    },
+    {
+      "symbol": "LHS=RHS",
+      "meaning": "點在直線上的判定。"
+    }
+  ],
+  "conceptNarrative": [
+    "直線上的點與方程式的解是同一件事：把坐標代入，等式成立就在線上。",
+    "代入時必須保留負號與括號，例如 x=-2 時，3x 應寫成 3(-2)。",
+    "若點含參數，可利用『在直線上』建立一元一次方程式求參數。",
+    "只符合部分項或看起來接近圖形都不夠，必須完整檢查整個等式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "在線判定",
+      "statement": "P=(a,b) 在 ax+by=c 上，當且僅當 a、b 代入後等式成立。"
+    },
+    {
+      "name": "參數在線條件",
+      "statement": "將含參數坐標代入直線方程式，解出使等式成立的參數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A(x0,y0)∈L ⇔ ax0+by0=c",
+      "conditions": [
+        "L:ax+by=c",
+        "a、b 不同時為0"
+      ],
+      "meaning": "以代入等式作為點線關係判定。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只比較某一個坐標。",
+    "不能以點的象限直接判斷是否在線上。",
+    "代入負數時不可省略括號。",
+    "方程式若含分母，仍需遵守分母非零條件。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫出點的 x、y。",
+      "check": "有沒有對調？"
+    },
+    {
+      "step": 2,
+      "instruction": "完整代入所有未知數。",
+      "check": "負數是否加括號？"
+    },
+    {
+      "step": 3,
+      "instruction": "分別算左右兩邊。",
+      "check": "是否使用相同運算順序？"
+    },
+    {
+      "step": 4,
+      "instruction": "比較是否相等。",
+      "check": "相等才在線上。"
+    },
+    {
+      "step": 5,
+      "instruction": "若有參數，解方程式再回代。",
+      "check": "求得值是否真的使等式成立？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "A=(2,1) 是否在 2x+y=5 上？",
+      "solutionSteps": [
+        "左邊=2×2+1=5。",
+        "與右邊 5 相等。"
+      ],
+      "answer": "A 在直線上。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "B=(-1,4) 是否在 x-y=-5 上？",
+      "solutionSteps": [
+        "左邊=-1-4=-5。",
+        "等式成立。"
+      ],
+      "answer": "B 在直線上。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "P=(k,3) 在 3x-y=9 上，求 k。",
+      "solutionSteps": [
+        "3k-3=9。",
+        "3k=12，k=4。"
+      ],
+      "answer": "k=4。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "哪個點不在 x+2y=6 上：C=(0,3)、D=(2,2)、E=(4,1)、F=(6,1)？",
+      "solutionSteps": [
+        "前三點代入皆得 6。",
+        "F 代入得 8。"
+      ],
+      "answer": "F 不在直線上。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 (2,1) 代成 x=1、y=2。",
+      "why": "對調坐標。",
+      "correction": "先標示第一分量給 x、第二分量給 y。"
+    },
+    {
+      "mistake": "負數代入不加括號。",
+      "why": "符號容易與減號混淆。",
+      "correction": "例如 -2x 在 x=-3 時寫 -2(-3)。"
+    },
+    {
+      "mistake": "左邊算得 5 就直接說在線上。",
+      "why": "沒有與右邊比較。",
+      "correction": "等式需兩邊相等。"
+    },
+    {
+      "mistake": "用象限猜測。",
+      "why": "把位置特徵當成方程式條件。",
+      "correction": "必須代入。"
+    },
+    {
+      "mistake": "求出參數後不驗算。",
+      "why": "可能保留運算錯誤。",
+      "correction": "把參數值回代原式。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先分清 x、y？",
+    "負數是否加括號？",
+    "左右兩邊是否完整比較？",
+    "參數值是否回代驗證？"
+  ],
+  "summary": [
+    "點在線上等同坐標是方程式的解。",
+    "代入後左右相等才成立。",
+    "負數代入要保留括號。",
+    "含參數時由等式求值並回代。"
+  ],
+  "connections": {
+    "previous": "承接二元一次方程式圖形是所有解點的集合。",
+    "next": [
+      "下一節令 y=0 或 x=0 求與坐標軸的交點。",
+      "之後交點需同時滿足兩條直線。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s009-v001",
+      "u05-s009-v002",
+      "u05-s009-v003",
+      "u05-s009-v004",
+      "u05-s009-v005",
+      "u05-s009-v006",
+      "u05-s009-v007",
+      "u05-s009-v008",
+      "u05-s009-v009",
+      "u05-s009-v010",
+      "u05-s009-v011",
+      "u05-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s009-cr001",
+      "u05-s009-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "四個例題均重新代入左右兩邊，特別核對負數減法、參數回代與多點排除；未以圖形外觀取代代數判定。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "1131513b6423e4bd5c09506e3703b26f1a43dc0d94ef7786cb1bb61d94331e07"
+}

@@ -1,0 +1,82 @@
+{
+  "auditVersion": "u22-final-human-audit-r1.0",
+  "unitId": "u22",
+  "auditedAt": "2026-07-12",
+  "manualInspectionScope": [
+    "18 lectures",
+    "216 MC prompts, options, answers and independent solutions",
+    "36 constructed responses, alternative methods and rubrics",
+    "8 rendered figures",
+    "negative signs, fractions, percentages, endpoints, equality at outlier fences, replacement conditions and units",
+    "future-skill leakage and CAP boundary",
+    "number-swapped and context-cosmetic duplication"
+  ],
+  "actualIssuesFoundAndRepaired": [
+    {
+      "id": "quartile-calculation-v008",
+      "issue": "Stored draft answer was 20.5 while independent recomputation gave Q1+Q2+Q3=3+8+11=22.",
+      "repair": "Changed correct answer to 22 and replaced distractors so no equivalent answer remains."
+    },
+    {
+      "id": "quartile-position-v010",
+      "issue": "Draft stated Q1 and Q3 as averages for 18 data points, although each 9-item half has a single median.",
+      "repair": "Corrected positions to original item 5 and item 14."
+    },
+    {
+      "id": "quartile-position-v012",
+      "issue": "Draft stored Q3 as item 19 only for 25 data points.",
+      "repair": "Corrected Q3 to the average of original items 19 and 20."
+    },
+    {
+      "id": "quartile-position-language",
+      "issue": "One distractor contained an accidental non-Chinese token.",
+      "repair": "Replaced it with Traditional Chinese wording."
+    },
+    {
+      "id": "iqr-outlier-basic-v009",
+      "issue": "Draft supplied mutually inconsistent lower fence, upper fence and Q1.",
+      "repair": "Rewrote the item with a single lower fence and Q1, yielding IQR=4 and Q3=15 consistently."
+    },
+    {
+      "id": "probability-basic-v005",
+      "issue": "A distractor 4/8 was equivalent to the correct answer 1/2.",
+      "repair": "Replaced it with a non-equivalent distractor and specific misconception reason."
+    },
+    {
+      "id": "probability-basic-v012",
+      "issue": "Draft answer 1/3 did not equal the exact probability 33/100 for divisibility by 4 or 6 from 1 to 100.",
+      "repair": "Stored exact answer 33/100 and replaced distractors."
+    },
+    {
+      "id": "clean-verifier-r1",
+      "issue": "The first clean verifier run found nine lecture titles with ambiguous separator punctuation, two independent-solution fields below the evidence threshold and one structurally over-close Q1/Q3 prompt pair.",
+      "repair": "Reworded lecture titles with 與, expanded both independent recomputations and rewrote the Q3 position prompt to distinguish the upper-half mapping task."
+    },
+    {
+      "id": "ogive-endpoints",
+      "issue": "Four MC prompts and two constructed responses used informal interval wording that could conflict with cumulative \"not exceeding\" endpoints.",
+      "repair": "Changed every affected interval to explicit forms such as 20<x≤30 and 70<x≤80, and aligned solutions and distractors."
+    },
+    {
+      "id": "figure-render-audit",
+      "issue": "Initial SVG rendering exposed missing CJK font fallback, overlapping adjacent outlier labels, a clipped final ogive point label, missing five-number labels and an unsupported median line in an outlier-only figure.",
+      "repair": "Added Taiwan CJK font fallback, staggered close labels, moved the final point annotation inward, labelled box-plot components and removed the inferred median."
+    },
+    {
+      "id": "cap-boundary-alternative-method",
+      "issue": "One CR alternative method used C(5,2) notation despite the locked boundary excluding nCr-style formulas.",
+      "repair": "Replaced it with explicit labelled-ball pair enumeration and counting."
+    },
+    {
+      "id": "pairwise-near-duplicate-audit",
+      "issue": "A post-build similarity scan found two high-similarity MC pairs: even-data Q2 versus shifted-data Q3, and symmetric lower-versus-upper fence calculations.",
+      "repair": "Reauthored them as an odd-data Q3 task and a Q3-plus-IQR high-fence task, changing the reasoning structure rather than only the numbers."
+    }
+  ],
+  "unrepairedIssueCount": 0,
+  "advancedItemCheck": "pass; advanced items require reverse reasoning, multiple constraints, boundary checks or multi-path probability rather than larger numbers only.",
+  "literacyNecessityCheck": "pass; literacy contexts determine the event, denominator, sampling frame, unit, fairness, risk or inference limit.",
+  "crossUnitLimitation": "The other nineteen parallel packages were unavailable. Only within-unit duplicate control was performed; central cross-unit fingerprint reconciliation remains required.",
+  "oldContentUse": "none",
+  "decision": "pass-for-central-coordinator-review"
+}

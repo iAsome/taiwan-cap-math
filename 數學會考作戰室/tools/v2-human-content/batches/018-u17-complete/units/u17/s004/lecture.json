@@ -1,0 +1,248 @@
+{
+  "lectureId": "u17-s004-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallelogram-properties",
+  "lockedTitle": "平行四邊形",
+  "title": "平行四邊形：從兩組對邊平行推出整套性質",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallel-proof-basic。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "依定義辨認平行四邊形",
+    "運用對邊、對角與鄰角性質",
+    "分清定義與可推得的性質"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallel-proof-basic",
+      "requiredLevel": "能正確使用「parallel-proof-basic」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "平行四邊形",
+      "definition": "兩組對邊分別平行的四邊形"
+    },
+    {
+      "term": "對邊",
+      "definition": "彼此不相鄰的兩邊"
+    },
+    {
+      "term": "對角",
+      "definition": "彼此不相鄰的兩內角"
+    },
+    {
+      "term": "鄰角",
+      "definition": "共用一邊的兩內角"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "定義只要求兩組對邊分別平行，形狀可以傾斜，不必有直角。",
+    "由平行線截角可推出對角相等、鄰角互補；再配合全等可推出對邊等長與對角線互相平分。",
+    "矩形、菱形與正方形都符合平行四邊形定義，因此也擁有其基本性質。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "平行四邊形",
+      "statement": "兩組對邊分別平行的四邊形"
+    },
+    {
+      "name": "對邊",
+      "statement": "彼此不相鄰的兩邊"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AB∥CD 且 BC∥AD",
+      "conditions": [
+        "ABCD為平行四邊形的定義"
+      ],
+      "meaning": "用於平行四邊形中符合條件的推理或計算。"
+    },
+    {
+      "formula": "AB=CD，BC=AD",
+      "conditions": [
+        "平行四邊形對邊等長"
+      ],
+      "meaning": "用於平行四邊形中符合條件的推理或計算。"
+    },
+    {
+      "formula": "∠A=∠C，∠B=∠D",
+      "conditions": [
+        "平行四邊形對角相等"
+      ],
+      "meaning": "用於平行四邊形中符合條件的推理或計算。"
+    },
+    {
+      "formula": "∠A+∠B=180°",
+      "conditions": [
+        "任一組鄰角互補"
+      ],
+      "meaning": "用於平行四邊形中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先確認頂點依序命名",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "由定義或標記確認兩組對邊平行",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "選所需性質",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "建立方程或直接代入",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查周長、角度與圖形條件",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "∠A=70°",
+      "solutionSteps": [
+        "∠C=70°，∠B=∠D=110°。"
+      ],
+      "answer": "∠C=70°，∠B=∠D=110°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "AB=8、BC=5",
+      "solutionSteps": [
+        "周長=2(8+5)=26。"
+      ],
+      "answer": "周長=2(8+5)=26。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "對角線交於O",
+      "solutionSteps": [
+        "AO=OC且BO=OD。"
+      ],
+      "answer": "AO=OC且BO=OD。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "只有一組對邊平行",
+      "solutionSteps": [
+        "不一定是平行四邊形。"
+      ],
+      "answer": "不一定是平行四邊形。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "認為四邊等長才是平行四邊形",
+      "why": "那是菱形的附加條件",
+      "correction": "那是菱形的附加條件"
+    },
+    {
+      "mistake": "把鄰角判成相等",
+      "why": "一般鄰角互補",
+      "correction": "一般鄰角互補"
+    },
+    {
+      "mistake": "亂配對邊",
+      "why": "依頂點順序AB對CD、BC對AD",
+      "correction": "依頂點順序AB對CD、BC對AD"
+    },
+    {
+      "mistake": "把對角線說成必垂直",
+      "why": "一般平行四邊形不一定",
+      "correction": "一般平行四邊形不一定"
+    },
+    {
+      "mistake": "周長只加一組鄰邊",
+      "why": "需乘2",
+      "correction": "需乘2"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「平行四邊形」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "定義只要求兩組對邊分別平行，形狀可以傾斜，不必有直角。",
+    "AB∥CD 且 BC∥AD",
+    "解題時先確認「ABCD為平行四邊形的定義」。"
+  ],
+  "connections": {
+    "previous": "承接parallel-proof-basic。",
+    "next": "下一技能依鎖定順序為parallel-alternate-interior。"
+  },
+  "figureReferences": [
+    "u17-s004-fig001"
+  ],
+  "figureAccessibility": "斜置平行四邊形ABCD，標示兩組平行邊與對角。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s004-v001",
+      "u17-s004-v002",
+      "u17-s004-v003",
+      "u17-s004-v004",
+      "u17-s004-v005",
+      "u17-s004-v006",
+      "u17-s004-v007",
+      "u17-s004-v008",
+      "u17-s004-v009",
+      "u17-s004-v010",
+      "u17-s004-v011",
+      "u17-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s004-cr001",
+      "u17-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "內容由定義出發，清楚區分一般平行四邊形必有性質與特殊四邊形才有的附加性質。"
+  },
+  "contentSha256": "6745571816a6f7f7ded0e8c689570429c5dfbe40e3b6111efa73751f24a8d757"
+}

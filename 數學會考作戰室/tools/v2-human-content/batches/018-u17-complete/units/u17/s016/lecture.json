@@ -1,0 +1,241 @@
+{
+  "lectureId": "u17-s016-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-quadrilaterals",
+  "skillId": "quadrilateral-angle-sum",
+  "lockedTitle": "四邊形內角和",
+  "title": "四邊形內角和：一條對角線分成兩個三角形",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：trapezoid-area。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "知道任何簡單四邊形內角和為360°",
+    "用代數求未知角",
+    "結合平行四邊形或特殊四邊形性質"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "trapezoid-area",
+      "requiredLevel": "能正確使用「trapezoid-area」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "內角",
+      "definition": "四邊形內部相鄰兩邊形成的角"
+    },
+    {
+      "term": "內角和",
+      "definition": "四個內角度數總和"
+    },
+    {
+      "term": "凹四邊形",
+      "definition": "有一個內角大於180°的簡單四邊形"
+    },
+    {
+      "term": "外角",
+      "definition": "一邊延長後與相鄰邊形成的角"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "在凸四邊形中畫一條對角線，可分成兩個三角形，因此內角和為180°+180°=360°。",
+    "簡單凹四邊形的內角和也為360°，但國中題目多以凸四邊形為主。",
+    "求未知角時，把四個內角完整相加等於360°。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "內角",
+      "statement": "四邊形內部相鄰兩邊形成的角"
+    },
+    {
+      "name": "內角和",
+      "statement": "四個內角度數總和"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "∠A+∠B+∠C+∠D=360°",
+      "conditions": [
+        "簡單四邊形"
+      ],
+      "meaning": "用於四邊形內角和中符合條件的推理或計算。"
+    },
+    {
+      "formula": "正方形每角=360°÷4=90°",
+      "conditions": [
+        "四角相等"
+      ],
+      "meaning": "用於四邊形內角和中符合條件的推理或計算。"
+    },
+    {
+      "formula": "平行四邊形鄰角和180°",
+      "conditions": [
+        "可比直接用360°更快"
+      ],
+      "meaning": "用於四邊形內角和中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出四個內角",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "把含未知數的角寫入同一方程",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "令總和360°",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "解方程並代回",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "確認每個凸四邊形內角介於0°與180°",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "角為80、95、110、x",
+      "solutionSteps": [
+        "x=75°。"
+      ],
+      "answer": "x=75°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "四角為x、x+10、x+20、x+30",
+      "solutionSteps": [
+        "4x+60=360，x=75。"
+      ],
+      "answer": "4x+60=360，x=75。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "平行四邊形一角65°",
+      "solutionSteps": [
+        "另三角為115、65、115。"
+      ],
+      "answer": "另三角為115、65、115。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "四角皆相等",
+      "solutionSteps": [
+        "各90°。"
+      ],
+      "answer": "各90°。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "用三角形180°",
+      "why": "四邊形是360°",
+      "correction": "四邊形是360°"
+    },
+    {
+      "mistake": "漏掉一個角",
+      "why": "方程必須有四項",
+      "correction": "方程必須有四項"
+    },
+    {
+      "mistake": "外角當內角直接相加",
+      "why": "先辨認題目角的位置",
+      "correction": "先辨認題目角的位置"
+    },
+    {
+      "mistake": "解出負角未檢查",
+      "why": "幾何角度需合理",
+      "correction": "幾何角度需合理"
+    },
+    {
+      "mistake": "認為內角和只適用矩形",
+      "why": "任何簡單四邊形皆成立",
+      "correction": "任何簡單四邊形皆成立"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「四邊形內角和」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "在凸四邊形中畫一條對角線，可分成兩個三角形，因此內角和為180°+180°=360°。",
+    "∠A+∠B+∠C+∠D=360°",
+    "解題時先確認「簡單四邊形」。"
+  ],
+  "connections": {
+    "previous": "承接trapezoid-area。",
+    "next": "下一技能依鎖定順序為quadrilateral-literacy。"
+  },
+  "figureReferences": [
+    "u17-s016-fig001"
+  ],
+  "figureAccessibility": "凸四邊形ABCD畫對角線AC，形成兩個三角形並標示各180度。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s016-v001",
+      "u17-s016-v002",
+      "u17-s016-v003",
+      "u17-s016-v004",
+      "u17-s016-v005",
+      "u17-s016-v006",
+      "u17-s016-v007",
+      "u17-s016-v008",
+      "u17-s016-v009",
+      "u17-s016-v010",
+      "u17-s016-v011",
+      "u17-s016-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s016-cr001",
+      "u17-s016-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義給出分割證明、代數應用與特殊四邊形捷徑，並交代凹四邊形邊界。"
+  },
+  "contentSha256": "55bf1cdc870168aaa3f9b381de95e2bec784a54ab46085665f66608a34f85ffe"
+}

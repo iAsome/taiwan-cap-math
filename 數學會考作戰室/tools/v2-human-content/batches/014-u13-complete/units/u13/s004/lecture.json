@@ -1,0 +1,239 @@
+{
+  "lectureId": "u13-s004-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-discriminant",
+  "lockedOrder": 4,
+  "originalLockedTitle": "判別式",
+  "title": "判別式的計算與判讀",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能計算 Δ=b²-4ac。",
+    "能由 Δ 的正負判斷相異實根個數。",
+    "能用參數條件控制根的情形。",
+    "能同時檢查二次項係數不為 0。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-formula",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "承接求根公式，聚焦公式根號內的量及其邏輯。",
+  "glossary": [
+    {
+      "term": "判別式",
+      "definition": "一元二次方程式公式中根號內的量 Δ=b²-4ac。"
+    },
+    {
+      "term": "相異實根",
+      "definition": "數值不同的兩個實數根。"
+    },
+    {
+      "term": "重根",
+      "definition": "兩個公式分支得到相同數值，解集合只有一個元素。"
+    },
+    {
+      "term": "無實數根",
+      "definition": "在實數範圍找不到使方程式成立的數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "Δ",
+      "meaning": "b²-4ac。"
+    },
+    {
+      "symbol": "Δ>0",
+      "meaning": "有兩個相異實根。"
+    },
+    {
+      "symbol": "Δ=0",
+      "meaning": "有一個相異實根，也稱重根。"
+    },
+    {
+      "symbol": "Δ<0",
+      "meaning": "沒有實數根。"
+    }
+  ],
+  "conceptNarrative": [
+    "判別式來自公式中的平方根；根號內為正、零、負，正好對應兩根、一根、無實根。",
+    "計算前仍需先整理標準式並辨認係數。",
+    "參數題要把 Δ 寫成參數的不等式或方程式。",
+    "若參數也出現在 a 中，先排除 a=0，否則方程式不再是二次。",
+    "Δ 是判斷根個數的工具，不必先求出根。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "根個數判準",
+      "statement": "對 ax²+bx+c=0 且 a≠0，Δ>0 有兩相異實根；Δ=0 有一實根；Δ<0 無實根。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "Δ=b²-4ac",
+      "conditions": [
+        "方程式為 ax²+bx+c=0",
+        "a≠0"
+      ],
+      "meaning": "判斷實數根的個數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "a=0 時不能使用二次方程式判別式結論。",
+    "Δ>0 只表示兩相異實根，不保證根為整數。",
+    "Δ 為完全平方數才常得到有理根；不是完全平方仍可能有兩實根。",
+    "題目問實數根個數時，不把重根算成兩個不同答案。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "整理並讀出 a、b、c。",
+      "check": "是否含正負號？"
+    },
+    {
+      "step": 2,
+      "instruction": "確認 a≠0。",
+      "check": "參數是否可能讓二次項消失？"
+    },
+    {
+      "step": 3,
+      "instruction": "計算 Δ=b²-4ac。",
+      "check": "b 是否用括號平方？"
+    },
+    {
+      "step": 4,
+      "instruction": "比較 Δ 與 0。",
+      "check": "題目問兩根、一根或無根？"
+    },
+    {
+      "step": 5,
+      "instruction": "參數題解相應方程或不等式。",
+      "check": "是否加上 a≠0 的限制？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 x²-6x+5=0 的根個數。",
+      "solutionSteps": [
+        "Δ=(-6)²-4·1·5=16>0。"
+      ],
+      "answer": "有兩個相異實根。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "判斷 2x²+4x+2=0 的根個數。",
+      "solutionSteps": [
+        "Δ=16-16=0。"
+      ],
+      "answer": "有一個相異實根。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "判斷 3x²+x+2=0 的根個數。",
+      "solutionSteps": [
+        "Δ=1-24=-23<0。"
+      ],
+      "answer": "沒有實數根。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "求 x²+4x+k=0 有重根時的 k。",
+      "solutionSteps": [
+        "Δ=16-4k。",
+        "令 Δ=0，得 k=4。"
+      ],
+      "answer": "k=4。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 b²-4ac 算成 (b-4ac)²。",
+      "why": "公式結構混淆。",
+      "correction": "先寫 b²，再減 4ac。"
+    },
+    {
+      "mistake": "b=-6 時寫 b²=-36。",
+      "why": "負數平方錯誤。",
+      "correction": "使用 (-6)²=36。"
+    },
+    {
+      "mistake": "Δ=0 說有兩個不同根。",
+      "why": "把代數重數與相異數值混淆。",
+      "correction": "解集合只有一個數。"
+    },
+    {
+      "mistake": "參數使 a=0 仍套判別式。",
+      "why": "方程式已退化。",
+      "correction": "先排除二次項係數為 0。"
+    },
+    {
+      "mistake": "Δ>0 就說兩整數根。",
+      "why": "判別式只判斷實數根個數。",
+      "correction": "是否整數需再求根。"
+    },
+    {
+      "mistake": "不先移項。",
+      "why": "讀錯 c 的符號。",
+      "correction": "整理成右邊為 0。"
+    }
+  ],
+  "selfCheck": [
+    "a 是否非 0？",
+    "係數是否取自標準式？",
+    "b 的負號是否平方？",
+    "Δ 的符號判讀是否正確？",
+    "參數限制是否完整？"
+  ],
+  "summary": [
+    "判別式可不求根就判斷根個數。",
+    "Δ>0、=0、<0 分別對應兩根、一根、無實根。",
+    "參數題需同時處理 a≠0。",
+    "判別式不直接保證根為整數。"
+  ],
+  "connections": {
+    "previous": "承接求根公式，聚焦公式根號內的量及其邏輯。",
+    "next": [
+      "平方根解法會直接利用平方非負性。",
+      "實數根個數技能會整合判別式與完全平方觀察。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s004-v001",
+      "u13-s004-v002",
+      "u13-s004-v003",
+      "u13-s004-v004",
+      "u13-s004-v005",
+      "u13-s004-v006",
+      "u13-s004-v007",
+      "u13-s004-v008",
+      "u13-s004-v009",
+      "u13-s004-v010",
+      "u13-s004-v011",
+      "u13-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s004-cr001",
+      "u13-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "四個案例均重新代入 a、b、c 計算；特別核對 Δ=0 只算一個相異根，並確認參數案例 k=4 時方程式仍保有 a=1。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "94ac52a60f6715c64dca3ba379e6cab098b9fc1e66fff58f2090674d12c7c642"
+}

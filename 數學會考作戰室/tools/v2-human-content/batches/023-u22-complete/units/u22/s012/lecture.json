@@ -1,0 +1,241 @@
+{
+  "lectureId": "u22-s012-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-probability",
+  "skillId": "probability-tree-basic",
+  "lockedSkillOrder": 12,
+  "title": "樹狀圖基本：用分支完整列出多階段結果並沿路相乘。",
+  "originalLockedTitle": "樹狀圖基本",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能依試驗順序畫樹狀圖。",
+    "能數完整末端路徑。",
+    "能沿路相乘並把互斥路徑相加。",
+    "能處理分支數不相同的流程。"
+  ],
+  "prerequisiteSkillIds": [
+    "probability-complement"
+  ],
+  "prerequisiteBridge": "承接餘事與基本機率。",
+  "glossary": [
+    {
+      "term": "節點",
+      "definition": "試驗進行到某階段的狀態。"
+    },
+    {
+      "term": "分支",
+      "definition": "從節點出發的一個下一步結果。"
+    },
+    {
+      "term": "完整路徑",
+      "definition": "由起點走到末端的一次完整結果。"
+    },
+    {
+      "term": "條件分支機率",
+      "definition": "已到某節點後，下一支發生的機率。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "沿路相乘",
+      "meaning": "同一完整路徑各階段機率相乘。"
+    },
+    {
+      "symbol": "跨路相加",
+      "meaning": "互斥的有利完整路徑機率相加。"
+    },
+    {
+      "symbol": "同節點分支和=1",
+      "meaning": "分支涵蓋全部下一步時。"
+    }
+  ],
+  "conceptNarrative": [
+    "樹狀圖的層次按時間或決策順序排列。",
+    "每一條完整路徑是樣本空間的一個結果；中途節點不是完整結果。",
+    "同一路徑表示「且」，所以乘；不同互斥路徑合成同一事件表示「或」，所以加。",
+    "不是每個第一層分支都必須有相同第二層，例如通過後流程停止、未通過才續判。",
+    "分支機率是到達該節點後的條件機率，不能直接跨不同節點相加。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "規則樹",
+      "statement": "每個同層節點有相同分支數。"
+    },
+    {
+      "name": "不規則樹",
+      "statement": "不同節點的後續分支數不同。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P(路徑)=p1p2…pk",
+      "conditions": [
+        "分支機率依條件相乘。"
+      ],
+      "meaning": "分支機率依條件相乘。"
+    },
+    {
+      "formula": "P(E)=ΣP(屬E的互斥路徑)",
+      "conditions": [
+        "事件跨多末端。"
+      ],
+      "meaning": "事件跨多末端。"
+    }
+  ],
+  "nonApplicableCases": [
+    "沿路機率不能相加。",
+    "不同路徑若不互斥不可直接相加。",
+    "流程停止的分支不應機械延伸。",
+    "第一層機率與條件成功率不能忽略權重。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫階段",
+      "check": "每層記錄什麼。"
+    },
+    {
+      "step": 2,
+      "instruction": "畫完整分支",
+      "check": "同節點機率和1。"
+    },
+    {
+      "step": 3,
+      "instruction": "標末端",
+      "check": "列完整結果。"
+    },
+    {
+      "step": 4,
+      "instruction": "圈有利路徑",
+      "check": "逐條相乘。"
+    },
+    {
+      "step": 5,
+      "instruction": "相加並驗總和",
+      "check": "全部末端機率和應為1。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "硬幣後骰子",
+      "solutionSteps": [
+        "第一層2支，完整路徑12。"
+      ],
+      "answer": "第一層2支，完整路徑12。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "A機率1/3，A後成功1/2",
+      "solutionSteps": [
+        "A且成功1/6。"
+      ],
+      "answer": "A且成功1/6。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "三條成功路徑1/8、2/8、3/8",
+      "solutionSteps": [
+        "合計3/4。"
+      ],
+      "answer": "合計3/4。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "通過停止，未通過分可修與報廢",
+      "solutionSteps": [
+        "完整末端3種。"
+      ],
+      "answer": "完整末端3種。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把2支與6支相加成8個結果",
+      "why": "完整路徑應2×6。",
+      "correction": "完整路徑應2×6。"
+    },
+    {
+      "mistake": "事件只圈一條路徑",
+      "why": "檢查是否還有其他順序。",
+      "correction": "檢查是否還有其他順序。"
+    },
+    {
+      "mistake": "同節點機率不合1",
+      "why": "表示漏分支或標示錯。",
+      "correction": "表示漏分支或標示錯。"
+    },
+    {
+      "mistake": "不規則樹仍套固定乘法",
+      "why": "應逐子樹數末端再相加。",
+      "correction": "應逐子樹數末端再相加。"
+    }
+  ],
+  "selfCheck": [
+    "層次是否依順序？",
+    "每個節點分支是否完整？",
+    "同一路徑是否相乘？",
+    "有利互斥路徑是否全部相加？",
+    "所有末端機率是否合1？"
+  ],
+  "summary": [
+    "樹狀圖把多階段試驗展開。",
+    "且用乘，互斥的或用加。",
+    "完整結果必須到末端。",
+    "條件流程可形成不規則樹。"
+  ],
+  "connections": {
+    "previous": "承接餘事與基本機率。",
+    "next": [
+      "下一技能把所有完整末端整理成樣本空間。",
+      "兩階段機率會使用同一乘加原則。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u22-tree-conditional"
+  ],
+  "figureAccessibility": [
+    {
+      "figureId": "fig-u22-tree-conditional",
+      "altText": "兩階段樹狀圖，第一層A機率三分之一、B機率三分之二；A後成功二分之一，B後成功四分之一。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s012-v001",
+      "u22-s012-v002",
+      "u22-s012-v003",
+      "u22-s012-v004",
+      "u22-s012-v005",
+      "u22-s012-v006",
+      "u22-s012-v007",
+      "u22-s012-v008",
+      "u22-s012-v009",
+      "u22-s012-v010",
+      "u22-s012-v011",
+      "u22-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s012-cr001",
+      "u22-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "逐路徑重算條件成功案例：(2/3)(1/4)+(1/3)(1/2)=1/3；確認各第一層分支和1且兩條成功路徑互斥。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "用分支完整列出多階段結果並沿路相乘。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "084cdc93b970474505de1af02f0714b8bb45d3c8c2471b60bf709fabe0aff366"
+}

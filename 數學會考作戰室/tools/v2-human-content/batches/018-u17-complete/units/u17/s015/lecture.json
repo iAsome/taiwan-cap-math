@@ -1,0 +1,241 @@
+{
+  "lectureId": "u17-s015-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-quadrilaterals",
+  "skillId": "trapezoid-area",
+  "lockedTitle": "梯形面積",
+  "title": "梯形面積：兩底平均後乘高",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：rectangle-square-properties。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "辨認上底、下底與高",
+    "理解梯形面積公式來源",
+    "處理反求高或反求底"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "rectangle-square-properties",
+      "requiredLevel": "能正確使用「rectangle-square-properties」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "梯形",
+      "definition": "至少一組對邊平行的四邊形"
+    },
+    {
+      "term": "上底與下底",
+      "definition": "互相平行的兩邊，不必真的水平"
+    },
+    {
+      "term": "高",
+      "definition": "兩底所在平行線的垂直距離"
+    },
+    {
+      "term": "中位線",
+      "definition": "連接兩腰中點，長為兩底和的一半"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "梯形面積可把兩個全等梯形拼成平行四邊形，底為上底加下底，高不變，因此原梯形面積是其一半。",
+    "上底與下底是平行的那一組邊；高是它們之間的垂直距離，不是斜腰。",
+    "公式也可寫成「中位線×高」。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "梯形",
+      "statement": "至少一組對邊平行的四邊形"
+    },
+    {
+      "name": "上底與下底",
+      "statement": "互相平行的兩邊，不必真的水平"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "面積=(上底+下底)×高÷2",
+      "conditions": [
+        "兩底平行"
+      ],
+      "meaning": "用於梯形面積中符合條件的推理或計算。"
+    },
+    {
+      "formula": "中位線=(上底+下底)÷2",
+      "conditions": [
+        "連接兩腰中點"
+      ],
+      "meaning": "用於梯形面積中符合條件的推理或計算。"
+    },
+    {
+      "formula": "面積=中位線×高",
+      "conditions": [
+        "同一梯形"
+      ],
+      "meaning": "用於梯形面積中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找出平行的兩底",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "辨認垂直高度",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "統一單位",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "代入先加兩底再乘高再除2",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "反求時用方程並檢查正值",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩底8與14，高5",
+      "solutionSteps": [
+        "面積55。"
+      ],
+      "answer": "面積55。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "面積72、兩底10與14",
+      "solutionSteps": [
+        "72=24h÷2，h=6。"
+      ],
+      "answer": "72=24h÷2，h=6。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "中位線9、高4",
+      "solutionSteps": [
+        "面積36。"
+      ],
+      "answer": "面積36。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "斜腰7、高6",
+      "solutionSteps": [
+        "公式使用6，不用7。"
+      ],
+      "answer": "公式使用6，不用7。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "兩底相乘",
+      "why": "公式是相加",
+      "correction": "公式是相加"
+    },
+    {
+      "mistake": "忘記除2",
+      "why": "拼成的是兩個梯形",
+      "correction": "拼成的是兩個梯形"
+    },
+    {
+      "mistake": "把腰當高",
+      "why": "高要垂直兩底",
+      "correction": "高要垂直兩底"
+    },
+    {
+      "mistake": "只取較長底乘高",
+      "why": "那是平行四邊形的形式",
+      "correction": "那是平行四邊形的形式"
+    },
+    {
+      "mistake": "反求底得到負數仍接受",
+      "why": "長度必須為正",
+      "correction": "長度必須為正"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「梯形面積」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "梯形面積可把兩個全等梯形拼成平行四邊形，底為上底加下底，高不變，因此原梯形面積是其一半。",
+    "面積=(上底+下底)×高÷2",
+    "解題時先確認「兩底平行」。"
+  ],
+  "connections": {
+    "previous": "承接rectangle-square-properties。",
+    "next": "下一技能依鎖定順序為quadrilateral-angle-sum。"
+  },
+  "figureReferences": [
+    "u17-s015-fig001"
+  ],
+  "figureAccessibility": "梯形上底a、下底b，高h以垂線與直角記號標示。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s015-v001",
+      "u17-s015-v002",
+      "u17-s015-v003",
+      "u17-s015-v004",
+      "u17-s015-v005",
+      "u17-s015-v006",
+      "u17-s015-v007",
+      "u17-s015-v008",
+      "u17-s015-v009",
+      "u17-s015-v010",
+      "u17-s015-v011",
+      "u17-s015-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s015-cr001",
+      "u17-s015-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義交代公式拼合來源，並將反求問題和中位線形式納入，但未超出國中會考範圍。"
+  },
+  "contentSha256": "14e118a60abbf4c36b50445f2eed99e5943c05c4c2a0e3c4b4c834456062aea2"
+}

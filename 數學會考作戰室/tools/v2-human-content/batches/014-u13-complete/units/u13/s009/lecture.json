@@ -1,0 +1,244 @@
+{
+  "lectureId": "u13-s009-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-roots-count",
+  "lockedOrder": 9,
+  "originalLockedTitle": "根的個數判斷",
+  "title": "實數根個數判斷",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能以判別式判斷 0、1、2 個相異實根。",
+    "能由平方形式直接觀察根個數。",
+    "能處理參數控制重根或相異根。",
+    "能區分相異根個數與根的重複次數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-complete-square-basic",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "整合判別式與基本配方，從「求出根」提升到「不必完整求根也能判斷數量」。",
+  "glossary": [
+    {
+      "term": "根的個數",
+      "definition": "本節指解集合中相異實數值的數量。"
+    },
+    {
+      "term": "兩相異實根",
+      "definition": "有兩個不同實數使方程式成立。"
+    },
+    {
+      "term": "一個實根",
+      "definition": "通常為重根，解集合只有一個值。"
+    },
+    {
+      "term": "零個實根",
+      "definition": "解集合在實數範圍為空。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "#R",
+      "meaning": "本講義用文字表示相異實根個數，不引入正式集合基數符號。"
+    }
+  ],
+  "conceptNarrative": [
+    "根個數可由判別式判斷，也可從平方形式或已分解形式直接觀察。",
+    "(x-h)²=0 只有 x=h；(x-h)²=k>0 有兩根；k<0 無實根。",
+    "已分解成 (x-p)(x-q)=0 時，p=q 只有一個相異根。",
+    "參數題若方程式因 a=0 退化，需另行處理，不可只看 Δ。",
+    "情境問題可能只有一個可接受根，但代數方程式仍有兩個實根；兩者不能混為一談。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "相異實根個數",
+      "statement": "依解集合中不同實數值計數；重根只算一個。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "Δ>0→2；Δ=0→1；Δ<0→0",
+      "conditions": [
+        "a≠0",
+        "計算相異實根"
+      ],
+      "meaning": "判別式判根數。"
+    },
+    {
+      "formula": "(x-h)²=k",
+      "conditions": [
+        "實數範圍"
+      ],
+      "meaning": "k>0 有 2 根，k=0 有 1 根，k<0 有 0 根。"
+    }
+  ],
+  "nonApplicableCases": [
+    "題目若問「符合情境的解」可能需再排除負值，不能直接等同代數根個數。",
+    "重根不算兩個不同答案。",
+    "判別式正但根不是整數，仍然是兩個實根。",
+    "a=0 時需重新判斷一次方程式。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認是一元二次方程式。",
+      "check": "a 是否非 0？"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇最快判法：分解、平方形式或 Δ。",
+      "check": "是否已有明顯結構？"
+    },
+    {
+      "step": 3,
+      "instruction": "判斷相異實根個數。",
+      "check": "重根是否只算一次？"
+    },
+    {
+      "step": 4,
+      "instruction": "參數題解出分界值。",
+      "check": "等號與不等號是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "若為情境，再計算可接受解數。",
+      "check": "是否與代數根數分開陳述？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 x²-9=0 的實根個數。",
+      "solutionSteps": [
+        "平方差得 (x-3)(x+3)=0。",
+        "根為 3、-3。"
+      ],
+      "answer": "2 個。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "判斷 (x-4)²=0。",
+      "solutionSteps": [
+        "平方只有在 x=4 時為 0。"
+      ],
+      "answer": "1 個。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "判斷 x²+4=0。",
+      "solutionSteps": [
+        "x²=-4，在實數範圍不可能。"
+      ],
+      "answer": "0 個。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "求 x²+kx+1=0 有兩相異實根的 k 條件。",
+      "solutionSteps": [
+        "Δ=k²-4>0。",
+        "解得 k<-2 或 k>2。"
+      ],
+      "answer": "k<-2 或 k>2。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "求 x²+(m-1)x+(m-1)=0 有重根時的 m。",
+      "solutionSteps": [
+        "Δ=(m-1)(m-5)。",
+        "令 Δ=0。"
+      ],
+      "answer": "m=1 或 m=5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "Δ=0 算兩個根。",
+      "why": "把公式的 ± 形式當成不同數值。",
+      "correction": "根號為 0 時兩分支相同。"
+    },
+    {
+      "mistake": "Δ>0 但非完全平方就說無根。",
+      "why": "混淆實根與有理根。",
+      "correction": "正數都有實數平方根。"
+    },
+    {
+      "mistake": "只看情境保留一個根就說方程式只有一根。",
+      "why": "混淆代數與情境。",
+      "correction": "分別報告。"
+    },
+    {
+      "mistake": "參數題漏掉臨界等號。",
+      "why": "不等式解集邊界判錯。",
+      "correction": "依題目是相異根或重根選 >0 或 =0。"
+    },
+    {
+      "mistake": "平方等於 0 寫 ±0 為兩答案。",
+      "why": "+0 與 -0 相同。",
+      "correction": "只列一次。"
+    },
+    {
+      "mistake": "未檢查 a=0。",
+      "why": "可能不再是二次。",
+      "correction": "先處理退化值。"
+    }
+  ],
+  "selfCheck": [
+    "判的是相異實根嗎？",
+    "是否有更直接的平方或因式形式？",
+    "Δ 邊界是否正確？",
+    "重根是否只算一次？",
+    "情境可接受解是否另行篩選？"
+  ],
+  "summary": [
+    "根個數可由 Δ、平方形式或因式形式判斷。",
+    "重根只算一個相異實根。",
+    "實根與整數根不同。",
+    "代數根數和情境可接受解數要分開。"
+  ],
+  "connections": {
+    "previous": "整合判別式與基本配方，從「求出根」提升到「不必完整求根也能判斷數量」。",
+    "next": [
+      "下一節會把候選根逐一代回檢查。",
+      "素養題常要求同時判根數與情境合理性。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s009-v001",
+      "u13-s009-v002",
+      "u13-s009-v003",
+      "u13-s009-v004",
+      "u13-s009-v005",
+      "u13-s009-v006",
+      "u13-s009-v007",
+      "u13-s009-v008",
+      "u13-s009-v009",
+      "u13-s009-v010",
+      "u13-s009-v011",
+      "u13-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s009-cr001",
+      "u13-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "五例以兩種方法交叉核對：分解或平方形式與判別式結論一致；參數例展開 Δ 後驗證 m=1、5 均產生完全平方，且沒有漏掉退化情況。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "66faf37506b1c7600a8e8b93fe7ff75ed22ce8215ffd28b20a8a9d0b8b5a3770"
+}

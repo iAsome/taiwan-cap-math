@@ -1,0 +1,39 @@
+name: Math V2 full release gate
+
+on:
+  pull_request:
+    paths:
+      - "MATH_CONTENT_STANDARD_TW.md"
+      - "MATH_V2_PRODUCTION_PROFILE.md"
+      - "數學會考作戰室/**"
+      - "tools/qa-smoke.mjs"
+      - ".github/workflows/math-v2-*.yml"
+  push:
+    branches:
+      - main
+      - "codex/math-v2-*"
+    paths:
+      - "MATH_CONTENT_STANDARD_TW.md"
+      - "MATH_V2_PRODUCTION_PROFILE.md"
+      - "數學會考作戰室/**"
+      - "tools/qa-smoke.mjs"
+      - ".github/workflows/math-v2-*.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  full-release-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CHROME_PATH: /usr/bin/google-chrome
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Run cumulative Math V2 gate
+        run: node 數學會考作戰室/tools/run-v2-full-release-gate.mjs

@@ -1,0 +1,1589 @@
+export default {
+  "lecture": {
+    "lectureId": "u13-s007-lecture-r1",
+    "unitId": "u13",
+    "numericUnitId": 13,
+    "topicId": "u13-solving",
+    "skillId": "quadratic-solve-by-factoring",
+    "lockedOrder": 7,
+    "originalLockedTitle": "因式分解解方程",
+    "title": "整理後用因式分解解方程式",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能將非零右端方程式先整理為 0。",
+      "能選擇提公因式、十字交乘或平方差完成因式分解。",
+      "能避免除以含未知數因式造成漏根。",
+      "能套用情境限制保留合理根。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "quadratic-standard-form",
+        "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+      }
+    ],
+    "prerequisiteBridge": "承接標準式與係數，將一般外觀的方程式轉成第一技能可用的乘積形式。",
+    "glossary": [
+      {
+        "term": "整理後因式分解",
+        "definition": "先化為標準式，再把二次多項式分解成因式乘積。"
+      },
+      {
+        "term": "公因式",
+        "definition": "每一項共同含有的因數。"
+      },
+      {
+        "term": "平方差",
+        "definition": "A²-B²=(A-B)(A+B)。"
+      },
+      {
+        "term": "候選根",
+        "definition": "由因式等於 0 得到，仍需代回與檢查情境的數值。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "ax²+bx+c=0",
+        "meaning": "因式分解前的標準式。"
+      },
+      {
+        "symbol": "(px+q)(rx+s)=0",
+        "meaning": "分別解 px+q=0 與 rx+s=0。"
+      }
+    ],
+    "conceptNarrative": [
+      "本技能與第一技能不同：重點在「原方程式尚未呈現乘積等於 0」時的整理策略。",
+      "先展開、移項、合併同類項，再判斷因式分解型態。",
+      "若所有項含 x，提公因式後要保留 x=0 分支。",
+      "同一因式出現在等式兩邊時，可移到同邊提公因式，不宜直接約掉。",
+      "文字題得到代數根後，還要檢查長度、人數等限制。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "整理後因式分解法",
+        "statement": "原方程式經等價變形為乘積等於 0，再用零乘積性質求根。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "x²+(m+n)x+mn=(x+m)(x+n)",
+        "conditions": [
+          "能找到和為一次項係數、積為常數項的 m、n"
+        ],
+        "meaning": "首項係數為 1 的常用分解。"
+      },
+      {
+        "formula": "A²-B²=(A-B)(A+B)",
+        "conditions": [
+          "兩項皆為完全平方且中間為減號"
+        ],
+        "meaning": "平方差分解。"
+      }
+    ],
+    "nonApplicableCases": [
+      "二次式無法整數因式分解時，不應硬猜，應改用配方法或公式解。",
+      "未使右邊為 0 不能直接套零乘積性質。",
+      "不能約去可能為 0 的共同含未知數因式。",
+      "情境限定正數時，負根雖為代數解仍不合題意。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "展開並移項成標準式。",
+        "check": "等號一邊是否為 0？"
+      },
+      {
+        "step": 2,
+        "instruction": "先找公因式，再辨認平方差或三項式。",
+        "check": "分解是否完整？"
+      },
+      {
+        "step": 3,
+        "instruction": "展開因式驗證。",
+        "check": "係數與常數是否完全一致？"
+      },
+      {
+        "step": 4,
+        "instruction": "用零乘積性質求全部候選根。",
+        "check": "是否漏掉公因式 x=0？"
+      },
+      {
+        "step": 5,
+        "instruction": "代回原式並套用情境。",
+        "check": "每個根是否合理？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "解 x²+x=6。",
+        "solutionSteps": [
+          "移項得 x²+x-6=0。",
+          "分解為 (x+3)(x-2)=0。"
+        ],
+        "answer": "x=-3 或 x=2。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "解 2x²=5x+3。",
+        "solutionSteps": [
+          "整理得 2x²-5x-3=0。",
+          "分解為 (2x+1)(x-3)=0。"
+        ],
+        "answer": "x=-1/2 或 x=3。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "解 x²=9x。",
+        "solutionSteps": [
+          "移項得 x²-9x=0。",
+          "提 x：x(x-9)=0。"
+        ],
+        "answer": "x=0 或 x=9。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "解 x(x+5)=2(x+5)。",
+        "solutionSteps": [
+          "移同邊得 (x+5)(x-2)=0。",
+          "不可先約掉 x+5。"
+        ],
+        "answer": "x=-5 或 x=2。"
+      },
+      {
+        "exampleId": "L5",
+        "prompt": "長方形寬 x、長 x+7，面積 60，求正的 x。",
+        "solutionSteps": [
+          "列 x(x+7)=60。",
+          "整理分解為 (x+12)(x-5)=0。",
+          "長度取正。"
+        ],
+        "answer": "x=5。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "未移項就分別令括號為 0。",
+        "why": "乘積不等於 0。",
+        "correction": "先整理成標準式。"
+      },
+      {
+        "mistake": "x²=9x 兩邊除以 x。",
+        "why": "漏掉 x=0。",
+        "correction": "移項提公因式。"
+      },
+      {
+        "mistake": "因式常數積正負判錯。",
+        "why": "沒有同時檢查和與積。",
+        "correction": "展開驗證。"
+      },
+      {
+        "mistake": "看到共同因式就直接約掉。",
+        "why": "共同因式可能為 0。",
+        "correction": "移到同邊後提公因式。"
+      },
+      {
+        "mistake": "無法整數分解仍硬湊。",
+        "why": "可能產生錯誤因式。",
+        "correction": "改用公式解。"
+      },
+      {
+        "mistake": "面積題保留負長度。",
+        "why": "未套用情境限制。",
+        "correction": "代數解後排除負值。"
+      }
+    ],
+    "selfCheck": [
+      "是否先整理為 0？",
+      "分解是否完整？",
+      "是否展開驗證？",
+      "是否保留 0 根與被約因式根？",
+      "情境根是否合理？"
+    ],
+    "summary": [
+      "本技能強調先整理再分解。",
+      "公因式、平方差與三項式是主要型態。",
+      "不可約去可能為 0 的因式。",
+      "情境題需排除不合理根。"
+    ],
+    "connections": {
+      "previous": "承接標準式與係數，將一般外觀的方程式轉成第一技能可用的乘積形式。",
+      "next": [
+        "下一節以首項係數為 1 的配方法處理不能順利分解的式子。",
+        "應用題會把列式與根的篩選結合。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u13-s007-v001",
+        "u13-s007-v002",
+        "u13-s007-v003",
+        "u13-s007-v004",
+        "u13-s007-v005",
+        "u13-s007-v006",
+        "u13-s007-v007",
+        "u13-s007-v008",
+        "u13-s007-v009",
+        "u13-s007-v010",
+        "u13-s007-v011",
+        "u13-s007-v012"
+      ],
+      "constructedResponseIds": [
+        "u13-s007-cr001",
+        "u13-s007-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "reviewNote": "五例均由原式重新整理、展開因式並代回；特別確認 x²=9x 保留 x=0、共同因式案例保留 x=-5，以及長度案例只取正根 5。",
+      "reviewVersion": "human-lecture-review-u13-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "fa547690920d67e54c0eb4d16dd06ebaa4e6369054f3673b3f1e96a65cc32b7d"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u13-s007-v001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "解 x²-7x+12=0。",
+      "givenConditions": "已是標準式。",
+      "target": "用因式分解求根",
+      "choices": [
+        "x=-3 或 x=-4",
+        "x=2 或 x=6",
+        "x=3 或 x=4",
+        "x=1 或 x=12"
+      ],
+      "answerIndex": 2,
+      "explanation": "找兩數和為 -7、積為 12；分解 (x-3)(x-4)=0，得 3、4，所以答案為「x=3 或 x=4」。",
+      "steps": [
+        "找兩數和為 -7、積為 12",
+        "分解 (x-3)(x-4)=0，得 3、4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=-3 或 x=-4",
+          "truth": false,
+          "reason": "把因式符號直接照抄。"
+        },
+        {
+          "choice": "x=2 或 x=6",
+          "truth": false,
+          "reason": "積為 12 但和不是 7。"
+        },
+        {
+          "choice": "x=3 或 x=4",
+          "truth": true,
+          "reason": "二次式分解為 (x-3)(x-4)=0。"
+        },
+        {
+          "choice": "x=1 或 x=12",
+          "truth": false,
+          "reason": "只看常數乘積，忽略一次項。"
+        }
+      ],
+      "misconceptionTarget": "只看常數積或符號反讀",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 55,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "兩根皆需列出。",
+      "difficultyReason": "基本三項式分解。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "用因式分解求根",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "51692da07ac6f11a3696fa6694127d91446569e01689b65a859b7105726014f2"
+    },
+    {
+      "questionId": "u13-s007-v002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "解 x²+x=6。",
+      "givenConditions": "右端需先化為 0。",
+      "target": "整理後因式分解",
+      "choices": [
+        "x=2 或 x=-3",
+        "x=1 或 x=6",
+        "x=-2 或 x=3",
+        "x=6 或 x=-1"
+      ],
+      "answerIndex": 0,
+      "explanation": "移項得 x²+x-6=0；分解得 (x-2)(x+3)=0，所以答案為「x=2 或 x=-3」。",
+      "steps": [
+        "移項得 x²+x-6=0",
+        "分解得 (x-2)(x+3)=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=2 或 x=-3",
+          "truth": true,
+          "reason": "移項後 x²+x-6=(x-2)(x+3)=0。"
+        },
+        {
+          "choice": "x=1 或 x=6",
+          "truth": false,
+          "reason": "把和與積條件錯配。"
+        },
+        {
+          "choice": "x=-2 或 x=3",
+          "truth": false,
+          "reason": "根符號對調。"
+        },
+        {
+          "choice": "x=6 或 x=-1",
+          "truth": false,
+          "reason": "未因式分解。"
+        }
+      ],
+      "misconceptionTarget": "右端未移項或根符號錯",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 65,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "兩根代回原式。",
+      "difficultyReason": "含非零右端的基本整理。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "整理後因式分解",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ede0ad5cf3fdabd8bbd0ae14aa4943d4070f204939b44b0159d4aff2b65cde98"
+    },
+    {
+      "questionId": "u13-s007-v003",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "解 2x²=5x+3。",
+      "givenConditions": "a=2。",
+      "target": "處理非 1 首項係數分解",
+      "choices": [
+        "x=-3 或 x=1/2",
+        "x=3 或 x=-1",
+        "x=3/2 或 x=-1",
+        "x=3 或 x=-1/2"
+      ],
+      "answerIndex": 3,
+      "explanation": "移項得 2x²-5x-3=0；分解 (2x+1)(x-3)=0，所以答案為「x=3 或 x=-1/2」。",
+      "steps": [
+        "移項得 2x²-5x-3=0",
+        "分解 (2x+1)(x-3)=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=-3 或 x=1/2",
+          "truth": false,
+          "reason": "因式根符號相反。"
+        },
+        {
+          "choice": "x=3 或 x=-1",
+          "truth": false,
+          "reason": "解 2x+1=0 時忘記除 2。"
+        },
+        {
+          "choice": "x=3/2 或 x=-1",
+          "truth": false,
+          "reason": "因式配對錯誤。"
+        },
+        {
+          "choice": "x=3 或 x=-1/2",
+          "truth": true,
+          "reason": "整理為 2x²-5x-3=(2x+1)(x-3)=0。"
+        }
+      ],
+      "misconceptionTarget": "一次因式係數與符號錯",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 80,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "分數根精確。",
+      "difficultyReason": "非單位首項係數的因式分解。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "處理非 1 首項係數分解",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "2bfb5f1f88293259de331752840562185ba0d02f6bfc0dc5fb1bf809db6ec540"
+    },
+    {
+      "questionId": "u13-s007-v004",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "解 x²=9x。",
+      "givenConditions": "x 可能為 0。",
+      "target": "保留零根",
+      "choices": [
+        "x=9",
+        "x=0 或 x=9",
+        "x=0",
+        "x=-9 或 x=0"
+      ],
+      "answerIndex": 1,
+      "explanation": "移項 x²-9x=0；提 x 得 x(x-9)=0，所以答案為「x=0 或 x=9」。",
+      "steps": [
+        "移項 x²-9x=0",
+        "提 x 得 x(x-9)=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=9",
+          "truth": false,
+          "reason": "先除以 x 而漏掉 0。"
+        },
+        {
+          "choice": "x=0 或 x=9",
+          "truth": true,
+          "reason": "移項提公因式 x(x-9)=0，不能先除以 x。"
+        },
+        {
+          "choice": "x=0",
+          "truth": false,
+          "reason": "只取公因式分支。"
+        },
+        {
+          "choice": "x=-9 或 x=0",
+          "truth": false,
+          "reason": "解 x-9=0 的符號錯。"
+        }
+      ],
+      "misconceptionTarget": "不當除以 x",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 75,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "完整解集有兩值。",
+      "difficultyReason": "典型漏根陷阱。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "保留零根",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "5ceba8a08e5cab9151b5b640ba347c53339708f6d8aa288ae4f339d4b921d4a4"
+    },
+    {
+      "questionId": "u13-s007-v005",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "解 x²-4=3x。",
+      "givenConditions": "右端不為 0，需重整。",
+      "target": "整理含平方差外觀的方程式",
+      "choices": [
+        "x=4 或 x=-1",
+        "x=1 或 x=-4",
+        "x=2 或 x=-2",
+        "x=3 或 x=-4/3"
+      ],
+      "answerIndex": 0,
+      "explanation": "移項得 x²-3x-4=0；分解為 (x-4)(x+1)=0，所以答案為「x=4 或 x=-1」。",
+      "steps": [
+        "移項得 x²-3x-4=0",
+        "分解為 (x-4)(x+1)=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=4 或 x=-1",
+          "truth": true,
+          "reason": "整理為 x²-3x-4=(x-4)(x+1)=0。"
+        },
+        {
+          "choice": "x=1 或 x=-4",
+          "truth": false,
+          "reason": "根符號相反。"
+        },
+        {
+          "choice": "x=2 或 x=-2",
+          "truth": false,
+          "reason": "只看到平方差 x²-4。"
+        },
+        {
+          "choice": "x=3 或 x=-4/3",
+          "truth": false,
+          "reason": "把係數比誤當根。"
+        }
+      ],
+      "misconceptionTarget": "忽略右端一次項",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 85,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "不能直接以 x²-4 的因式判根。",
+      "difficultyReason": "外觀干擾與重新分解。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "整理含平方差外觀的方程式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a5d9fa4899a2e22f4ed91fc5c06a2d6bbfb7d9bbe4897cfd8a091cb8f5b14e71"
+    },
+    {
+      "questionId": "u13-s007-v006",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "解 3x²+12x=0。",
+      "givenConditions": "3 非 0。",
+      "target": "提公因式求根",
+      "choices": [
+        "x=-4",
+        "x=0 或 x=4",
+        "x=0 或 x=-4",
+        "x=-3 或 x=-4"
+      ],
+      "answerIndex": 2,
+      "explanation": "提公因式 3x；令 x=0 或 x+4=0，所以答案為「x=0 或 x=-4」。",
+      "steps": [
+        "提公因式 3x",
+        "令 x=0 或 x+4=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=-4",
+          "truth": false,
+          "reason": "除以 x 漏根。"
+        },
+        {
+          "choice": "x=0 或 x=4",
+          "truth": false,
+          "reason": "第二根符號錯。"
+        },
+        {
+          "choice": "x=0 或 x=-4",
+          "truth": true,
+          "reason": "提公因式 3x，得 3x(x+4)=0。"
+        },
+        {
+          "choice": "x=-3 或 x=-4",
+          "truth": false,
+          "reason": "把係數 3 當成因式根。"
+        }
+      ],
+      "misconceptionTarget": "把常數因式或除法處理錯",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 70,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "常數因式不產生根。",
+      "difficultyReason": "公因式與零根。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "提公因式求根",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "2916f57b02c2d735c80800fc506a9f68e96e0cf87291c0daef396d9a467e811a"
+    },
+    {
+      "questionId": "u13-s007-v007",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "解 (x+2)(x-3)=4x-6。",
+      "givenConditions": "兩邊需移到同一側。",
+      "target": "解兩邊皆含未知數的方程式",
+      "choices": [
+        "x=-2 或 x=3",
+        "x=0 或 x=5",
+        "x=5",
+        "x=-5 或 x=0"
+      ],
+      "answerIndex": 1,
+      "explanation": "展開左式 x²-x-6；減去 4x-6 得 x²-5x=0，所以答案為「x=0 或 x=5」。",
+      "steps": [
+        "展開左式 x²-x-6",
+        "減去 4x-6 得 x²-5x=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=-2 或 x=3",
+          "truth": false,
+          "reason": "未處理右端。"
+        },
+        {
+          "choice": "x=0 或 x=5",
+          "truth": true,
+          "reason": "展開移項後 x²-5x=x(x-5)=0。"
+        },
+        {
+          "choice": "x=5",
+          "truth": false,
+          "reason": "除以 x 漏掉 0。"
+        },
+        {
+          "choice": "x=-5 或 x=0",
+          "truth": false,
+          "reason": "第二根符號錯。"
+        }
+      ],
+      "misconceptionTarget": "看到原括號直接設零或除以 x",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 110,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "x=0 不可遺失。",
+      "difficultyReason": "展開後常數消去並提因式。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "解兩邊皆含未知數的方程式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "5fcda2f4076615c8a59966dec618172b66460ae9aa67e6279ef047d86d579c0c"
+    },
+    {
+      "questionId": "u13-s007-v008",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "解 x(x+5)=2(x+5)。",
+      "givenConditions": "x+5 可能為 0。",
+      "target": "避免約去共同含未知數因式",
+      "choices": [
+        "x=2",
+        "x=-5",
+        "x=5 或 x=-2",
+        "x=-5 或 x=2"
+      ],
+      "answerIndex": 3,
+      "explanation": "移項：(x+5)[x-2]=0；得到 x=-5 或 x=2，所以答案為「x=-5 或 x=2」。",
+      "steps": [
+        "移項：(x+5)[x-2]=0",
+        "得到 x=-5 或 x=2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=2",
+          "truth": false,
+          "reason": "約掉 x+5，漏掉 -5。"
+        },
+        {
+          "choice": "x=-5",
+          "truth": false,
+          "reason": "只取共同因式。"
+        },
+        {
+          "choice": "x=5 或 x=-2",
+          "truth": false,
+          "reason": "兩根符號反。"
+        },
+        {
+          "choice": "x=-5 或 x=2",
+          "truth": true,
+          "reason": "移同邊得 (x+5)(x-2)=0；不能約掉 x+5。"
+        }
+      ],
+      "misconceptionTarget": "直接約分漏根",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 105,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "兩根均符合原式。",
+      "difficultyReason": "共同因式漏根高階陷阱。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "避免約去共同含未知數因式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4faf3d2f87c66fb333983f890c222af30784f32f457863ea0e84b323c086039f"
+    },
+    {
+      "questionId": "u13-s007-v009",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "4x²-12x+9=0 的解為何？",
+      "givenConditions": "右側為 0。",
+      "target": "辨認完全平方重根",
+      "choices": [
+        "x=3 或 x=-3",
+        "x=3/2 或 x=-3/2",
+        "x=3/2",
+        "沒有實數解"
+      ],
+      "answerIndex": 2,
+      "explanation": "辨認 4x²-12x+9=(2x-3)²；令 2x-3=0，所以答案為「x=3/2」。",
+      "steps": [
+        "辨認 4x²-12x+9=(2x-3)²",
+        "令 2x-3=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=3 或 x=-3",
+          "truth": false,
+          "reason": "把式子誤作 x²=9。"
+        },
+        {
+          "choice": "x=3/2 或 x=-3/2",
+          "truth": false,
+          "reason": "平方等於 0 不產生正負兩根。"
+        },
+        {
+          "choice": "x=3/2",
+          "truth": true,
+          "reason": "二次式為 (2x-3)²，只有重根 3/2。"
+        },
+        {
+          "choice": "沒有實數解",
+          "truth": false,
+          "reason": "完全平方可等於 0。"
+        }
+      ],
+      "misconceptionTarget": "把平方為 0 寫成 ±",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "相異根只一個。",
+      "difficultyReason": "結構辨認與根數。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認完全平方重根",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "80d0a898f2bc2c0a3b56e92d96af1ed4aeec047ff39dda39ff880c36cee1ff66"
+    },
+    {
+      "questionId": "u13-s007-v010",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "長方形寬 x 公尺、長 x+7 公尺，面積 60 平方公尺。寬為何？",
+      "givenConditions": "x>0 且 x+7>0。",
+      "target": "求幾何寬度",
+      "choices": [
+        "-12 公尺",
+        "5 公尺",
+        "12 公尺",
+        "5 或 -12 公尺"
+      ],
+      "answerIndex": 1,
+      "explanation": "列 x²+7x-60=0；因式分解得 x=5、-12，取 5，所以答案為「5 公尺」。",
+      "steps": [
+        "列 x²+7x-60=0",
+        "因式分解得 x=5、-12，取 5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-12 公尺",
+          "truth": false,
+          "reason": "是代數根但長度不能為負。"
+        },
+        {
+          "choice": "5 公尺",
+          "truth": true,
+          "reason": "x(x+7)=60，整理為 (x+12)(x-5)=0，長度取正。"
+        },
+        {
+          "choice": "12 公尺",
+          "truth": false,
+          "reason": "把負根改正而未驗算。"
+        },
+        {
+          "choice": "5 或 -12 公尺",
+          "truth": false,
+          "reason": "未套用幾何限制。"
+        }
+      ],
+      "misconceptionTarget": "保留負代數根",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 100,
+      "unitCheck": "寬與長為公尺，面積為平方公尺。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "負根不合幾何。",
+      "difficultyReason": "因式分解與長度限制。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為面積與正長度條件決定唯一可接受根。",
+      "authoringIntent": "求幾何寬度",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a1a5928ab75792f8094b92f9b282fdea1c5b3feff6e58ea0ad824afa7310f32d"
+    },
+    {
+      "questionId": "u13-s007-v011",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "某座位區有 n 排，每排 n-1 個座位，共 72 個，n 為正整數。n 為何？",
+      "givenConditions": "n∈正整數。",
+      "target": "求正整數排數",
+      "choices": [
+        "-8",
+        "8",
+        "9 或 -8",
+        "9"
+      ],
+      "answerIndex": 3,
+      "explanation": "列 n²-n-72=0；分解得 n=9 或 -8，取 9，所以答案為「9」。",
+      "steps": [
+        "列 n²-n-72=0",
+        "分解得 n=9 或 -8，取 9"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-8",
+          "truth": false,
+          "reason": "是代數根但不是正整數排數。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "8·7=56，不是 72。"
+        },
+        {
+          "choice": "9 或 -8",
+          "truth": false,
+          "reason": "未套用排數限制。"
+        },
+        {
+          "choice": "9",
+          "truth": true,
+          "reason": "n(n-1)=72，整理為 (n-9)(n+8)=0，取正整數 9。"
+        }
+      ],
+      "misconceptionTarget": "排除根與乘積驗算錯",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 105,
+      "unitCheck": "n 為排數，無物理單位但必須是正整數。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "座位數也需正。",
+      "difficultyReason": "離散情境與因式分解。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為排數與每排座位均為正整數，是排除負根的必要資訊。",
+      "authoringIntent": "求正整數排數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "eb2e2e30eb2f3857187360b8d57f0e2aca351e5fc4445223e91d68f8d4cbfb59"
+    },
+    {
+      "questionId": "u13-s007-v012",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "lockedSkillOrder": 7,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "某商品利潤模型為 (q-15)(q+4)=0，q 是非負整數銷量。損益平衡銷量為何？",
+      "givenConditions": "q∈{0,1,2,…}。",
+      "target": "找出可行損益平衡點",
+      "choices": [
+        "15",
+        "-4",
+        "4",
+        "15 或 -4"
+      ],
+      "answerIndex": 0,
+      "explanation": "零乘積得 q=15 或 -4；q≥0，保留 15，所以答案為「15」。",
+      "steps": [
+        "零乘積得 q=15 或 -4",
+        "q≥0，保留 15"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "15",
+          "truth": true,
+          "reason": "代數根 15、-4 中，只有 15 為非負整數。"
+        },
+        {
+          "choice": "-4",
+          "truth": false,
+          "reason": "負銷量不合理。"
+        },
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "把 q+4=0 解錯。"
+        },
+        {
+          "choice": "15 或 -4",
+          "truth": false,
+          "reason": "未套用銷量限制。"
+        }
+      ],
+      "misconceptionTarget": "忽略非負整數定義域",
+      "prerequisiteSkillIds": [
+        "quadratic-standard-form"
+      ],
+      "estimatedTimeSec": 90,
+      "unitCheck": "q 是件數，必須為非負整數。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "負根排除。",
+      "difficultyReason": "已分解模型與情境篩選。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為銷量的離散非負性決定商業可行答案。",
+      "authoringIntent": "找出可行損益平衡點",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9cb8986156179d0661761b6db675b54f862fcbe4fed4ca1c4719fc76027688da"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u13-s007-cr001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "解 x²=9x，並指出一個會造成漏根的錯誤作法。",
+      "requiredWork": [
+        "整理到一邊。",
+        "提公因式。",
+        "用零乘積性質。",
+        "描述錯誤作法。"
+      ],
+      "fullCreditSolution": [
+        "x²-9x=0。",
+        "x(x-9)=0。",
+        "所以 x=0 或 x=9。",
+        "若兩邊直接除以 x，只會得到 x=9，漏掉 x=0。"
+      ],
+      "alternativeSolutions": [
+        "可代入 0 與 9 驗證；再說明直接除 x 的假設。"
+      ],
+      "reasoningSteps": [
+        "移項。",
+        "提 x。",
+        "保留 x=0 分支。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整得到 0、9，並明確指出除以 x 會漏 0。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩根正確但錯誤作法說明簡略，或方法完整但一處書寫小錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "只得到 9 且能承認可能漏根，或正確提因式但分支未完成。"
+        },
+        {
+          "score": 0,
+          "criteria": "答案與方法皆無效。"
+        }
+      ],
+      "partialCreditRules": [
+        "若先分情況 x=0 或 x≠0，在 x≠0 分支除以 x，方法合法且可滿分。"
+      ],
+      "followThroughPolicy": "若錯誤作法真的被採用但最後靠代入補回 0，仍可依完整說明給滿分。",
+      "unitNotationRules": [
+        "x 無單位。"
+      ],
+      "answerOnlyPolicy": "只寫 0、9，未描述錯法，最多 2 分。",
+      "commonErrors": [
+        "直接約 x。",
+        "移項寫 x²+9x。"
+      ],
+      "independentReview": {
+        "derivedResult": "x=0 或 x=9；直接除以 x 會漏 0。",
+        "ambiguity": "錯誤作法指向唯一常見風險，題意清楚。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "7b35d3d4d3b3e3ca20deedde5bf99538ea8268a19995b69b8a1807b5ae5a568d"
+    },
+    {
+      "questionId": "u13-s007-cr002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-solve-by-factoring",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "解 x(x+5)=2(x+5)，不得直接約去 x+5。",
+      "requiredWork": [
+        "移到同一邊。",
+        "提出共同因式。",
+        "求所有根。",
+        "說明不能約因式。"
+      ],
+      "fullCreditSolution": [
+        "x(x+5)-2(x+5)=0。",
+        "(x+5)(x-2)=0。",
+        "所以 x=-5 或 x=2。",
+        "直接約去 x+5 會預設 x+5≠0，漏掉 x=-5。"
+      ],
+      "alternativeSolutions": [
+        "可先展開 x²+5x=2x+10，整理為 x²+3x-10=0，再分解。"
+      ],
+      "reasoningSteps": [
+        "保存共同因式。",
+        "轉成乘積等於 0。",
+        "處理兩分支。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "得到 -5、2，且正確解釋不可直接約去 x+5。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩根正確但理由不足，或展開法完整但未回應約因式風險。"
+        },
+        {
+          "score": 1,
+          "criteria": "只得到 2，或正確移項提因式但漏一支。"
+        },
+        {
+          "score": 0,
+          "criteria": "直接約去且未補回，答案只含錯誤或無過程。"
+        }
+      ],
+      "partialCreditRules": [
+        "使用展開法不需實際約因式，但仍需文字說明題目指定的風險。"
+      ],
+      "followThroughPolicy": "若約去後另外檢查 x+5=0 並補回 -5，方法可視為分情況，給滿分。",
+      "unitNotationRules": [
+        "x 無單位。"
+      ],
+      "answerOnlyPolicy": "只列兩根最多 2 分。",
+      "commonErrors": [
+        "直接約掉共同因式。",
+        "把右邊 2 當成根。"
+      ],
+      "independentReview": {
+        "derivedResult": "x=-5 或 x=2。",
+        "ambiguity": "所有代數式為多項式，無分母定義域問題。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "8599ab12fd64997daebd2d7141fe43122f9f71620b576c075a2ace2121ebc56c"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u13-s007-v001",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "51692da07ac6f11a3696fa6694127d91446569e01689b65a859b7105726014f2",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：展開 (x-3)(x-4)=x²-7x+12；兩因式為 0 時根為 3、4",
+      "derivedAnswer": "x=3 或 x=4",
+      "storedAnswer": "x=3 或 x=4",
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「解 x²-7x+12=0。」的要求量已明示為「用因式分解求根」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：已是標準式。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：兩根皆需列出。",
+        "choices": "四選項逐一代入或反算；正確項理由為「二次式分解為 (x-3)(x-4)=0。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "基本三項式分解。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「解 x²-7x+12=0。」：獨立由原始條件重算：展開 (x-3)(x-4)=x²-7x+12；兩因式為 0 時根為 3、4。再逐項核對四個選項，只有「x=3 或 x=4」同時符合方程式與限制；兩根皆需列出。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "9d32000fa30135d0448c9f47aedf96151865ee1f66e193ba7ab09a553fb3a537"
+    },
+    {
+      "questionId": "u13-s007-v002",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "ede0ad5cf3fdabd8bbd0ae14aa4943d4070f204939b44b0159d4aff2b65cde98",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：代回原式：2²+2=6；(-3)²-3=6；兩根都成立",
+      "derivedAnswer": "x=2 或 x=-3",
+      "storedAnswer": "x=2 或 x=-3",
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「解 x²+x=6。」的要求量已明示為「整理後因式分解」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：右端需先化為 0。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：兩根代回原式。",
+        "choices": "四選項逐一代入或反算；正確項理由為「移項後 x²+x-6=(x-2)(x+3)=0。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "含非零右端的基本整理。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「解 x²+x=6。」：獨立由原始條件重算：代回原式：2²+2=6；(-3)²-3=6；兩根都成立。再逐項核對四個選項，只有「x=2 或 x=-3」同時符合方程式與限制；兩根代回原式。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "0c8c0fce88183d94dccb0e1e47d5081cbbfa0352211ea8161160ca217582f7cc"
+    },
+    {
+      "questionId": "u13-s007-v003",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "2bfb5f1f88293259de331752840562185ba0d02f6bfc0dc5fb1bf809db6ec540",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：展開因式回到 2x²-5x-3；根 -1/2、3 代回原式均成立",
+      "derivedAnswer": "x=3 或 x=-1/2",
+      "storedAnswer": "x=3 或 x=-1/2",
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「解 2x²=5x+3。」的要求量已明示為「處理非 1 首項係數分解」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：a=2。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：分數根精確。",
+        "choices": "四選項逐一代入或反算；正確項理由為「整理為 2x²-5x-3=(2x+1)(x-3)=0。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "非單位首項係數的因式分解。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「解 2x²=5x+3。」：獨立由原始條件重算：展開因式回到 2x²-5x-3；根 -1/2、3 代回原式均成立。再逐項核對四個選項，只有「x=3 或 x=-1/2」同時符合方程式與限制；分數根精確。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "79e67d6d4303d9a0edc9897a25f4f4c6980a6eb359ed7734c8ec40942657e537"
+    },
+    {
+      "questionId": "u13-s007-v004",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "5ceba8a08e5cab9151b5b640ba347c53339708f6d8aa288ae4f339d4b921d4a4",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：x=0 與 9 分別代回 x²=9x；0=0、81=81，兩者成立",
+      "derivedAnswer": "x=0 或 x=9",
+      "storedAnswer": "x=0 或 x=9",
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「解 x²=9x。」的要求量已明示為「保留零根」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：x 可能為 0。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：完整解集有兩值。",
+        "choices": "四選項逐一代入或反算；正確項理由為「移項提公因式 x(x-9)=0，不能先除以 x。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "典型漏根陷阱。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「解 x²=9x。」：獨立由原始條件重算：x=0 與 9 分別代回 x²=9x；0=0、81=81，兩者成立。再逐項核對四個選項，只有「x=0 或 x=9」同時符合方程式與限制；完整解集有兩值。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "f43f8c24423da127f42ef2b34bb17e5f8c32e55495b327c552a841fcc46e46a8"
+    },
+    {
+      "questionId": "u13-s007-v005",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "a5d9fa4899a2e22f4ed91fc5c06a2d6bbfb7d9bbe4897cfd8a091cb8f5b14e71",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：代回 4：16-4=12=3·4；代回 -1：1-4=-3=3(-1)；兩根皆成立",
+      "derivedAnswer": "x=4 或 x=-1",
+      "storedAnswer": "x=4 或 x=-1",
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「解 x²-4=3x。」的要求量已明示為「整理含平方差外觀的方程式」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：右端不為 0，需重整。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：不能直接以 x²-4 的因式判根。",
+        "choices": "四選項逐一代入或反算；正確項理由為「整理為 x²-3x-4=(x-4)(x+1)=0。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "外觀干擾與重新分解。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「解 x²-4=3x。」：獨立由原始條件重算：代回 4：16-4=12=3·4；代回 -1：1-4=-3=3(-1)；兩根皆成立。再逐項核對四個選項，只有「x=4 或 x=-1」同時符合方程式與限制；不能直接以 x²-4 的因式判根。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "951129cce6ff8f4c1b01c3ac96715c0c5046708e8d77b5801083d3b9ed5a46a2"
+    },
+    {
+      "questionId": "u13-s007-v006",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "2916f57b02c2d735c80800fc506a9f68e96e0cf87291c0daef396d9a467e811a",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：常數因式 3 不可能為 0；真正分支為 x、x+4，得 0、-4",
+      "derivedAnswer": "x=0 或 x=-4",
+      "storedAnswer": "x=0 或 x=-4",
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「解 3x²+12x=0。」的要求量已明示為「提公因式求根」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：3 非 0。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：常數因式不產生根。",
+        "choices": "四選項逐一代入或反算；正確項理由為「提公因式 3x，得 3x(x+4)=0。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "公因式與零根。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「解 3x²+12x=0。」：獨立由原始條件重算：常數因式 3 不可能為 0；真正分支為 x、x+4，得 0、-4。再逐項核對四個選項，只有「x=0 或 x=-4」同時符合方程式與限制；常數因式不產生根。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "e8677c61861e43d614bef5814c5bd5da4bf897b8c0fb1a54f26d27514dcf0a7d"
+    },
+    {
+      "questionId": "u13-s007-v007",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "5fcda2f4076615c8a59966dec618172b66460ae9aa67e6279ef047d86d579c0c",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：提 x 得 x(x-5)=0；代回 0：-6=-6；5：14=14",
+      "derivedAnswer": "x=0 或 x=5",
+      "storedAnswer": "x=0 或 x=5",
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「解 (x+2)(x-3)=4x-6。」的要求量已明示為「解兩邊皆含未知數的方程式」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：兩邊需移到同一側。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：x=0 不可遺失。",
+        "choices": "四選項逐一代入或反算；正確項理由為「展開移項後 x²-5x=x(x-5)=0。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "展開後常數消去並提因式。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「解 (x+2)(x-3)=4x-6。」：獨立由原始條件重算：提 x 得 x(x-5)=0；代回 0：-6=-6；5：14=14。再逐項核對四個選項，只有「x=0 或 x=5」同時符合方程式與限制；x=0 不可遺失。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "5277415a69ce52eaac0a5cb8d6c144a1d3a4cfbf0f0de69a0b3e583bdc5dea61"
+    },
+    {
+      "questionId": "u13-s007-v008",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "4faf3d2f87c66fb333983f890c222af30784f32f457863ea0e84b323c086039f",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：原式代入 -5：0=0；代入 2：14=14；兩值皆成立",
+      "derivedAnswer": "x=-5 或 x=2",
+      "storedAnswer": "x=-5 或 x=2",
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「解 x(x+5)=2(x+5)。」的要求量已明示為「避免約去共同含未知數因式」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：x+5 可能為 0。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：兩根均符合原式。",
+        "choices": "四選項逐一代入或反算；正確項理由為「移同邊得 (x+5)(x-2)=0；不能約掉 x+5。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "共同因式漏根高階陷阱。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「解 x(x+5)=2(x+5)。」：獨立由原始條件重算：原式代入 -5：0=0；代入 2：14=14；兩值皆成立。再逐項核對四個選項，只有「x=-5 或 x=2」同時符合方程式與限制；兩根均符合原式。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "a8d564b970d665e5a1ef1afa1e66f3f2ab52ce2c992b182b3bad66bdeb1dd439"
+    },
+    {
+      "questionId": "u13-s007-v009",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "80d0a898f2bc2c0a3b56e92d96af1ed4aeec047ff39dda39ff880c36cee1ff66",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：判別式 144-144=0 交叉驗證；唯一根 3/2 代回為 0",
+      "derivedAnswer": "x=3/2",
+      "storedAnswer": "x=3/2",
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「4x²-12x+9=0 的解為何？」的要求量已明示為「辨認完全平方重根」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：右側為 0。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：相異根只一個。",
+        "choices": "四選項逐一代入或反算；正確項理由為「二次式為 (2x-3)²，只有重根 3/2。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "結構辨認與根數。",
+      "literacyNecessityReview": null,
+      "reviewerNote": "獨立重算「4x²-12x+9=0 的解為何？」：獨立由原始條件重算：判別式 144-144=0 交叉驗證；唯一根 3/2 代回為 0。再逐項核對四個選項，只有「x=3/2」同時符合方程式與限制；相異根只一個。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "9c51c6583aa3b0a98bdb42a132c4a1aa6e8ad0a03d32661cf0c02d51ca6b2a59"
+    },
+    {
+      "questionId": "u13-s007-v010",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "a1a5928ab75792f8094b92f9b282fdea1c5b3feff6e58ea0ad824afa7310f32d",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：5·12=60；-12 會使長為 -5，兩邊皆非正長度，因此排除",
+      "derivedAnswer": "5 公尺",
+      "storedAnswer": "5 公尺",
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「長方形寬 x 公尺、長 x+7 公尺，面積 60 平方公尺。寬為何？」的要求量已明示為「求幾何寬度」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：x>0 且 x+7>0。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：負根不合幾何。",
+        "choices": "四選項逐一代入或反算；正確項理由為「x(x+7)=60，整理為 (x+12)(x-5)=0，長度取正。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "寬與長為公尺，面積為平方公尺。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "因式分解與長度限制。",
+      "literacyNecessityReview": "此情境資訊不可刪除且會改變答案，因為面積與正長度條件決定唯一可接受根。",
+      "reviewerNote": "獨立重算「長方形寬 x 公尺、長 x+7 公尺，面積 60 平方公尺。寬為何？」：獨立由原始條件重算：5·12=60；-12 會使長為 -5，兩邊皆非正長度，因此排除。再逐項核對四個選項，只有「5 公尺」同時符合方程式與限制；負根不合幾何。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "57ceb2b80efacb609aa14b26321ec31edd3622924c8326b484e0fd85262b9712"
+    },
+    {
+      "questionId": "u13-s007-v011",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "eb2e2e30eb2f3857187360b8d57f0e2aca351e5fc4445223e91d68f8d4cbfb59",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：9·8=72；-8 導致每排 -9 個座位，不合理",
+      "derivedAnswer": "9",
+      "storedAnswer": "9",
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「某座位區有 n 排，每排 n-1 個座位，共 72 個，n 為正整數。n 為何？」的要求量已明示為「求正整數排數」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：n∈正整數。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：座位數也需正。",
+        "choices": "四選項逐一代入或反算；正確項理由為「n(n-1)=72，整理為 (n-9)(n+8)=0，取正整數 9。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "n 為排數，無物理單位但必須是正整數。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "離散情境與因式分解。",
+      "literacyNecessityReview": "此情境資訊不可刪除且會改變答案，因為排數與每排座位均為正整數，是排除負根的必要資訊。",
+      "reviewerNote": "獨立重算「某座位區有 n 排，每排 n-1 個座位，共 72 個，n 為正整數。n 為何？」：獨立由原始條件重算：9·8=72；-8 導致每排 -9 個座位，不合理。再逐項核對四個選項，只有「9」同時符合方程式與限制；座位數也需正。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "4af389b359e21515e8a7619766067c75a84c66477a82c3f02cdca02d98d96077"
+    },
+    {
+      "questionId": "u13-s007-v012",
+      "unitId": "u13",
+      "skillId": "quadratic-solve-by-factoring",
+      "contentSha256": "9cb8986156179d0661761b6db675b54f862fcbe4fed4ca1c4719fc76027688da",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "independentSolution": "獨立由原始條件重算：代入 15 使第一因式 0；-4 雖使第二因式 0，但違反非負銷量",
+      "derivedAnswer": "15",
+      "storedAnswer": "15",
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "language": "題幹「某商品利潤模型為 (q-15)(q+4)=0，q 是非負整數銷量。損益平衡銷量為何？」的要求量已明示為「找出可行損益平衡點」，沒有把解、根個數或係數混用。",
+        "conditions": "獨立檢查條件：q∈{0,1,2,…}。；所有必要限制均已寫入題幹或圖說。",
+        "boundary": "邊界複核已逐項檢查等號、數值範圍與答案格式：負根排除。",
+        "choices": "四選項逐一代入或反算；正確項理由為「代數根 15、-4 中，只有 15 為非負整數。」，另外三項各違反不同計算或條件。"
+      },
+      "unitCheck": "q 是件數，必須為非負整數。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "difficultyReason": "已分解模型與情境篩選。",
+      "literacyNecessityReview": "此情境資訊不可刪除且會改變答案，因為銷量的離散非負性決定商業可行答案。",
+      "reviewerNote": "獨立重算「某商品利潤模型為 (q-15)(q+4)=0，q 是非負整數銷量。損益平衡銷量為何？」：獨立由原始條件重算：代入 15 使第一因式 0；-4 雖使第二因式 0，但違反非負銷量。再逐項核對四個選項，只有「15」同時符合方程式與限制；負根排除。 最後把所得值代回題目所列條件再次確認；此結論未沿用題庫答案，而由原式重新推得。",
+      "reviewerDecision": "pass",
+      "reviewVersion": "human-review-u13-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "ce10af06a0fe2a5aaad071228c57a2941c728b84c3f91ee12e476ba204ecb8b6"
+    }
+  ],
+  "drawingSpecs": []
+};

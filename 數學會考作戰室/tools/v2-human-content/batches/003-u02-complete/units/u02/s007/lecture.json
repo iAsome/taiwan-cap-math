@@ -1,0 +1,226 @@
+{
+  "lectureId": "u02-s007-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-factors-apps",
+  "skillId": "fraction-lcm-application",
+  "title": "最小公倍數應用：用共同週期處理再次同步與等待時間",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從『再次同時』『下一次共同』辨認LCM模型。",
+    "能把LCM分鐘數換成實際時刻。",
+    "能計算指定區間內的同步次數。",
+    "能處理三個以上週期與不含起點的條件。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-gcd-application",
+      "requiredLevel": "能區分最大分組的GCD模型與共同週期的LCM模型。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "週期",
+      "definition": "事件每隔固定時間重複一次。"
+    },
+    {
+      "term": "共同起點",
+      "definition": "多事件在同一時刻同時發生。"
+    },
+    {
+      "term": "同步",
+      "definition": "多個週期在同一時刻重合。"
+    },
+    {
+      "term": "等待時間",
+      "definition": "從指定到達時刻到下一同步時刻的差。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "T=lcm(t₁,t₂,…)",
+      "meaning": "共同週期T。"
+    }
+  ],
+  "conceptNarrative": [
+    "每個事件發生時刻都是其週期的倍數。",
+    "多事件再次同時發生，時間差必須是所有週期的共同倍數；第一次重合取LCM。",
+    "若題目給鐘點，先求經過分鐘，再加回起始時間。",
+    "區間計數時要處理起點是否算、終點是否包含。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "下一同步時刻",
+      "statement": "共同起點加上最小正共同週期。"
+    },
+    {
+      "name": "同步次數",
+      "statement": "區間中正LCM倍數的個數，依端點規則調整。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "共同週期=lcm(各週期)",
+      "conditions": [
+        "各週期使用同一時間單位"
+      ],
+      "meaning": "第一次再次同步的間隔。"
+    }
+  ],
+  "nonApplicableCases": [
+    "事件不是固定週期時不能直接用LCM。",
+    "起始時刻不同且沒有共同起點時需先建立同餘條件，本節不作深題。",
+    "只問某一事件次數時未必需LCM。",
+    "分鐘與小時要統一。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出各週期與共同起點。",
+      "check": "單位是否一致？"
+    },
+    {
+      "step": 2,
+      "instruction": "求LCM。",
+      "check": "是否為第一次再次同步？"
+    },
+    {
+      "step": 3,
+      "instruction": "換算成實際時刻。",
+      "check": "有無跨小時或隔天？"
+    },
+    {
+      "step": 4,
+      "instruction": "若問次數，列LCM倍數。",
+      "check": "起點、終點是否計入？"
+    },
+    {
+      "step": 5,
+      "instruction": "核對每個事件。",
+      "check": "同步時刻除以每個週期是否為整數？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "6與8分鐘週期同步。",
+      "solutionSteps": [
+        "lcm=24。",
+        "24同時為6×4與8×3。"
+      ],
+      "answer": "24分鐘後。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "8:30起每15、20分鐘。",
+      "solutionSteps": [
+        "lcm=60分鐘。",
+        "8:30加1小時。"
+      ],
+      "answer": "9:30。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "12、18分鐘，兩小時內同步幾次？",
+      "solutionSteps": [
+        "lcm=36。",
+        "36、72、108分鐘三次；144超過120。"
+      ],
+      "answer": "不含起點共3次。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "每20、30、45天維護。",
+      "solutionSteps": [
+        "取2²×3²×5。",
+        "得到180。"
+      ],
+      "answer": "180天後。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把週期相加。",
+      "why": "共同倍數不等於和。",
+      "correction": "求LCM。"
+    },
+    {
+      "mistake": "直接取較大週期。",
+      "why": "較大者未必被另一週期整除。",
+      "correction": "檢查整除。"
+    },
+    {
+      "mistake": "只求分鐘不換成鐘點。",
+      "why": "答案型態未完成。",
+      "correction": "加回共同起點。"
+    },
+    {
+      "mistake": "把起點也算作『再』一次。",
+      "why": "忽略不含現在。",
+      "correction": "只列正LCM倍數。"
+    },
+    {
+      "mistake": "漏看終點含不含。",
+      "why": "區間邊界處理錯。",
+      "correction": "依題文字列出最後一個時刻。"
+    },
+    {
+      "mistake": "三週期只算前兩個。",
+      "why": "第三事件可能不同步。",
+      "correction": "求三數LCM。"
+    }
+  ],
+  "selfCheck": [
+    "各事件真的固定週期嗎？",
+    "共同起點是何時？",
+    "LCM是否除得盡所有週期？",
+    "實際時刻是否換算正確？",
+    "起點與終點計數規則是否清楚？"
+  ],
+  "summary": [
+    "再次同步的時間差是各週期LCM。",
+    "鐘點題要把間隔加回起點。",
+    "次數題列LCM的正倍數。",
+    "多週期要全部納入。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-gcd-application，需能完成其基本判斷與計算。",
+    "next": [
+      "分數大小比較將轉入有理數運算。",
+      "綜合素養題會結合週期與到場等待。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s007-v001",
+      "u02-s007-v002",
+      "u02-s007-v003",
+      "u02-s007-v004",
+      "u02-s007-v005",
+      "u02-s007-v006",
+      "u02-s007-v007",
+      "u02-s007-v008",
+      "u02-s007-v009",
+      "u02-s007-v010",
+      "u02-s007-v011",
+      "u02-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s007-cr001",
+      "u02-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一將共同週期除以每個原週期驗證，並重建所有鐘面時刻與區間端點；180分鐘、48秒倍數與11:00時刻均無提前同步。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "6dd43803b6f5e8d290c3848b945f0d8e7541fcc861dfc54e0d6d6de280871a70",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

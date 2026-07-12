@@ -1,0 +1,192 @@
+{
+  "lectureId": "u20-s007-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-centers",
+  "skillId": "incenter",
+  "skillSlot": "s007",
+  "lockedSkillTitle": "內心",
+  "title": "內心：三條邊界的等距中心",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明內心是三個內角角平分線交點。",
+    "能辨認到三邊垂直距離相等。",
+    "能建立內切圓圓心與半徑。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "circumcenter",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「circumcenter」再進入本節。",
+  "glossary": [
+    {
+      "term": "內心",
+      "definition": "三角形三個內角角平分線的共同交點。"
+    },
+    {
+      "term": "內切圓",
+      "definition": "位於三角形內並與三邊都相切的圓。"
+    },
+    {
+      "term": "點到直線距離",
+      "definition": "從點向直線所作垂線段的長。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "d(I,AB)",
+      "meaning": "點I到直線AB的垂直距離。"
+    },
+    {
+      "symbol": "r",
+      "meaning": "常表示內切圓半徑。"
+    }
+  ],
+  "conceptNarrative": [
+    "角平分線上的點到角的兩邊距離相等。兩個內角的角平分線相交後，等距關係連起三條邊，因此形成內心。",
+    "內心到邊的距離必須是垂直距離。任意斜線段較長，不能拿來當半徑。",
+    "任何非退化三角形的內心都在內部，這一點與外心、垂心不同。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "內心定義",
+      "statement": "三個內角角平分線的交點。"
+    },
+    {
+      "name": "角平分線等距性質",
+      "statement": "角內角平分線上的點到角兩邊的垂直距離相等。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "d(I,AB)=d(I,BC)=d(I,CA)=r",
+      "conditions": [
+        "I為內心",
+        "距離取垂直距離"
+      ],
+      "meaning": "共同距離為內切圓半徑。"
+    }
+  ],
+  "nonApplicableCases": [
+    "到三頂點等距的是外心。",
+    "切點一般不是邊中點。",
+    "內心連頂點形成角平分線，不必是中線或高。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "作兩個內角角平分線。",
+      "check": "使用的是內角而非外角嗎？"
+    },
+    {
+      "step": 2,
+      "instruction": "取交點I。",
+      "check": "I是否在三角形內？"
+    },
+    {
+      "step": 3,
+      "instruction": "從I向任一邊作垂線。",
+      "check": "半徑是否垂直該邊？"
+    },
+    {
+      "step": 4,
+      "instruction": "以共同垂距為半徑畫內切圓。",
+      "check": "是否三邊都相切？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "I為內心，∠A=80°。",
+      "solutionSteps": [
+        "AI平分∠A。",
+        "80°÷2=40°。"
+      ],
+      "answer": "∠BAI=∠IAC=40°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "I到AB距離3公分。",
+      "solutionSteps": [
+        "內心到三邊垂距相等。"
+      ],
+      "answer": "到BC、CA也都是3公分。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把到邊距離量成斜線。",
+      "why": "點到直線距離定義為垂線段。",
+      "correction": "在垂足處標直角。"
+    },
+    {
+      "mistake": "認為鈍角三角形內心在外部。",
+      "why": "誤套外心位置。",
+      "correction": "內心永遠在內部。"
+    },
+    {
+      "mistake": "以到頂點距離作內切圓半徑。",
+      "why": "內切圓與邊相切。",
+      "correction": "用到邊垂距。"
+    }
+  ],
+  "selfCheck": [
+    "我分的是內角嗎？",
+    "距離是否垂直於邊？",
+    "等距對象是邊還是頂點？",
+    "圓是否在三處相切？"
+  ],
+  "summary": [
+    "內心是內角平分線交點。",
+    "內心到三邊垂距相等。",
+    "共同距離是內切圓半徑。",
+    "內心永遠在三角形內。"
+  ],
+  "connections": {
+    "previous": "先備：circumcenter",
+    "next": [
+      "下一技能研究由三條中線交成的重心。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u20-incenter-garden-01"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s007-v001",
+      "u20-s007-v002",
+      "u20-s007-v003",
+      "u20-s007-v004",
+      "u20-s007-v005",
+      "u20-s007-v006",
+      "u20-s007-v007",
+      "u20-s007-v008",
+      "u20-s007-v009",
+      "u20-s007-v010",
+      "u20-s007-v011",
+      "u20-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s007-cr001",
+      "u20-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "講義明確定義點到邊距離，修補學生常把任意連線當距離的問題。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "520469cd69ea802a758b3cfc068022898d936b8e6ca7e6095000d37104b3a3d2"
+}

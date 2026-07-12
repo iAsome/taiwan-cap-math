@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U09 human constructed response",
+  "type": "object",
+  "required": [
+    "questionId",
+    "prompt",
+    "requiredWork",
+    "standardSolution",
+    "reasoningSteps",
+    "rubric",
+    "partialCreditRules",
+    "followThroughPolicy",
+    "unitAndNotationRules",
+    "answerOnlyPolicy",
+    "independentReview",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "itemType": {
+      "const": "constructed-response"
+    },
+    "rubric": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

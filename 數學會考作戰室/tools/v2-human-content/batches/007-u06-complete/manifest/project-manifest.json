@@ -1,0 +1,172 @@
+{
+  "packageId": "math-v2-human-content-batch-007-u06-complete",
+  "batchId": "007-u06-complete",
+  "schemaVersion": "1.0.0",
+  "immutableSource": true,
+  "baseBranch": "chatgpt/math-v2-human-authoring-r1",
+  "expectedBaseHead": "__CENTRAL_COORDINATOR_WILL_SUPPLY_EXPECTED_HEAD__",
+  "repository": "iAsome/taiwan-cap-math",
+  "syllabusLockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "unitTitle": "比例式",
+  "skillSlots": [
+    "s001",
+    "s002",
+    "s003",
+    "s004",
+    "s005",
+    "s006",
+    "s007",
+    "s008",
+    "s009",
+    "s010",
+    "s011",
+    "s012"
+  ],
+  "lockedSkills": [
+    {
+      "slot": "s001",
+      "skillId": "ratio-simplify",
+      "title": "比的化簡",
+      "topicId": "u06-ratio-basics",
+      "order": 1,
+      "prerequisiteSkillIds": []
+    },
+    {
+      "slot": "s002",
+      "skillId": "proportion-solve",
+      "title": "比例式求解",
+      "topicId": "u06-ratio-basics",
+      "order": 2,
+      "prerequisiteSkillIds": [
+        "ratio-simplify"
+      ]
+    },
+    {
+      "slot": "s003",
+      "skillId": "ratio-part-total",
+      "title": "部分量與總量",
+      "topicId": "u06-ratio-basics",
+      "order": 3,
+      "prerequisiteSkillIds": [
+        "proportion-solve"
+      ]
+    },
+    {
+      "slot": "s004",
+      "skillId": "proportion-property",
+      "title": "比例式性質",
+      "topicId": "u06-ratio-basics",
+      "order": 4,
+      "prerequisiteSkillIds": [
+        "ratio-part-total"
+      ]
+    },
+    {
+      "slot": "s005",
+      "skillId": "direct-variation",
+      "title": "正比",
+      "topicId": "u06-variation",
+      "order": 5,
+      "prerequisiteSkillIds": [
+        "proportion-property"
+      ]
+    },
+    {
+      "slot": "s006",
+      "skillId": "inverse-variation",
+      "title": "反比",
+      "topicId": "u06-variation",
+      "order": 6,
+      "prerequisiteSkillIds": [
+        "direct-variation"
+      ]
+    },
+    {
+      "slot": "s007",
+      "skillId": "inverse-variation-graph",
+      "title": "反比圖形概念",
+      "topicId": "u06-variation",
+      "order": 7,
+      "prerequisiteSkillIds": [
+        "inverse-variation"
+      ]
+    },
+    {
+      "slot": "s008",
+      "skillId": "scale-drawing",
+      "title": "比例尺",
+      "topicId": "u06-applications",
+      "order": 8,
+      "prerequisiteSkillIds": [
+        "inverse-variation-graph"
+      ]
+    },
+    {
+      "slot": "s009",
+      "skillId": "ratio-word-problem",
+      "title": "比例應用題",
+      "topicId": "u06-applications",
+      "order": 9,
+      "prerequisiteSkillIds": [
+        "scale-drawing"
+      ]
+    },
+    {
+      "slot": "s010",
+      "skillId": "continued-ratio-preview",
+      "title": "連比預備",
+      "topicId": "u06-applications",
+      "order": 10,
+      "prerequisiteSkillIds": [
+        "ratio-word-problem"
+      ]
+    },
+    {
+      "slot": "s011",
+      "skillId": "ratio-composite-problem",
+      "title": "比例複合應用",
+      "topicId": "u06-applications",
+      "order": 11,
+      "prerequisiteSkillIds": [
+        "continued-ratio-preview"
+      ]
+    },
+    {
+      "slot": "s012",
+      "skillId": "ratio-literacy",
+      "title": "比例素養題",
+      "topicId": "u06-literacy",
+      "order": 12,
+      "prerequisiteSkillIds": [
+        "ratio-composite-problem"
+      ]
+    }
+  ],
+  "counts": {
+    "skillCount": 12,
+    "lectureCount": 12,
+    "mcQuestionCount": 144,
+    "constructedResponseCount": 24,
+    "semanticReviewCount": 144,
+    "figureCount": 3,
+    "difficultyCounts": {
+      "basic": 36,
+      "standard": 36,
+      "advanced": 36,
+      "literacy": 36
+    },
+    "answerIndexCounts": [
+      36,
+      36,
+      36,
+      36
+    ]
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentImported": false,
+  "productionActivationAllowed": false,
+  "allowedDestination": "數學會考作戰室/tools/v2-human-content/batches/007-u06-complete/",
+  "centralCoordinatorApprovalRequired": true
+}

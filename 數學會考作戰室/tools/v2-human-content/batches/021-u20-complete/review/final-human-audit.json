@@ -1,0 +1,68 @@
+{
+  "auditVersion": "u20-final-human-audit-r1",
+  "unitId": "u20",
+  "status": "pass-pending-independent-clean-extraction-verification",
+  "scope": {
+    "lecturesInspected": 15,
+    "mcQuestionsInspected": 180,
+    "constructedResponsesInspected": 30,
+    "semanticReviewsInspected": 180,
+    "figuresRenderedAndInspected": 16
+  },
+  "checks": [
+    "Every MC answer was independently derived and all four choices were assigned explicit truth values.",
+    "Negative signs, ratios, angle statements, perpendicularity, midpoint conditions, and center definitions were reviewed.",
+    "Constructed-response rubrics were checked against the specific proof or calculation required.",
+    "No item requires coordinate geometry, formal symbolic logic, Euler-line theory, or other future/high-school content.",
+    "All figures were rendered on white background at 480x320 and inspected for clipping, readability, geometry markers, and answer leakage."
+  ],
+  "actualIssuesFoundAndRepaired": [
+    {
+      "issue": "The first-draft introductory definition prompts for external center, internal center, centroid, and orthocenter used overly parallel sentence frames.",
+      "repair": "Rewrote the four prompts as distinct mathematical tasks: locating an external-circle center, selecting an incenter construction, locating a centroid on a board, and identifying the complete orthocenter definition.",
+      "affectedIds": [
+        "u20-s006-v001",
+        "u20-s007-v001",
+        "u20-s008-v001",
+        "u20-s009-v001"
+      ]
+    },
+    {
+      "issue": "Four lecture display titles contained the internal list separator `、`, which conflicts with the project title convention.",
+      "repair": "Rephrased the titles with `與`, `及`, or a non-list construction without changing any locked skill title or skill ID.",
+      "affectedIds": [
+        "u20-s010-lecture-r1",
+        "u20-s011-lecture-r1",
+        "u20-s014-lecture-r1",
+        "u20-s015-lecture-r1"
+      ]
+    },
+    {
+      "issue": "Two SVGs used Chinese inline labels that rendered as missing-glyph boxes in the available SVG renderer.",
+      "repair": "Replaced only those visual labels with `t` and `I/II/III`; the Traditional Chinese title, description, and alt text remain complete.",
+      "affectedIds": [
+        "fig-u20-altitude-marking-01",
+        "fig-u20-centers-compare-01"
+      ]
+    },
+    {
+      "issue": "Initial semantic-review hash values were computed with an inconsistent self-hash exclusion rule.",
+      "repair": "Recomputed every semantic review SHA-256 canonically while excluding only `reviewSha256`, then regenerated the content hash manifest.",
+      "affectedIds": [
+        "all 180 semantic-review records"
+      ]
+    },
+    {
+      "issue": "The first verifier draft imposed arbitrary minimum array lengths and expected a nonexistent constructed-response review key, causing valid dense solutions and concise option analyses to fail.",
+      "repair": "Aligned validation with the actual schema: require completeness and nonempty specific evidence rather than artificial step counts, and validate `derivedResult` in constructed-response independent reviews.",
+      "affectedIds": [
+        "importer/verify-bundle.mjs"
+      ]
+    }
+  ],
+  "unresolvedIssues": [],
+  "legacyContentUsed": false,
+  "crossUnitDuplicateCheckCompleted": false,
+  "crossUnitDuplicateCheckReason": "Other parallel packages were unavailable; central coordinator reconciliation remains mandatory.",
+  "reviewedAt": "2026-07-12"
+}

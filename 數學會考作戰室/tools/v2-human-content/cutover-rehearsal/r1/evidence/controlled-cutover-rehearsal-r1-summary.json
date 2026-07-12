@@ -1,0 +1,30 @@
+{
+  "status": "PASS_CONTROLLED_HUMAN_RUNTIME_CUTOVER_REHEARSAL_R1",
+  "contentVersion": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+  "rehearsalPhases": [
+    "GENERATED_V2_BASELINE",
+    "V1_BASELINE",
+    "HUMAN_DEFAULT",
+    "GENERATED_V2_QUERY_ROLLBACK",
+    "V1_QUERY_ROLLBACK",
+    "RESTORED_GENERATED_V2_DEFAULT",
+    "RESTORED_V1_ROLLBACK"
+  ],
+  "browserStatus": "PASS_CONTROLLED_CUTOVER_REHEARSAL_BROWSER_R1",
+  "browserTestsPassed": 12,
+  "generatedV2BaselinePassed": true,
+  "humanDefaultPassed": true,
+  "generatedV2QueryRollbackPassed": true,
+  "v1QueryRollbackPassed": true,
+  "originalLoaderRestored": true,
+  "restoredGeneratedV2Passed": true,
+  "restoredV1RollbackPassed": true,
+  "temporaryWorktreeRemoved": true,
+  "protectedMainPathsUnchanged": true,
+  "productionActivationAllowed": false,
+  "studentRouteChangeAllowed": false,
+  "oldDatabaseDeletionAllowed": false,
+  "mergeAllowed": false,
+  "nextAuthorizedStage": "PRODUCTION_CUTOVER_PACKAGE_R1",
+  "issues": []
+}

@@ -1,0 +1,275 @@
+{
+  "lectureId": "u01-s015-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-literacy",
+  "skillId": "integer-literacy-context",
+  "title": "整數與科學記號的綜合情境應用：從資料到模型",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從文字、表格與紀錄辨認基準和單位。",
+    "能把多步情境轉成完整整數算式。",
+    "能在距離、變化量與實際量之間作正確選擇。",
+    "能判讀與運算科學記號資料。",
+    "能檢查答案的方向、數量級與情境合理性。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-number-line-position",
+      "requiredLevel": "能由數線讀取位置和移動，分辨坐標、位移與路程。"
+    },
+    {
+      "skillId": "integer-absolute-value-distance",
+      "requiredLevel": "能用絕對值求兩筆資料間的無方向差距。"
+    },
+    {
+      "skillId": "integer-mixed-operations",
+      "requiredLevel": "能依運算順序合併多次整數變化。"
+    },
+    {
+      "skillId": "integer-scientific-notation",
+      "requiredLevel": "能轉換、比較和運算標準科學記號。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "數學模型",
+      "definition": "用數、符號、算式或圖表表示真實情境中的關係。"
+    },
+    {
+      "term": "已知量",
+      "definition": "題目直接提供且可使用的資料。"
+    },
+    {
+      "term": "未知量",
+      "definition": "題目要求求出的量。"
+    },
+    {
+      "term": "限制條件",
+      "definition": "單位、基準、方向、範圍等不可忽略的規定。"
+    },
+    {
+      "term": "合理性檢查",
+      "definition": "由方向、大小與單位判斷答案是否符合情境。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "Δ",
+      "meaning": "有時表示變化量；若題目未定義，不可自行使用。"
+    },
+    {
+      "symbol": "×10ⁿ",
+      "meaning": "科學記號中的數量級。"
+    },
+    {
+      "symbol": "|a-b|",
+      "meaning": "兩資料相差多少，不含方向。"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題的情境資料必須參與解題。第一步不是立即運算，而是整理基準、單位、正方向與要問的量。",
+    "同一組數據可以問不同問題：後值－前值得到帶號變化，|後值－前值| 得到相差多少，基準＋偏差得到實際量。",
+    "多步題應先畫資料表或依時間順序列出每一筆變化，再建立一個完整算式。",
+    "科學記號情境要同時檢查係數、指數與單位；答案數量級若不合理，通常表示小數點或指數方向錯誤。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "情境建模流程",
+      "statement": "理解問題、整理資料、選擇關係、列式計算、解釋檢查。"
+    },
+    {
+      "name": "資料一致性",
+      "statement": "所有參與運算的量必須使用相同基準與相容單位。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "最後量＝起始量＋所有帶號變化",
+      "conditions": [
+        "各變化量依同一正方向記錄"
+      ],
+      "meaning": "處理連續變化。"
+    },
+    {
+      "formula": "實際量＝基準量＋偏差",
+      "conditions": [
+        "單位一致"
+      ],
+      "meaning": "由相對紀錄還原實際值。"
+    },
+    {
+      "formula": "相差＝|資料甲－資料乙|",
+      "conditions": [
+        "問的是無方向差距"
+      ],
+      "meaning": "比較兩筆資料。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能刪除情境後只保留一個與資料無關的算式；那不是真正的素養應用。",
+    "表格中若有不同單位，不能直接相加。",
+    "「總變化」與「最後值」不可混淆。",
+    "科學記號若為近似資料，結果應保留合理精度，不得憑空增加有效位數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "用自己的話重述問題。",
+      "check": "題目要最後量、變化量、距離還是比較？"
+    },
+    {
+      "step": 2,
+      "instruction": "整理基準、方向、單位與時間順序。",
+      "check": "資料能直接放在同一算式嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "選擇整數、絕對值或科學記號關係。",
+      "check": "為何使用這個運算？"
+    },
+    {
+      "step": 4,
+      "instruction": "列出完整算式並逐步計算。",
+      "check": "是否漏掉起始量或固定項？"
+    },
+    {
+      "step": 5,
+      "instruction": "把答案附單位翻回情境。",
+      "check": "方向、大小、數量級合理嗎？"
+    },
+    {
+      "step": 6,
+      "instruction": "檢查另一種讀法。",
+      "check": "題目文字是否可能造成第二答案？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "冷藏庫起始 -4°C，先降 3°C，再升 5°C，最後溫度？",
+      "solutionSteps": [
+        "以升溫為正、降溫為負。",
+        "列式 -4+(-3)+5。",
+        "結果 -2°C。"
+      ],
+      "answer": "-2°C。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "河面基準高程 120 公尺，測站偏差 -7 公尺，實際高程？",
+      "solutionSteps": [
+        "偏差 -7 表示低於基準。",
+        "120+(-7)=113。",
+        "單位仍為公尺。"
+      ],
+      "answer": "113 公尺。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩探測器距離分別為 3.2×10⁶ 公尺與 7.5×10⁵ 公尺，哪個較遠？",
+      "solutionSteps": [
+        "指數 6 大於 5。",
+        "第一個數量級較大。",
+        "因此 3.2×10⁶ 公尺較遠。"
+      ],
+      "answer": "第一個探測器。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "帳戶 1,200 元，支出 450、收入 300、再支出 200，餘額？",
+      "solutionSteps": [
+        "支出記負、收入記正。",
+        "1200-450+300-200。",
+        "依序得 850 元。"
+      ],
+      "answer": "850 元。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到所有數字就全部相加。",
+      "why": "沒有先判斷資料角色。",
+      "correction": "標出起始量、偏差、距離與限制。"
+    },
+    {
+      "mistake": "把總變化當最後值。",
+      "why": "漏掉起始量。",
+      "correction": "最後值＝起始值＋總變化。"
+    },
+    {
+      "mistake": "問相差多少卻保留負號。",
+      "why": "把變化量當距離。",
+      "correction": "使用絕對差。"
+    },
+    {
+      "mistake": "不同單位直接比較。",
+      "why": "忽略換算。",
+      "correction": "先統一單位。"
+    },
+    {
+      "mistake": "科學記號只比係數。",
+      "why": "忽略 10 的指數。",
+      "correction": "正數先比指數。"
+    },
+    {
+      "mistake": "答案沒有單位與情境解釋。",
+      "why": "只停在計算結果。",
+      "correction": "附單位並說明正負方向或實際意義。"
+    }
+  ],
+  "selfCheck": [
+    "我知道題目真正問什麼嗎？",
+    "基準、方向與單位都整理了嗎？",
+    "算式包含全部必要資料嗎？",
+    "應用變化量還是距離？",
+    "科學記號數量級合理嗎？",
+    "答案已翻回情境嗎？"
+  ],
+  "summary": [
+    "素養解題先整理資料再列式。",
+    "不同問題對應不同關係：最後量、變化量、距離、實際量。",
+    "單位與基準必須一致。",
+    "答案要通過方向、大小與數量級檢查。"
+  ],
+  "connections": {
+    "previous": "本技能整合 U01 的正負數、數線、絕對值、四則與科學記號。",
+    "next": [
+      "分數、比例、方程式與統計單元會延伸相同建模流程。",
+      "正式模考會要求在較長文本中篩選必要資料。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s015-v001",
+      "u01-s015-v002",
+      "u01-s015-v003",
+      "u01-s015-v004",
+      "u01-s015-v005",
+      "u01-s015-v006",
+      "u01-s015-v007",
+      "u01-s015-v008",
+      "u01-s015-v009",
+      "u01-s015-v010",
+      "u01-s015-v011",
+      "u01-s015-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s015-cr001",
+      "u01-s015-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐題辨認起始量、基準、帶號變化、無方向差距和科學記號位值；所有綜合例題只使用 U01 已教技能。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "04e152ee03783576f03c8380487bae78c284e227863a2ad2d019896ff5fd0afe",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

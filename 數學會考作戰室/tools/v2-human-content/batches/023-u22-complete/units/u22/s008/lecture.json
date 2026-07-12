@@ -1,0 +1,228 @@
+{
+  "lectureId": "u22-s008-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-quartiles",
+  "skillId": "range-iqr-compare",
+  "lockedSkillOrder": 8,
+  "title": "全距與 IQR 比較：比較全距與 IQR 對極端值的敏感度。",
+  "originalLockedTitle": "全距與 IQR 比較",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能計算全距與IQR。",
+    "能說明兩者描述的資料部分不同。",
+    "能判斷極端值對兩者的影響。",
+    "能在情境中選擇適合指標並揭露限制。"
+  ],
+  "prerequisiteSkillIds": [
+    "ogive-read"
+  ],
+  "prerequisiteBridge": "承接盒狀圖與IQR。",
+  "glossary": [
+    {
+      "term": "全距",
+      "definition": "最大值減最小值，描述整體端點跨度。"
+    },
+    {
+      "term": "IQR",
+      "definition": "Q3減Q1，描述中間50%跨度。"
+    },
+    {
+      "term": "極端值敏感度",
+      "definition": "統計量因端點變動而改變的程度。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "全距=max-min",
+      "meaning": "使用最外端兩值。"
+    },
+    {
+      "symbol": "IQR=Q3-Q1",
+      "meaning": "使用箱體兩端。"
+    },
+    {
+      "symbol": "全距=左鬚+IQR+右鬚",
+      "meaning": "盒狀圖段長分解。"
+    }
+  ],
+  "conceptNarrative": [
+    "全距直接使用兩個端點，所以一個非常大或非常小的值可大幅改變它。",
+    "IQR忽略外側各約25%的位置，通常對單一極端端點較穩健。",
+    "兩組資料可能全距較大但IQR較小，表示端點遠、典型中段卻集中。",
+    "「哪組較分散」若未指定指標可能沒有單一答案，應說清楚比較整體還是中段。",
+    "所有資料乘正數k時，兩種距離都乘k；加常數則兩種距離不變。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "整體跨度",
+      "statement": "由全距衡量。"
+    },
+    {
+      "name": "典型中段跨度",
+      "statement": "由IQR衡量。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "R=max-min",
+      "conditions": [
+        "全距。"
+      ],
+      "meaning": "全距。"
+    },
+    {
+      "formula": "IQR=Q3-Q1",
+      "conditions": [
+        "四分位距。"
+      ],
+      "meaning": "四分位距。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能用IQR判斷最大值。",
+    "不能用全距代表多數資料的穩定。",
+    "不能因IQR小就忽略長鬚或離群。",
+    "不同單位資料不可直接比較距離數字。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "明確需求",
+      "check": "是關心全部端點還是多數資料？"
+    },
+    {
+      "step": 2,
+      "instruction": "計算兩量",
+      "check": "分別求R與IQR。"
+    },
+    {
+      "step": 3,
+      "instruction": "交叉比較",
+      "check": "允許方向不同。"
+    },
+    {
+      "step": 4,
+      "instruction": "解讀原因範圍",
+      "check": "只說端點或中段，不臆測原因。"
+    },
+    {
+      "step": 5,
+      "instruction": "完整報告",
+      "check": "必要時同時呈現兩量。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "A:R20,IQR8；B:R15,IQR11",
+      "solutionSteps": [
+        "A整體跨度大，B中段跨度大。"
+      ],
+      "answer": "A整體跨度大，B中段跨度大。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "A五數0、10、12、14、40",
+      "solutionSteps": [
+        "R40、IQR4，端點遠但中段集中。"
+      ],
+      "answer": "R40、IQR4，端點遠但中段集中。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩量乘3",
+      "solutionSteps": [
+        "R與IQR都乘3。"
+      ],
+      "answer": "R與IQR都乘3。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "R=IQR",
+      "solutionSteps": [
+        "左右鬚總長0，所以Q1=min、Q3=max。"
+      ],
+      "answer": "左右鬚總長0，所以Q1=min、Q3=max。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只選較大的那組說「較分散」",
+      "why": "先指定全距或IQR。",
+      "correction": "先指定全距或IQR。"
+    },
+    {
+      "mistake": "新極端值使IQR一定變",
+      "why": "若Q1、Q3不變則IQR不變。",
+      "correction": "若Q1、Q3不變則IQR不變。"
+    },
+    {
+      "mistake": "加常數後距離也加常數",
+      "why": "差值不變。",
+      "correction": "差值不變。"
+    },
+    {
+      "mistake": "相同IQR就說分布相同",
+      "why": "端點與內部細節仍可不同。",
+      "correction": "端點與內部細節仍可不同。"
+    }
+  ],
+  "selfCheck": [
+    "是否同單位？",
+    "全距與IQR是否分開計算？",
+    "結論是否說明資料部分？",
+    "是否揭露另一指標可能反向？"
+  ],
+  "summary": [
+    "全距看端點，IQR看中段。",
+    "極端值通常更直接影響全距。",
+    "兩指標可以給不同排序。",
+    "情境報告常需兩者並列。"
+  ],
+  "connections": {
+    "previous": "承接盒狀圖與IQR。",
+    "next": [
+      "下一技能用中位數、IQR與全距完整比較兩盒狀圖。"
+    ]
+  },
+  "figureReferences": [],
+  "figureAccessibility": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s008-v001",
+      "u22-s008-v002",
+      "u22-s008-v003",
+      "u22-s008-v004",
+      "u22-s008-v005",
+      "u22-s008-v006",
+      "u22-s008-v007",
+      "u22-s008-v008",
+      "u22-s008-v009",
+      "u22-s008-v010",
+      "u22-s008-v011",
+      "u22-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s008-cr001",
+      "u22-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "逐組重算交叉比較案例，確認A的全距40與IQR4、B的全距14與IQR8方向相反；結論均明示比較範圍。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "比較全距與 IQR 對極端值的敏感度。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "209463060c0674ea236342430945c94afc153a43b871a58b3d05f2757e6a00aa"
+}

@@ -1,0 +1,1314 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u23-s010-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-measure",
+  "skillId": "prism-volume",
+  "title": "柱體體積：底面積乘垂直高",
+  "lockedSkillTitle": "柱體體積",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能說明柱體體積公式V=Bh的意義。",
+    "能計算長方體、角柱與圓柱體積。",
+    "能由體積反求底面積或高。",
+    "能處理容量、注水與等體積情境。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "prism-surface-area",
+      "requiredLevel": "能由外露面計算柱體表面積，並分清底面積、底面周長與高。",
+      "bridge": "已會辨認柱體的兩個全等平行底面，並能求各種平面圖形面積。體積把相同截面沿垂直高度累積。"
+    }
+  ],
+  "glossary": [
+    [
+      "體積",
+      "立體所占空間的大小。"
+    ],
+    [
+      "底面積B",
+      "任一個底面的面積。"
+    ],
+    [
+      "高h",
+      "兩底面所在平面間的垂直距離。"
+    ],
+    [
+      "容量",
+      "容器可容納的體積，常以公升或毫升表示。"
+    ]
+  ],
+  "notation": [
+    [
+      "V",
+      "體積。"
+    ],
+    [
+      "B",
+      "單一底面面積。"
+    ],
+    [
+      "h",
+      "柱體的垂直高。"
+    ]
+  ],
+  "conceptNarrative": [
+    "把柱體想成許多極薄且全等的底面薄片沿高度堆疊；底面越大或堆得越高，占的空間越大。",
+    "因此任何直柱體體積都是底面積乘高，即V=Bh。長方體是B=長×寬；圓柱是B=πr²。",
+    "斜柱體只要底面不變且高度取兩底面間垂直距離，體積仍為Bh；斜稜長不能直接代替高。",
+    "體積使用立方單位；容量換算時1立方公分=1毫升、1000立方公分=1公升。"
+  ],
+  "formalDefinitions": [
+    [
+      "柱體體積",
+      "V=Bh，其中B為底面積，h為兩底面間垂直距離。"
+    ],
+    [
+      "等底等高柱體",
+      "底面積相等且垂直高相等的柱體體積相等。"
+    ]
+  ],
+  "formulas": [
+    [
+      "V=Bh",
+      [
+        "柱體",
+        "h為垂直高"
+      ],
+      "相同截面沿高度累積。"
+    ],
+    [
+      "長方體V=lwh",
+      [
+        "長寬高互相垂直"
+      ],
+      "以長×寬作底面積。"
+    ],
+    [
+      "圓柱V=πr²h",
+      [
+        "底面半徑r",
+        "垂直高h"
+      ],
+      "底圓面積乘高。"
+    ]
+  ],
+  "nonApplicableCases": [
+    "不能用底面周長乘高求體積，那是側面積。",
+    "斜柱的斜稜長通常不是高。",
+    "表面積與體積單位不同，不能直接相加。",
+    "容器有厚度時，容量必須用內部尺寸。"
+  ],
+  "method": [
+    [
+      "辨認底面並求B",
+      "底面是哪個平面圖形？"
+    ],
+    [
+      "找垂直高h",
+      "題目給的是高還是斜邊？"
+    ],
+    [
+      "計算V=Bh",
+      "面積乘長度得到立方單位。"
+    ],
+    [
+      "處理單位換算",
+      "是否要換成毫升或公升？"
+    ],
+    [
+      "以反向除法驗算",
+      "V÷h是否回到底面積？"
+    ]
+  ],
+  "workedExamples": [
+    [
+      "L1",
+      "底面積18平方公分、高7公分的直角柱體積？",
+      [
+        "18×7=126。"
+      ],
+      "126立方公分。"
+    ],
+    [
+      "L2",
+      "底面為底6、高4公分的三角形，柱高10公分，體積？",
+      [
+        "底面積6×4÷2=12。",
+        "12×10=120。"
+      ],
+      "120立方公分。"
+    ],
+    [
+      "L3",
+      "半徑3、高5公分的圓柱體積？",
+      [
+        "π×3²×5=45π。"
+      ],
+      "45π立方公分。"
+    ],
+    [
+      "L4",
+      "體積240立方公分、底面積30平方公分的柱體，高多少？",
+      [
+        "240÷30=8。"
+      ],
+      "8公分。"
+    ]
+  ],
+  "commonMistakes": [
+    [
+      "把底面周長乘高",
+      "混淆側面積與體積。",
+      "體積先求底面積B，再乘h。"
+    ],
+    [
+      "把兩個底面積都乘高",
+      "以為兩底面都要計入。",
+      "體積只用單一截面面積。"
+    ],
+    [
+      "圓柱用2πr乘高",
+      "使用圓周長。",
+      "底面積應為πr²。"
+    ],
+    [
+      "斜柱用斜稜作高",
+      "未取垂直距離。",
+      "以垂線段表示高。"
+    ],
+    [
+      "答案寫平方單位",
+      "忽略面積再乘長度。",
+      "體積用立方單位。"
+    ],
+    [
+      "容量用外部尺寸",
+      "忽略容器厚度。",
+      "有厚度時使用內部長寬高。"
+    ]
+  ],
+  "selfCheck": [
+    "我是否求的是單一底面面積？",
+    "高度是否垂直於底面？",
+    "面積乘長度後是否寫立方單位？",
+    "圓柱是否使用半徑平方？",
+    "容量是否使用內部尺寸並正確換算？"
+  ],
+  "summary": [
+    "柱體體積V=Bh。",
+    "B是單一底面積，h是垂直高。",
+    "角柱與圓柱都適用。",
+    "反求未知量可用V÷B或V÷h。",
+    "體積用立方單位。"
+  ],
+  "connections": {
+    "previous": "柱體表面積著重外露面；本節改看內部占有空間。",
+    "next": [
+      "下一節比較同底等高柱體與錐體的體積。",
+      "後續組合體會以加減各基本柱體體積處理。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s010-v001",
+      "u23-s010-v002",
+      "u23-s010-v003",
+      "u23-s010-v004",
+      "u23-s010-v005",
+      "u23-s010-v006",
+      "u23-s010-v007",
+      "u23-s010-v008",
+      "u23-s010-v009",
+      "u23-s010-v010",
+      "u23-s010-v011",
+      "u23-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s010-cr001",
+      "u23-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐例獨立重算126、120、45π與8，確認三角形底面只算一次、圓柱使用πr²、反求高度的量綱為公分；另檢查斜柱高與容量內部尺寸的限制均已明示。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "e6a3428513573d0d7bca5f43264e2a5ca7801a42cda1b0b9c1546e39d9fcdd30"
+};
+
+export const QUESTIONS = [
+  {
+    "prompt": "底面積為 16 平方公分、高為 9 公分的直角柱，體積是多少？",
+    "text": "底面積為 16 平方公分、高為 9 公分的直角柱，體積是多少？",
+    "choices": [
+      "25 立方公分",
+      "144 立方公分",
+      "72 立方公分",
+      "288 立方公分"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：16×9=144。所得結果是「144 立方公分」。",
+    "explanation": "柱體體積=底面積×高=16×9=144立方公分。",
+    "steps": [
+      "16×9=144"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "25 立方公分",
+        "truth": false,
+        "reason": "把兩數相加。"
+      },
+      {
+        "choice": "144 立方公分",
+        "truth": true,
+        "reason": "依獨立計算「16×9=144」，此選項符合所求「體積」。"
+      },
+      {
+        "choice": "72 立方公分",
+        "truth": false,
+        "reason": "只乘一半。"
+      },
+      {
+        "choice": "288 立方公分",
+        "truth": false,
+        "reason": "多乘2。"
+      }
+    ],
+    "misconceptionTarget": "把兩個底面都計入體積公式。",
+    "authoringIntent": "直接使用V=Bh。",
+    "difficulty": "basic",
+    "givenConditions": [
+      "底面積16平方公分",
+      "高9公分"
+    ],
+    "target": "體積",
+    "difficultyReason": "基礎：單一步驟代入柱體體積公式。",
+    "prerequisiteCheck": "已會辨認底面積與高。 本題只再使用先備「prism-surface-area」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "平方公分乘公分得立方公分。",
+    "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "題目明確給垂直高。 題幹已完整限制「體積」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v001",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "basic"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "1985be836b3ffe0a3989171ea62307551aebe6b9d4778ad1b14936a8852fff71"
+  },
+  {
+    "prompt": "長方體長 8 公分、寬 5 公分、高 3 公分，體積為何？",
+    "text": "長方體長 8 公分、寬 5 公分、高 3 公分，體積為何？",
+    "choices": [
+      "120 立方公分",
+      "80 立方公分",
+      "40 立方公分",
+      "160 立方公分"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：8×5=40；40×3=120。所得結果是「120 立方公分」。",
+    "explanation": "底面積=8×5=40平方公分，再乘高3，體積=120立方公分。",
+    "steps": [
+      "8×5=40",
+      "40×3=120"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "120 立方公分",
+        "truth": true,
+        "reason": "依獨立計算「40×3=120」，此選項符合所求「體積」。"
+      },
+      {
+        "choice": "80 立方公分",
+        "truth": false,
+        "reason": "漏乘部分長度。"
+      },
+      {
+        "choice": "40 立方公分",
+        "truth": false,
+        "reason": "只算底面積。"
+      },
+      {
+        "choice": "160 立方公分",
+        "truth": false,
+        "reason": "把表面積當體積。"
+      }
+    ],
+    "misconceptionTarget": "只算底面面積或把表面積公式混入。",
+    "authoringIntent": "計算長方體體積。",
+    "difficulty": "basic",
+    "givenConditions": [
+      "長8",
+      "寬5",
+      "高3",
+      "單位公分"
+    ],
+    "target": "體積",
+    "difficultyReason": "基礎：使用長×寬×高。 本題以「計算長方體體積。」作為該難度的具體判準。",
+    "prerequisiteCheck": "已會長方形面積。 本題只再使用先備「prism-surface-area」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "三個公分相乘得立方公分。",
+    "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "三尺寸互相垂直。 題幹已完整限制「體積」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v002",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "basic"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "e38c5fb23b720250573acfd7df6af552f02d4db8dcaaa1c16220e0b88ab963cb"
+  },
+  {
+    "prompt": "半徑 4 公分、高 6 公分的圓柱體積是多少？",
+    "text": "半徑 4 公分、高 6 公分的圓柱體積是多少？",
+    "choices": [
+      "24π 立方公分",
+      "48π 立方公分",
+      "96π 立方公分",
+      "192π 立方公分"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：4²=16；16×6π=96π。所得結果是「96π 立方公分」。",
+    "explanation": "圓柱體積=πr²h=π×4²×6=96π立方公分。",
+    "steps": [
+      "4²=16",
+      "16×6π=96π"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "24π 立方公分",
+        "truth": false,
+        "reason": "忘記平方半徑。"
+      },
+      {
+        "choice": "48π 立方公分",
+        "truth": false,
+        "reason": "少乘2。"
+      },
+      {
+        "choice": "96π 立方公分",
+        "truth": true,
+        "reason": "依獨立計算「16×6π=96π」，此選項符合所求「體積」。"
+      },
+      {
+        "choice": "192π 立方公分",
+        "truth": false,
+        "reason": "多乘2。"
+      }
+    ],
+    "misconceptionTarget": "使用圓周長2πr取代底圓面積πr²。",
+    "authoringIntent": "計算圓柱體積。",
+    "difficulty": "basic",
+    "givenConditions": [
+      "半徑4公分",
+      "高6公分"
+    ],
+    "target": "體積",
+    "difficultyReason": "基礎：直接代入圓柱體積公式。",
+    "prerequisiteCheck": "已會圓面積。 本題只再使用先備「prism-surface-area」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "答案為立方公分。 所求「體積」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "保留π。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "半徑而非直徑已直接給出。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v003",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "basic"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "0f40fd810ba082178e304f2a3d3a083d5dbc0d8622d6bbc8f6eb5d8828cf3e19"
+  },
+  {
+    "prompt": "一個三角柱的底面三角形底 10 公分、高 6 公分，柱高 8 公分。體積是多少？",
+    "text": "一個三角柱的底面三角形底 10 公分、高 6 公分，柱高 8 公分。體積是多少？",
+    "choices": [
+      "960 立方公分",
+      "360 立方公分",
+      "480 立方公分",
+      "240 立方公分"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：求底面積30；乘柱高8。所得結果是「240 立方公分」。",
+    "explanation": "三角形底面積=10×6÷2=30平方公分；柱體積=30×8=240立方公分。",
+    "steps": [
+      "求底面積30",
+      "乘柱高8"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "960 立方公分",
+        "truth": false,
+        "reason": "再多乘2。"
+      },
+      {
+        "choice": "360 立方公分",
+        "truth": false,
+        "reason": "未除以2。"
+      },
+      {
+        "choice": "480 立方公分",
+        "truth": false,
+        "reason": "把三角形面積多算。"
+      },
+      {
+        "choice": "240 立方公分",
+        "truth": true,
+        "reason": "依獨立計算「乘柱高8」，此選項符合所求「體積」。"
+      }
+    ],
+    "misconceptionTarget": "把三角形底面積誤算成底×高。",
+    "authoringIntent": "計算三角柱體積。",
+    "difficulty": "standard",
+    "givenConditions": [
+      "底面三角形底10公分",
+      "三角形高6公分",
+      "柱高8公分"
+    ],
+    "target": "體積",
+    "difficultyReason": "標準：要區分底面內的高與柱體的高。",
+    "prerequisiteCheck": "已會三角形面積。 本題只再使用先備「prism-surface-area」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "底面積平方公分乘柱高得立方公分。",
+    "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "兩個『高』角色已明確標示。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v004",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "standard"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "877a2432071be361dba24709be2f911b728f8f297ffe3fc7686c593faa8107cb"
+  },
+  {
+    "prompt": "一個柱體體積為 360 立方公分，高 12 公分，底面積是多少？",
+    "text": "一個柱體體積為 360 立方公分，高 12 公分，底面積是多少？",
+    "choices": [
+      "24 平方公分",
+      "36 平方公分",
+      "30 平方公分",
+      "48 平方公分"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：360÷12=30。所得結果是「30 平方公分」。",
+    "explanation": "由V=Bh得B=V÷h=360÷12=30平方公分。",
+    "steps": [
+      "360÷12=30"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "24 平方公分",
+        "truth": false,
+        "reason": "乘除錯誤。"
+      },
+      {
+        "choice": "36 平方公分",
+        "truth": false,
+        "reason": "把高加到體積。"
+      },
+      {
+        "choice": "30 平方公分",
+        "truth": true,
+        "reason": "依獨立計算「360÷12=30」，此選項符合所求「底面積」。"
+      },
+      {
+        "choice": "48 平方公分",
+        "truth": false,
+        "reason": "除以錯數。"
+      }
+    ],
+    "misconceptionTarget": "反求底面積時仍把體積乘高。",
+    "authoringIntent": "由體積與高反求底面積。",
+    "difficulty": "standard",
+    "givenConditions": [
+      "體積360立方公分",
+      "高12公分"
+    ],
+    "target": "底面積",
+    "difficultyReason": "標準：反向使用體積公式並辨認單位。",
+    "prerequisiteCheck": "已會V=Bh與除法。 本題只再使用先備「prism-surface-area」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "立方公分除以公分得平方公分。",
+    "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "高非零且資料唯一。 題幹已完整限制「底面積」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v005",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "standard"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "8916daec64581e3fb373534ee50422418f66792729e01c79a4504e7efc6e9bf9"
+  },
+  {
+    "prompt": "一個圓柱體積為 200π 立方公分，底面半徑為 5 公分，高是多少？",
+    "text": "一個圓柱體積為 200π 立方公分，底面半徑為 5 公分，高是多少？",
+    "choices": [
+      "4 公分",
+      "8 公分",
+      "6 公分",
+      "10 公分"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：求底面積25π；200π÷25π=8。所得結果是「8 公分」。",
+    "explanation": "底面積=25π平方公分，高=200π÷25π=8公分。",
+    "steps": [
+      "求底面積25π",
+      "200π÷25π=8"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "4 公分",
+        "truth": false,
+        "reason": "只除以半徑。"
+      },
+      {
+        "choice": "8 公分",
+        "truth": true,
+        "reason": "依獨立計算「200π÷25π=8」，此選項符合所求「高度」。"
+      },
+      {
+        "choice": "6 公分",
+        "truth": false,
+        "reason": "計算錯誤。"
+      },
+      {
+        "choice": "10 公分",
+        "truth": false,
+        "reason": "誤用圓周長。"
+      }
+    ],
+    "misconceptionTarget": "反求圓柱高度時只除以半徑而非底面積。",
+    "authoringIntent": "由圓柱體積反求高度。",
+    "difficulty": "standard",
+    "givenConditions": [
+      "體積200π立方公分",
+      "半徑5公分"
+    ],
+    "target": "高度",
+    "difficultyReason": "標準：先求圓面積再反求高度。",
+    "prerequisiteCheck": "已會圓面積與V=Bh。 本題只再使用先備「prism-surface-area」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "π可約去，答案公分。 所求「高度」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確值。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "半徑正值，解唯一。 題幹已完整限制「高度」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v006",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "standard"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "1a487337abaaa453d75a2ce44cb56f98da25f8c467663fd3b81f37f33202cc4e"
+  },
+  {
+    "prompt": "一個斜角柱的底面積為 35 平方公分，斜側稜長 10 公分，兩底面間垂直距離為 8 公分。體積是多少？",
+    "text": "一個斜角柱的底面積為 35 平方公分，斜側稜長 10 公分，兩底面間垂直距離為 8 公分。體積是多少？",
+    "choices": [
+      "700 立方公分",
+      "350 立方公分",
+      "630 立方公分",
+      "280 立方公分"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：辨認垂直高8；35×8=280。所得結果是「280 立方公分」。",
+    "explanation": "柱體體積使用垂直高8，不使用斜側稜10，所以V=35×8=280立方公分。",
+    "steps": [
+      "辨認垂直高8",
+      "35×8=280"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "700 立方公分",
+        "truth": false,
+        "reason": "多乘2。"
+      },
+      {
+        "choice": "350 立方公分",
+        "truth": false,
+        "reason": "誤用斜稜10。"
+      },
+      {
+        "choice": "630 立方公分",
+        "truth": false,
+        "reason": "把8與10相加。"
+      },
+      {
+        "choice": "280 立方公分",
+        "truth": true,
+        "reason": "依獨立計算「35×8=280」，此選項符合所求「體積」。"
+      }
+    ],
+    "misconceptionTarget": "把斜側稜長當作柱體的高。",
+    "authoringIntent": "辨認斜柱的垂直高並求體積。",
+    "difficulty": "advanced",
+    "givenConditions": [
+      "斜角柱",
+      "底面積35平方公分",
+      "斜稜10公分",
+      "垂直高8公分"
+    ],
+    "target": "體積",
+    "difficultyReason": "進階：資料含干擾量，需選垂直距離。",
+    "prerequisiteCheck": "已理解柱體高度定義。 本題只再使用先備「prism-surface-area」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "平方公分乘公分得立方公分。",
+    "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "斜稜明確不是垂直高。 題幹已完整限制「體積」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v007",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "advanced"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "d2ef706636123080b198f68074dfd80460bc346ce086757dfa231ad8e241ff00"
+  },
+  {
+    "prompt": "兩個柱體底面積比為 3：5，高度比為 4：3，則體積比為何？",
+    "text": "兩個柱體底面積比為 3：5，高度比為 4：3，則體積比為何？",
+    "choices": [
+      "4：5",
+      "3：4",
+      "5：4",
+      "20：9"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：建立(3×4):(5×3)；得12:15；約分成4:5。所得結果是「4：5」。",
+    "explanation": "體積比=(底面積比)×(高度比)=(3×4)：(5×3)=12：15=4：5。",
+    "steps": [
+      "建立(3×4):(5×3)",
+      "得12:15",
+      "約分成4:5"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "4：5",
+        "truth": true,
+        "reason": "12:15約分為4:5。"
+      },
+      {
+        "choice": "3：4",
+        "truth": false,
+        "reason": "未正確合併兩組比例。"
+      },
+      {
+        "choice": "5：4",
+        "truth": false,
+        "reason": "把前後項顛倒。"
+      },
+      {
+        "choice": "20：9",
+        "truth": false,
+        "reason": "錯將交叉項相乘。"
+      }
+    ],
+    "misconceptionTarget": "未將比化簡或未檢查等值選項。",
+    "authoringIntent": "比較兩柱體體積。",
+    "difficulty": "advanced",
+    "givenConditions": [
+      "底面積比3:5",
+      "高度比4:3"
+    ],
+    "target": "體積比",
+    "difficultyReason": "進階：要將兩個比例相乘並辨識等值比。",
+    "prerequisiteCheck": "已會V=Bh與比例。 本題只再使用先備「prism-surface-area」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "比值無單位。 所求「體積比」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "四選項互不等值，體積比唯一為4:5。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v008",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "advanced"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "150e740a3b67f0435ff3e1c04c51b0134890a61daafe2165c99fccd2bdcca5c4"
+  },
+  {
+    "prompt": "一個長方體的長、寬都增加為原來的 2 倍，高維持不變，體積變成原來的幾倍？",
+    "text": "一個長方體的長、寬都增加為原來的 2 倍，高維持不變，體積變成原來的幾倍？",
+    "choices": [
+      "2倍",
+      "8倍",
+      "6倍",
+      "4倍"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：比較三方向縮放倍數；2×2×1=4。所得結果是「4倍」。",
+    "explanation": "體積=lwh。長乘2、寬乘2、高乘1，所以體積倍數=2×2×1=4。",
+    "steps": [
+      "比較三方向縮放倍數",
+      "2×2×1=4"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2倍",
+        "truth": false,
+        "reason": "只算一個方向。"
+      },
+      {
+        "choice": "8倍",
+        "truth": false,
+        "reason": "三方向都誤認為加倍。"
+      },
+      {
+        "choice": "6倍",
+        "truth": false,
+        "reason": "把倍數相加。"
+      },
+      {
+        "choice": "4倍",
+        "truth": true,
+        "reason": "依獨立計算「2×2×1=4」，此選項符合所求「體積倍數」。"
+      }
+    ],
+    "misconceptionTarget": "把各方向倍數相加，或誤以為高也加倍。",
+    "authoringIntent": "分析部分尺寸縮放對體積的影響。",
+    "difficulty": "advanced",
+    "givenConditions": [
+      "長變2倍",
+      "寬變2倍",
+      "高不變"
+    ],
+    "target": "體積倍數",
+    "difficultyReason": "進階：需用乘法結構追蹤多方向改變。",
+    "prerequisiteCheck": "已會長方體體積。 本題只再使用先備「prism-surface-area」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "倍數無單位。 所求「體積倍數」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "只指定長與寬改變，高保持1倍。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v009",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "advanced"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "cab72dfa2357fba94dbbb29928ba3171f0cf5884d0cfeccb11809858a64b18d8"
+  },
+  {
+    "prompt": "一個無厚度的長方體水槽內部長 50 公分、寬 40 公分，倒入 30 公升水後，水深多少公分？",
+    "text": "一個無厚度的長方體水槽內部長 50 公分、寬 40 公分，倒入 30 公升水後，水深多少公分？",
+    "choices": [
+      "10",
+      "12",
+      "15",
+      "20"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：30公升換30000立方公分；底面積2000；體積除底面積得15。所得結果是「15」。",
+    "explanation": "30公升=30000立方公分。底面積=50×40=2000平方公分，水深=30000÷2000=15公分。",
+    "steps": [
+      "30公升換30000立方公分",
+      "底面積2000",
+      "體積除底面積得15"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "10",
+        "truth": false,
+        "reason": "把公升換算少一個0。"
+      },
+      {
+        "choice": "12",
+        "truth": false,
+        "reason": "除法錯誤。"
+      },
+      {
+        "choice": "15",
+        "truth": true,
+        "reason": "依獨立計算「體積除底面積得15」，此選項符合所求「水深」。"
+      },
+      {
+        "choice": "20",
+        "truth": false,
+        "reason": "把槽高誤當已知。"
+      }
+    ],
+    "misconceptionTarget": "未將公升換成立方公分或未用內部底面積。",
+    "authoringIntent": "由注水量求水深。",
+    "difficulty": "literacy",
+    "givenConditions": [
+      "內長50公分",
+      "內寬40公分",
+      "水量30公升",
+      "槽直立"
+    ],
+    "target": "水深",
+    "difficultyReason": "素養：容量單位與幾何尺寸必須統一後才能求深度。",
+    "prerequisiteCheck": "已會1公升=1000立方公分與柱體體積。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "公升轉立方公分，結果公分。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "水未溢出且槽底水平。 題幹已完整限制「水深」的範圍與取值方向。",
+    "literacyContextNecessity": "水槽內部底面積與倒入的30公升共同決定水深，且公升必須先換成立方公分，情境資料缺一不可。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v010",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "literacy"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "83e846fd3214440c40f76483d0bc16bd8c978d0b24b702831bd798cda61e59aa"
+  },
+  {
+    "prompt": "一根長 2 公尺、橫截面積 18 平方公分的均勻金屬棒，材料密度為每立方公分 7.5 公克。其質量是多少公斤？",
+    "text": "一根長 2 公尺、橫截面積 18 平方公分的均勻金屬棒，材料密度為每立方公分 7.5 公克。其質量是多少公斤？",
+    "choices": [
+      "27公斤",
+      "2.7公斤",
+      "270公斤",
+      "2700公斤"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：長度換成200公分；體積3600立方公分；乘密度得27000公克；換27公斤。所得結果是「27公斤」。",
+    "explanation": "長2公尺=200公分。體積=18×200=3600立方公分。質量=3600×7.5=27000公克=27公斤。",
+    "steps": [
+      "長度換成200公分",
+      "體積3600立方公分",
+      "乘密度得27000公克",
+      "換27公斤"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "27公斤",
+        "truth": true,
+        "reason": "依獨立計算「換27公斤」，此選項符合所求「質量公斤數」。"
+      },
+      {
+        "choice": "2.7公斤",
+        "truth": false,
+        "reason": "少一個10倍。"
+      },
+      {
+        "choice": "270公斤",
+        "truth": false,
+        "reason": "公克轉公斤錯誤。"
+      },
+      {
+        "choice": "2700公斤",
+        "truth": false,
+        "reason": "錯把公克當公斤。"
+      }
+    ],
+    "misconceptionTarget": "長度與截面單位未統一，或質量單位換算錯誤。",
+    "authoringIntent": "由柱體體積與密度求質量。",
+    "difficulty": "literacy",
+    "givenConditions": [
+      "長2公尺",
+      "截面積18平方公分",
+      "密度7.5公克/立方公分"
+    ],
+    "target": "質量公斤數",
+    "difficultyReason": "素養：需串聯長度換算、柱體體積、密度與質量換算。",
+    "prerequisiteCheck": "已會柱體體積與公克公斤換算。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "公尺先換公分；公克除1000為公斤。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "金屬棒截面均勻且密度固定。",
+    "literacyContextNecessity": "金屬棒長度以公尺給出、截面積以平方公分給出，再結合材料密度才能求公斤質量，異單位情境是核心。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v011",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "literacy"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "e7329bc8ecc421626c191a311308df28387a19be6fe59faf0334f72f69a36153"
+  },
+  {
+    "prompt": "一個圓柱形儲槽半徑 1 公尺、高 3 公尺，目前裝到高度的 80%。以π=3.14計算，槽內液體約有多少公升？",
+    "text": "一個圓柱形儲槽半徑 1 公尺、高 3 公尺，目前裝到高度的 80%。以π=3.14計算，槽內液體約有多少公升？",
+    "choices": [
+      "753.6",
+      "7536",
+      "2512",
+      "9420"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：求液高2.4公尺；算體積7.536立方公尺；換7536公升。所得結果是「7536」。",
+    "explanation": "液面高=3×0.8=2.4公尺。體積=3.14×1²×2.4=7.536立方公尺；1立方公尺=1000公升，所以為7536公升。",
+    "steps": [
+      "求液高2.4公尺",
+      "算體積7.536立方公尺",
+      "換7536公升"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "753.6",
+        "truth": false,
+        "reason": "少乘10。"
+      },
+      {
+        "choice": "7536",
+        "truth": true,
+        "reason": "依獨立計算「換7536公升」，此選項符合所求「液體公升數」。"
+      },
+      {
+        "choice": "2512",
+        "truth": false,
+        "reason": "只換部分單位。"
+      },
+      {
+        "choice": "9420",
+        "truth": false,
+        "reason": "用滿槽體積。"
+      }
+    ],
+    "misconceptionTarget": "把80%套在半徑或忘記立方公尺換公升。",
+    "authoringIntent": "估算圓柱儲槽液量。",
+    "difficulty": "literacy",
+    "givenConditions": [
+      "半徑1公尺",
+      "高3公尺",
+      "裝至80%高度",
+      "π=3.14"
+    ],
+    "target": "液體公升數",
+    "difficultyReason": "素養：百分比描述液面高度，且需將立方公尺轉公升。",
+    "prerequisiteCheck": "已會圓柱體積、百分率與容量換算。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "1立方公尺=1000公升。",
+    "roundingCheck": "依題指定π=3.14。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "直立等截面儲槽中，體積比例等於高度比例。",
+    "literacyContextNecessity": "儲槽只裝到高度的80%，且答案要求公升；必須先求液面高度、算圓柱體積再做立方公尺換算。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s010-v012",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "柱體體積",
+      "literacy"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "14978e0130596998634d63224d02409559becc7c56ad0033ba75b22c7a6a2fc6"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "prompt": "一個底面為梯形的直角柱，梯形上底 6 公分、下底 10 公分、高 5 公分，柱高 12 公分。求柱體體積，並說明兩種『高』各自用在哪一步。",
+    "requiredWork": [
+      "先求梯形底面積。",
+      "再乘柱體垂直高。",
+      "說明梯形高與柱高的角色。"
+    ],
+    "fullCreditSolution": [
+      "梯形底面積=(6+10)×5÷2=40平方公分。",
+      "柱體體積=40×12=480立方公分。",
+      "5公分是底面梯形內兩平行邊的距離；12公分是兩底面間的垂直距離。"
+    ],
+    "alternativeSolutions": [
+      "也可把梯形分成長方形與兩個三角形求得40平方公分，再乘12。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "寫出40平方公分並乘12；清楚區分兩種高。"
+      },
+      {
+        "score": 2,
+        "criteria": "答案480且主要過程正確，但未完整說明兩種高。"
+      },
+      {
+        "score": 1,
+        "criteria": "知道先求梯形面積或寫出V=Bh，但有一處關鍵計算錯誤。"
+      },
+      {
+        "score": 0,
+        "criteria": "把6、10、5、12直接相乘或無有效作答。"
+      }
+    ],
+    "partialCreditRules": [
+      "答案480且主要過程正確，但未完整說明兩種高。",
+      "知道先求梯形面積或寫出V=Bh，但有一處關鍵計算錯誤。"
+    ],
+    "followThroughPolicy": "若梯形面積有單一算術錯誤，但後續一致乘12，可保留方法與後續分。",
+    "unitNotationRules": "底面積用平方公分，體積用立方公分。",
+    "answerOnlyPolicy": "只寫480立方公分可得答案分，但不能獲滿分，因題目要求說明兩種高。",
+    "difficulty": "standard",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "independentReview": {
+      "derivedResult": "480立方公分。",
+      "ambiguityAndBoundary": "獨立以梯形公式得40，再乘12得480；兩個高度分屬平面面積與立體累積，題意無歧義。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "questionId": "u23-s010-cr001",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "209d6fbd28e86d0a317aa9cf50165ff5d161b2800f67f936020124344f37c579"
+  },
+  {
+    "prompt": "一個圓柱形水桶內半徑 15 公分。倒入 9π 公升的水後，水深多少公分？請列出單位換算。",
+    "requiredWork": [
+      "將9π公升換成立方公分。",
+      "以πr²h建立方程。",
+      "求h並寫單位。"
+    ],
+    "fullCreditSolution": [
+      "9π公升=9000π立方公分。",
+      "9000π=π×15²×h=225πh。",
+      "h=9000÷225=40公分。"
+    ],
+    "alternativeSolutions": [
+      "也可先算每1公分水深所占體積為225π立方公分，再用9000π÷225π。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完成公升換算與方程，得40公分。"
+      },
+      {
+        "score": 2,
+        "criteria": "得40公分但單位換算說明不完整，或有一處書寫瑕疵。"
+      },
+      {
+        "score": 1,
+        "criteria": "知道用水量除底面積，但換算或算術有一項錯誤。"
+      },
+      {
+        "score": 0,
+        "criteria": "直接以9π除225π或無有效方法。"
+      }
+    ],
+    "partialCreditRules": [
+      "得40公分但單位換算說明不完整，或有一處書寫瑕疵。",
+      "知道用水量除底面積，但換算或算術有一項錯誤。"
+    ],
+    "followThroughPolicy": "若把9π公升誤寫成900π立方公分，但後續除以225π一致，可給方法分，不給最終答案分。",
+    "unitNotationRules": "1公升=1000立方公分；高度以公分表示。",
+    "answerOnlyPolicy": "只寫40公分可得1分，因換算與方程是明確要求。",
+    "difficulty": "advanced",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "independentReview": {
+      "derivedResult": "40公分。",
+      "ambiguityAndBoundary": "獨立把9π乘1000後除以225π，得到40；π約去且半徑使用平方，答案唯一。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "questionId": "u23-s010-cr002",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "prism-volume",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "6f971a50738df079ff5c797f26a01b4792bb458d99927a485c26664c9fc63e5c"
+  }
+];
+
+export const DRAWING_SPECS = [];

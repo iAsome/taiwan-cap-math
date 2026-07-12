@@ -1,0 +1,262 @@
+{
+  "lectureId": "u06-s008-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-applications",
+  "skillId": "scale-drawing",
+  "lockedSkillTitle": "比例尺",
+  "title": "比例尺：圖上距離與實際距離的同單位比",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "比例應用",
+    "skillOrder": 8,
+    "lockedPrerequisiteSkillIds": [
+      "inverse-variation-graph"
+    ],
+    "capBoundary": "處理數字比例尺、圖上與實際長度、簡單面積倍率；不延伸到地理投影誤差。"
+  },
+  "prerequisiteBridge": "比例尺是圖上長度:實際長度的固定比，因此本質上是正比。關鍵不是公式多，而是先統一單位與辨認方向。",
+  "learningOutcomes": [
+    "能解讀 1:n 的數字比例尺。",
+    "能在公分、公尺、公里間正確換算。",
+    "能由圖上距離求實際距離，或反求圖上距離。",
+    "能理解長度放大 n 倍時面積放大 n² 倍。"
+  ],
+  "glossary": [
+    {
+      "term": "比例尺",
+      "definition": "圖上距離與實際距離的比，兩者必須使用相同單位。"
+    },
+    {
+      "term": "圖上距離",
+      "definition": "地圖、設計圖或模型上量得的長度。"
+    },
+    {
+      "term": "實際距離",
+      "definition": "真實物體或地面上的對應長度。"
+    },
+    {
+      "term": "縮尺",
+      "definition": "把實際物縮小畫在圖上，例如 1:50000。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "1:n",
+      "meaning": "圖上 1 個長度單位代表實際 n 個相同長度單位。"
+    },
+    {
+      "symbol": "圖上距離/實際距離=1/n",
+      "meaning": "兩者須先換成同單位。"
+    },
+    {
+      "symbol": "1 km=100000 cm",
+      "meaning": "地圖常用的公分與公里換算。"
+    }
+  ],
+  "conceptNarrative": [
+    "比例尺 1:50000 表示圖上 1 公分代表實際 50000 公分，也就是 500 公尺。",
+    "求實際距離通常用圖上距離×縮小倍數；反求圖上距離則用實際距離÷縮小倍數。",
+    "單位換算可在列比例式前或後進行，但比例中的兩項必須同單位。",
+    "若圖的每一條長度都縮為 1/n，面積會縮為 1/n²，不能只乘一次 n。",
+    "印刷或螢幕縮放可能改變實際量得長度，所以題目若註明『不按比例』，不可拿尺量。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "數字比例尺",
+      "statement": "以 1:n 表示圖上長度是實際長度的 1/n。"
+    },
+    {
+      "name": "面積比例",
+      "statement": "相似圖形的長度比為 1:n 時，面積比為 1:n²。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "實際距離=圖上距離×n",
+      "conditions": [
+        "比例尺為1:n",
+        "單位一致"
+      ],
+      "meaning": "由圖求實際。"
+    },
+    {
+      "formula": "圖上距離=實際距離÷n",
+      "conditions": [
+        "比例尺為1:n",
+        "單位一致"
+      ],
+      "meaning": "由實際求圖。"
+    },
+    {
+      "formula": "面積比=(長度比)²",
+      "conditions": [
+        "對應圖形相似"
+      ],
+      "meaning": "面積倍率。"
+    }
+  ],
+  "nonApplicableCases": [
+    "把 1:50000 讀成圖上 1 公分代表 50000 公里。",
+    "未將公里換成公分便直接列 3:6。",
+    "比例尺方向寫成實際:圖上。",
+    "面積題仍只乘長度倍率一次。",
+    "用尺量標示『示意圖不按比例』的線段。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫清楚比例尺方向：圖上:實際。",
+      "check": "是否把順序顛倒？"
+    },
+    {
+      "step": 2,
+      "instruction": "把兩個距離換成同單位。",
+      "check": "公里到公分是否乘 100000？"
+    },
+    {
+      "step": 3,
+      "instruction": "列比例式或用倍率。",
+      "check": "求的是圖上還是實際？"
+    },
+    {
+      "step": 4,
+      "instruction": "完成計算並換成題目要求單位。",
+      "check": "數量級合理嗎？"
+    },
+    {
+      "step": 5,
+      "instruction": "若涉及面積，平方長度倍率。",
+      "check": "是否誤用線性倍率？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "比例尺 1:25000，圖上 6 公分，實際多遠？",
+      "solutionSteps": [
+        "實際為 6×25000=150000 公分。",
+        "150000 公分=1.5 公里。"
+      ],
+      "answer": "1.5 公里。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "比例尺 1:80000，實際 4 公里，圖上幾公分？",
+      "solutionSteps": [
+        "4 公里=400000 公分。",
+        "400000÷80000=5。"
+      ],
+      "answer": "5 公分。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "模型長 18 公分，實物長 4.5 公尺，求比例尺。",
+      "solutionSteps": [
+        "4.5 公尺=450 公分。",
+        "18:450=1:25。"
+      ],
+      "answer": "1:25。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "平面圖比例尺 1:100，圖上房間面積 24 平方公分，實際面積？",
+      "solutionSteps": [
+        "長度倍率為 100，面積倍率為 10000。",
+        "24×10000=240000 平方公分=24 平方公尺。"
+      ],
+      "answer": "24 平方公尺。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "1:20000 寫成實際÷圖上=1/20000。",
+      "why": "方向顛倒。",
+      "correction": "圖上÷實際=1/20000。"
+    },
+    {
+      "mistake": "2 公分代表 2 萬公里。",
+      "why": "忽略相同單位。",
+      "correction": "先讀作 2×20000 公分。"
+    },
+    {
+      "mistake": "公里換公分只乘 1000。",
+      "why": "把公尺與公分漏一層。",
+      "correction": "1 公里=100000 公分。"
+    },
+    {
+      "mistake": "求圖上距離時仍乘 n。",
+      "why": "沒有辨認未知量。",
+      "correction": "實際距離除以 n。"
+    },
+    {
+      "mistake": "面積只乘 n。",
+      "why": "面積含兩個長度方向。",
+      "correction": "乘 n²。"
+    },
+    {
+      "mistake": "從示意圖目測長度。",
+      "why": "圖可能縮放或不按比例。",
+      "correction": "只使用題目標示數值。"
+    }
+  ],
+  "selfCheck": [
+    "比例尺順序是圖上:實際嗎？",
+    "兩項已換成相同單位嗎？",
+    "乘或除 n 的方向正確嗎？",
+    "答案單位符合題目嗎？",
+    "面積是否使用平方倍率？"
+  ],
+  "summary": [
+    "比例尺是圖上距離與實際距離的同單位比。",
+    "1:n 表示實際長是圖上長的 n 倍。",
+    "公里與公分換算是常見關鍵。",
+    "面積倍率是長度倍率的平方。"
+  ],
+  "connections": {
+    "previous": "比例尺是 y=kx 的正比實例。",
+    "next": [
+      "比例應用題會把單價、配方、速度等關係轉成比例式。",
+      "複合題可能連續使用比例尺與其他比率。"
+    ]
+  },
+  "figureReferences": [
+    "u06-fig-scale-map-01"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s008-v001",
+      "u06-s008-v002",
+      "u06-s008-v003",
+      "u06-s008-v004",
+      "u06-s008-v005",
+      "u06-s008-v006",
+      "u06-s008-v007",
+      "u06-s008-v008",
+      "u06-s008-v009",
+      "u06-s008-v010",
+      "u06-s008-v011",
+      "u06-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s008-cr001",
+      "u06-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重新換算 150000 公分=1.5 公里、400000÷80000=5 與 4.5 公尺=450 公分；面積例另以 18 公尺×約 13.33 公尺的等面積概念核對 24 平方公尺，確認使用平方倍率。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "72e174ab58ea4237286bff6e25b799fbc7f20a23c5f5fa8a7990107589fd28d9"
+}

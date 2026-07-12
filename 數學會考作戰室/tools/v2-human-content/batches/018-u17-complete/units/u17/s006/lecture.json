@@ -1,0 +1,234 @@
+{
+  "lectureId": "u17-s006-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallel-corresponding",
+  "lockedTitle": "同位角",
+  "title": "同位角：在兩個交點找到相同方位",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallel-alternate-interior。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "辨認同位角的相同方位",
+    "運用平行時同位角相等",
+    "以同位角相等判定平行"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallel-alternate-interior",
+      "requiredLevel": "能正確使用「parallel-alternate-interior」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "同位角",
+      "definition": "在兩交點占相同相對方位的一對角"
+    },
+    {
+      "term": "相對方位",
+      "definition": "例如都在各交點右上方"
+    },
+    {
+      "term": "F形",
+      "definition": "常見辨認提示"
+    },
+    {
+      "term": "同位角逆性質",
+      "definition": "同位角相等可判兩線平行"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "同位角一個可能在內部、一個可能在外部，重點是兩個交點的方位相同。",
+    "兩線平行時，同位角相等；若一對同位角相等，也可判兩線平行。",
+    "將圖旋轉後，右上、左下等口語方位會改變，因此最好沿著兩條被截線比較相同位置。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "同位角",
+      "statement": "在兩交點占相同相對方位的一對角"
+    },
+    {
+      "name": "相對方位",
+      "statement": "例如都在各交點右上方"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a∥b ⇒ 同位角相等",
+      "conditions": [
+        "同一截線"
+      ],
+      "meaning": "用於同位角中符合條件的推理或計算。"
+    },
+    {
+      "formula": "同位角相等 ⇒ a∥b",
+      "conditions": [
+        "角的位置確為同位角"
+      ],
+      "meaning": "用於同位角中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出兩個交點",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "選定第一個角相對截線與被截線的位置",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "到另一交點找相同方位",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "確認為同位角",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "套用性質或逆性質",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "a∥b，同位角之一101°",
+      "solutionSteps": [
+        "另一角101°。"
+      ],
+      "answer": "另一角101°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "同位角為7x-4與5x+20",
+      "solutionSteps": [
+        "相等得x=12。"
+      ],
+      "answer": "相等得x=12。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "同一交點的兩角",
+      "solutionSteps": [
+        "不稱為同位角。"
+      ],
+      "answer": "不稱為同位角。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "同位角相等",
+      "solutionSteps": [
+        "可判兩被截線平行。"
+      ],
+      "answer": "可判兩被截線平行。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把對頂角叫同位角",
+      "why": "同位角位於不同交點",
+      "correction": "同位角位於不同交點"
+    },
+    {
+      "mistake": "只看角是否同大",
+      "why": "還要確認位置",
+      "correction": "還要確認位置"
+    },
+    {
+      "mistake": "把同側內角誤認同位角",
+      "why": "同側內角都在內部且同側",
+      "correction": "同側內角都在內部且同側"
+    },
+    {
+      "mistake": "未有平行就使用相等性質",
+      "why": "要區分性質與逆性質",
+      "correction": "要區分性質與逆性質"
+    },
+    {
+      "mistake": "圖旋轉後依固定上下判斷",
+      "why": "應比較相對方位",
+      "correction": "應比較相對方位"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「同位角」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "同位角一個可能在內部、一個可能在外部，重點是兩個交點的方位相同。",
+    "a∥b ⇒ 同位角相等",
+    "解題時先確認「同一截線」。"
+  ],
+  "connections": {
+    "previous": "承接parallel-alternate-interior。",
+    "next": "下一技能依鎖定順序為parallel-consecutive-interior。"
+  },
+  "figureReferences": [
+    "u17-s006-fig001"
+  ],
+  "figureAccessibility": "兩平行線被截線穿過，兩個相同方位角以弧線標示。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s006-v001",
+      "u17-s006-v002",
+      "u17-s006-v003",
+      "u17-s006-v004",
+      "u17-s006-v005",
+      "u17-s006-v006",
+      "u17-s006-v007",
+      "u17-s006-v008",
+      "u17-s006-v009",
+      "u17-s006-v010",
+      "u17-s006-v011",
+      "u17-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s006-cr001",
+      "u17-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "本講義以「不同交點的相同相對方位」作核心定義，處理圖形旋轉後仍能辨認的需求。"
+  },
+  "contentSha256": "df67bcd9f8a762e7885c3c1e5ae711dff4ffdaaf8febf5840e3c6248fb6101d4"
+}

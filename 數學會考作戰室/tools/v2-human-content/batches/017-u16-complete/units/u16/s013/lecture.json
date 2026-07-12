@@ -1,0 +1,266 @@
+{
+  "lectureId": "u16-s013-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-properties",
+  "skillId": "angle-sum-exterior",
+  "skillOrder": 13,
+  "originalLockedTitle": "外角定理",
+  "title": "外角定理：一個外角等於兩個不相鄰內角和",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認三角形某頂點的內角、外角與兩個不相鄰內角。",
+    "能由鄰補角與三角形內角和推導外角定理。",
+    "能使用外角定理求未知角並檢查角度範圍。",
+    "能分辨『一個三角形外角』與『多邊形外角和』。"
+  ],
+  "prerequisiteBridge": "已知三角形內角和為 180°，也知道一直線上的鄰補角和為 180°。把兩個 180° 等式相減，就得到外角定理。",
+  "prerequisites": [
+    {
+      "skillId": "triangle-inequality",
+      "requiredLevel": "能使用先備技能「三角形邊長關係」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "外角",
+      "definition": "延長三角形一邊後，延長線與相鄰邊形成且與該頂點內角鄰補的角。"
+    },
+    {
+      "term": "相鄰內角",
+      "definition": "與該外角共用一邊、和外角成一直線的三角形內角。"
+    },
+    {
+      "term": "不相鄰內角",
+      "definition": "三角形另外兩個頂點的內角。"
+    },
+    {
+      "term": "鄰補角",
+      "definition": "共用一邊且另兩邊成一直線的兩角，和為 180°。"
+    },
+    {
+      "term": "外角定理",
+      "definition": "三角形一外角等於兩個不相鄰內角之和。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∠ACD",
+      "meaning": "若 BC 延長至 D，這是 C 點的外角。"
+    },
+    {
+      "symbol": "∠ACD=∠A+∠B",
+      "meaning": "C 點外角等於兩個不相鄰內角 A、B 的和。"
+    },
+    {
+      "symbol": "∠ACB+∠ACD=180°",
+      "meaning": "C 點內角與其相鄰外角為鄰補角。"
+    }
+  ],
+  "conceptNarrative": [
+    "△ABC 中把 BC 延長到 D，∠ACB 與 ∠ACD 共用 CA，另一邊 CB、CD 成一直線，所以兩角和 180°。",
+    "三角形內角和給 ∠A+∠B+∠ACB=180°。兩式都等於 180°，消去 ∠ACB，得到 ∠ACD=∠A+∠B。",
+    "外角一定大於任何一個不相鄰內角，因為它是兩個正內角的和。",
+    "同一頂點可沿另一邊延長得到另一個外角；兩者角度相同，皆與該頂點內角互補。",
+    "題目若畫多個延長線，要先確認所求角與哪個內角鄰補，再找正確的兩個不相鄰內角。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "三角形外角定理",
+      "statement": "三角形的一個外角等於與它不相鄰的兩個內角之和。"
+    },
+    {
+      "name": "外角大小性質",
+      "statement": "三角形任一外角大於任一個與它不相鄰的內角。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "外角=兩個不相鄰內角和",
+      "conditions": [
+        "外角由三角形一邊延長形成"
+      ],
+      "meaning": "快速求角。"
+    },
+    {
+      "formula": "外角+相鄰內角=180°",
+      "conditions": [
+        "兩角為鄰補角"
+      ],
+      "meaning": "另一種求外角或內角的方法。"
+    }
+  ],
+  "nonApplicableCases": [
+    "與外角相鄰的內角不能列入兩個不相鄰內角和。",
+    "圖外任意角不一定是三角形外角，必須由一邊延長形成。",
+    "外角定理不是『三個外角和 180°』。",
+    "角度若算出 0°、負數或不小於 180°，通常表示對應或計算錯誤。",
+    "多邊形外角和 360° 是另一技能，不可直接套在單一三角形外角題。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找出被延長的三角形邊與外角頂點。",
+      "check": "外角是否與一個內角成鄰補？"
+    },
+    {
+      "step": 2,
+      "instruction": "圈出相鄰內角。",
+      "check": "它不可放入外角定理的兩角和。"
+    },
+    {
+      "step": 3,
+      "instruction": "找另外兩個頂點的內角。",
+      "check": "它們才是不相鄰內角。"
+    },
+    {
+      "step": 4,
+      "instruction": "建立外角=兩不相鄰內角和。",
+      "check": "代數式是否漏掉其中一角？"
+    },
+    {
+      "step": 5,
+      "instruction": "用外角與相鄰內角和 180° 驗算。",
+      "check": "所得內外角是否互補？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "三角形兩個不相鄰內角為 45°、68°，求相對外角。",
+      "solutionSteps": [
+        "外角等於兩不相鄰內角和。",
+        "45°+68°=113°。"
+      ],
+      "answer": "113°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "外角為 125°，其中一個不相鄰內角為 47°，求另一個。",
+      "solutionSteps": [
+        "另一角=125°−47°。"
+      ],
+      "answer": "78°。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "C 點外角為 140°，求 C 點內角。",
+      "solutionSteps": [
+        "內角與外角鄰補。",
+        "180°−140°=40°。"
+      ],
+      "answer": "40°。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "外角為 3x+10°，兩個不相鄰內角為 x+20°、x+30°，求 x。",
+      "solutionSteps": [
+        "3x+10=(x+20)+(x+30)。",
+        "3x+10=2x+50。"
+      ],
+      "answer": "x=40。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "某外角為 70°，一個不相鄰內角為 75°，條件可能嗎？",
+      "solutionSteps": [
+        "外角應大於每個不相鄰內角。",
+        "70°<75°，矛盾。"
+      ],
+      "answer": "不可能。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把相鄰內角加進外角定理。",
+      "why": "只看靠近外角。",
+      "correction": "不相鄰內角在另外兩個頂點。"
+    },
+    {
+      "mistake": "外角和相鄰內角相等。",
+      "why": "誤認對頂角。",
+      "correction": "它們是鄰補角，和為 180°。"
+    },
+    {
+      "mistake": "外角減去兩個內角。",
+      "why": "公式方向混亂。",
+      "correction": "先寫外角=內角1+內角2。"
+    },
+    {
+      "mistake": "把延長線外的任意角都叫外角。",
+      "why": "未檢查一邊是否延長。",
+      "correction": "外角的一邊必須是三角形邊的延長線。"
+    },
+    {
+      "mistake": "算出外角小於某不相鄰內角仍接受。",
+      "why": "未做大小檢查。",
+      "correction": "外角是兩正角和，必大於其中每一個。"
+    },
+    {
+      "mistake": "混用多邊形外角和 360°。",
+      "why": "見到外角就套同一公式。",
+      "correction": "本技能處理單一三角形頂點外角。"
+    }
+  ],
+  "selfCheck": [
+    "我能指出外角的相鄰內角嗎？",
+    "兩個不相鄰內角是否在另外兩個頂點？",
+    "外角是否等於它們的和？",
+    "內外角相加是否為 180°？",
+    "結果是否大於每個不相鄰內角且小於 180°？"
+  ],
+  "summary": [
+    "三角形一外角等於兩個不相鄰內角和。",
+    "外角與相鄰內角互補。",
+    "外角大於任一個不相鄰內角。",
+    "先辨認位置，再代公式。"
+  ],
+  "connections": {
+    "previous": "使用三角形內角和與基本不等式檢查。",
+    "next": [
+      "邊角關係會比較三角形內角大小。",
+      "多邊形外角和會改用行走轉向觀點。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-013-exterior-angle"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-013-exterior-angle 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s013-v001",
+      "u16-s013-v002",
+      "u16-s013-v003",
+      "u16-s013-v004",
+      "u16-s013-v005",
+      "u16-s013-v006",
+      "u16-s013-v007",
+      "u16-s013-v008",
+      "u16-s013-v009",
+      "u16-s013-v010",
+      "u16-s013-v011",
+      "u16-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s013-cr001",
+      "u16-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「外角定理」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "eb1ba2fd2dbd25a27e5e07b2d3bf6e81aab5792fde302ca761d1df212f4d196c"
+}

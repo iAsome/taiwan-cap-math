@@ -1,0 +1,201 @@
+{
+  "lectureId": "u04-s006-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-methods",
+  "skillId": "system-elimination-scaling",
+  "lockedSkillTitle": "係數放大後消去",
+  "title": "係數放大後消去：整個方程式一起乘",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "係數放大後消去",
+    "scope": "把整個方程式乘以適當倍數，再進行加減消去。"
+  },
+  "prerequisiteBridge": "先備技能 system-elimination-method 已建立必要基礎；本節將其用於「把整個方程式乘以適當倍數，再進行加減消去。」",
+  "learningGoals": [
+    "能找出係數的共同倍數。",
+    "能決定兩式各乘多少。",
+    "能將方程式每一項與等號右邊全部乘上倍數。",
+    "能在放大後選擇正確加減運算。"
+  ],
+  "vocabulary": [
+    {
+      "term": "倍數放大",
+      "definition": "等式兩邊同乘非零數。"
+    },
+    {
+      "term": "最小公倍數",
+      "definition": "兩係數絕對值共同倍數中最小的正數。"
+    },
+    {
+      "term": "等價方程式",
+      "definition": "解集合相同的方程式。"
+    },
+    {
+      "term": "整式同乘",
+      "definition": "每一項都乘相同倍數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "①×2",
+      "meaning": "第一式左、右所有項都乘 2。"
+    },
+    {
+      "symbol": "②×(-3)",
+      "meaning": "第二式整體乘 -3，可同時改變係數符號。"
+    }
+  ],
+  "conceptDevelopment": [
+    "當係數不直接相同或相反時，可用倍數把它們變成相同或相反。",
+    "乘法不一定要選最小公倍數，但選小倍數可降低計算量。",
+    "任何方程式乘非零數都不改變其解；乘 0 會丟失資訊，因此不可使用。"
+  ],
+  "definitions": [
+    {
+      "name": "係數放大後消去",
+      "statement": "先將一式或兩式乘非零倍數，使某未知數係數可相消，再加減。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "k(ax+by=c) ⇒ kax+kby=kc",
+      "conditions": [
+        "k≠0，且每一項都乘 k。"
+      ],
+      "meaning": "建立等價方程式。"
+    }
+  ],
+  "invalidUseCases": [
+    "不可只乘含未知數的項而漏乘常數。",
+    "不可把方程式乘 0。",
+    "放大後仍要檢查係數是相同還是相反，再決定加減。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "選消去物件",
+      "check": "比較 x、y 係數。"
+    },
+    {
+      "step": 2,
+      "instruction": "找共同倍數",
+      "check": "通常取絕對值的最小公倍數。"
+    },
+    {
+      "step": 3,
+      "instruction": "決定每式倍數",
+      "check": "讓係數相同或相反。"
+    },
+    {
+      "step": 4,
+      "instruction": "整式同乘",
+      "check": "所有項與常數都乘。"
+    },
+    {
+      "step": 5,
+      "instruction": "加減消去並回代",
+      "check": "最後檢驗。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 2x+3y=13，3x-2y=4。",
+      "solutionSteps": [
+        "第一式乘 2：4x+6y=26。",
+        "第二式乘 3：9x-6y=12。",
+        "相加得 13x=38，x=38/13，再回代。"
+      ],
+      "answer": "(38/13,31/13)。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 3x+2y=12，5x-3y=1。",
+      "solutionSteps": [
+        "第一式乘 3：9x+6y=36。",
+        "第二式乘 2：10x-6y=2。",
+        "相加得 19x=38，x=2，y=3。"
+      ],
+      "answer": "(2,3)。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "為消去 x：4x+y=9 與 6x-y=11。",
+      "solutionSteps": [
+        "x 係數 4、6 的最小公倍數為 12。",
+        "第一式乘 3、第二式乘 -2 可得 12x+3y=27 與 -12x+2y=-22。"
+      ],
+      "answer": "可相加消去 x。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "檢查錯誤：2x+3y=7 乘 3 寫成 6x+9y=7。",
+      "solutionSteps": [
+        "右邊也必須乘 3。"
+      ],
+      "answer": "正確為 6x+9y=21。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "漏乘常數項",
+      "correction": "等式兩邊必須同乘。"
+    },
+    {
+      "mistake": "只看係數大小不看符號",
+      "correction": "放大後要確認相加或相減。"
+    },
+    {
+      "mistake": "選過大的共同倍數",
+      "correction": "雖可能正確，但增加錯算風險。"
+    },
+    {
+      "mistake": "乘 0 企圖消去",
+      "correction": "會把整式變成 0=0 丟失條件。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "2 與 3 的最小公倍數？",
+      "answer": "6。"
+    },
+    {
+      "prompt": "方程式乘 -2 時哪些項要乘？",
+      "answer": "左右兩邊所有項。"
+    },
+    {
+      "prompt": "可否乘 0？",
+      "answer": "不可，會失去等價性。"
+    },
+    {
+      "prompt": "放大後直接完成了嗎？",
+      "answer": "還要加減、回代、檢驗。"
+    }
+  ],
+  "summary": [
+    "先找共同倍數，再整式同乘。",
+    "倍數必須非零。",
+    "放大隻是準備，仍要加減消去。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-elimination-method 已建立必要基礎；本節將其用於「把整個方程式乘以適當倍數，再進行加減消去。」",
+    "next": "下一技能「無解與唯一解與無限多解」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "核算了兩組完整解與兩個程式判斷；第一例分數解代回兩式皆成立，並明示乘 0 不是合法等價變形。",
+    "reviewNote": "核算了兩組完整解與兩個程式判斷；第一例分數解代回兩式皆成立，並明示乘 0 不是合法等價變形。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "a250a7ce7246275f22bd5b150d3fcea78f9bf7385f9f58fc7cbb4e0c0ca6468e"
+}

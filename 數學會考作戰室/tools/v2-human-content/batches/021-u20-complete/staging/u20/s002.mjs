@@ -1,0 +1,1710 @@
+// Generated only by serialization from approved reviewed source. Do not edit.
+export const sourceDigest="40d0f3d91abfff6f6ae573706f614e0333e3903aea6621e13b5e2d24738a22ec";
+export const skillBundle={
+  "lecture": {
+    "lectureId": "u20-s002-lecture-r1",
+    "unitId": "u20",
+    "numericUnitId": 20,
+    "topicId": "u20-proof",
+    "skillId": "geometry-proof-steps",
+    "skillSlot": "s002",
+    "lockedSkillTitle": "證明步驟",
+    "title": "證明步驟：安排有依賴關係的推理鏈",
+    "audience": "臺灣國中零基礎至會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能把散亂敘述排成合理順序。",
+      "能建立必要的中間結果。",
+      "能檢查某一步是否在使用尚未成立的性質。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "geometry-proof-basic",
+        "requiredLevel": "能使用該技能的核心定義與基本推理。"
+      }
+    ],
+    "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「geometry-proof-basic」再進入本節。",
+    "glossary": [
+      {
+        "term": "推理鏈",
+        "definition": "前一步提供後一步所需條件的有序敘述。"
+      },
+      {
+        "term": "中間結果",
+        "definition": "不是題目直接給、也不是最後結論，但用來連接兩者的敘述。"
+      },
+      {
+        "term": "依賴順序",
+        "definition": "理由與條件必須先成立，才能使用其結果。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "A→B",
+        "meaning": "在條件A成立下可推出B，不表示B一定能反推A。"
+      },
+      {
+        "symbol": "SAS",
+        "meaning": "兩邊及其夾角對應相等的三角形全等判定。"
+      }
+    ],
+    "conceptNarrative": [
+      "同一組句子若順序錯誤，會把性質提前使用。例如要用『全等三角形對應角相等』，必須先證明全等。",
+      "好步驟不一定很多，但每一步都有任務：翻譯定義、建立全等、取得對應關係或完成判定。",
+      "規劃時可以由結論向後想需要什麼，但正式書寫仍要從已知向前呈現。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "前向書寫",
+        "statement": "正式證明依照已知先、推論後的順序呈現。"
+      },
+      {
+        "name": "逆向規劃",
+        "statement": "思考時可從結論問『需要什麼』，但不得把尚未成立的結論當作證據。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "條件整理 → 中間結論 → 目標性質",
+        "conditions": [
+          "中間結論對目標有實際用途",
+          "每項性質在使用前已建立"
+        ],
+        "meaning": "多步證明的常見結構。"
+      }
+    ],
+    "nonApplicableCases": [
+      "步驟順序不能只依句子在題目中出現的先後。",
+      "全等後性質不能放在全等判定之前。",
+      "逆向規劃的假想需求不能直接當成正式已知。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "列出結論所需的最後一個理由。",
+        "check": "例如要證平行，是用同位角還是內錯角判定？"
+      },
+      {
+        "step": 2,
+        "instruction": "向後找出該理由需要的條件。",
+        "check": "這些條件能由已知或較早步驟得到嗎？"
+      },
+      {
+        "step": 3,
+        "instruction": "把規劃結果反轉成前向證明。",
+        "check": "是否所有使用都晚於建立？"
+      },
+      {
+        "step": 4,
+        "instruction": "刪除重複句與無關計算。",
+        "check": "每一步是否對下一步有作用？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "D是BC中點，AD⊥BC，證△ADB≅△ADC。",
+        "solutionSteps": [
+          "中點得DB＝DC。",
+          "公共邊AD＝AD。",
+          "兩夾角皆90°。",
+          "用SAS。"
+        ],
+        "answer": "△ADB≅△ADC。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "已證兩三角形全等，下一步要證兩線平行。",
+        "solutionSteps": [
+          "先取一對對應角相等。",
+          "確認該角對為同位角或內錯角。",
+          "用平行線判定。"
+        ],
+        "answer": "全等必須先於對應角與平行判定。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把全等結論放在條件之前。",
+        "why": "尚未滿足判定。",
+        "correction": "先列足夠的邊角條件。"
+      },
+      {
+        "mistake": "寫出中間結果卻沒有使用。",
+        "why": "證明出現無關支線。",
+        "correction": "確認它能連到下一步。"
+      },
+      {
+        "mistake": "最後只重複待證句。",
+        "why": "沒有提供最後判定。",
+        "correction": "明寫角型、全等後性質或定義。"
+      }
+    ],
+    "selfCheck": [
+      "我的步驟是否有先後依賴？",
+      "全等後性質是否在全等之後？",
+      "最後一步使用的判定條件是否完整？",
+      "是否有不影響結論的多餘步驟？"
+    ],
+    "summary": [
+      "思考可逆向，書寫要前向。",
+      "中間結果負責連接已知與結論。",
+      "任何性質都必須在成立後才能使用。"
+    ],
+    "connections": {
+      "previous": "先備：geometry-proof-basic",
+      "next": [
+        "下一技能會練習為每一步選擇精確理由。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u20-s002-v001",
+        "u20-s002-v002",
+        "u20-s002-v003",
+        "u20-s002-v004",
+        "u20-s002-v005",
+        "u20-s002-v006",
+        "u20-s002-v007",
+        "u20-s002-v008",
+        "u20-s002-v009",
+        "u20-s002-v010",
+        "u20-s002-v011",
+        "u20-s002-v012"
+      ],
+      "constructedResponseIds": [
+        "u20-s002-cr001",
+        "u20-s002-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "skillSpecificEvidence": "講義以依賴圖為核心，刻意區分規劃方向與正式證明方向。",
+      "reviewerDecision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "legacyContentUsed": false,
+    "contentSha256": "30db290a1fc5adcf82dd060d6ebb877455093d1267a66264e0fbd8ebbfd9ac48"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u20-s002-v001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "開始撰寫幾何證明時，第一個最穩健的動作是什麼？",
+      "givenConditions": [],
+      "target": "掌握證明起始步驟",
+      "choices": [
+        "先猜結論",
+        "先列已知與待證",
+        "先量圖形",
+        "先寫所有定理"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "先整理題目給定的條件與要證明的目標，才能判斷可用性質與推理方向。",
+        "result": "先列已知與待證"
+      },
+      "explanation": "先整理題目給定的條件與要證明的目標，才能判斷可用性質與推理方向。",
+      "steps": [
+        "圈出已知",
+        "寫出待證",
+        "再規劃中間步驟"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "先猜結論",
+          "truth": false,
+          "reason": "結論已由題目指定，不需猜。"
+        },
+        {
+          "choice": "先列已知與待證",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；先整理題目給定的條件與要證明的目標，才能判斷可用性質與推理方向。"
+        },
+        {
+          "choice": "先量圖形",
+          "truth": false,
+          "reason": "量測不是證明起點。"
+        },
+        {
+          "choice": "先寫所有定理",
+          "truth": false,
+          "reason": "未對應題目的定理清單無法形成推理。"
+        }
+      ],
+      "misconceptionTarget": "未整理題意就直接運算或套定理。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「掌握證明起始步驟」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先列已知與待證」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：掌握證明起始步驟。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "ffb1d8a3eebea61f4f0fdd4ba35d61d08ef1717f0649614d2cfa17801ebfafbd"
+    },
+    {
+      "questionId": "u20-s002-v002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "下列哪一種寫法最能讓讀者檢查證明過程？",
+      "givenConditions": [],
+      "target": "理解證明步驟的呈現方式",
+      "choices": [
+        "只列理由不列敘述",
+        "只寫結論",
+        "敘述與理由成對排列",
+        "把圖形放大"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "每個新敘述旁附對應理由，讀者才能逐步確認推論是否合法。",
+        "result": "敘述與理由成對排列"
+      },
+      "explanation": "每個新敘述旁附對應理由，讀者才能逐步確認推論是否合法。",
+      "steps": [
+        "寫一個推論敘述",
+        "緊接其理由",
+        "依序連到結論"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只列理由不列敘述",
+          "truth": false,
+          "reason": "不知道理由支持哪個結果。"
+        },
+        {
+          "choice": "只寫結論",
+          "truth": false,
+          "reason": "看不到推導。"
+        },
+        {
+          "choice": "敘述與理由成對排列",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；每個新敘述旁附對應理由，讀者才能逐步確認推論是否合法。"
+        },
+        {
+          "choice": "把圖形放大",
+          "truth": false,
+          "reason": "圖形大小不改善邏輯。"
+        }
+      ],
+      "misconceptionTarget": "把證明當成答案而不是推理鏈。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「理解證明步驟的呈現方式」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「敘述與理由成對排列」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：理解證明步驟的呈現方式。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "13c9f4ba29e8dacbff587528d19653dfffd2f0ba5664993c40da10df98f388e9"
+    },
+    {
+      "questionId": "u20-s002-v003",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "若待證結論不能由已知一步得到，應如何處理？",
+      "givenConditions": [],
+      "target": "建立中間步驟概念",
+      "choices": [
+        "中間關係可以省略",
+        "先把最後結論當已知",
+        "步驟順序任意",
+        "先證明中間關係，再推出最後結論"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "需要找出能連接已知與結論的中間關係，並逐步證明。",
+        "result": "先證明中間關係，再推出最後結論"
+      },
+      "explanation": "需要找出能連接已知與結論的中間關係，並逐步證明。",
+      "steps": [
+        "判斷直接推論不足",
+        "尋找可由已知推出的中間結果",
+        "用中間結果到達結論"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "中間關係可以省略",
+          "truth": false,
+          "reason": "省略會造成跳步。"
+        },
+        {
+          "choice": "先把最後結論當已知",
+          "truth": false,
+          "reason": "形成循環論證。"
+        },
+        {
+          "choice": "步驟順序任意",
+          "truth": false,
+          "reason": "理由必須先於依賴它的結論。"
+        },
+        {
+          "choice": "先證明中間關係，再推出最後結論",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；需要找出能連接已知與結論的中間關係，並逐步證明。"
+        }
+      ],
+      "misconceptionTarget": "把多步問題寫成沒有理由的一步。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「建立中間步驟概念」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先證明中間關係，再推出最後結論」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：建立中間步驟概念。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "c3a657d2a35bbd35b7b8f39f166d1ca0ec3e91483cae1b8332a8206d0989e06d"
+    },
+    {
+      "questionId": "u20-s002-v004",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "已知 AB＝AC，要證明等腰三角形 ABC 的底角相等。三個句子為：①∠B＝∠C；②△ABC 為等腰三角形；③AB＝AC。合理順序為何？",
+      "givenConditions": [],
+      "target": "排列基礎證明步驟",
+      "choices": [
+        "③②①",
+        "①②③",
+        "②①③",
+        "③①②"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "先從已知 AB＝AC 出發，再依定義判斷 △ABC 是等腰三角形，最後用等腰三角形底角相等。",
+        "result": "③②①"
+      },
+      "explanation": "先從已知 AB＝AC 出發，再依定義判斷 △ABC 是等腰三角形，最後用等腰三角形底角相等。",
+      "steps": [
+        "③ 是已知",
+        "由③得到②",
+        "由②得到①"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "③②①",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；先從已知 AB＝AC 出發，再依定義判斷 △ABC 是等腰三角形，最後用等腰三角形底角相等。"
+        },
+        {
+          "choice": "①②③",
+          "truth": false,
+          "reason": "從結論倒寫且未給理由。"
+        },
+        {
+          "choice": "②①③",
+          "truth": false,
+          "reason": "最後才放已知，依賴順序錯誤。"
+        },
+        {
+          "choice": "③①②",
+          "truth": false,
+          "reason": "尚未建立等腰性質就先下角相等結論。"
+        }
+      ],
+      "misconceptionTarget": "只按句子長短或題目出現順序排列。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「排列基礎證明步驟」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「③②①」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：排列基礎證明步驟。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "d0f10e4577e0334237ca59f61bced25c5b6790d169c307685bb724185528fda8"
+    },
+    {
+      "questionId": "u20-s002-v005",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "已知點 O 到 M、N 的距離相等，要證明 O 在線段 MN 的垂直平分線上。哪個步驟順序合理？",
+      "givenConditions": [],
+      "target": "依條件方向安排證明",
+      "choices": [
+        "先說 O 在垂直平分線上，再推出 OM＝ON",
+        "先指出 OM＝ON，再用等距點在線段垂直平分線上",
+        "只畫一條垂線",
+        "直接宣告結論"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "先使用已知 OM＝ON，再套用「到線段兩端等距的點在線段垂直平分線上」得到結論。",
+        "result": "先指出 OM＝ON，再用等距點在線段垂直平分線上"
+      },
+      "explanation": "先使用已知 OM＝ON，再套用「到線段兩端等距的點在線段垂直平分線上」得到結論。",
+      "steps": [
+        "寫出 OM＝ON",
+        "辨認等距點定理的條件已滿足",
+        "推出 O 在線段 MN 的垂直平分線上"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "先說 O 在垂直平分線上，再推出 OM＝ON",
+          "truth": false,
+          "reason": "這是反方向，且把結論先當成已知。"
+        },
+        {
+          "choice": "先指出 OM＝ON，再用等距點在線段垂直平分線上",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；先使用已知 OM＝ON，再套用「到線段兩端等距的點在線段垂直平分線上」得到結論。"
+        },
+        {
+          "choice": "只畫一條垂線",
+          "truth": false,
+          "reason": "作圖不能自動證成位置。"
+        },
+        {
+          "choice": "直接宣告結論",
+          "truth": false,
+          "reason": "缺少定理連接。"
+        }
+      ],
+      "misconceptionTarget": "混淆定理的條件與結論。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「依條件方向安排證明」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先指出 OM＝ON，再用等距點在線段垂直平分線上」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：依條件方向安排證明。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "fe3228b3e4cfa757ba63efa7e8eee328fb03f6c1320c202dbb358d7193a7b743"
+    },
+    {
+      "questionId": "u20-s002-v006",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "若要藉由三角形全等證明兩線段相等，正確順序為何？",
+      "givenConditions": [],
+      "target": "掌握全等證明的依賴順序",
+      "choices": [
+        "先使用對應邊相等，再證全等",
+        "只比較面積",
+        "從待證邊相等反推全等",
+        "先建立兩三角形全等，再使用對應邊相等"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "「對應邊相等」是全等後才能使用的性質，因此必須先證全等，再取對應邊。",
+        "result": "先建立兩三角形全等，再使用對應邊相等"
+      },
+      "explanation": "「對應邊相等」是全等後才能使用的性質，因此必須先證全等，再取對應邊。",
+      "steps": [
+        "核對全等判定條件",
+        "證明兩三角形全等",
+        "指出目標線段為對應邊"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "先使用對應邊相等，再證全等",
+          "truth": false,
+          "reason": "性質使用時機倒置。"
+        },
+        {
+          "choice": "只比較面積",
+          "truth": false,
+          "reason": "等面積不保證目標邊相等。"
+        },
+        {
+          "choice": "從待證邊相等反推全等",
+          "truth": false,
+          "reason": "資訊通常不足且形成逆向誤用。"
+        },
+        {
+          "choice": "先建立兩三角形全等，再使用對應邊相等",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；「對應邊相等」是全等後才能使用的性質，因此必須先證全等，再取對應邊。"
+        }
+      ],
+      "misconceptionTarget": "先用尚未成立的全等性質。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「掌握全等證明的依賴順序」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先建立兩三角形全等，再使用對應邊相等」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：掌握全等證明的依賴順序。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "8bba6e25d24cf5fcba22ad3074b601cc3f05684f2f8874663b3c2c71bb425cdc"
+    },
+    {
+      "questionId": "u20-s002-v007",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "證明稿：1. l∥m（已知）；2. ∠1＝∠2；3. 所以兩角相等。最需要修正的是什麼？",
+      "givenConditions": [],
+      "target": "診斷步驟中的理由缺口",
+      "choices": [
+        "步驟 1 不應寫已知",
+        "步驟 3 應刪除",
+        "步驟 2 缺少由平行線推出角相等的理由",
+        "整份證明只能用計算"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "第 2 步從平行直接得到角相等時，必須指出角的類型，例如同位角或內錯角相等；第 3 步只是重複。",
+        "result": "步驟 2 缺少由平行線推出角相等的理由"
+      },
+      "explanation": "第 2 步從平行直接得到角相等時，必須指出角的類型，例如同位角或內錯角相等；第 3 步只是重複。",
+      "steps": [
+        "檢查第1步可直接使用",
+        "發現第2步缺理由與角型辨識",
+        "判斷第3步沒有新增內容"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "步驟 1 不應寫已知",
+          "truth": false,
+          "reason": "標示已知有助讀者檢查。"
+        },
+        {
+          "choice": "步驟 3 應刪除",
+          "truth": false,
+          "reason": "雖可刪，但核心缺陷仍是第2步無理由。"
+        },
+        {
+          "choice": "步驟 2 缺少由平行線推出角相等的理由",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；第 2 步從平行直接得到角相等時，必須指出角的類型，例如同位角或內錯角相等；第 3 步只是重複。"
+        },
+        {
+          "choice": "整份證明只能用計算",
+          "truth": false,
+          "reason": "幾何證明可使用性質與文字。"
+        }
+      ],
+      "misconceptionTarget": "把平行線相關的所有角都當作相等。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「診斷步驟中的理由缺口」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「步驟 2 缺少由平行線推出角相等的理由」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：診斷步驟中的理由缺口。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "b0e07852550b71f8fe558022a57bef0adcc270f2bcd45107c9e2111bb748dca9"
+    },
+    {
+      "questionId": "u20-s002-v008",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "四個步驟為 A：寫出兩邊及夾角相等；B：得到對應角相等；C：依 SAS 判定兩三角形全等；D：完成待證平行關係。合理順序為何？",
+      "givenConditions": [],
+      "target": "排列四步複合證明",
+      "choices": [
+        "A→C→B→D",
+        "A→B→C→D",
+        "C→A→D→B",
+        "D→B→A→C"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "先列足夠條件 A，再判定全等 C，接著取得對應角相等 B，最後由角關係證平行 D。",
+        "result": "A→C→B→D"
+      },
+      "explanation": "先列足夠條件 A，再判定全等 C，接著取得對應角相等 B，最後由角關係證平行 D。",
+      "steps": [
+        "A 提供全等條件",
+        "C 建立全等",
+        "B 使用全等後性質",
+        "D 由角相等得到平行"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "A→C→B→D",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；先列足夠條件 A，再判定全等 C，接著取得對應角相等 B，最後由角關係證平行 D。"
+        },
+        {
+          "choice": "A→B→C→D",
+          "truth": false,
+          "reason": "未證全等前不能用對應角。"
+        },
+        {
+          "choice": "C→A→D→B",
+          "truth": false,
+          "reason": "先下全等結論且終點錯置。"
+        },
+        {
+          "choice": "D→B→A→C",
+          "truth": false,
+          "reason": "從待證結論倒推並倒置依賴。"
+        }
+      ],
+      "misconceptionTarget": "知道所有句子但不會依理由先後排序。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「排列四步複合證明」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「A→C→B→D」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：排列四步複合證明。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "8267f3fbe1e11e65d18945cc60eaf1f1bc907b8cfc6f2cc66e003ee3291b8215"
+    },
+    {
+      "questionId": "u20-s002-v009",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "D 是 BC 的中點，且 AD 為公共邊。若另有 ∠BDA＝∠CDA，要證 △BDA≅△CDA，下一步最合理的是什麼？",
+      "givenConditions": [],
+      "target": "規劃含定義轉換的證明步驟",
+      "choices": [
+        "先假設三角形全等",
+        "只使用公共邊",
+        "先證明不相關的周長相等",
+        "先由中點得到兩段相等，再結合公共邊與已知角"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "中點定義給 BD＝DC；配合 AD＝AD 與夾角相等，可用 SAS。",
+        "result": "先由中點得到兩段相等，再結合公共邊與已知角"
+      },
+      "explanation": "中點定義給 BD＝DC；配合 AD＝AD 與夾角相等，可用 SAS。",
+      "steps": [
+        "由 D 是中點得 BD＝DC",
+        "寫出 AD＝AD",
+        "結合夾角相等使用 SAS"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "先假設三角形全等",
+          "truth": false,
+          "reason": "把要建立的結果當前提。"
+        },
+        {
+          "choice": "只使用公共邊",
+          "truth": false,
+          "reason": "一組邊不足以判定全等。"
+        },
+        {
+          "choice": "先證明不相關的周長相等",
+          "truth": false,
+          "reason": "不能直接提供 SAS 所需條件。"
+        },
+        {
+          "choice": "先由中點得到兩段相等，再結合公共邊與已知角",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；中點定義給 BD＝DC；配合 AD＝AD 與夾角相等，可用 SAS。"
+        }
+      ],
+      "misconceptionTarget": "看到中點卻未轉成等長線段。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「規劃含定義轉換的證明步驟」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先由中點得到兩段相等，再結合公共邊與已知角」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：規劃含定義轉換的證明步驟。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "be5d209b648ad94ea4f73d0c073159fac7e1b1149a4b99eb7537185cac7fd19b"
+    },
+    {
+      "questionId": "u20-s002-v010",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "校園無障礙坡道圖例標示兩側護欄平行、橫桿與左護欄垂直。要證橫桿也與右護欄垂直，第一步應做什麼？",
+      "givenConditions": [],
+      "target": "在工程圖例中安排證明步驟",
+      "choices": [
+        "直接依照片外觀判斷",
+        "先把圖例條件翻成幾何敘述，再安排證明鏈",
+        "先寫結論再找數據",
+        "只保留尺寸最大的一項"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "先把圖例轉為 l∥m、n⊥l 等正式條件，再利用一線垂直於兩平行線之一也垂直於另一線的關係。",
+        "result": "先把圖例條件翻成幾何敘述，再安排證明鏈"
+      },
+      "explanation": "先把圖例轉為 l∥m、n⊥l 等正式條件，再利用一線垂直於兩平行線之一也垂直於另一線的關係。",
+      "steps": [
+        "辨認兩側護欄為平行線",
+        "辨認橫桿與其中一線垂直",
+        "選擇平行與垂直的傳遞關係"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "直接依照片外觀判斷",
+          "truth": false,
+          "reason": "照片角度可能失真。"
+        },
+        {
+          "choice": "先把圖例條件翻成幾何敘述，再安排證明鏈",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；先把圖例轉為 l∥m、n⊥l 等正式條件，再利用一線垂直於兩平行線之一也垂直於另一線的關係。"
+        },
+        {
+          "choice": "先寫結論再找數據",
+          "truth": false,
+          "reason": "推理方向倒置。"
+        },
+        {
+          "choice": "只保留尺寸最大的一項",
+          "truth": false,
+          "reason": "尺寸大小與垂直證明無關。"
+        }
+      ],
+      "misconceptionTarget": "未先把情境資料轉成可用條件。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「在工程圖例中安排證明步驟」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先把圖例條件翻成幾何敘述，再安排證明鏈」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在工程圖例中安排證明步驟。",
+      "literacyContextNecessity": "坡道圖例的平行與垂直標記是推理必需資料，不能刪除情境後仍保留同一任務。",
+      "figureId": "fig-u20-proof-ramp-01",
+      "drawingSpecId": "fig-u20-proof-ramp-01",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "0bb3cdcf41aa628165a23783aa31a7bf60c73b06452735d1f93a350e18c8e0d5"
+    },
+    {
+      "questionId": "u20-s002-v011",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "步道規劃書說 A、B、C、D 依序在一直線上，三小段等長。若要證 AC＝BD，最適合的步驟是什麼？",
+      "givenConditions": [],
+      "target": "把規劃語句轉為證明步驟",
+      "choices": [
+        "把『每段同長』轉為 AB＝BC＝CD，再逐段使用",
+        "只看總長是否相同",
+        "把所有點視為中點",
+        "忽略分段順序"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "由 AB＝BC＝CD，可得 AC＝AB＋BC，BD＝BC＋CD；因 AB＝CD，所以兩和相等。",
+        "result": "把『每段同長』轉為 AB＝BC＝CD，再逐段使用"
+      },
+      "explanation": "由 AB＝BC＝CD，可得 AC＝AB＋BC，BD＝BC＋CD；因 AB＝CD，所以兩和相等。",
+      "steps": [
+        "翻譯三段等長",
+        "用線段加法表示 AC 與 BD",
+        "代入 AB＝CD 比較"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "把『每段同長』轉為 AB＝BC＝CD，再逐段使用",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；由 AB＝BC＝CD，可得 AC＝AB＋BC，BD＝BC＋CD；因 AB＝CD，所以兩和相等。"
+        },
+        {
+          "choice": "只看總長是否相同",
+          "truth": false,
+          "reason": "需比較的是兩個重疊區段，不是全線總長。"
+        },
+        {
+          "choice": "把所有點視為中點",
+          "truth": false,
+          "reason": "等分資訊不代表每個點都是同一線段中點。"
+        },
+        {
+          "choice": "忽略分段順序",
+          "truth": false,
+          "reason": "線段加法依賴點的順序。"
+        }
+      ],
+      "misconceptionTarget": "有文字條件卻沒有先轉成等式。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "長度單位未指定，但所有線段使用同一單位，等式有效。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「把規劃語句轉為證明步驟」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「把『每段同長』轉為 AB＝BC＝CD，再逐段使用」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：把規劃語句轉為證明步驟。",
+      "literacyContextNecessity": "步道分段與點序決定線段加法，情境中的『依序』與『等長』不可省略。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "ead49d2a59dcbc5343b9b4e995d0199f334029e5ff6b3200b8817b51d2c5094e"
+    },
+    {
+      "questionId": "u20-s002-v012",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "學生用動態幾何軟體製作證明簡報。老師要檢查其流程，最合理的順序是哪個？",
+      "givenConditions": [],
+      "target": "審查數位證明流程",
+      "choices": [
+        "只確認最後一句與標題相同",
+        "只檢查圖是否漂亮",
+        "先驗證標記代表的條件，再檢查每一步是否依賴前一步",
+        "把不懂的步驟全部刪除"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "先確認軟體中的等長、平行、垂直等標記是否真由題設或建構產生，再逐步檢查敘述與理由，最後核對結論。",
+        "result": "先驗證標記代表的條件，再檢查每一步是否依賴前一步"
+      },
+      "explanation": "先確認軟體中的等長、平行、垂直等標記是否真由題設或建構產生，再逐步檢查敘述與理由，最後核對結論。",
+      "steps": [
+        "核對條件來源",
+        "沿推理依賴順序逐步審查",
+        "確認結論與任務一致"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只確認最後一句與標題相同",
+          "truth": false,
+          "reason": "不能發現中間跳步。"
+        },
+        {
+          "choice": "只檢查圖是否漂亮",
+          "truth": false,
+          "reason": "視覺品質不是證明正確性。"
+        },
+        {
+          "choice": "先驗證標記代表的條件，再檢查每一步是否依賴前一步",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；先確認軟體中的等長、平行、垂直等標記是否真由題設或建構產生，再逐步檢查敘述與理由，最後核對結論。"
+        },
+        {
+          "choice": "把不懂的步驟全部刪除",
+          "truth": false,
+          "reason": "應查明理由，不可任意刪除必要步驟。"
+        }
+      ],
+      "misconceptionTarget": "把簡報呈現效果當成邏輯品質。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「審查數位證明流程」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先驗證標記代表的條件，再檢查每一步是否依賴前一步」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：審查數位證明流程。",
+      "literacyContextNecessity": "動態幾何標記可能來自建構或拖曳外觀，必須審查來源，數位情境改變檢核重點。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "1b364d581f895d9f904a54355b27301795021f5314926dfd57c5b7ac08e843b0"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u20-s002-cr001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "prompt": "已知 D 是 BC 的中點，AD⊥BC。請把下列目標「證明 △ADB≅△ADC」整理成按依賴順序排列的證明步驟，並在每一步後寫理由。",
+      "requiredWork": [
+        "由中點得到 DB＝DC。",
+        "列出 AD＝AD。",
+        "由垂直得到兩直角相等。",
+        "用 SAS 得全等。"
+      ],
+      "standardSolution": [
+        "1. DB＝DC（D 是 BC 的中點）。",
+        "2. AD＝AD（公共邊）。",
+        "3. ∠ADB＝∠ADC＝90°（AD⊥BC）。",
+        "4. △ADB≅△ADC（SAS）。"
+      ],
+      "alternativeMethods": [
+        "亦可把第2、3步對調；只要所有全等條件都在使用 SAS 前建立即可。"
+      ],
+      "reasoningSteps": [
+        "1. DB＝DC（D 是 BC 的中點）。",
+        "2. AD＝AD（公共邊）。",
+        "3. ∠ADB＝∠ADC＝90°（AD⊥BC）。",
+        "4. △ADB≅△ADC（SAS）。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "四個關鍵步驟與理由完整，且 SAS 出現在三項條件之後。"
+        },
+        {
+          "score": 2,
+          "criteria": "全等策略正確，但漏寫一個理由或公共邊。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道要用 SAS 且列出至少兩個正確條件，但順序或理由不完整。"
+        },
+        {
+          "score": 0,
+          "criteria": "先假設全等、只依外觀，或條件不足卻宣告全等。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "依題目所給單位作答；純幾何關係不另加單位。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "把SAS放在條件之前。",
+        "把AD⊥BC誤寫成DB＝DC。",
+        "漏掉公共邊。"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "1. DB＝DC（D 是 BC 的中點）。；2. AD＝AD（公共邊）。；3. ∠ADB＝∠ADC＝90°（AD⊥BC）。；4. △ADB≅△ADC（SAS）。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "c8ffef76246fb703e1189b235b0cc7cf457261da67ffb88041246439576710a0"
+    },
+    {
+      "questionId": "u20-s002-cr002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-proof",
+      "skillId": "geometry-proof-steps",
+      "skillSlot": "s002",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "prompt": "四個句子如下：A. 得到 ∠1＝∠2；B. 由同位角相等判定 l∥m；C. 證明兩個三角形全等；D. 列出兩邊及夾角相等。請排列合理順序，並解釋每一個前一步如何支持下一步。",
+      "requiredWork": [
+        "排列 D→C→A→B。",
+        "說明全等條件、全等後性質、平行判定的依賴。"
+      ],
+      "standardSolution": [
+        "合理順序為 D→C→A→B。",
+        "D 提供 SAS 所需條件；C 建立兩三角形全等；由全等三角形對應角相等得到 A；最後因 ∠1、∠2 是同位角且相等，使用平行線判定得到 B。"
+      ],
+      "alternativeMethods": [
+        "若題圖中的 ∠1、∠2 是內錯角，最後一步可改用內錯角相等判定平行；其餘依賴順序不變。"
+      ],
+      "reasoningSteps": [
+        "合理順序為 D→C→A→B。",
+        "D 提供 SAS 所需條件；C 建立兩三角形全等；由全等三角形對應角相等得到 A；最後因 ∠1、∠2 是同位角且相等，使用平行線判定得到 B。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "順序完全正確，並清楚說明三段依賴關係。"
+        },
+        {
+          "score": 2,
+          "criteria": "順序正確但只解釋其中兩段，或最後角型名稱寫錯但知道用等角判平行。"
+        },
+        {
+          "score": 1,
+          "criteria": "能把 D 放在 C 前、C 放在 A 前，但最後兩步不明確。"
+        },
+        {
+          "score": 0,
+          "criteria": "從平行結論倒推、把對應角相等用在全等前，或未作答。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "依題目所給單位作答；純幾何關係不另加單位。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "C放在D之前。",
+        "全等前先使用對應角性質。",
+        "只列順序不解釋。"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "合理順序為 D→C→A→B。；D 提供 SAS 所需條件；C 建立兩三角形全等；由全等三角形對應角相等得到 A；最後因 ∠1、∠2 是同位角且相等，使用平行線判定得到 B。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "dd9e059cb805d9f5f9d6eafdbc39a36df4f95c411a7f15f9775e3375ad4f7196"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u20-s002-v001",
+      "contentSha256": "ffb1d8a3eebea61f4f0fdd4ba35d61d08ef1717f0649614d2cfa17801ebfafbd",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "先整理題目給定的條件與要證明的目標，才能判斷可用性質與推理方向。",
+      "derivedAnswer": "先列已知與待證",
+      "storedAnswer": "先列已知與待證",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先列已知與待證」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「未整理題意就直接運算或套定理。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：掌握證明起始步驟。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「開始撰寫幾何證明時，第一個最穩健的動作是什麼？」要求掌握證明起始步驟。獨立推導為：先整理題目給定的條件與要證明的目標，才能判斷可用性質與推理方向。 四選項依序判定：先猜結論=假，結論已由題目指定，不需猜。；先列已知與待證=真，依獨立推導可得到此結果；先整理題目給定的條件與要證明的目標，才能判斷可用性質與推理方向。；先量圖形=假，量測不是證明起點。；先寫所有定理=假，未對應題目的定理清單無法形成推理。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "57e36550e8b28b8c4e7e5a8258eafe51fe05c3676b26e77e565051402f91ff84"
+    },
+    {
+      "questionId": "u20-s002-v002",
+      "contentSha256": "13c9f4ba29e8dacbff587528d19653dfffd2f0ba5664993c40da10df98f388e9",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "每個新敘述旁附對應理由，讀者才能逐步確認推論是否合法。",
+      "derivedAnswer": "敘述與理由成對排列",
+      "storedAnswer": "敘述與理由成對排列",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「敘述與理由成對排列」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把證明當成答案而不是推理鏈。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：理解證明步驟的呈現方式。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「下列哪一種寫法最能讓讀者檢查證明過程？」要求理解證明步驟的呈現方式。獨立推導為：每個新敘述旁附對應理由，讀者才能逐步確認推論是否合法。 四選項依序判定：只列理由不列敘述=假，不知道理由支持哪個結果。；只寫結論=假，看不到推導。；敘述與理由成對排列=真，依獨立推導可得到此結果；每個新敘述旁附對應理由，讀者才能逐步確認推論是否合法。；把圖形放大=假，圖形大小不改善邏輯。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "487aea60d7257468f59bd1e017266c4a744d3dbabaf09890ee8f94f63fdfd2c6"
+    },
+    {
+      "questionId": "u20-s002-v003",
+      "contentSha256": "c3a657d2a35bbd35b7b8f39f166d1ca0ec3e91483cae1b8332a8206d0989e06d",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "需要找出能連接已知與結論的中間關係，並逐步證明。",
+      "derivedAnswer": "先證明中間關係，再推出最後結論",
+      "storedAnswer": "先證明中間關係，再推出最後結論",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先證明中間關係，再推出最後結論」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把多步問題寫成沒有理由的一步。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：建立中間步驟概念。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「若待證結論不能由已知一步得到，應如何處理？」要求建立中間步驟概念。獨立推導為：需要找出能連接已知與結論的中間關係，並逐步證明。 四選項依序判定：中間關係可以省略=假，省略會造成跳步。；先把最後結論當已知=假，形成循環論證。；步驟順序任意=假，理由必須先於依賴它的結論。；先證明中間關係，再推出最後結論=真，依獨立推導可得到此結果；需要找出能連接已知與結論的中間關係，並逐步證明。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "8cb660580f3a671d1f6550b0bf2f22fdee16968d50de977b1913a0da3f04d5a2"
+    },
+    {
+      "questionId": "u20-s002-v004",
+      "contentSha256": "d0f10e4577e0334237ca59f61bced25c5b6790d169c307685bb724185528fda8",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "先從已知 AB＝AC 出發，再依定義判斷 △ABC 是等腰三角形，最後用等腰三角形底角相等。",
+      "derivedAnswer": "③②①",
+      "storedAnswer": "③②①",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「③②①」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「只按句子長短或題目出現順序排列。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：排列基礎證明步驟。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「已知 AB＝AC，要證明等腰三角形 ABC 的底角相等。三個句子為：①∠B＝∠C；②△ABC 為等腰三角形；③AB＝AC。合理順序為何？」要求排列基礎證明步驟。獨立推導為：先從已知 AB＝AC 出發，再依定義判斷 △ABC 是等腰三角形，最後用等腰三角形底角相等。 四選項依序判定：③②①=真，依獨立推導可得到此結果；先從已知 AB＝AC 出發，再依定義判斷 △ABC 是等腰三角形，最後用等腰三角形底角相等。；①②③=假，從結論倒寫且未給理由。；②①③=假，最後才放已知，依賴順序錯誤。；③①②=假，尚未建立等腰性質就先下角相等結論。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "c7b926db951b88d766dea857ac1c468365fdc38569e84b33453079ae1aa882ea"
+    },
+    {
+      "questionId": "u20-s002-v005",
+      "contentSha256": "fe3228b3e4cfa757ba63efa7e8eee328fb03f6c1320c202dbb358d7193a7b743",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "先使用已知 OM＝ON，再套用「到線段兩端等距的點在線段垂直平分線上」得到結論。",
+      "derivedAnswer": "先指出 OM＝ON，再用等距點在線段垂直平分線上",
+      "storedAnswer": "先指出 OM＝ON，再用等距點在線段垂直平分線上",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先指出 OM＝ON，再用等距點在線段垂直平分線上」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「混淆定理的條件與結論。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：依條件方向安排證明。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「已知點 O 到 M、N 的距離相等，要證明 O 在線段 MN 的垂直平分線上。哪個步驟順序合理？」要求依條件方向安排證明。獨立推導為：先使用已知 OM＝ON，再套用「到線段兩端等距的點在線段垂直平分線上」得到結論。 四選項依序判定：先說 O 在垂直平分線上，再推出 OM＝ON=假，這是反方向，且把結論先當成已知。；先指出 OM＝ON，再用等距點在線段垂直平分線上=真，依獨立推導可得到此結果；先使用已知 OM＝ON，再套用「到線段兩端等距的點在線段垂直平分線上」得到結論。；只畫一條垂線=假，作圖不能自動證成位置。；直接宣告結論=假，缺少定理連接。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "59b32d5a894ffc891621feda95ea378cf803799b99e1a15caa57ed012af49327"
+    },
+    {
+      "questionId": "u20-s002-v006",
+      "contentSha256": "8bba6e25d24cf5fcba22ad3074b601cc3f05684f2f8874663b3c2c71bb425cdc",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "「對應邊相等」是全等後才能使用的性質，因此必須先證全等，再取對應邊。",
+      "derivedAnswer": "先建立兩三角形全等，再使用對應邊相等",
+      "storedAnswer": "先建立兩三角形全等，再使用對應邊相等",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先建立兩三角形全等，再使用對應邊相等」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「先用尚未成立的全等性質。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：掌握全等證明的依賴順序。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「若要藉由三角形全等證明兩線段相等，正確順序為何？」要求掌握全等證明的依賴順序。獨立推導為：「對應邊相等」是全等後才能使用的性質，因此必須先證全等，再取對應邊。 四選項依序判定：先使用對應邊相等，再證全等=假，性質使用時機倒置。；只比較面積=假，等面積不保證目標邊相等。；從待證邊相等反推全等=假，資訊通常不足且形成逆向誤用。；先建立兩三角形全等，再使用對應邊相等=真，依獨立推導可得到此結果；「對應邊相等」是全等後才能使用的性質，因此必須先證全等，再取對應邊。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "3c7d38693826417fe53da12a113aac84d2fa710bf8021b4d9cef86fb69cb86f0"
+    },
+    {
+      "questionId": "u20-s002-v007",
+      "contentSha256": "b0e07852550b71f8fe558022a57bef0adcc270f2bcd45107c9e2111bb748dca9",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "第 2 步從平行直接得到角相等時，必須指出角的類型，例如同位角或內錯角相等；第 3 步只是重複。",
+      "derivedAnswer": "步驟 2 缺少由平行線推出角相等的理由",
+      "storedAnswer": "步驟 2 缺少由平行線推出角相等的理由",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「步驟 2 缺少由平行線推出角相等的理由」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把平行線相關的所有角都當作相等。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：診斷步驟中的理由缺口。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「證明稿：1. l∥m（已知）；2. ∠1＝∠2；3. 所以兩角相等。最需要修正的是什麼？」要求診斷步驟中的理由缺口。獨立推導為：第 2 步從平行直接得到角相等時，必須指出角的類型，例如同位角或內錯角相等；第 3 步只是重複。 四選項依序判定：步驟 1 不應寫已知=假，標示已知有助讀者檢查。；步驟 3 應刪除=假，雖可刪，但核心缺陷仍是第2步無理由。；步驟 2 缺少由平行線推出角相等的理由=真，依獨立推導可得到此結果；第 2 步從平行直接得到角相等時，必須指出角的類型，例如同位角或內錯角相等；第 3 步只是重複。；整份證明只能用計算=假，幾何證明可使用性質與文字。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "470dbc67ee1e9723a7b8548c37ed3eab54b3777eb7a966dccb3def7c4bf329c6"
+    },
+    {
+      "questionId": "u20-s002-v008",
+      "contentSha256": "8267f3fbe1e11e65d18945cc60eaf1f1bc907b8cfc6f2cc66e003ee3291b8215",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "先列足夠條件 A，再判定全等 C，接著取得對應角相等 B，最後由角關係證平行 D。",
+      "derivedAnswer": "A→C→B→D",
+      "storedAnswer": "A→C→B→D",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「A→C→B→D」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「知道所有句子但不會依理由先後排序。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：排列四步複合證明。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「四個步驟為 A：寫出兩邊及夾角相等；B：得到對應角相等；C：依 SAS 判定兩三角形全等；D：完成待證平行關係。合理順序為何？」要求排列四步複合證明。獨立推導為：先列足夠條件 A，再判定全等 C，接著取得對應角相等 B，最後由角關係證平行 D。 四選項依序判定：A→C→B→D=真，依獨立推導可得到此結果；先列足夠條件 A，再判定全等 C，接著取得對應角相等 B，最後由角關係證平行 D。；A→B→C→D=假，未證全等前不能用對應角。；C→A→D→B=假，先下全等結論且終點錯置。；D→B→A→C=假，從待證結論倒推並倒置依賴。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "da022e710089dce46d8fee1cd5886e9f28be67dbba3c2fc96712179765a22b6e"
+    },
+    {
+      "questionId": "u20-s002-v009",
+      "contentSha256": "be5d209b648ad94ea4f73d0c073159fac7e1b1149a4b99eb7537185cac7fd19b",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "中點定義給 BD＝DC；配合 AD＝AD 與夾角相等，可用 SAS。",
+      "derivedAnswer": "先由中點得到兩段相等，再結合公共邊與已知角",
+      "storedAnswer": "先由中點得到兩段相等，再結合公共邊與已知角",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先由中點得到兩段相等，再結合公共邊與已知角」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「看到中點卻未轉成等長線段。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：規劃含定義轉換的證明步驟。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「D 是 BC 的中點，且 AD 為公共邊。若另有 ∠BDA＝∠CDA，要證 △BDA≅△CDA，下一步最合理的是什麼？」要求規劃含定義轉換的證明步驟。獨立推導為：中點定義給 BD＝DC；配合 AD＝AD 與夾角相等，可用 SAS。 四選項依序判定：先假設三角形全等=假，把要建立的結果當前提。；只使用公共邊=假，一組邊不足以判定全等。；先證明不相關的周長相等=假，不能直接提供 SAS 所需條件。；先由中點得到兩段相等，再結合公共邊與已知角=真，依獨立推導可得到此結果；中點定義給 BD＝DC；配合 AD＝AD 與夾角相等，可用 SAS。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "66ef0aa85a557d54455850e364be20678673a0aba2a20d365ac1fcf6a84dee2d"
+    },
+    {
+      "questionId": "u20-s002-v010",
+      "contentSha256": "0bb3cdcf41aa628165a23783aa31a7bf60c73b06452735d1f93a350e18c8e0d5",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "先把圖例轉為 l∥m、n⊥l 等正式條件，再利用一線垂直於兩平行線之一也垂直於另一線的關係。",
+      "derivedAnswer": "先把圖例條件翻成幾何敘述，再安排證明鏈",
+      "storedAnswer": "先把圖例條件翻成幾何敘述，再安排證明鏈",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先把圖例條件翻成幾何敘述，再安排證明鏈」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「未先把情境資料轉成可用條件。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在工程圖例中安排證明步驟。",
+      "literacyContextNecessity": "坡道圖例的平行與垂直標記是推理必需資料，不能刪除情境後仍保留同一任務。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「校園無障礙坡道圖例標示兩側護欄平行、橫桿與左護欄垂直。要證橫桿也與右護欄垂直，第一步應做什麼？」要求在工程圖例中安排證明步驟。獨立推導為：先把圖例轉為 l∥m、n⊥l 等正式條件，再利用一線垂直於兩平行線之一也垂直於另一線的關係。 四選項依序判定：直接依照片外觀判斷=假，照片角度可能失真。；先把圖例條件翻成幾何敘述，再安排證明鏈=真，依獨立推導可得到此結果；先把圖例轉為 l∥m、n⊥l 等正式條件，再利用一線垂直於兩平行線之一也垂直於另一線的關係。；先寫結論再找數據=假，推理方向倒置。；只保留尺寸最大的一項=假，尺寸大小與垂直證明無關。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "1de5c6a781837f264d1ee3e70e3d9238c2ec5cfb3ab58580f7134f92b04e0a9f"
+    },
+    {
+      "questionId": "u20-s002-v011",
+      "contentSha256": "ead49d2a59dcbc5343b9b4e995d0199f334029e5ff6b3200b8817b51d2c5094e",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "由 AB＝BC＝CD，可得 AC＝AB＋BC，BD＝BC＋CD；因 AB＝CD，所以兩和相等。",
+      "derivedAnswer": "把『每段同長』轉為 AB＝BC＝CD，再逐段使用",
+      "storedAnswer": "把『每段同長』轉為 AB＝BC＝CD，再逐段使用",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「把『每段同長』轉為 AB＝BC＝CD，再逐段使用」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "長度單位未指定，但所有線段使用同一單位，等式有效。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「有文字條件卻沒有先轉成等式。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：把規劃語句轉為證明步驟。",
+      "literacyContextNecessity": "步道分段與點序決定線段加法，情境中的『依序』與『等長』不可省略。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「步道規劃書說 A、B、C、D 依序在一直線上，三小段等長。若要證 AC＝BD，最適合的步驟是什麼？」要求把規劃語句轉為證明步驟。獨立推導為：由 AB＝BC＝CD，可得 AC＝AB＋BC，BD＝BC＋CD；因 AB＝CD，所以兩和相等。 四選項依序判定：把『每段同長』轉為 AB＝BC＝CD，再逐段使用=真，依獨立推導可得到此結果；由 AB＝BC＝CD，可得 AC＝AB＋BC，BD＝BC＋CD；因 AB＝CD，所以兩和相等。；只看總長是否相同=假，需比較的是兩個重疊區段，不是全線總長。；把所有點視為中點=假，等分資訊不代表每個點都是同一線段中點。；忽略分段順序=假，線段加法依賴點的順序。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "e443ade1e2642fddc97f39af843556a57137c82a5c8e4ef544c1d011590a0388"
+    },
+    {
+      "questionId": "u20-s002-v012",
+      "contentSha256": "1b364d581f895d9f904a54355b27301795021f5314926dfd57c5b7ac08e843b0",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "先確認軟體中的等長、平行、垂直等標記是否真由題設或建構產生，再逐步檢查敘述與理由，最後核對結論。",
+      "derivedAnswer": "先驗證標記代表的條件，再檢查每一步是否依賴前一步",
+      "storedAnswer": "先驗證標記代表的條件，再檢查每一步是否依賴前一步",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先驗證標記代表的條件，再檢查每一步是否依賴前一步」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把簡報呈現效果當成邏輯品質。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：審查數位證明流程。",
+      "literacyContextNecessity": "動態幾何標記可能來自建構或拖曳外觀，必須審查來源，數位情境改變檢核重點。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「學生用動態幾何軟體製作證明簡報。老師要檢查其流程，最合理的順序是哪個？」要求審查數位證明流程。獨立推導為：先確認軟體中的等長、平行、垂直等標記是否真由題設或建構產生，再逐步檢查敘述與理由，最後核對結論。 四選項依序判定：只確認最後一句與標題相同=假，不能發現中間跳步。；只檢查圖是否漂亮=假，視覺品質不是證明正確性。；先驗證標記代表的條件，再檢查每一步是否依賴前一步=真，依獨立推導可得到此結果；先確認軟體中的等長、平行、垂直等標記是否真由題設或建構產生，再逐步檢查敘述與理由，最後核對結論。；把不懂的步驟全部刪除=假，應查明理由，不可任意刪除必要步驟。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "4ec66598cb799334eaab968c7026c00d732cfcee345b8550d660e3c15bb7fb66"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u20-proof-ramp-01",
+      "unitId": "u20",
+      "ownerSkillSlot": "s002",
+      "title": "坡道護欄平行與垂直圖",
+      "description": "兩側護欄l、m以平行箭頭標示，橫桿n與左護欄l有直角標記。",
+      "canvas": {
+        "width": 480,
+        "height": 320,
+        "viewBox": "0 0 480 320"
+      },
+      "coordinates": {
+        "l": [
+          [
+            80,
+            250
+          ],
+          [
+            210,
+            65
+          ]
+        ],
+        "m": [
+          [
+            270,
+            270
+          ],
+          [
+            400,
+            85
+          ]
+        ],
+        "n": [
+          [
+            150,
+            150
+          ],
+          [
+            335,
+            190
+          ]
+        ]
+      },
+      "visibleLineRules": "實線表示題設中的線段或道路；虛線表示延長線或輔助線；直角方框、等長刻痕與平行箭頭只在題設提供時使用。",
+      "hiddenLineRules": "本單元為平面圖，不使用立體隱線；未畫出的關係不得自行假設。",
+      "labels": "所有點名放在點外側至少8像素；避免壓在線段或直角記號上。",
+      "toScale": false,
+      "visualInferenceWarning": "圖形未按比例，不可用外觀估計未標示的長度或角度。",
+      "altText": "兩條斜護欄l、m有相同平行箭頭；橫桿n穿過兩線，n與l交點有直角記號。",
+      "svgTitle": "坡道護欄平行與垂直圖",
+      "svgDesc": "兩側護欄l、m以平行箭頭標示，橫桿n與左護欄l有直角標記。",
+      "mobileReadabilityReview": "在寬度320像素縮放下，主要線段、直角記號與標籤仍可辨認；字級不小於16。",
+      "answerLeakageReview": "圖中只呈現題設標記與辨識所需結構，不標示選項答案、中心名稱結論或未給定數值。",
+      "geometryAssertions": [
+        "l與m有平行標記",
+        "n與l有直角標記",
+        "n與m無預先直角標記"
+      ],
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ]
+};
+export default skillBundle;

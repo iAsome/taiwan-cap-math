@@ -1,0 +1,218 @@
+{
+  "lectureId": "u04-s008-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-apps",
+  "skillId": "system-word-setup-basic",
+  "lockedSkillTitle": "情境列聯立方程式",
+  "title": "情境列聯立方程式：先定義未知數，再翻譯兩個條件",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "情境列聯立方程式",
+    "scope": "定義兩個未知數，將兩個獨立條件翻成兩個一次方程式。"
+  },
+  "prerequisiteBridge": "先備技能 system-special-cases 已建立必要基礎；本節將其用於「定義兩個未知數，將兩個獨立條件翻成兩個一次方程式。」",
+  "learningGoals": [
+    "能清楚定義 x、y 及其單位。",
+    "能從總數、總價、差額或倍數關係列式。",
+    "能辨認兩個方程式是否提供獨立條件。",
+    "能在解後把數值翻回情境並檢查合理性。"
+  ],
+  "vocabulary": [
+    {
+      "term": "設未知數",
+      "definition": "指定字母代表的量與單位。"
+    },
+    {
+      "term": "數量關係",
+      "definition": "描述件數、人數、長度等的等式。"
+    },
+    {
+      "term": "總量",
+      "definition": "各部分相加後的整體。"
+    },
+    {
+      "term": "限制條件",
+      "definition": "答案在情境中必須符合的範圍，例如非負整數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "設 x 為甲的數量",
+      "meaning": "必須同時說明單位。"
+    },
+    {
+      "symbol": "x+y=T",
+      "meaning": "兩部分總數為 T。"
+    },
+    {
+      "symbol": "ax+by=M",
+      "meaning": "單價乘數量後的總金額。"
+    }
+  ],
+  "conceptDevelopment": [
+    "文字題最重要的不是立刻計算，而是先說清楚字母代表什麼。",
+    "每個句子可能提供一個等量關係；把單位相同的量放在同一方程式。",
+    "解出後要檢查是否符合人數、件數或金額的限制。"
+  ],
+  "definitions": [
+    {
+      "name": "數學模型",
+      "statement": "用未知數與方程式表示情境關係。"
+    },
+    {
+      "name": "獨立條件",
+      "statement": "能進一步限制未知數，而不是同一句話的重複。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "部分一+部分二=總量",
+      "conditions": [
+        "兩部分互不重疊且涵蓋全部。"
+      ],
+      "meaning": "建立總數式。"
+    },
+    {
+      "formula": "單價一×數量一+單價二×數量二=總價",
+      "conditions": [
+        "價格與數量單位相容。"
+      ],
+      "meaning": "建立金額式。"
+    }
+  ],
+  "invalidUseCases": [
+    "未定義 x、y 就列式會使式子意義不明。",
+    "不同單位不可直接相加。",
+    "題目問數量時，負數或非整數通常不合理。",
+    "兩個完全相同的方程式不足以唯一決定兩未知數。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "讀題並列出兩個未知量",
+      "check": "附上單位。"
+    },
+    {
+      "step": 2,
+      "instruction": "找第一個等量關係",
+      "check": "常是總數或總長。"
+    },
+    {
+      "step": 3,
+      "instruction": "找第二個獨立關係",
+      "check": "常是總價、差額或倍數。"
+    },
+    {
+      "step": 4,
+      "instruction": "列聯立並求解",
+      "check": "選適當方法。"
+    },
+    {
+      "step": 5,
+      "instruction": "回到情境檢查",
+      "check": "單位、整數性、範圍。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩數和 18，差 4。",
+      "solutionSteps": [
+        "設較大數 x、較小數 y。",
+        "列 x+y=18、x-y=4。",
+        "解得 x=11、y=7。"
+      ],
+      "answer": "兩數為 11、7。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "甲乙共有 30 人，甲比乙多 6 人。",
+      "solutionSteps": [
+        "設甲 x 人、乙 y 人。",
+        "x+y=30、x-y=6。"
+      ],
+      "answer": "模型正確。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩種筆共 12 枝，單價 10 元與 15 元，總價 150 元。",
+      "solutionSteps": [
+        "設兩種筆各 x、y 枝。",
+        "x+y=12。",
+        "10x+15y=150。"
+      ],
+      "answer": "可解得 x=6、y=6。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "檢查模型 x+y=20、2x+2y=40。",
+      "solutionSteps": [
+        "第二式只是第一式乘 2。",
+        "沒有第二個獨立資訊。"
+      ],
+      "answer": "不能唯一決定 x、y。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只寫 x、y 不說代表什麼",
+      "correction": "答案無法和情境對應。"
+    },
+    {
+      "mistake": "總價式漏乘單價",
+      "correction": "金額應為單價乘數量。"
+    },
+    {
+      "mistake": "把「甲比乙多 5」寫成 x+y=5",
+      "correction": "正確關係是 x-y=5 或 x=y+5。"
+    },
+    {
+      "mistake": "解出負件數仍接受",
+      "correction": "需做情境合理性檢查。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "「共 40 個」通常列什麼？",
+      "answer": "x+y=40。"
+    },
+    {
+      "prompt": "「甲比乙少 3」如何列？",
+      "answer": "y-x=3 或 x=y-3。"
+    },
+    {
+      "prompt": "總價式每項單位？",
+      "answer": "元/件×件=元。"
+    },
+    {
+      "prompt": "最後為何要檢查？",
+      "answer": "代數解可能不符合情境限制。"
+    }
+  ],
+  "summary": [
+    "先定義未知數與單位。",
+    "兩個方程式要來自兩個獨立條件。",
+    "解後檢查整數、非負與單位。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-special-cases 已建立必要基礎；本節將其用於「定義兩個未知數，將兩個獨立條件翻成兩個一次方程式。」",
+    "next": "下一技能「雞兔同籠問題」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "所有例題均先定義未知數再列式，並加入相依方程式的反例；未將特定雞兔、票價或速率技巧混入本節核心。",
+    "reviewNote": "所有例題均先定義未知數再列式，並加入相依方程式的反例；未將特定雞兔、票價或速率技巧混入本節核心。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "6ab8bfb66fd96e75e9462a60955ee224edc267a903988fd3226fc79eb92a3d41"
+}

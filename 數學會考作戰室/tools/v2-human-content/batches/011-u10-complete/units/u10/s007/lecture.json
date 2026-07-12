@@ -1,0 +1,194 @@
+{
+  "lectureId": "u10-s007-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-operations",
+  "skillId": "monomial-polynomial-distribute",
+  "lockedTitle": "單項式乘多項式",
+  "title": "單項式乘多項式：分配律必須乘到每一項",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能把括號外單項式逐項相乘。",
+    "能處理括號內負項與缺項。",
+    "能先分配再合併所得同類項。"
+  ],
+  "prerequisites": [
+    "monomial-multiply"
+  ],
+  "prerequisiteBridge": "先備技能 monomial-multiply 已建立下一步所需概念；本節專注於用分配律乘遍每一項並整理。",
+  "glossary": [
+    {
+      "term": "分配律",
+      "definition": "a(b+c)=ab+ac。"
+    },
+    {
+      "term": "漏乘",
+      "definition": "括號內某項沒有乘到外面的因數。"
+    },
+    {
+      "term": "展開",
+      "definition": "去除乘法括號並寫成多項式。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "−2x(3x²−x+4)",
+      "meaning": "−2x 分別乘 3x²、−x、4。"
+    }
+  ],
+  "conceptNarrative": [
+    "括號表示整個多項式都乘同一個單項式。",
+    "每一項連同自己的符號一起相乘。",
+    "展開後若出現同類項，再做合併。",
+    "可用項數檢查：沒有抵消前，n 項通常會產生 n 個乘積項。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "單項式對多項式的分配",
+      "statement": "m(A+B+…)=mA+mB+…。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "axᵐ(bxⁿ+c)=abxᵐ⁺ⁿ+ac",
+      "conditions": [
+        "所有括號內項都乘 axᵐ"
+      ],
+      "meaning": "分配律與指數律合用。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只乘第一項。",
+    "括號內負號不能忽略。",
+    "分配後不同次方不能任意合併。",
+    "若外因數為 0，整式結果為 0。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標記括號內每一項。",
+      "check": "完成此步後，確認內容仍符合「用分配律乘遍每一項並整理」。"
+    },
+    {
+      "step": 2,
+      "instruction": "外單項式與第一項相乘。",
+      "check": "完成此步後，確認內容仍符合「用分配律乘遍每一項並整理」。"
+    },
+    {
+      "step": 3,
+      "instruction": "依序乘完其餘各項並保留符號。",
+      "check": "完成此步後，確認內容仍符合「用分配律乘遍每一項並整理」。"
+    },
+    {
+      "step": 4,
+      "instruction": "合併可能出現的同類項。",
+      "check": "完成此步後，確認內容仍符合「用分配律乘遍每一項並整理」。"
+    },
+    {
+      "step": 5,
+      "instruction": "用代入值檢查展開前後相等。",
+      "check": "完成此步後，確認內容仍符合「用分配律乘遍每一項並整理」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "3x(2x²−5)。",
+      "solutionSteps": [
+        "3x·2x²=6x³；3x·(-5)=-15x。"
+      ],
+      "answer": "6x³-15x。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "−2a(3a²−a+4)。",
+      "solutionSteps": [
+        "逐項得 -6a³、+2a²、-8a。"
+      ],
+      "answer": "-6a³+2a²-8a。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "x(x+2)+3x。",
+      "solutionSteps": [
+        "先展開 x²+2x，再合併 3x。"
+      ],
+      "answer": "x²+5x。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "漏乘常數項",
+      "why": "只注意含未知數的項",
+      "correction": "用箭頭逐項標記。"
+    },
+    {
+      "mistake": "負數乘負項仍寫負",
+      "why": "符號運算錯誤",
+      "correction": "先單獨判正負。"
+    },
+    {
+      "mistake": "把 2x·3 寫成 6x²",
+      "why": "常數 3 沒有 x",
+      "correction": "文字指數只加實際存在的 0。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能把括號外單項式逐項相乘？",
+    "我是否能能處理括號內負項與缺項？",
+    "我是否能能先分配再合併所得同類項？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "外因數要乘括號內每一項。",
+    "項的符號一起參與乘法。",
+    "先展開再合併。",
+    "可代入簡單值驗證。"
+  ],
+  "connections": {
+    "previous": "上一技能 單項式乘法 提供本節所需工具。",
+    "next": [
+      "下一節兩個二項式相乘，每一項都要與另一括號的每一項配對。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibility": {
+    "figureAltTextsRequired": false,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s007-v001",
+      "u10-s007-v002",
+      "u10-s007-v003",
+      "u10-s007-v004",
+      "u10-s007-v005",
+      "u10-s007-v006",
+      "u10-s007-v007",
+      "u10-s007-v008",
+      "u10-s007-v009",
+      "u10-s007-v010",
+      "u10-s007-v011",
+      "u10-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s007-cr001",
+      "u10-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「單項式乘多項式：分配律必須乘到每一項」：定義、3 個例題、錯誤推理與下一技能銜接均針對 monomial-polynomial-distribute；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "c030d5c003a33f5f87429cf6edf590c20b937f43657b879d03438cf9594024e7"
+}

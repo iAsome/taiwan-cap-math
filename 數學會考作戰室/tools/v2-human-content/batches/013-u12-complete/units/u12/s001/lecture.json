@@ -1,0 +1,247 @@
+{
+  "lectureId": "u12-s001-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-methods",
+  "skillId": "factoring-common",
+  "lockedSkillTitle": "提公因式",
+  "title": "提公因式：先找每一項共同擁有的部分",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明因式分解是乘法展開的逆運算。",
+    "能找出多項式各項的最大公因式。",
+    "能處理數字、字母與次方同時出現的公因式。",
+    "能辨認共同括號也是公因式。",
+    "能展開檢查分解結果。"
+  ],
+  "prerequisites": [],
+  "prerequisiteBridge": "本技能為本單元起點，先從分配律的逆運算建立概念。",
+  "glossary": [
+    {
+      "term": "因式",
+      "definition": "相乘後形成原式的每一個乘數。"
+    },
+    {
+      "term": "因式分解",
+      "definition": "把多項式改寫成兩個或更多因式相乘。"
+    },
+    {
+      "term": "公因式",
+      "definition": "每一項都含有的共同乘數。"
+    },
+    {
+      "term": "最大公因式",
+      "definition": "可提出的共同部分中，數字係數最大且字母次方取最低者。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ab",
+      "meaning": "a 與 b 相乘。"
+    },
+    {
+      "symbol": "x^2",
+      "meaning": "x 的平方，也就是 x·x。"
+    },
+    {
+      "symbol": "k(A+B)",
+      "meaning": "k 是括號 A+B 的共同因式。"
+    }
+  ],
+  "conceptNarrative": [
+    "展開使用分配律 kA+kB=k(A+B) 的反方向，就是提公因式。",
+    "找數字公因式時看所有係數的最大公因數；找字母時只保留每項都有的字母，次方取最低。",
+    "提出後，括號內每一項都要用原項除以公因式，不能漏項。",
+    "若多項式首項為負，有時提出負公因式可讓括號首項為正，後續較易判讀。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "提公因式",
+      "statement": "若每一項都可寫成 g 乘某式，則把 g 提出，形成 g(各項除以 g 的結果)。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "ga+gb=g(a+b)",
+      "conditions": [
+        "g 同時整除兩項或同時是兩項的因式"
+      ],
+      "meaning": "分配律的逆運算。"
+    },
+    {
+      "formula": "ax+ay+az=a(x+y+z)",
+      "conditions": [
+        "三項都含因式 a"
+      ],
+      "meaning": "多項共同因式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只在部分項含有某字母時，不能把該字母提出。",
+    "提出的數若不能整除所有係數，就不是公因式。",
+    "分解結果仍是加減式而沒有乘積形式，尚未完成因式分解。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出每項係數的最大公因數。",
+      "check": "檢查數字是否能整除每一項。"
+    },
+    {
+      "step": 2,
+      "instruction": "找每項共有的字母，次方取最低。",
+      "check": "例如 x^3、x^2、x 共同部分是 x。"
+    },
+    {
+      "step": 3,
+      "instruction": "把共同部分寫在括號外。",
+      "check": "若首項為負，評估是否提出負號。"
+    },
+    {
+      "step": 4,
+      "instruction": "每項除以公因式寫入括號。",
+      "check": "逐項相乘是否回到原項？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查括號內是否還能再提出。",
+      "check": "目標是完整分解。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "18x+24",
+      "solutionSteps": [
+        "18 與 24 的最大公因數是 6。",
+        "兩項都沒有共同字母。",
+        "18x÷6=3x，24÷6=4。"
+      ],
+      "answer": "6(3x+4)"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "12a^2b-18ab^2",
+      "solutionSteps": [
+        "係數公因數為 6。",
+        "字母共同有 a、b，最低次方各為 1。",
+        "除回括號得到 2a 與 -3b。"
+      ],
+      "answer": "6ab(2a-3b)"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "-14y^3+21y^2",
+      "solutionSteps": [
+        "共同部分可取 7y^2。",
+        "提出 -7y^2 使括號首項為正。",
+        "展開 -7y^2(2y-3) 得原式。"
+      ],
+      "answer": "-7y^2(2y-3)"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "5m(m+2)-3(m+2)",
+      "solutionSteps": [
+        "兩項共同因式不是單一字母，而是整個括號 m+2。",
+        "分別除以 m+2 得 5m 與 -3。"
+      ],
+      "answer": "(m+2)(5m-3)"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "只提出數字，漏掉共同字母。",
+      "why": "沒有逐項比較字母。",
+      "correction": "係數與字母都要檢查。"
+    },
+    {
+      "mistake": "把最高次方提出。",
+      "why": "誤以為越大越好。",
+      "correction": "共同次方必須取最低，否則低次項無法整除。"
+    },
+    {
+      "mistake": "括號內漏寫一項。",
+      "why": "除法時只處理部分項。",
+      "correction": "原式有幾項，括號通常也要保留幾項。"
+    },
+    {
+      "mistake": "提出負號後括號符號未全反。",
+      "why": "只改第一項。",
+      "correction": "每一項都要除以負公因式。"
+    },
+    {
+      "mistake": "把和的某一部分當因式。",
+      "why": "公因式必須整體相乘。",
+      "correction": "檢查能否用分配律展開。"
+    },
+    {
+      "mistake": "沒有展開檢查。",
+      "why": "只看外觀。",
+      "correction": "用括號外因式乘回每一項。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "提公因式是分配律的逆運算。",
+    "數字取最大公因數，字母取共同且最低次方。",
+    "提出後逐項相除，最後展開回查。"
+  ],
+  "connections": {
+    "previous": "無單元內先備技能；連接分配律與多項式運算。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u12-fig-common-area",
+      "purpose": "用共享高度說明 hu+hv=h(u+v)。",
+      "altText": "兩區共享高度 h 的面積模型。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s001-v001",
+      "u12-s001-v002",
+      "u12-s001-v003",
+      "u12-s001-v004",
+      "u12-s001-v005",
+      "u12-s001-v006",
+      "u12-s001-v007",
+      "u12-s001-v008",
+      "u12-s001-v009",
+      "u12-s001-v010",
+      "u12-s001-v011",
+      "u12-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s001-cr001",
+      "u12-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一展開四個例題並核對係數、字母最低次方與負號；共同括號例也能回到原式，未使用後續一元二次方程式概念。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "79e5c2d059fdb0782b650d0194316723ec14df26e28abf521f178c341a638171"
+}

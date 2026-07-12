@@ -1,0 +1,150 @@
+{
+  "lectureId": "u15-s009-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-graphs",
+  "skillId": "linear-function-rate",
+  "skillSlot": "s009",
+  "skillTitle": "速率與線型函數",
+  "order": 9,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": "linear-function-slope-intercept",
+      "title": "斜截式",
+      "requiredLevel": "能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。",
+      "bridge": "斜率不是只有圖形意義；在距離、溫度、容量等情境中，它就是帶單位的平均變化率或固定速率。"
+    }
+  ],
+  "learningGoals": [
+    "以單位化方式解讀斜率",
+    "由兩筆資料求固定速率",
+    "在不同單位與方向下比較變化率"
+  ],
+  "vocabulary": [
+    {
+      "term": "變化率",
+      "meaning": "輸出改變量除以輸入改變量"
+    },
+    {
+      "term": "速率單位",
+      "meaning": "例如公里／小時、元／件"
+    },
+    {
+      "term": "平均變化率",
+      "meaning": "兩點間的輸出差除以輸入差"
+    }
+  ],
+  "conceptDevelopment": [
+    "線型函數的斜率就是固定變化率。分子是輸出變化，分母是輸入變化，因此單位必須寫成「輸出單位／輸入單位」。",
+    "負斜率表示輸入增加時輸出下降，例如每分鐘降溫 2°C，斜率是 -2°C／分鐘。"
+  ],
+  "definitionsAndMeaning": "線型函數的斜率就是固定變化率。分子是輸出變化，分母是輸入變化，因此單位必須寫成「輸出單位／輸入單位」。",
+  "formulasAndConditions": [
+    "a=Δy/Δx=(y₂-y₁)/(x₂-x₁)。",
+    "線型函數 y=ax+b 中，a 同時是每 1 單位 x 的固定改變量。"
+  ],
+  "invalidUseCases": [
+    "只除兩個 y 值，不算差。",
+    "分子分母減法順序不一致。",
+    "比較速率前未統一單位。"
+  ],
+  "stepByStepMethod": [
+    "寫出兩個資料點及其單位。",
+    "用一致順序求 Δy、Δx。",
+    "相除並化簡。",
+    "以正負號與單位解釋結果。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s009-ex01",
+      "title": "正速率",
+      "prompt": "車輛 2 小時行駛 120 公里。求每小時的固定速率，並寫出單位。",
+      "solution": "2 小時行 120 公里，速率 60 公里／小時。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s009-ex02",
+      "title": "負速率",
+      "prompt": "溫度在 10 分鐘內由 26°C 降到 21°C。求每分鐘平均變化率，並解釋負號。",
+      "solution": "溫度 10 分鐘由 26 降到 21，變化率 -0.5°C／分鐘。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s009-ex03",
+      "title": "表格",
+      "prompt": "表格顯示 x 由 2 增到 5 時，y 由 7 增到 19。求 Δy、Δx 與斜率。",
+      "solution": "x 增加 3 時 y 增加 12，斜率 4。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s009-ex04",
+      "title": "單位換算",
+      "prompt": "某速度為 90 公里／小時。換算成公里／分鐘，以便和另一筆公里／分鐘資料比較。",
+      "solution": "90 公里／小時=1.5 公里／分鐘，才能與公里／分鐘資料比較。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s009-m01",
+      "wrongReasoning": "把終值除以終時當變化率，即使起點不在 0。",
+      "correction": "變化率應用 (終值-初值)/(終時-初時)；只有初始時間與初始量皆為 0 時，終值÷終時才剛好相同。"
+    },
+    {
+      "mistakeId": "s009-m02",
+      "wrongReasoning": "漏寫負號。",
+      "correction": "輸出下降時 Δy<0，因此變化率要保留負號；負號表示方向，不是可省略的記號。"
+    },
+    {
+      "mistakeId": "s009-m03",
+      "wrongReasoning": "把 km/h 與 km/min 直接比較數字。",
+      "correction": "先把兩筆速率換成相同單位，例如都用公里／分鐘，再比較數值；不同單位的數字不能直接比。"
+    },
+    {
+      "mistakeId": "s009-m04",
+      "wrongReasoning": "Δx=0 時仍嘗試計算斜率。",
+      "correction": "斜率分母 Δx 必須非 0；兩點 x 坐標相同形成垂直線，不能視為 y 關於 x 的線型函數。"
+    },
+    {
+      "mistakeId": "s009-m05",
+      "wrongReasoning": "把截距誤當速率。",
+      "correction": "在 y=ax+b 中，a 才是每單位輸入的變化量；b 是輸入為 0 時的初始值或固定量。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "x 增 4，y 增 20，斜率？",
+      "answer": "5"
+    },
+    {
+      "prompt": "每分鐘少 3 公升，斜率？",
+      "answer": "-3 公升／分鐘"
+    },
+    {
+      "prompt": "兩點 x 相同可算斜率嗎？",
+      "answer": "不可以，分母為 0。"
+    }
+  ],
+  "summary": "斜率是帶有方向與單位的固定變化率。",
+  "previousSkillConnection": "linear-function-slope-intercept",
+  "nextSkillConnection": "function-graph-read-point",
+  "figureRefs": [
+    "u15-fig-rate"
+  ],
+  "accessibilityNotes": [
+    "圖形 u15-fig-rate 另附繁體中文替代文字與不按比例警告。"
+  ],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「速率與線型函數」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能以自己的話說明「斜截式」並完成基本判斷或計算。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "b5fb5a796a6db461c85a9277a24d681c7c366ce8b790bf0683c1621e2d421d7e"
+}

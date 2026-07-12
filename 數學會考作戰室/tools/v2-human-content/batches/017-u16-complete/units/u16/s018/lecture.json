@@ -1,0 +1,292 @@
+{
+  "lectureId": "u16-s018-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-literacy",
+  "skillId": "triangle-literacy",
+  "skillOrder": 18,
+  "originalLockedTitle": "三角形素養題",
+  "title": "三角形素養題：把結構和測量與路線資訊翻成幾何條件",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能從工程、地圖、施工與轉向文字中辨認三角形的邊角條件。",
+    "能選擇全等、三角形不等式、外角、邊角關係、中線或高線解題。",
+    "能檢查單位、比例、圖不按比例與情境限制。",
+    "能以完整理由說明答案，而不只代公式。"
+  ],
+  "prerequisiteBridge": "本單元所有工具已具備。素養題的難點通常不是新公式，而是把情境中的『支架等長、折線路徑、定位等距、垂直高度、轉向角』翻成正確幾何語言。",
+  "prerequisites": [
+    {
+      "skillId": "triangle-altitude",
+      "requiredLevel": "能使用先備技能「高線概念」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "幾何建模",
+      "definition": "把真實物件抽象成點、線段、角與三角形條件。"
+    },
+    {
+      "term": "必要資訊",
+      "definition": "會影響數學結論的長度、角度、等距、垂直或中點條件。"
+    },
+    {
+      "term": "冗餘資訊",
+      "definition": "不影響所求結論的情境描述或裝飾數據。"
+    },
+    {
+      "term": "圖不按比例",
+      "definition": "示意圖只呈現關係，不能用目測量長或角。"
+    },
+    {
+      "term": "合理性檢查",
+      "definition": "以單位、範圍、三角形不等式與角度限制檢驗結果。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "支桿 AB=AC",
+      "meaning": "結構形成等腰三角形，可用底角性質。"
+    },
+    {
+      "symbol": "路徑 AB+BC>AC",
+      "meaning": "經過 B 的折線比 A 到 C 直達距離長。"
+    },
+    {
+      "symbol": "感測器 PA=PB",
+      "meaning": "P 位於 AB 的中垂線上。"
+    },
+    {
+      "symbol": "高度 h⊥底邊",
+      "meaning": "h 可作面積或淨空高度的對應高。"
+    }
+  ],
+  "conceptNarrative": [
+    "先忽略故事名稱，列出點與線段：例如兩條等長鋼索就是等腰三角形的兩腰，地面距離是底邊。",
+    "定位問題若某點到兩標記等距，應想到中垂線；若要從指定點到道路最短距離，應想到垂線。",
+    "路線問題常用三角形不等式，折線經中繼點通常比直達長；若題目給等號，可能表示三點共線。",
+    "屋架或支架若左右兩半具足夠對應條件，可用全等證明對稱，而不能只因圖看起來對稱。",
+    "轉向問題要分辨單一三角形外角與多邊形一圈 360°；面積問題要配對底與垂直高度。",
+    "讀完後先判斷所求量的合理範圍：邊長需為正且符合不等式，內角介於 0°與 180°，邊數為整數，面積使用平方單位。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "情境到幾何的翻譯",
+      "statement": "將等長、等距、垂直、中點、轉向與路徑條件分別轉成邊等式、等距軌跡、90°、線段平分、外角與三角形不等式。"
+    },
+    {
+      "name": "解題選擇原則",
+      "statement": "先辨認目標與已知資料型態，再選能直接連結兩者的定理，而非見到三角形就套同一公式。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AB=AC ⇒ ∠B=∠C",
+      "conditions": [
+        "兩支架或鋼索確實等長"
+      ],
+      "meaning": "等腰結構角度。"
+    },
+    {
+      "formula": "|a−b|<x<a+b",
+      "conditions": [
+        "三條材料需形成非退化三角形"
+      ],
+      "meaning": "材料長度可行性。"
+    },
+    {
+      "formula": "A=bh/2",
+      "conditions": [
+        "h 為對應垂直高度",
+        "單位一致"
+      ],
+      "meaning": "三角形區域面積。"
+    },
+    {
+      "formula": "Σ同向外角=360°",
+      "conditions": [
+        "沿凸多邊形完整繞行一圈"
+      ],
+      "meaning": "轉向總量。"
+    }
+  ],
+  "nonApplicableCases": [
+    "情境圖看似等長或垂直但文字未給條件時，不能自行假設。",
+    "把比例尺圖直接以螢幕像素量測可能失真，應使用標示數值或比例。",
+    "不同單位未換算就代入公式。",
+    "把三角形不等式端點等號當作可搭成穩定支架。",
+    "只報數值不說使用哪個條件，可能無法獲得推理分。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出所求量與其單位。",
+      "check": "是長度、角度、面積、邊數還是作圖目的？"
+    },
+    {
+      "step": 2,
+      "instruction": "把文字條件翻成符號。",
+      "check": "等長、等距、中點、垂直、延長與轉向是否標清？"
+    },
+    {
+      "step": 3,
+      "instruction": "刪除不影響數學的背景資訊。",
+      "check": "每個保留數字會用在哪一步？"
+    },
+    {
+      "step": 4,
+      "instruction": "選擇最直接定理。",
+      "check": "是全等、等腰、邊長關係、外角、邊角、中線或高線？"
+    },
+    {
+      "step": 5,
+      "instruction": "逐步計算並附理由。",
+      "check": "是否使用了尚未證明的對稱或相等？"
+    },
+    {
+      "step": 6,
+      "instruction": "回到情境檢查。",
+      "check": "單位、範圍、整數性與物理可行性是否合理？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩條等長鋼索 AB、AC 固定在同一頂點 A，地面端 B、C。若頂角 50°，求兩個地面夾角。",
+      "solutionSteps": [
+        "AB=AC，故底角相等。",
+        "兩底角和 180°−50°=130°。"
+      ],
+      "answer": "各 65°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩根桿長 6 公尺與 9 公尺，第三根為整數 x，要組三角支架。",
+      "solutionSteps": [
+        "|9−6|<x<9+6。",
+        "3<x<15。"
+      ],
+      "answer": "x 可為 4 至 14 公尺的整數。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "三角形標誌底 80 公分、垂直高 45 公分，求面積。",
+      "solutionSteps": [
+        "單位均為公分。",
+        "80×45÷2=1800。"
+      ],
+      "answer": "1800 平方公分。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "巡檢機器人沿正八邊形外框走一圈，每個轉向角相同，求每次轉角。",
+      "solutionSteps": [
+        "同向外角和 360°。",
+        "360°÷8=45°。"
+      ],
+      "answer": "45°。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "橋架左右兩半各形成直角三角形，斜桿等長且水平半跨等長，能否判定兩半全等？",
+      "solutionSteps": [
+        "兩者皆直角三角形。",
+        "斜邊與一股分別相等。"
+      ],
+      "answer": "能，用 RHS。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到實物對稱就直接宣稱全等。",
+      "why": "外觀不是數學條件。",
+      "correction": "列出等邊、等角、共用邊或直角等足夠資料。"
+    },
+    {
+      "mistake": "未換算公尺與公分。",
+      "why": "忽略單位。",
+      "correction": "代公式前統一單位，答案標示相應平方單位。"
+    },
+    {
+      "mistake": "把兩邊和等於第三邊視為可搭支架。",
+      "why": "忽略退化三角形沒有面積。",
+      "correction": "穩定三角支架需嚴格大於。"
+    },
+    {
+      "mistake": "轉向題一律用三角形外角定理。",
+      "why": "未辨認是單一頂點還是一圈。",
+      "correction": "一圈多邊形同向轉角和用 360°。"
+    },
+    {
+      "mistake": "把斜長當垂直高度。",
+      "why": "只因線段看起來從上往下。",
+      "correction": "高度必須與底成 90°。"
+    },
+    {
+      "mistake": "只寫答案不呈現翻譯與理由。",
+      "why": "忽略素養題重視建模。",
+      "correction": "至少列出關鍵等式、所用定理與單位檢查。"
+    }
+  ],
+  "selfCheck": [
+    "我已把情境中的等長、垂直或中點翻成符號嗎？",
+    "圖不按比例時是否避免目測？",
+    "所用定理的條件全部具備嗎？",
+    "單位與平方單位是否正確？",
+    "答案是否符合邊長、角度、邊數與物理可行性？"
+  ],
+  "summary": [
+    "素養題先建模，再選定理。",
+    "等長、等距、垂直、中點、轉向與路徑各對應特定幾何工具。",
+    "圖形外觀不是證據，單位與邊界必須檢查。",
+    "完整答案要包含翻譯、推理、計算與情境結論。"
+  ],
+  "connections": {
+    "previous": "綜合中線、高線與本單元所有三角形性質。",
+    "next": [
+      "U17 將延伸至平行線與四邊形。",
+      "後續相似形與圓幾何會沿用建模與理由鏈。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-018-truss-literacy"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-018-truss-literacy 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s018-v001",
+      "u16-s018-v002",
+      "u16-s018-v003",
+      "u16-s018-v004",
+      "u16-s018-v005",
+      "u16-s018-v006",
+      "u16-s018-v007",
+      "u16-s018-v008",
+      "u16-s018-v009",
+      "u16-s018-v010",
+      "u16-s018-v011",
+      "u16-s018-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s018-cr001",
+      "u16-s018-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「三角形素養題」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "140439055265d533a6a9ebd87e80f02385cd2e19d2c1953344e567d3aa28a64f"
+}

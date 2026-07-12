@@ -1,0 +1,230 @@
+{
+  "lectureId": "u12-s005-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-methods",
+  "skillId": "factoring-quadratic-trinomial",
+  "lockedSkillTitle": "二次三項式分解",
+  "title": "二次三項式分解：先判型再完整分解",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認二次三項式 ax^2+bx+c。",
+    "能選擇提公因式、公式法或十字交乘。",
+    "能處理首項係數不為 1 的情況。",
+    "能判斷整數係數下是否無法再分。",
+    "能把結果分解到每個因式不可再分。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "factoring-by-grouping",
+      "requiredLevel": "能運用前一技能並以展開驗證結果；本講義會重新連接必要步驟。"
+    }
+  ],
+  "prerequisiteBridge": "先備技能為 factoring-by-grouping；先確認能完成前一方法並保留所有符號，再進入本技能。",
+  "glossary": [
+    {
+      "term": "二次三項式",
+      "definition": "最高次為 2 且通常有三項的多項式。"
+    },
+    {
+      "term": "首一",
+      "definition": "二次項係數為 1。"
+    },
+    {
+      "term": "完整分解",
+      "definition": "所有可在指定範圍分解的因式都已分完。"
+    },
+    {
+      "term": "整數係數分解",
+      "definition": "因式中的係數限定為整數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax^2+bx+c",
+      "meaning": "a 不等於 0 的二次三項式。"
+    },
+    {
+      "symbol": "(px+q)(rx+s)",
+      "meaning": "兩個一次因式的乘積。"
+    }
+  ],
+  "conceptNarrative": [
+    "先找公因式可降低係數，避免十字交乘過度複雜。",
+    "三項若符合完全平方就優先公式法；否則再用十字交乘。",
+    "分解是否可能，可由因數配對能否同時配出中間項判斷。",
+    "完整答案要把外層公因式與內部一次因式全部保留。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "二次三項式分解",
+      "statement": "把 ax^2+bx+c 改寫成常數因式與一次因式的乘積。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(px+q)(rx+s)=prx^2+(ps+qr)x+qs",
+      "conditions": [
+        "pr=a、ps+qr=b、qs=c"
+      ],
+      "meaning": "係數配對。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不是每個二次三項式都能在整數係數下分解。",
+    "只寫出其中一層公因式而內部仍可分，不算完整。",
+    "不能用代入單一 x 值相同就證明兩式恆等。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先提所有項的最大公因式。",
+      "check": "外層因式不可遺失。"
+    },
+    {
+      "step": 2,
+      "instruction": "檢查完全平方公式。",
+      "check": "首末平方與中間項同時核對。"
+    },
+    {
+      "step": 3,
+      "instruction": "否則列首項與常數因數。",
+      "check": "準備十字交乘。"
+    },
+    {
+      "step": 4,
+      "instruction": "配出中間項並寫因式。",
+      "check": "考慮正負。"
+    },
+    {
+      "step": 5,
+      "instruction": "逐層展開，確認完整性。",
+      "check": "括號內還能分嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "x^2+13x+40",
+      "solutionSteps": [
+        "5·8=40，5+8=13。"
+      ],
+      "answer": "(x+5)(x+8)"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "2x^2-x-6",
+      "solutionSteps": [
+        "交叉和 -4x+3x=-x。"
+      ],
+      "answer": "(2x+3)(x-2)"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "3y^2+18y+27",
+      "solutionSteps": [
+        "先提 3。",
+        "括號內是 y^2+6y+9。"
+      ],
+      "answer": "3(y+3)^2"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "-4m^2+20m-24",
+      "solutionSteps": [
+        "先提 -4。",
+        "m^2-5m+6=(m-2)(m-3)。"
+      ],
+      "answer": "-4(m-2)(m-3)"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "看到三項就直接十字交乘。",
+      "why": "漏掉公因式或公式。",
+      "correction": "依順序判型。"
+    },
+    {
+      "mistake": "外層公因式在答案消失。",
+      "why": "只記內部結果。",
+      "correction": "每一步都保留括號外。"
+    },
+    {
+      "mistake": "首一方法套到非首一。",
+      "why": "只找和與積。",
+      "correction": "非首一需計算交叉乘積。"
+    },
+    {
+      "mistake": "分解到一半停止。",
+      "why": "未檢查括號。",
+      "correction": "持續到不可再分。"
+    },
+    {
+      "mistake": "宣稱無法分解但未列配對。",
+      "why": "缺乏證據。",
+      "correction": "列出有限因數配對並說明中間項不符。"
+    },
+    {
+      "mistake": "把因式順序不同當答案不同。",
+      "why": "忽略交換律。",
+      "correction": "乘積順序不影響等價。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "二次三項式先提公因式，再查公式，最後十字交乘。",
+    "非每題都能在整數係數下分解。",
+    "展開與完整性檢查缺一不可。"
+  ],
+  "connections": {
+    "previous": "承接 factoring-by-grouping。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s005-v001",
+      "u12-s005-v002",
+      "u12-s005-v003",
+      "u12-s005-v004",
+      "u12-s005-v005",
+      "u12-s005-v006",
+      "u12-s005-v007",
+      "u12-s005-v008",
+      "u12-s005-v009",
+      "u12-s005-v010",
+      "u12-s005-v011",
+      "u12-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s005-cr001",
+      "u12-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個例題分別涵蓋首一、非首一、完全平方與負公因式；每題均獨立展開並確認已分到一次因式。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "7f54bceccc55244476f2abef642f476d79837d336e138aabf072800d69ad1d44"
+}

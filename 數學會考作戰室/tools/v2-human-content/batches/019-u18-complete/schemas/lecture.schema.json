@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "math-v2-lecture-r1",
+  "title": "Human-authored lecture",
+  "type": "object",
+  "required": [
+    "lectureId",
+    "unitId",
+    "topicId",
+    "skillId",
+    "title",
+    "learningOutcomes",
+    "prerequisiteBridge",
+    "glossary",
+    "notation",
+    "conceptNarrative",
+    "formalDefinitions",
+    "formulas",
+    "nonApplicableCases",
+    "method",
+    "workedExamples",
+    "commonMistakes",
+    "selfCheck",
+    "summary",
+    "connections",
+    "lectureReview",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    "unitId": {
+      "const": "u18"
+    },
+    "contentSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

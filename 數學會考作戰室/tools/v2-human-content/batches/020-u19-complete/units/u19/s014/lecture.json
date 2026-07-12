@@ -1,0 +1,249 @@
+{
+  "lectureId": "u19-s014-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-measure",
+  "skillId": "circle-composite-perimeter",
+  "title": "圓組合周長",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s014",
+    "lockedSkillId": "circle-composite-perimeter",
+    "lockedOrder": 14,
+    "scope": "辨認複合圖形真正的外邊界並計算。"
+  },
+  "learningOutcomes": [
+    "能辨認圓弧組合圖形的外邊界。",
+    "能處理半圓、四分之一圓與挖空邊界。",
+    "能比較不同拼法的周長。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "circle-area",
+      "requiredLevel": "能使用「圓面積」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「圓面積」的結論，連接到本技能「圓組合周長」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "外邊界",
+      "definition": "從圖形外側繞一圈實際經過的線。"
+    },
+    {
+      "term": "內邊界",
+      "definition": "挖空形成且也需計入的封閉邊界。"
+    },
+    {
+      "term": "共邊",
+      "definition": "兩圖形接合後藏在內部、不再算外周長的邊。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "複合周長只計算實際外露的邊界。兩個圖形黏合時，共邊會消失；挖洞時，洞的邊界反而新增。",
+    "多個半圓弧若直徑總和固定，弧長總和可利用πd/2直接合併。",
+    "不要把面積的加減方式直接套到周長，周長必須沿路徑逐段判斷。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "外邊界",
+      "statement": "從圖形外側繞一圈實際經過的線。"
+    },
+    {
+      "name": "內邊界",
+      "statement": "挖空形成且也需計入的封閉邊界。"
+    },
+    {
+      "name": "共邊",
+      "statement": "兩圖形接合後藏在內部、不再算外周長的邊。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "半圓弧長=πd/2",
+      "conditions": [
+        "d為直徑"
+      ],
+      "meaning": "以直徑計弧長"
+    },
+    {
+      "formula": "複合周長=所有外露弧長+所有外露線段",
+      "conditions": [
+        "不含內部共邊"
+      ],
+      "meaning": "邊界加總"
+    }
+  ],
+  "nonApplicableCases": [
+    "內部接合線不算周長。",
+    "挖洞後洞的邊界要算，不能只扣面積。",
+    "只知道總面積通常不能唯一決定周長。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "選一個起點沿邊界順時針走。",
+      "check": "完成此步後，確認仍在「圓組合周長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "記錄每段弧的半徑或直徑。",
+      "check": "完成此步後，確認仍在「圓組合周長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "刪除共邊與輔助線。",
+      "check": "完成此步後，確認仍在「圓組合周長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "加入洞的內邊界。",
+      "check": "完成此步後，確認仍在「圓組合周長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "合併弧長並檢查是否回到起點。",
+      "check": "完成此步後，確認仍在「圓組合周長」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s014-L1",
+      "prompt": "兩個直徑4的半圓弧相接，求弧長總和。",
+      "solutionSteps": [
+        "每段弧2π。",
+        "總和4π。"
+      ],
+      "answer": "4π。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s014-L2",
+      "prompt": "直徑10的半圓加直徑作邊界。",
+      "solutionSteps": [
+        "弧長5π。",
+        "直徑10。"
+      ],
+      "answer": "10+5π。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s014-L3",
+      "prompt": "正方形邊長8，上方以邊為直徑加半圓。",
+      "solutionSteps": [
+        "保留三邊24。",
+        "半圓弧4π。"
+      ],
+      "answer": "24+4π。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s014-L4",
+      "prompt": "半徑6圓挖去半徑2同心圓。",
+      "solutionSteps": [
+        "外圓周12π。",
+        "內洞圓周4π。"
+      ],
+      "answer": "16π。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「圓組合周長」的定義、符號與單一步驟關係。",
+    "standard": "把「圓組合周長」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「圓組合周長」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「圓組合周長」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "共邊仍計兩次",
+      "why": "未判斷外露性",
+      "correction": "接合後共邊刪除"
+    },
+    {
+      "mistake": "挖洞時把內圓周扣掉",
+      "why": "把面積思維套周長",
+      "correction": "洞邊界是新增所以相加"
+    },
+    {
+      "mistake": "弧長用πr²",
+      "why": "公式量綱錯",
+      "correction": "弧長由周長比例求"
+    },
+    {
+      "mistake": "只看圖形面積大小猜周長",
+      "why": "面積與周長不單調",
+      "correction": "逐段計算"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「圓組合周長」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "複合周長必須沿外露邊界逐段算。",
+    "共邊刪除，洞邊界加入。",
+    "弧長可用半徑或直徑公式合併。"
+  ],
+  "connections": {
+    "previous": "承接「圓面積」。",
+    "next": "下一技能為「切線性質」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s014-fig001",
+      "purpose": "長方形兩端各接半圓形成膠囊形，內部共邊以虛線、實際外邊界以粗線表示。",
+      "altText": "長方形兩端各接半圓形成膠囊形，內部共邊以虛線、實際外邊界以粗線表示。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s014-v001",
+      "u19-s014-v002",
+      "u19-s014-v003",
+      "u19-s014-v004",
+      "u19-s014-v005",
+      "u19-s014-v006",
+      "u19-s014-v007",
+      "u19-s014-v008",
+      "u19-s014-v009",
+      "u19-s014-v010",
+      "u19-s014-v011",
+      "u19-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s014-cr001",
+      "u19-s014-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「圓組合周長」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：辨認複合圖形真正的外邊界並計算。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "a4fa451e9f4f5b6527bc810073648725ed4337d352927fd48f9a2e0a0abadfdb"
+}

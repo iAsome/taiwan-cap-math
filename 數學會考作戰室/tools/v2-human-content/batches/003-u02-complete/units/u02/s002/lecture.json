@@ -1,0 +1,222 @@
+{
+  "lectureId": "u02-s002-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-factors",
+  "skillId": "fraction-prime-composite",
+  "title": "質數與合數：用正因數個數辨認整數結構",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明質數、合數與1的差異。",
+    "能用試除法判斷中小型整數是否為質數。",
+    "知道2是唯一偶質數。",
+    "能把矩形排列與質合數連結。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-factor-multiple",
+      "requiredLevel": "能列出一個正整數的正因數，並判斷整除。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "質數",
+      "definition": "大於1且正因數恰有1與本身兩個的整數。"
+    },
+    {
+      "term": "合數",
+      "definition": "大於1且正因數多於兩個的整數。"
+    },
+    {
+      "term": "非平凡因數",
+      "definition": "除了1與本身以外的正因數。"
+    },
+    {
+      "term": "試除",
+      "definition": "依序檢查可能質因數是否整除。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "p",
+      "meaning": "常用來代表質數。"
+    }
+  ],
+  "conceptNarrative": [
+    "質數不是『不能分』，而是隻能分成1×本身的正整數乘積。",
+    "1只有一個正因數，因此既不是質數也不是合數。",
+    "除了2以外的偶數都可被2整除，所以都是合數。",
+    "判斷n是否為質數，只需檢查不大於√n的質數是否整除。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "質數",
+      "statement": "大於1且只有兩個正因數的整數。"
+    },
+    {
+      "name": "合數",
+      "statement": "大於1且可寫成兩個都大於1的整數乘積。"
+    },
+    {
+      "name": "數1",
+      "statement": "只有一個正因數，獨立於質數與合數之外。"
+    }
+  ],
+  "formulas": [],
+  "nonApplicableCases": [
+    "負整數不在本節正質數分類範圍。",
+    "不能因為是奇數就直接判定為質數。",
+    "判斷大型數若未檢查到平方根，可能漏掉因數。",
+    "0與1都不是質數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認數大於1。",
+      "check": "0或1要先排除。"
+    },
+    {
+      "step": 2,
+      "instruction": "先檢查2、3、5等小質數。",
+      "check": "是否可快速整除？"
+    },
+    {
+      "step": 3,
+      "instruction": "只檢查到平方根。",
+      "check": "若有較大因數，必伴隨較小因數。"
+    },
+    {
+      "step": 4,
+      "instruction": "找到非平凡因數就判合數。",
+      "check": "能否寫成兩個大於1的整數乘積？"
+    },
+    {
+      "step": 5,
+      "instruction": "未找到則判質數。",
+      "check": "是否已完成必要試除？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 19。",
+      "solutionSteps": [
+        "19大於1。",
+        "不能被2、3整除，且√19<5。"
+      ],
+      "answer": "19是質數。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "判斷 57。",
+      "solutionSteps": [
+        "各位數和為12。",
+        "57可被3整除，57=3×19。"
+      ],
+      "answer": "57是合數。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "說明2為何特殊。",
+      "solutionSteps": [
+        "2的正因數只有1、2。",
+        "任何更大的偶數還有因數2。"
+      ],
+      "answer": "2是唯一偶質數。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "29人能否排成兩邊都大於1的完整長方形？",
+      "solutionSteps": [
+        "29是質數。",
+        "沒有非平凡因數。"
+      ],
+      "answer": "不能。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把1列為質數。",
+      "why": "只記得1不能再分。",
+      "correction": "用正因數個數判斷：1只有一個正因數。"
+    },
+    {
+      "mistake": "把所有奇數列為質數。",
+      "why": "忽略9、15等奇合數。",
+      "correction": "檢查是否可被小質數整除。"
+    },
+    {
+      "mistake": "把2列為合數。",
+      "why": "看到偶數就一概排除。",
+      "correction": "2只有兩個正因數。"
+    },
+    {
+      "mistake": "只檢查2就宣稱質數。",
+      "why": "忽略3、5、7等因數。",
+      "correction": "試除到平方根。"
+    },
+    {
+      "mistake": "把負數也稱為質數。",
+      "why": "未依課程定義限制正整數。",
+      "correction": "本節質合數分類物件是大於1的正整數。"
+    },
+    {
+      "mistake": "矩形排列容許剩餘。",
+      "why": "忽略『平均、不剩』。",
+      "correction": "質數只能排成1×本身。"
+    }
+  ],
+  "selfCheck": [
+    "數是否大於1？",
+    "正因數是否恰有兩個？",
+    "是否檢查2的例外？",
+    "試除是否做到平方根？",
+    "情境中的兩個乘數是否都要求大於1？"
+  ],
+  "summary": [
+    "質數恰有兩個正因數。",
+    "合數可分成兩個都大於1的整數乘積。",
+    "1既非質數也非合數。",
+    "2是唯一偶質數。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-factor-multiple，需能完成其基本判斷與計算。",
+    "next": [
+      "質因數分解會把合數拆成質數乘積。",
+      "GCD與LCM將使用質因數指數。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s002-v001",
+      "u02-s002-v002",
+      "u02-s002-v003",
+      "u02-s002-v004",
+      "u02-s002-v005",
+      "u02-s002-v006",
+      "u02-s002-v007",
+      "u02-s002-v008",
+      "u02-s002-v009",
+      "u02-s002-v010",
+      "u02-s002-v011",
+      "u02-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s002-cr001",
+      "u02-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重新列出所有例題的正因數或試除結果，特別核對1、2與奇合數；7、8、29與91的分類均以實際因數個數驗證。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "867ee1af3ee5a509371ca62f045ef399257731c44184b32d336c20f199c4db11",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

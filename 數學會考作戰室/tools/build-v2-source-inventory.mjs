@@ -25,6 +25,7 @@ function roleFor(relativePath) {
   if (/\/v2\/math-.*(?:manifest|migration|blueprint)/.test(p)) return "generated artifact";
   if (/\/v2\//.test(p) && /(?:engine|schema)/.test(p)) return "production consumer";
   if (/\/tools\/review-output\//.test(p)) return "review output";
+  if (/production-locks/.test(p)) return "lock";
   if (/\/tools\/v2-qa\/locks\//.test(p)) return "lock";
   if (/\/tools\/v2-qa\/manifests\//.test(p) || /manifest/.test(path.basename(p))) return "manifest";
   if (/\/tools\/v2-qa\/test\//.test(p) || /(?:^|\/)test-|\.test\./.test(p)) return "test";
@@ -49,13 +50,17 @@ function classifyFile(relativePath, bytes) {
   return { extension: extension || "none", fileType: text ? "text" : "binary", text: text ? bytes.toString("utf8") : null };
 }
 
-function discoverTrackedPaths() {
-  const output = git(["-c", "core.quotepath=false", "ls-files", "-z", "--", "數學會考作戰室/**", ".github/workflows/**", "AGENTS.md", "PROJECT_EXECUTION_CONTRACT.md", "MATH_CONTENT_STANDARD_TW.md"]);
-  return output.split("\0").filter(Boolean).sort((a, b) => a.localeCompare(b, "en"));
+function discoverWorkingPaths() {
+  const output = git(["-c", "core.quotepath=false", "ls-files", "-z", "--cached", "--others", "--exclude-standard", "--", "數學會考作戰室/**", ".github/workflows/**", "tools/qa-smoke.mjs", "README.md", "AGENTS.md", "PROJECT_EXECUTION_CONTRACT.md", "MATH_CONTENT_STANDARD_TW.md", "MATH_V2_PRODUCTION_PROFILE.md"]);
+  const selfOutputs = new Set([
+    "數學會考作戰室/tools/review-output/full-v2-production/source-inventory.json",
+    "數學會考作戰室/tools/review-output/full-v2-production/source-role-summary.md"
+  ]);
+  return [...new Set(output.split("\0").filter(Boolean))].filter(item => !selfOutputs.has(item.replaceAll("\\", "/"))).sort((a, b) => a.localeCompare(b, "en"));
 }
 
 export function buildSourceInventory({ write = true } = {}) {
-  const paths = discoverTrackedPaths();
+  const paths = discoverWorkingPaths();
   const sources = new Map();
   for (const relativePath of paths) {
     const bytes = readFileSync(path.join(repoRoot, relativePath));
@@ -68,7 +73,7 @@ export function buildSourceInventory({ write = true } = {}) {
     const role = roleFor(relativePath);
     return {
       path: relativePath.replaceAll("\\", "/"),
-      blobSha: git(["rev-parse", `HEAD:${relativePath}`]).trim(),
+      blobSha: git(["hash-object", "--", relativePath]).trim(),
       sha256: createHash("sha256").update(source.bytes).digest("hex"),
       byteSize: source.bytes.length,
       lineCount: source.fileType === "text" ? (source.text.length ? source.text.split(/\r?\n/).length : 0) : null,
@@ -83,8 +88,8 @@ export function buildSourceInventory({ write = true } = {}) {
     };
   });
   const counts = records.reduce((result, record) => { result[record.role] = (result[record.role] ?? 0) + 1; return result; }, {});
-  const inventory = { taskId: "MATH-V2-U01-U23-ONE-SHOT-FULL-PRODUCTION-R1", commit: git(["rev-parse", "HEAD"]).trim(), files: records.length, textFilesReadFully: records.filter(x => x.fileType === "text").length, binaryFilesInventoried: records.filter(x => x.fileType === "binary").length, unknownClassifications: 0, roleCounts: Object.fromEntries(Object.entries(counts).sort(([a], [b]) => a.localeCompare(b, "en"))), records };
-  const summary = ["# Math V2 Source Role Summary", "", `- Commit: \`${inventory.commit}\``, `- Files inventoried: ${inventory.files}`, `- Text/code files fully read: ${inventory.textFilesReadFully}`, `- Binary assets inventoried: ${inventory.binaryFilesInventoried}`, "- Unknown classifications: 0", "", "## Roles", "", ...Object.entries(inventory.roleCounts).map(([role, count]) => `- ${role}: ${count}`), "", "Every text record was read in full by the inventory builder; binary records were hashed without content extraction.", ""].join("\n");
+  const inventory = { taskId: "MATH-V2-U01-U23-ONE-SHOT-FULL-PRODUCTION-R1", baseCommit: git(["rev-parse", "HEAD"]).trim(), mode: "working-tree-blobs", files: records.length, textFilesReadFully: records.filter(x => x.fileType === "text").length, binaryFilesInventoried: records.filter(x => x.fileType === "binary").length, selfExcludedOutputs: ["source-inventory.json", "source-role-summary.md"], unknownClassifications: 0, roleCounts: Object.fromEntries(Object.entries(counts).sort(([a], [b]) => a.localeCompare(b, "en"))), records };
+  const summary = ["# Math V2 Source Role Summary", "", `- Working-tree base commit: \`${inventory.baseCommit}\``, `- Files inventoried: ${inventory.files}`, `- Text/code files fully read: ${inventory.textFilesReadFully}`, `- Binary assets inventoried: ${inventory.binaryFilesInventoried}`, "- Unknown classifications: 0", "- Self-excluded generated outputs: source-inventory.json, source-role-summary.md", "", "## Roles", "", ...Object.entries(inventory.roleCounts).map(([role, count]) => `- ${role}: ${count}`), "", "Every text record was read in full from the final working tree and assigned its Git blob SHA; binary records were hashed without content extraction. The two inventory outputs are excluded because a file cannot contain its own final hash.", ""].join("\n");
   if (write) {
     mkdirSync(outputRoot, { recursive: true });
     writeFileSync(path.join(outputRoot, "source-inventory.json"), `${JSON.stringify(inventory, null, 2)}\n`, "utf8");

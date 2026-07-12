@@ -1,0 +1,224 @@
+{
+  "lectureId": "u09-s002-lecture-r1",
+  "unitId": "u09",
+  "numericUnitId": 9,
+  "topicId": "u09-display",
+  "skillId": "frequency-table",
+  "lockedTitle": "次數與相對次數分配表",
+  "title": "次數與相對次數分配表：從幾個到占多少",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "reviewStatus": "independently-reviewed",
+  "prerequisiteBridge": {
+    "skillIds": [
+      "data-table-reading"
+    ],
+    "explanation": "先能正確判讀資料表的列、欄、總計與單位。"
+  },
+  "learningGoals": [
+    "理解資料值、次數、總次數與相對次數。",
+    "建立與補完整次數分配表。",
+    "在次數和比例之間互換。",
+    "比較不同樣本大小的類別比例。",
+    "辨識取位造成的相對次數總和誤差。"
+  ],
+  "vocabulary": [
+    {
+      "term": "次數",
+      "meaning": "某資料值或類別出現的筆數。"
+    },
+    {
+      "term": "總次數",
+      "meaning": "所有類別次數的合計。"
+    },
+    {
+      "term": "相對次數",
+      "meaning": "某類次數占總次數的比例。"
+    },
+    {
+      "term": "分配表",
+      "meaning": "列出各資料值或區間及其次數的表。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "f",
+      "meaning": "常用來表示次數。"
+    },
+    {
+      "symbol": "f/n",
+      "meaning": "次數 f 除以總數 n，得到相對次數。"
+    },
+    {
+      "symbol": "100%",
+      "meaning": "完整分類的精確相對次數總和。"
+    }
+  ],
+  "conceptDevelopment": [
+    "次數回答『有幾個』，相對次數回答『占全部多少』。",
+    "不同班級人數不同時，只比較次數可能得到錯誤印象，應比較相對次數。",
+    "完整分類的次數總和等於總數，精確相對次數總和等於 1。",
+    "相對次數可用分數、小數或百分比表示。",
+    "若每項先四捨五入，顯示值總和可能略大或略小於 1，需回看精確值。"
+  ],
+  "definitions": [
+    {
+      "name": "次數",
+      "statement": "資料值或類別在資料集合中出現的次數。"
+    },
+    {
+      "name": "相對次數",
+      "statement": "某類次數除以全部資料筆數所得的比例。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "相對次數＝類別次數÷總次數",
+      "conditions": [
+        "總次數大於 0"
+      ]
+    },
+    {
+      "formula": "類別次數＝總次數×相對次數",
+      "conditions": [
+        "結果若代表人數，應檢查整數可行性"
+      ]
+    },
+    {
+      "formula": "缺類別次數＝總次數－已知次數合計",
+      "conditions": [
+        "分類完整"
+      ]
+    }
+  ],
+  "invalidUseCases": [
+    "用資料值本身代替次數。",
+    "不同樣本大小只比較人數。",
+    "把 0.35 寫成 35 人而未乘總數。",
+    "看到四捨五入後總和 1.01 就立即判定原資料錯。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "action": "確認每列是資料值、類別還是區間。"
+    },
+    {
+      "step": 2,
+      "action": "加總次數得到 n。"
+    },
+    {
+      "step": 3,
+      "action": "用 f÷n 求相對次數。"
+    },
+    {
+      "step": 4,
+      "action": "補值時利用次數總和 n 或比例總和 1。"
+    },
+    {
+      "step": 5,
+      "action": "檢查比例範圍與人數整數性。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "L1",
+      "prompt": "40 人中 10 人選甲類。",
+      "solution": [
+        "相對次數=10÷40=0.25。"
+      ],
+      "answer": "0.25=25%。"
+    },
+    {
+      "id": "L2",
+      "prompt": "總數 50，某類相對次數 0.24。",
+      "solution": [
+        "50×0.24=12。"
+      ],
+      "answer": "12 人。"
+    },
+    {
+      "id": "L3",
+      "prompt": "精確比例逐項取一位小數後總和 1.1。",
+      "solution": [
+        "先回算精確分數。",
+        "逐項取位的誤差可能累積。"
+      ],
+      "answer": "不一定是原資料錯誤。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "把最高資料值當最高次數。",
+      "why": "混淆表的兩欄。",
+      "fix": "讀清『資料值』與『次數』。"
+    },
+    {
+      "wrong": "15 人比 12 人多，所以比例較高。",
+      "why": "忽略兩組總數。",
+      "fix": "各自除以組總數。"
+    },
+    {
+      "wrong": "比例 0.3 寫成 0.3 人。",
+      "why": "混淆無單位比例與人數。",
+      "fix": "乘總數後才得人數。"
+    },
+    {
+      "wrong": "取位後總和不為 1 就強制改一格。",
+      "why": "未保留精確值。",
+      "fix": "先以分數驗算。"
+    }
+  ],
+  "selfCheck": [
+    "次數與資料值分清楚了嗎？",
+    "相對次數的分母是哪個全體？",
+    "完整分類總和是否正確？",
+    "顯示值是否經過取位？"
+  ],
+  "summary": [
+    "次數是筆數，相對次數是比例。",
+    "不同群體大小要比較相對次數。",
+    "完整分配表的精確比例總和為 1。",
+    "取位誤差與資料錯誤必須分開。"
+  ],
+  "connections": {
+    "previous": "資料表判讀提供列、欄與總計基礎。",
+    "next": [
+      "長條圖可把類別次數或相對次數畫成柱高。",
+      "累積次數會把依序的組別逐步相加。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": "本講義可完全以文字理解；若有圖形，替代文字提供所有必要數值。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u09-s002-v001",
+      "u09-s002-v002",
+      "u09-s002-v003",
+      "u09-s002-v004",
+      "u09-s002-v005",
+      "u09-s002-v006",
+      "u09-s002-v007",
+      "u09-s002-v008",
+      "u09-s002-v009",
+      "u09-s002-v010",
+      "u09-s002-v011",
+      "u09-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u09-s002-cr001",
+      "u09-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "從次數定義到比例、缺值、跨群體比較與取位誤差逐層推進。",
+    "scopeCheck": "符合國中會考範圍；未引入四分位數與盒狀圖。",
+    "prerequisiteAudit": "先能正確判讀資料表的列、欄、總計與單位。",
+    "symbolAndUnitAudit": "所有符號在使用前定義；單位與取位規則在例題中明示。",
+    "skillSpecificEvidence": "清楚區分次數、總數、比例、分母與四捨五入顯示值。",
+    "legacyContentUsed": false,
+    "decision": "pass"
+  },
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "contentSha256": "8fb96f678d700cb39a71bc749984667e08679b7f692733d57bfe82057077bca1"
+}

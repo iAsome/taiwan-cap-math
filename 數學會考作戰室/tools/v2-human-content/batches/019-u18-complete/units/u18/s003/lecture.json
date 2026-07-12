@@ -1,0 +1,260 @@
+{
+  "lectureId": "u18-s003-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-ratio",
+  "skillId": "proportion-segment",
+  "lockedSkillOrder": 3,
+  "lockedSkillTitle": "比例線段",
+  "title": "比例線段：用平行線建立對應線段的比例",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認平行線截得的對應線段。",
+    "能使用基本比例定理求未知線段。",
+    "能區分整段、上段與下段，避免對應錯位。",
+    "能用比例式或共同倍數法檢查答案。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "continued-ratio-application",
+        "title": "連比應用",
+        "requiredLevel": "能運用「連比應用」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「連比應用」，先複習其核心判斷，再把方法推進到「比例線段」。"
+  },
+  "glossary": [
+    {
+      "term": "截線",
+      "definition": "穿過兩條或多條直線並形成交點的直線。"
+    },
+    {
+      "term": "比例線段",
+      "definition": "長度之間具有相同比值的一組對應線段。"
+    },
+    {
+      "term": "基本比例定理",
+      "definition": "三角形內一線段平行於一邊時，會把另外兩邊截成比例線段。"
+    },
+    {
+      "term": "對應線段",
+      "definition": "位於相同結構位置、應放在比例式同一側的線段。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "DE∥BC",
+      "meaning": "線段 DE 與 BC 平行。"
+    },
+    {
+      "symbol": "AD/DB=AE/EC",
+      "meaning": "平行線在兩邊截出的上段比下段相等。"
+    },
+    {
+      "symbol": "AD/AB=AE/AC=DE/BC",
+      "meaning": "小三角形與大三角形的對應邊比相等。"
+    }
+  ],
+  "conceptNarrative": [
+    "在三角形 ABC 中，D 在 AB 上、E 在 AC 上。若 DE 平行 BC，則小三角形 ADE 與大三角形 ABC 形狀相同，因此對應邊有固定比例。",
+    "比例式必須保持結構一致：上段對上段、下段對下段，或小整邊對大整邊。不能把 AD/DB 與 AC/AE 隨意配對。",
+    "有時題目給的是整段 AB 與上段 AD，需先求 DB=AB-AD；反之亦然。畫線段分解能避免把整段當成其中一段。",
+    "比例線段不代表圖形一定按比例繪製，數值與平行記號才是依據。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "三角形基本比例定理",
+      "statement": "若 D、E 分別在 AB、AC 上且 DE∥BC，則 AD/DB=AE/EC，並且 AD/AB=AE/AC=DE/BC。"
+    },
+    {
+      "name": "逆敘述",
+      "statement": "若 D、E 分別在兩邊上且 AD/DB=AE/EC，則在會考範圍可判定 DE∥BC。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AD:DB=AE:EC",
+      "conditions": [
+        "D 在 AB 上",
+        "E 在 AC 上",
+        "DE∥BC"
+      ],
+      "meaning": "兩邊被平行線截出的分段成比例。"
+    },
+    {
+      "formula": "AD:AB=AE:AC=DE:BC",
+      "conditions": [
+        "小三角形 ADE 與大三角形 ABC 對應"
+      ],
+      "meaning": "小圖與大圖的線性比相同。"
+    }
+  ],
+  "nonApplicableCases": [
+    "沒有平行條件或比例條件時，不能直接套用基本比例定理。",
+    "AD/DB 不可對應 AE/AC，因為前者是上段對下段，後者是上段對整段。",
+    "線段長度不能為負，算出負值通常表示整段與部分混淆。",
+    "圖看起來平行不構成證明，必須有平行記號或可推得的條件。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "在圖上標出平行線與交點位置。",
+      "check": "D、E 是否各在三角形的兩邊上？"
+    },
+    {
+      "step": 2,
+      "instruction": "決定要用分段比或整邊比。",
+      "check": "已知量屬於上段、下段還是整段？"
+    },
+    {
+      "step": 3,
+      "instruction": "依相同結構寫比例式。",
+      "check": "分子與分母的角色是否左右一致？"
+    },
+    {
+      "step": 4,
+      "instruction": "交叉相乘求未知數。",
+      "check": "未知長度是否為正且小於整段？"
+    },
+    {
+      "step": 5,
+      "instruction": "用另一組比例或加總回查。",
+      "check": "所有線段分解是否成立？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "DE∥BC，AD=4、DB=6、AE=5，求 EC。",
+      "solutionSteps": [
+        "AD/DB=AE/EC。",
+        "4/6=5/EC。",
+        "4EC=30，所以 EC=7.5。"
+      ],
+      "answer": "7.5"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "DE∥BC，AD=6、AB=15、AC=20，求 AE。",
+      "solutionSteps": [
+        "AD/AB=AE/AC。",
+        "6/15=AE/20。",
+        "AE=8。"
+      ],
+      "answer": "8"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "DE∥BC，AE=9、EC=6、BC=20，求 DE。",
+      "solutionSteps": [
+        "AC=9+6=15。",
+        "AE/AC=DE/BC。",
+        "9/15=DE/20，所以 DE=12。"
+      ],
+      "answer": "12"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "D、E 在 AB、AC 上，AD:DB=3:2，AE=12、EC=8，能否判定 DE∥BC？",
+      "solutionSteps": [
+        "AE:EC=12:8=3:2。",
+        "兩邊分段比相等。",
+        "由逆敘述可判定平行。"
+      ],
+      "answer": "可以"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 AB 當成 DB。",
+      "why": "沒先分清整段與部分。",
+      "correction": "寫 AB=AD+DB。"
+    },
+    {
+      "mistake": "比例式上下角色不一致。",
+      "why": "只把已知數湊成式子。",
+      "correction": "先用文字標記上段/下段或小/大。"
+    },
+    {
+      "mistake": "因圖看似平行就套公式。",
+      "why": "依賴視覺。",
+      "correction": "只用題目條件與平行記號。"
+    },
+    {
+      "mistake": "交叉相乘後得到負長度仍接受。",
+      "why": "沒有做範圍檢查。",
+      "correction": "線段長應為正，部分小於整段。"
+    },
+    {
+      "mistake": "逆敘述只比其中一條邊。",
+      "why": "忘記需要兩邊分段比相等。",
+      "correction": "完整比較 AD:DB 與 AE:EC。"
+    }
+  ],
+  "selfCheck": [
+    "平行條件存在嗎？",
+    "我使用的是分段比還是整邊比？",
+    "比例兩側的結構一致嗎？",
+    "整段是否先由部分相加？",
+    "答案長度合理嗎？"
+  ],
+  "summary": [
+    "平行線使三角形兩邊被截成比例線段。",
+    "可用上段:下段，或小整邊:大整邊。",
+    "對應位置必須一致。",
+    "不能以圖形外觀代替平行條件。"
+  ],
+  "connections": {
+    "previous": "連比應用提供共同倍數與比例式的基礎。",
+    "next": [
+      "連比應用題會把線段比例放入文字情境。",
+      "相似三角形會完整說明這些比例的來源。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u18-proportion-q010",
+      "purpose": "協助辨認「比例線段」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    },
+    {
+      "figureId": "u18-proportion-cr002",
+      "purpose": "協助辨認「比例線段」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s003-v001",
+      "u18-s003-v002",
+      "u18-s003-v003",
+      "u18-s003-v004",
+      "u18-s003-v005",
+      "u18-s003-v006",
+      "u18-s003-v007",
+      "u18-s003-v008",
+      "u18-s003-v009",
+      "u18-s003-v010",
+      "u18-s003-v011",
+      "u18-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s003-cr001",
+      "u18-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "逐圖核對分段比與整邊比的對應方向，特別加入逆敘述與視覺不可作為證據的限制；所有未知線段均做正值與部分小於整段檢查。"
+  },
+  "contentSha256": "579e0282ce5adf11fa1da4dd7dd0f011fc237c7f66480627d6c9ea4237ae2b84"
+}

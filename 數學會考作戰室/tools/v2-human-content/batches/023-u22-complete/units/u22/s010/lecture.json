@@ -1,0 +1,234 @@
+{
+  "lectureId": "u22-s010-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-probability",
+  "skillId": "probability-basic",
+  "lockedSkillOrder": 10,
+  "title": "古典機率：在所有基本結果等可能時，以有利結果數除以全部結果數。",
+  "originalLockedTitle": "古典機率",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認有限等可能樣本空間。",
+    "能用有利結果數除以全部結果數。",
+    "能處理重複標籤與聯集重疊。",
+    "能檢查機率介於0與1。"
+  ],
+  "prerequisiteSkillIds": [
+    "box-plot-compare"
+  ],
+  "prerequisiteBridge": "使用整數、分數、倍數與樣本空間計數能力。",
+  "glossary": [
+    {
+      "term": "隨機試驗",
+      "definition": "結果事前不確定但可能結果可描述的過程。"
+    },
+    {
+      "term": "樣本空間",
+      "definition": "所有可能基本結果的集合。"
+    },
+    {
+      "term": "事件",
+      "definition": "樣本空間中符合指定條件的結果集合。"
+    },
+    {
+      "term": "古典機率",
+      "definition": "基本結果等可能時，以計數比求事件機率。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "P(A)",
+      "meaning": "事件A的機率。"
+    },
+    {
+      "symbol": "P(A)=有利結果數/全部等可能結果數",
+      "meaning": "古典機率公式。"
+    },
+    {
+      "symbol": "0≤P(A)≤1",
+      "meaning": "機率範圍。"
+    }
+  ],
+  "conceptNarrative": [
+    "公式能直接用的前提是基本結果等可能，例如公平骰的每一面、同樣卡片的每一張。",
+    "事件名稱不一定等可能；袋中1紅4藍時，紅與藍雖只有兩類，機率不是各1/2。",
+    "兩顆可區分骰子的基本結果是36個有序配對；點數和只是由多個配對合成的事件。",
+    "「A或B」若有重疊結果，計數時要扣除重複，例如3的倍數或5的倍數。",
+    "算完後用0到1範圍與餘事檢查合理性。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "有利結果",
+      "statement": "符合事件條件的基本結果。"
+    },
+    {
+      "name": "等可能",
+      "statement": "每個基本結果發生機會相同。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P(A)=n(A)/n(S)",
+      "conditions": [
+        "S有限且所有基本結果等可能。"
+      ],
+      "meaning": "S有限且所有基本結果等可能。"
+    },
+    {
+      "formula": "n(A∪B)=n(A)+n(B)-n(A∩B)",
+      "conditions": [
+        "兩條件有重疊時。"
+      ],
+      "meaning": "兩條件有重疊時。"
+    }
+  ],
+  "nonApplicableCases": [
+    "基本結果不等可能時不能只數事件種類。",
+    "分母必須是完整樣本空間。",
+    "有序結果不能隨意合併。",
+    "分數選項若要求最簡形式需約分，但等值分數不能同時作不同選項。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "定義試驗",
+      "check": "說清楚一次試驗記錄什麼。"
+    },
+    {
+      "step": 2,
+      "instruction": "列樣本空間",
+      "check": "確認完整與等可能。"
+    },
+    {
+      "step": 3,
+      "instruction": "列有利結果",
+      "check": "處理端點、順序與重疊。"
+    },
+    {
+      "step": 4,
+      "instruction": "作比值",
+      "check": "有利除全部。"
+    },
+    {
+      "step": 5,
+      "instruction": "驗算",
+      "check": "範圍、約分與餘事。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "公平骰出偶數",
+      "solutionSteps": [
+        "3/6=1/2。"
+      ],
+      "answer": "3/6=1/2。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "1到20選3或5的倍數",
+      "solutionSteps": [
+        "6+4-1=9個，機率9/20。"
+      ],
+      "answer": "6+4-1=9個，機率9/20。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩骰和7",
+      "solutionSteps": [
+        "6個有序配對，機率6/36=1/6。"
+      ],
+      "answer": "6個有序配對，機率6/36=1/6。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "A、A、B、C、C、C卡片抽C",
+      "solutionSteps": [
+        "3張C除6張=1/2。"
+      ],
+      "answer": "3張C除6張=1/2。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到兩類就各1/2",
+      "why": "先看每類包含多少基本結果。",
+      "correction": "先看每類包含多少基本結果。"
+    },
+    {
+      "mistake": "把有利結果數當分母",
+      "why": "分母是全部結果。",
+      "correction": "分母是全部結果。"
+    },
+    {
+      "mistake": "聯集直接相加",
+      "why": "先扣交集。",
+      "correction": "先扣交集。"
+    },
+    {
+      "mistake": "把(1,6)與(6,1)合併",
+      "why": "若骰子可區分，順序不同。",
+      "correction": "若骰子可區分，順序不同。"
+    }
+  ],
+  "selfCheck": [
+    "基本結果真的等可能嗎？",
+    "樣本空間是否完整？",
+    "端點與順序是否處理？",
+    "重疊是否扣除？",
+    "答案是否介於0與1？"
+  ],
+  "summary": [
+    "古典機率是等可能計數比。",
+    "基本結果層級要選對。",
+    "事件類別不必等可能。",
+    "重疊與順序是常見失分點。"
+  ],
+  "connections": {
+    "previous": "使用整數、分數、倍數與樣本空間計數能力。",
+    "next": [
+      "下一技能以1減事件機率求餘事。",
+      "後續樹狀圖處理多階段試驗。"
+    ]
+  },
+  "figureReferences": [],
+  "figureAccessibility": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s010-v001",
+      "u22-s010-v002",
+      "u22-s010-v003",
+      "u22-s010-v004",
+      "u22-s010-v005",
+      "u22-s010-v006",
+      "u22-s010-v007",
+      "u22-s010-v008",
+      "u22-s010-v009",
+      "u22-s010-v010",
+      "u22-s010-v011",
+      "u22-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s010-cr001",
+      "u22-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "逐題獨立列舉公平骰、卡片與聯集樣本；修正一題將33/100誤寫成1/3的草稿答案，確認所有分數與列舉相符。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "在所有基本結果等可能時，以有利結果數除以全部結果數。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "a7c9c7c38f28a7c5e5e29d201806bcd22d35672c251033f43a7632e11dc1efef"
+}

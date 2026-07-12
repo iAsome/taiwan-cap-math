@@ -1,0 +1,231 @@
+{
+  "lectureId": "u12-s008-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-applications",
+  "skillId": "factoring-check-expand",
+  "lockedSkillTitle": "分解後展開檢查",
+  "title": "分解後展開檢查：比對每一個係數才算驗證",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能完整展開兩個一次式。",
+    "能逐項比對二次項、一次項與常數項。",
+    "能找出候選分解的第一處錯誤。",
+    "能說明單點代入不足以證明恆等。",
+    "能利用係數關係補出未知數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "factoring-application",
+      "requiredLevel": "能運用前一技能並以展開驗證結果；本講義會重新連接必要步驟。"
+    }
+  ],
+  "prerequisiteBridge": "先備技能為 factoring-application；先確認能完成前一方法並保留所有符號，再進入本技能。",
+  "glossary": [
+    {
+      "term": "候選分解",
+      "definition": "尚未確認正確的乘積形式。"
+    },
+    {
+      "term": "係數比對",
+      "definition": "比較同次項前的數字。"
+    },
+    {
+      "term": "反例",
+      "definition": "找一個值使主張不成立。"
+    },
+    {
+      "term": "恆等驗證",
+      "definition": "證明兩式對所有允許值相等。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(ax+b)(cx+d)",
+      "meaning": "展開為 acx^2+(ad+bc)x+bd。"
+    },
+    {
+      "symbol": "≡",
+      "meaning": "表示恆等；本單元可用文字說明，不強制使用此符號。"
+    }
+  ],
+  "conceptNarrative": [
+    "展開檢查要產生完整多項式，再按次方排列。",
+    "二次項、一次項、常數項任何一項不同，候選分解就錯。",
+    "兩式在某一個 x 值相同可能只是巧合，不能證明恆等。",
+    "反例足以推翻錯誤主張，但要證明正確通常需展開或完整係數論證。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "展開檢查",
+      "statement": "用分配律把因式乘積還原，與原多項式逐項比較。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(ax+b)(cx+d)=acx^2+(ad+bc)x+bd",
+      "conditions": [
+        "每個交叉乘積都要保留"
+      ],
+      "meaning": "通用展開。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只檢查首項和常數項不能保證中間項正確。",
+    "只代 x=0 只會檢查常數項。",
+    "排列順序不同不表示不相等，應先合併同類項。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "逐項使用分配律。",
+      "check": "至少列出四個乘積。"
+    },
+    {
+      "step": 2,
+      "instruction": "合併同類項。",
+      "check": "一次項通常來自兩個交叉乘積。"
+    },
+    {
+      "step": 3,
+      "instruction": "按降冪排列。",
+      "check": "方便逐項對照。"
+    },
+    {
+      "step": 4,
+      "instruction": "比較二次、一次與常數係數。",
+      "check": "指出第一處不一致。"
+    },
+    {
+      "step": 5,
+      "instruction": "若有未知係數，建立對應關係。",
+      "check": "再回展確認。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "檢查 (x+2)(x+7)",
+      "solutionSteps": [
+        "四項為 x^2+7x+2x+14。",
+        "合併得 x^2+9x+14。"
+      ],
+      "answer": "x^2+9x+14"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "檢查 (2x-3)(x+4)",
+      "solutionSteps": [
+        "交叉項 8x-3x=5x。"
+      ],
+      "answer": "2x^2+5x-12"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "判斷 (x+1)(x+6) 是否為 x^2+5x+6",
+      "solutionSteps": [
+        "展開一次項係數為 7。",
+        "原式一次項係數為 5。"
+      ],
+      "answer": "不是"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "若 (3x+p)(x-2) 的一次項係數為 -1",
+      "solutionSteps": [
+        "展開一次項為 (p-6)x。",
+        "p-6=-1，所以 p=5。"
+      ],
+      "answer": "p=5"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "漏掉一個交叉乘積。",
+      "why": "只乘首尾。",
+      "correction": "列出四個乘積。"
+    },
+    {
+      "mistake": "7x+2x 合成 14x。",
+      "why": "把加法當乘法。",
+      "correction": "同類項係數相加為 9x。"
+    },
+    {
+      "mistake": "只看代入 x=0。",
+      "why": "只驗證常數。",
+      "correction": "需比所有係數。"
+    },
+    {
+      "mistake": "項目順序不同就判錯。",
+      "why": "未先整理。",
+      "correction": "按次方排列。"
+    },
+    {
+      "mistake": "反例值算錯。",
+      "why": "代入未加括號。",
+      "correction": "每個負值都用括號。"
+    },
+    {
+      "mistake": "只說錯但不指出哪項。",
+      "why": "缺乏可修正資訊。",
+      "correction": "指出一次項或常數的差異。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "展開需保留四個乘積。",
+    "整理後逐項比係數。",
+    "單點代入不能證明恆等，但反例可推翻。"
+  ],
+  "connections": {
+    "previous": "承接 factoring-application。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s008-v001",
+      "u12-s008-v002",
+      "u12-s008-v003",
+      "u12-s008-v004",
+      "u12-s008-v005",
+      "u12-s008-v006",
+      "u12-s008-v007",
+      "u12-s008-v008",
+      "u12-s008-v009",
+      "u12-s008-v010",
+      "u12-s008-v011",
+      "u12-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s008-cr001",
+      "u12-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "講義中的四個展開均重算四項乘積；錯誤候選與未知係數例分別核對一次項，清楚區分證明與反例。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "b5e88dd67bc47ebdc94cb311a9ad78a7804045d8f9a634ca13796b6d250a5b18"
+}

@@ -1,0 +1,16 @@
+import s001 from './u15-s001.mjs';
+import s002 from './u15-s002.mjs';
+import s003 from './u15-s003.mjs';
+import s004 from './u15-s004.mjs';
+import s005 from './u15-s005.mjs';
+import s006 from './u15-s006.mjs';
+import s007 from './u15-s007.mjs';
+import s008 from './u15-s008.mjs';
+import s009 from './u15-s009.mjs';
+import s010 from './u15-s010.mjs';
+import s011 from './u15-s011.mjs';
+import s012 from './u15-s012.mjs';
+import s013 from './u15-s013.mjs';
+export const contentAuthority='CHATGPT_HUMAN_AUTHORED_R1';
+export const productionActivationAllowed=false;
+export default {s001,s002,s003,s004,s005,s006,s007,s008,s009,s010,s011,s012,s013};

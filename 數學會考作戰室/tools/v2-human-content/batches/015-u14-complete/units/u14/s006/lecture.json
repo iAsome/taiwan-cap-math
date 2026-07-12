@@ -1,0 +1,256 @@
+{
+  "lectureId": "u14-s006-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-sequences",
+  "skillId": "arithmetic-mean-term",
+  "lockedTitle": "等差中項",
+  "title": "等差中項：兩端平均與等距插入",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能求兩數之間的一個等差中項。",
+    "能利用2b=a+c判斷連續三項。",
+    "能插入多個等差中項。",
+    "能處理含未知數與實際等距情境。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "sequence-nth-term",
+      "title": "求第 n 項",
+      "requiredLevel": "能說明「求第 n 項」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "等差中項",
+      "definition": "若a、b、c為連續等差三項，b稱為a與c的等差中項。"
+    },
+    {
+      "term": "算術平均數",
+      "definition": "兩數和除以2。"
+    },
+    {
+      "term": "插入中項",
+      "definition": "在兩端之間加入數，使全列等差。"
+    },
+    {
+      "term": "間隔數",
+      "definition": "插入k個中項後共有k+1個相等間隔。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "b=(a+c)/2",
+      "meaning": "一個等差中項。"
+    },
+    {
+      "symbol": "2b=a+c",
+      "meaning": "避免分數的等價形式。"
+    },
+    {
+      "symbol": "d=(c-a)/(k+1)",
+      "meaning": "在a與c之間插入k項時的公差。"
+    }
+  ],
+  "conceptNarrative": [
+    "連續三個等差項的中間項同時距離兩端一樣遠，所以它是兩端的平均。",
+    "中項不一定介於兩端的大小之間嗎？若以實數且等差，確實位於數線中點；但符號可正可負。",
+    "插入多個中項時，要數的是間隔，不是新增數的個數。",
+    "含未知數時可用2b=a+c建立一元一次方程式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等差中項",
+      "statement": "使a、b、c相鄰差相等的中間項b。"
+    },
+    {
+      "name": "等距插入",
+      "statement": "相鄰項之差皆相同的填數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "b=(a+c)/2",
+      "conditions": [
+        "a、b、c為連續等差三項"
+      ],
+      "meaning": "中間項等於兩端平均。"
+    },
+    {
+      "formula": "d=(c-a)/(k+1)",
+      "conditions": [
+        "在a與c之間插入k項"
+      ],
+      "meaning": "兩端總差分成k+1段。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不是連續三項時不能直接把中間位置項當兩端平均。",
+    "插入k項時不可除以k。",
+    "若題目要求整數中項，平均結果必須是整數。",
+    "等比中項使用平方關係，不能與等差中項混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認兩端與中間位置",
+      "check": "是否為連續等差項。"
+    },
+    {
+      "step": 2,
+      "instruction": "一個中項用平均",
+      "check": "b=(a+c)/2。"
+    },
+    {
+      "step": 3,
+      "instruction": "多個中項先數間隔",
+      "check": "k個中項形成k+1段。"
+    },
+    {
+      "step": 4,
+      "instruction": "依公差逐項填入",
+      "check": "保持方向與符號。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查每段差相同",
+      "check": "同時核對兩端。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "6與18的等差中項",
+      "reasoning": "(6+18)÷2。",
+      "solutionSteps": [
+        "(6+18)÷2。",
+        "得到12。"
+      ],
+      "answer": "12"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "-9與5的等差中項",
+      "reasoning": "(-9+5)÷2。",
+      "solutionSteps": [
+        "(-9+5)÷2。",
+        "得到-2。"
+      ],
+      "answer": "-2"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "在4與24間插入3項",
+      "reasoning": "共有4段，d=(24-4)÷4=5。",
+      "solutionSteps": [
+        "共有4段，d=(24-4)÷4=5。",
+        "依序加5。"
+      ],
+      "answer": "9、14、19"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "x-2，7，2x+3為連續等差三項",
+      "reasoning": "2×7=(x-2)+(2x+3)。",
+      "solutionSteps": [
+        "2×7=(x-2)+(2x+3)。",
+        "14=3x+1。"
+      ],
+      "answer": "x=13/3"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把兩端相減再除2",
+      "why": "得到的是半差，不是中項值。",
+      "correction": "中項用兩端和除2。"
+    },
+    {
+      "mistake": "插入3項只分3段",
+      "why": "忽略兩端到第一與最後中項的間隔。",
+      "correction": "段數=插入數+1。"
+    },
+    {
+      "mistake": "不保留負號",
+      "why": "負數平均會錯。",
+      "correction": "先加有號數。"
+    },
+    {
+      "mistake": "把等比中項公式套進來",
+      "why": "兩種數列條件不同。",
+      "correction": "等差用2b=a+c。"
+    },
+    {
+      "mistake": "填完不檢查最後一段",
+      "why": "末端可能接不上。",
+      "correction": "逐段算差。"
+    },
+    {
+      "mistake": "未確認連續位置",
+      "why": "非連續項平均不一定是所求項。",
+      "correction": "看清項次。"
+    }
+  ],
+  "selfCheck": [
+    "中間項是否是兩端的和除以2？",
+    "插入項數與間隔數是否分清？",
+    "每個相鄰差是否一致？",
+    "未知數方程式是否寫成2b=a+c？",
+    "答案是否符合整數或單位要求？"
+  ],
+  "summary": [
+    "等差中項是兩端的算術平均。",
+    "連續三項滿足2b=a+c。",
+    "插入k個中項要分成k+1段。",
+    "完成後逐段驗證公差。"
+  ],
+  "connections": {
+    "previous": "使用等差數列的固定公差與通項。",
+    "next": [
+      "規律觀察列式會將圖形中的增量寫成n的式子。",
+      "等差級數會利用首尾對稱平均。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s006-v001",
+      "u14-s006-v002",
+      "u14-s006-v003",
+      "u14-s006-v004",
+      "u14-s006-v005",
+      "u14-s006-v006",
+      "u14-s006-v007",
+      "u14-s006-v008",
+      "u14-s006-v009",
+      "u14-s006-v010",
+      "u14-s006-v011",
+      "u14-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s006-cr001",
+      "u14-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「等差中項」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "bb0512bafbf4eb4fdd6ca5ac7ec073a7ab38b749273e52a4edcac5494a882f8c"
+}

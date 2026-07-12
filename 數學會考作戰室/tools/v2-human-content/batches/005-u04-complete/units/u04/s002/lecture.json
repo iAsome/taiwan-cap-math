@@ -1,0 +1,209 @@
+{
+  "lectureId": "u04-s002-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-basics",
+  "skillId": "system-ordered-pair-solution-check",
+  "lockedSkillTitle": "有序數對與解的判斷",
+  "title": "有序數對與解的判斷：順序正確才能代入",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "有序數對與解的判斷",
+    "scope": "依照 x、y 的順序代入，判斷有序數對是否滿足方程式。"
+  },
+  "prerequisiteBridge": "先備技能 system-two-variable-equation-definition 已建立必要基礎；本節將其用於「依照 x、y 的順序代入，判斷有序數對是否滿足方程式。」",
+  "learningGoals": [
+    "理解 (x,y) 的第一個數對應 x、第二個數對應 y。",
+    "能代入方程式左右兩邊檢驗。",
+    "能由已知一個座標求另一個座標。",
+    "能辨認交換順序後可能不再成立。"
+  ],
+  "vocabulary": [
+    {
+      "term": "有序數對",
+      "definition": "依固定順序排列的兩個數，寫成 (x,y)。"
+    },
+    {
+      "term": "解",
+      "definition": "代入後使方程式成立的未知數值。"
+    },
+    {
+      "term": "代入",
+      "definition": "用指定數值取代未知數。"
+    },
+    {
+      "term": "檢驗",
+      "definition": "分別算左右兩邊，確認是否相等。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(a,b)",
+      "meaning": "表示 x=a、y=b，不可任意交換。"
+    },
+    {
+      "symbol": "LHS",
+      "meaning": "等號左邊的值。"
+    },
+    {
+      "symbol": "RHS",
+      "meaning": "等號右邊的值。"
+    }
+  ],
+  "conceptDevelopment": [
+    "二元一次方程式通常有許多組解；每一組解都以有序數對記錄。",
+    "檢驗不是把兩個數隨便放入，而是嚴格依照變數順序。",
+    "只要代入後左右相等，該數對就是方程式的解；不必先把所有解列完。"
+  ],
+  "definitions": [
+    {
+      "name": "方程式的一組解",
+      "statement": "使等式成立的一組有序數對。"
+    },
+    {
+      "name": "順序性",
+      "statement": "一般而言 (a,b) 與 (b,a) 是不同的有序數對。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "把 x=a、y=b 代入 ax+by=c",
+      "conditions": [
+        "a、b 在此處是數對分量，須按題目變數順序代入。"
+      ],
+      "meaning": "比較代入後左值與右值。"
+    }
+  ],
+  "invalidUseCases": [
+    "不可只代入其中一個未知數就下結論。",
+    "不可因為兩個數的和相同就忽略係數。",
+    "若題目寫 (y,x)，順序必須跟括號前的標示一致。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "讀清楚數對順序",
+      "check": "通常是 (x,y)。"
+    },
+    {
+      "step": 2,
+      "instruction": "以第一個數取代 x",
+      "check": "括號也要保留負號。"
+    },
+    {
+      "step": 3,
+      "instruction": "以第二個數取代 y",
+      "check": "分數或小數照原值代入。"
+    },
+    {
+      "step": 4,
+      "instruction": "分別計算左右兩邊",
+      "check": "先乘除後加減。"
+    },
+    {
+      "step": 5,
+      "instruction": "比較是否相等",
+      "check": "相等才是解。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "檢驗 (2,1) 是否為 3x+y=7 的解。",
+      "solutionSteps": [
+        "代入 x=2、y=1。",
+        "左邊 3×2+1=7。",
+        "右邊為 7。"
+      ],
+      "answer": "是。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "檢驗 (1,2) 是否為 3x+y=7 的解。",
+      "solutionSteps": [
+        "左邊 3×1+2=5。",
+        "5≠7。"
+      ],
+      "answer": "不是。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "若 (4,k) 是 2x-y=3 的解，求 k。",
+      "solutionSteps": [
+        "代入得 8-k=3。",
+        "所以 k=5。"
+      ],
+      "answer": "k=5。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "找出 x+y=0 的兩組整數解。",
+      "solutionSteps": [
+        "任取 x，再令 y=-x。",
+        "取 x=2 得 y=-2；取 x=-3 得 y=3。"
+      ],
+      "answer": "例如 (2,-2)、(-3,3)。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 (2,-1) 代成 x=-1、y=2",
+      "correction": "忽略有序數對的順序。"
+    },
+    {
+      "mistake": "只算左邊不和右邊比較",
+      "correction": "檢驗需要確認等號成立。"
+    },
+    {
+      "mistake": "負數代入未加括號",
+      "correction": "容易造成乘法符號錯誤。"
+    },
+    {
+      "mistake": "以為一個方程式只有一組解",
+      "correction": "二元一次方程式通常有無限多組解。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "(0,3) 是否滿足 2x+y=3？",
+      "answer": "是。"
+    },
+    {
+      "prompt": "(3,0) 是否也滿足？",
+      "answer": "否，左邊為 6。"
+    },
+    {
+      "prompt": "若 (t,2) 滿足 x+2y=7，t 是多少？",
+      "answer": "3。"
+    },
+    {
+      "prompt": "交換數對順序一定仍為解嗎？",
+      "answer": "不一定，要重新代入。"
+    }
+  ],
+  "summary": [
+    "有序數對的順序不可交換。",
+    "代入後左右相等才是解。",
+    "一個二元一次方程式通常有許多組解。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-two-variable-equation-definition 已建立必要基礎；本節將其用於「依照 x、y 的順序代入，判斷有序數對是否滿足方程式。」",
+    "next": "下一技能「聯立方程式解的意義」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "重新計算每個示例的左右兩邊，確認順序錯置與負號括號均有具體示範；內容只要求代入檢驗，未提前教授聯立消去。",
+    "reviewNote": "重新計算每個示例的左右兩邊，確認順序錯置與負號括號均有具體示範；內容只要求代入檢驗，未提前教授聯立消去。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "c3b16d7c7e1d5edda6f003eddce08c1d2aa4685d5a64762919374fa5156e617a"
+}

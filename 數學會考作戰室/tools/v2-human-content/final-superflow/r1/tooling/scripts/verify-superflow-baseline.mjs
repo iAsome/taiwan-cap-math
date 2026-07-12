@@ -1,0 +1,18 @@
+import fs from "node:fs";
+import path from "node:path";
+import { parseArgs,readJson,writeJson,assert,runGit,gitBlob } from "./lib/common.mjs";
+const a=parseArgs(process.argv.slice(2));assert(a.repo&&a.root,"Usage --repo --root");
+const repo=path.resolve(a.repo),root=path.resolve(a.root),ev=path.join(root,"evidence"),ex=readJson(path.join(root,"tooling/EXPECTED-RESULTS.json"));
+assert(runGit(repo,["branch","--show-current"])==="chatgpt/math-v2-human-authoring-r1","branch mismatch");
+assert(runGit(repo,["rev-parse","HEAD"])===ex.requiredStartingHead,"HEAD mismatch");
+assert(runGit(repo,["log","-1","--format=%s"])===ex.requiredStartingSubject,"subject mismatch");
+assert(runGit(repo,["rev-parse","origin/chatgpt/math-v2-human-authoring-r1"])===ex.requiredStartingHead,"remote mismatch");
+assert(runGit(repo,["status","--short","--untracked-files=all"])==="","repo not clean");
+const summary=readJson(path.join(repo,"數學會考作戰室/tools/v2-human-content/post-cutover-stability/r1/evidence/post-cutover-stability-r1-summary.json"));
+assert(summary.status===ex.requiredStabilityStatus&&summary.nextAuthorizedStage===ex.requiredStabilityNextStage,"stability gate mismatch");
+assert(summary.contentVersion===ex.contentVersion&&summary.humanRuntimeDefault===true,"stability state mismatch");
+assert(runGit(repo,["rev-list","-n","1",ex.preCutoverTag])===ex.preCutoverTagTarget,"pre-cutover tag mismatch");
+const keyPaths=["數學會考作戰室/index.html","數學會考作戰室/math-bootstrap.js","數學會考作戰室/human-runtime/config.mjs","數學會考作戰室/human-runtime/engine.mjs","數學會考作戰室/human-runtime/storage-migration.mjs"];
+const blobs=Object.fromEntries(keyPaths.map(p=>[p,gitBlob(repo,p)]));
+const out={status:"PASS_FINAL_SUPERFLOW_BASELINE_R1",head:ex.requiredStartingHead,stabilityStatus:summary.status,contentVersion:ex.contentVersion,keyGitBlobs:blobs,preCutoverTag:ex.preCutoverTag,preCutoverTagTarget:ex.preCutoverTagTarget,oldDatabaseDeletionAllowed:false};
+writeJson(path.join(ev,"superflow-baseline.json"),out);console.log(JSON.stringify(out,null,2));

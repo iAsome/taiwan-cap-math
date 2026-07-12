@@ -1,0 +1,282 @@
+{
+  "lectureId": "u21-s003-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-graphs",
+  "skillId": "quadratic-standard-to-graph",
+  "lockedTitle": "標準式與圖形",
+  "title": "由 y=ax² 預測圖形：係數與座標點和伸縮",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由 y=ax² 判斷圖形通過原點。",
+    "能以 a 的正負判斷開口方向。",
+    "能比較 |a| 對圖形寬窄的影響。",
+    "能由指定 x 算出圖上的點並驗證圖形。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-vertex",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "先使用頂點與對稱軸概念：y=ax² 的頂點固定在原點，對稱軸固定為 y 軸。",
+  "glossary": [
+    {
+      "term": "標準式 y=ax²",
+      "definition": "以原點為頂點、y 軸為對稱軸的二次函數基本形式。"
+    },
+    {
+      "term": "開口",
+      "definition": "拋物線向上或向下延伸的方向。"
+    },
+    {
+      "term": "寬窄",
+      "definition": "在相同高度或相同 |x| 下，曲線離對稱軸的程度。"
+    },
+    {
+      "term": "伸縮",
+      "definition": "係數大小改變使 y 值按比例放大或縮小。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a",
+      "meaning": "x² 的係數，必須不等於 0。"
+    },
+    {
+      "symbol": "|a|",
+      "meaning": "a 的絕對值，用來比較係數大小而不看正負。"
+    },
+    {
+      "symbol": "O(0,0)",
+      "meaning": "原點，也是 y=ax² 的頂點。"
+    }
+  ],
+  "conceptNarrative": [
+    "在 y=ax² 中代入 x=0，必得 y=0，因此所有這類圖形都通過原點。",
+    "正負相反的 x 平方後相同，所以 y=ax² 對 y 軸對稱。",
+    "a>0 時，除了原點外 y 與 x² 同為正，曲線向上；a<0 時 y 為負，曲線向下。",
+    "比較 y=x² 與 y=3x²：在 x=1 時高度分別 1、3，後者離 x 軸更快，因此看起來較窄。|a| 越大越窄，0<|a|<1 越寬。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "y=ax² 標準圖形",
+      "statement": "a≠0 時，以 (0,0) 為頂點、x=0 為對稱軸的拋物線。"
+    },
+    {
+      "name": "寬窄比較",
+      "statement": "在同一座標比例下，|a| 較大的 y=ax² 圖形較靠近對稱軸。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "y=a x²",
+      "conditions": [
+        "a≠0"
+      ],
+      "meaning": "二次函數的原點頂點基本式。"
+    },
+    {
+      "formula": "f(-x)=a(-x)²=ax²=f(x)",
+      "conditions": [
+        "同一 a"
+      ],
+      "meaning": "說明圖形關於 y 軸對稱。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不同座標圖若刻度比例不同，不能只憑外觀看寬窄。",
+    "a=0 時 y=0 是直線，不是拋物線。",
+    "|a| 只決定寬窄，不決定向上或向下。",
+    "比較寬窄時必須在相同座標尺度下。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認式子正是 y=ax²。",
+      "check": "沒有一次項或常數項嗎？"
+    },
+    {
+      "step": 2,
+      "instruction": "讀出 a 的正負。",
+      "check": "開口方向是否正確？"
+    },
+    {
+      "step": 3,
+      "instruction": "讀出 |a|。",
+      "check": "與 1 或另一個係數比較寬窄。"
+    },
+    {
+      "step": 4,
+      "instruction": "標示原點與對稱軸 x=0。",
+      "check": "頂點是否誤移動？"
+    },
+    {
+      "step": 5,
+      "instruction": "代入 x=±1、±2 驗證。",
+      "check": "對稱點 y 值是否相同？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "y=4x² 的頂點與對稱軸為何？",
+      "solutionSteps": [
+        "沒有平移項，x=0 時 y=0。",
+        "正負 x 的函數值相同。"
+      ],
+      "answer": "頂點 (0,0)，對稱軸 x=0。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "比較 y=2x² 與 y=(1/2)x² 的寬窄。",
+      "solutionSteps": [
+        "|2|>|1/2|。",
+        "在同一 |x| 下前者 |y| 較大。"
+      ],
+      "answer": "y=2x² 較窄。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "y=-3x² 在 x=-2 時的點。",
+      "solutionSteps": [
+        "(-2)²=4。",
+        "y=-3×4=-12。"
+      ],
+      "answer": "(-2,-12)。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "哪個函數與 y=5x² 寬度相同但開口相反？",
+      "solutionSteps": [
+        "寬度取決於 |a|=5。",
+        "開口相反需係數改為 -5。"
+      ],
+      "answer": "y=-5x²。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "為何 y=0.2x² 比 y=x² 寬？",
+      "solutionSteps": [
+        "0.2 的絕對值小於 1。",
+        "同一 x 下高度較小，曲線離對稱軸較遠才達同高。"
+      ],
+      "answer": "因 |a| 較小，圖形較寬。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "讀出頂點、軸與開口。",
+    "standard": "比較係數絕對值與寬窄。",
+    "advanced": "從圖形特徵反推 a 的範圍或符號。",
+    "literacy": "在相同比例的軌跡或容器剖面中比較陡峭程度。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "認為 a 越大數值越寬。",
+      "why": "把係數與水平伸展直覺顛倒。",
+      "correction": "固定 x 比較 y；|a| 越大，升降越快，圖形越窄。"
+    },
+    {
+      "mistake": "用 a 的正負比較寬窄。",
+      "why": "未取絕對值。",
+      "correction": "寬窄比較 |a|，方向才看正負。"
+    },
+    {
+      "mistake": "把頂點讀成 (0,a)。",
+      "why": "誤把係數當截距。",
+      "correction": "代 x=0 得 y=0。"
+    },
+    {
+      "mistake": "a=0 仍稱拋物線。",
+      "why": "忘記二次項係數必須非零。",
+      "correction": "a=0 時最高次不再是 2。"
+    },
+    {
+      "mistake": "不同刻度圖直接看外觀。",
+      "why": "忽略尺度改變。",
+      "correction": "先確認兩軸刻度一致。"
+    },
+    {
+      "mistake": "x=-2 時把 x² 寫成 -4。",
+      "why": "負號未放入平方。",
+      "correction": "先寫 (-2)²=4。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "y=-0.4x² 開口方向？",
+      "answer": "向下。"
+    },
+    {
+      "prompt": "y=6x² 與 y=-6x² 哪個較窄？",
+      "answer": "寬度相同。"
+    },
+    {
+      "prompt": "y=(1/3)x² 與 y=2x² 哪個較寬？",
+      "answer": "y=(1/3)x²。"
+    },
+    {
+      "prompt": "y=7x² 的頂點？",
+      "answer": "(0,0)。"
+    }
+  ],
+  "summary": [
+    "y=ax² 的頂點為原點，對稱軸為 x=0。",
+    "a>0 向上，a<0 向下。",
+    "|a| 越大越窄，越接近 0 越寬。",
+    "代入成對的 ±x 可快速驗證對稱。"
+  ],
+  "connections": {
+    "previous": "沿用頂點與對稱軸的圖形語言。",
+    "next": [
+      "下一技能會在式子、表格與圖形之間互相轉換。",
+      "後續頂點式會把原點頂點平移到 (h,k)。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s003-01"
+  ],
+  "accessibilityNotes": [
+    "兩條曲線以不同線型與文字名稱區分，避免只依顏色比較寬窄。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s003-v001",
+      "u21-s003-v002",
+      "u21-s003-v003",
+      "u21-s003-v004",
+      "u21-s003-v005",
+      "u21-s003-v006",
+      "u21-s003-v007",
+      "u21-s003-v008",
+      "u21-s003-v009",
+      "u21-s003-v010",
+      "u21-s003-v011",
+      "u21-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s003-cr001",
+      "u21-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一代入 x=0、±1、±2 驗證頂點與對稱；重算 -3(-2)²=-12，並確認寬窄敘述均以相同座標刻度與 |a| 比較為前提。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "49963320a8a914b0bd8555ff0a6ee13602498ad271a02dd3a72170a0375a894a"
+}

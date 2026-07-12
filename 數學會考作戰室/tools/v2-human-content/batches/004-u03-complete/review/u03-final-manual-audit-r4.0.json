@@ -1,0 +1,86 @@
+{
+  "unitId": "u03",
+  "reviewVersion": "human-final-audit-r4.0",
+  "reviewedAt": "2026-07-12",
+  "questionCount": 180,
+  "lectureCount": 15,
+  "constructedResponseCount": 30,
+  "figureCount": 3,
+  "issuesFoundAndCorrected": [
+    {
+      "id": "U03-AUD-001",
+      "finding": "舊 syllabus 將全部 skills 標成 text-only。",
+      "correction": "逐題重新判斷圖形必要性，為等量天平、分段行程與方案資料表建立3張專用SVG。"
+    },
+    {
+      "id": "U03-AUD-002",
+      "finding": "原 skill 名「合理性檢查」範圍過寬。",
+      "correction": "作者標題改為「解的合理性檢查」，明定先代數驗算再做情境限制檢查。"
+    },
+    {
+      "id": "U03-AUD-003",
+      "finding": "原 skill 名「一元一次方程式素養題」未表達整合要求。",
+      "correction": "改為「一元一次方程式綜合素養題」，每題情境資料實際決定列式。"
+    },
+    {
+      "id": "U03-AUD-004",
+      "finding": "方案比較草稿中曾有兩題使用相同費用式。",
+      "correction": "將第7題改為150+6x與11x，同價點30，消除同題換外觀。"
+    },
+    {
+      "id": "U03-AUD-005",
+      "finding": "合理性題草稿出現簡體字形。",
+      "correction": "統一改為臺灣繁體「人數」並重算題目與審查雜湊。"
+    },
+    {
+      "id": "U03-AUD-006",
+      "finding": "綜合預算題的「最多購買且恰好使用」語意不精確。",
+      "correction": "改為必須保留190元且恰好可購買幾組，唯一答案19組。"
+    },
+    {
+      "id": "U03-AUD-007",
+      "finding": "合理性講義曾使用非必要集合符號。",
+      "correction": "移除x∈Z，改用「x為整數」與零基礎文字解釋。"
+    },
+    {
+      "id": "U03-AUD-008",
+      "finding": "船逆流題初稿答案欄與計算45÷9不一致。",
+      "correction": "答案更正為5小時，重新設計三個錯誤選項並重建審查。"
+    },
+    {
+      "id": "U03-AUD-009",
+      "finding": "需防止與舊Codex資料庫混合。",
+      "correction": "所有記錄新增contentAuthority與legacyContentDisposition，另建最終退休清單並禁止現在啟用。"
+    },
+    {
+      "id": "U03-AUD-010",
+      "finding": "含分母素養題初稿把 x 的語意寫成「3分鐘流入量」，卻在解法中當成三分鐘總量的三等份，題幹與方程式 x/3＋4＝16 不一致。",
+      "correction": "重寫為「預定3分鐘內等量流入x公升，流入1分鐘後另加4公升」，明確定義x為三分鐘總量；重新撰寫解析、四選項理由、獨立審查並重算雜湊。"
+    },
+    {
+      "id": "U03-AUD-011",
+      "finding": "年齡題「6年後母親40歲，且是女兒2倍」可能被誤讀為倍數關係發生在今年。",
+      "correction": "加入「而且當時」鎖定比較時間點，重寫步驟、錯誤原因與歧義審查並重算雜湊。"
+    },
+    {
+      "id": "U03-AUD-012",
+      "finding": "兩篇講義標題使用頓號列舉概念，與全站細項命名規則不一致。",
+      "correction": "將金錢問題改為「從固定費與單價建立總金額關係」，行程問題改為「由距離和速率與時間建立分段方程式」，並重算講義雜湊。"
+    },
+    {
+      "id": "U03-AUD-013",
+      "finding": "四題基礎方程式的步驟欄原先只有兩步，驗算沒有獨立列出。",
+      "correction": "為 x＋9＝21、x－7＝－3、5x＝45 與 x/3＝7 補成三步，最後一步逐題代回驗算並重算雜湊。"
+    },
+    {
+      "id": "U03-AUD-014",
+      "finding": "三篇講義的觀念形成句過度簡短，未充分提示相鄰差、情境驗收與同價點建立方式。",
+      "correction": "逐篇補充連續奇偶數相鄰差、代數解後的情境檢查，以及比較完整總費用式的理由，並重算講義雜湊。"
+    }
+  ],
+  "crossQuestionDuplicateStemCount": 0,
+  "crossPreviousHumanBatchesExactStemDuplicateCount": 0,
+  "simplifiedChineseDetectedAfterCorrection": false,
+  "legacyContentMixed": false,
+  "decision": "pass"
+}

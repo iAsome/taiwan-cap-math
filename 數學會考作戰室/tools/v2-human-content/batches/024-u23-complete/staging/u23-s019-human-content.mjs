@@ -1,0 +1,1369 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u23-s019-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-applications",
+  "skillId": "solid-packaging",
+  "title": "包裝問題：整合排列最小外盒和用料",
+  "lockedSkillTitle": "包裝問題",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能由商品尺寸與排列方式求最小長方體外盒。",
+    "能比較不同排列的包裝體積與表面積。",
+    "能計算包裝材料、空隙率與裝箱數。",
+    "能依方向限制、緩衝厚度與整數件數作決策。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "solid-application-word",
+      "requiredLevel": "能解容量、材料、排水、密度與成本等立體應用題。",
+      "bridge": "已會立體應用、表面積與組合體。本節把商品視為可排列的立體，外盒尺寸由每一方向的占用長度決定。"
+    }
+  ],
+  "glossary": [
+    [
+      "排列方向",
+      "商品的長、寬、高分別對應外盒哪個方向。"
+    ],
+    [
+      "最小外盒",
+      "在指定排列與無額外空隙下，恰好包住所需商品的長方體。"
+    ],
+    [
+      "緩衝厚度",
+      "外盒內壁與商品間預留的距離，兩側通常各一份。"
+    ],
+    [
+      "空隙率",
+      "外盒內部未被商品實體占用的比例。"
+    ],
+    [
+      "裝箱率",
+      "商品總體積占外盒內容積的比例。"
+    ]
+  ],
+  "notation": [
+    [
+      "外盒某方向尺寸=該方向排列個數×商品對應尺寸+兩側緩衝",
+      "若兩端皆有緩衝。"
+    ],
+    [
+      "裝箱率=商品總體積/外盒內容積",
+      "結果通常轉百分率。"
+    ]
+  ],
+  "conceptNarrative": [
+    "多件長方體商品整齊排列時，外盒三個方向尺寸分別是對應尺寸乘排列個數；不能只把所有件數乘到一個方向。",
+    "商品可旋轉時，不同方向配置會改變外盒表面積，即使總內容積相同；材料最省的排列往往使外盒三邊較接近。",
+    "有緩衝厚度時，每個外盒方向若兩側都預留，就加2倍厚度；商品之間是否也有隔板要依題意。",
+    "裝箱率用商品實體總體積除外盒內部體積；最大完整件數則要考慮每方向整數商，不可只用總體積比。"
+  ],
+  "formalDefinitions": [
+    [
+      "格狀排列外盒尺寸",
+      "若沿三方向排a、b、c件，尺寸為aL、bW、cH（依選定方向）。"
+    ],
+    [
+      "裝箱率",
+      "η=商品總體積÷外盒內容積。"
+    ],
+    [
+      "兩側緩衝",
+      "每方向外尺寸相對商品群尺寸增加2t。"
+    ]
+  ],
+  "formulas": [
+    [
+      "最大格數=⌊A/a⌋⌊B/b⌋⌊C/c⌋",
+      [
+        "方向固定",
+        "商品不變形",
+        "整齊格狀排列"
+      ],
+      "各方向可放整數個數相乘。"
+    ],
+    [
+      "S盒=2(LW+LH+WH)",
+      [
+        "封閉長方體盒"
+      ],
+      "比較包材面積。"
+    ]
+  ],
+  "nonApplicableCases": [
+    "總體積比只能給上限，不保證尺寸方向能排入。",
+    "商品旋轉是否允許必須讀題。",
+    "外盒尺寸與內盒尺寸不能混用。",
+    "緩衝若只在外圍，不可在每件商品之間重複加。"
+  ],
+  "method": [
+    [
+      "確認商品可否旋轉",
+      "哪些尺寸可交換？"
+    ],
+    [
+      "選排列個數與方向",
+      "三方向各放幾件？"
+    ],
+    [
+      "加入隔板或緩衝",
+      "是外圍兩側還是件間？"
+    ],
+    [
+      "求外盒尺寸、面積或體積",
+      "題目要哪個量？"
+    ],
+    [
+      "檢查整數可放性與比較",
+      "每方向都放得下嗎？材料是否最少？"
+    ]
+  ],
+  "workedExamples": [
+    [
+      "L1",
+      "2×3×1商品排2×2×3件，固定方向，外盒？",
+      [
+        "尺寸4×6×3。"
+      ],
+      "4×6×3。"
+    ],
+    [
+      "L2",
+      "外圍緩衝0.5，各方向加多少？",
+      [
+        "兩側各0.5。"
+      ],
+      "各方向加1。"
+    ],
+    [
+      "L3",
+      "箱10×8×6放3×2×2商品，固定方向，件數？",
+      [
+        "⌊10/3⌋⌊8/2⌋⌊6/2⌋=3×4×3。"
+      ],
+      "36件。"
+    ],
+    [
+      "L4",
+      "同體積外盒比較用料？",
+      [
+        "算表面積，邊長較均衡通常較小。"
+      ],
+      "以實際尺寸比較。"
+    ]
+  ],
+  "commonMistakes": [
+    [
+      "只用總體積相除",
+      "忽略方向排不下。",
+      "逐方向取整數商。"
+    ],
+    [
+      "兩側緩衝只加一次",
+      "漏掉另一側。",
+      "若兩側皆有，加2t。"
+    ],
+    [
+      "每件都加外圍緩衝",
+      "重複放大。",
+      "外圍緩衝只加在商品群外側。"
+    ],
+    [
+      "旋轉限制忽略",
+      "使用不允許的方向。",
+      "先確認可否旋轉。"
+    ],
+    [
+      "內容積當包材面積",
+      "量的種類錯。",
+      "紙材通常看表面積或展開圖。"
+    ],
+    [
+      "件數商四捨五入",
+      "可能放不下。",
+      "各方向向下取整。"
+    ]
+  ],
+  "selfCheck": [
+    "商品能否旋轉？",
+    "三方向排列個數是否相乘得到總件數？",
+    "緩衝加在外圍還是件間？",
+    "求的是外盒尺寸、面積、體積或裝箱率？",
+    "每方向整數商是否向下取整？"
+  ],
+  "summary": [
+    "包裝先決定排列方向。",
+    "外盒尺寸由三方向占用長度決定。",
+    "兩側緩衝通常加2t。",
+    "最大件數需逐方向取整。",
+    "相同體積不代表包材相同。"
+  ],
+  "connections": {
+    "previous": "立體應用提供容量與材料工具；包裝進一步加入排列、旋轉與緩衝限制。",
+    "next": [
+      "最後一節縮放與體積比會分析模型或包裝整體按比例改變。",
+      "最終整合可同時比較體積利用率與表面材料成本。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u23-s019-fig001",
+      "purpose": "格狀包裝排列",
+      "altText": "商品沿三方向排列的件數與尺寸對應。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s019-v001",
+      "u23-s019-v002",
+      "u23-s019-v003",
+      "u23-s019-v004",
+      "u23-s019-v005",
+      "u23-s019-v006",
+      "u23-s019-v007",
+      "u23-s019-v008",
+      "u23-s019-v009",
+      "u23-s019-v010",
+      "u23-s019-v011",
+      "u23-s019-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s019-cr001",
+      "u23-s019-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐例核對4×6×3、加1、36件與表面積比較；特別審查總體積上限不等於可排件數、緩衝加兩側與旋轉限制。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "80c30e62adbf0c719f87ee3870aa3d17acb304b5152b6708938cb4ddd008704a"
+};
+
+export const QUESTIONS = [
+  {
+    "prompt": "一個長方體商品尺寸為 4×3×2 公分，固定方向排成沿長、寬、高分別 2、3、4 件的整齊方陣。最小外盒內尺寸為何？",
+    "text": "一個長方體商品尺寸為 4×3×2 公分，固定方向排成沿長、寬、高分別 2、3、4 件的整齊方陣。最小外盒內尺寸為何？",
+    "choices": [
+      "16×9×4",
+      "8×12×6",
+      "8×9×8",
+      "24×3×2"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：逐方向相乘。所得結果是「8×9×8」。",
+    "explanation": "三方向分別為2×4=8、3×3=9、4×2=8，所以內尺寸8×9×8公分。",
+    "steps": [
+      "逐方向相乘"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "16×9×4",
+        "truth": false,
+        "reason": "只放大部分方向。"
+      },
+      {
+        "choice": "8×12×6",
+        "truth": false,
+        "reason": "排列數對錯方向。"
+      },
+      {
+        "choice": "8×9×8",
+        "truth": true,
+        "reason": "依獨立計算「逐方向相乘」，此選項符合所求「最小內尺寸」。"
+      },
+      {
+        "choice": "24×3×2",
+        "truth": false,
+        "reason": "把件數集中一方向。"
+      }
+    ],
+    "misconceptionTarget": "把總件數24全部乘到單一尺寸。",
+    "authoringIntent": "由格狀排列求外盒尺寸。",
+    "difficulty": "basic",
+    "givenConditions": [
+      "商品4×3×2",
+      "排列2×3×4",
+      "方向固定"
+    ],
+    "target": "最小內尺寸",
+    "difficultyReason": "基礎：逐方向乘法。 本題以「由格狀排列求外盒尺寸。」作為該難度的具體判準。",
+    "prerequisiteCheck": "已會長方體尺寸。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "公分。 所求「最小內尺寸」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "無間隙。 題幹已完整限制「最小內尺寸」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": "u23-s019-fig001",
+    "drawingSpecId": "u23-s019-draw001",
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v001",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "figure-supported",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "basic"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "16a4b755b5f02a3dae451c857add888cf1820063bcd3ab1e26dc91f3919fe6f4"
+  },
+  {
+    "prompt": "商品群本身長 20、寬 12、高 8 公分，外圍六個方向都要留 1 公分緩衝。外盒內尺寸為何？",
+    "text": "商品群本身長 20、寬 12、高 8 公分，外圍六個方向都要留 1 公分緩衝。外盒內尺寸為何？",
+    "choices": [
+      "22×14×10",
+      "21×13×9",
+      "26×18×14",
+      "20×12×8"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：三尺寸各加2。所得結果是「22×14×10」。",
+    "explanation": "每個方向有兩側，各加2×1公分，所以為22×14×10。",
+    "steps": [
+      "三尺寸各加2"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "22×14×10",
+        "truth": true,
+        "reason": "依獨立計算「三尺寸各加2」，此選項符合所求「外盒內尺寸」。"
+      },
+      {
+        "choice": "21×13×9",
+        "truth": false,
+        "reason": "只加一側。"
+      },
+      {
+        "choice": "26×18×14",
+        "truth": false,
+        "reason": "每側加3。"
+      },
+      {
+        "choice": "20×12×8",
+        "truth": false,
+        "reason": "未留緩衝。"
+      }
+    ],
+    "misconceptionTarget": "每個方向只加一次緩衝厚度。",
+    "authoringIntent": "加入外圍兩側緩衝。",
+    "difficulty": "basic",
+    "givenConditions": [
+      "群尺寸20×12×8",
+      "每側1"
+    ],
+    "target": "外盒內尺寸",
+    "difficultyReason": "基礎：理解兩側厚度。 本題以「加入外圍兩側緩衝。」作為該難度的具體判準。",
+    "prerequisiteCheck": "已會尺寸加法。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "公分。 所求「外盒內尺寸」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "緩衝只在商品群外圍。 題幹已完整限制「外盒內尺寸」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v002",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "basic"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "523ce56bc0996b3fbe2b6a713309b3c40f15832f9af8431ec1caf2256a558369"
+  },
+  {
+    "prompt": "外盒內尺寸 12×10×8 公分，要固定方向放 3×2×2 公分商品，最多可整齊放幾件？",
+    "text": "外盒內尺寸 12×10×8 公分，要固定方向放 3×2×2 公分商品，最多可整齊放幾件？",
+    "choices": [
+      "24",
+      "80",
+      "60",
+      "40"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：各方向4、5、4；相乘80。所得結果是「80」。",
+    "explanation": "三方向可放⌊12/3⌋=4、⌊10/2⌋=5、⌊8/2⌋=4，共4×5×4=80件。",
+    "steps": [
+      "各方向4、5、4",
+      "相乘80"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "24",
+        "truth": false,
+        "reason": "只算部分方向。"
+      },
+      {
+        "choice": "80",
+        "truth": true,
+        "reason": "4×5×4=80。"
+      },
+      {
+        "choice": "60",
+        "truth": false,
+        "reason": "乘法或方向錯。"
+      },
+      {
+        "choice": "40",
+        "truth": false,
+        "reason": "漏一方向倍數。"
+      }
+    ],
+    "misconceptionTarget": "只用外盒體積除商品體積而未逐方向檢查，或乘法錯。",
+    "authoringIntent": "逐方向求最大格數。",
+    "difficulty": "basic",
+    "givenConditions": [
+      "盒12×10×8",
+      "商品3×2×2",
+      "固定方向"
+    ],
+    "target": "最多件數",
+    "difficultyReason": "基礎：各方向恰整除。 本題以「逐方向求最大格數。」作為該難度的具體判準。",
+    "prerequisiteCheck": "已會整數商。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "單位件。 所求「最多件數」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "商品不旋轉。 題幹已完整限制「最多件數」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v003",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "basic"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "5e68010a76213a379678690c21af3919491e6a0a4be74408744797f875216032"
+  },
+  {
+    "prompt": "外盒內尺寸 10×8×6 公分，商品固定方向尺寸 3×3×2 公分。最多可放幾件？",
+    "text": "外盒內尺寸 10×8×6 公分，商品固定方向尺寸 3×3×2 公分。最多可放幾件？",
+    "choices": [
+      "12",
+      "16",
+      "24",
+      "18"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：各方向3、2、3；相乘18。所得結果是「18」。",
+    "explanation": "沿三方向可放⌊10/3⌋=3、⌊8/3⌋=2、⌊6/2⌋=3，共3×2×3=18件。",
+    "steps": [
+      "各方向3、2、3",
+      "相乘18"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "12",
+        "truth": false,
+        "reason": "漏一層。"
+      },
+      {
+        "choice": "16",
+        "truth": false,
+        "reason": "方向商錯。"
+      },
+      {
+        "choice": "24",
+        "truth": false,
+        "reason": "用體積上限但尺寸排不下。"
+      },
+      {
+        "choice": "18",
+        "truth": true,
+        "reason": "3×2×3=18。"
+      }
+    ],
+    "misconceptionTarget": "用10/3或8/3四捨五入，或只用總體積比。",
+    "authoringIntent": "處理不能整除的格狀裝箱。",
+    "difficulty": "standard",
+    "givenConditions": [
+      "盒10×8×6",
+      "商品3×3×2",
+      "方向固定"
+    ],
+    "target": "最大完整件數",
+    "difficultyReason": "標準：每方向需向下取整。",
+    "prerequisiteCheck": "已會整數商。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "件。 所求「最大完整件數」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "向下取整。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "剩餘空隙不可合併成額外固定方向商品。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v004",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "standard"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "6e943f45fd1b9ac7062cb05447059b7844ff04c52d0a91eb5e4bcc95af49f8d6"
+  },
+  {
+    "prompt": "兩個封閉長方體外盒體積都為 64 立方公分。甲尺寸 8×4×2，乙尺寸 4×4×4。哪個表面積較小？",
+    "text": "兩個封閉長方體外盒體積都為 64 立方公分。甲尺寸 8×4×2，乙尺寸 4×4×4。哪個表面積較小？",
+    "choices": [
+      "甲較小",
+      "乙較小",
+      "相等",
+      "資料不足"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：算甲112；算乙96。所得結果是「乙較小」。",
+    "explanation": "甲表面積=2(32+16+8)=112；乙=6×16=96，所以乙較小。",
+    "steps": [
+      "算甲112",
+      "算乙96"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "甲較小",
+        "truth": false,
+        "reason": "此選項無法符合所求「較小表面積」；錯誤來源會是：認為體積相同就表面積相同。"
+      },
+      {
+        "choice": "乙較小",
+        "truth": true,
+        "reason": "依獨立計算「算乙96」，此選項符合所求「較小表面積」。"
+      },
+      {
+        "choice": "相等",
+        "truth": false,
+        "reason": "體積相同不代表表面積相同。"
+      },
+      {
+        "choice": "資料不足",
+        "truth": false,
+        "reason": "資料足夠。"
+      }
+    ],
+    "misconceptionTarget": "認為體積相同就表面積相同。",
+    "authoringIntent": "比較同體積包裝用料。",
+    "difficulty": "standard",
+    "givenConditions": [
+      "兩盒體積64",
+      "尺寸已知"
+    ],
+    "target": "較小表面積",
+    "difficultyReason": "標準：需分別計算而非看體積。",
+    "prerequisiteCheck": "已會長方體表面積。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "平方公分。 所求「較小表面積」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "皆完整封閉。 題幹已完整限制「較小表面積」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v005",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "standard"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "341bc436c89ec7f013c1a15570a0d181bf3d665dd31ce92af936fd26bf02e749"
+  },
+  {
+    "prompt": "12 個相同商品要排成長方體陣列。每件為正方體。下列哪種排列的最小外盒表面積最小？",
+    "text": "12 個相同商品要排成長方體陣列。每件為正方體。下列哪種排列的最小外盒表面積最小？",
+    "choices": [
+      "1×1×12",
+      "1×2×6",
+      "1×3×4",
+      "2×2×3"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：逐一算2(ab+ac+bc)；比較32最小。所得結果是「2×2×3」。",
+    "explanation": "對單位正方體商品，排列外盒尺寸即陣列數。表面積依序為50、40、38、32平方單位，因此2×2×3最小。",
+    "steps": [
+      "逐一算2(ab+ac+bc)",
+      "比較32最小"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1×1×12",
+        "truth": false,
+        "reason": "最細長。"
+      },
+      {
+        "choice": "1×2×6",
+        "truth": false,
+        "reason": "仍偏長。"
+      },
+      {
+        "choice": "1×3×4",
+        "truth": false,
+        "reason": "此選項無法符合所求「最小表面積排列」；錯誤來源會是：只比較體積，忽略排列形狀對表面積的影響。"
+      },
+      {
+        "choice": "2×2×3",
+        "truth": true,
+        "reason": "正確32。"
+      }
+    ],
+    "misconceptionTarget": "只比較體積，忽略排列形狀對表面積的影響。",
+    "authoringIntent": "選最省包材的方塊排列。",
+    "difficulty": "standard",
+    "givenConditions": [
+      "12單位正方體",
+      "四種陣列"
+    ],
+    "target": "最小表面積排列",
+    "difficultyReason": "標準：列舉因數排列並比較表面積。",
+    "prerequisiteCheck": "已會長方體表面積。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "平方單位。 所求「最小表面積排列」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "商品間無空隙。 題幹已完整限制「最小表面積排列」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v006",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "standard"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "e3b96ecb9a2cdc5d71493af4bf93f499f9d3883358f940ce4ced49970f2c2078"
+  },
+  {
+    "prompt": "外盒內尺寸 9×8×6 公分，商品尺寸 4×3×2 公分且允許旋轉。若採單一方向整齊排列，最多可放幾件？",
+    "text": "外盒內尺寸 9×8×6 公分，商品尺寸 4×3×2 公分且允許旋轉。若採單一方向整齊排列，最多可放幾件？",
+    "choices": [
+      "12",
+      "16",
+      "18",
+      "24"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：枚舉尺寸對應；最佳為3沿9、4沿8、2沿6；2×3×3=18。所得結果是「18」。",
+    "explanation": "檢查方向：將商品4、3、2對應盒8、9、6可放2×3×3=18件；其他排列不超過18，所以最多18。",
+    "steps": [
+      "枚舉尺寸對應",
+      "最佳為3沿9、4沿8、2沿6",
+      "2×3×3=18"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "12",
+        "truth": false,
+        "reason": "此選項無法符合所求「最多件數」；錯誤來源會是：只檢查原方向或以體積比誤選24。"
+      },
+      {
+        "choice": "16",
+        "truth": false,
+        "reason": "此選項無法符合所求「最多件數」；錯誤來源會是：只檢查原方向或以體積比誤選24。"
+      },
+      {
+        "choice": "18",
+        "truth": true,
+        "reason": "依獨立計算「2×3×3=18」，此選項符合所求「最多件數」。"
+      },
+      {
+        "choice": "24",
+        "truth": false,
+        "reason": "體積上限432/24=18，不可能24。"
+      }
+    ],
+    "misconceptionTarget": "只檢查原方向或以體積比誤選24。",
+    "authoringIntent": "在允許旋轉下選最佳固定方向。",
+    "difficulty": "advanced",
+    "givenConditions": [
+      "盒9×8×6",
+      "商品4×3×2",
+      "允許旋轉",
+      "單一方向排列"
+    ],
+    "target": "最多件數",
+    "difficultyReason": "進階：需比較多種尺寸對應並用體積上限驗證。",
+    "prerequisiteCheck": "已會排列與向下取整。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "件。 所求「最多件數」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "不混合不同朝向。 題幹已完整限制「最多件數」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v007",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "advanced"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "1c200bf7e8596ce746d4b3cc87e016849e7c054a3b222beed7b0572da6eb49ab"
+  },
+  {
+    "prompt": "一個外盒內尺寸 20×15×10 公分，放入 24 個體積各 100 立方公分的商品。裝箱率是多少？",
+    "text": "一個外盒內尺寸 20×15×10 公分，放入 24 個體積各 100 立方公分的商品。裝箱率是多少？",
+    "choices": [
+      "80%",
+      "60%",
+      "20%",
+      "125%"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：盒3000；商品2400；相除80%。所得結果是「80%」。",
+    "explanation": "外盒內容積=20×15×10=3000；商品總體積=2400；裝箱率=2400/3000=80%。",
+    "steps": [
+      "盒3000",
+      "商品2400",
+      "相除80%"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "80%",
+        "truth": true,
+        "reason": "依獨立計算「相除80%」，此選項符合所求「裝箱率」。"
+      },
+      {
+        "choice": "60%",
+        "truth": false,
+        "reason": "此選項無法符合所求「裝箱率」；錯誤來源會是：用單件體積除外盒或把空隙率當裝箱率。"
+      },
+      {
+        "choice": "20%",
+        "truth": false,
+        "reason": "此選項無法符合所求「裝箱率」；錯誤來源會是：用單件體積除外盒或把空隙率當裝箱率。"
+      },
+      {
+        "choice": "125%",
+        "truth": false,
+        "reason": "比率不應超100%。"
+      }
+    ],
+    "misconceptionTarget": "用單件體積除外盒或把空隙率當裝箱率。",
+    "authoringIntent": "計算體積裝箱率。",
+    "difficulty": "advanced",
+    "givenConditions": [
+      "盒20×15×10",
+      "24件",
+      "每件100"
+    ],
+    "target": "裝箱率",
+    "difficultyReason": "進階：需聚合商品體積並轉百分率。",
+    "prerequisiteCheck": "已會百分率。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "體積單位約去。 所求「裝箱率」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "商品均完全在盒內。 題幹已完整限制「裝箱率」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v008",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "advanced"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "5869cb98a5db57792575447d3d45d6671ba3560a51a6605ae9b9e73eb0742d7a"
+  },
+  {
+    "prompt": "商品群尺寸 30×20×10 公分，外圍緩衝厚度 t 公分，若t=2，外盒內體積是多少？",
+    "text": "商品群尺寸 30×20×10 公分，外圍緩衝厚度 t 公分，若t=2，外盒內體積是多少？",
+    "choices": [
+      "8448",
+      "9504",
+      "14976",
+      "11424"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：尺寸各加4；34×24×14=11424。所得結果是「11424」。",
+    "explanation": "每個方向兩側各留2公分，所以外盒尺寸為34×24×14，體積=11424立方公分。",
+    "steps": [
+      "尺寸各加4",
+      "34×24×14=11424"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "8448",
+        "truth": false,
+        "reason": "只按t=1計。"
+      },
+      {
+        "choice": "9504",
+        "truth": false,
+        "reason": "尺寸乘積錯誤。"
+      },
+      {
+        "choice": "14976",
+        "truth": false,
+        "reason": "按t=3計。"
+      },
+      {
+        "choice": "11424",
+        "truth": true,
+        "reason": "34×24×14。"
+      }
+    ],
+    "misconceptionTarget": "未檢查選項代回體積。 必須依「由緩衝厚度求外盒體積。」的關係重新核對。",
+    "authoringIntent": "由緩衝厚度求外盒體積。",
+    "difficulty": "advanced",
+    "givenConditions": [
+      "群30×20×10",
+      "每方向加2t",
+      "體積9504"
+    ],
+    "target": "外盒內體積",
+    "difficultyReason": "進階：建立三次乘積並可用選項代入。",
+    "prerequisiteCheck": "已會緩衝尺寸。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "公分。 所求「外盒內體積」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "t=2為每側厚度，因此每方向總增加4。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v009",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "advanced"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "594e71f3c06d757c492231990d736e0be63a4752f3b48ff543194cc6b64f1d26"
+  },
+  {
+    "prompt": "物流箱內尺寸 50×40×30 公分，商品固定方向為 12×9×7 公分。最多可整齊裝幾件？剩餘的三方向空間各多少？",
+    "text": "物流箱內尺寸 50×40×30 公分，商品固定方向為 12×9×7 公分。最多可整齊裝幾件？剩餘的三方向空間各多少？",
+    "choices": [
+      "60件，餘2、4、2公分",
+      "64件，餘2、4、2公分",
+      "64件，餘4、4、2公分",
+      "80件，餘2、4、2公分"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：各方向4件；總64；餘2,4,2。所得結果是「64件，餘2、4、2公分」。",
+    "explanation": "可放⌊50/12⌋=4、⌊40/9⌋=4、⌊30/7⌋=4，共64件。餘量=50-48=2、40-36=4、30-28=2公分。",
+    "steps": [
+      "各方向4件",
+      "總64",
+      "餘2,4,2"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "60件，餘2、4、2公分",
+        "truth": false,
+        "reason": "件數少。"
+      },
+      {
+        "choice": "64件，餘2、4、2公分",
+        "truth": true,
+        "reason": "依獨立計算「餘2,4,2」，此選項符合所求「件數與餘量」。"
+      },
+      {
+        "choice": "64件，餘4、4、2公分",
+        "truth": false,
+        "reason": "第一餘量錯。"
+      },
+      {
+        "choice": "80件，餘2、4、2公分",
+        "truth": false,
+        "reason": "件數多。"
+      }
+    ],
+    "misconceptionTarget": "用體積比或把餘量分散後湊成額外商品。",
+    "authoringIntent": "同時計算裝箱數與方向餘量。",
+    "difficulty": "literacy",
+    "givenConditions": [
+      "箱50×40×30",
+      "商品12×9×7",
+      "固定方向"
+    ],
+    "target": "件數與餘量",
+    "difficultyReason": "素養：物流需要件數與剩餘空間兩類結果。",
+    "prerequisiteCheck": "已會整數除法。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "件與公分。 所求「件數與餘量」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "餘量集中表示每方向總剩餘。",
+    "literacyContextNecessity": "商品固定方向使三個尺寸不能任意旋轉，物流箱各方向可排件數與剩餘空間因此必須分別計算。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v010",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "literacy"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "54c12eaec9fbb1c93c82697c7d910e9a3594d57d1fa474054b922957dc02682c"
+  },
+  {
+    "prompt": "一批 60 個圓柱罐直徑 6 公分、高 12 公分，採 10×6 單層直立排列。若罐與外盒四側各留 1 公分緩衝，上下各留 0.5 公分，最小外盒內尺寸為何？",
+    "text": "一批 60 個圓柱罐直徑 6 公分、高 12 公分，採 10×6 單層直立排列。若罐與外盒四側各留 1 公分緩衝，上下各留 0.5 公分，最小外盒內尺寸為何？",
+    "choices": [
+      "62×38×13",
+      "62×38×12",
+      "61×37×13",
+      "60×36×13"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：平面60×36；側向各加2；高度加1。所得結果是「62×38×13」。",
+    "explanation": "平面尺寸：10個直徑=60，兩側各1得62；6個直徑=36，加2得38。高度12，上下各0.5共加1得13，所以62×38×13。",
+    "steps": [
+      "平面60×36",
+      "側向各加2",
+      "高度加1"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "62×38×13",
+        "truth": true,
+        "reason": "依獨立計算「高度加1」，此選項符合所求「最小內尺寸」。"
+      },
+      {
+        "choice": "62×38×12",
+        "truth": false,
+        "reason": "漏高度緩衝。"
+      },
+      {
+        "choice": "61×37×13",
+        "truth": false,
+        "reason": "側向只加一側。"
+      },
+      {
+        "choice": "60×36×13",
+        "truth": false,
+        "reason": "未加側向緩衝。"
+      }
+    ],
+    "misconceptionTarget": "不同方向緩衝厚度加錯或只加一次。",
+    "authoringIntent": "圓罐陣列與非等緩衝外盒。",
+    "difficulty": "literacy",
+    "givenConditions": [
+      "60罐",
+      "10×6",
+      "d6",
+      "h12",
+      "四側1",
+      "上下0.5"
+    ],
+    "target": "最小內尺寸",
+    "difficultyReason": "素養：商品排列與方向不同的緩衝均必要。",
+    "prerequisiteCheck": "已會兩側厚度。 本題只再使用先備「solid-application-word」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "公分。 所求「最小內尺寸」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "忽略圓罐間額外空隙。 題幹已完整限制「最小內尺寸」的範圍與取值方向。",
+    "literacyContextNecessity": "六十個圓柱罐固定為10×6單層直立排列，再於四側與上下保留不同緩衝，才能決定最小外盒三尺寸。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v011",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "literacy"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "b827a6dca558b7b861c328b94022b366a06388e89b2526e50db3e2b823a2d165"
+  },
+  {
+    "prompt": "甲包裝尺寸 30×20×10 公分、材料成本每平方公分 0.02 元；乙包裝尺寸 25×24×10 公分、單價相同，皆為封閉盒。哪個材料成本較低，差多少？",
+    "text": "甲包裝尺寸 30×20×10 公分、材料成本每平方公分 0.02 元；乙包裝尺寸 25×24×10 公分、單價相同，皆為封閉盒。哪個材料成本較低，差多少？",
+    "choices": [
+      "甲低0.4元",
+      "甲低4元",
+      "乙低0.4元",
+      "乙低4元"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：甲2200→44；乙2180→43.6；差0.4。所得結果是「乙低0.4元」。",
+    "explanation": "甲表面積2200平方公分，成本44元；乙表面積2180平方公分，成本43.6元，所以乙低0.4元。",
+    "steps": [
+      "甲2200→44",
+      "乙2180→43.6",
+      "差0.4"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "甲低0.4元",
+        "truth": false,
+        "reason": "較低方案判斷相反。"
+      },
+      {
+        "choice": "甲低4元",
+        "truth": false,
+        "reason": "方案與差額皆錯。"
+      },
+      {
+        "choice": "乙低0.4元",
+        "truth": true,
+        "reason": "44-43.6=0.4。"
+      },
+      {
+        "choice": "乙低4元",
+        "truth": false,
+        "reason": "差額小數位錯。"
+      }
+    ],
+    "misconceptionTarget": "只比較體積或乘單價時小數位錯。",
+    "authoringIntent": "比較兩包裝表面材料成本。",
+    "difficulty": "literacy",
+    "givenConditions": [
+      "甲30×20×10",
+      "乙25×24×10",
+      "0.02元/cm²"
+    ],
+    "target": "較低方案與差額",
+    "difficultyReason": "素養：尺寸接近但表面積與成本需精算。",
+    "prerequisiteCheck": "已會長方體表面積與成本。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "平方公分乘元/cm²得元。",
+    "roundingCheck": "精確至0.1元。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "兩方案皆封閉、單價相同，成本差由表面積差20乘0.02得0.4元。",
+    "literacyContextNecessity": "兩盒體積相同但邊長配置不同，材料成本按表面積計算；比較情境用來揭示同體積不代表同用料。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s019-v012",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "包裝問題",
+      "literacy"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "97fdcd1963c5cf0cb2371f82ef7b4f7b2ddd5d244c5fcebcda783ecac86fcbe9"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "prompt": "有 48 個尺寸 6×4×3 公分的長方體商品，固定方向排成完整長方體陣列。請在 2×4×6 與 3×4×4 兩種排列中，分別求最小外盒內尺寸與表面積，判斷哪種較省包材。",
+    "requiredWork": [
+      "依排列求兩方案外盒尺寸。",
+      "算兩個封閉外盒表面積。",
+      "比較並說明。"
+    ],
+    "fullCreditSolution": [
+      "方案一2×4×6：尺寸12×16×18公分，表面積=2(192+216+288)=1392平方公分。",
+      "方案二3×4×4：尺寸18×16×12公分，三邊只是方案一的重排，因此表面積同為1392平方公分。",
+      "兩方案包材相同。"
+    ],
+    "alternativeSolutions": [
+      "可先觀察兩組外盒邊長集合都是12、16、18，故表面積必相同。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "兩尺寸與1392均正確，判斷相同。"
+      },
+      {
+        "score": 2,
+        "criteria": "判斷相同且尺寸正確，但表面積算式略缺。"
+      },
+      {
+        "score": 1,
+        "criteria": "完成一個方案或看出邊長集合相同但未完整計算。"
+      },
+      {
+        "score": 0,
+        "criteria": "只以排列看起來不同判定一方較省。"
+      }
+    ],
+    "partialCreditRules": [
+      "判斷相同且尺寸正確，但表面積算式略缺。",
+      "完成一個方案或看出邊長集合相同但未完整計算。"
+    ],
+    "followThroughPolicy": "若單一乘法錯誤但看出兩方案邊長集合相同，可保留比較概念分。",
+    "unitNotationRules": "尺寸公分，表面積平方公分。",
+    "answerOnlyPolicy": "只答相同至多1分，需理由。",
+    "difficulty": "advanced",
+    "figureId": "u23-s019-fig001",
+    "drawingSpecId": "u23-s019-draw001",
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "independentReview": {
+      "derivedResult": "兩者皆1392平方公分，包材相同。",
+      "ambiguityAndBoundary": "獨立將商品6、4、3依排列倍乘，兩方案均得到邊長集合12、16、18，表面積唯一相同。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "questionId": "u23-s019-cr001",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "constructed-response",
+    "visualMode": "figure-supported",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "7799d7f6e177278d6120e24e41c4eafc1a4135339efb327864f96e71cbf3da64"
+  },
+  {
+    "prompt": "一個外盒內尺寸為 30×22×16 公分，要放固定方向 7×5×4 公分商品。每件之間不留空隙。求最多件數、三方向剩餘空間，以及商品總體積占外盒內容積的百分比（四捨五入到小數第1位）。",
+    "requiredWork": [
+      "各方向向下取整並相乘。",
+      "求每方向餘量。",
+      "求商品總體積與裝箱率。"
+    ],
+    "fullCreditSolution": [
+      "各方向可放⌊30/7⌋=4、⌊22/5⌋=4、⌊16/4⌋=4，共64件。",
+      "餘量為30-28=2、22-20=2、16-16=0公分。",
+      "單件體積=7×5×4=140立方公分，商品總體積=8960立方公分。",
+      "外盒體積=30×22×16=10560立方公分。",
+      "裝箱率=8960÷10560×100%≈84.8%。"
+    ],
+    "alternativeSolutions": [
+      "可用占用長方體28×20×16的體積8960除外盒體積。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "件數64、餘量2/2/0及84.8%全正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "件數與餘量正確，裝箱率過程有小瑕疵。"
+      },
+      {
+        "score": 1,
+        "criteria": "至少正確完成件數或裝箱率其中一項並有方法。"
+      },
+      {
+        "score": 0,
+        "criteria": "用總體積比得到非整數件數或無有效作答。"
+      }
+    ],
+    "partialCreditRules": [
+      "件數與餘量正確，裝箱率過程有小瑕疵。",
+      "至少正確完成件數或裝箱率其中一項並有方法。"
+    ],
+    "followThroughPolicy": "若一方向整數商錯但後續依自身件數一致計算，可給後續方法分。",
+    "unitNotationRules": "餘量公分；體積立方公分；裝箱率百分比。",
+    "answerOnlyPolicy": "只寫最終三類答案可得2分，需過程滿分。",
+    "difficulty": "literacy",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "independentReview": {
+      "derivedResult": "64件；餘量2、2、0公分；裝箱率約84.8%。",
+      "ambiguityAndBoundary": "獨立逐方向得4×4×4，總體積8960；8960/10560=0.84848...，至小數第1位百分比84.8。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "questionId": "u23-s019-cr002",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-packaging",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "3e077e71a8e00dc5a4e45e391220d4b145466347acb2af6c61f6c15a40743fe3"
+  }
+];
+
+export const DRAWING_SPECS = [
+  {
+    "figureId": "u23-s019-fig001",
+    "drawingSpecId": "u23-s019-draw001",
+    "unitId": "u23",
+    "skillSlot": "s019",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "purpose": "長方體商品2×3×4格狀排列與方向對應",
+    "svgPath": "figures/u23/u23-s019-fig001.svg",
+    "canvas": {
+      "width": 520,
+      "height": 320,
+      "viewBox": "0 0 520 320"
+    },
+    "drawingSpec": {
+      "coordinateSystem": "外盒斜投影八頂點；內部分隔線表示長向2格、寬向3格、高向4格。",
+      "visibleLineRules": "外框3px，內部分隔1.5px。",
+      "hiddenLineRules": "背面未畫隱藏格線，避免視覺擁擠。",
+      "labelsAndPositions": {
+        "長方向": "2件×每件長4",
+        "寬方向": "3件×每件寬3",
+        "高方向": "4件×每件高2"
+      },
+      "tickMarksUnitsArrowsSymbols": "尺寸箭頭與標籤依圖中特定需求；線寬至少2，文字至少14px。",
+      "scaleStatus": "not-to-scale",
+      "visualInferenceWarning": "只依標示的方向、件數與單件尺寸計算，不可量圖。"
+    },
+    "altText": "長方體商品以2乘3乘4格排列，三方向分別對應單件長4、寬3、高2。",
+    "svgTitle": "長方體商品2×3×4格狀排列與方向對應",
+    "svgDescription": "長方體商品以2乘3乘4格排列，三方向分別對應單件長4、寬3、高2。",
+    "mobileReadabilityReview": "三組標籤分置上、右上、右側，360px縮放後仍可分辨。",
+    "answerLeakageReview": "不直接標最小外盒8×9×8或表面積答案。",
+    "svgAssertions": [
+      "<title",
+      "<desc",
+      "role=\"img\"",
+      "2件 × 每件長4",
+      "4件 × 每件高2",
+      "未按比例"
+    ],
+    "figureReview": {
+      "decision": "pass",
+      "manualRenderedInspection": true,
+      "reviewNote": "u23-s019-fig001 已逐一核對線段連接、標籤位置、縮放警語、手機字級與題目答案不外洩；圖形只提供解題所需結構。",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "6f65af2b4d8da172b2f55224e99274aa4372f8eeb9d92a48e5c2c9a2dbf2d24a"
+  }
+];

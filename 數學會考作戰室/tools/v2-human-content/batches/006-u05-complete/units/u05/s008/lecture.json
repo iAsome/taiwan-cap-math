@@ -1,0 +1,237 @@
+{
+  "lectureId": "u05-s008-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-linear-graph",
+  "skillId": "coordinate-linear-equation-graph",
+  "lockedTitle": "二元一次方程式圖形",
+  "title": "二元一次方程式圖形：所有解點形成一條直線",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把方程式的一組解寫成坐標點。",
+    "能以代值找出直線上的多個點。",
+    "能辨認 x=常數與 y=常數的特殊直線。",
+    "能說明方程式圖形為何包含無限多個解點。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-rectangle-area",
+      "requiredLevel": "能說明並正確使用「坐標平面中的長方形與面積」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "二元一次方程式",
+      "definition": "含 x、y 兩個未知數，最高次數為 1 的等式。"
+    },
+    {
+      "term": "方程式的解",
+      "definition": "代入後使等式成立的一組 (x,y)。"
+    },
+    {
+      "term": "方程式圖形",
+      "definition": "所有解點在坐標平面上的集合。"
+    },
+    {
+      "term": "水平直線",
+      "definition": "形如 y=b。"
+    },
+    {
+      "term": "垂直直線",
+      "definition": "形如 x=a。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax+by=c",
+      "meaning": "二元一次方程式的一般形式，a、b 不同時為 0。"
+    },
+    {
+      "symbol": "x=a",
+      "meaning": "通過所有橫坐標為 a 的點，為垂直線。"
+    },
+    {
+      "symbol": "y=b",
+      "meaning": "通過所有縱坐標為 b 的點，為水平線。"
+    }
+  ],
+  "conceptNarrative": [
+    "一組解對應一個點；所有解點合起來形成方程式的圖形。",
+    "二元一次方程式通常有無限多組解，圖形是一條直線，而不是只有列出的兩三個點。",
+    "要畫出直線，可選方便的 x 值求 y，或選方便的 y 值求 x；兩個不同解點即可決定直線。",
+    "x=常數表示左右位置固定而上下可變，所以是垂直線；y=常數則相反。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "二元一次方程式圖形",
+      "statement": "所有滿足 ax+by=c 的點 (x,y) 所形成的直線。"
+    },
+    {
+      "name": "特殊直線",
+      "statement": "x=a 為垂直線；y=b 為水平線。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "ax+by=c",
+      "conditions": [
+        "a、b 不同時為 0"
+      ],
+      "meaning": "每一組使等式成立的 (x,y) 都在同一直線上。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只列一個解點不能完整代表整條直線。",
+    "x=a 不是水平線。",
+    "未知數的係數可為 0，但 a、b 不能同時為 0。",
+    "本節不使用斜率、截距式等高中延伸術語作必要前提。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "選一個方便的 x 或 y。",
+      "check": "能否讓另一個未知數易算？"
+    },
+    {
+      "step": 2,
+      "instruction": "代入方程式求另一分量。",
+      "check": "等式是否成立？"
+    },
+    {
+      "step": 3,
+      "instruction": "至少取得兩個不同解點。",
+      "check": "兩點是否真的不同？"
+    },
+    {
+      "step": 4,
+      "instruction": "辨認特殊形式。",
+      "check": "x 固定還是 y 固定？"
+    },
+    {
+      "step": 5,
+      "instruction": "說明圖形含所有解。",
+      "check": "是否誤以為只有列出的點？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "求 2x+y=6 的兩組解。",
+      "solutionSteps": [
+        "取 x=0 得 y=6。",
+        "取 x=2 得 y=2。"
+      ],
+      "answer": "(0,6)、(2,2) 都在圖形上。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "x=-3 的圖形方向。",
+      "solutionSteps": [
+        "所有點橫坐標固定 -3。",
+        "縱坐標可任意改變。"
+      ],
+      "answer": "通過 x=-3 的垂直直線。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "y=4 的圖形方向。",
+      "solutionSteps": [
+        "所有點縱坐標固定 4。",
+        "橫坐標可任意改變。"
+      ],
+      "answer": "通過 y=4 的水平直線。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "3x-2y=12，取 y=0 與 x=0。",
+      "solutionSteps": [
+        "y=0 得 x=4。",
+        "x=0 得 y=-6。"
+      ],
+      "answer": "(4,0)、(0,-6)。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把一組解當作整條圖形。",
+      "why": "未理解解集合。",
+      "correction": "列出的點只是直線上的代表點。"
+    },
+    {
+      "mistake": "認為 x=2 是水平線。",
+      "why": "把軸名與方向混淆。",
+      "correction": "x 固定表示左右不變，只能上下延伸。"
+    },
+    {
+      "mistake": "代入後只算一邊。",
+      "why": "沒有檢查等式。",
+      "correction": "將 x、y 同時代入左右驗證。"
+    },
+    {
+      "mistake": "選兩個相同點畫線。",
+      "why": "未確認解點不同。",
+      "correction": "至少需要兩個不同解點。"
+    },
+    {
+      "mistake": "把 xy 項也視為二元一次。",
+      "why": "忽略最高次與乘積。",
+      "correction": "xy 不是一次項，本單元不處理。"
+    }
+  ],
+  "selfCheck": [
+    "我是否把解寫成 (x,y)？",
+    "兩個點是否都滿足方程式？",
+    "x=常數是否判為垂直線？",
+    "我是否知道圖形包含無限多個解點？"
+  ],
+  "summary": [
+    "方程式的每組解是一個點。",
+    "所有解點形成直線。",
+    "兩個不同解點可決定直線。",
+    "x=常數垂直，y=常數水平。"
+  ],
+  "connections": {
+    "previous": "承接坐標點與長方形中的水平垂直方向，並使用先前二元一次方程式求解能力。",
+    "next": [
+      "下一節以代入檢查點是否在直線上。",
+      "再下一節會利用令 x 或 y 為 0 找截距。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s008-v001",
+      "u05-s008-v002",
+      "u05-s008-v003",
+      "u05-s008-v004",
+      "u05-s008-v005",
+      "u05-s008-v006",
+      "u05-s008-v007",
+      "u05-s008-v008",
+      "u05-s008-v009",
+      "u05-s008-v010",
+      "u05-s008-v011",
+      "u05-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s008-cr001",
+      "u05-s008-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "逐式重新代入四個例題的解點，檢查特殊直線方向與一般式係數條件；內容只要求國中會考的解點與直線觀念，未依賴斜率公式。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "829f6e7bd000712a6685a2e8c0c3c70b9a5b974ea47c85e33f9867f278108606"
+}

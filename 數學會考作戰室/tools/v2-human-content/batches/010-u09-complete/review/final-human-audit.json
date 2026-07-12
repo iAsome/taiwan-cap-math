@@ -1,0 +1,105 @@
+{
+  "auditId": "u09-final-human-audit-r1",
+  "unitId": "u09",
+  "auditorAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "scope": {
+    "lecturesInspected": 16,
+    "mcQuestionsInspected": 192,
+    "constructedResponsesInspected": 32,
+    "semanticReviewsInspected": 192,
+    "figuresRenderedAndInspected": 7
+  },
+  "inspectionChecklist": {
+    "negativeSignsParenthesesFractionsRootsExponents": "pass; U09 uses signs, fractions and percentages where relevant; no unintroduced roots or exponents.",
+    "unitsAndRounding": "pass after repairs; percent versus percentage point and exact versus rounded values are explicit.",
+    "domainAndBoundaryConditions": "pass; histogram endpoints, total-count denominators and integer-frequency constraints checked.",
+    "alternativeInterpretations": "pass after changing the 20-minute boundary wording.",
+    "advancedDifficulty": "pass; advanced items require multi-step reconstruction, consistency checks or representation limits.",
+    "literacyNecessity": "pass; contexts change the denominator, sampling, threshold, decision or inference task.",
+    "numberSwapVariants": "pass; prompt fingerprints and human comparison found no number-only variants.",
+    "futureKnowledge": "pass; no quartiles, box plots, density histograms or formal inferential formulas."
+  },
+  "actualIssuesFoundAndRepaired": [
+    {
+      "id": "U09-AUDIT-001",
+      "location": "s010 MC even-median item",
+      "issue": "A distractor 22/4 was mathematically equivalent to the correct value 5.5, creating two correct choices.",
+      "repair": "Replaced the equivalent distractor with 6 and re-ran the single-correct-choice audit."
+    },
+    {
+      "id": "U09-AUDIT-002",
+      "location": "s011 unknown-extreme MC item",
+      "issue": "Without fixing x as the maximum, the full-range condition admitted both a high-end and low-end solution.",
+      "repair": "Added the explicit maximum-value condition and aligned all option analyses."
+    },
+    {
+      "id": "U09-AUDIT-003",
+      "location": "s012 combined-average MC item",
+      "issue": "The first calculation draft rounded the exact combined average 75.6 to 76 inside the mathematical answer.",
+      "repair": "Restored exact 75.6 and reserved rounding only for prompts that explicitly request it."
+    },
+    {
+      "id": "U09-AUDIT-004",
+      "location": "s012 minimum weighted-score MC item",
+      "issue": "The initial arithmetic stated 84 although 0.2×90+0.3×80 leaves 43 weighted points for the 50% exam.",
+      "repair": "Recomputed 0.5x≥43 and corrected the minimum integer score to 86."
+    },
+    {
+      "id": "U09-AUDIT-005",
+      "location": "s013 mis-entered-frequency MC item",
+      "issue": "The difference between the incorrect and correct means was initially misstated as 2/9.",
+      "repair": "Recomputed 190/9−21=1/9 and corrected the answer, explanation and review."
+    },
+    {
+      "id": "U09-AUDIT-006",
+      "location": "s013 unknown-frequency MC item",
+      "issue": "The first algebra draft reported x=5, but 14+5x=16+4x gives x=2.",
+      "repair": "Corrected x to 2 and independently substituted it back into the mean."
+    },
+    {
+      "id": "U09-AUDIT-007",
+      "location": "s013 time-weighted literacy MC item",
+      "issue": "The first draft rounded 2330/300 to 8.0 rather than 7.8 to one decimal place.",
+      "repair": "Corrected the weighted time average to 7.8 and clarified the requested rounding."
+    },
+    {
+      "id": "U09-AUDIT-008",
+      "location": "s013 customer-rating literacy MC item",
+      "issue": "The weighted total was added as 67 instead of 66, producing 3.35 rather than 3.3.",
+      "repair": "Re-added 1×2+2×3+3×6+4×5+5×4=66 and updated the correct option, independent solution and semantic review."
+    },
+    {
+      "id": "U09-AUDIT-009",
+      "location": "s011 unique-mode MC item",
+      "issue": "The option x=5 also made 5 and 7 tie, so both x=5 and x=9 were invalid despite only x=9 being marked correct.",
+      "repair": "Replaced x=5 with x=4 and rechecked all four frequency cases."
+    },
+    {
+      "id": "U09-AUDIT-010",
+      "location": "s006 waiting-time histogram literacy MC item",
+      "issue": "The phrase '20 分鐘內' could include exactly 20 minutes, while the grouped interval ended at but excluded 20.",
+      "repair": "Changed the claim to '未滿 20 分鐘' and explicitly stated left-closed, right-open intervals."
+    },
+    {
+      "id": "U09-AUDIT-011",
+      "location": "all seven SVG figures",
+      "issue": "The first CairoSVG contact-sheet render lacked readable Traditional Chinese glyphs because no CJK fallback font was declared.",
+      "repair": "Added a Noto Sans CJK TC/Microsoft JhengHei/sans-serif fallback style, rerendered all figures and visually reinspected labels, coordinates and answer leakage."
+    },
+    {
+      "id": "U09-AUDIT-012",
+      "location": "s005 lecture display title",
+      "issue": "The expanded display title contained the delimiter punctuation '、', which is forbidden in internal titles.",
+      "repair": "Rephrased the title as '圓形圖與百分比：部分和全體及角度互換' without changing the locked skill title or scope."
+    },
+    {
+      "id": "U09-AUDIT-013",
+      "location": "seven figure-referenced MC records",
+      "issue": "The initial MC records used auto-derived drawing-spec IDs ending in '-spec', while the reviewed specifications use 'u09-draw-*' IDs.",
+      "repair": "Aligned each MC drawingSpecId to its actual reviewed drawing specification and recalculated record hashes."
+    }
+  ],
+  "unresolvedIssues": [],
+  "legacyContentUsed": false,
+  "decision": "pass-awaiting-central-coordinator-global-review"
+}

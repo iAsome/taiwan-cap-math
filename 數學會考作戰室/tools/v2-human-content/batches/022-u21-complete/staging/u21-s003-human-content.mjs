@@ -1,0 +1,1865 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE={
+  "lectureId": "u21-s003-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-graphs",
+  "skillId": "quadratic-standard-to-graph",
+  "lockedTitle": "標準式與圖形",
+  "title": "由 y=ax² 預測圖形：係數與座標點和伸縮",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由 y=ax² 判斷圖形通過原點。",
+    "能以 a 的正負判斷開口方向。",
+    "能比較 |a| 對圖形寬窄的影響。",
+    "能由指定 x 算出圖上的點並驗證圖形。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-vertex",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "先使用頂點與對稱軸概念：y=ax² 的頂點固定在原點，對稱軸固定為 y 軸。",
+  "glossary": [
+    {
+      "term": "標準式 y=ax²",
+      "definition": "以原點為頂點、y 軸為對稱軸的二次函數基本形式。"
+    },
+    {
+      "term": "開口",
+      "definition": "拋物線向上或向下延伸的方向。"
+    },
+    {
+      "term": "寬窄",
+      "definition": "在相同高度或相同 |x| 下，曲線離對稱軸的程度。"
+    },
+    {
+      "term": "伸縮",
+      "definition": "係數大小改變使 y 值按比例放大或縮小。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a",
+      "meaning": "x² 的係數，必須不等於 0。"
+    },
+    {
+      "symbol": "|a|",
+      "meaning": "a 的絕對值，用來比較係數大小而不看正負。"
+    },
+    {
+      "symbol": "O(0,0)",
+      "meaning": "原點，也是 y=ax² 的頂點。"
+    }
+  ],
+  "conceptNarrative": [
+    "在 y=ax² 中代入 x=0，必得 y=0，因此所有這類圖形都通過原點。",
+    "正負相反的 x 平方後相同，所以 y=ax² 對 y 軸對稱。",
+    "a>0 時，除了原點外 y 與 x² 同為正，曲線向上；a<0 時 y 為負，曲線向下。",
+    "比較 y=x² 與 y=3x²：在 x=1 時高度分別 1、3，後者離 x 軸更快，因此看起來較窄。|a| 越大越窄，0<|a|<1 越寬。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "y=ax² 標準圖形",
+      "statement": "a≠0 時，以 (0,0) 為頂點、x=0 為對稱軸的拋物線。"
+    },
+    {
+      "name": "寬窄比較",
+      "statement": "在同一座標比例下，|a| 較大的 y=ax² 圖形較靠近對稱軸。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "y=a x²",
+      "conditions": [
+        "a≠0"
+      ],
+      "meaning": "二次函數的原點頂點基本式。"
+    },
+    {
+      "formula": "f(-x)=a(-x)²=ax²=f(x)",
+      "conditions": [
+        "同一 a"
+      ],
+      "meaning": "說明圖形關於 y 軸對稱。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不同座標圖若刻度比例不同，不能只憑外觀看寬窄。",
+    "a=0 時 y=0 是直線，不是拋物線。",
+    "|a| 只決定寬窄，不決定向上或向下。",
+    "比較寬窄時必須在相同座標尺度下。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認式子正是 y=ax²。",
+      "check": "沒有一次項或常數項嗎？"
+    },
+    {
+      "step": 2,
+      "instruction": "讀出 a 的正負。",
+      "check": "開口方向是否正確？"
+    },
+    {
+      "step": 3,
+      "instruction": "讀出 |a|。",
+      "check": "與 1 或另一個係數比較寬窄。"
+    },
+    {
+      "step": 4,
+      "instruction": "標示原點與對稱軸 x=0。",
+      "check": "頂點是否誤移動？"
+    },
+    {
+      "step": 5,
+      "instruction": "代入 x=±1、±2 驗證。",
+      "check": "對稱點 y 值是否相同？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "y=4x² 的頂點與對稱軸為何？",
+      "solutionSteps": [
+        "沒有平移項，x=0 時 y=0。",
+        "正負 x 的函數值相同。"
+      ],
+      "answer": "頂點 (0,0)，對稱軸 x=0。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "比較 y=2x² 與 y=(1/2)x² 的寬窄。",
+      "solutionSteps": [
+        "|2|>|1/2|。",
+        "在同一 |x| 下前者 |y| 較大。"
+      ],
+      "answer": "y=2x² 較窄。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "y=-3x² 在 x=-2 時的點。",
+      "solutionSteps": [
+        "(-2)²=4。",
+        "y=-3×4=-12。"
+      ],
+      "answer": "(-2,-12)。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "哪個函數與 y=5x² 寬度相同但開口相反？",
+      "solutionSteps": [
+        "寬度取決於 |a|=5。",
+        "開口相反需係數改為 -5。"
+      ],
+      "answer": "y=-5x²。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "為何 y=0.2x² 比 y=x² 寬？",
+      "solutionSteps": [
+        "0.2 的絕對值小於 1。",
+        "同一 x 下高度較小，曲線離對稱軸較遠才達同高。"
+      ],
+      "answer": "因 |a| 較小，圖形較寬。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "讀出頂點、軸與開口。",
+    "standard": "比較係數絕對值與寬窄。",
+    "advanced": "從圖形特徵反推 a 的範圍或符號。",
+    "literacy": "在相同比例的軌跡或容器剖面中比較陡峭程度。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "認為 a 越大數值越寬。",
+      "why": "把係數與水平伸展直覺顛倒。",
+      "correction": "固定 x 比較 y；|a| 越大，升降越快，圖形越窄。"
+    },
+    {
+      "mistake": "用 a 的正負比較寬窄。",
+      "why": "未取絕對值。",
+      "correction": "寬窄比較 |a|，方向才看正負。"
+    },
+    {
+      "mistake": "把頂點讀成 (0,a)。",
+      "why": "誤把係數當截距。",
+      "correction": "代 x=0 得 y=0。"
+    },
+    {
+      "mistake": "a=0 仍稱拋物線。",
+      "why": "忘記二次項係數必須非零。",
+      "correction": "a=0 時最高次不再是 2。"
+    },
+    {
+      "mistake": "不同刻度圖直接看外觀。",
+      "why": "忽略尺度改變。",
+      "correction": "先確認兩軸刻度一致。"
+    },
+    {
+      "mistake": "x=-2 時把 x² 寫成 -4。",
+      "why": "負號未放入平方。",
+      "correction": "先寫 (-2)²=4。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "y=-0.4x² 開口方向？",
+      "answer": "向下。"
+    },
+    {
+      "prompt": "y=6x² 與 y=-6x² 哪個較窄？",
+      "answer": "寬度相同。"
+    },
+    {
+      "prompt": "y=(1/3)x² 與 y=2x² 哪個較寬？",
+      "answer": "y=(1/3)x²。"
+    },
+    {
+      "prompt": "y=7x² 的頂點？",
+      "answer": "(0,0)。"
+    }
+  ],
+  "summary": [
+    "y=ax² 的頂點為原點，對稱軸為 x=0。",
+    "a>0 向上，a<0 向下。",
+    "|a| 越大越窄，越接近 0 越寬。",
+    "代入成對的 ±x 可快速驗證對稱。"
+  ],
+  "connections": {
+    "previous": "沿用頂點與對稱軸的圖形語言。",
+    "next": [
+      "下一技能會在式子、表格與圖形之間互相轉換。",
+      "後續頂點式會把原點頂點平移到 (h,k)。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s003-01"
+  ],
+  "accessibilityNotes": [
+    "兩條曲線以不同線型與文字名稱區分，避免只依顏色比較寬窄。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s003-v001",
+      "u21-s003-v002",
+      "u21-s003-v003",
+      "u21-s003-v004",
+      "u21-s003-v005",
+      "u21-s003-v006",
+      "u21-s003-v007",
+      "u21-s003-v008",
+      "u21-s003-v009",
+      "u21-s003-v010",
+      "u21-s003-v011",
+      "u21-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s003-cr001",
+      "u21-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一代入 x=0、±1、±2 驗證頂點與對稱；重算 -3(-2)²=-12，並確認寬窄敘述均以相同座標刻度與 |a| 比較為前提。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "49963320a8a914b0bd8555ff0a6ee13602498ad271a02dd3a72170a0375a894a"
+};
+
+export const QUESTIONS=[
+  {
+    "questionId": "u21-s003-v001",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "basic",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "二次函數 y=5x² 的頂點為何？",
+    "givenConditions": [
+      "函數為 y=ax² 形式"
+    ],
+    "target": "讀取原點頂點",
+    "text": "二次函數 y=5x² 的頂點為何？",
+    "choices": [
+      "(5,0)",
+      "(0,5)",
+      "(0,0)",
+      "(5,5)"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "f(0)=0，且 5x² 在 x=0 最小，所以頂點是 (0,0)。",
+    "explanation": "y=ax² 沒有水平或垂直平移，頂點固定在原點。",
+    "steps": [
+      "代 x=0",
+      "確認所有 y≥0"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "(5,0)",
+        "truth": false,
+        "reason": "把係數 a 當作頂點 x。"
+      },
+      {
+        "choice": "(0,5)",
+        "truth": false,
+        "reason": "把係數 a 當作 y 截距。"
+      },
+      {
+        "choice": "(0,0)",
+        "truth": true,
+        "reason": "代 x=0 得 y=0，且 y=5x²≥0。"
+      },
+      {
+        "choice": "(5,5)",
+        "truth": false,
+        "reason": "頂點不由係數直接當座標。"
+      }
+    ],
+    "misconceptionTarget": "把 a 當頂點座標",
+    "concept": "y=ax² 的固定頂點",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 45,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「讀取原點頂點」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「把 a 當頂點座標」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "basic：辨認標準式頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "辨認標準式頂點",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "21265feab899dd7ea6b61ed250d47a5f8d178db909e869176896eeb94e433097"
+  },
+  {
+    "questionId": "u21-s003-v002",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "basic",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "函數 y=-0.25x² 的圖形開口方向為何？",
+    "givenConditions": [
+      "a=-0.25"
+    ],
+    "target": "依 a 的符號判斷方向",
+    "text": "函數 y=-0.25x² 的圖形開口方向為何？",
+    "choices": [
+      "向上",
+      "向右",
+      "無法判斷",
+      "向下"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "任取 x=1 得 y=-0.25<0，配合頂點原點可知開口向下。",
+    "explanation": "x² 前係數為負，因此圖形由原點向下延伸。",
+    "steps": [
+      "讀出 a=-0.25",
+      "套用 a<0 向下"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "向上",
+        "truth": false,
+        "reason": "向上需 a>0。"
+      },
+      {
+        "choice": "向右",
+        "truth": false,
+        "reason": "一般函數 y=f(x) 的此式不是橫向拋物線。"
+      },
+      {
+        "choice": "無法判斷",
+        "truth": false,
+        "reason": "a 已明確為負數。"
+      },
+      {
+        "choice": "向下",
+        "truth": true,
+        "reason": "a<0，非零 x 時 y<0。"
+      }
+    ],
+    "misconceptionTarget": "看到 0.25 小於 1 就誤判方向",
+    "concept": "係數符號與開口",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 50,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「依 a 的符號判斷方向」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「看到 0.25 小於 1 就誤判方向」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "basic：由係數判斷開口；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由係數判斷開口",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "4248d8dbd8bca1dc79b00b8eb798a14acb2b05d4a478c5c254d7a85c63130b8e"
+  },
+  {
+    "questionId": "u21-s003-v003",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "basic",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "在相同座標刻度下，y=3x² 與 y=(1/3)x² 哪一個圖形較窄？",
+    "givenConditions": [
+      "兩式皆開口向上",
+      "比較 |a|"
+    ],
+    "target": "比較標準式拋物線寬窄",
+    "text": "在相同座標刻度下，y=3x² 與 y=(1/3)x² 哪一個圖形較窄？",
+    "choices": [
+      "y=3x²",
+      "y=(1/3)x²",
+      "兩者一樣寬",
+      "無法比較"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "在 x=1 時前者 y=3、後者 y=1/3，前者升得更快，故較窄。",
+    "explanation": "寬窄看 |a|；係數絕對值越大，圖形越靠近對稱軸而顯得較窄。",
+    "steps": [
+      "比較 3 與 1/3",
+      "以 x=1 的高度 3 與 1/3 驗證"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "y=3x²",
+        "truth": true,
+        "reason": "|3|>|1/3|，同一 x 下高度增加較快。"
+      },
+      {
+        "choice": "y=(1/3)x²",
+        "truth": false,
+        "reason": "係數較接近 0，實際上較寬。"
+      },
+      {
+        "choice": "兩者一樣寬",
+        "truth": false,
+        "reason": "兩係數絕對值不同。"
+      },
+      {
+        "choice": "無法比較",
+        "truth": false,
+        "reason": "已指定相同座標刻度。"
+      }
+    ],
+    "misconceptionTarget": "以為係數大代表水平更寬",
+    "concept": "|a| 與寬窄",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 65,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「比較標準式拋物線寬窄」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「以為係數大代表水平更寬」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "basic：比較兩拋物線寬窄；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "比較兩拋物線寬窄",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "1c952775d2a959200b8899ff067df344082e5506fcd329cdfdb1054e96fb391a"
+  },
+  {
+    "questionId": "u21-s003-v004",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "standard",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "點 P(-2,y) 在 y=-3x² 上，y 為何？",
+    "givenConditions": [
+      "x=-2",
+      "a=-3"
+    ],
+    "target": "正確處理負數平方與外負係數",
+    "text": "點 P(-2,y) 在 y=-3x² 上，y 為何？",
+    "choices": [
+      "12",
+      "-12",
+      "-6",
+      "6"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "直接代入 y=-3(-2)²=-3×4=-12。",
+    "explanation": "先平方負數得到 4，再乘係數 -3，所以 y=-12。",
+    "steps": [
+      "計算 (-2)²=4",
+      "乘以 -3"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "12",
+        "truth": false,
+        "reason": "漏掉外係數的負號。"
+      },
+      {
+        "choice": "-12",
+        "truth": true,
+        "reason": "(-2)²=4，再乘 -3 得 -12。"
+      },
+      {
+        "choice": "-6",
+        "truth": false,
+        "reason": "把 x² 誤作 2x 的大小。"
+      },
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "同時誤處理平方與負號。"
+      }
+    ],
+    "misconceptionTarget": "把 -3x² 看成 (-3x)²",
+    "concept": "標準式代入",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「正確處理負數平方與外負係數」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「把 -3x² 看成 (-3x)²」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "standard：代入負數座標；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "代入負數座標",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "ff29dfb1c8905eda33825b19b00f2f6a078df4dbc2307b319367dfaf72a38b38"
+  },
+  {
+    "questionId": "u21-s003-v005",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "standard",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "下列哪一個函數與 y=4x² 寬度相同但開口方向相反？",
+    "givenConditions": [
+      "相同座標刻度",
+      "純比較形狀"
+    ],
+    "target": "保持 |a| 並改變符號",
+    "text": "下列哪一個函數與 y=4x² 寬度相同但開口方向相反？",
+    "choices": [
+      "y=(1/4)x²",
+      "y=-2x²",
+      "y=4x²+1",
+      "y=-4x²"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "唯一同時符合的是 a=-4，即 y=-4x²。",
+    "explanation": "相同寬度要求 |a|=4，方向相反要求 a<0，因此 a=-4。",
+    "steps": [
+      "列出寬度條件 |a|=4",
+      "加入方向條件 a<0"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "y=(1/4)x²",
+        "truth": false,
+        "reason": "開口同向且寬度不同。"
+      },
+      {
+        "choice": "y=-2x²",
+        "truth": false,
+        "reason": "方向相反但 |a| 不同。"
+      },
+      {
+        "choice": "y=4x²+1",
+        "truth": false,
+        "reason": "方向與寬度相同，只上下平移。"
+      },
+      {
+        "choice": "y=-4x²",
+        "truth": true,
+        "reason": "|a| 同為 4，符號相反。"
+      }
+    ],
+    "misconceptionTarget": "只改係數大小或只做平移",
+    "concept": "係數絕對值與符號的雙重角色",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「保持 |a| 並改變符號」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「只改係數大小或只做平移」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "standard：同寬反向匹配；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "同寬反向匹配",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "38d079e7c94e33b9460421f7aba36d13258879cf326c069db928b3b0b7a402bb"
+  },
+  {
+    "questionId": "u21-s003-v006",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "standard",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "figure",
+    "figureId": "u21-fig-s003-01",
+    "drawingSpecId": "u21-draw-s003-01",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "依圖 u21-fig-s003-01，曲線甲為 y=x²，曲線乙為 y=ax²。乙比甲窄且同樣開口向上，下列何者可能是 a？",
+    "givenConditions": [
+      "兩圖刻度相同",
+      "乙開口向上且較窄"
+    ],
+    "target": "由圖形相對寬窄推測 a",
+    "text": "依圖 u21-fig-s003-01，曲線甲為 y=x²，曲線乙為 y=ax²。乙比甲窄且同樣開口向上，下列何者可能是 a？",
+    "choices": [
+      "2",
+      "-2",
+      "1/2",
+      "-1/2"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "交集條件 a>1，候選中只有 2。",
+    "explanation": "乙向上代表 a>0，乙較窄代表 |a|>1；四選項只有 2。",
+    "steps": [
+      "由方向得 a>0",
+      "由寬窄得 |a|>1"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2",
+        "truth": true,
+        "reason": "a>0 且 |a|>1，符合向上且較窄。"
+      },
+      {
+        "choice": "-2",
+        "truth": false,
+        "reason": "雖較窄，但會開口向下。"
+      },
+      {
+        "choice": "1/2",
+        "truth": false,
+        "reason": "向上但會比 y=x² 寬。"
+      },
+      {
+        "choice": "-1/2",
+        "truth": false,
+        "reason": "會向下且較寬。"
+      }
+    ],
+    "misconceptionTarget": "只看寬窄忽略方向",
+    "concept": "由圖反推係數範圍",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 80,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由圖形相對寬窄推測 a」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「只看寬窄忽略方向」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "圖形提供必要資訊；只使用標示的座標、刻度與曲線關係，不以外觀估測。"
+    },
+    "difficultyReason": "standard：由比較圖判係數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由比較圖判係數",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "c4b17598404630f7113f0979c47f8a3925b2821cea016aaed669f63eff912d31"
+  },
+  {
+    "questionId": "u21-s003-v007",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "advanced",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "函數 y=ax² 通過點 (3,-18)，a 為何？",
+    "givenConditions": [
+      "a≠0",
+      "點在圖上"
+    ],
+    "target": "由非原點圖上點求係數",
+    "text": "函數 y=ax² 通過點 (3,-18)，a 為何？",
+    "choices": [
+      "2",
+      "-2",
+      "-6",
+      "-162"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "a=-18/(3²)=-18/9=-2。",
+    "explanation": "將 x=3、y=-18 代入，得到 9a=-18，除以 9。",
+    "steps": [
+      "建立 -18=9a",
+      "解得 a=-2"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "忽略 y 為負，會得到相反開口。"
+      },
+      {
+        "choice": "-2",
+        "truth": true,
+        "reason": "-18=a×9，所以 a=-2。"
+      },
+      {
+        "choice": "-6",
+        "truth": false,
+        "reason": "用 -18÷3，漏平方。"
+      },
+      {
+        "choice": "-162",
+        "truth": false,
+        "reason": "把 a 誤算成 y×x²。"
+      }
+    ],
+    "misconceptionTarget": "除以 x 而不是 x²",
+    "concept": "由點求 a",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 80,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由非原點圖上點求係數」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「除以 x 而不是 x²」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "advanced：重建標準式係數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "重建標準式係數",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "662c50dafcab6771f583ff57754125e739ae153304bd940ce801dbba25579dc6"
+  },
+  {
+    "questionId": "u21-s003-v008",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "advanced",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "某 y=ax² 的圖形開口向下，且通過 (2,-8)。下列哪一個式子正確？",
+    "givenConditions": [
+      "形式限制 y=ax²",
+      "a<0"
+    ],
+    "target": "由方向與圖上點選方程式",
+    "text": "某 y=ax² 的圖形開口向下，且通過 (2,-8)。下列哪一個式子正確？",
+    "choices": [
+      "y=2x²",
+      "y=-4x²",
+      "y=-2x²",
+      "y=-2x²+8"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "解 4a=-8 得 a=-2，因此函數是 y=-2x²。",
+    "explanation": "由 -8=4a 得 a=-2，方向也與 a<0 一致。",
+    "steps": [
+      "代入點求 a",
+      "核對標準式與開口"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "y=2x²",
+        "truth": false,
+        "reason": "代入得 8，且方向向上。"
+      },
+      {
+        "choice": "y=-4x²",
+        "truth": false,
+        "reason": "代入得 -16。"
+      },
+      {
+        "choice": "y=-2x²",
+        "truth": true,
+        "reason": "代 x=2 得 -2×4=-8，且開口向下。"
+      },
+      {
+        "choice": "y=-2x²+8",
+        "truth": false,
+        "reason": "不符合指定的 y=ax² 形式，且不過 (2,-8)。"
+      }
+    ],
+    "misconceptionTarget": "只依方向選任意負係數",
+    "concept": "由複合條件確定式子",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「由方向與圖上點選方程式」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「只依方向選任意負係數」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "advanced：由點與方向重建函數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由點與方向重建函數",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "48c8cc1007138d0ead434c310504cf76c0ee307941e98da626e12d13297903f2"
+  },
+  {
+    "questionId": "u21-s003-v009",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "advanced",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "對 y=ax²，若 x 從 1 變成 3，且 a 固定非零，函數值的絕對值變為原來的幾倍？",
+    "givenConditions": [
+      "比較同一函數",
+      "a 可正可負"
+    ],
+    "target": "利用平方比例比較函數值",
+    "text": "對 y=ax²，若 x 從 1 變成 3，且 a 固定非零，函數值的絕對值變為原來的幾倍？",
+    "choices": [
+      "9 倍",
+      "3 倍",
+      "6 倍",
+      "無法判斷"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "由 |f(3)|=9|a|、|f(1)|=|a|，比值為 9。",
+    "explanation": "標準式的 y 絕對值與 x² 成正比，x 變 3 倍時 |y| 變 9 倍。",
+    "steps": [
+      "寫出兩次 |y|",
+      "計算 9|a|/|a|"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "9 倍",
+        "truth": true,
+        "reason": "|a×3²|/|a×1²|=9。"
+      },
+      {
+        "choice": "3 倍",
+        "truth": false,
+        "reason": "只比較 x 倍數，未平方。"
+      },
+      {
+        "choice": "6 倍",
+        "truth": false,
+        "reason": "把平方變化誤作加倍。"
+      },
+      {
+        "choice": "無法判斷",
+        "truth": false,
+        "reason": "a 在比值中可消去，符號不影響絕對值比。"
+      }
+    ],
+    "misconceptionTarget": "把二次關係當一次比例",
+    "concept": "平方成長比例",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 95,
+    "unitCheck": "不涉及單位換算。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「利用平方比例比較函數值」。",
+      "domainBoundary": "題幹已給足定義域與比較條件。",
+      "alternateReading": "若把題目誤讀為「把二次關係當一次比例」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "advanced：比較輸入倍率與輸出倍率；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "比較輸入倍率與輸出倍率",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "b5da0bd9d002e5770c43c461555caf0cffaef587723d9ef463e8b086e631b3fc"
+  },
+  {
+    "questionId": "u21-s003-v010",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "literacy",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "兩個衛星天線剖面在相同座標比例下分別近似 y=0.2x² 與 y=0.8x²。若只比較凹槽寬窄，哪個較寬？",
+    "givenConditions": [
+      "兩者皆以凹槽最低點為原點",
+      "座標比例相同"
+    ],
+    "target": "用係數比較天線凹槽寬窄",
+    "text": "兩個衛星天線剖面在相同座標比例下分別近似 y=0.2x² 與 y=0.8x²。若只比較凹槽寬窄，哪個較寬？",
+    "choices": [
+      "y=0.8x² 的凹槽較寬",
+      "y=0.2x² 的凹槽較寬",
+      "兩者同寬",
+      "要看凹槽材質才能判斷"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "在同一高度下，較小 |a| 需較大的 |x|，所以 0.2 模型較寬。",
+    "explanation": "兩圖方向同向，寬窄只比較 |a|；0.2<0.8，所以第一個較寬。",
+    "steps": [
+      "確認同尺度",
+      "比較係數絕對值"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "y=0.8x² 的凹槽較寬",
+        "truth": false,
+        "reason": "|a| 較大會較窄。"
+      },
+      {
+        "choice": "y=0.2x² 的凹槽較寬",
+        "truth": true,
+        "reason": "0.2 的絕對值較小，曲線較平展。"
+      },
+      {
+        "choice": "兩者同寬",
+        "truth": false,
+        "reason": "係數絕對值不同。"
+      },
+      {
+        "choice": "要看凹槽材質才能判斷",
+        "truth": false,
+        "reason": "數學模型與同尺度已足以比較幾何寬窄。"
+      }
+    ],
+    "misconceptionTarget": "用材料或實物印象取代數學模型",
+    "concept": "模型係數與剖面寬窄",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 85,
+    "unitCheck": "題目只比較形狀，不需輸出物理單位；兩模型尺度已統一。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「用係數比較天線凹槽寬窄」。",
+      "domainBoundary": "只在模型同一座標比例下比較，不延伸到材料厚度。",
+      "alternateReading": "若把題目誤讀為「用材料或實物印象取代數學模型」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "literacy：比較天線凹槽形狀；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "天線剖面情境使「較寬」指同一高度下的水平開展，而非函數值較大；同座標比例是必要比較條件。",
+    "authoringIntent": "比較天線凹槽形狀",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "1b83b8ad1035f519c7ba07d9f50df36f092ace608cd3d68a1e4b2f27dd242660"
+  },
+  {
+    "questionId": "u21-s003-v011",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "literacy",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "某照明反射罩的剖面模型為 y=-1.5x²，另一款為 y=-0.5x²，兩圖尺度相同。下列敘述何者正確？",
+    "givenConditions": [
+      "頂點皆在原點",
+      "負係數表示同向開口"
+    ],
+    "target": "比較向下模型的方向與寬窄",
+    "text": "某照明反射罩的剖面模型為 y=-1.5x²，另一款為 y=-0.5x²，兩圖尺度相同。下列敘述何者正確？",
+    "choices": [
+      "第一款向上、第二款向下",
+      "兩者都向下，y=-0.5x² 較窄",
+      "兩者都開口向下，y=-1.5x² 較窄",
+      "兩者方向與寬度都相同"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "a=-1.5、-0.5 均為負；|−1.5|>|−0.5|，所以第一款較窄。",
+    "explanation": "先看符號得兩者皆向下，再比較絕對值得 1.5 模型較窄。",
+    "steps": [
+      "判斷兩係數符號",
+      "比較 1.5 與 0.5"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "第一款向上、第二款向下",
+        "truth": false,
+        "reason": "兩個 a 都小於 0。"
+      },
+      {
+        "choice": "兩者都向下，y=-0.5x² 較窄",
+        "truth": false,
+        "reason": "較小 |a| 應較寬。"
+      },
+      {
+        "choice": "兩者都開口向下，y=-1.5x² 較窄",
+        "truth": true,
+        "reason": "兩係數皆負；1.5>0.5，第一款 |a| 較大。"
+      },
+      {
+        "choice": "兩者方向與寬度都相同",
+        "truth": false,
+        "reason": "係數絕對值不同。"
+      }
+    ],
+    "misconceptionTarget": "把負數大小直接用 -1.5<-0.5 判寬窄",
+    "concept": "負係數模型的形狀比較",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "只比較無因次圖形參數，不需附單位。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「比較向下模型的方向與寬窄」。",
+      "domainBoundary": "兩圖已指定相同尺度與同一頂點。",
+      "alternateReading": "若把題目誤讀為「把負數大小直接用 -1.5<-0.5 判寬窄」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "literacy：比較反射罩剖面；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "反射罩情境需要同時判讀開口方向與凹曲程度；若刪除同尺度條件，外觀寬窄將無法可靠比較。",
+    "authoringIntent": "比較反射罩剖面",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "f2b13be5244359f5a5f12f97dd00e7077ab42909695c31f6013814b6ea32b88d"
+  },
+  {
+    "questionId": "u21-s003-v012",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "literacy",
+    "type": "mc",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "滑板場兩個碗池剖面分別用 y=2x² 與 y=5x² 建模，x、y 單位為公尺。離中心 1 公尺處，兩者高度差為多少？",
+    "givenConditions": [
+      "兩模型頂點皆在中心原點",
+      "x=1 公尺"
+    ],
+    "target": "計算兩個二次模型在同位置的高度差",
+    "text": "滑板場兩個碗池剖面分別用 y=2x² 與 y=5x² 建模，x、y 單位為公尺。離中心 1 公尺處，兩者高度差為多少？",
+    "choices": [
+      "7 公尺",
+      "1.5 公尺",
+      "15 公尺",
+      "3 公尺"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "y₂(1)=5、y₁(1)=2，故高度差 5-2=3 公尺。",
+    "explanation": "在 x=1 時兩高度分別 2 與 5 公尺，差為 3 公尺。",
+    "steps": [
+      "分別代 x=1",
+      "以較高減較低"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "7 公尺",
+        "truth": false,
+        "reason": "把兩高度相加。"
+      },
+      {
+        "choice": "1.5 公尺",
+        "truth": false,
+        "reason": "錯把係數比當高度差。"
+      },
+      {
+        "choice": "15 公尺",
+        "truth": false,
+        "reason": "把 5-2 後又乘錯平方。"
+      },
+      {
+        "choice": "3 公尺",
+        "truth": true,
+        "reason": "5×1²-2×1²=3。"
+      }
+    ],
+    "misconceptionTarget": "把高度和或係數比當高度差",
+    "concept": "同位置比較兩模型",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "x、y 均為公尺，兩高度相減後仍為公尺。",
+    "roundingCheck": "全程使用精確值，不需四捨五入。",
+    "ambiguityAndBoundaryAudit": {
+      "uniqueTarget": "所求明確為「計算兩個二次模型在同位置的高度差」。",
+      "domainBoundary": "x=1 在兩個碗池模型的共同比較範圍內。",
+      "alternateReading": "若把題目誤讀為「把高度和或係數比當高度差」，會落入幹擾選項，但不會形成第二個正確答案。",
+      "figureInference": "本題不依賴未提供的圖形外觀。"
+    },
+    "difficultyReason": "literacy：比較碗池高度差；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "碗池情境指定「離中心 1 公尺」與高度單位，必須在同一水平位置比較兩個模型，而不是只比較係數。",
+    "authoringIntent": "比較碗池高度差",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "3a0d2bdb7ec536b553ffa6454802163a1f06be28806e59739007979c3ca23c4d"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES=[
+  {
+    "questionId": "u21-s003-cr001",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "比較 y=4x² 與 y=-x² 的頂點、對稱軸、開口方向和寬窄，並用 x=1 的函數值驗證寬窄判斷。",
+    "givenConditions": [
+      "兩圖使用相同座標刻度"
+    ],
+    "target": "完整比較兩個 y=ax² 圖形",
+    "requiredWork": [
+      "分別列出頂點與對稱軸。",
+      "由 a 的符號判開口。",
+      "由 |a| 比較寬窄並代 x=1 驗證。"
+    ],
+    "fullCreditSolution": [
+      "兩者頂點皆為 (0,0)，對稱軸皆為 x=0。",
+      "y=4x² 的 a=4>0，開口向上；y=-x² 的 a=-1<0，開口向下。",
+      "|4|>|-1|，所以 y=4x² 較窄。x=1 時函數值分別為 4 與 -1，取絕對高度 4>1，前者離頂點升降較快。"
+    ],
+    "alternativeSolutions": [
+      "也可在相同 |y| 高度比較所需 |x|，但必須說明同尺度。"
+    ],
+    "reasoningSteps": [
+      "兩者頂點皆為 (0,0)，對稱軸皆為 x=0。",
+      "y=4x² 的 a=4>0，開口向上；y=-x² 的 a=-1<0，開口向下。",
+      "|4|>|-1|，所以 y=4x² 較窄。x=1 時函數值分別為 4 與 -1，取絕對高度 4>1，前者離頂點升降較快。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "頂點、軸、兩方向與寬窄全對，並以 x=1 的值 4、-1 正確驗證。"
+      },
+      {
+        "score": 2,
+        "criteria": "主要比較正確，但漏一項或驗證只寫係數未算函數值。"
+      },
+      {
+        "score": 1,
+        "criteria": "能正確判斷至少兩項，例如兩頂點皆原點且方向相反。"
+      },
+      {
+        "score": 0,
+        "criteria": "把負係數判向上、把 |a| 較大判較寬，且無正確核心比較。"
+      }
+    ],
+    "partialCreditRules": [
+      "主要比較正確，但漏一項或驗證只寫係數未算函數值。",
+      "能正確判斷至少兩項，例如兩頂點皆原點且方向相反。"
+    ],
+    "followThroughPolicy": "若方向判錯但頂點、軸與 |a| 寬窄方法正確，可按各項給分；驗證值的單一算術錯誤不抹除已正確的係數理由。",
+    "unitAndNotationRules": [
+      "本題無物理單位。",
+      "寬窄比較以相同座標刻度為前提。"
+    ],
+    "answerOnlyPolicy": "只列結論無 x=1 驗證，最高 2 分。",
+    "commonErrors": [
+      "用 a 的正負直接比較寬窄而不取絕對值。",
+      "把 -x² 的頂點寫成 (0,-1)。",
+      "未指定相同尺度就只憑外觀。"
+    ],
+    "independentReview": {
+      "derivedResult": "兩者頂點 (0,0)、軸 x=0；前者向上且較窄，後者向下；x=1 時值 4 與 -1。",
+      "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "6da2395abd6370a151a257ca8fb77396999ab535c66739eb8e667ac4cc6fe187"
+  },
+  {
+    "questionId": "u21-s003-cr002",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-standard-to-graph"
+    },
+    "prompt": "函數 y=ax² 通過 P(-2,12)。求 a，再求圖形上 x=5 的點 Q，最後說明 P 關於對稱軸的對稱點。",
+    "givenConditions": [
+      "a≠0",
+      "函數形式固定"
+    ],
+    "target": "由一點求係數並運用對稱",
+    "requiredWork": [
+      "代入 P 求 a。",
+      "計算 x=5 時的 y。",
+      "指出對稱軸並求 P 的鏡射點。"
+    ],
+    "fullCreditSolution": [
+      "12=a(-2)²=4a，所以 a=3。",
+      "函數為 y=3x²；x=5 時 y=3×25=75，所以 Q=(5,75)。",
+      "對稱軸是 x=0；P(-2,12) 的對稱點為 (2,12)。"
+    ],
+    "alternativeSolutions": [
+      "可先由 y=ax² 的 y 軸對稱直接寫出 (2,12)，再求 a 與 Q。"
+    ],
+    "reasoningSteps": [
+      "12=a(-2)²=4a，所以 a=3。",
+      "函數為 y=3x²；x=5 時 y=3×25=75，所以 Q=(5,75)。",
+      "對稱軸是 x=0；P(-2,12) 的對稱點為 (2,12)。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "a=3、Q=(5,75)、對稱點 (2,12) 全對且有代入過程。"
+      },
+      {
+        "score": 2,
+        "criteria": "三個結果中兩個完整正確，或只有一個末端算術錯誤。"
+      },
+      {
+        "score": 1,
+        "criteria": "正確列 12=4a 或知道對稱軸 x=0 且 y 保持 12。"
+      },
+      {
+        "score": 0,
+        "criteria": "用 12÷(-2) 求 a、Q 無平方，且對稱點改變 y。"
+      }
+    ],
+    "partialCreditRules": [
+      "三個結果中兩個完整正確，或只有一個末端算術錯誤。",
+      "正確列 12=4a 或知道對稱軸 x=0 且 y 保持 12。"
+    ],
+    "followThroughPolicy": "若 a 計算錯但後續以自得 a 正確算 Q，可給方法追蹤分；對稱點部分獨立計分，不受 a 算錯影響。",
+    "unitAndNotationRules": [
+      "座標使用 (x,y)。",
+      "本題數值無物理單位。"
+    ],
+    "answerOnlyPolicy": "只寫 a=3 無 Q 與對稱點，最高 1 分。",
+    "commonErrors": [
+      "把 (-2)² 算成 -4。",
+      "Q 的 y 算成 15。",
+      "對稱點寫成 (2,-12)。"
+    ],
+    "independentReview": {
+      "derivedResult": "a=3，Q=(5,75)，P 的對稱點為 (2,12)。",
+      "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "efca70b3680c274486bc3fef3bd52443b6714695a9e7866b36b0a4534a92be6e"
+  }
+];
+
+export const SEMANTIC_REVIEWS=[
+  {
+    "questionId": "u21-s003-v001",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "21265feab899dd7ea6b61ed250d47a5f8d178db909e869176896eeb94e433097",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "f(0)=0，且 5x² 在 x=0 最小，所以頂點是 (0,0)。",
+    "derivedAnswer": "(0,0)",
+    "storedAnswer": "(0,0)",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「(0,0)」。逐項反證其餘選項：「(5,0)」不成立，因為把係數 a 當作頂點 x。；「(0,5)」不成立，因為把係數 a 當作 y 截距。；「(5,5)」不成立，因為頂點不由係數直接當座標。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是讀取原點頂點，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「讀取原點頂點」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把 a 當頂點座標」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「(0,0)」。"
+    },
+    "difficultyReason": "basic：辨認標準式頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求讀取原點頂點，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「二次函數 y=5x² 的頂點為何？」獨立重算：f(0)=0，且 5x² 在 x=0 最小，所以頂點是 (0,0)。；所得答案為「(0,0)」。四選項逐項核對：「(5,0)」=假，把係數 a 當作頂點 x。；「(0,5)」=假，把係數 a 當作 y 截距。；「(0,0)」=真，代 x=0 得 y=0，且 y=5x²≥0。；「(5,5)」=假，頂點不由係數直接當座標。。難度判定依據：basic：辨認標準式頂點；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v002",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "4248d8dbd8bca1dc79b00b8eb798a14acb2b05d4a478c5c254d7a85c63130b8e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "任取 x=1 得 y=-0.25<0，配合頂點原點可知開口向下。",
+    "derivedAnswer": "向下",
+    "storedAnswer": "向下",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「向下」。逐項反證其餘選項：「向上」不成立，因為向上需 a>0。；「向右」不成立，因為一般函數 y=f(x) 的此式不是橫向拋物線。；「無法判斷」不成立，因為a 已明確為負數。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是依 a 的符號判斷方向，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「依 a 的符號判斷方向」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「看到 0.25 小於 1 就誤判方向」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「向下」。"
+    },
+    "difficultyReason": "basic：由係數判斷開口；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求依 a 的符號判斷方向，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「函數 y=-0.25x² 的圖形開口方向為何？」獨立重算：任取 x=1 得 y=-0.25<0，配合頂點原點可知開口向下。；所得答案為「向下」。四選項逐項核對：「向上」=假，向上需 a>0。；「向右」=假，一般函數 y=f(x) 的此式不是橫向拋物線。；「無法判斷」=假，a 已明確為負數。；「向下」=真，a<0，非零 x 時 y<0。。難度判定依據：basic：由係數判斷開口；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v003",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "1c952775d2a959200b8899ff067df344082e5506fcd329cdfdb1054e96fb391a",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "在 x=1 時前者 y=3、後者 y=1/3，前者升得更快，故較窄。",
+    "derivedAnswer": "y=3x²",
+    "storedAnswer": "y=3x²",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「y=3x²」。逐項反證其餘選項：「y=(1/3)x²」不成立，因為係數較接近 0，實際上較寬。；「兩者一樣寬」不成立，因為兩係數絕對值不同。；「無法比較」不成立，因為已指定相同座標刻度。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是比較標準式拋物線寬窄，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「比較標準式拋物線寬窄」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「以為係數大代表水平更寬」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「y=3x²」。"
+    },
+    "difficultyReason": "basic：比較兩拋物線寬窄；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求比較標準式拋物線寬窄，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「在相同座標刻度下，y=3x² 與 y=(1/3)x² 哪一個圖形較窄？」獨立重算：在 x=1 時前者 y=3、後者 y=1/3，前者升得更快，故較窄。；所得答案為「y=3x²」。四選項逐項核對：「y=3x²」=真，|3|>|1/3|，同一 x 下高度增加較快。；「y=(1/3)x²」=假，係數較接近 0，實際上較寬。；「兩者一樣寬」=假，兩係數絕對值不同。；「無法比較」=假，已指定相同座標刻度。。難度判定依據：basic：比較兩拋物線寬窄；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v004",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "ff29dfb1c8905eda33825b19b00f2f6a078df4dbc2307b319367dfaf72a38b38",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "直接代入 y=-3(-2)²=-3×4=-12。",
+    "derivedAnswer": "-12",
+    "storedAnswer": "-12",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「-12」。逐項反證其餘選項：「12」不成立，因為漏掉外係數的負號。；「-6」不成立，因為把 x² 誤作 2x 的大小。；「6」不成立，因為同時誤處理平方與負號。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是正確處理負數平方與外負係數，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「正確處理負數平方與外負係數」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把 -3x² 看成 (-3x)²」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「-12」。"
+    },
+    "difficultyReason": "standard：代入負數座標；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求正確處理負數平方與外負係數，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「點 P(-2,y) 在 y=-3x² 上，y 為何？」獨立重算：直接代入 y=-3(-2)²=-3×4=-12。；所得答案為「-12」。四選項逐項核對：「12」=假，漏掉外係數的負號。；「-12」=真，(-2)²=4，再乘 -3 得 -12。；「-6」=假，把 x² 誤作 2x 的大小。；「6」=假，同時誤處理平方與負號。。難度判定依據：standard：代入負數座標；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v005",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "38d079e7c94e33b9460421f7aba36d13258879cf326c069db928b3b0b7a402bb",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "唯一同時符合的是 a=-4，即 y=-4x²。",
+    "derivedAnswer": "y=-4x²",
+    "storedAnswer": "y=-4x²",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「y=-4x²」。逐項反證其餘選項：「y=(1/4)x²」不成立，因為開口同向且寬度不同。；「y=-2x²」不成立，因為方向相反但 |a| 不同。；「y=4x²+1」不成立，因為方向與寬度相同，只上下平移。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是保持 |a| 並改變符號，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「保持 |a| 並改變符號」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「只改係數大小或只做平移」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「y=-4x²」。"
+    },
+    "difficultyReason": "standard：同寬反向匹配；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求保持 |a| 並改變符號，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「下列哪一個函數與 y=4x² 寬度相同但開口方向相反？」獨立重算：唯一同時符合的是 a=-4，即 y=-4x²。；所得答案為「y=-4x²」。四選項逐項核對：「y=(1/4)x²」=假，開口同向且寬度不同。；「y=-2x²」=假，方向相反但 |a| 不同。；「y=4x²+1」=假，方向與寬度相同，只上下平移。；「y=-4x²」=真，|a| 同為 4，符號相反。。難度判定依據：standard：同寬反向匹配；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v006",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "c4b17598404630f7113f0979c47f8a3925b2821cea016aaed669f63eff912d31",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "交集條件 a>1，候選中只有 2。",
+    "derivedAnswer": "2",
+    "storedAnswer": "2",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「2」。逐項反證其餘選項：「-2」不成立，因為雖較窄，但會開口向下。；「1/2」不成立，因為向上但會比 y=x² 寬。；「-1/2」不成立，因為會向下且較寬。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是由圖形相對寬窄推測 a，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「由圖形相對寬窄推測 a」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「只看寬窄忽略方向」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「2」。"
+    },
+    "difficultyReason": "standard：由比較圖判係數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由圖形相對寬窄推測 a，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「依圖 u21-fig-s003-01，曲線甲為 y=x²，曲線乙為 y=ax²。乙比甲窄且同樣開口向上，下列何者可能是 a？」獨立重算：交集條件 a>1，候選中只有 2。；所得答案為「2」。四選項逐項核對：「2」=真，a>0 且 |a|>1，符合向上且較窄。；「-2」=假，雖較窄，但會開口向下。；「1/2」=假，向上但會比 y=x² 寬。；「-1/2」=假，會向下且較寬。。難度判定依據：standard：由比較圖判係數；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v007",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "662c50dafcab6771f583ff57754125e739ae153304bd940ce801dbba25579dc6",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "a=-18/(3²)=-18/9=-2。",
+    "derivedAnswer": "-2",
+    "storedAnswer": "-2",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「-2」。逐項反證其餘選項：「2」不成立，因為忽略 y 為負，會得到相反開口。；「-6」不成立，因為用 -18÷3，漏平方。；「-162」不成立，因為把 a 誤算成 y×x²。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是由非原點圖上點求係數，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「由非原點圖上點求係數」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「除以 x 而不是 x²」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「-2」。"
+    },
+    "difficultyReason": "advanced：重建標準式係數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由非原點圖上點求係數，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「函數 y=ax² 通過點 (3,-18)，a 為何？」獨立重算：a=-18/(3²)=-18/9=-2。；所得答案為「-2」。四選項逐項核對：「2」=假，忽略 y 為負，會得到相反開口。；「-2」=真，-18=a×9，所以 a=-2。；「-6」=假，用 -18÷3，漏平方。；「-162」=假，把 a 誤算成 y×x²。。難度判定依據：advanced：重建標準式係數；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v008",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "48c8cc1007138d0ead434c310504cf76c0ee307941e98da626e12d13297903f2",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "解 4a=-8 得 a=-2，因此函數是 y=-2x²。",
+    "derivedAnswer": "y=-2x²",
+    "storedAnswer": "y=-2x²",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「y=-2x²」。逐項反證其餘選項：「y=2x²」不成立，因為代入得 8，且方向向上。；「y=-4x²」不成立，因為代入得 -16。；「y=-2x²+8」不成立，因為不符合指定的 y=ax² 形式，且不過 (2,-8)。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是由方向與圖上點選方程式，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「由方向與圖上點選方程式」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「只依方向選任意負係數」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「y=-2x²」。"
+    },
+    "difficultyReason": "advanced：由點與方向重建函數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求由方向與圖上點選方程式，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「某 y=ax² 的圖形開口向下，且通過 (2,-8)。下列哪一個式子正確？」獨立重算：解 4a=-8 得 a=-2，因此函數是 y=-2x²。；所得答案為「y=-2x²」。四選項逐項核對：「y=2x²」=假，代入得 8，且方向向上。；「y=-4x²」=假，代入得 -16。；「y=-2x²」=真，代 x=2 得 -2×4=-8，且開口向下。；「y=-2x²+8」=假，不符合指定的 y=ax² 形式，且不過 (2,-8)。。難度判定依據：advanced：由點與方向重建函數；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v009",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "b5da0bd9d002e5770c43c461555caf0cffaef587723d9ef463e8b086e631b3fc",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "由 |f(3)|=9|a|、|f(1)|=|a|，比值為 9。",
+    "derivedAnswer": "9 倍",
+    "storedAnswer": "9 倍",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「9 倍」。逐項反證其餘選項：「3 倍」不成立，因為只比較 x 倍數，未平方。；「6 倍」不成立，因為把平方變化誤作加倍。；「無法判斷」不成立，因為a 在比值中可消去，符號不影響絕對值比。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是利用平方比例比較函數值，沒有未定義的新符號。",
+      "unitConflict": "單位審查：不涉及單位換算。 本題四個選項皆回應同一所求量「利用平方比例比較函數值」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：題幹已給足定義域與比較條件。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把二次關係當一次比例」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「9 倍」。"
+    },
+    "difficultyReason": "advanced：比較輸入倍率與輸出倍率；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求利用平方比例比較函數值，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「對 y=ax²，若 x 從 1 變成 3，且 a 固定非零，函數值的絕對值變為原來的幾倍？」獨立重算：由 |f(3)|=9|a|、|f(1)|=|a|，比值為 9。；所得答案為「9 倍」。四選項逐項核對：「9 倍」=真，|a×3²|/|a×1²|=9。；「3 倍」=假，只比較 x 倍數，未平方。；「6 倍」=假，把平方變化誤作加倍。；「無法判斷」=假，a 在比值中可消去，符號不影響絕對值比。。難度判定依據：advanced：比較輸入倍率與輸出倍率；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v010",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "1b83b8ad1035f519c7ba07d9f50df36f092ace608cd3d68a1e4b2f27dd242660",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "在同一高度下，較小 |a| 需較大的 |x|，所以 0.2 模型較寬。",
+    "derivedAnswer": "y=0.2x² 的凹槽較寬",
+    "storedAnswer": "y=0.2x² 的凹槽較寬",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「y=0.2x² 的凹槽較寬」。逐項反證其餘選項：「y=0.8x² 的凹槽較寬」不成立，因為|a| 較大會較窄。；「兩者同寬」不成立，因為係數絕對值不同。；「要看凹槽材質才能判斷」不成立，因為數學模型與同尺度已足以比較幾何寬窄。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是用係數比較天線凹槽寬窄，沒有未定義的新符號。",
+      "unitConflict": "單位審查：題目只比較形狀，不需輸出物理單位；兩模型尺度已統一。 本題四個選項皆回應同一所求量「用係數比較天線凹槽寬窄」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：只在模型同一座標比例下比較，不延伸到材料厚度。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「用材料或實物印象取代數學模型」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「y=0.2x² 的凹槽較寬」。"
+    },
+    "difficultyReason": "literacy：比較天線凹槽形狀；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "天線剖面情境使「較寬」指同一高度下的水平開展，而非函數值較大；同座標比例是必要比較條件。",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求用係數比較天線凹槽寬窄，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「兩個衛星天線剖面在相同座標比例下分別近似 y=0.2x² 與 y=0.8x²。若只比較凹槽寬窄，哪個較寬？」獨立重算：在同一高度下，較小 |a| 需較大的 |x|，所以 0.2 模型較寬。；所得答案為「y=0.2x² 的凹槽較寬」。四選項逐項核對：「y=0.8x² 的凹槽較寬」=假，|a| 較大會較窄。；「y=0.2x² 的凹槽較寬」=真，0.2 的絕對值較小，曲線較平展。；「兩者同寬」=假，係數絕對值不同。；「要看凹槽材質才能判斷」=假，數學模型與同尺度已足以比較幾何寬窄。。難度判定依據：literacy：比較天線凹槽形狀；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v011",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "f2b13be5244359f5a5f12f97dd00e7077ab42909695c31f6013814b6ea32b88d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "a=-1.5、-0.5 均為負；|−1.5|>|−0.5|，所以第一款較窄。",
+    "derivedAnswer": "兩者都開口向下，y=-1.5x² 較窄",
+    "storedAnswer": "兩者都開口向下，y=-1.5x² 較窄",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「兩者都開口向下，y=-1.5x² 較窄」。逐項反證其餘選項：「第一款向上、第二款向下」不成立，因為兩個 a 都小於 0。；「兩者都向下，y=-0.5x² 較窄」不成立，因為較小 |a| 應較寬。；「兩者方向與寬度都相同」不成立，因為係數絕對值不同。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是比較向下模型的方向與寬窄，沒有未定義的新符號。",
+      "unitConflict": "單位審查：只比較無因次圖形參數，不需附單位。 本題四個選項皆回應同一所求量「比較向下模型的方向與寬窄」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：兩圖已指定相同尺度與同一頂點。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把負數大小直接用 -1.5<-0.5 判寬窄」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「兩者都開口向下，y=-1.5x² 較窄」。"
+    },
+    "difficultyReason": "literacy：比較反射罩剖面；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "反射罩情境需要同時判讀開口方向與凹曲程度；若刪除同尺度條件，外觀寬窄將無法可靠比較。",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求比較向下模型的方向與寬窄，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「某照明反射罩的剖面模型為 y=-1.5x²，另一款為 y=-0.5x²，兩圖尺度相同。下列敘述何者正確？」獨立重算：a=-1.5、-0.5 均為負；|−1.5|>|−0.5|，所以第一款較窄。；所得答案為「兩者都開口向下，y=-1.5x² 較窄」。四選項逐項核對：「第一款向上、第二款向下」=假，兩個 a 都小於 0。；「兩者都向下，y=-0.5x² 較窄」=假，較小 |a| 應較寬。；「兩者都開口向下，y=-1.5x² 較窄」=真，兩係數皆負；1.5>0.5，第一款 |a| 較大。；「兩者方向與寬度都相同」=假，係數絕對值不同。。難度判定依據：literacy：比較反射罩剖面；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  },
+  {
+    "questionId": "u21-s003-v012",
+    "unitId": "u21",
+    "skillId": "quadratic-standard-to-graph",
+    "contentSha256": "3a0d2bdb7ec536b553ffa6454802163a1f06be28806e59739007979c3ca23c4d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewVersion": "human-review-u21-r1",
+    "reviewedAt": "2026-07-12",
+    "independentSolution": "y₂(1)=5、y₁(1)=2，故高度差 5-2=3 公尺。",
+    "derivedAnswer": "3 公尺",
+    "storedAnswer": "3 公尺",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新解題得到「3 公尺」。逐項反證其餘選項：「7 公尺」不成立，因為把兩高度相加。；「1.5 公尺」不成立，因為錯把係數比當高度差。；「15 公尺」不成立，因為把 5-2 後又乘錯平方。。",
+      "undefinedSymbol": "題幹用語均在技能「quadratic-standard-to-graph」講義中先定義；本題目標是計算兩個二次模型在同位置的高度差，沒有未定義的新符號。",
+      "unitConflict": "單位審查：x、y 均為公尺，兩高度相減後仍為公尺。 本題四個選項皆回應同一所求量「計算兩個二次模型在同位置的高度差」，沒有把輸入、輸出、座標或物理單位互換。",
+      "roundingConflict": "數值審查：全程使用精確值，不需四捨五入。 因此答案位置不受近似規則改變。",
+      "domainBoundary": "範圍審查：x=1 在兩個碗池模型的共同比較範圍內。 題幹端點、正值條件與可行輸入均依原文處理；獨立解題未超出國中會考二次函數範圍。",
+      "alternateReading": "語意審查：若把題目誤讀為「把高度和或係數比當高度差」，會落入幹擾選項，但不會形成第二個正確答案。 正確讀法仍唯一指向「3 公尺」。"
+    },
+    "difficultyReason": "literacy：比較碗池高度差；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+    "literacyContextNecessity": "碗池情境指定「離中心 1 公尺」與高度單位，必須在同一水平位置比較兩個模型，而不是只比較係數。",
+    "prerequisiteCheck": "需先能使用 quadratic-vertex 的核心概念；本題沒有借用後續技能。",
+    "languageCheck": "題幹以臺灣繁體中文寫成，明確要求計算兩個二次模型在同位置的高度差，條件與選項語法一致。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "本題「滑板場兩個碗池剖面分別用 y=2x² 與 y=5x² 建模，x、y 單位為公尺。離中心 1 公尺處，兩者高度差為多少？」獨立重算：y₂(1)=5、y₁(1)=2，故高度差 5-2=3 公尺。；所得答案為「3 公尺」。四選項逐項核對：「7 公尺」=假，把兩高度相加。；「1.5 公尺」=假，錯把係數比當高度差。；「15 公尺」=假，把 5-2 後又乘錯平方。；「3 公尺」=真，5×1²-2×1²=3。。難度判定依據：literacy：比較碗池高度差；需完成 2 個明確推理步驟並排除三種具體錯誤。"
+  }
+];
+
+export const DRAWING_SPECS=[
+  {
+    "figureId": "u21-fig-s003-01",
+    "drawingSpecId": "u21-draw-s003-01",
+    "unitId": "u21",
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-standard-to-graph",
+    "title": "係數與寬窄",
+    "svgPath": "figures/u21/u21-fig-s003-01.svg",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "altText": "本圖以高對比線條與文字標籤呈現：同刻度下，實線 y=2x² 比虛線 y=二分之一 x² 窄，兩者共用原點頂點。",
+    "drawingSpec": {
+      "canvas": {
+        "width": 640,
+        "height": 400
+      },
+      "viewBox": "0 0 640 400",
+      "coordinateSystem": "SVG 原點在左上；所有座標與曲線位置依本圖明列的像素配置。",
+      "elements": "本技能專用的座標軸、拋物線、標記點、文字與必要輔助線，詳見 SVG 元素。",
+      "labels": "所有關鍵方程式、頂點、對稱軸、端點或表格欄位直接以文字標示。",
+      "tickMarks": "圖形以關鍵座標文字為主；未標一般刻度時不得由外觀估讀其他座標。",
+      "units": "情境圖依文字標示秒、公尺或平方單位；純座標圖使用無單位座標。",
+      "lineRules": "實線為函數曲線或座標軸，虛線為對稱軸、限制邊界或比較曲線；用途由文字同步說明。",
+      "scalePolicy": "同一圖內比較寬窄時使用同一比例；未標示的距離不得作精確數值推論。",
+      "notToScaleWarning": "除明列座標外，不可只憑圖形外觀推算未標示數值。",
+      "mobileConstraints": "最小主要字級 16 px，關鍵線寬至少 2 px，640 至 760 寬 viewBox 可等比例縮放。",
+      "answerLeakageControl": "圖形只呈現講義所需結構或題幹已給資訊；不得把未給的選擇題答案直接標成結論。"
+    },
+    "svgAssertions": [
+      "<title>",
+      "<desc>",
+      "role=\"img\"",
+      "stroke=\"black\""
+    ],
+    "geometryAssertions": [
+      "SVG viewBox 與 width、height 均存在。",
+      "關鍵點與輔助線座標在畫布範圍內。",
+      "文字標籤不依賴顏色區分。"
+    ],
+    "figureReview": {
+      "mathematicalAccuracy": "pass",
+      "mobileReadability": "pass",
+      "answerLeakage": "pass",
+      "manualVisualInspection": "pass",
+      "reviewNote": "人工檢視 u21-fig-s003-01：同刻度下，實線 y=2x² 比虛線 y=二分之一 x² 窄，兩者共用原點頂點。 已核對曲線方向、標記座標、虛實線語意、文字可讀性與畫布邊界，未以未標刻度洩漏額外答案。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "b6293a0ace1c73007cf256b4774d8b234a96e43fbd3efa45e23e16481039cc65"
+  }
+];

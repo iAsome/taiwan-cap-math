@@ -1,0 +1,258 @@
+{
+  "lectureId": "u14-s007-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-sequences",
+  "skillId": "sequence-pattern-word",
+  "lockedTitle": "規律觀察列式",
+  "title": "規律觀察列式：把圖形結構拆成固定部分與重複部分",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從文字、表格或圖形辨認階段n。",
+    "能以固定部分加重複部分寫出式子。",
+    "能處理共邊、重疊與二維排列。",
+    "能用已知圖驗證列式並求遠期階段。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "arithmetic-mean-term",
+      "title": "等差中項",
+      "requiredLevel": "能說明「等差中項」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "階段",
+      "definition": "圖形或情境發展的第幾次，常以n表示。"
+    },
+    {
+      "term": "固定部分",
+      "definition": "每個階段都不變的數量。"
+    },
+    {
+      "term": "重複單元",
+      "definition": "每增加一階段就增加的結構。"
+    },
+    {
+      "term": "共用或重疊",
+      "definition": "相鄰圖形共享元素，不能重複計數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "T_n",
+      "meaning": "第n階段的總數量。"
+    },
+    {
+      "symbol": "固定量+n×每組量",
+      "meaning": "常見拆解模型。"
+    },
+    {
+      "symbol": "首階段+(n-1)×增量",
+      "meaning": "由首項出發的模型。"
+    }
+  ],
+  "conceptNarrative": [
+    "圖形題先問「第n圖有幾組重複單元」，再問有沒有額外固定邊或固定點。",
+    "相連正方形會共用邊，不能把每個正方形的4邊直接相加。",
+    "若第一圖已有一組，從第一圖增加到第n圖通常只新增n-1次。",
+    "同一圖形可能有不同拆法，只要列式等價且計數無重複即可。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "結構列式",
+      "statement": "依圖形組成直接表示總數的代數式。"
+    },
+    {
+      "name": "增量列式",
+      "statement": "由第一階段與固定增加量表示總數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "T_n=T_1+(n-1)d",
+      "conditions": [
+        "每次增加量固定"
+      ],
+      "meaning": "以首階段推到第n階段。"
+    },
+    {
+      "formula": "相連n個正方形火柴數=3n+1",
+      "conditions": [
+        "正方形排成一直列且相鄰共一邊"
+      ],
+      "meaning": "首個4根，之後每個增加3根。"
+    }
+  ],
+  "nonApplicableCases": [
+    "圖形每次增量不固定時不可硬套一次式。",
+    "共用邊若重複計數會高估。",
+    "n代表圖號，不一定等於新增次數。",
+    "圖未按比例繪製時不可量長度猜答案。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出第n階段的重複單元數",
+      "check": "確認n對應什麼。"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇結構法或增量法",
+      "check": "避免兩種方法混算。"
+    },
+    {
+      "step": 3,
+      "instruction": "扣除共用或重疊",
+      "check": "逐項說明為何扣。"
+    },
+    {
+      "step": 4,
+      "instruction": "寫成n的式子並化簡",
+      "check": "保留原式也可作驗證。"
+    },
+    {
+      "step": 5,
+      "instruction": "代入前幾圖核對",
+      "check": "至少檢查n=1與n=2。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "一列相連n個正方形的火柴數",
+      "reasoning": "第一個4根，其後每個加3根。",
+      "solutionSteps": [
+        "第一個4根，其後每個加3根。",
+        "T_n=4+3(n-1)=3n+1。"
+      ],
+      "answer": "3n+1"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "第1層5顆球，每增一層多4顆",
+      "reasoning": "由首層出發。",
+      "solutionSteps": [
+        "由首層出發。",
+        "T_n=5+4(n-1)=4n+1。"
+      ],
+      "answer": "4n+1"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "長為n+2、寬為3的方格長方形周長",
+      "reasoning": "周長為兩倍長寬和。",
+      "solutionSteps": [
+        "周長為兩倍長寬和。",
+        "P_n=2[(n+2)+3]=2n+10。"
+      ],
+      "answer": "2n+10"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "第n圖有n列，每列2n+1個點",
+      "reasoning": "列數乘每列點數。",
+      "solutionSteps": [
+        "列數乘每列點數。",
+        "T_n=n(2n+1)。"
+      ],
+      "answer": "n(2n+1)"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "每個正方形都算4邊",
+      "why": "共邊被重複計數。",
+      "correction": "首個4根，其後每個只加3根。"
+    },
+    {
+      "mistake": "把n當新增次數",
+      "why": "從第1圖到第n圖只新增n-1次。",
+      "correction": "用T_1+(n-1)d。"
+    },
+    {
+      "mistake": "只由數表猜式子",
+      "why": "沒有解釋圖形結構。",
+      "correction": "指出固定與重複部分。"
+    },
+    {
+      "mistake": "量圖上的像素或長度",
+      "why": "圖可能不按比例。",
+      "correction": "依標示與結構計數。"
+    },
+    {
+      "mistake": "列與每列數量只相加",
+      "why": "二維排列應相乘。",
+      "correction": "總數=列數×每列數。"
+    },
+    {
+      "mistake": "公式未代回首圖",
+      "why": "錯位式子不易被發現。",
+      "correction": "至少代n=1、2。"
+    }
+  ],
+  "selfCheck": [
+    "n代表圖號還是新增次數？",
+    "是否有共用邊或重疊？",
+    "固定部分與重複部分各是什麼？",
+    "二維排列應相加還是相乘？",
+    "公式能否產生前兩圖？"
+  ],
+  "summary": [
+    "圖形列式要辨認固定部分、重複單元與重疊。",
+    "從首圖到第n圖常有n-1次增加。",
+    "共邊題不能逐個完整相加。",
+    "代回前幾圖是必要驗證。"
+  ],
+  "connections": {
+    "previous": "結合通項與等差中項的代數表達。",
+    "next": [
+      "等比第n項會把重複乘法寫成指數。",
+      "後續素養題會在表格與圖文中辨認同類結構。"
+    ]
+  },
+  "figureReferences": [
+    "u14-fig-s007-matchstick-row"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s007-v001",
+      "u14-s007-v002",
+      "u14-s007-v003",
+      "u14-s007-v004",
+      "u14-s007-v005",
+      "u14-s007-v006",
+      "u14-s007-v007",
+      "u14-s007-v008",
+      "u14-s007-v009",
+      "u14-s007-v010",
+      "u14-s007-v011",
+      "u14-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s007-cr001",
+      "u14-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「規律觀察列式」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "50c1615199b4d643efb913f1c050ba00f94f7d12a1c6043243d8aee6b9e32cc0"
+}

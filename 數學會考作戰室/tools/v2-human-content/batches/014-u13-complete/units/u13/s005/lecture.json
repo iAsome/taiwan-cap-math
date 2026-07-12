@@ -1,0 +1,241 @@
+{
+  "lectureId": "u13-s005-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-square-root-method",
+  "lockedOrder": 5,
+  "originalLockedTitle": "平方根解法",
+  "title": "平方根解法",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能解 x²=k 與 (x-h)²=k。",
+    "能保留正負平方根。",
+    "能判斷 k<0 時無實數解。",
+    "能處理括號內含一次係數的平方。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-discriminant",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "利用判別式所揭示的平方非負觀念，改用更直接的平方形式求解。",
+  "glossary": [
+    {
+      "term": "平方根解法",
+      "definition": "把方程式整理成某個代數式的平方等於常數，再開平方。"
+    },
+    {
+      "term": "正平方根",
+      "definition": "非負數 k 的非負平方根 √k。"
+    },
+    {
+      "term": "負平方根",
+      "definition": "當 k>0 時，-√k 也是平方等於 k 的數。"
+    },
+    {
+      "term": "實數平方",
+      "definition": "任何實數的平方皆大於或等於 0。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "y²=k",
+      "meaning": "k>0 時 y=±√k；k=0 時 y=0；k<0 時無實數解。"
+    },
+    {
+      "symbol": "(ax+b)²=k",
+      "meaning": "先令 ax+b=±√k，再解兩個一次方程式。"
+    }
+  ],
+  "conceptNarrative": [
+    "平方根解法適合已經是平方形式，或很容易移項成平方形式的方程式。",
+    "± 是兩個分支，不是裝飾符號。",
+    "若平方右邊為 0，正負分支合併成同一根。",
+    "若平方右邊為負，利用實數平方非負可直接判斷無實數根。",
+    "括號內不是單純 x 時，開平方後仍要解一次方程式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "平方根解法",
+      "statement": "若 A(x)²=k，則依 k 的正負決定 A(x)=±√k、A(x)=0 或無實數解。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(x-h)²=k ⇒ x=h±√k",
+      "conditions": [
+        "k≥0",
+        "在實數範圍"
+      ],
+      "meaning": "由平方形式直接求根。"
+    }
+  ],
+  "nonApplicableCases": [
+    "一般 ax²+bx+c=0 若未化為平方形式，不宜直接對每一項開平方。",
+    "√(u+v) 通常不等於 √u+√v。",
+    "k<0 時不可在國中實數範圍寫 √k。",
+    "開平方後仍要解括號內的一次式。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把平方項單獨留在一邊。",
+      "check": "平方外的係數是否先除掉？"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷右邊常數 k 的正負。",
+      "check": "k<0 是否直接判無實根？"
+    },
+    {
+      "step": 3,
+      "instruction": "k>0 時寫括號內=±√k。",
+      "check": "是否保留兩個分支？"
+    },
+    {
+      "step": 4,
+      "instruction": "解每個一次方程式。",
+      "check": "括號內係數是否正確除掉？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原式並套用情境限制。",
+      "check": "負值或超出範圍的根是否排除？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 x²=49。",
+      "solutionSteps": [
+        "x=±√49。"
+      ],
+      "answer": "x=7 或 x=-7。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 (x-3)²=16。",
+      "solutionSteps": [
+        "x-3=±4。",
+        "分別加 3。"
+      ],
+      "answer": "x=7 或 x=-1。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 (2x+1)²=9。",
+      "solutionSteps": [
+        "2x+1=3 或 -3。",
+        "解得 x=1 或 x=-2。"
+      ],
+      "answer": "x=1 或 x=-2。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解 5(x-2)²=45。",
+      "solutionSteps": [
+        "先除以 5，得 (x-2)²=9。",
+        "x-2=±3。"
+      ],
+      "answer": "x=5 或 x=-1。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "判斷 (x+1)²=-2。",
+      "solutionSteps": [
+        "左邊為實數平方，必為非負。"
+      ],
+      "answer": "沒有實數解。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "x²=25 只寫 x=5。",
+      "why": "漏掉 -5 的平方也為 25。",
+      "correction": "寫 x=±5。"
+    },
+    {
+      "mistake": "(x-4)²=9 寫 x=±3。",
+      "why": "忘記還要加回 4。",
+      "correction": "先寫 x-4=±3。"
+    },
+    {
+      "mistake": "(2x+1)²=16 直接寫 x=±4。",
+      "why": "忽略括號內整體。",
+      "correction": "令 2x+1=±4。"
+    },
+    {
+      "mistake": "平方等於負數仍求實根。",
+      "why": "違反實數平方非負。",
+      "correction": "判定無實數解。"
+    },
+    {
+      "mistake": "把 √12 化成 6。",
+      "why": "根號運算錯誤。",
+      "correction": "√12=2√3。"
+    },
+    {
+      "mistake": "情境長度保留負根。",
+      "why": "未套用物理限制。",
+      "correction": "代數根求完後檢查定義域。"
+    }
+  ],
+  "selfCheck": [
+    "平方外係數是否移除？",
+    "右邊常數正負為何？",
+    "是否寫 ±？",
+    "括號內一次式是否解完？",
+    "情境限制是否套用？"
+  ],
+  "summary": [
+    "平方根解法直接處理平方等於常數。",
+    "±、0、無實根由右邊常數決定。",
+    "括號內需視為整體。",
+    "最後要驗算並處理情境限制。"
+  ],
+  "connections": {
+    "previous": "利用判別式所揭示的平方非負觀念，改用更直接的平方形式求解。",
+    "next": [
+      "下一節辨認標準式與係數，為所有解法建立共同起點。",
+      "基本配方法會把一般式轉成平方根解法可用的形式。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s005-v001",
+      "u13-s005-v002",
+      "u13-s005-v003",
+      "u13-s005-v004",
+      "u13-s005-v005",
+      "u13-s005-v006",
+      "u13-s005-v007",
+      "u13-s005-v008",
+      "u13-s005-v009",
+      "u13-s005-v010",
+      "u13-s005-v011",
+      "u13-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s005-cr001",
+      "u13-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "五個例子逐一平方回去驗證；確認 (2x+1)² 的兩根、5 倍平方先除以 5，以及負常數案例在實數範圍確實不可能。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "980c61f825518950f92baf07f0604c59a3980208b320870754b38a1d34bf0e2a"
+}

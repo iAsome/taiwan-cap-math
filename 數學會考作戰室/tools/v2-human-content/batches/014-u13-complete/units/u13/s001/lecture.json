@@ -1,0 +1,238 @@
+{
+  "lectureId": "u13-s001-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-factor",
+  "lockedOrder": 1,
+  "originalLockedTitle": "因式分解法",
+  "title": "零乘積性質與因式分解法",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明零乘積性質為何成立。",
+    "能把已因式分解且等於 0 的方程式拆成兩個一次方程式。",
+    "能保留所有可能的根，包括 0 與重根。",
+    "能辨認不能直接使用零乘積性質的情況。"
+  ],
+  "prerequisites": [],
+  "prerequisiteBridge": "本節銜接先前的多項式因式分解；鎖定課綱未指定 U13 內先備技能，因此從零乘積性質重新建立解方程邏輯。",
+  "glossary": [
+    {
+      "term": "一元二次方程式",
+      "definition": "只含一個未知數，整理後最高次為 2，且二次項係數不為 0 的等式。"
+    },
+    {
+      "term": "因式",
+      "definition": "相乘後得到原式的代數式。"
+    },
+    {
+      "term": "零乘積性質",
+      "definition": "兩個實數相乘等於 0 時，至少一個因數等於 0。"
+    },
+    {
+      "term": "根",
+      "definition": "代入後使方程式左右兩邊相等的未知數值。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AB=0",
+      "meaning": "A=0 或 B=0。"
+    },
+    {
+      "symbol": "x=r",
+      "meaning": "r 是方程式的一個根。"
+    },
+    {
+      "symbol": "(x-p)(x-q)=0",
+      "meaning": "根為 p 與 q；若 p=q，只有一個相異實根。"
+    }
+  ],
+  "conceptNarrative": [
+    "因式分解不是終點；方程式右邊必須先成為 0，才能使用零乘積性質。",
+    "例如 (x-3)(x+5)=0，因為乘積為 0，所以 x-3=0 或 x+5=0。",
+    "「或」表示兩條分支都要處理，不能只算其中一個。",
+    "若出現 x(x-4)=0，x=0 也是根；先除以 x 會把它遺失。",
+    "重複因式如 (x+2)²=0 只給出 x=-2 一個相異根。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "零乘積性質",
+      "statement": "若 A、B 為實數且 AB=0，則 A=0 或 B=0。"
+    },
+    {
+      "name": "因式分解法",
+      "statement": "把方程式整理成因式乘積等於 0，再令每個因式分別等於 0。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(x-p)(x-q)=0 ⇒ x=p 或 x=q",
+      "conditions": [
+        "等號一邊必須是 0",
+        "左邊已寫成乘積",
+        "各因式有定義"
+      ],
+      "meaning": "將二次方程式化為兩個一次方程式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "(x-2)(x+1)=6 的右邊不是 0，不能直接說 x=2 或 x=-1。",
+    "A+B=0 不是乘積，不能套用零乘積性質。",
+    "除以含未知數的因式前若不知道它是否為 0，可能漏根。",
+    "因式分解不完整時，不可憑外觀猜根。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把所有項移到同一邊，使另一邊為 0。",
+      "check": "等號右邊是否確實為 0？"
+    },
+    {
+      "step": 2,
+      "instruction": "把二次式完整因式分解。",
+      "check": "展開能否回到原式？"
+    },
+    {
+      "step": 3,
+      "instruction": "令每一個因式等於 0。",
+      "check": "是否處理了全部因式？"
+    },
+    {
+      "step": 4,
+      "instruction": "解各一次方程式並合併答案。",
+      "check": "重複根是否只列一次？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原方程式驗算。",
+      "check": "每個候選值是否都使原式成立？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 (x-4)(x+1)=0。",
+      "solutionSteps": [
+        "令 x-4=0 或 x+1=0。",
+        "得到 x=4 或 x=-1。"
+      ],
+      "answer": "x=4 或 x=-1。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 x(2x-6)=0。",
+      "solutionSteps": [
+        "令 x=0 或 2x-6=0。",
+        "第二式得 x=3。"
+      ],
+      "answer": "x=0 或 x=3。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 (3x+2)²=0。",
+      "solutionSteps": [
+        "重複因式等於 0。",
+        "3x+2=0，得 x=-2/3。"
+      ],
+      "answer": "只有 x=-2/3。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "說明為何 (x-2)(x+5)=12 不能直接拆。",
+      "solutionSteps": [
+        "零乘積性質要求乘積等於 0。",
+        "本式右邊為 12，應先展開、移項，再判斷能否因式分解。"
+      ],
+      "answer": "不能直接令兩因式為 0。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到兩個括號就各自等於 0。",
+      "why": "忽略右邊是否為 0。",
+      "correction": "先確認已整理成「乘積=0」。"
+    },
+    {
+      "mistake": "只解第一個因式。",
+      "why": "把「或」誤當成只選一條。",
+      "correction": "每個因式都要建立一次方程式。"
+    },
+    {
+      "mistake": "把 x(x-7)=0 先除以 x。",
+      "why": "x 可能等於 0，除法會刪掉合法解。",
+      "correction": "直接用零乘積性質保留 x=0。"
+    },
+    {
+      "mistake": "把 (x+3)²=0 寫成兩個不同答案。",
+      "why": "重複因式只對應同一數值。",
+      "correction": "答案集合只列 x=-3 一次。"
+    },
+    {
+      "mistake": "因式分解後不驗算。",
+      "why": "符號錯誤可能未被發現。",
+      "correction": "把每個根代回最初方程式。"
+    },
+    {
+      "mistake": "把 A+B=0 當作 A=0 或 B=0。",
+      "why": "零乘積性質只適用乘法。",
+      "correction": "先辨認運算符號是乘號還是加號。"
+    }
+  ],
+  "selfCheck": [
+    "右邊是否為 0？",
+    "是否完整因式分解？",
+    "每個因式都令為 0 了嗎？",
+    "是否保留 x=0？",
+    "是否代回原式？"
+  ],
+  "summary": [
+    "零乘積性質是因式分解法的邏輯核心。",
+    "只有乘積等於 0 才能拆成分支。",
+    "不能任意除以可能為 0 的含未知數因式。",
+    "根必須代回原方程式確認。"
+  ],
+  "connections": {
+    "previous": "本節銜接先前的多項式因式分解；鎖定課綱未指定 U13 內先備技能，因此從零乘積性質重新建立解方程邏輯。",
+    "next": [
+      "下一節把不易因式分解的二次式改寫成完全平方。",
+      "後續會把方程式先整理成標準式，再選擇最有效的解法。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s001-v001",
+      "u13-s001-v002",
+      "u13-s001-v003",
+      "u13-s001-v004",
+      "u13-s001-v005",
+      "u13-s001-v006",
+      "u13-s001-v007",
+      "u13-s001-v008",
+      "u13-s001-v009",
+      "u13-s001-v010",
+      "u13-s001-v011",
+      "u13-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s001-cr001",
+      "u13-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "逐例展開回原式並代入所有根；特別檢查 x=0 未因不當除法而遺失、重根只列一次，以及非零右端案例未誤用零乘積性質。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "e42a432e09c74f004d9451d5d6ec578e57763f347c17deefdac0d9d594e094d2"
+}

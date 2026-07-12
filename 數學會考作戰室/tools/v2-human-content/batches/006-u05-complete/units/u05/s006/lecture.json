@@ -1,0 +1,244 @@
+{
+  "lectureId": "u05-s006-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-coordinate-ops",
+  "skillId": "coordinate-horizontal-vertical-distance",
+  "lockedTitle": "水平距離與垂直距離",
+  "title": "水平距離與垂直距離：同一方向只看一個坐標差",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能判斷兩點是否水平或垂直對齊。",
+    "能計算同 y 兩點的水平距離。",
+    "能計算同 x 兩點的垂直距離。",
+    "能由距離條件找可能坐標。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-translation",
+      "requiredLevel": "能說明並正確使用「點的平移」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "水平對齊",
+      "definition": "兩點的 y 坐標相同。"
+    },
+    {
+      "term": "垂直對齊",
+      "definition": "兩點的 x 坐標相同。"
+    },
+    {
+      "term": "水平距離",
+      "definition": "同 y 兩點的 |x1-x2|。"
+    },
+    {
+      "term": "垂直距離",
+      "definition": "同 x 兩點的 |y1-y2|。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "|x1-x2|",
+      "meaning": "兩個橫坐標的非負差。"
+    },
+    {
+      "symbol": "|y1-y2|",
+      "meaning": "兩個縱坐標的非負差。"
+    },
+    {
+      "symbol": "同 y",
+      "meaning": "兩點位於同一條水平線。"
+    },
+    {
+      "symbol": "同 x",
+      "meaning": "兩點位於同一條垂直線。"
+    }
+  ],
+  "conceptNarrative": [
+    "距離描述長度，所以不因計算順序而成負數。",
+    "水平線上 y 不變，真正需要比較的是 x；垂直線上 x 不變，真正需要比較的是 y。",
+    "本節只處理水平或垂直距離，不需要一般兩點距離的根號公式。",
+    "若只知到某點的水平距離，通常在左右兩側各有一個可能位置。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "水平距離",
+      "statement": "若 A=(x1,y)、B=(x2,y)，則 AB=|x1-x2|。"
+    },
+    {
+      "name": "垂直距離",
+      "statement": "若 A=(x,y1)、B=(x,y2)，則 AB=|y1-y2|。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "d水平=|x1-x2|",
+      "conditions": [
+        "兩點 y 相同"
+      ],
+      "meaning": "水平方向的坐標差。"
+    },
+    {
+      "formula": "d垂直=|y1-y2|",
+      "conditions": [
+        "兩點 x 相同"
+      ],
+      "meaning": "垂直方向的坐標差。"
+    }
+  ],
+  "nonApplicableCases": [
+    "兩點既不同 x 又不同 y 時，不可稱其連線為水平或垂直距離。",
+    "距離不能保留負號。",
+    "同 y 不是比較 y 的差。",
+    "由距離反推坐標時要考慮左右或上下兩種可能。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先檢查是否同 x 或同 y。",
+      "check": "線段究竟水平還是垂直？"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇要比較的分量。",
+      "check": "水平看 x，垂直看 y。"
+    },
+    {
+      "step": 3,
+      "instruction": "相減並取絕對值。",
+      "check": "答案是否非負？"
+    },
+    {
+      "step": 4,
+      "instruction": "若反推，建立兩側可能。",
+      "check": "是否漏掉正負兩個方向？"
+    },
+    {
+      "step": 5,
+      "instruction": "以移動步數驗算。",
+      "check": "從一點走該距離能到另一點嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "A=(-3,4)、B=(5,4) 的距離。",
+      "solutionSteps": [
+        "兩點同 y，線段水平。",
+        "|-3-5|=8。"
+      ],
+      "answer": "8 單位。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "C=(2,-6)、D=(2,1) 的距離。",
+      "solutionSteps": [
+        "兩點同 x，線段垂直。",
+        "|-6-1|=7。"
+      ],
+      "answer": "7 單位。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "E=(a,3) 與 F=(7,3) 相距 4，求 a。",
+      "solutionSteps": [
+        "|a-7|=4。",
+        "a=11 或 3。"
+      ],
+      "answer": "a=3 或 11。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "G=(-5,b) 與 H=(-5,-2) 垂直距離為 6。",
+      "solutionSteps": [
+        "|b+2|=6。",
+        "b=4 或 -8。"
+      ],
+      "answer": "b=4 或 -8。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "同 y 時用 |y1-y2|。",
+      "why": "把不變分量拿來相減。",
+      "correction": "水平距離應比較 x。"
+    },
+    {
+      "mistake": "計算 -3-5=-8 就作答。",
+      "why": "忘記距離非負。",
+      "correction": "取絕對值得 8。"
+    },
+    {
+      "mistake": "由 |a-7|=4 只得 a=11。",
+      "why": "只考慮右側。",
+      "correction": "還要有左側 a=3。"
+    },
+    {
+      "mistake": "兩點斜向仍直接用單一坐標差。",
+      "why": "未檢查對齊條件。",
+      "correction": "本節公式只適用同 x 或同 y。"
+    },
+    {
+      "mistake": "把坐標差當成坐標。",
+      "why": "混淆位置與長度。",
+      "correction": "答案是單一非負長度，不寫成有序數對。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認同 x 或同 y？",
+    "水平是否只比較 x？",
+    "距離是否取絕對值？",
+    "反推時是否考慮兩側？"
+  ],
+  "summary": [
+    "同 y 求水平距離 |x1-x2|。",
+    "同 x 求垂直距離 |y1-y2|。",
+    "距離永遠非負。",
+    "反推距離常有兩個位置。"
+  ],
+  "connections": {
+    "previous": "承接點的平移，可把距離視為需要移動的單位數。",
+    "next": [
+      "下一節用水平距離與垂直距離求長方形邊長。",
+      "不引入高中解析幾何的一般距離公式。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s006-v001",
+      "u05-s006-v002",
+      "u05-s006-v003",
+      "u05-s006-v004",
+      "u05-s006-v005",
+      "u05-s006-v006",
+      "u05-s006-v007",
+      "u05-s006-v008",
+      "u05-s006-v009",
+      "u05-s006-v010",
+      "u05-s006-v011",
+      "u05-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s006-cr001",
+      "u05-s006-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "逐題檢查同 x、同 y 的前提及絕對值；兩個反推例題均列出左右或上下兩解，並確認未誤用一般斜距公式。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "c7ed021c3a5724c39f4a3c73f4457bd5575eb1b88199c58f84ce0db3bc476f5e"
+}

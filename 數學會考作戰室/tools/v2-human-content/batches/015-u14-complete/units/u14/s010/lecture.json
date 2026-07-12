@@ -1,0 +1,258 @@
+{
+  "lectureId": "u14-s010-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-series",
+  "skillId": "arithmetic-series-word",
+  "lockedTitle": "等差級數應用",
+  "title": "等差級數應用：從情境找首項和增量與項數",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把逐期固定增加或減少的情境轉成等差數列。",
+    "能辨認總量問題需要級數而非末項。",
+    "能處理座位、存款、堆疊與每日累積。",
+    "能保留實際單位並解釋答案。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "arithmetic-series-sum",
+      "title": "等差級數和",
+      "requiredLevel": "能說明「等差級數和」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "逐期量",
+      "definition": "每一列、每天、每月或每層的單次數量。"
+    },
+    {
+      "term": "累積量",
+      "definition": "多期逐期量相加的總數。"
+    },
+    {
+      "term": "期數",
+      "definition": "總共有幾列、幾天或幾層。"
+    },
+    {
+      "term": "固定增量",
+      "definition": "每一期比前一期增加或減少的固定量。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a_1",
+      "meaning": "第一期的量。"
+    },
+    {
+      "symbol": "d",
+      "meaning": "每增加一期的固定變化。"
+    },
+    {
+      "symbol": "S_n",
+      "meaning": "前n期累積量。"
+    }
+  ],
+  "conceptNarrative": [
+    "情境題最常見錯誤是算出最後一列卻把它當總數。",
+    "題目若問「共多少」通常需要相加；若問「第幾列有多少」只求單項。",
+    "單位也能幫助判斷：每列座位數是「個」，總座位仍是「個」，但過程要說明累積。",
+    "若每期減少，公差為負；只要各期仍符合題意，等差和公式照樣適用。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等差應用模型",
+      "statement": "逐期量形成等差數列且要求某項或總和。"
+    },
+    {
+      "name": "累積判斷",
+      "statement": "辨認是否要把每一期全部相加。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a_n=a_1+(n-1)d",
+      "conditions": [
+        "求第n期單次量"
+      ],
+      "meaning": "末期或特定期。"
+    },
+    {
+      "formula": "S_n=n(a_1+a_n)/2",
+      "conditions": [
+        "求前n期總量"
+      ],
+      "meaning": "累積總和。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只給平均增加但每期不固定時不能直接視為等差。",
+    "題目問末期量時不需計算S_n。",
+    "期數不一定等於末項數值。",
+    "實際情境若出現負數量，需檢查模型適用範圍。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出每一期的單次量",
+      "check": "確認單位。"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷是否固定增加或減少",
+      "check": "找a_1與d。"
+    },
+    {
+      "step": 3,
+      "instruction": "確定問單項或總和",
+      "check": "看「第幾」或「共」。"
+    },
+    {
+      "step": 4,
+      "instruction": "求a_n與S_n",
+      "check": "依需求選公式。"
+    },
+    {
+      "step": 5,
+      "instruction": "用情境語句回答",
+      "check": "附單位與範圍。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "劇院第1排16席，每排多3席，共12排",
+      "reasoning": "a_12=49。",
+      "solutionSteps": [
+        "a_12=49。",
+        "S_12=12×65÷2。"
+      ],
+      "answer": "390席"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "第一週存200元，以後每週多存50元，共8週",
+      "reasoning": "a_8=550。",
+      "solutionSteps": [
+        "a_8=550。",
+        "S_8=8×750÷2。"
+      ],
+      "answer": "3000元"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "最上層40箱，每層少4箱，共7層",
+      "reasoning": "a_7=16。",
+      "solutionSteps": [
+        "a_7=16。",
+        "S_7=7×56÷2。"
+      ],
+      "answer": "196箱"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "跑步第1天1.5公里，每天多0.5公里，第10天",
+      "reasoning": "只問單日。",
+      "solutionSteps": [
+        "只問單日。",
+        "a_10=1.5+9×0.5。"
+      ],
+      "answer": "6公里"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "問總量卻只求a_n",
+      "why": "末期量不是累積。",
+      "correction": "看到「共」列出加法。"
+    },
+    {
+      "mistake": "問單一期卻求S_n",
+      "why": "多算前面各期。",
+      "correction": "先寫目標單位。"
+    },
+    {
+      "mistake": "公差單位省略",
+      "why": "難以解釋每期變化。",
+      "correction": "寫「每排多3席」。"
+    },
+    {
+      "mistake": "第一期到第n期算n次增量",
+      "why": "多走一步。",
+      "correction": "使用n-1。"
+    },
+    {
+      "mistake": "減少情境仍把d寫正",
+      "why": "末項方向錯。",
+      "correction": "後項減前項。"
+    },
+    {
+      "mistake": "得到負數量仍接受",
+      "why": "模型已超出實際範圍。",
+      "correction": "檢查所有期數可行。"
+    }
+  ],
+  "selfCheck": [
+    "題目問單項還是累積？",
+    "a_1、d、n各代表什麼實際量？",
+    "從第一期到第n期有幾次變化？",
+    "單位是否一致？",
+    "答案在情境中是否可能？"
+  ],
+  "summary": [
+    "情境先辨認逐期量與累積量。",
+    "固定增減形成等差數列。",
+    "問第n期用a_n，問總量用S_n。",
+    "答案要附單位並檢查可行性。"
+  ],
+  "connections": {
+    "previous": "直接運用等差級數和公式。",
+    "next": [
+      "級數求和應用會由總和反推期數或末項。",
+      "數列素養題會混合表格、限制與方案比較。"
+    ]
+  },
+  "figureReferences": [
+    "u14-fig-s010-panel-rows"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s010-v001",
+      "u14-s010-v002",
+      "u14-s010-v003",
+      "u14-s010-v004",
+      "u14-s010-v005",
+      "u14-s010-v006",
+      "u14-s010-v007",
+      "u14-s010-v008",
+      "u14-s010-v009",
+      "u14-s010-v010",
+      "u14-s010-v011",
+      "u14-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s010-cr001",
+      "u14-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「等差級數應用」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "f1146095be09231653d0dd13f60fa133bdb0a0af5b93ed67c81e396e46d6ba54"
+}

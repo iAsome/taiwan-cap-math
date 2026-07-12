@@ -1,0 +1,253 @@
+{
+  "lectureId": "u11-s006-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-square-root",
+  "skillId": "sqrt-perfect-square",
+  "lockedSkillOrder": 6,
+  "lockedTitle": "完全平方數平方根",
+  "title": "完全平方數平方根：建立平方表與邊界感",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能熟練1²至30²中的常用值",
+    "能判定整數是否為完全平方數",
+    "能處理區間、計數與邊界問題"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "sqrt-notation",
+      "requiredLevel": "能使用前一技能「平方根記號」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "完全平方數",
+      "definition": "可寫成整數平方的非負整數。"
+    },
+    {
+      "term": "平方表",
+      "definition": "整數與其平方的對照。"
+    },
+    {
+      "term": "底數",
+      "definition": "平方運算中被乘兩次的數。"
+    },
+    {
+      "term": "平方數區間",
+      "definition": "由相鄰底數平方形成的範圍。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "n²",
+      "meaning": "n×n。"
+    },
+    {
+      "symbol": "√(n²)=|n|",
+      "meaning": "n為整數時仍取非負值。"
+    }
+  ],
+  "conceptNarrative": [
+    "熟記平方數能加速根式化簡、估算與畢氏數組辨識。",
+    "判斷一個正整數是否為完全平方數，可找其平方根是否為整數。",
+    "區間計數時應轉成底數範圍，特別注意是否包含端點。",
+    "0=0²也是完全平方數，但「正完全平方數」不包含0。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "完全平方數",
+      "statement": "存在整數n使N=n²。"
+    },
+    {
+      "name": "正完全平方數",
+      "statement": "n≠0時的n²。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "1²,2²,…",
+      "conditions": [
+        "常用表至少熟悉至20²。"
+      ],
+      "meaning": "用於快速判定與估算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "偶數不一定是完全平方數。",
+    "完全平方數不只由正整數平方得到，負整數平方相同。",
+    "題目說1到100時不能算入0。",
+    "小於與小於等於的邊界不可混淆。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先判斷問題是求平方、開平方或計數。",
+      "check": "不要把平方當乘2。"
+    },
+    {
+      "step": 2,
+      "instruction": "列出附近底數。",
+      "check": "用平方表定位。"
+    },
+    {
+      "step": 3,
+      "instruction": "檢查端點是否包含。",
+      "check": "看清「介於」「含」等詞。"
+    },
+    {
+      "step": 4,
+      "instruction": "若為實際長度，取正平方根。",
+      "check": "底數可能正負但長度非負。"
+    },
+    {
+      "step": 5,
+      "instruction": "以乘法驗算。",
+      "check": "n×n應回到原數。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "求17²。",
+      "solutionSteps": [
+        "17×17=289。"
+      ],
+      "answer": "289。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "判斷196是否完全平方數。",
+      "solutionSteps": [
+        "14²=196。"
+      ],
+      "answer": "是。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "找小於200的最大完全平方數。",
+      "solutionSteps": [
+        "14²=196。",
+        "15²=225超過。"
+      ],
+      "answer": "196。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "計數50到150間的完全平方數。",
+      "solutionSteps": [
+        "8²=64至12²=144。",
+        "底數8,9,10,11,12。"
+      ],
+      "answer": "5個。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "15²=30。",
+      "why": "把平方當乘2。",
+      "correction": "15²=225。"
+    },
+    {
+      "mistake": "所有偶數都是平方數。",
+      "why": "只看奇偶性不足。",
+      "correction": "檢查整數平方根。"
+    },
+    {
+      "mistake": "√144=±12。",
+      "why": "根號是主平方根。",
+      "correction": "√144=12。"
+    },
+    {
+      "mistake": "1到100有11個正平方數。",
+      "why": "錯把0算入。",
+      "correction": "1²到10²共10個。"
+    },
+    {
+      "mistake": "小於81仍包含81。",
+      "why": "忽略嚴格不等式。",
+      "correction": "最大應看8²=64。"
+    },
+    {
+      "mistake": "只背平方表不驗算陌生數。",
+      "why": "記憶可能錯位。",
+      "correction": "用鄰近平方或乘法確認。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "完全平方數是整數平方。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "先判斷問題是求平方、開平方或計數。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "15²=30。；修正：15²=225。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "實際量是否只取正值？"
+    }
+  ],
+  "summary": [
+    "完全平方數是整數平方。",
+    "區間問題轉成底數區間最穩定。"
+  ],
+  "connections": {
+    "previous": "需要 s005 的主平方根記號。",
+    "next": [
+      "s007 有理化會使用根式平方。",
+      "s008 比較與畢氏定理都依賴平方表。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s006-v001",
+      "u11-s006-v002",
+      "u11-s006-v003",
+      "u11-s006-v004",
+      "u11-s006-v005",
+      "u11-s006-v006",
+      "u11-s006-v007",
+      "u11-s006-v008",
+      "u11-s006-v009",
+      "u11-s006-v010",
+      "u11-s006-v011",
+      "u11-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s006-cr001",
+      "u11-s006-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「完全平方數平方根」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「15²=30。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "f1e37e0cd5622a82997140c14f4e5fd120125cda030b8c5da13cb63390213ec6"
+}

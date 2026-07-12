@@ -1,0 +1,158 @@
+{
+  "unitId": "u19",
+  "auditVersion": "u19-final-human-audit-r1.1-central",
+  "reviewedAt": "2026-07-12",
+  "manualInspectionScope": {
+    "lectures": 18,
+    "mcQuestions": 216,
+    "constructedResponses": 36,
+    "figures": 18
+  },
+  "checks": [
+    "負號與括號",
+    "分數與π",
+    "平方與根式",
+    "角度與優劣弧",
+    "長度和面積單位",
+    "幾何正值與端點",
+    "進階題推理深度",
+    "素養情境必要性",
+    "未使用未來單元知識"
+  ],
+  "actualIssuesFoundAndRepaired": [
+    {
+      "issueId": "U19-AUDIT-001",
+      "item": "u19-s003-v007",
+      "problem": "儲存正確答案原為70°，但逐步重算由兩組對角互補得到110°。",
+      "repair": "將答案改為110°，重寫三個干擾項理由並回代檢查B+D=180°。"
+    },
+    {
+      "issueId": "U19-AUDIT-002",
+      "item": "u19-s003-v008",
+      "problem": "題目資料重算得到y=85°，原正確答案欄為75°。",
+      "repair": "將正確答案改為85°並重寫解答，驗證95°+85°=180°。"
+    },
+    {
+      "issueId": "U19-AUDIT-003",
+      "item": "u19-s004-v008",
+      "problem": "270°弧與90°弧長差為πr，原答案欄錯填5。",
+      "repair": "修正為r=10，並以差占半圓周重新推導。"
+    },
+    {
+      "issueId": "U19-AUDIT-004",
+      "item": "u19-s007-v007",
+      "problem": "原代數係數導致x=370/7且較小角不符合預期的整潔CAP題型。",
+      "repair": "重寫反角式為(4x+20)°，得到x=55與較小角120°，保留同一能力但消除不良資料。"
+    },
+    {
+      "issueId": "U19-AUDIT-005",
+      "item": "u19-s014-v007",
+      "problem": "逐角比較得到正確周長變化為減少16−4π，原選項未包含。",
+      "repair": "重寫題幹為詢問減少量，加入正確選項16−4π並逐角驗證。"
+    },
+    {
+      "issueId": "U19-AUDIT-006",
+      "item": "u19-s016-fig001",
+      "problem": "人工檢視發現切線與半徑圖把 OT、TP 與 OP 畫成同一直線，未呈現切點垂直關係。",
+      "repair": "改成 OT 水平、PT 垂直，保留 T 點直角符號並以斜線連接 OP，重新檢查切點、標籤與答案洩漏。"
+    },
+    {
+      "issueId": "U19-AUDIT-007",
+      "item": "u19-s012-v003",
+      "problem": "單元內近似題掃描發現此題與 u19-s012-v001 僅更換半徑與角度數字，測量結構過度相同。",
+      "repair": "重寫為由兩半徑總長與四分之一圓弧條件重建完整周長，保留技能但改變資訊呈現與推理入口。"
+    },
+    {
+      "issueId": "U19-AUDIT-008",
+      "item": "figures/u19/*.svg",
+      "problem": "首次實際渲染時，原字型 fallback 未命中環境中的繁中文字型，部分中文標籤顯示為方框。",
+      "repair": "在全部 SVG 樣式最前加入 Noto Sans CJK TC，重新渲染18張圖並確認繁體中文標籤可讀。"
+    },
+    {
+      "issueId": "U19-AUDIT-009",
+      "item": "u19-s017-fig001",
+      "problem": "兩條標示為切線的線段端點未精確落在半徑垂直位置，幾何座標不足以表示真正切線。",
+      "repair": "依外點與圓的切點座標重新計算 A、B，使 OA⊥PA、OB⊥PB，並保留等長刻痕。"
+    },
+    {
+      "issueId": "U19-AUDIT-010",
+      "item": "u19-s003-fig001 and u19-s005-fig001",
+      "problem": "實際渲染發現部分內接點與弦端點相對圓周有可見偏移，可能誤導點在圓內或圓外。",
+      "repair": "調整內接四邊形四頂點與等弦端點座標，使各點貼合圓周且等弦長度一致，再重新渲染檢查。"
+    },
+    {
+      "issueId": "U19-AUDIT-011",
+      "item": "u19-s002/u19-s004/u19-s006/u19-s008/u19-s013 figures",
+      "problem": "第二次渲染發現弧名、弧長、L 與面積公式標籤貼住粗弧或圓周，縮小顯示時可讀性不足。",
+      "repair": "將標籤移到弧線外側或圓下方的留白區，保持360×240畫布內完整顯示，再完成第三次渲染檢查。"
+    },
+    {
+      "issueId": "U19-CENTRAL-001",
+      "items": [
+        "u19-s004-v004",
+        "u19-s008-v001",
+        "u19-s008-v002",
+        "u19-s008-v003"
+      ],
+      "problem": "弧長與弧長公式兩個 skills 之間存在直接代值與只換數字的同型題。",
+      "repair": "將 s008 的三題改為列式診斷、圓周比例反推，以及直徑半徑和單位錯誤診斷。"
+    },
+    {
+      "issueId": "U19-CENTRAL-002",
+      "items": [
+        "u19-s002-v001",
+        "u19-s002-v003",
+        "u19-s007-v001",
+        "u19-s007-v003"
+      ],
+      "problem": "弧與角以及圓心角與弧的基礎題都直接重複圓心角等於弧、優劣互補。",
+      "repair": "將 s007 改為整圓三區分割與反角辨認，保留技能邊界但改變推理入口。"
+    },
+    {
+      "issueId": "U19-CENTRAL-003",
+      "items": [
+        "u19-s003-v001",
+        "u19-s003-v002",
+        "u19-s009-v002",
+        "u19-s009-v003"
+      ],
+      "problem": "圓內接四邊形與內接角應用出現只換角度的對角互補題，以及和圓周角定理重複的同弧等角題。",
+      "repair": "改為辨認對角、辨認直徑所對的兩個直角，以及結合直徑、三角形內角和與同弧倍角的三步推理。"
+    },
+    {
+      "issueId": "U19-CENTRAL-004",
+      "items": [
+        "u19-s010-v010",
+        "u19-s018-v002",
+        "u19-s004-v011",
+        "u19-s018-v003"
+      ],
+      "problem": "圓素養題重複使用完全相同的 6 m、120° 灑水器，以及半徑 20 m 半圓跑道。",
+      "repair": "改為有 60° 遮蔽的 300° 可用灑水模型，以及直徑 40 m、巡查四分之三圈的圓周比例模型。"
+    },
+    {
+      "issueId": "U19-CENTRAL-005",
+      "items": [
+        "u19-s006-v003",
+        "u19-s006-v011",
+        "u19-s008-v004",
+        "u19-s010-v004"
+      ],
+      "problem": "素養題只是把直徑所對直角加上拱橋背景，且弧長與扇形面積逆推題使用近乎相同資料和選項。",
+      "repair": "拱橋題加入支架長度並使用畢氏定理；扇形面積題改為由面積占比反推中心角。"
+    }
+  ],
+  "remainingKnownUnitIssues": [],
+  "legacyContentUsed": false,
+  "crossUnitDuplicateScanPending": true,
+  "decision": "central-approved-for-authoring-branch-staging",
+  "crossUnitCandidateScan": {
+    "comparedUnits": "U01-U18 and U20-U23 centrally approved package candidates",
+    "mcExactOrNumberSwapMatches": 0,
+    "mcHighSimilarityMatchesAt82PercentOrHigher": 0,
+    "constructedResponseExactOrNumberSwapMatches": 0,
+    "constructedResponseHighSimilarityMatchesAt85PercentOrHigher": 0,
+    "lectureHighSimilarityMatchesAt75PercentOrHigher": 0,
+    "finalIntegratedScanStillRequired": true
+  }
+}

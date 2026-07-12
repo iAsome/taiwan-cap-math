@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U15 lecture",
+  "type": "object",
+  "required": [
+    "lectureId",
+    "unitId",
+    "skillId",
+    "learningGoals",
+    "conceptDevelopment",
+    "workedExamples",
+    "commonMistakes",
+    "lectureReview",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    "unitId": {
+      "const": "u15"
+    },
+    "contentSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

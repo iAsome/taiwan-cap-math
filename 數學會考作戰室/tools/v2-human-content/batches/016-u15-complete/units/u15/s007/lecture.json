@@ -1,0 +1,151 @@
+{
+  "lectureId": "u15-s007-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-graphs",
+  "skillId": "linear-function-graph",
+  "skillSlot": "s007",
+  "skillTitle": "線型函數圖形",
+  "order": 7,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": "function-table-graph",
+      "title": "函數表與圖形",
+      "requiredLevel": "能在表格與坐標圖之間轉換，正確把一列 x、y 資料畫成點，並理解垂直線檢驗。",
+      "bridge": "當表格中的輸出以固定變化量隨輸入改變，這些點會落在直線上；本節建立線型函數公式、點與直線之間的連結。"
+    }
+  ],
+  "learningGoals": [
+    "辨認 y=ax+b 的直線圖形",
+    "由點或圖形求線型規則",
+    "判斷遞增、遞減、水平與交點"
+  ],
+  "vocabulary": [
+    {
+      "term": "線型函數",
+      "meaning": "可寫成 y=ax+b 的函數"
+    },
+    {
+      "term": "直線",
+      "meaning": "線型函數在坐標平面的圖形"
+    },
+    {
+      "term": "截距",
+      "meaning": "直線與坐標軸相交時的坐標資訊"
+    }
+  ],
+  "conceptDevelopment": [
+    "線型函數 y=ax+b 的圖形是一條直線。只要找到兩個不同 x 的點，就能確定直線；但畫圖時仍要延伸並標明刻度。",
+    "a>0 時向右上升，a<0 時向右下降，a=0 時是水平線。b 是 x=0 時的 y 值，也就是 y 軸截距。"
+  ],
+  "definitionsAndMeaning": "線型函數 y=ax+b 的圖形是一條直線。只要找到兩個不同 x 的點，就能確定直線；但畫圖時仍要延伸並標明刻度。",
+  "formulasAndConditions": [
+    "y=ax+b。",
+    "兩點變化率 a=(y₂-y₁)/(x₂-x₁)，x₂≠x₁。",
+    "把任一點代回 y=ax+b 可求 b。"
+  ],
+  "invalidUseCases": [
+    "用單一點就宣稱唯一決定直線。",
+    "斜率分子分母順序不一致。",
+    "把 b 看成 x 軸截距。"
+  ],
+  "stepByStepMethod": [
+    "從公式或資料取得兩個不同 x 的點。",
+    "正確標出兩點並連成直線。",
+    "用變化率檢查方向與陡峭程度。",
+    "用 x=0 檢查 y 軸截距。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s007-ex01",
+      "title": "公式找點",
+      "prompt": "要畫 y=2x+1，先取 x=0 與 x=1。求兩個對應點，並說明如何以它們畫出直線。",
+      "solution": "y=2x+1 可取 (0,1)、(1,3)。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s007-ex02",
+      "title": "兩點求式",
+      "prompt": "一直線通過 (0,-1) 與 (2,5)。求斜率與線型函數式。",
+      "solution": "過 (0,-1)、(2,5)，斜率 3，所以 y=3x-1。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s007-ex03",
+      "title": "交點",
+      "prompt": "兩直線 y=2x+1 與 y=-x+7 相交。聯立求交點，並解釋交點的函數意義。",
+      "solution": "y=2x+1 與 y=-x+7 聯立得 x=2、y=5，交點 (2,5)。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s007-ex04",
+      "title": "水平線",
+      "prompt": "函數 y=4 的圖形為何是水平線？把它寫成 y=ax+b 並指出斜率。",
+      "solution": "y=4 可寫成 y=0x+4，是線型函數的水平圖形。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s007-m01",
+      "wrongReasoning": "把 y 軸截距寫成 (b,0)。",
+      "correction": "y 軸上的點一定有 x=0，所以 y 軸截距 b 對應點是 (0,b)，不是 (b,0)。"
+    },
+    {
+      "mistakeId": "s007-m02",
+      "wrongReasoning": "只畫線段卻未說明定義域限制。",
+      "correction": "若定義域沒有端點限制，線型函數圖形應向兩端延伸；只有情境或區間明示時才畫有限線段。"
+    },
+    {
+      "mistakeId": "s007-m03",
+      "wrongReasoning": "算斜率時只減 y 不減 x。",
+      "correction": "斜率必須是 (y₂-y₁)/(x₂-x₁)，分子與分母使用同一點次序，不能只計算 y 的差。"
+    },
+    {
+      "mistakeId": "s007-m04",
+      "wrongReasoning": "負斜率仍畫成向右上升。",
+      "correction": "斜率 a<0 表示 x 向右增加時 y 下降；作圖可從一點向右走正的 Δx、再向下走負的 Δy。"
+    },
+    {
+      "mistakeId": "s007-m05",
+      "wrongReasoning": "求交點只求 x 未回代 y。",
+      "correction": "聯立後先得 x 坐標，還要代回任一原式求 y；交點答案須寫完整序對 (x,y)。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "y=-2x+3 的圖形向右上升或下降？",
+      "answer": "下降。"
+    },
+    {
+      "prompt": "y=5 的斜率？",
+      "answer": "0"
+    },
+    {
+      "prompt": "過 (0,2)、(1,5) 的斜率？",
+      "answer": "3"
+    }
+  ],
+  "summary": "線型函數圖形由斜率控制方向，截距決定直線在 y 軸的位置。",
+  "previousSkillConnection": "function-table-graph",
+  "nextSkillConnection": "linear-function-slope-intercept",
+  "figureRefs": [
+    "u15-fig-linear-basic"
+  ],
+  "accessibilityNotes": [
+    "圖形 u15-fig-linear-basic 另附繁體中文替代文字與不按比例警告。"
+  ],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「線型函數圖形」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能以自己的話說明「函數表與圖形」並完成基本判斷或計算。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "478e6dcc87f4d638e1ea29ffd220e81d7490164fd4cf46b31514f314b9b9041d"
+}

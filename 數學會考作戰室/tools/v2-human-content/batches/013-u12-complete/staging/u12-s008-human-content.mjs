@@ -1,0 +1,1669 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u12-s008-lecture-r1",
+  "unitId": "u12",
+  "numericUnitId": 12,
+  "topicId": "u12-applications",
+  "skillId": "factoring-check-expand",
+  "lockedSkillTitle": "分解後展開檢查",
+  "title": "分解後展開檢查：比對每一個係數才算驗證",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能完整展開兩個一次式。",
+    "能逐項比對二次項、一次項與常數項。",
+    "能找出候選分解的第一處錯誤。",
+    "能說明單點代入不足以證明恆等。",
+    "能利用係數關係補出未知數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "factoring-application",
+      "requiredLevel": "能運用前一技能並以展開驗證結果；本講義會重新連接必要步驟。"
+    }
+  ],
+  "prerequisiteBridge": "先備技能為 factoring-application；先確認能完成前一方法並保留所有符號，再進入本技能。",
+  "glossary": [
+    {
+      "term": "候選分解",
+      "definition": "尚未確認正確的乘積形式。"
+    },
+    {
+      "term": "係數比對",
+      "definition": "比較同次項前的數字。"
+    },
+    {
+      "term": "反例",
+      "definition": "找一個值使主張不成立。"
+    },
+    {
+      "term": "恆等驗證",
+      "definition": "證明兩式對所有允許值相等。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(ax+b)(cx+d)",
+      "meaning": "展開為 acx^2+(ad+bc)x+bd。"
+    },
+    {
+      "symbol": "≡",
+      "meaning": "表示恆等；本單元可用文字說明，不強制使用此符號。"
+    }
+  ],
+  "conceptNarrative": [
+    "展開檢查要產生完整多項式，再按次方排列。",
+    "二次項、一次項、常數項任何一項不同，候選分解就錯。",
+    "兩式在某一個 x 值相同可能只是巧合，不能證明恆等。",
+    "反例足以推翻錯誤主張，但要證明正確通常需展開或完整係數論證。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "展開檢查",
+      "statement": "用分配律把因式乘積還原，與原多項式逐項比較。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(ax+b)(cx+d)=acx^2+(ad+bc)x+bd",
+      "conditions": [
+        "每個交叉乘積都要保留"
+      ],
+      "meaning": "通用展開。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只檢查首項和常數項不能保證中間項正確。",
+    "只代 x=0 只會檢查常數項。",
+    "排列順序不同不表示不相等，應先合併同類項。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "逐項使用分配律。",
+      "check": "至少列出四個乘積。"
+    },
+    {
+      "step": 2,
+      "instruction": "合併同類項。",
+      "check": "一次項通常來自兩個交叉乘積。"
+    },
+    {
+      "step": 3,
+      "instruction": "按降冪排列。",
+      "check": "方便逐項對照。"
+    },
+    {
+      "step": 4,
+      "instruction": "比較二次、一次與常數係數。",
+      "check": "指出第一處不一致。"
+    },
+    {
+      "step": 5,
+      "instruction": "若有未知係數，建立對應關係。",
+      "check": "再回展確認。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "檢查 (x+2)(x+7)",
+      "solutionSteps": [
+        "四項為 x^2+7x+2x+14。",
+        "合併得 x^2+9x+14。"
+      ],
+      "answer": "x^2+9x+14"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "檢查 (2x-3)(x+4)",
+      "solutionSteps": [
+        "交叉項 8x-3x=5x。"
+      ],
+      "answer": "2x^2+5x-12"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "判斷 (x+1)(x+6) 是否為 x^2+5x+6",
+      "solutionSteps": [
+        "展開一次項係數為 7。",
+        "原式一次項係數為 5。"
+      ],
+      "answer": "不是"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "若 (3x+p)(x-2) 的一次項係數為 -1",
+      "solutionSteps": [
+        "展開一次項為 (p-6)x。",
+        "p-6=-1，所以 p=5。"
+      ],
+      "answer": "p=5"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認單一結構並完成直接分解。",
+    "standard": "結合符號、係數或兩步驟方法。",
+    "advanced": "比較策略、處理參數或驗證限制。",
+    "literacy": "從必要情境建立或解讀乘積結構。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "漏掉一個交叉乘積。",
+      "why": "只乘首尾。",
+      "correction": "列出四個乘積。"
+    },
+    {
+      "mistake": "7x+2x 合成 14x。",
+      "why": "把加法當乘法。",
+      "correction": "同類項係數相加為 9x。"
+    },
+    {
+      "mistake": "只看代入 x=0。",
+      "why": "只驗證常數。",
+      "correction": "需比所有係數。"
+    },
+    {
+      "mistake": "項目順序不同就判錯。",
+      "why": "未先整理。",
+      "correction": "按次方排列。"
+    },
+    {
+      "mistake": "反例值算錯。",
+      "why": "代入未加括號。",
+      "correction": "每個負值都用括號。"
+    },
+    {
+      "mistake": "只說錯但不指出哪項。",
+      "why": "缺乏可修正資訊。",
+      "correction": "指出一次項或常數的差異。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先判斷可用的方法？",
+    "每一項、每個符號與外層因式都保留了嗎？",
+    "我是否把結果展開回原式？",
+    "情境中的單位與變數限制是否合理？"
+  ],
+  "summary": [
+    "展開需保留四個乘積。",
+    "整理後逐項比係數。",
+    "單點代入不能證明恆等，但反例可推翻。"
+  ],
+  "connections": {
+    "previous": "承接 factoring-application。",
+    "next": "依鎖定順序銜接下一技能；本單元不提前使用一元二次方程式解根。"
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u12-s008-v001",
+      "u12-s008-v002",
+      "u12-s008-v003",
+      "u12-s008-v004",
+      "u12-s008-v005",
+      "u12-s008-v006",
+      "u12-s008-v007",
+      "u12-s008-v008",
+      "u12-s008-v009",
+      "u12-s008-v010",
+      "u12-s008-v011",
+      "u12-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u12-s008-cr001",
+      "u12-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "講義中的四個展開均重算四項乘積；錯誤候選與未知係數例分別核對一次項，清楚區分證明與反例。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "b5e88dd67bc47ebdc94cb311a9ad78a7804045d8f9a634ca13796b6d250a5b18"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u12-s008-v001",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "展開 (x+2)(x+5) 的結果為何？",
+    "givenConditions": [
+      "x 為變數。"
+    ],
+    "target": "完整展開並合併一次項。",
+    "choices": [
+      "x²+10",
+      "x²+5x+10",
+      "x²+7x+7",
+      "x²+7x+10"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "每一項係數均由分配律得到。",
+    "explanation": "(x+2)(x+5)=x²+5x+2x+10=x²+7x+10。",
+    "steps": [
+      "列出四個乘積。",
+      "合併 5x 與 2x。",
+      "按降冪排列。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "x²+10",
+        "truth": false,
+        "reason": "漏掉兩個交叉項。"
+      },
+      {
+        "choice": "x²+5x+10",
+        "truth": false,
+        "reason": "只保留一個交叉項。"
+      },
+      {
+        "choice": "x²+7x+7",
+        "truth": false,
+        "reason": "常數應為 2×5=10。"
+      },
+      {
+        "choice": "x²+7x+10",
+        "truth": true,
+        "reason": "交叉項 5x+2x=7x。"
+      }
+    ],
+    "misconceptionTarget": "只乘首項與常數。",
+    "prerequisiteCheck": "需會分配律。",
+    "estimatedTimeSec": 60,
+    "unitAndRoundingChecks": "無單位；精確。",
+    "ambiguityAndBoundaryAudit": "無特殊定義域限制。",
+    "difficultyReason": "最基本二項式展開檢查。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "建立展開檢查流程。",
+    "concept": "四項展開",
+    "tags": [
+      "代數",
+      "因式分解",
+      "basic",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "c962ee17ce6badb7727a298b68100fb78f1916e402bb3b7eb924f02553be3c68"
+  },
+  {
+    "questionId": "u12-s008-v002",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "(2x-1)(x+3) 展開後的一次項係數為何？",
+    "givenConditions": [
+      "x 為變數。"
+    ],
+    "target": "只求交叉項合併係數。",
+    "choices": [
+      "6",
+      "5",
+      "-1",
+      "7"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "一次項係數不是一次項本身，因此答案為 5。",
+    "explanation": "展開為 2x²+6x-x-3=2x²+5x-3。",
+    "steps": [
+      "算兩個交叉乘積 6x、-x。",
+      "合併得 5x。",
+      "取係數 5。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "只取 2x·3。"
+      },
+      {
+        "choice": "5",
+        "truth": true,
+        "reason": "6x-x=5x。"
+      },
+      {
+        "choice": "-1",
+        "truth": false,
+        "reason": "只取 -1·x 的係數，漏掉 6x。"
+      },
+      {
+        "choice": "7",
+        "truth": false,
+        "reason": "把 -x 錯當 +x，得到 6+1。"
+      }
+    ],
+    "misconceptionTarget": "只算一個交叉乘積。",
+    "prerequisiteCheck": "需會帶號同類項合併。",
+    "estimatedTimeSec": 60,
+    "unitAndRoundingChecks": "無單位；係數為無單位數。",
+    "ambiguityAndBoundaryAudit": "四選項互異；一次項係數由兩個交叉項相加唯一得到 5。",
+    "difficultyReason": "聚焦中間係數。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "練習交叉項檢查。",
+    "concept": "一次項係數",
+    "tags": [
+      "代數",
+      "因式分解",
+      "basic",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "4d4959566bf58e151cc836f946668702e21ebf71f5c94ab3992834d97914644a"
+  },
+  {
+    "questionId": "u12-s008-v003",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "候選分解 (x+1)(x+4) 是否等於 x²+5x+4？",
+    "givenConditions": [
+      "x 為變數。"
+    ],
+    "target": "展開判斷恆等。",
+    "choices": [
+      "是，因展開恰為 x²+5x+4",
+      "是，但只在 x=0 時成立",
+      "否，中間項應為 4x",
+      "否，常數應為 5"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "不依賴代入特定值。",
+    "explanation": "完整展開後三項係數皆吻合，因此是恆等分解。",
+    "steps": [
+      "展開四項。",
+      "合併一次項。",
+      "逐項比對。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "是，因展開恰為 x²+5x+4",
+        "truth": true,
+        "reason": "x²+4x+x+4=x²+5x+4。"
+      },
+      {
+        "choice": "是，但只在 x=0 時成立",
+        "truth": false,
+        "reason": "展開證明對所有 x 成立。"
+      },
+      {
+        "choice": "否，中間項應為 4x",
+        "truth": false,
+        "reason": "漏掉 x。"
+      },
+      {
+        "choice": "否，常數應為 5",
+        "truth": false,
+        "reason": "1×4=4。"
+      }
+    ],
+    "misconceptionTarget": "只用單點代入或漏交叉項。",
+    "prerequisiteCheck": "需會展開。",
+    "estimatedTimeSec": 75,
+    "unitAndRoundingChecks": "無單位與近似。",
+    "ambiguityAndBoundaryAudit": "「是否等於」按恆等式解讀，展開已證明。",
+    "difficultyReason": "基本候選驗證。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "辨認正確候選分解。",
+    "concept": "恆等驗證",
+    "tags": [
+      "代數",
+      "因式分解",
+      "basic",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "dffa8e306c727704d0ee332da39fe137cafd6299a2e79434b1297ac320e252fc"
+  },
+  {
+    "questionId": "u12-s008-v004",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某生聲稱 (x+2)(x+6)=x²+6x+12。錯在哪一項？",
+    "givenConditions": [
+      "x 為變數。"
+    ],
+    "target": "展開並定位第一次項係數。",
+    "choices": [
+      "二次項應為 2x²",
+      "常數應為 8",
+      "一次項應為 8x",
+      "沒有錯"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "只有一次項寫錯，二次與常數正確。",
+    "explanation": "(x+2)(x+6)=x²+8x+12。",
+    "steps": [
+      "列四個乘積。",
+      "合併 6x+2x。",
+      "比較原聲稱。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "二次項應為 2x²",
+        "truth": false,
+        "reason": "x·x=x²。"
+      },
+      {
+        "choice": "常數應為 8",
+        "truth": false,
+        "reason": "2×6=12。"
+      },
+      {
+        "choice": "一次項應為 8x",
+        "truth": true,
+        "reason": "交叉項 6x+2x=8x。"
+      },
+      {
+        "choice": "沒有錯",
+        "truth": false,
+        "reason": "一次項係數不符。"
+      }
+    ],
+    "misconceptionTarget": "把其中一個括號常數當一次項係數。",
+    "prerequisiteCheck": "需會展開與係數比對。",
+    "estimatedTimeSec": 90,
+    "unitAndRoundingChecks": "無單位。",
+    "ambiguityAndBoundaryAudit": "題目問錯在哪一項，答案唯一。",
+    "difficultyReason": "需精確定位錯誤。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "訓練逐項除錯。",
+    "concept": "係數錯誤定位",
+    "tags": [
+      "代數",
+      "因式分解",
+      "standard",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "44d7916c677133aa134bad9abd3c88b16812aaec3f6572f134fe3d6eb2ffbd6f"
+  },
+  {
+    "questionId": "u12-s008-v005",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "檢查 (3x-2)(x+5) 是否為 3x²+13x-10。判斷何者正確？",
+    "givenConditions": [
+      "x 為變數。"
+    ],
+    "target": "展開候選。",
+    "choices": [
+      "錯，因一次項是 17x",
+      "錯，因常數是 +10",
+      "錯，因首項是 3x",
+      "正確"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "三項完全一致。",
+    "explanation": "(3x-2)(x+5)=3x²+15x-2x-10=3x²+13x-10。",
+    "steps": [
+      "算四項。",
+      "合併一次項。",
+      "比對三係數。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "錯，因一次項是 17x",
+        "truth": false,
+        "reason": "負的 2x 應相減。"
+      },
+      {
+        "choice": "錯，因常數是 +10",
+        "truth": false,
+        "reason": "-2×5=-10。"
+      },
+      {
+        "choice": "錯，因首項是 3x",
+        "truth": false,
+        "reason": "3x·x=3x²。"
+      },
+      {
+        "choice": "正確",
+        "truth": true,
+        "reason": "交叉項 15x-2x=13x，首末項也吻合。"
+      }
+    ],
+    "misconceptionTarget": "負交叉項或負常數乘法錯。",
+    "prerequisiteCheck": "需會帶號乘法。",
+    "estimatedTimeSec": 90,
+    "unitAndRoundingChecks": "無單位；精確。",
+    "ambiguityAndBoundaryAudit": "完整展開證明對所有 x 成立。",
+    "difficultyReason": "包含負號的標準驗證。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "驗證帶負常數因式。",
+    "concept": "帶號展開",
+    "tags": [
+      "代數",
+      "因式分解",
+      "standard",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "3dfe4543a8dacc0508a85ece0c776717696a8fd83ea76c2fa1d05b240df609df"
+  },
+  {
+    "questionId": "u12-s008-v006",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 (2x+p)(x-3)=2x²-x-15，則 p 為何？",
+    "givenConditions": [
+      "p 為常數。"
+    ],
+    "target": "展開並同時比對一次項與常數項。",
+    "choices": [
+      "3",
+      "5",
+      "7",
+      "-5"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "展開得到 2x²+(p-6)x-3p；比對 p-6=-1 可得 p=5，並且 -3p=-15 也成立。",
+    "explanation": "p=5 同時使一次項與常數項符合，不能只檢查其中一個。",
+    "steps": [
+      "展開成 2x²+(p-6)x-3p。",
+      "由一次項 p-6=-1 得 p=5。",
+      "用常數 -3p=-15 回查。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "常數為 -9，且一次係數為 -3。"
+      },
+      {
+        "choice": "5",
+        "truth": true,
+        "reason": "p-6=-1 且 -3p=-15，兩個係數同時吻合。"
+      },
+      {
+        "choice": "7",
+        "truth": false,
+        "reason": "一次項係數為 1，常數為 -21。"
+      },
+      {
+        "choice": "-5",
+        "truth": false,
+        "reason": "常數為 +15，符號不符。"
+      }
+    ],
+    "misconceptionTarget": "只比對一個係數就下結論。",
+    "prerequisiteCheck": "需會係數比對。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingChecks": "無單位。",
+    "ambiguityAndBoundaryAudit": "一次項與常數項給出相同 p=5，條件一致且答案唯一。",
+    "difficultyReason": "要求用多係數交叉檢查。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "用兩個係數驗證參數一致性。",
+    "concept": "參數一致性",
+    "tags": [
+      "代數",
+      "因式分解",
+      "standard",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "65b8852107875e8a9ce01d2ccebdfaa9657eeee57b4ea6ada7788bf5fd67ad64"
+  },
+  {
+    "questionId": "u12-s008-v007",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "兩式 P=(x+1)(x+6)、Q=x²+7x+6。只代 x=0 得 P=Q，這能否證明兩式恆等？",
+    "givenConditions": [
+      "x 為變數。"
+    ],
+    "target": "評估單點檢查的證明力。",
+    "choices": [
+      "不能；單點相等不足，但完整展開可證明本例確實恆等",
+      "能；任何一點相等就代表恆等",
+      "不能；而且兩式其實不相等",
+      "能；因 x=0 能檢查所有係數"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "答案同時評估方法與事實。",
+    "explanation": "邏輯上單點不足；另行展開 P=x²+7x+6，才能證明本例恆等。",
+    "steps": [
+      "區分「檢查一點」與「證明所有值」。",
+      "舉出單點只驗常數的限制。",
+      "完整展開確認本例。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "不能；單點相等不足，但完整展開可證明本例確實恆等",
+        "truth": true,
+        "reason": "一個代入值只檢查該點，展開 P 才得到 Q。"
+      },
+      {
+        "choice": "能；任何一點相等就代表恆等",
+        "truth": false,
+        "reason": "不同多項式可能在某點相交。"
+      },
+      {
+        "choice": "不能；而且兩式其實不相等",
+        "truth": false,
+        "reason": "展開後確實相等。"
+      },
+      {
+        "choice": "能；因 x=0 能檢查所有係數",
+        "truth": false,
+        "reason": "x=0 只直接檢查常數項。"
+      }
+    ],
+    "misconceptionTarget": "把正確結論誤當成錯誤證明也有效。",
+    "prerequisiteCheck": "需會展開與恆等概念。",
+    "estimatedTimeSec": 120,
+    "unitAndRoundingChecks": "無單位。",
+    "ambiguityAndBoundaryAudit": "題目問證明是否充分，不只是兩式是否相等。",
+    "difficultyReason": "需要理解驗證邏輯。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "區分偶然相等與恆等證明。",
+    "concept": "驗證邏輯",
+    "tags": [
+      "代數",
+      "因式分解",
+      "advanced",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "702bc03170fa5f044fff542061586b7190e0481bb4737f5325c83e80655c840c"
+  },
+  {
+    "questionId": "u12-s008-v008",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某候選分解 R=(2x-3)(x+4)。若原式標成 2x²+6x-12，第一個不一致的係數是哪一個？",
+    "givenConditions": [
+      "按二次、一次、常數項比對。"
+    ],
+    "target": "完整展開並找不一致項。",
+    "choices": [
+      "二次項係數",
+      "常數項",
+      "一次項係數",
+      "沒有不一致"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "只有一次項係數不一致。",
+    "explanation": "展開 R=2x²+8x-3x-12=2x²+5x-12。",
+    "steps": [
+      "展開。",
+      "依次比二次、一次、常數。",
+      "指出一次係數。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "二次項係數",
+        "truth": false,
+        "reason": "皆為 2。"
+      },
+      {
+        "choice": "常數項",
+        "truth": false,
+        "reason": "皆為 -12。"
+      },
+      {
+        "choice": "一次項係數",
+        "truth": true,
+        "reason": "R=2x²+5x-12，二次與常數吻合，一次係數 5≠6。"
+      },
+      {
+        "choice": "沒有不一致",
+        "truth": false,
+        "reason": "一次項不同。"
+      }
+    ],
+    "misconceptionTarget": "看到首尾吻合就停止檢查。",
+    "prerequisiteCheck": "需會完整展開。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingChecks": "無單位；精確。",
+    "ambiguityAndBoundaryAudit": "「第一個」按降冪順序，二次吻合後一次項先出現差異。",
+    "difficultyReason": "需按順序定位單一係數差異。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "建立系統化係數稽核。",
+    "concept": "降冪比對",
+    "tags": [
+      "代數",
+      "因式分解",
+      "advanced",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "58bd534b0c5f2b9dc7463471b2adb9fdb11d31e1f19bf43f69e6b9b133c80742"
+  },
+  {
+    "questionId": "u12-s008-v009",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "針對錯誤主張 (x+2)(x+3)=x²+6x+6，下列哪一項檢查可作為反例直接推翻它？",
+    "givenConditions": [
+      "反例必須給出一個使等式左右不相等的代入值與結果。"
+    ],
+    "target": "辨認足以推翻恆等主張的單一代入檢查。",
+    "choices": [
+      "只比較二次項係數，兩邊都是 1",
+      "只比較常數項，兩邊都是 6",
+      "代入 x=0，兩邊都是 6",
+      "代入 x=1，左邊 12、右邊 13"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "代入 x=1：左式 (1+2)(1+3)=12，右式 1+6+6=13；12≠13，因此這一項是有效反例。",
+    "explanation": "反例必須指出同一個允許值使左右不相等；x=1 時得到 12 與 13，可直接推翻主張。",
+    "steps": [
+      "辨認反例需要左右不等。",
+      "檢查只比係數或代 x=0 都沒有得到不等。",
+      "代 x=1 得 12≠13。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "只比較二次項係數，兩邊都是 1",
+        "truth": false,
+        "reason": "單一係數相同不能排除其他係數不同，也沒有給出左右值不等。"
+      },
+      {
+        "choice": "只比較常數項，兩邊都是 6",
+        "truth": false,
+        "reason": "常數項相同只說明 x=0 時相等，不能推翻主張。"
+      },
+      {
+        "choice": "代入 x=0，兩邊都是 6",
+        "truth": false,
+        "reason": "左右相等的代入結果不是反例。"
+      },
+      {
+        "choice": "代入 x=1，左邊 12、右邊 13",
+        "truth": true,
+        "reason": "同一個 x 值使左右不相等，已足以推翻恆等主張。"
+      }
+    ],
+    "misconceptionTarget": "把局部係數相同或某個代入值相等誤認為已完成恆等驗證。",
+    "prerequisiteCheck": "需會代入與展開。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingChecks": "無單位。",
+    "ambiguityAndBoundaryAudit": "四個選項是不同的檢查行為；只有代入 x=1 產生左右不等，故唯一能作反例。",
+    "difficultyReason": "考查反例，但必須保證唯一。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "區分反例、局部係數比較與無法推翻的相等代入。",
+    "concept": "反例選擇",
+    "tags": [
+      "代數",
+      "因式分解",
+      "advanced",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "be8af815fa8b5de3801a32d961cf40d058c6a18c93903d2335316cbae0f6d224"
+  },
+  {
+    "questionId": "u12-s008-v010",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "試算表把 (n+4)(n+7) 自動展開為 n²+11n+28。審核結果應為何？",
+    "givenConditions": [
+      "n 為資料筆數參數。"
+    ],
+    "target": "檢查自動展開。",
+    "choices": [
+      "不通過，中間項應為 28n",
+      "通過，四項合併後完全一致",
+      "不通過，常數應為 11",
+      "只在 n=1 時通過"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "試算表公式對所有 n 正確。",
+    "explanation": "完整展開證明每個係數皆正確。",
+    "steps": [
+      "列四個乘積。",
+      "合併 7n+4n。",
+      "比對報表。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "不通過，中間項應為 28n",
+        "truth": false,
+        "reason": "把常數乘積當一次係數。"
+      },
+      {
+        "choice": "通過，四項合併後完全一致",
+        "truth": true,
+        "reason": "n²+7n+4n+28=n²+11n+28。"
+      },
+      {
+        "choice": "不通過，常數應為 11",
+        "truth": false,
+        "reason": "把常數和當乘積。"
+      },
+      {
+        "choice": "只在 n=1 時通過",
+        "truth": false,
+        "reason": "展開是恆等式。"
+      }
+    ],
+    "misconceptionTarget": "只用一筆資料代入判斷。",
+    "prerequisiteCheck": "需會展開。",
+    "estimatedTimeSec": 105,
+    "unitAndRoundingChecks": "筆數模型為整數；係數精確。",
+    "ambiguityAndBoundaryAudit": "n 的正整數限制不影響恆等驗證。",
+    "difficultyReason": "情境要求審核軟體展開。",
+    "literacyContextNecessity": "自動報表可能因交叉項錯誤而影響所有資料，必須做恆等檢查。",
+    "authoringIntent": "審核試算表公式。",
+    "concept": "公式稽核",
+    "tags": [
+      "代數",
+      "因式分解",
+      "literacy",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "81b249839db5f2598cdc7205fb59b4d8b988b63f211123fb354e6bcd4d3eb0c4"
+  },
+  {
+    "questionId": "u12-s008-v011",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "建築估算程式聲稱 (3x+2)(x-5)=3x²-13x-10。哪個檢查最能直接證實？",
+    "givenConditions": [
+      "x 為尺寸參數。"
+    ],
+    "target": "完整展開並比係數。",
+    "choices": [
+      "計算 3x²-15x+2x-10，合併為 3x²-13x-10",
+      "只代 x=0，兩邊都是 -10",
+      "只比較首項 3x²",
+      "只比較常數 -10"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "每個係數吻合，所以程式公式正確。",
+    "explanation": "分配律完整展開是直接的恆等證明。",
+    "steps": [
+      "寫四項乘積。",
+      "合併 -15x+2x。",
+      "逐項比對。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "計算 3x²-15x+2x-10，合併為 3x²-13x-10",
+        "truth": true,
+        "reason": "四個乘積完整吻合。"
+      },
+      {
+        "choice": "只代 x=0，兩邊都是 -10",
+        "truth": false,
+        "reason": "只能檢查一個值，不能直接證實恆等。"
+      },
+      {
+        "choice": "只比較首項 3x²",
+        "truth": false,
+        "reason": "漏一次與常數項。"
+      },
+      {
+        "choice": "只比較常數 -10",
+        "truth": false,
+        "reason": "同樣不足。"
+      }
+    ],
+    "misconceptionTarget": "把部分係數或單點檢查當完整證明。",
+    "prerequisiteCheck": "需會展開與證明。",
+    "estimatedTimeSec": 120,
+    "unitAndRoundingChecks": "若 x 為公尺，各項代表相應模型量；無近似。",
+    "ambiguityAndBoundaryAudit": "題目問「最能直接證實」，完整展開唯一充分。",
+    "difficultyReason": "選擇最充分驗證方式。",
+    "literacyContextNecessity": "工程估算程式需要對所有尺寸有效，不能只測單一輸入。",
+    "authoringIntent": "選擇可靠軟體驗證。",
+    "concept": "程式公式驗證",
+    "tags": [
+      "代數",
+      "因式分解",
+      "literacy",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "a5348c692c9aa344741f4073f03d46051a7813bc67fa227c786161ba484fdc98"
+  },
+  {
+    "questionId": "u12-s008-v012",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某包裝模型原式為 2p²+7p+3，系統候選分解為 (2p+3)(p+1)。系統應標記哪個係數不符？",
+    "givenConditions": [
+      "p 為正整數。"
+    ],
+    "target": "展開候選並比對。",
+    "choices": [
+      "二次項係數",
+      "常數項",
+      "一次項係數",
+      "沒有不符"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "一次項係數少 2。",
+    "explanation": "(2p+3)(p+1)=2p²+2p+3p+3=2p²+5p+3。",
+    "steps": [
+      "完整展開。",
+      "合併一次項。",
+      "比對原式 7p。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "二次項係數",
+        "truth": false,
+        "reason": "都是 2。"
+      },
+      {
+        "choice": "常數項",
+        "truth": false,
+        "reason": "都是 3。"
+      },
+      {
+        "choice": "一次項係數",
+        "truth": true,
+        "reason": "候選展開為 2p²+5p+3。"
+      },
+      {
+        "choice": "沒有不符",
+        "truth": false,
+        "reason": "一次項 5≠7。"
+      }
+    ],
+    "misconceptionTarget": "首尾正確就誤判整體正確。",
+    "prerequisiteCheck": "需會非首一展開。",
+    "estimatedTimeSec": 120,
+    "unitAndRoundingChecks": "計數模型無近似；係數無單位。",
+    "ambiguityAndBoundaryAudit": "p 正值不會讓不同多項式恆等，只有可能在個別點巧合。",
+    "difficultyReason": "在實務模型中定位錯誤係數。",
+    "literacyContextNecessity": "包裝系統需指出錯誤欄位以便修正，而非只回報失敗。",
+    "authoringIntent": "定位包裝模型錯誤。",
+    "concept": "模型係數稽核",
+    "tags": [
+      "代數",
+      "因式分解",
+      "literacy",
+      "分解後展開檢查"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "a50927286e7d205838d6568dcd95e5b523db1671d13dbd4a98439c64f09fc93e"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u12-s008-cr001",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "檢查候選分解 (2x-5)(x+3) 是否等於 2x²+x-15。請完整展開並逐項比對。",
+    "requiredWork": [
+      "列四個乘積。",
+      "合併一次項。",
+      "比對二次、一次、常數。",
+      "作明確結論。"
+    ],
+    "fullCreditSolution": [
+      "(2x-5)(x+3)=2x²+6x-5x-15。",
+      "=2x²+x-15。",
+      "二次係數 2、一次係數 1、常數 -15 均吻合，所以候選正確。"
+    ],
+    "alternativeSolutions": [
+      "可用係數公式 ac、ad+bc、bd 檢查，但需寫出三個結果。"
+    ],
+    "reasoningSteps": [
+      "完整展開不是只代一點。",
+      "三個係數都必須相同。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "四項展開、合併、三項係數比對與正確結論俱全。"
+      },
+      {
+        "score": 2,
+        "criteria": "結論正確且主要展開正確，但漏一項比對或有輕微書寫錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "只比首尾或只代入一個 x 值，證據不足。"
+      },
+      {
+        "score": 0,
+        "criteria": "展開錯誤並判定候選不正確。"
+      }
+    ],
+    "partialCreditRules": [
+      "只寫「正確」最高 1 分。",
+      "因式順序交換不影響檢查。"
+    ],
+    "followThroughPolicy": "若交叉項一處抄錯但後續明確用正確 6x-5x，可給 2 分；若只代 x=0 不得超過 1 分。",
+    "unitAndNotationRules": [
+      "無單位。",
+      "負值代入若使用需加括號。"
+    ],
+    "answerOnlyPolicy": "只有結論無過程最高 1 分。",
+    "commonErrors": [
+      "漏掉 -5x。",
+      "把 -5×3 算成 +15。"
+    ],
+    "independentReview": {
+      "derivedResult": "候選正確，展開為 2x²+x-15。",
+      "ambiguity": "題目要求恆等驗證，不接受單點作完整證明。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "bbbe406abf690543a17a439885f75a57371f235962ac772cda42489b8b9bc4d7"
+  },
+  {
+    "questionId": "u12-s008-cr002",
+    "unitId": "u12",
+    "numericUnitId": 12,
+    "topicId": "u12-applications",
+    "skillId": "factoring-check-expand",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "某同學用 x=0 驗證 (x+2)(x+7)=x²+8x+14，得到兩邊都是 14，便宣稱分解正確。請評估他的證據，並給出正確判斷。",
+    "requiredWork": [
+      "說明單點代入的限制。",
+      "完整展開左式。",
+      "指出錯誤係數。",
+      "給反例或係數比較。"
+    ],
+    "fullCreditSolution": [
+      "x=0 只直接檢查常數項，不能證明恆等。",
+      "左式展開為 x²+9x+14，不是 x²+8x+14。",
+      "例如 x=1 時左式 24，右式 23，因此主張錯誤。"
+    ],
+    "alternativeSolutions": [
+      "不必另找反例，只要完整展開並指出一次項係數 9≠8，即可完成判斷。"
+    ],
+    "reasoningSteps": [
+      "證據不足與命題真假分開評估。",
+      "本題命題確實為假。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "指出單點不足，展開得 x²+9x+14，並以係數或反例判錯。"
+      },
+      {
+        "score": 2,
+        "criteria": "能正確展開並判錯，但未清楚說明單點證據限制；或反之。"
+      },
+      {
+        "score": 1,
+        "criteria": "只說「不能只代一點」但沒有判斷實際式子，或只給反例無方法說明。"
+      },
+      {
+        "score": 0,
+        "criteria": "接受同學結論，或展開仍寫 8x。"
+      }
+    ],
+    "partialCreditRules": [
+      "x=1 以外任何非零反例若計算正確均接受。",
+      "只說證據不足不代表自動判定命題錯，需另查。"
+    ],
+    "followThroughPolicy": "若反例算錯但展開係數正確，可給 2 分；若展開錯但找到正確反例，也可給 1 至 2 分。",
+    "unitAndNotationRules": [
+      "無單位。",
+      "代入負值需用括號。"
+    ],
+    "answerOnlyPolicy": "只答「錯」無理由最高 1 分。",
+    "commonErrors": [
+      "把「證明不足」說成「式子一定不相等」而未查。",
+      "x=0 只看常數卻宣稱全對。"
+    ],
+    "independentReview": {
+      "derivedResult": "證據不足且命題為假；左式一次係數為 9。",
+      "ambiguity": "評分需同時看邏輯評估與實際數學判斷。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "ea84d679ea85d5199a0a1d03bc17f330d9f686bea4d5512d89a3628ae01d1c12"
+  }
+];
+
+export const SEMANTIC_REVIEWS = [
+  {
+    "questionId": "u12-s008-v001",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "c962ee17ce6badb7727a298b68100fb78f1916e402bb3b7eb924f02553be3c68",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "每一項係數均由分配律得到。",
+    "derivedAnswer": "x²+7x+10",
+    "storedAnswer": "x²+7x+10",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「展開 (x+2)(x+5) 的結果為何？」逐一展開或回代；正解「x²+7x+10」成立。「x²+10」不成立：漏掉兩個交叉項。；「x²+5x+10」不成立：只保留一個交叉項。；「x²+7x+7」不成立：常數應為 2×5=10。",
+      "undefinedSymbol": "題幹已給條件為「x 為變數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「完整展開並合併一次項。」。",
+      "unitConflict": "本題單位審查：無單位；精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：無特殊定義域限制。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「完整展開並合併一次項。」閱讀後，常見誤讀為「只乘首項與常數。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "最基本二項式展開檢查。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會分配律。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v001：每一項係數均由分配律得到。 因此導出「x²+7x+10」。再逐項檢查四選項真值為 [False, False, False, True]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「完整展開並合併一次項。」，並特別排除「只乘首項與常數。」。難度理由是「最基本二項式展開檢查。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v002",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "4d4959566bf58e151cc836f946668702e21ebf71f5c94ab3992834d97914644a",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "一次項係數不是一次項本身，因此答案為 5。",
+    "derivedAnswer": "5",
+    "storedAnswer": "5",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「(2x-1)(x+3) 展開後的一次項係數為何？」逐一展開或回代；正解「5」成立。「6」不成立：只取 2x·3。；「-1」不成立：只取 -1·x 的係數，漏掉 6x。；「7」不成立：把 -x 錯當 +x，得到 6+1。",
+      "undefinedSymbol": "題幹已給條件為「x 為變數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「只求交叉項合併係數。」。",
+      "unitConflict": "本題單位審查：無單位；係數為無單位數。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；係數為無單位數。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：四選項互異；一次項係數由兩個交叉項相加唯一得到 5。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「只求交叉項合併係數。」閱讀後，常見誤讀為「只算一個交叉乘積。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "聚焦中間係數。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會帶號同類項合併。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v002：一次項係數不是一次項本身，因此答案為 5。 因此導出「5」。再逐項檢查四選項真值為 [False, True, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「只求交叉項合併係數。」，並特別排除「只算一個交叉乘積。」。難度理由是「聚焦中間係數。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v003",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "dffa8e306c727704d0ee332da39fe137cafd6299a2e79434b1297ac320e252fc",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "不依賴代入特定值。",
+    "derivedAnswer": "是，因展開恰為 x²+5x+4",
+    "storedAnswer": "是，因展開恰為 x²+5x+4",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「候選分解 (x+1)(x+4) 是否等於 x²+5x+4？」逐一展開或回代；正解「是，因展開恰為 x²+5x+4」成立。「是，但只在 x=0 時成立」不成立：展開證明對所有 x 成立。；「否，中間項應為 4x」不成立：漏掉 x。；「否，常數應為 5」不成立：1×4=4。",
+      "undefinedSymbol": "題幹已給條件為「x 為變數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「展開判斷恆等。」。",
+      "unitConflict": "本題單位審查：無單位與近似。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位與近似。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：「是否等於」按恆等式解讀，展開已證明。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「展開判斷恆等。」閱讀後，常見誤讀為「只用單點代入或漏交叉項。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "基本候選驗證。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會展開。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v003：不依賴代入特定值。 因此導出「是，因展開恰為 x²+5x+4」。再逐項檢查四選項真值為 [True, False, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「展開判斷恆等。」，並特別排除「只用單點代入或漏交叉項。」。難度理由是「基本候選驗證。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v004",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "44d7916c677133aa134bad9abd3c88b16812aaec3f6572f134fe3d6eb2ffbd6f",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "只有一次項寫錯，二次與常數正確。",
+    "derivedAnswer": "一次項應為 8x",
+    "storedAnswer": "一次項應為 8x",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「某生聲稱 (x+2)(x+6)=x²+6x+12。錯在哪一項？」逐一展開或回代；正解「一次項應為 8x」成立。「二次項應為 2x²」不成立：x·x=x²。；「常數應為 8」不成立：2×6=12。；「沒有錯」不成立：一次項係數不符。",
+      "undefinedSymbol": "題幹已給條件為「x 為變數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「展開並定位第一次項係數。」。",
+      "unitConflict": "本題單位審查：無單位。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：題目問錯在哪一項，答案唯一。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「展開並定位第一次項係數。」閱讀後，常見誤讀為「把其中一個括號常數當一次項係數。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "需精確定位錯誤。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會展開與係數比對。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v004：只有一次項寫錯，二次與常數正確。 因此導出「一次項應為 8x」。再逐項檢查四選項真值為 [False, False, True, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「展開並定位第一次項係數。」，並特別排除「把其中一個括號常數當一次項係數。」。難度理由是「需精確定位錯誤。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v005",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "3dfe4543a8dacc0508a85ece0c776717696a8fd83ea76c2fa1d05b240df609df",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "三項完全一致。",
+    "derivedAnswer": "正確",
+    "storedAnswer": "正確",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「檢查 (3x-2)(x+5) 是否為 3x²+13x-10。判斷何者正確？」逐一展開或回代；正解「正確」成立。「錯，因一次項是 17x」不成立：負的 2x 應相減。；「錯，因常數是 +10」不成立：-2×5=-10。；「錯，因首項是 3x」不成立：3x·x=3x²。",
+      "undefinedSymbol": "題幹已給條件為「x 為變數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「展開候選。」。",
+      "unitConflict": "本題單位審查：無單位；精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：完整展開證明對所有 x 成立。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「展開候選。」閱讀後，常見誤讀為「負交叉項或負常數乘法錯。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "包含負號的標準驗證。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會帶號乘法。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v005：三項完全一致。 因此導出「正確」。再逐項檢查四選項真值為 [False, False, False, True]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「展開候選。」，並特別排除「負交叉項或負常數乘法錯。」。難度理由是「包含負號的標準驗證。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v006",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "65b8852107875e8a9ce01d2ccebdfaa9657eeee57b4ea6ada7788bf5fd67ad64",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "展開得到 2x²+(p-6)x-3p；比對 p-6=-1 可得 p=5，並且 -3p=-15 也成立。",
+    "derivedAnswer": "5",
+    "storedAnswer": "5",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「若 (2x+p)(x-3)=2x²-x-15，則 p 為何？」逐一展開或回代；正解「5」成立。「3」不成立：常數為 -9，且一次係數為 -3。；「7」不成立：一次項係數為 1，常數為 -21。；「-5」不成立：常數為 +15，符號不符。",
+      "undefinedSymbol": "題幹已給條件為「p 為常數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「展開並同時比對一次項與常數項。」。",
+      "unitConflict": "本題單位審查：無單位。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：一次項與常數項給出相同 p=5，條件一致且答案唯一。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「展開並同時比對一次項與常數項。」閱讀後，常見誤讀為「只比對一個係數就下結論。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "要求用多係數交叉檢查。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會係數比對。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v006：展開得到 2x²+(p-6)x-3p；比對 p-6=-1 可得 p=5，並且 -3p=-15 也成立。 因此導出「5」。再逐項檢查四選項真值為 [False, True, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「展開並同時比對一次項與常數項。」，並特別排除「只比對一個係數就下結論。」。難度理由是「要求用多係數交叉檢查。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v007",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "702bc03170fa5f044fff542061586b7190e0481bb4737f5325c83e80655c840c",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "答案同時評估方法與事實。",
+    "derivedAnswer": "不能；單點相等不足，但完整展開可證明本例確實恆等",
+    "storedAnswer": "不能；單點相等不足，但完整展開可證明本例確實恆等",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「兩式 P=(x+1)(x+6)、Q=x²+7x+6。只代 x=0 得 P=Q，這能否證明兩式恆等？」逐一展開或回代；正解「不能；單點相等不足，但完整展開可證明本例確實恆等」成立。「能；任何一點相等就代表恆等」不成立：不同多項式可能在某點相交。；「不能；而且兩式其實不相等」不成立：展開後確實相等。；「能；因 x=0 能檢查所有係數」不成立：x=0 只直接檢查常數項。",
+      "undefinedSymbol": "題幹已給條件為「x 為變數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「評估單點檢查的證明力。」。",
+      "unitConflict": "本題單位審查：無單位。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：題目問證明是否充分，不只是兩式是否相等。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「評估單點檢查的證明力。」閱讀後，常見誤讀為「把正確結論誤當成錯誤證明也有效。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "需要理解驗證邏輯。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會展開與恆等概念。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v007：答案同時評估方法與事實。 因此導出「不能；單點相等不足，但完整展開可證明本例確實恆等」。再逐項檢查四選項真值為 [True, False, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「評估單點檢查的證明力。」，並特別排除「把正確結論誤當成錯誤證明也有效。」。難度理由是「需要理解驗證邏輯。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v008",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "58bd534b0c5f2b9dc7463471b2adb9fdb11d31e1f19bf43f69e6b9b133c80742",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "只有一次項係數不一致。",
+    "derivedAnswer": "一次項係數",
+    "storedAnswer": "一次項係數",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「某候選分解 R=(2x-3)(x+4)。若原式標成 2x²+6x-12，第一個不一致的係數是哪一個？」逐一展開或回代；正解「一次項係數」成立。「二次項係數」不成立：皆為 2。；「常數項」不成立：皆為 -12。；「沒有不一致」不成立：一次項不同。",
+      "undefinedSymbol": "題幹已給條件為「按二次、一次、常數項比對。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「完整展開並找不一致項。」。",
+      "unitConflict": "本題單位審查：無單位；精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位；精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：「第一個」按降冪順序，二次吻合後一次項先出現差異。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「完整展開並找不一致項。」閱讀後，常見誤讀為「看到首尾吻合就停止檢查。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "需按順序定位單一係數差異。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會完整展開。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v008：只有一次項係數不一致。 因此導出「一次項係數」。再逐項檢查四選項真值為 [False, False, True, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「完整展開並找不一致項。」，並特別排除「看到首尾吻合就停止檢查。」。難度理由是「需按順序定位單一係數差異。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v009",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "be8af815fa8b5de3801a32d961cf40d058c6a18c93903d2335316cbae0f6d224",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "代入 x=1：左式 (1+2)(1+3)=12，右式 1+6+6=13；12≠13，因此這一項是有效反例。",
+    "derivedAnswer": "代入 x=1，左邊 12、右邊 13",
+    "storedAnswer": "代入 x=1，左邊 12、右邊 13",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「針對錯誤主張 (x+2)(x+3)=x²+6x+6，下列哪一項檢查可作為反例直接推翻它？」逐一展開或回代；正解「代入 x=1，左邊 12、右邊 13」成立。「只比較二次項係數，兩邊都是 1」不成立：單一係數相同不能排除其他係數不同，也沒有給出左右值不等。；「只比較常數項，兩邊都是 6」不成立：常數項相同只說明 x=0 時相等，不能推翻主張。；「代入 x=0，兩邊都是 6」不成立：左右相等的代入結果不是反例。",
+      "undefinedSymbol": "題幹已給條件為「反例必須給出一個使等式左右不相等的代入值與結果。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「辨認足以推翻恆等主張的單一代入檢查。」。",
+      "unitConflict": "本題單位審查：無單位。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；無單位。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：四個選項是不同的檢查行為；只有代入 x=1 產生左右不等，故唯一能作反例。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「辨認足以推翻恆等主張的單一代入檢查。」閱讀後，常見誤讀為「把局部係數相同或某個代入值相等誤認為已完成恆等驗證。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "考查反例，但必須保證唯一。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會代入與展開。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v009：代入 x=1：左式 (1+2)(1+3)=12，右式 1+6+6=13；12≠13，因此這一項是有效反例。 因此導出「代入 x=1，左邊 12、右邊 13」。再逐項檢查四選項真值為 [False, False, False, True]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「辨認足以推翻恆等主張的單一代入檢查。」，並特別排除「把局部係數相同或某個代入值相等誤認為已完成恆等驗證。」。難度理由是「考查反例，但必須保證唯一。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v010",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "81b249839db5f2598cdc7205fb59b4d8b988b63f211123fb354e6bcd4d3eb0c4",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "試算表公式對所有 n 正確。",
+    "derivedAnswer": "通過，四項合併後完全一致",
+    "storedAnswer": "通過，四項合併後完全一致",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「試算表把 (n+4)(n+7) 自動展開為 n²+11n+28。審核結果應為何？」逐一展開或回代；正解「通過，四項合併後完全一致」成立。「不通過，中間項應為 28n」不成立：把常數乘積當一次係數。；「不通過，常數應為 11」不成立：把常數和當乘積。；「只在 n=1 時通過」不成立：展開是恆等式。",
+      "undefinedSymbol": "題幹已給條件為「n 為資料筆數參數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「檢查自動展開。」。",
+      "unitConflict": "本題單位審查：筆數模型為整數；係數精確。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；筆數模型為整數；係數精確。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：n 的正整數限制不影響恆等驗證。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「檢查自動展開。」閱讀後，常見誤讀為「只用一筆資料代入判斷。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "情境要求審核軟體展開。",
+    "literacyContextNecessity": "自動報表可能因交叉項錯誤而影響所有資料，必須做恆等檢查。",
+    "prerequisiteCheck": "需會展開。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v010：試算表公式對所有 n 正確。 因此導出「通過，四項合併後完全一致」。再逐項檢查四選項真值為 [False, True, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「檢查自動展開。」，並特別排除「只用一筆資料代入判斷。」。難度理由是「情境要求審核軟體展開。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v011",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "a5348c692c9aa344741f4073f03d46051a7813bc67fa227c786161ba484fdc98",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "每個係數吻合，所以程式公式正確。",
+    "derivedAnswer": "計算 3x²-15x+2x-10，合併為 3x²-13x-10",
+    "storedAnswer": "計算 3x²-15x+2x-10，合併為 3x²-13x-10",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「建築估算程式聲稱 (3x+2)(x-5)=3x²-13x-10。哪個檢查最能直接證實？」逐一展開或回代；正解「計算 3x²-15x+2x-10，合併為 3x²-13x-10」成立。「只代 x=0，兩邊都是 -10」不成立：只能檢查一個值，不能直接證實恆等。；「只比較首項 3x²」不成立：漏一次與常數項。；「只比較常數 -10」不成立：同樣不足。",
+      "undefinedSymbol": "題幹已給條件為「x 為尺寸參數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「完整展開並比係數。」。",
+      "unitConflict": "本題單位審查：若 x 為公尺，各項代表相應模型量；無近似。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；若 x 為公尺，各項代表相應模型量；無近似。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：題目問「最能直接證實」，完整展開唯一充分。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「完整展開並比係數。」閱讀後，常見誤讀為「把部分係數或單點檢查當完整證明。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "選擇最充分驗證方式。",
+    "literacyContextNecessity": "工程估算程式需要對所有尺寸有效，不能只測單一輸入。",
+    "prerequisiteCheck": "需會展開與證明。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v011：每個係數吻合，所以程式公式正確。 因此導出「計算 3x²-15x+2x-10，合併為 3x²-13x-10」。再逐項檢查四選項真值為 [True, False, False, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「完整展開並比係數。」，並特別排除「把部分係數或單點檢查當完整證明。」。難度理由是「選擇最充分驗證方式。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u12-s008-v012",
+    "unitId": "u12",
+    "skillId": "factoring-check-expand",
+    "contentSha256": "a50927286e7d205838d6568dcd95e5b523db1671d13dbd4a98439c64f09fc93e",
+    "reviewVersion": "human-review-r4.0",
+    "independentSolution": "一次項係數少 2。",
+    "derivedAnswer": "一次項係數",
+    "storedAnswer": "一次項係數",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "針對題目「某包裝模型原式為 2p²+7p+3，系統候選分解為 (2p+3)(p+1)。系統應標記哪個係數不符？」逐一展開或回代；正解「一次項係數」成立。「二次項係數」不成立：都是 2。；「常數項」不成立：都是 3。；「沒有不符」不成立：一次項 5≠7。",
+      "undefinedSymbol": "題幹已給條件為「p 為正整數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「展開候選並比對。」。",
+      "unitConflict": "本題單位審查：計數模型無近似；係數無單位。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
+      "roundingConflict": "本題計算屬精確代數或整數運算；計數模型無近似；係數無單位。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
+      "domainBoundary": "邊界審查結果：p 正值不會讓不同多項式恆等，只有可能在個別點巧合。 只使用因式分解、展開、整除或基本尺寸限制，未使用下一單元解一元二次方程式。",
+      "alternateReading": "重新依所求「展開候選並比對。」閱讀後，常見誤讀為「首尾正確就誤判整體正確。」；題幹條件足以排除該誤讀。"
+    },
+    "difficultyReason": "在實務模型中定位錯誤係數。",
+    "literacyContextNecessity": "包裝系統需指出錯誤欄位以便修正，而非只回報失敗。",
+    "prerequisiteCheck": "需會非首一展開。",
+    "languageCheck": "採臺灣繁體中文；所求、條件、正負號作用範圍與單位均明示，未用未定義代名詞。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "獨立審查 u12-s008-v012：一次項係數少 2。 因此導出「一次項係數」。再逐項檢查四選項真值為 [False, False, True, False]；錯誤選項分別由展開係數、符號、單位或情境限制排除。題目目標為「展開候選並比對。」，並特別排除「首尾正確就誤判整體正確。」。難度理由是「在實務模型中定位錯誤係數。」。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  }
+];
+
+export const DRAWING_SPECS = [];

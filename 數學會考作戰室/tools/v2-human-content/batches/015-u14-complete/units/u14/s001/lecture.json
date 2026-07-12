@@ -1,0 +1,256 @@
+{
+  "lectureId": "u14-s001-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-sequences",
+  "skillId": "sequence-pattern",
+  "lockedTitle": "數列規律",
+  "title": "數列規律：從相鄰變化找出可驗證的規則",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認數列的項與項數。",
+    "能用相鄰差、相鄰比、交錯與圖形數量尋找規律。",
+    "能區分「符合前幾項」與「規則已被唯一確定」。",
+    "能依明確規則延伸或回推數列。"
+  ],
+  "prerequisiteBridge": [],
+  "glossary": [
+    {
+      "term": "數列",
+      "definition": "依一定順序排成的一串數。"
+    },
+    {
+      "term": "項",
+      "definition": "數列中的每一個數。"
+    },
+    {
+      "term": "第 n 項",
+      "definition": "排在第 n 個位置的項，記作 a_n。"
+    },
+    {
+      "term": "規律",
+      "definition": "能一致產生各項的明確方法。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a_n",
+      "meaning": "數列的第 n 項。"
+    },
+    {
+      "symbol": "a_{n+1}-a_n",
+      "meaning": "相鄰兩項的差。"
+    },
+    {
+      "symbol": "a_{n+1}÷a_n",
+      "meaning": "前項非零時的相鄰比。"
+    }
+  ],
+  "conceptNarrative": [
+    "觀察數列先看位置，再看數值如何改變；不能只因兩次變化相同就急著下結論。",
+    "最常見的規律包括固定加減、固定乘除、差值本身有規律、奇偶項分開以及圖形數量隨階段改變。",
+    "有限個已知項通常可能符合不只一種規則，因此題目必須提供「依此規律」或足夠圖形結構，才可延伸。",
+    "找到規律後要回代已知各項檢查，不能只驗一個位置。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "數列",
+      "statement": "依序排列並可用位置編號的數。"
+    },
+    {
+      "name": "相鄰差",
+      "statement": "後一項減前一項所得的數。"
+    },
+    {
+      "name": "交錯規律",
+      "statement": "奇數位置與偶數位置分別依不同規則變化。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a_{n+1}=a_n+d",
+      "conditions": [
+        "每一步都增加同一數 d"
+      ],
+      "meaning": "固定差的遞推表示。"
+    },
+    {
+      "formula": "a_{n+1}=r a_n",
+      "conditions": [
+        "每一步都乘同一數 r，且所需除法有意義"
+      ],
+      "meaning": "固定比的遞推表示。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只看數值大小而忽略位置，無法判定第幾項。",
+    "相鄰差不固定時，不能套等差公式。",
+    "含有 0 時直接用除法找比，可能沒有定義。",
+    "交錯數列不能把所有項當成單一路徑。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出位置 n 與項 a_n",
+      "check": "避免把項值當項數。"
+    },
+    {
+      "step": 2,
+      "instruction": "先算相鄰差",
+      "check": "檢查是否固定或差值另有規律。"
+    },
+    {
+      "step": 3,
+      "instruction": "再看相鄰比與奇偶位置",
+      "check": "前項為0時不要硬除。"
+    },
+    {
+      "step": 4,
+      "instruction": "把候選規則套回所有已知項",
+      "check": "每一項都要符合。"
+    },
+    {
+      "step": 5,
+      "instruction": "依同一規則求目標項",
+      "check": "最後檢查位置是否正確。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "2，5，8，11，… 的下一項",
+      "reasoning": "相鄰差皆為3。",
+      "solutionSteps": [
+        "相鄰差皆為3。",
+        "11+3=14。"
+      ],
+      "answer": "14"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "1，4，9，16，… 的第6項",
+      "reasoning": "各項為位置的平方。",
+      "solutionSteps": [
+        "各項為位置的平方。",
+        "a_6=6^2=36。"
+      ],
+      "answer": "36"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "3，-3，3，-3，… 的第9項",
+      "reasoning": "奇數項為3，偶數項為-3。",
+      "solutionSteps": [
+        "奇數項為3，偶數項為-3。",
+        "9為奇數。"
+      ],
+      "answer": "3"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "1，2，4，7，11，… 的下一項",
+      "reasoning": "差依序為1、2、3、4。",
+      "solutionSteps": [
+        "差依序為1、2、3、4。",
+        "下一次加5，11+5=16。"
+      ],
+      "answer": "16"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "只看最後兩項的差",
+      "why": "短暫相同不代表全程固定。",
+      "correction": "檢查所有相鄰差。"
+    },
+    {
+      "mistake": "把第 n 項和項值 n 混為一談",
+      "why": "位置與數值是不同量。",
+      "correction": "先寫位置表。"
+    },
+    {
+      "mistake": "看到倍增就把首項也乘一次",
+      "why": "第1項尚未經過變化。",
+      "correction": "從第1項到第n項只有n-1次變化。"
+    },
+    {
+      "mistake": "忽略交錯符號",
+      "why": "奇偶位置的規則不同。",
+      "correction": "分列奇數項與偶數項。"
+    },
+    {
+      "mistake": "前項為0仍計算相鄰比",
+      "why": "除以0沒有定義。",
+      "correction": "改看差或圖形結構。"
+    },
+    {
+      "mistake": "只用候選規則驗一項",
+      "why": "錯誤規則可能碰巧命中。",
+      "correction": "回代全部已知項。"
+    }
+  ],
+  "selfCheck": [
+    "我有標出每一項的位置嗎？",
+    "相鄰差或相鄰比是否對所有項都成立？",
+    "是否需要把奇數項與偶數項分開？",
+    "規則是否能解釋全部已知資訊？",
+    "求出的項是否在正確位置？"
+  ],
+  "summary": [
+    "數列同時包含順序與數值。",
+    "找規律要檢查差、比、差的規律與交錯結構。",
+    "有限項不必然唯一決定規則，必須依題目給定結構。",
+    "任何候選規則都要回代驗證。"
+  ],
+  "connections": {
+    "previous": "本技能為 U14 起點，使用整數、分數、指數與代數代入能力。",
+    "next": [
+      "固定差將發展成等差數列第 n 項。",
+      "固定比將發展成等比數列。"
+    ]
+  },
+  "figureReferences": [
+    "u14-fig-s001-dot-cards"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s001-v001",
+      "u14-s001-v002",
+      "u14-s001-v003",
+      "u14-s001-v004",
+      "u14-s001-v005",
+      "u14-s001-v006",
+      "u14-s001-v007",
+      "u14-s001-v008",
+      "u14-s001-v009",
+      "u14-s001-v010",
+      "u14-s001-v011",
+      "u14-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s001-cr001",
+      "u14-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「數列規律」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "e7d62a4af54904ffcdcb3a823dae2caadb3d31c6dbda5dbb5bf61b53c072bbb3"
+}

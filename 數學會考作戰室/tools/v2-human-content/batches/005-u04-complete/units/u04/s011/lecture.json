@@ -1,0 +1,200 @@
+{
+  "lectureId": "u04-s011-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-apps",
+  "skillId": "system-quantity-price-problem",
+  "lockedSkillTitle": "數量與總價問題",
+  "title": "數量與總價問題：每種商品各自乘單價",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "數量與總價問題",
+    "scope": "以兩種商品的數量關係與總價關係建立並解聯立方程式。"
+  },
+  "prerequisiteBridge": "先備技能 system-ticket-price-problem 已建立必要基礎；本節將其用於「以兩種商品的數量關係與總價關係建立並解聯立方程式。」",
+  "learningGoals": [
+    "能依商品種類固定變數意義。",
+    "能建立總數量與總價方程式。",
+    "能處理包裝數、重量或價差條件。",
+    "能用單位分析檢查列式。"
+  ],
+  "vocabulary": [
+    {
+      "term": "單價",
+      "definition": "每一單位商品的價格。"
+    },
+    {
+      "term": "數量",
+      "definition": "購買的件、包、公斤等。"
+    },
+    {
+      "term": "總價",
+      "definition": "單價乘數量後加總。"
+    },
+    {
+      "term": "價差",
+      "definition": "兩種單價或兩筆總價的差。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax+by=M",
+      "meaning": "a、b 是單價，x、y 是相應數量。"
+    },
+    {
+      "symbol": "x+y=N",
+      "meaning": "數量單位相同時的總量式。"
+    }
+  ],
+  "conceptDevelopment": [
+    "單價與數量要一一配對，不能交叉。",
+    "商品以公斤計價時，未知數可代表公斤；以包計價時，則代表包數。",
+    "有時第二個條件不是總件數，而是數量差或一種商品比另一種多幾件。"
+  ],
+  "definitions": [
+    {
+      "name": "單位價格模型",
+      "statement": "總價由各類商品的「單價×數量」加總。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "總價=Σ(單價×數量)",
+      "conditions": [
+        "各項價格使用相同貨幣單位。"
+      ],
+      "meaning": "建立金額守恆。"
+    }
+  ],
+  "invalidUseCases": [
+    "公斤與公克須先換成同單位。",
+    "不可把總價除以商品總數就直接當成某一單價。",
+    "變數若代表包數，不能在中途當成個數。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "定義兩種商品數量",
+      "check": "寫清單位。"
+    },
+    {
+      "step": 2,
+      "instruction": "列數量條件",
+      "check": "總數、差或倍數。"
+    },
+    {
+      "step": 3,
+      "instruction": "列總價條件",
+      "check": "逐項單價乘數量。"
+    },
+    {
+      "step": 4,
+      "instruction": "解聯立",
+      "check": "選簡便方法。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查單位與合理性",
+      "check": "代回總數和總價。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "30 元筆與 50 元筆共 18 枝，總價 660 元。",
+      "solutionSteps": [
+        "x+y=18。",
+        "30x+50y=660。"
+      ],
+      "answer": "30 元筆 12 枝、50 元筆 6 枝。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "蘋果每公斤 80 元、梨每公斤 120 元，共 7 公斤、680 元。",
+      "solutionSteps": [
+        "x+y=7。",
+        "80x+120y=680。"
+      ],
+      "answer": "蘋果 4 公斤、梨 3 公斤。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "A 包 6 個 90 元、B 包 4 個 68 元，共買 10 包花 790 元。",
+      "solutionSteps": [
+        "設 A、B 包數 x、y。",
+        "x+y=10、90x+68y=790。"
+      ],
+      "answer": "A 5 包、B 5 包。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "甲商品比乙多 4 件，單價 25、40 元，共 360 元。",
+      "solutionSteps": [
+        "x-y=4。",
+        "25x+40y=360。"
+      ],
+      "answer": "甲 8 件、乙 4 件。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "單價與變數配錯",
+      "correction": "先在變數旁標商品名稱。"
+    },
+    {
+      "mistake": "總價式只加單價",
+      "correction": "必須乘數量。"
+    },
+    {
+      "mistake": "重量單位未統一",
+      "correction": "先換算公斤或公克。"
+    },
+    {
+      "mistake": "把包數與內容物個數混用",
+      "correction": "變數單位全題一致。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "80 元/公斤乘 3 公斤得到什麼？",
+      "answer": "240 元。"
+    },
+    {
+      "prompt": "x+y 可在公斤與包混加嗎？",
+      "answer": "不可。"
+    },
+    {
+      "prompt": "甲比乙多 4 如何列？",
+      "answer": "x-y=4。"
+    },
+    {
+      "prompt": "最後至少代回哪兩個條件？",
+      "answer": "數量關係與總價。"
+    }
+  ],
+  "summary": [
+    "每種單價只乘自己的數量。",
+    "先統一單位。",
+    "第二條件可為總數、差或倍數。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-ticket-price-problem 已建立必要基礎；本節將其用於「以兩種商品的數量關係與總價關係建立並解聯立方程式。」",
+    "next": "下一技能「速率與行程問題」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "四個例題涵蓋件數、重量、包數與數量差，均以單位分析重算；每組答案代回總價正確。",
+    "reviewNote": "四個例題涵蓋件數、重量、包數與數量差，均以單位分析重算；每組答案代回總價正確。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "b94ff6b982886f41abc98a00cc00b2c14a1ca69c029f7406e45669dec579adff"
+}

@@ -1,0 +1,258 @@
+{
+  "lectureId": "u06-s011-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-applications",
+  "skillId": "ratio-composite-problem",
+  "lockedSkillTitle": "比例複合應用",
+  "title": "比例複合應用：分段建模與中間量檢查",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "比例應用",
+    "skillOrder": 11,
+    "lockedPrerequisiteSkillIds": [
+      "continued-ratio-preview"
+    ],
+    "capBoundary": "串接兩至三個國中比例步驟，例如先求實際量再分配；不使用高中函數合成或複雜聯立模型。"
+  },
+  "prerequisiteBridge": "已能處理單一比例應用與簡單共同項。複合題的關鍵是把長題拆成每一步只處理一個固定關係。",
+  "learningOutcomes": [
+    "能畫出已知量到所求量的步驟鏈。",
+    "能辨認各步是正比、反比、比例尺或份數分配。",
+    "能保留精確中間值並避免過早四捨五入。",
+    "能用逆向或總量檢查整個結果。"
+  ],
+  "glossary": [
+    {
+      "term": "複合應用",
+      "definition": "需要連續使用兩個以上比例關係才能求解的問題。"
+    },
+    {
+      "term": "中間量",
+      "definition": "不是最後答案，但連接前後步驟的量。"
+    },
+    {
+      "term": "步驟鏈",
+      "definition": "用箭頭表示已知量、轉換規則與所求量。"
+    },
+    {
+      "term": "一致條件",
+      "definition": "每一步成立所需的固定單價、同比例、同效率等假設。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "已知 → 中間量 → 所求",
+      "meaning": "先拆解再計算。"
+    },
+    {
+      "symbol": "×r 或 ÷r",
+      "meaning": "標示每一步的放大或縮小倍數。"
+    },
+    {
+      "symbol": "精確值",
+      "meaning": "分數或未四捨五入小數，供下一步使用。"
+    }
+  ],
+  "conceptNarrative": [
+    "長題不應一次列一個巨大比例式。先決定第一步能求什麼，再把結果帶入下一步。",
+    "每一步的關係可能不同，例如地圖比例尺是正比，行車時間在固定路程下是反比。",
+    "中間量的單位必須清楚，否則公里、公分、分鐘可能混用。",
+    "若題目要求最後四捨五入，只在最後一步處理；過早近似會累積誤差。",
+    "完成後可逆向檢查：把最後答案代回最後一步，再一路返回原已知。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "分段建模",
+      "statement": "把複合情境分成數個各自有明確比例條件的子問題。"
+    },
+    {
+      "name": "中間量一致性",
+      "statement": "前一步輸出量的意義與單位，必須正好是下一步所需輸入。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "總倍率=r1×r2×…",
+      "conditions": [
+        "各步皆為連續乘法縮放"
+      ],
+      "meaning": "可用於檢查，但仍需理解每步。"
+    },
+    {
+      "formula": "最後值=起始值×各步倍率",
+      "conditions": [
+        "無加減固定項"
+      ],
+      "meaning": "純比例鏈。"
+    },
+    {
+      "formula": "先精確、後近似",
+      "conditions": [
+        "題目允許或要求近似"
+      ],
+      "meaning": "控制誤差。"
+    }
+  ],
+  "nonApplicableCases": [
+    "把正比與反比步驟使用同一方向。",
+    "中間量單位不符合下一步。",
+    "未完成第一步便直接使用最後比例。",
+    "每一步都有固定加項時仍只乘總倍率。",
+    "過早四捨五入造成最後答案偏差。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫出最後所求與可直接使用的已知量。",
+      "check": "缺少哪個中間量？"
+    },
+    {
+      "step": 2,
+      "instruction": "畫步驟鏈並為每箭頭標關係。",
+      "check": "正比、反比、比例尺或份數？"
+    },
+    {
+      "step": 3,
+      "instruction": "逐步計算且保留單位與精確值。",
+      "check": "前一步答案能直接帶入下一步嗎？"
+    },
+    {
+      "step": 4,
+      "instruction": "只在最後依題意取近似。",
+      "check": "位數與單位要求清楚嗎？"
+    },
+    {
+      "step": 5,
+      "instruction": "做逆向、總量或數量級檢查。",
+      "check": "能否回到原始資料？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "地圖比例尺 1:50000，圖上路線 7.2 公分；車速 60 公里/時，行駛需幾分鐘？",
+      "solutionSteps": [
+        "實際距離 7.2×50000=360000 公分=3.6 公里。",
+        "時間 3.6÷60=0.06 小時=3.6 分鐘。"
+      ],
+      "answer": "3.6 分鐘。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "食譜 6 人需麵粉 450 克；改做 14 人份後，每袋 700 克可做幾次完整份量？",
+      "solutionSteps": [
+        "14 人份需 450×14/6=1050 克。",
+        "每袋 700 克不足一次 14 人份，因此 0 次完整份量；若問需幾袋則要 2 袋。"
+      ],
+      "answer": "0 次完整份量。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "商品原價按 4:5 售出，再從售價折 9:10，最後 720 元，求原價。",
+      "solutionSteps": [
+        "最後價=原價×4/5×9/10=原價×18/25。",
+        "原價=720×25/18=1000。"
+      ],
+      "answer": "1000 元。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "甲乙獎金比 3:5，乙再捐出所得的 20%，兩人保留金額合計 8400 元，且甲未捐，求原總獎金。",
+      "solutionSteps": [
+        "令每份 k，甲 3k，乙原 5k、保留 4k。",
+        "保留合計 7k=8400，k=1200；原總 8k=9600。"
+      ],
+      "answer": "9600 元。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 3.6 公里與 60 公里/時直接相乘。",
+      "why": "求時間應用距離÷速度。",
+      "correction": "先檢查單位得到小時。"
+    },
+    {
+      "mistake": "食譜題看到 700 克就四捨五入成一次。",
+      "why": "完整份量不能用近似補足。",
+      "correction": "比較所需 1050 克與現有量。"
+    },
+    {
+      "mistake": "連續折扣直接相加為 30%。",
+      "why": "第二折扣作用在已折後價格。",
+      "correction": "倍率相乘。"
+    },
+    {
+      "mistake": "捐出 20% 後把乙剩餘當 3k。",
+      "why": "5k 的 80% 是 4k。",
+      "correction": "先算保留倍率。"
+    },
+    {
+      "mistake": "中間步驟不寫單位。",
+      "why": "容易把小時當分鐘。",
+      "correction": "每一行附單位。"
+    },
+    {
+      "mistake": "第一步近似後帶入第二步。",
+      "why": "誤差會放大。",
+      "correction": "保留分數或完整小數到最後。"
+    }
+  ],
+  "selfCheck": [
+    "我能指出每個中間量嗎？",
+    "每一步的比例類型正確嗎？",
+    "單位在步驟間相容嗎？",
+    "連續倍率是相乘而非相加嗎？",
+    "最後答案可逆向回到原資料嗎？"
+  ],
+  "summary": [
+    "複合題要拆成清楚的步驟鏈。",
+    "每一步只使用一種明確關係與條件。",
+    "中間量保留單位和精確值。",
+    "最後用逆向與數量級驗算。"
+  ],
+  "connections": {
+    "previous": "連比預備提供共享中間量的對齊觀念。",
+    "next": [
+      "比例素養題會加入表格、限制條件與資訊判讀。",
+      "跨單元整合時仍可使用分段建模。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s011-v001",
+      "u06-s011-v002",
+      "u06-s011-v003",
+      "u06-s011-v004",
+      "u06-s011-v005",
+      "u06-s011-v006",
+      "u06-s011-v007",
+      "u06-s011-v008",
+      "u06-s011-v009",
+      "u06-s011-v010",
+      "u06-s011-v011",
+      "u06-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s011-cr001",
+      "u06-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐步重算 7.2 公分至 3.6 公里再至 3.6 分鐘、連續倍率 18/25、乙保留 4k 等中間量；食譜例特別區分『可做幾次完整份量』與『需要幾袋』，修正可能的語意混淆。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "5317824b005a973b76b9dc24000283927be530d45e080c500d4468ee4bb35eb4"
+}

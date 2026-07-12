@@ -1,0 +1,1108 @@
+// SERIALIZATION OF REVIEWED CHATGPT_HUMAN_AUTHORED_R1 CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u04-s005-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-methods",
+  "skillId": "system-elimination-method",
+  "lockedSkillTitle": "加減消去法",
+  "title": "加減消去法：讓同一未知數的係數抵消",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "加減消去法",
+    "scope": "利用係數相同相減或係數相反相加，消去一個未知數。"
+  },
+  "prerequisiteBridge": "先備技能 system-substitution-method 已建立必要基礎；本節將其用於「利用係數相同相減或係數相反相加，消去一個未知數。」",
+  "learningGoals": [
+    "能辨認相同係數要相減、相反係數要相加。",
+    "能整列相加減，包含常數項。",
+    "能解出一元後回代。",
+    "能診斷整列減法的符號錯誤。"
+  ],
+  "vocabulary": [
+    {
+      "term": "消去",
+      "definition": "運算後某未知數的係數變成 0。"
+    },
+    {
+      "term": "同係數",
+      "definition": "兩式中某未知數係數相同。"
+    },
+    {
+      "term": "相反係數",
+      "definition": "係數互為相反數。"
+    },
+    {
+      "term": "整列運算",
+      "definition": "方程式左右所有對應項一起相加或相減。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "①−②",
+      "meaning": "第一式的每一項減第二式對應項。"
+    },
+    {
+      "symbol": "①+②",
+      "meaning": "兩式逐項相加。"
+    }
+  ],
+  "conceptDevelopment": [
+    "若 y 的係數相同，兩式相減可使 y-y=0；若係數為 3 與 -3，兩式相加可使 3y+(-3y)=0。",
+    "減去整個第二式時，第二式每一項都要變號。",
+    "消去只是將二元化成一元，得到一個值後仍要回代。"
+  ],
+  "definitions": [
+    {
+      "name": "加減消去法",
+      "statement": "把兩個等式逐項相加或相減，使一個未知數消失。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(ax+by=c)−(dx+by=e) ⇒ (a-d)x=c-e",
+      "conditions": [
+        "y 係數相同。"
+      ],
+      "meaning": "相減消去 y。"
+    },
+    {
+      "formula": "(ax+by=c)+(dx-by=e) ⇒ (a+d)x=c+e",
+      "conditions": [
+        "y 係數相反。"
+      ],
+      "meaning": "相加消去 y。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能只減左邊不減右邊。",
+    "不能把「減第二式」只作用在第二式第一項。",
+    "係數既不相同也不相反時，需先使用下一技能的倍數放大。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "對齊同類項",
+      "check": "x、y、常數排成同欄。"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇要消去的未知數",
+      "check": "觀察係數關係。"
+    },
+    {
+      "step": 3,
+      "instruction": "決定相加或相減",
+      "check": "相反相加、相同相減。"
+    },
+    {
+      "step": 4,
+      "instruction": "逐項運算",
+      "check": "常數也要一起。"
+    },
+    {
+      "step": 5,
+      "instruction": "解一元並回代",
+      "check": "最後雙式檢驗。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 x+y=7，x-y=1。",
+      "solutionSteps": [
+        "兩式相加得 2x=8。",
+        "x=4。",
+        "代回得 y=3。"
+      ],
+      "answer": "(4,3)。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 2x+y=9，x+y=5。",
+      "solutionSteps": [
+        "兩式相減得 x=4。",
+        "代回 x+y=5 得 y=1。"
+      ],
+      "answer": "(4,1)。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 3x-2y=4，x+2y=8。",
+      "solutionSteps": [
+        "兩式相加得 4x=12。",
+        "x=3。",
+        "代回得 y=5/2。"
+      ],
+      "answer": "(3,5/2)。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "說明 (x+y=5)−(x-2y=1) 的正確結果。",
+      "solutionSteps": [
+        "左邊 x+y-x+2y=3y。",
+        "右邊 5-1=4。"
+      ],
+      "answer": "3y=4。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "相同係數仍相加",
+      "correction": "會得到 2y 而不是消去。"
+    },
+    {
+      "mistake": "減法時第二式未整列變號",
+      "correction": "括號應包住第二式。"
+    },
+    {
+      "mistake": "常數項漏算",
+      "correction": "等式右邊也必須同樣加減。"
+    },
+    {
+      "mistake": "得到 x 後忘記求 y",
+      "correction": "聯立解需要一組有序數對。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "y 係數 2 與 -2 應相加還相減？",
+      "answer": "相加。"
+    },
+    {
+      "prompt": "x 係數皆為 3 應如何消去？",
+      "answer": "兩式相減。"
+    },
+    {
+      "prompt": "①−② 時第二式的 -y 會怎樣？",
+      "answer": "減去 -y 變成 +y。"
+    },
+    {
+      "prompt": "消去後下一步？",
+      "answer": "解一元並回代。"
+    }
+  ],
+  "summary": [
+    "相反係數相加，相同係數相減。",
+    "整個方程式逐項運算。",
+    "消去後回代並檢驗。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-substitution-method 已建立必要基礎；本節將其用於「利用係數相同相減或係數相反相加，消去一個未知數。」",
+    "next": "下一技能「係數放大後消去」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "重新逐欄核算相加與整式相減示例，包含分數結果；所有符號與常數運算正確，且明確區分本節直接消去與下一節倍數放大。",
+    "reviewNote": "重新逐欄核算相加與整式相減示例，包含分數結果；所有符號與常數運算正確，且明確區分本節直接消去與下一節倍數放大。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "27dc587e8a3b0212fb357efa8565309b9410b32515fd85b3e706793ec71b0c75"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u04-s005-v001",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "basic",
+    "itemType": "mc",
+    "prompt": "解 x+y=7、x-y=1，將兩式相加會得到什麼？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "辨認相反係數相加",
+    "choices": [
+      "2x=8",
+      "2y=8",
+      "x=6",
+      "0=8"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "逐項相加：(x+x)+(y-y)=7+1，得 2x=8。",
+    "explanation": "y 係數相反，兩式相加消去 y。",
+    "steps": [
+      "對齊 x、y、常數。",
+      "逐項相加。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2x=8",
+        "truth": true,
+        "reason": "y+(-y)=0，x+x=2x。"
+      },
+      {
+        "choice": "2y=8",
+        "truth": false,
+        "reason": "相加時 y 會相消。"
+      },
+      {
+        "choice": "x=6",
+        "truth": false,
+        "reason": "x 項相加應為 2x。"
+      },
+      {
+        "choice": "0=8",
+        "truth": false,
+        "reason": "x 不會相消。"
+      }
+    ],
+    "misconceptionTarget": "把相反係數誤為相減",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「辨認相反係數相加」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "最直接的消去步驟。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "299d043a66de2cbbc9a59e8309115d3caba2b2c83d44c4439de7743f166ff911"
+  },
+  {
+    "questionId": "u04-s005-v002",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "basic",
+    "itemType": "mc",
+    "prompt": "2x+y=9 與 x+y=5 相減，若用第一式減第二式，結果為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "使用相同係數相減",
+    "choices": [
+      "x=14",
+      "3x=4",
+      "x=4",
+      "y=4"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "(2x-x)+(y-y)=9-5，得 x=4。",
+    "explanation": "相同 y 係數用相減消去。",
+    "steps": [
+      "第一式每項減第二式。",
+      "計算常數 9-5。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "x=14",
+        "truth": false,
+        "reason": "右邊錯用加法。"
+      },
+      {
+        "choice": "3x=4",
+        "truth": false,
+        "reason": "x-x 計算錯。"
+      },
+      {
+        "choice": "x=4",
+        "truth": true,
+        "reason": "逐項相減後只剩 x=4。"
+      },
+      {
+        "choice": "y=4",
+        "truth": false,
+        "reason": "相同的 y 係數會消去。"
+      }
+    ],
+    "misconceptionTarget": "只減常數或未知數項",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「使用相同係數相減」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "一步整列相減。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "6a042fd6f7cd0dd46d7b1395e2131f21d11092fb25fce726a53f2a7c5bc3fed1"
+  },
+  {
+    "questionId": "u04-s005-v003",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "basic",
+    "itemType": "mc",
+    "prompt": "若兩式中 y 的係數分別為 3 與 -3，應用哪種運算消去 y？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "選擇加或減",
+    "choices": [
+      "兩式相減",
+      "兩式相加",
+      "只把第一式乘 3",
+      "只看常數決定"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "3y+(-3y)=0，所以應相加。",
+    "explanation": "相反係數相加。",
+    "steps": [
+      "比較係數符號。",
+      "選擇使和為 0 的運算。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "兩式相減",
+        "truth": false,
+        "reason": "會得到 6y。"
+      },
+      {
+        "choice": "兩式相加",
+        "truth": true,
+        "reason": "相反數相加為 0。"
+      },
+      {
+        "choice": "只把第一式乘 3",
+        "truth": false,
+        "reason": "不會使係數抵消。"
+      },
+      {
+        "choice": "只看常數決定",
+        "truth": false,
+        "reason": "消去由未知數係數決定。"
+      }
+    ],
+    "misconceptionTarget": "背反口訣",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「選擇加或減」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "只需係數判斷。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "7a636904345872ba5c7d55fd592f0b2ae6e4604f537cb45d9ece64af5651bfa1"
+  },
+  {
+    "questionId": "u04-s005-v004",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "standard",
+    "itemType": "mc",
+    "prompt": "解題者要用加減消去法處理 3x−2y=4、x+2y=8。兩式相加後得到 4x=12。下列哪一個後續步驟正確？",
+    "givenConditions": [
+      "兩式相加已消去 y",
+      "所得等式為 4x=12"
+    ],
+    "target": "判斷消去後的正確處理",
+    "choices": [
+      "x=12−4",
+      "x=12×4",
+      "x=12÷3",
+      "x=12÷4"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "由 4x=12，等號兩邊同除以 4，得到 x=3；因此應寫 x=12÷4。",
+    "explanation": "未知數係數是 4，必須對等號兩邊做相同的除法。",
+    "steps": [
+      "由 4x=12 出發。",
+      "等號兩邊同除以4得到 x=3。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "x=12−4",
+        "truth": false,
+        "reason": "減去4不是等量除法。"
+      },
+      {
+        "choice": "x=12×4",
+        "truth": false,
+        "reason": "乘4會使左邊成為16x。"
+      },
+      {
+        "choice": "x=12÷3",
+        "truth": false,
+        "reason": "除以3把常數誤當係數。"
+      },
+      {
+        "choice": "x=12÷4",
+        "truth": true,
+        "reason": "兩邊同除以4，得到x=3。"
+      }
+    ],
+    "misconceptionTarget": "消去後忘記除以未知數的係數。",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "題幹已明示消去結果，只考後續等量運算。",
+    "boundaryAudit": "題幹已明示消去結果，只考後續等量運算。",
+    "difficultyReason": "標準：重點是消去後的等量處理。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "3de7a79a8adaadbc776a242d14f43bae21b87d1c85b767162af53916cfe0093e"
+  },
+  {
+    "questionId": "u04-s005-v005",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "standard",
+    "itemType": "mc",
+    "prompt": "要消去聯立方程式 4x+y=11、2x+y=7 中的 x，並規定最後使用「第一式減去處理後的第二式」。第二式應先做哪一個處理？",
+    "givenConditions": [
+      "第一式的 x 係數為4",
+      "第二式的 x 係數為2"
+    ],
+    "target": "選擇建立相同 x 係數的方法",
+    "choices": [
+      "第二式除以2",
+      "第二式乘以2",
+      "第二式乘以−2",
+      "第二式只把 x 項乘以2"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "第二式整體乘以 2 得 4x+2y=14，第一式再減去此式即可消去 x。",
+    "explanation": "要讓相減時 x 項抵消，第二式的每一項與等號右邊都必須同乘 2。",
+    "steps": [
+      "比較 x 係數4與2。",
+      "把第二式每一項及右邊同乘2。",
+      "以第一式減去處理後第二式。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "第二式除以2",
+        "truth": false,
+        "reason": "除以2後x係數為1。"
+      },
+      {
+        "choice": "第二式乘以2",
+        "truth": true,
+        "reason": "整式乘2後x係數成為4。"
+      },
+      {
+        "choice": "第二式乘以−2",
+        "truth": false,
+        "reason": "乘−2適合相加，不符指定相減。"
+      },
+      {
+        "choice": "第二式只把 x 項乘以2",
+        "truth": false,
+        "reason": "只乘x項會破壞等式。"
+      }
+    ],
+    "misconceptionTarget": "只改某一項係數或忽略指定消去策略。",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "題幹明定相減策略，只有整式乘2符合。",
+    "boundaryAudit": "題幹明定相減策略，只有整式乘2符合。",
+    "difficultyReason": "標準：先設計消去策略，再對整式作等量倍乘。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "db6eda49d8cbdc78f93542f9eb52172c6a192be3a172c557a01502da8ceb6056"
+  },
+  {
+    "questionId": "u04-s005-v006",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "standard",
+    "itemType": "mc",
+    "prompt": "計算 (x+y=5)−(x-2y=1) 的左邊，正確為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "處理整列減法符號",
+    "choices": [
+      "-y",
+      "y",
+      "2y",
+      "3y"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "x+y-(x-2y)=x+y-x+2y=3y。",
+    "explanation": "減去整個第二式要改變其每項符號。",
+    "steps": [
+      "加括號表示整式相減。",
+      "去括號。",
+      "合併 y 項。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-y",
+        "truth": false,
+        "reason": "未把減號分配到 -2y。"
+      },
+      {
+        "choice": "y",
+        "truth": false,
+        "reason": "漏掉第二式的 2y。"
+      },
+      {
+        "choice": "2y",
+        "truth": false,
+        "reason": "把 y+2y 合併錯。"
+      },
+      {
+        "choice": "3y",
+        "truth": true,
+        "reason": "y-(-2y)=3y。"
+      }
+    ],
+    "misconceptionTarget": "減號未分配至第二式全部項",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「處理整列減法符號」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "專門診斷符號。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "184461c5e45f8200b74c5b90c56a63df9d5665a60fb92e9f0622fd915ddef96a"
+  },
+  {
+    "questionId": "u04-s005-v007",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "advanced",
+    "itemType": "mc",
+    "prompt": "解 5x+3y=1、5x-2y=16，y 為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "含負結果的整列相減",
+    "choices": [
+      "-3",
+      "3",
+      "-5",
+      "15"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "第一式減第二式：5y=1-16=-15，所以 y=-3。",
+    "explanation": "相同 x 係數相減，常數差保留順序。",
+    "steps": [
+      "第一式減第二式。",
+      "解 5y=-15。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-3",
+        "truth": true,
+        "reason": "5(-3)=-15。"
+      },
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "忽略相減順序造成負號。"
+      },
+      {
+        "choice": "-5",
+        "truth": false,
+        "reason": "把 5y=-15 解錯。"
+      },
+      {
+        "choice": "15",
+        "truth": false,
+        "reason": "未除係數且符號錯。"
+      }
+    ],
+    "misconceptionTarget": "右邊相減次序顛倒",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「含負結果的整列相減」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "需保持指定相減方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "9e2dfdcf2a39fafc9cd1c331de5cf96c5909d2d319b5574ff08c66cf7867ba7e"
+  },
+  {
+    "questionId": "u04-s005-v008",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "advanced",
+    "itemType": "mc",
+    "prompt": "解 -2x+4y=10、2x+y=5，y 為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "處理負係數消去",
+    "choices": [
+      "1",
+      "5",
+      "3",
+      "-3"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "兩式相加得 5y=15，y=3。",
+    "explanation": "x 係數相反，即使一個為負仍直接相加。",
+    "steps": [
+      "相加消去 x。",
+      "解 5y=15。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1",
+        "truth": false,
+        "reason": "把 4y+y 誤成 4y。"
+      },
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "未除以 5。"
+      },
+      {
+        "choice": "3",
+        "truth": true,
+        "reason": "代入 y=3 可由第二式求 x=1。"
+      },
+      {
+        "choice": "-3",
+        "truth": false,
+        "reason": "相加後符號誤判。"
+      }
+    ],
+    "misconceptionTarget": "看到負號就選相減",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「處理負係數消去」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "需判斷相反係數。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "ccc8871b8d1e694c73f2c6c1807edfaa1cc4f4288d7afde7f6d83537d21d8fbc"
+  },
+  {
+    "questionId": "u04-s005-v009",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "advanced",
+    "itemType": "mc",
+    "prompt": "若用 ①−② 消去 x，①為 3x-2y=7，②為 3x+5y=-7，得到的 y 為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "同時處理兩處負號",
+    "choices": [
+      "2",
+      "-14/3",
+      "14/7",
+      "-2"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "①−②：-7y=7-(-7)=14，所以 y=-2。",
+    "explanation": "同係數相減時，右邊減負數變加法。",
+    "steps": [
+      "整式相減。",
+      "計算 -2y-5y=-7y。",
+      "計算 7-(-7)=14。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "右邊或 y 係數符號顛倒。"
+      },
+      {
+        "choice": "-14/3",
+        "truth": false,
+        "reason": "把 -7y 誤為 -3y。"
+      },
+      {
+        "choice": "14/7",
+        "truth": false,
+        "reason": "漏負號。"
+      },
+      {
+        "choice": "-2",
+        "truth": true,
+        "reason": "-7(-2)=14。"
+      }
+    ],
+    "misconceptionTarget": "減負數與係數合併錯誤",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "無單位或題幹單位一致",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「同時處理兩處負號」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "雙重符號負荷較高。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "cfa0c14a7458065b90c64d16220bdc7054684efe394eac943c57fd0d2aa0df5d"
+  },
+  {
+    "questionId": "u04-s005-v010",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "literacy",
+    "itemType": "mc",
+    "prompt": "兩種餐盒營養資料滿足 x+y=10、20x+20y=200。這兩式用加減消去後會顯示什麼？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "辨認資料欄位重複",
+    "choices": [
+      "第二式是第一式的 20 倍",
+      "唯一解 x=5,y=5",
+      "無解",
+      "x+y=0"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "第二式除以 20 即 x+y=10；相減得到 0=0。",
+    "explanation": "資料表兩欄其實重複同一資訊。",
+    "steps": [
+      "比較整式倍數。",
+      "消去得到 0=0。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "第二式是第一式的 20 倍",
+        "truth": true,
+        "reason": "20x+20y=200 正是 20(x+y=10)。"
+      },
+      {
+        "choice": "唯一解 x=5,y=5",
+        "truth": false,
+        "reason": "兩式沒有第二個獨立條件。"
+      },
+      {
+        "choice": "無解",
+        "truth": false,
+        "reason": "兩式完全相容。"
+      },
+      {
+        "choice": "x+y=0",
+        "truth": false,
+        "reason": "消去不會改變原總量。"
+      }
+    ],
+    "misconceptionTarget": "看到兩式就假設能唯一求解",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "第二式為總營養單位，除以每盒 20 後與盒數式等價。",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「辨認資料欄位重複」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "營養欄若每盒貢獻相同，第二式不增加資訊。",
+    "literacyContextNecessity": "兩條資料看似不同但數學上相依，這是表格判讀的必要情境。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "f55e9aba5c59103fca1d3ac35a6db33782e8c0c5b921e641cf184ac191497e5b"
+  },
+  {
+    "questionId": "u04-s005-v011",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "literacy",
+    "itemType": "mc",
+    "prompt": "兩臺機器產量記錄為 x+y=30 與 x-y=6。用加減消去後，機器 x 的產量為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "由總量與差額求產量",
+    "choices": [
+      "12",
+      "24",
+      "18",
+      "36"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "兩式相加得 2x=36，x=18。",
+    "explanation": "總產量與差額共同決定兩臺產量。",
+    "steps": [
+      "相加消去 y。",
+      "除以 2。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "12",
+        "truth": false,
+        "reason": "這是 y 的產量。"
+      },
+      {
+        "choice": "24",
+        "truth": false,
+        "reason": "把 30-6。"
+      },
+      {
+        "choice": "18",
+        "truth": true,
+        "reason": "18+12=30 且 18-12=6。"
+      },
+      {
+        "choice": "36",
+        "truth": false,
+        "reason": "未除以 2。"
+      }
+    ],
+    "misconceptionTarget": "把差額直接加到總量",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "所有產量以件為同一單位。",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「由總量與差額求產量」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "機器情境的總量與差額皆必要。",
+    "literacyContextNecessity": "若缺少總量或差額，x 不能唯一確定。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "412ccacf299af957c82c299d2ae5b6b3b3c51689091b63994b0ad08b2375eb79"
+  },
+  {
+    "questionId": "u04-s005-v012",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "literacy",
+    "itemType": "mc",
+    "prompt": "倉儲盤點有大箱 x 個、小箱 y 個：每箱都貼 1 張標籤，共 40 張；大箱另多貼 2 張警示標籤，共有警示標籤 30 張。若方程式為 x+y=40、2x=30，x 為何？",
+    "givenConditions": [
+      "依題幹所列數值、符號與關係"
+    ],
+    "target": "從盤點規則求箱數",
+    "choices": [
+      "10",
+      "15",
+      "20",
+      "30"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "第二式直接給 2x=30，x=15；再可得 y=25。",
+    "explanation": "其中一式已只含一元，消去概念退化為直接求解。",
+    "steps": [
+      "解 2x=30。",
+      "用總箱數檢查。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "10",
+        "truth": false,
+        "reason": "把 30 除以 3。"
+      },
+      {
+        "choice": "15",
+        "truth": true,
+        "reason": "15 個大箱共貼 30 張警示標籤。"
+      },
+      {
+        "choice": "20",
+        "truth": false,
+        "reason": "只將總箱數平均。"
+      },
+      {
+        "choice": "30",
+        "truth": false,
+        "reason": "把警示張數當箱數。"
+      }
+    ],
+    "misconceptionTarget": "把標籤總數與箱數混淆",
+    "prerequisiteCheck": "只需先備 system-substitution-method，並使用本技能「加減消去法」。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "張/箱×箱=張。",
+    "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+    "ambiguityAudit": "所求量明確為「從盤點規則求箱數」；四個選項互異，且依獨立重算只有一項成立。",
+    "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+    "difficultyReason": "警示標籤只由大箱貢獻，情境決定係數。",
+    "literacyContextNecessity": "大箱每個 2 張警示標籤是求 x 的必要資訊。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "1598cbd468258e1dfdf74bc800f30dfffd77d80c78e9cbeee8a4de13884885a5"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u04-s005-cr001",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "standard",
+    "itemType": "constructed-response",
+    "prompt": "用加減消去法解 4x+y=11、2x+y=7，並說明為何選相減。",
+    "requiredWork": [
+      "展示整列相減與回代。"
+    ],
+    "standardSolution": [
+      "兩式 y 係數相同，所以第一式減第二式。",
+      "2x=4，x=2。",
+      "代入 2x+y=7 得 y=3。",
+      "解為 (2,3)。"
+    ],
+    "alternativeMethods": [
+      "也可用第二式減第一式得到 -2x=-4。"
+    ],
+    "reasoningSteps": [
+      "辨認同係數。",
+      "整列相減。",
+      "回代。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "答案、選法理由與步驟完整。"
+      },
+      {
+        "score": 2,
+        "criteria": "答案正確但未說明為何相減。"
+      },
+      {
+        "score": 1,
+        "criteria": "正確得到 2x=4，回代錯誤。"
+      },
+      {
+        "score": 0,
+        "criteria": "相加後未能消去且無有效修正。"
+      }
+    ],
+    "partialCreditRules": [
+      "選擇與消去一分，求 x 一分，回代一分。"
+    ],
+    "followThroughPolicy": "相減順序相反不扣分，只要符號一致。",
+    "unitNotationRules": "本題無單位。",
+    "answerOnlyPolicy": "只答 (2,3) 最高 1 分。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "independentReview": {
+      "derivedResult": "(2,3)。",
+      "ambiguityAudit": "題意給定量、變數與所求明確；沒有第二種會改變答案的合理解釋。",
+      "boundaryAudit": "只使用本技能與已鎖定先備技能。",
+      "decision": "pass",
+      "reviewNote": "獨立重算兩式相減與回代，確認 8+3=11、4+3=7。",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "2dc9088b62a1a1f94752ede08604b967ad86f9919233d7353d9575dd55cf8810"
+  },
+  {
+    "questionId": "u04-s005-cr002",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-elimination-method",
+    "difficulty": "advanced",
+    "itemType": "constructed-response",
+    "prompt": "學生將 (3x-2y=7)−(3x+5y=-7) 寫成 3y=0。請找出錯誤並求正確的 y。",
+    "requiredWork": [
+      "必須展示去括號。",
+      "說明右邊減負數。"
+    ],
+    "standardSolution": [
+      "正確相減：3x-2y-(3x+5y)=7-(-7)。",
+      "左邊為 -7y，右邊為 14。",
+      "所以 y=-2。",
+      "原作答同時漏掉 -5y 的變號/合併，並把 7-(-7) 算錯。"
+    ],
+    "alternativeMethods": [
+      "可將第二式整體乘 -1 後與第一式相加。"
+    ],
+    "reasoningSteps": [
+      "用括號表示整式相減。",
+      "處理兩個負號。",
+      "求 y。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "指出兩處關鍵錯誤並得 y=-2。"
+      },
+      {
+        "score": 2,
+        "criteria": "得到 y=-2 且指出至少一處錯誤。"
+      },
+      {
+        "score": 1,
+        "criteria": "正確寫出 -7y=14 但最後除法錯，或只指出符號錯誤。"
+      },
+      {
+        "score": 0,
+        "criteria": "接受 3y=0 或沒有有效整式相減。"
+      }
+    ],
+    "partialCreditRules": [
+      "正確運算兩分，錯誤解釋一分。"
+    ],
+    "followThroughPolicy": "若只選擇相反順序得到 7y=-14，同樣滿分。",
+    "unitNotationRules": "本題無單位；負號必須清楚。",
+    "answerOnlyPolicy": "只答 y=-2 最高 1 分。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "independentReview": {
+      "derivedResult": "y=-2。",
+      "ambiguityAudit": "題意給定量、變數與所求明確；沒有第二種會改變答案的合理解釋。",
+      "boundaryAudit": "只使用本技能與已鎖定先備技能。",
+      "decision": "pass",
+      "reviewNote": "獨立按兩種相減順序核對，均得到 y=-2。",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "d3d1f934e7649d8fc8940e276b84c0225a3c6fb59daba4db16592e60eecf92d1"
+  }
+];
+
+export const DRAWING_SPECS = [];

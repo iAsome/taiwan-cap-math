@@ -1,0 +1,1813 @@
+// Deterministically serialized reviewed U06 content. Do not edit.
+export default {
+  "lecture": {
+    "lectureId": "u06-s003-lecture-r1",
+    "unitId": "u06",
+    "numericUnitId": 6,
+    "topicId": "u06-ratio-basics",
+    "skillId": "ratio-part-total",
+    "lockedSkillTitle": "部分量與總量",
+    "title": "部分量與總量：把比轉成份數",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "skillIdentity": {
+      "unitTitle": "比例式",
+      "topicTitle": "比與比例式基礎",
+      "skillOrder": 3,
+      "lockedPrerequisiteSkillIds": [
+        "proportion-solve"
+      ],
+      "capBoundary": "處理兩部分或多個已明確部分的份數分配；完整連比技巧不在本技能展開。"
+    },
+    "prerequisiteBridge": "已知兩部分的比時，可把最簡比的每一項看成相同大小的份數。比例式求解也可得到同一結果。",
+    "learningOutcomes": [
+      "能由 A:B=m:n 找出總份數 m+n。",
+      "能由總量求各部分，也能由一部分反求總量。",
+      "能分辨部分比、部分對總量的比與百分率。",
+      "能處理增減一部分後的新總量與新比。"
+    ],
+    "glossary": [
+      {
+        "term": "部分量",
+        "definition": "總體中的某一類數量。"
+      },
+      {
+        "term": "總量",
+        "definition": "所有互斥部分合計的數量。"
+      },
+      {
+        "term": "份數",
+        "definition": "把比的每一項看成相同大小單位後的個數。"
+      },
+      {
+        "term": "單位份量",
+        "definition": "總量除以總份數所得的每一份大小。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "A:B=m:n",
+        "meaning": "A 佔 m 份、B 佔 n 份。"
+      },
+      {
+        "symbol": "A/(A+B)=m/(m+n)",
+        "meaning": "A 占總量的比例。"
+      },
+      {
+        "symbol": "每份=總量÷(m+n)",
+        "meaning": "兩部分時的單位份量。"
+      }
+    ],
+    "conceptNarrative": [
+      "若紅球:藍球=2:3，可想成紅球 2 份、藍球 3 份，總共 5 份。",
+      "已知總量時，先算每份；已知一部分時，先由該部分除以它的份數。",
+      "部分比總量不是原來的 2:3，而是 2:(2+3)=2:5。",
+      "只有各部分互不重複且涵蓋全部時，才能直接相加成總量。",
+      "題目若增添或移走某部分，原比通常會改變，必須用實際量重算。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "份數模型",
+        "statement": "A:B=m:n 表示存在同一份量 k，使 A=mk、B=nk。"
+      },
+      {
+        "name": "部分占總量",
+        "statement": "A 占總量比例為 A/(A+B)=m/(m+n)，前提是 A、B 為全部且互斥。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "A=總量×m/(m+n)",
+        "conditions": [
+          "A、B 為全部",
+          "m+n≠0"
+        ],
+        "meaning": "由總量求 A。"
+      },
+      {
+        "formula": "總量=A×(m+n)/m",
+        "conditions": [
+          "m≠0"
+        ],
+        "meaning": "由 A 反求總量。"
+      }
+    ],
+    "nonApplicableCases": [
+      "A、B 有重疊時不能直接把 A+B 當總量。",
+      "只知道 A:B，沒有任何實際量時，不能求唯一的 A、B。",
+      "把 A:B=2:3 誤認成 A 占總量 2/3。",
+      "人數、物件數通常要求整數，非整數結果需檢查。",
+      "加入新成員後仍沿用舊比，除非題目明說比例保持不變。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認哪些量構成全部。",
+        "check": "有沒有遺漏第三類或重複計數？"
+      },
+      {
+        "step": 2,
+        "instruction": "把比化成最簡整數比並加總份數。",
+        "check": "總份數是否為各項相加？"
+      },
+      {
+        "step": 3,
+        "instruction": "根據已知量求每份。",
+        "check": "已知的是總量還是某一部分？"
+      },
+      {
+        "step": 4,
+        "instruction": "乘回各部分份數。",
+        "check": "各部分相加是否等於總量？"
+      },
+      {
+        "step": 5,
+        "instruction": "若情況改變，重算實際量與新比。",
+        "check": "有無增加、減少或轉移？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "甲乙人數比 3:5，共 32 人，求甲。",
+        "solutionSteps": [
+          "總份數 3+5=8。",
+          "每份 32÷8=4，甲為 3×4=12。"
+        ],
+        "answer": "12 人。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "紅球:白球=4:7，紅球有 20 顆，求總數。",
+        "solutionSteps": [
+          "4 份是 20，所以每份 5。",
+          "總份數 11，總數 11×5=55。"
+        ],
+        "answer": "55 顆。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "甲:乙=2:5，乙比甲多 18，求甲乙。",
+        "solutionSteps": [
+          "份數差 5-2=3 份對應 18。",
+          "每份 6，甲 12、乙 30。"
+        ],
+        "answer": "甲 12，乙 30。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "班上男:女=4:5，共 36 人；再加入 4 名男生，求新比。",
+        "solutionSteps": [
+          "原每份 36÷9=4，男 16、女 20。",
+          "加入後男 20、女 20，新比 1:1。"
+        ],
+        "answer": "1:1。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "3:5 的總份數寫成 15。",
+        "why": "把加總誤成相乘。",
+        "correction": "總份數是 3+5=8。"
+      },
+      {
+        "mistake": "甲:乙=2:3，說甲占總量 2/3。",
+        "why": "分母應是總份數。",
+        "correction": "甲占 2/5。"
+      },
+      {
+        "mistake": "已知乙 24 卻用 24÷總份數。",
+        "why": "沒有對準乙的份數。",
+        "correction": "先用 24÷乙的份數。"
+      },
+      {
+        "mistake": "求出兩部分後未加總驗算。",
+        "why": "份量乘錯不易發現。",
+        "correction": "檢查部分和等於總量。"
+      },
+      {
+        "mistake": "新增 3 人後仍寫原比。",
+        "why": "比例不是永久標籤。",
+        "correction": "先更新實際人數再化簡。"
+      },
+      {
+        "mistake": "把有重疊的社團人數直接相加。",
+        "why": "違反互斥條件。",
+        "correction": "先處理同時參加者。"
+      }
+    ],
+    "selfCheck": [
+      "所有部分真的組成全部嗎？",
+      "總份數是相加而非相乘嗎？",
+      "已知量對應到幾份？",
+      "答案相加或相減能回到題目嗎？",
+      "變動後是否重新算比？"
+    ],
+    "summary": [
+      "比的每一項可視為相同大小的份數。",
+      "總量對應總份數，部分量對應該部分份數。",
+      "部分占總量要以總份數作分母。",
+      "數量變動後要用新實際量重算。"
+    ],
+    "connections": {
+      "previous": "比例式可用來求未知部分。",
+      "next": [
+        "比例式性質能用代數描述份數關係。",
+        "正比將份量固定的關係寫成 y=kx。"
+      ]
+    },
+    "figureReferences": [
+      "u06-fig-part-total-strip-01"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u06-s003-v001",
+        "u06-s003-v002",
+        "u06-s003-v003",
+        "u06-s003-v004",
+        "u06-s003-v005",
+        "u06-s003-v006",
+        "u06-s003-v007",
+        "u06-s003-v008",
+        "u06-s003-v009",
+        "u06-s003-v010",
+        "u06-s003-v011",
+        "u06-s003-v012"
+      ],
+      "constructedResponseIds": [
+        "u06-s003-cr001",
+        "u06-s003-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "contentAuthorityConfirmed": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "以份數法重新核對 32 人、20 顆、差 18 與加入 4 人四種模型；特別確認部分占總量的分母為總份數，且重疊集合與變動後比例均列為不可直接套用情形。",
+      "reviewVersion": "human-lecture-review-u06-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "d18f4482d90a63ca32b417ec66d8de98134144930fb4e40203ebaa49c48c6f34"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u06-s003-v001",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "甲:乙=2:3，甲乙共 25 人，甲有多少人？",
+      "text": "甲:乙=2:3，甲乙共 25 人，甲有多少人？",
+      "givenConditions": "甲乙為全部且互斥。",
+      "target": "由總量求部分量",
+      "choices": [
+        "5人",
+        "15人",
+        "10人",
+        "20人"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "甲=25×2/(2+3)=10。",
+      "mainExplanation": "份數法：2+3=5份，25÷5×2=10。",
+      "explanation": "份數法：2+3=5份，25÷5×2=10。",
+      "steps": [
+        "總份數5",
+        "每份5人",
+        "甲2份為10人"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5人",
+          "truth": false,
+          "reason": "5人是每份，不是甲。"
+        },
+        {
+          "choice": "15人",
+          "truth": false,
+          "reason": "15人是乙。"
+        },
+        {
+          "choice": "10人",
+          "truth": true,
+          "reason": "總份數5，每份25÷5=5，甲2份為10人。"
+        },
+        {
+          "choice": "20人",
+          "truth": false,
+          "reason": "20人把甲當4份。"
+        }
+      ],
+      "misconceptionTarget": "把比的其中一項直接當人數。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 60,
+      "unitCheck": "人數單位一致。",
+      "roundingCheck": "無近似，結果為整數。",
+      "ambiguityBoundaryAudit": "兩部分合計25。",
+      "difficultyReason": "基礎份數分配。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9d0c3807c961339c398ba937bffd52a3c07c415dff938850803f8ebf3ab2a021"
+    },
+    {
+      "questionId": "u06-s003-v002",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "紅球:白球=4:5，共 36 顆，白球有多少顆？",
+      "text": "紅球:白球=4:5，共 36 顆，白球有多少顆？",
+      "givenConditions": "只有紅白兩類。",
+      "target": "由總量求後一部分",
+      "choices": [
+        "16顆",
+        "18顆",
+        "25顆",
+        "20顆"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "白球=36×5/9=20。",
+      "mainExplanation": "36÷9=4，再乘白球份數5。",
+      "explanation": "36÷9=4，再乘白球份數5。",
+      "steps": [
+        "4+5=9",
+        "36÷9=4",
+        "4×5=20"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "16顆",
+          "truth": false,
+          "reason": "16顆是紅球。"
+        },
+        {
+          "choice": "18顆",
+          "truth": false,
+          "reason": "18顆是假設各半。"
+        },
+        {
+          "choice": "25顆",
+          "truth": false,
+          "reason": "25顆把每份5誤乘5。"
+        },
+        {
+          "choice": "20顆",
+          "truth": true,
+          "reason": "總份數9，每份4顆，白球5份為20顆。"
+        }
+      ],
+      "misconceptionTarget": "選錯對應份數。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 60,
+      "unitCheck": "顆數。",
+      "roundingCheck": "精確整數。",
+      "ambiguityBoundaryAudit": "白球對應5份。",
+      "difficultyReason": "基礎部分求值。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "96032c25eed36e039b5dd31a5956df424766d5de1f6e3f3e525d9d47db0da539"
+    },
+    {
+      "questionId": "u06-s003-v003",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "basic",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "果汁原液:水=1:4，總量 2.5 公升，原液多少公升？",
+      "text": "果汁原液:水=1:4，總量 2.5 公升，原液多少公升？",
+      "givenConditions": "原液與水構成全部。",
+      "target": "由小數總量求部分",
+      "choices": [
+        "0.5公升",
+        "0.4公升",
+        "1公升",
+        "2公升"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "0.5+2.0=2.5，且0.5:2.0=1:4。",
+      "mainExplanation": "原液=2.5×1/(1+4)=0.5。",
+      "explanation": "原液=2.5×1/(1+4)=0.5。",
+      "steps": [
+        "總份數5",
+        "每份0.5公升",
+        "原液1份"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.5公升",
+          "truth": true,
+          "reason": "總份數5，原液占1/5，2.5÷5=0.5。"
+        },
+        {
+          "choice": "0.4公升",
+          "truth": false,
+          "reason": "0.4是把4當總份數。"
+        },
+        {
+          "choice": "1公升",
+          "truth": false,
+          "reason": "1是錯把原液占1/2.5。"
+        },
+        {
+          "choice": "2公升",
+          "truth": false,
+          "reason": "2是水量。"
+        }
+      ],
+      "misconceptionTarget": "把水的4份當總份數。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 70,
+      "unitCheck": "公升單位一致。",
+      "roundingCheck": "2.5為精確量。",
+      "ambiguityBoundaryAudit": "答案需為正且小於總量。",
+      "difficultyReason": "基礎小數份數。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "76524da4b065b00e04ef5db1737bc7372c6b6d81df2e65be0a735008bfed766f"
+    },
+    {
+      "questionId": "u06-s003-v004",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "甲:乙=3:7，甲有 18 元，兩人共有多少元？",
+      "text": "甲:乙=3:7，甲有 18 元，兩人共有多少元？",
+      "givenConditions": "兩人的金額為全部。",
+      "target": "由一部分反求總量",
+      "choices": [
+        "42元",
+        "60元",
+        "54元",
+        "72元"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "總量=18×10/3=60。",
+      "mainExplanation": "由已知部分先求單位份量，再求總量。",
+      "explanation": "由已知部分先求單位份量，再求總量。",
+      "steps": [
+        "18÷3=6",
+        "(3+7)×6=60"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "42元",
+          "truth": false,
+          "reason": "42元是乙的金額。"
+        },
+        {
+          "choice": "60元",
+          "truth": true,
+          "reason": "3份是18，每份6；總10份為60。"
+        },
+        {
+          "choice": "54元",
+          "truth": false,
+          "reason": "54元把總份數當9。"
+        },
+        {
+          "choice": "72元",
+          "truth": false,
+          "reason": "72元把甲加乙份數算12。"
+        }
+      ],
+      "misconceptionTarget": "用總份數直接除已知部分。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 80,
+      "unitCheck": "元。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "每份6元，結果唯一。",
+      "difficultyReason": "逆向份數法。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "24a2539fa8d423446e75fb960cd6d01abda33109893510cbf4e9f2969fb1018c"
+    },
+    {
+      "questionId": "u06-s003-v005",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "甲:乙=2:5，乙比甲多 21 本書。甲有多少本？",
+      "text": "甲:乙=2:5，乙比甲多 21 本書。甲有多少本？",
+      "givenConditions": "乙大於甲，差為正。",
+      "target": "由兩部分差求部分",
+      "choices": [
+        "7本",
+        "21本",
+        "35本",
+        "14本"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "甲14、乙35，差21且比2:5。",
+      "mainExplanation": "差量對應份數差5-2=3。",
+      "explanation": "差量對應份數差5-2=3。",
+      "steps": [
+        "21÷3=7",
+        "甲2×7=14"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "7本",
+          "truth": false,
+          "reason": "7本是每份。"
+        },
+        {
+          "choice": "21本",
+          "truth": false,
+          "reason": "21本是差，不是甲。"
+        },
+        {
+          "choice": "35本",
+          "truth": false,
+          "reason": "35本是乙。"
+        },
+        {
+          "choice": "14本",
+          "truth": true,
+          "reason": "份數差3對應21，每份7，甲2份為14。"
+        }
+      ],
+      "misconceptionTarget": "把差量當一份或當甲量。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 85,
+      "unitCheck": "本數。",
+      "roundingCheck": "精確整數。",
+      "ambiguityBoundaryAudit": "比與差同時驗證。",
+      "difficultyReason": "需要把差量對應份數差。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d8fd69826b1f32c52466c2a3c026f0048e6b9c5c992f424d4b067cd77502b28f"
+    },
+    {
+      "questionId": "u06-s003-v006",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "standard",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "一班男生:女生=5:4，女生 16 人。全班多少人？",
+      "text": "一班男生:女生=5:4，女生 16 人。全班多少人？",
+      "givenConditions": "男女為全部。",
+      "target": "已知後一部分求總量",
+      "choices": [
+        "36人",
+        "20人",
+        "32人",
+        "40人"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "男20、女16，合36。",
+      "mainExplanation": "先由女生4份求每份，再乘總份數9。",
+      "explanation": "先由女生4份求每份，再乘總份數9。",
+      "steps": [
+        "16÷4=4",
+        "9×4=36"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "36人",
+          "truth": true,
+          "reason": "4份是16，每份4；總9份為36。"
+        },
+        {
+          "choice": "20人",
+          "truth": false,
+          "reason": "20人是男生。"
+        },
+        {
+          "choice": "32人",
+          "truth": false,
+          "reason": "32人漏算一份。"
+        },
+        {
+          "choice": "40人",
+          "truth": false,
+          "reason": "40人把總份數當10。"
+        }
+      ],
+      "misconceptionTarget": "把男生人數當總量。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 75,
+      "unitCheck": "人數。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "人數皆為整數。",
+      "difficultyReason": "標準逆向份數。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4af323bf2c90022acf1ef9b87e027e93bc5c3b9add7ed9ae49d2a520737b4f5f"
+    },
+    {
+      "questionId": "u06-s003-v007",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "甲乙原有人數比 3:5，共 40 人。若甲增加 4 人、乙不變，新比為何？",
+      "text": "甲乙原有人數比 3:5，共 40 人。若甲增加 4 人、乙不變，新比為何？",
+      "givenConditions": "只有甲增加4人。",
+      "target": "變動後重算比",
+      "choices": [
+        "3:5",
+        "19:25",
+        "7:5",
+        "4:5"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "19+25=44，且題目只增加4人。",
+      "mainExplanation": "先求原實際人數，再更新甲並化簡。",
+      "explanation": "先求原實際人數，再更新甲並化簡。",
+      "steps": [
+        "40÷8=5",
+        "甲15、乙25",
+        "甲增至19",
+        "19:25已互質"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3:5",
+          "truth": false,
+          "reason": "未更新甲人數。"
+        },
+        {
+          "choice": "19:25",
+          "truth": true,
+          "reason": "原每份5，甲15、乙25；甲增4成19，新比19:25。"
+        },
+        {
+          "choice": "7:5",
+          "truth": false,
+          "reason": "把增加4人誤成增加4份。"
+        },
+        {
+          "choice": "4:5",
+          "truth": false,
+          "reason": "把19:25錯誤近似成4:5。"
+        }
+      ],
+      "misconceptionTarget": "變動後仍沿用舊比或把實量當份數。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 105,
+      "unitCheck": "人數。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "新比不要求維持原小整數結構。",
+      "difficultyReason": "多步更新與化簡。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "886d8071a2ce3b569196b4be6d0d880d4094dc8ba1422259a8ef032980a10155"
+    },
+    {
+      "questionId": "u06-s003-v008",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "甲:乙=4:7，若從乙移 6 個給甲後兩者相等，原本共有多少個？",
+      "text": "甲:乙=4:7，若從乙移 6 個給甲後兩者相等，原本共有多少個？",
+      "givenConditions": "移動6個不改變總數。",
+      "target": "由轉移後相等反推總量",
+      "choices": [
+        "33個",
+        "55個",
+        "44個",
+        "66個"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "原為16與28，移6後皆22。",
+      "mainExplanation": "移動不改變總量，但使兩者差距縮少12。",
+      "explanation": "移動不改變總量，但使兩者差距縮少12。",
+      "steps": [
+        "4k+6=7k-6",
+        "3k=12",
+        "k=4",
+        "總量=11×4=44"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "33個",
+          "truth": false,
+          "reason": "33對應k=3，移後不相等。"
+        },
+        {
+          "choice": "55個",
+          "truth": false,
+          "reason": "55對應k=5。"
+        },
+        {
+          "choice": "44個",
+          "truth": true,
+          "reason": "令每份k，4k+6=7k-6，得k=4，總量11k=44。"
+        },
+        {
+          "choice": "66個",
+          "truth": false,
+          "reason": "66把移動6誤當每份。"
+        }
+      ],
+      "misconceptionTarget": "只把6視為原差，忽略一加一減。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 125,
+      "unitCheck": "個數。",
+      "roundingCheck": "精確整數。",
+      "ambiguityBoundaryAudit": "『從乙移給甲』同時改變兩部分。",
+      "difficultyReason": "進階變動方程。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "dc48e07272418a00651479641ff8611e69a08832173c51e8b653c64456b0a97f"
+    },
+    {
+      "questionId": "u06-s003-v009",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "advanced",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "甲:乙=3:8，甲增加 6、乙減少 4 後比為 1:2。原來甲是多少？",
+      "text": "甲:乙=3:8，甲增加 6、乙減少 4 後比為 1:2。原來甲是多少？",
+      "givenConditions": "甲增加6、乙減少4，兩者皆保持正數。",
+      "target": "複合變動反推原量",
+      "choices": [
+        "24",
+        "18",
+        "32",
+        "48"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "原甲24、乙64；變動後30:60=1:2。",
+      "mainExplanation": "以共同份量k表示原數，再建立變動後比例式。",
+      "explanation": "以共同份量k表示原數，再建立變動後比例式。",
+      "steps": [
+        "2(3k+6)=8k-4",
+        "6k+12=8k-4",
+        "k=8",
+        "甲=3k=24"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "24",
+          "truth": true,
+          "reason": "令甲3k、乙8k；2(3k+6)=8k-4，得k=8，甲=24。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "18對應k=6，變動後24:44≠1:2。"
+        },
+        {
+          "choice": "32",
+          "truth": false,
+          "reason": "32不是3的倍數份量。"
+        },
+        {
+          "choice": "48",
+          "truth": false,
+          "reason": "48對應k=16，新比54:124。"
+        }
+      ],
+      "misconceptionTarget": "變動量放錯部分或交叉相乘錯誤。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 140,
+      "unitCheck": "無單位。",
+      "roundingCheck": "精確整數。",
+      "ambiguityBoundaryAudit": "數據使份量與原量均為整數。",
+      "difficultyReason": "高階方程建模。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3a27af182435c6218d879e9e1f6fefc71363a68faba638526e0a8597cc2bd625"
+    },
+    {
+      "questionId": "u06-s003-v010",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "運動社男:女=7:5，共 48 人。若今天男生請假 4 人、女生全到，出席男:女為何？",
+      "text": "運動社男:女=7:5，共 48 人。若今天男生請假 4 人、女生全到，出席男:女為何？",
+      "givenConditions": "男女為全部，只有男生請假4。",
+      "target": "在出席情境更新部分比",
+      "choices": [
+        "7:5",
+        "6:5",
+        "4:5",
+        "5:6"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "出席總44，男24女20，比6:5。",
+      "mainExplanation": "先求原人數，再更新出席量。",
+      "explanation": "先求原人數，再更新出席量。",
+      "steps": [
+        "48÷12=4",
+        "男28女20",
+        "男24",
+        "24:20=6:5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "7:5",
+          "truth": false,
+          "reason": "7:5未扣請假。"
+        },
+        {
+          "choice": "6:5",
+          "truth": true,
+          "reason": "原每份4，男28女20；男出席24，24:20=6:5。"
+        },
+        {
+          "choice": "4:5",
+          "truth": false,
+          "reason": "4:5把男減成16。"
+        },
+        {
+          "choice": "5:6",
+          "truth": false,
+          "reason": "5:6為倒比。"
+        }
+      ],
+      "misconceptionTarget": "把請假人數從份數扣除。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 100,
+      "unitCheck": "人數。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "題目問出席比，不是原登記比。",
+      "difficultyReason": "情境變動必要。",
+      "literacyContextNecessity": "請假條件直接改變部分量，必須保留情境才能解題。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "88a18357d9f6a1b3feb89c23e42162a80e069c96a5b0fe6274e4f6094a747258"
+    },
+    {
+      "questionId": "u06-s003-v011",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "園區樹木中喬木:灌木=2:7，共 270 株。計畫移走灌木 45 株，移後喬木占剩餘總數的幾分之幾？",
+      "text": "園區樹木中喬木:灌木=2:7，共 270 株。計畫移走灌木 45 株，移後喬木占剩餘總數的幾分之幾？",
+      "givenConditions": "只移灌木45株。",
+      "target": "變動後部分占總量",
+      "choices": [
+        "2/9",
+        "1/4",
+        "4/15",
+        "4/13"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "60:165=4:11，所以喬木占總量4/(4+11)=4/15。",
+      "mainExplanation": "先用比例求實際株數，再更新總量與部分率。",
+      "explanation": "先用比例求實際株數，再更新總量與部分率。",
+      "steps": [
+        "270÷9=30",
+        "喬木60灌木210",
+        "移後總225",
+        "60/225=4/15"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2/9",
+          "truth": false,
+          "reason": "2/9是原本喬木占比。"
+        },
+        {
+          "choice": "1/4",
+          "truth": false,
+          "reason": "1/4錯把剩餘總量240。"
+        },
+        {
+          "choice": "4/15",
+          "truth": true,
+          "reason": "原每份30，喬木60、灌木210；移後灌木165，總225，喬木占60/225=4/15。"
+        },
+        {
+          "choice": "4/13",
+          "truth": false,
+          "reason": "4/13錯誤約分。"
+        }
+      ],
+      "misconceptionTarget": "移走後仍使用原總量或原占比。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 120,
+      "unitCheck": "株數。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "剩餘總量需同步減45。",
+      "difficultyReason": "兩階段比例與部分率。",
+      "literacyContextNecessity": "園區管理動作改變分母，情境不可刪除。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4eab5ada05d8e7683a9c06d0b155fd52d8c5c1634db12c883efe68d9131f0898"
+    },
+    {
+      "questionId": "u06-s003-v012",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "literacy",
+      "itemType": "multiple-choice",
+      "type": "mc",
+      "prompt": "飲料 A:B=3:2，共 1.5 公升。倒出 0.3 公升混合均勻飲料後，剩餘 A:B 為何？",
+      "text": "飲料 A:B=3:2，共 1.5 公升。倒出 0.3 公升混合均勻飲料後，剩餘 A:B 為何？",
+      "givenConditions": "倒出前混合均勻。",
+      "target": "判斷同比例移除對比的影響",
+      "choices": [
+        "6:4",
+        "2:3",
+        "9:4",
+        "3:2"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "以實際量驗算0.72/0.48=1.5。",
+      "mainExplanation": "倒出混合液相當於 A、B 同乘相同剩餘比例，因此比值維持3:2。",
+      "explanation": "倒出混合液相當於 A、B 同乘相同剩餘比例，因此比值維持3:2。",
+      "steps": [
+        "原A0.9L、B0.6L",
+        "倒出20%後各剩80%",
+        "0.72:0.48=3:2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6:4",
+          "truth": false,
+          "reason": "6:4等值但不是最簡。"
+        },
+        {
+          "choice": "2:3",
+          "truth": false,
+          "reason": "2:3為倒比。"
+        },
+        {
+          "choice": "9:4",
+          "truth": false,
+          "reason": "9:4沒有依據。"
+        },
+        {
+          "choice": "3:2",
+          "truth": true,
+          "reason": "混合均勻後倒出時兩成分按同一比例減少，剩餘比不變。"
+        }
+      ],
+      "misconceptionTarget": "認為倒出總量一定改變成分比。",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "proportion-solve"
+        ],
+        "evidence": "本題只使用已鎖定前置技能 ['proportion-solve'] 與本技能定義；解法未引用後續單元技巧。"
+      },
+      "estimatedTimeSec": 110,
+      "unitCheck": "公升。",
+      "roundingCheck": "無近似。",
+      "ambiguityBoundaryAudit": "『混合均勻』保證倒出液成分比與原液相同。",
+      "difficultyReason": "概念判斷而非只算份數。",
+      "literacyContextNecessity": "混合均勻是比保持不變的必要條件，具有數學作用。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9441a3ab47d5e2a6247795115d03d4e5d80b0fcf5d19c1de5015de717ab4468c"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u06-s003-cr001",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "圖示把總量分成甲3份、乙5份。若總量64，求甲、乙，並說明圖中的每一格代表多少。",
+      "target": "由份數圖求部分",
+      "requiredWork": [
+        "由圖讀出總份數。",
+        "求每份與兩部分。",
+        "用總和和比值驗算。"
+      ],
+      "fullCreditSolution": [
+        "總份數3+5=8。",
+        "每份64÷8=8；甲3×8=24，乙5×8=40。",
+        "24+40=64，且24:40=3:5。"
+      ],
+      "alternativeSolutions": [
+        "可列甲=3k、乙=5k，8k=64。"
+      ],
+      "reasoningSteps": [
+        "總份數3+5=8。",
+        "每份64÷8=8；甲3×8=24，乙5×8=40。",
+        "24+40=64，且24:40=3:5。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "每份8、甲24、乙40，並完成總和或比值驗算。"
+        },
+        {
+          "score": 2,
+          "criteria": "甲乙正確但未說每份或未驗算。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確讀出8份並建立64÷8，但後續一項乘錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "把3×5當總份數或無有效過程。"
+        }
+      ],
+      "partialCreditRules": [
+        "讀圖總份數與每份是核心。",
+        "甲乙顛倒但計算一致最多1分。"
+      ],
+      "followThroughPolicy": "若每份計算小錯，後續按3份與5份一致乘算可給1分；若把圖的份數讀錯，不採跟隨。",
+      "unitNotationRules": "答案單位依題目視為個；圖格只代表份數，不代表固定8直到使用總量。",
+      "answerOnlyPolicy": "只寫24、40最多2分。",
+      "commonErrors": [
+        "總份數寫15。",
+        "甲乙份數顛倒。",
+        "只求一部分。"
+      ],
+      "visualMode": "figure-supported",
+      "figureId": "u06-fig-part-total-strip-01",
+      "drawingSpecRef": "units/u06/s003/drawing-specs.jsonl#u06-fig-part-total-strip-01",
+      "independentReview": {
+        "derivedResult": "甲24、乙40、每份8。",
+        "ambiguity": "圖中3格與5格標示明確，圖不按實際大小但格數可數。",
+        "scope": "U06 locked skill only; no future-unit method required.",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "7d1e14ababd2c55100e8b6addf83d38380c0e533214617c12a8ed7175b5f5737"
+    },
+    {
+      "questionId": "u06-s003-cr002",
+      "unitId": "u06",
+      "numericUnitId": 6,
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "甲:乙=4:9。從乙移10給甲後，新比為2:3。求原來甲、乙與總量。",
+      "target": "轉移後比例反推",
+      "requiredWork": [
+        "以4k、9k表示原量。",
+        "建立轉移後比例式。",
+        "求兩部分並驗證轉移後比。"
+      ],
+      "fullCreditSolution": [
+        "令甲=4k、乙=9k。",
+        "(4k+10):(9k-10)=2:3，所以3(4k+10)=2(9k-10)。",
+        "12k+30=18k-20，6k=50，k=25/3。",
+        "原甲100/3、乙75，總量325/3；轉移後130/3:65=2:3。"
+      ],
+      "alternativeSolutions": [
+        "可用原差5k；轉移後差縮少20，且2:3的差為1份，再聯立總量不變求解。"
+      ],
+      "reasoningSteps": [
+        "令甲=4k、乙=9k。",
+        "(4k+10):(9k-10)=2:3，所以3(4k+10)=2(9k-10)。",
+        "12k+30=18k-20，6k=50，k=25/3。",
+        "原甲100/3、乙75，總量325/3；轉移後130/3:65=2:3。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "建立正確比例式並得到甲100/3、乙75、總量325/3，完成驗算。"
+        },
+        {
+          "score": 2,
+          "criteria": "方程正確且k=25/3，但漏一個所求量或驗算。"
+        },
+        {
+          "score": 1,
+          "criteria": "用4k、9k表示正確，轉移式有單一符號錯誤。"
+        },
+        {
+          "score": 0,
+          "criteria": "把10當10份、總量因轉移改變或無有效過程。"
+        }
+      ],
+      "partialCreditRules": [
+        "接受分數量，題目未限定整數物件。",
+        "若作答者指出若是人數情境資料不合理，且仍完成代數，可照常評分。"
+      ],
+      "followThroughPolicy": "方程建立正確後的算術錯誤可依錯誤k一致求三量給1至2分；若一開始把乙也加10，沒有跟隨分。",
+      "unitNotationRules": "分數可寫帶分數；需清楚標示甲、乙、總量。",
+      "answerOnlyPolicy": "只寫三個數且無方程最多1分。",
+      "commonErrors": [
+        "誤以為轉移改變總量。",
+        "甲減10乙加10。",
+        "強迫k為整數。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "甲100/3、乙75、總325/3。",
+        "ambiguity": "題目使用一般量而非人數，分數解可接受且唯一。",
+        "scope": "U06 locked skill only; no future-unit method required.",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "d34acbeb6324cc61e2e01d623c80333f676e229ffae74e98fc6deefbf9446e0e"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "reviewId": "u06-s003-v001-semantic-review-r1",
+      "questionId": "u06-s003-v001",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "9d0c3807c961339c398ba937bffd52a3c07c415dff938850803f8ebf3ab2a021",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "甲=25×2/(2+3)=10。",
+      "derivedAnswer": "10人",
+      "storedAnswer": "10人",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "5人是每份，不是甲。",
+        "15人是乙。",
+        "總份數5，每份25÷5=5，甲2份為10人。",
+        "20人把甲當4份。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由總量求部分量」，已明示必要條件：甲乙為全部且互斥。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：人數單位一致。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：兩部分合計25。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似，結果為整數。。"
+      },
+      "difficultyReason": "基礎份數分配。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：甲=25×2/(2+3)=10。 正確選項為「10人」。逐項檢查後，唯一為真的理由是「總份數5，每份25÷5=5，甲2份為10人。」；其餘三項分別因「5人是每份，不是甲。」、「15人是乙。」、「20人把甲當4份。」而排除。邊界與語意再檢查：兩部分合計25。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v002-semantic-review-r1",
+      "questionId": "u06-s003-v002",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "96032c25eed36e039b5dd31a5956df424766d5de1f6e3f3e525d9d47db0da539",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "白球=36×5/9=20。",
+      "derivedAnswer": "20顆",
+      "storedAnswer": "20顆",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "16顆是紅球。",
+        "18顆是假設各半。",
+        "25顆把每份5誤乘5。",
+        "總份數9，每份4顆，白球5份為20顆。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由總量求後一部分」，已明示必要條件：只有紅白兩類。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：顆數。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：白球對應5份。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：精確整數。。"
+      },
+      "difficultyReason": "基礎部分求值。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：白球=36×5/9=20。 正確選項為「20顆」。逐項檢查後，唯一為真的理由是「總份數9，每份4顆，白球5份為20顆。」；其餘三項分別因「16顆是紅球。」、「18顆是假設各半。」、「25顆把每份5誤乘5。」而排除。邊界與語意再檢查：白球對應5份。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v003-semantic-review-r1",
+      "questionId": "u06-s003-v003",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "76524da4b065b00e04ef5db1737bc7372c6b6d81df2e65be0a735008bfed766f",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "0.5+2.0=2.5，且0.5:2.0=1:4。",
+      "derivedAnswer": "0.5公升",
+      "storedAnswer": "0.5公升",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "總份數5，原液占1/5，2.5÷5=0.5。",
+        "0.4是把4當總份數。",
+        "1是錯把原液占1/2.5。",
+        "2是水量。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由小數總量求部分」，已明示必要條件：原液與水構成全部。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公升單位一致。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：答案需為正且小於總量。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：2.5為精確量。。"
+      },
+      "difficultyReason": "基礎小數份數。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：0.5+2.0=2.5，且0.5:2.0=1:4。 正確選項為「0.5公升」。逐項檢查後，唯一為真的理由是「總份數5，原液占1/5，2.5÷5=0.5。」；其餘三項分別因「0.4是把4當總份數。」、「1是錯把原液占1/2.5。」、「2是水量。」而排除。邊界與語意再檢查：答案需為正且小於總量。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v004-semantic-review-r1",
+      "questionId": "u06-s003-v004",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "24a2539fa8d423446e75fb960cd6d01abda33109893510cbf4e9f2969fb1018c",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "總量=18×10/3=60。",
+      "derivedAnswer": "60元",
+      "storedAnswer": "60元",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "42元是乙的金額。",
+        "3份是18，每份6；總10份為60。",
+        "54元把總份數當9。",
+        "72元把甲加乙份數算12。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由一部分反求總量」，已明示必要條件：兩人的金額為全部。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：元。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：每份6元，結果唯一。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "逆向份數法。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：總量=18×10/3=60。 正確選項為「60元」。逐項檢查後，唯一為真的理由是「3份是18，每份6；總10份為60。」；其餘三項分別因「42元是乙的金額。」、「54元把總份數當9。」、「72元把甲加乙份數算12。」而排除。邊界與語意再檢查：每份6元，結果唯一。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v005-semantic-review-r1",
+      "questionId": "u06-s003-v005",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "d8fd69826b1f32c52466c2a3c026f0048e6b9c5c992f424d4b067cd77502b28f",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "甲14、乙35，差21且比2:5。",
+      "derivedAnswer": "14本",
+      "storedAnswer": "14本",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "7本是每份。",
+        "21本是差，不是甲。",
+        "35本是乙。",
+        "份數差3對應21，每份7，甲2份為14。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由兩部分差求部分」，已明示必要條件：乙大於甲，差為正。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：本數。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：比與差同時驗證。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：精確整數。。"
+      },
+      "difficultyReason": "需要把差量對應份數差。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：甲14、乙35，差21且比2:5。 正確選項為「14本」。逐項檢查後，唯一為真的理由是「份數差3對應21，每份7，甲2份為14。」；其餘三項分別因「7本是每份。」、「21本是差，不是甲。」、「35本是乙。」而排除。邊界與語意再檢查：比與差同時驗證。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v006-semantic-review-r1",
+      "questionId": "u06-s003-v006",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "4af323bf2c90022acf1ef9b87e027e93bc5c3b9add7ed9ae49d2a520737b4f5f",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "男20、女16，合36。",
+      "derivedAnswer": "36人",
+      "storedAnswer": "36人",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "4份是16，每份4；總9份為36。",
+        "20人是男生。",
+        "32人漏算一份。",
+        "40人把總份數當10。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「已知後一部分求總量」，已明示必要條件：男女為全部。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：人數。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：人數皆為整數。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "標準逆向份數。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：男20、女16，合36。 正確選項為「36人」。逐項檢查後，唯一為真的理由是「4份是16，每份4；總9份為36。」；其餘三項分別因「20人是男生。」、「32人漏算一份。」、「40人把總份數當10。」而排除。邊界與語意再檢查：人數皆為整數。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v007-semantic-review-r1",
+      "questionId": "u06-s003-v007",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "886d8071a2ce3b569196b4be6d0d880d4094dc8ba1422259a8ef032980a10155",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "19+25=44，且題目只增加4人。",
+      "derivedAnswer": "19:25",
+      "storedAnswer": "19:25",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "未更新甲人數。",
+        "原每份5，甲15、乙25；甲增4成19，新比19:25。",
+        "把增加4人誤成增加4份。",
+        "把19:25錯誤近似成4:5。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「變動後重算比」，已明示必要條件：只有甲增加4人。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：人數。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：新比不要求維持原小整數結構。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "多步更新與化簡。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：19+25=44，且題目只增加4人。 正確選項為「19:25」。逐項檢查後，唯一為真的理由是「原每份5，甲15、乙25；甲增4成19，新比19:25。」；其餘三項分別因「未更新甲人數。」、「把增加4人誤成增加4份。」、「把19:25錯誤近似成4:5。」而排除。邊界與語意再檢查：新比不要求維持原小整數結構。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v008-semantic-review-r1",
+      "questionId": "u06-s003-v008",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "dc48e07272418a00651479641ff8611e69a08832173c51e8b653c64456b0a97f",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "原為16與28，移6後皆22。",
+      "derivedAnswer": "44個",
+      "storedAnswer": "44個",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "33對應k=3，移後不相等。",
+        "55對應k=5。",
+        "令每份k，4k+6=7k-6，得k=4，總量11k=44。",
+        "66把移動6誤當每份。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「由轉移後相等反推總量」，已明示必要條件：移動6個不改變總數。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：個數。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：『從乙移給甲』同時改變兩部分。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：精確整數。。"
+      },
+      "difficultyReason": "進階變動方程。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：原為16與28，移6後皆22。 正確選項為「44個」。逐項檢查後，唯一為真的理由是「令每份k，4k+6=7k-6，得k=4，總量11k=44。」；其餘三項分別因「33對應k=3，移後不相等。」、「55對應k=5。」、「66把移動6誤當每份。」而排除。邊界與語意再檢查：『從乙移給甲』同時改變兩部分。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v009-semantic-review-r1",
+      "questionId": "u06-s003-v009",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "3a27af182435c6218d879e9e1f6fefc71363a68faba638526e0a8597cc2bd625",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "原甲24、乙64；變動後30:60=1:2。",
+      "derivedAnswer": "24",
+      "storedAnswer": "24",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "令甲3k、乙8k；2(3k+6)=8k-4，得k=8，甲=24。",
+        "18對應k=6，變動後24:44≠1:2。",
+        "32不是3的倍數份量。",
+        "48對應k=16，新比54:124。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「複合變動反推原量」，已明示必要條件：甲增加6、乙減少4，兩者皆保持正數。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：數據使份量與原量均為整數。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：精確整數。。"
+      },
+      "difficultyReason": "高階方程建模。",
+      "literacyNecessity": null,
+      "reviewerNote": "獨立重算：原甲24、乙64；變動後30:60=1:2。 正確選項為「24」。逐項檢查後，唯一為真的理由是「令甲3k、乙8k；2(3k+6)=8k-4，得k=8，甲=24。」；其餘三項分別因「18對應k=6，變動後24:44≠1:2。」、「32不是3的倍數份量。」、「48對應k=16，新比54:124。」而排除。邊界與語意再檢查：數據使份量與原量均為整數。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v010-semantic-review-r1",
+      "questionId": "u06-s003-v010",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "88a18357d9f6a1b3feb89c23e42162a80e069c96a5b0fe6274e4f6094a747258",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "出席總44，男24女20，比6:5。",
+      "derivedAnswer": "6:5",
+      "storedAnswer": "6:5",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "optionEvidence": [
+        "7:5未扣請假。",
+        "原每份4，男28女20；男出席24，24:20=6:5。",
+        "4:5把男減成16。",
+        "5:6為倒比。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「在出席情境更新部分比」，已明示必要條件：男女為全部，只有男生請假4。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：人數。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：題目問出席比，不是原登記比。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "情境變動必要。",
+      "literacyNecessity": "請假條件直接改變部分量，必須保留情境才能解題。",
+      "reviewerNote": "獨立重算：出席總44，男24女20，比6:5。 正確選項為「6:5」。逐項檢查後，唯一為真的理由是「原每份4，男28女20；男出席24，24:20=6:5。」；其餘三項分別因「7:5未扣請假。」、「4:5把男減成16。」、「5:6為倒比。」而排除。邊界與語意再檢查：題目問出席比，不是原登記比。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v011-semantic-review-r1",
+      "questionId": "u06-s003-v011",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "4eab5ada05d8e7683a9c06d0b155fd52d8c5c1634db12c883efe68d9131f0898",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "60:165=4:11，所以喬木占總量4/(4+11)=4/15。",
+      "derivedAnswer": "4/15",
+      "storedAnswer": "4/15",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "optionEvidence": [
+        "2/9是原本喬木占比。",
+        "1/4錯把剩餘總量240。",
+        "原每份30，喬木60、灌木210；移後灌木165，總225，喬木占60/225=4/15。",
+        "4/13錯誤約分。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「變動後部分占總量」，已明示必要條件：只移灌木45株。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：株數。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：剩餘總量需同步減45。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "兩階段比例與部分率。",
+      "literacyNecessity": "園區管理動作改變分母，情境不可刪除。",
+      "reviewerNote": "獨立重算：60:165=4:11，所以喬木占總量4/(4+11)=4/15。 正確選項為「4/15」。逐項檢查後，唯一為真的理由是「原每份30，喬木60、灌木210；移後灌木165，總225，喬木占60/225=4/15。」；其餘三項分別因「2/9是原本喬木占比。」、「1/4錯把剩餘總量240。」、「4/13錯誤約分。」而排除。邊界與語意再檢查：剩餘總量需同步減45。",
+      "reviewerDecision": "pass"
+    },
+    {
+      "reviewId": "u06-s003-v012-semantic-review-r1",
+      "questionId": "u06-s003-v012",
+      "unitId": "u06",
+      "skillId": "ratio-part-total",
+      "contentSha256": "9441a3ab47d5e2a6247795115d03d4e5d80b0fcf5d19c1de5015de717ab4468c",
+      "reviewVersion": "human-review-u06-r1.0",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "以實際量驗算0.72/0.48=1.5。",
+      "derivedAnswer": "3:2",
+      "storedAnswer": "3:2",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "optionEvidence": [
+        "6:4等值但不是最簡。",
+        "2:3為倒比。",
+        "9:4沒有依據。",
+        "混合均勻後倒出時兩成分按同一比例減少，剩餘比不變。"
+      ],
+      "ambiguityChecks": {
+        "wording": "題幹中的所求量為「判斷同比例移除對比的影響」，已明示必要條件：倒出前混合均勻。，不存在需猜測的隱藏量。",
+        "units": "單位審查結果：公升。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：『混合均勻』保證倒出液成分比與原液相同。，未超出 U06 鎖定技能邊界。",
+        "rounding": "近似與取整審查：無近似。。"
+      },
+      "difficultyReason": "概念判斷而非只算份數。",
+      "literacyNecessity": "混合均勻是比保持不變的必要條件，具有數學作用。",
+      "reviewerNote": "獨立重算：以實際量驗算0.72/0.48=1.5。 正確選項為「3:2」。逐項檢查後，唯一為真的理由是「混合均勻後倒出時兩成分按同一比例減少，剩餘比不變。」；其餘三項分別因「6:4等值但不是最簡。」、「2:3為倒比。」、「9:4沒有依據。」而排除。邊界與語意再檢查：『混合均勻』保證倒出液成分比與原液相同。",
+      "reviewerDecision": "pass"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u06-fig-part-total-strip-01",
+      "unitId": "u06",
+      "topicId": "u06-ratio-basics",
+      "skillId": "ratio-part-total",
+      "purpose": "以等份長條把部分比 2：3 轉成總份數 5，協助零基礎學生避免把部分量直接誤當總量。",
+      "svgPath": "figures/u06/u06-fig-part-total-strip-01.svg",
+      "canvas": {
+        "width": 720,
+        "height": 220,
+        "viewBox": "0 0 720 220"
+      },
+      "drawingSpec": {
+        "outerRectangle": "x=60, y=70, width=600, height=80, black stroke 3",
+        "partitions": [
+          180,
+          300,
+          420,
+          540
+        ],
+        "segmentWidth": 120,
+        "topLabels": [
+          {
+            "text": "甲：2 份",
+            "x": 180,
+            "y": 50
+          },
+          {
+            "text": "乙：3 份",
+            "x": 480,
+            "y": 50
+          }
+        ],
+        "bottomLabel": {
+          "text": "總量：5 份（示意圖，不按實際長度）",
+          "x": 360,
+          "y": 195
+        },
+        "insideLabels": "每格中央標示 1",
+        "visibleLines": "外框及四條垂直分隔線均為實線",
+        "hiddenLines": "無",
+        "arrowsSymbols": "無箭頭；全圖只用等份格線",
+        "scaleStatus": "not-to-scale instructional partition"
+      },
+      "labelsAndPositions": [
+        "甲：2 份置於前兩格上方中央",
+        "乙：3 份置於後三格上方中央",
+        "每格以數字 1 表示一份",
+        "總量說明置於圖下方"
+      ],
+      "ticksUnitsArrows": "分格線本身代表等份；無量測刻度或單位；無方向箭頭。",
+      "toScale": false,
+      "visualInferenceWarning": "本圖只表達份數關係，不可把螢幕上的實際像素長度當作題目數值。",
+      "altText": "一條長方形被平均分成五格，前兩格代表甲的兩份，後三格代表乙的三份，整條代表總量五份。",
+      "svgTitle": "部分量與總量的五等分長條圖",
+      "svgDesc": "前兩份和後三份合成總量五份的比例示意圖。",
+      "mobileReadabilityReview": "720×220 橫向畫布在 360 px 寬手機縮放後，主要標籤字級仍約 11 至 13 px，分格線不重疊。",
+      "answerLeakageReview": "圖只呈現 2：3 對應五份的概念，不提供 CR 題目的總量數值或最後答案。",
+      "manualVisualInspection": {
+        "status": "pass-after-render",
+        "inspectionNote": "以 720×220 PNG 實際轉譯檢查；白底、五格等寬、甲乙標籤、每格數字與底部警語均清楚，無裁切或重疊。"
+      },
+      "svgAssertions": [
+        "<title id=\"title\">部分量與總量的五等分長條圖</title>",
+        "width=\"600\" height=\"80\"",
+        "甲：2 份",
+        "乙：3 份",
+        "總量：5 份"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "reviewNote": "第一次轉譯發現透明背景在深色預覽器會使黑字消失；加入白底並指定繁中字型後重新檢查，五格等寬、標籤可讀且未洩漏題目數值答案。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "04c51669ad8666198b925dc6baac0f0639779b0fc028d29aa179cb3d02611cfc"
+    }
+  ]
+};

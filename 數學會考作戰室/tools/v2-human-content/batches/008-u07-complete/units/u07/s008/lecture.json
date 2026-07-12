@@ -1,0 +1,264 @@
+{
+  "lectureId": "u07-s008-lecture-r1",
+  "unitId": "u07",
+  "topicId": "u07-solution-sets",
+  "skillId": "inequality-range",
+  "title": "解的範圍敘述：中文和符號與數線及邊界互譯",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能分辨至少、至多、超過、未滿、不少於、不超過。",
+    "能把範圍敘述寫成不等式。",
+    "能由不等式敘述最大或最小可能值。",
+    "能處理整數與連續量的不同邊界。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inequality-and-word",
+      "requiredLevel": "能把兩個限制用且連結並找交集。"
+    }
+  ],
+  "prerequisiteBridge": {
+    "inequality-and-word": "能把兩個限制用且連結並找交集。"
+  },
+  "glossary": [
+    {
+      "term": "至少",
+      "definition": "不小於，包含所說的數。"
+    },
+    {
+      "term": "至多",
+      "definition": "不大於，包含所說的數。"
+    },
+    {
+      "term": "超過",
+      "definition": "嚴格大於，不包含所說的數。"
+    },
+    {
+      "term": "未滿",
+      "definition": "嚴格小於，不包含所說的數。"
+    },
+    {
+      "term": "範圍",
+      "definition": "未知量所有可能值的界線。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x≥a",
+      "meaning": "x 至少為 a、不少於 a。"
+    },
+    {
+      "symbol": "x≤a",
+      "meaning": "x 至多為 a、不超過 a。"
+    },
+    {
+      "symbol": "x>a",
+      "meaning": "x 超過 a、大於 a。"
+    },
+    {
+      "symbol": "x<a",
+      "meaning": "x 未滿 a、小於 a。"
+    }
+  ],
+  "conceptNarrative": [
+    "範圍敘述的核心是「是否包含邊界」。",
+    "同一句中文在連續量與整數量中，符號相同，但實際可取的下一個值不同。",
+    "「最高 80 公斤」通常表示不超過 80；「超過 80 公斤」不包含 80。",
+    "求最大或最小整數值時，先保留精確不等式，再依整數限制取相鄰整數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "下界",
+      "statement": "限制數值不能低於某個界線。"
+    },
+    {
+      "name": "上界",
+      "statement": "限制數值不能高於某個界線。"
+    },
+    {
+      "name": "包含邊界",
+      "statement": "語句含「至少、至多、不少於、不超過」時通常包含等號。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "至少 a ⇔ x≥a",
+      "conditions": [
+        "x 為所描述數量"
+      ],
+      "meaning": "含下界。"
+    },
+    {
+      "formula": "未滿 b ⇔ x<b",
+      "conditions": [
+        "b 不可取"
+      ],
+      "meaning": "不含上界。"
+    },
+    {
+      "formula": "a 至 b（兩端均可）⇔ a≤x≤b",
+      "conditions": [
+        "題意確定包含兩端"
+      ],
+      "meaning": "雙邊範圍。"
+    }
+  ],
+  "nonApplicableCases": [
+    "「大約」「約」不等同精確不等式，需要題目另給容許誤差。",
+    "「介於 a 與 b 之間」是否含端點可能有語言歧義，正式題目應明示。",
+    "物理量可能有自然限制，例如長度不能為負。",
+    "若 x 為整數，不能把 4.7 當作可取的最大整數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出範圍關鍵詞。",
+      "check": "至少、至多、超過或未滿？"
+    },
+    {
+      "step": 2,
+      "instruction": "決定邊界是否包含。",
+      "check": "是否需要等號？"
+    },
+    {
+      "step": 3,
+      "instruction": "確認量的種類。",
+      "check": "連續量、整數個數或自然數？"
+    },
+    {
+      "step": 4,
+      "instruction": "寫符號並用一個邊界值檢查。",
+      "check": "邊界代入是否符合原句？"
+    },
+    {
+      "step": 5,
+      "instruction": "若問最大最小整數，再取相鄰整數。",
+      "check": "是否過早四捨五入？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "票價不超過 300 元，用 p 表示。",
+      "solutionSteps": [
+        "不超過包含 300。",
+        "方向為小於或等於。"
+      ],
+      "answer": "p≤300。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "年齡滿 12 歲，用 a 表示。",
+      "solutionSteps": [
+        "「滿」表示已達 12。",
+        "包含 12。"
+      ],
+      "answer": "a≥12。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "整數 n 未滿 8，求最大可能值。",
+      "solutionSteps": [
+        "n<8。",
+        "小於 8 的最大整數為 7。"
+      ],
+      "answer": "7。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "溫度高於 −3°C 且不超過 5°C。",
+      "solutionSteps": [
+        "高於 −3 不含 −3。",
+        "不超過 5 包含 5。"
+      ],
+      "answer": "−3<T≤5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "至少 10 寫 x>10。",
+      "why": "漏掉邊界 10。",
+      "correction": "至少包含等於，寫 x≥10。"
+    },
+    {
+      "mistake": "未滿 18 寫 x≤18。",
+      "why": "把「未滿」誤含 18。",
+      "correction": "寫 x<18。"
+    },
+    {
+      "mistake": "不超過 −2 寫 x≥−2。",
+      "why": "被負號干擾方向。",
+      "correction": "不超過仍是 x≤−2。"
+    },
+    {
+      "mistake": "n<8 的最大整數寫 8。",
+      "why": "嚴格上界未排除。",
+      "correction": "最大整數是 7。"
+    },
+    {
+      "mistake": "連續量 x<8 說最大值是 7.9。",
+      "why": "實數可更接近 8，沒有最大值。",
+      "correction": "除非限定精度，x<8 沒有最大實數。"
+    },
+    {
+      "mistake": "「介於」自動判定含端點。",
+      "why": "忽略語言可能歧義。",
+      "correction": "依題目明示的「含端點」或「不含端點」。"
+    }
+  ],
+  "selfCheck": [
+    "我有測試邊界值是否符合原句嗎？",
+    "是否受負數干擾而顛倒方向？",
+    "量是整數還是連續量？",
+    "最大或最小值是否真的存在？"
+  ],
+  "summary": [
+    "至少與不少於對應 ≥。",
+    "至多與不超過對應 ≤。",
+    "超過對應 >，未滿對應 <。",
+    "整數邊界要取相鄰整數；連續開區間可能沒有最大最小值。"
+  ],
+  "connections": {
+    "previous": "承接「且」的雙重限制。",
+    "next": [
+      "下一節會從文字情境建立完整不等式。",
+      "合理性技能會檢查自然限制與答案解讀。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u07-s008-v001",
+      "u07-s008-v002",
+      "u07-s008-v003",
+      "u07-s008-v004",
+      "u07-s008-v005",
+      "u07-s008-v006",
+      "u07-s008-v007",
+      "u07-s008-v008",
+      "u07-s008-v009",
+      "u07-s008-v010",
+      "u07-s008-v011",
+      "u07-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u07-s008-cr001",
+      "u07-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "人工逐詞核對六組常見範圍語句，並用負數溫度與整數未滿案例檢查方向及端點；明確標示「介於」需由題目消除歧義。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "23b46a85b7e86a78998c2cfb97e47f40516ec203eca018e81597c08b48e2a1ff"
+}

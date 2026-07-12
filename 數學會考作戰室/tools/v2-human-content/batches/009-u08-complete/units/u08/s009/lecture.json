@@ -1,0 +1,259 @@
+{
+  "lectureId": "u08-s009-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-measure",
+  "skillId": "perimeter-area-basic",
+  "lockedSkillTitle": "周長與面積基本判斷",
+  "title": "周長與面積基本判斷：邊界長度和覆蓋大小不同",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能分辨周長與面積所表示的量。",
+    "能計算正方形、長方形、三角形、平行四邊形與梯形的基本周長或面積。",
+    "能選擇正確單位。",
+    "能判斷同周長不必同面積、同面積不必同周長。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "perpendicular-bisector-symmetry"
+    ],
+    "bridgeExplanation": "前一技能關注線段長度與對稱；現在把邊界長度加總成周長，把平面覆蓋大小量化為面積。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "perpendicular-bisector-symmetry",
+      "requiredLevel": "能辨認線段、垂直高度與基本平面圖形。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "周長",
+      "definition": "封閉圖形邊界一周的總長度。"
+    },
+    {
+      "term": "面積",
+      "definition": "圖形所占平面範圍的大小。"
+    },
+    {
+      "term": "底",
+      "definition": "計算三角形、平行四邊形或梯形面積時選定的邊。"
+    },
+    {
+      "term": "高",
+      "definition": "到底邊或底邊所在直線的垂直距離。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "P",
+      "meaning": "常用來表示周長。"
+    },
+    {
+      "symbol": "A",
+      "meaning": "常用來表示面積。"
+    },
+    {
+      "symbol": "cm",
+      "meaning": "長度單位公分。"
+    },
+    {
+      "symbol": "cm²",
+      "meaning": "面積單位平方公分。"
+    }
+  ],
+  "conceptDevelopment": [
+    "周長只沿邊界走一圈，使用一次方長度單位；面積計算內部覆蓋量，使用平方單位。",
+    "長方形面積是長×寬；三角形是同底同高平行四邊形的一半，因此為底×高÷2。",
+    "梯形可看成兩個相同梯形拼成平行四邊形，面積為（上底+下底）×高÷2。",
+    "高必須與底垂直，不一定是斜邊或圖上看起來直立的邊。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "正方形周長與面積",
+      "statement": "邊長 s 時，周長 4s，面積 s²。"
+    },
+    {
+      "name": "長方形周長與面積",
+      "statement": "長 l、寬 w 時，周長 2(l+w)，面積 lw。"
+    },
+    {
+      "name": "三角形面積",
+      "statement": "底 b、高 h 時，面積 bh/2。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "長方形 P=2(l+w)",
+      "conditions": [
+        "l、w 單位一致"
+      ],
+      "meaning": "加總四邊。"
+    },
+    {
+      "formula": "長方形 A=lw",
+      "conditions": [
+        "l、w 互相垂直"
+      ],
+      "meaning": "覆蓋面積。"
+    },
+    {
+      "formula": "三角形 A=bh/2",
+      "conditions": [
+        "h 為到底邊所在直線的垂直距離"
+      ],
+      "meaning": "同底同高平行四邊形的一半。"
+    },
+    {
+      "formula": "平行四邊形 A=bh",
+      "conditions": [
+        "h 垂直於底"
+      ],
+      "meaning": "底乘高。"
+    },
+    {
+      "formula": "梯形 A=(a+b)h/2",
+      "conditions": [
+        "a、b 為平行兩底，h 為其距離"
+      ],
+      "meaning": "兩底和乘高除以二。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能把周長單位寫成 cm²。",
+    "不能把三角形任一邊直接當高，除非它與選定底垂直。",
+    "周長相同的圖形面積不一定相同。",
+    "面積公式中的長度必須先統一單位。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "先判斷題目要邊界還是內部。",
+      "check": "圍、框、繞一圈多為周長；鋪、塗、覆蓋多為面積。"
+    },
+    {
+      "step": 2,
+      "instruction": "辨認圖形與必要長度。",
+      "check": "面積特別找垂直高。"
+    },
+    {
+      "step": 3,
+      "instruction": "統一長度單位後代入公式。",
+      "check": "避免公尺與公分混算。"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查答案單位。",
+      "check": "周長用長度單位，面積用平方單位。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "長 8 公分、寬 5 公分的長方形周長與面積各為多少？",
+      "solutionSteps": [
+        "周長=2×(8+5)=26 公分。",
+        "面積=8×5=40 平方公分。"
+      ],
+      "answer": "周長 26 公分；面積 40 平方公分。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "三角形底 12 公分、高 7 公分，面積多少？",
+      "solutionSteps": [
+        "使用底×高÷2。",
+        "12×7÷2=42。"
+      ],
+      "answer": "42 平方公分。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "平行四邊形底 9 公分、高 4 公分，斜邊 6 公分，面積多少？",
+      "solutionSteps": [
+        "面積只需底與垂直高。",
+        "9×4=36。"
+      ],
+      "answer": "36 平方公分。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "梯形上底 5 公分、下底 11 公分、高 6 公分，面積多少？",
+      "solutionSteps": [
+        "兩底和 5+11=16。",
+        "16×6÷2=48。"
+      ],
+      "answer": "48 平方公分。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "直接套用基本周長與面積公式。",
+    "standard": "從文字辨認底、高與所求量。",
+    "advanced": "比較同周長或同面積圖形並判斷資訊是否足夠。",
+    "literacy": "圍欄、踢腳板、地磚與油漆需求分別對應周長或面積。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "求長方形周長只算長×寬。",
+      "why": "混淆面積。",
+      "correction": "周長是 2(長+寬)。"
+    },
+    {
+      "mistake": "三角形面積忘記除以 2。",
+      "why": "套成平行四邊形公式。",
+      "correction": "三角形是同底同高平行四邊形的一半。"
+    },
+    {
+      "mistake": "用斜邊當高。",
+      "why": "忽略垂直條件。",
+      "correction": "高必須垂直於底。"
+    },
+    {
+      "mistake": "周長答案寫平方公分。",
+      "why": "單位次方錯誤。",
+      "correction": "周長用公分，面積用平方公分。"
+    },
+    {
+      "mistake": "梯形只用上底×高。",
+      "why": "漏掉下底與平均。",
+      "correction": "用（上底+下底）×高÷2。"
+    },
+    {
+      "mistake": "不同單位直接相乘。",
+      "why": "未先換算。",
+      "correction": "先把所有長度換成同單位。"
+    }
+  ],
+  "selfCheckItems": [
+    "題目要的是邊界還是覆蓋面？",
+    "高是否真的垂直於底？",
+    "長度單位是否一致？",
+    "答案該用一次方還是平方單位？"
+  ],
+  "conciseSummary": [
+    "周長是邊界總長，面積是內部大小。",
+    "三角形面積要除以 2。",
+    "平行四邊形與梯形的高皆為垂直距離。",
+    "周長用長度單位，面積用平方單位。"
+  ],
+  "connections": {
+    "previous": "上一技能的垂直概念可用來辨認幾何高度。",
+    "next": [
+      "下一技能把基本面積公式用於切割、挖除與拼接的複合圖形文字題。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "重新計算四種基本圖形例題；長方形周長 26、面積 40，三角形 42、平行四邊形 36、梯形 48，並逐一核對高度垂直與平方單位。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "1611f6112501cd47f704deeefb19593119d455698922e5e72967ff2c87d337db"
+}

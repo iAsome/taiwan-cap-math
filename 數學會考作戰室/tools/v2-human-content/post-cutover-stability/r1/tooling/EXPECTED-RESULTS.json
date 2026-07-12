@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "math-v2-post-cutover-stability-repair-gate-r1",
+  "requiredStartingHead": "915832b69b33a29afe33ffbdface0f3af39d5eaf",
+  "requiredStartingSubject": "release(math-v2): cut over to human runtime r1",
+  "requiredCutoverStatus": "PASS_CONTROLLED_PRODUCTION_CUTOVER_R1",
+  "requiredCutoverNextStage": "POST_CUTOVER_STABILITY_GATE_R1",
+  "contentVersion": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+  "preCutoverTag": "math-v2-pre-human-cutover-r1",
+  "preCutoverTagTarget": "b52116364e145b564aaf394ef798dda9d2b7b2ec",
+  "preRepairGitBlobs": {
+    "數學會考作戰室/human-runtime/engine.mjs": "6b9144405e18bb312c08f36c70fb398b48a3d3cd",
+    "數學會考作戰室/human-runtime/bootstrap.mjs": "90813db9d18c00e14875092dfaa474c94490e495",
+    "數學會考作戰室/human-runtime/app-human.js": "c4801705fab73848c0665b3f1a9facdd0271b6e3",
+    "數學會考作戰室/human-runtime/storage-migration.mjs": "dfe2f0faf87fc91ce46b7d3f631a27ac9261e74f",
+    "數學會考作戰室/math-bootstrap.js": "b4eb61f600e37f1a22001964e1216e051b0e63bf"
+  },
+  "expectedCounts": {
+    "units": 23,
+    "skills": 339,
+    "lectures": 339,
+    "mcQuestions": 4068,
+    "constructedResponses": 678,
+    "figures": 178
+  },
+  "productionActivated": true,
+  "oldDatabaseDeletionAllowed": false,
+  "mergeAllowed": false,
+  "nextAuthorizedStage": "OLD_RUNTIME_RETIREMENT_PACKAGE_R1",
+  "commitSubject": "fix(math-v2): repair production text and pass stability gate r1"
+}

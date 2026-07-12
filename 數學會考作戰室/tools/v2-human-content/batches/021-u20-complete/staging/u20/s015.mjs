@@ -1,0 +1,1766 @@
+// Generated only by serialization from approved reviewed source. Do not edit.
+export const sourceDigest="825ec950abe4edcd4e89a3b55ae50c45eb6a4638a7e621e73309ae3f614f0a1d";
+export const skillBundle={
+  "lecture": {
+    "lectureId": "u20-s015-lecture-r1",
+    "unitId": "u20",
+    "numericUnitId": 20,
+    "topicId": "u20-literacy",
+    "skillId": "proof-literacy",
+    "skillSlot": "s015",
+    "lockedSkillTitle": "幾何證明素養題",
+    "title": "幾何證明素養題：把圖例與規格及現實限制轉成可審查論證",
+    "audience": "臺灣國中零基礎至會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能從工程圖與文字規格擷取正式條件。",
+      "能建立跨數步的證明鏈。",
+      "能用反例與邊界情況審查過度概括。",
+      "能區分數學結論與實務可行性。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "triangle-center-word",
+        "requiredLevel": "能使用該技能的核心定義與基本推理。"
+      }
+    ],
+    "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「triangle-center-word」再進入本節。",
+    "glossary": [
+      {
+        "term": "圖例",
+        "definition": "說明刻痕、箭頭、直角等圖形符號意義的規則。"
+      },
+      {
+        "term": "規格審查",
+        "definition": "檢查一段敘述的條件是否足夠、結論是否超出範圍。"
+      },
+      {
+        "term": "邊界情況",
+        "definition": "等號、共線、直角、鈍角或退化等容易改變結論的情況。"
+      },
+      {
+        "term": "反例",
+        "definition": "滿足所有前提但使結論失敗的具體案例。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "刻痕",
+        "meaning": "相同刻痕表示線段等長。"
+      },
+      {
+        "symbol": "箭頭",
+        "meaning": "相同箭頭常表示直線平行。"
+      },
+      {
+        "symbol": "直角方框",
+        "meaning": "表示兩線垂直。"
+      }
+    ],
+    "conceptNarrative": [
+      "素養題的難點往往不是新公式，而是資料來源混合：文字、圖例、尺寸、限制與目的同時出現。先把每項轉成正式幾何敘述，才能判斷哪些可用。",
+      "審查證明時要追蹤條件來源。若待證的線段等長被提前列為全等條件，就是循環；若只給角相等卻沒角型，平行結論可能缺件。",
+      "審查規格還要測試邊界。例如『任選三點都有內部外心』同時忽略共線與鈍角兩種情況。數學上有唯一外心，也不代表施工地點可用。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "條件翻譯",
+        "statement": "把情境語句與圖例轉成等式、平行、垂直、中點或角型。"
+      },
+      {
+        "name": "完整審查",
+        "statement": "依序檢查條件來源、推理方向、邊界、單位與實務限制。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "情境資料 → 正式條件 → 推理鏈 → 邊界檢查 → 決策",
+        "conditions": [
+          "不得省略會改變答案的情境資訊"
+        ],
+        "meaning": "素養證明解題框架。"
+      }
+    ],
+    "nonApplicableCases": [
+      "相同顏色或看似對稱不是正式幾何條件，除非圖例明確規定。",
+      "單一成功案例不能證明普遍規格。",
+      "反例若不符合原前提，不能推翻命題。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "標記每項資料的來源。",
+        "check": "文字、圖例、量測或推論？"
+      },
+      {
+        "step": 2,
+        "instruction": "只把正式資料翻成幾何條件。",
+        "check": "是否從外觀增加條件？"
+      },
+      {
+        "step": 3,
+        "instruction": "建立並逐步驗證證明鏈。",
+        "check": "有循環、跳步或方向顛倒嗎？"
+      },
+      {
+        "step": 4,
+        "instruction": "測試邊界與反例。",
+        "check": "共線、等號、直角、鈍角會怎樣？"
+      },
+      {
+        "step": 5,
+        "instruction": "分開數學答案與實務決策。",
+        "check": "地點存在但是否可施工？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "D為BC中點且AD⊥BC，證AB＝AC。",
+        "solutionSteps": [
+          "DB＝DC。",
+          "AD公共。",
+          "兩直角相等。",
+          "SAS全等。",
+          "對應邊相等。"
+        ],
+        "answer": "AB＝AC。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "規格稱任三站外心都在區域內。",
+        "solutionSteps": [
+          "三點可能共線。",
+          "鈍角外心在外。",
+          "直角外心在邊上。"
+        ],
+        "answer": "規格需限制不共線並另判角型。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把量測紀錄當精確證明。",
+        "why": "量測有精度與誤差。",
+        "correction": "找正式設計條件。"
+      },
+      {
+        "mistake": "反例未滿足前提。",
+        "why": "不能測試原命題。",
+        "correction": "先逐項核對前提。"
+      },
+      {
+        "mistake": "數學外心在外就說方案無數學解。",
+        "why": "存在性與可行性不同。",
+        "correction": "先承認外心，再評估場地。"
+      }
+    ],
+    "selfCheck": [
+      "我是否讀懂所有圖例？",
+      "每個推論的條件來源在哪裡？",
+      "是否測試共線、等號與角型？",
+      "反例是否滿足全部前提？",
+      "數學結論與實務限制是否分開？"
+    ],
+    "summary": [
+      "素養證明先翻譯資料，再推理。",
+      "審查要找循環、缺件與方向錯誤。",
+      "邊界與反例能測試規格是否過度概括。",
+      "數學存在不等於實務可行。"
+    ],
+    "connections": {
+      "previous": "先備：triangle-center-word",
+      "next": [
+        "本單元完成後，可把證明方法帶入二次函數、相似與圓等後續綜合題。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u20-proof-bridge-02",
+      "fig-u20-proof-literacy-sign-01"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u20-s015-v001",
+        "u20-s015-v002",
+        "u20-s015-v003",
+        "u20-s015-v004",
+        "u20-s015-v005",
+        "u20-s015-v006",
+        "u20-s015-v007",
+        "u20-s015-v008",
+        "u20-s015-v009",
+        "u20-s015-v010",
+        "u20-s015-v011",
+        "u20-s015-v012"
+      ],
+      "constructedResponseIds": [
+        "u20-s015-cr001",
+        "u20-s015-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "skillSpecificEvidence": "最終講義整合證明與四心，但所有任務仍限制在國中會考可讀資料與基本推理。",
+      "reviewerDecision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "legacyContentUsed": false,
+    "contentSha256": "2f53bfebe0d700c15d36311667cf538168ded4461846eaa5f3272bb7163dea04"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u20-s015-v001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "閱讀工程幾何圖時，兩線段上有相同刻痕。這個標記通常代表什麼？",
+      "givenConditions": [],
+      "target": "解讀證明情境中的等長標記",
+      "choices": [
+        "相同顏色表示平行",
+        "字母相鄰表示垂直",
+        "相同刻痕表示兩線段等長",
+        "線畫得較粗表示較長"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "相同刻痕是幾何圖中表示線段等長的正式符號。",
+        "result": "相同刻痕表示兩線段等長"
+      },
+      "explanation": "相同刻痕是幾何圖中表示線段等長的正式符號。",
+      "steps": [
+        "辨認圖例符號",
+        "把刻痕轉成線段等式",
+        "作為後續證明已知"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "相同顏色表示平行",
+          "truth": false,
+          "reason": "平行通常用箭頭標記。"
+        },
+        {
+          "choice": "字母相鄰表示垂直",
+          "truth": false,
+          "reason": "字母命名不表示角度。"
+        },
+        {
+          "choice": "相同刻痕表示兩線段等長",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；相同刻痕是幾何圖中表示線段等長的正式符號。"
+        },
+        {
+          "choice": "線畫得較粗表示較長",
+          "truth": false,
+          "reason": "線寬是排版，不是幾何長度。"
+        }
+      ],
+      "misconceptionTarget": "依外觀猜測而不讀正式標記。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「解讀證明情境中的等長標記」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「相同刻痕表示兩線段等長」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：解讀證明情境中的等長標記。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "d5716367f21fa90b253398955c9cba51037c2921c2928d05491503c6b9781c60"
+    },
+    {
+      "questionId": "u20-s015-v002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "施工圖交角處畫有小正方形。證明時可直接使用哪個資訊？",
+      "givenConditions": [],
+      "target": "解讀直角標記",
+      "choices": [
+        "表示兩線等長",
+        "表示交點是中點",
+        "表示兩角互補但不一定垂直",
+        "直角方框表示兩線互相垂直"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "小正方形是直角標記，表示交角90°，兩線互相垂直。",
+        "result": "直角方框表示兩線互相垂直"
+      },
+      "explanation": "小正方形是直角標記，表示交角90°，兩線互相垂直。",
+      "steps": [
+        "辨認直角符號",
+        "轉為角度90°",
+        "轉為垂直關係"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "表示兩線等長",
+          "truth": false,
+          "reason": "等長使用刻痕。"
+        },
+        {
+          "choice": "表示交點是中點",
+          "truth": false,
+          "reason": "中點需在線段上有等分標記。"
+        },
+        {
+          "choice": "表示兩角互補但不一定垂直",
+          "truth": false,
+          "reason": "直角標記已確定垂直。"
+        },
+        {
+          "choice": "直角方框表示兩線互相垂直",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；小正方形是直角標記，表示交角90°，兩線互相垂直。"
+        }
+      ],
+      "misconceptionTarget": "混淆直角、等長與中點符號。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「解讀直角標記」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「直角方框表示兩線互相垂直」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：解讀直角標記。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "39373859958406dbdd085827c322bd6416caec993e05e59a6fa2fa223fa6f2ba"
+    },
+    {
+      "questionId": "u20-s015-v003",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "題目註明「圖形未按比例」。解題時應採哪個原則？",
+      "givenConditions": [],
+      "target": "遵守非比例圖的證據界線",
+      "choices": [
+        "看起來相等就可當已知",
+        "圖形未按比例，不能用外觀補充條件",
+        "比例圖可省略所有標記",
+        "只要用尺量過就成為定理"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "只能使用文字、符號標記與已證結果，不能依圖上看起來的長短或角度增加條件。",
+        "result": "圖形未按比例，不能用外觀補充條件"
+      },
+      "explanation": "只能使用文字、符號標記與已證結果，不能依圖上看起來的長短或角度增加條件。",
+      "steps": [
+        "讀取未按比例警告",
+        "排除視覺估計",
+        "只保留正式條件"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "看起來相等就可當已知",
+          "truth": false,
+          "reason": "正是警告要避免的錯誤。"
+        },
+        {
+          "choice": "圖形未按比例，不能用外觀補充條件",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；只能使用文字、符號標記與已證結果，不能依圖上看起來的長短或角度增加條件。"
+        },
+        {
+          "choice": "比例圖可省略所有標記",
+          "truth": false,
+          "reason": "即使按比例，證明仍需條件。"
+        },
+        {
+          "choice": "只要用尺量過就成為定理",
+          "truth": false,
+          "reason": "量測不會變成一般性證明。"
+        }
+      ],
+      "misconceptionTarget": "把示意圖當成精確量測資料。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「遵守非比例圖的證據界線」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「圖形未按比例，不能用外觀補充條件」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：遵守非比例圖的證據界線。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "59bb5ba853ef9cdbe5cc329965dced22451648fbbdcfd9cd5a4327c7491a4b9a"
+    },
+    {
+      "questionId": "u20-s015-v004",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "步橋設計圖中，D 是 BC 中點，AD 為支撐桿，且 AD⊥BC。要證 △ADB≅△ADC，合理策略為何？",
+      "givenConditions": [],
+      "target": "在橋梁圖中建立全等證明",
+      "choices": [
+        "先由中點得兩段相等，再以 SAS 證全等",
+        "直接由圖形對稱宣告全等",
+        "只用公共邊就判定全等",
+        "先假設待證角相等"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "D為中點得DB＝DC；AD為公共邊；垂直得∠ADB＝∠ADC＝90°，三條件符合SAS。",
+        "result": "先由中點得兩段相等，再以 SAS 證全等"
+      },
+      "explanation": "D為中點得DB＝DC；AD為公共邊；垂直得∠ADB＝∠ADC＝90°，三條件符合SAS。",
+      "steps": [
+        "中點→DB＝DC",
+        "公共邊→AD＝AD",
+        "垂直→夾角相等",
+        "使用SAS"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "先由中點得兩段相等，再以 SAS 證全等",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；D為中點得DB＝DC；AD為公共邊；垂直得∠ADB＝∠ADC＝90°，三條件符合SAS。"
+        },
+        {
+          "choice": "直接由圖形對稱宣告全等",
+          "truth": false,
+          "reason": "圖形外觀不是理由。"
+        },
+        {
+          "choice": "只用公共邊就判定全等",
+          "truth": false,
+          "reason": "一組邊不足。"
+        },
+        {
+          "choice": "先假設待證角相等",
+          "truth": false,
+          "reason": "形成循環。"
+        }
+      ],
+      "misconceptionTarget": "有完整條件卻未轉成全等判定。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「在橋梁圖中建立全等證明」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先由中點得兩段相等，再以 SAS 證全等」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：在橋梁圖中建立全等證明。",
+      "literacyContextNecessity": "中點、支撐桿與垂直標記是橋圖中不可刪除的結構條件。",
+      "figureId": "fig-u20-proof-bridge-02",
+      "drawingSpecId": "fig-u20-proof-bridge-02",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "ece96070c70c0eeafcb2c683e186083889c0bb0d3c7ed773c72f8251db4e8b2c"
+    },
+    {
+      "questionId": "u20-s015-v005",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "道路 a、b 被橫路 t 所截，一對同旁內角量得並經規格確認為 110°、70°。可作何判斷？",
+      "givenConditions": [],
+      "target": "由道路角度資料判定平行",
+      "choices": [
+        "同旁內角相等可判定垂直",
+        "任兩角和180°都代表直線平行",
+        "只看道路方向相近",
+        "同旁內角互補可判定兩線平行"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "兩角和為180°，且確為同旁內角，因此可判定 a∥b。",
+        "result": "同旁內角互補可判定兩線平行"
+      },
+      "explanation": "兩角和為180°，且確為同旁內角，因此可判定 a∥b。",
+      "steps": [
+        "確認角型為同旁內角",
+        "計算110+70=180",
+        "使用平行線判定"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "同旁內角相等可判定垂直",
+          "truth": false,
+          "reason": "相等不是此判定條件。"
+        },
+        {
+          "choice": "任兩角和180°都代表直線平行",
+          "truth": false,
+          "reason": "還需角的位置關係。"
+        },
+        {
+          "choice": "只看道路方向相近",
+          "truth": false,
+          "reason": "外觀不足。"
+        },
+        {
+          "choice": "同旁內角互補可判定兩線平行",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；兩角和為180°，且確為同旁內角，因此可判定 a∥b。"
+        }
+      ],
+      "misconceptionTarget": "只算角和，忽略角必須是特定位置的一對。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "角度以度表示，110°+70°為精確規格值。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「由道路角度資料判定平行」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「同旁內角互補可判定兩線平行」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：由道路角度資料判定平行。",
+      "literacyContextNecessity": "道路、橫路與同旁位置決定180°能否用於平行判定。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "614397d74d0f36ead8f9ee4fae720a3fa1088cb4655a327b2828955df19b5918"
+    },
+    {
+      "questionId": "u20-s015-v006",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "檢核報告寫：「∠1＝∠2，所以兩護欄平行。」但未說明兩角位置。主要缺陷是什麼？",
+      "givenConditions": [],
+      "target": "審查平行證明的必要位置資訊",
+      "choices": [
+        "報告字數太少",
+        "報告缺少角為同位角或內錯角的定位說明",
+        "角度沒有換成弧度",
+        "未使用三角函數"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "等角判定平行需確認是同位角或內錯角等特定角型；只知兩角相等不足。",
+        "result": "報告缺少角為同位角或內錯角的定位說明"
+      },
+      "explanation": "等角判定平行需確認是同位角或內錯角等特定角型；只知兩角相等不足。",
+      "steps": [
+        "識別結論為平行",
+        "回查可用的角判定",
+        "發現角型定位缺失"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "報告字數太少",
+          "truth": false,
+          "reason": "問題在邏輯條件，不在篇幅。"
+        },
+        {
+          "choice": "報告缺少角為同位角或內錯角的定位說明",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；等角判定平行需確認是同位角或內錯角等特定角型；只知兩角相等不足。"
+        },
+        {
+          "choice": "角度沒有換成弧度",
+          "truth": false,
+          "reason": "國中幾何不需弧度。"
+        },
+        {
+          "choice": "未使用三角函數",
+          "truth": false,
+          "reason": "本題不需三角函數。"
+        }
+      ],
+      "misconceptionTarget": "把任意兩角相等當作平行充分條件。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「審查平行證明的必要位置資訊」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「報告缺少角為同位角或內錯角的定位說明」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：審查平行證明的必要位置資訊。",
+      "literacyContextNecessity": "護欄檢核需從圖面角位置支持平行，情境中缺失的規格必須被指出。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "1011df3463d861b64bba9d7f593418027cb7975e432c5dbb9ab614c070535e5e"
+    },
+    {
+      "questionId": "u20-s015-v007",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "學生要證 AC＝BD，卻在證明兩三角形全等時把 AC＝BD 列為其中一個已知條件。這是哪個問題？",
+      "givenConditions": [],
+      "target": "辨識素養證明中的循環條件",
+      "choices": [
+        "證明稿把待證的 AC＝BD 先當作全等條件",
+        "公共邊不能使用",
+        "全等後不能推出對應邊相等",
+        "SAS 永遠無效"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "待證結論在尚未推出前不能作為前提；這是循環論證。",
+        "result": "證明稿把待證的 AC＝BD 先當作全等條件"
+      },
+      "explanation": "待證結論在尚未推出前不能作為前提；這是循環論證。",
+      "steps": [
+        "標出待證AC＝BD",
+        "發現同一敘述提前出現在條件",
+        "判定循環"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "證明稿把待證的 AC＝BD 先當作全等條件",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；待證結論在尚未推出前不能作為前提；這是循環論證。"
+        },
+        {
+          "choice": "公共邊不能使用",
+          "truth": false,
+          "reason": "公共邊可以作為全等條件。"
+        },
+        {
+          "choice": "全等後不能推出對應邊相等",
+          "truth": false,
+          "reason": "全等後可以。"
+        },
+        {
+          "choice": "SAS 永遠無效",
+          "truth": false,
+          "reason": "SAS是有效判定。"
+        }
+      ],
+      "misconceptionTarget": "未追蹤每個條件的來源。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「辨識素養證明中的循環條件」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「證明稿把待證的 AC＝BD 先當作全等條件」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：辨識素養證明中的循環條件。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "55b783e9bfe5f10251d8269c956049c26f3c66f573552e5aa76e90fa12b1ebbc"
+    },
+    {
+      "questionId": "u20-s015-v008",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "圖中先由兩組全等三角形得到 ∠1＝∠3、∠3＝∠2，而 ∠1、∠2 是兩線的內錯角。最後應如何完成證明？",
+      "givenConditions": [],
+      "target": "完成跨兩個全等結果的平行證明",
+      "choices": [
+        "直接說三角形看起來對稱",
+        "只用面積相等",
+        "兩次使用等量代換，再用內錯角相等判定平行",
+        "以量角器讀值取代條件"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "由等量遞移得∠1＝∠2，再由內錯角相等判定兩直線平行。",
+        "result": "兩次使用等量代換，再用內錯角相等判定平行"
+      },
+      "explanation": "由等量遞移得∠1＝∠2，再由內錯角相等判定兩直線平行。",
+      "steps": [
+        "全等給兩組角等式",
+        "等量遞移連接∠1與∠2",
+        "內錯角相等→平行"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "直接說三角形看起來對稱",
+          "truth": false,
+          "reason": "外觀不足。"
+        },
+        {
+          "choice": "只用面積相等",
+          "truth": false,
+          "reason": "面積不能提供所需角關係。"
+        },
+        {
+          "choice": "兩次使用等量代換，再用內錯角相等判定平行",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；由等量遞移得∠1＝∠2，再由內錯角相等判定兩直線平行。"
+        },
+        {
+          "choice": "以量角器讀值取代條件",
+          "truth": false,
+          "reason": "量測只近似。"
+        }
+      ],
+      "misconceptionTarget": "得到多個角相等後未整理成目標角對。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「完成跨兩個全等結果的平行證明」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「兩次使用等量代換，再用內錯角相等判定平行」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：完成跨兩個全等結果的平行證明。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "749f98c2afef732ea0c6d78cb138fc0a5c76dbebe34c0a202e113af2165e897c"
+    },
+    {
+      "questionId": "u20-s015-v009",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "規格宣稱：「所有有一組對邊平行的四邊形都是平行四邊形。」要用反例推翻，應符合什麼？",
+      "givenConditions": [],
+      "target": "設計有效幾何反例",
+      "choices": [
+        "只要結論不成立即可，不必符合前提",
+        "反例必須同時符合所有前提而違反結論",
+        "只要圖形特殊即可",
+        "只要計算複雜即可"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "反例要有一組對邊平行，但不是平行四邊形，例如一般梯形；必須滿足前提並使結論失敗。",
+        "result": "反例必須同時符合所有前提而違反結論"
+      },
+      "explanation": "反例要有一組對邊平行，但不是平行四邊形，例如一般梯形；必須滿足前提並使結論失敗。",
+      "steps": [
+        "拆出前提：至少一組對邊平行",
+        "拆出結論：是平行四邊形",
+        "找滿足前提但否定結論的圖形"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只要結論不成立即可，不必符合前提",
+          "truth": false,
+          "reason": "不符合前提的例子不能反駁條件命題。"
+        },
+        {
+          "choice": "反例必須同時符合所有前提而違反結論",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；反例要有一組對邊平行，但不是平行四邊形，例如一般梯形；必須滿足前提並使結論失敗。"
+        },
+        {
+          "choice": "只要圖形特殊即可",
+          "truth": false,
+          "reason": "特殊性不是反例標準。"
+        },
+        {
+          "choice": "只要計算複雜即可",
+          "truth": false,
+          "reason": "複雜度與真假無關。"
+        }
+      ],
+      "misconceptionTarget": "舉出任意非平行四邊形卻未滿足前提。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「設計有效幾何反例」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「反例必須同時符合所有前提而違反結論」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：設計有效幾何反例。",
+      "literacyContextNecessity": "規格是全稱敘述，工程審查需以符合前提但失敗的形狀測試其可靠性。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "a8c8ae9ea4b12a9b551a0826ed5e4a6dc237d9873cf1fba585533358c1fbb162"
+    },
+    {
+      "questionId": "u20-s015-v010",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "通訊計畫寫：「任選三個站點即可決定唯一等距基地台。」這句話缺少哪個必要條件？",
+      "givenConditions": [],
+      "target": "審查等距基地台規格的邊界條件",
+      "choices": [
+        "需補充三個站點不共線，才能保證唯一外心",
+        "需補充三站顏色相同",
+        "需補充基地台必在三角形內",
+        "需刪除等距要求"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "若三點共線，三條垂直平分線沒有共同有限交點；三點不共線才形成非退化三角形並決定唯一外接圓心。",
+        "result": "需補充三個站點不共線，才能保證唯一外心"
+      },
+      "explanation": "若三點共線，三條垂直平分線沒有共同有限交點；三點不共線才形成非退化三角形並決定唯一外接圓心。",
+      "steps": [
+        "檢查三點可能共線的邊界情況",
+        "共線時無有限等距點",
+        "補上不共線條件"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "需補充三個站點不共線，才能保證唯一外心",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；若三點共線，三條垂直平分線沒有共同有限交點；三點不共線才形成非退化三角形並決定唯一外接圓心。"
+        },
+        {
+          "choice": "需補充三站顏色相同",
+          "truth": false,
+          "reason": "顏色不影響距離。"
+        },
+        {
+          "choice": "需補充基地台必在三角形內",
+          "truth": false,
+          "reason": "鈍角三角形外心可能在外。"
+        },
+        {
+          "choice": "需刪除等距要求",
+          "truth": false,
+          "reason": "等距正是外心任務。"
+        }
+      ],
+      "misconceptionTarget": "忽略退化配置造成不存在或不唯一。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「審查等距基地台規格的邊界條件」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「需補充三個站點不共線，才能保證唯一外心」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：審查等距基地台規格的邊界條件。",
+      "literacyContextNecessity": "站點是否共線決定外心是否存在，屬通訊設址規格的必要邊界。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "d8176228b97acd397716a3499041e7345b9e020c2c04c6b5b8eb116f0dd97ad9"
+    },
+    {
+      "questionId": "u20-s015-v011",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "展覽說明牌宣稱：「任何三角形板都可在三中線交點平衡。」若板上裝有電池，應如何修正文句？",
+      "givenConditions": [],
+      "target": "修正含隱藏假設的展示說明",
+      "choices": [
+        "重心位置永遠不變且仍平衡",
+        "改用外心即可平衡",
+        "結論只適用於均勻板材，附加重物後應重新找質心",
+        "把三邊畫等長即可消除影響"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "幾何重心是均勻三角形薄板的平衡點；電池使質量分布不均，實際質心會改變。",
+        "result": "結論只適用於均勻板材，附加重物後應重新找質心"
+      },
+      "explanation": "幾何重心是均勻三角形薄板的平衡點；電池使質量分布不均，實際質心會改變。",
+      "steps": [
+        "辨認原敘述隱含均勻假設",
+        "電池改變質量分布",
+        "限制結論適用範圍"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "重心位置永遠不變且仍平衡",
+          "truth": false,
+          "reason": "幾何點不變，但物理平衡點會變。"
+        },
+        {
+          "choice": "改用外心即可平衡",
+          "truth": false,
+          "reason": "外心不考慮質量。"
+        },
+        {
+          "choice": "結論只適用於均勻板材，附加重物後應重新找質心",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；幾何重心是均勻三角形薄板的平衡點；電池使質量分布不均，實際質心會改變。"
+        },
+        {
+          "choice": "把三邊畫等長即可消除影響",
+          "truth": false,
+          "reason": "外形對稱不能抵消附加質量。"
+        }
+      ],
+      "misconceptionTarget": "沒有區分幾何重心與物理質心。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「修正含隱藏假設的展示說明」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「結論只適用於均勻板材，附加重物後應重新找質心」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：修正含隱藏假設的展示說明。",
+      "literacyContextNecessity": "電池重量使『任何板材』成為錯誤概括，必須修改模型假設。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "88d11804fe7d6a03eed8a516038b1ef8b068143d0bba3b3d8d27fed161479f5a"
+    },
+    {
+      "questionId": "u20-s015-v012",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "設計師要在不規則三角形標誌內放置同時貼住三邊的圓。哪個驗證流程最完整？",
+      "givenConditions": [],
+      "target": "規劃並複核內切圓設計",
+      "choices": [
+        "以三頂點平均坐標當圓心",
+        "量三邊長平均作半徑",
+        "只要圓看起來在正中央即可",
+        "先以角平分線確定內心，再以到邊垂距作半徑並檢查三處相切"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "兩角平分線交點確定內心；從內心向一邊作垂線取半徑；最後確認到三邊垂距相等、圓在三處相切。",
+        "result": "先以角平分線確定內心，再以到邊垂距作半徑並檢查三處相切"
+      },
+      "explanation": "兩角平分線交點確定內心；從內心向一邊作垂線取半徑；最後確認到三邊垂距相等、圓在三處相切。",
+      "steps": [
+        "作兩角平分線找內心",
+        "作垂距定半徑",
+        "以另外兩邊相切複核"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "以三頂點平均坐標當圓心",
+          "truth": false,
+          "reason": "那是重心座標。"
+        },
+        {
+          "choice": "量三邊長平均作半徑",
+          "truth": false,
+          "reason": "邊長平均與內切圓半徑無直接關係。"
+        },
+        {
+          "choice": "只要圓看起來在正中央即可",
+          "truth": false,
+          "reason": "視覺不能驗證相切。"
+        },
+        {
+          "choice": "先以角平分線確定內心，再以到邊垂距作半徑並檢查三處相切",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；兩角平分線交點確定內心；從內心向一邊作垂線取半徑；最後確認到三邊垂距相等、圓在三處相切。"
+        }
+      ],
+      "misconceptionTarget": "只找大致中央位置，沒有驗證相切條件。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「規劃並複核內切圓設計」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先以角平分線確定內心，再以到邊垂距作半徑並檢查三處相切」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：規劃並複核內切圓設計。",
+      "literacyContextNecessity": "標誌形狀不規則，必須由角平分線與垂距完成可檢查的設計流程。",
+      "figureId": "fig-u20-proof-literacy-sign-01",
+      "drawingSpecId": "fig-u20-proof-literacy-sign-01",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "2739e8e16d7e1cfceac9b2e305d54a1572c107d65cccc14cf70151535b3348be"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u20-s015-cr001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "prompt": "橋架圖中 D 是 BC 中點、AD⊥BC。請完成證明 △ADB≅△ADC，並再推出 AB＝AC。每一步都要附理由。",
+      "requiredWork": [
+        "中點、公共邊、直角。",
+        "SAS全等。",
+        "對應邊相等。"
+      ],
+      "standardSolution": [
+        "DB＝DC（中點定義）。",
+        "AD＝AD（公共邊）。",
+        "∠ADB＝∠ADC＝90°（AD⊥BC）。",
+        "所以 △ADB≅△ADC（SAS）。",
+        "因此 AB＝AC（全等三角形對應邊相等）。"
+      ],
+      "alternativeMethods": [
+        "也可先指出兩個直角相等，再列其他兩邊；步驟順序可調整，但全等判定必須在三條件後。"
+      ],
+      "reasoningSteps": [
+        "DB＝DC（中點定義）。",
+        "AD＝AD（公共邊）。",
+        "∠ADB＝∠ADC＝90°（AD⊥BC）。",
+        "所以 △ADB≅△ADC（SAS）。",
+        "因此 AB＝AC（全等三角形對應邊相等）。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "五段推理及理由完整，對應邊配對正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "能以SAS證全等並得AB＝AC，但漏一個基礎理由。"
+        },
+        {
+          "score": 1,
+          "criteria": "列出至少兩個正確條件，知道目標依賴全等。"
+        },
+        {
+          "score": 0,
+          "criteria": "只說圖形對稱、先假設AB＝AC或使用錯誤判定。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "依題目所給單位作答；純幾何關係不另加單位。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "漏掉公共邊。",
+        "把直角當對頂角。",
+        "全等式頂點順序錯導致對應邊錯。"
+      ],
+      "figureId": "fig-u20-proof-bridge-02",
+      "drawingSpecId": "fig-u20-proof-bridge-02",
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "DB＝DC（中點定義）。；AD＝AD（公共邊）。；∠ADB＝∠ADC＝90°（AD⊥BC）。；所以 △ADB≅△ADC（SAS）。；因此 AB＝AC（全等三角形對應邊相等）。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "a73539be32ec0cff3e6a457681c5e3fa8c6c8fa60ef845bd39aa10d8af4811c2"
+    },
+    {
+      "questionId": "u20-s015-cr002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-literacy",
+      "skillId": "proof-literacy",
+      "skillSlot": "s015",
+      "difficulty": "literacy",
+      "itemType": "constructed-response",
+      "prompt": "審查下列規格：「任選三個站點，外心一定在三站圍成的區域內，因此可作等距基地台。」請指出所有不嚴謹處，給出修正版，並說明至少兩種邊界情況。",
+      "requiredWork": [
+        "指出三點需不共線。",
+        "指出外心不一定在內部。",
+        "區分銳角、直角、鈍角位置。"
+      ],
+      "standardSolution": [
+        "問題一：『任選三點』可能共線，共線三點不形成非退化三角形，也沒有有限的共同等距外心。",
+        "問題二：外心不一定在三角形內。銳角三角形外心在內部；直角三角形外心在斜邊中點、位於邊上；鈍角三角形外心在外部。",
+        "修正版：若三站不共線，三邊垂直平分線有唯一交點，即到三站等距的外心；其是否位於服務區內須依三角形角型另行判斷。"
+      ],
+      "alternativeMethods": [
+        "還可補充實務上即使外心存在，也可能落在不可施工區，數學解與可行設址需分開。"
+      ],
+      "reasoningSteps": [
+        "問題一：『任選三點』可能共線，共線三點不形成非退化三角形，也沒有有限的共同等距外心。",
+        "問題二：外心不一定在三角形內。銳角三角形外心在內部；直角三角形外心在斜邊中點、位於邊上；鈍角三角形外心在外部。",
+        "修正版：若三站不共線，三邊垂直平分線有唯一交點，即到三站等距的外心；其是否位於服務區內須依三角形角型另行判斷。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "指出共線與位置兩大問題，完整分類三種角型並寫出可用修正版。"
+        },
+        {
+          "score": 2,
+          "criteria": "指出外心可能在外部並給修正，但漏掉共線或少一種角型。"
+        },
+        {
+          "score": 1,
+          "criteria": "只說原句不一定，能舉鈍角反例但未形成修正版。"
+        },
+        {
+          "score": 0,
+          "criteria": "接受原規格，或認為鈍角時外心不存在。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "若涉及站間距離，均使用同一地理距離單位；本題主要求邏輯分類。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "把『外部』誤作『無外心』。",
+        "漏掉直角在邊上。",
+        "未限制三點不共線。"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "問題一：『任選三點』可能共線，共線三點不形成非退化三角形，也沒有有限的共同等距外心。；問題二：外心不一定在三角形內。銳角三角形外心在內部；直角三角形外心在斜邊中點、位於邊上；鈍角三角形外心在外部。；修正版：若三站不共線，三邊垂直平分線有唯一交點，即到三站等距的外心；其是否位於服務區內須依三角形角型另行判斷。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "8e1595f62b6fe4a0323fcdd17f1e7c9065370d497bc34bd7ea11c8f25d8db4c2"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u20-s015-v001",
+      "contentSha256": "d5716367f21fa90b253398955c9cba51037c2921c2928d05491503c6b9781c60",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "相同刻痕是幾何圖中表示線段等長的正式符號。",
+      "derivedAnswer": "相同刻痕表示兩線段等長",
+      "storedAnswer": "相同刻痕表示兩線段等長",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「相同刻痕表示兩線段等長」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「依外觀猜測而不讀正式標記。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：解讀證明情境中的等長標記。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「閱讀工程幾何圖時，兩線段上有相同刻痕。這個標記通常代表什麼？」要求解讀證明情境中的等長標記。獨立推導為：相同刻痕是幾何圖中表示線段等長的正式符號。 四選項依序判定：相同顏色表示平行=假，平行通常用箭頭標記。；字母相鄰表示垂直=假，字母命名不表示角度。；相同刻痕表示兩線段等長=真，依獨立推導可得到此結果；相同刻痕是幾何圖中表示線段等長的正式符號。；線畫得較粗表示較長=假，線寬是排版，不是幾何長度。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "a809f0ac6f1e6cedc184fad5816991dd26343822611c32a52469f1c0f6644b05"
+    },
+    {
+      "questionId": "u20-s015-v002",
+      "contentSha256": "39373859958406dbdd085827c322bd6416caec993e05e59a6fa2fa223fa6f2ba",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "小正方形是直角標記，表示交角90°，兩線互相垂直。",
+      "derivedAnswer": "直角方框表示兩線互相垂直",
+      "storedAnswer": "直角方框表示兩線互相垂直",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「直角方框表示兩線互相垂直」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「混淆直角、等長與中點符號。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：解讀直角標記。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「施工圖交角處畫有小正方形。證明時可直接使用哪個資訊？」要求解讀直角標記。獨立推導為：小正方形是直角標記，表示交角90°，兩線互相垂直。 四選項依序判定：表示兩線等長=假，等長使用刻痕。；表示交點是中點=假，中點需在線段上有等分標記。；表示兩角互補但不一定垂直=假，直角標記已確定垂直。；直角方框表示兩線互相垂直=真，依獨立推導可得到此結果；小正方形是直角標記，表示交角90°，兩線互相垂直。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "acf34bca6f0cd12217832f3d1802496ceb3d1ca9beecca098cafc09a57080ced"
+    },
+    {
+      "questionId": "u20-s015-v003",
+      "contentSha256": "59bb5ba853ef9cdbe5cc329965dced22451648fbbdcfd9cd5a4327c7491a4b9a",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "只能使用文字、符號標記與已證結果，不能依圖上看起來的長短或角度增加條件。",
+      "derivedAnswer": "圖形未按比例，不能用外觀補充條件",
+      "storedAnswer": "圖形未按比例，不能用外觀補充條件",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「圖形未按比例，不能用外觀補充條件」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把示意圖當成精確量測資料。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：遵守非比例圖的證據界線。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「題目註明「圖形未按比例」。解題時應採哪個原則？」要求遵守非比例圖的證據界線。獨立推導為：只能使用文字、符號標記與已證結果，不能依圖上看起來的長短或角度增加條件。 四選項依序判定：看起來相等就可當已知=假，正是警告要避免的錯誤。；圖形未按比例，不能用外觀補充條件=真，依獨立推導可得到此結果；只能使用文字、符號標記與已證結果，不能依圖上看起來的長短或角度增加條件。；比例圖可省略所有標記=假，即使按比例，證明仍需條件。；只要用尺量過就成為定理=假，量測不會變成一般性證明。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "507325cc97cb7d3c95942ee1093e63f9d7568896c56e58e6b649f97284c2b63c"
+    },
+    {
+      "questionId": "u20-s015-v004",
+      "contentSha256": "ece96070c70c0eeafcb2c683e186083889c0bb0d3c7ed773c72f8251db4e8b2c",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "D為中點得DB＝DC；AD為公共邊；垂直得∠ADB＝∠ADC＝90°，三條件符合SAS。",
+      "derivedAnswer": "先由中點得兩段相等，再以 SAS 證全等",
+      "storedAnswer": "先由中點得兩段相等，再以 SAS 證全等",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先由中點得兩段相等，再以 SAS 證全等」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「有完整條件卻未轉成全等判定。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：在橋梁圖中建立全等證明。",
+      "literacyContextNecessity": "中點、支撐桿與垂直標記是橋圖中不可刪除的結構條件。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「步橋設計圖中，D 是 BC 中點，AD 為支撐桿，且 AD⊥BC。要證 △ADB≅△ADC，合理策略為何？」要求在橋梁圖中建立全等證明。獨立推導為：D為中點得DB＝DC；AD為公共邊；垂直得∠ADB＝∠ADC＝90°，三條件符合SAS。 四選項依序判定：先由中點得兩段相等，再以 SAS 證全等=真，依獨立推導可得到此結果；D為中點得DB＝DC；AD為公共邊；垂直得∠ADB＝∠ADC＝90°，三條件符合SAS。；直接由圖形對稱宣告全等=假，圖形外觀不是理由。；只用公共邊就判定全等=假，一組邊不足。；先假設待證角相等=假，形成循環。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "0c51253f68308f41dca1fe12da93cfdf652f8beae341c7a55bffee2095099169"
+    },
+    {
+      "questionId": "u20-s015-v005",
+      "contentSha256": "614397d74d0f36ead8f9ee4fae720a3fa1088cb4655a327b2828955df19b5918",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "兩角和為180°，且確為同旁內角，因此可判定 a∥b。",
+      "derivedAnswer": "同旁內角互補可判定兩線平行",
+      "storedAnswer": "同旁內角互補可判定兩線平行",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「同旁內角互補可判定兩線平行」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "角度以度表示，110°+70°為精確規格值。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「只算角和，忽略角必須是特定位置的一對。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：由道路角度資料判定平行。",
+      "literacyContextNecessity": "道路、橫路與同旁位置決定180°能否用於平行判定。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「道路 a、b 被橫路 t 所截，一對同旁內角量得並經規格確認為 110°、70°。可作何判斷？」要求由道路角度資料判定平行。獨立推導為：兩角和為180°，且確為同旁內角，因此可判定 a∥b。 四選項依序判定：同旁內角相等可判定垂直=假，相等不是此判定條件。；任兩角和180°都代表直線平行=假，還需角的位置關係。；只看道路方向相近=假，外觀不足。；同旁內角互補可判定兩線平行=真，依獨立推導可得到此結果；兩角和為180°，且確為同旁內角，因此可判定 a∥b。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "411a91b63ed646f91fee80e551c52840e1087034ad259021fe57f4fd15a2b674"
+    },
+    {
+      "questionId": "u20-s015-v006",
+      "contentSha256": "1011df3463d861b64bba9d7f593418027cb7975e432c5dbb9ab614c070535e5e",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "等角判定平行需確認是同位角或內錯角等特定角型；只知兩角相等不足。",
+      "derivedAnswer": "報告缺少角為同位角或內錯角的定位說明",
+      "storedAnswer": "報告缺少角為同位角或內錯角的定位說明",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「報告缺少角為同位角或內錯角的定位說明」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把任意兩角相等當作平行充分條件。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：審查平行證明的必要位置資訊。",
+      "literacyContextNecessity": "護欄檢核需從圖面角位置支持平行，情境中缺失的規格必須被指出。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「檢核報告寫：「∠1＝∠2，所以兩護欄平行。」但未說明兩角位置。主要缺陷是什麼？」要求審查平行證明的必要位置資訊。獨立推導為：等角判定平行需確認是同位角或內錯角等特定角型；只知兩角相等不足。 四選項依序判定：報告字數太少=假，問題在邏輯條件，不在篇幅。；報告缺少角為同位角或內錯角的定位說明=真，依獨立推導可得到此結果；等角判定平行需確認是同位角或內錯角等特定角型；只知兩角相等不足。；角度沒有換成弧度=假，國中幾何不需弧度。；未使用三角函數=假，本題不需三角函數。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "c8510389157ce30f0969482080d8f0d60c6b0ceaff9299c31de3571a059edaf5"
+    },
+    {
+      "questionId": "u20-s015-v007",
+      "contentSha256": "55b783e9bfe5f10251d8269c956049c26f3c66f573552e5aa76e90fa12b1ebbc",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "待證結論在尚未推出前不能作為前提；這是循環論證。",
+      "derivedAnswer": "證明稿把待證的 AC＝BD 先當作全等條件",
+      "storedAnswer": "證明稿把待證的 AC＝BD 先當作全等條件",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「證明稿把待證的 AC＝BD 先當作全等條件」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「未追蹤每個條件的來源。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：辨識素養證明中的循環條件。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「學生要證 AC＝BD，卻在證明兩三角形全等時把 AC＝BD 列為其中一個已知條件。這是哪個問題？」要求辨識素養證明中的循環條件。獨立推導為：待證結論在尚未推出前不能作為前提；這是循環論證。 四選項依序判定：證明稿把待證的 AC＝BD 先當作全等條件=真，依獨立推導可得到此結果；待證結論在尚未推出前不能作為前提；這是循環論證。；公共邊不能使用=假，公共邊可以作為全等條件。；全等後不能推出對應邊相等=假，全等後可以。；SAS 永遠無效=假，SAS是有效判定。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "76085f5c46c81789dc2776df9d51259a9e829f4ef085e7f70c4faecf34f725e9"
+    },
+    {
+      "questionId": "u20-s015-v008",
+      "contentSha256": "749f98c2afef732ea0c6d78cb138fc0a5c76dbebe34c0a202e113af2165e897c",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "由等量遞移得∠1＝∠2，再由內錯角相等判定兩直線平行。",
+      "derivedAnswer": "兩次使用等量代換，再用內錯角相等判定平行",
+      "storedAnswer": "兩次使用等量代換，再用內錯角相等判定平行",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「兩次使用等量代換，再用內錯角相等判定平行」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「得到多個角相等後未整理成目標角對。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：完成跨兩個全等結果的平行證明。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「圖中先由兩組全等三角形得到 ∠1＝∠3、∠3＝∠2，而 ∠1、∠2 是兩線的內錯角。最後應如何完成證明？」要求完成跨兩個全等結果的平行證明。獨立推導為：由等量遞移得∠1＝∠2，再由內錯角相等判定兩直線平行。 四選項依序判定：直接說三角形看起來對稱=假，外觀不足。；只用面積相等=假，面積不能提供所需角關係。；兩次使用等量代換，再用內錯角相等判定平行=真，依獨立推導可得到此結果；由等量遞移得∠1＝∠2，再由內錯角相等判定兩直線平行。；以量角器讀值取代條件=假，量測只近似。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "b49c8c6e9083aa236e742979a57fd541a1e30c35fa613dab9581d58ca26f1e22"
+    },
+    {
+      "questionId": "u20-s015-v009",
+      "contentSha256": "a8c8ae9ea4b12a9b551a0826ed5e4a6dc237d9873cf1fba585533358c1fbb162",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "反例要有一組對邊平行，但不是平行四邊形，例如一般梯形；必須滿足前提並使結論失敗。",
+      "derivedAnswer": "反例必須同時符合所有前提而違反結論",
+      "storedAnswer": "反例必須同時符合所有前提而違反結論",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「反例必須同時符合所有前提而違反結論」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「舉出任意非平行四邊形卻未滿足前提。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：設計有效幾何反例。",
+      "literacyContextNecessity": "規格是全稱敘述，工程審查需以符合前提但失敗的形狀測試其可靠性。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「規格宣稱：「所有有一組對邊平行的四邊形都是平行四邊形。」要用反例推翻，應符合什麼？」要求設計有效幾何反例。獨立推導為：反例要有一組對邊平行，但不是平行四邊形，例如一般梯形；必須滿足前提並使結論失敗。 四選項依序判定：只要結論不成立即可，不必符合前提=假，不符合前提的例子不能反駁條件命題。；反例必須同時符合所有前提而違反結論=真，依獨立推導可得到此結果；反例要有一組對邊平行，但不是平行四邊形，例如一般梯形；必須滿足前提並使結論失敗。；只要圖形特殊即可=假，特殊性不是反例標準。；只要計算複雜即可=假，複雜度與真假無關。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "d13189c562a7d11707045cc370c70138edbb35c927d4a8a6a3c1cacf5c814768"
+    },
+    {
+      "questionId": "u20-s015-v010",
+      "contentSha256": "d8176228b97acd397716a3499041e7345b9e020c2c04c6b5b8eb116f0dd97ad9",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "若三點共線，三條垂直平分線沒有共同有限交點；三點不共線才形成非退化三角形並決定唯一外接圓心。",
+      "derivedAnswer": "需補充三個站點不共線，才能保證唯一外心",
+      "storedAnswer": "需補充三個站點不共線，才能保證唯一外心",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「需補充三個站點不共線，才能保證唯一外心」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「忽略退化配置造成不存在或不唯一。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：審查等距基地台規格的邊界條件。",
+      "literacyContextNecessity": "站點是否共線決定外心是否存在，屬通訊設址規格的必要邊界。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「通訊計畫寫：「任選三個站點即可決定唯一等距基地台。」這句話缺少哪個必要條件？」要求審查等距基地台規格的邊界條件。獨立推導為：若三點共線，三條垂直平分線沒有共同有限交點；三點不共線才形成非退化三角形並決定唯一外接圓心。 四選項依序判定：需補充三個站點不共線，才能保證唯一外心=真，依獨立推導可得到此結果；若三點共線，三條垂直平分線沒有共同有限交點；三點不共線才形成非退化三角形並決定唯一外接圓心。；需補充三站顏色相同=假，顏色不影響距離。；需補充基地台必在三角形內=假，鈍角三角形外心可能在外。；需刪除等距要求=假，等距正是外心任務。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "6fe7dbbd63b4d1984987662131e8e0d5d276086cf4dbb5431f8fa94d6ce8f33b"
+    },
+    {
+      "questionId": "u20-s015-v011",
+      "contentSha256": "88d11804fe7d6a03eed8a516038b1ef8b068143d0bba3b3d8d27fed161479f5a",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "幾何重心是均勻三角形薄板的平衡點；電池使質量分布不均，實際質心會改變。",
+      "derivedAnswer": "結論只適用於均勻板材，附加重物後應重新找質心",
+      "storedAnswer": "結論只適用於均勻板材，附加重物後應重新找質心",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「結論只適用於均勻板材，附加重物後應重新找質心」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「沒有區分幾何重心與物理質心。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：修正含隱藏假設的展示說明。",
+      "literacyContextNecessity": "電池重量使『任何板材』成為錯誤概括，必須修改模型假設。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「展覽說明牌宣稱：「任何三角形板都可在三中線交點平衡。」若板上裝有電池，應如何修正文句？」要求修正含隱藏假設的展示說明。獨立推導為：幾何重心是均勻三角形薄板的平衡點；電池使質量分布不均，實際質心會改變。 四選項依序判定：重心位置永遠不變且仍平衡=假，幾何點不變，但物理平衡點會變。；改用外心即可平衡=假，外心不考慮質量。；結論只適用於均勻板材，附加重物後應重新找質心=真，依獨立推導可得到此結果；幾何重心是均勻三角形薄板的平衡點；電池使質量分布不均，實際質心會改變。；把三邊畫等長即可消除影響=假，外形對稱不能抵消附加質量。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "9f25f6229e26662871e03c9f8fba1b82ed8869f561178a6db60e240d84040ebf"
+    },
+    {
+      "questionId": "u20-s015-v012",
+      "contentSha256": "2739e8e16d7e1cfceac9b2e305d54a1572c107d65cccc14cf70151535b3348be",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "兩角平分線交點確定內心；從內心向一邊作垂線取半徑；最後確認到三邊垂距相等、圓在三處相切。",
+      "derivedAnswer": "先以角平分線確定內心，再以到邊垂距作半徑並檢查三處相切",
+      "storedAnswer": "先以角平分線確定內心，再以到邊垂距作半徑並檢查三處相切",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先以角平分線確定內心，再以到邊垂距作半徑並檢查三處相切」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「只找大致中央位置，沒有驗證相切條件。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：規劃並複核內切圓設計。",
+      "literacyContextNecessity": "標誌形狀不規則，必須由角平分線與垂距完成可檢查的設計流程。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「設計師要在不規則三角形標誌內放置同時貼住三邊的圓。哪個驗證流程最完整？」要求規劃並複核內切圓設計。獨立推導為：兩角平分線交點確定內心；從內心向一邊作垂線取半徑；最後確認到三邊垂距相等、圓在三處相切。 四選項依序判定：以三頂點平均坐標當圓心=假，那是重心座標。；量三邊長平均作半徑=假，邊長平均與內切圓半徑無直接關係。；只要圓看起來在正中央即可=假，視覺不能驗證相切。；先以角平分線確定內心，再以到邊垂距作半徑並檢查三處相切=真，依獨立推導可得到此結果；兩角平分線交點確定內心；從內心向一邊作垂線取半徑；最後確認到三邊垂距相等、圓在三處相切。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "4fea9dba40342bf304cedfd4518a3497f8ef33a606a3cdb2336190fea486f10f"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u20-proof-bridge-02",
+      "unitId": "u20",
+      "ownerSkillSlot": "s015",
+      "title": "中點垂直支撐橋證明圖",
+      "description": "等腰橋架候選圖中D為底邊BC中點，AD垂直BC，BD與DC有相同刻痕，AD為公共支撐。",
+      "canvas": {
+        "width": 480,
+        "height": 320,
+        "viewBox": "0 0 480 320"
+      },
+      "coordinates": {
+        "A": [
+          240,
+          55
+        ],
+        "B": [
+          65,
+          250
+        ],
+        "C": [
+          420,
+          250
+        ],
+        "D": [
+          242,
+          250
+        ]
+      },
+      "visibleLineRules": "實線表示題設中的線段或道路；虛線表示延長線或輔助線；直角方框、等長刻痕與平行箭頭只在題設提供時使用。",
+      "hiddenLineRules": "本單元為平面圖，不使用立體隱線；未畫出的關係不得自行假設。",
+      "labels": "所有點名放在點外側至少8像素；避免壓在線段或直角記號上。",
+      "toScale": false,
+      "visualInferenceWarning": "圖形未按比例，不可用外觀估計未標示的長度或角度。",
+      "altText": "三角形ABC的底邊BC上有中點D，BD與DC有相同刻痕；支撐AD連到D，D處標直角。",
+      "svgTitle": "中點垂直支撐橋證明圖",
+      "svgDesc": "等腰橋架候選圖中D為底邊BC中點，AD垂直BC，BD與DC有相同刻痕，AD為公共支撐。",
+      "mobileReadabilityReview": "在寬度320像素縮放下，主要線段、直角記號與標籤仍可辨認；字級不小於16。",
+      "answerLeakageReview": "圖中只呈現題設標記與辨識所需結構，不標示選項答案、中心名稱結論或未給定數值。",
+      "geometryAssertions": [
+        "BD與DC標示等長",
+        "AD與BC有直角標記",
+        "未預先標示AB與AC等長"
+      ],
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "figureId": "fig-u20-proof-literacy-sign-01",
+      "unitId": "u20",
+      "ownerSkillSlot": "s015",
+      "title": "不規則標誌內切圓設計流程圖",
+      "description": "不規則三角形ABC內畫兩條角平分虛線交於I，從I向三邊畫垂線段，尚未畫完整圓以避免直接洩漏。",
+      "canvas": {
+        "width": 480,
+        "height": 320,
+        "viewBox": "0 0 480 320"
+      },
+      "coordinates": {
+        "A": [
+          155,
+          42
+        ],
+        "B": [
+          60,
+          255
+        ],
+        "C": [
+          430,
+          248
+        ],
+        "I": [
+          235,
+          183
+        ]
+      },
+      "visibleLineRules": "實線表示題設中的線段或道路；虛線表示延長線或輔助線；直角方框、等長刻痕與平行箭頭只在題設提供時使用。",
+      "hiddenLineRules": "本單元為平面圖，不使用立體隱線；未畫出的關係不得自行假設。",
+      "labels": "所有點名放在點外側至少8像素；避免壓在線段或直角記號上。",
+      "toScale": false,
+      "visualInferenceWarning": "圖形未按比例，不可用外觀估計未標示的長度或角度。",
+      "altText": "不規則三角形ABC中，兩條角平分線交於I；I向三邊的三條虛線垂距各有直角標記。",
+      "svgTitle": "不規則標誌內切圓設計流程圖",
+      "svgDesc": "不規則三角形ABC內畫兩條角平分虛線交於I，從I向三邊畫垂線段，尚未畫完整圓以避免直接洩漏。",
+      "mobileReadabilityReview": "在寬度320像素縮放下，主要線段、直角記號與標籤仍可辨認；字級不小於16。",
+      "answerLeakageReview": "圖中只呈現題設標記與辨識所需結構，不標示選項答案、中心名稱結論或未給定數值。",
+      "geometryAssertions": [
+        "兩角平分線交於I",
+        "三個到邊垂距可見",
+        "未直接繪出圓或標示內心答案"
+      ],
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ]
+};
+export default skillBundle;

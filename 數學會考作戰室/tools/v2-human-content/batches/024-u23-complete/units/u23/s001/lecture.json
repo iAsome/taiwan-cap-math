@@ -1,0 +1,244 @@
+{
+  "lectureId": "u23-s001-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-basics",
+  "skillId": "solid-nets",
+  "title": "展開圖：從平面拼片判斷折成立體",
+  "lockedSkillTitle": "展開圖",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能說明展開圖與立體表面的對應關係。",
+    "能依公共邊判斷摺起後哪些面相鄰或相對。",
+    "能辨認常見柱體與錐體的展開圖。",
+    "能避免只靠圖形外觀猜測摺疊結果。"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    {
+      "term": "展開圖",
+      "definition": "沿立體的部分稜剪開並攤平後，所有表面仍完整相連的平面圖形。"
+    },
+    {
+      "term": "公共邊",
+      "definition": "展開圖中兩個面共用的邊，摺起後仍是相鄰面的交線。"
+    },
+    {
+      "term": "相鄰面",
+      "definition": "摺成立體後共用一條稜的兩個面。"
+    },
+    {
+      "term": "相對面",
+      "definition": "在長方體或正方體中互不相鄰且彼此平行的兩個面。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "□",
+      "meaning": "用來表示正方形面；實際題目仍須依位置判斷能否摺疊。"
+    },
+    {
+      "symbol": "↷",
+      "meaning": "表示沿邊摺起的方向提示，不代表面積或角度。"
+    }
+  ],
+  "conceptNarrative": [
+    "立體表面可以想成一張由多個面連接而成的外皮。把某些稜剪開後攤平，就得到展開圖。",
+    "展開圖不是任意把面排在一起；每個面只能出現一次，而且摺起時不能重疊或留下缺口。",
+    "判斷時可固定一個面，再依公共邊逐面想像旋轉九十度。正方體的六個面摺起後，每一面恰有四個相鄰面與一個相對面。",
+    "圓柱的展開圖由兩個全等圓和一個長方形組成；圓錐的側面展開為扇形，另有一個底圓。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "立體的展開圖",
+      "statement": "由該立體全部表面沿部分稜剪開後，在平面上不重疊地攤開所得的圖。"
+    },
+    {
+      "name": "摺疊有效條件",
+      "statement": "所有面數與形狀正確，公共邊可對合，摺起後沒有兩面佔據同一位置。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "圓柱側面長方形的長＝底面圓周長",
+      "conditions": [
+        "圓柱為直圓柱",
+        "長方形沿圓周方向展開"
+      ],
+      "meaning": "側面繞底圓一周後兩端才能接合。"
+    },
+    {
+      "formula": "長方體展開圖共有6個面",
+      "conditions": [
+        "立體是長方體"
+      ],
+      "meaning": "三組全等的相對面各出現兩次。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只有六個正方形相連，不一定能摺成正方體。",
+    "面在平面上相碰於一點，不代表摺起後相鄰。",
+    "不能把展開圖中被剪開的兩條邊誤認為摺起後不會接合。",
+    "判斷圓柱展開圖時，兩個底圓不能少一個，也不能把側面畫成扇形。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先確認立體需要哪些面。",
+      "check": "面數和面形是否完整？"
+    },
+    {
+      "step": 2,
+      "instruction": "選一個面固定不動。",
+      "check": "它可作為想像摺疊的基準嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "沿公共邊逐面摺起。",
+      "check": "每次只旋轉相鄰的一面，不跨越空隙。"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查重疊與缺口。",
+      "check": "是否有兩面到達同一位置，或應封閉處沒有面？"
+    },
+    {
+      "step": 5,
+      "instruction": "核對標記面的關係。",
+      "check": "題目問的是相鄰、相對還是接合邊？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "一個正方體展開圖中，中央正方形的上、下、左、右各連一格，右邊那格再向右連一格。最右格與中央格摺起後是什麼關係？",
+      "solutionSteps": [
+        "中央格四周的四格摺起成四個側面。",
+        "最右格連在右側面外緣，摺起後蓋住中央格的相對位置。"
+      ],
+      "answer": "最右格與中央格為相對面。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "一個圓柱展開圖應包含哪些平面圖形？",
+      "solutionSteps": [
+        "圓柱有兩個全等圓形底面。",
+        "彎曲側面攤平為一個長方形。"
+      ],
+      "answer": "兩個全等圓和一個長方形。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "六個正方形排成2×3長方形，能否直接摺成正方體？",
+      "solutionSteps": [
+        "中間接縫摺起時，部分正方形會爭奪同一個面的位置。",
+        "因此會重疊，無法封閉成立方體。"
+      ],
+      "answer": "不能。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "圓錐側面攤平後為什麼不是三角形？",
+      "solutionSteps": [
+        "圓錐側面上的母線長度相同，從頂點向外形成許多半徑。",
+        "攤平後外緣為弧，形成扇形。"
+      ],
+      "answer": "因外緣是圓弧，側面展開為扇形。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只數到六個正方形就判定一定可摺成立方體。",
+      "why": "忽略摺起後可能重疊。",
+      "correction": "固定一面逐邊摺起並檢查六個空間方向。"
+    },
+    {
+      "mistake": "把展開圖中相隔很遠的面判為一定相對。",
+      "why": "平面距離不等於立體關係。",
+      "correction": "沿公共邊追蹤摺疊位置。"
+    },
+    {
+      "mistake": "認為展開圖中不共邊的面摺起後也不會相鄰。",
+      "why": "剪開的稜攤平後會分離。",
+      "correction": "封成立體時部分分離邊會重新接合。"
+    },
+    {
+      "mistake": "把圓柱側面展開成扇形。",
+      "why": "混淆圓柱與圓錐。",
+      "correction": "圓柱母線互相平行，側面攤平是長方形。"
+    },
+    {
+      "mistake": "漏掉圓柱的一個底圓。",
+      "why": "只看到一端。",
+      "correction": "封閉圓柱有上下兩個全等底面。"
+    },
+    {
+      "mistake": "用紙面上的上下左右直接當成立體的上下左右。",
+      "why": "未選定固定面和觀察方向。",
+      "correction": "先固定基準面，再描述其他面摺起的位置。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認全部面數與形狀？",
+    "我是否沿公共邊逐面摺疊？",
+    "我是否檢查重疊與缺口？",
+    "我是否區分相鄰面與相對面？",
+    "我是否未以平面距離代替立體關係？"
+  ],
+  "summary": [
+    "展開圖保留立體所有表面與連接資訊。",
+    "有效展開圖摺起後不能重疊也不能缺面。",
+    "正方體判斷要追蹤六個空間方向。",
+    "圓柱與圓錐的側面展開形狀不同。"
+  ],
+  "connections": {
+    "previous": "本技能為 U23 起點，使用先前平面圖形與長方形、圓、扇形的辨認能力。",
+    "next": [
+      "立體三視圖將改由不同方向描述同一立體。",
+      "由展開圖求表面積會把各面面積加總。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u23-s001-fig001",
+      "purpose": "立方體十字形展開圖",
+      "altText": "六個正方形以十字形相接，標A至F。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s001-v001",
+      "u23-s001-v002",
+      "u23-s001-v003",
+      "u23-s001-v004",
+      "u23-s001-v005",
+      "u23-s001-v006",
+      "u23-s001-v007",
+      "u23-s001-v008",
+      "u23-s001-v009",
+      "u23-s001-v010",
+      "u23-s001-v011",
+      "u23-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s001-cr001",
+      "u23-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一以摺疊路徑核對四個例子；特別驗證2×3排列會重疊、圓柱包含兩底圓、圓錐側面是扇形，並確認所有符號在使用前已說明。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "41ec8f99b8c5640ac69ea14f191601ba8045d6b193b7c627378e27d2c58797dd"
+}

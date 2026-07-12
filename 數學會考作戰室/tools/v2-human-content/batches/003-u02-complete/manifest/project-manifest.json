@@ -1,0 +1,71 @@
+{
+  "packageId": "math-v2-human-content-batch-003-u02-complete",
+  "schemaVersion": "1.2.0",
+  "immutableSource": true,
+  "baseBranch": "chatgpt/math-v2-human-authoring-r1",
+  "expectedBaseHead": "ad34650bfdba8613ab06bfb6d51c4924566d7707",
+  "dependsOn": [
+    "math-v2-human-content-batch-001",
+    "math-v2-human-content-batch-002-u01-complete",
+    "authoring-syllabus-lock-r2"
+  ],
+  "unitId": "u02",
+  "skillSlots": [
+    "s001",
+    "s002",
+    "s003",
+    "s004",
+    "s005",
+    "s006",
+    "s007",
+    "s008",
+    "s009",
+    "s010",
+    "s011",
+    "s012",
+    "s013",
+    "s014",
+    "s015"
+  ],
+  "counts": {
+    "batchId": "math-v2-human-content-batch-003-u02-complete",
+    "unitId": "u02",
+    "status": "independently-reviewed-staging-only",
+    "newSkillsInBatch": 15,
+    "u02HumanSkillTotalAfterCommit": 15,
+    "humanSkillTotalAfterCommit": 30,
+    "lectureCount": 15,
+    "mcQuestionCount": 180,
+    "constructedResponseCount": 30,
+    "semanticReviewCount": 180,
+    "figureCount": 3,
+    "difficultyCounts": {
+      "basic": 45,
+      "standard": 45,
+      "advanced": 45,
+      "literacy": 45
+    },
+    "answerIndexCounts": [
+      45,
+      45,
+      45,
+      45
+    ],
+    "productionActivationAllowed": false,
+    "reviewChecks": [
+      "all content hashes recalculated",
+      "all 720 MC option truth statements individually recorded",
+      "all MC answers independently re-solved",
+      "all 30 constructed responses include score 0-3 rubrics",
+      "all figure references resolved",
+      "all SVGs include title, description and detailed drawing specification",
+      "all 15 lecture review notes are skill-specific",
+      "all 180 semantic reviews contain question-specific evidence",
+      "no production path included"
+    ],
+    "manualAuditVersion": "u02-final-manual-audit-r3.0",
+    "openIssueCount": 0
+  },
+  "productionActivationAllowed": false,
+  "allowedDestination": "數學會考作戰室/tools/v2-human-content/batches/003-u02-complete/"
+}

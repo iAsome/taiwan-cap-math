@@ -1,0 +1,190 @@
+{
+  "lectureId": "u20-s004-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-proof",
+  "skillId": "proof-fill-reason",
+  "skillSlot": "s004",
+  "lockedSkillTitle": "填充證明理由",
+  "title": "填充證明理由：從上下文補回缺失橋梁",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由前後敘述判斷空格所需理由。",
+    "能辨認空格缺的是定義、性質、判定或條件來源。",
+    "能指出資料不足而非勉強填入。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "geometry-proof-reason",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「geometry-proof-reason」再進入本節。",
+  "glossary": [
+    {
+      "term": "證明填空",
+      "definition": "保留部分敘述或理由，要求補出使論證完整的內容。"
+    },
+    {
+      "term": "局部脈絡",
+      "definition": "空格前的條件與空格後的結果共同限制可填答案。"
+    },
+    {
+      "term": "資料不足",
+      "definition": "現有條件無法唯一支持下一步，需明確指出缺少資訊。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "（　）",
+      "meaning": "待填入的敘述或理由位置。"
+    },
+    {
+      "symbol": "①②③",
+      "meaning": "不同空格標號，需逐一對應。"
+    }
+  ],
+  "conceptNarrative": [
+    "填空不是猜課本慣用語，而是檢查『前句如何推出後句』。若前句是D為中點、後句是BD＝DC，空格只能是中點定義一類理由。",
+    "同一個結果可能有多種證法，但局部脈絡通常會指定最直接的理由。若後續使用SAS，就要檢查空格中的角是否真為夾角。",
+    "若最後由等角證平行卻沒有角的位置，最嚴謹答案是指出缺少同位角或內錯角資訊。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "敘述空格",
+      "statement": "需要補一個可由前文推出、又供後文使用的數學結果。"
+    },
+    {
+      "name": "理由空格",
+      "statement": "需要補支持已寫敘述的定義、定理或已知來源。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "前文條件 + 空格 + 後文用途 = 完整推理",
+      "conditions": [
+        "三部分需彼此相容",
+        "不得把後文結論倒填成前提"
+      ],
+      "meaning": "填空的雙向檢查法。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能因常見答案是SAS就忽略實際給的是SSA。",
+    "沒有角型資訊時，不能只填『等角所以平行』。",
+    "『已知』只適用於題目直接給的敘述，公共邊通常不是題目額外已知。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "判斷空格要填敘述還是理由。",
+      "check": "括號位於等式後，通常填理由。"
+    },
+    {
+      "step": 2,
+      "instruction": "讀空格前一句找來源。",
+      "check": "關鍵名詞是否直接提供定義？"
+    },
+    {
+      "step": 3,
+      "instruction": "讀空格後一句找用途。",
+      "check": "它是否準備全等、平行或等量代換？"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查是否存在缺件。",
+      "check": "角型、對應、夾角或單位是否明確？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "M是AB中點，所以AM＝MB（　）。",
+      "solutionSteps": [
+        "前句給中點。",
+        "後句是兩段等長。"
+      ],
+      "answer": "中點的定義。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩邊及夾角相等，所以兩三角形全等（　）。",
+      "solutionSteps": [
+        "條件類型為邊角邊。",
+        "角位於兩邊之間。"
+      ],
+      "answer": "SAS。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只看最後結論填最熟悉定理。",
+      "why": "忽略局部條件。",
+      "correction": "同時讀前後文。"
+    },
+    {
+      "mistake": "資料不足仍硬填。",
+      "why": "把猜測當證明。",
+      "correction": "明寫缺少的角型或條件。"
+    },
+    {
+      "mistake": "把性質方向填成判定方向。",
+      "why": "未辨認前提與結論。",
+      "correction": "用完整句朗讀推理。"
+    }
+  ],
+  "selfCheck": [
+    "空格是敘述還是理由？",
+    "前文條件足夠嗎？",
+    "後文要使用什麼？",
+    "若不足，我能說出缺少哪一項嗎？"
+  ],
+  "summary": [
+    "填空要同時符合前文來源與後文用途。",
+    "最直接理由通常優於無關的複雜定理。",
+    "資料不足時指出缺件也是正確審查。"
+  ],
+  "connections": {
+    "previous": "先備：geometry-proof-reason",
+    "next": [
+      "下一技能將把條件命題改寫為等價的逆否形式。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s004-v001",
+      "u20-s004-v002",
+      "u20-s004-v003",
+      "u20-s004-v004",
+      "u20-s004-v005",
+      "u20-s004-v006",
+      "u20-s004-v007",
+      "u20-s004-v008",
+      "u20-s004-v009",
+      "u20-s004-v010",
+      "u20-s004-v011",
+      "u20-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s004-cr001",
+      "u20-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "講義特別納入『無法合法填入』情況，避免學生認為每個空格必有固定詞。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "38ae68997ac3e08dd1c53809fb25591cec42a0ad879a34e2d619809f1c553a08"
+}

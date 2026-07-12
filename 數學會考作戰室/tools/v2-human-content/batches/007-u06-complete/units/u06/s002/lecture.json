@@ -1,0 +1,253 @@
+{
+  "lectureId": "u06-s002-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-ratio-basics",
+  "skillId": "proportion-solve",
+  "lockedSkillTitle": "比例式求解",
+  "title": "比例式求解：對應順序與交叉相乘",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "比與比例式基礎",
+    "skillOrder": 2,
+    "lockedPrerequisiteSkillIds": [
+      "ratio-simplify"
+    ],
+    "capBoundary": "限一元未知數的比例式與國中範圍代數整理；分母為零的值必須排除。"
+  },
+  "prerequisiteBridge": "先會把比化成等值比，並理解 a:b=a/b。比例式就是兩個比值相等，因此可用等式性質與交叉相乘求未知數。",
+  "learningOutcomes": [
+    "能將 a:b=c:d 改寫成 a/b=c/d。",
+    "能在分母非零條件下使用 ad=bc。",
+    "能解含整數、分數、小數與簡單括號的比例式。",
+    "能把答案代回原式檢查對應順序與分母限制。"
+  ],
+  "glossary": [
+    {
+      "term": "比例式",
+      "definition": "兩個比相等的等式，例如 2:3=8:12。"
+    },
+    {
+      "term": "內項",
+      "definition": "a:b=c:d 中的 b、c。"
+    },
+    {
+      "term": "外項",
+      "definition": "a:b=c:d 中的 a、d。"
+    },
+    {
+      "term": "交叉相乘",
+      "definition": "由 a/b=c/d 得到 ad=bc 的運算，前提是 b、d 不為 0。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a:b=c:d",
+      "meaning": "a/b=c/d，b≠0、d≠0。"
+    },
+    {
+      "symbol": "ad=bc",
+      "meaning": "比例式的外項乘積等於內項乘積。"
+    },
+    {
+      "symbol": "x≠r",
+      "meaning": "若 x=r 會使原分母為 0，必須排除。"
+    }
+  ],
+  "conceptNarrative": [
+    "比例式要求同一種比較順序。若左邊是長:寬，右邊也必須是長:寬。",
+    "交叉相乘不是背箭頭，而是等式兩邊同乘兩個分母：a/b=c/d 同乘 bd 後得到 ad=bc。",
+    "未知數可能在任一位置。先寫乘積等式，再用一元一次方程式方法整理。",
+    "若未知數出現在分母，先記錄不能使分母為 0 的值，解完仍要代回。",
+    "情境題中數學解還要符合正數、整數、件數等條件。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "比例式成立",
+      "statement": "兩個有定義的比具有相同比值。"
+    },
+    {
+      "name": "比例中項與外項",
+      "statement": "a:b=c:d 中，b、c 為內項，a、d 為外項。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a:b=c:d ⇔ ad=bc",
+      "conditions": [
+        "b≠0",
+        "d≠0"
+      ],
+      "meaning": "外項乘積等於內項乘積。"
+    },
+    {
+      "formula": "x/a=b/c ⇒ cx=ab",
+      "conditions": [
+        "a≠0",
+        "c≠0"
+      ],
+      "meaning": "交叉相乘後解 x。"
+    }
+  ],
+  "nonApplicableCases": [
+    "任一後項為 0 時不能使用比例式。",
+    "對應量顛倒，例如甲長:甲寬=乙寬:乙長，通常不成立。",
+    "交叉相乘後仍須解方程式，不能把乘積直接當答案。",
+    "代數解若使原分母為 0，必須捨去。",
+    "件數題若算出非整數，應回頭檢查模型或題目限制。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出兩邊比的比較順序。",
+      "check": "相同位置是否代表同類量？"
+    },
+    {
+      "step": 2,
+      "instruction": "寫出分母不為 0 的限制。",
+      "check": "未知數是否在後項或分母？"
+    },
+    {
+      "step": 3,
+      "instruction": "交叉相乘形成一元一次方程式。",
+      "check": "左上乘右下、左下乘右上是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "解方程式並整理。",
+      "check": "負號、括號、分數是否處理完整？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原比例式與情境驗算。",
+      "check": "兩邊比值是否相同，答案是否符合量的限制？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 4:x=6:15。",
+      "solutionSteps": [
+        "寫成 4/x=6/15，且 x≠0。",
+        "交叉相乘得 60=6x，所以 x=10。"
+      ],
+      "answer": "x=10。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 (x+1):9=4:6。",
+      "solutionSteps": [
+        "交叉相乘得 6(x+1)=36。",
+        "x+1=6，所以 x=5。"
+      ],
+      "answer": "x=5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 0.8:1.2=x:9。",
+      "solutionSteps": [
+        "0.8/1.2=2/3。",
+        "x/9=2/3，所以 3x=18，x=6。"
+      ],
+      "answer": "x=6。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解 5:(x-2)=3:6。",
+      "solutionSteps": [
+        "先記 x≠2。",
+        "30=3(x-2)，得 x=12；12 不違反限制。"
+      ],
+      "answer": "x=12。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 3:x=6:10 寫成 3x=60。",
+      "why": "交叉配對錯誤。",
+      "correction": "3×10=6x。"
+    },
+    {
+      "mistake": "左右兩比的量次序不一致。",
+      "why": "只看數字，未標示量的名稱。",
+      "correction": "先寫單位或量名再列式。"
+    },
+    {
+      "mistake": "解出 x 後不代回。",
+      "why": "容易漏掉算術錯誤或分母限制。",
+      "correction": "比較代回後兩邊比值。"
+    },
+    {
+      "mistake": "5:(x-2) 中忘記 x≠2。",
+      "why": "忽略後項不可為 0。",
+      "correction": "列式時先寫限制。"
+    },
+    {
+      "mistake": "把 0.6:1.5 當成 6:15 後直接令 x=9。",
+      "why": "沒有完成比例求解。",
+      "correction": "先化簡為 2:5，再依對應比例求值。"
+    },
+    {
+      "mistake": "得到負的箱數仍接受。",
+      "why": "只看代數，不檢查情境。",
+      "correction": "量的性質也屬答案條件。"
+    }
+  ],
+  "selfCheck": [
+    "兩邊比的順序一致嗎？",
+    "所有後項都不為 0 嗎？",
+    "交叉乘積配對正確嗎？",
+    "方程式整理有處理括號與負號嗎？",
+    "代回後兩個比值相等嗎？"
+  ],
+  "summary": [
+    "比例式是兩個有定義的比相等。",
+    "交叉相乘來自等式兩邊同乘分母。",
+    "未知數在分母時先列排除值。",
+    "解後必須代回並檢查情境限制。"
+  ],
+  "connections": {
+    "previous": "使用比的化簡辨認等值比。",
+    "next": [
+      "部分量與總量可用比例式或份數法求解。",
+      "比例式性質會進一步整理等值關係。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s002-v001",
+      "u06-s002-v002",
+      "u06-s002-v003",
+      "u06-s002-v004",
+      "u06-s002-v005",
+      "u06-s002-v006",
+      "u06-s002-v007",
+      "u06-s002-v008",
+      "u06-s002-v009",
+      "u06-s002-v010",
+      "u06-s002-v011",
+      "u06-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s002-cr001",
+      "u06-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個例題均以交叉乘積重新求值並代回；特別檢查 x=2 的分母排除、0.8:1.2 的小數化簡以及括號展開，確保沒有把交叉相乘當成無條件公式。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "8eef71b04cad20d81ad28776ca60ef3e7223926d1bdd1ecabf23408725d724ee"
+}

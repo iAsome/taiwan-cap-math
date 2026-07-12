@@ -1,0 +1,260 @@
+{
+  "lectureId": "u18-s016-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-literacy",
+  "skillId": "similarity-literacy",
+  "lockedSkillOrder": 16,
+  "lockedSkillTitle": "相似形素養題",
+  "title": "相似形素養題：讀資料與建模型並檢查限制",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能從圖表、規格或測量紀錄中找出相似條件。",
+    "能在連比、相似比、周長比與面積比之間選擇正確模型。",
+    "能處理單位、誤差、整數需求與資料充分性。",
+    "能以多步推理檢查結論而非只套公式。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "ratio-area-application",
+        "title": "面積比應用",
+        "requiredLevel": "能運用「面積比應用」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「面積比應用」，先複習其核心判斷，再把方法推進到「相似形素養題」。"
+  },
+  "glossary": [
+    {
+      "term": "模型假設",
+      "definition": "為了使用相似關係而必須成立的條件，例如平行、同時測量或等比縮放。"
+    },
+    {
+      "term": "資料充分性",
+      "definition": "所給資訊是否足以唯一決定答案。"
+    },
+    {
+      "term": "測量誤差",
+      "definition": "測得值與真值可能存在的差異，會影響比例結果。"
+    },
+    {
+      "term": "敏感度",
+      "definition": "輸入誤差對輸出結果的影響程度。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "線性倍率 k",
+      "meaning": "長度與周長的倍率。"
+    },
+    {
+      "symbol": "面積倍率 k²",
+      "meaning": "相似平面圖形面積的倍率。"
+    },
+    {
+      "symbol": "估計區間",
+      "meaning": "依測量誤差上下界計算可能的答案範圍。"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題的困難通常不在單一公式，而在判斷哪些資料代表同類量、哪些條件保證相似，以及答案應使用一次還是平方倍率。",
+    "閱讀規格表時先整理『對象—量—單位—時間—條件』。例如影子資料若不同時間，數字再完整也不能直接建立相似。",
+    "多步問題常先由面積比開根號求線性比，再用周長或長度；或先由比例尺求實際長度，再計算材料。每一步都要記錄比值方向。",
+    "測量值有誤差時，精確等號可能不適合。可使用上下界估計，並說明結果是約值。若人數或片數必須為整數，還要依題意決定進位方式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "相似模型選擇",
+      "statement": "只有當對應角、邊比例或題目明示等比縮放等條件成立時，才可使用相似比關係。"
+    },
+    {
+      "name": "尺度判斷",
+      "statement": "長度與周長使用 k，面積使用 k²；固定附加量與非相似變形另行處理。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "長度、周長倍率=k",
+      "conditions": [
+        "相似或等比縮放"
+      ],
+      "meaning": "一次尺度。"
+    },
+    {
+      "formula": "面積倍率=k²",
+      "conditions": [
+        "相似平面區域"
+      ],
+      "meaning": "二次尺度。"
+    },
+    {
+      "formula": "最少整數數量=向上取整(需求量/單件容量)",
+      "conditions": [
+        "不可購買部分單位"
+      ],
+      "meaning": "把連續幾何量轉成離散採購量。"
+    }
+  ],
+  "nonApplicableCases": [
+    "資料表中尺寸比例不一致時，不能宣稱產品等比縮放。",
+    "測量時間、地面坡度或角度條件不同時，影子模型可能失效。",
+    "固定邊框、固定接縫與固定厚度不一定按相似比變化。",
+    "近似測量結果不應寫成無誤差的精確值。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "整理對象、已知量、單位與條件。",
+      "check": "資料是否同時、同尺度或同覆蓋率？"
+    },
+    {
+      "step": 2,
+      "instruction": "指出相似成立的理由或判定資料不足。",
+      "check": "是否只憑外觀？"
+    },
+    {
+      "step": 3,
+      "instruction": "固定比值方向並選擇 k 或 k²。",
+      "check": "所求是線性量還是面積量？"
+    },
+    {
+      "step": 4,
+      "instruction": "完成多步計算與單位換算。",
+      "check": "固定附加量是否分開？"
+    },
+    {
+      "step": 5,
+      "instruction": "做合理性、誤差與離散需求檢查。",
+      "check": "答案應精確、約值、四捨五入還是向上取整？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩款相似海報面積比 16:25，小款周長 96 公分，求大款周長。",
+      "solutionSteps": [
+        "相似比小:大=4:5。",
+        "周長比等於相似比。",
+        "大款周長=96×5/4=120 公分。"
+      ],
+      "answer": "120 公分"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "比例尺 1:500 的相似廣場圖面積 48 平方公分，每平方公尺鋪面需 0.2 包材料，至少需幾包？",
+      "solutionSteps": [
+        "實際面積=48×500²=12000000 平方公分=1200 平方公尺。",
+        "材料需求=1200×0.2=240 包。",
+        "結果已是整數。"
+      ],
+      "answer": "240 包"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "標竿高 1.00±0.01 公尺，影長 0.80±0.01 公尺，樹影長 6.0 公尺，估計樹高約多少？",
+      "solutionSteps": [
+        "中心估計高影比=1.00/0.80=1.25。",
+        "樹高中心估計=6.0×1.25=7.5 公尺。",
+        "因標竿與影長有誤差，答案應寫約 7.5 公尺而非絕對精確。"
+      ],
+      "answer": "約 7.5 公尺"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某產品長度放大 2 倍，但寬度只放大 1.5 倍，能否用相似面積倍率 4？",
+      "solutionSteps": [
+        "相似要求各方向線性倍率相同。",
+        "長、寬倍率不同，圖形不是等比縮放。",
+        "面積倍率應直接算 2×1.5=3，而非 4。"
+      ],
+      "answer": "不能；面積倍率為 3"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到兩張同形狀圖片就假設相似。",
+      "why": "未檢查尺寸比例。",
+      "correction": "比較至少兩個方向的線性倍率或使用判定條件。"
+    },
+    {
+      "mistake": "面積比直接當周長比。",
+      "why": "沒有先開正平方根。",
+      "correction": "由面積到線性先取平方根。"
+    },
+    {
+      "mistake": "固定餘量也乘 k。",
+      "why": "未區分幾何尺度與外加條件。",
+      "correction": "相似部分先縮放，固定量另加。"
+    },
+    {
+      "mistake": "採購片數四捨五入。",
+      "why": "忽略不能買半片或不足量。",
+      "correction": "若需滿足最低需求，向上取整。"
+    },
+    {
+      "mistake": "測量估計寫成精確等號。",
+      "why": "忽略輸入誤差。",
+      "correction": "使用『約』並說明誤差來源。"
+    }
+  ],
+  "selfCheck": [
+    "相似條件真的成立嗎？",
+    "所求量應用 k 還是 k²？",
+    "比值方向是否一致？",
+    "單位與固定附加量已處理嗎？",
+    "結果需估計或向上取整嗎？"
+  ],
+  "summary": [
+    "素養題先判斷模型，再計算。",
+    "長度與周長用 k，面積用 k²。",
+    "資料充分性、單位、誤差與整數限制都要檢查。",
+    "不等比變形與固定附加量不能硬套相似公式。"
+  ],
+  "connections": {
+    "previous": "整合本單元前十五個技能。",
+    "next": [
+      "後續圓與幾何單元仍會使用比例、相似與尺度推理。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u18-literacy-q010",
+      "purpose": "協助辨認「相似形素養題」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s016-v001",
+      "u18-s016-v002",
+      "u18-s016-v003",
+      "u18-s016-v004",
+      "u18-s016-v005",
+      "u18-s016-v006",
+      "u18-s016-v007",
+      "u18-s016-v008",
+      "u18-s016-v009",
+      "u18-s016-v010",
+      "u18-s016-v011",
+      "u18-s016-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s016-cr001",
+      "u18-s016-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "整合題逐一標記模型假設、尺度次方、單位與離散限制；含資料不足、測量誤差與非等比變形案例，避免將素養情境退化為單一步驟套公式。"
+  },
+  "contentSha256": "b984ebc1da64d959ee844b98fead8c66107eb4c55cc55109c4623d0a438932ac"
+}

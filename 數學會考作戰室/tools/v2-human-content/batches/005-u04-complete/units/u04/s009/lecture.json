@@ -1,0 +1,210 @@
+{
+  "lectureId": "u04-s009-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-apps",
+  "skillId": "system-chicken-rabbit-problem",
+  "lockedSkillTitle": "雞兔同籠問題",
+  "title": "雞兔同籠問題：用頭數與腳數建立兩個條件",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "雞兔同籠問題",
+    "scope": "以總隻數與總腳數建立聯立方程式，並檢查非負整數解。"
+  },
+  "prerequisiteBridge": "先備技能 system-word-setup-basic 已建立必要基礎；本節將其用於「以總隻數與總腳數建立聯立方程式，並檢查非負整數解。」",
+  "learningGoals": [
+    "能以雞數、兔數定義未知數。",
+    "能列出頭數式與腳數式。",
+    "能用基準法或聯立方程式解題。",
+    "能檢查答案是否為非負整數且腳數合理。"
+  ],
+  "vocabulary": [
+    {
+      "term": "頭數",
+      "definition": "每隻動物計一個頭，因此等於動物總隻數。"
+    },
+    {
+      "term": "腳數",
+      "definition": "雞每隻 2 腳，兔每隻 4 腳。"
+    },
+    {
+      "term": "基準假設",
+      "definition": "先假設全為雞或全為兔，再用腳數差調整。"
+    },
+    {
+      "term": "整數限制",
+      "definition": "動物隻數不可為負數或小數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x+y=H",
+      "meaning": "H 為總頭數。"
+    },
+    {
+      "symbol": "2x+4y=L",
+      "meaning": "x 為雞、y 為兔，L 為總腳數。"
+    }
+  ],
+  "conceptDevelopment": [
+    "每隻動物都貢獻一個頭，但貢獻的腳數不同，因此頭數與腳數是兩個獨立條件。",
+    "若全是雞，腳數是 2H；每把一隻雞換成兔，腳數增加 2。這提供另一種檢查方法。",
+    "合理的腳數必須介於 2H 與 4H 之間且為偶數。"
+  ],
+  "definitions": [
+    {
+      "name": "雞兔同籠型",
+      "statement": "兩類物件每個都算一個總數，但各自具有不同單位貢獻。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x+y=H，2x+4y=L",
+      "conditions": [
+        "x、y 為非負整數。"
+      ],
+      "meaning": "分別表達頭數與腳數。"
+    },
+    {
+      "formula": "兔數=(L-2H)/2",
+      "conditions": [
+        "以全雞為基準。"
+      ],
+      "meaning": "每增加一兔多 2 腳。"
+    }
+  ],
+  "invalidUseCases": [
+    "腳數為奇數時，在標準雞兔設定下不可能。",
+    "解出負數表示題目資料矛盾或模型錯誤。",
+    "不能把頭數式寫成 2x+4y。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "設雞 x 隻、兔 y 隻",
+      "check": "寫明非負整數。"
+    },
+    {
+      "step": 2,
+      "instruction": "列頭數式 x+y=H",
+      "check": "每隻一頭。"
+    },
+    {
+      "step": 3,
+      "instruction": "列腳數式 2x+4y=L",
+      "check": "按每隻腳數加總。"
+    },
+    {
+      "step": 4,
+      "instruction": "解聯立",
+      "check": "可消去或用全雞基準。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查範圍與代回",
+      "check": "頭、腳都吻合。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "共有 20 隻、56 隻腳。",
+      "solutionSteps": [
+        "x+y=20。",
+        "2x+4y=56。",
+        "第二式減 2 倍第一式得 2y=16。"
+      ],
+      "answer": "雞 12 隻、兔 8 隻。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "共有 15 隻、44 隻腳。",
+      "solutionSteps": [
+        "全雞有 30 腳。",
+        "多 14 腳，每隻兔多 2 腳。",
+        "兔 7、雞 8。"
+      ],
+      "answer": "雞 8 隻、兔 7 隻。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "10 個頭卻有 15 隻腳是否可能？",
+      "solutionSteps": [
+        "雞兔腳數皆為偶數。",
+        "總腳數必為偶數。"
+      ],
+      "answer": "不可能。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "車棚有腳踏車與汽車共 18 輛、輪子 54 個。",
+      "solutionSteps": [
+        "設腳踏車 x、汽車 y。",
+        "x+y=18、2x+4y=54。"
+      ],
+      "answer": "腳踏車 9、汽車 9。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "用 2x+4y 表示頭數",
+      "correction": "那是腳數式。"
+    },
+    {
+      "mistake": "解出小數隻仍接受",
+      "correction": "隻數需為整數。"
+    },
+    {
+      "mistake": "忽略腳數合理範圍",
+      "correction": "先做 2H≤L≤4H 檢查。"
+    },
+    {
+      "mistake": "只用一個方程式",
+      "correction": "無法唯一決定兩種動物。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "H=12 時全雞有幾腳？",
+      "answer": "24。"
+    },
+    {
+      "prompt": "每把雞換兔多幾腳？",
+      "answer": "2。"
+    },
+    {
+      "prompt": "腳數 37 可能嗎？",
+      "answer": "不可能，總腳數應為偶數。"
+    },
+    {
+      "prompt": "答案要做哪些檢查？",
+      "answer": "非負整數且頭、腳式都成立。"
+    }
+  ],
+  "summary": [
+    "頭數式 x+y=H。",
+    "腳數式 2x+4y=L。",
+    "可用消去或全雞基準。",
+    "答案必須是非負整數。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-word-setup-basic 已建立必要基礎；本節將其用於「以總隻數與總腳數建立聯立方程式，並檢查非負整數解。」",
+    "next": "下一技能「票價問題」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "兩種解法互相驗證例題結果，並加入奇數腳與範圍檢查；車輪類比保留相同數學結構但情境功能必要。",
+    "reviewNote": "兩種解法互相驗證例題結果，並加入奇數腳與範圍檢查；車輪類比保留相同數學結構但情境功能必要。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "ea10ba9808716cfc86f7aa12b03c0d710a48affcd7cad7b323794ed945b34771"
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="u18-aa-q010-title u18-aa-q010-desc">
+<title id="u18-aa-q010-title">視線測高與直立標桿</title>
+<desc id="u18-aa-q010-desc">觀測點 P、標桿底 B、塔底 Q 位於同一直線；標桿 AB 與塔 QT 垂直地面，P、A、T 共線。</desc>
+<rect width="640" height="420" fill="white"/>
+<style>
+.line{stroke:#111;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#333;stroke-width:2;fill:none}
+.dash{stroke:#555;stroke-width:2;stroke-dasharray:8 7;fill:none}
+.mark{stroke:#111;stroke-width:2}
+.txt{font-family:"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-size:22px;fill:#111}
+.small{font-family:"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-size:18px;fill:#111}
+.note{font-family:"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;font-size:16px;fill:#333}
+</style>
+<line id="ground-pbq" class="line" x1="55" y1="345" x2="590" y2="345"/>
+<line id="rod-ab" class="line" x1="220" y1="345" x2="220" y2="245"/>
+<line id="tower-qt" class="line" x1="535" y1="345" x2="535" y2="105"/>
+<line id="sight-pat" class="dash" x1="70" y1="345" x2="535" y2="105"/>
+<path id="right-b" class="thin" d="M220 330 h15 v15"/>
+<path id="right-q" class="thin" d="M535 330 h-15 v15"/>
+<text class="txt" x="50" y="375">P</text><text class="txt" x="204" y="375">B</text><text class="txt" x="202" y="235">A</text>
+<text class="txt" x="540" y="375">Q</text><text class="txt" x="542" y="105">T</text>
+<text class="note" x="145" y="405">虛線為視線，圖不按比例</text>
+</svg>

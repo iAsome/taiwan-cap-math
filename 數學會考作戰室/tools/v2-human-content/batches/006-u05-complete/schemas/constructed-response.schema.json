@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U05 constructed response",
+  "type": "object",
+  "required": [
+    "questionId",
+    "prompt",
+    "requiredWork",
+    "fullCreditSolution",
+    "rubric",
+    "partialCreditRules",
+    "followThroughPolicy",
+    "unitAndNotationRules",
+    "answerOnlyPolicy",
+    "independentReview",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "type": {
+      "const": "constructed-response"
+    },
+    "unitId": {
+      "const": "u05"
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    "rubric": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4
+    }
+  }
+}

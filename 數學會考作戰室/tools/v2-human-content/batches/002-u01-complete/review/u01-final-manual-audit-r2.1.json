@@ -1,0 +1,63 @@
+{
+  "auditId": "u01-batch-002-final-manual-audit-r2.1",
+  "unitId": "u01",
+  "reviewedAt": "2026-07-12",
+  "decision": "pass-staging-only",
+  "reviewedCounts": {
+    "lectures": 14,
+    "mcQuestions": 168,
+    "constructedResponses": 28,
+    "semanticReviews": 168,
+    "svgFigures": 5
+  },
+  "procedures": [
+    "All 168 stems, four-choice sets, stored answers, explanations and independent solutions were read and recalculated.",
+    "All 672 option truth statements were checked against the stem conditions.",
+    "All 28 constructed-response solutions, alternative methods and 0–3 rubrics were read and recalculated.",
+    "All 14 lectures were checked for definitions, formula conditions, invalid-use cases, example answers, prerequisite order and non-copying from the bank.",
+    "All five SVGs were rendered to images and compared with question text, drawing specifications, coordinates, labels, scales and alt text."
+  ],
+  "issuesFoundAndResolved": [
+    {
+      "id": "B002-R2-001",
+      "affected": "152 option-analysis reasons",
+      "issue": "Correct-option reasons or several rejection reasons were too terse for the verifier.",
+      "resolution": "Replaced each flagged entry with the already independently derived, question-specific calculation or a specific rejection reason; all question hashes and linked review hashes were recalculated."
+    },
+    {
+      "id": "B002-R2-002",
+      "affected": [
+        "u01-s007-v002",
+        "u01-s008-v012"
+      ],
+      "issue": "Independent-solution text exactly duplicated the stored explanation.",
+      "resolution": "Re-solved and rewrote the independent derivations with different calculation paths."
+    },
+    {
+      "id": "B002-R2-003",
+      "affected": "all 14 lecture review records",
+      "issue": "Prerequisite descriptions and review notes were overly generic.",
+      "resolution": "Replaced them with skill-specific prerequisite thresholds and concrete review evidence."
+    },
+    {
+      "id": "B002-R2-004",
+      "affected": "all 168 semantic reviews",
+      "issue": "Ambiguity and reviewer-note fields used generic status phrases.",
+      "resolution": "Recorded the unique correct choice, all three rejection reasons, exact unit/rounding/domain checks, question-specific alternate-reading check and complete option truth evidence for every question."
+    },
+    {
+      "id": "B002-R2-005",
+      "affected": "fig-u01-s003-v006.svg",
+      "issue": "Question, answer and alt text placed Q at 4, but the SVG circle and label were drawn at the 6 tick.",
+      "resolution": "Moved Q from x=560 to x=480, corrected the drawing specification, rendered the SVG again and added geometry-token assertions."
+    },
+    {
+      "id": "B002-R2-006",
+      "affected": "fig-u01-s007-v004 drawing spec",
+      "issue": "The drawing specification said M and N labels were below the points while the SVG placed them above.",
+      "resolution": "Corrected the specification to match the reviewed SVG and added exact label assertions."
+    }
+  ],
+  "openIssues": [],
+  "productionActivationAllowed": false
+}

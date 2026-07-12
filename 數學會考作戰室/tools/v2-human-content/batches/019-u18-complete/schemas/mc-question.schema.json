@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "math-v2-mc-r1",
+  "title": "Human-authored multiple-choice item",
+  "type": "object",
+  "required": [
+    "questionId",
+    "unitId",
+    "topicId",
+    "skillId",
+    "difficulty",
+    "prompt",
+    "givenConditions",
+    "target",
+    "choices",
+    "answerIndex",
+    "independentSolution",
+    "explanation",
+    "steps",
+    "optionAnalysis",
+    "misconceptionTarget",
+    "prerequisiteCheck",
+    "estimatedTimeSec",
+    "unitAndRoundingCheck",
+    "ambiguityAndBoundaryAudit",
+    "difficultyReason",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "choices": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true
+    },
+    "answerIndex": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

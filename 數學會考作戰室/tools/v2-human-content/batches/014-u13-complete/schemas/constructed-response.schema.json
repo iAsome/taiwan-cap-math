@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U13 human CR",
+  "type": "object",
+  "required": [
+    "questionId",
+    "prompt",
+    "requiredWork",
+    "fullCreditSolution",
+    "rubric",
+    "followThroughPolicy",
+    "independentReview",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "unitId": {
+      "const": "u13"
+    },
+    "rubric": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

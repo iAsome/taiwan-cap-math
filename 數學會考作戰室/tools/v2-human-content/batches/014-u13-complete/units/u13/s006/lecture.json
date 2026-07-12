@@ -1,0 +1,238 @@
+{
+  "lectureId": "u13-s006-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-standard-form",
+  "lockedOrder": 6,
+  "originalLockedTitle": "標準式與係數",
+  "title": "一元二次方程式標準式與係數",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能判斷一個等式是否為一元二次方程式。",
+    "能整理成 ax²+bx+c=0。",
+    "能正確讀出含正負號的 a、b、c。",
+    "能處理參數使二次項消失的退化情況。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-square-root-method",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "承接平方根解法，但退回更基本的方程式辨認與整理，建立後續選法基礎。",
+  "glossary": [
+    {
+      "term": "標準式",
+      "definition": "ax²+bx+c=0，其中 a、b、c 為常數且 a≠0。"
+    },
+    {
+      "term": "二次項係數",
+      "definition": "x² 前的數 a。"
+    },
+    {
+      "term": "一次項係數",
+      "definition": "x 前的數 b；沒有 x 項時 b=0。"
+    },
+    {
+      "term": "常數項",
+      "definition": "不含 x 的項 c；沒有常數項時 c=0。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax²+bx+c=0",
+      "meaning": "一元二次方程式的標準式，a≠0。"
+    },
+    {
+      "symbol": "a≠0",
+      "meaning": "保證最高次確實為 2。"
+    }
+  ],
+  "conceptNarrative": [
+    "「一元」表示只有一個未知數；「二次」表示整理後最高次為 2。",
+    "讀係數前要把所有項移到同一邊，使另一邊為 0。",
+    "係數包含符號，例如 -3x 的係數是 -3。",
+    "缺項不代表無法寫標準式：x²-9=0 可視為 a=1、b=0、c=-9。",
+    "含參數時，若參數讓 a=0，方程式會退化為一次方程式或常數等式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "一元二次方程式",
+      "statement": "可整理為 ax²+bx+c=0，且 a≠0，只含未知數 x。"
+    },
+    {
+      "name": "等價標準式",
+      "statement": "整個方程式乘除同一非零常數所得標準式具有相同解集。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "ax²+bx+c=0",
+      "conditions": [
+        "a、b、c 為常數",
+        "a≠0",
+        "只有一個未知數"
+      ],
+      "meaning": "判斷類型並讀取係數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "含 x 在分母的方程式不直接屬於此標準式，需先處理定義域。",
+    "a=0 時不可繼續稱為一元二次方程式。",
+    "x²+y=0 含兩個未知數，不是一元。",
+    "最高次超過 2 的方程式不屬本節。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "展開括號並合併同類項。",
+      "check": "是否仍有未展開乘積？"
+    },
+    {
+      "step": 2,
+      "instruction": "把所有項移到同一邊。",
+      "check": "另一邊是否為 0？"
+    },
+    {
+      "step": 3,
+      "instruction": "按 x²、x、常數排列。",
+      "check": "缺項是否以係數 0 表示？"
+    },
+    {
+      "step": 4,
+      "instruction": "讀出 a、b、c 並保留符號。",
+      "check": "a 是否非 0？"
+    },
+    {
+      "step": 5,
+      "instruction": "若含參數，列出保持二次的限制。",
+      "check": "參數是否可能讓 a=0？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "將 2x(x-3)=5 整理成標準式。",
+      "solutionSteps": [
+        "展開為 2x²-6x=5。",
+        "移項得 2x²-6x-5=0。"
+      ],
+      "answer": "a=2，b=-6，c=-5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "將 4-3x=x² 整理成標準式。",
+      "solutionSteps": [
+        "全部移到右邊或左邊。",
+        "取正二次項得 x²+3x-4=0。"
+      ],
+      "answer": "a=1，b=3，c=-4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "讀出 5x²-12=0 的係數。",
+      "solutionSteps": [
+        "沒有 x 項，所以 b=0。"
+      ],
+      "answer": "a=5，b=0，c=-12。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "判斷 (k-1)x²+3x-4=0 何時為二次方程式。",
+      "solutionSteps": [
+        "二次項係數為 k-1。",
+        "要求 k-1≠0。"
+      ],
+      "answer": "k≠1。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "右邊未化為 0 就讀係數。",
+      "why": "移項後符號可能改變。",
+      "correction": "先完成標準式。"
+    },
+    {
+      "mistake": "把 -6x 的係數讀成 6。",
+      "why": "漏掉負號。",
+      "correction": "係數包含前方符號。"
+    },
+    {
+      "mistake": "沒有 x 項就說 b 不存在。",
+      "why": "缺項係數應為 0。",
+      "correction": "寫 b=0。"
+    },
+    {
+      "mistake": "只看到 x² 就判為二次。",
+      "why": "可能含另一未知數或更高次項。",
+      "correction": "檢查未知數數量與最高次。"
+    },
+    {
+      "mistake": "參數題忘記 a≠0。",
+      "why": "方程式可能退化。",
+      "correction": "列出參數限制。"
+    },
+    {
+      "mistake": "整式乘 -1 後認為解改變。",
+      "why": "同乘非零數不改變等式解集。",
+      "correction": "可選較方便的等價標準式。"
+    }
+  ],
+  "selfCheck": [
+    "是否只有一個未知數？",
+    "最高次是否為 2？",
+    "右邊是否為 0？",
+    "缺項係數是否補 0？",
+    "a 是否確定非 0？"
+  ],
+  "summary": [
+    "標準式是所有二次方程式解法的共同起點。",
+    "係數必須從整理後的式子讀取。",
+    "缺項用 0 表示。",
+    "參數不可讓二次項係數變成 0。"
+  ],
+  "connections": {
+    "previous": "承接平方根解法，但退回更基本的方程式辨認與整理，建立後續選法基礎。",
+    "next": [
+      "下一節會把標準式整理後進行因式分解。",
+      "公式解與判別式都依賴正確的 a、b、c。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s006-v001",
+      "u13-s006-v002",
+      "u13-s006-v003",
+      "u13-s006-v004",
+      "u13-s006-v005",
+      "u13-s006-v006",
+      "u13-s006-v007",
+      "u13-s006-v008",
+      "u13-s006-v009",
+      "u13-s006-v010",
+      "u13-s006-v011",
+      "u13-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s006-cr001",
+      "u13-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "逐題展開與移項後重新比對係數；確認 L2 選擇正二次項的等價式、L3 的 b=0，以及 k=1 時確實退化為一次方程式。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "16261e8622343e6682924df8319983ead2c17842de25ad0343465c942043efca"
+}

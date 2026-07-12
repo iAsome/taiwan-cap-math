@@ -1,0 +1,264 @@
+{
+  "lectureId": "u23-s009-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-measure",
+  "skillId": "prism-surface-area",
+  "title": "柱體表面積：分清兩個底面與側面帶",
+  "lockedSkillTitle": "柱體表面積",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能由展開圖推導直柱體表面積公式。",
+    "能計算角柱與圓柱的側面積和總表面積。",
+    "能處理無蓋、開口或貼合面不計的情況。",
+    "能正確使用平方單位並檢查公式中的周長與面積。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "cross-section-solid",
+      "requiredLevel": "能辨認柱體有兩個全等底面與固定高度。",
+      "bridge": "截面告訴底面形狀不變；表面積把兩底面與沿底面周界展開的側面全部加總。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "表面積",
+      "definition": "立體所有外露表面的面積總和。"
+    },
+    {
+      "term": "側面積",
+      "definition": "不含底面的所有側面面積總和。"
+    },
+    {
+      "term": "底面積B",
+      "definition": "其中一個底面的面積。"
+    },
+    {
+      "term": "底面周長P",
+      "definition": "底面邊界一周的長度。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "B",
+      "meaning": "單一底面面積。"
+    },
+    {
+      "symbol": "P",
+      "meaning": "單一底面周長。"
+    },
+    {
+      "symbol": "h",
+      "meaning": "直柱體的高。"
+    },
+    {
+      "symbol": "S",
+      "meaning": "總表面積。"
+    }
+  ],
+  "conceptNarrative": [
+    "直柱體沿側稜剪開後，所有側面可排成一條長方形帶；這條帶的長等於底面周長P，寬等於高h。",
+    "因此側面積為Ph。完整封閉柱體還有兩個全等底面，各面積B，所以總表面積S=2B+Ph。",
+    "長方體也可由三組全等相對面得到S=2(lw+lh+wh)。圓柱則B=πr²、P=2πr。",
+    "題目若說無蓋、無底、貼合或挖去，必須先判斷哪些面真正外露，不能機械套完整公式。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "直柱體側面積",
+      "statement": "底面周長乘高，即Ph。"
+    },
+    {
+      "name": "完整直柱體表面積",
+      "statement": "兩底面積加側面積，即S=2B+Ph。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "S側=Ph",
+      "conditions": [
+        "直柱體",
+        "側面沿高度展開"
+      ],
+      "meaning": "所有側面長方形寬度總和為底面周長。"
+    },
+    {
+      "formula": "S總=2B+Ph",
+      "conditions": [
+        "兩底面都封閉且外露"
+      ],
+      "meaning": "加上兩個全等底面。"
+    },
+    {
+      "formula": "長方體S=2(lw+lh+wh)",
+      "conditions": [
+        "長、寬、高互相垂直"
+      ],
+      "meaning": "三組相對長方形各兩個。"
+    },
+    {
+      "formula": "圓柱S=2πr²+2πrh",
+      "conditions": [
+        "完整直圓柱"
+      ],
+      "meaning": "兩底圓加曲側面。"
+    }
+  ],
+  "nonApplicableCases": [
+    "斜柱體側面積不一定能直接用Ph。",
+    "無蓋容器不能加兩個底面。",
+    "貼在桌面的底面若題目問外露面積，通常不計。",
+    "表面積單位必須是平方單位，不可寫成立方單位。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出所有外露面。",
+      "check": "有蓋、無蓋、貼合或開口？"
+    },
+    {
+      "step": 2,
+      "instruction": "計算單一底面積B與周長P。",
+      "check": "B用平方公式，P用邊界長度。"
+    },
+    {
+      "step": 3,
+      "instruction": "計算側面積Ph。",
+      "check": "h是否為垂直高？"
+    },
+    {
+      "step": 4,
+      "instruction": "按外露底面數加B。",
+      "check": "是0個、1個還是2個底面？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查平方單位與合理大小。",
+      "check": "答案是否大於每個單面面積？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "長方體長4、寬3、高2公分，表面積多少？",
+      "solutionSteps": [
+        "2(4×3+4×2+3×2)=2(12+8+6)。"
+      ],
+      "answer": "52平方公分。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "底面周長18公分、底面積20平方公分、高5公分的直角柱，總表面積多少？",
+      "solutionSteps": [
+        "側面積18×5=90。",
+        "兩底面40。"
+      ],
+      "answer": "130平方公分。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "半徑3、高4公分的完整圓柱表面積？",
+      "solutionSteps": [
+        "兩底面2π×9=18π。",
+        "側面2π×3×4=24π。"
+      ],
+      "answer": "42π平方公分。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "同一圓柱若無上蓋，外表面積多少？",
+      "solutionSteps": [
+        "只保留下底面9π與側面24π。"
+      ],
+      "answer": "33π平方公分。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "用底面積B乘高算側面積。",
+      "why": "B×h是體積。",
+      "correction": "側面帶的長是周長P，所以用Ph。"
+    },
+    {
+      "mistake": "完整柱體只加一個底面。",
+      "why": "漏掉上底或下底。",
+      "correction": "先數外露底面數。"
+    },
+    {
+      "mistake": "無蓋容器仍套2B+Ph。",
+      "why": "未刪除上底。",
+      "correction": "改用B+Ph。"
+    },
+    {
+      "mistake": "圓柱側面積寫πr²h。",
+      "why": "把底面積當展開長。",
+      "correction": "側面長方形邊為2πr與h。"
+    },
+    {
+      "mistake": "表面積寫立方公分。",
+      "why": "混淆面積與體積。",
+      "correction": "所有表面積用平方單位。"
+    },
+    {
+      "mistake": "組合黏合面也算外露。",
+      "why": "沒有先判斷可見表面。",
+      "correction": "接合後內部面要扣除。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先列外露面？",
+    "B與P是否分清？",
+    "側面積是否為Ph？",
+    "底面加了幾個？",
+    "答案是否用平方單位？"
+  ],
+  "summary": [
+    "直柱體側面積為Ph。",
+    "完整表面積為2B+Ph。",
+    "圓柱用B=πr²與P=2πr。",
+    "開口與貼合情況必須依外露面調整。"
+  ],
+  "connections": {
+    "previous": "由截面和柱體結構進入外表面的量化。",
+    "next": [
+      "柱體體積會改用B乘h。",
+      "由展開圖求表面積會直接加總各面。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s009-v001",
+      "u23-s009-v002",
+      "u23-s009-v003",
+      "u23-s009-v004",
+      "u23-s009-v005",
+      "u23-s009-v006",
+      "u23-s009-v007",
+      "u23-s009-v008",
+      "u23-s009-v009",
+      "u23-s009-v010",
+      "u23-s009-v011",
+      "u23-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s009-cr001",
+      "u23-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "分別以長方體、一般角柱、完整圓柱與無蓋圓柱重算，檢查B與P角色、底面數和平方單位；開口條件已獨立處理。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "a31be93c7392900773a10a80a01c0ca8e3a8fedf745d5182d30382a65f07a9b5"
+}

@@ -1,0 +1,247 @@
+{
+  "lectureId": "u07-s009-lecture-r1",
+  "unitId": "u07",
+  "topicId": "u07-applications",
+  "skillId": "inequality-word-problem",
+  "title": "不等式應用題：從未知量和限制語句到可解模型",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能選定未知數並附上單位。",
+    "能把總量、每單位量與固定量寫成一次式。",
+    "能依至少、至多、超過、未滿建立不等式。",
+    "能解題並把代數範圍翻回情境答案。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inequality-range",
+      "requiredLevel": "能把常見範圍語句翻成正確不等號。"
+    }
+  ],
+  "prerequisiteBridge": {
+    "inequality-range": "能把常見範圍語句翻成正確不等號。"
+  },
+  "glossary": [
+    {
+      "term": "模型",
+      "definition": "用數學式表示情境中的數量關係與限制。"
+    },
+    {
+      "term": "未知量",
+      "definition": "題目要求找出的數量，以字母表示。"
+    },
+    {
+      "term": "固定量",
+      "definition": "不隨未知量改變的費用、起始值或常數。"
+    },
+    {
+      "term": "每單位量",
+      "definition": "每增加一單位未知量所增加的數量。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "固定量＋每單位量×x",
+      "meaning": "常見總量一次式。"
+    },
+    {
+      "symbol": "≤ 上限",
+      "meaning": "總量不能超過限制。"
+    },
+    {
+      "symbol": "≥ 下限",
+      "meaning": "總量至少要達到標準。"
+    }
+  ],
+  "conceptNarrative": [
+    "應用題不是先猜不等號，而是先說清楚未知數代表什麼。",
+    "把情境拆成「固定部分」「隨 x 改變的部分」「上限或下限」。",
+    "建立不等式後依代數規則求解，再用單位、整數性與自然限制修正答案。",
+    "最後要回答題目問的最大數、最少數、可行範圍或是否可行，不能只留下 x≤某數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "一次式模型",
+      "statement": "總量若由固定量加上與 x 成正比的變動量，可寫成 b+ax。"
+    },
+    {
+      "name": "限制模型",
+      "statement": "「不超過上限」寫總量≤上限；「至少達標」寫總量≥下限。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "b+ax≤M",
+      "conditions": [
+        "a>0",
+        "M 為總量上限"
+      ],
+      "meaning": "固定成本 b、每單位成本 a、預算 M 的模型。"
+    },
+    {
+      "formula": "b+ax≥T",
+      "conditions": [
+        "a>0",
+        "T 為最低目標"
+      ],
+      "meaning": "固定起始量與每單位增加量需達標。"
+    }
+  ],
+  "nonApplicableCases": [
+    "若未知量是人數、件數，答案需取整數且通常不能為負。",
+    "若每增加一單位反而使總量下降，係數可能為負，解讀方向需特別檢查。",
+    "「至少還剩」和「最多使用」限制的對象不同，不能只看關鍵字。",
+    "同一情境若有兩個限制，可能需要用且取交集。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "設未知數並寫單位。",
+      "check": "x 代表人數、長度、時間還是金額？"
+    },
+    {
+      "step": 2,
+      "instruction": "列出固定量與每單位變動量。",
+      "check": "是否重複計算或漏算固定部分？"
+    },
+    {
+      "step": 3,
+      "instruction": "找限制對象與邊界語詞。",
+      "check": "限制的是總量、剩餘量還是差額？"
+    },
+    {
+      "step": 4,
+      "instruction": "建立並解不等式。",
+      "check": "每一步符號方向正確嗎？"
+    },
+    {
+      "step": 5,
+      "instruction": "依情境修正並完整作答。",
+      "check": "是否需整數化、非負或檢查最大最小？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "一本筆記本 28 元，有 200 元，最多買幾本？",
+      "solutionSteps": [
+        "設買 x 本，28x≤200。",
+        "x≤50/7≈7.14；x 為非負整數。"
+      ],
+      "answer": "最多 7 本。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "水箱原有 35 公升，每分鐘加 8 公升，至少到 99 公升需幾分鐘？",
+      "solutionSteps": [
+        "35+8t≥99。",
+        "8t≥64，t≥8。"
+      ],
+      "answer": "至少 8 分鐘。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "搭車基本費 70 元，每公里 25 元，費用不超過 320 元，里程範圍為何？",
+      "solutionSteps": [
+        "70+25d≤320。",
+        "25d≤250，d≤10，且 d≥0。"
+      ],
+      "answer": "0≤d≤10 公里。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "全班需募得超過 5000 元，已募 1400 元，每人再募 180 元，至少需幾人？",
+      "solutionSteps": [
+        "1400+180n>5000。",
+        "180n>3600，所以 n>20；n 為整數。"
+      ],
+      "answer": "至少 21 人。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到「最多」就把 x 直接寫在 ≤ 左邊，忽略總量式。",
+      "why": "未辨認限制對象。",
+      "correction": "先寫總量，再與上限比較。"
+    },
+    {
+      "mistake": "基本費與每單位費相乘。",
+      "why": "混淆固定量與變動量。",
+      "correction": "總費用通常是固定費＋單價×數量。"
+    },
+    {
+      "mistake": "算得 x≤7.14 就回答 7.14 本。",
+      "why": "忽略件數必為整數。",
+      "correction": "最大可行整數為 7。"
+    },
+    {
+      "mistake": "超過 5000 寫 ≥5000。",
+      "why": "把嚴格超過誤含邊界。",
+      "correction": "應寫 >5000。"
+    },
+    {
+      "mistake": "里程答案只寫 d≤10。",
+      "why": "漏掉里程不能為負。",
+      "correction": "補上 d≥0。"
+    },
+    {
+      "mistake": "解出人數後向下取整。",
+      "why": "未依「至少達標」判斷取整方向。",
+      "correction": "找第一個使原不等式成立的整數。"
+    }
+  ],
+  "selfCheck": [
+    "未知數與單位是否明確？",
+    "固定量和每單位量是否分開？",
+    "不等號比較的是否是正確總量？",
+    "答案是否符合整數、非負與題目所問？"
+  ],
+  "summary": [
+    "設未知數、列一次式、翻譯限制、解不等式、回情境檢查。",
+    "總量常是固定量加每單位量乘數量。",
+    "上限用≤，下限用≥；嚴格語句不用等號。",
+    "人數件數需整數化並代回確認。"
+  ],
+  "connections": {
+    "previous": "承接範圍語意與雙重限制。",
+    "next": [
+      "下一節會專門檢查模型、解與情境是否合理。",
+      "預算技能會深化固定費、折扣與多方案限制。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u07-s009-v001",
+      "u07-s009-v002",
+      "u07-s009-v003",
+      "u07-s009-v004",
+      "u07-s009-v005",
+      "u07-s009-v006",
+      "u07-s009-v007",
+      "u07-s009-v008",
+      "u07-s009-v009",
+      "u07-s009-v010",
+      "u07-s009-v011",
+      "u07-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u07-s009-cr001",
+      "u07-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個例題分別驗證上限、下限、固定費與嚴格超過；所有取整方向均以代回相鄰整數確認，不採用單純四捨五入。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "5e0b0b7c57455e7727c4726150e15341653aa248ab358d35b266051b438eaa61"
+}

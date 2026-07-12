@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "math-v2-production-runtime-text-repairs-r1",
+  "files": [
+    {
+      "path": "數學會考作戰室/human-runtime/engine.mjs",
+      "expectedGitBlob": "6b9144405e18bb312c08f36c70fb398b48a3d3cd",
+      "replacements": [
+        {
+          "old": "export class HumanReleaseCandidateRuntime",
+          "new": "export class HumanProductionRuntime",
+          "count": 1
+        },
+        {
+          "old": "完戝後回代或檢查條件。",
+          "new": "完成後回代或檢查條件。",
+          "count": 1
+        },
+        {
+          "old": "注愝題目條件與符號。",
+          "new": "注意題目條件與符號。",
+          "count": 1
+        },
+        {
+          "old": "依完整解法與評分覝準作答。",
+          "new": "依完整解法與評分標準作答。",
+          "count": 1
+        },
+        {
+          "old": "依策略革切性與表靔完整性評分。",
+          "new": "依策略正確性與表達完整性評分。",
+          "count": 1
+        },
+        {
+          "old": "寫出完整推導與絝論。",
+          "new": "寫出完整推導與結論。",
+          "count": 1
+        },
+        {
+          "old": "坪寫答案丝能呈睾解題能力。",
+          "new": "只寫答案不能呈現解題能力。",
+          "count": 1
+        },
+        {
+          "old": "quizLevel: \"非靸\"",
+          "new": "quizLevel: \"非選\"",
+          "count": 1
+        },
+        {
+          "old": "\\n革用：",
+          "new": "\\n適用：",
+          "count": 1
+        },
+        {
+          "old": "丝革用：",
+          "new": "不適用：",
+          "count": 2
+        },
+        {
+          "old": "坄技能公弝與革用條件列於下方人工作者講義。",
+          "new": "各技能公式與適用條件列於下方人工作者講義。",
+          "count": 1
+        },
+        {
+          "old": "先睆解定義與條件，冝依技能講義完戝推導〝驗算與表靔。",
+          "new": "先理解定義與條件，再依技能講義完成推導、驗算與表達。",
+          "count": 1
+        },
+        {
+          "old": "\"辨誝技能\"",
+          "new": "\"辨認技能\"",
+          "count": 1
+        },
+        {
+          "old": "\"整睆條件\"",
+          "new": "\"整理條件\"",
+          "count": 1
+        },
+        {
+          "old": "\"靸擇方法\"",
+          "new": "\"選擇方法\"",
+          "count": 1
+        },
+        {
+          "old": "\"逝步推導\"",
+          "new": "\"逐步推導\"",
+          "count": 1
+        },
+        {
+          "old": "\"檢查絝論與單佝\"",
+          "new": "\"檢查結論與單位\"",
+          "count": 1
+        },
+        {
+          "old": "單元尝考",
+          "new": "單元小考",
+          "count": 2
+        },
+        {
+          "old": "毝技能抽 1 題",
+          "new": "每技能抽 1 題",
+          "count": 1
+        },
+        {
+          "old": "毝技能 1 題",
+          "new": "每技能 1 題",
+          "count": 1
+        },
+        {
+          "old": "id: `${unit.unitId}-human-rc`, quizId: `${unit.unitId}-human-rc`",
+          "new": "id: `${unit.unitId}-human-r1`, quizId: `${unit.unitId}-human-r1`",
+          "count": 1
+        },
+        {
+          "old": "id: `MATH-HUMAN-RC-${seed}-${level}`",
+          "new": "id: `MATH-HUMAN-R1-${seed}-${level}`",
+          "count": 1
+        },
+        {
+          "old": "engineVersion: \"human-runtime-rc-r1\"",
+          "new": "engineVersion: \"human-runtime-production-r1\"",
+          "count": 2
+        },
+        {
+          "old": "id: `MATH-HUMAN-RC-QUIZ-${unitId}-${seed}`",
+          "new": "id: `MATH-HUMAN-R1-QUIZ-${unitId}-${seed}`",
+          "count": 1
+        },
+        {
+          "old": "quizId: `${unitId}-human-rc`",
+          "new": "quizId: `${unitId}-human-r1`",
+          "count": 1
+        },
+        {
+          "old": "blueprint: \"human-rc-one-question-per-skill\"",
+          "new": "blueprint: \"human-r1-one-question-per-skill\"",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "數學會考作戰室/human-runtime/bootstrap.mjs",
+      "expectedGitBlob": "90813db9d18c00e14875092dfaa474c94490e495",
+      "replacements": [
+        {
+          "old": "import { HumanReleaseCandidateRuntime } from \"./engine.mjs\";",
+          "new": "import { HumanProductionRuntime } from \"./engine.mjs\";",
+          "count": 1
+        },
+        {
+          "old": "new HumanReleaseCandidateRuntime({",
+          "new": "new HumanProductionRuntime({",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "數學會考作戰室/human-runtime/app-human.js",
+      "expectedGitBlob": "c4801705fab73848c0665b3f1a9facdd0271b6e3",
+      "replacements": [
+        {
+          "old": "${chapters.length} 份 Math V2 單元小考",
+          "new": "${chapters.length} 份 Human Runtime 單元小考",
+          "count": 1
+        },
+        {
+          "old": "練習用 25 題選擇＋2 題非選擇，共 80 分鐘。依人工作者 Release Candidate 藍圖抽樣。",
+          "new": "練習用 25 題選擇＋2 題非選擇，共 80 分鐘。依人工作者正式藍圖抽樣。",
+          "count": 1
+        },
+        {
+          "old": "assessment = assessment; // Human RC preserves required figures.",
+          "new": "assessment = assessment; // Human Runtime preserves required figures.",
+          "count": 1
+        },
+        {
+          "old": "人工作者 Release Candidate 藍圖",
+          "new": "人工作者正式藍圖",
+          "count": 1
+        },
+        {
+          "old": "<div class=\"paper-stamp\">25＋2<br>RC</div>",
+          "new": "<div class=\"paper-stamp\">25＋2<br>正式</div>",
+          "count": 1
+        },
+        {
+          "old": "<span>四選一｜Human RC</span>",
+          "new": "<span>四選一｜Human Runtime</span>",
+          "count": 1
+        },
+        {
+          "old": "window.__HUMAN_RC_APP_READY__ = true;",
+          "new": "window.__HUMAN_PRODUCTION_APP_READY__ = true;",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "forbiddenVisibleFragments": [
+    "完戝",
+    "注愝",
+    "評分覝準",
+    "策略革切性",
+    "表靔",
+    "絝論",
+    "丝能呈睾",
+    "非靸",
+    "丝革用",
+    "坄技能公弝",
+    "先睆解",
+    "冝依",
+    "辨誝",
+    "整睆",
+    "靸擇",
+    "逝步",
+    "單佝",
+    "单元尝考",
+    "單元尝考",
+    "毝技能",
+    "Release Candidate",
+    "Human RC",
+    "25＋2 RC"
+  ],
+  "forbiddenServedRuntimeMarkers": [
+    "__HUMAN_RC_APP_READY__",
+    "human-runtime-rc-r1",
+    "MATH-HUMAN-RC-",
+    "-human-rc",
+    "human-rc-one-question-per-skill"
+  ]
+}

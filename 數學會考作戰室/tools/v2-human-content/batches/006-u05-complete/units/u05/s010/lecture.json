@@ -1,0 +1,244 @@
+{
+  "lectureId": "u05-s010-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-linear-graph",
+  "skillId": "coordinate-intercepts",
+  "lockedTitle": "x 截距與 y 截距",
+  "title": "x 截距與 y 截距：分清截距值與交點坐標",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明 x 截距與 y 截距的意義。",
+    "能以 y=0 求 x 截距。",
+    "能以 x=0 求 y 截距。",
+    "能區分截距值與截距點坐標。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-point-on-line",
+      "requiredLevel": "能說明並正確使用「判斷點是否在直線上」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "x 截距",
+      "definition": "直線與 x 軸交點的橫坐標值。"
+    },
+    {
+      "term": "y 截距",
+      "definition": "直線與 y 軸交點的縱坐標值。"
+    },
+    {
+      "term": "x 截距點",
+      "definition": "形如 (a,0) 的交點。"
+    },
+    {
+      "term": "y 截距點",
+      "definition": "形如 (0,b) 的交點。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "y=0",
+      "meaning": "求 x 截距時使用，因 x 軸上的點縱坐標為 0。"
+    },
+    {
+      "symbol": "x=0",
+      "meaning": "求 y 截距時使用，因 y 軸上的點橫坐標為 0。"
+    },
+    {
+      "symbol": "(a,0)",
+      "meaning": "x 截距點。"
+    },
+    {
+      "symbol": "(0,b)",
+      "meaning": "y 截距點。"
+    }
+  ],
+  "conceptNarrative": [
+    "截距的規則來自坐標軸上的點，而不是需要死背的交換法。",
+    "求 x 截距時，找直線在 x 軸上的點，所以令 y=0；求 y 截距時令 x=0。",
+    "『x 截距為 3』指數值 3；『x 截距點』則必須寫成 (3,0)。",
+    "通過原點的直線兩種截距值都為 0，兩個截距點其實是同一個原點。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "x 截距",
+      "statement": "直線與 x 軸交點的 x 坐標。"
+    },
+    {
+      "name": "y 截距",
+      "statement": "直線與 y 軸交點的 y 坐標。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x截距：令 y=0",
+      "conditions": [
+        "直線確與 x 軸有交點"
+      ],
+      "meaning": "使用 x 軸上 y=0 的性質。"
+    },
+    {
+      "formula": "y截距：令 x=0",
+      "conditions": [
+        "直線確與 y 軸有交點"
+      ],
+      "meaning": "使用 y 軸上 x=0 的性質。"
+    }
+  ],
+  "nonApplicableCases": [
+    "垂直線 x=a 沒有唯一 y 截距，除非 a=0 且整條線為 y 軸；本單元以一般會考語境處理。",
+    "水平線 y=b 沒有唯一 x 截距，除非 b=0。",
+    "截距值不是有序數對。",
+    "截距點不可漏寫另一個 0 分量。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認題目要 x 還是 y 截距。",
+      "check": "是在求值還是求點？"
+    },
+    {
+      "step": 2,
+      "instruction": "對應令另一個變數為 0。",
+      "check": "x 截距是否令 y=0？"
+    },
+    {
+      "step": 3,
+      "instruction": "解出剩餘變數。",
+      "check": "符號與分數是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "依題意寫成值或點。",
+      "check": "是否需要括號與 0？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原式。",
+      "check": "交點是否真的在直線與指定軸上？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "2x+3y=12 的 x 截距。",
+      "solutionSteps": [
+        "令 y=0，得 2x=12。",
+        "x=6。"
+      ],
+      "answer": "x 截距為 6，截距點為 (6,0)。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "4x-y=8 的 y 截距點。",
+      "solutionSteps": [
+        "令 x=0，得 -y=8。",
+        "y=-8。"
+      ],
+      "answer": "(0,-8)。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "x+2y=0 的兩種截距。",
+      "solutionSteps": [
+        "令 y=0 得 x=0。",
+        "令 x=0 得 y=0。"
+      ],
+      "answer": "兩種截距皆為 0，交點都是原點。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "3x+6y=9 的兩截距點。",
+      "solutionSteps": [
+        "y=0 得 x=3。",
+        "x=0 得 y=3/2。"
+      ],
+      "answer": "(3,0) 與 (0,3/2)。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "求 x 截距時令 x=0。",
+      "why": "把軸名與設零變數混淆。",
+      "correction": "x 軸上的點是 y=0。"
+    },
+    {
+      "mistake": "截距為 6 卻寫成 (6,0) 而題目只問值。",
+      "why": "未分清值與點。",
+      "correction": "先看題目用『截距』或『截距點』。"
+    },
+    {
+      "mistake": "把 -y=8 解成 y=8。",
+      "why": "漏掉負號。",
+      "correction": "兩邊同乘 -1 得 y=-8。"
+    },
+    {
+      "mistake": "認為通過原點有兩個不同交點。",
+      "why": "忽略兩截距點重合。",
+      "correction": "(0,0) 同時在兩軸。"
+    },
+    {
+      "mistake": "對水平或垂直特殊線硬求兩個一般截距。",
+      "why": "忽略平行或重合情形。",
+      "correction": "先辨認 x=常數、y=常數。"
+    }
+  ],
+  "selfCheck": [
+    "x 截距是否令 y=0？",
+    "y 截距是否令 x=0？",
+    "我寫的是截距值還是截距點？",
+    "特殊水平垂直線是否另行判斷？"
+  ],
+  "summary": [
+    "x 截距：令 y=0。",
+    "y 截距：令 x=0。",
+    "值與點要分開表達。",
+    "通過原點時兩截距點重合。"
+  ],
+  "connections": {
+    "previous": "承接點在線上的代入判定與軸上點的零分量。",
+    "next": [
+      "下一節用聯立方程式找兩直線共同的交點。",
+      "截距也可提供畫直線的兩個代表點。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s010-v001",
+      "u05-s010-v002",
+      "u05-s010-v003",
+      "u05-s010-v004",
+      "u05-s010-v005",
+      "u05-s010-v006",
+      "u05-s010-v007",
+      "u05-s010-v008",
+      "u05-s010-v009",
+      "u05-s010-v010",
+      "u05-s010-v011",
+      "u05-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s010-cr001",
+      "u05-s010-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "重新計算四個方程式的設零、符號與分數結果；人工區分截距值和截距點，並加入通過原點及特殊直線的邊界說明。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "cf69b7d6b8ecebc6ceadea87c8003b21464a678ee77e1c26e66d7b85df9ebf1e"
+}

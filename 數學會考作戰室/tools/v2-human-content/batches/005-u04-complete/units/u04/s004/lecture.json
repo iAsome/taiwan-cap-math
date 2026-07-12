@@ -1,0 +1,203 @@
+{
+  "lectureId": "u04-s004-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-methods",
+  "skillId": "system-substitution-method",
+  "lockedSkillTitle": "代入消去法",
+  "title": "代入消去法：先把一個未知數換成另一個式子",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "代入消去法",
+    "scope": "先由一式表示一個未知數，再代入另一式消去。"
+  },
+  "prerequisiteBridge": "先備技能 system-solution-meaning 已建立必要基礎；本節將其用於「先由一式表示一個未知數，再代入另一式消去。」",
+  "learningGoals": [
+    "能選擇容易孤立未知數的方程式。",
+    "能正確代入並使用括號。",
+    "能解出第一個未知數後回代。",
+    "能將結果代回原兩式檢驗。"
+  ],
+  "vocabulary": [
+    {
+      "term": "孤立未知數",
+      "definition": "把一個未知數單獨留在等號一側。"
+    },
+    {
+      "term": "代入消去",
+      "definition": "用等值式取代未知數，使方程式只剩一元。"
+    },
+    {
+      "term": "回代",
+      "definition": "把已求得的值代回較簡單的原式。"
+    },
+    {
+      "term": "等值變形",
+      "definition": "對等式兩邊做相同運算，保持解不變。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "y=…",
+      "meaning": "表示 y 可由另一個式子取代。"
+    },
+    {
+      "symbol": "x=…",
+      "meaning": "亦可選擇孤立 x。"
+    }
+  ],
+  "conceptDevelopment": [
+    "代入法不是把一個未知數刪掉，而是用與它相等的式子完整取代。",
+    "若代入的式子有兩項以上，必須加括號再乘係數。",
+    "選擇係數為 1 或 -1 的未知數通常最省步驟。"
+  ],
+  "definitions": [
+    {
+      "name": "代入消去法",
+      "statement": "先由一式表示一個未知數，再代入另一式，將二元問題化為一元。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "若 y=f(x)，則另一式中的每個 y 都以 f(x) 取代",
+      "conditions": [
+        "替換要完整且保持括號。"
+      ],
+      "meaning": "將未知數 y 消去。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能只把代入式中的第一項乘上外部係數。",
+    "求出 x 後仍需回代求 y。",
+    "回代最好使用原本較簡單的式子，不可改寫成不等值式。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "選式並孤立未知數",
+      "check": "優先找係數 ±1。"
+    },
+    {
+      "step": 2,
+      "instruction": "完整代入另一式",
+      "check": "多項式要加括號。"
+    },
+    {
+      "step": 3,
+      "instruction": "解一元一次方程式",
+      "check": "整理同類項。"
+    },
+    {
+      "step": 4,
+      "instruction": "回代求另一未知數",
+      "check": "選最簡單的式子。"
+    },
+    {
+      "step": 5,
+      "instruction": "代回兩個原式",
+      "check": "確認同時成立。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 y=x+1，2x+y=7。",
+      "solutionSteps": [
+        "代入得 2x+(x+1)=7。",
+        "3x=6，x=2。",
+        "y=3。"
+      ],
+      "answer": "(x,y)=(2,3)。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 x=5-2y，3x+y=8。",
+      "solutionSteps": [
+        "代入得 3(5-2y)+y=8。",
+        "15-5y=8，y=7/5。",
+        "x=11/5。"
+      ],
+      "answer": "(11/5,7/5)。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 x-y=4，x+2y=1。",
+      "solutionSteps": [
+        "由第一式 x=y+4。",
+        "代入得 y+4+2y=1。",
+        "y=-1，x=3。"
+      ],
+      "answer": "(3,-1)。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "檢查錯誤：2(x-3) 被寫成 2x-3。",
+      "solutionSteps": [
+        "分配律要求 2 同時乘 x 與 -3。",
+        "正確是 2x-6。"
+      ],
+      "answer": "錯誤在括號未完整展開。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "代入後漏括號",
+      "correction": "外部係數必須乘括號內每一項。"
+    },
+    {
+      "mistake": "只求一個未知數",
+      "correction": "聯立解要給出 x、y。"
+    },
+    {
+      "mistake": "孤立時移項符號未變",
+      "correction": "可用等式兩邊同加減避免口訣錯。"
+    },
+    {
+      "mistake": "回代到自己剛算錯的式子",
+      "correction": "應回到原式並再檢驗。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "y=2x-1 適合代入哪裡？",
+      "answer": "代入另一式所有 y 的位置。"
+    },
+    {
+      "prompt": "3(x+2) 展開為何？",
+      "answer": "3x+6。"
+    },
+    {
+      "prompt": "求出 x 後是否完成？",
+      "answer": "否，還要回代求 y。"
+    },
+    {
+      "prompt": "最後怎麼檢查？",
+      "answer": "代回兩個原式。"
+    }
+  ],
+  "summary": [
+    "先孤立，再完整代入。",
+    "括號與分配律是關鍵。",
+    "求出一個未知數後要回代並雙式檢驗。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-solution-meaning 已建立必要基礎；本節將其用於「先由一式表示一個未知數，再代入另一式消去。」",
+    "next": "下一技能「加減消去法」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "逐步重算四個示例，分數解與負數解均代回成立；特別加入 2(x-3) 的錯誤診斷，避免只背流程。",
+    "reviewNote": "逐步重算四個示例，分數解與負數解均代回成立；特別加入 2(x-3) 的錯誤診斷，避免只背流程。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "7e24a9ce9d16e18d8f38ee24533eb74d76906e15b9df2d2ba87066179ef68f60"
+}

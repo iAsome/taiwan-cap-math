@@ -1,0 +1,202 @@
+{
+  "lectureId": "u10-s004-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-concepts",
+  "skillId": "polynomial-degree-coefficient",
+  "lockedTitle": "多項式次數與係數符號",
+  "title": "多項式次數與係數符號：先化簡再找最高非零次方",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能判定單項式與多項式的次數。",
+    "能指出首項、首項係數及指定次項係數。",
+    "能處理最高次項抵消後次數下降的情況。"
+  ],
+  "prerequisites": [
+    "like-terms-combine"
+  ],
+  "prerequisiteBridge": "先備技能 like-terms-combine 已建立下一步所需概念；本節專注於化簡後判定次數、首項係數與各項符號。",
+  "glossary": [
+    {
+      "term": "次數",
+      "definition": "多項式化簡後，非零項中未知數指數的最大值。"
+    },
+    {
+      "term": "首項",
+      "definition": "按降冪排列後最前面的非零項。"
+    },
+    {
+      "term": "首項係數",
+      "definition": "首項的數字係數。"
+    },
+    {
+      "term": "零多項式",
+      "definition": "所有係數皆為 0；本課不指定其次數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "−4x³+2x−1",
+      "meaning": "三次多項式，首項係數 -4。"
+    },
+    {
+      "symbol": "0x⁴+3x²",
+      "meaning": "化簡後為 3x²，次數是 2。"
+    }
+  ],
+  "conceptNarrative": [
+    "判定次數前一定要合併同類項，因為最高次項可能抵消。",
+    "係數的正負號屬於係數；-x⁵ 的首項係數是 -1。",
+    "常數多項式如 7 的次數是 0。",
+    "零多項式沒有本課約定下的次數，不能硬寫 0 次。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "多項式次數",
+      "statement": "化簡後最高非零次項的指數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "deg P=n",
+      "conditions": [
+        "P 的最高非零項為 aₙxⁿ 且 aₙ≠0"
+      ],
+      "meaning": "只有化簡後才能判定。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未合併前不能只看表面最高指數。",
+    "0x⁵ 不構成五次項。",
+    "不能把項數當成次數。",
+    "零多項式不套用一般最高次項定義。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "展開必要括號並合併同類項。",
+      "check": "完成此步後，確認內容仍符合「化簡後判定次數、首項係數與各項符號」。"
+    },
+    {
+      "step": 2,
+      "instruction": "刪除係數為 0 的項。",
+      "check": "完成此步後，確認內容仍符合「化簡後判定次數、首項係數與各項符號」。"
+    },
+    {
+      "step": 3,
+      "instruction": "按指數由大到小排列。",
+      "check": "完成此步後，確認內容仍符合「化簡後判定次數、首項係數與各項符號」。"
+    },
+    {
+      "step": 4,
+      "instruction": "找最高非零指數。",
+      "check": "完成此步後，確認內容仍符合「化簡後判定次數、首項係數與各項符號」。"
+    },
+    {
+      "step": 5,
+      "instruction": "連同符號讀出所問係數。",
+      "check": "完成此步後，確認內容仍符合「化簡後判定次數、首項係數與各項符號」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判定 -3x⁴+2x-7 的次數與首項係數。",
+      "solutionSteps": [
+        "最高非零指數 4；首項 -3x⁴。"
+      ],
+      "answer": "4 次，首項係數 -3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "判定 5x³-5x³+2x² 的次數。",
+      "solutionSteps": [
+        "三次項抵消，剩 2x²。"
+      ],
+      "answer": "2 次。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "常數 -8 的次數。",
+      "solutionSteps": [
+        "-8=-8x⁰，且係數非零。"
+      ],
+      "answer": "0 次。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到 x⁵ 就直接判五次",
+      "why": "未檢查係數是否為 0 或是否抵消",
+      "correction": "先完整化簡。"
+    },
+    {
+      "mistake": "把 -x³ 的係數寫成 1",
+      "why": "忽略負號",
+      "correction": "係數是 -1。"
+    },
+    {
+      "mistake": "把三項式稱三次式",
+      "why": "混淆項數與次數",
+      "correction": "次數看最高指數。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能判定單項式與多項式的次數？",
+    "我是否能能指出首項、首項係數及指定次項係數？",
+    "我是否能能處理最高次項抵消後次數下降的情況？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "次數判定前先化簡。",
+    "最高非零指數就是次數。",
+    "係數包含正負號。",
+    "非零常數是 0 次，零多項式不指定次數。"
+  ],
+  "connections": {
+    "previous": "上一技能 同類項合併 提供本節所需工具。",
+    "next": [
+      "下一節把對齊同類項的觀念用於兩個多項式的加減。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibility": {
+    "figureAltTextsRequired": false,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s004-v001",
+      "u10-s004-v002",
+      "u10-s004-v003",
+      "u10-s004-v004",
+      "u10-s004-v005",
+      "u10-s004-v006",
+      "u10-s004-v007",
+      "u10-s004-v008",
+      "u10-s004-v009",
+      "u10-s004-v010",
+      "u10-s004-v011",
+      "u10-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s004-cr001",
+      "u10-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「多項式次數與係數符號：先化簡再找最高非零次方」：定義、3 個例題、錯誤推理與下一技能銜接均針對 polynomial-degree-coefficient；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "97a41aed40a91e689d52726d040c6bb278344e7ec8c09912480dcce13d23c774"
+}

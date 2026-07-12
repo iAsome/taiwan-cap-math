@@ -1,0 +1,241 @@
+{
+  "lectureId": "u05-s011-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-linear-graph",
+  "skillId": "coordinate-line-intersection",
+  "lockedTitle": "兩直線交點與聯立方程式",
+  "title": "兩直線交點與聯立方程式：共同解就是交點",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明交點坐標同時滿足兩條方程式。",
+    "能以代入法或消去法求交點。",
+    "能判斷平行直線無交點。",
+    "能判斷重合直線有無限多個交點。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-intercepts",
+      "requiredLevel": "能說明並正確使用「x 截距與 y 截距」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "交點",
+      "definition": "同時位於兩條直線上的點。"
+    },
+    {
+      "term": "聯立方程式",
+      "definition": "要求同一組 x、y 同時滿足兩個方程式。"
+    },
+    {
+      "term": "唯一解",
+      "definition": "兩直線相交於一點。"
+    },
+    {
+      "term": "無解",
+      "definition": "兩直線平行且不同。"
+    },
+    {
+      "term": "無限多解",
+      "definition": "兩方程式表示同一條直線。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "{方程式1,方程式2}",
+      "meaning": "把兩條線的條件同時考慮。"
+    },
+    {
+      "symbol": "(x,y)",
+      "meaning": "聯立方程式解，也是交點坐標。"
+    },
+    {
+      "symbol": "0=非0",
+      "meaning": "消去後矛盾，表示無解。"
+    },
+    {
+      "symbol": "0=0",
+      "meaning": "消去後恆等，需確認兩式等價，表示無限多解。"
+    }
+  ],
+  "conceptNarrative": [
+    "交點必須同時在兩線上，因此交點坐標是聯立方程式的共同解。",
+    "代入法適合某一式容易孤立一個未知數；消去法適合係數容易相消。",
+    "求得一組數後，要同時代回兩式驗算。",
+    "若消去後出現矛盾，兩線平行；若兩式成比例且完全等價，兩線重合。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "交點與聯立解",
+      "statement": "兩直線 L1、L2 的交點集合等於兩方程式共同解集合。"
+    },
+    {
+      "name": "相交情形",
+      "statement": "唯一解對應一個交點；無解對應無交點；無限多解對應重合。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "L1∩L2={(x,y):兩式皆成立}",
+      "conditions": [
+        "兩式皆為二元一次方程式"
+      ],
+      "meaning": "以共同解描述交點。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只滿足其中一式。",
+    "兩條平行線不能因延長而相交。",
+    "重合線不是『沒有交點』，而是每個點都共同。",
+    "本節不使用行列式或矩陣。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "選代入或消去。",
+      "check": "哪一種能減少運算？"
+    },
+    {
+      "step": 2,
+      "instruction": "解出一個未知數。",
+      "check": "符號與係數是否正確？"
+    },
+    {
+      "step": 3,
+      "instruction": "回求另一個未知數。",
+      "check": "是否代回同一組？"
+    },
+    {
+      "step": 4,
+      "instruction": "同時驗算兩式。",
+      "check": "兩邊都成立嗎？"
+    },
+    {
+      "step": 5,
+      "instruction": "若出現矛盾或恆等，判斷線的關係。",
+      "check": "是平行還是重合？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "x+y=5、x-y=1 的交點。",
+      "solutionSteps": [
+        "兩式相加得 2x=6，x=3。",
+        "代回得 y=2。"
+      ],
+      "answer": "(3,2)。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "2x+y=7、x-y=2。",
+      "solutionSteps": [
+        "由第二式 y=x-2。",
+        "代入第一式得 3x=9，x=3，y=1。"
+      ],
+      "answer": "(3,1)。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "x+2y=4、2x+4y=10。",
+      "solutionSteps": [
+        "第二式左邊是第一式 2 倍，但右邊應為 8 而非 10。",
+        "消去得 0=2，矛盾。"
+      ],
+      "answer": "無解，兩直線平行。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "3x-y=6、6x-2y=12。",
+      "solutionSteps": [
+        "第二式是第一式的 2 倍。",
+        "兩式完全等價。"
+      ],
+      "answer": "無限多解，兩直線重合。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只解出 x 就寫交點。",
+      "why": "交點需兩個坐標。",
+      "correction": "再代回求 y。"
+    },
+    {
+      "mistake": "把兩式各自的任一解拼在一起。",
+      "why": "未要求同一組同時成立。",
+      "correction": "聯立解必須共同。"
+    },
+    {
+      "mistake": "0=2 時繼續硬求 x。",
+      "why": "未辨認矛盾。",
+      "correction": "判定無解、兩線平行。"
+    },
+    {
+      "mistake": "0=0 就答唯一交點。",
+      "why": "未辨認兩式等價。",
+      "correction": "若兩式成比例，為重合且無限多解。"
+    },
+    {
+      "mistake": "驗算只代回一式。",
+      "why": "漏掉共同條件。",
+      "correction": "兩式都要成立。"
+    }
+  ],
+  "selfCheck": [
+    "我是否得到完整 (x,y)？",
+    "答案是否同時滿足兩式？",
+    "矛盾是否判為平行？",
+    "恆等是否確認為重合？"
+  ],
+  "summary": [
+    "交點就是聯立方程式共同解。",
+    "唯一解、一個交點。",
+    "無解、平行無交點。",
+    "無限多解、兩線重合。"
+  ],
+  "connections": {
+    "previous": "承接截距與點在線判定，並使用先前聯立方程式運算。",
+    "next": [
+      "下一節把坐標、平移、區域與交點整合到生活資訊。",
+      "最終題仍須說明每個坐標量的情境意義。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s011-v001",
+      "u05-s011-v002",
+      "u05-s011-v003",
+      "u05-s011-v004",
+      "u05-s011-v005",
+      "u05-s011-v006",
+      "u05-s011-v007",
+      "u05-s011-v008",
+      "u05-s011-v009",
+      "u05-s011-v010",
+      "u05-s011-v011",
+      "u05-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s011-cr001",
+      "u05-s011-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "四例分別以消去、代入、矛盾與等價比例重新驗證；唯一解均代回兩式，平行和重合的幾何意義未混淆。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "9c8adb1d3ab25ff1d036308cb34172d4ce58d51d3d856c9200a440fc2bb67017"
+}

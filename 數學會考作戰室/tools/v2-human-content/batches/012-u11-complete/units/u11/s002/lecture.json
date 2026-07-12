@@ -1,0 +1,266 @@
+{
+  "lectureId": "u11-s002-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-square-root",
+  "skillId": "square-root-simplify",
+  "lockedSkillOrder": 2,
+  "lockedTitle": "根式化簡",
+  "title": "根式化簡：提出平方因數並保持等值",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能找出被開方數中的完全平方因數",
+    "能將根式化到根號內不含可提出平方因數",
+    "能檢查化簡前後平方值相同"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "square-root-meaning",
+      "requiredLevel": "能使用前一技能「平方根意義」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "根式",
+      "definition": "含有平方根記號的數式。"
+    },
+    {
+      "term": "完全平方因數",
+      "definition": "可寫成整數平方的因數，如4、9、16。"
+    },
+    {
+      "term": "最簡根式",
+      "definition": "根號內不含大於1的完全平方因數，且分母無待處理根式。"
+    },
+    {
+      "term": "提出因數",
+      "definition": "利用√(m²n)=m√n。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "√a",
+      "meaning": "a 的非負平方根。"
+    },
+    {
+      "symbol": "m√n",
+      "meaning": "m 乘以 √n。"
+    },
+    {
+      "symbol": "√(m²n)=m√n",
+      "meaning": "m≥0 時可將平方因數提出。"
+    }
+  ],
+  "conceptNarrative": [
+    "化簡不是改變數值，而是把相同數寫成容易運算的形式。",
+    "最有效的方法是找最大的完全平方因數，但逐步提出也可得到相同結果。",
+    "根號外係數與根號內因數分工：成對的質因數可提出一個。",
+    "化簡完成後，根號內不能再含4、9、16等平方因數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "最簡根式條件",
+      "statement": "根號內為正整數時，不含大於1的完全平方因數。"
+    },
+    {
+      "name": "等值化簡",
+      "statement": "若a,b≥0，√(ab)=√a√b。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "√(k²m)=k√m",
+      "conditions": [
+        "k≥0、m≥0。"
+      ],
+      "meaning": "把完全平方 k² 開成 k。"
+    },
+    {
+      "formula": "c√a",
+      "conditions": [
+        "先化簡√a，再乘回係數c。"
+      ],
+      "meaning": "係數不可遺漏。"
+    }
+  ],
+  "nonApplicableCases": [
+    "√(a+b)一般不能拆成√a+√b。",
+    "提出36時要變成6，不是36。",
+    "3√12中的3不能被忘記。",
+    "根號內仍含4或9時通常還沒最簡。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "分解被開方數。",
+      "check": "優先尋找最大完全平方因數。"
+    },
+    {
+      "step": 2,
+      "instruction": "把它寫成平方因數×剩餘因數。",
+      "check": "剩餘因數應為正整數。"
+    },
+    {
+      "step": 3,
+      "instruction": "對平方因數開平方並移到根號外。",
+      "check": "√36=6，不是36。"
+    },
+    {
+      "step": 4,
+      "instruction": "乘回原有係數。",
+      "check": "檢查外部係數。"
+    },
+    {
+      "step": 5,
+      "instruction": "確認根號內不能再化簡。",
+      "check": "逐一檢查4、9、16等因數。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "化簡√28。",
+      "solutionSteps": [
+        "28=4×7。",
+        "√4=2。"
+      ],
+      "answer": "2√7。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "化簡√147。",
+      "solutionSteps": [
+        "147=49×3。",
+        "√49=7。"
+      ],
+      "answer": "7√3。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "化簡2√75。",
+      "solutionSteps": [
+        "√75=5√3。",
+        "乘回2。"
+      ],
+      "answer": "10√3。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "化簡√(2⁵×3²)。",
+      "solutionSteps": [
+        "2⁵×3²=(2⁴×3²)×2。",
+        "提出2²×3。"
+      ],
+      "answer": "12√2。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "√48=16√3。",
+      "why": "把平方因數16直接提出。",
+      "correction": "√16=4，所以是4√3。"
+    },
+    {
+      "mistake": "√12=√4+√3。",
+      "why": "錯用根號加法拆分。",
+      "correction": "應用乘法分解√(4×3)。"
+    },
+    {
+      "mistake": "2√18=3√2。",
+      "why": "漏乘原係數2。",
+      "correction": "√18=3√2，所以為6√2。"
+    },
+    {
+      "mistake": "√72=3√8後停止。",
+      "why": "根號內8仍含4。",
+      "correction": "繼續化為6√2。"
+    },
+    {
+      "mistake": "把√50化成25√2。",
+      "why": "未對25開平方。",
+      "correction": "應為5√2。"
+    },
+    {
+      "mistake": "只用小數近似取代精確化簡。",
+      "why": "題目要求根式精確值。",
+      "correction": "保留最簡根式，除非要求近似。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "找平方因數、開平方、留下不能成對的因數。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "分解被開方數。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "√48=16√3。；修正：√16=4，所以是4√3。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "化簡前後平方或近似值是否一致？"
+    }
+  ],
+  "summary": [
+    "找平方因數、開平方、留下不能成對的因數。",
+    "最簡根式是等值而更易運算的寫法。"
+  ],
+  "connections": {
+    "previous": "需要 s001 的平方根意義與整數質因數分解。",
+    "next": [
+      "s003 將先化簡再做根式四則。",
+      "s006 會建立完全平方數辨識速度。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s002-v001",
+      "u11-s002-v002",
+      "u11-s002-v003",
+      "u11-s002-v004",
+      "u11-s002-v005",
+      "u11-s002-v006",
+      "u11-s002-v007",
+      "u11-s002-v008",
+      "u11-s002-v009",
+      "u11-s002-v010",
+      "u11-s002-v011",
+      "u11-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s002-cr001",
+      "u11-s002-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「根式化簡」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「√48=16√3。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "13c9cf9acf426f4a55c7710d6aa83d21a7ac5a64a309a8590e466d8638f4e46b"
+}

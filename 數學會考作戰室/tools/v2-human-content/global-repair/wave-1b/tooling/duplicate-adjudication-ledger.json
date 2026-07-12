@@ -1,0 +1,272 @@
+{
+  "schemaVersion": "math-v2-duplicate-adjudication-wave-1b-r1",
+  "candidateSourceSha256": "c4b9878c2099deee6c47d00b402ae9dffb8761177b4c7eeaeb4afdd82dcc4ef6",
+  "expectedSourceCounts": {
+    "exactMcPromptGroups": 3,
+    "numberSwapCandidateGroups": 29,
+    "crossUnitPromptSkeletonGroups": 7,
+    "exactConstructedResponseGroups": 0
+  },
+  "repairedQuestionIds": [
+    "u02-s001-v005",
+    "u02-s004-v002",
+    "u02-s005-v002",
+    "u02-s008-v005",
+    "u02-s011-v004",
+    "u02-s011-v005",
+    "u08-s007-v004",
+    "u08-s009-v006",
+    "u10-s003-v001",
+    "u10-s003-v003",
+    "u17-s016-v002",
+    "u23-s013-v009"
+  ],
+  "expectedPostRepairRawCounts": {
+    "exactMcPromptGroups": 0,
+    "crossUnitPromptSkeletonGroups": 0,
+    "numberSwapCandidateGroups": 22,
+    "exactConstructedResponseGroups": 0
+  },
+  "retainedNumberSwapGroups": [
+    {
+      "ids": [
+        "u01-s005-v001",
+        "u01-s005-v002"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：分別檢查正數與負數的相反數，符號處理不同。"
+    },
+    {
+      "ids": [
+        "u01-s007-v001",
+        "u01-s007-v002"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：第一題是到原點的距離，第二題是兩個非原點位置間距離。"
+    },
+    {
+      "ids": [
+        "u01-s008-v001",
+        "u01-s008-v004",
+        "u01-s009-v001",
+        "u01-s009-v002"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：跨加法與減法，且涵蓋異號加法、正減正與負減正等不同符號結構。"
+    },
+    {
+      "ids": [
+        "u01-s008-v002",
+        "u01-s008-v003"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：同號負數相加與相反數相消是不同核心情形。"
+    },
+    {
+      "ids": [
+        "u01-s009-v003",
+        "u01-s009-v004"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：皆為減去負數，但結果符號與大小關係不同。"
+    },
+    {
+      "ids": [
+        "u01-s010-v001",
+        "u01-s010-v003"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：負乘正與負乘負用來區分乘法符號規則。"
+    },
+    {
+      "ids": [
+        "u01-s010-v002",
+        "u01-s010-v004",
+        "u01-s010-v006"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：覆蓋負除正、正除負與負除負三種符號組合。"
+    },
+    {
+      "ids": [
+        "u01-s012-v001",
+        "u01-s012-v003"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：正底數冪與沒有括號的負號優先順序不同。"
+    },
+    {
+      "ids": [
+        "u01-s012-v002",
+        "u01-s012-v008"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：負底數奇次冪與正底數冪的符號及值不同。"
+    },
+    {
+      "ids": [
+        "u02-s009-v001",
+        "u02-s009-v002",
+        "u02-s009-v003",
+        "u02-s009-v005"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：分別涵蓋異分母加法、減法、同分母負分數與異分母帶號分數。"
+    },
+    {
+      "ids": [
+        "u02-s010-v001",
+        "u02-s010-v003"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：正分數乘法與含負號乘法分別檢查約分及符號。"
+    },
+    {
+      "ids": [
+        "u02-s010-v002",
+        "u02-s010-v004"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：正分數除法與含負號除法分別檢查倒數及符號。"
+    },
+    {
+      "ids": [
+        "u02-s012-v001",
+        "u02-s012-v002",
+        "u02-s012-v003",
+        "u02-s012-v004"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：繁分數的分子和分母型態不同，分別為分數除分數、整數分母與分數作分母。"
+    },
+    {
+      "ids": [
+        "u03-s004-v005",
+        "u03-s004-v009"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：整數係數與小數係數的一元一次方程式表示和運算要求不同。"
+    },
+    {
+      "ids": [
+        "u03-s006-v001",
+        "u03-s006-v009"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：整數分母與小數除數的方程式需使用不同表示轉換。"
+    },
+    {
+      "ids": [
+        "u03-s006-v002",
+        "u03-s006-v006"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：整數常數式與全分數式的去分母複雜度不同。"
+    },
+    {
+      "ids": [
+        "u06-s001-v001",
+        "u06-s001-v003"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：整數比化簡與分數比化整數比需要不同前處理。"
+    },
+    {
+      "ids": [
+        "u06-s002-v002",
+        "u06-s002-v006"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：整數比例式與分數比例式的交叉相乘複雜度不同。"
+    },
+    {
+      "ids": [
+        "u14-s003-v001",
+        "u14-s003-v002"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：正公差與負公差用來區分遞增和遞減等差數列。"
+    },
+    {
+      "ids": [
+        "u14-s004-v002",
+        "u14-s004-v003",
+        "u14-s004-v005"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：分別涵蓋小於1的正公比、負公比與大於1的正公比。"
+    },
+    {
+      "ids": [
+        "u14-s006-v001",
+        "u14-s006-v003",
+        "u14-s006-v004"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：正整數、跨零整數與分數中項的表示情形不同。"
+    },
+    {
+      "ids": [
+        "u14-s008-v001",
+        "u14-s008-v002",
+        "u14-s008-v003"
+      ],
+      "decision": "RETAIN_DISTINCT_CAPABILITY",
+      "rationale": "保留：成長、衰減與負公比交錯三種第 n 項結構不同。"
+    }
+  ],
+  "repairedNumberSwapGroups": [
+    {
+      "ids": [
+        "u01-s004-v003",
+        "u02-s008-v005"
+      ],
+      "decision": "REPAIRED"
+    },
+    {
+      "ids": [
+        "u02-s004-v001",
+        "u02-s004-v002"
+      ],
+      "decision": "REPAIRED"
+    },
+    {
+      "ids": [
+        "u02-s005-v001",
+        "u02-s005-v002"
+      ],
+      "decision": "REPAIRED"
+    },
+    {
+      "ids": [
+        "u02-s009-v006",
+        "u02-s011-v004",
+        "u02-s011-v005"
+      ],
+      "decision": "REPAIRED"
+    },
+    {
+      "ids": [
+        "u08-s006-v004",
+        "u17-s016-v002"
+      ],
+      "decision": "REPAIRED"
+    },
+    {
+      "ids": [
+        "u08-s007-v001",
+        "u08-s007-v004"
+      ],
+      "decision": "REPAIRED"
+    },
+    {
+      "ids": [
+        "u08-s009-v006",
+        "u17-s015-v001"
+      ],
+      "decision": "REPAIRED"
+    }
+  ],
+  "policy": "Raw number-swap similarity is not itself a defect. Retention requires a concrete difference in sign pattern, representation, operation, or reasoning. Exact and cross-unit duplicated stems are repaired unless the mathematical task is inherently shared and the prompt is made skill-specific.",
+  "productionActivationAllowed": false
+}

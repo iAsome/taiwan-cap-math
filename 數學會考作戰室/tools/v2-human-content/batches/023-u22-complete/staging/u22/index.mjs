@@ -1,0 +1,22 @@
+import s001 from './s001.mjs';
+import s002 from './s002.mjs';
+import s003 from './s003.mjs';
+import s004 from './s004.mjs';
+import s005 from './s005.mjs';
+import s006 from './s006.mjs';
+import s007 from './s007.mjs';
+import s008 from './s008.mjs';
+import s009 from './s009.mjs';
+import s010 from './s010.mjs';
+import s011 from './s011.mjs';
+import s012 from './s012.mjs';
+import s013 from './s013.mjs';
+import s014 from './s014.mjs';
+import s015 from './s015.mjs';
+import s016 from './s016.mjs';
+import s017 from './s017.mjs';
+import s018 from './s018.mjs';
+
+export const unitId='u22';
+export const skillModules=[s001,s002,s003,s004,s005,s006,s007,s008,s009,s010,s011,s012,s013,s014,s015,s016,s017,s018];
+export default {unitId,skillModules};

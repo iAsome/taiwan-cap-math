@@ -1,0 +1,253 @@
+{
+  "lectureId": "u14-s008-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-sequences",
+  "skillId": "geometric-nth-basic",
+  "lockedTitle": "等比第 n 項基本",
+  "title": "等比第 n 項基本：把重複乘法寫成指數",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能推導並使用a_n=a_1r^{n-1}。",
+    "能由兩項與公比求其他項。",
+    "能處理負公比與分數公比。",
+    "能回求簡單的項數或公比。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "sequence-pattern-word",
+      "title": "規律觀察列式",
+      "requiredLevel": "能說明「規律觀察列式」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "等比通項",
+      "definition": "直接由首項、公比與項數求第n項。"
+    },
+    {
+      "term": "指數",
+      "definition": "表示同一因數重複相乘的次數。"
+    },
+    {
+      "term": "倍率次數",
+      "definition": "從第1項到第n項共乘n-1次。"
+    },
+    {
+      "term": "衰減",
+      "definition": "公比絕對值小於1時，絕對值逐步縮小。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a_n=a_1r^{n-1}",
+      "meaning": "等比數列第n項公式。"
+    },
+    {
+      "symbol": "r^{n-1}",
+      "meaning": "公比重複相乘n-1次。"
+    }
+  ],
+  "conceptNarrative": [
+    "第2項乘一次r，第3項乘兩次r，因此第n項乘n-1次r。",
+    "負公比的次方奇偶會決定正負：偶次方為正、奇次方為負。",
+    "分數公比要整體乘方，分子與分母都要乘方。",
+    "回求n時在國中範圍通常用逐次比較同底數次方，不需對數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等比通項",
+      "statement": "a_1乘上n-1個r所得的項。"
+    },
+    {
+      "name": "公比",
+      "statement": "相鄰後項與前項的固定倍率。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a_n=a_1r^{n-1}",
+      "conditions": [
+        "n為正整數",
+        "數列確為等比"
+      ],
+      "meaning": "首項經過n-1次倍率。"
+    },
+    {
+      "formula": "a_n=a_kr^{n-k}",
+      "conditions": [
+        "已知第k項與公比"
+      ],
+      "meaning": "從第k項跨n-k步。"
+    }
+  ],
+  "nonApplicableCases": [
+    "非等比數列不可套公式。",
+    "把指數寫成n會多乘一次。",
+    "負公比不可先去掉負號。",
+    "回求n若目標不在幾何倍數鏈上，不能硬取近似項數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認a_1、r與n",
+      "check": "尤其辨認首項是否為第0時刻。"
+    },
+    {
+      "step": 2,
+      "instruction": "寫a_n=a_1r^{n-1}",
+      "check": "先不急著算。"
+    },
+    {
+      "step": 3,
+      "instruction": "處理指數與符號",
+      "check": "負底數看次方奇偶。"
+    },
+    {
+      "step": 4,
+      "instruction": "分數次方約分",
+      "check": "保留精確值。"
+    },
+    {
+      "step": 5,
+      "instruction": "代回相鄰項驗證倍率",
+      "check": "確認無錯位。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "a_1=3，r=2，求a_7",
+      "reasoning": "a_7=3×2^6。",
+      "solutionSteps": [
+        "a_7=3×2^6。",
+        "2^6=64。"
+      ],
+      "answer": "192"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "a_1=128，r=1/2，求a_6",
+      "reasoning": "乘5次1/2。",
+      "solutionSteps": [
+        "乘5次1/2。",
+        "128÷32=4。"
+      ],
+      "answer": "4"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "a_1=-5，r=-2，求a_4",
+      "reasoning": "(-2)^3=-8。",
+      "solutionSteps": [
+        "(-2)^3=-8。",
+        "-5×(-8)=40。"
+      ],
+      "answer": "40"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "a_3=18，r=3，求a_1",
+      "reasoning": "18=a_1×3^2。",
+      "solutionSteps": [
+        "18=a_1×3^2。",
+        "a_1=2。"
+      ],
+      "answer": "2"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "指數寫n",
+      "why": "首項被多乘一次。",
+      "correction": "使用n-1。"
+    },
+    {
+      "mistake": "負公比只看絕對值",
+      "why": "項的正負會錯。",
+      "correction": "保留括號(-r)^{n-1}。"
+    },
+    {
+      "mistake": "分數公比只乘分母",
+      "why": "指數作用於整個分數。",
+      "correction": "寫成(p/q)^{n-1}。"
+    },
+    {
+      "mistake": "把a_k直接當首項",
+      "why": "位置差未處理。",
+      "correction": "使用a_n=a_kr^{n-k}。"
+    },
+    {
+      "mistake": "以加法累積公比",
+      "why": "等比是重複乘法。",
+      "correction": "用冪次。"
+    },
+    {
+      "mistake": "回求n使用小數近似卻不驗證",
+      "why": "項數必須正整數。",
+      "correction": "逐次乘回檢查。"
+    }
+  ],
+  "selfCheck": [
+    "從第1項到第n項乘了幾次？",
+    "負公比的次方奇偶是否正確？",
+    "分數是否整體乘方？",
+    "已知項若不是首項，位置差是否正確？",
+    "回求n是否為正整數且代回成立？"
+  ],
+  "summary": [
+    "等比第n項為a_1r^{n-1}。",
+    "n-1來自倍率次數。",
+    "負公比與分數公比需保留完整括號。",
+    "國中回求項數以同底次方與驗算處理。"
+  ],
+  "connections": {
+    "previous": "承接等比基本與規律列式。",
+    "next": [
+      "等差級數和將改用首尾配對求多項總和。",
+      "素養題會比較線性增加與倍增。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s008-v001",
+      "u14-s008-v002",
+      "u14-s008-v003",
+      "u14-s008-v004",
+      "u14-s008-v005",
+      "u14-s008-v006",
+      "u14-s008-v007",
+      "u14-s008-v008",
+      "u14-s008-v009",
+      "u14-s008-v010",
+      "u14-s008-v011",
+      "u14-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s008-cr001",
+      "u14-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「等比第 n 項基本」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "8ee9fa2180fb34ae981b99d32347c0ab99bec7df19f4b9a44ee111f650332086"
+}

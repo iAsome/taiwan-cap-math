@@ -1,0 +1,249 @@
+{
+  "lectureId": "u07-s011-lecture-r1",
+  "unitId": "u07",
+  "topicId": "u07-applications",
+  "skillId": "inequality-budget",
+  "title": "預算不等式應用：固定費和單價與折扣及可購數量",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能建立固定費加變動費的預算不等式。",
+    "能處理折扣、優惠門檻與多項支出。",
+    "能求最多可購數量或最低所需預算。",
+    "能比較方案並驗證取整後是否超支。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inequality-reasonableness",
+      "requiredLevel": "能加入非負整數與預算上限等情境限制。"
+    }
+  ],
+  "prerequisiteBridge": {
+    "inequality-reasonableness": "能加入非負整數與預算上限等情境限制。"
+  },
+  "glossary": [
+    {
+      "term": "預算",
+      "definition": "可使用金額的上限。"
+    },
+    {
+      "term": "固定費",
+      "definition": "不論購買數量多少都需支付的費用。"
+    },
+    {
+      "term": "變動費",
+      "definition": "隨數量增加而增加的費用。"
+    },
+    {
+      "term": "折扣後單價",
+      "definition": "原價乘上折扣比例後的每件價格。"
+    },
+    {
+      "term": "餘額",
+      "definition": "預算減去實際支出。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "F+px≤B",
+      "meaning": "固定費 F 加單價 p 乘數量 x，不超過預算 B。"
+    },
+    {
+      "symbol": "p(1−r)",
+      "meaning": "原單價 p 打 r 比例折扣後的單價。"
+    }
+  ],
+  "conceptNarrative": [
+    "預算題先確認所有價格單位一致，並找出哪些費用只付一次。",
+    "「不超過預算」包含剛好用完，因此使用≤。",
+    "折扣應作用在題目指定的品項或總額，不能自行套到固定費。",
+    "求最多件數時解出上界，再取不超過它的最大非負整數，並代入下一件確認會超支。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "預算限制",
+      "statement": "總支出≤可用預算。"
+    },
+    {
+      "name": "固定加變動模型",
+      "statement": "總支出=固定費＋單價×數量。"
+    },
+    {
+      "name": "方案可行性",
+      "statement": "同時滿足優惠條件與預算上限才是可行購買方案。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "F+px≤B ⇒ x≤(B−F)/p",
+      "conditions": [
+        "p>0",
+        "B≥F 才可能購買非負件數"
+      ],
+      "meaning": "最多數量的實數上界。"
+    },
+    {
+      "formula": "折扣價=p×折數",
+      "conditions": [
+        "八折寫 0.8"
+      ],
+      "meaning": "計算優惠後單價。"
+    }
+  ],
+  "nonApplicableCases": [
+    "若固定費已超過預算，可能連 0 件都無法購買。",
+    "滿額折扣有條件，未達門檻不能使用折扣價。",
+    "運費是否固定或按件計算，必須依題意。",
+    "同時買不同品項若有兩個未知數，不宜強行套成一元不等式；本單元題目會給其中一種數量或關係。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出預算與全部支出。",
+      "check": "元、點數或其他單位是否一致？"
+    },
+    {
+      "step": 2,
+      "instruction": "分辨固定費、單價與折扣範圍。",
+      "check": "哪些費用只付一次？"
+    },
+    {
+      "step": 3,
+      "instruction": "寫總支出≤預算。",
+      "check": "優惠條件是否也需滿足？"
+    },
+    {
+      "step": 4,
+      "instruction": "解出數量上界。",
+      "check": "除數是否為正單價？"
+    },
+    {
+      "step": 5,
+      "instruction": "取最大可行整數並驗證相鄰值。",
+      "check": "x 件不超支，x+1 件會超支嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "預算 1000 元，運費 80 元，每本書 115 元，最多買幾本？",
+      "solutionSteps": [
+        "80+115x≤1000。",
+        "115x≤920，x≤8。"
+      ],
+      "answer": "最多 8 本。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "每張票 250 元打八折，預算 1100 元，最多買幾張？",
+      "solutionSteps": [
+        "折扣後每張 200 元。",
+        "200x≤1100，x≤5.5。"
+      ],
+      "answer": "最多 5 張。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "會員費 300 元，每次課程 180 元，總支出至多 1560 元，最多上幾次？",
+      "solutionSteps": [
+        "300+180n≤1560。",
+        "180n≤1260，n≤7。"
+      ],
+      "answer": "最多 7 次。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "預算 500 元，固定入場費 560 元，還能購買紀念品嗎？",
+      "solutionSteps": [
+        "即使買 0 件，支出 560 元仍超過 500 元。",
+        "可行集合為空。"
+      ],
+      "answer": "不能，連入場費都超出預算。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把運費乘上書本數量。",
+      "why": "把固定費誤當每件費用。",
+      "correction": "總支出為一次運費加單價乘數量。"
+    },
+    {
+      "mistake": "八折算成原價減 8%。",
+      "why": "混淆八折與 92 折。",
+      "correction": "八折是原價×0.8。"
+    },
+    {
+      "mistake": "x≤5.5 回答 6 張。",
+      "why": "向上取整造成超支。",
+      "correction": "最大可行整數為 5。"
+    },
+    {
+      "mistake": "總支出剛好等於預算時排除。",
+      "why": "把「不超過」當嚴格小於。",
+      "correction": "預算上限通常包含等於。"
+    },
+    {
+      "mistake": "固定費超預算仍回答 0 件可行。",
+      "why": "沒有檢查 0 件時的總支出。",
+      "correction": "若必要固定費已超支，無可行方案。"
+    },
+    {
+      "mistake": "未達滿額門檻仍套折扣。",
+      "why": "忽略優惠條件。",
+      "correction": "先驗證門檻，再決定價格模型。"
+    }
+  ],
+  "selfCheck": [
+    "所有支出是否完整且單位一致？",
+    "折扣作用範圍與門檻是否正確？",
+    "數量是否為非負整數？",
+    "最大件數與下一件是否都代回驗證？"
+  ],
+  "summary": [
+    "總支出不超過預算。",
+    "固定費只加一次，變動費為單價乘數量。",
+    "折扣需依題意與門檻使用。",
+    "最多數量向下取到最大可行整數，再驗證下一個整數。"
+  ],
+  "connections": {
+    "previous": "承接模型合理性與整數取整。",
+    "next": [
+      "最後技能會把預算與表格、分段規則、容量等資訊整合。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u07-s011-v001",
+      "u07-s011-v002",
+      "u07-s011-v003",
+      "u07-s011-v004",
+      "u07-s011-v005",
+      "u07-s011-v006",
+      "u07-s011-v007",
+      "u07-s011-v008",
+      "u07-s011-v009",
+      "u07-s011-v010",
+      "u07-s011-v011",
+      "u07-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u07-s011-cr001",
+      "u07-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個例題包含固定運費、折扣、會員費與固定費已超支；所有最大數量均以相鄰整數回代，並特別檢查 0 件仍不可行的空集合情況。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "f1da6394a5c71b0b610a45288b117ddf2fd30a622e95858a87c7937d54c8a271"
+}

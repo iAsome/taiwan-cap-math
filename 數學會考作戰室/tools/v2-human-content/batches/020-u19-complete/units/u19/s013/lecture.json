@@ -1,0 +1,247 @@
+{
+  "lectureId": "u19-s013-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-measure",
+  "skillId": "circle-area",
+  "title": "圓面積",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s013",
+    "lockedSkillId": "circle-area",
+    "lockedOrder": 13,
+    "scope": "由半徑或直徑求圓面積並處理反求。"
+  },
+  "learningOutcomes": [
+    "能由半徑或直徑求圓面積。",
+    "能由面積反求半徑。",
+    "能處理面積比與半徑比。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "sector-perimeter",
+      "requiredLevel": "能使用「扇形周長」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「扇形周長」的結論，連接到本技能「圓面積」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "半徑",
+      "definition": "圓心到圓周的距離。"
+    },
+    {
+      "term": "直徑",
+      "definition": "通過圓心、兩端在圓上的線段，等於2r。"
+    },
+    {
+      "term": "面積比",
+      "definition": "兩個面積的比值。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "圓面積公式中的 r 必須是半徑，直徑資料先除以2。",
+    "半徑放大k倍，面積會放大k²倍，因為公式中半徑被平方。",
+    "反求半徑時先除以π得到r²，再取正平方根；半徑不取負值。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "半徑",
+      "statement": "圓心到圓周的距離。"
+    },
+    {
+      "name": "直徑",
+      "statement": "通過圓心、兩端在圓上的線段，等於2r。"
+    },
+    {
+      "name": "面積比",
+      "statement": "兩個面積的比值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A=πr²",
+      "conditions": [
+        "r>0"
+      ],
+      "meaning": "圓面積"
+    },
+    {
+      "formula": "面積比=r₁²:r₂²",
+      "conditions": [
+        "兩圓使用同一π"
+      ],
+      "meaning": "半徑平方比"
+    }
+  ],
+  "nonApplicableCases": [
+    "不可用2πr求面積。",
+    "直徑不能直接平方代成r²。",
+    "由r²=25應取r=5，不取−5作幾何長度。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "判定給的是半徑或直徑。",
+      "check": "完成此步後，確認仍在「圓面積」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "必要時用r=d/2。",
+      "check": "完成此步後，確認仍在「圓面積」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "代入πr²。",
+      "check": "完成此步後，確認仍在「圓面積」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "反求時先求r²再取正根。",
+      "check": "完成此步後，確認仍在「圓面積」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查平方單位與合理大小。",
+      "check": "完成此步後，確認仍在「圓面積」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s013-L1",
+      "prompt": "r=7的圓面積。",
+      "solutionSteps": [
+        "A=π×49。"
+      ],
+      "answer": "49π。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s013-L2",
+      "prompt": "直徑12的圓面積。",
+      "solutionSteps": [
+        "r=6。",
+        "A=36π。"
+      ],
+      "answer": "36π。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s013-L3",
+      "prompt": "面積81π的圓半徑。",
+      "solutionSteps": [
+        "r²=81。",
+        "r=9。"
+      ],
+      "answer": "9。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s013-L4",
+      "prompt": "兩圓半徑比2:3。",
+      "solutionSteps": [
+        "面積比為4:9。"
+      ],
+      "answer": "4:9。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「圓面積」的定義、符號與單一步驟關係。",
+    "standard": "把「圓面積」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「圓面積」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「圓面積」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把圓周長當面積",
+      "why": "公式混淆",
+      "correction": "面積有r²"
+    },
+    {
+      "mistake": "直徑直接代r",
+      "why": "答案四倍",
+      "correction": "先除2"
+    },
+    {
+      "mistake": "面積比只用半徑比",
+      "why": "忘記平方",
+      "correction": "比例要平方"
+    },
+    {
+      "mistake": "反求半徑取負值",
+      "why": "忽略長度限制",
+      "correction": "只取正值"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「圓面積」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "圓面積為πr²。",
+    "直徑先除2。",
+    "半徑比平方得到面積比。"
+  ],
+  "connections": {
+    "previous": "承接「扇形周長」。",
+    "next": "下一技能為「圓組合周長」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s013-fig001",
+      "purpose": "圓 O 畫出一條直徑 d 與垂直半徑 r，圓內以網紋表示面積區域。",
+      "altText": "圓 O 畫出一條直徑 d 與垂直半徑 r，圓內以網紋表示面積區域。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s013-v001",
+      "u19-s013-v002",
+      "u19-s013-v003",
+      "u19-s013-v004",
+      "u19-s013-v005",
+      "u19-s013-v006",
+      "u19-s013-v007",
+      "u19-s013-v008",
+      "u19-s013-v009",
+      "u19-s013-v010",
+      "u19-s013-v011",
+      "u19-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s013-cr001",
+      "u19-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「圓面積」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：由半徑或直徑求圓面積並處理反求。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "95ab3a82fe7fa1d1408daa5d044acae01e6c97d3c473477389aa975556f9fcbe"
+}

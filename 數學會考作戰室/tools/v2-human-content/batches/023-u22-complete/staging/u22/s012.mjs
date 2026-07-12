@@ -1,0 +1,1652 @@
+// Emitted from reviewed immutable source. Do not edit.
+export default {
+  "lecture": {
+    "lectureId": "u22-s012-lecture-r1",
+    "unitId": "u22",
+    "numericUnitId": 22,
+    "topicId": "u22-probability",
+    "skillId": "probability-tree-basic",
+    "lockedSkillOrder": 12,
+    "title": "樹狀圖基本：用分支完整列出多階段結果並沿路相乘。",
+    "originalLockedTitle": "樹狀圖基本",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能依試驗順序畫樹狀圖。",
+      "能數完整末端路徑。",
+      "能沿路相乘並把互斥路徑相加。",
+      "能處理分支數不相同的流程。"
+    ],
+    "prerequisiteSkillIds": [
+      "probability-complement"
+    ],
+    "prerequisiteBridge": "承接餘事與基本機率。",
+    "glossary": [
+      {
+        "term": "節點",
+        "definition": "試驗進行到某階段的狀態。"
+      },
+      {
+        "term": "分支",
+        "definition": "從節點出發的一個下一步結果。"
+      },
+      {
+        "term": "完整路徑",
+        "definition": "由起點走到末端的一次完整結果。"
+      },
+      {
+        "term": "條件分支機率",
+        "definition": "已到某節點後，下一支發生的機率。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "沿路相乘",
+        "meaning": "同一完整路徑各階段機率相乘。"
+      },
+      {
+        "symbol": "跨路相加",
+        "meaning": "互斥的有利完整路徑機率相加。"
+      },
+      {
+        "symbol": "同節點分支和=1",
+        "meaning": "分支涵蓋全部下一步時。"
+      }
+    ],
+    "conceptNarrative": [
+      "樹狀圖的層次按時間或決策順序排列。",
+      "每一條完整路徑是樣本空間的一個結果；中途節點不是完整結果。",
+      "同一路徑表示「且」，所以乘；不同互斥路徑合成同一事件表示「或」，所以加。",
+      "不是每個第一層分支都必須有相同第二層，例如通過後流程停止、未通過才續判。",
+      "分支機率是到達該節點後的條件機率，不能直接跨不同節點相加。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "規則樹",
+        "statement": "每個同層節點有相同分支數。"
+      },
+      {
+        "name": "不規則樹",
+        "statement": "不同節點的後續分支數不同。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "P(路徑)=p1p2…pk",
+        "conditions": [
+          "分支機率依條件相乘。"
+        ],
+        "meaning": "分支機率依條件相乘。"
+      },
+      {
+        "formula": "P(E)=ΣP(屬E的互斥路徑)",
+        "conditions": [
+          "事件跨多末端。"
+        ],
+        "meaning": "事件跨多末端。"
+      }
+    ],
+    "nonApplicableCases": [
+      "沿路機率不能相加。",
+      "不同路徑若不互斥不可直接相加。",
+      "流程停止的分支不應機械延伸。",
+      "第一層機率與條件成功率不能忽略權重。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "寫階段",
+        "check": "每層記錄什麼。"
+      },
+      {
+        "step": 2,
+        "instruction": "畫完整分支",
+        "check": "同節點機率和1。"
+      },
+      {
+        "step": 3,
+        "instruction": "標末端",
+        "check": "列完整結果。"
+      },
+      {
+        "step": 4,
+        "instruction": "圈有利路徑",
+        "check": "逐條相乘。"
+      },
+      {
+        "step": 5,
+        "instruction": "相加並驗總和",
+        "check": "全部末端機率和應為1。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "硬幣後骰子",
+        "solutionSteps": [
+          "第一層2支，完整路徑12。"
+        ],
+        "answer": "第一層2支，完整路徑12。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "A機率1/3，A後成功1/2",
+        "solutionSteps": [
+          "A且成功1/6。"
+        ],
+        "answer": "A且成功1/6。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "三條成功路徑1/8、2/8、3/8",
+        "solutionSteps": [
+          "合計3/4。"
+        ],
+        "answer": "合計3/4。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "通過停止，未通過分可修與報廢",
+        "solutionSteps": [
+          "完整末端3種。"
+        ],
+        "answer": "完整末端3種。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把2支與6支相加成8個結果",
+        "why": "完整路徑應2×6。",
+        "correction": "完整路徑應2×6。"
+      },
+      {
+        "mistake": "事件只圈一條路徑",
+        "why": "檢查是否還有其他順序。",
+        "correction": "檢查是否還有其他順序。"
+      },
+      {
+        "mistake": "同節點機率不合1",
+        "why": "表示漏分支或標示錯。",
+        "correction": "表示漏分支或標示錯。"
+      },
+      {
+        "mistake": "不規則樹仍套固定乘法",
+        "why": "應逐子樹數末端再相加。",
+        "correction": "應逐子樹數末端再相加。"
+      }
+    ],
+    "selfCheck": [
+      "層次是否依順序？",
+      "每個節點分支是否完整？",
+      "同一路徑是否相乘？",
+      "有利互斥路徑是否全部相加？",
+      "所有末端機率是否合1？"
+    ],
+    "summary": [
+      "樹狀圖把多階段試驗展開。",
+      "且用乘，互斥的或用加。",
+      "完整結果必須到末端。",
+      "條件流程可形成不規則樹。"
+    ],
+    "connections": {
+      "previous": "承接餘事與基本機率。",
+      "next": [
+        "下一技能把所有完整末端整理成樣本空間。",
+        "兩階段機率會使用同一乘加原則。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u22-tree-conditional"
+    ],
+    "figureAccessibility": [
+      {
+        "figureId": "fig-u22-tree-conditional",
+        "altText": "兩階段樹狀圖，第一層A機率三分之一、B機率三分之二；A後成功二分之一，B後成功四分之一。"
+      }
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u22-s012-v001",
+        "u22-s012-v002",
+        "u22-s012-v003",
+        "u22-s012-v004",
+        "u22-s012-v005",
+        "u22-s012-v006",
+        "u22-s012-v007",
+        "u22-s012-v008",
+        "u22-s012-v009",
+        "u22-s012-v010",
+        "u22-s012-v011",
+        "u22-s012-v012"
+      ],
+      "constructedResponseIds": [
+        "u22-s012-cr001",
+        "u22-s012-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "skillSpecificReviewEvidence": "逐路徑重算條件成功案例：(2/3)(1/4)+(1/3)(1/2)=1/3；確認各第一層分支和1且兩條成功路徑互斥。",
+      "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+      "contentBoundary": "用分支完整列出多階段結果並沿路相乘。",
+      "reviewVersion": "human-lecture-review-u22-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "084cdc93b970474505de1af02f0714b8bb45d3c8c2471b60bf709fabe0aff366"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u22-s012-v001",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "先擲硬幣再擲骰子，樹狀圖第一層應有幾個分支？",
+      "text": "先擲硬幣再擲骰子，樹狀圖第一層應有幾個分支？",
+      "givenConditions": [],
+      "target": "辨識樹狀圖層次",
+      "choices": [
+        "6",
+        "8",
+        "12",
+        "2"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "第一階段是硬幣，只可能正面或反面，因此第一層2個分支。",
+      "explanation": "第一階段是硬幣，只可能正面或反面，因此第一層2個分支。",
+      "steps": [
+        "辨認第一階段。",
+        "列正、反。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "這是第二階段骰子分支數。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "把兩階段分支相加。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "這是最終路徑數。"
+        },
+        {
+          "choice": "2",
+          "truth": true,
+          "reason": "正確。獨立重算：第一階段是硬幣，只可能正面或反面，因此第一層2個分支。"
+        }
+      ],
+      "misconceptionTarget": "把後續結果也畫在第一層。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "硬幣有兩面且結果完整。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：辨識樹狀圖層次",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "辨識樹狀圖層次",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "2c2ac0af8c82e4c68b34f998c09e6d73b498e0d826acfa04632c326c353f05ce"
+    },
+    {
+      "questionId": "u22-s012-v002",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "先選紅或藍，再選大或小。若每一步都有兩種結果，樹狀圖共有幾條完整路徑？",
+      "text": "先選紅或藍，再選大或小。若每一步都有兩種結果，樹狀圖共有幾條完整路徑？",
+      "givenConditions": [],
+      "target": "計算完整路徑數",
+      "choices": [
+        "2",
+        "6",
+        "4",
+        "8"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "每個第一層分支再分2支，共2×2=4條完整路徑。",
+      "explanation": "每個第一層分支再分2支，共2×2=4條完整路徑。",
+      "steps": [
+        "第一層2支。",
+        "每支再分2支。",
+        "總路徑4。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "只算第一層。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "把分支數相加。"
+        },
+        {
+          "choice": "4",
+          "truth": true,
+          "reason": "正確。獨立重算：每個第一層分支再分2支，共2×2=4條完整路徑。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "多乘一次2。"
+        }
+      ],
+      "misconceptionTarget": "用加法代替乘法計數。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "兩階段每一步選項數固定。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：計算完整路徑數",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "計算完整路徑數",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "8d675e940f0679e912b17742ee8da4433d4d7b908c8efce3f3c780060c1d6c78"
+    },
+    {
+      "questionId": "u22-s012-v003",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "樹狀圖的一條完整路徑代表什麼？",
+      "text": "樹狀圖的一條完整路徑代表什麼？",
+      "givenConditions": [],
+      "target": "理解路徑意義",
+      "choices": [
+        "一次多階段試驗的完整結果",
+        "單一階段的所有結果",
+        "事件的平均值",
+        "一定會發生的結果"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "從根節點沿每一階段走到末端，記錄一次試驗所有階段的結果。",
+      "explanation": "從根節點沿每一階段走到末端，記錄一次試驗所有階段的結果。",
+      "steps": [
+        "理解路徑包含各層選擇。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "一次多階段試驗的完整結果",
+          "truth": true,
+          "reason": "正確。獨立重算：從根節點沿每一階段走到末端，記錄一次試驗所有階段的結果。"
+        },
+        {
+          "choice": "單一階段的所有結果",
+          "truth": false,
+          "reason": "那是同一節點的所有分支。"
+        },
+        {
+          "choice": "事件的平均值",
+          "truth": false,
+          "reason": "樹狀圖不直接表示平均。"
+        },
+        {
+          "choice": "一定會發生的結果",
+          "truth": false,
+          "reason": "每條路徑只是可能結果之一。"
+        }
+      ],
+      "misconceptionTarget": "把分支或節點與完整結果混淆。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "路徑需走到末端才完整。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：理解路徑意義",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "理解路徑意義",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "6fd0e43cc2d884b64872f7c0e4ebdd8759eb9a7d2ce1514d09cc718f0cda4e3d"
+    },
+    {
+      "questionId": "u22-s012-v004",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "第一階段結果A、B的機率分別為1/3、2/3；從A後成功機率1/2。走「A且成功」路徑的機率為何？",
+      "text": "第一階段結果A、B的機率分別為1/3、2/3；從A後成功機率1/2。走「A且成功」路徑的機率為何？",
+      "givenConditions": [],
+      "target": "計算單一路徑機率",
+      "choices": [
+        "1/3",
+        "1/6",
+        "1/2",
+        "5/6"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "同一路徑機率相乘：(1/3)×(1/2)=1/6。",
+      "explanation": "同一路徑機率相乘：(1/3)×(1/2)=1/6。",
+      "steps": [
+        "沿路取兩個分支機率。",
+        "相乘。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/3",
+          "truth": false,
+          "reason": "只取第一段機率。"
+        },
+        {
+          "choice": "1/6",
+          "truth": true,
+          "reason": "正確。獨立重算：同一路徑機率相乘：(1/3)×(1/2)=1/6。"
+        },
+        {
+          "choice": "1/2",
+          "truth": false,
+          "reason": "只取第二段機率。"
+        },
+        {
+          "choice": "5/6",
+          "truth": false,
+          "reason": "把兩段機率相加。"
+        }
+      ],
+      "misconceptionTarget": "沿路機率用相加。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "第二階段機率是條件於已走到A。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：計算單一路徑機率",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "計算單一路徑機率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "9e085db40992416e21577742c85cc184f97b62b427bd3ebba6d3f20ddd25f6b1"
+    },
+    {
+      "questionId": "u22-s012-v005",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某樹狀圖有三條互斥成功路徑，機率分別1/8、2/8、3/8。成功總機率為何？",
+      "text": "某樹狀圖有三條互斥成功路徑，機率分別1/8、2/8、3/8。成功總機率為何？",
+      "givenConditions": [],
+      "target": "合併多條成功路徑",
+      "choices": [
+        "3/4",
+        "3/8",
+        "5/8",
+        "6/24"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "互斥成功路徑可相加：1/8+2/8+3/8=6/8=3/4。",
+      "explanation": "互斥成功路徑可相加：1/8+2/8+3/8=6/8=3/4。",
+      "steps": [
+        "確認路徑互斥。",
+        "同分母相加。",
+        "約分。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3/4",
+          "truth": true,
+          "reason": "正確。獨立重算：互斥成功路徑可相加：1/8+2/8+3/8=6/8=3/4。"
+        },
+        {
+          "choice": "3/8",
+          "truth": false,
+          "reason": "只取最大路徑。"
+        },
+        {
+          "choice": "5/8",
+          "truth": false,
+          "reason": "漏加一條。"
+        },
+        {
+          "choice": "6/24",
+          "truth": false,
+          "reason": "把分母也相加。"
+        }
+      ],
+      "misconceptionTarget": "加分數時把分母相加。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "三條路徑不能同時發生。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：合併多條成功路徑",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "合併多條成功路徑",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "b2e19c2ddd4d8d0c6c015bfc6caf51d52f517e612498b677601b5bc1b283ccc4"
+    },
+    {
+      "questionId": "u22-s012-v006",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "樹狀圖某節點分出三支，機率標為0.2、0.5、x。x應為多少？",
+      "text": "樹狀圖某節點分出三支，機率標為0.2、0.5、x。x應為多少？",
+      "givenConditions": [],
+      "target": "補齊缺少分支機率",
+      "choices": [
+        "0.7",
+        "1.0",
+        "0.3",
+        "0.15"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "同一節點所有分支機率總和為1，所以x=1-0.2-0.5=0.3。",
+      "explanation": "同一節點所有分支機率總和為1，所以x=1-0.2-0.5=0.3。",
+      "steps": [
+        "分支總和1。",
+        "相減。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.7",
+          "truth": false,
+          "reason": "把前兩支相減。"
+        },
+        {
+          "choice": "1.0",
+          "truth": false,
+          "reason": "忽略前兩支。"
+        },
+        {
+          "choice": "0.3",
+          "truth": true,
+          "reason": "正確。獨立重算：同一節點所有分支機率總和為1，所以x=1-0.2-0.5=0.3。"
+        },
+        {
+          "choice": "0.15",
+          "truth": false,
+          "reason": "把0.2×0.5。"
+        }
+      ],
+      "misconceptionTarget": "把同層分支機率相乘。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "三支涵蓋該節點後所有結果。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：補齊缺少分支機率",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "補齊缺少分支機率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "75a9fb97087992bb883a4e23fbcb847d2b0e1d48678342040977abf81ea8774a"
+    },
+    {
+      "questionId": "u22-s012-v007",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "兩階段樹狀圖中，第一層3支，每一支第二層的分支數分別為2、1、4。完整路徑共有幾條？",
+      "text": "兩階段樹狀圖中，第一層3支，每一支第二層的分支數分別為2、1、4。完整路徑共有幾條？",
+      "givenConditions": [],
+      "target": "計算不規則樹狀圖末端",
+      "choices": [
+        "6",
+        "9",
+        "24",
+        "7"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "各第一層分支末端數相加：2+1+4=7條。",
+      "explanation": "各第一層分支末端數相加：2+1+4=7條。",
+      "steps": [
+        "分別數每個子樹末端。",
+        "相加7。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "把3×2，忽略分支數不相同。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "把3×平均3。"
+        },
+        {
+          "choice": "24",
+          "truth": false,
+          "reason": "把2×1×4再乘3。"
+        },
+        {
+          "choice": "7",
+          "truth": true,
+          "reason": "正確。獨立重算：各第一層分支末端數相加：2+1+4=7條。"
+        }
+      ],
+      "misconceptionTarget": "分支數不均時仍直接用固定乘法。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "第一層三個子樹互斥。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：計算不規則樹狀圖末端",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "計算不規則樹狀圖末端",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "bbffe2e2ae7df7063824917602c7b552bd783ed996b037c095d562a1ef5e5603"
+    },
+    {
+      "questionId": "u22-s012-v008",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某樹狀圖兩條事件E路徑機率為1/4與1/6，其他路徑不屬E。P(E)是多少？",
+      "text": "某樹狀圖兩條事件E路徑機率為1/4與1/6，其他路徑不屬E。P(E)是多少？",
+      "givenConditions": [],
+      "target": "從樹狀圖加總事件機率",
+      "choices": [
+        "2/10",
+        "5/12",
+        "1/24",
+        "7/12"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "1/4+1/6=3/12+2/12=5/12。",
+      "explanation": "1/4+1/6=3/12+2/12=5/12。",
+      "steps": [
+        "找事件E的所有末端。",
+        "通分相加。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2/10",
+          "truth": false,
+          "reason": "分子分母直接相加。"
+        },
+        {
+          "choice": "5/12",
+          "truth": true,
+          "reason": "正確。獨立重算：1/4+1/6=3/12+2/12=5/12。"
+        },
+        {
+          "choice": "1/24",
+          "truth": false,
+          "reason": "把互斥路徑相乘。"
+        },
+        {
+          "choice": "7/12",
+          "truth": false,
+          "reason": "通分後分子算錯。"
+        }
+      ],
+      "misconceptionTarget": "事件跨多路徑時誤用乘法。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "兩條完整路徑互斥。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：從樹狀圖加總事件機率",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "從樹狀圖加總事件機率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "f4ed4b00bc91f9535915c6ab17d6f178f53ad3d97f0c1ad55747efa8bb5687bd"
+    },
+    {
+      "questionId": "u22-s012-v009",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "樹狀圖中一條路徑標示機率2/5、3/4、1/2。該路徑機率為何？",
+      "text": "樹狀圖中一條路徑標示機率2/5、3/4、1/2。該路徑機率為何？",
+      "givenConditions": [],
+      "target": "計算三階段路徑",
+      "choices": [
+        "6/11",
+        "3/10",
+        "3/20",
+        "7/8"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "沿路相乘：(2/5)(3/4)(1/2)=6/40=3/20。",
+      "explanation": "沿路相乘：(2/5)(3/4)(1/2)=6/40=3/20。",
+      "steps": [
+        "三段相乘。",
+        "約分。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6/11",
+          "truth": false,
+          "reason": "分子分母分別相加。"
+        },
+        {
+          "choice": "3/10",
+          "truth": false,
+          "reason": "漏乘1/2。"
+        },
+        {
+          "choice": "3/20",
+          "truth": true,
+          "reason": "正確。獨立重算：沿路相乘：(2/5)(3/4)(1/2)=6/40=3/20。"
+        },
+        {
+          "choice": "7/8",
+          "truth": false,
+          "reason": "相加後錯誤。"
+        }
+      ],
+      "misconceptionTarget": "多階段路徑漏乘一層。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "每一標示為到達該節點後的分支機率。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：計算三階段路徑",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "計算三階段路徑",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "5c388b2ad598080a276b2855dba1d6dce3a3a6a6e5f4722a04f82ed60a6aaa11"
+    },
+    {
+      "questionId": "u22-s012-v010",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "餐廳套餐先選主餐（飯、麵），再選飲料（茶、果汁、水）。樹狀圖要列出多少種套餐？",
+      "text": "餐廳套餐先選主餐（飯、麵），再選飲料（茶、果汁、水）。樹狀圖要列出多少種套餐？",
+      "givenConditions": [],
+      "target": "在套餐情境建立樹狀圖",
+      "choices": [
+        "5種",
+        "3種",
+        "8種",
+        "6種"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "每種主餐可配3種飲料，共2×3=6種。",
+      "explanation": "每種主餐可配3種飲料，共2×3=6種。",
+      "steps": [
+        "第一層2主餐。",
+        "每支3飲料。",
+        "末端6。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5種",
+          "truth": false,
+          "reason": "把2與3相加。"
+        },
+        {
+          "choice": "3種",
+          "truth": false,
+          "reason": "只看飲料。"
+        },
+        {
+          "choice": "8種",
+          "truth": false,
+          "reason": "誤認每層都有4支。"
+        },
+        {
+          "choice": "6種",
+          "truth": true,
+          "reason": "正確。獨立重算：每種主餐可配3種飲料，共2×3=6種。"
+        }
+      ],
+      "misconceptionTarget": "樹狀圖計數使用加法。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "每一主餐都可搭配三種飲料。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：在套餐情境建立樹狀圖",
+      "literacyContextNecessity": "菜單組合需要完整列出每條選擇路徑，避免漏項。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "在套餐情境建立樹狀圖",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "c9a28d743dddaf655e2578ad8ffdf34aab274b6c6fc3c855b7cd65874ff23a51"
+    },
+    {
+      "questionId": "u22-s012-v011",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某檢測先判定「通過或未通過」，未通過才再分「可修或報廢」。完整結果有幾種？",
+      "text": "某檢測先判定「通過或未通過」，未通過才再分「可修或報廢」。完整結果有幾種？",
+      "givenConditions": [],
+      "target": "建立條件式不規則樹",
+      "choices": [
+        "2種",
+        "3種",
+        "4種",
+        "6種"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "通過是一個末端；未通過分成可修與報廢兩末端，共3種。",
+      "explanation": "通過是一個末端；未通過分成可修與報廢兩末端，共3種。",
+      "steps": [
+        "畫第一層兩支。",
+        "只在未通過支繼續分。",
+        "數末端3。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2種",
+          "truth": false,
+          "reason": "漏掉未通過後的兩種分流之一。"
+        },
+        {
+          "choice": "3種",
+          "truth": true,
+          "reason": "正確。獨立重算：通過是一個末端；未通過分成可修與報廢兩末端，共3種。"
+        },
+        {
+          "choice": "4種",
+          "truth": false,
+          "reason": "誤以為通過也要再分。"
+        },
+        {
+          "choice": "6種",
+          "truth": false,
+          "reason": "把不適用的分支也展開。"
+        }
+      ],
+      "misconceptionTarget": "每個分支都機械地延伸相同層數。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "通過後試驗停止。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：建立條件式不規則樹",
+      "literacyContextNecessity": "流程圖必須反映「只有未通過才續判」的條件。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "建立條件式不規則樹",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "8e6134aec46cca0cef363cc44628c5ccb7695be80727cdad64649ec616c5fb6d"
+    },
+    {
+      "questionId": "u22-s012-v012",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "抽球樹狀圖如圖：第一次紅機率2/3、藍1/3；若第一次紅，第二次成功1/4；若第一次藍，第二次成功1/2。成功機率為何？",
+      "text": "抽球樹狀圖如圖：第一次紅機率2/3、藍1/3；若第一次紅，第二次成功1/4；若第一次藍，第二次成功1/2。成功機率為何？",
+      "givenConditions": [],
+      "target": "從帶機率樹狀圖求總成功率",
+      "choices": [
+        "1/3",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "成功有兩條互斥路徑：(2/3)(1/4)+(1/3)(1/2)=1/6+1/6=1/3。",
+      "explanation": "成功有兩條互斥路徑：(2/3)(1/4)+(1/3)(1/2)=1/6+1/6=1/3。",
+      "steps": [
+        "算紅且成功1/6。",
+        "算藍且成功1/6。",
+        "相加1/3。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/3",
+          "truth": true,
+          "reason": "正確。獨立重算：成功有兩條互斥路徑：(2/3)(1/4)+(1/3)(1/2)=1/6+1/6=1/3。"
+        },
+        {
+          "choice": "1/4",
+          "truth": false,
+          "reason": "只看紅色路徑的條件成功率。"
+        },
+        {
+          "choice": "1/2",
+          "truth": false,
+          "reason": "只看藍色路徑的條件成功率。"
+        },
+        {
+          "choice": "3/4",
+          "truth": false,
+          "reason": "把兩個條件成功率相加。"
+        }
+      ],
+      "misconceptionTarget": "只選一條成功路徑或直接加條件機率。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "兩個第一階段結果涵蓋全部且互斥。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：從帶機率樹狀圖求總成功率",
+      "literacyContextNecessity": "分流後成功率不同，樹狀圖能正確加權。",
+      "visualMode": "figure",
+      "figureId": "fig-u22-tree-conditional",
+      "drawingSpecReference": "fig-u22-tree-conditional",
+      "authoringIntent": "從帶機率樹狀圖求總成功率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "03812f3eb5841e782c53e191635b6178e746924992a2c2a851e6cc488a490904"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u22-s012-cr001",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "盒中先隨機選一張A或B卡，機率分別為1/3、2/3。選A後成功機率1/2；選B後成功機率1/4。畫出或文字列出樹狀圖，求成功機率。",
+      "requiredWork": [
+        "列第一層A、B及機率。",
+        "列條件成功分支。",
+        "沿路相乘再加總成功路徑。"
+      ],
+      "standardSolution": [
+        "A且成功=(1/3)(1/2)=1/6。",
+        "B且成功=(2/3)(1/4)=1/6。",
+        "成功機率=1/6+1/6=1/3。"
+      ],
+      "reasoningSteps": [
+        "A且成功=(1/3)(1/2)=1/6。",
+        "B且成功=(2/3)(1/4)=1/6。",
+        "成功機率=1/6+1/6=1/3。"
+      ],
+      "alternativeMethods": [
+        "可用全機率的分組概念直接列兩條互斥成功路徑。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "樹狀分支、兩路乘積與總和1/3完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "只有一條路徑乘積算錯，但結構與加總方式正確。"
+        },
+        {
+          "score": 1,
+          "criteria": "能正確列出兩條成功路徑，至少一條乘積正確。"
+        },
+        {
+          "score": 0,
+          "criteria": "把所有分支機率直接相加或漏掉一條成功路徑。"
+        }
+      ],
+      "partialCreditRules": [
+        "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
+        "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
+      ],
+      "followThroughPolicy": "若第一處分數乘法錯，後續依錯值正確加總可保留方法分，最高2分。",
+      "unitNotationRules": "無特殊單位；分數須可辨識且機率介於0與1。",
+      "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
+      "commonErrors": [
+        "沿路相加。",
+        "把B成功仍用1/2。",
+        "只算A路徑。"
+      ],
+      "visualMode": "figure",
+      "figureId": "fig-u22-tree-conditional",
+      "drawingSpecReference": "fig-u22-tree-conditional",
+      "independentReview": {
+        "recomputedResult": "A且成功=(1/3)(1/2)=1/6。；B且成功=(2/3)(1/4)=1/6。；成功機率=1/6+1/6=1/3。",
+        "alternativeMethodCheck": "可用全機率的分組概念直接列兩條互斥成功路徑。",
+        "ambiguityBoundaryCheck": "題目所需規則、母體、抽取方式、端點與單位均已明示；評分規準依本題步驟逐項核對。",
+        "rubricSpecificity": "pass",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "69b4f6683f732d24c60af0a8a631f329bcbd41742b256214844640edf606f46f"
+    },
+    {
+      "questionId": "u22-s012-cr002",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-tree-basic",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "袋中2紅1藍，不放回抽兩球。以樹狀圖求兩球同色的機率，並說明第二層分母為何改變。",
+      "requiredWork": [
+        "列第一抽紅或藍。",
+        "依不放回更新第二層。",
+        "加總同色路徑。"
+      ],
+      "standardSolution": [
+        "紅紅機率=(2/3)(1/2)=1/3。",
+        "藍藍路徑不可能，因只有1顆藍球。",
+        "同色機率=1/3；第二抽只剩2顆球，所以分母由3變2。"
+      ],
+      "reasoningSteps": [
+        "紅紅機率=(2/3)(1/2)=1/3。",
+        "藍藍路徑不可能，因只有1顆藍球。",
+        "同色機率=1/3；第二抽只剩2顆球，所以分母由3變2。"
+      ],
+      "alternativeMethods": [
+        "也可列有標號球R1、R2、B的6個有序結果，同色有R1R2、R2R1，共2/6=1/3。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整樹狀條件、1/3與分母變化解釋均正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "機率正確但未說明藍藍不可能或分母改變。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道不放回並算出紅紅路徑。"
+        },
+        {
+          "score": 0,
+          "criteria": "第二抽仍用原比例或把藍藍列為正機率。"
+        }
+      ],
+      "partialCreditRules": [
+        "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
+        "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
+      ],
+      "followThroughPolicy": "列舉有標號球且結果完整可滿分。",
+      "unitNotationRules": "無特殊單位；分數須可辨識且機率介於0與1。",
+      "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
+      "commonErrors": [
+        "第二抽仍用2/3。",
+        "把紅紅算4/9。",
+        "以顏色兩種判1/2。"
+      ],
+      "visualMode": "figure",
+      "figureId": "fig-u22-tree-without-replacement",
+      "drawingSpecReference": "fig-u22-tree-without-replacement",
+      "independentReview": {
+        "recomputedResult": "紅紅機率=(2/3)(1/2)=1/3。；藍藍路徑不可能，因只有1顆藍球。；同色機率=1/3；第二抽只剩2顆球，所以分母由3變2。",
+        "alternativeMethodCheck": "也可列有標號球R1、R2、B的6個有序結果，同色有R1R2、R2R1，共2/6=1/3。",
+        "ambiguityBoundaryCheck": "題目所需規則、母體、抽取方式、端點與單位均已明示；評分規準依本題步驟逐項核對。",
+        "rubricSpecificity": "pass",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "b64b2393a20943b5c7554247282ead8be797fb1c63c347d4e1439e8386bd5cc0"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u22-s012-v001",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "2c2ac0af8c82e4c68b34f998c09e6d73b498e0d826acfa04632c326c353f05ce",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "第一階段是硬幣，只可能正面或反面，因此第一層2個分支。",
+      "derivedAnswer": "2",
+      "storedAnswer": "2",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「2」；其餘選項逐項排除：「6」：這是第二階段骰子分支數。；「8」：把兩階段分支相加。；「12」：這是最終路徑數。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「辨識樹狀圖層次」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "硬幣有兩面且結果完整。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把後續結果也畫在第一層。」不會形成第二正解。"
+      },
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：辨識樹狀圖層次",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「先擲硬幣再擲骰子，樹狀圖第一層應有幾個分支？」；獨立解法「第一階段是硬幣，只可能正面或反面，因此第一層2個分支。」；四選項真值為假,假,假,真。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v002",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "8d675e940f0679e912b17742ee8da4433d4d7b908c8efce3f3c780060c1d6c78",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "每個第一層分支再分2支，共2×2=4條完整路徑。",
+      "derivedAnswer": "4",
+      "storedAnswer": "4",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「4」；其餘選項逐項排除：「2」：只算第一層。；「6」：把分支數相加。；「8」：多乘一次2。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「計算完整路徑數」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "兩階段每一步選項數固定。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「用加法代替乘法計數。」不會形成第二正解。"
+      },
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：計算完整路徑數",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「先選紅或藍，再選大或小。若每一步都有兩種結果，樹狀圖共有幾條完整路徑？」；獨立解法「每個第一層分支再分2支，共2×2=4條完整路徑。」；四選項真值為假,假,真,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v003",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "6fd0e43cc2d884b64872f7c0e4ebdd8759eb9a7d2ce1514d09cc718f0cda4e3d",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "從根節點沿每一階段走到末端，記錄一次試驗所有階段的結果。",
+      "derivedAnswer": "一次多階段試驗的完整結果",
+      "storedAnswer": "一次多階段試驗的完整結果",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「一次多階段試驗的完整結果」；其餘選項逐項排除：「單一階段的所有結果」：那是同一節點的所有分支。；「事件的平均值」：樹狀圖不直接表示平均。；「一定會發生的結果」：每條路徑只是可能結果之一。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「理解路徑意義」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "路徑需走到末端才完整。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把分支或節點與完整結果混淆。」不會形成第二正解。"
+      },
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：理解路徑意義",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「樹狀圖的一條完整路徑代表什麼？」；獨立解法「從根節點沿每一階段走到末端，記錄一次試驗所有階段的結果。」；四選項真值為真,假,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v004",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "9e085db40992416e21577742c85cc184f97b62b427bd3ebba6d3f20ddd25f6b1",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "同一路徑機率相乘：(1/3)×(1/2)=1/6。",
+      "derivedAnswer": "1/6",
+      "storedAnswer": "1/6",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「1/6」；其餘選項逐項排除：「1/3」：只取第一段機率。；「1/2」：只取第二段機率。；「5/6」：把兩段機率相加。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「計算單一路徑機率」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "第二階段機率是條件於已走到A。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「沿路機率用相加。」不會形成第二正解。"
+      },
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：計算單一路徑機率",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「第一階段結果A、B的機率分別為1/3、2/3；從A後成功機率1/2。走「A且成功」路徑的機率為何？」；獨立解法「同一路徑機率相乘：(1/3)×(1/2)=1/6。」；四選項真值為假,真,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v005",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "b2e19c2ddd4d8d0c6c015bfc6caf51d52f517e612498b677601b5bc1b283ccc4",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "互斥成功路徑可相加：1/8+2/8+3/8=6/8=3/4。",
+      "derivedAnswer": "3/4",
+      "storedAnswer": "3/4",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「3/4」；其餘選項逐項排除：「3/8」：只取最大路徑。；「5/8」：漏加一條。；「6/24」：把分母也相加。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「合併多條成功路徑」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "三條路徑不能同時發生。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「加分數時把分母相加。」不會形成第二正解。"
+      },
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：合併多條成功路徑",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某樹狀圖有三條互斥成功路徑，機率分別1/8、2/8、3/8。成功總機率為何？」；獨立解法「互斥成功路徑可相加：1/8+2/8+3/8=6/8=3/4。」；四選項真值為真,假,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v006",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "75a9fb97087992bb883a4e23fbcb847d2b0e1d48678342040977abf81ea8774a",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "同一節點所有分支機率總和為1，所以x=1-0.2-0.5=0.3。",
+      "derivedAnswer": "0.3",
+      "storedAnswer": "0.3",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「0.3」；其餘選項逐項排除：「0.7」：把前兩支相減。；「1.0」：忽略前兩支。；「0.15」：把0.2×0.5。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「補齊缺少分支機率」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "三支涵蓋該節點後所有結果。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「把同層分支機率相乘。」不會形成第二正解。"
+      },
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：補齊缺少分支機率",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「樹狀圖某節點分出三支，機率標為0.2、0.5、x。x應為多少？」；獨立解法「同一節點所有分支機率總和為1，所以x=1-0.2-0.5=0.3。」；四選項真值為假,假,真,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v007",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "bbffe2e2ae7df7063824917602c7b552bd783ed996b037c095d562a1ef5e5603",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "各第一層分支末端數相加：2+1+4=7條。",
+      "derivedAnswer": "7",
+      "storedAnswer": "7",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「7」；其餘選項逐項排除：「6」：把3×2，忽略分支數不相同。；「9」：把3×平均3。；「24」：把2×1×4再乘3。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「計算不規則樹狀圖末端」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "第一層三個子樹互斥。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「分支數不均時仍直接用固定乘法。」不會形成第二正解。"
+      },
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：計算不規則樹狀圖末端",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「兩階段樹狀圖中，第一層3支，每一支第二層的分支數分別為2、1、4。完整路徑共有幾條？」；獨立解法「各第一層分支末端數相加：2+1+4=7條。」；四選項真值為假,假,假,真。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v008",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "f4ed4b00bc91f9535915c6ab17d6f178f53ad3d97f0c1ad55747efa8bb5687bd",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "1/4+1/6=3/12+2/12=5/12。",
+      "derivedAnswer": "5/12",
+      "storedAnswer": "5/12",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「5/12」；其餘選項逐項排除：「2/10」：分子分母直接相加。；「1/24」：把互斥路徑相乘。；「7/12」：通分後分子算錯。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「從樹狀圖加總事件機率」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "兩條完整路徑互斥。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「事件跨多路徑時誤用乘法。」不會形成第二正解。"
+      },
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：從樹狀圖加總事件機率",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某樹狀圖兩條事件E路徑機率為1/4與1/6，其他路徑不屬E。P(E)是多少？」；獨立解法「1/4+1/6=3/12+2/12=5/12。」；四選項真值為假,真,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v009",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "5c388b2ad598080a276b2855dba1d6dce3a3a6a6e5f4722a04f82ed60a6aaa11",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "沿路相乘：(2/5)(3/4)(1/2)=6/40=3/20。",
+      "derivedAnswer": "3/20",
+      "storedAnswer": "3/20",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「3/20」；其餘選項逐項排除：「6/11」：分子分母分別相加。；「3/10」：漏乘1/2。；「7/8」：相加後錯誤。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「計算三階段路徑」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "每一標示為到達該節點後的分支機率。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「多階段路徑漏乘一層。」不會形成第二正解。"
+      },
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：計算三階段路徑",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「樹狀圖中一條路徑標示機率2/5、3/4、1/2。該路徑機率為何？」；獨立解法「沿路相乘：(2/5)(3/4)(1/2)=6/40=3/20。」；四選項真值為假,假,真,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v010",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "c9a28d743dddaf655e2578ad8ffdf34aab274b6c6fc3c855b7cd65874ff23a51",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "每種主餐可配3種飲料，共2×3=6種。",
+      "derivedAnswer": "6種",
+      "storedAnswer": "6種",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「6種」；其餘選項逐項排除：「5種」：把2與3相加。；「3種」：只看飲料。；「8種」：誤認每層都有4支。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「在套餐情境建立樹狀圖」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "每一主餐都可搭配三種飲料。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「樹狀圖計數使用加法。」不會形成第二正解。"
+      },
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：在套餐情境建立樹狀圖",
+      "literacyContextNecessity": "菜單組合需要完整列出每條選擇路徑，避免漏項。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「餐廳套餐先選主餐（飯、麵），再選飲料（茶、果汁、水）。樹狀圖要列出多少種套餐？」；獨立解法「每種主餐可配3種飲料，共2×3=6種。」；四選項真值為假,假,假,真。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v011",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "8e6134aec46cca0cef363cc44628c5ccb7695be80727cdad64649ec616c5fb6d",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "通過是一個末端；未通過分成可修與報廢兩末端，共3種。",
+      "derivedAnswer": "3種",
+      "storedAnswer": "3種",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「3種」；其餘選項逐項排除：「2種」：漏掉未通過後的兩種分流之一。；「4種」：誤以為通過也要再分。；「6種」：把不適用的分支也展開。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「建立條件式不規則樹」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "通過後試驗停止。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「每個分支都機械地延伸相同層數。」不會形成第二正解。"
+      },
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：建立條件式不規則樹",
+      "literacyContextNecessity": "流程圖必須反映「只有未通過才續判」的條件。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某檢測先判定「通過或未通過」，未通過才再分「可修或報廢」。完整結果有幾種？」；獨立解法「通過是一個末端；未通過分成可修與報廢兩末端，共3種。」；四選項真值為假,真,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    },
+    {
+      "questionId": "u22-s012-v012",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "contentSha256": "03812f3eb5841e782c53e191635b6178e746924992a2c2a851e6cc488a490904",
+      "reviewVersion": "human-semantic-review-u22-r1.0",
+      "independentSolution": "成功有兩條互斥路徑：(2/3)(1/4)+(1/3)(1/2)=1/6+1/6=1/3。",
+      "derivedAnswer": "1/3",
+      "storedAnswer": "1/3",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "獨立重算得到「1/3」；其餘選項逐項排除：「1/4」：只看紅色路徑的條件成功率。；「1/2」：只看藍色路徑的條件成功率。；「3/4」：把兩個條件成功率相加。",
+        "undefinedSymbol": "題幹術語均已在「樹狀圖基本」講義定義；實際目標為「從帶機率樹狀圖求總成功率」。",
+        "unitConflict": "不涉及單位換算；各數值在同一表示基準下。",
+        "roundingConflict": "使用精確值，不需四捨五入。",
+        "domainBoundary": "兩個第一階段結果涵蓋全部且互斥。",
+        "alternateReading": "已依題幹的排序、端點、放回、等可能或抽樣條件重新解讀；誤解「只選一條成功路徑或直接加條件機率。」不會形成第二正解。"
+      },
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：從帶機率樹狀圖求總成功率",
+      "literacyContextNecessity": "分流後成功率不同，樹狀圖能正確加權。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-complement。",
+      "languageCheck": "繁體中文用語與臺灣國中統計機率慣例一致；必要端點及條件均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「抽球樹狀圖如圖：第一次紅機率2/3、藍1/3；若第一次紅，第二次成功1/4；若第一次藍，第二次成功1/2。成功機率為何？」；獨立解法「成功有兩條互斥路徑：(2/3)(1/4)+(1/3)(1/2)=1/6+1/6=1/3。」；四選項真值為真,假,假,假。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewedAt": "2026-07-12"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u22-tree-conditional",
+      "unitId": "u22",
+      "skillId": "probability-tree-basic",
+      "drawingPurpose": "支援條件分支沿路相乘與跨成功路徑相加。",
+      "canvas": {
+        "width": 820,
+        "height": 400
+      },
+      "viewBox": "0 0 820 400",
+      "coordinateSystem": "SVG pixels; origin at upper-left; x increases right and y increases down.",
+      "layoutConstraints": [
+        "起點",
+        "第一層A與B分支及機率",
+        "第二層成功與失敗分支",
+        "A成功與B成功路徑醒目框",
+        "各葉節點路徑乘積"
+      ],
+      "visibleLineRules": "All mathematical boundaries and axes use solid black lines; helper gridlines, when present, are lighter and never encode an answer by color.",
+      "hiddenLineRules": "No hidden geometric lines are needed. Dashed lines are used only for explicitly labelled statistical fences.",
+      "labelsAndPositions": "Labels are placed adjacent to their corresponding points, branches, sectors or groups with at least 14 px text.",
+      "tickMarksUnitsArrowsSymbols": "Axes include labelled ticks and units where applicable; tree branches show exact fractions; arrowheads do not replace numeric labels.",
+      "toScale": false,
+      "visualInferenceWarning": "Not to scale. Branch length and angle do not represent probability; use the fraction labels.",
+      "altText": "兩階段樹狀圖，第一層A機率三分之一、B機率三分之二；A後成功二分之一，B後成功四分之一。",
+      "svgTitle": "支援條件分支沿路相乘與跨成功路徑相加。",
+      "svgDescription": "兩階段樹狀圖，第一層A機率三分之一、B機率三分之二；A後成功二分之一，B後成功四分之一。",
+      "mobileReadabilityReview": "Reviewed at 360 CSS px width; minimum label size remains legible and no labels overlap critical marks.",
+      "answerLeakageReview": "The figure contains only data explicitly supplied by its associated prompt or lecture example; it does not mark a multiple-choice option as correct.",
+      "geometryTokenAssertions": {
+        "rootSum": 1,
+        "aChildSum": 1,
+        "bChildSum": 1,
+        "successTotal": "1/3"
+      },
+      "manualVisualInspection": "pass; rendered PNG inspected for clipping, label overlap, scale consistency and mathematical placement.",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ]
+};

@@ -1,0 +1,205 @@
+{
+  "lectureId": "u04-s003-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-basics",
+  "skillId": "system-solution-meaning",
+  "lockedSkillTitle": "聯立方程式解的意義",
+  "title": "聯立方程式解的意義：同一組數要同時滿足兩個條件",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "聯立方程式解的意義",
+    "scope": "理解聯立方程式的解必須同時滿足兩個方程式。"
+  },
+  "prerequisiteBridge": "先備技能 system-ordered-pair-solution-check 已建立必要基礎；本節將其用於「理解聯立方程式的解必須同時滿足兩個方程式。」",
+  "learningGoals": [
+    "理解大括號內兩式必須同時成立。",
+    "能檢驗一個有序數對是否為聯立方程式的解。",
+    "能由共同解反求參數。",
+    "能辨別只滿足其中一式不算解。"
+  ],
+  "vocabulary": [
+    {
+      "term": "聯立方程式",
+      "definition": "把兩個含相同未知數的方程式一起考慮。"
+    },
+    {
+      "term": "共同解",
+      "definition": "同時滿足所有方程式的有序數對。"
+    },
+    {
+      "term": "條件",
+      "definition": "每一個方程式代表一項限制。"
+    },
+    {
+      "term": "參數",
+      "definition": "題目中待由條件確定的字母常數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "{…",
+      "meaning": "大括號表示方程式要同時成立。"
+    },
+    {
+      "symbol": "(x,y)=(a,b)",
+      "meaning": "表示共同解為 x=a、y=b。"
+    }
+  ],
+  "conceptDevelopment": [
+    "單一方程式像一個條件，通常容許許多數對；兩個條件同時套用後，可能剩一組、沒有或仍有很多組。",
+    "檢驗共同解時，必須把同一組 x、y 分別代入兩式。",
+    "若題目說某數對是解，就能把它代入每一式，反求其中的未知參數。"
+  ],
+  "definitions": [
+    {
+      "name": "聯立方程式的解",
+      "statement": "同時使聯立中每個方程式成立的有序數對。"
+    },
+    {
+      "name": "只滿足一式",
+      "statement": "不具備共同解資格。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "共同解集合＝各方程式解集合的共同部分",
+      "conditions": [
+        "本單元以語意理解，不使用高中集合符號運算。"
+      ],
+      "meaning": "強調同時滿足。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能分別用不同的數對滿足兩式。",
+    "不能只檢查較簡單的一式。",
+    "參數反求時，每一式給出的參數條件都要一致。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "寫出候選 x、y",
+      "check": "保持同一組數。"
+    },
+    {
+      "step": 2,
+      "instruction": "代入第一式",
+      "check": "計算並記錄是否成立。"
+    },
+    {
+      "step": 3,
+      "instruction": "代入第二式",
+      "check": "重新計算。"
+    },
+    {
+      "step": 4,
+      "instruction": "兩式都成立才接受",
+      "check": "任一式不成立就排除。"
+    },
+    {
+      "step": 5,
+      "instruction": "需要時解參數",
+      "check": "利用成立的等式求參數。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 (2,1) 是否為 x+y=3、2x-y=3 的共同解。",
+      "solutionSteps": [
+        "第一式 2+1=3。",
+        "第二式 4-1=3。"
+      ],
+      "answer": "是共同解。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "判斷 (1,2) 是否為同一聯立的解。",
+      "solutionSteps": [
+        "第一式成立。",
+        "第二式 2-2=0≠3。"
+      ],
+      "answer": "不是共同解。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "已知 (3,-1) 為 x+ay=5 的解，求 a。",
+      "solutionSteps": [
+        "代入 3-a=5。",
+        "-a=2。"
+      ],
+      "answer": "a=-2。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "若 (p,q) 同時滿足 p+q=8 與 p-q=2，說明兩式提供的資訊。",
+      "solutionSteps": [
+        "第一式限制總和。",
+        "第二式限制差。",
+        "同一組 p、q 必須兼顧兩者。"
+      ],
+      "answer": "共同解同時符合總和 8、差 2。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "兩式各找一組不同的解",
+      "correction": "聯立要求同一組數。"
+    },
+    {
+      "mistake": "第一式成立就停止",
+      "correction": "仍需檢查第二式。"
+    },
+    {
+      "mistake": "把參數當成第三個未知數任意變動",
+      "correction": "參數在同一題中是固定數。"
+    },
+    {
+      "mistake": "誤認無法立刻看出就代表無解",
+      "correction": "需要用解法或檢驗判斷。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "(2,2) 是否同時滿足 x+y=4、x-y=0？",
+      "answer": "是。"
+    },
+    {
+      "prompt": "(4,0) 呢？",
+      "answer": "只滿足第一式，不是共同解。"
+    },
+    {
+      "prompt": "共同解可用兩組不同數代入兩式嗎？",
+      "answer": "不可以。"
+    },
+    {
+      "prompt": "已知解能做什麼？",
+      "answer": "可代入每一式檢驗或反求參數。"
+    }
+  ],
+  "summary": [
+    "聯立方程式的解必須同時滿足全部方程式。",
+    "檢驗時同一組數要代入兩式。",
+    "只滿足一式不算共同解。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-ordered-pair-solution-check 已建立必要基礎；本節將其用於「理解聯立方程式的解必須同時滿足兩個方程式。」",
+    "next": "下一技能「代入消去法」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "檢查了「同一組數」這個核心語意，示例包含只滿足一式的反例與參數反求；未使用圖形交點或矩陣等後續知識。",
+    "reviewNote": "檢查了「同一組數」這個核心語意，示例包含只滿足一式的反例與參數反求；未使用圖形交點或矩陣等後續知識。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "79e30672d7335b1aa1ac0cdf7d2d3f7765f7a788906cdd6d4bb37903dd7c2de6"
+}

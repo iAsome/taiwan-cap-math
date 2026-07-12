@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U09 drawing specification",
+  "type": "object",
+  "required": [
+    "drawingSpecId",
+    "figureId",
+    "file",
+    "canvas",
+    "coordinateSystem",
+    "elements",
+    "scale",
+    "altText",
+    "mobileReadability",
+    "answerLeakage",
+    "assertions",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    "assertions": {
+      "type": "array",
+      "minItems": 3
+    }
+  }
+}

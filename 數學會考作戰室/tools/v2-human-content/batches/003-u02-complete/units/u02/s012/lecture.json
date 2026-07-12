@@ -1,0 +1,226 @@
+{
+  "lectureId": "u02-s012-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-fraction-ops",
+  "skillId": "fraction-complex-fraction-basic",
+  "title": "繁分數基本化簡：把主分數線讀成除法，分層處理上下運算",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認繁分數的主分數線。",
+    "能把繁分數改寫成分數除法。",
+    "能先化簡分子與分母再做最後除法。",
+    "能處理一層或兩層的基本繁分數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "fraction-mixed-number",
+      "requiredLevel": "能把帶分數轉假分數並完成分數的乘法和除法。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "繁分數",
+      "definition": "分子或分母本身含分數的分數式。"
+    },
+    {
+      "term": "主分數線",
+      "definition": "最外層、分隔整個分子與分母的分數線。"
+    },
+    {
+      "term": "分子區",
+      "definition": "主分數線上方的完整算式。"
+    },
+    {
+      "term": "分母區",
+      "definition": "主分數線下方的完整算式。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(a/b)/(c/d)",
+      "meaning": "表示a/b÷c/d。"
+    }
+  ],
+  "conceptNarrative": [
+    "主分數線代表上方整體除以下方整體。",
+    "若上下含加減，先各自化簡；最後才把主分數線改成乘倒數。",
+    "可使用同乘上下各分母最小公倍數的方法清除小分母，但本節以基本乘倒數為主。",
+    "分母區最後結果不得為0。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "繁分數",
+      "statement": "分子或分母至少一方含分數的分數。"
+    },
+    {
+      "name": "主除法",
+      "statement": "整個分子值除以整個分母值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(a/b)/(c/d)=ad/bc",
+      "conditions": [
+        "b、c、d非0"
+      ],
+      "meaning": "基本繁分數化簡。"
+    }
+  ],
+  "nonApplicableCases": [
+    "分母區等於0時原式無定義。",
+    "不能把所有分子相乘、所有分母相乘而忽略主除法。",
+    "括號層級不清時必須重寫。",
+    "超出基本多層代數繁分式不在本節範圍。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找最長或最外層主分數線。",
+      "check": "哪些項屬於完整分子與分母？"
+    },
+    {
+      "step": 2,
+      "instruction": "分別算上方與下方。",
+      "check": "括號是否先完成？"
+    },
+    {
+      "step": 3,
+      "instruction": "確認下方不為0。",
+      "check": "除數可否取倒數？"
+    },
+    {
+      "step": 4,
+      "instruction": "改寫成乘倒數並約分。",
+      "check": "倒的是整個分母值。"
+    },
+    {
+      "step": 5,
+      "instruction": "估值或乘回驗算。",
+      "check": "結果大小方向合理嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "(2/5)/(3/10)。",
+      "solutionSteps": [
+        "改寫2/5÷3/10。",
+        "乘10/3並約分。"
+      ],
+      "answer": "4/3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "4/(5/6)。",
+      "solutionSteps": [
+        "4寫成4/1。",
+        "4×6/5。"
+      ],
+      "answer": "24/5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "(1/2+1/3)/(7/6)。",
+      "solutionSteps": [
+        "上方=5/6。",
+        "5/6÷7/6=5/7。"
+      ],
+      "answer": "5/7。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "(3/4)/(1-1/4)。",
+      "solutionSteps": [
+        "下方=3/4。",
+        "同一非零數相除。"
+      ],
+      "answer": "1。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把主分數線當乘號。",
+      "why": "未讀出除法。",
+      "correction": "改寫成上方÷下方。"
+    },
+    {
+      "mistake": "只把分母區其中一項取倒數。",
+      "why": "未把下方視為整體。",
+      "correction": "先算完整分母值。"
+    },
+    {
+      "mistake": "上下含加減卻直接交叉乘。",
+      "why": "省略括號內運算。",
+      "correction": "分別化簡上下。"
+    },
+    {
+      "mistake": "分母區算成0仍繼續。",
+      "why": "忽略除以0。",
+      "correction": "先做定義域檢查。"
+    },
+    {
+      "mistake": "多層繁分數由外向內亂拆。",
+      "why": "未按括號層級。",
+      "correction": "先算最內層或明確括號。"
+    },
+    {
+      "mistake": "結果未約分或未估值。",
+      "why": "算術錯未發現。",
+      "correction": "約分並乘回除數。"
+    }
+  ],
+  "selfCheck": [
+    "主分數線是哪一條？",
+    "分子與分母是否各自化簡？",
+    "分母值是否非0？",
+    "是否只倒除數？",
+    "結果乘回分母是否等於分子？"
+  ],
+  "summary": [
+    "繁分數主線代表除法。",
+    "上下各自先化簡。",
+    "最後除以分母值，即乘其倒數。",
+    "分母區不可為0。"
+  ],
+  "connections": {
+    "previous": "先備技能為 fraction-mixed-number，需能完成其基本判斷與計算。",
+    "next": [
+      "百分率可以寫成分數後參與繁分數。",
+      "基準量反求本質上是部分量除以分率。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s012-v001",
+      "u02-s012-v002",
+      "u02-s012-v003",
+      "u02-s012-v004",
+      "u02-s012-v005",
+      "u02-s012-v006",
+      "u02-s012-v007",
+      "u02-s012-v008",
+      "u02-s012-v009",
+      "u02-s012-v010",
+      "u02-s012-v011",
+      "u02-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s012-cr001",
+      "u02-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四個例題均先獨立計算上下值，再以乘回驗證商；分母非0條件逐題確認，多層範圍限制在國中基本化簡。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "0c8ca3d00254f9491f1aa82b0fb58205c62ad4fc5f187b34e65619e7d75d869c",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

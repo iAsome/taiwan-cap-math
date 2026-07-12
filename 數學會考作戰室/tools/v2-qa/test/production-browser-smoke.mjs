@@ -38,6 +38,8 @@ const profileDir = fs.mkdtempSync(path.join(os.tmpdir(), "math-v2-browser-"));
 const browser = spawn(chrome, [
   "--headless=new",
   "--disable-gpu",
+  "--disable-dev-shm-usage",
+  "--no-sandbox",
   "--no-first-run",
   "--no-default-browser-check",
   "--remote-debugging-port=0",

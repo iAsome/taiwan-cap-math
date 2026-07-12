@@ -1,0 +1,92 @@
+{
+  "unitId": "u19",
+  "batchId": "020-u19-complete",
+  "auditVersion": "central-repair-r1",
+  "auditedAt": "2026-07-12",
+  "sourceArchiveSha256": "8700f78ed356677eab701795202d086403944b0ddcdfcec3ca7aa3191fa0e99e",
+  "decision": "CENTRAL_APPROVED_FOR_AUTHORING_BRANCH_STAGING",
+  "repairedQuestionIds": [
+    "u19-s003-v002",
+    "u19-s007-v001",
+    "u19-s007-v003",
+    "u19-s008-v001",
+    "u19-s009-v003",
+    "u19-s018-v002",
+    "u19-s018-v003",
+    "u19-s006-v011",
+    "u19-s008-v002",
+    "u19-s008-v003",
+    "u19-s009-v002",
+    "u19-s010-v004"
+  ],
+  "actualIssuesFoundAndRepaired": [
+    {
+      "issueId": "U19-CENTRAL-001",
+      "items": [
+        "u19-s004-v004",
+        "u19-s008-v001",
+        "u19-s008-v002",
+        "u19-s008-v003"
+      ],
+      "problem": "弧長與弧長公式兩個 skills 之間存在直接代值與只換數字的同型題。",
+      "repair": "將 s008 的三題改為列式診斷、圓周比例反推，以及直徑半徑和單位錯誤診斷。"
+    },
+    {
+      "issueId": "U19-CENTRAL-002",
+      "items": [
+        "u19-s002-v001",
+        "u19-s002-v003",
+        "u19-s007-v001",
+        "u19-s007-v003"
+      ],
+      "problem": "弧與角以及圓心角與弧的基礎題都直接重複圓心角等於弧、優劣互補。",
+      "repair": "將 s007 改為整圓三區分割與反角辨認，保留技能邊界但改變推理入口。"
+    },
+    {
+      "issueId": "U19-CENTRAL-003",
+      "items": [
+        "u19-s003-v001",
+        "u19-s003-v002",
+        "u19-s009-v002",
+        "u19-s009-v003"
+      ],
+      "problem": "圓內接四邊形與內接角應用出現只換角度的對角互補題，以及和圓周角定理重複的同弧等角題。",
+      "repair": "改為辨認對角、辨認直徑所對的兩個直角，以及結合直徑、三角形內角和與同弧倍角的三步推理。"
+    },
+    {
+      "issueId": "U19-CENTRAL-004",
+      "items": [
+        "u19-s010-v010",
+        "u19-s018-v002",
+        "u19-s004-v011",
+        "u19-s018-v003"
+      ],
+      "problem": "圓素養題重複使用完全相同的 6 m、120° 灑水器，以及半徑 20 m 半圓跑道。",
+      "repair": "改為有 60° 遮蔽的 300° 可用灑水模型，以及直徑 40 m、巡查四分之三圈的圓周比例模型。"
+    },
+    {
+      "issueId": "U19-CENTRAL-005",
+      "items": [
+        "u19-s006-v003",
+        "u19-s006-v011",
+        "u19-s008-v004",
+        "u19-s010-v004"
+      ],
+      "problem": "素養題只是把直徑所對直角加上拱橋背景，且弧長與扇形面積逆推題使用近乎相同資料和選項。",
+      "repair": "拱橋題加入支架長度並使用畢氏定理；扇形面積題改為由面積占比反推中心角。"
+    }
+  ],
+  "crossUnitCandidateScan": {
+    "comparedUnits": "U01-U18 and U20-U23 centrally approved package candidates",
+    "mcExactOrNumberSwapMatches": 0,
+    "mcHighSimilarityMatchesAt82PercentOrHigher": 0,
+    "constructedResponseExactOrNumberSwapMatches": 0,
+    "constructedResponseHighSimilarityMatchesAt85PercentOrHigher": 0,
+    "lectureHighSimilarityMatchesAt75PercentOrHigher": 0,
+    "finalIntegratedScanStillRequired": true
+  },
+  "freshExtractionVerificationRequired": true,
+  "legacyContentUsed": false,
+  "legacySemanticEvidenceAccepted": false,
+  "productionActivationAllowed": false
+}

@@ -1,0 +1,1703 @@
+// Generated only by serialization from approved reviewed source. Do not edit.
+export const sourceDigest="4d9d203946f5dd40fe414f145f1fa27ec1c07fd9e5b084c98185d596d8ff9cc7";
+export const skillBundle={
+  "lecture": {
+    "lectureId": "u20-s008-lecture-r1",
+    "unitId": "u20",
+    "numericUnitId": 20,
+    "topicId": "u20-centers",
+    "skillId": "centroid",
+    "skillSlot": "s008",
+    "lockedSkillTitle": "重心",
+    "title": "重心：三條中線與均勻三角形的平衡",
+    "audience": "臺灣國中零基礎至會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能辨認中線與重心。",
+      "能說明三中線共點。",
+      "能連結均勻薄板平衡與幾何重心，並知道模型限制。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "incenter",
+        "requiredLevel": "能使用該技能的核心定義與基本推理。"
+      }
+    ],
+    "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「incenter」再進入本節。",
+    "glossary": [
+      {
+        "term": "中線",
+        "definition": "從頂點連到對邊中點的線段。"
+      },
+      {
+        "term": "重心",
+        "definition": "三條中線的共同交點。"
+      },
+      {
+        "term": "均勻",
+        "definition": "相同面積具有相同質量，且厚度一致的理想條件。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "G",
+        "meaning": "常用來表示重心。"
+      },
+      {
+        "symbol": "M",
+        "meaning": "常用作某邊中點，須由題目確認。"
+      }
+    ],
+    "conceptNarrative": [
+      "中線的『中』指對邊中點，不表示它一定垂直、平分頂角或穿過視覺中央。",
+      "任兩條中線交點即可定位重心，第三條也必通過。重心一定在三角形內。",
+      "均勻三角形薄板的質量平均分布，幾何重心可作理想平衡點；附加重物會破壞這個模型。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "重心定義",
+        "statement": "三角形三中線交點。"
+      },
+      {
+        "name": "中線面積性質",
+        "statement": "任一中線把三角形分成兩個等面積三角形。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "G＝三條中線共同交點",
+        "conditions": [
+          "每條線連接頂點與對邊中點"
+        ],
+        "meaning": "重心的結構判定。"
+      }
+    ],
+    "nonApplicableCases": [
+      "中線不一定垂直對邊。",
+      "重心不保證到頂點或邊等距。",
+      "不均勻物體的實際質心不一定在幾何重心。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "找一邊中點M。",
+        "check": "兩小段是否有等長依據？"
+      },
+      {
+        "step": 2,
+        "instruction": "由對面頂點連到M。",
+        "check": "線段是否真為中線？"
+      },
+      {
+        "step": 3,
+        "instruction": "再作另一條中線並取交點G。",
+        "check": "兩條中線來自不同頂點。"
+      },
+      {
+        "step": 4,
+        "instruction": "用第三條中線複核。",
+        "check": "是否也通過G？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "M是BC中點。AM是什麼？",
+        "solutionSteps": [
+          "A是對面頂點。",
+          "M是BC中點。"
+        ],
+        "answer": "AM是中線。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "均勻三角形紙板選單點支撐。",
+        "solutionSteps": [
+          "質量隨面積均勻。",
+          "面積中心是三中線交點。"
+        ],
+        "answer": "先選重心。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把高當中線。",
+        "why": "垂足不一定是中點。",
+        "correction": "檢查對邊是否被平分。"
+      },
+      {
+        "mistake": "認為重心到三頂點等距。",
+        "why": "混用外心。",
+        "correction": "重心的核心是中線。"
+      },
+      {
+        "mistake": "對有重物的板仍直接用重心。",
+        "why": "均勻假設失效。",
+        "correction": "改找實際質心。"
+      }
+    ],
+    "selfCheck": [
+      "每條線是否連到對邊中點？",
+      "重心是否在內部？",
+      "我是否誤用了等距性質？",
+      "物理應用是否真的均勻？"
+    ],
+    "summary": [
+      "中線連結頂點與對邊中點。",
+      "三中線交於重心。",
+      "重心一定在內部。",
+      "均勻薄板才以幾何重心作理想平衡點。"
+    ],
+    "connections": {
+      "previous": "先備：incenter",
+      "next": [
+        "下一技能介紹三條高交成的垂心。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u20-centroid-survey-01"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u20-s008-v001",
+        "u20-s008-v002",
+        "u20-s008-v003",
+        "u20-s008-v004",
+        "u20-s008-v005",
+        "u20-s008-v006",
+        "u20-s008-v007",
+        "u20-s008-v008",
+        "u20-s008-v009",
+        "u20-s008-v010",
+        "u20-s008-v011",
+        "u20-s008-v012"
+      ],
+      "constructedResponseIds": [
+        "u20-s008-cr001",
+        "u20-s008-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "skillSpecificEvidence": "講義將幾何定義與物理模型分開，避免把重心泛化成所有最佳位置。",
+      "reviewerDecision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "legacyContentUsed": false,
+    "contentSha256": "9053d1dff7bd1a9be4d05bbd6a9b5c1263341d1dec35c08bb48fbf6d88b495b1"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u20-s008-v001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "要在三角形板上定位重心，應畫哪一組線並取其交點？",
+      "givenConditions": [],
+      "target": "辨認重心定義",
+      "choices": [
+        "三條高的交點",
+        "三邊垂直平分線的交點",
+        "三個內角角平分線的交點",
+        "三條中線的交點"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "重心定義為三角形三條中線的共同交點。",
+        "result": "三條中線的交點"
+      },
+      "explanation": "重心定義為三角形三條中線的共同交點。",
+      "steps": [
+        "辨認中線連接頂點與對邊中點",
+        "三條中線共點",
+        "交點稱重心"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "三條高的交點",
+          "truth": false,
+          "reason": "這是垂心。"
+        },
+        {
+          "choice": "三邊垂直平分線的交點",
+          "truth": false,
+          "reason": "這是外心。"
+        },
+        {
+          "choice": "三個內角角平分線的交點",
+          "truth": false,
+          "reason": "這是內心。"
+        },
+        {
+          "choice": "三條中線的交點",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；重心定義為三角形三條中線的共同交點。"
+        }
+      ],
+      "misconceptionTarget": "混淆各種特殊線與中心名稱。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「辨認重心定義」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「三條中線的交點」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：辨認重心定義。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "9c20afb8637540994378563c48b1686bb59746955261f5834f02019ae37a4efb"
+    },
+    {
+      "questionId": "u20-s008-v002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "三角形的一條中線如何定義？",
+      "givenConditions": [],
+      "target": "理解中線定義",
+      "choices": [
+        "頂點到對邊的垂線",
+        "頂點與對邊中點的連線",
+        "一邊的垂直平分線",
+        "一個角的角平分線"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "中線由一個頂點連到其對邊的中點。",
+        "result": "頂點與對邊中點的連線"
+      },
+      "explanation": "中線由一個頂點連到其對邊的中點。",
+      "steps": [
+        "選一頂點",
+        "找對邊中點",
+        "連結兩點"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "頂點到對邊的垂線",
+          "truth": false,
+          "reason": "這是高。"
+        },
+        {
+          "choice": "頂點與對邊中點的連線",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；中線由一個頂點連到其對邊的中點。"
+        },
+        {
+          "choice": "一邊的垂直平分線",
+          "truth": false,
+          "reason": "不一定通過對面頂點。"
+        },
+        {
+          "choice": "一個角的角平分線",
+          "truth": false,
+          "reason": "不一定通過對邊中點。"
+        }
+      ],
+      "misconceptionTarget": "把『中線』理解成穿過圖形中央的任意線。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「理解中線定義」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「頂點與對邊中點的連線」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：理解中線定義。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "9ea71de30129dd2f73e28e854b8e4d2ceb65c3785cfc96b0a38f38b5fa75c71a"
+    },
+    {
+      "questionId": "u20-s008-v003",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "關於三角形重心的位置，何者正確？",
+      "givenConditions": [],
+      "target": "辨認重心位置",
+      "choices": [
+        "一定在三角形內部",
+        "只在銳角三角形內部",
+        "直角三角形時在斜邊中點",
+        "鈍角三角形時在外部"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "三條中線都由頂點連到對邊上的中點，其共同交點位於三角形內部，與角型無關。",
+        "result": "一定在三角形內部"
+      },
+      "explanation": "三條中線都由頂點連到對邊上的中點，其共同交點位於三角形內部，與角型無關。",
+      "steps": [
+        "中點位於邊上",
+        "中線穿過三角形內部",
+        "三中線交點在內部"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "一定在三角形內部",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；三條中線都由頂點連到對邊上的中點，其共同交點位於三角形內部，與角型無關。"
+        },
+        {
+          "choice": "只在銳角三角形內部",
+          "truth": false,
+          "reason": "直角與鈍角三角形也在內部。"
+        },
+        {
+          "choice": "直角三角形時在斜邊中點",
+          "truth": false,
+          "reason": "斜邊中點是外心。"
+        },
+        {
+          "choice": "鈍角三角形時在外部",
+          "truth": false,
+          "reason": "這是混用外心或垂心。"
+        }
+      ],
+      "misconceptionTarget": "套用外心的位置分類。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「辨認重心位置」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「一定在三角形內部」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：辨認重心位置。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "5b33ec6b30756ede5e4d24a2461b2a83a50420027ab61f106969ae3e60a95d78"
+    },
+    {
+      "questionId": "u20-s008-v004",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "要作出 △ABC 的重心，哪個方法正確？",
+      "givenConditions": [],
+      "target": "選擇重心作圖方法",
+      "choices": [
+        "作兩個角平分線",
+        "作兩邊垂直平分線",
+        "先找兩邊中點，分別連到對面頂點",
+        "從兩頂點向對邊作垂線"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "找兩條中線的交點即可：例如找 BC 中點 M、AC 中點 N，作 AM 與 BN。",
+        "result": "先找兩邊中點，分別連到對面頂點"
+      },
+      "explanation": "找兩條中線的交點即可：例如找 BC 中點 M、AC 中點 N，作 AM 與 BN。",
+      "steps": [
+        "找對邊中點",
+        "連結對面頂點形成中線",
+        "取兩中線交點"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "作兩個角平分線",
+          "truth": false,
+          "reason": "得到內心。"
+        },
+        {
+          "choice": "作兩邊垂直平分線",
+          "truth": false,
+          "reason": "得到外心。"
+        },
+        {
+          "choice": "先找兩邊中點，分別連到對面頂點",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；找兩條中線的交點即可：例如找 BC 中點 M、AC 中點 N，作 AM 與 BN。"
+        },
+        {
+          "choice": "從兩頂點向對邊作垂線",
+          "truth": false,
+          "reason": "得到垂心。"
+        }
+      ],
+      "misconceptionTarget": "只記得作兩條線，未確認中點條件。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「選擇重心作圖方法」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先找兩邊中點，分別連到對面頂點」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：選擇重心作圖方法。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "f635733af491c1ffca4ff2fa1d60503e86b030d4f6220899f5b596522f160c05"
+    },
+    {
+      "questionId": "u20-s008-v005",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "兩條中線交於 G。第三條中線與 G 的關係為何？",
+      "givenConditions": [],
+      "target": "理解三中線共點",
+      "choices": [
+        "第三條與前兩條平行",
+        "第三條中線也通過同一交點",
+        "只有等腰三角形才共點",
+        "第三條可能不通過"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "三角形三條中線必共點，因此第三條中線也通過 G。",
+        "result": "第三條中線也通過同一交點"
+      },
+      "explanation": "三角形三條中線必共點，因此第三條中線也通過 G。",
+      "steps": [
+        "G 是兩中線交點",
+        "使用三中線共點性質",
+        "確認 G 為重心"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "第三條與前兩條平行",
+          "truth": false,
+          "reason": "三條線從不同頂點出發並共點。"
+        },
+        {
+          "choice": "第三條中線也通過同一交點",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；三角形三條中線必共點，因此第三條中線也通過 G。"
+        },
+        {
+          "choice": "只有等腰三角形才共點",
+          "truth": false,
+          "reason": "任意三角形都成立。"
+        },
+        {
+          "choice": "第三條可能不通過",
+          "truth": false,
+          "reason": "違反中線共點定理。"
+        }
+      ],
+      "misconceptionTarget": "把共點性質誤認為圖形對稱才成立。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「理解三中線共點」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「第三條中線也通過同一交點」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：理解三中線共點。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "27f932b3d9003377949e55fca627cff862b35b4f7eaba6a4e9eee926d88348d4"
+    },
+    {
+      "questionId": "u20-s008-v006",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "一片均勻三角形薄板用一個尖點支撐，理想平衡點對應哪一個三角形的心？",
+      "givenConditions": [],
+      "target": "連結重心與平衡意義",
+      "choices": [
+        "外心",
+        "內心",
+        "重心",
+        "垂心"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "均勻三角形薄板的面積質量中心位於三條中線交點，即重心。",
+        "result": "重心"
+      },
+      "explanation": "均勻三角形薄板的面積質量中心位於三條中線交點，即重心。",
+      "steps": [
+        "質量均勻",
+        "平衡點是面積中心",
+        "三角形面積中心為重心"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "外心",
+          "truth": false,
+          "reason": "外心是三頂點等距點。"
+        },
+        {
+          "choice": "內心",
+          "truth": false,
+          "reason": "內心是三邊等距點。"
+        },
+        {
+          "choice": "重心",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；均勻三角形薄板的面積質量中心位於三條中線交點，即重心。"
+        },
+        {
+          "choice": "垂心",
+          "truth": false,
+          "reason": "垂心是三高交點。"
+        }
+      ],
+      "misconceptionTarget": "看到『中心』便任選位於內部的點。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「連結重心與平衡意義」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「重心」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：連結重心與平衡意義。",
+      "literacyContextNecessity": "均勻薄板的平衡需求賦予重心物理意義；若刪除均勻與支撐資訊，任務改變。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "cd7892e90179712ad2b1c57ae1cbc8f889a2243032d493d4c267cfed5e64a03c"
+    },
+    {
+      "questionId": "u20-s008-v007",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "重心 G 與三個頂點相連後形成 △ABG、△BCG、△CAG。下列何者成立？",
+      "givenConditions": [],
+      "target": "理解重心的面積分割",
+      "choices": [
+        "三個小三角形周長相等",
+        "三條中線長度相等",
+        "G 到三頂點距離相等",
+        "三個小三角形面積相等"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "三條中線把原三角形分成六個等面積小三角形，因此每一個以一整邊為底、G 為頂點的三角形面積皆為原面積的三分之一。",
+        "result": "三個小三角形面積相等"
+      },
+      "explanation": "三條中線把原三角形分成六個等面積小三角形，因此每一個以一整邊為底、G 為頂點的三角形面積皆為原面積的三分之一。",
+      "steps": [
+        "同一高下比較底邊分割",
+        "使用中線平分面積",
+        "合併六個等面積區塊"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "三個小三角形周長相等",
+          "truth": false,
+          "reason": "邊長一般不同。"
+        },
+        {
+          "choice": "三條中線長度相等",
+          "truth": false,
+          "reason": "一般三角形中線不等長。"
+        },
+        {
+          "choice": "G 到三頂點距離相等",
+          "truth": false,
+          "reason": "這是外心性質。"
+        },
+        {
+          "choice": "三個小三角形面積相等",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；三條中線把原三角形分成六個等面積小三角形，因此每一個以一整邊為底、G 為頂點的三角形面積皆為原面積的三分之一。"
+        }
+      ],
+      "misconceptionTarget": "把面積相等誤推成形狀或周長相等。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「理解重心的面積分割」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「三個小三角形面積相等」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：理解重心的面積分割。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "9bb227d614fea2dfe15f26f581cb4bb4d84ac5aa3bfa742315e908d8e7116c11"
+    },
+    {
+      "questionId": "u20-s008-v008",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "關於三角形中線，下列哪一項一定正確？",
+      "givenConditions": [],
+      "target": "證明中線平分面積",
+      "choices": [
+        "每一條都把三角形面積平分",
+        "每一條都把頂角平分",
+        "每一條都垂直對邊",
+        "每一條都把周長平分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "中線連到對邊中點，把對邊分成等長兩段；兩個子三角形共用同高，所以面積相等。",
+        "result": "每一條都把三角形面積平分"
+      },
+      "explanation": "中線連到對邊中點，把對邊分成等長兩段；兩個子三角形共用同高，所以面積相等。",
+      "steps": [
+        "對邊被分成相等底邊",
+        "兩子三角形高相同",
+        "面積各為原來一半"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "每一條都把三角形面積平分",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；中線連到對邊中點，把對邊分成等長兩段；兩個子三角形共用同高，所以面積相等。"
+        },
+        {
+          "choice": "每一條都把頂角平分",
+          "truth": false,
+          "reason": "只有特殊三角形可能重合。"
+        },
+        {
+          "choice": "每一條都垂直對邊",
+          "truth": false,
+          "reason": "那是高的要求。"
+        },
+        {
+          "choice": "每一條都把周長平分",
+          "truth": false,
+          "reason": "兩側其他邊通常不同。"
+        }
+      ],
+      "misconceptionTarget": "把中線與角平分線或高混淆。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「證明中線平分面積」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「每一條都把三角形面積平分」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：證明中線平分面積。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "10221a6ef76375e8837c794852443b16e1550fbb4b4ac268fe6d57d0b6324619"
+    },
+    {
+      "questionId": "u20-s008-v009",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "已知 M、N 分別是 BC、AC 的中點，且 AM、BN 交於 G。要判定 G 為重心，還需要什麼？",
+      "givenConditions": [],
+      "target": "由兩中線辨認重心",
+      "choices": [
+        "還必須證明 G 到三頂點等距",
+        "還必須證明 G 到三邊等距",
+        "G 是兩條中線的交點即可確定",
+        "還必須證明 G 在三角形外"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "AM 與 BN 已分別是兩條中線；兩條中線交點就是重心，不需其他等距條件。",
+        "result": "G 是兩條中線的交點即可確定"
+      },
+      "explanation": "AM 與 BN 已分別是兩條中線；兩條中線交點就是重心，不需其他等距條件。",
+      "steps": [
+        "由 M、N 為中點確認中線",
+        "兩中線交於 G",
+        "依定義判定重心"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "還必須證明 G 到三頂點等距",
+          "truth": false,
+          "reason": "那是外心判定。"
+        },
+        {
+          "choice": "還必須證明 G 到三邊等距",
+          "truth": false,
+          "reason": "那是內心判定。"
+        },
+        {
+          "choice": "G 是兩條中線的交點即可確定",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；AM 與 BN 已分別是兩條中線；兩條中線交點就是重心，不需其他等距條件。"
+        },
+        {
+          "choice": "還必須證明 G 在三角形外",
+          "truth": false,
+          "reason": "重心一定在內部。"
+        }
+      ],
+      "misconceptionTarget": "為重心附加其他中心的條件。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「由兩中線辨認重心」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「G 是兩條中線的交點即可確定」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：由兩中線辨認重心。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "1ca9d2a000e196470d859612aa123b0807a1033278b572bc3d76684600cb93bd"
+    },
+    {
+      "questionId": "u20-s008-v010",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "三角形廣告板材質與厚度均勻，吊掛時希望單點支撐最接近平衡。應先找哪個點？",
+      "givenConditions": [],
+      "target": "在製作情境選擇重心",
+      "choices": [
+        "重心",
+        "外心",
+        "內心",
+        "垂心"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "均勻三角形板的質量中心與幾何重心重合，因此應找三中線交點。",
+        "result": "重心"
+      },
+      "explanation": "均勻三角形板的質量中心與幾何重心重合，因此應找三中線交點。",
+      "steps": [
+        "確認板材均勻",
+        "把平衡需求連到質量中心",
+        "使用重心"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "重心",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；均勻三角形板的質量中心與幾何重心重合，因此應找三中線交點。"
+        },
+        {
+          "choice": "外心",
+          "truth": false,
+          "reason": "到頂點等距不代表質量平衡。"
+        },
+        {
+          "choice": "內心",
+          "truth": false,
+          "reason": "到邊等距不代表面積質量平衡。"
+        },
+        {
+          "choice": "垂心",
+          "truth": false,
+          "reason": "高的交點無平衡性質。"
+        }
+      ],
+      "misconceptionTarget": "將『位於中央』泛化為任何中心。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「在製作情境選擇重心」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「重心」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在製作情境選擇重心。",
+      "literacyContextNecessity": "材質與厚度均勻是把幾何重心當質量中心的必要條件，情境不可省略。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "cb577aafb48d24ff0d96551ea7ddcbe3fa08839bb0eff6ec5d9d85471a38f41d"
+    },
+    {
+      "questionId": "u20-s008-v011",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "技師用三中線交點作為三角形板的吊點。若板上黏有一塊很重的零件，最應先注意什麼？",
+      "givenConditions": [],
+      "target": "評估重心應用的前提",
+      "choices": [
+        "只確認三個頂點顏色相同",
+        "只量三條邊是否等長",
+        "只看重心是否也是外心",
+        "先確認整片板材密度近似均勻"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "幾何重心作為平衡點的結論依賴質量均勻；附加重物會使實際質心偏移。",
+        "result": "先確認整片板材密度近似均勻"
+      },
+      "explanation": "幾何重心作為平衡點的結論依賴質量均勻；附加重物會使實際質心偏移。",
+      "steps": [
+        "區分幾何重心與實際質心",
+        "檢查質量分布",
+        "評估吊點是否需修正"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只確認三個頂點顏色相同",
+          "truth": false,
+          "reason": "顏色與質量分布無關。"
+        },
+        {
+          "choice": "只量三條邊是否等長",
+          "truth": false,
+          "reason": "即使等邊，附加重物仍會移動質心。"
+        },
+        {
+          "choice": "只看重心是否也是外心",
+          "truth": false,
+          "reason": "中心重合不能抵消質量不均。"
+        },
+        {
+          "choice": "先確認整片板材密度近似均勻",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；幾何重心作為平衡點的結論依賴質量均勻；附加重物會使實際質心偏移。"
+        }
+      ],
+      "misconceptionTarget": "忽略物理應用中的均勻假設。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「評估重心應用的前提」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「先確認整片板材密度近似均勻」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：評估重心應用的前提。",
+      "literacyContextNecessity": "附加重物改變質量分布，使幾何重心不再等同實際平衡點；此情境條件決定答案。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "56fe8e8e50cdb8c8396358fbcb39da0f0cd4af1b4d5fe6fe5ce2e720ded0542e"
+    },
+    {
+      "questionId": "u20-s008-v012",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "地籍圖要標示三角形區域的幾何重心。為降低作圖錯誤，哪個流程最好？",
+      "givenConditions": [],
+      "target": "在地籍作圖中定位與複核重心",
+      "choices": [
+        "只量三個角是否相等",
+        "以兩條中線交點定位，第三條作為複核",
+        "找三邊垂直平分線",
+        "找離三邊相等的點"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "先找兩邊中點並畫兩條中線定位交點，再畫第三條中線確認三線共點。",
+        "result": "以兩條中線交點定位，第三條作為複核"
+      },
+      "explanation": "先找兩邊中點並畫兩條中線定位交點，再畫第三條中線確認三線共點。",
+      "steps": [
+        "建立兩個可靠中點",
+        "畫兩條中線找交點",
+        "用第三條中線複核"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只量三個角是否相等",
+          "truth": false,
+          "reason": "角度不能直接定位重心。"
+        },
+        {
+          "choice": "以兩條中線交點定位，第三條作為複核",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；先找兩邊中點並畫兩條中線定位交點，再畫第三條中線確認三線共點。"
+        },
+        {
+          "choice": "找三邊垂直平分線",
+          "truth": false,
+          "reason": "會得到外心。"
+        },
+        {
+          "choice": "找離三邊相等的點",
+          "truth": false,
+          "reason": "會得到內心。"
+        }
+      ],
+      "misconceptionTarget": "只憑視覺中心或選錯特殊線。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「在地籍作圖中定位與複核重心」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「以兩條中線交點定位，第三條作為複核」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在地籍作圖中定位與複核重心。",
+      "literacyContextNecessity": "地籍標示要求可重複檢核的作圖流程，第三條中線提供實務複核價值。",
+      "figureId": "fig-u20-centroid-survey-01",
+      "drawingSpecId": "fig-u20-centroid-survey-01",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "224416a6404317912e7b9979897483a77b59992522d56b1e4f56ec4e4f4c12b1"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u20-s008-cr001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "prompt": "△ABC 中，M、N 分別為 BC、AC 中點。請說明為何 AM、BN 是中線，並以此判定其交點 G 是重心。",
+      "requiredWork": [
+        "使用中線定義。",
+        "由兩條中線交點判定重心。"
+      ],
+      "standardSolution": [
+        "M 是 BC 中點，因此頂點 A 與對邊中點 M 的連線 AM 是中線。",
+        "N 是 AC 中點，因此頂點 B 與對邊中點 N 的連線 BN 是中線。",
+        "兩條中線交於 G，所以 G 是 △ABC 的重心；第三條中線也通過 G。"
+      ],
+      "alternativeMethods": [
+        "也可先作第三邊 AB 的中點與 C 的連線，用任兩條中線定位重心。"
+      ],
+      "reasoningSteps": [
+        "M 是 BC 中點，因此頂點 A 與對邊中點 M 的連線 AM 是中線。",
+        "N 是 AC 中點，因此頂點 B 與對邊中點 N 的連線 BN 是中線。",
+        "兩條中線交於 G，所以 G 是 △ABC 的重心；第三條中線也通過 G。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "兩條中線的定義說明正確，並據此判定交點為重心。"
+        },
+        {
+          "score": 2,
+          "criteria": "結論正確，但只說『因為是中線』未解釋中點對應。"
+        },
+        {
+          "score": 1,
+          "criteria": "只辨認一條中線，或知道三中線交點是重心。"
+        },
+        {
+          "score": 0,
+          "criteria": "把AM、BN稱為高或角平分線，且判定錯誤。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "依題目所給單位作答；純幾何關係不另加單位。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "中點配錯對邊。",
+        "認為中線必垂直。",
+        "要求到頂點等距。"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "M 是 BC 中點，因此頂點 A 與對邊中點 M 的連線 AM 是中線。；N 是 AC 中點，因此頂點 B 與對邊中點 N 的連線 BN 是中線。；兩條中線交於 G，所以 G 是 △ABC 的重心；第三條中線也通過 G。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "ce2f479e5290389092d71e47cc58a3239b0ea6b8a4076e6bf09c0b0a3921f3d7"
+    },
+    {
+      "questionId": "u20-s008-cr002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid",
+      "skillSlot": "s008",
+      "difficulty": "literacy",
+      "itemType": "constructed-response",
+      "prompt": "一片均勻三角形薄板要以單點支撐。請說明為何先找重心合理，並指出在什麼情況下這個模型可能失效。",
+      "requiredWork": [
+        "連結均勻薄板與面積質量中心。",
+        "說明三中線交點。",
+        "指出附加重物或密度不均。"
+      ],
+      "standardSolution": [
+        "均勻且厚度相同時，質量分布與面積分布一致，三角形的面積中心在三中線交點 G，因此以 G 作初始支撐點合理。",
+        "若板材密度不均、厚度不同、挖洞或附加零件，實際質心會偏離幾何重心，需重新量測或做加權計算。"
+      ],
+      "alternativeMethods": [
+        "可用實際懸掛兩次畫鉛直線，交點近似找出不均勻物體的質心。"
+      ],
+      "reasoningSteps": [
+        "均勻且厚度相同時，質量分布與面積分布一致，三角形的面積中心在三中線交點 G，因此以 G 作初始支撐點合理。",
+        "若板材密度不均、厚度不同、挖洞或附加零件，實際質心會偏離幾何重心，需重新量測或做加權計算。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確說明均勻假設、重心理由與至少一項失效情況。"
+        },
+        {
+          "score": 2,
+          "criteria": "知道重心可平衡且提到不均勻會失效，但理由較簡略。"
+        },
+        {
+          "score": 1,
+          "criteria": "只答『重心』，未處理均勻條件。"
+        },
+        {
+          "score": 0,
+          "criteria": "認為任何板材都必在幾何重心平衡，或改選外心。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "依題目所給單位作答；純幾何關係不另加單位。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "忽略厚度與附加物。",
+        "把到頂點等距當平衡理由。",
+        "認為幾何點會因加重而移動，而不是實際質心改變。"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "均勻且厚度相同時，質量分布與面積分布一致，三角形的面積中心在三中線交點 G，因此以 G 作初始支撐點合理。；若板材密度不均、厚度不同、挖洞或附加零件，實際質心會偏離幾何重心，需重新量測或做加權計算。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "40f857f53a7e33d61fb2104fef85bd7d1f078b9c457cf246783de477cfd1eb56"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u20-s008-v001",
+      "contentSha256": "9c20afb8637540994378563c48b1686bb59746955261f5834f02019ae37a4efb",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "重心定義為三角形三條中線的共同交點。",
+      "derivedAnswer": "三條中線的交點",
+      "storedAnswer": "三條中線的交點",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「三條中線的交點」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「混淆各種特殊線與中心名稱。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：辨認重心定義。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「要在三角形板上定位重心，應畫哪一組線並取其交點？」要求辨認重心定義。獨立推導為：重心定義為三角形三條中線的共同交點。 四選項依序判定：三條高的交點=假，這是垂心。；三邊垂直平分線的交點=假，這是外心。；三個內角角平分線的交點=假，這是內心。；三條中線的交點=真，依獨立推導可得到此結果；重心定義為三角形三條中線的共同交點。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "d90fc05877a7cd88446e7e7cb9974a53c33c06393001b061ffda7e0731737711"
+    },
+    {
+      "questionId": "u20-s008-v002",
+      "contentSha256": "9ea71de30129dd2f73e28e854b8e4d2ceb65c3785cfc96b0a38f38b5fa75c71a",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "中線由一個頂點連到其對邊的中點。",
+      "derivedAnswer": "頂點與對邊中點的連線",
+      "storedAnswer": "頂點與對邊中點的連線",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「頂點與對邊中點的連線」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把『中線』理解成穿過圖形中央的任意線。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：理解中線定義。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三角形的一條中線如何定義？」要求理解中線定義。獨立推導為：中線由一個頂點連到其對邊的中點。 四選項依序判定：頂點到對邊的垂線=假，這是高。；頂點與對邊中點的連線=真，依獨立推導可得到此結果；中線由一個頂點連到其對邊的中點。；一邊的垂直平分線=假，不一定通過對面頂點。；一個角的角平分線=假，不一定通過對邊中點。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "dc9159e62d46a44b2ddb1543891a2fcb864a12bd71fb544a7c78016f93de6983"
+    },
+    {
+      "questionId": "u20-s008-v003",
+      "contentSha256": "5b33ec6b30756ede5e4d24a2461b2a83a50420027ab61f106969ae3e60a95d78",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "三條中線都由頂點連到對邊上的中點，其共同交點位於三角形內部，與角型無關。",
+      "derivedAnswer": "一定在三角形內部",
+      "storedAnswer": "一定在三角形內部",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「一定在三角形內部」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「套用外心的位置分類。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：辨認重心位置。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「關於三角形重心的位置，何者正確？」要求辨認重心位置。獨立推導為：三條中線都由頂點連到對邊上的中點，其共同交點位於三角形內部，與角型無關。 四選項依序判定：一定在三角形內部=真，依獨立推導可得到此結果；三條中線都由頂點連到對邊上的中點，其共同交點位於三角形內部，與角型無關。；只在銳角三角形內部=假，直角與鈍角三角形也在內部。；直角三角形時在斜邊中點=假，斜邊中點是外心。；鈍角三角形時在外部=假，這是混用外心或垂心。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "b8e7f3395583c790ec16d1489b6d061f056cd55b0157f8d56fa192c8e1da78f3"
+    },
+    {
+      "questionId": "u20-s008-v004",
+      "contentSha256": "f635733af491c1ffca4ff2fa1d60503e86b030d4f6220899f5b596522f160c05",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "找兩條中線的交點即可：例如找 BC 中點 M、AC 中點 N，作 AM 與 BN。",
+      "derivedAnswer": "先找兩邊中點，分別連到對面頂點",
+      "storedAnswer": "先找兩邊中點，分別連到對面頂點",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先找兩邊中點，分別連到對面頂點」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「只記得作兩條線，未確認中點條件。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：選擇重心作圖方法。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「要作出 △ABC 的重心，哪個方法正確？」要求選擇重心作圖方法。獨立推導為：找兩條中線的交點即可：例如找 BC 中點 M、AC 中點 N，作 AM 與 BN。 四選項依序判定：作兩個角平分線=假，得到內心。；作兩邊垂直平分線=假，得到外心。；先找兩邊中點，分別連到對面頂點=真，依獨立推導可得到此結果；找兩條中線的交點即可：例如找 BC 中點 M、AC 中點 N，作 AM 與 BN。；從兩頂點向對邊作垂線=假，得到垂心。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "b54c5a72ead8aa139a901250776b0d7152a4215aa83636fa4e5692174f0d0dbc"
+    },
+    {
+      "questionId": "u20-s008-v005",
+      "contentSha256": "27f932b3d9003377949e55fca627cff862b35b4f7eaba6a4e9eee926d88348d4",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "三角形三條中線必共點，因此第三條中線也通過 G。",
+      "derivedAnswer": "第三條中線也通過同一交點",
+      "storedAnswer": "第三條中線也通過同一交點",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「第三條中線也通過同一交點」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把共點性質誤認為圖形對稱才成立。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：理解三中線共點。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「兩條中線交於 G。第三條中線與 G 的關係為何？」要求理解三中線共點。獨立推導為：三角形三條中線必共點，因此第三條中線也通過 G。 四選項依序判定：第三條與前兩條平行=假，三條線從不同頂點出發並共點。；第三條中線也通過同一交點=真，依獨立推導可得到此結果；三角形三條中線必共點，因此第三條中線也通過 G。；只有等腰三角形才共點=假，任意三角形都成立。；第三條可能不通過=假，違反中線共點定理。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "78a6348c5a8339451b0ba53c7450c7a18c373da403e1204c4ac00b36a9dbb27c"
+    },
+    {
+      "questionId": "u20-s008-v006",
+      "contentSha256": "cd7892e90179712ad2b1c57ae1cbc8f889a2243032d493d4c267cfed5e64a03c",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "均勻三角形薄板的面積質量中心位於三條中線交點，即重心。",
+      "derivedAnswer": "重心",
+      "storedAnswer": "重心",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「重心」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「看到『中心』便任選位於內部的點。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：連結重心與平衡意義。",
+      "literacyContextNecessity": "均勻薄板的平衡需求賦予重心物理意義；若刪除均勻與支撐資訊，任務改變。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一片均勻三角形薄板用一個尖點支撐，理想平衡點對應哪一個三角形的心？」要求連結重心與平衡意義。獨立推導為：均勻三角形薄板的面積質量中心位於三條中線交點，即重心。 四選項依序判定：外心=假，外心是三頂點等距點。；內心=假，內心是三邊等距點。；重心=真，依獨立推導可得到此結果；均勻三角形薄板的面積質量中心位於三條中線交點，即重心。；垂心=假，垂心是三高交點。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "2ae6d51b3caf661757bff70e67592e0844a9b9f8b63c4761f81cccecec52c8e2"
+    },
+    {
+      "questionId": "u20-s008-v007",
+      "contentSha256": "9bb227d614fea2dfe15f26f581cb4bb4d84ac5aa3bfa742315e908d8e7116c11",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "三條中線把原三角形分成六個等面積小三角形，因此每一個以一整邊為底、G 為頂點的三角形面積皆為原面積的三分之一。",
+      "derivedAnswer": "三個小三角形面積相等",
+      "storedAnswer": "三個小三角形面積相等",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「三個小三角形面積相等」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把面積相等誤推成形狀或周長相等。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：理解重心的面積分割。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「重心 G 與三個頂點相連後形成 △ABG、△BCG、△CAG。下列何者成立？」要求理解重心的面積分割。獨立推導為：三條中線把原三角形分成六個等面積小三角形，因此每一個以一整邊為底、G 為頂點的三角形面積皆為原面積的三分之一。 四選項依序判定：三個小三角形周長相等=假，邊長一般不同。；三條中線長度相等=假，一般三角形中線不等長。；G 到三頂點距離相等=假，這是外心性質。；三個小三角形面積相等=真，依獨立推導可得到此結果；三條中線把原三角形分成六個等面積小三角形，因此每一個以一整邊為底、G 為頂點的三角形面積皆為原面積的三分之一。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "b2b9d3a585f775d5ae5b1eca803f283911f0abad73b87142802909108c1e0398"
+    },
+    {
+      "questionId": "u20-s008-v008",
+      "contentSha256": "10221a6ef76375e8837c794852443b16e1550fbb4b4ac268fe6d57d0b6324619",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "中線連到對邊中點，把對邊分成等長兩段；兩個子三角形共用同高，所以面積相等。",
+      "derivedAnswer": "每一條都把三角形面積平分",
+      "storedAnswer": "每一條都把三角形面積平分",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「每一條都把三角形面積平分」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把中線與角平分線或高混淆。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：證明中線平分面積。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「關於三角形中線，下列哪一項一定正確？」要求證明中線平分面積。獨立推導為：中線連到對邊中點，把對邊分成等長兩段；兩個子三角形共用同高，所以面積相等。 四選項依序判定：每一條都把三角形面積平分=真，依獨立推導可得到此結果；中線連到對邊中點，把對邊分成等長兩段；兩個子三角形共用同高，所以面積相等。；每一條都把頂角平分=假，只有特殊三角形可能重合。；每一條都垂直對邊=假，那是高的要求。；每一條都把周長平分=假，兩側其他邊通常不同。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "6eb5911e08ad2b548c1588c2f7b6f9e7cd1d3ca26dfa991c3ddb4b85be55b6aa"
+    },
+    {
+      "questionId": "u20-s008-v009",
+      "contentSha256": "1ca9d2a000e196470d859612aa123b0807a1033278b572bc3d76684600cb93bd",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "AM 與 BN 已分別是兩條中線；兩條中線交點就是重心，不需其他等距條件。",
+      "derivedAnswer": "G 是兩條中線的交點即可確定",
+      "storedAnswer": "G 是兩條中線的交點即可確定",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「G 是兩條中線的交點即可確定」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「為重心附加其他中心的條件。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：由兩中線辨認重心。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「已知 M、N 分別是 BC、AC 的中點，且 AM、BN 交於 G。要判定 G 為重心，還需要什麼？」要求由兩中線辨認重心。獨立推導為：AM 與 BN 已分別是兩條中線；兩條中線交點就是重心，不需其他等距條件。 四選項依序判定：還必須證明 G 到三頂點等距=假，那是外心判定。；還必須證明 G 到三邊等距=假，那是內心判定。；G 是兩條中線的交點即可確定=真，依獨立推導可得到此結果；AM 與 BN 已分別是兩條中線；兩條中線交點就是重心，不需其他等距條件。；還必須證明 G 在三角形外=假，重心一定在內部。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "d5da9d8cc82c755cc228c15f09e627aeee2242c66171644825f93643526a7349"
+    },
+    {
+      "questionId": "u20-s008-v010",
+      "contentSha256": "cb577aafb48d24ff0d96551ea7ddcbe3fa08839bb0eff6ec5d9d85471a38f41d",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "均勻三角形板的質量中心與幾何重心重合，因此應找三中線交點。",
+      "derivedAnswer": "重心",
+      "storedAnswer": "重心",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「重心」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「將『位於中央』泛化為任何中心。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在製作情境選擇重心。",
+      "literacyContextNecessity": "材質與厚度均勻是把幾何重心當質量中心的必要條件，情境不可省略。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三角形廣告板材質與厚度均勻，吊掛時希望單點支撐最接近平衡。應先找哪個點？」要求在製作情境選擇重心。獨立推導為：均勻三角形板的質量中心與幾何重心重合，因此應找三中線交點。 四選項依序判定：重心=真，依獨立推導可得到此結果；均勻三角形板的質量中心與幾何重心重合，因此應找三中線交點。；外心=假，到頂點等距不代表質量平衡。；內心=假，到邊等距不代表面積質量平衡。；垂心=假，高的交點無平衡性質。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "368e274a3ac87a3020fa93200c0f1af3e10274dce3bd491754db03e159906ebb"
+    },
+    {
+      "questionId": "u20-s008-v011",
+      "contentSha256": "56fe8e8e50cdb8c8396358fbcb39da0f0cd4af1b4d5fe6fe5ce2e720ded0542e",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "幾何重心作為平衡點的結論依賴質量均勻；附加重物會使實際質心偏移。",
+      "derivedAnswer": "先確認整片板材密度近似均勻",
+      "storedAnswer": "先確認整片板材密度近似均勻",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「先確認整片板材密度近似均勻」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「忽略物理應用中的均勻假設。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：評估重心應用的前提。",
+      "literacyContextNecessity": "附加重物改變質量分布，使幾何重心不再等同實際平衡點；此情境條件決定答案。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「技師用三中線交點作為三角形板的吊點。若板上黏有一塊很重的零件，最應先注意什麼？」要求評估重心應用的前提。獨立推導為：幾何重心作為平衡點的結論依賴質量均勻；附加重物會使實際質心偏移。 四選項依序判定：只確認三個頂點顏色相同=假，顏色與質量分布無關。；只量三條邊是否等長=假，即使等邊，附加重物仍會移動質心。；只看重心是否也是外心=假，中心重合不能抵消質量不均。；先確認整片板材密度近似均勻=真，依獨立推導可得到此結果；幾何重心作為平衡點的結論依賴質量均勻；附加重物會使實際質心偏移。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "c3932e2894935b11ee23bdbbe7257c538497fef7ac3ca140599848e37537d1b7"
+    },
+    {
+      "questionId": "u20-s008-v012",
+      "contentSha256": "224416a6404317912e7b9979897483a77b59992522d56b1e4f56ec4e4f4c12b1",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "先找兩邊中點並畫兩條中線定位交點，再畫第三條中線確認三線共點。",
+      "derivedAnswer": "以兩條中線交點定位，第三條作為複核",
+      "storedAnswer": "以兩條中線交點定位，第三條作為複核",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「以兩條中線交點定位，第三條作為複核」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「只憑視覺中心或選錯特殊線。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在地籍作圖中定位與複核重心。",
+      "literacyContextNecessity": "地籍標示要求可重複檢核的作圖流程，第三條中線提供實務複核價值。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「地籍圖要標示三角形區域的幾何重心。為降低作圖錯誤，哪個流程最好？」要求在地籍作圖中定位與複核重心。獨立推導為：先找兩邊中點並畫兩條中線定位交點，再畫第三條中線確認三線共點。 四選項依序判定：只量三個角是否相等=假，角度不能直接定位重心。；以兩條中線交點定位，第三條作為複核=真，依獨立推導可得到此結果；先找兩邊中點並畫兩條中線定位交點，再畫第三條中線確認三線共點。；找三邊垂直平分線=假，會得到外心。；找離三邊相等的點=假，會得到內心。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "00b7eae1e82af6e8e5e3ebabc9cdf110eb84331c041e6316adb1b94c50722dc6"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u20-centroid-survey-01",
+      "unitId": "u20",
+      "ownerSkillSlot": "s008",
+      "title": "地籍三中線重心圖",
+      "description": "三角形地籍ABC，三邊中點M、N、P各有成對刻痕，三條中線交於G。",
+      "canvas": {
+        "width": 480,
+        "height": 320,
+        "viewBox": "0 0 480 320"
+      },
+      "coordinates": {
+        "A": [
+          210,
+          45
+        ],
+        "B": [
+          65,
+          255
+        ],
+        "C": [
+          420,
+          245
+        ],
+        "G": [
+          229,
+          181
+        ],
+        "M": [
+          243,
+          250
+        ],
+        "N": [
+          315,
+          145
+        ],
+        "P": [
+          138,
+          150
+        ]
+      },
+      "visibleLineRules": "實線表示題設中的線段或道路；虛線表示延長線或輔助線；直角方框、等長刻痕與平行箭頭只在題設提供時使用。",
+      "hiddenLineRules": "本單元為平面圖，不使用立體隱線；未畫出的關係不得自行假設。",
+      "labels": "所有點名放在點外側至少8像素；避免壓在線段或直角記號上。",
+      "toScale": false,
+      "visualInferenceWarning": "圖形未按比例，不可用外觀估計未標示的長度或角度。",
+      "altText": "三角形ABC的三條中線由各頂點連到對邊中點M、N、P，交於內部點G。",
+      "svgTitle": "地籍三中線重心圖",
+      "svgDesc": "三角形地籍ABC，三邊中點M、N、P各有成對刻痕，三條中線交於G。",
+      "mobileReadabilityReview": "在寬度320像素縮放下，主要線段、直角記號與標籤仍可辨認；字級不小於16。",
+      "answerLeakageReview": "圖中只呈現題設標記與辨識所需結構，不標示選項答案、中心名稱結論或未給定數值。",
+      "geometryAssertions": [
+        "M、N、P各為對邊中點",
+        "AM、BN、CP交於G",
+        "不標示垂直或角平分"
+      ],
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ]
+};
+export default skillBundle;

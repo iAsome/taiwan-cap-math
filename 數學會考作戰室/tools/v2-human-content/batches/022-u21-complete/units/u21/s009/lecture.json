@@ -1,0 +1,286 @@
+{
+  "lectureId": "u21-s009-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-applications",
+  "skillId": "quadratic-max-min",
+  "lockedTitle": "最大最小值",
+  "title": "從頂點讀極值：最大值與最小值和限制範圍",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-max-min"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由開口與頂點判斷全域最大值或最小值。",
+    "能區分極值的數值與發生時的 x。",
+    "能在有限區間比較頂點與端點。",
+    "能判斷沒有最大值或沒有最小值的情況。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-table-graph",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "已會由頂點式、表格或圖形找頂點；本節把頂點的 y 座標解讀成函數值的上下界。",
+  "glossary": [
+    {
+      "term": "最小值",
+      "definition": "允許範圍內所有函數值中最小的 y。"
+    },
+    {
+      "term": "最大值",
+      "definition": "允許範圍內所有函數值中最大的 y。"
+    },
+    {
+      "term": "發生位置",
+      "definition": "取得極值時的 x 值。"
+    },
+    {
+      "term": "定義域限制",
+      "definition": "題目允許 x 取值的範圍。"
+    },
+    {
+      "term": "端點",
+      "definition": "有限區間最左或最右的 x。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x∈[m,n]",
+      "meaning": "x 可從 m 到 n，包含兩端。"
+    },
+    {
+      "symbol": "y≥k",
+      "meaning": "所有函數值不小於 k。"
+    },
+    {
+      "symbol": "y≤k",
+      "meaning": "所有函數值不大於 k。"
+    }
+  ],
+  "conceptNarrative": [
+    "向上拋物線的頂點最低，所以有最小值 k；兩端不斷上升，若 x 不受限便沒有最大值。",
+    "向下拋物線的頂點最高，所以有最大值 k；兩端不斷下降，若 x 不受限便沒有最小值。",
+    "題目若限制 x 在一段區間，極值候選只需比較：區間內的頂點與兩個端點。若頂點不在區間內，函數在該區間可能一路上升或下降。",
+    "回答時要分清「最大值是 12」與「在 x=3 時取得最大值 12」是兩個資訊。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "全域極值",
+      "statement": "在完整允許定義域內，函數值達到的最大或最小數。"
+    },
+    {
+      "name": "區間極值候選",
+      "statement": "二次函數在閉區間的極值出現在區間內頂點或端點。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "y=a(x-h)²+k",
+      "conditions": [
+        "a>0"
+      ],
+      "meaning": "最小值 k，在 x=h 取得。"
+    },
+    {
+      "formula": "y=a(x-h)²+k",
+      "conditions": [
+        "a<0"
+      ],
+      "meaning": "最大值 k，在 x=h 取得。"
+    }
+  ],
+  "nonApplicableCases": [
+    "沒有定義域限制時，向上拋物線通常沒有最大值。",
+    "極值是 y 值，不是頂點整個座標。",
+    "若頂點 x 不在限定區間，不能直接把 k 當區間極值。",
+    "開區間端點不包含時，可能只有上確界或下確界而未取得；國中題目需依題意處理。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找頂點 (h,k) 與開口。",
+      "check": "a 的符號是否正確？"
+    },
+    {
+      "step": 2,
+      "instruction": "確認 x 是否有範圍限制。",
+      "check": "端點是否包含？"
+    },
+    {
+      "step": 3,
+      "instruction": "若無限制，依開口直接判一側極值。",
+      "check": "另一側是否其實不存在？"
+    },
+    {
+      "step": 4,
+      "instruction": "若有限閉區間，計算端點與區間內頂點。",
+      "check": "頂點 h 是否落在區間？"
+    },
+    {
+      "step": 5,
+      "instruction": "比較 y 並同時報告位置。",
+      "check": "值與 x 是否分開寫清楚？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "y=2(x-4)²-7 的全域最小值。",
+      "solutionSteps": [
+        "a=2>0，開口向上。",
+        "頂點 (4,-7) 為最低點。"
+      ],
+      "answer": "最小值 -7，在 x=4 取得；無最大值。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "y=-(x+1)²+9 的全域最大值。",
+      "solutionSteps": [
+        "a=-1<0，開口向下。",
+        "頂點 (-1,9) 為最高點。"
+      ],
+      "answer": "最大值 9，在 x=-1 取得；無最小值。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "y=(x-2)²，限制 0≤x≤5，求最大值。",
+      "solutionSteps": [
+        "頂點 x=2 在區間，給最小值 0。",
+        "端點 y(0)=4、y(5)=9，比較得最大 9。"
+      ],
+      "answer": "最大值 9，在 x=5 取得。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "y=-(x-3)²+10，限制 4≤x≤6，求最大值。",
+      "solutionSteps": [
+        "頂點 x=3 不在區間。",
+        "y(4)=9、y(6)=1，區間內最大為 9。"
+      ],
+      "answer": "最大值 9，在 x=4 取得。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "某面積 A=-2(t-5)²+50，0≤t≤8，何時最大？",
+      "solutionSteps": [
+        "頂點 t=5 在允許範圍。",
+        "開口向下，頂點給最大值。"
+      ],
+      "answer": "t=5 時最大，最大面積 50。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "由頂點式直接讀極值。",
+    "standard": "分清值與位置。",
+    "advanced": "在有限區間比較端點與頂點。",
+    "literacy": "解釋高度、收益或面積模型的最佳時刻與最大量。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "向上拋物線說有最大值。",
+      "why": "只看圖中有限畫面。",
+      "correction": "無限制時兩端可無限上升。"
+    },
+    {
+      "mistake": "把 h 當最小值。",
+      "why": "混淆頂點兩座標。",
+      "correction": "h 是位置，k 是極值。"
+    },
+    {
+      "mistake": "限制區間仍直接用頂點。",
+      "why": "未檢查 h 是否允許。",
+      "correction": "先判 h 是否在區間。"
+    },
+    {
+      "mistake": "只比較兩端，漏掉區間內頂點。",
+      "why": "忽略曲線轉折。",
+      "correction": "候選為端點加區間內頂點。"
+    },
+    {
+      "mistake": "把最大值寫成座標。",
+      "why": "所求量語意不清。",
+      "correction": "寫「最大值 y=…，在 x=…」。"
+    },
+    {
+      "mistake": "忽略情境中的非負或時間範圍。",
+      "why": "使用不合理的 x。",
+      "correction": "先抄下定義域限制。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "y=3(x+2)²-4 的最小值？",
+      "answer": "-4，在 x=-2。"
+    },
+    {
+      "prompt": "y=-5(x-1)²+6 的最大值？",
+      "answer": "6，在 x=1。"
+    },
+    {
+      "prompt": "向上拋物線無限制時有最大值嗎？",
+      "answer": "沒有。"
+    },
+    {
+      "prompt": "有限閉區間要檢查哪些點？",
+      "answer": "兩端點與區間內頂點。"
+    }
+  ],
+  "summary": [
+    "開口向上：頂點給最小值；開口向下：頂點給最大值。",
+    "h 是極值發生位置，k 是極值。",
+    "無限制時另一側通常不存在極值。",
+    "有限閉區間要比較端點與區間內頂點。"
+  ],
+  "connections": {
+    "previous": "由值表與圖形準確找出頂點。",
+    "next": [
+      "下一技能會把長方形面積寫成二次函數並求最大值。",
+      "素養題會要求同時解釋最佳值與實際意義。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s009-01"
+  ],
+  "accessibilityNotes": [
+    "限制區間以粗線段標示，端點與頂點均附座標文字，不能只靠曲線顏色判斷。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s009-v001",
+      "u21-s009-v002",
+      "u21-s009-v003",
+      "u21-s009-v004",
+      "u21-s009-v005",
+      "u21-s009-v006",
+      "u21-s009-v007",
+      "u21-s009-v008",
+      "u21-s009-v009",
+      "u21-s009-v010",
+      "u21-s009-v011",
+      "u21-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s009-cr001",
+      "u21-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐項比較區間例：y=(x-2)² 在 [0,5] 的端點值 4、9 與頂點值 0；另核對頂點不在 [4,6] 時最大值來自 x=4。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "d8ec1904d41b987005cc2a9f6528360769e377bde8b31260d8633a3d7c18057c"
+}

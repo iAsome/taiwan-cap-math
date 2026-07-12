@@ -1,0 +1,235 @@
+{
+  "lectureId": "u08-s010-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-measure",
+  "skillId": "composite-area-text",
+  "lockedSkillTitle": "文字敘述的複合面積",
+  "title": "文字敘述的複合面積：先建立整體再加減區塊",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能從文字辨認外框、挖除區與重疊區。",
+    "能用分割相加或整體相減求複合面積。",
+    "能處理等寬走道與邊框。",
+    "能檢查是否重複計算或漏算。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "perimeter-area-basic"
+    ],
+    "bridgeExplanation": "先熟悉基本圖形面積，再把複合圖形看成幾個已知面積的加減。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "perimeter-area-basic",
+      "requiredLevel": "能計算長方形、三角形、平行四邊形與梯形面積，並使用平方單位。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "外框",
+      "definition": "包含整個圖形的基本大圖形。"
+    },
+    {
+      "term": "挖除",
+      "definition": "從整體移去的區域，面積用減法。"
+    },
+    {
+      "term": "拼接",
+      "definition": "不重疊區塊合併，面積用加法。"
+    },
+    {
+      "term": "重疊區",
+      "definition": "兩區同時包含的部分，直接相加時會被算兩次。"
+    },
+    {
+      "term": "等寬邊框",
+      "definition": "沿外框四周寬度相同的帶狀區域。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "複合面積=整體−挖除",
+      "meaning": "適合有洞或空白區。"
+    },
+    {
+      "symbol": "聯集面積=A+B−重疊",
+      "meaning": "兩區有重疊時避免重複計算。"
+    }
+  ],
+  "conceptDevelopment": [
+    "沒有圖也能解複合面積，關鍵是把文字轉成『哪一塊包含哪一塊』。先列尺寸與位置，再決定加法或減法。",
+    "外框挖去內框時，內框每個方向通常要減去兩側邊寬。例如長方形四周各留 1 公尺，內長與內寬都各減 2 公尺。",
+    "兩個區域若不重疊，面積直接相加；若重疊，A+B 會把重疊算兩次，所以要減一次。",
+    "分割法與補形法應得到相同結果，可互相驗算。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "分割法",
+      "statement": "把圖形切成互不重疊的基本區塊，再相加。"
+    },
+    {
+      "name": "補形法",
+      "statement": "先算容易的外框，再減去不需要的區域。"
+    },
+    {
+      "name": "包含排除",
+      "statement": "兩集合面積相加後減去重疊一次。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "外框邊框面積=外框面積−內框面積",
+      "conditions": [
+        "內框完全位於外框內"
+      ],
+      "meaning": "求四周帶狀區。"
+    },
+    {
+      "formula": "A∪B 面積=A面積+B面積−重疊面積",
+      "conditions": [
+        "A、B 可能重疊"
+      ],
+      "meaning": "避免重複計數。"
+    }
+  ],
+  "invalidUseCases": [
+    "四周寬 1 公尺時，內長不是只減 1 公尺，而是減左右兩側共 2 公尺。",
+    "挖除區不能相加。",
+    "兩區共享邊界但沒有面積重疊時，不需減重疊。",
+    "文字未說重疊或包含時，不可自行假設。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "列出所有區域與尺寸。",
+      "check": "標明外框、內框、挖除或重疊。"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇分割相加或整體相減。",
+      "check": "優先選區塊較少的表示。"
+    },
+    {
+      "step": 3,
+      "instruction": "確認區塊是否互不重疊。",
+      "check": "若重疊，使用包含排除。"
+    },
+    {
+      "step": 4,
+      "instruction": "計算並以另一種分法做合理性檢查。",
+      "check": "結果應小於外框面積且不為負。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "一塊 12×8 平方公尺長方形草地挖去 3×2 平方公尺花圃，草地剩餘面積？",
+      "solutionSteps": [
+        "外框面積 12×8=96。",
+        "挖除 3×2=6。",
+        "96−6=90。"
+      ],
+      "answer": "90 平方公尺。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩個互不重疊長方形面積分別為 24、35 平方公分，拼接後面積？",
+      "solutionSteps": [
+        "沒有重疊，直接相加。",
+        "24+35=59。"
+      ],
+      "answer": "59 平方公分。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "10×7 公尺地坪四周內側留 1 公尺等寬走道，中央區面積？",
+      "solutionSteps": [
+        "內長=10−2=8，內寬=7−2=5。",
+        "中央面積=8×5=40。"
+      ],
+      "answer": "40 平方公尺。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "區域 A 面積 50、B 面積 32，重疊 12 平方公尺，合併覆蓋面積？",
+      "solutionSteps": [
+        "相加得 82，但重疊算了兩次。",
+        "82−12=70。"
+      ],
+      "answer": "70 平方公尺。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "整體減去單一挖除區。",
+    "standard": "四周等寬邊框與分割拼接。",
+    "advanced": "處理重疊區與多步尺寸推算。",
+    "literacy": "公園步道、建築中庭、材料裁切與塗裝面積都需先判斷包含或重疊。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "挖除面積仍用加法。",
+      "why": "沒有辨認空白區。",
+      "correction": "整體減去挖除。"
+    },
+    {
+      "mistake": "四周邊框只讓長寬各減一次寬度。",
+      "why": "漏掉兩側。",
+      "correction": "內長與內寬各減 2×邊寬。"
+    },
+    {
+      "mistake": "兩重疊區直接相加。",
+      "why": "重疊算兩次。",
+      "correction": "相加後減重疊一次。"
+    },
+    {
+      "mistake": "共享一條邊也減重疊。",
+      "why": "邊界長度沒有面積。",
+      "correction": "只有有寬度的共同區域才算重疊面積。"
+    },
+    {
+      "mistake": "結果大於外框卻未檢查。",
+      "why": "加減方向可能錯。",
+      "correction": "剩餘或內框面積應不超過外框。"
+    },
+    {
+      "mistake": "把公尺尺寸算完寫公尺。",
+      "why": "面積單位漏平方。",
+      "correction": "結果寫平方公尺。"
+    }
+  ],
+  "selfCheckItems": [
+    "哪些區域要保留，哪些要移除？",
+    "區塊是否重疊？",
+    "四周邊寬是否要扣兩次？",
+    "結果是否符合小於外框且非負？"
+  ],
+  "conciseSummary": [
+    "複合面積可用分割相加或整體相減。",
+    "重疊區在直接相加時要減一次。",
+    "四周等寬邊框使內長、內寬各減兩倍邊寬。",
+    "先畫文字關係草稿再運算。"
+  ],
+  "connections": {
+    "previous": "上一技能提供各基本圖形面積公式。",
+    "next": [
+      "下一技能處理長度與面積單位換算，確保複合面積各尺寸可運算。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "四個例題分別重算為 90、59、40、70；等寬走道內長與內寬均扣兩側，重疊例題使用 50+32−12，且所有答案保持平方單位。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "3b412b4a1b4d0e726cd76217bac754ed45ee3cbdf7c011cbe016015c716d512c"
+}

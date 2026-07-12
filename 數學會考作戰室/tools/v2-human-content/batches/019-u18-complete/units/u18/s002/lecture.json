@@ -1,0 +1,257 @@
+{
+  "lectureId": "u18-s002-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-ratio",
+  "skillId": "continued-ratio-application",
+  "lockedSkillOrder": 2,
+  "lockedSkillTitle": "連比應用",
+  "title": "連比應用：由份數求總量與部分和差",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能把 A:B:C=m:n:p 轉成 A=mk、B=nk、C=pk。",
+    "能利用總和、差或某一部分求出共同倍數 k。",
+    "能依連比正確分配總量並保留單位。",
+    "能判斷題目資料是否足以唯一決定各量。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "continued-ratio",
+        "title": "連比化簡",
+        "requiredLevel": "能運用「連比化簡」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「連比化簡」，先複習其核心判斷，再把方法推進到「連比應用」。"
+  },
+  "glossary": [
+    {
+      "term": "共同倍數",
+      "definition": "把每一項份數換成實際量時共用的倍率，常以 k 表示。"
+    },
+    {
+      "term": "總份數",
+      "definition": "連比各項相加，例如 3:4:5 的總份數為 12。"
+    },
+    {
+      "term": "單位份量",
+      "definition": "總量除以總份數後，每一份代表的實際量。"
+    },
+    {
+      "term": "差份數",
+      "definition": "兩項份數相減，與兩個實際量的差相對應。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "A:B:C=m:n:p",
+      "meaning": "存在同一個 k>0，使 A=mk、B=nk、C=pk。"
+    },
+    {
+      "symbol": "k",
+      "meaning": "共同倍數或每一份的實際量。"
+    },
+    {
+      "symbol": "m+n+p",
+      "meaning": "總份數。"
+    }
+  ],
+  "conceptNarrative": [
+    "連比只告訴相對大小，還不能直接知道實際量。要得到實際量，至少還需要一個額外條件，例如總和、某一項、兩項差或其他方程。",
+    "若 A:B:C=2:3:5，可設 A=2k、B=3k、C=5k。所有條件都應先翻成含 k 的等式，再求 k。",
+    "用總量分配時，先求單位份量；用差求量時，先算差了幾份。這兩種方法本質上都是找 k。",
+    "分配後必須檢查三個量的和、差與比是否同時符合題意，尤其金額、人數等常要求整數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "連比分配",
+      "statement": "把總量依 m:n:p 分成三部分，各部分為總量乘 m/(m+n+p)、n/(m+n+p)、p/(m+n+p)。"
+    },
+    {
+      "name": "資料充分性",
+      "statement": "連比提供兩個獨立比例關係，還需至少一個獨立數值條件才可決定三個實際量。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A=mk，B=nk，C=pk",
+      "conditions": [
+        "m、n、p 為同一最簡或等值連比的份數",
+        "k>0"
+      ],
+      "meaning": "把相對份數轉成實際量。"
+    },
+    {
+      "formula": "k=總量/(m+n+p)",
+      "conditions": [
+        "總量等於 A+B+C"
+      ],
+      "meaning": "求每一份的實際量。"
+    },
+    {
+      "formula": "k=(A-B)/(m-n)",
+      "conditions": [
+        "m≠n，且差的順序一致"
+      ],
+      "meaning": "由兩量差求共同倍數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只知道 A:B:C=2:3:4，沒有任何實際數值時，不能唯一求出 A、B、C。",
+    "總量分配時不能把最後一項 4 當作總份數。",
+    "由 A-B 求 k 時，份數也要用 m-n，不能用 m+n。",
+    "人數分配若算出非整數，需檢查題目資料是否合理，而不是任意四捨五入。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把連比化成最簡份數並確認順序。",
+      "check": "A、B、C 是否對到正確份數？"
+    },
+    {
+      "step": 2,
+      "instruction": "設 A=mk、B=nk、C=pk。",
+      "check": "是否所有量使用同一個 k？"
+    },
+    {
+      "step": 3,
+      "instruction": "把總和、差或已知部分翻成方程。",
+      "check": "差的先後順序是否一致？"
+    },
+    {
+      "step": 4,
+      "instruction": "求 k，再求各量。",
+      "check": "k 是否具有合理單位與正值？"
+    },
+    {
+      "step": 5,
+      "instruction": "回代檢查總和、差與連比。",
+      "check": "三種條件是否全部符合？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "紅、藍、綠球數比為 2:3:5，共 80 顆，各有多少？",
+      "solutionSteps": [
+        "總份數 2+3+5=10。",
+        "每份 80÷10=8 顆。",
+        "各為 16、24、40 顆。"
+      ],
+      "answer": "16 顆、24 顆、40 顆"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "甲乙丙獎金比 4:6:9，丙比甲多 2500 元，求乙。",
+      "solutionSteps": [
+        "丙與甲相差 9-4=5 份。",
+        "每份 2500÷5=500 元。",
+        "乙為 6×500=3000 元。"
+      ],
+      "answer": "3000 元"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "三段繩長比 3:5:7，第二段長 45 公分，求總長。",
+      "solutionSteps": [
+        "5 份是 45 公分，所以每份 9 公分。",
+        "總份數 15。",
+        "總長 15×9=135 公分。"
+      ],
+      "answer": "135 公分"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "A:B:C=1:2:4，且 A+B=24，求 C。",
+      "solutionSteps": [
+        "A+B 代表 3 份。",
+        "每份 24÷3=8。",
+        "C=4×8=32。"
+      ],
+      "answer": "32"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把比例項直接當實際量。",
+      "why": "忘記比例只表相對倍數。",
+      "correction": "先設共同倍數 k。"
+    },
+    {
+      "mistake": "總份數漏加一項。",
+      "why": "只看兩個相鄰比。",
+      "correction": "把全部份數列在同一行相加。"
+    },
+    {
+      "mistake": "差 5 份卻除以兩項總和。",
+      "why": "混淆總和條件與差條件。",
+      "correction": "實際差對應份數差。"
+    },
+    {
+      "mistake": "分配後任意取整數。",
+      "why": "忽略離散量不能四捨五入破壞總數。",
+      "correction": "回查資料，必要時判定題目無整數解。"
+    },
+    {
+      "mistake": "A:B:C 的對應順序抄錯。",
+      "why": "只記住數字。",
+      "correction": "在每個份數上方標出對象。"
+    }
+  ],
+  "selfCheck": [
+    "我是否設了同一個 k？",
+    "額外條件是總和、差還是某一項？",
+    "份數運算與實際量運算同型嗎？",
+    "答案總和與題目一致嗎？",
+    "答案連比可化回原比嗎？"
+  ],
+  "summary": [
+    "連比配合一個獨立數值條件才能求實際量。",
+    "設各量為份數乘同一個 k。",
+    "總量除總份數，差量除差份數。",
+    "最後要同時檢查比例與題目條件。"
+  ],
+  "connections": {
+    "previous": "先能化簡連比並辨認各項順序。",
+    "next": [
+      "比例線段會把共同倍數轉成線段長度。",
+      "連比應用題會加入較複雜的文字條件。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s002-v001",
+      "u18-s002-v002",
+      "u18-s002-v003",
+      "u18-s002-v004",
+      "u18-s002-v005",
+      "u18-s002-v006",
+      "u18-s002-v007",
+      "u18-s002-v008",
+      "u18-s002-v009",
+      "u18-s002-v010",
+      "u18-s002-v011",
+      "u18-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s002-cr001",
+      "u18-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "檢查總和、差值、單一已知量三種資料型態是否各有明確示範；所有例題均回查比例，並提醒離散量不可任意取整。"
+  },
+  "contentSha256": "8cecc1d3bfa488547cfde66989239e7894d45e5680aa1e74ca1abffac0558499"
+}

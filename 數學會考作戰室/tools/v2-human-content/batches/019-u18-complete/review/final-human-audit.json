@@ -1,0 +1,95 @@
+{
+  "auditId": "u18-final-human-audit-r1",
+  "unitId": "u18",
+  "auditedAt": "2026-07-12",
+  "auditorRole": "ChatGPT human-content author and independent reviewer",
+  "scope": {
+    "lecturesInspected": 16,
+    "mcQuestionsInspected": 192,
+    "constructedResponsesInspected": 32,
+    "figuresRenderedAndInspected": 11
+  },
+  "inspectionChecklist": {
+    "negativeSignsParenthesesFractionsRootsExponents": "pass",
+    "unitsAndSquareUnits": "pass",
+    "domainAndBoundaryConditions": "pass",
+    "alternativeInterpretations": "pass",
+    "advancedDifficultyAuthenticity": "pass",
+    "literacyContextNecessity": "pass",
+    "futureUnitKnowledgeAvoided": "pass",
+    "numberSwapVariantsRejected": "pass",
+    "figureMobileReadability": "pass",
+    "figureAnswerLeakage": "pass"
+  },
+  "actualIssuesFoundAndRepaired": [
+    {
+      "itemId": "u18-s001-v009",
+      "issue": "initial fraction-ratio correct option was 1 but independent recomputation gave 2",
+      "repair": "corrected answer to 2 and rechecked all options"
+    },
+    {
+      "itemId": "u18-s004-v004",
+      "issue": "stored correct option 45 conflicted with recomputation 60",
+      "repair": "corrected to 60"
+    },
+    {
+      "itemId": "u18-s004-v007",
+      "issue": "stored correct option 54 conflicted with recomputation 36",
+      "repair": "corrected to 36"
+    },
+    {
+      "itemId": "u18-s004-v009",
+      "issue": "stored correct option 46 conflicted with integer-multiple check 41",
+      "repair": "corrected to 41"
+    },
+    {
+      "itemId": "u18-s004-v010",
+      "issue": "1.9 kg total was incompatible with intended exact 900 g answer",
+      "repair": "changed total to 1.74 kg and rewrote solution"
+    },
+    {
+      "itemId": "u18-s004-v012",
+      "issue": "decision option contradicted computed maintenance budget",
+      "repair": "corrected decision to meets threshold"
+    },
+    {
+      "itemId": "u18-s007-v008",
+      "issue": "initial choice said AA impossible although angle sets match after reordering",
+      "repair": "corrected to △ABC∼△DFE"
+    },
+    {
+      "itemId": "u18-s008-v009",
+      "issue": "SAS conclusion and third-side measurement were inconsistent",
+      "repair": "changed correct answer to data contradiction"
+    },
+    {
+      "itemId": "u18-s013-v007",
+      "issue": "initial algebra coefficients produced a non-option irrational root",
+      "repair": "changed tower shadow from 6 m to 9 m and verified x=1.5"
+    },
+    {
+      "itemId": "u18-s015-v010",
+      "issue": "initial correct option 720 m² conflicted with square-unit conversion",
+      "repair": "corrected to 72 m² and added independent scale interpretation"
+    },
+    {
+      "itemId": "u18-s002-cr002",
+      "issue": "initial wording about additional juice did not clearly state an already-complete mixture",
+      "repair": "rewrote prompt to state the original mixture was complete before extra C was added"
+    },
+    {
+      "itemId": "figures/u18/*.svg",
+      "issue": "first raster inspection used a font-family name unavailable to the renderer, producing square glyphs",
+      "repair": "changed SVG font fallback to installed Noto Sans CJK TC and rerendered all 11 figures"
+    },
+    {
+      "itemId": "u18 lecture titles",
+      "issue": "six human-facing lecture titles contained the prohibited list separator 、",
+      "repair": "rewrote each title with conjunctions or sentence structure while preserving locked skill titles"
+    }
+  ],
+  "repairCount": 13,
+  "unresolvedMathematicalIssues": [],
+  "decision": "pass",
+  "statement": "所有記錄的修正均來自實際獨立重算、條件審核或渲染檢查；未杜撰修正項目。"
+}

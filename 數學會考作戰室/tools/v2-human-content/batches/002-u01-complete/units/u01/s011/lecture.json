@@ -1,0 +1,251 @@
+{
+  "lectureId": "u01-s011-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-arithmetic",
+  "skillId": "integer-mixed-operations",
+  "title": "整數四則混合：依序處理括號與乘除和加減",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能遵守整數四則運算順序。",
+    "能在同級運算中由左到右。",
+    "能把減法改寫為加法以避免符號錯誤。",
+    "能利用交換律與結合律簡化純加法部分。",
+    "能在情境中建立完整算式而非分段漏項。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-multiplication-division",
+      "requiredLevel": "能完成整數的乘法和除法，並理解同級運算由左到右。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "運算順序",
+      "definition": "同一算式中決定先算哪一部分的規則。"
+    },
+    {
+      "term": "括號",
+      "definition": "指定必須先處理的部分。"
+    },
+    {
+      "term": "同級運算",
+      "definition": "乘與除同級，加與減同級。"
+    },
+    {
+      "term": "由左到右",
+      "definition": "同級且沒有其他括號時，按照出現順序計算。"
+    },
+    {
+      "term": "完整算式",
+      "definition": "把情境中的起始量與所有變化一次表達清楚。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "( )",
+      "meaning": "括號內先算。"
+    },
+    {
+      "symbol": "×、÷",
+      "meaning": "在沒有更內層括號時，先於加減。"
+    },
+    {
+      "symbol": "+、-",
+      "meaning": "乘除完成後，由左到右處理。"
+    }
+  ],
+  "conceptNarrative": [
+    "四則混合不能只看哪個數容易算。標準順序是先括號，再乘除，最後加減；同級由左到右。",
+    "加減部分若全部改寫成帶號加法，可使用交換律與結合律，但乘除與加法混合時不可任意換序。",
+    "負數應使用括號，特別是除法與乘法，例如 12÷(-3)。",
+    "情境題先列完整式，逐項標示意義，再依順序計算，能避免漏掉固定費或初始值。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "四則順序",
+      "statement": "先括號，次乘除，後加減；同級由左到右。"
+    },
+    {
+      "name": "括號層級",
+      "statement": "有多層括號時由最內層開始。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "括號 → 乘除 → 加減",
+      "conditions": [
+        "同級運算由左到右"
+      ],
+      "meaning": "標準計算流程。"
+    },
+    {
+      "formula": "a-b=a+(-b)",
+      "conditions": [
+        "用於加減整理"
+      ],
+      "meaning": "把減法統一為帶號加法。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把加法先算，只因為它看起來容易。",
+    "乘除同級，不是乘法永遠先於除法。",
+    "加減同級，不是加法永遠先於減法。",
+    "括號前若有負號或乘號，括號值算完後仍要處理外部運算。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出最內層括號。",
+      "check": "是否有遺漏括號？"
+    },
+    {
+      "step": 2,
+      "instruction": "完成所有乘除，由左到右。",
+      "check": "除法是否誤跳過？"
+    },
+    {
+      "step": 3,
+      "instruction": "完成加減，由左到右。",
+      "check": "負號是否跟著數？"
+    },
+    {
+      "step": 4,
+      "instruction": "每一步只改一個局部。",
+      "check": "抄寫其他項時是否變號？"
+    },
+    {
+      "step": 5,
+      "instruction": "以估算與情境檢查。",
+      "check": "結果大小和方向合理嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "計算 8+(-3)×5。",
+      "solutionSteps": [
+        "先乘法：(-3)×5=-15。",
+        "算式成 8+(-15)。",
+        "結果 -7。"
+      ],
+      "answer": "-7。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "計算 24÷(-6)-3。",
+      "solutionSteps": [
+        "先除法：24÷(-6)=-4。",
+        "再算 -4-3。",
+        "結果 -7。"
+      ],
+      "answer": "-7。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "計算 18-[4+(-7)]×2。",
+      "solutionSteps": [
+        "括號 4+(-7)=-3。",
+        "乘法 (-3)×2=-6。",
+        "18-(-6)=24。"
+      ],
+      "answer": "24。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "計算 -30÷5×2+9。",
+      "solutionSteps": [
+        "乘除同級由左到右：-30÷5=-6。",
+        "再 -6×2=-12。",
+        "最後 -12+9=-3。"
+      ],
+      "answer": "-3。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "先算 8+(-3)。",
+      "why": "忽略乘法優先。",
+      "correction": "先算 (-3)×5。"
+    },
+    {
+      "mistake": "乘除式先算右邊乘法。",
+      "why": "誤認乘法一定先於除法。",
+      "correction": "同級由左到右。"
+    },
+    {
+      "mistake": "加減式先做加法。",
+      "why": "誤認加法優先。",
+      "correction": "同級由左到右。"
+    },
+    {
+      "mistake": "括號算完後漏掉外部負號。",
+      "why": "只關注括號內。",
+      "correction": "抄下並處理括號外運算。"
+    },
+    {
+      "mistake": "每一步同時改多處導致變號。",
+      "why": "省略中間步驟。",
+      "correction": "一次只處理一個局部。"
+    },
+    {
+      "mistake": "情境列式漏掉起始量。",
+      "why": "只列變化項。",
+      "correction": "先寫起始量，再接全部變化。"
+    }
+  ],
+  "selfCheck": [
+    "括號先算了嗎？",
+    "乘除是否由左到右？",
+    "加減是否由左到右？",
+    "負數有括號嗎？",
+    "每一步是否只改必要部分？"
+  ],
+  "summary": [
+    "順序：括號、乘除、加減。",
+    "同級運算由左到右。",
+    "減法可改寫成加上相反數。",
+    "完整列式後再計算。"
+  ],
+  "connections": {
+    "previous": "先備技能是整數加減乘除。",
+    "next": [
+      "指數會在後續加入比乘除更優先的運算。",
+      "科學記號運算需要指數與乘除順序。",
+      "綜合素養題會以完整算式整合多個條件。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s011-v001",
+      "u01-s011-v002",
+      "u01-s011-v003",
+      "u01-s011-v004",
+      "u01-s011-v005",
+      "u01-s011-v006",
+      "u01-s011-v007",
+      "u01-s011-v008",
+      "u01-s011-v009",
+      "u01-s011-v010",
+      "u01-s011-v011",
+      "u01-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s011-cr001",
+      "u01-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐式按照括號、乘除、加減順序重算，並核對同級運算由左到右，未以表面順序取代運算規則。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "81ea334152405500f2186a9e2de0a6b6238a643b1f8d15a02eba3b0da4bcefb0",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

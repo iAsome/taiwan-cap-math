@@ -1,0 +1,282 @@
+{
+  "unitId": "u06",
+  "unitTitleLocked": "比例式",
+  "numericUnitId": 6,
+  "lockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+  "lockedSkillCount": 12,
+  "titleDecisions": [
+    {
+      "slot": "s001",
+      "skillId": "ratio-simplify",
+      "originalTitle": "比的化簡",
+      "finalTitle": "比的化簡",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s002",
+      "skillId": "proportion-solve",
+      "originalTitle": "比例式求解",
+      "finalTitle": "比例式求解",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s003",
+      "skillId": "ratio-part-total",
+      "originalTitle": "部分量與總量",
+      "finalTitle": "部分量與總量",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s004",
+      "skillId": "proportion-property",
+      "originalTitle": "比例式性質",
+      "finalTitle": "比例式性質",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s005",
+      "skillId": "direct-variation",
+      "originalTitle": "正比",
+      "finalTitle": "正比",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s006",
+      "skillId": "inverse-variation",
+      "originalTitle": "反比",
+      "finalTitle": "反比",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s007",
+      "skillId": "inverse-variation-graph",
+      "originalTitle": "反比圖形概念",
+      "finalTitle": "反比圖形概念",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s008",
+      "skillId": "scale-drawing",
+      "originalTitle": "比例尺",
+      "finalTitle": "比例尺",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s009",
+      "skillId": "ratio-word-problem",
+      "originalTitle": "比例應用題",
+      "finalTitle": "比例應用題",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s010",
+      "skillId": "continued-ratio-preview",
+      "originalTitle": "連比預備",
+      "finalTitle": "連比預備",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s011",
+      "skillId": "ratio-composite-problem",
+      "originalTitle": "比例複合應用",
+      "finalTitle": "比例複合應用",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    },
+    {
+      "slot": "s012",
+      "skillId": "ratio-literacy",
+      "originalTitle": "比例素養題",
+      "finalTitle": "比例素養題",
+      "changed": false,
+      "reason": "鎖定標題清楚、符合臺灣國中用語且不含內部頓號，無需修改。"
+    }
+  ],
+  "topicDecisions": [
+    {
+      "topicId": "u06-ratio-basics",
+      "title": "比與比例式基礎",
+      "order": 1,
+      "skillIds": [
+        "ratio-simplify",
+        "proportion-solve",
+        "ratio-part-total",
+        "proportion-property"
+      ]
+    },
+    {
+      "topicId": "u06-variation",
+      "title": "正比與反比",
+      "order": 2,
+      "skillIds": [
+        "direct-variation",
+        "inverse-variation",
+        "inverse-variation-graph"
+      ]
+    },
+    {
+      "topicId": "u06-applications",
+      "title": "比例應用",
+      "order": 3,
+      "skillIds": [
+        "scale-drawing",
+        "ratio-word-problem",
+        "continued-ratio-preview",
+        "ratio-composite-problem"
+      ]
+    },
+    {
+      "topicId": "u06-literacy",
+      "title": "比例素養",
+      "order": 4,
+      "skillIds": [
+        "ratio-literacy"
+      ]
+    }
+  ],
+  "boundaryDecisions": [
+    {
+      "boundary": "連比預備與 U18",
+      "decision": "U06 只處理兩個比例共享中間量時的對齊與合併概念，不教授 U18 的完整連比系統。"
+    },
+    {
+      "boundary": "反比圖形",
+      "decision": "限第一象限正數情境的概念判讀，不引入高中函數漸近線術語或負值分支。"
+    },
+    {
+      "boundary": "比例尺",
+      "decision": "處理數值比例尺、圖上距離與實際距離之單位換算，不延伸至地理投影。"
+    }
+  ],
+  "skills": [
+    {
+      "slot": "s001",
+      "skillId": "ratio-simplify",
+      "title": "比的化簡",
+      "topicId": "u06-ratio-basics",
+      "order": 1,
+      "prerequisiteSkillIds": []
+    },
+    {
+      "slot": "s002",
+      "skillId": "proportion-solve",
+      "title": "比例式求解",
+      "topicId": "u06-ratio-basics",
+      "order": 2,
+      "prerequisiteSkillIds": [
+        "ratio-simplify"
+      ]
+    },
+    {
+      "slot": "s003",
+      "skillId": "ratio-part-total",
+      "title": "部分量與總量",
+      "topicId": "u06-ratio-basics",
+      "order": 3,
+      "prerequisiteSkillIds": [
+        "proportion-solve"
+      ]
+    },
+    {
+      "slot": "s004",
+      "skillId": "proportion-property",
+      "title": "比例式性質",
+      "topicId": "u06-ratio-basics",
+      "order": 4,
+      "prerequisiteSkillIds": [
+        "ratio-part-total"
+      ]
+    },
+    {
+      "slot": "s005",
+      "skillId": "direct-variation",
+      "title": "正比",
+      "topicId": "u06-variation",
+      "order": 5,
+      "prerequisiteSkillIds": [
+        "proportion-property"
+      ]
+    },
+    {
+      "slot": "s006",
+      "skillId": "inverse-variation",
+      "title": "反比",
+      "topicId": "u06-variation",
+      "order": 6,
+      "prerequisiteSkillIds": [
+        "direct-variation"
+      ]
+    },
+    {
+      "slot": "s007",
+      "skillId": "inverse-variation-graph",
+      "title": "反比圖形概念",
+      "topicId": "u06-variation",
+      "order": 7,
+      "prerequisiteSkillIds": [
+        "inverse-variation"
+      ]
+    },
+    {
+      "slot": "s008",
+      "skillId": "scale-drawing",
+      "title": "比例尺",
+      "topicId": "u06-applications",
+      "order": 8,
+      "prerequisiteSkillIds": [
+        "inverse-variation-graph"
+      ]
+    },
+    {
+      "slot": "s009",
+      "skillId": "ratio-word-problem",
+      "title": "比例應用題",
+      "topicId": "u06-applications",
+      "order": 9,
+      "prerequisiteSkillIds": [
+        "scale-drawing"
+      ]
+    },
+    {
+      "slot": "s010",
+      "skillId": "continued-ratio-preview",
+      "title": "連比預備",
+      "topicId": "u06-applications",
+      "order": 10,
+      "prerequisiteSkillIds": [
+        "ratio-word-problem"
+      ]
+    },
+    {
+      "slot": "s011",
+      "skillId": "ratio-composite-problem",
+      "title": "比例複合應用",
+      "topicId": "u06-applications",
+      "order": 11,
+      "prerequisiteSkillIds": [
+        "continued-ratio-preview"
+      ]
+    },
+    {
+      "slot": "s012",
+      "skillId": "ratio-literacy",
+      "title": "比例素養題",
+      "topicId": "u06-literacy",
+      "order": 12,
+      "prerequisiteSkillIds": [
+        "ratio-composite-problem"
+      ]
+    }
+  ],
+  "crossUnitChangeMade": false
+}

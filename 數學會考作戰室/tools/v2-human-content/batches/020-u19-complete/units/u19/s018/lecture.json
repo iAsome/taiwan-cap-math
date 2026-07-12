@@ -1,0 +1,247 @@
+{
+  "lectureId": "u19-s018-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-literacy",
+  "skillId": "circle-literacy",
+  "title": "圓素養題",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s018",
+    "lockedSkillId": "circle-literacy",
+    "lockedOrder": 18,
+    "scope": "把輪子、跑道、灑水器與圓形設計轉成圓的模型。"
+  },
+  "learningOutcomes": [
+    "能把生活情境轉成半徑、圓周長、弧長或面積。",
+    "能判斷應計算距離、面積或角度。",
+    "能處理圈數、比例尺與近似值。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "two-tangent-segments",
+      "requiredLevel": "能使用「切線段相等」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「切線段相等」的結論，連接到本技能「圓素養題」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "滾動距離",
+      "definition": "輪子無滑動時，圈數乘輪周長。"
+    },
+    {
+      "term": "覆蓋面積",
+      "definition": "灑水器或旋轉臂掃過的區域面積。"
+    },
+    {
+      "term": "安全間距",
+      "definition": "由半徑、直徑或切線條件決定的最小距離。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "圓素養題的第一步是決定模型：輪子滾動通常用圓周長，旋轉掃過區域通常用扇形面積，跑道彎道通常用弧長。",
+    "情境中的「直徑40公分」與「半徑40公分」會造成兩倍長度、四倍面積差異，必須先整理單位。",
+    "近似計算應在最後一步進行，並依題目指定π或四捨五入位數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "滾動距離",
+      "statement": "輪子無滑動時，圈數乘輪周長。"
+    },
+    {
+      "name": "覆蓋面積",
+      "statement": "灑水器或旋轉臂掃過的區域面積。"
+    },
+    {
+      "name": "安全間距",
+      "statement": "由半徑、直徑或切線條件決定的最小距離。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "滾動距離=圈數×2πr",
+      "conditions": [
+        "輪子無打滑"
+      ],
+      "meaning": "輪周長模型"
+    },
+    {
+      "formula": "掃過面積=(θ/360°)πr²",
+      "conditions": [
+        "旋轉半徑固定"
+      ],
+      "meaning": "扇形模型"
+    }
+  ],
+  "nonApplicableCases": [
+    "輪子若打滑，圈數乘周長不等於實際距離。",
+    "只求材料邊框用周長，不用面積。",
+    "不同單位未換算不能直接相加。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出情境中的半徑、直徑、角度與圈數。",
+      "check": "完成此步後，確認仍在「圓素養題」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷所求是長度、面積或角度。",
+      "check": "完成此步後，確認仍在「圓素養題」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "選擇圓周、弧長、扇形或切線模型。",
+      "check": "完成此步後，確認仍在「圓素養題」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "統一單位後計算。",
+      "check": "完成此步後，確認仍在「圓素養題」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "最後取近似並用情境語句回答。",
+      "check": "完成此步後，確認仍在「圓素養題」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s018-L1",
+      "prompt": "直徑70 cm輪子轉10圈。",
+      "solutionSteps": [
+        "每圈70π cm。",
+        "總距離700π cm。"
+      ],
+      "answer": "700π cm。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s018-L2",
+      "prompt": "半徑6 m灑水器轉120°。",
+      "solutionSteps": [
+        "面積=1/3×36π。"
+      ],
+      "answer": "12π m²。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s018-L3",
+      "prompt": "半徑20 m跑道半圓彎道。",
+      "solutionSteps": [
+        "弧長=20π m。"
+      ],
+      "answer": "20π m。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s018-L4",
+      "prompt": "圓形桌直徑1.2 m，桌布半徑需多出0.1 m。",
+      "solutionSteps": [
+        "桌半徑0.6 m。",
+        "桌布半徑0.7 m。"
+      ],
+      "answer": "0.7 m。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「圓素養題」的定義、符號與單一步驟關係。",
+    "standard": "把「圓素養題」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「圓素養題」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「圓素養題」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "看到圓就一律算面積",
+      "why": "未辨認所求量",
+      "correction": "距離用周長，覆蓋用面積"
+    },
+    {
+      "mistake": "公分與公尺直接混算",
+      "why": "單位不一致",
+      "correction": "先統一單位"
+    },
+    {
+      "mistake": "直徑當半徑",
+      "why": "讀題疏忽",
+      "correction": "明確寫r=d/2"
+    },
+    {
+      "mistake": "中途反覆取3.14",
+      "why": "累積誤差",
+      "correction": "最後一步才近似"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「圓素養題」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "先把生活描述轉成圓的量。",
+    "依所求選周長、弧長、面積或切線模型。",
+    "統一單位並在最後取近似值。"
+  ],
+  "connections": {
+    "previous": "承接「切線段相等」。",
+    "next": "完成U19所有圓性質後進入中央整合與跨單元應用。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s018-fig001",
+      "purpose": "左側輪子以箭頭表示滾動一圈，右側灑水器以扇形表示旋轉覆蓋，對比長度與面積模型。",
+      "altText": "左側輪子以箭頭表示滾動一圈，右側灑水器以扇形表示旋轉覆蓋，對比長度與面積模型。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s018-v001",
+      "u19-s018-v002",
+      "u19-s018-v003",
+      "u19-s018-v004",
+      "u19-s018-v005",
+      "u19-s018-v006",
+      "u19-s018-v007",
+      "u19-s018-v008",
+      "u19-s018-v009",
+      "u19-s018-v010",
+      "u19-s018-v011",
+      "u19-s018-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s018-cr001",
+      "u19-s018-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「圓素養題」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：把輪子、跑道、灑水器與圓形設計轉成圓的模型。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "9292edeb6f5c52fd88821858fccd3892d99879b7ff04ceff01795f039a871106"
+}

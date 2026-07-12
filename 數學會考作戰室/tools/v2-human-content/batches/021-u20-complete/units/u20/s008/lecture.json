@@ -1,0 +1,192 @@
+{
+  "lectureId": "u20-s008-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-centers",
+  "skillId": "centroid",
+  "skillSlot": "s008",
+  "lockedSkillTitle": "重心",
+  "title": "重心：三條中線與均勻三角形的平衡",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認中線與重心。",
+    "能說明三中線共點。",
+    "能連結均勻薄板平衡與幾何重心，並知道模型限制。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "incenter",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「incenter」再進入本節。",
+  "glossary": [
+    {
+      "term": "中線",
+      "definition": "從頂點連到對邊中點的線段。"
+    },
+    {
+      "term": "重心",
+      "definition": "三條中線的共同交點。"
+    },
+    {
+      "term": "均勻",
+      "definition": "相同面積具有相同質量，且厚度一致的理想條件。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "G",
+      "meaning": "常用來表示重心。"
+    },
+    {
+      "symbol": "M",
+      "meaning": "常用作某邊中點，須由題目確認。"
+    }
+  ],
+  "conceptNarrative": [
+    "中線的『中』指對邊中點，不表示它一定垂直、平分頂角或穿過視覺中央。",
+    "任兩條中線交點即可定位重心，第三條也必通過。重心一定在三角形內。",
+    "均勻三角形薄板的質量平均分布，幾何重心可作理想平衡點；附加重物會破壞這個模型。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "重心定義",
+      "statement": "三角形三中線交點。"
+    },
+    {
+      "name": "中線面積性質",
+      "statement": "任一中線把三角形分成兩個等面積三角形。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "G＝三條中線共同交點",
+      "conditions": [
+        "每條線連接頂點與對邊中點"
+      ],
+      "meaning": "重心的結構判定。"
+    }
+  ],
+  "nonApplicableCases": [
+    "中線不一定垂直對邊。",
+    "重心不保證到頂點或邊等距。",
+    "不均勻物體的實際質心不一定在幾何重心。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找一邊中點M。",
+      "check": "兩小段是否有等長依據？"
+    },
+    {
+      "step": 2,
+      "instruction": "由對面頂點連到M。",
+      "check": "線段是否真為中線？"
+    },
+    {
+      "step": 3,
+      "instruction": "再作另一條中線並取交點G。",
+      "check": "兩條中線來自不同頂點。"
+    },
+    {
+      "step": 4,
+      "instruction": "用第三條中線複核。",
+      "check": "是否也通過G？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "M是BC中點。AM是什麼？",
+      "solutionSteps": [
+        "A是對面頂點。",
+        "M是BC中點。"
+      ],
+      "answer": "AM是中線。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "均勻三角形紙板選單點支撐。",
+      "solutionSteps": [
+        "質量隨面積均勻。",
+        "面積中心是三中線交點。"
+      ],
+      "answer": "先選重心。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把高當中線。",
+      "why": "垂足不一定是中點。",
+      "correction": "檢查對邊是否被平分。"
+    },
+    {
+      "mistake": "認為重心到三頂點等距。",
+      "why": "混用外心。",
+      "correction": "重心的核心是中線。"
+    },
+    {
+      "mistake": "對有重物的板仍直接用重心。",
+      "why": "均勻假設失效。",
+      "correction": "改找實際質心。"
+    }
+  ],
+  "selfCheck": [
+    "每條線是否連到對邊中點？",
+    "重心是否在內部？",
+    "我是否誤用了等距性質？",
+    "物理應用是否真的均勻？"
+  ],
+  "summary": [
+    "中線連結頂點與對邊中點。",
+    "三中線交於重心。",
+    "重心一定在內部。",
+    "均勻薄板才以幾何重心作理想平衡點。"
+  ],
+  "connections": {
+    "previous": "先備：incenter",
+    "next": [
+      "下一技能介紹三條高交成的垂心。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u20-centroid-survey-01"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s008-v001",
+      "u20-s008-v002",
+      "u20-s008-v003",
+      "u20-s008-v004",
+      "u20-s008-v005",
+      "u20-s008-v006",
+      "u20-s008-v007",
+      "u20-s008-v008",
+      "u20-s008-v009",
+      "u20-s008-v010",
+      "u20-s008-v011",
+      "u20-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s008-cr001",
+      "u20-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "講義將幾何定義與物理模型分開，避免把重心泛化成所有最佳位置。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "9053d1dff7bd1a9be4d05bbd6a9b5c1263341d1dec35c08bb48fbf6d88b495b1"
+}

@@ -1,0 +1,1599 @@
+// Emitted only from reviewed immutable source.
+export default {
+  "lecture": {
+    "lectureId": "u15-s001-lecture",
+    "unitId": "u15",
+    "numericUnitId": 15,
+    "unitTitle": "函數及其圖形",
+    "topicId": "u15-basics",
+    "skillId": "function-definition",
+    "skillSlot": "s001",
+    "skillTitle": "函數定義",
+    "order": 1,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "prerequisites": [
+      {
+        "skillId": null,
+        "title": "國小數量對應與基本代數",
+        "requiredLevel": "能讀懂表格中的一列資料，並分辨先給的數與算出的數。",
+        "bridge": "從日常「輸入一個條件，得到一個結果」開始建立函數概念。"
+      }
+    ],
+    "learningGoals": [
+      "判斷一個對應關係是否為函數",
+      "說明「每個輸入恰有一個輸出」的真正含義",
+      "辨認表格、序對、文字與箭線圖中的函數"
+    ],
+    "vocabulary": [
+      {
+        "term": "輸入",
+        "meaning": "先指定或選取的值"
+      },
+      {
+        "term": "輸出",
+        "meaning": "依規則由輸入決定的值"
+      },
+      {
+        "term": "對應",
+        "meaning": "把一個輸入連到某個輸出"
+      },
+      {
+        "term": "函數",
+        "meaning": "每個允許輸入都恰好對應一個輸出的關係"
+      }
+    ],
+    "conceptDevelopment": [
+      "函數不是「看起來像公式」才算。表格、箭線圖、文字規則都能表達函數。核心只有一條：在指定的輸入範圍內，每一個輸入必須有且只有一個輸出。",
+      "不同輸入可以得到相同輸出，例如兩位學生可以同月出生；這不違反函數。真正違反的是同一輸入被指定兩個不同輸出，或題目宣告某輸入可用卻沒有輸出。"
+    ],
+    "definitionsAndMeaning": "函數不是「看起來像公式」才算。表格、箭線圖、文字規則都能表達函數。核心只有一條：在指定的輸入範圍內，每一個輸入必須有且只有一個輸出。",
+    "formulasAndConditions": [
+      "判定句：對每個輸入 x，都存在唯一的輸出 y。",
+      "「唯一」限制的是同一個 x 的輸出數量，不限制不同 x 是否共用同一個 y。"
+    ],
+    "invalidUseCases": [
+      "只檢查輸出是否重複，便判定不是函數。",
+      "忽略題目宣告的輸入集合，沒有檢查某個輸入是否漏配。"
+    ],
+    "stepByStepMethod": [
+      "先找出題目指定的輸入集合。",
+      "逐一檢查每個輸入有沒有輸出。",
+      "再檢查同一輸入是否連到兩個不同輸出。",
+      "全部都恰有一個輸出時，才判定為函數。"
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "s001-ex01",
+        "title": "箭線圖判定",
+        "prompt": "集合 A={1,2,3} 中，1→紅、2→藍、3→紅。把 A 的元素當輸入、顏色當輸出，此箭線圖是否表示函數？說明理由。",
+        "solution": "A={1,2,3}，1→紅、2→藍、3→紅。每個輸入只有一箭，因此是函數；紅被共用不影響。",
+        "level": "basic"
+      },
+      {
+        "exampleId": "s001-ex02",
+        "title": "序對判定",
+        "prompt": "關係 R={(1,4),(2,5),(1,6)} 以第一坐標為輸入。R 是否為函數？指出造成判定的輸入。",
+        "solution": "{(1,4),(2,5),(1,6)} 中輸入 1 對應 4 與 6，因此不是函數。",
+        "level": "standard"
+      },
+      {
+        "exampleId": "s001-ex03",
+        "title": "相同序對重複",
+        "prompt": "關係 S={(2,7),(2,7),(3,8)} 重複寫了一次相同序對。忽略重複紀錄後，S 是否仍為函數？",
+        "solution": "{(2,7),(2,7),(3,8)} 即使重複寫 (2,7)，輸入 2 的輸出仍只有 7，可視為函數關係。",
+        "level": "advanced"
+      },
+      {
+        "exampleId": "s001-ex04",
+        "title": "生活規則",
+        "prompt": "某班資料規定每個學號只屬於一名學生，並記錄該生的座號。把學號當輸入、座號當輸出，是否形成函數？",
+        "solution": "學號→該生座號，在班級資料固定時，每個學號只有一個座號，所以是函數。",
+        "level": "connection"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeId": "s001-m01",
+        "wrongReasoning": "把「輸出重複」誤認成違規。",
+        "correction": "函數允許多個輸入得到同一輸出；應逐一固定輸入，確認每個輸入只有一個輸出。"
+      },
+      {
+        "mistakeId": "s001-m02",
+        "wrongReasoning": "看到兩個箭頭指向同一輸出就判錯。",
+        "correction": "兩箭頭匯到同一輸出是多對一，仍可為函數；違規的是同一輸入分叉到不同輸出。"
+      },
+      {
+        "mistakeId": "s001-m03",
+        "wrongReasoning": "忽略同一輸入在表格不同列出現不同輸出。",
+        "correction": "把第一坐標相同的資料集中比較；只要其中出現兩個不同第二坐標，就不是函數。"
+      },
+      {
+        "mistakeId": "s001-m04",
+        "wrongReasoning": "只看公式外觀，不檢查輸入限制。",
+        "correction": "先確認公式在題目定義域的每個輸入都能算出且只有一值；僅看「有公式」不能完成判定。"
+      },
+      {
+        "mistakeId": "s001-m05",
+        "wrongReasoning": "把「有規律」當成函數的充分條件。",
+        "correction": "規律可能漏掉某些輸入或給出多個結果；函數判準是全體輸入都有且只有一個輸出，不是看起來有規律。"
+      }
+    ],
+    "selfChecks": [
+      {
+        "prompt": "每位學生→生日月份是否必為函數？",
+        "answer": "是，每位學生只有一個生日月份。"
+      },
+      {
+        "prompt": "生日月份→學生是否必為函數？",
+        "answer": "不一定，同一月份常對應多人。"
+      },
+      {
+        "prompt": "同一輸入重複得到相同輸出是否違規？",
+        "answer": "不違規，輸出仍唯一。"
+      }
+    ],
+    "summary": "函數判定只抓住「每個允許輸入恰有一個輸出」。",
+    "previousSkillConnection": null,
+    "nextSkillConnection": "function-value",
+    "figureRefs": [],
+    "accessibilityNotes": [],
+    "lectureReview": {
+      "reviewVersion": "human-lecture-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "decision": "pass",
+      "reviewNote": "逐段人工重讀「函數定義」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+      "zeroFoundationCheck": "學生只需具備 能讀懂表格中的一列資料，並分辨先給的數與算出的數。",
+      "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+    },
+    "canonicalization": "sorted-keys-json-utf8-v1",
+    "contentSha256": "2bac528531e593781a5ce978c2495b273868c04c75756f928bacd2c2ee8a621e"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u15-s001-mc01",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "集合 A={1,2,3}，對應為 1→紅、2→藍、3→紅。此對應是否為由 A 到顏色集合的函數？",
+      "givenConditions": "題目以「輸入集合完整列出，顏色只是輸出標籤。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「依函數定義判斷箭線圖」。",
+      "target": "依函數定義判斷箭線圖",
+      "choices": [
+        "是，因為每個輸入都恰有一個輸出",
+        "否，因為紅色被對應兩次",
+        "否，因為輸出必須互不相同",
+        "無法判斷，因為沒有公式"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：列出輸入 1、2、3；確認各有且僅有一個輸出；判定為函數。因此得到「是，因為每個輸入都恰有一個輸出」。",
+      "explanation": "逐一檢查 1、2、3，各自都只有一個箭頭。不同輸入共用紅色不違反函數定義。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "列出輸入 1、2、3"
+        },
+        {
+          "step": 2,
+          "work": "確認各有且僅有一個輸出"
+        },
+        {
+          "step": 3,
+          "work": "判定為函數"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "是，因為每個輸入都恰有一個輸出",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；逐一檢查 1、2、3，各自都只有一個箭頭。不同輸入共用紅色不違反函數定義。"
+        },
+        {
+          "index": 1,
+          "choice": "否，因為紅色被對應兩次",
+          "truth": false,
+          "reason": "把輸出重複誤當成同一輸入有兩個輸出。"
+        },
+        {
+          "index": 2,
+          "choice": "否，因為輸出必須互不相同",
+          "truth": false,
+          "reason": "函數不要求一對一，輸出可以相同。"
+        },
+        {
+          "index": 3,
+          "choice": "無法判斷，因為沒有公式",
+          "truth": false,
+          "reason": "函數可用箭線圖表示，不必有代數公式。"
+        }
+      ],
+      "misconceptionTarget": "混淆函數與一對一對應",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「依函數定義判斷箭線圖」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 90,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「依函數定義判斷箭線圖」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「輸入集合完整列出，顏色只是輸出標籤。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「是，因為每個輸入都恰有一個輸出」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「依函數定義判斷箭線圖」只有題幹所述的一種解讀。",
+      "difficultyReason": "只需直接套用「每個輸入恰有一個輸出」，屬定義辨認。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "26db98ae4958faeef21466c49e7f54469cdbc771801caaba461fc6cfb8da70de"
+    },
+    {
+      "questionId": "u15-s001-mc02",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "關係 R={(1,4),(2,5),(1,6)}。若第一坐標是輸入，R 是否為函數？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「判斷序對集合是否代表函數」。",
+      "target": "判斷序對集合是否代表函數",
+      "choices": [
+        "是，因為共有三個序對",
+        "不是，因為輸入 1 有兩個不同輸出",
+        "是，因為每個輸出都不同",
+        "不是，因為輸入 2 只出現一次"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：找相同第一坐標；發現 1 對應 4、6；判定不是函數。因此得到「不是，因為輸入 1 有兩個不同輸出」。",
+      "explanation": "輸入 1 同時對應 4 與 6，違反唯一輸出；輸入 2 的情況正常。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "找相同第一坐標"
+        },
+        {
+          "step": 2,
+          "work": "發現 1 對應 4、6"
+        },
+        {
+          "step": 3,
+          "work": "判定不是函數"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "是，因為共有三個序對",
+          "truth": false,
+          "reason": "序對個數不決定是否為函數。"
+        },
+        {
+          "index": 1,
+          "choice": "不是，因為輸入 1 有兩個不同輸出",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；輸入 1 同時對應 4 與 6，違反唯一輸出；輸入 2 的情況正常。"
+        },
+        {
+          "index": 2,
+          "choice": "是，因為每個輸出都不同",
+          "truth": false,
+          "reason": "輸出是否互異不是判準。"
+        },
+        {
+          "index": 3,
+          "choice": "不是，因為輸入 2 只出現一次",
+          "truth": false,
+          "reason": "輸入出現一次正是正常情況。"
+        }
+      ],
+      "misconceptionTarget": "忽略重複輸入的不同輸出",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「判斷序對集合是否代表函數」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 94,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「判斷序對集合是否代表函數」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「不是，因為輸入 1 有兩個不同輸出」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「判斷序對集合是否代表函數」只有題幹所述的一種解讀。",
+      "difficultyReason": "直接檢查重複第一坐標，屬基礎判定。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "2f904deea2401ccd751e81cd4b17e32291779735c46e46d3166b4b16a2996be4"
+    },
+    {
+      "questionId": "u15-s001-mc03",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "下列哪一個關係一定是函數？",
+      "givenConditions": "題目逐項明示輸入端與輸出端；判斷只依對應是否固定唯一，不加入現實中的資料缺漏或例外情況。本題的條件審查焦點是「從文字敘述辨認函數」。",
+      "target": "從文字敘述辨認函數",
+      "choices": [
+        "每個出生年份對應該年出生的所有學生",
+        "每個整數 x 同時對應 x+1 與 x-1",
+        "每位學生對應自己的出生年份",
+        "每個班級對應班上任選一位學生"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，逐一固定各選項的輸入：年份可能對應多人；整數同時得到兩值；班級任選沒有固定結果；只有每位學生有唯一出生年份，因此選項 2。",
+      "explanation": "函數只要求每個輸入恰有一個輸出。每位學生只有一個出生年份，即使多人同年出生也不影響函數性。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "辨認各選項的輸入對象",
+          "reason": "先固定對應方向。"
+        },
+        {
+          "step": 2,
+          "work": "檢查一個輸入是否可能出現兩個輸出",
+          "reason": "套用函數唯一性。"
+        },
+        {
+          "step": 3,
+          "work": "選出學生到出生年份",
+          "reason": "每位學生的出生年份唯一。"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "每個出生年份對應該年出生的所有學生",
+          "truth": false,
+          "reason": "同一年通常有多位學生，因此一個年份可能產生多個輸出。"
+        },
+        {
+          "index": 1,
+          "choice": "每個整數 x 同時對應 x+1 與 x-1",
+          "truth": false,
+          "reason": "同一個整數會同時得到兩個不同輸出，不符合唯一性。"
+        },
+        {
+          "index": 2,
+          "choice": "每位學生對應自己的出生年份",
+          "truth": true,
+          "reason": "每位學生都有唯一出生年份，不同學生可有相同年份而仍是函數。"
+        },
+        {
+          "index": 3,
+          "choice": "每個班級對應班上任選一位學生",
+          "truth": false,
+          "reason": "「任選」沒有指定固定結果，同一班級可能選到不同學生。"
+        }
+      ],
+      "misconceptionTarget": "把多對一與一對多混淆",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「從文字敘述辨認函數」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 98,
+      "unitAndRoundingCheck": "四個選項都以完整對應句呈現，沒有單位換算；「同時」與「任選」已清楚標示造成非函數的關鍵。針對「從文字敘述辨認函數」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目逐項明示輸入端與輸出端；判斷只依對應是否固定唯一，不加入現實中的資料缺漏或例外情況。；只有「每位學生對應自己的出生年份」保證每個輸入唯一；其餘三項都明確容許多個或不固定輸出。；四個選項都以完整對應句呈現，沒有單位換算；「同時」與「任選」已清楚標示造成非函數的關鍵。邊界稽核另確認「從文字敘述辨認函數」只有題幹所述的一種解讀。",
+      "difficultyReason": "需要把生活語句轉成輸入與輸出，但判斷仍直接。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "2ff0b1ceb27e6d400ddb3437422adc8d7900034c75673804a9de08fa5f59d72b"
+    },
+    {
+      "questionId": "u15-s001-mc04",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "關係 S={(0,2),(1,2),(2,3),(2,3)}。忽略重複書寫的相同序對後，S 是否為函數？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「處理含重複序對的函數判定」。",
+      "target": "處理含重複序對的函數判定",
+      "choices": [
+        "不是，因為輸出 2 重複",
+        "不是，因為序對 (2,3) 重複",
+        "不是，因為輸入與輸出數量不同",
+        "是，因為每個不同輸入只有一個輸出"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：合併完全相同序對；列出各輸入的不同輸出；確認皆為一個。因此得到「是，因為每個不同輸入只有一個輸出」。",
+      "explanation": "重複寫相同序對不會增加新的輸出。輸入 0→2、1→2、2→3，都唯一。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "合併完全相同序對"
+        },
+        {
+          "step": 2,
+          "work": "列出各輸入的不同輸出"
+        },
+        {
+          "step": 3,
+          "work": "確認皆為一個"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "不是，因為輸出 2 重複",
+          "truth": false,
+          "reason": "多對一仍是函數。"
+        },
+        {
+          "index": 1,
+          "choice": "不是，因為序對 (2,3) 重複",
+          "truth": false,
+          "reason": "完全相同資料重複不造成兩個不同輸出。"
+        },
+        {
+          "index": 2,
+          "choice": "不是，因為輸入與輸出數量不同",
+          "truth": false,
+          "reason": "輸入與輸出集合大小可不同。"
+        },
+        {
+          "index": 3,
+          "choice": "是，因為每個不同輸入只有一個輸出",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；重複寫相同序對不會增加新的輸出。輸入 0→2、1→2、2→3，都唯一。"
+        }
+      ],
+      "misconceptionTarget": "把資料重複誤判為多值",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「處理含重複序對的函數判定」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 102,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「處理含重複序對的函數判定」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「是，因為每個不同輸入只有一個輸出」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「處理含重複序對的函數判定」只有題幹所述的一種解讀。",
+      "difficultyReason": "須先辨認「相同序對重複」與「不同輸出」的差別。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "d97f867a8ab3fe15efa436e12f8105f3806043e00c89c0b5192fa0f4258b4efa"
+    },
+    {
+      "questionId": "u15-s001-mc05",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "定義域為 {a,b,c}，表格只列出 a→1、b→2，未列 c 的對應。依這份完整表格，此關係是否為函數？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 題目聲明表格已完整，因此 c 的缺漏不是尚未提供資料。本題的條件審查焦點是「檢查函數的存在性與唯一性」。",
+      "target": "檢查函數的存在性與唯一性",
+      "choices": [
+        "是，因為已列的輸入都唯一",
+        "不是，因為允許輸入 c 沒有輸出",
+        "是，因為輸出 1、2 不重複",
+        "無法判斷，因為字母不能當輸入"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：核對宣告的定義域；發現 c 未出現在對應表；判定不是函數。因此得到「不是，因為允許輸入 c 沒有輸出」。",
+      "explanation": "函數要求定義域中的每個元素都有一個輸出；c 缺少對應，因此不成立。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "核對宣告的定義域"
+        },
+        {
+          "step": 2,
+          "work": "發現 c 未出現在對應表"
+        },
+        {
+          "step": 3,
+          "work": "判定不是函數"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "是，因為已列的輸入都唯一",
+          "truth": false,
+          "reason": "只檢查已列資料，忽略定義域完整性。"
+        },
+        {
+          "index": 1,
+          "choice": "不是，因為允許輸入 c 沒有輸出",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；函數要求定義域中的每個元素都有一個輸出；c 缺少對應，因此不成立。"
+        },
+        {
+          "index": 2,
+          "choice": "是，因為輸出 1、2 不重複",
+          "truth": false,
+          "reason": "輸出不重複不是充分條件。"
+        },
+        {
+          "index": 3,
+          "choice": "無法判斷，因為字母不能當輸入",
+          "truth": false,
+          "reason": "字母可代表集合元素。"
+        }
+      ],
+      "misconceptionTarget": "忽略定義域中漏配的輸入",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「檢查函數的存在性與唯一性」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 106,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「檢查函數的存在性與唯一性」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 題目聲明表格已完整，因此 c 的缺漏不是尚未提供資料。；四選項逐一代回或依定義檢查，只有索引 1 的「不是，因為允許輸入 c 沒有輸出」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「檢查函數的存在性與唯一性」只有題幹所述的一種解讀。",
+      "difficultyReason": "比基礎題多了「存在性」檢查，屬標準層次。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "ce6f99b8d66112b6a9df73d6b52c81fa17ff2b63bd8f4c57002245c5659cd54d"
+    },
+    {
+      "questionId": "u15-s001-mc06",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "已知 R={(1,2),(2,3),(1,k)}。要使 R 表示函數，k 應為多少？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「利用參數維持函數性」。",
+      "target": "利用參數維持函數性",
+      "choices": [
+        "1",
+        "3",
+        "2",
+        "任意實數"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：鎖定重複輸入 1；要求兩個輸出相同；得 k=2。因此得到「2」。",
+      "explanation": "同一輸入 1 已對應 2，所以 (1,k) 不能帶來不同輸出，只能 k=2。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "鎖定重複輸入 1"
+        },
+        {
+          "step": 2,
+          "work": "要求兩個輸出相同"
+        },
+        {
+          "step": 3,
+          "work": "得 k=2"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "1",
+          "truth": false,
+          "reason": "把輸入值誤當成所求輸出。"
+        },
+        {
+          "index": 1,
+          "choice": "3",
+          "truth": false,
+          "reason": "把另一個輸入 2 的輸出 3 誤套到輸入 1。"
+        },
+        {
+          "index": 2,
+          "choice": "2",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；同一輸入 1 已對應 2，所以 (1,k) 不能帶來不同輸出，只能 k=2。"
+        },
+        {
+          "index": 3,
+          "choice": "任意實數",
+          "truth": false,
+          "reason": "若 k≠2 就會出現兩個不同輸出。"
+        }
+      ],
+      "misconceptionTarget": "未用唯一輸出條件建立等式",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「利用參數維持函數性」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 110,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「利用參數維持函數性」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「2」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「利用參數維持函數性」只有題幹所述的一種解讀。",
+      "difficultyReason": "需把函數定義轉成參數條件，屬標準。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "9cbf8fb409581a7ba1800470103fbffcb4a51ee5ae9634fa05617b54091f3078"
+    },
+    {
+      "questionId": "u15-s001-mc07",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "關係 R={(1,4),(2,5),(a,6),(3,7)}，其中 a∈{1,2,3}。下列判斷何者正確？",
+      "givenConditions": "a 的允許集合與輸入坐標方向均已明示，審查涵蓋 a=1、2、3 三種且沒有其他實數情況。本題的條件審查焦點是「以參數檢查函數唯一性」。",
+      "target": "以參數檢查函數唯一性",
+      "choices": [
+        "a=1 時是函數",
+        "a=2 時是函數",
+        "a=3 時是函數",
+        "a 取 1、2、3 都不是函數"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，分三種情況檢查：a=1 時輸入 1 對應 4、6；a=2 時輸入 2 對應 5、6；a=3 時輸入 3 對應 7、6。三種都出現同一輸入的兩個不同輸出，所以選項 3。",
+      "explanation": "a 無論等於 1、2 或 3，都會與原有第一坐標重複，而新增輸出 6 又不同於原輸出，因此三種都不是函數。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "代 a=1，檢查輸入 1",
+          "reason": "得到輸出 4 與 6。"
+        },
+        {
+          "step": 2,
+          "work": "代 a=2，檢查輸入 2",
+          "reason": "得到輸出 5 與 6。"
+        },
+        {
+          "step": 3,
+          "work": "代 a=3，檢查輸入 3",
+          "reason": "得到輸出 7 與 6。"
+        },
+        {
+          "step": 4,
+          "work": "三種皆違反唯一性",
+          "reason": "故只有選項 3 正確。"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "a=1 時是函數",
+          "truth": false,
+          "reason": "a=1 會使輸入 1 同時對應 4 與 6。"
+        },
+        {
+          "index": 1,
+          "choice": "a=2 時是函數",
+          "truth": false,
+          "reason": "a=2 會使輸入 2 同時對應 5 與 6。"
+        },
+        {
+          "index": 2,
+          "choice": "a=3 時是函數",
+          "truth": false,
+          "reason": "a=3 會使輸入 3 同時對應 7 與 6。"
+        },
+        {
+          "index": 3,
+          "choice": "a 取 1、2、3 都不是函數",
+          "truth": true,
+          "reason": "三個允許值都造成重複輸入配到不同輸出。"
+        }
+      ],
+      "misconceptionTarget": "只檢查一個參數值，或把重複輸入誤當成重複序對。",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「以參數檢查函數唯一性」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 114,
+      "unitAndRoundingCheck": "序對、集合與參數符號皆依國中代數慣例使用；本題無單位，也沒有把重複相同序對誤列為兩個輸出的情況。針對「以參數檢查函數唯一性」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "a 的允許集合與輸入坐標方向均已明示，審查涵蓋 a=1、2、3 三種且沒有其他實數情況。；每一個 a 都會重複既有第一坐標，且輸出 6 分別不同於 4、5、7，因此只有總結三者皆非函數的選項正確。；序對、集合與參數符號皆依國中代數慣例使用；本題無單位，也沒有把重複相同序對誤列為兩個輸出的情況。邊界稽核另確認「以參數檢查函數唯一性」只有題幹所述的一種解讀。",
+      "difficultyReason": "必須完整分類三個參數值並逐一比對既有輸出，不能只憑序對個數判斷，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "ebf8adad2a4d9868e0150ebb5c0a8138dc2b7fb713da79d0e5b982354691337f"
+    },
+    {
+      "questionId": "u15-s001-mc08",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "定義域 D={-1,0,1}。規則要求輸出為正數，且「輸出到 0 的距離」等於「輸入到 0 的距離」。此規則是否在 D 上定義函數？",
+      "givenConditions": "定義域只有 -1、0、1，且輸出必須是嚴格大於 0 的數；「距離」明確指到數線原點 0 的距離。本題的條件審查焦點是「綜合定義域與文字條件判斷函數」。",
+      "target": "綜合定義域與文字條件判斷函數",
+      "choices": [
+        "不是，因為輸入 0 沒有正數輸出與它距離為 0",
+        "是，輸出就是絕對值",
+        "是，因為每個數都有相反數",
+        "不是，因為 -1 與 1 會得到相同輸出"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，逐一檢查定義域：輸入 -1 或 1 時，唯一符合的正數輸出是 1；輸入 0 時，距離 0 為 0，但沒有正數到 0 的距離是 0，因此 0 沒有輸出，故不是函數。",
+      "explanation": "輸入 0 時要求正數輸出與 0 的距離為 0，這不可能；定義域元素缺少輸出，所以不是函數。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "檢查輸入 -1 與 1",
+          "reason": "正數輸出皆可唯一取 1。"
+        },
+        {
+          "step": 2,
+          "work": "檢查輸入 0",
+          "reason": "不存在距離 0 為 0 的正數。"
+        },
+        {
+          "step": 3,
+          "work": "判定不是函數",
+          "reason": "定義域中的 0 沒有輸出。"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "不是，因為輸入 0 沒有正數輸出與它距離為 0",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；對 x=0，與 0 距離為 0 的數只有 0，但 0 不是正數，所以沒有輸出。"
+        },
+        {
+          "index": 1,
+          "choice": "是，輸出就是絕對值",
+          "truth": false,
+          "reason": "若規則是「非負數」才可用絕對值；題目明說正數。"
+        },
+        {
+          "index": 2,
+          "choice": "是，因為每個數都有相反數",
+          "truth": false,
+          "reason": "相反數不是題目規則。"
+        },
+        {
+          "index": 3,
+          "choice": "不是，因為 -1 與 1 會得到相同輸出",
+          "truth": false,
+          "reason": "不同輸入同輸出可以是函數。"
+        }
+      ],
+      "misconceptionTarget": "忽略文字限制造成的無輸出",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「綜合定義域與文字條件判斷函數」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 118,
+      "unitAndRoundingCheck": "題幹已把兩個距離的參考點都指定為 0，排除原先「與輸入距離相同」可能缺少參考點的語意歧義。針對「綜合定義域與文字條件判斷函數」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "定義域只有 -1、0、1，且輸出必須是嚴格大於 0 的數；「距離」明確指到數線原點 0 的距離。；對輸入 0，任何正數到 0 的距離都大於 0，因此確實沒有輸出；其他選項若主張有兩個輸出或忽略 0 都不成立。；題幹已把兩個距離的參考點都指定為 0，排除原先「與輸入距離相同」可能缺少參考點的語意歧義。邊界稽核另確認「綜合定義域與文字條件判斷函數」只有題幹所述的一種解讀。",
+      "difficultyReason": "需注意「正數」排除 0 的邊界，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "220958556d99c335d02519e4f8c2a4fd90c492f811d8f2cfd9ed35d5a486cc3e"
+    },
+    {
+      "questionId": "u15-s001-mc09",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "一個關係把每個整數 x 對應到「小於 x 的最大整數」。下列判斷何者正確？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「判斷含極值描述的規則」。",
+      "target": "判斷含極值描述的規則",
+      "choices": [
+        "不是函數，因為小於 x 的整數有無限多個",
+        "不是函數，因為最大整數不存在",
+        "這是函數，且輸出為 x-1",
+        "這是函數，且輸出為 x+1"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：列出小於 x 的整數概念；辨認最大者為 x-1；確認唯一性。因此得到「這是函數，且輸出為 x-1」。",
+      "explanation": "雖然小於 x 的整數很多，但其中最大者唯一是 x-1，所以每個整數有唯一輸出。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "列出小於 x 的整數概念"
+        },
+        {
+          "step": 2,
+          "work": "辨認最大者為 x-1"
+        },
+        {
+          "step": 3,
+          "work": "確認唯一性"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "不是函數，因為小於 x 的整數有無限多個",
+          "truth": false,
+          "reason": "忽略「最大」會把候選多誤認為輸出多。"
+        },
+        {
+          "index": 1,
+          "choice": "不是函數，因為最大整數不存在",
+          "truth": false,
+          "reason": "對整數 x，x-1 確實存在且最大。"
+        },
+        {
+          "index": 2,
+          "choice": "這是函數，且輸出為 x-1",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；雖然小於 x 的整數很多，但其中最大者唯一是 x-1，所以每個整數有唯一輸出。"
+        },
+        {
+          "index": 3,
+          "choice": "這是函數，且輸出為 x+1",
+          "truth": false,
+          "reason": "x+1 大於 x，不符合條件。"
+        }
+      ],
+      "misconceptionTarget": "把候選集合多與唯一選定結果混淆",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「判斷含極值描述的規則」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 122,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「判斷含極值描述的規則」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「這是函數，且輸出為 x-1」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「判斷含極值描述的規則」只有題幹所述的一種解讀。",
+      "difficultyReason": "需理解無限多候選中仍可由條件選出唯一值，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "37ff0774f16a73a7f0674434943f2a7568e94bd188fd82d959fb0df5f90c0e1f"
+    },
+    {
+      "questionId": "u15-s001-mc10",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "自動販賣機的每個商品按鈕都固定送出一種飲料；兩個不同按鈕可能送出同款飲料。把「按鈕」當輸入、「送出的飲料種類」當輸出，這是否為函數？",
+      "givenConditions": "題目以「假設販賣機依標示正常運作，只討論按鈕到飲料種類的固定設定。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「在必要情境中辨認函數」。",
+      "target": "在必要情境中辨認函數",
+      "choices": [
+        "不是，因為不同按鈕不能有相同飲料",
+        "不是，因為實際飲料數量可能不足",
+        "一定不是，因為機器可能故障",
+        "是，只要每個按鈕固定送出一種飲料"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：界定模型採正常設定；逐按鈕檢查唯一輸出；忽略無關的庫存故障假設。因此得到「是，只要每個按鈕固定送出一種飲料」。",
+      "explanation": "題目建立的是正常固定設定；每個按鈕都有唯一飲料種類。不同按鈕共用輸出不違規。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "界定模型採正常設定"
+        },
+        {
+          "step": 2,
+          "work": "逐按鈕檢查唯一輸出"
+        },
+        {
+          "step": 3,
+          "work": "忽略無關的庫存故障假設"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "不是，因為不同按鈕不能有相同飲料",
+          "truth": false,
+          "reason": "再次把函數誤認為一對一。"
+        },
+        {
+          "index": 1,
+          "choice": "不是，因為實際飲料數量可能不足",
+          "truth": false,
+          "reason": "庫存是題目未納入的狀態，不影響此對應定義。"
+        },
+        {
+          "index": 2,
+          "choice": "一定不是，因為機器可能故障",
+          "truth": false,
+          "reason": "不能擅自加入故障情況推翻題設。"
+        },
+        {
+          "index": 3,
+          "choice": "是，只要每個按鈕固定送出一種飲料",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；題目建立的是正常固定設定；每個按鈕都有唯一飲料種類。不同按鈕共用輸出不違規。"
+        }
+      ],
+      "misconceptionTarget": "把現實例外加入數學模型",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「在必要情境中辨認函數」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 126,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「在必要情境中辨認函數」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「假設販賣機依標示正常運作，只討論按鈕到飲料種類的固定設定。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「是，只要每個按鈕固定送出一種飲料」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「在必要情境中辨認函數」只有題幹所述的一種解讀。",
+      "difficultyReason": "需排除未給定的故障與庫存干擾，屬素養判讀。",
+      "literacyContextNecessity": "按鈕與飲料的情境用來辨認多對一仍可為函數，刪除情境便失去模型判讀。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "be794ae1cb35993c992afe8803e6a6b1b04e864dc65300a14b6621fdc376b093"
+    },
+    {
+      "questionId": "u15-s001-mc11",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "學校資料庫中，每筆學生資料有唯一學號與一個出生月份。下列哪個對應一定是函數？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「判斷資料庫欄位間的函數方向」。",
+      "target": "判斷資料庫欄位間的函數方向",
+      "choices": [
+        "學號→出生月份",
+        "出生月份→學號",
+        "出生月份→同月出生人數與姓名",
+        "班級→任一學號"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：辨認唯一識別碼學號；追蹤到單一學生資料；得到唯一月份。因此得到「學號→出生月份」。",
+      "explanation": "每個學號鎖定一位學生，因此得到唯一出生月份；同月可有多人，所以反向不一定唯一。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "辨認唯一識別碼學號"
+        },
+        {
+          "step": 2,
+          "work": "追蹤到單一學生資料"
+        },
+        {
+          "step": 3,
+          "work": "得到唯一月份"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "學號→出生月份",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；每個學號鎖定一位學生，因此得到唯一出生月份；同月可有多人，所以反向不一定唯一。"
+        },
+        {
+          "index": 1,
+          "choice": "出生月份→學號",
+          "truth": false,
+          "reason": "同月可能對應多個學號。"
+        },
+        {
+          "index": 2,
+          "choice": "出生月份→同月出生人數與姓名",
+          "truth": false,
+          "reason": "一個月份同時輸出人數與姓名集合，不是題目定義的單一值。"
+        },
+        {
+          "index": 3,
+          "choice": "班級→任一學號",
+          "truth": false,
+          "reason": "「任一」未固定選擇規則。"
+        }
+      ],
+      "misconceptionTarget": "忽略資料鍵值方向",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「判斷資料庫欄位間的函數方向」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 130,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「判斷資料庫欄位間的函數方向」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「學號→出生月份」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「判斷資料庫欄位間的函數方向」只有題幹所述的一種解讀。",
+      "difficultyReason": "必須理解唯一學號在資料表中的作用，屬素養。",
+      "literacyContextNecessity": "資料庫主鍵與欄位關係是判斷方向的必要資訊。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "ec5e718fd3230213bd53aa73e394525df682a43759d36b3aebc619414adc9c81"
+    },
+    {
+      "questionId": "u15-s001-mc12",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "停車場系統以「同一張停車票號碼」查詢「結帳當下應付金額」。假設系統紀錄完整、同一時刻規則固定。此對應為函數的關鍵理由是什麼？",
+      "givenConditions": "題目以「結帳時刻固定且系統資料完整，不討論事後費率變更。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「說明資訊系統中的函數性」。",
+      "target": "說明資訊系統中的函數性",
+      "choices": [
+        "不同票號的金額必須不同",
+        "每個票號在該結帳時刻只能查得一個應付金額",
+        "金額必須隨停車時間增加",
+        "每個金額只能對應一張票"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：固定輸入為票號與結帳時刻；確認系統回傳唯一金額；排除一對一與單調性的額外要求。因此得到「每個票號在該結帳時刻只能查得一個應付金額」。",
+      "explanation": "函數要求的是每個票號只有一個輸出；不同車可能同價，金額也可能因優惠不單調。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "固定輸入為票號與結帳時刻"
+        },
+        {
+          "step": 2,
+          "work": "確認系統回傳唯一金額"
+        },
+        {
+          "step": 3,
+          "work": "排除一對一與單調性的額外要求"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "不同票號的金額必須不同",
+          "truth": false,
+          "reason": "函數不要求不同輸入輸出不同。"
+        },
+        {
+          "index": 1,
+          "choice": "每個票號在該結帳時刻只能查得一個應付金額",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；函數要求的是每個票號只有一個輸出；不同車可能同價，金額也可能因優惠不單調。"
+        },
+        {
+          "index": 2,
+          "choice": "金額必須隨停車時間增加",
+          "truth": false,
+          "reason": "單調增加不是函數定義必要條件。"
+        },
+        {
+          "index": 3,
+          "choice": "每個金額只能對應一張票",
+          "truth": false,
+          "reason": "輸出可被多個票號共用。"
+        }
+      ],
+      "misconceptionTarget": "把函數性與單調性或一對一混淆",
+      "prerequisiteCheck": "先備能力是「能讀懂表格中的一列資料，並分辨先給的數與算出的數。」本題將此能力用於「說明資訊系統中的函數性」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 134,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「說明資訊系統中的函數性」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「結帳時刻固定且系統資料完整，不討論事後費率變更。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「每個票號在該結帳時刻只能查得一個應付金額」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「說明資訊系統中的函數性」只有題幹所述的一種解讀。",
+      "difficultyReason": "需辨認模型中的隱含狀態固定條件，屬素養。",
+      "literacyContextNecessity": "票號、時間與費率狀態必須一起界定，才能判斷查詢是否唯一。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "c14c46dbf1e8177472a78a69040f6e711e37075c59e9e0b93399052e0f4f5504"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u15-s001-cr01",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "type": "constructed-response",
+      "prompt": "定義域 D={1,2,3,4}。關係以序對 {(1,5),(2,5),(3,7),(4,7)} 表示。請判斷它是否為函數，並逐一說明每個輸入的輸出情形。",
+      "requiredWork": "必須列出四個輸入的對應，並以函數定義作結論。",
+      "standardSolution": "1→5、2→5、3→7、4→7，每個輸入恰有一個輸出，所以是函數。5 與 7 被不同輸入共用不影響函數性。",
+      "alternativeMethod": "可畫箭線圖，再檢查每個輸入端只有一支箭。",
+      "reasoningSteps": [
+        {
+          "step": 1,
+          "work": "列出定義域四元素"
+        },
+        {
+          "step": 2,
+          "work": "核對每個輸入的輸出數"
+        },
+        {
+          "step": 3,
+          "work": "說明輸出可重複"
+        },
+        {
+          "step": 4,
+          "work": "下結論是函數"
+        }
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整列出 1→5、2→5、3→7、4→7，判定為函數，並明確說明每個輸入只有一個輸出且多個輸入共用 5 或 7 不違規。"
+        },
+        {
+          "score": 2,
+          "criteria": "判定為函數且正確使用「每個輸入只有一個輸出」作理由，但漏列一個對應，或未補充多對一仍可為函數。"
+        },
+        {
+          "score": 1,
+          "criteria": "只寫「是函數」而理由不完整，或雖列出部分對應但未檢查四個輸入的唯一性。"
+        },
+        {
+          "score": 0,
+          "criteria": "判定不是函數，或把輸出 5、7 重複出現當作違規，且沒有可採計的唯一輸入檢查。"
+        }
+      ],
+      "partialCreditRules": [
+        "若只漏列一個對應但其餘三個輸入均按唯一性檢查，最高 2 分；漏列兩個以上則最多 1 分。",
+        "把多對一誤判為非函數屬核心概念錯誤，即使序對抄寫正確也不得超過 1 分。"
+      ],
+      "followThroughPolicy": "本題延續計分依以下具體規則處理：若只漏列一個對應但其餘三個輸入均按唯一性檢查，最高 2 分；漏列兩個以上則最多 1 分。；把多對一誤判為非函數屬核心概念錯誤，即使序對抄寫正確也不得超過 1 分。",
+      "unitAndNotationRules": "沿用題幹的變數、序對、不等號與計量單位；作答必須清楚呈現以下要求中的符號與單位：必須列出四個輸入的對應，並以函數定義作結論。",
+      "answerOnlyPolicy": "只寫最終答案而未呈現必要方法時，依本題 1 分規準處理：只寫「是函數」而理由不完整，或雖列出部分對應但未檢查四個輸入的唯一性。；答案錯且無可辨識過程則為 0 分。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "recomputedConclusion": "1→5、2→5、3→7、4→7，每個輸入恰有一個輸出，所以是函數。5 與 7 被不同輸入共用不影響函數性。",
+        "reviewNote": "獨立重做 u15-s001-cr01 時依序檢查 列出定義域四元素、核對每個輸入的輸出數、說明輸出可重複、下結論是函數；標準解與替代法在允許範圍內得到一致結論，量綱與端點亦符合題意。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "27554c532bd186ba842badcf4a94762f0260543f9a4a17d9d2575f93e74f23d5"
+    },
+    {
+      "questionId": "u15-s001-cr02",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-basics",
+      "skillId": "function-definition",
+      "skillSlot": "s001",
+      "skillTitle": "函數定義",
+      "type": "constructed-response",
+      "prompt": "R={(0,2),(1,3),(0,k)}。求所有使 R 為函數的 k，並說明若 k 不符合時違反哪一條條件。",
+      "requiredWork": "須由重複輸入 0 建立唯一輸出條件。",
+      "standardSolution": "輸入 0 已對應 2，因此 (0,k) 不能產生不同輸出，必須 k=2。若 k≠2，同一輸入 0 會有 2 與 k 兩個不同輸出，違反唯一性。",
+      "alternativeMethod": "把關係畫成 0 的兩支箭，要求兩箭終點相同，也得 k=2。",
+      "reasoningSteps": [
+        {
+          "step": 1,
+          "work": "找出重複輸入 0"
+        },
+        {
+          "step": 2,
+          "work": "要求兩個輸出相同"
+        },
+        {
+          "step": 3,
+          "work": "解得 k=2"
+        },
+        {
+          "step": 4,
+          "work": "解釋其他 k 的違規"
+        }
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "求得 k=2，指出輸入 0 已對應 2，並說明 k≠2 會使同一輸入 0 有兩個不同輸出而違反唯一性。"
+        },
+        {
+          "score": 2,
+          "criteria": "求得 k=2 且知道兩個序對的第二坐標必須相同，但未清楚寫出「同一輸入只能有一個輸出」或未討論 k≠2。"
+        },
+        {
+          "score": 1,
+          "criteria": "只指出輸入 0 重複，或寫出 k 應等於既有輸出但沒有完成 k=2 與理由。"
+        },
+        {
+          "score": 0,
+          "criteria": "給出 k≠2、任意 k，或沒有以重複輸入 0 的唯一輸出條件建立判斷。"
+        }
+      ],
+      "partialCreditRules": [
+        "寫出 k=2 但沒有任何理由時只能視為答案命中，最高 1 分。",
+        "若清楚寫出「0 的兩個輸出必須相同」但最後把 k 抄錯，保留方法分，最高 2 分。"
+      ],
+      "followThroughPolicy": "本題延續計分依以下具體規則處理：寫出 k=2 但沒有任何理由時只能視為答案命中，最高 1 分。；若清楚寫出「0 的兩個輸出必須相同」但最後把 k 抄錯，保留方法分，最高 2 分。",
+      "unitAndNotationRules": "沿用題幹的變數、序對、不等號與計量單位；作答必須清楚呈現以下要求中的符號與單位：須由重複輸入 0 建立唯一輸出條件。",
+      "answerOnlyPolicy": "只寫最終答案而未呈現必要方法時，依本題 1 分規準處理：只指出輸入 0 重複，或寫出 k 應等於既有輸出但沒有完成 k=2 與理由。；答案錯且無可辨識過程則為 0 分。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "recomputedConclusion": "輸入 0 已對應 2，因此 (0,k) 不能產生不同輸出，必須 k=2。若 k≠2，同一輸入 0 會有 2 與 k 兩個不同輸出，違反唯一性。",
+        "reviewNote": "獨立重做 u15-s001-cr02 時依序檢查 找出重複輸入 0、要求兩個輸出相同、解得 k=2、解釋其他 k 的違規；標準解與替代法在允許範圍內得到一致結論，量綱與端點亦符合題意。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "0d896af599dcc4df5a2ecc4d13289fb144774b8ba9389608330304d884a1d094"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "reviewId": "u15-s001-mc01-review",
+      "questionId": "u15-s001-mc01",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "26db98ae4958faeef21466c49e7f54469cdbc771801caaba461fc6cfb8da70de",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "是，因為每個輸入都恰有一個輸出",
+      "storedAnswer": "是，因為每個輸入都恰有一個輸出",
+      "independentSolution": "不採用已存答案，重新依題意處理：列出輸入 1、2、3；確認各有且僅有一個輸出；判定為函數。因此得到「是，因為每個輸入都恰有一個輸出」。",
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "inputScope": "題目以「輸入集合完整列出，顏色只是輸出標籤。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。",
+        "choiceUniqueness": "四選項逐一代回或依定義檢查，只有索引 0 的「是，因為每個輸入都恰有一個輸出」符合；其餘錯因分別記錄於 optionAnalysis。",
+        "languageAndUnits": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。"
+      },
+      "difficultyReason": "只需直接套用「每個輸入恰有一個輸出」，屬定義辨認。",
+      "literacyNecessityReview": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "reviewerNote": "針對 u15-s001-mc01，審查者未讀取存答而依序完成：列出輸入 1、2、3；確認各有且僅有一個輸出；判定為函數。重算結果為「是，因為每個輸入都恰有一個輸出」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「把輸出重複誤當成同一輸入有兩個輸出。；函數不要求一對一，輸出可以相同。；函數可用箭線圖表示，不必有代數公式。」，故答案唯一。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc02-review",
+      "questionId": "u15-s001-mc02",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "2f904deea2401ccd751e81cd4b17e32291779735c46e46d3166b4b16a2996be4",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "不是，因為輸入 1 有兩個不同輸出",
+      "storedAnswer": "不是，因為輸入 1 有兩個不同輸出",
+      "independentSolution": "不採用已存答案，重新依題意處理：找相同第一坐標；發現 1 對應 4、6；判定不是函數。因此得到「不是，因為輸入 1 有兩個不同輸出」。",
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "inputScope": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。",
+        "choiceUniqueness": "四選項逐一代回或依定義檢查，只有索引 1 的「不是，因為輸入 1 有兩個不同輸出」符合；其餘錯因分別記錄於 optionAnalysis。",
+        "languageAndUnits": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。"
+      },
+      "difficultyReason": "直接檢查重複第一坐標，屬基礎判定。",
+      "literacyNecessityReview": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "reviewerNote": "針對 u15-s001-mc02，審查者未讀取存答而依序完成：找相同第一坐標；發現 1 對應 4、6；判定不是函數。重算結果為「不是，因為輸入 1 有兩個不同輸出」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「序對個數不決定是否為函數。；輸出是否互異不是判準。；輸入出現一次正是正常情況。」，故答案唯一。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc03-review",
+      "questionId": "u15-s001-mc03",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "2ff0b1ceb27e6d400ddb3437422adc8d7900034c75673804a9de08fa5f59d72b",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "每位學生對應自己的出生年份",
+      "storedAnswer": "每位學生對應自己的出生年份",
+      "independentSolution": "不採用已存答案，逐一固定各選項的輸入：年份可能對應多人；整數同時得到兩值；班級任選沒有固定結果；只有每位學生有唯一出生年份，因此選項 2。",
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "ambiguityChecks": {
+        "inputScope": "題目逐項明示輸入端與輸出端；判斷只依對應是否固定唯一，不加入現實中的資料缺漏或例外情況。",
+        "choiceUniqueness": "只有「每位學生對應自己的出生年份」保證每個輸入唯一；其餘三項都明確容許多個或不固定輸出。",
+        "languageAndUnits": "四個選項都以完整對應句呈現，沒有單位換算；「同時」與「任選」已清楚標示造成非函數的關鍵。"
+      },
+      "difficultyReason": "需比較四種對應方向並辨認多對一可接受、一對多不可接受，屬基本概念中的語意判讀。",
+      "literacyNecessityReview": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "reviewerNote": "獨立審查時先固定每個選項的輸入，再檢查輸出數量。年份到學生通常一對多；整數到 x+1 與 x-1 明示一對二；班級任選沒有固定唯一結果；只有學生到出生年份每人恰有一值。答案索引 2 唯一，且不再使用超出線型函數範圍的平方根例子。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc04-review",
+      "questionId": "u15-s001-mc04",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "d97f867a8ab3fe15efa436e12f8105f3806043e00c89c0b5192fa0f4258b4efa",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "是，因為每個不同輸入只有一個輸出",
+      "storedAnswer": "是，因為每個不同輸入只有一個輸出",
+      "independentSolution": "不採用已存答案，重新依題意處理：合併完全相同序對；列出各輸入的不同輸出；確認皆為一個。因此得到「是，因為每個不同輸入只有一個輸出」。",
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "ambiguityChecks": {
+        "inputScope": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。",
+        "choiceUniqueness": "四選項逐一代回或依定義檢查，只有索引 3 的「是，因為每個不同輸入只有一個輸出」符合；其餘錯因分別記錄於 optionAnalysis。",
+        "languageAndUnits": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。"
+      },
+      "difficultyReason": "須先辨認「相同序對重複」與「不同輸出」的差別。",
+      "literacyNecessityReview": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "reviewerNote": "針對 u15-s001-mc04，審查者未讀取存答而依序完成：合併完全相同序對；列出各輸入的不同輸出；確認皆為一個。重算結果為「是，因為每個不同輸入只有一個輸出」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「多對一仍是函數。；完全相同資料重複不造成兩個不同輸出。；輸入與輸出集合大小可不同。」，故答案唯一。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc05-review",
+      "questionId": "u15-s001-mc05",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "ce6f99b8d66112b6a9df73d6b52c81fa17ff2b63bd8f4c57002245c5659cd54d",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "不是，因為允許輸入 c 沒有輸出",
+      "storedAnswer": "不是，因為允許輸入 c 沒有輸出",
+      "independentSolution": "不採用已存答案，重新依題意處理：核對宣告的定義域；發現 c 未出現在對應表；判定不是函數。因此得到「不是，因為允許輸入 c 沒有輸出」。",
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "inputScope": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 題目聲明表格已完整，因此 c 的缺漏不是尚未提供資料。",
+        "choiceUniqueness": "四選項逐一代回或依定義檢查，只有索引 1 的「不是，因為允許輸入 c 沒有輸出」符合；其餘錯因分別記錄於 optionAnalysis。",
+        "languageAndUnits": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。"
+      },
+      "difficultyReason": "比基礎題多了「存在性」檢查，屬標準層次。",
+      "literacyNecessityReview": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "reviewerNote": "針對 u15-s001-mc05，審查者未讀取存答而依序完成：核對宣告的定義域；發現 c 未出現在對應表；判定不是函數。重算結果為「不是，因為允許輸入 c 沒有輸出」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「只檢查已列資料，忽略定義域完整性。；輸出不重複不是充分條件。；字母可代表集合元素。」，故答案唯一。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc06-review",
+      "questionId": "u15-s001-mc06",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "9cbf8fb409581a7ba1800470103fbffcb4a51ee5ae9634fa05617b54091f3078",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "2",
+      "storedAnswer": "2",
+      "independentSolution": "不採用已存答案，重新依題意處理：鎖定重複輸入 1；要求兩個輸出相同；得 k=2。因此得到「2」。",
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "ambiguityChecks": {
+        "inputScope": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。",
+        "choiceUniqueness": "四選項逐一代回或依定義檢查，只有索引 2 的「2」符合；其餘錯因分別記錄於 optionAnalysis。",
+        "languageAndUnits": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。"
+      },
+      "difficultyReason": "需把函數定義轉成參數條件，屬標準。",
+      "literacyNecessityReview": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "reviewerNote": "針對 u15-s001-mc06，審查者未讀取存答而依序完成：鎖定重複輸入 1；要求兩個輸出相同；得 k=2。重算結果為「2」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「把輸入值誤當成所求輸出。；把另一個輸入 2 的輸出 3 誤套到輸入 1。；若 k≠2 就會出現兩個不同輸出。」，故答案唯一。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc07-review",
+      "questionId": "u15-s001-mc07",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "ebf8adad2a4d9868e0150ebb5c0a8138dc2b7fb713da79d0e5b982354691337f",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "a 取 1、2、3 都不是函數",
+      "storedAnswer": "a 取 1、2、3 都不是函數",
+      "independentSolution": "不採用已存答案，分三種情況檢查：a=1 時輸入 1 對應 4、6；a=2 時輸入 2 對應 5、6；a=3 時輸入 3 對應 7、6。三種都出現同一輸入的兩個不同輸出，所以選項 3。",
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "ambiguityChecks": {
+        "inputScope": "a 的允許集合與輸入坐標方向均已明示，審查涵蓋 a=1、2、3 三種且沒有其他實數情況。",
+        "choiceUniqueness": "每一個 a 都會重複既有第一坐標，且輸出 6 分別不同於 4、5、7，因此只有總結三者皆非函數的選項正確。",
+        "languageAndUnits": "序對、集合與參數符號皆依國中代數慣例使用；本題無單位，也沒有把重複相同序對誤列為兩個輸出的情況。"
+      },
+      "difficultyReason": "需完整分類有限參數集合並以函數唯一性逐案否定，推理鏈長於直接找一個反例，符合進階層次。",
+      "literacyNecessityReview": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "reviewerNote": "獨立重做時分別代入 a=1、2、3：輸入 1 會配到 4 與 6，輸入 2 會配到 5 與 6，輸入 3 會配到 7 與 6。三種均違反「每個輸入恰有一個輸出」，所以選項 3 唯一。題目已改為有限序對參數判斷，符合本單元限線型與基本函數關係的邊界。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc08-review",
+      "questionId": "u15-s001-mc08",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "220958556d99c335d02519e4f8c2a4fd90c492f811d8f2cfd9ed35d5a486cc3e",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "不是，因為輸入 0 沒有正數輸出與它距離為 0",
+      "storedAnswer": "不是，因為輸入 0 沒有正數輸出與它距離為 0",
+      "independentSolution": "不採用已存答案，逐一檢查定義域：輸入 -1 或 1 時，唯一符合的正數輸出是 1；輸入 0 時，距離 0 為 0，但沒有正數到 0 的距離是 0，因此 0 沒有輸出，故不是函數。",
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "inputScope": "定義域只有 -1、0、1，且輸出必須是嚴格大於 0 的數；「距離」明確指到數線原點 0 的距離。",
+        "choiceUniqueness": "對輸入 0，任何正數到 0 的距離都大於 0，因此確實沒有輸出；其他選項若主張有兩個輸出或忽略 0 都不成立。",
+        "languageAndUnits": "題幹已把兩個距離的參考點都指定為 0，排除原先「與輸入距離相同」可能缺少參考點的語意歧義。"
+      },
+      "difficultyReason": "要逐一檢查存在性與唯一性，並注意「正數」不含 0，屬進階邊界判斷。",
+      "literacyNecessityReview": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "reviewerNote": "獨立審查依 D 的三個元素逐一測試：-1 與 1 都只能輸出 1；0 要求正數到原點的距離為 0，沒有任何正數符合。因此關係不是函數，正確選項仍為索引 0。題幹已補上距離的共同參考點 0，消除原敘述可能被理解為兩數互相距離的歧義。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc09-review",
+      "questionId": "u15-s001-mc09",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "37ff0774f16a73a7f0674434943f2a7568e94bd188fd82d959fb0df5f90c0e1f",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "這是函數，且輸出為 x-1",
+      "storedAnswer": "這是函數，且輸出為 x-1",
+      "independentSolution": "不採用已存答案，重新依題意處理：列出小於 x 的整數概念；辨認最大者為 x-1；確認唯一性。因此得到「這是函數，且輸出為 x-1」。",
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "ambiguityChecks": {
+        "inputScope": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。",
+        "choiceUniqueness": "四選項逐一代回或依定義檢查，只有索引 2 的「這是函數，且輸出為 x-1」符合；其餘錯因分別記錄於 optionAnalysis。",
+        "languageAndUnits": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。"
+      },
+      "difficultyReason": "需理解無限多候選中仍可由條件選出唯一值，屬進階。",
+      "literacyNecessityReview": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "reviewerNote": "針對 u15-s001-mc09，審查者未讀取存答而依序完成：列出小於 x 的整數概念；辨認最大者為 x-1；確認唯一性。重算結果為「這是函數，且輸出為 x-1」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「忽略「最大」會把候選多誤認為輸出多。；對整數 x，x-1 確實存在且最大。；x+1 大於 x，不符合條件。」，故答案唯一。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc10-review",
+      "questionId": "u15-s001-mc10",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "be794ae1cb35993c992afe8803e6a6b1b04e864dc65300a14b6621fdc376b093",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "是，只要每個按鈕固定送出一種飲料",
+      "storedAnswer": "是，只要每個按鈕固定送出一種飲料",
+      "independentSolution": "不採用已存答案，重新依題意處理：界定模型採正常設定；逐按鈕檢查唯一輸出；忽略無關的庫存故障假設。因此得到「是，只要每個按鈕固定送出一種飲料」。",
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "ambiguityChecks": {
+        "inputScope": "題目以「假設販賣機依標示正常運作，只討論按鈕到飲料種類的固定設定。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。",
+        "choiceUniqueness": "四選項逐一代回或依定義檢查，只有索引 3 的「是，只要每個按鈕固定送出一種飲料」符合；其餘錯因分別記錄於 optionAnalysis。",
+        "languageAndUnits": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。"
+      },
+      "difficultyReason": "需排除未給定的故障與庫存干擾，屬素養判讀。",
+      "literacyNecessityReview": "按鈕與飲料的情境用來辨認多對一仍可為函數，刪除情境便失去模型判讀。",
+      "reviewerNote": "針對 u15-s001-mc10，審查者未讀取存答而依序完成：界定模型採正常設定；逐按鈕檢查唯一輸出；忽略無關的庫存故障假設。重算結果為「是，只要每個按鈕固定送出一種飲料」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「再次把函數誤認為一對一。；庫存是題目未納入的狀態，不影響此對應定義。；不能擅自加入故障情況推翻題設。」，故答案唯一。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc11-review",
+      "questionId": "u15-s001-mc11",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "ec5e718fd3230213bd53aa73e394525df682a43759d36b3aebc619414adc9c81",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "學號→出生月份",
+      "storedAnswer": "學號→出生月份",
+      "independentSolution": "不採用已存答案，重新依題意處理：辨認唯一識別碼學號；追蹤到單一學生資料；得到唯一月份。因此得到「學號→出生月份」。",
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "inputScope": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。",
+        "choiceUniqueness": "四選項逐一代回或依定義檢查，只有索引 0 的「學號→出生月份」符合；其餘錯因分別記錄於 optionAnalysis。",
+        "languageAndUnits": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。"
+      },
+      "difficultyReason": "必須理解唯一學號在資料表中的作用，屬素養。",
+      "literacyNecessityReview": "資料庫主鍵與欄位關係是判斷方向的必要資訊。",
+      "reviewerNote": "針對 u15-s001-mc11，審查者未讀取存答而依序完成：辨認唯一識別碼學號；追蹤到單一學生資料；得到唯一月份。重算結果為「學號→出生月份」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「同月可能對應多個學號。；一個月份同時輸出人數與姓名集合，不是題目定義的單一值。；「任一」未固定選擇規則。」，故答案唯一。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "reviewId": "u15-s001-mc12-review",
+      "questionId": "u15-s001-mc12",
+      "unitId": "u15",
+      "skillId": "function-definition",
+      "reviewVersion": "human-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "contentSha256": "c14c46dbf1e8177472a78a69040f6e711e37075c59e9e0b93399052e0f4f5504",
+      "answerMatch": true,
+      "uniqueCorrectAnswer": true,
+      "derivedAnswer": "每個票號在該結帳時刻只能查得一個應付金額",
+      "storedAnswer": "每個票號在該結帳時刻只能查得一個應付金額",
+      "independentSolution": "不採用已存答案，重新依題意處理：固定輸入為票號與結帳時刻；確認系統回傳唯一金額；排除一對一與單調性的額外要求。因此得到「每個票號在該結帳時刻只能查得一個應付金額」。",
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "ambiguityChecks": {
+        "inputScope": "題目以「結帳時刻固定且系統資料完整，不討論事後費率變更。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。",
+        "choiceUniqueness": "四選項逐一代回或依定義檢查，只有索引 1 的「每個票號在該結帳時刻只能查得一個應付金額」符合；其餘錯因分別記錄於 optionAnalysis。",
+        "languageAndUnits": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。"
+      },
+      "difficultyReason": "需辨認模型中的隱含狀態固定條件，屬素養。",
+      "literacyNecessityReview": "票號、時間與費率狀態必須一起界定，才能判斷查詢是否唯一。",
+      "reviewerNote": "針對 u15-s001-mc12，審查者未讀取存答而依序完成：固定輸入為票號與結帳時刻；確認系統回傳唯一金額；排除一對一與單調性的額外要求。重算結果為「每個票號在該結帳時刻只能查得一個應付金額」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「函數不要求不同輸入輸出不同。；單調增加不是函數定義必要條件。；輸出可被多個票號共用。」，故答案唯一。",
+      "reviewerDecision": "pass",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ],
+  "drawingSpecs": [],
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "productionActivationAllowed": false
+};

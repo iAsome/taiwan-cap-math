@@ -1,0 +1,266 @@
+{
+  "lectureId": "u11-s003-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-square-root",
+  "skillId": "square-root-arithmetic",
+  "lockedSkillOrder": 3,
+  "lockedTitle": "根式四則",
+  "title": "根式四則：先化簡再選運算規則",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認同類根式並加減係數",
+    "能正確進行根式乘除",
+    "能運用平方差與先化簡策略降低錯誤"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "square-root-simplify",
+      "requiredLevel": "能使用前一技能「根式化簡」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "同類根式",
+      "definition": "化簡後根號部分完全相同的根式。"
+    },
+    {
+      "term": "係數",
+      "definition": "乘在根式前的數。"
+    },
+    {
+      "term": "共軛形式",
+      "definition": "A+B與A-B的配對。"
+    },
+    {
+      "term": "根式乘法",
+      "definition": "非負被開方數可在根號內相乘。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a√m+b√m=(a+b)√m",
+      "meaning": "只對同類根式成立。"
+    },
+    {
+      "symbol": "√a√b=√(ab)",
+      "meaning": "a,b≥0。"
+    },
+    {
+      "symbol": "√a/√b=√(a/b)",
+      "meaning": "a≥0,b>0。"
+    }
+  ],
+  "conceptNarrative": [
+    "根式加減像代數同類項：√2與3√2可合併，√2與√3不能直接合併。",
+    "判斷同類前必須先化簡，例如√8與√18其實都是√2的倍數。",
+    "乘法與除法可以處理被開方數，但加法不能照搬。",
+    "遇到(A+B)(A-B)可用平方差消去交叉根式項。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "根式加減",
+      "statement": "只合併化簡後相同根號部分的係數。"
+    },
+    {
+      "name": "根式乘除",
+      "statement": "在定義域允許時，可合併被開方數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a√m±b√m=(a±b)√m",
+      "conditions": [
+        "m≥0。"
+      ],
+      "meaning": "同類根式係數運算。"
+    },
+    {
+      "formula": "(√a+√b)(√a-√b)=a-b",
+      "conditions": [
+        "a,b≥0。"
+      ],
+      "meaning": "平方差。"
+    }
+  ],
+  "nonApplicableCases": [
+    "√a+√b通常不等於√(a+b)。",
+    "除法分母不能為0。",
+    "平方整個和時不能只平方每一項。",
+    "單位不同的長度不能直接相加。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先化簡每個根式。",
+      "check": "找出真正的同類根式。"
+    },
+    {
+      "step": 2,
+      "instruction": "辨認運算種類。",
+      "check": "加減與乘除規則不同。"
+    },
+    {
+      "step": 3,
+      "instruction": "保留括號與正負號。",
+      "check": "尤其注意減號分配。"
+    },
+    {
+      "step": 4,
+      "instruction": "完成係數或被開方數運算。",
+      "check": "結果再化簡。"
+    },
+    {
+      "step": 5,
+      "instruction": "用平方或近似值快速檢查。",
+      "check": "確認量級與符號合理。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "計算4√7-√7。",
+      "solutionSteps": [
+        "同類根式。",
+        "係數4-1。"
+      ],
+      "answer": "3√7。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "計算√20+√45。",
+      "solutionSteps": [
+        "化簡為2√5與3√5。",
+        "合併係數。"
+      ],
+      "answer": "5√5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "計算√10×√40。",
+      "solutionSteps": [
+        "合併成√400。",
+        "取主平方根。"
+      ],
+      "answer": "20。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "計算(√11+2)(√11-2)。",
+      "solutionSteps": [
+        "使用平方差。",
+        "11-4。"
+      ],
+      "answer": "7。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "√2+√3=√5。",
+      "why": "把乘法性質錯套到加法。",
+      "correction": "不同類根式不能合併。"
+    },
+    {
+      "mistake": "√12+√3=√15。",
+      "why": "未先化簡。",
+      "correction": "2√3+√3=3√3。"
+    },
+    {
+      "mistake": "(√5)²=√25。",
+      "why": "雖數值同為5但推理混亂。",
+      "correction": "直接使用(√5)²=5。"
+    },
+    {
+      "mistake": "√6×√24=√30。",
+      "why": "乘法時誤加被開方數。",
+      "correction": "應為√144=12。"
+    },
+    {
+      "mistake": "根式除法把分子分母分別相減。",
+      "why": "除法規則錯誤。",
+      "correction": "可合併成商的平方根。"
+    },
+    {
+      "mistake": "合併係數時漏掉負號。",
+      "why": "沒有把減號視為係數的一部分。",
+      "correction": "先寫成有號係數再相加。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "根式加減先找同類，乘除可合併被開方數。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "先化簡每個根式。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "√2+√3=√5。；修正：不同類根式不能合併。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "最後結果還能化簡嗎？"
+    }
+  ],
+  "summary": [
+    "根式加減先找同類，乘除可合併被開方數。",
+    "平方差常使根式乘積化為有理數。"
+  ],
+  "connections": {
+    "previous": "需要 s002 的根式化簡。",
+    "next": [
+      "s004 將估算根式大小。",
+      "s007 會把根式除法延伸到分母有理化。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s003-v001",
+      "u11-s003-v002",
+      "u11-s003-v003",
+      "u11-s003-v004",
+      "u11-s003-v005",
+      "u11-s003-v006",
+      "u11-s003-v007",
+      "u11-s003-v008",
+      "u11-s003-v009",
+      "u11-s003-v010",
+      "u11-s003-v011",
+      "u11-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s003-cr001",
+      "u11-s003-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「根式四則」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「√2+√3=√5。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "b307da0f5e5f94f958342f47ff79342347700b13b5f8af35f0df8e913debc615"
+}

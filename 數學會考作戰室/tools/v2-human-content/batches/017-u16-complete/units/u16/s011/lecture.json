@@ -1,0 +1,265 @@
+{
+  "lectureId": "u16-s011-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-construction",
+  "skillId": "construction-word-steps",
+  "skillOrder": 11,
+  "originalLockedTitle": "作圖步驟文字題",
+  "title": "作圖步驟文字題：由圓心和半徑與交點反推作圖目的",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能把混亂的尺規作圖敘述排成可執行順序。",
+    "能由圓弧的圓心、半徑與交點判斷正在作中垂線、角平分線、複製角或垂線。",
+    "能找出作圖步驟中缺漏、重複或不可能的操作。",
+    "能以幾何性質說明文字步驟最後得到的圖形。"
+  ],
+  "prerequisiteBridge": "前面已實作複製角與過點作垂線。會考常把圖省略，改用文字描述圓弧與交點；本技能訓練從文字重建幾何關係。",
+  "prerequisites": [
+    {
+      "skillId": "compass-perpendicular",
+      "requiredLevel": "能使用先備技能「過點作垂線」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "步驟順序",
+      "definition": "後一步所需的點或半徑必須已在前一步建立。"
+    },
+    {
+      "term": "依存關係",
+      "definition": "某操作需要先前產生的圓心、交點或線段。"
+    },
+    {
+      "term": "目標辨識",
+      "definition": "由等距條件判斷最後線是中垂線、角平分線、垂線或等角線。"
+    },
+    {
+      "term": "有效交點",
+      "definition": "由兩條已存在的弧、線或射線相交而得到的點。"
+    },
+    {
+      "term": "驗證理由",
+      "definition": "說明作圖結果成立的定義、等距性質或全等判定。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "步驟甲→乙→丙",
+      "meaning": "乙使用甲產生的物件，丙使用乙產生的物件。"
+    },
+    {
+      "symbol": "P=弧₁∩弧₂",
+      "meaning": "P 是兩弧交點，兩弧必須先存在。"
+    },
+    {
+      "symbol": "作直線 PQ",
+      "meaning": "P、Q 兩點必須已定義且不同。"
+    }
+  ],
+  "conceptNarrative": [
+    "排步驟時先找不依賴新點的操作，通常是以原有端點或角頂點為圓心畫第一弧。",
+    "若某一步提到『以 C、D 為圓心』，就必須先有一步產生 C、D；若提到『連接 O、P』，P 必須先由交點產生。",
+    "兩端點為圓心、相同半徑畫兩組交弧，再連兩交點，通常是作線段中垂線。",
+    "角頂點先畫弧交兩邊，再以兩截點畫交弧，最後連角頂點，通常是作角平分線。",
+    "複製角比角平分線多一個新頂點與基準射線，並搬移原弧上的弦長。",
+    "判斷錯誤步驟時，不只看語句通順，還要檢查圓弧能否相交、半徑是否相同以及最後結果是否通過指定點。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "可執行作圖敘述",
+      "statement": "每一步的圓心、半徑、交點與連線端點均已由已知或前一步定義。"
+    },
+    {
+      "name": "作圖目的判讀",
+      "statement": "由步驟建立的等距或全等關係，辨認最後圖形滿足的條件。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "依存圖無循環且每個引用已定義 ⇒ 步驟可執行",
+      "conditions": [
+        "圓弧幾何上確實能相交"
+      ],
+      "meaning": "文字排序的基本檢查。"
+    },
+    {
+      "formula": "PA=PB、QA=QB ⇒ PQ 為 AB 中垂線",
+      "conditions": [
+        "P、Q 為兩個不同交點"
+      ],
+      "meaning": "常見作圖目的辨識。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只按句子長短或編號猜順序，不檢查點的來源。",
+    "先使用尚未產生的交點，步驟無法執行。",
+    "相同半徑條件被改成任意半徑，可能破壞等距結論。",
+    "最後連線端點錯誤時，即使前面圓弧正確也得不到目標。",
+    "文字未指定哪一側而結果有兩種方向時，需檢查題目是否兩者皆可或需補條件。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出題目一開始就存在的點、線、射線與線段。",
+      "check": "哪些名稱不需由作圖產生？"
+    },
+    {
+      "step": 2,
+      "instruction": "為每個步驟標記它需要的輸入。",
+      "check": "圓心、半徑端點、交點是否已存在？"
+    },
+    {
+      "step": 3,
+      "instruction": "先放置只使用原始物件的步驟。",
+      "check": "第一步能否實際執行？"
+    },
+    {
+      "step": 4,
+      "instruction": "依交點產生順序排後續步驟。",
+      "check": "是否出現先使用後定義？"
+    },
+    {
+      "step": 5,
+      "instruction": "由等距關係辨認作圖目的。",
+      "check": "最後線為何平分、垂直或等角？"
+    },
+    {
+      "step": 6,
+      "instruction": "檢查半徑、交點數與方向。",
+      "check": "文字是否足以排除不可能或錯側結果？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "步驟：以 A、B 為圓心作同半徑弧交於 P、Q；連接 PQ。所得為何？",
+      "solutionSteps": [
+        "PA=PB 且 QA=QB。",
+        "P、Q 都在 AB 的中垂線上。"
+      ],
+      "answer": "直線 PQ 是 AB 的中垂線。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "排序：①連接 OP；②以 C、D 為圓心作同半徑弧交於 P；③以 O 為圓心作弧交角邊於 C、D。",
+      "solutionSteps": [
+        "先產生 C、D，故③先。",
+        "再以 C、D 產生 P，故②。",
+        "最後才能連 OP，故①。"
+      ],
+      "answer": "③→②→①，作角平分線。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "某步驟先寫『以 E 為圓心、CD 為半徑作弧』，但 E 尚未定義，問題何在？",
+      "solutionSteps": [
+        "圓心 E 不存在。",
+        "需先在新基準射線上由新頂點圓弧取得 E。"
+      ],
+      "answer": "依存順序錯誤，無法執行。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩端點畫同半徑弧只有一個交點，能否連兩交點作中垂線？",
+      "solutionSteps": [
+        "需要兩個不同交點決定直線。",
+        "相切時只有一點。"
+      ],
+      "answer": "不能；應增大半徑使兩弧有兩個交點。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "按題目列出的順序照抄。",
+      "why": "選項可能故意打亂。",
+      "correction": "依每個點第一次被產生的時間排序。"
+    },
+    {
+      "mistake": "只看最後畫的是直線就猜中垂線。",
+      "why": "不同作圖都會畫直線。",
+      "correction": "檢查哪些點到哪些端點等距。"
+    },
+    {
+      "mistake": "忽略半徑相同。",
+      "why": "把『任意弧』視為都能作。",
+      "correction": "等距結論通常要求同一圓規開口。"
+    },
+    {
+      "mistake": "交點尚未存在就拿來當圓心。",
+      "why": "未追蹤依存關係。",
+      "correction": "在文字旁標記每個新點的來源。"
+    },
+    {
+      "mistake": "角平分線與複製角混淆。",
+      "why": "兩者都有先截角邊再畫弧。",
+      "correction": "複製角另有新頂點與基準射線，並搬移弦長。"
+    },
+    {
+      "mistake": "忽略兩弧是否有足夠交點。",
+      "why": "只做語文排序。",
+      "correction": "同時檢查半徑大小與幾何可行性。"
+    }
+  ],
+  "selfCheck": [
+    "每個新點在第一次使用前已經產生嗎？",
+    "我能列出每步所依賴的圓心與半徑嗎？",
+    "相同半徑是否被保留？",
+    "最後線段或直線滿足什麼等距關係？",
+    "是否存在方向或交點數的歧義？"
+  ],
+  "summary": [
+    "文字作圖題先追蹤物件依存，再排列步驟。",
+    "圓心、半徑、交點與連線端點缺一不可。",
+    "中垂線、角平分線、複製角與垂線可由等距結構辨認。",
+    "排序完成後仍要檢查幾何可行性與正確性理由。"
+  ],
+  "connections": {
+    "previous": "整合複製角與過點作垂線的完整步驟。",
+    "next": [
+      "三角形邊長關係會用尺規觀點理解兩圓是否相交。",
+      "素養題常要求從施工文字還原幾何。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-011-construction-sequence"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-011-construction-sequence 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s011-v001",
+      "u16-s011-v002",
+      "u16-s011-v003",
+      "u16-s011-v004",
+      "u16-s011-v005",
+      "u16-s011-v006",
+      "u16-s011-v007",
+      "u16-s011-v008",
+      "u16-s011-v009",
+      "u16-s011-v010",
+      "u16-s011-v011",
+      "u16-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s011-cr001",
+      "u16-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「作圖步驟文字題」逐段核對定義、適用條件與反例；重新演算4個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "43d04f15af0a995b69a8010b9ad6aeb8fb38b3ab22493ec32e84944e2c2d3d0e"
+}

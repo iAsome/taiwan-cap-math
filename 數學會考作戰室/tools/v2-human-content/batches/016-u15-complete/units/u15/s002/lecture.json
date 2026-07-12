@@ -1,0 +1,146 @@
+{
+  "lectureId": "u15-s002-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-basics",
+  "skillId": "function-value",
+  "skillSlot": "s002",
+  "skillTitle": "函數值",
+  "order": 2,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": "function-definition",
+      "title": "函數定義",
+      "requiredLevel": "能判斷每個合法輸入是否恰有一個輸出，並能由公式、表格或序對找出指定輸入的對應結果。",
+      "bridge": "函數定義只回答「是不是函數」；本節進一步把指定輸入放入規則，算出那個輸入唯一對應的函數值。"
+    }
+  ],
+  "learningGoals": [
+    "把指定輸入正確代入函數規則",
+    "分辨函數值與輸入值",
+    "處理負數、括號與多步運算"
+  ],
+  "vocabulary": [
+    {
+      "term": "函數值",
+      "meaning": "指定輸入後得到的輸出"
+    },
+    {
+      "term": "代入",
+      "meaning": "用指定數值取代規則中的自變數"
+    },
+    {
+      "term": "對應值",
+      "meaning": "某輸入所得到的輸出"
+    }
+  ],
+  "conceptDevelopment": [
+    "若規則是 f(x)=2x+3，當輸入 x=4 時，就把式中的 x 換成 4：f(4)=2×4+3=11。括號內的 4 是輸入，計算後的 11 才是函數值。",
+    "輸入是負數時要用括號保護符號。例如 g(x)=-3x+2，則 g(-2)=-3×(-2)+2=8；若漏掉括號，容易把乘法符號算錯。"
+  ],
+  "definitionsAndMeaning": "若規則是 f(x)=2x+3，當輸入 x=4 時，就把式中的 x 換成 4：f(4)=2×4+3=11。括號內的 4 是輸入，計算後的 11 才是函數值。",
+  "formulasAndConditions": [
+    "若 f(x)=ax+b，則 f(c)=a×c+b；c 可以是正數、0 或負數，但必須符合題目定義域。",
+    "先完成括號與乘法，再做加減；若題目給表格，直接找指定輸入所在列的輸出。"
+  ],
+  "invalidUseCases": [
+    "把 f(3) 看成 f×3。",
+    "代入負數時省略括號。",
+    "只替換式子中的部分 x。"
+  ],
+  "stepByStepMethod": [
+    "圈出指定輸入。",
+    "把規則中的每個自變數全部換成該輸入，負數先加括號。",
+    "依運算順序計算。",
+    "檢查所得是輸出而不是新的輸入。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s002-ex01",
+      "title": "一次式",
+      "prompt": "已知 f(x)=3x-2，計算 f(5)，並寫出代入與運算過程。",
+      "solution": "f(x)=3x-2，f(5)=15-2=13。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s002-ex02",
+      "title": "負數輸入",
+      "prompt": "已知 g(x)=-4x+1，求 g(-3)。負數輸入應如何放入公式？",
+      "solution": "把 -3 整體代入：g(-3)=-4×(-3)+1=12+1=13。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s002-ex03",
+      "title": "由表格讀值",
+      "prompt": "函數表中 x=4 的同一列記錄 y=-1。求 f(4)，並說明應讀哪一欄。",
+      "solution": "表中 x=4 的那一列 y=-1，所以 f(4)=-1。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s002-ex04",
+      "title": "反求輸入",
+      "prompt": "已知 h(x)=2x+1 且 h(a)=9，求輸入 a。",
+      "solution": "h(x)=2x+1 且 h(a)=9，則 2a+1=9，所以 a=4。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s002-m01",
+      "wrongReasoning": "把 f(5) 寫成 5f。",
+      "correction": "f(5) 是函數 f 在輸入 5 時的輸出，不是字母 f 與 5 相乘。"
+    },
+    {
+      "mistakeId": "s002-m02",
+      "wrongReasoning": "把 g(-3)=-4×(-3)+1 錯寫成 -4×3+1。",
+      "correction": "括號內的 -3 是完整輸入；負數乘負數為正，所以乘積是 12。"
+    },
+    {
+      "mistakeId": "s002-m03",
+      "wrongReasoning": "代入後改變原有運算順序。",
+      "correction": "代入只替換變數，不改變原式的括號與先乘除後加減順序。"
+    },
+    {
+      "mistakeId": "s002-m04",
+      "wrongReasoning": "把 f(a)=9 直接說 a=9。",
+      "correction": "f(a)=9 表示輸出為 9，仍須把 f 的公式展開成方程後才能求 a。"
+    },
+    {
+      "mistakeId": "s002-m05",
+      "wrongReasoning": "表格讀錯列或讀成輸入。",
+      "correction": "表格中先在輸入欄找指定值，再沿同一列讀輸出欄，不可把輸入值本身當答案。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "f(x)=x-7，f(10)=？",
+      "answer": "3"
+    },
+    {
+      "prompt": "g(x)=-2x+1，g(-4)=？",
+      "answer": "9"
+    },
+    {
+      "prompt": "h(x)=3x，h(a)=12，a=？",
+      "answer": "4"
+    }
+  ],
+  "summary": "函數值就是指定輸入代入規則後的唯一輸出。",
+  "previousSkillConnection": "function-definition",
+  "nextSkillConnection": "function-input-output",
+  "figureRefs": [],
+  "accessibilityNotes": [],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「函數值」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能以自己的話說明「函數定義」並完成基本判斷或計算。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "c2394b3f7cb83113f42a4075d60e3b119b4c6f8416e10f5bc0daa3ac836e6b26"
+}

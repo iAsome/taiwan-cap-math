@@ -1,0 +1,242 @@
+{
+  "lectureId": "u07-s006-lecture-r1",
+  "unitId": "u07",
+  "topicId": "u07-solution-sets",
+  "skillId": "inequality-integer-solutions",
+  "title": "不等式整數解：從連續範圍精確列點與計數",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由解集列出符合的整數。",
+    "能處理嚴格與含等號端點。",
+    "能計算有限整數解個數。",
+    "能辨識無限多個或不存在整數解的情況。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "inequality-sign-flip",
+      "requiredLevel": "能正確解出一元一次不等式並判斷端點是否包含。"
+    }
+  ],
+  "prerequisiteBridge": {
+    "inequality-sign-flip": "能正確解出一元一次不等式並判斷端點是否包含。"
+  },
+  "glossary": [
+    {
+      "term": "整數解",
+      "definition": "同時是原不等式的解且屬於整數的數。"
+    },
+    {
+      "term": "最大整數解",
+      "definition": "所有整數解中數值最大的那一個；若向上無界通常不存在。"
+    },
+    {
+      "term": "最小整數解",
+      "definition": "所有整數解中數值最小的那一個；若向下無界通常不存在。"
+    },
+    {
+      "term": "有限解個數",
+      "definition": "在有上下界且整數點有限時可計數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x<3.2, x∈Z",
+      "meaning": "整數解為所有不超過 3 的整數。"
+    },
+    {
+      "symbol": "−2≤x<4, x∈Z",
+      "meaning": "整數解為 −2、−1、0、1、2、3。"
+    }
+  ],
+  "conceptNarrative": [
+    "實數解集是一整段連續範圍；題目加上「x 為整數」後，只保留數線上的整數刻度。",
+    "嚴格端點若本身是整數，要排除；含等號端點若為整數，要納入。",
+    "小數端點不需談空心或實心對整數端點的納入，應找相鄰整數。",
+    "只有單側限制時整數解通常無限多個，但仍可能有最大或最小整數解。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "整數解集",
+      "statement": "原解集與整數集合的交集。"
+    },
+    {
+      "name": "連續整數計數",
+      "statement": "若整數從 m 到 n 且兩端都包含，個數為 n−m+1。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "m≤x≤n，m,n為整數 ⇒ 個數=n−m+1",
+      "conditions": [
+        "m≤n",
+        "兩端均包含"
+      ],
+      "meaning": "連續整數個數。"
+    },
+    {
+      "formula": "x<a 的最大整數解=小於 a 的最大整數",
+      "conditions": [
+        "解集向下無界"
+      ],
+      "meaning": "依端點是否為整數調整。"
+    }
+  ],
+  "nonApplicableCases": [
+    "若題目未說 x 為整數，不可擅自只列整數。",
+    "單側無界解集不能用有限個數公式。",
+    "嚴格端點為小數時，不要機械地再減 1。",
+    "最大整數解與最大解不同；開放實數區間常沒有最大實數解。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先解出完整實數範圍。",
+      "check": "不等號方向是否正確？"
+    },
+    {
+      "step": 2,
+      "instruction": "標出端點附近整數。",
+      "check": "端點是整數還是非整數？"
+    },
+    {
+      "step": 3,
+      "instruction": "依是否含等號決定端點整數是否納入。",
+      "check": "嚴格符號是否排除端點？"
+    },
+    {
+      "step": 4,
+      "instruction": "列舉或用首尾計數。",
+      "check": "是否有限且連續？"
+    },
+    {
+      "step": 5,
+      "instruction": "回原式抽查邊界整數。",
+      "check": "最靠近端點的納入與排除是否正確？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "x<4 的整數解中，最大者為何？",
+      "solutionSteps": [
+        "4 不包含。",
+        "小於 4 的最大整數是 3。"
+      ],
+      "answer": "3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "列出 −1≤x<3 的整數解。",
+      "solutionSteps": [
+        "−1 包含，3 不包含。",
+        "依序列整數。"
+      ],
+      "answer": "−1、0、1、2。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "2.4<x≤6.1 有幾個整數解？",
+      "solutionSteps": [
+        "符合的整數為 3、4、5、6。",
+        "共 4 個。"
+      ],
+      "answer": "4 個。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "x≥−2 有多少個整數解？",
+      "solutionSteps": [
+        "從 −2、−1、0 往右可一直延伸。",
+        "沒有上界。"
+      ],
+      "answer": "無限多個。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "x<4 的最大整數解寫 4。",
+      "why": "忽略嚴格不等號。",
+      "correction": "4 不屬於解集，最大整數是 3。"
+    },
+    {
+      "mistake": "2.4<x 就從 2 開始列。",
+      "why": "未檢查 2 是否大於 2.4。",
+      "correction": "第一個整數是 3。"
+    },
+    {
+      "mistake": "−1≤x<3 列成 −1、0、1、2、3。",
+      "why": "把右端點 3 誤納入。",
+      "correction": "嚴格小於排除 3。"
+    },
+    {
+      "mistake": "計數 n−m 而漏加 1。",
+      "why": "忽略首尾都要算。",
+      "correction": "包含兩端時用 n−m+1。"
+    },
+    {
+      "mistake": "x≥−2 說有 3 個整數解。",
+      "why": "只列眼前幾個，忘記無限延伸。",
+      "correction": "單側無上界，整數解無限多。"
+    },
+    {
+      "mistake": "把最大整數解當成最大實數解。",
+      "why": "混淆離散與連續。",
+      "correction": "先確認題目限定整數。"
+    }
+  ],
+  "selfCheck": [
+    "題目是否真的限定整數？",
+    "端點是否為整數且是否包含？",
+    "解集是否有兩個有限邊界？",
+    "計數是否包含首尾？"
+  ],
+  "summary": [
+    "整數解是實數解集與整數的交集。",
+    "嚴格端點排除，含等號端點納入。",
+    "有限連續整數個數可用末−首+1。",
+    "單側無界通常有無限多整數解。"
+  ],
+  "connections": {
+    "previous": "承接正確解法與負數變號。",
+    "next": [
+      "下一節會同時處理兩個限制的「且」。",
+      "第八技能會把範圍用中文、符號與端點互譯。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u07-s006-v001",
+      "u07-s006-v002",
+      "u07-s006-v003",
+      "u07-s006-v004",
+      "u07-s006-v005",
+      "u07-s006-v006",
+      "u07-s006-v007",
+      "u07-s006-v008",
+      "u07-s006-v009",
+      "u07-s006-v010",
+      "u07-s006-v011",
+      "u07-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u07-s006-cr001",
+      "u07-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "人工檢核整數端點、小數端點、有限區間與單側無界四類；所有列舉均逐一代回邊界附近數值，確認未產生 off-by-one 錯誤。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "181abc3090bfd0286d6adb8436808f21fe5bb978f5ae8336c031f15a0fb4447a"
+}

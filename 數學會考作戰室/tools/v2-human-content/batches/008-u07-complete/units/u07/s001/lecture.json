@@ -1,0 +1,244 @@
+{
+  "lectureId": "u07-s001-lecture-r1",
+  "unitId": "u07",
+  "topicId": "u07-basics",
+  "skillId": "inequality-symbol",
+  "title": "不等號與數線：把大小關係讀成方向和端點",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能分辨＞、＜、≥、≤的讀法與方向。",
+    "能判斷某數是否符合不等式。",
+    "能把單一不等式畫在數線上，正確選用空心點或實心點。",
+    "能由數線反寫不等式。"
+  ],
+  "prerequisites": [],
+  "prerequisiteBridge": {},
+  "glossary": [
+    {
+      "term": "不等式",
+      "definition": "用不等號表示兩個數量大小關係的式子。"
+    },
+    {
+      "term": "解",
+      "definition": "代入後使不等式成立的數。"
+    },
+    {
+      "term": "解集",
+      "definition": "所有符合不等式的數所組成的集合。"
+    },
+    {
+      "term": "端點",
+      "definition": "數線上決定範圍起點或終點的數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a>b",
+      "meaning": "a 大於 b。開口朝向較大的 a。"
+    },
+    {
+      "symbol": "a<b",
+      "meaning": "a 小於 b。尖端指向較小的 a。"
+    },
+    {
+      "symbol": "a≥b",
+      "meaning": "a 大於或等於 b，包含相等。"
+    },
+    {
+      "symbol": "a≤b",
+      "meaning": "a 小於或等於 b，包含相等。"
+    },
+    {
+      "symbol": "○ / ●",
+      "meaning": "空心點不包含端點，實心點包含端點。"
+    }
+  ],
+  "conceptNarrative": [
+    "不等號不是箭頭；判讀時看開口朝大數、尖端朝小數。",
+    "數線越往右數值越大，因此 x>2 的解在 2 的右側。",
+    "嚴格不等號＞或＜不包含端點，使用空心點；含等號的≥或≤包含端點，使用實心點。",
+    "檢驗一個數是否為解，要把它代入原不等式，而不是只看它離端點多遠。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "不等式的解",
+      "statement": "若把某數代入未知數後，左右兩邊的大小關係為真，該數就是不等式的解。"
+    },
+    {
+      "name": "單邊解集",
+      "statement": "x>a 表示所有在 a 右側且不含 a 的數；x≤a 表示所有在 a 左側且包含 a 的數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x>a ⇔ 數線上 a 的右側且不含 a",
+      "conditions": [
+        "a 為實數",
+        "不等號未經其他運算改變"
+      ],
+      "meaning": "由符號判斷方向與端點。"
+    },
+    {
+      "formula": "x≤a ⇔ 數線上 a 的左側且包含 a",
+      "conditions": [
+        "a 為實數"
+      ],
+      "meaning": "含等號時端點也屬於解集。"
+    }
+  ],
+  "nonApplicableCases": [
+    "題目若只問單一數是否為解，不必把整個解集畫出。",
+    "圖形若未標刻度或方向，不能靠距離猜端點值。",
+    "x≠a 不是本單元的單一半直線型不等式，不能只畫一個方向。",
+    "不等號兩邊若尚有式子，需先解出 x 的範圍再畫。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先把不等號讀成完整中文。",
+      "check": "是否包含「等於」？"
+    },
+    {
+      "step": 2,
+      "instruction": "找端點並決定空心或實心。",
+      "check": "＞、＜用空心；≥、≤用實心。"
+    },
+    {
+      "step": 3,
+      "instruction": "依大於往右、小於往左畫方向。",
+      "check": "數線右側是否代表更大的數？"
+    },
+    {
+      "step": 4,
+      "instruction": "挑一個方向內的數代入驗證。",
+      "check": "代入後敘述是否成立？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 5 是否為 x>3 的解。",
+      "solutionSteps": [
+        "代入 x=5，得到 5>3。",
+        "敘述為真。"
+      ],
+      "answer": "5 是解。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "將 x≤−2 畫在數線上。",
+      "solutionSteps": [
+        "端點為 −2，因含等號畫實心點。",
+        "小於表示向左延伸。"
+      ],
+      "answer": "在 −2 畫實心點，向左畫射線。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "數線在 4 畫空心點並向右延伸，寫出不等式。",
+      "solutionSteps": [
+        "向右表示大於 4。",
+        "空心點表示不包含 4。"
+      ],
+      "answer": "x>4。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "找出 −1、0、2 中符合 x≥0 的數。",
+      "solutionSteps": [
+        "逐一比較是否大於或等於 0。",
+        "−1 不符合；0 與 2 符合。"
+      ],
+      "answer": "0、2。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 x<2 畫向右。",
+      "why": "把不等號當成箭頭。",
+      "correction": "先讀成「x 小於 2」，較小的數在左側。"
+    },
+    {
+      "mistake": "x≥3 的端點畫空心。",
+      "why": "忽略等號。",
+      "correction": "≥ 包含 3，應畫實心點。"
+    },
+    {
+      "mistake": "認為 x>3 只包含整數 4、5、6。",
+      "why": "把解集誤限為整數。",
+      "correction": "若題目未限定，3.1、π 等大於 3 的數也屬於解。"
+    },
+    {
+      "mistake": "檢驗時只看答案是否正數。",
+      "why": "沒有依原端點比較。",
+      "correction": "必須將候選數代入原不等式。"
+    },
+    {
+      "mistake": "由圖形長短判斷數值範圍。",
+      "why": "忽略數線射線可無限延伸。",
+      "correction": "看箭頭方向與刻度標示。"
+    },
+    {
+      "mistake": "把 2<x 寫成 x<2。",
+      "why": "交換兩邊時未保持同一大小關係。",
+      "correction": "2<x 等價於 x>2。"
+    }
+  ],
+  "selfCheck": [
+    "我能用完整中文讀出四種不等號嗎？",
+    "我能說明空心點與實心點的差別嗎？",
+    "我能由「大於」判斷向右嗎？",
+    "我有用代入檢查候選數嗎？"
+  ],
+  "summary": [
+    "不等號開口朝大數，尖端朝小數。",
+    "數線向右越大、向左越小。",
+    "＞與＜不含端點；≥與≤包含端點。",
+    "解集通常包含無限多個數，除非另有限制。"
+  ],
+  "connections": {
+    "previous": "本節是 U07 起點，銜接 U01 的數線與數的大小比較。",
+    "next": [
+      "下一節會用等量觀念解出一元一次不等式。",
+      "之後會把解集轉成整數解與情境限制。"
+    ]
+  },
+  "figureReferences": [
+    "u07-fig-symbol-number-line"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u07-s001-v001",
+      "u07-s001-v002",
+      "u07-s001-v003",
+      "u07-s001-v004",
+      "u07-s001-v005",
+      "u07-s001-v006",
+      "u07-s001-v007",
+      "u07-s001-v008",
+      "u07-s001-v009",
+      "u07-s001-v010",
+      "u07-s001-v011",
+      "u07-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u07-s001-cr001",
+      "u07-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐項核對四種不等號、端點包含性與左右方向；四個例題分別以代入、畫圖、讀圖和列舉驗證，未使用尚未介紹的移項或負數變號。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentSha256": "ae0b32e930b93ab25db71f07125bdb4af6313dc3df22cbb4843025f97b37e0e9"
+}

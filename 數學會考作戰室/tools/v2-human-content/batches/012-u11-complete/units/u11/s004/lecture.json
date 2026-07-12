@@ -1,0 +1,258 @@
+{
+  "lectureId": "u11-s004-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-square-root",
+  "skillId": "square-root-estimate",
+  "lockedSkillOrder": 4,
+  "lockedTitle": "平方根估算",
+  "title": "平方根估算：用平方界線控制精度",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能用相鄰完全平方數夾住平方根",
+    "能依指定小數位進行四捨五入",
+    "能以平方檢查近似值是否合理"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "square-root-arithmetic",
+      "requiredLevel": "能使用前一技能「根式四則」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "夾估",
+      "definition": "用上下界把未知平方根限制在一段範圍。"
+    },
+    {
+      "term": "完全平方數",
+      "definition": "整數平方所得的數。"
+    },
+    {
+      "term": "近似值",
+      "definition": "在指定精度下接近真值的數。"
+    },
+    {
+      "term": "進位界線",
+      "definition": "四捨五入時兩候選值的中點。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "n²<a<(n+1)²",
+      "meaning": "可推出n<√a<n+1。"
+    },
+    {
+      "symbol": "≈",
+      "meaning": "表示近似相等，不是完全相等。"
+    }
+  ],
+  "conceptNarrative": [
+    "平方根估算的核心是反向平方，而不是盲目試除。",
+    "找整數範圍後，若要求一位小數，可比較十分位候選或中點平方。",
+    "四捨五入到一位小數時，應檢查百分位是否達5；不一定要算出很多位。",
+    "近似值必須標示≈，精確根式仍使用=。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "整數夾估",
+      "statement": "若n²<a<(n+1)²且n≥0，則n<√a<n+1。"
+    },
+    {
+      "name": "一位小數四捨五入",
+      "statement": "比較真值與x.x5的進位界線。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "平方比較",
+      "conditions": [
+        "比較數皆非負時，可比較平方而不改變大小次序。"
+      ],
+      "meaning": "候選值需非負。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把√a估成a/2。",
+    "√50不是7.0，因等號會表示完全相等。",
+    "比較負數平方根時不能直接使用同樣方向。",
+    "題目要求精確值時不可擅自改成小數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找出a左右的相鄰完全平方數。",
+      "check": "先得到整數區間。"
+    },
+    {
+      "step": 2,
+      "instruction": "確認題目要求的精度。",
+      "check": "整數、十分位或百分位。"
+    },
+    {
+      "step": 3,
+      "instruction": "選取候選小數並平方。",
+      "check": "平方值低於a表示候選偏低。"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查四捨五入中點。",
+      "check": "避免只看上下端。"
+    },
+    {
+      "step": 5,
+      "instruction": "使用≈並保留單位。",
+      "check": "精確與近似符號分開。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "估√30的整數範圍。",
+      "solutionSteps": [
+        "25<30<36。"
+      ],
+      "answer": "5<√30<6。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "√3取一位小數。",
+      "solutionSteps": [
+        "1.7²=2.89，1.8²=3.24。",
+        "1.75²=3.0625>3。"
+      ],
+      "answer": "約1.7。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "判斷√120是否大於11。",
+      "solutionSteps": [
+        "11²=121。",
+        "120<121。"
+      ],
+      "answer": "√120<11。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "找最接近√250的整數。",
+      "solutionSteps": [
+        "15²=225，16²=256。",
+        "250更靠近256且超過15.5²。"
+      ],
+      "answer": "16。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "由49<50就寫√50=7。",
+      "why": "忽略不等號與等號差異。",
+      "correction": "應寫√50>7或近似7.1。"
+    },
+    {
+      "mistake": "一位小數只比較7.0與7.1的平方。",
+      "why": "未檢查四捨五入中點。",
+      "correction": "比較7.05²。"
+    },
+    {
+      "mistake": "將≈寫成=。",
+      "why": "把近似值當精確值。",
+      "correction": "估算結果使用≈。"
+    },
+    {
+      "mistake": "平方6.3得到12.6。",
+      "why": "把平方誤作乘2。",
+      "correction": "6.3²=39.69。"
+    },
+    {
+      "mistake": "忽略題目指定小數位。",
+      "why": "答案格式不符。",
+      "correction": "最後依規格四捨五入。"
+    },
+    {
+      "mistake": "使用計算機結果卻不檢查量級。",
+      "why": "輸入或小數點錯誤不易發現。",
+      "correction": "先用完全平方數建立範圍。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "先用完全平方數夾住，再用候選平方細分。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "找出a左右的相鄰完全平方數。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "由49<50就寫√50=7。；修正：應寫√50>7或近似7.1。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "我用了≈且保留指定小數位嗎？"
+    }
+  ],
+  "summary": [
+    "先用完全平方數夾住，再用候選平方細分。",
+    "精度與等號符號是答案的一部分。"
+  ],
+  "connections": {
+    "previous": "需要 s003 的平方與根式運算。",
+    "next": [
+      "s008 將使用平方比較根式大小。",
+      "畢氏應用常需估算斜邊。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u11-s004-numberline-estimate"
+  ],
+  "accessibilityNotes": [
+    "數線標出8.3、8.4、8.5，√70的位置落在8.3與8.4之間且較接近8.4。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s004-v001",
+      "u11-s004-v002",
+      "u11-s004-v003",
+      "u11-s004-v004",
+      "u11-s004-v005",
+      "u11-s004-v006",
+      "u11-s004-v007",
+      "u11-s004-v008",
+      "u11-s004-v009",
+      "u11-s004-v010",
+      "u11-s004-v011",
+      "u11-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s004-cr001",
+      "u11-s004-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「平方根估算」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「由49<50就寫√50=7。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "2ce54dd5320ee07dff813b91141d6e83e8149d7a6c545bafa9c301f69707bf16"
+}

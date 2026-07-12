@@ -1,0 +1,225 @@
+{
+  "lectureId": "u22-s004-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-quartiles",
+  "skillId": "quartile-position",
+  "lockedSkillOrder": 4,
+  "title": "四分位數位置：在已排序資料中定位 Q1與Q2與Q3，處理奇偶筆數。",
+  "originalLockedTitle": "四分位數位置",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能在n筆排序資料中標出Q2位置。",
+    "能依半分法換算Q1、Q3在原資料的位置。",
+    "能處理插入或刪除資料後的位置改變。",
+    "能指出分組資料只能定位區間。"
+  ],
+  "prerequisiteSkillIds": [
+    "box-plot-interpret"
+  ],
+  "prerequisiteBridge": "建立在四分位數計算與盒狀圖位置解讀上。",
+  "glossary": [
+    {
+      "term": "位置編號",
+      "definition": "排序後從第1筆開始的名次。"
+    },
+    {
+      "term": "中央位置",
+      "definition": "奇數筆的一個中央名次或偶數筆的兩個中央名次。"
+    },
+    {
+      "term": "位置換算",
+      "definition": "把半部內的名次轉回整組名次。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "n為偶數：Q2取第n/2與第n/2+1筆平均",
+      "meaning": "整組中位數位置。"
+    },
+    {
+      "symbol": "n為奇數：Q2取第(n+1)/2筆",
+      "meaning": "整組中央位置。"
+    }
+  ],
+  "conceptNarrative": [
+    "位置問題先問的是「哪幾筆」，不是先算資料值。",
+    "偶數筆分半後，每半筆數可能是奇數或偶數，必須再判一次。",
+    "例如18筆分成9與9，Q1是前9筆中央的原第5筆，Q3是後9筆中央的原第14筆。",
+    "例如20筆分成10與10，Q1由原第5、6筆平均，Q3由原第15、16筆平均。",
+    "新增最小值會使所有舊資料名次加1；刪除某位置後則需重新定位，不能沿用舊Q。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "位置規則",
+      "statement": "由筆數與半分法唯一決定所取名次。"
+    },
+    {
+      "name": "分組定位",
+      "statement": "累積次數可判斷四分位位置落在哪組，但通常不能得精確值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "偶數中央位置=n/2與n/2+1",
+      "conditions": [
+        "位置從1起算。"
+      ],
+      "meaning": "位置從1起算。"
+    },
+    {
+      "formula": "奇數中央位置=(n+1)/2",
+      "conditions": [
+        "結果為整數。"
+      ],
+      "meaning": "結果為整數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把n/4直接當Q1資料值。",
+    "奇數筆是否排除Q2必須依題幹規則。",
+    "插入資料後若不知道插入位置，不能直接換算。",
+    "分組資料不可任意在組內插值，除非題目提供規則。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "編號",
+      "check": "排序後標第1到第n筆。"
+    },
+    {
+      "step": 2,
+      "instruction": "找Q2位置",
+      "check": "依n奇偶。"
+    },
+    {
+      "step": 3,
+      "instruction": "圈出上下半部",
+      "check": "按題幹排除或平分。"
+    },
+    {
+      "step": 4,
+      "instruction": "在半部找中央",
+      "check": "再判半部奇偶。"
+    },
+    {
+      "step": 5,
+      "instruction": "換回原編號",
+      "check": "尤其是上半部位置。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "12筆",
+      "solutionSteps": [
+        "Q2第6、7；Q1第3、4；Q3第9、10。"
+      ],
+      "answer": "Q2第6、7；Q1第3、4；Q3第9、10。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "15筆排除第8",
+      "solutionSteps": [
+        "Q1原第4；Q3原第12。"
+      ],
+      "answer": "Q1原第4；Q3原第12。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "20筆",
+      "solutionSteps": [
+        "Q1第5、6；Q3第15、16。"
+      ],
+      "answer": "Q1第5、6；Q3第15、16。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "9筆前插一個新最小值",
+      "solutionSteps": [
+        "新Q2第5筆對應舊第4筆。"
+      ],
+      "answer": "新Q2第5筆對應舊第4筆。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "上半部重新編號後忘記加偏移",
+      "why": "先寫出原位置範圍再換算。",
+      "correction": "先寫出原位置範圍再換算。"
+    },
+    {
+      "mistake": "18筆Q1取第4、5平均",
+      "why": "前半9筆應取單一第5筆。",
+      "correction": "前半9筆應取單一第5筆。"
+    },
+    {
+      "mistake": "25筆Q3只取第19筆",
+      "why": "上半12筆應平均原第19、20筆。",
+      "correction": "上半12筆應平均原第19、20筆。"
+    },
+    {
+      "mistake": "刪除資料仍使用舊位置",
+      "why": "筆數與位置都要重算。",
+      "correction": "筆數與位置都要重算。"
+    }
+  ],
+  "selfCheck": [
+    "位置是否從1開始？",
+    "整組與半部的奇偶是否分別判斷？",
+    "上半部位置是否正確換回原編號？",
+    "題幹是否指定排除中位數？"
+  ],
+  "summary": [
+    "先定位，再代值。",
+    "整組偶數不代表半部也偶數。",
+    "上半部名次換算是高風險步驟。",
+    "資料增刪後必須重新編號。"
+  ],
+  "connections": {
+    "previous": "建立在四分位數計算與盒狀圖位置解讀上。",
+    "next": [
+      "下一技能用位置得到五數摘要。",
+      "累積圖技能會用累積次數定位Q1、Q2、Q3組別。"
+    ]
+  },
+  "figureReferences": [],
+  "figureAccessibility": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s004-v001",
+      "u22-s004-v002",
+      "u22-s004-v003",
+      "u22-s004-v004",
+      "u22-s004-v005",
+      "u22-s004-v006",
+      "u22-s004-v007",
+      "u22-s004-v008",
+      "u22-s004-v009",
+      "u22-s004-v010",
+      "u22-s004-v011",
+      "u22-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s004-cr001",
+      "u22-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "人工核對7、9、12、15、18、20、25筆的中央位置；修正初稿中18筆與25筆把半部奇偶判錯的兩處位置敘述。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "在已排序資料中定位 Q1、Q2、Q3，處理奇偶筆數。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "ef817aba49de51561337d6813ca5a576a3c1affbb91f935ee5f1fdc9e7731496"
+}

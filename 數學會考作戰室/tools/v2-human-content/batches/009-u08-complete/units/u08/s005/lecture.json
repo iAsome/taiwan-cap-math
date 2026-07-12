@@ -1,0 +1,238 @@
+{
+  "lectureId": "u08-s005-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-elements",
+  "skillId": "triangle-basic-classification",
+  "lockedSkillTitle": "三角形基本分類",
+  "title": "三角形基本分類：按邊與按角是兩套分類",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能依邊長分為不等邊、等腰與正三角形。",
+    "能依角度分為銳角、直角與鈍角三角形。",
+    "能同時描述一個三角形的邊分類與角分類。",
+    "能利用等腰或正三角形的基本角度關係。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "triangle-angle-sum"
+    ],
+    "bridgeExplanation": "先能求三角形內角，再依三角邊長與角度特徵分類。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "triangle-angle-sum",
+      "requiredLevel": "能使用三內角和 180°，並判斷角度範圍。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "不等邊三角形",
+      "definition": "三邊長互不相等。"
+    },
+    {
+      "term": "等腰三角形",
+      "definition": "至少有兩邊等長；常指定兩腰與底邊。"
+    },
+    {
+      "term": "正三角形",
+      "definition": "三邊等長，也稱等邊三角形。"
+    },
+    {
+      "term": "銳角三角形",
+      "definition": "三內角皆為銳角。"
+    },
+    {
+      "term": "直角三角形",
+      "definition": "有一個直角。"
+    },
+    {
+      "term": "鈍角三角形",
+      "definition": "有一個鈍角。"
+    },
+    {
+      "term": "底角",
+      "definition": "等腰三角形底邊兩端的角，兩底角相等。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AB=AC",
+      "meaning": "三角形 ABC 中 AB、AC 為等長的兩腰，底邊為 BC。"
+    },
+    {
+      "symbol": "∠B=∠C",
+      "meaning": "若 AB=AC，則底角 B、C 相等。"
+    }
+  ],
+  "conceptDevelopment": [
+    "三角形可以同時按邊與按角分類。例如有兩邊相等且一角為鈍角，可稱等腰鈍角三角形。",
+    "等腰三角形的兩個底角相等；反過來，若兩角相等，所對的兩邊相等。",
+    "正三角形三邊相等，所以三角也相等；三角和 180°，每角為 60°，因此正三角形一定是銳角三角形。",
+    "一個三角形不可能同時有兩個直角或兩個鈍角，因為總和會至少達 180°。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "按邊分類",
+      "statement": "依三邊相等的數量分類。"
+    },
+    {
+      "name": "按角分類",
+      "statement": "看最大內角：小於 90° 為銳角三角形，等於 90° 為直角三角形，大於 90° 為鈍角三角形。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "等腰三角形兩底角相等",
+      "conditions": [
+        "兩腰等長"
+      ],
+      "meaning": "由邊的對稱性得到角關係。"
+    },
+    {
+      "formula": "正三角形每角=60°",
+      "conditions": [
+        "三邊等長"
+      ],
+      "meaning": "三等角合為 180°。"
+    }
+  ],
+  "invalidUseCases": [
+    "等腰三角形不一定是銳角三角形，也可能是直角或鈍角。",
+    "正三角形不是與等腰三角形完全無關；依「至少兩邊相等」定義，正三角形是特殊等腰三角形。",
+    "只知道兩邊長相等，不能決定頂角確切度數。",
+    "圖上看起來對稱但未給等邊或等角條件時，不可自行判等腰。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "先按邊檢查相等邊數。",
+      "check": "三邊全等、恰兩邊等或三邊互異。"
+    },
+    {
+      "step": 2,
+      "instruction": "再按角找最大內角。",
+      "check": "最大角決定銳角、直角或鈍角類型。"
+    },
+    {
+      "step": 3,
+      "instruction": "有等腰條件時標出底邊與底角。",
+      "check": "等長兩邊夾角是頂角，另一邊是底邊。"
+    },
+    {
+      "step": 4,
+      "instruction": "用內角和與相等角求未知量。",
+      "check": "最後同時寫出需要的邊分類和角分類。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "邊長 5、5、8 的三角形按邊如何分類？",
+      "solutionSteps": [
+        "有兩邊同為 5。",
+        "因此是等腰三角形。"
+      ],
+      "answer": "等腰三角形。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "內角 50°、60°、70° 的三角形按角如何分類？",
+      "solutionSteps": [
+        "三角都小於 90°。",
+        "因此為銳角三角形。"
+      ],
+      "answer": "銳角三角形。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "等腰三角形頂角 40°，每個底角為何？",
+      "solutionSteps": [
+        "兩底角相等，總和為 180°-40°=140°。",
+        "每個底角 140°÷2=70°。"
+      ],
+      "answer": "70°。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "三角形三邊相等，請同時按邊與按角分類。",
+      "solutionSteps": [
+        "三邊相等是正三角形。",
+        "每角 60°，三角皆銳角。"
+      ],
+      "answer": "正三角形，也是銳角三角形。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "依明確邊長或角度分類。",
+    "standard": "同時做邊分類與角分類。",
+    "advanced": "利用等腰底角或正三角形 60° 求未知角。",
+    "literacy": "結構支架與標誌常用等腰或正三角形，文字規格可決定對稱與角度。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "看到兩角相等卻說是不等邊三角形。",
+      "why": "忘記等角對等邊。",
+      "correction": "兩角相等表示其對邊相等。"
+    },
+    {
+      "mistake": "認為等腰一定有三邊相等。",
+      "why": "把等腰與正三角形混同。",
+      "correction": "等腰只要求至少兩邊相等。"
+    },
+    {
+      "mistake": "用最小角判斷按角分類。",
+      "why": "忽略最大角最能決定類型。",
+      "correction": "找最大內角與 90° 比較。"
+    },
+    {
+      "mistake": "把含 90° 的三角形稱鈍角三角形。",
+      "why": "把大於等於 90° 混在一起。",
+      "correction": "等於 90° 是直角三角形。"
+    },
+    {
+      "mistake": "認為正三角形可為直角。",
+      "why": "未使用每角 60°。",
+      "correction": "正三角形一定是銳角三角形。"
+    },
+    {
+      "mistake": "依未按比例圖形猜等腰。",
+      "why": "把外觀當條件。",
+      "correction": "只採用等邊記號、數值或文字敘述。"
+    }
+  ],
+  "selfCheckItems": [
+    "我是否分開處理按邊與按角分類？",
+    "我是否用最大內角判斷角分類？",
+    "等腰三角形的底角是否正確找出？",
+    "正三角形每角是否為 60°？"
+  ],
+  "conciseSummary": [
+    "按邊可分不等邊、等腰與正三角形。",
+    "按角可分銳角、直角與鈍角三角形。",
+    "等腰三角形兩底角相等。",
+    "正三角形每角 60°。"
+  ],
+  "connections": {
+    "previous": "上一技能提供三角形內角和。",
+    "next": [
+      "下一技能比較四邊形的邊、角與平行關係。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "檢查按邊與按角兩套分類不互相取代；等腰頂角 40° 的底角重算為 70°，正三角形每角 60°，並明示不依圖形外觀判定。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "26751fd84c780b35600d7e54604e3c01fb9e6a51a5c2446cb74c7c514daa314c"
+}

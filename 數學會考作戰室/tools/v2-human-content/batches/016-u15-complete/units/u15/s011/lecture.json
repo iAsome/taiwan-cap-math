@@ -1,0 +1,150 @@
+{
+  "lectureId": "u15-s011-lecture",
+  "unitId": "u15",
+  "numericUnitId": 15,
+  "unitTitle": "函數及其圖形",
+  "topicId": "u15-graphs",
+  "skillId": "piecewise-linear-basic",
+  "skillSlot": "s011",
+  "skillTitle": "分段線型基本",
+  "order": 11,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisites": [
+    {
+      "skillId": "function-graph-read-point",
+      "title": "由圖讀函數值",
+      "requiredLevel": "能按坐標軸刻度讀點、讀交點、判斷函數值正負，並留意圖形端點及定義域。",
+      "bridge": "真實規則有時在某個界線前後採不同線型公式；本節先判斷輸入落在哪一段，再只使用該段規則。"
+    }
+  ],
+  "learningGoals": [
+    "依輸入區間選擇正確線型規則",
+    "正確處理分界點的等號",
+    "解讀簡單分段費率與圖形"
+  ],
+  "vocabulary": [
+    {
+      "term": "分段函數",
+      "meaning": "不同輸入範圍使用不同規則"
+    },
+    {
+      "term": "分界點",
+      "meaning": "規則切換的輸入值"
+    },
+    {
+      "term": "端點包含",
+      "meaning": "以 ≤ 或 ≥ 表示端點可用"
+    }
+  ],
+  "conceptDevelopment": [
+    "分段函數不是把所有公式都算一次，而是先看輸入落在哪個區間，再只使用該段規則。",
+    "分界點要看等號歸屬。例如 x≤3 用第一段、x>3 用第二段，x=3 必須用第一段。"
+  ],
+  "definitionsAndMeaning": "分段函數不是把所有公式都算一次，而是先看輸入落在哪個區間，再只使用該段規則。",
+  "formulasAndConditions": [
+    "f(x)={a₁x+b₁（x 在第一區間）；a₂x+b₂（x 在第二區間）}。",
+    "若要求分界連接，可令兩段在分界點的函數值相等。"
+  ],
+  "invalidUseCases": [
+    "不看條件就選看起來簡單的公式。",
+    "分界點同時套兩段或兩段都不套。",
+    "把第二段的累計費用忘記包含前段。"
+  ],
+  "stepByStepMethod": [
+    "圈出輸入值。",
+    "逐段比對區間條件，確認唯一適用段。",
+    "代入該段公式計算。",
+    "在費率題檢查公式是否已包含前段固定費。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s011-ex01",
+      "title": "直接選段",
+      "prompt": "已知 f(x)=2x（x≤4），f(x)=x+5（x>4）。分別求 f(3) 與 f(6)，並說明各選哪一段。",
+      "solution": "f(x)=2x（x≤4），x+5（x>4）。f(3)=6，f(6)=11。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s011-ex02",
+      "title": "分界點",
+      "prompt": "沿用 f(x)=2x（x≤4）、f(x)=x+5（x>4），求 f(4)。分界點 4 屬於哪一段？",
+      "solution": "上例 f(4)=8，因 4 屬於第一段。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s011-ex03",
+      "title": "連續條件",
+      "prompt": "分段函數第一段為 2x+1、第二段為 x+k，兩段要在 x=3 接合。求 k。",
+      "solution": "第一段 2x+1、第二段 x+k 在 x=3 接合，令 7=3+k，得 k=4。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s011-ex04",
+      "title": "分段費率",
+      "prompt": "停車前 2 小時共收 30 元，超過 2 小時後每多 1 小時加 20 元。停 3 小時應付多少？",
+      "solution": "前 2 小時 30 元，超過後每小時加 20 元；3 小時費用是 30+20=50。",
+      "level": "connection"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistakeId": "s011-m01",
+      "wrongReasoning": "把 x=分界點放錯段。",
+      "correction": "把分界值代入每段條件；x≤4 包含 4，x>4 不包含 4，應選唯一符合不等號的那段。"
+    },
+    {
+      "mistakeId": "s011-m02",
+      "wrongReasoning": "兩段公式相加。",
+      "correction": "一個指定輸入只使用一段公式，不把兩段相加；先判斷區間，再代入該段。"
+    },
+    {
+      "mistakeId": "s011-m03",
+      "wrongReasoning": "超量費率只算超量卻漏基本費。",
+      "correction": "超量收費通常是「基本費＋超過部分×費率」；先算超過多少，再把基本費保留。"
+    },
+    {
+      "mistakeId": "s011-m04",
+      "wrongReasoning": "以為分段圖一定斷開。",
+      "correction": "分段只表示規則不同，接合點兩側可能連續也可能跳躍；應比較分界處兩段的值，不可憑名稱判斷。"
+    },
+    {
+      "mistakeId": "s011-m05",
+      "wrongReasoning": "由輸出反找輸入時只查一段。",
+      "correction": "反求輸入時應分別在每一段解方程，再逐一檢查所得解是否落在該段條件內。"
+    }
+  ],
+  "selfChecks": [
+    {
+      "prompt": "x≤5 用 3x，x>5 用 x+10，f(5)=？",
+      "answer": "15"
+    },
+    {
+      "prompt": "同規則 f(6)=？",
+      "answer": "16"
+    },
+    {
+      "prompt": "分界連續代表什麼？",
+      "answer": "兩段在分界點的函數值相同。"
+    }
+  ],
+  "summary": "分段題先判區間，再套唯一適用規則；分界等號最關鍵。",
+  "previousSkillConnection": "function-graph-read-point",
+  "nextSkillConnection": "linear-function-application",
+  "figureRefs": [
+    "u15-fig-piecewise"
+  ],
+  "accessibilityNotes": [
+    "圖形 u15-fig-piecewise 另附繁體中文替代文字與不按比例警告。"
+  ],
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-u15-r1",
+    "reviewedAt": "2026-07-12T16:00:00+08:00",
+    "decision": "pass",
+    "reviewNote": "逐段人工重讀「分段線型基本」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+    "zeroFoundationCheck": "學生只需具備 能以自己的話說明「由圖讀函數值」並完成基本判斷或計算。",
+    "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+  },
+  "canonicalization": "sorted-keys-json-utf8-v1",
+  "contentSha256": "047d41f32fb72d7661cc1b2aacf412fec2d2b2251dccc20c373a006f4287a3da"
+}

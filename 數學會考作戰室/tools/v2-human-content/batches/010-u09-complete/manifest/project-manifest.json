@@ -1,0 +1,206 @@
+{
+  "packageId": "math-v2-human-content-batch-010-u09-complete",
+  "batchId": "010-u09-complete",
+  "schemaVersion": "math-v2-human-authoring-package-r1.2",
+  "immutableSource": true,
+  "baseBranch": "chatgpt/math-v2-human-authoring-r1",
+  "expectedBaseHead": "__CENTRAL_COORDINATOR_WILL_SUPPLY_EXPECTED_HEAD__",
+  "repository": "iAsome/taiwan-cap-math",
+  "authoritativeSyllabusLock": {
+    "path": "數學會考作戰室/tools/v2-human-content/authoring/authoring-syllabus-lock-r2.json",
+    "sha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc"
+  },
+  "unit": {
+    "unitId": "u09",
+    "numericUnitId": 9,
+    "title": "統計圖表與資料處理",
+    "gradeBand": "7下",
+    "domain": "資料與不確定性",
+    "capScopeNote": "四分位數與盒狀圖在 U22。"
+  },
+  "skills": [
+    {
+      "slot": "s001",
+      "skillId": "data-table-reading",
+      "lockedTitle": "資料表判讀",
+      "topicId": "u09-display",
+      "order": 1,
+      "prerequisiteSkillIds": []
+    },
+    {
+      "slot": "s002",
+      "skillId": "frequency-table",
+      "lockedTitle": "次數與相對次數分配表",
+      "topicId": "u09-display",
+      "order": 2,
+      "prerequisiteSkillIds": [
+        "data-table-reading"
+      ]
+    },
+    {
+      "slot": "s003",
+      "skillId": "bar-chart-text",
+      "lockedTitle": "長條圖文字判讀",
+      "topicId": "u09-display",
+      "order": 3,
+      "prerequisiteSkillIds": [
+        "frequency-table"
+      ]
+    },
+    {
+      "slot": "s004",
+      "skillId": "line-chart-text",
+      "lockedTitle": "折線圖與次數分配折線圖",
+      "topicId": "u09-display",
+      "order": 4,
+      "prerequisiteSkillIds": [
+        "bar-chart-text"
+      ]
+    },
+    {
+      "slot": "s005",
+      "skillId": "pie-chart-percent",
+      "lockedTitle": "圓形圖與百分比",
+      "topicId": "u09-display",
+      "order": 5,
+      "prerequisiteSkillIds": [
+        "line-chart-text"
+      ]
+    },
+    {
+      "slot": "s006",
+      "skillId": "histogram-read",
+      "lockedTitle": "直方圖文字判讀",
+      "topicId": "u09-display",
+      "order": 6,
+      "prerequisiteSkillIds": [
+        "pie-chart-percent"
+      ]
+    },
+    {
+      "slot": "s007",
+      "skillId": "cumulative-frequency",
+      "lockedTitle": "累積次數",
+      "topicId": "u09-display",
+      "order": 7,
+      "prerequisiteSkillIds": [
+        "histogram-read"
+      ]
+    },
+    {
+      "slot": "s008",
+      "skillId": "contingency-table",
+      "lockedTitle": "列聯表",
+      "topicId": "u09-display",
+      "order": 8,
+      "prerequisiteSkillIds": [
+        "cumulative-frequency"
+      ]
+    },
+    {
+      "slot": "s009",
+      "skillId": "mean-basic",
+      "lockedTitle": "平均數",
+      "topicId": "u09-summary",
+      "order": 9,
+      "prerequisiteSkillIds": [
+        "contingency-table"
+      ]
+    },
+    {
+      "slot": "s010",
+      "skillId": "median-basic",
+      "lockedTitle": "中位數與位置",
+      "topicId": "u09-summary",
+      "order": 10,
+      "prerequisiteSkillIds": [
+        "mean-basic"
+      ]
+    },
+    {
+      "slot": "s011",
+      "skillId": "mode-range-basic",
+      "lockedTitle": "眾數與全距",
+      "topicId": "u09-summary",
+      "order": 11,
+      "prerequisiteSkillIds": [
+        "median-basic"
+      ]
+    },
+    {
+      "slot": "s012",
+      "skillId": "weighted-average-basic",
+      "lockedTitle": "加權平均",
+      "topicId": "u09-summary",
+      "order": 12,
+      "prerequisiteSkillIds": [
+        "mode-range-basic"
+      ]
+    },
+    {
+      "slot": "s013",
+      "skillId": "mean-from-table",
+      "lockedTitle": "由次數表求平均與缺值",
+      "topicId": "u09-summary",
+      "order": 13,
+      "prerequisiteSkillIds": [
+        "weighted-average-basic"
+      ]
+    },
+    {
+      "slot": "s014",
+      "skillId": "data-comparison-context",
+      "lockedTitle": "兩組資料與代表值比較",
+      "topicId": "u09-comparison",
+      "order": 14,
+      "prerequisiteSkillIds": [
+        "mean-from-table"
+      ]
+    },
+    {
+      "slot": "s015",
+      "skillId": "misleading-statistics-basic",
+      "lockedTitle": "統計敘述的合理性",
+      "topicId": "u09-comparison",
+      "order": 15,
+      "prerequisiteSkillIds": [
+        "data-comparison-context"
+      ]
+    },
+    {
+      "slot": "s016",
+      "skillId": "statistics-literacy-context",
+      "lockedTitle": "統計資料素養",
+      "topicId": "u09-literacy",
+      "order": 16,
+      "prerequisiteSkillIds": [
+        "misleading-statistics-basic"
+      ]
+    }
+  ],
+  "counts": {
+    "lockedSkillCount": 16,
+    "lectureCount": 16,
+    "mcQuestionCount": 192,
+    "constructedResponseCount": 32,
+    "semanticReviewCount": 192,
+    "figureCount": 7,
+    "difficultyCounts": {
+      "basic": 48,
+      "standard": 48,
+      "advanced": 48,
+      "literacy": 48
+    },
+    "answerIndexCounts": {
+      "0": 48,
+      "1": 48,
+      "2": 48,
+      "3": 48
+    }
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "productionActivationAllowed": false,
+  "allowedDestination": "數學會考作戰室/tools/v2-human-content/batches/010-u09-complete/",
+  "coordinatorApprovalRequired": true,
+  "legacyContentUsed": false
+}

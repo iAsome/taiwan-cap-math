@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U05 human MC",
+  "type": "object",
+  "required": [
+    "questionId",
+    "unitId",
+    "topicId",
+    "skillId",
+    "difficulty",
+    "text",
+    "choices",
+    "answerIndex",
+    "independentSolution",
+    "optionAnalysis",
+    "ambiguityBoundaryAudit",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "unitId": {
+      "const": "u05"
+    },
+    "type": {
+      "const": "mc"
+    },
+    "choices": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "answerIndex": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

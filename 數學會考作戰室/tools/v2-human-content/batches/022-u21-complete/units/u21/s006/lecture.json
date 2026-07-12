@@ -1,0 +1,290 @@
+{
+  "lectureId": "u21-s006-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-graphs",
+  "skillId": "quadratic-axis-symmetry",
+  "lockedTitle": "對稱軸求法",
+  "title": "三條路找到對稱軸：頂點與等高點和一般式",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-axis-symmetry"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由頂點式直接寫出對稱軸。",
+    "能由一對等高點的橫座標求對稱軸。",
+    "能由一般式 y=ax²+bx+c 使用 x=-b/(2a)。",
+    "能選擇最少步驟且不超出題目資訊的方法。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-opening",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "先能判斷開口並理解對稱軸是垂直線；本節把圖形線索與代數係數連接。",
+  "glossary": [
+    {
+      "term": "頂點式",
+      "definition": "y=a(x-h)²+k，可直接讀出對稱軸 x=h。"
+    },
+    {
+      "term": "一般式",
+      "definition": "y=ax²+bx+c，a≠0。"
+    },
+    {
+      "term": "等高點法",
+      "definition": "取相同 y 的兩點橫座標平均。"
+    },
+    {
+      "term": "根的中點",
+      "definition": "若圖形與 x 軸交於兩點，兩根的平均也是對稱軸。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x=h",
+      "meaning": "頂點式的對稱軸。"
+    },
+    {
+      "symbol": "x=-b/(2a)",
+      "meaning": "一般式的對稱軸公式。"
+    },
+    {
+      "symbol": "(p+q)/2",
+      "meaning": "等高點或兩根橫座標的中點。"
+    }
+  ],
+  "conceptNarrative": [
+    "對稱軸本質上是左右等距點的中線，所以最直觀方法是等高點平均。",
+    "頂點式已把中線位置藏在 (x-h)² 中：當 x=h 時平方最小為 0，因此軸是 x=h。注意括號內符號與 h 相反。",
+    "一般式若沒有明顯等高點，可用 x=-b/(2a)。這個公式只需 a、b，不需要 c。",
+    "三種方法應得到相同結果。若不同，通常是負號、分母 2a 或括號內符號讀錯。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "對稱軸一般式公式",
+      "statement": "對 y=ax²+bx+c（a≠0），對稱軸為 x=-b/(2a)。"
+    },
+    {
+      "name": "等高點中點性質",
+      "statement": "同一拋物線上兩個不同等高點的橫座標平均等於對稱軸。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x=-b/(2a)",
+      "conditions": [
+        "函數已整理為 y=ax²+bx+c",
+        "a≠0"
+      ],
+      "meaning": "由一般式係數求軸。"
+    },
+    {
+      "formula": "x=(p+q)/2",
+      "conditions": [
+        "(p,r)、(q,r) 為不同等高點"
+      ],
+      "meaning": "由對稱性求軸。"
+    },
+    {
+      "formula": "x=h",
+      "conditions": [
+        "函數為 y=a(x-h)²+k"
+      ],
+      "meaning": "由頂點式直接讀取。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把 -b/(2a) 寫成 (-b/2)×a。",
+    "兩點 y 不同時不能使用平均法。",
+    "頂點式 y=a(x+3)²+k 的 h 是 -3，不是 3。",
+    "一般式未合併同類項前，a、b 可能讀錯。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先辨認題目提供哪種資訊。",
+      "check": "頂點式、一般式或等高點？"
+    },
+    {
+      "step": 2,
+      "instruction": "選對應方法。",
+      "check": "能直接讀就不必展開。"
+    },
+    {
+      "step": 3,
+      "instruction": "完整代入並保留分母括號。",
+      "check": "2a 是否整體在分母？"
+    },
+    {
+      "step": 4,
+      "instruction": "把結果寫成直線方程 x=數值。",
+      "check": "沒有只寫一個數。"
+    },
+    {
+      "step": 5,
+      "instruction": "用對稱點或頂點驗算。",
+      "check": "左右距離是否相等？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "求 y=2(x-5)²+1 的對稱軸。",
+      "solutionSteps": [
+        "頂點式中 h=5。",
+        "軸為 x=h。"
+      ],
+      "answer": "x=5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "求 y=-3(x+4)²+7 的對稱軸。",
+      "solutionSteps": [
+        "x+4=x-(-4)，所以 h=-4。",
+        "軸為 x=-4。"
+      ],
+      "answer": "x=-4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "求 y=2x²-12x+5 的對稱軸。",
+      "solutionSteps": [
+        "a=2、b=-12。",
+        "x=-(-12)/(2×2)=3。"
+      ],
+      "answer": "x=3。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "同高點 x=-7 與 x=1，求軸。",
+      "solutionSteps": [
+        "平均為 (-7+1)/2=-3。",
+        "兩點到 -3 都是 4 單位。"
+      ],
+      "answer": "x=-3。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "圖形與 x 軸交於 x=2、x=8，求軸。",
+      "solutionSteps": [
+        "兩交點 y 都是 0，屬等高點。",
+        "平均 (2+8)/2=5。"
+      ],
+      "answer": "x=5。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "頂點式直接讀軸。",
+    "standard": "一般式公式代入或等高點平均。",
+    "advanced": "由參數使軸符合指定位置。",
+    "literacy": "由對稱拱門兩側等高測量點找中心線。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "y=(x+4)² 的軸寫 x=4。",
+      "why": "括號內符號未反讀。",
+      "correction": "x+4=x-(-4)，故 x=-4。"
+    },
+    {
+      "mistake": "公式漏掉負號。",
+      "why": "只記 b/(2a)。",
+      "correction": "先寫完整 -b/(2a) 再代。"
+    },
+    {
+      "mistake": "分母只除以 2。",
+      "why": "未把 2a 視為整體。",
+      "correction": "用括號寫 -b÷(2a)。"
+    },
+    {
+      "mistake": "把 c 代入公式。",
+      "why": "混淆係數角色。",
+      "correction": "軸公式只用 a、b。"
+    },
+    {
+      "mistake": "等高點平均 y 座標。",
+      "why": "未理解軸是垂直線。",
+      "correction": "平均的是兩個 x。"
+    },
+    {
+      "mistake": "答案只寫 3。",
+      "why": "把直線與數值混淆。",
+      "correction": "完整寫 x=3。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "y=(x-9)²-2 的軸？",
+      "answer": "x=9。"
+    },
+    {
+      "prompt": "y=-2(x+1)² 的軸？",
+      "answer": "x=-1。"
+    },
+    {
+      "prompt": "y=x²+6x+4 的軸？",
+      "answer": "x=-3。"
+    },
+    {
+      "prompt": "等高點 x=-2、10 的軸？",
+      "answer": "x=4。"
+    }
+  ],
+  "summary": [
+    "頂點式看 h：軸 x=h。",
+    "一般式用 x=-b/(2a)。",
+    "等高點或兩根取橫座標平均。",
+    "所有方法都要把答案寫成垂直直線 x=常數。"
+  ],
+  "connections": {
+    "previous": "開口方向幫助辨認圖形，但軸的位置需另由式子或對稱資訊求得。",
+    "next": [
+      "下一技能會完整讀取頂點式中的 a、h、k。",
+      "最大最小值會把軸與頂點 y 值一起使用。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s006-01"
+  ],
+  "accessibilityNotes": [
+    "圖中等高點以相同水平輔助線連接，對稱軸用虛線並標出中點計算。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s006-v001",
+      "u21-s006-v002",
+      "u21-s006-v003",
+      "u21-s006-v004",
+      "u21-s006-v005",
+      "u21-s006-v006",
+      "u21-s006-v007",
+      "u21-s006-v008",
+      "u21-s006-v009",
+      "u21-s006-v010",
+      "u21-s006-v011",
+      "u21-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s006-cr001",
+      "u21-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一以三種方法驗算：一般式 2x²-12x+5 得 x=3，等高點 -7 與 1 得 x=-3，並特別核對 x+4 對應 h=-4。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "fd7e09063b0eb176c0b66f2ed4f7d2acf8f273cfd239eaaba94502fac83cfd27"
+}

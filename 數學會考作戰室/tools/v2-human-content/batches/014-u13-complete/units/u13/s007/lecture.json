@@ -1,0 +1,250 @@
+{
+  "lectureId": "u13-s007-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-solve-by-factoring",
+  "lockedOrder": 7,
+  "originalLockedTitle": "因式分解解方程",
+  "title": "整理後用因式分解解方程式",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能將非零右端方程式先整理為 0。",
+    "能選擇提公因式、十字交乘或平方差完成因式分解。",
+    "能避免除以含未知數因式造成漏根。",
+    "能套用情境限制保留合理根。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-standard-form",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "承接標準式與係數，將一般外觀的方程式轉成第一技能可用的乘積形式。",
+  "glossary": [
+    {
+      "term": "整理後因式分解",
+      "definition": "先化為標準式，再把二次多項式分解成因式乘積。"
+    },
+    {
+      "term": "公因式",
+      "definition": "每一項共同含有的因數。"
+    },
+    {
+      "term": "平方差",
+      "definition": "A²-B²=(A-B)(A+B)。"
+    },
+    {
+      "term": "候選根",
+      "definition": "由因式等於 0 得到，仍需代回與檢查情境的數值。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax²+bx+c=0",
+      "meaning": "因式分解前的標準式。"
+    },
+    {
+      "symbol": "(px+q)(rx+s)=0",
+      "meaning": "分別解 px+q=0 與 rx+s=0。"
+    }
+  ],
+  "conceptNarrative": [
+    "本技能與第一技能不同：重點在「原方程式尚未呈現乘積等於 0」時的整理策略。",
+    "先展開、移項、合併同類項，再判斷因式分解型態。",
+    "若所有項含 x，提公因式後要保留 x=0 分支。",
+    "同一因式出現在等式兩邊時，可移到同邊提公因式，不宜直接約掉。",
+    "文字題得到代數根後，還要檢查長度、人數等限制。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "整理後因式分解法",
+      "statement": "原方程式經等價變形為乘積等於 0，再用零乘積性質求根。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x²+(m+n)x+mn=(x+m)(x+n)",
+      "conditions": [
+        "能找到和為一次項係數、積為常數項的 m、n"
+      ],
+      "meaning": "首項係數為 1 的常用分解。"
+    },
+    {
+      "formula": "A²-B²=(A-B)(A+B)",
+      "conditions": [
+        "兩項皆為完全平方且中間為減號"
+      ],
+      "meaning": "平方差分解。"
+    }
+  ],
+  "nonApplicableCases": [
+    "二次式無法整數因式分解時，不應硬猜，應改用配方法或公式解。",
+    "未使右邊為 0 不能直接套零乘積性質。",
+    "不能約去可能為 0 的共同含未知數因式。",
+    "情境限定正數時，負根雖為代數解仍不合題意。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "展開並移項成標準式。",
+      "check": "等號一邊是否為 0？"
+    },
+    {
+      "step": 2,
+      "instruction": "先找公因式，再辨認平方差或三項式。",
+      "check": "分解是否完整？"
+    },
+    {
+      "step": 3,
+      "instruction": "展開因式驗證。",
+      "check": "係數與常數是否完全一致？"
+    },
+    {
+      "step": 4,
+      "instruction": "用零乘積性質求全部候選根。",
+      "check": "是否漏掉公因式 x=0？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原式並套用情境。",
+      "check": "每個根是否合理？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 x²+x=6。",
+      "solutionSteps": [
+        "移項得 x²+x-6=0。",
+        "分解為 (x+3)(x-2)=0。"
+      ],
+      "answer": "x=-3 或 x=2。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 2x²=5x+3。",
+      "solutionSteps": [
+        "整理得 2x²-5x-3=0。",
+        "分解為 (2x+1)(x-3)=0。"
+      ],
+      "answer": "x=-1/2 或 x=3。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 x²=9x。",
+      "solutionSteps": [
+        "移項得 x²-9x=0。",
+        "提 x：x(x-9)=0。"
+      ],
+      "answer": "x=0 或 x=9。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解 x(x+5)=2(x+5)。",
+      "solutionSteps": [
+        "移同邊得 (x+5)(x-2)=0。",
+        "不可先約掉 x+5。"
+      ],
+      "answer": "x=-5 或 x=2。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "長方形寬 x、長 x+7，面積 60，求正的 x。",
+      "solutionSteps": [
+        "列 x(x+7)=60。",
+        "整理分解為 (x+12)(x-5)=0。",
+        "長度取正。"
+      ],
+      "answer": "x=5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "未移項就分別令括號為 0。",
+      "why": "乘積不等於 0。",
+      "correction": "先整理成標準式。"
+    },
+    {
+      "mistake": "x²=9x 兩邊除以 x。",
+      "why": "漏掉 x=0。",
+      "correction": "移項提公因式。"
+    },
+    {
+      "mistake": "因式常數積正負判錯。",
+      "why": "沒有同時檢查和與積。",
+      "correction": "展開驗證。"
+    },
+    {
+      "mistake": "看到共同因式就直接約掉。",
+      "why": "共同因式可能為 0。",
+      "correction": "移到同邊後提公因式。"
+    },
+    {
+      "mistake": "無法整數分解仍硬湊。",
+      "why": "可能產生錯誤因式。",
+      "correction": "改用公式解。"
+    },
+    {
+      "mistake": "面積題保留負長度。",
+      "why": "未套用情境限制。",
+      "correction": "代數解後排除負值。"
+    }
+  ],
+  "selfCheck": [
+    "是否先整理為 0？",
+    "分解是否完整？",
+    "是否展開驗證？",
+    "是否保留 0 根與被約因式根？",
+    "情境根是否合理？"
+  ],
+  "summary": [
+    "本技能強調先整理再分解。",
+    "公因式、平方差與三項式是主要型態。",
+    "不可約去可能為 0 的因式。",
+    "情境題需排除不合理根。"
+  ],
+  "connections": {
+    "previous": "承接標準式與係數，將一般外觀的方程式轉成第一技能可用的乘積形式。",
+    "next": [
+      "下一節以首項係數為 1 的配方法處理不能順利分解的式子。",
+      "應用題會把列式與根的篩選結合。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s007-v001",
+      "u13-s007-v002",
+      "u13-s007-v003",
+      "u13-s007-v004",
+      "u13-s007-v005",
+      "u13-s007-v006",
+      "u13-s007-v007",
+      "u13-s007-v008",
+      "u13-s007-v009",
+      "u13-s007-v010",
+      "u13-s007-v011",
+      "u13-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s007-cr001",
+      "u13-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "五例均由原式重新整理、展開因式並代回；特別確認 x²=9x 保留 x=0、共同因式案例保留 x=-5，以及長度案例只取正根 5。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "fa547690920d67e54c0eb4d16dd06ebaa4e6369054f3673b3f1e96a65cc32b7d"
+}

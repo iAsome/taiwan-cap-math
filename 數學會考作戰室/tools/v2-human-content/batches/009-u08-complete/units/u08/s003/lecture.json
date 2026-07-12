@@ -1,0 +1,241 @@
+{
+  "lectureId": "u08-s003-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-elements",
+  "skillId": "parallel-perpendicular-angles",
+  "lockedSkillTitle": "平行垂直與對頂角",
+  "title": "平行垂直與對頂角：用交點關係判斷角",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認平行線與垂直線的定義。",
+    "能利用對頂角相等求角度。",
+    "能利用鄰補角和為 180° 求角度。",
+    "能分清對頂角、相鄰角與同一個角。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "angle-types-measure"
+    ],
+    "bridgeExplanation": "先會判斷直角、平角與互補，再研究兩直線的位置關係。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "angle-types-measure",
+      "requiredLevel": "能辨認 90° 與 180°，並求補角。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "平行線",
+      "definition": "同一平面內永不相交的兩直線。"
+    },
+    {
+      "term": "垂直線",
+      "definition": "相交形成直角的兩直線。"
+    },
+    {
+      "term": "對頂角",
+      "definition": "兩直線相交時，頂點相同且兩邊互為反向射線的一對角。"
+    },
+    {
+      "term": "鄰角",
+      "definition": "頂點與一邊相同，內部不重疊的兩角。"
+    },
+    {
+      "term": "鄰補角",
+      "definition": "相鄰且另外兩邊形成一直線的兩角，和為 180°。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "l ∥ m",
+      "meaning": "直線 l 平行直線 m。"
+    },
+    {
+      "symbol": "l ⟂ m",
+      "meaning": "直線 l 垂直直線 m。"
+    },
+    {
+      "symbol": "∠1=∠3",
+      "meaning": "若 ∠1、∠3 為對頂角，度數相等。"
+    }
+  ],
+  "conceptDevelopment": [
+    "平行與垂直都是直線間的關係。平行線在同一平面內沒有交點；垂直線一定相交，而且形成四個直角。",
+    "兩直線相交會形成四個角。相對的兩角是對頂角，因此相等；相鄰且排成一直線的兩角和為 180°。",
+    "知道其中一個角後，可以交替得到四個角：對面的角相同，旁邊的角用 180° 減。",
+    "不能只憑看起來接近 90° 就判定垂直；必須有直角記號、度數或文字條件。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "平行的必要範圍",
+      "statement": "兩直線必須位於同一平面，空間中不相交但不同平面的直線不在本技能討論。"
+    },
+    {
+      "name": "垂直",
+      "statement": "兩直線相交且至少一角為 90°；此時四角皆為 90°。"
+    },
+    {
+      "name": "對頂角定理",
+      "statement": "兩直線相交所形成的對頂角度數相等。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "對頂角相等",
+      "conditions": [
+        "必須由兩條完整直線相交形成"
+      ],
+      "meaning": "可直接把相對角度數設為相等。"
+    },
+    {
+      "formula": "鄰補角和=180°",
+      "conditions": [
+        "兩角共邊且另外兩邊為反向射線"
+      ],
+      "meaning": "可由一角求相鄰角。"
+    }
+  ],
+  "invalidUseCases": [
+    "兩條線段不相交不代表它們所在直線平行。",
+    "相等的兩角不一定是對頂角，還要檢查位置。",
+    "共頂點的兩角不一定互補。",
+    "沒有明確條件時不能以圖形外觀認定平行或垂直。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "確認研究的是直線、線段還是射線。",
+      "check": "對頂角定理需要兩直線相交。"
+    },
+    {
+      "step": 2,
+      "instruction": "找出相對或相鄰位置。",
+      "check": "相對用相等；相鄰成一直線用和 180°。"
+    },
+    {
+      "step": 3,
+      "instruction": "建立等式並求值。",
+      "check": "含未知數時可用 x 表示角度。"
+    },
+    {
+      "step": 4,
+      "instruction": "回到四角檢查。",
+      "check": "相對兩角相同，相鄰兩角相加 180°。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "兩直線相交，其中一角為 47°，其對頂角為多少？",
+      "solutionSteps": [
+        "對頂角度數相等。",
+        "所以相對角也是 47°。"
+      ],
+      "answer": "47°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "同一交點的一個角為 128°，與它相鄰且成一直線的角為多少？",
+      "solutionSteps": [
+        "鄰補角和為 180°。",
+        "180°-128°=52°。"
+      ],
+      "answer": "52°。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "若直線 a 與 b 垂直，交點處任一角的度數為何？",
+      "solutionSteps": [
+        "垂直定義是相交成直角。",
+        "四個角皆為 90°。"
+      ],
+      "answer": "90°。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩直線相交，一對對頂角分別為 (3x+5)° 與 (5x-35)°，求 x。",
+      "solutionSteps": [
+        "對頂角相等，3x+5=5x-35。",
+        "40=2x，x=20。",
+        "兩角皆為 65°。"
+      ],
+      "answer": "x=20。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "辨認 ∥、⟂ 與對頂位置。",
+    "standard": "由一角求對頂角與鄰補角。",
+    "advanced": "以代數式處理相交直線的角度。",
+    "literacy": "閱讀道路交會、施工直角或平行邊界規格時，必須依文字條件而非示意圖外觀。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "兩線看起來不交就判平行。",
+      "why": "線段可能太短而未畫到交點。",
+      "correction": "要看所在直線與題目條件。"
+    },
+    {
+      "mistake": "把相鄰角當對頂角。",
+      "why": "只看到同一頂點。",
+      "correction": "對頂角不共邊，位置在交點兩側。"
+    },
+    {
+      "mistake": "對頂角用 180° 相減。",
+      "why": "混淆相等與互補。",
+      "correction": "對頂角直接相等；鄰補角才相加 180°。"
+    },
+    {
+      "mistake": "看到一個 90° 卻只說一角是直角。",
+      "why": "未利用相交直線關係。",
+      "correction": "若兩直線垂直，四角都為 90°。"
+    },
+    {
+      "mistake": "用相等角反推一定是對頂角。",
+      "why": "相等只是度數關係。",
+      "correction": "還需檢查兩邊是否為反向射線。"
+    },
+    {
+      "mistake": "答案 x=20 後不檢查角度。",
+      "why": "代數解可能導致不合理角度。",
+      "correction": "回代確認角度在 0° 到 180°。"
+    }
+  ],
+  "selfCheckItems": [
+    "我是否先確認兩條完整直線相交？",
+    "角是相對還是相鄰？",
+    "對頂角用相等，鄰補角用 180° 嗎？",
+    "我是否避免從圖形外觀猜平行或垂直？"
+  ],
+  "conciseSummary": [
+    "平行線在同一平面內不相交。",
+    "垂直線相交成四個直角。",
+    "對頂角相等。",
+    "鄰補角和為 180°。"
+  ],
+  "connections": {
+    "previous": "上一技能提供直角、平角與互補概念。",
+    "next": [
+      "下一技能把平角拆分的觀念用於三角形內角和。"
+    ]
+  },
+  "figureReferences": [
+    "u08-s003-fig001"
+  ],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "以四角模型逐一核對 47°、128° 與代數例題；對頂角相等和鄰補角 180° 的適用條件都限定為兩直線相交。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "27b5ecbef2116babc5739160c909819f986db8ac99b347dc664b18c3eade5e12"
+}

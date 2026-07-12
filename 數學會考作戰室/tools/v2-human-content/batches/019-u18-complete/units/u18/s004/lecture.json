@@ -1,0 +1,249 @@
+{
+  "lectureId": "u18-s004-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-ratio",
+  "skillId": "continued-ratio-word",
+  "lockedSkillOrder": 4,
+  "lockedSkillTitle": "連比應用題",
+  "title": "連比應用題：從文字關係建立同一套份數",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能從文字敘述辨認三個量及其順序。",
+    "能把兩個相連的二項比合併成連比。",
+    "能將百分比、倍數與差量轉為連比條件。",
+    "能建立方程並檢查答案是否符合情境限制。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "proportion-segment",
+        "title": "比例線段",
+        "requiredLevel": "能運用「比例線段」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「比例線段」，先複習其核心判斷，再把方法推進到「連比應用題」。"
+  },
+  "glossary": [
+    {
+      "term": "相連比",
+      "definition": "兩個比共享一個量，例如 A:B 與 B:C。"
+    },
+    {
+      "term": "橋接量",
+      "definition": "合併兩個比時共同出現、需要調成相同份數的量。"
+    },
+    {
+      "term": "文字模型",
+      "definition": "把語句轉成比、方程與單位的數學表示。"
+    },
+    {
+      "term": "限制條件",
+      "definition": "人數須為整數、長度為正、總量固定等情境要求。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "A:B=m:n，B:C=p:q",
+      "meaning": "B 是橋接量，需先把 n 與 p 調成相同份數。"
+    },
+    {
+      "symbol": "A=mk",
+      "meaning": "A 由份數 m 與共同倍數 k 表示。"
+    },
+    {
+      "symbol": "A 是 B 的 r 倍",
+      "meaning": "A:B=r:1。"
+    }
+  ],
+  "conceptNarrative": [
+    "文字題先不要急著算。第一步是列出量名與順序，將『甲是乙的幾倍』『甲比乙多幾分之幾』等語句翻成比。",
+    "合併 A:B 與 B:C 時，B 的份數必須相同。例如 A:B=2:3、B:C=4:5，將前比乘 4、後比乘 3，得 A:B:C=8:12:15。",
+    "百分比敘述也可轉成比。若甲是乙的 120%，則甲:乙=120:100=6:5；若甲比乙多 20%，也是甲=1.2乙，仍為 6:5。",
+    "建立連比後，再使用總和、差、已知部分或其他條件求共同倍數。每一步都要保留對象與單位。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "相連比合併",
+      "statement": "A:B=m:n 且 B:C=p:q 時，以 n、p 的最小公倍數作橋接量，可得唯一的最簡 A:B:C。"
+    },
+    {
+      "name": "百分比轉比",
+      "statement": "A 是 B 的 r%，則 A:B=r:100，再化簡。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A:B:C=mp:np:nq",
+      "conditions": [
+        "由 A:B=m:n 與 B:C=p:q 直接擴充時"
+      ],
+      "meaning": "一種保證橋接量相等的合併法，之後再化簡。"
+    },
+    {
+      "formula": "A:B=(100+t):100",
+      "conditions": [
+        "A 比 B 多 t%"
+      ],
+      "meaning": "把增加百分比轉成比。"
+    }
+  ],
+  "nonApplicableCases": [
+    "兩個比沒有共同量，例如 A:B 與 C:D，不能直接合成三項連比。",
+    "『甲比乙多 20%』不等於甲:乙=120:20。",
+    "橋接量調整時，整個二項比都要同乘，不能只改共同項。",
+    "題目若要求整數人數，算出分數代表資料可能不相容。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出所有量名與要求的連比順序。",
+      "check": "是否把甲乙丙順序固定？"
+    },
+    {
+      "step": 2,
+      "instruction": "逐句翻成二項比或方程。",
+      "check": "『比…多』的基準量是誰？"
+    },
+    {
+      "step": 3,
+      "instruction": "找橋接量並調成相同份數。",
+      "check": "整個比是否一起放大？"
+    },
+    {
+      "step": 4,
+      "instruction": "合成最簡連比，再套額外條件。",
+      "check": "總和或差對應哪幾份？"
+    },
+    {
+      "step": 5,
+      "instruction": "回到文字逐句驗證。",
+      "check": "百分比、倍數、單位與整數限制都符合嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "甲:乙=2:5，乙:丙=3:4，求甲:乙:丙。",
+      "solutionSteps": [
+        "乙份數 5 與 3 的最小公倍數是 15。",
+        "前比乘 3 得 6:15；後比乘 5 得 15:20。",
+        "合併為 6:15:20。"
+      ],
+      "answer": "6:15:20"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "甲比乙多 25%，乙:丙=2:3，求甲:乙:丙。",
+      "solutionSteps": [
+        "甲:乙=125:100=5:4。",
+        "乙:丙=2:3，將後比乘 2 得 4:6。",
+        "合併為 5:4:6。"
+      ],
+      "answer": "5:4:6"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "三班人數比由甲:乙=4:5、乙:丙=10:9 得到，總人數 138，求甲班。",
+      "solutionSteps": [
+        "把甲:乙 放大 2 倍得 8:10。",
+        "連比為 8:10:9，總份數 27。",
+        "每份 138÷27=46/9，不是整數，因此資料不可能代表整數人數。"
+      ],
+      "answer": "資料不相容，無整數解"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "A 是 B 的 3/2 倍，B 是 C 的 4/5，求 A:B:C。",
+      "solutionSteps": [
+        "A:B=3:2。",
+        "B:C=4:5。",
+        "把前比乘 2 得 6:4，合併為 6:4:5。"
+      ],
+      "answer": "6:4:5"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "橋接量不同就直接拼接。",
+      "why": "把 2:5 與 3:4 寫成 2:5:4。",
+      "correction": "先讓共同量的份數相同。"
+    },
+    {
+      "mistake": "多 25% 寫成 25:100。",
+      "why": "只取增加部分。",
+      "correction": "原量 100% 加 25%，為 125:100。"
+    },
+    {
+      "mistake": "只乘共同項。",
+      "why": "忘記二項比需整體等比例。",
+      "correction": "同一個比的兩項一起乘。"
+    },
+    {
+      "mistake": "算出非整數人數後四捨五入。",
+      "why": "忽略情境限制。",
+      "correction": "判斷資料不相容或重新檢查模型。"
+    },
+    {
+      "mistake": "將『乙是丙的 4/5』倒寫。",
+      "why": "主詞與基準量混淆。",
+      "correction": "先寫乙=(4/5)丙，再轉成 4:5。"
+    }
+  ],
+  "selfCheck": [
+    "每句話的主詞與比較基準是誰？",
+    "兩個比的共同量是哪一個？",
+    "共同量份數已相同嗎？",
+    "百分比是否包含原來的 100%？",
+    "答案是否符合整數與正值限制？"
+  ],
+  "summary": [
+    "文字題先固定量名與順序。",
+    "相連比要以共同量作橋接。",
+    "倍數與百分比可轉成二項比。",
+    "合併後再用總和、差或已知量求實際值。"
+  ],
+  "connections": {
+    "previous": "比例線段訓練了對應關係與比例式。",
+    "next": [
+      "連比性質會系統化等比放大、分量和與差的推論。",
+      "相似形會把同樣的對應概念用在三角形。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s004-v001",
+      "u18-s004-v002",
+      "u18-s004-v003",
+      "u18-s004-v004",
+      "u18-s004-v005",
+      "u18-s004-v006",
+      "u18-s004-v007",
+      "u18-s004-v008",
+      "u18-s004-v009",
+      "u18-s004-v010",
+      "u18-s004-v011",
+      "u18-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s004-cr001",
+      "u18-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "逐句核查主詞、基準量與橋接量，並刻意加入資料不相容案例，防止學生將非整數人數四捨五入；百分比轉比的 100% 基準已明確說明。"
+  },
+  "contentSha256": "099eecf49f530484a657ad715568c6aaaec653510da1979415db4887ce03d6d8"
+}

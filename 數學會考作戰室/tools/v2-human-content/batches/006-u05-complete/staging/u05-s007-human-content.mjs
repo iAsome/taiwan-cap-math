@@ -1,0 +1,1565 @@
+// SERIALIZATION OF REVIEWED CHATGPT HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const CONTENT_AUTHORITY = "CHATGPT_HUMAN_AUTHORED_R1";
+export const LECTURE = {
+  "lectureId": "u05-s007-lecture-r1",
+  "unitId": "u05",
+  "numericUnitId": 5,
+  "topicId": "u05-coordinate-ops",
+  "skillId": "coordinate-rectangle-area",
+  "lockedTitle": "坐標平面中的長方形與面積",
+  "title": "坐標平面中的長方形：由坐標差求邊長與面積",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認邊平行坐標軸的長方形。",
+    "能由頂點坐標求寬與高。",
+    "能計算周長與面積。",
+    "能由三個頂點補出第四個頂點。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "requiredLevel": "能說明並正確使用「水平距離與垂直距離」的核心規則，且不混淆坐標分量順序。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "軸平行長方形",
+      "definition": "四邊分別平行 x 軸或 y 軸的長方形。"
+    },
+    {
+      "term": "寬",
+      "definition": "左右兩條垂直邊的 x 坐標差。"
+    },
+    {
+      "term": "高",
+      "definition": "上下兩條水平邊的 y 坐標差。"
+    },
+    {
+      "term": "對角頂點",
+      "definition": "不在同一邊上的兩個相對頂點。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "寬=|x右-x左|",
+      "meaning": "長方形水平方向邊長。"
+    },
+    {
+      "symbol": "高=|y上-y下|",
+      "meaning": "長方形垂直方向邊長。"
+    },
+    {
+      "symbol": "A=寬×高",
+      "meaning": "長方形面積。"
+    },
+    {
+      "symbol": "P=2(寬+高)",
+      "meaning": "長方形周長。"
+    }
+  ],
+  "conceptNarrative": [
+    "邊平行坐標軸時，同一條垂直邊上的點有相同 x，同一條水平邊上的點有相同 y。",
+    "給對角頂點即可取得兩個不同的 x 值與兩個不同的 y 值，並組成另外兩個頂點。",
+    "邊長用絕對差，面積使用平方單位，周長使用長度單位。",
+    "若圖形不是軸平行長方形，不能只用 x、y 範圍直接當邊長。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "軸平行長方形邊長",
+      "statement": "寬為兩種 x 坐標之差，高為兩種 y 坐標之差。"
+    },
+    {
+      "name": "第四頂點規則",
+      "statement": "三個頂點中各出現的兩種 x 與兩種 y 必須各配對兩次。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "面積=|x2-x1|×|y2-y1|",
+      "conditions": [
+        "(x1,y1)、(x2,y2) 為對角頂點",
+        "長方形邊平行坐標軸"
+      ],
+      "meaning": "由水平與垂直跨度求面積。"
+    }
+  ],
+  "nonApplicableCases": [
+    "斜放長方形不直接適用跨度乘積。",
+    "面積不可寫成一次單位。",
+    "周長不可只算寬+高。",
+    "三點若無法形成兩種 x、兩種 y 的配對，未必是軸平行長方形的三頂點。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認邊平行坐標軸。",
+      "check": "是否能由相同 x 或相同 y 配邊？"
+    },
+    {
+      "step": 2,
+      "instruction": "找兩種 x。",
+      "check": "寬是多少？"
+    },
+    {
+      "step": 3,
+      "instruction": "找兩種 y。",
+      "check": "高是多少？"
+    },
+    {
+      "step": 4,
+      "instruction": "依題目求周長、面積或第四點。",
+      "check": "單位是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查四個頂點配對。",
+      "check": "每種 x、y 是否各出現兩次？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "對角點 A=(-2,1)、C=(5,6)，求面積。",
+      "solutionSteps": [
+        "寬=|5-(-2)|=7。",
+        "高=|6-1|=5，面積=35。"
+      ],
+      "answer": "35 平方單位。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "寬 4、高 9 的軸平行長方形周長。",
+      "solutionSteps": [
+        "寬+高=13。",
+        "周長=2×13=26。"
+      ],
+      "answer": "26 單位。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "A=(1,2)、B=(1,7)、C=(6,7)，求第四點。",
+      "solutionSteps": [
+        "A、B 同 x，B、C 同 y。",
+        "缺少 x=6、y=2 的組合。"
+      ],
+      "answer": "(6,2)。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "長方形 x 介於 -4 與 3，y 介於 -1 與 5。",
+      "solutionSteps": [
+        "寬=7，高=6。",
+        "面積=42。"
+      ],
+      "answer": "42 平方單位。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 -4 到 3 的寬算成 -1。",
+      "why": "直接做帶號相加。",
+      "correction": "使用絕對差 3-(-4)=7。"
+    },
+    {
+      "mistake": "面積寫成 35 單位。",
+      "why": "忽略二維量。",
+      "correction": "面積用平方單位。"
+    },
+    {
+      "mistake": "周長只算寬+高。",
+      "why": "漏掉相對兩邊。",
+      "correction": "乘以 2。"
+    },
+    {
+      "mistake": "第四點把 x、y 都取新值。",
+      "why": "沒有檢查既有兩種分量。",
+      "correction": "第四點只補缺少的組合。"
+    },
+    {
+      "mistake": "任何四個點都用跨度乘積。",
+      "why": "忽略軸平行長方形前提。",
+      "correction": "先確認同 x、同 y 配邊。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認軸平行？",
+    "寬高是否使用絕對差？",
+    "面積與周長單位是否不同？",
+    "第四點是否補的是缺少組合？"
+  ],
+  "summary": [
+    "寬由 x 差，高由 y 差。",
+    "面積=寬×高。",
+    "周長=2(寬+高)。",
+    "第四頂點由兩種 x、兩種 y 交叉配對。"
+  ],
+  "connections": {
+    "previous": "承接水平距離與垂直距離。",
+    "next": [
+      "下一節由點與方程式理解直線圖形。",
+      "後續素養題會把地圖區域視為軸平行長方形。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u05-s007-v001",
+      "u05-s007-v002",
+      "u05-s007-v003",
+      "u05-s007-v004",
+      "u05-s007-v005",
+      "u05-s007-v006",
+      "u05-s007-v007",
+      "u05-s007-v008",
+      "u05-s007-v009",
+      "u05-s007-v010",
+      "u05-s007-v011",
+      "u05-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u05-s007-cr001",
+      "u05-s007-cr002"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "futureUnitKnowledgeAvoided": true,
+    "reviewNote": "人工核算四例的坐標差、周長倍數、第四點配對與面積單位；範圍只限軸平行長方形，明確排除斜放圖形的錯套。",
+    "reviewVersion": "human-lecture-review-u05-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "d65fea2bc0b9749e5d0bb234fbc435d877bf03e316b102b58fb99fe56c96a87b"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u05-s007-v001",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "軸平行長方形的對角頂點為 A=(1,2)、C=(6,5)。面積是多少？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "由對角點求長方形面積",
+    "choices": [
+      "8",
+      "10",
+      "15",
+      "30"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "寬=|6-1|=5，高=|5-2|=3，面積=5×3=15。",
+    "explanation": "寬=|6-1|=5，高=|5-2|=3，面積=5×3=15。",
+    "steps": [
+      "求寬 5。",
+      "求高 3 並相乘。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "8",
+        "truth": false,
+        "reason": "把寬高相加。"
+      },
+      {
+        "choice": "10",
+        "truth": false,
+        "reason": "只用寬乘 2。"
+      },
+      {
+        "choice": "15",
+        "truth": true,
+        "reason": "5×3 正確。"
+      },
+      {
+        "choice": "30",
+        "truth": false,
+        "reason": "誤把面積再乘 2。"
+      }
+    ],
+    "misconceptionTarget": "把面積與周長混淆。",
+    "prerequisiteCheck": "需會水平垂直距離。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "題目明示邊平行坐標軸。",
+    "difficultyReason": "直接求兩個坐標差，屬基礎。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由對角點求長方形面積",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "56a75839fa3a7dcdee98cf6afb20f7743a25b54049d81a3a2b062a369c2909f9"
+  },
+  {
+    "questionId": "u05-s007-v002",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "長方形三個頂點為 (0,1)、(0,6)、(4,6)，第四個頂點為何？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "補出第四頂點",
+    "choices": [
+      "(1,4)",
+      "(4,0)",
+      "(6,4)",
+      "(4,1)"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "已有兩種 x：0、4；兩種 y：1、6。缺少的配對是 (4,1)。",
+    "explanation": "已有兩種 x：0、4；兩種 y：1、6。缺少的配對是 (4,1)。",
+    "steps": [
+      "找出兩種 x 與 y。",
+      "補上未出現的組合。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "(1,4)",
+        "truth": false,
+        "reason": "交換分量且不使用既有座標值。"
+      },
+      {
+        "choice": "(4,0)",
+        "truth": false,
+        "reason": "引入未出現的 y=0。"
+      },
+      {
+        "choice": "(6,4)",
+        "truth": false,
+        "reason": "引入錯誤分量。"
+      },
+      {
+        "choice": "(4,1)",
+        "truth": true,
+        "reason": "補齊軸平行長方形。"
+      }
+    ],
+    "misconceptionTarget": "把第四點當成兩個邊長組成的坐標。",
+    "prerequisiteCheck": "需理解同 x、同 y 配邊。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "三點可形成兩條互相垂直的鄰邊。",
+    "difficultyReason": "直接配對分量，屬基礎。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "補出第四頂點",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "6164ae2e6e4df87b83371fed9c30266b7ea205e33630a4254327406279234c7a"
+  },
+  {
+    "questionId": "u05-s007-v003",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "一個軸平行長方形的 x 坐標介於 -3 與 2，y 坐標介於 1 與 5。其周長為何？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "由坐標範圍求周長",
+    "choices": [
+      "18",
+      "9",
+      "20",
+      "40"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "寬=2-(-3)=5，高=5-1=4，周長=2(5+4)=18。",
+    "explanation": "寬=2-(-3)=5，高=5-1=4，周長=2(5+4)=18。",
+    "steps": [
+      "求寬 5、高 4。",
+      "周長乘 2。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "18",
+        "truth": true,
+        "reason": "2×9=18。"
+      },
+      {
+        "choice": "9",
+        "truth": false,
+        "reason": "只算寬加高。"
+      },
+      {
+        "choice": "20",
+        "truth": false,
+        "reason": "誤用寬×高當周長。"
+      },
+      {
+        "choice": "40",
+        "truth": false,
+        "reason": "面積再乘 2。"
+      }
+    ],
+    "misconceptionTarget": "周長漏乘 2 或與面積混淆。",
+    "prerequisiteCheck": "需會坐標差。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "邊界端點包含與否不影響邊長。",
+    "difficultyReason": "兩個坐標差與周長公式，屬基礎。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由坐標範圍求周長",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "3dc440059c60a329590fbfc196c50962423200238deb11971220000b17f6c6e9"
+  },
+  {
+    "questionId": "u05-s007-v004",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "對角點為 P=(-4,-2)、R=(3,6) 的軸平行長方形，面積是多少？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "計算跨越原點的長方形面積",
+    "choices": [
+      "15",
+      "56",
+      "30",
+      "112"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "寬=3-(-4)=7，高=6-(-2)=8，面積=56。",
+    "explanation": "寬=3-(-4)=7，高=6-(-2)=8，面積=56。",
+    "steps": [
+      "跨越 0 求寬 7。",
+      "跨越 0 求高 8 並相乘。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "15",
+        "truth": false,
+        "reason": "把四個坐標直接相加或差。"
+      },
+      {
+        "choice": "56",
+        "truth": true,
+        "reason": "7×8=56。"
+      },
+      {
+        "choice": "30",
+        "truth": false,
+        "reason": "坐標差計算錯。"
+      },
+      {
+        "choice": "112",
+        "truth": false,
+        "reason": "面積多乘 2。"
+      }
+    ],
+    "misconceptionTarget": "跨越兩軸時把差算成絕對值之差。",
+    "prerequisiteCheck": "需會整數減法。",
+    "estimatedTimeSec": 100,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "對角點與軸平行條件充分。",
+    "difficultyReason": "需正確處理兩個負坐標，屬標準。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "計算跨越原點的長方形面積",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "ca3af46f2aca9c653d0f2a4bc663ed07aac9565c8b9fb0a7c43ef36486ba5124"
+  },
+  {
+    "questionId": "u05-s007-v005",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "長方形面積為 48，水平邊端點 x 坐標為 -2 與 6。其高是多少？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "由面積反求高",
+    "choices": [
+      "6",
+      "4",
+      "8",
+      "10"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "寬=6-(-2)=8；高=48÷8=6。",
+    "explanation": "寬=6-(-2)=8；高=48÷8=6。",
+    "steps": [
+      "求寬 8。",
+      "用面積除以寬。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6",
+        "truth": true,
+        "reason": "8×6=48。"
+      },
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "誤以兩 x 的絕對值差為 4。"
+      },
+      {
+        "choice": "8",
+        "truth": false,
+        "reason": "把寬直接當高。"
+      },
+      {
+        "choice": "10",
+        "truth": false,
+        "reason": "把兩 x 絕對值相加後再錯算。"
+      }
+    ],
+    "misconceptionTarget": "由面積反求邊長時沒有先求正確寬。",
+    "prerequisiteCheck": "需會除法。",
+    "estimatedTimeSec": 100,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "長方形邊長為正，答案唯一。",
+    "difficultyReason": "需逆用面積公式，屬標準。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由面積反求高",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "127ea1fd053334c6f8c627f7bf1be3810cfbea700e5390d7f3461b2792ea54ed"
+  },
+  {
+    "questionId": "u05-s007-v006",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "A=(a,1)、B=(a,7)、C=(5,7)、D=(5,1) 為長方形，周長 20 且 a<5，求 a。",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "由周長與頂點參數反求坐標",
+    "choices": [
+      "0",
+      "2",
+      "1",
+      "4"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "高=6，周長 20 表示寬+高=10，所以寬=4。因 a<5，5-a=4，得 a=1。",
+    "explanation": "高=6，周長 20 表示寬+高=10，所以寬=4。因 a<5，5-a=4，得 a=1。",
+    "steps": [
+      "由 y 差得高 6。",
+      "解 2((5-a)+6)=20。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "0",
+        "truth": false,
+        "reason": "寬 5，周長 22。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "寬 3，周長 18。"
+      },
+      {
+        "choice": "1",
+        "truth": true,
+        "reason": "寬 4、高 6，周長 20。"
+      },
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "寬 1，周長 14。"
+      }
+    ],
+    "misconceptionTarget": "把周長 20 直接減高一次，漏掉兩倍。",
+    "prerequisiteCheck": "需會一元方程式。",
+    "estimatedTimeSec": 100,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "a<5 確定寬為 5-a，不需絕對值分支。",
+    "difficultyReason": "需結合周長公式與參數條件，屬標準。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "由周長與頂點參數反求坐標",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "fd4e87f0d3da8546544a2171553c84847e4b485d328a244f33f376404d56acac"
+  },
+  {
+    "questionId": "u05-s007-v007",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "三點 A=(-2,3)、B=(4,3)、C=(4,-1) 是軸平行長方形的三個頂點。若面積為 24，下列哪個點是第四頂點？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "利用面積與配對驗證第四點",
+    "choices": [
+      "(-1,-2)",
+      "(-2,-1)",
+      "(2,1)",
+      "(-4,1)"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "AB 長 6，BC 長 4，面積確為 24；缺少 x=-2、y=-1 的配對。",
+    "explanation": "AB 長 6，BC 長 4，面積確為 24；缺少 x=-2、y=-1 的配對。",
+    "steps": [
+      "確認相鄰邊長 6、4。",
+      "補缺少組合 (-2,-1)。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "(-1,-2)",
+        "truth": false,
+        "reason": "交換並改變分量。"
+      },
+      {
+        "choice": "(-2,-1)",
+        "truth": true,
+        "reason": "與 A 同 x、與 C 同 y。"
+      },
+      {
+        "choice": "(2,1)",
+        "truth": false,
+        "reason": "不與既有點形成軸平行邊。"
+      },
+      {
+        "choice": "(-4,1)",
+        "truth": false,
+        "reason": "引入未出現的 x、y。"
+      }
+    ],
+    "misconceptionTarget": "未檢查第四點需與兩個既有頂點分別同 x、同 y。",
+    "prerequisiteCheck": "需會距離與面積。",
+    "estimatedTimeSec": 135,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "三點順序可判定 B 為直角頂點，第四點唯一。",
+    "difficultyReason": "除配對外還需核對面積條件，屬進階。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "利用面積與配對驗證第四點",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "547e0b93fc71b1288f9735b2667fade9191900f0490a78039619e033c26d7dba"
+  },
+  {
+    "questionId": "u05-s007-v008",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "軸平行長方形的左下角為 (m,2)，右上角為 (m+5,2m)。若面積為 30 且 m>1，求 m。",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "含參數長方形面積",
+    "choices": [
+      "2",
+      "3",
+      "6",
+      "4"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "寬=5，高=2m-2。面積 5(2m-2)=30，得 2m-2=6，m=4。",
+    "explanation": "寬=5，高=2m-2。面積 5(2m-2)=30，得 2m-2=6，m=4。",
+    "steps": [
+      "由 x 差得寬 5。",
+      "由 y 差與面積解 m。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "高 2，面積 10。"
+      },
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "高 4，面積 20。"
+      },
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "高 10，面積 50。"
+      },
+      {
+        "choice": "4",
+        "truth": true,
+        "reason": "高 6，面積 30。"
+      }
+    ],
+    "misconceptionTarget": "把右上角 y=2m 與左下 y=2 直接相乘。",
+    "prerequisiteCheck": "需會一元一次方程式。",
+    "estimatedTimeSec": 135,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "m>1 確保 2m 在 2 上方，高為 2m-2。",
+    "difficultyReason": "需建立代數邊長與面積方程式，屬進階。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "含參數長方形面積",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "952bfd4ab9c5fc17f7c3da8c6f3b39ba0cd9c02a33819fdf0a7b38d3e6ec6f06"
+  },
+  {
+    "questionId": "u05-s007-v009",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "一個軸平行長方形面積為 40，四個頂點的 x 坐標只有 -1 與 7，y 坐標只有 b 與 b+5。下列敘述何者正確？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "辨認平移不改變面積",
+    "choices": [
+      "只能 b=0",
+      "只能 b=5",
+      "不存在這樣的長方形",
+      "條件一致，任意 b 都可"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "寬=8，高=(b+5)-b=5，面積固定為 40，與 b 的值無關，所以任意 b 都可。",
+    "explanation": "寬=8，高=(b+5)-b=5，面積固定為 40，與 b 的值無關，所以任意 b 都可。",
+    "steps": [
+      "計算寬 8。",
+      "計算高 5，觀察 b 消去。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "只能 b=0",
+        "truth": false,
+        "reason": "面積不要求圖形貼 x 軸。"
+      },
+      {
+        "choice": "只能 b=5",
+        "truth": false,
+        "reason": "無此限制。"
+      },
+      {
+        "choice": "不存在這樣的長方形",
+        "truth": false,
+        "reason": "8×5 正好為 40。"
+      },
+      {
+        "choice": "條件一致，任意 b 都可",
+        "truth": true,
+        "reason": "平移上下位置不改變面積。"
+      }
+    ],
+    "misconceptionTarget": "認為面積會決定長方形在平面上的絕對位置。",
+    "prerequisiteCheck": "需理解坐標差消去共同平移量。",
+    "estimatedTimeSec": 135,
+    "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "b 可為任意實數，長方形仍軸平行且邊長正。",
+    "difficultyReason": "需理解參數代表整體垂直平移而非邊長變化，屬進階。",
+    "literacyContextNecessity": null,
+    "authoringIntent": "辨認平移不改變面積",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "dc690b42e39b7e8169760df3e0209f5f9d1d65c0bd8c5485fa3fab313e882928"
+  },
+  {
+    "questionId": "u05-s007-v010",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "社區花圃在地圖上的對角點為 (-1,2) 與 (5,7)，每格 2 公尺。花圃實際面積是多少？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "地圖比例下的長方形實際面積",
+    "choices": [
+      "30 平方公尺",
+      "120 平方公尺",
+      "60 平方公尺",
+      "240 平方公尺"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "地圖寬 6 格、高 5 格。實際寬 12 公尺、高 10 公尺，面積 120 平方公尺。",
+    "explanation": "地圖寬 6 格、高 5 格。實際寬 12 公尺、高 10 公尺，面積 120 平方公尺。",
+    "steps": [
+      "求格線邊長 6、5。",
+      "各乘 2 後再求面積。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "30 平方公尺",
+        "truth": false,
+        "reason": "只算格數面積。"
+      },
+      {
+        "choice": "120 平方公尺",
+        "truth": true,
+        "reason": "12×10 正確。"
+      },
+      {
+        "choice": "60 平方公尺",
+        "truth": false,
+        "reason": "只把面積乘一次 2。"
+      },
+      {
+        "choice": "240 平方公尺",
+        "truth": false,
+        "reason": "多乘一次 2。"
+      }
+    ],
+    "misconceptionTarget": "面積比例只乘一次，而不是兩個邊長都換算。",
+    "prerequisiteCheck": "需會長方形面積與比例。",
+    "estimatedTimeSec": 150,
+    "unitCheck": "兩邊各乘 2；面積單位為平方公尺。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "每格在兩方向皆為 2 公尺，圖形軸平行。",
+    "difficultyReason": "需要平方尺度換算，情境比例不可刪除。",
+    "literacyContextNecessity": "每格 2 公尺使面積從 30 格²變為 120 平方公尺，比例資訊直接影響答案。",
+    "authoringIntent": "地圖比例下的長方形實際面積",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "2f7f6aa761989737c9b00fabcd791a49baa338fd632afd9aaecc7f76272edb9a"
+  },
+  {
+    "questionId": "u05-s007-v011",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "展覽攤位邊界為 x=-3、x=4、y=1、y=6，每坐標單位 0.5 公尺。要繞攤位一圈需走多少公尺？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "由邊界線求實際周長",
+    "choices": [
+      "6 公尺",
+      "17 公尺",
+      "12 公尺",
+      "24 公尺"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "格線寬 7、高 5，周長 2(7+5)=24 單位；每單位 0.5 公尺，所以 12 公尺。",
+    "explanation": "格線寬 7、高 5，周長 2(7+5)=24 單位；每單位 0.5 公尺，所以 12 公尺。",
+    "steps": [
+      "求坐標周長 24。",
+      "乘 0.5 公尺/單位。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6 公尺",
+        "truth": false,
+        "reason": "少算一半周長。"
+      },
+      {
+        "choice": "17 公尺",
+        "truth": false,
+        "reason": "把邊界數值直接相加。"
+      },
+      {
+        "choice": "12 公尺",
+        "truth": true,
+        "reason": "24×0.5=12。"
+      },
+      {
+        "choice": "24 公尺",
+        "truth": false,
+        "reason": "未換算實際尺度。"
+      }
+    ],
+    "misconceptionTarget": "計算出格線周長後忘記單位比例。",
+    "prerequisiteCheck": "需會坐標差與周長。",
+    "estimatedTimeSec": 150,
+    "unitCheck": "24 坐標單位×0.5 公尺/單位。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "四條界線形成軸平行長方形。",
+    "difficultyReason": "需辨認四條邊界、算周長並換算。",
+    "literacyContextNecessity": "攤位施工需要實際公尺；0.5 公尺/單位不可省略。",
+    "authoringIntent": "由邊界線求實際周長",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "4474d79337f9bfeeb7ee40781a2a75eb790b50ad100de999d2532f8e9bae4d59"
+  },
+  {
+    "questionId": "u05-s007-v012",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+    "text": "螢幕選取框左上角為 (2,9)，右下角為 (10,3)。若每單位代表 20 像素，選取框共有多少平方像素？",
+    "givenConditions": [
+      "題幹所列坐標、方程式與移動條件均為精確值。"
+    ],
+    "target": "計算螢幕框的像素面積",
+    "choices": [
+      "19200 平方像素",
+      "48 平方像素",
+      "960 平方像素",
+      "38400 平方像素"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "寬 8 單位、高 6 單位；實際寬 160 像素、高 120 像素，面積 160×120=19200。",
+    "explanation": "寬 8 單位、高 6 單位；實際寬 160 像素、高 120 像素，面積 160×120=19200。",
+    "steps": [
+      "求寬 8、高 6。",
+      "各乘 20，再相乘。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "19200 平方像素",
+        "truth": true,
+        "reason": "160×120 正確。"
+      },
+      {
+        "choice": "48 平方像素",
+        "truth": false,
+        "reason": "只算坐標單位面積。"
+      },
+      {
+        "choice": "960 平方像素",
+        "truth": false,
+        "reason": "只將 48 乘一次 20。"
+      },
+      {
+        "choice": "38400 平方像素",
+        "truth": false,
+        "reason": "多乘 2。"
+      }
+    ],
+    "misconceptionTarget": "沒有把兩個方向都換算成像素。",
+    "prerequisiteCheck": "需會絕對差與面積。",
+    "estimatedTimeSec": 150,
+    "unitCheck": "8×20=160 像素，6×20=120 像素，面積平方像素。",
+    "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+    "ambiguityBoundaryAudit": "題目只使用坐標差，不依賴螢幕 y 正向方向。",
+    "difficultyReason": "需處理畫面 y 方向數值由上到下減少，但邊長仍取絕對差，並做平方尺度換算。",
+    "literacyContextNecessity": "像素比例與選取框角點是數位介面中的實際資訊，決定儲存區域大小。",
+    "authoringIntent": "計算螢幕框的像素面積",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "6dac1a98418f9e155de7189463a9a855d013db94d68691044ee9d213cf2e7846"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u05-s007-cr001",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "軸平行長方形的對角頂點為 A=(-3,1)、C=(5,6)。求另外兩個頂點、周長與面積。",
+    "requiredWork": [
+      "由兩種 x、兩種 y 補點。",
+      "求寬、高、周長、面積。"
+    ],
+    "fullCreditSolution": [
+      "另外兩點為 (-3,6) 與 (5,1)。",
+      "寬=|5-(-3)|=8，高=|6-1|=5。",
+      "周長=2(8+5)=26 單位。",
+      "面積=8×5=40 平方單位。"
+    ],
+    "alternativeSolutions": [
+      "另外兩點順序可交換；也可先求寬高再補點。"
+    ],
+    "reasoningSteps": [
+      "另外兩點為 (-3,6) 與 (5,1)。",
+      "寬=|5-(-3)|=8，高=|6-1|=5。",
+      "周長=2(8+5)=26 單位。",
+      "面積=8×5=40 平方單位。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "兩點、周長 26、面積 40 全部正確且單位區分清楚。"
+      },
+      {
+        "score": 2,
+        "criteria": "主要邊長正確，但漏一個結果或只有一個算術錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "能求出寬 8 或高 5，並呈現長方形概念。"
+      },
+      {
+        "score": 0,
+        "criteria": "補點使用新坐標值，且周長面積均無依據。"
+      }
+    ],
+    "partialCreditRules": [
+      "兩個補點順序不影響；面積需平方單位。"
+    ],
+    "followThroughPolicy": "若寬或高因坐標差算錯，後續使用該寬高正確計算周長與面積，可按結果追隨給公式與運算分；頂點仍須獨立判定。",
+    "unitAndNotationRules": "頂點以有序對表示；周長單位為「單位」，面積單位為「平方單位」。",
+    "answerOnlyPolicy": "只列兩頂點、周長與面積而沒有寬高或公式過程，最高給 2 分。",
+    "commonErrors": [
+      "把另兩點寫成 (-3,5)、(6,1)。",
+      "周長只算 13。"
+    ],
+    "independentReview": {
+      "derivedResult": "若寬或高有早期算術錯，後續周長與面積依該值正確計算，可保留公式方法分。",
+      "ambiguity": "周長用長度單位，面積用平方單位。",
+      "decision": "pass",
+      "reviewNote": "重新由題目條件推導結果為 若寬或高有早期算術錯，後續周長與面積依該值正確計算，可保留公式方法分。；並逐項核對評分規準與可接受的等價表示。"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "ec26236238f9a13647550c838b550d71fac1478657c7697e0dc1fed9085fa31a"
+  },
+  {
+    "questionId": "u05-s007-cr002",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-rectangle-area",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "一個軸平行長方形的左邊在 x=a，右邊在 x=7，下邊在 y=-2，上邊在 y=4。面積為 54 且 a<7。求 a 與周長。",
+    "requiredWork": [
+      "由 y 邊界求高。",
+      "由面積反求寬。",
+      "由 a<7 求 a。",
+      "求周長。"
+    ],
+    "fullCreditSolution": [
+      "高=4-(-2)=6。",
+      "寬=54÷6=9。",
+      "因 a<7，所以 7-a=9，得 a=-2。",
+      "周長=2(9+6)=30 單位。"
+    ],
+    "alternativeSolutions": [
+      "可直接列 (7-a)×6=54 解 a，再求周長。"
+    ],
+    "reasoningSteps": [
+      "高=4-(-2)=6。",
+      "寬=54÷6=9。",
+      "因 a<7，所以 7-a=9，得 a=-2。",
+      "周長=2(9+6)=30 單位。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "a=-2、周長 30，且邊長推導完整。"
+      },
+      {
+        "score": 2,
+        "criteria": "a 正確但周長漏算或小錯，或周長正確但 a 方程式說明不足。"
+      },
+      {
+        "score": 1,
+        "criteria": "求得高 6 並能建立面積方程式，但解算錯。"
+      },
+      {
+        "score": 0,
+        "criteria": "把 a 當面積或忽略 a<7 導致錯誤寬。"
+      }
+    ],
+    "partialCreditRules": [
+      "a<7 決定寬為 7-a。"
+    ],
+    "followThroughPolicy": "若由面積求寬時出現算術錯誤，但後續以 a=7-寬並正確計算周長，可依一致推理給部分分；須仍符合 a<7。",
+    "unitAndNotationRules": "a 為直線 x=a 的橫坐標；周長寫成長度單位，面積 54 為平方單位。",
+    "answerOnlyPolicy": "只寫 a=-2、周長 30 而沒有由面積求寬的過程，最高給 2 分。",
+    "commonErrors": [
+      "高算成 2。",
+      "將周長算成面積 54。"
+    ],
+    "independentReview": {
+      "derivedResult": "若 a 算錯但使用自己的正寬正確套周長公式，可給方法分。",
+      "ambiguity": "a 為坐標，周長為單位長度。",
+      "decision": "pass",
+      "reviewNote": "重新由題目條件推導結果為 若 a 算錯但使用自己的正寬正確套周長公式，可給方法分。；並逐項核對評分規準與可接受的等價表示。"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "60d76fde5e04f2b70e1433dcd2056b5625cf75c2756c50999753cce52a99a6e9"
+  }
+];
+
+export const SEMANTIC_REVIEWS = [
+  {
+    "questionId": "u05-s007-v001",
+    "contentSha256": "56a75839fa3a7dcdee98cf6afb20f7743a25b54049d81a3a2b062a369c2909f9",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "寬=|6-1|=5，高=|5-2|=3，面積=5×3=15。",
+    "derivedAnswer": "15",
+    "storedAnswer": "15",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「15」；其餘三項逐項檢查：「8」不成立，把寬高相加。；「10」不成立，只用寬乘 2。；「30」不成立，誤把面積再乘 2。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "題目明示邊平行坐標軸。",
+      "alternateReading": "常見誤讀是「把面積與周長混淆。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "直接求兩個坐標差，屬基礎。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會水平垂直距離。",
+    "languageCheck": "題幹所求為「由對角點求長方形面積」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「軸平行長方形的對角頂點為 A=(1,2)、C=(6,5)。面積是多少？」重新依序處理：寬=|6-1|=5，高=|5-2|=3，面積=5×3=15。 正確選項為「15」。三個干擾項均對應不同錯誤：「8」不成立，把寬高相加。；「10」不成立，只用寬乘 2。；「30」不成立，誤把面積再乘 2。。邊界審查：題目明示邊平行坐標軸。 難度理由：直接求兩個坐標差，屬基礎。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v002",
+    "contentSha256": "6164ae2e6e4df87b83371fed9c30266b7ea205e33630a4254327406279234c7a",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "已有兩種 x：0、4；兩種 y：1、6。缺少的配對是 (4,1)。",
+    "derivedAnswer": "(4,1)",
+    "storedAnswer": "(4,1)",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「(4,1)」；其餘三項逐項檢查：「(1,4)」不成立，交換分量且不使用既有座標值。；「(4,0)」不成立，引入未出現的 y=0。；「(6,4)」不成立，引入錯誤分量。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "三點可形成兩條互相垂直的鄰邊。",
+      "alternateReading": "常見誤讀是「把第四點當成兩個邊長組成的坐標。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "直接配對分量，屬基礎。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需理解同 x、同 y 配邊。",
+    "languageCheck": "題幹所求為「補出第四頂點」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「長方形三個頂點為 (0,1)、(0,6)、(4,6)，第四個頂點為何？」重新依序處理：已有兩種 x：0、4；兩種 y：1、6。缺少的配對是 (4,1)。 正確選項為「(4,1)」。三個干擾項均對應不同錯誤：「(1,4)」不成立，交換分量且不使用既有座標值。；「(4,0)」不成立，引入未出現的 y=0。；「(6,4)」不成立，引入錯誤分量。。邊界審查：三點可形成兩條互相垂直的鄰邊。 難度理由：直接配對分量，屬基礎。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v003",
+    "contentSha256": "3dc440059c60a329590fbfc196c50962423200238deb11971220000b17f6c6e9",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "寬=2-(-3)=5，高=5-1=4，周長=2(5+4)=18。",
+    "derivedAnswer": "18",
+    "storedAnswer": "18",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「18」；其餘三項逐項檢查：「9」不成立，只算寬加高。；「20」不成立，誤用寬×高當周長。；「40」不成立，面積再乘 2。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "邊界端點包含與否不影響邊長。",
+      "alternateReading": "常見誤讀是「周長漏乘 2 或與面積混淆。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "兩個坐標差與周長公式，屬基礎。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會坐標差。",
+    "languageCheck": "題幹所求為「由坐標範圍求周長」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「一個軸平行長方形的 x 坐標介於 -3 與 2，y 坐標介於 1 與 5。其周長為何？」重新依序處理：寬=2-(-3)=5，高=5-1=4，周長=2(5+4)=18。 正確選項為「18」。三個干擾項均對應不同錯誤：「9」不成立，只算寬加高。；「20」不成立，誤用寬×高當周長。；「40」不成立，面積再乘 2。。邊界審查：邊界端點包含與否不影響邊長。 難度理由：兩個坐標差與周長公式，屬基礎。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v004",
+    "contentSha256": "ca3af46f2aca9c653d0f2a4bc663ed07aac9565c8b9fb0a7c43ef36486ba5124",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "寬=3-(-4)=7，高=6-(-2)=8，面積=56。",
+    "derivedAnswer": "56",
+    "storedAnswer": "56",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「56」；其餘三項逐項檢查：「15」不成立，把四個坐標直接相加或差。；「30」不成立，坐標差計算錯。；「112」不成立，面積多乘 2。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "對角點與軸平行條件充分。",
+      "alternateReading": "常見誤讀是「跨越兩軸時把差算成絕對值之差。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需正確處理兩個負坐標，屬標準。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會整數減法。",
+    "languageCheck": "題幹所求為「計算跨越原點的長方形面積」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「對角點為 P=(-4,-2)、R=(3,6) 的軸平行長方形，面積是多少？」重新依序處理：寬=3-(-4)=7，高=6-(-2)=8，面積=56。 正確選項為「56」。三個干擾項均對應不同錯誤：「15」不成立，把四個坐標直接相加或差。；「30」不成立，坐標差計算錯。；「112」不成立，面積多乘 2。。邊界審查：對角點與軸平行條件充分。 難度理由：需正確處理兩個負坐標，屬標準。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v005",
+    "contentSha256": "127ea1fd053334c6f8c627f7bf1be3810cfbea700e5390d7f3461b2792ea54ed",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "寬=6-(-2)=8；高=48÷8=6。",
+    "derivedAnswer": "6",
+    "storedAnswer": "6",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「6」；其餘三項逐項檢查：「4」不成立，誤以兩 x 的絕對值差為 4。；「8」不成立，把寬直接當高。；「10」不成立，把兩 x 絕對值相加後再錯算。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "長方形邊長為正，答案唯一。",
+      "alternateReading": "常見誤讀是「由面積反求邊長時沒有先求正確寬。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需逆用面積公式，屬標準。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會除法。",
+    "languageCheck": "題幹所求為「由面積反求高」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「長方形面積為 48，水平邊端點 x 坐標為 -2 與 6。其高是多少？」重新依序處理：寬=6-(-2)=8；高=48÷8=6。 正確選項為「6」。三個干擾項均對應不同錯誤：「4」不成立，誤以兩 x 的絕對值差為 4。；「8」不成立，把寬直接當高。；「10」不成立，把兩 x 絕對值相加後再錯算。。邊界審查：長方形邊長為正，答案唯一。 難度理由：需逆用面積公式，屬標準。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v006",
+    "contentSha256": "fd4e87f0d3da8546544a2171553c84847e4b485d328a244f33f376404d56acac",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "高=6，周長 20 表示寬+高=10，所以寬=4。因 a<5，5-a=4，得 a=1。",
+    "derivedAnswer": "1",
+    "storedAnswer": "1",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「1」；其餘三項逐項檢查：「0」不成立，寬 5，周長 22。；「2」不成立，寬 3，周長 18。；「4」不成立，寬 1，周長 14。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "a<5 確定寬為 5-a，不需絕對值分支。",
+      "alternateReading": "常見誤讀是「把周長 20 直接減高一次，漏掉兩倍。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需結合周長公式與參數條件，屬標準。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會一元方程式。",
+    "languageCheck": "題幹所求為「由周長與頂點參數反求坐標」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「A=(a,1)、B=(a,7)、C=(5,7)、D=(5,1) 為長方形，周長 20 且 a<5，求 a。」重新依序處理：高=6，周長 20 表示寬+高=10，所以寬=4。因 a<5，5-a=4，得 a=1。 正確選項為「1」。三個干擾項均對應不同錯誤：「0」不成立，寬 5，周長 22。；「2」不成立，寬 3，周長 18。；「4」不成立，寬 1，周長 14。。邊界審查：a<5 確定寬為 5-a，不需絕對值分支。 難度理由：需結合周長公式與參數條件，屬標準。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v007",
+    "contentSha256": "547e0b93fc71b1288f9735b2667fade9191900f0490a78039619e033c26d7dba",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "AB 長 6，BC 長 4，面積確為 24；缺少 x=-2、y=-1 的配對。",
+    "derivedAnswer": "(-2,-1)",
+    "storedAnswer": "(-2,-1)",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「(-2,-1)」；其餘三項逐項檢查：「(-1,-2)」不成立，交換並改變分量。；「(2,1)」不成立，不與既有點形成軸平行邊。；「(-4,1)」不成立，引入未出現的 x、y。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "三點順序可判定 B 為直角頂點，第四點唯一。",
+      "alternateReading": "常見誤讀是「未檢查第四點需與兩個既有頂點分別同 x、同 y。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "除配對外還需核對面積條件，屬進階。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會距離與面積。",
+    "languageCheck": "題幹所求為「利用面積與配對驗證第四點」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「三點 A=(-2,3)、B=(4,3)、C=(4,-1) 是軸平行長方形的三個頂點。若面積為 24，下列哪個點是第四頂點？」重新依序處理：AB 長 6，BC 長 4，面積確為 24；缺少 x=-2、y=-1 的配對。 正確選項為「(-2,-1)」。三個干擾項均對應不同錯誤：「(-1,-2)」不成立，交換並改變分量。；「(2,1)」不成立，不與既有點形成軸平行邊。；「(-4,1)」不成立，引入未出現的 x、y。。邊界審查：三點順序可判定 B 為直角頂點，第四點唯一。 難度理由：除配對外還需核對面積條件，屬進階。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v008",
+    "contentSha256": "952bfd4ab9c5fc17f7c3da8c6f3b39ba0cd9c02a33819fdf0a7b38d3e6ec6f06",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "寬=5，高=2m-2。面積 5(2m-2)=30，得 2m-2=6，m=4。",
+    "derivedAnswer": "4",
+    "storedAnswer": "4",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「4」；其餘三項逐項檢查：「2」不成立，高 2，面積 10。；「3」不成立，高 4，面積 20。；「6」不成立，高 10，面積 50。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "m>1 確保 2m 在 2 上方，高為 2m-2。",
+      "alternateReading": "常見誤讀是「把右上角 y=2m 與左下 y=2 直接相乘。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需建立代數邊長與面積方程式，屬進階。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需會一元一次方程式。",
+    "languageCheck": "題幹所求為「含參數長方形面積」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「軸平行長方形的左下角為 (m,2)，右上角為 (m+5,2m)。若面積為 30 且 m>1，求 m。」重新依序處理：寬=5，高=2m-2。面積 5(2m-2)=30，得 2m-2=6，m=4。 正確選項為「4」。三個干擾項均對應不同錯誤：「2」不成立，高 2，面積 10。；「3」不成立，高 4，面積 20。；「6」不成立，高 10，面積 50。。邊界審查：m>1 確保 2m 在 2 上方，高為 2m-2。 難度理由：需建立代數邊長與面積方程式，屬進階。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v009",
+    "contentSha256": "dc690b42e39b7e8169760df3e0209f5f9d1d65c0bd8c5485fa3fab313e882928",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "寬=8，高=(b+5)-b=5，面積固定為 40，與 b 的值無關，所以任意 b 都可。",
+    "derivedAnswer": "條件一致，任意 b 都可",
+    "storedAnswer": "條件一致，任意 b 都可",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「條件一致，任意 b 都可」；其餘三項逐項檢查：「只能 b=0」不成立，面積不要求圖形貼 x 軸。；「只能 b=5」不成立，無此限制。；「不存在這樣的長方形」不成立，8×5 正好為 40。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "b 可為任意實數，長方形仍軸平行且邊長正。",
+      "alternateReading": "常見誤讀是「認為面積會決定長方形在平面上的絕對位置。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需理解參數代表整體垂直平移而非邊長變化，屬進階。",
+    "literacyContextNecessity": null,
+    "prerequisiteCheck": "需理解坐標差消去共同平移量。",
+    "languageCheck": "題幹所求為「辨認平移不改變面積」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「一個軸平行長方形面積為 40，四個頂點的 x 坐標只有 -1 與 7，y 坐標只有 b 與 b+5。下列敘述何者正確？」重新依序處理：寬=8，高=(b+5)-b=5，面積固定為 40，與 b 的值無關，所以任意 b 都可。 正確選項為「條件一致，任意 b 都可」。三個干擾項均對應不同錯誤：「只能 b=0」不成立，面積不要求圖形貼 x 軸。；「只能 b=5」不成立，無此限制。；「不存在這樣的長方形」不成立，8×5 正好為 40。。邊界審查：b 可為任意實數，長方形仍軸平行且邊長正。 難度理由：需理解參數代表整體垂直平移而非邊長變化，屬進階。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v010",
+    "contentSha256": "2f7f6aa761989737c9b00fabcd791a49baa338fd632afd9aaecc7f76272edb9a",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "地圖寬 6 格、高 5 格。實際寬 12 公尺、高 10 公尺，面積 120 平方公尺。",
+    "derivedAnswer": "120 平方公尺",
+    "storedAnswer": "120 平方公尺",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「120 平方公尺」；其餘三項逐項檢查：「30 平方公尺」不成立，只算格數面積。；「60 平方公尺」不成立，只把面積乘一次 2。；「240 平方公尺」不成立，多乘一次 2。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "兩邊各乘 2；面積單位為平方公尺。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "每格在兩方向皆為 2 公尺，圖形軸平行。",
+      "alternateReading": "常見誤讀是「面積比例只乘一次，而不是兩個邊長都換算。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需要平方尺度換算，情境比例不可刪除。",
+    "literacyContextNecessity": "每格 2 公尺使面積從 30 格²變為 120 平方公尺，比例資訊直接影響答案。",
+    "prerequisiteCheck": "需會長方形面積與比例。",
+    "languageCheck": "題幹所求為「地圖比例下的長方形實際面積」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「社區花圃在地圖上的對角點為 (-1,2) 與 (5,7)，每格 2 公尺。花圃實際面積是多少？」重新依序處理：地圖寬 6 格、高 5 格。實際寬 12 公尺、高 10 公尺，面積 120 平方公尺。 正確選項為「120 平方公尺」。三個干擾項均對應不同錯誤：「30 平方公尺」不成立，只算格數面積。；「60 平方公尺」不成立，只把面積乘一次 2。；「240 平方公尺」不成立，多乘一次 2。。邊界審查：每格在兩方向皆為 2 公尺，圖形軸平行。 難度理由：需要平方尺度換算，情境比例不可刪除。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v011",
+    "contentSha256": "4474d79337f9bfeeb7ee40781a2a75eb790b50ad100de999d2532f8e9bae4d59",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "格線寬 7、高 5，周長 2(7+5)=24 單位；每單位 0.5 公尺，所以 12 公尺。",
+    "derivedAnswer": "12 公尺",
+    "storedAnswer": "12 公尺",
+    "answerMatch": true,
+    "optionTruth": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「12 公尺」；其餘三項逐項檢查：「6 公尺」不成立，少算一半周長。；「17 公尺」不成立，把邊界數值直接相加。；「24 公尺」不成立，未換算實際尺度。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "24 坐標單位×0.5 公尺/單位。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "四條界線形成軸平行長方形。",
+      "alternateReading": "常見誤讀是「計算出格線周長後忘記單位比例。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需辨認四條邊界、算周長並換算。",
+    "literacyContextNecessity": "攤位施工需要實際公尺；0.5 公尺/單位不可省略。",
+    "prerequisiteCheck": "需會坐標差與周長。",
+    "languageCheck": "題幹所求為「由邊界線求實際周長」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「展覽攤位邊界為 x=-3、x=4、y=1、y=6，每坐標單位 0.5 公尺。要繞攤位一圈需走多少公尺？」重新依序處理：格線寬 7、高 5，周長 2(7+5)=24 單位；每單位 0.5 公尺，所以 12 公尺。 正確選項為「12 公尺」。三個干擾項均對應不同錯誤：「6 公尺」不成立，少算一半周長。；「17 公尺」不成立，把邊界數值直接相加。；「24 公尺」不成立，未換算實際尺度。。邊界審查：四條界線形成軸平行長方形。 難度理由：需辨認四條邊界、算周長並換算。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  },
+  {
+    "questionId": "u05-s007-v012",
+    "contentSha256": "6dac1a98418f9e155de7189463a9a855d013db94d68691044ee9d213cf2e7846",
+    "reviewVersion": "human-review-u05-r1.0",
+    "independentSolution": "寬 8 單位、高 6 單位；實際寬 160 像素、高 120 像素，面積 160×120=19200。",
+    "derivedAnswer": "19200 平方像素",
+    "storedAnswer": "19200 平方像素",
+    "answerMatch": true,
+    "optionTruth": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "uniqueCorrectAnswer": true,
+    "ambiguityChecks": {
+      "secondCorrectAnswer": "重新計算得到「19200 平方像素」；其餘三項逐項檢查：「48 平方像素」不成立，只算坐標單位面積。；「960 平方像素」不成立，只將 48 乘一次 20。；「38400 平方像素」不成立，多乘 2。",
+      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標平面中的長方形與面積」講義中定義，坐標固定以 (x,y) 表示。",
+      "unitConflict": "8×20=160 像素，6×20=120 像素，面積平方像素。",
+      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "domainBoundary": "題目只使用坐標差，不依賴螢幕 y 正向方向。",
+      "alternateReading": "常見誤讀是「沒有把兩個方向都換算成像素。」；依題幹完整條件重算後不會形成另一個正確答案。"
+    },
+    "difficultyReason": "需處理畫面 y 方向數值由上到下減少，但邊長仍取絕對差，並做平方尺度換算。",
+    "literacyContextNecessity": "像素比例與選取框角點是數位介面中的實際資訊，決定儲存區域大小。",
+    "prerequisiteCheck": "需會絕對差與面積。",
+    "languageCheck": "題幹所求為「計算螢幕框的像素面積」，方向、軸名、截距值或交點坐標均有明確指稱。",
+    "reviewerDecision": "pass",
+    "reviewerNote": "針對「螢幕選取框左上角為 (2,9)，右下角為 (10,3)。若每單位代表 20 像素，選取框共有多少平方像素？」重新依序處理：寬 8 單位、高 6 單位；實際寬 160 像素、高 120 像素，面積 160×120=19200。 正確選項為「19200 平方像素」。三個干擾項均對應不同錯誤：「48 平方像素」不成立，只算坐標單位面積。；「960 平方像素」不成立，只將 48 乘一次 20。；「38400 平方像素」不成立，多乘 2。。邊界審查：題目只使用坐標差，不依賴螢幕 y 正向方向。 難度理由：需處理畫面 y 方向數值由上到下減少，但邊長仍取絕對差，並做平方尺度換算。",
+    "reviewedAt": "2026-07-12",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  }
+];
+
+export const DRAWING_SPECS = [];

@@ -1,0 +1,231 @@
+{
+  "lectureId": "u08-s001-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-elements",
+  "skillId": "geometry-basic-elements",
+  "lockedSkillTitle": "點和線的基本元素與角的記號",
+  "title": "點和線的基本元素與角的記號：先分清端點與頂點",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能分辨點、直線、線段與射線。",
+    "能用兩個大寫字母表示直線或線段，並理解順序是否影響名稱。",
+    "能正確讀寫三字母角記號，知道中間字母一定是頂點。",
+    "能由文字敘述判斷共線、交點與角的兩邊。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [],
+    "bridgeExplanation": "本技能是本單元起點，只需具備閱讀大寫英文字母與基本方向詞的能力。"
+  },
+  "prerequisites": [],
+  "glossary": [
+    {
+      "term": "點",
+      "definition": "只表示位置，沒有長、寬與面積，通常以大寫英文字母命名。"
+    },
+    {
+      "term": "直線",
+      "definition": "向兩端無限延伸，沒有端點。"
+    },
+    {
+      "term": "線段",
+      "definition": "有兩個端點，長度有限。"
+    },
+    {
+      "term": "射線",
+      "definition": "有一個端點，向一個方向無限延伸。"
+    },
+    {
+      "term": "角",
+      "definition": "兩條有共同端點的射線所形成的圖形，共同端點稱為頂點。"
+    },
+    {
+      "term": "共線",
+      "definition": "三個或更多點位在同一直線上。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "點 A",
+      "meaning": "名稱為 A 的點。"
+    },
+    {
+      "symbol": "直線 AB",
+      "meaning": "通過 A、B 且向兩端延伸；直線 AB 與直線 BA 是同一直線。"
+    },
+    {
+      "symbol": "線段 AB",
+      "meaning": "端點為 A、B 的有限部分；線段 AB 與線段 BA 相同。"
+    },
+    {
+      "symbol": "射線 AB",
+      "meaning": "端點是 A，經過 B 向外延伸；射線 AB 與射線 BA 通常不同。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是 B，兩邊為射線 BA 與射線 BC。"
+    }
+  ],
+  "conceptDevelopment": [
+    "幾何先處理位置與關係，再處理長度或角度。點是位置標記；線段、射線與直線的差別只在端點數量與延伸方式。",
+    "名稱中的字母不是裝飾。兩字母表示一條線相關物件時，要依物件種類判斷順序是否重要；射線的第一個字母固定是端點。",
+    "三字母角記號最重要的規則是中間字母為頂點。∠ABC 與 ∠CBA 表示同一個角，但 ∠BAC 的頂點變成 A。",
+    "只寫 ∠B 必須確定頂點 B 周圍只有一個角可指認；若可能有多個角，應使用三字母記號避免歧義。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "交點",
+      "statement": "兩條線或線段共同通過的點。"
+    },
+    {
+      "name": "角的邊",
+      "statement": "從角的頂點出發的兩條射線。"
+    },
+    {
+      "name": "相同射線",
+      "statement": "端點相同且延伸方向相同的射線。"
+    }
+  ],
+  "formulas": [],
+  "invalidUseCases": [
+    "不能用紙面上看起來較長的線段判斷實際長度，除非題目給出尺度或數值。",
+    "射線 AB 不可任意改寫成射線 BA，因為端點會改變。",
+    "∠ABC 的頂點不是 A，也不是 C。",
+    "兩點只能唯一決定一條直線，但若只給一點，不能唯一決定直線方向。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "先辨認物件有幾個端點。",
+      "check": "零個是直線，一個是射線，兩個是線段。"
+    },
+    {
+      "step": 2,
+      "instruction": "讀名稱時確認字母角色。",
+      "check": "射線第一字母是端點；角的中間字母是頂點。"
+    },
+    {
+      "step": 3,
+      "instruction": "把文字敘述轉成關係。",
+      "check": "「A、B、C 共線」表示三點在同一直線；「交於 P」表示 P 同時在兩物件上。"
+    },
+    {
+      "step": 4,
+      "instruction": "最後檢查名稱是否可倒序。",
+      "check": "直線與線段可倒序；射線通常不可；三字母角可交換兩側字母但中間頂點不變。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "直線 l 上依序有 A、B、C 三點。線段 AC 與線段 CA 是否相同？",
+      "solutionSteps": [
+        "兩者端點都是 A、C。",
+        "線段名稱可交換端點順序。"
+      ],
+      "answer": "相同。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "射線 PQ 的端點是哪一點？",
+      "solutionSteps": [
+        "射線名稱第一個字母表示端點。",
+        "第一個字母是 P。"
+      ],
+      "answer": "P 點。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "∠RST 的頂點與兩邊分別為何？",
+      "solutionSteps": [
+        "三字母角記號的中間字母是頂點。",
+        "頂點為 S；兩邊由 S 指向 R 與 T。"
+      ],
+      "answer": "頂點 S；兩邊為射線 SR 與射線 ST。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩條直線 m、n 交於 K，這句話表示 K 具有什麼關係？",
+      "solutionSteps": [
+        "交點同時屬於兩條直線。",
+        "所以 K 在 m 上，也在 n 上。"
+      ],
+      "answer": "K 同時在直線 m 與直線 n 上。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "辨認端點數量與頂點位置。",
+    "standard": "在共線或相交的文字敘述中正確命名線段、射線與角。",
+    "advanced": "處理同一頂點附近有多個角時的記號歧義。",
+    "literacy": "閱讀工程標示、路線或方位敘述時，先釐清起點、延伸方向與交點。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把直線 AB 當成只有 A 到 B 的部分。",
+      "why": "忽略直線向兩端無限延伸。",
+      "correction": "若只指 A 到 B 的有限部分，應稱線段 AB。"
+    },
+    {
+      "mistake": "把射線 AB 改寫成射線 BA。",
+      "why": "未注意第一字母是端點。",
+      "correction": "先圈出端點，再依端點到經過點的順序命名。"
+    },
+    {
+      "mistake": "把 ∠ABC 的頂點寫成 A。",
+      "why": "誤以為第一字母最重要。",
+      "correction": "角記號永遠看中間字母。"
+    },
+    {
+      "mistake": "只用 ∠B 指多個角。",
+      "why": "頂點 B 周圍可能有不只一個角。",
+      "correction": "使用三字母角記號消除歧義。"
+    },
+    {
+      "mistake": "認為點有大小。",
+      "why": "把圖上畫出的圓點當成幾何物體。",
+      "correction": "圓點只是位置標記，幾何點沒有大小。"
+    },
+    {
+      "mistake": "由圖上長短直接判斷線段長度。",
+      "why": "把示意圖當成按比例圖。",
+      "correction": "以題目數值與條件為準。"
+    }
+  ],
+  "selfCheckItems": [
+    "我能從端點數量分辨直線、射線與線段嗎？",
+    "我能指出射線名稱中的端點嗎？",
+    "我能指出三字母角記號的頂點嗎？",
+    "我是否避免從未標比例的圖形猜長度？"
+  ],
+  "conciseSummary": [
+    "點表示位置。",
+    "直線、射線、線段分別有 0、1、2 個端點。",
+    "射線第一字母是端點。",
+    "三字母角記號的中間字母一定是頂點。"
+  ],
+  "connections": {
+    "previous": "本技能無鎖定先備技能，是 U08 的幾何語言起點。",
+    "next": [
+      "下一技能用角的記號討論角度大小與互餘互補。",
+      "後續所有三角形、多邊形與三視圖描述都依賴精確的點線名稱。"
+    ]
+  },
+  "figureReferences": [
+    "u08-s001-fig001"
+  ],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "逐項核對直線、射線、線段的端點數與命名規則；特別重算三字母角記號的頂點位置，四個例題沒有使用長度或圖形比例推論。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "492182c5e8f471f5ec90e8cce9caaf4a81bcccac4e7b78aabd5215872d19e0ba"
+}

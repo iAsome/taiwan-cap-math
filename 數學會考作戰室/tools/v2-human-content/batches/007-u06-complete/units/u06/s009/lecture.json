@@ -1,0 +1,259 @@
+{
+  "lectureId": "u06-s009-lecture-r1",
+  "unitId": "u06",
+  "numericUnitId": 6,
+  "topicId": "u06-applications",
+  "skillId": "ratio-word-problem",
+  "lockedSkillTitle": "比例應用題",
+  "title": "比例應用題：從語意找對應量",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "unitTitle": "比例式",
+    "topicTitle": "比例應用",
+    "skillOrder": 9,
+    "lockedPrerequisiteSkillIds": [
+      "scale-drawing"
+    ],
+    "capBoundary": "處理單價、配方、速率、濃度與相似的兩組對應量；不使用尚未學到的高階方程組技巧。"
+  },
+  "prerequisiteBridge": "已掌握比例式、正比與反比。應用題的主要難點是判斷哪兩量對應、關係是否保持，以及單位是否一致。",
+  "learningOutcomes": [
+    "能從文字辨認正比、反比或單純比的模型。",
+    "能用表格排列對應量並列出正確比例式。",
+    "能處理單位價格、配方放大、固定路程與濃度。",
+    "能檢查答案的單位、範圍與整數性。"
+  ],
+  "glossary": [
+    {
+      "term": "對應量",
+      "definition": "在同一情況下彼此配對的數量。"
+    },
+    {
+      "term": "單位量",
+      "definition": "每 1 單位所對應的數量，例如每公斤價格。"
+    },
+    {
+      "term": "率",
+      "definition": "兩種不同單位量的比，例如公里/小時。"
+    },
+    {
+      "term": "模型條件",
+      "definition": "比例成立所需的假設，例如單價固定或總路程相同。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "數量1/數量2=另一組數量1/另一組數量2",
+      "meaning": "正比情況的對應比例。"
+    },
+    {
+      "symbol": "單價=總價/數量",
+      "meaning": "固定單價時可先求單位量。"
+    },
+    {
+      "symbol": "速度×時間=路程",
+      "meaning": "固定路程時速度與時間成反比。"
+    }
+  ],
+  "conceptNarrative": [
+    "先問『什麼保持不變』。單價固定時總價與數量正比；路程固定時速度與時間反比。",
+    "列直式表格能避免把不同類量交叉配錯，例如上列放公斤，下列放元。",
+    "配方放大必須所有成分乘相同倍數；只增加一種成分會改變味道比例。",
+    "濃度題要分清溶質、溶液與水，總量通常是各成分和。",
+    "算出數值後，還要回答原題要的量，附上正確單位並檢查合理性。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "比例模型",
+      "statement": "兩組對應量在條件不變時，維持固定比值或固定乘積。"
+    },
+    {
+      "name": "單位率",
+      "statement": "以第二量為 1 時第一量的值，用於比較與推算。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "總價=單價×數量",
+      "conditions": [
+        "單價固定",
+        "無固定費用或折扣門檻"
+      ],
+      "meaning": "正比應用。"
+    },
+    {
+      "formula": "配方新量=原量×放大倍數",
+      "conditions": [
+        "配方比例不變"
+      ],
+      "meaning": "全成分同步縮放。"
+    },
+    {
+      "formula": "v1t1=v2t2",
+      "conditions": [
+        "路程相同"
+      ],
+      "meaning": "固定路程的反比。"
+    }
+  ],
+  "nonApplicableCases": [
+    "有基本費、階梯折扣時不能直接視為總價正比數量。",
+    "不同品牌或規格的單價不可混成同一比例。",
+    "總路程不同時不能用速度與時間反比。",
+    "濃度分母若是溶液總量，不能只用水量。",
+    "把題目給的多餘資料全部塞進比例式。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出問題所求與每個數量的單位。",
+      "check": "未知量是價格、重量、時間還是距離？"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷固定條件與關係類型。",
+      "check": "固定比值、固定乘積，還是只需份數？"
+    },
+    {
+      "step": 3,
+      "instruction": "用兩列對應表排資料。",
+      "check": "同一列是否是同類量？"
+    },
+    {
+      "step": 4,
+      "instruction": "列式並求解。",
+      "check": "正比交叉相乘，反比保持乘積。"
+    },
+    {
+      "step": 5,
+      "instruction": "用情境估算與單位檢查。",
+      "check": "更多商品是否應更貴、更多人是否應更快？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "3 公斤蘋果 210 元，單價不變，5 公斤多少元？",
+      "solutionSteps": [
+        "每公斤 210÷3=70 元。",
+        "5 公斤為 70×5=350 元。"
+      ],
+      "answer": "350 元。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "4 杯果汁需糖 60 克，做 10 杯需多少糖？",
+      "solutionSteps": [
+        "杯數放大 10/4=2.5 倍。",
+        "糖量 60×2.5=150 克。"
+      ],
+      "answer": "150 克。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "以 72 公里/時行 5 小時的路程，改 90 公里/時需多久？",
+      "solutionSteps": [
+        "路程固定為 72×5=360 公里。",
+        "時間 360÷90=4 小時。"
+      ],
+      "answer": "4 小時。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "果汁原液與水比 1:4，要配 2.5 公升飲料，原液多少？",
+      "solutionSteps": [
+        "總份數 5，原液占 1/5。",
+        "2.5×1/5=0.5 公升。"
+      ],
+      "answer": "0.5 公升。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "公斤列對元，另一邊卻列包數對公斤。",
+      "why": "對應表的量不一致。",
+      "correction": "同列只放同類量。"
+    },
+    {
+      "mistake": "速度增加卻算出時間增加。",
+      "why": "把反比當正比。",
+      "correction": "固定路程檢查 v×t。"
+    },
+    {
+      "mistake": "配方只放大主材料。",
+      "why": "忽略比例必須全部同步。",
+      "correction": "所有成分乘同倍數。"
+    },
+    {
+      "mistake": "有運費仍用總價/件數固定。",
+      "why": "固定費使單位平均變動。",
+      "correction": "拆成商品費與運費。"
+    },
+    {
+      "mistake": "濃度分母用水量。",
+      "why": "混淆溶劑與溶液。",
+      "correction": "依題意確認總量。"
+    },
+    {
+      "mistake": "答案沒有單位。",
+      "why": "無法判斷所求量。",
+      "correction": "列式前標單位，結尾附單位。"
+    }
+  ],
+  "selfCheck": [
+    "哪些條件保持不變？",
+    "我選的是正比、反比還是份數法？",
+    "對應量排列一致嗎？",
+    "單位已統一嗎？",
+    "答案方向與情境直覺一致嗎？"
+  ],
+  "summary": [
+    "比例應用先辨認固定條件，再列對應量。",
+    "單價與配方常用正比，固定路程與工作量常用反比。",
+    "濃度與部分總量要先釐清分母。",
+    "最後以單位與方向檢查合理性。"
+  ],
+  "connections": {
+    "previous": "比例尺是固定比值的典型應用。",
+    "next": [
+      "連比預備會把兩個共享中間量的比對齊。",
+      "比例複合應用會串接兩種以上關係。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u06-s009-v001",
+      "u06-s009-v002",
+      "u06-s009-v003",
+      "u06-s009-v004",
+      "u06-s009-v005",
+      "u06-s009-v006",
+      "u06-s009-v007",
+      "u06-s009-v008",
+      "u06-s009-v009",
+      "u06-s009-v010",
+      "u06-s009-v011",
+      "u06-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u06-s009-cr001",
+      "u06-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "contentAuthorityConfirmed": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以單位率、放大倍數、固定路程與總份數四種互異方法重算例題；逐一檢查運費、路程改變、溶液分母與對應表錯置等模型邊界，避免把所有情境都機械列正比。",
+    "reviewVersion": "human-lecture-review-u06-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "e8d3e78eacf0033438ea9519e4428b6f09a898b95bf6a81b4bd65e66d6fddac6"
+}

@@ -1,0 +1,124 @@
+{
+  "reviewId": "u02-human-syllabus-review-r1",
+  "unitId": "u02",
+  "sourceLockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+  "decisionSummary": {
+    "keep": 12,
+    "rename": 3,
+    "move": 0,
+    "split": 0,
+    "merge": 0,
+    "add": 0,
+    "delete": 0
+  },
+  "skills": [
+    {
+      "skillId": "fraction-factor-multiple",
+      "decision": "KEEP",
+      "finalTitle": "因數與倍數",
+      "reason": "因數與倍數是整除、質數、GCD 和 LCM 的共同基礎。"
+    },
+    {
+      "skillId": "fraction-prime-composite",
+      "decision": "KEEP",
+      "finalTitle": "質數與合數",
+      "reason": "質數與合數依正因數個數分類，能力邊界清楚。"
+    },
+    {
+      "skillId": "fraction-prime-factorization",
+      "decision": "KEEP",
+      "finalTitle": "質因數分解",
+      "reason": "質因數分解是 GCD、LCM 與完全平方判斷的核心工具。"
+    },
+    {
+      "skillId": "fraction-gcd-basic",
+      "decision": "KEEP",
+      "finalTitle": "最大公因數",
+      "reason": "最大公因數的純計算需與情境應用分開教學。"
+    },
+    {
+      "skillId": "fraction-lcm-basic",
+      "decision": "KEEP",
+      "finalTitle": "最小公倍數",
+      "reason": "最小公倍數的純計算需與週期情境分開教學。"
+    },
+    {
+      "skillId": "fraction-gcd-application",
+      "decision": "KEEP",
+      "finalTitle": "最大公因數應用",
+      "reason": "最多分組、最長切割與最大正方形均屬 GCD 模型。"
+    },
+    {
+      "skillId": "fraction-lcm-application",
+      "decision": "KEEP",
+      "finalTitle": "最小公倍數應用",
+      "reason": "最早同步與重複週期均屬 LCM 模型。"
+    },
+    {
+      "skillId": "fraction-compare",
+      "decision": "KEEP",
+      "finalTitle": "分數大小比較",
+      "reason": "正負分數與異分母分數排序是獨立的比較能力。"
+    },
+    {
+      "skillId": "fraction-add-subtract",
+      "decision": "KEEP",
+      "finalTitle": "分數加減",
+      "reason": "分數加減包含通分、符號、括號與帶分數處理。"
+    },
+    {
+      "skillId": "fraction-multiply-divide",
+      "decision": "RENAME",
+      "sourceTitle": "分數乘除",
+      "finalTitle": "分數的乘法和除法",
+      "reason": "完整名稱對零基礎學生更清楚，並依偏好使用「和」避免壓縮詞。"
+    },
+    {
+      "skillId": "fraction-mixed-number",
+      "decision": "KEEP",
+      "finalTitle": "帶分數與假分數",
+      "reason": "帶分數與假分數的雙向轉換和借位具有獨立教學需要。"
+    },
+    {
+      "skillId": "fraction-complex-fraction-basic",
+      "decision": "KEEP",
+      "finalTitle": "繁分數基本化簡",
+      "reason": "範圍限制在國中基本繁分數化簡，不延伸到高中代數繁式。"
+    },
+    {
+      "skillId": "fraction-percent-discount",
+      "decision": "RENAME",
+      "sourceTitle": "百分率與折扣與成數",
+      "finalTitle": "百分率和折扣與成數",
+      "reason": "最終名稱明示百分率、折扣與成數的共同倍率模型，且名稱不使用頓號。"
+    },
+    {
+      "skillId": "fraction-base-quantity",
+      "decision": "KEEP",
+      "finalTitle": "基準量判斷",
+      "reason": "基準量錯置是百分率應用的主要失分來源，需獨立訓練。"
+    },
+    {
+      "skillId": "fraction-literacy-context",
+      "decision": "RENAME",
+      "sourceTitle": "分數素養題",
+      "finalTitle": "分數與百分率和週期的綜合情境應用",
+      "reason": "原名稱只是題型標籤；新名稱明示分數、百分率與週期的多步整合能力。",
+      "prerequisiteOverride": [
+        "fraction-gcd-application",
+        "fraction-lcm-application",
+        "fraction-add-subtract",
+        "fraction-multiply-divide",
+        "fraction-percent-discount",
+        "fraction-base-quantity"
+      ]
+    }
+  ],
+  "scopeNotes": [
+    "因數、倍數、質數、GCD 與 LCM 限正整數及國中會考常見模型。",
+    "繁分數只處理基本數值化簡，分母必須非零。",
+    "百分率、折扣、成數與基準量均要求先辨識100%的對象。",
+    "圖形只在質因數樹、負分數數線和帶分數面積模型中使用，因為視覺表示直接參與作答。"
+  ],
+  "reviewDecision": "pass-for-u02-authoring"
+}

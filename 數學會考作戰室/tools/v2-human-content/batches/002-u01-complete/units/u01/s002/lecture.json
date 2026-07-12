@@ -1,0 +1,256 @@
+{
+  "lectureId": "u01-s002-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-basics",
+  "skillId": "integer-positive-negative-meaning",
+  "title": "正負數的意義：用基準和方向讀懂紀錄",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能先找出情境中的基準量。",
+    "能依題目約定判斷正方向與負方向。",
+    "能把「高於、低於、增加、減少」翻成帶正負號的數。",
+    "能由帶正負號的紀錄還原實際量。",
+    "能區分方向與距離大小。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-number-classification",
+      "requiredLevel": "能辨認正數、負數與 0，並知道正負號是數值紀錄的一部分。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "基準量",
+      "definition": "被當作 0 的參考值，例如海平面、標準重量或預算額。"
+    },
+    {
+      "term": "正方向",
+      "definition": "題目約定用正號表示的方向，例如上升、收入或向東。"
+    },
+    {
+      "term": "負方向",
+      "definition": "與正方向相反，使用負號表示。"
+    },
+    {
+      "term": "偏差",
+      "definition": "實際量相對於基準量多出或少掉多少。"
+    },
+    {
+      "term": "帶號數",
+      "definition": "包含正號或負號，用來同時表示大小與方向的數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "+a",
+      "meaning": "相對基準沿正方向 a 個單位；正號有時可省略。"
+    },
+    {
+      "symbol": "-a",
+      "meaning": "相對基準沿負方向 a 個單位。"
+    },
+    {
+      "symbol": "0",
+      "meaning": "正好位於基準，沒有正負偏差。"
+    }
+  ],
+  "conceptNarrative": [
+    "正負號的核心是方向，不是好壞。收入常記正、支出常記負，但若題目另外約定，必須服從題目。",
+    "同一個實際量可以因基準不同而有不同紀錄。海拔 80 公尺若以海平面為 0 記 +80；若以海拔 100 公尺的平台為 0，則記 -20。",
+    "數字部分表示離基準多遠，符號表示在哪一側。+6 與 -6 的距離大小相同，但方向相反。",
+    "將紀錄還原成實際量時，使用「實際量＝基準量＋帶號偏差」。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "正數紀錄",
+      "statement": "相對於指定基準位在正方向的量，以正數表示。"
+    },
+    {
+      "name": "負數紀錄",
+      "statement": "相對於指定基準位在負方向的量，以負數表示。"
+    },
+    {
+      "name": "零紀錄",
+      "statement": "實際量等於基準量時，偏差記為 0。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "實際量＝基準量＋帶號偏差",
+      "conditions": [
+        "基準量與偏差使用相同單位",
+        "正負方向已由題目明確約定"
+      ],
+      "meaning": "從相對紀錄回推實際數值。"
+    },
+    {
+      "formula": "帶號偏差＝實際量－基準量",
+      "conditions": [
+        "先後次序不可顛倒"
+      ],
+      "meaning": "計算實際量相對基準多出或少掉多少。"
+    }
+  ],
+  "nonApplicableCases": [
+    "題目未說明基準或正方向時，不能自行假設。",
+    "「下降 5」是變化量 -5，不一定表示最後位置是 -5。",
+    "負號不表示數值的絕對大小較大，也不必然表示不利。",
+    "不同單位不能直接相加，例如公尺與公分要先換算。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出基準量並把它視為 0。",
+      "check": "基準是海平面、標準值、起始量，還是其他參考？"
+    },
+    {
+      "step": 2,
+      "instruction": "找出題目約定的正方向。",
+      "check": "上升、向東或收入是否明確被指定為正？"
+    },
+    {
+      "step": 3,
+      "instruction": "依方向決定正負號。",
+      "check": "事件位在基準哪一側？"
+    },
+    {
+      "step": 4,
+      "instruction": "把距離大小與符號合併。",
+      "check": "是否同時保留數值和單位？"
+    },
+    {
+      "step": 5,
+      "instruction": "把結果翻回原情境檢查。",
+      "check": "負號是否真的對應題目中的低於、減少或反方向？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "以海平面為 0，燈塔頂端高 42 公尺、潛水員低 18 公尺，如何記錄？",
+      "solutionSteps": [
+        "海平面是基準 0。",
+        "高於海平面屬正方向，所以燈塔記 +42 公尺。",
+        "低於海平面屬負方向，所以潛水員記 -18 公尺。"
+      ],
+      "answer": "燈塔 +42 公尺；潛水員 -18 公尺。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "商品標準重量為 500 克，實際 493 克，偏差是多少？",
+      "solutionSteps": [
+        "偏差＝實際量－基準量。",
+        "493－500＝-7。",
+        "負號表示少於標準。"
+      ],
+      "answer": "-7 克。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "某帳戶以 0 元為基準，先記 +800 元，再記 -250 元，兩筆紀錄各代表什麼？",
+      "solutionSteps": [
+        "+800 表示收入或增加 800 元。",
+        "-250 表示支出或減少 250 元。",
+        "正負號描述方向，不是兩筆金額的大小。"
+      ],
+      "answer": "增加 800 元；減少 250 元。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "測站以 20°C 為基準，紀錄為 -6°C，實際溫度是多少？",
+      "solutionSteps": [
+        "實際量＝20＋(-6)。",
+        "20－6＝14。",
+        "紀錄的 -6 是偏差，不是實際溫度。"
+      ],
+      "answer": "14°C。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把「低 5 公尺」寫成 +5。",
+      "why": "只記住距離 5，忘記方向。",
+      "correction": "低於基準應加負號，記 -5。"
+    },
+    {
+      "mistake": "把負數解讀成一定不好。",
+      "why": "把數學方向和價值判斷混在一起。",
+      "correction": "負號只表示題目約定的反方向。"
+    },
+    {
+      "mistake": "基準 100、紀錄 -8，直接說實際量是 -8。",
+      "why": "混淆偏差與實際值。",
+      "correction": "實際量是 100＋(-8)=92。"
+    },
+    {
+      "mistake": "把下降 3 層當作最後在 -3 層。",
+      "why": "忽略起始樓層。",
+      "correction": "最後位置要用起點加變化量。"
+    },
+    {
+      "mistake": "沒有依題目約定正方向。",
+      "why": "套用生活慣例而未讀題。",
+      "correction": "先找題目明示的正方向。"
+    },
+    {
+      "mistake": "公尺與公分直接運算。",
+      "why": "忽略單位。",
+      "correction": "先統一單位再計算偏差。"
+    }
+  ],
+  "selfCheck": [
+    "我是否找出基準？",
+    "我是否確認正方向？",
+    "數字表示距離、符號表示方向嗎？",
+    "紀錄是偏差還是實際量？",
+    "單位是否一致？"
+  ],
+  "summary": [
+    "正負數用來表示相對基準的兩個方向。",
+    "實際量＝基準量＋帶號偏差。",
+    "正負號不代表好壞。",
+    "變化量與最後位置必須分開。"
+  ],
+  "connections": {
+    "previous": "先備技能是數的分類，需知道正數、負數與 0。",
+    "next": [
+      "數線位置會把正負方向畫成左右位置。",
+      "整數加減會把多次帶號變化合併。",
+      "素養題會使用基準量與偏差解讀表格。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s002-v001",
+      "u01-s002-v002",
+      "u01-s002-v003",
+      "u01-s002-v004",
+      "u01-s002-v005",
+      "u01-s002-v006",
+      "u01-s002-v007",
+      "u01-s002-v008",
+      "u01-s002-v009",
+      "u01-s002-v010",
+      "u01-s002-v011",
+      "u01-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s002-cr001",
+      "u01-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一重算基準量、帶號偏差與實際量；四個例題使用不同基準，正負方向、數值和單位均一致。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "2300285a0335accabe80c87ea6ee4c35464d6bf3a9a53aef98b69e8b360a401e",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

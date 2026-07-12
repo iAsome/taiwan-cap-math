@@ -1,0 +1,195 @@
+{
+  "packageId": "math-v2-human-content-batch-005-u04-complete",
+  "batchId": "005-u04-complete",
+  "schemaVersion": "1.2.0",
+  "immutableSource": true,
+  "repository": "iAsome/taiwan-cap-math",
+  "baseBranch": "chatgpt/math-v2-human-authoring-r1",
+  "expectedBaseHead": "__CENTRAL_COORDINATOR_WILL_SUPPLY_EXPECTED_HEAD__",
+  "syllabusLockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "unitTitle": "二元一次聯立方程式",
+  "topicIds": [
+    "u04-system-basics",
+    "u04-system-methods",
+    "u04-system-apps"
+  ],
+  "skills": [
+    {
+      "slot": "s001",
+      "order": 1,
+      "topicId": "u04-system-basics",
+      "skillId": "system-two-variable-equation-definition",
+      "lockedTitle": "二元一次方程式的判斷",
+      "finalTitle": "二元一次方程式的判斷",
+      "prerequisiteSkillIds": []
+    },
+    {
+      "slot": "s002",
+      "order": 2,
+      "topicId": "u04-system-basics",
+      "skillId": "system-ordered-pair-solution-check",
+      "lockedTitle": "有序數對與解的判斷",
+      "finalTitle": "有序數對與解的判斷",
+      "prerequisiteSkillIds": [
+        "system-two-variable-equation-definition"
+      ]
+    },
+    {
+      "slot": "s003",
+      "order": 3,
+      "topicId": "u04-system-basics",
+      "skillId": "system-solution-meaning",
+      "lockedTitle": "聯立方程式解的意義",
+      "finalTitle": "聯立方程式解的意義",
+      "prerequisiteSkillIds": [
+        "system-ordered-pair-solution-check"
+      ]
+    },
+    {
+      "slot": "s004",
+      "order": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "lockedTitle": "代入消去法",
+      "finalTitle": "代入消去法",
+      "prerequisiteSkillIds": [
+        "system-solution-meaning"
+      ]
+    },
+    {
+      "slot": "s005",
+      "order": 5,
+      "topicId": "u04-system-methods",
+      "skillId": "system-elimination-method",
+      "lockedTitle": "加減消去法",
+      "finalTitle": "加減消去法",
+      "prerequisiteSkillIds": [
+        "system-substitution-method"
+      ]
+    },
+    {
+      "slot": "s006",
+      "order": 6,
+      "topicId": "u04-system-methods",
+      "skillId": "system-elimination-scaling",
+      "lockedTitle": "係數放大後消去",
+      "finalTitle": "係數放大後消去",
+      "prerequisiteSkillIds": [
+        "system-elimination-method"
+      ]
+    },
+    {
+      "slot": "s007",
+      "order": 7,
+      "topicId": "u04-system-methods",
+      "skillId": "system-special-cases",
+      "lockedTitle": "無解與唯一解與無限多解",
+      "finalTitle": "無解與唯一解與無限多解",
+      "prerequisiteSkillIds": [
+        "system-elimination-scaling"
+      ]
+    },
+    {
+      "slot": "s008",
+      "order": 8,
+      "topicId": "u04-system-apps",
+      "skillId": "system-word-setup-basic",
+      "lockedTitle": "情境列聯立方程式",
+      "finalTitle": "情境列聯立方程式",
+      "prerequisiteSkillIds": [
+        "system-special-cases"
+      ]
+    },
+    {
+      "slot": "s009",
+      "order": 9,
+      "topicId": "u04-system-apps",
+      "skillId": "system-chicken-rabbit-problem",
+      "lockedTitle": "雞兔同籠問題",
+      "finalTitle": "雞兔同籠問題",
+      "prerequisiteSkillIds": [
+        "system-word-setup-basic"
+      ]
+    },
+    {
+      "slot": "s010",
+      "order": 10,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "lockedTitle": "票價問題",
+      "finalTitle": "票價問題",
+      "prerequisiteSkillIds": [
+        "system-chicken-rabbit-problem"
+      ]
+    },
+    {
+      "slot": "s011",
+      "order": 11,
+      "topicId": "u04-system-apps",
+      "skillId": "system-quantity-price-problem",
+      "lockedTitle": "數量與總價問題",
+      "finalTitle": "數量與總價問題",
+      "prerequisiteSkillIds": [
+        "system-ticket-price-problem"
+      ]
+    },
+    {
+      "slot": "s012",
+      "order": 12,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "lockedTitle": "速率與行程問題",
+      "finalTitle": "速率與行程問題",
+      "prerequisiteSkillIds": [
+        "system-quantity-price-problem"
+      ]
+    },
+    {
+      "slot": "s013",
+      "order": 13,
+      "topicId": "u04-system-apps",
+      "skillId": "system-mixture-basic",
+      "lockedTitle": "基礎混合問題",
+      "finalTitle": "基礎混合問題",
+      "prerequisiteSkillIds": [
+        "system-rate-problem"
+      ]
+    },
+    {
+      "slot": "s014",
+      "order": 14,
+      "topicId": "u04-system-apps",
+      "skillId": "system-literacy-context",
+      "lockedTitle": "聯立方程式素養題",
+      "finalTitle": "聯立方程式素養題",
+      "prerequisiteSkillIds": [
+        "system-mixture-basic"
+      ]
+    }
+  ],
+  "counts": {
+    "skillCount": 14,
+    "lectureCount": 14,
+    "mcQuestionCount": 168,
+    "constructedResponseCount": 28,
+    "semanticReviewCount": 168,
+    "figureCount": 0,
+    "difficultyCounts": {
+      "basic": 42,
+      "standard": 42,
+      "advanced": 42,
+      "literacy": 42
+    },
+    "answerIndexCounts": [
+      42,
+      42,
+      42,
+      42
+    ]
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "productionActivationAllowed": false,
+  "allowedDestination": "數學會考作戰室/tools/v2-human-content/batches/005-u04-complete/"
+}

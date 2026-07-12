@@ -1,0 +1,224 @@
+{
+  "lectureId": "u09-s001-lecture-r1",
+  "unitId": "u09",
+  "numericUnitId": 9,
+  "topicId": "u09-display",
+  "skillId": "data-table-reading",
+  "lockedTitle": "資料表判讀",
+  "title": "資料表判讀：先看標題再讀列與欄",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "reviewStatus": "independently-reviewed",
+  "prerequisiteBridge": {
+    "skillIds": [],
+    "explanation": "本技能無鎖定先備技能，從表格的列、欄、單位與註記開始。"
+  },
+  "learningGoals": [
+    "辨認表名、列標題、欄標題與單位。",
+    "精確讀取交叉格。",
+    "由總計或欄位關係補缺值。",
+    "比較不同列或欄而不混用單位。",
+    "檢查腳註與摘要列是否合理。"
+  ],
+  "vocabulary": [
+    {
+      "term": "列",
+      "meaning": "橫向排列的一排資料。"
+    },
+    {
+      "term": "欄",
+      "meaning": "直向排列、具有共同意義的一組資料。"
+    },
+    {
+      "term": "儲存格",
+      "meaning": "一列與一欄交會的位置。"
+    },
+    {
+      "term": "總計",
+      "meaning": "把指定範圍內資料合併後的結果。"
+    },
+    {
+      "term": "註記",
+      "meaning": "補充資料定義、期間或例外的文字。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "—",
+      "meaning": "可能表示沒有資料、不適用或零；必須看表格說明，不能自行判定。"
+    },
+    {
+      "symbol": "%",
+      "meaning": "百分比，分母需由欄位或註記確認。"
+    }
+  ],
+  "conceptDevelopment": [
+    "資料表把大量資訊分成『誰或什麼』與『測量了什麼』。讀任何數字前，先用列標題和欄標題替它命名。",
+    "同一個 20 可能是 20 人、20 元或 20%，意義由單位決定。",
+    "總計列是檢查工具，不是一定可信；原始列加總後應與總計一致。",
+    "比較資料前要確認觀察期間、單位與分母相同。",
+    "腳註常決定能否公平比較，例如月份天數不同就不能直接用總量代表每日量。"
+  ],
+  "definitions": [
+    {
+      "name": "讀取交叉格",
+      "statement": "先選定列，再選定欄，交會格即同時符合兩個條件的資料。"
+    },
+    {
+      "name": "一致性檢查",
+      "statement": "用列合計、欄合計或已知關係重新計算，確認表內數值相容。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "合計＝各互斥類別數值相加",
+      "conditions": [
+        "類別沒有重複且涵蓋所求全體"
+      ]
+    },
+    {
+      "formula": "缺值＝總計－其他已知部分",
+      "conditions": [
+        "只有一個未知部分"
+      ]
+    },
+    {
+      "formula": "平均每日量＝期間總量÷天數",
+      "conditions": [
+        "比較目標是每日水準"
+      ]
+    }
+  ],
+  "invalidUseCases": [
+    "未看單位就把不同欄相加。",
+    "把空白格自動當作 0。",
+    "只看最大數字，卻沒有回答它屬於哪一列。",
+    "忽略腳註後比較不同期間總量。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "action": "讀表名，確認表格在說什麼。"
+    },
+    {
+      "step": 2,
+      "action": "圈出列標題、欄標題與單位。"
+    },
+    {
+      "step": 3,
+      "action": "依題目指定條件定位格子。"
+    },
+    {
+      "step": 4,
+      "action": "需要運算時，只取相關資料並寫出關係。"
+    },
+    {
+      "step": 5,
+      "action": "用總計、單位與情境回查答案。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "L1",
+      "prompt": "A 線 24 公里票價 36 元，B 線 30 公里票價 42 元，哪線較長？",
+      "solution": [
+        "先依欄位把 24、30 解讀為公里數。",
+        "30>24，所以 B 線較長 6 公里。"
+      ],
+      "answer": "B 線，長 6 公里。"
+    },
+    {
+      "id": "L2",
+      "prompt": "原有 80 枝、售出 27 枝，剩餘欄空白。",
+      "solution": [
+        "剩餘＝原有－售出。",
+        "80－27＝53。"
+      ],
+      "answer": "53 枝。"
+    },
+    {
+      "id": "L3",
+      "prompt": "四次測量 12.4、12.6、12.5、12.5，摘要寫平均 12.8。",
+      "solution": [
+        "原始資料總和 50.0。",
+        "50.0÷4=12.5，摘要列不一致。"
+      ],
+      "answer": "正確平均 12.5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "沿錯列讀到鄰格。",
+      "why": "眼睛未同時對準列與欄。",
+      "fix": "用手指或直尺沿列移動。"
+    },
+    {
+      "wrong": "把 24 公里當 24 元。",
+      "why": "忽略欄標題。",
+      "fix": "每個數值旁暫寫單位。"
+    },
+    {
+      "wrong": "總計列再次加入總和。",
+      "why": "未辨認摘要列。",
+      "fix": "先標記原始類別與摘要。"
+    },
+    {
+      "wrong": "直接比較月用水總量。",
+      "why": "忽略月份天數。",
+      "fix": "先換成每日量。"
+    }
+  ],
+  "selfCheck": [
+    "我能用一句話說明每一欄嗎？",
+    "所有運算資料的單位相同嗎？",
+    "總計是否被重複計入？",
+    "註記是否改變比較方法？"
+  ],
+  "summary": [
+    "讀數字前先讀列、欄與單位。",
+    "交叉格要同時滿足兩個標題。",
+    "總計可以補缺值，也應被重新驗算。",
+    "公平比較常需要利用腳註標準化。"
+  ],
+  "connections": {
+    "previous": "無；本技能建立統計資料閱讀的共同語言。",
+    "next": [
+      "下一技能把原始資料整理成次數與相對次數分配表。",
+      "後續所有統計圖都需要同樣的標題、尺度與單位意識。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": "本講義可完全以文字理解；若有圖形，替代文字提供所有必要數值。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u09-s001-v001",
+      "u09-s001-v002",
+      "u09-s001-v003",
+      "u09-s001-v004",
+      "u09-s001-v005",
+      "u09-s001-v006",
+      "u09-s001-v007",
+      "u09-s001-v008",
+      "u09-s001-v009",
+      "u09-s001-v010",
+      "u09-s001-v011",
+      "u09-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u09-s001-cr001",
+      "u09-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "從表格最基本結構開始，例題依序進入讀格、補值與一致性檢查。",
+    "scopeCheck": "符合國中會考範圍；未引入四分位數與盒狀圖。",
+    "prerequisiteAudit": "本技能無鎖定先備技能，從表格的列、欄、單位與註記開始。",
+    "symbolAndUnitAudit": "所有符號在使用前定義；單位與取位規則在例題中明示。",
+    "skillSpecificEvidence": "特別處理欄位錯置、空白格、總計重複與腳註期間差異。",
+    "legacyContentUsed": false,
+    "decision": "pass"
+  },
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "contentSha256": "376497afd756b1eb6d3f2ea8c932be92da7afbd21bde15044234fb5b5750ccbd"
+}

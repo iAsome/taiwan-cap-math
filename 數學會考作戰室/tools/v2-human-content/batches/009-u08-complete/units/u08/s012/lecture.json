@@ -1,0 +1,247 @@
+{
+  "lectureId": "u08-s012-lecture-r1",
+  "unitId": "u08",
+  "numericUnitId": 8,
+  "topicId": "u08-views",
+  "skillId": "solid-views-basic",
+  "lockedSkillTitle": "三視圖基本判讀",
+  "title": "三視圖基本判讀：正視和俯視與側視各保留兩個方向",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能說明正視圖、俯視圖與側視圖的觀察方向。",
+    "能判斷各視圖顯示長、寬、高中的哪兩個方向。",
+    "能判讀長方體的三視圖尺寸。",
+    "能理解單一視圖通常不能唯一決定立體。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisiteSkillIds": [
+      "unit-conversion-geometry"
+    ],
+    "bridgeExplanation": "先確保長、寬、高的單位一致，再學習從不同方向把立體投影成平面視圖。"
+  },
+  "prerequisites": [
+    {
+      "skillId": "unit-conversion-geometry",
+      "requiredLevel": "能區分長度方向與單位，並比較不同方向的尺寸。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "正視圖",
+      "definition": "從物體正面沿垂直於正面的方向觀看所得投影。"
+    },
+    {
+      "term": "俯視圖",
+      "definition": "從上方向下觀看所得投影。"
+    },
+    {
+      "term": "側視圖",
+      "definition": "從物體側面觀看所得投影，通常題目會指定左視或右視。"
+    },
+    {
+      "term": "投影",
+      "definition": "把物體沿固定觀察方向映到平面上。"
+    },
+    {
+      "term": "遮蔽",
+      "definition": "同一視線方向上前方部分可能擋住後方部分。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "長×高",
+      "meaning": "常為正視圖呈現的兩方向。"
+    },
+    {
+      "symbol": "長×寬",
+      "meaning": "常為俯視圖呈現的兩方向。"
+    },
+    {
+      "symbol": "寬×高",
+      "meaning": "常為側視圖呈現的兩方向。"
+    }
+  ],
+  "conceptDevelopment": [
+    "三視圖不是把立體旋轉成三張照片，而是從互相垂直的方向做正投影。每個視圖只保留兩個方向，第三個方向沿視線被壓縮。",
+    "對長方體而言，正視圖常是長×高，俯視圖是長×寬，側視圖是寬×高。題目若另定正面，依題目方向。",
+    "相同輪廓的視圖可能來自不同深度配置，因此一張視圖通常不夠；三視圖合併可提供更多限制，但某些複雜立體仍可能不唯一。",
+    "判讀堆疊方塊時，俯視圖顯示哪些底面位置有方塊；正視或側視常顯示各欄最高高度，而看不到被遮住的內部細節。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "正投影",
+      "statement": "投影線彼此平行且垂直於投影面。"
+    },
+    {
+      "name": "輪廓",
+      "statement": "從某方向可見的外部邊界。"
+    },
+    {
+      "name": "欄高",
+      "statement": "方塊堆疊在某平面位置上的方塊數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "正視：長與高",
+      "conditions": [
+        "正面定義為長高面"
+      ],
+      "meaning": "深度被壓縮。"
+    },
+    {
+      "formula": "俯視：長與寬",
+      "conditions": [
+        "由上往下"
+      ],
+      "meaning": "高度被壓縮。"
+    },
+    {
+      "formula": "側視：寬與高",
+      "conditions": [
+        "側面定義固定"
+      ],
+      "meaning": "長度被壓縮。"
+    }
+  ],
+  "invalidUseCases": [
+    "正視圖中的水平長度不一定是物體最長邊，取決於正面定義。",
+    "俯視圖看不到高度數值，除非另有標註。",
+    "側視圖不一定與正視圖相同。",
+    "不能用單一視圖推定所有隱藏結構。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "先固定正面、上方與側面方向。",
+      "check": "題目若指定箭頭或觀看者位置，依該定義。"
+    },
+    {
+      "step": 2,
+      "instruction": "列出每個視圖保留的兩方向。",
+      "check": "正視長高、俯視長寬、側視寬高。"
+    },
+    {
+      "step": 3,
+      "instruction": "對方塊堆疊，先由俯視確定占用位置。",
+      "check": "再用正視與側視限制各列或各欄最高高度。"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查是否有遮蔽與不唯一性。",
+      "check": "只在條件足夠時下唯一結論。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "長方體長 8、寬 5、高 3 公分，正面是長×高面。正視圖尺寸？",
+      "solutionSteps": [
+        "正視保留長與高。",
+        "尺寸為 8×3 公分。"
+      ],
+      "answer": "8 公分×3 公分。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "同一長方體的俯視圖尺寸？",
+      "solutionSteps": [
+        "俯視保留長與寬。",
+        "尺寸為 8×5 公分。"
+      ],
+      "answer": "8 公分×5 公分。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "同一長方體的右側視圖尺寸？",
+      "solutionSteps": [
+        "側視保留寬與高。",
+        "尺寸為 5×3 公分。"
+      ],
+      "answer": "5 公分×3 公分。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某方塊組合俯視圖顯示 4 個占用位置，能否只由此確定總方塊數？",
+      "solutionSteps": [
+        "俯視只知道每個位置至少一塊。",
+        "各位置可能堆疊不同高度。"
+      ],
+      "answer": "不能；只能確定至少 4 塊。"
+    }
+  ],
+  "levelConnections": {
+    "basic": "辨認三個觀看方向。",
+    "standard": "配對長方體三視圖尺寸。",
+    "advanced": "從方塊占用位置與欄高限制判斷可能性。",
+    "literacy": "工程圖、家具組裝與建築圖面用多視圖避免單張外觀造成深度誤判。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把俯視圖當成長×高。",
+      "why": "忘記從上看時高度被壓縮。",
+      "correction": "俯視保留長與寬。"
+    },
+    {
+      "mistake": "正視圖一定取最大面。",
+      "why": "把正面與面積大小混淆。",
+      "correction": "正面由題目指定。"
+    },
+    {
+      "mistake": "俯視有四格就說共四塊。",
+      "why": "忽略每格可向上堆疊。",
+      "correction": "只能說至少四塊。"
+    },
+    {
+      "mistake": "正視輪廓看見兩欄就認為深度只有一層。",
+      "why": "深度沿視線被遮蔽。",
+      "correction": "需結合俯視或側視。"
+    },
+    {
+      "mistake": "左視與右視方向混用。",
+      "why": "未固定觀察側。",
+      "correction": "題目指定哪一側就按該側投影。"
+    },
+    {
+      "mistake": "把視圖尺寸當面積直接相乘後回答長度。",
+      "why": "量的種類混淆。",
+      "correction": "題目問尺寸就保留兩個長度，問面積才相乘。"
+    }
+  ],
+  "selfCheckItems": [
+    "正面由誰定義？",
+    "每個視圖保留哪兩個方向？",
+    "俯視圖是否只表示占用位置？",
+    "目前資訊足以唯一決定立體嗎？"
+  ],
+  "conciseSummary": [
+    "正視、俯視、側視是三個互相垂直方向的正投影。",
+    "長方體常對應長高、長寬、寬高。",
+    "沿視線方向的資訊被壓縮。",
+    "單一視圖通常不足以唯一決定立體。"
+  ],
+  "connections": {
+    "previous": "上一技能確保三個方向的尺寸單位可比較。",
+    "next": [
+      "下一技能將不用圖片，只靠文字描述三視圖輪廓、欄高與相容性。"
+    ]
+  },
+  "figureReferences": [
+    "u08-s012-fig001"
+  ],
+  "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "u08 locked CAP text-only boundary",
+    "examplesNotCopiedFromLegacyOrProductionBank": true,
+    "skillSpecificEvidence": "以長 8、寬 5、高 3 的長方體逐一核對正視 8×3、俯視 8×5、側視 5×3；方塊例題只推出至少四塊，未由俯視誤推總數。",
+    "manualSymbolAndUnitCheck": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "57af5693af9519ebf8ccfc6d1df7f140aa4a3d6207783982bf94f9e2cce88c1d"
+}

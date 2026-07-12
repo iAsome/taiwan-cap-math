@@ -1,0 +1,241 @@
+{
+  "lectureId": "u17-s014-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-quadrilaterals",
+  "skillId": "rectangle-square-properties",
+  "lockedTitle": "矩形與正方形",
+  "title": "矩形與正方形：共通的直角，額外的等邊",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：rhombus-properties。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "比較矩形與正方形性質",
+    "運用矩形對角線等長且互相平分",
+    "綜合正方形的矩形與菱形性質"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "rhombus-properties",
+      "requiredLevel": "能正確使用「rhombus-properties」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "矩形",
+      "definition": "四個內角皆為90°的平行四邊形"
+    },
+    {
+      "term": "正方形",
+      "definition": "四角皆90°且四邊等長的四邊形"
+    },
+    {
+      "term": "對角線等長",
+      "definition": "兩條對角線總長相等"
+    },
+    {
+      "term": "中心",
+      "definition": "兩對角線交點"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "矩形的四個角都是90°，對角線互相平分且等長，但一般不垂直。",
+    "正方形同時是矩形和菱形，因此對角線等長、互相垂直、互相平分，也平分頂角。",
+    "判斷附加性質時要分清矩形共有與正方形專有。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "矩形",
+      "statement": "四個內角皆為90°的平行四邊形"
+    },
+    {
+      "name": "正方形",
+      "statement": "四角皆90°且四邊等長的四邊形"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AC=BD 且互相平分",
+      "conditions": [
+        "矩形對角線"
+      ],
+      "meaning": "用於矩形與正方形中符合條件的推理或計算。"
+    },
+    {
+      "formula": "正方形面積=邊長²",
+      "conditions": [
+        "四邊等長且有直角"
+      ],
+      "meaning": "用於矩形與正方形中符合條件的推理或計算。"
+    },
+    {
+      "formula": "正方形對角線性質=等長、垂直、互相平分、平分頂角",
+      "conditions": [
+        "同時承接矩形與菱形"
+      ],
+      "meaning": "用於矩形與正方形中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先判定矩形或正方形",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "列出共通平行四邊形性質",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "加入矩形的直角與對角線等長",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "正方形再加入四邊等長與垂直對角線",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "只使用題目允許的性質",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "矩形對角線AC=13",
+      "solutionSteps": [
+        "BD=13。"
+      ],
+      "answer": "BD=13。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "矩形長8寬5",
+      "solutionSteps": [
+        "面積40，周長26。"
+      ],
+      "answer": "面積40，周長26。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "正方形邊7",
+      "solutionSteps": [
+        "面積49。"
+      ],
+      "answer": "面積49。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "正方形一角被對角線平分",
+      "solutionSteps": [
+        "每半45°。"
+      ],
+      "answer": "每半45°。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "矩形對角線必垂直",
+      "why": "一般矩形不成立",
+      "correction": "一般矩形不成立"
+    },
+    {
+      "mistake": "正方形不是菱形",
+      "why": "正方形四邊等長",
+      "correction": "正方形四邊等長"
+    },
+    {
+      "mistake": "矩形四邊等長",
+      "why": "只有對邊等長",
+      "correction": "只有對邊等長"
+    },
+    {
+      "mistake": "對角線交點到四頂點距離不同",
+      "why": "矩形中四段相等",
+      "correction": "矩形中四段相等"
+    },
+    {
+      "mistake": "邊長與面積單位混淆",
+      "why": "面積用平方單位",
+      "correction": "面積用平方單位"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「矩形與正方形」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "矩形的四個角都是90°，對角線互相平分且等長，但一般不垂直。",
+    "AC=BD 且互相平分",
+    "解題時先確認「矩形對角線」。"
+  ],
+  "connections": {
+    "previous": "承接rhombus-properties。",
+    "next": "下一技能依鎖定順序為trapezoid-area。"
+  },
+  "figureReferences": [
+    "u17-s014-fig001"
+  ],
+  "figureAccessibility": "左側矩形標示等長對角線，右側正方形標示等長且垂直對角線。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s014-v001",
+      "u17-s014-v002",
+      "u17-s014-v003",
+      "u17-s014-v004",
+      "u17-s014-v005",
+      "u17-s014-v006",
+      "u17-s014-v007",
+      "u17-s014-v008",
+      "u17-s014-v009",
+      "u17-s014-v010",
+      "u17-s014-v011",
+      "u17-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s014-cr001",
+      "u17-s014-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "內容以性質集合比較矩形與正方形，避免把矩形與菱形的對角線特徵混用。"
+  },
+  "contentSha256": "fd7328863f98e55c5a940f01e086c91fe0dcc8a726052bc737bd725275ade209"
+}

@@ -1,0 +1,108 @@
+{
+  "auditVersion": "u04-final-human-audit-r1",
+  "unitId": "u04",
+  "reviewedAt": "2026-07-12",
+  "decision": "pass",
+  "manualInspection": {
+    "lectures": "All 14 lecture records inspected for definitions, undefined symbols, examples, edge cases, prerequisite bridge and scope.",
+    "multipleChoice": "All 168 prompts, four-option sets, stored answers, independent solutions and option analyses inspected.",
+    "constructedResponse": "All 28 prompts, standard solutions, alternative methods, question-specific rubrics and follow-through rules inspected.",
+    "notation": "Negative signs, parentheses, fractions, percentages, variables, units and boundary conditions inspected.",
+    "figures": "No figure records or SVG files exist by deliberate pedagogical decision."
+  },
+  "actualIssuesFoundAndRepaired": [
+    {
+      "id": "U04-AUDIT-001",
+      "location": "s002 MC advanced parameter sum",
+      "found": "The first draft stored a+b=8.",
+      "repair": "Independently solved a=3 and b=3, then corrected the answer to a+b=6 and rebuilt distractors."
+    },
+    {
+      "id": "U04-AUDIT-002",
+      "location": "s003 literacy logistics condition",
+      "found": "An early pair of equations and candidate values were inconsistent.",
+      "repair": "Re-authored the record as x+2y=14 and 3x+y=17 with candidate (4,5), then recomputed both equations."
+    },
+    {
+      "id": "U04-AUDIT-003",
+      "location": "s004 infinite-solution parameter item",
+      "found": "The early second-equation constant made infinite solutions impossible.",
+      "repair": "Changed the second equation to 2x+2y=2 so a=2 produces a true scalar multiple."
+    },
+    {
+      "id": "U04-AUDIT-004",
+      "location": "s006 scaled-elimination advanced item",
+      "found": "Earlier constants did not yield the intended exact solution.",
+      "repair": "Re-authored the system as 2x+5y=9 and 3x-4y=2, then verified x=2 and y=1."
+    },
+    {
+      "id": "U04-AUDIT-005",
+      "location": "s009 replacement-animal reasoning item",
+      "found": "The draft claimed 8 rabbits before replacement.",
+      "repair": "Recomputed the leg change and corrected the original rabbit count to 6."
+    },
+    {
+      "id": "U04-AUDIT-006",
+      "location": "s011 quantity-price advanced item",
+      "found": "The first total price 440 did not produce the intended integer solution.",
+      "repair": "Corrected the total to 360 and independently verified A=8, B=4."
+    },
+    {
+      "id": "U04-AUDIT-007",
+      "location": "s011 lecture examples",
+      "found": "Two draft totals were inconsistent with the displayed package counts.",
+      "repair": "Corrected 788 to 790 and 440 to 360, then rechecked both weighted totals."
+    },
+    {
+      "id": "U04-AUDIT-008",
+      "location": "s001 coefficient-restriction MC",
+      "found": "A distractor also set one coefficient to zero, creating a second correct answer.",
+      "repair": "Replaced it with a=2, b=1 and re-ran the unique-answer audit."
+    },
+    {
+      "id": "U04-AUDIT-009",
+      "location": "s014 MC distribution",
+      "found": "The first authored list contained four literacy records, producing 13 questions.",
+      "repair": "Removed the ticket-like duplicate context and retained three distinct literacy tasks, restoring exactly 12 items."
+    },
+    {
+      "id": "U04-AUDIT-010",
+      "location": "s004 and s006 MC wording",
+      "found": "Two prompts depended on the immediately preceding question through the phrase “承上題”.",
+      "repair": "Restated the complete systems and known values so every item is independently answerable."
+    },
+    {
+      "id": "U04-AUDIT-011",
+      "location": "unit-wide Traditional Chinese terminology",
+      "found": "OpenCC produced software-oriented or character-form words such as 型別、引數、報名錶 and 分割槽, and used 透過 where equations should “滿足” conditions.",
+      "repair": "Applied a post-conversion Taiwan school-language normalization and rechecked all affected records."
+    },
+    {
+      "id": "U04-AUDIT-012",
+      "location": "s003 advanced MC scope",
+      "found": "One draft used the difference-of-squares identity, which belongs to a later algebra unit and was unnecessary here.",
+      "repair": "Re-authored the item to solve the common ordered pair and evaluate 2a+3b using only current-unit methods."
+    },
+    {
+      "id": "U04-AUDIT-013",
+      "location": "s011 literacy MC",
+      "found": "The first promotion item only restored a discounted total and did not require a two-variable quantity-price model.",
+      "repair": "Changed the target to the number of A products, requiring discount restoration followed by a two-equation solve."
+    },
+    {
+      "id": "U04-AUDIT-014",
+      "location": "s001 constructed response notation",
+      "found": "The independent review used the unintroduced set-membership symbol ∈.",
+      "repair": "Replaced it with a complete Traditional Chinese sentence describing the excluded parameter values."
+    },
+    {
+      "id": "U04-AUDIT-015",
+      "location": "fraction-coefficient notation",
+      "found": "Expressions such as 1/2x could be misread as 1/(2x).",
+      "repair": "Standardized them to (1/2)x and (1/3)y throughout prompts, solutions and reviews."
+    }
+  ],
+  "unresolvedIssues": [],
+  "oldContentUsed": false,
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

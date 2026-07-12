@@ -1,0 +1,10 @@
+import path from "node:path";
+import fs from "node:fs";
+import { fileURLToPath } from "node:url";
+import { readJson,assert } from "./lib/common.mjs";
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
+const expected=readJson(path.join(root,"EXPECTED-RESULTS.json")),policy=readJson(path.join(root,"RETIREMENT-POLICY.json"));
+assert(expected.commitSubjects.length===3,"Expected 3 commits");
+assert(policy.deleteRoots.length===4&&policy.deleteFiles.length===13,"Retirement policy count changed");
+assert(policy.forbiddenActiveReferences.length>=10,"Reference rules incomplete");
+console.log(JSON.stringify({status:"PASS_TOOLING_SELF_TEST",deleteRootCount:policy.deleteRoots.length,deleteFileCount:policy.deleteFiles.length,commitCount:expected.commitSubjects.length,preRetirementTag:expected.preRetirementTag,finalReleaseTag:expected.finalReleaseTag,oldDatabaseDeletionAllowed:true},null,2));

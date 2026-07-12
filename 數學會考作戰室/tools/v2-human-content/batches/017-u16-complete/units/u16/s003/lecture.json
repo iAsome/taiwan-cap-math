@@ -1,0 +1,262 @@
+{
+  "lectureId": "u16-s003-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-congruence",
+  "skillId": "isosceles-equilateral",
+  "skillOrder": 3,
+  "originalLockedTitle": "等腰與等邊三角形",
+  "title": "等腰與等邊三角形：從邊的定義辨認圖形",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能依相等邊的數量辨認等腰三角形與等邊三角形。",
+    "能指出等腰三角形的底邊、腰、頂角與底角。",
+    "能理解等邊三角形是等腰三角形的特殊情形。",
+    "能由符號標記而非目測判斷相等邊。"
+  ],
+  "prerequisiteBridge": "先前已會用全等描述對應關係。本技能先從分類與名稱建立精確語言，下一步再證明等腰與等邊三角形的角度性質。",
+  "prerequisites": [
+    {
+      "skillId": "triangle-congruence-proof",
+      "requiredLevel": "能使用先備技能「全等證明」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "等腰三角形",
+      "definition": "至少有兩邊相等的三角形。"
+    },
+    {
+      "term": "腰",
+      "definition": "等腰三角形中兩條相等的邊。"
+    },
+    {
+      "term": "底邊",
+      "definition": "等腰三角形中與兩腰不同的第三邊。"
+    },
+    {
+      "term": "頂角",
+      "definition": "兩腰所夾的角。"
+    },
+    {
+      "term": "底角",
+      "definition": "底邊兩端的兩個角。"
+    },
+    {
+      "term": "等邊三角形",
+      "definition": "三邊都相等的三角形。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AB=AC",
+      "meaning": "△ABC 以 AB、AC 為腰，A 為頂點，BC 為底邊。"
+    },
+    {
+      "symbol": "AB=BC=CA",
+      "meaning": "△ABC 為等邊三角形。"
+    },
+    {
+      "symbol": "相同刻痕",
+      "meaning": "圖上具有相同數量短線的邊表示等長。"
+    }
+  ],
+  "conceptNarrative": [
+    "等腰三角形的名稱由邊長條件決定，不是由圖形是否對稱或是否『看起來像屋頂』決定。",
+    "若 AB=AC，兩腰在 A 相交，所以 A 是頂角頂點，BC 是底邊，B 與 C 的角是底角。",
+    "等邊三角形有三邊相等，因此任選兩邊都符合等腰定義；所以等邊三角形也是等腰三角形的特殊情形。",
+    "同一個等邊三角形可選不同底邊描述，但其三個角與三條邊地位完全相同。",
+    "題圖未必按比例繪製，必須依等號、數值或刻痕判斷。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等腰三角形",
+      "statement": "一個三角形若至少有兩邊等長，稱為等腰三角形。"
+    },
+    {
+      "name": "等邊三角形",
+      "statement": "一個三角形若三邊皆等長，稱為等邊三角形。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AB=AC ⇒ AB、AC 為腰，BC 為底邊",
+      "conditions": [
+        "△ABC 中已指定 AB=AC"
+      ],
+      "meaning": "由相等邊辨認各部分名稱。"
+    },
+    {
+      "formula": "AB=BC=CA ⇒ △ABC 也是等腰三角形",
+      "conditions": [
+        "採用『至少兩邊相等』定義"
+      ],
+      "meaning": "等邊是等腰的特殊類型。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只有兩角相等時可以推得等腰，但那是性質逆命題，需在下一技能正式使用。",
+    "一條邊垂直另一條邊不能判斷等腰。",
+    "圖形左右看似對稱但無等長資料時，不能直接判定。",
+    "三邊長為 2、2、4 雖有兩邊相等，但無法形成三角形，不能稱為等腰三角形。",
+    "『恰有兩邊相等』與『至少兩邊相等』定義不同；本課採國中常用的至少兩邊，因此包含等邊。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先確認三個長度能形成三角形。",
+      "check": "任兩邊和是否大於第三邊？"
+    },
+    {
+      "step": 2,
+      "instruction": "比較三邊長或刻痕。",
+      "check": "有兩邊相等還是三邊全相等？"
+    },
+    {
+      "step": 3,
+      "instruction": "找兩條相等邊的共同端點。",
+      "check": "該點就是頂角頂點。"
+    },
+    {
+      "step": 4,
+      "instruction": "找未被選為腰的第三邊。",
+      "check": "它是底邊，兩端角是底角。"
+    },
+    {
+      "step": 5,
+      "instruction": "遇到等邊時說明其特殊性。",
+      "check": "是否允許把它視為等腰？本課答案為可以。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "△ABC 中 AB=AC，指出腰、底邊、頂角與底角。",
+      "solutionSteps": [
+        "相等邊 AB、AC 為腰。",
+        "共同端點 A 為頂角頂點，BC 為底邊。"
+      ],
+      "answer": "腰 AB、AC；底邊 BC；頂角 ∠A；底角 ∠B、∠C。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "三邊長為 5、5、8 的三角形屬於哪一類？",
+      "solutionSteps": [
+        "5+5>8，可形成三角形。",
+        "有兩邊相等。"
+      ],
+      "answer": "等腰三角形。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "三邊長為 6、6、6 的三角形是否也是等腰三角形？",
+      "solutionSteps": [
+        "三邊全相等，所以是等邊。",
+        "任取兩邊也相等，符合至少兩邊相等。"
+      ],
+      "answer": "是，等邊三角形是等腰三角形的特殊情形。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "圖上 AB、BC 有相同刻痕，CA 無刻痕，哪一角是頂角？",
+      "solutionSteps": [
+        "相等邊 AB、BC 的共同端點是 B。",
+        "頂角位於兩腰交點。"
+      ],
+      "answer": "∠B。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把最上方的角固定叫頂角。",
+      "why": "受圖形方向影響。",
+      "correction": "頂角由兩腰共同端點決定，旋轉圖形也不變。"
+    },
+    {
+      "mistake": "把最長邊固定叫底邊。",
+      "why": "以外觀代替定義。",
+      "correction": "底邊是兩腰以外的第三邊，不必是最長。"
+    },
+    {
+      "mistake": "認為等邊三角形不是等腰。",
+      "why": "誤把等腰理解為恰好兩邊相等。",
+      "correction": "本課採至少兩邊相等，因此等邊包含在等腰內。"
+    },
+    {
+      "mistake": "只看圖形像不像等腰。",
+      "why": "忽略示意圖可能不按比例。",
+      "correction": "依等號、長度或相同刻痕判斷。"
+    },
+    {
+      "mistake": "忽略能否形成三角形。",
+      "why": "只比較相等邊。",
+      "correction": "長度資料還要先通過三角形不等式。"
+    },
+    {
+      "mistake": "把底角理解成接近紙面下方的角。",
+      "why": "受方向干擾。",
+      "correction": "底角是底邊兩端的角。"
+    }
+  ],
+  "selfCheck": [
+    "我能由相等邊共同端點找出頂角嗎？",
+    "我能指出底邊與兩個底角嗎？",
+    "我知道等邊三角形也符合等腰定義嗎？",
+    "我是否先確認邊長可形成三角形？",
+    "我是否避免用圖形方向判定名稱？"
+  ],
+  "summary": [
+    "等腰三角形至少有兩邊相等；等邊三角形三邊相等。",
+    "兩腰共同端點是頂角頂點，第三邊是底邊。",
+    "等邊三角形是等腰三角形的特殊情形。",
+    "分類必須依條件與標記，不依目測。"
+  ],
+  "connections": {
+    "previous": "全等證明提供後續證明等腰性質的工具。",
+    "next": [
+      "下一組技能會精確使用 SSS、SAS、ASA、AAS。",
+      "之後證明等腰三角形底角相等。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-003-isosceles-structure"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-003-isosceles-structure 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s003-v001",
+      "u16-s003-v002",
+      "u16-s003-v003",
+      "u16-s003-v004",
+      "u16-s003-v005",
+      "u16-s003-v006",
+      "u16-s003-v007",
+      "u16-s003-v008",
+      "u16-s003-v009",
+      "u16-s003-v010",
+      "u16-s003-v011",
+      "u16-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s003-cr001",
+      "u16-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「等腰與等邊三角形」逐段核對定義、適用條件與反例；重新演算4個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "0350a55e130fb9e49bd530dfbfab74b2f5be5fd94144c294db3aa33eb95383fe"
+}

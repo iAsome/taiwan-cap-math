@@ -1,0 +1,259 @@
+{
+  "lectureId": "u11-s007-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-square-root",
+  "skillId": "sqrt-rationalize-simple",
+  "lockedSkillOrder": 7,
+  "lockedTitle": "分母有理化基本",
+  "title": "分母有理化基本：用等值乘法移除根號",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明有理化是等值改寫",
+    "能處理a/√b與含係數單根式分母",
+    "能在有理化後繼續約分至最簡"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "sqrt-perfect-square",
+      "requiredLevel": "能使用前一技能「完全平方數平方根」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "有理數分母",
+      "definition": "分母不含無理根式。"
+    },
+    {
+      "term": "分母有理化",
+      "definition": "以等值乘法移除分母根式。"
+    },
+    {
+      "term": "等值分數",
+      "definition": "分子分母同乘非零數後值不變。"
+    },
+    {
+      "term": "約分",
+      "definition": "分子分母除以共同非零因數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "√b/√b=1",
+      "meaning": "b>0。"
+    },
+    {
+      "symbol": "a/√b=a√b/b",
+      "meaning": "b>0。"
+    },
+    {
+      "symbol": "a/(c√b)=a√b/(cb)",
+      "meaning": "b>0且c≠0。"
+    }
+  ],
+  "conceptNarrative": [
+    "有理化的本質是乘以1，不是只改分母。",
+    "分母√b同乘√b後成b，因√b×√b=b。",
+    "先化簡再有理化常能減少運算，例如√3/√6先約成1/√2。",
+    "有理化後若分子分母有公因數，仍要約分。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "單根式分母有理化",
+      "statement": "分母形如c√b時，同乘√b。"
+    },
+    {
+      "name": "最簡有理化形式",
+      "statement": "分母為有理數且整體已約分。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a/√b × √b/√b=a√b/b",
+      "conditions": [
+        "b>0。"
+      ],
+      "meaning": "同乘非零的1。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只把分母√b改成b而不改分子。",
+    "本技能不處理含兩項分母的共軛有理化。",
+    "分母為0時原式無意義。",
+    "得到有理分母後仍需檢查約分。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先化簡分子與分母。",
+      "check": "可能直接約去根式。"
+    },
+    {
+      "step": 2,
+      "instruction": "確認分母是單一根式。",
+      "check": "本技能只處理基本型。"
+    },
+    {
+      "step": 3,
+      "instruction": "選擇同乘的根式。",
+      "check": "通常與分母根式相同。"
+    },
+    {
+      "step": 4,
+      "instruction": "分子分母同步相乘。",
+      "check": "保持等值。"
+    },
+    {
+      "step": 5,
+      "instruction": "化簡與約分。",
+      "check": "確認分母無根號。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "有理化4/√7。",
+      "solutionSteps": [
+        "同乘√7。",
+        "分母成7。"
+      ],
+      "answer": "4√7/7。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "有理化9/(2√3)。",
+      "solutionSteps": [
+        "同乘√3。",
+        "得9√3/6再約分。"
+      ],
+      "answer": "3√3/2。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "化簡√5/√20。",
+      "solutionSteps": [
+        "√20=2√5。",
+        "直接約分。"
+      ],
+      "answer": "1/2。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "化簡1/√3+2/√3。",
+      "solutionSteps": [
+        "先合併分子。",
+        "3/√3=√3。"
+      ],
+      "answer": "√3。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "1/√2=1/2。",
+      "why": "只平方分母。",
+      "correction": "分子也要乘√2。"
+    },
+    {
+      "mistake": "3/√5=3√5。",
+      "why": "漏掉分母5。",
+      "correction": "應為3√5/5。"
+    },
+    {
+      "mistake": "有理化後7√7/21就停止。",
+      "why": "尚可約7。",
+      "correction": "化為√7/3。"
+    },
+    {
+      "mistake": "看到根式分母就一定先同乘。",
+      "why": "可能先化簡更快。",
+      "correction": "先檢查可否約分。"
+    },
+    {
+      "mistake": "同乘不同的根式使分母仍有根號。",
+      "why": "乘法因子選錯。",
+      "correction": "選能讓分母成平方的根式。"
+    },
+    {
+      "mistake": "把分母有理化當近似小數。",
+      "why": "有理化是精確等值改寫。",
+      "correction": "全程保留等號。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "同乘適當根式使分母成平方。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "先化簡分子與分母。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "1/√2=1/2。；修正：分子也要乘√2。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "最後還能約分嗎？"
+    }
+  ],
+  "summary": [
+    "同乘適當根式使分母成平方。",
+    "有理化後還要化簡與約分。"
+  ],
+  "connections": {
+    "previous": "需要 s003 的根式乘除與 s006 的平方。",
+    "next": [
+      "s008 將比較不同根式形式。",
+      "後續應用可使用更易計算的有理化結果。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s007-v001",
+      "u11-s007-v002",
+      "u11-s007-v003",
+      "u11-s007-v004",
+      "u11-s007-v005",
+      "u11-s007-v006",
+      "u11-s007-v007",
+      "u11-s007-v008",
+      "u11-s007-v009",
+      "u11-s007-v010",
+      "u11-s007-v011",
+      "u11-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s007-cr001",
+      "u11-s007-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「分母有理化基本」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「1/√2=1/2。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "b549e81df77f630ee747b055a113a947e9fcc2c3bab6b9f941db7d6e0f3dc930"
+}

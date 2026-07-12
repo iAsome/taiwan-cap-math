@@ -1,0 +1,271 @@
+{
+  "lectureId": "u21-s005-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-graphs",
+  "skillId": "quadratic-opening",
+  "lockedTitle": "開口方向",
+  "title": "看懂拋物線往哪裡開：最高次係數的符號",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-opening"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由一般式或頂點式找出二次項係數 a。",
+    "能依 a>0 或 a<0 判斷開口方向。",
+    "能由開口方向反推 a 的符號。",
+    "能避免把常數項或頂點高低誤當開口依據。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-graph-forms",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "先會在 y=ax² 圖形中辨認 a；本節擴充到 y=ax²+bx+c 與 y=a(x-h)²+k，開口仍只由 a 的正負決定。",
+  "glossary": [
+    {
+      "term": "最高次係數",
+      "definition": "整理後 x² 項前的係數 a。"
+    },
+    {
+      "term": "開口向上",
+      "definition": "曲線兩端向上延伸，頂點為最低點。"
+    },
+    {
+      "term": "開口向下",
+      "definition": "曲線兩端向下延伸，頂點為最高點。"
+    },
+    {
+      "term": "整體乘負數",
+      "definition": "所有函數值上下翻轉，開口方向改變。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a>0",
+      "meaning": "最高次係數為正，拋物線開口向上。"
+    },
+    {
+      "symbol": "a<0",
+      "meaning": "最高次係數為負，拋物線開口向下。"
+    },
+    {
+      "symbol": "a≠0",
+      "meaning": "維持二次函數身分。"
+    }
+  ],
+  "conceptNarrative": [
+    "當 |x| 很大時，x² 項對 y 的影響最明顯，因此曲線兩端的方向由 a 的符號控制。",
+    "常數項只把圖形上下移動，一次項會改變對稱軸位置，但都不會取代 a 對開口方向的控制。",
+    "在頂點式 y=a(x-h)²+k 中，平方部分永遠非負；a 為正時離頂點後 y 增加，a 為負時離頂點後 y 減少。",
+    "判斷前要先整理。例如 y=2x²-(5x²-1)=-3x²+1，真正的 a 是 -3。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "開口方向判準",
+      "statement": "二次函數整理後 y=ax²+bx+c，若 a>0 則向上；若 a<0 則向下。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "sign(a)→開口方向",
+      "conditions": [
+        "先整理成標準多項式或辨認頂點式外係數"
+      ],
+      "meaning": "只看 a 的正負，不看 b、c、h、k 的正負。"
+    }
+  ],
+  "nonApplicableCases": [
+    "a=0 時不是拋物線，不能談二次函數開口。",
+    "不能用頂點 y 座標正負判斷開口；頂點在負值也可能向上。",
+    "不能用圖在某一小段上升或下降判斷整體開口。",
+    "式子未整理時，不能只看第一個出現的 x² 項。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "展開括號並合併 x² 同類項。",
+      "check": "真正的二次項係數是多少？"
+    },
+    {
+      "step": 2,
+      "instruction": "確認 a 不為 0。",
+      "check": "若為 0，題目已不是二次函數。"
+    },
+    {
+      "step": 3,
+      "instruction": "只判斷 a 的正負。",
+      "check": "正向上、負向下。"
+    },
+    {
+      "step": 4,
+      "instruction": "用頂點附近兩點驗證。",
+      "check": "離開頂點後 y 是增加還是減少？"
+    },
+    {
+      "step": 5,
+      "instruction": "排除常數項幹擾。",
+      "check": "是否錯把圖形位置當方向？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 y=-4x²+7x-1 的開口。",
+      "solutionSteps": [
+        "x² 係數 a=-4。",
+        "a<0。"
+      ],
+      "answer": "開口向下。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "判斷 y=3(x+2)²-5 的開口。",
+      "solutionSteps": [
+        "平方項外係數 a=3。",
+        "a>0。"
+      ],
+      "answer": "開口向上。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "整理 y=5x²-(8x²+2x) 後判斷開口。",
+      "solutionSteps": [
+        "合併二次項得 -3x²-2x。",
+        "a=-3<0。"
+      ],
+      "answer": "開口向下。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某拋物線頂點為 (1,-9) 且開口向上，a 的符號？",
+      "solutionSteps": [
+        "開口向上直接對應 a>0。",
+        "頂點 y=-9 不影響符號。"
+      ],
+      "answer": "a>0。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "y=-(x-6)²+20 為何有最大值？",
+      "solutionSteps": [
+        "a=-1<0，開口向下。",
+        "頂點是最高點。"
+      ],
+      "answer": "因開口向下，最大值在頂點。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "直接讀取 a 的符號。",
+    "standard": "先展開或合併同類項。",
+    "advanced": "結合開口、頂點與參數條件反推係數。",
+    "literacy": "判斷拋物線模型描述的是有最高點還是最低點的情境。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "看常數項正負判斷方向。",
+      "why": "把 y 截距當最高次係數。",
+      "correction": "圈出 x² 項前的 a。"
+    },
+    {
+      "mistake": "頂點在上方就認為向下。",
+      "why": "把位置與方向混為一談。",
+      "correction": "位置看 k，方向看 a。"
+    },
+    {
+      "mistake": "頂點式看括號內正負。",
+      "why": "把 h 的符號誤當 a。",
+      "correction": "a 是整個平方項外的乘數。"
+    },
+    {
+      "mistake": "未合併兩個 x² 項。",
+      "why": "太早讀係數。",
+      "correction": "先整理完整式子。"
+    },
+    {
+      "mistake": "a=0 仍判方向。",
+      "why": "忘記二次函數條件。",
+      "correction": "先檢查 a≠0。"
+    },
+    {
+      "mistake": "只看曲線某段斜率。",
+      "why": "把局部上升下降當開口。",
+      "correction": "觀察兩端與頂點，或直接用 a。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "y=0.2(x-1)²-8 的開口？",
+      "answer": "向上。"
+    },
+    {
+      "prompt": "y=-x²-100 的開口？",
+      "answer": "向下。"
+    },
+    {
+      "prompt": "y=4x²-7x²+1 的開口？",
+      "answer": "向下。"
+    },
+    {
+      "prompt": "開口向下時 a 的條件？",
+      "answer": "a<0。"
+    }
+  ],
+  "summary": [
+    "開口方向只由整理後的 x² 係數 a 決定。",
+    "a>0 向上，a<0 向下。",
+    "b、c、h、k 會改變位置，但不改變方向判準。",
+    "未整理或 a=0 時不可直接套用。"
+  ],
+  "connections": {
+    "previous": "從多種表徵中辨認二次項與圖形。",
+    "next": [
+      "下一技能會求對稱軸的位置。",
+      "最大最小值會用開口方向判斷頂點角色。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s005-01"
+  ],
+  "accessibilityNotes": [
+    "向上與向下曲線分列呈現，並在旁直接寫 a>0、a<0。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s005-v001",
+      "u21-s005-v002",
+      "u21-s005-v003",
+      "u21-s005-v004",
+      "u21-s005-v005",
+      "u21-s005-v006",
+      "u21-s005-v007",
+      "u21-s005-v008",
+      "u21-s005-v009",
+      "u21-s005-v010",
+      "u21-s005-v011",
+      "u21-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s005-cr001",
+      "u21-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐式合併二次項，確認 5x²-(8x²+2x) 的係數為 -3；另檢查頂點位置與開口方向的敘述完全分離。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "0fd81ec2986bea946a591688976e563208746901467e8cc523ad21b6550699db"
+}

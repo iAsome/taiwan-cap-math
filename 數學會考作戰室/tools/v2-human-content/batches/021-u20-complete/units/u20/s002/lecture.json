@@ -1,0 +1,193 @@
+{
+  "lectureId": "u20-s002-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-proof",
+  "skillId": "geometry-proof-steps",
+  "skillSlot": "s002",
+  "lockedSkillTitle": "證明步驟",
+  "title": "證明步驟：安排有依賴關係的推理鏈",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把散亂敘述排成合理順序。",
+    "能建立必要的中間結果。",
+    "能檢查某一步是否在使用尚未成立的性質。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "geometry-proof-basic",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「geometry-proof-basic」再進入本節。",
+  "glossary": [
+    {
+      "term": "推理鏈",
+      "definition": "前一步提供後一步所需條件的有序敘述。"
+    },
+    {
+      "term": "中間結果",
+      "definition": "不是題目直接給、也不是最後結論，但用來連接兩者的敘述。"
+    },
+    {
+      "term": "依賴順序",
+      "definition": "理由與條件必須先成立，才能使用其結果。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "A→B",
+      "meaning": "在條件A成立下可推出B，不表示B一定能反推A。"
+    },
+    {
+      "symbol": "SAS",
+      "meaning": "兩邊及其夾角對應相等的三角形全等判定。"
+    }
+  ],
+  "conceptNarrative": [
+    "同一組句子若順序錯誤，會把性質提前使用。例如要用『全等三角形對應角相等』，必須先證明全等。",
+    "好步驟不一定很多，但每一步都有任務：翻譯定義、建立全等、取得對應關係或完成判定。",
+    "規劃時可以由結論向後想需要什麼，但正式書寫仍要從已知向前呈現。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "前向書寫",
+      "statement": "正式證明依照已知先、推論後的順序呈現。"
+    },
+    {
+      "name": "逆向規劃",
+      "statement": "思考時可從結論問『需要什麼』，但不得把尚未成立的結論當作證據。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "條件整理 → 中間結論 → 目標性質",
+      "conditions": [
+        "中間結論對目標有實際用途",
+        "每項性質在使用前已建立"
+      ],
+      "meaning": "多步證明的常見結構。"
+    }
+  ],
+  "nonApplicableCases": [
+    "步驟順序不能只依句子在題目中出現的先後。",
+    "全等後性質不能放在全等判定之前。",
+    "逆向規劃的假想需求不能直接當成正式已知。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出結論所需的最後一個理由。",
+      "check": "例如要證平行，是用同位角還是內錯角判定？"
+    },
+    {
+      "step": 2,
+      "instruction": "向後找出該理由需要的條件。",
+      "check": "這些條件能由已知或較早步驟得到嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "把規劃結果反轉成前向證明。",
+      "check": "是否所有使用都晚於建立？"
+    },
+    {
+      "step": 4,
+      "instruction": "刪除重複句與無關計算。",
+      "check": "每一步是否對下一步有作用？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "D是BC中點，AD⊥BC，證△ADB≅△ADC。",
+      "solutionSteps": [
+        "中點得DB＝DC。",
+        "公共邊AD＝AD。",
+        "兩夾角皆90°。",
+        "用SAS。"
+      ],
+      "answer": "△ADB≅△ADC。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "已證兩三角形全等，下一步要證兩線平行。",
+      "solutionSteps": [
+        "先取一對對應角相等。",
+        "確認該角對為同位角或內錯角。",
+        "用平行線判定。"
+      ],
+      "answer": "全等必須先於對應角與平行判定。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把全等結論放在條件之前。",
+      "why": "尚未滿足判定。",
+      "correction": "先列足夠的邊角條件。"
+    },
+    {
+      "mistake": "寫出中間結果卻沒有使用。",
+      "why": "證明出現無關支線。",
+      "correction": "確認它能連到下一步。"
+    },
+    {
+      "mistake": "最後只重複待證句。",
+      "why": "沒有提供最後判定。",
+      "correction": "明寫角型、全等後性質或定義。"
+    }
+  ],
+  "selfCheck": [
+    "我的步驟是否有先後依賴？",
+    "全等後性質是否在全等之後？",
+    "最後一步使用的判定條件是否完整？",
+    "是否有不影響結論的多餘步驟？"
+  ],
+  "summary": [
+    "思考可逆向，書寫要前向。",
+    "中間結果負責連接已知與結論。",
+    "任何性質都必須在成立後才能使用。"
+  ],
+  "connections": {
+    "previous": "先備：geometry-proof-basic",
+    "next": [
+      "下一技能會練習為每一步選擇精確理由。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s002-v001",
+      "u20-s002-v002",
+      "u20-s002-v003",
+      "u20-s002-v004",
+      "u20-s002-v005",
+      "u20-s002-v006",
+      "u20-s002-v007",
+      "u20-s002-v008",
+      "u20-s002-v009",
+      "u20-s002-v010",
+      "u20-s002-v011",
+      "u20-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s002-cr001",
+      "u20-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "講義以依賴圖為核心，刻意區分規劃方向與正式證明方向。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "30db290a1fc5adcf82dd060d6ebb877455093d1267a66264e0fbd8ebbfd9ac48"
+}

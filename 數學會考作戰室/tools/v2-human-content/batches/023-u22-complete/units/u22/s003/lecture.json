@@ -1,0 +1,224 @@
+{
+  "lectureId": "u22-s003-lecture-r1",
+  "unitId": "u22",
+  "numericUnitId": 22,
+  "topicId": "u22-quartiles",
+  "skillId": "box-plot-interpret",
+  "lockedSkillOrder": 3,
+  "title": "盒狀圖判讀：由盒狀圖讀出位置與集中程度與分散情形。",
+  "originalLockedTitle": "盒狀圖判讀",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由箱體讀取中間約50%的範圍。",
+    "能用中位數比較中心位置。",
+    "能用箱寬、鬚長描述局部分散。",
+    "能避免由盒狀圖推論平均數、筆數或每個個體。"
+  ],
+  "prerequisiteSkillIds": [
+    "box-plot"
+  ],
+  "prerequisiteBridge": "承接盒狀圖構件與五數摘要。",
+  "glossary": [
+    {
+      "term": "位置比例",
+      "definition": "依排序位置約分成25%、50%、75%的描述。"
+    },
+    {
+      "term": "分布重疊",
+      "definition": "兩組數值範圍或箱體交錯。"
+    },
+    {
+      "term": "長尾",
+      "definition": "某側位置跨度明顯較長。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "Q1到Q3",
+      "meaning": "中間約50%的位置。"
+    },
+    {
+      "symbol": "min到max",
+      "meaning": "全部觀測的端點跨度。"
+    }
+  ],
+  "conceptNarrative": [
+    "盒狀圖的每個四分位區段約含相同比例資料，但圖上長度可以很不同。",
+    "中位數線靠近Q1，表示Q1到中位數這四分之一位置較集中，不表示該區筆數較少。",
+    "長鬚代表該外側四分之一的數值跨度大；可能有偏態或極端端點，但不能單憑圖判定原因。",
+    "兩圖中位數高低可比較中心位置，不能保證某組每一筆都較高。",
+    "標準盒狀圖通常看不到平均數、眾數、樣本數與每筆資料。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "有限推論",
+      "statement": "只陳述圖形直接支持的中心、位置與分散結論。"
+    },
+    {
+      "name": "過度推論",
+      "statement": "把群體摘要改寫成個體必然或因果原因。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "IQR=箱寬",
+      "conditions": [
+        "判斷中間50%集中程度。"
+      ],
+      "meaning": "判斷中間50%集中程度。"
+    },
+    {
+      "formula": "全距=兩鬚端點差",
+      "conditions": [
+        "判斷整體跨度。"
+      ],
+      "meaning": "判斷整體跨度。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能由中位數較高推出平均數一定較高。",
+    "不能由箱體不重疊推出所有資料不重疊。",
+    "不能把長鬚直接命名為資料錯誤。",
+    "不能由盒狀圖判定樣本數大小。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先確認同尺度",
+      "check": "不同單位或刻度先換算。"
+    },
+    {
+      "step": 2,
+      "instruction": "讀中心",
+      "check": "比較中位數。"
+    },
+    {
+      "step": 3,
+      "instruction": "讀中段",
+      "check": "比較箱體位置與寬度。"
+    },
+    {
+      "step": 4,
+      "instruction": "讀尾端",
+      "check": "比較鬚線與端點。"
+    },
+    {
+      "step": 5,
+      "instruction": "限制語句",
+      "check": "使用「中位數較高」「中段較分散」等精確表述。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "五數4、8、10、13、25",
+      "solutionSteps": [
+        "右鬚12大於左鬚4，高端位置較分散。"
+      ],
+      "answer": "右鬚12大於左鬚4，高端位置較分散。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩組中位數20與24",
+      "solutionSteps": [
+        "只能說第二組中位位置較高。"
+      ],
+      "answer": "只能說第二組中位位置較高。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "相同Q1、Q2、Q3但端點不同",
+      "solutionSteps": [
+        "IQR相同，全距可不同。"
+      ],
+      "answer": "IQR相同，全距可不同。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "說「75%資料高於Q3」",
+      "why": "方向顛倒；約75%不高於Q3。",
+      "correction": "方向顛倒；約75%不高於Q3。"
+    },
+    {
+      "mistake": "說「箱寬大表示人較多」",
+      "why": "箱寬是數值跨度。",
+      "correction": "箱寬是數值跨度。"
+    },
+    {
+      "mistake": "用圖形像不像對稱直接下定論",
+      "why": "先計算各段長度。",
+      "correction": "先計算各段長度。"
+    },
+    {
+      "mistake": "忽略圖的刻度",
+      "why": "視覺寬度必須換成實際數值。",
+      "correction": "視覺寬度必須換成實際數值。"
+    }
+  ],
+  "selfCheck": [
+    "結論是否只用圖中資訊？",
+    "是否把約略位置比例說成嚴格筆數？",
+    "是否誤提平均數或樣本數？",
+    "兩圖是否同單位同刻度？"
+  ],
+  "summary": [
+    "中位數看中心，IQR看中段，全距看端點。",
+    "每段寬度表示數值跨度，不表示資料筆數。",
+    "圖形支持群體摘要，不保證個體關係。",
+    "遇重疊分布應使用保守語句。"
+  ],
+  "connections": {
+    "previous": "承接盒狀圖構件與五數摘要。",
+    "next": [
+      "下一技能回到排序位置，精確定位四分位數。",
+      "後續比較兩盒狀圖時會同時使用中心與分散。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u22-boxplot-compare"
+  ],
+  "figureAccessibility": [
+    {
+      "figureId": "fig-u22-boxplot-compare",
+      "altText": "同一數軸上的甲乙兩個水平盒狀圖。甲五數4、10、15、18、24；乙五數6、9、15、22、25。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u22-s003-v001",
+      "u22-s003-v002",
+      "u22-s003-v003",
+      "u22-s003-v004",
+      "u22-s003-v005",
+      "u22-s003-v006",
+      "u22-s003-v007",
+      "u22-s003-v008",
+      "u22-s003-v009",
+      "u22-s003-v010",
+      "u22-s003-v011",
+      "u22-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u22-s003-cr001",
+      "u22-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "skillSpecificReviewEvidence": "逐句檢查所有可推與不可推結論；用五數4、8、10、13、25重算左右鬚，確認右側跨度12而非以視覺猜測。",
+    "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+    "contentBoundary": "由盒狀圖讀出位置、集中程度與分散情形。",
+    "reviewVersion": "human-lecture-review-u22-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "c91ed4268cf52de7d9d6618c9f81e781762ef8abf2511b8c2c8e985d5e9215b7"
+}

@@ -1,0 +1,272 @@
+{
+  "lectureId": "u16-s012-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-properties",
+  "skillId": "triangle-inequality",
+  "skillOrder": 12,
+  "originalLockedTitle": "三角形邊長關係",
+  "title": "三角形邊長關係：任兩邊和大於第三邊",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能判斷三個正長度是否可形成三角形。",
+    "能由已知兩邊求第三邊的整數或實數範圍。",
+    "能理解最長邊只需與另外兩邊和比較的快速判斷。",
+    "能把繞路比直達長轉成三角形不等式的生活情境。"
+  ],
+  "prerequisiteBridge": "尺規作圖中，兩個圓能否相交取決於半徑與圓心距離；同樣地，三條線段能否首尾相接形成三角形，受任兩邊和與第三邊的嚴格不等式限制。",
+  "prerequisites": [
+    {
+      "skillId": "construction-word-steps",
+      "requiredLevel": "能使用先備技能「作圖步驟文字題」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "三角形不等式",
+      "definition": "三角形任兩邊長之和大於第三邊長。"
+    },
+    {
+      "term": "退化三角形",
+      "definition": "任兩邊和等於第三邊，三點落在一直線上，不算一般三角形。"
+    },
+    {
+      "term": "最長邊",
+      "definition": "三邊中長度最大者；判斷可成三角形時只需確認其小於另兩邊和。"
+    },
+    {
+      "term": "第三邊範圍",
+      "definition": "若兩邊為 a、b，第三邊 x 必須滿足 |a−b|<x<a+b。"
+    },
+    {
+      "term": "嚴格不等號",
+      "definition": "使用 < 或 >，端點等號不包含。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a+b>c",
+      "meaning": "兩邊 a、b 合起來必須長於第三邊 c。"
+    },
+    {
+      "symbol": "|a−b|<x<a+b",
+      "meaning": "第三邊 x 大於兩邊差的絕對值且小於兩邊和。"
+    },
+    {
+      "symbol": "x∈(m,n)",
+      "meaning": "此課可用文字『m<x<n』表示，不要求區間符號。"
+    }
+  ],
+  "conceptNarrative": [
+    "從一個頂點沿兩邊走到另一頂點，是折線路徑；直達的第三邊最短，所以兩邊和必須大於第三邊。",
+    "若兩邊和剛好等於第三邊，三條線段只能拉成一直線，沒有面積，不能算三角形。",
+    "三個正長度中，只需把最長邊拿出來，檢查另外兩邊和是否大於它；其餘兩個不等式自動成立。",
+    "已知兩邊 a、b，第三邊 x 除了小於 a+b，也要大於 |a−b|。後者由 a<x+b 與 b<x+a 整理而來。",
+    "若 x 要求正整數，先求開區間，再只列落在範圍內的正整數，不能包含端點。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "三角形不等式",
+      "statement": "任一三角形三邊 a、b、c 均滿足 a+b>c、b+c>a、c+a>b。"
+    },
+    {
+      "name": "第三邊範圍",
+      "statement": "固定兩邊 a、b 時，第三邊 x 滿足 |a−b|<x<a+b。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "最短兩邊和>最長邊",
+      "conditions": [
+        "三個長度皆為正數"
+      ],
+      "meaning": "快速判斷能否形成三角形。"
+    },
+    {
+      "formula": "|a−b|<x<a+b",
+      "conditions": [
+        "a>0、b>0、x>0"
+      ],
+      "meaning": "第三邊完整範圍。"
+    }
+  ],
+  "nonApplicableCases": [
+    "任兩邊和等於第三邊時是退化情形，不列入三角形。",
+    "長度為 0 或負數不是合法邊長。",
+    "只檢查 x<a+b 而漏掉 x>|a−b|，可能把太短的第三邊納入。",
+    "題目要求整數邊長時，不能把所有實數都列為答案。",
+    "三角形不等式比較的是同一單位下的長度，公分與公尺需先換算。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認三個量都是正長度並統一單位。",
+      "check": "是否有 0、負值或不同單位？"
+    },
+    {
+      "step": 2,
+      "instruction": "若三邊已知，找出最長邊。",
+      "check": "另外兩邊和是否嚴格大於它？"
+    },
+    {
+      "step": 3,
+      "instruction": "若求第三邊 x，先算兩已知邊差與和。",
+      "check": "差要取絕對值嗎？"
+    },
+    {
+      "step": 4,
+      "instruction": "寫成 |a−b|<x<a+b。",
+      "check": "兩端是否使用嚴格不等號？"
+    },
+    {
+      "step": 5,
+      "instruction": "依整數、偶數或其他限制篩選。",
+      "check": "端點是否被誤納入？"
+    },
+    {
+      "step": 6,
+      "instruction": "用原三邊逐一驗算。",
+      "check": "最短兩邊和是否大於最長邊？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "長度 4、7、10 能形成三角形嗎？",
+      "solutionSteps": [
+        "最長邊為 10。",
+        "4+7=11>10。"
+      ],
+      "answer": "可以。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "長度 3、5、8 能形成三角形嗎？",
+      "solutionSteps": [
+        "最長邊為 8。",
+        "3+5=8，不是大於 8。"
+      ],
+      "answer": "不可以，為退化情形。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩邊長 6、11，求第三邊 x 的範圍。",
+      "solutionSteps": [
+        "差為 |11−6|=5。",
+        "和為 17。"
+      ],
+      "answer": "5<x<17。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩邊長 5、9，第三邊為正整數，共有幾種？",
+      "solutionSteps": [
+        "4<x<14。",
+        "整數為 5、6、7、8、9、10、11、12、13。"
+      ],
+      "answer": "9 種。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "A 到 C 直線距離 12 公里，經 B 的路程 AB+BC 可能為 12 公里嗎？三點不共線。",
+      "solutionSteps": [
+        "非共線三點形成三角形。",
+        "繞行兩邊和必須大於直達邊。"
+      ],
+      "answer": "不可能等於 12 公里，必須大於 12 公里。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把條件寫成兩邊和大於或等於第三邊。",
+      "why": "把退化直線也算入。",
+      "correction": "一般三角形必須嚴格大於。"
+    },
+    {
+      "mistake": "只比較最大兩邊。",
+      "why": "未找最危險的不等式。",
+      "correction": "應比較最短兩邊之和與最長邊。"
+    },
+    {
+      "mistake": "第三邊只設 x<a+b。",
+      "why": "漏掉下界。",
+      "correction": "同時寫 x>|a−b|。"
+    },
+    {
+      "mistake": "差直接寫 a−b 造成負數。",
+      "why": "未處理兩邊大小順序。",
+      "correction": "使用絕對值 |a−b|。"
+    },
+    {
+      "mistake": "把範圍端點列入整數答案。",
+      "why": "忽略嚴格不等號。",
+      "correction": "端點等號都不能取。"
+    },
+    {
+      "mistake": "未統一單位。",
+      "why": "直接把公尺與公分相加。",
+      "correction": "先轉成同一長度單位再比較。"
+    }
+  ],
+  "selfCheck": [
+    "三個邊長是否都是正數且同單位？",
+    "我找的是最長邊嗎？",
+    "是否使用嚴格大於而非大於等於？",
+    "第三邊下界是否為絕對差？",
+    "整數篩選有排除兩端點嗎？"
+  ],
+  "summary": [
+    "三角形任兩邊和嚴格大於第三邊。",
+    "判斷三邊時可檢查最短兩邊和是否大於最長邊。",
+    "第三邊範圍為 |a−b|<x<a+b。",
+    "等號代表退化直線，不算一般三角形。"
+  ],
+  "connections": {
+    "previous": "兩圓弧是否相交提供邊長可行性的幾何直覺。",
+    "next": [
+      "外角定理將由三角形內角和建立。",
+      "邊角關係會把邊長大小與對角大小連結。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-012-triangle-inequality"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-012-triangle-inequality 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s012-v001",
+      "u16-s012-v002",
+      "u16-s012-v003",
+      "u16-s012-v004",
+      "u16-s012-v005",
+      "u16-s012-v006",
+      "u16-s012-v007",
+      "u16-s012-v008",
+      "u16-s012-v009",
+      "u16-s012-v010",
+      "u16-s012-v011",
+      "u16-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s012-cr001",
+      "u16-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「三角形邊長關係」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "b0d823dfdcd8357b00993464f6a4b76630a4b2d9595dbbb08b28df2c6a7e7a57"
+}

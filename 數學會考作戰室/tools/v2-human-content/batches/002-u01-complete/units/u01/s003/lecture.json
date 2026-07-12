@@ -1,0 +1,252 @@
+{
+  "lectureId": "u01-s003-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-basics",
+  "skillId": "integer-number-line-position",
+  "title": "數線位置：從原點與方向和刻度讀出坐標",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認原點、正方向與刻度單位。",
+    "能由點的位置讀出整數坐標。",
+    "能由坐標在數線上定位。",
+    "能處理每格不等於 1 的數線。",
+    "能計算移動後的位置。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-positive-negative-meaning",
+      "requiredLevel": "能依基準判斷正方向與負方向，理解正數、負數和 0 的相對位置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "數線",
+      "definition": "用一直線上的位置表示數的圖。"
+    },
+    {
+      "term": "原點",
+      "definition": "坐標為 0 的基準點。"
+    },
+    {
+      "term": "正方向",
+      "definition": "通常以箭頭指向右方，數值沿此方向增加。"
+    },
+    {
+      "term": "坐標",
+      "definition": "表示某點在數線上位置的數。"
+    },
+    {
+      "term": "刻度單位",
+      "definition": "相鄰兩個刻度所代表的數值差。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "常用來表示原點。"
+    },
+    {
+      "symbol": "A(a)",
+      "meaning": "點 A 的坐標是 a。"
+    },
+    {
+      "symbol": "→",
+      "meaning": "數線的正方向或移動方向。"
+    }
+  ],
+  "conceptNarrative": [
+    "數線把正負數變成可見的位置。通常越往右數值越大，越往左數值越小。",
+    "讀點前不能只數格子，必須先找兩個已標數字來判斷每格代表多少。",
+    "坐標同時包含方向和距離：原點左側 4 單位是 -4，不是 4。",
+    "移動問題使用「新坐標＝原坐標＋帶號移動量」；向右為正、向左為負，但仍以題目箭頭為準。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "數線坐標",
+      "statement": "原點坐標為 0；沿正方向每增加一個刻度單位，坐標增加相同數值。"
+    },
+    {
+      "name": "位置唯一性",
+      "statement": "在固定數線上，每一個數對應唯一位置，每一個標定位置也有唯一坐標。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "新坐標＝原坐標＋移動量",
+      "conditions": [
+        "向右移記正，向左移記負",
+        "移動量與刻度使用相同單位"
+      ],
+      "meaning": "求移動後的位置。"
+    },
+    {
+      "formula": "每格單位＝兩個已知刻度的數值差÷間隔格數",
+      "conditions": [
+        "已知刻度位於同一數線"
+      ],
+      "meaning": "判斷非單位刻度。"
+    }
+  ],
+  "nonApplicableCases": [
+    "若箭頭方向或數值標示顯示右方不是正方向，不能套用左負右正。",
+    "每格代表 2 時，走三格是 6 個單位，不是 3。",
+    "點在兩刻度中間時，若未說明中間刻度，不得自行估讀。",
+    "坐標和從原點的距離不同；-5 的坐標是 -5，距離是 5。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找原點與正方向。",
+      "check": "0 在哪裡？箭頭朝哪邊？"
+    },
+    {
+      "step": 2,
+      "instruction": "求每格代表多少。",
+      "check": "相鄰已標數字的差是多少？"
+    },
+    {
+      "step": 3,
+      "instruction": "從已知刻度數到目標點。",
+      "check": "向右加、向左減是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "寫出帶正負號的坐標。",
+      "check": "左側點是否漏了負號？"
+    },
+    {
+      "step": 5,
+      "instruction": "把坐標放回圖上檢查。",
+      "check": "結果位置是否與圖一致？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "數線每格 1，A 在原點左邊 5 格。A 的坐標？",
+      "solutionSteps": [
+        "原點是 0。",
+        "向左每格減 1。",
+        "0 向左五格到 -5。"
+      ],
+      "answer": "-5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "數線上 -4 與 2 相隔三格，每格代表多少？",
+      "solutionSteps": [
+        "數值差為 2－(-4)=6。",
+        "共有三格。",
+        "6÷3=2。"
+      ],
+      "answer": "每格 2。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "B 從 -3 向右移 7 單位，終點坐標？",
+      "solutionSteps": [
+        "向右記 +7。",
+        "新坐標=-3+7。",
+        "結果為 4。"
+      ],
+      "answer": "4。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "C 在坐標 6，向左移 9 單位。",
+      "solutionSteps": [
+        "向左記 -9。",
+        "6+(-9)=-3。",
+        "終點在原點左側 3 單位。"
+      ],
+      "answer": "-3。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只數格數，沒有確認每格單位。",
+      "why": "把圖形間距當成數值。",
+      "correction": "先用已知刻度求每格大小。"
+    },
+    {
+      "mistake": "原點左側寫成正數。",
+      "why": "只記距離不記方向。",
+      "correction": "左側通常為負坐標。"
+    },
+    {
+      "mistake": "向左移 4 卻加 4。",
+      "why": "移動方向的符號判斷錯誤。",
+      "correction": "向左移動量記 -4。"
+    },
+    {
+      "mistake": "把 -6 的距離和坐標都寫成 6。",
+      "why": "混淆位置與距離。",
+      "correction": "坐標 -6，離原點距離 6。"
+    },
+    {
+      "mistake": "忽略題目另定正方向。",
+      "why": "死背右正左負。",
+      "correction": "以圖上箭頭與數值標示為準。"
+    },
+    {
+      "mistake": "跨過 0 時停止計數。",
+      "why": "誤把 0 當成不能跨越的端點。",
+      "correction": "數線可連續跨過 0。"
+    }
+  ],
+  "selfCheck": [
+    "我找到 0 了嗎？",
+    "每格是多少？",
+    "方向符號正確嗎？",
+    "坐標和距離有分開嗎？",
+    "將答案放回圖上合理嗎？"
+  ],
+  "summary": [
+    "原點是 0，通常向右增加、向左減少。",
+    "讀點必須先確認刻度單位。",
+    "新坐標＝原坐標＋帶號移動量。",
+    "坐標可為負，距離不可為負。"
+  ],
+  "connections": {
+    "previous": "先備技能是正負數的意義，需能把左右方向轉成正負。",
+    "next": [
+      "數的大小比較可直接利用數線左右位置。",
+      "相反數與絕對值會使用關於原點的對稱與距離。",
+      "整數加法可解釋成數線上的連續移動。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s003-v001",
+      "u01-s003-v002",
+      "u01-s003-v003",
+      "u01-s003-v004",
+      "u01-s003-v005",
+      "u01-s003-v006",
+      "u01-s003-v007",
+      "u01-s003-v008",
+      "u01-s003-v009",
+      "u01-s003-v010",
+      "u01-s003-v011",
+      "u01-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s003-cr001",
+      "u01-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一重畫數線刻度，核對每格單位、左右移動和中點位置；四個例題的坐標均由刻度重新讀取。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "a220caa78add28dd6f08478b88a9ad6ae9d6bc6f5a9641b96ab2b0b4071c2072",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

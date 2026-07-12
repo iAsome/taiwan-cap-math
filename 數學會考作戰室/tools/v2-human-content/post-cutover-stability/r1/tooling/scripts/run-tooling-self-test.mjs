@@ -1,0 +1,11 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { readJson, assert } from "./lib/common.mjs";
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
+const expected=readJson(path.join(root,"EXPECTED-RESULTS.json"));
+const repairs=readJson(path.join(root,"PRODUCTION-TEXT-REPAIRS.json"));
+assert(repairs.files.length===3,"Expected 3 repair files");
+assert(repairs.files.reduce((sum,file)=>sum+file.replacements.length,0)===35,"Repair operation count changed");
+assert(repairs.forbiddenVisibleFragments.length>=20,"Forbidden visible list too small");
+console.log(JSON.stringify({status:"PASS_TOOLING_SELF_TEST",repairFileCount:3,repairOperationCount:35,requiredHead:expected.requiredStartingHead,nextAuthorizedStage:expected.nextAuthorizedStage,productionActivated:true,oldDatabaseDeletionAllowed:false},null,2));

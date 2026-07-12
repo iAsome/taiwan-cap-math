@@ -1,0 +1,192 @@
+{
+  "lectureId": "u10-s010-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-formulas",
+  "skillId": "square-difference-formula",
+  "lockedTitle": "差的平方公式",
+  "title": "差的平方公式：負號只使中間項為負",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能由 (a-b)(a-b) 推導公式。",
+    "能避免把 b² 誤寫成負。",
+    "能用公式計算與解釋邊長縮減的面積。"
+  ],
+  "prerequisites": [
+    "square-sum-formula"
+  ],
+  "prerequisiteBridge": "先備技能 square-sum-formula 已建立下一步所需概念；本節專注於理解並運用 (a-b)^2=a^2-2ab+b^2。",
+  "glossary": [
+    {
+      "term": "差的平方",
+      "definition": "兩數差或兩式差的整體平方。"
+    },
+    {
+      "term": "負中間項",
+      "definition": "兩個交叉乘積皆為 -ab，合為 -2ab。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(a−b)²",
+      "meaning": "a²−2ab+b²。"
+    }
+  ],
+  "conceptNarrative": [
+    "平方表示相同的兩個因式相乘：(a-b)(a-b)。",
+    "交叉項是 -ab 與 -ab，因此合成 -2ab。",
+    "最後一項 (-b)(-b)=+b²，所以尾項仍為正。",
+    "此公式適合計算略小於整數基準的平方。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "差的平方公式",
+      "statement": "(a-b)²=a²-2ab+b²。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(a-b)²=a²-2ab+b²",
+      "conditions": [
+        "a、b 可為數或代數式"
+      ],
+      "meaning": "首尾平方為正，中間項為負。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能寫成 a²-b²；那是平方差而非差的平方。",
+    "不能把 b² 寫成 -b²。",
+    "若 b 本身為負數，要先重新判讀括號結構。",
+    "三項平方不直接套用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認 a 與被減的 b。",
+      "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)^2=a^2-2ab+b^2」。"
+    },
+    {
+      "step": 2,
+      "instruction": "寫 a²。",
+      "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)^2=a^2-2ab+b^2」。"
+    },
+    {
+      "step": 3,
+      "instruction": "寫 -2ab。",
+      "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)^2=a^2-2ab+b^2」。"
+    },
+    {
+      "step": 4,
+      "instruction": "寫 +b²。",
+      "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)^2=a^2-2ab+b^2」。"
+    },
+    {
+      "step": 5,
+      "instruction": "展開內部式後再合併。",
+      "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)^2=a^2-2ab+b^2」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "展開 (x−4)²。",
+      "solutionSteps": [
+        "x²−8x+16。"
+      ],
+      "answer": "x²-8x+16。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "展開 (3x−2)²。",
+      "solutionSteps": [
+        "9x²−12x+4。"
+      ],
+      "answer": "9x²-12x+4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "計算 98²。",
+      "solutionSteps": [
+        "(100−2)²=10000−400+4。"
+      ],
+      "answer": "9604。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "寫成 a²-b²",
+      "why": "把「差的平方」與「平方差」混淆",
+      "correction": "看清楚平方在整個括號外。"
+    },
+    {
+      "mistake": "尾項寫 -b²",
+      "why": "忽略負負得正",
+      "correction": "(-b)²=+b²。"
+    },
+    {
+      "mistake": "中間係數漏乘 2",
+      "why": "只寫一個交叉乘積",
+      "correction": "展開兩因式核對。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能由 (a-b)(a-b) 推導公式？",
+    "我是否能能避免把 b² 誤寫成負？",
+    "我是否能能用公式計算與解釋邊長縮減的面積？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "差的平方為 a²-2ab+b²。",
+    "尾平方仍為正。",
+    "與平方差公式的結構不同。",
+    "可用接近基準數的心算檢驗。"
+  ],
+  "connections": {
+    "previous": "上一技能 和的平方公式 提供本節所需工具。",
+    "next": [
+      "下一節處理一和一差的共軛因式，中間項會完全抵消。"
+    ]
+  },
+  "figureReferences": [
+    "u10-fig-square-difference-area"
+  ],
+  "accessibility": {
+    "figureAltTextsRequired": true,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s010-v001",
+      "u10-s010-v002",
+      "u10-s010-v003",
+      "u10-s010-v004",
+      "u10-s010-v005",
+      "u10-s010-v006",
+      "u10-s010-v007",
+      "u10-s010-v008",
+      "u10-s010-v009",
+      "u10-s010-v010",
+      "u10-s010-v011",
+      "u10-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s010-cr001",
+      "u10-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「差的平方公式：負號只使中間項為負」：定義、3 個例題、錯誤推理與下一技能銜接均針對 square-difference-formula；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "aa9149448278080a7c85b33331b0e8df1ccdb8aeed553b651b6f547fb79c7eee"
+}

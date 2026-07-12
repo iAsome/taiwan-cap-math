@@ -1,0 +1,247 @@
+{
+  "lectureId": "u19-s011-lecture-r1",
+  "unitId": "u19",
+  "numericUnitId": 19,
+  "topicId": "u19-measure",
+  "skillId": "circle-composite-area",
+  "title": "圓複合面積",
+  "unitTitle": "圓",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "skillIdentity": {
+    "slot": "s011",
+    "lockedSkillId": "circle-composite-area",
+    "lockedOrder": 11,
+    "scope": "以加減法處理圓、半圓、扇形與挖空區域。"
+  },
+  "learningOutcomes": [
+    "能辨認複合圖形的加減關係。",
+    "能計算圓環、半圓組合與扇形差。",
+    "能避免重複計數重疊區域。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "sector-area",
+      "requiredLevel": "能使用「扇形面積」的核心定義與基本運算，並辨認其適用條件。"
+    }
+  ],
+  "prerequisiteBridge": "先由前一技能「扇形面積」的結論，連接到本技能「圓複合面積」所需的新判斷。",
+  "glossary": [
+    {
+      "term": "圓環",
+      "definition": "兩個同心圓之間的區域。"
+    },
+    {
+      "term": "挖空",
+      "definition": "由外部面積扣除內部未使用部分。"
+    },
+    {
+      "term": "重疊",
+      "definition": "兩個區域共同覆蓋的部分。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "圓心。"
+    },
+    {
+      "symbol": "∠ABC",
+      "meaning": "頂點是B的角。"
+    },
+    {
+      "symbol": "π",
+      "meaning": "圓周率；題目未要求近似時保留π。"
+    }
+  ],
+  "conceptNarrative": [
+    "複合面積的核心不是新公式，而是把陰影拆成已知面積再加減。",
+    "先描述陰影是「大圖形減小圖形」或「兩部分相加」，再列式。",
+    "若兩圖形相加但有重疊，重疊部分會被算兩次，需要扣回一次。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "圓環",
+      "statement": "兩個同心圓之間的區域。"
+    },
+    {
+      "name": "挖空",
+      "statement": "由外部面積扣除內部未使用部分。"
+    },
+    {
+      "name": "重疊",
+      "statement": "兩個區域共同覆蓋的部分。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "圓環面積=π(R²−r²)",
+      "conditions": [
+        "R>r>0且同心"
+      ],
+      "meaning": "大圓減小圓"
+    },
+    {
+      "formula": "聯集面積=面積甲+面積乙−重疊面積",
+      "conditions": [
+        "兩區域有重疊"
+      ],
+      "meaning": "避免重複計數"
+    }
+  ],
+  "nonApplicableCases": [
+    "非同心圓挖空時仍可相減，但不能直接稱為同寬圓環。",
+    "只看邊界弧長無法求面積，仍需半徑或其他尺寸。",
+    "重疊區域不能同時保留兩次。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "用語句描述陰影組成。",
+      "check": "完成此步後，確認仍在「圓複合面積」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 2,
+      "instruction": "為每個基本圖形標半徑與角度。",
+      "check": "完成此步後，確認仍在「圓複合面積」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 3,
+      "instruction": "列出加減式再代公式。",
+      "check": "完成此步後，確認仍在「圓複合面積」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 4,
+      "instruction": "合併同類項並檢查面積為正。",
+      "check": "完成此步後，確認仍在「圓複合面積」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "用整體大小估算是否合理。",
+      "check": "完成此步後，確認仍在「圓複合面積」的CAP範圍且沒有只憑圖形目測。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "s011-L1",
+      "prompt": "外半徑5、內半徑3的圓環。",
+      "solutionSteps": [
+        "π(25−9)=16π。"
+      ],
+      "answer": "16π。",
+      "level": "basic"
+    },
+    {
+      "exampleId": "s011-L2",
+      "prompt": "正方形邊長10，內切圓半徑5，求四角總面積。",
+      "solutionSteps": [
+        "正方形100。",
+        "減圓25π。"
+      ],
+      "answer": "100−25π。",
+      "level": "standard"
+    },
+    {
+      "exampleId": "s011-L3",
+      "prompt": "兩個半徑4的半圓拼成一圓且不重疊。",
+      "solutionSteps": [
+        "兩半圓面積和等於整圓。"
+      ],
+      "answer": "16π。",
+      "level": "advanced"
+    },
+    {
+      "exampleId": "s011-L4",
+      "prompt": "半徑6的圓去掉120°扇形。",
+      "solutionSteps": [
+        "剩240°，占2/3。",
+        "2/3×36π=24π。"
+      ],
+      "answer": "24π。",
+      "level": "connection"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認「圓複合面積」的定義、符號與單一步驟關係。",
+    "standard": "把「圓複合面積」與前置技能、比例或一次代數連接。",
+    "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「圓複合面積」。",
+    "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「圓複合面積」的數學模型。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "圓環寫π(R−r)²",
+      "why": "平方差與差平方混淆",
+      "correction": "分別平方後相減"
+    },
+    {
+      "mistake": "重疊部分未扣回",
+      "why": "直接相加",
+      "correction": "用聯集公式"
+    },
+    {
+      "mistake": "把周長資料直接當面積",
+      "why": "量綱不合",
+      "correction": "先反求半徑"
+    },
+    {
+      "mistake": "陰影方向判反",
+      "why": "未先口述組成",
+      "correction": "先說大減小或相加"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認「圓複合面積」的適用條件？",
+    "我是否分清半徑、直徑、弦、弧與角的角色？",
+    "我是否寫出必要單位，並在最後才取近似值？",
+    "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+  ],
+  "summary": [
+    "複合面積先拆圖再列加減。",
+    "圓環為π(R²−r²)。",
+    "重疊相加時要扣回一次。"
+  ],
+  "connections": {
+    "previous": "承接「扇形面積」。",
+    "next": "下一技能為「扇形周長」。"
+  },
+  "figureReferences": [
+    {
+      "figureId": "u19-s011-fig001",
+      "purpose": "兩個同心圓形成圓環，外半徑 R 與內半徑 r 由圓心沿不同方向標示。",
+      "altText": "兩個同心圓形成圓環，外半徑 R 與內半徑 r 由圓心沿不同方向標示。，不可按比例目測。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u19-s011-v001",
+      "u19-s011-v002",
+      "u19-s011-v003",
+      "u19-s011-v004",
+      "u19-s011-v005",
+      "u19-s011-v006",
+      "u19-s011-v007",
+      "u19-s011-v008",
+      "u19-s011-v009",
+      "u19-s011-v010",
+      "u19-s011-v011",
+      "u19-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u19-s011-cr001",
+      "u19-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段回讀「圓複合面積」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：以加減法處理圓、半圓、扇形與挖空區域。",
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "d2dbf863e8aa18dbaccac10fa2e6c2dc45f39e46ca6a40e03794822b2b77c251"
+}

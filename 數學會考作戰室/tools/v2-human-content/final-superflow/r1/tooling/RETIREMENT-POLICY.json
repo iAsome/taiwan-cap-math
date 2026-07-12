@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "math-v2-old-runtime-retirement-policy-r1",
+  "deleteRoots": [
+    "數學會考作戰室/v2",
+    "數學會考作戰室/tools/v2-content",
+    "數學會考作戰室/human-preview",
+    "數學會考作戰室/human-runtime-rc"
+  ],
+  "deleteFiles": [
+    "數學會考作戰室/tools/author-v2-production-content.mjs",
+    "數學會考作戰室/app.js",
+    "數學會考作戰室/data.js",
+    "數學會考作戰室/analysis-data.js",
+    "數學會考作戰室/questions.js",
+    "數學會考作戰室/app-legacy.js",
+    "數學會考作戰室/quiz-taxonomy.js",
+    "數學會考作戰室/quiz-variant-bank.js",
+    "數學會考作戰室/quiz-variants.js",
+    "數學會考作戰室/lecture-taxonomy.js",
+    "數學會考作戰室/legacy.html",
+    "數學會考作戰室/human-preview.html",
+    "數學會考作戰室/human-rc.html"
+  ],
+  "keepRoots": [
+    "數學會考作戰室/human-runtime",
+    "數學會考作戰室/tools/v2-human-content",
+    "數學會考作戰室/official-data",
+    "shared"
+  ],
+  "historicalReferenceRoots": [
+    "數學會考作戰室/tools/v2-human-content"
+  ],
+  "activeReferenceExtensions": [
+    ".html",
+    ".js",
+    ".mjs",
+    ".json",
+    ".css"
+  ],
+  "forbiddenActiveReferences": [
+    "v2/math-production-bootstrap.js",
+    "v2/math-engine-v2.js",
+    "tools/v2-content",
+    "author-v2-production-content.mjs",
+    "app-legacy.js",
+    "questions.js",
+    "quiz-taxonomy.js",
+    "quiz-variant-bank.js",
+    "quiz-variants.js",
+    "lecture-taxonomy.js",
+    "legacy.html",
+    "human-preview.html",
+    "human-preview/",
+    "human-rc.html",
+    "human-runtime-rc/",
+    "generated=1",
+    "legacy=1"
+  ],
+  "forbiddenProductionVisibleText": [
+    "Release Candidate",
+    "Human RC",
+    "人工作者 RC",
+    "每個 V2 單元",
+    "Math V2 單元小考"
+  ],
+  "legacyStorageExactKeys": [
+    "capMath.completed",
+    "capMath.paperHistory",
+    "capMath.dark",
+    "capMath.lastSeed",
+    "capMath.lastQuizSeed"
+  ],
+  "legacyStoragePrefixes": [
+    "capMath.quizSignatures.",
+    "capMath.humanRc.r1."
+  ],
+  "productionStoragePrefix": "capMath.human.r1."
+}

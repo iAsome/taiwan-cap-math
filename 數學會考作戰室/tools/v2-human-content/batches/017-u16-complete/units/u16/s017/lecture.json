@@ -1,0 +1,277 @@
+{
+  "lectureId": "u16-s017-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-properties",
+  "skillId": "triangle-altitude",
+  "skillOrder": 17,
+  "originalLockedTitle": "高線概念",
+  "title": "高線概念：從頂點向對邊所在直線作垂線",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認三角形高線與垂足。",
+    "能理解銳角、直角與鈍角三角形的高線位置不同。",
+    "能分辨高線、中線與中垂線。",
+    "能用底乘高除以二計算面積並選擇相對應的底與高。"
+  ],
+  "prerequisiteBridge": "中線要求落在對邊中點；高線改以垂直為核心。過點作垂線技能已提供作圖方法，現在把指定點設為三角形頂點、已知直線設為對邊所在直線。",
+  "prerequisites": [
+    {
+      "skillId": "triangle-medians",
+      "requiredLevel": "能使用先備技能「中線概念」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "三角形高線",
+      "definition": "由一頂點向其對邊所在直線作垂線所得的線段。"
+    },
+    {
+      "term": "垂足",
+      "definition": "高線與對邊所在直線的交點。"
+    },
+    {
+      "term": "底",
+      "definition": "選作面積計算基準的三角形邊。"
+    },
+    {
+      "term": "對應高",
+      "definition": "從底的對面頂點到該底所在直線的垂直距離。"
+    },
+    {
+      "term": "對邊所在直線",
+      "definition": "包含對邊並可向兩端延長的整條直線。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AD⊥BC",
+      "meaning": "若 D 在直線 BC 上，AD 是從 A 對 BC 的高線。"
+    },
+    {
+      "symbol": "h_a",
+      "meaning": "對邊 a 的高；本課可用文字表達，不強制符號。"
+    },
+    {
+      "symbol": "面積=底×高÷2",
+      "meaning": "底與高必須互相垂直且彼此對應。"
+    }
+  ],
+  "conceptNarrative": [
+    "高線一端是頂點，另一端落在對邊所在直線上，並與該直線成 90°。",
+    "銳角三角形三條高都在內部；直角三角形兩條直角邊互為高，第三條高從直角頂點到斜邊；鈍角三角形有兩條高落在對邊延長線上。",
+    "因此高線的垂足不一定在對邊線段內，但一定在對邊所在直線上。",
+    "高線不要求平分對邊；中垂線則要求過中點且垂直，但未必通過三角形頂點。",
+    "面積公式中可選任何一邊作底，但必須搭配從對面頂點到該底所在直線的垂直距離。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "三角形高線",
+      "statement": "由三角形一頂點向其對邊所在直線所作的垂線段。"
+    },
+    {
+      "name": "垂心",
+      "statement": "三條高所在直線的交點；銳角在內、直角在直角頂點、鈍角在外。"
+    },
+    {
+      "name": "三角形面積",
+      "statement": "任選一邊作底，面積等於底乘對應高再除以 2。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A=bh/2",
+      "conditions": [
+        "b 為底長",
+        "h 為對應垂直高度",
+        "單位一致"
+      ],
+      "meaning": "三角形面積。"
+    },
+    {
+      "formula": "h=2A/b",
+      "conditions": [
+        "b>0"
+      ],
+      "meaning": "由面積與底求高。"
+    }
+  ],
+  "nonApplicableCases": [
+    "從頂點到對邊的任意斜線不是高線。",
+    "垂足不在邊線段內不代表不是高線，鈍角三角形常落在延長線。",
+    "中線不一定是高線，除非另有垂直條件。",
+    "面積公式不能搭配非對應的底與高。",
+    "高線長度是正值，不使用帶方向的負距離。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "選定頂點與其對邊。",
+      "check": "對邊是否不接觸該頂點？"
+    },
+    {
+      "step": 2,
+      "instruction": "必要時延長對邊。",
+      "check": "鈍角情形垂足是否可能在外部？"
+    },
+    {
+      "step": 3,
+      "instruction": "由頂點作對邊所在直線的垂線。",
+      "check": "垂直符號是否為 90°？"
+    },
+    {
+      "step": 4,
+      "instruction": "辨認垂足與高線段。",
+      "check": "高線端點是否為頂點與垂足？"
+    },
+    {
+      "step": 5,
+      "instruction": "面積題配對底與高。",
+      "check": "兩者是否垂直、單位一致？"
+    },
+    {
+      "step": 6,
+      "instruction": "檢查位置類型。",
+      "check": "銳角、直角、鈍角三角形的高線位置是否合理？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "D 在 BC 上且 AD⊥BC，判斷 AD。",
+      "solutionSteps": [
+        "A 是 △ABC 頂點。",
+        "AD 對邊 BC 所在直線垂直。"
+      ],
+      "answer": "AD 是 BC 上的高線。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "鈍角三角形從銳角頂點作高，垂足可能在哪裡？",
+      "solutionSteps": [
+        "對邊方向需延長。",
+        "垂足可落在對邊延長線上。"
+      ],
+      "answer": "可能在三角形外部。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "底 12 公分、高 7 公分，求面積。",
+      "solutionSteps": [
+        "12×7÷2=42。"
+      ],
+      "answer": "42 平方公分。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "面積 54 平方公分，底 9 公分，求對應高。",
+      "solutionSteps": [
+        "h=2×54÷9。",
+        "108÷9=12。"
+      ],
+      "answer": "12 公分。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "直角三角形兩股為 6、8，取 6 為底時對應高是多少？",
+      "solutionSteps": [
+        "兩股互相垂直。",
+        "另一股 8 是對底 6 的高。"
+      ],
+      "answer": "8。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "高線一定在三角形內。",
+      "why": "只看銳角三角形。",
+      "correction": "鈍角三角形部分高線落在延長線上。"
+    },
+    {
+      "mistake": "高線一定平分底邊。",
+      "why": "混同等腰三線合一。",
+      "correction": "一般高線只保證垂直。"
+    },
+    {
+      "mistake": "把中垂線當高線。",
+      "why": "都有垂直符號。",
+      "correction": "高線必通過三角形頂點；中垂線必過邊中點。"
+    },
+    {
+      "mistake": "底與任意垂直線段配對。",
+      "why": "忽略高須從對面頂點到該底。",
+      "correction": "選底後再找對面頂點的垂直距離。"
+    },
+    {
+      "mistake": "面積漏除以 2。",
+      "why": "與平行四邊形公式混淆。",
+      "correction": "三角形是同底同高平行四邊形的一半。"
+    },
+    {
+      "mistake": "面積單位寫公分。",
+      "why": "未區分長度與面積。",
+      "correction": "底高相乘後使用平方單位。"
+    }
+  ],
+  "selfCheck": [
+    "高線是否從頂點出發？",
+    "是否垂直於對邊所在直線？",
+    "垂足可否在延長線上？",
+    "我有分清高線與中線、中垂線嗎？",
+    "面積使用的是對應底高且平方單位嗎？"
+  ],
+  "summary": [
+    "高線從頂點向對邊所在直線作垂線。",
+    "垂足可在邊上或延長線上。",
+    "一般高線不平分底邊，也不等於中垂線。",
+    "面積為對應底乘高除以 2。"
+  ],
+  "connections": {
+    "previous": "中線重點是中點；高線重點是垂直。",
+    "next": [
+      "最後的素養技能會綜合全等、邊角、作圖、中線與高線。",
+      "U17 平行與四邊形面積也會反覆使用高。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-017-altitude"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-017-altitude 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s017-v001",
+      "u16-s017-v002",
+      "u16-s017-v003",
+      "u16-s017-v004",
+      "u16-s017-v005",
+      "u16-s017-v006",
+      "u16-s017-v007",
+      "u16-s017-v008",
+      "u16-s017-v009",
+      "u16-s017-v010",
+      "u16-s017-v011",
+      "u16-s017-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s017-cr001",
+      "u16-s017-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「高線概念」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "ab5fc51af9e828504410d5b359b02da889962a17ba152782c6fdbe265efe4d02"
+}

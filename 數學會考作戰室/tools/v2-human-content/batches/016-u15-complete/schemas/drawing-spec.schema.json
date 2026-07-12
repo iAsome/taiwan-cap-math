@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U15 drawing spec",
+  "type": "object",
+  "required": [
+    "figureId",
+    "svgPath",
+    "altText",
+    "drawingSpec",
+    "svgAssertions",
+    "figureReview",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "unitId": {
+      "const": "u15"
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

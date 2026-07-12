@@ -1,0 +1,950 @@
+{
+  "schemaVersion": "math-v2-global-repair-wave-1b-replacements-r1",
+  "candidateSourceSha256": "c4b9878c2099deee6c47d00b402ae9dffb8761177b4c7eeaeb4afdd82dcc4ef6",
+  "replacementCount": 12,
+  "items": [
+    {
+      "questionId": "u02-s001-v005",
+      "batch": "003-u02-complete",
+      "path": "units/u02/s001/mc-questions.jsonl",
+      "expectedOriginalText": "下列哪一個敘述正確？",
+      "expectedAnswerIndex": 0,
+      "questionPatch": {
+        "text": "關於正整數的因數與倍數，下列哪一個敘述正確？",
+        "explanation": "依因數與倍數的定義逐項判斷。任一正整數 n 都可寫成 1×n，因此 1 是每個正整數的因數。",
+        "steps": [
+          "以 n 表示任一正整數，n÷1=n 為整數。",
+          "排除除以 0、無限多個正因數及 12 是 5 的倍數等錯誤敘述。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "1 是每個正整數的因數",
+            "truth": true,
+            "reason": "n÷1=n，對每個正整數都成立。"
+          },
+          {
+            "choice": "0 是每個正整數的因數",
+            "truth": false,
+            "reason": "因數判斷需要作除法，而除以 0 沒有定義。"
+          },
+          {
+            "choice": "每個正整數都有無限多個正因數",
+            "truth": false,
+            "reason": "每個固定正整數只有有限個正因數。"
+          },
+          {
+            "choice": "12 是 5 的倍數",
+            "truth": false,
+            "reason": "12÷5 不是整數，所以 12 不是 5 的倍數。"
+          }
+        ],
+        "commonMistake": "忽略因數定義中的整除條件，或把 0 當成可作除數。",
+        "concept": "因數與倍數必須以整除關係判斷。",
+        "authoringIntent": "用正整數範圍內的定義判斷因數與倍數性質。"
+      },
+      "reviewPatch": {
+        "independentSolution": "任一正整數 n 都有 n÷1=n，所以 1 一定能整除 n；0 不能作除數，正因數個數有限，而且 12÷5 不是整數。",
+        "derivedAnswer": "1 是每個正整數的因數",
+        "storedAnswer": "1 是每個正整數的因數",
+        "answerMatch": true,
+        "optionTruth": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「1 是每個正整數的因數」。其餘選項逐項檢查：「0 是每個正整數的因數」錯，因為除以 0 沒有定義；「每個正整數都有無限多個正因數」錯，因為固定正整數的正因數有限；「12 是 5 的倍數」錯，因為 12÷5 不是整數",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「判斷因數與倍數性質」。 題目沒有使用講義之外的新符號或未說明縮寫，因此不會產生另一種符號解讀。",
+          "unitConflict": "純數或代數表示，不涉及不相容單位。 四個選項均在相同數學對象與表示層級下比較，不存在量綱互換造成的第二答案。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。 所有中間值均保留精確分數或整數，選項判定不受取整方式影響。",
+          "domainBoundary": "只使用國中教育會考範圍與該技能已定義內容。 題目中的正整數、分母與範圍條件均符合國中課程定義，沒有超出範圍的例外。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。 重新按題幹所求量讀取後，其他常見解讀都會違反至少一項明示條件。"
+        },
+        "difficultyReason": "標準：必須同時運用因數定義、正整數範圍與整除判斷。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "只使用 U01 的整數四則與本技能的因數和倍數定義。",
+        "languageCheck": "使用臺灣繁體中文，正整數範圍與所求敘述均明示。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "本題已逐項人工重審。獨立重算：任一正整數 n 都有 n÷1=n，所以 1 一定能整除 n；0 不能作除數，正因數個數有限，而且 12÷5 不是整數。 由此得到唯一正確答案「1 是每個正整數的因數」。四個選項的真值依序為 [True, False, False, False]；其餘三項分別違反定義、運算規則或表示條件。題幹的範圍、單位、符號與取值方向均已明示，不存在第二個合理答案。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u02-s004-v002",
+      "batch": "003-u02-complete",
+      "path": "units/u02/s004/mc-questions.jsonl",
+      "expectedOriginalText": "45 和 60 的最大公因數是多少？",
+      "expectedAnswerIndex": 1,
+      "questionPatch": {
+        "text": "已知 45=3²×5，60=2²×3×5。求最大公因數時，共同質因數應組成下列哪一個算式？",
+        "choices": [
+          "5",
+          "3×5",
+          "2²×5",
+          "2×3×5"
+        ],
+        "explanation": "最大公因數只取兩數共同出現的質因數，且每一個共同質因數取較小指數，所以得到 3×5。",
+        "steps": [
+          "比較 45=3²×5 與 60=2²×3×5。",
+          "共同質因數為 3 和 5，分別取指數 1。",
+          "得到 3×5。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "5",
+            "truth": false,
+            "reason": "只取 5，漏掉共同質因數 3。"
+          },
+          {
+            "choice": "3×5",
+            "truth": true,
+            "reason": "共同質因數 3 和 5 都取較小指數 1。"
+          },
+          {
+            "choice": "2²×5",
+            "truth": false,
+            "reason": "2 不是 45 的質因數，不能放入共同部分。"
+          },
+          {
+            "choice": "2×3×5",
+            "truth": false,
+            "reason": "2 不是共同質因數。"
+          }
+        ],
+        "commonMistake": "把只出現在其中一個數的質因數也放入最大公因數。",
+        "concept": "求 GCD 時，只取共同質因數並取較小指數。",
+        "authoringIntent": "辨認質因數分解法中最大公因數的共同部分。"
+      },
+      "reviewPatch": {
+        "independentSolution": "45 與 60 共同含有 3 和 5；各取較小指數得到 3¹×5¹=3×5。",
+        "derivedAnswer": "3×5",
+        "storedAnswer": "3×5",
+        "answerMatch": true,
+        "optionTruth": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「3×5」。其餘選項逐項檢查：「5」漏掉 3；「2²×5」含有非共同質因數 2；「2×3×5」同樣含有非共同質因數 2",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「選出最大公因數的質因數算式」。 題目沒有使用講義之外的新符號或未說明縮寫，因此不會產生另一種符號解讀。",
+          "unitConflict": "純數或代數表示，不涉及不相容單位。 四個選項均在相同數學對象與表示層級下比較，不存在量綱互換造成的第二答案。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。 所有中間值均保留精確分數或整數，選項判定不受取整方式影響。",
+          "domainBoundary": "只使用國中教育會考範圍與該技能已定義內容。 題目中的正整數、分母與範圍條件均符合國中課程定義，沒有超出範圍的例外。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。 重新按題幹所求量讀取後，其他常見解讀都會違反至少一項明示條件。"
+        },
+        "difficultyReason": "基礎：已提供質因數分解，只需辨認共同質因數與較小指數。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "只使用質因數分解與最大公因數定義。",
+        "languageCheck": "已明示兩數的質因數分解與所求算式。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "本題已逐項人工重審。獨立重算：45 與 60 共同含有 3 和 5；各取較小指數得到 3¹×5¹=3×5。 由此得到唯一正確答案「3×5」。四個選項的真值依序為 [False, True, False, False]；其餘三項分別違反定義、運算規則或表示條件。題幹的範圍、單位、符號與取值方向均已明示，不存在第二個合理答案。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u02-s005-v002",
+      "batch": "003-u02-complete",
+      "path": "units/u02/s005/mc-questions.jsonl",
+      "expectedOriginalText": "12 和 18 的最小公倍數是多少？",
+      "expectedAnswerIndex": 1,
+      "questionPatch": {
+        "text": "已知 12=2²×3，18=2×3²。求最小公倍數時，應取各質因數的較大指數，得到哪一個算式？",
+        "choices": [
+          "2×3²",
+          "2²×3²",
+          "2²×3",
+          "2³×3²"
+        ],
+        "explanation": "最小公倍數要涵蓋兩數中的所有質因數，對每一個質因數取較大指數，因此為 2²×3²。",
+        "steps": [
+          "比較 12=2²×3 與 18=2×3²。",
+          "2 的較大指數為 2，3 的較大指數為 2。",
+          "得到 2²×3²。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "2×3²",
+            "truth": false,
+            "reason": "2 只取一次，不能涵蓋 12 中的 2²。"
+          },
+          {
+            "choice": "2²×3²",
+            "truth": true,
+            "reason": "2 和 3 都取兩數中較大的指數 2。"
+          },
+          {
+            "choice": "2²×3",
+            "truth": false,
+            "reason": "3 只取一次，不能涵蓋 18 中的 3²。"
+          },
+          {
+            "choice": "2³×3²",
+            "truth": false,
+            "reason": "2 的指數 3 超過必要值，所得共同倍數不是最小。"
+          }
+        ],
+        "commonMistake": "把較大指數取錯，或取超過必要的指數。",
+        "concept": "求 LCM 時，各質因數取兩數中較大指數。",
+        "authoringIntent": "辨認質因數分解法中最小公倍數的指數選擇。"
+      },
+      "reviewPatch": {
+        "independentSolution": "質因數 2 的較大指數是 2，質因數 3 的較大指數也是 2，所以算式為 2²×3²。",
+        "derivedAnswer": "2²×3²",
+        "storedAnswer": "2²×3²",
+        "answerMatch": true,
+        "optionTruth": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「2²×3²」。其餘選項逐項檢查：「2×3²」少一個 2；「2²×3」少一個 3；「2³×3²」多取一個 2，並非最小",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「選出最小公倍數的質因數算式」。 題目沒有使用講義之外的新符號或未說明縮寫，因此不會產生另一種符號解讀。",
+          "unitConflict": "純數或代數表示，不涉及不相容單位。 四個選項均在相同數學對象與表示層級下比較，不存在量綱互換造成的第二答案。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。 所有中間值均保留精確分數或整數，選項判定不受取整方式影響。",
+          "domainBoundary": "只使用國中教育會考範圍與該技能已定義內容。 題目中的正整數、分母與範圍條件均符合國中課程定義，沒有超出範圍的例外。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。 重新按題幹所求量讀取後，其他常見解讀都會違反至少一項明示條件。"
+        },
+        "difficultyReason": "基礎：已提供分解式，只需對每個質因數選較大指數。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "只使用質因數分解與最小公倍數定義。",
+        "languageCheck": "已明示兩數分解式、取較大指數規則與所求算式。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "本題已逐項人工重審。獨立重算：質因數 2 的較大指數是 2，質因數 3 的較大指數也是 2，所以算式為 2²×3²。 由此得到唯一正確答案「2²×3²」。四個選項的真值依序為 [False, True, False, False]；其餘三項分別違反定義、運算規則或表示條件。題幹的範圍、單位、符號與取值方向均已明示，不存在第二個合理答案。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u02-s008-v005",
+      "batch": "003-u02-complete",
+      "path": "units/u02/s008/mc-questions.jsonl",
+      "expectedOriginalText": "將 7/12、5/8、2/3 由小到大排列，何者正確？",
+      "expectedAnswerIndex": 0,
+      "questionPatch": {
+        "text": "比較 7/12、5/8 與 2/3 後，下列哪一條不等式鏈正確？",
+        "explanation": "以 24 為共同分母，三個分數依序為 14/24、15/24、16/24，因此正確大小鏈為 7/12＜5/8＜2/3。",
+        "steps": [
+          "取共同分母 24。",
+          "將三數改寫為 14/24、15/24、16/24。",
+          "比較分子後寫出完整不等式鏈。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "7/12＜5/8＜2/3",
+            "truth": true,
+            "reason": "14/24＜15/24＜16/24。"
+          },
+          {
+            "choice": "5/8＜7/12＜2/3",
+            "truth": false,
+            "reason": "5/8=15/24，大於 7/12=14/24。"
+          },
+          {
+            "choice": "7/12＜2/3＜5/8",
+            "truth": false,
+            "reason": "2/3=16/24，大於 5/8=15/24。"
+          },
+          {
+            "choice": "2/3＜5/8＜7/12",
+            "truth": false,
+            "reason": "把最大值 2/3 放在最前面。"
+          }
+        ],
+        "commonMistake": "只比較原分子或原分母，沒有先建立共同分母。",
+        "concept": "異分母分數可通分後比較。",
+        "authoringIntent": "使用共同分母辨認完整分數大小鏈。"
+      },
+      "reviewPatch": {
+        "independentSolution": "通分為 7/12=14/24、5/8=15/24、2/3=16/24，因此 7/12＜5/8＜2/3。",
+        "derivedAnswer": "7/12＜5/8＜2/3",
+        "storedAnswer": "7/12＜5/8＜2/3",
+        "answerMatch": true,
+        "optionTruth": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「7/12＜5/8＜2/3」。其餘選項逐項檢查：「5/8＜7/12＜2/3」顛倒前兩數；「7/12＜2/3＜5/8」顛倒後兩數；「2/3＜5/8＜7/12」把最大值置於最前",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「辨認正確的分數不等式鏈」。 題目沒有使用講義之外的新符號或未說明縮寫，因此不會產生另一種符號解讀。",
+          "unitConflict": "純數或代數表示，不涉及不相容單位。 四個選項均在相同數學對象與表示層級下比較，不存在量綱互換造成的第二答案。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。 所有中間值均保留精確分數或整數，選項判定不受取整方式影響。",
+          "domainBoundary": "只使用國中教育會考範圍與該技能已定義內容。 題目中的正整數、分母與範圍條件均符合國中課程定義，沒有超出範圍的例外。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。 重新按題幹所求量讀取後，其他常見解讀都會違反至少一項明示條件。"
+        },
+        "difficultyReason": "標準：需選共同分母、完成三數通分並核對完整順序。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "只使用等值分數、最小公倍數與分數比較。",
+        "languageCheck": "使用臺灣繁體中文；三個比較對象與不等式方向都已明示。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "本題已逐項人工重審。獨立重算：通分為 7/12=14/24、5/8=15/24、2/3=16/24，因此 7/12＜5/8＜2/3。 由此得到唯一正確答案「7/12＜5/8＜2/3」。四個選項的真值依序為 [True, False, False, False]；其餘三項分別違反定義、運算規則或表示條件。題幹的範圍、單位、符號與取值方向均已明示，不存在第二個合理答案。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u02-s011-v004",
+      "batch": "003-u02-complete",
+      "path": "units/u02/s011/mc-questions.jsonl",
+      "expectedOriginalText": "2又5/6-1又1/3 等於多少？",
+      "expectedAnswerIndex": 3,
+      "questionPatch": {
+        "text": "把 2又5/6 化成假分數，再判斷它位於哪兩個相鄰整數之間。下列哪一個敘述正確？",
+        "choices": [
+          "13/6，介於 1 和 2 之間",
+          "15/6，介於 2 和 3 之間",
+          "16/6，介於 2 和 3 之間",
+          "17/6，介於 2 和 3 之間"
+        ],
+        "explanation": "先以「整數×分母＋分子」得到 17/6，再和 12/6、18/6 比較，可知介於 2 和 3 之間。",
+        "steps": [
+          "2×6+5=17，所以 2又5/6=17/6。",
+          "2=12/6，3=18/6。",
+          "12/6＜17/6＜18/6。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "13/6，介於 1 和 2 之間",
+            "truth": false,
+            "reason": "13/6 不是 2又5/6 的轉換結果。"
+          },
+          {
+            "choice": "15/6，介於 2 和 3 之間",
+            "truth": false,
+            "reason": "15/6=2又1/2，不等於原數。"
+          },
+          {
+            "choice": "16/6，介於 2 和 3 之間",
+            "truth": false,
+            "reason": "16/6=2又2/3，不等於原數。"
+          },
+          {
+            "choice": "17/6，介於 2 和 3 之間",
+            "truth": true,
+            "reason": "17/6 等於 2又5/6，且介於 2 和 3 之間。"
+          }
+        ],
+        "commonMistake": "只做 2+5，沒有以整數部分乘分母。",
+        "concept": "帶分數化假分數後可用相鄰整數的同分母表示判斷位置。",
+        "authoringIntent": "結合帶分數轉換與大小定位。"
+      },
+      "reviewPatch": {
+        "independentSolution": "2又5/6=(2×6+5)/6=17/6；因為 12/6＜17/6＜18/6，所以它介於 2 和 3 之間。",
+        "derivedAnswer": "17/6，介於 2 和 3 之間",
+        "storedAnswer": "17/6，介於 2 和 3 之間",
+        "answerMatch": true,
+        "optionTruth": [
+          false,
+          false,
+          false,
+          true
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「17/6，介於 2 和 3 之間」。其餘選項逐項檢查：「13/6，介於 1 和 2 之間」分子計算錯誤；「15/6，介於 2 和 3 之間」代表 2又1/2；「16/6，介於 2 和 3 之間」代表 2又2/3",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「完成帶分數轉換並判斷所在整數區間」。 題目沒有使用講義之外的新符號或未說明縮寫，因此不會產生另一種符號解讀。",
+          "unitConflict": "純數或代數表示，不涉及不相容單位。 四個選項均在相同數學對象與表示層級下比較，不存在量綱互換造成的第二答案。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。 所有中間值均保留精確分數或整數，選項判定不受取整方式影響。",
+          "domainBoundary": "只使用國中教育會考範圍與該技能已定義內容。 題目中的正整數、分母與範圍條件均符合國中課程定義，沒有超出範圍的例外。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。 重新按題幹所求量讀取後，其他常見解讀都會違反至少一項明示條件。"
+        },
+        "difficultyReason": "標準：需先轉換表示，再以同分母比較相鄰整數。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "只使用假分數、帶分數與分數大小比較。",
+        "languageCheck": "帶分數、假分數及相鄰整數範圍均明示。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "本題已逐項人工重審。獨立重算：2又5/6=(2×6+5)/6=17/6；因為 12/6＜17/6＜18/6，所以它介於 2 和 3 之間。 由此得到唯一正確答案「17/6，介於 2 和 3 之間」。四個選項的真值依序為 [False, False, False, True]；其餘三項分別違反定義、運算規則或表示條件。題幹的範圍、單位、符號與取值方向均已明示，不存在第二個合理答案。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u02-s011-v005",
+      "batch": "003-u02-complete",
+      "path": "units/u02/s011/mc-questions.jsonl",
+      "expectedOriginalText": "4又1/5+2又3/10 等於多少？",
+      "expectedAnswerIndex": 0,
+      "questionPatch": {
+        "text": "假分數 23/5 化成帶分數後，哪一個表示正確？",
+        "choices": [
+          "4又3/5",
+          "4又2/5",
+          "5又3/5",
+          "3又4/5"
+        ],
+        "explanation": "用 23 除以 5，商 4 是整數部分，餘數 3 是分子，分母仍為 5，所以為 4又3/5。",
+        "steps": [
+          "計算 23÷5=4 餘 3。",
+          "將商寫成整數部分，餘數寫在原分母 5 上。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "4又3/5",
+            "truth": true,
+            "reason": "4×5+3=23。"
+          },
+          {
+            "choice": "4又2/5",
+            "truth": false,
+            "reason": "4×5+2=22，不等於 23。"
+          },
+          {
+            "choice": "5又3/5",
+            "truth": false,
+            "reason": "整數部分應是除法的商 4，不是 5。"
+          },
+          {
+            "choice": "3又4/5",
+            "truth": false,
+            "reason": "3×5+4=19，不等於 23。"
+          }
+        ],
+        "commonMistake": "把除數 5 當成整數部分，或把商與餘數對調。",
+        "concept": "假分數化帶分數時，商為整數部分、餘數為分子。",
+        "authoringIntent": "由除法的商與餘數完成假分數轉換。"
+      },
+      "reviewPatch": {
+        "independentSolution": "23÷5=4 餘 3，因此 23/5=4又3/5。",
+        "derivedAnswer": "4又3/5",
+        "storedAnswer": "4又3/5",
+        "answerMatch": true,
+        "optionTruth": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「4又3/5」。其餘選項逐項檢查：「4又2/5」回乘只得 22/5；「5又3/5」誤把除數當商；「3又4/5」回乘只得 19/5",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「將假分數正確化為帶分數」。 題目沒有使用講義之外的新符號或未說明縮寫，因此不會產生另一種符號解讀。",
+          "unitConflict": "純數或代數表示，不涉及不相容單位。 四個選項均在相同數學對象與表示層級下比較，不存在量綱互換造成的第二答案。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。 所有中間值均保留精確分數或整數，選項判定不受取整方式影響。",
+          "domainBoundary": "只使用國中教育會考範圍與該技能已定義內容。 題目中的正整數、分母與範圍條件均符合國中課程定義，沒有超出範圍的例外。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。 重新按題幹所求量讀取後，其他常見解讀都會違反至少一項明示條件。"
+        },
+        "difficultyReason": "標準：需把除法的商、餘數與原分母對應到帶分數各部分。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "只使用整數除法與假分數和帶分數定義。",
+        "languageCheck": "題幹明確要求表示轉換，沒有混入加減運算。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "本題已逐項人工重審。獨立重算：23÷5=4 餘 3，因此 23/5=4又3/5。 由此得到唯一正確答案「4又3/5」。四個選項的真值依序為 [True, False, False, False]；其餘三項分別違反定義、運算規則或表示條件。題幹的範圍、單位、符號與取值方向均已明示，不存在第二個合理答案。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u08-s007-v004",
+      "batch": "009-u08-complete",
+      "path": "units/u08/s007/mc-questions.jsonl",
+      "expectedOriginalText": "八邊形的內角和是多少？",
+      "expectedAnswerIndex": 1,
+      "questionPatch": {
+        "text": "某凸多邊形的內角和為 1080°，它是幾邊形？",
+        "givenConditions": [
+          "凸多邊形，邊數為大於 2 的整數。"
+        ],
+        "target": "由內角和反求邊數",
+        "choices": [
+          "七邊形",
+          "八邊形",
+          "九邊形",
+          "十邊形"
+        ],
+        "independentSolution": "設邊數為 n，(n-2)×180°=1080°，所以 n-2=6，n=8。",
+        "explanation": "將內角和公式反向使用：(n−2)×180°=1080°，解得 n=8。",
+        "steps": [
+          "1080÷180=6。",
+          "n−2=6，所以 n=8。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "七邊形",
+            "truth": false,
+            "reason": "七邊形內角和為 900°。"
+          },
+          {
+            "choice": "八邊形",
+            "truth": true,
+            "reason": "(8−2)×180°=1080°。"
+          },
+          {
+            "choice": "九邊形",
+            "truth": false,
+            "reason": "九邊形內角和為 1260°。"
+          },
+          {
+            "choice": "十邊形",
+            "truth": false,
+            "reason": "十邊形內角和為 1440°。"
+          }
+        ],
+        "misconceptionTarget": "把三角形個數 6 直接當成邊數。",
+        "prerequisiteCheck": "已會多邊形內角和公式與一元一次式的簡單逆運算。",
+        "unitCheck": "內角和以度為單位，答案是邊數名稱。",
+        "roundingCheck": "1080° 與 180° 都是精確值。",
+        "ambiguityBoundaryAudit": "限凸多邊形；由公式得到唯一整數邊數 8。",
+        "difficultyReason": "標準：反向使用公式並從三角形個數還原邊數。"
+      },
+      "reviewPatch": {
+        "independentSolution": "1080° 等於 6×180°，表示由一個頂點可分成 6 個三角形；因此 n−2=6，得到 n=8。",
+        "derivedAnswer": "八邊形",
+        "storedAnswer": "八邊形",
+        "answerMatch": true,
+        "optionTruth": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「八邊形」。其餘選項逐項檢查：「七邊形」對應 900°；「九邊形」對應 1260°；「十邊形」對應 1440°",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「由內角和反求多邊形邊數」。",
+          "unitConflict": "角度以度表示，答案為邊數名稱。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。",
+          "domainBoundary": "只使用凸多邊形內角和公式。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。 即使改從公式或圖形定義重新讀題，也仍得到相同唯一答案。"
+        },
+        "difficultyReason": "標準：需反向使用內角和公式並辨認 n−2 的意義。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "已會多邊形內角和公式及簡單方程式。",
+        "languageCheck": "凸多邊形條件、內角和與所求邊數均明示。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "已使用與題解不同的方式獨立重算：1080° 等於 6×180°，表示由一個頂點可分成 6 個三角形；因此 n−2=6，得到 n=8。 正確選項為「八邊形」。其餘三項逐項代回後均不符合題目條件；單位、邊界與可能的另一種讀法也已核對，沒有第二個正確答案。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u08-s009-v006",
+      "batch": "009-u08-complete",
+      "path": "units/u08/s009/mc-questions.jsonl",
+      "expectedOriginalText": "梯形上底 8 公分、下底 14 公分、高 5 公分，面積是多少？",
+      "expectedAnswerIndex": 2,
+      "questionPatch": {
+        "text": "一個長方形長 11 公分、寬 5 公分；另一個梯形上底 8 公分、下底 14 公分、高 5 公分。兩個圖形的面積關係為何？",
+        "givenConditions": [
+          "長方形長 11 公分、寬 5 公分。",
+          "梯形上底 8 公分、下底 14 公分、高 5 公分。"
+        ],
+        "target": "比較長方形與梯形面積",
+        "choices": [
+          "長方形面積比梯形大 25 平方公分",
+          "梯形面積比長方形大 25 平方公分",
+          "兩個圖形的面積相等",
+          "資料不足，無法比較"
+        ],
+        "independentSolution": "長方形面積=11×5=55；梯形面積=(8+14)×5÷2=55，所以兩者相等。",
+        "explanation": "分別使用長方形與梯形面積公式，兩者都得到 55 平方公分。",
+        "steps": [
+          "長方形：11×5=55 平方公分。",
+          "梯形：(8+14)×5÷2=55 平方公分。",
+          "比較後可知面積相等。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "長方形面積比梯形大 25 平方公分",
+            "truth": false,
+            "reason": "長方形面積是 55，沒有多 25。"
+          },
+          {
+            "choice": "梯形面積比長方形大 25 平方公分",
+            "truth": false,
+            "reason": "梯形面積也是 55，沒有多 25。"
+          },
+          {
+            "choice": "兩個圖形的面積相等",
+            "truth": true,
+            "reason": "兩者面積都為 55 平方公分。"
+          },
+          {
+            "choice": "資料不足，無法比較",
+            "truth": false,
+            "reason": "兩圖形計算面積所需資料都已提供。"
+          }
+        ],
+        "misconceptionTarget": "只計算其中一個圖形，或忘記梯形公式要除以 2。",
+        "prerequisiteCheck": "能使用長方形與梯形面積公式。",
+        "unitCheck": "所有長度為公分，面積為平方公分。",
+        "roundingCheck": "全部資料為精確值。",
+        "ambiguityBoundaryAudit": "兩圖形的必要尺寸皆完整，面積可唯一計算。",
+        "difficultyReason": "標準：需選用兩種面積公式並比較結果。"
+      },
+      "reviewPatch": {
+        "independentSolution": "長方形面積為 11×5=55；梯形兩底的平均長度是 (8+14)÷2=11，再乘高 5 也得到 55，所以兩者面積相等。",
+        "derivedAnswer": "兩個圖形的面積相等",
+        "storedAnswer": "兩個圖形的面積相等",
+        "answerMatch": true,
+        "optionTruth": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「兩個圖形的面積相等」。其餘選項逐項檢查：「長方形面積比梯形大 25 平方公分」與 55、55 的計算不符；「梯形面積比長方形大 25 平方公分」與 55、55 的計算不符；「資料不足，無法比較」錯，必要尺寸均已提供",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「比較兩種平面圖形的面積」。",
+          "unitConflict": "所有長度為公分，面積統一為平方公分。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。",
+          "domainBoundary": "只使用國中平面圖形面積公式。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。 即使改從公式或圖形定義重新讀題，也仍得到相同唯一答案。"
+        },
+        "difficultyReason": "標準：需分別計算長方形與梯形，再進行比較。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "已會長方形與梯形面積公式。",
+        "languageCheck": "兩圖形尺寸與比較目標完整明示。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "已使用與題解不同的方式獨立重算：長方形面積為 11×5=55；梯形兩底的平均長度是 (8+14)÷2=11，再乘高 5 也得到 55，所以兩者面積相等。 正確選項為「兩個圖形的面積相等」。其餘三項逐項代回後均不符合題目條件；單位、邊界與可能的另一種讀法也已核對，沒有第二個正確答案。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u10-s003-v001",
+      "batch": "011-u10-complete",
+      "path": "units/u10/s003/mc-questions.jsonl",
+      "expectedOriginalText": "化簡 3x+5x。",
+      "expectedAnswerIndex": 2,
+      "questionPatch": {
+        "prompt": "小安把 4x+3x 化簡成 7x²。下列哪一項最能指出他的錯誤？",
+        "givenConditions": [
+          "小安的錯誤結果為 7x²。"
+        ],
+        "target": "診斷同類項合併時誤改指數的錯誤",
+        "choices": [
+          "係數應相乘，所以應得到 12x",
+          "常數項沒有一起相加",
+          "同類項相加只加係數，字母與指數保持不變",
+          "x 與 x 相加時應把指數加成 2"
+        ],
+        "independentSolution": {
+          "derivation": "4x 與 3x 是同類項，相加時只把係數 4 和 3 相加，x 的指數仍是 1；正確結果是 7x。",
+          "derivedChoice": "同類項相加只加係數，字母與指數保持不變",
+          "didNotTrustStoredAnswer": true
+        },
+        "explanation": "同類項相加只處理係數，字母部分和指數保持不變。",
+        "steps": [
+          "辨認 4x 與 3x 的字母部分同為 x。",
+          "計算係數 4+3=7。",
+          "保留 x¹，得到 7x，因此 7x² 的錯誤是改變了指數。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "係數應相乘，所以應得到 12x",
+            "truth": false,
+            "reason": "同類項相加不是把係數相乘。"
+          },
+          {
+            "choice": "常數項沒有一起相加",
+            "truth": false,
+            "reason": "原式沒有常數項，問題不在漏加常數。"
+          },
+          {
+            "choice": "同類項相加只加係數，字母與指數保持不變",
+            "truth": true,
+            "reason": "這正確指出只加係數並保留字母與指數。"
+          },
+          {
+            "choice": "x 與 x 相加時應把指數加成 2",
+            "truth": false,
+            "reason": "指數相加是同底數相乘的規則，不適用於同類項相加。"
+          }
+        ],
+        "misconceptionTarget": "把同類項加法誤套用為同底數乘法的指數規則",
+        "prerequisiteCheck": "只使用多項式項、係數與同類項定義。",
+        "unitCheck": "純代數表示，不涉及單位。",
+        "roundingCheck": "全程精確運算。",
+        "ambiguityAudit": "題目要求診斷 7x² 的錯誤，只有第三項正確描述規則。",
+        "boundaryAudit": "只使用國中多項式同類項合併。",
+        "difficultyReason": "基礎：辨認同類項合併時係數與字母部分的角色。"
+      },
+      "reviewPatch": {
+        "independentSolution": "4x 與 3x 是同類項，相加時只把係數 4 和 3 相加，x 的指數仍是 1；正確結果是 7x。",
+        "derivedAnswer": "同類項相加只加係數，字母與指數保持不變",
+        "storedAnswer": "同類項相加只加係數，字母與指數保持不變",
+        "answerMatch": true,
+        "optionTruth": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「同類項相加只加係數，字母與指數保持不變」。其餘選項逐項檢查：「係數應相乘，所以應得到 12x」誤用係數乘法；「常數項沒有一起相加」提到不存在的常數項；「x 與 x 相加時應把指數加成 2」誤用同底數乘法規則",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「診斷同類項合併錯誤」。",
+          "unitConflict": "純數或代數表示，不涉及不相容單位。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。",
+          "domainBoundary": "只使用國中教育會考範圍與該技能已定義內容。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。"
+        },
+        "difficultyReason": "基礎：不只計算結果，還要指出指數不應改變的原因。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "只使用項、係數、字母部分與同類項定義。",
+        "languageCheck": "錯誤結果與診斷目標均明示，四個選項互斥。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "本題已由和 U03 完全相同的直接化簡，改為錯誤診斷；唯一正確為第三項。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u10-s003-v003",
+      "batch": "011-u10-complete",
+      "path": "units/u10/s003/mc-questions.jsonl",
+      "expectedOriginalText": "化簡 6a-2a+3。",
+      "expectedAnswerIndex": 0,
+      "questionPatch": {
+        "prompt": "將 6a−2b+3a+5 合併同類項，結果為何？",
+        "givenConditions": [
+          "a 項、b 項與常數項必須分別處理。"
+        ],
+        "target": "辨認不同字母項並正確合併同類項",
+        "choices": [
+          "9a−2b+5",
+          "7a+b+5",
+          "9ab+5",
+          "9a−2b"
+        ],
+        "independentSolution": {
+          "derivation": "6a 與 3a 可合併為 9a；−2b 沒有其他 b 項，常數 5 也保留，所以得到 9a−2b+5。",
+          "derivedChoice": "9a−2b+5",
+          "didNotTrustStoredAnswer": true
+        },
+        "explanation": "只有 6a 和 3a 是同類項；−2b 與常數 5 都必須保留。",
+        "steps": [
+          "將 a 項分組：6a+3a=9a。",
+          "b 項只有 −2b，保持不變。",
+          "常數 5 保持不變，得到 9a−2b+5。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "9a−2b+5",
+            "truth": true,
+            "reason": "正確合併 a 項並保留 b 項與常數。"
+          },
+          {
+            "choice": "7a+b+5",
+            "truth": false,
+            "reason": "把 a 項與 b 項錯誤混合。"
+          },
+          {
+            "choice": "9ab+5",
+            "truth": false,
+            "reason": "把加減項誤寫成乘積 ab。"
+          },
+          {
+            "choice": "9a−2b",
+            "truth": false,
+            "reason": "漏掉常數 5。"
+          }
+        ],
+        "misconceptionTarget": "把不同字母的項合併，或在化簡時漏掉未合併項",
+        "prerequisiteCheck": "只使用項、同類項與加減法。",
+        "unitCheck": "純代數表示，不涉及單位。",
+        "roundingCheck": "全程精確運算。",
+        "ambiguityAudit": "a 項、b 項與常數項分類唯一，只有第一項等價於原式。",
+        "boundaryAudit": "只使用國中多項式同類項合併。",
+        "difficultyReason": "基礎：需先分類不同字母項，再合併唯一一組同類項。"
+      },
+      "reviewPatch": {
+        "independentSolution": "6a 與 3a 可合併為 9a；−2b 沒有其他 b 項，常數 5 也保留，所以得到 9a−2b+5。",
+        "derivedAnswer": "9a−2b+5",
+        "storedAnswer": "9a−2b+5",
+        "answerMatch": true,
+        "optionTruth": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「9a−2b+5」。其餘選項逐項檢查：「7a+b+5」混合不同字母項；「9ab+5」誤成乘法；「9a−2b」漏掉常數",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「辨認並合併同類項」。",
+          "unitConflict": "純數或代數表示，不涉及不相容單位。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。",
+          "domainBoundary": "只使用國中教育會考範圍與該技能已定義內容。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。"
+        },
+        "difficultyReason": "基礎：需分辨 a 項、b 項及常數項，避免跨類合併。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "只使用多項式項與同類項定義。",
+        "languageCheck": "式子與所求結果完整，使用一致代數符號。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "本題改為多類項分類，與 U03 的單一字母直接合併題區隔。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u17-s016-v002",
+      "batch": "018-u17-complete",
+      "path": "units/u17/s016/mc-questions.jsonl",
+      "expectedOriginalText": "四邊形三個內角為80°、95°、110°，第四角是多少？",
+      "expectedAnswerIndex": 0,
+      "questionPatch": {
+        "text": "四邊形有兩個直角，另外兩個內角相等。每一個相等的內角是多少？",
+        "givenConditions": [
+          "四邊形內角和為 360°。",
+          "其中兩個內角各為 90°。",
+          "其餘兩個內角相等。"
+        ],
+        "target": "利用內角和與相等關係求每一個未知角",
+        "choices": [
+          "90°",
+          "45°",
+          "180°",
+          "270°"
+        ],
+        "independentSolution": "四邊形內角和為 360°；兩個直角合計 180°，其餘兩角合計 180°，又因兩角相等，所以每角為 90°。",
+        "explanation": "先扣除兩個直角，再把剩餘角度平均分給兩個相等角。",
+        "steps": [
+          "360°−90°−90°=180°。",
+          "180°÷2=90°。",
+          "因此每一個相等的內角為 90°。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "90°",
+            "truth": true,
+            "reason": "兩個直角合計 180°，剩餘 180° 平分給兩個相等角，因此每角正好是 90°。"
+          },
+          {
+            "choice": "45°",
+            "truth": false,
+            "reason": "45° 是把剩餘 180° 錯誤除以四；題目只有兩個相等的未知角，應除以二。"
+          },
+          {
+            "choice": "180°",
+            "truth": false,
+            "reason": "180° 是兩個未知角合計的角度，不是每一個未知內角各自的大小。"
+          },
+          {
+            "choice": "270°",
+            "truth": false,
+            "reason": "270° 只扣除一個直角，忽略題目還有第二個 90° 直角與兩角相等條件。"
+          }
+        ],
+        "misconceptionTarget": "求出兩個未知角總和後忘記除以 2",
+        "prerequisiteCheck": "只使用四邊形內角和、直角與相等關係。",
+        "unitCheck": "角度以度表示。",
+        "roundingCheck": "全部角度為精確值。",
+        "ambiguityAudit": "兩個未知角明示相等，因此由總和可唯一決定每角 90°。",
+        "boundaryAudit": "只使用國中平面幾何角度關係。",
+        "difficultyReason": "基礎：先扣除已知角，再平均分配剩餘角度。"
+      },
+      "reviewPatch": {
+        "independentSolution": "四邊形內角和為 360°；兩個直角合計 180°，其餘兩角合計 180°，又因兩角相等，所以每角為 90°。",
+        "derivedAnswer": "90°",
+        "storedAnswer": "90°",
+        "answerMatch": true,
+        "optionTruth": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「90°」。其餘選項逐項檢查：「45°」除錯對象；「180°」是兩角總和；「270°」只扣一個直角",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「利用四邊形內角和及相等條件求角」。",
+          "unitConflict": "角度統一以度表示。 依題幹全部條件重新核對後仍只有一個答案。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。",
+          "domainBoundary": "只使用四邊形內角和、直角與相等角。 依題幹全部條件重新核對後仍只有一個答案。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。"
+        },
+        "difficultyReason": "基礎：需連續使用內角和、扣除已知角與平均分配。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "只使用本技能與直角的先備知識。",
+        "languageCheck": "兩個直角與另外兩角相等的條件完整明示。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "獨立重算：四邊形內角和為 360°；兩個直角合計 180°，其餘兩角合計 180°，又因兩角相等，所以每角為 90°。 正確答案為 90°。四個選項已依四邊形內角和、兩個直角與另外兩角相等三項條件逐項代回，只有第一項成立；其餘選項分別是除數錯誤、把總和當單角或漏掉已知角。",
+        "reviewedAt": "2026-07-12"
+      }
+    },
+    {
+      "questionId": "u23-s013-v009",
+      "batch": "024-u23-complete",
+      "path": "units/u23/s013/mc-questions.jsonl",
+      "expectedOriginalText": "下列哪一個等式正確？",
+      "expectedAnswerIndex": 1,
+      "questionPatch": {
+        "prompt": "核對體積與容量的常用換算後，下列哪一個等式同時具有正確量綱與倍率？",
+        "text": "核對體積與容量的常用換算後，下列哪一個等式同時具有正確量綱與倍率？",
+        "givenConditions": [
+          "使用 1 mL=1 cm³、1 L=1000 mL 與 1 m=100 cm 等常用定義。"
+        ],
+        "target": "辨認量綱與倍率都正確的體積和容量等式",
+        "independentSolution": "不參照答案欄，逐項核對量綱與倍率。1 mL 定義為 1 cm³。平方公分是面積單位；1 m³=(100 cm)³=1,000,000 cm³；1 L=1000 mL=1000 cm³。 因此唯一正確為「1 cm³=1 mL」。",
+        "explanation": "1 mL 定義為 1 cm³。平方公分是面積單位；1 m³=(100 cm)³=1,000,000 cm³；1 L=1000 mL=1000 cm³。",
+        "steps": [
+          "先排除面積單位 cm² 與容量 mL 的混用。",
+          "將 1 m³ 依三個方向都乘 100，得到 1,000,000 cm³。",
+          "以 1 L=1000 mL=1000 cm³ 核對容量換算。"
+        ],
+        "optionAnalysis": [
+          {
+            "choice": "1 cm²=1 mL",
+            "truth": false,
+            "reason": "cm² 是面積單位，不能和容量 mL 相等。"
+          },
+          {
+            "choice": "1 cm³=1 mL",
+            "truth": true,
+            "reason": "1 mL 的體積正好是 1 cm³。"
+          },
+          {
+            "choice": "1 m³=1000 cm³",
+            "truth": false,
+            "reason": "1 m³=1,000,000 cm³，不是 1000 cm³。"
+          },
+          {
+            "choice": "1 L=100 cm³",
+            "truth": false,
+            "reason": "1 L=1000 cm³，不是 100 cm³。"
+          }
+        ],
+        "misconceptionTarget": "只換一個方向的長度倍率，或混淆面積、體積與容量單位。",
+        "authoringIntent": "同時檢查量綱與立方倍率的體積容量換算。",
+        "difficultyReason": "進階：四個選項分別設置量綱錯誤、立方倍率錯誤與容量倍率錯誤。",
+        "prerequisiteCheck": "已會長度單位換算、立方單位意義與 1 mL=1 cm³。",
+        "unitCheck": "逐項核對面積、體積與容量量綱；只有 cm³ 與 mL 可按定義直接等量。",
+        "roundingCheck": "全部換算為精確定義，不涉及近似。",
+        "ambiguityBoundaryAudit": "題幹要求量綱與倍率同時正確，四項中只有 1 cm³=1 mL 符合。"
+      },
+      "reviewPatch": {
+        "independentSolution": "不參照答案欄，逐項核對量綱與倍率。1 mL 定義為 1 cm³。平方公分是面積單位；1 m³=(100 cm)³=1,000,000 cm³；1 L=1000 mL=1000 cm³。 因此唯一正確為「1 cm³=1 mL」。",
+        "derivedAnswer": "1 cm³=1 mL",
+        "storedAnswer": "1 cm³=1 mL",
+        "answerMatch": true,
+        "optionTruth": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "uniqueCorrectAnswer": true,
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得到「1 cm³=1 mL」。其餘選項逐項檢查：「1 cm²=1 mL」量綱不同；「1 m³=1000 cm³」少了 1000 倍；「1 L=100 cm³」少了 10 倍",
+          "undefinedSymbol": "題幹中的符號與用語均已在本技能講義定義；所求為「辨認量綱與倍率都正確的體積容量等式」。",
+          "unitConflict": "逐項比較面積、體積或容量單位；只有相容量綱可建立等式。",
+          "roundingConflict": "全部資料為精確值，不涉及四捨五入或近似造成的第二答案。",
+          "domainBoundary": "限國中體積與容量單位換算。 依全部定義重新核對後仍只有唯一答案。",
+          "alternateReading": "常見錯誤只會導向錯誤選項，不形成第二個正解。"
+        },
+        "difficultyReason": "進階：需先判斷量綱，再核對立方倍率與容量定義。",
+        "literacyContextNecessity": null,
+        "prerequisiteCheck": "使用長度倍率、立方單位及容量定義，不使用高中內容。",
+        "languageCheck": "題幹明確要求量綱與倍率同時正確。",
+        "reviewerDecision": "pass",
+        "reviewerNote": "u23-s013-v009 已逐項人工重審。不參照答案欄，逐項核對量綱與倍率。1 mL 定義為 1 cm³。平方公分是面積單位；1 m³=(100 cm)³=1,000,000 cm³；1 L=1000 mL=1000 cm³。 因此唯一正確為「1 cm³=1 mL」。 四個選項分別檢查量綱、立方倍率與容量倍率，真值只有第二項為真；其餘三項各有明確錯因，題目沒有四捨五入、單位混讀或第二個合理答案。",
+        "reviewedAt": "2026-07-12"
+      }
+    }
+  ]
+}

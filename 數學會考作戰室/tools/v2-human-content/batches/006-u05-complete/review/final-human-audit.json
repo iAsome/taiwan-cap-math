@@ -1,0 +1,84 @@
+{
+  "auditVersion": "u05-final-human-audit-r1.0",
+  "auditedAt": "2026-07-12",
+  "unitId": "u05",
+  "scope": {
+    "lectures": 12,
+    "mcQuestions": 144,
+    "constructedResponses": 24,
+    "semanticReviews": 144,
+    "figures": 0
+  },
+  "manualChecks": [
+    "逐題重算選擇題答案",
+    "逐項核對四個選項真值",
+    "檢查負號、括號、分數與單位",
+    "檢查象限與坐標軸邊界",
+    "檢查截距值和截距點",
+    "檢查平行與重合",
+    "檢查素養情境是否為必要資訊",
+    "檢查未使用未來單元知識",
+    "檢查非選題評分與結果追隨"
+  ],
+  "issuesFoundAndRepaired": [
+    {
+      "issueId": "AUD-U05-001",
+      "stage": "lecture title audit",
+      "found": "s012 講義顯示標題含內部頓號「地圖、座位」。",
+      "repair": "改為「地圖和座位與路線資訊」，並重新計算講義內容 SHA-256。",
+      "verification": "所有 12 個講義顯示標題均不含「、」。"
+    },
+    {
+      "issueId": "AUD-U05-002",
+      "stage": "MC independent solution audit",
+      "found": "s001-v009 初稿使用『位於原點正上方』，代數條件無任何候選值成立。",
+      "repair": "改寫為『位於 y 軸上』，保留參數解題目的且確保 k=2 為唯一正解。",
+      "verification": "回代得 U=(0,-3)，其餘三項橫坐標均非 0。"
+    },
+    {
+      "issueId": "AUD-U05-003",
+      "stage": "MC answer audit",
+      "found": "s008-v012 初稿指定『只有 (1,8) 在線上』，但獨立代入顯示 (1,8) 與 (3,4) 都滿足 4x+2y=20。",
+      "repair": "更正正解為『兩點都在直線上』並重排選項至鎖定答案位置。",
+      "verification": "兩點代入左邊均為 20，三個干擾敘述皆不成立。"
+    },
+    {
+      "issueId": "AUD-U05-004",
+      "stage": "MC unique-answer audit",
+      "found": "s009-v006 初稿問『不在直線』，三個候選 b 都不在線，造成多重正解。",
+      "repair": "改問使 A=(2,b) 在線上的 b，唯一解 b=2。",
+      "verification": "8+b=10 只有 b=2；其他選項代入不成立。"
+    },
+    {
+      "issueId": "AUD-U05-005",
+      "stage": "boundary audit",
+      "found": "s010-v008 初稿未限制 b，當 b=0 時直線 x=0 與 y 軸重合，y 截距不是唯一值。",
+      "repair": "在題幹加入 b≠0。",
+      "verification": "此時令 x=0 可唯一得 y=0，兩截距點同為原點。"
+    },
+    {
+      "issueId": "AUD-U05-006",
+      "stage": "near-duplicate prompt audit",
+      "found": "s002-v004 與 s003-v001 數字與點名正規化後問法骨架相同。",
+      "repair": "將 s003-v001 改為『請判斷 A=(7,0) 所在的坐標軸位置。』",
+      "verification": "單元內 144 個正規化題幹骨架皆唯一。"
+    },
+    {
+      "issueId": "AUD-U05-007",
+      "stage": "constructed-response policy audit",
+      "found": "24 題非選擇題初稿的 followThroughPolicy、unitAndNotationRules 與 answerOnlyPolicy 欄位語意未完全對應：部分把只寫答案的給分上限放在結果追隨欄，單位欄只留下答案。",
+      "repair": "逐題重寫三個欄位：明訂早期算術錯誤的結果追隨方式、該題專屬的坐標與單位記法，以及只寫答案時的最高分；重新計算全部 24 題內容 SHA-256。",
+      "verification": "逐題檢查 24 題均同時具備題目專屬的結果追隨政策、單位與記號規則、答案-only 給分規則。"
+    },
+    {
+      "issueId": "AUD-U05-008",
+      "stage": "literacy-necessity audit",
+      "found": "s006-v010 與 s008-v012 的情境必要性說明正確但過於精簡，未清楚指出刪除情境資料後會失去哪個數學判斷。",
+      "repair": "分別補明每格比例是取得公尺答案的必要資料，以及兩筆校正紀錄是檢查線性關係一致性的必要資料；重算題目 SHA-256 並同步語意審查。",
+      "verification": "兩題均明確說明情境資訊不能刪除的數學理由。"
+    }
+  ],
+  "remainingIssues": [],
+  "decision": "pass",
+  "statement": "以上僅記錄實際在撰寫與獨立重算時發現並修復的問題，未虛構修正項目。"
+}

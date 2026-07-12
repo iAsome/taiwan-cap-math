@@ -1,0 +1,1301 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u23-s017-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-solid-measure",
+  "skillId": "solid-sphere-basic",
+  "title": "球體基本：連結半徑直徑和球體積",
+  "lockedSkillTitle": "球體基本",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認球心、半徑與直徑。",
+    "能使用球體積V=4πr³/3。",
+    "能計算半球與球體的一部分體積。",
+    "能由球體積比較半徑縮放造成的體積倍率。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "solid-literacy",
+      "requiredLevel": "能從情境選擇面積或體積模型，並處理容量與近似。",
+      "bridge": "已會圓的半徑與圓面積，也會錐體公式中的三分之一。本技能依鎖定範圍只處理球的體積，不延伸球面積。"
+    }
+  ],
+  "glossary": [
+    [
+      "球體",
+      "空間中到固定點距離不超過固定值的所有點所成的立體。"
+    ],
+    [
+      "球面",
+      "到球心距離恰等於半徑的點集合。"
+    ],
+    [
+      "球心",
+      "球的中心固定點。"
+    ],
+    [
+      "半徑r",
+      "球心到球面任一點的距離。"
+    ],
+    [
+      "直徑d",
+      "通過球心、兩端在球面的線段，d=2r。"
+    ]
+  ],
+  "notation": [
+    [
+      "r",
+      "球半徑。"
+    ],
+    [
+      "d=2r",
+      "球直徑。"
+    ],
+    [
+      "V=4πr³/3",
+      "球體積公式。"
+    ]
+  ],
+  "conceptNarrative": [
+    "球在任何方向都以球心對稱；所有半徑相等，直徑是半徑的2倍。",
+    "球體積與半徑的三次方成正比：半徑稍微增加，體積會大幅增加。",
+    "國中範圍使用V=4πr³/3；半球體積是完整球體積的一半，即2πr³/3。",
+    "題目若給直徑，必須先除以2；若只是一個球冠或不規則球缺，不可直接視為半球，除非題目明示。"
+  ],
+  "formalDefinitions": [
+    [
+      "球體積",
+      "V=4πr³/3。"
+    ],
+    [
+      "半球體積",
+      "完整球的一半，V=2πr³/3。"
+    ],
+    [
+      "體積倍率",
+      "相似球半徑比a:b時，體積比a³:b³。"
+    ]
+  ],
+  "formulas": [
+    [
+      "V球=4πr³/3",
+      [
+        "r為半徑"
+      ],
+      "只適用完整球體積。"
+    ],
+    [
+      "V半球=2πr³/3",
+      [
+        "沿通過球心平面切成兩半"
+      ],
+      "完整球的一半。"
+    ]
+  ],
+  "nonApplicableCases": [
+    "本技能不計算球面積。",
+    "給直徑時不能直接代r。",
+    "半球必須是通過球心切開的恰一半。",
+    "空心球殼材料體積要用外球體積減內球體積。"
+  ],
+  "method": [
+    [
+      "確認完整球、半球或球殼",
+      "所求區域是哪一部分？"
+    ],
+    [
+      "由直徑求半徑",
+      "r=d/2。"
+    ],
+    [
+      "計算r³",
+      "先處理半徑立方。"
+    ],
+    [
+      "乘4π/3或取相應比例",
+      "完整球或半球？"
+    ],
+    [
+      "檢查倍率與單位",
+      "體積用立方單位。"
+    ]
+  ],
+  "workedExamples": [
+    [
+      "L1",
+      "半徑3公分的球體積？",
+      [
+        "4π×27÷3。"
+      ],
+      "36π立方公分。"
+    ],
+    [
+      "L2",
+      "直徑10公分的球體積？",
+      [
+        "半徑5。",
+        "4π×125÷3。"
+      ],
+      "500π/3立方公分。"
+    ],
+    [
+      "L3",
+      "半徑6公分的半球體積？",
+      [
+        "完整球288π，取一半。"
+      ],
+      "144π立方公分。"
+    ],
+    [
+      "L4",
+      "球半徑變2倍，體積變幾倍？",
+      [
+        "2³=8。"
+      ],
+      "8倍。"
+    ]
+  ],
+  "commonMistakes": [
+    [
+      "直徑直接代入r",
+      "半徑放大2倍會使體積放大8倍。",
+      "先除以2。"
+    ],
+    [
+      "只算4πr/3",
+      "漏掉三次方。",
+      "半徑必須立方。"
+    ],
+    [
+      "球體積用πr²",
+      "誤用圓面積。",
+      "球是三維，使用r³。"
+    ],
+    [
+      "半球除以3而非2",
+      "混淆公式係數。",
+      "先算完整球再取一半。"
+    ],
+    [
+      "球殼只用外半徑",
+      "忽略內部空洞。",
+      "外球減內球。"
+    ],
+    [
+      "答案寫平方單位",
+      "忽略體積維度。",
+      "使用立方單位。"
+    ]
+  ],
+  "selfCheck": [
+    "題目給的是半徑還是直徑？",
+    "是否為完整球或恰一半？",
+    "r是否立方？",
+    "係數4/3是否完整？",
+    "答案是否為立方單位？"
+  ],
+  "summary": [
+    "直徑d=2r。",
+    "球體積V=4πr³/3。",
+    "半球是球體積的一半。",
+    "半徑倍率要立方成體積倍率。",
+    "本技能不延伸球面積。"
+  ],
+  "connections": {
+    "previous": "前面已學柱體、錐體與組合體積；球體提供另一種常見三維模型。",
+    "next": [
+      "生活應用會把球體積連結容量、排水與材料量。",
+      "縮放與體積比會統一處理所有相似立體的三次方倍率。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s017-v001",
+      "u23-s017-v002",
+      "u23-s017-v003",
+      "u23-s017-v004",
+      "u23-s017-v005",
+      "u23-s017-v006",
+      "u23-s017-v007",
+      "u23-s017-v008",
+      "u23-s017-v009",
+      "u23-s017-v010",
+      "u23-s017-v011",
+      "u23-s017-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s017-cr001",
+      "u23-s017-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐例重算36π、500π/3、144π與8倍；確認直徑先除2、半球取1/2、球體積使用r³，並遵守鎖定範圍不引入球面積。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "110cfc9cf017c84bb623627832d5d0bdc2cae8beb50f7be512ad542709034977"
+};
+
+export const QUESTIONS = [
+  {
+    "prompt": "半徑 3 公分的球，體積是多少？",
+    "text": "半徑 3 公分的球，體積是多少？",
+    "choices": [
+      "36π",
+      "18π",
+      "27π",
+      "9π"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：3³=27；乘4π除3。所得結果是「36π」。",
+    "explanation": "V=4π×3³÷3=4π×27÷3=36π立方公分。",
+    "steps": [
+      "3³=27",
+      "乘4π除3"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "36π",
+        "truth": true,
+        "reason": "依獨立計算「乘4π除3」，此選項符合所求「體積」。"
+      },
+      {
+        "choice": "18π",
+        "truth": false,
+        "reason": "少一半。"
+      },
+      {
+        "choice": "27π",
+        "truth": false,
+        "reason": "漏係數。"
+      },
+      {
+        "choice": "9π",
+        "truth": false,
+        "reason": "圓面積。"
+      }
+    ],
+    "misconceptionTarget": "把球體積誤成圓面積或漏三次方。",
+    "authoringIntent": "直接計算球體積。",
+    "difficulty": "basic",
+    "givenConditions": [
+      "半徑3"
+    ],
+    "target": "體積",
+    "difficultyReason": "基礎：直接代球體積公式。",
+    "prerequisiteCheck": "已會立方與π。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "立方公分。 所求「體積」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "保留π。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "完整球。 題幹已完整限制「體積」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v001",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "basic"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "d6ac05b79dd497e0c75cf5e68c767dca794aca6720d73226dae524aebc365c72"
+  },
+  {
+    "prompt": "一個球的直徑為 8 公分，半徑是多少？",
+    "text": "一個球的直徑為 8 公分，半徑是多少？",
+    "choices": [
+      "2",
+      "8",
+      "4",
+      "16"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：8÷2=4。所得結果是「4」。",
+    "explanation": "半徑是直徑的一半，8÷2=4公分。",
+    "steps": [
+      "8÷2=4"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "再除2。"
+      },
+      {
+        "choice": "8",
+        "truth": false,
+        "reason": "把直徑當半徑。"
+      },
+      {
+        "choice": "4",
+        "truth": true,
+        "reason": "依獨立計算「8÷2=4」，此選項符合所求「半徑」。"
+      },
+      {
+        "choice": "16",
+        "truth": false,
+        "reason": "加倍方向錯。"
+      }
+    ],
+    "misconceptionTarget": "把直徑直接當半徑。 必須依「辨認球的半徑與直徑。」的關係重新核對。",
+    "authoringIntent": "辨認球的半徑與直徑。",
+    "difficulty": "basic",
+    "givenConditions": [
+      "直徑8"
+    ],
+    "target": "半徑",
+    "difficultyReason": "基礎：單一步驟關係。 本題以「辨認球的半徑與直徑。」作為該難度的具體判準。",
+    "prerequisiteCheck": "已會圓的半徑直徑。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "公分。 所求「半徑」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "直徑通過球心。 題幹已完整限制「半徑」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v002",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "basic"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "9ad8d5b796218853b94356b5b557153c643647f985d510def8c03f18245b0670"
+  },
+  {
+    "prompt": "半徑 6 公分的半球，體積是多少？",
+    "text": "半徑 6 公分的半球，體積是多少？",
+    "choices": [
+      "72π",
+      "108π",
+      "288π",
+      "144π"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：算完整球288π；除2得144π。所得結果是「144π」。",
+    "explanation": "完整球體積=4π×6³÷3=288π；半球取一半=144π立方公分。",
+    "steps": [
+      "算完整球288π",
+      "除2得144π"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "72π",
+        "truth": false,
+        "reason": "再除2。"
+      },
+      {
+        "choice": "108π",
+        "truth": false,
+        "reason": "係數錯。"
+      },
+      {
+        "choice": "288π",
+        "truth": false,
+        "reason": "完整球未取半。"
+      },
+      {
+        "choice": "144π",
+        "truth": true,
+        "reason": "依獨立計算「除2得144π」，此選項符合所求「半球體積」。"
+      }
+    ],
+    "misconceptionTarget": "算出完整球後忘記取一半。",
+    "authoringIntent": "計算半球體積。",
+    "difficulty": "basic",
+    "givenConditions": [
+      "半徑6",
+      "沿球心平面切半"
+    ],
+    "target": "半球體積",
+    "difficultyReason": "基礎：公式後取1/2。 本題以「計算半球體積。」作為該難度的具體判準。",
+    "prerequisiteCheck": "已會球體積。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "立方公分。 所求「半球體積」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "保留π。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "半球為恰一半。 題幹已完整限制「半球體積」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v003",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "basic"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "0cf33a7a2fde2f406706fc1c9093a21c72c0f7e85649e4cadcb885928b5e5848"
+  },
+  {
+    "prompt": "直徑 10 公分的球，其體積為何？",
+    "text": "直徑 10 公分的球，其體積為何？",
+    "choices": [
+      "125π/3",
+      "500π/3",
+      "250π/3",
+      "4000π/3"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：直徑除2得5；5³=125；乘4π/3。所得結果是「500π/3」。",
+    "explanation": "半徑=5，V=4π×5³÷3=500π/3立方公分。",
+    "steps": [
+      "直徑除2得5",
+      "5³=125",
+      "乘4π/3"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "125π/3",
+        "truth": false,
+        "reason": "少乘4。"
+      },
+      {
+        "choice": "500π/3",
+        "truth": true,
+        "reason": "依獨立計算「乘4π/3」，此選項符合所求「球體積」。"
+      },
+      {
+        "choice": "250π/3",
+        "truth": false,
+        "reason": "少一半。"
+      },
+      {
+        "choice": "4000π/3",
+        "truth": false,
+        "reason": "把直徑10當半徑。"
+      }
+    ],
+    "misconceptionTarget": "直徑直接立方代入。 必須依「由直徑計算球體積。」的關係重新核對。",
+    "authoringIntent": "由直徑計算球體積。",
+    "difficulty": "standard",
+    "givenConditions": [
+      "直徑10"
+    ],
+    "target": "球體積",
+    "difficultyReason": "標準：先辨認半徑再使用公式。",
+    "prerequisiteCheck": "已會直徑轉半徑。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "立方公分。 所求「球體積」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確分數。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "完整球。 題幹已完整限制「球體積」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v004",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "standard"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "9008be0cb62c24b3f09f45aef84377beec3dac7d5204b4262427027e7d683a19"
+  },
+  {
+    "prompt": "球半徑由 2 公分增加到 4 公分，體積變為原來的幾倍？",
+    "text": "球半徑由 2 公分增加到 4 公分，體積變為原來的幾倍？",
+    "choices": [
+      "2倍",
+      "4倍",
+      "6倍",
+      "8倍"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：半徑倍數2；體積倍數2³。所得結果是「8倍」。",
+    "explanation": "半徑比4:2=2:1，體積比為2³=8倍。",
+    "steps": [
+      "半徑倍數2",
+      "體積倍數2³"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2倍",
+        "truth": false,
+        "reason": "此選項無法符合所求「體積倍數」；錯誤來源會是：把體積倍率誤成半徑倍率或平方倍率。"
+      },
+      {
+        "choice": "4倍",
+        "truth": false,
+        "reason": "此選項無法符合所求「體積倍數」；錯誤來源會是：把體積倍率誤成半徑倍率或平方倍率。"
+      },
+      {
+        "choice": "6倍",
+        "truth": false,
+        "reason": "加法錯。"
+      },
+      {
+        "choice": "8倍",
+        "truth": true,
+        "reason": "依獨立計算「體積倍數2³」，此選項符合所求「體積倍數」。"
+      }
+    ],
+    "misconceptionTarget": "把體積倍率誤成半徑倍率或平方倍率。",
+    "authoringIntent": "比較球的縮放體積。",
+    "difficulty": "standard",
+    "givenConditions": [
+      "半徑2變4"
+    ],
+    "target": "體積倍數",
+    "difficultyReason": "標準：使用三次方比例。 本題以「比較球的縮放體積。」作為該難度的具體判準。",
+    "prerequisiteCheck": "已會球體積r³。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "倍數無單位。 所求「體積倍數」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "兩球形狀相似。 題幹已完整限制「體積倍數」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v005",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "standard"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "c9f1fa5af5541f9c282dc6c3e412eed9414da0c107a13cfd12278fcd02da2ee3"
+  },
+  {
+    "prompt": "兩個球的半徑比為 2：3，體積比為何？",
+    "text": "兩個球的半徑比為 2：3，體積比為何？",
+    "choices": [
+      "2：3",
+      "8：27",
+      "4：9",
+      "16：81"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：半徑比立方。所得結果是「8：27」。",
+    "explanation": "球體積與r³成正比，所以體積比=2³:3³=8:27。",
+    "steps": [
+      "半徑比立方"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2：3",
+        "truth": false,
+        "reason": "線性比。"
+      },
+      {
+        "choice": "8：27",
+        "truth": true,
+        "reason": "依獨立計算「半徑比立方」，此選項符合所求「體積比」。"
+      },
+      {
+        "choice": "4：9",
+        "truth": false,
+        "reason": "面積型平方比。"
+      },
+      {
+        "choice": "16：81",
+        "truth": false,
+        "reason": "四次方。"
+      }
+    ],
+    "misconceptionTarget": "把體積比用平方。 必須依「由半徑比求球體積比。」的關係重新核對。",
+    "authoringIntent": "由半徑比求球體積比。",
+    "difficulty": "standard",
+    "givenConditions": [
+      "半徑比2:3"
+    ],
+    "target": "體積比",
+    "difficultyReason": "標準：辨認三次方倍率。 本題以「由半徑比求球體積比。」作為該難度的具體判準。",
+    "prerequisiteCheck": "已會比與指數。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "比無單位。 所求「體積比」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "兩球均完整。 題幹已完整限制「體積比」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v006",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "standard"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "d43e19e83415d660607a91048f1f69e092fa41fdba58e29333b745ecfc1340c8"
+  },
+  {
+    "prompt": "一個實心球體積為 288π 立方公分，半徑是多少？",
+    "text": "一個實心球體積為 288π 立方公分，半徑是多少？",
+    "choices": [
+      "6",
+      "4",
+      "5",
+      "3"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：約去π；乘3除4得216；立方根6。所得結果是「6」。",
+    "explanation": "4πr³/3=288π，r³=216，所以r=6公分。",
+    "steps": [
+      "約去π",
+      "乘3除4得216",
+      "立方根6"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6",
+        "truth": true,
+        "reason": "正確216。"
+      },
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "此選項無法符合所求「半徑」；錯誤來源會是：解方程時未取立方根。 必須依「由球體積反求半徑。」的關係重新核對。"
+      },
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "125。"
+      },
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "r³=27。"
+      }
+    ],
+    "misconceptionTarget": "解方程時未取立方根。 必須依「由球體積反求半徑。」的關係重新核對。",
+    "authoringIntent": "由球體積反求半徑。",
+    "difficulty": "advanced",
+    "givenConditions": [
+      "體積288π"
+    ],
+    "target": "半徑",
+    "difficultyReason": "進階：反向處理立方關係。",
+    "prerequisiteCheck": "已會立方根6³=216。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "公分。 所求「半徑」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "半徑取正值。 題幹已完整限制「半徑」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v007",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "advanced"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "4d21440e99421e32796499e2fbffe87af22bbc03f3fa655524eccba1c87a4164"
+  },
+  {
+    "prompt": "一個空心球殼外半徑 5 公分、內半徑 3 公分，其材料體積是多少？",
+    "text": "一個空心球殼外半徑 5 公分、內半徑 3 公分，其材料體積是多少？",
+    "choices": [
+      "196π/3",
+      "500π/3",
+      "392π/3",
+      "608π/3"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：外內立方差98；乘4π/3。所得結果是「392π/3」。",
+    "explanation": "材料體積=4π(5³-3³)/3=4π(125-27)/3=392π/3立方公分。",
+    "steps": [
+      "外內立方差98",
+      "乘4π/3"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "196π/3",
+        "truth": false,
+        "reason": "少一半。"
+      },
+      {
+        "choice": "500π/3",
+        "truth": false,
+        "reason": "只算外球。"
+      },
+      {
+        "choice": "392π/3",
+        "truth": true,
+        "reason": "依獨立計算「乘4π/3」，此選項符合所求「材料體積」。"
+      },
+      {
+        "choice": "608π/3",
+        "truth": false,
+        "reason": "加而非減。"
+      }
+    ],
+    "misconceptionTarget": "把半徑差2直接立方，或只算外球。",
+    "authoringIntent": "計算球殼材料體積。",
+    "difficulty": "advanced",
+    "givenConditions": [
+      "外r5",
+      "內r3",
+      "同心空腔"
+    ],
+    "target": "材料體積",
+    "difficultyReason": "進階：外球體積減內球體積。",
+    "prerequisiteCheck": "已會組合體減法。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "立方公分。 所求「材料體積」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "保留分數π。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "內球完全在外球內。 題幹已完整限制「材料體積」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v008",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "advanced"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "cc090dad4294d5dcc29f3954ff38d8a928a3b760c7679d9c5158ac1f55c5d62c"
+  },
+  {
+    "prompt": "一個半球與一個圓錐底面半徑相同，圓錐高等於半徑。半球體積是圓錐體積的幾倍？",
+    "text": "一個半球與一個圓錐底面半徑相同，圓錐高等於半徑。半球體積是圓錐體積的幾倍？",
+    "choices": [
+      "1倍",
+      "2倍",
+      "3倍",
+      "4倍"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：寫兩體積；相除得2。所得結果是「2倍」。",
+    "explanation": "半球體積=2πr³/3；圓錐體積=πr²·r/3=πr³/3，所以半球是2倍。",
+    "steps": [
+      "寫兩體積",
+      "相除得2"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1倍",
+        "truth": false,
+        "reason": "漏半球係數。"
+      },
+      {
+        "choice": "2倍",
+        "truth": true,
+        "reason": "依獨立計算「相除得2」，此選項符合所求「體積倍數」。"
+      },
+      {
+        "choice": "3倍",
+        "truth": false,
+        "reason": "把球係數誤讀。"
+      },
+      {
+        "choice": "4倍",
+        "truth": false,
+        "reason": "此選項無法符合所求「體積倍數」；錯誤來源會是：比較時混淆半球與完整球。"
+      }
+    ],
+    "misconceptionTarget": "比較時混淆半球與完整球。",
+    "authoringIntent": "比較半球與特定圓錐體積。",
+    "difficulty": "advanced",
+    "givenConditions": [
+      "共同r",
+      "圓錐h=r"
+    ],
+    "target": "體積倍數",
+    "difficultyReason": "進階：跨兩種公式化簡共同因子。",
+    "prerequisiteCheck": "已會圓錐體積。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "倍數無單位。 所求「體積倍數」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "r>0。 題幹已完整限制「體積倍數」的範圍與取值方向。",
+    "literacyContextNecessity": null,
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v009",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "advanced"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "4d802d8a56c7a48ad1985a9eb27683b7e63d4ffe8df0db2ef22df08f3a563a8b"
+  },
+  {
+    "prompt": "一顆球形裝飾品內部半徑 6 公分，若完全裝滿液體，容量是多少毫升？取π=3.14，四捨五入到整數。",
+    "text": "一顆球形裝飾品內部半徑 6 公分，若完全裝滿液體，容量是多少毫升？取π=3.14，四捨五入到整數。",
+    "choices": [
+      "452",
+      "678",
+      "1809",
+      "904"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：6³=216；算904.32cm³；換mL並取整。所得結果是「904」。",
+    "explanation": "體積=4×3.14×6³÷3=904.32立方公分，等於904.32毫升，四捨五入為904毫升。",
+    "steps": [
+      "6³=216",
+      "算904.32cm³",
+      "換mL並取整"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "452",
+        "truth": false,
+        "reason": "此選項無法符合所求「容量mL」；錯誤來源會是：把球體當半球或忘記1cm³=1mL。"
+      },
+      {
+        "choice": "678",
+        "truth": false,
+        "reason": "係數錯。"
+      },
+      {
+        "choice": "1809",
+        "truth": false,
+        "reason": "多一倍。"
+      },
+      {
+        "choice": "904",
+        "truth": true,
+        "reason": "依獨立計算「換mL並取整」，此選項符合所求「容量mL」。"
+      }
+    ],
+    "misconceptionTarget": "把球體當半球或忘記1cm³=1mL。",
+    "authoringIntent": "估算球形容器容量。",
+    "difficulty": "literacy",
+    "givenConditions": [
+      "內r6cm",
+      "π=3.14",
+      "裝滿",
+      "取整"
+    ],
+    "target": "容量mL",
+    "difficultyReason": "素養：使用內部半徑、容量換算與指定近似。",
+    "prerequisiteCheck": "已會球體積與mL。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "1cm³=1mL。 所求「容量mL」與四個選項採同一單位或同一無單位比值。",
+    "roundingCheck": "四捨五入至整數。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "忽略殼厚，半徑已為內半徑。",
+    "literacyContextNecessity": "球形裝飾品以內半徑決定可裝液體體積，答案又要求毫升與四捨五入；內部尺寸及近似規則皆必要。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v010",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "literacy"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "62eedddab840c761904f9dfd3e7323a5c07c8f2676ef7f0f320d75836ae3f7e9"
+  },
+  {
+    "prompt": "一顆球形金屬珠半徑 1.5 公分，金屬密度為每立方公分 8 公克。取π=3.14，其質量約多少公克？",
+    "text": "一顆球形金屬珠半徑 1.5 公分，金屬密度為每立方公分 8 公克。取π=3.14，其質量約多少公克？",
+    "choices": [
+      "56.52",
+      "84.78",
+      "113.04",
+      "226.08"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：1.5³=3.375；體積14.13；乘8得113.04。所得結果是「113.04」。",
+    "explanation": "體積=4×3.14×1.5³÷3=14.13立方公分；質量=14.13×8=113.04公克。",
+    "steps": [
+      "1.5³=3.375",
+      "體積14.13",
+      "乘8得113.04"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "56.52",
+        "truth": false,
+        "reason": "體積乘4錯。"
+      },
+      {
+        "choice": "84.78",
+        "truth": false,
+        "reason": "少乘密度。"
+      },
+      {
+        "choice": "113.04",
+        "truth": true,
+        "reason": "依獨立計算「乘8得113.04」，此選項符合所求「質量」。"
+      },
+      {
+        "choice": "226.08",
+        "truth": false,
+        "reason": "多一倍。"
+      }
+    ],
+    "misconceptionTarget": "算完體積未乘密度，或小數立方錯誤。",
+    "authoringIntent": "由球體積與密度求質量。",
+    "difficulty": "literacy",
+    "givenConditions": [
+      "r1.5cm",
+      "密度8g/cm³",
+      "π3.14"
+    ],
+    "target": "質量",
+    "difficultyReason": "素養：體積只是中間量，需用密度轉成質量。",
+    "prerequisiteCheck": "已會密度。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "cm³×g/cm³=g。",
+    "roundingCheck": "依給定π，精確至0.01g。",
+    "ambiguityBoundaryAudit": "密度均勻。 題幹已完整限制「質量」的範圍與取值方向。",
+    "literacyContextNecessity": "球形金屬珠的半徑先決定體積，再乘每立方公分8公克的材料密度；沒有密度便不能求質量。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v011",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "literacy"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "c3bf09d4d57a6a33dec3aa75a2511a7ff45e580b0605741d80caea1c8d5fab3a"
+  },
+  {
+    "prompt": "直徑 12 公分的冰球完全融化，水的體積視為不變。若倒入底面積 72π 平方公分的直筒中，水深多少公分？",
+    "text": "直徑 12 公分的冰球完全融化，水的體積視為不變。若倒入底面積 72π 平方公分的直筒中，水深多少公分？",
+    "choices": [
+      "4",
+      "2",
+      "6",
+      "8"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "不參照答案欄，重新使用題目條件計算：求球體積288π；除底面積72π。所得結果是「4」。",
+    "explanation": "冰球半徑6，體積=4π×216÷3=288π立方公分。水深=288π÷72π=4公分。",
+    "steps": [
+      "求球體積288π",
+      "除底面積72π"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "4",
+        "truth": true,
+        "reason": "依獨立計算「除底面積72π」，此選項符合所求「水深」。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "少一半。"
+      },
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "把直徑當高。"
+      },
+      {
+        "choice": "8",
+        "truth": false,
+        "reason": "此選項無法符合所求「水深」；錯誤來源會是：把球直徑12直接當半徑，或未用體積守恆。"
+      }
+    ],
+    "misconceptionTarget": "把球直徑12直接當半徑，或未用體積守恆。",
+    "authoringIntent": "融化後由球體積求柱中水深。",
+    "difficulty": "literacy",
+    "givenConditions": [
+      "球d12",
+      "融化體積不變",
+      "筒底72π"
+    ],
+    "target": "水深",
+    "difficultyReason": "素養：跨球體積、守恆與柱體反求高度。",
+    "prerequisiteCheck": "已會體積守恆。 本題只再使用先備「solid-literacy」與本技能定義。",
+    "estimatedTimeSec": 90,
+    "unitCheck": "立方公分除平方公分得公分。",
+    "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+    "ambiguityBoundaryAudit": "忽略融化體積變化由題目明示。",
+    "literacyContextNecessity": "冰球融化時體積視為不變，水倒入指定底面積的直筒後再由V=Bh反求水深，守恆與容器資料不可刪除。",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "questionId": "u23-s017-v012",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "tags": [
+      "空間與形狀",
+      "球體基本",
+      "literacy"
+    ],
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "2db829aa42c23168de1a7a8b79cd1cb4134df1cd9499deb0c2108193ae5500cc"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "prompt": "一個球的體積為 36π 立方公分。求球半徑，並說明為何不能把 36π 直接開平方。",
+    "requiredWork": [
+      "建立4πr³/3=36π。",
+      "解出r³。",
+      "取立方根並解釋維度。"
+    ],
+    "fullCreditSolution": [
+      "4πr³/3=36π。",
+      "約去π並乘3÷4，得r³=27。",
+      "r=3公分。",
+      "球體積與r³成正比，因此應取立方根，不是平方根。"
+    ],
+    "alternativeSolutions": [
+      "可代入候選半徑3驗算4π×27÷3=36π。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完整解得3公分並說明立方根。"
+      },
+      {
+        "score": 2,
+        "criteria": "答案3與主要方程正確，但解釋略缺。"
+      },
+      {
+        "score": 1,
+        "criteria": "知道使用球體積公式，但代數或立方根有一處錯誤。"
+      },
+      {
+        "score": 0,
+        "criteria": "直接把36開平方或無有效作答。"
+      }
+    ],
+    "partialCreditRules": [
+      "答案3與主要方程正確，但解釋略缺。",
+      "知道使用球體積公式，但代數或立方根有一處錯誤。"
+    ],
+    "followThroughPolicy": "若r³計算有單一算術錯誤但知道取立方根，可保留概念分。",
+    "unitNotationRules": "體積立方公分；半徑公分。",
+    "answerOnlyPolicy": "只寫3公分可得2分，因要求解釋。",
+    "difficulty": "standard",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "independentReview": {
+      "derivedResult": "3公分。",
+      "ambiguityAndBoundary": "獨立由方程得r³=27，正半徑r=3；平方根不符合r³的公式與量綱。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "questionId": "u23-s017-cr001",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "ba27129c244124cfbd95507da383c4475eb209ab985f42ca0b173c10d4bbc2a1"
+  },
+  {
+    "prompt": "兩顆實心球半徑分別為 3 公分與 4 公分。將它們熔化成一顆新球且無損耗，求新球半徑。",
+    "requiredWork": [
+      "以球體積相加。",
+      "建立新球半徑R的方程。",
+      "求立方根。"
+    ],
+    "fullCreditSolution": [
+      "原總體積=4π(3³+4³)/3=4π(27+64)/3=4π×91/3。",
+      "設新球半徑R，則4πR³/3=4π×91/3。",
+      "R³=91，所以R=∛91公分，約4.50公分。"
+    ],
+    "alternativeSolutions": [
+      "可先約去共同係數4π/3，直接用R³=3³+4³。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "建立R³=91並給∛91（約4.50）公分。"
+      },
+      {
+        "score": 2,
+        "criteria": "精確答案正確但近似缺少，或反之。"
+      },
+      {
+        "score": 1,
+        "criteria": "知道體積相加但誤把半徑直接相加。"
+      },
+      {
+        "score": 0,
+        "criteria": "答7公分且無體積理由，或無有效作答。"
+      }
+    ],
+    "partialCreditRules": [
+      "精確答案正確但近似缺少，或反之。",
+      "知道體積相加但誤把半徑直接相加。"
+    ],
+    "followThroughPolicy": "若27+64有單一算術錯誤但後續取立方根正確，可保留方法分。",
+    "unitNotationRules": "半徑用公分；可保留∛91。",
+    "answerOnlyPolicy": "只寫∛91公分可得滿答案分，但需過程才得3分。",
+    "difficulty": "advanced",
+    "figureId": null,
+    "drawingSpecId": null,
+    "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+    "independentReview": {
+      "derivedResult": "∛91公分，約4.50公分。",
+      "ambiguityAndBoundary": "獨立利用共同係數約去得到R³=91；4³=64<91<125=5³，所以R在4與5間，約4.50合理。",
+      "decision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "questionId": "u23-s017-cr002",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-solid-measure",
+    "skillId": "solid-sphere-basic",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "988c770f2270ddca2fa858befd10eb0e64a302bc05b85df53611a0ee05a57159"
+  }
+];
+
+export const DRAWING_SPECS = [];

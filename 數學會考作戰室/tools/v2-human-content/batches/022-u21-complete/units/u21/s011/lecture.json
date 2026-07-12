@@ -1,0 +1,286 @@
+{
+  "lectureId": "u21-s011-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-literacy",
+  "skillId": "quadratic-function-literacy",
+  "lockedTitle": "二次函數素養題",
+  "title": "二次函數素養題：讀模型與限範圍和解釋答案",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-function-literacy"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從文字、表格或圖形辨認變數與單位。",
+    "能判讀模型中頂點、截距與對稱的實際意義。",
+    "能只在合理定義域內回答問題。",
+    "能評估模型預測是否超出資料與情境。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-application-area",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "已會建面積模型與求極值；本節把前面技能整合到拋射、拱門、收益與量測資料等情境。",
+  "glossary": [
+    {
+      "term": "模型",
+      "definition": "用函數近似描述實際量之間的關係。"
+    },
+    {
+      "term": "自變數",
+      "definition": "主動選取或時間推進的輸入量。"
+    },
+    {
+      "term": "應變數",
+      "definition": "隨輸入變化的輸出量。"
+    },
+    {
+      "term": "截距",
+      "definition": "圖形與座標軸交會的位置。"
+    },
+    {
+      "term": "外插",
+      "definition": "在觀測範圍之外使用模型預測。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "h(t)",
+      "meaning": "高度 h 隨時間 t 變化。"
+    },
+    {
+      "symbol": "R(x)",
+      "meaning": "收益或收入 R 隨數量 x 變化。"
+    },
+    {
+      "symbol": "0≤t≤T",
+      "meaning": "只討論事件開始到結束的合理時間。"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題先讀情境，不要一看到式子就急著算。變數名稱、單位與允許範圍決定答案能否成立。",
+    "頂點在不同情境可代表最高高度、最大收益、最低成本或最佳面積；必須用開口與量的意義判斷。",
+    "截距也有語意：h(0) 是初始高度；正的時間截距可能是物體落地時刻，但負時間截距通常不符合事件。",
+    "模型只是題目給定範圍內的描述。把公式延伸到負時間或遠超資料的數量，雖可代數計算，卻可能沒有實際意義。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "情境定義域",
+      "statement": "由時間、距離、數量、容量或安全條件限制的允許輸入集合。"
+    },
+    {
+      "name": "模型解釋",
+      "statement": "把計算得到的 x、y 連同單位與情境角色轉迴文字。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "頂點 (h,k)",
+      "conditions": [
+        "模型為 a(x-h)²+k"
+      ],
+      "meaning": "h 是最佳或轉折輸入，k 是對應輸出。"
+    },
+    {
+      "formula": "f(x)=0",
+      "conditions": [
+        "題意把輸出 0 視為地面、無收益或邊界"
+      ],
+      "meaning": "求與 x 軸交點並篩選合理解。"
+    }
+  ],
+  "nonApplicableCases": [
+    "負時間的代數解通常不屬事件定義域。",
+    "圖形不是按比例時不能用目測高度代替標示數據。",
+    "相關資料看似拋物線不等於已證明因果關係。",
+    "模型在給定區間有效，不代表可無限外插。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出每個變數的意義、單位與範圍。",
+      "check": "x、y 各代表什麼？"
+    },
+    {
+      "step": 2,
+      "instruction": "確認題目要值、時刻、位置或敘述。",
+      "check": "是否有多個所求？"
+    },
+    {
+      "step": 3,
+      "instruction": "選用頂點、代入、對稱或解零點。",
+      "check": "方法與問題對應嗎？"
+    },
+    {
+      "step": 4,
+      "instruction": "刪除不合理的代數解。",
+      "check": "是否符合非負、時間或容量限制？"
+    },
+    {
+      "step": 5,
+      "instruction": "用完整句子與單位解釋。",
+      "check": "答案是否能被不看計算的人理解？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "球高 h(t)=-(t-2)²+9，頂點意義為何？",
+      "solutionSteps": [
+        "t=2 時 h=9，且開口向下。",
+        "t 是秒、h 是公尺。"
+      ],
+      "answer": "球在 2 秒時達最高 9 公尺。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "同模型 h(0)=5 代表什麼？",
+      "solutionSteps": [
+        "代 t=0 得 5。",
+        "t=0 是開始時刻。"
+      ],
+      "answer": "球開始時離地 5 公尺。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "收益 R(x)=-2(x-30)²+1800，x 為售出件數。",
+      "solutionSteps": [
+        "開口向下，頂點 x=30。",
+        "R=1800。"
+      ],
+      "answer": "售出 30 件時收益最大為 1800 元。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "模型給 t=-1 與 t=5 時高度為 0，哪個可作落地時間？",
+      "solutionSteps": [
+        "事件從 t=0 開始。",
+        "-1 不在合理範圍。"
+      ],
+      "answer": "t=5 秒。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "資料只涵蓋 0≤x≤50，能否用模型預測 x=500？",
+      "solutionSteps": [
+        "500 遠超資料範圍。",
+        "代數可算但模型可靠性沒有保證。"
+      ],
+      "answer": "不宜直接外插為可信預測。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "辨認變數、單位與頂點語意。",
+    "standard": "由式子求指定時刻或合理零點。",
+    "advanced": "整合圖表、範圍與多個條件。",
+    "literacy": "評估模型限制並以完整語句解釋結論。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "只寫 9，不寫公尺與時刻。",
+      "why": "沒有把值放回情境。",
+      "correction": "同時說明何時、何量、何單位。"
+    },
+    {
+      "mistake": "保留負時間解。",
+      "why": "只解方程未檢查定義域。",
+      "correction": "先寫事件的時間範圍。"
+    },
+    {
+      "mistake": "把頂點 x、y 意義交換。",
+      "why": "忽略自變數與應變數。",
+      "correction": "先標軸與單位。"
+    },
+    {
+      "mistake": "用圖形外觀估精確數值。",
+      "why": "忽略不按比例警告。",
+      "correction": "只用刻度、標示與公式。"
+    },
+    {
+      "mistake": "認為模型對所有 x 永遠有效。",
+      "why": "忽略資料與情境範圍。",
+      "correction": "指出內插或外插限制。"
+    },
+    {
+      "mistake": "看到最大值就認為越多越好。",
+      "why": "忽略頂點後函數下降。",
+      "correction": "以拋物線整體趨勢解釋。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "h(t) 頂點 (3,12) 的情境解釋？",
+      "answer": "3 個時間單位時高度最高或最低為 12，需再看開口。"
+    },
+    {
+      "prompt": "時間解 -2、6，事件 t≥0，保留哪個？",
+      "answer": "6。"
+    },
+    {
+      "prompt": "答案 250 應補什麼？",
+      "answer": "變數意義、單位與發生位置。"
+    },
+    {
+      "prompt": "資料到 x=20，可直接信 x=200 的預測嗎？",
+      "answer": "不宜，屬遠距外插。"
+    }
+  ],
+  "summary": [
+    "先讀變數、單位與合理定義域，再運算。",
+    "頂點、截距與對稱都要翻回情境意義。",
+    "代數解需經非負、時間與容量等條件篩選。",
+    "模型超出資料範圍時要保留判斷。"
+  ],
+  "connections": {
+    "previous": "整合面積建模、極值與圖形判讀。",
+    "next": [
+      "下一技能用平移快速比較不同二次函數模型。",
+      "本技能也是 U21 綜合會考題的主要整合點。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s011-01"
+  ],
+  "accessibilityNotes": [
+    "軌跡圖直接標示時間與高度單位、頂點與落地點，並附不按比例警告。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s011-v001",
+      "u21-s011-v002",
+      "u21-s011-v003",
+      "u21-s011-v004",
+      "u21-s011-v005",
+      "u21-s011-v006",
+      "u21-s011-v007",
+      "u21-s011-v008",
+      "u21-s011-v009",
+      "u21-s011-v010",
+      "u21-s011-v011",
+      "u21-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s011-cr001",
+      "u21-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數素養範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重算 h(t)=-(t-2)²+9 的 h(0)=5 與頂點語意，並核對負時間根的排除及外插警告均由情境定義域而非額外假設導出。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "7db219766f13eb9d8bc7c882a4ec048109e85e8f43a9fe2b971d5c2117bb9d12"
+}

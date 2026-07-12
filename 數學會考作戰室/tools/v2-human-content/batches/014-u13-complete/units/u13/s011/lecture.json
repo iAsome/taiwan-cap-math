@@ -1,0 +1,251 @@
+{
+  "lectureId": "u13-s011-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-formula-basic",
+  "lockedOrder": 11,
+  "originalLockedTitle": "公式解基本",
+  "title": "公式解的基本代入",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把標準式係數正確代入求根公式。",
+    "能分段計算 -b、Δ、2a 降低符號錯誤。",
+    "能化簡分數與根式。",
+    "能在整數、分數與無理根題型中保持答案完整。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-check-root",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "承接驗根技能，把公式求得的候選值以穩定流程產生並檢查。",
+  "glossary": [
+    {
+      "term": "基本代入",
+      "definition": "不重新推導公式，依固定欄位代入 a、b、c 並完成運算。"
+    },
+    {
+      "term": "分子",
+      "definition": "公式中 -b±√Δ 的整體。"
+    },
+    {
+      "term": "分母",
+      "definition": "公式中 2a 的整體。"
+    },
+    {
+      "term": "最簡根式",
+      "definition": "根號內不再含大於 1 的完全平方因數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a",
+      "meaning": "x² 的係數。"
+    },
+    {
+      "symbol": "b",
+      "meaning": "x 的係數，含正負號。"
+    },
+    {
+      "symbol": "c",
+      "meaning": "常數項，含正負號。"
+    },
+    {
+      "symbol": "Δ=b²-4ac",
+      "meaning": "先獨立計算的判別式。"
+    }
+  ],
+  "conceptNarrative": [
+    "本技能重點是穩定的計算流程，不再討論公式推導。",
+    "最好建立四格草稿：a、b、c、Δ，再代入公式。",
+    "b 為負數時，-b 與 b² 是兩個不同動作，都應使用括號。",
+    "當 Δ 是完全平方數，常得到有理根；否則保留最簡根式。",
+    "最後可用代入或根的和與積做快速合理性檢查，但正式驗根仍以代回為準。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "公式解基本流程",
+      "statement": "標準式→係數→判別式→代入→化簡→驗算。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x=(-b±√Δ)/(2a)",
+      "conditions": [
+        "a≠0",
+        "Δ≥0 才有實數根"
+      ],
+      "meaning": "直接求兩個公式分支。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未整理成標準式不能直接填係數。",
+    "判別式為負時本單元不進入複數。",
+    "約分時必須同時作用於整個分子，不可只約其中一項。",
+    "根式相加減需有相同根號部分，不能把 ±√13 任意改寫。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "整理標準式並寫 a、b、c。",
+      "check": "符號是否完整？"
+    },
+    {
+      "step": 2,
+      "instruction": "獨立計算 Δ。",
+      "check": "乘法與平方是否先算？"
+    },
+    {
+      "step": 3,
+      "instruction": "寫出 -b±√Δ。",
+      "check": "± 是否保留？"
+    },
+    {
+      "step": 4,
+      "instruction": "整體除以 2a。",
+      "check": "分母是否包含 a？"
+    },
+    {
+      "step": 5,
+      "instruction": "分別化簡兩根並驗算。",
+      "check": "分數與根式是否最簡？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 x²+3x-4=0。",
+      "solutionSteps": [
+        "a=1，b=3，c=-4，Δ=25。",
+        "x=(-3±5)/2。"
+      ],
+      "answer": "x=1 或 x=-4。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 x²-4x-1=0。",
+      "solutionSteps": [
+        "Δ=20。",
+        "x=(4±2√5)/2。"
+      ],
+      "answer": "x=2±√5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 2x²-3x-2=0。",
+      "solutionSteps": [
+        "Δ=25。",
+        "x=(3±5)/4。"
+      ],
+      "answer": "x=2 或 x=-1/2。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解 3x²+x-1=0。",
+      "solutionSteps": [
+        "Δ=13。",
+        "根式不可再化簡。"
+      ],
+      "answer": "x=(-1±√13)/6。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "解 -2x²+7x-3=0。",
+      "solutionSteps": [
+        "a=-2，b=7，c=-3，Δ=25。",
+        "x=(-7±5)/(-4)。"
+      ],
+      "answer": "x=3 或 x=1/2。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "b=-4 時 -b 仍寫 -4。",
+      "why": "雙重負號未處理。",
+      "correction": "-(-4)=4。"
+    },
+    {
+      "mistake": "Δ 的 -4ac 漏掉 c 的負號。",
+      "why": "未用括號代入。",
+      "correction": "寫 -4·a·(c)。"
+    },
+    {
+      "mistake": "分母寫成 2。",
+      "why": "漏乘 a。",
+      "correction": "完整寫 2a。"
+    },
+    {
+      "mistake": "把 (-3±5)/4 約成 -3±5/4。",
+      "why": "分數線範圍錯誤。",
+      "correction": "整個分子除以 4。"
+    },
+    {
+      "mistake": "√20 不化簡。",
+      "why": "未抽出 4。",
+      "correction": "√20=2√5。"
+    },
+    {
+      "mistake": "負 a 題把整式乘 -1 後係數只改一項。",
+      "why": "等價變形不完整。",
+      "correction": "所有項同乘 -1。"
+    }
+  ],
+  "selfCheck": [
+    "a、b、c 是否含符號？",
+    "Δ 是否獨立完成？",
+    "分子是否完整？",
+    "分母是否為 2a？",
+    "根式與分數是否最簡？"
+  ],
+  "summary": [
+    "公式基本代入需要固定且可檢查的步驟。",
+    "括號可防止負號錯誤。",
+    "分數線涵蓋整個分子。",
+    "所有根都需化簡並驗算。"
+  ],
+  "connections": {
+    "previous": "承接驗根技能，把公式求得的候選值以穩定流程產生並檢查。",
+    "next": [
+      "下一節把文字條件轉為二次方程式。",
+      "應用題可依式子特徵選因式分解、配方或公式。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s011-v001",
+      "u13-s011-v002",
+      "u13-s011-v003",
+      "u13-s011-v004",
+      "u13-s011-v005",
+      "u13-s011-v006",
+      "u13-s011-v007",
+      "u13-s011-v008",
+      "u13-s011-v009",
+      "u13-s011-v010",
+      "u13-s011-v011",
+      "u13-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s011-cr001",
+      "u13-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "五例皆重新以標準式係數計算 Δ，並代回驗證；特別核對負 a 題兩次負號、√20 的化簡，以及分數線涵蓋整個 ± 分子。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "1b9760017ab6fd371efade24f68980253ed60c831488fb10f10fcaabd44d6c8d"
+}

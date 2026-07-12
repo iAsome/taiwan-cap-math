@@ -1,0 +1,249 @@
+{
+  "lectureId": "u11-s012-lecture-r1",
+  "unitId": "u11",
+  "numericUnitId": 11,
+  "topicId": "u11-pythagorean",
+  "skillId": "pythagorean-find-leg",
+  "lockedSkillOrder": 12,
+  "lockedTitle": "已知斜邊求股",
+  "title": "已知斜邊求股：平方差與正長度",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "gradeBand": "8上",
+  "sourceScope": "CAP_108_JUNIOR_MATH",
+  "capBoundary": "邊長取正值；不含複數與高中延伸。",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能確認斜邊是已知最大邊",
+    "能用平方差求未知股",
+    "能處理根式、小數與比例型未知股"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "coordinate-distance-pythagorean",
+      "requiredLevel": "能使用前一技能「坐標平面距離」的核心方法，並能說明其適用條件。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "已知斜邊求股",
+      "definition": "由c²-a²得到另一股平方。"
+    },
+    {
+      "term": "平方差",
+      "definition": "c²-a²=(c-a)(c+a)。"
+    },
+    {
+      "term": "畢氏數組比例",
+      "definition": "等比例放大後仍為直角三角形。"
+    },
+    {
+      "term": "正根",
+      "definition": "幾何邊長只取非負解。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "b=√(c²-a²)",
+      "meaning": "c為斜邊且c>a>0。"
+    }
+  ],
+  "conceptNarrative": [
+    "求股一定使用斜邊平方減已知股平方，順序不可顛倒。",
+    "斜邊應大於任一股；若資料不符合，要先質疑模型。",
+    "平方差公式可簡化大數，例如29²-20²。",
+    "未知坐標可正可負，但未知「股長」只取正。",
+    "比例型題可先辨認3-4-5、5-12-13等基本數組。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "求股公式",
+      "statement": "在直角三角形中，若c為斜邊，b=√(c²-a²)。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "c²-a²=b²",
+      "conditions": [
+        "c>a≥0。"
+      ],
+      "meaning": "平方差必為非負。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能用c-a代替√(c²-a²)。",
+    "若已知邊比斜邊大，資料不可能。",
+    "結果負根不能作邊長。",
+    "平方差算出後仍須開平方。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認哪個已知量是斜邊。",
+      "check": "它必須最大。"
+    },
+    {
+      "step": 2,
+      "instruction": "寫未知股平方=斜邊平方-已知股平方。",
+      "check": "減法順序固定。"
+    },
+    {
+      "step": 3,
+      "instruction": "利用平方差或直接計算。",
+      "check": "降低大數錯誤。"
+    },
+    {
+      "step": 4,
+      "instruction": "開平方並取正。",
+      "check": "化簡根式。"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查兩股皆短於斜邊。",
+      "check": "代回畢氏定理。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "斜邊15、一股9。",
+      "solutionSteps": [
+        "225-81=144。"
+      ],
+      "answer": "另一股12。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "斜邊√34、一股3。",
+      "solutionSteps": [
+        "34-9=25。"
+      ],
+      "answer": "另一股5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "斜邊37、一股12。",
+      "solutionSteps": [
+        "37²-12²=(25)(49)=1225。"
+      ],
+      "answer": "另一股35。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩股比8:15、斜邊34。",
+      "solutionSteps": [
+        "基本比8:15:17。",
+        "放大2倍。"
+      ],
+      "answer": "兩股16與30。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "13與5直接相減得8。",
+      "why": "長度不能直接相減求股。",
+      "correction": "√(169-25)=12。"
+    },
+    {
+      "mistake": "使用13²+5²。",
+      "why": "求股卻使用平方和。",
+      "correction": "斜邊平方減股平方。"
+    },
+    {
+      "mistake": "答±12。",
+      "why": "股長非負。",
+      "correction": "只取12。"
+    },
+    {
+      "mistake": "平方差得到144就停止。",
+      "why": "144是股長平方。",
+      "correction": "再開平方。"
+    },
+    {
+      "mistake": "把較短邊當斜邊。",
+      "why": "平方差可能負。",
+      "correction": "先找最大邊。"
+    },
+    {
+      "mistake": "比例題只使用比例分子。",
+      "why": "比例缺少斜邊份數。",
+      "correction": "由平方關係求完整數組。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "checkId": "SC1",
+      "prompt": "用一句話說明本技能最核心的數學關係。",
+      "answer": "未知股=√(斜邊²-已知股²)。"
+    },
+    {
+      "checkId": "SC2",
+      "prompt": "使用本技能前最先要確認的條件是什麼？",
+      "answer": "確認哪個已知量是斜邊。"
+    },
+    {
+      "checkId": "SC3",
+      "prompt": "指出一個最常見的錯誤並給出修正。",
+      "answer": "13與5直接相減得8。；修正：√(169-25)=12。"
+    },
+    {
+      "checkId": "SC4",
+      "prompt": "完成答案後要做哪一項檢查？",
+      "answer": "代回後平方和成立嗎？"
+    }
+  ],
+  "summary": [
+    "未知股=√(斜邊²-已知股²)。",
+    "先辨認邊角色，再處理平方差。"
+  ],
+  "connections": {
+    "previous": "需要 s011 的距離結構與 s009 定理。",
+    "next": [
+      "s013 將在全文字情境辨認未知股。",
+      "s014 會反過來用三邊判定直角。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u11-s012-find-leg"
+  ],
+  "accessibilityNotes": [
+    "直角三角形斜邊標13，一股標5，底邊未知b，並寫出b等於13平方減5平方的平方根。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u11-s012-v001",
+      "u11-s012-v002",
+      "u11-s012-v003",
+      "u11-s012-v004",
+      "u11-s012-v005",
+      "u11-s012-v006",
+      "u11-s012-v007",
+      "u11-s012-v008",
+      "u11-s012-v009",
+      "u11-s012-v010",
+      "u11-s012-v011",
+      "u11-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u11-s012-cr001",
+      "u11-s012-cr002"
+    ]
+  },
+  "replacementPolicy": {
+    "replacesLegacyOnlyAtFinalIntegration": true,
+    "productionActivationAllowed": false
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "noTemplateDeclaration": true,
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewedAt": "2026-07-12",
+    "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+    "reviewNote": "逐段重算「已知斜邊求股」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「13與5直接相減得8。」等本技能特有問題；內容未借用舊題庫。"
+  },
+  "contentSha256": "cbd6c02425e5903ab96034788002c3e0341dc8ca54e32e13c162ca5301500b68"
+}

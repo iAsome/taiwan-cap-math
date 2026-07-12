@@ -1,0 +1,239 @@
+{
+  "lectureId": "u03-s002-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-expression",
+  "skillId": "linear-expression-simplify",
+  "title": "一元一次式化簡：展開括號並正確合併同類項",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認同類項。",
+    "能用分配律展開正負括號。",
+    "能合併未知數項與常數項。",
+    "能由生活情境建立並化簡一元一次式。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-expression-substitution",
+      "requiredLevel": "能把數值代入文字式，並辨認運算順序與括號。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "同類項",
+      "definition": "未知數及其指數完全相同的項。"
+    },
+    {
+      "term": "分配律",
+      "definition": "a(b+c)=ab+ac。"
+    },
+    {
+      "term": "一元一次式",
+      "definition": "只含一個未知數，且最高次數為1的式子。"
+    },
+    {
+      "term": "化簡",
+      "definition": "在不改變值的前提下寫成較精簡的等價式。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax+b",
+      "meaning": "一元一次式的一般形式，a、b為數且a可為0。"
+    },
+    {
+      "symbol": "-(x-3)",
+      "meaning": "等於-x+3，括號內每項都變號。"
+    }
+  ],
+  "conceptNarrative": [
+    "化簡不是求出未知數，而是把等價的項整理在一起。",
+    "只有同類項能合併，例如3x與-2x可合併，3x與4不能。",
+    "括號外的數要乘括號內每一項；括號前是負號時可視為乘-1。",
+    "情境式先按物件層級列出，再化簡，不能為了簡短而改變每份與總共的關係。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "同類項合併",
+      "statement": "ax+bx=(a+b)x。"
+    },
+    {
+      "name": "分配律",
+      "statement": "a(b+c)=ab+ac，a(b-c)=ab-ac。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "ax+bx+c=(a+b)x+c",
+      "conditions": [
+        "ax與bx的未知數部分完全相同"
+      ],
+      "meaning": "係數相加，未知數部分保留。"
+    },
+    {
+      "formula": "-(ax+b)=-ax-b",
+      "conditions": [
+        "負號作用於整個括號"
+      ],
+      "meaning": "括號內每項變號。"
+    }
+  ],
+  "nonApplicableCases": [
+    "x與x²不是同類項。",
+    "不同未知數x與y不能合併。",
+    "只乘括號第一項不是分配律。",
+    "化簡後仍可能含未知數，這是正常結果。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先展開每一個括號。",
+      "check": "外係數是否乘到每一項？"
+    },
+    {
+      "step": 2,
+      "instruction": "按未知數項與常數項分類。",
+      "check": "是否誤把不同類項放一起？"
+    },
+    {
+      "step": 3,
+      "instruction": "分別計算係數與常數。",
+      "check": "負號是否保留？"
+    },
+    {
+      "step": 4,
+      "instruction": "依ax+b順序書寫。",
+      "check": "係數1與-1的寫法是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "代入一個簡單值驗證前後相等。",
+      "check": "原式與化簡式是否同值？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "化簡6x-4x+7。",
+      "solutionSteps": [
+        "6x-4x=2x。",
+        "常數7保留。"
+      ],
+      "answer": "2x+7。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "化簡3(2y-5)+y。",
+      "solutionSteps": [
+        "展開為6y-15+y。",
+        "合併為7y-15。"
+      ],
+      "answer": "7y-15。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "化簡4a-[2a-(3-a)]。",
+      "solutionSteps": [
+        "內括號2a-3+a=3a-3。",
+        "4a-(3a-3)=a+3。"
+      ],
+      "answer": "a+3。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "每袋有x顆球，買5袋後送出2袋各少3顆的數量，求剩餘式。",
+      "solutionSteps": [
+        "原有5x。",
+        "送出2(x-3)=2x-6。",
+        "剩餘5x-(2x-6)=3x+6。"
+      ],
+      "answer": "3x+6顆。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把3x+4合併成7x。",
+      "why": "常數與未知數項不是同類項。",
+      "correction": "保留為3x+4。"
+    },
+    {
+      "mistake": "把2(x+5)寫成2x+5。",
+      "why": "外係數漏乘常數。",
+      "correction": "寫成2x+10。"
+    },
+    {
+      "mistake": "把-(x-4)寫成-x-4。",
+      "why": "只改第一項符號。",
+      "correction": "兩項都變號成-x+4。"
+    },
+    {
+      "mistake": "合併係數時忽略負號。",
+      "why": "只看絕對值。",
+      "correction": "將每項連同前方符號一起抄寫。"
+    },
+    {
+      "mistake": "看到括號就先把內部異類項相加。",
+      "why": "誤認任何項都可合併。",
+      "correction": "只能先做合法運算或分配。"
+    },
+    {
+      "mistake": "情境中把每一個的增減當成總共增減。",
+      "why": "未區分括號內外層級。",
+      "correction": "確認變化是每份發生還是整體一次發生。"
+    }
+  ],
+  "selfCheck": [
+    "括號是否全部展開？",
+    "負號是否作用到每一項？",
+    "只合併真正同類項？",
+    "情境中的每份與總共層級是否正確？",
+    "可否代入x=1驗證？"
+  ],
+  "summary": [
+    "先展開再分類合併。",
+    "同類項只加減係數。",
+    "括號前負號使每項變號。",
+    "化簡不等於求未知數。"
+  ],
+  "connections": {
+    "previous": "建立在代入求值與整數、分數運算之上。",
+    "next": [
+      "等量公理會在等式兩邊使用相同運算。",
+      "解方程式前常要先化簡每一邊。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s002-v001",
+      "u03-s002-v002",
+      "u03-s002-v003",
+      "u03-s002-v004",
+      "u03-s002-v005",
+      "u03-s002-v006",
+      "u03-s002-v007",
+      "u03-s002-v008",
+      "u03-s002-v009",
+      "u03-s002-v010",
+      "u03-s002-v011",
+      "u03-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s002-cr001",
+      "u03-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "用x=2分別驗證四例原式與化簡式同值；尤其核對4a-[2a-(3-a)]的兩層負號及5x-2(x-3)的每袋層級，結果分別為2x+7、7y-15、a+3、3x+6。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "693ed2628abc522a47eded05b96c3e24dd1e7da5492e7b86d1bae46a91f06251",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

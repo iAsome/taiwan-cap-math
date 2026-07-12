@@ -1,0 +1,209 @@
+{
+  "lectureId": "u04-s005-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-methods",
+  "skillId": "system-elimination-method",
+  "lockedSkillTitle": "加減消去法",
+  "title": "加減消去法：讓同一未知數的係數抵消",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "加減消去法",
+    "scope": "利用係數相同相減或係數相反相加，消去一個未知數。"
+  },
+  "prerequisiteBridge": "先備技能 system-substitution-method 已建立必要基礎；本節將其用於「利用係數相同相減或係數相反相加，消去一個未知數。」",
+  "learningGoals": [
+    "能辨認相同係數要相減、相反係數要相加。",
+    "能整列相加減，包含常數項。",
+    "能解出一元後回代。",
+    "能診斷整列減法的符號錯誤。"
+  ],
+  "vocabulary": [
+    {
+      "term": "消去",
+      "definition": "運算後某未知數的係數變成 0。"
+    },
+    {
+      "term": "同係數",
+      "definition": "兩式中某未知數係數相同。"
+    },
+    {
+      "term": "相反係數",
+      "definition": "係數互為相反數。"
+    },
+    {
+      "term": "整列運算",
+      "definition": "方程式左右所有對應項一起相加或相減。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "①−②",
+      "meaning": "第一式的每一項減第二式對應項。"
+    },
+    {
+      "symbol": "①+②",
+      "meaning": "兩式逐項相加。"
+    }
+  ],
+  "conceptDevelopment": [
+    "若 y 的係數相同，兩式相減可使 y-y=0；若係數為 3 與 -3，兩式相加可使 3y+(-3y)=0。",
+    "減去整個第二式時，第二式每一項都要變號。",
+    "消去只是將二元化成一元，得到一個值後仍要回代。"
+  ],
+  "definitions": [
+    {
+      "name": "加減消去法",
+      "statement": "把兩個等式逐項相加或相減，使一個未知數消失。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(ax+by=c)−(dx+by=e) ⇒ (a-d)x=c-e",
+      "conditions": [
+        "y 係數相同。"
+      ],
+      "meaning": "相減消去 y。"
+    },
+    {
+      "formula": "(ax+by=c)+(dx-by=e) ⇒ (a+d)x=c+e",
+      "conditions": [
+        "y 係數相反。"
+      ],
+      "meaning": "相加消去 y。"
+    }
+  ],
+  "invalidUseCases": [
+    "不能只減左邊不減右邊。",
+    "不能把「減第二式」只作用在第二式第一項。",
+    "係數既不相同也不相反時，需先使用下一技能的倍數放大。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "對齊同類項",
+      "check": "x、y、常數排成同欄。"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇要消去的未知數",
+      "check": "觀察係數關係。"
+    },
+    {
+      "step": 3,
+      "instruction": "決定相加或相減",
+      "check": "相反相加、相同相減。"
+    },
+    {
+      "step": 4,
+      "instruction": "逐項運算",
+      "check": "常數也要一起。"
+    },
+    {
+      "step": 5,
+      "instruction": "解一元並回代",
+      "check": "最後雙式檢驗。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解 x+y=7，x-y=1。",
+      "solutionSteps": [
+        "兩式相加得 2x=8。",
+        "x=4。",
+        "代回得 y=3。"
+      ],
+      "answer": "(4,3)。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 2x+y=9，x+y=5。",
+      "solutionSteps": [
+        "兩式相減得 x=4。",
+        "代回 x+y=5 得 y=1。"
+      ],
+      "answer": "(4,1)。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 3x-2y=4，x+2y=8。",
+      "solutionSteps": [
+        "兩式相加得 4x=12。",
+        "x=3。",
+        "代回得 y=5/2。"
+      ],
+      "answer": "(3,5/2)。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "說明 (x+y=5)−(x-2y=1) 的正確結果。",
+      "solutionSteps": [
+        "左邊 x+y-x+2y=3y。",
+        "右邊 5-1=4。"
+      ],
+      "answer": "3y=4。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "相同係數仍相加",
+      "correction": "會得到 2y 而不是消去。"
+    },
+    {
+      "mistake": "減法時第二式未整列變號",
+      "correction": "括號應包住第二式。"
+    },
+    {
+      "mistake": "常數項漏算",
+      "correction": "等式右邊也必須同樣加減。"
+    },
+    {
+      "mistake": "得到 x 後忘記求 y",
+      "correction": "聯立解需要一組有序數對。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "y 係數 2 與 -2 應相加還相減？",
+      "answer": "相加。"
+    },
+    {
+      "prompt": "x 係數皆為 3 應如何消去？",
+      "answer": "兩式相減。"
+    },
+    {
+      "prompt": "①−② 時第二式的 -y 會怎樣？",
+      "answer": "減去 -y 變成 +y。"
+    },
+    {
+      "prompt": "消去後下一步？",
+      "answer": "解一元並回代。"
+    }
+  ],
+  "summary": [
+    "相反係數相加，相同係數相減。",
+    "整個方程式逐項運算。",
+    "消去後回代並檢驗。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-substitution-method 已建立必要基礎；本節將其用於「利用係數相同相減或係數相反相加，消去一個未知數。」",
+    "next": "下一技能「係數放大後消去」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "重新逐欄核算相加與整式相減示例，包含分數結果；所有符號與常數運算正確，且明確區分本節直接消去與下一節倍數放大。",
+    "reviewNote": "重新逐欄核算相加與整式相減示例，包含分數結果；所有符號與常數運算正確，且明確區分本節直接消去與下一節倍數放大。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "27dc587e8a3b0212fb357efa8565309b9410b32515fd85b3e706793ec71b0c75"
+}

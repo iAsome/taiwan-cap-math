@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "math-v2-controlled-production-cutover-r1",
+  "requiredStartingHead": "b52116364e145b564aaf394ef798dda9d2b7b2ec",
+  "requiredStartingSubject": "build(math-v2): prepare production cutover package r1",
+  "requiredPackageStatus": "PASS_PRODUCTION_CUTOVER_PACKAGE_R1",
+  "requiredPackageNextStage": "CONTROLLED_PRODUCTION_CUTOVER_R1",
+  "contentVersion": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+  "preCutoverTag": "math-v2-pre-human-cutover-r1",
+  "productionStoragePrefix": "capMath.human.r1.",
+  "expectedCounts": {
+    "units": 23,
+    "skills": 339,
+    "lectures": 339,
+    "mcQuestions": 4068,
+    "constructedResponses": 678,
+    "figures": 178
+  },
+  "cutoverCommitSubject": "release(math-v2): cut over to human runtime r1",
+  "productionActivationAllowed": true,
+  "oldDatabaseDeletionAllowed": false,
+  "mergeAllowed": false,
+  "nextAuthorizedStage": "POST_CUTOVER_STABILITY_GATE_R1"
+}

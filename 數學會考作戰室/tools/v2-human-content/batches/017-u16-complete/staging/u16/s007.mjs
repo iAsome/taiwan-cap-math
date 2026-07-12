@@ -1,0 +1,1753 @@
+// Deterministically emitted from reviewed CHATGPT_HUMAN_AUTHORED_R1 source.
+// Do not edit this staging module by hand.
+export const skillData={
+  "slot": "s007",
+  "lecture": {
+    "lectureId": "u16-s007-lecture-r1",
+    "unitId": "u16",
+    "numericUnitId": 16,
+    "topicId": "u16-congruence",
+    "skillId": "equilateral-properties",
+    "skillOrder": 7,
+    "originalLockedTitle": "等邊三角形性質",
+    "title": "等邊三角形性質：三邊相等推得三角都是 60°",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能由三邊相等推出三個內角皆為 60°。",
+      "能由三個內角皆為 60°反推三邊相等。",
+      "能理解等邊三角形的中線、高線與角平分線重合。",
+      "能在分割、周長與角度問題中正確使用等邊性質。"
+    ],
+    "prerequisiteBridge": "等邊三角形可視為任選兩邊都相等的等腰三角形，因此等腰底角定理可輪流套用，得到三角相等。",
+    "prerequisites": [
+      {
+        "skillId": "isosceles-properties",
+        "requiredLevel": "能使用先備技能「等腰三角形性質」的核心定義與基本運算，並能說明其與本節的連結。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "等邊三角形",
+        "definition": "三邊皆相等的三角形。"
+      },
+      {
+        "term": "等角三角形",
+        "definition": "三個內角皆相等的三角形；在平面三角形中等同於等邊三角形。"
+      },
+      {
+        "term": "60°",
+        "definition": "三個相等內角平均分配 180° 所得角度。"
+      },
+      {
+        "term": "對稱軸",
+        "definition": "沿該直線翻折，圖形兩側可完全重合。"
+      },
+      {
+        "term": "三線合一",
+        "definition": "從任一頂點向對邊作的角平分線、中線與高線是同一線段。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "AB=BC=CA",
+        "meaning": "△ABC 為等邊三角形。"
+      },
+      {
+        "symbol": "∠A=∠B=∠C=60°",
+        "meaning": "等邊三角形三內角相等且總和 180°。"
+      },
+      {
+        "symbol": "AD⊥BC、BD=DC、∠BAD=∠DAC",
+        "meaning": "從 A 到 BC 的對稱線同時是高線、中線與角平分線。"
+      }
+    ],
+    "conceptNarrative": [
+      "因 AB=AC，可得 ∠B=∠C；因 AB=BC，可得 ∠A=∠C，所以三角皆相等。",
+      "三角和為 180°，三角相等，因此每角為 60°。",
+      "逆向若三角皆 60°，任兩角相等便得其對邊相等，最後三邊皆相等。",
+      "從任何頂點向對邊作中線，在等邊三角形中同時也是高線與角平分線，整個圖形有三條對稱軸。",
+      "等邊三角形的三線合一不代表三條線互相重合；是每一個頂點各有一條合一線。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "等邊三角形角度性質",
+        "statement": "等邊三角形三內角皆為 60°。"
+      },
+      {
+        "name": "逆性質",
+        "statement": "三角形若三內角皆為 60°，則為等邊三角形。"
+      },
+      {
+        "name": "等邊三線合一",
+        "statement": "由任一頂點連到對邊的中點所得線段，同時為高線與角平分線。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "AB=BC=CA ⇒ ∠A=∠B=∠C=60°",
+        "conditions": [
+          "△ABC 存在"
+        ],
+        "meaning": "等邊推等角。"
+      },
+      {
+        "formula": "∠A=∠B=∠C=60° ⇒ AB=BC=CA",
+        "conditions": [
+          "同一三角形內"
+        ],
+        "meaning": "等角推等邊。"
+      },
+      {
+        "formula": "周長=3×邊長",
+        "conditions": [
+          "三邊皆相等"
+        ],
+        "meaning": "等邊三角形周長。"
+      }
+    ],
+    "nonApplicableCases": [
+      "只有一個角為 60° 不能判定等邊。",
+      "兩邊相等且頂角 60° 可進一步推出等邊，但需說明底角也各 60°。",
+      "圖形看似正三角形但沒有相等標記或角度資料時不能判定。",
+      "三條中線不是同一條線，而是三條不同的對稱軸。",
+      "等邊性質不直接給出高度數值，除非搭配畢氏定理等先備工具。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認是由三邊相等還是三角相等出發。",
+        "check": "目前可用的是等邊推等角還是等角推等邊？"
+      },
+      {
+        "step": 2,
+        "instruction": "角度題直接寫每角 60°。",
+        "check": "是否真的已證明三邊相等？"
+      },
+      {
+        "step": 3,
+        "instruction": "若從某頂點畫到對邊中點，套用三線合一。",
+        "check": "可否同時得到垂直與平分角？"
+      },
+      {
+        "step": 4,
+        "instruction": "周長題以三倍邊長計算。",
+        "check": "單位是否一致？"
+      },
+      {
+        "step": 5,
+        "instruction": "分割後追蹤新增的小三角形性質。",
+        "check": "哪些線段相等是已知，哪些需由性質推出？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "△ABC 為等邊三角形，求 ∠A。",
+        "solutionSteps": [
+          "三角相等。",
+          "三角和 180°，所以每角 60°。"
+        ],
+        "answer": "60°。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "一個三角形三角皆為 60°，可判定什麼？",
+        "solutionSteps": [
+          "任兩角相等，其對邊相等。",
+          "三組角皆相等，所以三邊皆相等。"
+        ],
+        "answer": "為等邊三角形。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "等邊 △ABC 中，D 為 BC 中點。說明 AD 的性質。",
+        "solutionSteps": [
+          "等邊也是以 AB=AC 的等腰三角形。",
+          "由頂角 A 連到底邊中點，三線合一。"
+        ],
+        "answer": "AD⊥BC 且 ∠BAD=∠DAC=30°。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "等邊三角形周長 27 公分，求邊長。",
+        "solutionSteps": [
+          "三邊相等。",
+          "27÷3=9。"
+        ],
+        "answer": "9 公分。"
+      },
+      {
+        "exampleId": "L5",
+        "prompt": "等腰三角形頂角為 60°，判斷是否等邊。",
+        "solutionSteps": [
+          "兩底角相等，和為 120°。",
+          "每個底角 60°，三角皆 60°。"
+        ],
+        "answer": "是等邊三角形。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把等邊三角形每角算成 90°。",
+        "why": "把三角形與正方形混淆。",
+        "correction": "180°÷3=60°。"
+      },
+      {
+        "mistake": "只見一角 60° 就判等邊。",
+        "why": "條件不足。",
+        "correction": "還需三邊相等、三角全相等，或等腰加頂角 60°等足夠條件。"
+      },
+      {
+        "mistake": "認為三線合一只有一條。",
+        "why": "只畫一個頂點。",
+        "correction": "每個頂點各有一條，共三條。"
+      },
+      {
+        "mistake": "周長除以 2。",
+        "why": "把等腰兩腰相等誤用到等邊。",
+        "correction": "等邊有三條相等邊，周長除以 3。"
+      },
+      {
+        "mistake": "把 60° 當外角。",
+        "why": "未辨認角的位置。",
+        "correction": "等邊三角形的 60° 指內角。"
+      },
+      {
+        "mistake": "未經證明使用對稱。",
+        "why": "僅依外觀。",
+        "correction": "先由三邊相等確定等邊，再使用其對稱性。"
+      }
+    ],
+    "selfCheck": [
+      "我能從三邊相等推出每角 60° 嗎？",
+      "我能從三角 60° 反推三邊相等嗎？",
+      "三線合一是每個頂點各有一條嗎？",
+      "周長計算是否除以 3？",
+      "我是否避免用單一 60° 判定等邊？"
+    ],
+    "summary": [
+      "等邊三角形三邊相等，三內角皆為 60°。",
+      "三角皆 60° 也能反推等邊。",
+      "每一頂點的角平分線、中線、高線重合。",
+      "周長為邊長的三倍。"
+    ],
+    "connections": {
+      "previous": "由等腰底角定理推出三角相等。",
+      "next": [
+        "尺規作圖會用等半徑圓弧構造等邊三角形。",
+        "三角形中線與高線將分別正式定義。"
+      ]
+    },
+    "figureReferences": [
+      "u16-fig-007-equilateral-properties"
+    ],
+    "accessibilityNotes": [
+      "u16-fig-007-equilateral-properties 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u16-s007-v001",
+        "u16-s007-v002",
+        "u16-s007-v003",
+        "u16-s007-v004",
+        "u16-s007-v005",
+        "u16-s007-v006",
+        "u16-s007-v007",
+        "u16-s007-v008",
+        "u16-s007-v009",
+        "u16-s007-v010",
+        "u16-s007-v011",
+        "u16-s007-v012"
+      ],
+      "constructedResponseIds": [
+        "u16-s007-cr001",
+        "u16-s007-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "針對「等邊三角形性質」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+      "reviewVersion": "human-lecture-review-u16-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "c72a6a57dfddf5b543b697530caa31c437d7e746ebc87ee8c33e7eb1755795b7"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u16-s007-v001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等邊三角形每一個內角是多少？",
+      "givenConditions": [
+        "三個內角相等",
+        "三角形內角和 180°"
+      ],
+      "target": "求單一內角",
+      "choices": [
+        "45°",
+        "90°",
+        "60°",
+        "120°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "三個相等內角各為 60°，總和驗算 180°。",
+      "explanation": "180°÷3=60°。 三角形內角和 180°。 三角相等，所以平均分成三份。",
+      "steps": [
+        "三角形內角和 180°。",
+        "三角相等，所以平均分成三份。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "45°",
+          "truth": false,
+          "reason": "三個 45° 只和 135°。"
+        },
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "三個直角不可能形成平面三角形。"
+        },
+        {
+          "choice": "60°",
+          "truth": true,
+          "reason": "180°÷3=60°。"
+        },
+        {
+          "choice": "120°",
+          "truth": false,
+          "reason": "這是外角或錯誤平均。"
+        }
+      ],
+      "misconceptionTarget": "把正三角形與正方形角度混淆。",
+      "prerequisiteCheck": "會做 180÷3。",
+      "estimatedTimeSec": "45",
+      "unitAndRoundingCheck": "角度精確，無近似。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "60° 在合法內角範圍。",
+      "difficultyReason": "基礎題，單一性質辨認。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求等邊內角。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "bde4514c55361e2a697249ff5f47468317517256010965ed8832f145a19786a5"
+    },
+    {
+      "questionId": "u16-s007-v002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "△ABC 中 AB=BC=CA。下列何者必定成立？",
+      "givenConditions": [
+        "三邊全相等"
+      ],
+      "target": "使用等邊角度性質",
+      "choices": [
+        "∠A=∠B=∠C=60°",
+        "只有 ∠A=∠B，∠C 未知",
+        "∠A=90°",
+        "三角形面積必為 60"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "三角皆 60°。",
+      "explanation": "三邊全相等，依等邊性質三角皆相等，再由內角和得 60°。 由 AB=AC 得 B=C。 由 AB=BC 得 C=A。 三角相等且和 180°。",
+      "steps": [
+        "由 AB=AC 得 B=C。",
+        "由 AB=BC 得 C=A。",
+        "三角相等且和 180°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "∠A=∠B=∠C=60°",
+          "truth": true,
+          "reason": "三邊全相等，依等邊性質三角皆相等，再由內角和得 60°。"
+        },
+        {
+          "choice": "只有 ∠A=∠B，∠C 未知",
+          "truth": false,
+          "reason": "三邊全相等可推出三角全相等。"
+        },
+        {
+          "choice": "∠A=90°",
+          "truth": false,
+          "reason": "等邊沒有直角。"
+        },
+        {
+          "choice": "三角形面積必為 60",
+          "truth": false,
+          "reason": "面積需邊長與平方單位，不能由角度直接指定。"
+        }
+      ],
+      "misconceptionTarget": "只套一次等腰性質，沒有完成三角相等。",
+      "prerequisiteCheck": "知道等邊可視為多種等腰。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "無長度數值與單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "結論只涉及角度，不需知道邊長大小。",
+      "difficultyReason": "基礎題，直接使用等邊性質。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由等邊推等角。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "e634af968314d995a05a8afc8bf9f9338877607a4e079ba59750ed194db6a38a"
+    },
+    {
+      "questionId": "u16-s007-v003",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一個三角形三個內角都為 60°。可判定它是什麼三角形？",
+      "givenConditions": [
+        "同一平面三角形"
+      ],
+      "target": "使用逆性質",
+      "choices": [
+        "只有等腰，不能確定等邊",
+        "等邊三角形",
+        "直角三角形",
+        "無法分類"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "三邊全相等，因此為等邊三角形。",
+      "explanation": "三角相等，依等角對等邊可得三邊相等。 ∠A=∠B 得其對邊相等。 再與 ∠C 比較得第三邊也相等。",
+      "steps": [
+        "∠A=∠B 得其對邊相等。",
+        "再與 ∠C 比較得第三邊也相等。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只有等腰，不能確定等邊",
+          "truth": false,
+          "reason": "三組角都相等，可逐組推出三邊相等。"
+        },
+        {
+          "choice": "等邊三角形",
+          "truth": true,
+          "reason": "三角相等，依等角對等邊可得三邊相等。"
+        },
+        {
+          "choice": "直角三角形",
+          "truth": false,
+          "reason": "沒有 90°。"
+        },
+        {
+          "choice": "無法分類",
+          "truth": false,
+          "reason": "角度資料已足夠。"
+        }
+      ],
+      "misconceptionTarget": "認為角度只能判等腰不能判等邊。",
+      "prerequisiteCheck": "會用等角對等邊。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "角度精確，和為 180°。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "三個 60° 完全指定，不存在其他角型。",
+      "difficultyReason": "基礎題，使用逆性質。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由等角推等邊。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "6b5ea8c9bc9c8b25d7f5b338551c8ed44c9b85a06b9e9fa60efdd7fbb4caac02"
+    },
+    {
+      "questionId": "u16-s007-v004",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等邊三角形周長為 36 公分，邊長是多少？",
+      "givenConditions": [
+        "三邊相等"
+      ],
+      "target": "由周長求邊長",
+      "choices": [
+        "9 公分",
+        "12 公分",
+        "18 公分",
+        "36 公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "每邊 12 公分，三邊總和 36 公分。",
+      "explanation": "36÷3=12。 周長由三條相等邊組成。 36÷3=12。",
+      "steps": [
+        "周長由三條相等邊組成。",
+        "36÷3=12。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9 公分",
+          "truth": false,
+          "reason": "36÷4 是正方形的算法。"
+        },
+        {
+          "choice": "12 公分",
+          "truth": true,
+          "reason": "36÷3=12。"
+        },
+        {
+          "choice": "18 公分",
+          "truth": false,
+          "reason": "36÷2 只分成兩份。"
+        },
+        {
+          "choice": "36 公分",
+          "truth": false,
+          "reason": "把周長當單邊。"
+        }
+      ],
+      "misconceptionTarget": "除以錯誤邊數。",
+      "prerequisiteCheck": "會做整數除法。",
+      "estimatedTimeSec": "60",
+      "unitAndRoundingCheck": "周長與邊長皆為公分，無平方單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "36 可被 3 整除，無取整。",
+      "difficultyReason": "標準題，將分類性質用於長度。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由周長求邊長。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "ed5a5a9e8bb0807b7ce97ec28e8106c78e9d77460631fa70d4b93f7ab82a087a"
+    },
+    {
+      "questionId": "u16-s007-v005",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-007-equilateral-properties",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等邊 △ABC 中，D 為 BC 中點。∠BAD 是多少？",
+      "givenConditions": [
+        "AD 從頂點 A 連到底邊中點"
+      ],
+      "target": "使用三線合一平分 60°",
+      "choices": [
+        "60°",
+        "90°",
+        "30°",
+        "15°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "∠BAD=30°，同時 ∠ADB=90°。",
+      "explanation": "等邊頂角 ∠A=60°；AD 為中線亦為角平分線，所以一半 30°。 求 ∠A=60°。 由 D 中點得 AD 是中線。 三線合一，60°÷2=30°。",
+      "steps": [
+        "求 ∠A=60°。",
+        "由 D 中點得 AD 是中線。",
+        "三線合一，60°÷2=30°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "60°",
+          "truth": false,
+          "reason": "這是整個頂角。"
+        },
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "90° 是 AD 與 BC 的夾角。"
+        },
+        {
+          "choice": "30°",
+          "truth": true,
+          "reason": "等邊頂角 ∠A=60°；AD 為中線亦為角平分線，所以一半 30°。"
+        },
+        {
+          "choice": "15°",
+          "truth": false,
+          "reason": "頂角只被平分一次。"
+        }
+      ],
+      "misconceptionTarget": "把頂角的一半與垂直角混淆。",
+      "prerequisiteCheck": "會用等邊角度與三線合一。",
+      "estimatedTimeSec": "80",
+      "unitAndRoundingCheck": "角度精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "D 為底邊中點已明示，AD 的角色唯一。",
+      "difficultyReason": "標準題，串聯兩個性質。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求等邊中線分角。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "82c548a717e38fb33650b8613f9a378a3893fa4cad928210e24db9d9d0270c8f"
+    },
+    {
+      "questionId": "u16-s007-v006",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等邊 △ABC 中，AD⊥BC 且 D 在 BC 上。若 BC=10，則 BD 為多少？",
+      "givenConditions": [
+        "AD 為從頂點 A 到底邊的高"
+      ],
+      "target": "由三線合一得中點",
+      "choices": [
+        "10",
+        "20",
+        "無法判斷",
+        "5"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "BD=10÷2=5。",
+      "explanation": "等邊是等腰，頂點高線同時平分底邊，所以 BD=DC=5。 BC=10。 AD 是高線且由頂點出發。 三線合一得 D 為中點。",
+      "steps": [
+        "BC=10。",
+        "AD 是高線且由頂點出發。",
+        "三線合一得 D 為中點。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "把整條底邊當半段。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "方向相反。"
+        },
+        {
+          "choice": "無法判斷",
+          "truth": false,
+          "reason": "等邊高線也是中線。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "等邊是等腰，頂點高線同時平分底邊，所以 BD=DC=5。"
+        }
+      ],
+      "misconceptionTarget": "認為高線不一定平分底邊，忘記等邊特殊性。",
+      "prerequisiteCheck": "會用三線合一與除法。",
+      "estimatedTimeSec": "75",
+      "unitAndRoundingCheck": "BC 與 BD 使用同一長度單位；題目省略單位但比例精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "D 在 BC 上且 AD⊥BC，對等邊頂點唯一。",
+      "difficultyReason": "標準題，從高線反推中線。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由高線求底邊分段。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "9c5555d7a7f0fba14944cb152ac0999580a93ebcfa24cca37a27c305cbd4d16c"
+    },
+    {
+      "questionId": "u16-s007-v007",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等腰三角形的頂角為 60°。下列何者必定正確？",
+      "givenConditions": [
+        "另外兩角為底角"
+      ],
+      "target": "判定其實為等邊",
+      "choices": [
+        "只有兩腰相等，底邊一定不同",
+        "兩底角各為 30°",
+        "可能是直角三角形",
+        "三個角皆為 60°，所以三邊相等"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "等腰加頂角 60° 必為等邊三角形。",
+      "explanation": "兩底角相等且和 120°，故各 60°，三角全相等，為等邊。 180−60=120。 120÷2=60。 三角 60° 推三邊相等。",
+      "steps": [
+        "180−60=120。",
+        "120÷2=60。",
+        "三角 60° 推三邊相等。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只有兩腰相等，底邊一定不同",
+          "truth": false,
+          "reason": "底角各為 60°，三角相等會推三邊相等。"
+        },
+        {
+          "choice": "兩底角各為 30°",
+          "truth": false,
+          "reason": "兩底角和為 120°，各 60°。"
+        },
+        {
+          "choice": "可能是直角三角形",
+          "truth": false,
+          "reason": "三角皆 60°。"
+        },
+        {
+          "choice": "三個角皆為 60°，所以三邊相等",
+          "truth": true,
+          "reason": "兩底角相等且和 120°，故各 60°，三角全相等，為等邊。"
+        }
+      ],
+      "misconceptionTarget": "把頂角 60° 後的底角平均算錯。",
+      "prerequisiteCheck": "會用等腰角度與等角對等邊。",
+      "estimatedTimeSec": "100",
+      "unitAndRoundingCheck": "角度精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "頂角 60° 合法且不產生其他解。",
+      "difficultyReason": "進階題，從等腰條件升級分類。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判定等腰何時變等邊。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "6019cc53bd01d1646212c10a12d67d901dfa187cc7437d920c96ab7521068c8a"
+    },
+    {
+      "questionId": "u16-s007-v008",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等邊三角形三條中線的敘述，何者正確？",
+      "givenConditions": [
+        "每個頂點各連到對邊中點"
+      ],
+      "target": "理解三條對稱線",
+      "choices": [
+        "三條中線完全重合成一條",
+        "三條中線都是高線與角平分線，且是三條不同直線",
+        "只有其中一條是高線",
+        "三條中線互相平行"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "三條中線分別也是高線、角平分線與對稱軸。",
+      "explanation": "等邊三角形對每一頂點都可視為等腰頂角，故各中線三線合一；三條線不同但共點。 逐一選三個頂點。 每條頂點中線皆套三線合一。 辨認它們在中心交會而非重合。",
+      "steps": [
+        "逐一選三個頂點。",
+        "每條頂點中線皆套三線合一。",
+        "辨認它們在中心交會而非重合。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "三條中線完全重合成一條",
+          "truth": false,
+          "reason": "它們從不同頂點出發，只在中心相交。"
+        },
+        {
+          "choice": "三條中線都是高線與角平分線，且是三條不同直線",
+          "truth": true,
+          "reason": "等邊三角形對每一頂點都可視為等腰頂角，故各中線三線合一；三條線不同但共點。"
+        },
+        {
+          "choice": "只有其中一條是高線",
+          "truth": false,
+          "reason": "三個頂點地位相同。"
+        },
+        {
+          "choice": "三條中線互相平行",
+          "truth": false,
+          "reason": "它們在三角形內交於同一點。"
+        }
+      ],
+      "misconceptionTarget": "把『三線合一』誤解成全三角形只有一條線。",
+      "prerequisiteCheck": "理解三線合一是同一頂點的三種身分。",
+      "estimatedTimeSec": "115",
+      "unitAndRoundingCheck": "無量值與單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "『三條不同』排除語意誤讀；交點位置不需使用高中內容。",
+      "difficultyReason": "進階題，辨析術語。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "理解等邊三條對稱線。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "f936be7ee88cdbdf76fe7b9feeeda5306be8874665133e56e5522292da081e7d"
+    },
+    {
+      "questionId": "u16-s007-v009",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "等邊 △ABC 邊長為 8，D 為 BC 中點。下列哪一組長度資料可用 RHS 證 △ABD≅△ACD？",
+      "givenConditions": [
+        "AD⊥BC"
+      ],
+      "target": "從等邊結構選出斜邊與一股",
+      "choices": [
+        "AD=AD 且 ∠A=60°",
+        "BC=BC 且 AB=AC",
+        "AB=BD 且 AC=DC",
+        "AB=AC=8 且 BD=DC=4"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "斜邊與一股分別相等，RHS 可證全等。",
+      "explanation": "兩小三角形皆在 D 為直角，斜邊 AB、AC 相等，一股 BD、DC 相等，符合 RHS。 由等邊得 AB=AC=8。 D 中點得 BD=DC=4。 AD⊥BC 得兩直角。",
+      "steps": [
+        "由等邊得 AB=AC=8。",
+        "D 中點得 BD=DC=4。",
+        "AD⊥BC 得兩直角。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "AD=AD 且 ∠A=60°",
+          "truth": false,
+          "reason": "RHS 需要斜邊與一股，不是角。"
+        },
+        {
+          "choice": "BC=BC 且 AB=AC",
+          "truth": false,
+          "reason": "BC 不是兩小直角三角形各自的一條邊。"
+        },
+        {
+          "choice": "AB=BD 且 AC=DC",
+          "truth": false,
+          "reason": "8 不等於 4。"
+        },
+        {
+          "choice": "AB=AC=8 且 BD=DC=4",
+          "truth": true,
+          "reason": "兩小三角形皆在 D 為直角，斜邊 AB、AC 相等，一股 BD、DC 相等，符合 RHS。"
+        }
+      ],
+      "misconceptionTarget": "無法在小三角形中辨認各自斜邊與股。",
+      "prerequisiteCheck": "會用中點、垂直與 RHS。",
+      "estimatedTimeSec": "130",
+      "unitAndRoundingCheck": "長度同一未指定單位，8 與4精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "兩小三角形非退化；斜邊明確為頂角到端點。",
+      "difficultyReason": "進階題，整合等邊分割與特殊判定。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "用 RHS 驗證對稱分割。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "9150cad05c58a34aa44165b13661a7ee82cecb1701119d19879e0a5309d73559"
+    },
+    {
+      "questionId": "u16-s007-v010",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形警告牌三邊都為 75 公分。它的一個內角應設計為多少度？",
+      "givenConditions": [
+        "牌面為平面等邊三角形"
+      ],
+      "target": "由實物等邊求角",
+      "choices": [
+        "45°",
+        "75°",
+        "60°",
+        "90°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "邊長改變只改大小，不改等邊三角形角度。",
+      "explanation": "三邊相等即等邊三角形，每個內角固定 60°，與邊長數值 75 無關。 由三邊相等判定等邊。 使用每角 60°。",
+      "steps": [
+        "由三邊相等判定等邊。",
+        "使用每角 60°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "45°",
+          "truth": false,
+          "reason": "三個 45° 無法封閉成三角形。"
+        },
+        {
+          "choice": "75°",
+          "truth": false,
+          "reason": "把邊長數值當角度。"
+        },
+        {
+          "choice": "60°",
+          "truth": true,
+          "reason": "三邊相等即等邊三角形，每個內角固定 60°，與邊長數值 75 無關。"
+        },
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "等邊三角形沒有直角。"
+        }
+      ],
+      "misconceptionTarget": "把長度數字直接當角度或認為尺寸影響角度。",
+      "prerequisiteCheck": "會分辨長度與角度量。",
+      "estimatedTimeSec": "80",
+      "unitAndRoundingCheck": "75 的單位是公分，答案單位是度；兩者不可直接轉換。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "牌面厚度與邊框寬度不在理想幾何模型。",
+      "difficultyReason": "素養題，尺寸規格用來判等邊而非計算角。",
+      "literacyContextNecessity": "三邊相同的製造規格直接決定角度。",
+      "authoringIntent": "解讀警告牌規格。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "f47cbeb055cb7dc597a85342a2a632f9dd72b93212237c219a40920b56e03012"
+    },
+    {
+      "questionId": "u16-s007-v011",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一個正三角形花圃周長 24 公尺，園丁沿每一邊等距設置。單邊長是多少？",
+      "givenConditions": [
+        "正三角形即等邊三角形"
+      ],
+      "target": "將周長平均到三邊",
+      "choices": [
+        "8 公尺",
+        "6 公尺",
+        "12 公尺",
+        "24 公尺"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "3×8=24，單位仍為公尺。",
+      "explanation": "24÷3=8 公尺。 辨認三邊等長。 以周長除以 3。",
+      "steps": [
+        "辨認三邊等長。",
+        "以周長除以 3。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "8 公尺",
+          "truth": true,
+          "reason": "24÷3=8 公尺。"
+        },
+        {
+          "choice": "6 公尺",
+          "truth": false,
+          "reason": "誤除以 4。"
+        },
+        {
+          "choice": "12 公尺",
+          "truth": false,
+          "reason": "誤除以 2。"
+        },
+        {
+          "choice": "24 公尺",
+          "truth": false,
+          "reason": "未分配周長。"
+        }
+      ],
+      "misconceptionTarget": "把正三角形當四邊形或等腰只分兩份。",
+      "prerequisiteCheck": "會由正三角形辨認等邊。",
+      "estimatedTimeSec": "70",
+      "unitAndRoundingCheck": "周長與邊長均為公尺，無取整。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "24 可整除 3；不涉及花圃邊框厚度。",
+      "difficultyReason": "素養題，邊長是設置間距與材料估算基礎。",
+      "literacyContextNecessity": "周長情境直接需要等邊三等分。",
+      "authoringIntent": "由花圃周長求邊長。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "d740500b5f7bcd15068cfaeb8e795155da7a6af8f1647724e88313660f002695"
+    },
+    {
+      "questionId": "u16-s007-v012",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-007-equilateral-properties",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "救援標誌採等邊三角形，從頂點 A 拉一條繩到對邊 BC 的中點 D。下列哪個安全定位敘述正確？",
+      "givenConditions": [
+        "D 為中點",
+        "AB=AC"
+      ],
+      "target": "解讀三線合一",
+      "choices": [
+        "繩 AD 同時垂直 BC 並把頂角分成兩個 30°",
+        "繩 AD 與 BC 成 60°",
+        "繩 AD 長度等於 BC",
+        "繩 AD 只平分底邊，不平分角"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "AD⊥BC，∠BAD=∠DAC=30°。",
+      "explanation": "等邊每角 60°，頂點中線三線合一，所以垂直底邊並將 60° 分成 30°、30°。 等邊得 ∠A=60°。 D 中點得 AD 為中線。 三線合一得到垂直與平分角。",
+      "steps": [
+        "等邊得 ∠A=60°。",
+        "D 中點得 AD 為中線。",
+        "三線合一得到垂直與平分角。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "繩 AD 同時垂直 BC 並把頂角分成兩個 30°",
+          "truth": true,
+          "reason": "等邊每角 60°，頂點中線三線合一，所以垂直底邊並將 60° 分成 30°、30°。"
+        },
+        {
+          "choice": "繩 AD 與 BC 成 60°",
+          "truth": false,
+          "reason": "高線應成 90°。"
+        },
+        {
+          "choice": "繩 AD 長度等於 BC",
+          "truth": false,
+          "reason": "沒有此一般等長性質。"
+        },
+        {
+          "choice": "繩 AD 只平分底邊，不平分角",
+          "truth": false,
+          "reason": "等邊中線也是角平分線。"
+        }
+      ],
+      "misconceptionTarget": "只使用中點的一半功能，或把 60° 當線與底邊夾角。",
+      "prerequisiteCheck": "會整合等邊角度與三線合一。",
+      "estimatedTimeSec": "115",
+      "unitAndRoundingCheck": "角度用度；未給長度，不應臆測繩長。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "理想拉緊直繩模型下成立；D 的中點身分明確。",
+      "difficultyReason": "素養題，定位繩同時提供垂直與對稱方向。",
+      "literacyContextNecessity": "安全定位依垂直與角平分，情境不可刪除。",
+      "authoringIntent": "分析救援標誌定位線。",
+      "tags": [
+        "空間與形狀",
+        "等邊三角形性質",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "41ab7c76b7f7c19ed5e708e12ac3e1757b51407fd29955256432f10142de4cd9"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u16-s007-cr001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "證明等邊三角形的每一內角都是60°。",
+      "requiredWork": [
+        "由三邊相等推出三角相等。",
+        "使用內角和180°。",
+        "完成除法。"
+      ],
+      "fullCreditSolution": [
+        "等邊三角形三邊相等，因此其對角三角相等。",
+        "設每角為x，3x=180°，所以x=60°。"
+      ],
+      "alternativeSolutions": [
+        "可把等邊三角形視為三組不同底邊的等腰三角形，逐步推出三角相等。"
+      ],
+      "reasoningSteps": [
+        "等邊三角形三邊相等，因此其對角三角相等。",
+        "設每角為x，3x=180°，所以x=60°。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整說明等邊推出等角，再由3x=180求每角60°。"
+        },
+        {
+          "score": 2,
+          "criteria": "結論與計算正確，但『等邊推出等角』理由簡略。"
+        },
+        {
+          "score": 1,
+          "criteria": "只寫180÷3=60，未說明為何三角相等。"
+        },
+        {
+          "score": 0,
+          "criteria": "認為有一角60即可等邊，或無有效證明。"
+        }
+      ],
+      "partialCreditRules": [
+        "結論與計算正確，但『等邊推出等角』理由簡略。",
+        "只寫180÷3=60，未說明為何三角相等。"
+      ],
+      "followThroughPolicy": "若把180誤抄但仍清楚完成等邊→等角的關鍵推理，最多1分。",
+      "unitAndNotationRules": "角度需附°；『每一內角』均為60°。",
+      "answerOnlyPolicy": "只答60°最多1分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "直接假設三角相等。",
+        "把外角120°混入內角和。"
+      ],
+      "independentReview": {
+        "derivedResult": "每一內角60°。",
+        "ambiguity": "討論非退化歐氏三角形，內角和180°適用。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "7c5bbc07aa6ebda8c1c6e5ff420246cebb16a24f52da7a9ccf9b43a3d9b13924"
+    },
+    {
+      "questionId": "u16-s007-cr002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-congruence",
+      "skillId": "equilateral-properties",
+      "skillOrder": 7,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-007-equilateral-properties",
+      "prompt": "正三角形 ABC 的邊長為 12 cm，從A向BC作高AD。求BD、∠BAD，並說明AD同時具有哪些特殊線性質。",
+      "requiredWork": [
+        "使用等邊三角形亦為等腰。",
+        "使用三線合一。",
+        "計算底邊一半與頂角一半。"
+      ],
+      "fullCreditSolution": [
+        "等邊三角形每角60°。",
+        "由A作高同時為中線與角平分線，所以BD=12÷2=6 cm，∠BAD=60°÷2=30°。",
+        "AD亦是BC的垂直平分線之一部分，且為A到BC的中線、高線、角平分線。"
+      ],
+      "alternativeSolutions": [
+        "可用△ABD與△ACD的直角全等或SSS/SAS證明兩半對稱。"
+      ],
+      "reasoningSteps": [
+        "等邊三角形每角60°。",
+        "由A作高同時為中線與角平分線，所以BD=12÷2=6 cm，∠BAD=60°÷2=30°。",
+        "AD亦是BC的垂直平分線之一部分，且為A到BC的中線、高線、角平分線。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "BD=6 cm、∠BAD=30°，並正確列AD為高線、中線、角平分線。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩數正確但特殊線少列一項，或性質完整而單一算術錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "只算對一個量或只寫三線合一。"
+        },
+        {
+          "score": 0,
+          "criteria": "把BD算12、角算60，或誤稱AD為邊的角平分線。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩數正確但特殊線少列一項，或性質完整而單一算術錯。",
+        "只算對一個量或只寫三線合一。"
+      ],
+      "followThroughPolicy": "若前一步把邊長抄錯，後續正確取一半且角度部分完整，最高2分。",
+      "unitAndNotationRules": "BD用cm，角用°；垂直可寫AD⊥BC。",
+      "answerOnlyPolicy": "只寫BD=6、∠BAD=30無理由，最多1分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "把頂角外角120°平分。",
+        "只因AD是高就認為必通過中點，漏掉等邊條件。"
+      ],
+      "independentReview": {
+        "derivedResult": "BD=6 cm，∠BAD=30°；AD為高、中線與角平分線。",
+        "ambiguity": "D明定為A向BC的高之垂足，等邊條件使三線重合。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "25ecdb8eac423ceb6bef01746882ff1726965336e991b93fd4a520534f63e441"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u16-s007-v001",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "bde4514c55361e2a697249ff5f47468317517256010965ed8832f145a19786a5",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "三個相等內角各為 60°，總和驗算 180°。",
+      "derivedAnswer": "60°",
+      "storedAnswer": "60°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「60°」；另外三個選項逐一排除：「45°」：三個 45° 只和 135°。；「90°」：三個直角不可能形成平面三角形。；「120°」：這是外角或錯誤平均。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度精確，無近似。",
+        "roundingConflict": "依精確資料獨立推導為「60°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "60° 在合法內角範圍。",
+        "alternateReading": "若採常見誤讀「把正三角形與正方形角度混淆。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，單一性質辨認。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會做 180÷3。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「求單一內角」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等邊三角形每一個內角是多少？」獨立重算：三個相等內角各為 60°，總和驗算 180°。 正確選項「60°」。四選項核對：45°=假，三個 45° 只和 135°。；90°=假，三個直角不可能形成平面三角形。；60°=真，180°÷3=60°。；120°=假，這是外角或錯誤平均。 邊界：60° 在合法內角範圍。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v002",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "e634af968314d995a05a8afc8bf9f9338877607a4e079ba59750ed194db6a38a",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "三角皆 60°。",
+      "derivedAnswer": "∠A=∠B=∠C=60°",
+      "storedAnswer": "∠A=∠B=∠C=60°",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「∠A=∠B=∠C=60°」；另外三個選項逐一排除：「只有 ∠A=∠B，∠C 未知」：三邊全相等可推出三角全相等。；「∠A=90°」：等邊沒有直角。；「三角形面積必為 60」：面積需邊長與平方單位，不能由角度直接指定。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無長度數值與單位。",
+        "roundingConflict": "依精確資料獨立推導為「∠A=∠B=∠C=60°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "結論只涉及角度，不需知道邊長大小。",
+        "alternateReading": "若採常見誤讀「只套一次等腰性質，沒有完成三角相等。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，直接使用等邊性質。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "知道等邊可視為多種等腰。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「使用等邊角度性質」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「△ABC 中 AB=BC=CA。下列何者必定成立？」獨立重算：三角皆 60°。 正確選項「∠A=∠B=∠C=60°」。四選項核對：∠A=∠B=∠C=60°=真，三邊全相等，依等邊性質三角皆相等，再由內角和得 60°。；只有 ∠A=∠B，∠C 未知=假，三邊全相等可推出三角全相等。；∠A=90°=假，等邊沒有直角。；三角形面積必為 60=假，面積需邊長與平方單位，不能由角度直接指定。 邊界：結論只涉及角度，不需知道邊長大小。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v003",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "6b5ea8c9bc9c8b25d7f5b338551c8ed44c9b85a06b9e9fa60efdd7fbb4caac02",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "三邊全相等，因此為等邊三角形。",
+      "derivedAnswer": "等邊三角形",
+      "storedAnswer": "等邊三角形",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「等邊三角形」；另外三個選項逐一排除：「只有等腰，不能確定等邊」：三組角都相等，可逐組推出三邊相等。；「直角三角形」：沒有 90°。；「無法分類」：角度資料已足夠。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度精確，和為 180°。",
+        "roundingConflict": "依精確資料獨立推導為「等邊三角形」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "三個 60° 完全指定，不存在其他角型。",
+        "alternateReading": "若採常見誤讀「認為角度只能判等腰不能判等邊。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎題，使用逆性質。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會用等角對等邊。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「使用逆性質」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一個三角形三個內角都為 60°。可判定它是什麼三角形？」獨立重算：三邊全相等，因此為等邊三角形。 正確選項「等邊三角形」。四選項核對：只有等腰，不能確定等邊=假，三組角都相等，可逐組推出三邊相等。；等邊三角形=真，三角相等，依等角對等邊可得三邊相等。；直角三角形=假，沒有 90°。；無法分類=假，角度資料已足夠。 邊界：三個 60° 完全指定，不存在其他角型。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v004",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "ed5a5a9e8bb0807b7ce97ec28e8106c78e9d77460631fa70d4b93f7ab82a087a",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "每邊 12 公分，三邊總和 36 公分。",
+      "derivedAnswer": "12 公分",
+      "storedAnswer": "12 公分",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「12 公分」；另外三個選項逐一排除：「9 公分」：36÷4 是正方形的算法。；「18 公分」：36÷2 只分成兩份。；「36 公分」：把周長當單邊。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "周長與邊長皆為公分，無平方單位。",
+        "roundingConflict": "依精確資料獨立推導為「12 公分」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "36 可被 3 整除，無取整。",
+        "alternateReading": "若採常見誤讀「除以錯誤邊數。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，將分類性質用於長度。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會做整數除法。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「由周長求邊長」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等邊三角形周長為 36 公分，邊長是多少？」獨立重算：每邊 12 公分，三邊總和 36 公分。 正確選項「12 公分」。四選項核對：9 公分=假，36÷4 是正方形的算法。；12 公分=真，36÷3=12。；18 公分=假，36÷2 只分成兩份。；36 公分=假，把周長當單邊。 邊界：36 可被 3 整除，無取整。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v005",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "82c548a717e38fb33650b8613f9a378a3893fa4cad928210e24db9d9d0270c8f",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "∠BAD=30°，同時 ∠ADB=90°。",
+      "derivedAnswer": "30°",
+      "storedAnswer": "30°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「30°」；另外三個選項逐一排除：「60°」：這是整個頂角。；「90°」：90° 是 AD 與 BC 的夾角。；「15°」：頂角只被平分一次。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度精確。",
+        "roundingConflict": "依精確資料獨立推導為「30°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "D 為底邊中點已明示，AD 的角色唯一。",
+        "alternateReading": "若採常見誤讀「把頂角的一半與垂直角混淆。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，串聯兩個性質。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會用等邊角度與三線合一。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「使用三線合一平分 60°」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等邊 △ABC 中，D 為 BC 中點。∠BAD 是多少？」獨立重算：∠BAD=30°，同時 ∠ADB=90°。 正確選項「30°」。四選項核對：60°=假，這是整個頂角。；90°=假，90° 是 AD 與 BC 的夾角。；30°=真，等邊頂角 ∠A=60°；AD 為中線亦為角平分線，所以一半 30°。；15°=假，頂角只被平分一次。 邊界：D 為底邊中點已明示，AD 的角色唯一。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v006",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "9c5555d7a7f0fba14944cb152ac0999580a93ebcfa24cca37a27c305cbd4d16c",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "BD=10÷2=5。",
+      "derivedAnswer": "5",
+      "storedAnswer": "5",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「5」；另外三個選項逐一排除：「10」：把整條底邊當半段。；「20」：方向相反。；「無法判斷」：等邊高線也是中線。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "BC 與 BD 使用同一長度單位；題目省略單位但比例精確。",
+        "roundingConflict": "依精確資料獨立推導為「5」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "D 在 BC 上且 AD⊥BC，對等邊頂點唯一。",
+        "alternateReading": "若採常見誤讀「認為高線不一定平分底邊，忘記等邊特殊性。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準題，從高線反推中線。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會用三線合一與除法。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「由三線合一得中點」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等邊 △ABC 中，AD⊥BC 且 D 在 BC 上。若 BC=10，則 BD 為多少？」獨立重算：BD=10÷2=5。 正確選項「5」。四選項核對：10=假，把整條底邊當半段。；20=假，方向相反。；無法判斷=假，等邊高線也是中線。；5=真，等邊是等腰，頂點高線同時平分底邊，所以 BD=DC=5。 邊界：D 在 BC 上且 AD⊥BC，對等邊頂點唯一。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v007",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "6019cc53bd01d1646212c10a12d67d901dfa187cc7437d920c96ab7521068c8a",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "等腰加頂角 60° 必為等邊三角形。",
+      "derivedAnswer": "三個角皆為 60°，所以三邊相等",
+      "storedAnswer": "三個角皆為 60°，所以三邊相等",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「三個角皆為 60°，所以三邊相等」；另外三個選項逐一排除：「只有兩腰相等，底邊一定不同」：底角各為 60°，三角相等會推三邊相等。；「兩底角各為 30°」：兩底角和為 120°，各 60°。；「可能是直角三角形」：三角皆 60°。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度精確。",
+        "roundingConflict": "依精確資料獨立推導為「三個角皆為 60°，所以三邊相等」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "頂角 60° 合法且不產生其他解。",
+        "alternateReading": "若採常見誤讀「把頂角 60° 後的底角平均算錯。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，從等腰條件升級分類。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會用等腰角度與等角對等邊。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「判定其實為等邊」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等腰三角形的頂角為 60°。下列何者必定正確？」獨立重算：等腰加頂角 60° 必為等邊三角形。 正確選項「三個角皆為 60°，所以三邊相等」。四選項核對：只有兩腰相等，底邊一定不同=假，底角各為 60°，三角相等會推三邊相等。；兩底角各為 30°=假，兩底角和為 120°，各 60°。；可能是直角三角形=假，三角皆 60°。；三個角皆為 60°，所以三邊相等=真，兩底角相等且和 120°，故各 60°，三角全相等，為等邊。 邊界：頂角 60° 合法且不產生其他解。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v008",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "f936be7ee88cdbdf76fe7b9feeeda5306be8874665133e56e5522292da081e7d",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "三條中線分別也是高線、角平分線與對稱軸。",
+      "derivedAnswer": "三條中線都是高線與角平分線，且是三條不同直線",
+      "storedAnswer": "三條中線都是高線與角平分線，且是三條不同直線",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「三條中線都是高線與角平分線，且是三條不同直線」；另外三個選項逐一排除：「三條中線完全重合成一條」：它們從不同頂點出發，只在中心相交。；「只有其中一條是高線」：三個頂點地位相同。；「三條中線互相平行」：它們在三角形內交於同一點。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "無量值與單位。",
+        "roundingConflict": "依精確資料獨立推導為「三條中線都是高線與角平分線，且是三條不同直線」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "『三條不同』排除語意誤讀；交點位置不需使用高中內容。",
+        "alternateReading": "若採常見誤讀「把『三線合一』誤解成全三角形只有一條線。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，辨析術語。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "理解三線合一是同一頂點的三種身分。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「理解三條對稱線」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等邊三角形三條中線的敘述，何者正確？」獨立重算：三條中線分別也是高線、角平分線與對稱軸。 正確選項「三條中線都是高線與角平分線，且是三條不同直線」。四選項核對：三條中線完全重合成一條=假，它們從不同頂點出發，只在中心相交。；三條中線都是高線與角平分線，且是三條不同直線=真，等邊三角形對每一頂點都可視為等腰頂角，故各中線三線合一；三條線不同但共點。；只有其中一條是高線=假，三個頂點地位相同。；三條中線互相平行=假，它們在三角形內交於同一點。 邊界：『三條不同』排除語意誤讀；交點位置不需使用高中內容。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v009",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "9150cad05c58a34aa44165b13661a7ee82cecb1701119d19879e0a5309d73559",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "斜邊與一股分別相等，RHS 可證全等。",
+      "derivedAnswer": "AB=AC=8 且 BD=DC=4",
+      "storedAnswer": "AB=AC=8 且 BD=DC=4",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「AB=AC=8 且 BD=DC=4」；另外三個選項逐一排除：「AD=AD 且 ∠A=60°」：RHS 需要斜邊與一股，不是角。；「BC=BC 且 AB=AC」：BC 不是兩小直角三角形各自的一條邊。；「AB=BD 且 AC=DC」：8 不等於 4。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "長度同一未指定單位，8 與4精確。",
+        "roundingConflict": "依精確資料獨立推導為「AB=AC=8 且 BD=DC=4」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "兩小三角形非退化；斜邊明確為頂角到端點。",
+        "alternateReading": "若採常見誤讀「無法在小三角形中辨認各自斜邊與股。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階題，整合等邊分割與特殊判定。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "會用中點、垂直與 RHS。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「從等邊結構選出斜邊與一股」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「等邊 △ABC 邊長為 8，D 為 BC 中點。下列哪一組長度資料可用 RHS 證 △ABD≅△ACD？」獨立重算：斜邊與一股分別相等，RHS 可證全等。 正確選項「AB=AC=8 且 BD=DC=4」。四選項核對：AD=AD 且 ∠A=60°=假，RHS 需要斜邊與一股，不是角。；BC=BC 且 AB=AC=假，BC 不是兩小直角三角形各自的一條邊。；AB=BD 且 AC=DC=假，8 不等於 4。；AB=AC=8 且 BD=DC=4=真，兩小三角形皆在 D 為直角，斜邊 AB、AC 相等，一股 BD、DC 相等，符合 RHS。 邊界：兩小三角形非退化；斜邊明確為頂角到端點。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v010",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "f47cbeb055cb7dc597a85342a2a632f9dd72b93212237c219a40920b56e03012",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "邊長改變只改大小，不改等邊三角形角度。",
+      "derivedAnswer": "60°",
+      "storedAnswer": "60°",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「60°」；另外三個選項逐一排除：「45°」：三個 45° 無法封閉成三角形。；「75°」：把邊長數值當角度。；「90°」：等邊三角形沒有直角。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "75 的單位是公分，答案單位是度；兩者不可直接轉換。",
+        "roundingConflict": "依精確資料獨立推導為「60°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "牌面厚度與邊框寬度不在理想幾何模型。",
+        "alternateReading": "若採常見誤讀「把長度數字直接當角度或認為尺寸影響角度。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，尺寸規格用來判等邊而非計算角。",
+      "literacyContextNecessity": "三邊相同的製造規格直接決定角度。",
+      "prerequisiteCheck": "會分辨長度與角度量。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「由實物等邊求角」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三角形警告牌三邊都為 75 公分。它的一個內角應設計為多少度？」獨立重算：邊長改變只改大小，不改等邊三角形角度。 正確選項「60°」。四選項核對：45°=假，三個 45° 無法封閉成三角形。；75°=假，把邊長數值當角度。；60°=真，三邊相等即等邊三角形，每個內角固定 60°，與邊長數值 75 無關。；90°=假，等邊三角形沒有直角。 邊界：牌面厚度與邊框寬度不在理想幾何模型。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v011",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "d740500b5f7bcd15068cfaeb8e795155da7a6af8f1647724e88313660f002695",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "3×8=24，單位仍為公尺。",
+      "derivedAnswer": "8 公尺",
+      "storedAnswer": "8 公尺",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「8 公尺」；另外三個選項逐一排除：「6 公尺」：誤除以 4。；「12 公尺」：誤除以 2。；「24 公尺」：未分配周長。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "周長與邊長均為公尺，無取整。",
+        "roundingConflict": "依精確資料獨立推導為「8 公尺」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "24 可整除 3；不涉及花圃邊框厚度。",
+        "alternateReading": "若採常見誤讀「把正三角形當四邊形或等腰只分兩份。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，邊長是設置間距與材料估算基礎。",
+      "literacyContextNecessity": "周長情境直接需要等邊三等分。",
+      "prerequisiteCheck": "會由正三角形辨認等邊。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「將周長平均到三邊」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一個正三角形花圃周長 24 公尺，園丁沿每一邊等距設置。單邊長是多少？」獨立重算：3×8=24，單位仍為公尺。 正確選項「8 公尺」。四選項核對：8 公尺=真，24÷3=8 公尺。；6 公尺=假，誤除以 4。；12 公尺=假，誤除以 2。；24 公尺=假，未分配周長。 邊界：24 可整除 3；不涉及花圃邊框厚度。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "questionId": "u16-s007-v012",
+      "unitId": "u16",
+      "skillId": "equilateral-properties",
+      "contentSha256": "41ab7c76b7f7c19ed5e708e12ac3e1757b51407fd29955256432f10142de4cd9",
+      "reviewVersion": "human-review-u16-r1.0",
+      "independentSolution": "AD⊥BC，∠BAD=∠DAC=30°。",
+      "derivedAnswer": "繩 AD 同時垂直 BC 並把頂角分成兩個 30°",
+      "storedAnswer": "繩 AD 同時垂直 BC 並把頂角分成兩個 30°",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "重新解題得到「繩 AD 同時垂直 BC 並把頂角分成兩個 30°」；另外三個選項逐一排除：「繩 AD 與 BC 成 60°」：高線應成 90°。；「繩 AD 長度等於 BC」：沒有此一般等長性質。；「繩 AD 只平分底邊，不平分角」：等邊中線也是角平分線。",
+        "undefinedSymbol": "題幹符號與詞語已在「等邊三角形性質」講義定義；特別核對：符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+        "unitConflict": "角度用度；未給長度，不應臆測繩長。",
+        "roundingConflict": "依精確資料獨立推導為「繩 AD 同時垂直 BC 並把頂角分成兩個 30°」，未以圖形量測或未指定四捨五入改變答案。",
+        "domainBoundary": "理想拉緊直繩模型下成立；D 的中點身分明確。",
+        "alternateReading": "若採常見誤讀「只使用中點的一半功能，或把 60° 當線與底邊夾角。」，會違反題目條件或定義，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養題，定位繩同時提供垂直與對稱方向。",
+      "literacyContextNecessity": "安全定位依垂直與角平分，情境不可刪除。",
+      "prerequisiteCheck": "會整合等邊角度與三線合一。",
+      "languageCheck": "繁體中文與臺灣數學用語已核對；目標「解讀三線合一」之條件、所求量、端點與單位均明確。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「救援標誌採等邊三角形，從頂點 A 拉一條繩到對邊 BC 的中點 D。下列哪個安全定位敘述正確？」獨立重算：AD⊥BC，∠BAD=∠DAC=30°。 正確選項「繩 AD 同時垂直 BC 並把頂角分成兩個 30°」。四選項核對：繩 AD 同時垂直 BC 並把頂角分成兩個 30°=真，等邊每角 60°，頂點中線三線合一，所以垂直底邊並將 60° 分成 30°、30°。；繩 AD 與 BC 成 60°=假，高線應成 90°。；繩 AD 長度等於 BC=假，沒有此一般等長性質。；繩 AD 只平分底邊，不平分角=假，等邊中線也是角平分線。 邊界：理想拉緊直繩模型下成立；D 的中點身分明確。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u16-fig-007-equilateral-properties",
+      "unitId": "u16",
+      "slot": "s007",
+      "title": "等邊三角形的60度與對稱高",
+      "altText": "等邊三角形三邊同刻痕，三個內角各標60°，頂點到底邊的虛線高通過中點。",
+      "svgPath": "figures/u16/u16-fig-007-equilateral-properties.svg",
+      "drawingSpec": {
+        "canvas": {
+          "width": 360,
+          "height": 240,
+          "viewBox": "0 0 360 240"
+        },
+        "coordinateSystem": "左上角為(0,0)，x向右、y向下。",
+        "geometry": "等邊三角形(60,190)、(180,42)、(300,190)，三邊單刻痕；高線x=180虛線，底部直角符號。",
+        "visibleLineRules": "主要邊線使用2.5px黑色實線；輔助線使用1.5px虛線；弧線不得遮住頂點標籤。",
+        "hiddenLineRules": "平面圖無隱藏邊；未畫出的延長線不得由視覺自行推定。",
+        "labels": "三個60°置於各角內，『中點』置底部下方。",
+        "tickMarksAndSymbols": "相等邊以同數量短刻痕表示；直角以小正方形；相等角以同型圓弧。",
+        "units": "示意圖無長度單位，題目另有數值時以題幹為準。",
+        "arrows": "只在延長線或行進方向使用箭頭。",
+        "toScale": false,
+        "notToScaleWarning": "圖形不按比例，請依標記與題目條件判斷。",
+        "mobileLayout": "360×240畫布；最小文字14px；標籤與線段保持至少6px間距。",
+        "answerLeakageControl": "圖中只呈現已知結構與定義標記，不標示題目所求數值或正確選項。"
+      },
+      "svgAssertions": [
+        "60°",
+        "stroke-dasharray",
+        "M180 174 h16 v16",
+        "中點"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "mobileReadability": "360px寬預覽下，頂點、刻痕、直角符號與延長線箭頭仍可辨識。",
+        "answerLeakage": "未顯示任何題目答案；只保留概念所需結構。",
+        "geometryCheck": "已依列出的座標逐項核對端點、交點、刻痕與文字位置。",
+        "reviewNote": "等邊三角形的60度與對稱高已逐線檢查：等邊三角形(60,190)、(180,42)、(300,190)，三邊單刻痕；高線x=180虛線，底部直角符號。；標籤配置為三個60°置於各角內，『中點』置底部下方。，未依視覺比例暗示未給定量。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "be6cadd27d3a89dbe939922a7b5d51e48eeabcccbde0f157362e9d7265feb900"
+    }
+  ]
+};
+export default skillData;

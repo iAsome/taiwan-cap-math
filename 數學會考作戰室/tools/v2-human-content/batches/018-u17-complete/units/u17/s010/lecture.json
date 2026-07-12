@@ -1,0 +1,241 @@
+{
+  "lectureId": "u17-s010-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallel-lines-distance",
+  "lockedTitle": "平行線距離",
+  "title": "平行線距離：最短距離必須沿共同垂線量",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallelogram-diagonal。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "理解點到直線的距離是垂線段長",
+    "理解兩平行線間距處處相等",
+    "用底乘高處理平行線間面積"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallelogram-diagonal",
+      "requiredLevel": "能正確使用「parallelogram-diagonal」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "點到直線距離",
+      "definition": "點到該直線的垂線段長"
+    },
+    {
+      "term": "平行線距離",
+      "definition": "任一共同垂線段的長"
+    },
+    {
+      "term": "共同垂線",
+      "definition": "同時垂直於兩平行線的線段"
+    },
+    {
+      "term": "斜線段",
+      "definition": "連接兩線但不垂直，通常較長"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "距離指最短長度，因此必須沿垂直方向量。",
+    "兩條平行線之間的共同垂線段都等長，這使得同底等高的三角形或平行四邊形面積容易比較。",
+    "連接兩平行線的斜線段雖跨過兩線，但不是兩線距離。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "點到直線距離",
+      "statement": "點到該直線的垂線段長"
+    },
+    {
+      "name": "平行線距離",
+      "statement": "任一共同垂線段的長"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "d=垂線段長",
+      "conditions": [
+        "求點到線或兩平行線距離"
+      ],
+      "meaning": "用於平行線距離中符合條件的推理或計算。"
+    },
+    {
+      "formula": "平行四邊形面積=底×平行線距離",
+      "conditions": [
+        "底位於其中一條平行線"
+      ],
+      "meaning": "用於平行線距離中符合條件的推理或計算。"
+    },
+    {
+      "formula": "三角形面積=底×平行線距離÷2",
+      "conditions": [
+        "頂點位於另一條平行線"
+      ],
+      "meaning": "用於平行線距離中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找出兩條平行線",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "作或辨認共同垂線",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "讀取垂線段長",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "統一單位",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "需要時把距離當作高代入面積",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "共同垂線長6公分",
+      "solutionSteps": [
+        "兩平行線距離6公分。"
+      ],
+      "answer": "兩平行線距離6公分。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "斜線段長10、垂線段長8",
+      "solutionSteps": [
+        "距離是8。"
+      ],
+      "answer": "距離是8。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "底12、距離5的平行四邊形",
+      "solutionSteps": [
+        "面積60。"
+      ],
+      "answer": "面積60。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "同底且頂點在同一平行線上的三角形",
+      "solutionSteps": [
+        "面積相等。"
+      ],
+      "answer": "面積相等。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把任意連線當距離",
+      "why": "距離必須垂直",
+      "correction": "距離必須垂直"
+    },
+    {
+      "mistake": "沿平行線方向量",
+      "why": "那不是兩線間隔",
+      "correction": "那不是兩線間隔"
+    },
+    {
+      "mistake": "面積高取斜邊",
+      "why": "高要垂直於底",
+      "correction": "高要垂直於底"
+    },
+    {
+      "mistake": "單位未統一",
+      "why": "先換成相同長度單位",
+      "correction": "先換成相同長度單位"
+    },
+    {
+      "mistake": "把三角形面積忘記除2",
+      "why": "平行四邊形才是底乘高",
+      "correction": "平行四邊形才是底乘高"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「平行線距離」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "距離指最短長度，因此必須沿垂直方向量。",
+    "d=垂線段長",
+    "解題時先確認「求點到線或兩平行線距離」。"
+  ],
+  "connections": {
+    "previous": "承接parallelogram-diagonal。",
+    "next": "下一技能依鎖定順序為special-quadrilateral。"
+  },
+  "figureReferences": [
+    "u17-s010-fig001"
+  ],
+  "figureAccessibility": "兩條水平平行線間畫一條垂直線段d與一條較長斜線段s，垂足有直角記號。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s010-v001",
+      "u17-s010-v002",
+      "u17-s010-v003",
+      "u17-s010-v004",
+      "u17-s010-v005",
+      "u17-s010-v006",
+      "u17-s010-v007",
+      "u17-s010-v008",
+      "u17-s010-v009",
+      "u17-s010-v010",
+      "u17-s010-v011",
+      "u17-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s010-cr001",
+      "u17-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "內容以最短距離定義為核心，連結共同垂線與面積中的高，沒有引入座標距離公式。"
+  },
+  "contentSha256": "aeb110705288d0b7332ca1bb1862c743ef2e5a2610aefe2c2d9793be3edaadce"
+}

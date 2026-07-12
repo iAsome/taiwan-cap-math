@@ -1,0 +1,216 @@
+{
+  "unitId": "u03",
+  "unitTitle": "一元一次方程式",
+  "reviewVersion": "human-syllabus-review-r4.0",
+  "decisions": [
+    {
+      "slot": "s001",
+      "skillId": "linear-expression-substitution",
+      "originalTitle": "文字式與代入求值",
+      "finalTitle": "文字式與代入求值",
+      "decision": "KEEP",
+      "topicId": "u03-linear-expression",
+      "prerequisiteSkillIds": [],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s002",
+      "skillId": "linear-expression-simplify",
+      "originalTitle": "一元一次式化簡",
+      "finalTitle": "一元一次式化簡",
+      "decision": "KEEP",
+      "topicId": "u03-linear-expression",
+      "prerequisiteSkillIds": [
+        "linear-expression-substitution"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s003",
+      "skillId": "linear-equation-balance-property",
+      "originalTitle": "等量公理",
+      "finalTitle": "等量公理",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-solving",
+      "prerequisiteSkillIds": [
+        "linear-expression-simplify"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s004",
+      "skillId": "linear-equation-basic-solving",
+      "originalTitle": "一元一次方程式基本解法",
+      "finalTitle": "一元一次方程式基本解法",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-solving",
+      "prerequisiteSkillIds": [
+        "linear-equation-balance-property"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s005",
+      "skillId": "linear-equation-parentheses",
+      "originalTitle": "含括號的一元一次方程式",
+      "finalTitle": "含括號的一元一次方程式",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-solving",
+      "prerequisiteSkillIds": [
+        "linear-equation-basic-solving"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s006",
+      "skillId": "linear-equation-fractions",
+      "originalTitle": "含分母的一元一次方程式",
+      "finalTitle": "含分母的一元一次方程式",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-solving",
+      "prerequisiteSkillIds": [
+        "linear-equation-parentheses"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s007",
+      "skillId": "linear-equation-check-solution",
+      "originalTitle": "方程式解的檢查",
+      "finalTitle": "方程式解的檢查",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-solving",
+      "prerequisiteSkillIds": [
+        "linear-equation-fractions"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s008",
+      "skillId": "linear-equation-age-problem",
+      "originalTitle": "年齡問題",
+      "finalTitle": "年齡問題",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-apps",
+      "prerequisiteSkillIds": [
+        "linear-equation-check-solution"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s009",
+      "skillId": "linear-equation-money-problem",
+      "originalTitle": "金錢問題",
+      "finalTitle": "金錢問題",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-apps",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s010",
+      "skillId": "linear-equation-rate-problem",
+      "originalTitle": "行程問題",
+      "finalTitle": "行程問題",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-apps",
+      "prerequisiteSkillIds": [
+        "linear-equation-money-problem"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s011",
+      "skillId": "linear-equation-distribution-problem",
+      "originalTitle": "分配問題",
+      "finalTitle": "分配問題",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-apps",
+      "prerequisiteSkillIds": [
+        "linear-equation-rate-problem"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s012",
+      "skillId": "linear-equation-consecutive-integers",
+      "originalTitle": "連續整數問題",
+      "finalTitle": "連續整數問題",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-apps",
+      "prerequisiteSkillIds": [
+        "linear-equation-distribution-problem"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s013",
+      "skillId": "linear-equation-reasonableness",
+      "originalTitle": "合理性檢查",
+      "finalTitle": "解的合理性檢查",
+      "decision": "RENAME",
+      "topicId": "u03-linear-equation-reasoning",
+      "prerequisiteSkillIds": [
+        "linear-equation-consecutive-integers"
+      ],
+      "reason": "補上「解的」以明確指出審查的是方程式解，而非泛指任何敘述是否合理。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s014",
+      "skillId": "linear-equation-plan-comparison",
+      "originalTitle": "方案比較問題",
+      "finalTitle": "方案比較問題",
+      "decision": "KEEP",
+      "topicId": "u03-linear-equation-reasoning",
+      "prerequisiteSkillIds": [
+        "linear-equation-reasonableness"
+      ],
+      "reason": "能力邊界清楚，與相鄰技能的先備順序及會考範圍一致。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    },
+    {
+      "slot": "s015",
+      "skillId": "linear-equation-literacy-context",
+      "originalTitle": "一元一次方程式素養題",
+      "finalTitle": "一元一次方程式綜合素養題",
+      "decision": "RENAME",
+      "topicId": "u03-linear-equation-reasoning",
+      "prerequisiteSkillIds": [
+        "linear-equation-plan-comparison"
+      ],
+      "reason": "補上「綜合」以區分單一應用類型，並要求整合初始量、變化率、固定費或限制條件。",
+      "figurePolicy": "按題目數學需要決定，不受舊 text-only 欄位限制",
+      "legacyGeneratedContentAccepted": false
+    }
+  ],
+  "conclusion": "15個技能全部保留穩定ID；2個標題精確化。舊生成題庫與講義不被接受為來源。"
+}

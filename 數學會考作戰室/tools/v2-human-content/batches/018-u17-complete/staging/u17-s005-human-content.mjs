@@ -1,0 +1,1251 @@
+// SERIALIZATION OF REVIEWED CHATGPT HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u17-s005-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallel-alternate-interior",
+  "lockedTitle": "內錯角",
+  "title": "內錯角：辨認Z形只是提示，平行條件才是理由",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallelogram-properties。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "正確辨認一對內錯角",
+    "運用平行時內錯角相等",
+    "用內錯角相等判定平行"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallelogram-properties",
+      "requiredLevel": "能正確使用「parallelogram-properties」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "內錯角",
+      "definition": "位在兩直線之間且分居截線兩側的一對角"
+    },
+    {
+      "term": "截線兩側",
+      "definition": "以截線為界的相反側"
+    },
+    {
+      "term": "Z形",
+      "definition": "常見辨認提示，不能取代條件"
+    },
+    {
+      "term": "逆定理",
+      "definition": "內錯角相等可判兩線平行"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "內錯角必須同時滿足「內部」與「截線異側」。",
+    "兩線平行時，內錯角相等；反過來，若一對內錯角相等，也能判定兩線平行。",
+    "Z形可以幫忙找位置，但圖若旋轉，仍應依定義判斷。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "內錯角",
+      "statement": "位在兩直線之間且分居截線兩側的一對角"
+    },
+    {
+      "name": "截線兩側",
+      "statement": "以截線為界的相反側"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a∥b ⇒ 內錯角相等",
+      "conditions": [
+        "同一截線"
+      ],
+      "meaning": "用於內錯角中符合條件的推理或計算。"
+    },
+    {
+      "formula": "內錯角相等 ⇒ a∥b",
+      "conditions": [
+        "角位置正確"
+      ],
+      "meaning": "用於內錯角中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找截線",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "圈出兩線之間的內部區域",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "在截線兩側各選一角",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "確認兩角為內錯角",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "依題意使用性質或逆性質",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "a∥b，內錯角之一38°",
+      "solutionSteps": [
+        "另一角38°。"
+      ],
+      "answer": "另一角38°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "內錯角為4x+3與6x-21",
+      "solutionSteps": [
+        "令兩者相等，得x=12。"
+      ],
+      "answer": "令兩者相等，得x=12。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "一內一外的兩角",
+      "solutionSteps": [
+        "不是內錯角。"
+      ],
+      "answer": "不是內錯角。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "內錯角相等",
+      "solutionSteps": [
+        "可判兩線平行。"
+      ],
+      "answer": "可判兩線平行。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只要在截線兩側就叫內錯角",
+      "why": "還必須都在兩線內部",
+      "correction": "還必須都在兩線內部"
+    },
+    {
+      "mistake": "平行未給定就直接令角相等",
+      "why": "需先證明平行或用逆性質作結論",
+      "correction": "需先證明平行或用逆性質作結論"
+    },
+    {
+      "mistake": "把同側內角當內錯角",
+      "why": "同側與異側不同",
+      "correction": "同側與異側不同"
+    },
+    {
+      "mistake": "依Z字朝向判斷",
+      "why": "圖可旋轉，應看位置",
+      "correction": "圖可旋轉，應看位置"
+    },
+    {
+      "mistake": "把角度相加成180°",
+      "why": "內錯角在平行時相等",
+      "correction": "內錯角在平行時相等"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「內錯角」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "內錯角必須同時滿足「內部」與「截線異側」。",
+    "a∥b ⇒ 內錯角相等",
+    "解題時先確認「同一截線」。"
+  ],
+  "connections": {
+    "previous": "承接parallelogram-properties。",
+    "next": "下一技能依鎖定順序為parallel-corresponding。"
+  },
+  "figureReferences": [
+    "u17-s005-fig001"
+  ],
+  "figureAccessibility": "兩平行線與截線構成Z形，兩個內錯角以弧線標出。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s005-v001",
+      "u17-s005-v002",
+      "u17-s005-v003",
+      "u17-s005-v004",
+      "u17-s005-v005",
+      "u17-s005-v006",
+      "u17-s005-v007",
+      "u17-s005-v008",
+      "u17-s005-v009",
+      "u17-s005-v010",
+      "u17-s005-v011",
+      "u17-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s005-cr001",
+      "u17-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義用位置定義取代圖形口訣，並並列性質與逆性質，避免學生只背Z形。"
+  },
+  "contentSha256": "a981c24d1b69a2c6ca07e87132eaf1fce68bb6bc60f8011e6ba85e9acce2fc8d"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u17-s005-v001",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "basic",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "哪一種角的位置符合內錯角？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "辨認內錯角定義。",
+    "choices": [
+      "位於兩直線之間且分居截線兩側",
+      "位於兩直線外且同側",
+      "位於同一交點相對位置",
+      "位於兩直線之間且同側"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "重新依題目條件計算：內錯角同時要在內部並位於截線異側。",
+    "explanation": "內錯角同時要在內部並位於截線異側。",
+    "steps": [
+      "內錯角同時要在內部並位於截線異側。",
+      "因此選擇「位於兩直線之間且分居截線兩側」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "位於兩直線之間且分居截線兩側",
+        "truth": true,
+        "reason": "依獨立重算「內錯角同時要在內部並位於截線異側。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "位於兩直線外且同側",
+        "truth": false,
+        "reason": "選項「位於兩直線外且同側」不符合題意；依內錯角的位置定義。應得到「位於兩直線之間且分居截線兩側」，此錯誤常源自：只記「錯」而忽略內部。"
+      },
+      {
+        "choice": "位於同一交點相對位置",
+        "truth": false,
+        "reason": "選項「位於同一交點相對位置」不符合題意；依內錯角的位置定義。應得到「位於兩直線之間且分居截線兩側」，此錯誤常源自：只記「錯」而忽略內部。"
+      },
+      {
+        "choice": "位於兩直線之間且同側",
+        "truth": false,
+        "reason": "選項「位於兩直線之間且同側」不符合題意；依內錯角的位置定義。應得到「位於兩直線之間且分居截線兩側」，此錯誤常源自：只記「錯」而忽略內部。"
+      }
+    ],
+    "misconceptionTarget": "只記「錯」而忽略內部。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「辨認內錯角定義。」；四個選項互異，只有位於兩直線之間且分居截線兩側符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "概念直接辨認。",
+    "literacyContextNecessity": null,
+    "visualMode": "figure-supported",
+    "figureId": "u17-s005-fig001",
+    "drawingSpecRef": "units/u17/s005/drawing-specs.jsonl#u17-s005-fig001",
+    "semanticReviewId": "u17-s005-v001-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "b44686fc134dd25f42bb095070f6aaa1f849bb742a823ec8ac981c2a86d028f0"
+  },
+  {
+    "questionId": "u17-s005-v002",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "basic",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "a∥b，一對內錯角之一為49°，另一角為多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "直接求內錯角。",
+    "choices": [
+      "41°",
+      "49°",
+      "131°",
+      "98°"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "重新依題目條件計算：平行線的內錯角相等，所以為49°。",
+    "explanation": "平行線的內錯角相等，所以為49°。",
+    "steps": [
+      "平行線的內錯角相等，所以為49°。",
+      "因此選擇「49°」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "41°",
+        "truth": false,
+        "reason": "選項「41°」不符合題意；依內錯角相等。應得到「49°」，此錯誤常源自：誤用互補。"
+      },
+      {
+        "choice": "49°",
+        "truth": true,
+        "reason": "依獨立重算「平行線的內錯角相等，所以為49°。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "131°",
+        "truth": false,
+        "reason": "選項「131°」不符合題意；依內錯角相等。應得到「49°」，此錯誤常源自：誤用互補。"
+      },
+      {
+        "choice": "98°",
+        "truth": false,
+        "reason": "選項「98°」不符合題意；依內錯角相等。應得到「49°」，此錯誤常源自：誤用互補。"
+      }
+    ],
+    "misconceptionTarget": "誤用互補。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「直接求內錯角。」；四個選項互異，只有49°符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "單一步驟。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v002-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "c1fcc36e8c40f82010ec24fa544dbb59c45b4ff6a95d3ca59cd41f52b5e1422c"
+  },
+  {
+    "questionId": "u17-s005-v003",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "basic",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一對內錯角相等，可以判定什麼？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "由角關係判平行。",
+    "choices": [
+      "截線垂直兩直線",
+      "兩角為90°",
+      "兩被截直線平行",
+      "兩直線等長"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "重新依題目條件計算：內錯角相等是平行判定。",
+    "explanation": "內錯角相等是平行判定。",
+    "steps": [
+      "內錯角相等是平行判定。",
+      "因此選擇「兩被截直線平行」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "截線垂直兩直線",
+        "truth": false,
+        "reason": "選項「截線垂直兩直線」不符合題意；依內錯角逆性質。應得到「兩被截直線平行」，此錯誤常源自：把角相等當垂直。"
+      },
+      {
+        "choice": "兩角為90°",
+        "truth": false,
+        "reason": "選項「兩角為90°」不符合題意；依內錯角逆性質。應得到「兩被截直線平行」，此錯誤常源自：把角相等當垂直。"
+      },
+      {
+        "choice": "兩被截直線平行",
+        "truth": true,
+        "reason": "依獨立重算「內錯角相等是平行判定。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "兩直線等長",
+        "truth": false,
+        "reason": "選項「兩直線等長」不符合題意；依內錯角逆性質。應得到「兩被截直線平行」，此錯誤常源自：把角相等當垂直。"
+      }
+    ],
+    "misconceptionTarget": "把角相等當垂直。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 60,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「由角關係判平行。」；四個選項互異，只有兩被截直線平行符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "直接套逆性質。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v003-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "a02b74f42c55302f1ef5eeeb1ad2875216cd5a001109657e8febf41a528247c1"
+  },
+  {
+    "questionId": "u17-s005-v004",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "standard",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "a∥b，內錯角為(2x+11)°與71°，x為多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "用內錯角相等解方程。",
+    "choices": [
+      "20",
+      "41",
+      "60",
+      "30"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "重新依題目條件計算：2x+11=71，2x=60，x=30。",
+    "explanation": "2x+11=71，2x=60，x=30。",
+    "steps": [
+      "2x+11=71，2x=60，x=30。",
+      "因此選擇「30」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "20",
+        "truth": false,
+        "reason": "選項「20」不符合題意；依內錯角相等。應得到「30」，此錯誤常源自：將71與11相加。"
+      },
+      {
+        "choice": "41",
+        "truth": false,
+        "reason": "選項「41」不符合題意；依內錯角相等。應得到「30」，此錯誤常源自：將71與11相加。"
+      },
+      {
+        "choice": "60",
+        "truth": false,
+        "reason": "選項「60」不符合題意；依內錯角相等。應得到「30」，此錯誤常源自：將71與11相加。"
+      },
+      {
+        "choice": "30",
+        "truth": true,
+        "reason": "依獨立重算「2x+11=71，2x=60，x=30。」，此選項正確回答所求。"
+      }
+    ],
+    "misconceptionTarget": "將71與11相加。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「用內錯角相等解方程。」；四個選項互異，只有30符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "標準代數應用。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v004-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "f6849ed2bb3cde153b4dbef4838106e020eb85952d07bc969c4569d1cc720dac"
+  },
+  {
+    "questionId": "u17-s005-v005",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "standard",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "內錯角為(5x-13)°與(3x+21)°，兩線平行時兩角各是多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "求參數後求角。",
+    "choices": [
+      "17°",
+      "72°",
+      "68°",
+      "108°"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "重新依題目條件計算：5x-13=3x+21，x=17；角=72°。",
+    "explanation": "5x-13=3x+21，x=17；角=72°。",
+    "steps": [
+      "5x-13=3x+21，x=17；角=72°。",
+      "因此選擇「72°」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "17°",
+        "truth": false,
+        "reason": "選項「17°」不符合題意；依內錯角相等。應得到「72°」，此錯誤常源自：只回答x。"
+      },
+      {
+        "choice": "72°",
+        "truth": true,
+        "reason": "依獨立重算「5x-13=3x+21，x=17；角=72°。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "68°",
+        "truth": false,
+        "reason": "選項「68°」不符合題意；依內錯角相等。應得到「72°」，此錯誤常源自：只回答x。"
+      },
+      {
+        "choice": "108°",
+        "truth": false,
+        "reason": "選項「108°」不符合題意；依內錯角相等。應得到「72°」，此錯誤常源自：只回答x。"
+      }
+    ],
+    "misconceptionTarget": "只回答x。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「求參數後求角。」；四個選項互異，只有72°符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需代回。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v005-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "e17cbbcb1427832d6023fad8988e0fe27b54dc39adfe13f2737490c5b2c19326"
+  },
+  {
+    "questionId": "u17-s005-v006",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "standard",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "圖中一角為126°，其鄰補角與另一交點的一角互為內錯角，兩線平行。另一交點該角為多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "兩步求內錯角。",
+    "choices": [
+      "126°",
+      "64°",
+      "54°",
+      "234°"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "重新依題目條件計算：先求鄰補角54°，再由內錯角相等得54°。",
+    "explanation": "先求鄰補角54°，再由內錯角相等得54°。",
+    "steps": [
+      "先求鄰補角54°，再由內錯角相等得54°。",
+      "因此選擇「54°」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "126°",
+        "truth": false,
+        "reason": "選項「126°」不符合題意；依鄰補與內錯角串聯。應得到「54°」，此錯誤常源自：直接把126°搬到另一交點。"
+      },
+      {
+        "choice": "64°",
+        "truth": false,
+        "reason": "選項「64°」不符合題意；依鄰補與內錯角串聯。應得到「54°」，此錯誤常源自：直接把126°搬到另一交點。"
+      },
+      {
+        "choice": "54°",
+        "truth": true,
+        "reason": "依獨立重算「先求鄰補角54°，再由內錯角相等得54°。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "234°",
+        "truth": false,
+        "reason": "選項「234°」不符合題意；依鄰補與內錯角串聯。應得到「54°」，此錯誤常源自：直接把126°搬到另一交點。"
+      }
+    ],
+    "misconceptionTarget": "直接把126°搬到另一交點。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 75,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「兩步求內錯角。」；四個選項互異，只有54°符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需先轉換同一交點角度。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v006-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "3ad3b5a07fcc606aaab085c70e20ced7304bc219dddade25053945e822f72515"
+  },
+  {
+    "questionId": "u17-s005-v007",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "advanced",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列敘述何者正確？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "辨認口訣的限制。",
+    "choices": [
+      "只要看見Z形兩角一定相等",
+      "內錯角一定互補",
+      "內錯角必在截線同側",
+      "Z形可幫助找內錯角，但平行條件才保證相等"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "重新依題目條件計算：圖形口訣只協助辨位，定理仍需平行條件。",
+    "explanation": "圖形口訣只協助辨位，定理仍需平行條件。",
+    "steps": [
+      "圖形口訣只協助辨位，定理仍需平行條件。",
+      "因此選擇「Z形可幫助找內錯角，但平行條件才保證相等」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "只要看見Z形兩角一定相等",
+        "truth": false,
+        "reason": "選項「只要看見Z形兩角一定相等」不符合題意；依位置提示不等於證明。應得到「Z形可幫助找內錯角，但平行條件才保證相等」，此錯誤常源自：以外觀代替條件。"
+      },
+      {
+        "choice": "內錯角一定互補",
+        "truth": false,
+        "reason": "選項「內錯角一定互補」不符合題意；依位置提示不等於證明。應得到「Z形可幫助找內錯角，但平行條件才保證相等」，此錯誤常源自：以外觀代替條件。"
+      },
+      {
+        "choice": "內錯角必在截線同側",
+        "truth": false,
+        "reason": "選項「內錯角必在截線同側」不符合題意；依位置提示不等於證明。應得到「Z形可幫助找內錯角，但平行條件才保證相等」，此錯誤常源自：以外觀代替條件。"
+      },
+      {
+        "choice": "Z形可幫助找內錯角，但平行條件才保證相等",
+        "truth": true,
+        "reason": "依獨立重算「圖形口訣只協助辨位，定理仍需平行條件。」，此選項正確回答所求。"
+      }
+    ],
+    "misconceptionTarget": "以外觀代替條件。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「辨認口訣的限制。」；四個選項互異，只有Z形可幫助找內錯角，但平行條件才保證相等符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "概念邊界分析。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v007-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "26ecfe7ff70449c0b72a2db11a611b991208029b884c9d7e08ffd52020ea5bff"
+  },
+  {
+    "questionId": "u17-s005-v008",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "advanced",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一對內錯角分別為(7x-5)°與(4x+40)°。若兩角相等，x與兩線關係為何？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "同時求參數與線關係。",
+    "choices": [
+      "x=15，兩線平行",
+      "x=9，兩線垂直",
+      "x=15，無法判斷",
+      "x=45，兩線平行"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "重新依題目條件計算：7x-5=4x+40，x=15；內錯角相等，故兩線平行。",
+    "explanation": "7x-5=4x+40，x=15；內錯角相等，故兩線平行。",
+    "steps": [
+      "7x-5=4x+40，x=15；內錯角相等，故兩線平行。",
+      "因此選擇「x=15，兩線平行」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "x=15，兩線平行",
+        "truth": true,
+        "reason": "依獨立重算「7x-5=4x+40，x=15；內錯角相等，故兩線平行。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "x=9，兩線垂直",
+        "truth": false,
+        "reason": "選項「x=9，兩線垂直」不符合題意；依內錯角相等判平行。應得到「x=15，兩線平行」，此錯誤常源自：解出x後未作幾何結論。"
+      },
+      {
+        "choice": "x=15，無法判斷",
+        "truth": false,
+        "reason": "選項「x=15，無法判斷」不符合題意；依內錯角相等判平行。應得到「x=15，兩線平行」，此錯誤常源自：解出x後未作幾何結論。"
+      },
+      {
+        "choice": "x=45，兩線平行",
+        "truth": false,
+        "reason": "選項「x=45，兩線平行」不符合題意；依內錯角相等判平行。應得到「x=15，兩線平行」，此錯誤常源自：解出x後未作幾何結論。"
+      }
+    ],
+    "misconceptionTarget": "解出x後未作幾何結論。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「同時求參數與線關係。」；四個選項互異，只有x=15，兩線平行符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需要代數和逆性質。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v008-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "055d29d34dea647c985e9e239d7d69d78b116a0ff18e2911896f3b3bdc95f5d4"
+  },
+  {
+    "questionId": "u17-s005-v009",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "advanced",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "a∥b，一對內錯角的度數比為3:3，且其中一角與相鄰角相差40°。內錯角是多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "整合等角與角差。",
+    "choices": [
+      "40°",
+      "90°",
+      "70°",
+      "110°"
+    ],
+    "answerIndex": 2,
+    "independentSolution": "重新依題目條件計算：設內錯角為x，相鄰補角180-x，差為40：180-2x=40，x=70°。",
+    "explanation": "設內錯角為x，相鄰補角180-x，差為40：180-2x=40，x=70°。",
+    "steps": [
+      "設內錯角為x，相鄰補角180-x，差為40：180-2x=40，x=70°。",
+      "因此選擇「70°」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "40°",
+        "truth": false,
+        "reason": "選項「40°」不符合題意；依內錯角相等且鄰補。應得到「70°」，此錯誤常源自：把3:3誤認為各3°。"
+      },
+      {
+        "choice": "90°",
+        "truth": false,
+        "reason": "選項「90°」不符合題意；依內錯角相等且鄰補。應得到「70°」，此錯誤常源自：把3:3誤認為各3°。"
+      },
+      {
+        "choice": "70°",
+        "truth": true,
+        "reason": "依獨立重算「設內錯角為x，相鄰補角180-x，差為40：180-2x=40，x=70°。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "110°",
+        "truth": false,
+        "reason": "選項「110°」不符合題意；依內錯角相等且鄰補。應得到「70°」，此錯誤常源自：把3:3誤認為各3°。"
+      }
+    ],
+    "misconceptionTarget": "把3:3誤認為各3°。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 105,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「整合等角與角差。」；四個選項互異，只有70°符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "多關係建模。",
+    "literacyContextNecessity": null,
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v009-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "3542c0e41e4b2c6ae89dabd55e1ac41bdfe80ae28bd321a2f0b7c91a222fd962"
+  },
+  {
+    "questionId": "u17-s005-v010",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "literacy",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "兩條平行自行車道被一條連絡道穿過。連絡道與第一車道內側角為(3x+12)°，第二車道對應的內錯角為(5x-28)°。x是多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "由道路配置求參數。",
+    "choices": [
+      "8",
+      "16",
+      "40",
+      "20"
+    ],
+    "answerIndex": 3,
+    "independentSolution": "重新依題目條件計算：內錯角相等：3x+12=5x-28，2x=40，x=20。",
+    "explanation": "內錯角相等：3x+12=5x-28，2x=40，x=20。",
+    "steps": [
+      "內錯角相等：3x+12=5x-28，2x=40，x=20。",
+      "因此選擇「20」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "8",
+        "truth": false,
+        "reason": "選項「8」不符合題意；依平行道路的內錯角。應得到「20」，此錯誤常源自：用角和180°。"
+      },
+      {
+        "choice": "16",
+        "truth": false,
+        "reason": "選項「16」不符合題意；依平行道路的內錯角。應得到「20」，此錯誤常源自：用角和180°。"
+      },
+      {
+        "choice": "40",
+        "truth": false,
+        "reason": "選項「40」不符合題意；依平行道路的內錯角。應得到「20」，此錯誤常源自：用角和180°。"
+      },
+      {
+        "choice": "20",
+        "truth": true,
+        "reason": "依獨立重算「內錯角相等：3x+12=5x-28，2x=40，x=20。」，此選項正確回答所求。"
+      }
+    ],
+    "misconceptionTarget": "用角和180°。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 120,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「由道路配置求參數。」；四個選項互異，只有20符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需將配置辨認為內錯角。",
+    "literacyContextNecessity": "連絡道與平行車道的實際轉角構成必要模型。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v010-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "4b5fc95f435993971111815d8a2e8808e114a947a9ec75a46d68ae31f35ac60a"
+  },
+  {
+    "questionId": "u17-s005-v011",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "literacy",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "樓梯兩側扶手平行，斜撐形成一對內錯角。若一角調整為76°，另一端連接座應設定多少？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "將內錯角用於裝配。",
+    "choices": [
+      "76°",
+      "14°",
+      "104°",
+      "152°"
+    ],
+    "answerIndex": 0,
+    "independentSolution": "重新依題目條件計算：平行扶手被斜撐所截，內錯角相等。",
+    "explanation": "平行扶手被斜撐所截，內錯角相等。",
+    "steps": [
+      "平行扶手被斜撐所截，內錯角相等。",
+      "因此選擇「76°」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "76°",
+        "truth": true,
+        "reason": "依獨立重算「平行扶手被斜撐所截，內錯角相等。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "14°",
+        "truth": false,
+        "reason": "選項「14°」不符合題意；依內錯角確保連接方向一致。應得到「76°」，此錯誤常源自：把連接座設定為互補角。"
+      },
+      {
+        "choice": "104°",
+        "truth": false,
+        "reason": "選項「104°」不符合題意；依內錯角確保連接方向一致。應得到「76°」，此錯誤常源自：把連接座設定為互補角。"
+      },
+      {
+        "choice": "152°",
+        "truth": false,
+        "reason": "選項「152°」不符合題意；依內錯角確保連接方向一致。應得到「76°」，此錯誤常源自：把連接座設定為互補角。"
+      }
+    ],
+    "misconceptionTarget": "把連接座設定為互補角。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 120,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「將內錯角用於裝配。」；四個選項互異，只有76°符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "情境需要辨認構件位置。",
+    "literacyContextNecessity": "兩端連接座的角度相等是斜撐安裝條件。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v011-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "a08fa39c8d34e48a0e5fe353908b6592329f6fb80066a00c75c512cedc1ffd9a"
+  },
+  {
+    "questionId": "u17-s005-v012",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "literacy",
+    "type": "mc",
+    "itemType": "single-choice",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "道路設計圖中兩邊線是否平行未知。一條測線形成的內錯角為84°與84°。依此資料應如何判定？",
+    "givenConditions": [
+      "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+    ],
+    "target": "用量測角反向驗證平行。",
+    "choices": [
+      "兩邊線垂直",
+      "兩邊線平行",
+      "只能判兩角互補",
+      "資料不足"
+    ],
+    "answerIndex": 1,
+    "independentSolution": "重新依題目條件計算：一對內錯角相等，依逆性質可判兩邊線平行。",
+    "explanation": "一對內錯角相等，依逆性質可判兩邊線平行。",
+    "steps": [
+      "一對內錯角相等，依逆性質可判兩邊線平行。",
+      "因此選擇「兩邊線平行」。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "兩邊線垂直",
+        "truth": false,
+        "reason": "選項「兩邊線垂直」不符合題意；依內錯角逆性質。應得到「兩邊線平行」，此錯誤常源自：以為必須先知道平行才能使用。"
+      },
+      {
+        "choice": "兩邊線平行",
+        "truth": true,
+        "reason": "依獨立重算「一對內錯角相等，依逆性質可判兩邊線平行。」，此選項正確回答所求。"
+      },
+      {
+        "choice": "只能判兩角互補",
+        "truth": false,
+        "reason": "選項「只能判兩角互補」不符合題意；依內錯角逆性質。應得到「兩邊線平行」，此錯誤常源自：以為必須先知道平行才能使用。"
+      },
+      {
+        "choice": "資料不足",
+        "truth": false,
+        "reason": "選項「資料不足」不符合題意；依內錯角逆性質。應得到「兩邊線平行」，此錯誤常源自：以為必須先知道平行才能使用。"
+      }
+    ],
+    "misconceptionTarget": "以為必須先知道平行才能使用。",
+    "prerequisiteCheck": "只使用先備技能parallelogram-properties與本技能定義，不使用後續單元知識。",
+    "estimatedTimeSec": 120,
+    "unitCheck": "角度或長度單位依題意一致",
+    "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+    "ambiguityAudit": "題目明確要求「用量測角反向驗證平行。」；四個選項互異，只有兩邊線平行符合獨立重算。",
+    "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+    "difficultyReason": "需理解定理雙向用途。",
+    "literacyContextNecessity": "這是實際驗收平行度的判定資料。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "semanticReviewId": "u17-s005-v012-review",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "90275e8e7a199a30535300ff048fc5c60c165e902b5dd4dc9f97d191bc40a6bc"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u17-s005-cr001",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "prompt": "a∥b，一對內錯角為(5x-7)°與(3x+29)°。求x與角度，並畫文字位置說明何以是內錯角。",
+    "requiredWork": [
+      "列相等方程",
+      "代回角度",
+      "說明內部且異側"
+    ],
+    "standardSolution": [
+      "5x-7=3x+29，2x=36，x=18。",
+      "兩角皆83°。",
+      "兩角位於a、b之間且分居截線兩側，所以是內錯角。"
+    ],
+    "alternativeMethods": [
+      [
+        "可先以Z形作辨位提示，再用「內部、異側」正式說明。"
+      ]
+    ],
+    "reasoningSteps": [
+      "5x-7=3x+29，2x=36，x=18。",
+      "兩角皆83°。",
+      "兩角位於a、b之間且分居截線兩側，所以是內錯角。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完整處理「內錯角位置與計算」，列式、理由與結果「x=18，兩角83°」均正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "主要方法與幾何性質正確，且已得到大部分「x=18，兩角83°」；僅有一處算術、單位或理由缺漏。"
+      },
+      {
+        "score": 1,
+        "criteria": "能指出本題應使用的核心性質並完成至少一個有效步驟，但尚未正確完成「內錯角位置與計算」。"
+      },
+      {
+        "score": 0,
+        "criteria": "未使用與「內錯角」相關的有效條件，或答案與推理均無法支持「x=18，兩角83°」。"
+      }
+    ],
+    "partialCreditRules": [
+      "正確列出本題關鍵關係但算術未完成，可依完成程度給1至2分。",
+      "只得到部分結果時，必須有可辨認的「內錯角位置與計算」推理才給分。"
+    ],
+    "followThroughPolicy": "若前段只有單一算術錯誤，後續依其結果正確推理可保留相應方法分。",
+    "unitNotationRules": "角度以度表示，長度與面積保留題目單位。",
+    "answerOnlyPolicy": "只有最終答案而無題目要求的列式或理由，最高1分；證明題只寫結論不得分。",
+    "visualMode": "figure-supported",
+    "figureId": "u17-s005-fig001",
+    "drawingSpecRef": "units/u17/s005/drawing-specs.jsonl#u17-s005-fig001",
+    "independentReview": {
+      "derivedResult": "x=18，兩角83°",
+      "recalculation": "5x-7=3x+29，2x=36，x=18。；兩角皆83°。；兩角位於a、b之間且分居截線兩側，所以是內錯角。",
+      "ambiguity": "所求量與評分焦點「內錯角位置與計算」明確；替代方法不改變標準結果。",
+      "decision": "pass"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "c0a570d5edd98326fc58aedeb5952e8daa3691b8ef9c9f607a59713c3caa1520"
+  },
+  {
+    "questionId": "u17-s005-cr002",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "prompt": "兩線是否平行未知，一對內錯角分別為74°與(4x+6)°。若x=17，請判定兩線關係並說明。",
+    "requiredWork": [
+      "代入第二角",
+      "比較兩角",
+      "引用逆性質"
+    ],
+    "standardSolution": [
+      "4×17+6=74°。",
+      "兩個內錯角相等。",
+      "因此依內錯角相等判定，兩線平行。"
+    ],
+    "alternativeMethods": [
+      [
+        "也可列兩角差74-(4×17+6)=0，再下結論。"
+      ]
+    ],
+    "reasoningSteps": [
+      "4×17+6=74°。",
+      "兩個內錯角相等。",
+      "因此依內錯角相等判定，兩線平行。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完整處理「以數值驗證逆性質」，列式、理由與結果「兩線平行」均正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "主要方法與幾何性質正確，且已得到大部分「兩線平行」；僅有一處算術、單位或理由缺漏。"
+      },
+      {
+        "score": 1,
+        "criteria": "能指出本題應使用的核心性質並完成至少一個有效步驟，但尚未正確完成「以數值驗證逆性質」。"
+      },
+      {
+        "score": 0,
+        "criteria": "未使用與「內錯角」相關的有效條件，或答案與推理均無法支持「兩線平行」。"
+      }
+    ],
+    "partialCreditRules": [
+      "正確列出本題關鍵關係但算術未完成，可依完成程度給1至2分。",
+      "只得到部分結果時，必須有可辨認的「以數值驗證逆性質」推理才給分。"
+    ],
+    "followThroughPolicy": "若前段只有單一算術錯誤，後續依其結果正確推理可保留相應方法分。",
+    "unitNotationRules": "角度以度表示，長度與面積保留題目單位。",
+    "answerOnlyPolicy": "只有最終答案而無題目要求的列式或理由，最高1分；證明題只寫結論不得分。",
+    "visualMode": "text-only",
+    "figureId": null,
+    "drawingSpecRef": null,
+    "independentReview": {
+      "derivedResult": "兩線平行",
+      "recalculation": "4×17+6=74°。；兩個內錯角相等。；因此依內錯角相等判定，兩線平行。",
+      "ambiguity": "所求量與評分焦點「以數值驗證逆性質」明確；替代方法不改變標準結果。",
+      "decision": "pass"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "b1cf24e34137647c0958b12afe819c6c929786851c6e59fb617a76b7b6ee4ef1"
+  }
+];
+
+export const DRAWING_SPECS = [
+  {
+    "figureId": "u17-s005-fig001",
+    "unitId": "u17",
+    "topicId": "u17-parallel",
+    "skillId": "parallel-alternate-interior",
+    "purpose": "支援「內錯角」的空間位置、性質或證明閱讀，不提供題目答案。",
+    "svgPath": "figures/u17/u17-s005-fig001.svg",
+    "canvas": {
+      "width": 400,
+      "height": 300,
+      "viewBox": "0 0 400 300"
+    },
+    "drawingSpec": {
+      "title": "內錯角Z形定位",
+      "description": "兩平行線與截線構成Z形，兩個內錯角以弧線標出。",
+      "coordinateSystem": "SVG user space, origin at upper-left",
+      "layoutConstraints": "主要線段與文字保留至少20單位邊界；標籤不得遮住交點與角弧。",
+      "visibleLineRule": "實線表示題目已知邊或直線。",
+      "hiddenLineRule": "本平面幾何圖無隱藏線；輔助垂線可用虛線。",
+      "labels": "所有字母、角度、等式與關係均按本技能專屬配置。",
+      "tickMarks": "等長、平行、直角只在數學上需要時標示。",
+      "units": "示意圖不直接量長；數值單位由題幹提供。",
+      "arrowsAndSymbols": "平行箭頭、直角記號或角弧依技能使用。",
+      "scale": "not-to-scale",
+      "scaleWarning": "圖形不一定按比例，禁止以目測長短或角度作答。"
+    },
+    "altText": "兩平行線與截線構成Z形，兩個內錯角以弧線標出。 圖形不一定按比例。",
+    "svgTitle": "內錯角Z形定位",
+    "svgDesc": "兩平行線與截線構成Z形，兩個內錯角以弧線標出。",
+    "mobileReadability": "400×300檢視下主要線條、交點與核心文字仍可辨識；長句置於空白區。",
+    "answerLeakageReview": "圖只呈現定義結構或已知關係，不標示任何題目未給的未知答案。",
+    "svgAssertions": [
+      "內部且異側",
+      "role=\"img\"",
+      "<title",
+      "<desc"
+    ],
+    "figureReview": {
+      "decision": "pass",
+      "manualRenderedInspection": true,
+      "reviewNote": "已渲染檢查內錯角Z形定位：線段未被裁切，文字未遮住核心交點，且不按比例警告已置於desc。"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "contentSha256": "85e6f08263073f1209c1126e2ed1cf50f41a6442c3fc82d448f232485dee5751"
+  }
+];

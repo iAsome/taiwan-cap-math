@@ -1,0 +1,282 @@
+{
+  "lectureId": "u21-s002-lecture-r1",
+  "unitId": "u21",
+  "numericUnitId": 21,
+  "topicId": "u21-graphs",
+  "skillId": "quadratic-vertex",
+  "lockedTitle": "頂點與對稱軸",
+  "title": "拋物線的中心線索：頂點與對稱軸",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "gradeBand": "9下",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": {
+    "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+    "legacyContentImported": false,
+    "legacySkillReferenceOnly": "quadratic-vertex"
+  },
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能在圖上辨認拋物線的頂點。",
+    "能由頂點寫出垂直對稱軸 x=h。",
+    "能利用對稱軸配對等高的兩點。",
+    "能分清頂點座標與對稱軸方程式。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-function-graph",
+      "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+      "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+    }
+  ],
+  "prerequisiteBridge": "先確認已知道拋物線是連續曲線，且座標點以 (x,y) 表示；本節從圖形的最彎轉位置建立頂點。",
+  "glossary": [
+    {
+      "term": "頂點",
+      "definition": "拋物線上由下降轉為上升，或由上升轉為下降的轉折點。"
+    },
+    {
+      "term": "對稱軸",
+      "definition": "把拋物線左右兩半對折後重合的垂直直線。"
+    },
+    {
+      "term": "等高點",
+      "definition": "具有相同 y 值的兩個點。"
+    },
+    {
+      "term": "中點",
+      "definition": "兩個 x 座標平均後所在的位置。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "V(h,k)",
+      "meaning": "頂點 V 的座標為 (h,k)。"
+    },
+    {
+      "symbol": "x=h",
+      "meaning": "通過頂點的垂直對稱軸。"
+    },
+    {
+      "symbol": "(h-d,y) 與 (h+d,y)",
+      "meaning": "位於對稱軸兩側相同水平距離的等高點。"
+    }
+  ],
+  "conceptNarrative": [
+    "拋物線像對折後可以重合的紙片。對折線必須穿過曲線的頂點，且在一般座標圖中是垂直線。",
+    "頂點是一個點，所以要寫兩個座標；對稱軸是一條直線，只限制 x 固定為 h。",
+    "若已知同一拋物線上兩個等高點的 x 座標為 p、q，則對稱軸就在中間：x=(p+q)/2。",
+    "開口向上時頂點是最低點；開口向下時頂點是最高點，但「頂點」本身不等於最大值或最小值，頂點的 y 座標才是極值。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "頂點",
+      "statement": "拋物線與其對稱軸相交的唯一點。"
+    },
+    {
+      "name": "對稱軸",
+      "statement": "使拋物線上相對應兩點到該直線距離相等的垂直直線。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "對稱軸 x=h",
+      "conditions": [
+        "頂點為 (h,k)"
+      ],
+      "meaning": "頂點的 x 座標決定對稱軸。"
+    },
+    {
+      "formula": "h=(p+q)/2",
+      "conditions": [
+        "(p,y) 與 (q,y) 是同一拋物線上的不同等高點"
+      ],
+      "meaning": "等高點的橫座標中點是對稱軸。"
+    }
+  ],
+  "nonApplicableCases": [
+    "任意兩點不能直接取中點求對稱軸，兩點必須等高。",
+    "對稱軸不是 y=k；y=k 是水平線。",
+    "頂點不一定在 x 軸或 y 軸上。",
+    "從未標刻度的示意圖不能用眼睛精確估計座標。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先判斷開口方向並找轉折處。",
+      "check": "找到的是曲線最低或最高的唯一位置嗎？"
+    },
+    {
+      "step": 2,
+      "instruction": "讀出頂點的 x、y 座標。",
+      "check": "先橫後縱，是否寫成 (h,k)？"
+    },
+    {
+      "step": 3,
+      "instruction": "由頂點 x 座標寫對稱軸。",
+      "check": "必須寫 x=h，不是只寫 h。"
+    },
+    {
+      "step": 4,
+      "instruction": "若用等高點，取兩個 x 的平均。",
+      "check": "兩點的 y 是否真的相同？"
+    },
+    {
+      "step": 5,
+      "instruction": "用左右距離驗證。",
+      "check": "兩點到 x=h 的水平距離是否相等？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "頂點為 (3,-2)，求對稱軸。",
+      "solutionSteps": [
+        "頂點的 x 座標是 3。",
+        "垂直對稱軸固定 x=3。"
+      ],
+      "answer": "x=3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "對稱軸為 x=-1，點 (2,5) 的對稱點為何？",
+      "solutionSteps": [
+        "2 到 -1 的距離為 3。",
+        "另一側 x=-1-3=-4，y 不變。"
+      ],
+      "answer": "(-4,5)。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "同高兩點 x=-5 與 x=1，求對稱軸。",
+      "solutionSteps": [
+        "取平均 (-5+1)/2=-2。",
+        "等高點分居 x=-2 兩側各 3 單位。"
+      ],
+      "answer": "x=-2。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "開口向下且頂點為 (0,7)，頂點代表什麼？",
+      "solutionSteps": [
+        "開口向下，離開頂點後 y 下降。",
+        "頂點 y=7 是整條曲線的最大值。"
+      ],
+      "answer": "最高點為 (0,7)，最大值為 7。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "頂點 (4,1) 與對稱軸應如何區分寫法？",
+      "solutionSteps": [
+        "頂點是點，寫 (4,1)。",
+        "對稱軸是直線，寫 x=4。"
+      ],
+      "answer": "頂點 (4,1)，對稱軸 x=4。"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "由頂點讀對稱軸。",
+    "standard": "由等高點求軸或找對稱點。",
+    "advanced": "結合多組點驗證同一對稱軸。",
+    "literacy": "從橋拱、噴泉或軌跡圖讀取最高點與中心線。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把對稱軸寫成 y=h。",
+      "why": "混淆垂直線與水平線。",
+      "correction": "垂直線固定 x，所以寫 x=h。"
+    },
+    {
+      "mistake": "只寫頂點的 y 座標。",
+      "why": "把頂點與極值混淆。",
+      "correction": "頂點必須是完整座標 (h,k)。"
+    },
+    {
+      "mistake": "兩個不同高度的點也取平均。",
+      "why": "忽略等高條件。",
+      "correction": "先比較 y 值是否相同。"
+    },
+    {
+      "mistake": "對稱點把 y 也改變。",
+      "why": "把關於垂直線的對稱誤作中心對稱。",
+      "correction": "左右對稱只改 x，y 保持。"
+    },
+    {
+      "mistake": "把頂點一定當最低點。",
+      "why": "忽略開口可向下。",
+      "correction": "開口向下時頂點是最高點。"
+    },
+    {
+      "mistake": "由示意圖外觀猜精確軸。",
+      "why": "未使用刻度或數值。",
+      "correction": "只依標示座標、式子或等高點計算。"
+    }
+  ],
+  "selfCheckItems": [
+    {
+      "prompt": "頂點 (-2,5) 的對稱軸？",
+      "answer": "x=-2。"
+    },
+    {
+      "prompt": "等高點 x=1、x=7 的軸？",
+      "answer": "x=4。"
+    },
+    {
+      "prompt": "關於 x=4，(6,3) 的對稱點？",
+      "answer": "(2,3)。"
+    },
+    {
+      "prompt": "開口向上頂點 y=-6 代表什麼？",
+      "answer": "最小值為 -6。"
+    }
+  ],
+  "summary": [
+    "頂點是點 (h,k)，對稱軸是直線 x=h。",
+    "等高點橫座標的平均可求對稱軸。",
+    "關於垂直對稱軸的對稱點 y 不變。",
+    "開口方向決定頂點是最高點或最低點。"
+  ],
+  "connections": {
+    "previous": "使用上一技能建立的拋物線連續與對稱直觀。",
+    "next": [
+      "下一技能會從 y=ax² 的係數判斷圖形。",
+      "後續會用頂點式直接讀出 h、k。"
+    ]
+  },
+  "figureReferences": [
+    "u21-fig-s002-01"
+  ],
+  "accessibilityNotes": [
+    "對稱軸使用虛線並加上文字 x=2，頂點另以實心圓和 V 標示。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u21-s002-v001",
+      "u21-s002-v002",
+      "u21-s002-v003",
+      "u21-s002-v004",
+      "u21-s002-v005",
+      "u21-s002-v006",
+      "u21-s002-v007",
+      "u21-s002-v008",
+      "u21-s002-v009",
+      "u21-s002-v010",
+      "u21-s002-v011",
+      "u21-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u21-s002-cr001",
+      "u21-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "臺灣國中會考二次函數範圍",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重新檢查三組對稱距離與中點公式，特別確認點 (2,5) 關於 x=-1 的對稱點為 (-4,5)，並分離頂點座標與極值概念。",
+    "reviewVersion": "human-lecture-u21-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "ff734e14b8c2ee61dbe9b937b10376f11d600f352dff667deee9a23614439743"
+}

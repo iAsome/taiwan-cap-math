@@ -1,0 +1,764 @@
+{
+  "status": "PASS",
+  "expectedBatchCount": 5,
+  "resultCount": 5,
+  "results": [
+    {
+      "batch": "003-u02-complete",
+      "first": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u02",
+          "newSkillCount": 15,
+          "u02SkillTotalAfterBatch": 15,
+          "totalHumanSkillCountAfterBatch": 30,
+          "lectureCount": 15,
+          "mcQuestionCount": 180,
+          "constructedResponseCount": 30,
+          "semanticReviewCount": 180,
+          "figureCount": 3,
+          "difficultyCounts": {
+            "basic": 45,
+            "standard": 45,
+            "advanced": 45,
+            "literacy": 45
+          },
+          "answerIndexCounts": [
+            45,
+            45,
+            45,
+            45
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "productionActivationAllowed": false
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u02\",\n  \"newSkillCount\": 15,\n  \"u02SkillTotalAfterBatch\": 15,\n  \"totalHumanSkillCountAfterBatch\": 30,\n  \"lectureCount\": 15,\n  \"mcQuestionCount\": 180,\n  \"constructedResponseCount\": 30,\n  \"semanticReviewCount\": 180,\n  \"figureCount\": 3,\n  \"difficultyCounts\": {\n    \"basic\": 45,\n    \"standard\": 45,\n    \"advanced\": 45,\n    \"literacy\": 45\n  },\n  \"answerIndexCounts\": [\n    45,\n    45,\n    45,\n    45\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": ""
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "emittedModuleCount": 15,
+          "outputs": [
+            {
+              "path": "staging/u02-s001-human-content.mjs",
+              "bytes": 33063,
+              "sha256": "c3938f9a84d9b9ea3bc296dd3bb4994ca2f279731b8e28a691447b71f5b3d1fb"
+            },
+            {
+              "path": "staging/u02-s002-human-content.mjs",
+              "bytes": 33115,
+              "sha256": "22e7cfc03cbe28f366bd121f35d74ce30fbc7ca69fbc3ba12377698873bbfc8e"
+            },
+            {
+              "path": "staging/u02-s003-human-content.mjs",
+              "bytes": 34623,
+              "sha256": "be9e329758fa4cdaf3560832fa767ff360834c44f1b3594f6fdc500b7319d413"
+            },
+            {
+              "path": "staging/u02-s004-human-content.mjs",
+              "bytes": 32432,
+              "sha256": "9435ff05c9e3a2aa4c40fb010554b9979b92311ac542d6c1a9da20229014b351"
+            },
+            {
+              "path": "staging/u02-s005-human-content.mjs",
+              "bytes": 32170,
+              "sha256": "9e6f40b0a18dd2f0024417dfd0ac51ad524fd7ac72c0ad1fdbd8f7468a000737"
+            },
+            {
+              "path": "staging/u02-s006-human-content.mjs",
+              "bytes": 33284,
+              "sha256": "f281a1027995ec622cd8de9563961d505d3fd63c7873b00bb6f1a7330d83cde8"
+            },
+            {
+              "path": "staging/u02-s007-human-content.mjs",
+              "bytes": 33217,
+              "sha256": "e723388e71840df04e2ec68d6d6db1bb96e05ac247a95c4e28426049e5be9cee"
+            },
+            {
+              "path": "staging/u02-s008-human-content.mjs",
+              "bytes": 35267,
+              "sha256": "a08d254ae2c795adea9f895c5b88be1da8e8f2a9f8e4290ed43a780ef02226d1"
+            },
+            {
+              "path": "staging/u02-s009-human-content.mjs",
+              "bytes": 30960,
+              "sha256": "958f43f81d4bcbf5d7cab7179aaf78506932dd072733520daa30606a6d4ca484"
+            },
+            {
+              "path": "staging/u02-s010-human-content.mjs",
+              "bytes": 31042,
+              "sha256": "63062f2013a7de7ee23948b90af0e60d20e4fb468720c52c03c1f286160485e2"
+            },
+            {
+              "path": "staging/u02-s011-human-content.mjs",
+              "bytes": 35340,
+              "sha256": "fc282d3c3b7402fae2765822e673852377e65ea7bb1c917786a4cf0b6611beae"
+            },
+            {
+              "path": "staging/u02-s012-human-content.mjs",
+              "bytes": 31193,
+              "sha256": "529c7901edbdf03597b5302fa54c7367c5f1afbbb139c9da36456d2da0f79895"
+            },
+            {
+              "path": "staging/u02-s013-human-content.mjs",
+              "bytes": 32053,
+              "sha256": "5f0e8b4bea53683ed81c817fe52eaf93e86e782c15f26aa86e0a6ccc09fd5ff9"
+            },
+            {
+              "path": "staging/u02-s014-human-content.mjs",
+              "bytes": 32438,
+              "sha256": "71e3980b4d165594977cc6d63736635249d4038ec53728c963f4f6e4c7e69ba1"
+            },
+            {
+              "path": "staging/u02-s015-human-content.mjs",
+              "bytes": 35335,
+              "sha256": "e092d22407cc7c29e067adcd3de0f859f12dd8f485f61e73275f0de5951f70ae"
+            }
+          ]
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"emittedModuleCount\": 15,\n  \"outputs\": [\n    {\n      \"path\": \"staging/u02-s001-human-content.mjs\",\n      \"bytes\": 33063,\n      \"sha256\": \"c3938f9a84d9b9ea3bc296dd3bb4994ca2f279731b8e28a691447b71f5b3d1fb\"\n    },\n    {\n      \"path\": \"staging/u02-s002-human-content.mjs\",\n      \"bytes\": 33115,\n      \"sha256\": \"22e7cfc03cbe28f366bd121f35d74ce30fbc7ca69fbc3ba12377698873bbfc8e\"\n    },\n    {\n      \"path\": \"staging/u02-s003-human-content.mjs\",\n      \"bytes\": 34623,\n      \"sha256\": \"be9e329758fa4cdaf3560832fa767ff360834c44f1b3594f6fdc500b7319d413\"\n    },\n    {\n      \"path\": \"staging/u02-s004-human-content.mjs\",\n      \"bytes\": 32432,\n      \"sha256\": \"9435ff05c9e3a2aa4c40fb010554b9979b92311ac542d6c1a9da20229014b351\"\n    },\n    {\n      \"path\": \"staging/u02-s005-human-content.mjs\",\n      \"bytes\": 32170,\n      \"sha256\": \"9e6f40b0a18dd2f0024417dfd0ac51ad524fd7ac72c0ad1fdbd8f7468a000737\"\n    },\n    {\n      \"path\": \"staging/u02-s006-human-content.mjs\",\n      \"bytes\": 33284,\n      \"sha256\": \"f281a1027995ec622cd8de9563961d505d3fd63c7873b00bb6f1a7330d83cde8\"\n    },\n    {\n      \"path\": \"staging/u02-s007-human-content.mjs\",\n      \"bytes\": 33217,\n      \"sha256\": \"e723388e71840df04e2ec68d6d6db1bb96e05ac247a95c4e28426049e5be9cee\"\n    },\n    {\n      \"path\": \"staging/u02-s008-human-content.mjs\",\n      \"bytes\": 35267,\n      \"sha256\": \"a08d254ae2c795adea9f895c5b88be1da8e8f2a9f8e4290ed43a780ef02226d1\"\n    },\n    {\n      \"path\": \"staging/u02-s009-human-content.mjs\",\n      \"bytes\": 30960,\n      \"sha256\": \"958f43f81d4bcbf5d7cab7179aaf78506932dd072733520daa30606a6d4ca484\"\n    },\n    {\n      \"path\": \"staging/u02-s010-human-content.mjs\",\n      \"bytes\": 31042,\n      \"sha256\": \"63062f2013a7de7ee23948b90af0e60d20e4fb468720c52c03c1f286160485e2\"\n    },\n    {\n      \"path\": \"staging/u02-s011-human-content.mjs\",\n      \"bytes\": 35340,\n      \"sha256\": \"fc282d3c3b7402fae2765822e673852377e65ea7bb1c917786a4cf0b6611beae\"\n    },\n    {\n      \"path\": \"staging/u02-s012-human-content.mjs\",\n      \"bytes\": 31193,\n      \"sha256\": \"529c7901edbdf03597b5302fa54c7367c5f1afbbb139c9da36456d2da0f79895\"\n    },\n    {\n      \"path\": \"staging/u02-s013-human-content.mjs\",\n      \"bytes\": 32053,\n      \"sha256\": \"5f0e8b4bea53683ed81c817fe52eaf93e86e782c15f26aa86e0a6ccc09fd5ff9\"\n    },\n    {\n      \"path\": \"staging/u02-s014-human-content.mjs\",\n      \"bytes\": 32438,\n      \"sha256\": \"71e3980b4d165594977cc6d63736635249d4038ec53728c963f4f6e4c7e69ba1\"\n    },\n    {\n      \"path\": \"staging/u02-s015-human-content.mjs\",\n      \"bytes\": 35335,\n      \"sha256\": \"e092d22407cc7c29e067adcd3de0f859f12dd8f485f61e73275f0de5951f70ae\"\n    }\n  ]\n}\n",
+        "stderr": ""
+      },
+      "second": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u02",
+          "newSkillCount": 15,
+          "u02SkillTotalAfterBatch": 15,
+          "totalHumanSkillCountAfterBatch": 30,
+          "lectureCount": 15,
+          "mcQuestionCount": 180,
+          "constructedResponseCount": 30,
+          "semanticReviewCount": 180,
+          "figureCount": 3,
+          "difficultyCounts": {
+            "basic": 45,
+            "standard": 45,
+            "advanced": 45,
+            "literacy": 45
+          },
+          "answerIndexCounts": [
+            45,
+            45,
+            45,
+            45
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "productionActivationAllowed": false
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u02\",\n  \"newSkillCount\": 15,\n  \"u02SkillTotalAfterBatch\": 15,\n  \"totalHumanSkillCountAfterBatch\": 30,\n  \"lectureCount\": 15,\n  \"mcQuestionCount\": 180,\n  \"constructedResponseCount\": 30,\n  \"semanticReviewCount\": 180,\n  \"figureCount\": 3,\n  \"difficultyCounts\": {\n    \"basic\": 45,\n    \"standard\": 45,\n    \"advanced\": 45,\n    \"literacy\": 45\n  },\n  \"answerIndexCounts\": [\n    45,\n    45,\n    45,\n    45\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": ""
+      },
+      "pass": true
+    },
+    {
+      "batch": "009-u08-complete",
+      "first": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "packageId": "math-v2-human-content-batch-009-u08-complete",
+          "unitId": "u08",
+          "lockedSkillCount": 14,
+          "lectureCount": 14,
+          "mcQuestionCount": 168,
+          "constructedResponseCount": 28,
+          "semanticReviewCount": 168,
+          "figureCount": 4,
+          "difficultyCounts": {
+            "basic": 42,
+            "standard": 42,
+            "advanced": 42,
+            "literacy": 42
+          },
+          "answerIndexCounts": [
+            42,
+            42,
+            42,
+            42
+          ],
+          "perSkillDifficultyDistributionVerified": true,
+          "perSkillAnswerDistributionVerified": true,
+          "uniqueAnswerSequencesVerified": true,
+          "contentHashesVerified": true,
+          "semanticReviewHashesVerified": true,
+          "fileManifestVerified": true,
+          "exactAndNormalizedDuplicateScanVerified": true,
+          "nearDuplicateScanVerified": true,
+          "traditionalChineseAndTitlePolicyVerified": true,
+          "figureBoundaryVerified": true,
+          "legacyIsolationVerified": true,
+          "productionActivationAllowed": false,
+          "centralCoordinatorApprovalRequired": true,
+          "stagingPresent": false,
+          "emittedModuleCount": 0
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"packageId\": \"math-v2-human-content-batch-009-u08-complete\",\n  \"unitId\": \"u08\",\n  \"lockedSkillCount\": 14,\n  \"lectureCount\": 14,\n  \"mcQuestionCount\": 168,\n  \"constructedResponseCount\": 28,\n  \"semanticReviewCount\": 168,\n  \"figureCount\": 4,\n  \"difficultyCounts\": {\n    \"basic\": 42,\n    \"standard\": 42,\n    \"advanced\": 42,\n    \"literacy\": 42\n  },\n  \"answerIndexCounts\": [\n    42,\n    42,\n    42,\n    42\n  ],\n  \"perSkillDifficultyDistributionVerified\": true,\n  \"perSkillAnswerDistributionVerified\": true,\n  \"uniqueAnswerSequencesVerified\": true,\n  \"contentHashesVerified\": true,\n  \"semanticReviewHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"exactAndNormalizedDuplicateScanVerified\": true,\n  \"nearDuplicateScanVerified\": true,\n  \"traditionalChineseAndTitlePolicyVerified\": true,\n  \"figureBoundaryVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"centralCoordinatorApprovalRequired\": true,\n  \"stagingPresent\": false,\n  \"emittedModuleCount\": 0\n}\n",
+        "stderr": ""
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "emittedModuleCount": 14,
+          "productionActivationAllowed": false,
+          "outputs": [
+            {
+              "path": "staging/u08-s001-human-content.mjs",
+              "bytes": 78404,
+              "sha256": "8e7eaf9ea37feb7f6af9e4bce3fce86ee9c6b0e150ffcaa27378a229ffb57316"
+            },
+            {
+              "path": "staging/u08-s002-human-content.mjs",
+              "bytes": 70065,
+              "sha256": "81a9992ced1668a9618beabaca1dbea6812e6ae5d8d00cdc76ecb6229000b29e"
+            },
+            {
+              "path": "staging/u08-s003-human-content.mjs",
+              "bytes": 74710,
+              "sha256": "34764ef16bf143a3da12a56eb835d0faca2f07e30c035f7d413fb36a6a4b603c"
+            },
+            {
+              "path": "staging/u08-s004-human-content.mjs",
+              "bytes": 71673,
+              "sha256": "43178974f21c99ad59e70d87a24a52227a76a9d3d872569ed7961062f8d8c5c6"
+            },
+            {
+              "path": "staging/u08-s005-human-content.mjs",
+              "bytes": 70775,
+              "sha256": "7af3a44450711b5c29f6586211cb62497979c05aa956601a8ced1d598623528d"
+            },
+            {
+              "path": "staging/u08-s006-human-content.mjs",
+              "bytes": 72629,
+              "sha256": "d90777b4c55296eae35de54a6b84430354b505da29a39bc3a35cfd29e4925c3b"
+            },
+            {
+              "path": "staging/u08-s007-human-content.mjs",
+              "bytes": 67655,
+              "sha256": "aa0c4d1212b5f79e8d8db15ecf08fc11d2432ebdfebfc1af089c0918c0db8c0c"
+            },
+            {
+              "path": "staging/u08-s008-human-content.mjs",
+              "bytes": 73928,
+              "sha256": "62813f5b1f6cdf97230b4e0179e48f56fa8c8b9ac51cde4b8ef3d01025b1c5f5"
+            },
+            {
+              "path": "staging/u08-s009-human-content.mjs",
+              "bytes": 70593,
+              "sha256": "299473516339f5d0f1d0e874ff8b06c9e1430cf4cc147e2609fdd6ac03c9100b"
+            },
+            {
+              "path": "staging/u08-s010-human-content.mjs",
+              "bytes": 71490,
+              "sha256": "7fb091f941074b67bba02c118dbe760dc4dcb703c194268e5c7ae7ccf9e3e413"
+            },
+            {
+              "path": "staging/u08-s011-human-content.mjs",
+              "bytes": 71175,
+              "sha256": "30025942d87bc6b78461f688884ce948278a7439caf9f4e7b4d0d9fb1803d66f"
+            },
+            {
+              "path": "staging/u08-s012-human-content.mjs",
+              "bytes": 74736,
+              "sha256": "d99d80da4f7f5322a1b618917077a7118275f82b1073c30c0a2885c5fd4f592f"
+            },
+            {
+              "path": "staging/u08-s013-human-content.mjs",
+              "bytes": 82449,
+              "sha256": "4f01cacf941c4ff58464daff9c71382ef77d388e93a7489af5075fc78573dff0"
+            },
+            {
+              "path": "staging/u08-s014-human-content.mjs",
+              "bytes": 81650,
+              "sha256": "fd06cc97d1d442ca2f91ca33b2d88cf8664688e2bfa394c87fc393c39a1920dc"
+            }
+          ]
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"emittedModuleCount\": 14,\n  \"productionActivationAllowed\": false,\n  \"outputs\": [\n    {\n      \"path\": \"staging/u08-s001-human-content.mjs\",\n      \"bytes\": 78404,\n      \"sha256\": \"8e7eaf9ea37feb7f6af9e4bce3fce86ee9c6b0e150ffcaa27378a229ffb57316\"\n    },\n    {\n      \"path\": \"staging/u08-s002-human-content.mjs\",\n      \"bytes\": 70065,\n      \"sha256\": \"81a9992ced1668a9618beabaca1dbea6812e6ae5d8d00cdc76ecb6229000b29e\"\n    },\n    {\n      \"path\": \"staging/u08-s003-human-content.mjs\",\n      \"bytes\": 74710,\n      \"sha256\": \"34764ef16bf143a3da12a56eb835d0faca2f07e30c035f7d413fb36a6a4b603c\"\n    },\n    {\n      \"path\": \"staging/u08-s004-human-content.mjs\",\n      \"bytes\": 71673,\n      \"sha256\": \"43178974f21c99ad59e70d87a24a52227a76a9d3d872569ed7961062f8d8c5c6\"\n    },\n    {\n      \"path\": \"staging/u08-s005-human-content.mjs\",\n      \"bytes\": 70775,\n      \"sha256\": \"7af3a44450711b5c29f6586211cb62497979c05aa956601a8ced1d598623528d\"\n    },\n    {\n      \"path\": \"staging/u08-s006-human-content.mjs\",\n      \"bytes\": 72629,\n      \"sha256\": \"d90777b4c55296eae35de54a6b84430354b505da29a39bc3a35cfd29e4925c3b\"\n    },\n    {\n      \"path\": \"staging/u08-s007-human-content.mjs\",\n      \"bytes\": 67655,\n      \"sha256\": \"aa0c4d1212b5f79e8d8db15ecf08fc11d2432ebdfebfc1af089c0918c0db8c0c\"\n    },\n    {\n      \"path\": \"staging/u08-s008-human-content.mjs\",\n      \"bytes\": 73928,\n      \"sha256\": \"62813f5b1f6cdf97230b4e0179e48f56fa8c8b9ac51cde4b8ef3d01025b1c5f5\"\n    },\n    {\n      \"path\": \"staging/u08-s009-human-content.mjs\",\n      \"bytes\": 70593,\n      \"sha256\": \"299473516339f5d0f1d0e874ff8b06c9e1430cf4cc147e2609fdd6ac03c9100b\"\n    },\n    {\n      \"path\": \"staging/u08-s010-human-content.mjs\",\n      \"bytes\": 71490,\n      \"sha256\": \"7fb091f941074b67bba02c118dbe760dc4dcb703c194268e5c7ae7ccf9e3e413\"\n    },\n    {\n      \"path\": \"staging/u08-s011-human-content.mjs\",\n      \"bytes\": 71175,\n      \"sha256\": \"30025942d87bc6b78461f688884ce948278a7439caf9f4e7b4d0d9fb1803d66f\"\n    },\n    {\n      \"path\": \"staging/u08-s012-human-content.mjs\",\n      \"bytes\": 74736,\n      \"sha256\": \"d99d80da4f7f5322a1b618917077a7118275f82b1073c30c0a2885c5fd4f592f\"\n    },\n    {\n      \"path\": \"staging/u08-s013-human-content.mjs\",\n      \"bytes\": 82449,\n      \"sha256\": \"4f01cacf941c4ff58464daff9c71382ef77d388e93a7489af5075fc78573dff0\"\n    },\n    {\n      \"path\": \"staging/u08-s014-human-content.mjs\",\n      \"bytes\": 81650,\n      \"sha256\": \"fd06cc97d1d442ca2f91ca33b2d88cf8664688e2bfa394c87fc393c39a1920dc\"\n    }\n  ]\n}\n",
+        "stderr": ""
+      },
+      "second": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "packageId": "math-v2-human-content-batch-009-u08-complete",
+          "unitId": "u08",
+          "lockedSkillCount": 14,
+          "lectureCount": 14,
+          "mcQuestionCount": 168,
+          "constructedResponseCount": 28,
+          "semanticReviewCount": 168,
+          "figureCount": 4,
+          "difficultyCounts": {
+            "basic": 42,
+            "standard": 42,
+            "advanced": 42,
+            "literacy": 42
+          },
+          "answerIndexCounts": [
+            42,
+            42,
+            42,
+            42
+          ],
+          "perSkillDifficultyDistributionVerified": true,
+          "perSkillAnswerDistributionVerified": true,
+          "uniqueAnswerSequencesVerified": true,
+          "contentHashesVerified": true,
+          "semanticReviewHashesVerified": true,
+          "fileManifestVerified": true,
+          "exactAndNormalizedDuplicateScanVerified": true,
+          "nearDuplicateScanVerified": true,
+          "traditionalChineseAndTitlePolicyVerified": true,
+          "figureBoundaryVerified": true,
+          "legacyIsolationVerified": true,
+          "productionActivationAllowed": false,
+          "centralCoordinatorApprovalRequired": true,
+          "stagingPresent": true,
+          "emittedModuleCount": 14
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"packageId\": \"math-v2-human-content-batch-009-u08-complete\",\n  \"unitId\": \"u08\",\n  \"lockedSkillCount\": 14,\n  \"lectureCount\": 14,\n  \"mcQuestionCount\": 168,\n  \"constructedResponseCount\": 28,\n  \"semanticReviewCount\": 168,\n  \"figureCount\": 4,\n  \"difficultyCounts\": {\n    \"basic\": 42,\n    \"standard\": 42,\n    \"advanced\": 42,\n    \"literacy\": 42\n  },\n  \"answerIndexCounts\": [\n    42,\n    42,\n    42,\n    42\n  ],\n  \"perSkillDifficultyDistributionVerified\": true,\n  \"perSkillAnswerDistributionVerified\": true,\n  \"uniqueAnswerSequencesVerified\": true,\n  \"contentHashesVerified\": true,\n  \"semanticReviewHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"exactAndNormalizedDuplicateScanVerified\": true,\n  \"nearDuplicateScanVerified\": true,\n  \"traditionalChineseAndTitlePolicyVerified\": true,\n  \"figureBoundaryVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"centralCoordinatorApprovalRequired\": true,\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 14\n}\n",
+        "stderr": ""
+      },
+      "pass": true
+    },
+    {
+      "batch": "011-u10-complete",
+      "first": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "pass": true,
+          "packageId": "math-v2-human-content-batch-011-u10-complete",
+          "unitId": "u10",
+          "counts": {
+            "skills": 13,
+            "lectures": 13,
+            "mcQuestions": 156,
+            "constructedResponses": 26,
+            "semanticReviews": 156,
+            "figures": 4,
+            "difficulty": {
+              "basic": 39,
+              "standard": 39,
+              "advanced": 39,
+              "literacy": 39
+            },
+            "answerIndices": [
+              39,
+              39,
+              39,
+              39
+            ]
+          },
+          "stagingPresent": false,
+          "emittedModuleCount": 0,
+          "legacyIsolation": {
+            "legacyContentImported": false,
+            "legacySemanticEvidenceAccepted": false,
+            "oldProductionRuntimeModified": false,
+            "deleteLegacyNow": false,
+            "finalRetirementRequired": true,
+            "productionActivationAllowed": false,
+            "legacySourceUsedAsInspiration": false,
+            "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+            "statement": "舊 Codex 題庫、講義、審查紀錄、編譯題庫與生成器均未讀取、複製、改寫、修補、挖掘或混入本批次。"
+          },
+          "errors": [],
+          "warnings": []
+        },
+        "stdout": "{\n  \"pass\": true,\n  \"packageId\": \"math-v2-human-content-batch-011-u10-complete\",\n  \"unitId\": \"u10\",\n  \"counts\": {\n    \"skills\": 13,\n    \"lectures\": 13,\n    \"mcQuestions\": 156,\n    \"constructedResponses\": 26,\n    \"semanticReviews\": 156,\n    \"figures\": 4,\n    \"difficulty\": {\n      \"basic\": 39,\n      \"standard\": 39,\n      \"advanced\": 39,\n      \"literacy\": 39\n    },\n    \"answerIndices\": [\n      39,\n      39,\n      39,\n      39\n    ]\n  },\n  \"stagingPresent\": false,\n  \"emittedModuleCount\": 0,\n  \"legacyIsolation\": {\n    \"legacyContentImported\": false,\n    \"legacySemanticEvidenceAccepted\": false,\n    \"oldProductionRuntimeModified\": false,\n    \"deleteLegacyNow\": false,\n    \"finalRetirementRequired\": true,\n    \"productionActivationAllowed\": false,\n    \"legacySourceUsedAsInspiration\": false,\n    \"contentAuthority\": \"CHATGPT_HUMAN_AUTHORED_R1\",\n    \"statement\": \"舊 Codex 題庫、講義、審查紀錄、編譯題庫與生成器均未讀取、複製、改寫、修補、挖掘或混入本批次。\"\n  },\n  \"errors\": [],\n  \"warnings\": []\n}\n",
+        "stderr": ""
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "pass": true,
+          "unitId": "u10",
+          "emittedSkillModules": 13,
+          "emittedIndexModules": 1,
+          "emittedModuleCount": 14,
+          "output": "staging/u10"
+        },
+        "stdout": "{\n  \"pass\": true,\n  \"unitId\": \"u10\",\n  \"emittedSkillModules\": 13,\n  \"emittedIndexModules\": 1,\n  \"emittedModuleCount\": 14,\n  \"output\": \"staging/u10\"\n}\n",
+        "stderr": ""
+      },
+      "second": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "pass": true,
+          "packageId": "math-v2-human-content-batch-011-u10-complete",
+          "unitId": "u10",
+          "counts": {
+            "skills": 13,
+            "lectures": 13,
+            "mcQuestions": 156,
+            "constructedResponses": 26,
+            "semanticReviews": 156,
+            "figures": 4,
+            "difficulty": {
+              "basic": 39,
+              "standard": 39,
+              "advanced": 39,
+              "literacy": 39
+            },
+            "answerIndices": [
+              39,
+              39,
+              39,
+              39
+            ]
+          },
+          "stagingPresent": true,
+          "emittedModuleCount": 14,
+          "legacyIsolation": {
+            "legacyContentImported": false,
+            "legacySemanticEvidenceAccepted": false,
+            "oldProductionRuntimeModified": false,
+            "deleteLegacyNow": false,
+            "finalRetirementRequired": true,
+            "productionActivationAllowed": false,
+            "legacySourceUsedAsInspiration": false,
+            "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+            "statement": "舊 Codex 題庫、講義、審查紀錄、編譯題庫與生成器均未讀取、複製、改寫、修補、挖掘或混入本批次。"
+          },
+          "errors": [],
+          "warnings": []
+        },
+        "stdout": "{\n  \"pass\": true,\n  \"packageId\": \"math-v2-human-content-batch-011-u10-complete\",\n  \"unitId\": \"u10\",\n  \"counts\": {\n    \"skills\": 13,\n    \"lectures\": 13,\n    \"mcQuestions\": 156,\n    \"constructedResponses\": 26,\n    \"semanticReviews\": 156,\n    \"figures\": 4,\n    \"difficulty\": {\n      \"basic\": 39,\n      \"standard\": 39,\n      \"advanced\": 39,\n      \"literacy\": 39\n    },\n    \"answerIndices\": [\n      39,\n      39,\n      39,\n      39\n    ]\n  },\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 14,\n  \"legacyIsolation\": {\n    \"legacyContentImported\": false,\n    \"legacySemanticEvidenceAccepted\": false,\n    \"oldProductionRuntimeModified\": false,\n    \"deleteLegacyNow\": false,\n    \"finalRetirementRequired\": true,\n    \"productionActivationAllowed\": false,\n    \"legacySourceUsedAsInspiration\": false,\n    \"contentAuthority\": \"CHATGPT_HUMAN_AUTHORED_R1\",\n    \"statement\": \"舊 Codex 題庫、講義、審查紀錄、編譯題庫與生成器均未讀取、複製、改寫、修補、挖掘或混入本批次。\"\n  },\n  \"errors\": [],\n  \"warnings\": []\n}\n",
+        "stderr": ""
+      },
+      "pass": true
+    },
+    {
+      "batch": "018-u17-complete",
+      "first": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u17",
+          "lockedSkillCount": 18,
+          "lectureCount": 18,
+          "mcQuestionCount": 216,
+          "constructedResponseCount": 36,
+          "semanticReviewCount": 216,
+          "figureCount": 18,
+          "difficultyCounts": {
+            "basic": 54,
+            "standard": 54,
+            "advanced": 54,
+            "literacy": 54
+          },
+          "answerIndexCounts": [
+            54,
+            54,
+            54,
+            54
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "nearDuplicateScanVerified": true,
+          "traditionalChineseVerified": true,
+          "legacyIsolationVerified": true,
+          "productionActivationAllowed": false,
+          "stagingState": "absent"
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u17\",\n  \"lockedSkillCount\": 18,\n  \"lectureCount\": 18,\n  \"mcQuestionCount\": 216,\n  \"constructedResponseCount\": 36,\n  \"semanticReviewCount\": 216,\n  \"figureCount\": 18,\n  \"difficultyCounts\": {\n    \"basic\": 54,\n    \"standard\": 54,\n    \"advanced\": 54,\n    \"literacy\": 54\n  },\n  \"answerIndexCounts\": [\n    54,\n    54,\n    54,\n    54\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"nearDuplicateScanVerified\": true,\n  \"traditionalChineseVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"stagingState\": \"absent\"\n}\n",
+        "stderr": ""
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u17",
+          "emittedModuleCount": 18,
+          "stagingManifest": "staging/u17-batch-018-staging-manifest.json",
+          "productionActivationAllowed": false
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u17\",\n  \"emittedModuleCount\": 18,\n  \"stagingManifest\": \"staging/u17-batch-018-staging-manifest.json\",\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": ""
+      },
+      "second": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u17",
+          "lockedSkillCount": 18,
+          "lectureCount": 18,
+          "mcQuestionCount": 216,
+          "constructedResponseCount": 36,
+          "semanticReviewCount": 216,
+          "figureCount": 18,
+          "difficultyCounts": {
+            "basic": 54,
+            "standard": 54,
+            "advanced": 54,
+            "literacy": 54
+          },
+          "answerIndexCounts": [
+            54,
+            54,
+            54,
+            54
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "nearDuplicateScanVerified": true,
+          "traditionalChineseVerified": true,
+          "legacyIsolationVerified": true,
+          "productionActivationAllowed": false,
+          "stagingState": "present-and-valid"
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u17\",\n  \"lockedSkillCount\": 18,\n  \"lectureCount\": 18,\n  \"mcQuestionCount\": 216,\n  \"constructedResponseCount\": 36,\n  \"semanticReviewCount\": 216,\n  \"figureCount\": 18,\n  \"difficultyCounts\": {\n    \"basic\": 54,\n    \"standard\": 54,\n    \"advanced\": 54,\n    \"literacy\": 54\n  },\n  \"answerIndexCounts\": [\n    54,\n    54,\n    54,\n    54\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"nearDuplicateScanVerified\": true,\n  \"traditionalChineseVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"stagingState\": \"present-and-valid\"\n}\n",
+        "stderr": ""
+      },
+      "pass": true
+    },
+    {
+      "batch": "024-u23-complete",
+      "first": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u23",
+          "lockedSkillCount": 20,
+          "lectureCount": 20,
+          "mcQuestionCount": 240,
+          "constructedResponseCount": 40,
+          "semanticReviewCount": 240,
+          "figureCount": 11,
+          "difficultyCounts": {
+            "basic": 60,
+            "standard": 60,
+            "advanced": 60,
+            "literacy": 60
+          },
+          "answerIndexCounts": [
+            60,
+            60,
+            60,
+            60
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "normalizedDuplicateScanVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "figureReferencesVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "traditionalChineseVerified": true,
+          "legacyContentImported": false,
+          "productionActivationAllowed": false,
+          "stagingPresent": false,
+          "emittedModuleCount": 0
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u23\",\n  \"lockedSkillCount\": 20,\n  \"lectureCount\": 20,\n  \"mcQuestionCount\": 240,\n  \"constructedResponseCount\": 40,\n  \"semanticReviewCount\": 240,\n  \"figureCount\": 11,\n  \"difficultyCounts\": {\n    \"basic\": 60,\n    \"standard\": 60,\n    \"advanced\": 60,\n    \"literacy\": 60\n  },\n  \"answerIndexCounts\": [\n    60,\n    60,\n    60,\n    60\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"normalizedDuplicateScanVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"traditionalChineseVerified\": true,\n  \"legacyContentImported\": false,\n  \"productionActivationAllowed\": false,\n  \"stagingPresent\": false,\n  \"emittedModuleCount\": 0\n}\n",
+        "stderr": ""
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u23",
+          "emittedModuleCount": 20,
+          "stagingManifest": "staging/u23-batch-024-staging-manifest.json",
+          "productionActivationAllowed": false,
+          "outputs": [
+            {
+              "path": "staging/u23-s001-human-content.mjs",
+              "bytes": 56392,
+              "sha256": "c062ce2a175ff78526be75d7562481e93e82d86da2c101f50b1e62f1ed9ea243"
+            },
+            {
+              "path": "staging/u23-s002-human-content.mjs",
+              "bytes": 55054,
+              "sha256": "b886d747a8be18b6a8af5b6f183269cdc06918f546d2c3ee3ff5bd102cd6fbde"
+            },
+            {
+              "path": "staging/u23-s003-human-content.mjs",
+              "bytes": 54671,
+              "sha256": "e820b7657a3b89cab9cb786b2d97d43fff2ed5afbe4f06f046efd00ea7328664"
+            },
+            {
+              "path": "staging/u23-s004-human-content.mjs",
+              "bytes": 50754,
+              "sha256": "681cbe8c8af7d891cee70216e93ae25c4f1108058fd5135e99d904bae05674ca"
+            },
+            {
+              "path": "staging/u23-s005-human-content.mjs",
+              "bytes": 51047,
+              "sha256": "045427c50579e1ad7c36ab7ff472f7366ef327bc1065352d4d3e9f86231eddc4"
+            },
+            {
+              "path": "staging/u23-s006-human-content.mjs",
+              "bytes": 51402,
+              "sha256": "8a4cf18a32904c5a928c3d015bb7aa8441d1a67e949ef9394ee2163e7703a9d7"
+            },
+            {
+              "path": "staging/u23-s007-human-content.mjs",
+              "bytes": 50614,
+              "sha256": "4dfdeedcf54c76c0a92b9346a1e2eed4ae40de33c31f59971a76d01ee03823fa"
+            },
+            {
+              "path": "staging/u23-s008-human-content.mjs",
+              "bytes": 51798,
+              "sha256": "b8de78f7cf77a57d6c55c4466a0d8a3f27a161c4dd79d855455122b451f67217"
+            },
+            {
+              "path": "staging/u23-s009-human-content.mjs",
+              "bytes": 50361,
+              "sha256": "8f752d2d90a3e0739020f60fc9ede434395fb91a5c52f504a80baa9dc9df32db"
+            },
+            {
+              "path": "staging/u23-s010-human-content.mjs",
+              "bytes": 47700,
+              "sha256": "f9d2a5a7df79b67ee7de68b2fdcb2e007b82542ee53280e59606bf721f76d6c6"
+            },
+            {
+              "path": "staging/u23-s011-human-content.mjs",
+              "bytes": 47355,
+              "sha256": "33ea3c10fcb3759c083b081ee396429aab637ba51f3a1329b3f7b5ba460b9300"
+            },
+            {
+              "path": "staging/u23-s012-human-content.mjs",
+              "bytes": 52079,
+              "sha256": "961a2b1c55a38effa697e22daefad8b1b79451ccbe391718828c49466537e40a"
+            },
+            {
+              "path": "staging/u23-s013-human-content.mjs",
+              "bytes": 46650,
+              "sha256": "a75e753f00aaa39d7de764201cea61a523ad3c2b1a305c675d38fffa4d9e894d"
+            },
+            {
+              "path": "staging/u23-s014-human-content.mjs",
+              "bytes": 51336,
+              "sha256": "e65ae317543de56b12c103815cf72685b18c3120c0b9627c9be5a3b6f4fe52bf"
+            },
+            {
+              "path": "staging/u23-s015-human-content.mjs",
+              "bytes": 53231,
+              "sha256": "2b05a0f49c0d35beab97a4fda6c2fd9dd46bf729481b8e8e1f00613f9b73f4fa"
+            },
+            {
+              "path": "staging/u23-s016-human-content.mjs",
+              "bytes": 50406,
+              "sha256": "b48294907dd374b406c038c7ff1c9949bd26d0a5aad4c7ab047901fbf9b182ac"
+            },
+            {
+              "path": "staging/u23-s017-human-content.mjs",
+              "bytes": 46250,
+              "sha256": "6c7c09f43c3e645796dd5f565149c7b1053bc3e1ba67f5e2cf2b7594b1832648"
+            },
+            {
+              "path": "staging/u23-s018-human-content.mjs",
+              "bytes": 49217,
+              "sha256": "37ec8951654ff6d4395c55e7f1eb2f0d8e3b860cc2c35f024146acbe4c81d55f"
+            },
+            {
+              "path": "staging/u23-s019-human-content.mjs",
+              "bytes": 52992,
+              "sha256": "9a1ff9ee47da253ab1cad7dfbb69deda50d3bc534c3e11df9ba3087ca81e3218"
+            },
+            {
+              "path": "staging/u23-s020-human-content.mjs",
+              "bytes": 47749,
+              "sha256": "4ab024190311cdfc543809bce0c610971c67dc0f280ed94ac7e36d0ea2e2bb9a"
+            }
+          ]
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u23\",\n  \"emittedModuleCount\": 20,\n  \"stagingManifest\": \"staging/u23-batch-024-staging-manifest.json\",\n  \"productionActivationAllowed\": false,\n  \"outputs\": [\n    {\n      \"path\": \"staging/u23-s001-human-content.mjs\",\n      \"bytes\": 56392,\n      \"sha256\": \"c062ce2a175ff78526be75d7562481e93e82d86da2c101f50b1e62f1ed9ea243\"\n    },\n    {\n      \"path\": \"staging/u23-s002-human-content.mjs\",\n      \"bytes\": 55054,\n      \"sha256\": \"b886d747a8be18b6a8af5b6f183269cdc06918f546d2c3ee3ff5bd102cd6fbde\"\n    },\n    {\n      \"path\": \"staging/u23-s003-human-content.mjs\",\n      \"bytes\": 54671,\n      \"sha256\": \"e820b7657a3b89cab9cb786b2d97d43fff2ed5afbe4f06f046efd00ea7328664\"\n    },\n    {\n      \"path\": \"staging/u23-s004-human-content.mjs\",\n      \"bytes\": 50754,\n      \"sha256\": \"681cbe8c8af7d891cee70216e93ae25c4f1108058fd5135e99d904bae05674ca\"\n    },\n    {\n      \"path\": \"staging/u23-s005-human-content.mjs\",\n      \"bytes\": 51047,\n      \"sha256\": \"045427c50579e1ad7c36ab7ff472f7366ef327bc1065352d4d3e9f86231eddc4\"\n    },\n    {\n      \"path\": \"staging/u23-s006-human-content.mjs\",\n      \"bytes\": 51402,\n      \"sha256\": \"8a4cf18a32904c5a928c3d015bb7aa8441d1a67e949ef9394ee2163e7703a9d7\"\n    },\n    {\n      \"path\": \"staging/u23-s007-human-content.mjs\",\n      \"bytes\": 50614,\n      \"sha256\": \"4dfdeedcf54c76c0a92b9346a1e2eed4ae40de33c31f59971a76d01ee03823fa\"\n    },\n    {\n      \"path\": \"staging/u23-s008-human-content.mjs\",\n      \"bytes\": 51798,\n      \"sha256\": \"b8de78f7cf77a57d6c55c4466a0d8a3f27a161c4dd79d855455122b451f67217\"\n    },\n    {\n      \"path\": \"staging/u23-s009-human-content.mjs\",\n      \"bytes\": 50361,\n      \"sha256\": \"8f752d2d90a3e0739020f60fc9ede434395fb91a5c52f504a80baa9dc9df32db\"\n    },\n    {\n      \"path\": \"staging/u23-s010-human-content.mjs\",\n      \"bytes\": 47700,\n      \"sha256\": \"f9d2a5a7df79b67ee7de68b2fdcb2e007b82542ee53280e59606bf721f76d6c6\"\n    },\n    {\n      \"path\": \"staging/u23-s011-human-content.mjs\",\n      \"bytes\": 47355,\n      \"sha256\": \"33ea3c10fcb3759c083b081ee396429aab637ba51f3a1329b3f7b5ba460b9300\"\n    },\n    {\n      \"path\": \"staging/u23-s012-human-content.mjs\",\n      \"bytes\": 52079,\n      \"sha256\": \"961a2b1c55a38effa697e22daefad8b1b79451ccbe391718828c49466537e40a\"\n    },\n    {\n      \"path\": \"staging/u23-s013-human-content.mjs\",\n      \"bytes\": 46650,\n      \"sha256\": \"a75e753f00aaa39d7de764201cea61a523ad3c2b1a305c675d38fffa4d9e894d\"\n    },\n    {\n      \"path\": \"staging/u23-s014-human-content.mjs\",\n      \"bytes\": 51336,\n      \"sha256\": \"e65ae317543de56b12c103815cf72685b18c3120c0b9627c9be5a3b6f4fe52bf\"\n    },\n    {\n      \"path\": \"staging/u23-s015-human-content.mjs\",\n      \"bytes\": 53231,\n      \"sha256\": \"2b05a0f49c0d35beab97a4fda6c2fd9dd46bf729481b8e8e1f00613f9b73f4fa\"\n    },\n    {\n      \"path\": \"staging/u23-s016-human-content.mjs\",\n      \"bytes\": 50406,\n      \"sha256\": \"b48294907dd374b406c038c7ff1c9949bd26d0a5aad4c7ab047901fbf9b182ac\"\n    },\n    {\n      \"path\": \"staging/u23-s017-human-content.mjs\",\n      \"bytes\": 46250,\n      \"sha256\": \"6c7c09f43c3e645796dd5f565149c7b1053bc3e1ba67f5e2cf2b7594b1832648\"\n    },\n    {\n      \"path\": \"staging/u23-s018-human-content.mjs\",\n      \"bytes\": 49217,\n      \"sha256\": \"37ec8951654ff6d4395c55e7f1eb2f0d8e3b860cc2c35f024146acbe4c81d55f\"\n    },\n    {\n      \"path\": \"staging/u23-s019-human-content.mjs\",\n      \"bytes\": 52992,\n      \"sha256\": \"9a1ff9ee47da253ab1cad7dfbb69deda50d3bc534c3e11df9ba3087ca81e3218\"\n    },\n    {\n      \"path\": \"staging/u23-s020-human-content.mjs\",\n      \"bytes\": 47749,\n      \"sha256\": \"4ab024190311cdfc543809bce0c610971c67dc0f280ed94ac7e36d0ea2e2bb9a\"\n    }\n  ]\n}\n",
+        "stderr": ""
+      },
+      "second": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "signal": null,
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u23",
+          "lockedSkillCount": 20,
+          "lectureCount": 20,
+          "mcQuestionCount": 240,
+          "constructedResponseCount": 40,
+          "semanticReviewCount": 240,
+          "figureCount": 11,
+          "difficultyCounts": {
+            "basic": 60,
+            "standard": 60,
+            "advanced": 60,
+            "literacy": 60
+          },
+          "answerIndexCounts": [
+            60,
+            60,
+            60,
+            60
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "normalizedDuplicateScanVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "figureReferencesVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "traditionalChineseVerified": true,
+          "legacyContentImported": false,
+          "productionActivationAllowed": false,
+          "stagingPresent": true,
+          "emittedModuleCount": 20
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u23\",\n  \"lockedSkillCount\": 20,\n  \"lectureCount\": 20,\n  \"mcQuestionCount\": 240,\n  \"constructedResponseCount\": 40,\n  \"semanticReviewCount\": 240,\n  \"figureCount\": 11,\n  \"difficultyCounts\": {\n    \"basic\": 60,\n    \"standard\": 60,\n    \"advanced\": 60,\n    \"literacy\": 60\n  },\n  \"answerIndexCounts\": [\n    60,\n    60,\n    60,\n    60\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"normalizedDuplicateScanVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"traditionalChineseVerified\": true,\n  \"legacyContentImported\": false,\n  \"productionActivationAllowed\": false,\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 20\n}\n",
+        "stderr": ""
+      },
+      "pass": true
+    }
+  ]
+}

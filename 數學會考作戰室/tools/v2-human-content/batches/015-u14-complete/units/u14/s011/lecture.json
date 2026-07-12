@@ -1,0 +1,251 @@
+{
+  "lectureId": "u14-s011-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-series",
+  "skillId": "series-sum-word",
+  "lockedTitle": "級數求和應用",
+  "title": "級數求和應用：由總和反推項數與末項",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由總和與其他條件反求末項。",
+    "能由總和建立方程式求項數。",
+    "能處理連續整數、倍數與奇偶數求和。",
+    "能檢查項數整數性與情境限制。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "arithmetic-series-word",
+      "title": "等差級數應用",
+      "requiredLevel": "能說明「等差級數應用」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "反推",
+      "definition": "由已知總和回頭求未知項數或末項。"
+    },
+    {
+      "term": "端點",
+      "definition": "級數的第一項與最後一項。"
+    },
+    {
+      "term": "連續倍數",
+      "definition": "固定公差等於基準倍數的等差數列。"
+    },
+    {
+      "term": "整數性",
+      "definition": "項數必須是正整數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "S_n=n(a_1+a_n)/2",
+      "meaning": "反推的核心方程式。"
+    },
+    {
+      "symbol": "a_n=a_1+(n-1)d",
+      "meaning": "把末項改寫成n。"
+    }
+  ],
+  "conceptNarrative": [
+    "反推題通常先把未知量設為n或a_n，再把通項與和公式聯立。",
+    "若n未知，代入後常形成可因式分解的二次方程式；國中範圍只取正整數解。",
+    "連續奇數、偶數與某數的倍數都是等差數列，可直接找首末項與項數。",
+    "解出代數答案後要回到情境，負根、非整數期數或超出範圍的根都要捨去。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "反推項數",
+      "statement": "由總和條件求滿足的正整數n。"
+    },
+    {
+      "name": "反推末項",
+      "statement": "由平均項值關係求a_n。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a_n=2S_n/n-a_1",
+      "conditions": [
+        "n與a_1已知"
+      ],
+      "meaning": "由總和反求末項。"
+    },
+    {
+      "formula": "S_n=n[2a_1+(n-1)d]/2",
+      "conditions": [
+        "a_1、d已知，n未知"
+      ],
+      "meaning": "建立n的方程式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "代數方程式的負根不能當項數。",
+    "非整數n不表示可取最接近整數。",
+    "端點不在同一等差數列時公式失效。",
+    "總和題若每期變化不固定，不能只用平均端點。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "決定未知量n或a_n",
+      "check": "依題目所問設變數。"
+    },
+    {
+      "step": 2,
+      "instruction": "列通項關係",
+      "check": "必要時以n表示a_n。"
+    },
+    {
+      "step": 3,
+      "instruction": "代入S_n公式",
+      "check": "建立一元方程式。"
+    },
+    {
+      "step": 4,
+      "instruction": "解方程式並篩選正整數",
+      "check": "排除不合情境解。"
+    },
+    {
+      "step": 5,
+      "instruction": "回算末項與總和驗證",
+      "check": "確保完全符合。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "8項等差數列首項6，總和216，求末項",
+      "reasoning": "216=8(6+a_8)/2。",
+      "solutionSteps": [
+        "216=8(6+a_8)/2。",
+        "54=6+a_8。"
+      ],
+      "answer": "a_8=48"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "3，6，9，… 前n項和為165",
+      "reasoning": "S_n=3n(n+1)/2。",
+      "solutionSteps": [
+        "S_n=3n(n+1)/2。",
+        "n(n+1)=110。"
+      ],
+      "answer": "n=10"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "21到79的所有奇數和",
+      "reasoning": "d=2，n=(79-21)/2+1=30。",
+      "solutionSteps": [
+        "d=2，n=(79-21)/2+1=30。",
+        "S=30×100/2。"
+      ],
+      "answer": "1500"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "首項10、公差4，前n項和384",
+      "reasoning": "384=n[20+4(n-1)]/2。",
+      "solutionSteps": [
+        "384=n[20+4(n-1)]/2。",
+        "2n(n+4)=384。"
+      ],
+      "answer": "n=12"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "解到兩根都保留",
+      "why": "項數需正整數。",
+      "correction": "代回情境篩選。"
+    },
+    {
+      "mistake": "總和除以n就當末項",
+      "why": "那是平均，不是末項。",
+      "correction": "a_n=2平均-a_1。"
+    },
+    {
+      "mistake": "奇數個數用端點差除2卻忘加1",
+      "why": "端點包含。",
+      "correction": "n=間隔+1。"
+    },
+    {
+      "mistake": "把公差當首項倍數",
+      "why": "公式角色混淆。",
+      "correction": "逐一標示a_1、d。"
+    },
+    {
+      "mistake": "四捨五入項數",
+      "why": "項數不能近似。",
+      "correction": "非整數表示條件不成立或計算錯。"
+    },
+    {
+      "mistake": "未回算總和",
+      "why": "代數錯誤無法被發現。",
+      "correction": "把n放回原級數加總。"
+    }
+  ],
+  "selfCheck": [
+    "未知量是n還是a_n？",
+    "是否同時使用通項與和公式？",
+    "n是否為正整數？",
+    "端點是否真的屬於數列？",
+    "回算總和是否完全相符？"
+  ],
+  "summary": [
+    "反推題把未知項數或末項放入和公式。",
+    "n未知時常需解一元二次方程式。",
+    "只接受符合情境的正整數項數。",
+    "連續奇偶數與倍數可視為等差級數。"
+  ],
+  "connections": {
+    "previous": "在等差級數情境中辨認首項、公差與總量。",
+    "next": [
+      "最後技能會整合表格、圖形、等差與等比判讀。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s011-v001",
+      "u14-s011-v002",
+      "u14-s011-v003",
+      "u14-s011-v004",
+      "u14-s011-v005",
+      "u14-s011-v006",
+      "u14-s011-v007",
+      "u14-s011-v008",
+      "u14-s011-v009",
+      "u14-s011-v010",
+      "u14-s011-v011",
+      "u14-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s011-cr001",
+      "u14-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「級數求和應用」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "cef68f6ffa61b89264358dac27c1ee91bef950b70dc6dd391a3f00fbde1bf7cb"
+}

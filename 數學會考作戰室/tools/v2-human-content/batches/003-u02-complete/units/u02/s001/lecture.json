@@ -1,0 +1,229 @@
+{
+  "lectureId": "u02-s001-lecture-r1",
+  "unitId": "u02",
+  "topicId": "u02-factors",
+  "skillId": "fraction-factor-multiple",
+  "title": "因數與倍數：從整除關係理解分組和排列與週期",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能用整除判斷因數與倍數。",
+    "能分清「a 是 b 的因數」與「b 是 a 的倍數」。",
+    "能列出有限範圍內的因數與倍數。",
+    "能把平均分組與等長切割翻成整除條件。"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    {
+      "term": "因數",
+      "definition": "能把某整數整除的整數。"
+    },
+    {
+      "term": "倍數",
+      "definition": "某整數乘上一個整數所得的數。"
+    },
+    {
+      "term": "整除",
+      "definition": "除法的商是整數且餘數為0。"
+    },
+    {
+      "term": "共同倍數",
+      "definition": "同時是兩個或多個數的倍數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a∣b",
+      "meaning": "a 能整除 b，也就是 a 是 b 的因數。"
+    },
+    {
+      "symbol": "b=ak",
+      "meaning": "b 是 a 的倍數，k 為整數。"
+    }
+  ],
+  "conceptNarrative": [
+    "因數與倍數描述同一個乘法事實的兩個方向，例如6×4=24，因此6是24的因數，24是6的倍數。",
+    "因數通常在固定正整數下數量有限；倍數則可持續乘1、2、3而有無限多個。",
+    "平均分且不剩，表示組數或每組大小必須整除總量。",
+    "0 是每個非零整數的倍數，但0不能作為除數，因此不把0當成正整數的因數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "因數",
+      "statement": "若 b÷a 為整數，則 a 是 b 的因數。"
+    },
+    {
+      "name": "倍數",
+      "statement": "若 b=a×k，k 為整數，則 b 是 a 的倍數。"
+    },
+    {
+      "name": "整除",
+      "statement": "除法餘數為0的關係。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "b=a×k",
+      "conditions": [
+        "a、b、k皆為整數"
+      ],
+      "meaning": "連結因數與倍數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只因一個數較小，不能判定它是因數。",
+    "除數為0的式子沒有定義。",
+    "題目若限定正因數，不納入負因數。",
+    "平均分配若允許剩餘，就不再是整除問題。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先找出誰是總量。",
+      "check": "題目問因數、倍數、組數或每組大小？"
+    },
+    {
+      "step": 2,
+      "instruction": "把文字改寫成除法或乘法。",
+      "check": "是否能寫成總量=每組×組數？"
+    },
+    {
+      "step": 3,
+      "instruction": "檢查餘數。",
+      "check": "商是否為整數？"
+    },
+    {
+      "step": 4,
+      "instruction": "處理範圍限制。",
+      "check": "是否要求小於、介於或最多？"
+    },
+    {
+      "step": 5,
+      "instruction": "用原情境驗算。",
+      "check": "分組後是否真的不剩？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "判斷 9 是否為 63 的因數。",
+      "solutionSteps": [
+        "63÷9=7。",
+        "商為整數且無餘數。"
+      ],
+      "answer": "9 是 63 的因數。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "列出 16 的所有正因數。",
+      "solutionSteps": [
+        "成對找乘積16：1×16、2×8、4×4。",
+        "整理不重複因數。"
+      ],
+      "answer": "1、2、4、8、16。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "找出小於 40 的 7 的正倍數。",
+      "solutionSteps": [
+        "依序算7×1到7×5。",
+        "7×6=42超出範圍。"
+      ],
+      "answer": "7、14、21、28、35。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "60顆球平均分成每袋12顆，可裝幾袋？",
+      "solutionSteps": [
+        "60÷12=5。",
+        "沒有餘數。"
+      ],
+      "answer": "5袋。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把所有小於原數的數都當因數。",
+      "why": "忽略整除條件。",
+      "correction": "逐一做除法檢查餘數。"
+    },
+    {
+      "mistake": "把因數與倍數方向說反。",
+      "why": "未從乘法等式判讀角色。",
+      "correction": "由 a×k=b 判定a是b因數、b是a倍數。"
+    },
+    {
+      "mistake": "認為0是每個數的因數。",
+      "why": "把0是倍數的性質混到因數。",
+      "correction": "記住不能除以0。"
+    },
+    {
+      "mistake": "列因數時漏掉原數本身。",
+      "why": "以為因數一定更小。",
+      "correction": "正整數本身永遠是最大正因數。"
+    },
+    {
+      "mistake": "列倍數時包含不是整數倍的數。",
+      "why": "只看接近。",
+      "correction": "每項都應能寫成原數×整數。"
+    },
+    {
+      "mistake": "分組題未檢查是否有剩。",
+      "why": "只做近似除法。",
+      "correction": "題目說平均且不剩時，商必須是整數。"
+    }
+  ],
+  "selfCheck": [
+    "我是否分清因數與倍數方向？",
+    "除法是否沒有餘數？",
+    "是否處理正因數或範圍限制？",
+    "0 是否被錯放到除數位置？",
+    "答案能否放回分組情境驗算？"
+  ],
+  "summary": [
+    "因數與倍數是同一乘法關係的兩個方向。",
+    "整除是判斷核心。",
+    "因數有限，倍數通常無限。",
+    "平均分、不剩與等長切割常轉成整除。"
+  ],
+  "connections": {
+    "previous": "本節為 U02 起點，使用 U01 的整數整除與乘法觀念。",
+    "next": [
+      "質數與合數會依正因數個數分類。",
+      "GCD與LCM會建立在共同因數、共同倍數上。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u02-s001-v001",
+      "u02-s001-v002",
+      "u02-s001-v003",
+      "u02-s001-v004",
+      "u02-s001-v005",
+      "u02-s001-v006",
+      "u02-s001-v007",
+      "u02-s001-v008",
+      "u02-s001-v009",
+      "u02-s001-v010",
+      "u02-s001-v011",
+      "u02-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u02-s001-cr001",
+      "u02-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐題檢查整除方向、0的角色、正因數邊界與四個例題的餘數；16的因數配對、7的倍數範圍和60÷12均乘回原數驗證。",
+    "reviewVersion": "human-lecture-review-r3.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "07784bf21675e841eaafef0996e3e22c377867c442c4b68f0d160c1ad993b8e6",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+}

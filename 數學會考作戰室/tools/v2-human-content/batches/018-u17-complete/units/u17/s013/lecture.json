@@ -1,0 +1,241 @@
+{
+  "lectureId": "u17-s013-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-quadrilaterals",
+  "skillId": "rhombus-properties",
+  "lockedTitle": "菱形性質",
+  "title": "菱形性質：四邊等長帶來垂直且平分角的對角線",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：quadrilateral-area。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "由定義辨認菱形",
+    "運用邊、角與對角線性質",
+    "用對角線求面積或角度"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadrilateral-area",
+      "requiredLevel": "能正確使用「quadrilateral-area」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "菱形",
+      "definition": "四邊等長的平行四邊形"
+    },
+    {
+      "term": "垂直平分",
+      "definition": "相交成90°且彼此分成兩等段"
+    },
+    {
+      "term": "對角線平分頂角",
+      "definition": "每條對角線把兩端頂角各分成兩等角"
+    },
+    {
+      "term": "對角",
+      "definition": "不相鄰的內角"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "菱形先是平行四邊形，所以具有對邊平行、對角相等、鄰角互補與對角線互相平分。",
+    "菱形還多出：兩對角線互相垂直，且各自平分一對頂角。",
+    "菱形的對角線通常不等長；等長又互相垂直時會是正方形。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "菱形",
+      "statement": "四邊等長的平行四邊形"
+    },
+    {
+      "name": "垂直平分",
+      "statement": "相交成90°且彼此分成兩等段"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "四邊等長",
+      "conditions": [
+        "菱形定義"
+      ],
+      "meaning": "用於菱形性質中符合條件的推理或計算。"
+    },
+    {
+      "formula": "AC⊥BD，AO=OC，BO=OD",
+      "conditions": [
+        "菱形對角線性質"
+      ],
+      "meaning": "用於菱形性質中符合條件的推理或計算。"
+    },
+    {
+      "formula": "面積=AC×BD÷2",
+      "conditions": [
+        "兩對角線長已知"
+      ],
+      "meaning": "用於菱形性質中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先確認四邊等長或菱形已知",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "標出對角線交點",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "分別使用平分、垂直或角平分性質",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "建立直角三角形或面積式",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "不自行假設對角線等長",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "對角線10與16",
+      "solutionSteps": [
+        "面積80。"
+      ],
+      "answer": "面積80。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "∠A=80°且AC平分∠A",
+      "solutionSteps": [
+        "∠BAC=40°。"
+      ],
+      "answer": "∠BAC=40°。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "AO=6",
+      "solutionSteps": [
+        "OC=6。"
+      ],
+      "answer": "OC=6。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩對角線相交",
+      "solutionSteps": [
+        "夾角90°。"
+      ],
+      "answer": "夾角90°。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "菱形四角都是90°",
+      "why": "只有正方形必然如此",
+      "correction": "只有正方形必然如此"
+    },
+    {
+      "mistake": "對角線等長",
+      "why": "一般菱形不保證",
+      "correction": "一般菱形不保證"
+    },
+    {
+      "mistake": "只用四邊形四邊等長卻忘記依序",
+      "why": "定義需封閉四邊形",
+      "correction": "定義需封閉四邊形"
+    },
+    {
+      "mistake": "面積用兩對角線直接相乘",
+      "why": "要除2",
+      "correction": "要除2"
+    },
+    {
+      "mistake": "角平分套錯頂點",
+      "why": "AC只平分A與C，BD平分B與D",
+      "correction": "AC只平分A與C，BD平分B與D"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「菱形性質」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "菱形先是平行四邊形，所以具有對邊平行、對角相等、鄰角互補與對角線互相平分。",
+    "四邊等長",
+    "解題時先確認「菱形定義」。"
+  ],
+  "connections": {
+    "previous": "承接quadrilateral-area。",
+    "next": "下一技能依鎖定順序為rectangle-square-properties。"
+  },
+  "figureReferences": [
+    "u17-s013-fig001"
+  ],
+  "figureAccessibility": "菱形ABCD畫兩條互相垂直的對角線，交點O有直角記號。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s013-v001",
+      "u17-s013-v002",
+      "u17-s013-v003",
+      "u17-s013-v004",
+      "u17-s013-v005",
+      "u17-s013-v006",
+      "u17-s013-v007",
+      "u17-s013-v008",
+      "u17-s013-v009",
+      "u17-s013-v010",
+      "u17-s013-v011",
+      "u17-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s013-cr001",
+      "u17-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義保留平行四邊形共通性質，並清楚標出菱形專屬的垂直與角平分性質。"
+  },
+  "contentSha256": "0eadc3f71f2802af8403eb3a6f1b2985e3af71ca8ceb1bc64350b105d34260c4"
+}

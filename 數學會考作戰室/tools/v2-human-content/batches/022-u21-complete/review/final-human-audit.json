@@ -1,0 +1,59 @@
+{
+  "unitId": "u21",
+  "auditVersion": "u21-final-human-audit-r1",
+  "auditedAt": "2026-07-12",
+  "status": "pass",
+  "scope": {
+    "lectures": 12,
+    "mcQuestions": 144,
+    "constructedResponses": 24,
+    "semanticReviews": 144,
+    "figures": 12
+  },
+  "actualIssuesFoundAndRepaired": [
+    {
+      "issueId": "U21-AUDIT-001",
+      "found": "初稿後半段出現「定义域、顶点、函数」等簡體字形。",
+      "repair": "使用 s2twp 字形轉換後逐檔重算內容雜湊，並由 verifier 的禁用簡體字掃描確認最終來源僅含臺灣繁體字形。",
+      "affected": "主要為 s009 至 s011 的草稿文字。"
+    },
+    {
+      "issueId": "U21-AUDIT-002",
+      "found": "鎖定技能名「拋物線面積應用」可能讓學生誤以為要計算曲線下方面積。",
+      "repair": "保留 skillId 與課綱邊界，將人類可讀標題改為「二次函數的面積應用」，所有內容限定長方形和圍欄等國中二次模型，明文排除微積分。",
+      "affected": "s010 講義標題、課綱決策與邊界說明。"
+    },
+    {
+      "issueId": "U21-AUDIT-003",
+      "found": "首次 SVG 實際渲染後，s005、s006、s009、s010、s011 與 s012 的部分貝茲控制點使標示頂點或等高點未精確落在曲線上，s007 的頂點文字亦靠近標記點。",
+      "repair": "將相關曲線改為通過所有明列關鍵點的分段三次貝茲路徑，移開 s007 頂點標籤，重新渲染 12 張圖並再次核對。",
+      "affected": "6 張曲線幾何與 1 張文字配置。"
+    },
+    {
+      "issueId": "U21-AUDIT-004",
+      "found": "臺灣字形轉換曾把副詞「只」轉成量詞「隻」，造成「不只是」等句子字義不自然。",
+      "repair": "在字形轉換後加入語意化後處理，將本套件所有誤轉的「隻」恢復為「只」，並加入最終全文檢查。",
+      "affected": "講義、選擇題與語意審查中的少數句子。"
+    },
+    {
+      "issueId": "U21-AUDIT-005",
+      "found": "s004 的一題選擇題與一題非選擇題原問法使用「哪個已知值」，但正確推論指向表中尚未列出的鏡射輸入，文字與解答角色不一致。",
+      "repair": "改問「與哪個輸入位置的函數值相同」，並要求說明該值是否已列於表中，保留原數學推理但消除語意矛盾。",
+      "affected": "u21-s004-v009 與 u21-s004-cr002。"
+    }
+  ],
+  "manualChecks": [
+    "逐題重算答案與四選項真值",
+    "檢查負號、括號、平方、分數與單位",
+    "檢查定義域端點與不合理負時間",
+    "檢查 advanced 題確有多步條件",
+    "檢查 literacy 情境對數學任務不可刪除",
+    "檢查 12 張 SVG 的座標、標籤、虛實線與手機縮放",
+    "檢查沒有數字替換型近似題"
+  ],
+  "remainingLimitations": [
+    "跨單元近似重複需待中央總協調者取得全部平行批次後執行。"
+  ],
+  "legacyContentUsed": false,
+  "productionActivationAllowed": false
+}

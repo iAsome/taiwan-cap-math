@@ -1,0 +1,268 @@
+{
+  "lectureId": "u16-s014-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-properties",
+  "skillId": "triangle-side-angle-relation",
+  "skillOrder": 14,
+  "originalLockedTitle": "邊角關係",
+  "title": "邊角關係：大邊對大角與大角對大邊",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能在同一三角形內比較邊長與其對角大小。",
+    "能由邊長排序寫出對角排序，或由角排序寫出對邊排序。",
+    "能利用等邊對等角處理相等情形。",
+    "能避免把相鄰角或相鄰邊誤認為對應對象。"
+  ],
+  "prerequisiteBridge": "等腰三角形已建立『等邊對等角、等角對等邊』。本技能將相等關係擴展為大小關係：較長的邊正對較大的角，反之亦然。",
+  "prerequisites": [
+    {
+      "skillId": "angle-sum-exterior",
+      "requiredLevel": "能使用先備技能「外角定理」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "對角",
+      "definition": "一條邊不相接的那個頂點角。"
+    },
+    {
+      "term": "對邊",
+      "definition": "一個角不相接的那條邊。"
+    },
+    {
+      "term": "大邊對大角",
+      "definition": "同一三角形中，較長邊的對角較大。"
+    },
+    {
+      "term": "大角對大邊",
+      "definition": "同一三角形中，較大角的對邊較長。"
+    },
+    {
+      "term": "排序",
+      "definition": "依大到小或小到大排列三邊或三角。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "BC 對 ∠A",
+      "meaning": "邊 BC 不接觸 A，故為 ∠A 的對邊。"
+    },
+    {
+      "symbol": "AB>AC ⇒ ∠C>∠B",
+      "meaning": "AB 對 ∠C，AC 對 ∠B。"
+    },
+    {
+      "symbol": "∠A=∠B ⇒ BC=AC",
+      "meaning": "等角對等邊。"
+    }
+  ],
+  "conceptNarrative": [
+    "在 △ABC 中，邊 BC 的對角是 ∠A，CA 的對角是 ∠B，AB 的對角是 ∠C；先建立這三組配對，排序才不會錯。",
+    "若一邊變長而另外兩邊固定，張開的對角會變大；因此長邊與大角一一對應。",
+    "三邊大小完全決定三角大小順序；反過來，三角排序也決定三邊排序。",
+    "相等情形與等腰性質一致：兩邊相等則其對角相等，兩角相等則其對邊相等。",
+    "此性質只在同一個三角形內直接使用；比較不同三角形需額外條件。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "邊角大小定理",
+      "statement": "同一三角形中，較大的邊所對的角較大，較大的角所對的邊較大。"
+    },
+    {
+      "name": "等量情形",
+      "statement": "同一三角形中，等邊對等角，等角對等邊。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a>b ⇔ ∠A>∠B",
+      "conditions": [
+        "a、b 分別為同一三角形中 ∠A、∠B 的對邊"
+      ],
+      "meaning": "邊與對角大小同序。"
+    },
+    {
+      "formula": "最長邊 ↔ 最大角",
+      "conditions": [
+        "同一三角形"
+      ],
+      "meaning": "快速配對極值。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把邊的相鄰角當成對角。",
+    "不能只因一邊在圖上畫得長就判定角較大。",
+    "不同三角形的邊角不能直接用此定理跨圖比較。",
+    "外角不是三角形的內角排序對象，需先轉成內角。",
+    "角度和必須為 180°；若資料矛盾，不能強行排序。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫出對應表：BC↔∠A、CA↔∠B、AB↔∠C。",
+      "check": "每條邊是否配到不接觸它的角？"
+    },
+    {
+      "step": 2,
+      "instruction": "依題目把已知邊或角排序。",
+      "check": "要求由大到小還是由小到大？"
+    },
+    {
+      "step": 3,
+      "instruction": "把每一項換成其對角或對邊。",
+      "check": "排序方向保持不變。"
+    },
+    {
+      "step": 4,
+      "instruction": "處理相等資料。",
+      "check": "相等邊是否對相等角？"
+    },
+    {
+      "step": 5,
+      "instruction": "用三角形內角和或不等式檢查。",
+      "check": "最大角是否可能達 180°？最短兩邊是否能形成三角形？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "△ABC 中 AB=5、BC=7、CA=9，將三角由大到小排列。",
+      "solutionSteps": [
+        "CA 最長，對 ∠B。",
+        "BC 次長，對 ∠A。",
+        "AB 最短，對 ∠C。"
+      ],
+      "answer": "∠B>∠A>∠C。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "∠A=80°、∠B=60°、∠C=40°，排列三邊。",
+      "solutionSteps": [
+        "最大角 A 對 BC。",
+        "B 對 CA，C 對 AB。"
+      ],
+      "answer": "BC>CA>AB。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "若 AB=AC，邊角關係給出什麼？",
+      "solutionSteps": [
+        "AB 對 ∠C，AC 對 ∠B。",
+        "相等邊對相等角。"
+      ],
+      "answer": "∠B=∠C。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "若 ∠A>∠C，哪一邊較長？",
+      "solutionSteps": [
+        "∠A 對 BC。",
+        "∠C 對 AB。"
+      ],
+      "answer": "BC>AB。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "三邊為 x+1、x+3、2x，且 x=4，最大角對哪邊？",
+      "solutionSteps": [
+        "邊長為 5、7、8。",
+        "最大角對長 8 的邊。"
+      ],
+      "answer": "對應 2x 那條邊的角最大。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "邊 AB 配 ∠A。",
+      "why": "以相同字母誤配。",
+      "correction": "AB 的對角是不含 A、B 的 ∠C。"
+    },
+    {
+      "mistake": "長邊對小角。",
+      "why": "把反比直覺帶入。",
+      "correction": "在三角形內是同序：長邊對大角。"
+    },
+    {
+      "mistake": "只看圖形外觀排序。",
+      "why": "圖未必按比例。",
+      "correction": "使用數值、等號或已證不等式。"
+    },
+    {
+      "mistake": "跨不同三角形比較。",
+      "why": "忽略『同一三角形』條件。",
+      "correction": "若跨圖需全等、相似或其他定理。"
+    },
+    {
+      "mistake": "等邊卻排成嚴格大小。",
+      "why": "未保留等號。",
+      "correction": "相等邊對相等角，排序應使用等號。"
+    },
+    {
+      "mistake": "最大角配到相鄰邊。",
+      "why": "未畫對邊。",
+      "correction": "從角頂點看，對面不接觸的邊才是對邊。"
+    }
+  ],
+  "selfCheck": [
+    "我能列出三組邊與對角配對嗎？",
+    "排序方向是否和題目一致？",
+    "長邊是否對大角？",
+    "相等資料是否保留等號？",
+    "這些量是否都在同一三角形內？"
+  ],
+  "summary": [
+    "同一三角形中，大邊對大角，大角對大邊。",
+    "邊 BC、CA、AB 分別對角 A、B、C。",
+    "相等情形就是等腰三角形的等邊對等角。",
+    "先配對再排序，不依圖形外觀。"
+  ],
+  "connections": {
+    "previous": "利用外角與內角關係取得角度資訊。",
+    "next": [
+      "多邊形外角和處理沿邊轉向。",
+      "素養題會把邊角排序用在結構安全與測距。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-014-side-angle"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-014-side-angle 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s014-v001",
+      "u16-s014-v002",
+      "u16-s014-v003",
+      "u16-s014-v004",
+      "u16-s014-v005",
+      "u16-s014-v006",
+      "u16-s014-v007",
+      "u16-s014-v008",
+      "u16-s014-v009",
+      "u16-s014-v010",
+      "u16-s014-v011",
+      "u16-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s014-cr001",
+      "u16-s014-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「邊角關係」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "8cc77b3cb6d75d349585deba89241fce5d353da71e0868d581eecd4dda240f80"
+}

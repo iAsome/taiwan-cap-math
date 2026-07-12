@@ -1,0 +1,255 @@
+{
+  "lectureId": "u18-s015-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-applications",
+  "skillId": "ratio-area-application",
+  "lockedSkillOrder": 15,
+  "lockedSkillTitle": "面積比應用",
+  "title": "面積比應用：縮圖鋪面與材料成本的平方尺度",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能由比例尺或線性放大率求面積倍率。",
+    "能由面積或材料用量反推相似比。",
+    "能在相似區域中計算塗料、地磚或紙張需求。",
+    "能辨認固定寬邊框造成的不相似情況。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "ratio-perimeter-application",
+        "title": "周長比應用",
+        "requiredLevel": "能運用「周長比應用」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「周長比應用」，先複習其核心判斷，再把方法推進到「面積比應用」。"
+  },
+  "glossary": [
+    {
+      "term": "面積倍率",
+      "definition": "新面積除以原面積，等於線性倍率的平方。"
+    },
+    {
+      "term": "單位面積用量",
+      "definition": "每一平方單位所需的材料或成本。"
+    },
+    {
+      "term": "比例尺面積",
+      "definition": "比例尺 1:n 時，圖上面積與實際面積的比為 1:n²。"
+    },
+    {
+      "term": "固定寬邊框",
+      "definition": "向外增加相同寬度形成的區域，通常不與原圖形相似。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "S實=n²S圖",
+      "meaning": "比例尺 1:n 下，實際面積為圖上面積的 n² 倍。"
+    },
+    {
+      "symbol": "S新=r²S原",
+      "meaning": "線性放大 r 倍時，面積放大 r² 倍。"
+    },
+    {
+      "symbol": "材料=面積×單位用量",
+      "meaning": "相似面積求出後再乘每單位需求。"
+    }
+  ],
+  "conceptNarrative": [
+    "比例尺給的是長度關係，面積包含兩個方向，所以必須平方比例尺。例如 1:100 的平面圖，1 平方公分代表 10000 平方公分，而不是 100 平方公分。",
+    "相似區域的塗料、紙張、地磚數量若單位用量相同，會與面積成正比。先求面積倍率，再計算材料。",
+    "由材料用量反推長度時，先求面積比，再取正平方根。不能直接把塗料比當周長比。",
+    "固定寬邊框不是按中心等比放大：長方形每邊外加 1 公尺後，長與寬的倍率通常不同，因此內外圖形不一定相似，需直接算面積差。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "比例尺面積關係",
+      "statement": "線性比例尺為 a:b 時，相似區域面積比為 a²:b²。"
+    },
+    {
+      "name": "材料正比模型",
+      "statement": "若厚度、覆蓋率與損耗率相同，材料用量與面積成正比。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "S₂/S₁=(L₂/L₁)²",
+      "conditions": [
+        "兩區域相似"
+      ],
+      "meaning": "由線性尺度求面積倍率。"
+    },
+    {
+      "formula": "用量₂=用量₁×S₂/S₁",
+      "conditions": [
+        "單位面積用量相同"
+      ],
+      "meaning": "由面積比推材料需求。"
+    },
+    {
+      "formula": "外框面積=外圖面積-內圖面積",
+      "conditions": [
+        "固定寬邊框不假設相似"
+      ],
+      "meaning": "直接求非相似邊框面積。"
+    }
+  ],
+  "nonApplicableCases": [
+    "比例尺的數字不能直接當面積倍率，必須平方。",
+    "單位面積用量不同時，材料量不只由面積比決定。",
+    "固定寬邊框通常不能用相似面積比。",
+    "面積單位換算也要平方，例如 1 m²=10000 cm²。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "判斷圖形是否相似，取得線性比。",
+      "check": "是等比縮放還是固定寬增加？"
+    },
+    {
+      "step": 2,
+      "instruction": "將線性比平方得到面積比。",
+      "check": "比例兩項都平方了嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "統一平方單位。",
+      "check": "m² 與 cm² 的換算是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "用面積比求面積、材料或成本。",
+      "check": "單位面積用量是否相同？"
+    },
+    {
+      "step": 5,
+      "instruction": "若不相似，改用直接面積公式。",
+      "check": "是否誤套相似公式？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "平面圖比例尺 1:200，一個相似區域圖上面積 30 平方公分，實際面積多少平方公尺？",
+      "solutionSteps": [
+        "面積倍率為 200²=40000。",
+        "實際面積=30×40000=1200000 平方公分。",
+        "除以 10000 得 120 平方公尺。"
+      ],
+      "answer": "120 平方公尺"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "相似牆面線性比小:大=3:5，小牆需 18 公升漆，覆蓋率相同，大牆需多少？",
+      "solutionSteps": [
+        "面積比小:大=9:25。",
+        "18:V=9:25。",
+        "V=50 公升。"
+      ],
+      "answer": "50 公升"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩相似標誌用料面積比為 49:81，較小標誌寬 70 公分，較大寬多少？",
+      "solutionSteps": [
+        "線性比小:大=7:9。",
+        "70:W=7:9。",
+        "W=90 公分。"
+      ],
+      "answer": "90 公分"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "4×6 公尺長方形步道外側增加 1 公尺等寬邊框，求邊框面積。",
+      "solutionSteps": [
+        "外長寬為 6×8 公尺。",
+        "外面積 48，內面積 24。",
+        "邊框面積=48-24=24 平方公尺。"
+      ],
+      "answer": "24 平方公尺"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "比例尺 1:200 的面積倍率寫 200。",
+      "why": "忘記面積有兩個方向。",
+      "correction": "使用 200²。"
+    },
+    {
+      "mistake": "1 平方公尺寫成 100 平方公分。",
+      "why": "只換算一次長度。",
+      "correction": "100²=10000 平方公分。"
+    },
+    {
+      "mistake": "塗料比直接開根號求塗料。",
+      "why": "混淆求線性量與求面積量。",
+      "correction": "塗料與面積同倍率；只有反求長度才開根號。"
+    },
+    {
+      "mistake": "固定寬邊框當相似放大。",
+      "why": "只看外形同為長方形。",
+      "correction": "比較長與寬倍率，通常不同，改算面積差。"
+    },
+    {
+      "mistake": "忽略不同損耗率。",
+      "why": "把材料用量視為純幾何量。",
+      "correction": "確認單位面積用量條件相同。"
+    }
+  ],
+  "selfCheck": [
+    "圖形確實相似嗎？",
+    "線性倍率是否平方？",
+    "平方單位換算正確嗎？",
+    "材料覆蓋條件相同嗎？",
+    "固定寬邊框是否改用面積差？"
+  ],
+  "summary": [
+    "相似面積按線性倍率平方變化。",
+    "比例尺面積倍率也要平方。",
+    "材料用量在覆蓋條件相同時與面積成正比。",
+    "固定寬邊框通常不是相似圖形。"
+  ],
+  "connections": {
+    "previous": "周長比應用處理一次尺度。",
+    "next": [
+      "相似形素養題會整合比例尺、周長、面積與材料限制。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s015-v001",
+      "u18-s015-v002",
+      "u18-s015-v003",
+      "u18-s015-v004",
+      "u18-s015-v005",
+      "u18-s015-v006",
+      "u18-s015-v007",
+      "u18-s015-v008",
+      "u18-s015-v009",
+      "u18-s015-v010",
+      "u18-s015-v011",
+      "u18-s015-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s015-cr001",
+      "u18-s015-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "逐例驗證線性倍率平方與平方單位換算；另以固定寬邊框作非相似反例，防止學生只因內外都是長方形便誤用面積比。"
+  },
+  "contentSha256": "1d25a874d0b7c425f6dba73719e8950176c33e8009c622ed6d095223ba1a0707"
+}

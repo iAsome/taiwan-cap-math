@@ -1,0 +1,257 @@
+{
+  "lectureId": "u14-s002-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-sequences",
+  "skillId": "arithmetic-sequence-nth",
+  "lockedTitle": "等差數列第 n 項",
+  "title": "等差數列第 n 項：從首項走 n−1 步",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認首項 a_1、公差 d 與項數 n。",
+    "能理解 a_n=a_1+(n-1)d 的由來。",
+    "能由已知項求另一項或回求項數。",
+    "能處理負公差與分數公差。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "sequence-pattern",
+      "title": "數列規律",
+      "requiredLevel": "能說明「數列規律」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "等差數列",
+      "definition": "任兩相鄰項的後項減前項皆相同的數列。"
+    },
+    {
+      "term": "首項",
+      "definition": "第1項，記作 a_1。"
+    },
+    {
+      "term": "公差",
+      "definition": "固定的相鄰差，記作 d。"
+    },
+    {
+      "term": "第 n 項",
+      "definition": "從首項經過 n-1 次公差後得到的項。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a_n",
+      "meaning": "第 n 項。"
+    },
+    {
+      "symbol": "d",
+      "meaning": "公差，d=a_{k+1}-a_k。"
+    },
+    {
+      "symbol": "n-1",
+      "meaning": "由第1項走到第n項的步數。"
+    }
+  ],
+  "conceptNarrative": [
+    "由第1項到第2項加一次 d，到第3項加兩次 d，因此到第n項共加 n-1 次 d。",
+    "公差可以是正數、0或負數；負公差表示數列逐項減少。",
+    "知道任一項 a_k 時，也可用 a_n=a_k+(n-k)d，直接計算位置差。",
+    "回求 n 時，所得 n 必須是正整數，否則目標值不是這個數列中的某一項。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等差數列",
+      "statement": "相鄰差固定的數列。"
+    },
+    {
+      "name": "通項公式",
+      "statement": "直接由位置 n 求項值的公式。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a_n=a_1+(n-1)d",
+      "conditions": [
+        "n為正整數",
+        "d為固定公差"
+      ],
+      "meaning": "首項加上n-1次公差。"
+    },
+    {
+      "formula": "a_n=a_k+(n-k)d",
+      "conditions": [
+        "已知第k項與公差"
+      ],
+      "meaning": "由已知位置跨到目標位置。"
+    }
+  ],
+  "nonApplicableCases": [
+    "相鄰差不固定時不可套公式。",
+    "把 n 當成步數會多加一次公差。",
+    "回求 n 得到非正整數時不能硬說是某一項。",
+    "題目只給兩個不相鄰項時，公差要除以位置差。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認數列等差",
+      "check": "至少核對相鄰差或題目明示。"
+    },
+    {
+      "step": 2,
+      "instruction": "標出 a_1、d、n",
+      "check": "負號與分數要保留。"
+    },
+    {
+      "step": 3,
+      "instruction": "代入 a_n=a_1+(n-1)d",
+      "check": "括號先處理。"
+    },
+    {
+      "step": 4,
+      "instruction": "若回求 n，解一元一次方程式",
+      "check": "檢查n為正整數。"
+    },
+    {
+      "step": 5,
+      "instruction": "把答案代回數列",
+      "check": "確認位置與項值。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "首項7、公差4，求第12項",
+      "reasoning": "a_1=7，d=4。",
+      "solutionSteps": [
+        "a_1=7，d=4。",
+        "a_12=7+11×4=51。"
+      ],
+      "answer": "51"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "20，17，14，… 求第9項",
+      "reasoning": "d=-3。",
+      "solutionSteps": [
+        "d=-3。",
+        "a_9=20+8×(-3)=-4。"
+      ],
+      "answer": "-4"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "a_5=18，d=6，求a_1",
+      "reasoning": "18=a_1+4×6。",
+      "solutionSteps": [
+        "18=a_1+4×6。",
+        "a_1=-6。"
+      ],
+      "answer": "-6"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "4，9，14，… 中64是第幾項",
+      "reasoning": "64=4+(n-1)5。",
+      "solutionSteps": [
+        "64=4+(n-1)5。",
+        "n-1=12，所以n=13。"
+      ],
+      "answer": "第13項"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "使用 nd 而不是(n-1)d",
+      "why": "首項不需先加公差。",
+      "correction": "畫出從1到n的間隔數。"
+    },
+    {
+      "mistake": "負公差漏括號",
+      "why": "減少數列會算錯符號。",
+      "correction": "代入時寫(n-1)×(-數)。"
+    },
+    {
+      "mistake": "兩項相差位置未計",
+      "why": "把總變化直接當公差。",
+      "correction": "公差=項值差÷項數位置差。"
+    },
+    {
+      "mistake": "回求n後不檢查整數",
+      "why": "項數只能是正整數。",
+      "correction": "驗證n的範圍與整數性。"
+    },
+    {
+      "mistake": "把a_n和n對調",
+      "why": "一個是項值，一個是位置。",
+      "correction": "寫完整方程式。"
+    },
+    {
+      "mistake": "未確認等差",
+      "why": "非等差數列公式不成立。",
+      "correction": "先看相鄰差。"
+    }
+  ],
+  "selfCheck": [
+    "從第1項到第n項是否只走n-1步？",
+    "公差的正負號是否正確？",
+    "使用不相鄰項時是否除以位置差？",
+    "回求的n是否為正整數？",
+    "代回後是否得到原題項值？"
+  ],
+  "summary": [
+    "等差通項是首項加上n-1個公差。",
+    "可從任一已知項跨越位置差。",
+    "負公差與分數公差同樣適用。",
+    "回求項數必須檢查正整數。"
+  ],
+  "connections": {
+    "previous": "承接數列規律中的固定相鄰差。",
+    "next": [
+      "下一技能會專門由不同已知條件求公差。",
+      "之後等差級數會把多個等差項相加。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s002-v001",
+      "u14-s002-v002",
+      "u14-s002-v003",
+      "u14-s002-v004",
+      "u14-s002-v005",
+      "u14-s002-v006",
+      "u14-s002-v007",
+      "u14-s002-v008",
+      "u14-s002-v009",
+      "u14-s002-v010",
+      "u14-s002-v011",
+      "u14-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s002-cr001",
+      "u14-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「等差數列第 n 項」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "fb3e1016fcf363e546faaacdeab3e4e26cdb746f378367ad58ea319b81b6e8c6"
+}

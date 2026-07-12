@@ -1,0 +1,201 @@
+{
+  "lectureId": "u04-s010-lecture-r1",
+  "unitId": "u04",
+  "numericUnitId": 4,
+  "topicId": "u04-system-apps",
+  "skillId": "system-ticket-price-problem",
+  "lockedSkillTitle": "票價問題",
+  "title": "票價問題：票數和收入是兩條不同資訊",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "exactSkillIdentity": {
+    "unitTitle": "二元一次聯立方程式",
+    "skillTitle": "票價問題",
+    "scope": "以票數總和與票價收入總和建立聯立方程式。"
+  },
+  "prerequisiteBridge": "先備技能 system-chicken-rabbit-problem 已建立必要基礎；本節將其用於「以票數總和與票價收入總和建立聯立方程式。」",
+  "learningGoals": [
+    "能正確定義兩種票的張數。",
+    "能列票數總和與票款總和。",
+    "能處理折扣票、贈票或退票的文字限制。",
+    "能檢查張數為非負整數與收入吻合。"
+  ],
+  "vocabulary": [
+    {
+      "term": "票種",
+      "definition": "具有不同單價的票，例如全票與學生票。"
+    },
+    {
+      "term": "售票張數",
+      "definition": "實際收費售出的張數。"
+    },
+    {
+      "term": "票款收入",
+      "definition": "各票種單價乘張數後相加。"
+    },
+    {
+      "term": "贈票",
+      "definition": "不收費但可能計入入場人數，需依題意區分。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x+y=N",
+      "meaning": "兩種售票張數總和。"
+    },
+    {
+      "symbol": "px+qy=R",
+      "meaning": "票價 p、q，總收入 R。"
+    }
+  ],
+  "conceptDevelopment": [
+    "張數方程式只計算張數；收入方程式必須乘上各自票價。",
+    "若有贈票，入場人數與售出票數可能不同，不能混在同一總數。",
+    "解出後可用平均票價檢查：總收入除以售票數應介於兩種票價之間。"
+  ],
+  "definitions": [
+    {
+      "name": "加權總收入",
+      "statement": "每種票價乘其張數後相加。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x+y=N，px+qy=R",
+      "conditions": [
+        "x、y 為非負整數；p、q 為每張價格。"
+      ],
+      "meaning": "標準兩票種模型。"
+    }
+  ],
+  "invalidUseCases": [
+    "不可把票價 p+q 當作每兩張票的固定收入，因票種比例未知。",
+    "贈票若不收費，不應列入票款收入。",
+    "退款或折扣必須依實際收費金額列式。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "instruction": "設兩票種張數",
+      "check": "附上票種名稱。"
+    },
+    {
+      "step": 2,
+      "instruction": "釐清總人數與售票數",
+      "check": "扣除贈票或工作人員。"
+    },
+    {
+      "step": 3,
+      "instruction": "列張數式",
+      "check": "只加張數。"
+    },
+    {
+      "step": 4,
+      "instruction": "列收入式",
+      "check": "單價乘張數。"
+    },
+    {
+      "step": 5,
+      "instruction": "求解並檢查",
+      "check": "張數整數、收入回算。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "全票 200 元、學生票 120 元，共售 50 張收入 7600 元。",
+      "solutionSteps": [
+        "x+y=50。",
+        "200x+120y=7600。",
+        "解得 x=20、y=30。"
+      ],
+      "answer": "全票 20、學生票 30。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "入場 100 人，其中 10 人持贈票；其餘為 300 元與 200 元票，共收入 22000 元。",
+      "solutionSteps": [
+        "售票數為 90。",
+        "x+y=90、300x+200y=22000。"
+      ],
+      "answer": "300 元票 40、200 元票 50。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "兩種票 150、90 元，售 40 張收入 4200 元。",
+      "solutionSteps": [
+        "平均票價 105 元，介於 90 與 150。",
+        "列式求解。"
+      ],
+      "answer": "150 元票 10、90 元票 30。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "若售 30 張且收入比全買便宜票多 600 元，票價差 50 元。",
+      "solutionSteps": [
+        "每張改為貴票增加 50。",
+        "貴票張數 600÷50=12。"
+      ],
+      "answer": "貴票 12、便宜票 18。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "收入式寫成 p+q=x+y",
+      "correction": "單位不相容。"
+    },
+    {
+      "mistake": "把入場人數全當售票數",
+      "correction": "需排除贈票。"
+    },
+    {
+      "mistake": "票價乘錯票種",
+      "correction": "變數定義要固定。"
+    },
+    {
+      "mistake": "解出張數小數仍接受",
+      "correction": "票張數通常須為整數。"
+    }
+  ],
+  "selfCheck": [
+    {
+      "prompt": "票數式是否含票價？",
+      "answer": "不含。"
+    },
+    {
+      "prompt": "收入式的單位？",
+      "answer": "元。"
+    },
+    {
+      "prompt": "有 5 張贈票要列收入嗎？",
+      "answer": "若免費則不列。"
+    },
+    {
+      "prompt": "平均票價可做什麼？",
+      "answer": "檢查資料與答案是否合理。"
+    }
+  ],
+  "summary": [
+    "張數總和與收入總和分開列。",
+    "贈票要區分人數和售票數。",
+    "票數需為非負整數。"
+  ],
+  "connections": {
+    "previous": "先備技能 system-chicken-rabbit-problem 已建立必要基礎；本節將其用於「以票數總和與票價收入總和建立聯立方程式。」",
+    "next": "下一技能「數量與總價問題」會延伸目前能力。"
+  },
+  "figureReferences": [],
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "lectureReview": {
+    "decision": "pass",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "skillSpecificEvidence": "所有例題均核對票數與收入，贈票案例明確排除免費票款；未假設題目未說明的手續費或稅。",
+    "reviewNote": "所有例題均核對票數與收入，贈票案例明確排除免費票款；未假設題目未說明的手續費或稅。",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "contentSha256": "52e310438f56734cd33907a0ca7ad4ed061eacec616f3a85d31222567a7981ca"
+}

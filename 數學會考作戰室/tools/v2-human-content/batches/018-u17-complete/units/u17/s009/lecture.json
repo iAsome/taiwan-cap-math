@@ -1,0 +1,234 @@
+{
+  "lectureId": "u17-s009-lecture-r1",
+  "unitId": "u17",
+  "numericUnitId": 17,
+  "topicId": "u17-parallel",
+  "skillId": "parallelogram-diagonal",
+  "lockedTitle": "平行四邊形對角線",
+  "title": "平行四邊形對角線：交點把每條對角線分成兩等段",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "prerequisiteBridge": "先備技能：parallelogram-opposite-sides。本節只使用該技能已建立的角度、平行或四邊形性質。",
+  "learningOutcomes": [
+    "辨認兩條對角線",
+    "運用對角線互相平分",
+    "由對角線互相平分判定平行四邊形"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "parallelogram-opposite-sides",
+      "requiredLevel": "能正確使用「parallelogram-opposite-sides」中的基本定義與直接性質，不需使用後續技能。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "對角線",
+      "definition": "連接一對不相鄰頂點的線段"
+    },
+    {
+      "term": "互相平分",
+      "definition": "交點同時是兩條線段的中點"
+    },
+    {
+      "term": "中點",
+      "definition": "把線段分成兩段等長的點"
+    },
+    {
+      "term": "交點O",
+      "definition": "常用來表示兩對角線交點"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直"
+    },
+    {
+      "symbol": "∠",
+      "meaning": "角；度數以°表示"
+    },
+    {
+      "symbol": "=",
+      "meaning": "數值或長度相等，不表示圖形必全等"
+    }
+  ],
+  "conceptNarrative": [
+    "ABCD的對角線是AC與BD，不是四條邊。",
+    "在平行四邊形中，若AC與BD交於O，則AO=OC且BO=OD。一般情況下不保證AC=BD，也不保證互相垂直。",
+    "反過來，若一個四邊形的兩條對角線互相平分，可判定它是平行四邊形。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "對角線",
+      "statement": "連接一對不相鄰頂點的線段"
+    },
+    {
+      "name": "互相平分",
+      "statement": "交點同時是兩條線段的中點"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AO=OC，BO=OD",
+      "conditions": [
+        "平行四邊形對角線互相平分"
+      ],
+      "meaning": "用於平行四邊形對角線中符合條件的推理或計算。"
+    },
+    {
+      "formula": "AO=OC且BO=OD ⇒ ABCD為平行四邊形",
+      "conditions": [
+        "O為兩對角線交點"
+      ],
+      "meaning": "用於平行四邊形對角線中符合條件的推理或計算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+    "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+    "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "畫出AC與BD並標交點O",
+      "check": "完成第1步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 2,
+      "instruction": "配對同一條對角線上的兩段",
+      "check": "完成第2步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 3,
+      "instruction": "只使用互相平分，不自行加上垂直或等長",
+      "check": "完成第3步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 4,
+      "instruction": "建立方程",
+      "check": "完成第4步後，確認未引入題目未給的條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "需要時用逆性質判定",
+      "check": "完成第5步後，確認未引入題目未給的條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "AO=7",
+      "solutionSteps": [
+        "OC=7，AC=14。"
+      ],
+      "answer": "OC=7，AC=14。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "BO=3x-2、OD=x+8",
+      "solutionSteps": [
+        "令相等得x=5。"
+      ],
+      "answer": "令相等得x=5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "AC=18",
+      "solutionSteps": [
+        "AO=OC=9。"
+      ],
+      "answer": "AO=OC=9。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "AO=OC且BO=OD",
+      "solutionSteps": [
+        "可判ABCD為平行四邊形。"
+      ],
+      "answer": "可判ABCD為平行四邊形。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把AO與BO設相等",
+      "why": "它們在不同對角線上",
+      "correction": "它們在不同對角線上"
+    },
+    {
+      "mistake": "認為兩對角線一定等長",
+      "why": "矩形才必有此附加性質",
+      "correction": "矩形才必有此附加性質"
+    },
+    {
+      "mistake": "認為一定垂直",
+      "why": "菱形才必有此附加性質",
+      "correction": "菱形才必有此附加性質"
+    },
+    {
+      "mistake": "只知AO=OC就判平行四邊形",
+      "why": "還需另一條也被平分",
+      "correction": "還需另一條也被平分"
+    },
+    {
+      "mistake": "忘記全長是兩段相加",
+      "why": "AC=AO+OC",
+      "correction": "AC=AO+OC"
+    }
+  ],
+  "selfCheck": [
+    "我能否不用目測，說明「平行四邊形對角線」所需的條件？",
+    "我是否先辨認角、邊、對角線、底或高的正確位置？",
+    "方程解出後是否代回題目真正所求？",
+    "角度、長度與面積單位是否正確？"
+  ],
+  "summary": [
+    "ABCD的對角線是AC與BD，不是四條邊。",
+    "AO=OC，BO=OD",
+    "解題時先確認「平行四邊形對角線互相平分」。"
+  ],
+  "connections": {
+    "previous": "承接parallelogram-opposite-sides。",
+    "next": "下一技能依鎖定順序為parallel-lines-distance。"
+  },
+  "figureReferences": [
+    "u17-s009-fig001"
+  ],
+  "figureAccessibility": "平行四邊形ABCD畫出AC與BD，交點O，半段用刻線配對。 圖形不一定按比例。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u17-s009-v001",
+      "u17-s009-v002",
+      "u17-s009-v003",
+      "u17-s009-v004",
+      "u17-s009-v005",
+      "u17-s009-v006",
+      "u17-s009-v007",
+      "u17-s009-v008",
+      "u17-s009-v009",
+      "u17-s009-v010",
+      "u17-s009-v011",
+      "u17-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u17-s009-cr001",
+      "u17-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "figureChecked": true,
+    "reviewNote": "講義明確區隔「互相平分」與「等長、垂直」三種不同的對角線性質。"
+  },
+  "contentSha256": "3c3e4cdbedc7184a162a73ffec65b45c7af296ba9763d63823afe626a47dd3db"
+}

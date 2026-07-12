@@ -1,0 +1,197 @@
+{
+  "lectureId": "u20-s009-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-centers",
+  "skillId": "orthocenter-basic",
+  "skillSlot": "s009",
+  "lockedSkillTitle": "垂心基本",
+  "title": "垂心基本：從頂點向對邊所在直線作高",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能完整說出高的兩項條件。",
+    "能辨認三高交點為垂心。",
+    "能處理直角與鈍角三角形中高的特殊位置。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "centroid",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「centroid」再進入本節。",
+  "glossary": [
+    {
+      "term": "高",
+      "definition": "通過頂點並垂直於對邊所在直線的線段或直線部分。"
+    },
+    {
+      "term": "垂足",
+      "definition": "垂線與對邊所在直線的交點。"
+    },
+    {
+      "term": "垂心",
+      "definition": "三條高所在直線的共同交點。"
+    },
+    {
+      "term": "延長線",
+      "definition": "把線段沿原方向向外延伸所得直線部分。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AH⊥BC",
+      "meaning": "AH與BC所在直線垂直。"
+    },
+    {
+      "symbol": "H",
+      "meaning": "可能表示垂足或垂心，必須依上下文辨認。"
+    }
+  ],
+  "conceptNarrative": [
+    "高必須同時通過頂點且垂直對邊。只有垂直而不通過頂點的線，可能是垂直平分線而不是高。",
+    "在鈍角三角形中，垂足可能落在對邊延長線；高仍然存在。把對邊只看成有限線段會造成『高消失』的錯覺。",
+    "直角三角形的兩股本身是兩條高，所以垂心就是直角頂點。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "垂心定義",
+      "statement": "三角形三條高所在直線的交點。"
+    },
+    {
+      "name": "位置分類",
+      "statement": "銳角垂心在內部，直角垂心在直角頂點，鈍角垂心在外部。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "頂點 + 對邊垂直 = 一條高",
+      "conditions": [
+        "必須通過指定頂點",
+        "垂直的是對邊所在直線"
+      ],
+      "meaning": "辨認高的雙重檢查。"
+    }
+  ],
+  "nonApplicableCases": [
+    "高不一定通過對邊中點。",
+    "鈍角三角形的高並未消失，只是需畫延長線。",
+    "交點在外部不能單獨證明是垂心，仍需確認三條線是高。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "選一個頂點。",
+      "check": "對邊是哪一條？"
+    },
+    {
+      "step": 2,
+      "instruction": "必要時延長對邊。",
+      "check": "垂足是否可能落在線段外？"
+    },
+    {
+      "step": 3,
+      "instruction": "過頂點作對邊的垂線。",
+      "check": "直角記號是否在正確交點？"
+    },
+    {
+      "step": 4,
+      "instruction": "作第二條高取交點。",
+      "check": "第三條高是否也通過？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "∠C=90°，垂心在哪？",
+      "solutionSteps": [
+        "AC⊥BC。",
+        "AC與BC分別是兩條高。"
+      ],
+      "answer": "垂心在C。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "鈍角三角形某高垂足在線段外。",
+      "solutionSteps": [
+        "延長對邊。",
+        "過頂點作垂線。"
+      ],
+      "answer": "該線仍是高。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "垂足不在邊上就說沒有高。",
+      "why": "高對準對邊所在直線。",
+      "correction": "畫延長線。"
+    },
+    {
+      "mistake": "通過邊中點的垂線當高。",
+      "why": "未檢查是否通過對面頂點。",
+      "correction": "先確認頂點。"
+    },
+    {
+      "mistake": "把直角外心與垂心混淆。",
+      "why": "兩個特殊位置不同。",
+      "correction": "垂心在直角頂點，外心在斜邊中點。"
+    }
+  ],
+  "selfCheck": [
+    "線是否通過頂點？",
+    "是否垂直對邊所在直線？",
+    "需要延長哪一邊？",
+    "角型與垂心位置是否一致？"
+  ],
+  "summary": [
+    "三高交於垂心。",
+    "高要通過頂點並垂直對邊所在直線。",
+    "鈍角時需延長邊，直角時垂心在直角頂點。"
+  ],
+  "connections": {
+    "previous": "先備：centroid",
+    "next": [
+      "下一技能深入使用外心的等距、半徑與位置性質。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u20-orthocenter-roof-01",
+    "fig-u20-altitude-marking-01"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s009-v001",
+      "u20-s009-v002",
+      "u20-s009-v003",
+      "u20-s009-v004",
+      "u20-s009-v005",
+      "u20-s009-v006",
+      "u20-s009-v007",
+      "u20-s009-v008",
+      "u20-s009-v009",
+      "u20-s009-v010",
+      "u20-s009-v011",
+      "u20-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s009-cr001",
+      "u20-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "範圍遵守鎖定要求，只處理垂心基本概念與位置，不延伸複雜垂心定理。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "57e545dcaa4c5fe1b31df45fb1b7ea2d80d366ab906781635ff9e7ac1706dc65"
+}

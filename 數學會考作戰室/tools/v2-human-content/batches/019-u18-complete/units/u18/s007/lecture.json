@@ -1,0 +1,258 @@
+{
+  "lectureId": "u18-s007-lecture-r1",
+  "unitId": "u18",
+  "numericUnitId": 18,
+  "topicId": "u18-similarity",
+  "skillId": "similarity-aa",
+  "lockedSkillOrder": 7,
+  "lockedSkillTitle": "AA 相似",
+  "title": "AA 相似：兩組角相等就能鎖定三角形形狀",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能說明為何兩組對應角相等足以判定三角形相似。",
+    "能由平行線、對頂角或三角形內角和找出兩組相等角。",
+    "能依 AA 判定寫出正確相似順序。",
+    "能在判定後使用對應邊比例求長度。"
+  ],
+  "prerequisiteBridge": {
+    "prerequisites": [
+      {
+        "skillId": "similar-triangles",
+        "title": "相似三角形",
+        "requiredLevel": "能運用「相似三角形」完成本節所需的基本判斷與計算，並能說明主要條件。"
+      }
+    ],
+    "bridgeExplanation": "本節承接「相似三角形」，先複習其核心判斷，再把方法推進到「AA 相似」。"
+  },
+  "glossary": [
+    {
+      "term": "AA 判定",
+      "definition": "兩三角形有兩組對應角相等時，兩三角形相似。"
+    },
+    {
+      "term": "對頂角",
+      "definition": "兩直線相交形成的相對角，角度相等。"
+    },
+    {
+      "term": "同位角",
+      "definition": "平行線被截線所截時，位於相同相對位置的角，角度相等。"
+    },
+    {
+      "term": "內錯角",
+      "definition": "平行線被截線所截時，位於兩平行線內側且分居截線兩側的角，角度相等。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∠A=∠D，∠B=∠E",
+      "meaning": "兩組對應角相等，可推出 △ABC∼△DEF。"
+    },
+    {
+      "symbol": "l∥m",
+      "meaning": "直線 l 與 m 平行，可用同位角或內錯角建立相等角。"
+    },
+    {
+      "symbol": "AA",
+      "meaning": "Angle-Angle，角角相似判定。"
+    }
+  ],
+  "conceptNarrative": [
+    "三角形內角和固定為 180°。因此兩組對應角相等時，第三組角也必然相等，三角形的形狀完全確定，只可能整體放大、縮小、旋轉或翻轉。",
+    "AA 判定最常見的角來源是平行線、共同角、對頂角與已知角度。必須在解答中說出角相等的理由，不能只寫『看圖可知』。",
+    "判定相似時，應按已證明的角配對排列頂點。例如 ∠A=∠D、∠B=∠E，則剩餘 C↔F，所以寫 △ABC∼△DEF。",
+    "AA 只需要角度條件，不需要先知道邊長比例；相似成立後，才可使用對應邊成比例。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "AA 相似判定",
+      "statement": "若兩三角形有兩組對應角分別相等，則兩三角形相似。"
+    },
+    {
+      "name": "第三角自動相等",
+      "statement": "兩組角相等時，利用內角和 180° 可得第三組角相等。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "∠A=∠D 且 ∠B=∠E ⇒ △ABC∼△DEF",
+      "conditions": [
+        "角的對應順序一致"
+      ],
+      "meaning": "AA 判定。"
+    },
+    {
+      "formula": "相似後 AB/DE=BC/EF=AC/DF",
+      "conditions": [
+        "已完成 AA 判定"
+      ],
+      "meaning": "利用相似求邊長。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只有一組角相等不足以判定相似。",
+    "兩個三角形各自有 90° 仍只是一組角，還需另一組角相等。",
+    "平行關係未給定或未證明時，不能宣稱同位角相等。",
+    "判定前不能先假設對應邊成比例作為理由，避免循環論證。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "在兩三角形中找第一組相等角並寫理由。",
+      "check": "是已知角、共同角、對頂角還是平行線角？"
+    },
+    {
+      "step": 2,
+      "instruction": "找第二組相等角並寫理由。",
+      "check": "理由是否獨立且成立？"
+    },
+    {
+      "step": 3,
+      "instruction": "依兩組角配對排列頂點。",
+      "check": "相似記號順序是否符合角配對？"
+    },
+    {
+      "step": 4,
+      "instruction": "寫出 AA 判定結論。",
+      "check": "是否先判定再用邊比？"
+    },
+    {
+      "step": 5,
+      "instruction": "若求長度，列正確對應邊比例。",
+      "check": "比例方向一致嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "在 △ABC 中，D 在 AB、E 在 AC，且 DE∥BC。證明 △ADE∼△ABC。",
+      "solutionSteps": [
+        "因 DE∥BC，∠ADE=∠ABC（同位角或內錯角）。",
+        "∠AED=∠ACB。",
+        "兩組角相等，所以 △ADE∼△ABC。"
+      ],
+      "answer": "由 AA 相似"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩直線 AC 與 BD 交於 O，若 ∠A=∠D，證明 △AOB∼△DOC。",
+      "solutionSteps": [
+        "∠AOB=∠DOC，因為是對頂角。",
+        "已知 ∠A=∠D。",
+        "由 AA 得 △AOB∼△DOC。"
+      ],
+      "answer": "△AOB∼△DOC"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "直角三角形 ABC 與 DEF 中，∠A=∠D=90°，∠B=35°、∠E=35°，判定是否相似。",
+      "solutionSteps": [
+        "兩組角分別相等。",
+        "因此第三組角也相等。",
+        "由 AA 判定相似。"
+      ],
+      "answer": "相似"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "△ABC∼△DEF 由 AA 判定，AB=4、DE=10、AC=6，求 DF。",
+      "solutionSteps": [
+        "AB/DE=AC/DF。",
+        "4/10=6/DF。",
+        "4DF=60，所以 DF=15。"
+      ],
+      "answer": "15"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只找到一組共同角就判相似。",
+      "why": "忽略 AA 需要兩組角。",
+      "correction": "再找平行線角、對頂角或利用已知角。"
+    },
+    {
+      "mistake": "把補角當成相等角。",
+      "why": "兩角和 180° 不代表兩角相等。",
+      "correction": "只有在各自與同一角互補時才可推得相等，並需說明。"
+    },
+    {
+      "mistake": "相似順序與角配對不一致。",
+      "why": "判定後隨意寫字母。",
+      "correction": "第一組配對放第一位，第二組放第二位。"
+    },
+    {
+      "mistake": "由圖看似平行就用內錯角。",
+      "why": "視覺取代條件。",
+      "correction": "確認有平行記號或已證明平行。"
+    },
+    {
+      "mistake": "用欲證的邊比例來證明 AA。",
+      "why": "循環論證。",
+      "correction": "AA 的理由只來自角度。"
+    }
+  ],
+  "selfCheck": [
+    "我有兩組相等角嗎？",
+    "每組角都有理由嗎？",
+    "是否誤把補角當相等？",
+    "相似順序與角配對一致嗎？",
+    "判定後才使用邊比嗎？"
+  ],
+  "summary": [
+    "AA：兩組對應角相等即可判定相似。",
+    "常見角來源是平行線、共同角與對頂角。",
+    "相似記號必須依角的配對順序。",
+    "不能只靠一組角或圖形外觀。"
+  ],
+  "connections": {
+    "previous": "相似三角形定義說明了對應角與對應邊。",
+    "next": [
+      "SAS 會用兩組邊比與夾角判定相似。",
+      "測高與影子問題常以 AA 建立相似。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u18-aa-q010",
+      "purpose": "協助辨認「AA 相似」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    },
+    {
+      "figureId": "u18-aa-cr001",
+      "purpose": "協助辨認「AA 相似」中的對應關係；圖不按比例時不得憑外觀猜答案。"
+    }
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u18-s007-v001",
+      "u18-s007-v002",
+      "u18-s007-v003",
+      "u18-s007-v004",
+      "u18-s007-v005",
+      "u18-s007-v006",
+      "u18-s007-v007",
+      "u18-s007-v008",
+      "u18-s007-v009",
+      "u18-s007-v010",
+      "u18-s007-v011",
+      "u18-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u18-s007-cr001",
+      "u18-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "reviewVersion": "human-lecture-review-r1.0",
+    "reviewedAt": "2026-07-12",
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capScopeCheck": "pass",
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "examplesIndividuallyChosen": true,
+    "reviewNote": "逐一核對角度來源與定理名稱，確保沒有將補角直接視為相等，也沒有在 AA 判定前預先使用相似邊比；四個例子涵蓋平行、對頂與直角。"
+  },
+  "contentSha256": "f8df901b9d3e22bd7e49ee2826c1080f2656fb55056d3d19d6b2386291a76f46"
+}

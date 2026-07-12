@@ -1,0 +1,224 @@
+{
+  "lectureId": "u13-s008-lecture-r1",
+  "unitId": "u13",
+  "numericUnitId": 13,
+  "topicId": "u13-solving",
+  "skillId": "quadratic-complete-square-basic",
+  "lockedOrder": 8,
+  "originalLockedTitle": "配方法基本",
+  "title": "首項係數為 1 的基本配方法",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能熟練補成 x²+2px+p²。",
+    "能在首項係數為 1 的方程式兩邊同步補數。",
+    "能把完成平方式與平方根解法連接。",
+    "能處理結果為無理數的根。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "quadratic-solve-by-factoring",
+      "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+    }
+  ],
+  "prerequisiteBridge": "承接整理後因式分解；當不能整數分解時，基本配方提供系統化方法。",
+  "glossary": [
+    {
+      "term": "基本配方",
+      "definition": "針對 x² 係數為 1 的二次式，補上一次項係數一半的平方。"
+    },
+    {
+      "term": "補數",
+      "definition": "為形成完全平方而加入的 (b/2)²。"
+    },
+    {
+      "term": "等價方程式",
+      "definition": "解集合完全相同的方程式。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x²+bx+(b/2)²=(x+b/2)²",
+      "meaning": "首項係數為 1 的配方規則。"
+    }
+  ],
+  "conceptNarrative": [
+    "本技能聚焦最常見且最容易失分的首項係數為 1 情況。",
+    "x 的係數可為正或負；先除以 2 再平方，因此補數永遠非負。",
+    "方程式兩邊同加補數，解集合不變。",
+    "完成平方後若右邊不是完全平方數，答案可保留根式。",
+    "配方也可用來比較兩個二次式是否等價。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "基本配方公式",
+      "statement": "x²+bx=(x+b/2)²-(b/2)²。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x²+bx+c=0 ⇒ (x+b/2)²=(b/2)²-c",
+      "conditions": [
+        "x² 係數為 1"
+      ],
+      "meaning": "直接得到平方形式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "x² 係數不為 1 時應先使用一般配方流程。",
+    "補數不是 b²，而是 (b/2)²。",
+    "只把左邊改寫但忘記常數調整會改變式值。",
+    "右邊負數時在實數範圍無解。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把常數移到右邊。",
+      "check": "左邊是否只剩 x²+bx？"
+    },
+    {
+      "step": 2,
+      "instruction": "計算 (b/2)²。",
+      "check": "負 b 平方後是否為正？"
+    },
+    {
+      "step": 3,
+      "instruction": "兩邊同加補數。",
+      "check": "等式是否保持平衡？"
+    },
+    {
+      "step": 4,
+      "instruction": "左邊寫成完全平方。",
+      "check": "中間項展開是否為 bx？"
+    },
+    {
+      "step": 5,
+      "instruction": "開平方並化簡。",
+      "check": "± 與根式是否完整？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "補成 x²+4x+□=(x+2)²。",
+      "solutionSteps": [
+        "4÷2=2，2²=4。"
+      ],
+      "answer": "□=4。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解 x²-6x+5=0。",
+      "solutionSteps": [
+        "x²-6x=-5，兩邊加 9。",
+        "(x-3)²=4。"
+      ],
+      "answer": "x=1 或 x=5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 x²+10x+9=0。",
+      "solutionSteps": [
+        "x²+10x=-9，兩邊加 25。",
+        "(x+5)²=16。"
+      ],
+      "answer": "x=-1 或 x=-9。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解 x²+6x+1=0。",
+      "solutionSteps": [
+        "(x+3)²=8。",
+        "x+3=±2√2。"
+      ],
+      "answer": "x=-3±2√2。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "x²-6x 補 -9。",
+      "why": "把一次項負號帶進平方結果。",
+      "correction": "(-3)²=9，補數為正。"
+    },
+    {
+      "mistake": "補數取 b²。",
+      "why": "忘記先除以 2。",
+      "correction": "使用 (b/2)²。"
+    },
+    {
+      "mistake": "兩邊補不同數。",
+      "why": "方程式不再等價。",
+      "correction": "同步加同一補數。"
+    },
+    {
+      "mistake": "完全平方括號符號寫反。",
+      "why": "中間項符號不符。",
+      "correction": "展開檢查 2px。"
+    },
+    {
+      "mistake": "根式 8 不化簡。",
+      "why": "答案不夠簡潔。",
+      "correction": "√8=2√2。"
+    },
+    {
+      "mistake": "只保留一個平方根。",
+      "why": "漏根。",
+      "correction": "使用 ±。"
+    }
+  ],
+  "selfCheck": [
+    "補數是否為 (b/2)²？",
+    "兩邊是否同步？",
+    "括號符號是否正確？",
+    "右邊是否先判正負？",
+    "根式是否化簡？"
+  ],
+  "summary": [
+    "首項係數為 1 時可直接取一次項係數的一半平方。",
+    "補數永遠非負。",
+    "完成平方後用平方根解法。",
+    "無理根保留最簡根式。"
+  ],
+  "connections": {
+    "previous": "承接整理後因式分解；當不能整數分解時，基本配方提供系統化方法。",
+    "next": [
+      "下一節整合判別式與平方形式判斷根個數。",
+      "公式解基本會提供另一種直接運算路徑。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u13-s008-v001",
+      "u13-s008-v002",
+      "u13-s008-v003",
+      "u13-s008-v004",
+      "u13-s008-v005",
+      "u13-s008-v006",
+      "u13-s008-v007",
+      "u13-s008-v008",
+      "u13-s008-v009",
+      "u13-s008-v010",
+      "u13-s008-v011",
+      "u13-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u13-s008-cr001",
+      "u13-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "reviewNote": "四例均重新展開完成平方式；確認 -6x 的補數為正 9、x²+10x+9 的兩根皆代回為 0，以及 √8 正確化為 2√2。",
+    "reviewVersion": "human-lecture-review-u13-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "fd8a5082ea5553d089e94e8384fee2b30fed26fc2f2b0d4dafb4ab747360ae08"
+}

@@ -1,0 +1,278 @@
+{
+  "lectureId": "u16-s007-lecture-r1",
+  "unitId": "u16",
+  "numericUnitId": 16,
+  "topicId": "u16-congruence",
+  "skillId": "equilateral-properties",
+  "skillOrder": 7,
+  "originalLockedTitle": "等邊三角形性質",
+  "title": "等邊三角形性質：三邊相等推得三角都是 60°",
+  "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能由三邊相等推出三個內角皆為 60°。",
+    "能由三個內角皆為 60°反推三邊相等。",
+    "能理解等邊三角形的中線、高線與角平分線重合。",
+    "能在分割、周長與角度問題中正確使用等邊性質。"
+  ],
+  "prerequisiteBridge": "等邊三角形可視為任選兩邊都相等的等腰三角形，因此等腰底角定理可輪流套用，得到三角相等。",
+  "prerequisites": [
+    {
+      "skillId": "isosceles-properties",
+      "requiredLevel": "能使用先備技能「等腰三角形性質」的核心定義與基本運算，並能說明其與本節的連結。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "等邊三角形",
+      "definition": "三邊皆相等的三角形。"
+    },
+    {
+      "term": "等角三角形",
+      "definition": "三個內角皆相等的三角形；在平面三角形中等同於等邊三角形。"
+    },
+    {
+      "term": "60°",
+      "definition": "三個相等內角平均分配 180° 所得角度。"
+    },
+    {
+      "term": "對稱軸",
+      "definition": "沿該直線翻折，圖形兩側可完全重合。"
+    },
+    {
+      "term": "三線合一",
+      "definition": "從任一頂點向對邊作的角平分線、中線與高線是同一線段。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AB=BC=CA",
+      "meaning": "△ABC 為等邊三角形。"
+    },
+    {
+      "symbol": "∠A=∠B=∠C=60°",
+      "meaning": "等邊三角形三內角相等且總和 180°。"
+    },
+    {
+      "symbol": "AD⊥BC、BD=DC、∠BAD=∠DAC",
+      "meaning": "從 A 到 BC 的對稱線同時是高線、中線與角平分線。"
+    }
+  ],
+  "conceptNarrative": [
+    "因 AB=AC，可得 ∠B=∠C；因 AB=BC，可得 ∠A=∠C，所以三角皆相等。",
+    "三角和為 180°，三角相等，因此每角為 60°。",
+    "逆向若三角皆 60°，任兩角相等便得其對邊相等，最後三邊皆相等。",
+    "從任何頂點向對邊作中線，在等邊三角形中同時也是高線與角平分線，整個圖形有三條對稱軸。",
+    "等邊三角形的三線合一不代表三條線互相重合；是每一個頂點各有一條合一線。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等邊三角形角度性質",
+      "statement": "等邊三角形三內角皆為 60°。"
+    },
+    {
+      "name": "逆性質",
+      "statement": "三角形若三內角皆為 60°，則為等邊三角形。"
+    },
+    {
+      "name": "等邊三線合一",
+      "statement": "由任一頂點連到對邊的中點所得線段，同時為高線與角平分線。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AB=BC=CA ⇒ ∠A=∠B=∠C=60°",
+      "conditions": [
+        "△ABC 存在"
+      ],
+      "meaning": "等邊推等角。"
+    },
+    {
+      "formula": "∠A=∠B=∠C=60° ⇒ AB=BC=CA",
+      "conditions": [
+        "同一三角形內"
+      ],
+      "meaning": "等角推等邊。"
+    },
+    {
+      "formula": "周長=3×邊長",
+      "conditions": [
+        "三邊皆相等"
+      ],
+      "meaning": "等邊三角形周長。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只有一個角為 60° 不能判定等邊。",
+    "兩邊相等且頂角 60° 可進一步推出等邊，但需說明底角也各 60°。",
+    "圖形看似正三角形但沒有相等標記或角度資料時不能判定。",
+    "三條中線不是同一條線，而是三條不同的對稱軸。",
+    "等邊性質不直接給出高度數值，除非搭配畢氏定理等先備工具。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認是由三邊相等還是三角相等出發。",
+      "check": "目前可用的是等邊推等角還是等角推等邊？"
+    },
+    {
+      "step": 2,
+      "instruction": "角度題直接寫每角 60°。",
+      "check": "是否真的已證明三邊相等？"
+    },
+    {
+      "step": 3,
+      "instruction": "若從某頂點畫到對邊中點，套用三線合一。",
+      "check": "可否同時得到垂直與平分角？"
+    },
+    {
+      "step": 4,
+      "instruction": "周長題以三倍邊長計算。",
+      "check": "單位是否一致？"
+    },
+    {
+      "step": 5,
+      "instruction": "分割後追蹤新增的小三角形性質。",
+      "check": "哪些線段相等是已知，哪些需由性質推出？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "△ABC 為等邊三角形，求 ∠A。",
+      "solutionSteps": [
+        "三角相等。",
+        "三角和 180°，所以每角 60°。"
+      ],
+      "answer": "60°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "一個三角形三角皆為 60°，可判定什麼？",
+      "solutionSteps": [
+        "任兩角相等，其對邊相等。",
+        "三組角皆相等，所以三邊皆相等。"
+      ],
+      "answer": "為等邊三角形。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "等邊 △ABC 中，D 為 BC 中點。說明 AD 的性質。",
+      "solutionSteps": [
+        "等邊也是以 AB=AC 的等腰三角形。",
+        "由頂角 A 連到底邊中點，三線合一。"
+      ],
+      "answer": "AD⊥BC 且 ∠BAD=∠DAC=30°。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "等邊三角形周長 27 公分，求邊長。",
+      "solutionSteps": [
+        "三邊相等。",
+        "27÷3=9。"
+      ],
+      "answer": "9 公分。"
+    },
+    {
+      "exampleId": "L5",
+      "prompt": "等腰三角形頂角為 60°，判斷是否等邊。",
+      "solutionSteps": [
+        "兩底角相等，和為 120°。",
+        "每個底角 60°，三角皆 60°。"
+      ],
+      "answer": "是等邊三角形。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把等邊三角形每角算成 90°。",
+      "why": "把三角形與正方形混淆。",
+      "correction": "180°÷3=60°。"
+    },
+    {
+      "mistake": "只見一角 60° 就判等邊。",
+      "why": "條件不足。",
+      "correction": "還需三邊相等、三角全相等，或等腰加頂角 60°等足夠條件。"
+    },
+    {
+      "mistake": "認為三線合一只有一條。",
+      "why": "只畫一個頂點。",
+      "correction": "每個頂點各有一條，共三條。"
+    },
+    {
+      "mistake": "周長除以 2。",
+      "why": "把等腰兩腰相等誤用到等邊。",
+      "correction": "等邊有三條相等邊，周長除以 3。"
+    },
+    {
+      "mistake": "把 60° 當外角。",
+      "why": "未辨認角的位置。",
+      "correction": "等邊三角形的 60° 指內角。"
+    },
+    {
+      "mistake": "未經證明使用對稱。",
+      "why": "僅依外觀。",
+      "correction": "先由三邊相等確定等邊，再使用其對稱性。"
+    }
+  ],
+  "selfCheck": [
+    "我能從三邊相等推出每角 60° 嗎？",
+    "我能從三角 60° 反推三邊相等嗎？",
+    "三線合一是每個頂點各有一條嗎？",
+    "周長計算是否除以 3？",
+    "我是否避免用單一 60° 判定等邊？"
+  ],
+  "summary": [
+    "等邊三角形三邊相等，三內角皆為 60°。",
+    "三角皆 60° 也能反推等邊。",
+    "每一頂點的角平分線、中線、高線重合。",
+    "周長為邊長的三倍。"
+  ],
+  "connections": {
+    "previous": "由等腰底角定理推出三角相等。",
+    "next": [
+      "尺規作圖會用等半徑圓弧構造等邊三角形。",
+      "三角形中線與高線將分別正式定義。"
+    ]
+  },
+  "figureReferences": [
+    "u16-fig-007-equilateral-properties"
+  ],
+  "accessibilityNotes": [
+    "u16-fig-007-equilateral-properties 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u16-s007-v001",
+      "u16-s007-v002",
+      "u16-s007-v003",
+      "u16-s007-v004",
+      "u16-s007-v005",
+      "u16-s007-v006",
+      "u16-s007-v007",
+      "u16-s007-v008",
+      "u16-s007-v009",
+      "u16-s007-v010",
+      "u16-s007-v011",
+      "u16-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u16-s007-cr001",
+      "u16-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "針對「等邊三角形性質」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+    "reviewVersion": "human-lecture-review-u16-r1.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "c72a6a57dfddf5b543b697530caa31c437d7e746ebc87ee8c33e7eb1755795b7"
+}
