@@ -1,0 +1,216 @@
+{
+  "lectureId": "u10-s013-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-literacy",
+  "skillId": "polynomial-literacy-context",
+  "lockedTitle": "多項式情境應用",
+  "title": "多項式情境應用：從量的關係建立式子",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能由面積、周長、成本與數量變化建立多項式。",
+    "能依情境進行加減、乘法或公式化簡。",
+    "能解釋係數、常數與變數範圍及單位。"
+  ],
+  "prerequisites": [
+    "formula-mixed-recognition"
+  ],
+  "prerequisiteBridge": "先備技能 formula-mixed-recognition 已建立下一步所需概念；本節專注於由面積、成本與變化情境建模、運算與解釋。",
+  "glossary": [
+    {
+      "term": "建模",
+      "definition": "用變數與運算表示情境中的數量關係。"
+    },
+    {
+      "term": "固定量",
+      "definition": "不隨變數改變，通常成為常數項。"
+    },
+    {
+      "term": "變動率",
+      "definition": "每增加一單位變數，總量改變的量，常成為係數。"
+    },
+    {
+      "term": "可行範圍",
+      "definition": "變數在情境中允許的數值範圍。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "C(x)=ax+b",
+      "meaning": "a 可表示每單位成本，b 表示固定成本。"
+    },
+    {
+      "symbol": "A=(x+p)(x+q)",
+      "meaning": "長方形兩邊為 x+p 與 x+q 時的面積。"
+    }
+  ],
+  "conceptNarrative": [
+    "情境式不是裝飾：每一項都應對應可說明的量。",
+    "面積常用乘法，合併區域常用加法，移除區域常用減法。",
+    "係數與常數必須帶回單位解釋。",
+    "代數上式子可對所有數計算，但長度、件數與天數通常有非負或整數限制。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "情境多項式",
+      "statement": "以多項式表示一個隨變數改變的實際量。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "總成本=固定成本+單位成本×數量",
+      "conditions": [
+        "數量符合情境範圍"
+      ],
+      "meaning": "形成一次多項式。"
+    },
+    {
+      "formula": "長方形面積=長×寬",
+      "conditions": [
+        "邊長為正"
+      ],
+      "meaning": "乘法展開可形成二次多項式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能忽略單位。",
+    "長度變數不可讓邊長成為負數或 0。",
+    "題目問增加量時不能誤答新總量。",
+    "不同量如公尺與平方公尺不能直接相加。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "定義變數與單位。",
+      "check": "完成此步後，確認內容仍符合「由面積、成本與變化情境建模、運算與解釋」。"
+    },
+    {
+      "step": 2,
+      "instruction": "逐句找固定量、每單位量與乘積關係。",
+      "check": "完成此步後，確認內容仍符合「由面積、成本與變化情境建模、運算與解釋」。"
+    },
+    {
+      "step": 3,
+      "instruction": "建立未化簡式。",
+      "check": "完成此步後，確認內容仍符合「由面積、成本與變化情境建模、運算與解釋」。"
+    },
+    {
+      "step": 4,
+      "instruction": "依需要展開與合併。",
+      "check": "完成此步後，確認內容仍符合「由面積、成本與變化情境建模、運算與解釋」。"
+    },
+    {
+      "step": 5,
+      "instruction": "回答所問量並檢查單位、範圍與合理性。",
+      "check": "完成此步後，確認內容仍符合「由面積、成本與變化情境建模、運算與解釋」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "每件材料 35 元，固定運費 80 元，買 x 件。",
+      "solutionSteps": [
+        "材料費 35x，加固定運費。"
+      ],
+      "answer": "C(x)=35x+80 元。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "長方形長 x+4 公尺、寬 x+1 公尺。",
+      "solutionSteps": [
+        "面積為兩邊乘積並展開。"
+      ],
+      "answer": "x²+5x+4 平方公尺。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "邊長 x 的正方形四周加寬 2 公尺。",
+      "solutionSteps": [
+        "新邊長 x+4；新增面積=(x+4)²-x²。"
+      ],
+      "answer": "8x+16 平方公尺。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把面積寫成長加寬",
+      "why": "混淆周長與面積",
+      "correction": "面積使用乘法。"
+    },
+    {
+      "mistake": "固定費也乘件數",
+      "why": "沒有分清固定量與變動量",
+      "correction": "固定費只加一次。"
+    },
+    {
+      "mistake": "答案不帶平方單位",
+      "why": "未辨認所求為面積",
+      "correction": "長度相乘得到平方單位。"
+    },
+    {
+      "mistake": "允許邊長為負",
+      "why": "只看代數未看情境",
+      "correction": "列出使每條邊為正的範圍。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能由面積、周長、成本與數量變化建立多項式？",
+    "我是否能能依情境進行加減、乘法或公式化簡？",
+    "我是否能能解釋係數、常數與變數範圍及單位？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "先定義變數與單位。",
+    "每一項都要能回到情境解釋。",
+    "面積用乘法，總量用加減。",
+    "最後檢查單位與可行範圍。"
+  ],
+  "connections": {
+    "previous": "上一技能 乘法公式辨認與應用 提供本節所需工具。",
+    "next": [
+      "U10 完成；後續單元可把多項式結果連結平方根與幾何距離，但本單元不提前使用未教內容。"
+    ]
+  },
+  "figureReferences": [
+    "u10-fig-garden-frame"
+  ],
+  "accessibility": {
+    "figureAltTextsRequired": true,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s013-v001",
+      "u10-s013-v002",
+      "u10-s013-v003",
+      "u10-s013-v004",
+      "u10-s013-v005",
+      "u10-s013-v006",
+      "u10-s013-v007",
+      "u10-s013-v008",
+      "u10-s013-v009",
+      "u10-s013-v010",
+      "u10-s013-v011",
+      "u10-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s013-cr001",
+      "u10-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「多項式情境應用：從量的關係建立式子」：定義、3 個例題、錯誤推理與下一技能銜接均針對 polynomial-literacy-context；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "77bd438b91bab7098e990c19a66fc515a0acaa2a69f72fad152bbdf00249b2c8"
+}

@@ -1,0 +1,209 @@
+{
+  "lectureId": "u10-s012-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-formulas",
+  "skillId": "formula-mixed-recognition",
+  "lockedTitle": "乘法公式辨認與應用",
+  "title": "乘法公式辨認與應用：先判結構再計算",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能在三種公式間正確辨認。",
+    "能處理 a、b 為單項式或整個式子的情況。",
+    "能透過補項、重組與連續運算快速化簡。"
+  ],
+  "prerequisites": [
+    "difference-of-squares-expand"
+  ],
+  "prerequisiteBridge": "先備技能 difference-of-squares-expand 已建立下一步所需概念；本節專注於依結構選公式並進行混合化簡與心算。",
+  "glossary": [
+    {
+      "term": "結構辨認",
+      "definition": "不依表面字母，而依括號、符號與相同部分選公式。"
+    },
+    {
+      "term": "整體代換",
+      "definition": "把較複雜的式子視為公式中的 a 或 b。"
+    },
+    {
+      "term": "混合化簡",
+      "definition": "連續使用公式、分配律與同類項合併。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(A+B)²",
+      "meaning": "A²+2AB+B²。"
+    },
+    {
+      "symbol": "(A−B)²",
+      "meaning": "A²−2AB+B²。"
+    },
+    {
+      "symbol": "(A+B)(A−B)",
+      "meaning": "A²−B²。"
+    }
+  ],
+  "conceptNarrative": [
+    "公式不是看到平方就套用；要看是整個和或差平方，還是兩個共軛因式相乘。",
+    "A、B 可以是 2x、x+1 等整體，但每一步平方與乘積都要完整。",
+    "有時先把數寫成基準±差即可快速心算。",
+    "混合題可用展開後的項數、首尾項與中間項符號做反向檢查。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "公式選擇",
+      "statement": "依括號外平方與兩因式符號關係，選和平方、差平方或平方差。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(A±B)²=A²±2AB+B²",
+      "conditions": [
+        "同一二項式整體平方"
+      ],
+      "meaning": "中間項保留。"
+    },
+    {
+      "formula": "(A+B)(A−B)=A²−B²",
+      "conditions": [
+        "共軛因式"
+      ],
+      "meaning": "中間項消失。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只依字母名稱判公式。",
+    "A 或 B 為多項式時不能只平方其中一項。",
+    "同號兩括號不是平方差。",
+    "公式後仍可能需要合併同類項。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出重複的整體部分。",
+      "check": "完成此步後，確認內容仍符合「依結構選公式並進行混合化簡與心算」。"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷是整體平方或共軛相乘。",
+      "check": "完成此步後，確認內容仍符合「依結構選公式並進行混合化簡與心算」。"
+    },
+    {
+      "step": 3,
+      "instruction": "指定 A、B 並先寫公式骨架。",
+      "check": "完成此步後，確認內容仍符合「依結構選公式並進行混合化簡與心算」。"
+    },
+    {
+      "step": 4,
+      "instruction": "完整計算 A²、2AB、B²。",
+      "check": "完成此步後，確認內容仍符合「依結構選公式並進行混合化簡與心算」。"
+    },
+    {
+      "step": 5,
+      "instruction": "合併並用展開或代入值驗算。",
+      "check": "完成此步後，確認內容仍符合「依結構選公式並進行混合化簡與心算」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "展開 (2x+5)²。",
+      "solutionSteps": [
+        "A=2x，B=5。"
+      ],
+      "answer": "4x²+20x+25。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "化簡 (x+3)²-(x-3)²。",
+      "solutionSteps": [
+        "分別展開後相減，或視為 U²−V²。"
+      ],
+      "answer": "12x。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "計算 1003×997。",
+      "solutionSteps": [
+        "(1000+3)(1000−3)。"
+      ],
+      "answer": "999991。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把所有兩括號都套平方差",
+      "why": "未檢查共軛",
+      "correction": "尾項需同大小反符號。"
+    },
+    {
+      "mistake": "A=x+1 時只寫 A²=x²+1",
+      "why": "對整體平方漏中間項",
+      "correction": "再套一次和平方。"
+    },
+    {
+      "mistake": "公式展開後不合併",
+      "why": "停在未完成形式",
+      "correction": "檢查是否有同類項。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能在三種公式間正確辨認？",
+    "我是否能能處理 a、b 為單項式或整個式子的情況？",
+    "我是否能能透過補項、重組與連續運算快速化簡？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "公式選擇看結構，不看字母。",
+    "整體 A、B 也要完整平方。",
+    "首尾項與中間項可用來反查。",
+    "混合題最後仍要化簡。"
+  ],
+  "connections": {
+    "previous": "上一技能 平方差公式 提供本節所需工具。",
+    "next": [
+      "最後一節把多項式放回面積、費用與數量變化中，重點是建模和解釋。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibility": {
+    "figureAltTextsRequired": false,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s012-v001",
+      "u10-s012-v002",
+      "u10-s012-v003",
+      "u10-s012-v004",
+      "u10-s012-v005",
+      "u10-s012-v006",
+      "u10-s012-v007",
+      "u10-s012-v008",
+      "u10-s012-v009",
+      "u10-s012-v010",
+      "u10-s012-v011",
+      "u10-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s012-cr001",
+      "u10-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「乘法公式辨認與應用：先判結構再計算」：定義、3 個例題、錯誤推理與下一技能銜接均針對 formula-mixed-recognition；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "ba7233eb4028ffbfbc18c4a1415143f974e34e62c23a998cb527eee156d10571"
+}

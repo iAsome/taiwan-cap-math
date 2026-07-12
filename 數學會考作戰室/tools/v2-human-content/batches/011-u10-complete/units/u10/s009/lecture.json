@@ -1,0 +1,196 @@
+{
+  "lectureId": "u10-s009-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-formulas",
+  "skillId": "square-sum-formula",
+  "lockedTitle": "和的平方公式",
+  "title": "和的平方公式：中間項是兩倍乘積",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能由二項式乘法推導和的平方公式。",
+    "能辨認 a、b 並正確寫出 2ab。",
+    "能用公式展開、求值與解讀正方形面積。"
+  ],
+  "prerequisites": [
+    "binomial-multiply-basic"
+  ],
+  "prerequisiteBridge": "先備技能 binomial-multiply-basic 已建立下一步所需概念；本節專注於理解並運用 (a+b)^2=a^2+2ab+b^2。",
+  "glossary": [
+    {
+      "term": "完全平方",
+      "definition": "某個式子乘自身所得的平方。"
+    },
+    {
+      "term": "兩倍乘積",
+      "definition": "公式中間項 2ab，來自兩個相同交叉乘積。"
+    },
+    {
+      "term": "平方項",
+      "definition": "a² 與 b²。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(a+b)²",
+      "meaning": "(a+b)(a+b)，不是 a²+b²。"
+    }
+  ],
+  "conceptNarrative": [
+    "(a+b)² 是兩個相同二項式相乘。",
+    "展開得到 a²+ab+ab+b²，因此中間項是 2ab。",
+    "公式可用於代數展開，也可快速計算接近整數的平方。",
+    "正方形邊長增加 b 後，新增面積包含兩條 ab 長方形與一個 b² 小正方形。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "和的平方公式",
+      "statement": "(a+b)²=a²+2ab+b²。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(a+b)²=a²+2ab+b²",
+      "conditions": [
+        "a、b 可為數或符合範圍的代數式"
+      ],
+      "meaning": "中間項符號為正。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能省略 2ab。",
+    "(a+b)² 不等於 a²+b²。",
+    "若括號內是三項，不能直接套二項公式。",
+    "a、b 本身若為多項式，平方與乘積仍須完整計算。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認括號中的第一部分 a 與第二部分 b。",
+      "check": "完成此步後，確認內容仍符合「理解並運用 (a+b)^2=a^2+2ab+b^2」。"
+    },
+    {
+      "step": 2,
+      "instruction": "算 a²。",
+      "check": "完成此步後，確認內容仍符合「理解並運用 (a+b)^2=a^2+2ab+b^2」。"
+    },
+    {
+      "step": 3,
+      "instruction": "算 2ab 並保留正號。",
+      "check": "完成此步後，確認內容仍符合「理解並運用 (a+b)^2=a^2+2ab+b^2」。"
+    },
+    {
+      "step": 4,
+      "instruction": "算 b²。",
+      "check": "完成此步後，確認內容仍符合「理解並運用 (a+b)^2=a^2+2ab+b^2」。"
+    },
+    {
+      "step": 5,
+      "instruction": "合併可能的同類項並驗查首尾平方。",
+      "check": "完成此步後，確認內容仍符合「理解並運用 (a+b)^2=a^2+2ab+b^2」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "展開 (x+5)²。",
+      "solutionSteps": [
+        "x²+2·x·5+25。"
+      ],
+      "answer": "x²+10x+25。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "展開 (2x+3)²。",
+      "solutionSteps": [
+        "(2x)²+2(2x)(3)+3²。"
+      ],
+      "answer": "4x²+12x+9。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "計算 103²。",
+      "solutionSteps": [
+        "(100+3)²=10000+600+9。"
+      ],
+      "answer": "10609。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "寫成 a²+b²",
+      "why": "漏掉兩個交叉乘積",
+      "correction": "由 (a+b)(a+b) 重展一次。"
+    },
+    {
+      "mistake": "把 (2x)² 寫成 2x²",
+      "why": "係數沒有平方",
+      "correction": "(2x)²=4x²。"
+    },
+    {
+      "mistake": "中間項寫 ab",
+      "why": "漏掉兩個相同交叉項",
+      "correction": "固定記為 2ab。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能由二項式乘法推導和的平方公式？",
+    "我是否能能辨認 a、b 並正確寫出 2ab？",
+    "我是否能能用公式展開、求值與解讀正方形面積？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "和的平方等於首平方加兩倍乘積加尾平方。",
+    "中間項一定是 +2ab。",
+    "係數與文字都要平方。",
+    "可用面積或雙重分配驗證公式。"
+  ],
+  "connections": {
+    "previous": "上一技能 二項式乘法 提供本節所需工具。",
+    "next": [
+      "下一節只改成差，但尾平方仍為正，中間項改為負。"
+    ]
+  },
+  "figureReferences": [
+    "u10-fig-square-sum-area"
+  ],
+  "accessibility": {
+    "figureAltTextsRequired": true,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s009-v001",
+      "u10-s009-v002",
+      "u10-s009-v003",
+      "u10-s009-v004",
+      "u10-s009-v005",
+      "u10-s009-v006",
+      "u10-s009-v007",
+      "u10-s009-v008",
+      "u10-s009-v009",
+      "u10-s009-v010",
+      "u10-s009-v011",
+      "u10-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s009-cr001",
+      "u10-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「和的平方公式：中間項是兩倍乘積」：定義、3 個例題、錯誤推理與下一技能銜接均針對 square-sum-formula；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "3cae3521d3707be4eeb7145f08e832588f27050ca1cc1f27fdb9f27165451cac"
+}

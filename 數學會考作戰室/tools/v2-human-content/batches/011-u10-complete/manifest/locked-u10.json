@@ -1,0 +1,156 @@
+{
+  "unitId": "u10",
+  "numericId": 10,
+  "title": "乘法公式與多項式",
+  "gradeBand": "8上",
+  "domain": "代數",
+  "description": "乘法公式、多項式四則。",
+  "coreGoal": "能展開、化簡多項式並套用公式。",
+  "capScopeNote": "除法只做單項式除法與基本商餘。",
+  "syllabusLockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+  "topics": [
+    {
+      "topicId": "u10-concepts",
+      "title": "多項式概念",
+      "order": 1,
+      "skills": [
+        {
+          "slot": "s001",
+          "skillId": "polynomial-terms",
+          "title": "多項式的項與係數",
+          "order": 1,
+          "prerequisiteSkillIds": []
+        },
+        {
+          "slot": "s002",
+          "skillId": "polynomial-evaluation",
+          "title": "多項式代入求值",
+          "order": 2,
+          "prerequisiteSkillIds": [
+            "polynomial-terms"
+          ]
+        },
+        {
+          "slot": "s003",
+          "skillId": "like-terms-combine",
+          "title": "同類項合併",
+          "order": 3,
+          "prerequisiteSkillIds": [
+            "polynomial-evaluation"
+          ]
+        },
+        {
+          "slot": "s004",
+          "skillId": "polynomial-degree-coefficient",
+          "title": "多項式次數與係數符號",
+          "order": 4,
+          "prerequisiteSkillIds": [
+            "like-terms-combine"
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "u10-operations",
+      "title": "多項式運算",
+      "order": 2,
+      "skills": [
+        {
+          "slot": "s005",
+          "skillId": "polynomial-add-subtract",
+          "title": "多項式加減",
+          "order": 5,
+          "prerequisiteSkillIds": [
+            "polynomial-degree-coefficient"
+          ]
+        },
+        {
+          "slot": "s006",
+          "skillId": "monomial-multiply",
+          "title": "單項式乘法",
+          "order": 6,
+          "prerequisiteSkillIds": [
+            "polynomial-add-subtract"
+          ]
+        },
+        {
+          "slot": "s007",
+          "skillId": "monomial-polynomial-distribute",
+          "title": "單項式乘多項式",
+          "order": 7,
+          "prerequisiteSkillIds": [
+            "monomial-multiply"
+          ]
+        },
+        {
+          "slot": "s008",
+          "skillId": "binomial-multiply-basic",
+          "title": "二項式乘法",
+          "order": 8,
+          "prerequisiteSkillIds": [
+            "monomial-polynomial-distribute"
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "u10-formulas",
+      "title": "乘法公式",
+      "order": 3,
+      "skills": [
+        {
+          "slot": "s009",
+          "skillId": "square-sum-formula",
+          "title": "和的平方公式",
+          "order": 9,
+          "prerequisiteSkillIds": [
+            "binomial-multiply-basic"
+          ]
+        },
+        {
+          "slot": "s010",
+          "skillId": "square-difference-formula",
+          "title": "差的平方公式",
+          "order": 10,
+          "prerequisiteSkillIds": [
+            "square-sum-formula"
+          ]
+        },
+        {
+          "slot": "s011",
+          "skillId": "difference-of-squares-expand",
+          "title": "平方差公式",
+          "order": 11,
+          "prerequisiteSkillIds": [
+            "square-difference-formula"
+          ]
+        },
+        {
+          "slot": "s012",
+          "skillId": "formula-mixed-recognition",
+          "title": "乘法公式辨認與應用",
+          "order": 12,
+          "prerequisiteSkillIds": [
+            "difference-of-squares-expand"
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "u10-literacy",
+      "title": "多項式素養",
+      "order": 4,
+      "skills": [
+        {
+          "slot": "s013",
+          "skillId": "polynomial-literacy-context",
+          "title": "多項式情境應用",
+          "order": 13,
+          "prerequisiteSkillIds": [
+            "formula-mixed-recognition"
+          ]
+        }
+      ]
+    }
+  ]
+}

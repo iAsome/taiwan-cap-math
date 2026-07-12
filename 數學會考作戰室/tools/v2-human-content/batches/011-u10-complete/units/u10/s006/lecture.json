@@ -1,0 +1,198 @@
+{
+  "lectureId": "u10-s006-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-operations",
+  "skillId": "monomial-multiply",
+  "lockedTitle": "單項式乘法",
+  "title": "單項式乘法：係數相乘，同底數指數相加",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能處理正負係數與分數係數的乘法。",
+    "能對每個同底數未知數使用指數相加。",
+    "能分辨乘法與同類項加法的規則。"
+  ],
+  "prerequisites": [
+    "polynomial-add-subtract"
+  ],
+  "prerequisiteBridge": "先備技能 polynomial-add-subtract 已建立下一步所需概念；本節專注於係數相乘並使用同底數指數相加。",
+  "glossary": [
+    {
+      "term": "單項式",
+      "definition": "數與未知數非負整數次方的乘積。"
+    },
+    {
+      "term": "同底數冪相乘",
+      "definition": "底數相同時保留底數並把指數相加。"
+    },
+    {
+      "term": "總次數",
+      "definition": "多個未知數單項式中各指數的和。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(3x²)(−2x³)",
+      "meaning": "係數 3×(−2)，x 的指數 2+3。"
+    },
+    {
+      "symbol": "x=x¹",
+      "meaning": "未標指數時指數為 1。"
+    }
+  ],
+  "conceptNarrative": [
+    "單項式相乘可分成「數字係數」與「各種文字」兩部分。",
+    "正負號先依有理數乘法判定。",
+    "x²·x³=x⁵ 是因為同底數相乘指數相加；不同底數如 x²y 則分別保留。",
+    "不要把加法的同類項規則混進乘法。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "單項式乘法",
+      "statement": "係數乘係數；每個同底數文字的指數相加。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(axᵐ)(bxⁿ)=abxᵐ⁺ⁿ",
+      "conditions": [
+        "m、n 為非負整數"
+      ],
+      "meaning": "同底數冪乘法。"
+    }
+  ],
+  "nonApplicableCases": [
+    "x²+x³ 不是乘法，不能寫 x⁵。",
+    "x²·y³ 底數不同，不能合成單一冪。",
+    "係數為負時不能漏負號。",
+    "0 乘任何單項式仍為 0。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先判斷結果正負。",
+      "check": "完成此步後，確認內容仍符合「係數相乘並使用同底數指數相加」。"
+    },
+    {
+      "step": 2,
+      "instruction": "相乘所有數字係數。",
+      "check": "完成此步後，確認內容仍符合「係數相乘並使用同底數指數相加」。"
+    },
+    {
+      "step": 3,
+      "instruction": "按未知數種類分類。",
+      "check": "完成此步後，確認內容仍符合「係數相乘並使用同底數指數相加」。"
+    },
+    {
+      "step": 4,
+      "instruction": "同底數指數相加。",
+      "check": "完成此步後，確認內容仍符合「係數相乘並使用同底數指數相加」。"
+    },
+    {
+      "step": 5,
+      "instruction": "整理標準次序並檢查總次數。",
+      "check": "完成此步後，確認內容仍符合「係數相乘並使用同底數指數相加」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "(4x²)(−3x)。",
+      "solutionSteps": [
+        "4×(-3)=-12；x²·x=x³。"
+      ],
+      "answer": "-12x³。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "(−2a²b)(5ab³)。",
+      "solutionSteps": [
+        "係數 -10；a³；b⁴。"
+      ],
+      "answer": "-10a³b⁴。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "(1/2 x³)(8x²)。",
+      "solutionSteps": [
+        "係數 4；指數 3+2。"
+      ],
+      "answer": "4x⁵。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 x²·x³ 寫成 x⁶",
+      "why": "誤把指數相乘",
+      "correction": "同底數相乘要指數相加。"
+    },
+    {
+      "mistake": "只乘係數未處理文字",
+      "why": "漏掉同底數冪法則",
+      "correction": "每種未知數都要整理。"
+    },
+    {
+      "mistake": "負負得負",
+      "why": "符號法則錯誤",
+      "correction": "兩個負因數相乘為正。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能處理正負係數與分數係數的乘法？",
+    "我是否能能對每個同底數未知數使用指數相加？",
+    "我是否能能分辨乘法與同類項加法的規則？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "係數相乘並先判符號。",
+    "同底數指數相加。",
+    "不同底數分別保留。",
+    "加法與乘法法則不可混用。"
+  ],
+  "connections": {
+    "previous": "上一技能 多項式加減 提供本節所需工具。",
+    "next": [
+      "下一節將單項式分配給括號內每一項。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibility": {
+    "figureAltTextsRequired": false,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s006-v001",
+      "u10-s006-v002",
+      "u10-s006-v003",
+      "u10-s006-v004",
+      "u10-s006-v005",
+      "u10-s006-v006",
+      "u10-s006-v007",
+      "u10-s006-v008",
+      "u10-s006-v009",
+      "u10-s006-v010",
+      "u10-s006-v011",
+      "u10-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s006-cr001",
+      "u10-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「單項式乘法：係數相乘，同底數指數相加」：定義、3 個例題、錯誤推理與下一技能銜接均針對 monomial-multiply；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "cd09ff585f0c9fad299725272c9bba829c59e31cc6cbd628b3462e65cf71f71b"
+}

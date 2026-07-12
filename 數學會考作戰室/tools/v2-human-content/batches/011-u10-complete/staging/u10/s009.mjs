@@ -1,0 +1,1639 @@
+// Deterministically emitted from reviewed immutable source. Do not edit.
+export default {
+  "lecture": {
+    "lectureId": "u10-s009-lecture-r1",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-formulas",
+    "skillId": "square-sum-formula",
+    "lockedTitle": "和的平方公式",
+    "title": "和的平方公式：中間項是兩倍乘積",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能由二項式乘法推導和的平方公式。",
+      "能辨認 a、b 並正確寫出 2ab。",
+      "能用公式展開、求值與解讀正方形面積。"
+    ],
+    "prerequisites": [
+      "binomial-multiply-basic"
+    ],
+    "prerequisiteBridge": "先備技能 binomial-multiply-basic 已建立下一步所需概念；本節專注於理解並運用 (a+b)^2=a^2+2ab+b^2。",
+    "glossary": [
+      {
+        "term": "完全平方",
+        "definition": "某個式子乘自身所得的平方。"
+      },
+      {
+        "term": "兩倍乘積",
+        "definition": "公式中間項 2ab，來自兩個相同交叉乘積。"
+      },
+      {
+        "term": "平方項",
+        "definition": "a² 與 b²。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "(a+b)²",
+        "meaning": "(a+b)(a+b)，不是 a²+b²。"
+      }
+    ],
+    "conceptNarrative": [
+      "(a+b)² 是兩個相同二項式相乘。",
+      "展開得到 a²+ab+ab+b²，因此中間項是 2ab。",
+      "公式可用於代數展開，也可快速計算接近整數的平方。",
+      "正方形邊長增加 b 後，新增面積包含兩條 ab 長方形與一個 b² 小正方形。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "和的平方公式",
+        "statement": "(a+b)²=a²+2ab+b²。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "(a+b)²=a²+2ab+b²",
+        "conditions": [
+          "a、b 可為數或符合範圍的代數式"
+        ],
+        "meaning": "中間項符號為正。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能省略 2ab。",
+      "(a+b)² 不等於 a²+b²。",
+      "若括號內是三項，不能直接套二項公式。",
+      "a、b 本身若為多項式，平方與乘積仍須完整計算。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "辨認括號中的第一部分 a 與第二部分 b。",
+        "check": "完成此步後，確認內容仍符合「理解並運用 (a+b)^2=a^2+2ab+b^2」。"
+      },
+      {
+        "step": 2,
+        "instruction": "算 a²。",
+        "check": "完成此步後，確認內容仍符合「理解並運用 (a+b)^2=a^2+2ab+b^2」。"
+      },
+      {
+        "step": 3,
+        "instruction": "算 2ab 並保留正號。",
+        "check": "完成此步後，確認內容仍符合「理解並運用 (a+b)^2=a^2+2ab+b^2」。"
+      },
+      {
+        "step": 4,
+        "instruction": "算 b²。",
+        "check": "完成此步後，確認內容仍符合「理解並運用 (a+b)^2=a^2+2ab+b^2」。"
+      },
+      {
+        "step": 5,
+        "instruction": "合併可能的同類項並驗查首尾平方。",
+        "check": "完成此步後，確認內容仍符合「理解並運用 (a+b)^2=a^2+2ab+b^2」。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "展開 (x+5)²。",
+        "solutionSteps": [
+          "x²+2·x·5+25。"
+        ],
+        "answer": "x²+10x+25。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "展開 (2x+3)²。",
+        "solutionSteps": [
+          "(2x)²+2(2x)(3)+3²。"
+        ],
+        "answer": "4x²+12x+9。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "計算 103²。",
+        "solutionSteps": [
+          "(100+3)²=10000+600+9。"
+        ],
+        "answer": "10609。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "寫成 a²+b²",
+        "why": "漏掉兩個交叉乘積",
+        "correction": "由 (a+b)(a+b) 重展一次。"
+      },
+      {
+        "mistake": "把 (2x)² 寫成 2x²",
+        "why": "係數沒有平方",
+        "correction": "(2x)²=4x²。"
+      },
+      {
+        "mistake": "中間項寫 ab",
+        "why": "漏掉兩個相同交叉項",
+        "correction": "固定記為 2ab。"
+      }
+    ],
+    "selfCheck": [
+      "我是否能能由二項式乘法推導和的平方公式？",
+      "我是否能能辨認 a、b 並正確寫出 2ab？",
+      "我是否能能用公式展開、求值與解讀正方形面積？",
+      "我是否檢查了負號、括號、指數與題目所問的量？"
+    ],
+    "summary": [
+      "和的平方等於首平方加兩倍乘積加尾平方。",
+      "中間項一定是 +2ab。",
+      "係數與文字都要平方。",
+      "可用面積或雙重分配驗證公式。"
+    ],
+    "connections": {
+      "previous": "上一技能 二項式乘法 提供本節所需工具。",
+      "next": [
+        "下一節只改成差，但尾平方仍為正，中間項改為負。"
+      ]
+    },
+    "figureReferences": [
+      "u10-fig-square-sum-area"
+    ],
+    "accessibility": {
+      "figureAltTextsRequired": true,
+      "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+    },
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u10-s009-v001",
+        "u10-s009-v002",
+        "u10-s009-v003",
+        "u10-s009-v004",
+        "u10-s009-v005",
+        "u10-s009-v006",
+        "u10-s009-v007",
+        "u10-s009-v008",
+        "u10-s009-v009",
+        "u10-s009-v010",
+        "u10-s009-v011",
+        "u10-s009-v012"
+      ],
+      "constructedResponseIds": [
+        "u10-s009-cr001",
+        "u10-s009-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP only",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐段重讀「和的平方公式：中間項是兩倍乘積」：定義、3 個例題、錯誤推理與下一技能銜接均針對 square-sum-formula；另逐項檢查負號、係數、指數、括號和條件。",
+      "reviewVersion": "human-lecture-review-u10-r1",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "3cae3521d3707be4eeb7145f08e832588f27050ca1cc1f27fdb9f27165451cac"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u10-s009-v001",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "邊長為 x+3 的正方形分成一個 x×x 正方形、兩個 x×3 長方形與一個 3×3 正方形。兩個長方形的總面積是多少？",
+      "givenConditions": [
+        "正方形邊長x+3",
+        "兩個長方形尺寸皆為x×3"
+      ],
+      "target": "由幾何分割辨認和的平方中間項",
+      "choices": [
+        "6x",
+        "3x",
+        "x²+6x",
+        "9"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "每個長方形面積為3x，兩個合計6x；這正是 (x+3)² 展開式的中間項。",
+        "derivedChoice": "6x",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "先求一個 x×3 長方形面積，再乘以2。",
+      "steps": [
+        "求一個x×3長方形面積3x。",
+        "兩個相同長方形合計6x。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6x",
+          "truth": true,
+          "reason": "兩個3x區塊合計6x。"
+        },
+        {
+          "choice": "3x",
+          "truth": false,
+          "reason": "3x只算一個長方形。"
+        },
+        {
+          "choice": "x²+6x",
+          "truth": false,
+          "reason": "x²+6x多算中央正方形。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "9是小正方形面積。"
+        }
+      ],
+      "misconceptionTarget": "只計一個交叉區塊，忘記中間項有兩份。",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "只問兩個長方形的合計。",
+      "boundaryAudit": "只問兩個長方形的合計。",
+      "difficultyReason": "基礎：用幾何分割理解和的平方中間項。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v001-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "19d5883c82e9d735c2b3df19d00bd51015344873996eaa1fae3a6e1c8a0d64b9"
+    },
+    {
+      "questionId": "u10-s009-v002",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "下列哪一個等於 (a+b)²？",
+      "givenConditions": [],
+      "target": "辨認和平方公式",
+      "choices": [
+        "a²+b²",
+        "a²+ab+b²",
+        "2a²+2b²",
+        "a²+2ab+b²"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "由 (a+b)(a+b) 展開得 a²+2ab+b²。",
+        "derivedChoice": "a²+2ab+b²",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "兩個交叉項合為 2ab。",
+      "steps": [
+        "由 (a+b)(a+b) 展開得 a²+2ab+b²。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "a²+b²",
+          "truth": false,
+          "reason": "漏兩個交叉項。"
+        },
+        {
+          "choice": "a²+ab+b²",
+          "truth": false,
+          "reason": "只保留一個交叉項。"
+        },
+        {
+          "choice": "2a²+2b²",
+          "truth": false,
+          "reason": "把平方項都乘 2。"
+        },
+        {
+          "choice": "a²+2ab+b²",
+          "truth": true,
+          "reason": "公式正確。"
+        }
+      ],
+      "misconceptionTarget": "公式中間項係數錯",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「辨認和平方公式」且四個選項以同一表示層級作答；逐項重算後只有「a²+2ab+b²」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "基礎：辨認和平方公式，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v002-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b198cd797c942e77f0cc0667138c4f505f513d5bf5ed932b3e006cdbcdcd25fb"
+    },
+    {
+      "questionId": "u10-s009-v003",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "展開 (2x+1)²。",
+      "givenConditions": [],
+      "target": "含係數和平方",
+      "choices": [
+        "2x²+4x+1",
+        "4x²+4x+1",
+        "4x²+2x+1",
+        "4x²+1"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "(2x)²+2(2x)(1)+1²=4x²+4x+1。",
+        "derivedChoice": "4x²+4x+1",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "首項係數也要平方。",
+      "steps": [
+        "(2x)²+2(2x)(1)+1²=4x²+4x+1。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2x²+4x+1",
+          "truth": false,
+          "reason": "首項係數未平方。"
+        },
+        {
+          "choice": "4x²+4x+1",
+          "truth": true,
+          "reason": "首項係數也要平方。"
+        },
+        {
+          "choice": "4x²+2x+1",
+          "truth": false,
+          "reason": "中間項漏乘 2。"
+        },
+        {
+          "choice": "4x²+1",
+          "truth": false,
+          "reason": "漏中間項。"
+        }
+      ],
+      "misconceptionTarget": "係數平方或中間項錯",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「含係數和平方」且四個選項以同一表示層級作答；逐項重算後只有「4x²+4x+1」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "基礎：含係數和平方，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v003-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "8cf8ae0d1b959de46232e6a5f5e4b2d4ffc45c500328e2836bd7e55a980ee4ac"
+    },
+    {
+      "questionId": "u10-s009-v004",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "在 (3x+4)² 的展開式中，x 項係數是多少？",
+      "givenConditions": [],
+      "target": "由和平方讀取中間係數",
+      "choices": [
+        "12",
+        "9",
+        "24",
+        "16"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "(3x+4)²=9x²+24x+16，所以 x 項係數為 24。",
+        "derivedChoice": "24",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "本題只要求讀取展開後的一次項係數。",
+      "steps": [
+        "(3x+4)²=9x²+24x+16，所以 x 項係數為 24。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "只算一個交叉乘積 3×4。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "9 是二次項係數。"
+        },
+        {
+          "choice": "24",
+          "truth": true,
+          "reason": "兩個交叉乘積合為 24x，正確。"
+        },
+        {
+          "choice": "16",
+          "truth": false,
+          "reason": "16 是常數項。"
+        }
+      ],
+      "misconceptionTarget": "展開後把不同項的係數混淆",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「由和平方讀取中間係數」且四個選項以同一表示層級作答；逐項重算後只有「24」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "標準：由和平方讀取中間係數，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v004-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9f4417c7c50cd6150d2ff5f26ea3a91df7d95a1f195e810fae01be1e8a7aa517"
+    },
+    {
+      "questionId": "u10-s009-v005",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "若 (x+k)²=x²+14x+49，則 k 為何？",
+      "givenConditions": [],
+      "target": "由展開式反求尾數",
+      "choices": [
+        "5",
+        "6",
+        "14",
+        "7"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "比較中間項 2k=14 得 k=7，且 k²=49 驗證。",
+        "derivedChoice": "7",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "同時用中間與常數項確認。",
+      "steps": [
+        "比較中間項 2k=14 得 k=7，且 k²=49 驗證。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "中間項為 10x。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "中間項為 12x。"
+        },
+        {
+          "choice": "14",
+          "truth": false,
+          "reason": "把 2k 直接當 k。"
+        },
+        {
+          "choice": "7",
+          "truth": true,
+          "reason": "k=7 正確。"
+        }
+      ],
+      "misconceptionTarget": "反向比較公式係數錯",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「由展開式反求尾數」且四個選項以同一表示層級作答；逐項重算後只有「7」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "標準：由展開式反求尾數，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v005-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "2fc7462fcfa891fff54db32ec75eaa4c0e917875830757f15c11a96d4dfd6d57"
+    },
+    {
+      "questionId": "u10-s009-v006",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "計算 102²。",
+      "givenConditions": [],
+      "target": "和平方數值心算",
+      "choices": [
+        "10404",
+        "10204",
+        "10004",
+        "10400"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "102²=(100+2)²=10000+400+4=10404。",
+        "derivedChoice": "10404",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "用基準 100 套和平方。",
+      "steps": [
+        "102²=(100+2)²=10000+400+4=10404。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10404",
+          "truth": true,
+          "reason": "10404 正確。"
+        },
+        {
+          "choice": "10204",
+          "truth": false,
+          "reason": "漏兩倍乘積的一部分。"
+        },
+        {
+          "choice": "10004",
+          "truth": false,
+          "reason": "完全漏中間項。"
+        },
+        {
+          "choice": "10400",
+          "truth": false,
+          "reason": "漏尾平方 4。"
+        }
+      ],
+      "misconceptionTarget": "心算時漏中間項或尾平方",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「和平方數值心算」且四個選項以同一表示層級作答；逐項重算後只有「10404」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "標準：和平方數值心算，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v006-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "47f58e7ccb37d135d97dde7a2b072d01a9accf968474e1452da298591fdfa98a"
+    },
+    {
+      "questionId": "u10-s009-v007",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "化簡 (x+2)²+(x-2)²。",
+      "givenConditions": [],
+      "target": "兩平方和化簡",
+      "choices": [
+        "2x²+8x+8",
+        "2x²+8",
+        "x²+4",
+        "2x²-8"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "兩式分別為 x²±4x+4，相加時一次項抵消，得 2x²+8。",
+        "derivedChoice": "2x²+8",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "同時運用和平方與差平方。",
+      "steps": [
+        "兩式分別為 x²±4x+4，相加時一次項抵消，得 2x²+8。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2x²+8x+8",
+          "truth": false,
+          "reason": "一次項誤相加。"
+        },
+        {
+          "choice": "2x²+8",
+          "truth": true,
+          "reason": "2x²+8 正確。"
+        },
+        {
+          "choice": "x²+4",
+          "truth": false,
+          "reason": "只算一式。"
+        },
+        {
+          "choice": "2x²-8",
+          "truth": false,
+          "reason": "常數符號錯。"
+        }
+      ],
+      "misconceptionTarget": "展開後未看到中間項抵消",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「兩平方和化簡」且四個選項以同一表示層級作答；逐項重算後只有「2x²+8」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "進階：兩平方和化簡，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v007-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6b9a1e65430580b738c561cbaf360d5aff0b184880baaf0de7d3d6b708cfe8aa"
+    },
+    {
+      "questionId": "u10-s009-v008",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "若 (ax+2)²=9x²+12x+4，則 a 為何？",
+      "givenConditions": [],
+      "target": "由完整公式決定係數符號",
+      "choices": [
+        "-3",
+        "2",
+        "3",
+        "6"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "a²=9 且 4a=12，第二條給 a=3，並符合 a²=9。",
+        "derivedChoice": "3",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "須同時檢查首項與中間項，排除 a=-3。",
+      "steps": [
+        "a²=9 且 4a=12，第二條給 a=3，並符合 a²=9。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-3",
+          "truth": false,
+          "reason": "a=-3 會使中間項 -12x。"
+        },
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "a=2 首項與中間項皆不符。"
+        },
+        {
+          "choice": "3",
+          "truth": true,
+          "reason": "a=3 正確。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "a=6 首項 36x²。"
+        }
+      ],
+      "misconceptionTarget": "只由平方項得到正負兩解而未查中間項",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「由完整公式決定係數符號」且四個選項以同一表示層級作答；逐項重算後只有「3」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "進階：由完整公式決定係數符號，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v008-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b6bfc01628aaf0d28035814666c62f0ae4eb2c748d3d57f065049012223fe6de"
+    },
+    {
+      "questionId": "u10-s009-v009",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "(x+y+2)² 可把哪一個整體視為公式中的 a？",
+      "givenConditions": [],
+      "target": "整體代換辨認",
+      "choices": [
+        "x",
+        "y",
+        "x+y",
+        "2x+2y"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "將 x+y 視為整體 A，式子為 (A+2)²。",
+        "derivedChoice": "x+y",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "公式中的 a 可以是一個完整多項式。",
+      "steps": [
+        "將 x+y 視為整體 A，式子為 (A+2)²。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x",
+          "truth": false,
+          "reason": "只取 x 會漏 y。"
+        },
+        {
+          "choice": "y",
+          "truth": false,
+          "reason": "只取 y 會漏 x。"
+        },
+        {
+          "choice": "x+y",
+          "truth": true,
+          "reason": "x+y 正確。"
+        },
+        {
+          "choice": "2x+2y",
+          "truth": false,
+          "reason": "這是展開後部分，不是原括號第一整體。"
+        }
+      ],
+      "misconceptionTarget": "不會把多項式視為公式整體",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「整體代換辨認」且四個選項以同一表示層級作答；逐項重算後只有「x+y」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "進階：整體代換辨認，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v009-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4e16e2f9dfafaac330b35c5eae1308f024f17f1c5f16e41d16884f3420a47ee0"
+    },
+    {
+      "questionId": "u10-s009-v010",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "正方形邊長由 x 公尺增加 4 公尺，新面積為何？",
+      "givenConditions": [],
+      "target": "邊長增加後的新面積",
+      "choices": [
+        "x²+4x+16 平方公尺",
+        "x²+8x+16 平方公尺",
+        "x²+16 平方公尺",
+        "2x²+8x+16 平方公尺"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "新邊長 x+4，所以面積 (x+4)²=x²+8x+16。",
+        "derivedChoice": "x²+8x+16 平方公尺",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "增加後整條邊平方，中間項對應兩條 4x 長方形。",
+      "steps": [
+        "新邊長 x+4，所以面積 (x+4)²=x²+8x+16。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x²+4x+16 平方公尺",
+          "truth": false,
+          "reason": "中間項漏一倍。"
+        },
+        {
+          "choice": "x²+8x+16 平方公尺",
+          "truth": true,
+          "reason": "增加後整條邊平方，中間項對應兩條 4x 長方形。"
+        },
+        {
+          "choice": "x²+16 平方公尺",
+          "truth": false,
+          "reason": "漏兩個交叉區域。"
+        },
+        {
+          "choice": "2x²+8x+16 平方公尺",
+          "truth": false,
+          "reason": "首面積重複。"
+        }
+      ],
+      "misconceptionTarget": "把邊長增加量直接加到面積",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "邊長為公尺，面積為平方公尺。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「邊長增加後的新面積」且四個選項以同一表示層級作答；逐項重算後只有「x²+8x+16 平方公尺」成立。",
+      "boundaryAudit": "x>0。",
+      "difficultyReason": "素養：邊長增加後的新面積，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "邊長增加與正方形面積的幾何關係決定使用和平方，並產生平方單位。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v010-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "34b4549f49194c6fa1ecad82f509626377e40f74aa553ba30dd528e873871a29"
+    },
+    {
+      "questionId": "u10-s009-v011",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "一個 50 公分見方的正方形展示板，每邊再加長 3 公分。新面積是多少？",
+      "givenConditions": [],
+      "target": "具體尺寸和平方",
+      "choices": [
+        "2809 平方公分",
+        "2509 平方公分",
+        "2650 平方公分",
+        "2800 平方公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "新邊長 53，面積 53²=(50+3)²=2500+300+9=2809。",
+        "derivedChoice": "2809 平方公分",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "用和平方精確計算。",
+      "steps": [
+        "新邊長 53，面積 53²=(50+3)²=2500+300+9=2809。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2809 平方公分",
+          "truth": true,
+          "reason": "2809 正確。"
+        },
+        {
+          "choice": "2509 平方公分",
+          "truth": false,
+          "reason": "漏大部分增加面積。"
+        },
+        {
+          "choice": "2650 平方公分",
+          "truth": false,
+          "reason": "只加兩條 50×3。"
+        },
+        {
+          "choice": "2800 平方公分",
+          "truth": false,
+          "reason": "漏 3²。"
+        }
+      ],
+      "misconceptionTarget": "新增面積組成不完整",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "公分×公分=平方公分。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「具體尺寸和平方」且四個選項以同一表示層級作答；逐項重算後只有「2809 平方公分」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "素養：具體尺寸和平方，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "展示板加長每邊後需先求新邊長再求面積，不能只加 3。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s009-v011-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3b272e42bba4ef222d50f3693d28660e8ea6e5490621d5ccabb2fd2a55ba8608"
+    },
+    {
+      "questionId": "u10-s009-v012",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "圖中大正方形邊長為 x+3，由 x²、兩個 3x 長方形與一個小正方形組成。小正方形面積為何？",
+      "givenConditions": [],
+      "target": "用面積圖理解尾平方",
+      "choices": [
+        "3",
+        "6",
+        "x²",
+        "9"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "小正方形邊長為 3，所以面積 3²=9。",
+        "derivedChoice": "9",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "面積分割正好對應 (x+3)²=x²+6x+9。",
+      "steps": [
+        "小正方形邊長為 3，所以面積 3²=9。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "把邊長當面積。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "把兩條邊相加。"
+        },
+        {
+          "choice": "x²",
+          "truth": false,
+          "reason": "這是大區塊面積。"
+        },
+        {
+          "choice": "9",
+          "truth": true,
+          "reason": "9 正確。"
+        }
+      ],
+      "misconceptionTarget": "把小正方形邊長 3 誤作面積",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "邊長以抽象長度單位表示，面積為平方單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「用面積圖理解尾平方」且四個選項以同一表示層級作答；逐項重算後只有「9」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "素養：用面積圖理解尾平方，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "圖中的區塊位置與邊長標示是判斷小正方形面積的必要資訊。",
+      "visualMode": "svg",
+      "figureId": "u10-fig-square-sum-area",
+      "drawingSpecId": "u10-fig-square-sum-area",
+      "semanticReviewRef": "u10-s009-v012-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9270bc4bce732f21a600235e1eb95ab8face5dcd9cbdb47fb000aa3647cb9b40"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u10-s009-cr001",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "展開 (3x+2)²，並說明中間項為什麼是 12x。",
+      "requiredWork": [
+        "辨認 a=3x、b=2。",
+        "分別算 a²、2ab、b²。"
+      ],
+      "standardSolution": [
+        "(3x+2)²=(3x)²+2(3x)(2)+2²。",
+        "=9x²+12x+4。",
+        "中間項來自兩個相同交叉乘積 6x+6x。"
+      ],
+      "alternativeMethods": [
+        "可直接展開 (3x+2)(3x+2) 顯示四個乘積。"
+      ],
+      "reasoningSteps": [
+        "(3x+2)²=(3x)²+2(3x)(2)+2²。",
+        "=9x²+12x+4。",
+        "中間項來自兩個相同交叉乘積 6x+6x。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "結果與中間項來源完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "結果正確但未解釋 12x。"
+        },
+        {
+          "score": 1,
+          "criteria": "首尾平方正確但中間項錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "寫成 9x²+4。"
+        }
+      ],
+      "partialCreditRules": [
+        "中間項解釋以 2ab 或兩個 6x 皆可。"
+      ],
+      "followThroughPolicy": "若只把 12x 算成 6x，其餘正確，給 1 分。",
+      "unitAndNotationRules": "不涉及單位。",
+      "answerOnlyPolicy": "只寫 9x²+12x+4，最高 2 分。",
+      "commonErrorTargets": [
+        "理解並運用 (a+b)^2=a^2+2ab+b^2"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "recomputedResult": "獨立雙重分配確認 9x²+6x+6x+4。",
+        "ambiguity": "題意資料足夠，評分規則已對應本題推理。",
+        "decision": "pass"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "375ced3dfe3fdd7951342396770c9dfa74ae44e739662202ff77f0300b9e78be"
+    },
+    {
+      "questionId": "u10-s009-cr002",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-formulas",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "已知 (ax+3)²=4x²+12x+9。求 a，並說明為何 a=-2 不可。",
+      "requiredWork": [
+        "由首項平方取得候選。",
+        "用中間項判定符號。"
+      ],
+      "standardSolution": [
+        "a²=4，所以 a=±2。",
+        "中間項 2(ax)(3)=6ax 必須等於 12x，故 a=2。",
+        "若 a=-2，中間項會是 -12x，不符合。"
+      ],
+      "alternativeMethods": [
+        "可直接比較 6a=12 得 a=2，再檢查 a²=4。"
+      ],
+      "reasoningSteps": [
+        "a²=4，所以 a=±2。",
+        "中間項 2(ax)(3)=6ax 必須等於 12x，故 a=2。",
+        "若 a=-2，中間項會是 -12x，不符合。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "a=2 且明確排除 -2。"
+        },
+        {
+          "score": 2,
+          "criteria": "a=2 正確但未說明排除。"
+        },
+        {
+          "score": 1,
+          "criteria": "只得到 ±2。"
+        },
+        {
+          "score": 0,
+          "criteria": "給 -2 或其他值且無合理方法。"
+        }
+      ],
+      "partialCreditRules": [
+        "只比較中間項可得到正解，但需檢查首尾才滿分。"
+      ],
+      "followThroughPolicy": "若先寫 ±2，後續未完成，給 1 分。",
+      "unitAndNotationRules": "不涉及單位。",
+      "answerOnlyPolicy": "只寫 a=2，最高 2 分。",
+      "commonErrorTargets": [
+        "理解並運用 (a+b)^2=a^2+2ab+b^2"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "recomputedResult": "獨立比較首項、中間項與常數均吻合。",
+        "ambiguity": "題意資料足夠，評分規則已對應本題推理。",
+        "decision": "pass"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "15ef6dc9e31da2c503ec8488746be76c21e8da703353e9351c5c18b5e99985d4"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "reviewId": "u10-s009-v001-review",
+      "questionId": "u10-s009-v001",
+      "questionContentSha256": "19d5883c82e9d735c2b3df19d00bd51015344873996eaa1fae3a6e1c8a0d64b9",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "每個長方形面積為3x，兩個合計6x；這正是 (x+3)² 展開式的中間項。",
+      "derivedAnswer": "6x",
+      "storedAnswer": "6x",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回後只有「6x」成立；其他三項分別因：3x只算一個長方形。；x²+6x多算中央正方形。；9是小正方形面積。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "只問兩個長方形的合計。",
+        "alternateReading": "題幹明確要求「由幾何分割辨認和的平方中間項」，沒有第二種合理所求。"
+      },
+      "difficultyReason": "基礎：用幾何分割理解和的平方中間項。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；條件、所求量與選項比較基準均明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "u10-s009-v001 中央修訂後獨立重算：每個長方形面積為3x，兩個合計6x；這正是 (x+3)² 展開式的中間項。 四個選項逐項核對，唯一正解為「6x」；其餘選項排除理由為：3x只算一個長方形。；x²+6x多算中央正方形。；9是小正方形面積。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "67997a2835a160b252f47b6209ccc9f9557ba286a2f3e4cff7c6073ff836f5d2"
+    },
+    {
+      "reviewId": "u10-s009-v002-review",
+      "questionId": "u10-s009-v002",
+      "questionContentSha256": "b198cd797c942e77f0cc0667138c4f505f513d5bf5ed932b3e006cdbcdcd25fb",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "由 (a+b)(a+b) 展開得 a²+2ab+b²。",
+      "derivedAnswer": "a²+2ab+b²",
+      "storedAnswer": "a²+2ab+b²",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：a²+b²：漏兩個交叉項。；a²+ab+b²：只保留一個交叉項。；2a²+2b²：把平方項都乘 2。；a²+2ab+b²：公式正確。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「公式中間項係數錯」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎：辨認和平方公式，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「下列哪一個等於 (a+b)²？」獨立重算：由 (a+b)(a+b) 展開得 a²+2ab+b²。 正解「a²+2ab+b²」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "37732ebf65a48ae0d58a92958a5ab5b2f90666ddd65e22fdd3a87a2506e35228"
+    },
+    {
+      "reviewId": "u10-s009-v003-review",
+      "questionId": "u10-s009-v003",
+      "questionContentSha256": "8cf8ae0d1b959de46232e6a5f5e4b2d4ffc45c500328e2836bd7e55a980ee4ac",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "(2x)²+2(2x)(1)+1²=4x²+4x+1。",
+      "derivedAnswer": "4x²+4x+1",
+      "storedAnswer": "4x²+4x+1",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：2x²+4x+1：首項係數未平方。；4x²+4x+1：首項係數也要平方。；4x²+2x+1：中間項漏乘 2。；4x²+1：漏中間項。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「係數平方或中間項錯」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎：含係數和平方，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「展開 (2x+1)²。」獨立重算：(2x)²+2(2x)(1)+1²=4x²+4x+1。 正解「4x²+4x+1」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "8b847e0608d3badef405eac449c4e867137588d46327dea75b7d771a9c40052c"
+    },
+    {
+      "reviewId": "u10-s009-v004-review",
+      "questionId": "u10-s009-v004",
+      "questionContentSha256": "9f4417c7c50cd6150d2ff5f26ea3a91df7d95a1f195e810fae01be1e8a7aa517",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "(3x+4)²=9x²+24x+16，所以 x 項係數為 24。",
+      "derivedAnswer": "24",
+      "storedAnswer": "24",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：12：只算一個交叉乘積 3×4。；9：9 是二次項係數。；24：兩個交叉乘積合為 24x，正確。；16：16 是常數項。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「展開後把不同項的係數混淆」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準：由和平方讀取中間係數，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「在 (3x+4)² 的展開式中，x 項係數是多少？」獨立重算：(3x+4)²=9x²+24x+16，所以 x 項係數為 24。 正解「24」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "50f2bf0219e3bd6cfc86e16fb7daa1a3ddedb97f5bf68af931020e45d17fff97"
+    },
+    {
+      "reviewId": "u10-s009-v005-review",
+      "questionId": "u10-s009-v005",
+      "questionContentSha256": "2fc7462fcfa891fff54db32ec75eaa4c0e917875830757f15c11a96d4dfd6d57",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "比較中間項 2k=14 得 k=7，且 k²=49 驗證。",
+      "derivedAnswer": "7",
+      "storedAnswer": "7",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：5：中間項為 10x。；6：中間項為 12x。；14：把 2k 直接當 k。；7：k=7 正確。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「反向比較公式係數錯」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準：由展開式反求尾數，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「若 (x+k)²=x²+14x+49，則 k 為何？」獨立重算：比較中間項 2k=14 得 k=7，且 k²=49 驗證。 正解「7」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "c486911032c033374aa2b88fc13d33a6e63c2f4c9dc92753543b960d3e4f8cff"
+    },
+    {
+      "reviewId": "u10-s009-v006-review",
+      "questionId": "u10-s009-v006",
+      "questionContentSha256": "47f58e7ccb37d135d97dde7a2b072d01a9accf968474e1452da298591fdfa98a",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "102²=(100+2)²=10000+400+4=10404。",
+      "derivedAnswer": "10404",
+      "storedAnswer": "10404",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：10404：10404 正確。；10204：漏兩倍乘積的一部分。；10004：完全漏中間項。；10400：漏尾平方 4。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「心算時漏中間項或尾平方」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準：和平方數值心算，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「計算 102²。」獨立重算：102²=(100+2)²=10000+400+4=10404。 正解「10404」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "23611e5f6821806f09d2eaa510733a7d6ecafb4980c3a37befb61384a9234ea5"
+    },
+    {
+      "reviewId": "u10-s009-v007-review",
+      "questionId": "u10-s009-v007",
+      "questionContentSha256": "6b9a1e65430580b738c561cbaf360d5aff0b184880baaf0de7d3d6b708cfe8aa",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "兩式分別為 x²±4x+4，相加時一次項抵消，得 2x²+8。",
+      "derivedAnswer": "2x²+8",
+      "storedAnswer": "2x²+8",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：2x²+8x+8：一次項誤相加。；2x²+8：2x²+8 正確。；x²+4：只算一式。；2x²-8：常數符號錯。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「展開後未看到中間項抵消」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階：兩平方和化簡，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「化簡 (x+2)²+(x-2)²。」獨立重算：兩式分別為 x²±4x+4，相加時一次項抵消，得 2x²+8。 正解「2x²+8」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "543ae6fd384e5bfe31bc3f203e0542ce1feb27ff1f2217800c962303e8d88c72"
+    },
+    {
+      "reviewId": "u10-s009-v008-review",
+      "questionId": "u10-s009-v008",
+      "questionContentSha256": "b6bfc01628aaf0d28035814666c62f0ae4eb2c748d3d57f065049012223fe6de",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "a²=9 且 4a=12，第二條給 a=3，並符合 a²=9。",
+      "derivedAnswer": "3",
+      "storedAnswer": "3",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：-3：a=-3 會使中間項 -12x。；2：a=2 首項與中間項皆不符。；3：a=3 正確。；6：a=6 首項 36x²。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「只由平方項得到正負兩解而未查中間項」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階：由完整公式決定係數符號，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「若 (ax+2)²=9x²+12x+4，則 a 為何？」獨立重算：a²=9 且 4a=12，第二條給 a=3，並符合 a²=9。 正解「3」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "cf5145d41e99e49212ee92fc5b1ef977b5d41c775957d3d2bc1c9e5b9fd60bd1"
+    },
+    {
+      "reviewId": "u10-s009-v009-review",
+      "questionId": "u10-s009-v009",
+      "questionContentSha256": "4e16e2f9dfafaac330b35c5eae1308f024f17f1c5f16e41d16884f3420a47ee0",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "將 x+y 視為整體 A，式子為 (A+2)²。",
+      "derivedAnswer": "x+y",
+      "storedAnswer": "x+y",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：x：只取 x 會漏 y。；y：只取 y 會漏 x。；x+y：x+y 正確。；2x+2y：這是展開後部分，不是原括號第一整體。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「不會把多項式視為公式整體」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階：整體代換辨認，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「(x+y+2)² 可把哪一個整體視為公式中的 a？」獨立重算：將 x+y 視為整體 A，式子為 (A+2)²。 正解「x+y」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "f69212eed892deb5b56ec2818d24e2502fd1a898da058d56eb176a445b0c978c"
+    },
+    {
+      "reviewId": "u10-s009-v010-review",
+      "questionId": "u10-s009-v010",
+      "questionContentSha256": "34b4549f49194c6fa1ecad82f509626377e40f74aa553ba30dd528e873871a29",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "新邊長 x+4，所以面積 (x+4)²=x²+8x+16。",
+      "derivedAnswer": "x²+8x+16 平方公尺",
+      "storedAnswer": "x²+8x+16 平方公尺",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：x²+4x+16 平方公尺：中間項漏一倍。；x²+8x+16 平方公尺：增加後整條邊平方，中間項對應兩條 4x 長方形。；x²+16 平方公尺：漏兩個交叉區域。；2x²+8x+16 平方公尺：首面積重複。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "邊長為公尺，面積為平方公尺。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "x>0。",
+        "alternateReading": "常見誤讀「把邊長增加量直接加到面積」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養：邊長增加後的新面積，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "邊長增加與正方形面積的幾何關係決定使用和平方，並產生平方單位。",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「正方形邊長由 x 公尺增加 4 公尺，新面積為何？」獨立重算：新邊長 x+4，所以面積 (x+4)²=x²+8x+16。 正解「x²+8x+16 平方公尺」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "1356bfa61bf7c783faf090b8483aa5edfa8bcdebbc13ac36e00df642d8cbd9ea"
+    },
+    {
+      "reviewId": "u10-s009-v011-review",
+      "questionId": "u10-s009-v011",
+      "questionContentSha256": "3b272e42bba4ef222d50f3693d28660e8ea6e5490621d5ccabb2fd2a55ba8608",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "新邊長 53，面積 53²=(50+3)²=2500+300+9=2809。",
+      "derivedAnswer": "2809 平方公分",
+      "storedAnswer": "2809 平方公分",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：2809 平方公分：2809 正確。；2509 平方公分：漏大部分增加面積。；2650 平方公分：只加兩條 50×3。；2800 平方公分：漏 3²。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "公分×公分=平方公分。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「新增面積組成不完整」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養：具體尺寸和平方，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "展示板加長每邊後需先求新邊長再求面積，不能只加 3。",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一個 50 公分見方的正方形展示板，每邊再加長 3 公分。新面積是多少？」獨立重算：新邊長 53，面積 53²=(50+3)²=2500+300+9=2809。 正解「2809 平方公分」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "bc8e7b1af5fdf73bb5f8c7b8cf6166ee7fd56c555387625a565b5ad2e62cfb6a"
+    },
+    {
+      "reviewId": "u10-s009-v012-review",
+      "questionId": "u10-s009-v012",
+      "questionContentSha256": "9270bc4bce732f21a600235e1eb95ab8face5dcd9cbdb47fb000aa3647cb9b40",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "小正方形邊長為 3，所以面積 3²=9。",
+      "derivedAnswer": "9",
+      "storedAnswer": "9",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：3：把邊長當面積。；6：把兩條邊相加。；x²：這是大區塊面積。；9：9 正確。",
+        "undefinedSymbol": "題幹用語均在「和的平方公式」講義定義。",
+        "unitConflict": "邊長以抽象長度單位表示，面積為平方單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「把小正方形邊長 3 誤作面積」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養：用面積圖理解尾平方，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "圖中的區塊位置與邊長標示是判斷小正方形面積的必要資訊。",
+      "prerequisiteCheck": "使用先備技能：binomial-multiply-basic；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「圖中大正方形邊長為 x+3，由 x²、兩個 3x 長方形與一個小正方形組成。小正方形面積為何？」獨立重算：小正方形邊長為 3，所以面積 3²=9。 正解「9」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "60f361cd8e3de0260199b8bbf48a220edae6121c278cbd9b1aeec45252193cf6"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u10-fig-square-sum-area",
+      "unitId": "u10",
+      "skillId": "square-sum-formula",
+      "skillSlot": "s009",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "canvas": {
+        "width": "360",
+        "height": "360"
+      },
+      "viewBox": "0 0 360 360",
+      "drawingSpecification": "一個大正方形以水平與垂直分割線分成一個 x 乘 x 區域、兩個寬 3 的長方形，以及右下角邊長 3 的小正方形。",
+      "exactCoordinates": [
+        "outer rect (40,40,280,280)",
+        "vertical split x=260",
+        "horizontal split y=260"
+      ],
+      "visibleLineRules": "外框使用 3px 實線；內部分割或內框依圖使用 2px 實線或虛線。",
+      "hiddenLineRules": "本單元平面圖無隱藏線。",
+      "labelsAndPositions": [
+        "top segments x and 3",
+        "left segments x and 3",
+        "areas x², 3x, 3x, ?"
+      ],
+      "tickMarks": "無刻度；尺寸以文字標示。",
+      "units": "依圖標示公尺，或使用抽象長度單位。",
+      "arrowsAndSymbols": "尺寸線端點使用簡單箭頭；未使用角度符號。",
+      "toScale": false,
+      "visualInferenceWarning": "圖形不按比例，禁止由視覺長短推測代數值。",
+      "altText": "邊長 x+3 的正方形分成 x²、兩個 3x 區域和一個未知小正方形。",
+      "svgTitle": "邊長 x+3 的正方形面積分割",
+      "svgDesc": "一個大正方形以水平與垂直分割線分成一個 x 乘 x 區域、兩個寬 3 的長方形，以及右下角邊長 3 的小正方形。",
+      "mobileReadabilityReview": "在 360px 寬度下主要標籤字級至少 18px，線條與文字不重疊。",
+      "answerLeakageReview": "圖僅提供題幹已知尺寸或未知區域，不直接標示正確選項或完整答案。",
+      "geometryTokenAssertions": [
+        "SVG 含唯一 title 與 desc。",
+        "viewBox 與畫布尺寸已宣告。",
+        "所有文字標籤位於 viewBox 內。",
+        "外框閉合，分割線端點落在外框。"
+      ],
+      "questionReferences": [
+        "u10-s009-v012"
+      ],
+      "svgPath": "figures/u10/u10-fig-square-sum-area.svg",
+      "contentSha256": "2ec3aebf629c5e9af16c35bc61d61cd21704f5d56415e3bd15a82e34115c90c8"
+    }
+  ]
+};

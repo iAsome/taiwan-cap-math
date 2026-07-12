@@ -1,0 +1,200 @@
+{
+  "lectureId": "u10-s011-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-formulas",
+  "skillId": "difference-of-squares-expand",
+  "lockedTitle": "平方差公式",
+  "title": "平方差公式：一和一差使交叉項抵消",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能辨認共軛因式 (a+b)(a-b)。",
+    "能展開為 a²-b² 並反向檢查。",
+    "能用公式做數值心算與面積差。"
+  ],
+  "prerequisites": [
+    "square-difference-formula"
+  ],
+  "prerequisiteBridge": "先備技能 square-difference-formula 已建立下一步所需概念；本節專注於辨認並運用 (a+b)(a-b)=a^2-b^2。",
+  "glossary": [
+    {
+      "term": "共軛因式",
+      "definition": "首項相同、尾項相反的一對二項式。"
+    },
+    {
+      "term": "平方差",
+      "definition": "兩個平方相減的形式 a²-b²。"
+    },
+    {
+      "term": "抵消",
+      "definition": "+ab 與 -ab 相加為 0。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(a+b)(a−b)",
+      "meaning": "a²−b²。"
+    },
+    {
+      "symbol": "a²−b²",
+      "meaning": "可反向看成 (a+b)(a−b)。"
+    }
+  ],
+  "conceptNarrative": [
+    "展開 (a+b)(a-b) 得 a²-ab+ab-b²，中間項抵消。",
+    "必須是首項相同且第二項互為相反數，才能直接套公式。",
+    "公式結果只有兩項，是平方相減。",
+    "數值上可把 51×49 看成 (50+1)(50-1)。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "平方差公式",
+      "statement": "(a+b)(a-b)=a²-b²。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(a+b)(a-b)=a²-b²",
+      "conditions": [
+        "兩因式首項相同、尾項互為相反數"
+      ],
+      "meaning": "交叉項抵消。"
+    }
+  ],
+  "nonApplicableCases": [
+    "(a+b)(a+b) 不是平方差。",
+    "(a+b)(c-b) 若 a≠c 不能直接套用。",
+    "a²+b² 不能在實數國中範圍拆成同型共軛因式。",
+    "結果次序與符號要對應 a²-b²。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認兩括號首項完全相同。",
+      "check": "完成此步後，確認內容仍符合「辨認並運用 (a+b)(a-b)=a^2-b^2」。"
+    },
+    {
+      "step": 2,
+      "instruction": "確認尾項大小相同、符號相反。",
+      "check": "完成此步後，確認內容仍符合「辨認並運用 (a+b)(a-b)=a^2-b^2」。"
+    },
+    {
+      "step": 3,
+      "instruction": "平方共同首項 a。",
+      "check": "完成此步後，確認內容仍符合「辨認並運用 (a+b)(a-b)=a^2-b^2」。"
+    },
+    {
+      "step": 4,
+      "instruction": "減去尾項 b 的平方。",
+      "check": "完成此步後，確認內容仍符合「辨認並運用 (a+b)(a-b)=a^2-b^2」。"
+    },
+    {
+      "step": 5,
+      "instruction": "必要時展開檢查交叉項是否抵消。",
+      "check": "完成此步後，確認內容仍符合「辨認並運用 (a+b)(a-b)=a^2-b^2」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "展開 (x+6)(x−6)。",
+      "solutionSteps": [
+        "共同首項 x，尾項 ±6。"
+      ],
+      "answer": "x²-36。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "展開 (3x+2)(3x−2)。",
+      "solutionSteps": [
+        "(3x)²−2²。"
+      ],
+      "answer": "9x²-4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "計算 73×67。",
+      "solutionSteps": [
+        "(70+3)(70−3)=4900−9。"
+      ],
+      "answer": "4891。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "結果寫 a²+b²",
+      "why": "忘記尾項乘積 b·(-b) 為負",
+      "correction": "尾項乘積是 -b²。"
+    },
+    {
+      "mistake": "把不共軛的兩式套公式",
+      "why": "只看到兩個括號",
+      "correction": "同時檢查首項相同與尾項相反。"
+    },
+    {
+      "mistake": "把 (2x)² 寫 2x²",
+      "why": "係數未平方",
+      "correction": "應為 4x²。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能辨認共軛因式 (a+b)(a-b)？",
+    "我是否能能展開為 a²-b² 並反向檢查？",
+    "我是否能能用公式做數值心算與面積差？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "共軛因式相乘得到平方差。",
+    "交叉項完全抵消。",
+    "結果是首平方減尾平方。",
+    "套用前先檢查兩個結構條件。"
+  ],
+  "connections": {
+    "previous": "上一技能 差的平方公式 提供本節所需工具。",
+    "next": [
+      "下一節混合辨認三個乘法公式，重點是先看結構再選工具。"
+    ]
+  },
+  "figureReferences": [
+    "u10-fig-difference-squares-rectangle"
+  ],
+  "accessibility": {
+    "figureAltTextsRequired": true,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s011-v001",
+      "u10-s011-v002",
+      "u10-s011-v003",
+      "u10-s011-v004",
+      "u10-s011-v005",
+      "u10-s011-v006",
+      "u10-s011-v007",
+      "u10-s011-v008",
+      "u10-s011-v009",
+      "u10-s011-v010",
+      "u10-s011-v011",
+      "u10-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s011-cr001",
+      "u10-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「平方差公式：一和一差使交叉項抵消」：定義、3 個例題、錯誤推理與下一技能銜接均針對 difference-of-squares-expand；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "9e8b83e18f7d033ece43a269a46655b697a3d10361a579a648ae42e6c1fec30e"
+}

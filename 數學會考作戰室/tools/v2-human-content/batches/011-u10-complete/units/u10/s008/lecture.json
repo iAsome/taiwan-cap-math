@@ -1,0 +1,194 @@
+{
+  "lectureId": "u10-s008-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-operations",
+  "skillId": "binomial-multiply-basic",
+  "lockedTitle": "二項式乘法",
+  "title": "二項式乘法：四個乘積項完整配對",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能用雙重分配或表格完成二項式乘法。",
+    "能合併兩個中間同類項。",
+    "能處理係數、負號及不同文字。"
+  ],
+  "prerequisites": [
+    "monomial-polynomial-distribute"
+  ],
+  "prerequisiteBridge": "先備技能 monomial-polynomial-distribute 已建立下一步所需概念；本節專注於逐項分配後合併中間同類項。",
+  "glossary": [
+    {
+      "term": "二項式",
+      "definition": "化簡後恰有兩個非零項的多項式。"
+    },
+    {
+      "term": "雙重分配",
+      "definition": "第一括號每一項分別乘第二括號每一項。"
+    },
+    {
+      "term": "中間項",
+      "definition": "展開後常由兩個一次乘積合併而成。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "(a+b)(c+d)",
+      "meaning": "展開為 ac+ad+bc+bd。"
+    }
+  ],
+  "conceptNarrative": [
+    "兩個二項式相乘共有四次配對，不是只乘首項和末項。",
+    "以 (x+2)(x+5) 為例，中間項來自 5x 與 2x，合為 7x。",
+    "負號會改變交叉乘積的符號。",
+    "表格法能降低漏項，但最後仍要合併同類項。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "二項式乘法",
+      "statement": "由分配律重複兩次得到四個乘積。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(a+b)(c+d)=ac+ad+bc+bd",
+      "conditions": [
+        "四項均須存在或因係數為 0 消失"
+      ],
+      "meaning": "一般二項式展開。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只算 ac+bd。",
+    "不能把 (a+b)(c+d) 當成 a+b+c+d。",
+    "中間項不同類時不能強行合併。",
+    "若括號內有三項，需使用更一般的逐項分配。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "固定第一括號第一項，乘遍第二括號。",
+      "check": "完成此步後，確認內容仍符合「逐項分配後合併中間同類項」。"
+    },
+    {
+      "step": 2,
+      "instruction": "換第一括號第二項，再乘遍第二括號。",
+      "check": "完成此步後，確認內容仍符合「逐項分配後合併中間同類項」。"
+    },
+    {
+      "step": 3,
+      "instruction": "寫出四個乘積並檢查符號。",
+      "check": "完成此步後，確認內容仍符合「逐項分配後合併中間同類項」。"
+    },
+    {
+      "step": 4,
+      "instruction": "合併同類項。",
+      "check": "完成此步後，確認內容仍符合「逐項分配後合併中間同類項」。"
+    },
+    {
+      "step": 5,
+      "instruction": "以常數項乘積與首項乘積快速檢查。",
+      "check": "完成此步後，確認內容仍符合「逐項分配後合併中間同類項」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "(x+3)(x+4)。",
+      "solutionSteps": [
+        "x²+4x+3x+12。"
+      ],
+      "answer": "x²+7x+12。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "(2x−1)(x+5)。",
+      "solutionSteps": [
+        "2x²+10x−x−5。"
+      ],
+      "answer": "2x²+9x−5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "(x+2y)(x−y)。",
+      "solutionSteps": [
+        "x²−xy+2xy−2y²。"
+      ],
+      "answer": "x²+xy−2y²。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只乘首首與尾尾",
+      "why": "漏掉交叉乘積",
+      "correction": "必須完成 2×2 四格。"
+    },
+    {
+      "mistake": "常數項符號錯",
+      "why": "尾項乘法符號未檢查",
+      "correction": "先獨立算兩常數乘積。"
+    },
+    {
+      "mistake": "中間項係數只取一個",
+      "why": "漏掉另一交叉項",
+      "correction": "兩個交叉乘積都寫出再合併。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能用雙重分配或表格完成二項式乘法？",
+    "我是否能能合併兩個中間同類項？",
+    "我是否能能處理係數、負號及不同文字？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "二項式乘法有四個逐項乘積。",
+    "中間項通常由交叉項合併。",
+    "首項與常數項可作快速檢查。",
+    "負號必須逐次判定。"
+  ],
+  "connections": {
+    "previous": "上一技能 單項式乘多項式 提供本節所需工具。",
+    "next": [
+      "下一節把兩個相同二項式的乘法整理成和的平方公式。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibility": {
+    "figureAltTextsRequired": false,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s008-v001",
+      "u10-s008-v002",
+      "u10-s008-v003",
+      "u10-s008-v004",
+      "u10-s008-v005",
+      "u10-s008-v006",
+      "u10-s008-v007",
+      "u10-s008-v008",
+      "u10-s008-v009",
+      "u10-s008-v010",
+      "u10-s008-v011",
+      "u10-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s008-cr001",
+      "u10-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「二項式乘法：四個乘積項完整配對」：定義、3 個例題、錯誤推理與下一技能銜接均針對 binomial-multiply-basic；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "848ebf404380110d9a702c8ceae64d17ff7ab9ea748ad27e899853a1f699c962"
+}

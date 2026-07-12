@@ -1,0 +1,198 @@
+{
+  "lectureId": "u10-s003-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-concepts",
+  "skillId": "like-terms-combine",
+  "lockedTitle": "同類項合併",
+  "title": "同類項合併：文字部分完全相同才可相加減",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能判斷係數不同但文字部分相同的同類項。",
+    "能只對係數做加減並保留文字部分。",
+    "能辨認 x、x²、xy 與 yx 的關係。"
+  ],
+  "prerequisites": [
+    "polynomial-evaluation"
+  ],
+  "prerequisiteBridge": "先備技能 polynomial-evaluation 已建立下一步所需概念；本節專注於判斷同類項並只合併係數。",
+  "glossary": [
+    {
+      "term": "同類項",
+      "definition": "文字及各文字指數完全相同的項。"
+    },
+    {
+      "term": "合併同類項",
+      "definition": "將同類項的係數相加減，文字部分不變。"
+    },
+    {
+      "term": "文字部分",
+      "definition": "去除數字係數後留下的未知數及其指數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "3x² 與 -5x²",
+      "meaning": "文字部分同為 x²，是同類項。"
+    },
+    {
+      "symbol": "2xy 與 -7yx",
+      "meaning": "因 xy=yx，文字部分相同。"
+    }
+  ],
+  "conceptNarrative": [
+    "合併的本質是分配律反向使用：3x+5x=(3+5)x。",
+    "只有文字部分完全相同才能合併；x 與 x² 不同，x 與 y 也不同。",
+    "常數項彼此是同類項。",
+    "係數合為 0 時整項消失，但其他項不受影響。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "同類項條件",
+      "statement": "每個未知數種類與其指數都一致。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "axᵐ+bxᵐ=(a+b)xᵐ",
+      "conditions": [
+        "a、b 為數，文字部分 xᵐ 相同"
+      ],
+      "meaning": "合併時只運算係數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "x 與 x² 不能合併。",
+    "2x 與 2y 不能因係數相同而合併。",
+    "乘法中的 3x·2x 不是合併同類項，而是單項式乘法。",
+    "括號前有負號時要先正確去括號。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先按文字部分分類。",
+      "check": "完成此步後，確認內容仍符合「判斷同類項並只合併係數」。"
+    },
+    {
+      "step": 2,
+      "instruction": "將每組係數連同符號寫出。",
+      "check": "完成此步後，確認內容仍符合「判斷同類項並只合併係數」。"
+    },
+    {
+      "step": 3,
+      "instruction": "計算係數和。",
+      "check": "完成此步後，確認內容仍符合「判斷同類項並只合併係數」。"
+    },
+    {
+      "step": 4,
+      "instruction": "抄回原文字部分。",
+      "check": "完成此步後，確認內容仍符合「判斷同類項並只合併係數」。"
+    },
+    {
+      "step": 5,
+      "instruction": "按降冪排列並檢查是否有係數 0。",
+      "check": "完成此步後，確認內容仍符合「判斷同類項並只合併係數」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "化簡 4x+7x-3。",
+      "solutionSteps": [
+        "(4+7)x-3。"
+      ],
+      "answer": "11x-3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "化簡 5x²-2x+3x²+x。",
+      "solutionSteps": [
+        "x² 項係數 5+3；x 項係數 -2+1。"
+      ],
+      "answer": "8x²-x。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "化簡 2xy-5yx+4。",
+      "solutionSteps": [
+        "xy=yx，所以 2xy-5xy。"
+      ],
+      "answer": "-3xy+4。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 3x+4 合併成 7x",
+      "why": "常數 4 沒有 x",
+      "correction": "保留為 3x+4。"
+    },
+    {
+      "mistake": "把 2x²+5x 合併成 7x³",
+      "why": "誤把加法當指數相加",
+      "correction": "不同文字部分不可合併。"
+    },
+    {
+      "mistake": "係數相加後又改變指數",
+      "why": "混淆加法與乘法法則",
+      "correction": "合併後文字部分完全不變。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能判斷係數不同但文字部分相同的同類項？",
+    "我是否能能只對係數做加減並保留文字部分？",
+    "我是否能能辨認 x、x²、xy 與 yx 的關係？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "同類項要看文字與指數是否完全相同。",
+    "合併只加減係數。",
+    "常數彼此可合併。",
+    "係數為 0 時該項消失。"
+  ],
+  "connections": {
+    "previous": "上一技能 多項式代入求值 提供本節所需工具。",
+    "next": [
+      "下一節先化簡再判斷多項式的最高次數與係數符號。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibility": {
+    "figureAltTextsRequired": false,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s003-v001",
+      "u10-s003-v002",
+      "u10-s003-v003",
+      "u10-s003-v004",
+      "u10-s003-v005",
+      "u10-s003-v006",
+      "u10-s003-v007",
+      "u10-s003-v008",
+      "u10-s003-v009",
+      "u10-s003-v010",
+      "u10-s003-v011",
+      "u10-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s003-cr001",
+      "u10-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「同類項合併：文字部分完全相同才可相加減」：定義、3 個例題、錯誤推理與下一技能銜接均針對 like-terms-combine；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "34a8e02513fb3968dfda01dbbae0d4c787bf18327560fd6f702b84faf455a5fa"
+}

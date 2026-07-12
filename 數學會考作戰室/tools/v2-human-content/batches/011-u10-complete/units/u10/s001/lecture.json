@@ -1,0 +1,209 @@
+{
+  "lectureId": "u10-s001-lecture-r1",
+  "unitId": "u10",
+  "numericUnitId": 10,
+  "topicId": "u10-concepts",
+  "skillId": "polynomial-terms",
+  "lockedTitle": "多項式的項與係數",
+  "title": "多項式的項與係數：先看加減分界再讀符號",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能以加號或減號為分界正確指出每一項。",
+    "能辨認未知數項的係數、常數項與省略的 1 或 -1。",
+    "能判斷含負整數指數、未知數在分母或根號內的式子不是本單元的一元多項式。"
+  ],
+  "prerequisites": [],
+  "prerequisiteBridge": "本技能為 U10 起點，使用既有整數、分數、指數與一元式基礎。",
+  "glossary": [
+    {
+      "term": "多項式",
+      "definition": "由有限個單項式以加減連結而成，未知數的指數為非負整數。"
+    },
+    {
+      "term": "項",
+      "definition": "以最外層加號或減號分開後的每一部分，符號屬於該項。"
+    },
+    {
+      "term": "係數",
+      "definition": "某項中乘在文字部分前的數。"
+    },
+    {
+      "term": "常數項",
+      "definition": "不含未知數的項。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "3x²",
+      "meaning": "係數為 3，文字部分為 x²。"
+    },
+    {
+      "symbol": "-x",
+      "meaning": "可寫成 -1x，所以係數為 -1。"
+    },
+    {
+      "symbol": "7",
+      "meaning": "常數項，也可視為 7x⁰。"
+    }
+  ],
+  "conceptNarrative": [
+    "讀一個多項式時，先把減法改看成「加上一個負項」。例如 4x²-3x+5 的三項是 4x²、-3x、5。",
+    "項的正負號不能丟失；-6x 的係數是 -6，不是 6。",
+    "x 前未寫數字代表係數 1，-x 代表係數 -1。",
+    "本單元的一元多項式要求 x 的指數是 0、1、2 等非負整數；2/x、√x、x⁻¹ 不符合。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "一元多項式",
+      "statement": "可寫成 aₙxⁿ+…+a₁x+a₀，其中 n 為非負整數，各係數為數。"
+    },
+    {
+      "name": "項的判讀",
+      "statement": "以最外層加減號分界，負號隨下一項。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "aₙxⁿ",
+      "conditions": [
+        "aₙ 為係數，n 為非負整數"
+      ],
+      "meaning": "描述一般單項式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把乘號內部拆成不同項，例如 3x² 是一項。",
+    "括號尚未展開時，應先依題意決定是否需要化簡再讀項。",
+    "不能把指數當係數。",
+    "未知數在分母時不屬於本單元的一元多項式。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找最外層的加減號並切分。",
+      "check": "完成此步後，確認內容仍符合「辨認項、係數、常數項與多項式的基本限制」。"
+    },
+    {
+      "step": 2,
+      "instruction": "把每個減號保留在後一項前。",
+      "check": "完成此步後，確認內容仍符合「辨認項、係數、常數項與多項式的基本限制」。"
+    },
+    {
+      "step": 3,
+      "instruction": "在每項中分出數字係數與文字部分。",
+      "check": "完成此步後，確認內容仍符合「辨認項、係數、常數項與多項式的基本限制」。"
+    },
+    {
+      "step": 4,
+      "instruction": "確認未知數指數皆為非負整數。",
+      "check": "完成此步後，確認內容仍符合「辨認項、係數、常數項與多項式的基本限制」。"
+    },
+    {
+      "step": 5,
+      "instruction": "依題目指出指定項、係數或常數項。",
+      "check": "完成此步後，確認內容仍符合「辨認項、係數、常數項與多項式的基本限制」。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "指出 5x²-2x+9 的各項。",
+      "solutionSteps": [
+        "把減號留給下一項。",
+        "依序讀出三項。"
+      ],
+      "answer": "5x²、-2x、9。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "求 -x³+4 的 x³ 項係數。",
+      "solutionSteps": [
+        "-x³=-1x³。"
+      ],
+      "answer": "-1。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "判斷 3x²+2/x-1 是否為 x 的多項式。",
+      "solutionSteps": [
+        "2/x=2x⁻¹，指數 -1 不是非負整數。"
+      ],
+      "answer": "不是。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 -4x 的係數寫成 4",
+      "why": "忽略負號是該項的一部分",
+      "correction": "改寫成 (-4)x。"
+    },
+    {
+      "mistake": "把 x² 的係數寫成 2",
+      "why": "混淆指數與係數",
+      "correction": "係數是省略的 1，2 是指數。"
+    },
+    {
+      "mistake": "把 3x+5 說成三項",
+      "why": "把係數 3 當作獨立項",
+      "correction": "項由最外層加減分界，只有 3x 和 5。"
+    }
+  ],
+  "selfCheck": [
+    "我是否能能以加號或減號為分界正確指出每一項？",
+    "我是否能能辨認未知數項的係數、常數項與省略的 1 或 -1？",
+    "我是否能能判斷含負整數指數、未知數在分母或根號內的式子不是本單元的一元多項式？",
+    "我是否檢查了負號、括號、指數與題目所問的量？"
+  ],
+  "summary": [
+    "項以最外層加減分界，符號要跟著項。",
+    "係數是乘在文字部分前的數。",
+    "常數項不含未知數。",
+    "一元多項式的未知數指數必須是非負整數。"
+  ],
+  "connections": {
+    "previous": "U10 起點，銜接先前代數記號與指數運算。",
+    "next": [
+      "下一節把數值代入多項式，括號與負號會成為重點。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibility": {
+    "figureAltTextsRequired": false,
+    "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u10-s001-v001",
+      "u10-s001-v002",
+      "u10-s001-v003",
+      "u10-s001-v004",
+      "u10-s001-v005",
+      "u10-s001-v006",
+      "u10-s001-v007",
+      "u10-s001-v008",
+      "u10-s001-v009",
+      "u10-s001-v010",
+      "u10-s001-v011",
+      "u10-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u10-s001-cr001",
+      "u10-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP only",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐段重讀「多項式的項與係數：先看加減分界再讀符號」：定義、3 個例題、錯誤推理與下一技能銜接均針對 polynomial-terms；另逐項檢查負號、係數、指數、括號和條件。",
+    "reviewVersion": "human-lecture-review-u10-r1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "91b13d6053b7c5e5b06ec6269a67ad6ef0b050b2472e18cdcb2e01446942789c"
+}

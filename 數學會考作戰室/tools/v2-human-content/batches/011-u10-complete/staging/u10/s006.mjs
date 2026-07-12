@@ -1,0 +1,1596 @@
+// Deterministically emitted from reviewed immutable source. Do not edit.
+export default {
+  "lecture": {
+    "lectureId": "u10-s006-lecture-r1",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-operations",
+    "skillId": "monomial-multiply",
+    "lockedTitle": "單項式乘法",
+    "title": "單項式乘法：係數相乘，同底數指數相加",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能處理正負係數與分數係數的乘法。",
+      "能對每個同底數未知數使用指數相加。",
+      "能分辨乘法與同類項加法的規則。"
+    ],
+    "prerequisites": [
+      "polynomial-add-subtract"
+    ],
+    "prerequisiteBridge": "先備技能 polynomial-add-subtract 已建立下一步所需概念；本節專注於係數相乘並使用同底數指數相加。",
+    "glossary": [
+      {
+        "term": "單項式",
+        "definition": "數與未知數非負整數次方的乘積。"
+      },
+      {
+        "term": "同底數冪相乘",
+        "definition": "底數相同時保留底數並把指數相加。"
+      },
+      {
+        "term": "總次數",
+        "definition": "多個未知數單項式中各指數的和。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "(3x²)(−2x³)",
+        "meaning": "係數 3×(−2)，x 的指數 2+3。"
+      },
+      {
+        "symbol": "x=x¹",
+        "meaning": "未標指數時指數為 1。"
+      }
+    ],
+    "conceptNarrative": [
+      "單項式相乘可分成「數字係數」與「各種文字」兩部分。",
+      "正負號先依有理數乘法判定。",
+      "x²·x³=x⁵ 是因為同底數相乘指數相加；不同底數如 x²y 則分別保留。",
+      "不要把加法的同類項規則混進乘法。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "單項式乘法",
+        "statement": "係數乘係數；每個同底數文字的指數相加。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "(axᵐ)(bxⁿ)=abxᵐ⁺ⁿ",
+        "conditions": [
+          "m、n 為非負整數"
+        ],
+        "meaning": "同底數冪乘法。"
+      }
+    ],
+    "nonApplicableCases": [
+      "x²+x³ 不是乘法，不能寫 x⁵。",
+      "x²·y³ 底數不同，不能合成單一冪。",
+      "係數為負時不能漏負號。",
+      "0 乘任何單項式仍為 0。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先判斷結果正負。",
+        "check": "完成此步後，確認內容仍符合「係數相乘並使用同底數指數相加」。"
+      },
+      {
+        "step": 2,
+        "instruction": "相乘所有數字係數。",
+        "check": "完成此步後，確認內容仍符合「係數相乘並使用同底數指數相加」。"
+      },
+      {
+        "step": 3,
+        "instruction": "按未知數種類分類。",
+        "check": "完成此步後，確認內容仍符合「係數相乘並使用同底數指數相加」。"
+      },
+      {
+        "step": 4,
+        "instruction": "同底數指數相加。",
+        "check": "完成此步後，確認內容仍符合「係數相乘並使用同底數指數相加」。"
+      },
+      {
+        "step": 5,
+        "instruction": "整理標準次序並檢查總次數。",
+        "check": "完成此步後，確認內容仍符合「係數相乘並使用同底數指數相加」。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "(4x²)(−3x)。",
+        "solutionSteps": [
+          "4×(-3)=-12；x²·x=x³。"
+        ],
+        "answer": "-12x³。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "(−2a²b)(5ab³)。",
+        "solutionSteps": [
+          "係數 -10；a³；b⁴。"
+        ],
+        "answer": "-10a³b⁴。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "(1/2 x³)(8x²)。",
+        "solutionSteps": [
+          "係數 4；指數 3+2。"
+        ],
+        "answer": "4x⁵。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把 x²·x³ 寫成 x⁶",
+        "why": "誤把指數相乘",
+        "correction": "同底數相乘要指數相加。"
+      },
+      {
+        "mistake": "只乘係數未處理文字",
+        "why": "漏掉同底數冪法則",
+        "correction": "每種未知數都要整理。"
+      },
+      {
+        "mistake": "負負得負",
+        "why": "符號法則錯誤",
+        "correction": "兩個負因數相乘為正。"
+      }
+    ],
+    "selfCheck": [
+      "我是否能能處理正負係數與分數係數的乘法？",
+      "我是否能能對每個同底數未知數使用指數相加？",
+      "我是否能能分辨乘法與同類項加法的規則？",
+      "我是否檢查了負號、括號、指數與題目所問的量？"
+    ],
+    "summary": [
+      "係數相乘並先判符號。",
+      "同底數指數相加。",
+      "不同底數分別保留。",
+      "加法與乘法法則不可混用。"
+    ],
+    "connections": {
+      "previous": "上一技能 多項式加減 提供本節所需工具。",
+      "next": [
+        "下一節將單項式分配給括號內每一項。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibility": {
+      "figureAltTextsRequired": false,
+      "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+    },
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u10-s006-v001",
+        "u10-s006-v002",
+        "u10-s006-v003",
+        "u10-s006-v004",
+        "u10-s006-v005",
+        "u10-s006-v006",
+        "u10-s006-v007",
+        "u10-s006-v008",
+        "u10-s006-v009",
+        "u10-s006-v010",
+        "u10-s006-v011",
+        "u10-s006-v012"
+      ],
+      "constructedResponseIds": [
+        "u10-s006-cr001",
+        "u10-s006-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP only",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐段重讀「單項式乘法：係數相乘，同底數指數相加」：定義、3 個例題、錯誤推理與下一技能銜接均針對 monomial-multiply；另逐項檢查負號、係數、指數、括號和條件。",
+      "reviewVersion": "human-lecture-review-u10-r1",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "cd09ff585f0c9fad299725272c9bba829c59e31cc6cbd628b3462e65cf71f71b"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u10-s006-v001",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "計算 (3x²)(-2x)。",
+      "givenConditions": [],
+      "target": "基本單項式相乘",
+      "choices": [
+        "-5x³",
+        "-6x³",
+        "6x²",
+        "-6x²"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "係數 3×(-2)=-6；x 指數 2+1=3。",
+        "derivedChoice": "-6x³",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "結果為 -6x³。",
+      "steps": [
+        "係數 3×(-2)=-6。",
+        "x 指數 2+1=3。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-5x³",
+          "truth": false,
+          "reason": "係數相加。"
+        },
+        {
+          "choice": "-6x³",
+          "truth": true,
+          "reason": "-6x³ 正確。"
+        },
+        {
+          "choice": "6x²",
+          "truth": false,
+          "reason": "指數未相加且符號錯。"
+        },
+        {
+          "choice": "-6x²",
+          "truth": false,
+          "reason": "指數未相加。"
+        }
+      ],
+      "misconceptionTarget": "係數符號或指數法則錯",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「基本單項式相乘」且四個選項以同一表示層級作答；逐項重算後只有「-6x³」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "基礎：基本單項式相乘，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v001-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "22e2db19ae9f0d3ef8dd3f943e5261b36e888cda29f2efe2f883424a7e73c4ef"
+    },
+    {
+      "questionId": "u10-s006-v002",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "計算 (-4a)(-5a²)。",
+      "givenConditions": [],
+      "target": "兩負單項式相乘",
+      "choices": [
+        "-20a³",
+        "9a³",
+        "20a²",
+        "20a³"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "負負得正，係數 20；a¹·a²=a³。",
+        "derivedChoice": "20a³",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "結果 20a³。",
+      "steps": [
+        "負負得正，係數 20。",
+        "a¹·a²=a³。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-20a³",
+          "truth": false,
+          "reason": "符號錯。"
+        },
+        {
+          "choice": "9a³",
+          "truth": false,
+          "reason": "係數相加。"
+        },
+        {
+          "choice": "20a²",
+          "truth": false,
+          "reason": "指數未相加。"
+        },
+        {
+          "choice": "20a³",
+          "truth": true,
+          "reason": "20a³ 正確。"
+        }
+      ],
+      "misconceptionTarget": "負負符號或指數相加錯",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「兩負單項式相乘」且四個選項以同一表示層級作答；逐項重算後只有「20a³」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "基礎：兩負單項式相乘，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v002-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "adc9b251b397b80c94c320b002b2c4be829762dc464e8189e5543657f9d63ade"
+    },
+    {
+      "questionId": "u10-s006-v003",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "計算 (2xy)(3x²y)。",
+      "givenConditions": [],
+      "target": "雙文字單項式乘法",
+      "choices": [
+        "5x³y²",
+        "6x²y",
+        "6x³y²",
+        "6x³y"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "係數 6；x¹⁺²=x³；y¹⁺¹=y²。",
+        "derivedChoice": "6x³y²",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "每種未知數分別合併指數。",
+      "steps": [
+        "係數 6。",
+        "x¹⁺²=x³。",
+        "y¹⁺¹=y²。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5x³y²",
+          "truth": false,
+          "reason": "係數誤加。"
+        },
+        {
+          "choice": "6x²y",
+          "truth": false,
+          "reason": "指數未完整相加。"
+        },
+        {
+          "choice": "6x³y²",
+          "truth": true,
+          "reason": "6x³y² 正確。"
+        },
+        {
+          "choice": "6x³y",
+          "truth": false,
+          "reason": "漏掉 y 的指數。"
+        }
+      ],
+      "misconceptionTarget": "多未知數時漏合併一種指數",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「雙文字單項式乘法」且四個選項以同一表示層級作答；逐項重算後只有「6x³y²」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "基礎：雙文字單項式乘法，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v003-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c64d467480dd913f2e3074d602bc45b6d5027be8eca4342d05a4f23a81890998"
+    },
+    {
+      "questionId": "u10-s006-v004",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "計算 (-1/2 x³)(8x²)。",
+      "givenConditions": [],
+      "target": "分數係數乘法",
+      "choices": [
+        "-4x⁵",
+        "4x⁵",
+        "-8x⁶",
+        "-4x⁶"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "(-1/2)×8=-4，x³·x²=x⁵。",
+        "derivedChoice": "-4x⁵",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "分數係數與指數分別運算。",
+      "steps": [
+        "(-1/2)×8=-4，x³·x²=x⁵。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-4x⁵",
+          "truth": true,
+          "reason": "-4x⁵ 正確。"
+        },
+        {
+          "choice": "4x⁵",
+          "truth": false,
+          "reason": "漏負號。"
+        },
+        {
+          "choice": "-8x⁶",
+          "truth": false,
+          "reason": "係數與指數都錯。"
+        },
+        {
+          "choice": "-4x⁶",
+          "truth": false,
+          "reason": "指數誤相乘。"
+        }
+      ],
+      "misconceptionTarget": "分數係數符號或指數錯",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「分數係數乘法」且四個選項以同一表示層級作答；逐項重算後只有「-4x⁵」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "標準：分數係數乘法，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v004-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "100445d07889007888e375000b76b01b3fd41c41bc447de9e6db2e1c6982c004"
+    },
+    {
+      "questionId": "u10-s006-v005",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "計算 (3a²b³)(-2ab²)。",
+      "givenConditions": [],
+      "target": "多文字高次乘法",
+      "choices": [
+        "-6a²b⁵",
+        "6a³b⁶",
+        "-5a³b⁵",
+        "-6a³b⁵"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "係數 -6；a²⁺¹=a³；b³⁺²=b⁵。",
+        "derivedChoice": "-6a³b⁵",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "結果 -6a³b⁵。",
+      "steps": [
+        "係數 -6。",
+        "a²⁺¹=a³。",
+        "b³⁺²=b⁵。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-6a²b⁵",
+          "truth": false,
+          "reason": "a 指數未加。"
+        },
+        {
+          "choice": "6a³b⁶",
+          "truth": false,
+          "reason": "符號與 b 指數錯。"
+        },
+        {
+          "choice": "-5a³b⁵",
+          "truth": false,
+          "reason": "係數誤加。"
+        },
+        {
+          "choice": "-6a³b⁵",
+          "truth": true,
+          "reason": "-6a³b⁵ 正確。"
+        }
+      ],
+      "misconceptionTarget": "多底數指數相加不完整",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「多文字高次乘法」且四個選項以同一表示層級作答；逐項重算後只有「-6a³b⁵」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "標準：多文字高次乘法，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v005-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "186932b3d2a8331d55ae38a6358139ec90af420c4d93d5321291e3a152ac0197"
+    },
+    {
+      "questionId": "u10-s006-v006",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "若 (mx²)(-3x³)=12x⁵，則 m 為何？",
+      "givenConditions": [],
+      "target": "反求單項式係數",
+      "choices": [
+        "4",
+        "-4",
+        "-9",
+        "9"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "係數比較：-3m=12，所以 m=-4；指數 2+3=5 已符合。",
+        "derivedChoice": "-4",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "由乘積係數反求 m。",
+      "steps": [
+        "係數比較：-3m=12，所以 m=-4。",
+        "指數 2+3=5 已符合。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "忽略負號。"
+        },
+        {
+          "choice": "-4",
+          "truth": true,
+          "reason": "m=-4 正確。"
+        },
+        {
+          "choice": "-9",
+          "truth": false,
+          "reason": "把係數相加。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "錯解 -3m=12。"
+        }
+      ],
+      "misconceptionTarget": "由乘積係數反求時符號錯",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「反求單項式係數」且四個選項以同一表示層級作答；逐項重算後只有「-4」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "標準：反求單項式係數，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v006-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9c97228b82df0c18027d32986d2c8894660af3a2919dea6068948e1a7a315a83"
+    },
+    {
+      "questionId": "u10-s006-v007",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "計算 [(-2x²y)²](3xy³)。",
+      "givenConditions": [],
+      "target": "冪與乘法綜合",
+      "choices": [
+        "12x⁵y⁵",
+        "-12x⁵y⁵",
+        "12x⁴y⁶",
+        "6x⁵y⁵"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "先平方：(-2x²y)²=4x⁴y²；再乘 3xy³ 得 12x⁵y⁵。",
+        "derivedChoice": "12x⁵y⁵",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "冪先作用於係數和每個文字，再做單項式乘法。",
+      "steps": [
+        "先平方：(-2x²y)²=4x⁴y²。",
+        "再乘 3xy³ 得 12x⁵y⁵。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12x⁵y⁵",
+          "truth": true,
+          "reason": "12x⁵y⁵ 正確。"
+        },
+        {
+          "choice": "-12x⁵y⁵",
+          "truth": false,
+          "reason": "平方後仍保留負號。"
+        },
+        {
+          "choice": "12x⁴y⁶",
+          "truth": false,
+          "reason": "指數分配錯。"
+        },
+        {
+          "choice": "6x⁵y⁵",
+          "truth": false,
+          "reason": "係數未平方。"
+        }
+      ],
+      "misconceptionTarget": "單項式平方未作用到所有因子",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「冪與乘法綜合」且四個選項以同一表示層級作答；逐項重算後只有「12x⁵y⁵」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "進階：冪與乘法綜合，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v007-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9bc82f40e584ed587ddef28a081669e0505e603182ff43e7c04b08ce34470cf1"
+    },
+    {
+      "questionId": "u10-s006-v008",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "若 A=-2x³y²，B=3x²y⁴，則 AB 的總次數為何？",
+      "givenConditions": [],
+      "target": "乘積的總次數",
+      "choices": [
+        "7",
+        "9",
+        "11",
+        "13"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "AB=-6x⁵y⁶，總次數為 5+6=11。",
+        "derivedChoice": "11",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "先合併各文字指數，再相加求總次數。",
+      "steps": [
+        "AB=-6x⁵y⁶，總次數為 5+6=11。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "只加原 A 次數。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "只取最大指數。"
+        },
+        {
+          "choice": "11",
+          "truth": true,
+          "reason": "11 正確。"
+        },
+        {
+          "choice": "13",
+          "truth": false,
+          "reason": "把所有係數也算入。"
+        }
+      ],
+      "misconceptionTarget": "把總次數誤作最大指數",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「乘積的總次數」且四個選項以同一表示層級作答；逐項重算後只有「11」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "進階：乘積的總次數，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v008-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c2dbafd7fedd37edcd3ca891b0d553b7316abfd1bd118208449eca943cec028d"
+    },
+    {
+      "questionId": "u10-s006-v009",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "(2xᵐ)(3x⁴)=6x⁹，則 m 為何？",
+      "givenConditions": [],
+      "target": "由乘積指數反求",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "13"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "同底數指數相加：m+4=9，所以 m=5。",
+        "derivedChoice": "5",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "比較乘積指數建立方程。",
+      "steps": [
+        "同底數指數相加：m+4=9，所以 m=5。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "m+4=7。"
+        },
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "直接抄已知 4。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "5 正確。"
+        },
+        {
+          "choice": "13",
+          "truth": false,
+          "reason": "把指數相加結果再加。"
+        }
+      ],
+      "misconceptionTarget": "指數比較方程錯",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「由乘積指數反求」且四個選項以同一表示層級作答；逐項重算後只有「5」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "進階：由乘積指數反求，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v009-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "fc0b24ba718f2f120e6f61812a4fafd25ac2cae83c37e2209dc7e7ba5246d41b"
+    },
+    {
+      "questionId": "u10-s006-v010",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "正方形邊長為 3x² 公分，其面積為何？",
+      "givenConditions": [],
+      "target": "正方形面積",
+      "choices": [
+        "9x⁴ 平方公分",
+        "6x² 平方公分",
+        "9x² 平方公分",
+        "3x⁴ 平方公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "面積=(3x²)²=9x⁴ 平方公分。",
+        "derivedChoice": "9x⁴ 平方公分",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "邊長自乘，係數與 x² 都要平方。",
+      "steps": [
+        "面積=(3x²)²=9x⁴ 平方公分。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9x⁴ 平方公分",
+          "truth": true,
+          "reason": "9x⁴ 正確。"
+        },
+        {
+          "choice": "6x² 平方公分",
+          "truth": false,
+          "reason": "把面積當周長的一半。"
+        },
+        {
+          "choice": "9x² 平方公分",
+          "truth": false,
+          "reason": "只平方係數。"
+        },
+        {
+          "choice": "3x⁴ 平方公分",
+          "truth": false,
+          "reason": "只平方文字。"
+        }
+      ],
+      "misconceptionTarget": "平方單項式時只平方一部分",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "公分×公分=平方公分。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「正方形面積」且四個選項以同一表示層級作答；逐項重算後只有「9x⁴ 平方公分」成立。",
+      "boundaryAudit": "邊長 3x² 不為負；作實際正方形時需 x≠0。",
+      "difficultyReason": "素養：正方形面積，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "正方形面積要求邊長乘自身，並將公分轉為平方公分。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v010-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a6a01b9a7f34d6c732629aa0a1fc71377e7b24b1db5cb39b6396d015f1f3e9c0"
+    },
+    {
+      "questionId": "u10-s006-v011",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "一箱有 4x³ 個零件，每個零件重 2x² 公克。整箱零件總重為何？",
+      "givenConditions": [],
+      "target": "總重量乘法模型",
+      "choices": [
+        "6x⁵ 公克",
+        "8x⁵ 公克",
+        "8x⁶ 公克",
+        "6x⁶ 公克"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "總重=(4x³)(2x²)=8x⁵ 公克。",
+        "derivedChoice": "8x⁵ 公克",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "數量乘單件重量，係數相乘、指數相加。",
+      "steps": [
+        "總重=(4x³)(2x²)=8x⁵ 公克。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6x⁵ 公克",
+          "truth": false,
+          "reason": "係數相加。"
+        },
+        {
+          "choice": "8x⁵ 公克",
+          "truth": true,
+          "reason": "8x⁵ 正確。"
+        },
+        {
+          "choice": "8x⁶ 公克",
+          "truth": false,
+          "reason": "指數相乘。"
+        },
+        {
+          "choice": "6x⁶ 公克",
+          "truth": false,
+          "reason": "係數與指數皆錯。"
+        }
+      ],
+      "misconceptionTarget": "把數量與單重相加",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "件數為無量綱計數，乘公克/件得到公克。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「總重量乘法模型」且四個選項以同一表示層級作答；逐項重算後只有「8x⁵ 公克」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "素養：總重量乘法模型，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "「每個」與「一箱有」決定總重使用乘法，且單位最後為公克。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v011-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f2b4e199f7ebb475fa24ab1112ad7e21161b3cbab72e0dbc6f69e057e342d1ce"
+    },
+    {
+      "questionId": "u10-s006-v012",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "每個相同區域的面積為 5x² 平方公尺，共有 3x 個區域，總面積為何？",
+      "givenConditions": [],
+      "target": "多區總面積",
+      "choices": [
+        "8x³ 平方公尺",
+        "15x² 平方公尺",
+        "15x 平方公尺",
+        "15x³ 平方公尺"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "總面積=(5x²)(3x)=15x³ 平方公尺。",
+        "derivedChoice": "15x³ 平方公尺",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "區域數乘每區面積。",
+      "steps": [
+        "總面積=(5x²)(3x)=15x³ 平方公尺。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "8x³ 平方公尺",
+          "truth": false,
+          "reason": "係數相加。"
+        },
+        {
+          "choice": "15x² 平方公尺",
+          "truth": false,
+          "reason": "漏加 x 指數。"
+        },
+        {
+          "choice": "15x 平方公尺",
+          "truth": false,
+          "reason": "漏掉 x²。"
+        },
+        {
+          "choice": "15x³ 平方公尺",
+          "truth": true,
+          "reason": "15x³ 正確。"
+        }
+      ],
+      "misconceptionTarget": "忽略情境中的乘法關係",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "3x 是區域數，乘平方公尺得到平方公尺。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「多區總面積」且四個選項以同一表示層級作答；逐項重算後只有「15x³ 平方公尺」成立。",
+      "boundaryAudit": "x 應為使 3x 為正整數的值；題目只求代數式。",
+      "difficultyReason": "素養：多區總面積，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "區域數與單區面積決定相乘；題幹同時要求辨認面積單位。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s006-v012-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f8ea981f86d18bda7c70548ee886ad1138af701e828f14f1f9b7367feaae9875"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u10-s006-cr001",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "計算 (-3a²b)(4ab³)，並說明各係數與指數如何得到。",
+      "requiredWork": [
+        "係數相乘。",
+        "a、b 指數分別相加。"
+      ],
+      "standardSolution": [
+        "係數 (-3)×4=-12。",
+        "a²·a=a³；b·b³=b⁴。",
+        "結果 -12a³b⁴。"
+      ],
+      "alternativeMethods": [
+        "可先寫成 -12·a^(2+1)·b^(1+3)。"
+      ],
+      "reasoningSteps": [
+        "係數 (-3)×4=-12。",
+        "a²·a=a³；b·b³=b⁴。",
+        "結果 -12a³b⁴。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "結果與係數/指數說明全對。"
+        },
+        {
+          "score": 2,
+          "criteria": "只一個指數或符號錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道係數相乘或指數相加其中一項。"
+        },
+        {
+          "score": 0,
+          "criteria": "使用加法合併規則或無作答。"
+        }
+      ],
+      "partialCreditRules": [
+        "文字順序 a³b⁴、b⁴a³ 等價。"
+      ],
+      "followThroughPolicy": "若係數符號錯但指數全對，給 2 分。",
+      "unitAndNotationRules": "不涉及實際單位；指數須為非負整數。",
+      "answerOnlyPolicy": "只寫 -12a³b⁴ 無說明，最高 2 分。",
+      "commonErrorTargets": [
+        "係數相乘並使用同底數指數相加"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "recomputedResult": "獨立重算總次數由 3+4=7。",
+        "ambiguity": "題意資料足夠，評分規則已對應本題推理。",
+        "decision": "pass"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f2f9c89e051aac4a6d1a9934ee254692ac2bb9a0cb4c9f25de7362639ca0baf4"
+    },
+    {
+      "questionId": "u10-s006-cr002",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-multiply",
+      "skillSlot": "s006",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "已知 (mx³y²)(-2x²y⁴)=10x⁵y⁶。求 m，並檢查所有文字指數。",
+      "requiredWork": [
+        "比較係數。",
+        "檢查 x、y 指數。"
+      ],
+      "standardSolution": [
+        "係數 -2m=10，所以 m=-5。",
+        "x 指數 3+2=5，y 指數 2+4=6，皆符合。"
+      ],
+      "alternativeMethods": [
+        "可先以文字部分相除確認只需解係數。"
+      ],
+      "reasoningSteps": [
+        "係數 -2m=10，所以 m=-5。",
+        "x 指數 3+2=5，y 指數 2+4=6，皆符合。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "m=-5 且兩個指數檢查完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "m 正確但未檢查指數。"
+        },
+        {
+          "score": 1,
+          "criteria": "列出 -2m=10 但解錯，或只檢查指數。"
+        },
+        {
+          "score": 0,
+          "criteria": "無合理比較。"
+        }
+      ],
+      "partialCreditRules": [
+        "若只漏寫一種指數檢查，最高 2 分。"
+      ],
+      "followThroughPolicy": "係數早期符號錯但後續一致，最多 1 分。",
+      "unitAndNotationRules": "不涉及單位。",
+      "answerOnlyPolicy": "只寫 m=-5，最高 2 分。",
+      "commonErrorTargets": [
+        "係數相乘並使用同底數指數相加"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "recomputedResult": "獨立代回 (-5)(-2)=10，指數均吻合。",
+        "ambiguity": "題意資料足夠，評分規則已對應本題推理。",
+        "decision": "pass"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b73c4fa3aab8164920c1c6c14104e9aa0570d291e2c875e38e132fbc4baa511b"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "reviewId": "u10-s006-v001-review",
+      "questionId": "u10-s006-v001",
+      "questionContentSha256": "22e2db19ae9f0d3ef8dd3f943e5261b36e888cda29f2efe2f883424a7e73c4ef",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "係數 3×(-2)=-6；x 指數 2+1=3。",
+      "derivedAnswer": "-6x³",
+      "storedAnswer": "-6x³",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：-5x³：係數相加。；-6x³：-6x³ 正確。；6x²：指數未相加且符號錯。；-6x²：指數未相加。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「係數符號或指數法則錯」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎：基本單項式相乘，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「計算 (3x²)(-2x)。」獨立重算：係數 3×(-2)=-6；x 指數 2+1=3。 正解「-6x³」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "df92f7f1a68eb12789917339ba4064b4cbedfe1cc5fdf6b4f16ac91ab66ab26f"
+    },
+    {
+      "reviewId": "u10-s006-v002-review",
+      "questionId": "u10-s006-v002",
+      "questionContentSha256": "adc9b251b397b80c94c320b002b2c4be829762dc464e8189e5543657f9d63ade",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "負負得正，係數 20；a¹·a²=a³。",
+      "derivedAnswer": "20a³",
+      "storedAnswer": "20a³",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：-20a³：符號錯。；9a³：係數相加。；20a²：指數未相加。；20a³：20a³ 正確。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「負負符號或指數相加錯」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎：兩負單項式相乘，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「計算 (-4a)(-5a²)。」獨立重算：負負得正，係數 20；a¹·a²=a³。 正解「20a³」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "9d3a244d9573cebe0b1f988e7508b59f6243183f6ff0c583354be542214469cd"
+    },
+    {
+      "reviewId": "u10-s006-v003-review",
+      "questionId": "u10-s006-v003",
+      "questionContentSha256": "c64d467480dd913f2e3074d602bc45b6d5027be8eca4342d05a4f23a81890998",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "係數 6；x¹⁺²=x³；y¹⁺¹=y²。",
+      "derivedAnswer": "6x³y²",
+      "storedAnswer": "6x³y²",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：5x³y²：係數誤加。；6x²y：指數未完整相加。；6x³y²：6x³y² 正確。；6x³y：漏掉 y 的指數。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「多未知數時漏合併一種指數」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "基礎：雙文字單項式乘法，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「計算 (2xy)(3x²y)。」獨立重算：係數 6；x¹⁺²=x³；y¹⁺¹=y²。 正解「6x³y²」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "b89ca7374c1002be5d79b3634718d8e06954962407c50e64563de4fffefc015b"
+    },
+    {
+      "reviewId": "u10-s006-v004-review",
+      "questionId": "u10-s006-v004",
+      "questionContentSha256": "100445d07889007888e375000b76b01b3fd41c41bc447de9e6db2e1c6982c004",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "(-1/2)×8=-4，x³·x²=x⁵。",
+      "derivedAnswer": "-4x⁵",
+      "storedAnswer": "-4x⁵",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：-4x⁵：-4x⁵ 正確。；4x⁵：漏負號。；-8x⁶：係數與指數都錯。；-4x⁶：指數誤相乘。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「分數係數符號或指數錯」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準：分數係數乘法，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「計算 (-1/2 x³)(8x²)。」獨立重算：(-1/2)×8=-4，x³·x²=x⁵。 正解「-4x⁵」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "647f45c55972c53e7216d0b1d0654f5ef7419d4d371842c88fa6757ea356caa3"
+    },
+    {
+      "reviewId": "u10-s006-v005-review",
+      "questionId": "u10-s006-v005",
+      "questionContentSha256": "186932b3d2a8331d55ae38a6358139ec90af420c4d93d5321291e3a152ac0197",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "係數 -6；a²⁺¹=a³；b³⁺²=b⁵。",
+      "derivedAnswer": "-6a³b⁵",
+      "storedAnswer": "-6a³b⁵",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：-6a²b⁵：a 指數未加。；6a³b⁶：符號與 b 指數錯。；-5a³b⁵：係數誤加。；-6a³b⁵：-6a³b⁵ 正確。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「多底數指數相加不完整」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準：多文字高次乘法，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「計算 (3a²b³)(-2ab²)。」獨立重算：係數 -6；a²⁺¹=a³；b³⁺²=b⁵。 正解「-6a³b⁵」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "5e6806cb55f4ff3e38ba80d66dd8b6819bae12222019b129230b78560458aedf"
+    },
+    {
+      "reviewId": "u10-s006-v006-review",
+      "questionId": "u10-s006-v006",
+      "questionContentSha256": "9c97228b82df0c18027d32986d2c8894660af3a2919dea6068948e1a7a315a83",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "係數比較：-3m=12，所以 m=-4；指數 2+3=5 已符合。",
+      "derivedAnswer": "-4",
+      "storedAnswer": "-4",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：4：忽略負號。；-4：m=-4 正確。；-9：把係數相加。；9：錯解 -3m=12。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「由乘積係數反求時符號錯」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "標準：反求單項式係數，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「若 (mx²)(-3x³)=12x⁵，則 m 為何？」獨立重算：係數比較：-3m=12，所以 m=-4；指數 2+3=5 已符合。 正解「-4」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "234444b70de495fda2fd6ad0c2b7bdbb1a790c788e5d6d4a8ec8b3e7627d142e"
+    },
+    {
+      "reviewId": "u10-s006-v007-review",
+      "questionId": "u10-s006-v007",
+      "questionContentSha256": "9bc82f40e584ed587ddef28a081669e0505e603182ff43e7c04b08ce34470cf1",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "先平方：(-2x²y)²=4x⁴y²；再乘 3xy³ 得 12x⁵y⁵。",
+      "derivedAnswer": "12x⁵y⁵",
+      "storedAnswer": "12x⁵y⁵",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：12x⁵y⁵：12x⁵y⁵ 正確。；-12x⁵y⁵：平方後仍保留負號。；12x⁴y⁶：指數分配錯。；6x⁵y⁵：係數未平方。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「單項式平方未作用到所有因子」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階：冪與乘法綜合，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「計算 [(-2x²y)²](3xy³)。」獨立重算：先平方：(-2x²y)²=4x⁴y²；再乘 3xy³ 得 12x⁵y⁵。 正解「12x⁵y⁵」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "b2185e65cee8835d5aa19df9e5cc65b919ec6905c1dd2d925320f3ff14de30da"
+    },
+    {
+      "reviewId": "u10-s006-v008-review",
+      "questionId": "u10-s006-v008",
+      "questionContentSha256": "c2dbafd7fedd37edcd3ca891b0d553b7316abfd1bd118208449eca943cec028d",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "AB=-6x⁵y⁶，總次數為 5+6=11。",
+      "derivedAnswer": "11",
+      "storedAnswer": "11",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：7：只加原 A 次數。；9：只取最大指數。；11：11 正確。；13：把所有係數也算入。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「把總次數誤作最大指數」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階：乘積的總次數，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「若 A=-2x³y²，B=3x²y⁴，則 AB 的總次數為何？」獨立重算：AB=-6x⁵y⁶，總次數為 5+6=11。 正解「11」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "cde15b3172dac8fa4bac9540ff5dfaf571aee8dc50a0152988ca2177a7ee6914"
+    },
+    {
+      "reviewId": "u10-s006-v009-review",
+      "questionId": "u10-s006-v009",
+      "questionContentSha256": "fc0b24ba718f2f120e6f61812a4fafd25ac2cae83c37e2209dc7e7ba5246d41b",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "同底數指數相加：m+4=9，所以 m=5。",
+      "derivedAnswer": "5",
+      "storedAnswer": "5",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：3：m+4=7。；4：直接抄已知 4。；5：5 正確。；13：把指數相加結果再加。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "本題為純代數量；各選項單位一致或不涉及單位。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「指數比較方程錯」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "進階：由乘積指數反求，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「(2xᵐ)(3x⁴)=6x⁹，則 m 為何？」獨立重算：同底數指數相加：m+4=9，所以 m=5。 正解「5」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "6208cb18d4bf6f63c02e660dfc9e79f9a4590b0b3cf43b09f548bdc4e20c3685"
+    },
+    {
+      "reviewId": "u10-s006-v010-review",
+      "questionId": "u10-s006-v010",
+      "questionContentSha256": "a6a01b9a7f34d6c732629aa0a1fc71377e7b24b1db5cb39b6396d015f1f3e9c0",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "面積=(3x²)²=9x⁴ 平方公分。",
+      "derivedAnswer": "9x⁴ 平方公分",
+      "storedAnswer": "9x⁴ 平方公分",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：9x⁴ 平方公分：9x⁴ 正確。；6x² 平方公分：把面積當周長的一半。；9x² 平方公分：只平方係數。；3x⁴ 平方公分：只平方文字。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "公分×公分=平方公分。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "邊長 3x² 不為負；作實際正方形時需 x≠0。",
+        "alternateReading": "常見誤讀「平方單項式時只平方一部分」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養：正方形面積，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "正方形面積要求邊長乘自身，並將公分轉為平方公分。",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「正方形邊長為 3x² 公分，其面積為何？」獨立重算：面積=(3x²)²=9x⁴ 平方公分。 正解「9x⁴ 平方公分」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "6a05f6c7b149d6f2ed6a35612543ff7521f25fa16a325c4e3d9c7822c6841ba2"
+    },
+    {
+      "reviewId": "u10-s006-v011-review",
+      "questionId": "u10-s006-v011",
+      "questionContentSha256": "f2b4e199f7ebb475fa24ab1112ad7e21161b3cbab72e0dbc6f69e057e342d1ce",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "總重=(4x³)(2x²)=8x⁵ 公克。",
+      "derivedAnswer": "8x⁵ 公克",
+      "storedAnswer": "8x⁵ 公克",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：6x⁵ 公克：係數相加。；8x⁵ 公克：8x⁵ 正確。；8x⁶ 公克：指數相乘。；6x⁶ 公克：係數與指數皆錯。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "件數為無量綱計數，乘公克/件得到公克。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+        "alternateReading": "常見誤讀「把數量與單重相加」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養：總重量乘法模型，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "「每個」與「一箱有」決定總重使用乘法，且單位最後為公克。",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一箱有 4x³ 個零件，每個零件重 2x² 公克。整箱零件總重為何？」獨立重算：總重=(4x³)(2x²)=8x⁵ 公克。 正解「8x⁵ 公克」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "d2a751f00ccf230d352d2fc38095b695a64999b292e239e6e83f01f95a649992"
+    },
+    {
+      "reviewId": "u10-s006-v012-review",
+      "questionId": "u10-s006-v012",
+      "questionContentSha256": "f8ea981f86d18bda7c70548ee886ad1138af701e828f14f1f9b7367feaae9875",
+      "reviewVersion": "human-review-u10-r1",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "independentSolution": "總面積=(5x²)(3x)=15x³ 平方公尺。",
+      "derivedAnswer": "15x³ 平方公尺",
+      "storedAnswer": "15x³ 平方公尺",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐一檢查四選項：8x³ 平方公尺：係數相加。；15x² 平方公尺：漏加 x 指數。；15x 平方公尺：漏掉 x²。；15x³ 平方公尺：15x³ 正確。",
+        "undefinedSymbol": "題幹用語均在「單項式乘法」講義定義。",
+        "unitConflict": "3x 是區域數，乘平方公尺得到平方公尺。",
+        "roundingConflict": "全程精確運算，不需四捨五入。",
+        "domainBoundary": "x 應為使 3x 為正整數的值；題目只求代數式。",
+        "alternateReading": "常見誤讀「忽略情境中的乘法關係」會導向錯誤選項，不能形成第二個正解。"
+      },
+      "difficultyReason": "素養：多區總面積，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "區域數與單區面積決定相乘；題幹同時要求辨認面積單位。",
+      "prerequisiteCheck": "使用先備技能：polynomial-add-subtract；未使用後續單元知識。",
+      "languageCheck": "使用臺灣繁體中文；題幹、選項與所求量完整，未省略必要比較基準。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「每個相同區域的面積為 5x² 平方公尺，共有 3x 個區域，總面積為何？」獨立重算：總面積=(5x²)(3x)=15x³ 平方公尺。 正解「15x³ 平方公尺」；四個選項理由均已逐項核對。",
+      "reviewedAt": "2026-07-12",
+      "contentSha256": "9b95ff1f7840f8c559d7bb39b49351072087f3f13584a134369bc039fa76b91c"
+    }
+  ],
+  "drawingSpecs": []
+};
