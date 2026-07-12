@@ -1,0 +1,256 @@
+{
+  "lectureId": "u23-s002-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-basics",
+  "skillId": "solid-views",
+  "title": "立體三視圖：從正面側面和俯視重建立體",
+  "lockedSkillTitle": "立體三視圖",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能說明正面圖、側面圖與俯視圖各保留哪些資訊。",
+    "能由方塊高度表畫出三視圖。",
+    "能比較多個立體是否可能具有相同視圖。",
+    "能避免把被遮住的方塊誤判為不存在。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "solid-nets",
+      "requiredLevel": "知道立體可由平面圖表示，但摺疊圖與投影圖用途不同。",
+      "bridge": "展開圖保留表面連接；三視圖把立體沿觀察方向投影到平面。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "正面圖",
+      "definition": "從約定正面沿垂直視線觀看立體所得的平面投影。"
+    },
+    {
+      "term": "側面圖",
+      "definition": "從約定側面觀看所得的平面投影。"
+    },
+    {
+      "term": "俯視圖",
+      "definition": "從正上方向下觀看所得的平面投影。"
+    },
+    {
+      "term": "遮擋",
+      "definition": "同一視線上前方部分擋住後方部分，但後方物體仍可能存在。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "h(i,j)",
+      "meaning": "底面第i列第j格堆疊方塊的高度。"
+    },
+    {
+      "symbol": "0",
+      "meaning": "該底面格沒有方塊。"
+    }
+  ],
+  "conceptNarrative": [
+    "三視圖把同一立體從三個互相垂直方向投影。每一張視圖只顯示兩個方向的資訊，第三個方向被壓縮。",
+    "對小正方體堆成的立體，俯視圖告訴哪些底面格非空；正面圖每一欄高度等於該前後方向各堆中最高者。",
+    "側面圖同理，每一欄高度是左右方向上的最大高度。因為只保留最大值，單靠三視圖有時不能唯一決定被遮住的方塊。",
+    "題目必須約定正面與左右方向；沒有方向標示時，不可自行把圖旋轉後混用。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "俯視投影",
+      "statement": "底面某格只要至少有一個方塊，俯視圖對應格即有記號。"
+    },
+    {
+      "name": "正面輪廓高度",
+      "statement": "正面圖某水平位置的高度等於該方向整列堆疊高度的最大值。"
+    },
+    {
+      "name": "側面輪廓高度",
+      "statement": "側面圖某深度位置的高度等於該左右整列高度的最大值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "正面第j欄高度＝max_i h(i,j)",
+      "conditions": [
+        "i表示前後列",
+        "j表示左右欄",
+        "從正面沿前後方向觀看"
+      ],
+      "meaning": "遮擋後只保留該欄最高輪廓。"
+    },
+    {
+      "formula": "最少方塊數≥俯視圖非空格數",
+      "conditions": [
+        "每個非空底格至少一顆"
+      ],
+      "meaning": "俯視圖提供底層占格的下界。"
+    }
+  ],
+  "nonApplicableCases": [
+    "三視圖通常不能顯示立體內部空洞。",
+    "正面圖某欄高3，不代表該視線上的每一堆都高3。",
+    "俯視圖只標占格，不直接顯示高度。",
+    "若觀察方向未約定，左右順序可能相反，不能硬判。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認正面與座標方向。",
+      "check": "左右、前後是否已定義？"
+    },
+    {
+      "step": 2,
+      "instruction": "先畫俯視占格。",
+      "check": "每個高度大於0的底格是否標出？"
+    },
+    {
+      "step": 3,
+      "instruction": "沿正面視線逐欄取最大高度。",
+      "check": "是否被較矮的後方堆誤導？"
+    },
+    {
+      "step": 4,
+      "instruction": "沿側面視線逐列取最大高度。",
+      "check": "側面順序是否依題目方向？"
+    },
+    {
+      "step": 5,
+      "instruction": "做相容性檢查。",
+      "check": "三張圖的總寬、總深與最高高度是否一致？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "高度表（前列到後列）為[[2,1],[1,3]]，求從前方看的兩欄高度。",
+      "solutionSteps": [
+        "左欄取max(2,1)=2。",
+        "右欄取max(1,3)=3。"
+      ],
+      "answer": "正面圖欄高為2、3。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "同一高度表的俯視圖有幾格？",
+      "solutionSteps": [
+        "四個高度都大於0。",
+        "俯視圖四格皆有占用。"
+      ],
+      "answer": "4格。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "正面圖只有一欄高3，是否能確定前後方向只有一堆方塊？",
+      "solutionSteps": [
+        "正面投影壓縮前後資訊。",
+        "前後可有多堆，只要最高為3。"
+      ],
+      "answer": "不能確定。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "俯視圖有3個非空格，最少有幾顆小方塊？",
+      "solutionSteps": [
+        "每個非空格至少一顆。",
+        "三格至少3顆。"
+      ],
+      "answer": "至少3顆。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把俯視圖格數當成總方塊數。",
+      "why": "俯視圖看不到堆疊高度。",
+      "correction": "俯視圖只給每個底格是否非空。"
+    },
+    {
+      "mistake": "正面圖每欄把所有前後高度相加。",
+      "why": "投影輪廓應取最大值。",
+      "correction": "同一視線上的堆疊互相遮擋，取最高者。"
+    },
+    {
+      "mistake": "看到正面高3就認為每個位置都高3。",
+      "why": "忽略被遮住的較矮堆。",
+      "correction": "高3只保證至少一堆達3。"
+    },
+    {
+      "mistake": "側面圖順序隨意顛倒。",
+      "why": "未遵守觀察方向。",
+      "correction": "先標明從右側或左側觀看。"
+    },
+    {
+      "mistake": "認為三視圖一定唯一決定立體。",
+      "why": "投影會丟失深度與內部資訊。",
+      "correction": "檢查是否存在不同高度表給出相同最大值。"
+    },
+    {
+      "mistake": "把空底格上方畫方塊。",
+      "why": "違反實體堆疊的連續支撐。",
+      "correction": "較高層方塊下方必須有方塊支撐。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先確認觀察方向？",
+    "正面與側面輪廓是否取最大值而非加總？",
+    "俯視圖是否只表示占格？",
+    "我是否保留被遮住方塊存在的可能？",
+    "三視圖尺寸是否互相相容？"
+  ],
+  "summary": [
+    "三視圖是三個互相垂直方向的投影。",
+    "俯視圖保留占格，正面與側面保留最高輪廓。",
+    "投影會丟失資訊，因此不一定唯一。",
+    "方向約定是判讀順序的必要條件。"
+  ],
+  "connections": {
+    "previous": "承接展開圖的平面表示觀念，改以投影而非攤開來描述立體。",
+    "next": [
+      "截面概念將研究平面切過立體時得到的交集。",
+      "後續素養題會用三視圖估算方塊數與材料。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u23-s002-fig001",
+      "purpose": "顯示由小正方體堆成的立體及其正面、右側與俯視方向箭頭。",
+      "altText": "底面2乘2的方塊堆，高度依前左2、前右1、後左1、後右3排列，旁有三個觀察方向箭頭。"
+    },
+    "u23-s002-fig001"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s002-v001",
+      "u23-s002-v002",
+      "u23-s002-v003",
+      "u23-s002-v004",
+      "u23-s002-v005",
+      "u23-s002-v006",
+      "u23-s002-v007",
+      "u23-s002-v008",
+      "u23-s002-v009",
+      "u23-s002-v010",
+      "u23-s002-v011",
+      "u23-s002-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s002-cr001",
+      "u23-s002-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以兩列兩欄高度表分別重算正面最大值、俯視占格與最少方塊數，並確認講義明確指出三視圖可能不唯一與觀察方向不可省略。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "0d889cf5aee2c7f9f3c33ebef1e44b0601222cb8a7bf6165a8e13793d2e71453"
+}

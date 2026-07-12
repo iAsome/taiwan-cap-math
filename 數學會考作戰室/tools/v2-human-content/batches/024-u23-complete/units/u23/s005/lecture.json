@@ -1,0 +1,258 @@
+{
+  "lectureId": "u23-s005-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-basics",
+  "skillId": "solid-pyramid-concept",
+  "title": "角錐概念：從多邊形底面會聚到一個頂點",
+  "lockedSkillTitle": "角錐概念",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能依一個多邊形底面與共同頂點辨認角錐。",
+    "能由n角錐推得面數、稜數與頂點數。",
+    "能分清側稜、斜高與垂直高。",
+    "能比較角柱與角錐的結構差異。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "solid-prism-concept",
+      "requiredLevel": "能以底面邊數n計數角柱的面、稜與頂點。",
+      "bridge": "角柱有兩個底面；角錐只保留一個底面，所有側面在頂點會聚。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "角錐",
+      "definition": "以一個多邊形為底面，底面各頂點都連到同一個不在底面上的頂點所形成的立體。"
+    },
+    {
+      "term": "頂點",
+      "definition": "角錐所有三角形側面共同會聚的點。"
+    },
+    {
+      "term": "側稜",
+      "definition": "角錐頂點連到底面頂點的線段。"
+    },
+    {
+      "term": "斜高",
+      "definition": "正角錐某一側面內，從頂點垂直於該側面底邊的線段。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "n",
+      "meaning": "底面多邊形邊數，n≥3。"
+    },
+    {
+      "symbol": "h",
+      "meaning": "角錐頂點到底面所在平面的垂直距離。"
+    }
+  ],
+  "conceptNarrative": [
+    "角錐只有一個多邊形底面，其他面都是三角形，且所有三角形側面共用同一個頂點。",
+    "n角錐底面有n個頂點，再加一個錐頂，共n+1個頂點；底面有n條稜，側稜也有n條，共2n條稜。",
+    "面數由一個底面與n個三角形側面組成，共n+1個面。這三個計數可與角柱公式對照。",
+    "角錐的高必須垂直於底面平面。側稜是頂點到底面頂點；斜高在側面內，三者通常不同。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "n角錐",
+      "statement": "底面為n邊形，並由一個共同頂點與底面各邊形成n個三角形側面。"
+    },
+    {
+      "name": "角錐的高",
+      "statement": "角錐頂點到底面所在平面的垂線段長。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "V=n+1",
+      "conditions": [
+        "n角錐"
+      ],
+      "meaning": "n個底面頂點加1個錐頂。"
+    },
+    {
+      "formula": "E=2n",
+      "conditions": [
+        "n角錐"
+      ],
+      "meaning": "n條底面稜加n條側稜。"
+    },
+    {
+      "formula": "F=n+1",
+      "conditions": [
+        "n角錐"
+      ],
+      "meaning": "n個三角形側面加1個底面。"
+    },
+    {
+      "formula": "V-E+F=2",
+      "conditions": [
+        "凸角錐"
+      ],
+      "meaning": "可驗算計數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "圓錐底面是圓，不套n角錐計數公式。",
+    "一般角錐頂點的垂足不一定在底面中心。",
+    "側稜長不等於垂直高。",
+    "斜高只在正角錐或指定側面時有清楚對應，不能任意當高。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找唯一多邊形底面。",
+      "check": "其他面是否全為三角形？"
+    },
+    {
+      "step": 2,
+      "instruction": "確認所有側面是否共用同一頂點。",
+      "check": "若沒有共同頂點，就不是角錐。"
+    },
+    {
+      "step": 3,
+      "instruction": "令底面邊數為n。",
+      "check": "名稱是否為n角錐？"
+    },
+    {
+      "step": 4,
+      "instruction": "分類底面稜、側稜與面。",
+      "check": "是否得到V=n+1、E=2n、F=n+1？"
+    },
+    {
+      "step": 5,
+      "instruction": "辨認高度線段。",
+      "check": "線段是否垂直底面平面？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "四角錐有多少頂點、稜與面？",
+      "solutionSteps": [
+        "n=4。",
+        "V=5、E=8、F=5。"
+      ],
+      "answer": "5個頂點、8條稜、5個面。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "一個角錐有12條稜，底面為幾邊形？",
+      "solutionSteps": [
+        "2n=12。",
+        "n=6。"
+      ],
+      "answer": "六邊形，為六角錐。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "五角錐有幾個三角形側面？",
+      "solutionSteps": [
+        "每一條底邊對應一個三角形側面。"
+      ],
+      "answer": "5個。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "正四角錐側稜長13公分，能否直接當作高？",
+      "solutionSteps": [
+        "側稜斜向連到底面頂點。",
+        "高是垂直底面平面的線段。"
+      ],
+      "answer": "不能。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把角錐說成有兩個底面。",
+      "why": "混淆角柱。",
+      "correction": "角錐只有一個多邊形底面。"
+    },
+    {
+      "mistake": "側面數算成n+1。",
+      "why": "把底面也算成側面。",
+      "correction": "側面n個，總面才是n+1。"
+    },
+    {
+      "mistake": "稜數寫成3n。",
+      "why": "套用了角柱公式。",
+      "correction": "角錐只有一組底面稜與一組側稜，共2n。"
+    },
+    {
+      "mistake": "頂點數寫成2n。",
+      "why": "想像有兩個底面。",
+      "correction": "底面n點加錐頂1點。"
+    },
+    {
+      "mistake": "把斜高與垂直高視為同一線段。",
+      "why": "忽略兩者所在平面不同。",
+      "correction": "高垂直底面；斜高位於側面。"
+    },
+    {
+      "mistake": "任何三角形側面組合都稱角錐。",
+      "why": "未確認側面有同一共同頂點。",
+      "correction": "所有側面必在同一錐頂會聚。"
+    }
+  ],
+  "selfCheck": [
+    "我是否找到唯一底面與共同錐頂？",
+    "n是否為底面邊數？",
+    "稜數是否只算底面稜與側稜？",
+    "總面數是否包含底面？",
+    "所稱高度是否垂直底面？"
+  ],
+  "summary": [
+    "n角錐有n個三角形側面。",
+    "頂點與面數皆為n+1，稜數為2n。",
+    "角錐只有一個底面。",
+    "高、側稜與斜高不能混用。"
+  ],
+  "connections": {
+    "previous": "以角柱的n邊形計數為基礎，比較兩底面與單底面會聚結構。",
+    "next": [
+      "圓柱與圓錐會把底面改為圓。",
+      "錐體體積將使用垂直高而非側稜。"
+    ]
+  },
+  "figureReferences": [
+    "u23-s005-fig001"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s005-v001",
+      "u23-s005-v002",
+      "u23-s005-v003",
+      "u23-s005-v004",
+      "u23-s005-v005",
+      "u23-s005-v006",
+      "u23-s005-v007",
+      "u23-s005-v008",
+      "u23-s005-v009",
+      "u23-s005-v010",
+      "u23-s005-v011",
+      "u23-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s005-cr001",
+      "u23-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以四角錐和12稜反推逐項驗算公式，並明確檢查高、斜高與側稜的定義沒有互換；計數通過歐拉關係。；並逐面確認底面與側面數量。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "0c6e74caaad314e38a0805c1a9af8b1cdb8e39daa2d26206f98b36b34b266f62"
+}

@@ -1,0 +1,244 @@
+{
+  "lectureId": "u23-s011-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-measure",
+  "skillId": "pyramid-cone-volume",
+  "title": "錐體體積：同底等高柱體的三分之一",
+  "lockedSkillTitle": "錐體體積",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能理解角錐與圓錐體積公式中的三分之一。",
+    "能計算角錐、圓錐體積。",
+    "能由體積反求高或底面尺度。",
+    "能比較同底等高柱體與錐體。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "prism-volume",
+      "requiredLevel": "能使用V=Bh計算柱體體積並辨認垂直高。",
+      "bridge": "柱體體積為Bh。將同底等高的錐體裝滿三次可填滿柱體，建立V=Bh÷3。"
+    }
+  ],
+  "glossary": [
+    [
+      "錐體",
+      "只有一個底面，側面向同一頂點收束的立體。"
+    ],
+    [
+      "錐高",
+      "頂點到底面所在平面的垂直距離。"
+    ],
+    [
+      "母線",
+      "圓錐頂點到底圓周上的斜線段，通常不是高。"
+    ],
+    [
+      "同底等高",
+      "底面相同或等面積，且垂直高相同。"
+    ]
+  ],
+  "notation": [
+    [
+      "V",
+      "錐體體積。"
+    ],
+    [
+      "B",
+      "底面積。"
+    ],
+    [
+      "h",
+      "頂點到底面平面的垂直高。"
+    ]
+  ],
+  "conceptNarrative": [
+    "錐體由底面向頂點逐漸縮小，不能像柱體每一層都保持同樣面積，因此體積小於Bh。",
+    "在國中範圍可用實驗或分割理解：三個同底等高錐體的體積合起來等於一個柱體，故V=Bh/3。",
+    "角錐的B是多邊形底面積；圓錐的B是πr²，所以圓錐V=πr²h/3。",
+    "公式中的h一定是垂直高；斜高或母線需先由題目關係求出垂直高，不能直接代入。"
+  ],
+  "formalDefinitions": [
+    [
+      "錐體體積",
+      "V=Bh/3。"
+    ],
+    [
+      "圓錐體積",
+      "V=πr²h/3。"
+    ],
+    [
+      "同底等高比較",
+      "錐體體積是柱體體積的1/3。"
+    ]
+  ],
+  "formulas": [
+    [
+      "V=Bh/3",
+      [
+        "角錐或圓錐",
+        "h為垂直高"
+      ],
+      "底面積乘高後除以3。"
+    ],
+    [
+      "V圓錐=πr²h/3",
+      [
+        "r為底面半徑"
+      ],
+      "圓底面積代入通式。"
+    ]
+  ],
+  "nonApplicableCases": [
+    "不能漏除以3。",
+    "不能把母線當圓錐高。",
+    "不能用底面周長代替底面積。",
+    "截去頂端後的錐臺不直接套單一錐體公式。"
+  ],
+  "method": [
+    [
+      "辨認底面並求B",
+      "底面形狀與尺寸為何？"
+    ],
+    [
+      "找垂直高h",
+      "是否給的是母線或斜高？"
+    ],
+    [
+      "先算Bh",
+      "相當於同底等高柱體體積。"
+    ],
+    [
+      "除以3",
+      "題目確實是錐體。"
+    ],
+    [
+      "檢查單位與大小",
+      "結果應為同底等高柱體的三分之一。"
+    ]
+  ],
+  "workedExamples": [
+    [
+      "L1",
+      "底面積30平方公分、高9公分的角錐體積？",
+      [
+        "30×9÷3=90。"
+      ],
+      "90立方公分。"
+    ],
+    [
+      "L2",
+      "半徑3、高8公分的圓錐體積？",
+      [
+        "π×9×8÷3=24π。"
+      ],
+      "24π立方公分。"
+    ],
+    [
+      "L3",
+      "同底等高圓柱體積150立方公分，圓錐體積？",
+      [
+        "150÷3=50。"
+      ],
+      "50立方公分。"
+    ],
+    [
+      "L4",
+      "角錐體積96立方公分、底面積24平方公分，高？",
+      [
+        "96×3÷24=12。"
+      ],
+      "12公分。"
+    ]
+  ],
+  "commonMistakes": [
+    [
+      "漏除以3",
+      "把錐體當柱體。",
+      "先求Bh再檢查是否要除3。"
+    ],
+    [
+      "除以2",
+      "誤套三角形面積。",
+      "錐體固定除以3。"
+    ],
+    [
+      "把母線代入h",
+      "混淆斜長與垂直距離。",
+      "找垂直於底面的線段。"
+    ],
+    [
+      "圓錐用2πr",
+      "把圓周長當底面積。",
+      "B=πr²。"
+    ],
+    [
+      "反求高度只算V÷B",
+      "忘記公式有1/3。",
+      "h=3V÷B。"
+    ],
+    [
+      "體積寫平方單位",
+      "量綱少一維。",
+      "使用立方單位。"
+    ]
+  ],
+  "selfCheck": [
+    "是否確認為錐體而非柱體？",
+    "是否用單一底面積？",
+    "垂直高是否正確？",
+    "是否除以3？",
+    "答案是否為立方單位？"
+  ],
+  "summary": [
+    "錐體V=Bh/3。",
+    "同底等高錐體為柱體的1/3。",
+    "圓錐V=πr²h/3。",
+    "h是垂直高，不是母線。",
+    "反求高時h=3V/B。"
+  ],
+  "connections": {
+    "previous": "本節建立在柱體V=Bh上，以同底等高比較加入三分之一。",
+    "next": [
+      "後續可由展開圖處理表面積，但體積仍依底面與垂直高。",
+      "組合體會運用柱體加錐體或柱體減錐體。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s011-v001",
+      "u23-s011-v002",
+      "u23-s011-v003",
+      "u23-s011-v004",
+      "u23-s011-v005",
+      "u23-s011-v006",
+      "u23-s011-v007",
+      "u23-s011-v008",
+      "u23-s011-v009",
+      "u23-s011-v010",
+      "u23-s011-v011",
+      "u23-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s011-cr001",
+      "u23-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐題以Bh/3重算90、24π、50與12，核對反求高度需乘3；另檢查母線、錐臺與單位三個邊界均未被錯用。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "4cd8d839459781495c9e238fca4cf1641ae4d3daf459edabfbd9cdaf1680c84d"
+}

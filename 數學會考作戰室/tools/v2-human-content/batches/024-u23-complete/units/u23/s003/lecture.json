@@ -1,0 +1,248 @@
+{
+  "lectureId": "u23-s003-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-basics",
+  "skillId": "solid-cross-section",
+  "title": "截面概念：理解平面切過立體留下的圖形",
+  "lockedSkillTitle": "截面概念",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能把截面解釋為切割平面與立體的交集。",
+    "能辨認平行於底面或垂直於底面的常見截面。",
+    "能區分截面、投影與表面。",
+    "能依切割位置判斷截面是否退化或不存在。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "solid-views",
+      "requiredLevel": "知道平面圖可描述立體，但投影與實際切面資訊不同。",
+      "bridge": "三視圖是看見的投影；截面是實際平面穿過立體後的交集。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "截面",
+      "definition": "用一個平面切過立體時，切割平面與立體共同部分形成的平面圖形。"
+    },
+    {
+      "term": "切割平面",
+      "definition": "想像用來切開立體的無限平面；真正截面只取它落在立體內的部分。"
+    },
+    {
+      "term": "平行截面",
+      "definition": "切割平面與某指定平面平行所得的截面。"
+    },
+    {
+      "term": "退化截面",
+      "definition": "切割平面只碰到一個頂點或一條稜時，交集可能縮成點或線段。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "平行，例如切割平面∥底面。"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "垂直，例如切割平面⊥底面。"
+    }
+  ],
+  "conceptNarrative": [
+    "截面不是從某方向看到的影子，而是立體真的被平面切過後露出的切口形狀。",
+    "直柱體被平行於底面的平面切割，截面與底面全等；直圓柱得到圓，角柱得到與底面同形同大的多邊形。",
+    "錐體被平行於底面的平面切割，截面與底面相似但通常較小；越接近頂點，截面越小。",
+    "若平面只擦過立體而未穿過內部，交集可能只是點或線。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "截面",
+      "statement": "切割平面與立體的集合交集，視為位於該平面上的圖形。"
+    },
+    {
+      "name": "平行底面截面",
+      "statement": "柱體中與底面平行的截面和底面全等；錐體中與底面平行的截面和底面相似。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "柱體平行截面面積＝底面積",
+      "conditions": [
+        "切割平面平行於兩底面且穿過內部"
+      ],
+      "meaning": "柱體沿高度方向截面大小不變。"
+    },
+    {
+      "formula": "錐體平行截面線性比＝頂點到截面距離÷頂點到底面距離",
+      "conditions": [
+        "截面平行底面"
+      ],
+      "meaning": "截面隨距頂點比例縮放。"
+    }
+  ],
+  "nonApplicableCases": [
+    "斜切長方體的截面不一定是長方形。",
+    "投影輪廓不等於截面。",
+    "切割平面若完全在立體外，沒有截面。",
+    "只碰頂點得到點時，不可當成有面積三角形。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認立體種類與切割方向。",
+      "check": "平面與底面平行、垂直或斜交？"
+    },
+    {
+      "step": 2,
+      "instruction": "找平面穿過哪些面或稜。",
+      "check": "每個交點是否真的位於立體邊界？"
+    },
+    {
+      "step": 3,
+      "instruction": "依切割平面內的順序連接交點。",
+      "check": "連線是否都落在同一平面？"
+    },
+    {
+      "step": 4,
+      "instruction": "判斷形狀與大小關係。",
+      "check": "是全等、相似或一般多邊形？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查是否退化。",
+      "check": "平面是否只接觸點或線而未穿過內部？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "直圓柱被平行於底面的平面切過，截面為何？",
+      "solutionSteps": [
+        "各高度的圓形橫截面相同。"
+      ],
+      "answer": "與底面全等的圓。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "正四角錐被平行於底面的平面切過，截面位於頂點與底面之間。",
+      "solutionSteps": [
+        "截面邊分別平行底面邊。",
+        "截面與正方形底面相似但較小。"
+      ],
+      "answer": "較小的正方形。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "球被通過球心的平面切過，截面為何？",
+      "solutionSteps": [
+        "平面到球心距離為0。",
+        "得到球的最大圓截面。"
+      ],
+      "answer": "以球半徑為半徑的圓。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "切割平面只通過正方體的一條稜且未進入內部，交集為何？",
+      "solutionSteps": [
+        "平面與立體共同部分只有該稜。"
+      ],
+      "answer": "一條線段，屬退化交集。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把正面投影畫成截面。",
+      "why": "投影包含視線遮擋，截面只取切割位置。",
+      "correction": "先找切割平面穿過立體的邊界交點。"
+    },
+    {
+      "mistake": "認為任何柱體截面都與底面全等。",
+      "why": "只有平行於底面的截面保證全等。",
+      "correction": "先檢查切割方向。"
+    },
+    {
+      "mistake": "認為錐體平行截面與底面全等。",
+      "why": "錐體向頂點縮小。",
+      "correction": "應為相似且內部截面較小。"
+    },
+    {
+      "mistake": "球的任何平面截面都等於大圓。",
+      "why": "只有通過球心時半徑最大。",
+      "correction": "離球心越遠，截面圓越小。"
+    },
+    {
+      "mistake": "只碰頂點也畫出多邊形。",
+      "why": "未檢查平面是否穿入內部。",
+      "correction": "只碰一點時交集就是點。"
+    },
+    {
+      "mistake": "連接不共面的立體頂點作截面。",
+      "why": "截面所有點必須位於同一切割平面。",
+      "correction": "依同一平面與各面的交線順序連接。"
+    }
+  ],
+  "selfCheck": [
+    "我是否區分截面與投影？",
+    "切割平面方向是否明確？",
+    "我是否找到所有實際交點？",
+    "截面是全等、相似還是一般形狀？",
+    "是否出現只碰點或稜的退化情況？"
+  ],
+  "summary": [
+    "截面是切割平面與立體的交集。",
+    "柱體的平行底面截面全等於底面。",
+    "錐體的平行底面截面與底面相似。",
+    "切割位置與方向共同決定截面。"
+  ],
+  "connections": {
+    "previous": "由三視圖的平面投影過渡到實際切割所得的平面交集。",
+    "next": [
+      "角柱與角錐概念會用底面和側面辨認截面。",
+      "截面與立體技能將綜合多種立體的切法。"
+    ]
+  },
+  "figureReferences": [
+    {
+      "figureId": "u23-s003-fig001",
+      "purpose": "以透明長方體顯示一個平行底面的切割平面與矩形截面。",
+      "altText": "透明長方體中有一個水平切割平面，與底面平行，交集為與底面全等的長方形。"
+    },
+    "u23-s003-fig001"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s003-v001",
+      "u23-s003-v002",
+      "u23-s003-v003",
+      "u23-s003-v004",
+      "u23-s003-v005",
+      "u23-s003-v006",
+      "u23-s003-v007",
+      "u23-s003-v008",
+      "u23-s003-v009",
+      "u23-s003-v010",
+      "u23-s003-v011",
+      "u23-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s003-cr001",
+      "u23-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "核對柱體與錐體平行截面的全等和相似差異，另檢查球心截面與退化交集的邊界說明，避免把投影誤當切口。；四個例題均重新由切平面位置判斷一次。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "53d754b32ffa6f0f8f75fdbc3a41be7704b2aad85f92d68cffa69c1ee9e75c88"
+}

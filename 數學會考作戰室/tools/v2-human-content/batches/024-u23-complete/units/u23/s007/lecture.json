@@ -1,0 +1,251 @@
+{
+  "lectureId": "u23-s007-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-basics",
+  "skillId": "solid-cone-concept",
+  "title": "圓錐概念：區分底面半徑高度和母線",
+  "lockedSkillTitle": "圓錐概念",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能以一個圓形底面與一個頂點辨認圓錐。",
+    "能區分軸、高、半徑與母線。",
+    "能在直圓錐軸截面中使用畢氏定理。",
+    "能說明圓錐側面展開為扇形。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "solid-cylinder-concept",
+      "requiredLevel": "知道圓柱有兩個全等平行圓與圓周方向。",
+      "bridge": "圓錐把圓柱的一個底圓縮成單一頂點，母線因而會聚。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "圓錐",
+      "definition": "以一個圓為底面，側面上的母線由底圓周各點會聚到同一頂點的立體。"
+    },
+    {
+      "term": "母線",
+      "definition": "圓錐頂點連到底面圓周上一點的側面線段。"
+    },
+    {
+      "term": "軸",
+      "definition": "連接圓錐頂點與底面圓心的線段或直線。"
+    },
+    {
+      "term": "直圓錐",
+      "definition": "軸垂直於底面的圓錐。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "r",
+      "meaning": "底面半徑。"
+    },
+    {
+      "symbol": "h",
+      "meaning": "頂點到底面平面的垂直距離。"
+    },
+    {
+      "symbol": "l",
+      "meaning": "直圓錐的母線長或斜高。"
+    }
+  ],
+  "conceptNarrative": [
+    "圓錐只有一個圓形底面，曲側面在一個頂點會聚。直圓錐的頂點位於底面圓心正上方。",
+    "在通過軸的截面中，得到等腰三角形；半個截面形成直角三角形，兩股為r與h，斜邊為l。",
+    "因此直圓錐有l²=r²+h²。這個關係只適用於正確辨認的半徑、垂直高與母線。",
+    "沿一條母線剪開側面，攤平為半徑l的扇形；扇形弧長等於底面圓周長2πr。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "直圓錐",
+      "statement": "頂點到底面圓心的軸垂直於底面。"
+    },
+    {
+      "name": "圓錐的高",
+      "statement": "頂點到底面所在平面的垂直距離。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "l²=r²+h²",
+      "conditions": [
+        "直圓錐",
+        "l為母線",
+        "h為垂直高"
+      ],
+      "meaning": "來自軸截面中的直角三角形。"
+    },
+    {
+      "formula": "側面展開扇形弧長＝2πr",
+      "conditions": [
+        "沿一條母線剪開"
+      ],
+      "meaning": "扇形外弧接回後繞底圓一周。"
+    }
+  ],
+  "nonApplicableCases": [
+    "斜圓錐的母線長可能隨方向改變，不能直接用同一l。",
+    "扇形半徑是母線l，不是底面半徑r。",
+    "圓錐沒有第二個底面。",
+    "高不能沿曲面量測。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找底圓、圓心與頂點。",
+      "check": "是否只有一個底圓？"
+    },
+    {
+      "step": 2,
+      "instruction": "畫軸並判斷是否垂直底面。",
+      "check": "可否視為直圓錐？"
+    },
+    {
+      "step": 3,
+      "instruction": "在軸截面標r、h、l。",
+      "check": "l是否為直角三角形斜邊？"
+    },
+    {
+      "step": 4,
+      "instruction": "需要長度時用畢氏定理。",
+      "check": "平方與開根是否正確？"
+    },
+    {
+      "step": 5,
+      "instruction": "需要展開時對應扇形弧與底圓周。",
+      "check": "扇形半徑是否用l？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "直圓錐r=3公分、h=4公分，母線l多少？",
+      "solutionSteps": [
+        "l²=3²+4²=25。",
+        "l=5。"
+      ],
+      "answer": "5公分。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "直圓錐l=13公分、r=5公分，高多少？",
+      "solutionSteps": [
+        "h²=13²−5²=144。",
+        "h=12。"
+      ],
+      "answer": "12公分。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "側面展開扇形的半徑是哪個量？",
+      "solutionSteps": [
+        "扇形從原錐頂向外展開。",
+        "半徑對應母線。"
+      ],
+      "answer": "l。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "底面半徑4公分時，扇形弧長多少？",
+      "solutionSteps": [
+        "弧接回後等於底面圓周。",
+        "2πr=8π。"
+      ],
+      "answer": "8π公分。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把圓錐說成有兩個圓底。",
+      "why": "混淆圓柱。",
+      "correction": "圓錐只有一底圓與一頂點。"
+    },
+    {
+      "mistake": "把母線直接當垂直高。",
+      "why": "母線位於側面且斜向。",
+      "correction": "在軸截面中用l²=r²+h²。"
+    },
+    {
+      "mistake": "寫l=r+h。",
+      "why": "忽略直角三角形。",
+      "correction": "長度平方相加。"
+    },
+    {
+      "mistake": "展開扇形半徑用r。",
+      "why": "混淆底圓半徑與側面母線。",
+      "correction": "扇形半徑為l。"
+    },
+    {
+      "mistake": "扇形弧長寫πr²。",
+      "why": "把面積當弧長。",
+      "correction": "弧長等於2πr。"
+    },
+    {
+      "mistake": "斜圓錐仍假設所有母線相等。",
+      "why": "直圓錐對稱性不存在。",
+      "correction": "先確認頂點位於圓心正上方。"
+    }
+  ],
+  "selfCheck": [
+    "我是否確認只有一個底圓？",
+    "h是否垂直底面？",
+    "l是否在側面上？",
+    "畢氏關係是否平方後使用？",
+    "展開扇形半徑與弧長是否分別為l與2πr？"
+  ],
+  "summary": [
+    "直圓錐由底圓、頂點與曲側面組成。",
+    "r、h、l在軸截面形成直角三角形。",
+    "l²=r²+h²。",
+    "側面展開是半徑l且弧長2πr的扇形。"
+  ],
+  "connections": {
+    "previous": "由圓柱的底圓、軸與側面展開概念，轉為母線會聚的圓錐。",
+    "next": [
+      "截面與立體將比較圓柱與圓錐不同切法。",
+      "錐體體積會使用垂直高h。"
+    ]
+  },
+  "figureReferences": [
+    "u23-s007-fig001"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s007-v001",
+      "u23-s007-v002",
+      "u23-s007-v003",
+      "u23-s007-v004",
+      "u23-s007-v005",
+      "u23-s007-v006",
+      "u23-s007-v007",
+      "u23-s007-v008",
+      "u23-s007-v009",
+      "u23-s007-v010",
+      "u23-s007-v011",
+      "u23-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s007-cr001",
+      "u23-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重新計算3-4-5與5-12-13兩組長度，檢查扇形半徑和弧長角色，並明確限定畢氏公式只用於直圓錐軸截面。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "0af16dfc227a2b135c457c523d92f8bb907f774f1648cc82d45b68a1c03efb9c"
+}

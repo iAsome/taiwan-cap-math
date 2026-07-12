@@ -1,0 +1,115 @@
+{
+  "auditVersion": "u23-final-human-audit-r1.0",
+  "unitId": "u23",
+  "reviewedAt": "2026-07-12",
+  "scope": {
+    "lectures": 20,
+    "mc": 240,
+    "constructedResponse": 40,
+    "semanticReviews": 240,
+    "figures": 5
+  },
+  "manualInspection": [
+    "Every lecture read for undefined notation and prerequisite leakage.",
+    "Every MC correct choice recomputed and four choices checked.",
+    "Every constructed response solution, alternative, rubric and follow-through rule reviewed.",
+    "Negative signs, parentheses, fractions, roots, exponents, π, dimensions and units inspected.",
+    "All five SVGs rendered and visually inspected after generation.",
+    "Advanced and literacy items checked for non-cosmetic reasoning/context."
+  ],
+  "actualIssuesFoundAndRepaired": [
+    {
+      "item": "u23-s006-v008",
+      "finding": "The draft correct value for the side-net rectangle perimeter was not aligned with the listed choices.",
+      "repair": "Recomputed 2(2πr+h)=12π+10 and aligned the unique correct option."
+    },
+    {
+      "item": "u23-s009-v009",
+      "finding": "The draft used total surface area 54π with h=r, producing a non-listed irrational radius.",
+      "repair": "Changed the internally inconsistent total to 36π so the unique radius is 3 cm."
+    },
+    {
+      "item": "u23-s009-v010",
+      "finding": "The draft material-cost choices omitted the independently computed 144 yuan result.",
+      "repair": "Inserted 144 yuan and rewrote all option analyses."
+    },
+    {
+      "item": "u23-s010-v008",
+      "finding": "Two choices, 4:5 and 12:15, were equivalent and both correct.",
+      "repair": "Replaced the equivalent distractor and retained a single 4:5 answer."
+    },
+    {
+      "item": "u23-s014-v010",
+      "finding": "The computed float volume 1.099 m³ did not match the draft answer index.",
+      "repair": "Moved the truth marker and answer index to 1.099."
+    },
+    {
+      "item": "u23-s015-v011",
+      "finding": "The cross-shaped five-cube model independently gave 3.52 m², absent from the draft choices.",
+      "repair": "Inserted 3.52 m² and rebuilt distractors."
+    },
+    {
+      "item": "u23-s015-v012",
+      "finding": "The rectangular through-hole coating total was 424 cm², absent from the draft choices.",
+      "repair": "Inserted 424 cm² and corrected the explanation."
+    },
+    {
+      "item": "u23-s016-v009",
+      "finding": "Tiered pricing independently produced a 10-yuan difference, but the draft answer index pointed elsewhere.",
+      "repair": "Corrected the answer index and option truth evidence."
+    },
+    {
+      "item": "u23-s018-v005",
+      "finding": "The open-top box internal capacity is 560 cm³ because height loses only the bottom thickness; 560 was absent.",
+      "repair": "Added 560 cm³ and clarified the three internal dimensions."
+    },
+    {
+      "item": "u23-s019-v003-v004",
+      "finding": "Two package-count drafts had correct computations but answer indices did not point to 80 and 18.",
+      "repair": "Corrected both answer positions and option analyses."
+    },
+    {
+      "item": "u23-s019-v009",
+      "finding": "The original inverse-buffer volume 9504 cm³ had no matching thickness option.",
+      "repair": "Reframed it as a forward calculation at t=2, yielding 11424 cm³ with one correct choice."
+    },
+    {
+      "item": "u23-s019-v012",
+      "finding": "Independent cost comparison produced 0.4 yuan, not any original distractor.",
+      "repair": "Added the 0.4-yuan result and corrected the decision."
+    },
+    {
+      "item": "unit duplicate audit",
+      "finding": "Normalization exposed several conversion prompts and one cube-gluing item as overly close to number/unit variants.",
+      "repair": "Reauthored them as unit-cube counting, capacity reading, container count, inverse surface-area and inverse prism-structure tasks."
+    },
+    {
+      "item": "lecture-title punctuation audit",
+      "finding": "Eight draft human-facing lecture titles used the separator punctuation 、, which the locked authoring policy forbids inside titles.",
+      "repair": "Reworded the eight titles with 和 or 與 while preserving every locked skill ID, locked skill title, order and scope."
+    },
+    {
+      "item": "lecture-review evidence length audit",
+      "finding": "Three skill-specific lecture review notes were mathematically specific but shorter than the verifier evidence threshold.",
+      "repair": "Added the concrete recheck performed for cross-sections, pyramid faces and application-context reasonableness; no mathematical conclusion changed."
+    },
+    {
+      "item": "literacy-necessity evidence audit",
+      "finding": "Forty-four literacy items stated the necessary context too briefly for the evidence threshold, and u23-s020-v010 omitted the field.",
+      "repair": "Rewrote all forty-five records to identify the exact contextual datum, modeling decision, unit conversion, conservation rule or rounding constraint that changes the solution."
+    },
+    {
+      "item": "u23-s012-fig001 canonical hash key audit",
+      "finding": "The labelsAndPositions object used numeric-only keys 5 and 12, whose property enumeration order differs between Python canonical serialization and JavaScript JSON.stringify.",
+      "repair": "Replaced numeric-only keys with semantic keys length5, length12, hypotenuseX and prismHeight10; visible labels and geometry remain unchanged, and the cross-runtime content hash is now deterministic."
+    },
+    {
+      "item": "u23-s004-v003 and u23-s005-v003 independent-solution duplication",
+      "finding": "The prism and pyramid side-face questions had different prompts and explanations but shared an identical independent-solution sentence.",
+      "repair": "Re-solved each from its own geometry: a prism side face extends from each base edge, whereas a pyramid triangular side face joins each base edge to the apex; regenerated both semantic-review records and hashes."
+    }
+  ],
+  "unresolvedIssues": [],
+  "decision": "pass-for-central-coordinator-acceptance",
+  "verifierNotSoleEvidence": true
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "title": "U23 semantic review",
+  "required": [
+    "reviewId",
+    "questionId",
+    "contentSha256",
+    "independentSolution",
+    "derivedAnswer",
+    "storedAnswer",
+    "answerMatch",
+    "optionTruth",
+    "uniqueCorrectAnswer",
+    "ambiguityChecks",
+    "reviewerDecision",
+    "reviewerNote",
+    "contentAuthority"
+  ],
+  "properties": {
+    "reviewerDecision": {
+      "const": "pass"
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

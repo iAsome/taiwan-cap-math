@@ -1,0 +1,259 @@
+{
+  "lectureId": "u23-s004-lecture-r1",
+  "unitId": "u23",
+  "numericUnitId": 23,
+  "topicId": "u23-basics",
+  "skillId": "solid-prism-concept",
+  "title": "角柱概念：由底面邊數掌握面稜和頂點",
+  "lockedSkillTitle": "角柱概念",
+  "audience": "臺灣國中零基礎至國中教育會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "learningOutcomes": [
+    "能依兩個全等且平行的多邊形底面辨認角柱。",
+    "能由n角柱推得面數、稜數與頂點數。",
+    "能區分直角柱與斜角柱以及底面與側面。",
+    "能把實物抽象為角柱模型並說明限制。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "solid-cross-section",
+      "requiredLevel": "能辨認柱體平行底面截面與底面全等。",
+      "bridge": "角柱正是沿某方向保持同一多邊形截面的柱體。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "角柱",
+      "definition": "有兩個全等且互相平行的多邊形作底面，對應頂點以平行線段連接形成側面的立體。"
+    },
+    {
+      "term": "n角柱",
+      "definition": "底面為n邊形的角柱，例如三角柱、五角柱。"
+    },
+    {
+      "term": "側稜",
+      "definition": "連接兩底面對應頂點的稜。"
+    },
+    {
+      "term": "直角柱",
+      "definition": "側稜垂直於底面的角柱；其側面為長方形。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "n",
+      "meaning": "底面多邊形的邊數，n為大於或等於3的整數。"
+    },
+    {
+      "symbol": "F,E,V",
+      "meaning": "分別表示面數、稜數與頂點數。"
+    }
+  ],
+  "conceptNarrative": [
+    "角柱名稱由底面形狀決定，不是由側面決定。三角柱有兩個三角形底面，四角柱有兩個四邊形底面。",
+    "n角柱有上下兩個n邊形底面；每一條底邊對應一個側面，所以有n個側面。",
+    "兩底面各有n個頂點，共2n個頂點；底面稜共2n條，再加n條側稜，共3n條稜；總面數n+2。",
+    "直角柱的高等於側稜長；斜角柱的側稜不垂直底面，因此側稜長一般不等於兩底面垂直距離。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "n角柱",
+      "statement": "兩底面為全等平行n邊形，側面依序連接對應邊。"
+    },
+    {
+      "name": "角柱的高",
+      "statement": "兩個平行底面之間的垂直距離。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "V=2n",
+      "conditions": [
+        "n角柱"
+      ],
+      "meaning": "兩底面各有n個頂點。"
+    },
+    {
+      "formula": "E=3n",
+      "conditions": [
+        "n角柱"
+      ],
+      "meaning": "兩底面稜2n加側稜n。"
+    },
+    {
+      "formula": "F=n+2",
+      "conditions": [
+        "n角柱"
+      ],
+      "meaning": "n個側面加2個底面。"
+    },
+    {
+      "formula": "V-E+F=2",
+      "conditions": [
+        "凸角柱"
+      ],
+      "meaning": "可作為計數驗算。"
+    }
+  ],
+  "nonApplicableCases": [
+    "圓柱底面是圓，不稱n角柱。",
+    "只看到很多長方形側面，仍須確認有兩個全等平行底面。",
+    "斜角柱的高不能直接用側稜長。",
+    "底面為凹多邊形時仍可成柱體，但會考主要處理凸多邊形角柱。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找兩個互相平行且全等的面。",
+      "check": "它們是否可作底面？"
+    },
+    {
+      "step": 2,
+      "instruction": "數底面邊數n。",
+      "check": "立體名稱是否為n角柱？"
+    },
+    {
+      "step": 3,
+      "instruction": "分類面與稜。",
+      "check": "側面n個、底面2個、側稜n條？"
+    },
+    {
+      "step": 4,
+      "instruction": "套用2n、3n、n+2。",
+      "check": "n是否為至少3的整數？"
+    },
+    {
+      "step": 5,
+      "instruction": "用歐拉關係或直接重數驗算。",
+      "check": "V-E+F是否為2？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "五角柱有多少頂點、稜與面？",
+      "solutionSteps": [
+        "n=5。",
+        "頂點2n=10，稜3n=15，面n+2=7。"
+      ],
+      "answer": "10個頂點、15條稜、7個面。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "一個角柱有18條稜，底面是幾邊形？",
+      "solutionSteps": [
+        "3n=18。",
+        "n=6。"
+      ],
+      "answer": "六邊形，為六角柱。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "三角柱有幾個側面？",
+      "solutionSteps": [
+        "底面三角形有3條邊。",
+        "每條底邊對應一個側面。"
+      ],
+      "answer": "3個側面。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "斜四角柱側稜長8公分，能否直接說高為8公分？",
+      "solutionSteps": [
+        "高是兩底面垂直距離。",
+        "斜側稜不垂直底面。"
+      ],
+      "answer": "不能。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "以最大的側面作底面命名。",
+      "why": "角柱底面是那一對全等平行多邊形。",
+      "correction": "先找成對底面再數邊。"
+    },
+    {
+      "mistake": "n角柱有n個面。",
+      "why": "漏掉兩個底面。",
+      "correction": "總面數為n+2。"
+    },
+    {
+      "mistake": "稜數算成2n。",
+      "why": "只數兩底面邊，漏掉側稜。",
+      "correction": "加上n條側稜得3n。"
+    },
+    {
+      "mistake": "頂點數算成n。",
+      "why": "只數一個底面。",
+      "correction": "兩底面各n個，共2n。"
+    },
+    {
+      "mistake": "把圓柱稱為無限角柱並套公式。",
+      "why": "國中角柱定義要求多邊形底面。",
+      "correction": "圓柱另行處理。"
+    },
+    {
+      "mistake": "斜角柱把側稜當高。",
+      "why": "高必須垂直底面。",
+      "correction": "作兩底面間的垂線段。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先找出兩個全等平行底面？",
+    "n代表底面邊數嗎？",
+    "面數是否加上兩底面？",
+    "稜數是否包含側稜？",
+    "斜角柱是否把垂直高與側稜分開？"
+  ],
+  "summary": [
+    "角柱由兩個全等平行多邊形底面與側面組成。",
+    "n角柱有2n個頂點、3n條稜、n+2個面。",
+    "名稱由底面邊數決定。",
+    "高是底面間垂直距離。"
+  ],
+  "connections": {
+    "previous": "承接柱體平行截面全等底面的觀念，建立角柱的結構與計數。",
+    "next": [
+      "角錐會只有一個底面並把側面會聚到頂點。",
+      "柱體表面積與體積會使用底面和高。"
+    ]
+  },
+  "figureReferences": [
+    "u23-s004-fig001"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u23-s004-v001",
+      "u23-s004-v002",
+      "u23-s004-v003",
+      "u23-s004-v004",
+      "u23-s004-v005",
+      "u23-s004-v006",
+      "u23-s004-v007",
+      "u23-s004-v008",
+      "u23-s004-v009",
+      "u23-s004-v010",
+      "u23-s004-v011",
+      "u23-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u23-s004-cr001",
+      "u23-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以五角柱與18稜反推例題驗算三個公式，並特別檢查斜角柱的側稜和高不混用；所有計數亦通過V−E+F=2。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+  "contentSha256": "91bc9501d53598d8000b2d41689d1549359b3544c9cff320bdea5604d3d8224d"
+}
