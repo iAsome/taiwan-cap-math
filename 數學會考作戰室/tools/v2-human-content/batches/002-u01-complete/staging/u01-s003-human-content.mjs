@@ -1,0 +1,1217 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u01-s003-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-basics",
+  "skillId": "integer-number-line-position",
+  "title": "數線位置：從原點、方向和刻度讀出坐標",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認原點、正方向與刻度單位。",
+    "能由點的位置讀出整數坐標。",
+    "能由坐標在數線上定位。",
+    "能處理每格不等於 1 的數線。",
+    "能計算移動後的位置。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-positive-negative-meaning",
+      "requiredLevel": "能依基準判斷正方向與負方向，理解正數、負數和 0 的相對位置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "數線",
+      "definition": "用一直線上的位置表示數的圖。"
+    },
+    {
+      "term": "原點",
+      "definition": "坐標為 0 的基準點。"
+    },
+    {
+      "term": "正方向",
+      "definition": "通常以箭頭指向右方，數值沿此方向增加。"
+    },
+    {
+      "term": "坐標",
+      "definition": "表示某點在數線上位置的數。"
+    },
+    {
+      "term": "刻度單位",
+      "definition": "相鄰兩個刻度所代表的數值差。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "O",
+      "meaning": "常用來表示原點。"
+    },
+    {
+      "symbol": "A(a)",
+      "meaning": "點 A 的坐標是 a。"
+    },
+    {
+      "symbol": "→",
+      "meaning": "數線的正方向或移動方向。"
+    }
+  ],
+  "conceptNarrative": [
+    "數線把正負數變成可見的位置。通常越往右數值越大，越往左數值越小。",
+    "讀點前不能只數格子，必須先找兩個已標數字來判斷每格代表多少。",
+    "坐標同時包含方向和距離：原點左側 4 單位是 -4，不是 4。",
+    "移動問題使用「新坐標＝原坐標＋帶號移動量」；向右為正、向左為負，但仍以題目箭頭為準。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "數線坐標",
+      "statement": "原點坐標為 0；沿正方向每增加一個刻度單位，坐標增加相同數值。"
+    },
+    {
+      "name": "位置唯一性",
+      "statement": "在固定數線上，每一個數對應唯一位置，每一個標定位置也有唯一坐標。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "新坐標＝原坐標＋移動量",
+      "conditions": [
+        "向右移記正，向左移記負",
+        "移動量與刻度使用相同單位"
+      ],
+      "meaning": "求移動後的位置。"
+    },
+    {
+      "formula": "每格單位＝兩個已知刻度的數值差÷間隔格數",
+      "conditions": [
+        "已知刻度位於同一數線"
+      ],
+      "meaning": "判斷非單位刻度。"
+    }
+  ],
+  "nonApplicableCases": [
+    "若箭頭方向或數值標示顯示右方不是正方向，不能套用左負右正。",
+    "每格代表 2 時，走三格是 6 個單位，不是 3。",
+    "點在兩刻度中間時，若未說明中間刻度，不得自行估讀。",
+    "坐標和從原點的距離不同；-5 的坐標是 -5，距離是 5。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找原點與正方向。",
+      "check": "0 在哪裡？箭頭朝哪邊？"
+    },
+    {
+      "step": 2,
+      "instruction": "求每格代表多少。",
+      "check": "相鄰已標數字的差是多少？"
+    },
+    {
+      "step": 3,
+      "instruction": "從已知刻度數到目標點。",
+      "check": "向右加、向左減是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "寫出帶正負號的坐標。",
+      "check": "左側點是否漏了負號？"
+    },
+    {
+      "step": 5,
+      "instruction": "把坐標放回圖上檢查。",
+      "check": "結果位置是否與圖一致？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "數線每格 1，A 在原點左邊 5 格。A 的坐標？",
+      "solutionSteps": [
+        "原點是 0。",
+        "向左每格減 1。",
+        "0 向左五格到 -5。"
+      ],
+      "answer": "-5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "數線上 -4 與 2 相隔三格，每格代表多少？",
+      "solutionSteps": [
+        "數值差為 2－(-4)=6。",
+        "共有三格。",
+        "6÷3=2。"
+      ],
+      "answer": "每格 2。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "B 從 -3 向右移 7 單位，終點坐標？",
+      "solutionSteps": [
+        "向右記 +7。",
+        "新坐標=-3+7。",
+        "結果為 4。"
+      ],
+      "answer": "4。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "C 在坐標 6，向左移 9 單位。",
+      "solutionSteps": [
+        "向左記 -9。",
+        "6+(-9)=-3。",
+        "終點在原點左側 3 單位。"
+      ],
+      "answer": "-3。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只數格數，沒有確認每格單位。",
+      "why": "把圖形間距當成數值。",
+      "correction": "先用已知刻度求每格大小。"
+    },
+    {
+      "mistake": "原點左側寫成正數。",
+      "why": "只記距離不記方向。",
+      "correction": "左側通常為負坐標。"
+    },
+    {
+      "mistake": "向左移 4 卻加 4。",
+      "why": "移動方向的符號判斷錯誤。",
+      "correction": "向左移動量記 -4。"
+    },
+    {
+      "mistake": "把 -6 的距離和坐標都寫成 6。",
+      "why": "混淆位置與距離。",
+      "correction": "坐標 -6，離原點距離 6。"
+    },
+    {
+      "mistake": "忽略題目另定正方向。",
+      "why": "死背右正左負。",
+      "correction": "以圖上箭頭與數值標示為準。"
+    },
+    {
+      "mistake": "跨過 0 時停止計數。",
+      "why": "誤把 0 當成不能跨越的端點。",
+      "correction": "數線可連續跨過 0。"
+    }
+  ],
+  "selfCheck": [
+    "我找到 0 了嗎？",
+    "每格是多少？",
+    "方向符號正確嗎？",
+    "坐標和距離有分開嗎？",
+    "將答案放回圖上合理嗎？"
+  ],
+  "summary": [
+    "原點是 0，通常向右增加、向左減少。",
+    "讀點必須先確認刻度單位。",
+    "新坐標＝原坐標＋帶號移動量。",
+    "坐標可為負，距離不可為負。"
+  ],
+  "connections": {
+    "previous": "先備技能是正負數的意義，需能把左右方向轉成正負。",
+    "next": [
+      "數的大小比較可直接利用數線左右位置。",
+      "相反數與絕對值會使用關於原點的對稱與距離。",
+      "整數加法可解釋成數線上的連續移動。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s003-v001",
+      "u01-s003-v002",
+      "u01-s003-v003",
+      "u01-s003-v004",
+      "u01-s003-v005",
+      "u01-s003-v006",
+      "u01-s003-v007",
+      "u01-s003-v008",
+      "u01-s003-v009",
+      "u01-s003-v010",
+      "u01-s003-v011",
+      "u01-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s003-cr001",
+      "u01-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一重畫數線刻度，核對每格單位、左右移動和中點位置；四個例題的坐標均由刻度重新讀取。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "015f041ff15a28aa1e6a69ab6d3b23d1555923ab419dfaec91a156bef04c3f65"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u01-s003-v001",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "數線上，點 A 位在原點左側 4 個單位。A 的坐標是多少？",
+    "choices": [
+      "-4",
+      "4",
+      "0",
+      "-5"
+    ],
+    "answerIndex": 0,
+    "explanation": "原點左側是負方向，距離 4 個單位，因此坐標為 -4。",
+    "steps": [
+      "以原點為 0。",
+      "向左四格。",
+      "得到 -4。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-4",
+        "truth": true,
+        "reason": "0向左4單位到-4。"
+      },
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "4 是右側四單位。"
+      },
+      {
+        "choice": "0",
+        "truth": false,
+        "reason": "0 是原點。"
+      },
+      {
+        "choice": "-5",
+        "truth": false,
+        "reason": "多走一格。"
+      }
+    ],
+    "commonMistake": "只寫距離 4 而忽略左側的負號。",
+    "concept": "數線左側通常為負坐標。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "由原點左側距離讀出負坐標。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "07deede4424fdd6702390d519e52a6ab0fb52e61c889d28a9da3b147b01c1d89"
+  },
+  {
+    "questionId": "u01-s003-v002",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "在通常向右為正的數線上，坐標 +6 的點位於何處？",
+    "choices": [
+      "原點左側 6 單位",
+      "原點右側 6 單位",
+      "原點左側 5 單位",
+      "原點"
+    ],
+    "answerIndex": 1,
+    "explanation": "+6 是正坐標，位於原點右側 6 個單位。",
+    "steps": [
+      "正號表示正方向。",
+      "通常正方向向右。",
+      "距離為 6 單位。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "原點左側 6 單位",
+        "truth": false,
+        "reason": "左側應為 -6。"
+      },
+      {
+        "choice": "原點右側 6 單位",
+        "truth": true,
+        "reason": "+6在0右側6單位。"
+      },
+      {
+        "choice": "原點左側 5 單位",
+        "truth": false,
+        "reason": "距離與坐標均不符。"
+      },
+      {
+        "choice": "原點",
+        "truth": false,
+        "reason": "原點坐標是0。"
+      }
+    ],
+    "commonMistake": "把正號與左方向配對。",
+    "concept": "正坐標位於原點的正方向。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "由正坐標描述數線位置。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "ebb1d048716ecdd2bc0d6780121ca7deed857aedf2a5ebabe8e8045d5329afb1"
+  },
+  {
+    "questionId": "u01-s003-v003",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "svg",
+    "figureId": "fig-u01-s003-v003",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "依圖判斷點 P 的坐標。",
+    "choices": [
+      "-2",
+      "-4",
+      "-3",
+      "3"
+    ],
+    "answerIndex": 2,
+    "explanation": "圖中每格代表 1，P 位在原點左側三格，所以坐標為 -3。",
+    "steps": [
+      "找到刻度 0。",
+      "確認每格 1。",
+      "向左數三格到 P。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-2",
+        "truth": false,
+        "reason": "-2 在P右一格。"
+      },
+      {
+        "choice": "-4",
+        "truth": false,
+        "reason": "-4 在P左一格。"
+      },
+      {
+        "choice": "-3",
+        "truth": true,
+        "reason": "正確讀值。"
+      },
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "符號方向錯。"
+      }
+    ],
+    "commonMistake": "只數到原點的格數 3，卻漏寫負號。",
+    "concept": "讀數線必須同時使用刻度與方向。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "從具體數線圖讀出負坐標。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "1510f816c411ab5d886d4fa464b9e9681070888ff4414aa59127dabaebf45fab"
+  },
+  {
+    "questionId": "u01-s003-v004",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "點 B 的起始坐標是 -2，向右移動 5 個單位後，終點坐標是多少？",
+    "choices": [
+      "-7",
+      "-3",
+      "2",
+      "3"
+    ],
+    "answerIndex": 3,
+    "explanation": "向右移 5 記為 +5，新坐標=-2+5=3。",
+    "steps": [
+      "起點 -2。",
+      "向右移動量 +5。",
+      "-2+5=3。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-7",
+        "truth": false,
+        "reason": "把向右誤寫成-5。"
+      },
+      {
+        "choice": "-3",
+        "truth": false,
+        "reason": "只移一格或計算錯。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "把起點負號忽略。"
+      },
+      {
+        "choice": "3",
+        "truth": true,
+        "reason": "-2+5=3。"
+      }
+    ],
+    "commonMistake": "把 -2 的絕對值與移動量相加得到 7。",
+    "concept": "新坐標＝原坐標＋帶號移動量。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "計算跨過原點的向右移動。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "d77972ef90a12b1fcc61506f21af2f56e10e6f337a74005a0cd6792163a220f0"
+  },
+  {
+    "questionId": "u01-s003-v005",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "數線上坐標 -6 與 2 的中點坐標是多少？",
+    "choices": [
+      "-2",
+      "-4",
+      "2",
+      "4"
+    ],
+    "answerIndex": 0,
+    "explanation": "中點坐標是兩端坐標平均：(-6+2)÷2=-4÷2=-2。",
+    "steps": [
+      "兩坐標相加 -4。",
+      "除以2。",
+      "得到 -2。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-2",
+        "truth": true,
+        "reason": "(-6+2)/2=-2。"
+      },
+      {
+        "choice": "-4",
+        "truth": false,
+        "reason": "只把兩數相加未除2。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "誤把右端當中點。"
+      },
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "符號錯。"
+      }
+    ],
+    "commonMistake": "用兩端距離 8 除以 2 得 4，卻忘記從 -6 向右移 4 到 -2。",
+    "concept": "數線中點位於兩坐標的平均位置。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "由兩端整數坐標求中點。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "2cd702af826a9db06823b8528267edda4333a8721faebacbdd85da1fee44d159"
+  },
+  {
+    "questionId": "u01-s003-v006",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "svg",
+    "figureId": "fig-u01-s003-v006",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "依圖判斷點 Q 的坐標。",
+    "choices": [
+      "5",
+      "4",
+      "6",
+      "2"
+    ],
+    "answerIndex": 1,
+    "explanation": "圖上相鄰刻度相差 2，Q 正好位於標示 4 的刻度，因此坐標是 4。",
+    "steps": [
+      "讀出刻度序列每格2。",
+      "找到Q所在刻度。",
+      "刻度標示4。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "把格數誤當坐標。"
+      },
+      {
+        "choice": "4",
+        "truth": true,
+        "reason": "Q在標示4的刻度。"
+      },
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "讀成右一格。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "少算一格。"
+      }
+    ],
+    "commonMistake": "數 Q 到原點有兩格就答 2，忽略每格代表 2。",
+    "concept": "非單位刻度要先求每格代表的數值。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "讀取每格為2的數線。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "623a2f369914d58c37fbfbd732167369e8fafd833cbb30c9c808129b51305a1c"
+  },
+  {
+    "questionId": "u01-s003-v007",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "點 P 的坐標是 -4。點 Q 與 P 關於坐標 1 的點對稱，Q 的坐標是多少？",
+    "choices": [
+      "-6",
+      "4",
+      "6",
+      "5"
+    ],
+    "answerIndex": 2,
+    "explanation": "對稱中心 1 是兩點中點。P 距離 1 有 5 單位，所以 Q 在 1 右側 5 單位，即 6。",
+    "steps": [
+      "算P到1的距離 1-(-4)=5。",
+      "向中心另一側移5。",
+      "1+5=6。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-6",
+        "truth": false,
+        "reason": "在錯誤方向再移2。"
+      },
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "只取P相反數，對稱中心不是0。"
+      },
+      {
+        "choice": "6",
+        "truth": true,
+        "reason": "Q=2×1-(-4)=6。"
+      },
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "少移一單位。"
+      }
+    ],
+    "commonMistake": "看到「對稱」就直接取相反數 4，忽略對稱中心是 1。",
+    "concept": "關於 c 對稱的兩點以 c 為中點。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "處理非原點中心的數線對稱。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "13b9cb3c772d8aa09fee5d0b2355fc67c6e119bf822a2b3d150145206b773cea"
+  },
+  {
+    "questionId": "u01-s003-v008",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "A、B 的坐標分別為 -7、3。點 C 位在 AB 中點的右側 2 個單位，C 的坐標是多少？",
+    "choices": [
+      "-4",
+      "-2",
+      "2",
+      "0"
+    ],
+    "answerIndex": 3,
+    "explanation": "AB 中點=(-7+3)÷2=-2，再向右2單位得0。",
+    "steps": [
+      "求中點 -2。",
+      "向右記 +2。",
+      "-2+2=0。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-4",
+        "truth": false,
+        "reason": "只算端點差的一半。"
+      },
+      {
+        "choice": "-2",
+        "truth": false,
+        "reason": "停在中點。"
+      },
+      {
+        "choice": "2",
+        "truth": false,
+        "reason": "符號與移動錯。"
+      },
+      {
+        "choice": "0",
+        "truth": true,
+        "reason": "中點-2，右移2到0。"
+      }
+    ],
+    "commonMistake": "求出中點 -2 後忘記再向右移 2。",
+    "concept": "複合位置題先找中點，再套用位移。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "結合中點與帶號移動。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "416a99d41e36c8d9dbb9e59d113eabd335a4307281cbac8711170cd2466d79ab"
+  },
+  {
+    "questionId": "u01-s003-v009",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "數線上有一點與 -1 的距離為 5，且該點位於 -1 的右方。此點坐標為何？",
+    "choices": [
+      "4",
+      "-6",
+      "5",
+      "-4"
+    ],
+    "answerIndex": 0,
+    "explanation": "位於 -1 右方 5 單位，所以 -1+5=4。左方另一個等距點是 -6，但不符合右方條件。",
+    "steps": [
+      "固定點 -1。",
+      "右方移動 +5。",
+      "得到4。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "4",
+        "truth": true,
+        "reason": "-1+5=4，且4在-1右方。"
+      },
+      {
+        "choice": "-6",
+        "truth": false,
+        "reason": "是左方等距點。"
+      },
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "把起點忽略。"
+      },
+      {
+        "choice": "-4",
+        "truth": false,
+        "reason": "只減3。"
+      }
+    ],
+    "commonMistake": "只解出距離方程的左側位置 -6，沒有讀「右方」。",
+    "concept": "固定距離有左右兩點，附加方向可選出唯一位置。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "用方向條件排除另一個等距解。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "cb51f072a791c16a81e0da1f74eb74820daee30c71516668a950a87f3d76c500"
+  },
+  {
+    "questionId": "u01-s003-v010",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "倉庫把中央閘門記為 0，向東的貨架編號為正、向西為負。搬運車從 -3 號位先向東移 8 格，再向西移 4 格，最後停在哪一號位？",
+    "choices": [
+      "-15",
+      "1",
+      "5",
+      "9"
+    ],
+    "answerIndex": 1,
+    "explanation": "向東 +8、向西 -4，最後=-3+8-4=1。",
+    "steps": [
+      "起點 -3。",
+      "東移8到5。",
+      "西移4到1。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-15",
+        "truth": false,
+        "reason": "把兩次移動都當西移。"
+      },
+      {
+        "choice": "1",
+        "truth": true,
+        "reason": "-3+8-4=1。"
+      },
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "只完成第一次移動。"
+      },
+      {
+        "choice": "9",
+        "truth": false,
+        "reason": "忽略起點。"
+      }
+    ],
+    "commonMistake": "只計算 8-4=4，忘記加上起始位置 -3。",
+    "concept": "連續位移要從起點累加帶號移動量。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "literacy"
+    ],
+    "estimatedTimeSec": "90",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "利用倉庫位置規則計算多段移動。",
+    "literacyContextNecessity": "閘門基準、東西正負規則、起點與兩段移動都影響答案。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "ee0dd45811a3dbc78eb38092eb467ab687392fe60f7588f82c8d393644a45a56"
+  },
+  {
+    "questionId": "u01-s003-v011",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "捷運施工以中央站為 0 公里，向西記負。A 標記位於 -12 公里，B 標記在 A 的東方 5 公里。B 的位置紀錄是多少？",
+    "choices": [
+      "-17 公里",
+      "5 公里",
+      "-7 公里",
+      "17 公里"
+    ],
+    "answerIndex": 2,
+    "explanation": "東方為正方向，從 -12 向東 5 公里：-12+5=-7 公里。",
+    "steps": [
+      "A在-12。",
+      "東移記+5。",
+      "-12+5=-7。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-17 公里",
+        "truth": false,
+        "reason": "把東移誤作負。"
+      },
+      {
+        "choice": "5 公里",
+        "truth": false,
+        "reason": "只寫移動量。"
+      },
+      {
+        "choice": "-7 公里",
+        "truth": true,
+        "reason": "B=-12+5=-7公里。"
+      },
+      {
+        "choice": "17 公里",
+        "truth": false,
+        "reason": "忽略負起點並相加絕對值。"
+      }
+    ],
+    "commonMistake": "把「東方 5 公里」直接記成 B=+5，忽略它是相對 A 的位移。",
+    "concept": "位置與相對位移必須相加。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "literacy"
+    ],
+    "estimatedTimeSec": "90",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "由施工里程基準與相對位置求新坐標。",
+    "literacyContextNecessity": "中央站基準、向西為負、A位置與B相對位移都是必要資訊。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "9e88844ee3d5b9f2ffc7b5ec65b7f98c306ba49d75d6a1b587c7f47003e0d82c"
+  },
+  {
+    "questionId": "u01-s003-v012",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "桌遊計分軸上，棋子原在 4 分位置。第一回合向左移 9 格，第二回合向右移 2 格，每格 1 分。最後位置為何？",
+    "choices": [
+      "15",
+      "-7",
+      "7",
+      "-3"
+    ],
+    "answerIndex": 3,
+    "explanation": "左移9記 -9，右移2記 +2：4-9+2=-3。",
+    "steps": [
+      "起點4。",
+      "左移9到-5。",
+      "右移2到-3。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "15",
+        "truth": false,
+        "reason": "把兩次移動都當右。"
+      },
+      {
+        "choice": "-7",
+        "truth": false,
+        "reason": "停在第一回合後再算錯。"
+      },
+      {
+        "choice": "7",
+        "truth": false,
+        "reason": "只加移動距離。"
+      },
+      {
+        "choice": "-3",
+        "truth": true,
+        "reason": "4+(-9)+2=-3。"
+      }
+    ],
+    "commonMistake": "把左移9與右移2的距離相加，沒有保留方向。",
+    "concept": "數線遊戲的每次位移都要使用帶號數。",
+    "tags": [
+      "數與量",
+      "數線位置",
+      "literacy"
+    ],
+    "estimatedTimeSec": "90",
+    "prerequisiteSkillIds": [
+      "integer-positive-negative-meaning"
+    ],
+    "authoringIntent": "在遊戲規則中追蹤跨零點的連續位置。",
+    "literacyContextNecessity": "起始分數、左右方向、兩回合移動與每格單位共同決定結果。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "1b82909a7a5dd18e305bcf651d9d9f7446563417be7d7d1fda6f9f16f7a9c249"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u01-s003-cr001",
+    "unitId": "u01",
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "在一條每格代表 2 的數線上，已知點 A 的坐標為 -6。請描述如何標出 A，並求從 A 向右移 5 格後的點 B 坐標。",
+    "requiredWork": [
+      "說明原點與每格單位。",
+      "「5 格」必須換成數值 10。",
+      "寫出 B 的帶號計算。"
+    ],
+    "fullCreditSolution": [
+      "A 在原點左側 3 格，因為每格 2。",
+      "向右 5 格等於 +10。",
+      "B=-6+10=4。"
+    ],
+    "alternativeSolutions": [
+      "可直接從 -6 依序讀 -4、-2、0、2、4，得到 B=4。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "A 的標法、5 格=10 與 B=4 全部正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "B=4 且計算主要正確，但 A 標法或刻度說明略缺。"
+      },
+      {
+        "score": 1,
+        "criteria": "知道向右增加，但把5格誤作5單位或只完成部分。"
+      },
+      {
+        "score": 0,
+        "criteria": "方向、刻度與結果皆無法辨認。"
+      }
+    ],
+    "scoringNotes": [
+      "若只寫 B=4 無過程，最高2分。",
+      "圖畫等價且刻度清楚可接受。"
+    ],
+    "commonErrors": [
+      "把 A 畫在左六格。",
+      "算 -6+5=-1。",
+      "向右卻使用負號。"
+    ],
+    "independentReview": {
+      "derivedResult": "A左3格；B=4。",
+      "ambiguity": "none",
+      "decision": "pass"
+    },
+    "contentSha256": "0c8b469ed1ee41fbc4cfe1140a0a213e627f63237536fe0f51ba1563a52e4472"
+  },
+  {
+    "questionId": "u01-s003-cr002",
+    "unitId": "u01",
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-line-position",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "數線上 P=-5、Q=7。點 R 是 PQ 的中點，點 S 又在 R 左側 4 單位。求 R、S 坐標，並用位置關係檢查答案。",
+    "requiredWork": [
+      "先求中點。",
+      "再由 R 向左移 4。",
+      "檢查 R 到 P、Q 等距。"
+    ],
+    "fullCreditSolution": [
+      "R=(-5+7)÷2=1。",
+      "S=1-4=-3。",
+      "檢查：R 到 P 距離6，到Q距離6；S位於R左側4。"
+    ],
+    "alternativeSolutions": [
+      "可在數線上從 -5 到 7 共12單位，走一半6單位到1，再左移4到-3。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "R=1、S=-3，且兩項位置檢查完整。"
+      },
+      {
+        "score": 2,
+        "criteria": "兩坐標正確但檢查不完整；或方法正確有一個小算術錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "正確求出 R 或呈現正確中點方法。"
+      },
+      {
+        "score": 0,
+        "criteria": "未理解中點與左移。"
+      }
+    ],
+    "scoringNotes": [
+      "中點不得只取端點差的一半6作坐標。",
+      "距離檢查可用文字或算式。"
+    ],
+    "commonErrors": [
+      "把R寫6。",
+      "把S寫5。",
+      "中點後向右移。"
+    ],
+    "independentReview": {
+      "derivedResult": "R=1，S=-3。",
+      "ambiguity": "none",
+      "decision": "pass"
+    },
+    "contentSha256": "cfed91e6120e844f5b0237266b22a64aa6245dfeb619b8b3f6ab8a8e6296a2c5"
+  }
+];
+
+export const DRAWING_SPECS = [
+  {
+    "figureId": "fig-u01-s003-v003",
+    "unitId": "u01",
+    "skillId": "integer-number-line-position",
+    "altText": "水平數線從 -4 到 4，每一格代表 1。點 P 位在 -3。",
+    "drawingSpec": {
+      "canvas": "720×220，viewBox 0 0 720 220，四周至少留白 45 像素",
+      "axis": "水平實線由 (80,110) 到 (640,110)，左右端各有箭頭",
+      "scale": "刻度 -4 到 4，相鄰刻度 70 像素，每格代表 1",
+      "point": "P 位於 -3 的刻度上，中心 (150,110)，使用半徑 7 的實心圓",
+      "labels": "各整數標在軸下 28 像素；P 標在點上方 28 像素",
+      "lineStyle": "軸 3 像素黑色實線；刻度 2 像素；不得使用虛線",
+      "proportionNote": "按比例繪製，可由刻度讀值",
+      "accessibility": "讀圖時先找 0，再向左數三格得到 -3"
+    },
+    "svgPath": "figures/u01/fig-u01-s003-v003.svg",
+    "reviewStatus": "independently-reviewed",
+    "svgAssertions": [
+      "<circle cx=\"150\" cy=\"110\"",
+      ">P</text>",
+      "x=\"150\" y=\"150\" text-anchor=\"middle\" font-size=\"20\">-3</text>"
+    ],
+    "figureReview": {
+      "reviewVersion": "human-figure-review-r2.1",
+      "coordinateAndScaleCheck": "pass",
+      "labelPlacementCheck": "pass",
+      "solidDashedLineCheck": "pass",
+      "questionConsistencyCheck": "pass",
+      "answerLeakCheck": "pass",
+      "mobileReadabilityCheck": "pass at 360 CSS px width",
+      "accessibilityCheck": "pass: SVG title, desc, role=img and equivalent altText present",
+      "reviewNote": "逐刻度核對 -4 至 4 每格 1；P 的圓心在 x=150，與 -3 刻度完全重合，標籤在點上方且未遮住刻度。",
+      "reviewedAt": "2026-07-12",
+      "decision": "pass"
+    },
+    "contentSha256": "872d266cd6101d210a05b95d6fa0c86ea7b67db6f471795e538bcce2ac04ac2d"
+  },
+  {
+    "figureId": "fig-u01-s003-v006",
+    "unitId": "u01",
+    "skillId": "integer-number-line-position",
+    "altText": "水平數線的刻度標示 -6、-4、-2、0、2、4、6；每格代表 2。點 Q 位在 4。",
+    "drawingSpec": {
+      "canvas": "720×220，viewBox 0 0 720 220",
+      "axis": "水平實線由 (80,110) 到 (640,110)，左右箭頭",
+      "scale": "七個刻度依序為 -6、-4、-2、0、2、4、6；相鄰刻度 80 像素，每格 2 單位",
+      "point": "Q 位於數值 4 的刻度，中心 (480,110)，實心圓半徑 7",
+      "labels": "刻度值在下方；Q 在上方；不可另標答案提示",
+      "lineStyle": "全部實線，無虛線",
+      "proportionNote": "按比例繪製",
+      "accessibility": "不能把五格誤當坐標 5，必須依每格 2 單位讀成 4"
+    },
+    "svgPath": "figures/u01/fig-u01-s003-v006.svg",
+    "reviewStatus": "independently-reviewed",
+    "svgAssertions": [
+      "<circle cx=\"480\" cy=\"110\"",
+      ">Q</text>",
+      "x=\"480\" y=\"150\" text-anchor=\"middle\" font-size=\"20\">4</text>"
+    ],
+    "figureReview": {
+      "reviewVersion": "human-figure-review-r2.1",
+      "coordinateAndScaleCheck": "pass",
+      "labelPlacementCheck": "pass",
+      "solidDashedLineCheck": "pass",
+      "questionConsistencyCheck": "pass",
+      "answerLeakCheck": "pass",
+      "mobileReadabilityCheck": "pass at 360 CSS px width",
+      "accessibilityCheck": "pass: SVG title, desc, role=img and equivalent altText present",
+      "reviewNote": "重新計算七個刻度位置：-6 至 6 每格 2；數值 4 對應 x=480，Q 的圓心與文字均已由錯誤的 x=560 修正為 x=480。",
+      "reviewedAt": "2026-07-12",
+      "decision": "pass"
+    },
+    "contentSha256": "e4a44892fad59adc89e625f907e06da044a124a496160c51f96af080b213bed5"
+  }
+];

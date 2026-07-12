@@ -1,0 +1,259 @@
+{
+  "lectureId": "u01-s014-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-exponents",
+  "skillId": "integer-scientific-notation",
+  "title": "科學記號：用 1≤|a|<10 與 10 的冪表示大小",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把大數與小數寫成科學記號。",
+    "能把科學記號還原成一般記法。",
+    "能判斷係數是否符合標準形式。",
+    "能比較兩個科學記號的大小。",
+    "能完成基本科學記號乘除與單位解讀。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-exponent-laws",
+      "requiredLevel": "能使用同底數指數律處理 10 的冪，並理解正負指數代表的小數點位移。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "科學記號",
+      "definition": "把非零數寫成 a×10ⁿ，其中 1≤|a|<10、n 為整數。"
+    },
+    {
+      "term": "係數",
+      "definition": "科學記號中的 a，絕對值至少 1 且小於 10。"
+    },
+    {
+      "term": "數量級",
+      "definition": "由 10 的指數反映的大致大小。"
+    },
+    {
+      "term": "正指數",
+      "definition": "小數點向右移，通常表示大於或等於 10 的量。"
+    },
+    {
+      "term": "負指數",
+      "definition": "10⁻ⁿ=1/10ⁿ，小數點向左移，表示小於 1 的正量。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a×10ⁿ",
+      "meaning": "科學記號標準形式，1≤|a|<10。"
+    },
+    {
+      "symbol": "10⁻ⁿ",
+      "meaning": "1/10ⁿ，例如 10⁻³=0.001。"
+    },
+    {
+      "symbol": "≈",
+      "meaning": "近似等於；若資料經四捨五入不可寫精確等號。"
+    }
+  ],
+  "conceptNarrative": [
+    "把一般數寫成科學記號時，先把小數點移到第一個非零數字後，使係數絕對值落在 1 到 10 之間。",
+    "原小數點向左移 n 位，需乘 10ⁿ；向右移 n 位，需乘 10⁻ⁿ，才能保持數值不變。",
+    "比較正的科學記號時，先比 10 的指數；指數相同再比係數。負數則要保留負號並用數線思考。",
+    "乘除時先處理係數，再用指數律處理 10 的冪，最後把係數調整回標準範圍。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "科學記號標準形",
+      "statement": "非零數寫成 a×10ⁿ，且 1≤|a|<10、n 為整數。"
+    },
+    {
+      "name": "負指數位值",
+      "statement": "10⁻ⁿ=1/10ⁿ。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a×10ⁿ，1≤|a|<10",
+      "conditions": [
+        "a≠0",
+        "n 為整數"
+      ],
+      "meaning": "標準科學記號。"
+    },
+    {
+      "formula": "(a×10ᵐ)(b×10ⁿ)=ab×10ᵐ⁺ⁿ",
+      "conditions": [
+        "最後須正規化係數"
+      ],
+      "meaning": "科學記號乘法。"
+    },
+    {
+      "formula": "(a×10ᵐ)÷(b×10ⁿ)=(a÷b)×10ᵐ⁻ⁿ",
+      "conditions": [
+        "b≠0",
+        "最後須正規化係數"
+      ],
+      "meaning": "科學記號除法。"
+    }
+  ],
+  "nonApplicableCases": [
+    "係數 12.4 不符合標準形，應改成 1.24×10 的相應次方。",
+    "0 不能用唯一的標準科學記號表示；本課以非零數為主。",
+    "近似測量值的有效位數不可任意增加。",
+    "不同單位的科學記號仍須先換單位再運算。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把小數點移到第一個非零數字後。",
+      "check": "係數絕對值是否在 1 到 10 之間？"
+    },
+    {
+      "step": 2,
+      "instruction": "數小數點移動位數。",
+      "check": "總共移了幾位？"
+    },
+    {
+      "step": 3,
+      "instruction": "依移動方向決定指數正負。",
+      "check": "原數很大用正指數，小於 1 用負指數。"
+    },
+    {
+      "step": 4,
+      "instruction": "還原一次檢查。",
+      "check": "乘回 10ⁿ 是否得到原數？"
+    },
+    {
+      "step": 5,
+      "instruction": "運算後重新正規化。",
+      "check": "係數是否仍符合標準形？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "把 6,420,000 寫成科學記號。",
+      "solutionSteps": [
+        "小數點移到 6.42。",
+        "原小數點向左移 6 位。",
+        "乘 10⁶。"
+      ],
+      "answer": "6.42×10⁶。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "把 0.00058 寫成科學記號。",
+      "solutionSteps": [
+        "第一個非零數字後為 5.8。",
+        "原小數點向右移 4 位。",
+        "使用 10⁻⁴。"
+      ],
+      "answer": "5.8×10⁻⁴。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "還原 3.07×10⁵。",
+      "solutionSteps": [
+        "10⁵ 使小數點向右移 5 位。",
+        "3.07→307000。",
+        "保留原有效數字。"
+      ],
+      "answer": "307000。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "計算 (2×10³)(4×10⁵)。",
+      "solutionSteps": [
+        "係數 2×4=8。",
+        "10³×10⁵=10⁸。",
+        "係數 8 已符合標準。"
+      ],
+      "answer": "8×10⁸。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "寫成 64.2×10⁵。",
+      "why": "係數未落在標準範圍。",
+      "correction": "改成 6.42×10⁶。"
+    },
+    {
+      "mistake": "小數 0.00058 使用正指數。",
+      "why": "移動方向與指數符號混淆。",
+      "correction": "小於 1 的正數使用負指數。"
+    },
+    {
+      "mistake": "少數或多數一位。",
+      "why": "沒有從原小數點逐格計數。",
+      "correction": "畫出移動軌跡再數位數。"
+    },
+    {
+      "mistake": "比較時只看係數。",
+      "why": "忽略數量級。",
+      "correction": "先比較 10 的指數。"
+    },
+    {
+      "mistake": "乘法只乘係數，漏掉 10 的冪。",
+      "why": "分開處理後忘記合併。",
+      "correction": "係數與冪都要運算。"
+    },
+    {
+      "mistake": "運算後係數 18 未正規化。",
+      "why": "停在中間結果。",
+      "correction": "18×10⁴=1.8×10⁵。"
+    }
+  ],
+  "selfCheck": [
+    "係數絕對值在 1 到 10 間嗎？",
+    "小數點移動幾位？",
+    "指數正負合理嗎？",
+    "還原後等於原數嗎？",
+    "運算後有重新正規化嗎？"
+  ],
+  "summary": [
+    "科學記號為 a×10ⁿ，1≤|a|<10。",
+    "大數通常用正指數，小於 1 的非零數用負指數。",
+    "比較先看指數，再看係數。",
+    "乘除後須把係數調回標準形。"
+  ],
+  "connections": {
+    "previous": "先備技能是指數的意義與指數律。",
+    "next": [
+      "綜合素養題會用科學記號讀取真實資料。",
+      "比例與單位換算會結合科學記號。",
+      "後續統計資料可用數量級比較。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s014-v001",
+      "u01-s014-v002",
+      "u01-s014-v003",
+      "u01-s014-v004",
+      "u01-s014-v005",
+      "u01-s014-v006",
+      "u01-s014-v007",
+      "u01-s014-v008",
+      "u01-s014-v009",
+      "u01-s014-v010",
+      "u01-s014-v011",
+      "u01-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s014-cr001",
+      "u01-s014-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一還原一般記法核對小數點位移，確認係數落在標準範圍，乘除指數與正負指數方向均正確。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "f43450ea6c148f35c9efdb15bb3f89d6332b5b268f8ca297584dc81c1ff6ad2e"
+}

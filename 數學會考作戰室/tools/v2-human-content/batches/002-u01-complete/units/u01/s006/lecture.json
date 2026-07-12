@@ -1,0 +1,250 @@
+{
+  "lectureId": "u01-s006-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-basics",
+  "skillId": "integer-absolute-value-basic",
+  "title": "絕對值的基本意義：只看離 0 多遠",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把絕對值解釋為到 0 的距離。",
+    "能計算正數、負數與 0 的絕對值。",
+    "能區分絕對值與原數。",
+    "能解出 |x|=a 的整數解。",
+    "能正確處理絕對值外的負號。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-opposite-number",
+      "requiredLevel": "能辨認相反數與原點對稱，並區分方向和距離大小。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "絕對值",
+      "definition": "一個數在數線上到 0 的距離。"
+    },
+    {
+      "term": "距離",
+      "definition": "兩位置間的長度，不帶負號。"
+    },
+    {
+      "term": "絕對值符號",
+      "definition": "以兩條直線包住數或算式，例如 |-7|。"
+    },
+    {
+      "term": "等距點",
+      "definition": "到同一基準距離相同的點。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "|a|",
+      "meaning": "a 到 0 的距離。"
+    },
+    {
+      "symbol": "|a|≥0",
+      "meaning": "任何數的絕對值都不小於 0。"
+    },
+    {
+      "symbol": "|x|=k",
+      "meaning": "x 到 0 的距離是 k；k>0 時通常有正負兩個解。"
+    }
+  ],
+  "conceptNarrative": [
+    "絕對值只保留距離大小，不保留左右方向，所以 |-8|=8。",
+    "正數的絕對值是自己，負數的絕對值是其相反數，0 的絕對值是 0。",
+    "若 |x|=5，表示 x 在 0 左右各 5 單位，因此 x=5 或 -5。",
+    "外層負號不在絕對值符號內，例如 -|-4| 先算 |-4|=4，再取負得到 -4。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "絕對值",
+      "statement": "|a| 是 a 與 0 在數線上的距離。"
+    },
+    {
+      "name": "非負性",
+      "statement": "對任何 a，|a|≥0。"
+    },
+    {
+      "name": "分段規則",
+      "statement": "a≥0 時 |a|=a；a<0 時 |a|=-a。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "|a|=a（a≥0）",
+      "conditions": [
+        "a 為非負數"
+      ],
+      "meaning": "右側或原點位置的距離等於坐標本身。"
+    },
+    {
+      "formula": "|a|=-a（a<0）",
+      "conditions": [
+        "a 為負數"
+      ],
+      "meaning": "把負坐標改成正距離。"
+    }
+  ],
+  "nonApplicableCases": [
+    "距離不能是負數，因此 |x|=-3 無解。",
+    "|a| 不一定等於 a；只有 a≥0 時成立。",
+    "|a+b| 通常不等於 |a|+|b|。",
+    "絕對值符號外的運算必須在取絕對值後再做。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先算絕對值符號內的數或算式。",
+      "check": "內部是否尚有運算？"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷結果在 0 的哪一側。",
+      "check": "是正、負還是 0？"
+    },
+    {
+      "step": 3,
+      "instruction": "把到 0 的距離寫成非負數。",
+      "check": "答案是否錯帶負號？"
+    },
+    {
+      "step": 4,
+      "instruction": "再處理絕對值外的運算。",
+      "check": "外層負號或加減是否遺漏？"
+    },
+    {
+      "step": 5,
+      "instruction": "方程題用數線左右兩點檢查。",
+      "check": "是否漏掉相反數解？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "計算 |-15|。",
+      "solutionSteps": [
+        "-15 距離 0 有 15 單位。",
+        "距離為非負。",
+        "所以結果是 15。"
+      ],
+      "answer": "15。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "計算 -|-7|。",
+      "solutionSteps": [
+        "先算 |-7|=7。",
+        "外層仍有負號。",
+        "結果為 -7。"
+      ],
+      "answer": "-7。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解 |x|=4。",
+      "solutionSteps": [
+        "x 到 0 的距離是 4。",
+        "右側坐標 4，左側坐標 -4。",
+        "兩者都符合。"
+      ],
+      "answer": "x=4 或 x=-4。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "比較 |-9| 與 |6|。",
+      "solutionSteps": [
+        "|-9|=9。",
+        "|6|=6。",
+        "9>6。"
+      ],
+      "answer": "|-9|>|6|。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "認為 |-6|=-6。",
+      "why": "把原坐標當距離。",
+      "correction": "到 0 的距離是 6。"
+    },
+    {
+      "mistake": "把 |0| 寫成沒有答案。",
+      "why": "誤以為絕對值只處理正負成對。",
+      "correction": "0 到 0 距離為 0。"
+    },
+    {
+      "mistake": "解 |x|=7 只寫 x=7。",
+      "why": "忽略數線左側等距點。",
+      "correction": "還有 x=-7。"
+    },
+    {
+      "mistake": "認為 |x|=-2 有 x=±2。",
+      "why": "忽略絕對值非負。",
+      "correction": "右邊為負，無解。"
+    },
+    {
+      "mistake": "把 -|-3| 算成 3。",
+      "why": "把外層負號一起消掉。",
+      "correction": "先得 3，再取負為 -3。"
+    },
+    {
+      "mistake": "任意拆開 |a+b|。",
+      "why": "誤用不存在的分配規則。",
+      "correction": "先算括號內總和再取絕對值。"
+    }
+  ],
+  "selfCheck": [
+    "絕對值是否代表距離？",
+    "答案是否非負？",
+    "外層符號是否另行處理？",
+    "|x|=正數時是否有兩個方向？",
+    "我是否先算符號內部？"
+  ],
+  "summary": [
+    "|a| 是 a 到 0 的距離。",
+    "絕對值永遠不小於 0。",
+    "負數取絕對值後成為正距離。",
+    "|x|=k（k>0）有 x=±k。"
+  ],
+  "connections": {
+    "previous": "先備技能是相反數，需知道對稱點與方向相反。",
+    "next": [
+      "絕對值與距離會把基準從 0 推廣到任意兩點。",
+      "整數加減可用絕對值比較變化量大小。",
+      "大小比較不能只看絕對值，仍須保留原數方向。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s006-v001",
+      "u01-s006-v002",
+      "u01-s006-v003",
+      "u01-s006-v004",
+      "u01-s006-v005",
+      "u01-s006-v006",
+      "u01-s006-v007",
+      "u01-s006-v008",
+      "u01-s006-v009",
+      "u01-s006-v010",
+      "u01-s006-v011",
+      "u01-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s006-cr001",
+      "u01-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐項檢查絕對值先算內部、結果非負及外層負號；含 |x|=a 的雙解與 a=0 邊界。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "f615f825696fcb423538b4556251c533e751fc5051651d02b1b8e2422c396da0"
+}

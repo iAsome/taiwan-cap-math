@@ -1,0 +1,250 @@
+{
+  "lectureId": "u01-s009-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-arithmetic",
+  "skillId": "integer-subtraction",
+  "title": "整數減法：改寫成加上減數的相反數",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把整數減法改寫成加法。",
+    "能正確處理減去負數。",
+    "能計算兩量的帶號變化。",
+    "能解含未知被減數或減數的簡單問題。",
+    "能區分差、距離與最後量。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-addition",
+      "requiredLevel": "能完成整數加法，並找出任一整數的相反數。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "被減數",
+      "definition": "減號前的數。"
+    },
+    {
+      "term": "減數",
+      "definition": "減號後被減去的數。"
+    },
+    {
+      "term": "差",
+      "definition": "減法所得結果。"
+    },
+    {
+      "term": "加上相反數",
+      "definition": "把 a-b 改寫成 a+(-b)。"
+    },
+    {
+      "term": "帶號變化",
+      "definition": "後值減前值，正表示增加，負表示減少。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a-b",
+      "meaning": "從 a 中減去 b。"
+    },
+    {
+      "symbol": "a-b=a+(-b)",
+      "meaning": "減法轉加法的核心規則。"
+    },
+    {
+      "symbol": "後值－前值",
+      "meaning": "求帶方向的變化量。"
+    }
+  ],
+  "conceptNarrative": [
+    "減法不是交換運算，7-3 與 3-7 不相等。",
+    "減去一個數等於加上它的相反數，因此減去負數會變成加正數。",
+    "情境中「從前值變到後值」的變化量應寫後值－前值；若只問相差多少，才取絕對值。",
+    "連續減法要依原本順序，或逐項改寫成加法後再利用加法規則。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "減法轉加法",
+      "statement": "對任何整數 a、b，a-b=a+(-b)。"
+    },
+    {
+      "name": "變化量",
+      "statement": "從初值 a 變到終值 b，帶號變化量為 b-a。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a-b=a+(-b)",
+      "conditions": [
+        "負號作用於完整減數"
+      ],
+      "meaning": "用已學加法規則計算減法。"
+    },
+    {
+      "formula": "變化量＝後值－前值",
+      "conditions": [
+        "前後值使用同一基準與單位"
+      ],
+      "meaning": "判斷增加或減少。"
+    }
+  ],
+  "nonApplicableCases": [
+    "a-b 不可任意交換成 b-a。",
+    "減去負數變加正數，但減去正數仍是加負數。",
+    "括號內若有整個算式，取相反數時每一項符號都要處理；本節先處理整數。",
+    "相差多少與變化量不同，前者非負，後者可負。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出被減數與減數。",
+      "check": "減號後是否為負數？"
+    },
+    {
+      "step": 2,
+      "instruction": "保留被減數，把減號改加號。",
+      "check": "第一個數是否原樣保留？"
+    },
+    {
+      "step": 3,
+      "instruction": "把減數改成相反數。",
+      "check": "負數的相反數是否變正？"
+    },
+    {
+      "step": 4,
+      "instruction": "依整數加法規則計算。",
+      "check": "同號或異號判斷正確嗎？"
+    },
+    {
+      "step": 5,
+      "instruction": "用原情境檢查方向。",
+      "check": "變化增加或減少合理嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "計算 6-11。",
+      "solutionSteps": [
+        "改寫 6+(-11)。",
+        "異號相加，11-6=5。",
+        "負數絕對值較大。"
+      ],
+      "answer": "-5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "計算 -4-(-9)。",
+      "solutionSteps": [
+        "減去 -9 等於加 9。",
+        "-4+9=5。",
+        "結果為 5。"
+      ],
+      "answer": "5。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "氣溫從 3°C 降到 -5°C，變化量？",
+      "solutionSteps": [
+        "後值－前值=-5-3。",
+        "改寫 -5+(-3)。",
+        "得到 -8，表示下降 8°C。"
+      ],
+      "answer": "-8°C。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某數減 7 得 -2，求該數。",
+      "solutionSteps": [
+        "設原數 x，x-7=-2。",
+        "兩邊加 7。",
+        "x=5。"
+      ],
+      "answer": "5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 -4-(-9) 算成 -13。",
+      "why": "把減去負數當加上負數。",
+      "correction": "改寫 -4+9=5。"
+    },
+    {
+      "mistake": "交換減法次序。",
+      "why": "誤認減法有交換律。",
+      "correction": "先後位置不可交換。"
+    },
+    {
+      "mistake": "只改減號，不改減數符號。",
+      "why": "規則只做一半。",
+      "correction": "a-b 要變 a+(-b)。"
+    },
+    {
+      "mistake": "求變化量寫前值－後值。",
+      "why": "次序顛倒。",
+      "correction": "應寫後值－前值。"
+    },
+    {
+      "mistake": "把相差多少寫成負數。",
+      "why": "沒有區分距離。",
+      "correction": "相差多少取絕對值。"
+    },
+    {
+      "mistake": "連續減法先算後兩項。",
+      "why": "誤用結合律。",
+      "correction": "同級運算由左到右，或全部改成加法。"
+    }
+  ],
+  "selfCheck": [
+    "被減數和減數找對嗎？",
+    "是否改成加上相反數？",
+    "減去負數是否變加正數？",
+    "前後值次序正確嗎？",
+    "題目問變化量還是距離？"
+  ],
+  "summary": [
+    "a-b=a+(-b)。",
+    "減去負數等於加上正數。",
+    "減法沒有交換律。",
+    "變化量＝後值－前值。"
+  ],
+  "connections": {
+    "previous": "先備技能是整數加法與相反數。",
+    "next": [
+      "整數乘除會使用另一套符號規則。",
+      "四則混合中加減同級時由左到右。",
+      "素養題常用減法求溫度變化與收支差。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s009-v001",
+      "u01-s009-v002",
+      "u01-s009-v003",
+      "u01-s009-v004",
+      "u01-s009-v005",
+      "u01-s009-v006",
+      "u01-s009-v007",
+      "u01-s009-v008",
+      "u01-s009-v009",
+      "u01-s009-v010",
+      "u01-s009-v011",
+      "u01-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s009-cr001",
+      "u01-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "將每個減法改寫成加上減數的相反數，並用「後值減前值」重算溫度變化與未知數例題。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "2a51c62946d3c5ca0b3cf37fbe284a13254c571055d6d24030a7d3fab3982904"
+}

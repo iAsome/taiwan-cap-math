@@ -1,0 +1,250 @@
+{
+  "lectureId": "u01-s012-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-exponents",
+  "skillId": "integer-exponent-meaning",
+  "title": "指數的意義：用冪表示重複乘法",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能辨認底數、指數與冪。",
+    "能把重複乘法改寫成指數形式。",
+    "能展開並計算正、負底數的冪。",
+    "能分辨 -aⁿ 與 (-a)ⁿ。",
+    "能用 10 的冪描述位值。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-mixed-operations",
+      "requiredLevel": "能依運算順序處理整數乘法，並辨認相同因數的重複出現。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "底數",
+      "definition": "被重複相乘的數。"
+    },
+    {
+      "term": "指數",
+      "definition": "表示底數作為因數出現幾次的數。"
+    },
+    {
+      "term": "冪",
+      "definition": "底數與指數組成的表示及其值，例如 2³=8。"
+    },
+    {
+      "term": "平方",
+      "definition": "二次方，表示同一數乘自己兩次。"
+    },
+    {
+      "term": "立方",
+      "definition": "三次方，表示同一數相乘三次。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "aⁿ",
+      "meaning": "n 個 a 相乘；本節 n 為正整數。"
+    },
+    {
+      "symbol": "(-a)ⁿ",
+      "meaning": "底數是整個負數 -a。"
+    },
+    {
+      "symbol": "-aⁿ",
+      "meaning": "先算 aⁿ，再在外面取負；沒有括號時底數是 a。"
+    }
+  ],
+  "conceptNarrative": [
+    "指數不是乘法係數。3⁴ 表示 3×3×3×3，不是 3×4。",
+    "括號決定負號是否屬於底數。(-2)⁴ 有四個負因數，結果正；-2⁴ 是 -(2⁴)，結果負。",
+    "負底數的偶次方為正，奇次方為負，原因是負因數個數的奇偶。",
+    "10ⁿ 表示 1 後有 n 個 0，能連結十進位位值與科學記號。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "正整數指數",
+      "statement": "n 為正整數時，aⁿ=a×a×…×a，共 n 個 a。"
+    },
+    {
+      "name": "負底數奇偶性",
+      "statement": "負底數的偶次方為正，奇次方為負。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "aⁿ＝n 個 a 相乘",
+      "conditions": [
+        "n 為正整數"
+      ],
+      "meaning": "指數的定義。"
+    },
+    {
+      "formula": "10ⁿ＝1 後接 n 個 0",
+      "conditions": [
+        "n 為正整數"
+      ],
+      "meaning": "十進位位值。"
+    }
+  ],
+  "nonApplicableCases": [
+    "本節不把指數當作與底數相乘。",
+    "沒有括號時，-2⁴ 與 (-2)⁴ 不同。",
+    "0 的 0 次方不在本節範圍。",
+    "指數律尚未學習前，不能任意把加法中的冪合併。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "找出底數是否包含負號與括號。",
+      "check": "底數是 -3 還是 3？"
+    },
+    {
+      "step": 2,
+      "instruction": "讀出指數代表因數個數。",
+      "check": "是否誤看成倍數？"
+    },
+    {
+      "step": 3,
+      "instruction": "必要時展開成重複乘法。",
+      "check": "因數個數是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "先判符號，再算絕對值。",
+      "check": "負因數個數奇數或偶數？"
+    },
+    {
+      "step": 5,
+      "instruction": "用較小例子或估算檢查。",
+      "check": "結果大小是否合理？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "把 5×5×5×5 寫成指數形式。",
+      "solutionSteps": [
+        "重複因數是 5。",
+        "共出現四次。",
+        "寫成 5⁴。"
+      ],
+      "answer": "5⁴。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "計算 (-3)³。",
+      "solutionSteps": [
+        "底數是 -3。",
+        "三個負因數，奇數個。",
+        "3³=27，結果 -27。"
+      ],
+      "answer": "-27。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "比較 -2⁴ 與 (-2)⁴。",
+      "solutionSteps": [
+        "-2⁴=-(2⁴)=-16。",
+        "(-2)⁴ 有四個負因數，等於 16。",
+        "兩者不相等。"
+      ],
+      "answer": "-2⁴=-16；(-2)⁴=16。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "10⁵ 表示多少？",
+      "solutionSteps": [
+        "底數 10 重複相乘五次。",
+        "每乘一次 10，小數點向右一位。",
+        "結果 100000。"
+      ],
+      "answer": "100000。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 2⁵ 算成 10。",
+      "why": "把指數誤當乘數。",
+      "correction": "2⁵=2×2×2×2×2=32。"
+    },
+    {
+      "mistake": "展開 3⁴ 只寫三個 4。",
+      "why": "底數與指數角色顛倒。",
+      "correction": "應寫四個 3 相乘。"
+    },
+    {
+      "mistake": "認為 -2⁴=16。",
+      "why": "把外層負號誤納入底數。",
+      "correction": "沒有括號時結果 -16。"
+    },
+    {
+      "mistake": "認為 (-3)³ 為正。",
+      "why": "只記平方為正。",
+      "correction": "奇數個負因數得負。"
+    },
+    {
+      "mistake": "把 a² 寫成 2a。",
+      "why": "混淆平方與倍數。",
+      "correction": "a²=a×a。"
+    },
+    {
+      "mistake": "尚未學指數律就把 2³+2² 合成 2⁵。",
+      "why": "把加法誤用乘法規則。",
+      "correction": "先各自算值再相加。"
+    }
+  ],
+  "selfCheck": [
+    "底數包含負號嗎？",
+    "指數代表幾個因數？",
+    "括號是否改變底數？",
+    "負底數次方的奇偶判對嗎？",
+    "我是否誤把冪當乘法係數？"
+  ],
+  "summary": [
+    "aⁿ 是 n 個 a 相乘。",
+    "指數不是與底數相乘。",
+    "負底數偶次方正、奇次方負。",
+    "括號決定負號是否屬於底數。"
+  ],
+  "connections": {
+    "previous": "先備技能是整數乘法與四則混合。",
+    "next": [
+      "指數律會用規則合併同底數的乘除。",
+      "科學記號以 10 的整數次方表示位值。",
+      "面積與體積公式會使用平方與立方。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s012-v001",
+      "u01-s012-v002",
+      "u01-s012-v003",
+      "u01-s012-v004",
+      "u01-s012-v005",
+      "u01-s012-v006",
+      "u01-s012-v007",
+      "u01-s012-v008",
+      "u01-s012-v009",
+      "u01-s012-v010",
+      "u01-s012-v011",
+      "u01-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s012-cr001",
+      "u01-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一展開正底數、負底數與外層負號；確認括號範圍、奇偶指數和 10 的正整數次方均正確。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "f6a12b2d6dbe8b1caac07218abe3e2a2aeaba4dec6b91efda199acdd593a4ff9"
+}

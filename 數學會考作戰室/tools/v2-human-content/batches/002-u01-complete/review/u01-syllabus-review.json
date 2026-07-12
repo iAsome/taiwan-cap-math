@@ -1,0 +1,121 @@
+{
+  "reviewId": "u01-human-syllabus-review-r1",
+  "unitId": "u01",
+  "sourceLockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+  "decisionSummary": {
+    "keep": 12,
+    "rename": 3,
+    "move": 0,
+    "split": 0,
+    "merge": 0,
+    "add": 0,
+    "delete": 0
+  },
+  "skills": [
+    {
+      "skillId": "integer-number-classification",
+      "decision": "KEEP",
+      "finalTitle": "數的分類",
+      "reason": "Clear foundational boundary; Batch 001 already complete."
+    },
+    {
+      "skillId": "integer-positive-negative-meaning",
+      "decision": "KEEP",
+      "finalTitle": "正負數的意義",
+      "reason": "Necessary baseline and direction-model skill."
+    },
+    {
+      "skillId": "integer-number-line-position",
+      "decision": "KEEP",
+      "finalTitle": "數線位置",
+      "reason": "Distinct spatial representation and movement skill."
+    },
+    {
+      "skillId": "integer-number-comparison",
+      "decision": "KEEP",
+      "finalTitle": "數的大小比較",
+      "reason": "Distinct ordering and inequality skill."
+    },
+    {
+      "skillId": "integer-opposite-number",
+      "decision": "KEEP",
+      "finalTitle": "相反數",
+      "reason": "Clear relation to origin symmetry and additive inverse."
+    },
+    {
+      "skillId": "integer-absolute-value-basic",
+      "decision": "KEEP",
+      "finalTitle": "絕對值基本意義",
+      "reason": "Distance-to-zero definition requires separate instruction."
+    },
+    {
+      "skillId": "integer-absolute-value-distance",
+      "decision": "KEEP",
+      "finalTitle": "絕對值與距離",
+      "reason": "Extends absolute value to two-point distance and fixed-distance equations."
+    },
+    {
+      "skillId": "integer-addition",
+      "decision": "KEEP",
+      "finalTitle": "整數加法",
+      "reason": "Core operation with its own sign model."
+    },
+    {
+      "skillId": "integer-subtraction",
+      "decision": "KEEP",
+      "finalTitle": "整數減法",
+      "reason": "Core operation centered on adding the opposite."
+    },
+    {
+      "skillId": "integer-multiplication-division",
+      "decision": "RENAME",
+      "sourceTitle": "整數乘除",
+      "finalTitle": "整數的乘法和除法",
+      "reason": "Full title is clearer for zero-foundation learners and avoids compressed wording."
+    },
+    {
+      "skillId": "integer-mixed-operations",
+      "decision": "KEEP",
+      "finalTitle": "整數四則混合",
+      "reason": "Operation-order integration is a separate assessed ability."
+    },
+    {
+      "skillId": "integer-exponent-meaning",
+      "decision": "RENAME",
+      "sourceTitle": "指數意義",
+      "finalTitle": "指數的意義",
+      "reason": "Natural Traditional Chinese phrasing for instruction."
+    },
+    {
+      "skillId": "integer-exponent-laws",
+      "decision": "KEEP",
+      "finalTitle": "指數律",
+      "reason": "Clear law-based manipulation skill; scope restricted to junior-high rules."
+    },
+    {
+      "skillId": "integer-scientific-notation",
+      "decision": "KEEP",
+      "finalTitle": "科學記號",
+      "reason": "Distinct representation and quantity-scale skill."
+    },
+    {
+      "skillId": "integer-literacy-context",
+      "decision": "RENAME",
+      "sourceTitle": "整數素養題",
+      "finalTitle": "整數與科學記號的綜合情境應用",
+      "reason": "A question label is not a mathematical skill; final title states the integrated modeling ability.",
+      "prerequisiteOverride": [
+        "integer-number-line-position",
+        "integer-absolute-value-distance",
+        "integer-mixed-operations",
+        "integer-scientific-notation"
+      ]
+    }
+  ],
+  "scopeNotes": [
+    "Negative exponents appear only as powers of ten needed for scientific notation.",
+    "No high-school real-number completeness, set theory or logarithms.",
+    "Figures are used for number-line position and distance where they materially support the skill."
+  ],
+  "reviewDecision": "pass-for-u01-authoring"
+}

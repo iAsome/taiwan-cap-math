@@ -1,0 +1,244 @@
+{
+  "lectureId": "u01-s005-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-basics",
+  "skillId": "integer-opposite-number",
+  "title": "相反數：關於原點對稱且和為 0",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能求任意整數的相反數。",
+    "能解釋相反數在數線上的對稱關係。",
+    "能正確處理負數外再加負號。",
+    "能利用相反數和為 0 解題。",
+    "能辨認 0 的相反數仍是 0。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-number-comparison",
+      "requiredLevel": "能比較整數大小，並辨認原點兩側等距的位置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "相反數",
+      "definition": "與原數距離 0 相同、方向相反的數。"
+    },
+    {
+      "term": "關於原點對稱",
+      "definition": "兩點分居 0 的兩側且離 0 等距。"
+    },
+    {
+      "term": "互為相反數",
+      "definition": "兩數相加為 0，例如 6 與 -6。"
+    },
+    {
+      "term": "負號運算",
+      "definition": "數前的負號表示取該數的相反數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "-a",
+      "meaning": "a 的相反數；若 a=-4，則 -a=4。"
+    },
+    {
+      "symbol": "a+(-a)=0",
+      "meaning": "一個數和它的相反數相加為 0。"
+    },
+    {
+      "symbol": "-(-a)=a",
+      "meaning": "連續取兩次相反數會回到原數。"
+    }
+  ],
+  "conceptNarrative": [
+    "相反數不是「一定變成負數」，而是改變方向。正數的相反數為負，負數的相反數為正。",
+    "在數線上，a 與 -a 關於原點對稱，所以兩者到 0 的距離相同。",
+    "0 沒有左右方向，取相反數後仍是 0，因此 0 是自己的相反數。",
+    "符號 -(-8) 的外層負號表示取 -8 的相反數，結果是 8，不能只把兩個負號機械刪除而不理解。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "相反數",
+      "statement": "若兩數的和為 0，則它們互為相反數。"
+    },
+    {
+      "name": "唯一性",
+      "statement": "每一個數都有且只有一個相反數。"
+    },
+    {
+      "name": "零的相反數",
+      "statement": "0 的相反數是 0。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a 的相反數＝-a",
+      "conditions": [
+        "a 可為正、負或 0"
+      ],
+      "meaning": "改變原數方向。"
+    },
+    {
+      "formula": "a+(-a)=0",
+      "conditions": [
+        "兩數確實互為相反數"
+      ],
+      "meaning": "檢查相反數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "倒數與相反數不同；2 的相反數是 -2，倒數是 1/2。",
+    "絕對值與相反數不同；|-5|=5，而 -(-5)=5，兩式在此同值但意義不同。",
+    "若原數是代數式，負號要作用於整個式子；本單元只做基礎辨認。",
+    "不能說「0 沒有相反數」，因為 0+0=0。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確定原數完整內容。",
+      "check": "負號是否屬於原數本身？"
+    },
+    {
+      "step": 2,
+      "instruction": "把方向改成相反。",
+      "check": "正變負、負變正、0 不變。"
+    },
+    {
+      "step": 3,
+      "instruction": "必要時加括號再處理。",
+      "check": "-(-8) 是否先看內層 -8？"
+    },
+    {
+      "step": 4,
+      "instruction": "用和為 0 檢查。",
+      "check": "原數加答案是否等於 0？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "求 13 的相反數。",
+      "solutionSteps": [
+        "13 位於 0 右側 13 單位。",
+        "對稱位置在左側 13 單位。",
+        "坐標是 -13。"
+      ],
+      "answer": "-13。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "求 -9 的相反數。",
+      "solutionSteps": [
+        "-9 位於 0 左側 9 單位。",
+        "對稱到右側 9 單位。",
+        "結果為 9。"
+      ],
+      "answer": "9。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "化簡 -(-12)。",
+      "solutionSteps": [
+        "內層數是 -12。",
+        "外層負號表示取其相反數。",
+        "-12 的相反數是 12。"
+      ],
+      "answer": "12。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "已知 x 與 -7 互為相反數，求 x。",
+      "solutionSteps": [
+        "互為相反數的和為 0。",
+        "x+(-7)=0。",
+        "x=7。"
+      ],
+      "answer": "7。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 5 的相反數寫成 1/5。",
+      "why": "混淆相反數與倒數。",
+      "correction": "相反數是 -5。"
+    },
+    {
+      "mistake": "把 -6 的相反數寫成 -6。",
+      "why": "認為相反數一定帶負號。",
+      "correction": "改變方向後是 6。"
+    },
+    {
+      "mistake": "認為 0 沒有相反數。",
+      "why": "只想到正負成對。",
+      "correction": "0+0=0，所以 0 的相反數是 0。"
+    },
+    {
+      "mistake": "把 -(-4) 算成 -4。",
+      "why": "忽略外層負號。",
+      "correction": "外層取相反數，結果 4。"
+    },
+    {
+      "mistake": "只看絕對值就說互為相反數。",
+      "why": "同距離還需方向相反。",
+      "correction": "例如 4 和 4 絕對值相同但不是互為相反數。"
+    },
+    {
+      "mistake": "用乘積為 1 檢查相反數。",
+      "why": "那是倒數的檢查。",
+      "correction": "相反數用和為 0 檢查。"
+    }
+  ],
+  "selfCheck": [
+    "原數是正、負還是 0？",
+    "我是否改變方向而非取倒數？",
+    "括號中的負號有處理嗎？",
+    "原數與答案相加等於 0 嗎？"
+  ],
+  "summary": [
+    "a 的相反數是 -a。",
+    "相反數在數線上關於 0 對稱。",
+    "互為相反數的兩數和為 0。",
+    "0 的相反數仍是 0。"
+  ],
+  "connections": {
+    "previous": "先備技能是數的大小比較與數線位置。",
+    "next": [
+      "絕對值會比較相反數到 0 的共同距離。",
+      "整數加法中相反數相加可直接得到 0。",
+      "減去一個數可改寫成加上它的相反數。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s005-v001",
+      "u01-s005-v002",
+      "u01-s005-v003",
+      "u01-s005-v004",
+      "u01-s005-v005",
+      "u01-s005-v006",
+      "u01-s005-v007",
+      "u01-s005-v008",
+      "u01-s005-v009",
+      "u01-s005-v010",
+      "u01-s005-v011",
+      "u01-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s005-cr001",
+      "u01-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "用「相加為 0」和原點對稱兩種方法重算全部例題，並確認 0 的相反數仍為 0、相反數不等於倒數。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "4cc92fbe0bfb35b7c5bf34d3840a0e98c3df080e4d0cf9ae13e57b599d432eb5"
+}

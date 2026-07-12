@@ -1,0 +1,1175 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+export const LECTURE = {
+  "lectureId": "u01-s004-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-basics",
+  "skillId": "integer-number-comparison",
+  "title": "數的大小比較：用數線和符號建立正確順序",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能使用數線判斷兩數大小。",
+    "能比較兩個負整數。",
+    "能把多個整數由小到大或由大到小排列。",
+    "能正確使用 >、<、=。",
+    "能從情境資料判斷最高、最低與差異方向。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-number-line-position",
+      "requiredLevel": "能在數線上定位整數，並知道數線上越靠右的數越大。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "大於",
+      "definition": "在數線上位於另一數右方。"
+    },
+    {
+      "term": "小於",
+      "definition": "在數線上位於另一數左方。"
+    },
+    {
+      "term": "遞增排列",
+      "definition": "由小到大排列。"
+    },
+    {
+      "term": "遞減排列",
+      "definition": "由大到小排列。"
+    },
+    {
+      "term": "負數比較",
+      "definition": "兩負數中，離 0 較近者較大。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": ">",
+      "meaning": "左邊的數大於右邊的數，開口朝較大者。"
+    },
+    {
+      "symbol": "<",
+      "meaning": "左邊的數小於右邊的數，尖端朝較小者。"
+    },
+    {
+      "symbol": "=",
+      "meaning": "兩邊表示同一數值。"
+    }
+  ],
+  "conceptNarrative": [
+    "數線是比較大小最可靠的模型：越右越大。正數在 0 右側，負數在 0 左側，所以正數大於 0，0 大於負數。",
+    "兩個負數不能只比去掉負號後的數字。-2 在 -9 右邊，因此 -2>-9。",
+    "排列多個數時可先分成正數、0、負數，再處理同號數，能降低不等號寫反的機會。",
+    "不等號開口朝較大的數；讀回完整句子是最後檢查。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "數線比較原則",
+      "statement": "數線上較右方的點所代表的數較大。"
+    },
+    {
+      "name": "負整數順序",
+      "statement": "兩個負整數中，絕對值較小者較大。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "正數 > 0 > 負數",
+      "conditions": [
+        "比較的是實數"
+      ],
+      "meaning": "先依正負分層。"
+    },
+    {
+      "formula": "若 a、b<0 且 |a|<|b|，則 a>b",
+      "conditions": [
+        "a、b 都是負數"
+      ],
+      "meaning": "負數比較時絕對值順序反轉。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只有在兩數都為負時，才可用絕對值較小者較大。",
+    "比較近似數時必須先確認精確度；本節以整數為主。",
+    "不能把不等號當箭頭讀，必須看開口與尖端。",
+    "情境中的「較低」若基準不同，先換成同一基準再比較。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先看正、零、負。",
+      "check": "是否可以直接用正數>0>負數？"
+    },
+    {
+      "step": 2,
+      "instruction": "同為正數照一般大小比較。",
+      "check": "位數和數值是否看清楚？"
+    },
+    {
+      "step": 3,
+      "instruction": "同為負數時想像數線位置。",
+      "check": "離 0 較近的是否較大？"
+    },
+    {
+      "step": 4,
+      "instruction": "排列後寫不等號。",
+      "check": "由小到大還是由大到小？"
+    },
+    {
+      "step": 5,
+      "instruction": "逐段讀回句子。",
+      "check": "每個相鄰關係都成立嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "比較 -11 與 -4。",
+      "solutionSteps": [
+        "兩數都為負。",
+        "-4 距離 0 較近，位置較右。",
+        "所以 -11<-4。"
+      ],
+      "answer": "-11<-4。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "將 3、-5、0、-2 由小到大排列。",
+      "solutionSteps": [
+        "負數最小，0 次之，正數最大。",
+        "負數中 -5 在 -2 左邊。",
+        "依序為 -5、-2、0、3。"
+      ],
+      "answer": "-5<-2<0<3。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "哪一個較高：海拔 -20 公尺或 -7 公尺？",
+      "solutionSteps": [
+        "兩者都低於海平面。",
+        "-7 在數線較右。",
+        "所以 -7 公尺較高。"
+      ],
+      "answer": "-7 公尺較高。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "判斷 -100>-99 是否正確。",
+      "solutionSteps": [
+        "-100 在 -99 左邊。",
+        "左邊的數較小。",
+        "原式應為 -100<-99。"
+      ],
+      "answer": "錯誤。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "認為 -8>-3，因為 8>3。",
+      "why": "忽略負號使數線順序反轉。",
+      "correction": "-8 在 -3 左方，所以 -8<-3。"
+    },
+    {
+      "mistake": "把 0 當最小整數。",
+      "why": "忘記負整數小於 0。",
+      "correction": "任何負整數都小於 0。"
+    },
+    {
+      "mistake": "不等號開口朝較小數。",
+      "why": "只記形狀未讀句子。",
+      "correction": "開口朝較大數，尖端朝較小數。"
+    },
+    {
+      "mistake": "由小到大排列成遞減。",
+      "why": "忽略題目方向。",
+      "correction": "先在答案旁標「小→大」。"
+    },
+    {
+      "mistake": "以絕對值較大就判原數較大。",
+      "why": "把距離當位置。",
+      "correction": "負數的絕對值越大，原數越小。"
+    },
+    {
+      "mistake": "不同基準的紀錄直接比較。",
+      "why": "沒有統一參考點。",
+      "correction": "先換成同一實際量或同一基準。"
+    }
+  ],
+  "selfCheck": [
+    "我先分辨正、零、負了嗎？",
+    "兩個負數是否用數線思考？",
+    "不等號開口朝較大者嗎？",
+    "排列方向符合題目嗎？",
+    "情境基準一致嗎？"
+  ],
+  "summary": [
+    "數線越右數值越大。",
+    "正數>0>負數。",
+    "兩負數中離 0 較近者較大。",
+    "不等號開口朝較大數。"
+  ],
+  "connections": {
+    "previous": "先備技能是數線位置，需能判斷左右與坐標。",
+    "next": [
+      "相反數會比較關於 0 對稱的兩數。",
+      "絕對值能描述與 0 的距離，但不能單獨取代原數大小。",
+      "整數運算結果可用大小關係估算是否合理。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s004-v001",
+      "u01-s004-v002",
+      "u01-s004-v003",
+      "u01-s004-v004",
+      "u01-s004-v005",
+      "u01-s004-v006",
+      "u01-s004-v007",
+      "u01-s004-v008",
+      "u01-s004-v009",
+      "u01-s004-v010",
+      "u01-s004-v011",
+      "u01-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s004-cr001",
+      "u01-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以數線順序重新檢查正數、0 和負數，特別核對兩個負數的反向絕對值規則與不等號方向。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "f1160a0b391d561bcd53cf5a37e74330bd745d7d50c878e4a37d5ada36c255f7"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u01-s004-v001",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一個關係正確？",
+    "choices": [
+      "-2<3",
+      "-2>3",
+      "3<0",
+      "0<-2"
+    ],
+    "answerIndex": 0,
+    "explanation": "負數小於 0，正數大於 0，所以 -2<3。",
+    "steps": [
+      "辨認 -2 是負數。",
+      "3 是正數。",
+      "負數小於正數。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-2<3",
+        "truth": true,
+        "reason": "-2在0左、3在0右，故-2<3。"
+      },
+      {
+        "choice": "-2>3",
+        "truth": false,
+        "reason": "負數不大於正數。"
+      },
+      {
+        "choice": "3<0",
+        "truth": false,
+        "reason": "正數3不小於0。"
+      },
+      {
+        "choice": "0<-2",
+        "truth": false,
+        "reason": "0大於-2。"
+      }
+    ],
+    "commonMistake": "只看數字2與3而忽略正負位置。",
+    "concept": "正數>0>負數。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "直接比較一正一負。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "091a3a022b7d56c9282c92d027881505a5e8e496f79d4ffb85e68a1515dc97d4"
+  },
+  {
+    "questionId": "u01-s004-v002",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "-8、-3、-11、-5 中，最大的數是哪一個？",
+    "choices": [
+      "-8",
+      "-3",
+      "-11",
+      "-5"
+    ],
+    "answerIndex": 1,
+    "explanation": "負數中離 0 最近者最大。-3 距離 0 最近，因此最大。",
+    "steps": [
+      "四數都為負。",
+      "比較到0的距離。",
+      "3最小，所以-3最大。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-8",
+        "truth": false,
+        "reason": "小於-3。"
+      },
+      {
+        "choice": "-3",
+        "truth": true,
+        "reason": "數線順序-11<-8<-5<-3，最大-3。"
+      },
+      {
+        "choice": "-11",
+        "truth": false,
+        "reason": "最小而非最大。"
+      },
+      {
+        "choice": "-5",
+        "truth": false,
+        "reason": "小於-3。"
+      }
+    ],
+    "commonMistake": "看到11最大就選-11。",
+    "concept": "兩負數中絕對值較小者較大。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "從多個負整數中找最大值。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "ef23c8409921df5b005e7b84e5b2e15926260780735a9b18ba6dada1efd72c9d"
+  },
+  {
+    "questionId": "u01-s004-v003",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "將 -7、0、-1 由小到大排列，何者正確？",
+    "choices": [
+      "0<-1<-7",
+      "-1<-7<0",
+      "-7<-1<0",
+      "-7<0<-1"
+    ],
+    "answerIndex": 2,
+    "explanation": "負數小於 0；兩負數中 -7 在 -1 左側，所以 -7<-1<0。",
+    "steps": [
+      "先把0放最大。",
+      "比較-7與-1。",
+      "由小到大寫-7、-1、0。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "0<-1<-7",
+        "truth": false,
+        "reason": "方向全部錯。"
+      },
+      {
+        "choice": "-1<-7<0",
+        "truth": false,
+        "reason": "-1與-7順序錯。"
+      },
+      {
+        "choice": "-7<-1<0",
+        "truth": true,
+        "reason": "-7最左，-1次之，0最右。"
+      },
+      {
+        "choice": "-7<0<-1",
+        "truth": false,
+        "reason": "0與-1順序錯。"
+      }
+    ],
+    "commonMistake": "把負號後數字較大者當原數較大。",
+    "concept": "利用數線由左到右排列。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "basic"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "排列兩個負數與0。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "992bb48ace9eb3f8cd450fb96d620efdf983e33bbf86c11dd6908fcd5c7df9df"
+  },
+  {
+    "questionId": "u01-s004-v004",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "將 4、-6、0、-2 由小到大排列，何者正確？",
+    "choices": [
+      "4<0<-2<-6",
+      "-2<-6<0<4",
+      "-6<0<-2<4",
+      "-6<-2<0<4"
+    ],
+    "answerIndex": 3,
+    "explanation": "負數先，且 -6<-2；接著 0，最後正數 4。",
+    "steps": [
+      "負數小於0，正數大於0。",
+      "負數中-6較小。",
+      "排列-6<-2<0<4。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "4<0<-2<-6",
+        "truth": false,
+        "reason": "順序反向。"
+      },
+      {
+        "choice": "-2<-6<0<4",
+        "truth": false,
+        "reason": "兩負數順序錯。"
+      },
+      {
+        "choice": "-6<0<-2<4",
+        "truth": false,
+        "reason": "0與-2順序錯。"
+      },
+      {
+        "choice": "-6<-2<0<4",
+        "truth": true,
+        "reason": "數線由左到右為-6,-2,0,4。"
+      }
+    ],
+    "commonMistake": "把 0 放在負數之前。",
+    "concept": "多數排序先分正、零、負。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "排列正負整數與0。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "ac27c4e1171e6903a35ae051588ccbeba901c7dbe9e338ad2c18a5d155beb7da"
+  },
+  {
+    "questionId": "u01-s004-v005",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "svg",
+    "figureId": "fig-u01-s004-v005",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "依圖判斷 A、B 的大小關係。",
+    "choices": [
+      "B>A",
+      "A>B",
+      "A=B",
+      "無法比較"
+    ],
+    "answerIndex": 0,
+    "explanation": "A 在 -5，B 在 -1；B 位於 A 右方，所以 B>A。",
+    "steps": [
+      "讀出A=-5。",
+      "讀出B=-1。",
+      "數線右方較大。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "B>A",
+        "truth": true,
+        "reason": "-1>-5，因此B>A。"
+      },
+      {
+        "choice": "A>B",
+        "truth": false,
+        "reason": "與數線位置相反。"
+      },
+      {
+        "choice": "A=B",
+        "truth": false,
+        "reason": "坐標不同。"
+      },
+      {
+        "choice": "無法比較",
+        "truth": false,
+        "reason": "圖中刻度充分。"
+      }
+    ],
+    "commonMistake": "比較5與1後認為A較大。",
+    "concept": "數線越右的數越大。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "從數線圖比較兩個負數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "20fc230fb6f0c919dd1a9201bcc293346a572f3d914193f87193662ecfe9aa91"
+  },
+  {
+    "questionId": "u01-s004-v006",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一個不等式正確？",
+    "choices": [
+      "-9<-12",
+      "-12<-9",
+      "-4>2",
+      "0<-1"
+    ],
+    "answerIndex": 1,
+    "explanation": "-12 在 -9 左側，所以 -12<-9。",
+    "steps": [
+      "檢查每個式子的數線位置。",
+      "-12比-9更左。",
+      "第二項正確。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-9<-12",
+        "truth": false,
+        "reason": "方向相反。"
+      },
+      {
+        "choice": "-12<-9",
+        "truth": true,
+        "reason": "-12<-9，其他三項均違反正負順序。"
+      },
+      {
+        "choice": "-4>2",
+        "truth": false,
+        "reason": "負數-4不大於正數2。"
+      },
+      {
+        "choice": "0<-1",
+        "truth": false,
+        "reason": "0大於-1。"
+      }
+    ],
+    "commonMistake": "直接比較12與9而寫-12>-9。",
+    "concept": "負數越遠離0越小。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "standard"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "辨認唯一正確不等式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "92f7c5a4a77a1624e604f0cce2116c52d23a455e7ec8136e7c90a93807a28832"
+  },
+  {
+    "questionId": "u01-s004-v007",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "已知 a<0 且 b>0，下列何者一定成立？",
+    "choices": [
+      "a>b",
+      "a=b",
+      "b>a",
+      "|a|<b"
+    ],
+    "answerIndex": 2,
+    "explanation": "任何正數都大於任何負數，所以 b>a 一定成立；絕對值關係未給大小，不能確定。",
+    "steps": [
+      "a是負數。",
+      "b是正數。",
+      "正數大於負數。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "a>b",
+        "truth": false,
+        "reason": "與正負順序相反。"
+      },
+      {
+        "choice": "a=b",
+        "truth": false,
+        "reason": "正負數不可能相等。"
+      },
+      {
+        "choice": "b>a",
+        "truth": true,
+        "reason": "一定成立。"
+      },
+      {
+        "choice": "|a|<b",
+        "truth": false,
+        "reason": "例如a=-100,b=1時不成立。"
+      }
+    ],
+    "commonMistake": "認為 |a|<b 一定成立，忽略負數的絕對值可能很大。",
+    "concept": "只靠符號可確定正數大於負數，但不能確定絕對值。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "從條件判斷必然關係。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "1e4face71b6ed8b95b9c01de9842adecd5d5946f5f201544e222b79cd5245946"
+  },
+  {
+    "questionId": "u01-s004-v008",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "在 -5、-2、-4、-3 四個數中，第二大的數是哪一個？",
+    "choices": [
+      "-5",
+      "-2",
+      "-4",
+      "-3"
+    ],
+    "answerIndex": 3,
+    "explanation": "由大到小為 -2、-3、-4、-5，因此第二大是 -3。",
+    "steps": [
+      "四數皆負。",
+      "離0越近越大。",
+      "排序後取第二個。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-5",
+        "truth": false,
+        "reason": "在 -5、-2、-4、-3 中，-5 位於數線最左側，因此不是由大到小排列的第二個數。"
+      },
+      {
+        "choice": "-2",
+        "truth": false,
+        "reason": "-2 是四個數中最大者，應排第一位，不是第二位。"
+      },
+      {
+        "choice": "-4",
+        "truth": false,
+        "reason": "第三大。"
+      },
+      {
+        "choice": "-3",
+        "truth": true,
+        "reason": "-2>-3>-4>-5，第二大-3。"
+      }
+    ],
+    "commonMistake": "把絕對值第二大4對應的-4當第二大。",
+    "concept": "負數排序與絕對值順序相反。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "完成全排序後選定名次。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "f9f25fa6f3be0f68676ed18fe722d5989f86e8e9316bf1dfd3eeede1210eb186"
+  },
+  {
+    "questionId": "u01-s004-v009",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "比較 -2026 與 -2025，下列何者正確？",
+    "choices": [
+      "-2026<-2025",
+      "-2026>-2025",
+      "兩數相等",
+      "無法比較"
+    ],
+    "answerIndex": 0,
+    "explanation": "-2026 比 -2025 更遠離 0，位於數線較左，所以較小。",
+    "steps": [
+      "兩數都為負。",
+      "2026>2025。",
+      "原負數順序反轉，-2026<-2025。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-2026<-2025",
+        "truth": true,
+        "reason": "數線上-2026在-2025左方。"
+      },
+      {
+        "choice": "-2026>-2025",
+        "truth": false,
+        "reason": "方向錯。"
+      },
+      {
+        "choice": "兩數相等",
+        "truth": false,
+        "reason": "數值不同。"
+      },
+      {
+        "choice": "無法比較",
+        "truth": false,
+        "reason": "整數可直接比較。"
+      }
+    ],
+    "commonMistake": "看到2026較大就判-2026較大。",
+    "concept": "大絕對值的負數反而較小。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "advanced"
+    ],
+    "estimatedTimeSec": "60",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "比較數值接近的大負整數。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "e6d078ca38dfcc1be72af69c8c317dd8b78bc747fbc1c7a9cb446b08bc8f21ef"
+  },
+  {
+    "questionId": "u01-s004-v010",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "四個測站的最低溫依序為甲 -4°C、乙 -9°C、丙 2°C、丁 0°C。哪個測站的最低溫最高？",
+    "choices": [
+      "甲",
+      "丙",
+      "乙",
+      "丁"
+    ],
+    "answerIndex": 1,
+    "explanation": "2°C 是四個數中最大，因此丙站最低溫最高。",
+    "steps": [
+      "把四溫度視為數線位置。",
+      "正數2大於0與負數。",
+      "丙站最高。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "甲",
+        "truth": false,
+        "reason": "-4小於2。"
+      },
+      {
+        "choice": "丙",
+        "truth": true,
+        "reason": "最大值2°C屬丙。"
+      },
+      {
+        "choice": "乙",
+        "truth": false,
+        "reason": "-9最低。"
+      },
+      {
+        "choice": "丁",
+        "truth": false,
+        "reason": "0小於2。"
+      }
+    ],
+    "commonMistake": "把「最低溫最高」誤解成選數值最小的測站。",
+    "concept": "情境中的「最高」仍是比較數值最大。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "literacy"
+    ],
+    "estimatedTimeSec": "80",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "判讀多站最低溫資料。",
+    "literacyContextNecessity": "測站名稱與各自溫度資料決定比較對象，不能刪除表意。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "f69a36fd54a16c65b1f887599ed52dc08c10faa3ba28afef7edfc094e2b0b443"
+  },
+  {
+    "questionId": "u01-s004-v011",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "三個帳戶餘額為甲 -1,200 元、乙 -800 元、丙 300 元。下列敘述何者正確？",
+    "choices": [
+      "甲餘額最大",
+      "乙比丙多 1,100 元",
+      "丙餘額最大，甲餘額最小",
+      "甲與乙都比丙大"
+    ],
+    "answerIndex": 2,
+    "explanation": "300>-800>-1200，所以丙最大、甲最小。",
+    "steps": [
+      "正餘額大於負餘額。",
+      "兩負數中-800>-1200。",
+      "判定丙最大、甲最小。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "甲餘額最大",
+        "truth": false,
+        "reason": "甲最小。"
+      },
+      {
+        "choice": "乙比丙多 1,100 元",
+        "truth": false,
+        "reason": "乙比丙少1100。"
+      },
+      {
+        "choice": "丙餘額最大，甲餘額最小",
+        "truth": true,
+        "reason": "300>-800>-1200，故丙最大甲最小。"
+      },
+      {
+        "choice": "甲與乙都比丙大",
+        "truth": false,
+        "reason": "兩個負餘額都小於丙。"
+      }
+    ],
+    "commonMistake": "以債務數字1200較大就說甲餘額最大。",
+    "concept": "帳戶餘額依帶號數比較，不依債務絕對值。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "literacy"
+    ],
+    "estimatedTimeSec": "85",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "在財務語境中比較負餘額與正餘額。",
+    "literacyContextNecessity": "帳戶餘額的正負與三個持有者資料共同決定最大最小。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "0ea82dba34c864ea62a05fbce58524f86fc2efd80e08e22b18944e85f2b7332d"
+  },
+  {
+    "questionId": "u01-s004-v012",
+    "unitId": "u01",
+    "numericUnitId": 1,
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "地形測量得到河床 -25 公尺、隧道 -18 公尺、地下月台 -3 公尺、山丘 12 公尺。由低到高排列何者正確？",
+    "choices": [
+      "山丘、月台、隧道、河床",
+      "河床、月台、隧道、山丘",
+      "隧道、河床、月台、山丘",
+      "河床、隧道、月台、山丘"
+    ],
+    "answerIndex": 3,
+    "explanation": "數值由小到大為 -25、-18、-3、12，因此順序是河床、隧道、月台、山丘。",
+    "steps": [
+      "低到高等同數值小到大。",
+      "排列負數 -25<-18<-3。",
+      "正數12最後。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "山丘、月台、隧道、河床",
+        "truth": false,
+        "reason": "由高到低。"
+      },
+      {
+        "choice": "河床、月台、隧道、山丘",
+        "truth": false,
+        "reason": "-3與-18順序錯。"
+      },
+      {
+        "choice": "隧道、河床、月台、山丘",
+        "truth": false,
+        "reason": "-18與-25順序錯。"
+      },
+      {
+        "choice": "河床、隧道、月台、山丘",
+        "truth": true,
+        "reason": "-25<-18<-3<12，對應第四項。"
+      }
+    ],
+    "commonMistake": "把負數絕對值較大者當作高度較高。",
+    "concept": "海拔可用帶號數直接排序。",
+    "tags": [
+      "數與量",
+      "數的大小比較",
+      "literacy"
+    ],
+    "estimatedTimeSec": "90",
+    "prerequisiteSkillIds": [
+      "integer-number-line-position"
+    ],
+    "authoringIntent": "依帶號高程完成地形順序。",
+    "literacyContextNecessity": "四種地形名稱與相對高程都需要參與排序。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "e79f8fcc1edb84c0444790adaf22b0adfa16da619fe1a267ab48e17263115b72"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u01-s004-cr001",
+    "unitId": "u01",
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "將 -12、5、0、-3、-9 由小到大排列，並用一句話說明兩個負數比較的規則。",
+    "requiredWork": [
+      "寫出完整不等式鏈。",
+      "規則須能解釋 -12、-9、-3 的順序。"
+    ],
+    "fullCreditSolution": [
+      "-12<-9<-3<0<5。",
+      "兩個負數中，離 0 越遠者越小；或絕對值越大者原數越小。"
+    ],
+    "alternativeSolutions": [
+      "可畫數線說明，但仍須寫出排列。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "排列完全正確且負數規則清楚。"
+      },
+      {
+        "score": 2,
+        "criteria": "排列正確但規則不完整；或只有一個相鄰次序錯但規則正確。"
+      },
+      {
+        "score": 1,
+        "criteria": "能正確分出正、零、負，或正確排列三個負數。"
+      },
+      {
+        "score": 0,
+        "criteria": "排列大多錯且無有效規則。"
+      }
+    ],
+    "scoringNotes": [
+      "不等號方向須與「由小到大」一致。"
+    ],
+    "commonErrors": [
+      "把-3放最小。",
+      "把0放在負數前。",
+      "不等號全部反向。"
+    ],
+    "independentReview": {
+      "derivedResult": "-12<-9<-3<0<5。",
+      "ambiguity": "none",
+      "decision": "pass"
+    },
+    "contentSha256": "f826f4aa559dfd801fff47e8b627ebc89cd46468732173c53fbb321e3a947341"
+  },
+  {
+    "questionId": "u01-s004-cr002",
+    "unitId": "u01",
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-comparison",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "已知整數 x 滿足 -6<x<-1。請列出所有可能的 x，指出其中最大值與最小值，並說明為什麼端點 -6、-1 不包含。",
+    "requiredWork": [
+      "只列整數。",
+      "嚴格不等號端點不得列入。",
+      "指出最大、最小。"
+    ],
+    "fullCreditSolution": [
+      "可能的 x 為 -5、-4、-3、-2。",
+      "最大值 -2，最小值 -5。",
+      "因為符號 < 表示 x 必須嚴格大於 -6 且嚴格小於 -1，所以 -6、-1 不符合。"
+    ],
+    "alternativeSolutions": [
+      "可用數線空心點表示端點。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "四個整數、最大最小與端點理由全部正確。"
+      },
+      {
+        "score": 2,
+        "criteria": "四個整數正確，但最大最小或端點理由有一項缺漏。"
+      },
+      {
+        "score": 1,
+        "criteria": "列出至少三個正確整數並理解端點不含。"
+      },
+      {
+        "score": 0,
+        "criteria": "把端點大量納入或無法列出區間內整數。"
+      }
+    ],
+    "scoringNotes": [
+      "順序不影響得分，但不得重複或漏值。"
+    ],
+    "commonErrors": [
+      "列入-6或-1。",
+      "認為-5最大。",
+      "漏掉-2。"
+    ],
+    "independentReview": {
+      "derivedResult": "x=-5,-4,-3,-2；最大-2，最小-5。",
+      "ambiguity": "none",
+      "decision": "pass"
+    },
+    "contentSha256": "df0f1da8409342bac8c1a4e190b3027546d5eb5a4e35bb65080cb6ff0e14286b"
+  }
+];
+
+export const DRAWING_SPECS = [
+  {
+    "figureId": "fig-u01-s004-v005",
+    "unitId": "u01",
+    "skillId": "integer-number-comparison",
+    "altText": "數線上 A 位於 -5，B 位於 -1；B 在 A 的右方。",
+    "drawingSpec": {
+      "canvas": "720×220，viewBox 0 0 720 220",
+      "axis": "水平數線 -6 到 2，每格 1，左右箭頭",
+      "points": "A 在 -5，B 在 -1；兩點皆以實心圓表示",
+      "labels": "A、B 在點上方；整數刻度在下方",
+      "lineStyle": "軸與刻度皆黑色實線，無輔助虛線",
+      "comparisonRule": "數線越右的數越大",
+      "accessibility": "A 坐標 -5，B 坐標 -1，所以 B 大於 A"
+    },
+    "svgPath": "figures/u01/fig-u01-s004-v005.svg",
+    "reviewStatus": "independently-reviewed",
+    "svgAssertions": [
+      "<circle cx=\"150\" cy=\"110\"",
+      ">A</text>",
+      "<circle cx=\"430\" cy=\"110\"",
+      ">B</text>"
+    ],
+    "figureReview": {
+      "reviewVersion": "human-figure-review-r2.1",
+      "coordinateAndScaleCheck": "pass",
+      "labelPlacementCheck": "pass",
+      "solidDashedLineCheck": "pass",
+      "questionConsistencyCheck": "pass",
+      "answerLeakCheck": "pass",
+      "mobileReadabilityCheck": "pass at 360 CSS px width",
+      "accessibilityCheck": "pass: SVG title, desc, role=img and equivalent altText present",
+      "reviewNote": "A 與 -5 刻度同在 x=150，B 與 -1 刻度同在 x=430；B 明確位於 A 右方，圖形只提供比較所需位置。",
+      "reviewedAt": "2026-07-12",
+      "decision": "pass"
+    },
+    "contentSha256": "84ae27dd69a1794abdc208ac4896a3c08ef140e9e63f2b1fed46242b38c95027"
+  }
+];

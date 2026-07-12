@@ -1,0 +1,273 @@
+{
+  "lectureId": "u01-s013-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-exponents",
+  "skillId": "integer-exponent-laws",
+  "title": "指數律：同底數乘除與冪的乘方",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能使用同底數相乘指數相加。",
+    "能使用同底數相除指數相減。",
+    "能處理冪的乘方。",
+    "能辨認不能套用指數律的加減式。",
+    "能把不同底數改寫成共同底數後化簡。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-exponent-meaning",
+      "requiredLevel": "能把冪展開成重複乘法，並清楚辨認底數、指數和括號。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "同底數",
+      "definition": "冪的底數完全相同，包括符號與括號。"
+    },
+    {
+      "term": "冪的乘方",
+      "definition": "把一個冪再取次方，例如 (a²)³。"
+    },
+    {
+      "term": "指數相加",
+      "definition": "同底數冪相乘時，因數總數相加。"
+    },
+    {
+      "term": "指數相減",
+      "definition": "同底數冪相除時，約去共同因數後剩餘個數相減。"
+    },
+    {
+      "term": "共同底數",
+      "definition": "把 4、8 等改寫成 2 的冪，便於合併。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "aᵐ·aⁿ",
+      "meaning": "同底數相乘。"
+    },
+    {
+      "symbol": "aᵐ÷aⁿ",
+      "meaning": "同底數相除；a≠0。"
+    },
+    {
+      "symbol": "(aᵐ)ⁿ",
+      "meaning": "冪的乘方。"
+    }
+  ],
+  "conceptNarrative": [
+    "aᵐ·aⁿ 中共有 m+n 個 a，因此等於 aᵐ⁺ⁿ。",
+    "aᵐ÷aⁿ 透過約去 n 個共同因數，m≥n 時得到 aᵐ⁻ⁿ；底數不能為 0。",
+    "(aᵐ)ⁿ 表示把 aᵐ 相乘 n 次，所以總共有 mn 個 a，指數相乘。",
+    "指數律主要處理乘除，不適用於 aᵐ+aⁿ；加法不能直接把指數相加。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "同底數乘法",
+      "statement": "aᵐ·aⁿ=aᵐ⁺ⁿ。"
+    },
+    {
+      "name": "同底數除法",
+      "statement": "aᵐ÷aⁿ=aᵐ⁻ⁿ，a≠0；本節主要處理 m≥n。"
+    },
+    {
+      "name": "冪的乘方",
+      "statement": "(aᵐ)ⁿ=aᵐⁿ。"
+    },
+    {
+      "name": "積的乘方",
+      "statement": "(ab)ⁿ=aⁿbⁿ。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "aᵐ·aⁿ=aᵐ⁺ⁿ",
+      "conditions": [
+        "底數完全相同"
+      ],
+      "meaning": "合併重複因數。"
+    },
+    {
+      "formula": "aᵐ÷aⁿ=aᵐ⁻ⁿ",
+      "conditions": [
+        "a≠0",
+        "本節 m≥n"
+      ],
+      "meaning": "約去共同因數。"
+    },
+    {
+      "formula": "(aᵐ)ⁿ=aᵐⁿ",
+      "conditions": [
+        "m、n 為正整數"
+      ],
+      "meaning": "冪重複相乘。"
+    },
+    {
+      "formula": "(ab)ⁿ=aⁿbⁿ",
+      "conditions": [
+        "同一個乘積整體取次方"
+      ],
+      "meaning": "每個因數都取 n 次方。"
+    }
+  ],
+  "nonApplicableCases": [
+    "aᵐ+aⁿ 不能用同底數乘法規則。",
+    "不同底數不能直接合併，除非先正確改寫成共同底數。",
+    "同底數除法要求底數不為 0。",
+    "(aᵐ)ⁿ 的指數相乘，不是相加。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先辨認運算是乘、除、冪的乘方或加減。",
+      "check": "是否真的符合某條指數律？"
+    },
+    {
+      "step": 2,
+      "instruction": "檢查底數是否完全相同。",
+      "check": "負號和括號是否一致？"
+    },
+    {
+      "step": 3,
+      "instruction": "選擇指數相加、相減或相乘。",
+      "check": "運算類型對應正確嗎？"
+    },
+    {
+      "step": 4,
+      "instruction": "不同底數時嘗試改寫。",
+      "check": "4=2²、8=2³ 是否可用？"
+    },
+    {
+      "step": 5,
+      "instruction": "展開少量因數做反查。",
+      "check": "合併後因數個數合理嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "化簡 3⁴×3²。",
+      "solutionSteps": [
+        "同底數相乘。",
+        "指數相加 4+2=6。",
+        "得到 3⁶。"
+      ],
+      "answer": "3⁶。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "化簡 5⁷÷5³。",
+      "solutionSteps": [
+        "同底數相除且底數非 0。",
+        "指數相減 7-3=4。",
+        "得到 5⁴。"
+      ],
+      "answer": "5⁴。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "化簡 (2³)⁴。",
+      "solutionSteps": [
+        "這是冪的乘方。",
+        "指數相乘 3×4=12。",
+        "得到 2¹²。"
+      ],
+      "answer": "2¹²。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "化簡 4³×2⁵。",
+      "solutionSteps": [
+        "4³=(2²)³=2⁶。",
+        "2⁶×2⁵=2¹¹。",
+        "完成共同底數化簡。"
+      ],
+      "answer": "2¹¹。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 2³×2⁴ 寫成 4⁷。",
+      "why": "同時錯加底數。",
+      "correction": "底數保持 2，指數相加得 2⁷。"
+    },
+    {
+      "mistake": "把 3⁶÷3² 寫成 3³。",
+      "why": "把指數相除。",
+      "correction": "指數應相減，得 3⁴。"
+    },
+    {
+      "mistake": "把 (5²)³ 寫成 5⁵。",
+      "why": "把指數相加。",
+      "correction": "冪的乘方指數相乘，得 5⁶。"
+    },
+    {
+      "mistake": "把 2³+2⁴ 寫成 2⁷。",
+      "why": "把加法當乘法。",
+      "correction": "指數律不直接處理加法。"
+    },
+    {
+      "mistake": "不同底數直接加指數。",
+      "why": "忽略同底數條件。",
+      "correction": "先改寫共同底數或分別計算。"
+    },
+    {
+      "mistake": "同底數除法允許底數 0。",
+      "why": "忽略除數可能為 0。",
+      "correction": "底數必須非 0。"
+    }
+  ],
+  "selfCheck": [
+    "運算類型是什麼？",
+    "底數完全相同嗎？",
+    "指數該加、減還是乘？",
+    "除法底數非 0 嗎？",
+    "能用展開驗證嗎？"
+  ],
+  "summary": [
+    "同底數乘法指數相加。",
+    "同底數除法指數相減。",
+    "冪的乘方指數相乘。",
+    "加法不能直接套指數律。"
+  ],
+  "connections": {
+    "previous": "先備技能是指數的意義。",
+    "next": [
+      "科學記號乘除會使用 10 的冪與指數律。",
+      "代數單項式運算會延伸相同規則。",
+      "幾何縮放中面積與體積的次方關係可用指數理解。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s013-v001",
+      "u01-s013-v002",
+      "u01-s013-v003",
+      "u01-s013-v004",
+      "u01-s013-v005",
+      "u01-s013-v006",
+      "u01-s013-v007",
+      "u01-s013-v008",
+      "u01-s013-v009",
+      "u01-s013-v010",
+      "u01-s013-v011",
+      "u01-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s013-cr001",
+      "u01-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以展開因數的方法獨立驗證同底數乘法、除法、冪的乘方和積的乘方，且未把加法誤套指數律。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "ee427c32de1bbaef93134f61b13abb15679c78d88a82337f38387aa7cc46771b"
+}

@@ -1,0 +1,261 @@
+{
+  "lectureId": "u01-s008-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-arithmetic",
+  "skillId": "integer-addition",
+  "title": "整數加法：合併同方向與相反方向的變化",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能計算同號整數相加。",
+    "能計算異號整數相加。",
+    "能辨認相反數相加為 0。",
+    "能使用交換律與結合律簡化多項加法。",
+    "能把情境中的連續變化寫成整數加法。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-absolute-value-distance",
+      "requiredLevel": "能理解正負數的方向意義，並用絕對值比較兩個方向量的大小。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "同號相加",
+      "definition": "兩加數符號相同，方向一致。"
+    },
+    {
+      "term": "異號相加",
+      "definition": "兩加數符號不同，方向相反。"
+    },
+    {
+      "term": "交換律",
+      "definition": "加數交換順序，和不變。"
+    },
+    {
+      "term": "結合律",
+      "definition": "三個以上加數可先合併任意相鄰兩項，和不變。"
+    },
+    {
+      "term": "抵消",
+      "definition": "互為相反數的兩數相加得到 0。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a+b",
+      "meaning": "把帶號變化 b 加到 a。"
+    },
+    {
+      "symbol": "a+b=b+a",
+      "meaning": "加法交換律。"
+    },
+    {
+      "symbol": "(a+b)+c=a+(b+c)",
+      "meaning": "加法結合律。"
+    }
+  ],
+  "conceptNarrative": [
+    "同號相加表示同方向累積：把絕對值相加，符號保持不變。",
+    "異號相加表示兩方向抵消：比較絕對值，以較大絕對值的方向作為結果符號，再用大減小。",
+    "數線模型中，從第一個數出發，正數向右移、負數向左移。",
+    "多項加法可先找相反數或容易湊整的組合，交換律與結合律讓計算更安全。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "同號加法",
+      "statement": "同號整數相加，絕對值相加，符號不變。"
+    },
+    {
+      "name": "異號加法",
+      "statement": "異號整數相加，絕對值相減，結果取絕對值較大者的符號。"
+    },
+    {
+      "name": "加法單位元",
+      "statement": "a+0=a。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(+a)+(+b)=+(a+b)",
+      "conditions": [
+        "a、b≥0"
+      ],
+      "meaning": "正方向累積。"
+    },
+    {
+      "formula": "(-a)+(-b)=-(a+b)",
+      "conditions": [
+        "a、b≥0"
+      ],
+      "meaning": "負方向累積。"
+    },
+    {
+      "formula": "a+(-a)=0",
+      "conditions": [
+        "互為相反數"
+      ],
+      "meaning": "完全抵消。"
+    }
+  ],
+  "nonApplicableCases": [
+    "異號相加不能直接把絕對值相加。",
+    "結果符號取決於絕對值較大者，不是固定取第一項。",
+    "交換律與結合律只改順序與分組，不可改變每一項本身符號。",
+    "情境中的最後量還可能需要加回基準或起始量。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先判斷兩數同號或異號。",
+      "check": "符號是否看清楚？"
+    },
+    {
+      "step": 2,
+      "instruction": "同號加絕對值，異號做絕對值大減小。",
+      "check": "使用的是加還是減？"
+    },
+    {
+      "step": 3,
+      "instruction": "決定結果符號。",
+      "check": "絕對值較大者的方向是什麼？"
+    },
+    {
+      "step": 4,
+      "instruction": "多項時先配對相反數或湊整。",
+      "check": "是否能先得到 0 或 10 的倍數？"
+    },
+    {
+      "step": 5,
+      "instruction": "用估算或情境方向檢查。",
+      "check": "結果方向合理嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "計算 (-8)+(-5)。",
+      "solutionSteps": [
+        "同為負數。",
+        "8+5=13。",
+        "保留負號。"
+      ],
+      "answer": "-13。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "計算 11+(-7)。",
+      "solutionSteps": [
+        "異號相加。",
+        "11-7=4。",
+        "11 的絕對值較大且為正。"
+      ],
+      "answer": "4。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "計算 -14+9。",
+      "solutionSteps": [
+        "異號相加。",
+        "14-9=5。",
+        "-14 的絕對值較大，結果為負。"
+      ],
+      "answer": "-5。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "計算 18+(-6)+(-18)+10。",
+      "solutionSteps": [
+        "先配 18 與 -18 得 0。",
+        "剩下 -6+10=4。",
+        "利用交換律與結合律不改變總和。"
+      ],
+      "answer": "4。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "異號相加把絕對值直接相加。",
+      "why": "套用同號規則。",
+      "correction": "異號應用大減小。"
+    },
+    {
+      "mistake": "結果永遠取第一個數的符號。",
+      "why": "未比較絕對值。",
+      "correction": "取絕對值較大者的符號。"
+    },
+    {
+      "mistake": "把 -3+(-4) 算成 1。",
+      "why": "把同號誤當異號。",
+      "correction": "同號相加得 -7。"
+    },
+    {
+      "mistake": "移項或重排時漏掉負號。",
+      "why": "把符號和數字分離。",
+      "correction": "每一項連同前方符號一起移動。"
+    },
+    {
+      "mistake": "相反數相加後寫成 1。",
+      "why": "混淆乘法倒數。",
+      "correction": "a+(-a)=0。"
+    },
+    {
+      "mistake": "情境中只算變化，忘記起始量。",
+      "why": "沒有辨認題目求最後值。",
+      "correction": "最後值＝起始值＋總變化。"
+    }
+  ],
+  "selfCheck": [
+    "兩數同號還是異號？",
+    "異號時絕對值誰較大？",
+    "符號是否跟著項目？",
+    "能先抵消嗎？",
+    "題目求總變化還是最後量？"
+  ],
+  "summary": [
+    "同號：絕對值相加，符號不變。",
+    "異號：絕對值大減小，取較大者符號。",
+    "相反數相加為 0。",
+    "交換律和結合律可協助配對。"
+  ],
+  "connections": {
+    "previous": "先備技能是絕對值與距離。",
+    "next": [
+      "整數減法可改寫成加上相反數。",
+      "乘除會使用不同的符號規則。",
+      "四則混合需先判斷運算順序。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s008-v001",
+      "u01-s008-v002",
+      "u01-s008-v003",
+      "u01-s008-v004",
+      "u01-s008-v005",
+      "u01-s008-v006",
+      "u01-s008-v007",
+      "u01-s008-v008",
+      "u01-s008-v009",
+      "u01-s008-v010",
+      "u01-s008-v011",
+      "u01-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s008-cr001",
+      "u01-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "以數線方向、同號累積、異號抵消和相反數配對重算四例；交換律與結合律未改變任何數的符號。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "e156e758ad86aa1125db1eafba27a1f17b4b34eefca012fcd1d8ff55a49f52eb"
+}

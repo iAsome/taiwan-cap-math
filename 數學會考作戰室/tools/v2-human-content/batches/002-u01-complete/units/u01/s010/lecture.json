@@ -1,0 +1,265 @@
+{
+  "lectureId": "u01-s010-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-arithmetic",
+  "skillId": "integer-multiplication-division",
+  "title": "整數的乘法和除法：先判符號，再算絕對值",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能判斷兩整數乘積或商的符號。",
+    "能計算整數乘法與整除。",
+    "能處理多個負因數的乘積。",
+    "能使用乘除互逆檢查。",
+    "能解釋重複變化與平均分配情境。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-subtraction",
+      "requiredLevel": "能完成整數加減，並正確處理負號、括號和帶號數。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "因數",
+      "definition": "乘法中相乘的數。"
+    },
+    {
+      "term": "乘積",
+      "definition": "乘法的結果。"
+    },
+    {
+      "term": "被除數",
+      "definition": "除號前要被分配或分組的數。"
+    },
+    {
+      "term": "除數",
+      "definition": "除號後用來分配或分組的數，不能為 0。"
+    },
+    {
+      "term": "商",
+      "definition": "除法所得結果。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a×b",
+      "meaning": "a 與 b 相乘。"
+    },
+    {
+      "symbol": "a÷b",
+      "meaning": "a 除以 b；b≠0。"
+    },
+    {
+      "symbol": "(-1)^n",
+      "meaning": "可用負因數個數的奇偶判斷乘積符號。"
+    }
+  ],
+  "conceptNarrative": [
+    "乘除符號規則相同：同號得正，異號得負。符號判斷與絕對值計算可分兩步完成。",
+    "多個因數相乘時，只需數負因數個數：偶數個負號得正，奇數個負號得負。",
+    "整數除法本節只處理可整除或結果仍在題目指定範圍內的情況；除數不能為 0。",
+    "可用乘法檢查除法：若 a÷b=c，則 b×c 應回到 a。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "乘法符號規則",
+      "statement": "同號兩數相乘得正，異號兩數相乘得負。"
+    },
+    {
+      "name": "除法符號規則",
+      "statement": "同號兩數相除得正，異號兩數相除得負。"
+    },
+    {
+      "name": "零的乘法",
+      "statement": "任何整數乘 0 都是 0。"
+    },
+    {
+      "name": "除數限制",
+      "statement": "0 不能作除數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "(-a)(-b)=ab",
+      "conditions": [
+        "a、b≥0"
+      ],
+      "meaning": "兩個負方向相乘得正。"
+    },
+    {
+      "formula": "(-a)b=-(ab)",
+      "conditions": [
+        "a、b≥0"
+      ],
+      "meaning": "一正一負得負。"
+    },
+    {
+      "formula": "a÷b=c ⇔ b×c=a",
+      "conditions": [
+        "b≠0"
+      ],
+      "meaning": "乘除互逆。"
+    }
+  ],
+  "nonApplicableCases": [
+    "除以 0 沒有定義。",
+    "a÷b 不可交換成 b÷a。",
+    "負因數個數判斷只適用乘積，不能直接套在加減式。",
+    "若題目要求整數答案，要先確認是否整除。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先數負號或比較兩數符號。",
+      "check": "同號還是異號？"
+    },
+    {
+      "step": 2,
+      "instruction": "決定結果正負。",
+      "check": "負因數個數奇數還偶數？"
+    },
+    {
+      "step": 3,
+      "instruction": "用絕對值完成乘或除。",
+      "check": "基本乘法與除法是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "加回結果符號。",
+      "check": "是否漏寫負號？"
+    },
+    {
+      "step": 5,
+      "instruction": "用互逆運算或估算檢查。",
+      "check": "除法結果乘回除數等於被除數嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "計算 (-7)×5。",
+      "solutionSteps": [
+        "一負一正，異號得負。",
+        "7×5=35。",
+        "結果 -35。"
+      ],
+      "answer": "-35。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "計算 (-48)÷(-6)。",
+      "solutionSteps": [
+        "同為負數，同號得正。",
+        "48÷6=8。",
+        "結果 8。"
+      ],
+      "answer": "8。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "計算 (-2)×(-3)×(-4)。",
+      "solutionSteps": [
+        "共有三個負因數，是奇數個。",
+        "2×3×4=24。",
+        "結果為負。"
+      ],
+      "answer": "-24。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某設備每小時下降 3 單位，連續 8 小時總變化？",
+      "solutionSteps": [
+        "每小時變化 -3。",
+        "重複 8 次寫 (-3)×8。",
+        "得到 -24。"
+      ],
+      "answer": "-24 單位。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "負乘負仍寫負。",
+      "why": "只看到負號未判斷同號。",
+      "correction": "同號相乘得正。"
+    },
+    {
+      "mistake": "異號相除寫正。",
+      "why": "把絕對值計算當完整答案。",
+      "correction": "異號相除得負。"
+    },
+    {
+      "mistake": "三個負因數判成正。",
+      "why": "只兩兩消掉一次後忘了剩餘負號。",
+      "correction": "奇數個負因數得負。"
+    },
+    {
+      "mistake": "0÷5 說無定義。",
+      "why": "混淆被除數與除數。",
+      "correction": "0÷5=0；只有除數為 0 不可。"
+    },
+    {
+      "mistake": "5÷0=0。",
+      "why": "誤認任何含 0 的除法都為 0。",
+      "correction": "除以 0 沒有定義。"
+    },
+    {
+      "mistake": "把 a÷b 與 b÷a 當相同。",
+      "why": "誤用交換律。",
+      "correction": "除法一般不可交換。"
+    }
+  ],
+  "selfCheck": [
+    "符號先判了嗎？",
+    "負因數是奇數個或偶數個？",
+    "除數是否為 0？",
+    "絕對值運算正確嗎？",
+    "能乘回去檢查嗎？"
+  ],
+  "summary": [
+    "同號乘除得正，異號乘除得負。",
+    "偶數個負因數乘積為正，奇數個為負。",
+    "任何數乘 0 得 0。",
+    "0 不能作除數。"
+  ],
+  "connections": {
+    "previous": "先備技能是整數減法，且需熟悉正負號。",
+    "next": [
+      "四則混合會把乘除放在加減之前。",
+      "指數可表示重複乘法。",
+      "素養題會把固定速率的重複變化寫成乘法。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s010-v001",
+      "u01-s010-v002",
+      "u01-s010-v003",
+      "u01-s010-v004",
+      "u01-s010-v005",
+      "u01-s010-v006",
+      "u01-s010-v007",
+      "u01-s010-v008",
+      "u01-s010-v009",
+      "u01-s010-v010",
+      "u01-s010-v011",
+      "u01-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s010-cr001",
+      "u01-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "先數負因數個數判符號，再計算絕對值；除數皆非 0，連續乘除依原順序重算。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "c1d729176877f54da56a700871645e6271ede64076eab77b3658738d5ef61c63"
+}

@@ -1,0 +1,250 @@
+{
+  "lectureId": "u01-s007-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-basics",
+  "skillId": "integer-absolute-value-distance",
+  "title": "絕對值與距離：用 |a-b| 計算兩點間隔",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能計算兩整數在數線上的距離。",
+    "能使用 |a-b| 且理解次序不影響距離。",
+    "能求距離某點固定長度的兩個位置。",
+    "能處理跨越 0 的溫差與高低差。",
+    "能區分有方向的變化量與無方向的距離。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "integer-absolute-value-basic",
+      "requiredLevel": "能正確求絕對值，並把絕對值解讀成到 0 的距離。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "兩點距離",
+      "definition": "兩個坐標之間的長度，必為非負。"
+    },
+    {
+      "term": "坐標差",
+      "definition": "一個坐標減另一個坐標，可能帶正負。"
+    },
+    {
+      "term": "絕對差",
+      "definition": "坐標差取絕對值，表示不含方向的距離。"
+    },
+    {
+      "term": "等距位置",
+      "definition": "位於基準點兩側相同距離的位置。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "|a-b|",
+      "meaning": "坐標 a 與 b 的距離。"
+    },
+    {
+      "symbol": "|x-c|=d",
+      "meaning": "x 與 c 的距離是 d。"
+    },
+    {
+      "symbol": "d≥0",
+      "meaning": "距離 d 不能為負。"
+    }
+  ],
+  "conceptNarrative": [
+    "兩點距離可想成數線上跨過的總長度。從 -4 到 5 會跨過 9 個單位。",
+    "直接相減可能得到負數，所以要取絕對值：|-4-5|=|-9|=9。",
+    "|a-b| 與 |b-a| 相等，因為方向相反但距離相同。",
+    "|x-c|=d 表示以 c 為中心，向左與向右各 d 單位；d>0 時通常有兩個位置。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "兩點距離公式",
+      "statement": "數線上坐標 a、b 的距離為 |a-b|。"
+    },
+    {
+      "name": "距離對稱性",
+      "statement": "|a-b|=|b-a|。"
+    },
+    {
+      "name": "固定距離位置",
+      "statement": "若 d>0，|x-c|=d 的解為 x=c+d 或 x=c-d。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "距離＝|a-b|",
+      "conditions": [
+        "a、b 使用相同單位"
+      ],
+      "meaning": "消除相減方向，只保留間隔。"
+    },
+    {
+      "formula": "x=c±d",
+      "conditions": [
+        "|x-c|=d 且 d≥0"
+      ],
+      "meaning": "找基準點左右兩個等距位置。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能用 a+b 代替距離；兩點位於原點兩側時雖有時碰巧相同，但不是通則。",
+    "距離沒有負值，若題目要求距離為 -2，條件不可能。",
+    "「從 a 變到 b 的帶號變化」是 b-a，不等同於距離 |b-a|。",
+    "溫差若問升高或降低，需要方向；只問相差多少才取絕對值。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認兩個位置及相同單位。",
+      "check": "是否一個是公尺、一個是公分？"
+    },
+    {
+      "step": 2,
+      "instruction": "寫出一個坐標減另一個坐標。",
+      "check": "負數是否用括號？"
+    },
+    {
+      "step": 3,
+      "instruction": "完成減法後取絕對值。",
+      "check": "結果是否非負？"
+    },
+    {
+      "step": 4,
+      "instruction": "情境題判斷要距離還是帶號變化。",
+      "check": "題目問「相差」還是「增加」？"
+    },
+    {
+      "step": 5,
+      "instruction": "等距方程向左右各走一次。",
+      "check": "是否漏掉其中一個位置？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "求 -6 與 2 的距離。",
+      "solutionSteps": [
+        "寫 |-6-2|。",
+        "|-8|=8。",
+        "距離為 8。"
+      ],
+      "answer": "8。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "清晨 -3°C、中午 7°C，溫差多少？",
+      "solutionSteps": [
+        "溫差是不分方向的距離。",
+        "|7-(-3)|=|10|。",
+        "結果 10°C。"
+      ],
+      "answer": "10°C。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "距離 4 的位置與 1 相距 6，求位置。",
+      "solutionSteps": [
+        "設位置 x，|x-1|=6。",
+        "向右 1+6=7。",
+        "向左 1-6=-5。"
+      ],
+      "answer": "7 或 -5。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "從 -2 移到 -9，變化量與距離各多少？",
+      "solutionSteps": [
+        "變化量=-9-(-2)=-7，表示向負方向 7。",
+        "距離=|-7|=7。",
+        "兩者大小相同但是否帶方向不同。"
+      ],
+      "answer": "變化量 -7；距離 7。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把 -4 與 5 的距離算成 1。",
+      "why": "錯用兩數相加。",
+      "correction": "使用 |5-(-4)|=9。"
+    },
+    {
+      "mistake": "得到 -9 就把距離寫 -9。",
+      "why": "忘記距離非負。",
+      "correction": "取絕對值得 9。"
+    },
+    {
+      "mistake": "負數相減漏括號。",
+      "why": "把 5-(-4) 寫成 5-4。",
+      "correction": "負數必須保留括號。"
+    },
+    {
+      "mistake": "把變化量和距離混為一談。",
+      "why": "忽略方向資訊。",
+      "correction": "變化量可負，距離不可負。"
+    },
+    {
+      "mistake": "解 |x-2|=3 只寫 x=5。",
+      "why": "只向右移。",
+      "correction": "還要向左得 x=-1。"
+    },
+    {
+      "mistake": "不同單位直接相減。",
+      "why": "未統一尺度。",
+      "correction": "先換成同一單位。"
+    }
+  ],
+  "selfCheck": [
+    "兩點單位相同嗎？",
+    "負數相減有括號嗎？",
+    "題目問距離還是變化？",
+    "距離答案非負嗎？",
+    "固定距離是否有左右兩個位置？"
+  ],
+  "summary": [
+    "數線距離為 |a-b|。",
+    "相減次序不影響取絕對值後的距離。",
+    "距離無方向，變化量有方向。",
+    "|x-c|=d 對應 c 左右各 d。"
+  ],
+  "connections": {
+    "previous": "先備技能是絕對值基本意義。",
+    "next": [
+      "整數加減會計算有方向的位移。",
+      "素養題常用溫差、高低差與帳戶差額。",
+      "坐標幾何將把距離概念推廣到平面。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s007-v001",
+      "u01-s007-v002",
+      "u01-s007-v003",
+      "u01-s007-v004",
+      "u01-s007-v005",
+      "u01-s007-v006",
+      "u01-s007-v007",
+      "u01-s007-v008",
+      "u01-s007-v009",
+      "u01-s007-v010",
+      "u01-s007-v011",
+      "u01-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s007-cr001",
+      "u01-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "重新計算每一組 |a-b|，分開核對帶號變化、兩點距離和分段總路程，避免把距離寫成負數。",
+    "reviewVersion": "human-lecture-review-r2.1",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "4df73d7e7db050fce587653f0015c66f314a8e56018ae218115831645bdbae95"
+}
