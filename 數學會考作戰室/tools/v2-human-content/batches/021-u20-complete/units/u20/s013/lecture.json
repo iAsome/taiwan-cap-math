@@ -1,0 +1,195 @@
+{
+  "lectureId": "u20-s013-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-centers",
+  "skillId": "orthocenter-identify",
+  "skillSlot": "s013",
+  "lockedSkillTitle": "垂心辨識",
+  "title": "垂心辨識：不要把任何垂線交點都叫垂心",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從直角標記與頂點位置確認一條線是否為高。",
+    "能在銳角、直角、鈍角圖中辨認垂心。",
+    "能區分高與垂直平分線。",
+    "能審查教材或軟體圖是否缺延長線。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "centroid-property",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「centroid-property」再進入本節。",
+  "glossary": [
+    {
+      "term": "高度線",
+      "definition": "符合三角形高定義的線，不是所有垂直輔助線。"
+    },
+    {
+      "term": "外部交點",
+      "definition": "位於三角形區域之外的共點，鈍角垂心可能如此。"
+    },
+    {
+      "term": "視覺證據",
+      "definition": "直角記號、延長線、頂點連線等可讓讀者核對定義的標示。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "小正方形",
+      "meaning": "交角為90°的直角標記。"
+    },
+    {
+      "symbol": "虛線延長",
+      "meaning": "常表示對邊所在直線向線段外延伸。"
+    }
+  ],
+  "conceptNarrative": [
+    "辨識垂心要逐線檢查兩件事：通過哪一個頂點？垂直哪一條對邊？只看到直角記號仍不足。",
+    "外心也由垂直線形成，但外心的線通過邊中點；垂心的高通過對面頂點。這是兩者最重要的視覺差異。",
+    "鈍角圖若沒有延長線，兩條高容易被裁掉；軟體顯示缺失不代表數學對象不存在。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "兩高判定垂心",
+      "statement": "兩條確定為三角形高的直線交點即可判為垂心，第三高必共點。"
+    },
+    {
+      "name": "圖形位置判讀",
+      "statement": "內部、頂點、外部分別對應銳角、直角、鈍角三角形的垂心。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "通過頂點 ∧ 垂直對邊所在直線",
+      "conditions": [
+        "兩項缺一不可"
+      ],
+      "meaning": "辨認每條高的檢核式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "交點在外部不必然是垂心，鈍角外心也可能在外部。",
+    "通過邊中點且垂直邊的線是垂直平分線，除特殊情況外不是高。",
+    "三條線共點本身不提供中心名稱。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先遮住交點名稱，只看每條線。",
+      "check": "是否通過頂點？"
+    },
+    {
+      "step": 2,
+      "instruction": "找直角標記與對邊。",
+      "check": "垂直對象是否正確？"
+    },
+    {
+      "step": 3,
+      "instruction": "必要時延長邊。",
+      "check": "鈍角高是否被裁切？"
+    },
+    {
+      "step": 4,
+      "instruction": "再依兩高交點與位置命名。",
+      "check": "是否與角型一致？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "AP⊥BC、BP⊥AC。",
+      "solutionSteps": [
+        "AP是A高。",
+        "BP是B高。",
+        "兩高交於P。"
+      ],
+      "answer": "P是垂心。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "三條線垂直各邊且通過邊中點。",
+      "solutionSteps": [
+        "未通過對面頂點。",
+        "這些是垂直平分線。"
+      ],
+      "answer": "交點是外心，不是垂心。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "有直角記號就叫垂心。",
+      "why": "可能是垂直平分線。",
+      "correction": "再檢查是否通過頂點。"
+    },
+    {
+      "mistake": "外部交點就叫垂心。",
+      "why": "位置不是唯一證據。",
+      "correction": "逐線驗證高。"
+    },
+    {
+      "mistake": "軟體沒畫出就說高不存在。",
+      "why": "可能未延長線段。",
+      "correction": "顯示對邊所在直線。"
+    }
+  ],
+  "selfCheck": [
+    "每條線通過哪個頂點？",
+    "直角記號對應哪條邊？",
+    "是否需要延長線？",
+    "角型與交點位置一致嗎？"
+  ],
+  "summary": [
+    "垂心辨識依賴高的定義，不依賴視覺中央。",
+    "高通過頂點；垂直平分線通過邊中點。",
+    "鈍角垂心在外部，圖中常需延長線。"
+  ],
+  "connections": {
+    "previous": "先備：centroid-property",
+    "next": [
+      "下一技能將四種中心放進文字情境中選用。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u20-orthocenter-identify-01",
+    "fig-u20-centers-compare-01",
+    "fig-u20-orthocenter-textbook-01"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s013-v001",
+      "u20-s013-v002",
+      "u20-s013-v003",
+      "u20-s013-v004",
+      "u20-s013-v005",
+      "u20-s013-v006",
+      "u20-s013-v007",
+      "u20-s013-v008",
+      "u20-s013-v009",
+      "u20-s013-v010",
+      "u20-s013-v011",
+      "u20-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s013-cr001",
+      "u20-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "符合鎖定的『只做基本辨識』，題材集中視覺判定與錯圖審查。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "28f9201ee1cf56d0f93a5f69501ba6ad82fd5be883837604e09b6544a5793e67"
+}

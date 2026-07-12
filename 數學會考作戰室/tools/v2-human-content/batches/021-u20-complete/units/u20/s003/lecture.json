@@ -1,0 +1,198 @@
+{
+  "lectureId": "u20-s003-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-proof",
+  "skillId": "geometry-proof-reason",
+  "skillSlot": "s003",
+  "lockedSkillTitle": "理由選擇",
+  "title": "理由選擇：讓每個推論精確對應",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從定義、角關係、全等判定與等量運算中選對理由。",
+    "能區分性質與判定的方向。",
+    "能判斷理由是否過度或不足。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "geometry-proof-steps",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「geometry-proof-steps」再進入本節。",
+  "glossary": [
+    {
+      "term": "定義型理由",
+      "definition": "直接把名詞條件轉成其意義，例如中點推出兩段等長。"
+    },
+    {
+      "term": "性質",
+      "definition": "已知某圖形或關係成立後可推出的結果。"
+    },
+    {
+      "term": "判定",
+      "definition": "由足夠條件反過來確認某圖形或關係成立。"
+    },
+    {
+      "term": "對應",
+      "definition": "依頂點順序配對全等圖形中的邊與角。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∥",
+      "meaning": "兩直線平行。"
+    },
+    {
+      "symbol": "⊥",
+      "meaning": "兩直線垂直。"
+    },
+    {
+      "symbol": "＝",
+      "meaning": "兩個量相等，可使用代換與遞移。"
+    }
+  ],
+  "conceptNarrative": [
+    "選理由的第一問是『這一步從哪個條件來？』看到中點就先想定義，看到相交角就檢查是否對頂角，看到平行線就辨認角的位置。",
+    "性質和判定常長得相反：平行線可推出同位角相等；同位角相等也可判定平行，但兩者前提不同。",
+    "理由要恰好支持敘述。使用更複雜定理不一定錯，但若條件不足或沒有對應，就會失效。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "等量遞移",
+      "statement": "若a＝b且b＝c，則a＝c。"
+    },
+    {
+      "name": "全等後性質",
+      "statement": "兩三角形全等後，所有對應邊與對應角分別相等。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "條件種類＋位置資訊 → 可用理由",
+      "conditions": [
+        "例如『平行』還需知道角型",
+        "例如SAS的角必須是兩邊夾角"
+      ],
+      "meaning": "理由選擇不只看關鍵字。"
+    }
+  ],
+  "nonApplicableCases": [
+    "SSA一般不是三角形全等判定。",
+    "任意兩角相等不能直接推出任意兩線平行，必須確認角的位置。",
+    "同旁內角在平行線情況是互補，不是一般相等。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出推論前的直接條件。",
+      "check": "是中點、平行、全等，還是等式？"
+    },
+    {
+      "step": 2,
+      "instruction": "核對位置與方向。",
+      "check": "角是同位、內錯、對頂，還是夾角？"
+    },
+    {
+      "step": 3,
+      "instruction": "選最直接且條件完整的理由。",
+      "check": "是否誤用逆命題？"
+    },
+    {
+      "step": 4,
+      "instruction": "把理由代回句子閱讀。",
+      "check": "能否自然回答『為什麼』？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "M是AB中點，為何AM＝MB？",
+      "solutionSteps": [
+        "關鍵詞是中點。",
+        "中點定義包含兩段等長。"
+      ],
+      "answer": "中點的定義。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "已知△ABC≅△DEF，為何BC＝EF？",
+      "solutionSteps": [
+        "依全等式B↔E、C↔F。",
+        "BC與EF為對應邊。"
+      ],
+      "answer": "全等三角形對應邊相等。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只看到角相等就選對頂角。",
+      "why": "未檢查頂點與射線位置。",
+      "correction": "先分類角的位置。"
+    },
+    {
+      "mistake": "把平行線性質與判定顛倒。",
+      "why": "忽略推理方向。",
+      "correction": "先問前提是線平行還是角相等。"
+    },
+    {
+      "mistake": "全等式配錯對應邊。",
+      "why": "未按頂點順序。",
+      "correction": "先寫頂點配對。"
+    }
+  ],
+  "selfCheck": [
+    "理由的前提是否全都具備？",
+    "我有沒有檢查角或邊的位置？",
+    "推理方向是性質還是判定？",
+    "對應順序是否一致？"
+  ],
+  "summary": [
+    "定義、性質與判定功能不同。",
+    "位置資訊常決定理由能否使用。",
+    "全等後要依頂點順序找對應。"
+  ],
+  "connections": {
+    "previous": "先備：geometry-proof-steps",
+    "next": [
+      "下一技能會把理由放進不完整證明的空格中。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s003-v001",
+      "u20-s003-v002",
+      "u20-s003-v003",
+      "u20-s003-v004",
+      "u20-s003-v005",
+      "u20-s003-v006",
+      "u20-s003-v007",
+      "u20-s003-v008",
+      "u20-s003-v009",
+      "u20-s003-v010",
+      "u20-s003-v011",
+      "u20-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s003-cr001",
+      "u20-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "每一類理由均搭配反例限制，避免只靠關鍵字套用。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "dd29ee7672d22335109dc630f8225a955a9ab93e37eb20b839c2ab5839a1e218"
+}

@@ -1,0 +1,193 @@
+{
+  "lectureId": "u20-s006-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-centers",
+  "skillId": "circumcenter",
+  "skillSlot": "s006",
+  "lockedSkillTitle": "外心",
+  "title": "外心：三個頂點的等距中心",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明外心是三邊垂直平分線交點。",
+    "能用到頂點等距辨認外心。",
+    "能作出外心並判斷銳角、直角、鈍角三角形中的位置。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "proof-contrapositive-basic",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「proof-contrapositive-basic」再進入本節。",
+  "glossary": [
+    {
+      "term": "外心",
+      "definition": "三角形三邊垂直平分線的共同交點。"
+    },
+    {
+      "term": "外接圓",
+      "definition": "通過三角形三個頂點的圓。"
+    },
+    {
+      "term": "垂直平分線",
+      "definition": "通過線段中點且與線段垂直的直線。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "OA＝OB＝OC",
+      "meaning": "外心O到三頂點A、B、C距離相等。"
+    },
+    {
+      "symbol": "O",
+      "meaning": "常用來表示圓心或外心，仍須依題意確認。"
+    }
+  ],
+  "conceptNarrative": [
+    "線段AB的垂直平分線由所有到A、B等距的點組成。兩邊垂直平分線的交點同時到三個頂點等距，因此自然成為外接圓圓心。",
+    "只需作兩條垂直平分線即可定位；第三條一定通過同一點，因等距關係會自動連接。",
+    "外心名稱中的『外』指外接圓，不表示外心一定在三角形外。其位置依角型改變。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "外心定義",
+      "statement": "三邊垂直平分線共點，交點為外心。"
+    },
+    {
+      "name": "等距判定",
+      "statement": "到三個不共線頂點距離相等的點是其三角形外心。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "OA＝OB＝OC＝R",
+      "conditions": [
+        "O為外心",
+        "A、B、C為外接圓上的頂點"
+      ],
+      "meaning": "三段皆為外接圓半徑。"
+    }
+  ],
+  "nonApplicableCases": [
+    "到三邊距離相等的是內心，不是外心。",
+    "銳角三角形外心在內部；不能把此位置套給所有三角形。",
+    "三點共線時不形成非退化三角形，也沒有有限的唯一外接圓。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "選兩條邊，找各自中點。",
+      "check": "中點標記是否可靠？"
+    },
+    {
+      "step": 2,
+      "instruction": "過中點作邊的垂線。",
+      "check": "線是否同時具備垂直與平分？"
+    },
+    {
+      "step": 3,
+      "instruction": "取兩線交點O。",
+      "check": "O到三頂點是否等距？"
+    },
+    {
+      "step": 4,
+      "instruction": "依角型判斷O在內、邊上或外。",
+      "check": "直角時是否在斜邊中點？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "O在AB、AC垂直平分線上。",
+      "solutionSteps": [
+        "OA＝OB。",
+        "OA＝OC。",
+        "所以OA＝OB＝OC。"
+      ],
+      "answer": "O是外心。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "直角三角形外心在哪裡？",
+      "solutionSteps": [
+        "斜邊是外接圓直徑。",
+        "圓心是斜邊中點。"
+      ],
+      "answer": "斜邊中點。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只找邊中點，沒有作垂線。",
+      "why": "中點本身不一定是外心。",
+      "correction": "作垂直平分線並取交點。"
+    },
+    {
+      "mistake": "認為外心必在外部。",
+      "why": "誤解名稱。",
+      "correction": "依角型分類位置。"
+    },
+    {
+      "mistake": "把到邊等距當外心。",
+      "why": "混淆等距對象。",
+      "correction": "外心比較頂點距離。"
+    }
+  ],
+  "selfCheck": [
+    "我作的是垂直平分線嗎？",
+    "等距對象是三個頂點嗎？",
+    "三點是否不共線？",
+    "角型與外心位置是否一致？"
+  ],
+  "summary": [
+    "外心是三邊垂直平分線交點。",
+    "外心到三頂點等距，是外接圓圓心。",
+    "外心位置隨三角形角型改變。"
+  ],
+  "connections": {
+    "previous": "先備：proof-contrapositive-basic",
+    "next": [
+      "下一技能比較到三邊等距的內心。"
+    ]
+  },
+  "figureReferences": [
+    "fig-u20-circumcenter-check-01"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s006-v001",
+      "u20-s006-v002",
+      "u20-s006-v003",
+      "u20-s006-v004",
+      "u20-s006-v005",
+      "u20-s006-v006",
+      "u20-s006-v007",
+      "u20-s006-v008",
+      "u20-s006-v009",
+      "u20-s006-v010",
+      "u20-s006-v011",
+      "u20-s006-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s006-cr001",
+      "u20-s006-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "講義同時呈現定義、等距軌跡與位置分類，避免只背名稱。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "a8f17123dc0344966966d3a6357b7f9737bb4ffbfe74084a21360d127b6ef86c"
+}

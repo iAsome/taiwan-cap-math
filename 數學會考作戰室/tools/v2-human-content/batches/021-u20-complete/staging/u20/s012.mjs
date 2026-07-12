@@ -1,0 +1,1649 @@
+// Generated only by serialization from approved reviewed source. Do not edit.
+export const sourceDigest="96f4a88c469ed98e678e5501dd73a175caa2ec4756ee06686f3b5821d39c07ab";
+export const skillBundle={
+  "lecture": {
+    "lectureId": "u20-s012-lecture-r1",
+    "unitId": "u20",
+    "numericUnitId": 20,
+    "topicId": "u20-centers",
+    "skillId": "centroid-property",
+    "skillSlot": "s012",
+    "lockedSkillTitle": "重心性質",
+    "title": "重心性質：中線的二比一與座標平均",
+    "audience": "臺灣國中零基礎至會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能在中線上使用頂點段比中點段為2比1。",
+      "能把2比1轉成整條中線的三分之二與三分之一。",
+      "能計算三頂點座標平均。",
+      "能使用重心的等面積分割。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "incenter-property",
+        "requiredLevel": "能使用該技能的核心定義與基本推理。"
+      }
+    ],
+    "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「incenter-property」再進入本節。",
+    "glossary": [
+      {
+        "term": "頂點段",
+        "definition": "一條中線上，從頂點到重心的部分。"
+      },
+      {
+        "term": "中點段",
+        "definition": "一條中線上，從重心到對邊中點的部分。"
+      },
+      {
+        "term": "座標平均",
+        "definition": "將三個頂點的x坐標相加除以3，y坐標亦同。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "AG:GM=2:1",
+        "meaning": "A為頂點、M為對邊中點、G為重心時的分割比。"
+      },
+      {
+        "symbol": "G((x1+x2+x3)/3,(y1+y2+y3)/3)",
+        "meaning": "三角形重心座標。"
+      }
+    ],
+    "conceptNarrative": [
+      "2比1一定要看方向：靠頂點的一段是2，靠對邊中點的一段是1。整條中線共3份，因此頂點到重心占2/3。",
+      "座標平均不是另背的新事實；它反映三個頂點在水平與垂直方向上的均勻平均。",
+      "三中線把三角形分成六個等面積小三角形；連重心到三頂點時，得到三個面積各為原三角形1/3的區塊。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "重心分中線性質",
+        "statement": "重心將每條中線分成2：1，較長段靠頂點。"
+      },
+      {
+        "name": "三等面積性質",
+        "statement": "重心連到三頂點形成的三個三角形面積相等。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "AG=2AM/3，GM=AM/3",
+        "conditions": [
+          "M為對邊中點",
+          "G為重心且位於AM"
+        ],
+        "meaning": "把2比1轉為整體比例。"
+      },
+      {
+        "formula": "G=((xA+xB+xC)/3,(yA+yB+yC)/3)",
+        "conditions": [
+          "三頂點在同一座標系"
+        ],
+        "meaning": "重心座標。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能把重心當中線中點。",
+      "2比1順序若從M開始要改寫為1比2。",
+      "六個小三角形等面積，不代表六者全等或周長相等。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認哪端是頂點、哪端是對邊中點。",
+        "check": "比例順序是否對應？"
+      },
+      {
+        "step": 2,
+        "instruction": "把整條中線視為3份。",
+        "check": "所求是2份、1份還是3份？"
+      },
+      {
+        "step": 3,
+        "instruction": "座標題分別平均x與y。",
+        "check": "負號是否保留？"
+      },
+      {
+        "step": 4,
+        "instruction": "面積題先判斷是三大區塊或六小區塊。",
+        "check": "分母是3還是6？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "AM=24，求AG、GM。",
+        "solutionSteps": [
+          "每份=24÷3=8。",
+          "AG=16，GM=8。"
+        ],
+        "answer": "16與8。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "頂點(0,0),(6,0),(0,3)。",
+        "solutionSteps": [
+          "x平均2。",
+          "y平均1。"
+        ],
+        "answer": "G=(2,1)。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "AG=GM。",
+        "why": "誤認重心為中點。",
+        "correction": "使用2比1。"
+      },
+      {
+        "mistake": "從M量仍取2/3。",
+        "why": "方向顛倒。",
+        "correction": "M到G是整條1/3。"
+      },
+      {
+        "mistake": "坐標相加後不除3。",
+        "why": "忘記平均三點。",
+        "correction": "x、y各除以3。"
+      }
+    ],
+    "selfCheck": [
+      "比例從哪一端讀？",
+      "整條中線是幾份？",
+      "座標是否分開平均？",
+      "面積區塊數是否判對？"
+    ],
+    "summary": [
+      "重心把中線分成靠頂點2、靠中點1。",
+      "頂點到重心占中線2/3。",
+      "重心座標是三頂點坐標平均。",
+      "三大區塊等面積，六小塊也等面積。"
+    ],
+    "connections": {
+      "previous": "先備：incenter-property",
+      "next": [
+        "下一技能集中辨識圖中的垂心與高。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u20-s012-v001",
+        "u20-s012-v002",
+        "u20-s012-v003",
+        "u20-s012-v004",
+        "u20-s012-v005",
+        "u20-s012-v006",
+        "u20-s012-v007",
+        "u20-s012-v008",
+        "u20-s012-v009",
+        "u20-s012-v010",
+        "u20-s012-v011",
+        "u20-s012-v012"
+      ],
+      "constructedResponseIds": [
+        "u20-s012-cr001",
+        "u20-s012-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "skillSpecificEvidence": "講義強調比例方向與區塊層級，避免2比1和三分之一混用。",
+      "reviewerDecision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "legacyContentUsed": false,
+    "contentSha256": "2024386db3d281f19cbf9efdfc961cbe0b2fed7c577babb97a1bf2ea36f75a8e"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u20-s012-v001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "在 △ABC 中，M 是 BC 中點，G 是重心。AG 與 GM 的比為何？",
+      "givenConditions": [],
+      "target": "辨認重心分中線比例",
+      "choices": [
+        "AG：GM＝1：1",
+        "AG：GM＝1：2",
+        "AG：GM＝3：1",
+        "AG：GM＝2：1"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "重心把每條中線分成靠頂點較長的2份與靠中點較短的1份，所以 AG：GM＝2：1。",
+        "result": "AG：GM＝2：1"
+      },
+      "explanation": "重心把每條中線分成靠頂點較長的2份與靠中點較短的1份，所以 AG：GM＝2：1。",
+      "steps": [
+        "AM 是中線",
+        "G 在 AM 上",
+        "由頂點到重心：重心到中點＝2：1"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "AG：GM＝1：1",
+          "truth": false,
+          "reason": "重心不是中線中點。"
+        },
+        {
+          "choice": "AG：GM＝1：2",
+          "truth": false,
+          "reason": "把兩段順序顛倒。"
+        },
+        {
+          "choice": "AG：GM＝3：1",
+          "truth": false,
+          "reason": "總中線才是3份。"
+        },
+        {
+          "choice": "AG：GM＝2：1",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；重心把每條中線分成靠頂點較長的2份與靠中點較短的1份，所以 AG：GM＝2：1。"
+        }
+      ],
+      "misconceptionTarget": "只背2比1，未確認比的順序。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「辨認重心分中線比例」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「AG：GM＝2：1」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：辨認重心分中線比例。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "fb9f16491ab1eff8ec1c0e44f2e9f70ba8894a86c6af08bed9350838591c5ef0"
+    },
+    {
+      "questionId": "u20-s012-v002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "G 是重心，AG＝8 公分，M 為 BC 中點。GM 為多少？",
+      "givenConditions": [],
+      "target": "由頂點段求中點段",
+      "choices": [
+        "GM＝6 公分",
+        "GM＝8 公分",
+        "GM＝4 公分",
+        "GM＝12 公分"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "AG：GM＝2：1，所以 GM＝8÷2＝4公分。",
+        "result": "GM＝4 公分"
+      },
+      "explanation": "AG：GM＝2：1，所以 GM＝8÷2＝4公分。",
+      "steps": [
+        "寫比例2：1",
+        "AG對應2份",
+        "每份為4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "GM＝6 公分",
+          "truth": false,
+          "reason": "把總長12與差混淆。"
+        },
+        {
+          "choice": "GM＝8 公分",
+          "truth": false,
+          "reason": "誤認兩段相等。"
+        },
+        {
+          "choice": "GM＝4 公分",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；AG：GM＝2：1，所以 GM＝8÷2＝4公分。"
+        },
+        {
+          "choice": "GM＝12 公分",
+          "truth": false,
+          "reason": "把AM總長當GM。"
+        }
+      ],
+      "misconceptionTarget": "把重心當中線中點。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "長度以公分表示。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「由頂點段求中點段」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「GM＝4 公分」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：由頂點段求中點段。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "32ebd45807712b0020b65a8374b64e293831b859dc52923c639ae0afd2fcd771"
+    },
+    {
+      "questionId": "u20-s012-v003",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "G 是重心，GM＝5 公分。中線 AM 長多少？",
+      "givenConditions": [],
+      "target": "由重心短段求中線長",
+      "choices": [
+        "AM＝15 公分",
+        "AM＝5 公分",
+        "AM＝10 公分",
+        "AM＝20 公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "GM 是中線的1份，AG是2份，整條 AM 共3份，所以15公分。",
+        "result": "AM＝15 公分"
+      },
+      "explanation": "GM 是中線的1份，AG是2份，整條 AM 共3份，所以15公分。",
+      "steps": [
+        "GM代表1份=5",
+        "AM共3份",
+        "3×5=15"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "AM＝15 公分",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；GM 是中線的1份，AG是2份，整條 AM 共3份，所以15公分。"
+        },
+        {
+          "choice": "AM＝5 公分",
+          "truth": false,
+          "reason": "只取短段。"
+        },
+        {
+          "choice": "AM＝10 公分",
+          "truth": false,
+          "reason": "只算AG。"
+        },
+        {
+          "choice": "AM＝20 公分",
+          "truth": false,
+          "reason": "誤用4份。"
+        }
+      ],
+      "misconceptionTarget": "忘記整條中線是3份。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "長度以公分表示。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「由重心短段求中線長」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「AM＝15 公分」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：由重心短段求中線長。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "6ce3a8ae6072700ff77515a68a9ada16faedfdec58b505e0dc1e42991990c4f9"
+    },
+    {
+      "questionId": "u20-s012-v004",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "中線 AM＝18 公分，G 為重心。AG 為多少？",
+      "givenConditions": [],
+      "target": "由中線長求頂點到重心距離",
+      "choices": [
+        "AG＝6 公分",
+        "AG＝12 公分",
+        "AG＝9 公分",
+        "AG＝18 公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "AG占整條中線的2/3，所以18×2/3＝12公分。",
+        "result": "AG＝12 公分"
+      },
+      "explanation": "AG占整條中線的2/3，所以18×2/3＝12公分。",
+      "steps": [
+        "AM共3份",
+        "AG占2份",
+        "計算18÷3×2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "AG＝6 公分",
+          "truth": false,
+          "reason": "這是GM。"
+        },
+        {
+          "choice": "AG＝12 公分",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；AG占整條中線的2/3，所以18×2/3＝12公分。"
+        },
+        {
+          "choice": "AG＝9 公分",
+          "truth": false,
+          "reason": "誤認重心在中點。"
+        },
+        {
+          "choice": "AG＝18 公分",
+          "truth": false,
+          "reason": "未分割。"
+        }
+      ],
+      "misconceptionTarget": "2比1轉成整體比例時誤用1/2。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "長度以公分表示。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「由中線長求頂點到重心距離」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「AG＝12 公分」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：由中線長求頂點到重心距離。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "977a27c0c908bc8f10d0341ab056713a0bced07382e27f6801086b36ef8bfbb8"
+    },
+    {
+      "questionId": "u20-s012-v005",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "三角形頂點為 A(0,0)、B(6,0)、C(0,6)，重心座標為何？",
+      "givenConditions": [],
+      "target": "計算座標三角形重心",
+      "choices": [
+        "(1,1)",
+        "(3,3)",
+        "(2,2)",
+        "(6,6)"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "重心座標是三頂點坐標的平均：(0+6+0)/3=2，(0+0+6)/3=2。",
+        "result": "(2,2)"
+      },
+      "explanation": "重心座標是三頂點坐標的平均：(0+6+0)/3=2，(0+0+6)/3=2。",
+      "steps": [
+        "三個x坐標相加除3",
+        "三個y坐標相加除3",
+        "得到(2,2)"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "(1,1)",
+          "truth": false,
+          "reason": "多除以2。"
+        },
+        {
+          "choice": "(3,3)",
+          "truth": false,
+          "reason": "取了斜邊中點，是外心。"
+        },
+        {
+          "choice": "(2,2)",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；重心座標是三頂點坐標的平均：(0+6+0)/3=2，(0+0+6)/3=2。"
+        },
+        {
+          "choice": "(6,6)",
+          "truth": false,
+          "reason": "直接相加未平均。"
+        }
+      ],
+      "misconceptionTarget": "把重心與斜邊中點混淆。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「計算座標三角形重心」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「(2,2)」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：計算座標三角形重心。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "9f15c94a36b96431cbb438b2c55ac8f05f137938cb2e357a8a761f6f8abc02fa"
+    },
+    {
+      "questionId": "u20-s012-v006",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "三條中線把三角形分成六個小三角形。關於面積，何者正確？",
+      "givenConditions": [],
+      "target": "理解三中線的六等面積分割",
+      "choices": [
+        "每部分面積都是原三角形的三分之一",
+        "每一部分面積都是原三角形的六分之一",
+        "六部分周長相等",
+        "六部分全等"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "三條中線交於重心，利用同高與等底可證六個小三角形面積相等，各占原面積1/6。",
+        "result": "每一部分面積都是原三角形的六分之一"
+      },
+      "explanation": "三條中線交於重心，利用同高與等底可證六個小三角形面積相等，各占原面積1/6。",
+      "steps": [
+        "每條中線平分面積",
+        "交叉分割維持成對等面積",
+        "六塊總和為原面積"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "每部分面積都是原三角形的三分之一",
+          "truth": false,
+          "reason": "六塊各1/3會超過總面積。"
+        },
+        {
+          "choice": "每一部分面積都是原三角形的六分之一",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；三條中線交於重心，利用同高與等底可證六個小三角形面積相等，各占原面積1/6。"
+        },
+        {
+          "choice": "六部分周長相等",
+          "truth": false,
+          "reason": "內部邊長不同。"
+        },
+        {
+          "choice": "六部分全等",
+          "truth": false,
+          "reason": "面積相等不必全等。"
+        }
+      ],
+      "misconceptionTarget": "把等面積誤認為全等。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「理解三中線的六等面積分割」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「每一部分面積都是原三角形的六分之一」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：理解三中線的六等面積分割。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "bfcf719da40a5c5948a9f62c9bb8bf991bbbd9866f76dc3289f4922ac0bd3dfb"
+    },
+    {
+      "questionId": "u20-s012-v007",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "N 是 AC 中點，BN 是中線，重心 G 滿足 GN＝5 公分。BG 為多少？",
+      "givenConditions": [],
+      "target": "在不同中線上運用2比1",
+      "choices": [
+        "BG＝10 公分",
+        "BG＝5 公分",
+        "BG＝15 公分",
+        "BG＝20 公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "BG：GN＝2：1，因此BG＝2×5＝10公分。",
+        "result": "BG＝10 公分"
+      },
+      "explanation": "BG：GN＝2：1，因此BG＝2×5＝10公分。",
+      "steps": [
+        "GN為靠中點短段",
+        "BG為2份",
+        "計算10"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "BG＝10 公分",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；BG：GN＝2：1，因此BG＝2×5＝10公分。"
+        },
+        {
+          "choice": "BG＝5 公分",
+          "truth": false,
+          "reason": "誤認兩段相等。"
+        },
+        {
+          "choice": "BG＝15 公分",
+          "truth": false,
+          "reason": "這是整條BN。"
+        },
+        {
+          "choice": "BG＝20 公分",
+          "truth": false,
+          "reason": "誤乘4。"
+        }
+      ],
+      "misconceptionTarget": "將所求 BG 與整條中線 BN 混淆。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "長度以公分表示。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「在不同中線上運用2比1」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「BG＝10 公分」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：在不同中線上運用2比1。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "309b78f6e83026035cd92d8841baff0f20359f05e5ed66f0612efbab73778014"
+    },
+    {
+      "questionId": "u20-s012-v008",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "三角形三頂點為 (1,4)、(5,-2)、(3,1)。重心座標為何？",
+      "givenConditions": [],
+      "target": "計算含負坐標的重心",
+      "choices": [
+        "(1,3)",
+        "(6,2)",
+        "(2,0)",
+        "(3,1)"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "x平均=(1+5+3)/3=3；y平均=(4-2+1)/3=1，所以(3,1)。",
+        "result": "(3,1)"
+      },
+      "explanation": "x平均=(1+5+3)/3=3；y平均=(4-2+1)/3=1，所以(3,1)。",
+      "steps": [
+        "加總x得9",
+        "加總y得3",
+        "各除以3"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "(1,3)",
+          "truth": false,
+          "reason": "把x、y平均結果互換。"
+        },
+        {
+          "choice": "(6,2)",
+          "truth": false,
+          "reason": "只除以部分數或直接錯加。"
+        },
+        {
+          "choice": "(2,0)",
+          "truth": false,
+          "reason": "忽略第三頂點。"
+        },
+        {
+          "choice": "(3,1)",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；x平均=(1+5+3)/3=3；y平均=(4-2+1)/3=1，所以(3,1)。"
+        }
+      ],
+      "misconceptionTarget": "含負坐標時加總符號錯誤。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「計算含負坐標的重心」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「(3,1)」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：計算含負坐標的重心。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "450f7e013adb72ac04bc4ec71f983c2723c645a66ebf3375d219719c8180c52a"
+    },
+    {
+      "questionId": "u20-s012-v009",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "△ABC 面積為72平方公分，G為重心。連結GA、GB、GC，三個大區塊的面積如何？",
+      "givenConditions": [],
+      "target": "使用重心三等面積性質",
+      "choices": [
+        "△ABG、△BCG、△CAG 面積各為 24 平方公分",
+        "各為12平方公分",
+        "各為36平方公分",
+        "只有其中兩個相等"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "三個以原三邊為底、G為頂點的三角形面積相等，各占1/3，所以72÷3＝24。",
+        "result": "△ABG、△BCG、△CAG 面積各為 24 平方公分"
+      },
+      "explanation": "三個以原三邊為底、G為頂點的三角形面積相等，各占1/3，所以72÷3＝24。",
+      "steps": [
+        "重心連頂點形成三個等面積區塊",
+        "總面積72",
+        "平均分成3份"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "△ABG、△BCG、△CAG 面積各為 24 平方公分",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；三個以原三邊為底、G為頂點的三角形面積相等，各占1/3，所以72÷3＝24。"
+        },
+        {
+          "choice": "各為12平方公分",
+          "truth": false,
+          "reason": "12是六小塊各自面積。"
+        },
+        {
+          "choice": "各為36平方公分",
+          "truth": false,
+          "reason": "三份會超過總面積。"
+        },
+        {
+          "choice": "只有其中兩個相等",
+          "truth": false,
+          "reason": "三份皆相等。"
+        }
+      ],
+      "misconceptionTarget": "混淆三個大區塊與六個小三角形。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "面積以平方公分表示。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「使用重心三等面積性質」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「△ABG、△BCG、△CAG 面積各為 24 平方公分」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：使用重心三等面積性質。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "81337d10c38b4141c3bd629aa6041e0db556b94b018bb7a4569c77227d7a10cf"
+    },
+    {
+      "questionId": "u20-s012-v010",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "均勻三角形標牌以重心 G 吊掛。沿 A 到對邊中點 M 的中線，G 的位置如何描述？",
+      "givenConditions": [],
+      "target": "在吊掛定位中解讀重心比例",
+      "choices": [
+        "吊點在中線中點",
+        "吊點到頂點 A 沿中線方向的距離為中線長的三分之二",
+        "吊點到對邊中點占三分之二",
+        "吊點一定到三頂點等距"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "AG：GM＝2：1，所以從A出發走完整條AM的2/3可到G。",
+        "result": "吊點到頂點 A 沿中線方向的距離為中線長的三分之二"
+      },
+      "explanation": "AG：GM＝2：1，所以從A出發走完整條AM的2/3可到G。",
+      "steps": [
+        "整條中線分3份",
+        "A到G占2份",
+        "表示為AM的2/3"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "吊點在中線中點",
+          "truth": false,
+          "reason": "重心不是中點。"
+        },
+        {
+          "choice": "吊點到頂點 A 沿中線方向的距離為中線長的三分之二",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；AG：GM＝2：1，所以從A出發走完整條AM的2/3可到G。"
+        },
+        {
+          "choice": "吊點到對邊中點占三分之二",
+          "truth": false,
+          "reason": "GM只占1/3。"
+        },
+        {
+          "choice": "吊點一定到三頂點等距",
+          "truth": false,
+          "reason": "那是外心。"
+        }
+      ],
+      "misconceptionTarget": "方向未說清，將2/3套在錯誤端點。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「在吊掛定位中解讀重心比例」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「吊點到頂點 A 沿中線方向的距離為中線長的三分之二」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在吊掛定位中解讀重心比例。",
+      "literacyContextNecessity": "實際定位需指定從頂點或中點量測，2比1的方向資訊不可省略。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "cefeeeb8ffdc0ae50d8b7fca3bd4e12cc74bef1a19cd0351c04f60d7b32f9be2"
+    },
+    {
+      "questionId": "u20-s012-v011",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "地圖上的三個倉庫坐標為 A(1,2)、B(7,2)、C(4,5)。若以三頂點平均位置作配送示意中心，座標為何？",
+      "givenConditions": [],
+      "target": "在地圖情境計算重心坐標",
+      "choices": [
+        "(3,4)",
+        "(12,9)",
+        "(2,1.5)",
+        "(4,3)"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "平均位置即幾何重心：x=(1+7+4)/3=4，y=(2+2+5)/3=3。",
+        "result": "(4,3)"
+      },
+      "explanation": "平均位置即幾何重心：x=(1+7+4)/3=4，y=(2+2+5)/3=3。",
+      "steps": [
+        "加總x為12並除3",
+        "加總y為9並除3",
+        "得到(4,3)"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "(3,4)",
+          "truth": false,
+          "reason": "交換坐標。"
+        },
+        {
+          "choice": "(12,9)",
+          "truth": false,
+          "reason": "未除以3。"
+        },
+        {
+          "choice": "(2,1.5)",
+          "truth": false,
+          "reason": "多除以2。"
+        },
+        {
+          "choice": "(4,3)",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；平均位置即幾何重心：x=(1+7+4)/3=4，y=(2+2+5)/3=3。"
+        }
+      ],
+      "misconceptionTarget": "計算平均坐標時漏除頂點數3。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "座標使用相同地圖距離單位。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「在地圖情境計算重心坐標」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「(4,3)」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在地圖情境計算重心坐標。",
+      "literacyContextNecessity": "三個倉庫位置以相同權重取平均，正是重心坐標；若權重不同則不再適用。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "083f19b57f284c105f601c84bdfaca31bb6b80ea7efe0c34f47d16774a7f799e"
+    },
+    {
+      "questionId": "u20-s012-v012",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "三個配送點形成三角形，但 A 點貨量是另外兩點的十倍。直接把幾何重心當成實際物流平衡點是否合理？",
+      "givenConditions": [],
+      "target": "判斷重心模型的適用限制",
+      "choices": [
+        "可以，幾何重心永遠是最佳物流點",
+        "可以，因重心到三點等距",
+        "不能直接保證，因三處貨量不同時應使用加權質心",
+        "不能，因三角形沒有重心"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "幾何重心相當於三頂點或整片區域均勻權重；貨量差異很大時應考慮加權位置，不能僅憑三中線交點。",
+        "result": "不能直接保證，因三處貨量不同時應使用加權質心"
+      },
+      "explanation": "幾何重心相當於三頂點或整片區域均勻權重；貨量差異很大時應考慮加權位置，不能僅憑三中線交點。",
+      "steps": [
+        "辨認幾何重心的均勻假設",
+        "比較A點權重大幅增加",
+        "判定需加權而非直接套用"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "可以，幾何重心永遠是最佳物流點",
+          "truth": false,
+          "reason": "重心未考慮需求權重、道路等因素。"
+        },
+        {
+          "choice": "可以，因重心到三點等距",
+          "truth": false,
+          "reason": "重心不保證頂點等距。"
+        },
+        {
+          "choice": "不能直接保證，因三處貨量不同時應使用加權質心",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；幾何重心相當於三頂點或整片區域均勻權重；貨量差異很大時應考慮加權位置，不能僅憑三中線交點。"
+        },
+        {
+          "choice": "不能，因三角形沒有重心",
+          "truth": false,
+          "reason": "任何三角形都有重心。"
+        }
+      ],
+      "misconceptionTarget": "把幾何重心誤當任何最佳化問題的答案。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「判斷重心模型的適用限制」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「不能直接保證，因三處貨量不同時應使用加權質心」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：判斷重心模型的適用限制。",
+      "literacyContextNecessity": "貨量權重改變中心定義，實務情境要求辨認幾何模型的假設。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "ec9c2f2b0748a9111da17bc8b4b7bffa46d52a92d3afbf6a0a5442626ede4a68"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u20-s012-cr001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "prompt": "中線 AM＝21 公分，重心 G 在 AM 上。求 AG、GM，並說明 2：1 與整條中線三等份的關係。",
+      "requiredWork": [
+        "AM分成3份。",
+        "AG=14。",
+        "GM=7。"
+      ],
+      "standardSolution": [
+        "重心使 AG：GM＝2：1，整條 AM 共3份。",
+        "每份＝21÷3＝7公分，所以 AG＝2×7＝14公分，GM＝7公分。"
+      ],
+      "alternativeMethods": [
+        "可設 GM=x、AG=2x，則3x=21，x=7。"
+      ],
+      "reasoningSteps": [
+        "重心使 AG：GM＝2：1，整條 AM 共3份。",
+        "每份＝21÷3＝7公分，所以 AG＝2×7＝14公分，GM＝7公分。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "比例解釋清楚，AG=14、GM=7且單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩答案正確但未解釋三份關係，或只有一個輕微單位缺漏。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道2：1但把順序顛倒，或方法正確有單一算術錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "把重心當中點，寫10.5與10.5，或無方法。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "長度以公分表示。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "把AG與GM顛倒。",
+        "用21×2得到42。",
+        "把整條當2份。"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "重心使 AG：GM＝2：1，整條 AM 共3份。；每份＝21÷3＝7公分，所以 AG＝2×7＝14公分，GM＝7公分。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "019b372ce31ab42dd275ca216ca6ab56877f97968f614556f1fe94d9d56b022a"
+    },
+    {
+      "questionId": "u20-s012-cr002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "centroid-property",
+      "skillSlot": "s012",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "prompt": "三角形頂點為 A(-2,1)、B(7,4)、C(1,-2)。求重心 G 座標，並以中線 2：1 性質驗證。",
+      "requiredWork": [
+        "平均三頂點坐標。",
+        "得(2,1)。",
+        "求一邊中點並驗證2：1。"
+      ],
+      "standardSolution": [
+        "重心座標 G=((−2+7+1)/3,(1+4−2)/3)=(2,1)。",
+        "驗證：BC中點 M=((7+1)/2,(4−2)/2)=(4,1)。從A(-2,1)到M(4,1)的中線長方向為6個單位；G(2,1)距A為4、距M為2，所以 AG：GM＝2：1。"
+      ],
+      "alternativeMethods": [
+        "也可改用 AC 中點與從B出發的中線驗證。"
+      ],
+      "reasoningSteps": [
+        "重心座標 G=((−2+7+1)/3,(1+4−2)/3)=(2,1)。",
+        "驗證：BC中點 M=((7+1)/2,(4−2)/2)=(4,1)。從A(-2,1)到M(4,1)的中線長方向為6個單位；G(2,1)距A為4、距M為2，所以 AG：GM＝2：1。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "平均坐標正確得(2,1)，並以一條中線完整驗證2：1。"
+        },
+        {
+          "score": 2,
+          "criteria": "坐標正確，但驗證只寫『符合2：1』未計算。"
+        },
+        {
+          "score": 1,
+          "criteria": "平均方法正確但有單一符號或算術錯，且驗證思路可辨。"
+        },
+        {
+          "score": 0,
+          "criteria": "取兩點中點當重心，或未分別平均x、y。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "座標為相同平面單位；比值無單位。",
+      "notationRules": "座標以(x,y)表示，負號與括號須清楚。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "漏掉負號。",
+        "只平均A、B。",
+        "把(4,1)當重心。"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "重心座標 G=((−2+7+1)/3,(1+4−2)/3)=(2,1)。；驗證：BC中點 M=((7+1)/2,(4−2)/2)=(4,1)。從A(-2,1)到M(4,1)的中線長方向為6個單位；G(2,1)距A為4、距M為2，所以 AG：GM＝2：1。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "a41b52401077ebe8b39d125f9e7f3fc13452f32ec485197cae9cb463b8e2506f"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u20-s012-v001",
+      "contentSha256": "fb9f16491ab1eff8ec1c0e44f2e9f70ba8894a86c6af08bed9350838591c5ef0",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "重心把每條中線分成靠頂點較長的2份與靠中點較短的1份，所以 AG：GM＝2：1。",
+      "derivedAnswer": "AG：GM＝2：1",
+      "storedAnswer": "AG：GM＝2：1",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「AG：GM＝2：1」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「只背2比1，未確認比的順序。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：辨認重心分中線比例。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「在 △ABC 中，M 是 BC 中點，G 是重心。AG 與 GM 的比為何？」要求辨認重心分中線比例。獨立推導為：重心把每條中線分成靠頂點較長的2份與靠中點較短的1份，所以 AG：GM＝2：1。 四選項依序判定：AG：GM＝1：1=假，重心不是中線中點。；AG：GM＝1：2=假，把兩段順序顛倒。；AG：GM＝3：1=假，總中線才是3份。；AG：GM＝2：1=真，依獨立推導可得到此結果；重心把每條中線分成靠頂點較長的2份與靠中點較短的1份，所以 AG：GM＝2：1。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "c3a4aa866ee97853a9725086669082b6eca66d25fd491f6951327c756534038e"
+    },
+    {
+      "questionId": "u20-s012-v002",
+      "contentSha256": "32ebd45807712b0020b65a8374b64e293831b859dc52923c639ae0afd2fcd771",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "AG：GM＝2：1，所以 GM＝8÷2＝4公分。",
+      "derivedAnswer": "GM＝4 公分",
+      "storedAnswer": "GM＝4 公分",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「GM＝4 公分」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "長度以公分表示。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把重心當中線中點。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：由頂點段求中點段。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「G 是重心，AG＝8 公分，M 為 BC 中點。GM 為多少？」要求由頂點段求中點段。獨立推導為：AG：GM＝2：1，所以 GM＝8÷2＝4公分。 四選項依序判定：GM＝6 公分=假，把總長12與差混淆。；GM＝8 公分=假，誤認兩段相等。；GM＝4 公分=真，依獨立推導可得到此結果；AG：GM＝2：1，所以 GM＝8÷2＝4公分。；GM＝12 公分=假，把AM總長當GM。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "43dab70d2532a908badebf2473d7e25a903252a8da192d327bd11e72953c5f2f"
+    },
+    {
+      "questionId": "u20-s012-v003",
+      "contentSha256": "6ce3a8ae6072700ff77515a68a9ada16faedfdec58b505e0dc1e42991990c4f9",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "GM 是中線的1份，AG是2份，整條 AM 共3份，所以15公分。",
+      "derivedAnswer": "AM＝15 公分",
+      "storedAnswer": "AM＝15 公分",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「AM＝15 公分」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "長度以公分表示。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「忘記整條中線是3份。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：由重心短段求中線長。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「G 是重心，GM＝5 公分。中線 AM 長多少？」要求由重心短段求中線長。獨立推導為：GM 是中線的1份，AG是2份，整條 AM 共3份，所以15公分。 四選項依序判定：AM＝15 公分=真，依獨立推導可得到此結果；GM 是中線的1份，AG是2份，整條 AM 共3份，所以15公分。；AM＝5 公分=假，只取短段。；AM＝10 公分=假，只算AG。；AM＝20 公分=假，誤用4份。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "42b7c9b9402bec9d8851d9c2ee4e3ecd49205fbedf7926caab0bf6d87c803757"
+    },
+    {
+      "questionId": "u20-s012-v004",
+      "contentSha256": "977a27c0c908bc8f10d0341ab056713a0bced07382e27f6801086b36ef8bfbb8",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "AG占整條中線的2/3，所以18×2/3＝12公分。",
+      "derivedAnswer": "AG＝12 公分",
+      "storedAnswer": "AG＝12 公分",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「AG＝12 公分」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "長度以公分表示。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「2比1轉成整體比例時誤用1/2。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：由中線長求頂點到重心距離。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「中線 AM＝18 公分，G 為重心。AG 為多少？」要求由中線長求頂點到重心距離。獨立推導為：AG占整條中線的2/3，所以18×2/3＝12公分。 四選項依序判定：AG＝6 公分=假，這是GM。；AG＝12 公分=真，依獨立推導可得到此結果；AG占整條中線的2/3，所以18×2/3＝12公分。；AG＝9 公分=假，誤認重心在中點。；AG＝18 公分=假，未分割。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "2744f6289d77b01b826ad9331ad175ca12c3b1b31fe3bfc3f4f78471aa3532f4"
+    },
+    {
+      "questionId": "u20-s012-v005",
+      "contentSha256": "9f15c94a36b96431cbb438b2c55ac8f05f137938cb2e357a8a761f6f8abc02fa",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "重心座標是三頂點坐標的平均：(0+6+0)/3=2，(0+0+6)/3=2。",
+      "derivedAnswer": "(2,2)",
+      "storedAnswer": "(2,2)",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「(2,2)」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把重心與斜邊中點混淆。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：計算座標三角形重心。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三角形頂點為 A(0,0)、B(6,0)、C(0,6)，重心座標為何？」要求計算座標三角形重心。獨立推導為：重心座標是三頂點坐標的平均：(0+6+0)/3=2，(0+0+6)/3=2。 四選項依序判定：(1,1)=假，多除以2。；(3,3)=假，取了斜邊中點，是外心。；(2,2)=真，依獨立推導可得到此結果；重心座標是三頂點坐標的平均：(0+6+0)/3=2，(0+0+6)/3=2。；(6,6)=假，直接相加未平均。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "7920b8d14eb42cb226886dc92c1461c950e33d4316ae0fd74d2043d80688d09a"
+    },
+    {
+      "questionId": "u20-s012-v006",
+      "contentSha256": "bfcf719da40a5c5948a9f62c9bb8bf991bbbd9866f76dc3289f4922ac0bd3dfb",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "三條中線交於重心，利用同高與等底可證六個小三角形面積相等，各占原面積1/6。",
+      "derivedAnswer": "每一部分面積都是原三角形的六分之一",
+      "storedAnswer": "每一部分面積都是原三角形的六分之一",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「每一部分面積都是原三角形的六分之一」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把等面積誤認為全等。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：理解三中線的六等面積分割。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三條中線把三角形分成六個小三角形。關於面積，何者正確？」要求理解三中線的六等面積分割。獨立推導為：三條中線交於重心，利用同高與等底可證六個小三角形面積相等，各占原面積1/6。 四選項依序判定：每部分面積都是原三角形的三分之一=假，六塊各1/3會超過總面積。；每一部分面積都是原三角形的六分之一=真，依獨立推導可得到此結果；三條中線交於重心，利用同高與等底可證六個小三角形面積相等，各占原面積1/6。；六部分周長相等=假，內部邊長不同。；六部分全等=假，面積相等不必全等。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "7ef80bcc99a78b289865b37cb3496c00943f873c9abb563bf103b72fa05fa2b7"
+    },
+    {
+      "questionId": "u20-s012-v007",
+      "contentSha256": "309b78f6e83026035cd92d8841baff0f20359f05e5ed66f0612efbab73778014",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "BG：GN＝2：1，因此BG＝2×5＝10公分。",
+      "derivedAnswer": "BG＝10 公分",
+      "storedAnswer": "BG＝10 公分",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「BG＝10 公分」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "長度以公分表示。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「將所求 BG 與整條中線 BN 混淆。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：在不同中線上運用2比1。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「N 是 AC 中點，BN 是中線，重心 G 滿足 GN＝5 公分。BG 為多少？」要求在不同中線上運用2比1。獨立推導為：BG：GN＝2：1，因此BG＝2×5＝10公分。 四選項依序判定：BG＝10 公分=真，依獨立推導可得到此結果；BG：GN＝2：1，因此BG＝2×5＝10公分。；BG＝5 公分=假，誤認兩段相等。；BG＝15 公分=假，這是整條BN。；BG＝20 公分=假，誤乘4。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "3dcdfc7eb5097a8645b7ce6e2b240733c088d0d6607b93c403ba2ebde565ea74"
+    },
+    {
+      "questionId": "u20-s012-v008",
+      "contentSha256": "450f7e013adb72ac04bc4ec71f983c2723c645a66ebf3375d219719c8180c52a",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "x平均=(1+5+3)/3=3；y平均=(4-2+1)/3=1，所以(3,1)。",
+      "derivedAnswer": "(3,1)",
+      "storedAnswer": "(3,1)",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「(3,1)」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「含負坐標時加總符號錯誤。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：計算含負坐標的重心。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三角形三頂點為 (1,4)、(5,-2)、(3,1)。重心座標為何？」要求計算含負坐標的重心。獨立推導為：x平均=(1+5+3)/3=3；y平均=(4-2+1)/3=1，所以(3,1)。 四選項依序判定：(1,3)=假，把x、y平均結果互換。；(6,2)=假，只除以部分數或直接錯加。；(2,0)=假，忽略第三頂點。；(3,1)=真，依獨立推導可得到此結果；x平均=(1+5+3)/3=3；y平均=(4-2+1)/3=1，所以(3,1)。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "e25205c53645faee69bb24a25e20937cf1b4d977740aee60394b6bfaa34e2ae5"
+    },
+    {
+      "questionId": "u20-s012-v009",
+      "contentSha256": "81337d10c38b4141c3bd629aa6041e0db556b94b018bb7a4569c77227d7a10cf",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "三個以原三邊為底、G為頂點的三角形面積相等，各占1/3，所以72÷3＝24。",
+      "derivedAnswer": "△ABG、△BCG、△CAG 面積各為 24 平方公分",
+      "storedAnswer": "△ABG、△BCG、△CAG 面積各為 24 平方公分",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「△ABG、△BCG、△CAG 面積各為 24 平方公分」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "面積以平方公分表示。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「混淆三個大區塊與六個小三角形。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：使用重心三等面積性質。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「△ABC 面積為72平方公分，G為重心。連結GA、GB、GC，三個大區塊的面積如何？」要求使用重心三等面積性質。獨立推導為：三個以原三邊為底、G為頂點的三角形面積相等，各占1/3，所以72÷3＝24。 四選項依序判定：△ABG、△BCG、△CAG 面積各為 24 平方公分=真，依獨立推導可得到此結果；三個以原三邊為底、G為頂點的三角形面積相等，各占1/3，所以72÷3＝24。；各為12平方公分=假，12是六小塊各自面積。；各為36平方公分=假，三份會超過總面積。；只有其中兩個相等=假，三份皆相等。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "84971bf24b3895db2705584c42a6c626e4d4035ee447c45d1cc4f485cfa3d664"
+    },
+    {
+      "questionId": "u20-s012-v010",
+      "contentSha256": "cefeeeb8ffdc0ae50d8b7fca3bd4e12cc74bef1a19cd0351c04f60d7b32f9be2",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "AG：GM＝2：1，所以從A出發走完整條AM的2/3可到G。",
+      "derivedAnswer": "吊點到頂點 A 沿中線方向的距離為中線長的三分之二",
+      "storedAnswer": "吊點到頂點 A 沿中線方向的距離為中線長的三分之二",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「吊點到頂點 A 沿中線方向的距離為中線長的三分之二」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「方向未說清，將2/3套在錯誤端點。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在吊掛定位中解讀重心比例。",
+      "literacyContextNecessity": "實際定位需指定從頂點或中點量測，2比1的方向資訊不可省略。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「均勻三角形標牌以重心 G 吊掛。沿 A 到對邊中點 M 的中線，G 的位置如何描述？」要求在吊掛定位中解讀重心比例。獨立推導為：AG：GM＝2：1，所以從A出發走完整條AM的2/3可到G。 四選項依序判定：吊點在中線中點=假，重心不是中點。；吊點到頂點 A 沿中線方向的距離為中線長的三分之二=真，依獨立推導可得到此結果；AG：GM＝2：1，所以從A出發走完整條AM的2/3可到G。；吊點到對邊中點占三分之二=假，GM只占1/3。；吊點一定到三頂點等距=假，那是外心。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "407bdf9fe9685efd3be0feebf2394e16827bd5294e9df90a601002da9dcc6c4c"
+    },
+    {
+      "questionId": "u20-s012-v011",
+      "contentSha256": "083f19b57f284c105f601c84bdfaca31bb6b80ea7efe0c34f47d16774a7f799e",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "平均位置即幾何重心：x=(1+7+4)/3=4，y=(2+2+5)/3=3。",
+      "derivedAnswer": "(4,3)",
+      "storedAnswer": "(4,3)",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「(4,3)」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "座標使用相同地圖距離單位。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「計算平均坐標時漏除頂點數3。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在地圖情境計算重心坐標。",
+      "literacyContextNecessity": "三個倉庫位置以相同權重取平均，正是重心坐標；若權重不同則不再適用。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「地圖上的三個倉庫坐標為 A(1,2)、B(7,2)、C(4,5)。若以三頂點平均位置作配送示意中心，座標為何？」要求在地圖情境計算重心坐標。獨立推導為：平均位置即幾何重心：x=(1+7+4)/3=4，y=(2+2+5)/3=3。 四選項依序判定：(3,4)=假，交換坐標。；(12,9)=假，未除以3。；(2,1.5)=假，多除以2。；(4,3)=真，依獨立推導可得到此結果；平均位置即幾何重心：x=(1+7+4)/3=4，y=(2+2+5)/3=3。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "f604aae51af4dd7936ba7033f93e2d44f3575541d94af9a2c2df8457f7a29a72"
+    },
+    {
+      "questionId": "u20-s012-v012",
+      "contentSha256": "ec9c2f2b0748a9111da17bc8b4b7bffa46d52a92d3afbf6a0a5442626ede4a68",
+      "reviewVersion": "human-review-u20-r1",
+      "independentSolution": "幾何重心相當於三頂點或整片區域均勻權重；貨量差異很大時應考慮加權位置，不能僅憑三中線交點。",
+      "derivedAnswer": "不能直接保證，因三處貨量不同時應使用加權質心",
+      "storedAnswer": "不能直接保證，因三處貨量不同時應使用加權質心",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項代回全部條件後，僅「不能直接保證，因三處貨量不同時應使用加權質心」成立；其他三項各有具體排除理由。",
+        "undefinedSymbol": "題幹中的符號與名詞皆在本技能講義或鎖定先備技能中定義。",
+        "unitConflict": "不涉及單位換算。",
+        "roundingConflict": "答案為精確值，不需四捨五入。",
+        "domainBoundary": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "常見誤讀為「把幾何重心誤當任何最佳化問題的答案。」，此讀法不能同時滿足題幹全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：判斷重心模型的適用限制。",
+      "literacyContextNecessity": "貨量權重改變中心定義，實務情境要求辨認幾何模型的假設。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "languageCheck": "使用臺灣繁體中文；題意、對象、方向與範圍皆明示。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三個配送點形成三角形，但 A 點貨量是另外兩點的十倍。直接把幾何重心當成實際物流平衡點是否合理？」要求判斷重心模型的適用限制。獨立推導為：幾何重心相當於三頂點或整片區域均勻權重；貨量差異很大時應考慮加權位置，不能僅憑三中線交點。 四選項依序判定：可以，幾何重心永遠是最佳物流點=假，重心未考慮需求權重、道路等因素。；可以，因重心到三點等距=假，重心不保證頂點等距。；不能直接保證，因三處貨量不同時應使用加權質心=真，依獨立推導可得到此結果；幾何重心相當於三頂點或整片區域均勻權重；貨量差異很大時應考慮加權位置，不能僅憑三中線交點。；不能，因三角形沒有重心=假，任何三角形都有重心。",
+      "reviewedAt": "2026-07-12",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewSha256": "d7efd08dd8b5de0a39fb2d53b7a31ac20350eafda5d489ae0be9a13683926cd0"
+    }
+  ],
+  "drawingSpecs": []
+};
+export default skillBundle;

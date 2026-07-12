@@ -1,0 +1,199 @@
+{
+  "lectureId": "u20-s012-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-centers",
+  "skillId": "centroid-property",
+  "skillSlot": "s012",
+  "lockedSkillTitle": "重心性質",
+  "title": "重心性質：中線的二比一與座標平均",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能在中線上使用頂點段比中點段為2比1。",
+    "能把2比1轉成整條中線的三分之二與三分之一。",
+    "能計算三頂點座標平均。",
+    "能使用重心的等面積分割。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "incenter-property",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「incenter-property」再進入本節。",
+  "glossary": [
+    {
+      "term": "頂點段",
+      "definition": "一條中線上，從頂點到重心的部分。"
+    },
+    {
+      "term": "中點段",
+      "definition": "一條中線上，從重心到對邊中點的部分。"
+    },
+    {
+      "term": "座標平均",
+      "definition": "將三個頂點的x坐標相加除以3，y坐標亦同。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "AG:GM=2:1",
+      "meaning": "A為頂點、M為對邊中點、G為重心時的分割比。"
+    },
+    {
+      "symbol": "G((x1+x2+x3)/3,(y1+y2+y3)/3)",
+      "meaning": "三角形重心座標。"
+    }
+  ],
+  "conceptNarrative": [
+    "2比1一定要看方向：靠頂點的一段是2，靠對邊中點的一段是1。整條中線共3份，因此頂點到重心占2/3。",
+    "座標平均不是另背的新事實；它反映三個頂點在水平與垂直方向上的均勻平均。",
+    "三中線把三角形分成六個等面積小三角形；連重心到三頂點時，得到三個面積各為原三角形1/3的區塊。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "重心分中線性質",
+      "statement": "重心將每條中線分成2：1，較長段靠頂點。"
+    },
+    {
+      "name": "三等面積性質",
+      "statement": "重心連到三頂點形成的三個三角形面積相等。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "AG=2AM/3，GM=AM/3",
+      "conditions": [
+        "M為對邊中點",
+        "G為重心且位於AM"
+      ],
+      "meaning": "把2比1轉為整體比例。"
+    },
+    {
+      "formula": "G=((xA+xB+xC)/3,(yA+yB+yC)/3)",
+      "conditions": [
+        "三頂點在同一座標系"
+      ],
+      "meaning": "重心座標。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把重心當中線中點。",
+    "2比1順序若從M開始要改寫為1比2。",
+    "六個小三角形等面積，不代表六者全等或周長相等。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認哪端是頂點、哪端是對邊中點。",
+      "check": "比例順序是否對應？"
+    },
+    {
+      "step": 2,
+      "instruction": "把整條中線視為3份。",
+      "check": "所求是2份、1份還是3份？"
+    },
+    {
+      "step": 3,
+      "instruction": "座標題分別平均x與y。",
+      "check": "負號是否保留？"
+    },
+    {
+      "step": 4,
+      "instruction": "面積題先判斷是三大區塊或六小區塊。",
+      "check": "分母是3還是6？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "AM=24，求AG、GM。",
+      "solutionSteps": [
+        "每份=24÷3=8。",
+        "AG=16，GM=8。"
+      ],
+      "answer": "16與8。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "頂點(0,0),(6,0),(0,3)。",
+      "solutionSteps": [
+        "x平均2。",
+        "y平均1。"
+      ],
+      "answer": "G=(2,1)。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "AG=GM。",
+      "why": "誤認重心為中點。",
+      "correction": "使用2比1。"
+    },
+    {
+      "mistake": "從M量仍取2/3。",
+      "why": "方向顛倒。",
+      "correction": "M到G是整條1/3。"
+    },
+    {
+      "mistake": "坐標相加後不除3。",
+      "why": "忘記平均三點。",
+      "correction": "x、y各除以3。"
+    }
+  ],
+  "selfCheck": [
+    "比例從哪一端讀？",
+    "整條中線是幾份？",
+    "座標是否分開平均？",
+    "面積區塊數是否判對？"
+  ],
+  "summary": [
+    "重心把中線分成靠頂點2、靠中點1。",
+    "頂點到重心占中線2/3。",
+    "重心座標是三頂點坐標平均。",
+    "三大區塊等面積，六小塊也等面積。"
+  ],
+  "connections": {
+    "previous": "先備：incenter-property",
+    "next": [
+      "下一技能集中辨識圖中的垂心與高。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s012-v001",
+      "u20-s012-v002",
+      "u20-s012-v003",
+      "u20-s012-v004",
+      "u20-s012-v005",
+      "u20-s012-v006",
+      "u20-s012-v007",
+      "u20-s012-v008",
+      "u20-s012-v009",
+      "u20-s012-v010",
+      "u20-s012-v011",
+      "u20-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s012-cr001",
+      "u20-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "講義強調比例方向與區塊層級，避免2比1和三分之一混用。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "2024386db3d281f19cbf9efdfc961cbe0b2fed7c577babb97a1bf2ea36f75a8e"
+}

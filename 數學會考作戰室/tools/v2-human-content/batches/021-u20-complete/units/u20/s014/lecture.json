@@ -1,0 +1,207 @@
+{
+  "lectureId": "u20-s014-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-centers",
+  "skillId": "triangle-center-word",
+  "skillSlot": "s014",
+  "lockedSkillTitle": "三角形的心應用",
+  "title": "三角形的心應用：先辨認服務點邊面積或高度",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由文字需求選擇外心、內心、重心或垂心。",
+    "能評估中心是否可能落在區域外。",
+    "能辨認均勻、垂直距離與不共線等隱藏前提。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "orthocenter-identify",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「orthocenter-identify」再進入本節。",
+  "glossary": [
+    {
+      "term": "服務對象",
+      "definition": "需求中要等距、平衡或對齊的實際物件。"
+    },
+    {
+      "term": "模型假設",
+      "definition": "把真實問題化成幾何中心問題時必須成立的條件。"
+    },
+    {
+      "term": "可行域",
+      "definition": "實務上允許設置設備的範圍。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "頂點等距→外心",
+      "meaning": "基地台、入口、村落等離散點。"
+    },
+    {
+      "symbol": "邊等距→內心",
+      "meaning": "牆、邊界、道路邊線等。"
+    },
+    {
+      "symbol": "均勻平衡→重心",
+      "meaning": "面積或質量平均。"
+    },
+    {
+      "symbol": "三高共點→垂心",
+      "meaning": "高度基準或垂直結構線。"
+    }
+  ],
+  "conceptNarrative": [
+    "讀到『中心』不能立即作答，因一般三角形有多種不同中心。第一步是找需求中的對象：三個點、三條邊、均勻面積，或三條高。",
+    "選對中心後還要檢查位置與假設。鈍角三角形的外心可能在可行域外；重心作平衡點要求材質均勻；外心要求三個站點不共線。",
+    "真實最佳位置可能還受道路、成本與權重影響。若條件超出幾何中心模型，應明確說明限制，而不是硬套。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "功能配對",
+      "statement": "頂點等距外心、邊距等距內心、均勻平衡重心、高線交會垂心。"
+    },
+    {
+      "name": "模型審查",
+      "statement": "選出中心後，檢查角型、均勻性、非退化與可行域限制。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "文字需求 → 幾何對象 → 特殊線 → 中心",
+      "conditions": [
+        "每一步都能由情境明確對應"
+      ],
+      "meaning": "應用題轉譯流程。"
+    }
+  ],
+  "nonApplicableCases": [
+    "『最中央』不是足夠的數學規格。",
+    "重心不是到三頂點等距點。",
+    "外心數學上存在不代表實務上一定能設置。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出要比較的對象。",
+      "check": "是入口點還是牆線？"
+    },
+    {
+      "step": 2,
+      "instruction": "翻成幾何條件。",
+      "check": "等距是點距、垂距，還是平衡？"
+    },
+    {
+      "step": 3,
+      "instruction": "選擇對應中心。",
+      "check": "特殊線是否匹配？"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查隱藏前提與實務限制。",
+      "check": "角型、均勻、共線、可行域是否影響？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "三個村落等距基地台。",
+      "solutionSteps": [
+        "村落是頂點。",
+        "到頂點等距。"
+      ],
+      "answer": "外心。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "三角形公園到三面圍牆等距。",
+      "solutionSteps": [
+        "圍牆是邊。",
+        "距離取垂距。"
+      ],
+      "answer": "內心。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "均勻招牌吊點。",
+      "solutionSteps": [
+        "質量均勻。",
+        "面積平衡。"
+      ],
+      "answer": "重心。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到圓就選外心。",
+      "why": "內切圓的圓心是內心。",
+      "correction": "看圓通過頂點還是與邊相切。"
+    },
+    {
+      "mistake": "看到等距就選外心。",
+      "why": "可能是到邊等距。",
+      "correction": "先確認等距對象。"
+    },
+    {
+      "mistake": "把幾何重心當物流最佳點。",
+      "why": "需求權重可能不同。",
+      "correction": "檢查均勻或等權假設。"
+    }
+  ],
+  "selfCheck": [
+    "需求中的物件是點、線還是面？",
+    "距離是否為垂直距離？",
+    "材料或需求是否均勻？",
+    "中心位置是否落在允許區域？"
+  ],
+  "summary": [
+    "先分類服務對象，再選中心。",
+    "外心服務頂點，內心服務邊界。",
+    "重心處理均勻平衡，垂心處理高度線。",
+    "應用必須審查模型假設。"
+  ],
+  "connections": {
+    "previous": "先備：orthocenter-identify",
+    "next": [
+      "最後一技能會整合圖例、證明、反例與規格審查。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s014-v001",
+      "u20-s014-v002",
+      "u20-s014-v003",
+      "u20-s014-v004",
+      "u20-s014-v005",
+      "u20-s014-v006",
+      "u20-s014-v007",
+      "u20-s014-v008",
+      "u20-s014-v009",
+      "u20-s014-v010",
+      "u20-s014-v011",
+      "u20-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s014-cr001",
+      "u20-s014-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "講義不把中心當萬用最佳化答案，明確納入模型與可行域限制。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "edaefbfc5ea1a4a99ff170b4837f2e466e8e150fee4f156941c1970fd1e21160"
+}

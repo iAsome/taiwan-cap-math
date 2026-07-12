@@ -1,0 +1,196 @@
+{
+  "lectureId": "u20-s005-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-proof",
+  "skillId": "proof-contrapositive-basic",
+  "skillSlot": "s005",
+  "lockedSkillTitle": "逆否命題基本",
+  "title": "逆否命題基本：交換並否定，保留原命題真假",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能把『若P則Q』改寫為『若非Q則非P』。",
+    "能區分逆命題、否命題與逆否命題。",
+    "能正確處理『不小於』與『不都是』等否定。",
+    "能用反例檢查條件命題。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "proof-fill-reason",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「proof-fill-reason」再進入本節。",
+  "glossary": [
+    {
+      "term": "條件命題",
+      "definition": "形式為『若條件P成立，則結論Q成立』的敘述。"
+    },
+    {
+      "term": "逆命題",
+      "definition": "交換條件與結論，成為若Q則P。"
+    },
+    {
+      "term": "否命題",
+      "definition": "分別否定但不交換，成為若非P則非Q。"
+    },
+    {
+      "term": "逆否命題",
+      "definition": "先交換再否定，成為若非Q則非P，與原命題等價。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "P→Q",
+      "meaning": "若P，則Q。"
+    },
+    {
+      "symbol": "¬Q→¬P",
+      "meaning": "若非Q，則非P，即逆否命題。"
+    }
+  ],
+  "conceptNarrative": [
+    "逆否要做兩個動作：把結論移到前面、把條件移到後面，並且兩邊都否定。少做任何一項都不是逆否。",
+    "原命題與逆否命題會在同一種情況失敗：P成立而Q不成立。因此兩者真假相同。",
+    "否定要完整。『小於5』的否定是『大於或等於5』；『A且B』的否定是『至少一項不成立』，不是必須兩項都不成立。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "反例",
+      "statement": "一個滿足P但不滿足Q的例子，可推翻『若P則Q』的普遍性。"
+    },
+    {
+      "name": "逆否證明",
+      "statement": "改證非Q能推出非P，因其與原命題等價。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "P→Q 等價於 ¬Q→¬P",
+      "conditions": [
+        "P、Q的否定範圍要正確",
+        "不能把Q→P當成等價形式"
+      ],
+      "meaning": "逆否等價。"
+    }
+  ],
+  "nonApplicableCases": [
+    "原命題真，不代表逆命題一定真。",
+    "條件不成立時，原規則通常不能決定結論真假。",
+    "否定『小於』時不可漏掉等於的邊界。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "用短句標出P與Q。",
+      "check": "不要把條件中的修飾詞漏掉。"
+    },
+    {
+      "step": 2,
+      "instruction": "交換成Q在前、P在後。",
+      "check": "此時還不是完成答案。"
+    },
+    {
+      "step": 3,
+      "instruction": "分別寫出Q與P的完整否定。",
+      "check": "不等式是否包含邊界？"
+    },
+    {
+      "step": 4,
+      "instruction": "朗讀並與原命題比較。",
+      "check": "是否誤寫成逆命題或否命題？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "若能被2整除，則是偶數。",
+      "solutionSteps": [
+        "P：能被2整除；Q：是偶數。",
+        "非Q：不是偶數；非P：不能被2整除。"
+      ],
+      "answer": "若不是偶數，則不能被2整除。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "若距離小於5，則警報亮。",
+      "solutionSteps": [
+        "非Q：警報未亮。",
+        "非P：距離不小於5，含等於5。"
+      ],
+      "answer": "若警報未亮，則距離大於或等於5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只交換，寫成若Q則P。",
+      "why": "這是逆命題。",
+      "correction": "交換後還要兩邊否定。"
+    },
+    {
+      "mistake": "把『不都是』寫成『都不是』。",
+      "why": "否定範圍過強。",
+      "correction": "至少一項不成立即可。"
+    },
+    {
+      "mistake": "由非P推出非Q並稱逆否。",
+      "why": "這是否命題。",
+      "correction": "逆否從非Q開始。"
+    }
+  ],
+  "selfCheck": [
+    "我有同時交換與否定嗎？",
+    "每個否定是否包含完整邊界？",
+    "我是否誤把逆命題當等價？",
+    "反例是否真的滿足原條件？"
+  ],
+  "summary": [
+    "逆否形式是非Q→非P。",
+    "原命題與逆否命題等價。",
+    "逆命題與否命題不自動等價於原命題。",
+    "有效反例必須滿足條件而違反結論。"
+  ],
+  "connections": {
+    "previous": "先備：proof-fill-reason",
+    "next": [
+      "下一主題開始研究由不同特殊線交成的三角形中心。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s005-v001",
+      "u20-s005-v002",
+      "u20-s005-v003",
+      "u20-s005-v004",
+      "u20-s005-v005",
+      "u20-s005-v006",
+      "u20-s005-v007",
+      "u20-s005-v008",
+      "u20-s005-v009",
+      "u20-s005-v010",
+      "u20-s005-v011",
+      "u20-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s005-cr001",
+      "u20-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "範圍限國中基本語句邏輯，未使用真值表或形式邏輯證明系統。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "b251aebdd6b69b3a4a52b6759085845759b6acde70a89346696bd68a0a26f638"
+}

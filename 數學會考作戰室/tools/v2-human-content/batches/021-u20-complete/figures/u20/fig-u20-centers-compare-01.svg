@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-labelledby="fig-u20-centers-compare-01-title fig-u20-centers-compare-01-desc">
+<title id="fig-u20-centers-compare-01-title">中線、高與角平分線三圖比較</title>
+<desc id="fig-u20-centers-compare-01-desc">並排三個小三角形：甲畫中線交點、乙畫帶直角記號的高交點、丙畫角平分線交點。</desc>
+
+<style>
+.line{stroke:#111;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.aux{stroke:#555;stroke-width:2.5;fill:none;stroke-dasharray:8 7}
+.mark{stroke:#111;stroke-width:2.5;fill:none}
+.pt{fill:#111}
+.lbl{font:18px sans-serif;fill:#111}
+.small{font:15px sans-serif;fill:#111}
+</style>
+
+<g transform="translate(0,0)">
+<path class="line" d="M25 245 L90 65 L150 245 Z"/><path class="line" d="M90 65 L88 245 M25 245 L120 155 M150 245 L58 155"/>
+<text class="lbl" x="72" y="285">I</text>
+</g>
+<g transform="translate(160,0)">
+<path class="line" d="M25 245 L90 65 L150 245 Z"/><path class="line" d="M90 65 L90 245 M25 245 L121 154"/>
+<path class="mark" d="M90 245 l10 0 l0 -10 M121 154 l6 9 l9 -6"/><text class="lbl" x="72" y="285">II</text>
+</g>
+<g transform="translate(320,0)">
+<path class="line" d="M25 245 L90 65 L150 245 Z"/><path class="aux" d="M90 65 L93 190 M25 245 L93 190 M150 245 L93 190"/>
+<text class="lbl" x="72" y="285">III</text>
+</g>
+
+</svg>

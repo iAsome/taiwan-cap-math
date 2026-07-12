@@ -1,0 +1,203 @@
+{
+  "lectureId": "u20-s011-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-centers",
+  "skillId": "incenter-property",
+  "skillSlot": "s011",
+  "lockedSkillTitle": "內心性質",
+  "title": "內心性質：半角與等垂距及內切圓",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能計算內心分角後的角度。",
+    "能使用到三邊等垂距求內切圓半徑。",
+    "能推導 ∠AIC＝90°＋∠B÷2。",
+    "能用內心分割面積。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "circumcenter-property",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「circumcenter-property」再進入本節。",
+  "glossary": [
+    {
+      "term": "半角",
+      "definition": "角平分線把一個角分成兩個相等的小角。"
+    },
+    {
+      "term": "切點",
+      "definition": "圓與直線只有一個共同點時的接觸點。"
+    },
+    {
+      "term": "內切圓半徑",
+      "definition": "內心到任一邊的垂直距離。"
+    },
+    {
+      "term": "半周長",
+      "definition": "三角形周長的一半。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∠BAI=∠IAC=∠A/2",
+      "meaning": "AI平分∠A。"
+    },
+    {
+      "symbol": "K=rs",
+      "meaning": "面積K等於內切圓半徑r乘半周長s；本課由底高分割推導。"
+    }
+  ],
+  "conceptNarrative": [
+    "內心同時位於三個角平分線上，因此每個頂角都會被分成兩半。這能配合三角形內角和推出內心附近的角度。",
+    "內切圓半徑不是到頂點的距離，而是到邊的垂線段；半徑在切點處垂直該邊。",
+    "連結內心與三頂點，可把原三角形拆成三個高都等於r的小三角形，從而得到面積等於r乘半周長。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "內心夾角性質",
+      "statement": "若I為內心，則∠AIC＝90°＋∠B/2。"
+    },
+    {
+      "name": "切線半徑垂直",
+      "statement": "圓心到切點的半徑與切線垂直。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "∠AIC=90°+∠B/2",
+      "conditions": [
+        "I為三角形內心"
+      ],
+      "meaning": "兩條角平分線所夾角。"
+    },
+    {
+      "formula": "K=r(a+b+c)/2=rs",
+      "conditions": [
+        "r為內切圓半徑",
+        "a,b,c使用同一長度單位"
+      ],
+      "meaning": "由三個小三角形面積相加。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把 ∠AIC 寫成 ∠B/2，會漏掉90°。",
+    "切點一般不是邊中點。",
+    "面積公式中的s是半周長，不是整個周長。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認I是內心並標出半角。",
+      "check": "哪個頂角被分成兩半？"
+    },
+    {
+      "step": 2,
+      "instruction": "需要夾角時，在含I的小三角形用內角和。",
+      "check": "是否先把原角除以2？"
+    },
+    {
+      "step": 3,
+      "instruction": "需要半徑時，從I向邊作垂線。",
+      "check": "垂足是否為切點？"
+    },
+    {
+      "step": 4,
+      "instruction": "需要面積時，把三邊分別當底。",
+      "check": "三個高是否皆為r？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "∠B=40°，I為內心，求∠AIC。",
+      "solutionSteps": [
+        "∠B/2=20°。",
+        "90°+20°=110°。"
+      ],
+      "answer": "110°。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "三邊6、8、10，r=2。",
+      "solutionSteps": [
+        "半周長=12。",
+        "K=rs=2×12。"
+      ],
+      "answer": "24平方單位。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "半角後又除以2。",
+      "why": "重複平分。",
+      "correction": "每個完整頂角只除一次。"
+    },
+    {
+      "mistake": "K=r×周長。",
+      "why": "漏掉三角形面積的二分之一。",
+      "correction": "使用半周長。"
+    },
+    {
+      "mistake": "用內心到頂點當半徑。",
+      "why": "內切圓與邊相切。",
+      "correction": "作邊的垂線。"
+    }
+  ],
+  "selfCheck": [
+    "角是否先平分？",
+    "夾角公式中的對面角是哪一個？",
+    "半徑是否為垂直距離？",
+    "面積單位是否平方化？"
+  ],
+  "summary": [
+    "內心平分三個內角。",
+    "到三邊的垂距都是內切圓半徑。",
+    "∠AIC＝90°＋∠B/2。",
+    "面積可由三個共同高為r的小三角形相加。"
+  ],
+  "connections": {
+    "previous": "先備：circumcenter-property",
+    "next": [
+      "下一技能研究重心如何以2比1分割中線。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s011-v001",
+      "u20-s011-v002",
+      "u20-s011-v003",
+      "u20-s011-v004",
+      "u20-s011-v005",
+      "u20-s011-v006",
+      "u20-s011-v007",
+      "u20-s011-v008",
+      "u20-s011-v009",
+      "u20-s011-v010",
+      "u20-s011-v011",
+      "u20-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s011-cr001",
+      "u20-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "夾角與面積公式皆在講義內推導，零基礎學生不需背未說明公式。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "032ff43c7ca1808b9a81b07204004877f8edc1b72005fef6d0d9cea66d20c9fd"
+}

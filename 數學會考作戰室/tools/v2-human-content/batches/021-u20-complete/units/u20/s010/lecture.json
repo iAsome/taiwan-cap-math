@@ -1,0 +1,203 @@
+{
+  "lectureId": "u20-s010-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-centers",
+  "skillId": "circumcenter-property",
+  "skillSlot": "s010",
+  "lockedSkillTitle": "外心性質",
+  "title": "外心性質：等半徑與垂直平分線及直角特例",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能用OA＝OB＝OC解長度。",
+    "能在等距與垂直平分線之間雙向轉換。",
+    "能計算直角三角形外接圓半徑。",
+    "能由外心位置反判三角形角型。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "orthocenter-basic",
+      "requiredLevel": "能使用該技能的核心定義與基本推理。"
+    }
+  ],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「orthocenter-basic」再進入本節。",
+  "glossary": [
+    {
+      "term": "外接圓半徑",
+      "definition": "外心到任一頂點的距離。"
+    },
+    {
+      "term": "直徑",
+      "definition": "通過圓心且兩端在圓上的弦，長為半徑兩倍。"
+    },
+    {
+      "term": "等距點軌跡",
+      "definition": "到線段兩端等距的所有點形成其垂直平分線。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "R",
+      "meaning": "常表示外接圓半徑。"
+    },
+    {
+      "symbol": "AB=2R",
+      "meaning": "在直角三角形中，若AB為斜邊，AB是外接圓直徑。"
+    }
+  ],
+  "conceptNarrative": [
+    "外心性質可以沿兩個方向使用：知道O是外心，可得三段半徑相等；知道某點到三頂點等距，也能判定它是外心。",
+    "直角三角形把外心計算大幅簡化：斜邊就是直徑，半徑為斜邊一半。",
+    "外心在內、邊上、外的位置不只是畫圖資訊，也能反過來判斷三角形是銳角、直角或鈍角。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "垂直平分線正性質",
+      "statement": "線上的點到線段兩端等距。"
+    },
+    {
+      "name": "垂直平分線逆性質",
+      "statement": "到線段兩端等距的點在線段垂直平分線上。"
+    },
+    {
+      "name": "直徑所對圓周角",
+      "statement": "圓周上對直徑的角為90°。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "R=斜邊÷2",
+      "conditions": [
+        "三角形為直角三角形",
+        "該邊確為斜邊"
+      ],
+      "meaning": "直角三角形外接圓半徑。"
+    },
+    {
+      "formula": "OA=OB=OC",
+      "conditions": [
+        "O為外心"
+      ],
+      "meaning": "三個服務距離或半徑相等。"
+    }
+  ],
+  "nonApplicableCases": [
+    "非直角三角形不能直接把最長邊當直徑。",
+    "等距到三邊不能用來判定外心。",
+    "外心在外部仍有效，不代表外接圓不存在。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認已知是中心、等距，還是角型。",
+      "check": "推理方向為性質還是判定？"
+    },
+    {
+      "step": 2,
+      "instruction": "若是直角三角形，先找斜邊。",
+      "check": "不要把兩股當直徑。"
+    },
+    {
+      "step": 3,
+      "instruction": "建立半徑或垂直平分線等式。",
+      "check": "單位是否一致？"
+    },
+    {
+      "step": 4,
+      "instruction": "用位置分類或圓周角反查。",
+      "check": "結論是否超出已知？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "直角三角形斜邊18公分。",
+      "solutionSteps": [
+        "斜邊是直徑。",
+        "R=18÷2。"
+      ],
+      "answer": "外接圓半徑9公分。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "OA＝OB且OB＝OC。",
+      "solutionSteps": [
+        "遞移得OA＝OC。",
+        "O到三頂點等距。"
+      ],
+      "answer": "O為外心。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把斜邊長當半徑。",
+      "why": "斜邊是直徑。",
+      "correction": "除以2。"
+    },
+    {
+      "mistake": "一組等距就判外心。",
+      "why": "只定位一條垂直平分線。",
+      "correction": "至少連接到第三頂點。"
+    },
+    {
+      "mistake": "外心在外就說無解。",
+      "why": "位置不影響等距性。",
+      "correction": "仍以O為圓心畫外接圓。"
+    }
+  ],
+  "selfCheck": [
+    "我是否確認直角與斜邊？",
+    "半徑和直徑是否混淆？",
+    "等距條件是否涵蓋三個頂點？",
+    "外心位置與角型是否一致？"
+  ],
+  "summary": [
+    "外心到三頂點的距離都是R。",
+    "等距與垂直平分線可雙向使用。",
+    "直角三角形R為斜邊一半。",
+    "外心位置可判斷角型。"
+  ],
+  "connections": {
+    "previous": "先備：orthocenter-basic",
+    "next": [
+      "下一技能深入角平分、邊距與內切圓面積關係。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s010-v001",
+      "u20-s010-v002",
+      "u20-s010-v003",
+      "u20-s010-v004",
+      "u20-s010-v005",
+      "u20-s010-v006",
+      "u20-s010-v007",
+      "u20-s010-v008",
+      "u20-s010-v009",
+      "u20-s010-v010",
+      "u20-s010-v011",
+      "u20-s010-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s010-cr001",
+      "u20-s010-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "計算限國中可直接推導的半徑、座標與位置關係，未引入外接圓高階公式。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "b2445a813bdfe85bedc9dce3060130ef283d966c9f139cf2c3e1bcadf960f9ba"
+}

@@ -1,0 +1,196 @@
+{
+  "lectureId": "u20-s001-lecture-r1",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "topicId": "u20-proof",
+  "skillId": "geometry-proof-basic",
+  "skillSlot": "s001",
+  "lockedSkillTitle": "幾何證明基本",
+  "title": "幾何證明基本：從已知走到結論",
+  "audience": "臺灣國中零基礎至會考數學滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能分辨已知條件、待證結論與理由。",
+    "能判斷量測、外觀與正式證明的差異。",
+    "能找出循環論證與論證缺口。"
+  ],
+  "prerequisites": [],
+  "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「基本幾何語言」再進入本節。",
+  "glossary": [
+    {
+      "term": "已知條件",
+      "definition": "題目直接提供、可作為推理起點的資訊。"
+    },
+    {
+      "term": "待證結論",
+      "definition": "題目要求最後必須推出的敘述。"
+    },
+    {
+      "term": "理由",
+      "definition": "支持某一步推論的定義、定理、性質或已證結果。"
+    },
+    {
+      "term": "論證缺口",
+      "definition": "從前一步到後一步缺少足夠條件或理由。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "∵",
+      "meaning": "因為，表示理由來源；可不用符號而改寫完整句。"
+    },
+    {
+      "symbol": "∴",
+      "meaning": "所以，表示由前述理由推出結果。"
+    },
+    {
+      "symbol": "≅",
+      "meaning": "兩圖形全等，形狀與大小完全相同。"
+    }
+  ],
+  "conceptNarrative": [
+    "證明的目的不是讓圖形『看起來正確』，而是讓任何讀者都能從共同接受的條件重做推理。",
+    "證明像一條橋：已知是起點，結論是終點，每一個中間橋墩都要有理由。若把結論偷放回前提，就是循環論證。",
+    "示意圖協助定位物件與關係，但圖可能未按比例；線段看似等長、角看似直角，都不能取代文字或標記。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "直接證明",
+      "statement": "從已知條件出發，依序使用定義與已知性質，直到得到待證結論。"
+    },
+    {
+      "name": "充分理由",
+      "statement": "一個理由必須真的滿足其適用條件，且能支持緊接的敘述。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "已知 → 有理由的中間結果 → 待證結論",
+      "conditions": [
+        "每一箭頭都能指出具體理由",
+        "不得使用尚未證明的結論"
+      ],
+      "meaning": "基本證明結構。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只用尺量或量角器得到近似值時，不能宣稱完成精確證明。",
+    "題目沒有標示平行、垂直、等長時，不可從外觀自行補入。",
+    "結論正確不代表過程正確；錯誤理由偶然得到正解仍不是有效證明。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "把題目的『已知』與『求證』分開寫。",
+      "check": "是否把任何結論誤列為已知？"
+    },
+    {
+      "step": 2,
+      "instruction": "把圖例轉成正式敘述，例如刻痕轉成線段相等。",
+      "check": "每個條件都有來源嗎？"
+    },
+    {
+      "step": 3,
+      "instruction": "尋找一個能由已知直接推出的中間結果。",
+      "check": "理由的前提都已具備嗎？"
+    },
+    {
+      "step": 4,
+      "instruction": "逐步連到結論並反查是否跳步。",
+      "check": "刪掉任何一步後，結論是否仍無理由地出現？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "已知 AB＝AC，求證 ∠B＝∠C。",
+      "solutionSteps": [
+        "AB＝AC 是已知。",
+        "因此 △ABC 為等腰三角形。",
+        "等腰三角形兩底角相等。"
+      ],
+      "answer": "∠B＝∠C。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "圖上量得兩邊皆約4公分，能否證明等長？",
+      "solutionSteps": [
+        "量測有誤差。",
+        "示意圖可能未按比例。",
+        "需等長標記或可推出等長的性質。"
+      ],
+      "answer": "不能只靠量測證明。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把『看起來對稱』當理由。",
+      "why": "外觀不是正式條件。",
+      "correction": "指出等長、角相等或全等的來源。"
+    },
+    {
+      "mistake": "先寫待證結論，再說所以成立。",
+      "why": "把結論當前提形成循環。",
+      "correction": "回到已知，建立中間步驟。"
+    },
+    {
+      "mistake": "列很多定理但不說用在哪裡。",
+      "why": "定理未與敘述對應。",
+      "correction": "每個新敘述後立即標理由。"
+    }
+  ],
+  "selfCheck": [
+    "我能指出題目的起點與終點嗎？",
+    "我使用的每個條件都來自題設或前一步嗎？",
+    "我是否只靠圖形外觀？",
+    "我的理由是否真的能推出下一句？"
+  ],
+  "summary": [
+    "證明必須從已知出發。",
+    "每一步都要有可檢查的理由。",
+    "量測與外觀只能輔助，不能代替證明。",
+    "循環與跳步是最常見的兩種缺陷。"
+  ],
+  "connections": {
+    "previous": "先備：無鎖定單元內先備技能，從基本幾何語言開始。",
+    "next": [
+      "下一技能會把證明拆成可排序的步驟。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u20-s001-v001",
+      "u20-s001-v002",
+      "u20-s001-v003",
+      "u20-s001-v004",
+      "u20-s001-v005",
+      "u20-s001-v006",
+      "u20-s001-v007",
+      "u20-s001-v008",
+      "u20-s001-v009",
+      "u20-s001-v010",
+      "u20-s001-v011",
+      "u20-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u20-s001-cr001",
+      "u20-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "Taiwan junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "symbolDefinitionsComplete": true,
+    "invalidUseCasesIncluded": true,
+    "skillSpecificEvidence": "本講義專注證明的角色與證據界線，未提前要求特定高階定理。",
+    "reviewerDecision": "pass",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "legacyContentUsed": false,
+  "contentSha256": "19ae1698c04b56728fdd531748a2dda7e019e6e1e0346444ca1eec3d325c61be"
+}

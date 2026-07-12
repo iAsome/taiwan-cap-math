@@ -1,0 +1,202 @@
+{
+  "packageId": "math-v2-human-content-batch-021-u20-complete",
+  "batchId": "021-u20-complete",
+  "schemaVersion": "1.3.0",
+  "immutableSource": true,
+  "baseBranch": "chatgpt/math-v2-human-authoring-r1",
+  "expectedBaseHead": "__CENTRAL_COORDINATOR_WILL_SUPPLY_EXPECTED_HEAD__",
+  "syllabusLockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+  "unitId": "u20",
+  "numericUnitId": 20,
+  "unitTitle": "推理證明與三角形的心",
+  "skillSlots": [
+    "s001",
+    "s002",
+    "s003",
+    "s004",
+    "s005",
+    "s006",
+    "s007",
+    "s008",
+    "s009",
+    "s010",
+    "s011",
+    "s012",
+    "s013",
+    "s014",
+    "s015"
+  ],
+  "skills": [
+    {
+      "slot": "s001",
+      "skillId": "geometry-proof-basic",
+      "title": "幾何證明基本",
+      "topicId": "u20-proof",
+      "order": 1,
+      "prerequisiteSkillIds": []
+    },
+    {
+      "slot": "s002",
+      "skillId": "geometry-proof-steps",
+      "title": "證明步驟",
+      "topicId": "u20-proof",
+      "order": 2,
+      "prerequisiteSkillIds": [
+        "geometry-proof-basic"
+      ]
+    },
+    {
+      "slot": "s003",
+      "skillId": "geometry-proof-reason",
+      "title": "理由選擇",
+      "topicId": "u20-proof",
+      "order": 3,
+      "prerequisiteSkillIds": [
+        "geometry-proof-steps"
+      ]
+    },
+    {
+      "slot": "s004",
+      "skillId": "proof-fill-reason",
+      "title": "填充證明理由",
+      "topicId": "u20-proof",
+      "order": 4,
+      "prerequisiteSkillIds": [
+        "geometry-proof-reason"
+      ]
+    },
+    {
+      "slot": "s005",
+      "skillId": "proof-contrapositive-basic",
+      "title": "逆否命題基本",
+      "topicId": "u20-proof",
+      "order": 5,
+      "prerequisiteSkillIds": [
+        "proof-fill-reason"
+      ]
+    },
+    {
+      "slot": "s006",
+      "skillId": "circumcenter",
+      "title": "外心",
+      "topicId": "u20-centers",
+      "order": 6,
+      "prerequisiteSkillIds": [
+        "proof-contrapositive-basic"
+      ]
+    },
+    {
+      "slot": "s007",
+      "skillId": "incenter",
+      "title": "內心",
+      "topicId": "u20-centers",
+      "order": 7,
+      "prerequisiteSkillIds": [
+        "circumcenter"
+      ]
+    },
+    {
+      "slot": "s008",
+      "skillId": "centroid",
+      "title": "重心",
+      "topicId": "u20-centers",
+      "order": 8,
+      "prerequisiteSkillIds": [
+        "incenter"
+      ]
+    },
+    {
+      "slot": "s009",
+      "skillId": "orthocenter-basic",
+      "title": "垂心基本",
+      "topicId": "u20-centers",
+      "order": 9,
+      "prerequisiteSkillIds": [
+        "centroid"
+      ]
+    },
+    {
+      "slot": "s010",
+      "skillId": "circumcenter-property",
+      "title": "外心性質",
+      "topicId": "u20-centers",
+      "order": 10,
+      "prerequisiteSkillIds": [
+        "orthocenter-basic"
+      ]
+    },
+    {
+      "slot": "s011",
+      "skillId": "incenter-property",
+      "title": "內心性質",
+      "topicId": "u20-centers",
+      "order": 11,
+      "prerequisiteSkillIds": [
+        "circumcenter-property"
+      ]
+    },
+    {
+      "slot": "s012",
+      "skillId": "centroid-property",
+      "title": "重心性質",
+      "topicId": "u20-centers",
+      "order": 12,
+      "prerequisiteSkillIds": [
+        "incenter-property"
+      ]
+    },
+    {
+      "slot": "s013",
+      "skillId": "orthocenter-identify",
+      "title": "垂心辨識",
+      "topicId": "u20-centers",
+      "order": 13,
+      "prerequisiteSkillIds": [
+        "centroid-property"
+      ]
+    },
+    {
+      "slot": "s014",
+      "skillId": "triangle-center-word",
+      "title": "三角形的心應用",
+      "topicId": "u20-centers",
+      "order": 14,
+      "prerequisiteSkillIds": [
+        "orthocenter-identify"
+      ]
+    },
+    {
+      "slot": "s015",
+      "skillId": "proof-literacy",
+      "title": "幾何證明素養題",
+      "topicId": "u20-literacy",
+      "order": 15,
+      "prerequisiteSkillIds": [
+        "triangle-center-word"
+      ]
+    }
+  ],
+  "counts": {
+    "skillCount": 15,
+    "lectureCount": 15,
+    "mcQuestionCount": 180,
+    "constructedResponseCount": 30,
+    "semanticReviewCount": 180,
+    "figureCount": 16,
+    "difficultyCounts": {
+      "basic": 45,
+      "standard": 45,
+      "advanced": 45,
+      "literacy": 45
+    },
+    "answerIndexCounts": [
+      45,
+      45,
+      45,
+      45
+    ]
+  },
+  "productionActivationAllowed": false,
+  "allowedDestination": "數學會考作戰室/tools/v2-human-content/batches/021-u20-complete/",
+  "centralCoordinatorApprovalRequired": true
+}
