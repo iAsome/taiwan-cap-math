@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "math-v2-legacy-isolation-r1",
+  "batchId": "004-u03-complete",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentImported": false,
+  "legacySemanticEvidenceAccepted": false,
+  "oldProductionRuntimeModified": false,
+  "deleteLegacyNow": false,
+  "finalRetirementRequired": true,
+  "legacyFamiliesToRetireAtFinalIntegration": [
+    "數學會考作戰室/tools/v2-content/units/u*/questions.mjs",
+    "數學會考作戰室/tools/v2-content/units/u*/lectures.mjs",
+    "數學會考作戰室/v2/math-question-bank-v2-u*.js",
+    "數學會考作戰室/v2/math-lecture-v2-u*.js",
+    "數學會考作戰室/tools/review-output/full-v2-production/question-semantic-review.jsonl",
+    "數學會考作戰室/tools/review-output/full-v2-production/lecture-semantic-review.jsonl",
+    "數學會考作戰室/tools/review-output/full-v2-production/semantic-summary.md",
+    "數學會考作戰室/tools/author-v2-production-content.mjs",
+    "old production locks and validation evidence tied to generated content hashes"
+  ],
+  "architectureToPreserveAfterTargetedVerification": [
+    "math-engine-v2.js",
+    "lazy-loading bootstrap",
+    "V1 rollback",
+    "storage migration",
+    "schema validators",
+    "browser smoke tests",
+    "release-gate framework"
+  ],
+  "finalSequence": [
+    "snapshot old runtime content",
+    "verify all 23 human-authored units complete",
+    "delete generated source banks and circular review evidence",
+    "delete compiled old U01-U23 lecture and question banks",
+    "compile new banks only from CHATGPT_HUMAN_AUTHORED_R1 sources",
+    "scan repository for runtime imports or hashes of retired banks",
+    "regenerate manifests and production locks",
+    "run complete release gate and human acceptance review"
+  ]
+}

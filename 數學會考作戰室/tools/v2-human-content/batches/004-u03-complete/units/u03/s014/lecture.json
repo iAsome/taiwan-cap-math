@@ -1,0 +1,239 @@
+{
+  "lectureId": "u03-s014-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-reasoning",
+  "skillId": "linear-equation-plan-comparison",
+  "title": "方案比較問題：建立兩個總費用式並找同價點",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能為兩方案分別建立線性費用式。",
+    "能求兩方案同價的使用量。",
+    "能判斷同價點前後哪個方案較便宜。",
+    "能辨認永不相交或差額固定的情況。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-reasonableness",
+      "requiredLevel": "能先求代數解，再檢查整數、正值、單位和題目限制。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "基本費",
+      "definition": "不論使用量多少都先收取的固定金額。"
+    },
+    {
+      "term": "單位費",
+      "definition": "每增加一單位使用量增加的費用。"
+    },
+    {
+      "term": "同價點",
+      "definition": "兩方案總費用相同時的使用量。"
+    },
+    {
+      "term": "損益平衡量",
+      "definition": "方案比較中使兩總成本相等的數量。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "A(x)=a+px",
+      "meaning": "方案A的基本費a加每單位p元。"
+    },
+    {
+      "symbol": "A(x)=B(x)",
+      "meaning": "求兩方案同價點。"
+    }
+  ],
+  "conceptNarrative": [
+    "方案比較先為每個方案獨立列式。",
+    "同價點必須令兩個完整總費用式相等後求得，不能只比較基本費或單價。",
+    "交點前後的便宜方案可代入測試值，或比較單位費增幅。",
+    "若兩方案單位費相同，費用差固定，除非基本費也相同，否則不會同價。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "線性費用式",
+      "statement": "總費用=基本費+單位費×使用量。"
+    },
+    {
+      "name": "同價方程式",
+      "statement": "a+px=b+qx。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x=(b-a)/(p-q)",
+      "conditions": [
+        "p≠q"
+      ],
+      "meaning": "兩線性費用的同價點。"
+    },
+    {
+      "formula": "A(x)-B(x)=(a-b)+(p-q)x",
+      "conditions": [
+        "同一使用量x"
+      ],
+      "meaning": "比較差額。"
+    }
+  ],
+  "nonApplicableCases": [
+    "同價點若為負數，可能不在實際使用範圍。",
+    "使用次數若需整數，分數交點需再判斷附近整數。",
+    "不能只比較基本費。",
+    "不能只比較單位費而忽略同價點位置。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "列出兩方案的基本費與單位費。",
+      "check": "固定與變動項是否分清？"
+    },
+    {
+      "step": 2,
+      "instruction": "建立A(x)與B(x)。",
+      "check": "同一x代表相同使用量？"
+    },
+    {
+      "step": 3,
+      "instruction": "令A(x)=B(x)求同價點。",
+      "check": "移項與除法是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "判斷交點前後。",
+      "check": "可代入0或交點旁的值？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查使用量範圍與整數性。",
+      "check": "答案是否可實際使用？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "A=150+5x，B=30+9x。",
+      "solutionSteps": [
+        "令兩式相等。",
+        "120=4x。",
+        "x=30。"
+      ],
+      "answer": "30次同價。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "A=80+6x，B=120+6x。",
+      "solutionSteps": [
+        "單位費相同。",
+        "A基本費少40。"
+      ],
+      "answer": "A永遠便宜40元。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "A=300元不限次，B=50x。",
+      "solutionSteps": [
+        "300=50x。",
+        "x=6。"
+      ],
+      "answer": "6次同價。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "兩方案在20次同價，A每次增加4元、B增加7元。",
+      "solutionSteps": [
+        "20次後每多一次B多增加3元。",
+        "因此超過20次A較便宜。"
+      ],
+      "answer": "x>20選A。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只看基本費選方案。",
+      "why": "使用量大時單位費可能主導。",
+      "correction": "建立完整總費用式。"
+    },
+    {
+      "mistake": "只看單位費選方案。",
+      "why": "忽略固定費差。",
+      "correction": "先求同價點。"
+    },
+    {
+      "mistake": "兩方案使用不同未知數。",
+      "why": "無法比較同一用量。",
+      "correction": "兩式共用x。"
+    },
+    {
+      "mistake": "求到同價點後不判斷區間。",
+      "why": "題目常問更多或更少時。",
+      "correction": "代入交點旁測試值。"
+    },
+    {
+      "mistake": "平行費用式硬求交點。",
+      "why": "單位費相同導致未知數消去。",
+      "correction": "比較固定差。"
+    },
+    {
+      "mistake": "分數使用次數直接接受。",
+      "why": "次數可能需整數。",
+      "correction": "依題意判斷鄰近整數成本。"
+    }
+  ],
+  "selfCheck": [
+    "兩方案是否各自完整列式？",
+    "同一x是否代表同一用量？",
+    "同價方程式是否正確？",
+    "交點前後是否判斷？",
+    "用量範圍與整數性是否合理？"
+  ],
+  "summary": [
+    "總費用=基本費+單位費×用量。",
+    "同價點由兩式相等求得。",
+    "交點前後比較增幅。",
+    "相同單位費時差額固定。"
+  ],
+  "connections": {
+    "previous": "需要會解兩邊含未知數的一元一次方程式並檢查合理性。",
+    "next": [
+      "綜合素養題會把方案比較與預算、用量限制結合。",
+      "最終總審查會檢查方案情境是否真正影響解題。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s014-v001",
+      "u03-s014-v002",
+      "u03-s014-v003",
+      "u03-s014-v004",
+      "u03-s014-v005",
+      "u03-s014-v006",
+      "u03-s014-v007",
+      "u03-s014-v008",
+      "u03-s014-v009",
+      "u03-s014-v010",
+      "u03-s014-v011",
+      "u03-s014-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s014-cr001",
+      "u03-s014-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例代回核對：A(30)=B(30)=300、平行方案差40、50×6=300、交點後B每次比A多增3元；並檢查用量非負。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "065e115ed3c281b1978a1dd6be851f10ba035d06e32d5dbf1c57f81846cdbee1",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

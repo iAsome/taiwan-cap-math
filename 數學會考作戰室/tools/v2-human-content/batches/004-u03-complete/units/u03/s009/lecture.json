@@ -1,0 +1,245 @@
+{
+  "lectureId": "u03-s009-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-apps",
+  "skillId": "linear-equation-money-problem",
+  "title": "金錢問題：從固定費與單價建立總金額關係",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能用單價乘數量表示變動費。",
+    "能區分固定費與逐件費。",
+    "能處理付款、找零、折扣與預算餘額。",
+    "能檢查金額與數量的單位及整數限制。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-age-problem",
+      "requiredLevel": "能處理年齡差、倍數與同一時間點，並判斷解的合理性。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "單價",
+      "definition": "一個單位商品的價格。"
+    },
+    {
+      "term": "固定費",
+      "definition": "不隨購買數量改變、只收一次的費用。"
+    },
+    {
+      "term": "變動費",
+      "definition": "隨數量增加，通常為單價乘數量。"
+    },
+    {
+      "term": "找零",
+      "definition": "付款金額減去實際商品總價。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "px+f",
+      "meaning": "單價p乘數量x，再加固定費f。"
+    },
+    {
+      "symbol": "B-C",
+      "meaning": "預算B扣除支出C後的餘額。"
+    }
+  ],
+  "conceptNarrative": [
+    "金錢方程式先判斷哪些費用每件都發生、哪些只收一次。",
+    "付款與找零題中，實付商品總價=付款-找零。",
+    "折扣題要先確認折數作用於原價還是某一部分。",
+    "數量通常需為非負整數，金額則依最小貨幣單位可為小數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "總價",
+      "statement": "總價=單價×數量+固定費。"
+    },
+    {
+      "name": "實付金額",
+      "statement": "實付=付款-找零。"
+    },
+    {
+      "name": "折後價",
+      "statement": "折後價=原價×折數。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "px+f=T",
+      "conditions": [
+        "p為單價、f只收一次"
+      ],
+      "meaning": "固定費加按量計費。"
+    },
+    {
+      "formula": "P-R=px",
+      "conditions": [
+        "P為付款、R為找零"
+      ],
+      "meaning": "找零型購物。"
+    }
+  ],
+  "nonApplicableCases": [
+    "固定費不能乘購買數量。",
+    "每件折價要乘件數，整筆折價只扣一次。",
+    "硬幣或票數需為整數。",
+    "不能把淨收入當成總營收。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出單價、數量、固定費與總額。",
+      "check": "每一筆費用作用幾次？"
+    },
+    {
+      "step": 2,
+      "instruction": "用px表示同價商品總費。",
+      "check": "數量是否為未知數？"
+    },
+    {
+      "step": 3,
+      "instruction": "加入或扣除固定金額。",
+      "check": "是費用、折價、找零還是餘額？"
+    },
+    {
+      "step": 4,
+      "instruction": "解方程式。",
+      "check": "金額單位是否一致？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回並檢查數量限制。",
+      "check": "票數、硬幣數是否為整數？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "6支筆另加12元包裝，共132元。",
+      "solutionSteps": [
+        "列6x+12=132。",
+        "6x=120。",
+        "x=20。"
+      ],
+      "answer": "每支20元。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "付1000元買5件商品，找回175元。",
+      "solutionSteps": [
+        "商品總價825元。",
+        "5x=825。",
+        "x=165。"
+      ],
+      "answer": "每件165元。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "商品七五折後900元。",
+      "solutionSteps": [
+        "0.75x=900。",
+        "x=1200。"
+      ],
+      "answer": "原價1200元。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "10枚硬幣中x枚20元，其餘5元，總值95元。",
+      "solutionSteps": [
+        "20x+5(10-x)=95。",
+        "15x=45。",
+        "x=3。"
+      ],
+      "answer": "20元硬幣3枚。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "固定費也乘數量。",
+      "why": "未分清費用層級。",
+      "correction": "固定費只加一次。"
+    },
+    {
+      "mistake": "找零加到付款上。",
+      "why": "方向顛倒。",
+      "correction": "商品價=付款-找零。"
+    },
+    {
+      "mistake": "每件折價只扣一次。",
+      "why": "忽略件數。",
+      "correction": "每件價差乘件數。"
+    },
+    {
+      "mistake": "折後價再乘折數。",
+      "why": "把求原價方向做反。",
+      "correction": "原價=折後價÷折數。"
+    },
+    {
+      "mistake": "票數解為小數仍接受。",
+      "why": "未檢查離散量。",
+      "correction": "確認必須為非負整數。"
+    },
+    {
+      "mistake": "淨收入與營收混用。",
+      "why": "漏加回支出。",
+      "correction": "淨收入=營收-支出。"
+    }
+  ],
+  "selfCheck": [
+    "固定費是否只收一次？",
+    "單價是否乘正確數量？",
+    "找零與折價方向是否正確？",
+    "金額單位是否一致？",
+    "數量解是否符合整數條件？"
+  ],
+  "summary": [
+    "總價由固定費與變動費組成。",
+    "付款減找零得到商品價。",
+    "折數作用方向要明確。",
+    "解後檢查貨幣與數量限制。"
+  ],
+  "connections": {
+    "previous": "需要會列一元一次方程式並處理百分率。",
+    "next": [
+      "行程問題把單價×數量換成速率×時間。",
+      "方案比較會同時建立兩個費用式。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s009-v001",
+      "u03-s009-v002",
+      "u03-s009-v003",
+      "u03-s009-v004",
+      "u03-s009-v005",
+      "u03-s009-v006",
+      "u03-s009-v007",
+      "u03-s009-v008",
+      "u03-s009-v009",
+      "u03-s009-v010",
+      "u03-s009-v011",
+      "u03-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s009-cr001",
+      "u03-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例逐項驗算：6×20+12=132、1000-175=5×165、0.75×1200=900、3×20+7×5=95；並核對固定費、找零與硬幣整數性。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "10240405f1a6bab989af85a86b0af9f3acad16bfbdc40bb98d6c582fbee7f695",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

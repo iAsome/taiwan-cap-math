@@ -1,0 +1,240 @@
+{
+  "lectureId": "u03-s011-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-apps",
+  "skillId": "linear-equation-distribution-problem",
+  "title": "分配問題：總量等於每份量乘份數再加剩餘",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能區分總量、每份量、份數與剩餘量。",
+    "能處理完整組與不完整末組。",
+    "能判斷每份變化與整體變化的層級。",
+    "能檢查份數與件數的整數性。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-rate-problem",
+      "requiredLevel": "能使用距離＝速率×時間，並處理分段與相對速率。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "總量",
+      "definition": "分配前全部物品或人數。"
+    },
+    {
+      "term": "每份量",
+      "definition": "每一組、每箱或每人分到的數量。"
+    },
+    {
+      "term": "份數",
+      "definition": "組、箱、袋或人的數目。"
+    },
+    {
+      "term": "剩餘量",
+      "definition": "完成整份分配後未被分入的部分。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "T=qx+r",
+      "meaning": "總量T=每份量q×份數x+剩餘r。"
+    },
+    {
+      "symbol": "x-1",
+      "meaning": "若最後一組不完整，完整組數可能是總組數減1。"
+    }
+  ],
+  "conceptNarrative": [
+    "分配題的核心結構是每份量×份數。",
+    "若有剩餘，要先判斷剩餘是在分配後留下，還是事先保留。",
+    "最後一組不完整時，不能把所有組都當成相同大小。",
+    "箱數、組數與人數通常必須是非負整數。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "整除分配",
+      "statement": "沒有剩餘時T=qx。"
+    },
+    {
+      "name": "有餘分配",
+      "statement": "有剩餘r時T=qx+r，且通常0≤r<q。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "T=qx+r",
+      "conditions": [
+        "q>0",
+        "份數x通常為非負整數"
+      ],
+      "meaning": "一般分配模型。"
+    },
+    {
+      "formula": "q(x-1)+s=T",
+      "conditions": [
+        "最後一組有s個且0<s<q"
+      ],
+      "meaning": "不完整末組。"
+    }
+  ],
+  "nonApplicableCases": [
+    "剩餘量不可大於或等於每份量而仍稱為最終餘數。",
+    "題目若要求完整箱數，不能接受小數解。",
+    "每箱都增加的量要放在括號內。",
+    "整批額外量只加一次。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "標出總量、每份量、份數、剩餘。",
+      "check": "未知數是哪一項？"
+    },
+    {
+      "step": 2,
+      "instruction": "判斷所有份是否完整。",
+      "check": "最後一組是否例外？"
+    },
+    {
+      "step": 3,
+      "instruction": "建立T=qx+r或變形。",
+      "check": "剩餘方向是加回總量嗎？"
+    },
+    {
+      "step": 4,
+      "instruction": "解方程式。",
+      "check": "是否得到整數份數？"
+    },
+    {
+      "step": 5,
+      "instruction": "乘回並加剩餘驗算。",
+      "check": "是否重建原總量？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "84顆球每袋7顆，可裝幾袋？",
+      "solutionSteps": [
+        "7x=84。",
+        "x=12。"
+      ],
+      "answer": "12袋。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "每盒9個，裝5盒後剩4個。",
+      "solutionSteps": [
+        "總量=9×5+4。",
+        "等於49。"
+      ],
+      "answer": "49個。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "總共61人，除最後一組5人外，其餘每組8人。",
+      "solutionSteps": [
+        "8(x-1)+5=61。",
+        "8x=64。",
+        "x=8。"
+      ],
+      "answer": "8組。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "10箱每箱原有x瓶，每箱取出2瓶後剩80瓶。",
+      "solutionSteps": [
+        "10(x-2)=80。",
+        "x=10。"
+      ],
+      "answer": "每箱原有10瓶。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "總量除每份量後忽略剩餘。",
+      "why": "把有餘分配當整除。",
+      "correction": "先扣或加回剩餘。"
+    },
+    {
+      "mistake": "把剩餘從原總量再加一次。",
+      "why": "方向判斷錯。",
+      "correction": "總量=已分+剩餘。"
+    },
+    {
+      "mistake": "最後不完整組也乘完整每組量。",
+      "why": "未區分x-1。",
+      "correction": "完整組數另列。"
+    },
+    {
+      "mistake": "每箱減2寫成10x-2。",
+      "why": "把每份變化當整體一次。",
+      "correction": "寫10(x-2)。"
+    },
+    {
+      "mistake": "箱數解為小數仍接受。",
+      "why": "未檢查離散量。",
+      "correction": "確認完整箱數需整數。"
+    },
+    {
+      "mistake": "餘數大於每份量。",
+      "why": "尚可再組成完整一份。",
+      "correction": "檢查0≤r<q。"
+    }
+  ],
+  "selfCheck": [
+    "四個角色是否分清？",
+    "最後一組是否完整？",
+    "剩餘量方向是否正確？",
+    "每份變化放在括號內嗎？",
+    "份數解是否為非負整數？"
+  ],
+  "summary": [
+    "總量=每份量×份數+剩餘。",
+    "末組例外要用x-1。",
+    "每份與整體變化不可混淆。",
+    "離散份數需檢查整數性。"
+  ],
+  "connections": {
+    "previous": "需要能處理括號方程式與行程題中的分段層級。",
+    "next": [
+      "連續整數問題會把多個相鄰數表示成同一未知數的變形。",
+      "合理性檢查會判斷箱數與人數是否可接受。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s011-v001",
+      "u03-s011-v002",
+      "u03-s011-v003",
+      "u03-s011-v004",
+      "u03-s011-v005",
+      "u03-s011-v006",
+      "u03-s011-v007",
+      "u03-s011-v008",
+      "u03-s011-v009",
+      "u03-s011-v010",
+      "u03-s011-v011",
+      "u03-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s011-cr001",
+      "u03-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例乘回驗證：7×12=84、9×5+4=49、8×7+5=61、10×(10-2)=80；並核對餘數小於每份量及份數皆為整數。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "69cd1708c46d76d85f69d304e2ddd353bfa6fb7777e4215ad515fc33040b4561",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

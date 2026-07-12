@@ -1,0 +1,227 @@
+{
+  "lectureId": "u03-s001-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-expression",
+  "skillId": "linear-expression-substitution",
+  "title": "文字式與代入求值：把未知數換成指定數值後精確計算",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能分辨係數、未知數與常數。",
+    "能將正數、負數、分數與小數代入文字式。",
+    "能在代入後按照括號、乘除、加減的順序計算。",
+    "能檢查未知數的單位是否與公式定義一致。"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    {
+      "term": "文字式",
+      "definition": "含有數字、運算符號與未知數的式子。"
+    },
+    {
+      "term": "代入",
+      "definition": "用指定數值取代文字式中的未知數。"
+    },
+    {
+      "term": "係數",
+      "definition": "與未知數相乘的數。"
+    },
+    {
+      "term": "常數項",
+      "definition": "不含未知數的項。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "3x",
+      "meaning": "3乘以x，不是3加x。"
+    },
+    {
+      "symbol": "f(x)",
+      "meaning": "若題目使用函數記號，表示把x代入指定規則；本節只作直接代入。"
+    }
+  ],
+  "conceptNarrative": [
+    "文字式像一台計算機：先把每個未知數換成題目給的數，再依原來運算順序計算。",
+    "負數代入時一定加括號，例如x=-2時，3x要寫成3(-2)。",
+    "有多個未知數時要逐一對應，不能把m的值代到n。",
+    "情境公式常替未知數指定單位，代入前先換算成同一單位。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "代入求值",
+      "statement": "若文字式E含未知數x，且x=a，則用a取代E中每一個x後計算。"
+    },
+    {
+      "name": "係數乘法",
+      "statement": "ax表示a×x。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "E(x)=原式中的每個x以指定值取代",
+      "conditions": [
+        "所有未知數都有指定值",
+        "代入後保留括號與原運算順序"
+      ],
+      "meaning": "代入求值的一般規則。"
+    }
+  ],
+  "nonApplicableCases": [
+    "未知數尚未給值時，不能把文字式算成單一數字。",
+    "同一未知數在式中出現多次時，每一處都要代入。",
+    "未知數單位與公式不一致時，要先換算。",
+    "代入值若使題目另有分母為0情況，該值不可使用。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出所有未知數與其指定值。",
+      "check": "是否有兩個以上未知數？"
+    },
+    {
+      "step": 2,
+      "instruction": "用括號代入每一處未知數。",
+      "check": "負數與分數是否加括號？"
+    },
+    {
+      "step": 3,
+      "instruction": "按括號、乘除、加減順序計算。",
+      "check": "係數是否真的相乘？"
+    },
+    {
+      "step": 4,
+      "instruction": "帶回單位或情境名稱。",
+      "check": "公式中的單位是否一致？"
+    },
+    {
+      "step": 5,
+      "instruction": "用估算檢查正負與大小。",
+      "check": "答案量級是否合理？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "若x=-5，求2x+9。",
+      "solutionSteps": [
+        "代入得2(-5)+9。",
+        "-10+9=-1。"
+      ],
+      "answer": "-1。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "若a=3、b=-4，求2a-b。",
+      "solutionSteps": [
+        "代入2(3)-(-4)。",
+        "6+4=10。"
+      ],
+      "answer": "10。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "若t=3/4，求8t-5。",
+      "solutionSteps": [
+        "8×3/4=6。",
+        "6-5=1。"
+      ],
+      "answer": "1。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "某模型C=25+1.8h，h以小時計；h=2.5時求C。",
+      "solutionSteps": [
+        "確認h已是小時。",
+        "C=25+1.8×2.5=29.5。"
+      ],
+      "answer": "29.5。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "把4x看成4+x。",
+      "why": "未理解省略乘號的記法。",
+      "correction": "先改寫成4×x。"
+    },
+    {
+      "mistake": "負數代入不加括號。",
+      "why": "原式的減號與數值負號混在一起。",
+      "correction": "一律寫成係數×(負數)。"
+    },
+    {
+      "mistake": "只代入未知數第一次出現的位置。",
+      "why": "忽略同一未知數可重複出現。",
+      "correction": "逐項掃描整個式子。"
+    },
+    {
+      "mistake": "先把原式任意合併。",
+      "why": "把不同類項誤合併。",
+      "correction": "可先化簡，但只能合法合併同類項。"
+    },
+    {
+      "mistake": "分數代入後分子分母各自相加。",
+      "why": "忘記分數運算規則。",
+      "correction": "先乘除約分，再通分加減。"
+    },
+    {
+      "mistake": "忽略公式對未知數單位的定義。",
+      "why": "把公尺直接代入以百公尺為單位的變數。",
+      "correction": "代入前先做單位換算。"
+    }
+  ],
+  "selfCheck": [
+    "所有未知數是否都已代入？",
+    "負數是否保留括號？",
+    "乘除是否先於加減？",
+    "單位是否符合公式定義？",
+    "估算結果的正負與量級是否合理？"
+  ],
+  "summary": [
+    "代入是用數值替換未知數。",
+    "係數與未知數之間是乘法。",
+    "負數與分數代入要加括號。",
+    "情境公式需先核對單位。"
+  ],
+  "connections": {
+    "previous": "承接U01整數與U02分數運算，開始把數值放入代數式。",
+    "next": [
+      "下一節將不指定未知數值，而是合併同類項化簡文字式。",
+      "方程式求解會反過來由式子求未知數。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s001-v001",
+      "u03-s001-v002",
+      "u03-s001-v003",
+      "u03-s001-v004",
+      "u03-s001-v005",
+      "u03-s001-v006",
+      "u03-s001-v007",
+      "u03-s001-v008",
+      "u03-s001-v009",
+      "u03-s001-v010",
+      "u03-s001-v011",
+      "u03-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s001-cr001",
+      "u03-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐一重算四個例題：2(-5)+9=-1、2(3)-(-4)=10、8×3/4-5=1、25+1.8×2.5=29.5；並核對負數括號、分數約分及小時單位，未使用後續方程式技巧。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "81f2bb9d0b6b37cb0399b7b28ac29ba9dd50ad50124d80c010bc3453325f1a2d",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

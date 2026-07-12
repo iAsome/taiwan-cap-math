@@ -1,0 +1,1150 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+// CONTENT AUTHORITY: CHATGPT_HUMAN_AUTHORED_R1
+// OLD GENERATED CONTENT MUST NOT BE IMPORTED OR MERGED.
+export const LECTURE = {
+  "lectureId": "u03-s013-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-reasoning",
+  "skillId": "linear-equation-reasonableness",
+  "title": "解的合理性檢查：代數正確後仍要通過情境限制",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能區分代數解與情境可接受解。",
+    "能檢查正負、整數、範圍與單位。",
+    "能判斷是否允許小數與四捨五入。",
+    "能指出不合理結果應回查模型而非自行修改。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-consecutive-integers",
+      "requiredLevel": "能用一個未知數表示連續整數、偶數或奇數並列式。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "允許範圍",
+      "definition": "未知數依題目情境可以採用的數值範圍。"
+    },
+    {
+      "term": "離散量",
+      "definition": "只能以完整個數計算的量，如人數、票數、箱數。"
+    },
+    {
+      "term": "連續量",
+      "definition": "可取小數的量，如長度、時間、重量。"
+    },
+    {
+      "term": "情境解",
+      "definition": "既滿足方程式又符合題目限制的解。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x為整數",
+      "meaning": "未知數只能是完整個數，不能使用小數。"
+    },
+    {
+      "symbol": "x>0",
+      "meaning": "未知數必須為正值。"
+    }
+  ],
+  "conceptNarrative": [
+    "解出 x 只是第一層代數檢查，還必須回到題目情境判斷能否接受。",
+    "人數、座位與箱數通常需非負整數；長度、重量與時間可依精度取小數。",
+    "負長度、負人數或超過容量的結果，即使代數步驟正確也不合理。",
+    "不合理時應回查列式、資料或題目是否無可行解，不能直接取絕對值或四捨五入。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "可接受解",
+      "statement": "同時滿足方程式與所有情境限制。"
+    },
+    {
+      "name": "不可接受解",
+      "statement": "雖可能滿足代數式，但違反正值、整數、範圍、容量或精度條件。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "代數驗算+定義域檢查=情境驗收",
+      "conditions": [
+        "題幹限制完整列出"
+      ],
+      "meaning": "合理性檢查流程。"
+    }
+  ],
+  "nonApplicableCases": [
+    "題目沒有指定近似時不可自行四捨五入。",
+    "百分率可超過100%，但特定容量情境可能不允許。",
+    "0是否可接受取決於量的意義。",
+    "年齡是否可用小數取決於題目是實際年齡或完整歲數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先代回原方程式。",
+      "check": "代數上是否成立？"
+    },
+    {
+      "step": 2,
+      "instruction": "辨認未知數屬於離散量或連續量。",
+      "check": "是否必須整數？"
+    },
+    {
+      "step": 3,
+      "instruction": "檢查正負與範圍。",
+      "check": "是否超過容量或低於0？"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查單位與精度。",
+      "check": "小數是否可被量測？"
+    },
+    {
+      "step": 5,
+      "instruction": "若不合理，回查模型。",
+      "check": "是否有人為取整或改符號？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "每組人數解為-2。",
+      "solutionSteps": [
+        "人數不可為負。",
+        "判定不可接受。"
+      ],
+      "answer": "回查列式。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "布長解為3.25公尺，尺可量到0.01公尺。",
+      "solutionSteps": [
+        "為正連續量。",
+        "精度足夠。"
+      ],
+      "answer": "合理。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "巴士數解為4.6台。",
+      "solutionSteps": [
+        "完整巴士數需整數。",
+        "未指定向上取整。"
+      ],
+      "answer": "不可直接接受。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "容納率為110%，且規定不得超載。",
+      "solutionSteps": [
+        "110%超過100%。",
+        "違反限制。"
+      ],
+      "answer": "不合理。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "代回正確就直接接受。",
+      "why": "忽略情境限制。",
+      "correction": "再檢查單位與範圍。"
+    },
+    {
+      "mistake": "負數取絕對值。",
+      "why": "改變原方程式解。",
+      "correction": "判定模型不合或重查。"
+    },
+    {
+      "mistake": "小數箱數直接向上取整。",
+      "why": "題目未授權取整。",
+      "correction": "保留不可接受判定。"
+    },
+    {
+      "mistake": "所有小數都否定。",
+      "why": "重量與時間可為小數。",
+      "correction": "依量型與精度判斷。"
+    },
+    {
+      "mistake": "百分率超過100%一律錯。",
+      "why": "增加率可超過100%。",
+      "correction": "看情境是否有上限。"
+    },
+    {
+      "mistake": "忽略題目額外條件。",
+      "why": "只看方程式。",
+      "correction": "將x>0等限制列成檢查表。"
+    }
+  ],
+  "selfCheck": [
+    "代數上是否成立？",
+    "未知數是離散量還是連續量？",
+    "是否需要正值或整數？",
+    "是否有容量與範圍限制？",
+    "是否有明確近似規則？"
+  ],
+  "summary": [
+    "方程式解不一定是情境答案。",
+    "離散量常需整數。",
+    "連續量可依精度用小數。",
+    "不合理時不可任意修改解。"
+  ],
+  "connections": {
+    "previous": "需要會驗算方程式並理解各類應用量的單位。",
+    "next": [
+      "方案比較要檢查交點是否位於可用範圍。",
+      "綜合素養題會同時檢查模型與情境。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s013-v001",
+      "u03-s013-v002",
+      "u03-s013-v003",
+      "u03-s013-v004",
+      "u03-s013-v005",
+      "u03-s013-v006",
+      "u03-s013-v007",
+      "u03-s013-v008",
+      "u03-s013-v009",
+      "u03-s013-v010",
+      "u03-s013-v011",
+      "u03-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s013-cr001",
+      "u03-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例分別檢查負人數、量測精度、小數巴士與容量上限；確認判定依據來自題幹，而非一律接受或拒絕小數。 並移除非必要集合符號，改以國中生可直接理解的整數與正值文字表示。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "036ea1f7e1a4e046a1f8784378c3293f7ce2b38fef69fc2e105fcbf915ec4401",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u03-s013-v001",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某分組方程式解得每組－4人。此結果如何判斷？",
+    "choices": [
+      "不合理，人數不能為負",
+      "合理，負號表示少4人",
+      "合理，方程式有解即可",
+      "不合理，應直接改成4人"
+    ],
+    "answerIndex": 0,
+    "explanation": "辨認未知數代表人數；人數不可為負；回頭檢查模型而非改答案。所以答案是「不合理，人數不能為負」。",
+    "steps": [
+      "辨認未知數代表人數",
+      "人數不可為負",
+      "回頭檢查模型而非改答案"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "不合理，人數不能為負",
+        "truth": true,
+        "reason": "人數必須是非負整數；-4不符合情境，所以原列式或資料需重新檢查，不能自行改正號。 因此此選項符合題目。"
+      },
+      {
+        "choice": "合理，負號表示少4人",
+        "truth": false,
+        "reason": "負號不是「少」的標記。"
+      },
+      {
+        "choice": "合理，方程式有解即可",
+        "truth": false,
+        "reason": "代數有解不代表情境可接受。"
+      },
+      {
+        "choice": "不合理，應直接改成4人",
+        "truth": false,
+        "reason": "不能未經重算就把-4改成4。"
+      }
+    ],
+    "commonMistake": "只看代數步驟不看未知數意義。",
+    "concept": "情境限制是解的一部分。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "檢查解是否符合數量範圍。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "c9e7864bb9d87ea12871a5b8a1ed00683d2c8e69c44bbdd7a2e12915081834ed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v002",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "題目問完整學年數，方程式解得 x＝13.5。下列判斷何者正確？",
+    "choices": [
+      "一定合理，年齡都可有小數",
+      "若以已完成整年計，13.5 不符合整數條件",
+      "一定應四捨五入成14",
+      "直接捨去成13即可"
+    ],
+    "answerIndex": 1,
+    "explanation": "確認題目要求完整整年；13.5非整數；不應任意四捨五入。所以答案是「若以已完成整年計，13.5 不符合整數條件」。",
+    "steps": [
+      "確認題目要求完整整年",
+      "13.5非整數",
+      "不應任意四捨五入"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "一定合理，年齡都可有小數",
+        "truth": false,
+        "reason": "忽略題幹的完整年限制。"
+      },
+      {
+        "choice": "若以已完成整年計，13.5 不符合整數條件",
+        "truth": true,
+        "reason": "題幹若要求完整學年數，答案需為整數；13.5表示模型或資料與題意不相容，不能自行取整。 因此此選項符合題目。"
+      },
+      {
+        "choice": "一定應四捨五入成14",
+        "truth": false,
+        "reason": "四捨五入會改變方程式。"
+      },
+      {
+        "choice": "直接捨去成13即可",
+        "truth": false,
+        "reason": "無條件捨去也不是解。"
+      }
+    ],
+    "commonMistake": "看到年數就一律接受小數。",
+    "concept": "是否能用小數取決於量的定義。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "辨認整數限制。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "76a5d5f34cf55dafa05557d54689f3600f66a4cd9f3d23aa477df6abf993b6e0",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v003",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "每箱需裝相同且完整的瓶數。方程式解得箱數 x＝7.2。下列處理何者正確？",
+    "choices": [
+      "直接回答7.2箱",
+      "無條件四捨五入成7箱",
+      "7.2 不是可接受箱數，應檢查題意或模型",
+      "一定改成8箱"
+    ],
+    "answerIndex": 2,
+    "explanation": "未知數代表完整箱數；必須為整數；重新檢查資料或列式。所以答案是「7.2 不是可接受箱數，應檢查題意或模型」。",
+    "steps": [
+      "未知數代表完整箱數",
+      "必須為整數",
+      "重新檢查資料或列式"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "直接回答7.2箱",
+        "truth": false,
+        "reason": "完整箱不可為0.2箱。"
+      },
+      {
+        "choice": "無條件四捨五入成7箱",
+        "truth": false,
+        "reason": "7箱不滿足原方程式。"
+      },
+      {
+        "choice": "7.2 不是可接受箱數，應檢查題意或模型",
+        "truth": true,
+        "reason": "完整箱數必須是整數；7.2不是原方程式在情境中的合法解，不能隨意取整。 因此此選項符合題目。"
+      },
+      {
+        "choice": "一定改成8箱",
+        "truth": false,
+        "reason": "8箱也不一定滿足原方程式。"
+      }
+    ],
+    "commonMistake": "遇到小數箱數就自動向上取整。",
+    "concept": "取整規則必須由題意另行指定。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "檢查離散數量的整數性。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "961d66598951a337150a9d9c965eaa32bcdcd33a266221559dc53d854a6685e4",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v004",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "長方形邊長方程式解得 x＝－3 公分。此結果代表什麼？",
+    "choices": [
+      "合理，表示方向相反",
+      "合理，取絕對值3公分即可",
+      "應把所有負號刪除",
+      "不合理，長度不可為負"
+    ],
+    "answerIndex": 3,
+    "explanation": "未知數代表長度；長度需為正；拒絕-3並檢查列式。所以答案是「不合理，長度不可為負」。",
+    "steps": [
+      "未知數代表長度",
+      "長度需為正",
+      "拒絕-3並檢查列式"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "合理，表示方向相反",
+        "truth": false,
+        "reason": "邊長沒有方向正負。"
+      },
+      {
+        "choice": "合理，取絕對值3公分即可",
+        "truth": false,
+        "reason": "取絕對值不再是原方程式的解。"
+      },
+      {
+        "choice": "應把所有負號刪除",
+        "truth": false,
+        "reason": "刪負號沒有數學依據。"
+      },
+      {
+        "choice": "不合理，長度不可為負",
+        "truth": true,
+        "reason": "幾何長度必須大於0；-3不屬於可接受範圍，表示模型或條件需重查。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "把負長度自行改成正長度。",
+    "concept": "代數解還要落在情境定義域。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "檢查幾何量正值條件。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "eb8fc0fefbb97e2086aa64e3e514fafb70c2d2a2207798bd1cda32c683af9f7b",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v005",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某人走了正距離，但模型解得速率 x＝0 公里/時。判斷為何？",
+    "choices": [
+      "合理，0表示慢速",
+      "不合理，正距離在有限時間內速率不能為0",
+      "合理，只要時間夠長",
+      "應改成1公里/時"
+    ],
+    "answerIndex": 1,
+    "explanation": "核對距離為正；速率0使距離為0；判定模型不合理。所以答案是「不合理，正距離在有限時間內速率不能為0」。",
+    "steps": [
+      "核對距離為正",
+      "速率0使距離為0",
+      "判定模型不合理"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "合理，0表示慢速",
+        "truth": false,
+        "reason": "0不是慢速而是靜止。"
+      },
+      {
+        "choice": "不合理，正距離在有限時間內速率不能為0",
+        "truth": true,
+        "reason": "若距離為正且時間有限，速率0無法完成路程，因此解與情境衝突。 因此此選項符合題目。"
+      },
+      {
+        "choice": "合理，只要時間夠長",
+        "truth": false,
+        "reason": "再長的有限時間乘0仍為0。"
+      },
+      {
+        "choice": "應改成1公里/時",
+        "truth": false,
+        "reason": "不能任意改為1。"
+      }
+    ],
+    "commonMistake": "只看速率非負就接受0。",
+    "concept": "d=vt必須同時成立。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "檢查速率與路程的一致性。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "bdb244dcd283e69229781fdfab5ecd83c4828f53dd4de6ce29d90267cd32847d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v006",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "購物單價方程式解得 x＝42.5 元。若店家允許以 0.5 元為單位定價，此解是否合理？",
+    "choices": [
+      "不合理，金額一定是整數",
+      "不合理，必須四捨五入成43",
+      "合理",
+      "合理，但只能寫42元"
+    ],
+    "answerIndex": 2,
+    "explanation": "檢查允許的最小貨幣單位；42.5是0.5的整數倍；判定合理。所以答案是「合理」。",
+    "steps": [
+      "檢查允許的最小貨幣單位",
+      "42.5是0.5的整數倍",
+      "判定合理"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "不合理，金額一定是整數",
+        "truth": false,
+        "reason": "金額不一定只能整數元。"
+      },
+      {
+        "choice": "不合理，必須四捨五入成43",
+        "truth": false,
+        "reason": "無需改變精確解。"
+      },
+      {
+        "choice": "合理",
+        "truth": true,
+        "reason": "題幹允許0.5元為計價單位，42.5正好符合，所以可接受。 因此此選項符合題目。"
+      },
+      {
+        "choice": "合理，但只能寫42元",
+        "truth": false,
+        "reason": "少寫0.5會不符合方程式。"
+      }
+    ],
+    "commonMistake": "看到小數金額就否定。",
+    "concept": "可接受範圍由題幹定義。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "依計價單位判斷小數金額。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "074b0cb75a82d43597d52e5aef18b67667d6ce7d398e14d2d3512bf6fe98f213",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v007",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "票數方程式解得 x＝12，且代回總價完全相符。此結果如何？",
+    "choices": [
+      "不合理，票數不能超過10",
+      "不合理，所有票數都要偶數",
+      "只要代回正確就不必看單位",
+      "合理，12 是非負整數且通過驗算"
+    ],
+    "answerIndex": 3,
+    "explanation": "檢查整數與非負；代回原式；兩項都通過。所以答案是「合理，12 是非負整數且通過驗算」。",
+    "steps": [
+      "檢查整數與非負",
+      "代回原式",
+      "兩項都通過"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "不合理，票數不能超過10",
+        "truth": false,
+        "reason": "題目未限制最多10張。"
+      },
+      {
+        "choice": "不合理，所有票數都要偶數",
+        "truth": false,
+        "reason": "票數不必為偶數。"
+      },
+      {
+        "choice": "只要代回正確就不必看單位",
+        "truth": false,
+        "reason": "仍需檢查情境條件。"
+      },
+      {
+        "choice": "合理，12 是非負整數且通過驗算",
+        "truth": true,
+        "reason": "12符合票數需為非負整數，也使原方程式成立，因此合理。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "只看代回或只看單位其中一項。",
+    "concept": "合理解需通過所有限制。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "同時檢查代數與情境。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "74f1e3af8046c7d58eb0ece47b4ff7be5be321e08767fbba87fcbd6fbc8c4dcf",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v008",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "方程式解得 x＝5，但題目明定 x＞8。此解如何判斷？",
+    "choices": [
+      "不是題目可接受的解",
+      "仍是解，因為方程式算出5",
+      "將5改成9即可",
+      "把條件x＞8刪除"
+    ],
+    "answerIndex": 0,
+    "explanation": "分開檢查方程式與限制；5不大於8；排除該解。所以答案是「不是題目可接受的解」。",
+    "steps": [
+      "分開檢查方程式與限制",
+      "5不大於8",
+      "排除該解"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "不是題目可接受的解",
+        "truth": true,
+        "reason": "雖然5可能滿足方程式，但不滿足題目額外條件x>8，所以不能作為情境答案。 因此此選項符合題目。"
+      },
+      {
+        "choice": "仍是解，因為方程式算出5",
+        "truth": false,
+        "reason": "忽略額外限制。"
+      },
+      {
+        "choice": "將5改成9即可",
+        "truth": false,
+        "reason": "9未必滿足原方程式。"
+      },
+      {
+        "choice": "把條件x＞8刪除",
+        "truth": false,
+        "reason": "條件不能任意刪除。"
+      }
+    ],
+    "commonMistake": "只驗算方程式。",
+    "concept": "額外條件與方程式同樣重要。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "檢查解是否落在指定範圍。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "853f27aec1005d55d4894eebedf0dcb667cf075d3e6757706d8d9ef26dab33be",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v009",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "食材計算得到需要 2.75 公斤，量秤可精確到 0.01 公斤。此結果是否合理？",
+    "choices": [
+      "不合理，重量必須整數",
+      "應改成3公斤",
+      "合理",
+      "應改成2.7公斤"
+    ],
+    "answerIndex": 2,
+    "explanation": "檢查重量為正；檢查量測精度；2.75可被精確表示。所以答案是「合理」。",
+    "steps": [
+      "檢查重量為正",
+      "檢查量測精度",
+      "2.75可被精確表示"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "不合理，重量必須整數",
+        "truth": false,
+        "reason": "重量可為小數。"
+      },
+      {
+        "choice": "應改成3公斤",
+        "truth": false,
+        "reason": "不能任意四捨五入。"
+      },
+      {
+        "choice": "合理",
+        "truth": true,
+        "reason": "2.75公斤為正，且量秤精度0.01公斤可表示此值，所以合理。 因此此選項符合題目。"
+      },
+      {
+        "choice": "應改成2.7公斤",
+        "truth": false,
+        "reason": "2.7會改變精確答案。"
+      }
+    ],
+    "commonMistake": "把所有數量都當離散整數。",
+    "concept": "重量通常允許小數。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "依連續量與精度判斷。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "e1c0f730e6a08d80a7998eb7cae90564800cd48af9c3a9d9d2c1097a5a7cf6fb",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v010",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "巴士座位數模型解得 x＝38.2 張。題目要求每台巴士相同且座位完整。此解如何？",
+    "choices": [
+      "合理，38.2可視為平均",
+      "直接向下取38",
+      "直接向上取39",
+      "不合理，座位數需為整數"
+    ],
+    "answerIndex": 3,
+    "explanation": "辨認座位為離散數量；38.2非整數；回查模型。所以答案是「不合理，座位數需為整數」。",
+    "steps": [
+      "辨認座位為離散數量",
+      "38.2非整數",
+      "回查模型"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "合理，38.2可視為平均",
+        "truth": false,
+        "reason": "題目不是平均座位數。"
+      },
+      {
+        "choice": "直接向下取38",
+        "truth": false,
+        "reason": "38不滿足原式。"
+      },
+      {
+        "choice": "直接向上取39",
+        "truth": false,
+        "reason": "39也未必滿足原式。"
+      },
+      {
+        "choice": "不合理，座位數需為整數",
+        "truth": true,
+        "reason": "單台完整座位數必須是整數；38.2不能直接作答，也不能未經題意授權取整。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "以平均概念掩蓋不合法解。",
+    "concept": "離散量不能用任意小數。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "檢查設備數量的整數條件。",
+    "literacyContextNecessity": "巴士與座位是不可分割的離散物件，情境直接決定答案必須是整數。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "bae6f6d0a468c749bbef5aea440d3c583b840d7ecef1fa8d84d8cd966b3e80d3",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v011",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "路程計算得到時間 1.5 小時，且題目允許以半小時計。此結果是否合理？",
+    "choices": [
+      "合理",
+      "不合理，時間必須整數",
+      "必須改成2小時",
+      "必須改成90小時"
+    ],
+    "answerIndex": 0,
+    "explanation": "換算1.5小時=90分鐘；符合半小時倍數；判定合理。所以答案是「合理」。",
+    "steps": [
+      "換算1.5小時=90分鐘",
+      "符合半小時倍數",
+      "判定合理"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "合理",
+        "truth": true,
+        "reason": "1.5小時等於1小時30分，符合允許的半小時計量，且為正值。 因此此選項符合題目。"
+      },
+      {
+        "choice": "不合理，時間必須整數",
+        "truth": false,
+        "reason": "時間可以是小數。"
+      },
+      {
+        "choice": "必須改成2小時",
+        "truth": false,
+        "reason": "不需向上取整。"
+      },
+      {
+        "choice": "必須改成90小時",
+        "truth": false,
+        "reason": "1.5小時不是90小時。"
+      }
+    ],
+    "commonMistake": "把1.5誤解成1小時5分。",
+    "concept": "小數時間可換成分鐘檢查。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "判斷時間小數與單位換算。",
+    "literacyContextNecessity": "題目允許半小時計量，這項精度條件決定1.5小時可以被接受。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "120f0d0161661cdd8edfe16b4bff781f85dca4a23e9243545c7cc23352a63635",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-v012",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "場館容量 200 人，模型解得入場人數為容量的 125%。若規定不得超載，判斷為何？",
+    "choices": [
+      "合理，百分率可超過100%",
+      "不合理，250人超過容量",
+      "合理，125%代表125人",
+      "不合理，但應改成200%"
+    ],
+    "answerIndex": 1,
+    "explanation": "把125%換成1.25；計算1.25×200=250；與容量200比較。所以答案是「不合理，250人超過容量」。",
+    "steps": [
+      "把125%換成1.25",
+      "計算1.25×200=250",
+      "與容量200比較"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "合理，百分率可超過100%",
+        "truth": false,
+        "reason": "百分率可超100但不代表符合容量限制。"
+      },
+      {
+        "choice": "不合理，250人超過容量",
+        "truth": true,
+        "reason": "125%×200=250人，超過規定容量200，因此在不得超載的條件下不合理。 因此此選項符合題目。"
+      },
+      {
+        "choice": "合理，125%代表125人",
+        "truth": false,
+        "reason": "125%不是125人。"
+      },
+      {
+        "choice": "不合理，但應改成200%",
+        "truth": false,
+        "reason": "改成200%更超載。"
+      }
+    ],
+    "commonMistake": "只判斷百分率形式是否存在。",
+    "concept": "數學上可計算不代表情境允許。",
+    "tags": [
+      "代數",
+      "解的合理性檢查",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-consecutive-integers"
+    ],
+    "authoringIntent": "整合百分率結果與容量上限。",
+    "literacyContextNecessity": "容量上限與不得超載規定決定125%是否可接受，若刪除限制，125%本身並非數學錯誤。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "6c988e49dd01dba7dbbeea0627c6c6303fbfde6ffa7130f633e6a127b1dbc857",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u03-s013-cr001",
+    "unitId": "u03",
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "某題求『每艘船可載的人數』，方程式解得 x＝24.5。題目又說每艘船座位固定且不可超載。請判斷此解能否直接採用，並說明下一步。",
+    "requiredWork": [
+      "指出人數與座位為整數。",
+      "說明不能任意四捨五入。",
+      "提出回查列式或判定無精確方案。"
+    ],
+    "fullCreditSolution": [
+      "24.5不能直接作為每艘船完整座位數。",
+      "若原方程式與資料無誤，表示不存在完全符合等分條件的整數方案。",
+      "應回查題目是否允許不同載客數或要求最少船數；未授權時不得改成24或25。"
+    ],
+    "alternativeSolutions": [
+      "可用代回說明24與25都不等於原方程式的精確解。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "完整說明整數限制、禁止任意取整與後續檢查。"
+      },
+      {
+        "score": 2,
+        "criteria": "判斷不可接受但理由或後續少一項。"
+      },
+      {
+        "score": 1,
+        "criteria": "指出24.5不是完整人數。"
+      },
+      {
+        "score": 0,
+        "criteria": "直接採用或任意取整且無依據。"
+      }
+    ],
+    "scoringNotes": [
+      "等價且完整的代數步驟可接受。",
+      "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
+    ],
+    "commonErrors": [
+      "直接向上取25。",
+      "看到代數成立就忽略座位整數性。"
+    ],
+    "independentReview": {
+      "derivedResult": "不可直接採用24.5",
+      "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
+      "decision": "pass"
+    },
+    "contentSha256": "d9a10e1bd2c3907cc7715f0005de3f44ba452b2232dce7e95714b89b0ad10b4e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s013-cr002",
+    "unitId": "u03",
+    "topicId": "u03-linear-equation-reasoning",
+    "skillId": "linear-equation-reasonableness",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "一個長方形的長為 x 公分、寬為 x－8 公分，面積資訊經錯誤建模後解得 x＝5。只根據邊長條件，說明此結果是否可接受。",
+    "requiredWork": [
+      "計算寬x-8。",
+      "檢查兩個邊長都必須為正。",
+      "說明不合理不等於改成絕對值。"
+    ],
+    "fullCreditSolution": [
+      "若x=5，寬為5-8=-3公分。",
+      "幾何邊長不可為負，因此x=5不是此情境的可接受解。",
+      "應回查建模或資料，不能把寬改成3公分。"
+    ],
+    "alternativeSolutions": [
+      "可用限制x>8直接排除x=5。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "計算寬、指出正值限制並說明回查模型。"
+      },
+      {
+        "score": 2,
+        "criteria": "判斷不合理但未明確計算寬或理由不足。"
+      },
+      {
+        "score": 1,
+        "criteria": "能指出x必須大於8。"
+      },
+      {
+        "score": 0,
+        "criteria": "接受負邊長或任意改值。"
+      }
+    ],
+    "scoringNotes": [
+      "等價且完整的代數步驟可接受。",
+      "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
+    ],
+    "commonErrors": [
+      "只檢查長為正。",
+      "把-3取絕對值。"
+    ],
+    "independentReview": {
+      "derivedResult": "不可接受，因寬為-3公分",
+      "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
+      "decision": "pass"
+    },
+    "contentSha256": "40386f2973b35e32b60663c8d048d423eaadf7339373b3e445102ad892e7f477",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  }
+];
+
+export const DRAWING_SPECS = [];

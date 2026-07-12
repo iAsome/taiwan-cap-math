@@ -1,0 +1,238 @@
+{
+  "lectureId": "u03-s012-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-apps",
+  "skillId": "linear-equation-consecutive-integers",
+  "title": "連續整數問題：用相鄰差表示整組數列",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能表示連續整數、偶數與奇數。",
+    "能用最小數或中間數建立方程式。",
+    "能處理負數範圍的連續數。",
+    "能檢查相鄰差、總和與奇偶性。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-distribution-problem",
+      "requiredLevel": "能把總量表示為每份量乘份數加上剩餘量。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "連續整數",
+      "definition": "依序相差1的整數。"
+    },
+    {
+      "term": "連續偶數",
+      "definition": "依序相差2且全部為偶數。"
+    },
+    {
+      "term": "連續奇數",
+      "definition": "依序相差2且全部為奇數。"
+    },
+    {
+      "term": "中間數",
+      "definition": "奇數個連續數排列正中央的數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x,x+1,x+2",
+      "meaning": "三個由小到大的連續整數。"
+    },
+    {
+      "symbol": "x-2,x,x+2",
+      "meaning": "以中間數x表示三個連續同奇偶數。"
+    }
+  ],
+  "conceptNarrative": [
+    "連續描述的是相鄰差，不是所有數都設成同一個x。",
+    "連續偶數與連續奇數的相鄰差都是2，不能誤寫成只差1。",
+    "奇數個對稱連續數的平均數等於中間數，可快速列式。",
+    "負數仍依數線由小到大每次加1或2。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "連續整數表示",
+      "statement": "由最小數x開始依序為x、x+1、x+2……。"
+    },
+    {
+      "name": "連續同奇偶數表示",
+      "statement": "由x開始依序為x、x+2、x+4……。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "x+(x+1)+(x+2)=S",
+      "conditions": [
+        "三個連續整數總和為S"
+      ],
+      "meaning": "最小數表示法。"
+    },
+    {
+      "formula": "3m=S",
+      "conditions": [
+        "三個對稱連續數的中間數為m"
+      ],
+      "meaning": "中間數表示法。"
+    }
+  ],
+  "nonApplicableCases": [
+    "連續奇數不能寫成相差1。",
+    "題目若要求整數，方程式結果非整數表示沒有符合條件的整數組。",
+    "跨月份日期題需確認題目允許。",
+    "負數排序不可只看絕對值。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "判斷是整數、偶數還是奇數。",
+      "check": "相鄰差是1還是2？"
+    },
+    {
+      "step": 2,
+      "instruction": "選最小數或中間數為x。",
+      "check": "哪種表示可抵消常數？"
+    },
+    {
+      "step": 3,
+      "instruction": "列出每個數。",
+      "check": "數量與順序完整嗎？"
+    },
+    {
+      "step": 4,
+      "instruction": "套用總和或其他關係。",
+      "check": "題目只用部分數還是全部？"
+    },
+    {
+      "step": 5,
+      "instruction": "驗查相鄰差、奇偶與總和。",
+      "check": "每個數都是整數嗎？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "三個連續整數和為72。",
+      "solutionSteps": [
+        "設中間數x。",
+        "3x=72，x=24。"
+      ],
+      "answer": "23、24、25。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "兩個連續奇數和為48。",
+      "solutionSteps": [
+        "設較小x，另一個x+2。",
+        "2x+2=48，x=23。"
+      ],
+      "answer": "23、25。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "五個連續整數平均為6。",
+      "solutionSteps": [
+        "中間數為6。",
+        "向兩側各取兩個。"
+      ],
+      "answer": "4、5、6、7、8。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "三個連續負偶數和為-30。",
+      "solutionSteps": [
+        "設中間數x，3x=-30。",
+        "x=-10。"
+      ],
+      "answer": "-12、-10、-8。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "三個連續數都設x。",
+      "why": "忽略相鄰差。",
+      "correction": "依序加1或2。"
+    },
+    {
+      "mistake": "連續奇數相差1。",
+      "why": "與連續整數混淆。",
+      "correction": "奇數間隔2。"
+    },
+    {
+      "mistake": "負數由絕對值小排到大。",
+      "why": "忽略數線方向。",
+      "correction": "由左到右每次加固定差。"
+    },
+    {
+      "mistake": "只求出x卻未回答整組數。",
+      "why": "忘記x代表最小或中間數。",
+      "correction": "回代列出全部。"
+    },
+    {
+      "mistake": "得到非整數仍列連續整數。",
+      "why": "未檢查整數性。",
+      "correction": "判定無符合組合或重查列式。"
+    },
+    {
+      "mistake": "總和條件漏加某一數。",
+      "why": "未先完整列數列。",
+      "correction": "逐項寫出再相加。"
+    }
+  ],
+  "selfCheck": [
+    "相鄰差是否正確？",
+    "x代表最小還是中間？",
+    "是否列出題目要求的全部數？",
+    "每個結果是否符合奇偶性？",
+    "總和與其他條件是否代回成立？"
+  ],
+  "summary": [
+    "連續整數相差1。",
+    "連續偶數或奇數相差2。",
+    "中間數可簡化奇數個總和。",
+    "解後必須列出整組並驗查。"
+  ],
+  "connections": {
+    "previous": "需要能用一個未知數表示多個相關數量。",
+    "next": [
+      "解的合理性檢查會判斷整數條件。",
+      "方案比較會用兩個線性式求交點。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s012-v001",
+      "u03-s012-v002",
+      "u03-s012-v003",
+      "u03-s012-v004",
+      "u03-s012-v005",
+      "u03-s012-v006",
+      "u03-s012-v007",
+      "u03-s012-v008",
+      "u03-s012-v009",
+      "u03-s012-v010",
+      "u03-s012-v011",
+      "u03-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s012-cr001",
+      "u03-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例驗算總和分別72、48、30、-30，並核對23與25皆奇數、-12至-8相鄰差2，所有結果均為整數。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "70210f58083932091035b94cb2702db1c8b2a20501a2f03f67127d3438c43dfa",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

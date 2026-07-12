@@ -1,0 +1,241 @@
+{
+  "lectureId": "u03-s008-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-apps",
+  "skillId": "linear-equation-age-problem",
+  "title": "年齡問題：所有人物必須放在同一時間點比較",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能以一個未知數表示多人的現齡。",
+    "能處理幾年前與幾年後的年齡。",
+    "能建立年齡差、倍數與總和方程式。",
+    "能檢查年齡是否為合理非負數。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-check-solution",
+      "requiredLevel": "能把文字關係翻成一元一次方程式並以代入檢查解。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "現齡",
+      "definition": "人物現在的年齡。"
+    },
+    {
+      "term": "年齡差",
+      "definition": "兩人年齡之差，時間經過後通常不變。"
+    },
+    {
+      "term": "同一時間點",
+      "definition": "比較倍數或總和時，所有人的年齡都在同一年計算。"
+    },
+    {
+      "term": "倍數關係",
+      "definition": "一人的年齡等於另一人的若干倍。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x+k",
+      "meaning": "x歲的人k年後的年齡。"
+    },
+    {
+      "symbol": "x-k",
+      "meaning": "x歲的人k年前的年齡。"
+    }
+  ],
+  "conceptNarrative": [
+    "年齡問題的關鍵不是公式，而是時間點一致。",
+    "若題目說5年後，所有相關人物都要加5；說3年前則都要減3。",
+    "年齡差固定，但倍數通常會隨時間改變。",
+    "先選一人現齡為x，再用差、倍數或總和表示其他人。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "年齡推移",
+      "statement": "現在x歲，k年後為x+k，k年前為x-k。"
+    },
+    {
+      "name": "固定年齡差",
+      "statement": "兩人的年齡差隨相同時間推移保持不變。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "A+k=r(B+k)",
+      "conditions": [
+        "倍數關係發生在k年後"
+      ],
+      "meaning": "未來年齡倍數。"
+    },
+    {
+      "formula": "A-k=r(B-k)",
+      "conditions": [
+        "倍數關係發生在k年前"
+      ],
+      "meaning": "過去年齡倍數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只替一人加減年份。",
+    "倍數關係不能直接從未來搬回現在。",
+    "題目若以完整歲數計，結果通常需為整數。",
+    "年齡不得為負。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "決定未知數代表誰的現齡。",
+      "check": "所求對象是否容易直接表示？"
+    },
+    {
+      "step": 2,
+      "instruction": "列出每人的現齡。",
+      "check": "差或總和是否正確？"
+    },
+    {
+      "step": 3,
+      "instruction": "把所有人移到題目指定時間點。",
+      "check": "每個人都加減相同年數？"
+    },
+    {
+      "step": 4,
+      "instruction": "套用倍數或總和關係。",
+      "check": "關係發生在哪一年？"
+    },
+    {
+      "step": 5,
+      "instruction": "解方程並檢查年齡合理性。",
+      "check": "是否非負且符合完整歲數要求？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "姐姐比弟弟大5歲，兩人合計29歲。",
+      "solutionSteps": [
+        "設弟弟x歲，姐姐x+5。",
+        "2x+5=29。",
+        "x=12。"
+      ],
+      "answer": "弟弟12歲、姐姐17歲。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "4年後父親42歲，是兒子的3倍。",
+      "solutionSteps": [
+        "設兒子現齡x。",
+        "42=3(x+4)。",
+        "x=10。"
+      ],
+      "answer": "兒子今年10歲。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "3年前母親是女兒4倍，母親現年39歲。",
+      "solutionSteps": [
+        "3年前母親36歲。",
+        "36=4(x-3)。",
+        "x=12。"
+      ],
+      "answer": "女兒今年12歲。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "三人年齡為x、x+1、x+4，總和44。",
+      "solutionSteps": [
+        "3x+5=44。",
+        "x=13。"
+      ],
+      "answer": "13、14、17歲。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只讓一人增加年份。",
+      "why": "比較時點不一致。",
+      "correction": "所有人物同時推移。"
+    },
+    {
+      "mistake": "把5年後倍數當作現在倍數。",
+      "why": "倍數會隨時間改變。",
+      "correction": "在方程式中加入年份。"
+    },
+    {
+      "mistake": "把年齡差也隨年份增加。",
+      "why": "兩人同時變老，差不變。",
+      "correction": "差值固定。"
+    },
+    {
+      "mistake": "總和題漏掉其中一人。",
+      "why": "只列倍數對象。",
+      "correction": "逐人列出後再相加。"
+    },
+    {
+      "mistake": "得到負年齡仍接受。",
+      "why": "未檢查情境。",
+      "correction": "回查列式或資料。"
+    },
+    {
+      "mistake": "把過去的年齡當現齡作答。",
+      "why": "未將年份加回。",
+      "correction": "最後確認題目問今年還是指定年份。"
+    }
+  ],
+  "selfCheck": [
+    "未知數代表現齡還是過去年齡？",
+    "所有人物是否在同一時間點？",
+    "年齡差是否保持不變？",
+    "倍數關係是否放在正確年份？",
+    "答案是否非負且回到題目所問時間？"
+  ],
+  "summary": [
+    "先統一時間點。",
+    "所有人物同加同減年份。",
+    "年齡差固定，倍數會變。",
+    "解後要回到題目所問年份。"
+  ],
+  "connections": {
+    "previous": "需要能列式、解方程並代回檢查。",
+    "next": [
+      "金錢問題會用相同方式表示多種價格。",
+      "合理性檢查會判斷完整歲數與負年齡。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s008-v001",
+      "u03-s008-v002",
+      "u03-s008-v003",
+      "u03-s008-v004",
+      "u03-s008-v005",
+      "u03-s008-v006",
+      "u03-s008-v007",
+      "u03-s008-v008",
+      "u03-s008-v009",
+      "u03-s008-v010",
+      "u03-s008-v011",
+      "u03-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s008-cr001",
+      "u03-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例逐一代回指定年份：12+17=29、4年後14×3=42、3年前9×4=36、13+14+17=44；確認所有人物均同時推移且答案為非負完整歲數。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "9ed9ad0cac16c1b3c1d4244cc3dc1c3c090b2f7d60b7ff094717454a9ccdfe82",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

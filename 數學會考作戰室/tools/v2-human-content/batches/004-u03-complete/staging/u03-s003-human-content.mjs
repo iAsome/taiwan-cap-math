@@ -1,0 +1,1227 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+// CONTENT AUTHORITY: CHATGPT_HUMAN_AUTHORED_R1
+// OLD GENERATED CONTENT MUST NOT BE IMPORTED OR MERGED.
+export const LECTURE = {
+  "lectureId": "u03-s003-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-solving",
+  "skillId": "linear-equation-balance-property",
+  "title": "等量公理：把方程式看成保持平衡的兩邊",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明等號表示左右兩邊同值。",
+    "能在兩邊同加減或同乘除非零數。",
+    "能把移項還原為等量操作。",
+    "能由天平圖解釋方程式變形。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-expression-simplify",
+      "requiredLevel": "能展開括號、合併同類項並理解等號表示左右同值。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "方程式",
+      "definition": "含未知數的等式。"
+    },
+    {
+      "term": "等量公理",
+      "definition": "等式兩邊做相同合法運算後仍相等。"
+    },
+    {
+      "term": "移項",
+      "definition": "等量操作的簡寫，不是項目自行穿越等號。"
+    },
+    {
+      "term": "解",
+      "definition": "使方程式左右兩邊相等的未知數值。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "=",
+      "meaning": "左右兩個式子的值相同。"
+    },
+    {
+      "symbol": "a=b⇒a+c=b+c",
+      "meaning": "兩邊同加c保持相等。"
+    }
+  ],
+  "conceptNarrative": [
+    "方程式像平衡天平，左右兩盤重量相同。",
+    "從一邊拿走多少，另一邊也要拿走同樣的量；加入與乘除同理。",
+    "兩邊同除時除數不能為0，因為除以0沒有定義。",
+    "課本常說移項變號，真正理由是兩邊同加或同減某一項。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "加減等量公理",
+      "statement": "若a=b，則a+c=b+c且a-c=b-c。"
+    },
+    {
+      "name": "乘法等量公理",
+      "statement": "若a=b，則ac=bc。"
+    },
+    {
+      "name": "除法等量公理",
+      "statement": "若a=b且c≠0，則a/c=b/c。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a=b ⇔ a+c=b+c",
+      "conditions": [
+        "c為任意數"
+      ],
+      "meaning": "兩邊同加減。"
+    },
+    {
+      "formula": "a=b ⇔ ac=bc",
+      "conditions": [
+        "反推時c不可為0"
+      ],
+      "meaning": "兩邊同乘。"
+    },
+    {
+      "formula": "a=b ⇔ a/c=b/c",
+      "conditions": [
+        "c≠0"
+      ],
+      "meaning": "兩邊同除。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只改等式一邊。",
+    "兩邊乘不同數不保證相等。",
+    "不能兩邊同除以0。",
+    "平方等非可逆操作在進階情況可能產生額外解，本單元不以此替代基本等量步驟。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認要消去哪個加項或係數。",
+      "check": "目標是讓未知數逐步單獨嗎？"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇逆運算。",
+      "check": "加對應減、乘對應除？"
+    },
+    {
+      "step": 3,
+      "instruction": "在等式兩邊完全相同地執行。",
+      "check": "右邊是否也有改變？"
+    },
+    {
+      "step": 4,
+      "instruction": "化簡新等式。",
+      "check": "除數是否非零？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原式檢查。",
+      "check": "左右是否同值？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "由x+11=20求x。",
+      "solutionSteps": [
+        "兩邊同減11。",
+        "x=9。"
+      ],
+      "answer": "x=9。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "由-3x=18求x。",
+      "solutionSteps": [
+        "兩邊同除以-3。",
+        "x=-6。"
+      ],
+      "answer": "x=-6。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "說明5x-2=13如何變成5x=15。",
+      "solutionSteps": [
+        "兩邊同加2。",
+        "左邊-2與+2抵消，右邊13+2=15。"
+      ],
+      "answer": "使用加法等量公理。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "天平左盤有一盒未知重物與4個單位砝碼，右盤有10個單位砝碼。",
+      "solutionSteps": [
+        "關係為x+4=10。",
+        "兩盤各移4個砝碼。",
+        "剩x=6。"
+      ],
+      "answer": "盒子重6個單位。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只在左邊減常數。",
+      "why": "破壞等式平衡。",
+      "correction": "兩邊同減。"
+    },
+    {
+      "mistake": "把乘法係數移項成減法。",
+      "why": "未選逆運算。",
+      "correction": "乘法係數應以除法消去。"
+    },
+    {
+      "mistake": "兩邊同除以0。",
+      "why": "除以0沒有定義。",
+      "correction": "先確認除數非零。"
+    },
+    {
+      "mistake": "把移項當成項目自動變號。",
+      "why": "失去操作理由，易在複雜式出錯。",
+      "correction": "每一步寫成兩邊同加減。"
+    },
+    {
+      "mistake": "天平圖只移一盤砝碼。",
+      "why": "忽略平衡條件。",
+      "correction": "兩盤做完全相同的動作。"
+    },
+    {
+      "mistake": "完成一步後未化簡。",
+      "why": "等式仍雜亂，容易重複操作。",
+      "correction": "每步立即合併與約分。"
+    }
+  ],
+  "selfCheck": [
+    "兩邊是否做同一運算？",
+    "逆運算是否正確？",
+    "除數是否非零？",
+    "移項能否解釋成等量公理？",
+    "最後是否代回原式？"
+  ],
+  "summary": [
+    "等號表示同值。",
+    "兩邊同做合法運算保持相等。",
+    "移項只是等量操作的簡寫。",
+    "天平模型可直觀解釋等量公理。"
+  ],
+  "connections": {
+    "previous": "需要先會化簡一元一次式與理解等號。",
+    "next": [
+      "下一節把等量公理連續使用來解基本方程式。",
+      "後續含括號與分母方程式仍遵守同一原理。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s003-v001",
+      "u03-s003-v002",
+      "u03-s003-v003",
+      "u03-s003-v004",
+      "u03-s003-v005",
+      "u03-s003-v006",
+      "u03-s003-v007",
+      "u03-s003-v008",
+      "u03-s003-v009",
+      "u03-s003-v010",
+      "u03-s003-v011",
+      "u03-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s003-cr001",
+      "u03-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐步驗證四例每次操作兩邊一致，-3除數非零；天平例由x+4=10各減4得到x=6，圖示中的盒子與單位砝碼數量亦逐項核對。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "1001c7ef319677e00bb3c72f8d3a6cb59519337974f4a9ca256a47313075e761",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u03-s003-v001",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "由 x＋7＝15 解 x，第一步應在等式兩邊做什麼？",
+    "choices": [
+      "同減 7",
+      "同加7",
+      "同乘7",
+      "左邊減7、右邊不變"
+    ],
+    "answerIndex": 0,
+    "explanation": "選擇抵消左邊+7的運算；兩邊同減7；等式化為x=8。所以答案是「同減 7」。",
+    "steps": [
+      "選擇抵消左邊+7的運算",
+      "兩邊同減7",
+      "等式化為x=8"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "同減 7",
+        "truth": true,
+        "reason": "等式兩邊同減7仍保持相等，得到x=8。 因此此選項符合題目。"
+      },
+      {
+        "choice": "同加7",
+        "truth": false,
+        "reason": "同加7會使常數更大。"
+      },
+      {
+        "choice": "同乘7",
+        "truth": false,
+        "reason": "乘7無法直接消去加7。"
+      },
+      {
+        "choice": "左邊減7、右邊不變",
+        "truth": false,
+        "reason": "只改一邊會破壞等量關係。"
+      }
+    ],
+    "commonMistake": "只在含未知數的一邊移項。",
+    "concept": "等式兩邊做相同加減運算仍相等。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "理解加法等量公理。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "b0c5d651329fecf91129b7ff33f01b55da7d7c8d664632fded25485c845a737a",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v002",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "由 4x＝28 解 x，應在等式兩邊同做哪個運算？",
+    "choices": [
+      "減4",
+      "除以 4",
+      "乘4",
+      "除以28"
+    ],
+    "answerIndex": 1,
+    "explanation": "係數4乘著x；以相反運算除4；兩邊同除後保持相等。所以答案是「除以 4」。",
+    "steps": [
+      "係數4乘著x",
+      "以相反運算除4",
+      "兩邊同除後保持相等"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "減4",
+        "truth": false,
+        "reason": "減4不能消掉乘法係數。"
+      },
+      {
+        "choice": "除以 4",
+        "truth": true,
+        "reason": "兩邊同除以4，左邊成x，右邊28÷4=7。 因此此選項符合題目。"
+      },
+      {
+        "choice": "乘4",
+        "truth": false,
+        "reason": "乘4會把係數變16。"
+      },
+      {
+        "choice": "除以28",
+        "truth": false,
+        "reason": "除28使左邊變x/7。"
+      }
+    ],
+    "commonMistake": "把4從左邊移到右邊卻錯做減法。",
+    "concept": "消去未知數係數要在兩邊同除。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "理解乘除等量公理。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "33cc6c022bfbe04d32d588d7eaeedf26d2a622524637458a0784c565aed8b69d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v003",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 x/5＝6，為求 x，等式兩邊應同乘多少？",
+    "choices": [
+      "1/5",
+      "6",
+      "5",
+      "30"
+    ],
+    "answerIndex": 2,
+    "explanation": "辨認x/5；以乘5抵消除5；右邊6×5=30。所以答案是「5」。",
+    "steps": [
+      "辨認x/5",
+      "以乘5抵消除5",
+      "右邊6×5=30"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "1/5",
+        "truth": false,
+        "reason": "再乘1/5會使x變x/25。"
+      },
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "乘6與分母5無關。"
+      },
+      {
+        "choice": "5",
+        "truth": true,
+        "reason": "x被5除，兩邊同乘5可得x=30。 因此此選項符合題目。"
+      },
+      {
+        "choice": "30",
+        "truth": false,
+        "reason": "30是解，不是兩邊要乘的數。"
+      }
+    ],
+    "commonMistake": "把最後答案當作操作數。",
+    "concept": "乘以分母可消除分母。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "把除法關係用等量公理逆轉。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "c877988dd8568fccd50e05ba2120afe3e0f6d444bcaf77b84f000d1e28aed75c",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v004",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "svg",
+    "figureId": "fig-u03-s003-v004",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "圖中的天平保持平衡：左盤是一個標有 x 的盒子加 3 個相同砝碼，右盤有 8 個相同砝碼。若先從兩盤各移走 3 個砝碼，剩下的關係是什麼？",
+    "choices": [
+      "x＝8",
+      "x＋3＝5",
+      "3x＝8",
+      "x＝5"
+    ],
+    "answerIndex": 3,
+    "explanation": "由圖讀出x+3=8；兩盤各移3表示兩邊同減3；得到x=5。所以答案是「x＝5」。",
+    "steps": [
+      "由圖讀出x+3=8",
+      "兩盤各移3表示兩邊同減3",
+      "得到x=5"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "x＝8",
+        "truth": false,
+        "reason": "未執行移走3的動作。"
+      },
+      {
+        "choice": "x＋3＝5",
+        "truth": false,
+        "reason": "把右盤移走3卻在左邊保留+3。"
+      },
+      {
+        "choice": "3x＝8",
+        "truth": false,
+        "reason": "把3個砝碼誤當3個x盒。"
+      },
+      {
+        "choice": "x＝5",
+        "truth": true,
+        "reason": "原關係是x+3=8；兩邊各減3後x=5。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "只改一個盤或錯把單位砝碼當未知盒。",
+    "concept": "天平平衡對應等量關係。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "從平衡圖理解等式兩邊同減。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "fbf946d716afc01ce4b2ee7d7f0504500ba4400e8f4c94dcac2428654b96dbea",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v005",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "下列哪一個操作一定能由 a＝b 得到仍正確的等式？",
+    "choices": [
+      "左邊加9、右邊減9",
+      "兩邊同加 9",
+      "兩邊分別乘不同數",
+      "只將左邊平方"
+    ],
+    "answerIndex": 1,
+    "explanation": "等量公理要求兩邊同做相同運算；同加9符合條件；所以新等式必成立。所以答案是「兩邊同加 9」。",
+    "steps": [
+      "等量公理要求兩邊同做相同運算",
+      "同加9符合條件",
+      "所以新等式必成立"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "左邊加9、右邊減9",
+        "truth": false,
+        "reason": "兩邊改變方向不同。"
+      },
+      {
+        "choice": "兩邊同加 9",
+        "truth": true,
+        "reason": "a=b時，兩邊同加9可得a+9=b+9。 因此此選項符合題目。"
+      },
+      {
+        "choice": "兩邊分別乘不同數",
+        "truth": false,
+        "reason": "乘數不同不保證結果相等。"
+      },
+      {
+        "choice": "只將左邊平方",
+        "truth": false,
+        "reason": "只改左邊不能保持一般性的相等。"
+      }
+    ],
+    "commonMistake": "認為只要兩邊都有變動就會相等。",
+    "concept": "相同運算必須施於等式兩邊。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "判斷能保持等式的操作。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "8f27da7981f636d11e7dd63c967ba9763fc36eb0687da936a72e112bf21d3cac",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v006",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "由 3x－4＝11 變成 3x＝15，使用了哪個等量操作？",
+    "choices": [
+      "兩邊同減4",
+      "兩邊同乘4",
+      "兩邊同加 4",
+      "兩邊同除4"
+    ],
+    "answerIndex": 2,
+    "explanation": "辨認左邊減4；使用逆運算加4；兩邊同加保持相等。所以答案是「兩邊同加 4」。",
+    "steps": [
+      "辨認左邊減4",
+      "使用逆運算加4",
+      "兩邊同加保持相等"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "兩邊同減4",
+        "truth": false,
+        "reason": "同減4會得到3x-8=7。"
+      },
+      {
+        "choice": "兩邊同乘4",
+        "truth": false,
+        "reason": "乘4不會產生所示式子。"
+      },
+      {
+        "choice": "兩邊同加 4",
+        "truth": true,
+        "reason": "為消去左邊-4，兩邊同加4，右邊11+4=15。 因此此選項符合題目。"
+      },
+      {
+        "choice": "兩邊同除4",
+        "truth": false,
+        "reason": "除4後左邊不是3x。"
+      }
+    ],
+    "commonMistake": "只背移項變號而不理解等量公理。",
+    "concept": "每一步移項可還原為兩邊同做運算。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "辨認等式變形背後的操作。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "9dc909ea6965569eb747d69ce525d4ff0b85f77caba2ab452a46e5da16ffb83a",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v007",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "若 a＝b，則下列哪一式一定成立？",
+    "choices": [
+      "2a－5＝b－5",
+      "a＋5＝b－5",
+      "a/2＝2b",
+      "2a－5＝2b－5"
+    ],
+    "answerIndex": 3,
+    "explanation": "由a=b兩邊同乘2；再同減5；所得等式必成立。所以答案是「2a－5＝2b－5」。",
+    "steps": [
+      "由a=b兩邊同乘2",
+      "再同減5",
+      "所得等式必成立"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "2a－5＝b－5",
+        "truth": false,
+        "reason": "只把左邊乘2。"
+      },
+      {
+        "choice": "a＋5＝b－5",
+        "truth": false,
+        "reason": "兩邊加減不同數。"
+      },
+      {
+        "choice": "a/2＝2b",
+        "truth": false,
+        "reason": "左右分別除2與乘2。"
+      },
+      {
+        "choice": "2a－5＝2b－5",
+        "truth": true,
+        "reason": "先兩邊同乘2，再同減5，得到2a-5=2b-5。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "左右兩邊使用不同運算。",
+    "concept": "可依序在兩邊做相同合法運算。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "連續使用多個等量操作。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "f57e56953c7311f630a8ff800ac70376e3118c40263d96b459c30f706855f7b3",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v008",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "由－2x＝14 得 x＝－7，兩邊同除以－2。這個步驟為何合法？",
+    "choices": [
+      "等式兩邊同除以同一個非零數",
+      "負數會自動移到右邊",
+      "等式兩邊除數可以不同",
+      "任何式子都可只改左邊"
+    ],
+    "answerIndex": 0,
+    "explanation": "確認除數不為0；兩邊使用同一除數；得到x=-7。所以答案是「等式兩邊同除以同一個非零數」。",
+    "steps": [
+      "確認除數不為0",
+      "兩邊使用同一除數",
+      "得到x=-7"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "等式兩邊同除以同一個非零數",
+        "truth": true,
+        "reason": "除數-2非零，兩邊同除-2保持相等，14÷(-2)=-7。 因此此選項符合題目。"
+      },
+      {
+        "choice": "負數會自動移到右邊",
+        "truth": false,
+        "reason": "移項不是負數自動移動。"
+      },
+      {
+        "choice": "等式兩邊除數可以不同",
+        "truth": false,
+        "reason": "兩邊除數不同會破壞等式。"
+      },
+      {
+        "choice": "任何式子都可只改左邊",
+        "truth": false,
+        "reason": "只改一邊不合法。"
+      }
+    ],
+    "commonMistake": "忽略除數不能為0或認為負數特殊。",
+    "concept": "等式兩邊可同除以非零數。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "說明除法等量公理的非零條件。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "34807eb860df7dcaafbcf8844776cecb2e885896c8a6aa2e7744acfa183926cf",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v009",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "由 2(x＋1)＝10 先變成 x＋1＝5，所用操作是什麼？",
+    "choices": [
+      "兩邊同減2",
+      "兩邊同加2",
+      "兩邊同除以 2",
+      "只把左邊的2刪掉"
+    ],
+    "answerIndex": 2,
+    "explanation": "把2視為整個括號的係數；兩邊同除2；右邊10÷2=5。所以答案是「兩邊同除以 2」。",
+    "steps": [
+      "把2視為整個括號的係數",
+      "兩邊同除2",
+      "右邊10÷2=5"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "兩邊同減2",
+        "truth": false,
+        "reason": "減2不能消除乘法。"
+      },
+      {
+        "choice": "兩邊同加2",
+        "truth": false,
+        "reason": "加2也不能消除係數。"
+      },
+      {
+        "choice": "兩邊同除以 2",
+        "truth": true,
+        "reason": "整個左邊是2倍，兩邊同除2後x+1=5。 因此此選項符合題目。"
+      },
+      {
+        "choice": "只把左邊的2刪掉",
+        "truth": false,
+        "reason": "刪係數但右邊不變違反等量公理。"
+      }
+    ],
+    "commonMistake": "直接約掉左邊係數而不改右邊。",
+    "concept": "除係數時等式兩邊都要處理。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "對整體括號使用乘除等量公理。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "025782672cb52221e8f330b7914bb3fbf2d629978721cad8be4582c60caeeef8",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v010",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "一個包裹與 200 公克砝碼合計 1700 公克。若包裹重量為 x 公克，先去掉兩邊共同的 200 公克後，方程式變成什麼？",
+    "choices": [
+      "x＝1700",
+      "x＋200＝1500",
+      "200x＝1700",
+      "x＝1500"
+    ],
+    "answerIndex": 3,
+    "explanation": "依情境列x+200=1700；兩邊同減200；得到x=1500。所以答案是「x＝1500」。",
+    "steps": [
+      "依情境列x+200=1700",
+      "兩邊同減200",
+      "得到x=1500"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "x＝1700",
+        "truth": false,
+        "reason": "未扣掉砝碼重量。"
+      },
+      {
+        "choice": "x＋200＝1500",
+        "truth": false,
+        "reason": "右邊扣200但左邊仍保留+200。"
+      },
+      {
+        "choice": "200x＝1700",
+        "truth": false,
+        "reason": "把相加關係誤寫成乘法。"
+      },
+      {
+        "choice": "x＝1500",
+        "truth": true,
+        "reason": "原式x+200=1700，兩邊同減200得x=1500。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "只從總重量扣除但未同步改式子。",
+    "concept": "共同增加的重量可從兩邊同時移除。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "用重量平衡情境理解等式同減。",
+    "literacyContextNecessity": "包裹與砝碼的實際組成決定等式x+200=1700，移除相同砝碼是等量公理的情境化操作。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "786f1f994074f2cbb093e55aec627974b16ac535ca6facd9e532bad09572c316",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v011",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "儲值卡原有 P 元，再儲值 80 元後餘額為 350 元。要找 P，應如何操作 P＋80＝350？",
+    "choices": [
+      "兩邊同減 80",
+      "兩邊同加80",
+      "兩邊同除80",
+      "左邊減80、右邊加80"
+    ],
+    "answerIndex": 0,
+    "explanation": "把新增80視為要消去的加項；等式兩邊同減80；P保持單獨。所以答案是「兩邊同減 80」。",
+    "steps": [
+      "把新增80視為要消去的加項",
+      "等式兩邊同減80",
+      "P保持單獨"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "兩邊同減 80",
+        "truth": true,
+        "reason": "儲值80是加項，兩邊同減80可得P=270。 因此此選項符合題目。"
+      },
+      {
+        "choice": "兩邊同加80",
+        "truth": false,
+        "reason": "同加80會離P更遠。"
+      },
+      {
+        "choice": "兩邊同除80",
+        "truth": false,
+        "reason": "除80不對應加法逆運算。"
+      },
+      {
+        "choice": "左邊減80、右邊加80",
+        "truth": false,
+        "reason": "左右做相反操作破壞等式。"
+      }
+    ],
+    "commonMistake": "看到80就不分運算類型直接除。",
+    "concept": "消去加項要兩邊同減。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "把餘額變化轉成等量操作。",
+    "literacyContextNecessity": "儲值前後的餘額關係決定使用加法方程式，情境中的新增80元是選擇同減80的必要依據。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "48f8881019a1aaf551781dba639b6ad7f57304bfd95360be5a29f2e8d9c22eb1",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-v012",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "水槽原水位為 h 公分，加水後上升 12 公分，水位成為 35 公分。由 h＋12＝35 求 h 的第一步是什麼？",
+    "choices": [
+      "兩邊同乘12",
+      "兩邊同減 12",
+      "兩邊同加12",
+      "只把12改成負號放右邊而不說明操作"
+    ],
+    "answerIndex": 1,
+    "explanation": "辨認水位增加12；以同減12消去增加量；維持兩邊相等。所以答案是「兩邊同減 12」。",
+    "steps": [
+      "辨認水位增加12",
+      "以同減12消去增加量",
+      "維持兩邊相等"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "兩邊同乘12",
+        "truth": false,
+        "reason": "乘12不能消去加項。"
+      },
+      {
+        "choice": "兩邊同減 12",
+        "truth": true,
+        "reason": "h+12=35兩邊同減12，得到h=23。 因此此選項符合題目。"
+      },
+      {
+        "choice": "兩邊同加12",
+        "truth": false,
+        "reason": "同加12使差距不變但未知數未孤立。"
+      },
+      {
+        "choice": "只把12改成負號放右邊而不說明操作",
+        "truth": false,
+        "reason": "只寫移項變號沒有檢查兩邊同做運算。"
+      }
+    ],
+    "commonMistake": "把移項當成沒有理由的變號規則。",
+    "concept": "移項應理解為兩邊同加減。",
+    "tags": [
+      "代數",
+      "等量公理",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-expression-simplify"
+    ],
+    "authoringIntent": "由水位變化選擇合法等量操作。",
+    "literacyContextNecessity": "原水位、上升量與最後水位三者形成h+12=35，水位情境讓同減12的意義可被驗證。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "20bbc5609c6ab72324585c4899f87f176b709c0db43adc77bf602f2a9d5ed976",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u03-s003-cr001",
+    "unitId": "u03",
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "用等量公理解 5x－7＝18。每一步都要寫出等式兩邊做了什麼。",
+    "requiredWork": [
+      "寫出兩邊同加7。",
+      "寫出兩邊同除5。",
+      "代回原式。"
+    ],
+    "fullCreditSolution": [
+      "兩邊同加7：5x=25。",
+      "兩邊同除5：x=5。",
+      "驗算5×5-7=18。"
+    ],
+    "alternativeSolutions": [
+      "可用天平移除與平均分的語言解釋。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "兩個等量步驟與驗算完整。"
+      },
+      {
+        "score": 2,
+        "criteria": "答案正確且有一個等量步驟，或驗算缺漏。"
+      },
+      {
+        "score": 1,
+        "criteria": "知道先加7或最後除5。"
+      },
+      {
+        "score": 0,
+        "criteria": "只寫答案或破壞等式平衡。"
+      }
+    ],
+    "scoringNotes": [
+      "等價且完整的代數步驟可接受。",
+      "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
+    ],
+    "commonErrors": [
+      "只把-7移到右邊但未說明。",
+      "除5時只除左邊。"
+    ],
+    "independentReview": {
+      "derivedResult": "x=5",
+      "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
+      "decision": "pass"
+    },
+    "contentSha256": "aa4b2b29a8068579aeae71c6e2d879e9c60b2ca57563dc3d78454f9140467316",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s003-cr002",
+    "unitId": "u03",
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-balance-property",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "一個未知重量的盒子與 6 個 50 克砝碼平衡於 900 克。設盒子重 x 克，列方程式並用等量公理解出盒子重量。",
+    "requiredWork": [
+      "列出x+6×50=900。",
+      "說明兩邊同減300。",
+      "附單位並驗算。"
+    ],
+    "fullCreditSolution": [
+      "方程式x+300=900。",
+      "兩邊同減300，x=600。",
+      "600+300=900。"
+    ],
+    "alternativeSolutions": [
+      "也可先算六個砝碼總重，再由總重扣除。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "方程式、等量操作、答案與驗算完整。"
+      },
+      {
+        "score": 2,
+        "criteria": "列式與答案正確但說明等量操作不足。"
+      },
+      {
+        "score": 1,
+        "criteria": "能算出砝碼300克或列出x+300=900。"
+      },
+      {
+        "score": 0,
+        "criteria": "未建立正確重量關係。"
+      }
+    ],
+    "scoringNotes": [
+      "等價且完整的代數步驟可接受。",
+      "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
+    ],
+    "commonErrors": [
+      "把6個砝碼算成56克。",
+      "只從一邊移除砝碼。"
+    ],
+    "independentReview": {
+      "derivedResult": "600克",
+      "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
+      "decision": "pass"
+    },
+    "contentSha256": "14ba8e3a33f3d9545884c52f536a4fb78c74098f81598016146e4bfd46475886",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  }
+];
+
+export const DRAWING_SPECS = [
+  {
+    "figureId": "fig-u03-s003-v004",
+    "unitId": "u03",
+    "skillId": "linear-equation-balance-property",
+    "altText": "一座水平平衡的天平，左盤有一個標示 x 的盒子與三個單位砝碼，右盤有八個單位砝碼。",
+    "drawingSpec": {
+      "canvas": {
+        "width": 900,
+        "height": 430,
+        "viewBox": "0 0 900 430"
+      },
+      "layout": "天平支點位於畫布中央，橫桿保持水平，左右盤高度相同。",
+      "leftPan": {
+        "box": {
+          "label": "x",
+          "position": [
+            176,
+            215
+          ]
+        },
+        "unitWeights": 3
+      },
+      "rightPan": {
+        "unitWeights": 8
+      },
+      "lines": {
+        "beam": "7px實線",
+        "supports": "4至8px實線",
+        "hidden": "無虛線"
+      },
+      "labels": {
+        "left": "左盤：x 與 3 個單位砝碼",
+        "right": "右盤：8 個單位砝碼"
+      },
+      "scaleNote": "砝碼大小相同；盒子尺寸不代表實際重量。",
+      "accessibility": "title與desc完整說明兩盤內容及平衡狀態。",
+      "mobile": "最小文字22px，重要標籤28px。"
+    },
+    "svgPath": "figures/u03/fig-u03-s003-v004.svg",
+    "svgAssertions": [
+      "<title id=\"t\">平衡天平表示 x 加 3 等於 8</title>",
+      "<text x=\"176\" y=\"224\"",
+      "右盤：8 個單位砝碼"
+    ],
+    "figureReview": {
+      "decision": "pass",
+      "questionFigureConsistency": "pass",
+      "accessibility": "pass",
+      "mobileReadability": "pass",
+      "answerLeakage": "pass",
+      "reviewNote": "逐一核對左盤一個x盒與三顆砝碼、右盤八顆砝碼，橫桿兩端同高；圖中沒有寫出x=5，因此不會直接洩漏答案。",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "b08e1d735bfd431489cdd6fefb925a9f46c9be67a32b5d7e9e7be5fc252e4348",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "new-human-authored-figure"
+  }
+];

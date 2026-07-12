@@ -1,0 +1,1158 @@
+// SERIALIZATION OF REVIEWED HUMAN CONTENT. DO NOT EDIT OR ACTIVATE DIRECTLY.
+// CONTENT AUTHORITY: CHATGPT_HUMAN_AUTHORED_R1
+// OLD GENERATED CONTENT MUST NOT BE IMPORTED OR MERGED.
+export const LECTURE = {
+  "lectureId": "u03-s004-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-solving",
+  "skillId": "linear-equation-basic-solving",
+  "title": "一元一次方程式基本解法：整理未知數與常數直到求出唯一解",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能解一步與兩步一元一次方程式。",
+    "能處理未知數出現在等式兩邊。",
+    "能正確處理負係數與小數係數。",
+    "能把解代回原式驗算。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-balance-property",
+      "requiredLevel": "能在等式兩邊做相同加減乘除，且知道除數不可為零。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "一元一次方程式",
+      "definition": "只含一個未知數且未知數最高次數為1的方程式。"
+    },
+    {
+      "term": "係數",
+      "definition": "未知數前相乘的數。"
+    },
+    {
+      "term": "常數",
+      "definition": "不含未知數的數。"
+    },
+    {
+      "term": "孤立未知數",
+      "definition": "把方程式整理成x=某數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax+b=c",
+      "meaning": "基本一元一次方程式，a≠0。"
+    },
+    {
+      "symbol": "ax+b=cx+d",
+      "meaning": "未知數可能出現在等式兩邊。"
+    }
+  ],
+  "conceptNarrative": [
+    "解方程式的核心不是背移項，而是逐步使用等量公理。",
+    "通常先消去加減的常數，再除以未知數係數。",
+    "未知數在兩邊時，先選一邊集中未知數項，另一邊集中常數。",
+    "每一步保持精確，不因答案是負數或分數就擅自改值。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "方程式的解",
+      "statement": "代入後使左右兩邊相等的數。"
+    },
+    {
+      "name": "唯一解情況",
+      "statement": "整理後若ax=b且a≠0，則x=b/a。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "ax+b=c ⇒ x=(c-b)/a",
+      "conditions": [
+        "a≠0"
+      ],
+      "meaning": "兩步方程式的結果。"
+    },
+    {
+      "formula": "ax+b=cx+d ⇒ (a-c)x=d-b",
+      "conditions": [
+        "a≠c時有唯一解"
+      ],
+      "meaning": "兩邊含未知數的整理。"
+    }
+  ],
+  "nonApplicableCases": [
+    "若整理後未知數係數為0，要另判斷無解或無限多解；本節主要處理唯一解。",
+    "不能把小數係數任意四捨五入。",
+    "未知數若代表情境量，求解後還需檢查範圍。",
+    "未化簡兩邊前直接移項容易漏項。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先化簡等式左右兩邊。",
+      "check": "是否有同類項可合併？"
+    },
+    {
+      "step": 2,
+      "instruction": "把未知數項集中一邊。",
+      "check": "兩邊是否做同一加減？"
+    },
+    {
+      "step": 3,
+      "instruction": "把常數集中另一邊。",
+      "check": "負號是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "除以未知數係數。",
+      "check": "係數是否非零？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原方程式。",
+      "check": "左右值是否完全相同？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解x-13=8。",
+      "solutionSteps": [
+        "兩邊同加13。",
+        "x=21。"
+      ],
+      "answer": "21。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解-5x=35。",
+      "solutionSteps": [
+        "兩邊同除以-5。",
+        "x=-7。"
+      ],
+      "answer": "-7。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解7x+4=3x+24。",
+      "solutionSteps": [
+        "兩邊減3x得4x+4=24。",
+        "減4得4x=20。",
+        "x=5。"
+      ],
+      "answer": "5。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解0.6x-1.5=2.1。",
+      "solutionSteps": [
+        "加1.5得0.6x=3.6。",
+        "除0.6得x=6。"
+      ],
+      "answer": "6。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "移項後符號未改。",
+      "why": "沒有實際做兩邊同加減。",
+      "correction": "寫出完整等量步驟。"
+    },
+    {
+      "mistake": "只做第一步就把中間值當答案。",
+      "why": "未知數仍帶係數。",
+      "correction": "最後確認式子是x=數。"
+    },
+    {
+      "mistake": "除負係數時漏負號。",
+      "why": "只看絕對值。",
+      "correction": "依異號相除為負。"
+    },
+    {
+      "mistake": "未知數兩邊同時移動但漏一項。",
+      "why": "未先列清每一項。",
+      "correction": "一次只移一類項。"
+    },
+    {
+      "mistake": "小數係數直接取整。",
+      "why": "想讓計算方便而改題。",
+      "correction": "同乘10或精確相除。"
+    },
+    {
+      "mistake": "求解後不驗算。",
+      "why": "無法發現符號或算術錯誤。",
+      "correction": "把答案代回原式兩邊。"
+    }
+  ],
+  "selfCheck": [
+    "左右兩邊是否先化簡？",
+    "未知數項與常數項是否分開？",
+    "最後是否除完整係數？",
+    "小數是否精確處理？",
+    "代回後左右是否相等？"
+  ],
+  "summary": [
+    "連續使用等量公理。",
+    "先整理再孤立未知數。",
+    "負數與小數解都可接受。",
+    "驗算是最後必要步驟。"
+  ],
+  "connections": {
+    "previous": "延續等量公理並使用一元一次式化簡。",
+    "next": [
+      "含括號方程式需先展開。",
+      "含分母方程式可先用最小公倍數消分母。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s004-v001",
+      "u03-s004-v002",
+      "u03-s004-v003",
+      "u03-s004-v004",
+      "u03-s004-v005",
+      "u03-s004-v006",
+      "u03-s004-v007",
+      "u03-s004-v008",
+      "u03-s004-v009",
+      "u03-s004-v010",
+      "u03-s004-v011",
+      "u03-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s004-cr001",
+      "u03-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例獨立代回：21-13=8、-5(-7)=35、7(5)+4=3(5)+24=39、0.6(6)-1.5=2.1；確認每個解唯一且無四捨五入。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "bc36afa2d132a9195cfca633ce35fbe46226c710907014a67fc213fe778f7149",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+};
+
+export const QUESTIONS = [
+  {
+    "questionId": "u03-s004-v001",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解方程式 x＋9＝21。",
+    "choices": [
+      "12",
+      "10",
+      "20",
+      "30"
+    ],
+    "answerIndex": 0,
+    "explanation": "兩邊同減9；x=12。所以答案是「12」。",
+    "steps": [
+      "將等式兩邊同減 9。",
+      "得到 x＝21－9。",
+      "計算得 x＝12，代回 12＋9＝21。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "12",
+        "truth": true,
+        "reason": "兩邊同減9，x=21-9=12。 因此此選項符合題目。"
+      },
+      {
+        "choice": "10",
+        "truth": false,
+        "reason": "把21-9誤算成10。"
+      },
+      {
+        "choice": "20",
+        "truth": false,
+        "reason": "把9移到右邊後相加。"
+      },
+      {
+        "choice": "30",
+        "truth": false,
+        "reason": "把21與9相加。"
+      }
+    ],
+    "commonMistake": "移項時符號未改。",
+    "concept": "以逆運算孤立未知數。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "解最基本加法型方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "9221c3babf3644cf137fc6d5ad818be41c6658a56ab9ae68f8240be3671024b9",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v002",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解方程式 x－7＝－3。",
+    "choices": [
+      "-10",
+      "4",
+      "-4",
+      "10"
+    ],
+    "answerIndex": 1,
+    "explanation": "兩邊同加7；x=4。所以答案是「4」。",
+    "steps": [
+      "將等式兩邊同加 7。",
+      "得到 x＝－3＋7。",
+      "計算得 x＝4，代回 4－7＝－3。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-10",
+        "truth": false,
+        "reason": "把-3-7算成-10。"
+      },
+      {
+        "choice": "4",
+        "truth": true,
+        "reason": "兩邊同加7，x=-3+7=4。 因此此選項符合題目。"
+      },
+      {
+        "choice": "-4",
+        "truth": false,
+        "reason": "負數加正數方向判斷錯。"
+      },
+      {
+        "choice": "10",
+        "truth": false,
+        "reason": "把7移項後仍減。"
+      }
+    ],
+    "commonMistake": "看到負數就把結果判成負。",
+    "concept": "消去減7要加7。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "處理含負數常數的減法型方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "88d2b5d98e88de1b65ef0f121be3d7929bfbbc47de001e7ec36b7b0084ef679d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v003",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "basic",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解方程式 5x＝45。",
+    "choices": [
+      "5",
+      "40",
+      "9",
+      "225"
+    ],
+    "answerIndex": 2,
+    "explanation": "兩邊同除5；x=9。所以答案是「9」。",
+    "steps": [
+      "將等式兩邊同除以 5。",
+      "得到 x＝45÷5。",
+      "計算得 x＝9，代回 5×9＝45。"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "把係數5當成解。"
+      },
+      {
+        "choice": "40",
+        "truth": false,
+        "reason": "將45減5。"
+      },
+      {
+        "choice": "9",
+        "truth": true,
+        "reason": "兩邊同除以5，x=45÷5=9。 因此此選項符合題目。"
+      },
+      {
+        "choice": "225",
+        "truth": false,
+        "reason": "把45乘5。"
+      }
+    ],
+    "commonMistake": "把乘法關係錯做加減。",
+    "concept": "係數非零時兩邊同除。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "basic"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "解乘法型方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "158d7220b20fddfc85feb957aa17ff4ea4e49ee22279b4d042fdb8dab35caffc",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v004",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解方程式－4x＝20。",
+    "choices": [
+      "5",
+      "-16",
+      "24",
+      "-5"
+    ],
+    "answerIndex": 3,
+    "explanation": "兩邊同除-4；正數除以負數得負數；x=-5。所以答案是「-5」。",
+    "steps": [
+      "兩邊同除-4",
+      "正數除以負數得負數",
+      "x=-5"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "漏掉負號。"
+      },
+      {
+        "choice": "-16",
+        "truth": false,
+        "reason": "把20-4誤當解。"
+      },
+      {
+        "choice": "24",
+        "truth": false,
+        "reason": "把20+4誤當解。"
+      },
+      {
+        "choice": "-5",
+        "truth": true,
+        "reason": "兩邊同除以-4，x=20÷(-4)=-5。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "只除以4卻忽略負號。",
+    "concept": "異號相除結果為負。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "處理負係數的一步方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "e66472661ecc113e5d336b423943e02beacc0346d646fbb896eaa1caf459f14a",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v005",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解方程式 3x＋2＝17。",
+    "choices": [
+      "3",
+      "5",
+      "15",
+      "19"
+    ],
+    "answerIndex": 1,
+    "explanation": "兩邊同減2；得到3x=15；兩邊同除3得5。所以答案是「5」。",
+    "steps": [
+      "兩邊同減2",
+      "得到3x=15",
+      "兩邊同除3得5"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "3",
+        "truth": false,
+        "reason": "只做17-2後未除3。"
+      },
+      {
+        "choice": "5",
+        "truth": true,
+        "reason": "先兩邊減2得3x=15，再除3得x=5。 因此此選項符合題目。"
+      },
+      {
+        "choice": "15",
+        "truth": false,
+        "reason": "把17-2誤當最後答案。"
+      },
+      {
+        "choice": "19",
+        "truth": false,
+        "reason": "把2移項後相加。"
+      }
+    ],
+    "commonMistake": "只做第一步就停止。",
+    "concept": "先消常數再消係數。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "完成兩步驟方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "e8b12ea71bbf99efca5ff29d0677bac87811d6c892015069097dae65e94d4024",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v006",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "standard",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解方程式 7－2x＝19。",
+    "choices": [
+      "6",
+      "-13",
+      "-6",
+      "13"
+    ],
+    "answerIndex": 2,
+    "explanation": "兩邊同減7；-2x=12；除以-2得-6。所以答案是「-6」。",
+    "steps": [
+      "兩邊同減7",
+      "-2x=12",
+      "除以-2得-6"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "6",
+        "truth": false,
+        "reason": "除以-2時漏負號。"
+      },
+      {
+        "choice": "-13",
+        "truth": false,
+        "reason": "把19-7後再減1。"
+      },
+      {
+        "choice": "-6",
+        "truth": true,
+        "reason": "兩邊減7得-2x=12，再除-2得x=-6。 因此此選項符合題目。"
+      },
+      {
+        "choice": "13",
+        "truth": false,
+        "reason": "把常數相加。"
+      }
+    ],
+    "commonMistake": "把7-2x誤看成(7-2)x。",
+    "concept": "整理後再除負係數。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "standard"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "未知數係數為負且常數在前。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "ff38e24515bb9785d094680802b6a691050307db3975a2068c38c9474e9f993e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v007",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解方程式 4x－9＝2x＋7。",
+    "choices": [
+      "-8",
+      "1",
+      "16",
+      "8"
+    ],
+    "answerIndex": 3,
+    "explanation": "將未知數項集中一邊；將常數項移到另一邊；2x=16後除2。所以答案是「8」。",
+    "steps": [
+      "將未知數項集中一邊",
+      "將常數項移到另一邊",
+      "2x=16後除2"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-8",
+        "truth": false,
+        "reason": "移項時把答案符號反轉。"
+      },
+      {
+        "choice": "1",
+        "truth": false,
+        "reason": "只比較係數差。"
+      },
+      {
+        "choice": "16",
+        "truth": false,
+        "reason": "算到2x=16卻忘記除2。"
+      },
+      {
+        "choice": "8",
+        "truth": true,
+        "reason": "兩邊減2x得2x-9=7，再加9得2x=16，所以x=8。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "只移一項或忘記最後除係數。",
+    "concept": "同類項集中後再求解。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "解未知數出現在等式兩邊的方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "973c997d6f89aeb009a09f69e23df51b49bfe4bbcf08d97f1c93d0c86979ab2f",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v008",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解方程式 6x＋5＝3x－10。",
+    "choices": [
+      "-5",
+      "5",
+      "-15",
+      "15"
+    ],
+    "answerIndex": 0,
+    "explanation": "未知數項相減得3x；常數整理得-15；除3得-5。所以答案是「-5」。",
+    "steps": [
+      "未知數項相減得3x",
+      "常數整理得-15",
+      "除3得-5"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-5",
+        "truth": true,
+        "reason": "兩邊減3x得3x+5=-10，再減5得3x=-15，所以x=-5。 因此此選項符合題目。"
+      },
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "最後忽略負號。"
+      },
+      {
+        "choice": "-15",
+        "truth": false,
+        "reason": "把-10-5當成-45。"
+      },
+      {
+        "choice": "15",
+        "truth": false,
+        "reason": "將-10與5相加成15。"
+      }
+    ],
+    "commonMistake": "負常數移項時符號混亂。",
+    "concept": "集中未知數與常數。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "整理兩邊含未知數與負常數的方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "bf83b420897639254db17857763c10525c0e0a9af26fa2ddd6a66aa7dd3c6c48",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v009",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "advanced",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "解方程式 0.3x＋1.2＝3。",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "60"
+    ],
+    "answerIndex": 2,
+    "explanation": "消去常數1.2；0.3x=1.8；1.8÷0.3=6。所以答案是「6」。",
+    "steps": [
+      "消去常數1.2",
+      "0.3x=1.8",
+      "1.8÷0.3=6"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "4",
+        "truth": false,
+        "reason": "把1.2÷0.3當成答案。"
+      },
+      {
+        "choice": "5",
+        "truth": false,
+        "reason": "小數除法誤差。"
+      },
+      {
+        "choice": "6",
+        "truth": true,
+        "reason": "兩邊減1.2得0.3x=1.8，再除0.3得x=6。 因此此選項符合題目。"
+      },
+      {
+        "choice": "60",
+        "truth": false,
+        "reason": "小數點移位只移一邊。"
+      }
+    ],
+    "commonMistake": "小數點處理不一致。",
+    "concept": "可同乘10或直接精確計算。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "advanced"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "解含有限小數係數的方程式。",
+    "literacyContextNecessity": null,
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "5664fa7e98430a502542aad4ad456da4686a9508b6ca4674d063031446d81520",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v010",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "四張同價電影票另加 50 元手續費，共付 530 元。每張票多少元？",
+    "choices": [
+      "95",
+      "132.5",
+      "145",
+      "120"
+    ],
+    "answerIndex": 3,
+    "explanation": "列4x+50=530；扣除手續費得4x=480；除4得120。所以答案是「120」。",
+    "steps": [
+      "列4x+50=530",
+      "扣除手續費得4x=480",
+      "除4得120"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "95",
+        "truth": false,
+        "reason": "把530-50後除5。"
+      },
+      {
+        "choice": "132.5",
+        "truth": false,
+        "reason": "將手續費平均前直接530÷4。"
+      },
+      {
+        "choice": "145",
+        "truth": false,
+        "reason": "只扣除一次票價。"
+      },
+      {
+        "choice": "120",
+        "truth": true,
+        "reason": "設每張x元，4x+50=530；4x=480，所以x=120。 因此此選項符合題目。"
+      }
+    ],
+    "commonMistake": "把固定費也當成一張票價。",
+    "concept": "總價=單價×張數+固定費。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "由總價與固定費列一步一元方程式。",
+    "literacyContextNecessity": "票數與固定手續費決定方程式4x+50=530，刪除交易結構就無法判斷係數與加項。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "4cc5f3879969ac5c351e5a05acf8b7a1e68f1cadb4dc7cd8209cbc57888fa2e4",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v011",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "小芸原有 x 元，買書花 240 元後還有 680 元。她原有多少元？",
+    "choices": [
+      "920",
+      "440",
+      "680",
+      "960"
+    ],
+    "answerIndex": 0,
+    "explanation": "列x-240=680；兩邊同加240；得到920元。所以答案是「920」。",
+    "steps": [
+      "列x-240=680",
+      "兩邊同加240",
+      "得到920元"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "920",
+        "truth": true,
+        "reason": "x-240=680，兩邊加240得x=920。 因此此選項符合題目。"
+      },
+      {
+        "choice": "440",
+        "truth": false,
+        "reason": "用680-240。"
+      },
+      {
+        "choice": "680",
+        "truth": false,
+        "reason": "把剩餘金額當原有金額。"
+      },
+      {
+        "choice": "960",
+        "truth": false,
+        "reason": "把240錯加成280。"
+      }
+    ],
+    "commonMistake": "把支出再從剩餘量扣一次。",
+    "concept": "原有量-支出=剩餘量。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "由剩餘量回推原有量。",
+    "literacyContextNecessity": "原有、支出與剩餘的方向關係決定x-240=680，情境不可改成任意加減。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "a76a52c1ce6ff9edcb1f57edceb7acf7415be6c414c45e71b07633661012508d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-v012",
+    "unitId": "u03",
+    "numericUnitId": 3,
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "literacy",
+    "type": "mc",
+    "visualMode": "text-only",
+    "figureId": null,
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "text": "某地目前氣溫為 x°C，夜間下降 7°C 後為－3°C。目前氣溫是多少？",
+    "choices": [
+      "-10",
+      "4",
+      "-4",
+      "10"
+    ],
+    "answerIndex": 1,
+    "explanation": "列x-7=-3；兩邊同加7；得到4°C。所以答案是「4」。",
+    "steps": [
+      "列x-7=-3",
+      "兩邊同加7",
+      "得到4°C"
+    ],
+    "optionAnalysis": [
+      {
+        "choice": "-10",
+        "truth": false,
+        "reason": "把下降後再減7。"
+      },
+      {
+        "choice": "4",
+        "truth": true,
+        "reason": "x-7=-3，兩邊加7得x=4。 因此此選項符合題目。"
+      },
+      {
+        "choice": "-4",
+        "truth": false,
+        "reason": "只看-3判成負4。"
+      },
+      {
+        "choice": "10",
+        "truth": false,
+        "reason": "將-3與7相加時符號錯。"
+      }
+    ],
+    "commonMistake": "把下降7誤寫成原值加7。",
+    "concept": "下降代表從原值減去。",
+    "tags": [
+      "代數",
+      "一元一次方程式基本解法",
+      "literacy"
+    ],
+    "estimatedTimeSec": "75",
+    "prerequisiteSkillIds": [
+      "linear-equation-balance-property"
+    ],
+    "authoringIntent": "以有向量變化列方程式。",
+    "literacyContextNecessity": "氣溫下降與最後溫度決定x-7=-3，正負方向是求解的必要情境資訊。",
+    "reviewStatus": "independently-reviewed",
+    "noTemplateDeclaration": true,
+    "contentSha256": "c0341627cab6aa2f45b58c1f0f8dad95f7a6894e051b3cff2140bc37970005f2",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  }
+];
+
+export const CONSTRUCTED_RESPONSES = [
+  {
+    "questionId": "u03-s004-cr001",
+    "unitId": "u03",
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "standard",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "解方程式 7x－11＝3x＋25，並將答案代回原式。",
+    "requiredWork": [
+      "集中未知數項。",
+      "集中常數項。",
+      "代回比較左右。"
+    ],
+    "fullCreditSolution": [
+      "兩邊減3x：4x-11=25。",
+      "兩邊加11：4x=36，x=9。",
+      "左邊63-11=52；右邊27+25=52。"
+    ],
+    "alternativeSolutions": [
+      "可先兩邊加11再減3x。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "解得9並完整驗算左右皆52。"
+      },
+      {
+        "score": 2,
+        "criteria": "解法正確但驗算缺失，或一處算術錯。"
+      },
+      {
+        "score": 1,
+        "criteria": "能整理成4x=36。"
+      },
+      {
+        "score": 0,
+        "criteria": "沒有合法等量步驟。"
+      }
+    ],
+    "scoringNotes": [
+      "等價且完整的代數步驟可接受。",
+      "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
+    ],
+    "commonErrors": [
+      "移項符號錯。",
+      "算到4x=36未除4。"
+    ],
+    "independentReview": {
+      "derivedResult": "x=9",
+      "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
+      "decision": "pass"
+    },
+    "contentSha256": "bed31dadfecb4a51ef4392f53876716827c06bc3bda01edfbaefe942cf032f2e",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  },
+  {
+    "questionId": "u03-s004-cr002",
+    "unitId": "u03",
+    "topicId": "u03-linear-equation-solving",
+    "skillId": "linear-equation-basic-solving",
+    "difficulty": "advanced",
+    "type": "constructed-response",
+    "visualMode": "text-only",
+    "figureId": null,
+    "prompt": "某數的 4 倍再減 13 等於該數的 2 倍加 9。求此數並說明列式。",
+    "requiredWork": [
+      "設未知數。",
+      "把兩種敘述放在等號兩邊。",
+      "解並驗算。"
+    ],
+    "fullCreditSolution": [
+      "設此數為x，列4x-13=2x+9。",
+      "兩邊減2x並加13：2x=22。",
+      "x=11；驗算31=31。"
+    ],
+    "alternativeSolutions": [
+      "可用兩邊差額：兩倍的數補足22。"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "criteria": "列式、解答與驗算完整。"
+      },
+      {
+        "score": 2,
+        "criteria": "列式正確但一處計算錯，或答案正確未驗算。"
+      },
+      {
+        "score": 1,
+        "criteria": "能寫出4x-13=2x+9。"
+      },
+      {
+        "score": 0,
+        "criteria": "列式無法反映兩個相等敘述。"
+      }
+    ],
+    "scoringNotes": [
+      "等價且完整的代數步驟可接受。",
+      "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
+    ],
+    "commonErrors": [
+      "把「再減13」寫成4(x-13)。",
+      "把兩句相加而非設等。"
+    ],
+    "independentReview": {
+      "derivedResult": "11",
+      "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
+      "decision": "pass"
+    },
+    "contentSha256": "fe3d7bb0ef3f787b028fe31f1e6e8a689b543e951da85796158cc70499b52ab4",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-record-at-final-integration"
+  }
+];
+
+export const DRAWING_SPECS = [];

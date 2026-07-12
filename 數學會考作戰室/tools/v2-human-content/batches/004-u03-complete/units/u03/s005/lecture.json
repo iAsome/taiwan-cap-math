@@ -1,0 +1,239 @@
+{
+  "lectureId": "u03-s005-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-solving",
+  "skillId": "linear-equation-parentheses",
+  "title": "含括號的一元一次方程式：先判斷層級再展開求解",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能以分配律正確展開括號。",
+    "能處理括號前負係數與巢狀括號。",
+    "能選擇先除係數或先展開的有效策略。",
+    "能由重複群組情境建立括號方程式。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-basic-solving",
+      "requiredLevel": "能解基本一元一次方程式，並檢查移項等同等量操作。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "括號層級",
+      "definition": "指出哪些項先視為一個整體。"
+    },
+    {
+      "term": "分配律",
+      "definition": "外係數乘括號內每一項。"
+    },
+    {
+      "term": "巢狀括號",
+      "definition": "括號內還包含另一層括號。"
+    },
+    {
+      "term": "群組量",
+      "definition": "每一組共同包含的數量，常寫在括號內。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a(x+b)",
+      "meaning": "a個相同群組，每組含x+b。"
+    },
+    {
+      "symbol": "-[x-(y+1)]",
+      "meaning": "須由內向外處理兩層負號。"
+    }
+  ],
+  "conceptNarrative": [
+    "含括號方程式最常見錯誤是外係數只乘第一項。",
+    "若方程式兩邊都有公因數，可先同除以該數，減少展開工作。",
+    "括號前負號等於乘-1，括號內每項都要變號。",
+    "生活題中「每一組都增加或減少」通常形成a(x±b)，而「總共增加」則在括號外。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "分配律展開",
+      "statement": "a(bx+c)=abx+ac。"
+    },
+    {
+      "name": "群組方程式",
+      "statement": "組數×每組量±整體額外量=總量。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a(x+b)=c ⇒ x+b=c/a",
+      "conditions": [
+        "a≠0"
+      ],
+      "meaning": "可先兩邊同除a。"
+    },
+    {
+      "formula": "a(x+b)+d=e",
+      "conditions": [
+        "依等量公理處理d與a"
+      ],
+      "meaning": "常見群組型方程式。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能把a(x+b)寫成ax+b。",
+    "括號內不是同類項時不可先合併。",
+    "情境中的每組變化與整體變化不能互換。",
+    "巢狀括號要由最內層開始。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "辨認括號代表運算群組還是情境群組。",
+      "check": "外係數作用範圍到哪裡？"
+    },
+    {
+      "step": 2,
+      "instruction": "評估先除共同係數或先展開。",
+      "check": "哪種方法項數較少？"
+    },
+    {
+      "step": 3,
+      "instruction": "用分配律處理每一項。",
+      "check": "負號是否全部分配？"
+    },
+    {
+      "step": 4,
+      "instruction": "合併同類項後解基本方程式。",
+      "check": "左右兩邊是否先化簡？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原括號式與情境。",
+      "check": "每組量與總量是否一致？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解4(x+3)=32。",
+      "solutionSteps": [
+        "兩邊除4得x+3=8。",
+        "x=5。"
+      ],
+      "answer": "5。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解6-3(x-2)=-9。",
+      "solutionSteps": [
+        "展開得6-3x+6=-9。",
+        "12-3x=-9，故x=7。"
+      ],
+      "answer": "7。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解2[5-(x+1)]=8。",
+      "solutionSteps": [
+        "內層5-(x+1)=4-x。",
+        "2(4-x)=8，4-x=4，所以x=0。"
+      ],
+      "answer": "0。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "8盒零件，每盒原有x個，整理後每盒多2個，共80個。",
+      "solutionSteps": [
+        "列8(x+2)=80。",
+        "x+2=10。",
+        "x=8。"
+      ],
+      "answer": "每盒原有8個。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "外係數只乘未知數項。",
+      "why": "忽略分配律作用於整個括號。",
+      "correction": "逐項畫箭頭相乘。"
+    },
+    {
+      "mistake": "-2(x-3)展成-2x-6。",
+      "why": "負負相乘符號錯。",
+      "correction": "第二項為+6。"
+    },
+    {
+      "mistake": "先把x+3合併成4x。",
+      "why": "未知數項與常數不是同類項。",
+      "correction": "保留括號或分配。"
+    },
+    {
+      "mistake": "巢狀括號從外層亂拆。",
+      "why": "未處理內部符號。",
+      "correction": "先化簡最內層。"
+    },
+    {
+      "mistake": "每盒多2個寫成8x+2。",
+      "why": "把每組變化當整體一次。",
+      "correction": "寫成8(x+2)。"
+    },
+    {
+      "mistake": "得到分數解就認為展開錯。",
+      "why": "預設答案一定整數。",
+      "correction": "代回確認即可。"
+    }
+  ],
+  "selfCheck": [
+    "外係數是否乘每一項？",
+    "括號前負號是否完整分配？",
+    "情境變化是每組還是總共？",
+    "是否選擇較簡潔的合法解法？",
+    "代回原括號式是否成立？"
+  ],
+  "summary": [
+    "括號表示整體。",
+    "分配律需乘每一項。",
+    "可先除共同係數。",
+    "每組變化通常放在括號內。"
+  ],
+  "connections": {
+    "previous": "建立在基本方程式與一元一次式展開上。",
+    "next": [
+      "含分母方程式會把括號與通分結合。",
+      "應用問題常以括號表示每組或每段變化。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s005-v001",
+      "u03-s005-v002",
+      "u03-s005-v003",
+      "u03-s005-v004",
+      "u03-s005-v005",
+      "u03-s005-v006",
+      "u03-s005-v007",
+      "u03-s005-v008",
+      "u03-s005-v009",
+      "u03-s005-v010",
+      "u03-s005-v011",
+      "u03-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s005-cr001",
+      "u03-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例逐一展開與代回：4(5+3)=32、6-3(7-2)=-9、2[5-(0+1)]=8、8(8+2)=80；特別核對負係數與每盒層級。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "4731260d831b7de47dc958891aefa36b3bab727e17413212652be4759f50912d",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

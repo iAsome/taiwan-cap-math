@@ -1,0 +1,231 @@
+{
+  "lectureId": "u03-s013-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-reasoning",
+  "skillId": "linear-equation-reasonableness",
+  "title": "解的合理性檢查：代數正確後仍要通過情境限制",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能區分代數解與情境可接受解。",
+    "能檢查正負、整數、範圍與單位。",
+    "能判斷是否允許小數與四捨五入。",
+    "能指出不合理結果應回查模型而非自行修改。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-consecutive-integers",
+      "requiredLevel": "能用一個未知數表示連續整數、偶數或奇數並列式。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "允許範圍",
+      "definition": "未知數依題目情境可以採用的數值範圍。"
+    },
+    {
+      "term": "離散量",
+      "definition": "只能以完整個數計算的量，如人數、票數、箱數。"
+    },
+    {
+      "term": "連續量",
+      "definition": "可取小數的量，如長度、時間、重量。"
+    },
+    {
+      "term": "情境解",
+      "definition": "既滿足方程式又符合題目限制的解。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "x為整數",
+      "meaning": "未知數只能是完整個數，不能使用小數。"
+    },
+    {
+      "symbol": "x>0",
+      "meaning": "未知數必須為正值。"
+    }
+  ],
+  "conceptNarrative": [
+    "解出 x 只是第一層代數檢查，還必須回到題目情境判斷能否接受。",
+    "人數、座位與箱數通常需非負整數；長度、重量與時間可依精度取小數。",
+    "負長度、負人數或超過容量的結果，即使代數步驟正確也不合理。",
+    "不合理時應回查列式、資料或題目是否無可行解，不能直接取絕對值或四捨五入。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "可接受解",
+      "statement": "同時滿足方程式與所有情境限制。"
+    },
+    {
+      "name": "不可接受解",
+      "statement": "雖可能滿足代數式，但違反正值、整數、範圍、容量或精度條件。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "代數驗算+定義域檢查=情境驗收",
+      "conditions": [
+        "題幹限制完整列出"
+      ],
+      "meaning": "合理性檢查流程。"
+    }
+  ],
+  "nonApplicableCases": [
+    "題目沒有指定近似時不可自行四捨五入。",
+    "百分率可超過100%，但特定容量情境可能不允許。",
+    "0是否可接受取決於量的意義。",
+    "年齡是否可用小數取決於題目是實際年齡或完整歲數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先代回原方程式。",
+      "check": "代數上是否成立？"
+    },
+    {
+      "step": 2,
+      "instruction": "辨認未知數屬於離散量或連續量。",
+      "check": "是否必須整數？"
+    },
+    {
+      "step": 3,
+      "instruction": "檢查正負與範圍。",
+      "check": "是否超過容量或低於0？"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查單位與精度。",
+      "check": "小數是否可被量測？"
+    },
+    {
+      "step": 5,
+      "instruction": "若不合理，回查模型。",
+      "check": "是否有人為取整或改符號？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "每組人數解為-2。",
+      "solutionSteps": [
+        "人數不可為負。",
+        "判定不可接受。"
+      ],
+      "answer": "回查列式。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "布長解為3.25公尺，尺可量到0.01公尺。",
+      "solutionSteps": [
+        "為正連續量。",
+        "精度足夠。"
+      ],
+      "answer": "合理。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "巴士數解為4.6台。",
+      "solutionSteps": [
+        "完整巴士數需整數。",
+        "未指定向上取整。"
+      ],
+      "answer": "不可直接接受。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "容納率為110%，且規定不得超載。",
+      "solutionSteps": [
+        "110%超過100%。",
+        "違反限制。"
+      ],
+      "answer": "不合理。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "代回正確就直接接受。",
+      "why": "忽略情境限制。",
+      "correction": "再檢查單位與範圍。"
+    },
+    {
+      "mistake": "負數取絕對值。",
+      "why": "改變原方程式解。",
+      "correction": "判定模型不合或重查。"
+    },
+    {
+      "mistake": "小數箱數直接向上取整。",
+      "why": "題目未授權取整。",
+      "correction": "保留不可接受判定。"
+    },
+    {
+      "mistake": "所有小數都否定。",
+      "why": "重量與時間可為小數。",
+      "correction": "依量型與精度判斷。"
+    },
+    {
+      "mistake": "百分率超過100%一律錯。",
+      "why": "增加率可超過100%。",
+      "correction": "看情境是否有上限。"
+    },
+    {
+      "mistake": "忽略題目額外條件。",
+      "why": "只看方程式。",
+      "correction": "將x>0等限制列成檢查表。"
+    }
+  ],
+  "selfCheck": [
+    "代數上是否成立？",
+    "未知數是離散量還是連續量？",
+    "是否需要正值或整數？",
+    "是否有容量與範圍限制？",
+    "是否有明確近似規則？"
+  ],
+  "summary": [
+    "方程式解不一定是情境答案。",
+    "離散量常需整數。",
+    "連續量可依精度用小數。",
+    "不合理時不可任意修改解。"
+  ],
+  "connections": {
+    "previous": "需要會驗算方程式並理解各類應用量的單位。",
+    "next": [
+      "方案比較要檢查交點是否位於可用範圍。",
+      "綜合素養題會同時檢查模型與情境。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s013-v001",
+      "u03-s013-v002",
+      "u03-s013-v003",
+      "u03-s013-v004",
+      "u03-s013-v005",
+      "u03-s013-v006",
+      "u03-s013-v007",
+      "u03-s013-v008",
+      "u03-s013-v009",
+      "u03-s013-v010",
+      "u03-s013-v011",
+      "u03-s013-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s013-cr001",
+      "u03-s013-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例分別檢查負人數、量測精度、小數巴士與容量上限；確認判定依據來自題幹，而非一律接受或拒絕小數。 並移除非必要集合符號，改以國中生可直接理解的整數與正值文字表示。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "036ea1f7e1a4e046a1f8784378c3293f7ce2b38fef69fc2e105fcbf915ec4401",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

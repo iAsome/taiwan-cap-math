@@ -1,0 +1,239 @@
+{
+  "lectureId": "u03-s004-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-solving",
+  "skillId": "linear-equation-basic-solving",
+  "title": "一元一次方程式基本解法：整理未知數與常數直到求出唯一解",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能解一步與兩步一元一次方程式。",
+    "能處理未知數出現在等式兩邊。",
+    "能正確處理負係數與小數係數。",
+    "能把解代回原式驗算。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-equation-balance-property",
+      "requiredLevel": "能在等式兩邊做相同加減乘除，且知道除數不可為零。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "一元一次方程式",
+      "definition": "只含一個未知數且未知數最高次數為1的方程式。"
+    },
+    {
+      "term": "係數",
+      "definition": "未知數前相乘的數。"
+    },
+    {
+      "term": "常數",
+      "definition": "不含未知數的數。"
+    },
+    {
+      "term": "孤立未知數",
+      "definition": "把方程式整理成x=某數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "ax+b=c",
+      "meaning": "基本一元一次方程式，a≠0。"
+    },
+    {
+      "symbol": "ax+b=cx+d",
+      "meaning": "未知數可能出現在等式兩邊。"
+    }
+  ],
+  "conceptNarrative": [
+    "解方程式的核心不是背移項，而是逐步使用等量公理。",
+    "通常先消去加減的常數，再除以未知數係數。",
+    "未知數在兩邊時，先選一邊集中未知數項，另一邊集中常數。",
+    "每一步保持精確，不因答案是負數或分數就擅自改值。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "方程式的解",
+      "statement": "代入後使左右兩邊相等的數。"
+    },
+    {
+      "name": "唯一解情況",
+      "statement": "整理後若ax=b且a≠0，則x=b/a。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "ax+b=c ⇒ x=(c-b)/a",
+      "conditions": [
+        "a≠0"
+      ],
+      "meaning": "兩步方程式的結果。"
+    },
+    {
+      "formula": "ax+b=cx+d ⇒ (a-c)x=d-b",
+      "conditions": [
+        "a≠c時有唯一解"
+      ],
+      "meaning": "兩邊含未知數的整理。"
+    }
+  ],
+  "nonApplicableCases": [
+    "若整理後未知數係數為0，要另判斷無解或無限多解；本節主要處理唯一解。",
+    "不能把小數係數任意四捨五入。",
+    "未知數若代表情境量，求解後還需檢查範圍。",
+    "未化簡兩邊前直接移項容易漏項。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先化簡等式左右兩邊。",
+      "check": "是否有同類項可合併？"
+    },
+    {
+      "step": 2,
+      "instruction": "把未知數項集中一邊。",
+      "check": "兩邊是否做同一加減？"
+    },
+    {
+      "step": 3,
+      "instruction": "把常數集中另一邊。",
+      "check": "負號是否正確？"
+    },
+    {
+      "step": 4,
+      "instruction": "除以未知數係數。",
+      "check": "係數是否非零？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原方程式。",
+      "check": "左右值是否完全相同？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "解x-13=8。",
+      "solutionSteps": [
+        "兩邊同加13。",
+        "x=21。"
+      ],
+      "answer": "21。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "解-5x=35。",
+      "solutionSteps": [
+        "兩邊同除以-5。",
+        "x=-7。"
+      ],
+      "answer": "-7。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "解7x+4=3x+24。",
+      "solutionSteps": [
+        "兩邊減3x得4x+4=24。",
+        "減4得4x=20。",
+        "x=5。"
+      ],
+      "answer": "5。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "解0.6x-1.5=2.1。",
+      "solutionSteps": [
+        "加1.5得0.6x=3.6。",
+        "除0.6得x=6。"
+      ],
+      "answer": "6。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "移項後符號未改。",
+      "why": "沒有實際做兩邊同加減。",
+      "correction": "寫出完整等量步驟。"
+    },
+    {
+      "mistake": "只做第一步就把中間值當答案。",
+      "why": "未知數仍帶係數。",
+      "correction": "最後確認式子是x=數。"
+    },
+    {
+      "mistake": "除負係數時漏負號。",
+      "why": "只看絕對值。",
+      "correction": "依異號相除為負。"
+    },
+    {
+      "mistake": "未知數兩邊同時移動但漏一項。",
+      "why": "未先列清每一項。",
+      "correction": "一次只移一類項。"
+    },
+    {
+      "mistake": "小數係數直接取整。",
+      "why": "想讓計算方便而改題。",
+      "correction": "同乘10或精確相除。"
+    },
+    {
+      "mistake": "求解後不驗算。",
+      "why": "無法發現符號或算術錯誤。",
+      "correction": "把答案代回原式兩邊。"
+    }
+  ],
+  "selfCheck": [
+    "左右兩邊是否先化簡？",
+    "未知數項與常數項是否分開？",
+    "最後是否除完整係數？",
+    "小數是否精確處理？",
+    "代回後左右是否相等？"
+  ],
+  "summary": [
+    "連續使用等量公理。",
+    "先整理再孤立未知數。",
+    "負數與小數解都可接受。",
+    "驗算是最後必要步驟。"
+  ],
+  "connections": {
+    "previous": "延續等量公理並使用一元一次式化簡。",
+    "next": [
+      "含括號方程式需先展開。",
+      "含分母方程式可先用最小公倍數消分母。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s004-v001",
+      "u03-s004-v002",
+      "u03-s004-v003",
+      "u03-s004-v004",
+      "u03-s004-v005",
+      "u03-s004-v006",
+      "u03-s004-v007",
+      "u03-s004-v008",
+      "u03-s004-v009",
+      "u03-s004-v010",
+      "u03-s004-v011",
+      "u03-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s004-cr001",
+      "u03-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "四例獨立代回：21-13=8、-5(-7)=35、7(5)+4=3(5)+24=39、0.6(6)-1.5=2.1；確認每個解唯一且無四捨五入。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "bc36afa2d132a9195cfca633ce35fbe46226c710907014a67fc213fe778f7149",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}

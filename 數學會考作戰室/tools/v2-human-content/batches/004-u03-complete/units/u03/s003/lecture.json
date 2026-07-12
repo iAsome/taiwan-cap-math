@@ -1,0 +1,250 @@
+{
+  "lectureId": "u03-s003-lecture-r1",
+  "unitId": "u03",
+  "topicId": "u03-linear-equation-solving",
+  "skillId": "linear-equation-balance-property",
+  "title": "等量公理：把方程式看成保持平衡的兩邊",
+  "audience": "國中零基礎至會考滿分",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能說明等號表示左右兩邊同值。",
+    "能在兩邊同加減或同乘除非零數。",
+    "能把移項還原為等量操作。",
+    "能由天平圖解釋方程式變形。"
+  ],
+  "prerequisites": [
+    {
+      "skillId": "linear-expression-simplify",
+      "requiredLevel": "能展開括號、合併同類項並理解等號表示左右同值。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "方程式",
+      "definition": "含未知數的等式。"
+    },
+    {
+      "term": "等量公理",
+      "definition": "等式兩邊做相同合法運算後仍相等。"
+    },
+    {
+      "term": "移項",
+      "definition": "等量操作的簡寫，不是項目自行穿越等號。"
+    },
+    {
+      "term": "解",
+      "definition": "使方程式左右兩邊相等的未知數值。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "=",
+      "meaning": "左右兩個式子的值相同。"
+    },
+    {
+      "symbol": "a=b⇒a+c=b+c",
+      "meaning": "兩邊同加c保持相等。"
+    }
+  ],
+  "conceptNarrative": [
+    "方程式像平衡天平，左右兩盤重量相同。",
+    "從一邊拿走多少，另一邊也要拿走同樣的量；加入與乘除同理。",
+    "兩邊同除時除數不能為0，因為除以0沒有定義。",
+    "課本常說移項變號，真正理由是兩邊同加或同減某一項。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "加減等量公理",
+      "statement": "若a=b，則a+c=b+c且a-c=b-c。"
+    },
+    {
+      "name": "乘法等量公理",
+      "statement": "若a=b，則ac=bc。"
+    },
+    {
+      "name": "除法等量公理",
+      "statement": "若a=b且c≠0，則a/c=b/c。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a=b ⇔ a+c=b+c",
+      "conditions": [
+        "c為任意數"
+      ],
+      "meaning": "兩邊同加減。"
+    },
+    {
+      "formula": "a=b ⇔ ac=bc",
+      "conditions": [
+        "反推時c不可為0"
+      ],
+      "meaning": "兩邊同乘。"
+    },
+    {
+      "formula": "a=b ⇔ a/c=b/c",
+      "conditions": [
+        "c≠0"
+      ],
+      "meaning": "兩邊同除。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不能只改等式一邊。",
+    "兩邊乘不同數不保證相等。",
+    "不能兩邊同除以0。",
+    "平方等非可逆操作在進階情況可能產生額外解，本單元不以此替代基本等量步驟。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認要消去哪個加項或係數。",
+      "check": "目標是讓未知數逐步單獨嗎？"
+    },
+    {
+      "step": 2,
+      "instruction": "選擇逆運算。",
+      "check": "加對應減、乘對應除？"
+    },
+    {
+      "step": 3,
+      "instruction": "在等式兩邊完全相同地執行。",
+      "check": "右邊是否也有改變？"
+    },
+    {
+      "step": 4,
+      "instruction": "化簡新等式。",
+      "check": "除數是否非零？"
+    },
+    {
+      "step": 5,
+      "instruction": "代回原式檢查。",
+      "check": "左右是否同值？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "由x+11=20求x。",
+      "solutionSteps": [
+        "兩邊同減11。",
+        "x=9。"
+      ],
+      "answer": "x=9。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "由-3x=18求x。",
+      "solutionSteps": [
+        "兩邊同除以-3。",
+        "x=-6。"
+      ],
+      "answer": "x=-6。"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "說明5x-2=13如何變成5x=15。",
+      "solutionSteps": [
+        "兩邊同加2。",
+        "左邊-2與+2抵消，右邊13+2=15。"
+      ],
+      "answer": "使用加法等量公理。"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "天平左盤有一盒未知重物與4個單位砝碼，右盤有10個單位砝碼。",
+      "solutionSteps": [
+        "關係為x+4=10。",
+        "兩盤各移4個砝碼。",
+        "剩x=6。"
+      ],
+      "answer": "盒子重6個單位。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "只在左邊減常數。",
+      "why": "破壞等式平衡。",
+      "correction": "兩邊同減。"
+    },
+    {
+      "mistake": "把乘法係數移項成減法。",
+      "why": "未選逆運算。",
+      "correction": "乘法係數應以除法消去。"
+    },
+    {
+      "mistake": "兩邊同除以0。",
+      "why": "除以0沒有定義。",
+      "correction": "先確認除數非零。"
+    },
+    {
+      "mistake": "把移項當成項目自動變號。",
+      "why": "失去操作理由，易在複雜式出錯。",
+      "correction": "每一步寫成兩邊同加減。"
+    },
+    {
+      "mistake": "天平圖只移一盤砝碼。",
+      "why": "忽略平衡條件。",
+      "correction": "兩盤做完全相同的動作。"
+    },
+    {
+      "mistake": "完成一步後未化簡。",
+      "why": "等式仍雜亂，容易重複操作。",
+      "correction": "每步立即合併與約分。"
+    }
+  ],
+  "selfCheck": [
+    "兩邊是否做同一運算？",
+    "逆運算是否正確？",
+    "除數是否非零？",
+    "移項能否解釋成等量公理？",
+    "最後是否代回原式？"
+  ],
+  "summary": [
+    "等號表示同值。",
+    "兩邊同做合法運算保持相等。",
+    "移項只是等量操作的簡寫。",
+    "天平模型可直觀解釋等量公理。"
+  ],
+  "connections": {
+    "previous": "需要先會化簡一元一次式與理解等號。",
+    "next": [
+      "下一節把等量公理連續使用來解基本方程式。",
+      "後續含括號與分母方程式仍遵守同一原理。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u03-s003-v001",
+      "u03-s003-v002",
+      "u03-s003-v003",
+      "u03-s003-v004",
+      "u03-s003-v005",
+      "u03-s003-v006",
+      "u03-s003-v007",
+      "u03-s003-v008",
+      "u03-s003-v009",
+      "u03-s003-v010",
+      "u03-s003-v011",
+      "u03-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u03-s003-cr001",
+      "u03-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high CAP scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "逐步驗證四例每次操作兩邊一致，-3除數非零；天平例由x+4=10各減4得到x=6，圖示中的盒子與單位砝碼數量亦逐項核對。",
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12"
+  },
+  "contentSha256": "1001c7ef319677e00bb3c72f8d3a6cb59519337974f4a9ca256a47313075e761",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+}
