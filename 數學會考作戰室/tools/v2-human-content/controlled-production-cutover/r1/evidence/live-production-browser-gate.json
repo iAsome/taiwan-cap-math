@@ -1,0 +1,541 @@
+{
+  "status": "PASS_LIVE_HUMAN_PRODUCTION_BROWSER_GATE_R1",
+  "browserExecutable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "browserVersion": "Chrome/150.0.7871.101",
+  "tests": [
+    {
+      "name": "generated-v2-query-rollback",
+      "pass": true,
+      "engine": "generated-v2-rollback"
+    },
+    {
+      "name": "human-production-default",
+      "pass": true,
+      "contentVersion": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+      "counts": {
+        "units": 23,
+        "skills": 339,
+        "lectures": 339,
+        "mcQuestions": 4068,
+        "constructedResponses": 678,
+        "figures": 178
+      },
+      "mock": {
+        "mc": 25,
+        "cr": 2,
+        "minutes": 80,
+        "sameSeed": true,
+        "differentSeed": true
+      },
+      "quizResults": [
+        {
+          "quizId": "u01-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u02-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u03-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u04-human-rc",
+          "count": 14,
+          "deterministic": true
+        },
+        {
+          "quizId": "u05-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u06-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u07-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u08-human-rc",
+          "count": 14,
+          "deterministic": true
+        },
+        {
+          "quizId": "u09-human-rc",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u10-human-rc",
+          "count": 13,
+          "deterministic": true
+        },
+        {
+          "quizId": "u11-human-rc",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u12-human-rc",
+          "count": 10,
+          "deterministic": true
+        },
+        {
+          "quizId": "u13-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u14-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u15-human-rc",
+          "count": 13,
+          "deterministic": true
+        },
+        {
+          "quizId": "u16-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u17-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u18-human-rc",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u19-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u20-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u21-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u22-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u23-human-rc",
+          "count": 20,
+          "deterministic": true
+        }
+      ],
+      "completed": [
+        "u03",
+        "u01",
+        "u02"
+      ],
+      "legacyBackup": [
+        {
+          "id": "generated-history-backup-test"
+        }
+      ],
+      "migration": {
+        "status": "COMPLETE",
+        "schemaVersion": "math-v2-human-storage-migration-r1",
+        "migratedAt": "2026-07-12T16:10:22.724Z",
+        "completed": {
+          "target": "capMath.human.r1.completed",
+          "action": "merged",
+          "count": 3
+        },
+        "paperHistory": {
+          "target": "capMath.human.r1.paperHistory",
+          "action": "copied-compatible-human-rc"
+        },
+        "legacyPaperHistoryBackup": {
+          "target": "capMath.human.r1.legacyPaperHistoryBackup",
+          "action": "archived-generated-history"
+        },
+        "dark": {
+          "target": "capMath.human.r1.dark",
+          "action": "no-source"
+        },
+        "lastSeed": {
+          "target": "capMath.human.r1.lastSeed",
+          "action": "no-source"
+        },
+        "lastQuizSeed": {
+          "target": "capMath.human.r1.lastQuizSeed",
+          "action": "no-source"
+        },
+        "quizSignatures": [],
+        "sourceKeysDeleted": false
+      },
+      "sourceKeysStillPresent": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "human-production-mock",
+      "pass": true,
+      "mc": 25,
+      "cr": 2,
+      "minutes": 80,
+      "sameSeed": true,
+      "differentSeed": true
+    },
+    {
+      "name": "all-23-unit-quizzes",
+      "pass": true,
+      "quizResults": [
+        {
+          "quizId": "u01-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u02-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u03-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u04-human-rc",
+          "count": 14,
+          "deterministic": true
+        },
+        {
+          "quizId": "u05-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u06-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u07-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u08-human-rc",
+          "count": 14,
+          "deterministic": true
+        },
+        {
+          "quizId": "u09-human-rc",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u10-human-rc",
+          "count": 13,
+          "deterministic": true
+        },
+        {
+          "quizId": "u11-human-rc",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u12-human-rc",
+          "count": 10,
+          "deterministic": true
+        },
+        {
+          "quizId": "u13-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u14-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u15-human-rc",
+          "count": 13,
+          "deterministic": true
+        },
+        {
+          "quizId": "u16-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u17-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u18-human-rc",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u19-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u20-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u21-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u22-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u23-human-rc",
+          "count": 20,
+          "deterministic": true
+        }
+      ]
+    },
+    {
+      "name": "production-storage-migration",
+      "pass": true,
+      "contentVersion": "d402487b40bca04f3278b231262abfb3aa7fd1d1448454e877ff8c76af25082f",
+      "counts": {
+        "units": 23,
+        "skills": 339,
+        "lectures": 339,
+        "mcQuestions": 4068,
+        "constructedResponses": 678,
+        "figures": 178
+      },
+      "mock": {
+        "mc": 25,
+        "cr": 2,
+        "minutes": 80,
+        "sameSeed": true,
+        "differentSeed": true
+      },
+      "quizResults": [
+        {
+          "quizId": "u01-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u02-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u03-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u04-human-rc",
+          "count": 14,
+          "deterministic": true
+        },
+        {
+          "quizId": "u05-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u06-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u07-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u08-human-rc",
+          "count": 14,
+          "deterministic": true
+        },
+        {
+          "quizId": "u09-human-rc",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u10-human-rc",
+          "count": 13,
+          "deterministic": true
+        },
+        {
+          "quizId": "u11-human-rc",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u12-human-rc",
+          "count": 10,
+          "deterministic": true
+        },
+        {
+          "quizId": "u13-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u14-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u15-human-rc",
+          "count": 13,
+          "deterministic": true
+        },
+        {
+          "quizId": "u16-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u17-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u18-human-rc",
+          "count": 16,
+          "deterministic": true
+        },
+        {
+          "quizId": "u19-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u20-human-rc",
+          "count": 15,
+          "deterministic": true
+        },
+        {
+          "quizId": "u21-human-rc",
+          "count": 12,
+          "deterministic": true
+        },
+        {
+          "quizId": "u22-human-rc",
+          "count": 18,
+          "deterministic": true
+        },
+        {
+          "quizId": "u23-human-rc",
+          "count": 20,
+          "deterministic": true
+        }
+      ],
+      "completed": [
+        "u03",
+        "u01",
+        "u02"
+      ],
+      "legacyBackup": [
+        {
+          "id": "generated-history-backup-test"
+        }
+      ],
+      "migration": {
+        "status": "COMPLETE",
+        "schemaVersion": "math-v2-human-storage-migration-r1",
+        "migratedAt": "2026-07-12T16:10:22.724Z",
+        "completed": {
+          "target": "capMath.human.r1.completed",
+          "action": "merged",
+          "count": 3
+        },
+        "paperHistory": {
+          "target": "capMath.human.r1.paperHistory",
+          "action": "copied-compatible-human-rc"
+        },
+        "legacyPaperHistoryBackup": {
+          "target": "capMath.human.r1.legacyPaperHistoryBackup",
+          "action": "archived-generated-history"
+        },
+        "dark": {
+          "target": "capMath.human.r1.dark",
+          "action": "no-source"
+        },
+        "lastSeed": {
+          "target": "capMath.human.r1.lastSeed",
+          "action": "no-source"
+        },
+        "lastQuizSeed": {
+          "target": "capMath.human.r1.lastQuizSeed",
+          "action": "no-source"
+        },
+        "quizSignatures": [],
+        "sourceKeysDeleted": false
+      },
+      "sourceKeysStillPresent": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "production-exam-ui",
+      "pass": true,
+      "questionCount": 27,
+      "crCount": 2,
+      "timer": "80:00",
+      "width": 749,
+      "client": 749
+    },
+    {
+      "name": "production-mobile-layout",
+      "pass": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "questionCount": 27
+    },
+    {
+      "name": "v1-query-rollback",
+      "pass": true,
+      "engine": "v1-rollback"
+    }
+  ],
+  "passed": 8,
+  "failed": 0,
+  "httpRequestCount": 81,
+  "consoleErrors": [],
+  "runtimeExceptions": [],
+  "networkErrors": [],
+  "productionActivated": true,
+  "generatedV2RollbackAvailable": true,
+  "v1RollbackAvailable": true,
+  "oldDatabaseDeletionAllowed": false
+}

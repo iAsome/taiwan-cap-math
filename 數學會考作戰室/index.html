@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css?v=20260711a&amp;mv=20260712v2">
 </head>
 <body>
-  <a class="skip-link" href="#main">跳到主要內容</a>
+<a class="skip-link" href="#main">跳到主要內容</a>
   <div class="app-shell">
     <aside class="sidebar" aria-label="主要導覽">
       <button class="brand" data-view="home" aria-label="回首頁">
@@ -61,7 +61,7 @@
               <div class="hero-facts" aria-label="考試規格">
                 <div><strong>25</strong><span>選擇題模擬</span></div>
                 <div><strong>80</strong><span>分鐘</span></div>
-                <div><strong>4,068</strong><span>純文字四選一題</span></div>
+                <div><strong>4,068</strong><span>人工作者四選一題</span></div>
                 <div><strong>275</strong><span>十年逐題分析</span></div>
               </div>
             </div>
@@ -97,7 +97,7 @@
 
         <section class="view" id="view-exam" aria-labelledby="examTitle">
           <div class="page-heading exam-heading">
-            <div><p class="eyebrow" id="examEyebrow">模擬考</p><h1 id="examTitle">會考數學模擬考</h1><p id="examDescription">練習用 25 題選擇模擬，共 80 分鐘。依題型池與 106–115 年主概念權重抽樣，不含非選擇題。</p></div>
+            <div><p class="eyebrow" id="examEyebrow">模擬考</p><h1 id="examTitle">會考數學模擬考</h1><p id="examDescription">練習用 25 題選擇＋2 題非選擇，共 80 分鐘。依人工作者 RC 藍圖抽樣。</p></div>
             <div class="exam-controls" id="examSetup">
               <label>卷別種子<input id="seedInput" type="number" min="1" max="999999" value="11527"></label>
               <label>數值強度<select id="levelSelect"><option value="1">穩固基礎</option><option value="2" selected>會考平衡</option><option value="3">高鑑別度</option></select></label>
@@ -224,13 +224,13 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="data.js?v=20260711a&amp;mv=20260712v2"></script>
-  <script src="analysis-data.js?v=20260711a&amp;mv=20260712v2"></script>
+  <script src="human-runtime/site-shell-data.js?v=20260712-human-production-r1"></script>
+  <script src="human-runtime/analysis-data.js?v=20260712-human-production-r1"></script>
   <script src="../shared/fraction-markup.js?v=20260711a&amp;mv=20260712v2"></script>
   <script src="../shared/text-only-policy.js?v=20260711a&amp;mv=20260712v2"></script>
   <script src="../shared/paper-history-ui.js?v=20260711a&amp;mv=20260712v2"></script>
   <script src="../shared/exam-choice-ui.js?v=20260711a&amp;mv=20260712v2"></script>
   <script src="math-text-sanitize.js?v=20260711a&amp;mv=20260712v2"></script>
-  <script src="math-bootstrap.js?v=20260711a&amp;mv=20260712v2"></script>
+  <script src="math-bootstrap.js?v=20260712-human-production-r1"></script>
 </body>
 </html>

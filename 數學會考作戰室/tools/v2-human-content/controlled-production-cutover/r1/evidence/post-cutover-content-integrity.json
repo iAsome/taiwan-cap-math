@@ -1,0 +1,22 @@
+{
+  "status": "PASS_POST_CUTOVER_CONTENT_INTEGRITY_R1",
+  "batchCount": 24,
+  "batchPassed": 24,
+  "globalAuditR2": "PASS_GLOBAL_AUDIT_R2",
+  "counts": {
+    "skillDirectories": 339,
+    "lectures": 339,
+    "mcQuestions": 4068,
+    "constructedResponses": 678,
+    "semanticReviews": 4068,
+    "drawingSpecs": 178,
+    "svgFigures": 178
+  },
+  "unresolvedDuplicateGroups": 0,
+  "productionActivated": true,
+  "oldDatabaseDeletionAllowed": false,
+  "console": {
+    "batch": "{\n  \"status\": \"PASS\",\n  \"batchCount\": 24,\n  \"passed\": 24,\n  \"failed\": [],\n  \"outputFile\": \"C:\\\\Users\\\\iAsom\\\\Documents\\\\GitHub\\\\taiwan-cap-math-u01-u23-full-production-r1\\\\數學會考作戰室\\\\tools\\\\v2-human-content\\\\controlled-production-cutover\\\\r1\\\\evidence\\\\content-integrity\\\\batch-verifier-matrix-r2.json\"\n}",
+    "audit": "{\n  \"status\": \"PASS_GLOBAL_AUDIT_R2\",\n  \"counts\": {\n    \"skillDirectories\": 339,\n    \"lectures\": 339,\n    \"mcQuestions\": 4068,\n    \"constructedResponses\": 678,\n    \"semanticReviews\": 4068,\n    \"drawingSpecs\": 178,\n    \"svgFigures\": 178\n  },\n  \"criticalBlockers\": [],\n  \"rawDuplicateCounts\": {\n    \"exactMcPromptGroups\": 0,\n    \"crossUnitPromptSkeletonGroups\": 0,\n    \"numberSwapCandidateGroups\": 22,\n    \"exactConstructedResponseGroups\": 0\n  },\n  \"adjudicatedRetainedNumberSwapGroups\": 22,\n  \"unresolvedDuplicateGroups\": 0,\n  \"issues\": [],\n  \"productionActivationAllowed\": false,\n  \"oldDatabaseDeletionAllowed\": false\n}"
+  }
+}
