@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "U09 semantic review",
+  "type": "object",
+  "required": [
+    "reviewId",
+    "questionId",
+    "independentRecalculation",
+    "correctChoiceCheck",
+    "distractorAudit",
+    "singleCorrectAnswerEvidence",
+    "ambiguityDecision",
+    "decision",
+    "contentAuthority",
+    "contentSha256"
+  ],
+  "properties": {
+    "decision": {
+      "const": "pass"
+    },
+    "distractorAudit": {
+      "type": "array",
+      "minItems": 3
+    },
+    "contentAuthority": {
+      "const": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  }
+}

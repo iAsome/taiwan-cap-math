@@ -1,0 +1,229 @@
+{
+  "lectureId": "u09-s003-lecture-r1",
+  "unitId": "u09",
+  "numericUnitId": 9,
+  "topicId": "u09-display",
+  "skillId": "bar-chart-text",
+  "lockedTitle": "長條圖文字判讀",
+  "title": "長條圖文字判讀：刻度比柱子外觀更重要",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "reviewStatus": "independently-reviewed",
+  "prerequisiteBridge": {
+    "skillIds": [
+      "frequency-table"
+    ],
+    "explanation": "需能由次數表讀出類別、次數與相對次數。"
+  },
+  "learningGoals": [
+    "辨認橫軸類別、縱軸尺度與單位。",
+    "精確讀取柱高並求差、和與比例。",
+    "判讀分組長條圖與圖例。",
+    "辨識縱軸截斷造成的視覺誤導。",
+    "在不同總量下選擇公平比較指標。"
+  ],
+  "vocabulary": [
+    {
+      "term": "長條圖",
+      "meaning": "用分離的長條表示離散類別大小。"
+    },
+    {
+      "term": "刻度",
+      "meaning": "座標軸每格代表的數值。"
+    },
+    {
+      "term": "基線",
+      "meaning": "長條開始的位置，通常是 0。"
+    },
+    {
+      "term": "圖例",
+      "meaning": "說明顏色或紋理對應群組的標示。"
+    },
+    {
+      "term": "截斷軸",
+      "meaning": "座標軸未從 0 開始的呈現方式。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "Δ",
+      "meaning": "兩柱數值差，可用大值減小值。"
+    },
+    {
+      "symbol": "每萬人",
+      "meaning": "把不同人口規模標準化後的比較單位。"
+    }
+  ],
+  "conceptDevelopment": [
+    "長條圖適合比較不同類別，柱子通常彼此分開。",
+    "柱高要依縱軸刻度換算；6 格不一定是 6，若每格 5 就是 30。",
+    "分組長條圖要先讀圖例，再在同一類別內比較。",
+    "縱軸不從 0 開始時，視覺差異會被放大，實際比較仍以刻度數值為準。",
+    "若類別背後總人口不同，總數柱高未必能代表個人資源或風險。"
+  ],
+  "definitions": [
+    {
+      "name": "柱高",
+      "statement": "長條頂端在縱軸對應的資料值。"
+    },
+    {
+      "name": "公平比較",
+      "statement": "將不同規模群體換算到共同分母後再比較。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "差值＝較大柱值－較小柱值",
+      "conditions": [
+        "同單位同尺度"
+      ]
+    },
+    {
+      "formula": "部分占比＝指定柱值合計÷全部柱值合計",
+      "conditions": [
+        "類別互斥且完整"
+      ]
+    },
+    {
+      "formula": "每單位人口率＝事件數÷人口數×標準人口",
+      "conditions": [
+        "比較不同人口規模"
+      ]
+    }
+  ],
+  "invalidUseCases": [
+    "只比較柱子的可見長度，不看軸起點。",
+    "把柱寬或排列位置當成資料大小。",
+    "分組圖未讀圖例就相加。",
+    "人口不同時直接說公園總數多者服務一定較好。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "action": "讀圖名與兩軸。"
+    },
+    {
+      "step": 2,
+      "action": "確認縱軸從哪裡開始及每格多少。"
+    },
+    {
+      "step": 3,
+      "action": "依圖例讀取指定柱。"
+    },
+    {
+      "step": 4,
+      "action": "按題意算差、和、比例或門檻。"
+    },
+    {
+      "step": 5,
+      "action": "檢查是否需要用人口或期間標準化。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "L1",
+      "prompt": "柱高 6 格，每格 5 件。",
+      "solution": [
+        "6×5=30。"
+      ],
+      "answer": "30 件。"
+    },
+    {
+      "id": "L2",
+      "prompt": "軸從 50 起，兩值 54、58。",
+      "solution": [
+        "實際差 58-54=4。",
+        "可見柱段 4 與 8 不代表資料倍數。"
+      ],
+      "answer": "差 4。"
+    },
+    {
+      "id": "L3",
+      "prompt": "A 區 12 座公園／6 萬人，B 區 18 座／18 萬人。",
+      "solution": [
+        "A 每萬人 2 座。",
+        "B 每萬人 1 座。"
+      ],
+      "answer": "以每萬人比較時 A 較高。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "柱高 6 格答 6 件。",
+      "why": "忽略每格代表 5。",
+      "fix": "格數乘刻度。"
+    },
+    {
+      "wrong": "58 看起來是 54 的兩倍。",
+      "why": "截斷軸從 50 起。",
+      "fix": "比較軸標數值。"
+    },
+    {
+      "wrong": "乙班男生柱最高，所以乙班總人數較多。",
+      "why": "只看一個子群。",
+      "fix": "同班各柱合計。"
+    },
+    {
+      "wrong": "公園 18 座一定優於 12 座。",
+      "why": "忽略人口分母。",
+      "fix": "換算每萬人數。"
+    }
+  ],
+  "selfCheck": [
+    "縱軸是否從 0 開始？",
+    "每格代表多少？",
+    "圖例配對正確嗎？",
+    "比較的是總數還是率？"
+  ],
+  "summary": [
+    "長條圖先讀刻度，再看高度。",
+    "截斷軸可能放大視覺差。",
+    "分組圖必須先辨識圖例。",
+    "不同規模群體常需換算成率。"
+  ],
+  "connections": {
+    "previous": "次數與相對次數分配表提供柱高資料。",
+    "next": [
+      "折線圖將有順序的資料點連起來，重點轉為變化。",
+      "直方圖雖像長條圖，但表示連續區間且柱子相連。"
+    ]
+  },
+  "figureReferences": [
+    "u09-fig-bar-01",
+    "u09-fig-bar-02",
+    "u09-fig-bar-03"
+  ],
+  "accessibilityNotes": "三張圖皆附完整 alt text；即使不看圖，也可由文字數值完成計算。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u09-s003-v001",
+      "u09-s003-v002",
+      "u09-s003-v003",
+      "u09-s003-v004",
+      "u09-s003-v005",
+      "u09-s003-v006",
+      "u09-s003-v007",
+      "u09-s003-v008",
+      "u09-s003-v009",
+      "u09-s003-v010",
+      "u09-s003-v011",
+      "u09-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u09-s003-cr001",
+      "u09-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "特別建立長條圖與視覺誤導、圖例、標準化比較的區別。",
+    "scopeCheck": "符合國中會考範圍；未引入四分位數與盒狀圖。",
+    "prerequisiteAudit": "需能由次數表讀出類別、次數與相對次數。",
+    "symbolAndUnitAudit": "所有符號在使用前定義；單位與取位規則在例題中明示。",
+    "skillSpecificEvidence": "包含正常零基線、截斷軸、雙組圖與門檻線四種判讀。",
+    "legacyContentUsed": false,
+    "decision": "pass"
+  },
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "contentSha256": "342461cfd60e785f488fbe419d5e292f1755989060e670f30c4a0bc6eab4b1dd"
+}

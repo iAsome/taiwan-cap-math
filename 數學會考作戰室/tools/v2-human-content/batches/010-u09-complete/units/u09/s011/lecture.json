@@ -1,0 +1,236 @@
+{
+  "lectureId": "u09-s011-lecture-r1",
+  "unitId": "u09",
+  "numericUnitId": 9,
+  "topicId": "u09-summary",
+  "skillId": "mode-range-basic",
+  "lockedTitle": "眾數與全距",
+  "title": "眾數與全距：看最常出現與整體跨度",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "reviewStatus": "independently-reviewed",
+  "prerequisiteBridge": {
+    "skillIds": [
+      "median-basic"
+    ],
+    "explanation": "需能排序資料並辨認中位數的位置，且會做最大值減最小值。"
+  },
+  "learningGoals": [
+    "找出一組資料的眾數。",
+    "辨認無眾數、單一眾數與多眾數。",
+    "計算全距。",
+    "說明眾數與全距各自描述的面向。",
+    "判斷資料變動對眾數與全距的影響。"
+  ],
+  "vocabulary": [
+    {
+      "term": "眾數",
+      "meaning": "一組資料中出現次數最多的資料值。"
+    },
+    {
+      "term": "多眾數",
+      "meaning": "有兩個以上資料值並列最高次數。"
+    },
+    {
+      "term": "無眾數",
+      "meaning": "所有資料值出現次數相同，沒有誰特別最多。"
+    },
+    {
+      "term": "全距",
+      "meaning": "最大值減最小值，表示資料總跨度。"
+    },
+    {
+      "term": "離散程度",
+      "meaning": "資料彼此分散的程度；全距是最簡單的描述之一。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "眾數",
+      "meaning": "以資料原單位表示，不是出現次數本身。"
+    },
+    {
+      "symbol": "R",
+      "meaning": "全距，R=最大值−最小值。"
+    },
+    {
+      "symbol": "f",
+      "meaning": "某資料值的次數。"
+    }
+  ],
+  "conceptDevelopment": [
+    "眾數回答「哪個值最常見」，所以要比較次數；答案是資料值，不是最高次數。",
+    "可能有一個、兩個或更多眾數；若每個值次數相同，通常說沒有眾數。",
+    "全距只由最大值與最小值決定，中間資料怎麼變通常不影響全距。",
+    "極端值會直接擴大全距，因此全距容易受離群值影響。",
+    "眾數適用於類別資料，例如最受歡迎口味；平均數則不一定能用於類別。"
+  ],
+  "definitions": [
+    {
+      "name": "眾數",
+      "statement": "出現次數達到全組最高的資料值；並列者全部列出。"
+    },
+    {
+      "name": "全距",
+      "statement": "一組數值資料的最大值減最小值。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "全距＝最大值－最小值",
+      "conditions": [
+        "資料為可比較大小的數值",
+        "至少有一筆資料"
+      ]
+    },
+    {
+      "formula": "眾數＝次數最高所對應的資料值",
+      "conditions": [
+        "需比較所有資料值的次數",
+        "並列最高時全部列出"
+      ]
+    }
+  ],
+  "invalidUseCases": [
+    "把最高次數本身當眾數。",
+    "只因某值重複就認定是眾數，未檢查是否有其他值更多。",
+    "所有值各一次時挑最大值當眾數。",
+    "全距用最大值加最小值。",
+    "對顏色、口味等類別資料計算全距。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "action": "整理各資料值及其出現次數。"
+    },
+    {
+      "step": 2,
+      "action": "找最高次數並列出所有並列資料值。"
+    },
+    {
+      "step": 3,
+      "action": "判斷是無眾數、單一眾數或多眾數。"
+    },
+    {
+      "step": 4,
+      "action": "找最大值與最小值。"
+    },
+    {
+      "step": 5,
+      "action": "用最大值減最小值求全距，並解釋資料跨度。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "L1",
+      "prompt": "鞋號 23、24、24、24、25、25。",
+      "solution": [
+        "24 出現3次，25出現2次，其餘1次。"
+      ],
+      "answer": "眾數24。"
+    },
+    {
+      "id": "L2",
+      "prompt": "資料 2、2、5、5、8。",
+      "solution": [
+        "2與5都出現2次，並列最高。"
+      ],
+      "answer": "眾數為2與5。"
+    },
+    {
+      "id": "L3",
+      "prompt": "資料 4、7、9、13、13。",
+      "solution": [
+        "最大13，最小4。",
+        "13-4=9。"
+      ],
+      "answer": "全距9。"
+    },
+    {
+      "id": "L4",
+      "prompt": "資料 10、11、11、12、50。",
+      "solution": [
+        "眾數11。",
+        "全距=50-10=40。",
+        "50 使全距很大。"
+      ],
+      "answer": "最常見為11，但跨度40顯示有極端值。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "24出現3次，所以眾數是3。",
+      "why": "混淆資料值與次數。",
+      "fix": "眾數是24。"
+    },
+    {
+      "wrong": "2、2、5、5只有眾數2。",
+      "why": "漏掉並列最高。",
+      "fix": "2與5都是眾數。"
+    },
+    {
+      "wrong": "1、3、5的眾數是5。",
+      "why": "所有值都只出現一次。",
+      "fix": "此組沒有眾數。"
+    },
+    {
+      "wrong": "全距=最大值+最小值。",
+      "why": "不理解跨度。",
+      "fix": "最大值−最小值。"
+    }
+  ],
+  "selfCheck": [
+    "我找的是資料值還是次數？",
+    "是否有並列最高？",
+    "所有值次數相同嗎？",
+    "最大值與最小值辨認正確嗎？",
+    "全距是否用減法且保留單位？"
+  ],
+  "summary": [
+    "眾數是出現最頻繁的資料值。",
+    "眾數可能沒有或不只一個。",
+    "全距＝最大值−最小值。",
+    "全距受極端值影響大。"
+  ],
+  "connections": {
+    "previous": "中位數看中央位置；眾數改看出現頻率。",
+    "next": [
+      "加權平均會讓不同資料對結果有不同影響。",
+      "兩組資料比較會同時考慮代表值與全距。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": "本講義可完全以文字理解；若有圖形，替代文字提供所有必要數值。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u09-s011-v001",
+      "u09-s011-v002",
+      "u09-s011-v003",
+      "u09-s011-v004",
+      "u09-s011-v005",
+      "u09-s011-v006",
+      "u09-s011-v007",
+      "u09-s011-v008",
+      "u09-s011-v009",
+      "u09-s011-v010",
+      "u09-s011-v011",
+      "u09-s011-v012"
+    ],
+    "constructedResponseIds": [
+      "u09-s011-cr001",
+      "u09-s011-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "完整處理無眾數、多眾數、類別資料與全距的極端值敏感性。",
+    "scopeCheck": "符合國中會考範圍；未引入四分位數與盒狀圖。",
+    "prerequisiteAudit": "需能排序資料並辨認中位數的位置，且會做最大值減最小值。",
+    "symbolAndUnitAudit": "所有符號在使用前定義；單位與取位規則在例題中明示。",
+    "skillSpecificEvidence": "例題涵蓋單眾數、雙眾數、全距及眾數與跨度同時判讀。",
+    "legacyContentUsed": false,
+    "decision": "pass"
+  },
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "contentSha256": "20bf2d63e4e08cf20541ba6bf7857fd32e5785e63cac14a2a3b777b61cff21c8"
+}

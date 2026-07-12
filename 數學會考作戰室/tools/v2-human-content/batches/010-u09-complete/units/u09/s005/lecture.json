@@ -1,0 +1,226 @@
+{
+  "lectureId": "u09-s005-lecture-r1",
+  "unitId": "u09",
+  "numericUnitId": 9,
+  "topicId": "u09-display",
+  "skillId": "pie-chart-percent",
+  "lockedTitle": "圓形圖與百分比",
+  "title": "圓形圖與百分比：部分和全體及角度互換",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "reviewStatus": "independently-reviewed",
+  "prerequisiteBridge": {
+    "skillIds": [
+      "line-chart-text"
+    ],
+    "explanation": "需能讀統計圖尺度並理解相對次數與百分比。"
+  },
+  "learningGoals": [
+    "理解整圓 360° 對應 100%。",
+    "在人數、比例與圓心角間互換。",
+    "由缺少部分補完整比例。",
+    "比較不同總數圓形圖的實際人數。",
+    "審核過半、樣本分母與預算轉移敘述。"
+  ],
+  "vocabulary": [
+    {
+      "term": "圓形圖",
+      "meaning": "用扇形表示各類占全體比例的圖。"
+    },
+    {
+      "term": "圓心角",
+      "meaning": "扇形在圓心形成的角。"
+    },
+    {
+      "term": "百分點",
+      "meaning": "兩百分比直接相減的單位。"
+    },
+    {
+      "term": "全體",
+      "meaning": "圓形圖的分母，必須由標題或說明確認。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "360°",
+      "meaning": "整個圓。"
+    },
+    {
+      "symbol": "p%",
+      "meaning": "全體的 p/100。"
+    },
+    {
+      "symbol": "部分量",
+      "meaning": "全體量×所占比例。"
+    }
+  ],
+  "conceptDevelopment": [
+    "圓形圖只呈現比例；要知道人數仍需全體總數。",
+    "圓心角與比例成正比，90°就是四分之一。",
+    "同一圖內可以比較角度或比例；不同圖總數不同時，比例高不保證人數多。",
+    "兩比例的直接差用百分點，倍數則用比例相除。",
+    "解讀調查圓形圖前，要確認圓代表全校、回覆者還是其他群體。"
+  ],
+  "definitions": [
+    {
+      "name": "扇形比例",
+      "statement": "圓心角除以 360°。"
+    },
+    {
+      "name": "過半",
+      "statement": "比例嚴格大於 50%；恰為 50% 不是超過一半。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "比例＝圓心角÷360°",
+      "conditions": [
+        "角度以度為單位"
+      ]
+    },
+    {
+      "formula": "部分量＝全體量×比例",
+      "conditions": [
+        "比例與全體對應同一分類"
+      ]
+    },
+    {
+      "formula": "全體量＝部分量÷比例",
+      "conditions": [
+        "比例不為 0"
+      ]
+    }
+  ],
+  "invalidUseCases": [
+    "把 72° 當成 72%。",
+    "不同學校只比圓形圖扇形大小便判人數。",
+    "把 48% 領先說成已過半。",
+    "把回覆者比例直接稱為全校確定比例。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "action": "先找圓代表的全體與總數。"
+    },
+    {
+      "step": 2,
+      "action": "統一為比例、角度或人數。"
+    },
+    {
+      "step": 3,
+      "action": "使用 360°↔100% 轉換。"
+    },
+    {
+      "step": 4,
+      "action": "缺類別用整體扣除。"
+    },
+    {
+      "step": 5,
+      "action": "跨圖比較時轉成相同實際量或相同率。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "L1",
+      "prompt": "90° 占多少？",
+      "solution": [
+        "90÷360=1/4。"
+      ],
+      "answer": "25%。"
+    },
+    {
+      "id": "L2",
+      "prompt": "72° 類別有 18 人。",
+      "solution": [
+        "72°=20%。",
+        "18÷0.2=90。"
+      ],
+      "answer": "全體 90 人。"
+    },
+    {
+      "id": "L3",
+      "prompt": "甲校 200 人占 30%，乙校 300 人占 25%。",
+      "solution": [
+        "甲 60 人，乙 75 人。"
+      ],
+      "answer": "乙實際人數較多。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "角度 90 就答 90%。",
+      "why": "忽略整圓 360。",
+      "fix": "角度除 360。"
+    },
+    {
+      "wrong": "30% 一定比 25% 人多。",
+      "why": "兩圖總數不同。",
+      "fix": "各自乘總數。"
+    },
+    {
+      "wrong": "教育提高到 20% 就需移 20%總額。",
+      "why": "未扣原本 15%。",
+      "fix": "只轉移增加的 5 個百分點。"
+    },
+    {
+      "wrong": "48% 是最大類就稱過半。",
+      "why": "最大與超過 50%不同。",
+      "fix": "直接比 50%。"
+    }
+  ],
+  "selfCheck": [
+    "這個圓的分母是誰？",
+    "角度、比例與人數是否統一？",
+    "跨圖總數相同嗎？",
+    "敘述要的是最高、領先還是過半？"
+  ],
+  "summary": [
+    "整圓 360° 對應 100%。",
+    "部分量等於全體乘比例。",
+    "不同總數不能只比百分比判人數。",
+    "圓形圖的分母與樣本範圍決定外推邊界。"
+  ],
+  "connections": {
+    "previous": "相對次數提供圓形圖各扇形比例。",
+    "next": [
+      "直方圖改用相連長方形呈現連續數值區間。",
+      "代表值技能會進一步摘要圓形圖背後的原始資料。"
+    ]
+  },
+  "figureReferences": [
+    "u09-fig-pie-01"
+  ],
+  "accessibilityNotes": "扇形角度與比例皆在文字替代說明列出，不要求依面積目測。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u09-s005-v001",
+      "u09-s005-v002",
+      "u09-s005-v003",
+      "u09-s005-v004",
+      "u09-s005-v005",
+      "u09-s005-v006",
+      "u09-s005-v007",
+      "u09-s005-v008",
+      "u09-s005-v009",
+      "u09-s005-v010",
+      "u09-s005-v011",
+      "u09-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u09-s005-cr001",
+      "u09-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "涵蓋角度、比例、人數、跨圖比較與分母外推。",
+    "scopeCheck": "符合國中會考範圍；未引入四分位數與盒狀圖。",
+    "prerequisiteAudit": "需能讀統計圖尺度並理解相對次數與百分比。",
+    "symbolAndUnitAudit": "所有符號在使用前定義；單位與取位規則在例題中明示。",
+    "skillSpecificEvidence": "明確區分百分點、過半門檻與樣本內比例。",
+    "legacyContentUsed": false,
+    "decision": "pass"
+  },
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "contentSha256": "e3ad623301fbe124d6fc15685bf8ea3bf74e65b971ecb771d02d0a64d5b2596a"
+}

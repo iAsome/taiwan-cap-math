@@ -1,0 +1,228 @@
+{
+  "lectureId": "u09-s008-lecture-r1",
+  "unitId": "u09",
+  "numericUnitId": 9,
+  "topicId": "u09-display",
+  "skillId": "contingency-table",
+  "lockedTitle": "列聯表",
+  "title": "列聯表：同時看兩個分類與正確分母",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "reviewStatus": "independently-reviewed",
+  "prerequisiteBridge": {
+    "skillIds": [
+      "cumulative-frequency"
+    ],
+    "explanation": "需能判讀資料表、總計、次數與相對次數。"
+  },
+  "learningGoals": [
+    "讀取兩分類的交叉格。",
+    "計算列總、欄總與總計。",
+    "由邊際總數補缺格。",
+    "比較各群組內的條件比例。",
+    "避免把關聯誤寫成因果。"
+  ],
+  "vocabulary": [
+    {
+      "term": "列聯表",
+      "meaning": "同時整理兩個分類變項次數的表。"
+    },
+    {
+      "term": "交叉格",
+      "meaning": "同時符合某列條件與某欄條件的人數。"
+    },
+    {
+      "term": "邊際總數",
+      "meaning": "列總或欄總。"
+    },
+    {
+      "term": "條件比例",
+      "meaning": "在指定群組內，以該群組總數作分母的比例。"
+    },
+    {
+      "term": "關聯",
+      "meaning": "兩分類在樣本中的比例分布不同。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "列總",
+      "meaning": "同一列各交叉格相加。"
+    },
+    {
+      "symbol": "欄總",
+      "meaning": "同一欄各交叉格相加。"
+    },
+    {
+      "symbol": "組內率",
+      "meaning": "目標交叉格÷所屬群組總數。"
+    }
+  ],
+  "conceptDevelopment": [
+    "列聯表的每個內格同時符合兩個分類。",
+    "列總與欄總是邊際總數，可由總計互相檢查。",
+    "比較兩組成功率時，分母分別是各組總數，不是全體總數。",
+    "群組大小不同時，次數較多不一定比例較高。",
+    "列聯表顯示的比例差可稱為樣本中的關聯；若非實驗設計，不能直接說某因素造成另一結果。"
+  ],
+  "definitions": [
+    {
+      "name": "交叉次數",
+      "statement": "同時符合一個列分類與一個欄分類的資料筆數。"
+    },
+    {
+      "name": "條件比例",
+      "statement": "在指定列或欄的範圍內，目標格占該範圍總數的比例。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "列總＝該列各交叉格相加",
+      "conditions": [
+        "欄分類互斥且完整"
+      ]
+    },
+    {
+      "formula": "缺格＝對應列總或欄總－其他已知格",
+      "conditions": [
+        "只有一格未知"
+      ]
+    },
+    {
+      "formula": "組內比例＝目標格÷群組總數",
+      "conditions": [
+        "分母與比較群組一致"
+      ]
+    }
+  ],
+  "invalidUseCases": [
+    "把列總讀成交叉格。",
+    "用全體總數算各組內成功率。",
+    "只看成功人數就比較風險。",
+    "看到比例差就宣稱因果。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "action": "讀兩個分類變項與各類別。"
+    },
+    {
+      "step": 2,
+      "action": "定位交叉格。"
+    },
+    {
+      "step": 3,
+      "action": "利用列總、欄總與總計補值。"
+    },
+    {
+      "step": 4,
+      "action": "比較比例時先圈定分母群組。"
+    },
+    {
+      "step": 5,
+      "action": "把結論限制在樣本關聯。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "L1",
+      "prompt": "男生運動 22，男生總數 36。",
+      "solution": [
+        "男生不運動=36-22=14。"
+      ],
+      "answer": "14 人。"
+    },
+    {
+      "id": "L2",
+      "prompt": "A 組 12/20 答對，B 組 15/30。",
+      "solution": [
+        "A=60%，B=50%。"
+      ],
+      "answer": "A 組率較高。"
+    },
+    {
+      "id": "L3",
+      "prompt": "運動者睡眠充足 75%，無運動者 60%。",
+      "solution": [
+        "樣本中有比例差。",
+        "未控制其他因素。"
+      ],
+      "answer": "可說有關聯，不可僅此證明因果。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "女生總數 20 就填入女生音樂格。",
+      "why": "列總含多個欄。",
+      "fix": "扣除同列其他格。"
+    },
+    {
+      "wrong": "B 成功 15 人比 A 12 人多，所以 B 成功率高。",
+      "why": "分母 30 與 20 不同。",
+      "fix": "分別除各組總數。"
+    },
+    {
+      "wrong": "合併比例直接平均 70% 與 40%。",
+      "why": "群組大小不同。",
+      "fix": "加總次數與分母。"
+    },
+    {
+      "wrong": "吸菸者咳嗽率較高，所以吸菸必然造成咳嗽。",
+      "why": "觀察關聯非因果證明。",
+      "fix": "使用保守語氣。"
+    }
+  ],
+  "selfCheck": [
+    "我讀的是交叉格還是邊際總數？",
+    "每個比例的分母是哪一群？",
+    "兩組樣本大小相同嗎？",
+    "結論是否越過關聯到因果？"
+  ],
+  "summary": [
+    "列聯表同時整理兩個分類。",
+    "列總、欄總可補缺值。",
+    "比較群組要用各自分母。",
+    "比例差描述關聯，不自動證明因果。"
+  ],
+  "connections": {
+    "previous": "資料表與相對次數提供表格及比例基礎。",
+    "next": [
+      "平均數將開始用單一數值摘要一組資料。",
+      "統計素養會再次使用列聯表檢查樣本與因果語言。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": "本講義可完全以文字理解；若有圖形，替代文字提供所有必要數值。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u09-s008-v001",
+      "u09-s008-v002",
+      "u09-s008-v003",
+      "u09-s008-v004",
+      "u09-s008-v005",
+      "u09-s008-v006",
+      "u09-s008-v007",
+      "u09-s008-v008",
+      "u09-s008-v009",
+      "u09-s008-v010",
+      "u09-s008-v011",
+      "u09-s008-v012"
+    ],
+    "constructedResponseIds": [
+      "u09-s008-cr001",
+      "u09-s008-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "將機械補表、分母選擇與因果界線連成完整技能。",
+    "scopeCheck": "符合國中會考範圍；未引入四分位數與盒狀圖。",
+    "prerequisiteAudit": "需能判讀資料表、總計、次數與相對次數。",
+    "symbolAndUnitAudit": "所有符號在使用前定義；單位與取位規則在例題中明示。",
+    "skillSpecificEvidence": "包含次數與比例相反、合併比例、健康風險與營運接受度。",
+    "legacyContentUsed": false,
+    "decision": "pass"
+  },
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "contentSha256": "273646c1a437d1a16e6839b009e60ac70e8bfe0814f4aba904471761fc7e1f2e"
+}

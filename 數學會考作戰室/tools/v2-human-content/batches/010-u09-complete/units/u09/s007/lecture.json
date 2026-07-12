@@ -1,0 +1,219 @@
+{
+  "lectureId": "u09-s007-lecture-r1",
+  "unitId": "u09",
+  "numericUnitId": 9,
+  "topicId": "u09-display",
+  "skillId": "cumulative-frequency",
+  "lockedTitle": "累積次數",
+  "title": "累積次數：截至某處一共有多少",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "reviewStatus": "independently-reviewed",
+  "prerequisiteBridge": {
+    "skillIds": [
+      "histogram-read"
+    ],
+    "explanation": "需能由直方圖或次數表讀出依序排列的組次數。"
+  },
+  "learningGoals": [
+    "由單組次數建立累積次數。",
+    "由相鄰累積值還原單組次數。",
+    "處理小於、至少與區間語句。",
+    "由累積相對次數求實際筆數。",
+    "辨識累積量與新增量的不同趨勢。"
+  ],
+  "vocabulary": [
+    {
+      "term": "累積次數",
+      "meaning": "從第一組加到指定組的總次數。"
+    },
+    {
+      "term": "單組次數",
+      "meaning": "只屬於該組的筆數。"
+    },
+    {
+      "term": "截至",
+      "meaning": "包含前面所有組到指定位置。"
+    },
+    {
+      "term": "新增量",
+      "meaning": "相鄰兩次累積值的差。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "F_k",
+      "meaning": "到第 k 組的累積次數。"
+    },
+    {
+      "symbol": "f_k=F_k-F_{k-1}",
+      "meaning": "第 k 組次數由相鄰累積值相減。"
+    }
+  ],
+  "conceptDevelopment": [
+    "累積次數會隨組序不減，最後一個累積值就是總數。",
+    "第一組單組次數等於第一個累積值；其餘單組次數用相鄰累積值相減。",
+    "『小於 40』的累積值與『至少 40』互為全體中的補集。",
+    "兩個門檻累積值相減，可得到中間區間人數。",
+    "累積值一直上升是自然結果，不代表每期新增量一直增加。"
+  ],
+  "definitions": [
+    {
+      "name": "累積次數",
+      "statement": "依指定順序，把前面各組次數連同本組一起相加。"
+    },
+    {
+      "name": "累積相對次數",
+      "statement": "累積次數除以總數所得的比例。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "F_k=f_1+f_2+…+f_k",
+      "conditions": [
+        "組別有明確順序"
+      ]
+    },
+    {
+      "formula": "f_k=F_k-F_{k-1}",
+      "conditions": [
+        "k≥2"
+      ]
+    },
+    {
+      "formula": "門檻以上次數＝總數－門檻以下累積次數",
+      "conditions": [
+        "兩範圍互補"
+      ]
+    }
+  ],
+  "invalidUseCases": [
+    "把累積欄全部相加求總數。",
+    "看到最後累積最大便說最後組次數最大。",
+    "累積增加就宣稱新增量增加。",
+    "用小於 20 的累積值回答 10 到 20 區間人數。"
+  ],
+  "stepByStepMethod": [
+    {
+      "step": 1,
+      "action": "確認表列的是單組還是累積。"
+    },
+    {
+      "step": 2,
+      "action": "單組轉累積就由前往後加。"
+    },
+    {
+      "step": 3,
+      "action": "累積轉單組就相鄰相減。"
+    },
+    {
+      "step": 4,
+      "action": "把小於、至少、區間翻成範圍。"
+    },
+    {
+      "step": 5,
+      "action": "用總數與非負性檢查。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "L1",
+      "prompt": "單組 3、5、4。",
+      "solution": [
+        "累積為 3、8、12。"
+      ],
+      "answer": "第二組累積 8。"
+    },
+    {
+      "id": "L2",
+      "prompt": "累積 3、10、18、25、30。",
+      "solution": [
+        "單組為 3、7、8、7、5。"
+      ],
+      "answer": "第三組次數最多。"
+    },
+    {
+      "id": "L3",
+      "prompt": "小於 40 有 27，總數 35。",
+      "solution": [
+        "至少 40=35-27。"
+      ],
+      "answer": "8 筆。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "最後累積 30，所以第五組有 30。",
+      "why": "累積包含前面全部。",
+      "fix": "30-25=5。"
+    },
+    {
+      "wrong": "截至週四 198 就說週四新增 198。",
+      "why": "混淆存量與流量。",
+      "fix": "198-150。"
+    },
+    {
+      "wrong": "小於 20 的 11 人就是 10–20 有 11。",
+      "why": "未扣小於 10。",
+      "fix": "11-4。"
+    },
+    {
+      "wrong": "累積曲線上升就說速度加快。",
+      "why": "未比較相鄰差。",
+      "fix": "還原每期新增量。"
+    }
+  ],
+  "selfCheck": [
+    "這個數是否已包含前面組？",
+    "求單組時有相減嗎？",
+    "『至少』是否用補集？",
+    "趨勢比較的是累積還是新增？"
+  ],
+  "summary": [
+    "累積是從前面一路加到指定位置。",
+    "相鄰累積值相減可還原單組。",
+    "最後累積值是總數。",
+    "累積上升不代表新增量持續增加。"
+  ],
+  "connections": {
+    "previous": "直方圖與次數表提供依序組次數。",
+    "next": [
+      "列聯表會改成兩個分類交叉，不再是單一順序累積。",
+      "中位數位置可利用累積次數判斷，但四分位數留在 U22。"
+    ]
+  },
+  "figureReferences": [],
+  "accessibilityNotes": "本講義可完全以文字理解；若有圖形，替代文字提供所有必要數值。",
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u09-s007-v001",
+      "u09-s007-v002",
+      "u09-s007-v003",
+      "u09-s007-v004",
+      "u09-s007-v005",
+      "u09-s007-v006",
+      "u09-s007-v007",
+      "u09-s007-v008",
+      "u09-s007-v009",
+      "u09-s007-v010",
+      "u09-s007-v011",
+      "u09-s007-v012"
+    ],
+    "constructedResponseIds": [
+      "u09-s007-cr001",
+      "u09-s007-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "用存量與流量語言區分累積值和新增值。",
+    "scopeCheck": "符合國中會考範圍；未引入四分位數與盒狀圖。",
+    "prerequisiteAudit": "需能由直方圖或次數表讀出依序排列的組次數。",
+    "symbolAndUnitAudit": "所有符號在使用前定義；單位與取位規則在例題中明示。",
+    "skillSpecificEvidence": "包含門檻補集、區間相減、累積相對次數與趨勢審核。",
+    "legacyContentUsed": false,
+    "decision": "pass"
+  },
+  "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+  "contentSha256": "98a3ccc279a21ecaa77bff287adccba85cba02cefa774b616abfafac1d779f1d"
+}
