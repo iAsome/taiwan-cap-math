@@ -1,0 +1,256 @@
+{
+  "lectureId": "u14-s009-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-series",
+  "skillId": "arithmetic-series-sum",
+  "lockedTitle": "等差級數和",
+  "title": "等差級數和：首尾配對與平均乘項數",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能區分數列與級數。",
+    "能使用S_n=n(a_1+a_n)/2。",
+    "能在只知首項、公差與項數時求和。",
+    "能處理負數、分數與跨越0的級數。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "geometric-nth-basic",
+      "title": "等比第 n 項基本",
+      "requiredLevel": "能說明「等比第 n 項基本」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "級數",
+      "definition": "把數列的各項相加形成的式子或總和。"
+    },
+    {
+      "term": "前n項和",
+      "definition": "前n項的總和，記作S_n。"
+    },
+    {
+      "term": "首尾配對",
+      "definition": "第一項與最後一項、第二項與倒數第二項配成相同和。"
+    },
+    {
+      "term": "平均項值",
+      "definition": "等差數列首尾平均，等於所有項的平均。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "S_n",
+      "meaning": "前n項和。"
+    },
+    {
+      "symbol": "S_n=n(a_1+a_n)/2",
+      "meaning": "項數乘首尾平均。"
+    },
+    {
+      "symbol": "S_n=n[2a_1+(n-1)d]/2",
+      "meaning": "以首項、公差與項數表示。"
+    }
+  ],
+  "conceptNarrative": [
+    "數列是項的排列，級數則是把項相加；第n項a_n與前n項和S_n不可混淆。",
+    "等差數列首尾配對的和都相同，因此總和等於項數乘以首尾平均。",
+    "若最後一項未知，先用通項公式求a_n，再套和公式。",
+    "含負數時仍可首尾配對；若正負對稱，許多項會互相抵消。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "前n項和",
+      "statement": "S_n=a_1+a_2+…+a_n。"
+    },
+    {
+      "name": "首尾平均",
+      "statement": "(a_1+a_n)/2。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "S_n=n(a_1+a_n)/2",
+      "conditions": [
+        "前n項形成等差數列"
+      ],
+      "meaning": "項數乘平均項值。"
+    },
+    {
+      "formula": "S_n=n[2a_1+(n-1)d]/2",
+      "conditions": [
+        "已知a_1、d、n"
+      ],
+      "meaning": "先代入a_n後化簡。"
+    }
+  ],
+  "nonApplicableCases": [
+    "非等差數列不能直接套等差和公式。",
+    "把a_n當成S_n會漏掉前面項。",
+    "項數計算錯會使總和錯。",
+    "首尾列出的端點若不屬數列，不能用端點差直接算項數。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "確認加總項形成等差數列",
+      "check": "列出首項、末項、公差。"
+    },
+    {
+      "step": 2,
+      "instruction": "求項數n",
+      "check": "n=(a_n-a_1)/d+1，d≠0時。"
+    },
+    {
+      "step": 3,
+      "instruction": "必要時先求末項",
+      "check": "a_n=a_1+(n-1)d。"
+    },
+    {
+      "step": 4,
+      "instruction": "套S_n=n(a_1+a_n)/2",
+      "check": "保留括號。"
+    },
+    {
+      "step": 5,
+      "instruction": "用估算或配對檢查",
+      "check": "總和應接近項數乘中間大小。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "1+2+…+50",
+      "reasoning": "n=50，首末為1與50。",
+      "solutionSteps": [
+        "n=50，首末為1與50。",
+        "S=50×51÷2。"
+      ],
+      "answer": "1275"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "4+7+…+40",
+      "reasoning": "d=3，n=(40-4)÷3+1=13。",
+      "solutionSteps": [
+        "d=3，n=(40-4)÷3+1=13。",
+        "S=13×44÷2。"
+      ],
+      "answer": "286"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "a_1=-5，d=2，n=12",
+      "reasoning": "a_12=17。",
+      "solutionSteps": [
+        "a_12=17。",
+        "S=12×12÷2。"
+      ],
+      "answer": "72"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "1/2+1+…+5",
+      "reasoning": "d=1/2，n=10。",
+      "solutionSteps": [
+        "d=1/2，n=10。",
+        "S=10×(11/2)÷2。"
+      ],
+      "answer": "55/2"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "項數少加1",
+      "why": "端點包含在內。",
+      "correction": "n=間隔數+1。"
+    },
+    {
+      "mistake": "先算平均卻忘乘n",
+      "why": "只得到單項平均。",
+      "correction": "總和=平均×項數。"
+    },
+    {
+      "mistake": "末項不在數列仍直接使用",
+      "why": "端點不符合公差。",
+      "correction": "檢查(a_n-a_1)能否整除d。"
+    },
+    {
+      "mistake": "負公差項數公式符號亂掉",
+      "why": "分子分母方向不一致。",
+      "correction": "使用同方向a_n-a_1與d。"
+    },
+    {
+      "mistake": "把S_n與a_n混用",
+      "why": "一個是總和，一個是單項。",
+      "correction": "標清符號。"
+    },
+    {
+      "mistake": "非等差也首尾平均",
+      "why": "中間項平均未必等於首尾平均。",
+      "correction": "先驗公差。"
+    }
+  ],
+  "selfCheck": [
+    "我求的是單一項還是總和？",
+    "首末項都包含嗎？",
+    "項數是否為間隔數加1？",
+    "最後一項確實在數列中嗎？",
+    "總和量級是否合理？"
+  ],
+  "summary": [
+    "等差級數和等於項數乘首尾平均。",
+    "S_n與a_n意義不同。",
+    "最後一項未知時先用通項求出。",
+    "端點、項數與公差都要一致。"
+  ],
+  "connections": {
+    "previous": "利用等差通項、等差中項與首尾對稱。",
+    "next": [
+      "下一技能把公式用在座位、存款與堆疊情境。",
+      "更進一步會由總和反求項數或末項。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s009-v001",
+      "u14-s009-v002",
+      "u14-s009-v003",
+      "u14-s009-v004",
+      "u14-s009-v005",
+      "u14-s009-v006",
+      "u14-s009-v007",
+      "u14-s009-v008",
+      "u14-s009-v009",
+      "u14-s009-v010",
+      "u14-s009-v011",
+      "u14-s009-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s009-cr001",
+      "u14-s009-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「等差級數和」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "6036076f6374f41dde690dcad897d27ce410a73179fab527dc9c0e901922e15d"
+}

@@ -1,0 +1,1679 @@
+// Generated only from reviewed immutable source. Do not hand edit.
+export default {
+  "lecture": {
+    "lectureId": "u14-s006-lecture-r1",
+    "unitId": "u14",
+    "numericUnitId": 14,
+    "topicId": "u14-sequences",
+    "skillId": "arithmetic-mean-term",
+    "lockedTitle": "等差中項",
+    "title": "等差中項：兩端平均與等距插入",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能求兩數之間的一個等差中項。",
+      "能利用2b=a+c判斷連續三項。",
+      "能插入多個等差中項。",
+      "能處理含未知數與實際等距情境。"
+    ],
+    "prerequisiteBridge": [
+      {
+        "skillId": "sequence-nth-term",
+        "title": "求第 n 項",
+        "requiredLevel": "能說明「求第 n 項」的核心定義並完成基本計算，作為本技能的直接前置。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "等差中項",
+        "definition": "若a、b、c為連續等差三項，b稱為a與c的等差中項。"
+      },
+      {
+        "term": "算術平均數",
+        "definition": "兩數和除以2。"
+      },
+      {
+        "term": "插入中項",
+        "definition": "在兩端之間加入數，使全列等差。"
+      },
+      {
+        "term": "間隔數",
+        "definition": "插入k個中項後共有k+1個相等間隔。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "b=(a+c)/2",
+        "meaning": "一個等差中項。"
+      },
+      {
+        "symbol": "2b=a+c",
+        "meaning": "避免分數的等價形式。"
+      },
+      {
+        "symbol": "d=(c-a)/(k+1)",
+        "meaning": "在a與c之間插入k項時的公差。"
+      }
+    ],
+    "conceptNarrative": [
+      "連續三個等差項的中間項同時距離兩端一樣遠，所以它是兩端的平均。",
+      "中項不一定介於兩端的大小之間嗎？若以實數且等差，確實位於數線中點；但符號可正可負。",
+      "插入多個中項時，要數的是間隔，不是新增數的個數。",
+      "含未知數時可用2b=a+c建立一元一次方程式。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "等差中項",
+        "statement": "使a、b、c相鄰差相等的中間項b。"
+      },
+      {
+        "name": "等距插入",
+        "statement": "相鄰項之差皆相同的填數。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "b=(a+c)/2",
+        "conditions": [
+          "a、b、c為連續等差三項"
+        ],
+        "meaning": "中間項等於兩端平均。"
+      },
+      {
+        "formula": "d=(c-a)/(k+1)",
+        "conditions": [
+          "在a與c之間插入k項"
+        ],
+        "meaning": "兩端總差分成k+1段。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不是連續三項時不能直接把中間位置項當兩端平均。",
+      "插入k項時不可除以k。",
+      "若題目要求整數中項，平均結果必須是整數。",
+      "等比中項使用平方關係，不能與等差中項混用。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認兩端與中間位置",
+        "check": "是否為連續等差項。"
+      },
+      {
+        "step": 2,
+        "instruction": "一個中項用平均",
+        "check": "b=(a+c)/2。"
+      },
+      {
+        "step": 3,
+        "instruction": "多個中項先數間隔",
+        "check": "k個中項形成k+1段。"
+      },
+      {
+        "step": 4,
+        "instruction": "依公差逐項填入",
+        "check": "保持方向與符號。"
+      },
+      {
+        "step": 5,
+        "instruction": "檢查每段差相同",
+        "check": "同時核對兩端。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "6與18的等差中項",
+        "reasoning": "(6+18)÷2。",
+        "solutionSteps": [
+          "(6+18)÷2。",
+          "得到12。"
+        ],
+        "answer": "12"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "-9與5的等差中項",
+        "reasoning": "(-9+5)÷2。",
+        "solutionSteps": [
+          "(-9+5)÷2。",
+          "得到-2。"
+        ],
+        "answer": "-2"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "在4與24間插入3項",
+        "reasoning": "共有4段，d=(24-4)÷4=5。",
+        "solutionSteps": [
+          "共有4段，d=(24-4)÷4=5。",
+          "依序加5。"
+        ],
+        "answer": "9、14、19"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "x-2，7，2x+3為連續等差三項",
+        "reasoning": "2×7=(x-2)+(2x+3)。",
+        "solutionSteps": [
+          "2×7=(x-2)+(2x+3)。",
+          "14=3x+1。"
+        ],
+        "answer": "x=13/3"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "能辨認定義與完成單一步驟。",
+      "standard": "能在多個表示間轉換並處理兩至三步推理。",
+      "advanced": "能整合位置、條件、反推或代數驗證。",
+      "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "把兩端相減再除2",
+        "why": "得到的是半差，不是中項值。",
+        "correction": "中項用兩端和除2。"
+      },
+      {
+        "mistake": "插入3項只分3段",
+        "why": "忽略兩端到第一與最後中項的間隔。",
+        "correction": "段數=插入數+1。"
+      },
+      {
+        "mistake": "不保留負號",
+        "why": "負數平均會錯。",
+        "correction": "先加有號數。"
+      },
+      {
+        "mistake": "把等比中項公式套進來",
+        "why": "兩種數列條件不同。",
+        "correction": "等差用2b=a+c。"
+      },
+      {
+        "mistake": "填完不檢查最後一段",
+        "why": "末端可能接不上。",
+        "correction": "逐段算差。"
+      },
+      {
+        "mistake": "未確認連續位置",
+        "why": "非連續項平均不一定是所求項。",
+        "correction": "看清項次。"
+      }
+    ],
+    "selfCheck": [
+      "中間項是否是兩端的和除以2？",
+      "插入項數與間隔數是否分清？",
+      "每個相鄰差是否一致？",
+      "未知數方程式是否寫成2b=a+c？",
+      "答案是否符合整數或單位要求？"
+    ],
+    "summary": [
+      "等差中項是兩端的算術平均。",
+      "連續三項滿足2b=a+c。",
+      "插入k個中項要分成k+1段。",
+      "完成後逐段驗證公差。"
+    ],
+    "connections": {
+      "previous": "使用等差數列的固定公差與通項。",
+      "next": [
+        "規律觀察列式會將圖形中的增量寫成n的式子。",
+        "等差級數會利用首尾對稱平均。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u14-s006-v001",
+        "u14-s006-v002",
+        "u14-s006-v003",
+        "u14-s006-v004",
+        "u14-s006-v005",
+        "u14-s006-v006",
+        "u14-s006-v007",
+        "u14-s006-v008",
+        "u14-s006-v009",
+        "u14-s006-v010",
+        "u14-s006-v011",
+        "u14-s006-v012"
+      ],
+      "constructedResponseIds": [
+        "u14-s006-cr001",
+        "u14-s006-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "capBoundary": "pass",
+      "undefinedSymbolAudit": "pass",
+      "futureKnowledgeLeakage": "pass",
+      "examplesNotCopiedFromQuestionBank": true,
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "reviewNote": "逐段檢查「等差中項」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+    },
+    "contentSha256": "bb0512bafbf4eb4fdd6ca5ac7ec073a7ab38b749273e52a4edcac5494a882f8c"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u14-s006-v001",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "8 與 20 的等差中項是多少？",
+      "givenConditions": [
+        "兩端8與20"
+      ],
+      "target": "求中項",
+      "choices": [
+        "6",
+        "14",
+        "12",
+        "28"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "若8、b、20為連續等差三項，2b=28，所以b=14。",
+      "mainExplanation": "依題意依序處理：兩端相加。；除以2。，所以唯一正確選項是「14」。",
+      "steps": [
+        "兩端相加。",
+        "除以2。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "6是半差。"
+        },
+        {
+          "choice": "14",
+          "truth": true,
+          "reason": "兩端平均為(8+20)/2=14。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "12是20-8。"
+        },
+        {
+          "choice": "28",
+          "truth": false,
+          "reason": "28是兩端和未除2。"
+        }
+      ],
+      "misconceptionTarget": "把等差中項算成兩端差的一半。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "實數範圍唯一解14。",
+      "difficultyReason": "基礎：直接使用算術平均。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求正整數兩端的中項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "cf756a27c7a0b63f418fc5a14cc541270f24cf4491471fc608bfb395b01f2abd"
+    },
+    {
+      "questionId": "u14-s006-v002",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "若 x、11、17 為等差數列的連續三項，則 x 等於多少？",
+      "givenConditions": [
+        "連續三項x、11、17"
+      ],
+      "target": "求x",
+      "choices": [
+        "5",
+        "6",
+        "14",
+        "23"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "公差=17-11=6，故前一項x=11-6=5。也可用22=x+17。",
+      "mainExplanation": "依題意依序處理：求公差6。；向前回推或用中項式。，所以唯一正確選項是「5」。",
+      "steps": [
+        "求公差6。",
+        "向前回推或用中項式。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "11是x與17的中項，2×11=x+17，所以x=5。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "6是17-11，僅為公差。"
+        },
+        {
+          "choice": "14",
+          "truth": false,
+          "reason": "14是兩端平均的錯算。"
+        },
+        {
+          "choice": "23",
+          "truth": false,
+          "reason": "23是向前加公差而非減。"
+        }
+      ],
+      "misconceptionTarget": "把公差6當成x。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "三項順序固定；唯一解。",
+      "difficultyReason": "基礎：一次減法或一元一次方程式。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由已知中項與後項回推前項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "305bbe3a503d51c063f137b1fd9ad6085db6ca205ec728e2fa245aca1fef74a4"
+    },
+    {
+      "questionId": "u14-s006-v003",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "-7 與 9 的等差中項是多少？",
+      "givenConditions": [
+        "兩端-7與9"
+      ],
+      "target": "求中項",
+      "choices": [
+        "-8",
+        "-1",
+        "1",
+        "8"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "兩端和為2，平均為1；檢查1-(-7)=8、9-1=8。",
+      "mainExplanation": "依題意依序處理：有號數相加。；除2並驗兩段差。，所以唯一正確選項是「1」。",
+      "steps": [
+        "有號數相加。",
+        "除2並驗兩段差。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-8",
+          "truth": false,
+          "reason": "-8是兩端差方向錯。"
+        },
+        {
+          "choice": "-1",
+          "truth": false,
+          "reason": "-1是平均符號錯。"
+        },
+        {
+          "choice": "1",
+          "truth": true,
+          "reason": "(-7+9)/2=2/2=1。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "8是半差而非位置值。"
+        }
+      ],
+      "misconceptionTarget": "看到一正一負就用絕對值相減後取錯符號。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "中項1位於兩端之間。",
+      "difficultyReason": "基礎：概念單純，但需正確處理負數平均。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求跨越0的等差中項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "0ed0097208266573072dc9e1f047d9442fad03a783d22d42393d9ce63b530adf"
+    },
+    {
+      "questionId": "u14-s006-v004",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "3/2 與 15/2 的等差中項是多少？",
+      "givenConditions": [
+        "兩端3/2與15/2"
+      ],
+      "target": "求中項",
+      "choices": [
+        "3",
+        "6",
+        "18/2",
+        "9/2"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "兩端同分母相加得18/2=9，再除2得9/2。",
+      "mainExplanation": "依題意依序處理：相加。；除以2並約分。，所以唯一正確選項是「9/2」。",
+      "steps": [
+        "相加。",
+        "除以2並約分。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "3是半差。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "6是錯把總和9再減3。"
+        },
+        {
+          "choice": "18/2",
+          "truth": false,
+          "reason": "18/2等於9，是兩端和。"
+        },
+        {
+          "choice": "9/2",
+          "truth": true,
+          "reason": "[(3/2)+(15/2)]/2=(18/2)/2=9/2。"
+        }
+      ],
+      "misconceptionTarget": "只處理分子平均，分母也除錯。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "答案以最簡分數9/2表示。",
+      "difficultyReason": "標準：需精確處理複合分數。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求分數等差中項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "528b13c471f878daf7428d4fd0a5164d2b052d98026fb313daeebb3e09ba1126"
+    },
+    {
+      "questionId": "u14-s006-v005",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "在 4 與 22 之間插入兩個數，使四個數成等差數列。兩個插入數的和是多少？",
+      "givenConditions": [
+        "端點4與22",
+        "插入2項"
+      ],
+      "target": "兩插入數之和",
+      "choices": [
+        "18",
+        "22",
+        "26",
+        "30"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "四項為4，4+6，4+12，22，即4、10、16、22；插入兩數和26。",
+      "mainExplanation": "依題意依序處理：間隔數為3。；求d並列出中間兩項。，所以唯一正確選項是「26」。",
+      "steps": [
+        "間隔數為3。",
+        "求d並列出中間兩項。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "18是總差。"
+        },
+        {
+          "choice": "22",
+          "truth": false,
+          "reason": "22是末項。"
+        },
+        {
+          "choice": "26",
+          "truth": true,
+          "reason": "共有3個間隔，d=(22-4)/3=6，插入10、16，和26。"
+        },
+        {
+          "choice": "30",
+          "truth": false,
+          "reason": "30是插入數誤作12與18。"
+        }
+      ],
+      "misconceptionTarget": "插入2項就把總差除以2。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "插入數順序唯一為10、16。",
+      "difficultyReason": "標準：需分清2個插入數形成3個間隔。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "插入多個等差中項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f8dfefbb2542c0d1e9ec16807de29c042b3f174d9b240d74f57b59d30864dc5a"
+    },
+    {
+      "questionId": "u14-s006-v006",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "若 x-4、8、2x+2 是等差數列的連續三項，則 x 為多少？",
+      "givenConditions": [
+        "含x的連續三項"
+      ],
+      "target": "求x",
+      "choices": [
+        "4",
+        "5",
+        "8",
+        "6"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "中項性質2b=a+c：16=3x-2，3x=18，x=6；代回2、8、14，公差6。",
+      "mainExplanation": "依題意依序處理：建立中項方程式。；解x並代回。，所以唯一正確選項是「6」。",
+      "steps": [
+        "建立中項方程式。",
+        "解x並代回。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "x=4時三項0、8、10不等差。"
+        },
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "x=5時1、8、12不等差。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "x=8時4、8、18不等差。"
+        },
+        {
+          "choice": "6",
+          "truth": true,
+          "reason": "2×8=(x-4)+(2x+2)，16=3x-2，所以x=6。"
+        }
+      ],
+      "misconceptionTarget": "只令其中一段差等於8，沒有建立兩段相等。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "一次方程式唯一解6。",
+      "difficultyReason": "標準：需化簡代數式並代回驗證。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "含參數等差中項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f7a065367905d8487d7ab3dd0c92eff08bb080cd6af560f47d0b9efc89415e8f"
+    },
+    {
+      "questionId": "u14-s006-v007",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "五項等差數列的第一項為 -6、第五項為 18，第三項是多少？",
+      "givenConditions": [
+        "5項",
+        "a_1=-6",
+        "a_5=18"
+      ],
+      "target": "求a_3",
+      "choices": [
+        "6",
+        "3",
+        "9",
+        "12"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "也可求d=(18-(-6))/4=6，第三項=-6+2×6=6。",
+      "mainExplanation": "依題意依序處理：辨認第三項是位置中點。；用平均或通項驗證。，所以唯一正確選項是「6」。",
+      "steps": [
+        "辨認第三項是位置中點。",
+        "用平均或通項驗證。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6",
+          "truth": true,
+          "reason": "五項的第三項位於正中央，是首末項的等差中項：(−6+18)/2=6。"
+        },
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "3不是首末平均。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "9是誤把18除2。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "12是半差。"
+        }
+      ],
+      "misconceptionTarget": "把五項的第三項當成只離首項一步。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "第3項正好位於第1與第5項中間位置。",
+      "difficultyReason": "進階：需理解非僅三項時，對稱位置項仍為首尾平均。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "利用對稱位置求中項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "661f74b501394e8784582d7ba8ae23cf1481d4ea31333abb7518df8e1f4584d6"
+    },
+    {
+      "questionId": "u14-s006-v008",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "a、b、c 為等差數列的連續三項，且 a+c=34，則 b 等於多少？",
+      "givenConditions": [
+        "連續等差三項",
+        "a+c=34"
+      ],
+      "target": "求b",
+      "choices": [
+        "16",
+        "17",
+        "18",
+        "34"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "由等差中項性質，b=(a+c)/2=34/2=17；不需知道a、c各自數值。",
+      "mainExplanation": "依題意依序處理：套用2b=a+c。；除以2。，所以唯一正確選項是「17」。",
+      "steps": [
+        "套用2b=a+c。",
+        "除以2。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "16",
+          "truth": false,
+          "reason": "16不滿足2b=34。"
+        },
+        {
+          "choice": "17",
+          "truth": true,
+          "reason": "2b=a+c=34，所以b=17。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "18不滿足2b=34。"
+        },
+        {
+          "choice": "34",
+          "truth": false,
+          "reason": "34是兩端和。"
+        }
+      ],
+      "misconceptionTarget": "認為缺少a與c的個別值就無法求b。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "a、c可有多組，但b唯一。",
+      "difficultyReason": "進階：資料抽象但由不變量a+c即可唯一決定b。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "使用對稱和直接求中項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "fd0020aba909be8527ad792565a7a195c6dcf1764544b44e96dccdc2b7ff1a62"
+    },
+    {
+      "questionId": "u14-s006-v009",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "三個連續等差項的和為 45，公差為 4。最大的一項是多少？",
+      "givenConditions": [
+        "三連續等差項總和45",
+        "d=4"
+      ],
+      "target": "求最大項",
+      "choices": [
+        "15",
+        "17",
+        "23",
+        "19"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "設三項為b-4、b、b+4，總和3b=45，b=15，所以最大19。",
+      "mainExplanation": "依題意依序處理：以中項表示三項。；由總和求中項再加公差。，所以唯一正確選項是「19」。",
+      "steps": [
+        "以中項表示三項。",
+        "由總和求中項再加公差。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "15",
+          "truth": false,
+          "reason": "15是中項。"
+        },
+        {
+          "choice": "17",
+          "truth": false,
+          "reason": "17只加2。"
+        },
+        {
+          "choice": "23",
+          "truth": false,
+          "reason": "23多加兩個公差。"
+        },
+        {
+          "choice": "19",
+          "truth": true,
+          "reason": "中項等於三項平均45÷3=15，最大項=15+4=19。"
+        }
+      ],
+      "misconceptionTarget": "把總和45除以公差4，或把平均當最大項。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "公差正4，故最大項為中項加4。",
+      "difficultyReason": "進階：需利用對稱表示消去兩端並重建最大項。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "結合總和與公差求三項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "038867edae645fd8ed45efce2de1b565f5009a2301a687ca24d69dc11c2f6672"
+    },
+    {
+      "questionId": "u14-s006-v010",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "道路上兩盞路燈分別位於里程 120 m 與 300 m，若在正中間增設一盞，使三盞等距，新路燈位於何處？",
+      "givenConditions": [
+        "兩盞位置120m、300m"
+      ],
+      "target": "中間路燈位置",
+      "choices": [
+        "180 m",
+        "200 m",
+        "210 m",
+        "420 m"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "三盞位置形成等差三項，新增位置b滿足2b=120+300=420，所以b=210 m。",
+      "mainExplanation": "依題意依序處理：辨認位置數值而非距離差。；取算術平均。，所以唯一正確選項是「210 m」。",
+      "steps": [
+        "辨認位置數值而非距離差。",
+        "取算術平均。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "180 m",
+          "truth": false,
+          "reason": "180 m是兩端距離差。"
+        },
+        {
+          "choice": "200 m",
+          "truth": false,
+          "reason": "200 m不是兩端平均。"
+        },
+        {
+          "choice": "210 m",
+          "truth": true,
+          "reason": "位置平均為(120+300)/2=210 m。"
+        },
+        {
+          "choice": "420 m",
+          "truth": false,
+          "reason": "420 m是兩端位置相加。"
+        }
+      ],
+      "misconceptionTarget": "把兩端間距180 m當作位置答案。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "同一路線同一基準里程；答案210m。",
+      "difficultyReason": "素養：需區分里程位置與兩燈之間的距離，答案必須是位置210 m。",
+      "literacyContextNecessity": "道路里程情境不可刪除，因為它測試「位置」與「間距」的語意區分。",
+      "authoringIntent": "在座標位置情境求中點。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c76ae10b48716925e7a5fddfcba0ace710fa0e8a5c8232cc6386fc6cf161afc5"
+    },
+    {
+      "questionId": "u14-s006-v011",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "某日 7 時氣溫 18.4°C，11 時氣溫 25.6°C；若每 2 小時等量上升，9 時氣溫是多少？",
+      "givenConditions": [
+        "7時18.4°C",
+        "11時25.6°C",
+        "每2小時等量上升"
+      ],
+      "target": "9時氣溫",
+      "choices": [
+        "21°C",
+        "22°C",
+        "22.8°C",
+        "44°C"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "7、9、11時等時間隔，三個氣溫形成等差三項；18.4+25.6=44，44÷2=22。",
+      "mainExplanation": "依題意依序處理：確認時間間隔相等。；取氣溫平均。，所以唯一正確選項是「22°C」。",
+      "steps": [
+        "確認時間間隔相等。",
+        "取氣溫平均。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "21°C",
+          "truth": false,
+          "reason": "21°C是平均計算錯。"
+        },
+        {
+          "choice": "22°C",
+          "truth": true,
+          "reason": "9時位於7時與11時的中間時刻，氣溫為兩端平均(18.4+25.6)/2=22°C。"
+        },
+        {
+          "choice": "22.8°C",
+          "truth": false,
+          "reason": "22.8°C不是兩端平均。"
+        },
+        {
+          "choice": "44°C",
+          "truth": false,
+          "reason": "44°C是兩端相加未除2。"
+        }
+      ],
+      "misconceptionTarget": "只因時間9是數值平均，就未確認每2小時等量上升。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "攝氏溫標可做差與平均；答案精確22°C。",
+      "difficultyReason": "素養：必須同時使用等時間隔與等量變化，才能把9時讀數視為中項。",
+      "literacyContextNecessity": "氣溫與時刻情境提供「位置間隔相等」的必要條件。",
+      "authoringIntent": "時間等距資料的等差中項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "dc9c48054f0f2e64d211e9982967cfe9c8963ee1f6087f318bb7610a7d970038"
+    },
+    {
+      "questionId": "u14-s006-v012",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "一組五層展示架最下層高 36 cm、最上層高 84 cm，五層等距。由下往上第 3 層高度是多少？",
+      "givenConditions": [
+        "5層",
+        "下36cm",
+        "上84cm"
+      ],
+      "target": "第3層高度",
+      "choices": [
+        "60 cm",
+        "48 cm",
+        "54 cm",
+        "72 cm"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "五層有4個間隔，d=(84-36)/4=12；高度依序36、48、60、72、84，所以第3層60 cm。",
+      "mainExplanation": "依題意依序處理：求間隔12cm。；列出或使用中間位置平均。，所以唯一正確選項是「60 cm」。",
+      "steps": [
+        "求間隔12cm。",
+        "列出或使用中間位置平均。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "60 cm",
+          "truth": true,
+          "reason": "第3層是5層的中間位置，因此為(36+84)/2=60 cm。"
+        },
+        {
+          "choice": "48 cm",
+          "truth": false,
+          "reason": "48 cm是第2層。"
+        },
+        {
+          "choice": "54 cm",
+          "truth": false,
+          "reason": "54 cm是錯誤平均。"
+        },
+        {
+          "choice": "72 cm",
+          "truth": false,
+          "reason": "72 cm是第4層。"
+        }
+      ],
+      "misconceptionTarget": "把5層誤作5個間隔。",
+      "prerequisiteSkillIds": [
+        "sequence-nth-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "高度單位一致；五層包含兩端。",
+      "difficultyReason": "素養：要由實物層數判斷4個間隔，且第3層是位置中點。",
+      "literacyContextNecessity": "展示架情境提供層數與高度位置，不能把48cm總差直接平均到5段。",
+      "authoringIntent": "多層等距配置中的中央層。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "344e667c09d7c87e9740f17a43588fc2538f85b2a2d3ed8f83fb20a86610da94"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u14-s006-cr001",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "在 -10 與 26 之間插入 5 個數，使全部 7 個數形成等差數列。求公差與插入的 5 個數。",
+      "requiredWork": [
+        "正確數出6個間隔。",
+        "求公差。",
+        "依序列出5個插入數。"
+      ],
+      "fullCreditSolution": [
+        "7個數共有6個相鄰間隔。",
+        "d=[26-(-10)]/6=36/6=6。",
+        "由-10每次加6，得到-4、2、8、14、20，最後再加6為26。"
+      ],
+      "alternativeSolutions": [
+        "可用第k項公式a_j=-10+(j-1)6列出j=2至6。"
+      ],
+      "reasoningSteps": [
+        "7個數共有6個相鄰間隔。",
+        "d=[26-(-10)]/6=36/6=6。",
+        "由-10每次加6，得到-4、2、8、14、20，最後再加6為26。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "d=6且五個插入數-4、2、8、14、20全部正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "公差正確但漏或錯一個插入數；或數列正確但未明寫公差。"
+        },
+        {
+          "score": 1,
+          "criteria": "看出總差36但間隔數處理不完整。"
+        },
+        {
+          "score": 0,
+          "criteria": "除以5得到錯誤配置且無修正。"
+        }
+      ],
+      "partialCreditRules": [
+        "順序需由-10到26；同一組逆序列出但明確對應仍可接受。"
+      ],
+      "followThroughPolicy": "若公差算錯但後續五項一致等差且接近末端，最高1分，因無法同時符合兩端。",
+      "unitAndNotationRules": "無外部單位；負號必須保留。",
+      "answerOnlyPolicy": "只列五數且正確，可得2分。",
+      "commonErrors": [
+        "插5個數就除以5。",
+        "漏掉跨越0的正負號。"
+      ],
+      "figureDrawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "d=6；插入-4、2、8、14、20。",
+        "ambiguity": "兩端與插入數量唯一決定配置。",
+        "unitBoundaryCheck": "無外部單位；負號必須保留。",
+        "decision": "pass",
+        "reviewNote": "獨立依題目條件重新推導，得到「d=6；插入-4、2、8、14、20。」。評分規準逐分對應本題必要步驟，並已檢查錯誤追隨與只寫答案的處理。"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "40c62e0b112cad80239aab0ec61a2ad1750764a82af0861a546920101e47b97a"
+    },
+    {
+      "questionId": "u14-s006-cr002",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "arithmetic-mean-term",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "三個連續等差項的總和為 72，最大項比最小項多 16。求三項。",
+      "requiredWork": [
+        "以中項與公差表示三項。",
+        "利用總和與首末差。",
+        "求出並依序列出三項。"
+      ],
+      "fullCreditSolution": [
+        "設三項為b-d、b、b+d。",
+        "總和3b=72，所以b=24。",
+        "最大減最小為2d=16，所以d=8。",
+        "三項為16、24、32。"
+      ],
+      "alternativeSolutions": [
+        "也可先由平均得中項24，再把首末總差16平均分成兩段各8。"
+      ],
+      "reasoningSteps": [
+        "設三項為b-d、b、b+d。",
+        "總和3b=72，所以b=24。",
+        "最大減最小為2d=16，所以d=8。",
+        "三項為16、24、32。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確求16、24、32，並清楚使用中項24與公差8。"
+        },
+        {
+          "score": 2,
+          "criteria": "三項正確但理由不完整；或中項與公差正確但列項小錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "只求得中項24或只求得公差8。"
+        },
+        {
+          "score": 0,
+          "criteria": "三項不等差或總和不為72。"
+        }
+      ],
+      "partialCreditRules": [
+        "項目順序若反向32、24、16，仍為公差-8的等差數列；但題目問最小到最大時應整理，最多扣1分。"
+      ],
+      "followThroughPolicy": "若總和算術錯導致中項錯，但仍正確使用2d=16與對稱表示，可得1分。",
+      "unitAndNotationRules": "無單位；「最大比最小多16」表示最大-最小=16。",
+      "answerOnlyPolicy": "只答16、24、32最多1分。",
+      "commonErrors": [
+        "把16直接當公差。",
+        "把72÷2當中項。"
+      ],
+      "figureDrawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "三項16、24、32。",
+        "ambiguity": "條件唯一決定中項與公差大小。",
+        "unitBoundaryCheck": "無單位；「最大比最小多16」表示最大-最小=16。",
+        "decision": "pass",
+        "reviewNote": "獨立依題目條件重新推導，得到「三項16、24、32。」。評分規準逐分對應本題必要步驟，並已檢查錯誤追隨與只寫答案的處理。"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "71e591471d82e2d0cbd2c6eb629e5724e211cb7e324867beebd475ac393ea203"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u14-s006-v001",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "cf756a27c7a0b63f418fc5a14cc541270f24cf4491471fc608bfb395b01f2abd",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "若8、b、20為連續等差三項，2b=28，所以b=14。",
+      "derivedAnswer": "14",
+      "storedAnswer": "14",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「14」符合。其餘三項各自違反：6是半差。；12是20-8。；28是兩端和未除2。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「求中項」。",
+        "unitConflict": "實數範圍唯一解14。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「14」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：實數範圍唯一解14。",
+        "alternateReading": "最可能的誤讀是「把等差中項算成兩端差的一半。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "基礎：直接使用算術平均。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「8 與 20 的等差中項是多少？」獨立重算為：若8、b、20為連續等差三項，2b=28，所以b=14。 四選項逐項核對後唯一正解為「14」；邊界檢查：實數範圍唯一解14。",
+      "reviewContentSha256": "d1bdbcd37bac45d118a63f4c4b86d13f1a117eec1f7f4b3e2a562fbdb486a60f"
+    },
+    {
+      "questionId": "u14-s006-v002",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "305bbe3a503d51c063f137b1fd9ad6085db6ca205ec728e2fa245aca1fef74a4",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "公差=17-11=6，故前一項x=11-6=5。也可用22=x+17。",
+      "derivedAnswer": "5",
+      "storedAnswer": "5",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「5」符合。其餘三項各自違反：6是17-11，僅為公差。；14是兩端平均的錯算。；23是向前加公差而非減。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「求x」。",
+        "unitConflict": "三項順序固定；唯一解。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「5」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：三項順序固定；唯一解。",
+        "alternateReading": "最可能的誤讀是「把公差6當成x。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "基礎：一次減法或一元一次方程式。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「若 x、11、17 為等差數列的連續三項，則 x 等於多少？」獨立重算為：公差=17-11=6，故前一項x=11-6=5。也可用22=x+17。 四選項逐項核對後唯一正解為「5」；邊界檢查：三項順序固定；唯一解。",
+      "reviewContentSha256": "36a2ee12649ebb4d6f6c4daded4148cf860bb3ce7a672efe6f24156fb070ff0f"
+    },
+    {
+      "questionId": "u14-s006-v003",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "0ed0097208266573072dc9e1f047d9442fad03a783d22d42393d9ce63b530adf",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "兩端和為2，平均為1；檢查1-(-7)=8、9-1=8。",
+      "derivedAnswer": "1",
+      "storedAnswer": "1",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「1」符合。其餘三項各自違反：-8是兩端差方向錯。；-1是平均符號錯。；8是半差而非位置值。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「求中項」。",
+        "unitConflict": "中項1位於兩端之間。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「1」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：中項1位於兩端之間。",
+        "alternateReading": "最可能的誤讀是「看到一正一負就用絕對值相減後取錯符號。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "基礎：概念單純，但需正確處理負數平均。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「-7 與 9 的等差中項是多少？」獨立重算為：兩端和為2，平均為1；檢查1-(-7)=8、9-1=8。 四選項逐項核對後唯一正解為「1」；邊界檢查：中項1位於兩端之間。",
+      "reviewContentSha256": "7a67157de55c4240551ba704e0b2d407b564adb45c9667fac4ebcef127b539ce"
+    },
+    {
+      "questionId": "u14-s006-v004",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "528b13c471f878daf7428d4fd0a5164d2b052d98026fb313daeebb3e09ba1126",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "兩端同分母相加得18/2=9，再除2得9/2。",
+      "derivedAnswer": "9/2",
+      "storedAnswer": "9/2",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「9/2」符合。其餘三項各自違反：3是半差。；6是錯把總和9再減3。；18/2等於9，是兩端和。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「求中項」。",
+        "unitConflict": "答案以最簡分數9/2表示。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「9/2」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：答案以最簡分數9/2表示。",
+        "alternateReading": "最可能的誤讀是「只處理分子平均，分母也除錯。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "標準：需精確處理複合分數。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「3/2 與 15/2 的等差中項是多少？」獨立重算為：兩端同分母相加得18/2=9，再除2得9/2。 四選項逐項核對後唯一正解為「9/2」；邊界檢查：答案以最簡分數9/2表示。",
+      "reviewContentSha256": "4803c4eec8dc11d5f14616961786951bbf261df3d54f8f19d1742446e2398f32"
+    },
+    {
+      "questionId": "u14-s006-v005",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "f8dfefbb2542c0d1e9ec16807de29c042b3f174d9b240d74f57b59d30864dc5a",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "四項為4，4+6，4+12，22，即4、10、16、22；插入兩數和26。",
+      "derivedAnswer": "26",
+      "storedAnswer": "26",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「26」符合。其餘三項各自違反：18是總差。；22是末項。；30是插入數誤作12與18。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「兩插入數之和」。",
+        "unitConflict": "插入數順序唯一為10、16。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「26」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：插入數順序唯一為10、16。",
+        "alternateReading": "最可能的誤讀是「插入2項就把總差除以2。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "標準：需分清2個插入數形成3個間隔。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「在 4 與 22 之間插入兩個數，使四個數成等差數列。兩個插入數的和是多少？」獨立重算為：四項為4，4+6，4+12，22，即4、10、16、22；插入兩數和26。 四選項逐項核對後唯一正解為「26」；邊界檢查：插入數順序唯一為10、16。",
+      "reviewContentSha256": "c7045dd4098857a6e1691b26782d6681051a4afb291c89012461bc0ae159c2b0"
+    },
+    {
+      "questionId": "u14-s006-v006",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "f7a065367905d8487d7ab3dd0c92eff08bb080cd6af560f47d0b9efc89415e8f",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "中項性質2b=a+c：16=3x-2，3x=18，x=6；代回2、8、14，公差6。",
+      "derivedAnswer": "6",
+      "storedAnswer": "6",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「6」符合。其餘三項各自違反：x=4時三項0、8、10不等差。；x=5時1、8、12不等差。；x=8時4、8、18不等差。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「求x」。",
+        "unitConflict": "一次方程式唯一解6。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「6」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：一次方程式唯一解6。",
+        "alternateReading": "最可能的誤讀是「只令其中一段差等於8，沒有建立兩段相等。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "標準：需化簡代數式並代回驗證。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「若 x-4、8、2x+2 是等差數列的連續三項，則 x 為多少？」獨立重算為：中項性質2b=a+c：16=3x-2，3x=18，x=6；代回2、8、14，公差6。 四選項逐項核對後唯一正解為「6」；邊界檢查：一次方程式唯一解6。",
+      "reviewContentSha256": "a53d2745e00959a507339c59c89439f7ee48590a8e7c4b901b1cd65cd16ffc9a"
+    },
+    {
+      "questionId": "u14-s006-v007",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "661f74b501394e8784582d7ba8ae23cf1481d4ea31333abb7518df8e1f4584d6",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "也可求d=(18-(-6))/4=6，第三項=-6+2×6=6。",
+      "derivedAnswer": "6",
+      "storedAnswer": "6",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「6」符合。其餘三項各自違反：3不是首末平均。；9是誤把18除2。；12是半差。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「求a_3」。",
+        "unitConflict": "第3項正好位於第1與第5項中間位置。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「6」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：第3項正好位於第1與第5項中間位置。",
+        "alternateReading": "最可能的誤讀是「把五項的第三項當成只離首項一步。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "進階：需理解非僅三項時，對稱位置項仍為首尾平均。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「五項等差數列的第一項為 -6、第五項為 18，第三項是多少？」獨立重算為：也可求d=(18-(-6))/4=6，第三項=-6+2×6=6。 四選項逐項核對後唯一正解為「6」；邊界檢查：第3項正好位於第1與第5項中間位置。",
+      "reviewContentSha256": "12c0b7713c8546eb8df0c344d1bd6299de89987f801c32fceaec26bc13242768"
+    },
+    {
+      "questionId": "u14-s006-v008",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "fd0020aba909be8527ad792565a7a195c6dcf1764544b44e96dccdc2b7ff1a62",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "由等差中項性質，b=(a+c)/2=34/2=17；不需知道a、c各自數值。",
+      "derivedAnswer": "17",
+      "storedAnswer": "17",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「17」符合。其餘三項各自違反：16不滿足2b=34。；18不滿足2b=34。；34是兩端和。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「求b」。",
+        "unitConflict": "a、c可有多組，但b唯一。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「17」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：a、c可有多組，但b唯一。",
+        "alternateReading": "最可能的誤讀是「認為缺少a與c的個別值就無法求b。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "進階：資料抽象但由不變量a+c即可唯一決定b。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「a、b、c 為等差數列的連續三項，且 a+c=34，則 b 等於多少？」獨立重算為：由等差中項性質，b=(a+c)/2=34/2=17；不需知道a、c各自數值。 四選項逐項核對後唯一正解為「17」；邊界檢查：a、c可有多組，但b唯一。",
+      "reviewContentSha256": "daa50d6b95b2d5eb841cd2b053d4a8e81142b7d661ed28286a2c4d39895e9e8c"
+    },
+    {
+      "questionId": "u14-s006-v009",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "038867edae645fd8ed45efce2de1b565f5009a2301a687ca24d69dc11c2f6672",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "設三項為b-4、b、b+4，總和3b=45，b=15，所以最大19。",
+      "derivedAnswer": "19",
+      "storedAnswer": "19",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「19」符合。其餘三項各自違反：15是中項。；17只加2。；23多加兩個公差。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「求最大項」。",
+        "unitConflict": "公差正4，故最大項為中項加4。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「19」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：公差正4，故最大項為中項加4。",
+        "alternateReading": "最可能的誤讀是「把總和45除以公差4，或把平均當最大項。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "進階：需利用對稱表示消去兩端並重建最大項。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「三個連續等差項的和為 45，公差為 4。最大的一項是多少？」獨立重算為：設三項為b-4、b、b+4，總和3b=45，b=15，所以最大19。 四選項逐項核對後唯一正解為「19」；邊界檢查：公差正4，故最大項為中項加4。",
+      "reviewContentSha256": "16b0f535dd4450958347ba8fd06f9b7985b08d8db6651e438cba13455566db3e"
+    },
+    {
+      "questionId": "u14-s006-v010",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "c76ae10b48716925e7a5fddfcba0ace710fa0e8a5c8232cc6386fc6cf161afc5",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "三盞位置形成等差三項，新增位置b滿足2b=120+300=420，所以b=210 m。",
+      "derivedAnswer": "210 m",
+      "storedAnswer": "210 m",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「210 m」符合。其餘三項各自違反：180 m是兩端距離差。；200 m不是兩端平均。；420 m是兩端位置相加。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「中間路燈位置」。",
+        "unitConflict": "同一路線同一基準里程；答案210m。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「210 m」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：同一路線同一基準里程；答案210m。",
+        "alternateReading": "最可能的誤讀是「把兩端間距180 m當作位置答案。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "素養：需區分里程位置與兩燈之間的距離，答案必須是位置210 m。",
+      "literacyContextNecessity": "道路里程情境不可刪除，因為它測試「位置」與「間距」的語意區分。",
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「道路上兩盞路燈分別位於里程 120 m 與 300 m，若在正中間增設一盞，使三盞等距，新路燈位於何處？」獨立重算為：三盞位置形成等差三項，新增位置b滿足2b=120+300=420，所以b=210 m。 四選項逐項核對後唯一正解為「210 m」；邊界檢查：同一路線同一基準里程；答案210m。",
+      "reviewContentSha256": "be0db3de6560f11bb22620dc4160614d541ea4f669dfe71910191b86d9720795"
+    },
+    {
+      "questionId": "u14-s006-v011",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "dc9c48054f0f2e64d211e9982967cfe9c8963ee1f6087f318bb7610a7d970038",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "7、9、11時等時間隔，三個氣溫形成等差三項；18.4+25.6=44，44÷2=22。",
+      "derivedAnswer": "22°C",
+      "storedAnswer": "22°C",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「22°C」符合。其餘三項各自違反：21°C是平均計算錯。；22.8°C不是兩端平均。；44°C是兩端相加未除2。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「9時氣溫」。",
+        "unitConflict": "攝氏溫標可做差與平均；答案精確22°C。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「22°C」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：攝氏溫標可做差與平均；答案精確22°C。",
+        "alternateReading": "最可能的誤讀是「只因時間9是數值平均，就未確認每2小時等量上升。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "素養：必須同時使用等時間隔與等量變化，才能把9時讀數視為中項。",
+      "literacyContextNecessity": "氣溫與時刻情境提供「位置間隔相等」的必要條件。",
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某日 7 時氣溫 18.4°C，11 時氣溫 25.6°C；若每 2 小時等量上升，9 時氣溫是多少？」獨立重算為：7、9、11時等時間隔，三個氣溫形成等差三項；18.4+25.6=44，44÷2=22。 四選項逐項核對後唯一正解為「22°C」；邊界檢查：攝氏溫標可做差與平均；答案精確22°C。",
+      "reviewContentSha256": "28a6187560cc016fedd228f2675945f5284e7180feac567481e222d06e384b50"
+    },
+    {
+      "questionId": "u14-s006-v012",
+      "unitId": "u14",
+      "skillId": "arithmetic-mean-term",
+      "contentSha256": "344e667c09d7c87e9740f17a43588fc2538f85b2a2d3ed8f83fb20a86610da94",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "五層有4個間隔，d=(84-36)/4=12；高度依序36、48、60、72、84，所以第3層60 cm。",
+      "derivedAnswer": "60 cm",
+      "storedAnswer": "60 cm",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「60 cm」符合。其餘三項各自違反：48 cm是第2層。；54 cm是錯誤平均。；72 cm是第4層。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差中項」講義中定義；本題目標為「第3層高度」。",
+        "unitConflict": "高度單位一致；五層包含兩端。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「60 cm」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：高度單位一致；五層包含兩端。",
+        "alternateReading": "最可能的誤讀是「把5層誤作5個間隔。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "素養：要由實物層數判斷4個間隔，且第3層是位置中點。",
+      "literacyContextNecessity": "展示架情境提供層數與高度位置，不能把48cm總差直接平均到5段。",
+      "prerequisiteCheck": "使用前置技能「求第 n 項」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一組五層展示架最下層高 36 cm、最上層高 84 cm，五層等距。由下往上第 3 層高度是多少？」獨立重算為：五層有4個間隔，d=(84-36)/4=12；高度依序36、48、60、72、84，所以第3層60 cm。 四選項逐項核對後唯一正解為「60 cm」；邊界檢查：高度單位一致；五層包含兩端。",
+      "reviewContentSha256": "cfee736ce2a4ae8ead85a834bcb14cf52cc03d9c9ff9356d1a618d9d4c3d66c0"
+    }
+  ],
+  "drawingSpecs": []
+};

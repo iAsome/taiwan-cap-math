@@ -1,0 +1,252 @@
+{
+  "lectureId": "u14-s004-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-sequences",
+  "skillId": "geometric-basic",
+  "lockedTitle": "等比數列基本",
+  "title": "等比數列基本：固定倍數與公比的辨認",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能以相鄰比判斷等比數列。",
+    "能求公比與下一項。",
+    "能處理負公比、分數公比與遞減情況。",
+    "能分清等差的固定差與等比的固定比。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "arithmetic-sequence-common-diff",
+      "title": "等差公差",
+      "requiredLevel": "能說明「等差公差」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "等比數列",
+      "definition": "相鄰後項都是前項乘同一非零常數的數列。"
+    },
+    {
+      "term": "公比",
+      "definition": "相鄰後項除以前項所得的固定比 r。"
+    },
+    {
+      "term": "倍增或倍減",
+      "definition": "每一步乘固定倍數。"
+    },
+    {
+      "term": "負公比",
+      "definition": "項的正負通常交錯。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "r=a_{n+1}/a_n",
+      "meaning": "前項非0時的相鄰比。"
+    },
+    {
+      "symbol": "a_{n+1}=r a_n",
+      "meaning": "用公比產生下一項。"
+    }
+  ],
+  "conceptNarrative": [
+    "等比關係關心的是「乘幾倍」，不是「增加多少」。",
+    "公比大於1時絕對值常變大；0<r<1時絕對值常變小；r<0時正負交錯。",
+    "若數列含0，直接用相鄰除法可能無意義，必須依定義檢查是否能以同一r產生。",
+    "等比數列的首項與公比共同決定後續各項。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "公比",
+      "statement": "每一項到下一項所乘的固定數。"
+    },
+    {
+      "name": "等比判準",
+      "statement": "對所有可比較的相鄰項，相鄰比相同。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "r=a_{n+1}÷a_n",
+      "conditions": [
+        "a_n≠0"
+      ],
+      "meaning": "由相鄰項求公比。"
+    },
+    {
+      "formula": "a_{n+1}=r a_n",
+      "conditions": [
+        "同一公比對每一步成立"
+      ],
+      "meaning": "遞推下一項。"
+    }
+  ],
+  "nonApplicableCases": [
+    "相鄰差固定的是等差，不等於等比。",
+    "前項為0時不能用除法求公比。",
+    "只驗一次相鄰比不足以確認整列。",
+    "題目未限定正項時，中間項可能有正負兩解。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先算各相鄰差與比",
+      "check": "分辨加法或乘法規律。"
+    },
+    {
+      "step": 2,
+      "instruction": "確認所有相鄰比相同",
+      "check": "至少核對兩段。"
+    },
+    {
+      "step": 3,
+      "instruction": "保留公比符號",
+      "check": "負號決定交錯。"
+    },
+    {
+      "step": 4,
+      "instruction": "用前項乘r求下一項",
+      "check": "不要改成加r。"
+    },
+    {
+      "step": 5,
+      "instruction": "回代檢查每一步",
+      "check": "尤其注意0與分數。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "4，12，36，…",
+      "reasoning": "相鄰比皆為3。",
+      "solutionSteps": [
+        "相鄰比皆為3。",
+        "下一項36×3=108。"
+      ],
+      "answer": "108"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "64，32，16，…",
+      "reasoning": "公比為1/2。",
+      "solutionSteps": [
+        "公比為1/2。",
+        "下一項8。"
+      ],
+      "answer": "8"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "-3，6，-12，…",
+      "reasoning": "公比為-2。",
+      "solutionSteps": [
+        "公比為-2。",
+        "下一項24。"
+      ],
+      "answer": "24"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "2，x，18為正的連續三項",
+      "reasoning": "x/2=18/x。",
+      "solutionSteps": [
+        "x/2=18/x。",
+        "x^2=36且x>0。"
+      ],
+      "answer": "x=6"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把公比當公差",
+      "why": "乘法規律被誤作加法。",
+      "correction": "比較相鄰比。"
+    },
+    {
+      "mistake": "負公比漏負號",
+      "why": "正負交錯會被破壞。",
+      "correction": "做有號數除法。"
+    },
+    {
+      "mistake": "0作除數",
+      "why": "除法無定義。",
+      "correction": "改用a_{n+1}=ra_n檢查。"
+    },
+    {
+      "mistake": "只看數列遞增就判等比",
+      "why": "許多非等比數列也遞增。",
+      "correction": "必須驗證固定比。"
+    },
+    {
+      "mistake": "正項條件被忽略",
+      "why": "中項平方方程可能有兩解。",
+      "correction": "讀清是否限定正數。"
+    },
+    {
+      "mistake": "每一步加公比",
+      "why": "公比應乘在前項上。",
+      "correction": "寫a_{n+1}=ra_n。"
+    }
+  ],
+  "selfCheck": [
+    "相鄰比是否對每一段相同？",
+    "是否有0造成除法無定義？",
+    "公比正負是否保留？",
+    "我用的是乘法而非加法嗎？",
+    "題目是否限制各項正負？"
+  ],
+  "summary": [
+    "等比數列每一步乘固定公比。",
+    "公比可為負數或分數。",
+    "等比看相鄰比，等差看相鄰差。",
+    "含0或正負限制時要額外檢查。"
+  ],
+  "connections": {
+    "previous": "由等差的固定差對照等比的固定比。",
+    "next": [
+      "後續會用指數表示等比第n項。",
+      "一般求第n項還會包含平方與交錯規律。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s004-v001",
+      "u14-s004-v002",
+      "u14-s004-v003",
+      "u14-s004-v004",
+      "u14-s004-v005",
+      "u14-s004-v006",
+      "u14-s004-v007",
+      "u14-s004-v008",
+      "u14-s004-v009",
+      "u14-s004-v010",
+      "u14-s004-v011",
+      "u14-s004-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s004-cr001",
+      "u14-s004-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「等比數列基本」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "f0da0294e671304e052355365f50984882b71cec2553394b7689b7d4e64a3288"
+}

@@ -1,0 +1,264 @@
+{
+  "lectureId": "u14-s012-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-literacy",
+  "skillId": "sequence-literacy",
+  "lockedTitle": "數列素養題",
+  "title": "數列素養題：從表格和圖形與限制中選擇正確模型",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能從多重資訊中辨認項數、項值與總和。",
+    "能比較等差、等比與其他規律。",
+    "能處理表格缺值、門檻與累積條件。",
+    "能用完整語句說明模型選擇與答案限制。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "series-sum-word",
+      "title": "級數求和應用",
+      "requiredLevel": "能說明「級數求和應用」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "模型",
+      "definition": "用數列或級數表示真實情境的數學關係。"
+    },
+    {
+      "term": "資料表",
+      "definition": "以列或欄呈現項數與項值。"
+    },
+    {
+      "term": "門檻",
+      "definition": "首次達到、超過或低於某值的條件。"
+    },
+    {
+      "term": "累積限制",
+      "definition": "總和不得超過預算、容量或時間。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "n",
+      "meaning": "期數、階段、列數或編號。"
+    },
+    {
+      "symbol": "a_n",
+      "meaning": "第n期單次量。"
+    },
+    {
+      "symbol": "S_n",
+      "meaning": "截至第n期的累積量。"
+    }
+  ],
+  "conceptNarrative": [
+    "素養題的難點通常不在公式，而在辨認資料哪一欄是位置、哪一欄是項值，以及題目問單次還是累積。",
+    "表格中固定差表示等差，固定比表示等比；若兩者都不固定，需找其他結構。",
+    "「第一次超過」要同時檢查前一項未超過與本項已超過。",
+    "實際情境常有限制，例如列數為整數、數量不可為負、容量不可超標，最後必須驗證。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "素養建模",
+      "statement": "把文字、圖表與限制轉成可計算的數列關係。"
+    },
+    {
+      "name": "首次達標",
+      "statement": "找到最小的正整數n使條件成立。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a_n=a_1+(n-1)d",
+      "conditions": [
+        "固定增加或減少"
+      ],
+      "meaning": "等差模型。"
+    },
+    {
+      "formula": "a_n=a_1r^{n-1}",
+      "conditions": [
+        "固定倍率"
+      ],
+      "meaning": "等比模型。"
+    },
+    {
+      "formula": "S_n=n(a_1+a_n)/2",
+      "conditions": [
+        "累積等差量"
+      ],
+      "meaning": "等差總量模型。"
+    }
+  ],
+  "nonApplicableCases": [
+    "資料只呈現少數點時不可忽略題目說明自行延伸。",
+    "問單次量不能用累積總和回答。",
+    "首次達標不可只找任一達標項。",
+    "等比累積若未教授公式，可逐項列出有限項相加，不做高中延伸。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "整理資訊表",
+      "check": "標出位置、單次量、總量與單位。"
+    },
+    {
+      "step": 2,
+      "instruction": "檢查差、比或圖形結構",
+      "check": "選擇模型。"
+    },
+    {
+      "step": 3,
+      "instruction": "翻譯關鍵詞",
+      "check": "第n次、共、首次、最多。"
+    },
+    {
+      "step": 4,
+      "instruction": "計算並處理整數限制",
+      "check": "必要時比較相鄰兩個n。"
+    },
+    {
+      "step": 5,
+      "instruction": "回到原情境驗證",
+      "check": "說明為何其他模型不合。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "表中1、2、3日分別7、11、15件",
+      "reasoning": "差為4。",
+      "solutionSteps": [
+        "差為4。",
+        "a_n=7+4(n-1)。"
+      ],
+      "answer": "第20日83件"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "細胞每輪為前一輪3倍，首輪2個",
+      "reasoning": "等比r=3。",
+      "solutionSteps": [
+        "等比r=3。",
+        "a_6=2×3^5。"
+      ],
+      "answer": "486個"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "每排12席，下一排多4席，共8排",
+      "reasoning": "等差且求總量。",
+      "solutionSteps": [
+        "等差且求總量。",
+        "末排40席，S_8=208。"
+      ],
+      "answer": "208席"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "讀數30、27、24、…，首次低於10",
+      "reasoning": "a_n=30-3(n-1)。",
+      "solutionSteps": [
+        "a_n=30-3(n-1)。",
+        "第7項12，第8項9。"
+      ],
+      "answer": "第8次"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把表格列號當項值",
+      "why": "位置與資料欄混淆。",
+      "correction": "為欄位加上名稱與單位。"
+    },
+    {
+      "mistake": "固定差與固定比只看一段",
+      "why": "模型判斷不充分。",
+      "correction": "至少核對兩段。"
+    },
+    {
+      "mistake": "首次達標只解不等式不驗前項",
+      "why": "可能不是最小n。",
+      "correction": "檢查n-1與n。"
+    },
+    {
+      "mistake": "問總量只讀最後一列",
+      "why": "單項與累積混淆。",
+      "correction": "看到「合計」寫S_n。"
+    },
+    {
+      "mistake": "忽略項數整數性",
+      "why": "出現半排或半天。",
+      "correction": "依題意取最小或最大可行整數並驗證。"
+    },
+    {
+      "mistake": "超出會考範圍使用等比級數公式",
+      "why": "方法過度延伸。",
+      "correction": "有限項直接列出或逐項相加。"
+    }
+  ],
+  "selfCheck": [
+    "表格哪一欄是n、哪一欄是a_n？",
+    "題目問單次、總和還是首次達標？",
+    "差或比是否對所有資料成立？",
+    "整數與容量限制是否處理？",
+    "答案是否附單位並回到情境？"
+  ],
+  "summary": [
+    "素養題先整理位置、項值、總和與單位。",
+    "固定差、固定比與圖形結構決定模型。",
+    "首次達標要驗前一項。",
+    "最後必須檢查整數性、範圍與情境合理性。"
+  ],
+  "connections": {
+    "previous": "整合本單元所有數列與等差級數技能。",
+    "next": [
+      "可銜接 U15 函數，以輸入n與輸出a_n理解函數關係。"
+    ]
+  },
+  "figureReferences": [
+    "u14-fig-s012-triangular-dots"
+  ],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s012-v001",
+      "u14-s012-v002",
+      "u14-s012-v003",
+      "u14-s012-v004",
+      "u14-s012-v005",
+      "u14-s012-v006",
+      "u14-s012-v007",
+      "u14-s012-v008",
+      "u14-s012-v009",
+      "u14-s012-v010",
+      "u14-s012-v011",
+      "u14-s012-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s012-cr001",
+      "u14-s012-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「數列素養題」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "a873a8d0b91b9e586bc23535244cd0dc094c4f59443f102054bc501af2b60d87"
+}

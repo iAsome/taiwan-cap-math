@@ -1,0 +1,263 @@
+{
+  "lectureId": "u14-s005-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-sequences",
+  "skillId": "sequence-nth-term",
+  "lockedTitle": "求第 n 項",
+  "title": "求第 n 項：把位置翻成可直接計算的式子",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由明確規律寫出 a_n。",
+    "能代入指定 n 求項值。",
+    "能辨認平方數、三角數與交錯符號。",
+    "能檢查公式是否從第1項開始正確。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "geometric-basic",
+      "title": "等比數列基本",
+      "requiredLevel": "能說明「等比數列基本」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "通項",
+      "definition": "直接以項數n表示第n項的式子。"
+    },
+    {
+      "term": "平方數列",
+      "definition": "各項與n^2相關的數列。"
+    },
+    {
+      "term": "三角數",
+      "definition": "1+2+…+n，為n(n+1)/2。"
+    },
+    {
+      "term": "交錯符號",
+      "definition": "常用(-1)^n或(-1)^{n+1}描述正負輪替。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "a_n=f(n)",
+      "meaning": "把位置n代入函數式得到項值。"
+    },
+    {
+      "symbol": "(-1)^n",
+      "meaning": "n奇數時為-1，n偶數時為1。"
+    },
+    {
+      "symbol": "n(n+1)/2",
+      "meaning": "第n個三角數。"
+    }
+  ],
+  "conceptNarrative": [
+    "求第n項不是只延伸到目標，而是找出位置與項值的固定關係。",
+    "先列n=1、2、3代入候選式，若前三項就不符，公式一定錯。",
+    "平方型數列常先比較n^2，再看是否平移或加減線性項。",
+    "交錯數列要同時處理絕對值規律與正負規律。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "通項公式",
+      "statement": "對每個允許的正整數n都給出正確a_n的式子。"
+    },
+    {
+      "name": "三角數",
+      "statement": "前n個正整數的總和。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "a_n=2n+1",
+      "conditions": [
+        "n為正整數"
+      ],
+      "meaning": "線性通項範例。"
+    },
+    {
+      "formula": "a_n=n(n+1)/2",
+      "conditions": [
+        "由1加到n的累積點數"
+      ],
+      "meaning": "三角數通項。"
+    },
+    {
+      "formula": "a_n=(-1)^{n+1}(2n-1)",
+      "conditions": [
+        "絕對值為連續奇數且首項為正"
+      ],
+      "meaning": "交錯奇數通項。"
+    }
+  ],
+  "nonApplicableCases": [
+    "只符合前兩項的式子未必是題目規律。",
+    "n從1開始時不可誤用從0開始的公式。",
+    "(-1)^n只控制正負，不決定絕對值。",
+    "分段或區塊重複數列不一定能用單一一次式。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "建立n與a_n對照表",
+      "check": "至少列前三項。"
+    },
+    {
+      "step": 2,
+      "instruction": "辨認基本骨架",
+      "check": "看線性、平方、累積或交錯。"
+    },
+    {
+      "step": 3,
+      "instruction": "加入平移與係數",
+      "check": "比較候選式與實際值。"
+    },
+    {
+      "step": 4,
+      "instruction": "代入n=1、2、3驗證",
+      "check": "不得只驗目標項。"
+    },
+    {
+      "step": 5,
+      "instruction": "代入題目指定n並化簡",
+      "check": "注意指數與括號。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "3，5，7，9，…",
+      "reasoning": "每項比2n多1。",
+      "solutionSteps": [
+        "每項比2n多1。",
+        "a_n=2n+1。"
+      ],
+      "answer": "a_20=41"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "2，6，12，20，…",
+      "reasoning": "依序為1×2、2×3、3×4。",
+      "solutionSteps": [
+        "依序為1×2、2×3、3×4。",
+        "a_n=n(n+1)。"
+      ],
+      "answer": "a_8=72"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "1，3，6，10，…",
+      "reasoning": "為前n個正整數和。",
+      "solutionSteps": [
+        "為前n個正整數和。",
+        "a_n=n(n+1)/2。"
+      ],
+      "answer": "a_7=28"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "1，-3，5，-7，…",
+      "reasoning": "絕對值2n-1，奇數項正。",
+      "solutionSteps": [
+        "絕對值2n-1，奇數項正。",
+        "a_n=(-1)^{n+1}(2n-1)。"
+      ],
+      "answer": "a_6=-11"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把n當成前一項",
+      "why": "通項是位置到項值，不是遞推。",
+      "correction": "先寫位置表。"
+    },
+    {
+      "mistake": "公式從n=0開始卻直接套n=1",
+      "why": "整列會錯位。",
+      "correction": "檢查首項。"
+    },
+    {
+      "mistake": "平方數列只看差不寫n^2",
+      "why": "差值雖有規律但無法直接求遠項。",
+      "correction": "比較a_n與n^2。"
+    },
+    {
+      "mistake": "交錯符號次方寫反",
+      "why": "首項正負會顛倒。",
+      "correction": "代n=1檢查。"
+    },
+    {
+      "mistake": "三角數少除以2",
+      "why": "把兩份配對總和當一份。",
+      "correction": "記住n(n+1)/2。"
+    },
+    {
+      "mistake": "只驗一個n",
+      "why": "錯式可能碰巧命中。",
+      "correction": "至少驗三個已知位置。"
+    }
+  ],
+  "selfCheck": [
+    "n從1開始嗎？",
+    "候選式能產生所有已知項嗎？",
+    "正負交錯與絕對值是否分開處理？",
+    "括號與指數是否先算？",
+    "代入目標n後是否合理？"
+  ],
+  "summary": [
+    "通項把位置直接映射到項值。",
+    "要用多個已知位置驗證公式。",
+    "常見骨架有線性、平方、三角數與交錯。",
+    "首項檢查可避免整體錯位。"
+  ],
+  "connections": {
+    "previous": "整合等差、等比與一般數列規律。",
+    "next": [
+      "等差中項會利用相鄰三項的對稱性。",
+      "規律觀察列式會把圖形或文字轉成通項。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s005-v001",
+      "u14-s005-v002",
+      "u14-s005-v003",
+      "u14-s005-v004",
+      "u14-s005-v005",
+      "u14-s005-v006",
+      "u14-s005-v007",
+      "u14-s005-v008",
+      "u14-s005-v009",
+      "u14-s005-v010",
+      "u14-s005-v011",
+      "u14-s005-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s005-cr001",
+      "u14-s005-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「求第 n 項」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "03e4eb0a8819f9f8400c01c62ddca9789c285dc3459b0863e38c3b71513f6302"
+}

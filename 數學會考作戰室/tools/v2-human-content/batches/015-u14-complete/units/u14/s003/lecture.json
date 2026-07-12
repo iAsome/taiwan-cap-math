@@ -1,0 +1,253 @@
+{
+  "lectureId": "u14-s003-lecture-r1",
+  "unitId": "u14",
+  "numericUnitId": 14,
+  "topicId": "u14-sequences",
+  "skillId": "arithmetic-sequence-common-diff",
+  "lockedTitle": "等差公差",
+  "title": "等差公差：用項值差除以位置差",
+  "audience": "臺灣國中零基礎至會考滿分",
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+  "reviewStatus": "independently-reviewed",
+  "learningOutcomes": [
+    "能由相鄰項求公差。",
+    "能由不相鄰兩項求公差。",
+    "能判斷遺漏項與含參數的等差條件。",
+    "能解釋公差的單位與正負意義。"
+  ],
+  "prerequisiteBridge": [
+    {
+      "skillId": "arithmetic-sequence-nth",
+      "title": "等差數列第 n 項",
+      "requiredLevel": "能說明「等差數列第 n 項」的核心定義並完成基本計算，作為本技能的直接前置。"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "公差",
+      "definition": "等差數列中固定的後項減前項。"
+    },
+    {
+      "term": "位置差",
+      "definition": "兩已知項的項數相減。"
+    },
+    {
+      "term": "總變化量",
+      "definition": "兩項的項值相減。"
+    },
+    {
+      "term": "遞增與遞減",
+      "definition": "公差正表示遞增，公差負表示遞減。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "d=a_{k+1}-a_k",
+      "meaning": "由相鄰項求公差。"
+    },
+    {
+      "symbol": "d=(a_q-a_p)/(q-p)",
+      "meaning": "由第p項與第q項求公差。"
+    }
+  ],
+  "conceptNarrative": [
+    "相鄰項只隔一步，所以直接後項減前項。",
+    "不相鄰兩項之間跨了多個等長步驟，總變化必須平均分給位置差。",
+    "公差的順序固定是後項減前項；顛倒時正負號會反轉。",
+    "若數列有實際單位，公差表示每增加一個位置時的單位變化量。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "公差",
+      "statement": "a_{n+1}-a_n 的固定值。"
+    },
+    {
+      "name": "位置差",
+      "statement": "q-p，代表從第p項到第q項走了幾步。"
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "d=a_{n+1}-a_n",
+      "conditions": [
+        "兩項相鄰"
+      ],
+      "meaning": "一步的變化量。"
+    },
+    {
+      "formula": "d=(a_q-a_p)/(q-p)",
+      "conditions": [
+        "p≠q",
+        "兩項屬同一等差數列"
+      ],
+      "meaning": "總變化除以步數。"
+    }
+  ],
+  "nonApplicableCases": [
+    "不是等差數列時不存在單一公差。",
+    "用前項減後項會把正負號倒轉。",
+    "不相鄰兩項不可直接把項值差當公差。",
+    "含單位時不可省略每項的變化單位。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "寫出兩項的位置與值",
+      "check": "避免把值差當位置差。"
+    },
+    {
+      "step": 2,
+      "instruction": "算總變化a_q-a_p",
+      "check": "保持同一方向。"
+    },
+    {
+      "step": 3,
+      "instruction": "算位置差q-p",
+      "check": "位置差不可為0。"
+    },
+    {
+      "step": 4,
+      "instruction": "相除得到d",
+      "check": "必要時約分。"
+    },
+    {
+      "step": 5,
+      "instruction": "用另一段相鄰差驗證",
+      "check": "確認整個數列一致。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "9，14，19，… 的公差",
+      "reasoning": "14-9=5。",
+      "solutionSteps": [
+        "14-9=5。",
+        "19-14也等於5。"
+      ],
+      "answer": "5"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "a_3=7，a_8=27",
+      "reasoning": "總變化20，位置差5。",
+      "solutionSteps": [
+        "總變化20，位置差5。",
+        "d=20÷5=4。"
+      ],
+      "answer": "4"
+    },
+    {
+      "exampleId": "L3",
+      "prompt": "a_2=12，a_6=-4",
+      "reasoning": "總變化-16，位置差4。",
+      "solutionSteps": [
+        "總變化-16，位置差4。",
+        "d=-4。"
+      ],
+      "answer": "-4"
+    },
+    {
+      "exampleId": "L4",
+      "prompt": "x，13，21為連續三項",
+      "reasoning": "兩段公差相等。",
+      "solutionSteps": [
+        "兩段公差相等。",
+        "13-x=8，所以x=5。"
+      ],
+      "answer": "x=5"
+    }
+  ],
+  "difficultyConnections": {
+    "basic": "能辨認定義與完成單一步驟。",
+    "standard": "能在多個表示間轉換並處理兩至三步推理。",
+    "advanced": "能整合位置、條件、反推或代數驗證。",
+    "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+  },
+  "commonMistakes": [
+    {
+      "mistake": "把q-p算成項數個數",
+      "why": "兩端之間的步數少1。",
+      "correction": "直接用項次相減。"
+    },
+    {
+      "mistake": "項值差與位置差方向不同",
+      "why": "會造成符號錯誤。",
+      "correction": "分子分母保持同方向。"
+    },
+    {
+      "mistake": "公差只看絕對值",
+      "why": "遞增與遞減意義消失。",
+      "correction": "保留正負號。"
+    },
+    {
+      "mistake": "看到兩項就假定等差",
+      "why": "兩點可定一個候選公差但不保證全列。",
+      "correction": "需要題目明示或更多項驗證。"
+    },
+    {
+      "mistake": "缺項時平均錯段數",
+      "why": "插入k項會形成k+1段。",
+      "correction": "畫位置格。"
+    },
+    {
+      "mistake": "單位寫成總量單位",
+      "why": "公差是每增加一項的變化。",
+      "correction": "寫成「每項增加…」。"
+    }
+  ],
+  "selfCheck": [
+    "分子與分母方向是否一致？",
+    "位置差是否正確？",
+    "公差的正負是否符合遞增或遞減？",
+    "是否有題意保證等差？",
+    "代回兩項是否成立？"
+  ],
+  "summary": [
+    "相鄰公差是後項減前項。",
+    "不相鄰公差等於項值差除以位置差。",
+    "位置差是步數，不是兩端包含的項數。",
+    "公差要保留符號與單位。"
+  ],
+  "connections": {
+    "previous": "使用等差第n項公式中的固定變化量。",
+    "next": [
+      "固定乘法變化將進入等比數列。",
+      "公差也會用於等差中項與級數。"
+    ]
+  },
+  "figureReferences": [],
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u14-s003-v001",
+      "u14-s003-v002",
+      "u14-s003-v003",
+      "u14-s003-v004",
+      "u14-s003-v005",
+      "u14-s003-v006",
+      "u14-s003-v007",
+      "u14-s003-v008",
+      "u14-s003-v009",
+      "u14-s003-v010",
+      "u14-s003-v011",
+      "u14-s003-v012"
+    ],
+    "constructedResponseIds": [
+      "u14-s003-cr001",
+      "u14-s003-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "capBoundary": "pass",
+    "undefinedSymbolAudit": "pass",
+    "futureKnowledgeLeakage": "pass",
+    "examplesNotCopiedFromQuestionBank": true,
+    "reviewVersion": "human-lecture-review-r4.0",
+    "reviewedAt": "2026-07-12",
+    "reviewNote": "逐段檢查「等差公差」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+  },
+  "contentSha256": "9c1294a3d201f38da76d79362fe0ff2229f1e2d1a189a1c1c586d7425bc580f9"
+}

@@ -1,0 +1,1728 @@
+// Generated only from reviewed immutable source. Do not hand edit.
+export default {
+  "lecture": {
+    "lectureId": "u14-s010-lecture-r1",
+    "unitId": "u14",
+    "numericUnitId": 14,
+    "topicId": "u14-series",
+    "skillId": "arithmetic-series-word",
+    "lockedTitle": "等差級數應用",
+    "title": "等差級數應用：從情境找首項和增量與項數",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能把逐期固定增加或減少的情境轉成等差數列。",
+      "能辨認總量問題需要級數而非末項。",
+      "能處理座位、存款、堆疊與每日累積。",
+      "能保留實際單位並解釋答案。"
+    ],
+    "prerequisiteBridge": [
+      {
+        "skillId": "arithmetic-series-sum",
+        "title": "等差級數和",
+        "requiredLevel": "能說明「等差級數和」的核心定義並完成基本計算，作為本技能的直接前置。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "逐期量",
+        "definition": "每一列、每天、每月或每層的單次數量。"
+      },
+      {
+        "term": "累積量",
+        "definition": "多期逐期量相加的總數。"
+      },
+      {
+        "term": "期數",
+        "definition": "總共有幾列、幾天或幾層。"
+      },
+      {
+        "term": "固定增量",
+        "definition": "每一期比前一期增加或減少的固定量。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "a_1",
+        "meaning": "第一期的量。"
+      },
+      {
+        "symbol": "d",
+        "meaning": "每增加一期的固定變化。"
+      },
+      {
+        "symbol": "S_n",
+        "meaning": "前n期累積量。"
+      }
+    ],
+    "conceptNarrative": [
+      "情境題最常見錯誤是算出最後一列卻把它當總數。",
+      "題目若問「共多少」通常需要相加；若問「第幾列有多少」只求單項。",
+      "單位也能幫助判斷：每列座位數是「個」，總座位仍是「個」，但過程要說明累積。",
+      "若每期減少，公差為負；只要各期仍符合題意，等差和公式照樣適用。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "等差應用模型",
+        "statement": "逐期量形成等差數列且要求某項或總和。"
+      },
+      {
+        "name": "累積判斷",
+        "statement": "辨認是否要把每一期全部相加。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "a_n=a_1+(n-1)d",
+        "conditions": [
+          "求第n期單次量"
+        ],
+        "meaning": "末期或特定期。"
+      },
+      {
+        "formula": "S_n=n(a_1+a_n)/2",
+        "conditions": [
+          "求前n期總量"
+        ],
+        "meaning": "累積總和。"
+      }
+    ],
+    "nonApplicableCases": [
+      "只給平均增加但每期不固定時不能直接視為等差。",
+      "題目問末期量時不需計算S_n。",
+      "期數不一定等於末項數值。",
+      "實際情境若出現負數量，需檢查模型適用範圍。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "圈出每一期的單次量",
+        "check": "確認單位。"
+      },
+      {
+        "step": 2,
+        "instruction": "判斷是否固定增加或減少",
+        "check": "找a_1與d。"
+      },
+      {
+        "step": 3,
+        "instruction": "確定問單項或總和",
+        "check": "看「第幾」或「共」。"
+      },
+      {
+        "step": 4,
+        "instruction": "求a_n與S_n",
+        "check": "依需求選公式。"
+      },
+      {
+        "step": 5,
+        "instruction": "用情境語句回答",
+        "check": "附單位與範圍。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "劇院第1排16席，每排多3席，共12排",
+        "reasoning": "a_12=49。",
+        "solutionSteps": [
+          "a_12=49。",
+          "S_12=12×65÷2。"
+        ],
+        "answer": "390席"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "第一週存200元，以後每週多存50元，共8週",
+        "reasoning": "a_8=550。",
+        "solutionSteps": [
+          "a_8=550。",
+          "S_8=8×750÷2。"
+        ],
+        "answer": "3000元"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "最上層40箱，每層少4箱，共7層",
+        "reasoning": "a_7=16。",
+        "solutionSteps": [
+          "a_7=16。",
+          "S_7=7×56÷2。"
+        ],
+        "answer": "196箱"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "跑步第1天1.5公里，每天多0.5公里，第10天",
+        "reasoning": "只問單日。",
+        "solutionSteps": [
+          "只問單日。",
+          "a_10=1.5+9×0.5。"
+        ],
+        "answer": "6公里"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "能辨認定義與完成單一步驟。",
+      "standard": "能在多個表示間轉換並處理兩至三步推理。",
+      "advanced": "能整合位置、條件、反推或代數驗證。",
+      "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "問總量卻只求a_n",
+        "why": "末期量不是累積。",
+        "correction": "看到「共」列出加法。"
+      },
+      {
+        "mistake": "問單一期卻求S_n",
+        "why": "多算前面各期。",
+        "correction": "先寫目標單位。"
+      },
+      {
+        "mistake": "公差單位省略",
+        "why": "難以解釋每期變化。",
+        "correction": "寫「每排多3席」。"
+      },
+      {
+        "mistake": "第一期到第n期算n次增量",
+        "why": "多走一步。",
+        "correction": "使用n-1。"
+      },
+      {
+        "mistake": "減少情境仍把d寫正",
+        "why": "末項方向錯。",
+        "correction": "後項減前項。"
+      },
+      {
+        "mistake": "得到負數量仍接受",
+        "why": "模型已超出實際範圍。",
+        "correction": "檢查所有期數可行。"
+      }
+    ],
+    "selfCheck": [
+      "題目問單項還是累積？",
+      "a_1、d、n各代表什麼實際量？",
+      "從第一期到第n期有幾次變化？",
+      "單位是否一致？",
+      "答案在情境中是否可能？"
+    ],
+    "summary": [
+      "情境先辨認逐期量與累積量。",
+      "固定增減形成等差數列。",
+      "問第n期用a_n，問總量用S_n。",
+      "答案要附單位並檢查可行性。"
+    ],
+    "connections": {
+      "previous": "直接運用等差級數和公式。",
+      "next": [
+        "級數求和應用會由總和反推期數或末項。",
+        "數列素養題會混合表格、限制與方案比較。"
+      ]
+    },
+    "figureReferences": [
+      "u14-fig-s010-panel-rows"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u14-s010-v001",
+        "u14-s010-v002",
+        "u14-s010-v003",
+        "u14-s010-v004",
+        "u14-s010-v005",
+        "u14-s010-v006",
+        "u14-s010-v007",
+        "u14-s010-v008",
+        "u14-s010-v009",
+        "u14-s010-v010",
+        "u14-s010-v011",
+        "u14-s010-v012"
+      ],
+      "constructedResponseIds": [
+        "u14-s010-cr001",
+        "u14-s010-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "capBoundary": "pass",
+      "undefinedSymbolAudit": "pass",
+      "futureKnowledgeLeakage": "pass",
+      "examplesNotCopiedFromQuestionBank": true,
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "reviewNote": "逐段檢查「等差級數應用」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+    },
+    "contentSha256": "f1146095be09231653d0dd13f60fa133bdb0a0af5b93ed67c81e396e46d6ba54"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u14-s010-v001",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "罐頭堆成 4 層，各層罐數依序為 4、7、10、13。共有多少罐？",
+      "givenConditions": [
+        "四層4、7、10、13罐"
+      ],
+      "target": "總罐數",
+      "choices": [
+        "13",
+        "34",
+        "30",
+        "40"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "四層形成等差數列，S_4=4(4+13)/2=34。",
+      "mainExplanation": "依題意依序處理：辨認4層皆要相加。；用直接加總或公式。，所以唯一正確選項是「34」。",
+      "steps": [
+        "辨認4層皆要相加。",
+        "用直接加總或公式。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "13",
+          "truth": false,
+          "reason": "13只是最後一層。"
+        },
+        {
+          "choice": "34",
+          "truth": true,
+          "reason": "直接相加4+7+10+13=34。"
+        },
+        {
+          "choice": "30",
+          "truth": false,
+          "reason": "30漏加第一層4。"
+        },
+        {
+          "choice": "40",
+          "truth": false,
+          "reason": "40把每層近似10。"
+        }
+      ],
+      "misconceptionTarget": "把最上或最下層數量當總數。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "四層全部包含；單位罐。",
+      "difficultyReason": "基礎：可直接相加，重點是辨認總量。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "少量層數的等差堆疊總和。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "02495bc0dc45139b6114ed0020f2648db685b4da4bd1e00b62adbe45fde201b2"
+    },
+    {
+      "questionId": "u14-s010-v002",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "小華五天跑步距離依序為 2、4、6、8、10 公里。五天共跑多少公里？",
+      "givenConditions": [
+        "五日距離"
+      ],
+      "target": "五天總距離",
+      "choices": [
+        "10",
+        "20",
+        "30",
+        "40"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "首末平均6公里，5天總距離5×6=30公里。",
+      "mainExplanation": "依題意依序處理：辨認每天距離是單項。；累加五天。，所以唯一正確選項是「30」。",
+      "steps": [
+        "辨認每天距離是單項。",
+        "累加五天。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "10只是第五天。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "20漏掉部分天數。"
+        },
+        {
+          "choice": "30",
+          "truth": true,
+          "reason": "2+4+6+8+10=30公里。"
+        },
+        {
+          "choice": "40",
+          "truth": false,
+          "reason": "40重複計算。"
+        }
+      ],
+      "misconceptionTarget": "把最後一天距離當五天總距離。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "公里單位一致。",
+      "difficultyReason": "基礎：數列短，可直接相加或用等差平均。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "簡單逐日累積。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ce7972d2e4543f196d79f19a3e43280256b8215d04adf5547e42f1f9f3eaea0d"
+    },
+    {
+      "questionId": "u14-s010-v003",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "禮堂有 10 排座位，第 1 排 20 席，每排多 2 席。總座位數是多少？",
+      "givenConditions": [
+        "10排",
+        "首排20",
+        "每排+2"
+      ],
+      "target": "總座位",
+      "choices": [
+        "290",
+        "38",
+        "200",
+        "310"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "座位數20、22、…、38，共10項，平均29，總數290席。",
+      "mainExplanation": "依題意依序處理：求末排。；平均乘排數。，所以唯一正確選項是「290」。",
+      "steps": [
+        "求末排。",
+        "平均乘排數。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "290",
+          "truth": true,
+          "reason": "第10排38席，總和10(20+38)/2=290。"
+        },
+        {
+          "choice": "38",
+          "truth": false,
+          "reason": "38只是末排。"
+        },
+        {
+          "choice": "200",
+          "truth": false,
+          "reason": "200忽略每排增加。"
+        },
+        {
+          "choice": "310",
+          "truth": false,
+          "reason": "310末項或平均計算錯。"
+        }
+      ],
+      "misconceptionTarget": "首排乘10或只報末排。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "所有排皆包含；答案席。",
+      "difficultyReason": "基礎：資料直接且項數小，公式一次使用。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "標準座位級數建模。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d163b45bf5dd733061ac9228fccb236453f0aad77dda6601f45a08b7d74272b6"
+    },
+    {
+      "questionId": "u14-s010-v004",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "書架有 10 層，第 1 層放 15 本書，每往上一層多 3 本。全部可放多少本？",
+      "givenConditions": [
+        "10層",
+        "首層15",
+        "每層+3"
+      ],
+      "target": "總容量",
+      "choices": [
+        "42",
+        "270",
+        "300",
+        "285"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "15、18、…、42，共10項；首尾和57，乘5得285。",
+      "mainExplanation": "依題意依序處理：求末層42。；求10層總和。，所以唯一正確選項是「285」。",
+      "steps": [
+        "求末層42。",
+        "求10層總和。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "42",
+          "truth": false,
+          "reason": "42只是第10層。"
+        },
+        {
+          "choice": "270",
+          "truth": false,
+          "reason": "270把平均算27。"
+        },
+        {
+          "choice": "300",
+          "truth": false,
+          "reason": "300用錯末項45。"
+        },
+        {
+          "choice": "285",
+          "truth": true,
+          "reason": "第10層42本，S=10(15+42)/2=285本。"
+        }
+      ],
+      "misconceptionTarget": "將「每往上一層多3本」誤作共有3本增量。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "每層書本數為整數且非負。",
+      "difficultyReason": "標準：需由文字辨認方向不影響公差正值，並求總容量。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "書架容量累積。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3ba0406a76d9ab2d2eddb1a0d1c06d19b5dda31e56d2ac3eff43f1c8259a8720"
+    },
+    {
+      "questionId": "u14-s010-v005",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "募款第 1 天收到 120 元，之後每天比前一天多 20 元，連續 14 天。總募款多少元？",
+      "givenConditions": [
+        "首日120",
+        "每日+20",
+        "14天"
+      ],
+      "target": "總募款",
+      "choices": [
+        "3500",
+        "380",
+        "3360",
+        "3640"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "每日金額形成14項等差數列；平均250元，總額3500元。",
+      "mainExplanation": "依題意依序處理：求末日380。；乘14天。，所以唯一正確選項是「3500」。",
+      "steps": [
+        "求末日380。",
+        "乘14天。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3500",
+          "truth": true,
+          "reason": "第14天380元，S=14(120+380)/2=7×500=3500。"
+        },
+        {
+          "choice": "380",
+          "truth": false,
+          "reason": "380只是第14天。"
+        },
+        {
+          "choice": "3360",
+          "truth": false,
+          "reason": "3360末項少20。"
+        },
+        {
+          "choice": "3640",
+          "truth": false,
+          "reason": "3640多算一天。"
+        }
+      ],
+      "misconceptionTarget": "把第14天金額當累積金額。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "金額皆以元計；答案精確。",
+      "difficultyReason": "標準：需辨認逐日金額與總募款，並處理14項。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "較長期募款累積。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "545680849563ec3decd2d8f4e81a9a0dad896a0a48602214dacc9a26a761c254"
+    },
+    {
+      "questionId": "u14-s010-v006",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "一個倒置積木塔共有 10 層，從最下層到最上層的積木數為 31、28、25、…、4。共有多少塊積木？",
+      "givenConditions": [
+        "10層",
+        "31到4每層-3"
+      ],
+      "target": "總積木",
+      "choices": [
+        "135",
+        "155",
+        "350",
+        "175"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "公差-3，4=31+9(-3)，確有10項；S=10(31+4)/2=175。",
+      "mainExplanation": "依題意依序處理：確認末項與層數一致。；套和公式。，所以唯一正確選項是「175」。",
+      "steps": [
+        "確認末項與層數一致。",
+        "套和公式。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "135",
+          "truth": false,
+          "reason": "135是漏算若干層。"
+        },
+        {
+          "choice": "155",
+          "truth": false,
+          "reason": "155平均或末項錯。"
+        },
+        {
+          "choice": "350",
+          "truth": false,
+          "reason": "350忘除2。"
+        },
+        {
+          "choice": "175",
+          "truth": true,
+          "reason": "首末平均17.5，10層總和175。"
+        }
+      ],
+      "misconceptionTarget": "看到遞減就用31-4當總數。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "各層均為正整數；4確為第10項。",
+      "difficultyReason": "標準：需檢查10層與末項4一致，再求和。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "遞減堆疊的總量。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9b7eb37d9e289270b230da1ef047678494fe224b55f858414255e58334494018"
+    },
+    {
+      "questionId": "u14-s010-v007",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "體育場某區有 10 排，第 1 排 25 席，每排比前一排多 3 席。此區共有多少席？",
+      "givenConditions": [
+        "10排",
+        "首排25",
+        "每排+3"
+      ],
+      "target": "總座位",
+      "choices": [
+        "52",
+        "370",
+        "385",
+        "400"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "25、28、…、52共10項，平均38.5，總數385席。",
+      "mainExplanation": "依題意依序處理：由排數求末項。；計算總和並保留整數結果。，所以唯一正確選項是「385」。",
+      "steps": [
+        "由排數求末項。",
+        "計算總和並保留整數結果。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "52",
+          "truth": false,
+          "reason": "52只是末排。"
+        },
+        {
+          "choice": "370",
+          "truth": false,
+          "reason": "370是末排少3或平均錯。"
+        },
+        {
+          "choice": "385",
+          "truth": true,
+          "reason": "第10排52席，S=10(25+52)/2=385。"
+        },
+        {
+          "choice": "400",
+          "truth": false,
+          "reason": "400把平均估成40。"
+        }
+      ],
+      "misconceptionTarget": "因平均38.5不是整數就誤認總座位不能為整數。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "單排座位均整數；總和385席。",
+      "difficultyReason": "進階：首尾平均為小數，但乘偶數項數後總量仍為整數。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "含半整數平均的實際總量。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c608cc9c1c50ee7442b43d9de3d95c2707990d9d440200ec8bb67ab8b2e51140"
+    },
+    {
+      "questionId": "u14-s010-v008",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "一年分 12 個月付款，第 1 個月付 900 元，以後每月少付 50 元。12 個月共付多少元？",
+      "givenConditions": [
+        "首月900",
+        "每月-50",
+        "12月"
+      ],
+      "target": "總付款",
+      "choices": [
+        "350",
+        "7500",
+        "7200",
+        "7800"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "付款為900、850、…、350；平均625元，12月總額7500元。",
+      "mainExplanation": "依題意依序處理：負公差-50。；求末月並累加。，所以唯一正確選項是「7500」。",
+      "steps": [
+        "負公差-50。",
+        "求末月並累加。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "350",
+          "truth": false,
+          "reason": "350只是最後一月。"
+        },
+        {
+          "choice": "7500",
+          "truth": true,
+          "reason": "第12月350元，S=12(900+350)/2=6×1250=7500。"
+        },
+        {
+          "choice": "7200",
+          "truth": false,
+          "reason": "7200末項或平均錯。"
+        },
+        {
+          "choice": "7800",
+          "truth": false,
+          "reason": "7800把月減額處理錯。"
+        }
+      ],
+      "misconceptionTarget": "把每月少50當成總共只少50。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "第12月仍為正350元；模型可行。",
+      "difficultyReason": "進階：負公差、12期與貨幣累積同時處理。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "遞減分期付款總額。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4dee98de9b44fa2190d9e80fcc2a4602561ee1cf79abf3cf67733a97808c2ee3"
+    },
+    {
+      "questionId": "u14-s010-v009",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "某會場座位每排增加 6 席，第一排 16 席，最後一排 70 席。共有幾排，總座位多少？",
+      "givenConditions": [
+        "首排16",
+        "末排70",
+        "d=6"
+      ],
+      "target": "排數與總座位",
+      "choices": [
+        "9排，387席",
+        "10排，420席",
+        "10排，430席",
+        "11排，473席"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "從16到70總增加54，分成9個間隔，所以10排；平均43席，乘10得430。",
+      "mainExplanation": "依題意依序處理：先由端點求排數。；再求總和。，所以唯一正確選項是「10排，430席」。",
+      "steps": [
+        "先由端點求排數。",
+        "再求總和。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9排，387席",
+          "truth": false,
+          "reason": "9排會使末排64席。"
+        },
+        {
+          "choice": "10排，420席",
+          "truth": false,
+          "reason": "排數對但總和少10席。"
+        },
+        {
+          "choice": "10排，430席",
+          "truth": true,
+          "reason": "排數=(70-16)/6+1=10，總和10(16+70)/2=430。"
+        },
+        {
+          "choice": "11排，473席",
+          "truth": false,
+          "reason": "11排時末排76席。"
+        }
+      ],
+      "misconceptionTarget": "把9個間隔直接當9排。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "70-16可被6整除；排數為正整數10。",
+      "difficultyReason": "進階：需先求項數再求和，且同一選項包含兩個都需正確的結果。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由首末與公差同時求期數和總量。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f4d36a544d5b55c7313e0675c339c3e5430356adeed82e1e8524594e04dc3a4e"
+    },
+    {
+      "questionId": "u14-s010-v010",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u14-fig-s010-panel-rows",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "太陽能板排列成 18 排，第 1 排 12 片，每後一排多 4 片。共需多少片太陽能板？",
+      "givenConditions": [
+        "18排",
+        "首排12",
+        "每排+4"
+      ],
+      "target": "總板數",
+      "choices": [
+        "80",
+        "828",
+        "792",
+        "864"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "每排片數12、16、…、80，共18排；平均46，總數828片。",
+      "mainExplanation": "依題意依序處理：求末排80。；累加18排。，所以唯一正確選項是「828」。",
+      "steps": [
+        "求末排80。",
+        "累加18排。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "80",
+          "truth": false,
+          "reason": "80只是末排。"
+        },
+        {
+          "choice": "828",
+          "truth": true,
+          "reason": "第18排80片，S=18(12+80)/2=9×92=828。"
+        },
+        {
+          "choice": "792",
+          "truth": false,
+          "reason": "792少一排增量。"
+        },
+        {
+          "choice": "864",
+          "truth": false,
+          "reason": "864平均或末項錯。"
+        }
+      ],
+      "misconceptionTarget": "將第18排數量當全部需求。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 120,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "答案為整片828，不需面積換算。",
+      "difficultyReason": "素養：需從工程排列中區分每排片數、排數與總材料數。",
+      "literacyContextNecessity": "太陽能板情境提供總材料需求與排配置的必要語意。",
+      "authoringIntent": "大型排列的總片數。",
+      "figureDrawingSpecRef": "units/u14/s010/drawing-specs.jsonl#u14-fig-s010-panel-rows",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "220de8fd0bc18211a2e94315b1037f8ca3b932dd3a7b7b8b8ee4741a121175bd"
+    },
+    {
+      "questionId": "u14-s010-v011",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "公益活動第 1 天準備 30 份物資，之後每天比前一天多 5 份，連續 21 天。共準備多少份？",
+      "givenConditions": [
+        "首日30",
+        "每日+5",
+        "21天"
+      ],
+      "target": "總物資",
+      "choices": [
+        "130",
+        "1575",
+        "1785",
+        "1680"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "每日物資30、35、…、130，21天平均80份，共1680份。",
+      "mainExplanation": "依題意依序處理：求第21天。；總和21項。，所以唯一正確選項是「1680」。",
+      "steps": [
+        "求第21天。",
+        "總和21項。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "130",
+          "truth": false,
+          "reason": "130只是第21天。"
+        },
+        {
+          "choice": "1575",
+          "truth": false,
+          "reason": "1575把末項算120。"
+        },
+        {
+          "choice": "1785",
+          "truth": false,
+          "reason": "1785多算增量或一天。"
+        },
+        {
+          "choice": "1680",
+          "truth": true,
+          "reason": "第21天130份，S=21(30+130)/2=21×80=1680。"
+        }
+      ],
+      "misconceptionTarget": "把21天當20天，或忽略首日。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "每天份數整數；答案1680份。",
+      "difficultyReason": "素養：21項有中央第11天80份，平均概念可由情境驗證。",
+      "literacyContextNecessity": "物資情境要求總份數，且每一天的準備量為單項。",
+      "authoringIntent": "奇數期數的物資累積。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f23545eb7a3f66ca997077623eb6f37645be1e7f29b71e86259c21d97d49040b"
+    },
+    {
+      "questionId": "u14-s010-v012",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "倉庫有 9 層貨架，最上層放 48 箱，往下一層多放 8 箱。9 層共放多少箱？",
+      "givenConditions": [
+        "上層48",
+        "往下每層+8",
+        "9層"
+      ],
+      "target": "總箱數",
+      "choices": [
+        "720",
+        "112",
+        "684",
+        "756"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "由上往下形成48、56、…、112；平均80，9層共720箱。",
+      "mainExplanation": "依題意依序處理：依敘述方向取d=8。；求末層並總和。，所以唯一正確選項是「720」。",
+      "steps": [
+        "依敘述方向取d=8。",
+        "求末層並總和。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "720",
+          "truth": true,
+          "reason": "最下層第9項112箱，S=9(48+112)/2=9×80=720。"
+        },
+        {
+          "choice": "112",
+          "truth": false,
+          "reason": "112只是最下層。"
+        },
+        {
+          "choice": "684",
+          "truth": false,
+          "reason": "684末項少8。"
+        },
+        {
+          "choice": "756",
+          "truth": false,
+          "reason": "756末項多8。"
+        }
+      ],
+      "misconceptionTarget": "因為往下而把公差寫成-8，導致末層變少。",
+      "prerequisiteSkillIds": [
+        "arithmetic-series-sum"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "依列舉方向把最上層視為第1項；所有量非負。",
+      "difficultyReason": "素養：文字中的「往下」是位置方向，但數量明示增加，需以數值變化決定公差。",
+      "literacyContextNecessity": "倉庫空間情境測試位置方向與數值增減不是同一概念。",
+      "authoringIntent": "依空間方向判讀數值增減。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "daebed5b7b9920de9a743d00284fd0f72b2431f330f573c3bffe39d416785a02"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u14-s010-cr001",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "一座看台有 16 排，第 1 排 22 席，每後一排多 3 席。求最後一排與總座位數，並說明兩者的差別。",
+      "requiredWork": [
+        "求第16排單排座位。",
+        "求16排累積總和。",
+        "用語句區分末項與總和。"
+      ],
+      "fullCreditSolution": [
+        "a_16=22+15×3=67席。",
+        "S_16=16(22+67)/2=8×89=712席。",
+        "67是最後一排單獨的座位數，712是全部16排相加的座位數。"
+      ],
+      "alternativeSolutions": [
+        "可首尾配成8對，每對89席，共712席。"
+      ],
+      "reasoningSteps": [
+        "a_16=22+15×3=67席。",
+        "S_16=16(22+67)/2=8×89=712席。",
+        "67是最後一排單獨的座位數，712是全部16排相加的座位數。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "末排67席、總數712席皆正確，且清楚區分單項與累積。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩數正確但差別說明不足；或末排正確且總和單一算術錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "只正確求末排或只寫總和無可辨識過程。"
+        },
+        {
+          "score": 0,
+          "criteria": "把67當總座位且無修正。"
+        }
+      ],
+      "partialCreditRules": [
+        "末項與總和各占重要部分；只完成一者最高1分。"
+      ],
+      "followThroughPolicy": "若末排算錯但後續使用該錯末排正確套和公式，可給2分的錯誤追隨。",
+      "unitAndNotationRules": "單位席；末排與總數都以席計但意義不同。",
+      "answerOnlyPolicy": "只答67、712而無說明，最多2分。",
+      "commonErrors": [
+        "第16排使用16次公差。",
+        "把末排67當總數。"
+      ],
+      "figureDrawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "最後一排67席，總座位712席。",
+        "ambiguity": "條件完整且模型在16排內皆為正。",
+        "unitBoundaryCheck": "單位席；末排與總數都以席計但意義不同。",
+        "decision": "pass",
+        "reviewNote": "獨立依題目條件重新推導，得到「最後一排67席，總座位712席。」。評分規準逐分對應本題必要步驟，並已檢查錯誤追隨與只寫答案的處理。"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f6133030dfb55e8563216cfc9895897cd14cf85831af74f90d6e272d497af1f3"
+    },
+    {
+      "questionId": "u14-s010-cr002",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-series",
+      "skillId": "arithmetic-series-word",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "一項 20 天的步數挑戰，第 1 天走 3000 步，每天比前一天多 250 步。目標是 20 天總步數至少 100000 步。請判斷是否達標，並算出超過或不足多少步。",
+      "requiredWork": [
+        "求第20天步數。",
+        "求20天總和。",
+        "與100000比較並計算差額。"
+      ],
+      "fullCreditSolution": [
+        "a_20=3000+19×250=7750步。",
+        "S_20=20(3000+7750)/2=10×10750=107500步。",
+        "107500-100000=7500，因此達標並超過7500步。"
+      ],
+      "alternativeSolutions": [
+        "可用S_n=n[2a_1+(n-1)d]/2直接計算。"
+      ],
+      "reasoningSteps": [
+        "a_20=3000+19×250=7750步。",
+        "S_20=20(3000+7750)/2=10×10750=107500步。",
+        "107500-100000=7500，因此達標並超過7500步。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "總步數107500、判斷達標、差額7500全部正確，並有計算。"
+        },
+        {
+          "score": 2,
+          "criteria": "總步數正確但差額或文字判斷漏一項；或單一算術錯但方法完整。"
+        },
+        {
+          "score": 1,
+          "criteria": "只求第20天7750或只猜達標。"
+        },
+        {
+          "score": 0,
+          "criteria": "未做累積且判斷無依據。"
+        }
+      ],
+      "partialCreditRules": [
+        "差額必須以總和比較，不可用第20天與目標比較。"
+      ],
+      "followThroughPolicy": "若總和因末項小錯而錯，但比較與差額一致追隨，可給2分。",
+      "unitAndNotationRules": "單位步；目標為20天總步數。",
+      "answerOnlyPolicy": "只答「達標」不超過1分。",
+      "commonErrors": [
+        "把100000與末日7750比較。",
+        "20天算成20次增加。"
+      ],
+      "figureDrawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "總107500步，達標，超過7500步。",
+        "ambiguity": "目標與期間明確，無四捨五入。",
+        "unitBoundaryCheck": "單位步；目標為20天總步數。",
+        "decision": "pass",
+        "reviewNote": "獨立依題目條件重新推導，得到「總107500步，達標，超過7500步。」。評分規準逐分對應本題必要步驟，並已檢查錯誤追隨與只寫答案的處理。"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7b5b89809181117e2cb13eb66206bb787b5afbba69831357fecf6036f31d6ca8"
+    }
+  ],
+  "semanticReviews": [
+    {
+      "questionId": "u14-s010-v001",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "02495bc0dc45139b6114ed0020f2648db685b4da4bd1e00b62adbe45fde201b2",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "四層形成等差數列，S_4=4(4+13)/2=34。",
+      "derivedAnswer": "34",
+      "storedAnswer": "34",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「34」符合。其餘三項各自違反：13只是最後一層。；30漏加第一層4。；40把每層近似10。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「總罐數」。",
+        "unitConflict": "四層全部包含；單位罐。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「34」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：四層全部包含；單位罐。",
+        "alternateReading": "最可能的誤讀是「把最上或最下層數量當總數。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "基礎：可直接相加，重點是辨認總量。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「罐頭堆成 4 層，各層罐數依序為 4、7、10、13。共有多少罐？」獨立重算為：四層形成等差數列，S_4=4(4+13)/2=34。 四選項逐項核對後唯一正解為「34」；邊界檢查：四層全部包含；單位罐。",
+      "reviewContentSha256": "1cab2ce3a6d45d462b6134995bd81557124942abb3516477a6c2ebf303c8fe92"
+    },
+    {
+      "questionId": "u14-s010-v002",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "ce7972d2e4543f196d79f19a3e43280256b8215d04adf5547e42f1f9f3eaea0d",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "首末平均6公里，5天總距離5×6=30公里。",
+      "derivedAnswer": "30",
+      "storedAnswer": "30",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「30」符合。其餘三項各自違反：10只是第五天。；20漏掉部分天數。；40重複計算。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「五天總距離」。",
+        "unitConflict": "公里單位一致。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「30」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：公里單位一致。",
+        "alternateReading": "最可能的誤讀是「把最後一天距離當五天總距離。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "基礎：數列短，可直接相加或用等差平均。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「小華五天跑步距離依序為 2、4、6、8、10 公里。五天共跑多少公里？」獨立重算為：首末平均6公里，5天總距離5×6=30公里。 四選項逐項核對後唯一正解為「30」；邊界檢查：公里單位一致。",
+      "reviewContentSha256": "d598f44f537f9aaace332820e22217daa7183c0e7b66590539a401b10ead44c0"
+    },
+    {
+      "questionId": "u14-s010-v003",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "d163b45bf5dd733061ac9228fccb236453f0aad77dda6601f45a08b7d74272b6",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "座位數20、22、…、38，共10項，平均29，總數290席。",
+      "derivedAnswer": "290",
+      "storedAnswer": "290",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「290」符合。其餘三項各自違反：38只是末排。；200忽略每排增加。；310末項或平均計算錯。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「總座位」。",
+        "unitConflict": "所有排皆包含；答案席。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「290」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：所有排皆包含；答案席。",
+        "alternateReading": "最可能的誤讀是「首排乘10或只報末排。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "基礎：資料直接且項數小，公式一次使用。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「禮堂有 10 排座位，第 1 排 20 席，每排多 2 席。總座位數是多少？」獨立重算為：座位數20、22、…、38，共10項，平均29，總數290席。 四選項逐項核對後唯一正解為「290」；邊界檢查：所有排皆包含；答案席。",
+      "reviewContentSha256": "f9f995ce493af4daa35e6eeed4391376c147db44d77617b1ffec8c60e4504a1f"
+    },
+    {
+      "questionId": "u14-s010-v004",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "3ba0406a76d9ab2d2eddb1a0d1c06d19b5dda31e56d2ac3eff43f1c8259a8720",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "15、18、…、42，共10項；首尾和57，乘5得285。",
+      "derivedAnswer": "285",
+      "storedAnswer": "285",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「285」符合。其餘三項各自違反：42只是第10層。；270把平均算27。；300用錯末項45。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「總容量」。",
+        "unitConflict": "每層書本數為整數且非負。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「285」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：每層書本數為整數且非負。",
+        "alternateReading": "最可能的誤讀是「將「每往上一層多3本」誤作共有3本增量。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "標準：需由文字辨認方向不影響公差正值，並求總容量。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「書架有 10 層，第 1 層放 15 本書，每往上一層多 3 本。全部可放多少本？」獨立重算為：15、18、…、42，共10項；首尾和57，乘5得285。 四選項逐項核對後唯一正解為「285」；邊界檢查：每層書本數為整數且非負。",
+      "reviewContentSha256": "0a790634669f072493fc4ab6f611005f0a16536cebf17700572fde6cde84521d"
+    },
+    {
+      "questionId": "u14-s010-v005",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "545680849563ec3decd2d8f4e81a9a0dad896a0a48602214dacc9a26a761c254",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "每日金額形成14項等差數列；平均250元，總額3500元。",
+      "derivedAnswer": "3500",
+      "storedAnswer": "3500",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「3500」符合。其餘三項各自違反：380只是第14天。；3360末項少20。；3640多算一天。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「總募款」。",
+        "unitConflict": "金額皆以元計；答案精確。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「3500」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：金額皆以元計；答案精確。",
+        "alternateReading": "最可能的誤讀是「把第14天金額當累積金額。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "標準：需辨認逐日金額與總募款，並處理14項。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「募款第 1 天收到 120 元，之後每天比前一天多 20 元，連續 14 天。總募款多少元？」獨立重算為：每日金額形成14項等差數列；平均250元，總額3500元。 四選項逐項核對後唯一正解為「3500」；邊界檢查：金額皆以元計；答案精確。",
+      "reviewContentSha256": "2e221df0f5879fad836c25906727c35e3b16dbac7ee722303641f090f1a3ce09"
+    },
+    {
+      "questionId": "u14-s010-v006",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "9b7eb37d9e289270b230da1ef047678494fe224b55f858414255e58334494018",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "公差-3，4=31+9(-3)，確有10項；S=10(31+4)/2=175。",
+      "derivedAnswer": "175",
+      "storedAnswer": "175",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「175」符合。其餘三項各自違反：135是漏算若干層。；155平均或末項錯。；350忘除2。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「總積木」。",
+        "unitConflict": "各層均為正整數；4確為第10項。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「175」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：各層均為正整數；4確為第10項。",
+        "alternateReading": "最可能的誤讀是「看到遞減就用31-4當總數。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "標準：需檢查10層與末項4一致，再求和。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一個倒置積木塔共有 10 層，從最下層到最上層的積木數為 31、28、25、…、4。共有多少塊積木？」獨立重算為：公差-3，4=31+9(-3)，確有10項；S=10(31+4)/2=175。 四選項逐項核對後唯一正解為「175」；邊界檢查：各層均為正整數；4確為第10項。",
+      "reviewContentSha256": "3dc15454b889cd9b8553ee341ea51378ea4199ac02a00b87c3fc02453d31299e"
+    },
+    {
+      "questionId": "u14-s010-v007",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "c608cc9c1c50ee7442b43d9de3d95c2707990d9d440200ec8bb67ab8b2e51140",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "25、28、…、52共10項，平均38.5，總數385席。",
+      "derivedAnswer": "385",
+      "storedAnswer": "385",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「385」符合。其餘三項各自違反：52只是末排。；370是末排少3或平均錯。；400把平均估成40。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「總座位」。",
+        "unitConflict": "單排座位均整數；總和385席。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「385」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：單排座位均整數；總和385席。",
+        "alternateReading": "最可能的誤讀是「因平均38.5不是整數就誤認總座位不能為整數。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "進階：首尾平均為小數，但乘偶數項數後總量仍為整數。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「體育場某區有 10 排，第 1 排 25 席，每排比前一排多 3 席。此區共有多少席？」獨立重算為：25、28、…、52共10項，平均38.5，總數385席。 四選項逐項核對後唯一正解為「385」；邊界檢查：單排座位均整數；總和385席。",
+      "reviewContentSha256": "1bf42c07c9214e1d3a6bda59d3e956d5e9be8d6de43e556155175efb36922bd6"
+    },
+    {
+      "questionId": "u14-s010-v008",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "4dee98de9b44fa2190d9e80fcc2a4602561ee1cf79abf3cf67733a97808c2ee3",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "付款為900、850、…、350；平均625元，12月總額7500元。",
+      "derivedAnswer": "7500",
+      "storedAnswer": "7500",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「7500」符合。其餘三項各自違反：350只是最後一月。；7200末項或平均錯。；7800把月減額處理錯。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「總付款」。",
+        "unitConflict": "第12月仍為正350元；模型可行。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「7500」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：第12月仍為正350元；模型可行。",
+        "alternateReading": "最可能的誤讀是「把每月少50當成總共只少50。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "進階：負公差、12期與貨幣累積同時處理。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「一年分 12 個月付款，第 1 個月付 900 元，以後每月少付 50 元。12 個月共付多少元？」獨立重算為：付款為900、850、…、350；平均625元，12月總額7500元。 四選項逐項核對後唯一正解為「7500」；邊界檢查：第12月仍為正350元；模型可行。",
+      "reviewContentSha256": "05a8b386eb49cdc39dc60cb5442617449192bdc71703e5be39be3844a620938e"
+    },
+    {
+      "questionId": "u14-s010-v009",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "f4d36a544d5b55c7313e0675c339c3e5430356adeed82e1e8524594e04dc3a4e",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "從16到70總增加54，分成9個間隔，所以10排；平均43席，乘10得430。",
+      "derivedAnswer": "10排，430席",
+      "storedAnswer": "10排，430席",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「10排，430席」符合。其餘三項各自違反：9排會使末排64席。；排數對但總和少10席。；11排時末排76席。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「排數與總座位」。",
+        "unitConflict": "70-16可被6整除；排數為正整數10。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「10排，430席」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：70-16可被6整除；排數為正整數10。",
+        "alternateReading": "最可能的誤讀是「把9個間隔直接當9排。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "進階：需先求項數再求和，且同一選項包含兩個都需正確的結果。",
+      "literacyContextNecessity": null,
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「某會場座位每排增加 6 席，第一排 16 席，最後一排 70 席。共有幾排，總座位多少？」獨立重算為：從16到70總增加54，分成9個間隔，所以10排；平均43席，乘10得430。 四選項逐項核對後唯一正解為「10排，430席」；邊界檢查：70-16可被6整除；排數為正整數10。",
+      "reviewContentSha256": "e3e5a4906f820646f66a22db334c809e82630a12a0bdeb654d04db1462b5fc94"
+    },
+    {
+      "questionId": "u14-s010-v010",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "220de8fd0bc18211a2e94315b1037f8ca3b932dd3a7b7b8b8ee4741a121175bd",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "每排片數12、16、…、80，共18排；平均46，總數828片。",
+      "derivedAnswer": "828",
+      "storedAnswer": "828",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「828」符合。其餘三項各自違反：80只是末排。；792少一排增量。；864平均或末項錯。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「總板數」。",
+        "unitConflict": "答案為整片828，不需面積換算。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「828」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：答案為整片828，不需面積換算。",
+        "alternateReading": "最可能的誤讀是「將第18排數量當全部需求。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "素養：需從工程排列中區分每排片數、排數與總材料數。",
+      "literacyContextNecessity": "太陽能板情境提供總材料需求與排配置的必要語意。",
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「太陽能板排列成 18 排，第 1 排 12 片，每後一排多 4 片。共需多少片太陽能板？」獨立重算為：每排片數12、16、…、80，共18排；平均46，總數828片。 四選項逐項核對後唯一正解為「828」；邊界檢查：答案為整片828，不需面積換算。",
+      "reviewContentSha256": "aa1f3c53aa03aca050972a7cb7a6db5838b77f6d3f8c92b6a191ecc81af2b38a"
+    },
+    {
+      "questionId": "u14-s010-v011",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "f23545eb7a3f66ca997077623eb6f37645be1e7f29b71e86259c21d97d49040b",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "每日物資30、35、…、130，21天平均80份，共1680份。",
+      "derivedAnswer": "1680",
+      "storedAnswer": "1680",
+      "answerMatch": true,
+      "optionTruth": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「1680」符合。其餘三項各自違反：130只是第21天。；1575把末項算120。；1785多算增量或一天。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「總物資」。",
+        "unitConflict": "每天份數整數；答案1680份。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「1680」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：每天份數整數；答案1680份。",
+        "alternateReading": "最可能的誤讀是「把21天當20天，或忽略首日。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "素養：21項有中央第11天80份，平均概念可由情境驗證。",
+      "literacyContextNecessity": "物資情境要求總份數，且每一天的準備量為單項。",
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「公益活動第 1 天準備 30 份物資，之後每天比前一天多 5 份，連續 21 天。共準備多少份？」獨立重算為：每日物資30、35、…、130，21天平均80份，共1680份。 四選項逐項核對後唯一正解為「1680」；邊界檢查：每天份數整數；答案1680份。",
+      "reviewContentSha256": "2393c38a346e0c5f7c5004c0cdbd13a7089dc689f16900726f208b87cf0d2df5"
+    },
+    {
+      "questionId": "u14-s010-v012",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "contentSha256": "daebed5b7b9920de9a743d00284fd0f72b2431f330f573c3bffe39d416785a02",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "reviewVersion": "human-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "independentSolution": "由上往下形成48、56、…、112；平均80，9層共720箱。",
+      "derivedAnswer": "720",
+      "storedAnswer": "720",
+      "answerMatch": true,
+      "optionTruth": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "uniqueCorrectAnswer": true,
+      "ambiguityChecks": {
+        "secondCorrectAnswer": "逐項重算四個選項後，只有「720」符合。其餘三項各自違反：112只是最下層。；684末項少8。；756末項多8。",
+        "undefinedSymbol": "題幹所用符號與用語均在「等差級數應用」講義中定義；本題目標為「總箱數」。",
+        "unitConflict": "依列舉方向把最上層視為第1項；所有量非負。；選項均以相同數學對象或相同單位比較。",
+        "roundingConflict": "獨立解答得到精確值「720」，沒有近似取整導致第二答案。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：依列舉方向把最上層視為第1項；所有量非負。",
+        "alternateReading": "最可能的誤讀是「因為往下而把公差寫成-8，導致末層變少。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+      },
+      "difficultyReason": "素養：文字中的「往下」是位置方向，但數量明示增加，需以數值變化決定公差。",
+      "literacyContextNecessity": "倉庫空間情境測試位置方向與數值增減不是同一概念。",
+      "prerequisiteCheck": "使用前置技能「等差級數和」所建立的概念。",
+      "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
+      "reviewerDecision": "pass",
+      "reviewerNote": "題目「倉庫有 9 層貨架，最上層放 48 箱，往下一層多放 8 箱。9 層共放多少箱？」獨立重算為：由上往下形成48、56、…、112；平均80，9層共720箱。 四選項逐項核對後唯一正解為「720」；邊界檢查：依列舉方向把最上層視為第1項；所有量非負。",
+      "reviewContentSha256": "bf4793e47f604e021791deb6d6230b8a3bd183d57fc4763cbd2400bd7a74618a"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u14-fig-s010-panel-rows",
+      "unitId": "u14",
+      "skillId": "arithmetic-series-word",
+      "svgPath": "figures/u14/u14-fig-s010-panel-rows.svg",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "canvas": "720×300",
+      "viewBox": "0 0 720 300",
+      "altText": "前三排太陽能板示意，文字標示第一排12片、第二排16片、第三排20片，並註明後續每排增加4片。",
+      "drawingSpec": {
+        "canvas": "720×300",
+        "viewBox": "0 0 720 300",
+        "coordinates": "板片18×34，前三排y約55、110、165；文字位於x=575。",
+        "visibleLines": "矩形板片黑色2px外框。",
+        "hiddenLines": "無。",
+        "labels": "標示前三排片數與後續增量。",
+        "ticksUnitsArrows": "單位片以文字呈現；無刻度與箭頭。",
+        "scale": "示意圖不代表實際板片尺寸。",
+        "warning": "不得由圖面總寬量測後續排數。",
+        "mobile": "板片最小寬18px，文字20px。",
+        "answerLeakage": "不畫第18排、不顯示總片數828。"
+      },
+      "svgAssertions": [
+        "第1排：12片",
+        "第3排：20片",
+        "後續：每排再增加4片",
+        "viewBox=\"0 0 720 300\""
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "mobileReadability": "pass",
+        "answerLeakage": "pass",
+        "geometryTokenCheck": "pass",
+        "manualVisualInspection": "pass",
+        "reviewNote": "u14-fig-s010-panel-rows 已渲染為PNG並人工核對標籤、座標、可數元素、手機縮放可讀性與答案洩漏；所有可見元素均落在畫布安全邊界內。"
+      },
+      "contentSha256": "78141e99148beba2bcbbd1f953d9a4341a5eb74dba7ebaf35597b0c6fee3a8f0"
+    }
+  ]
+};
