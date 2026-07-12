@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "math-v2-cap-official-spec-lock-r1",
+  "retrievalRequiredAtExecution": true,
+  "retrievalDatePrepared": "2026-07-12",
+  "sources": [
+    {
+      "id": "cap-question-format",
+      "url": "https://cap.rcpet.edu.tw/test2.html",
+      "requiredFacts": [
+        "four-choice mathematics",
+        "23-28 multiple-choice",
+        "2-3 constructed-response",
+        "80 minutes",
+        "fourth learning stage"
+      ]
+    },
+    {
+      "id": "cap-math-content",
+      "url": "https://cap.rcpet.edu.tw/test4-4.html",
+      "requiredFacts": [
+        "six domains",
+        "constructed-response strategy",
+        "constructed-response expression",
+        "0-3 rubric"
+      ]
+    },
+    {
+      "id": "cap-math-faq",
+      "url": "https://cap.rcpet.edu.tw/test5-4.html",
+      "requiredFacts": [
+        "answer-only receives zero",
+        "incorrect result may receive partial credit",
+        "at least two readers"
+      ]
+    },
+    {
+      "id": "cap-history",
+      "url": "https://cap.rcpet.edu.tw/examination.html",
+      "requiredFacts": [
+        "115 year listed"
+      ]
+    }
+  ],
+  "lockedInterpretation": {
+    "officialGeneralFormat": {
+      "mcMin": 23,
+      "mcMax": 28,
+      "crMin": 2,
+      "crMax": 3,
+      "minutes": 80
+    },
+    "releaseCandidatePracticeProfile": {
+      "mc": 25,
+      "cr": 2,
+      "minutes": 80,
+      "basis": "site 115-year strict practice blueprint and current official general format"
+    },
+    "domains": [
+      "數與量",
+      "空間與形狀",
+      "坐標幾何",
+      "代數",
+      "函數",
+      "資料與不確定性"
+    ],
+    "constructedResponseScoring": "0-3; strategy appropriateness and completeness/reasonableness of expression; answer only is zero"
+  },
+  "productionActivationAllowed": false,
+  "oldDatabaseDeletionAllowed": false
+}

@@ -1,0 +1,120 @@
+{
+  "status": "PASS_OFFICIAL_SPEC_ONLINE_R1",
+  "retrievedAt": "2026-07-12T15:14:15.118Z",
+  "sources": [
+    {
+      "id": "format",
+      "url": "https://cap.rcpet.edu.tw/test2.html",
+      "status": 200,
+      "bytes": 17594,
+      "sha256": "3a0fbf4c93dc1afa2a33cf08b0c2d9fe0adf12355351ce335b2a049e8ef70648",
+      "checks": [
+        {
+          "label": "23-28 MC",
+          "pass": true
+        },
+        {
+          "label": "2-3 CR",
+          "pass": true
+        },
+        {
+          "label": "80 minutes",
+          "pass": true
+        },
+        {
+          "label": "fourth stage",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "url": "https://cap.rcpet.edu.tw/test4-4.html",
+      "status": 200,
+      "bytes": 19227,
+      "sha256": "d1dc063652f1b6fe5e93ac31e8db8b09224a12b2f24405c1c2f437699ba0cfb8",
+      "checks": [
+        {
+          "label": "number",
+          "pass": true
+        },
+        {
+          "label": "shape",
+          "pass": true
+        },
+        {
+          "label": "coordinate",
+          "pass": true
+        },
+        {
+          "label": "algebra",
+          "pass": true
+        },
+        {
+          "label": "function",
+          "pass": true
+        },
+        {
+          "label": "data",
+          "pass": true
+        },
+        {
+          "label": "3 score",
+          "pass": true
+        },
+        {
+          "label": "0 score",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "url": "https://cap.rcpet.edu.tw/test5-4.html",
+      "status": 200,
+      "bytes": 25522,
+      "sha256": "62df0fbdef221a69f8c759e1554e5b28795bd19addca7336e8e9fc7aa9f4d378",
+      "checks": [
+        {
+          "label": "answer only zero",
+          "pass": true
+        },
+        {
+          "label": "partial credit",
+          "pass": true
+        },
+        {
+          "label": "two readers",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "url": "https://cap.rcpet.edu.tw/examination.html",
+      "status": 200,
+      "bytes": 17273,
+      "sha256": "3d0631af87690bc94e8ae5a0b971de5ddbed66c8c97ffb08f8b2c175ef821814",
+      "checks": [
+        {
+          "label": "115 listed",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "officialGeneralFormat": {
+    "mcMin": 23,
+    "mcMax": 28,
+    "crMin": 2,
+    "crMax": 3,
+    "minutes": 80
+  },
+  "releaseCandidatePracticeProfile": {
+    "mc": 25,
+    "cr": 2,
+    "minutes": 80
+  },
+  "productionActivationAllowed": false,
+  "oldDatabaseDeletionAllowed": false
+}
