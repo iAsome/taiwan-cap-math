@@ -1,0 +1,238 @@
+{
+  "lectureId": "u01-s001-lecture-r1",
+  "unitId": "u01",
+  "topicId": "u01-integer-basics",
+  "skillId": "integer-number-classification",
+  "title": "數的分類入門：整數、分數與有限小數",
+  "audience": "第一次接觸國中數學分類概念的零基礎學生",
+  "reviewStatus": "centrally-reviewed-semantic-audit-r1",
+  "learningOutcomes": [
+    "能辨認正整數、0、負整數與整數。",
+    "能分辨整數和不是整數的分數或有限小數。",
+    "知道每一個整數都可以寫成分母為 1 的分數，因此整數也是有理數。",
+    "能把有限小數改寫成分數並約分。"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    {
+      "term": "正整數",
+      "definition": "1、2、3、……這些大於 0 且沒有小數或分數部分的數。"
+    },
+    {
+      "term": "負整數",
+      "definition": "−1、−2、−3、……這些小於 0 且沒有小數或分數部分的數。"
+    },
+    {
+      "term": "整數",
+      "definition": "正整數、0 和負整數合在一起，稱為整數。"
+    },
+    {
+      "term": "有限小數",
+      "definition": "小數點後只有有限個數字的小數，例如 0.25、−1.4。"
+    },
+    {
+      "term": "有理數",
+      "definition": "可以寫成兩個整數相除的數，而且除數不能是 0。整數、分數與有限小數都是有理數。"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "[[frac:a|b]]",
+      "meaning": "表示 a 除以 b；b 不能是 0。"
+    },
+    {
+      "symbol": "−",
+      "meaning": "負號，表示這個數小於 0。"
+    },
+    {
+      "symbol": "0",
+      "meaning": "0 是整數，但不是正數，也不是負數。"
+    }
+  ],
+  "conceptNarrative": [
+    "先判斷一個數有沒有非零的小數或分數部分。沒有的話，它可能是整數。",
+    "正負號不決定一個數是不是整數；−8 仍然是整數。",
+    "分數有時可以化成整數，例如 [[frac:12|4]]=3。",
+    "有限小數可以改寫成分母為 10、100、1000 等的分數，所以它們是有理數。",
+    "本課只處理整數、分數與有限小數；其他數類留到後面的單元。"
+  ],
+  "formalDefinitions": [
+    {
+      "name": "整數",
+      "statement": "整數包括正整數、0 和負整數。"
+    },
+    {
+      "name": "有理數",
+      "statement": "若一個數可以寫成 [[frac:a|b]]，其中 a、b 都是整數且 b≠0，這個數就是有理數。"
+    },
+    {
+      "name": "整數與有理數的關係",
+      "statement": "每個整數 n 都可以寫成 [[frac:n|1]]，所以每個整數都是有理數。"
+    }
+  ],
+  "classificationMap": [
+    {
+      "number": "−8",
+      "classifications": [
+        "負整數",
+        "整數",
+        "有理數"
+      ]
+    },
+    {
+      "number": "0",
+      "classifications": [
+        "整數",
+        "有理數",
+        "不是正數",
+        "不是負數"
+      ]
+    },
+    {
+      "number": "[[frac:3|4]]",
+      "classifications": [
+        "有理數",
+        "不是整數"
+      ]
+    },
+    {
+      "number": "0.25",
+      "classifications": [
+        "有限小數",
+        "有理數",
+        "不是整數"
+      ]
+    },
+    {
+      "number": "[[frac:12|4]]=3",
+      "classifications": [
+        "正整數",
+        "整數",
+        "有理數"
+      ]
+    }
+  ],
+  "formulas": [
+    {
+      "formula": "整數 n=[[frac:n|1]]",
+      "conditions": [
+        "n 是整數"
+      ],
+      "meaning": "把整數寫成分母為 1 的分數，說明整數也是有理數。"
+    },
+    {
+      "formula": "有限小數＝整數÷10 的次方",
+      "conditions": [
+        "小數點後有有限位數"
+      ],
+      "meaning": "例如 0.35=[[frac:35|100]]=[[frac:7|20]]。"
+    }
+  ],
+  "nonApplicableCases": [
+    "本課不處理尚未介紹的其他數類。",
+    "本課不處理無限延伸的小數表示。",
+    "分母為 0 的式子沒有意義，不能拿來表示有理數。"
+  ],
+  "method": [
+    "第一步：先把可計算的分數化簡。",
+    "第二步：判斷結果有沒有非零的小數或分數部分。",
+    "第三步：沒有分數部分的結果是整數；有分數部分但能寫成整數相除的結果是非整數有理數。",
+    "第四步：檢查題目問的是「整數」、「有理數」還是「有理數但不是整數」。"
+  ],
+  "workedExamples": [
+    {
+      "exampleId": "L1",
+      "prompt": "把 −6、[[frac:5|4]]、0、[[frac:12|4]] 分類。",
+      "solutionSteps": [
+        "−6 是負整數，所以也是整數與有理數。",
+        "[[frac:5|4]]=1.25，有分數部分，因此是有理數但不是整數。",
+        "0 是整數，也是有理數。",
+        "[[frac:12|4]]=3，所以它是正整數、整數與有理數。"
+      ],
+      "answer": "−6、0、[[frac:12|4]] 是整數；[[frac:5|4]] 是非整數有理數。"
+    },
+    {
+      "exampleId": "L2",
+      "prompt": "說明 0.35 為什麼是有理數。",
+      "solutionSteps": [
+        "0.35 有兩位小數，所以可以寫成 [[frac:35|100]]。",
+        "分子和分母同除以 5，得到 [[frac:7|20]]。",
+        "7 和 20 都是整數，而且 20≠0，所以 0.35 是有理數。"
+      ],
+      "answer": "0.35=[[frac:7|20]]，所以 0.35 是有理數。"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "看到負號就認為不是整數。",
+      "why": "把正負號和數的種類混在一起。",
+      "correction": "−7 沒有小數或分數部分，所以是負整數。"
+    },
+    {
+      "mistake": "把 0 當成正整數。",
+      "why": "把「非負」誤認成「正」。",
+      "correction": "0 是整數，但不是正數，也不是負數。"
+    },
+    {
+      "mistake": "認為所有分數都不是整數。",
+      "why": "沒有先把分數化簡。",
+      "correction": "例如 [[frac:12|4]]=3，所以這個分數表示整數。"
+    },
+    {
+      "mistake": "認為有限小數不是有理數。",
+      "why": "沒有把有限小數改寫成分數。",
+      "correction": "例如 0.4=[[frac:4|10]]=[[frac:2|5]]。"
+    }
+  ],
+  "selfCheck": [
+    "我是否先把分數化簡？",
+    "我是否分清楚「整數」和「有理數但不是整數」？",
+    "我是否記得 0 是整數？",
+    "我是否只使用本課已介紹的整數、分數與有限小數概念？"
+  ],
+  "summary": [
+    "整數包括正整數、0 和負整數。",
+    "每個整數都是有理數。",
+    "分數與有限小數也是有理數，但不一定是整數。",
+    "判斷前先化簡，避免把能化成整數的分數誤判。"
+  ],
+  "connections": {
+    "previous": "本技能是 U01 的起點，不預設後續單元的數類知識。",
+    "next": [
+      "正負數的意義會用到正數、負數與 0。",
+      "數線與大小比較會使用整數和分數的位置。",
+      "其他數類會在後面的單元另行教學。"
+    ]
+  },
+  "practiceLinks": {
+    "mcQuestionIds": [
+      "u01-s001-v001",
+      "u01-s001-v002",
+      "u01-s001-v003",
+      "u01-s001-v004",
+      "u01-s001-v005",
+      "u01-s001-v006",
+      "u01-s001-v007",
+      "u01-s001-v008",
+      "u01-s001-v009",
+      "u01-s001-v010",
+      "u01-s001-v011",
+      "u01-s001-v012"
+    ],
+    "constructedResponseIds": [
+      "u01-s001-cr001",
+      "u01-s001-cr002"
+    ]
+  },
+  "lectureReview": {
+    "mathematicalCorrectness": "pass",
+    "zeroFoundationReadability": "pass",
+    "scopeCheck": "junior-high prerequisite-safe scope",
+    "examplesNotCopiedFromBank": true,
+    "minimumCommonMistakesMet": true,
+    "symbolDefinitionsComplete": true,
+    "reviewNote": "The lesson intentionally uses only integers, fractions and finite decimals so the first skill remains prerequisite-safe."
+  },
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "1a1ff2b2e500b74c8fcfeec015c33f2c04e6f80209635fd744705ef88e965803"
+}

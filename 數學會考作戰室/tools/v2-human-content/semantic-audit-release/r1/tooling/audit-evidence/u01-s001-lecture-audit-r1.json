@@ -1,0 +1,47 @@
+{
+  "lectureId": "u01-s001-lecture-r1",
+  "verdict": "RESTRUCTURE",
+  "mathematicalCore": "mostly correct",
+  "blockingIssues": [
+    {
+      "type": "CURRICULUM_SEQUENCE",
+      "detail": "The skill is the first skill of U01 and lists no prerequisite skill, but the lecture and 13 of 14 assessments require fractions, square roots, irrational numbers or recurring decimals."
+    },
+    {
+      "type": "INTERNAL_CONTRADICTION",
+      "detail": "connections.previous says there is no prerequisite, while prerequisites requires fraction notation and square meaning."
+    },
+    {
+      "type": "TITLE_WORDING",
+      "original": "數的分類：整數與有理數和無理數",
+      "recommended": "數的分類：整數、有理數與無理數"
+    },
+    {
+      "type": "DEFINITION_PRECISION",
+      "original": "不能寫成兩整數之比的小數；其小數表示無限且不循環",
+      "recommended": "不能寫成兩個整數之比的實數；它的小數表示是無限不循環小數"
+    },
+    {
+      "type": "UNDEFINED_SYMBOL",
+      "original": "p、q∈整數",
+      "recommended": "p、q 都是整數",
+      "detail": "The symbol ∈ is not introduced and is unnecessary for a zero-foundation audience."
+    },
+    {
+      "type": "FORMULA_WORDING",
+      "original": "有理數 = p/q",
+      "recommended": "有理數可以表示成 p/q，其中 q≠0"
+    },
+    {
+      "type": "FORMULA_DEFINITION",
+      "original": "有限小數 a/10ⁿ",
+      "recommended": "若有限小數有 n 位小數，可將去掉小數點後所得的整數作分子，10ⁿ 作分母，再約分"
+    }
+  ],
+  "recommendedStructure": [
+    "U01 only teaches integers, zero, positive and negative numbers, fractions and finite decimals that are already prerequisites.",
+    "Move square-root and irrational-number classification to the square-root unit.",
+    "Teach recurring decimals before using them as evidence for rational-number classification.",
+    "After relocation, provide a later cumulative classification lesson."
+  ]
+}
