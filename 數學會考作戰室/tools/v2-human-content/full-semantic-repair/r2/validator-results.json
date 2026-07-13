@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "math-v2-full-human-semantic-repair-validator-results-r2",
+  "taskId": "MATH-V2-FULL-HUMAN-CONTENT-SEMANTIC-REPAIR-R2",
+  "generatedAt": "2026-07-14T03:12:26.1988849+08:00",
+  "validatedHead": "c56cbf140e4ab33951c64eb42823f9e67f86bc0b",
+  "status": "CODEX_IMPLEMENTATION_COMPLETE_PENDING_CENTRAL_SEMANTIC_ACCEPTANCE",
+  "implementationToken": "PASS_CODEX_IMPLEMENTATION_CANDIDATE_R2_PENDING_CENTRAL_ACCEPTANCE",
+  "centralSemanticAcceptanceComplete": false,
+  "blockingFailures": [],
+  "counts": {
+    "units": 23,
+    "skills": 339,
+    "lectures": 339,
+    "mcQuestions": 4068,
+    "constructedResponses": 678,
+    "figures": 178,
+    "reviewedStudentFacingArtifacts": 5085,
+    "repairLedgerRows": 7572
+  },
+  "authority": {
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "mathContentStandardSha256": "bb944ebda770acaaae2e115e023ad35a2192dbc275acb6396a920bcef61194c0",
+    "syllabusLockSha256": "930dbdbbb70818b461ba6ad28620dfed69442716b653be91a9025ebe92d353fc",
+    "contentVersion": "fa2b82b77be2f4987fc52049578e53981c8c59ac33f7d64cf4c412ee48d12bbd"
+  },
+  "passed": [
+    {
+      "command": "node 數學會考作戰室/tools/v2-human-content/full-semantic-repair/r2/review-and-repair-corpus.mjs --check",
+      "exitCode": 0,
+      "token": "CORPUS_REPAIRS_VALIDATED_PENDING_CENTRAL_ACCEPTANCE"
+    },
+    {
+      "command": "node 數學會考作戰室/tools/v2-human-content/full-semantic-repair/r2/validate-phase3-corpus.mjs --require-runtime-sync",
+      "exitCode": 0,
+      "token": "PASS_PHASE3_CORPUS_PENDING_CENTRAL_ACCEPTANCE"
+    },
+    {
+      "command": "node 數學會考作戰室/tools/v2-human-content/full-semantic-repair/r2/validate-semantic-integrity-r2.mjs",
+      "exitCode": 0,
+      "token": "PASS_CODEX_IMPLEMENTATION_CANDIDATE_R2_PENDING_CENTRAL_ACCEPTANCE",
+      "output": "semantic-integrity-r2.json"
+    },
+    {
+      "command": "node tools/v2-qa/test/field-diff-core.test.mjs",
+      "workingDirectory": "數學會考作戰室",
+      "exitCode": 0,
+      "token": "field-diff-core.test.mjs: OK"
+    },
+    {
+      "command": "node tools/v2-qa/test/content-standard.test.mjs",
+      "workingDirectory": "數學會考作戰室",
+      "exitCode": 0,
+      "token": "content-standard.test.mjs: OK"
+    },
+    {
+      "command": "node tools/v2-qa/test/task-schema.test.mjs",
+      "workingDirectory": "數學會考作戰室",
+      "exitCode": 0,
+      "token": "task-schema.test.mjs: OK"
+    },
+    {
+      "command": "node tools/v2-qa/test/global-audit.test.mjs",
+      "workingDirectory": "數學會考作戰室",
+      "exitCode": 0,
+      "token": "global-audit.test.mjs: OK"
+    },
+    {
+      "command": "node tools/v2-human-content/final-superflow/r1/tooling/scripts/run-repository-purity-gate.mjs --repo <detached-worktree> --root <temp-gate-root> --retirementCommit c56cbf140e4ab33951c64eb42823f9e67f86bc0b",
+      "workingDirectory": "數學會考作戰室",
+      "exitCode": 0,
+      "token": "PASS_HUMAN_ONLY_REPOSITORY_PURITY_GATE_R1",
+      "details": {
+        "retiredTrackedFileCount": 0,
+        "activeLegacyReferenceCount": 0,
+        "humanOnlyLoader": true,
+        "temporaryWorktreeRemoved": true
+      }
+    },
+    {
+      "command": "node tools/v2-human-content/final-superflow/r1/tooling/scripts/validate-human-only-node.mjs --repo <repo> --root <temp-gate-root>",
+      "workingDirectory": "數學會考作戰室",
+      "exitCode": 0,
+      "token": "PASS_HUMAN_ONLY_NODE_GATE_R1",
+      "details": {
+        "mockValidationCount": 27,
+        "unitQuizValidationCount": 23
+      }
+    },
+    {
+      "command": "node tools/v2-human-content/final-superflow/r1/tooling/scripts/run-human-only-browser-gate.mjs --repo <repo> --root <temp-gate-root>",
+      "workingDirectory": "數學會考作戰室",
+      "exitCode": 0,
+      "token": "PASS_HUMAN_ONLY_BROWSER_GATE_R1",
+      "details": {
+        "browser": "Chrome/150.0.7871.101",
+        "testsPassed": 9,
+        "httpRequestCount": 307,
+        "consoleErrors": 0,
+        "runtimeExceptions": 0,
+        "networkErrors": 0
+      }
+    },
+    {
+      "command": "node <temporary-current-runtime-stability-gate> --repo <repo> --root <temp-gate-root>",
+      "exitCode": 0,
+      "token": "PASS_HUMAN_RUNTIME_NODE_STABILITY_R1",
+      "details": {
+        "mockValidationCount": 48,
+        "quizValidationCount": 184,
+        "correctionDrillValidationCount": 339,
+        "invalidSavedPaperRejected": true
+      }
+    },
+    {
+      "command": "node tools/verify-encoding.mjs",
+      "exitCode": 0,
+      "token": "encoding: all 10 index.html files OK"
+    },
+    {
+      "command": "node tools/verify-app-bootstrap.mjs",
+      "exitCode": 0,
+      "token": "app-bootstrap: all 9 subjects passed"
+    },
+    {
+      "command": "node --check <15 changed/current R2 JavaScript modules and 9 active runtime modules>",
+      "exitCode": 0,
+      "token": "PASS_NODE_SYNTAX"
+    },
+    {
+      "command": "node <inline strict UTF-8 and fraction-render verifier>",
+      "exitCode": 0,
+      "token": "PASS_STRICT_UTF8_AND_FRACTION_RENDER",
+      "details": {
+        "filesScanned": 2953,
+        "fractionMarkers": 860,
+        "renderedMarkers": 860,
+        "rawMarkersAfterRender": 0
+      }
+    },
+    {
+      "command": "node <inline content-hash-manifest verifier>",
+      "exitCode": 0,
+      "token": "PASS_CONTENT_HASH_MANIFEST",
+      "details": {
+        "sourceFiles": 1534,
+        "sourceTreeSha256": "df7c824d204d2bf560afe9a2fe626aae7e26d1a7ed46555820e678c46a78d7cf",
+        "runtimeFiles": 205,
+        "runtimeTreeSha256": "7a0dfde0f514c2b3220d4504351aff6b5ba4768250de07bc37332351f53f7493"
+      }
+    },
+    {
+      "command": "node 數學會考作戰室/tools/v2-human-content/full-semantic-repair/r2/review-figures.mjs",
+      "exitCode": 0,
+      "token": "PASS_FIGURE_SOURCE_RUNTIME_RENDER_REVIEW",
+      "details": {
+        "figures": 178,
+        "sourceAndRuntimeDesktopAndMobileRenders": 712,
+        "sourceRuntimeMismatches": 0,
+        "clippingCandidates": 0
+      }
+    },
+    {
+      "command": "node 數學會考作戰室/tools/v2-human-content/full-semantic-repair/r2/build-corrected-human-runtime-r2.mjs <two clean temporary outputs>",
+      "exitCode": 0,
+      "token": "PASS_BYTE_IDENTICAL_CLEAN_BUILDS",
+      "details": {
+        "filesPerBuild": 203,
+        "treeSha256": "5430c41b8f3a8629eb794086165d2e4f2d2d69e10d620cee102b362a7b46e040",
+        "manifestSha256": "51a30628dc5fd8a79272e31341686d416c1e85460d4b23527272890281cc39d0"
+      }
+    }
+  ],
+  "supersededOrInapplicable": [
+    {
+      "command": "node tools/v2-human-content/full-semantic-repair/r2/validate-confirmed-repairs.mjs",
+      "observedExitCode": 1,
+      "reason": "Historical phase-2 checker compares full-record hashes against HEAD; later authorized phase-3 rubric and prose repairs intentionally supersede those intermediate hashes. The final supplied validator asserts the required repair state."
+    },
+    {
+      "command": "node tools/v2-qa/test/manifest-lint.test.mjs",
+      "observedExitCode": 1,
+      "reason": "Targets retired generated V2 banks, including v2/math-question-bank-v2-u09.js. Repository purity requires those files to remain deleted."
+    },
+    {
+      "command": "node tools/v2-qa/test/production-engine.test.mjs",
+      "observedExitCode": 1,
+      "reason": "Targets retired v2/math-syllabus-v2.js rather than the active human runtime."
+    },
+    {
+      "command": "node <transition-era browser stability gate>",
+      "observedExitCode": 1,
+      "reason": "Waits for the retired generated-v2-rollback mode. The current human-only browser gate verifies that generated and legacy query modes are ignored."
+    },
+    {
+      "command": "node tools/verify-site-sync.mjs and legacy app/data/taxonomy verifiers",
+      "observedExitCode": 1,
+      "reason": "These scripts are hard-coded to retired app.js, data.js, quiz-taxonomy.js, or generated V2 paths and are not valid gates for the human-only runtime."
+    },
+    {
+      "command": "node tools/verify-pages-size.mjs",
+      "observedExitCode": 1,
+      "reason": "The verifier's execSync(git ls-tree) call exceeds its fixed 1 MB maxBuffer before performing a size assertion; this is a verifier infrastructure limitation, not a content-size result."
+    }
+  ],
+  "finalAssertions": {
+    "unresolvedBlockerOrHigh": 0,
+    "sourceRuntimeRecordMismatches": 0,
+    "sourceRuntimeFigureMismatches": 0,
+    "exactMcPromptDuplicateGroups": 0,
+    "exactConstructedResponseDuplicateGroups": 0,
+    "crossUnitPromptSkeletonGroups": 0,
+    "equivalentChoiceFailures": 0,
+    "figureClippingCandidates": 0,
+    "repositoryFilesWrittenByPurityGate": 0,
+    "prCreated": false,
+    "merged": false,
+    "deployed": false
+  }
+}
