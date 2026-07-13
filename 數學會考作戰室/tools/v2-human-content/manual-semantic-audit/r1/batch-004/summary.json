@@ -1,0 +1,56 @@
+{
+  "status": "PASS_MANUAL_SEMANTIC_AUDIT_BATCH_004_R1",
+  "scope": [
+    "u01-s014",
+    "u01-s015",
+    "u02-s001",
+    "u02-s002"
+  ],
+  "artifactCounts": {
+    "lectures": 4,
+    "mcQuestions": 48,
+    "constructedResponses": 8,
+    "questions": 56,
+    "total": 60
+  },
+  "questionVerdictCounts": {
+    "PASS": 32,
+    "FORMAT_REPAIR": 4,
+    "DIFFICULTY_AND_FORMAT_REPAIR": 2,
+    "DIFFICULTY_REPAIR": 6,
+    "RUBRIC_REPAIR": 4,
+    "FORMAT_AND_RUBRIC_REPAIR": 1,
+    "SOLUTION_REPAIR": 2,
+    "SEQUENCE_SOLUTION_AND_RUBRIC_REPAIR": 3,
+    "OPTION_ANALYSIS_REPAIR": 1,
+    "CHOICE_REPAIR": 1
+  },
+  "lectureVerdictCounts": {
+    "RESTRUCTURE": 3,
+    "WORDING_AND_NOTATION_REPAIR": 1
+  },
+  "mathematicsIncorrectCount": 0,
+  "answerIndexIncorrectCount": 0,
+  "confirmedContentErrorCount": 1,
+  "figuresReviewed": 0,
+  "utf8Integrity": "PASS_UTF8_INTEGRITY_WITH_CONTENT_TYPO",
+  "productionModified": false,
+  "cumulativeAfterBatch004": {
+    "questionsComplete": 252,
+    "lecturesComplete": 18,
+    "artifactsComplete": 270,
+    "questionsPending": 4494,
+    "lecturesPending": 321,
+    "artifactsPending": 4815
+  },
+  "keyFindings": [
+    "Scientific notation requires an explicit zero-exponent bridge and consistent formal superscript notation.",
+    "The integrated literacy lecture introduces unused Delta notation and undefined significant-figures language.",
+    "The factor-and-multiple title promises periodicity that is absent from the lecture and assessments.",
+    "Factor and multiple constructed responses use LCM or square-root reasoning before those concepts are formally taught.",
+    "The prime-and-composite lecture contains the confirmed wrong character 隻能 and repeatedly uses square-root notation too early.",
+    "All eight constructed responses need an explicit answer-only-zero scoring rule.",
+    "No invalid UTF-8, replacement character, NUL, surrogate or known mojibake fragment was found."
+  ],
+  "nextBatch": "B005"
+}

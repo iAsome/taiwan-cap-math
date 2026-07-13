@@ -1,0 +1,57 @@
+[
+  {
+    "lectureId": "u01-s014-lecture-r1",
+    "unitId": "u01",
+    "slot": "s014",
+    "primaryVerdict": "RESTRUCTURE",
+    "officialScopeEvidence": "教育會考數學科依第四學習階段數與量內容命題；科學記號屬本單元範圍。",
+    "issues": [
+      "prerequisite 聲稱 S013 已教授正負指數，但 S013 尚未完整建立零次方與負指數。",
+      "標準科學記號允許 n＝0，講義卻未先定義 10⁰＝1。",
+      "「0 不能用唯一的標準科學記號表示」不精確；依係數條件，0 不具有標準科學記號。",
+      "學生可見分析多處使用 10^-4、10^(3+5) 等程式式記號。"
+    ],
+    "recommendedAction": "在本技能開頭正式補上 10⁰＝1 與 10⁻ⁿ 的意義；修正 prerequisite 和 0 的說明；全部改用正式上標。"
+  },
+  {
+    "lectureId": "u01-s015-lecture-r1",
+    "unitId": "u01",
+    "slot": "s015",
+    "primaryVerdict": "WORDING_AND_NOTATION_REPAIR",
+    "officialScopeEvidence": "教育會考重視識別真實問題、建立數學關係與將解答轉回情境。",
+    "issues": [
+      "notation 引入未在本技能使用的 Δ，增加零基礎負擔。",
+      "nonApplicableCases 引入「有效位數」，但講義未定義或教授該概念。",
+      "部分學生可見分析使用 e 記號，不符合正式科學記號格式。"
+    ],
+    "recommendedAction": "移除未使用的 Δ；將有效位數段落改成較基礎的近似值說明或移至適當單元；統一正式上標。"
+  },
+  {
+    "lectureId": "u02-s001-lecture-r1",
+    "unitId": "u02",
+    "slot": "s001",
+    "primaryVerdict": "RESTRUCTURE",
+    "officialScopeEvidence": "因數、倍數、整除與分組情境屬第四學習階段數與量。",
+    "issues": [
+      "標題宣稱涵蓋「週期」，但講義和 14 題完全沒有週期內容。",
+      "prerequisites 為空，實際需要 U01 的整數乘法與除法。",
+      "定義同時混用一般整數、正整數、0 與負因數，對初學者邊界不夠清楚。",
+      "a∣b 記號未在題庫使用，對零基礎學生不是必要負擔。"
+    ],
+    "recommendedAction": "標題改成「因數與倍數：用整除理解分組和排列」；補上 U01 乘除前置；先以正整數範圍清楚定義，再另註 0；移除非必要的整除符號。"
+  },
+  {
+    "lectureId": "u02-s002-lecture-r1",
+    "unitId": "u02",
+    "slot": "s002",
+    "primaryVerdict": "RESTRUCTURE",
+    "officialScopeEvidence": "質數、合數及因數結構屬第四學習階段數與量。",
+    "issues": [
+      "conceptNarrative 出現「隻能」錯字，應為「只能」。",
+      "講義、方法、常見錯誤與例題均使用 √n 或 √19，但平方根符號尚未在課程順序中教授。",
+      "試除停止規則可以用因數配對和 k×k＞n 表達，不必提前使用平方根。",
+      "notation 的 p 未在解題中形成必要功能。"
+    ],
+    "recommendedAction": "修正錯字；用因數配對與平方大小描述停止規則；移除提前的平方根符號與非必要 p 記號。"
+  }
+]
