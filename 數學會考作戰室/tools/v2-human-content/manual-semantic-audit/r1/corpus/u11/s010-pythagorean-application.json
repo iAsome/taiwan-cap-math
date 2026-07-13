@@ -1,0 +1,1375 @@
+{
+  "slot": "s010",
+  "skillId": "pythagorean-application",
+  "topicId": "u11-pythagorean",
+  "title": "畢氏定理應用：把實物轉成直角模型",
+  "lecture": {
+    "lectureId": "u11-s010-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-pythagorean",
+    "skillId": "pythagorean-application",
+    "lockedSkillOrder": 10,
+    "lockedTitle": "畢氏定理應用",
+    "title": "畢氏定理應用：把實物轉成直角模型",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能從矩形、梯子、斜坡中建立直角三角形",
+      "能判斷所求量是斜邊或股",
+      "能處理兩階段與近似應用"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "pythagorean-theorem",
+        "requiredLevel": "能使用前一技能「畢氏定理」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "對角線",
+        "definition": "連接多邊形不相鄰頂點的線段。"
+      },
+      {
+        "term": "水平投影",
+        "definition": "斜線在水平方向的長度。"
+      },
+      {
+        "term": "垂直高度",
+        "definition": "與水平面垂直的距離。"
+      },
+      {
+        "term": "空間對角線",
+        "definition": "跨越長方體相對頂點的線段。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "矩形對角線d=√(長²+寬²)",
+        "meaning": "矩形角為直角。"
+      },
+      {
+        "symbol": "未知股=√(斜邊²-已知股²)",
+        "meaning": "斜邊必須最大。"
+      }
+    ],
+    "conceptNarrative": [
+      "應用題的主要難點不是計算，而是找到互相垂直的兩個方向。",
+      "矩形對角線、繃直纜線、梯子與斜坡通常是斜邊。",
+      "題目問高度或水平距離時，常是已知斜邊求股。",
+      "組合圖形可能先求一段對角線，再建立第二個直角三角形。",
+      "「至少」通常表示理想直線距離，但仍要讀是否有鬆弛或安全餘量。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "直角模型",
+        "statement": "把實際物件抽象成由兩股與斜邊組成的三角形。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "d²=x²+y²",
+        "conditions": [
+          "x,y互相垂直。"
+        ],
+        "meaning": "求跨越兩方向的直線距離。"
+      }
+    ],
+    "nonApplicableCases": [
+      "牆若未說垂直地面，不能自動套用。",
+      "纜線有下垂時，其實際長度不等於直線距離。",
+      "長方形周長或面積不能代替對角線。",
+      "近似題要依指定精度作答。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "畫簡圖或在文字中標水平、垂直。",
+        "check": "確認90°。"
+      },
+      {
+        "step": 2,
+        "instruction": "指出斜邊。",
+        "check": "通常是跨兩方向的直線。"
+      },
+      {
+        "step": 3,
+        "instruction": "決定用平方和或平方差。",
+        "check": "求斜邊用加，求股用減。"
+      },
+      {
+        "step": 4,
+        "instruction": "計算並化簡或估算。",
+        "check": "注意小數與根式。"
+      },
+      {
+        "step": 5,
+        "instruction": "回到情境檢查限制。",
+        "check": "至少、最多、單位與可行性。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "矩形7×24的對角線。",
+        "solutionSteps": [
+          "√(49+576)。"
+        ],
+        "answer": "25。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "梯長17、離牆8，求高。",
+        "solutionSteps": [
+          "√(289-64)。"
+        ],
+        "answer": "15。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "正方形邊長a。",
+        "solutionSteps": [
+          "兩股均a。",
+          "d²=2a²。"
+        ],
+        "answer": "a√2。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "長方體底面6×8、高24的空間對角線。",
+        "solutionSteps": [
+          "底面對角10。",
+          "再求√(10²+24²)。"
+        ],
+        "answer": "26。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "對角線=長+寬。",
+        "why": "把折線路徑當直線。",
+        "correction": "用平方和開根。"
+      },
+      {
+        "mistake": "梯子求高度用10²+6²。",
+        "why": "梯子本身是斜邊。",
+        "correction": "用斜邊平方減水平平方。"
+      },
+      {
+        "mistake": "忽略牆地垂直條件。",
+        "why": "模型前提未確認。",
+        "correction": "找明示或幾何性質。"
+      },
+      {
+        "mistake": "空間題一次亂加三邊。",
+        "why": "未建立兩階段直角三角形。",
+        "correction": "先求底面對角。"
+      },
+      {
+        "mistake": "近似值沒有按位數。",
+        "why": "格式不符。",
+        "correction": "最後再四捨五入。"
+      },
+      {
+        "mistake": "把最短直線與實際鬆弛纜線混同。",
+        "why": "物理限制不同。",
+        "correction": "依題目理想化條件作答。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "先建模，再決定平方和或平方差。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "畫簡圖或在文字中標水平、垂直。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "對角線=長+寬。；修正：用平方和開根。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "近似與單位符合要求嗎？"
+      }
+    ],
+    "summary": [
+      "先建模，再決定平方和或平方差。",
+      "實際限制決定理想畢氏結果如何解讀。"
+    ],
+    "connections": {
+      "previous": "需要 s009 的畢氏定理。",
+      "next": [
+        "s011 會把水平與垂直差改為坐標差。",
+        "s013 將在沒有圖時完成文字建模。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s010-ladder"
+    ],
+    "accessibilityNotes": [
+      "垂直牆面與水平地面形成直角，一把10公尺梯子斜靠牆，梯腳離牆6公尺，高度標h。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s010-v001",
+        "u11-s010-v002",
+        "u11-s010-v003",
+        "u11-s010-v004",
+        "u11-s010-v005",
+        "u11-s010-v006",
+        "u11-s010-v007",
+        "u11-s010-v008",
+        "u11-s010-v009",
+        "u11-s010-v010",
+        "u11-s010-v011",
+        "u11-s010-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s010-cr001",
+        "u11-s010-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「畢氏定理應用」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「對角線=長+寬。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "bc942a451765366ca4d6518459fd66492f6bdac9bf37a5716e479d469a2e0716"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u11-s010-v001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "長方形長 6 公分、寬 8 公分，對角線長為何？",
+      "givenConditions": [
+        "長6寬8。"
+      ],
+      "target": "求對角線。",
+      "choices": [
+        "14公分",
+        "10 公分",
+        "48公分",
+        "√14公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：矩形角為直角，對角線是斜邊。 詳算檢查：d=√(6²+8²)=√100=10公分。 因此結果為「10 公分」。",
+      "explanation": "d=√(6²+8²)=√100=10公分。",
+      "steps": [
+        "整理條件：長6寬8。",
+        "獨立推導：不參照選項，從題幹條件重新計算：矩形角為直角，對角線是斜邊。 詳算檢查：d=√(6²+8²)=√100=10公分。 因此結果為「10 公分」。",
+        "核對目標：答案「10 公分」確實回應「求對角線。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "14公分",
+          "truth": false,
+          "reason": "把長寬相加。"
+        },
+        {
+          "choice": "10 公分",
+          "truth": true,
+          "reason": "此選項符合目標「求對角線。」；d=√(6²+8²)=√100=10公分。"
+        },
+        {
+          "choice": "48公分",
+          "truth": false,
+          "reason": "把面積當對角線。"
+        },
+        {
+          "choice": "√14公分",
+          "truth": false,
+          "reason": "未平方。"
+        }
+      ],
+      "misconceptionTarget": "將對角線誤認成長加寬。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "基本矩形應用。；具體任務是「求對角線。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9aeb99995025113484abfc68f3bce3fc9156c30f6903ed453531216f03633780"
+    },
+    {
+      "questionId": "u11-s010-v002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "邊長 5 公分的正方形，其對角線長為何？",
+      "givenConditions": [
+        "正方形邊長5。"
+      ],
+      "target": "求精確對角線。",
+      "choices": [
+        "10公分",
+        "25√2公分",
+        "5√2 公分",
+        "√10公分"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：等腰直角三角形斜邊為股長乘√2。 詳算檢查：d²=5²+5²=50，d=√50=5√2。 因此結果為「5√2 公分」。",
+      "explanation": "d²=5²+5²=50，d=√50=5√2。",
+      "steps": [
+        "整理條件：正方形邊長5。",
+        "獨立推導：不參照選項，從題幹條件重新計算：等腰直角三角形斜邊為股長乘√2。 詳算檢查：d²=5²+5²=50，d=√50=5√2。 因此結果為「5√2 公分」。",
+        "核對目標：答案「5√2 公分」確實回應「求精確對角線。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10公分",
+          "truth": false,
+          "reason": "直接相加兩邊。"
+        },
+        {
+          "choice": "25√2公分",
+          "truth": false,
+          "reason": "係數未開平方。"
+        },
+        {
+          "choice": "5√2 公分",
+          "truth": true,
+          "reason": "此選項符合目標「求精確對角線。」；d²=5²+5²=50，d=√50=5√2。"
+        },
+        {
+          "choice": "√10公分",
+          "truth": false,
+          "reason": "未平方兩股。"
+        }
+      ],
+      "misconceptionTarget": "錯把面積或周長代入。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "基本正方形應用。；具體任務是「求精確對角線。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3f14077057862ed7ce2422c045754d7fb708637ba9df1f7ee9b204f933c7268e"
+    },
+    {
+      "questionId": "u11-s010-v003",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "figure",
+      "figureId": "fig-u11-s010-ladder",
+      "drawingSpecReference": "units/u11/s010/drawing-specs.jsonl#fig-u11-s010-ladder",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一把 10 公尺長的梯子靠牆，梯腳離牆 6 公尺。梯頂離地多高？",
+      "givenConditions": [
+        "牆與地面垂直，梯長10。"
+      ],
+      "target": "求垂直高度。",
+      "choices": [
+        "8 公尺",
+        "4公尺",
+        "16公尺",
+        "√136公尺"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：梯子是斜邊，求股要用斜邊平方減另一股平方。 詳算檢查：高度²=10²-6²=64，所以高度8公尺。 因此結果為「8 公尺」。",
+      "explanation": "高度²=10²-6²=64，所以高度8公尺。",
+      "steps": [
+        "整理條件：牆與地面垂直，梯長10。",
+        "獨立推導：不參照選項，從題幹條件重新計算：梯子是斜邊，求股要用斜邊平方減另一股平方。 詳算檢查：高度²=10²-6²=64，所以高度8公尺。 因此結果為「8 公尺」。",
+        "核對目標：答案「8 公尺」確實回應「求垂直高度。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "8 公尺",
+          "truth": true,
+          "reason": "此選項符合目標「求垂直高度。」；高度²=10²-6²=64，所以高度8公尺。"
+        },
+        {
+          "choice": "4公尺",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "16公尺",
+          "truth": false,
+          "reason": "錯誤相加。"
+        },
+        {
+          "choice": "√136公尺",
+          "truth": false,
+          "reason": "把斜邊與股平方相加。"
+        }
+      ],
+      "misconceptionTarget": "把梯長與水平距離直接相減。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "答案為公尺。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "基本梯子模型。；具體任務是「求垂直高度。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4c00c347f9c614e64eff147af42f0947c2cdba2a81ff95baa6d7168e708c449e"
+    },
+    {
+      "questionId": "u11-s010-v004",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一條斜坡水平長 12 公尺、高 5 公尺，斜坡面長多少？",
+      "givenConditions": [
+        "水平12、高5。"
+      ],
+      "target": "求斜坡長。",
+      "choices": [
+        "17公尺",
+        "7公尺",
+        "√17公尺",
+        "13 公尺"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：水平與垂直方向成直角。 詳算檢查：斜坡面=√(12²+5²)=13公尺。 因此結果為「13 公尺」。",
+      "explanation": "斜坡面=√(12²+5²)=13公尺。",
+      "steps": [
+        "整理條件：水平12、高5。",
+        "獨立推導：不參照選項，從題幹條件重新計算：水平與垂直方向成直角。 詳算檢查：斜坡面=√(12²+5²)=13公尺。 因此結果為「13 公尺」。",
+        "核對目標：答案「13 公尺」確實回應「求斜坡長。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "17公尺",
+          "truth": false,
+          "reason": "直接相加。"
+        },
+        {
+          "choice": "7公尺",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "√17公尺",
+          "truth": false,
+          "reason": "未平方。"
+        },
+        {
+          "choice": "13 公尺",
+          "truth": true,
+          "reason": "此選項符合目標「求斜坡長。」；斜坡面=√(12²+5²)=13公尺。"
+        }
+      ],
+      "misconceptionTarget": "未辨認斜坡面是斜邊。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "標準生活模型。；具體任務是「求斜坡長。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9070b783dd0a9ed110c0dbf1dd606b58b1410e1b067dbb111460dd737d9044c2"
+    },
+    {
+      "questionId": "u11-s010-v005",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "電視螢幕長 48 公分、寬 36 公分，對角線長多少？",
+      "givenConditions": [
+        "矩形螢幕。"
+      ],
+      "target": "求對角線尺寸。",
+      "choices": [
+        "84公分",
+        "42公分",
+        "60 公分",
+        "1728公分"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：可提公因數12，形成3-4-5比例的36-48-60。 詳算檢查：√(48²+36²)=√3600=60公分。 因此結果為「60 公分」。",
+      "explanation": "√(48²+36²)=√3600=60公分。",
+      "steps": [
+        "整理條件：矩形螢幕。",
+        "獨立推導：不參照選項，從題幹條件重新計算：可提公因數12，形成3-4-5比例的36-48-60。 詳算檢查：√(48²+36²)=√3600=60公分。 因此結果為「60 公分」。",
+        "核對目標：答案「60 公分」確實回應「求對角線尺寸。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "84公分",
+          "truth": false,
+          "reason": "長寬相加。"
+        },
+        {
+          "choice": "42公分",
+          "truth": false,
+          "reason": "平均值錯用。"
+        },
+        {
+          "choice": "60 公分",
+          "truth": true,
+          "reason": "此選項符合目標「求對角線尺寸。」；√(48²+36²)=√3600=60公分。"
+        },
+        {
+          "choice": "1728公分",
+          "truth": false,
+          "reason": "面積誤用。"
+        }
+      ],
+      "misconceptionTarget": "大數平方計算失誤。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需辨認倍數型畢氏數組。；具體任務是「求對角線尺寸。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "40ca5c936dadfbcf8fdc5f80a5eae16ccf56ebb192a08e4f51beb9ac478d6179"
+    },
+    {
+      "questionId": "u11-s010-v006",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "長方形對角線為 13 公分，寬為 5 公分，長為何？",
+      "givenConditions": [
+        "對角線13、寬5。"
+      ],
+      "target": "求另一邊。",
+      "choices": [
+        "8公分",
+        "18公分",
+        "√194公分",
+        "12 公分"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：對角線為斜邊，使用平方差。 詳算檢查：長²=13²-5²=144，所以長12公分。 因此結果為「12 公分」。",
+      "explanation": "長²=13²-5²=144，所以長12公分。",
+      "steps": [
+        "整理條件：對角線13、寬5。",
+        "獨立推導：不參照選項，從題幹條件重新計算：對角線為斜邊，使用平方差。 詳算檢查：長²=13²-5²=144，所以長12公分。 因此結果為「12 公分」。",
+        "核對目標：答案「12 公分」確實回應「求另一邊。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "8公分",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "18公分",
+          "truth": false,
+          "reason": "直接相加。"
+        },
+        {
+          "choice": "√194公分",
+          "truth": false,
+          "reason": "平方關係方向錯。"
+        },
+        {
+          "choice": "12 公分",
+          "truth": true,
+          "reason": "此選項符合目標「求另一邊。」；長²=13²-5²=144，所以長12公分。"
+        }
+      ],
+      "misconceptionTarget": "把斜邊與股直接做加減。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "反向應用畢氏定理。；具體任務是「求另一邊。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "1bdbc99d28e6712bc0b74ed6e399212f49c35086937fa566e13a99ea3c7f6ecc"
+    },
+    {
+      "questionId": "u11-s010-v007",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "兩個相鄰正方形邊長分別為 3 與 4，外框形成長 7、寬 4 的長方形。外框對角線長為何？",
+      "givenConditions": [
+        "兩正方形同底相鄰，較大邊決定高度。"
+      ],
+      "target": "求組合外框對角線。",
+      "choices": [
+        "5",
+        "√65",
+        "√41",
+        "11"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先由組合圖形求外框尺寸，再套定理。 詳算檢查：外框長為3+4=7，寬為4，對角線=√(7²+4²)=√65。 因此結果為「√65」。",
+      "explanation": "外框長為3+4=7，寬為4，對角線=√(7²+4²)=√65。",
+      "steps": [
+        "整理條件：兩正方形同底相鄰，較大邊決定高度。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先由組合圖形求外框尺寸，再套定理。 詳算檢查：外框長為3+4=7，寬為4，對角線=√(7²+4²)=√65。 因此結果為「√65」。",
+        "核對目標：答案「√65」確實回應「求組合外框對角線。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "只使用3與4的三角形。"
+        },
+        {
+          "choice": "√65",
+          "truth": true,
+          "reason": "此選項符合目標「求組合外框對角線。」；外框長為3+4=7，寬為4，對角線=√(7²+4²)=√65。"
+        },
+        {
+          "choice": "√41",
+          "truth": false,
+          "reason": "把長錯當5。"
+        },
+        {
+          "choice": "11",
+          "truth": false,
+          "reason": "長寬直接相加。"
+        }
+      ],
+      "misconceptionTarget": "直接套用3-4-5而忽略實際外框。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "兩階段圖形建模。；具體任務是「求組合外框對角線。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "1a87ba4d55672ee063fa3e0f672575758159d119043abdc1ea0a42db237cdc39"
+    },
+    {
+      "questionId": "u11-s010-v008",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一根 25 公尺纜線從地面固定點連到柱頂，固定點離柱腳 7 公尺。若柱腳與地面垂直，柱高為何？",
+      "givenConditions": [
+        "纜線25、水平7。"
+      ],
+      "target": "求柱高。",
+      "choices": [
+        "24 公尺",
+        "18公尺",
+        "26公尺",
+        "√674公尺"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：纜線是斜邊，使用7-24-25畢氏數組。 詳算檢查：柱高=√(25²-7²)=√576=24公尺。 因此結果為「24 公尺」。",
+      "explanation": "柱高=√(25²-7²)=√576=24公尺。",
+      "steps": [
+        "整理條件：纜線25、水平7。",
+        "獨立推導：不參照選項，從題幹條件重新計算：纜線是斜邊，使用7-24-25畢氏數組。 詳算檢查：柱高=√(25²-7²)=√576=24公尺。 因此結果為「24 公尺」。",
+        "核對目標：答案「24 公尺」確實回應「求柱高。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "24 公尺",
+          "truth": true,
+          "reason": "此選項符合目標「求柱高。」；柱高=√(25²-7²)=√576=24公尺。"
+        },
+        {
+          "choice": "18公尺",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "26公尺",
+          "truth": false,
+          "reason": "錯誤平方差。"
+        },
+        {
+          "choice": "√674公尺",
+          "truth": false,
+          "reason": "把平方相加。"
+        }
+      ],
+      "misconceptionTarget": "斜邊位置判斷錯誤。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "數值較大且需判斜邊。；具體任務是「求柱高。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7821ac2ce04902798ec634ed1945420b6dfd3a81091aaf16b1feb11721ab7647"
+    },
+    {
+      "questionId": "u11-s010-v009",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一個長方體底面長 3、寬 4，高 12。從底面一角到正上方對角頂點的空間線段長為何？",
+      "givenConditions": [
+        "長寬高互相垂直。"
+      ],
+      "target": "求空間對角線。",
+      "choices": [
+        "19",
+        "√19",
+        "12√2",
+        "13"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：連續使用兩次畢氏定理。 詳算檢查：底面對角線=5，再與高12形成直角三角形，空間線長=√(5²+12²)=13。 因此結果為「13」。",
+      "explanation": "底面對角線=5，再與高12形成直角三角形，空間線長=√(5²+12²)=13。",
+      "steps": [
+        "整理條件：長寬高互相垂直。",
+        "獨立推導：不參照選項，從題幹條件重新計算：連續使用兩次畢氏定理。 詳算檢查：底面對角線=5，再與高12形成直角三角形，空間線長=√(5²+12²)=13。 因此結果為「13」。",
+        "核對目標：答案「13」確實回應「求空間對角線。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "19",
+          "truth": false,
+          "reason": "三邊直接相加。"
+        },
+        {
+          "choice": "√19",
+          "truth": false,
+          "reason": "未平方。"
+        },
+        {
+          "choice": "12√2",
+          "truth": false,
+          "reason": "錯把底面對角線當12。"
+        },
+        {
+          "choice": "13",
+          "truth": true,
+          "reason": "此選項符合目標「求空間對角線。」；底面對角線=5，再與高12形成直角三角形，空間線長=√(5²+12²)=13。"
+        }
+      ],
+      "misconceptionTarget": "一次把三邊相加或公式混淆。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需要兩階段畢氏推理但仍在國中延伸可理解範圍。；具體任務是「求空間對角線。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a32dbf27b8d748a11284e91b8e823bbf9d56f5540efd934c704f100f08ec95d5"
+    },
+    {
+      "questionId": "u11-s010-v010",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "無障礙坡道水平投影 9 公尺、上升 1.2 公尺。坡道實際長度最接近多少？",
+      "givenConditions": [
+        "水平與垂直互相垂直。"
+      ],
+      "target": "求實際斜長近似值。",
+      "choices": [
+        "9.08 公尺",
+        "10.2公尺",
+        "7.8公尺",
+        "81.44公尺"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：平方和82.44，因9.08²約82.4464，故最接近9.08。 詳算檢查：長=√(9²+1.2²)=√82.44≈9.08公尺。 因此結果為「9.08 公尺」。",
+      "explanation": "長=√(9²+1.2²)=√82.44≈9.08公尺。",
+      "steps": [
+        "整理條件：水平與垂直互相垂直。",
+        "獨立推導：不參照選項，從題幹條件重新計算：平方和82.44，因9.08²約82.4464，故最接近9.08。 詳算檢查：長=√(9²+1.2²)=√82.44≈9.08公尺。 因此結果為「9.08 公尺」。",
+        "核對目標：答案「9.08 公尺」確實回應「求實際斜長近似值。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9.08 公尺",
+          "truth": true,
+          "reason": "此選項符合目標「求實際斜長近似值。」；長=√(9²+1.2²)=√82.44≈9.08公尺。"
+        },
+        {
+          "choice": "10.2公尺",
+          "truth": false,
+          "reason": "直接相加。"
+        },
+        {
+          "choice": "7.8公尺",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "81.44公尺",
+          "truth": false,
+          "reason": "漏開平方。"
+        }
+      ],
+      "misconceptionTarget": "只用水平長忽略上升量或直接相加。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "所有長度以公尺。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "含小數與近似要求。；具體任務是「求實際斜長近似值。」。",
+      "literacyContextNecessity": "坡道實際長度由水平與上升共同決定。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a19f0f5ecb77bae669b76a08df779137c0c7482b73c0d6faed31547a501e10bb"
+    },
+    {
+      "questionId": "u11-s010-v011",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "消防梯長 15 公尺，安全規定梯腳至少離牆 9 公尺。若剛好 9 公尺，梯頂高度為多少？",
+      "givenConditions": [
+        "牆地垂直，梯腳距離9。"
+      ],
+      "target": "求梯頂高度。",
+      "choices": [
+        "6公尺",
+        "18公尺",
+        "12 公尺",
+        "√306公尺"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：安全規定提供水平股，梯長是斜邊。 詳算檢查：高度=√(15²-9²)=√144=12公尺。 因此結果為「12 公尺」。",
+      "explanation": "高度=√(15²-9²)=√144=12公尺。",
+      "steps": [
+        "整理條件：牆地垂直，梯腳距離9。",
+        "獨立推導：不參照選項，從題幹條件重新計算：安全規定提供水平股，梯長是斜邊。 詳算檢查：高度=√(15²-9²)=√144=12公尺。 因此結果為「12 公尺」。",
+        "核對目標：答案「12 公尺」確實回應「求梯頂高度。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6公尺",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "18公尺",
+          "truth": false,
+          "reason": "錯誤相加。"
+        },
+        {
+          "choice": "12 公尺",
+          "truth": true,
+          "reason": "此選項符合目標「求梯頂高度。」；高度=√(15²-9²)=√144=12公尺。"
+        },
+        {
+          "choice": "√306公尺",
+          "truth": false,
+          "reason": "平方關係方向錯。"
+        }
+      ],
+      "misconceptionTarget": "忽略「剛好」數值或把梯子當股。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "答案為公尺。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需正確解讀安全規格。；具體任務是「求梯頂高度。」。",
+      "literacyContextNecessity": "最低水平距離取等號，直接決定三角形尺寸。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "04454370d1074a9ef6740b09509f954c83151f025e69535b07ec58cfe3c250ce"
+    },
+    {
+      "questionId": "u11-s010-v012",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一張 16:9 的矩形海報寬 80 公分，高 45 公分。對角線最接近多少公分？",
+      "givenConditions": [
+        "矩形寬高與精度明確。"
+      ],
+      "target": "估算海報對角線。",
+      "choices": [
+        "125公分",
+        "91.8 公分",
+        "62.5公分",
+        "89.0公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先算6400+2025=8425，再估平方根。 詳算檢查：d=√(80²+45²)=√8425≈91.79，取一位小數為91.8公分。 因此結果為「91.8 公分」。",
+      "explanation": "d=√(80²+45²)=√8425≈91.79，取一位小數為91.8公分。",
+      "steps": [
+        "整理條件：矩形寬高與精度明確。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先算6400+2025=8425，再估平方根。 詳算檢查：d=√(80²+45²)=√8425≈91.79，取一位小數為91.8公分。 因此結果為「91.8 公分」。",
+        "核對目標：答案「91.8 公分」確實回應「估算海報對角線。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "125公分",
+          "truth": false,
+          "reason": "直接相加。"
+        },
+        {
+          "choice": "91.8 公分",
+          "truth": true,
+          "reason": "此選項符合目標「估算海報對角線。」；d=√(80²+45²)=√8425≈91.79，取一位小數為91.8公分。"
+        },
+        {
+          "choice": "62.5公分",
+          "truth": false,
+          "reason": "平均或比例誤用。"
+        },
+        {
+          "choice": "89.0公分",
+          "truth": false,
+          "reason": "低估平方和。"
+        }
+      ],
+      "misconceptionTarget": "只看寬80就粗估或把長寬相加。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-theorem，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "答案以公分且取到小數第一位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "結合比例情境、大數平方與近似。；具體任務是「估算海報對角線。」。",
+      "literacyContextNecessity": "海報對角線是實際裝框尺寸需求。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "畢氏定理應用",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "609e01100028736413df42adbd819c76b8560850fded49b04984a0d09f5f3416"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u11-s010-cr001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "一把 25 公尺梯子靠在垂直牆上，梯腳離牆 15 公尺。求梯頂高度，並指出哪一邊是斜邊。",
+      "requiredWork": [
+        "指出梯子為斜邊",
+        "使用平方差",
+        "單位"
+      ],
+      "fullCreditSolution": [
+        "梯子跨越牆與地面，是斜邊25。",
+        "高度²=25²-15²=625-225=400。",
+        "高度=20。"
+      ],
+      "standardAnswer": "20 公尺。",
+      "alternativeMethod": "使用15-20-25比例。",
+      "reasoningSteps": [
+        "梯子跨越牆與地面，是斜邊25。",
+        "高度²=25²-15²=625-225=400。",
+        "高度=20。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：邊角色；平方差400；高度20公尺，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：邊角色；平方差400；高度20公尺。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「邊角色」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「邊角色」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「邊角色」但後續失誤，可依證據給1分。",
+        "若完成「邊角色」與「平方差400」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "答案為公尺。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "把15與25直接相減",
+        "把高度當斜邊"
+      ],
+      "figureId": "fig-u11-s010-ladder",
+      "drawingSpecReference": "units/u11/s010/drawing-specs.jsonl#fig-u11-s010-ladder",
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "20 公尺。",
+        "recomputation": "梯子跨越牆與地面，是斜邊25。；高度²=25²-15²=625-225=400。；高度=20。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「高度20公尺」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "794e9984173b6ccb9634e7f3cc8e81de966472b21de843345e57486d92ec7f2c"
+    },
+    {
+      "questionId": "u11-s010-cr002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "lockedSkillOrder": 10,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "長方體長 6、寬 8、高 24 公分。求相對兩頂點間的空間對角線。",
+      "requiredWork": [
+        "先求底面對角線",
+        "再與高度用畢氏",
+        "完成根式"
+      ],
+      "fullCreditSolution": [
+        "底面對角線=√(6²+8²)=10。",
+        "空間對角線=√(10²+24²)=√676=26。"
+      ],
+      "standardAnswer": "26 公分。",
+      "alternativeMethod": "直接使用√(6²+8²+24²)=√676，但需說明三方向互相垂直。",
+      "reasoningSteps": [
+        "底面對角線=√(6²+8²)=10。",
+        "空間對角線=√(10²+24²)=√676=26。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：底面對角10；第二次平方和676；結果26公分，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：底面對角10；第二次平方和676；結果26公分。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「底面對角10」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「底面對角10」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「底面對角10」但後續失誤，可依證據給1分。",
+        "若完成「底面對角10」與「第二次平方和676」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "答案為公分。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "只求底面10",
+        "三邊直接相加38"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "26 公分。",
+        "recomputation": "底面對角線=√(6²+8²)=10。；空間對角線=√(10²+24²)=√676=26。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「結果26公分」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "78f75841b12b1222ce7a1bfe73d1accfe6960d2ea554d7fe4219d558d651172c"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u11-s010-ladder",
+      "unitId": "u11",
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-application",
+      "svgPath": "figures/u11/fig-u11-s010-ladder.svg",
+      "purpose": "支援「畢氏定理應用」中需要辨認空間關係或估算位置的題目，不以圖形外觀替代計算。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 480,
+          "height": 330
+        },
+        "viewBox": "0 0 480 330",
+        "coordinateSystem": "SVG coordinates, origin at top-left",
+        "geometry": "梯子靠牆模型",
+        "labels": "All labels use at least 18px font",
+        "lineRules": "Solid primary geometry; dashed lines only for projections",
+        "hiddenLineRules": "No hidden lines are required",
+        "tickMarksAndSymbols": "Right-angle symbols or axis arrows are explicitly drawn where relevant",
+        "units": "Units shown only when the associated question uses them",
+        "scalePolicy": "not-to-scale unless dimensions happen to match",
+        "visualInferenceWarning": "不得依圖形外觀量測或猜答案，必須使用標示條件計算。"
+      },
+      "altText": "垂直牆面與水平地面形成直角，一把10公尺梯子斜靠牆，梯腳離牆6公尺，高度標h。",
+      "svgTitle": "梯子靠牆模型",
+      "svgDesc": "垂直牆面與水平地面形成直角，一把10公尺梯子斜靠牆，梯腳離牆6公尺，高度標h。",
+      "svgAssertions": [
+        "梯子 10 m",
+        "離牆 6 m",
+        "高度 h",
+        "M90 250"
+      ],
+      "mobileReadability": {
+        "reviewedAtWidthPx": 320,
+        "minimumFontPx": 18,
+        "decision": "pass",
+        "note": "縮放至320像素寬時，主要標籤、直角符號與線段仍可辨識。"
+      },
+      "answerLeakageReview": {
+        "decision": "pass",
+        "note": "圖中只呈現題目已知條件與一般公式，不標示該題的數值答案。"
+      },
+      "figureReview": {
+        "decision": "pass",
+        "reviewedAt": "2026-07-12",
+        "manualRenderRequired": true,
+        "reviewNote": "已逐一核對 fig-u11-s010-ladder 的座標、標籤位置、線段交點與320像素縮圖；圖形不按比例，且不會以視覺長短洩漏答案。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "cfc68a534df3ec1925126e847315e2a3c25356dd8306261d5751234a30a8b9cc"
+    }
+  ],
+  "sourceBatch": "012-u11-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/012-u11-complete/units/u11/s010"
+}

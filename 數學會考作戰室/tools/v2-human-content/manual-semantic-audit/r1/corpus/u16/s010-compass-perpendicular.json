@@ -1,0 +1,1335 @@
+{
+  "slot": "s010",
+  "skillId": "compass-perpendicular",
+  "topicId": "u16-construction",
+  "title": "過點作垂線：分別處理點在線上與點在線外",
+  "lecture": {
+    "lectureId": "u16-s010-lecture-r1",
+    "unitId": "u16",
+    "numericUnitId": 16,
+    "topicId": "u16-construction",
+    "skillId": "compass-perpendicular",
+    "skillOrder": 10,
+    "originalLockedTitle": "過點作垂線",
+    "title": "過點作垂線：分別處理點在線上與點在線外",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能用尺規作出通過指定點且垂直於已知直線的直線。",
+      "能分辨指定點在線上與在線外的兩種作圖流程。",
+      "能利用等距點與中垂線性質說明作圖正確。",
+      "能判斷圓弧半徑與交點不足時的作圖錯誤。"
+    ],
+    "prerequisiteBridge": "已會用弧交點建立等距關係。過點作垂線的核心是先在已知直線上取得兩個到指定點對稱或等距的點，再作它們的中垂線。",
+    "prerequisites": [
+      {
+        "skillId": "compass-copy-angle",
+        "requiredLevel": "能使用先備技能「複製角」的核心定義與基本運算，並能說明其與本節的連結。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "垂線",
+        "definition": "與已知直線相交成 90° 的直線。"
+      },
+      {
+        "term": "垂足",
+        "definition": "垂線與已知直線的交點。"
+      },
+      {
+        "term": "點在線上",
+        "definition": "指定點本身位於已知直線，垂足就是該點。"
+      },
+      {
+        "term": "點在線外",
+        "definition": "指定點不在已知直線，需先找到通過該點的中垂線結構。"
+      },
+      {
+        "term": "中垂線",
+        "definition": "到線段兩端點等距之點的集合所在直線。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "P∈ℓ",
+        "meaning": "點 P 在直線 ℓ 上。"
+      },
+      {
+        "symbol": "P∉ℓ",
+        "meaning": "點 P 不在直線 ℓ 上。"
+      },
+      {
+        "symbol": "m⊥ℓ",
+        "meaning": "直線 m 與 ℓ 垂直。"
+      }
+    ],
+    "conceptNarrative": [
+      "若 P 在線 ℓ 上，以 P 為圓心畫弧交 ℓ 於 A、B，便有 PA=PB，P 是 AB 中點；再作 AB 的中垂線即可通過 P 且垂直 ℓ。",
+      "若 P 在線外，以 P 為圓心畫弧交 ℓ 於 A、B，得到 PA=PB；再以 A、B 為圓心畫相同弧交於 P 的另一側 Q，則 QA=QB。P、Q 都在 AB 的中垂線上，所以 PQ⊥ℓ。",
+      "點在線外時，第一圓弧半徑必須大到能與直線相交兩點。",
+      "最後答案是一條直線，不只是垂足或弧交點。",
+      "作圖理由均來自『到 A、B 等距的點在線段 AB 的中垂線上』。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "過線上一點作垂線",
+        "statement": "以該點為中點構造線段，再作該線段中垂線。"
+      },
+      {
+        "name": "過線外一點作垂線",
+        "statement": "先在直線上取得到外點等距的兩點，再找另一個到兩點等距的點，連接兩等距點。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "PA=PB 且 QA=QB ⇒ 直線 PQ 為 AB 的中垂線",
+        "conditions": [
+          "P、Q 為不同點"
+        ],
+        "meaning": "得到 PQ⊥AB。"
+      },
+      {
+        "formula": "A、B∈ℓ 且 PQ⊥AB ⇒ PQ⊥ℓ",
+        "conditions": [
+          "AB 位於直線 ℓ 上"
+        ],
+        "meaning": "所作直線垂直已知直線。"
+      }
+    ],
+    "nonApplicableCases": [
+      "線外點第一弧只與直線相交一點時，不能建立線段 AB。",
+      "以 A、B 為圓心時半徑不同，不能保證 Q 到 A、B 等距。",
+      "最後連接 A、B 只是原直線，不是垂線。",
+      "點在線上與在線外的流程不能不加辨別地互換。",
+      "用直尺目測 90° 不符合尺規作圖要求。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先判斷 P 是否在已知直線 ℓ 上。",
+        "check": "垂足是否已經指定為 P？"
+      },
+      {
+        "step": 2,
+        "instruction": "以 P 為圓心畫弧，讓弧與 ℓ 交於 A、B。",
+        "check": "是否確實取得兩個不同交點？"
+      },
+      {
+        "step": 3,
+        "instruction": "以 A、B 為圓心、相同半徑畫弧。",
+        "check": "在線上情形取任一側兩弧交點；在線外情形取 P 以外的另一交點 Q。"
+      },
+      {
+        "step": 4,
+        "instruction": "連接所需兩個等距點。",
+        "check": "在線上時連 P 與弧交點；在線外時連 P、Q。"
+      },
+      {
+        "step": 5,
+        "instruction": "以中垂線性質驗證垂直。",
+        "check": "兩個連線上的點是否都到 A、B 等距？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "P 在線 ℓ 上，如何先取得對稱點 A、B？",
+        "solutionSteps": [
+          "以 P 為圓心任取半徑畫弧。",
+          "弧與 ℓ 的兩個交點為 A、B，故 PA=PB。"
+        ],
+        "answer": "A、B 位於 P 兩側且 P 為 AB 中點。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "P 在線外，第一圓弧的半徑有何要求？",
+        "solutionSteps": [
+          "圓需穿過直線 ℓ。",
+          "要產生兩個交點而非相切。"
+        ],
+        "answer": "半徑須大於 P 到 ℓ 的距離。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "線外作圖得到 A、B、Q，為何 PQ 垂直 ℓ？",
+        "solutionSteps": [
+          "PA=PB，所以 P 在 AB 中垂線上。",
+          "QA=QB，所以 Q 也在 AB 中垂線上。",
+          "P、Q 決定 AB 的中垂線。"
+        ],
+        "answer": "PQ⊥AB，而 AB 在 ℓ 上，所以 PQ⊥ℓ。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "作圖後只畫線段 PQ 是否足夠？",
+        "solutionSteps": [
+          "題目若要求直線，線段只表示部分。",
+          "可用直尺延長 PQ。"
+        ],
+        "answer": "應作或延長為通過 P、Q 的直線。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "未先判斷點是否在線上。",
+        "why": "兩種流程的垂足角色不同。",
+        "correction": "第一步標記 P∈ℓ 或 P∉ℓ。"
+      },
+      {
+        "mistake": "線外情形第一弧半徑太小。",
+        "why": "無法與直線交兩點。",
+        "correction": "開大圓規至穿越直線。"
+      },
+      {
+        "mistake": "A、B 為圓心時使用不同半徑。",
+        "why": "Q 不再到兩點等距。",
+        "correction": "保持圓規開口不變。"
+      },
+      {
+        "mistake": "把 AB 畫成答案。",
+        "why": "AB 位於原直線。",
+        "correction": "答案要連接兩個等距點 P、Q。"
+      },
+      {
+        "mistake": "只找到一個等距點。",
+        "why": "一點不能決定中垂線方向。",
+        "correction": "利用 P 與另一弧交點 Q 共同決定直線。"
+      },
+      {
+        "mistake": "以目測直角作驗證。",
+        "why": "圖可能不精準。",
+        "correction": "用 PA=PB、QA=QB 的中垂線理由。"
+      }
+    ],
+    "selfCheck": [
+      "我先判斷了 P 在線上還是線外嗎？",
+      "第一弧是否與直線有兩個交點？",
+      "以 A、B 畫弧時半徑是否相同？",
+      "最後連線是否通過指定點 P？",
+      "我能用中垂線性質說明 90° 嗎？"
+    ],
+    "summary": [
+      "過點作垂線分為點在線上與點在線外。",
+      "兩種作法都先取得直線上的等距端點 A、B。",
+      "兩個到 A、B 等距的點決定 AB 的中垂線。",
+      "作圖正確性來自等距，不來自目測。"
+    ],
+    "connections": {
+      "previous": "複製角用 SSS 搬移角；本技能用中垂線等距軌跡。",
+      "next": [
+        "下一技能要求從文字辨認作圖目標與步驟順序。",
+        "高線概念會把垂線用在三角形頂點與對邊。"
+      ]
+    },
+    "figureReferences": [
+      "u16-fig-010-perpendicular"
+    ],
+    "accessibilityNotes": [
+      "u16-fig-010-perpendicular 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u16-s010-v001",
+        "u16-s010-v002",
+        "u16-s010-v003",
+        "u16-s010-v004",
+        "u16-s010-v005",
+        "u16-s010-v006",
+        "u16-s010-v007",
+        "u16-s010-v008",
+        "u16-s010-v009",
+        "u16-s010-v010",
+        "u16-s010-v011",
+        "u16-s010-v012"
+      ],
+      "constructedResponseIds": [
+        "u16-s010-cr001",
+        "u16-s010-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "針對「過點作垂線」逐段核對定義、適用條件與反例；重新演算4個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+      "reviewVersion": "human-lecture-review-u16-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "157c6cb7a0d7c1b6b71fe1a902a488c8d2afe24112c613901cf9d997b392574e"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u16-s010-v001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "若 P 在線 ℓ 上，要作通過 P 的垂線，第一步最合適的是什麼？",
+      "givenConditions": [
+        "P∈ℓ"
+      ],
+      "target": "在線上取得對稱端點",
+      "choices": [
+        "以任意外點 Q 為圓心畫弧",
+        "直接目測 90° 畫線",
+        "以 P 為圓心畫弧，交 ℓ 於 A、B",
+        "以 A、B 為圓心畫弧"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "此步先建立對稱線段 AB，後續作其中垂線即通過 P。",
+      "explanation": "以 P 為圓心可得到 PA=PB，讓 P 成為 AB 中點。 圓心設 P。 弧與直線交於 P 兩側 A、B。",
+      "steps": [
+        "圓心設 P。",
+        "弧與直線交於 P 兩側 A、B。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "以任意外點 Q 為圓心畫弧",
+          "truth": false,
+          "reason": "不能保證垂線通過 P。"
+        },
+        {
+          "choice": "直接目測 90° 畫線",
+          "truth": false,
+          "reason": "不符合尺規作圖。"
+        },
+        {
+          "choice": "以 P 為圓心畫弧，交 ℓ 於 A、B",
+          "truth": true,
+          "reason": "以 P 為圓心可得到 PA=PB，讓 P 成為 AB 中點。"
+        },
+        {
+          "choice": "以 A、B 為圓心畫弧",
+          "truth": false,
+          "reason": "A、B 尚未產生。"
+        }
+      ],
+      "misconceptionTarget": "先使用尚未定義的點或目測垂直。",
+      "prerequisiteCheck": "會讀 P 在線上。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "無量值單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "半徑取正且使弧與 ℓ 有兩交點即可。",
+      "difficultyReason": "基礎題，辨認線上作法首步。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "建立線上垂線的對稱點。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "32bfb254504984e61023404f92a5da460d0b5c549219b5d5d89da4d86ad92e0e"
+    },
+    {
+      "questionId": "u16-s010-v002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "P 在線外，過 P 作 ℓ 的垂線時，第一個以 P 為圓心的弧應與 ℓ 有幾個不同交點？",
+      "givenConditions": [
+        "P∉ℓ"
+      ],
+      "target": "建立線段端點",
+      "choices": [
+        "0 個",
+        "2 個",
+        "1 個",
+        "3 個"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "兩個交點 A、B 位於 ℓ 上且到 P 等距。",
+      "explanation": "需取得 A、B 兩點，使 PA=PB，才能建立 AB 的中垂線。 圓需穿過直線。 直線與圓一般交於兩點。",
+      "steps": [
+        "圓需穿過直線。",
+        "直線與圓一般交於兩點。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0 個",
+          "truth": false,
+          "reason": "無法取得直線上的等距端點。"
+        },
+        {
+          "choice": "2 個",
+          "truth": true,
+          "reason": "需取得 A、B 兩點，使 PA=PB，才能建立 AB 的中垂線。"
+        },
+        {
+          "choice": "1 個",
+          "truth": false,
+          "reason": "相切時不足以建立線段 AB。"
+        },
+        {
+          "choice": "3 個",
+          "truth": false,
+          "reason": "圓與直線至多有兩個交點。"
+        }
+      ],
+      "misconceptionTarget": "認為相切的一個垂足就足以決定作圖。",
+      "prerequisiteCheck": "知道圓與直線交點數。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "無數值；交點數為整數。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "半徑須大於 P 到 ℓ 的距離，排除相切。",
+      "difficultyReason": "基礎題，辨認作圖可行條件。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "取得兩個線上交點。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "9161aab9a0c5bc731fcda295b92b9c25980d6d9bdb9df66d717603ef8e4affd4"
+    },
+    {
+      "questionId": "u16-s010-v003",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "若 PA=PB，則 P 位於哪一條線上？",
+      "givenConditions": [
+        "A、B 為不同點"
+      ],
+      "target": "使用等距軌跡",
+      "choices": [
+        "直線 AB 上",
+        "AB 的中垂線",
+        "以 A 為圓心的任意圓",
+        "通過 A 的任意垂線"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "P 可在線段上方、下方或中點，但都在同一中垂線。",
+      "explanation": "到兩定點 A、B 等距的點集合是 AB 的中垂線。 將 PA=PB 讀成等距。 套用中垂線軌跡性質。",
+      "steps": [
+        "將 PA=PB 讀成等距。",
+        "套用中垂線軌跡性質。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "直線 AB 上",
+          "truth": false,
+          "reason": "除中點外通常不到兩端等距。"
+        },
+        {
+          "choice": "AB 的中垂線",
+          "truth": true,
+          "reason": "到兩定點 A、B 等距的點集合是 AB 的中垂線。"
+        },
+        {
+          "choice": "以 A 為圓心的任意圓",
+          "truth": false,
+          "reason": "還需固定半徑，且不表達與 B 等距。"
+        },
+        {
+          "choice": "通過 A 的任意垂線",
+          "truth": false,
+          "reason": "位置不唯一且不保證到 B 等距。"
+        }
+      ],
+      "misconceptionTarget": "把等距點誤放在 AB 本身。",
+      "prerequisiteCheck": "知道中垂線定義。",
+      "estimatedTimeSec": "45",
+      "unitAndRoundingCheck": "長度同類且精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "A、B 不同使中垂線唯一。",
+      "difficultyReason": "基礎題，直接使用等距軌跡。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認中垂線。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "a682c30cf0f7cc3042d8f2549d70b00c3e116af2e4f14992429ac4daeb4728e9"
+    },
+    {
+      "questionId": "u16-s010-v004",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-010-perpendicular",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "P 在線外，第一弧交 ℓ 於 A、B；再以 A、B 為圓心作同半徑弧，除了 P 外交於 Q。最後應畫哪條線？",
+      "givenConditions": [
+        "PA=PB",
+        "QA=QB"
+      ],
+      "target": "完成線外垂線",
+      "choices": [
+        "直線 AB",
+        "直線 AQ",
+        "直線 PQ",
+        "直線 BQ"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "AB 位於 ℓ 上，所以 PQ⊥ℓ 且通過 P。",
+      "explanation": "P、Q 都到 A、B 等距，故兩點決定 AB 的中垂線。 P 在 AB 中垂線上。 Q 也在 AB 中垂線上。 連 P、Q。",
+      "steps": [
+        "P 在 AB 中垂線上。",
+        "Q 也在 AB 中垂線上。",
+        "連 P、Q。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "直線 AB",
+          "truth": false,
+          "reason": "這就是原直線 ℓ。"
+        },
+        {
+          "choice": "直線 AQ",
+          "truth": false,
+          "reason": "未必通過 P，也不是 AB 中垂線。"
+        },
+        {
+          "choice": "直線 PQ",
+          "truth": true,
+          "reason": "P、Q 都到 A、B 等距，故兩點決定 AB 的中垂線。"
+        },
+        {
+          "choice": "直線 BQ",
+          "truth": false,
+          "reason": "同樣不一定垂直 ℓ。"
+        }
+      ],
+      "misconceptionTarget": "把弧圓心與答案線端點混淆。",
+      "prerequisiteCheck": "會用兩個等距點決定直線。",
+      "estimatedTimeSec": "85",
+      "unitAndRoundingCheck": "無量值。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "P、Q 為不同點已給，直線唯一。",
+      "difficultyReason": "標準題，從完整中間狀態選最後連線。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "完成線外垂線。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "0e60afbdbf71a9e5b63882b8a7c4799aaf5c7cff319b30156999868aa83f4a2a"
+    },
+    {
+      "questionId": "u16-s010-v005",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "在線上作垂線時，已取得 A、B 使 PA=PB。以 A、B 為圓心作同半徑弧交於 Q。為何 PQ⊥AB？",
+      "givenConditions": [
+        "P 位於 AB 上"
+      ],
+      "target": "用中垂線性質驗證",
+      "choices": [
+        "P、Q 都到 A、B 等距，所以 PQ 是 AB 的中垂線",
+        "因 PQ 看起來豎直",
+        "因 ∠APQ=∠BPQ 就直接等於 90°",
+        "因 AQ=BQ，所以 AQ⊥BQ"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "中垂線定義包含垂直 AB，故 PQ⊥AB。",
+      "explanation": "PA=PB、QA=QB，兩個等距點決定中垂線。 由第一弧得 PA=PB。 由第二組同半徑弧得 QA=QB。 連線即 AB 中垂線。",
+      "steps": [
+        "由第一弧得 PA=PB。",
+        "由第二組同半徑弧得 QA=QB。",
+        "連線即 AB 中垂線。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "P、Q 都到 A、B 等距，所以 PQ 是 AB 的中垂線",
+          "truth": true,
+          "reason": "PA=PB、QA=QB，兩個等距點決定中垂線。"
+        },
+        {
+          "choice": "因 PQ 看起來豎直",
+          "truth": false,
+          "reason": "外觀不是證明。"
+        },
+        {
+          "choice": "因 ∠APQ=∠BPQ 就直接等於 90°",
+          "truth": false,
+          "reason": "角平分不直接表示與 AB 垂直，需全等或中垂線理由。"
+        },
+        {
+          "choice": "因 AQ=BQ，所以 AQ⊥BQ",
+          "truth": false,
+          "reason": "等腰三角形兩腰不必垂直。"
+        }
+      ],
+      "misconceptionTarget": "用目測或錯誤地由等腰推出直角。",
+      "prerequisiteCheck": "理解等距軌跡與兩點定線。",
+      "estimatedTimeSec": "100",
+      "unitAndRoundingCheck": "無量值。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "P 是 AB 中點且 Q 不在 AB 上，足以決定唯一中垂線。",
+      "difficultyReason": "標準題，說明作圖正確性。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "驗證線上垂線。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "d560c12083704371d6756c789f64a20fb1f99fe65a12ac9d3fa226152d523e00"
+    },
+    {
+      "questionId": "u16-s010-v006",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "P 在線外。若第一弧只與 ℓ 相切於 A，後續能否依標準方法作出垂線？",
+      "givenConditions": [
+        "只有一個交點 A"
+      ],
+      "target": "判斷相切邊界",
+      "choices": [
+        "可以，把 A 同時當 A、B",
+        "不能直接依該方法，需增大半徑取得兩個交點 A、B",
+        "可以，直接連 P、A 就已證垂直",
+        "不能，應縮小半徑"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "雖圓半徑到切點在理論上垂直，但只用尺規要先已知切點；此流程不以相切辨識作為可操作依據。",
+      "explanation": "標準等距中垂線流程需要線上的兩個不同端點；增大半徑可得到穿越交點。 辨認目前是相切。 標準流程缺少 B。 增大半徑。",
+      "steps": [
+        "辨認目前是相切。",
+        "標準流程缺少 B。",
+        "增大半徑。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "可以，把 A 同時當 A、B",
+          "truth": false,
+          "reason": "兩點必須不同。"
+        },
+        {
+          "choice": "不能直接依該方法，需增大半徑取得兩個交點 A、B",
+          "truth": true,
+          "reason": "標準等距中垂線流程需要線上的兩個不同端點；增大半徑可得到穿越交點。"
+        },
+        {
+          "choice": "可以，直接連 P、A 就已證垂直",
+          "truth": false,
+          "reason": "圓與直線相切時 PA 確實垂直，但純作圖文字若相切點已精確產生可作；然而標準方法依兩交點，題目問依標準方法。"
+        },
+        {
+          "choice": "不能，應縮小半徑",
+          "truth": false,
+          "reason": "縮小後更不相交。"
+        }
+      ],
+      "misconceptionTarget": "把相切的圖形性質與可執行尺規步驟混為一談。",
+      "prerequisiteCheck": "知道標準過線外點作垂線流程。",
+      "estimatedTimeSec": "115",
+      "unitAndRoundingCheck": "半徑比較精確，無近似。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "答案明確限定『依標準方法』；避免將理論切線捷徑視為已知切點作圖。",
+      "difficultyReason": "標準題，分析邊界與操作性。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "處理第一弧相切。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "f217d29b08fba2ef1f73906c4d5f772345db2c6a4961f8c026a6d6c538ecee92"
+    },
+    {
+      "questionId": "u16-s010-v007",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "在線外作垂線中，若以 A、B 為圓心的兩弧半徑不同，連接 P 與交點 Q 是否仍必垂直 ℓ？",
+      "givenConditions": [
+        "PA=PB",
+        "但 QA≠QB 可能成立"
+      ],
+      "target": "審查第二組弧的等距條件",
+      "choices": [
+        "必然，只要 Q 存在",
+        "必然，因 P 已在中垂線上",
+        "必然，因 A、B 都在 ℓ 上",
+        "不必然，因 Q 未必在 AB 的中垂線上"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "因此第二組弧必須同半徑。",
+      "explanation": "不同半徑給 QA=r1、QB=r2，若 r1≠r2，Q 不等距，PQ 方向無保證。 保留 P 的等距性。 檢查 Q 的距離。 兩點中只有 P 確定位於中垂線。",
+      "steps": [
+        "保留 P 的等距性。",
+        "檢查 Q 的距離。",
+        "兩點中只有 P 確定位於中垂線。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "必然，只要 Q 存在",
+          "truth": false,
+          "reason": "存在交點不代表到兩圓心等距。"
+        },
+        {
+          "choice": "必然，因 P 已在中垂線上",
+          "truth": false,
+          "reason": "只有一個點 P 不能決定中垂線方向。"
+        },
+        {
+          "choice": "必然，因 A、B 都在 ℓ 上",
+          "truth": false,
+          "reason": "這不足以決定 PQ 的角度。"
+        },
+        {
+          "choice": "不必然，因 Q 未必在 AB 的中垂線上",
+          "truth": true,
+          "reason": "不同半徑給 QA=r1、QB=r2，若 r1≠r2，Q 不等距，PQ 方向無保證。"
+        }
+      ],
+      "misconceptionTarget": "認為一個等距點加任意另一點就能定線。",
+      "prerequisiteCheck": "會把圓半徑轉成 QA、QB。",
+      "estimatedTimeSec": "125",
+      "unitAndRoundingCheck": "半徑同單位但數值不同，問題不是換算。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "某些偶然配置可能垂直，但題目問『必然』，故不成立。",
+      "difficultyReason": "進階題，辨認每個等距點的必要性。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "審核第二弧半徑。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "1a24e3f3d942ef820f0047dc63b89157b0ae0eb96900eb973554ace2a061eaee"
+    },
+    {
+      "questionId": "u16-s010-v008",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "已知 P 在線 ℓ 上。某同學先在 ℓ 上任取 A、B，但沒有保證 PA=PB，再作 AB 中垂線。所得直線是否一定通過 P？",
+      "givenConditions": [
+        "A、B 位於 ℓ"
+      ],
+      "target": "檢查 P 是否為中點",
+      "choices": [
+        "一定，因 P、A、B 共線",
+        "一定，任何 AB 中垂線都通過 ℓ 上所有點",
+        "一定，只要 A≠B",
+        "不一定，只有 P 是 AB 中點時才通過 P"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "未保證等距便不能保證通過指定點。",
+      "explanation": "AB 的中垂線與直線 ℓ 的交點是 AB 中點；P 未必是該點。 中垂線過 AB 中點 M。 檢查 P=M 等價於 PA=PB。",
+      "steps": [
+        "中垂線過 AB 中點 M。",
+        "檢查 P=M 等價於 PA=PB。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "一定，因 P、A、B 共線",
+          "truth": false,
+          "reason": "共線不表示 P 在中垂線上。"
+        },
+        {
+          "choice": "一定，任何 AB 中垂線都通過 ℓ 上所有點",
+          "truth": false,
+          "reason": "中垂線只與 ℓ 交於 AB 中點。"
+        },
+        {
+          "choice": "一定，只要 A≠B",
+          "truth": false,
+          "reason": "仍需 PA=PB。"
+        },
+        {
+          "choice": "不一定，只有 P 是 AB 中點時才通過 P",
+          "truth": true,
+          "reason": "AB 的中垂線與直線 ℓ 的交點是 AB 中點；P 未必是該點。"
+        }
+      ],
+      "misconceptionTarget": "把『P 在原直線』誤當『P 是所選線段中點』。",
+      "prerequisiteCheck": "會區分共線與中點。",
+      "estimatedTimeSec": "115",
+      "unitAndRoundingCheck": "無量值。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "A、B 任取允許 P 在外側或偏一邊，提供明確反例。",
+      "difficultyReason": "進階題，找出線上作圖第一步的必要性。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "審查任取端點錯誤。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "f12035b1f862599a0542d719e33fd7ced6a2fd634a84026725c539b273e777bb"
+    },
+    {
+      "questionId": "u16-s010-v009",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形 ABC 中，A 為頂點，想用尺規作 A 到 BC 所在直線的高。此任務等同於什麼？",
+      "givenConditions": [
+        "A 可能在線 BC 外",
+        "BC 可延長"
+      ],
+      "target": "把高線轉成作垂線",
+      "choices": [
+        "過點 A 作直線 BC 的垂線",
+        "作 BC 的中垂線",
+        "平分 ∠A",
+        "複製 ∠B"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "垂足可在 BC 線段上或延長線上。",
+      "explanation": "高線的定義就是從頂點向對邊所在直線作垂線。 選指定點 A。 選已知直線 BC。 套過點作垂線流程。",
+      "steps": [
+        "選指定點 A。",
+        "選已知直線 BC。",
+        "套過點作垂線流程。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "過點 A 作直線 BC 的垂線",
+          "truth": true,
+          "reason": "高線的定義就是從頂點向對邊所在直線作垂線。"
+        },
+        {
+          "choice": "作 BC 的中垂線",
+          "truth": false,
+          "reason": "高不要求通過 BC 中點。"
+        },
+        {
+          "choice": "平分 ∠A",
+          "truth": false,
+          "reason": "角平分線不一定垂直 BC。"
+        },
+        {
+          "choice": "複製 ∠B",
+          "truth": false,
+          "reason": "與高線無直接關係。"
+        }
+      ],
+      "misconceptionTarget": "把高線與中垂線或角平分線混淆。",
+      "prerequisiteCheck": "知道高線定義。",
+      "estimatedTimeSec": "100",
+      "unitAndRoundingCheck": "無量值。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "『BC 所在直線』包含延長線，適用鈍角三角形。",
+      "difficultyReason": "進階題，連結作圖與三角形概念。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "作三角形高線。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "02494d1a76d70ad85c022d6642e36a3370c55f3a1176e998ca8f57a4ee11bef7"
+    },
+    {
+      "questionId": "u16-s010-v010",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "測量人員要從道路外的標記點 P 畫出到筆直道路 ℓ 的最短連線。尺規作圖應求哪一條線？",
+      "givenConditions": [
+        "道路視為直線",
+        "平面歐氏距離"
+      ],
+      "target": "把最短距離轉成垂線",
+      "choices": [
+        "通過 P 且垂直 ℓ 的直線，其與 ℓ 的交點為最近點",
+        "通過 P 且平行 ℓ 的直線",
+        "ℓ 上任一點連 P",
+        "ℓ 的中垂線"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "任何斜線與垂線形成直角三角形，斜線為斜邊而較長。",
+      "explanation": "點到直線的最短距離沿垂線取得。 把道路模型化為直線。 過 P 作垂線。 垂足為最近道路點。",
+      "steps": [
+        "把道路模型化為直線。",
+        "過 P 作垂線。",
+        "垂足為最近道路點。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "通過 P 且垂直 ℓ 的直線，其與 ℓ 的交點為最近點",
+          "truth": true,
+          "reason": "點到直線的最短距離沿垂線取得。"
+        },
+        {
+          "choice": "通過 P 且平行 ℓ 的直線",
+          "truth": false,
+          "reason": "平行線不與道路相交。"
+        },
+        {
+          "choice": "ℓ 上任一點連 P",
+          "truth": false,
+          "reason": "不保證最短。"
+        },
+        {
+          "choice": "ℓ 的中垂線",
+          "truth": false,
+          "reason": "道路不是有限線段，且中垂線對象不明。"
+        }
+      ],
+      "misconceptionTarget": "把直線中垂線與點到直線垂線混淆。",
+      "prerequisiteCheck": "知道點到直線距離。",
+      "estimatedTimeSec": "110",
+      "unitAndRoundingCheck": "實際距離可用公尺，但本題只找方向，無換算。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "忽略道路寬度與地形，題目明示理想筆直道路平面模型。",
+      "difficultyReason": "素養題，最短路徑需求直接對應垂線。",
+      "literacyContextNecessity": "道路救援或測量功能依垂足，情境必要。",
+      "authoringIntent": "規劃最短連線。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "e5473c326b68ffa83b8a60cd88dde75a971a6b9c5a061661bcd5486ea8ef0d9c"
+    },
+    {
+      "questionId": "u16-s010-v011",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "機器人程式要過線外點 P 作垂線。它先以 P 為圓心畫弧，但半徑小於 P 到直線 ℓ 的距離。最先出現的錯誤結果是什麼？",
+      "givenConditions": [
+        "半徑為正"
+      ],
+      "target": "判斷圓與直線位置",
+      "choices": [
+        "只有一個交點",
+        "有兩個交點但不等距",
+        "圓弧與 ℓ 沒有交點，無法產生 A、B",
+        "會直接得到垂足"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "程式應增大開口至 r>d 才得到兩交點。",
+      "explanation": "圓的最近/最遠關係下，半徑小於點線距離，整個圓在直線同側而不相交。 比較半徑 r 與點線距離 d。 r<d。 因此交點數 0。",
+      "steps": [
+        "比較半徑 r 與點線距離 d。",
+        "r<d。",
+        "因此交點數 0。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只有一個交點",
+          "truth": false,
+          "reason": "半徑等於距離時才相切。"
+        },
+        {
+          "choice": "有兩個交點但不等距",
+          "truth": false,
+          "reason": "只要是同一 P 圓上的交點就都到 P 等距。"
+        },
+        {
+          "choice": "圓弧與 ℓ 沒有交點，無法產生 A、B",
+          "truth": true,
+          "reason": "圓的最近/最遠關係下，半徑小於點線距離，整個圓在直線同側而不相交。"
+        },
+        {
+          "choice": "會直接得到垂足",
+          "truth": false,
+          "reason": "無交點不可能得到垂足。"
+        }
+      ],
+      "misconceptionTarget": "混淆小於、等於、大於的交點數。",
+      "prerequisiteCheck": "會比較半徑與點線距離。",
+      "estimatedTimeSec": "120",
+      "unitAndRoundingCheck": "r、d 為同一長度單位；題目是嚴格小於，無邊界近似。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "直線理想無限延伸，結論不受線段端點影響。",
+      "difficultyReason": "素養題，參數設定直接決定作圖是否啟動。",
+      "literacyContextNecessity": "程式半徑是實際可執行性核心。",
+      "authoringIntent": "診斷機器人第一弧。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "ed9d79a74673da40995744aa3aa462ca96cd35f077554e3e867308aad04740ff"
+    },
+    {
+      "questionId": "u16-s010-v012",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "設計圖在點 P 處要求一條與基準線 ℓ 成 90° 的中心線。施工員完成兩組同半徑交弧後，為何應保留弧痕？",
+      "givenConditions": [
+        "P、Q 為等距交點"
+      ],
+      "target": "說明作圖痕跡的稽核用途",
+      "choices": [
+        "弧痕能直接量出 90° 數值",
+        "弧痕會增加線的長度",
+        "沒有弧痕中心線就不垂直",
+        "弧痕可證明 P、Q 分別到 A、B 等距，支持所畫線是中垂線"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "弧痕是品質稽核證據，不是裝飾。",
+      "explanation": "保留圓弧顯示同一開口與交點來源，使第三人可重建證明。 由弧痕辨認圓心 A、B。 同半徑得等距。 連線為中垂線。",
+      "steps": [
+        "由弧痕辨認圓心 A、B。",
+        "同半徑得等距。",
+        "連線為中垂線。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "弧痕能直接量出 90° 數值",
+          "truth": false,
+          "reason": "弧痕提供等距理由，不是量角刻度。"
+        },
+        {
+          "choice": "弧痕會增加線的長度",
+          "truth": false,
+          "reason": "圖上痕跡不改變幾何線長。"
+        },
+        {
+          "choice": "沒有弧痕中心線就不垂直",
+          "truth": false,
+          "reason": "理想結果仍可能垂直，但無法從作圖紀錄驗證。"
+        },
+        {
+          "choice": "弧痕可證明 P、Q 分別到 A、B 等距，支持所畫線是中垂線",
+          "truth": true,
+          "reason": "保留圓弧顯示同一開口與交點來源，使第三人可重建證明。"
+        }
+      ],
+      "misconceptionTarget": "只把作圖痕跡視為多餘線條。",
+      "prerequisiteCheck": "會從痕跡讀取圓心與半徑。",
+      "estimatedTimeSec": "120",
+      "unitAndRoundingCheck": "無數值或單位。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "實務紙面線寬不影響理想幾何；題目問稽核理由。",
+      "difficultyReason": "素養題，施工紀錄的可驗證性依賴保留輔助弧。",
+      "literacyContextNecessity": "品質稽核情境使弧痕的證據功能不可刪除。",
+      "authoringIntent": "說明保留作圖痕跡。",
+      "tags": [
+        "空間與形狀",
+        "過點作垂線",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "6ed3f4210023ee30880b9f936e7e9cba3da70529a99888e4520e6311d4703983"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u16-s010-cr001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-010-perpendicular",
+      "prompt": "已知直線 ℓ 上一點 P。說明只用尺規過P作ℓ的垂線，並解釋作圖依據。",
+      "requiredWork": [
+        "以P為圓心截ℓ得等距兩點A、B。",
+        "以A、B為圓心畫等半徑弧交於Q。",
+        "連PQ。",
+        "用垂直平分線性質說明。"
+      ],
+      "fullCreditSolution": [
+        "以P為圓心畫弧交ℓ於A、B，使PA=PB。",
+        "以A、B為圓心、相同且足夠大的半徑畫弧，交於Q。",
+        "連PQ。P與Q都到A、B等距，所以PQ是AB的垂直平分線；AB在ℓ上，故PQ⊥ℓ。"
+      ],
+      "alternativeSolutions": [
+        "可在ℓ另一側再取第二弧交點R並連QR；該線同樣通過P。"
+      ],
+      "reasoningSteps": [
+        "以P為圓心畫弧交ℓ於A、B，使PA=PB。",
+        "以A、B為圓心、相同且足夠大的半徑畫弧，交於Q。",
+        "連PQ。P與Q都到A、B等距，所以PQ是AB的垂直平分線；AB在ℓ上，故PQ⊥ℓ。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "截出等距A、B、作等弧交Q、連PQ與垂直平分理由完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "作圖正確但等距或正確性說明略缺。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道在直線上取兩點並畫弧，但未確保P是其中點或未完成連線。"
+        },
+        {
+          "score": 0,
+          "criteria": "以目測90°、只畫單弧，或未通過P。"
+        }
+      ],
+      "partialCreditRules": [
+        "作圖正確但等距或正確性說明略缺。",
+        "知道在直線上取兩點並畫弧，但未確保P是其中點或未完成連線。"
+      ],
+      "followThroughPolicy": "若步驟完整但理由只寫『垂直平分線』，可給2分。",
+      "unitAndNotationRules": "垂直符號PQ⊥ℓ；圓規半徑只需保證弧相交。",
+      "answerOnlyPolicy": "只畫結果不述步驟，最多1分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "隨意取A、B而未使PA=PB。",
+        "把Q直接連A或B。"
+      ],
+      "independentReview": {
+        "derivedResult": "先使P成為AB中點，再作AB垂直平分線PQ。",
+        "ambiguity": "A、B可在P兩側任意等距位置；弧交點可取任一側。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "3bac288752e8650c8089af3d83f5a8c78ba37ee8e1fa07a6941b1a0013e94d7b"
+    },
+    {
+      "questionId": "u16-s010-cr002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-construction",
+      "skillId": "compass-perpendicular",
+      "skillOrder": 10,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "已知直線 ℓ 外一點 P。說明如何過P作ℓ的垂線，並指出若以P為圓心的弧只與ℓ相交一次，為何不能繼續。",
+      "requiredWork": [
+        "以P為圓心截ℓ於A、B兩點。",
+        "由A、B作等弧取得另一等距點Q。",
+        "連PQ。",
+        "解釋需要兩個截點。"
+      ],
+      "fullCreditSolution": [
+        "選足夠大的半徑，以P為圓心畫弧交ℓ於A、B。",
+        "以A、B為圓心畫相同半徑弧，取與P不同的交點Q。",
+        "連PQ；P、Q均到A、B等距，所以PQ為AB垂直平分線，且垂直ℓ。",
+        "若只有一個交點，就沒有線段AB，也無法用兩個等距端點決定垂直平分線；需加大半徑。"
+      ],
+      "alternativeSolutions": [
+        "也可直接作出A、B的垂直平分線；因P已在其上，該線即所求。"
+      ],
+      "reasoningSteps": [
+        "選足夠大的半徑，以P為圓心畫弧交ℓ於A、B。",
+        "以A、B為圓心畫相同半徑弧，取與P不同的交點Q。",
+        "連PQ；P、Q均到A、B等距，所以PQ為AB垂直平分線，且垂直ℓ。",
+        "若只有一個交點，就沒有線段AB，也無法用兩個等距端點決定垂直平分線；需加大半徑。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "外點作垂線步驟完整，說明單交點不足及加大半徑修正。"
+        },
+        {
+          "score": 2,
+          "criteria": "方法正確，但單交點原因或半徑修正說明不足。"
+        },
+        {
+          "score": 1,
+          "criteria": "只寫先取A、B再連P到中點，未說中點如何尺規作出。"
+        },
+        {
+          "score": 0,
+          "criteria": "以直尺量最短距離、接受單交點作圖，或無有效內容。"
+        }
+      ],
+      "partialCreditRules": [
+        "方法正確，但單交點原因或半徑修正說明不足。",
+        "只寫先取A、B再連P到中點，未說中點如何尺規作出。"
+      ],
+      "followThroughPolicy": "若忘寫Q但說明作AB垂直平分線且P在其上，可給2分。",
+      "unitAndNotationRules": "ℓ為直線；P不在ℓ上；不得依刻度找中點。",
+      "answerOnlyPolicy": "只寫『加大圓』無後續步驟，最多1分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "半徑太小仍聲稱有兩截點。",
+        "把P與任一截點相連當垂線。"
+      ],
+      "independentReview": {
+        "derivedResult": "以P截出A、B，再作AB垂直平分線通過P；單截點不足。",
+        "ambiguity": "若弧與ℓ相切恰一點，該點確是垂足但純作圖證據仍需另行構造；題目要求標準雙截點法。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "7204ab970569ee8c2cc01666e8dcc846539bd11512eee85102d7c7c1c97fabae"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u16-fig-010-perpendicular",
+      "unitId": "u16",
+      "slot": "s010",
+      "title": "過直線上點與外點作垂線",
+      "altText": "左半圖點P在線ℓ上，以對稱截點A、B和弧交點Q構造垂線；右半圖點R在線m外，以m上兩截點C、D作垂直平分線。",
+      "svgPath": "figures/u16/u16-fig-010-perpendicular.svg",
+      "drawingSpec": {
+        "canvas": {
+          "width": 360,
+          "height": 240,
+          "viewBox": "0 0 360 240"
+        },
+        "coordinateSystem": "左上角為(0,0)，x向右、y向下。",
+        "geometry": "左圖ℓ:y=170，P(92,170)，A(55,170)，B(129,170)，垂線x=92；右圖m:y=175，外點R(270,65)，C(225,175)，D(315,175)，垂線x=270。",
+        "visibleLineRules": "主要邊線使用2.5px黑色實線；輔助線使用1.5px虛線；弧線不得遮住頂點標籤。",
+        "hiddenLineRules": "平面圖無隱藏邊；未畫出的延長線不得由視覺自行推定。",
+        "labels": "各點貼近座標；直線名稱ℓ、m置左端。",
+        "tickMarksAndSymbols": "相等邊以同數量短刻痕表示；直角以小正方形；相等角以同型圓弧。",
+        "units": "示意圖無長度單位，題目另有數值時以題幹為準。",
+        "arrows": "只在延長線或行進方向使用箭頭。",
+        "toScale": false,
+        "notToScaleWarning": "圖形不按比例，請依標記與題目條件判斷。",
+        "mobileLayout": "360×240畫布；最小文字14px；標籤與線段保持至少6px間距。",
+        "answerLeakageControl": "圖中只呈現已知結構與定義標記，不標示題目所求數值或正確選項。"
+      },
+      "svgAssertions": [
+        "ℓ</text>",
+        "m</text>",
+        "M92 45 V205",
+        "M270 65 V205"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "mobileReadability": "360px寬預覽下，頂點、刻痕、直角符號與延長線箭頭仍可辨識。",
+        "answerLeakage": "未顯示任何題目答案；只保留概念所需結構。",
+        "geometryCheck": "已依列出的座標逐項核對端點、交點、刻痕與文字位置。",
+        "reviewNote": "過直線上點與外點作垂線已逐線檢查：左圖ℓ:y=170，P(92,170)，A(55,170)，B(129,170)，垂線x=92；右圖m:y=175，外點R(270,65)，C(225,175)，D(315,175)，垂線x=270。；標籤配置為各點貼近座標；直線名稱ℓ、m置左端。，未依視覺比例暗示未給定量。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "413459d906888330427774d7e9444466d158ffa00e66be16be3da71ad0f9334d"
+    }
+  ],
+  "sourceBatch": "017-u16-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/017-u16-complete/units/u16/s010"
+}

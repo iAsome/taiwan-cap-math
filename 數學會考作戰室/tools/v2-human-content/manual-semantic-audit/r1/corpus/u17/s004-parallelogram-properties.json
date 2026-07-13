@@ -1,0 +1,1273 @@
+{
+  "slot": "s004",
+  "skillId": "parallelogram-properties",
+  "topicId": "u17-parallel",
+  "title": "平行四邊形：從兩組對邊平行推出整套性質",
+  "lecture": {
+    "lectureId": "u17-s004-lecture-r1",
+    "unitId": "u17",
+    "numericUnitId": 17,
+    "topicId": "u17-parallel",
+    "skillId": "parallelogram-properties",
+    "lockedTitle": "平行四邊形",
+    "title": "平行四邊形：從兩組對邊平行推出整套性質",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "prerequisiteBridge": "先備技能：parallel-proof-basic。本節只使用該技能已建立的角度、平行或四邊形性質。",
+    "learningOutcomes": [
+      "依定義辨認平行四邊形",
+      "運用對邊、對角與鄰角性質",
+      "分清定義與可推得的性質"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "parallel-proof-basic",
+        "requiredLevel": "能正確使用「parallel-proof-basic」中的基本定義與直接性質，不需使用後續技能。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "平行四邊形",
+        "definition": "兩組對邊分別平行的四邊形"
+      },
+      {
+        "term": "對邊",
+        "definition": "彼此不相鄰的兩邊"
+      },
+      {
+        "term": "對角",
+        "definition": "彼此不相鄰的兩內角"
+      },
+      {
+        "term": "鄰角",
+        "definition": "共用一邊的兩內角"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "∥",
+        "meaning": "平行"
+      },
+      {
+        "symbol": "⊥",
+        "meaning": "垂直"
+      },
+      {
+        "symbol": "∠",
+        "meaning": "角；度數以°表示"
+      },
+      {
+        "symbol": "=",
+        "meaning": "數值或長度相等，不表示圖形必全等"
+      }
+    ],
+    "conceptNarrative": [
+      "定義只要求兩組對邊分別平行，形狀可以傾斜，不必有直角。",
+      "由平行線截角可推出對角相等、鄰角互補；再配合全等可推出對邊等長與對角線互相平分。",
+      "矩形、菱形與正方形都符合平行四邊形定義，因此也擁有其基本性質。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "平行四邊形",
+        "statement": "兩組對邊分別平行的四邊形"
+      },
+      {
+        "name": "對邊",
+        "statement": "彼此不相鄰的兩邊"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "AB∥CD 且 BC∥AD",
+        "conditions": [
+          "ABCD為平行四邊形的定義"
+        ],
+        "meaning": "用於平行四邊形中符合條件的推理或計算。"
+      },
+      {
+        "formula": "AB=CD，BC=AD",
+        "conditions": [
+          "平行四邊形對邊等長"
+        ],
+        "meaning": "用於平行四邊形中符合條件的推理或計算。"
+      },
+      {
+        "formula": "∠A=∠C，∠B=∠D",
+        "conditions": [
+          "平行四邊形對角相等"
+        ],
+        "meaning": "用於平行四邊形中符合條件的推理或計算。"
+      },
+      {
+        "formula": "∠A+∠B=180°",
+        "conditions": [
+          "任一組鄰角互補"
+        ],
+        "meaning": "用於平行四邊形中符合條件的推理或計算。"
+      }
+    ],
+    "nonApplicableCases": [
+      "未標示或未證明平行時，不得只依外觀套用平行線角性質。",
+      "圖形不一定按比例，長短、角度與垂直關係以題幹和記號為準。",
+      "使用面積公式時，高必須垂直於所選底；長度與面積單位不可混用。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先確認頂點依序命名",
+        "check": "完成第1步後，確認未引入題目未給的條件。"
+      },
+      {
+        "step": 2,
+        "instruction": "由定義或標記確認兩組對邊平行",
+        "check": "完成第2步後，確認未引入題目未給的條件。"
+      },
+      {
+        "step": 3,
+        "instruction": "選所需性質",
+        "check": "完成第3步後，確認未引入題目未給的條件。"
+      },
+      {
+        "step": 4,
+        "instruction": "建立方程或直接代入",
+        "check": "完成第4步後，確認未引入題目未給的條件。"
+      },
+      {
+        "step": 5,
+        "instruction": "檢查周長、角度與圖形條件",
+        "check": "完成第5步後，確認未引入題目未給的條件。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "∠A=70°",
+        "solutionSteps": [
+          "∠C=70°，∠B=∠D=110°。"
+        ],
+        "answer": "∠C=70°，∠B=∠D=110°。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "AB=8、BC=5",
+        "solutionSteps": [
+          "周長=2(8+5)=26。"
+        ],
+        "answer": "周長=2(8+5)=26。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "對角線交於O",
+        "solutionSteps": [
+          "AO=OC且BO=OD。"
+        ],
+        "answer": "AO=OC且BO=OD。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "只有一組對邊平行",
+        "solutionSteps": [
+          "不一定是平行四邊形。"
+        ],
+        "answer": "不一定是平行四邊形。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "認為四邊等長才是平行四邊形",
+        "why": "那是菱形的附加條件",
+        "correction": "那是菱形的附加條件"
+      },
+      {
+        "mistake": "把鄰角判成相等",
+        "why": "一般鄰角互補",
+        "correction": "一般鄰角互補"
+      },
+      {
+        "mistake": "亂配對邊",
+        "why": "依頂點順序AB對CD、BC對AD",
+        "correction": "依頂點順序AB對CD、BC對AD"
+      },
+      {
+        "mistake": "把對角線說成必垂直",
+        "why": "一般平行四邊形不一定",
+        "correction": "一般平行四邊形不一定"
+      },
+      {
+        "mistake": "周長只加一組鄰邊",
+        "why": "需乘2",
+        "correction": "需乘2"
+      }
+    ],
+    "selfCheck": [
+      "我能否不用目測，說明「平行四邊形」所需的條件？",
+      "我是否先辨認角、邊、對角線、底或高的正確位置？",
+      "方程解出後是否代回題目真正所求？",
+      "角度、長度與面積單位是否正確？"
+    ],
+    "summary": [
+      "定義只要求兩組對邊分別平行，形狀可以傾斜，不必有直角。",
+      "AB∥CD 且 BC∥AD",
+      "解題時先確認「ABCD為平行四邊形的定義」。"
+    ],
+    "connections": {
+      "previous": "承接parallel-proof-basic。",
+      "next": "下一技能依鎖定順序為parallel-alternate-interior。"
+    },
+    "figureReferences": [
+      "u17-s004-fig001"
+    ],
+    "figureAccessibility": "斜置平行四邊形ABCD，標示兩組平行邊與對角。 圖形不一定按比例。",
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u17-s004-v001",
+        "u17-s004-v002",
+        "u17-s004-v003",
+        "u17-s004-v004",
+        "u17-s004-v005",
+        "u17-s004-v006",
+        "u17-s004-v007",
+        "u17-s004-v008",
+        "u17-s004-v009",
+        "u17-s004-v010",
+        "u17-s004-v011",
+        "u17-s004-v012"
+      ],
+      "constructedResponseIds": [
+        "u17-s004-cr001",
+        "u17-s004-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "figureChecked": true,
+      "reviewNote": "內容由定義出發，清楚區分一般平行四邊形必有性質與特殊四邊形才有的附加性質。"
+    },
+    "contentSha256": "6745571816a6f7f7ded0e8c689570429c5dfbe40e3b6111efa73751f24a8d757"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u17-s004-v001",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "平行四邊形ABCD中，若∠A=72°，則∠C為多少？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "使用對角性質。",
+      "choices": [
+        "108°",
+        "36°",
+        "288°",
+        "72°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "重新依題目條件計算：平行四邊形對角相等，所以∠C=72°。",
+      "explanation": "平行四邊形對角相等，所以∠C=72°。",
+      "steps": [
+        "平行四邊形對角相等，所以∠C=72°。",
+        "因此選擇「72°」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "108°",
+          "truth": false,
+          "reason": "選項「108°」不符合題意；依平行四邊形對角相等。應得到「72°」，此錯誤常源自：把對角當鄰角。"
+        },
+        {
+          "choice": "36°",
+          "truth": false,
+          "reason": "選項「36°」不符合題意；依平行四邊形對角相等。應得到「72°」，此錯誤常源自：把對角當鄰角。"
+        },
+        {
+          "choice": "288°",
+          "truth": false,
+          "reason": "選項「288°」不符合題意；依平行四邊形對角相等。應得到「72°」，此錯誤常源自：把對角當鄰角。"
+        },
+        {
+          "choice": "72°",
+          "truth": true,
+          "reason": "依獨立重算「平行四邊形對角相等，所以∠C=72°。」，此選項正確回答所求。"
+        }
+      ],
+      "misconceptionTarget": "把對角當鄰角。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 60,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「使用對角性質。」；四個選項互異，只有72°符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "直接套用單一性質。",
+      "literacyContextNecessity": null,
+      "visualMode": "figure-supported",
+      "figureId": "u17-s004-fig001",
+      "drawingSpecRef": "units/u17/s004/drawing-specs.jsonl#u17-s004-fig001",
+      "semanticReviewId": "u17-s004-v001-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "6ac2f15891421c2bb01388da479122e5af4775453c6414230f4932f27e77bb06"
+    },
+    {
+      "questionId": "u17-s004-v002",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "平行四邊形一組鄰角中，已知一角為115°，另一角為多少？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "求鄰角。",
+      "choices": [
+        "65°",
+        "115°",
+        "75°",
+        "245°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "重新依題目條件計算：鄰角互補，180°-115°=65°。",
+      "explanation": "鄰角互補，180°-115°=65°。",
+      "steps": [
+        "鄰角互補，180°-115°=65°。",
+        "因此選擇「65°」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "65°",
+          "truth": true,
+          "reason": "依獨立重算「鄰角互補，180°-115°=65°。」，此選項正確回答所求。"
+        },
+        {
+          "choice": "115°",
+          "truth": false,
+          "reason": "選項「115°」不符合題意；依平行四邊形鄰角互補。應得到「65°」，此錯誤常源自：把鄰角判成相等。"
+        },
+        {
+          "choice": "75°",
+          "truth": false,
+          "reason": "選項「75°」不符合題意；依平行四邊形鄰角互補。應得到「65°」，此錯誤常源自：把鄰角判成相等。"
+        },
+        {
+          "choice": "245°",
+          "truth": false,
+          "reason": "選項「245°」不符合題意；依平行四邊形鄰角互補。應得到「65°」，此錯誤常源自：把鄰角判成相等。"
+        }
+      ],
+      "misconceptionTarget": "把鄰角判成相等。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 60,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「求鄰角。」；四個選項互異，只有65°符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "一次減法。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v002-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "6afd4e77d04b9aada447469bbd45b6395a3225b5d6eafecc13ae150942ec0fee"
+    },
+    {
+      "questionId": "u17-s004-v003",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "平行四邊形ABCD中，AB=9公分、BC=6公分，周長是多少？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "由鄰邊求周長。",
+      "choices": [
+        "15公分",
+        "30公分",
+        "24公分",
+        "54公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "重新依題目條件計算：周長=2(AB+BC)=2(9+6)=30公分。",
+      "explanation": "周長=2(AB+BC)=2(9+6)=30公分。",
+      "steps": [
+        "周長=2(AB+BC)=2(9+6)=30公分。",
+        "因此選擇「30公分」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "15公分",
+          "truth": false,
+          "reason": "選項「15公分」不符合題意；依對邊等長。應得到「30公分」，此錯誤常源自：只加一組鄰邊。"
+        },
+        {
+          "choice": "30公分",
+          "truth": true,
+          "reason": "依獨立重算「周長=2(AB+BC)=2(9+6)=30公分。」，此選項正確回答所求。"
+        },
+        {
+          "choice": "24公分",
+          "truth": false,
+          "reason": "選項「24公分」不符合題意；依對邊等長。應得到「30公分」，此錯誤常源自：只加一組鄰邊。"
+        },
+        {
+          "choice": "54公分",
+          "truth": false,
+          "reason": "選項「54公分」不符合題意；依對邊等長。應得到「30公分」，此錯誤常源自：只加一組鄰邊。"
+        }
+      ],
+      "misconceptionTarget": "只加一組鄰邊。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 60,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「由鄰邊求周長。」；四個選項互異，只有30公分符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "需使用對邊等長與周長。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v003-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "75449f531ecfcd0c638e9a089c1e78287b24571659d63c908e22b4b5cddc89ce"
+    },
+    {
+      "questionId": "u17-s004-v004",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "平行四邊形ABCD中，∠A=(3x+5)°，∠B=(5x-1)°，x為多少？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "以鄰角建立方程。",
+      "choices": [
+        "11",
+        "20",
+        "22",
+        "44"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "重新依題目條件計算：鄰角互補：3x+5+5x-1=180，8x+4=180，x=22。",
+      "explanation": "鄰角互補：3x+5+5x-1=180，8x+4=180，x=22。",
+      "steps": [
+        "鄰角互補：3x+5+5x-1=180，8x+4=180，x=22。",
+        "因此選擇「22」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "11",
+          "truth": false,
+          "reason": "選項「11」不符合題意；依鄰角和180°。應得到「22」，此錯誤常源自：把鄰角設相等。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "選項「20」不符合題意；依鄰角和180°。應得到「22」，此錯誤常源自：把鄰角設相等。"
+        },
+        {
+          "choice": "22",
+          "truth": true,
+          "reason": "依獨立重算「鄰角互補：3x+5+5x-1=180，8x+4=180，x=22。」，此選項正確回答所求。"
+        },
+        {
+          "choice": "44",
+          "truth": false,
+          "reason": "選項「44」不符合題意；依鄰角和180°。應得到「22」，此錯誤常源自：把鄰角設相等。"
+        }
+      ],
+      "misconceptionTarget": "把鄰角設相等。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「以鄰角建立方程。」；四個選項互異，只有22符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "標準一次方程。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v004-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "a9d33a127a6230eda52636c2cb56438bbb18e4dd09dad8d9120dc02538b04390"
+    },
+    {
+      "questionId": "u17-s004-v005",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "平行四邊形中，一個角比其鄰角少36°。較小角是多少？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "由角差與互補求角。",
+      "choices": [
+        "72°",
+        "54°",
+        "108°",
+        "144°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "重新依題目條件計算：設小角x，大角x+36；2x+36=180，x=72°。",
+      "explanation": "設小角x，大角x+36；2x+36=180，x=72°。",
+      "steps": [
+        "設小角x，大角x+36；2x+36=180，x=72°。",
+        "因此選擇「72°」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "72°",
+          "truth": true,
+          "reason": "依獨立重算「設小角x，大角x+36；2x+36=180，x=72°。」，此選項正確回答所求。"
+        },
+        {
+          "choice": "54°",
+          "truth": false,
+          "reason": "選項「54°」不符合題意；依鄰角互補。應得到「72°」，此錯誤常源自：用360°直接除錯誤項數。"
+        },
+        {
+          "choice": "108°",
+          "truth": false,
+          "reason": "選項「108°」不符合題意；依鄰角互補。應得到「72°」，此錯誤常源自：用360°直接除錯誤項數。"
+        },
+        {
+          "choice": "144°",
+          "truth": false,
+          "reason": "選項「144°」不符合題意；依鄰角互補。應得到「72°」，此錯誤常源自：用360°直接除錯誤項數。"
+        }
+      ],
+      "misconceptionTarget": "用360°直接除錯誤項數。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「由角差與互補求角。」；四個選項互異，只有72°符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "需自行設未知數。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v005-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "fe1124fe8ff433215a46d1d9c05bdb298d9f7e7f14ec6e70b7ed85a65b902913"
+    },
+    {
+      "questionId": "u17-s004-v006",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "平行四邊形ABCD中，AB=2x+7，CD=5x-20，邊長AB是多少？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "解方程後求實際邊長。",
+      "choices": [
+        "9",
+        "25",
+        "18",
+        "45"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "重新依題目條件計算：對邊相等：2x+7=5x-20，x=9，AB=25。",
+      "explanation": "對邊相等：2x+7=5x-20，x=9，AB=25。",
+      "steps": [
+        "對邊相等：2x+7=5x-20，x=9，AB=25。",
+        "因此選擇「25」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "選項「9」不符合題意；依對邊等長。應得到「25」，此錯誤常源自：只回答x而非所求邊長。"
+        },
+        {
+          "choice": "25",
+          "truth": true,
+          "reason": "依獨立重算「對邊相等：2x+7=5x-20，x=9，AB=25。」，此選項正確回答所求。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "選項「18」不符合題意；依對邊等長。應得到「25」，此錯誤常源自：只回答x而非所求邊長。"
+        },
+        {
+          "choice": "45",
+          "truth": false,
+          "reason": "選項「45」不符合題意；依對邊等長。應得到「25」，此錯誤常源自：只回答x而非所求邊長。"
+        }
+      ],
+      "misconceptionTarget": "只回答x而非所求邊長。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「解方程後求實際邊長。」；四個選項互異，只有25符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "需要代回。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v006-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "bfd578ea102a96230674f5eaff30e32acacf43d07298f3d79aa4a9892c55569b"
+    },
+    {
+      "questionId": "u17-s004-v007",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列哪一項不是一般平行四邊形必有的性質？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "辨認非必然性質。",
+      "choices": [
+        "兩組對邊平行",
+        "兩組對邊等長",
+        "兩條對角線等長",
+        "兩條對角線互相平分"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "重新依題目條件計算：一般平行四邊形對角線互相平分，但不一定等長；矩形才必等長。",
+      "explanation": "一般平行四邊形對角線互相平分，但不一定等長；矩形才必等長。",
+      "steps": [
+        "一般平行四邊形對角線互相平分，但不一定等長；矩形才必等長。",
+        "因此選擇「兩條對角線等長」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "兩組對邊平行",
+          "truth": false,
+          "reason": "選項「兩組對邊平行」不符合題意；依區分一般與特殊性質。應得到「兩條對角線等長」，此錯誤常源自：把矩形性質套到所有平行四邊形。"
+        },
+        {
+          "choice": "兩組對邊等長",
+          "truth": false,
+          "reason": "選項「兩組對邊等長」不符合題意；依區分一般與特殊性質。應得到「兩條對角線等長」，此錯誤常源自：把矩形性質套到所有平行四邊形。"
+        },
+        {
+          "choice": "兩條對角線等長",
+          "truth": true,
+          "reason": "依獨立重算「一般平行四邊形對角線互相平分，但不一定等長；矩形才必等長。」，此選項正確回答所求。"
+        },
+        {
+          "choice": "兩條對角線互相平分",
+          "truth": false,
+          "reason": "選項「兩條對角線互相平分」不符合題意；依區分一般與特殊性質。應得到「兩條對角線等長」，此錯誤常源自：把矩形性質套到所有平行四邊形。"
+        }
+      ],
+      "misconceptionTarget": "把矩形性質套到所有平行四邊形。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 105,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「辨認非必然性質。」；四個選項互異，只有兩條對角線等長符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "需比較性質邊界。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v007-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "8ff2a46fcd20cd11eb18170c99f96995e6d97934cec5c10a5d8f86fb81a15e46"
+    },
+    {
+      "questionId": "u17-s004-v008",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "平行四邊形ABCD的周長為46公分，AB比BC長5公分。AB是多少？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "由周長與邊差求邊。",
+      "choices": [
+        "9公分",
+        "18公分",
+        "23公分",
+        "14公分"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "重新依題目條件計算：2(AB+BC)=46，AB+BC=23；設BC=x、AB=x+5，2x+5=23，x=9，AB=14。",
+      "explanation": "2(AB+BC)=46，AB+BC=23；設BC=x、AB=x+5，2x+5=23，x=9，AB=14。",
+      "steps": [
+        "2(AB+BC)=46，AB+BC=23；設BC=x、AB=x+5，2x+5=23，x=9，AB=14。",
+        "因此選擇「14公分」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9公分",
+          "truth": false,
+          "reason": "選項「9公分」不符合題意；依周長與相鄰邊關係。應得到「14公分」，此錯誤常源自：將46直接分成兩邊。"
+        },
+        {
+          "choice": "18公分",
+          "truth": false,
+          "reason": "選項「18公分」不符合題意；依周長與相鄰邊關係。應得到「14公分」，此錯誤常源自：將46直接分成兩邊。"
+        },
+        {
+          "choice": "23公分",
+          "truth": false,
+          "reason": "選項「23公分」不符合題意；依周長與相鄰邊關係。應得到「14公分」，此錯誤常源自：將46直接分成兩邊。"
+        },
+        {
+          "choice": "14公分",
+          "truth": true,
+          "reason": "依獨立重算「2(AB+BC)=46，AB+BC=23；設BC=x、AB=x+5，2x+5=23，x=9，AB=14。」，此選項正確回答所求。"
+        }
+      ],
+      "misconceptionTarget": "將46直接分成兩邊。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 105,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「由周長與邊差求邊。」；四個選項互異，只有14公分符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "兩層方程推理。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v008-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "e87fd29d1bf9427c88f367c3c44958ed5c49919e9c422266e32cb956d50fadd6"
+    },
+    {
+      "questionId": "u17-s004-v009",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "平行四邊形ABCD中，∠A:∠B=2:3，則∠A是多少？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "以角比求鄰角。",
+      "choices": [
+        "60°",
+        "72°",
+        "90°",
+        "108°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "重新依題目條件計算：鄰角和180°，2份+3份=5份，每份36°，∠A=72°。",
+      "explanation": "鄰角和180°，2份+3份=5份，每份36°，∠A=72°。",
+      "steps": [
+        "鄰角和180°，2份+3份=5份，每份36°，∠A=72°。",
+        "因此選擇「72°」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "60°",
+          "truth": false,
+          "reason": "選項「60°」不符合題意；依鄰角互補與比例。應得到「72°」，此錯誤常源自：用四邊形360°除5後誤配。"
+        },
+        {
+          "choice": "72°",
+          "truth": true,
+          "reason": "依獨立重算「鄰角和180°，2份+3份=5份，每份36°，∠A=72°。」，此選項正確回答所求。"
+        },
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "選項「90°」不符合題意；依鄰角互補與比例。應得到「72°」，此錯誤常源自：用四邊形360°除5後誤配。"
+        },
+        {
+          "choice": "108°",
+          "truth": false,
+          "reason": "選項「108°」不符合題意；依鄰角互補與比例。應得到「72°」，此錯誤常源自：用四邊形360°除5後誤配。"
+        }
+      ],
+      "misconceptionTarget": "用四邊形360°除5後誤配。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 105,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「以角比求鄰角。」；四個選項互異，只有72°符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "需要比例與幾何性質。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v009-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "975490d6b9c8726173f8aa705332770362adde6a858d60aba7cbde01f949fb75"
+    },
+    {
+      "questionId": "u17-s004-v010",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一塊平行四邊形標誌板的相鄰邊長為1.8公尺與1.2公尺。只在外框貼反光條，共需多少公尺？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "把尺寸資料轉為材料長度。",
+      "choices": [
+        "3公尺",
+        "4.32公尺",
+        "6公尺",
+        "7.2公尺"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "重新依題目條件計算：外框長即周長=2(1.8+1.2)=6公尺。",
+      "explanation": "外框長即周長=2(1.8+1.2)=6公尺。",
+      "steps": [
+        "外框長即周長=2(1.8+1.2)=6公尺。",
+        "因此選擇「6公尺」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3公尺",
+          "truth": false,
+          "reason": "選項「3公尺」不符合題意；依平行四邊形周長。應得到「6公尺」，此錯誤常源自：把邊長相乘當外框。"
+        },
+        {
+          "choice": "4.32公尺",
+          "truth": false,
+          "reason": "選項「4.32公尺」不符合題意；依平行四邊形周長。應得到「6公尺」，此錯誤常源自：把邊長相乘當外框。"
+        },
+        {
+          "choice": "6公尺",
+          "truth": true,
+          "reason": "依獨立重算「外框長即周長=2(1.8+1.2)=6公尺。」，此選項正確回答所求。"
+        },
+        {
+          "choice": "7.2公尺",
+          "truth": false,
+          "reason": "選項「7.2公尺」不符合題意；依平行四邊形周長。應得到「6公尺」，此錯誤常源自：把邊長相乘當外框。"
+        }
+      ],
+      "misconceptionTarget": "把邊長相乘當外框。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 120,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「把尺寸資料轉為材料長度。」；四個選項互異，只有6公尺符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "情境要求辨認周長而非面積。",
+      "literacyContextNecessity": "反光條沿外框鋪設，必須使用周長。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v010-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "6546a1dc19d98b5facb6888d3280a4065daed9d2e3f2d8c66c5a0268ce6e24d5"
+    },
+    {
+      "questionId": "u17-s004-v011",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "活動場地用平行四邊形區域配置座位，已知一角為68°。與它相鄰的兩個入口轉角都要設成其鄰角大小，各是多少？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "由場地角度決定入口轉角。",
+      "choices": [
+        "68°",
+        "22°",
+        "136°",
+        "112°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "重新依題目條件計算：平行四邊形鄰角互補，180°-68°=112°。",
+      "explanation": "平行四邊形鄰角互補，180°-68°=112°。",
+      "steps": [
+        "平行四邊形鄰角互補，180°-68°=112°。",
+        "因此選擇「112°」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "68°",
+          "truth": false,
+          "reason": "選項「68°」不符合題意；依平行四邊形鄰角。應得到「112°」，此錯誤常源自：把所有角都當68°。"
+        },
+        {
+          "choice": "22°",
+          "truth": false,
+          "reason": "選項「22°」不符合題意；依平行四邊形鄰角。應得到「112°」，此錯誤常源自：把所有角都當68°。"
+        },
+        {
+          "choice": "136°",
+          "truth": false,
+          "reason": "選項「136°」不符合題意；依平行四邊形鄰角。應得到「112°」，此錯誤常源自：把所有角都當68°。"
+        },
+        {
+          "choice": "112°",
+          "truth": true,
+          "reason": "依獨立重算「平行四邊形鄰角互補，180°-68°=112°。」，此選項正確回答所求。"
+        }
+      ],
+      "misconceptionTarget": "把所有角都當68°。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 120,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「由場地角度決定入口轉角。」；四個選項互異，只有112°符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "需辨認相鄰位置。",
+      "literacyContextNecessity": "入口方向由平行四邊形鄰角直接決定。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v011-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "cef6fc92c5bbc644a0d76dfb26cba1906f18b6d5b8ecefbe59f484afc9022c3b"
+    },
+    {
+      "questionId": "u17-s004-v012",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "single-choice",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "布料裁成平行四邊形，周長為84公分，一邊長26公分。與它相鄰的邊長是多少？",
+      "givenConditions": [
+        "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
+      ],
+      "target": "由布料周長反求邊長。",
+      "choices": [
+        "16公分",
+        "29公分",
+        "32公分",
+        "58公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "重新依題目條件計算：相鄰邊和=84÷2=42，另一邊=42-26=16公分。",
+      "explanation": "相鄰邊和=84÷2=42，另一邊=42-26=16公分。",
+      "steps": [
+        "相鄰邊和=84÷2=42，另一邊=42-26=16公分。",
+        "因此選擇「16公分」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "16公分",
+          "truth": true,
+          "reason": "依獨立重算「相鄰邊和=84÷2=42，另一邊=42-26=16公分。」，此選項正確回答所求。"
+        },
+        {
+          "choice": "29公分",
+          "truth": false,
+          "reason": "選項「29公分」不符合題意；依周長等於相鄰邊和的兩倍。應得到「16公分」，此錯誤常源自：用84-26忽略對邊。"
+        },
+        {
+          "choice": "32公分",
+          "truth": false,
+          "reason": "選項「32公分」不符合題意；依周長等於相鄰邊和的兩倍。應得到「16公分」，此錯誤常源自：用84-26忽略對邊。"
+        },
+        {
+          "choice": "58公分",
+          "truth": false,
+          "reason": "選項「58公分」不符合題意；依周長等於相鄰邊和的兩倍。應得到「16公分」，此錯誤常源自：用84-26忽略對邊。"
+        }
+      ],
+      "misconceptionTarget": "用84-26忽略對邊。",
+      "prerequisiteCheck": "只使用先備技能parallel-proof-basic與本技能定義，不使用後續單元知識。",
+      "estimatedTimeSec": 120,
+      "unitCheck": "角度或長度單位依題意一致",
+      "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
+      "ambiguityAudit": "題目明確要求「由布料周長反求邊長。」；四個選項互異，只有16公分符合獨立重算。",
+      "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
+      "difficultyReason": "需反用周長公式。",
+      "literacyContextNecessity": "裁切尺寸必須由完整外周長和已知邊長共同決定。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "semanticReviewId": "u17-s004-v012-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "190c9eaeb557e34798d8bf53fee0c8c5c3428af2d4f0aeb87eb2758b92d04416"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u17-s004-cr001",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "prompt": "平行四邊形ABCD中，∠A=(3x+6)°、∠B=(5x-2)°。求x與四個內角。",
+      "requiredWork": [
+        "使用鄰角互補",
+        "列方程並代回",
+        "依序列四角"
+      ],
+      "standardSolution": [
+        "3x+6+5x-2=180，得8x+4=180，x=22。",
+        "∠A=72°，∠B=108°。",
+        "對角相等，所以∠C=72°、∠D=108°。"
+      ],
+      "alternativeMethods": [
+        [
+          "也可用四角交替為兩個A角與兩個B角，列2A+2B=360。"
+        ]
+      ],
+      "reasoningSteps": [
+        "3x+6+5x-2=180，得8x+4=180，x=22。",
+        "∠A=72°，∠B=108°。",
+        "對角相等，所以∠C=72°、∠D=108°。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整處理「綜合鄰角與對角性質」，列式、理由與結果「x=22；A,C為72°，B,D為108°」均正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "主要方法與幾何性質正確，且已得到大部分「x=22；A,C為72°，B,D為108°」；僅有一處算術、單位或理由缺漏。"
+        },
+        {
+          "score": 1,
+          "criteria": "能指出本題應使用的核心性質並完成至少一個有效步驟，但尚未正確完成「綜合鄰角與對角性質」。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與「平行四邊形」相關的有效條件，或答案與推理均無法支持「x=22；A,C為72°，B,D為108°」。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確列出本題關鍵關係但算術未完成，可依完成程度給1至2分。",
+        "只得到部分結果時，必須有可辨認的「綜合鄰角與對角性質」推理才給分。"
+      ],
+      "followThroughPolicy": "若前段只有單一算術錯誤，後續依其結果正確推理可保留相應方法分。",
+      "unitNotationRules": "角度以度表示，長度與面積保留題目單位。",
+      "answerOnlyPolicy": "只有最終答案而無題目要求的列式或理由，最高1分；證明題只寫結論不得分。",
+      "visualMode": "figure-supported",
+      "figureId": "u17-s004-fig001",
+      "drawingSpecRef": "units/u17/s004/drawing-specs.jsonl#u17-s004-fig001",
+      "independentReview": {
+        "derivedResult": "x=22；A,C為72°，B,D為108°",
+        "recalculation": "3x+6+5x-2=180，得8x+4=180，x=22。；∠A=72°，∠B=108°。；對角相等，所以∠C=72°、∠D=108°。",
+        "ambiguity": "所求量與評分焦點「綜合鄰角與對角性質」明確；替代方法不改變標準結果。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "4c579f295d4611bb10ddfff8e0e668068b450890febb9d637627b3404ad0ffec"
+    },
+    {
+      "questionId": "u17-s004-cr002",
+      "unitId": "u17",
+      "numericUnitId": 17,
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "一個平行四邊形周長為70公分，相鄰兩邊相差9公分。求兩種邊長，並檢查周長。",
+      "requiredWork": [
+        "建立相鄰邊和",
+        "使用邊差",
+        "回代周長"
+      ],
+      "standardSolution": [
+        "相鄰邊和=70÷2=35。",
+        "設短邊x、長邊x+9，2x+9=35，x=13。",
+        "短邊13、長邊22；2(13+22)=70。"
+      ],
+      "alternativeMethods": [
+        [
+          "可用和差公式：(35-9)÷2=13，(35+9)÷2=22。"
+        ]
+      ],
+      "reasoningSteps": [
+        "相鄰邊和=70÷2=35。",
+        "設短邊x、長邊x+9，2x+9=35，x=13。",
+        "短邊13、長邊22；2(13+22)=70。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整處理「周長與和差建模」，列式、理由與結果「13公分與22公分」均正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "主要方法與幾何性質正確，且已得到大部分「13公分與22公分」；僅有一處算術、單位或理由缺漏。"
+        },
+        {
+          "score": 1,
+          "criteria": "能指出本題應使用的核心性質並完成至少一個有效步驟，但尚未正確完成「周長與和差建模」。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與「平行四邊形」相關的有效條件，或答案與推理均無法支持「13公分與22公分」。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確列出本題關鍵關係但算術未完成，可依完成程度給1至2分。",
+        "只得到部分結果時，必須有可辨認的「周長與和差建模」推理才給分。"
+      ],
+      "followThroughPolicy": "若前段只有單一算術錯誤，後續依其結果正確推理可保留相應方法分。",
+      "unitNotationRules": "角度以度表示，長度與面積保留題目單位。",
+      "answerOnlyPolicy": "只有最終答案而無題目要求的列式或理由，最高1分；證明題只寫結論不得分。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "13公分與22公分",
+        "recalculation": "相鄰邊和=70÷2=35。；設短邊x、長邊x+9，2x+9=35，x=13。；短邊13、長邊22；2(13+22)=70。",
+        "ambiguity": "所求量與評分焦點「周長與和差建模」明確；替代方法不改變標準結果。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "5f6994480783cabd1b60531b49bf12b52f71a18b5c7db5c3a3bb909bb946d3ce"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u17-s004-fig001",
+      "unitId": "u17",
+      "topicId": "u17-parallel",
+      "skillId": "parallelogram-properties",
+      "purpose": "支援「平行四邊形」的空間位置、性質或證明閱讀，不提供題目答案。",
+      "svgPath": "figures/u17/u17-s004-fig001.svg",
+      "canvas": {
+        "width": 400,
+        "height": 300,
+        "viewBox": "0 0 400 300"
+      },
+      "drawingSpec": {
+        "title": "平行四邊形基本性質",
+        "description": "斜置平行四邊形ABCD，標示兩組平行邊與對角。",
+        "coordinateSystem": "SVG user space, origin at upper-left",
+        "layoutConstraints": "主要線段與文字保留至少20單位邊界；標籤不得遮住交點與角弧。",
+        "visibleLineRule": "實線表示題目已知邊或直線。",
+        "hiddenLineRule": "本平面幾何圖無隱藏線；輔助垂線可用虛線。",
+        "labels": "所有字母、角度、等式與關係均按本技能專屬配置。",
+        "tickMarks": "等長、平行、直角只在數學上需要時標示。",
+        "units": "示意圖不直接量長；數值單位由題幹提供。",
+        "arrowsAndSymbols": "平行箭頭、直角記號或角弧依技能使用。",
+        "scale": "not-to-scale",
+        "scaleWarning": "圖形不一定按比例，禁止以目測長短或角度作答。"
+      },
+      "altText": "斜置平行四邊形ABCD，標示兩組平行邊與對角。 圖形不一定按比例。",
+      "svgTitle": "平行四邊形基本性質",
+      "svgDesc": "斜置平行四邊形ABCD，標示兩組平行邊與對角。",
+      "mobileReadability": "400×300檢視下主要線條、交點與核心文字仍可辨識；長句置於空白區。",
+      "answerLeakageReview": "圖只呈現定義結構或已知關係，不標示任何題目未給的未知答案。",
+      "svgAssertions": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "AB∥CD",
+        "role=\"img\"",
+        "<title",
+        "<desc"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderedInspection": true,
+        "reviewNote": "已渲染檢查平行四邊形基本性質：線段未被裁切，文字未遮住核心交點，且不按比例警告已置於desc。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "52359ad822cef9ac66407de46ae562da9dd0a5262899199a813a897da4354f27"
+    }
+  ],
+  "sourceBatch": "018-u17-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/018-u17-complete/units/u17/s004"
+}

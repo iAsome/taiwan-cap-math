@@ -1,0 +1,1107 @@
+{
+  "slot": "s001",
+  "skillId": "integer-number-classification",
+  "topicId": "u01-integer-basics",
+  "title": "數的分類入門：整數、分數與有限小數",
+  "lecture": {
+    "lectureId": "u01-s001-lecture-r1",
+    "unitId": "u01",
+    "topicId": "u01-integer-basics",
+    "skillId": "integer-number-classification",
+    "title": "數的分類入門：整數、分數與有限小數",
+    "audience": "第一次接觸國中數學分類概念的零基礎學生",
+    "reviewStatus": "centrally-reviewed-semantic-audit-r1",
+    "learningOutcomes": [
+      "能辨認正整數、0、負整數與整數。",
+      "能分辨整數和不是整數的分數或有限小數。",
+      "知道每一個整數都可以寫成分母為 1 的分數，因此整數也是有理數。",
+      "能把有限小數改寫成分數並約分。"
+    ],
+    "prerequisites": [],
+    "glossary": [
+      {
+        "term": "正整數",
+        "definition": "1、2、3、……這些大於 0 且沒有小數或分數部分的數。"
+      },
+      {
+        "term": "負整數",
+        "definition": "−1、−2、−3、……這些小於 0 且沒有小數或分數部分的數。"
+      },
+      {
+        "term": "整數",
+        "definition": "正整數、0 和負整數合在一起，稱為整數。"
+      },
+      {
+        "term": "有限小數",
+        "definition": "小數點後只有有限個數字的小數，例如 0.25、−1.4。"
+      },
+      {
+        "term": "有理數",
+        "definition": "可以寫成兩個整數相除的數，而且除數不能是 0。整數、分數與有限小數都是有理數。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "[[frac:a|b]]",
+        "meaning": "表示 a 除以 b；b 不能是 0。"
+      },
+      {
+        "symbol": "−",
+        "meaning": "負號，表示這個數小於 0。"
+      },
+      {
+        "symbol": "0",
+        "meaning": "0 是整數，但不是正數，也不是負數。"
+      }
+    ],
+    "conceptNarrative": [
+      "先判斷一個數有沒有非零的小數或分數部分。沒有的話，它可能是整數。",
+      "正負號不決定一個數是不是整數；−8 仍然是整數。",
+      "分數有時可以化成整數，例如 [[frac:12|4]]=3。",
+      "有限小數可以改寫成分母為 10、100、1000 等的分數，所以它們是有理數。",
+      "本課只處理整數、分數與有限小數；其他數類留到後面的單元。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "整數",
+        "statement": "整數包括正整數、0 和負整數。"
+      },
+      {
+        "name": "有理數",
+        "statement": "若一個數可以寫成 [[frac:a|b]]，其中 a、b 都是整數且 b≠0，這個數就是有理數。"
+      },
+      {
+        "name": "整數與有理數的關係",
+        "statement": "每個整數 n 都可以寫成 [[frac:n|1]]，所以每個整數都是有理數。"
+      }
+    ],
+    "classificationMap": [
+      {
+        "number": "−8",
+        "classifications": [
+          "負整數",
+          "整數",
+          "有理數"
+        ]
+      },
+      {
+        "number": "0",
+        "classifications": [
+          "整數",
+          "有理數",
+          "不是正數",
+          "不是負數"
+        ]
+      },
+      {
+        "number": "[[frac:3|4]]",
+        "classifications": [
+          "有理數",
+          "不是整數"
+        ]
+      },
+      {
+        "number": "0.25",
+        "classifications": [
+          "有限小數",
+          "有理數",
+          "不是整數"
+        ]
+      },
+      {
+        "number": "[[frac:12|4]]=3",
+        "classifications": [
+          "正整數",
+          "整數",
+          "有理數"
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "整數 n=[[frac:n|1]]",
+        "conditions": [
+          "n 是整數"
+        ],
+        "meaning": "把整數寫成分母為 1 的分數，說明整數也是有理數。"
+      },
+      {
+        "formula": "有限小數＝整數÷10 的次方",
+        "conditions": [
+          "小數點後有有限位數"
+        ],
+        "meaning": "例如 0.35=[[frac:35|100]]=[[frac:7|20]]。"
+      }
+    ],
+    "nonApplicableCases": [
+      "本課不處理尚未介紹的其他數類。",
+      "本課不處理無限延伸的小數表示。",
+      "分母為 0 的式子沒有意義，不能拿來表示有理數。"
+    ],
+    "method": [
+      "第一步：先把可計算的分數化簡。",
+      "第二步：判斷結果有沒有非零的小數或分數部分。",
+      "第三步：沒有分數部分的結果是整數；有分數部分但能寫成整數相除的結果是非整數有理數。",
+      "第四步：檢查題目問的是「整數」、「有理數」還是「有理數但不是整數」。"
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "把 −6、[[frac:5|4]]、0、[[frac:12|4]] 分類。",
+        "solutionSteps": [
+          "−6 是負整數，所以也是整數與有理數。",
+          "[[frac:5|4]]=1.25，有分數部分，因此是有理數但不是整數。",
+          "0 是整數，也是有理數。",
+          "[[frac:12|4]]=3，所以它是正整數、整數與有理數。"
+        ],
+        "answer": "−6、0、[[frac:12|4]] 是整數；[[frac:5|4]] 是非整數有理數。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "說明 0.35 為什麼是有理數。",
+        "solutionSteps": [
+          "0.35 有兩位小數，所以可以寫成 [[frac:35|100]]。",
+          "分子和分母同除以 5，得到 [[frac:7|20]]。",
+          "7 和 20 都是整數，而且 20≠0，所以 0.35 是有理數。"
+        ],
+        "answer": "0.35=[[frac:7|20]]，所以 0.35 是有理數。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "看到負號就認為不是整數。",
+        "why": "把正負號和數的種類混在一起。",
+        "correction": "−7 沒有小數或分數部分，所以是負整數。"
+      },
+      {
+        "mistake": "把 0 當成正整數。",
+        "why": "把「非負」誤認成「正」。",
+        "correction": "0 是整數，但不是正數，也不是負數。"
+      },
+      {
+        "mistake": "認為所有分數都不是整數。",
+        "why": "沒有先把分數化簡。",
+        "correction": "例如 [[frac:12|4]]=3，所以這個分數表示整數。"
+      },
+      {
+        "mistake": "認為有限小數不是有理數。",
+        "why": "沒有把有限小數改寫成分數。",
+        "correction": "例如 0.4=[[frac:4|10]]=[[frac:2|5]]。"
+      }
+    ],
+    "selfCheck": [
+      "我是否先把分數化簡？",
+      "我是否分清楚「整數」和「有理數但不是整數」？",
+      "我是否記得 0 是整數？",
+      "我是否只使用本課已介紹的整數、分數與有限小數概念？"
+    ],
+    "summary": [
+      "整數包括正整數、0 和負整數。",
+      "每個整數都是有理數。",
+      "分數與有限小數也是有理數，但不一定是整數。",
+      "判斷前先化簡，避免把能化成整數的分數誤判。"
+    ],
+    "connections": {
+      "previous": "本技能是 U01 的起點，不預設後續單元的數類知識。",
+      "next": [
+        "正負數的意義會用到正數、負數與 0。",
+        "數線與大小比較會使用整數和分數的位置。",
+        "其他數類會在後面的單元另行教學。"
+      ]
+    },
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u01-s001-v001",
+        "u01-s001-v002",
+        "u01-s001-v003",
+        "u01-s001-v004",
+        "u01-s001-v005",
+        "u01-s001-v006",
+        "u01-s001-v007",
+        "u01-s001-v008",
+        "u01-s001-v009",
+        "u01-s001-v010",
+        "u01-s001-v011",
+        "u01-s001-v012"
+      ],
+      "constructedResponseIds": [
+        "u01-s001-cr001",
+        "u01-s001-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high prerequisite-safe scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "The lesson intentionally uses only integers, fractions and finite decimals so the first skill remains prerequisite-safe."
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "contentSha256": "1a1ff2b2e500b74c8fcfeec015c33f2c04e6f80209635fd744705ef88e965803"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u01-s001-v001",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列哪一個數是整數？",
+      "choices": [
+        "[[frac:2|5]]",
+        "−12",
+        "0.4",
+        "1.5"
+      ],
+      "answerIndex": 1,
+      "explanation": "整數沒有非零的小數或分數部分。−12 是負整數；其餘三個數都有非零的小數或分數部分。",
+      "steps": [
+        "先找沒有非零小數或分數部分的數。",
+        "−12 符合整數的定義。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "[[frac:2|5]]",
+          "truth": false,
+          "reason": "[[frac:2|5]] 是有理數但不是整數。"
+        },
+        {
+          "choice": "−12",
+          "truth": true,
+          "reason": "−12 是負整數。"
+        },
+        {
+          "choice": "0.4",
+          "truth": false,
+          "reason": "0.4 是有限小數，不是整數。"
+        },
+        {
+          "choice": "1.5",
+          "truth": false,
+          "reason": "1.5 有非零小數部分，不是整數。"
+        }
+      ],
+      "commonMistake": "把負號誤認為不是整數。",
+      "concept": "負整數也是整數。",
+      "tags": [
+        "數與量",
+        "數的分類",
+        "basic"
+      ],
+      "estimatedTimeSec": "45",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "辨認負整數，避免把負號和數的種類混淆。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "187e0b4729ef0e72a5c18bbed907d04a2fede948310bfb21080468fa92c5ba52"
+    },
+    {
+      "questionId": "u01-s001-v002",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列哪一個數是有理數但不是整數？",
+      "choices": [
+        "−7",
+        "0",
+        "[[frac:3|4]]",
+        "12"
+      ],
+      "answerIndex": 2,
+      "explanation": "[[frac:3|4]] 可以寫成兩個整數相除，因此是有理數；它不能化成整數，所以是有理數但不是整數。",
+      "steps": [
+        "先排除整數 −7、0、12。",
+        "[[frac:3|4]] 是非整數有理數。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "−7",
+          "truth": false,
+          "reason": "−7 是整數。"
+        },
+        {
+          "choice": "0",
+          "truth": false,
+          "reason": "0 是整數。"
+        },
+        {
+          "choice": "[[frac:3|4]]",
+          "truth": true,
+          "reason": "[[frac:3|4]] 是有理數但不是整數。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "12 是整數。"
+        }
+      ],
+      "commonMistake": "看到分數就只說它不是整數，忘了它仍是有理數。",
+      "concept": "分數通常是非整數有理數。",
+      "tags": [
+        "數與量",
+        "數的分類",
+        "basic"
+      ],
+      "estimatedTimeSec": "45",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "區分整數和非整數有理數。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "d7864f65e35cbf11991be1c0f420d7449cf9ddd68740cd1fafab1b03226cac53"
+    },
+    {
+      "questionId": "u01-s001-v003",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "關於 0 的分類，下列敘述何者正確？",
+      "choices": [
+        "0 是正整數",
+        "0 是負整數",
+        "0 不是有理數",
+        "0 是整數，也是有理數"
+      ],
+      "answerIndex": 3,
+      "explanation": "0 是整數。又因為 0=[[frac:0|1]]，所以 0 也是有理數；但 0 不是正數，也不是負數。",
+      "steps": [
+        "確認 0 是否屬於整數：0 是整數。",
+        "把 0 寫成 [[frac:0|1]]，可知它也是有理數。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0 是正整數",
+          "truth": false,
+          "reason": "0 不大於 0，所以不是正整數。"
+        },
+        {
+          "choice": "0 是負整數",
+          "truth": false,
+          "reason": "0 不小於 0，所以不是負整數。"
+        },
+        {
+          "choice": "0 不是有理數",
+          "truth": false,
+          "reason": "0=[[frac:0|1]]，因此是有理數。"
+        },
+        {
+          "choice": "0 是整數，也是有理數",
+          "truth": true,
+          "reason": "這是正確敘述。"
+        }
+      ],
+      "commonMistake": "把 0 誤歸入正數或負數。",
+      "concept": "0 是整數與有理數，但不是正數或負數。",
+      "tags": [
+        "數與量",
+        "數的分類",
+        "basic"
+      ],
+      "estimatedTimeSec": "45",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "建立 0 的正確分類。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "2819d5b2a91c720b887cc2b91685a476a446be54363055f1c20d0034cd1ecc12"
+    },
+    {
+      "questionId": "u01-s001-v004",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列哪一個分數化簡後是整數？",
+      "choices": [
+        "[[frac:12|3]]",
+        "[[frac:5|2]]",
+        "[[frac:7|4]]",
+        "[[frac:9|6]]"
+      ],
+      "answerIndex": 0,
+      "explanation": "[[frac:12|3]]=4，化簡後沒有分數部分，所以是整數。",
+      "steps": [
+        "逐一化簡四個分數。",
+        "只有 [[frac:12|3]]=4 是整數。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "[[frac:12|3]]",
+          "truth": true,
+          "reason": "[[frac:12|3]]=4，是整數。"
+        },
+        {
+          "choice": "[[frac:5|2]]",
+          "truth": false,
+          "reason": "[[frac:5|2]]=2.5，不是整數。"
+        },
+        {
+          "choice": "[[frac:7|4]]",
+          "truth": false,
+          "reason": "[[frac:7|4]]=1.75，不是整數。"
+        },
+        {
+          "choice": "[[frac:9|6]]",
+          "truth": false,
+          "reason": "[[frac:9|6]]=[[frac:3|2]]=1.5，不是整數。"
+        }
+      ],
+      "commonMistake": "看到分數形式就直接判斷不是整數。",
+      "concept": "分數表示法有時會化成整數。",
+      "tags": [
+        "數與量",
+        "數的分類",
+        "standard"
+      ],
+      "estimatedTimeSec": "60",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "要求先化簡再分類。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "b2f100777990c253188bef4b62819de043eb8867342c706a4282cf92e986814a"
+    },
+    {
+      "questionId": "u01-s001-v005",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列分類何者正確？",
+      "choices": [
+        "[[frac:3|2]] 是整數",
+        "0.6 是整數",
+        "−8 是整數，也是有理數",
+        "[[frac:5|4]] 不是有理數"
+      ],
+      "answerIndex": 2,
+      "explanation": "−8 是負整數，因此是整數；每個整數都可寫成分母為 1 的分數，所以 −8 也是有理數。",
+      "steps": [
+        "逐項檢查是否有非零分數部分。",
+        "再利用「每個整數都是有理數」判斷。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "[[frac:3|2]] 是整數",
+          "truth": false,
+          "reason": "[[frac:3|2]]=1.5，不是整數。"
+        },
+        {
+          "choice": "0.6 是整數",
+          "truth": false,
+          "reason": "0.6 不是整數。"
+        },
+        {
+          "choice": "−8 是整數，也是有理數",
+          "truth": true,
+          "reason": "−8 是整數，也是有理數。"
+        },
+        {
+          "choice": "[[frac:5|4]] 不是有理數",
+          "truth": false,
+          "reason": "[[frac:5|4]] 是有理數。"
+        }
+      ],
+      "commonMistake": "認為整數和有理數是互不相交的兩類。",
+      "concept": "整數是有理數的一部分。",
+      "tags": [
+        "數與量",
+        "數的分類",
+        "standard"
+      ],
+      "estimatedTimeSec": "60",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "理解整數包含於有理數。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "470603417117edfef61fd2ad58de05c75b48cb961e7a9e55ceb4531ae3f8879d"
+    },
+    {
+      "questionId": "u01-s001-v006",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "0.35 化成最簡分數為何？",
+      "choices": [
+        "[[frac:35|10]]",
+        "[[frac:7|20]]",
+        "[[frac:3|5]]",
+        "[[frac:35|1000]]"
+      ],
+      "answerIndex": 1,
+      "explanation": "0.35=[[frac:35|100]]。分子和分母同除以 5，得到最簡分數 [[frac:7|20]]。",
+      "steps": [
+        "兩位小數先寫成 [[frac:35|100]]。",
+        "分子和分母同除以 5。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "[[frac:35|10]]",
+          "truth": false,
+          "reason": "[[frac:35|10]]=3.5，不等於 0.35。"
+        },
+        {
+          "choice": "[[frac:7|20]]",
+          "truth": true,
+          "reason": "[[frac:7|20]]=0.35，且已最簡。"
+        },
+        {
+          "choice": "[[frac:3|5]]",
+          "truth": false,
+          "reason": "[[frac:3|5]]=0.6。"
+        },
+        {
+          "choice": "[[frac:35|1000]]",
+          "truth": false,
+          "reason": "[[frac:35|1000]]=0.035。"
+        }
+      ],
+      "commonMistake": "小數位數和分母的 0 個數不一致。",
+      "concept": "有限小數可化成分母為 10 的次方的分數。",
+      "tags": [
+        "數與量",
+        "有限小數",
+        "standard"
+      ],
+      "estimatedTimeSec": "60",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "把有限小數精確改寫為最簡分數。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "67698e4eb23e6686642b6e19ffd5aba45d13f7a863329a0abd394f9e9baec6f8"
+    },
+    {
+      "questionId": "u01-s001-v007",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列哪一組中的四個數，恰有兩個是整數？",
+      "choices": [
+        "−3、0、[[frac:1|2]]、2.5",
+        "−3、[[frac:8|4]]、6、0",
+        "[[frac:3|2]]、0.4、−1.2、[[frac:7|5]]",
+        "0、[[frac:9|3]]、−4、12"
+      ],
+      "answerIndex": 0,
+      "explanation": "第一組中的 −3 和 0 是整數，[[frac:1|2]] 和 2.5 不是整數，所以恰有兩個整數。",
+      "steps": [
+        "逐組先化簡分數。",
+        "計算每組整數的個數。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "−3、0、[[frac:1|2]]、2.5",
+          "truth": true,
+          "reason": "恰有 −3、0 兩個整數。"
+        },
+        {
+          "choice": "−3、[[frac:8|4]]、6、0",
+          "truth": false,
+          "reason": "[[frac:8|4]]=2，因此四個數都是整數。"
+        },
+        {
+          "choice": "[[frac:3|2]]、0.4、−1.2、[[frac:7|5]]",
+          "truth": false,
+          "reason": "四個數都不是整數。"
+        },
+        {
+          "choice": "0、[[frac:9|3]]、−4、12",
+          "truth": false,
+          "reason": "四個數都是整數。"
+        }
+      ],
+      "commonMistake": "沒有先把 [[frac:8|4]]、[[frac:9|3]] 化簡。",
+      "concept": "分類前要先化簡。",
+      "tags": [
+        "數與量",
+        "數的分類",
+        "advanced"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "同時處理分數化簡與整數計數。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "3c10c759c8f03d8fc4503c39a2a867ec59610490858caa7490b5d43f0f74cbc5"
+    },
+    {
+      "questionId": "u01-s001-v008",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列敘述何者一定正確？",
+      "choices": [
+        "每個有理數都是整數",
+        "每個有限小數都不是有理數",
+        "每個分數都不是整數",
+        "每個整數都是有理數"
+      ],
+      "answerIndex": 3,
+      "explanation": "任一整數 n 都可以寫成 [[frac:n|1]]，所以每個整數都是有理數。",
+      "steps": [
+        "找出不可能被反例推翻的敘述。",
+        "整數可寫成分母為 1 的分數。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "每個有理數都是整數",
+          "truth": false,
+          "reason": "例如 [[frac:1|2]] 是有理數但不是整數。"
+        },
+        {
+          "choice": "每個有限小數都不是有理數",
+          "truth": false,
+          "reason": "有限小數可以化成分數，因此是有理數。"
+        },
+        {
+          "choice": "每個分數都不是整數",
+          "truth": false,
+          "reason": "例如 [[frac:8|4]]=2，是整數。"
+        },
+        {
+          "choice": "每個整數都是有理數",
+          "truth": true,
+          "reason": "這是一定正確的敘述。"
+        }
+      ],
+      "commonMistake": "把「整數都是有理數」誤讀成「有理數都是整數」。",
+      "concept": "整數集合包含在有理數集合中。",
+      "tags": [
+        "數與量",
+        "集合關係",
+        "advanced"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "利用反例辨認集合包含關係。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "ae5809b802256f7f7059dfcd5c0e58eb052dfd0dd83a676e2ff4dc2c7955e0a0"
+    },
+    {
+      "questionId": "u01-s001-v009",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "已知 x＝−18÷6，則 x 的分類何者正確？",
+      "choices": [
+        "x 是有理數但不是整數",
+        "x 是整數，也是有理數",
+        "x 是有限小數但不是有理數",
+        "無法判斷"
+      ],
+      "answerIndex": 1,
+      "explanation": "−18÷6=−3。−3 是負整數，因此也是有理數。",
+      "steps": [
+        "先計算 x=−3。",
+        "再依結果分類。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x 是有理數但不是整數",
+          "truth": false,
+          "reason": "−3 是整數，不只是非整數有理數。"
+        },
+        {
+          "choice": "x 是整數，也是有理數",
+          "truth": true,
+          "reason": "−3 是整數，也是有理數。"
+        },
+        {
+          "choice": "x 是有限小數但不是有理數",
+          "truth": false,
+          "reason": "−3 不是有限小數形式，而且所有有限小數本來就是有理數。"
+        },
+        {
+          "choice": "無法判斷",
+          "truth": false,
+          "reason": "已可由算式求出 x。"
+        }
+      ],
+      "commonMistake": "算出負數後，誤以為負數不是整數。",
+      "concept": "先計算，再分類。",
+      "tags": [
+        "數與量",
+        "數的分類",
+        "advanced"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "結合簡單除法與分類。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "00361c584f6399f3054ab1176eb3a4442eda53c3c0c1dea83306f265f39ab28a"
+    },
+    {
+      "questionId": "u01-s001-v010",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某系統只能以「整數或最簡分數」精確儲存數值。下列哪一筆資料需要先改寫，才能符合格式？",
+      "choices": [
+        "−8",
+        "[[frac:3|5]]",
+        "0.75",
+        "12"
+      ],
+      "answerIndex": 2,
+      "explanation": "0.75 是有限小數，數值可以精確改寫成 [[frac:3|4]]；其餘三筆已經是整數或最簡分數。",
+      "steps": [
+        "確認系統接受的兩種格式。",
+        "把 0.75 改寫成 [[frac:3|4]]。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "−8",
+          "truth": false,
+          "reason": "−8 已是整數。"
+        },
+        {
+          "choice": "[[frac:3|5]]",
+          "truth": false,
+          "reason": "[[frac:3|5]] 已是最簡分數。"
+        },
+        {
+          "choice": "0.75",
+          "truth": true,
+          "reason": "0.75 需要改寫為 [[frac:3|4]]。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "12 已是整數。"
+        }
+      ],
+      "commonMistake": "把「需要改寫格式」誤認成「不能精確表示」。",
+      "concept": "有限小數能精確改寫成分數。",
+      "tags": [
+        "數與量",
+        "資料格式",
+        "literacy"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "在資料格式情境中使用有限小數與分數的等值關係。",
+      "literacyContextNecessity": "系統格式限制使學生必須判斷數值類型並進行等值改寫。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "f6e15892dd5b3d044c4407993050b7a7f771d0ba69b246f7d807ef7f567d28df"
+    },
+    {
+      "questionId": "u01-s001-v011",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "倉庫以「箱」為單位記錄完整箱數。下列哪一筆紀錄可以表示完整箱數？",
+      "choices": [
+        "18",
+        "18.5",
+        "[[frac:3|4]]",
+        "0.2"
+      ],
+      "answerIndex": 0,
+      "explanation": "完整箱數必須是非負整數。18 是整數；其餘數值都表示不足一整箱的部分。",
+      "steps": [
+        "找出情境要求：完整箱數。",
+        "在四個數中辨認非負整數 18。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "18",
+          "truth": true,
+          "reason": "18 可以表示 18 個完整箱子。"
+        },
+        {
+          "choice": "18.5",
+          "truth": false,
+          "reason": "18.5 含半箱，不是完整箱數。"
+        },
+        {
+          "choice": "[[frac:3|4]]",
+          "truth": false,
+          "reason": "[[frac:3|4]] 不到一整箱。"
+        },
+        {
+          "choice": "0.2",
+          "truth": false,
+          "reason": "0.2 不到一整箱。"
+        }
+      ],
+      "commonMistake": "只看數值是正的，就忽略完整物件數必須是整數。",
+      "concept": "離散物件的完整數量通常用非負整數表示。",
+      "tags": [
+        "數與量",
+        "離散數量",
+        "literacy"
+      ],
+      "estimatedTimeSec": "60",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "把整數分類連結到完整物件的計數。",
+      "literacyContextNecessity": "完整箱數是離散數量，情境限制使整數判斷不可省略。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "3f38dd66032a049cd015d10103218a98ca033dc760becb8f53e9b3d9a8da346e"
+    },
+    {
+      "questionId": "u01-s001-v012",
+      "unitId": "u01",
+      "numericUnitId": 1,
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "資料表記錄四個數：−4、0.75、[[frac:6|3]]、−1.2。下列分類何者正確？",
+      "choices": [
+        "四個數都是整數",
+        "只有 0.75 是整數",
+        "−4、0.75 是整數",
+        "−4、[[frac:6|3]] 是整數，0.75、−1.2 是非整數有理數"
+      ],
+      "answerIndex": 3,
+      "explanation": "−4 是整數；[[frac:6|3]]=2，也是整數。0.75 和 −1.2 都是有限小數，因此是有理數但不是整數。",
+      "steps": [
+        "先化簡 [[frac:6|3]]=2。",
+        "再分別判斷整數與非整數有理數。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "四個數都是整數",
+          "truth": false,
+          "reason": "0.75 和 −1.2 不是整數。"
+        },
+        {
+          "choice": "只有 0.75 是整數",
+          "truth": false,
+          "reason": "0.75 不是整數。"
+        },
+        {
+          "choice": "−4、0.75 是整數",
+          "truth": false,
+          "reason": "0.75 不是整數，且 [[frac:6|3]] 是整數。"
+        },
+        {
+          "choice": "−4、[[frac:6|3]] 是整數，0.75、−1.2 是非整數有理數",
+          "truth": true,
+          "reason": "這個分類完整且正確。"
+        }
+      ],
+      "commonMistake": "沒有先化簡 [[frac:6|3]]，或把負有限小數誤判為整數。",
+      "concept": "資料分類前先化簡，再看是否有非零小數部分。",
+      "tags": [
+        "數與量",
+        "資料判讀",
+        "literacy"
+      ],
+      "estimatedTimeSec": "90",
+      "prerequisiteSkillIds": [],
+      "authoringIntent": "在資料表情境中同時分類整數與非整數有理數。",
+      "literacyContextNecessity": "需要整理多筆資料並依同一分類規則做一致判斷。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "fdac19f72144be13b10118de508ae91b34abfda7b33137cb835dd8e2b1a8939e"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u01-s001-cr001",
+      "unitId": "u01",
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "將 −5、0、[[frac:7|4]]、1.25、[[frac:12|4]] 分成「整數」與「有理數但不是整數」兩類，並寫出判斷理由。",
+      "requiredWork": [
+        "先化簡 [[frac:12|4]]。",
+        "逐一判斷是否有非零小數或分數部分。",
+        "說明有限小數為何是有理數。"
+      ],
+      "fullCreditSolution": [
+        "[[frac:12|4]]=3，所以 −5、0、[[frac:12|4]] 都是整數。",
+        "[[frac:7|4]] 不能化成整數，所以是有理數但不是整數。",
+        "1.25=[[frac:125|100]]=[[frac:5|4]]，所以 1.25 是有理數但不是整數。"
+      ],
+      "alternativeSolutions": [
+        "也可把所有數先改寫成分數，再判斷分母約分後是否為 1。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "五個數分類全部正確，並正確說明 [[frac:12|4]]=3 與 1.25=[[frac:5|4]]。"
+        },
+        {
+          "score": 2,
+          "criteria": "分類大致正確，但漏寫一個必要理由，或只有一個分類小錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "能正確分類至少兩個數，並呈現部分合理判斷。"
+        },
+        {
+          "score": 0,
+          "criteria": "分類多數錯誤，或只抄數字而未呈現可判讀的分類。"
+        }
+      ],
+      "scoringNotes": [
+        "整數也屬於有理數；本題要求分成兩個互不重疊的作答類別。"
+      ],
+      "commonErrors": [
+        "把負數排除在整數之外。",
+        "未化簡 [[frac:12|4]]。",
+        "把 1.25 誤認為無法寫成分數。"
+      ],
+      "independentReview": {
+        "derivedResult": "整數：−5、0、[[frac:12|4]]；有理數但不是整數：[[frac:7|4]]、1.25。",
+        "ambiguity": "題意與資料完整，答案唯一；評分規準可區分完整、部分與錯誤作答。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "5e4fcb6a3cd87eda3e0495bc4a43bf007b2b490f8c253dee1e7f3a7af3b4d56f"
+    },
+    {
+      "questionId": "u01-s001-cr002",
+      "unitId": "u01",
+      "topicId": "u01-integer-basics",
+      "skillId": "integer-number-classification",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "小芸說：「所有分數都不是整數；所有有限小數都是有理數。」請分別判斷兩句話是否正確，並用例子或等值改寫說明。",
+      "requiredWork": [
+        "對兩句話分別判斷。",
+        "第一句要舉出反例。",
+        "第二句要說明有限小數可改寫成分數。"
+      ],
+      "fullCreditSolution": [
+        "第一句錯誤。例如 [[frac:8|4]]=2，雖然寫成分數，化簡後仍是整數。",
+        "第二句正確。有限小數可以寫成分母為 10 的次方的分數，例如 0.35=[[frac:35|100]]=[[frac:7|20]]。"
+      ],
+      "alternativeSolutions": [
+        "第一句也可用 [[frac:12|3]]=4 作反例；第二句可用任一有限小數示範。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "兩句判斷都正確，第一句有有效反例，第二句有正確的分數改寫。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩句判斷正確，但一項說明不完整，或等值改寫有輕微計算疏漏。"
+        },
+        {
+          "score": 1,
+          "criteria": "只正確處理其中一句，並有合理說明。"
+        },
+        {
+          "score": 0,
+          "criteria": "兩句判斷皆錯，或只有結論而無任何可判讀理由。"
+        }
+      ],
+      "scoringNotes": [
+        "反例必須真的能化成整數；第二句不必證明一般式，但須呈現正確等值分數。"
+      ],
+      "commonErrors": [
+        "用非整數分數當作第一句的反例。",
+        "只說有限小數『看起來像分數』，沒有等值改寫。"
+      ],
+      "independentReview": {
+        "derivedResult": "第一句錯；第二句對。",
+        "ambiguity": "題意與資料完整，答案唯一；評分規準可區分完整、部分與錯誤作答。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "3bdf8ce8b28e960365dbf9a88bbfb5d3e56155736b1d9b9836f456af0ef56576"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "001",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/001/units/u01/s001"
+}

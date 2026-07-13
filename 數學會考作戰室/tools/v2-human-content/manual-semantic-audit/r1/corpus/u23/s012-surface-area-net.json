@@ -1,0 +1,1378 @@
+{
+  "slot": "s012",
+  "skillId": "surface-area-net",
+  "topicId": "u23-measure",
+  "title": "由展開圖求表面積：辨認每個面再加總",
+  "lecture": {
+    "lectureId": "u23-s012-lecture-r1",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-measure",
+    "skillId": "surface-area-net",
+    "title": "由展開圖求表面積：辨認每個面再加總",
+    "lockedSkillTitle": "由展開圖求表面積",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能從文字或圖示展開圖辨認各面的形狀與尺寸。",
+      "能利用共享邊推得未知長度。",
+      "能計算柱體與錐體展開圖總面積。",
+      "能排除黏貼片、重疊區與非外露面。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "pyramid-cone-volume",
+        "requiredLevel": "能計算柱體與錐體的表面積，並辨認展開圖面片。",
+        "bridge": "已會辨認展開圖，也會計算柱體與錐體的基本面積。本節把兩者連結：展開圖上的平面區域總和就是立體外表面積。"
+      }
+    ],
+    "glossary": [
+      [
+        "展開圖面積",
+        "展開後各個不重疊面片的面積總和。"
+      ],
+      [
+        "共享邊",
+        "摺合後兩個面相接的同一條邊，長度必相等。"
+      ],
+      [
+        "黏貼片",
+        "為組裝而額外保留的材料，不一定屬於立體表面。"
+      ],
+      [
+        "扇形",
+        "圓錐曲側面展開後的形狀。"
+      ]
+    ],
+    "notation": [
+      [
+        "S",
+        "表面積。"
+      ],
+      [
+        "l",
+        "圓錐母線長，也是扇形半徑。"
+      ],
+      [
+        "θ",
+        "扇形圓心角。"
+      ],
+      [
+        "r",
+        "底圓半徑。"
+      ]
+    ],
+    "conceptNarrative": [
+      "立體剪開攤平不改變各面的面積，所以只要展開圖沒有重疊或拉伸，各面片面積相加即為表面積。",
+      "角柱展開圖通常含兩個全等底面與一排長方形側面；圓柱含兩圓與一長方形；圓錐含一圓與一扇形。",
+      "圖上未直接標示的邊長可由共享邊判斷，例如長方形側面的一邊對應底面邊長。",
+      "題目若問用料，可能需要加黏貼片；若問幾何表面積，黏貼片不算。重疊印刷或開口也要依題意調整。"
+    ],
+    "formalDefinitions": [
+      [
+        "展開圖求表面積",
+        "將每個實際外表面面片面積恰好計一次。"
+      ],
+      [
+        "圓錐曲側面積",
+        "扇形面積=πrl，其中l為母線。"
+      ]
+    ],
+    "formulas": [
+      [
+        "S=各面片面積總和",
+        [
+          "面片不重疊",
+          "尺寸對應正確"
+        ],
+        "由展開保持面積。"
+      ],
+      [
+        "圓柱側面=圓周×高",
+        [
+          "側面展開為長方形"
+        ],
+        "長方形長為2πr。"
+      ],
+      [
+        "圓錐側面=πrl",
+        [
+          "完整直圓錐"
+        ],
+        "扇形弧長等於底圓周。"
+      ]
+    ],
+    "nonApplicableCases": [
+      "黏貼片是否計入要看題目問表面積或材料面積。",
+      "展開圖中共享邊只計面積，不把邊長相加當面積。",
+      "圓錐扇形半徑是母線，不是底圓半徑。",
+      "開口立體缺少的面不能算入。"
+    ],
+    "method": [
+      [
+        "圈出每個面片",
+        "共有幾個底面與側面？"
+      ],
+      [
+        "標記對應邊",
+        "共享邊長是否一致？"
+      ],
+      [
+        "逐片求面積",
+        "使用正確平面公式。"
+      ],
+      [
+        "只加應計區域",
+        "黏貼片、開口或重疊如何處理？"
+      ],
+      [
+        "用立體公式交叉驗算",
+        "總和是否等於已知表面積公式？"
+      ]
+    ],
+    "workedExamples": [
+      [
+        "L1",
+        "長方體展開圖含兩個3×4、兩個3×5、兩個4×5長方形，總面積？",
+        [
+          "2(12+15+20)=94。"
+        ],
+        "94平方單位。"
+      ],
+      [
+        "L2",
+        "圓柱展開圖有半徑2的兩圓與4π×6長方形，總面積？",
+        [
+          "兩圓8π，側面24π。"
+        ],
+        "32π平方單位。"
+      ],
+      [
+        "L3",
+        "圓錐展開圖底圓半徑3、扇形半徑5，表面積？",
+        [
+          "底面9π，側面π×3×5=15π。"
+        ],
+        "24π平方單位。"
+      ],
+      [
+        "L4",
+        "紙盒幾何展開圖面積100，另有8平方公分黏貼片；用料？",
+        [
+          "材料含幾何面與黏貼片。"
+        ],
+        "108平方公分。"
+      ]
+    ],
+    "commonMistakes": [
+      [
+        "把邊長總和當面積",
+        "未使用平面面積公式。",
+        "逐片寫長×寬或相應公式。"
+      ],
+      [
+        "漏算第二個底面",
+        "未從展開圖數面。",
+        "先列面片清單。"
+      ],
+      [
+        "共享邊重複扣除",
+        "誤以為相接會使展開圖面積消失。",
+        "單一立體各外表面仍全部計入。"
+      ],
+      [
+        "圓錐用πr²算扇形",
+        "把側面當底面。",
+        "使用πrl。"
+      ],
+      [
+        "表面積加入黏貼片",
+        "混淆幾何量與材料量。",
+        "依問題目的判斷。"
+      ],
+      [
+        "開口盒仍算缺少面",
+        "只看完整公式。",
+        "以展開圖實際面片為準。"
+      ]
+    ],
+    "selfCheck": [
+      "我是否把每個面片恰好算一次？",
+      "未知邊是否由共享邊正確對應？",
+      "圓錐扇形半徑是否為母線？",
+      "黏貼片是否依題目要求處理？",
+      "答案是否為平方單位？"
+    ],
+    "summary": [
+      "展開圖各面面積總和等於表面積。",
+      "先數面，再求面積。",
+      "共享邊可推未知尺寸。",
+      "圓柱側面是長方形，圓錐側面是扇形。",
+      "幾何表面積與材料用量可能不同。"
+    ],
+    "connections": {
+      "previous": "前面已建立柱體、圓錐的表面積結構；本節改從攤平面片重建公式。",
+      "next": [
+        "下一節處理體積單位；表面積與體積的平方、立方倍率不可混淆。",
+        "組合體表面積仍可用外露面的『展開』思維。"
+      ]
+    },
+    "figureReferences": [
+      {
+        "figureId": "u23-s012-fig001",
+        "purpose": "三角柱展開圖",
+        "altText": "三個長方形與兩個直角三角形組成的展開圖。"
+      }
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u23-s012-v001",
+        "u23-s012-v002",
+        "u23-s012-v003",
+        "u23-s012-v004",
+        "u23-s012-v005",
+        "u23-s012-v006",
+        "u23-s012-v007",
+        "u23-s012-v008",
+        "u23-s012-v009",
+        "u23-s012-v010",
+        "u23-s012-v011",
+        "u23-s012-v012"
+      ],
+      "constructedResponseIds": [
+        "u23-s012-cr001",
+        "u23-s012-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐例把所有面片獨立加總為94、32π、24π與108，核對圓錐側面πrl及黏貼片是否計入的語意；亦確認每題平方單位與開口條件。",
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "64a8780d6bf17a48129f56885336a42d63344ea3d675033690f18f12dae6f627"
+  },
+  "mcQuestions": [
+    {
+      "prompt": "一個正方體展開圖由 6 個邊長 4 公分的正方形組成。摺成正方體後表面積是多少？",
+      "text": "一個正方體展開圖由 6 個邊長 4 公分的正方形組成。摺成正方體後表面積是多少？",
+      "choices": [
+        "64",
+        "80",
+        "128",
+        "96"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：單面16；乘6得96。所得結果是「96」。",
+      "explanation": "每面面積4²=16，共6面，表面積=6×16=96平方公分。",
+      "steps": [
+        "單面16",
+        "乘6得96"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "64",
+          "truth": false,
+          "reason": "只算4面。"
+        },
+        {
+          "choice": "80",
+          "truth": false,
+          "reason": "算5面。"
+        },
+        {
+          "choice": "128",
+          "truth": false,
+          "reason": "算8面。"
+        },
+        {
+          "choice": "96",
+          "truth": true,
+          "reason": "依獨立計算「乘6得96」，此選項符合所求「表面積」。"
+        }
+      ],
+      "misconceptionTarget": "沒有把六個面全部計入。 必須依「由正方體展開圖求表面積。」的關係重新核對。",
+      "authoringIntent": "由正方體展開圖求表面積。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "6個全等正方形",
+        "邊長4"
+      ],
+      "target": "表面積",
+      "difficultyReason": "基礎：數面並乘單面面積。",
+      "prerequisiteCheck": "已會正方形面積與正方體面數。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "平方公分。 所求「表面積」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "展開圖沒有重疊。 題幹已完整限制「表面積」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": "u23-s012-fig001",
+      "drawingSpecId": "u23-s012-draw001",
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "f60d7f439f1657a90b02eefaa1ab5ee03fb7025537e72aac2c09893a05c4a6f4"
+    },
+    {
+      "prompt": "長方體展開圖中有兩個 2×3、兩個 2×5、兩個 3×5 的長方形，總面積是多少？",
+      "text": "長方體展開圖中有兩個 2×3、兩個 2×5、兩個 3×5 的長方形，總面積是多少？",
+      "choices": [
+        "31",
+        "52",
+        "62",
+        "124"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：三種面積相加31；乘2得62。所得結果是「62」。",
+      "explanation": "總面積=2(2×3+2×5+3×5)=2(6+10+15)=62平方單位。",
+      "steps": [
+        "三種面積相加31",
+        "乘2得62"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "31",
+          "truth": false,
+          "reason": "只算三面。"
+        },
+        {
+          "choice": "52",
+          "truth": false,
+          "reason": "加法錯誤。"
+        },
+        {
+          "choice": "62",
+          "truth": true,
+          "reason": "依獨立計算「乘2得62」，此選項符合所求「總面積」。"
+        },
+        {
+          "choice": "124",
+          "truth": false,
+          "reason": "多乘2。"
+        }
+      ],
+      "misconceptionTarget": "只算一組相鄰三面。 必須依「加總長方體展開圖。」的關係重新核對。",
+      "authoringIntent": "加總長方體展開圖。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "三組相對面各兩個"
+      ],
+      "target": "總面積",
+      "difficultyReason": "基礎：逐片加總。 本題以「加總長方體展開圖。」作為該難度的具體判準。",
+      "prerequisiteCheck": "已會長方形面積。 本題只再使用先備「pyramid-cone-volume」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "平方單位。 所求「總面積」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "每組面恰有兩個。 題幹已完整限制「總面積」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "4a1caceeda7d00d2f8aa0c625ffaf12cdfe455642dbe4c797448af7b195c9873"
+    },
+    {
+      "prompt": "圓柱展開圖的側面長方形長為 10π 公分、寬為 7 公分，兩底面皆存在。側面積是多少？",
+      "text": "圓柱展開圖的側面長方形長為 10π 公分、寬為 7 公分，兩底面皆存在。側面積是多少？",
+      "choices": [
+        "70π",
+        "35π",
+        "17π",
+        "140π"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：長乘寬。所得結果是「70π」。",
+      "explanation": "題目只問側面積，即長方形面積=10π×7=70π平方公分。",
+      "steps": [
+        "長乘寬"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "70π",
+          "truth": true,
+          "reason": "依獨立計算「長乘寬」，此選項符合所求「側面積」。"
+        },
+        {
+          "choice": "35π",
+          "truth": false,
+          "reason": "漏一半。"
+        },
+        {
+          "choice": "17π",
+          "truth": false,
+          "reason": "此選項無法符合所求「側面積」；錯誤來源會是：看到兩底面存在便把底面也加入側面積。"
+        },
+        {
+          "choice": "140π",
+          "truth": false,
+          "reason": "多乘2。"
+        }
+      ],
+      "misconceptionTarget": "看到兩底面存在便把底面也加入側面積。",
+      "authoringIntent": "由展開長方形求側面積。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "側面長方形10π×7",
+        "只問側面積"
+      ],
+      "target": "側面積",
+      "difficultyReason": "基礎：直接求長方形面積並排除無關底面。",
+      "prerequisiteCheck": "已會長方形面積。 本題只再使用先備「pyramid-cone-volume」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "平方公分。 所求「側面積」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "保留π。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "只問側面積。 題幹已完整限制「側面積」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v003",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "767ad5343913d7e6e80031ef596cf1a0f2c082eba5a47403d538b64173ff606c"
+    },
+    {
+      "prompt": "三角柱展開圖的兩個底面都是底 6、高 4 公分的三角形；三個側面長方形面積合計 90 平方公分。總表面積是多少？",
+      "text": "三角柱展開圖的兩個底面都是底 6、高 4 公分的三角形；三個側面長方形面積合計 90 平方公分。總表面積是多少？",
+      "choices": [
+        "102",
+        "114",
+        "108",
+        "126"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：單底12；兩底24；加90得114。所得結果是「114」。",
+      "explanation": "單一三角形面積=6×4÷2=12，兩底面24；加側面90得114平方公分。",
+      "steps": [
+        "單底12",
+        "兩底24",
+        "加90得114"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "102",
+          "truth": false,
+          "reason": "只加一個底。"
+        },
+        {
+          "choice": "114",
+          "truth": true,
+          "reason": "依獨立計算「加90得114」，此選項符合所求「總表面積」。"
+        },
+        {
+          "choice": "108",
+          "truth": false,
+          "reason": "誤算底面。"
+        },
+        {
+          "choice": "126",
+          "truth": false,
+          "reason": "多加一底。"
+        }
+      ],
+      "misconceptionTarget": "漏算一個三角形底面。 必須依「整合底面與側面面積。」的關係重新核對。",
+      "authoringIntent": "整合底面與側面面積。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "兩全等三角形底",
+        "側面合計90"
+      ],
+      "target": "總表面積",
+      "difficultyReason": "標準：先算三角形面積並注意兩底面。",
+      "prerequisiteCheck": "已會三角形面積。 本題只再使用先備「pyramid-cone-volume」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "平方公分。 所求「總表面積」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "底面高是三角形內高。 題幹已完整限制「總表面積」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v004",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "bcf66f850f434161fcd1c5e73643a64e32518c38409329e1a763acc4da08bf77"
+    },
+    {
+      "prompt": "圓柱展開圖中，側面長方形的長為 12π 公分、高為 5 公分。底圓半徑是多少？",
+      "text": "圓柱展開圖中，側面長方形的長為 12π 公分、高為 5 公分。底圓半徑是多少？",
+      "choices": [
+        "6公分",
+        "3公分",
+        "12公分",
+        "24公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：2πr=12π；r=6。所得結果是「6公分」。",
+      "explanation": "長方形的長等於底圓周長2πr=12π，所以r=6公分。",
+      "steps": [
+        "2πr=12π",
+        "r=6"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6公分",
+          "truth": true,
+          "reason": "依獨立計算「r=6」，此選項符合所求「底圓半徑」。"
+        },
+        {
+          "choice": "3公分",
+          "truth": false,
+          "reason": "把周長除4π。"
+        },
+        {
+          "choice": "12公分",
+          "truth": false,
+          "reason": "把周長當半徑。"
+        },
+        {
+          "choice": "24公分",
+          "truth": false,
+          "reason": "直徑再加倍。"
+        }
+      ],
+      "misconceptionTarget": "把展開長方形長直接視為半徑。",
+      "authoringIntent": "由共享弧長反求半徑。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "側面長12π",
+        "長等於底圓周"
+      ],
+      "target": "底圓半徑",
+      "difficultyReason": "標準：需辨認展開長對應圓周並解方程。",
+      "prerequisiteCheck": "已會圓周公式。 本題只再使用先備「pyramid-cone-volume」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "公分。 所求「底圓半徑」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "π精確約去。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "長方形高5不影響半徑。 題幹已完整限制「底圓半徑」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v005",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "9fb16a49bade248271a9d5a1853f6a44e6dda85c6a8c63f0b1c3b66c2d9524bd"
+    },
+    {
+      "prompt": "圓錐展開圖由半徑 4 公分的底圓與半徑 10 公分的扇形組成。完整圓錐表面積是多少？",
+      "text": "圓錐展開圖由半徑 4 公分的底圓與半徑 10 公分的扇形組成。完整圓錐表面積是多少？",
+      "choices": [
+        "40π",
+        "48π",
+        "80π",
+        "56π"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：底面16π；側面40π；合計56π。所得結果是「56π」。",
+      "explanation": "底面積=16π；扇形即曲側面，面積=πrl=π×4×10=40π；合計56π平方公分。",
+      "steps": [
+        "底面16π",
+        "側面40π",
+        "合計56π"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "40π",
+          "truth": false,
+          "reason": "只算側面。"
+        },
+        {
+          "choice": "48π",
+          "truth": false,
+          "reason": "漏部分。"
+        },
+        {
+          "choice": "80π",
+          "truth": false,
+          "reason": "把兩半徑相乘再乘2。"
+        },
+        {
+          "choice": "56π",
+          "truth": true,
+          "reason": "依獨立計算「合計56π」，此選項符合所求「總表面積」。"
+        }
+      ],
+      "misconceptionTarget": "把扇形半徑10當底圓半徑。",
+      "authoringIntent": "由圓錐展開圖求總面積。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "底圓半徑4",
+        "扇形半徑即母線10"
+      ],
+      "target": "總表面積",
+      "difficultyReason": "標準：辨認兩種半徑並使用πrl。",
+      "prerequisiteCheck": "已會圓錐展開圖。 本題只再使用先備「pyramid-cone-volume」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "平方公分。 所求「總表面積」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "保留π。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "扇形弧長與底圓周相符是可摺條件。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v006",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "54404bd17649fbc8eb2860f2b6bafee5fce8b364c5949377b632fe0d6ae89454"
+    },
+    {
+      "prompt": "一個無蓋長方體盒的展開圖由底面 8×5 公分，以及四個側面組成；盒高 3 公分。展開圖幾何面積是多少？",
+      "text": "一個無蓋長方體盒的展開圖由底面 8×5 公分，以及四個側面組成；盒高 3 公分。展開圖幾何面積是多少？",
+      "choices": [
+        "78",
+        "118",
+        "98",
+        "88"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：列一底四側；40+48+30=118。所得結果是「118」。",
+      "explanation": "底面40；兩個8×3共48；兩個5×3共30；總面積40+48+30=118平方公分。",
+      "steps": [
+        "列一底四側",
+        "40+48+30=118"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "78",
+          "truth": false,
+          "reason": "只計底面與部分側面。"
+        },
+        {
+          "choice": "118",
+          "truth": true,
+          "reason": "40+48+30=118。"
+        },
+        {
+          "choice": "98",
+          "truth": false,
+          "reason": "側面加總不足。"
+        },
+        {
+          "choice": "88",
+          "truth": false,
+          "reason": "漏算一個側面。"
+        }
+      ],
+      "misconceptionTarget": "未依無蓋條件正確列出五個面。",
+      "authoringIntent": "從文字展開圖計算無蓋盒面積。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "底8×5",
+        "高3",
+        "無蓋"
+      ],
+      "target": "幾何面積",
+      "difficultyReason": "進階：須自行重建五面展開圖。",
+      "prerequisiteCheck": "已會長方體各面尺寸。 本題只再使用先備「pyramid-cone-volume」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "平方公分。 所求「幾何面積」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "無蓋表示只有一個8×5面。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v007",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "20d5d33092184a0d6546896ebc065f881ea8443102a995b4ee39bc81c680e05c"
+    },
+    {
+      "prompt": "一個紙盒的幾何展開圖面積為 250 平方公分，另有 6 個互不重疊的黏貼片，每片 3 平方公分。若問裁紙總面積，答案是多少？",
+      "text": "一個紙盒的幾何展開圖面積為 250 平方公分，另有 6 個互不重疊的黏貼片，每片 3 平方公分。若問裁紙總面積，答案是多少？",
+      "choices": [
+        "250",
+        "253",
+        "268",
+        "265"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：黏貼片18；加250得268。所得結果是「268」。",
+      "explanation": "裁紙包含幾何面與黏貼片，黏貼片共6×3=18，所以總面積250+18=268平方公分。",
+      "steps": [
+        "黏貼片18",
+        "加250得268"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "250",
+          "truth": false,
+          "reason": "只算幾何面。"
+        },
+        {
+          "choice": "253",
+          "truth": false,
+          "reason": "只加一片。"
+        },
+        {
+          "choice": "268",
+          "truth": true,
+          "reason": "依獨立計算「加250得268」，此選項符合所求「材料面積」。"
+        },
+        {
+          "choice": "265",
+          "truth": false,
+          "reason": "此選項無法符合所求「材料面積」；錯誤來源會是：混淆幾何表面積與實際裁紙用料。"
+        }
+      ],
+      "misconceptionTarget": "混淆幾何表面積與實際裁紙用料。",
+      "authoringIntent": "區分展開圖表面與額外黏貼片。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "幾何面250",
+        "6片",
+        "每片3",
+        "問裁紙總面積"
+      ],
+      "target": "材料面積",
+      "difficultyReason": "進階：依問題目的決定額外區域是否計入。",
+      "prerequisiteCheck": "已會面積加總。 本題只再使用先備「pyramid-cone-volume」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "平方公分。 所求「材料面積」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "黏貼片互不重疊且全部保留。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v008",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "5bf06e414ddc72b21ad818006f2eeb9030ee31a133bfa7060c0eb1a2d1d998cd"
+    },
+    {
+      "prompt": "圓錐展開圖的扇形半徑為 12 公分，圓心角為 120°。底圓半徑是多少？",
+      "text": "圓錐展開圖的扇形半徑為 12 公分，圓心角為 120°。底圓半徑是多少？",
+      "choices": [
+        "2公分",
+        "4公分",
+        "6公分",
+        "8公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：求弧長8π；令2πr=8π；r=4。所得結果是「4公分」。",
+      "explanation": "扇形弧長=(120/360)×2π×12=8π。此弧長等於底圓周2πr，所以r=4公分。",
+      "steps": [
+        "求弧長8π",
+        "令2πr=8π",
+        "r=4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2公分",
+          "truth": false,
+          "reason": "少除2。"
+        },
+        {
+          "choice": "4公分",
+          "truth": true,
+          "reason": "依獨立計算「r=4」，此選項符合所求「底圓半徑」。"
+        },
+        {
+          "choice": "6公分",
+          "truth": false,
+          "reason": "把120/360當1/2。"
+        },
+        {
+          "choice": "8公分",
+          "truth": false,
+          "reason": "把弧長當半徑。"
+        }
+      ],
+      "misconceptionTarget": "沒有利用扇形弧長等於底圓周。",
+      "authoringIntent": "由圓心角反推圓錐底半徑。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "扇形半徑12",
+        "圓心角120度"
+      ],
+      "target": "底圓半徑",
+      "difficultyReason": "進階：串聯扇形弧長與圓周。",
+      "prerequisiteCheck": "已會扇形弧長與圓周。 本題只再使用先備「pyramid-cone-volume」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "公分。 所求「底圓半徑」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "保留π後約去。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "扇形是完整曲側面。 題幹已完整限制「底圓半徑」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v009",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "881ef2fa1204bfff14dac999cd3bed3766efe07c38cf82a4dfdabc15c638f729"
+    },
+    {
+      "prompt": "包裝廠製作一個無上蓋長方體紙盒，底 20×12 公分、高 8 公分，並另留 40 平方公分黏貼片。每張紙可用面積 900 平方公分，一張最多能裁幾個盒子的完整展開圖？",
+      "text": "包裝廠製作一個無上蓋長方體紙盒，底 20×12 公分、高 8 公分，並另留 40 平方公分黏貼片。每張紙可用面積 900 平方公分，一張最多能裁幾個盒子的完整展開圖？",
+      "choices": [
+        "1個",
+        "2個",
+        "3個",
+        "4個"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：幾何面752；加黏貼片792；900÷792取整為1。所得結果是「1個」。",
+      "explanation": "每盒幾何面積=底240+兩個20×8=320+兩個12×8=192，共752；加黏貼片40得792平方公分。900只能裁1個完整展開圖。",
+      "steps": [
+        "幾何面752",
+        "加黏貼片792",
+        "900÷792取整為1"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1個",
+          "truth": true,
+          "reason": "依獨立計算「900÷792取整為1」，此選項符合所求「最多完整盒數」。"
+        },
+        {
+          "choice": "2個",
+          "truth": false,
+          "reason": "兩盒需1584超過900。"
+        },
+        {
+          "choice": "3個",
+          "truth": false,
+          "reason": "此選項無法符合所求「最多完整盒數」；錯誤來源會是：漏算側面或忽略每盒黏貼片，導致高估可裁數。"
+        },
+        {
+          "choice": "4個",
+          "truth": false,
+          "reason": "此選項無法符合所求「最多完整盒數」；錯誤來源會是：漏算側面或忽略每盒黏貼片，導致高估可裁數。"
+        }
+      ],
+      "misconceptionTarget": "漏算側面或忽略每盒黏貼片，導致高估可裁數。",
+      "authoringIntent": "用展開圖面積判斷裁切數量。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "無上蓋",
+        "底20×12",
+        "高8",
+        "黏貼片40",
+        "紙面積900"
+      ],
+      "target": "最多完整盒數",
+      "difficultyReason": "素養：材料限制、黏貼片與完整件數均影響決策。",
+      "prerequisiteCheck": "已會無蓋盒展開面積與整數商。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "平方公分；件數取不超過的整數。",
+      "roundingCheck": "不能以四捨五入增加件數。",
+      "ambiguityBoundaryAudit": "忽略排版損耗，只按面積上限。",
+      "literacyContextNecessity": "完整展開圖用料還要加40平方公分黏貼片，再受每張紙900平方公分與完整裁切限制，才能決定最多盒數。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v010",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "9e18a85bca7e72d66afd6ad4ff7692f94a577ea96aba60f1bdf73d846697a191"
+    },
+    {
+      "prompt": "某圓柱標籤只包覆曲側面，標籤展開後長 31.4 公分、寬 12 公分，重疊黏貼寬度另加 1 公分。以π=3.14，實際標籤面積是多少？",
+      "text": "某圓柱標籤只包覆曲側面，標籤展開後長 31.4 公分、寬 12 公分，重疊黏貼寬度另加 1 公分。以π=3.14，實際標籤面積是多少？",
+      "choices": [
+        "376.8",
+        "389.4",
+        "388.8",
+        "400.8"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：加入重疊寬1得32.4；乘高12得388.8。所得結果是「388.8」。",
+      "explanation": "實際裁切長度=31.4+1=32.4公分；面積=32.4×12=388.8平方公分。",
+      "steps": [
+        "加入重疊寬1得32.4",
+        "乘高12得388.8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "376.8",
+          "truth": false,
+          "reason": "忽略重疊。"
+        },
+        {
+          "choice": "389.4",
+          "truth": false,
+          "reason": "乘法錯誤。"
+        },
+        {
+          "choice": "388.8",
+          "truth": true,
+          "reason": "依獨立計算「乘高12得388.8」，此選項符合所求「實際標籤面積」。"
+        },
+        {
+          "choice": "400.8",
+          "truth": false,
+          "reason": "多加重疊。"
+        }
+      ],
+      "misconceptionTarget": "把重疊寬度當面積直接加1，或完全忽略。",
+      "authoringIntent": "計算含重疊邊的標籤用料。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "曲側標籤",
+        "周向長31.4",
+        "高12",
+        "另加周向重疊1"
+      ],
+      "target": "實際標籤面積",
+      "difficultyReason": "素養：重疊尺寸改變展開長方形的一邊。",
+      "prerequisiteCheck": "已會長方形面積。 本題只再使用先備「pyramid-cone-volume」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "公分乘公分得平方公分。 所求「實際標籤面積」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "π值不需再用，31.4已給。",
+      "ambiguityBoundaryAudit": "重疊寬沿標籤長方向增加。",
+      "literacyContextNecessity": "標籤除曲側面矩形外還需多留1公分重疊接縫，因此實際長度不是單純圓周長，黏貼條件直接增加用料。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v011",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "2e0662f2c3894d03bb9058225953f9375acfbaeb31347b8b86194de258c84ea9"
+    },
+    {
+      "prompt": "一個圓錐形生日帽沒有底面，底圓半徑 7 公分、母線 20 公分。若每 100 平方公分布料需 12 元，不足 100 平方公分仍按比例計費，取π=22/7，布料費多少元？",
+      "text": "一個圓錐形生日帽沒有底面，底圓半徑 7 公分、母線 20 公分。若每 100 平方公分布料需 12 元，不足 100 平方公分仍按比例計費，取π=22/7，布料費多少元？",
+      "choices": [
+        "48元",
+        "50.4元",
+        "55.2元",
+        "52.8元"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：側面積440；每平方公分0.12元；費用52.8。所得結果是「52.8元」。",
+      "explanation": "帽子只有曲側面，面積=πrl=(22/7)×7×20=440平方公分。按比例每100平方公分12元，費用=440÷100×12=52.8元。",
+      "steps": [
+        "側面積440",
+        "每平方公分0.12元",
+        "費用52.8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "48元",
+          "truth": false,
+          "reason": "面積400的費用。"
+        },
+        {
+          "choice": "50.4元",
+          "truth": false,
+          "reason": "計算錯誤。"
+        },
+        {
+          "choice": "55.2元",
+          "truth": false,
+          "reason": "誤加底面。"
+        },
+        {
+          "choice": "52.8元",
+          "truth": true,
+          "reason": "依獨立計算「費用52.8」，此選項符合所求「布料費」。"
+        }
+      ],
+      "misconceptionTarget": "把無底帽加底圓，或把按比例誤讀為整單位進位。",
+      "authoringIntent": "由圓錐展開側面求布料費。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "無底",
+        "r=7",
+        "母線20",
+        "π=22/7",
+        "100平方公分12元",
+        "按比例"
+      ],
+      "target": "布料費",
+      "difficultyReason": "素養：結構與計價方式共同決定答案。",
+      "prerequisiteCheck": "已會圓錐側面積與比例單價。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "平方公分轉成本元。 所求「布料費」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "按比例精確至0.1元。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "『不足仍按比例』不是向上取整。",
+      "literacyContextNecessity": "生日帽沒有底面，故只算圓錐側面；布料按每100平方公分比例計費，兩項情境規則共同決定成本。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s012-v012",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "由展開圖求表面積",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "8599e97214f64ec5b45657857ba4c82063e1b53fcb10caf708f01df80e7b60b2"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "prompt": "一個三角柱展開圖包含兩個全等直角三角形，直角邊為 5、12 公分；另有三個高皆為 10 公分的長方形，寬分別等於三角形三邊。求展開圖總面積。",
+      "requiredWork": [
+        "求三角形斜邊。",
+        "求兩底面面積。",
+        "求三個側面總面積。"
+      ],
+      "fullCreditSolution": [
+        "由畢氏定理，斜邊=13公分。",
+        "兩底面面積=2×(5×12÷2)=60平方公分。",
+        "側面積=(5+12+13)×10=300平方公分。",
+        "總面積=360平方公分。"
+      ],
+      "alternativeSolutions": [
+        "可分別算5×10、12×10、13×10後再加兩個三角形。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "求出13並完整加總為360。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案360且主要過程正確，但面片說明略缺。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道側面寬為三邊或算出部分正確面積。"
+        },
+        {
+          "score": 0,
+          "criteria": "未求斜邊且面積大多錯誤。"
+        }
+      ],
+      "partialCreditRules": [
+        "答案360且主要過程正確，但面片說明略缺。",
+        "知道側面寬為三邊或算出部分正確面積。"
+      ],
+      "followThroughPolicy": "若斜邊計算有單一錯誤，後續一致使用該值求側面，可保留後續方法分。",
+      "unitNotationRules": "所有面積用平方公分。",
+      "answerOnlyPolicy": "只寫360可得2分，因仍需展示斜邊與面片加總。",
+      "difficulty": "advanced",
+      "figureId": "u23-s012-fig001",
+      "drawingSpecId": "u23-s012-draw001",
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "360平方公分。",
+        "ambiguityAndBoundary": "獨立以5-12-13得到周長30，側面300，兩底60，總和360；六個區域無重疊。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s012-cr001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "constructed-response",
+      "visualMode": "figure-supported",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "1991c227ab23badcb9189165026cb86f816202a1b4ff1276910ad62b08175f50"
+    },
+    {
+      "prompt": "一個圓錐展開圖的曲側面是半徑 15 公分、圓心角 144° 的扇形。求底圓半徑及完整圓錐表面積。",
+      "requiredWork": [
+        "用扇形弧長等於底圓周。",
+        "求底圓半徑。",
+        "加底面與扇形面積。"
+      ],
+      "fullCreditSolution": [
+        "扇形弧長=(144/360)×2π×15=12π公分。",
+        "2πr=12π，所以r=6公分。",
+        "扇形面積=(144/360)×π×15²=90π平方公分。",
+        "底面積=36π，總表面積=126π平方公分。"
+      ],
+      "alternativeSolutions": [
+        "也可先由弧長比例得r/15=144/360，求r=6；側面積πrl=90π。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確求r=6及總面積126π，步驟完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩答案正確但弧長或面積理由略缺。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確求出其中一項，或方法正確但有一處算術錯誤。"
+        },
+        {
+          "score": 0,
+          "criteria": "把15當底半徑或無有效方法。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩答案正確但弧長或面積理由略缺。",
+        "正確求出其中一項，或方法正確但有一處算術錯誤。"
+      ],
+      "followThroughPolicy": "若弧長計算有單一錯誤但後續一致，可按方法給分；底面積與側面積須分開評。",
+      "unitNotationRules": "半徑用公分，面積用平方公分。",
+      "answerOnlyPolicy": "只寫126π而無半徑與過程至多1分。",
+      "difficulty": "advanced",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "底圓半徑6公分；表面積126π平方公分。",
+        "ambiguityAndBoundary": "獨立求弧長12π、r=6、扇形90π與底面36π；角度144°介於0與360°，構成有效圓錐。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s012-cr002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-measure",
+      "skillId": "surface-area-net",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "27508e75a54ca1f3f1525c92b5b1ec6769a0c191ad4afde661b1b7f6ac8385ba"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u23-s012-fig001",
+      "drawingSpecId": "u23-s012-draw001",
+      "unitId": "u23",
+      "skillSlot": "s012",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "purpose": "三角柱展開圖面片與共享邊",
+      "svgPath": "figures/u23/u23-s012-fig001.svg",
+      "canvas": {
+        "width": 520,
+        "height": 300,
+        "viewBox": "0 0 520 300"
+      },
+      "drawingSpec": {
+        "coordinateSystem": "三個長方形左上依序(100,100)、(170,100)、(290,100)，寬70、120、130，高90；左右各接直角三角形。",
+        "visibleLineRules": "面片外框3px實線；柱高尺寸線2px雙箭頭。",
+        "hiddenLineRules": "無隱藏線。",
+        "labelsAndPositions": {
+          "length5": "左三角形水平直角邊附近標示5",
+          "length12": "左三角形垂直直角邊附近標示12",
+          "hypotenuseX": "左三角形斜邊附近標示x",
+          "prismHeight10": "下方尺寸線中央標示柱高10"
+        },
+        "tickMarksUnitsArrowsSymbols": "尺寸箭頭與標籤依圖中特定需求；線寬至少2，文字至少14px。",
+        "scaleStatus": "not-to-scale",
+        "visualInferenceWarning": "不得由斜邊畫得長短讀取x；必須由5、12與直角條件計算。"
+      },
+      "altText": "三角柱展開圖，三個長方形排成側面帶，兩端接直角三角形；直角邊5和12，斜邊x，柱高10。",
+      "svgTitle": "三角柱展開圖面片與共享邊",
+      "svgDescription": "三角柱展開圖，三個長方形排成側面帶，兩端接直角三角形；直角邊5和12，斜邊x，柱高10。",
+      "mobileReadabilityReview": "520×300在手機縮放後，主要標籤分散且不重疊。",
+      "answerLeakageReview": "斜邊只標x，不顯示13或總面積答案。",
+      "svgAssertions": [
+        "<title",
+        "<desc",
+        "role=\"img\"",
+        "柱高 10",
+        "x 需由條件求得"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderedInspection": true,
+        "reviewNote": "u23-s012-fig001 已逐一核對線段連接、標籤位置、縮放警語、手機字級與題目答案不外洩；圖形只提供解題所需結構。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentSha256": "3e024fa9a389f3700df2eb263666ea74380f08deb759e06e1f4fe4a2d74753fe"
+    }
+  ],
+  "sourceBatch": "024-u23-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/024-u23-complete/units/u23/s012"
+}

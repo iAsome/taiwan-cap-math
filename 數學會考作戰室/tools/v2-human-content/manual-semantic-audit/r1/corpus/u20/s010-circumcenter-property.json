@@ -1,0 +1,1258 @@
+{
+  "slot": "s010",
+  "skillId": "circumcenter-property",
+  "topicId": "u20-centers",
+  "title": "外心性質：等半徑與垂直平分線及直角特例",
+  "lecture": {
+    "lectureId": "u20-s010-lecture-r1",
+    "unitId": "u20",
+    "numericUnitId": 20,
+    "topicId": "u20-centers",
+    "skillId": "circumcenter-property",
+    "skillSlot": "s010",
+    "lockedSkillTitle": "外心性質",
+    "title": "外心性質：等半徑與垂直平分線及直角特例",
+    "audience": "臺灣國中零基礎至會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能用OA＝OB＝OC解長度。",
+      "能在等距與垂直平分線之間雙向轉換。",
+      "能計算直角三角形外接圓半徑。",
+      "能由外心位置反判三角形角型。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "orthocenter-basic",
+        "requiredLevel": "能使用該技能的核心定義與基本推理。"
+      }
+    ],
+    "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「orthocenter-basic」再進入本節。",
+    "glossary": [
+      {
+        "term": "外接圓半徑",
+        "definition": "外心到任一頂點的距離。"
+      },
+      {
+        "term": "直徑",
+        "definition": "通過圓心且兩端在圓上的弦，長為半徑兩倍。"
+      },
+      {
+        "term": "等距點軌跡",
+        "definition": "到線段兩端等距的所有點形成其垂直平分線。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "R",
+        "meaning": "常表示外接圓半徑。"
+      },
+      {
+        "symbol": "AB=2R",
+        "meaning": "在直角三角形中，若AB為斜邊，AB是外接圓直徑。"
+      }
+    ],
+    "conceptNarrative": [
+      "外心性質可以沿兩個方向使用：知道O是外心，可得三段半徑相等；知道某點到三頂點等距，也能判定它是外心。",
+      "直角三角形把外心計算大幅簡化：斜邊就是直徑，半徑為斜邊一半。",
+      "外心在內、邊上、外的位置不只是畫圖資訊，也能反過來判斷三角形是銳角、直角或鈍角。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "垂直平分線正性質",
+        "statement": "線上的點到線段兩端等距。"
+      },
+      {
+        "name": "垂直平分線逆性質",
+        "statement": "到線段兩端等距的點在線段垂直平分線上。"
+      },
+      {
+        "name": "直徑所對圓周角",
+        "statement": "圓周上對直徑的角為90°。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "R=斜邊÷2",
+        "conditions": [
+          "三角形為直角三角形",
+          "該邊確為斜邊"
+        ],
+        "meaning": "直角三角形外接圓半徑。"
+      },
+      {
+        "formula": "OA=OB=OC",
+        "conditions": [
+          "O為外心"
+        ],
+        "meaning": "三個服務距離或半徑相等。"
+      }
+    ],
+    "nonApplicableCases": [
+      "非直角三角形不能直接把最長邊當直徑。",
+      "等距到三邊不能用來判定外心。",
+      "外心在外部仍有效，不代表外接圓不存在。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "辨認已知是中心、等距，還是角型。",
+        "check": "推理方向為性質還是判定？"
+      },
+      {
+        "step": 2,
+        "instruction": "若是直角三角形，先找斜邊。",
+        "check": "不要把兩股當直徑。"
+      },
+      {
+        "step": 3,
+        "instruction": "建立半徑或垂直平分線等式。",
+        "check": "單位是否一致？"
+      },
+      {
+        "step": 4,
+        "instruction": "用位置分類或圓周角反查。",
+        "check": "結論是否超出已知？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "直角三角形斜邊18公分。",
+        "solutionSteps": [
+          "斜邊是直徑。",
+          "R=18÷2。"
+        ],
+        "answer": "外接圓半徑9公分。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "OA＝OB且OB＝OC。",
+        "solutionSteps": [
+          "遞移得OA＝OC。",
+          "O到三頂點等距。"
+        ],
+        "answer": "O為外心。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把斜邊長當半徑。",
+        "why": "斜邊是直徑。",
+        "correction": "除以2。"
+      },
+      {
+        "mistake": "一組等距就判外心。",
+        "why": "只定位一條垂直平分線。",
+        "correction": "至少連接到第三頂點。"
+      },
+      {
+        "mistake": "外心在外就說無解。",
+        "why": "位置不影響等距性。",
+        "correction": "仍以O為圓心畫外接圓。"
+      }
+    ],
+    "selfCheck": [
+      "我是否確認直角與斜邊？",
+      "半徑和直徑是否混淆？",
+      "等距條件是否涵蓋三個頂點？",
+      "外心位置與角型是否一致？"
+    ],
+    "summary": [
+      "外心到三頂點的距離都是R。",
+      "等距與垂直平分線可雙向使用。",
+      "直角三角形R為斜邊一半。",
+      "外心位置可判斷角型。"
+    ],
+    "connections": {
+      "previous": "先備：orthocenter-basic",
+      "next": [
+        "下一技能深入角平分、邊距與內切圓面積關係。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u20-s010-v001",
+        "u20-s010-v002",
+        "u20-s010-v003",
+        "u20-s010-v004",
+        "u20-s010-v005",
+        "u20-s010-v006",
+        "u20-s010-v007",
+        "u20-s010-v008",
+        "u20-s010-v009",
+        "u20-s010-v010",
+        "u20-s010-v011",
+        "u20-s010-v012"
+      ],
+      "constructedResponseIds": [
+        "u20-s010-cr001",
+        "u20-s010-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "skillSpecificEvidence": "計算限國中可直接推導的半徑、座標與位置關係，未引入外接圓高階公式。",
+      "reviewerDecision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "legacyContentUsed": false,
+    "contentSha256": "b2445a813bdfe85bedc9dce3060130ef283d966c9f139cf2c3e1bcadf960f9ba"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u20-s010-v001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "O 是 △ABC 的外心，且 OA＝7 公分。OB 為多少？",
+      "givenConditions": [],
+      "target": "使用外心到頂點等距性質",
+      "choices": [
+        "OB＝3.5 公分",
+        "OB＝7 公分",
+        "OB＝14 公分",
+        "無法判斷"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "外心到三個頂點距離相等，所以 OB＝OA＝7 公分。",
+        "result": "OB＝7 公分"
+      },
+      "explanation": "外心到三個頂點距離相等，所以 OB＝OA＝7 公分。",
+      "steps": [
+        "O 是外心",
+        "OA、OB 都是外接圓半徑",
+        "半徑相等"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "OB＝3.5 公分",
+          "truth": false,
+          "reason": "沒有除以2的理由。"
+        },
+        {
+          "choice": "OB＝7 公分",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；外心到三個頂點距離相等，所以 OB＝OA＝7 公分。"
+        },
+        {
+          "choice": "OB＝14 公分",
+          "truth": false,
+          "reason": "沒有加倍的理由。"
+        },
+        {
+          "choice": "無法判斷",
+          "truth": false,
+          "reason": "外心性質已足夠。"
+        }
+      ],
+      "misconceptionTarget": "把半徑與直徑混淆。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "長度單位為公分。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「使用外心到頂點等距性質」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「OB＝7 公分」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：使用外心到頂點等距性質。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "da2464d28058968e52a9ba0d0518f773cc067622a8c65cb009bd1a49198d3066"
+    },
+    {
+      "questionId": "u20-s010-v002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "若點 P 滿足 PA＝PB，則 P 一定位於哪裡？",
+      "givenConditions": [],
+      "target": "理解等距點軌跡",
+      "choices": [
+        "在線段 AB 的垂直平分線上",
+        "在線段 AB 上",
+        "在 ∠A 的角平分線上",
+        "一定是 AB 中點"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "到線段兩端 A、B 距離相等的點所成軌跡是 AB 的垂直平分線。",
+        "result": "在線段 AB 的垂直平分線上"
+      },
+      "explanation": "到線段兩端 A、B 距離相等的點所成軌跡是 AB 的垂直平分線。",
+      "steps": [
+        "PA＝PB 表示到兩端等距",
+        "使用垂直平分線逆性質",
+        "判定 P 的位置"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "在線段 AB 的垂直平分線上",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；到線段兩端 A、B 距離相等的點所成軌跡是 AB 的垂直平分線。"
+        },
+        {
+          "choice": "在線段 AB 上",
+          "truth": false,
+          "reason": "等距點若在 AB 上只能是中點，但題目未限制 P 在 AB 上。"
+        },
+        {
+          "choice": "在 ∠A 的角平分線上",
+          "truth": false,
+          "reason": "角平分線處理到兩邊距離。"
+        },
+        {
+          "choice": "一定是 AB 中點",
+          "truth": false,
+          "reason": "垂直平分線上有無限多點。"
+        }
+      ],
+      "misconceptionTarget": "把垂直平分線上的所有點縮成中點。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「理解等距點軌跡」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「在線段 AB 的垂直平分線上」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：理解等距點軌跡。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "d25168723cebe8671affe9cfdcbe7483726d76595655cdf1fc71cbd15d67fd13"
+    },
+    {
+      "questionId": "u20-s010-v003",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "O 是外心，OA 這段長度在外接圓中稱為什麼？",
+      "givenConditions": [],
+      "target": "連結外心距離與半徑",
+      "choices": [
+        "內切圓半徑",
+        "三角形的高",
+        "外接圓半徑",
+        "中線長"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "A 是外接圓上的點，O 是圓心，所以 OA 是外接圓半徑。",
+        "result": "外接圓半徑"
+      },
+      "explanation": "A 是外接圓上的點，O 是圓心，所以 OA 是外接圓半徑。",
+      "steps": [
+        "辨認圓心 O",
+        "辨認圓上點 A",
+        "圓心到圓上點為半徑"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "內切圓半徑",
+          "truth": false,
+          "reason": "內切圓圓心是內心。"
+        },
+        {
+          "choice": "三角形的高",
+          "truth": false,
+          "reason": "OA 不一定垂直 BC。"
+        },
+        {
+          "choice": "外接圓半徑",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；A 是外接圓上的點，O 是圓心，所以 OA 是外接圓半徑。"
+        },
+        {
+          "choice": "中線長",
+          "truth": false,
+          "reason": "A 到 O 不一定通過對邊中點。"
+        }
+      ],
+      "misconceptionTarget": "看到頂點到中心的線就一律稱中線。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「連結外心距離與半徑」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「外接圓半徑」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：連結外心距離與半徑。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "e69a5f0e37f24462051294a9f8b9e6999d9ca98cc0af880d332e8eda9834ec69"
+    },
+    {
+      "questionId": "u20-s010-v004",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "直角三角形的斜邊長 10 公分，其外接圓半徑是多少？",
+      "givenConditions": [],
+      "target": "計算直角三角形外接圓半徑",
+      "choices": [
+        "2.5 公分",
+        "10 公分",
+        "12 公分",
+        "5 公分"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "直角三角形外心是斜邊中點，斜邊為外接圓直徑，所以半徑＝10÷2＝5 公分。",
+        "result": "5 公分"
+      },
+      "explanation": "直角三角形外心是斜邊中點，斜邊為外接圓直徑，所以半徑＝10÷2＝5 公分。",
+      "steps": [
+        "斜邊是外接圓直徑",
+        "半徑為直徑一半",
+        "計算10÷2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2.5 公分",
+          "truth": false,
+          "reason": "把斜邊連續除以4。"
+        },
+        {
+          "choice": "10 公分",
+          "truth": false,
+          "reason": "把直徑誤當半徑。"
+        },
+        {
+          "choice": "12 公分",
+          "truth": false,
+          "reason": "與已知斜邊無關。"
+        },
+        {
+          "choice": "5 公分",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；直角三角形外心是斜邊中點，斜邊為外接圓直徑，所以半徑＝10÷2＝5 公分。"
+        }
+      ],
+      "misconceptionTarget": "忘記直角三角形斜邊是外接圓直徑。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "長度以公分表示。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「計算直角三角形外接圓半徑」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「5 公分」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：計算直角三角形外接圓半徑。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "db8c36b59ab9223325bebb425dd5997372a98c725842012c4de9f935b77429ce"
+    },
+    {
+      "questionId": "u20-s010-v005",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "在座標平面上，A(-3,0)、B(3,0)，點 O 在 y 軸上且 OA＝OB。若另知 O=(0,0)，則外接圓通過 A、B 的直徑 AB 長為多少？",
+      "givenConditions": [],
+      "target": "使用外心與座標中點關係",
+      "choices": [
+        "6",
+        "3",
+        "9",
+        "12"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "AB 是從 x=-3 到 x=3 的水平距離，長度為 3-(-3)=6；O 是其中點。",
+        "result": "6"
+      },
+      "explanation": "AB 是從 x=-3 到 x=3 的水平距離，長度為 3-(-3)=6；O 是其中點。",
+      "steps": [
+        "讀取 A、B 橫坐標",
+        "計算水平距離",
+        "確認 O 為中點"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；AB 是從 x=-3 到 x=3 的水平距離，長度為 3-(-3)=6；O 是其中點。"
+        },
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "只取單側半徑。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "把坐標相乘。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "把正負距離重複加倍。"
+        }
+      ],
+      "misconceptionTarget": "負坐標距離計算漏掉減負。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "座標單位一致，答案為6個長度單位。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「使用外心與座標中點關係」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「6」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：使用外心與座標中點關係。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "6c73960517bda6946aac6ca1cf8ad6427a55d4afcbd0b3e3fc9071d55e5ca491"
+    },
+    {
+      "questionId": "u20-s010-v006",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "要判定點 O 是 △ABC 的外心，下列哪組條件充分？",
+      "givenConditions": [],
+      "target": "判斷外心的充分條件",
+      "choices": [
+        "O 在 ∠A 的角平分線上即可",
+        "O 是 BC 的任一中點",
+        "O 只需滿足 OA＝OB",
+        "O 在 AB 的垂直平分線與 AC 的垂直平分線交點"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "同時位於 AB、AC 的垂直平分線可得 OA＝OB 且 OA＝OC，故 OA＝OB＝OC，O 是外心。",
+        "result": "O 在 AB 的垂直平分線與 AC 的垂直平分線交點"
+      },
+      "explanation": "同時位於 AB、AC 的垂直平分線可得 OA＝OB 且 OA＝OC，故 OA＝OB＝OC，O 是外心。",
+      "steps": [
+        "第一條給 OA＝OB",
+        "第二條給 OA＝OC",
+        "兩式合併得三頂點等距"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "O 在 ∠A 的角平分線上即可",
+          "truth": false,
+          "reason": "只給到兩邊等距。"
+        },
+        {
+          "choice": "O 是 BC 的任一中點",
+          "truth": false,
+          "reason": "中點不一定到 A 等距。"
+        },
+        {
+          "choice": "O 只需滿足 OA＝OB",
+          "truth": false,
+          "reason": "只確定一條垂直平分線，不能保證到 C 等距。"
+        },
+        {
+          "choice": "O 在 AB 的垂直平分線與 AC 的垂直平分線交點",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；同時位於 AB、AC 的垂直平分線可得 OA＝OB 且 OA＝OC，故 OA＝OB＝OC，O 是外心。"
+        }
+      ],
+      "misconceptionTarget": "只用一組等距就判定三點外心。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「判斷外心的充分條件」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「O 在 AB 的垂直平分線與 AC 的垂直平分線交點」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：判斷外心的充分條件。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "f94ed7074013d8f0c16ef37525f6747ab647176f5d62dd0dd329f642936079f1"
+    },
+    {
+      "questionId": "u20-s010-v007",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "若外心 O 恰為 BC 的中點，且 B、C 是三角形的兩頂點，A 不在 BC 上，則可判定什麼？",
+      "givenConditions": [],
+      "target": "由外心在邊中點判定直角",
+      "choices": [
+        "△ABC 為等邊三角形",
+        "△ABC 為鈍角三角形",
+        "△ABC 為直角三角形，∠A＝90°",
+        "無法判定角型"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "O 為外心且在 BC 中點，BC 是外接圓直徑；圓周上 A 所對的直徑角 ∠BAC 為90°。",
+        "result": "△ABC 為直角三角形，∠A＝90°"
+      },
+      "explanation": "O 為外心且在 BC 中點，BC 是外接圓直徑；圓周上 A 所對的直徑角 ∠BAC 為90°。",
+      "steps": [
+        "BC 通過圓心且端點在圓上",
+        "BC 是直徑",
+        "直徑所對圓周角為90°"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "△ABC 為等邊三角形",
+          "truth": false,
+          "reason": "等邊外心不在任一邊上。"
+        },
+        {
+          "choice": "△ABC 為鈍角三角形",
+          "truth": false,
+          "reason": "直徑所對角是直角。"
+        },
+        {
+          "choice": "△ABC 為直角三角形，∠A＝90°",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；O 為外心且在 BC 中點，BC 是外接圓直徑；圓周上 A 所對的直徑角 ∠BAC 為90°。"
+        },
+        {
+          "choice": "無法判定角型",
+          "truth": false,
+          "reason": "條件已足以判定 ∠A。"
+        }
+      ],
+      "misconceptionTarget": "知道直角外心在斜邊中點，卻不會反向辨識。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「由外心在邊中點判定直角」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「△ABC 為直角三角形，∠A＝90°」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：由外心在邊中點判定直角。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "122c56aa2e21da9ff01461f5bdf6165c674c3a0c001e50a88ee26043c33fc07d"
+    },
+    {
+      "questionId": "u20-s010-v008",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "已知 OA＝OB＝OC。除了 O 為外心外，還能直接推出哪一項？",
+      "givenConditions": [],
+      "target": "從外心等距推出垂直平分線位置",
+      "choices": [
+        "O 一定在 BC 線段上",
+        "O 也在線段 BC 的垂直平分線上",
+        "O 到三邊距離相等",
+        "O 是 ∠B 的頂點"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "由 OB＝OC，O 到 B、C 等距，因此 O 在線段 BC 的垂直平分線上。",
+        "result": "O 也在線段 BC 的垂直平分線上"
+      },
+      "explanation": "由 OB＝OC，O 到 B、C 等距，因此 O 在線段 BC 的垂直平分線上。",
+      "steps": [
+        "選取等式 OB＝OC",
+        "使用等距點與垂直平分線性質",
+        "得到位置結論"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "O 一定在 BC 線段上",
+          "truth": false,
+          "reason": "垂直平分線多數點不在 BC 上。"
+        },
+        {
+          "choice": "O 也在線段 BC 的垂直平分線上",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；由 OB＝OC，O 到 B、C 等距，因此 O 在線段 BC 的垂直平分線上。"
+        },
+        {
+          "choice": "O 到三邊距離相等",
+          "truth": false,
+          "reason": "那是內心性質。"
+        },
+        {
+          "choice": "O 是 ∠B 的頂點",
+          "truth": false,
+          "reason": "O 與 B 是不同命名點。"
+        }
+      ],
+      "misconceptionTarget": "把等距線軌跡誤認為線段本身。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「從外心等距推出垂直平分線位置」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「O 也在線段 BC 的垂直平分線上」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：從外心等距推出垂直平分線位置。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "7765d56eeeb0e18b45bf726032cbf1f33ecb4b86eb1f144d68c2c0a8c373985d"
+    },
+    {
+      "questionId": "u20-s010-v009",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "鈍角三角形的外心 O 位於外部。下列敘述何者正確？",
+      "givenConditions": [],
+      "target": "理解外部外心仍保有性質",
+      "choices": [
+        "外心失效，無法畫外接圓",
+        "O 必須移到三角形內",
+        "O 在三角形外，仍可作為外接圓圓心",
+        "只有銳角三角形有外接圓"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "外心是否在三角形內不影響其定義；O 仍到三頂點等距，可作唯一外接圓。",
+        "result": "O 在三角形外，仍可作為外接圓圓心"
+      },
+      "explanation": "外心是否在三角形內不影響其定義；O 仍到三頂點等距，可作唯一外接圓。",
+      "steps": [
+        "角型決定位置但不取消外心",
+        "保持 OA＝OB＝OC",
+        "以 O 為圓心畫過三頂點的圓"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "外心失效，無法畫外接圓",
+          "truth": false,
+          "reason": "任意非共線三點有唯一外接圓。"
+        },
+        {
+          "choice": "O 必須移到三角形內",
+          "truth": false,
+          "reason": "移動後通常失去等距。"
+        },
+        {
+          "choice": "O 在三角形外，仍可作為外接圓圓心",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；外心是否在三角形內不影響其定義；O 仍到三頂點等距，可作唯一外接圓。"
+        },
+        {
+          "choice": "只有銳角三角形有外接圓",
+          "truth": false,
+          "reason": "直角、鈍角三角形也有。"
+        }
+      ],
+      "misconceptionTarget": "把『中心』理解為必須位於圖形內。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「理解外部外心仍保有性質」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「O 在三角形外，仍可作為外接圓圓心」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：理解外部外心仍保有性質。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "e441ab409bc83adcad070907660620c390a6a992d1d66ce9063f6672d6fb1ee0"
+    },
+    {
+      "questionId": "u20-s010-v010",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "三個監測站位於同一圓周，控制中心設在外心 O。已知 OA＝13 公里，控制中心到另外兩站的距離是多少？",
+      "givenConditions": [],
+      "target": "在監測網路中使用等半徑",
+      "choices": [
+        "半徑為 26 公里",
+        "半徑為 6.5 公里",
+        "資料不足",
+        "半徑為 13 公里"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "外心到三個圓周頂點距離都是外接圓半徑，因此 OB＝OC＝13 公里。",
+        "result": "半徑為 13 公里"
+      },
+      "explanation": "外心到三個圓周頂點距離都是外接圓半徑，因此 OB＝OC＝13 公里。",
+      "steps": [
+        "三站為三角形頂點",
+        "O 是外心",
+        "三段皆為半徑"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "半徑為 26 公里",
+          "truth": false,
+          "reason": "26可能是直徑，不是中心到站距離。"
+        },
+        {
+          "choice": "半徑為 6.5 公里",
+          "truth": false,
+          "reason": "沒有再除以2。"
+        },
+        {
+          "choice": "資料不足",
+          "truth": false,
+          "reason": "外心性質已決定距離。"
+        },
+        {
+          "choice": "半徑為 13 公里",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；外心到三個圓周頂點距離都是外接圓半徑，因此 OB＝OC＝13 公里。"
+        }
+      ],
+      "misconceptionTarget": "把已知半徑誤當直徑。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "距離以公里表示。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「在監測網路中使用等半徑」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「半徑為 13 公里」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在監測網路中使用等半徑。",
+      "literacyContextNecessity": "控制中心需同時覆蓋三站，外心等距性直接決定傳輸半徑。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "47f09220d65768db753228ec9390a9b89d0f3be2b2265de723c6e99e043c23e9"
+    },
+    {
+      "questionId": "u20-s010-v011",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "規劃軟體在縮放地圖後，候選外心看似到三站等距。工程師應如何驗證？",
+      "givenConditions": [],
+      "target": "驗證地理資訊系統中的外心",
+      "choices": [
+        "只要三個像素值相同就完全證明",
+        "不可只比較地圖上的像素距離，應檢查比例與垂直平分線",
+        "外心一定在地圖中央",
+        "選最靠近人口中心的點即可"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "地圖顯示可能有像素與投影誤差；應使用實際座標或檢查候選點是否位於兩條垂直平分線上。",
+        "result": "不可只比較地圖上的像素距離，應檢查比例與垂直平分線"
+      },
+      "explanation": "地圖顯示可能有像素與投影誤差；應使用實際座標或檢查候選點是否位於兩條垂直平分線上。",
+      "steps": [
+        "辨認畫面距離只是顯示",
+        "改用座標或幾何條件",
+        "核對兩條垂直平分線交點"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只要三個像素值相同就完全證明",
+          "truth": false,
+          "reason": "像素相同不保證實際距離精確相同。"
+        },
+        {
+          "choice": "不可只比較地圖上的像素距離，應檢查比例與垂直平分線",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；地圖顯示可能有像素與投影誤差；應使用實際座標或檢查候選點是否位於兩條垂直平分線上。"
+        },
+        {
+          "choice": "外心一定在地圖中央",
+          "truth": false,
+          "reason": "畫面中心與幾何外心無關。"
+        },
+        {
+          "choice": "選最靠近人口中心的點即可",
+          "truth": false,
+          "reason": "需求是到三站等距，不是人口最佳化。"
+        }
+      ],
+      "misconceptionTarget": "把軟體視覺顯示當作精確幾何條件。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「驗證地理資訊系統中的外心」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「不可只比較地圖上的像素距離，應檢查比例與垂直平分線」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：驗證地理資訊系統中的外心。",
+      "literacyContextNecessity": "縮放、像素與實際座標差異會影響等距判讀，數位地圖情境不可刪除.",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "63d991f8f98fbb2fec9bad248517373a4d79d18da3d5e4511f7efbc4a21ad99b"
+    },
+    {
+      "questionId": "u20-s010-v012",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "三個感測器形成直角三角形，控制站位於斜邊中點。若斜邊長 24 公尺，哪個敘述正確？",
+      "givenConditions": [],
+      "target": "計算直角配置的等距服務半徑",
+      "choices": [
+        "斜邊長 24 公尺，服務半徑為 12 公尺",
+        "斜邊長12公尺，半徑24公尺",
+        "斜邊長24公尺，半徑24公尺",
+        "斜邊長48公尺，半徑12公尺"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "直角三角形斜邊為外接圓直徑，控制站是外心；半徑為24÷2=12公尺。",
+        "result": "斜邊長 24 公尺，服務半徑為 12 公尺"
+      },
+      "explanation": "直角三角形斜邊為外接圓直徑，控制站是外心；半徑為24÷2=12公尺。",
+      "steps": [
+        "辨認斜邊為直徑",
+        "控制站在中點",
+        "計算半徑12"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "斜邊長 24 公尺，服務半徑為 12 公尺",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；直角三角形斜邊為外接圓直徑，控制站是外心；半徑為24÷2=12公尺。"
+        },
+        {
+          "choice": "斜邊長12公尺，半徑24公尺",
+          "truth": false,
+          "reason": "顛倒已知與結果。"
+        },
+        {
+          "choice": "斜邊長24公尺，半徑24公尺",
+          "truth": false,
+          "reason": "把直徑當半徑。"
+        },
+        {
+          "choice": "斜邊長48公尺，半徑12公尺",
+          "truth": false,
+          "reason": "任意改變已知斜邊。"
+        }
+      ],
+      "misconceptionTarget": "不會把直角三角形外心位置轉為服務半徑。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "長度以公尺表示。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「計算直角配置的等距服務半徑」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「斜邊長 24 公尺，服務半徑為 12 公尺」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：計算直角配置的等距服務半徑。",
+      "literacyContextNecessity": "感測器直角配置使斜邊直接成為服務圓直徑，情境條件決定簡化計算。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "bd918426aa03b8322ebbc063f7f38f836898178b93d3b8328e83dca3539dfa30"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u20-s010-cr001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "prompt": "直角三角形 ABC 的斜邊 AB＝26 公分。請求外接圓半徑，並說明外心位置與理由。",
+      "requiredWork": [
+        "外心為斜邊中點。",
+        "斜邊是外接圓直徑。",
+        "半徑13公分。"
+      ],
+      "standardSolution": [
+        "直角三角形的外心是斜邊 AB 的中點 O。AB 是外接圓直徑，所以半徑 OA＝OB＝26÷2＝13公分。"
+      ],
+      "alternativeMethods": [
+        "可用斜邊中點到三頂點等距性質：OA＝OB＝OC＝13公分。"
+      ],
+      "reasoningSteps": [
+        "直角三角形的外心是斜邊 AB 的中點 O。AB 是外接圓直徑，所以半徑 OA＝OB＝26÷2＝13公分。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "位置、直徑理由與13公分計算完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案13公分且知道斜邊中點，但未說明直徑。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道要除以2但未指出外心，或單位遺漏。"
+        },
+        {
+          "score": 0,
+          "criteria": "把26當半徑、選直角頂點或無有效方法。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "長度以公分表示。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "直徑半徑混淆。",
+        "把垂心位置套來。",
+        "漏寫公分。"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "直角三角形的外心是斜邊 AB 的中點 O。AB 是外接圓直徑，所以半徑 OA＝OB＝26÷2＝13公分。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "c9c5e6b7de837b5266b6709d6e21eafff6986240d2a2c59b9c8b0df4eda0edcd"
+    },
+    {
+      "questionId": "u20-s010-cr002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "circumcenter-property",
+      "skillSlot": "s010",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "prompt": "已知點 O 滿足 OA＝OB、OB＝OC，且 A、B、C 不共線。請證明 O 是 △ABC 的外心，並說明為何不需另證 OA＝OC。",
+      "requiredWork": [
+        "用等量遞移得三距離相等。",
+        "轉為兩條垂直平分線。",
+        "判定外心。"
+      ],
+      "standardSolution": [
+        "由 OA＝OB 且 OB＝OC，依相等關係遞移可得 OA＝OC。",
+        "OA＝OB 表示 O 在 AB 的垂直平分線上；OB＝OC 表示 O 在 BC 的垂直平分線上。兩條垂直平分線交點是外心，因此 O 是 △ABC 的外心。",
+        "OA＝OC 已由前兩式遞移得到，不需作為額外獨立條件。"
+      ],
+      "alternativeMethods": [
+        "也可直接以『到三頂點等距的點是外心』判定，再補充不共線確保三角形非退化。"
+      ],
+      "reasoningSteps": [
+        "由 OA＝OB 且 OB＝OC，依相等關係遞移可得 OA＝OC。",
+        "OA＝OB 表示 O 在 AB 的垂直平分線上；OB＝OC 表示 O 在 BC 的垂直平分線上。兩條垂直平分線交點是外心，因此 O 是 △ABC 的外心。",
+        "OA＝OC 已由前兩式遞移得到，不需作為額外獨立條件。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "遞移、垂直平分線與外心判定完整，並處理不共線。"
+        },
+        {
+          "score": 2,
+          "criteria": "能由三距離相等判定外心，但未展開垂直平分線。"
+        },
+        {
+          "score": 1,
+          "criteria": "只得到OA＝OC，未連結外心。"
+        },
+        {
+          "score": 0,
+          "criteria": "把到頂點等距判為內心，或忽略等式關係。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "依題目所給單位作答；純幾何關係不另加單位。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "把等距點放在角平分線。",
+        "認為需第三個獨立等式才可判定。",
+        "忽略三點共線邊界。"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "由 OA＝OB 且 OB＝OC，依相等關係遞移可得 OA＝OC。；OA＝OB 表示 O 在 AB 的垂直平分線上；OB＝OC 表示 O 在 BC 的垂直平分線上。兩條垂直平分線交點是外心，因此 O 是 △ABC 的外心。；OA＝OC 已由前兩式遞移得到，不需作為額外獨立條件。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "3c04206ba6a2e6750479f7a43d16bfeb3588ee5126ba9b07676d44100a152c4c"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "021-u20-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/021-u20-complete/units/u20/s010"
+}

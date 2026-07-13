@@ -1,0 +1,2539 @@
+{
+  "slot": "s010",
+  "skillId": "function-graph-read-point",
+  "topicId": "u15-graphs",
+  "lecture": {
+    "lectureId": "u15-s010-lecture",
+    "unitId": "u15",
+    "numericUnitId": 15,
+    "unitTitle": "函數及其圖形",
+    "topicId": "u15-graphs",
+    "skillId": "function-graph-read-point",
+    "skillSlot": "s010",
+    "skillTitle": "由圖讀函數值",
+    "order": 10,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "prerequisites": [
+      {
+        "skillId": "linear-function-rate",
+        "title": "速率與線型函數",
+        "requiredLevel": "能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。",
+        "bridge": "已知圖形的刻度與坐標後，可反向從指定 x 找 y、從指定 y 找 x，並由交點解讀兩個函數同值。"
+      }
+    ],
+    "learningGoals": [
+      "由圖讀取指定輸入的函數值",
+      "由指定輸出反找可能輸入",
+      "解讀交點、截距與區間資訊"
+    ],
+    "vocabulary": [
+      {
+        "term": "讀值",
+        "meaning": "由坐標尺度找出點的 x、y"
+      },
+      {
+        "term": "交點",
+        "meaning": "兩圖形共有的點"
+      },
+      {
+        "term": "截距",
+        "meaning": "圖形與坐標軸相交處"
+      }
+    ],
+    "conceptDevelopment": [
+      "讀 f(a) 時，先從 x 軸找到 a，垂直移到圖形，再水平讀 y。反過來找 f(x)=b，先從 y 軸找到 b，水平移到圖形，再向下讀所有可能 x。",
+      "圖形刻度不一定每格 1；也不能因線條看起來通過某處就忽略標示尺度。"
+    ],
+    "definitionsAndMeaning": "讀 f(a) 時，先從 x 軸找到 a，垂直移到圖形，再水平讀 y。反過來找 f(x)=b，先從 y 軸找到 b，水平移到圖形，再向下讀所有可能 x。",
+    "formulasAndConditions": [
+      "點 (a,b) 在圖上 ⇔ f(a)=b。",
+      "兩函數交點 (c,d) ⇔ f(c)=g(c)=d。"
+    ],
+    "invalidUseCases": [
+      "從 x 軸直接讀成函數值。",
+      "忽略一個水平線可能交圖形多次。",
+      "依圖形外觀估值而不看刻度。"
+    ],
+    "stepByStepMethod": [
+      "確認橫軸、縱軸名稱與單位。",
+      "讀清每格刻度。",
+      "依問題先固定 x 或 y。",
+      "沿垂直或水平輔助線找到圖形，再讀另一坐標。"
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "s010-ex01",
+        "title": "讀函數值",
+        "prompt": "函數圖形上標示點 (2,5)。由圖讀出 f(2)，並說明橫坐標與縱坐標的角色。",
+        "solution": "圖上有點 (2,5)，所以 f(2)=5。",
+        "level": "basic"
+      },
+      {
+        "exampleId": "s010-ex02",
+        "title": "反找輸入",
+        "prompt": "水平線 y=4 與某函數圖形交於 x=-1、3。由圖找出方程 f(x)=4 的所有解。",
+        "solution": "若水平線 y=4 與圖交於 x=-1、3，則 f(x)=4 的解有兩個。",
+        "level": "standard"
+      },
+      {
+        "exampleId": "s010-ex03",
+        "title": "讀交點",
+        "prompt": "函數 f 與 g 的圖形交於 (1,2)。寫出此交點對 f(1) 與 g(1) 的意義。",
+        "solution": "f、g 交於 (1,2)，表示 f(1)=g(1)=2。",
+        "level": "advanced"
+      },
+      {
+        "exampleId": "s010-ex04",
+        "title": "讀正負",
+        "prompt": "由圖判讀函數值正負：圖形位於 x 軸上方、x 軸上及下方時，f(x) 分別與 0 有何關係？",
+        "solution": "圖形在 x 軸上方時 f(x)>0，在下方時 f(x)<0。",
+        "level": "connection"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeId": "s010-m01",
+        "wrongReasoning": "把 (2,5) 解讀成 f(5)=2。",
+        "correction": "點 (2,5) 的第一坐標是輸入、第二坐標是輸出，因此是 f(2)=5，不能交換成 f(5)=2。"
+      },
+      {
+        "mistakeId": "s010-m02",
+        "wrongReasoning": "忽略負刻度。",
+        "correction": "先讀軸上 0 的位置與刻度方向，再數到指定點；負刻度位於原點左方或下方，不可只看格數。"
+      },
+      {
+        "mistakeId": "s010-m03",
+        "wrongReasoning": "只回報交點的 x 或 y。",
+        "correction": "交點要同時報告 x 與 y；x 表示兩函數在哪個輸入同值，y 表示共同的函數值。"
+      },
+      {
+        "mistakeId": "s010-m04",
+        "wrongReasoning": "把線段端點之外也當成定義域。",
+        "correction": "先確認圖形實際畫出的定義域；線段端點以外即使延長趨勢明顯，也不能自行當作函數的一部分。"
+      },
+      {
+        "mistakeId": "s010-m05",
+        "wrongReasoning": "圖不按比例時靠目測長度推答案。",
+        "correction": "圖若標示不按比例，答案只能依刻度、標籤與確切坐標；線段看起來較長或較陡不能代替數值。"
+      }
+    ],
+    "selfChecks": [
+      {
+        "prompt": "點 (-3,4) 在圖上，f(-3)=？",
+        "answer": "4"
+      },
+      {
+        "prompt": "f(x)=0 的位置在圖上稱什麼？",
+        "answer": "x 軸交點。"
+      },
+      {
+        "prompt": "兩圖交點表示什麼？",
+        "answer": "同一輸入下兩函數值相等。"
+      }
+    ],
+    "summary": "讀圖時先固定題目給的坐標，再沿正確方向找另一坐標。",
+    "previousSkillConnection": "linear-function-rate",
+    "nextSkillConnection": "piecewise-linear-basic",
+    "figureRefs": [
+      "u15-fig-read-point"
+    ],
+    "accessibilityNotes": [
+      "圖形 u15-fig-read-point 另附繁體中文替代文字與不按比例警告。"
+    ],
+    "lectureReview": {
+      "reviewVersion": "human-lecture-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "decision": "pass",
+      "reviewNote": "逐段人工重讀「由圖讀函數值」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+      "zeroFoundationCheck": "學生只需具備 能以自己的話說明「速率與線型函數」並完成基本判斷或計算。",
+      "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+    },
+    "canonicalization": "sorted-keys-json-utf8-v1",
+    "contentSha256": "be8aed07e1f1ed386a4b9c695dec89ed4c4c42cc6b9bfab4aaa3fefd8400db59"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u15-s010-mc01",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "函數圖形上標出點 (2,5)。則 f(2) 為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由圖上點讀函數值」。",
+      "target": "由圖上點讀函數值",
+      "choices": [
+        "2",
+        "5",
+        "7",
+        "10"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：讀第一坐標為輸入；讀第二坐標為輸出；得到 f(2)=5。因此得到「5」。",
+      "explanation": "點 (2,5) 表示輸入 2 的輸出是 5。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "讀第一坐標為輸入"
+        },
+        {
+          "step": 2,
+          "work": "讀第二坐標為輸出"
+        },
+        {
+          "step": 3,
+          "work": "得到 f(2)=5"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "2",
+          "truth": false,
+          "reason": "把輸入當輸出。"
+        },
+        {
+          "index": 1,
+          "choice": "5",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；點 (2,5) 表示輸入 2 的輸出是 5。"
+        },
+        {
+          "index": 2,
+          "choice": "7",
+          "truth": false,
+          "reason": "把兩坐標相加。"
+        },
+        {
+          "index": 3,
+          "choice": "10",
+          "truth": false,
+          "reason": "把兩坐標相乘。"
+        }
+      ],
+      "misconceptionTarget": "坐標點語意顛倒",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「由圖上點讀函數值」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 90,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由圖上點讀函數值」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「5」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由圖上點讀函數值」只有題幹所述的一種解讀。",
+      "difficultyReason": "直接讀點，屬基礎。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": "u15-s010-mc01-fig",
+      "drawingSpecRef": "units/u15/s010/drawing-specs.jsonl#u15-s010-mc01-fig",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "25267c9145beb8e4efeb2454ec86ca485cfa72217387446be01388335b82735d"
+    },
+    {
+      "questionId": "u15-s010-mc02",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "圖形通過點 (-3,4)。下列何者正確？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「把點改寫成函數記號」。",
+      "target": "把點改寫成函數記號",
+      "choices": [
+        "f(-3)=4",
+        "f(4)=-3",
+        "f(3)=4",
+        "f(-3)=-4"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：保留 x 的負號；依序讀 (-3,4)；寫 f(-3)=4。因此得到「f(-3)=4」。",
+      "explanation": "坐標第一值是輸入、第二值是輸出。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "保留 x 的負號"
+        },
+        {
+          "step": 2,
+          "work": "依序讀 (-3,4)"
+        },
+        {
+          "step": 3,
+          "work": "寫 f(-3)=4"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "f(-3)=4",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；坐標第一值是輸入、第二值是輸出。"
+        },
+        {
+          "index": 1,
+          "choice": "f(4)=-3",
+          "truth": false,
+          "reason": "坐標顛倒。"
+        },
+        {
+          "index": 2,
+          "choice": "f(3)=4",
+          "truth": false,
+          "reason": "漏掉輸入負號。"
+        },
+        {
+          "index": 3,
+          "choice": "f(-3)=-4",
+          "truth": false,
+          "reason": "誤改輸出符號。"
+        }
+      ],
+      "misconceptionTarget": "讀圖時漏負號或顛倒坐標",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「把點改寫成函數記號」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 94,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「把點改寫成函數記號」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「f(-3)=4」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「把點改寫成函數記號」只有題幹所述的一種解讀。",
+      "difficultyReason": "考負坐標讀取，屬基礎。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "f0cb37d7d7f403d239f3235b87bde69f83c195685f3f5100e5c217b770098730"
+    },
+    {
+      "questionId": "u15-s010-mc03",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "若圖形與 x 軸交於 (6,0)，則哪個式子正確？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由 x 軸交點讀函數值」。",
+      "target": "由 x 軸交點讀函數值",
+      "choices": [
+        "f(0)=6",
+        "f(6)=6",
+        "f(6)=0",
+        "f(0)=0"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：辨認 x 軸上 y=0；讀 x=6；寫函數式。因此得到「f(6)=0」。",
+      "explanation": "x 軸上的點 y=0，交點 (6,0) 表示 f(6)=0。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "辨認 x 軸上 y=0"
+        },
+        {
+          "step": 2,
+          "work": "讀 x=6"
+        },
+        {
+          "step": 3,
+          "work": "寫函數式"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "f(0)=6",
+          "truth": false,
+          "reason": "顛倒坐標。"
+        },
+        {
+          "index": 1,
+          "choice": "f(6)=6",
+          "truth": false,
+          "reason": "把輸入當輸出。"
+        },
+        {
+          "index": 2,
+          "choice": "f(6)=0",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；x 軸上的點 y=0，交點 (6,0) 表示 f(6)=0。"
+        },
+        {
+          "index": 3,
+          "choice": "f(0)=0",
+          "truth": false,
+          "reason": "這是原點才成立。"
+        }
+      ],
+      "misconceptionTarget": "混淆 x 軸交點與 y 軸截距",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「由 x 軸交點讀函數值」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 98,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由 x 軸交點讀函數值」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「f(6)=0」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由 x 軸交點讀函數值」只有題幹所述的一種解讀。",
+      "difficultyReason": "直接利用軸交點，屬基礎。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "30da57df38cf6036935c89473de56f9f2ade74016e2c0c6aaf6da624056b7694"
+    },
+    {
+      "questionId": "u15-s010-mc04",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "一條直線圖形通過 (0,1) 與 (4,9)。由圖形線性內插，f(2) 為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由直線圖形內插讀值」。",
+      "target": "由直線圖形內插讀值",
+      "choices": [
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：求每單位增加 2；前進 2 單位；由 1 加 4 得 5。因此得到「5」。",
+      "explanation": "斜率 (9-1)/4=2；從 x=0 到 2，y 增 4，所以 f(2)=5。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "求每單位增加 2"
+        },
+        {
+          "step": 2,
+          "work": "前進 2 單位"
+        },
+        {
+          "step": 3,
+          "work": "由 1 加 4 得 5"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "3",
+          "truth": false,
+          "reason": "只加 x 的增加量。"
+        },
+        {
+          "index": 1,
+          "choice": "4",
+          "truth": false,
+          "reason": "把中點 y 誤算為 4。"
+        },
+        {
+          "index": 2,
+          "choice": "6",
+          "truth": false,
+          "reason": "斜率多算 0.5。"
+        },
+        {
+          "index": 3,
+          "choice": "5",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；斜率 (9-1)/4=2；從 x=0 到 2，y 增 4，所以 f(2)=5。"
+        }
+      ],
+      "misconceptionTarget": "未利用直線中點性質",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「由直線圖形內插讀值」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 102,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由直線圖形內插讀值」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「5」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由直線圖形內插讀值」只有題幹所述的一種解讀。",
+      "difficultyReason": "需從兩點求固定變化後讀中間值，屬標準。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "068c9eb3840c4854d9770262b53934d5bd3391f1cfcba91e67b6945d9d331b48"
+    },
+    {
+      "questionId": "u15-s010-mc05",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "圖形是一條通過 (-1,3) 與 (3,-1) 的直線。比較 f(-1) 與 f(3)，何者正確？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由圖比較兩個函數值」。",
+      "target": "由圖比較兩個函數值",
+      "choices": [
+        "f(-1)>f(3)",
+        "f(-1)<f(3)",
+        "f(-1)=f(3)",
+        "無法由圖判斷"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：讀兩個函數值；比較 3 與 -1；得大於。因此得到「f(-1)>f(3)」。",
+      "explanation": "由標示點直接讀得 f(-1)=3、f(3)=-1，所以 3>-1。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "讀兩個函數值"
+        },
+        {
+          "step": 2,
+          "work": "比較 3 與 -1"
+        },
+        {
+          "step": 3,
+          "work": "得大於"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "f(-1)>f(3)",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；由標示點直接讀得 f(-1)=3、f(3)=-1，所以 3>-1。"
+        },
+        {
+          "index": 1,
+          "choice": "f(-1)<f(3)",
+          "truth": false,
+          "reason": "大小關係顛倒。"
+        },
+        {
+          "index": 2,
+          "choice": "f(-1)=f(3)",
+          "truth": false,
+          "reason": "兩值不同。"
+        },
+        {
+          "index": 3,
+          "choice": "無法由圖判斷",
+          "truth": false,
+          "reason": "圖上已有精確點。"
+        }
+      ],
+      "misconceptionTarget": "負數比較錯誤",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「由圖比較兩個函數值」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 106,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由圖比較兩個函數值」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「f(-1)>f(3)」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由圖比較兩個函數值」只有題幹所述的一種解讀。",
+      "difficultyReason": "要讀兩點並比較正負數，屬標準。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "5a4ba42375968c4b292b491e8b8ff3d5d2c00796056a75b0421d94ecd39d9c25"
+    },
+    {
+      "questionId": "u15-s010-mc06",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "某直線圖形在 x=-2 時 y=0，在 x=0 時 y=4。當 f(x)=2 時，x 為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由輸出反找直線上的輸入」。",
+      "target": "由輸出反找直線上的輸入",
+      "choices": [
+        "1",
+        "2",
+        "-1",
+        "-3"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：確認直線與兩端點；找 y 中點 2；取 x 中點 -1。因此得到「-1」。",
+      "explanation": "線段中 y 從 0 到 4 等速變化；y=2 是中間值，x 也是 -2 與 0 的中點 -1。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "確認直線與兩端點"
+        },
+        {
+          "step": 2,
+          "work": "找 y 中點 2"
+        },
+        {
+          "step": 3,
+          "work": "取 x 中點 -1"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "1",
+          "truth": false,
+          "reason": "忽略 x 區間負號。"
+        },
+        {
+          "index": 1,
+          "choice": "2",
+          "truth": false,
+          "reason": "把輸出 2 當輸入。"
+        },
+        {
+          "index": 2,
+          "choice": "-1",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；線段中 y 從 0 到 4 等速變化；y=2 是中間值，x 也是 -2 與 0 的中點 -1。"
+        },
+        {
+          "index": 3,
+          "choice": "-3",
+          "truth": false,
+          "reason": "超出兩端。"
+        }
+      ],
+      "misconceptionTarget": "反讀圖時符號或方向錯",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「由輸出反找直線上的輸入」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 110,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由輸出反找直線上的輸入」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「-1」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由輸出反找直線上的輸入」只有題幹所述的一種解讀。",
+      "difficultyReason": "從 y 反向讀 x，屬標準。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "387e10af83d65fb5f90cc436f7ed3929f47c2f6c2f4c98eca7896fed0ce9794a"
+    },
+    {
+      "questionId": "u15-s010-mc07",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "圖上兩函數 f、g 的直線交於 (3,7)。下列何者一定正確？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由交點判讀兩函數相等」。",
+      "target": "由交點判讀兩函數相等",
+      "choices": [
+        "f(7)=g(7)=3",
+        "f(3)+g(3)=7",
+        "兩函數在所有 x 都相等",
+        "f(3)=g(3)=7"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：讀交點 x=3；讀共同 y=7；寫雙等式。因此得到「f(3)=g(3)=7」。",
+      "explanation": "交點表示同一輸入 3 時兩個輸出都為 7。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "讀交點 x=3"
+        },
+        {
+          "step": 2,
+          "work": "讀共同 y=7"
+        },
+        {
+          "step": 3,
+          "work": "寫雙等式"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "f(7)=g(7)=3",
+          "truth": false,
+          "reason": "坐標顛倒。"
+        },
+        {
+          "index": 1,
+          "choice": "f(3)+g(3)=7",
+          "truth": false,
+          "reason": "兩值各為 7，和為 14。"
+        },
+        {
+          "index": 2,
+          "choice": "兩函數在所有 x 都相等",
+          "truth": false,
+          "reason": "單一交點不代表兩線重合。"
+        },
+        {
+          "index": 3,
+          "choice": "f(3)=g(3)=7",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；交點表示同一輸入 3 時兩個輸出都為 7。"
+        }
+      ],
+      "misconceptionTarget": "誤解函數圖形交點",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「由交點判讀兩函數相等」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 114,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由交點判讀兩函數相等」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「f(3)=g(3)=7」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由交點判讀兩函數相等」只有題幹所述的一種解讀。",
+      "difficultyReason": "需理解交點的雙函數語意，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": "u15-s010-mc07-fig",
+      "drawingSpecRef": "units/u15/s010/drawing-specs.jsonl#u15-s010-mc07-fig",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "3c77171714d14a0694179166cc20e7d68a6e749ff2f3949079513c6e2c9c69ed"
+    },
+    {
+      "questionId": "u15-s010-mc08",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "某線型函數圖形與 x 軸交於 x=2，且斜率為負。在哪個區間 f(x)>0？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由圖形特徵判正值區間」。",
+      "target": "由圖形特徵判正值區間",
+      "choices": [
+        "x>2",
+        "x<2",
+        "x=2",
+        "所有實數"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：標出零點 2；利用負斜率判方向；判定左側為正。因此得到「x<2」。",
+      "explanation": "負斜率直線向右下降；在零點左側圖形位於 x 軸上方，所以 f(x)>0。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "標出零點 2"
+        },
+        {
+          "step": 2,
+          "work": "利用負斜率判方向"
+        },
+        {
+          "step": 3,
+          "work": "判定左側為正"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "x>2",
+          "truth": false,
+          "reason": "右側圖形在 x 軸下方。"
+        },
+        {
+          "index": 1,
+          "choice": "x<2",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；負斜率直線向右下降；在零點左側圖形位於 x 軸上方，所以 f(x)>0。"
+        },
+        {
+          "index": 2,
+          "choice": "x=2",
+          "truth": false,
+          "reason": "x=2 時函數值等於 0。"
+        },
+        {
+          "index": 3,
+          "choice": "所有實數",
+          "truth": false,
+          "reason": "直線跨過 x 軸後正負改變。"
+        }
+      ],
+      "misconceptionTarget": "只看零點未結合斜率方向",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「由圖形特徵判正值區間」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 118,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由圖形特徵判正值區間」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「x<2」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由圖形特徵判正值區間」只有題幹所述的一種解讀。",
+      "difficultyReason": "整合零點與斜率判區間，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "df0e0f67528c3f9fedb379e26cec6081124483821d7a6b763d85c20c15333e84"
+    },
+    {
+      "questionId": "u15-s010-mc09",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "直線圖形上可讀得 f(1)=4、f(5)=-8。若圖形延伸仍為同一直線，f(3) 為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由圖上兩點推讀其他值」。",
+      "target": "由圖上兩點推讀其他值",
+      "choices": [
+        "0",
+        "2",
+        "-2",
+        "-4"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：求斜率 -3；從 x=1 前進 2；4-6=-2。因此得到「-2」。",
+      "explanation": "斜率 (-8-4)/(5-1)=-12/4=-3；從 x=1 到 3 增 2，y 減 6，所以 -2。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "求斜率 -3"
+        },
+        {
+          "step": 2,
+          "work": "從 x=1 前進 2"
+        },
+        {
+          "step": 3,
+          "work": "4-6=-2"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "0",
+          "truth": false,
+          "reason": "以為中點必為 0。"
+        },
+        {
+          "index": 1,
+          "choice": "2",
+          "truth": false,
+          "reason": "減少量符號錯。"
+        },
+        {
+          "index": 2,
+          "choice": "-2",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；斜率 (-8-4)/(5-1)=-12/4=-3；從 x=1 到 3 增 2，y 減 6，所以 -2。"
+        },
+        {
+          "index": 3,
+          "choice": "-4",
+          "truth": false,
+          "reason": "只減 8。"
+        }
+      ],
+      "misconceptionTarget": "線性插值計算錯誤",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「由圖上兩點推讀其他值」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 122,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由圖上兩點推讀其他值」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「-2」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由圖上兩點推讀其他值」只有題幹所述的一種解讀。",
+      "difficultyReason": "需求斜率後精確插值，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "1c805d29a18866a2a1bb285c0f8855ef92f850e694cd07889dc213400c4c9a15"
+    },
+    {
+      "questionId": "u15-s010-mc10",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "距離—時間圖上點 (12,3.6)，橫軸單位是分鐘，縱軸單位是公里。哪個敘述正確？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「解讀距離時間圖的資料點」。",
+      "target": "解讀距離時間圖的資料點",
+      "choices": [
+        "3.6 分鐘時距離為 12 公里",
+        "每分鐘走 3.6 公里",
+        "走 12 公里需 3.6 分鐘",
+        "12 分鐘時距離為 3.6 公里"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：讀橫軸分鐘；讀縱軸公里；排除將點當速率。因此得到「12 分鐘時距離為 3.6 公里」。",
+      "explanation": "依軸順序，第一坐標是 12 分鐘，第二坐標是 3.6 公里。單一點不能直接當速率。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "讀橫軸分鐘"
+        },
+        {
+          "step": 2,
+          "work": "讀縱軸公里"
+        },
+        {
+          "step": 3,
+          "work": "排除將點當速率"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "3.6 分鐘時距離為 12 公里",
+          "truth": false,
+          "reason": "顛倒坐標。"
+        },
+        {
+          "index": 1,
+          "choice": "每分鐘走 3.6 公里",
+          "truth": false,
+          "reason": "需知道起點才能由單一點求速率。"
+        },
+        {
+          "index": 2,
+          "choice": "走 12 公里需 3.6 分鐘",
+          "truth": false,
+          "reason": "同樣是坐標顛倒。"
+        },
+        {
+          "index": 3,
+          "choice": "12 分鐘時距離為 3.6 公里",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；依軸順序，第一坐標是 12 分鐘，第二坐標是 3.6 公里。單一點不能直接當速率。"
+        }
+      ],
+      "misconceptionTarget": "把圖上點誤讀成速率",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「解讀距離時間圖的資料點」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 126,
+      "unitAndRoundingCheck": "「第一坐標分鐘，第二坐標公里。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「解讀距離時間圖的資料點」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「12 分鐘時距離為 3.6 公里」符合；其餘錯因分別記錄於 optionAnalysis。；「第一坐標分鐘，第二坐標公里。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「解讀距離時間圖的資料點」只有題幹所述的一種解讀。",
+      "difficultyReason": "需精確翻譯坐標並拒絕過度推論，屬素養。",
+      "literacyContextNecessity": "軸單位決定點的完整語意，是情境必要資訊。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "4fc92e591f9dcdf67ce8f36680a486cf74035cf597ef67024a50b4a2e6a2b9ff"
+    },
+    {
+      "questionId": "u15-s010-mc11",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "氣溫圖在 6 時為 18°C、12 時為 27°C，兩點間以直線連接。若只用此圖估計 10 時氣溫，最合理為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由氣溫折線圖估計中間值」。",
+      "target": "由氣溫折線圖估計中間值",
+      "choices": [
+        "21°C",
+        "24°C",
+        "25°C",
+        "30°C"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：求每小時 1.5°C；算 4 小時增 6°C；得 24°C。因此得到「24°C」。",
+      "explanation": "6 小時升 9°C，每小時升 1.5°C；10 時比 6 時晚 4 小時，18+6=24°C。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "求每小時 1.5°C"
+        },
+        {
+          "step": 2,
+          "work": "算 4 小時增 6°C"
+        },
+        {
+          "step": 3,
+          "work": "得 24°C"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "21°C",
+          "truth": false,
+          "reason": "只增加 3°C。"
+        },
+        {
+          "index": 1,
+          "choice": "24°C",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；6 小時升 9°C，每小時升 1.5°C；10 時比 6 時晚 4 小時，18+6=24°C。"
+        },
+        {
+          "index": 2,
+          "choice": "25°C",
+          "truth": false,
+          "reason": "內插比例算錯。"
+        },
+        {
+          "index": 3,
+          "choice": "30°C",
+          "truth": false,
+          "reason": "超過 12 時的端點值。"
+        }
+      ],
+      "misconceptionTarget": "讀圖內插比例錯誤",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「由氣溫折線圖估計中間值」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 130,
+      "unitAndRoundingCheck": "「時間以時，溫度以 °C。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由氣溫折線圖估計中間值」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「24°C」符合；其餘錯因分別記錄於 optionAnalysis。；「時間以時，溫度以 °C。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由氣溫折線圖估計中間值」只有題幹所述的一種解讀。",
+      "difficultyReason": "需使用圖形的線段假設完成內插，屬素養。",
+      "literacyContextNecessity": "直線連接表示採線性內插，沒有該圖形假設就不能估計 10 時值。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "5c6f004850438b9b6ec4237fbbd99bf2e3e6112011f3672991a8283b67e71f35"
+    },
+    {
+      "questionId": "u15-s010-mc12",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "用電圖的縱軸標示「累積用電量（kWh）」；8 時到 10 時圖形水平。最合理解讀為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「解讀累積量圖形的水平區段」。",
+      "target": "解讀累積量圖形的水平區段",
+      "choices": [
+        "這段時間累積用電量沒有增加",
+        "這段時間每小時用電量固定且大於 0",
+        "這段時間累積用電量下降",
+        "10 時用電量為 0 kWh"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：辨認縱軸為累積量；水平代表差值 0；解釋無新增用電。因此得到「這段時間累積用電量沒有增加」。",
+      "explanation": "累積量水平表示兩小時內沒有新增用電；它不是在說瞬時值一定為 0 的單點。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "辨認縱軸為累積量"
+        },
+        {
+          "step": 2,
+          "work": "水平代表差值 0"
+        },
+        {
+          "step": 3,
+          "work": "解釋無新增用電"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "這段時間累積用電量沒有增加",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；累積量水平表示兩小時內沒有新增用電；它不是在說瞬時值一定為 0 的單點。"
+        },
+        {
+          "index": 1,
+          "choice": "這段時間每小時用電量固定且大於 0",
+          "truth": false,
+          "reason": "若有正用電，累積量應上升。"
+        },
+        {
+          "index": 2,
+          "choice": "這段時間累積用電量下降",
+          "truth": false,
+          "reason": "累積量水平不下降。"
+        },
+        {
+          "index": 3,
+          "choice": "10 時用電量為 0 kWh",
+          "truth": false,
+          "reason": "只能說增量為 0，不能把總累積量當 0。"
+        }
+      ],
+      "misconceptionTarget": "忽略「累積」使水平段解讀錯",
+      "prerequisiteCheck": "先備能力是「能以 Δy/Δx 求線型變化率，理解正負號與單位，並能把表格中的變化連到直線。」本題將此能力用於「解讀累積量圖形的水平區段」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 134,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「解讀累積量圖形的水平區段」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「這段時間累積用電量沒有增加」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「解讀累積量圖形的水平區段」只有題幹所述的一種解讀。",
+      "difficultyReason": "需結合軸名稱與圖形形狀，屬素養。",
+      "literacyContextNecessity": "「累積」二字改變水平線的實際含義，是讀圖不可刪除的資訊。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "f0573536e8a8fb37555747390719f581902946def11408f73eff07c24a318a0e"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u15-s010-cr01",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "type": "constructed-response",
+      "prompt": "依圖形資訊：直線 f 通過 (-2,0)、(0,4)、(3,10)。求 f(-1)、解 f(x)=6，並說明 f(x)>0 的 x 範圍。",
+      "requiredWork": "須使用圖上點的固定斜率或坐標讀取，完成三個子題。",
+      "standardSolution": "斜率由 (-2,0) 到 (0,4) 為 2，故 f(x)=2x+4。f(-1)=2；2x+4=6 得 x=1；零點在 x=-2 且斜率正，所以 f(x)>0 當 x>-2。",
+      "alternativeMethod": "可在直線圖上由 (-2,0) 每向右 1 上升 2，直接讀 (-1,2)、(1,6)，並判斷 x 軸右側為正。",
+      "reasoningSteps": [
+        {
+          "step": 1,
+          "work": "求或讀 f(-1)=2"
+        },
+        {
+          "step": 2,
+          "work": "求 f(x)=6 的 x=1"
+        },
+        {
+          "step": 3,
+          "work": "判正值區間 x>-2"
+        },
+        {
+          "step": 4,
+          "work": "處理嚴格不等號"
+        }
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "由圖或方程得到 f(-1)=2、f(x)=6 的解 x=1，並判定 f(x)>0 當 x>-2；三項均能連回直線與零點。"
+        },
+        {
+          "score": 2,
+          "criteria": "三個讀圖任務中正確完成兩個，或方法全部正確但僅一處坐標／不等號端點錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "只正確完成 f(-1)=2，或只找到零點 x=-2 而未寫正值區間與其他指定值。"
+        },
+        {
+          "score": 0,
+          "criteria": "普遍交換 x、y 坐標，或在圖形端點與刻度之外猜測，沒有任何可採計的讀圖結果。"
+        }
+      ],
+      "partialCreditRules": [
+        "f(-1)、f(x)=6、正值區間三部分可獨立計分；其中一項讀錯不取消其餘正確讀圖。",
+        "正值區間必須排除零點 -2；寫 x≥-2 表示未區分 f(x)>0 與 f(x)≥0，最高 2 分。"
+      ],
+      "followThroughPolicy": "本題延續計分依以下具體規則處理：f(-1)、f(x)=6、正值區間三部分可獨立計分；其中一項讀錯不取消其餘正確讀圖。；正值區間必須排除零點 -2；寫 x≥-2 表示未區分 f(x)>0 與 f(x)≥0，最高 2 分。",
+      "unitAndNotationRules": "沿用題幹的變數、序對、不等號與計量單位；作答必須清楚呈現以下要求中的符號與單位：須使用圖上點的固定斜率或坐標讀取，完成三個子題。",
+      "answerOnlyPolicy": "只寫最終答案而未呈現必要方法時，依本題 1 分規準處理：只正確完成 f(-1)=2，或只找到零點 x=-2 而未寫正值區間與其他指定值。；答案錯且無可辨識過程則為 0 分。",
+      "figureId": "u15-s010-cr01-fig",
+      "drawingSpecRef": "units/u15/s010/drawing-specs.jsonl#u15-s010-cr01-fig",
+      "independentReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "recomputedConclusion": "斜率由 (-2,0) 到 (0,4) 為 2，故 f(x)=2x+4。f(-1)=2；2x+4=6 得 x=1；零點在 x=-2 且斜率正，所以 f(x)>0 當 x>-2。",
+        "reviewNote": "獨立重做 u15-s010-cr01 時依序檢查 求或讀 f(-1)=2、求 f(x)=6 的 x=1、判正值區間 x>-2、處理嚴格不等號；標準解與替代法在允許範圍內得到一致結論，量綱與端點亦符合題意。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "9636567a188033f2b3043eff04daa67e366a5d8c89fd4c876167a36bac2ef31b"
+    },
+    {
+      "questionId": "u15-s010-cr02",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "function-graph-read-point",
+      "skillSlot": "s010",
+      "skillTitle": "由圖讀函數值",
+      "type": "constructed-response",
+      "prompt": "圖上兩線 f、g 分別通過 f:(0,6),(6,0)；g:(0,0),(3,6)。求兩線交點，並以圖形語意解釋交點。",
+      "requiredWork": "須建立兩線或由變化率求交點，並解釋共同輸入輸出。",
+      "standardSolution": "f(x)=-x+6；g(x)=2x。令 -x+6=2x，得 x=2、y=4，交點 (2,4)。它表示輸入 2 時兩函數值都為 4，即 f(2)=g(2)=4。",
+      "alternativeMethod": "可在坐標圖上畫兩線，找到共同點 (2,4)，再代入兩式驗證。",
+      "reasoningSteps": [
+        {
+          "step": 1,
+          "work": "求 f 式"
+        },
+        {
+          "step": 2,
+          "work": "求 g 式"
+        },
+        {
+          "step": 3,
+          "work": "聯立得 (2,4)"
+        },
+        {
+          "step": 4,
+          "work": "解釋共同函數值"
+        }
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "由兩組點得到 f(x)=-x+6、g(x)=2x，聯立求交點 (2,4)，並解釋 f(2)=g(2)=4。"
+        },
+        {
+          "score": 2,
+          "criteria": "交點與共同函數值正確，但兩條方程中一條推導省略或有一處非核心錯；或交點正確而語意只寫「相交」。"
+        },
+        {
+          "score": 1,
+          "criteria": "只求出其中一條函數式，或從圖讀到 (2,4) 但未說明它代表同一輸入下兩函數同值。"
+        },
+        {
+          "score": 0,
+          "criteria": "沒有利用兩線上的已知點或交點，且把 (2,4) 誤讀為 f(4)=g(4)=2。"
+        }
+      ],
+      "partialCreditRules": [
+        "若直接由圖正確讀出 (2,4) 並解釋同值，可取得交點與語意分；函數式推導仍需另呈現。",
+        "只寫 f(2)=g(2) 而漏共同值 4，語意部分不完整，最高 2 分。"
+      ],
+      "followThroughPolicy": "本題延續計分依以下具體規則處理：若直接由圖正確讀出 (2,4) 並解釋同值，可取得交點與語意分；函數式推導仍需另呈現。；只寫 f(2)=g(2) 而漏共同值 4，語意部分不完整，最高 2 分。",
+      "unitAndNotationRules": "沿用題幹的變數、序對、不等號與計量單位；作答必須清楚呈現以下要求中的符號與單位：須建立兩線或由變化率求交點，並解釋共同輸入輸出。",
+      "answerOnlyPolicy": "只寫最終答案而未呈現必要方法時，依本題 1 分規準處理：只求出其中一條函數式，或從圖讀到 (2,4) 但未說明它代表同一輸入下兩函數同值。；答案錯且無可辨識過程則為 0 分。",
+      "figureId": "u15-s010-cr02-fig",
+      "drawingSpecRef": "units/u15/s010/drawing-specs.jsonl#u15-s010-cr02-fig",
+      "independentReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "recomputedConclusion": "f(x)=-x+6；g(x)=2x。令 -x+6=2x，得 x=2、y=4，交點 (2,4)。它表示輸入 2 時兩函數值都為 4，即 f(2)=g(2)=4。",
+        "reviewNote": "獨立重做 u15-s010-cr02 時依序檢查 求 f 式、求 g 式、聯立得 (2,4)、解釋共同函數值；標準解與替代法在允許範圍內得到一致結論，量綱與端點亦符合題意。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "6561c5bb5b925f530ad287233f46a6042f191d9f411352eebab944b1a72ed691"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u15-fig-read-point",
+      "unitId": "u15",
+      "skillSlot": "s010",
+      "title": "由圖讀函數值與交點",
+      "svgPath": "figures/u15/u15-fig-read-point.svg",
+      "altText": "坐標平面有兩條直線 f 與 g，在點二逗號四相交，並以虛線投影到兩軸。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 640,
+          "height": 420,
+          "viewBox": "0 0 640 420"
+        },
+        "plotArea": {
+          "left": 80,
+          "top": 40,
+          "width": 500,
+          "height": 320
+        },
+        "xRange": [
+          -1,
+          7
+        ],
+        "yRange": [
+          -1,
+          8
+        ],
+        "objects": [
+          [
+            "line",
+            0,
+            6,
+            6,
+            0,
+            "f"
+          ],
+          [
+            "line",
+            0,
+            0,
+            4,
+            8,
+            "g"
+          ],
+          [
+            "point",
+            2,
+            4,
+            "交點 (2,4)"
+          ],
+          [
+            "guide",
+            2,
+            4,
+            "x=2",
+            "y=4"
+          ]
+        ],
+        "axisLabels": [
+          "x",
+          "y"
+        ],
+        "visibleLineRules": "座標軸 2px、資料線 3px、輔助線 1px 虛線；端點依條件使用實心或空心圓。",
+        "hiddenLineRules": "本單元為平面函數圖，不使用隱藏線。",
+        "labelRules": "標籤避開資料線至少 6px，負號、括號與單位完整顯示。",
+        "tickRules": "端點、零點與題目必要坐標必須可讀；禁止依格數猜測未標示值。",
+        "toScale": true,
+        "visualInferenceWarning": "圖形依坐標範圍繪製，但答案必須以刻度與標示數值為準。",
+        "exactLabelPositions": [
+          {
+            "text": "x",
+            "x": "608",
+            "y": "352.4",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "y",
+            "x": "152.5",
+            "y": "50",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "-1",
+            "x": "68.0",
+            "y": "344.4",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "130.5",
+            "y": "344.4",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "7",
+            "x": "568.0",
+            "y": "344.4",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "-1",
+            "x": "107.5",
+            "y": "364.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "107.5",
+            "y": "328.4",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "8",
+            "x": "107.5",
+            "y": "44.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "f",
+            "x": "336.0",
+            "y": "209.8",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "g",
+            "x": "218",
+            "y": "245",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "交點 (2,4)",
+            "x": "285",
+            "y": "158",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "x=2",
+            "x": "259.5",
+            "y": "342.4",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "y=4",
+            "x": "114.5",
+            "y": "177.2",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "圖形依坐標刻度繪製；線條粗細不可作為數值依據。",
+            "x": "80",
+            "y": "400",
+            "fontSize": "12",
+            "textAnchor": "start"
+          }
+        ],
+        "exactSvgGeometry": [
+          {
+            "id": "u15-fig-read-point-x-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "80",
+              "y1": "324.4",
+              "x2": "590",
+              "y2": "324.4",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-fig-read-point-y-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "142.5",
+              "y1": "360",
+              "x2": "142.5",
+              "y2": "30",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-fig-read-point-obj-1",
+            "element": "line",
+            "attributes": {
+              "x1": "142.5",
+              "y1": "111.1",
+              "x2": "517.5",
+              "y2": "324.4",
+              "stroke": "#1f2937",
+              "stroke-width": "3"
+            }
+          },
+          {
+            "id": "u15-fig-read-point-obj-2",
+            "element": "line",
+            "attributes": {
+              "x1": "142.5",
+              "y1": "324.4",
+              "x2": "392.5",
+              "y2": "40.0",
+              "stroke": "#1f2937",
+              "stroke-width": "3"
+            }
+          },
+          {
+            "id": "u15-fig-read-point-obj-3",
+            "element": "circle",
+            "attributes": {
+              "cx": "267.5",
+              "cy": "182.2",
+              "r": "6",
+              "fill": "#111"
+            }
+          },
+          {
+            "id": "u15-fig-read-point-obj-4-v",
+            "element": "line",
+            "attributes": {
+              "x1": "267.5",
+              "y1": "182.2",
+              "x2": "267.5",
+              "y2": "324.4",
+              "stroke": "#6b7280",
+              "stroke-dasharray": "5 4"
+            }
+          },
+          {
+            "id": "u15-fig-read-point-obj-4-h",
+            "element": "line",
+            "attributes": {
+              "x1": "267.5",
+              "y1": "182.2",
+              "x2": "142.5",
+              "y2": "182.2",
+              "stroke": "#6b7280",
+              "stroke-dasharray": "5 4"
+            }
+          }
+        ]
+      },
+      "svgTitle": "由圖讀函數值與交點",
+      "svgDesc": "坐標平面有兩條直線 f 與 g，在點二逗號四相交，並以虛線投影到兩軸。",
+      "svgAssertions": [
+        "u15-fig-read-point",
+        "u15-fig-read-point-title",
+        "u15-fig-read-point-desc",
+        "role=\"img\"",
+        "viewBox=\"0 0 640 420\"",
+        "由圖讀函數值與交點"
+      ],
+      "mobileReadabilityReview": "以 360px 寬縮放檢查，關鍵字標籤字級不低於等效 12px，點半徑與虛線仍可辨識。",
+      "answerLeakageReview": "圖僅呈現題目已給資料與必要坐標，不以醒目文字直接寫出選項答案；需由讀圖或計算完成。",
+      "figureReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "manualInspectionRequired": true,
+        "reviewNote": "已檢查 u15-fig-read-point 的軸向、刻度、負號、端點實空心、標籤遮擋與手機縮放；圖形內容與「垂直與水平輔助線協助讀出交點坐標。」一致。",
+        "manualInspectionCompleted": true,
+        "renderedAt": "2026-07-12T18:20:00+08:00",
+        "renderedCanvas": "640×420 PNG，另以雙欄 contact sheet 檢視全部 14 圖",
+        "renderedInspectionSummary": "逐圖檢查坐標軸方向、刻度、公式與點標籤、實心及空心端點、虛線、文字遮擋、360px 縮放可讀性與答案洩漏；修正後未見幾何或標示衝突。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "d9f227642b7dce28f1dd6c72b42d6ec68c6ee9990185bd6731e16d424f5c178c"
+    },
+    {
+      "figureId": "u15-s010-mc01-fig",
+      "unitId": "u15",
+      "skillSlot": "s010",
+      "title": "讀取 f(2)",
+      "svgPath": "figures/u15/u15-s010-mc01-fig.svg",
+      "altText": "函數圖上標出點二逗號五，並以虛線投影到 x 軸二與 y 軸五。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 640,
+          "height": 420,
+          "viewBox": "0 0 640 420"
+        },
+        "plotArea": {
+          "left": 80,
+          "top": 40,
+          "width": 500,
+          "height": 320
+        },
+        "xRange": [
+          -1,
+          5
+        ],
+        "yRange": [
+          -1,
+          7
+        ],
+        "objects": [
+          [
+            "point",
+            2,
+            5,
+            "(2,5)"
+          ],
+          [
+            "guide",
+            2,
+            5,
+            "2",
+            "5"
+          ]
+        ],
+        "axisLabels": [
+          "x",
+          "y"
+        ],
+        "visibleLineRules": "座標軸 2px、資料線 3px、輔助線 1px 虛線；端點依條件使用實心或空心圓。",
+        "hiddenLineRules": "本單元為平面函數圖，不使用隱藏線。",
+        "labelRules": "標籤避開資料線至少 6px，負號、括號與單位完整顯示。",
+        "tickRules": "端點、零點與題目必要坐標必須可讀；禁止依格數猜測未標示值。",
+        "toScale": true,
+        "visualInferenceWarning": "圖形依坐標範圍繪製，但答案必須以刻度與標示數值為準。",
+        "exactLabelPositions": [
+          {
+            "text": "x",
+            "x": "608",
+            "y": "348.0",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "y",
+            "x": "173.3",
+            "y": "50",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "-1",
+            "x": "68.0",
+            "y": "340.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "151.3",
+            "y": "340.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "5",
+            "x": "568.0",
+            "y": "340.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "-1",
+            "x": "128.3",
+            "y": "364.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "128.3",
+            "y": "324.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "7",
+            "x": "128.3",
+            "y": "44.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "(2,5)",
+            "x": "338.0",
+            "y": "112.0",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "2",
+            "x": "322.0",
+            "y": "338.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "5",
+            "x": "135.3",
+            "y": "115.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "圖形依坐標刻度繪製；線條粗細不可作為數值依據。",
+            "x": "80",
+            "y": "400",
+            "fontSize": "12",
+            "textAnchor": "start"
+          }
+        ],
+        "exactSvgGeometry": [
+          {
+            "id": "u15-s010-mc01-fig-x-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "80",
+              "y1": "320.0",
+              "x2": "590",
+              "y2": "320.0",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-s010-mc01-fig-y-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "163.3",
+              "y1": "360",
+              "x2": "163.3",
+              "y2": "30",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-s010-mc01-fig-obj-1",
+            "element": "circle",
+            "attributes": {
+              "cx": "330.0",
+              "cy": "120.0",
+              "r": "6",
+              "fill": "#111"
+            }
+          },
+          {
+            "id": "u15-s010-mc01-fig-obj-2-v",
+            "element": "line",
+            "attributes": {
+              "x1": "330.0",
+              "y1": "120.0",
+              "x2": "330.0",
+              "y2": "320.0",
+              "stroke": "#6b7280",
+              "stroke-dasharray": "5 4"
+            }
+          },
+          {
+            "id": "u15-s010-mc01-fig-obj-2-h",
+            "element": "line",
+            "attributes": {
+              "x1": "330.0",
+              "y1": "120.0",
+              "x2": "163.3",
+              "y2": "120.0",
+              "stroke": "#6b7280",
+              "stroke-dasharray": "5 4"
+            }
+          }
+        ]
+      },
+      "svgTitle": "讀取 f(2)",
+      "svgDesc": "函數圖上標出點二逗號五，並以虛線投影到 x 軸二與 y 軸五。",
+      "svgAssertions": [
+        "u15-s010-mc01-fig",
+        "u15-s010-mc01-fig-title",
+        "u15-s010-mc01-fig-desc",
+        "role=\"img\"",
+        "viewBox=\"0 0 640 420\"",
+        "讀取 f(2)"
+      ],
+      "mobileReadabilityReview": "以 360px 寬縮放檢查，關鍵字標籤字級不低於等效 12px，點半徑與虛線仍可辨識。",
+      "answerLeakageReview": "圖僅呈現題目已給資料與必要坐標，不以醒目文字直接寫出選項答案；需由讀圖或計算完成。",
+      "figureReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "manualInspectionRequired": true,
+        "reviewNote": "已檢查 u15-s010-mc01-fig 的軸向、刻度、負號、端點實空心、標籤遮擋與手機縮放；圖形內容與「題目專用點圖，答案需由兩軸刻度讀取。」一致。",
+        "manualInspectionCompleted": true,
+        "renderedAt": "2026-07-12T18:20:00+08:00",
+        "renderedCanvas": "640×420 PNG，另以雙欄 contact sheet 檢視全部 14 圖",
+        "renderedInspectionSummary": "逐圖檢查坐標軸方向、刻度、公式與點標籤、實心及空心端點、虛線、文字遮擋、360px 縮放可讀性與答案洩漏；修正後未見幾何或標示衝突。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "5e7205f2e010e155e4d8b4f6645d93fdd7cd5da13f0fe250224de2279a2946d3"
+    },
+    {
+      "figureId": "u15-s010-mc07-fig",
+      "unitId": "u15",
+      "skillSlot": "s010",
+      "title": "兩函數交於 (3,7)",
+      "svgPath": "figures/u15/u15-s010-mc07-fig.svg",
+      "altText": "兩條直線 f 與 g 在三逗號七相交，輔助線指向 x 等於三與 y 等於七。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 640,
+          "height": 420,
+          "viewBox": "0 0 640 420"
+        },
+        "plotArea": {
+          "left": 80,
+          "top": 40,
+          "width": 500,
+          "height": 320
+        },
+        "xRange": [
+          0,
+          6
+        ],
+        "yRange": [
+          0,
+          10
+        ],
+        "objects": [
+          [
+            "line",
+            0,
+            1,
+            6,
+            13,
+            "f"
+          ],
+          [
+            "line",
+            0,
+            10,
+            6,
+            4,
+            "g"
+          ],
+          [
+            "point",
+            3,
+            7,
+            "(3,7)"
+          ],
+          [
+            "guide",
+            3,
+            7,
+            "3",
+            "7"
+          ]
+        ],
+        "axisLabels": [
+          "x",
+          "y"
+        ],
+        "visibleLineRules": "座標軸 2px、資料線 3px、輔助線 1px 虛線；端點依條件使用實心或空心圓。",
+        "hiddenLineRules": "本單元為平面函數圖，不使用隱藏線。",
+        "labelRules": "標籤避開資料線至少 6px，負號、括號與單位完整顯示。",
+        "tickRules": "端點、零點與題目必要坐標必須可讀；禁止依格數猜測未標示值。",
+        "toScale": true,
+        "visualInferenceWarning": "圖形依坐標範圍繪製，但答案必須以刻度與標示數值為準。",
+        "exactLabelPositions": [
+          {
+            "text": "x",
+            "x": "608",
+            "y": "388.0",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "y",
+            "x": "90.0",
+            "y": "50",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "68.0",
+            "y": "380.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "6",
+            "x": "568.0",
+            "y": "380.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "45.0",
+            "y": "364.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "10",
+            "x": "45.0",
+            "y": "44.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "f",
+            "x": "180",
+            "y": "92",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "g",
+            "x": "230",
+            "y": "230",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "(3,7)",
+            "x": "348",
+            "y": "112",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "3",
+            "x": "322.0",
+            "y": "378.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "7",
+            "x": "52.0",
+            "y": "131.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "圖形依坐標刻度繪製；線條粗細不可作為數值依據。",
+            "x": "80",
+            "y": "400",
+            "fontSize": "12",
+            "textAnchor": "start"
+          }
+        ],
+        "exactSvgGeometry": [
+          {
+            "id": "u15-s010-mc07-fig-x-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "80",
+              "y1": "360.0",
+              "x2": "590",
+              "y2": "360.0",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-s010-mc07-fig-y-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "80.0",
+              "y1": "360",
+              "x2": "80.0",
+              "y2": "30",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-s010-mc07-fig-obj-1",
+            "element": "line",
+            "attributes": {
+              "x1": "80.0",
+              "y1": "328.0",
+              "x2": "580.0",
+              "y2": "-56.0",
+              "stroke": "#1f2937",
+              "stroke-width": "3"
+            }
+          },
+          {
+            "id": "u15-s010-mc07-fig-obj-2",
+            "element": "line",
+            "attributes": {
+              "x1": "80.0",
+              "y1": "40.0",
+              "x2": "580.0",
+              "y2": "232.0",
+              "stroke": "#1f2937",
+              "stroke-width": "3"
+            }
+          },
+          {
+            "id": "u15-s010-mc07-fig-obj-3",
+            "element": "circle",
+            "attributes": {
+              "cx": "330.0",
+              "cy": "136.0",
+              "r": "6",
+              "fill": "#111"
+            }
+          },
+          {
+            "id": "u15-s010-mc07-fig-obj-4-v",
+            "element": "line",
+            "attributes": {
+              "x1": "330.0",
+              "y1": "136.0",
+              "x2": "330.0",
+              "y2": "360.0",
+              "stroke": "#6b7280",
+              "stroke-dasharray": "5 4"
+            }
+          },
+          {
+            "id": "u15-s010-mc07-fig-obj-4-h",
+            "element": "line",
+            "attributes": {
+              "x1": "330.0",
+              "y1": "136.0",
+              "x2": "80.0",
+              "y2": "136.0",
+              "stroke": "#6b7280",
+              "stroke-dasharray": "5 4"
+            }
+          }
+        ]
+      },
+      "svgTitle": "兩函數交於 (3,7)",
+      "svgDesc": "兩條直線 f 與 g 在三逗號七相交，輔助線指向 x 等於三與 y 等於七。",
+      "svgAssertions": [
+        "u15-s010-mc07-fig",
+        "u15-s010-mc07-fig-title",
+        "u15-s010-mc07-fig-desc",
+        "role=\"img\"",
+        "viewBox=\"0 0 640 420\"",
+        "兩函數交於 (3,7)"
+      ],
+      "mobileReadabilityReview": "以 360px 寬縮放檢查，關鍵字標籤字級不低於等效 12px，點半徑與虛線仍可辨識。",
+      "answerLeakageReview": "圖僅呈現題目已給資料與必要坐標，不以醒目文字直接寫出選項答案；需由讀圖或計算完成。",
+      "figureReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "manualInspectionRequired": true,
+        "reviewNote": "已檢查 u15-s010-mc07-fig 的軸向、刻度、負號、端點實空心、標籤遮擋與手機縮放；圖形內容與「題目專用交點圖，交點表示同一輸入下兩函數值相同。」一致。",
+        "manualInspectionCompleted": true,
+        "renderedAt": "2026-07-12T18:20:00+08:00",
+        "renderedCanvas": "640×420 PNG，另以雙欄 contact sheet 檢視全部 14 圖",
+        "renderedInspectionSummary": "逐圖檢查坐標軸方向、刻度、公式與點標籤、實心及空心端點、虛線、文字遮擋、360px 縮放可讀性與答案洩漏；修正後未見幾何或標示衝突。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "7933eae26c9e680884d25b92596b94b78e6dbb171914ff572a2ef450e22fc2ac"
+    },
+    {
+      "figureId": "u15-s010-cr01-fig",
+      "unitId": "u15",
+      "skillSlot": "s010",
+      "title": "直線 f 通過三個指定點",
+      "svgPath": "figures/u15/u15-s010-cr01-fig.svg",
+      "altText": "直線 f 通過負二逗號零、零逗號四與三逗號十，並標出三點。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 640,
+          "height": 420,
+          "viewBox": "0 0 640 420"
+        },
+        "plotArea": {
+          "left": 80,
+          "top": 40,
+          "width": 500,
+          "height": 320
+        },
+        "xRange": [
+          -3,
+          4
+        ],
+        "yRange": [
+          -2,
+          12
+        ],
+        "objects": [
+          [
+            "line",
+            -3,
+            -2,
+            4,
+            12,
+            "f"
+          ],
+          [
+            "point",
+            -2,
+            0,
+            "(-2,0)"
+          ],
+          [
+            "point",
+            0,
+            4,
+            "(0,4)"
+          ],
+          [
+            "point",
+            3,
+            10,
+            "(3,10)"
+          ]
+        ],
+        "axisLabels": [
+          "x",
+          "y"
+        ],
+        "visibleLineRules": "座標軸 2px、資料線 3px、輔助線 1px 虛線；端點依條件使用實心或空心圓。",
+        "hiddenLineRules": "本單元為平面函數圖，不使用隱藏線。",
+        "labelRules": "標籤避開資料線至少 6px，負號、括號與單位完整顯示。",
+        "tickRules": "端點、零點與題目必要坐標必須可讀；禁止依格數猜測未標示值。",
+        "toScale": true,
+        "visualInferenceWarning": "圖形依坐標範圍繪製，但答案必須以刻度與標示數值為準。",
+        "exactLabelPositions": [
+          {
+            "text": "x",
+            "x": "608",
+            "y": "342.3",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "y",
+            "x": "304.3",
+            "y": "50",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "-3",
+            "x": "68.0",
+            "y": "334.3",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "282.3",
+            "y": "334.3",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "4",
+            "x": "568.0",
+            "y": "334.3",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "-2",
+            "x": "259.3",
+            "y": "364.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "259.3",
+            "y": "318.3",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "12",
+            "x": "259.3",
+            "y": "44.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "f",
+            "x": "336.0",
+            "y": "192.0",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "(-2,0)",
+            "x": "159.4",
+            "y": "306.3",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "(0,4)",
+            "x": "302.3",
+            "y": "214.9",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "(3,10)",
+            "x": "516.6",
+            "y": "77.7",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "圖形依坐標刻度繪製；線條粗細不可作為數值依據。",
+            "x": "80",
+            "y": "400",
+            "fontSize": "12",
+            "textAnchor": "start"
+          }
+        ],
+        "exactSvgGeometry": [
+          {
+            "id": "u15-s010-cr01-fig-x-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "80",
+              "y1": "314.3",
+              "x2": "590",
+              "y2": "314.3",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-s010-cr01-fig-y-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "294.3",
+              "y1": "360",
+              "x2": "294.3",
+              "y2": "30",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-s010-cr01-fig-obj-1",
+            "element": "line",
+            "attributes": {
+              "x1": "80.0",
+              "y1": "360.0",
+              "x2": "580.0",
+              "y2": "40.0",
+              "stroke": "#1f2937",
+              "stroke-width": "3"
+            }
+          },
+          {
+            "id": "u15-s010-cr01-fig-obj-2",
+            "element": "circle",
+            "attributes": {
+              "cx": "151.4",
+              "cy": "314.3",
+              "r": "6",
+              "fill": "#111"
+            }
+          },
+          {
+            "id": "u15-s010-cr01-fig-obj-3",
+            "element": "circle",
+            "attributes": {
+              "cx": "294.3",
+              "cy": "222.9",
+              "r": "6",
+              "fill": "#111"
+            }
+          },
+          {
+            "id": "u15-s010-cr01-fig-obj-4",
+            "element": "circle",
+            "attributes": {
+              "cx": "508.6",
+              "cy": "85.7",
+              "r": "6",
+              "fill": "#111"
+            }
+          }
+        ]
+      },
+      "svgTitle": "直線 f 通過三個指定點",
+      "svgDesc": "直線 f 通過負二逗號零、零逗號四與三逗號十，並標出三點。",
+      "svgAssertions": [
+        "u15-s010-cr01-fig",
+        "u15-s010-cr01-fig-title",
+        "u15-s010-cr01-fig-desc",
+        "role=\"img\"",
+        "viewBox=\"0 0 640 420\"",
+        "直線 f 通過三個指定點"
+      ],
+      "mobileReadabilityReview": "以 360px 寬縮放檢查，關鍵字標籤字級不低於等效 12px，點半徑與虛線仍可辨識。",
+      "answerLeakageReview": "圖僅呈現題目已給資料與必要坐標，不以醒目文字直接寫出選項答案；需由讀圖或計算完成。",
+      "figureReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "manualInspectionRequired": true,
+        "reviewNote": "已檢查 u15-s010-cr01-fig 的軸向、刻度、負號、端點實空心、標籤遮擋與手機縮放；圖形內容與「非選擇題專用圖，刻度可讀 f(-1)、f(x)=6 與正值區間。」一致。",
+        "manualInspectionCompleted": true,
+        "renderedAt": "2026-07-12T18:20:00+08:00",
+        "renderedCanvas": "640×420 PNG，另以雙欄 contact sheet 檢視全部 14 圖",
+        "renderedInspectionSummary": "逐圖檢查坐標軸方向、刻度、公式與點標籤、實心及空心端點、虛線、文字遮擋、360px 縮放可讀性與答案洩漏；修正後未見幾何或標示衝突。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "949af9066f54ad89b1570edf91f1eb58d2adac52675568eab64f919604c724a6"
+    },
+    {
+      "figureId": "u15-s010-cr02-fig",
+      "unitId": "u15",
+      "skillSlot": "s010",
+      "title": "f 與 g 的交點問題",
+      "svgPath": "figures/u15/u15-s010-cr02-fig.svg",
+      "altText": "直線 f 通過零逗號六與六逗號零；直線 g 通過零逗號零與三逗號六；兩線交於二逗號四。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 640,
+          "height": 420,
+          "viewBox": "0 0 640 420"
+        },
+        "plotArea": {
+          "left": 80,
+          "top": 40,
+          "width": 500,
+          "height": 320
+        },
+        "xRange": [
+          -1,
+          7
+        ],
+        "yRange": [
+          -1,
+          8
+        ],
+        "objects": [
+          [
+            "line",
+            0,
+            6,
+            6,
+            0,
+            "f"
+          ],
+          [
+            "line",
+            0,
+            0,
+            3,
+            6,
+            "g"
+          ],
+          [
+            "point",
+            2,
+            4,
+            "交點"
+          ],
+          [
+            "point",
+            0,
+            6,
+            "f 截距"
+          ],
+          [
+            "point",
+            3,
+            6,
+            "g 上點"
+          ]
+        ],
+        "axisLabels": [
+          "x",
+          "y"
+        ],
+        "visibleLineRules": "座標軸 2px、資料線 3px、輔助線 1px 虛線；端點依條件使用實心或空心圓。",
+        "hiddenLineRules": "本單元為平面函數圖，不使用隱藏線。",
+        "labelRules": "標籤避開資料線至少 6px，負號、括號與單位完整顯示。",
+        "tickRules": "端點、零點與題目必要坐標必須可讀；禁止依格數猜測未標示值。",
+        "toScale": true,
+        "visualInferenceWarning": "圖形依坐標範圍繪製，但答案必須以刻度與標示數值為準。",
+        "exactLabelPositions": [
+          {
+            "text": "x",
+            "x": "608",
+            "y": "352.4",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "y",
+            "x": "152.5",
+            "y": "50",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "-1",
+            "x": "68.0",
+            "y": "344.4",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "130.5",
+            "y": "344.4",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "7",
+            "x": "568.0",
+            "y": "344.4",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "-1",
+            "x": "107.5",
+            "y": "364.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "107.5",
+            "y": "328.4",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "8",
+            "x": "107.5",
+            "y": "44.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "f",
+            "x": "336.0",
+            "y": "209.8",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "g",
+            "x": "242.2",
+            "y": "209.8",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "交點",
+            "x": "275.5",
+            "y": "174.2",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "f 截距",
+            "x": "150.5",
+            "y": "103.1",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "g 上點",
+            "x": "338.0",
+            "y": "103.1",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "圖形依坐標刻度繪製；線條粗細不可作為數值依據。",
+            "x": "80",
+            "y": "400",
+            "fontSize": "12",
+            "textAnchor": "start"
+          }
+        ],
+        "exactSvgGeometry": [
+          {
+            "id": "u15-s010-cr02-fig-x-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "80",
+              "y1": "324.4",
+              "x2": "590",
+              "y2": "324.4",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-s010-cr02-fig-y-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "142.5",
+              "y1": "360",
+              "x2": "142.5",
+              "y2": "30",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-s010-cr02-fig-obj-1",
+            "element": "line",
+            "attributes": {
+              "x1": "142.5",
+              "y1": "111.1",
+              "x2": "517.5",
+              "y2": "324.4",
+              "stroke": "#1f2937",
+              "stroke-width": "3"
+            }
+          },
+          {
+            "id": "u15-s010-cr02-fig-obj-2",
+            "element": "line",
+            "attributes": {
+              "x1": "142.5",
+              "y1": "324.4",
+              "x2": "330.0",
+              "y2": "111.1",
+              "stroke": "#1f2937",
+              "stroke-width": "3"
+            }
+          },
+          {
+            "id": "u15-s010-cr02-fig-obj-3",
+            "element": "circle",
+            "attributes": {
+              "cx": "267.5",
+              "cy": "182.2",
+              "r": "6",
+              "fill": "#111"
+            }
+          },
+          {
+            "id": "u15-s010-cr02-fig-obj-4",
+            "element": "circle",
+            "attributes": {
+              "cx": "142.5",
+              "cy": "111.1",
+              "r": "6",
+              "fill": "#111"
+            }
+          },
+          {
+            "id": "u15-s010-cr02-fig-obj-5",
+            "element": "circle",
+            "attributes": {
+              "cx": "330.0",
+              "cy": "111.1",
+              "r": "6",
+              "fill": "#111"
+            }
+          }
+        ]
+      },
+      "svgTitle": "f 與 g 的交點問題",
+      "svgDesc": "直線 f 通過零逗號六與六逗號零；直線 g 通過零逗號零與三逗號六；兩線交於二逗號四。",
+      "svgAssertions": [
+        "u15-s010-cr02-fig",
+        "u15-s010-cr02-fig-title",
+        "u15-s010-cr02-fig-desc",
+        "role=\"img\"",
+        "viewBox=\"0 0 640 420\"",
+        "f 與 g 的交點問題"
+      ],
+      "mobileReadabilityReview": "以 360px 寬縮放檢查，關鍵字標籤字級不低於等效 12px，點半徑與虛線仍可辨識。",
+      "answerLeakageReview": "圖僅呈現題目已給資料與必要坐標，不以醒目文字直接寫出選項答案；需由讀圖或計算完成。",
+      "figureReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "manualInspectionRequired": true,
+        "reviewNote": "已檢查 u15-s010-cr02-fig 的軸向、刻度、負號、端點實空心、標籤遮擋與手機縮放；圖形內容與「非選擇題專用圖，兩線以各自兩點決定。」一致。",
+        "manualInspectionCompleted": true,
+        "renderedAt": "2026-07-12T18:20:00+08:00",
+        "renderedCanvas": "640×420 PNG，另以雙欄 contact sheet 檢視全部 14 圖",
+        "renderedInspectionSummary": "逐圖檢查坐標軸方向、刻度、公式與點標籤、實心及空心端點、虛線、文字遮擋、360px 縮放可讀性與答案洩漏；修正後未見幾何或標示衝突。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "83a37b8ad710bf1d02c268218bfa13f8a760a62360789df77aa5b99fe029f94a"
+    }
+  ],
+  "sourceBatch": "016-u15-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/016-u15-complete/units/u15/s010"
+}

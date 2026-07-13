@@ -1,0 +1,1471 @@
+{
+  "slot": "s009",
+  "skillId": "linear-function-rate",
+  "topicId": "u15-graphs",
+  "lecture": {
+    "lectureId": "u15-s009-lecture",
+    "unitId": "u15",
+    "numericUnitId": 15,
+    "unitTitle": "函數及其圖形",
+    "topicId": "u15-graphs",
+    "skillId": "linear-function-rate",
+    "skillSlot": "s009",
+    "skillTitle": "速率與線型函數",
+    "order": 9,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "prerequisites": [
+      {
+        "skillId": "linear-function-slope-intercept",
+        "title": "斜截式",
+        "requiredLevel": "能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。",
+        "bridge": "斜率不是只有圖形意義；在距離、溫度、容量等情境中，它就是帶單位的平均變化率或固定速率。"
+      }
+    ],
+    "learningGoals": [
+      "以單位化方式解讀斜率",
+      "由兩筆資料求固定速率",
+      "在不同單位與方向下比較變化率"
+    ],
+    "vocabulary": [
+      {
+        "term": "變化率",
+        "meaning": "輸出改變量除以輸入改變量"
+      },
+      {
+        "term": "速率單位",
+        "meaning": "例如公里／小時、元／件"
+      },
+      {
+        "term": "平均變化率",
+        "meaning": "兩點間的輸出差除以輸入差"
+      }
+    ],
+    "conceptDevelopment": [
+      "線型函數的斜率就是固定變化率。分子是輸出變化，分母是輸入變化，因此單位必須寫成「輸出單位／輸入單位」。",
+      "負斜率表示輸入增加時輸出下降，例如每分鐘降溫 2°C，斜率是 -2°C／分鐘。"
+    ],
+    "definitionsAndMeaning": "線型函數的斜率就是固定變化率。分子是輸出變化，分母是輸入變化，因此單位必須寫成「輸出單位／輸入單位」。",
+    "formulasAndConditions": [
+      "a=Δy/Δx=(y₂-y₁)/(x₂-x₁)。",
+      "線型函數 y=ax+b 中，a 同時是每 1 單位 x 的固定改變量。"
+    ],
+    "invalidUseCases": [
+      "只除兩個 y 值，不算差。",
+      "分子分母減法順序不一致。",
+      "比較速率前未統一單位。"
+    ],
+    "stepByStepMethod": [
+      "寫出兩個資料點及其單位。",
+      "用一致順序求 Δy、Δx。",
+      "相除並化簡。",
+      "以正負號與單位解釋結果。"
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "s009-ex01",
+        "title": "正速率",
+        "prompt": "車輛 2 小時行駛 120 公里。求每小時的固定速率，並寫出單位。",
+        "solution": "2 小時行 120 公里，速率 60 公里／小時。",
+        "level": "basic"
+      },
+      {
+        "exampleId": "s009-ex02",
+        "title": "負速率",
+        "prompt": "溫度在 10 分鐘內由 26°C 降到 21°C。求每分鐘平均變化率，並解釋負號。",
+        "solution": "溫度 10 分鐘由 26 降到 21，變化率 -0.5°C／分鐘。",
+        "level": "standard"
+      },
+      {
+        "exampleId": "s009-ex03",
+        "title": "表格",
+        "prompt": "表格顯示 x 由 2 增到 5 時，y 由 7 增到 19。求 Δy、Δx 與斜率。",
+        "solution": "x 增加 3 時 y 增加 12，斜率 4。",
+        "level": "advanced"
+      },
+      {
+        "exampleId": "s009-ex04",
+        "title": "單位換算",
+        "prompt": "某速度為 90 公里／小時。換算成公里／分鐘，以便和另一筆公里／分鐘資料比較。",
+        "solution": "90 公里／小時=1.5 公里／分鐘，才能與公里／分鐘資料比較。",
+        "level": "connection"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeId": "s009-m01",
+        "wrongReasoning": "把終值除以終時當變化率，即使起點不在 0。",
+        "correction": "變化率應用 (終值-初值)/(終時-初時)；只有初始時間與初始量皆為 0 時，終值÷終時才剛好相同。"
+      },
+      {
+        "mistakeId": "s009-m02",
+        "wrongReasoning": "漏寫負號。",
+        "correction": "輸出下降時 Δy<0，因此變化率要保留負號；負號表示方向，不是可省略的記號。"
+      },
+      {
+        "mistakeId": "s009-m03",
+        "wrongReasoning": "把 km/h 與 km/min 直接比較數字。",
+        "correction": "先把兩筆速率換成相同單位，例如都用公里／分鐘，再比較數值；不同單位的數字不能直接比。"
+      },
+      {
+        "mistakeId": "s009-m04",
+        "wrongReasoning": "Δx=0 時仍嘗試計算斜率。",
+        "correction": "斜率分母 Δx 必須非 0；兩點 x 坐標相同形成垂直線，不能視為 y 關於 x 的線型函數。"
+      },
+      {
+        "mistakeId": "s009-m05",
+        "wrongReasoning": "把截距誤當速率。",
+        "correction": "在 y=ax+b 中，a 才是每單位輸入的變化量；b 是輸入為 0 時的初始值或固定量。"
+      }
+    ],
+    "selfChecks": [
+      {
+        "prompt": "x 增 4，y 增 20，斜率？",
+        "answer": "5"
+      },
+      {
+        "prompt": "每分鐘少 3 公升，斜率？",
+        "answer": "-3 公升／分鐘"
+      },
+      {
+        "prompt": "兩點 x 相同可算斜率嗎？",
+        "answer": "不可以，分母為 0。"
+      }
+    ],
+    "summary": "斜率是帶有方向與單位的固定變化率。",
+    "previousSkillConnection": "linear-function-slope-intercept",
+    "nextSkillConnection": "function-graph-read-point",
+    "figureRefs": [
+      "u15-fig-rate"
+    ],
+    "accessibilityNotes": [
+      "圖形 u15-fig-rate 另附繁體中文替代文字與不按比例警告。"
+    ],
+    "lectureReview": {
+      "reviewVersion": "human-lecture-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "decision": "pass",
+      "reviewNote": "逐段人工重讀「速率與線型函數」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+      "zeroFoundationCheck": "學生只需具備 能以自己的話說明「斜截式」並完成基本判斷或計算。",
+      "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+    },
+    "canonicalization": "sorted-keys-json-utf8-v1",
+    "contentSha256": "b5fb5a796a6db461c85a9277a24d681c7c366ce8b790bf0683c1621e2d421d7e"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u15-s009-mc01",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "線型資料中，x 從 2 增加到 5，y 從 7 增加到 19。變化率為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由兩點求變化率」。",
+      "target": "由兩點求變化率",
+      "choices": [
+        "4",
+        "3",
+        "6",
+        "12"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：算 Δy=12；算 Δx=3；相除得 4。因此得到「4」。",
+      "explanation": "變化率=(19-7)/(5-2)=12/3=4。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "算 Δy=12"
+        },
+        {
+          "step": 2,
+          "work": "算 Δx=3"
+        },
+        {
+          "step": 3,
+          "work": "相除得 4"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "4",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；變化率=(19-7)/(5-2)=12/3=4。"
+        },
+        {
+          "index": 1,
+          "choice": "3",
+          "truth": false,
+          "reason": "只算 Δx。"
+        },
+        {
+          "index": 2,
+          "choice": "6",
+          "truth": false,
+          "reason": "把 12 除以 2。"
+        },
+        {
+          "index": 3,
+          "choice": "12",
+          "truth": false,
+          "reason": "只報 Δy。"
+        }
+      ],
+      "misconceptionTarget": "只算差未相除",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「由兩點求變化率」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 90,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由兩點求變化率」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「4」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由兩點求變化率」只有題幹所述的一種解讀。",
+      "difficultyReason": "直接套差商，屬基礎。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "a602bfb0692c958d413907fe61453c814e1cddd80e130d4c04764d407bbcaa63"
+    },
+    {
+      "questionId": "u15-s009-mc02",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "表格中 x 每增加 1，y 都增加 6。此線型函數的斜率為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由表格直接讀斜率」。",
+      "target": "由表格直接讀斜率",
+      "choices": [
+        "1",
+        "5",
+        "7",
+        "6"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：確認 Δx=1；讀 Δy=6；得斜率 6。因此得到「6」。",
+      "explanation": "每一單位 x 的 y 改變量就是斜率 6。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "確認 Δx=1"
+        },
+        {
+          "step": 2,
+          "work": "讀 Δy=6"
+        },
+        {
+          "step": 3,
+          "work": "得斜率 6"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "1",
+          "truth": false,
+          "reason": "把輸入增量當斜率。"
+        },
+        {
+          "index": 1,
+          "choice": "5",
+          "truth": false,
+          "reason": "用 6-1。"
+        },
+        {
+          "index": 2,
+          "choice": "7",
+          "truth": false,
+          "reason": "用 6+1。"
+        },
+        {
+          "index": 3,
+          "choice": "6",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；每一單位 x 的 y 改變量就是斜率 6。"
+        }
+      ],
+      "misconceptionTarget": "未理解每單位變化",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「由表格直接讀斜率」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 94,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由表格直接讀斜率」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「6」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由表格直接讀斜率」只有題幹所述的一種解讀。",
+      "difficultyReason": "單位增量已給定，屬基礎。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "e0c54a8d33adb18b800caf537681c6148eaa0340527e47a99d0363ba45793eff"
+    },
+    {
+      "questionId": "u15-s009-mc03",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "某量每分鐘減少 2 單位，以時間為 x。其線型函數斜率為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由文字寫變化率」。",
+      "target": "由文字寫變化率",
+      "choices": [
+        "2",
+        "-2",
+        "1/2",
+        "0"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：辨認方向為下降；每 1 分鐘變 -2；寫斜率 -2。因此得到「-2」。",
+      "explanation": "「減少」表示輸出變化為負，每分鐘 -2。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "辨認方向為下降"
+        },
+        {
+          "step": 2,
+          "work": "每 1 分鐘變 -2"
+        },
+        {
+          "step": 3,
+          "work": "寫斜率 -2"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "2",
+          "truth": false,
+          "reason": "漏負號。"
+        },
+        {
+          "index": 1,
+          "choice": "-2",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；「減少」表示輸出變化為負，每分鐘 -2。"
+        },
+        {
+          "index": 2,
+          "choice": "1/2",
+          "truth": false,
+          "reason": "倒置速率。"
+        },
+        {
+          "index": 3,
+          "choice": "0",
+          "truth": false,
+          "reason": "減少不代表零變化。"
+        }
+      ],
+      "misconceptionTarget": "把下降速率寫成正值",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「由文字寫變化率」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 98,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由文字寫變化率」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「-2」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由文字寫變化率」只有題幹所述的一種解讀。",
+      "difficultyReason": "辨認方向與單位，屬基礎。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "b3132fcf056e36e7354876b84505d89216cdb768d21ee955b9852a8488488774"
+    },
+    {
+      "questionId": "u15-s009-mc04",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "水槽 3 分鐘增加 18 公升，且速率固定。注水速率為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「計算帶單位速率」。",
+      "target": "計算帶單位速率",
+      "choices": [
+        "18 公升／分鐘",
+        "1/6 公升／分鐘",
+        "6 公升／分鐘",
+        "54 公升／分鐘"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：算水量差 18；除以時間差 3；附單位。因此得到「6 公升／分鐘」。",
+      "explanation": "18÷3=6，單位是輸出公升除以輸入分鐘。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "算水量差 18"
+        },
+        {
+          "step": 2,
+          "work": "除以時間差 3"
+        },
+        {
+          "step": 3,
+          "work": "附單位"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "18 公升／分鐘",
+          "truth": false,
+          "reason": "未除時間。"
+        },
+        {
+          "index": 1,
+          "choice": "1/6 公升／分鐘",
+          "truth": false,
+          "reason": "倒置比率。"
+        },
+        {
+          "index": 2,
+          "choice": "6 公升／分鐘",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；18÷3=6，單位是輸出公升除以輸入分鐘。"
+        },
+        {
+          "index": 3,
+          "choice": "54 公升／分鐘",
+          "truth": false,
+          "reason": "把兩數相乘。"
+        }
+      ],
+      "misconceptionTarget": "變化率計算或單位倒置",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「計算帶單位速率」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 102,
+      "unitAndRoundingCheck": "「公升／分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「計算帶單位速率」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「6 公升／分鐘」符合；其餘錯因分別記錄於 optionAnalysis。；「公升／分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「計算帶單位速率」只有題幹所述的一種解讀。",
+      "difficultyReason": "需保留量綱，屬標準。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "30b422718766455042657a9e2df3387742a74b6911b6283a65cf749afcf9d96f"
+    },
+    {
+      "questionId": "u15-s009-mc05",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "溫度在 4 分鐘時為 28°C，10 分鐘時為 19°C。若呈線型變化，平均變化率為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由非零起點資料求平均變化率」。",
+      "target": "由非零起點資料求平均變化率",
+      "choices": [
+        "1.5°C／分鐘",
+        "-0.9°C／分鐘",
+        "-9°C／分鐘",
+        "-1.5°C／分鐘"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：求 ΔT=-9；求 Δt=6；相除 -1.5。因此得到「-1.5°C／分鐘」。",
+      "explanation": "(19-28)/(10-4)=-9/6=-1.5°C／分鐘。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "求 ΔT=-9"
+        },
+        {
+          "step": 2,
+          "work": "求 Δt=6"
+        },
+        {
+          "step": 3,
+          "work": "相除 -1.5"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "1.5°C／分鐘",
+          "truth": false,
+          "reason": "漏負號。"
+        },
+        {
+          "index": 1,
+          "choice": "-0.9°C／分鐘",
+          "truth": false,
+          "reason": "用 -9÷10。"
+        },
+        {
+          "index": 2,
+          "choice": "-9°C／分鐘",
+          "truth": false,
+          "reason": "只報總溫差。"
+        },
+        {
+          "index": 3,
+          "choice": "-1.5°C／分鐘",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；(19-28)/(10-4)=-9/6=-1.5°C／分鐘。"
+        }
+      ],
+      "misconceptionTarget": "使用終值時間而非時間差",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「由非零起點資料求平均變化率」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 106,
+      "unitAndRoundingCheck": "「°C／分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由非零起點資料求平均變化率」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「-1.5°C／分鐘」符合；其餘錯因分別記錄於 optionAnalysis。；「°C／分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由非零起點資料求平均變化率」只有題幹所述的一種解讀。",
+      "difficultyReason": "需從兩個非零時間點取差，屬標準。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "f38300dc4e2a5ac64b05cc6a6a33acd69958bc65ae8875804df5b2ce6a844c63"
+    },
+    {
+      "questionId": "u15-s009-mc06",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "某線型函數在 x=0 時 y=12，且每當 x 增加 4，y 增加 10。其函數式為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由初值與批次變化建立線型函數」。",
+      "target": "由初值與批次變化建立線型函數",
+      "choices": [
+        "y=4x+10",
+        "y=2.5x+12",
+        "y=10x+12",
+        "y=2.5x+10"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：求斜率 2.5；讀初值 12；寫 y=2.5x+12。因此得到「y=2.5x+12」。",
+      "explanation": "斜率 10/4=2.5，截距為 12。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "求斜率 2.5"
+        },
+        {
+          "step": 2,
+          "work": "讀初值 12"
+        },
+        {
+          "step": 3,
+          "work": "寫 y=2.5x+12"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "y=4x+10",
+          "truth": false,
+          "reason": "把 Δx 當斜率且把 Δy 當截距。"
+        },
+        {
+          "index": 1,
+          "choice": "y=2.5x+12",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；斜率 10/4=2.5，截距為 12。"
+        },
+        {
+          "index": 2,
+          "choice": "y=10x+12",
+          "truth": false,
+          "reason": "未除以 4。"
+        },
+        {
+          "index": 3,
+          "choice": "y=2.5x+10",
+          "truth": false,
+          "reason": "截距誤用 10。"
+        }
+      ],
+      "misconceptionTarget": "將總變化量直接當斜率",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「由初值與批次變化建立線型函數」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 110,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由初值與批次變化建立線型函數」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「y=2.5x+12」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由初值與批次變化建立線型函數」只有題幹所述的一種解讀。",
+      "difficultyReason": "需先把每 4 單位轉成每 1 單位，屬標準。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "0755590f4fbf711eb3e59b8d81eef78fb4094a4ce5b2d9151e480d03285fa34a"
+    },
+    {
+      "questionId": "u15-s009-mc07",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "甲速率 90 公里／小時，乙速率 1.6 公里／分鐘。誰較快？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「比較不同單位的線型速率」。",
+      "target": "比較不同單位的線型速率",
+      "choices": [
+        "甲較快",
+        "一樣快",
+        "乙較快",
+        "單位不同所以不能比較"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：把甲換成公里／分鐘；90÷60=1.5；比較 1.5 與 1.6。因此得到「乙較快」。",
+      "explanation": "90 公里／小時=1.5 公里／分鐘，小於 1.6。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "把甲換成公里／分鐘"
+        },
+        {
+          "step": 2,
+          "work": "90÷60=1.5"
+        },
+        {
+          "step": 3,
+          "work": "比較 1.5 與 1.6"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "甲較快",
+          "truth": false,
+          "reason": "未換單位就比 90 與 1.6。"
+        },
+        {
+          "index": 1,
+          "choice": "一樣快",
+          "truth": false,
+          "reason": "兩速率不同。"
+        },
+        {
+          "index": 2,
+          "choice": "乙較快",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；90 公里／小時=1.5 公里／分鐘，小於 1.6。"
+        },
+        {
+          "index": 3,
+          "choice": "單位不同所以不能比較",
+          "truth": false,
+          "reason": "可以先統一單位後比較。"
+        }
+      ],
+      "misconceptionTarget": "未統一速率單位",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「比較不同單位的線型速率」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 114,
+      "unitAndRoundingCheck": "「統一為公里／分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「比較不同單位的線型速率」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「乙較快」符合；其餘錯因分別記錄於 optionAnalysis。；「統一為公里／分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「比較不同單位的線型速率」只有題幹所述的一種解讀。",
+      "difficultyReason": "涉及單位換算後比較，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "69f19adfef562ca3e8b7ea4a49284d07a08e7ba3803ca60ac44c528fea86d982"
+    },
+    {
+      "questionId": "u15-s009-mc08",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "水量 V=240-12t（公升），t 為分鐘。水量降到 60 公升需多久？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由固定速率反求時間」。",
+      "target": "由固定速率反求時間",
+      "choices": [
+        "15 分鐘",
+        "12 分鐘",
+        "18 分鐘",
+        "25 分鐘"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：把目標設 V=60；解 12t=180；得 15。因此得到「15 分鐘」。",
+      "explanation": "令 240-12t=60，得 12t=180，所以 t=15。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "把目標設 V=60"
+        },
+        {
+          "step": 2,
+          "work": "解 12t=180"
+        },
+        {
+          "step": 3,
+          "work": "得 15"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "15 分鐘",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；令 240-12t=60，得 12t=180，所以 t=15。"
+        },
+        {
+          "index": 1,
+          "choice": "12 分鐘",
+          "truth": false,
+          "reason": "只用 240÷20 等錯誤估算。"
+        },
+        {
+          "index": 2,
+          "choice": "18 分鐘",
+          "truth": false,
+          "reason": "把 180÷10。"
+        },
+        {
+          "index": 3,
+          "choice": "25 分鐘",
+          "truth": false,
+          "reason": "用初值除速率，算到完全排空。"
+        }
+      ],
+      "misconceptionTarget": "把到目標與到零混淆",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「由固定速率反求時間」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 118,
+      "unitAndRoundingCheck": "「分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由固定速率反求時間」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「15 分鐘」符合；其餘錯因分別記錄於 optionAnalysis。；「分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由固定速率反求時間」只有題幹所述的一種解讀。",
+      "difficultyReason": "需建立到指定目標的方程，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "4b2433f3d4bbe2295ba5a3253841468569f9cbf3d96e0e94adfc1d92a08a5dfb"
+    },
+    {
+      "questionId": "u15-s009-mc09",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "線型表格中，x=2 時 y=11，x=5 時 y=20。若 x=8，y 為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「用固定速率補線型資料」。",
+      "target": "用固定速率補線型資料",
+      "choices": [
+        "23",
+        "29",
+        "26",
+        "32"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：求斜率 3；計算 Δx=3；加 Δy=9。因此得到「29」。",
+      "explanation": "斜率 (20-11)/(5-2)=3；x 從 5 到 8 增 3，y 增 9，得 29。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "求斜率 3"
+        },
+        {
+          "step": 2,
+          "work": "計算 Δx=3"
+        },
+        {
+          "step": 3,
+          "work": "加 Δy=9"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "23",
+          "truth": false,
+          "reason": "只把 x 增量加到 y。"
+        },
+        {
+          "index": 1,
+          "choice": "29",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；斜率 (20-11)/(5-2)=3；x 從 5 到 8 增 3，y 增 9，得 29。"
+        },
+        {
+          "index": 2,
+          "choice": "26",
+          "truth": false,
+          "reason": "只加一次斜率兩次。"
+        },
+        {
+          "index": 3,
+          "choice": "32",
+          "truth": false,
+          "reason": "把 20 加 12。"
+        }
+      ],
+      "misconceptionTarget": "外推時未乘輸入增量",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「用固定速率補線型資料」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 122,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「用固定速率補線型資料」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「29」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「用固定速率補線型資料」只有題幹所述的一種解讀。",
+      "difficultyReason": "先求速率再外推，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "0af751f1bd3825736b3380d948d17492d5a9616afa2c2e2048ef81544bf15e58"
+    },
+    {
+      "questionId": "u15-s009-mc10",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "步行距離 d=0.08t，t 為分鐘、d 為公里。係數 0.08 的正確單位與意義為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「解讀距離時間模型的係數」。",
+      "target": "解讀距離時間模型的係數",
+      "choices": [
+        "0.08 分鐘／公里，每公里走 0.08 分鐘",
+        "0.08 公里，是起始距離",
+        "0.08 公里／分鐘，每分鐘走 0.08 公里",
+        "每小時走 0.08 公里"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：辨認輸出 d 的單位；辨認輸入 t 的單位；組成公里／分鐘。因此得到「0.08 公里／分鐘，每分鐘走 0.08 公里」。",
+      "explanation": "斜率單位是輸出公里除以輸入分鐘。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "辨認輸出 d 的單位"
+        },
+        {
+          "step": 2,
+          "work": "辨認輸入 t 的單位"
+        },
+        {
+          "step": 3,
+          "work": "組成公里／分鐘"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "0.08 分鐘／公里，每公里走 0.08 分鐘",
+          "truth": false,
+          "reason": "單位倒置。"
+        },
+        {
+          "index": 1,
+          "choice": "0.08 公里，是起始距離",
+          "truth": false,
+          "reason": "截距才是起始距離，此處為 0。"
+        },
+        {
+          "index": 2,
+          "choice": "0.08 公里／分鐘，每分鐘走 0.08 公里",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；斜率單位是輸出公里除以輸入分鐘。"
+        },
+        {
+          "index": 3,
+          "choice": "每小時走 0.08 公里",
+          "truth": false,
+          "reason": "未做分鐘到小時換算。"
+        }
+      ],
+      "misconceptionTarget": "斜率單位倒置",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「解讀距離時間模型的係數」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 126,
+      "unitAndRoundingCheck": "「公里／分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「解讀距離時間模型的係數」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「0.08 公里／分鐘，每分鐘走 0.08 公里」符合；其餘錯因分別記錄於 optionAnalysis。；「公里／分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「解讀距離時間模型的係數」只有題幹所述的一種解讀。",
+      "difficultyReason": "需由變數單位推導斜率量綱，屬素養。",
+      "literacyContextNecessity": "相同數字配上不同單位會有完全不同意義，單位是情境核心。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "d10f46f0deea28a84049872d59bcbe15333b31cea13d91eb326d2d276397586f"
+    },
+    {
+      "questionId": "u15-s009-mc11",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "飲料從 80°C 線型降溫，每 5 分鐘下降 6°C。以 t（分鐘）為時間，最合理的模型是什麼？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由降溫敘述建立線型模型」。",
+      "target": "由降溫敘述建立線型模型",
+      "choices": [
+        "T=80-1.2t",
+        "T=80-6t",
+        "T=5-6t",
+        "T=80+1.2t"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：把 5 分鐘速率換成每分鐘；保留下降負號；加上初值 80。因此得到「T=80-1.2t」。",
+      "explanation": "每分鐘下降 6/5=1.2°C，起始 80°C，故 T=80-1.2t。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "把 5 分鐘速率換成每分鐘"
+        },
+        {
+          "step": 2,
+          "work": "保留下降負號"
+        },
+        {
+          "step": 3,
+          "work": "加上初值 80"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "T=80-1.2t",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；每分鐘下降 6/5=1.2°C，起始 80°C，故 T=80-1.2t。"
+        },
+        {
+          "index": 1,
+          "choice": "T=80-6t",
+          "truth": false,
+          "reason": "把每 5 分鐘下降量直接當每分鐘斜率。"
+        },
+        {
+          "index": 2,
+          "choice": "T=5-6t",
+          "truth": false,
+          "reason": "把時間間隔 5 當截距。"
+        },
+        {
+          "index": 3,
+          "choice": "T=80+1.2t",
+          "truth": false,
+          "reason": "下降方向符號錯。"
+        }
+      ],
+      "misconceptionTarget": "未把批次速率換成單位速率",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「由降溫敘述建立線型模型」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 130,
+      "unitAndRoundingCheck": "「斜率為 °C／分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由降溫敘述建立線型模型」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「T=80-1.2t」符合；其餘錯因分別記錄於 optionAnalysis。；「斜率為 °C／分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由降溫敘述建立線型模型」只有題幹所述的一種解讀。",
+      "difficultyReason": "需處理批次變化、方向與初值，屬素養。",
+      "literacyContextNecessity": "「每 5 分鐘」必須轉成每 1 分鐘，情境語句是模型關鍵。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "b3a1502fc6c277162a9600008315407a52ac69436025d6523460e3a4f93eeee1"
+    },
+    {
+      "questionId": "u15-s009-mc12",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "手機電量模型 B=100-7.5t，t 以小時計。有人說「使用 8 小時後電量為 40%，所以平均耗電率是 40÷8=5%／小時」。哪裡錯？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「評估耗電率的錯誤計算」。",
+      "target": "評估耗電率的錯誤計算",
+      "choices": [
+        "40÷8 正確，模型係數不重要",
+        "應算 100÷8=12.5%／小時",
+        "應把 40 與 8 相乘",
+        "應以電量改變 100-40=60 再除 8，耗電率為 7.5%／小時"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：找初值 100 與終值 40；求改變量 -60；除以 8 得 -7.5。因此得到「應以電量改變 100-40=60 再除 8，耗電率為 7.5%／小時」。",
+      "explanation": "變化率要用輸出差，不是終值除以時間；(40-100)/(8-0)=-7.5。耗電量速率大小為 7.5%。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "找初值 100 與終值 40"
+        },
+        {
+          "step": 2,
+          "work": "求改變量 -60"
+        },
+        {
+          "step": 3,
+          "work": "除以 8 得 -7.5"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "40÷8 正確，模型係數不重要",
+          "truth": false,
+          "reason": "忽略線型模型係數與初值。"
+        },
+        {
+          "index": 1,
+          "choice": "應算 100÷8=12.5%／小時",
+          "truth": false,
+          "reason": "這是到零的平均，不是觀察區間變化。"
+        },
+        {
+          "index": 2,
+          "choice": "應把 40 與 8 相乘",
+          "truth": false,
+          "reason": "乘法不是差商。"
+        },
+        {
+          "index": 3,
+          "choice": "應以電量改變 100-40=60 再除 8，耗電率為 7.5%／小時",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；變化率要用輸出差，不是終值除以時間；(40-100)/(8-0)=-7.5。耗電量速率大小為 7.5%。"
+        }
+      ],
+      "misconceptionTarget": "把終值除以時間當變化率",
+      "prerequisiteCheck": "先備能力是「能從 y=ax+b 讀出斜率 a 與截距 b，並能用兩點求出每單位輸入的輸出變化。」本題將此能力用於「評估耗電率的錯誤計算」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 134,
+      "unitAndRoundingCheck": "「電量變化率為百分點／小時。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「評估耗電率的錯誤計算」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「應以電量改變 100-40=60 再除 8，耗電率為 7.5%／小時」符合；其餘錯因分別記錄於 optionAnalysis。；「電量變化率為百分點／小時。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「評估耗電率的錯誤計算」只有題幹所述的一種解讀。",
+      "difficultyReason": "需診斷計算方法並用模型反證，屬素養。",
+      "literacyContextNecessity": "此題用錯誤主張凸顯變化率必須用差值，不能只看終值。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "26bad39e72448358ab922b55d58055c83a10fdf2a93edf9ef6f213be6f3b9ccf"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u15-s009-cr01",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "type": "constructed-response",
+      "prompt": "某容器在 t=2 分鐘時有 74 公升，t=8 分鐘時有 44 公升，水量呈線型。求變化率、函數式，並預測何時排空。",
+      "requiredWork": "須由兩點求負速率、截距與零點。",
+      "standardSolution": "變化率=(44-74)/(8-2)=-30/6=-5 公升／分鐘。設 V=-5t+b，代 t=2：74=-10+b，b=84，所以 V=84-5t。排空時 84-5t=0，t=16.8 分鐘。",
+      "alternativeMethod": "可從 t=2 的 74 公升開始，每分鐘減 5；再需 74/5=14.8 分鐘，所以總時刻 16.8。",
+      "reasoningSteps": [
+        {
+          "step": 1,
+          "work": "求速率 -5"
+        },
+        {
+          "step": 2,
+          "work": "求截距 84"
+        },
+        {
+          "step": 3,
+          "work": "寫模型"
+        },
+        {
+          "step": 4,
+          "work": "解零點 16.8"
+        }
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "求得變化率 -5 公升／分鐘、模型 V=84-5t，並解得排空時刻 t=16.8 分鐘；負號與非零起點皆解釋正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "變化率與模型正確但漏算排空時刻，或三項中只有一次非核心算術錯且後續依該結果一致。"
+        },
+        {
+          "score": 1,
+          "criteria": "只正確求得 -5 公升／分鐘，或寫出 V=-5t+b 但未由已知點求 b。"
+        },
+        {
+          "score": 0,
+          "criteria": "以 44÷8 或 74÷2 當變化率而忽略兩點差，且沒有建立可通過兩筆資料的模型。"
+        }
+      ],
+      "partialCreditRules": [
+        "若變化率 -5 正確但 b 算錯，後續排空時刻依錯誤模型一致，可保留速率與建模方法分，最高 2 分。",
+        "漏寫公升／分鐘或分鐘等單位，數值皆正確時降一級。"
+      ],
+      "followThroughPolicy": "本題延續計分依以下具體規則處理：若變化率 -5 正確但 b 算錯，後續排空時刻依錯誤模型一致，可保留速率與建模方法分，最高 2 分。；漏寫公升／分鐘或分鐘等單位，數值皆正確時降一級。",
+      "unitAndNotationRules": "沿用題幹的變數、序對、不等號與計量單位；作答必須清楚呈現以下要求中的符號與單位：須由兩點求負速率、截距與零點。",
+      "answerOnlyPolicy": "只寫最終答案而未呈現必要方法時，依本題 1 分規準處理：只正確求得 -5 公升／分鐘，或寫出 V=-5t+b 但未由已知點求 b。；答案錯且無可辨識過程則為 0 分。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "recomputedConclusion": "變化率=(44-74)/(8-2)=-30/6=-5 公升／分鐘。設 V=-5t+b，代 t=2：74=-10+b，b=84，所以 V=84-5t。排空時 84-5t=0，t=16.8 分鐘。",
+        "reviewNote": "獨立重做 u15-s009-cr01 時依序檢查 求速率 -5、求截距 84、寫模型、解零點 16.8；標準解與替代法在允許範圍內得到一致結論，量綱與端點亦符合題意。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "e57e8f50ca45ede62eff2b82331caeb9d82080f6d81d65941b482c3d6e7e7a12"
+    },
+    {
+      "questionId": "u15-s009-cr02",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-graphs",
+      "skillId": "linear-function-rate",
+      "skillSlot": "s009",
+      "skillTitle": "速率與線型函數",
+      "type": "constructed-response",
+      "prompt": "甲車 72 km/h，乙車 1.1 km/min。請統一單位比較，並求 30 分鐘各行多少公里。",
+      "requiredWork": "須寫出換算過程、比較與兩個距離。",
+      "standardSolution": "甲 72 km/h=72÷60=1.2 km/min，所以甲較快。30 分鐘甲行 1.2×30=36 km；乙行 1.1×30=33 km。",
+      "alternativeMethod": "也可把乙換成 66 km/h，再算半小時距離：甲 36 km、乙 33 km。",
+      "reasoningSteps": [
+        {
+          "step": 1,
+          "work": "統一速率單位"
+        },
+        {
+          "step": 2,
+          "work": "比較 1.2 與 1.1"
+        },
+        {
+          "step": 3,
+          "work": "算甲 36"
+        },
+        {
+          "step": 4,
+          "work": "算乙 33"
+        }
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "把甲換成 1.2 km/min 或把乙換成 66 km/h，正確判定甲較快，並算出 30 分鐘甲 36 km、乙 33 km。"
+        },
+        {
+          "score": 2,
+          "criteria": "單位換算與快慢比較正確，但兩個距離中一個有單一乘法錯；或距離皆正確而漏寫共同速率單位。"
+        },
+        {
+          "score": 1,
+          "criteria": "只完成單位換算與快慢比較，尚未計算兩車 30 分鐘距離；或只正確算出其中一車距離。"
+        },
+        {
+          "score": 0,
+          "criteria": "直接比較 72 與 1.1 而未統一單位，且後續距離計算也混用小時與分鐘。"
+        }
+      ],
+      "partialCreditRules": [
+        "甲與乙的單位換算可採任一共同單位；不要求同時寫 km/h 與 km/min。",
+        "若快慢比較正確但把 30 分鐘誤當 30 小時，距離部分不得分，整體最高 1 分。"
+      ],
+      "followThroughPolicy": "本題延續計分依以下具體規則處理：甲與乙的單位換算可採任一共同單位；不要求同時寫 km/h 與 km/min。；若快慢比較正確但把 30 分鐘誤當 30 小時，距離部分不得分，整體最高 1 分。",
+      "unitAndNotationRules": "沿用題幹的變數、序對、不等號與計量單位；作答必須清楚呈現以下要求中的符號與單位：須寫出換算過程、比較與兩個距離。",
+      "answerOnlyPolicy": "只寫最終答案而未呈現必要方法時，依本題 1 分規準處理：只完成單位換算與快慢比較，尚未計算兩車 30 分鐘距離；或只正確算出其中一車距離。；答案錯且無可辨識過程則為 0 分。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "recomputedConclusion": "甲 72 km/h=72÷60=1.2 km/min，所以甲較快。30 分鐘甲行 1.2×30=36 km；乙行 1.1×30=33 km。",
+        "reviewNote": "獨立重做 u15-s009-cr02 時依序檢查 統一速率單位、比較 1.2 與 1.1、算甲 36、算乙 33；標準解與替代法在允許範圍內得到一致結論，量綱與端點亦符合題意。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "a779533526ca36dfc1f33326adb6b7cacc86f1977e6f36f552fc5707d6deb48a"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u15-fig-rate",
+      "unitId": "u15",
+      "skillSlot": "s009",
+      "title": "水量與時間的固定變化率",
+      "svgPath": "figures/u15/u15-fig-rate.svg",
+      "altText": "水量圖從零分鐘四十公升上升到四分鐘一百二十公升，並以直角差量標示每四分鐘增加八十公升。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 640,
+          "height": 420,
+          "viewBox": "0 0 640 420"
+        },
+        "plotArea": {
+          "left": 80,
+          "top": 40,
+          "width": 500,
+          "height": 320
+        },
+        "xRange": [
+          0,
+          6
+        ],
+        "yRange": [
+          0,
+          140
+        ],
+        "objects": [
+          [
+            "line",
+            0,
+            40,
+            5,
+            140,
+            "V=20t+40"
+          ],
+          [
+            "point",
+            0,
+            40,
+            "(0,40)"
+          ],
+          [
+            "point",
+            4,
+            120,
+            "(4,120)"
+          ],
+          [
+            "delta",
+            0,
+            40,
+            4,
+            120,
+            "Δt=4，ΔV=80"
+          ]
+        ],
+        "axisLabels": [
+          "x",
+          "y"
+        ],
+        "visibleLineRules": "座標軸 2px、資料線 3px、輔助線 1px 虛線；端點依條件使用實心或空心圓。",
+        "hiddenLineRules": "本單元為平面函數圖，不使用隱藏線。",
+        "labelRules": "標籤避開資料線至少 6px，負號、括號與單位完整顯示。",
+        "tickRules": "端點、零點與題目必要坐標必須可讀；禁止依格數猜測未標示值。",
+        "toScale": true,
+        "visualInferenceWarning": "圖形依坐標範圍繪製，但答案必須以刻度與標示數值為準。",
+        "exactLabelPositions": [
+          {
+            "text": "x",
+            "x": "608",
+            "y": "388.0",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "y",
+            "x": "90.0",
+            "y": "50",
+            "fontSize": "16",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "68.0",
+            "y": "380.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "6",
+            "x": "568.0",
+            "y": "380.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "0",
+            "x": "45.0",
+            "y": "364.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "140",
+            "x": "45.0",
+            "y": "44.0",
+            "fontSize": "12",
+            "textAnchor": "start"
+          },
+          {
+            "text": "V=20t+40",
+            "x": "294.3",
+            "y": "146.3",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "(0,40)",
+            "x": "90",
+            "y": "292",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "(4,120)",
+            "x": "421.3",
+            "y": "77.7",
+            "fontSize": "14",
+            "textAnchor": "start"
+          },
+          {
+            "text": "Δt=4，ΔV=80",
+            "x": "210",
+            "y": "258",
+            "fontSize": "13",
+            "textAnchor": "start"
+          },
+          {
+            "text": "圖形依坐標刻度繪製；線條粗細不可作為數值依據。",
+            "x": "80",
+            "y": "400",
+            "fontSize": "12",
+            "textAnchor": "start"
+          }
+        ],
+        "exactSvgGeometry": [
+          {
+            "id": "u15-fig-rate-x-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "80",
+              "y1": "360.0",
+              "x2": "590",
+              "y2": "360.0",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-fig-rate-y-axis",
+            "element": "line",
+            "attributes": {
+              "x1": "80.0",
+              "y1": "360",
+              "x2": "80.0",
+              "y2": "30",
+              "stroke": "#111",
+              "stroke-width": "2",
+              "marker-end": "url(#arrow)"
+            }
+          },
+          {
+            "id": "u15-fig-rate-obj-1",
+            "element": "line",
+            "attributes": {
+              "x1": "80.0",
+              "y1": "268.6",
+              "x2": "496.7",
+              "y2": "40.0",
+              "stroke": "#1f2937",
+              "stroke-width": "3"
+            }
+          },
+          {
+            "id": "u15-fig-rate-obj-2",
+            "element": "circle",
+            "attributes": {
+              "cx": "80.0",
+              "cy": "268.6",
+              "r": "6",
+              "fill": "#111"
+            }
+          },
+          {
+            "id": "u15-fig-rate-obj-3",
+            "element": "circle",
+            "attributes": {
+              "cx": "413.3",
+              "cy": "85.7",
+              "r": "6",
+              "fill": "#111"
+            }
+          },
+          {
+            "id": "u15-fig-rate-obj-4",
+            "element": "polyline",
+            "attributes": {
+              "points": "80.0,268.6 413.3,268.6 413.3,85.7",
+              "fill": "none",
+              "stroke": "#4b5563",
+              "stroke-width": "2",
+              "stroke-dasharray": "5 4"
+            }
+          }
+        ]
+      },
+      "svgTitle": "水量與時間的固定變化率",
+      "svgDesc": "水量圖從零分鐘四十公升上升到四分鐘一百二十公升，並以直角差量標示每四分鐘增加八十公升。",
+      "svgAssertions": [
+        "u15-fig-rate",
+        "u15-fig-rate-title",
+        "u15-fig-rate-desc",
+        "role=\"img\"",
+        "viewBox=\"0 0 640 420\"",
+        "水量與時間的固定變化率"
+      ],
+      "mobileReadabilityReview": "以 360px 寬縮放檢查，關鍵字標籤字級不低於等效 12px，點半徑與虛線仍可辨識。",
+      "answerLeakageReview": "圖僅呈現題目已給資料與必要坐標，不以醒目文字直接寫出選項答案；需由讀圖或計算完成。",
+      "figureReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "manualInspectionRequired": true,
+        "reviewNote": "已檢查 u15-fig-rate 的軸向、刻度、負號、端點實空心、標籤遮擋與手機縮放；圖形內容與「差量框顯示斜率為 80 除以 4 等於 20 公升每分鐘。」一致。",
+        "manualInspectionCompleted": true,
+        "renderedAt": "2026-07-12T18:20:00+08:00",
+        "renderedCanvas": "640×420 PNG，另以雙欄 contact sheet 檢視全部 14 圖",
+        "renderedInspectionSummary": "逐圖檢查坐標軸方向、刻度、公式與點標籤、實心及空心端點、虛線、文字遮擋、360px 縮放可讀性與答案洩漏；修正後未見幾何或標示衝突。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "ffb1a5c662b19c5786c2a9d3b2bf88c7ffcd4268badfa7314db8b7489541282e"
+    }
+  ],
+  "sourceBatch": "016-u15-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/016-u15-complete/units/u15/s009"
+}

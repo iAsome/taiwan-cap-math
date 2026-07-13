@@ -1,0 +1,1330 @@
+{
+  "slot": "s007",
+  "skillId": "sqrt-rationalize-simple",
+  "topicId": "u11-square-root",
+  "title": "分母有理化基本：用等值乘法移除根號",
+  "lecture": {
+    "lectureId": "u11-s007-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "sqrt-rationalize-simple",
+    "lockedSkillOrder": 7,
+    "lockedTitle": "分母有理化基本",
+    "title": "分母有理化基本：用等值乘法移除根號",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能說明有理化是等值改寫",
+      "能處理a/√b與含係數單根式分母",
+      "能在有理化後繼續約分至最簡"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "sqrt-perfect-square",
+        "requiredLevel": "能使用前一技能「完全平方數平方根」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "有理數分母",
+        "definition": "分母不含無理根式。"
+      },
+      {
+        "term": "分母有理化",
+        "definition": "以等值乘法移除分母根式。"
+      },
+      {
+        "term": "等值分數",
+        "definition": "分子分母同乘非零數後值不變。"
+      },
+      {
+        "term": "約分",
+        "definition": "分子分母除以共同非零因數。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "√b/√b=1",
+        "meaning": "b>0。"
+      },
+      {
+        "symbol": "a/√b=a√b/b",
+        "meaning": "b>0。"
+      },
+      {
+        "symbol": "a/(c√b)=a√b/(cb)",
+        "meaning": "b>0且c≠0。"
+      }
+    ],
+    "conceptNarrative": [
+      "有理化的本質是乘以1，不是只改分母。",
+      "分母√b同乘√b後成b，因√b×√b=b。",
+      "先化簡再有理化常能減少運算，例如√3/√6先約成1/√2。",
+      "有理化後若分子分母有公因數，仍要約分。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "單根式分母有理化",
+        "statement": "分母形如c√b時，同乘√b。"
+      },
+      {
+        "name": "最簡有理化形式",
+        "statement": "分母為有理數且整體已約分。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "a/√b × √b/√b=a√b/b",
+        "conditions": [
+          "b>0。"
+        ],
+        "meaning": "同乘非零的1。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能只把分母√b改成b而不改分子。",
+      "本技能不處理含兩項分母的共軛有理化。",
+      "分母為0時原式無意義。",
+      "得到有理分母後仍需檢查約分。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先化簡分子與分母。",
+        "check": "可能直接約去根式。"
+      },
+      {
+        "step": 2,
+        "instruction": "確認分母是單一根式。",
+        "check": "本技能只處理基本型。"
+      },
+      {
+        "step": 3,
+        "instruction": "選擇同乘的根式。",
+        "check": "通常與分母根式相同。"
+      },
+      {
+        "step": 4,
+        "instruction": "分子分母同步相乘。",
+        "check": "保持等值。"
+      },
+      {
+        "step": 5,
+        "instruction": "化簡與約分。",
+        "check": "確認分母無根號。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "有理化4/√7。",
+        "solutionSteps": [
+          "同乘√7。",
+          "分母成7。"
+        ],
+        "answer": "4√7/7。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "有理化9/(2√3)。",
+        "solutionSteps": [
+          "同乘√3。",
+          "得9√3/6再約分。"
+        ],
+        "answer": "3√3/2。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "化簡√5/√20。",
+        "solutionSteps": [
+          "√20=2√5。",
+          "直接約分。"
+        ],
+        "answer": "1/2。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "化簡1/√3+2/√3。",
+        "solutionSteps": [
+          "先合併分子。",
+          "3/√3=√3。"
+        ],
+        "answer": "√3。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "1/√2=1/2。",
+        "why": "只平方分母。",
+        "correction": "分子也要乘√2。"
+      },
+      {
+        "mistake": "3/√5=3√5。",
+        "why": "漏掉分母5。",
+        "correction": "應為3√5/5。"
+      },
+      {
+        "mistake": "有理化後7√7/21就停止。",
+        "why": "尚可約7。",
+        "correction": "化為√7/3。"
+      },
+      {
+        "mistake": "看到根式分母就一定先同乘。",
+        "why": "可能先化簡更快。",
+        "correction": "先檢查可否約分。"
+      },
+      {
+        "mistake": "同乘不同的根式使分母仍有根號。",
+        "why": "乘法因子選錯。",
+        "correction": "選能讓分母成平方的根式。"
+      },
+      {
+        "mistake": "把分母有理化當近似小數。",
+        "why": "有理化是精確等值改寫。",
+        "correction": "全程保留等號。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "同乘適當根式使分母成平方。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "先化簡分子與分母。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "1/√2=1/2。；修正：分子也要乘√2。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "最後還能約分嗎？"
+      }
+    ],
+    "summary": [
+      "同乘適當根式使分母成平方。",
+      "有理化後還要化簡與約分。"
+    ],
+    "connections": {
+      "previous": "需要 s003 的根式乘除與 s006 的平方。",
+      "next": [
+        "s008 將比較不同根式形式。",
+        "後續應用可使用更易計算的有理化結果。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s007-v001",
+        "u11-s007-v002",
+        "u11-s007-v003",
+        "u11-s007-v004",
+        "u11-s007-v005",
+        "u11-s007-v006",
+        "u11-s007-v007",
+        "u11-s007-v008",
+        "u11-s007-v009",
+        "u11-s007-v010",
+        "u11-s007-v011",
+        "u11-s007-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s007-cr001",
+        "u11-s007-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「分母有理化基本」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「1/√2=1/2。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "b549e81df77f630ee747b055a113a947e9fcc2c3bab6b9f941db7d6e0f3dc930"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u11-s007-v001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "將 1/√2 分母有理化。",
+      "givenConditions": [
+        "分母√2非0。"
+      ],
+      "target": "把分母化為有理數。",
+      "choices": [
+        "1/2",
+        "2/√2",
+        "√2/2",
+        "√2"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：乘以√2/√2等於1，分母變成2。 詳算檢查：分子分母同乘√2，得 √2/(√2×√2)=√2/2。 因此結果為「√2/2」。",
+      "explanation": "分子分母同乘√2，得 √2/(√2×√2)=√2/2。",
+      "steps": [
+        "整理條件：分母√2非0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：乘以√2/√2等於1，分母變成2。 詳算檢查：分子分母同乘√2，得 √2/(√2×√2)=√2/2。 因此結果為「√2/2」。",
+        "核對目標：答案「√2/2」確實回應「把分母化為有理數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/2",
+          "truth": false,
+          "reason": "分子未同乘√2。"
+        },
+        {
+          "choice": "2/√2",
+          "truth": false,
+          "reason": "不是原式等值變形。"
+        },
+        {
+          "choice": "√2/2",
+          "truth": true,
+          "reason": "此選項符合目標「把分母化為有理數。」；分子分母同乘√2，得 √2/(√2×√2)=√2/2。"
+        },
+        {
+          "choice": "√2",
+          "truth": false,
+          "reason": "漏掉分母2。"
+        }
+      ],
+      "misconceptionTarget": "只改分母而沒有等值地改分子。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "最基本單根式分母。；具體任務是「把分母化為有理數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "de6bcbded08ae2df396e2c8493d274a0932fa8e66487632b291fc6c33c626d58"
+    },
+    {
+      "questionId": "u11-s007-v002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "把 3/√5 分母有理化時，為保持原值，應將原式乘以下列哪一個分數？",
+      "givenConditions": [
+        "原式分母√5非0。"
+      ],
+      "target": "選出合法的等值乘數。",
+      "choices": [
+        "√5/5",
+        "5/√5",
+        "1/√5",
+        "√5/√5"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：檢查乘數必須等於1，且分母√5再乘√5形成5。 詳算檢查：分子分母同乘相同的非零數，√5/√5=1，因此不改變原值並使分母成5。 因此結果為「√5/√5」。",
+      "explanation": "分子分母同乘相同的非零數，√5/√5=1，因此不改變原值並使分母成5。",
+      "steps": [
+        "整理條件：原式分母√5非0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：檢查乘數必須等於1，且分母√5再乘√5形成5。 詳算檢查：分子分母同乘相同的非零數，√5/√5=1，因此不改變原值並使分母成5。 因此結果為「√5/√5」。",
+        "核對目標：答案「√5/√5」確實回應「選出合法的等值乘數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√5/5",
+          "truth": false,
+          "reason": "此分數不等於1，會改變原值。"
+        },
+        {
+          "choice": "5/√5",
+          "truth": false,
+          "reason": "等於√5，不是1。"
+        },
+        {
+          "choice": "1/√5",
+          "truth": false,
+          "reason": "不等於1且使分母更複雜。"
+        },
+        {
+          "choice": "√5/√5",
+          "truth": true,
+          "reason": "此選項符合目標「選出合法的等值乘數。」；分子分母同乘相同的非零數，√5/√5=1，因此不改變原值並使分母成5。"
+        }
+      ],
+      "misconceptionTarget": "只想到消除根號，沒有保持等值。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "考查有理化為何保持等值，而非再做一題數值替換。；具體任務是「選出合法的等值乘數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4865ef5e624c89289c2f6cd905112a62aed38cf2c089de27353c5fa84ff3730c"
+    },
+    {
+      "questionId": "u11-s007-v003",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "有人把 2/√3 直接改寫成 2/3，這一步錯在哪裡？",
+      "givenConditions": [
+        "分母√3非0。"
+      ],
+      "target": "診斷錯誤並指出等值原則。",
+      "choices": [
+        "只改了分母，沒有讓分子同步乘以 √3",
+        "分母3仍然是無理數",
+        "原式不能進行有理化",
+        "應把分子2改成4即可"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：比較兩式平方或小數值也會發現2/√3不等於2/3。 詳算檢查：等值分數必須分子分母同乘同一非零數；正確結果是2√3/3。 因此結果為「只改了分母，沒有讓分子同步乘以 √3」。",
+      "explanation": "等值分數必須分子分母同乘同一非零數；正確結果是2√3/3。",
+      "steps": [
+        "整理條件：分母√3非0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：比較兩式平方或小數值也會發現2/√3不等於2/3。 詳算檢查：等值分數必須分子分母同乘同一非零數；正確結果是2√3/3。 因此結果為「只改了分母，沒有讓分子同步乘以 √3」。",
+        "核對目標：答案「只改了分母，沒有讓分子同步乘以 √3」確實回應「診斷錯誤並指出等值原則。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只改了分母，沒有讓分子同步乘以 √3",
+          "truth": true,
+          "reason": "此選項符合目標「診斷錯誤並指出等值原則。」；等值分數必須分子分母同乘同一非零數；正確結果是2√3/3。"
+        },
+        {
+          "choice": "分母3仍然是無理數",
+          "truth": false,
+          "reason": "3是有理數。"
+        },
+        {
+          "choice": "原式不能進行有理化",
+          "truth": false,
+          "reason": "分母為單一正根式，正可有理化。"
+        },
+        {
+          "choice": "應把分子2改成4即可",
+          "truth": false,
+          "reason": "乘2不能補回同一比例。"
+        }
+      ],
+      "misconceptionTarget": "把有理化誤解成只修改分母外觀。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "錯誤分析能力，與直接計算題不同。；具體任務是「診斷錯誤並指出等值原則。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7e2fcd8b5ee90f6aa45c24cd566cb8b3788e6bb2396e89c03d86cfc599289938"
+    },
+    {
+      "questionId": "u11-s007-v004",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "√3/√6 化簡並有理化後為何？",
+      "givenConditions": [
+        "被開方數非負且分母非0。"
+      ],
+      "target": "同時化簡與有理化。",
+      "choices": [
+        "1/√2",
+        "√2/2",
+        "√18/6",
+        "1/2"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先約成√(3/6)=1/√2，再同乘√2。 詳算檢查：√3/√6=1/√2，再有理化為√2/2。 因此結果為「√2/2」。",
+      "explanation": "√3/√6=1/√2，再有理化為√2/2。",
+      "steps": [
+        "整理條件：被開方數非負且分母非0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先約成√(3/6)=1/√2，再同乘√2。 詳算檢查：√3/√6=1/√2，再有理化為√2/2。 因此結果為「√2/2」。",
+        "核對目標：答案「√2/2」確實回應「同時化簡與有理化。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/√2",
+          "truth": false,
+          "reason": "等值但分母仍含根式。"
+        },
+        {
+          "choice": "√2/2",
+          "truth": true,
+          "reason": "此選項符合目標「同時化簡與有理化。」；√3/√6=1/√2，再有理化為√2/2。"
+        },
+        {
+          "choice": "√18/6",
+          "truth": false,
+          "reason": "等值但未化到最簡。"
+        },
+        {
+          "choice": "1/2",
+          "truth": false,
+          "reason": "數值不等。"
+        }
+      ],
+      "misconceptionTarget": "停在尚未有理化或未最簡形式。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需選擇有效的先約分策略。；具體任務是「同時化簡與有理化。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "61f35e89872c8a8837105727d33f6087fa70e7f280b710edefdec4f973ced3f5"
+    },
+    {
+      "questionId": "u11-s007-v005",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "5/(2√3) 分母有理化後為何？",
+      "givenConditions": [
+        "分母2√3非0。"
+      ],
+      "target": "處理含係數的根式分母。",
+      "choices": [
+        "5√3/2",
+        "15/6",
+        "10√3/3",
+        "5√3/6"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：(5/(2√3))(√3/√3)=5√3/6。 詳算檢查：同乘√3後分母2×3=6，分子5√3。 因此結果為「5√3/6」。",
+      "explanation": "同乘√3後分母2×3=6，分子5√3。",
+      "steps": [
+        "整理條件：分母2√3非0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：(5/(2√3))(√3/√3)=5√3/6。 詳算檢查：同乘√3後分母2×3=6，分子5√3。 因此結果為「5√3/6」。",
+        "核對目標：答案「5√3/6」確實回應「處理含係數的根式分母。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5√3/2",
+          "truth": false,
+          "reason": "漏乘分母中的√3形成3。"
+        },
+        {
+          "choice": "15/6",
+          "truth": false,
+          "reason": "把√3誤作3。"
+        },
+        {
+          "choice": "10√3/3",
+          "truth": false,
+          "reason": "同乘計算錯誤。"
+        },
+        {
+          "choice": "5√3/6",
+          "truth": true,
+          "reason": "此選項符合目標「處理含係數的根式分母。」；同乘√3後分母2×3=6，分子5√3。"
+        }
+      ],
+      "misconceptionTarget": "忽略分母前的係數2。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "比基本題多一個分母係數。；具體任務是「處理含係數的根式分母。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d8fb336a3c3e0adf53b31cc72efe4f8b954146104531c01c7115f5d469a22682"
+    },
+    {
+      "questionId": "u11-s007-v006",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "2√3/√12 的值化簡後為何？",
+      "givenConditions": [
+        "分母不為0。"
+      ],
+      "target": "選擇最簡策略求值。",
+      "choices": [
+        "1",
+        "√3/6",
+        "2",
+        "√12"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先化簡分母為2√3，直接約分。 詳算檢查：√12=2√3，所以分子分母相同，值為1。 因此結果為「1」。",
+      "explanation": "√12=2√3，所以分子分母相同，值為1。",
+      "steps": [
+        "整理條件：分母不為0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先化簡分母為2√3，直接約分。 詳算檢查：√12=2√3，所以分子分母相同，值為1。 因此結果為「1」。",
+        "核對目標：答案「1」確實回應「選擇最簡策略求值。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1",
+          "truth": true,
+          "reason": "此選項符合目標「選擇最簡策略求值。」；√12=2√3，所以分子分母相同，值為1。"
+        },
+        {
+          "choice": "√3/6",
+          "truth": false,
+          "reason": "錯誤約分。"
+        },
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "把√12誤作√3。"
+        },
+        {
+          "choice": "√12",
+          "truth": false,
+          "reason": "未做除法。"
+        }
+      ],
+      "misconceptionTarget": "機械有理化而沒先看可直接化簡。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "考查有理化不一定是首選。；具體任務是「選擇最簡策略求值。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "19799deb37bb55071a02ed6fa0e96529b54d66957319300cb5c142f60d2384ab"
+    },
+    {
+      "questionId": "u11-s007-v007",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "7/(3√7) 化簡並有理化後為何？",
+      "givenConditions": [
+        "分母3√7非0。"
+      ],
+      "target": "有理化並進一步約分。",
+      "choices": [
+        "7√7/3",
+        "√7/3",
+        "√7/21",
+        "7/21"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：有理化後再約分，不能停在7√7/21。 詳算檢查：同乘√7得7√7/(3×7)，約去7後為√7/3。 因此結果為「√7/3」。",
+      "explanation": "同乘√7得7√7/(3×7)，約去7後為√7/3。",
+      "steps": [
+        "整理條件：分母3√7非0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：有理化後再約分，不能停在7√7/21。 詳算檢查：同乘√7得7√7/(3×7)，約去7後為√7/3。 因此結果為「√7/3」。",
+        "核對目標：答案「√7/3」確實回應「有理化並進一步約分。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "7√7/3",
+          "truth": false,
+          "reason": "漏除分母形成的7。"
+        },
+        {
+          "choice": "√7/3",
+          "truth": true,
+          "reason": "此選項符合目標「有理化並進一步約分。」；同乘√7得7√7/(3×7)，約去7後為√7/3。"
+        },
+        {
+          "choice": "√7/21",
+          "truth": false,
+          "reason": "約分方向錯。"
+        },
+        {
+          "choice": "7/21",
+          "truth": false,
+          "reason": "漏掉根式。"
+        }
+      ],
+      "misconceptionTarget": "有理化後忘記約分。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "包含兩階段化簡。；具體任務是「有理化並進一步約分。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ac4dfe39b224e6c946693872a98e80334865563f008223628816496e207388b5"
+    },
+    {
+      "questionId": "u11-s007-v008",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "(√8)/(2√5) 有理化並化簡後為何？",
+      "givenConditions": [
+        "根式皆為正，分母不為0。"
+      ],
+      "target": "多步化簡最終形式。",
+      "choices": [
+        "√40/10",
+        "2√10/5",
+        "√10/5",
+        "√10/10"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先約去2，再有理化，可避免多餘係數。 詳算檢查：√8=2√2，原式=√2/√5；同乘√5得√10/5。 因此結果為「√10/5」。",
+      "explanation": "√8=2√2，原式=√2/√5；同乘√5得√10/5。",
+      "steps": [
+        "整理條件：根式皆為正，分母不為0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先約去2，再有理化，可避免多餘係數。 詳算檢查：√8=2√2，原式=√2/√5；同乘√5得√10/5。 因此結果為「√10/5」。",
+        "核對目標：答案「√10/5」確實回應「多步化簡最終形式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√40/10",
+          "truth": false,
+          "reason": "等值但未最簡。"
+        },
+        {
+          "choice": "2√10/5",
+          "truth": false,
+          "reason": "係數多一倍。"
+        },
+        {
+          "choice": "√10/5",
+          "truth": true,
+          "reason": "此選項符合目標「多步化簡最終形式。」；√8=2√2，原式=√2/√5；同乘√5得√10/5。"
+        },
+        {
+          "choice": "√10/10",
+          "truth": false,
+          "reason": "約分過度。"
+        }
+      ],
+      "misconceptionTarget": "沒有先化簡導致係數錯誤。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需規劃運算順序。；具體任務是「多步化簡最終形式。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "05398827a4fcd28f2f753945431018fb992cb9cf1cd22458ba09398cd1179c95"
+    },
+    {
+      "questionId": "u11-s007-v009",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "若 A=1/√2+1/√8，則 A 化簡後為何？",
+      "givenConditions": [
+        "兩分母均非0。"
+      ],
+      "target": "整合有理化與分數加法。",
+      "choices": [
+        "√2",
+        "3√2/4",
+        "2√2/3",
+        "3/√10"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：分別有理化後通分：2√2/4+√2/4=3√2/4。 詳算檢查：1/√2=√2/2，1/√8=1/(2√2)=√2/4，和為3√2/4。 因此結果為「3√2/4」。",
+      "explanation": "1/√2=√2/2，1/√8=1/(2√2)=√2/4，和為3√2/4。",
+      "steps": [
+        "整理條件：兩分母均非0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：分別有理化後通分：2√2/4+√2/4=3√2/4。 詳算檢查：1/√2=√2/2，1/√8=1/(2√2)=√2/4，和為3√2/4。 因此結果為「3√2/4」。",
+        "核對目標：答案「3√2/4」確實回應「整合有理化與分數加法。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√2",
+          "truth": false,
+          "reason": "第二項處理錯。"
+        },
+        {
+          "choice": "3√2/4",
+          "truth": true,
+          "reason": "此選項符合目標「整合有理化與分數加法。」；1/√2=√2/2，1/√8=1/(2√2)=√2/4，和為3√2/4。"
+        },
+        {
+          "choice": "2√2/3",
+          "truth": false,
+          "reason": "通分錯誤。"
+        },
+        {
+          "choice": "3/√10",
+          "truth": false,
+          "reason": "根式分母不能直接相加。"
+        }
+      ],
+      "misconceptionTarget": "把兩個不同分母直接相加。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需處理兩個不同根式分母。；具體任務是「整合有理化與分數加法。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "0341b65c28a9dc2d86f05c04d12c839dfec90bdabf3ba7037c6a1f2fe67dc8bd"
+    },
+    {
+      "questionId": "u11-s007-v010",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一台機器完成一件工作的時間為 6/√3 分鐘。報表要求分母不得含根號，應填多少？",
+      "givenConditions": [
+        "時間公式給定且√3非0。"
+      ],
+      "target": "依報表格式改寫等值時間。",
+      "choices": [
+        "6√3 分鐘",
+        "3√2 分鐘",
+        "2√3 分鐘",
+        "2 分鐘"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：同乘√3後約分6/3。 詳算檢查：6/√3=6√3/3=2√3 分鐘。 因此結果為「2√3 分鐘」。",
+      "explanation": "6/√3=6√3/3=2√3 分鐘。",
+      "steps": [
+        "整理條件：時間公式給定且√3非0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：同乘√3後約分6/3。 詳算檢查：6/√3=6√3/3=2√3 分鐘。 因此結果為「2√3 分鐘」。",
+        "核對目標：答案「2√3 分鐘」確實回應「依報表格式改寫等值時間。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6√3 分鐘",
+          "truth": false,
+          "reason": "漏除分母形成的3。"
+        },
+        {
+          "choice": "3√2 分鐘",
+          "truth": false,
+          "reason": "錯誤轉換根式。"
+        },
+        {
+          "choice": "2√3 分鐘",
+          "truth": true,
+          "reason": "此選項符合目標「依報表格式改寫等值時間。」；6/√3=6√3/3=2√3 分鐘。"
+        },
+        {
+          "choice": "2 分鐘",
+          "truth": false,
+          "reason": "漏掉√3。"
+        }
+      ],
+      "misconceptionTarget": "完成有理化但忘記約分。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "時間單位保持分鐘。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "結合格式規範與約分。；具體任務是「依報表格式改寫等值時間。」。",
+      "literacyContextNecessity": "報表明定分母不能有根號，因此必須有理化。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "acd9a5e937926f9df4b31b50a4cec9c1803f7315289b6f923e5f84504f751660"
+    },
+    {
+      "questionId": "u11-s007-v011",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某材料單價公式為 15/(2√5) 元。財務系統接受最簡有理化形式，應輸入何者？",
+      "givenConditions": [
+        "分母非0，金額以精確值表示。"
+      ],
+      "target": "輸出最簡有理化形式。",
+      "choices": [
+        "15√5/2 元",
+        "3/2 元",
+        "15√10/10 元",
+        "3√5/2 元"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先有理化，再以5約分。 詳算檢查：15/(2√5)同乘√5得15√5/10=3√5/2。 因此結果為「3√5/2 元」。",
+      "explanation": "15/(2√5)同乘√5得15√5/10=3√5/2。",
+      "steps": [
+        "整理條件：分母非0，金額以精確值表示。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先有理化，再以5約分。 詳算檢查：15/(2√5)同乘√5得15√5/10=3√5/2。 因此結果為「3√5/2 元」。",
+        "核對目標：答案「3√5/2 元」確實回應「輸出最簡有理化形式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "15√5/2 元",
+          "truth": false,
+          "reason": "漏除5。"
+        },
+        {
+          "choice": "3/2 元",
+          "truth": false,
+          "reason": "漏掉根式。"
+        },
+        {
+          "choice": "15√10/10 元",
+          "truth": false,
+          "reason": "錯乘根式。"
+        },
+        {
+          "choice": "3√5/2 元",
+          "truth": true,
+          "reason": "此選項符合目標「輸出最簡有理化形式。」；15/(2√5)同乘√5得15√5/10=3√5/2。"
+        }
+      ],
+      "misconceptionTarget": "只達成有理化，未做到最簡。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "單價仍為元。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "包含有理化與分數約簡。；具體任務是「輸出最簡有理化形式。」。",
+      "literacyContextNecessity": "財務系統的輸入格式決定不能保留原式。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "bbd493f7f13df820ad699e9f953d1c73c70fb029d1fcc75e81b82cf928e13fd5"
+    },
+    {
+      "questionId": "u11-s007-v012",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "實驗式算得速率為 √6/√15 公尺/秒，報告要求最簡且分母有理化。結果為何？",
+      "givenConditions": [
+        "分母根式正且不為0。"
+      ],
+      "target": "依報告規格化簡。",
+      "choices": [
+        "√10/5 公尺/秒",
+        "√2/5 公尺/秒",
+        "√90/15 公尺/秒",
+        "2/5 公尺/秒"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先約被開方數6/15=2/5，再有理化。 詳算檢查：√6/√15=√(2/5)=√2/√5，同乘√5得√10/5。 因此結果為「√10/5 公尺/秒」。",
+      "explanation": "√6/√15=√(2/5)=√2/√5，同乘√5得√10/5。",
+      "steps": [
+        "整理條件：分母根式正且不為0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先約被開方數6/15=2/5，再有理化。 詳算檢查：√6/√15=√(2/5)=√2/√5，同乘√5得√10/5。 因此結果為「√10/5 公尺/秒」。",
+        "核對目標：答案「√10/5 公尺/秒」確實回應「依報告規格化簡。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√10/5 公尺/秒",
+          "truth": true,
+          "reason": "此選項符合目標「依報告規格化簡。」；√6/√15=√(2/5)=√2/√5，同乘√5得√10/5。"
+        },
+        {
+          "choice": "√2/5 公尺/秒",
+          "truth": false,
+          "reason": "根式比值化簡錯誤。"
+        },
+        {
+          "choice": "√90/15 公尺/秒",
+          "truth": false,
+          "reason": "等值但未最簡。"
+        },
+        {
+          "choice": "2/5 公尺/秒",
+          "truth": false,
+          "reason": "數值不等。"
+        }
+      ],
+      "misconceptionTarget": "直接相乘後沒有化簡到最終格式。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-perfect-square，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "數值改寫不改變公尺/秒單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需在複合單位下保持等值與格式。；具體任務是「依報告規格化簡。」。",
+      "literacyContextNecessity": "報告同時要求最簡與有理化，兩步都必要。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "分母有理化基本",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ac9c055185cbd3c5108f12ed67cb3f4c279aef45a48c3c360b5ef2ed1760c0f9"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u11-s007-cr001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "將 12/(5√3) 分母有理化並化成最簡形式。",
+      "requiredWork": [
+        "分子分母同乘√3",
+        "形成有理分母",
+        "約分"
+      ],
+      "fullCreditSolution": [
+        "原式乘√3/√3。",
+        "得到12√3/(5×3)=12√3/15。",
+        "約分為4√3/5。"
+      ],
+      "standardAnswer": "4√3/5。",
+      "alternativeMethod": "先把12/15約成4/5後理解為(4/5)√3。",
+      "reasoningSteps": [
+        "原式乘√3/√3。",
+        "得到12√3/(5×3)=12√3/15。",
+        "約分為4√3/5。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：同乘正確；分母成15；約成4√3/5，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：同乘正確；分母成15；約成4√3/5。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「同乘正確」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「同乘正確」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「同乘正確」但後續失誤，可依證據給1分。",
+        "若完成「同乘正確」與「分母成15」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "只改分母",
+        "停在12√3/15"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "4√3/5。",
+        "recomputation": "原式乘√3/√3。；得到12√3/(5×3)=12√3/15。；約分為4√3/5。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「約成4√3/5」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "299002783d71a530c58a6e050b694863e83ac1ae8f040987a687c240964b1ae6"
+    },
+    {
+      "questionId": "u11-s007-cr002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-rationalize-simple",
+      "lockedSkillOrder": 7,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "化簡 A=2/√8+3/√18，要求分母有理化。",
+      "requiredWork": [
+        "先化簡分母",
+        "分別有理化",
+        "合併同類根式"
+      ],
+      "fullCreditSolution": [
+        "√8=2√2，所以2/√8=1/√2=√2/2。",
+        "√18=3√2，所以3/√18=1/√2=√2/2。",
+        "A=√2。"
+      ],
+      "standardAnswer": "√2。",
+      "alternativeMethod": "先觀察兩項都等於1/√2，合併成2/√2，再化簡為√2。",
+      "reasoningSteps": [
+        "√8=2√2，所以2/√8=1/√2=√2/2。",
+        "√18=3√2，所以3/√18=1/√2=√2/2。",
+        "A=√2。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：辨認兩項皆1/√2；正確有理化；合併為√2，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：辨認兩項皆1/√2；正確有理化；合併為√2。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「辨認兩項皆1/√2」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「辨認兩項皆1/√2」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「辨認兩項皆1/√2」但後續失誤，可依證據給1分。",
+        "若完成「辨認兩項皆1/√2」與「正確有理化」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "分母直接相加",
+        "漏做第二項化簡"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "√2。",
+        "recomputation": "√8=2√2，所以2/√8=1/√2=√2/2。；√18=3√2，所以3/√18=1/√2=√2/2。；A=√2。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「合併為√2」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "10fec4f459233c72d16c78fb855eea8a4acb605b8f374b3a742ec5169f4e9c86"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "012-u11-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/012-u11-complete/units/u11/s007"
+}

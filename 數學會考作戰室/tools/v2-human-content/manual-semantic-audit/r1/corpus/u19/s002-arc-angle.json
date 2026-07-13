@@ -1,0 +1,1259 @@
+{
+  "slot": "s002",
+  "skillId": "arc-angle",
+  "topicId": "u19-angles",
+  "title": "弧與角",
+  "lecture": {
+    "lectureId": "u19-s002-lecture-r1",
+    "unitId": "u19",
+    "numericUnitId": 19,
+    "topicId": "u19-angles",
+    "skillId": "arc-angle",
+    "title": "弧與角",
+    "unitTitle": "圓",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "skillIdentity": {
+      "slot": "s002",
+      "lockedSkillId": "arc-angle",
+      "lockedOrder": 2,
+      "scope": "由弧的度數連結圓心角與圓周角。"
+    },
+    "learningOutcomes": [
+      "能理解弧的度數與圓心角相同。",
+      "能由弧度數求圓周角。",
+      "能分辨優弧與劣弧。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "central-inscribed-angle",
+        "requiredLevel": "能使用「圓心角與圓周角」的核心定義與基本運算，並辨認其適用條件。"
+      }
+    ],
+    "prerequisiteBridge": "先由前一技能「圓心角與圓周角」的結論，連接到本技能「弧與角」所需的新判斷。",
+    "glossary": [
+      {
+        "term": "弧的度數",
+        "definition": "用對應圓心角的度數表示弧的大小。"
+      },
+      {
+        "term": "劣弧",
+        "definition": "小於半圓的弧。"
+      },
+      {
+        "term": "優弧",
+        "definition": "大於半圓的弧。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "O",
+        "meaning": "圓心。"
+      },
+      {
+        "symbol": "∠ABC",
+        "meaning": "頂點是B的角。"
+      },
+      {
+        "symbol": "π",
+        "meaning": "圓周率；題目未要求近似時保留π。"
+      }
+    ],
+    "conceptNarrative": [
+      "弧長是長度，弧的度數是角度，兩者不能混為同一個量。",
+      "弧 AB 的度數等於圓心角 ∠AOB 的度數。",
+      "圓周角的大小是它所對弧度數的一半；若題目給的是優弧，要先確認角所對的是哪一段弧。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "弧的度數",
+        "statement": "用對應圓心角的度數表示弧的大小。"
+      },
+      {
+        "name": "劣弧",
+        "statement": "小於半圓的弧。"
+      },
+      {
+        "name": "優弧",
+        "statement": "大於半圓的弧。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "m(弧AB)=∠AOB",
+        "conditions": [
+          "O 為圓心"
+        ],
+        "meaning": "弧的度數等於所對圓心角"
+      },
+      {
+        "formula": "圓周角=所對弧度數÷2",
+        "conditions": [
+          "角頂點在圓周且所對弧明確"
+        ],
+        "meaning": "由弧求角"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能把 8 cm 的弧長直接當成 8°。",
+      "圓周角所對弧若不是題目給定的那一段，不能直接除以 2。",
+      "整圓是 360°，優弧常需用 360° 減劣弧。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "辨認角的端點。",
+        "check": "完成此步後，確認仍在「弧與角」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 2,
+        "instruction": "判定所對的是劣弧或優弧。",
+        "check": "完成此步後，確認仍在「弧與角」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 3,
+        "instruction": "必要時用 360° 求另一弧。",
+        "check": "完成此步後，確認仍在「弧與角」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 4,
+        "instruction": "圓心角取同度數，圓周角取一半。",
+        "check": "完成此步後，確認仍在「弧與角」的CAP範圍且沒有只憑圖形目測。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "s002-L1",
+        "prompt": "弧 AB 為 100°，求 ∠AOB。",
+        "solutionSteps": [
+          "O 是圓心。",
+          "圓心角與弧同度數。"
+        ],
+        "answer": "100°。",
+        "level": "basic"
+      },
+      {
+        "exampleId": "s002-L2",
+        "prompt": "弧 AB 為 140°，C 在另一弧上，求 ∠ACB。",
+        "solutionSteps": [
+          "∠ACB 所對弧 AB。",
+          "140°÷2=70°。"
+        ],
+        "answer": "70°。",
+        "level": "standard"
+      },
+      {
+        "exampleId": "s002-L3",
+        "prompt": "劣弧 AB 為 80°，求優弧 AB。",
+        "solutionSteps": [
+          "整圓 360°。",
+          "360°−80°=280°。"
+        ],
+        "answer": "280°。",
+        "level": "advanced"
+      },
+      {
+        "exampleId": "s002-L4",
+        "prompt": "圓周角為 55°，求所對弧。",
+        "solutionSteps": [
+          "弧度數為圓周角兩倍。",
+          "55°×2=110°。"
+        ],
+        "answer": "110°。",
+        "level": "connection"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "辨認「弧與角」的定義、符號與單一步驟關係。",
+      "standard": "把「弧與角」與前置技能、比例或一次代數連接。",
+      "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「弧與角」。",
+      "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「弧與角」的數學模型。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "把弧度數和弧長單位混用",
+        "why": "一個是角度一個是長度",
+        "correction": "先檢查單位 ° 或 cm"
+      },
+      {
+        "mistake": "圓周角直接等於弧度數",
+        "why": "忘記一半關係",
+        "correction": "圓周角乘 2 才是所對弧"
+      },
+      {
+        "mistake": "忽略優弧與劣弧",
+        "why": "只看到端點相同",
+        "correction": "用是否含指定點決定弧"
+      },
+      {
+        "mistake": "把整圓當 180°",
+        "why": "混淆半圓",
+        "correction": "整圓 360°，半圓 180°"
+      }
+    ],
+    "selfCheck": [
+      "我是否先確認「弧與角」的適用條件？",
+      "我是否分清半徑、直徑、弦、弧與角的角色？",
+      "我是否寫出必要單位，並在最後才取近似值？",
+      "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+    ],
+    "summary": [
+      "弧的度數等於所對圓心角。",
+      "圓周角等於所對弧的一半。",
+      "同端點的優弧與劣弧度數和為 360°。"
+    ],
+    "connections": {
+      "previous": "承接「圓心角與圓周角」。",
+      "next": "下一技能為「圓內接四邊形」。"
+    },
+    "figureReferences": [
+      {
+        "figureId": "u19-s002-fig001",
+        "purpose": "圓 O 中以粗弧標出劣弧 AB，圓周點 C 連到 A、B，顯示弧 AB 與角 ACB 的對應。",
+        "altText": "圓 O 中以粗弧標出劣弧 AB，圓周點 C 連到 A、B，顯示弧 AB 與角 ACB 的對應。，不可按比例目測。"
+      }
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u19-s002-v001",
+        "u19-s002-v002",
+        "u19-s002-v003",
+        "u19-s002-v004",
+        "u19-s002-v005",
+        "u19-s002-v006",
+        "u19-s002-v007",
+        "u19-s002-v008",
+        "u19-s002-v009",
+        "u19-s002-v010",
+        "u19-s002-v011",
+        "u19-s002-v012"
+      ],
+      "constructedResponseIds": [
+        "u19-s002-cr001",
+        "u19-s002-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐段回讀「弧與角」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：由弧的度數連結圓心角與圓周角。",
+      "reviewVersion": "human-lecture-review-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "contentSha256": "4977facc182fd66437eaa08e228409cea34d2fd54ecb50a63fa9e93db0e41a41"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u19-s002-v001",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s002-fig001",
+      "drawingSpecId": "u19-s002-fig001",
+      "prompt": "圓心角 ∠AOB=86°，則劣弧 AB 的度數為何？",
+      "text": "圓心角 ∠AOB=86°，則劣弧 AB 的度數為何？",
+      "givenConditions": "O為圓心；∠AOB=86°。",
+      "target": "求劣弧AB度數。",
+      "choices": [
+        "43°",
+        "94°",
+        "86°",
+        "172°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「O為圓心；∠AOB=86°。」重算：弧的度數等於所對圓心角，所以劣弧AB為86°。",
+      "explanation": "弧的度數等於所對圓心角，所以劣弧AB為86°。 因此唯一正確選項是「86°」。",
+      "steps": [
+        "確認O為圓心。",
+        "套用弧度數等於圓心角。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "43°",
+          "truth": false,
+          "reason": "43°是錯誤地取一半。"
+        },
+        {
+          "choice": "94°",
+          "truth": false,
+          "reason": "94°沒有對應關係。"
+        },
+        {
+          "choice": "86°",
+          "truth": true,
+          "reason": "依題目條件重新計算：弧的度數等於所對圓心角，所以劣弧AB為86°。"
+        },
+        {
+          "choice": "172°",
+          "truth": false,
+          "reason": "172°是錯誤地乘2。"
+        }
+      ],
+      "misconceptionTarget": "把圓心角與圓周角的一半關係套到弧。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "u19-s002-v001 已核對所求量「求劣弧AB度數。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由圓心角求弧度數。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v001。",
+      "difficultyReason": "basic：由圓心角求弧度數。 解題需完成「確認O為圓心。；套用弧度數等於圓心角。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由圓心角求弧度數。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "687d59a5be3a1d3064582969b67209be5e2c304145e06d0dbcc6b493d873adc6"
+    },
+    {
+      "questionId": "u19-s002-v002",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "劣弧 PQ 為 150°，C 在另一弧上，則圓周角 ∠PCQ 為何？",
+      "text": "劣弧 PQ 為 150°，C 在另一弧上，則圓周角 ∠PCQ 為何？",
+      "givenConditions": "C不在劣弧PQ上。",
+      "target": "求∠PCQ。",
+      "choices": [
+        "150°",
+        "300°",
+        "75°",
+        "30°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「C不在劣弧PQ上。」重算：圓周角等於所對弧的一半，150°÷2=75°。",
+      "explanation": "圓周角等於所對弧的一半，150°÷2=75°。 因此唯一正確選項是「75°」。",
+      "steps": [
+        "確認∠PCQ所對劣弧PQ。",
+        "150÷2=75。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "150°",
+          "truth": false,
+          "reason": "直接把弧度數當角度。"
+        },
+        {
+          "choice": "300°",
+          "truth": false,
+          "reason": "錯誤乘2。"
+        },
+        {
+          "choice": "75°",
+          "truth": true,
+          "reason": "依題目條件重新計算：圓周角等於所對弧的一半，150°÷2=75°。"
+        },
+        {
+          "choice": "30°",
+          "truth": false,
+          "reason": "錯誤用180−150。"
+        }
+      ],
+      "misconceptionTarget": "忘記圓周角是所對弧的一半。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 60,
+      "unitCheck": "u19-s002-v002 已核對所求量「求∠PCQ。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由弧求圓周角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v002。",
+      "difficultyReason": "basic：由弧求圓周角。 解題需完成「確認∠PCQ所對劣弧PQ。；150÷2=75。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由弧求圓周角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "f4d66cef443812aeb2b63f687c079c733378d440f3b0d7ab16953be04efcb294"
+    },
+    {
+      "questionId": "u19-s002-v003",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "劣弧 AB=112°，則優弧 AB 的度數為何？",
+      "text": "劣弧 AB=112°，則優弧 AB 的度數為何？",
+      "givenConditions": "劣弧AB=112°。",
+      "target": "求優弧AB度數。",
+      "choices": [
+        "112°",
+        "224°",
+        "68°",
+        "248°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「劣弧AB=112°。」重算：同端點的劣弧與優弧合為整圓，360°−112°=248°。",
+      "explanation": "同端點的劣弧與優弧合為整圓，360°−112°=248°。 因此唯一正確選項是「248°」。",
+      "steps": [
+        "整圓360°。",
+        "360−112=248。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "112°",
+          "truth": false,
+          "reason": "重複劣弧度數。"
+        },
+        {
+          "choice": "224°",
+          "truth": false,
+          "reason": "把劣弧乘2。"
+        },
+        {
+          "choice": "68°",
+          "truth": false,
+          "reason": "錯用180−112。"
+        },
+        {
+          "choice": "248°",
+          "truth": true,
+          "reason": "依題目條件重新計算：同端點的劣弧與優弧合為整圓，360°−112°=248°。"
+        }
+      ],
+      "misconceptionTarget": "把優弧與劣弧視為相等。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "u19-s002-v003 已核對所求量「求優弧AB度數。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由劣弧求優弧。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v003。",
+      "difficultyReason": "basic：由劣弧求優弧。 解題需完成「整圓360°。；360−112=248。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由劣弧求優弧。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "6836d9fdff4a5babaa7804630f181cb0ac78a07ac9ecd64bf6a3c04e5ed2b4f4"
+    },
+    {
+      "questionId": "u19-s002-v004",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓周角 ∠ADB=47°，其所對弧 AB 的度數為何？",
+      "text": "圓周角 ∠ADB=47°，其所對弧 AB 的度數為何？",
+      "givenConditions": "D在不含弧AB的另一側圓周。",
+      "target": "求所對弧AB。",
+      "choices": [
+        "94°",
+        "47°",
+        "133°",
+        "313°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「D在不含弧AB的另一側圓周。」重算：所對弧度數是圓周角的2倍，47°×2=94°。",
+      "explanation": "所對弧度數是圓周角的2倍，47°×2=94°。 因此唯一正確選項是「94°」。",
+      "steps": [
+        "辨認∠ADB所對弧AB。",
+        "47×2=94。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "94°",
+          "truth": true,
+          "reason": "依題目條件重新計算：所對弧度數是圓周角的2倍，47°×2=94°。"
+        },
+        {
+          "choice": "47°",
+          "truth": false,
+          "reason": "未乘2。"
+        },
+        {
+          "choice": "133°",
+          "truth": false,
+          "reason": "錯用180−47。"
+        },
+        {
+          "choice": "313°",
+          "truth": false,
+          "reason": "錯用360−47。"
+        }
+      ],
+      "misconceptionTarget": "反求弧時仍除以2。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 70,
+      "unitCheck": "u19-s002-v004 已核對所求量「求所對弧AB。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由圓周角反求弧。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v004。",
+      "difficultyReason": "standard：由圓周角反求弧。 解題需完成「辨認∠ADB所對弧AB。；47×2=94。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由圓周角反求弧。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "27eba49854811172dc2da3ad884b42e2ecfc8a5497f04f0f62d12ebe177e19f1"
+    },
+    {
+      "questionId": "u19-s002-v005",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "優弧 MN=250°，則同端點的劣弧 MN 所對圓周角為何？",
+      "text": "優弧 MN=250°，則同端點的劣弧 MN 所對圓周角為何？",
+      "givenConditions": "優弧MN=250°。",
+      "target": "求劣弧所對圓周角。",
+      "choices": [
+        "55°",
+        "110°",
+        "125°",
+        "70°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「優弧MN=250°。」重算：劣弧MN=360°−250°=110°，其圓周角為110°÷2=55°。",
+      "explanation": "劣弧MN=360°−250°=110°，其圓周角為110°÷2=55°。 因此唯一正確選項是「55°」。",
+      "steps": [
+        "先求劣弧110°。",
+        "再除以2得55°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "55°",
+          "truth": true,
+          "reason": "依題目條件重新計算：劣弧MN=360°−250°=110°，其圓周角為110°÷2=55°。"
+        },
+        {
+          "choice": "110°",
+          "truth": false,
+          "reason": "只完成求劣弧，未取一半。"
+        },
+        {
+          "choice": "125°",
+          "truth": false,
+          "reason": "把優弧直接除2。"
+        },
+        {
+          "choice": "70°",
+          "truth": false,
+          "reason": "錯用180−110。"
+        }
+      ],
+      "misconceptionTarget": "未辨認題目要的是劣弧所對角。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 85,
+      "unitCheck": "u19-s002-v005 已核對所求量「求劣弧所對圓周角。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「結合優劣弧與圓周角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v005。",
+      "difficultyReason": "standard：結合優劣弧與圓周角。 解題需完成「先求劣弧110°。；再除以2得55°。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "結合優劣弧與圓周角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "d06202556d609e616500e54ac4043cf583c27d40f78d4f4c3afa10f0ed6daac6"
+    },
+    {
+      "questionId": "u19-s002-v006",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓上 A、B、C，∠ACB=64°。若 O 為圓心，且 ∠AOB 對同一條弧 AB，則 ∠AOB 為何？",
+      "text": "圓上 A、B、C，∠ACB=64°。若 O 為圓心，且 ∠AOB 對同一條弧 AB，則 ∠AOB 為何？",
+      "givenConditions": "O為圓心；兩角同對弧AB。",
+      "target": "求∠AOB。",
+      "choices": [
+        "64°",
+        "128°",
+        "32°",
+        "296°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「O為圓心；兩角同對弧AB。」重算：同弧圓心角為圓周角2倍，所以2×64°=128°。",
+      "explanation": "同弧圓心角為圓周角2倍，所以2×64°=128°。 因此唯一正確選項是「128°」。",
+      "steps": [
+        "確認兩角同對弧AB。",
+        "64×2=128。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "64°",
+          "truth": false,
+          "reason": "未乘2。"
+        },
+        {
+          "choice": "128°",
+          "truth": true,
+          "reason": "依題目條件重新計算：同弧圓心角為圓周角2倍，所以2×64°=128°。"
+        },
+        {
+          "choice": "32°",
+          "truth": false,
+          "reason": "錯誤除2。"
+        },
+        {
+          "choice": "296°",
+          "truth": false,
+          "reason": "用360−64而非同弧關係。"
+        }
+      ],
+      "misconceptionTarget": "圓心角與圓周角倍率方向顛倒。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "u19-s002-v006 已核對所求量「求∠AOB。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由同弧圓周角求圓心角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v006。",
+      "difficultyReason": "standard：由同弧圓周角求圓心角。 解題需完成「確認兩角同對弧AB。；64×2=128。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由同弧圓周角求圓心角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "8278bab84e36a908e0419955535a4e24dad1462205cf9b811c13b6f8fbf30246"
+    },
+    {
+      "questionId": "u19-s002-v007",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s002-fig001",
+      "drawingSpecId": "u19-s002-fig001",
+      "prompt": "同一圓上，劣弧 AB=(3x+10)°，其所對圓周角為(x+20)°。求 x。",
+      "text": "同一圓上，劣弧 AB=(3x+10)°，其所對圓周角為(x+20)°。求 x。",
+      "givenConditions": "劣弧與圓周角同對AB。",
+      "target": "求x。",
+      "choices": [
+        "10",
+        "30",
+        "20",
+        "40"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「劣弧與圓周角同對AB。」重算：圓周角是弧的一半，所以3x+10=2(x+20)，解得x=30。",
+      "explanation": "圓周角是弧的一半，所以3x+10=2(x+20)，解得x=30。 因此唯一正確選項是「30」。",
+      "steps": [
+        "列3x+10=2x+40。",
+        "移項得x=30。",
+        "檢查弧100°、角50°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "代入後弧40°、角30°不符一半。"
+        },
+        {
+          "choice": "30",
+          "truth": true,
+          "reason": "依題目條件重新計算：圓周角是弧的一半，所以3x+10=2(x+20)，解得x=30。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "代入後弧70°、角40°不符。"
+        },
+        {
+          "choice": "40",
+          "truth": false,
+          "reason": "代入後弧130°、角60°不符。"
+        }
+      ],
+      "misconceptionTarget": "只比較係數而未列完整倍數關係。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 110,
+      "unitCheck": "u19-s002-v007 已核對所求量「求x。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「用代數表達弧與角的一半關係。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v007。",
+      "difficultyReason": "advanced：用代數表達弧與角的一半關係。 解題需完成「列3x+10=2x+40。；移項得x=30。；檢查弧100°、角50°。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "用代數表達弧與角的一半關係。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "674f871ee25df19328fd9caec2299ecb7569a743a18eff54f56137e81b701d4c"
+    },
+    {
+      "questionId": "u19-s002-v008",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓周角 ∠ACB 所對的是優弧 AB=260°。則 ∠ACB 為何？",
+      "text": "圓周角 ∠ACB 所對的是優弧 AB=260°。則 ∠ACB 為何？",
+      "givenConditions": "∠ACB所對優弧AB=260°。",
+      "target": "求∠ACB。",
+      "choices": [
+        "50°",
+        "130°",
+        "100°",
+        "260°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「∠ACB所對優弧AB=260°。」重算：題目明確指出所對的是260°優弧，因此圓周角為260°÷2=130°；不能自行改用100°劣弧。",
+      "explanation": "題目明確指出所對的是260°優弧，因此圓周角為260°÷2=130°；不能自行改用100°劣弧。 因此唯一正確選項是「130°」。",
+      "steps": [
+        "確認指定所對弧是優弧。",
+        "260÷2=130。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "50°",
+          "truth": false,
+          "reason": "50°是改用劣弧100°的一半。"
+        },
+        {
+          "choice": "130°",
+          "truth": true,
+          "reason": "依題目條件重新計算：題目明確指出所對的是260°優弧，因此圓周角為260°÷2=130°；不能自行改用100°劣弧。"
+        },
+        {
+          "choice": "100°",
+          "truth": false,
+          "reason": "100°是劣弧度數。"
+        },
+        {
+          "choice": "260°",
+          "truth": false,
+          "reason": "未取一半。"
+        }
+      ],
+      "misconceptionTarget": "看到同端點就一律選劣弧。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 105,
+      "unitCheck": "u19-s002-v008 已核對所求量「求∠ACB。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「處理圓周角所對優弧。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v008。",
+      "difficultyReason": "advanced：處理圓周角所對優弧。 解題需完成「確認指定所對弧是優弧。；260÷2=130。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "處理圓周角所對優弧。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "3958d62d96e882d40d05be7409089d7be858ed1c6a5746d424f3da26243ff018"
+    },
+    {
+      "questionId": "u19-s002-v009",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "一圓被三條半徑分成三弧，度數比為 2:3:5。最大弧所對圓周角為何？",
+      "text": "一圓被三條半徑分成三弧，度數比為 2:3:5。最大弧所對圓周角為何？",
+      "givenConditions": "三弧完整分割整圓，比例2:3:5。",
+      "target": "求最大弧所對圓周角。",
+      "choices": [
+        "72°",
+        "180°",
+        "90°",
+        "100°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「三弧完整分割整圓，比例2:3:5。」重算：三弧共10份，每份36°；最大弧為180°，所對圓周角為90°。",
+      "explanation": "三弧共10份，每份36°；最大弧為180°，所對圓周角為90°。 因此唯一正確選項是「90°」。",
+      "steps": [
+        "360÷10=36。",
+        "最大弧5×36=180。",
+        "圓周角=90。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "72°",
+          "truth": false,
+          "reason": "72°是第二大弧120°以外的錯算。"
+        },
+        {
+          "choice": "180°",
+          "truth": false,
+          "reason": "180°是弧度數未除2。"
+        },
+        {
+          "choice": "90°",
+          "truth": true,
+          "reason": "依題目條件重新計算：三弧共10份，每份36°；最大弧為180°，所對圓周角為90°。"
+        },
+        {
+          "choice": "100°",
+          "truth": false,
+          "reason": "份數計算錯誤。"
+        }
+      ],
+      "misconceptionTarget": "比例分割後忘記圓周角需取一半。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 120,
+      "unitCheck": "u19-s002-v009 已核對所求量「求最大弧所對圓周角。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「綜合整圓比例與圓周角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v009。",
+      "difficultyReason": "advanced：綜合整圓比例與圓周角。 解題需完成「360÷10=36。；最大弧5×36=180。；圓周角=90。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "綜合整圓比例與圓周角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "7240f94ab94d55beb2ae8a8707a303a1cd1f0b9b6f6f5c3798eb99e0ecef7a8c"
+    },
+    {
+      "questionId": "u19-s002-v010",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形鐘面上，分針由12走到4，掃過的劣弧度數為何？",
+      "text": "圓形鐘面上，分針由12走到4，掃過的劣弧度數為何？",
+      "givenConditions": "鐘面12等分；沿短方向由12到4。",
+      "target": "求掃過劣弧度數。",
+      "choices": [
+        "90°",
+        "150°",
+        "240°",
+        "120°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「鐘面12等分；沿短方向由12到4。」重算：鐘面12等分，每格30°；從12到4共4格，所以劣弧為120°。",
+      "explanation": "鐘面12等分，每格30°；從12到4共4格，所以劣弧為120°。 因此唯一正確選項是「120°」。",
+      "steps": [
+        "360÷12=30°。",
+        "4×30=120°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "只算3格。"
+        },
+        {
+          "choice": "150°",
+          "truth": false,
+          "reason": "誤以每格37.5°。"
+        },
+        {
+          "choice": "240°",
+          "truth": false,
+          "reason": "240°是另一段優弧。"
+        },
+        {
+          "choice": "120°",
+          "truth": true,
+          "reason": "依題目條件重新計算：鐘面12等分，每格30°；從12到4共4格，所以劣弧為120°。"
+        }
+      ],
+      "misconceptionTarget": "未分清移動格數或選錯優弧。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "u19-s002-v010 已核對所求量「求掃過劣弧度數。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「將鐘面刻度轉成弧度數。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v010。",
+      "difficultyReason": "literacy：將鐘面刻度轉成弧度數。 解題需完成「360÷12=30°。；4×30=120°。」。",
+      "literacyContextNecessity": "鐘面等分與行進方向是決定弧度數的必要資訊。",
+      "authoringIntent": "將鐘面刻度轉成弧度數。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "217fe231782689f56ba8b5d067e8fe66f567fb9c48ad54cb798a9567ffc3f4fb"
+    },
+    {
+      "questionId": "u19-s002-v011",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "摩天輪圓周上兩車廂 A、B 的劣弧占整圈的 3/8。觀景台 C 位於另一弧上，∠ACB 為何？",
+      "text": "摩天輪圓周上兩車廂 A、B 的劣弧占整圈的 3/8。觀景台 C 位於另一弧上，∠ACB 為何？",
+      "givenConditions": "劣弧AB占3/8；C在另一弧。",
+      "target": "求∠ACB。",
+      "choices": [
+        "135°",
+        "45°",
+        "112.5°",
+        "67.5°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「劣弧AB占3/8；C在另一弧。」重算：劣弧AB為360°×3/8=135°，圓周角為135°÷2=67.5°。",
+      "explanation": "劣弧AB為360°×3/8=135°，圓周角為135°÷2=67.5°。 因此唯一正確選項是「67.5°」。",
+      "steps": [
+        "求弧度數135°。",
+        "再取一半67.5°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "135°",
+          "truth": false,
+          "reason": "只求弧未取一半。"
+        },
+        {
+          "choice": "45°",
+          "truth": false,
+          "reason": "把3/8誤作1/4。"
+        },
+        {
+          "choice": "112.5°",
+          "truth": false,
+          "reason": "錯用180−67.5。"
+        },
+        {
+          "choice": "67.5°",
+          "truth": true,
+          "reason": "依題目條件重新計算：劣弧AB為360°×3/8=135°，圓周角為135°÷2=67.5°。"
+        }
+      ],
+      "misconceptionTarget": "只處理整圈比例，未轉成圓周角。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 95,
+      "unitCheck": "u19-s002-v011 已核對所求量「求∠ACB。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由摩天輪圈比例求視角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v011。",
+      "difficultyReason": "literacy：由摩天輪圈比例求視角。 解題需完成「求弧度數135°。；再取一半67.5°。」。",
+      "literacyContextNecessity": "車廂沿圓周的位置比例直接決定觀景角。",
+      "authoringIntent": "由摩天輪圈比例求視角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "f9c347a842dea9da295b368b6f536ec52e920dee3e640bcd5144cdbe7a6dd682"
+    },
+    {
+      "questionId": "u19-s002-v012",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形雷達掃描器標示某目標區所對優弧為 300°。若介面另顯示同端點劣弧所對圓周角，應顯示多少？",
+      "text": "圓形雷達掃描器標示某目標區所對優弧為 300°。若介面另顯示同端點劣弧所對圓周角，應顯示多少？",
+      "givenConditions": "優弧300°；顯示劣弧所對圓周角。",
+      "target": "求顯示角度。",
+      "choices": [
+        "30°",
+        "60°",
+        "150°",
+        "300°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「優弧300°；顯示劣弧所對圓周角。」重算：同端點劣弧為60°，其圓周角為30°。",
+      "explanation": "同端點劣弧為60°，其圓周角為30°。 因此唯一正確選項是「30°」。",
+      "steps": [
+        "360−300=60。",
+        "60÷2=30。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "30°",
+          "truth": true,
+          "reason": "依題目條件重新計算：同端點劣弧為60°，其圓周角為30°。"
+        },
+        {
+          "choice": "60°",
+          "truth": false,
+          "reason": "60°是劣弧度數。"
+        },
+        {
+          "choice": "150°",
+          "truth": false,
+          "reason": "150°是優弧的一半，非題目指定。"
+        },
+        {
+          "choice": "300°",
+          "truth": false,
+          "reason": "未換算。"
+        }
+      ],
+      "misconceptionTarget": "忽略介面指定的是劣弧所對角。",
+      "prerequisiteCheck": "需先能使用「圓心角與圓周角」；本題未使用後續技能。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "u19-s002-v012 已核對所求量「求顯示角度。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「在儀表情境中辨認優劣弧。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s002-v012。",
+      "difficultyReason": "literacy：在儀表情境中辨認優劣弧。 解題需完成「360−300=60。；60÷2=30。」。",
+      "literacyContextNecessity": "介面同時提供優弧與指定劣弧視角，必須先轉換弧段。",
+      "authoringIntent": "在儀表情境中辨認優劣弧。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "dade5eef0e9863ab65ed690b113ee932476ff70f21c567fa21672887d3901c1c"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u19-s002-cr001",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "itemType": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s002-fig001",
+      "drawingSpecId": "u19-s002-fig001",
+      "prompt": "一圓的劣弧 AB 為 132°。C 位於優弧 AB 上。求 ∠ACB，並求同端點優弧 AB 的度數。",
+      "requiredWork": [
+        "先求圓周角。",
+        "再求優弧。",
+        "標示角度單位。"
+      ],
+      "standardSolution": [
+        "∠ACB 所對劣弧AB，所以∠ACB=132°÷2=66°。",
+        "優弧AB=360°−132°=228°。"
+      ],
+      "fullCreditSolution": [
+        "∠ACB 所對劣弧AB，所以∠ACB=132°÷2=66°。",
+        "優弧AB=360°−132°=228°。"
+      ],
+      "alternativeSolutions": [
+        "可先求優弧228°，再確認C位於優弧，因此角所對的是不含C的132°劣弧。"
+      ],
+      "reasoningSteps": [
+        "∠ACB 所對劣弧AB，所以∠ACB=132°÷2=66°。",
+        "優弧AB=360°−132°=228°。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "得到66°與228°，兩步理由皆正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩答案正確但理由不完整，或只錯一個算術。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道圓周角取一半或兩弧和360°其中一項。"
+        },
+        {
+          "score": 0,
+          "criteria": "兩關係均未使用。"
+        }
+      ],
+      "partialCreditRules": [
+        "一項完整正確可得1至2分。"
+      ],
+      "followThroughPolicy": "若第一步算術錯但仍以其弧度數正確除2，圓周角步驟可保留方法分。",
+      "unitNotationRules": "角與弧度數皆用°。",
+      "answerOnlyPolicy": "只寫66°、228°且皆對給2分。",
+      "commonErrors": [
+        "把∠ACB寫132°。",
+        "用180−132求優弧。"
+      ],
+      "independentReview": {
+        "derivedResult": "∠ACB=66°，優弧AB=228°。",
+        "ambiguity": "C的位置明確指定角所對劣弧，無雙解。",
+        "decision": "pass",
+        "reviewNote": "u19-s002-cr001 由題目條件另行推導得到「∠ACB=66°，優弧AB=228°。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewedAt": "2026-07-12"
+      },
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "da7aaf3e36c6e4b9b4a7c7062aed57e8ddb5b7bd748af4969ca32b7047782266"
+    },
+    {
+      "questionId": "u19-s002-cr002",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "itemType": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓周角 ∠APB=(x+12)°，其所對劣弧 AB=(3x+6)°。求 x 及兩個角度量。",
+      "requiredWork": [
+        "建立弧度數等於圓周角2倍的方程。",
+        "解x。",
+        "回代求角與弧並驗證。"
+      ],
+      "standardSolution": [
+        "3x+6=2(x+12)。",
+        "3x+6=2x+24，所以x=18。",
+        "圓周角=30°，劣弧=60°，符合兩倍。"
+      ],
+      "fullCreditSolution": [
+        "3x+6=2(x+12)。",
+        "3x+6=2x+24，所以x=18。",
+        "圓周角=30°，劣弧=60°，符合兩倍。"
+      ],
+      "alternativeSolutions": [
+        "也可寫(x+12)=(3x+6)/2後解。"
+      ],
+      "reasoningSteps": [
+        "3x+6=2(x+12)。",
+        "3x+6=2x+24，所以x=18。",
+        "圓周角=30°，劣弧=60°，符合兩倍。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "方程、x=18及回代30°、60°完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "方程與x正確但未回代，或回代一處錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "寫出正確倍數關係但代數未完成。"
+        },
+        {
+          "score": 0,
+          "criteria": "關係方向錯且無有效進展。"
+        }
+      ],
+      "partialCreditRules": [
+        "代數小錯但關係正確給1分。"
+      ],
+      "followThroughPolicy": "若x算錯，後續依錯誤x一致回代且驗證倍數，可保留1分。",
+      "unitNotationRules": "所有角度需加°；x無單位。",
+      "answerOnlyPolicy": "只寫x=18給2分。",
+      "commonErrors": [
+        "列3x+6=x+12。",
+        "把弧除以2方向寫反。"
+      ],
+      "independentReview": {
+        "derivedResult": "x=18，圓周角30°，弧60°。",
+        "ambiguity": "線性方程唯一解且回代角度合理。",
+        "decision": "pass",
+        "reviewNote": "u19-s002-cr002 由題目條件另行推導得到「x=18，圓周角30°，弧60°。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewedAt": "2026-07-12"
+      },
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "1e9779cdda5120fff66b1a411574e5eb165311f8ba35d9693ffb73a7605b174d"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u19-s002-fig001",
+      "unitId": "u19",
+      "topicId": "u19-angles",
+      "skillId": "arc-angle",
+      "svgPath": "figures/u19/u19-s002-fig001.svg",
+      "canvas": {
+        "width": 360,
+        "height": 240,
+        "viewBox": "0 0 360 240"
+      },
+      "drawingSpec": {
+        "purpose": "支援「弧與角」中需要辨認點、線、弧、角或邊界的題目。",
+        "coordinateSystem": "SVG x向右、y向下；所有座標以360×240畫布為準。",
+        "geometry": "圓 O 中以粗弧標出劣弧 AB，圓周點 C 連到 A、B，顯示弧 AB 與角 ACB 的對應。",
+        "visibleLines": "所有作答所需實線均以2px以上深色描邊；強調弧以5px描邊。",
+        "hiddenLines": "只有內部共邊或量測輔助線使用虛線；未指定者不得自行添加。",
+        "labels": "標籤位置已在SVG以固定座標給定，避免遮住交點、角弧或刻痕。",
+        "symbols": "直角符號、等長刻痕、箭頭及角度符號僅在數學條件需要時出現。",
+        "scalePolicy": "示意圖不保證按實際長度或角度比例繪製。",
+        "visualInferenceWarning": "不得以目測長短、角度或對稱性取代題目條件與定理。",
+        "mobileReadability": "360×240檢視下文字至少16px，關鍵線至少2px，無微小數值標籤。",
+        "answerLeakage": "圖中不標示任何題目要求計算的最終數值或正確選項。"
+      },
+      "altText": "圓 O 中以粗弧標出劣弧 AB，圓周點 C 連到 A、B，顯示弧 AB 與角 ACB 的對應。 圖形僅協助辨認結構，不可依比例目測答案。",
+      "svgTitle": "弧與角對應圖",
+      "svgDescription": "圓 O 中以粗弧標出劣弧 AB，圓周點 C 連到 A、B，顯示弧 AB 與角 ACB 的對應。",
+      "svgAssertions": [
+        "role=\"img\"",
+        "<title",
+        "<desc",
+        "viewBox=\"0 0 360 240\"",
+        "class=\"highlight\"",
+        ">弧 AB</text>",
+        ">C</text>"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderInspected": true,
+        "mobileReadable": true,
+        "answerLeakageFound": false,
+        "reviewNote": "已逐項檢查 u19-s002-fig001 的點位、線段、弧線、標籤與輔助符號；此圖專門呈現「弧與角」的結構，未包含可直接推得題庫答案的數值。",
+        "reviewVersion": "human-figure-review-r1.0",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "c6f818c5d23c4e76d3ad833ddfe2739d65cad7e292df5eed93118b51d955fb77"
+    }
+  ],
+  "sourceBatch": "020-u19-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/020-u19-complete/units/u19/s002"
+}

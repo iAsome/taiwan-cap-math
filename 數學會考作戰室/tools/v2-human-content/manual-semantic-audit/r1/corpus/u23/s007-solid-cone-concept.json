@@ -1,0 +1,1347 @@
+{
+  "slot": "s007",
+  "skillId": "solid-cone-concept",
+  "topicId": "u23-basics",
+  "title": "圓錐概念：區分底面半徑高度和母線",
+  "lecture": {
+    "lectureId": "u23-s007-lecture-r1",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-basics",
+    "skillId": "solid-cone-concept",
+    "title": "圓錐概念：區分底面半徑高度和母線",
+    "lockedSkillTitle": "圓錐概念",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能以一個圓形底面與一個頂點辨認圓錐。",
+      "能區分軸、高、半徑與母線。",
+      "能在直圓錐軸截面中使用畢氏定理。",
+      "能說明圓錐側面展開為扇形。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "solid-cylinder-concept",
+        "requiredLevel": "知道圓柱有兩個全等平行圓與圓周方向。",
+        "bridge": "圓錐把圓柱的一個底圓縮成單一頂點，母線因而會聚。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "圓錐",
+        "definition": "以一個圓為底面，側面上的母線由底圓周各點會聚到同一頂點的立體。"
+      },
+      {
+        "term": "母線",
+        "definition": "圓錐頂點連到底面圓周上一點的側面線段。"
+      },
+      {
+        "term": "軸",
+        "definition": "連接圓錐頂點與底面圓心的線段或直線。"
+      },
+      {
+        "term": "直圓錐",
+        "definition": "軸垂直於底面的圓錐。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "r",
+        "meaning": "底面半徑。"
+      },
+      {
+        "symbol": "h",
+        "meaning": "頂點到底面平面的垂直距離。"
+      },
+      {
+        "symbol": "l",
+        "meaning": "直圓錐的母線長或斜高。"
+      }
+    ],
+    "conceptNarrative": [
+      "圓錐只有一個圓形底面，曲側面在一個頂點會聚。直圓錐的頂點位於底面圓心正上方。",
+      "在通過軸的截面中，得到等腰三角形；半個截面形成直角三角形，兩股為r與h，斜邊為l。",
+      "因此直圓錐有l²=r²+h²。這個關係只適用於正確辨認的半徑、垂直高與母線。",
+      "沿一條母線剪開側面，攤平為半徑l的扇形；扇形弧長等於底面圓周長2πr。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "直圓錐",
+        "statement": "頂點到底面圓心的軸垂直於底面。"
+      },
+      {
+        "name": "圓錐的高",
+        "statement": "頂點到底面所在平面的垂直距離。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "l²=r²+h²",
+        "conditions": [
+          "直圓錐",
+          "l為母線",
+          "h為垂直高"
+        ],
+        "meaning": "來自軸截面中的直角三角形。"
+      },
+      {
+        "formula": "側面展開扇形弧長＝2πr",
+        "conditions": [
+          "沿一條母線剪開"
+        ],
+        "meaning": "扇形外弧接回後繞底圓一周。"
+      }
+    ],
+    "nonApplicableCases": [
+      "斜圓錐的母線長可能隨方向改變，不能直接用同一l。",
+      "扇形半徑是母線l，不是底面半徑r。",
+      "圓錐沒有第二個底面。",
+      "高不能沿曲面量測。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "找底圓、圓心與頂點。",
+        "check": "是否只有一個底圓？"
+      },
+      {
+        "step": 2,
+        "instruction": "畫軸並判斷是否垂直底面。",
+        "check": "可否視為直圓錐？"
+      },
+      {
+        "step": 3,
+        "instruction": "在軸截面標r、h、l。",
+        "check": "l是否為直角三角形斜邊？"
+      },
+      {
+        "step": 4,
+        "instruction": "需要長度時用畢氏定理。",
+        "check": "平方與開根是否正確？"
+      },
+      {
+        "step": 5,
+        "instruction": "需要展開時對應扇形弧與底圓周。",
+        "check": "扇形半徑是否用l？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "直圓錐r=3公分、h=4公分，母線l多少？",
+        "solutionSteps": [
+          "l²=3²+4²=25。",
+          "l=5。"
+        ],
+        "answer": "5公分。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "直圓錐l=13公分、r=5公分，高多少？",
+        "solutionSteps": [
+          "h²=13²−5²=144。",
+          "h=12。"
+        ],
+        "answer": "12公分。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "側面展開扇形的半徑是哪個量？",
+        "solutionSteps": [
+          "扇形從原錐頂向外展開。",
+          "半徑對應母線。"
+        ],
+        "answer": "l。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "底面半徑4公分時，扇形弧長多少？",
+        "solutionSteps": [
+          "弧接回後等於底面圓周。",
+          "2πr=8π。"
+        ],
+        "answer": "8π公分。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把圓錐說成有兩個圓底。",
+        "why": "混淆圓柱。",
+        "correction": "圓錐只有一底圓與一頂點。"
+      },
+      {
+        "mistake": "把母線直接當垂直高。",
+        "why": "母線位於側面且斜向。",
+        "correction": "在軸截面中用l²=r²+h²。"
+      },
+      {
+        "mistake": "寫l=r+h。",
+        "why": "忽略直角三角形。",
+        "correction": "長度平方相加。"
+      },
+      {
+        "mistake": "展開扇形半徑用r。",
+        "why": "混淆底圓半徑與側面母線。",
+        "correction": "扇形半徑為l。"
+      },
+      {
+        "mistake": "扇形弧長寫πr²。",
+        "why": "把面積當弧長。",
+        "correction": "弧長等於2πr。"
+      },
+      {
+        "mistake": "斜圓錐仍假設所有母線相等。",
+        "why": "直圓錐對稱性不存在。",
+        "correction": "先確認頂點位於圓心正上方。"
+      }
+    ],
+    "selfCheck": [
+      "我是否確認只有一個底圓？",
+      "h是否垂直底面？",
+      "l是否在側面上？",
+      "畢氏關係是否平方後使用？",
+      "展開扇形半徑與弧長是否分別為l與2πr？"
+    ],
+    "summary": [
+      "直圓錐由底圓、頂點與曲側面組成。",
+      "r、h、l在軸截面形成直角三角形。",
+      "l²=r²+h²。",
+      "側面展開是半徑l且弧長2πr的扇形。"
+    ],
+    "connections": {
+      "previous": "由圓柱的底圓、軸與側面展開概念，轉為母線會聚的圓錐。",
+      "next": [
+        "截面與立體將比較圓柱與圓錐不同切法。",
+        "錐體體積會使用垂直高h。"
+      ]
+    },
+    "figureReferences": [
+      "u23-s007-fig001"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u23-s007-v001",
+        "u23-s007-v002",
+        "u23-s007-v003",
+        "u23-s007-v004",
+        "u23-s007-v005",
+        "u23-s007-v006",
+        "u23-s007-v007",
+        "u23-s007-v008",
+        "u23-s007-v009",
+        "u23-s007-v010",
+        "u23-s007-v011",
+        "u23-s007-v012"
+      ],
+      "constructedResponseIds": [
+        "u23-s007-cr001",
+        "u23-s007-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "重新計算3-4-5與5-12-13兩組長度，檢查扇形半徑和弧長角色，並明確限定畢氏公式只用於直圓錐軸截面。",
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "0af16dfc227a2b135c457c523d92f8bb907f774f1648cc82d45b68a1c03efb9c"
+  },
+  "mcQuestions": [
+    {
+      "prompt": "完整圓錐有幾個圓形底面？",
+      "text": "完整圓錐有幾個圓形底面？",
+      "choices": [
+        "0個",
+        "2個",
+        "1個",
+        "3個"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：套用圓錐定義。所得結果是「1個」。",
+      "explanation": "圓錐只有一個圓形底面，曲側面在頂點會聚。",
+      "steps": [
+        "套用圓錐定義"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0個",
+          "truth": false,
+          "reason": "忽略底面。"
+        },
+        {
+          "choice": "2個",
+          "truth": false,
+          "reason": "圓柱才有兩個。"
+        },
+        {
+          "choice": "1個",
+          "truth": true,
+          "reason": "依獨立計算「套用圓錐定義」，此選項符合所求「求底面數」。"
+        },
+        {
+          "choice": "3個",
+          "truth": false,
+          "reason": "此選項無法符合所求「求底面數」；錯誤來源會是：把圓錐與圓柱混淆。 必須依「辨認圓錐底面數。」的關係重新核對。"
+        }
+      ],
+      "misconceptionTarget": "把圓錐與圓柱混淆。 必須依「辨認圓錐底面數。」的關係重新核對。",
+      "authoringIntent": "辨認圓錐底面數。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "完整圓錐"
+      ],
+      "target": "求底面數",
+      "difficultyReason": "定義辨認。 本題以「辨認圓錐底面數。」作為該難度的具體判準。",
+      "prerequisiteCheck": "知道圓錐。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位個。 所求「求底面數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "完整圓錐包含一底面。 題幹已完整限制「求底面數」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "da3f0b587735774887048e383848b937eb361b242958b414f39435c7d3f06123"
+    },
+    {
+      "prompt": "直圓錐中，頂點到底面平面的垂直距離稱為什麼？",
+      "text": "直圓錐中，頂點到底面平面的垂直距離稱為什麼？",
+      "choices": [
+        "高",
+        "母線",
+        "半徑",
+        "弧長"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：辨認垂直距離。所得結果是「高」。",
+      "explanation": "依定義，頂點到底面平面的垂直距離是圓錐的高。",
+      "steps": [
+        "辨認垂直距離"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "高",
+          "truth": true,
+          "reason": "依獨立計算「辨認垂直距離」，此選項符合所求「選出高的名稱」。"
+        },
+        {
+          "choice": "母線",
+          "truth": false,
+          "reason": "母線位於側面。"
+        },
+        {
+          "choice": "半徑",
+          "truth": false,
+          "reason": "半徑在底面內。"
+        },
+        {
+          "choice": "弧長",
+          "truth": false,
+          "reason": "弧長屬展開圖。"
+        }
+      ],
+      "misconceptionTarget": "把母線當高。 必須依「辨認圓錐高度。」的關係重新核對。",
+      "authoringIntent": "辨認圓錐高度。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "直圓錐"
+      ],
+      "target": "選出高的名稱",
+      "difficultyReason": "概念直接判讀。 本題以「辨認圓錐高度。」作為該難度的具體判準。",
+      "prerequisiteCheck": "理解垂直。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無數值。 所求「選出高的名稱」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "垂直底面條件明確。 題幹已完整限制「選出高的名稱」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "e94175748e93fa021a607755a9f5d8d63cc313d65a3000ef2b25e0d85b5d853c"
+    },
+    {
+      "prompt": "圓錐側面沿一條母線剪開，展開後為何種圖形？",
+      "text": "圓錐側面沿一條母線剪開，展開後為何種圖形？",
+      "choices": [
+        "長方形",
+        "圓",
+        "梯形",
+        "扇形"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：母線成半徑；底圓周成弧。所得結果是「扇形」。",
+      "explanation": "母線從頂點向底圓周展開成等長半徑，外緣為弧，所以形成扇形。",
+      "steps": [
+        "母線成半徑",
+        "底圓周成弧"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "長方形",
+          "truth": false,
+          "reason": "是圓柱側面。"
+        },
+        {
+          "choice": "圓",
+          "truth": false,
+          "reason": "是底面。"
+        },
+        {
+          "choice": "梯形",
+          "truth": false,
+          "reason": "一般不是梯形。"
+        },
+        {
+          "choice": "扇形",
+          "truth": true,
+          "reason": "依獨立計算「底圓周成弧」，此選項符合所求「判斷形狀」。"
+        }
+      ],
+      "misconceptionTarget": "混淆圓柱長方形展開。 必須依「辨認圓錐側面展開。」的關係重新核對。",
+      "authoringIntent": "辨認圓錐側面展開。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "沿母線剪開"
+      ],
+      "target": "判斷形狀",
+      "difficultyReason": "需知道母線會聚。 本題以「辨認圓錐側面展開。」作為該難度的具體判準。",
+      "prerequisiteCheck": "已學展開圖。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位。 所求「判斷形狀」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "只問曲側面。 題幹已完整限制「判斷形狀」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v003",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "1c9259a4e9f54d7084bf2dbe115843dfca1b8e729f0529b98a10374cb0cecc12"
+    },
+    {
+      "prompt": "直圓錐r=3公分、h=4公分，母線長為何？",
+      "text": "直圓錐r=3公分、h=4公分，母線長為何？",
+      "choices": [
+        "3公分",
+        "5公分",
+        "7公分",
+        "4公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：套畢氏定理；開根。所得結果是「5公分」。",
+      "explanation": "l²=r²+h²=9+16=25，所以l=5公分。",
+      "steps": [
+        "套畢氏定理",
+        "開根"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3公分",
+          "truth": false,
+          "reason": "是半徑。"
+        },
+        {
+          "choice": "5公分",
+          "truth": true,
+          "reason": "依獨立計算「開根」，此選項符合所求「求l」。"
+        },
+        {
+          "choice": "7公分",
+          "truth": false,
+          "reason": "直接相加。"
+        },
+        {
+          "choice": "4公分",
+          "truth": false,
+          "reason": "此選項無法符合所求「求l」；錯誤來源會是：把r+h當母線。 必須依「用畢氏定理求母線。」的關係重新核對。"
+        }
+      ],
+      "misconceptionTarget": "把r+h當母線。 必須依「用畢氏定理求母線。」的關係重新核對。",
+      "authoringIntent": "用畢氏定理求母線。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "直圓錐",
+        "r=3",
+        "h=4"
+      ],
+      "target": "求l",
+      "difficultyReason": "單一經典直角三角形。 本題以「用畢氏定理求母線。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會畢氏定理。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求l」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "l取正值。 題幹已完整限制「求l」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": "u23-s007-fig001",
+      "drawingSpecId": "u23-s007-draw001",
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v004",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "svg",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "ad4d858990f594722f005b11a1d3e9a375372a981eefe642bb33821d0eedc761"
+    },
+    {
+      "prompt": "直圓錐l=10公分、r=6公分，高為何？",
+      "text": "直圓錐l=10公分、r=6公分，高為何？",
+      "choices": [
+        "√136公分",
+        "4公分",
+        "16公分",
+        "8公分"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：母線為斜邊；100−36=64；開根。所得結果是「8公分」。",
+      "explanation": "h²=10²−6²=64，所以h=8公分。",
+      "steps": [
+        "母線為斜邊",
+        "100−36=64",
+        "開根"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√136公分",
+          "truth": false,
+          "reason": "誤用平方和。"
+        },
+        {
+          "choice": "4公分",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "16公分",
+          "truth": false,
+          "reason": "此選項無法符合所求「求h」；錯誤來源會是：把l−r當高。 必須依「由母線與半徑求高。」的關係重新核對。"
+        },
+        {
+          "choice": "8公分",
+          "truth": true,
+          "reason": "依獨立計算「開根」，此選項符合所求「求h」。"
+        }
+      ],
+      "misconceptionTarget": "把l−r當高。 必須依「由母線與半徑求高。」的關係重新核對。",
+      "authoringIntent": "由母線與半徑求高。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "直圓錐",
+        "l=10",
+        "r=6"
+      ],
+      "target": "求h",
+      "difficultyReason": "需判斷斜邊後作平方差。 本題以「由母線與半徑求高。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會畢氏定理。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求h」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "10大於6，幾何可行。 題幹已完整限制「求h」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v005",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "2378f69726d1ae324635766d66e59907563de4d53134fd3c6820932328e6f01b"
+    },
+    {
+      "prompt": "圓錐側面展開扇形的半徑對應原圓錐哪個量？",
+      "text": "圓錐側面展開扇形的半徑對應原圓錐哪個量？",
+      "choices": [
+        "底面半徑r",
+        "母線l",
+        "垂直高h",
+        "底面直徑2r"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：追蹤錐頂到圓周。所得結果是「母線l」。",
+      "explanation": "展開扇形從原錐頂到外弧，這段就是原圓錐母線l。",
+      "steps": [
+        "追蹤錐頂到圓周"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "底面半徑r",
+          "truth": false,
+          "reason": "只決定弧長。"
+        },
+        {
+          "choice": "母線l",
+          "truth": true,
+          "reason": "依獨立計算「追蹤錐頂到圓周」，此選項符合所求「找扇形半徑」。"
+        },
+        {
+          "choice": "垂直高h",
+          "truth": false,
+          "reason": "高在立體內部。"
+        },
+        {
+          "choice": "底面直徑2r",
+          "truth": false,
+          "reason": "不對應扇形半徑。"
+        }
+      ],
+      "misconceptionTarget": "把底面半徑當扇形半徑。 必須依「辨認展開圖尺寸對應。」的關係重新核對。",
+      "authoringIntent": "辨認展開圖尺寸對應。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "沿母線展開"
+      ],
+      "target": "找扇形半徑",
+      "difficultyReason": "需追蹤幾何線段。 本題以「辨認展開圖尺寸對應。」作為該難度的具體判準。",
+      "prerequisiteCheck": "理解母線。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無數值。 所求「找扇形半徑」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "角色唯一。 題幹已完整限制「找扇形半徑」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v006",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "ab6070337054c6c4308656462269219c2b3caaafffd5a6628283415b50cc80ea"
+    },
+    {
+      "prompt": "側面展開扇形半徑為10公分，弧長為12π公分。原圓錐底面半徑多少？",
+      "text": "側面展開扇形半徑為10公分，弧長為12π公分。原圓錐底面半徑多少？",
+      "choices": [
+        "10公分",
+        "12公分",
+        "6公分",
+        "3公分"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：弧長對應圓周；除以2π。所得結果是「6公分」。",
+      "explanation": "扇形弧長等於底圓周長2πr。令2πr=12π，得r=6公分。",
+      "steps": [
+        "弧長對應圓周",
+        "除以2π"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10公分",
+          "truth": false,
+          "reason": "是母線。"
+        },
+        {
+          "choice": "12公分",
+          "truth": false,
+          "reason": "把係數當半徑。"
+        },
+        {
+          "choice": "6公分",
+          "truth": true,
+          "reason": "依獨立計算「除以2π」，此選項符合所求「求r」。"
+        },
+        {
+          "choice": "3公分",
+          "truth": false,
+          "reason": "多除2。"
+        }
+      ],
+      "misconceptionTarget": "把扇形半徑10直接當底面半徑。",
+      "authoringIntent": "由展開弧長求底半徑。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "弧長12π",
+        "扇形半徑10"
+      ],
+      "target": "求r",
+      "difficultyReason": "需區分l與r。 本題以「由展開弧長求底半徑。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會圓周公式。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求r」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "π約分精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "r=6小於l=10，幾何可行。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v007",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "b1e1650f35ea99129d8ef0b537b59532aa42d7eff7764d476abe8a376d2b87fa"
+    },
+    {
+      "prompt": "直圓錐底面半徑5公分、母線13公分。其高與半徑之比為何？",
+      "text": "直圓錐底面半徑5公分、母線13公分。其高與半徑之比為何？",
+      "choices": [
+        "12：5",
+        "13：5",
+        "5：12",
+        "12：13"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：求h=12；按題意排比。所得結果是「12：5」。",
+      "explanation": "h²=13²−5²=144，h=12，所以h：r=12：5。",
+      "steps": [
+        "求h=12",
+        "按題意排比"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12：5",
+          "truth": true,
+          "reason": "依獨立計算「按題意排比」，此選項符合所求「求h：r」。"
+        },
+        {
+          "choice": "13：5",
+          "truth": false,
+          "reason": "是l：r。"
+        },
+        {
+          "choice": "5：12",
+          "truth": false,
+          "reason": "方向反。"
+        },
+        {
+          "choice": "12：13",
+          "truth": false,
+          "reason": "是h：l。"
+        }
+      ],
+      "misconceptionTarget": "算出三邊後比的順序顛倒。",
+      "authoringIntent": "結合畢氏與比值。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "r=5",
+        "l=13"
+      ],
+      "target": "求h：r",
+      "difficultyReason": "兩步運算且需讀比序。 本題以「結合畢氏與比值。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會5-12-13。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "比值無單位。 所求「求h：r」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "長度均正且相容。 題幹已完整限制「求h：r」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v008",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "75fccdd158e358723372a1a686fa96625d79753d83519c3279657b935f8765e6"
+    },
+    {
+      "prompt": "一個直圓錐的母線長等於底面直徑10公分，高為多少？已知底面半徑5公分。",
+      "text": "一個直圓錐的母線長等於底面直徑10公分，高為多少？已知底面半徑5公分。",
+      "choices": [
+        "5√3公分",
+        "5公分",
+        "10√3公分",
+        "15公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：辨認l=10；用平方差；化簡√75。所得結果是「5√3公分」。",
+      "explanation": "母線l=10，半徑r=5。h²=100−25=75，所以h=5√3公分。",
+      "steps": [
+        "辨認l=10",
+        "用平方差",
+        "化簡√75"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5√3公分",
+          "truth": true,
+          "reason": "依獨立計算「化簡√75」，此選項符合所求「求h」。"
+        },
+        {
+          "choice": "5公分",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "10√3公分",
+          "truth": false,
+          "reason": "多乘2。"
+        },
+        {
+          "choice": "15公分",
+          "truth": false,
+          "reason": "直接相加。"
+        }
+      ],
+      "misconceptionTarget": "看到直徑10又把半徑用10。",
+      "authoringIntent": "處理根式高度。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "l=10",
+        "r=5"
+      ],
+      "target": "求h",
+      "difficultyReason": "需正確解讀直徑與化簡根式。",
+      "prerequisiteCheck": "會根式與畢氏。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求h」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確根式。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "l>r，存在正高。 題幹已完整限制「求h」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v009",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "c9871f7d35039a24ee87390364d5312ed4c46232238ffca42e0b29ce2293ea50"
+    },
+    {
+      "prompt": "冰淇淋甜筒近似直圓錐，口徑直徑6公分、深度4公分。忽略厚度，母線長約為何？",
+      "text": "冰淇淋甜筒近似直圓錐，口徑直徑6公分、深度4公分。忽略厚度，母線長約為何？",
+      "choices": [
+        "10公分",
+        "7公分",
+        "5公分",
+        "√52公分"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：直徑換半徑3；用3-4-5。所得結果是「5公分」。",
+      "explanation": "半徑為3公分，深度視為高4公分，母線=√(3²+4²)=5公分。",
+      "steps": [
+        "直徑換半徑3",
+        "用3-4-5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10公分",
+          "truth": false,
+          "reason": "把直徑與高相加。"
+        },
+        {
+          "choice": "7公分",
+          "truth": false,
+          "reason": "把3+4。"
+        },
+        {
+          "choice": "5公分",
+          "truth": true,
+          "reason": "依獨立計算「用3-4-5」，此選項符合所求「求母線」。"
+        },
+        {
+          "choice": "√52公分",
+          "truth": false,
+          "reason": "誤用直徑6。"
+        }
+      ],
+      "misconceptionTarget": "未把口徑直徑除2。 必須依「由甜筒規格求母線。」的關係重新核對。",
+      "authoringIntent": "由甜筒規格求母線。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "近似直圓錐",
+        "直徑6",
+        "深度4"
+      ],
+      "target": "求母線",
+      "difficultyReason": "需解讀口徑與深度。 本題以「由甜筒規格求母線。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會直徑換算。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求母線」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確為5。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "忽略厚度使內外尺寸一致。",
+      "literacyContextNecessity": "甜筒口徑給直徑、深度給垂直高，必須先轉成半徑3再以直角三角形求母線，兩項規格都不可省略。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v010",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "02add19a8fbe30a9297a61b15ad3338009592b0078be8022477c7f32cb5619fd"
+    },
+    {
+      "prompt": "裁切圓錐形燈罩側面時，紙樣扇形的外弧長應等於什麼？",
+      "text": "裁切圓錐形燈罩側面時，紙樣扇形的外弧長應等於什麼？",
+      "choices": [
+        "燈罩高度",
+        "底面圓周長",
+        "底面半徑",
+        "母線兩倍"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：想像接合扇形兩直邊；外弧形成底圓周。所得結果是「底面圓周長」。",
+      "explanation": "扇形外弧接合後正好繞底面一周，因此等於底面圓周長。",
+      "steps": [
+        "想像接合扇形兩直邊",
+        "外弧形成底圓周"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "燈罩高度",
+          "truth": false,
+          "reason": "高在內部。"
+        },
+        {
+          "choice": "底面圓周長",
+          "truth": true,
+          "reason": "依獨立計算「外弧形成底圓周」，此選項符合所求「辨認弧長對應」。"
+        },
+        {
+          "choice": "底面半徑",
+          "truth": false,
+          "reason": "半徑不是周長。"
+        },
+        {
+          "choice": "母線兩倍",
+          "truth": false,
+          "reason": "母線對應扇形半徑。"
+        }
+      ],
+      "misconceptionTarget": "把扇形半徑與外弧混淆。 必須依「解讀燈罩紙樣。」的關係重新核對。",
+      "authoringIntent": "解讀燈罩紙樣。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "紙樣完整接成圓錐側面"
+      ],
+      "target": "辨認弧長對應",
+      "difficultyReason": "需把平面紙樣接回立體。 本題以「解讀燈罩紙樣。」作為該難度的具體判準。",
+      "prerequisiteCheck": "理解展開圖。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "所問為長度。 所求「辨認弧長對應」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "完整接合排除重疊搭接量。",
+      "literacyContextNecessity": "燈罩紙樣必須捲成指定底口，因此扇形外弧需恰好接成底圓一周；沒有製作需求便無從決定弧長對應量。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v011",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "0b408cd98433390476ba03d2420ded014960869c39b09c299635d696b8e63b80"
+    },
+    {
+      "prompt": "一個圓錐形漏斗標示斜邊13公分、垂直深度12公分。入口半徑應為多少？",
+      "text": "一個圓錐形漏斗標示斜邊13公分、垂直深度12公分。入口半徑應為多少？",
+      "choices": [
+        "1公分",
+        "12公分",
+        "25公分",
+        "5公分"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：辨認l與h；平方差；開根。所得結果是「5公分」。",
+      "explanation": "漏斗近似直圓錐，斜邊是母線。r²=13²−12²=25，所以r=5公分。",
+      "steps": [
+        "辨認l與h",
+        "平方差",
+        "開根"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1公分",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "12公分",
+          "truth": false,
+          "reason": "此選項無法符合所求「求r」；錯誤來源會是：把斜邊減深度當半徑。 必須依「由漏斗尺寸求入口半徑。」的關係重新核對。"
+        },
+        {
+          "choice": "25公分",
+          "truth": false,
+          "reason": "未開根。"
+        },
+        {
+          "choice": "5公分",
+          "truth": true,
+          "reason": "依獨立計算「開根」，此選項符合所求「求r」。"
+        }
+      ],
+      "misconceptionTarget": "把斜邊減深度當半徑。 必須依「由漏斗尺寸求入口半徑。」的關係重新核對。",
+      "authoringIntent": "由漏斗尺寸求入口半徑。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "近似直圓錐",
+        "母線13",
+        "高12"
+      ],
+      "target": "求r",
+      "difficultyReason": "需把產品標示映射到直角三角形。",
+      "prerequisiteCheck": "會畢氏定理。 本題只再使用先備「solid-cylinder-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求r」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "入口半徑正且唯一。 題幹已完整限制「求r」的範圍與取值方向。",
+      "literacyContextNecessity": "漏斗標示的斜邊是母線、垂直深度是高，兩個實際量共同形成直角三角形，才能反求入口半徑。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s007-v012",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓錐概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "635e4bd6ce73b80f8cf3fa90b326fa276e865cb0fee10f283ace4cde7376577a"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "prompt": "直圓錐底面半徑6公分、高8公分。求母線長，並說明為何可以使用畢氏定理。",
+      "requiredWork": [
+        "指出軸截面中的直角三角形。",
+        "列l²=6²+8²。",
+        "求l。"
+      ],
+      "fullCreditSolution": [
+        "通過軸的截面中，半徑6公分與垂直高8公分互相垂直，母線是斜邊。",
+        "l²=36+64=100，所以l=10公分。"
+      ],
+      "alternativeSolutions": [
+        "可辨認6、8、10為3、4、5的2倍。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確說明直角來源，列式並求得10公分。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案與列式正確但未解釋垂直關係，或只有一個算術小錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道使用畢氏定理但把一個量放錯位置，仍有合理圖形概念。"
+        },
+        {
+          "score": 0,
+          "criteria": "直接6+8=14且無修正，或把母線當高。"
+        }
+      ],
+      "partialCreditRules": [
+        "答案與列式正確但未解釋垂直關係，或只有一個算術小錯。",
+        "知道使用畢氏定理但把一個量放錯位置，仍有合理圖形概念。"
+      ],
+      "followThroughPolicy": "若平方和正確但開根錯，可得2分；若誤把母線當一股但其餘運算一致，最多1分。",
+      "unitNotationRules": "所有長度用公分；平方過程可寫平方公分，但最後為公分。",
+      "answerOnlyPolicy": "只寫10公分無理由最多1分。",
+      "difficulty": "standard",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "母線長10公分。",
+        "ambiguityAndBoundary": "直圓錐與垂直高條件充分。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s007-cr001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "f3c7496dca76d310f9d705f8d3b2b66dd4a2cd50b6db06530558944961861b1e"
+    },
+    {
+      "prompt": "一個直圓錐側面展開為半徑13公分的扇形，扇形弧長為10π公分。求原圓錐底面半徑與高。",
+      "requiredWork": [
+        "由弧長2πr求r。",
+        "辨認扇形半徑為l。",
+        "用l²=r²+h²求h。"
+      ],
+      "fullCreditSolution": [
+        "2πr=10π，所以r=5公分。",
+        "扇形半徑等於母線，因此l=13公分。",
+        "h²=13²−5²=144，所以h=12公分。"
+      ],
+      "alternativeSolutions": [
+        "可由5、12、13直角三角形辨認高度。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確得到r=5、l=13並以畢氏定理求h=12公分，角色說明完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩個答案正確但一段理由簡略，或只有一個非概念性算術錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "能由弧長求r=5或辨認l=13，至少完成一半。"
+        },
+        {
+          "score": 0,
+          "criteria": "把13當底面半徑且未使用弧長，或無法建立關係。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩個答案正確但一段理由簡略，或只有一個非概念性算術錯。",
+        "能由弧長求r=5或辨認l=13，至少完成一半。"
+      ],
+      "followThroughPolicy": "若底面半徑因漏除2寫10，後續一致運算可保留1分；若r正確但h算術錯可得2分。",
+      "unitNotationRules": "弧長與半徑、高皆用公分；π保留精確。",
+      "answerOnlyPolicy": "只給5與12而無關係式最多2分。",
+      "difficulty": "advanced",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "底面半徑5公分，高12公分。",
+        "ambiguityAndBoundary": "扇形半徑與弧長均明示，答案唯一。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s007-cr002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cone-concept",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "7b1c4275804b45a3634fedfe7945aafee1b7d65ae766830f55c1f3c63e289553"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u23-s007-fig001",
+      "drawingSpecId": "u23-s007-draw001",
+      "unitId": "u23",
+      "skillSlot": "s007",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "purpose": "半徑3高4的直圓錐軸截面",
+      "svgPath": "figures/u23/u23-s007-fig001.svg",
+      "canvas": {
+        "width": 660,
+        "height": 430,
+        "viewBox": "0 0 660 430"
+      },
+      "drawingSpec": {
+        "coordinateSystem": "SVG左上為原點，輪廓與標籤位置固定於對應檔案。",
+        "visibleLineRules": "主要輪廓至少3px實線，輔助線使用虛線且不取代題幹條件。",
+        "hiddenLineRules": "僅在需要表示軸線或不可見結構時使用虛線。",
+        "labelsAndPositions": "所有尺寸、方向、面與頂點標籤均在圖中固定位置。",
+        "tickMarksUnitsArrowsSymbols": "直角符號、箭頭、公分單位與視線方向依題意標示。",
+        "scaleStatus": "not-to-scale",
+        "visualInferenceWarning": "示意圖未按比例，必須依題幹與標示作答。"
+      },
+      "altText": "軸截面直角三角形兩股為3與4，斜邊為母線。",
+      "svgTitle": "半徑3高4的直圓錐軸截面",
+      "svgDescription": "軸截面直角三角形兩股為3與4，斜邊為母線。",
+      "mobileReadabilityReview": "縮放至360px寬後主要輪廓與文字仍可辨識，且不以顏色作唯一訊息。",
+      "answerLeakageReview": "圖只提供題幹已知結構，不直接標示選項或答案。",
+      "svgAssertions": [
+        "<title",
+        "<desc",
+        "role=\"img\"",
+        "未按比例"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderedInspection": true,
+        "reviewNote": "u23-s007-fig001 已核對題圖數值、線型、標籤、縮放警語與答案不外洩。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentSha256": "bd058386405a8027c8001007b1169761f25abbf7e7c73e214523ac0975fec7ce"
+    }
+  ],
+  "sourceBatch": "024-u23-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/024-u23-complete/units/u23/s007"
+}

@@ -1,0 +1,1166 @@
+{
+  "slot": "s009",
+  "skillId": "linear-equation-money-problem",
+  "topicId": "u03-linear-equation-apps",
+  "title": "金錢問題：從固定費與單價建立總金額關係",
+  "lecture": {
+    "lectureId": "u03-s009-lecture-r1",
+    "unitId": "u03",
+    "topicId": "u03-linear-equation-apps",
+    "skillId": "linear-equation-money-problem",
+    "title": "金錢問題：從固定費與單價建立總金額關係",
+    "audience": "國中零基礎至會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能用單價乘數量表示變動費。",
+      "能區分固定費與逐件費。",
+      "能處理付款、找零、折扣與預算餘額。",
+      "能檢查金額與數量的單位及整數限制。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "linear-equation-age-problem",
+        "requiredLevel": "能處理年齡差、倍數與同一時間點，並判斷解的合理性。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "單價",
+        "definition": "一個單位商品的價格。"
+      },
+      {
+        "term": "固定費",
+        "definition": "不隨購買數量改變、只收一次的費用。"
+      },
+      {
+        "term": "變動費",
+        "definition": "隨數量增加，通常為單價乘數量。"
+      },
+      {
+        "term": "找零",
+        "definition": "付款金額減去實際商品總價。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "px+f",
+        "meaning": "單價p乘數量x，再加固定費f。"
+      },
+      {
+        "symbol": "B-C",
+        "meaning": "預算B扣除支出C後的餘額。"
+      }
+    ],
+    "conceptNarrative": [
+      "金錢方程式先判斷哪些費用每件都發生、哪些只收一次。",
+      "付款與找零題中，實付商品總價=付款-找零。",
+      "折扣題要先確認折數作用於原價還是某一部分。",
+      "數量通常需為非負整數，金額則依最小貨幣單位可為小數。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "總價",
+        "statement": "總價=單價×數量+固定費。"
+      },
+      {
+        "name": "實付金額",
+        "statement": "實付=付款-找零。"
+      },
+      {
+        "name": "折後價",
+        "statement": "折後價=原價×折數。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "px+f=T",
+        "conditions": [
+          "p為單價、f只收一次"
+        ],
+        "meaning": "固定費加按量計費。"
+      },
+      {
+        "formula": "P-R=px",
+        "conditions": [
+          "P為付款、R為找零"
+        ],
+        "meaning": "找零型購物。"
+      }
+    ],
+    "nonApplicableCases": [
+      "固定費不能乘購買數量。",
+      "每件折價要乘件數，整筆折價只扣一次。",
+      "硬幣或票數需為整數。",
+      "不能把淨收入當成總營收。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "標出單價、數量、固定費與總額。",
+        "check": "每一筆費用作用幾次？"
+      },
+      {
+        "step": 2,
+        "instruction": "用px表示同價商品總費。",
+        "check": "數量是否為未知數？"
+      },
+      {
+        "step": 3,
+        "instruction": "加入或扣除固定金額。",
+        "check": "是費用、折價、找零還是餘額？"
+      },
+      {
+        "step": 4,
+        "instruction": "解方程式。",
+        "check": "金額單位是否一致？"
+      },
+      {
+        "step": 5,
+        "instruction": "代回並檢查數量限制。",
+        "check": "票數、硬幣數是否為整數？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "6支筆另加12元包裝，共132元。",
+        "solutionSteps": [
+          "列6x+12=132。",
+          "6x=120。",
+          "x=20。"
+        ],
+        "answer": "每支20元。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "付1000元買5件商品，找回175元。",
+        "solutionSteps": [
+          "商品總價825元。",
+          "5x=825。",
+          "x=165。"
+        ],
+        "answer": "每件165元。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "商品七五折後900元。",
+        "solutionSteps": [
+          "0.75x=900。",
+          "x=1200。"
+        ],
+        "answer": "原價1200元。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "10枚硬幣中x枚20元，其餘5元，總值95元。",
+        "solutionSteps": [
+          "20x+5(10-x)=95。",
+          "15x=45。",
+          "x=3。"
+        ],
+        "answer": "20元硬幣3枚。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "固定費也乘數量。",
+        "why": "未分清費用層級。",
+        "correction": "固定費只加一次。"
+      },
+      {
+        "mistake": "找零加到付款上。",
+        "why": "方向顛倒。",
+        "correction": "商品價=付款-找零。"
+      },
+      {
+        "mistake": "每件折價只扣一次。",
+        "why": "忽略件數。",
+        "correction": "每件價差乘件數。"
+      },
+      {
+        "mistake": "折後價再乘折數。",
+        "why": "把求原價方向做反。",
+        "correction": "原價=折後價÷折數。"
+      },
+      {
+        "mistake": "票數解為小數仍接受。",
+        "why": "未檢查離散量。",
+        "correction": "確認必須為非負整數。"
+      },
+      {
+        "mistake": "淨收入與營收混用。",
+        "why": "漏加回支出。",
+        "correction": "淨收入=營收-支出。"
+      }
+    ],
+    "selfCheck": [
+      "固定費是否只收一次？",
+      "單價是否乘正確數量？",
+      "找零與折價方向是否正確？",
+      "金額單位是否一致？",
+      "數量解是否符合整數條件？"
+    ],
+    "summary": [
+      "總價由固定費與變動費組成。",
+      "付款減找零得到商品價。",
+      "折數作用方向要明確。",
+      "解後檢查貨幣與數量限制。"
+    ],
+    "connections": {
+      "previous": "需要會列一元一次方程式並處理百分率。",
+      "next": [
+        "行程問題把單價×數量換成速率×時間。",
+        "方案比較會同時建立兩個費用式。"
+      ]
+    },
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u03-s009-v001",
+        "u03-s009-v002",
+        "u03-s009-v003",
+        "u03-s009-v004",
+        "u03-s009-v005",
+        "u03-s009-v006",
+        "u03-s009-v007",
+        "u03-s009-v008",
+        "u03-s009-v009",
+        "u03-s009-v010",
+        "u03-s009-v011",
+        "u03-s009-v012"
+      ],
+      "constructedResponseIds": [
+        "u03-s009-cr001",
+        "u03-s009-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "四例逐項驗算：6×20+12=132、1000-175=5×165、0.75×1200=900、3×20+7×5=95；並核對固定費、找零與硬幣整數性。",
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "10240405f1a6bab989af85a86b0af9f3acad16bfbdc40bb98d6c582fbee7f695",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "legacyContentDisposition": "replace-old-lecture-at-final-integration"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u03-s009-v001",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "買 3 本同價筆記本另付 20 元包裝費，共 110 元。每本多少元？",
+      "choices": [
+        "30",
+        "20",
+        "36",
+        "90"
+      ],
+      "answerIndex": 0,
+      "explanation": "列3x+20=110；扣包裝費20；除3得30。所以答案是「30」。",
+      "steps": [
+        "列3x+20=110",
+        "扣包裝費20",
+        "除3得30"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "30",
+          "truth": true,
+          "reason": "設每本x元，3x+20=110；3x=90，所以x=30。 因此此選項符合題目。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "把包裝費當單價。"
+        },
+        {
+          "choice": "36",
+          "truth": false,
+          "reason": "110÷3未扣固定費。"
+        },
+        {
+          "choice": "90",
+          "truth": false,
+          "reason": "90是三本總價。"
+        }
+      ],
+      "commonMistake": "把固定費平均前未先扣除。",
+      "concept": "固定費不隨數量增加。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "basic"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "由總價與固定費求單價。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "87f5a859bb7b3af30176204c4020c42149a8c54ec68755edba902fc20cd5dfe0",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v002",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "5 支同價原子筆加一個 15 元橡皮擦，共 90 元。每支筆多少元？",
+      "choices": [
+        "12",
+        "15",
+        "18",
+        "75"
+      ],
+      "answerIndex": 1,
+      "explanation": "扣除橡皮擦15元；剩75元為5支筆；除5得15。所以答案是「15」。",
+      "steps": [
+        "扣除橡皮擦15元",
+        "剩75元為5支筆",
+        "除5得15"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "把90-15後除錯。"
+        },
+        {
+          "choice": "15",
+          "truth": true,
+          "reason": "5x+15=90，5x=75，x=15。 因此此選項符合題目。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "直接90÷5。"
+        },
+        {
+          "choice": "75",
+          "truth": false,
+          "reason": "75是五支筆總價。"
+        }
+      ],
+      "commonMistake": "把其他商品價格也平均到每支筆。",
+      "concept": "總價中先分離固定商品。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "basic"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "解簡單購物單價問題。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "855fec99eca1cd07a46be44fa40620771e333dbca7d92831c92d0e5cf382134f",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v003",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "拿 500 元買 4 個同價水壺，找回 60 元。每個水壺多少元？",
+      "choices": [
+        "100",
+        "120",
+        "110",
+        "140"
+      ],
+      "answerIndex": 2,
+      "explanation": "先求實付440元；列4x=440；除4得110。所以答案是「110」。",
+      "steps": [
+        "先求實付440元",
+        "列4x=440",
+        "除4得110"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "100",
+          "truth": false,
+          "reason": "把500直接除5。"
+        },
+        {
+          "choice": "120",
+          "truth": false,
+          "reason": "500-60後除錯。"
+        },
+        {
+          "choice": "110",
+          "truth": true,
+          "reason": "實付500-60=440元，4x=440，所以x=110。 因此此選項符合題目。"
+        },
+        {
+          "choice": "140",
+          "truth": false,
+          "reason": "把找零加回商品價。"
+        }
+      ],
+      "commonMistake": "把找零當額外費用。",
+      "concept": "商品總價=付款-找零。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "basic"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "由付款與找零求實付金額。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e21bb372e74b8a8bf65222047e9c16575453b2f75bc59a5d31dbe48dc4d5c58f",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v004",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一件商品打八折後售價 640 元，原價是多少元？",
+      "choices": [
+        "512",
+        "768",
+        "1280",
+        "800"
+      ],
+      "answerIndex": 3,
+      "explanation": "八折表示原價的0.8；列0.8x=640；除0.8得800。所以答案是「800」。",
+      "steps": [
+        "八折表示原價的0.8",
+        "列0.8x=640",
+        "除0.8得800"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "512",
+          "truth": false,
+          "reason": "再把640乘0.8。"
+        },
+        {
+          "choice": "768",
+          "truth": false,
+          "reason": "把折扣20%加回一次。"
+        },
+        {
+          "choice": "1280",
+          "truth": false,
+          "reason": "把0.8當作除數方向顛倒。"
+        },
+        {
+          "choice": "800",
+          "truth": true,
+          "reason": "設原價x元，0.8x=640，所以x=640÷0.8=800。 因此此選項符合題目。"
+        }
+      ],
+      "commonMistake": "把折後價再打一次折。",
+      "concept": "折後價=原價×折數。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "standard"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "用百分率方程式回推原價。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "60f74e288c1367237d023a76d30785d08bf3f8e62c01c044a2a2b537a3ca3e05",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v005",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "成人票每張 x 元，兒童票每張比成人票少 40 元。買 2 張成人票與 3 張兒童票共 720 元。成人票多少元？",
+      "choices": [
+        "120",
+        "168",
+        "144",
+        "200"
+      ],
+      "answerIndex": 1,
+      "explanation": "表示兒童票x-40；列2x+3(x-40)=720；解得168。所以答案是「168」。",
+      "steps": [
+        "表示兒童票x-40",
+        "列2x+3(x-40)=720",
+        "解得168"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "120",
+          "truth": false,
+          "reason": "把720除6。"
+        },
+        {
+          "choice": "168",
+          "truth": true,
+          "reason": "2x+3(x-40)=720，5x-120=720，5x=840，所以x=168。 因此此選項符合題目。"
+        },
+        {
+          "choice": "144",
+          "truth": false,
+          "reason": "折價40只扣一次。"
+        },
+        {
+          "choice": "200",
+          "truth": false,
+          "reason": "忽略兒童票折價。"
+        }
+      ],
+      "commonMistake": "總共只扣40元。",
+      "concept": "每張兒童票都少40元。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "standard"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "整合兩種票價與價差。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "bc40ac5d28592177400faf096643b208c1a2fea7fafe67b082af423848c87a7b",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v006",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "共有 12 枚硬幣，其中 x 枚是 50 元，其餘是 10 元，總值 360 元。x 是多少？",
+      "choices": [
+        "4",
+        "8",
+        "6",
+        "9"
+      ],
+      "answerIndex": 2,
+      "explanation": "10元硬幣有12-x枚；列總值方程式；解得50元硬幣6枚。所以答案是「6」。",
+      "steps": [
+        "10元硬幣有12-x枚",
+        "列總值方程式",
+        "解得50元硬幣6枚"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "只用360÷90。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "把12枚平均分。"
+        },
+        {
+          "choice": "6",
+          "truth": true,
+          "reason": "50x+10(12-x)=360，展開40x+120=360，40x=240，所以x=6。 因此此選項符合題目。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "忽略10元硬幣的價值。"
+        }
+      ],
+      "commonMistake": "使用兩個獨立未知數卻沒有第二條件。",
+      "concept": "其餘數量以總數減未知數表示。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "standard"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "用一個未知數表示兩類硬幣。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f07a46e9b1841f1b2c3da16b3f373e202773aa111e0a73aaae843b7493fc4719",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v007",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "7 人平均分攤餐費，每人原應付 x 元；使用 105 元折價券後共付 595 元。x 是多少？",
+      "choices": [
+        "70",
+        "85",
+        "115",
+        "100"
+      ],
+      "answerIndex": 3,
+      "explanation": "折價前總額7x；扣折價券後為595；解得每人100。所以答案是「100」。",
+      "steps": [
+        "折價前總額7x",
+        "扣折價券後為595",
+        "解得每人100"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "70",
+          "truth": false,
+          "reason": "把595÷7未加回折價。"
+        },
+        {
+          "choice": "85",
+          "truth": false,
+          "reason": "把折價券平均後直接扣。"
+        },
+        {
+          "choice": "115",
+          "truth": false,
+          "reason": "把105當每人折扣。"
+        },
+        {
+          "choice": "100",
+          "truth": true,
+          "reason": "7x-105=595，7x=700，所以x=100。 因此此選項符合題目。"
+        }
+      ],
+      "commonMistake": "把總折價誤當每人折價。",
+      "concept": "折價券作用於總額。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "advanced"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "由折價後總額回推原分攤額。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c4c3dad6bd33119d5f6b33d9915e867d424caebf2af37de93080829c53ef5d0e",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v008",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "原有 350 元，每週存 x 元，8 週後共有 950 元。每週存多少元？",
+      "choices": [
+        "75",
+        "50",
+        "100",
+        "162.5"
+      ],
+      "answerIndex": 0,
+      "explanation": "扣除原有350；8週共存600；除8得75。所以答案是「75」。",
+      "steps": [
+        "扣除原有350",
+        "8週共存600",
+        "除8得75"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "75",
+          "truth": true,
+          "reason": "350+8x=950，8x=600，所以x=75。 因此此選項符合題目。"
+        },
+        {
+          "choice": "50",
+          "truth": false,
+          "reason": "把600除12。"
+        },
+        {
+          "choice": "100",
+          "truth": false,
+          "reason": "直接950÷8。"
+        },
+        {
+          "choice": "162.5",
+          "truth": false,
+          "reason": "把原有350平均進每週。"
+        }
+      ],
+      "commonMistake": "忽略初始金額。",
+      "concept": "總額=初始+週數×每週金額。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "advanced"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "處理初始金額與固定週期儲蓄。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c8eab570338c5e85ccb1e9c763a106681b2ca822a84baa8e2bc043388b1456f6",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v009",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "電費由基本費 120 元加上每度 2.5 元組成。帳單 320 元時，用電量是多少度？",
+      "choices": [
+        "50",
+        "100",
+        "80",
+        "128"
+      ],
+      "answerIndex": 2,
+      "explanation": "扣除基本費120；變動費200元；200÷2.5=80度。所以答案是「80」。",
+      "steps": [
+        "扣除基本費120",
+        "變動費200元",
+        "200÷2.5=80度"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "50",
+          "truth": false,
+          "reason": "把200÷4。"
+        },
+        {
+          "choice": "100",
+          "truth": false,
+          "reason": "直接320÷3.2。"
+        },
+        {
+          "choice": "80",
+          "truth": true,
+          "reason": "120+2.5x=320，2.5x=200，x=80。 因此此選項符合題目。"
+        },
+        {
+          "choice": "128",
+          "truth": false,
+          "reason": "把120當用電度數。"
+        }
+      ],
+      "commonMistake": "總帳單直接除單價。",
+      "concept": "先扣固定費再除單價。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "advanced"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "由固定費與單價求用量。",
+      "literacyContextNecessity": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "75ac9b56da445f436335ef3bca9aefb6458cb51b3c91ce391f689f8314353d69",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v010",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "租借器材基本費 90 元，每小時 35 元。總費用 300 元時，租了幾小時？",
+      "choices": [
+        "5",
+        "7",
+        "8",
+        "6"
+      ],
+      "answerIndex": 3,
+      "explanation": "扣基本費得210；210÷35=6；單位為小時。所以答案是「6」。",
+      "steps": [
+        "扣基本費得210",
+        "210÷35=6",
+        "單位為小時"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "35×5只有175。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "35×7加基本費335。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "把300÷35取整。"
+        },
+        {
+          "choice": "6",
+          "truth": true,
+          "reason": "90+35h=300，35h=210，所以h=6。 因此此選項符合題目。"
+        }
+      ],
+      "commonMistake": "忽略基本費或任意取整。",
+      "concept": "時間乘單價後再加基本費。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "literacy"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "解含固定費的租借時間。",
+      "literacyContextNecessity": "基本費與小時計費共同決定總費用，租借情境使未知數必須解釋為非負時間。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d1334f97343d2924fca9f9ea4fbcd275616cfe9c2dfcdf0016da6ec8631da115",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v011",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "健身課年費 600 元，每堂另收 80 元。全年共付 1240 元，參加幾堂？",
+      "choices": [
+        "8",
+        "6",
+        "10",
+        "16"
+      ],
+      "answerIndex": 0,
+      "explanation": "扣除年費600；課程費640；除80得8堂。所以答案是「8」。",
+      "steps": [
+        "扣除年費600",
+        "課程費640",
+        "除80得8堂"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "8",
+          "truth": true,
+          "reason": "600+80x=1240，80x=640，x=8。 因此此選項符合題目。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "640÷100。"
+        },
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "直接1240÷80。"
+        },
+        {
+          "choice": "16",
+          "truth": false,
+          "reason": "把年費當每堂費。"
+        }
+      ],
+      "commonMistake": "忽略年費。",
+      "concept": "固定年費不可平均成額外堂數。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "literacy"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "由年費與單堂費求堂數。",
+      "literacyContextNecessity": "固定年費與逐堂收費決定600+80x，堂數還必須為非負整數。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "48f1e9c7125615c43e4e6201c28e7f0eb3cd9a94f4867605e053ccd525ae5d96",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-v012",
+      "unitId": "u03",
+      "numericUnitId": 3,
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某人有 2400 元，買書花了總額的 3/8，再付 x 元交通費，最後剩 1050 元。交通費是多少？",
+      "choices": [
+        "300",
+        "450",
+        "600",
+        "900"
+      ],
+      "answerIndex": 1,
+      "explanation": "先算書費900元；剩餘方程式1500-x=1050；解得450元。所以答案是「450」。",
+      "steps": [
+        "先算書費900元",
+        "剩餘方程式1500-x=1050",
+        "解得450元"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "300",
+          "truth": false,
+          "reason": "把1050-900。"
+        },
+        {
+          "choice": "450",
+          "truth": true,
+          "reason": "書費2400×3/8=900；2400-900-x=1050，所以x=450。 因此此選項符合題目。"
+        },
+        {
+          "choice": "600",
+          "truth": false,
+          "reason": "把2400的1/4當交通費。"
+        },
+        {
+          "choice": "900",
+          "truth": false,
+          "reason": "把書費900當交通費。"
+        }
+      ],
+      "commonMistake": "把剩餘與支出相加方向弄反。",
+      "concept": "先計算已知比例金額再列餘額式。",
+      "tags": [
+        "代數",
+        "金錢問題",
+        "literacy"
+      ],
+      "estimatedTimeSec": "75",
+      "prerequisiteSkillIds": [
+        "linear-equation-age-problem"
+      ],
+      "authoringIntent": "整合比例支出與未知支出。",
+      "literacyContextNecessity": "總預算、書費比例與最後餘額三項資料缺一不可，情境直接決定交通費的方程式。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "fab84cca17459d8dee7556abd83f3f8536bb836a9ebfe1ceb414e80a7693c51c",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u03-s009-cr001",
+      "unitId": "u03",
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "某商店買 6 件同價商品，使用整筆 120 元折價券後實付 960 元。求每件原價。",
+      "requiredWork": [
+        "整筆折價只扣一次。",
+        "列6x-120=960。",
+        "解並驗算。"
+      ],
+      "fullCreditSolution": [
+        "6x-120=960。",
+        "6x=1080。",
+        "x=180元；6×180-120=960。"
+      ],
+      "alternativeSolutions": [
+        "可先把折價券加回，原總價1080元，再除6。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "方程式、單價180元與驗算完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但折價層級說明不足。"
+        },
+        {
+          "score": 1,
+          "criteria": "能算出原總價1080元。"
+        },
+        {
+          "score": 0,
+          "criteria": "把整筆折價誤乘6。"
+        }
+      ],
+      "scoringNotes": [
+        "等價且完整的代數步驟可接受。",
+        "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
+      ],
+      "commonErrors": [
+        "把120元當每件折價。",
+        "直接960÷6。"
+      ],
+      "independentReview": {
+        "derivedResult": "180元",
+        "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
+        "decision": "pass"
+      },
+      "contentSha256": "74c74fee3ec0e2d28e686ee918688791c42955cc5967308fae8085b5f47bd64c",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    },
+    {
+      "questionId": "u03-s009-cr002",
+      "unitId": "u03",
+      "topicId": "u03-linear-equation-apps",
+      "skillId": "linear-equation-money-problem",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "一場活動每張票 150 元，固定成本 3600 元，另有每位觀眾 20 元的材料成本。若淨收入為 4200 元，售出多少張票？",
+      "requiredWork": [
+        "每位淨貢獻為150-20。",
+        "列收入減兩種成本。",
+        "檢查票數為整數。"
+      ],
+      "fullCreditSolution": [
+        "淨收入150x-20x-3600=4200。",
+        "130x=7800。",
+        "x=60張；驗算收入9000、材料1200、固定3600，淨4200。"
+      ],
+      "alternativeSolutions": [
+        "可先合併每人淨收入130元。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整列式、解60張並以收支驗算。"
+        },
+        {
+          "score": 2,
+          "criteria": "方法正確但一項成本漏在驗算。"
+        },
+        {
+          "score": 1,
+          "criteria": "能列130x-3600=4200。"
+        },
+        {
+          "score": 0,
+          "criteria": "收入與成本方向混亂。"
+        }
+      ],
+      "scoringNotes": [
+        "等價且完整的代數步驟可接受。",
+        "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
+      ],
+      "commonErrors": [
+        "漏掉每位材料成本。",
+        "把固定成本也乘人數。"
+      ],
+      "independentReview": {
+        "derivedResult": "60張",
+        "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
+        "decision": "pass"
+      },
+      "contentSha256": "7cefc721f694946b06958edf7eb56630c5e4a1dfa53fe67acd298945fee54135",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "legacyContentDisposition": "replace-old-record-at-final-integration"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "004-u03-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/004-u03-complete/units/u03/s009"
+}

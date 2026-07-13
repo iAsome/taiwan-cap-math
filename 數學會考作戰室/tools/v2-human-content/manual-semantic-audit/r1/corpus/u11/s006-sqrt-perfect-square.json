@@ -1,0 +1,1324 @@
+{
+  "slot": "s006",
+  "skillId": "sqrt-perfect-square",
+  "topicId": "u11-square-root",
+  "title": "完全平方數平方根：建立平方表與邊界感",
+  "lecture": {
+    "lectureId": "u11-s006-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "sqrt-perfect-square",
+    "lockedSkillOrder": 6,
+    "lockedTitle": "完全平方數平方根",
+    "title": "完全平方數平方根：建立平方表與邊界感",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能熟練1²至30²中的常用值",
+      "能判定整數是否為完全平方數",
+      "能處理區間、計數與邊界問題"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "sqrt-notation",
+        "requiredLevel": "能使用前一技能「平方根記號」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "完全平方數",
+        "definition": "可寫成整數平方的非負整數。"
+      },
+      {
+        "term": "平方表",
+        "definition": "整數與其平方的對照。"
+      },
+      {
+        "term": "底數",
+        "definition": "平方運算中被乘兩次的數。"
+      },
+      {
+        "term": "平方數區間",
+        "definition": "由相鄰底數平方形成的範圍。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "n²",
+        "meaning": "n×n。"
+      },
+      {
+        "symbol": "√(n²)=|n|",
+        "meaning": "n為整數時仍取非負值。"
+      }
+    ],
+    "conceptNarrative": [
+      "熟記平方數能加速根式化簡、估算與畢氏數組辨識。",
+      "判斷一個正整數是否為完全平方數，可找其平方根是否為整數。",
+      "區間計數時應轉成底數範圍，特別注意是否包含端點。",
+      "0=0²也是完全平方數，但「正完全平方數」不包含0。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "完全平方數",
+        "statement": "存在整數n使N=n²。"
+      },
+      {
+        "name": "正完全平方數",
+        "statement": "n≠0時的n²。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "1²,2²,…",
+        "conditions": [
+          "常用表至少熟悉至20²。"
+        ],
+        "meaning": "用於快速判定與估算。"
+      }
+    ],
+    "nonApplicableCases": [
+      "偶數不一定是完全平方數。",
+      "完全平方數不只由正整數平方得到，負整數平方相同。",
+      "題目說1到100時不能算入0。",
+      "小於與小於等於的邊界不可混淆。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先判斷問題是求平方、開平方或計數。",
+        "check": "不要把平方當乘2。"
+      },
+      {
+        "step": 2,
+        "instruction": "列出附近底數。",
+        "check": "用平方表定位。"
+      },
+      {
+        "step": 3,
+        "instruction": "檢查端點是否包含。",
+        "check": "看清「介於」「含」等詞。"
+      },
+      {
+        "step": 4,
+        "instruction": "若為實際長度，取正平方根。",
+        "check": "底數可能正負但長度非負。"
+      },
+      {
+        "step": 5,
+        "instruction": "以乘法驗算。",
+        "check": "n×n應回到原數。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "求17²。",
+        "solutionSteps": [
+          "17×17=289。"
+        ],
+        "answer": "289。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "判斷196是否完全平方數。",
+        "solutionSteps": [
+          "14²=196。"
+        ],
+        "answer": "是。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "找小於200的最大完全平方數。",
+        "solutionSteps": [
+          "14²=196。",
+          "15²=225超過。"
+        ],
+        "answer": "196。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "計數50到150間的完全平方數。",
+        "solutionSteps": [
+          "8²=64至12²=144。",
+          "底數8,9,10,11,12。"
+        ],
+        "answer": "5個。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "15²=30。",
+        "why": "把平方當乘2。",
+        "correction": "15²=225。"
+      },
+      {
+        "mistake": "所有偶數都是平方數。",
+        "why": "只看奇偶性不足。",
+        "correction": "檢查整數平方根。"
+      },
+      {
+        "mistake": "√144=±12。",
+        "why": "根號是主平方根。",
+        "correction": "√144=12。"
+      },
+      {
+        "mistake": "1到100有11個正平方數。",
+        "why": "錯把0算入。",
+        "correction": "1²到10²共10個。"
+      },
+      {
+        "mistake": "小於81仍包含81。",
+        "why": "忽略嚴格不等式。",
+        "correction": "最大應看8²=64。"
+      },
+      {
+        "mistake": "只背平方表不驗算陌生數。",
+        "why": "記憶可能錯位。",
+        "correction": "用鄰近平方或乘法確認。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "完全平方數是整數平方。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "先判斷問題是求平方、開平方或計數。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "15²=30。；修正：15²=225。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "實際量是否只取正值？"
+      }
+    ],
+    "summary": [
+      "完全平方數是整數平方。",
+      "區間問題轉成底數區間最穩定。"
+    ],
+    "connections": {
+      "previous": "需要 s005 的主平方根記號。",
+      "next": [
+        "s007 有理化會使用根式平方。",
+        "s008 比較與畢氏定理都依賴平方表。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s006-v001",
+        "u11-s006-v002",
+        "u11-s006-v003",
+        "u11-s006-v004",
+        "u11-s006-v005",
+        "u11-s006-v006",
+        "u11-s006-v007",
+        "u11-s006-v008",
+        "u11-s006-v009",
+        "u11-s006-v010",
+        "u11-s006-v011",
+        "u11-s006-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s006-cr001",
+        "u11-s006-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「完全平方數平方根」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「15²=30。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "f1e37e0cd5622a82997140c14f4e5fd120125cda030b8c5da13cb63390213ec6"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u11-s006-v001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列哪一個是完全平方數？",
+      "givenConditions": [
+        "候選皆為正整數。"
+      ],
+      "target": "辨認完全平方數。",
+      "choices": [
+        "120",
+        "144",
+        "150",
+        "180"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：列出附近平方：11²=121、12²=144、13²=169。 詳算檢查：144=12²，所以是完全平方數。 因此結果為「144」。",
+      "explanation": "144=12²，所以是完全平方數。",
+      "steps": [
+        "整理條件：候選皆為正整數。",
+        "獨立推導：不參照選項，從題幹條件重新計算：列出附近平方：11²=121、12²=144、13²=169。 詳算檢查：144=12²，所以是完全平方數。 因此結果為「144」。",
+        "核對目標：答案「144」確實回應「辨認完全平方數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "120",
+          "truth": false,
+          "reason": "不存在整數平方等於120。"
+        },
+        {
+          "choice": "144",
+          "truth": true,
+          "reason": "此選項符合目標「辨認完全平方數。」；144=12²，所以是完全平方數。"
+        },
+        {
+          "choice": "150",
+          "truth": false,
+          "reason": "介於12²與13²之間。"
+        },
+        {
+          "choice": "180",
+          "truth": false,
+          "reason": "不是整數的平方。"
+        }
+      ],
+      "misconceptionTarget": "看到偶數就誤認為完全平方數。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "直接使用常用平方表。；具體任務是「辨認完全平方數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3a662367d1e0b566abaef39a5f2c90ff5182c59e8c70338679608f3f22a039d3"
+    },
+    {
+      "questionId": "u11-s006-v002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "√225 等於多少？",
+      "givenConditions": [
+        "225為完全平方數。"
+      ],
+      "target": "求整數平方根。",
+      "choices": [
+        "15",
+        "14",
+        "25",
+        "112.5"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：以15×15驗算得到225。 詳算檢查：15²=225，因此主平方根是15。 因此結果為「15」。",
+      "explanation": "15²=225，因此主平方根是15。",
+      "steps": [
+        "整理條件：225為完全平方數。",
+        "獨立推導：不參照選項，從題幹條件重新計算：以15×15驗算得到225。 詳算檢查：15²=225，因此主平方根是15。 因此結果為「15」。",
+        "核對目標：答案「15」確實回應「求整數平方根。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "15",
+          "truth": true,
+          "reason": "此選項符合目標「求整數平方根。」；15²=225，因此主平方根是15。"
+        },
+        {
+          "choice": "14",
+          "truth": false,
+          "reason": "14²=196。"
+        },
+        {
+          "choice": "25",
+          "truth": false,
+          "reason": "25²=625。"
+        },
+        {
+          "choice": "112.5",
+          "truth": false,
+          "reason": "開平方不是除以2。"
+        }
+      ],
+      "misconceptionTarget": "不熟悉15的平方。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "常用平方數直接辨認。；具體任務是「求整數平方根。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "86336314536b5b452dc05520b17fca376ae619312878eeba1ed17916ad8daffd"
+    },
+    {
+      "questionId": "u11-s006-v003",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "20² 等於多少？",
+      "givenConditions": [
+        "底數為20。"
+      ],
+      "target": "計算平方。",
+      "choices": [
+        "40",
+        "200",
+        "800",
+        "400"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：2²=4，再補兩個0，得到400。 詳算檢查：20²=20×20=400。 因此結果為「400」。",
+      "explanation": "20²=20×20=400。",
+      "steps": [
+        "整理條件：底數為20。",
+        "獨立推導：不參照選項，從題幹條件重新計算：2²=4，再補兩個0，得到400。 詳算檢查：20²=20×20=400。 因此結果為「400」。",
+        "核對目標：答案「400」確實回應「計算平方。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "40",
+          "truth": false,
+          "reason": "把平方當乘2。"
+        },
+        {
+          "choice": "200",
+          "truth": false,
+          "reason": "只乘10。"
+        },
+        {
+          "choice": "800",
+          "truth": false,
+          "reason": "多乘一次2。"
+        },
+        {
+          "choice": "400",
+          "truth": true,
+          "reason": "此選項符合目標「計算平方。」；20²=20×20=400。"
+        }
+      ],
+      "misconceptionTarget": "把次方符號誤解為乘以2。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "單一步驟平方運算。；具體任務是「計算平方。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "aadac16955aad5f5b92ad019609e8d64e3e9276119e7f41f2c75f066b07610f3"
+    },
+    {
+      "questionId": "u11-s006-v004",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "小於 300 的最大完全平方數是多少？",
+      "givenConditions": [
+        "要求嚴格小於300。"
+      ],
+      "target": "找最大符合條件的完全平方數。",
+      "choices": [
+        "256",
+        "300",
+        "289",
+        "324"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：找√300介於17與18之間，取17²。 詳算檢查：17²=289<300，而18²=324>300，所以最大的是289。 因此結果為「289」。",
+      "explanation": "17²=289<300，而18²=324>300，所以最大的是289。",
+      "steps": [
+        "整理條件：要求嚴格小於300。",
+        "獨立推導：不參照選項，從題幹條件重新計算：找√300介於17與18之間，取17²。 詳算檢查：17²=289<300，而18²=324>300，所以最大的是289。 因此結果為「289」。",
+        "核對目標：答案「289」確實回應「找最大符合條件的完全平方數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "256",
+          "truth": false,
+          "reason": "是16²但不是最大。"
+        },
+        {
+          "choice": "300",
+          "truth": false,
+          "reason": "不是完全平方數。"
+        },
+        {
+          "choice": "289",
+          "truth": true,
+          "reason": "此選項符合目標「找最大符合條件的完全平方數。」；17²=289<300，而18²=324>300，所以最大的是289。"
+        },
+        {
+          "choice": "324",
+          "truth": false,
+          "reason": "雖是18²但大於300。"
+        }
+      ],
+      "misconceptionTarget": "只列出熟悉的16²就停止。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需夾住平方根並選邊界。；具體任務是「找最大符合條件的完全平方數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "afba50190d389ea2125df74bc13d5de5a7a884420938adb8c5fa4c1fcb97fe91"
+    },
+    {
+      "questionId": "u11-s006-v005",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "1 到 100（含）共有多少個正完全平方數？",
+      "givenConditions": [
+        "範圍含1與100，不含0。"
+      ],
+      "target": "計數完全平方數。",
+      "choices": [
+        "10 個",
+        "9 個",
+        "11 個",
+        "100 個"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：因11²=121>100，所以整數底數1至10共10個。 詳算檢查：正完全平方數為1²到10²，共10個。 因此結果為「10 個」。",
+      "explanation": "正完全平方數為1²到10²，共10個。",
+      "steps": [
+        "整理條件：範圍含1與100，不含0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：因11²=121>100，所以整數底數1至10共10個。 詳算檢查：正完全平方數為1²到10²，共10個。 因此結果為「10 個」。",
+        "核對目標：答案「10 個」確實回應「計數完全平方數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10 個",
+          "truth": true,
+          "reason": "此選項符合目標「計數完全平方數。」；正完全平方數為1²到10²，共10個。"
+        },
+        {
+          "choice": "9 個",
+          "truth": false,
+          "reason": "漏掉100=10²。"
+        },
+        {
+          "choice": "11 個",
+          "truth": false,
+          "reason": "錯把0也算入1到100。"
+        },
+        {
+          "choice": "100 個",
+          "truth": false,
+          "reason": "把每個正整數都當平方數。"
+        }
+      ],
+      "misconceptionTarget": "範圍端點處理錯誤。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需處理包含端點與底數範圍。；具體任務是「計數完全平方數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "8e1b0f62c9bca761bf6bbdc62682abfa126e018583a4d4c8f0e23dd78e34cd41"
+    },
+    {
+      "questionId": "u11-s006-v006",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "若 n 為正整數且 √n=18，則 n 為何？",
+      "givenConditions": [
+        "n為正整數。"
+      ],
+      "target": "由平方根反求完全平方數。",
+      "choices": [
+        "36",
+        "180",
+        "324",
+        "18"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：兩邊平方，n=324，且√324=18。 詳算檢查：n=18²=324。 因此結果為「324」。",
+      "explanation": "n=18²=324。",
+      "steps": [
+        "整理條件：n為正整數。",
+        "獨立推導：不參照選項，從題幹條件重新計算：兩邊平方，n=324，且√324=18。 詳算檢查：n=18²=324。 因此結果為「324」。",
+        "核對目標：答案「324」確實回應「由平方根反求完全平方數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "36",
+          "truth": false,
+          "reason": "把18平方誤作乘2。"
+        },
+        {
+          "choice": "180",
+          "truth": false,
+          "reason": "只補一個0。"
+        },
+        {
+          "choice": "324",
+          "truth": true,
+          "reason": "此選項符合目標「由平方根反求完全平方數。」；n=18²=324。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "沒有反向平方。"
+        }
+      ],
+      "misconceptionTarget": "把平方根結果直接當被開方數。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "考查平方與開平方互逆。；具體任務是「由平方根反求完全平方數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a89e1ee1aff0ead74a05c07a0de87c602e8d767d504b2ac749bb58f3e0223ab6"
+    },
+    {
+      "questionId": "u11-s006-v007",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "介於 500 與 700 之間的完全平方數共有幾個？",
+      "givenConditions": [
+        "要求嚴格介於500與700。"
+      ],
+      "target": "計數區間內平方數。",
+      "choices": [
+        "3 個",
+        "4 個",
+        "5 個",
+        "6 個"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先估√500介於22與23，√700介於26與27，因此底數23到26。 詳算檢查：23²=529、24²=576、25²=625、26²=676，共4個；22²與27²超出。 因此結果為「4 個」。",
+      "explanation": "23²=529、24²=576、25²=625、26²=676，共4個；22²與27²超出。",
+      "steps": [
+        "整理條件：要求嚴格介於500與700。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先估√500介於22與23，√700介於26與27，因此底數23到26。 詳算檢查：23²=529、24²=576、25²=625、26²=676，共4個；22²與27²超出。 因此結果為「4 個」。",
+        "核對目標：答案「4 個」確實回應「計數區間內平方數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3 個",
+          "truth": false,
+          "reason": "漏掉26²=676。"
+        },
+        {
+          "choice": "4 個",
+          "truth": true,
+          "reason": "此選項符合目標「計數區間內平方數。」；23²=529、24²=576、25²=625、26²=676，共4個；22²與27²超出。"
+        },
+        {
+          "choice": "5 個",
+          "truth": false,
+          "reason": "把22²=484或27²=729誤算入。"
+        },
+        {
+          "choice": "6 個",
+          "truth": false,
+          "reason": "上下界判斷錯誤。"
+        }
+      ],
+      "misconceptionTarget": "只列值未檢查上下界。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需同時處理兩個非平方邊界。；具體任務是「計數區間內平方數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "bc91467f2d739fed5972fe07a8f75aafedf339b7796012328eabe1aaed08fdbe"
+    },
+    {
+      "questionId": "u11-s006-v008",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某完全平方數的平方根比 20 大且比 25 小。此完全平方數不可能是哪一個？",
+      "givenConditions": [
+        "平方根為整數且20<根<25。"
+      ],
+      "target": "找出不符合者。",
+      "choices": [
+        "441",
+        "484",
+        "576",
+        "625"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：把條件平方根轉為整數底數範圍，再檢查候選。 詳算檢查：平方根需為21、22、23或24；625的平方根25不小於25。 因此結果為「625」。",
+      "explanation": "平方根需為21、22、23或24；625的平方根25不小於25。",
+      "steps": [
+        "整理條件：平方根為整數且20<根<25。",
+        "獨立推導：不參照選項，從題幹條件重新計算：把條件平方根轉為整數底數範圍，再檢查候選。 詳算檢查：平方根需為21、22、23或24；625的平方根25不小於25。 因此結果為「625」。",
+        "核對目標：答案「625」確實回應「找出不符合者。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "441",
+          "truth": false,
+          "reason": "√441=21，符合。"
+        },
+        {
+          "choice": "484",
+          "truth": false,
+          "reason": "√484=22，符合。"
+        },
+        {
+          "choice": "576",
+          "truth": false,
+          "reason": "√576=24，符合。"
+        },
+        {
+          "choice": "625",
+          "truth": true,
+          "reason": "此選項符合目標「找出不符合者。」；平方根需為21、22、23或24；625的平方根25不小於25。"
+        }
+      ],
+      "misconceptionTarget": "忽略「比25小」是嚴格不等式。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需注意嚴格邊界。；具體任務是「找出不符合者。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f35dd3769464be3d8e8a56413083667432a2169fa20962b9415a9704a98db9ad"
+    },
+    {
+      "questionId": "u11-s006-v009",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "若 k² 是三位數且 k 為正整數，則 k 最小可能是多少？",
+      "givenConditions": [
+        "k為正整數。"
+      ],
+      "target": "找最小底數。",
+      "choices": [
+        "9",
+        "11",
+        "100",
+        "10"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：比較9²=81與10²=100，邊界在10。 詳算檢查：最小三位數是100=10²，所以k最小為10。 因此結果為「10」。",
+      "explanation": "最小三位數是100=10²，所以k最小為10。",
+      "steps": [
+        "整理條件：k為正整數。",
+        "獨立推導：不參照選項，從題幹條件重新計算：比較9²=81與10²=100，邊界在10。 詳算檢查：最小三位數是100=10²，所以k最小為10。 因此結果為「10」。",
+        "核對目標：答案「10」確實回應「找最小底數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "9²=81仍是兩位數。"
+        },
+        {
+          "choice": "11",
+          "truth": false,
+          "reason": "可行但不是最小。"
+        },
+        {
+          "choice": "100",
+          "truth": false,
+          "reason": "把平方數位數套到k。"
+        },
+        {
+          "choice": "10",
+          "truth": true,
+          "reason": "此選項符合目標「找最小底數。」；最小三位數是100=10²，所以k最小為10。"
+        }
+      ],
+      "misconceptionTarget": "把「k²是三位數」誤讀成k是三位數。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需理解數位條件作用在平方結果。；具體任務是「找最小底數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "40dfbce1bfb96d8e98f5d1514cf2744a78d3fe3176b637873ed2d2b496197a6e"
+    },
+    {
+      "questionId": "u11-s006-v010",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "學校要把 361 名學生排成實心正方形方陣，每列人數相同。每列應有多少人？",
+      "givenConditions": [
+        "總人數361，排列為完整正方形。"
+      ],
+      "target": "求每列人數。",
+      "choices": [
+        "18 人",
+        "19 人",
+        "20 人",
+        "180 人"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：設每列x人，x²=361，因人數為正取x=19。 詳算檢查：正方形方陣每列人數平方等於361，√361=19。 因此結果為「19 人」。",
+      "explanation": "正方形方陣每列人數平方等於361，√361=19。",
+      "steps": [
+        "整理條件：總人數361，排列為完整正方形。",
+        "獨立推導：不參照選項，從題幹條件重新計算：設每列x人，x²=361，因人數為正取x=19。 詳算檢查：正方形方陣每列人數平方等於361，√361=19。 因此結果為「19 人」。",
+        "核對目標：答案「19 人」確實回應「求每列人數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "18 人",
+          "truth": false,
+          "reason": "18²=324，不足361。"
+        },
+        {
+          "choice": "19 人",
+          "truth": true,
+          "reason": "此選項符合目標「求每列人數。」；正方形方陣每列人數平方等於361，√361=19。"
+        },
+        {
+          "choice": "20 人",
+          "truth": false,
+          "reason": "20²=400，超過361。"
+        },
+        {
+          "choice": "180 人",
+          "truth": false,
+          "reason": "誤把總數除以2。"
+        }
+      ],
+      "misconceptionTarget": "忽略方陣的列數也等於每列人數。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "人數以人為單位，答案須為正整數。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "把排列語意轉成完全平方。；具體任務是「求每列人數。」。",
+      "literacyContextNecessity": "「實心正方形方陣」決定使用平方關係。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b8ecb4a507602d23b8e76fe9112996980dd88902e33285966f311157616e79ea"
+    },
+    {
+      "questionId": "u11-s006-v011",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一批磁磚要鋪成 24×24 的正方形展示區，共需多少片？",
+      "givenConditions": [
+        "橫列與直列各24片。"
+      ],
+      "target": "求總磁磚數。",
+      "choices": [
+        "48 片",
+        "96 片",
+        "576 片",
+        "625 片"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：24×24=(20+4)²=400+160+16=576。 詳算檢查：每邊24片，共24²=576片。 因此結果為「576 片」。",
+      "explanation": "每邊24片，共24²=576片。",
+      "steps": [
+        "整理條件：橫列與直列各24片。",
+        "獨立推導：不參照選項，從題幹條件重新計算：24×24=(20+4)²=400+160+16=576。 詳算檢查：每邊24片，共24²=576片。 因此結果為「576 片」。",
+        "核對目標：答案「576 片」確實回應「求總磁磚數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "48 片",
+          "truth": false,
+          "reason": "把24²誤作24×2。"
+        },
+        {
+          "choice": "96 片",
+          "truth": false,
+          "reason": "乘法錯誤。"
+        },
+        {
+          "choice": "576 片",
+          "truth": true,
+          "reason": "此選項符合目標「求總磁磚數。」；每邊24片，共24²=576片。"
+        },
+        {
+          "choice": "625 片",
+          "truth": false,
+          "reason": "誤用25²。"
+        }
+      ],
+      "misconceptionTarget": "把平方符號當作加倍。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "計數單位為片。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "在實物排列中計算平方。；具體任務是「求總磁磚數。」。",
+      "literacyContextNecessity": "兩個方向各24片是乘法資料。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "56cae2bd9711afca2ad1571d3786024518a70ee41168f591d46467a6b13338e4"
+    },
+    {
+      "questionId": "u11-s006-v012",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "倉庫標示某正方形棧板面積為 256 平方公尺。若標示無誤，邊長應為多少公尺？",
+      "givenConditions": [
+        "面積256平方公尺，棧板為正方形。"
+      ],
+      "target": "驗證邊長。",
+      "choices": [
+        "16 公尺",
+        "8 公尺",
+        "128 公尺",
+        "±16 公尺"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：16²=256，負值不適用於長度。 詳算檢查：√256=16，實際邊長為16公尺。 因此結果為「16 公尺」。",
+      "explanation": "√256=16，實際邊長為16公尺。",
+      "steps": [
+        "整理條件：面積256平方公尺，棧板為正方形。",
+        "獨立推導：不參照選項，從題幹條件重新計算：16²=256，負值不適用於長度。 詳算檢查：√256=16，實際邊長為16公尺。 因此結果為「16 公尺」。",
+        "核對目標：答案「16 公尺」確實回應「驗證邊長。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "16 公尺",
+          "truth": true,
+          "reason": "此選項符合目標「驗證邊長。」；√256=16，實際邊長為16公尺。"
+        },
+        {
+          "choice": "8 公尺",
+          "truth": false,
+          "reason": "8²=64。"
+        },
+        {
+          "choice": "128 公尺",
+          "truth": false,
+          "reason": "誤用除以2。"
+        },
+        {
+          "choice": "±16 公尺",
+          "truth": false,
+          "reason": "實際邊長取正值。"
+        }
+      ],
+      "misconceptionTarget": "代數上想到雙根卻忽略幾何限制。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-notation，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "平方公尺開平方為公尺。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "結合完全平方與單位。；具體任務是「驗證邊長。」。",
+      "literacyContextNecessity": "棧板幾何形狀與面積標示決定平方關係。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "完全平方數平方根",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4d106299a5abdc1eb0a79ca269ef1c6eb2dd789ab48c6bdd5792d9d2d712761d"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u11-s006-cr001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "列出 200 到 500（含）之間所有完全平方數，並說明如何確定沒有遺漏。",
+      "requiredWork": [
+        "找底數上下界",
+        "列出平方數",
+        "處理端點"
+      ],
+      "fullCreditSolution": [
+        "14²=196<200，所以從15²開始。",
+        "22²=484≤500，而23²=529>500。",
+        "15²至22²為225、256、289、324、361、400、441、484。"
+      ],
+      "standardAnswer": "共8個：225、256、289、324、361、400、441、484。",
+      "alternativeMethod": "可先求√200與√500的整數界線，得到底數15至22。",
+      "reasoningSteps": [
+        "14²=196<200，所以從15²開始。",
+        "22²=484≤500，而23²=529>500。",
+        "15²至22²為225、256、289、324、361、400、441、484。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：底數範圍15至22；八個值全部正確；說明23²超界，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：底數範圍15至22；八個值全部正確；說明23²超界。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「底數範圍15至22」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「底數範圍15至22」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「底數範圍15至22」但後續失誤，可依證據給1分。",
+        "若完成「底數範圍15至22」與「八個值全部正確」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "從14²開始",
+        "漏掉22²"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "共8個：225、256、289、324、361、400、441、484。",
+        "recomputation": "14²=196<200，所以從15²開始。；22²=484≤500，而23²=529>500。；15²至22²為225、256、289、324、361、400、441、484。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「說明23²超界」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7f8ddfacaa7034b58c4dac36b5bd20cf9d1bd40cc924a463d896f501f4413985"
+    },
+    {
+      "questionId": "u11-s006-cr002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-perfect-square",
+      "lockedSkillOrder": 6,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "一個正方形方陣共有 676 人。求每列人數，並驗算。",
+      "requiredWork": [
+        "建立n²=676",
+        "求正整數根",
+        "乘法驗算"
+      ],
+      "fullCreditSolution": [
+        "設每列n人，共n列，所以n²=676。",
+        "26²=676，n=26。",
+        "26×26=676。"
+      ],
+      "standardAnswer": "每列26人。",
+      "alternativeMethod": "利用(25+1)²=625+50+1=676。",
+      "reasoningSteps": [
+        "設每列n人，共n列，所以n²=676。",
+        "26²=676，n=26。",
+        "26×26=676。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：建立平方關係；求26；驗算與人數正值，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：建立平方關係；求26；驗算與人數正值。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「建立平方關係」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「建立平方關係」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「建立平方關係」但後續失誤，可依證據給1分。",
+        "若完成「建立平方關係」與「求26」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "人數為正整數，單位為人。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "答338",
+        "寫±26人"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "每列26人。",
+        "recomputation": "設每列n人，共n列，所以n²=676。；26²=676，n=26。；26×26=676。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「驗算與人數正值」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "26f140dc0d02c23b70e4f76c61c8213ff58b2a48e303b3b25cab0409b5567dd2"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "012-u11-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/012-u11-complete/units/u11/s006"
+}

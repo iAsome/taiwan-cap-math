@@ -1,0 +1,1373 @@
+{
+  "slot": "s012",
+  "skillId": "pythagorean-find-leg",
+  "topicId": "u11-pythagorean",
+  "title": "已知斜邊求股：平方差與正長度",
+  "lecture": {
+    "lectureId": "u11-s012-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-pythagorean",
+    "skillId": "pythagorean-find-leg",
+    "lockedSkillOrder": 12,
+    "lockedTitle": "已知斜邊求股",
+    "title": "已知斜邊求股：平方差與正長度",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能確認斜邊是已知最大邊",
+      "能用平方差求未知股",
+      "能處理根式、小數與比例型未知股"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "coordinate-distance-pythagorean",
+        "requiredLevel": "能使用前一技能「坐標平面距離」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "已知斜邊求股",
+        "definition": "由c²-a²得到另一股平方。"
+      },
+      {
+        "term": "平方差",
+        "definition": "c²-a²=(c-a)(c+a)。"
+      },
+      {
+        "term": "畢氏數組比例",
+        "definition": "等比例放大後仍為直角三角形。"
+      },
+      {
+        "term": "正根",
+        "definition": "幾何邊長只取非負解。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "b=√(c²-a²)",
+        "meaning": "c為斜邊且c>a>0。"
+      }
+    ],
+    "conceptNarrative": [
+      "求股一定使用斜邊平方減已知股平方，順序不可顛倒。",
+      "斜邊應大於任一股；若資料不符合，要先質疑模型。",
+      "平方差公式可簡化大數，例如29²-20²。",
+      "未知坐標可正可負，但未知「股長」只取正。",
+      "比例型題可先辨認3-4-5、5-12-13等基本數組。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "求股公式",
+        "statement": "在直角三角形中，若c為斜邊，b=√(c²-a²)。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "c²-a²=b²",
+        "conditions": [
+          "c>a≥0。"
+        ],
+        "meaning": "平方差必為非負。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能用c-a代替√(c²-a²)。",
+      "若已知邊比斜邊大，資料不可能。",
+      "結果負根不能作邊長。",
+      "平方差算出後仍須開平方。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認哪個已知量是斜邊。",
+        "check": "它必須最大。"
+      },
+      {
+        "step": 2,
+        "instruction": "寫未知股平方=斜邊平方-已知股平方。",
+        "check": "減法順序固定。"
+      },
+      {
+        "step": 3,
+        "instruction": "利用平方差或直接計算。",
+        "check": "降低大數錯誤。"
+      },
+      {
+        "step": 4,
+        "instruction": "開平方並取正。",
+        "check": "化簡根式。"
+      },
+      {
+        "step": 5,
+        "instruction": "檢查兩股皆短於斜邊。",
+        "check": "代回畢氏定理。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "斜邊15、一股9。",
+        "solutionSteps": [
+          "225-81=144。"
+        ],
+        "answer": "另一股12。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "斜邊√34、一股3。",
+        "solutionSteps": [
+          "34-9=25。"
+        ],
+        "answer": "另一股5。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "斜邊37、一股12。",
+        "solutionSteps": [
+          "37²-12²=(25)(49)=1225。"
+        ],
+        "answer": "另一股35。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "兩股比8:15、斜邊34。",
+        "solutionSteps": [
+          "基本比8:15:17。",
+          "放大2倍。"
+        ],
+        "answer": "兩股16與30。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "13與5直接相減得8。",
+        "why": "長度不能直接相減求股。",
+        "correction": "√(169-25)=12。"
+      },
+      {
+        "mistake": "使用13²+5²。",
+        "why": "求股卻使用平方和。",
+        "correction": "斜邊平方減股平方。"
+      },
+      {
+        "mistake": "答±12。",
+        "why": "股長非負。",
+        "correction": "只取12。"
+      },
+      {
+        "mistake": "平方差得到144就停止。",
+        "why": "144是股長平方。",
+        "correction": "再開平方。"
+      },
+      {
+        "mistake": "把較短邊當斜邊。",
+        "why": "平方差可能負。",
+        "correction": "先找最大邊。"
+      },
+      {
+        "mistake": "比例題只使用比例分子。",
+        "why": "比例缺少斜邊份數。",
+        "correction": "由平方關係求完整數組。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "未知股=√(斜邊²-已知股²)。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "確認哪個已知量是斜邊。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "13與5直接相減得8。；修正：√(169-25)=12。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "代回後平方和成立嗎？"
+      }
+    ],
+    "summary": [
+      "未知股=√(斜邊²-已知股²)。",
+      "先辨認邊角色，再處理平方差。"
+    ],
+    "connections": {
+      "previous": "需要 s011 的距離結構與 s009 定理。",
+      "next": [
+        "s013 將在全文字情境辨認未知股。",
+        "s014 會反過來用三邊判定直角。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s012-find-leg"
+    ],
+    "accessibilityNotes": [
+      "直角三角形斜邊標13，一股標5，底邊未知b，並寫出b等於13平方減5平方的平方根。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s012-v001",
+        "u11-s012-v002",
+        "u11-s012-v003",
+        "u11-s012-v004",
+        "u11-s012-v005",
+        "u11-s012-v006",
+        "u11-s012-v007",
+        "u11-s012-v008",
+        "u11-s012-v009",
+        "u11-s012-v010",
+        "u11-s012-v011",
+        "u11-s012-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s012-cr001",
+        "u11-s012-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「已知斜邊求股」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「13與5直接相減得8。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "cbd6c02425e5903ab96034788002c3e0341dc8ca54e32e13c162ca5301500b68"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u11-s012-v001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "figure",
+      "figureId": "fig-u11-s012-find-leg",
+      "drawingSpecReference": "units/u11/s012/drawing-specs.jsonl#fig-u11-s012-find-leg",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "直角三角形斜邊 13，一股 5，另一股是多少？",
+      "givenConditions": [
+        "13為斜邊。"
+      ],
+      "target": "求未知股。",
+      "choices": [
+        "8",
+        "18",
+        "√194",
+        "12"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：斜邊平方減已知股平方。 詳算檢查：另一股=√(13²-5²)=√144=12。 因此結果為「12」。",
+      "explanation": "另一股=√(13²-5²)=√144=12。",
+      "steps": [
+        "整理條件：13為斜邊。",
+        "獨立推導：不參照選項，從題幹條件重新計算：斜邊平方減已知股平方。 詳算檢查：另一股=√(13²-5²)=√144=12。 因此結果為「12」。",
+        "核對目標：答案「12」確實回應「求未知股。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "直接相加。"
+        },
+        {
+          "choice": "√194",
+          "truth": false,
+          "reason": "平方和方向錯。"
+        },
+        {
+          "choice": "12",
+          "truth": true,
+          "reason": "此選項符合目標「求未知股。」；另一股=√(13²-5²)=√144=12。"
+        }
+      ],
+      "misconceptionTarget": "把長度直接相減。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "基本5-12-13。；具體任務是「求未知股。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f4236101a19b349d1c039615a0e9506824f2ef10bb3bff1a91cc5f8cc73798a3"
+    },
+    {
+      "questionId": "u11-s012-v002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "直角三角形斜邊為 10、一股為 6。下列哪個算式正確表示另一股？",
+      "givenConditions": [
+        "10是斜邊且大於6。"
+      ],
+      "target": "選出完整求股算式。",
+      "choices": [
+        "√(10²-6²)=8",
+        "10-6=4",
+        "√(10²+6²)=√136",
+        "10²-6²=64"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先寫b²=100-36=64，再由b>0得b=8。 詳算檢查：斜邊平方減已知股平方得到未知股平方，再取正平方根。 因此結果為「√(10²-6²)=8」。",
+      "explanation": "斜邊平方減已知股平方得到未知股平方，再取正平方根。",
+      "steps": [
+        "整理條件：10是斜邊且大於6。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先寫b²=100-36=64，再由b>0得b=8。 詳算檢查：斜邊平方減已知股平方得到未知股平方，再取正平方根。 因此結果為「√(10²-6²)=8」。",
+        "核對目標：答案「√(10²-6²)=8」確實回應「選出完整求股算式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√(10²-6²)=8",
+          "truth": true,
+          "reason": "此選項符合目標「選出完整求股算式。」；斜邊平方減已知股平方得到未知股平方，再取正平方根。"
+        },
+        {
+          "choice": "10-6=4",
+          "truth": false,
+          "reason": "長度不能直接相減。"
+        },
+        {
+          "choice": "√(10²+6²)=√136",
+          "truth": false,
+          "reason": "求股應使用平方差。"
+        },
+        {
+          "choice": "10²-6²=64",
+          "truth": false,
+          "reason": "這只得到股長平方，尚未開根。"
+        }
+      ],
+      "misconceptionTarget": "把求股誤作長度差或忘記開平方。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "考查公式選擇與最後開根。；具體任務是「選出完整求股算式。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "93f26f55517d6332304f115a7446f9600367f4059a630dfe81c954d587bc94cb"
+    },
+    {
+      "questionId": "u11-s012-v003",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "小安說：「斜邊 5、一股 4，所以另一股是 5-4=1。」應如何修正？",
+      "givenConditions": [
+        "5是斜邊。"
+      ],
+      "target": "診斷並修正錯誤推理。",
+      "choices": [
+        "應算5+4=9",
+        "應算√(5²+4²)=√41",
+        "應算 √(5²-4²)=3",
+        "答案1正確，只缺單位"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：以驗算1²+4²=17≠25即可否定原說法，再正確計算。 詳算檢查：畢氏定理連結的是平方，未知股=√(25-16)=3。 因此結果為「應算 √(5²-4²)=3」。",
+      "explanation": "畢氏定理連結的是平方，未知股=√(25-16)=3。",
+      "steps": [
+        "整理條件：5是斜邊。",
+        "獨立推導：不參照選項，從題幹條件重新計算：以驗算1²+4²=17≠25即可否定原說法，再正確計算。 詳算檢查：畢氏定理連結的是平方，未知股=√(25-16)=3。 因此結果為「應算 √(5²-4²)=3」。",
+        "核對目標：答案「應算 √(5²-4²)=3」確實回應「診斷並修正錯誤推理。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "應算5+4=9",
+          "truth": false,
+          "reason": "仍是直接加減邊長。"
+        },
+        {
+          "choice": "應算√(5²+4²)=√41",
+          "truth": false,
+          "reason": "求股不使用平方和。"
+        },
+        {
+          "choice": "應算 √(5²-4²)=3",
+          "truth": true,
+          "reason": "此選項符合目標「診斷並修正錯誤推理。」；畢氏定理連結的是平方，未知股=√(25-16)=3。"
+        },
+        {
+          "choice": "答案1正確，只缺單位",
+          "truth": false,
+          "reason": "1²+4²不等於5²。"
+        }
+      ],
+      "misconceptionTarget": "把斜邊與股直接相減。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "從直接數值題改為錯誤分析。；具體任務是「診斷並修正錯誤推理。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "1529c835707847bd2a00fd342d91025dbed4cde5304ef7e66c565fdb2edc15a1"
+    },
+    {
+      "questionId": "u11-s012-v004",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "直角三角形斜邊 17、一股 8，另一股為何？",
+      "givenConditions": [
+        "17為斜邊。"
+      ],
+      "target": "求未知股。",
+      "choices": [
+        "9",
+        "15",
+        "25",
+        "√353"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：289-64=225。 詳算檢查：√(17²-8²)=√225=15。 因此結果為「15」。",
+      "explanation": "√(17²-8²)=√225=15。",
+      "steps": [
+        "整理條件：17為斜邊。",
+        "獨立推導：不參照選項，從題幹條件重新計算：289-64=225。 詳算檢查：√(17²-8²)=√225=15。 因此結果為「15」。",
+        "核對目標：答案「15」確實回應「求未知股。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "15",
+          "truth": true,
+          "reason": "此選項符合目標「求未知股。」；√(17²-8²)=√225=15。"
+        },
+        {
+          "choice": "25",
+          "truth": false,
+          "reason": "直接相加。"
+        },
+        {
+          "choice": "√353",
+          "truth": false,
+          "reason": "平方相加。"
+        }
+      ],
+      "misconceptionTarget": "大數平方差出錯。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "標準8-15-17。；具體任務是「求未知股。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7141ac983b1e39e345f5cf23a22bb8722b9ef3d19221bc46ca7e650b6d2ecfbd"
+    },
+    {
+      "questionId": "u11-s012-v005",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "斜邊 25、一股 24，另一股為何？",
+      "givenConditions": [
+        "25為斜邊。"
+      ],
+      "target": "求未知股。",
+      "choices": [
+        "1",
+        "49",
+        "√1201",
+        "7"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：使用相鄰大平方差。 詳算檢查：√(625-576)=√49=7。 因此結果為「7」。",
+      "explanation": "√(625-576)=√49=7。",
+      "steps": [
+        "整理條件：25為斜邊。",
+        "獨立推導：不參照選項，從題幹條件重新計算：使用相鄰大平方差。 詳算檢查：√(625-576)=√49=7。 因此結果為「7」。",
+        "核對目標：答案「7」確實回應「求未知股。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "49",
+          "truth": false,
+          "reason": "漏開平方。"
+        },
+        {
+          "choice": "√1201",
+          "truth": false,
+          "reason": "平方相加。"
+        },
+        {
+          "choice": "7",
+          "truth": true,
+          "reason": "此選項符合目標「求未知股。」；√(625-576)=√49=7。"
+        }
+      ],
+      "misconceptionTarget": "直接相減25-24。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "平方差很小，易受直覺干擾。；具體任務是「求未知股。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ee3e4da51346ce632ef1f69f3f507e23871c338d4f717f613ced8a7079270d37"
+    },
+    {
+      "questionId": "u11-s012-v006",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "直角三角形斜邊 √41、一股 4，另一股為何？",
+      "givenConditions": [
+        "斜邊為正根式。"
+      ],
+      "target": "求未知股。",
+      "choices": [
+        "√37",
+        "5",
+        "√45",
+        "1"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：斜邊平方直接為41。 詳算檢查：另一股平方=41-16=25，故長5。 因此結果為「5」。",
+      "explanation": "另一股平方=41-16=25，故長5。",
+      "steps": [
+        "整理條件：斜邊為正根式。",
+        "獨立推導：不參照選項，從題幹條件重新計算：斜邊平方直接為41。 詳算檢查：另一股平方=41-16=25，故長5。 因此結果為「5」。",
+        "核對目標：答案「5」確實回應「求未知股。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√37",
+          "truth": false,
+          "reason": "忘記4要平方。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "此選項符合目標「求未知股。」；另一股平方=41-16=25，故長5。"
+        },
+        {
+          "choice": "√45",
+          "truth": false,
+          "reason": "錯用加法。"
+        },
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "把根式近似後相減。"
+        }
+      ],
+      "misconceptionTarget": "把√41當成41代入邊長位置後再平方。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "含根式斜邊但平方可簡化。；具體任務是「求未知股。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b9cb17d54c50acec0850b6e1c76c79fb5937b703346dffe2d1c3e69e75991cbb"
+    },
+    {
+      "questionId": "u11-s012-v007",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一直角三角形斜邊為 2√13，一股為 6，另一股為何？",
+      "givenConditions": [
+        "斜邊大於已知股。"
+      ],
+      "target": "含係數根式求股。",
+      "choices": [
+        "4",
+        "2√4",
+        "√10",
+        "8"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：(2√13)²=52。 詳算檢查：斜邊平方52，減36得16，另一股4。 因此結果為「4」。",
+      "explanation": "斜邊平方52，減36得16，另一股4。",
+      "steps": [
+        "整理條件：斜邊大於已知股。",
+        "獨立推導：不參照選項，從題幹條件重新計算：(2√13)²=52。 詳算檢查：斜邊平方52，減36得16，另一股4。 因此結果為「4」。",
+        "核對目標：答案「4」確實回應「含係數根式求股。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4",
+          "truth": true,
+          "reason": "此選項符合目標「含係數根式求股。」；斜邊平方52，減36得16，另一股4。"
+        },
+        {
+          "choice": "2√4",
+          "truth": false,
+          "reason": "雖等於4但未符合選項的最簡數值表達。"
+        },
+        {
+          "choice": "√10",
+          "truth": false,
+          "reason": "平方計算錯。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "把平方差開根錯。"
+        }
+      ],
+      "misconceptionTarget": "係數平方漏掉。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需正確平方根式斜邊。；具體任務是「含係數根式求股。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "dc25cacfec1bb00b020981122db28ece52ca2731cb23cb08862107f2fd768a69"
+    },
+    {
+      "questionId": "u11-s012-v008",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "直角三角形斜邊 29，一股 20，另一股為何？",
+      "givenConditions": [
+        "29為斜邊。"
+      ],
+      "target": "高效率求未知股。",
+      "choices": [
+        "9",
+        "√441",
+        "21",
+        "49"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：用平方差公式可避免大數平方。 詳算檢查：29²-20²=(29-20)(29+20)=9×49=441，開根得21。 因此結果為「21」。",
+      "explanation": "29²-20²=(29-20)(29+20)=9×49=441，開根得21。",
+      "steps": [
+        "整理條件：29為斜邊。",
+        "獨立推導：不參照選項，從題幹條件重新計算：用平方差公式可避免大數平方。 詳算檢查：29²-20²=(29-20)(29+20)=9×49=441，開根得21。 因此結果為「21」。",
+        "核對目標：答案「21」確實回應「高效率求未知股。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "√441",
+          "truth": false,
+          "reason": "等值但題目問邊長可化為整數。"
+        },
+        {
+          "choice": "21",
+          "truth": true,
+          "reason": "此選項符合目標「高效率求未知股。」；29²-20²=(29-20)(29+20)=9×49=441，開根得21。"
+        },
+        {
+          "choice": "49",
+          "truth": false,
+          "reason": "把20與29相加。"
+        }
+      ],
+      "misconceptionTarget": "計算正確但未完成開平方。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "可用平方差結構，數值較大。；具體任務是「高效率求未知股。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "1879a1f7bab1bff6b1e45653ed2ac6a5c7499135bd955461b9a5bcb93bf8e65a"
+    },
+    {
+      "questionId": "u11-s012-v009",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某直角三角形斜邊 26，一股長是另一股的 5/12。較短股是多少？",
+      "givenConditions": [
+        "兩股比5:12，斜邊26。"
+      ],
+      "target": "求較短股。",
+      "choices": [
+        "10",
+        "12",
+        "24",
+        "5"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：利用5-12-13比例，縮放2倍。 詳算檢查：兩股比5:12，斜邊對應13份；26=13×2，所以短股=5×2=10。 因此結果為「10」。",
+      "explanation": "兩股比5:12，斜邊對應13份；26=13×2，所以短股=5×2=10。",
+      "steps": [
+        "整理條件：兩股比5:12，斜邊26。",
+        "獨立推導：不參照選項，從題幹條件重新計算：利用5-12-13比例，縮放2倍。 詳算檢查：兩股比5:12，斜邊對應13份；26=13×2，所以短股=5×2=10。 因此結果為「10」。",
+        "核對目標：答案「10」確實回應「求較短股。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10",
+          "truth": true,
+          "reason": "此選項符合目標「求較短股。」；兩股比5:12，斜邊對應13份；26=13×2，所以短股=5×2=10。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "把比例數直接當長度。"
+        },
+        {
+          "choice": "24",
+          "truth": false,
+          "reason": "這是較長股。"
+        },
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "只使用比例分子。"
+        }
+      ],
+      "misconceptionTarget": "不知道比例中的13來自畢氏定理。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需結合比例與畢氏數組。；具體任務是「求較短股。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9d374eac4a8f2ec19ba99152435bef5e34af9805a4793f02506a86a8f62255f9"
+    },
+    {
+      "questionId": "u11-s012-v010",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一根 20 公尺長的繩索斜拉，垂直高度為 16 公尺。水平距離是多少？",
+      "givenConditions": [
+        "垂直與水平互相垂直。"
+      ],
+      "target": "求水平距離。",
+      "choices": [
+        "4公尺",
+        "36公尺",
+        "12 公尺",
+        "√656公尺"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：繩索為斜邊。 詳算檢查：水平距離=√(20²-16²)=√144=12公尺。 因此結果為「12 公尺」。",
+      "explanation": "水平距離=√(20²-16²)=√144=12公尺。",
+      "steps": [
+        "整理條件：垂直與水平互相垂直。",
+        "獨立推導：不參照選項，從題幹條件重新計算：繩索為斜邊。 詳算檢查：水平距離=√(20²-16²)=√144=12公尺。 因此結果為「12 公尺」。",
+        "核對目標：答案「12 公尺」確實回應「求水平距離。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4公尺",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "36公尺",
+          "truth": false,
+          "reason": "直接相加。"
+        },
+        {
+          "choice": "12 公尺",
+          "truth": true,
+          "reason": "此選項符合目標「求水平距離。」；水平距離=√(20²-16²)=√144=12公尺。"
+        },
+        {
+          "choice": "√656公尺",
+          "truth": false,
+          "reason": "錯用加法。"
+        }
+      ],
+      "misconceptionTarget": "未辨認斜邊或直接相減。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "答案為公尺。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "生活情境反向求股。；具體任務是「求水平距離。」。",
+      "literacyContextNecessity": "斜拉繩索長是斜邊，不能與高度直接相減。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "94e155d68e59a2aeea0286fcfe029e25a520393c6bb3c1c0a1e65c59b8a2243e"
+    },
+    {
+      "questionId": "u11-s012-v011",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一個長方形看板對角線 50 公分，高 30 公分。看板寬多少？",
+      "givenConditions": [
+        "矩形對角線為斜邊。"
+      ],
+      "target": "求看板寬。",
+      "choices": [
+        "20公分",
+        "40 公分",
+        "80公分",
+        "√3400公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：形成30-40-50直角三角形。 詳算檢查：寬=√(50²-30²)=√1600=40公分。 因此結果為「40 公分」。",
+      "explanation": "寬=√(50²-30²)=√1600=40公分。",
+      "steps": [
+        "整理條件：矩形對角線為斜邊。",
+        "獨立推導：不參照選項，從題幹條件重新計算：形成30-40-50直角三角形。 詳算檢查：寬=√(50²-30²)=√1600=40公分。 因此結果為「40 公分」。",
+        "核對目標：答案「40 公分」確實回應「求看板寬。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20公分",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "40 公分",
+          "truth": true,
+          "reason": "此選項符合目標「求看板寬。」；寬=√(50²-30²)=√1600=40公分。"
+        },
+        {
+          "choice": "80公分",
+          "truth": false,
+          "reason": "直接相加。"
+        },
+        {
+          "choice": "√3400公分",
+          "truth": false,
+          "reason": "平方差計算錯。"
+        }
+      ],
+      "misconceptionTarget": "把對角線與高直接相減。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "答案為公分。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需把物件尺寸轉為求股。；具體任務是「求看板寬。」。",
+      "literacyContextNecessity": "矩形直角使對角線成斜邊。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d7c9b4f59761e802ee4e555611525c73631d8cc37c597aee37ba5b7680c66895"
+    },
+    {
+      "questionId": "u11-s012-v012",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "無人機與操作者直線距離 1.3 公里，無人機高度 0.5 公里。忽略地形，水平距離是多少？",
+      "givenConditions": [
+        "地面視為水平，高度垂直。"
+      ],
+      "target": "求水平投影距離。",
+      "choices": [
+        "0.8公里",
+        "1.8公里",
+        "√1.94公里",
+        "1.2 公里"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：斜距1.3為斜邊，高度0.5為一股。 詳算檢查：水平距離=√(1.3²-0.5²)=√1.44=1.2公里。 因此結果為「1.2 公里」。",
+      "explanation": "水平距離=√(1.3²-0.5²)=√1.44=1.2公里。",
+      "steps": [
+        "整理條件：地面視為水平，高度垂直。",
+        "獨立推導：不參照選項，從題幹條件重新計算：斜距1.3為斜邊，高度0.5為一股。 詳算檢查：水平距離=√(1.3²-0.5²)=√1.44=1.2公里。 因此結果為「1.2 公里」。",
+        "核對目標：答案「1.2 公里」確實回應「求水平投影距離。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.8公里",
+          "truth": false,
+          "reason": "直接相減。"
+        },
+        {
+          "choice": "1.8公里",
+          "truth": false,
+          "reason": "直接相加。"
+        },
+        {
+          "choice": "√1.94公里",
+          "truth": false,
+          "reason": "平方相加。"
+        },
+        {
+          "choice": "1.2 公里",
+          "truth": true,
+          "reason": "此選項符合目標「求水平投影距離。」；水平距離=√(1.3²-0.5²)=√1.44=1.2公里。"
+        }
+      ],
+      "misconceptionTarget": "小數平方與斜邊判斷錯誤。",
+      "prerequisiteCheck": "需能使用先備技能 coordinate-distance-pythagorean，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "全以公里計算。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "含小數單位與情境建模。；具體任務是「求水平投影距離。」。",
+      "literacyContextNecessity": "「直線距離」與「高度」共同建立直角三角形。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "已知斜邊求股",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "22fcfdc0a0e2c6507f75f7973fc4df392912d0dfb11d982b46c83eff95900a04"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u11-s012-cr001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "直角三角形斜邊 37 公分，一股 12 公分。求另一股，鼓勵使用平方差。",
+      "requiredWork": [
+        "確認斜邊",
+        "計算37²-12²",
+        "開根"
+      ],
+      "fullCreditSolution": [
+        "未知股平方=37²-12²。",
+        "=(37-12)(37+12)=25×49=1225。",
+        "未知股=√1225=35。"
+      ],
+      "standardAnswer": "35 公分。",
+      "alternativeMethod": "直接計算1369-144=1225。",
+      "reasoningSteps": [
+        "未知股平方=37²-12²。",
+        "=(37-12)(37+12)=25×49=1225。",
+        "未知股=√1225=35。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：平方差1225；開根35；單位公分，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：平方差1225；開根35；單位公分。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「平方差1225」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「平方差1225」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「平方差1225」但後續失誤，可依證據給1分。",
+        "若完成「平方差1225」與「開根35」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "答案為公分。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "直接37-12=25",
+        "答1225"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "35 公分。",
+        "recomputation": "未知股平方=37²-12²。；=(37-12)(37+12)=25×49=1225。；未知股=√1225=35。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「單位公分」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "0304d2428b9543c6ccd111fe38ab0e4b3da7b366c989e23d91165f69c7a3bea4"
+    },
+    {
+      "questionId": "u11-s012-cr002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "lockedSkillOrder": 12,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "一直角三角形兩股比為 7:24，斜邊長 50。求兩股。",
+      "requiredWork": [
+        "由比例求斜邊份數",
+        "計算縮放倍數",
+        "求兩股"
+      ],
+      "fullCreditSolution": [
+        "設兩股7k、24k。",
+        "斜邊=√(49+576)k=25k。",
+        "25k=50得k=2，所以兩股14與48。"
+      ],
+      "standardAnswer": "14 與 48。",
+      "alternativeMethod": "辨認7-24-25數組後直接放大2倍。",
+      "reasoningSteps": [
+        "設兩股7k、24k。",
+        "斜邊=√(49+576)k=25k。",
+        "25k=50得k=2，所以兩股14與48。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：建立25k；k=2；兩股14與48，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：建立25k；k=2；兩股14與48。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「建立25k」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「建立25k」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「建立25k」但後續失誤，可依證據給1分。",
+        "若完成「建立25k」與「k=2」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "把兩股寫7與24",
+        "把50分成7+24"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "14 與 48。",
+        "recomputation": "設兩股7k、24k。；斜邊=√(49+576)k=25k。；25k=50得k=2，所以兩股14與48。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「兩股14與48」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "62f015b593df41c9472dbdde315f33ba9c3ef0a2b3b85902c4991c08945644c9"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u11-s012-find-leg",
+      "unitId": "u11",
+      "topicId": "u11-pythagorean",
+      "skillId": "pythagorean-find-leg",
+      "svgPath": "figures/u11/fig-u11-s012-find-leg.svg",
+      "purpose": "支援「已知斜邊求股」中需要辨認空間關係或估算位置的題目，不以圖形外觀替代計算。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 460,
+          "height": 320
+        },
+        "viewBox": "0 0 460 320",
+        "coordinateSystem": "SVG coordinates, origin at top-left",
+        "geometry": "已知斜邊求股",
+        "labels": "All labels use at least 18px font",
+        "lineRules": "Solid primary geometry; dashed lines only for projections",
+        "hiddenLineRules": "No hidden lines are required",
+        "tickMarksAndSymbols": "Right-angle symbols or axis arrows are explicitly drawn where relevant",
+        "units": "Units shown only when the associated question uses them",
+        "scalePolicy": "not-to-scale unless dimensions happen to match",
+        "visualInferenceWarning": "不得依圖形外觀量測或猜答案，必須使用標示條件計算。"
+      },
+      "altText": "直角三角形斜邊標13，一股標5，底邊未知b，並寫出b等於13平方減5平方的平方根。",
+      "svgTitle": "已知斜邊求股",
+      "svgDesc": "直角三角形斜邊標13，一股標5，底邊未知b，並寫出b等於13平方減5平方的平方根。",
+      "svgAssertions": [
+        "b = ?",
+        ">13<",
+        ">5<",
+        "b=√(13²−5²)",
+        "M70 230"
+      ],
+      "mobileReadability": {
+        "reviewedAtWidthPx": 320,
+        "minimumFontPx": 18,
+        "decision": "pass",
+        "note": "縮放至320像素寬時，主要標籤、直角符號與線段仍可辨識。"
+      },
+      "answerLeakageReview": {
+        "decision": "pass",
+        "note": "圖中只呈現題目已知條件與一般公式，不標示該題的數值答案。"
+      },
+      "figureReview": {
+        "decision": "pass",
+        "reviewedAt": "2026-07-12",
+        "manualRenderRequired": true,
+        "reviewNote": "已逐一核對 fig-u11-s012-find-leg 的座標、標籤位置、線段交點與320像素縮圖；圖形不按比例，且不會以視覺長短洩漏答案。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "f265a196650b84662a6022b971f86684a6ad2529829083f0937f3803de184061"
+    }
+  ],
+  "sourceBatch": "012-u11-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/012-u11-complete/units/u11/s012"
+}

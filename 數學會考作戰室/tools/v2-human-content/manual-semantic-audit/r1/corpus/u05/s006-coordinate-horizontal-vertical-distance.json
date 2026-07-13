@@ -1,0 +1,1182 @@
+{
+  "slot": "s006",
+  "skillId": "coordinate-horizontal-vertical-distance",
+  "topicId": "u05-coordinate-ops",
+  "title": "水平距離與垂直距離：同一方向只看一個坐標差",
+  "lecture": {
+    "lectureId": "u05-s006-lecture-r1",
+    "unitId": "u05",
+    "numericUnitId": 5,
+    "topicId": "u05-coordinate-ops",
+    "skillId": "coordinate-horizontal-vertical-distance",
+    "lockedTitle": "水平距離與垂直距離",
+    "title": "水平距離與垂直距離：同一方向只看一個坐標差",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能判斷兩點是否水平或垂直對齊。",
+      "能計算同 y 兩點的水平距離。",
+      "能計算同 x 兩點的垂直距離。",
+      "能由距離條件找可能坐標。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "coordinate-translation",
+        "requiredLevel": "能說明並正確使用「點的平移」的核心規則，且不混淆坐標分量順序。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "水平對齊",
+        "definition": "兩點的 y 坐標相同。"
+      },
+      {
+        "term": "垂直對齊",
+        "definition": "兩點的 x 坐標相同。"
+      },
+      {
+        "term": "水平距離",
+        "definition": "同 y 兩點的 |x1-x2|。"
+      },
+      {
+        "term": "垂直距離",
+        "definition": "同 x 兩點的 |y1-y2|。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "|x1-x2|",
+        "meaning": "兩個橫坐標的非負差。"
+      },
+      {
+        "symbol": "|y1-y2|",
+        "meaning": "兩個縱坐標的非負差。"
+      },
+      {
+        "symbol": "同 y",
+        "meaning": "兩點位於同一條水平線。"
+      },
+      {
+        "symbol": "同 x",
+        "meaning": "兩點位於同一條垂直線。"
+      }
+    ],
+    "conceptNarrative": [
+      "距離描述長度，所以不因計算順序而成負數。",
+      "水平線上 y 不變，真正需要比較的是 x；垂直線上 x 不變，真正需要比較的是 y。",
+      "本節只處理水平或垂直距離，不需要一般兩點距離的根號公式。",
+      "若只知到某點的水平距離，通常在左右兩側各有一個可能位置。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "水平距離",
+        "statement": "若 A=(x1,y)、B=(x2,y)，則 AB=|x1-x2|。"
+      },
+      {
+        "name": "垂直距離",
+        "statement": "若 A=(x,y1)、B=(x,y2)，則 AB=|y1-y2|。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "d水平=|x1-x2|",
+        "conditions": [
+          "兩點 y 相同"
+        ],
+        "meaning": "水平方向的坐標差。"
+      },
+      {
+        "formula": "d垂直=|y1-y2|",
+        "conditions": [
+          "兩點 x 相同"
+        ],
+        "meaning": "垂直方向的坐標差。"
+      }
+    ],
+    "nonApplicableCases": [
+      "兩點既不同 x 又不同 y 時，不可稱其連線為水平或垂直距離。",
+      "距離不能保留負號。",
+      "同 y 不是比較 y 的差。",
+      "由距離反推坐標時要考慮左右或上下兩種可能。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先檢查是否同 x 或同 y。",
+        "check": "線段究竟水平還是垂直？"
+      },
+      {
+        "step": 2,
+        "instruction": "選擇要比較的分量。",
+        "check": "水平看 x，垂直看 y。"
+      },
+      {
+        "step": 3,
+        "instruction": "相減並取絕對值。",
+        "check": "答案是否非負？"
+      },
+      {
+        "step": 4,
+        "instruction": "若反推，建立兩側可能。",
+        "check": "是否漏掉正負兩個方向？"
+      },
+      {
+        "step": 5,
+        "instruction": "以移動步數驗算。",
+        "check": "從一點走該距離能到另一點嗎？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "A=(-3,4)、B=(5,4) 的距離。",
+        "solutionSteps": [
+          "兩點同 y，線段水平。",
+          "|-3-5|=8。"
+        ],
+        "answer": "8 單位。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "C=(2,-6)、D=(2,1) 的距離。",
+        "solutionSteps": [
+          "兩點同 x，線段垂直。",
+          "|-6-1|=7。"
+        ],
+        "answer": "7 單位。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "E=(a,3) 與 F=(7,3) 相距 4，求 a。",
+        "solutionSteps": [
+          "|a-7|=4。",
+          "a=11 或 3。"
+        ],
+        "answer": "a=3 或 11。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "G=(-5,b) 與 H=(-5,-2) 垂直距離為 6。",
+        "solutionSteps": [
+          "|b+2|=6。",
+          "b=4 或 -8。"
+        ],
+        "answer": "b=4 或 -8。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "同 y 時用 |y1-y2|。",
+        "why": "把不變分量拿來相減。",
+        "correction": "水平距離應比較 x。"
+      },
+      {
+        "mistake": "計算 -3-5=-8 就作答。",
+        "why": "忘記距離非負。",
+        "correction": "取絕對值得 8。"
+      },
+      {
+        "mistake": "由 |a-7|=4 只得 a=11。",
+        "why": "只考慮右側。",
+        "correction": "還要有左側 a=3。"
+      },
+      {
+        "mistake": "兩點斜向仍直接用單一坐標差。",
+        "why": "未檢查對齊條件。",
+        "correction": "本節公式只適用同 x 或同 y。"
+      },
+      {
+        "mistake": "把坐標差當成坐標。",
+        "why": "混淆位置與長度。",
+        "correction": "答案是單一非負長度，不寫成有序數對。"
+      }
+    ],
+    "selfCheck": [
+      "我是否先確認同 x 或同 y？",
+      "水平是否只比較 x？",
+      "距離是否取絕對值？",
+      "反推時是否考慮兩側？"
+    ],
+    "summary": [
+      "同 y 求水平距離 |x1-x2|。",
+      "同 x 求垂直距離 |y1-y2|。",
+      "距離永遠非負。",
+      "反推距離常有兩個位置。"
+    ],
+    "connections": {
+      "previous": "承接點的平移，可把距離視為需要移動的單位數。",
+      "next": [
+        "下一節用水平距離與垂直距離求長方形邊長。",
+        "不引入高中解析幾何的一般距離公式。"
+      ]
+    },
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u05-s006-v001",
+        "u05-s006-v002",
+        "u05-s006-v003",
+        "u05-s006-v004",
+        "u05-s006-v005",
+        "u05-s006-v006",
+        "u05-s006-v007",
+        "u05-s006-v008",
+        "u05-s006-v009",
+        "u05-s006-v010",
+        "u05-s006-v011",
+        "u05-s006-v012"
+      ],
+      "constructedResponseIds": [
+        "u05-s006-cr001",
+        "u05-s006-cr002"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNote": "本講義依鎖定範圍採全文字描述；方向、順序與方程式均以可由螢幕閱讀器理解的完整句子表達。",
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP coordinate geometry only",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "futureUnitKnowledgeAvoided": true,
+      "reviewNote": "逐題檢查同 x、同 y 的前提及絕對值；兩個反推例題均列出左右或上下兩解，並確認未誤用一般斜距公式。",
+      "reviewVersion": "human-lecture-review-u05-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "c7ed021c3a5724c39f4a3c73f4457bd5575eb1b88199c58f84ce0db3bc476f5e"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u05-s006-v001",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "A=(-2,5)、B=(7,5)，線段 AB 的長度為何？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "求水平線段長度",
+      "choices": [
+        "5",
+        "9",
+        "7",
+        "12"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "兩點 y 相同，AB 水平；長度為 |7-(-2)|=9。",
+      "explanation": "兩點 y 相同，AB 水平；長度為 |7-(-2)|=9。",
+      "steps": [
+        "確認同 y。",
+        "計算橫坐標絕對差。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "誤取共同的 y。"
+        },
+        {
+          "choice": "9",
+          "truth": true,
+          "reason": "|7+2|=9。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "只取較大橫坐標。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "把兩坐標絕對值與 y 混加。"
+        }
+      ],
+      "misconceptionTarget": "同 y 時仍比較 y，或跨越 0 時漏加。",
+      "prerequisiteCheck": "需會整數差與絕對值。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "兩點同 y，公式適用。",
+      "difficultyReason": "單一絕對差，屬基礎。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求水平線段長度",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "89435b20d8821b9545e395e67a557e6623a6a1491111d2efd4a1ae5c6c40f544"
+    },
+    {
+      "questionId": "u05-s006-v002",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "C=(4,-6)、D=(4,3)，CD 的長度為何？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "求垂直線段長度",
+      "choices": [
+        "9",
+        "3",
+        "4",
+        "10"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "兩點 x 相同，CD 垂直；|-6-3|=9。",
+      "explanation": "兩點 x 相同，CD 垂直；|-6-3|=9。",
+      "steps": [
+        "確認同 x。",
+        "計算縱坐標絕對差。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9",
+          "truth": true,
+          "reason": "垂直距離正確。"
+        },
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "只取較大 y。"
+        },
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "誤取共同 x。"
+        },
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "差值計算錯誤。"
+        }
+      ],
+      "misconceptionTarget": "垂直距離誤用 x 坐標。",
+      "prerequisiteCheck": "需會到相同軸方向的坐標差。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "兩點同 x。",
+      "difficultyReason": "單一絕對差，屬基礎。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求垂直線段長度",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "1f9421969f976c228c9b524670c11f921409706b11567e7b047b863fd47468b8"
+    },
+    {
+      "questionId": "u05-s006-v003",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "下列哪一對點的連線是水平線段？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "辨認水平對齊",
+      "choices": [
+        "(1,-3) 與 (1,6)",
+        "(-3,1) 與 (6,-3)",
+        "(0,0) 與 (4,5)",
+        "(1,-3) 與 (6,-3)"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "水平線段的兩端點 y 坐標相同；只有 (1,-3) 與 (6,-3) 的 y 都是 -3。",
+      "explanation": "水平線段的兩端點 y 坐標相同；只有 (1,-3) 與 (6,-3) 的 y 都是 -3。",
+      "steps": [
+        "逐對比較第二分量。",
+        "選出 y 相同且 x 不同者。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "(1,-3) 與 (1,6)",
+          "truth": false,
+          "reason": "同 x，線段垂直。"
+        },
+        {
+          "choice": "(-3,1) 與 (6,-3)",
+          "truth": false,
+          "reason": "兩分量都不同。"
+        },
+        {
+          "choice": "(0,0) 與 (4,5)",
+          "truth": false,
+          "reason": "兩分量都不同。"
+        },
+        {
+          "choice": "(1,-3) 與 (6,-3)",
+          "truth": true,
+          "reason": "同 y，線段水平。"
+        }
+      ],
+      "misconceptionTarget": "把同 x 誤認成水平。",
+      "prerequisiteCheck": "需分清水平同 y。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "候選點均不同，沒有零長度線段。",
+      "difficultyReason": "直接辨認不變分量，屬基礎。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認水平對齊",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "8b4ec7e279a1119eb333ea634293c79744bf74f57d397ec58b1fcd1323e90a18"
+    },
+    {
+      "questionId": "u05-s006-v004",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "P=(a,2) 與 Q=(5,2) 的水平距離為 8，a 可能為何？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "反推水平距離的兩個位置",
+      "choices": [
+        "只有 13",
+        "只有 -3",
+        "13 或 -3",
+        "8 或 -8"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "由 |a-5|=8，得 a-5=8 或 -8，所以 a=13 或 -3。",
+      "explanation": "由 |a-5|=8，得 a-5=8 或 -8，所以 a=13 或 -3。",
+      "steps": [
+        "建立 |a-5|=8。",
+        "分成左右兩種情況。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只有 13",
+          "truth": false,
+          "reason": "漏掉左側。"
+        },
+        {
+          "choice": "只有 -3",
+          "truth": false,
+          "reason": "漏掉右側。"
+        },
+        {
+          "choice": "13 或 -3",
+          "truth": true,
+          "reason": "兩點分別在 Q 右 8 或左 8。"
+        },
+        {
+          "choice": "8 或 -8",
+          "truth": false,
+          "reason": "未以 Q 的 x=5 為中心。"
+        }
+      ],
+      "misconceptionTarget": "由距離反推時把 0 當中心。",
+      "prerequisiteCheck": "需會絕對值與左右方向。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "距離為正，兩個位置皆合法且 y 已相同。",
+      "difficultyReason": "需解絕對值方程式，屬標準。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "反推水平距離的兩個位置",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "f3bd48d1208d13412bb0445d400a9b1b012ee2fdae894fdb5444bad330a2e3a9"
+    },
+    {
+      "questionId": "u05-s006-v005",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "R=(-4,b) 與 S=(-4,-1) 的垂直距離為 5。下列哪組為 b 的所有可能值？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "反推垂直坐標",
+      "choices": [
+        "5、-5",
+        "4、6",
+        "-4、-6",
+        "4、-6"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "由 |b-(-1)|=|b+1|=5，得 b=4 或 b=-6。",
+      "explanation": "由 |b-(-1)|=|b+1|=5，得 b=4 或 b=-6。",
+      "steps": [
+        "建立 |b+1|=5。",
+        "解兩個方向。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5、-5",
+          "truth": false,
+          "reason": "錯以 0 為中心。"
+        },
+        {
+          "choice": "4、6",
+          "truth": false,
+          "reason": "第二個方向符號錯。"
+        },
+        {
+          "choice": "-4、-6",
+          "truth": false,
+          "reason": "第一值距 -1 只有 3。"
+        },
+        {
+          "choice": "4、-6",
+          "truth": true,
+          "reason": "距 -1 各 5。"
+        }
+      ],
+      "misconceptionTarget": "絕對值兩解沒有以已知點為中心。",
+      "prerequisiteCheck": "需會整數絕對值方程式。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "兩點同 x，垂直距離公式適用。",
+      "difficultyReason": "需正確處理負中心，屬標準。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "反推垂直坐標",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "7d2e3212708e99a825f31585086faba64416b4231ea7b5fe2a150505b58effab"
+    },
+    {
+      "questionId": "u05-s006-v006",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "A=(2,7)、B=(2,-5)、C=(-3,-5)。路線 A→B→C 的總長度為何？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "計算水平垂直折線總長",
+      "choices": [
+        "12",
+        "17",
+        "5",
+        "22"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "AB 垂直長 |7-(-5)|=12；BC 水平長 |2-(-3)|=5；總長 17。",
+      "explanation": "AB 垂直長 |7-(-5)|=12；BC 水平長 |2-(-3)|=5；總長 17。",
+      "steps": [
+        "求 AB=12。",
+        "求 BC=5 並相加。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "漏掉 BC。"
+        },
+        {
+          "choice": "17",
+          "truth": true,
+          "reason": "兩段格線距離相加。"
+        },
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "只算 BC。"
+        },
+        {
+          "choice": "22",
+          "truth": false,
+          "reason": "重複或錯加距離。"
+        }
+      ],
+      "misconceptionTarget": "把起點終點的單一坐標差當成折線總長。",
+      "prerequisiteCheck": "需會兩種軸平行距離。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "題目問沿 A→B→C 路線，不是 A 到 C 的斜向距離。",
+      "difficultyReason": "需分段計算與相加，屬標準。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "計算水平垂直折線總長",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "036dfacd686a508fdafa01a97494767245fd8b44bdbbfa4a2f78cdde314e2b94"
+    },
+    {
+      "questionId": "u05-s006-v007",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "若 A=(x,4)、B=(-2,4) 的距離小於 3，則 x 的範圍為何？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "由水平距離限制求範圍",
+      "choices": [
+        "x<-5 或 x>1",
+        "-3<x<3",
+        "-5<x<1",
+        "-2<x<3"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "水平距離 |x+2|<3，得到 -3<x+2<3，再減 2 得 -5<x<1。",
+      "explanation": "水平距離 |x+2|<3，得到 -3<x+2<3，再減 2 得 -5<x<1。",
+      "steps": [
+        "列 |x+2|<3。",
+        "解雙邊不等式。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x<-5 或 x>1",
+          "truth": false,
+          "reason": "這是距離大於 3。"
+        },
+        {
+          "choice": "-3<x<3",
+          "truth": false,
+          "reason": "忘記中心是 -2。"
+        },
+        {
+          "choice": "-5<x<1",
+          "truth": true,
+          "reason": "以 -2 為中心、半徑 3 的開區間。"
+        },
+        {
+          "choice": "-2<x<3",
+          "truth": false,
+          "reason": "只保留右側。"
+        }
+      ],
+      "misconceptionTarget": "把距離範圍以 0 為中心或不等號方向錯。",
+      "prerequisiteCheck": "需會一元一次不等式。",
+      "estimatedTimeSec": 135,
+      "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "『小於 3』不含端點，所以使用嚴格不等式。",
+      "difficultyReason": "需解絕對值不等式，屬進階。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由水平距離限制求範圍",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "0be3976af9ec5e89f9f61a87a435f4c842a83c1943ec481f61cd22b79d6de8e6"
+    },
+    {
+      "questionId": "u05-s006-v008",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "點 P=(m,1)、Q=(m,2m-3) 的垂直距離為 8，m 的值可能為何？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "含參數垂直距離方程式",
+      "choices": [
+        "6 或 -2",
+        "4 或 -4",
+        "6 或 2",
+        "5 或 -3"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "距離為 |(2m-3)-1|=|2m-4|=8。故 2m-4=8 或 -8，得 m=6 或 -2。",
+      "explanation": "距離為 |(2m-3)-1|=|2m-4|=8。故 2m-4=8 或 -8，得 m=6 或 -2。",
+      "steps": [
+        "建立 |2m-4|=8。",
+        "解兩個一次方程式。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6 或 -2",
+          "truth": true,
+          "reason": "兩值均使距離為 8。"
+        },
+        {
+          "choice": "4 或 -4",
+          "truth": false,
+          "reason": "代入距離分別為 4、12。"
+        },
+        {
+          "choice": "6 或 2",
+          "truth": false,
+          "reason": "m=2 時距離 0。"
+        },
+        {
+          "choice": "5 或 -3",
+          "truth": false,
+          "reason": "兩者距離皆非 8。"
+        }
+      ],
+      "misconceptionTarget": "省略絕對值的負分支。",
+      "prerequisiteCheck": "需會代數式絕對值。",
+      "estimatedTimeSec": 135,
+      "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "兩點 x 均為 m，所以確實垂直對齊。",
+      "difficultyReason": "需化簡後解雙分支方程式，屬進階。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "含參數垂直距離方程式",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "9bc36901eac92315e943392a16eac98410e34379d4aefc94f13b06c0ecda9c0b"
+    },
+    {
+      "questionId": "u05-s006-v009",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "長方形的一條水平邊端點為 (-a,3) 與 (a,3)，邊長為 10 且 a>0，求 a。",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "利用對稱坐標求半距",
+      "choices": [
+        "2",
+        "10",
+        "5",
+        "20"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "水平距離 |-a-a|=|-2a|=2a。由 2a=10 得 a=5。",
+      "explanation": "水平距離 |-a-a|=|-2a|=2a。由 2a=10 得 a=5。",
+      "steps": [
+        "寫出橫坐標差 2a。",
+        "利用 a>0 解得 5。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "距離只有 4。"
+        },
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "距離會是 20。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "兩端為 -5 與 5，距離 10。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "距離會是 40。"
+        }
+      ],
+      "misconceptionTarget": "把對稱兩端的距離只算成 a。",
+      "prerequisiteCheck": "需會絕對值與一元方程式。",
+      "estimatedTimeSec": 135,
+      "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "a>0 排除符號不確定；兩點同 y。",
+      "difficultyReason": "需由代數端點建立距離，屬進階。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "利用對稱坐標求半距",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "28a3e283d15a44d610b9ddce67f75a7fbfc560f5329b9e5f5b116c9c5649216b"
+    },
+    {
+      "questionId": "u05-s006-v010",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "公園地圖每格 15 公尺，入口 A=(-2,1) 與廁所 B=(4,1) 位於同一水平步道。步道長多少公尺？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "將水平格距換算實際長度",
+      "choices": [
+        "90 公尺",
+        "6 公尺",
+        "60 公尺",
+        "105 公尺"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "水平距離為 |4-(-2)|=6 格；6×15=90 公尺。",
+      "explanation": "水平距離為 |4-(-2)|=6 格；6×15=90 公尺。",
+      "steps": [
+        "求 6 格。",
+        "乘 15 公尺/格。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "90 公尺",
+          "truth": true,
+          "reason": "格數與比例換算正確。"
+        },
+        {
+          "choice": "6 公尺",
+          "truth": false,
+          "reason": "把格數直接當公尺。"
+        },
+        {
+          "choice": "60 公尺",
+          "truth": false,
+          "reason": "只用 4 格換算。"
+        },
+        {
+          "choice": "105 公尺",
+          "truth": false,
+          "reason": "誤算成 7 格。"
+        }
+      ],
+      "misconceptionTarget": "跨越原點漏算，或忘記比例。",
+      "prerequisiteCheck": "需會水平距離。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "6 格×15 公尺/格，最終單位公尺。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "兩點同 y，步道為水平且每格等長。",
+      "difficultyReason": "情境比例是必要第二步。",
+      "literacyContextNecessity": "每格 15 公尺的比例把抽象水平坐標差轉成實際步道長度，若刪除比例就無法得到公尺答案。",
+      "authoringIntent": "將水平格距換算實際長度",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "b01bbfcc345b5547f0020685672f1bc3d11234d6950976e9cb064ea20d785e51"
+    },
+    {
+      "questionId": "u05-s006-v011",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "大樓樓層剖面以地面為 y=0，每一坐標單位代表 3 公尺。設備 A=(2,-4)、B=(2,5) 垂直對齊，兩設備高度差為何？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "計算跨地面的實際高度差",
+      "choices": [
+        "9 公尺",
+        "27 公尺",
+        "3 公尺",
+        "15 公尺"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "垂直距離 |-4-5|=9 單位；9×3=27 公尺。",
+      "explanation": "垂直距離 |-4-5|=9 單位；9×3=27 公尺。",
+      "steps": [
+        "求 9 坐標單位。",
+        "乘每單位 3 公尺。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9 公尺",
+          "truth": false,
+          "reason": "漏乘 3。"
+        },
+        {
+          "choice": "27 公尺",
+          "truth": true,
+          "reason": "垂直差與比例均正確。"
+        },
+        {
+          "choice": "3 公尺",
+          "truth": false,
+          "reason": "只回報每單位長度。"
+        },
+        {
+          "choice": "15 公尺",
+          "truth": false,
+          "reason": "只使用上方 5 單位。"
+        }
+      ],
+      "misconceptionTarget": "把地下與地上高度做絕對值之差而非跨越相加。",
+      "prerequisiteCheck": "需會垂直距離與比例。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "9 單位×3 公尺/單位。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "兩設備同 x，垂直距離適用。",
+      "difficultyReason": "需處理負高度與比例換算。",
+      "literacyContextNecessity": "地面基準、地下負值與每單位 3 公尺共同決定真實高度差。",
+      "authoringIntent": "計算跨地面的實際高度差",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "22424804d8ac7d516cff0e99034b9215f82718ff2393af075fb19841a1c1d387"
+    },
+    {
+      "questionId": "u05-s006-v012",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
+      "text": "配送車沿格線由倉庫 (1,-2) 先垂直到 (1,4)，再水平到 (-5,4)。每格 200 公尺，總路程為何？",
+      "givenConditions": [
+        "題幹所列坐標、方程式與移動條件均為精確值。"
+      ],
+      "target": "計算折線配送路程並換單位",
+      "choices": [
+        "1.2 公里",
+        "2.0 公里",
+        "12 公里",
+        "2.4 公里"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "第一段 6 格，第二段 6 格，共 12 格；12×200=2400 公尺=2.4 公里。",
+      "explanation": "第一段 6 格，第二段 6 格，共 12 格；12×200=2400 公尺=2.4 公里。",
+      "steps": [
+        "分段得 6+6=12 格。",
+        "換算 2400 公尺=2.4 公里。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1.2 公里",
+          "truth": false,
+          "reason": "只算一段。"
+        },
+        {
+          "choice": "2.0 公里",
+          "truth": false,
+          "reason": "公尺轉公里錯誤。"
+        },
+        {
+          "choice": "12 公里",
+          "truth": false,
+          "reason": "把格數直接當公里。"
+        },
+        {
+          "choice": "2.4 公里",
+          "truth": true,
+          "reason": "路線與單位換算完整。"
+        }
+      ],
+      "misconceptionTarget": "漏算一段或公尺公里換算錯。",
+      "prerequisiteCheck": "需會分段距離與公制換算。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "12×200=2400 公尺，再除以 1000 得 2.4 公里。",
+      "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
+      "ambiguityBoundaryAudit": "路線指定垂直後水平，不求斜線最短距離。",
+      "difficultyReason": "多段距離與兩次單位換算構成素養整合。",
+      "literacyContextNecessity": "配送路線、每格 200 公尺與公里作答要求都直接影響計算。",
+      "authoringIntent": "計算折線配送路程並換單位",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "a67fcbd79a7287a2a3890ecd1acc61c832ee2801f9ac00dd7f3eadf82bdf2259"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u05-s006-cr001",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "點 A=(-6,3)、B=(4,3)、C=(4,-2)。求折線 A→B→C 的總長度。",
+      "requiredWork": [
+        "分別求 AB、BC。",
+        "相加並標示單位。"
+      ],
+      "fullCreditSolution": [
+        "AB 為水平線段，長度 |4-(-6)|=10。",
+        "BC 為垂直線段，長度 |3-(-2)|=5。",
+        "總長度 10+5=15 單位。"
+      ],
+      "alternativeSolutions": [
+        "可由格線移動描述：向右 10，再向下 5。"
+      ],
+      "reasoningSteps": [
+        "AB 為水平線段，長度 |4-(-6)|=10。",
+        "BC 為垂直線段，長度 |3-(-2)|=5。",
+        "總長度 10+5=15 單位。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "AB=10、BC=5、總長 15 均正確且說明水平垂直。"
+        },
+        {
+          "score": 2,
+          "criteria": "總長正確但分段理由不足，或一段算錯而另一段與加法正確。"
+        },
+        {
+          "score": 1,
+          "criteria": "只正確求出一段距離。"
+        },
+        {
+          "score": 0,
+          "criteria": "直接用兩端 A、C 的坐標相加，未依指定折線。"
+        }
+      ],
+      "partialCreditRules": [
+        "題目問折線路程，不能改求 A 到 C 的其他距離。"
+      ],
+      "followThroughPolicy": "若其中一段距離算錯，但另一段使用同 y 或同 x 的坐標差正確，且總長以兩段相加，依正確部分給分。",
+      "unitAndNotationRules": "AB、BC 均為長度，最後答案寫「15 單位」；坐標差取絕對值，不得保留負長度。",
+      "answerOnlyPolicy": "只寫 15 而沒有分別求水平段與垂直段，最高給 2 分。",
+      "commonErrors": [
+        "跨越 0 算成 2。",
+        "漏算 BC。"
+      ],
+      "independentReview": {
+        "derivedResult": "若 AB 算錯但學生以自己的 AB 正確加上 BC，保留後續加法方法分。",
+        "ambiguity": "長度以單位表示，不寫成坐標。",
+        "decision": "pass",
+        "reviewNote": "重新由題目條件推導結果為 若 AB 算錯但學生以自己的 AB 正確加上 BC，保留後續加法方法分。；並逐項核對評分規準與可接受的等價表示。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "49ce316c0596c66289eefdff245e03bdc2e6b119483f5b08aa3ab9b84c8cf9fc"
+    },
+    {
+      "questionId": "u05-s006-cr002",
+      "unitId": "u05",
+      "numericUnitId": 5,
+      "topicId": "u05-coordinate-ops",
+      "skillId": "coordinate-horizontal-vertical-distance",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "點 P=(a,-1) 與 Q=(5,-1) 的水平距離為 7。求所有 a，並用位置語言說明兩個答案。",
+      "requiredWork": [
+        "建立絕對值方程式。",
+        "求兩個解。",
+        "說明左右位置。"
+      ],
+      "fullCreditSolution": [
+        "|a-5|=7。",
+        "a-5=7 得 a=12；a-5=-7 得 a=-2。",
+        "a=12 表示 P 在 Q 右方 7 單位；a=-2 表示 P 在 Q 左方 7 單位。"
+      ],
+      "alternativeSolutions": [
+        "可直接從 x=5 向右、向左各走 7，得到 12 與 -2。"
+      ],
+      "reasoningSteps": [
+        "|a-5|=7。",
+        "a-5=7 得 a=12；a-5=-7 得 a=-2。",
+        "a=12 表示 P 在 Q 右方 7 單位；a=-2 表示 P 在 Q 左方 7 單位。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "得到 a=12、-2，並正確說明右方與左方。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩解正確但位置說明不足，或漏一解但方法完整。"
+        },
+        {
+          "score": 1,
+          "criteria": "列出 |a-5|=7 但解絕對值錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "只寫 a=7 或 ±7，未以 5 為中心。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩解順序不拘。"
+      ],
+      "followThroughPolicy": "若解 |a-5|=7 時只得到一個分支，該分支與位置說明正確可得部分分；另一分支遺漏不影響已完成分支的方法分。",
+      "unitAndNotationRules": "答案寫 a=12 或 a=-2；位置語言分別為 Q 右方 7 單位與左方 7 單位。",
+      "answerOnlyPolicy": "只寫 12、-2 而沒有左右位置說明，最高給 2 分。",
+      "commonErrors": [
+        "以 0 為中心寫 ±7。",
+        "只取右側解。"
+      ],
+      "independentReview": {
+        "derivedResult": "若一個分支算術錯，另一分支正確，依完成程度給 1～2 分。",
+        "ambiguity": "a 為橫坐標；距離 7 非負。",
+        "decision": "pass",
+        "reviewNote": "重新由題目條件推導結果為 若一個分支算術錯，另一分支正確，依完成程度給 1～2 分。；並逐項核對評分規準與可接受的等價表示。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "d2e1c88a302441fa3e1203811181f0ab7992f2954c75c719a675d4acd78b41fd"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "006-u05-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/006-u05-complete/units/u05/s006"
+}

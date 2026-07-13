@@ -1,0 +1,1298 @@
+{
+  "slot": "s007",
+  "skillId": "sequence-pattern-word",
+  "topicId": "u14-sequences",
+  "title": "規律觀察列式：把圖形結構拆成固定部分與重複部分",
+  "lecture": {
+    "lectureId": "u14-s007-lecture-r1",
+    "unitId": "u14",
+    "numericUnitId": 14,
+    "topicId": "u14-sequences",
+    "skillId": "sequence-pattern-word",
+    "lockedTitle": "規律觀察列式",
+    "title": "規律觀察列式：把圖形結構拆成固定部分與重複部分",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能從文字、表格或圖形辨認階段n。",
+      "能以固定部分加重複部分寫出式子。",
+      "能處理共邊、重疊與二維排列。",
+      "能用已知圖驗證列式並求遠期階段。"
+    ],
+    "prerequisiteBridge": [
+      {
+        "skillId": "arithmetic-mean-term",
+        "title": "等差中項",
+        "requiredLevel": "能說明「等差中項」的核心定義並完成基本計算，作為本技能的直接前置。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "階段",
+        "definition": "圖形或情境發展的第幾次，常以n表示。"
+      },
+      {
+        "term": "固定部分",
+        "definition": "每個階段都不變的數量。"
+      },
+      {
+        "term": "重複單元",
+        "definition": "每增加一階段就增加的結構。"
+      },
+      {
+        "term": "共用或重疊",
+        "definition": "相鄰圖形共享元素，不能重複計數。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "T_n",
+        "meaning": "第n階段的總數量。"
+      },
+      {
+        "symbol": "固定量+n×每組量",
+        "meaning": "常見拆解模型。"
+      },
+      {
+        "symbol": "首階段+(n-1)×增量",
+        "meaning": "由首項出發的模型。"
+      }
+    ],
+    "conceptNarrative": [
+      "圖形題先問「第n圖有幾組重複單元」，再問有沒有額外固定邊或固定點。",
+      "相連正方形會共用邊，不能把每個正方形的4邊直接相加。",
+      "若第一圖已有一組，從第一圖增加到第n圖通常只新增n-1次。",
+      "同一圖形可能有不同拆法，只要列式等價且計數無重複即可。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "結構列式",
+        "statement": "依圖形組成直接表示總數的代數式。"
+      },
+      {
+        "name": "增量列式",
+        "statement": "由第一階段與固定增加量表示總數。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "T_n=T_1+(n-1)d",
+        "conditions": [
+          "每次增加量固定"
+        ],
+        "meaning": "以首階段推到第n階段。"
+      },
+      {
+        "formula": "相連n個正方形火柴數=3n+1",
+        "conditions": [
+          "正方形排成一直列且相鄰共一邊"
+        ],
+        "meaning": "首個4根，之後每個增加3根。"
+      }
+    ],
+    "nonApplicableCases": [
+      "圖形每次增量不固定時不可硬套一次式。",
+      "共用邊若重複計數會高估。",
+      "n代表圖號，不一定等於新增次數。",
+      "圖未按比例繪製時不可量長度猜答案。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "標出第n階段的重複單元數",
+        "check": "確認n對應什麼。"
+      },
+      {
+        "step": 2,
+        "instruction": "選擇結構法或增量法",
+        "check": "避免兩種方法混算。"
+      },
+      {
+        "step": 3,
+        "instruction": "扣除共用或重疊",
+        "check": "逐項說明為何扣。"
+      },
+      {
+        "step": 4,
+        "instruction": "寫成n的式子並化簡",
+        "check": "保留原式也可作驗證。"
+      },
+      {
+        "step": 5,
+        "instruction": "代入前幾圖核對",
+        "check": "至少檢查n=1與n=2。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "一列相連n個正方形的火柴數",
+        "reasoning": "第一個4根，其後每個加3根。",
+        "solutionSteps": [
+          "第一個4根，其後每個加3根。",
+          "T_n=4+3(n-1)=3n+1。"
+        ],
+        "answer": "3n+1"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "第1層5顆球，每增一層多4顆",
+        "reasoning": "由首層出發。",
+        "solutionSteps": [
+          "由首層出發。",
+          "T_n=5+4(n-1)=4n+1。"
+        ],
+        "answer": "4n+1"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "長為n+2、寬為3的方格長方形周長",
+        "reasoning": "周長為兩倍長寬和。",
+        "solutionSteps": [
+          "周長為兩倍長寬和。",
+          "P_n=2[(n+2)+3]=2n+10。"
+        ],
+        "answer": "2n+10"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "第n圖有n列，每列2n+1個點",
+        "reasoning": "列數乘每列點數。",
+        "solutionSteps": [
+          "列數乘每列點數。",
+          "T_n=n(2n+1)。"
+        ],
+        "answer": "n(2n+1)"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "能辨認定義與完成單一步驟。",
+      "standard": "能在多個表示間轉換並處理兩至三步推理。",
+      "advanced": "能整合位置、條件、反推或代數驗證。",
+      "literacy": "能從表格、圖形或實際單位中選擇模型並檢查邊界。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "每個正方形都算4邊",
+        "why": "共邊被重複計數。",
+        "correction": "首個4根，其後每個只加3根。"
+      },
+      {
+        "mistake": "把n當新增次數",
+        "why": "從第1圖到第n圖只新增n-1次。",
+        "correction": "用T_1+(n-1)d。"
+      },
+      {
+        "mistake": "只由數表猜式子",
+        "why": "沒有解釋圖形結構。",
+        "correction": "指出固定與重複部分。"
+      },
+      {
+        "mistake": "量圖上的像素或長度",
+        "why": "圖可能不按比例。",
+        "correction": "依標示與結構計數。"
+      },
+      {
+        "mistake": "列與每列數量只相加",
+        "why": "二維排列應相乘。",
+        "correction": "總數=列數×每列數。"
+      },
+      {
+        "mistake": "公式未代回首圖",
+        "why": "錯位式子不易被發現。",
+        "correction": "至少代n=1、2。"
+      }
+    ],
+    "selfCheck": [
+      "n代表圖號還是新增次數？",
+      "是否有共用邊或重疊？",
+      "固定部分與重複部分各是什麼？",
+      "二維排列應相加還是相乘？",
+      "公式能否產生前兩圖？"
+    ],
+    "summary": [
+      "圖形列式要辨認固定部分、重複單元與重疊。",
+      "從首圖到第n圖常有n-1次增加。",
+      "共邊題不能逐個完整相加。",
+      "代回前幾圖是必要驗證。"
+    ],
+    "connections": {
+      "previous": "結合通項與等差中項的代數表達。",
+      "next": [
+        "等比第n項會把重複乘法寫成指數。",
+        "後續素養題會在表格與圖文中辨認同類結構。"
+      ]
+    },
+    "figureReferences": [
+      "u14-fig-s007-matchstick-row"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u14-s007-v001",
+        "u14-s007-v002",
+        "u14-s007-v003",
+        "u14-s007-v004",
+        "u14-s007-v005",
+        "u14-s007-v006",
+        "u14-s007-v007",
+        "u14-s007-v008",
+        "u14-s007-v009",
+        "u14-s007-v010",
+        "u14-s007-v011",
+        "u14-s007-v012"
+      ],
+      "constructedResponseIds": [
+        "u14-s007-cr001",
+        "u14-s007-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "capBoundary": "pass",
+      "undefinedSymbolAudit": "pass",
+      "futureKnowledgeLeakage": "pass",
+      "examplesNotCopiedFromQuestionBank": true,
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12",
+      "reviewNote": "逐段檢查「規律觀察列式」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
+    },
+    "contentSha256": "50c1615199b4d643efb913f1c050ba00f94f7d12a1c6043243d8aee6b9e32cc0"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u14-s007-v001",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "某圖形第 n 階段使用的圓片數為 4n+1。第 6 階段使用多少片？",
+      "givenConditions": [
+        "T_n=4n+1"
+      ],
+      "target": "第6階段圓片數",
+      "choices": [
+        "21",
+        "24",
+        "25",
+        "29"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "將階段編號n=6代入T_n=4n+1，得到25片。",
+      "mainExplanation": "依題意依序處理：代入6。；先乘後加。，所以唯一正確選項是「25」。",
+      "steps": [
+        "代入6。",
+        "先乘後加。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "21",
+          "truth": false,
+          "reason": "21是4×5+1，少一階。"
+        },
+        {
+          "choice": "24",
+          "truth": false,
+          "reason": "24漏掉固定1片。"
+        },
+        {
+          "choice": "25",
+          "truth": true,
+          "reason": "4×6+1=25。"
+        },
+        {
+          "choice": "29",
+          "truth": false,
+          "reason": "29多一組4片。"
+        }
+      ],
+      "misconceptionTarget": "漏算固定部分1。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "n為正整數；答案25片。",
+      "difficultyReason": "基礎：一次代入，重點是固定部分與重複部分皆保留。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由已列式求指定階段。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "da5fc57369d662aeb9fe86cf3a438fd96c69339440eb432df90d4fe0f6e382b4"
+    },
+    {
+      "questionId": "u14-s007-v002",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "某教室第 n 排椅子數可表示為 2n+8。第 10 排有多少張椅子？",
+      "givenConditions": [
+        "第n排2n+8張"
+      ],
+      "target": "第10排椅子數",
+      "choices": [
+        "20",
+        "28",
+        "26",
+        "30"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "排號n=10，代入2n+8：20+8=28張。",
+      "mainExplanation": "依題意依序處理：辨認排號是n。；代入並附單位。，所以唯一正確選項是「28」。",
+      "steps": [
+        "辨認排號是n。",
+        "代入並附單位。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "20漏加固定8。"
+        },
+        {
+          "choice": "28",
+          "truth": true,
+          "reason": "2×10+8=28。"
+        },
+        {
+          "choice": "26",
+          "truth": false,
+          "reason": "26少算2。"
+        },
+        {
+          "choice": "30",
+          "truth": false,
+          "reason": "30多算2。"
+        }
+      ],
+      "misconceptionTarget": "把第10排誤當總共10排椅子。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "只求第10排，不是前10排總和。",
+      "difficultyReason": "基礎：單一線性式代入並區分排號與椅子數。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由排號公式求單排數量。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "431ba7af0947eec639dc1e099c6eeabc2cbc7afda77f76c69120b8724597a97f"
+    },
+    {
+      "questionId": "u14-s007-v003",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u14-fig-s007-matchstick-row",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "用火柴排成一直列相連的正方形：1 個正方形用 4 根，2 個用 7 根，3 個用 10 根。7 個相連正方形需要多少根？",
+      "givenConditions": [
+        "前3階段火柴數"
+      ],
+      "target": "7個相連正方形火柴數",
+      "choices": [
+        "21",
+        "25",
+        "28",
+        "22"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "相連正方形共邊，T_n=4+3(n-1)=3n+1；T_7=22。",
+      "mainExplanation": "依題意依序處理：辨認每新增一格只加3根。；代入n=7。，所以唯一正確選項是「22」。",
+      "steps": [
+        "辨認每新增一格只加3根。",
+        "代入n=7。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "21",
+          "truth": false,
+          "reason": "21是直接用7×3，漏固定首端1根。"
+        },
+        {
+          "choice": "25",
+          "truth": false,
+          "reason": "25是每次增加量或步數計錯。"
+        },
+        {
+          "choice": "28",
+          "truth": false,
+          "reason": "28是完全不扣共用邊。"
+        },
+        {
+          "choice": "22",
+          "truth": true,
+          "reason": "第一個4根，以後每新增一個只多3根；4+6×3=22。"
+        }
+      ],
+      "misconceptionTarget": "把每個正方形都算4根，重複計入共邊。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 110,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "正方形排成一直列且只共享相鄰一邊；圖不按比例。",
+      "difficultyReason": "基礎：圖形結構直觀，但需扣除共邊。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "從共邊圖形建立一次式。",
+      "figureDrawingSpecRef": "units/u14/s007/drawing-specs.jsonl#u14-fig-s007-matchstick-row",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c19bb429f2f45589d30a1fb858b0a9a56cd9593999b4c4ba7703cd147b1254e7"
+    },
+    {
+      "questionId": "u14-s007-v004",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "某點陣第 1 圖有 5 點，以後每增加一圖就多 4 點。第 n 圖點數的式子為何？",
+      "givenConditions": [
+        "T_1=5",
+        "每圖多4"
+      ],
+      "target": "寫T_n",
+      "choices": [
+        "4n+1",
+        "4n+5",
+        "5n-1",
+        "n+4"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "T_n=T_1+(n-1)d=5+4(n-1)=4n+1；代n=1得5、n=2得9。",
+      "mainExplanation": "依題意依序處理：使用首項加n-1次增量。；化簡並代回。，所以唯一正確選項是「4n+1」。",
+      "steps": [
+        "使用首項加n-1次增量。",
+        "化簡並代回。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4n+1",
+          "truth": true,
+          "reason": "由首圖5出發：5+4(n-1)=4n+1。"
+        },
+        {
+          "choice": "4n+5",
+          "truth": false,
+          "reason": "4n+5在n=1時為9。"
+        },
+        {
+          "choice": "5n-1",
+          "truth": false,
+          "reason": "5n-1在n=1為4。"
+        },
+        {
+          "choice": "n+4",
+          "truth": false,
+          "reason": "n+4雖首圖為5，但增量只有1。"
+        }
+      ],
+      "misconceptionTarget": "直接寫5+4n，多算一次增加。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "n從1開始；4n+1對前兩圖皆成立。",
+      "difficultyReason": "標準：需處理n-1並化簡成等價式。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由首圖與固定增量列通項。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4c3aa30e7597d52c999e0dbb1abb95698759b9c4ba936cd4d3b18a12f9969f27"
+    },
+    {
+      "questionId": "u14-s007-v005",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "一串三角旗的第 1 段有 3 面，第 2 段有 5 面，第 3 段有 7 面。若保持同一規律，第 n 段有幾面？",
+      "givenConditions": [
+        "前三段3、5、7面"
+      ],
+      "target": "寫第n段公式",
+      "choices": [
+        "2n-1",
+        "2n+1",
+        "3n",
+        "n+2"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "檢查n=1、2、3：2n+1給3、5、7，完整吻合。",
+      "mainExplanation": "依題意依序處理：由數表辨認公差2。；列式並驗證。，所以唯一正確選項是「2n+1」。",
+      "steps": [
+        "由數表辨認公差2。",
+        "列式並驗證。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2n-1",
+          "truth": false,
+          "reason": "2n-1在n=1只有1。"
+        },
+        {
+          "choice": "2n+1",
+          "truth": true,
+          "reason": "首項3、公差2，所以3+2(n-1)=2n+1。"
+        },
+        {
+          "choice": "3n",
+          "truth": false,
+          "reason": "3n只碰巧符合第1段。"
+        },
+        {
+          "choice": "n+2",
+          "truth": false,
+          "reason": "n+2增量為1。"
+        }
+      ],
+      "misconceptionTarget": "只用第一段決定3n，沒有驗證後續。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "題目明示保持同一規律；n為正整數。",
+      "difficultyReason": "標準：需用三筆資料驗證候選式。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "從情境數表寫一次式。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "0d3e2d2e3374b78918742ac55e07fbdf6cd89271c861cba7a4a3b3a9d66210c8"
+    },
+    {
+      "questionId": "u14-s007-v006",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "第 n 個圖形是一個長為 n+2、寬為 3 的長方形。它的周長可表示為何？",
+      "givenConditions": [
+        "長n+2",
+        "寬3"
+      ],
+      "target": "周長公式",
+      "choices": [
+        "2n+10",
+        "n+5",
+        "3n+6",
+        "6n+12"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "長方形兩條長與兩條寬，P_n=2(n+2)+2×3=2n+10。",
+      "mainExplanation": "依題意依序處理：寫周長公式。；代入長與寬並化簡。，所以唯一正確選項是「2n+10」。",
+      "steps": [
+        "寫周長公式。",
+        "代入長與寬並化簡。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2n+10",
+          "truth": true,
+          "reason": "周長=2[(n+2)+3]=2(n+5)=2n+10。"
+        },
+        {
+          "choice": "n+5",
+          "truth": false,
+          "reason": "n+5只是長寬和，少乘2。"
+        },
+        {
+          "choice": "3n+6",
+          "truth": false,
+          "reason": "3n+6錯把長寬相乘後改寫。"
+        },
+        {
+          "choice": "6n+12",
+          "truth": false,
+          "reason": "6n+12不是周長公式。"
+        }
+      ],
+      "misconceptionTarget": "把長加寬直接當周長。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "長寬皆以同一長度單位；n為使長為正的正整數。",
+      "difficultyReason": "標準：結合長方形周長與代數化簡。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "從幾何尺寸列出關於n的式子。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6354aa79f53739e413ec2213afccf9848be1ea0f56628261ab42f2695f64bff7"
+    },
+    {
+      "questionId": "u14-s007-v007",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "某圖案第 1 階段有 7 個單元，此後每一階段固定多 6 個。第 20 階段有多少個單元？",
+      "givenConditions": [
+        "T_1=7",
+        "每階段+6"
+      ],
+      "target": "T_20",
+      "choices": [
+        "114",
+        "120",
+        "127",
+        "121"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "T_n=7+6(n-1)=6n+1；T_20=121。",
+      "mainExplanation": "依題意依序處理：從首階段列式。；代入20。，所以唯一正確選項是「121」。",
+      "steps": [
+        "從首階段列式。",
+        "代入20。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "114",
+          "truth": false,
+          "reason": "114是19×6，漏首階段7。"
+        },
+        {
+          "choice": "120",
+          "truth": false,
+          "reason": "120把公式誤寫6n。"
+        },
+        {
+          "choice": "127",
+          "truth": false,
+          "reason": "127多增加一次6。"
+        },
+        {
+          "choice": "121",
+          "truth": true,
+          "reason": "7+19×6=121。"
+        }
+      ],
+      "misconceptionTarget": "看到每階段多6就直接算20×6。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "從第1到第20有19次增加。",
+      "difficultyReason": "進階：數字較遠，需先建立通項避免逐項列出。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "遠期階段的首項加增量模型。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b9d1627c500096b3212f441ce8f2848519a759287362f80c3d17889bb6b2b85e"
+    },
+    {
+      "questionId": "u14-s007-v008",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "第 n 幅拼圖由 n×n 的正方形核心，再加上左右各 n 塊邊條組成。總塊數為多少？",
+      "givenConditions": [
+        "n×n核心",
+        "左右各n塊"
+      ],
+      "target": "總塊數公式",
+      "choices": [
+        "n²+2",
+        "2n²",
+        "n²+2n",
+        "n(n+1)"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "分解結構：核心面積n×n=n²；左邊條n；右邊條n；合計n²+2n。",
+      "mainExplanation": "依題意依序處理：分別計數核心與兩側。；相加並化簡。，所以唯一正確選項是「n²+2n」。",
+      "steps": [
+        "分別計數核心與兩側。",
+        "相加並化簡。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "n²+2",
+          "truth": false,
+          "reason": "n²+2把兩側各一塊而非各n塊。"
+        },
+        {
+          "choice": "2n²",
+          "truth": false,
+          "reason": "2n²把邊條誤算成另一個核心。"
+        },
+        {
+          "choice": "n²+2n",
+          "truth": true,
+          "reason": "核心n²塊，兩側各n塊，共n²+n+n=n²+2n。"
+        },
+        {
+          "choice": "n(n+1)",
+          "truth": false,
+          "reason": "n(n+1)=n²+n，少一側。"
+        }
+      ],
+      "misconceptionTarget": "把「左右各n塊」讀成左右合計n塊。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "各部分不重疊；n為正整數。",
+      "difficultyReason": "進階：需整合平方項與兩個線性部分。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由二維核心與線性邊條列式。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "15d084387eeccb2df4b95ac311e411649f453627a85bbb4fe71c9afc1f397352"
+    },
+    {
+      "questionId": "u14-s007-v009",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "第 n 圖有 n 列點，每一列都有 2n+1 個點。第 8 圖共有多少點？",
+      "givenConditions": [
+        "n列",
+        "每列2n+1點"
+      ],
+      "target": "第8圖總點數",
+      "choices": [
+        "136",
+        "72",
+        "128",
+        "144"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "第8圖有8列，每列2×8+1=17點，故8×17=136點。",
+      "mainExplanation": "依題意依序處理：先求每列點數17。；乘列數8。，所以唯一正確選項是「136」。",
+      "steps": [
+        "先求每列點數17。",
+        "乘列數8。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "136",
+          "truth": true,
+          "reason": "總點數=n(2n+1)，代n=8得8×17=136。"
+        },
+        {
+          "choice": "72",
+          "truth": false,
+          "reason": "72是8×9，少算n。"
+        },
+        {
+          "choice": "128",
+          "truth": false,
+          "reason": "128是8×16，漏加1。"
+        },
+        {
+          "choice": "144",
+          "truth": false,
+          "reason": "144是8×18，多加1。"
+        }
+      ],
+      "misconceptionTarget": "把列數與每列點數相加而非相乘。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "各列點數相同且無重疊；答案136點。",
+      "difficultyReason": "進階：需要先求每列數，再以乘法整合二維結構。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "處理兩個都依n變化的二維排列。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "24c82f16455da3c6c2da777c52bc9545fc12fdd5039d2f98033dfcfc2bda2d04"
+    },
+    {
+      "questionId": "u14-s007-v010",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "活動場地第 1 區掛 9 面旗，之後每一區比前一區多 5 面。第 18 區掛幾面旗？",
+      "givenConditions": [
+        "第1區9面",
+        "每區多5面"
+      ],
+      "target": "第18區旗數",
+      "choices": [
+        "89",
+        "99",
+        "104",
+        "94"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "旗數T_n=9+5(n-1)=5n+4，代n=18得94。",
+      "mainExplanation": "依題意依序處理：辨認區號為項次。；計算17次增加。，所以唯一正確選項是「94」。",
+      "steps": [
+        "辨認區號為項次。",
+        "計算17次增加。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "89",
+          "truth": false,
+          "reason": "89是只增加16次。"
+        },
+        {
+          "choice": "99",
+          "truth": false,
+          "reason": "99是增加18次。"
+        },
+        {
+          "choice": "104",
+          "truth": false,
+          "reason": "104多增加2次。"
+        },
+        {
+          "choice": "94",
+          "truth": true,
+          "reason": "9+17×5=94面。"
+        }
+      ],
+      "misconceptionTarget": "把18區當成18次新增。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "答案為第18區單區94面，不是前18區合計。",
+      "difficultyReason": "素養：區號、每區旗數與「比前區多」共同構成離散配置模型。",
+      "literacyContextNecessity": "活動場地情境提供每區單次數量而非累積旗數的必要辨識。",
+      "authoringIntent": "從場地配置描述列式求遠區。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7dc0a6b4c7cb5530816f7ac96908cc60793e4902b55df1b043a9680d979b64bc"
+    },
+    {
+      "questionId": "u14-s007-v011",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "停車場第 k 區有 12+3(k-1) 個車位。第 15 區有幾個車位？",
+      "givenConditions": [
+        "第k區公式"
+      ],
+      "target": "第15區車位數",
+      "choices": [
+        "51",
+        "57",
+        "54",
+        "180"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "k=15時，12+3(15-1)=12+42=54個。",
+      "mainExplanation": "依題意依序處理：代入k=15。；處理括號k-1。，所以唯一正確選項是「54」。",
+      "steps": [
+        "代入k=15。",
+        "處理括號k-1。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "51",
+          "truth": false,
+          "reason": "51是只增加13次。"
+        },
+        {
+          "choice": "57",
+          "truth": false,
+          "reason": "57是增加15次。"
+        },
+        {
+          "choice": "54",
+          "truth": true,
+          "reason": "12+3×14=54。"
+        },
+        {
+          "choice": "180",
+          "truth": false,
+          "reason": "180是12×15，忽略公式。"
+        }
+      ],
+      "misconceptionTarget": "把k直接當增加次數。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "k為正整數；只求單區。",
+      "difficultyReason": "素養：需理解k是區號，公式輸出為該區車位數。",
+      "literacyContextNecessity": "停車區情境讓變數與實際編號、車位單位相連。",
+      "authoringIntent": "解讀已給的情境公式。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c89b98ef198e8bb177110122cb175007ee549b3bda54258c712b39d2d4aecd15"
+    },
+    {
+      "questionId": "u14-s007-v012",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "text": "某學習平台第 n 級徽章需要 n²+n 個圖示。第 20 級需要多少個圖示？",
+      "givenConditions": [
+        "第n級需n²+n個"
+      ],
+      "target": "第20級圖示數",
+      "choices": [
+        "400",
+        "420",
+        "421",
+        "440"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "公式T_n=n(n+1)，T_20=20×21=420個。",
+      "mainExplanation": "依題意依序處理：因式化或直接代入。；附圖示單位。，所以唯一正確選項是「420」。",
+      "steps": [
+        "因式化或直接代入。",
+        "附圖示單位。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "400",
+          "truth": false,
+          "reason": "400漏加n。"
+        },
+        {
+          "choice": "420",
+          "truth": true,
+          "reason": "20²+20=400+20=420。"
+        },
+        {
+          "choice": "421",
+          "truth": false,
+          "reason": "421多加1。"
+        },
+        {
+          "choice": "440",
+          "truth": false,
+          "reason": "440把第二項誤作2n。"
+        }
+      ],
+      "misconceptionTarget": "只看到平方核心而漏掉額外一列n。",
+      "prerequisiteSkillIds": [
+        "arithmetic-mean-term"
+      ],
+      "prerequisiteCheck": "使用前置技能「等差中項」所建立的概念。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
+      "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
+      "ambiguityBoundaryAudit": "n=20正整數；圖示數420個。",
+      "difficultyReason": "素養：徽章等級是輸入，圖示數是由二維結構產生的輸出。",
+      "literacyContextNecessity": "平台徽章情境提供離散等級與整數圖示限制，答案不可近似。",
+      "authoringIntent": "由平方加線性規則求大階段。",
+      "figureDrawingSpecRef": null,
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c9784a196e3f4fccce776a2cd6aa3b9bfe5a26f6821169f5d41bcdde58d948b0"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u14-s007-cr001",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u14-fig-s007-matchstick-row",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "一列相連正方形用火柴排成。第 1 圖用 4 根，第 2 圖用 7 根，第 3 圖用 10 根。請寫出第 n 圖火柴數公式，並求第 50 圖。",
+      "requiredWork": [
+        "說明共用邊造成每次只增加3根。",
+        "寫出通項。",
+        "求第50圖。"
+      ],
+      "fullCreditSolution": [
+        "第一個正方形用4根，此後每增加一個正方形只新增3根。",
+        "T_n=4+3(n-1)=3n+1。",
+        "T_50=3×50+1=151根。"
+      ],
+      "alternativeSolutions": [
+        "也可由數列4、7、10為首項4、公差3，使用等差通項。"
+      ],
+      "reasoningSteps": [
+        "第一個正方形用4根，此後每增加一個正方形只新增3根。",
+        "T_n=4+3(n-1)=3n+1。",
+        "T_50=3×50+1=151根。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確說明共邊、寫T_n=3n+1並求151根。"
+        },
+        {
+          "score": 2,
+          "criteria": "公式與答案正確但共邊說明不足；或公式正確而最後算術錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "只看出每次加3或只答151。"
+        },
+        {
+          "score": 0,
+          "criteria": "使用4n而未扣共邊，且無有效修正。"
+        }
+      ],
+      "partialCreditRules": [
+        "若寫4+3(n-1)未化簡，完全正確。"
+      ],
+      "followThroughPolicy": "若公式正確但50代入算錯，保留2分。",
+      "unitAndNotationRules": "答案單位根；圖不按比例，不可量長度。",
+      "answerOnlyPolicy": "只答151根最多1分。",
+      "commonErrors": [
+        "寫4n重複計共邊。",
+        "從第1圖到第50圖算50次增加。"
+      ],
+      "figureDrawingSpecRef": "units/u14/s007/drawing-specs.jsonl#u14-fig-s007-matchstick-row",
+      "independentReview": {
+        "derivedResult": "T_n=3n+1，T_50=151根。",
+        "ambiguity": "圖形結構與前三圖共同固定規律。",
+        "unitBoundaryCheck": "答案單位根；圖不按比例，不可量長度。",
+        "decision": "pass",
+        "reviewNote": "獨立依題目條件重新推導，得到「T_n=3n+1，T_50=151根。」。評分規準逐分對應本題必要步驟，並已檢查錯誤追隨與只寫答案的處理。"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f4b938092e5558e739078d068c13db4df187e2a0d20b9f39996d4720d17ff0a1"
+    },
+    {
+      "questionId": "u14-s007-cr002",
+      "unitId": "u14",
+      "numericUnitId": 14,
+      "topicId": "u14-sequences",
+      "skillId": "sequence-pattern-word",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "第 n 圖由 n 列小方格組成，第 k 列（由上到下）有 n+k 個方格，其中 k=1,2,…,n。請列式表示總方格數，並求第 6 圖。",
+      "requiredWork": [
+        "把各列方格數寫成n+1到2n。",
+        "以等差級數或拆式求總數。",
+        "求n=6的結果。"
+      ],
+      "fullCreditSolution": [
+        "各列為n+1、n+2、…、2n，共n列。",
+        "總數T_n=n[(n+1)+2n]/2=n(3n+1)/2。",
+        "n=6時T_6=6×19/2=57。"
+      ],
+      "alternativeSolutions": [
+        "也可算n列各有基準n，再加1+2+…+n：T_n=n²+n(n+1)/2=n(3n+1)/2。"
+      ],
+      "reasoningSteps": [
+        "各列為n+1、n+2、…、2n，共n列。",
+        "總數T_n=n[(n+1)+2n]/2=n(3n+1)/2。",
+        "n=6時T_6=6×19/2=57。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確列出n列、得到n(3n+1)/2並算57。"
+        },
+        {
+          "score": 2,
+          "criteria": "第6圖57正確且有合理列式，但一般式未完全化簡；或一般式正確而算術小錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "只列出7+8+…+12但未完成，或只答57。"
+        },
+        {
+          "score": 0,
+          "criteria": "把列數與每列數量錯誤相加且無有效結構。"
+        }
+      ],
+      "partialCreditRules": [
+        "等價未化簡式n²+n(n+1)/2可得滿分。"
+      ],
+      "followThroughPolicy": "若一般式正確但n=6代入錯，保留2分。",
+      "unitAndNotationRules": "方格數為無單位計數；n為正整數。",
+      "answerOnlyPolicy": "只答57最多1分。",
+      "commonErrors": [
+        "把第k列寫成n+k-1。",
+        "把n列數量直接用n×2n忽略變化。"
+      ],
+      "figureDrawingSpecRef": null,
+      "independentReview": {
+        "derivedResult": "T_n=n(3n+1)/2，T_6=57。",
+        "ambiguity": "列規則已完整給定，無圖形量測歧義。",
+        "unitBoundaryCheck": "方格數為無單位計數；n為正整數。",
+        "decision": "pass",
+        "reviewNote": "獨立依題目條件重新推導，得到「T_n=n(3n+1)/2，T_6=57。」。評分規準逐分對應本題必要步驟，並已檢查錯誤追隨與只寫答案的處理。"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "00de2afc3f904da6f30c6b0b053f7a1dc9d4a2deb686a59f48d35dc7a8913241"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u14-fig-s007-matchstick-row",
+      "unitId": "u14",
+      "skillId": "sequence-pattern-word",
+      "svgPath": "figures/u14/u14-fig-s007-matchstick-row.svg",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "canvas": "720×240",
+      "viewBox": "0 0 720 240",
+      "altText": "左側一個正方形，中間兩個共邊正方形，右側三個共邊正方形；標示第1圖、第2圖、第3圖。",
+      "drawingSpec": {
+        "canvas": "720×240",
+        "viewBox": "0 0 720 240",
+        "coordinates": "正方形邊長70；三組起點x約70、260、480，y=80。",
+        "visibleLines": "每根火柴以黑色5px圓端線表示，共用邊只畫一次。",
+        "hiddenLines": "無。",
+        "labels": "各圖下方標示圖號。",
+        "ticksUnitsArrows": "無刻度、單位、箭頭。",
+        "scale": "各正方形同尺寸，但僅供結構計數。",
+        "warning": "不得把每個正方形獨立算4根而重複共邊。",
+        "mobile": "線寬與22px標籤在縮放後可辨。",
+        "answerLeakage": "只呈現前3圖，不寫3n+1或第7、第50圖答案。"
+      },
+      "svgAssertions": [
+        "第1圖",
+        "第3圖",
+        "stroke-width=\"5\"",
+        "M480 80H690"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "mobileReadability": "pass",
+        "answerLeakage": "pass",
+        "geometryTokenCheck": "pass",
+        "manualVisualInspection": "pass",
+        "reviewNote": "u14-fig-s007-matchstick-row 已渲染為PNG並人工核對標籤、座標、可數元素、手機縮放可讀性與答案洩漏；所有可見元素均落在畫布安全邊界內。"
+      },
+      "contentSha256": "a026f5ca7caf5b0105a551337e6ead640cf3efe7a59935fa7a3fdf12639d586a"
+    }
+  ],
+  "sourceBatch": "015-u14-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/015-u14-complete/units/u14/s007"
+}

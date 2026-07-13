@@ -1,0 +1,1112 @@
+{
+  "slot": "s004",
+  "skillId": "system-substitution-method",
+  "topicId": "u04-system-methods",
+  "title": "代入消去法：先把一個未知數換成另一個式子",
+  "lecture": {
+    "lectureId": "u04-s004-lecture-r1",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-methods",
+    "skillId": "system-substitution-method",
+    "lockedSkillTitle": "代入消去法",
+    "title": "代入消去法：先把一個未知數換成另一個式子",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "exactSkillIdentity": {
+      "unitTitle": "二元一次聯立方程式",
+      "skillTitle": "代入消去法",
+      "scope": "先由一式表示一個未知數，再代入另一式消去。"
+    },
+    "prerequisiteBridge": "先備技能 system-solution-meaning 已建立必要基礎；本節將其用於「先由一式表示一個未知數，再代入另一式消去。」",
+    "learningGoals": [
+      "能選擇容易孤立未知數的方程式。",
+      "能正確代入並使用括號。",
+      "能解出第一個未知數後回代。",
+      "能將結果代回原兩式檢驗。"
+    ],
+    "vocabulary": [
+      {
+        "term": "孤立未知數",
+        "definition": "把一個未知數單獨留在等號一側。"
+      },
+      {
+        "term": "代入消去",
+        "definition": "用等值式取代未知數，使方程式只剩一元。"
+      },
+      {
+        "term": "回代",
+        "definition": "把已求得的值代回較簡單的原式。"
+      },
+      {
+        "term": "等值變形",
+        "definition": "對等式兩邊做相同運算，保持解不變。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "y=…",
+        "meaning": "表示 y 可由另一個式子取代。"
+      },
+      {
+        "symbol": "x=…",
+        "meaning": "亦可選擇孤立 x。"
+      }
+    ],
+    "conceptDevelopment": [
+      "代入法不是把一個未知數刪掉，而是用與它相等的式子完整取代。",
+      "若代入的式子有兩項以上，必須加括號再乘係數。",
+      "選擇係數為 1 或 -1 的未知數通常最省步驟。"
+    ],
+    "definitions": [
+      {
+        "name": "代入消去法",
+        "statement": "先由一式表示一個未知數，再代入另一式，將二元問題化為一元。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "若 y=f(x)，則另一式中的每個 y 都以 f(x) 取代",
+        "conditions": [
+          "替換要完整且保持括號。"
+        ],
+        "meaning": "將未知數 y 消去。"
+      }
+    ],
+    "invalidUseCases": [
+      "不能只把代入式中的第一項乘上外部係數。",
+      "求出 x 後仍需回代求 y。",
+      "回代最好使用原本較簡單的式子，不可改寫成不等值式。"
+    ],
+    "stepByStepMethod": [
+      {
+        "step": 1,
+        "instruction": "選式並孤立未知數",
+        "check": "優先找係數 ±1。"
+      },
+      {
+        "step": 2,
+        "instruction": "完整代入另一式",
+        "check": "多項式要加括號。"
+      },
+      {
+        "step": 3,
+        "instruction": "解一元一次方程式",
+        "check": "整理同類項。"
+      },
+      {
+        "step": 4,
+        "instruction": "回代求另一未知數",
+        "check": "選最簡單的式子。"
+      },
+      {
+        "step": 5,
+        "instruction": "代回兩個原式",
+        "check": "確認同時成立。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "解 y=x+1，2x+y=7。",
+        "solutionSteps": [
+          "代入得 2x+(x+1)=7。",
+          "3x=6，x=2。",
+          "y=3。"
+        ],
+        "answer": "(x,y)=(2,3)。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "解 x=5-2y，3x+y=8。",
+        "solutionSteps": [
+          "代入得 3(5-2y)+y=8。",
+          "15-5y=8，y=7/5。",
+          "x=11/5。"
+        ],
+        "answer": "(11/5,7/5)。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "解 x-y=4，x+2y=1。",
+        "solutionSteps": [
+          "由第一式 x=y+4。",
+          "代入得 y+4+2y=1。",
+          "y=-1，x=3。"
+        ],
+        "answer": "(3,-1)。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "檢查錯誤：2(x-3) 被寫成 2x-3。",
+        "solutionSteps": [
+          "分配律要求 2 同時乘 x 與 -3。",
+          "正確是 2x-6。"
+        ],
+        "answer": "錯誤在括號未完整展開。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "代入後漏括號",
+        "correction": "外部係數必須乘括號內每一項。"
+      },
+      {
+        "mistake": "只求一個未知數",
+        "correction": "聯立解要給出 x、y。"
+      },
+      {
+        "mistake": "孤立時移項符號未變",
+        "correction": "可用等式兩邊同加減避免口訣錯。"
+      },
+      {
+        "mistake": "回代到自己剛算錯的式子",
+        "correction": "應回到原式並再檢驗。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "prompt": "y=2x-1 適合代入哪裡？",
+        "answer": "代入另一式所有 y 的位置。"
+      },
+      {
+        "prompt": "3(x+2) 展開為何？",
+        "answer": "3x+6。"
+      },
+      {
+        "prompt": "求出 x 後是否完成？",
+        "answer": "否，還要回代求 y。"
+      },
+      {
+        "prompt": "最後怎麼檢查？",
+        "answer": "代回兩個原式。"
+      }
+    ],
+    "summary": [
+      "先孤立，再完整代入。",
+      "括號與分配律是關鍵。",
+      "求出一個未知數後要回代並雙式檢驗。"
+    ],
+    "connections": {
+      "previous": "先備技能 system-solution-meaning 已建立必要基礎；本節將其用於「先由一式表示一個未知數，再代入另一式消去。」",
+      "next": "下一技能「加減消去法」會延伸目前能力。"
+    },
+    "figureReferences": [],
+    "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+    "lectureReview": {
+      "decision": "pass",
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "capBoundary": "pass",
+      "skillSpecificEvidence": "逐步重算四個示例，分數解與負數解均代回成立；特別加入 2(x-3) 的錯誤診斷，避免只背流程。",
+      "reviewNote": "逐步重算四個示例，分數解與負數解均代回成立；特別加入 2(x-3) 的錯誤診斷，避免只背流程。",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "7e24a9ce9d16e18d8f38ee24533eb74d76906e15b9df2d2ba87066179ef68f60"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u04-s004-v001",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "解聯立方程式 y=x+1、2x+y=7，x 為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "直接代入求第一個未知數",
+      "choices": [
+        "1",
+        "3",
+        "6",
+        "2"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "代入 y=x+1：2x+(x+1)=7，3x=6，x=2。",
+      "explanation": "先把 y 的等值式完整代入第二式。",
+      "steps": [
+        "代入 y=x+1。",
+        "合併得 3x+1=7。",
+        "解 x=2。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "只由 y=x+1 猜值。"
+        },
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "把 2x+x 合併成 2x。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "解 3x=6 後未除 3。"
+        },
+        {
+          "choice": "2",
+          "truth": true,
+          "reason": "代入後一元式解得 x=2。"
+        }
+      ],
+      "misconceptionTarget": "代入後合併同類項錯誤",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「直接代入求第一個未知數」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "係數 1 的直接代入。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "1d067cf0abd182f2cefdea62df214e649c665d2474caee200cb47255ebad961f"
+    },
+    {
+      "questionId": "u04-s004-v002",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "在聯立方程式 y=x+1、2x+y=7 中，已求得 x=2，則 y 為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "回代求第二個未知數",
+      "choices": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "由 y=x+1，代入 x=2 得 y=3。",
+      "explanation": "回代求另一未知數。",
+      "steps": [
+        "選較簡單的 y=x+1。",
+        "代入 x=2。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3",
+          "truth": true,
+          "reason": "2+1=3。"
+        },
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "把 y=x-1。"
+        },
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "直接抄 x。"
+        },
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "把 1 當成乘數。"
+        }
+      ],
+      "misconceptionTarget": "求出 x 就停止或回代錯式",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「回代求第二個未知數」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "單一步驟回代。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "4708c51a9f1b02b7276706ce4fcfa820607b684d195ba4877768e5c2fea8812f"
+    },
+    {
+      "questionId": "u04-s004-v003",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "代入 3(x-2) 時，正確展開為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "正確展開代入括號",
+      "choices": [
+        "3x-2",
+        "3x-6",
+        "x-6",
+        "3x+6"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "分配律：3×x+3×(-2)=3x-6。",
+      "explanation": "代入式有兩項時，外部係數要乘每一項。",
+      "steps": [
+        "保留括號。",
+        "使用分配律。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3x-2",
+          "truth": false,
+          "reason": "只把 3 乘 x。"
+        },
+        {
+          "choice": "3x-6",
+          "truth": true,
+          "reason": "3 同時乘 x 與 -2。"
+        },
+        {
+          "choice": "x-6",
+          "truth": false,
+          "reason": "只把 3 乘常數。"
+        },
+        {
+          "choice": "3x+6",
+          "truth": false,
+          "reason": "負號錯誤。"
+        }
+      ],
+      "misconceptionTarget": "漏乘括號內常數",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「正確展開代入括號」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "代入法最基本的括號技能。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "385d77a8de462b5a4e05322528784a8b97b2d521212421b17c6aad11221e135a"
+    },
+    {
+      "questionId": "u04-s004-v004",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "學生解聯立方程式 x=y+4、x+2y=1，先把 x=y+4 代入第二式。下列哪一個代入後的方程式正確？",
+      "givenConditions": [
+        "第一式已表示 x",
+        "第二式為 x+2y=1"
+      ],
+      "target": "判斷正確代入式",
+      "choices": [
+        "y+4+2=1",
+        "x+2(x−4)=1",
+        "(y+4)+2y=1",
+        "(y+4)+2y=0"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "用第一式的 y+4 完整取代第二式中的 x，得到 (y+4)+2y=1。",
+      "explanation": "代入時只替換 x，第二式的 2y 與右邊 1 都保持不變。",
+      "steps": [
+        "以第一式的 y+4 取代第二式中的 x。",
+        "保留第二式的 2y 與右邊 1。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "y+4+2=1",
+          "truth": false,
+          "reason": "遺漏了 2y 中的 y。"
+        },
+        {
+          "choice": "x+2(x−4)=1",
+          "truth": false,
+          "reason": "沒有依題意直接以 y+4 取代 x。"
+        },
+        {
+          "choice": "(y+4)+2y=1",
+          "truth": true,
+          "reason": "完整替換 x 且其餘項不變。"
+        },
+        {
+          "choice": "(y+4)+2y=0",
+          "truth": false,
+          "reason": "擅自改變等號右邊。"
+        }
+      ],
+      "misconceptionTarget": "代入時漏括號或改動未被替換的項。",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "代入方向已指定，只有一式與原聯立方程式等價。",
+      "boundaryAudit": "代入方向已指定，只有一式與原聯立方程式等價。",
+      "difficultyReason": "標準：辨認替換對象並保持等式其餘部分不變。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "55b374e766a6d2f0d71e1c03d52ea074aa1e94c337ba0f6b1fecf320f48dda9f"
+    },
+    {
+      "questionId": "u04-s004-v005",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "解 2x-y=5、y=3x-7，x 為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "處理負係數前的代入括號",
+      "choices": [
+        "2",
+        "6",
+        "-2",
+        "12"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "2x-(3x-7)=5，2x-3x+7=5，-x=-2，x=2。",
+      "explanation": "y 前有負號，代入後必須整體加括號。",
+      "steps": [
+        "以 (3x-7) 取代 y。",
+        "展開前面的負號。",
+        "解 -x=-2。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2",
+          "truth": true,
+          "reason": "代入後 -x+7=5，故 x=2。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "把 -y 代成 +(3x-7)。"
+        },
+        {
+          "choice": "-2",
+          "truth": false,
+          "reason": "最後符號錯。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "把常數相加後未解係數。"
+        }
+      ],
+      "misconceptionTarget": "把 -y 只作用在 3x",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「處理負係數前的代入括號」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "需正確分配負號。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "8b447b6c5ad1adb1cd47f36b0401c4f8c2fadbcaa272dd7c1df4c4dce6af4d72"
+    },
+    {
+      "questionId": "u04-s004-v006",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "解 x=5-2y、3x+y=8，y 為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "得到分數解的代入法",
+      "choices": [
+        "5/7",
+        "-7/5",
+        "7/5",
+        "7"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "3(5-2y)+y=8，15-5y=8，-5y=-7，y=7/5。",
+      "explanation": "分數解仍是合法聯立解。",
+      "steps": [
+        "代入並展開。",
+        "合併 -6y+y。",
+        "解 y=7/5。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5/7",
+          "truth": false,
+          "reason": "顛倒分子分母。"
+        },
+        {
+          "choice": "-7/5",
+          "truth": false,
+          "reason": "移項符號錯。"
+        },
+        {
+          "choice": "7/5",
+          "truth": true,
+          "reason": "代入 y=7/5 可使一元式成立。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "漏除係數 5。"
+        }
+      ],
+      "misconceptionTarget": "認為答案必須整數",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「得到分數解的代入法」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "需要完整係數整理與分數。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "98284bb7255e1a7370956e8f72ff8d72bac76345fbb06681fbf58452d1c6cd93"
+    },
+    {
+      "questionId": "u04-s004-v007",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "解 y=2x-3、4x-2y=6，解的型態為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "用代入法辨認相依方程式",
+      "choices": [
+        "唯一解 (0,-3)",
+        "無解",
+        "唯一解 (3,3)",
+        "無限多解"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "代入得 4x-2(2x-3)=6，即 4x-4x+6=6，得到 0=0。",
+      "explanation": "第二式等價於 y=2x-3，因此所有第一式解都共同成立。",
+      "steps": [
+        "完整代入。",
+        "化簡為 0=0。",
+        "判斷無限多解。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "唯一解 (0,-3)",
+          "truth": false,
+          "reason": "只任取一組就誤認唯一。"
+        },
+        {
+          "choice": "無解",
+          "truth": false,
+          "reason": "代入後不是矛盾。"
+        },
+        {
+          "choice": "唯一解 (3,3)",
+          "truth": false,
+          "reason": "此組雖成立但不是唯一。"
+        },
+        {
+          "choice": "無限多解",
+          "truth": true,
+          "reason": "代入後得到恆等式 0=0。"
+        }
+      ],
+      "misconceptionTarget": "看到某一組解就認為唯一",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「用代入法辨認相依方程式」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "融合代入與特殊解型。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "88803f646e182cf714fa3cb08604cb345a673334959adea51bfa53e7243e53e3"
+    },
+    {
+      "questionId": "u04-s004-v008",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "聯立 x=ay+1、2x-4y=2 在 a 為何值時有無限多解？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "判斷參數使兩式等價",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "-2"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "代入得 2(ay+1)-4y=2，即 (2a-4)y=0。要對所有 y 都成立，需 2a-4=0，所以 a=2。",
+      "explanation": "a=2 時第二式正是第一式的 2 倍，代入成 0=0。",
+      "steps": [
+        "代入 x=ay+1。",
+        "整理 (2a-4)y=0。",
+        "令係數為 0。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "代入得 -2y=0，只得 y=0。"
+        },
+        {
+          "choice": "2",
+          "truth": true,
+          "reason": "a=2 時兩方程式完全相依。"
+        },
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "代入得 2y=0，只得 y=0。"
+        },
+        {
+          "choice": "-2",
+          "truth": false,
+          "reason": "代入得 -8y=0，只得 y=0。"
+        }
+      ],
+      "misconceptionTarget": "只找某個 y=0 而忽略無限多解要求",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「判斷參數使兩式等價」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "需區分「有一解」與「對所有第一式解成立」。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "cbd1d002503a7fc8269e666ef2ad2d13910a32ffeb886fd4af62a456d29c31d1"
+    },
+    {
+      "questionId": "u04-s004-v009",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "解 y=(x+4)/3、2x+y=8，x 為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "處理分式表示的未知數",
+      "choices": [
+        "4/7",
+        "12/7",
+        "20/7",
+        "7/20"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "代入得 2x+(x+4)/3=8；乘 3 得 6x+x+4=24，7x=20，x=20/7。",
+      "explanation": "含分式的代入可先整式乘公分母。",
+      "steps": [
+        "代入分式。",
+        "兩邊乘 3。",
+        "解 7x=20。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4/7",
+          "truth": false,
+          "reason": "漏掉 2x 的貢獻。"
+        },
+        {
+          "choice": "12/7",
+          "truth": false,
+          "reason": "常數移項錯。"
+        },
+        {
+          "choice": "20/7",
+          "truth": true,
+          "reason": "一元式整理後唯一得到 20/7。"
+        },
+        {
+          "choice": "7/20",
+          "truth": false,
+          "reason": "顛倒分數。"
+        }
+      ],
+      "misconceptionTarget": "只乘分母內一部分",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「處理分式表示的未知數」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "需結合代入與去分母。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "e22b1abada1abef9cc554cced0f97255b3daae723289931bdced0bb589cf8716"
+    },
+    {
+      "questionId": "u04-s004-v010",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "方案 A 的費用 y=50x+100，某次帳單又滿足 y=400。使用次數 x 是多少？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "由線性費用模型反求使用量",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "將 y=400 代入 400=50x+100，50x=300，x=6。",
+      "explanation": "固定費與變動費模型可用代入法求使用量。",
+      "steps": [
+        "以 400 取代 y。",
+        "扣除固定費 100。",
+        "除以每次 50。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "只計 400÷50。"
+        },
+        {
+          "choice": "6",
+          "truth": true,
+          "reason": "50×6+100=400。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "把固定費加到右邊。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "忽略固定費後直接除。"
+        }
+      ],
+      "misconceptionTarget": "忽略固定費",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "元=元/次×次+元，單位一致。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「由線性費用模型反求使用量」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "方案文字決定代入式中的固定項。",
+      "literacyContextNecessity": "固定費 100 與每次 50 都是求使用次數的必要資料。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "80092a8077d1c3619dfc90db71ee349f320ffb4f5b03794e1f7a6a385d7c3a86"
+    },
+    {
+      "questionId": "u04-s004-v011",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "感測器轉換式為 y=2x-5，警示規則為 x+y=16。警示發生時 x 為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "整合兩條裝置規則",
+      "choices": [
+        "5",
+        "11",
+        "21/2",
+        "7"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "代入 y=2x-5：x+2x-5=16，3x=21，x=7。",
+      "explanation": "兩條裝置規則可藉由代入找共同輸入。",
+      "steps": [
+        "將轉換式代入警示式。",
+        "解 3x-5=16。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "直接令 y=5。"
+        },
+        {
+          "choice": "11",
+          "truth": false,
+          "reason": "把 -5 移項方向錯。"
+        },
+        {
+          "choice": "21/2",
+          "truth": false,
+          "reason": "未合併 x 項。"
+        },
+        {
+          "choice": "7",
+          "truth": true,
+          "reason": "x=7 時 y=9，且 7+9=16。"
+        }
+      ],
+      "misconceptionTarget": "把規則分開看而未求共同值",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「整合兩條裝置規則」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "兩條規則都對 x 有限制，情境必要。",
+      "literacyContextNecessity": "轉換式與警示總和規則共同決定警示輸入。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "46c289e005184bc5a15d0b82d88e7aa43bac8d2569288129d3a4b2b35fb57e8d"
+    },
+    {
+      "questionId": "u04-s004-v012",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "配方紀錄寫「B 用量 y 比 A 用量 x 多 2 克」，且總用量為 14 克。用代入法解得 A 用量多少？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "由配方差額與總量求用量",
+      "choices": [
+        "6 克",
+        "8 克",
+        "7 克",
+        "4 克"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "y=x+2，x+y=14；代入得 x+x+2=14，2x=12，x=6。",
+      "explanation": "差額關係先表示 y，再代入總量式。",
+      "steps": [
+        "把「多 2」寫成 y=x+2。",
+        "代入總量式。",
+        "求 x=6。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6 克",
+          "truth": true,
+          "reason": "A 6 克、B 8 克，合計 14 克且相差 2 克。"
+        },
+        {
+          "choice": "8 克",
+          "truth": false,
+          "reason": "這是 B 用量。"
+        },
+        {
+          "choice": "7 克",
+          "truth": false,
+          "reason": "直接平均而忽略差 2。"
+        },
+        {
+          "choice": "4 克",
+          "truth": false,
+          "reason": "把差額重複扣除。"
+        }
+      ],
+      "misconceptionTarget": "把較多與較少對調",
+      "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "兩未知數與總量均為克。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「由配方差額與總量求用量」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "配方中的差 2 與總量 14 是兩個必要條件。",
+      "literacyContextNecessity": "若移除差額或總量，A 用量無法唯一確定。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "7fafa3d7f790d9273d6c5cadaf0391b60e13d66568ef8d23abccd5052d86d5d4"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u04-s004-cr001",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "prompt": "用代入消去法解 y=2x-1、3x+y=14，並代回兩式檢驗。",
+      "requiredWork": [
+        "必須展示代入、回代與雙式檢驗。"
+      ],
+      "standardSolution": [
+        "代入：3x+(2x-1)=14。",
+        "5x=15，所以 x=3。",
+        "y=2×3-1=5。",
+        "檢驗：5=6-1；3×3+5=14。"
+      ],
+      "alternativeMethods": [
+        "可由第二式寫 y=14-3x，再與 y=2x-1 相等。"
+      ],
+      "reasoningSteps": [
+        "選擇已孤立的 y。",
+        "代入解 x。",
+        "回代求 y。",
+        "雙式檢驗。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整得到 (3,5) 並驗證。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確且主要步驟完整，但漏一式檢驗。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確完成代入並求出 x，回代錯誤。"
+        },
+        {
+          "score": 0,
+          "criteria": "沒有形成一元式或答案不滿足原式。"
+        }
+      ],
+      "partialCreditRules": [
+        "代入與求 x 一分，求 y 一分，驗證一分。"
+      ],
+      "followThroughPolicy": "若 x 因算術錯但回代與檢驗依自身結果一致，可保留後續方法分；錯誤檢驗不得判定通過。",
+      "unitNotationRules": "本題無單位；答案寫 (x,y)=(3,5)。",
+      "answerOnlyPolicy": "只答 (3,5) 最高 1 分。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "derivedResult": "(3,5)。",
+        "ambiguityAudit": "題意給定量、變數與所求明確；沒有第二種會改變答案的合理解釋。",
+        "boundaryAudit": "只使用本技能與已鎖定先備技能。",
+        "decision": "pass",
+        "reviewNote": "獨立重算 5x-1=14，x=3，回代 y=5，兩式均成立。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "0286a8cd604b35ab37e4edaa0d9fa68e820bc173b7b3d8a778d94f547462d142"
+    },
+    {
+      "questionId": "u04-s004-cr002",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-methods",
+      "skillId": "system-substitution-method",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "prompt": "用代入法解 x=5-2y、3x+y=8。另指出把 3(5-2y) 寫成 15-2y 的錯誤。",
+      "requiredWork": [
+        "給分數解。",
+        "說明分配律錯誤。"
+      ],
+      "standardSolution": [
+        "3(5-2y)+y=8。",
+        "15-6y+y=8，-5y=-7，y=7/5。",
+        "x=5-14/5=11/5。",
+        "錯誤寫法只把 3 乘到 5，正確應同時乘 -2y。"
+      ],
+      "alternativeMethods": [
+        "可先由 x=5-2y 代入；或由第二式 y=8-3x 再代入第一式。"
+      ],
+      "reasoningSteps": [
+        "完整分配括號。",
+        "解分數。",
+        "回代。",
+        "診斷錯誤。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "(11/5,7/5) 與錯誤診斷完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但診斷不完整，或一處化簡小錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確寫出 15-6y+y=8，後續有算術錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "採用 15-2y 且未識別錯誤。"
+        }
+      ],
+      "partialCreditRules": [
+        "解題兩分，錯誤分析一分。"
+      ],
+      "followThroughPolicy": "若分配律正確但分數約分錯誤，後續依結果回代可給 2 分。",
+      "unitNotationRules": "分數可寫 11/5、7/5；不可用未經說明的近似小數替代。",
+      "answerOnlyPolicy": "只答數對最高 1 分。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "derivedResult": "x=11/5、y=7/5。",
+        "ambiguityAudit": "題意給定量、變數與所求明確；沒有第二種會改變答案的合理解釋。",
+        "boundaryAudit": "只使用本技能與已鎖定先備技能。",
+        "decision": "pass",
+        "reviewNote": "重新代入兩原式分別得到 11/5=5-14/5 與 33/5+7/5=8。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "22f5e1ba915a37a26ae7464205470922052639318551e2614d6912bb613da322"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "005-u04-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/005-u04-complete/units/u04/s004"
+}

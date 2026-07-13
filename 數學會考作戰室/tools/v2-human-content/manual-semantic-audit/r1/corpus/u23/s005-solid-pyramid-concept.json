@@ -1,0 +1,1351 @@
+{
+  "slot": "s005",
+  "skillId": "solid-pyramid-concept",
+  "topicId": "u23-basics",
+  "title": "角錐概念：從多邊形底面會聚到一個頂點",
+  "lecture": {
+    "lectureId": "u23-s005-lecture-r1",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-basics",
+    "skillId": "solid-pyramid-concept",
+    "title": "角錐概念：從多邊形底面會聚到一個頂點",
+    "lockedSkillTitle": "角錐概念",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能依一個多邊形底面與共同頂點辨認角錐。",
+      "能由n角錐推得面數、稜數與頂點數。",
+      "能分清側稜、斜高與垂直高。",
+      "能比較角柱與角錐的結構差異。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "solid-prism-concept",
+        "requiredLevel": "能以底面邊數n計數角柱的面、稜與頂點。",
+        "bridge": "角柱有兩個底面；角錐只保留一個底面，所有側面在頂點會聚。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "角錐",
+        "definition": "以一個多邊形為底面，底面各頂點都連到同一個不在底面上的頂點所形成的立體。"
+      },
+      {
+        "term": "頂點",
+        "definition": "角錐所有三角形側面共同會聚的點。"
+      },
+      {
+        "term": "側稜",
+        "definition": "角錐頂點連到底面頂點的線段。"
+      },
+      {
+        "term": "斜高",
+        "definition": "正角錐某一側面內，從頂點垂直於該側面底邊的線段。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "n",
+        "meaning": "底面多邊形邊數，n≥3。"
+      },
+      {
+        "symbol": "h",
+        "meaning": "角錐頂點到底面所在平面的垂直距離。"
+      }
+    ],
+    "conceptNarrative": [
+      "角錐只有一個多邊形底面，其他面都是三角形，且所有三角形側面共用同一個頂點。",
+      "n角錐底面有n個頂點，再加一個錐頂，共n+1個頂點；底面有n條稜，側稜也有n條，共2n條稜。",
+      "面數由一個底面與n個三角形側面組成，共n+1個面。這三個計數可與角柱公式對照。",
+      "角錐的高必須垂直於底面平面。側稜是頂點到底面頂點；斜高在側面內，三者通常不同。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "n角錐",
+        "statement": "底面為n邊形，並由一個共同頂點與底面各邊形成n個三角形側面。"
+      },
+      {
+        "name": "角錐的高",
+        "statement": "角錐頂點到底面所在平面的垂線段長。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "V=n+1",
+        "conditions": [
+          "n角錐"
+        ],
+        "meaning": "n個底面頂點加1個錐頂。"
+      },
+      {
+        "formula": "E=2n",
+        "conditions": [
+          "n角錐"
+        ],
+        "meaning": "n條底面稜加n條側稜。"
+      },
+      {
+        "formula": "F=n+1",
+        "conditions": [
+          "n角錐"
+        ],
+        "meaning": "n個三角形側面加1個底面。"
+      },
+      {
+        "formula": "V-E+F=2",
+        "conditions": [
+          "凸角錐"
+        ],
+        "meaning": "可驗算計數。"
+      }
+    ],
+    "nonApplicableCases": [
+      "圓錐底面是圓，不套n角錐計數公式。",
+      "一般角錐頂點的垂足不一定在底面中心。",
+      "側稜長不等於垂直高。",
+      "斜高只在正角錐或指定側面時有清楚對應，不能任意當高。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "找唯一多邊形底面。",
+        "check": "其他面是否全為三角形？"
+      },
+      {
+        "step": 2,
+        "instruction": "確認所有側面是否共用同一頂點。",
+        "check": "若沒有共同頂點，就不是角錐。"
+      },
+      {
+        "step": 3,
+        "instruction": "令底面邊數為n。",
+        "check": "名稱是否為n角錐？"
+      },
+      {
+        "step": 4,
+        "instruction": "分類底面稜、側稜與面。",
+        "check": "是否得到V=n+1、E=2n、F=n+1？"
+      },
+      {
+        "step": 5,
+        "instruction": "辨認高度線段。",
+        "check": "線段是否垂直底面平面？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "四角錐有多少頂點、稜與面？",
+        "solutionSteps": [
+          "n=4。",
+          "V=5、E=8、F=5。"
+        ],
+        "answer": "5個頂點、8條稜、5個面。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "一個角錐有12條稜，底面為幾邊形？",
+        "solutionSteps": [
+          "2n=12。",
+          "n=6。"
+        ],
+        "answer": "六邊形，為六角錐。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "五角錐有幾個三角形側面？",
+        "solutionSteps": [
+          "每一條底邊對應一個三角形側面。"
+        ],
+        "answer": "5個。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "正四角錐側稜長13公分，能否直接當作高？",
+        "solutionSteps": [
+          "側稜斜向連到底面頂點。",
+          "高是垂直底面平面的線段。"
+        ],
+        "answer": "不能。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把角錐說成有兩個底面。",
+        "why": "混淆角柱。",
+        "correction": "角錐只有一個多邊形底面。"
+      },
+      {
+        "mistake": "側面數算成n+1。",
+        "why": "把底面也算成側面。",
+        "correction": "側面n個，總面才是n+1。"
+      },
+      {
+        "mistake": "稜數寫成3n。",
+        "why": "套用了角柱公式。",
+        "correction": "角錐只有一組底面稜與一組側稜，共2n。"
+      },
+      {
+        "mistake": "頂點數寫成2n。",
+        "why": "想像有兩個底面。",
+        "correction": "底面n點加錐頂1點。"
+      },
+      {
+        "mistake": "把斜高與垂直高視為同一線段。",
+        "why": "忽略兩者所在平面不同。",
+        "correction": "高垂直底面；斜高位於側面。"
+      },
+      {
+        "mistake": "任何三角形側面組合都稱角錐。",
+        "why": "未確認側面有同一共同頂點。",
+        "correction": "所有側面必在同一錐頂會聚。"
+      }
+    ],
+    "selfCheck": [
+      "我是否找到唯一底面與共同錐頂？",
+      "n是否為底面邊數？",
+      "稜數是否只算底面稜與側稜？",
+      "總面數是否包含底面？",
+      "所稱高度是否垂直底面？"
+    ],
+    "summary": [
+      "n角錐有n個三角形側面。",
+      "頂點與面數皆為n+1，稜數為2n。",
+      "角錐只有一個底面。",
+      "高、側稜與斜高不能混用。"
+    ],
+    "connections": {
+      "previous": "以角柱的n邊形計數為基礎，比較兩底面與單底面會聚結構。",
+      "next": [
+        "圓柱與圓錐會把底面改為圓。",
+        "錐體體積將使用垂直高而非側稜。"
+      ]
+    },
+    "figureReferences": [
+      "u23-s005-fig001"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u23-s005-v001",
+        "u23-s005-v002",
+        "u23-s005-v003",
+        "u23-s005-v004",
+        "u23-s005-v005",
+        "u23-s005-v006",
+        "u23-s005-v007",
+        "u23-s005-v008",
+        "u23-s005-v009",
+        "u23-s005-v010",
+        "u23-s005-v011",
+        "u23-s005-v012"
+      ],
+      "constructedResponseIds": [
+        "u23-s005-cr001",
+        "u23-s005-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "以四角錐和12稜反推逐項驗算公式，並明確檢查高、斜高與側稜的定義沒有互換；計數通過歐拉關係。；並逐面確認底面與側面數量。",
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "0c6e74caaad314e38a0805c1a9af8b1cdb8e39daa2d26206f98b36b34b266f62"
+  },
+  "mcQuestions": [
+    {
+      "prompt": "四角錐有幾個底面？",
+      "text": "四角錐有幾個底面？",
+      "choices": [
+        "1個",
+        "2個",
+        "4個",
+        "5個"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：套用角錐定義。所得結果是「1個」。",
+      "explanation": "角錐只有一個多邊形底面，所以四角錐有1個底面。",
+      "steps": [
+        "套用角錐定義"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1個",
+          "truth": true,
+          "reason": "依獨立計算「套用角錐定義」，此選項符合所求「求底面數」。"
+        },
+        {
+          "choice": "2個",
+          "truth": false,
+          "reason": "角柱才有兩底面。"
+        },
+        {
+          "choice": "4個",
+          "truth": false,
+          "reason": "4是側面數。"
+        },
+        {
+          "choice": "5個",
+          "truth": false,
+          "reason": "5是總面數。"
+        }
+      ],
+      "misconceptionTarget": "把角錐與角柱底面數混淆。",
+      "authoringIntent": "辨認角錐底面數。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "立體為四角錐"
+      ],
+      "target": "求底面數",
+      "difficultyReason": "定義直接判讀。 本題以「辨認角錐底面數。」作為該難度的具體判準。",
+      "prerequisiteCheck": "知道角錐。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位為個。 所求「求底面數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "封閉角錐仍只有一個多邊形底面。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "f6b79cce1c931ade8ad73a1e30ee6d71f008a47d9cfd7c6578fefb7556e2000c"
+    },
+    {
+      "prompt": "三角錐共有多少個頂點？",
+      "text": "三角錐共有多少個頂點？",
+      "choices": [
+        "3個",
+        "6個",
+        "4個",
+        "5個"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：n=3；V=n+1=4。所得結果是「4個」。",
+      "explanation": "三角形底面有3個頂點，再加1個錐頂，共4個。",
+      "steps": [
+        "n=3",
+        "V=n+1=4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3個",
+          "truth": false,
+          "reason": "只數底面。"
+        },
+        {
+          "choice": "6個",
+          "truth": false,
+          "reason": "是稜數。"
+        },
+        {
+          "choice": "4個",
+          "truth": true,
+          "reason": "依獨立計算「V=n+1=4」，此選項符合所求「求頂點數」。"
+        },
+        {
+          "choice": "5個",
+          "truth": false,
+          "reason": "無此值。"
+        }
+      ],
+      "misconceptionTarget": "漏掉共同錐頂。 必須依「計算三角錐頂點數。」的關係重新核對。",
+      "authoringIntent": "計算三角錐頂點數。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "n=3"
+      ],
+      "target": "求頂點數",
+      "difficultyReason": "單一步驟。 本題以「計算三角錐頂點數。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會加1。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位為個。 所求「求頂點數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "三角錐為非退化立體。 題幹已完整限制「求頂點數」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "04b80fbd268e095acb38158476b89723f92c183170f98e6ab5519439abc4ae6a"
+    },
+    {
+      "prompt": "五角錐有多少個三角形側面？",
+      "text": "五角錐有多少個三角形側面？",
+      "choices": [
+        "1個",
+        "5個",
+        "6個",
+        "10個"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，從五角錐的底面五邊形出發：每一條底邊和唯一錐頂形成一個三角形側面，因此共有5個三角形側面。",
+      "explanation": "底面五邊形每一條邊與錐頂形成一個三角形側面，所以有5個。",
+      "steps": [
+        "底面邊數5",
+        "側面數等於n"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1個",
+          "truth": false,
+          "reason": "1是底面數。"
+        },
+        {
+          "choice": "5個",
+          "truth": true,
+          "reason": "依獨立計算「側面數等於n」，此選項符合所求「求三角形側面數」。"
+        },
+        {
+          "choice": "6個",
+          "truth": false,
+          "reason": "6是總面數。"
+        },
+        {
+          "choice": "10個",
+          "truth": false,
+          "reason": "10是稜數。"
+        }
+      ],
+      "misconceptionTarget": "把總面數n+1當成側面數。",
+      "authoringIntent": "計算角錐側面數。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "n=5"
+      ],
+      "target": "求三角形側面數",
+      "difficultyReason": "直接對應底邊。 本題以「計算角錐側面數。」作為該難度的具體判準。",
+      "prerequisiteCheck": "知道五邊形。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位為個。 所求「求三角形側面數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "側面不含底面。 題幹已完整限制「求三角形側面數」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v003",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "691cf2aa9f92bb7e56a7e02a5fbdf74a28fb9b6a0cb83a8134d8326507f1881d"
+    },
+    {
+      "prompt": "六角錐共有多少條稜？",
+      "text": "六角錐共有多少條稜？",
+      "choices": [
+        "6條",
+        "7條",
+        "18條",
+        "12條"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：n=6；E=2n=12。所得結果是「12條」。",
+      "explanation": "六角錐有6條底面稜與6條側稜，共12條。",
+      "steps": [
+        "n=6",
+        "E=2n=12"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6條",
+          "truth": false,
+          "reason": "只數底面稜。"
+        },
+        {
+          "choice": "7條",
+          "truth": false,
+          "reason": "是頂點或面數。"
+        },
+        {
+          "choice": "18條",
+          "truth": false,
+          "reason": "誤套角柱3n。"
+        },
+        {
+          "choice": "12條",
+          "truth": true,
+          "reason": "依獨立計算「E=2n=12」，此選項符合所求「求總稜數」。"
+        }
+      ],
+      "misconceptionTarget": "把角柱稜數公式3n套到角錐。",
+      "authoringIntent": "計算六角錐稜數。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "n=6"
+      ],
+      "target": "求總稜數",
+      "difficultyReason": "需分類底面稜與側稜。 本題以「計算六角錐稜數。」作為該難度的具體判準。",
+      "prerequisiteCheck": "理解2n。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位為條。 所求「求總稜數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "每條稜只計一次。 題幹已完整限制「求總稜數」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": "u23-s005-fig001",
+      "drawingSpecId": "u23-s005-draw001",
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v004",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "svg",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "8c4db56c8b798c18064ce648e0152e54cce24e12199213925a7884abab23d9b4"
+    },
+    {
+      "prompt": "一個角錐有9個面，它的底面是幾邊形？",
+      "text": "一個角錐有9個面，它的底面是幾邊形？",
+      "choices": [
+        "九邊形",
+        "八邊形",
+        "七邊形",
+        "十邊形"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：n+1=9；n=8。所得結果是「八邊形」。",
+      "explanation": "角錐總面數n+1=9，所以n=8，底面為八邊形。",
+      "steps": [
+        "n+1=9",
+        "n=8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "九邊形",
+          "truth": false,
+          "reason": "未扣底面。"
+        },
+        {
+          "choice": "八邊形",
+          "truth": true,
+          "reason": "依獨立計算「n=8」，此選項符合所求「求底面邊數」。"
+        },
+        {
+          "choice": "七邊形",
+          "truth": false,
+          "reason": "少扣1。"
+        },
+        {
+          "choice": "十邊形",
+          "truth": false,
+          "reason": "此選項無法符合所求「求底面邊數」；錯誤來源會是：把總面數直接當底面邊數。"
+        }
+      ],
+      "misconceptionTarget": "把總面數直接當底面邊數。",
+      "authoringIntent": "由面數反推底面。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "總面數9"
+      ],
+      "target": "求底面邊數",
+      "difficultyReason": "反用公式。 本題以「由面數反推底面。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會簡單方程。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無長度單位。 所求「求底面邊數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "n=8為合法多邊形。 題幹已完整限制「求底面邊數」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v005",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "f3b33ce2f2a76cb28655057afb66a612f023e163afcdb529babf6fd63b68e685"
+    },
+    {
+      "prompt": "下列哪一條線段必須垂直於角錐的底面所在平面？",
+      "text": "下列哪一條線段必須垂直於角錐的底面所在平面？",
+      "choices": [
+        "任一側稜",
+        "任一斜高",
+        "任一底面稜",
+        "角錐的高"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：依高度定義判斷。所得結果是「角錐的高」。",
+      "explanation": "角錐的高依定義就是頂點到底面平面的垂線段；側稜與斜高通常不垂直底面平面。",
+      "steps": [
+        "依高度定義判斷"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "任一側稜",
+          "truth": false,
+          "reason": "一般側稜斜向。"
+        },
+        {
+          "choice": "任一斜高",
+          "truth": false,
+          "reason": "只在側面內垂直底邊。"
+        },
+        {
+          "choice": "任一底面稜",
+          "truth": false,
+          "reason": "位於底面內。"
+        },
+        {
+          "choice": "角錐的高",
+          "truth": true,
+          "reason": "依獨立計算「依高度定義判斷」，此選項符合所求「選出垂直底面的線段」。"
+        }
+      ],
+      "misconceptionTarget": "把斜高或側稜當成垂直高。",
+      "authoringIntent": "辨認角錐高度。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "一般角錐"
+      ],
+      "target": "選出垂直底面的線段",
+      "difficultyReason": "需區分三種線段。 本題以「辨認角錐高度。」作為該難度的具體判準。",
+      "prerequisiteCheck": "理解垂直平面。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無數值單位。 所求「選出垂直底面的線段」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "必須二字排除特殊偶合。 題幹已完整限制「選出垂直底面的線段」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v006",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "cd554a465de49d81ac700a4c80e367affe23525ec999562d77050df8f82552be"
+    },
+    {
+      "prompt": "某角錐有16條稜，則它共有多少個頂點？",
+      "text": "某角錐有16條稜，則它共有多少個頂點？",
+      "choices": [
+        "9個",
+        "16個",
+        "8個",
+        "10個"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：n=8；V=9。所得結果是「9個」。",
+      "explanation": "2n=16得n=8，頂點數n+1=9。",
+      "steps": [
+        "n=8",
+        "V=9"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9個",
+          "truth": true,
+          "reason": "依獨立計算「V=9」，此選項符合所求「求總頂點數」。"
+        },
+        {
+          "choice": "16個",
+          "truth": false,
+          "reason": "未轉換。"
+        },
+        {
+          "choice": "8個",
+          "truth": false,
+          "reason": "只給底面邊數。"
+        },
+        {
+          "choice": "10個",
+          "truth": false,
+          "reason": "誤加2。"
+        }
+      ],
+      "misconceptionTarget": "先求n後忘記加錐頂。 必須依「由稜數求頂點數。」的關係重新核對。",
+      "authoringIntent": "由稜數求頂點數。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "總稜數16"
+      ],
+      "target": "求總頂點數",
+      "difficultyReason": "需跨兩個公式。 本題以「由稜數求頂點數。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會除2與加1。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位為個。 所求「求總頂點數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "16得到整數n=8。 題幹已完整限制「求總頂點數」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v007",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "2f416d89c208bb91f770e16ab94afb9f1e0fcb956488059d42a12efff2bb3c34"
+    },
+    {
+      "prompt": "一個角錐的頂點數與面數都為11。它有多少條稜？",
+      "text": "一個角錐的頂點數與面數都為11。它有多少條稜？",
+      "choices": [
+        "11條",
+        "22條",
+        "20條",
+        "30條"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：由11得n=10；E=20。所得結果是「20條」。",
+      "explanation": "n+1=11，所以n=10；稜數2n=20。角錐頂點數與面數本來都等於n+1。",
+      "steps": [
+        "由11得n=10",
+        "E=20"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "11條",
+          "truth": false,
+          "reason": "此選項無法符合所求「求稜數」；錯誤來源會是：由V=F誤認稜數也相同。"
+        },
+        {
+          "choice": "22條",
+          "truth": false,
+          "reason": "把11乘2。"
+        },
+        {
+          "choice": "20條",
+          "truth": true,
+          "reason": "依獨立計算「E=20」，此選項符合所求「求稜數」。"
+        },
+        {
+          "choice": "30條",
+          "truth": false,
+          "reason": "誤套3n。"
+        }
+      ],
+      "misconceptionTarget": "由V=F誤認稜數也相同。",
+      "authoringIntent": "利用角錐V與F關係求稜。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "角錐",
+        "V=F=11"
+      ],
+      "target": "求稜數",
+      "difficultyReason": "需認出共同公式。 本題以「利用角錐V與F關係求稜。」作為該難度的具體判準。",
+      "prerequisiteCheck": "熟悉n角錐結構。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位為條。 所求「求稜數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "兩條資訊相容且指向同一n。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v008",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "b9628cb34f0634bbea96043f87de769d3e455c3e2e520c08ab35867ca4e7fa9b"
+    },
+    {
+      "prompt": "正四角錐的側稜長13公分、高12公分。從錐頂到任一底面頂點的水平投影長為多少？",
+      "text": "正四角錐的側稜長13公分、高12公分。從錐頂到任一底面頂點的水平投影長為多少？",
+      "choices": [
+        "1公分",
+        "12公分",
+        "5公分",
+        "25公分"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：建立直角三角形；用畢氏定理；取正長5。所得結果是「5公分」。",
+      "explanation": "側稜、垂直高與底面中心到頂點形成直角三角形。水平投影長²=13²−12²=169−144=25，所以長5公分。",
+      "steps": [
+        "建立直角三角形",
+        "用畢氏定理",
+        "取正長5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1公分",
+          "truth": false,
+          "reason": "不是相減13−12。"
+        },
+        {
+          "choice": "12公分",
+          "truth": false,
+          "reason": "把高當投影。"
+        },
+        {
+          "choice": "5公分",
+          "truth": true,
+          "reason": "依獨立計算「取正長5」，此選項符合所求「求高的垂足到底面頂點距離」。"
+        },
+        {
+          "choice": "25公分",
+          "truth": false,
+          "reason": "把平方差未開根。"
+        }
+      ],
+      "misconceptionTarget": "直接用側稜減高。 必須依「結合角錐高與側稜作空間直角三角形。」的關係重新核對。",
+      "authoringIntent": "結合角錐高與側稜作空間直角三角形。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "正四角錐",
+        "側稜13",
+        "高12"
+      ],
+      "target": "求高的垂足到底面頂點距離",
+      "difficultyReason": "需辨認垂直高形成直角。 本題以「結合角錐高與側稜作空間直角三角形。」作為該難度的具體判準。",
+      "prerequisiteCheck": "具備畢氏定理。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求高的垂足到底面頂點距離」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確整數。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "長度取正值，底面中心為高的垂足。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v009",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "bc928933ded91614ed2477fe26bc7f0d28314e5d07f3a38f994a8e65843aeb62"
+    },
+    {
+      "prompt": "博物館展示台為正五角錐，每個三角形側面都要裝一片透明板，底面不裝。需幾片透明板？",
+      "text": "博物館展示台為正五角錐，每個三角形側面都要裝一片透明板，底面不裝。需幾片透明板？",
+      "choices": [
+        "5片",
+        "6片",
+        "10片",
+        "4片"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：n=5；只計側面。所得結果是「5片」。",
+      "explanation": "五角錐有5個三角形側面，底面不裝，所以需要5片。",
+      "steps": [
+        "n=5",
+        "只計側面"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5片",
+          "truth": true,
+          "reason": "依獨立計算「只計側面」，此選項符合所求「求透明板數」。"
+        },
+        {
+          "choice": "6片",
+          "truth": false,
+          "reason": "把底面也算入。"
+        },
+        {
+          "choice": "10片",
+          "truth": false,
+          "reason": "是稜數。"
+        },
+        {
+          "choice": "4片",
+          "truth": false,
+          "reason": "少一片。"
+        }
+      ],
+      "misconceptionTarget": "把總面數6直接當側板數。",
+      "authoringIntent": "計算角錐側面材料數。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "正五角錐",
+        "底面不裝"
+      ],
+      "target": "求透明板數",
+      "difficultyReason": "需依施工範圍排除底面。 本題以「計算角錐側面材料數。」作為該難度的具體判準。",
+      "prerequisiteCheck": "理解側面數n。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "單位為片。 所求「求透明板數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "每側面一片且不含底面。 題幹已完整限制「求透明板數」的範圍與取值方向。",
+      "literacyContextNecessity": "展示台的材料規則決定只計三角形側面，情境不可刪除。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v010",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "caad2b964d3e698d13fad0bde0c5fa00f546cd03864b9d9ae4037abe5947b8d9"
+    },
+    {
+      "prompt": "帳篷骨架近似四角錐，四個底角各連一根桿到頂點，底面四邊也各有一根桿。總共幾根桿？",
+      "text": "帳篷骨架近似四角錐，四個底角各連一根桿到頂點，底面四邊也各有一根桿。總共幾根桿？",
+      "choices": [
+        "4根",
+        "12根",
+        "5根",
+        "8根"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：底面桿4；側稜桿4；合計8。所得結果是「8根」。",
+      "explanation": "四條底邊桿加四條側稜桿，共8根，等於四角錐2n。",
+      "steps": [
+        "底面桿4",
+        "側稜桿4",
+        "合計8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4根",
+          "truth": false,
+          "reason": "只數側稜。"
+        },
+        {
+          "choice": "12根",
+          "truth": false,
+          "reason": "誤套角柱。"
+        },
+        {
+          "choice": "5根",
+          "truth": false,
+          "reason": "是頂點數。"
+        },
+        {
+          "choice": "8根",
+          "truth": true,
+          "reason": "依獨立計算「合計8」，此選項符合所求「求骨架桿數」。"
+        }
+      ],
+      "misconceptionTarget": "漏算底框或側桿。 必須依「由骨架需求計算角錐稜數。」的關係重新核對。",
+      "authoringIntent": "由骨架需求計算角錐稜數。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "每條稜一根桿",
+        "四角錐"
+      ],
+      "target": "求骨架桿數",
+      "difficultyReason": "需把構造描述分為兩類稜。",
+      "prerequisiteCheck": "理解2n。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位為根。 所求「求骨架桿數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "桿不重複共用，數量唯一。",
+      "literacyContextNecessity": "帳篷同時保留四邊形底框和由四個底角連至頂點的斜桿，才能把骨架完整對應到四角錐的八條稜。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v011",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "be1691f16b7e762b50dfc46863ab03999b0662fd8540e0eb8007ddb4ea887983"
+    },
+    {
+      "prompt": "工程圖把一條斜向線段標成角錐的高，但該線段從頂點連到底面頂點。審圖時應如何修正？",
+      "text": "工程圖把一條斜向線段標成角錐的高，但該線段從頂點連到底面頂點。審圖時應如何修正？",
+      "choices": [
+        "保持不變，側稜就是高",
+        "改標為側稜，另畫頂點到底面平面的垂線作高",
+        "改標為底面稜",
+        "改標為斜高且不需其他線"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：辨認端點；檢查垂直底面條件。所得結果是「改標為側稜，另畫頂點到底面平面的垂線作高」。",
+      "explanation": "頂點連到底面頂點的是側稜。角錐的高必須垂直底面平面，因此應另畫垂線。",
+      "steps": [
+        "辨認端點",
+        "檢查垂直底面條件"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "保持不變，側稜就是高",
+          "truth": false,
+          "reason": "混淆兩者。"
+        },
+        {
+          "choice": "改標為側稜，另畫頂點到底面平面的垂線作高",
+          "truth": true,
+          "reason": "依獨立計算「檢查垂直底面條件」，此選項符合所求「判斷標記修正」。"
+        },
+        {
+          "choice": "改標為底面稜",
+          "truth": false,
+          "reason": "端點不符底面稜。"
+        },
+        {
+          "choice": "改標為斜高且不需其他線",
+          "truth": false,
+          "reason": "斜高連到底邊而非底面頂點。"
+        }
+      ],
+      "misconceptionTarget": "以線段看起來向下就稱為高。",
+      "authoringIntent": "審核工程圖中的高度標記。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "線段連錐頂與底面頂點",
+        "未垂直底面"
+      ],
+      "target": "判斷標記修正",
+      "difficultyReason": "需依幾何定義修正技術圖。",
+      "prerequisiteCheck": "能區分高、側稜、斜高。 本題只再使用先備「solid-prism-concept」與本技能定義。",
+      "estimatedTimeSec": 95,
+      "unitCheck": "無數值單位。 所求「判斷標記修正」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "端點與垂直條件充分排除其他名稱。",
+      "literacyContextNecessity": "工程圖標記會影響後續用量與體積，正確分類是情境核心。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s005-v012",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "角錐概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "ceae713582453bf8f789ec6d4772a372435b032d4e77b0474ca8875b85b6f1b4"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "prompt": "請推導n角錐的頂點數、稜數與面數公式，並用六角錐驗算。",
+      "requiredWork": [
+        "說明一個底面與一個共同頂點。",
+        "推導V=n+1、E=2n、F=n+1。",
+        "代入n=6並驗算。"
+      ],
+      "fullCreditSolution": [
+        "底面有n個頂點，加上錐頂，所以V=n+1。",
+        "底面有n條稜，錐頂連到底面n個頂點形成n條側稜，所以E=2n。",
+        "有n個三角形側面加1個底面，所以F=n+1。",
+        "六角錐V=7、E=12、F=7，且7−12+7=2。"
+      ],
+      "alternativeSolutions": [
+        "可畫六邊形底面並把每個頂點連向共同錐頂。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "三公式推導完整，六角錐得到7、12、7並正確驗算。"
+        },
+        {
+          "score": 2,
+          "criteria": "公式皆正確但推導或驗算缺一部分，或只有一個算術小錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "至少正確說出兩個公式或六角錐三項中兩項正確。"
+        },
+        {
+          "score": 0,
+          "criteria": "主要套用角柱公式且無結構說明。"
+        }
+      ],
+      "partialCreditRules": [
+        "公式皆正確但推導或驗算缺一部分，或只有一個算術小錯。",
+        "至少正確說出兩個公式或六角錐三項中兩項正確。"
+      ],
+      "followThroughPolicy": "若公式正確但代入算錯，保留推導分；若底面邊數辨認錯但後續分類合理，最多1分。",
+      "unitNotationRules": "頂點與面用個，稜用條；n為底面邊數。",
+      "answerOnlyPolicy": "只寫三公式而無推導，最多2分。",
+      "difficulty": "standard",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "V=n+1、E=2n、F=n+1；六角錐為7、12、7。",
+        "ambiguityAndBoundary": "只適用多邊形底面的角錐。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s005-cr001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "2749ee31b40fcfc88f5aeafb1b3f6128241380206874ae215a90a69d6190b45c"
+    },
+    {
+      "prompt": "正四角錐底面中心為O，頂點為P，底面一頂點為A，底邊中點為M。請分別指出PO、PA、PM代表高、側稜或斜高，並說明理由。",
+      "requiredWork": [
+        "辨認PO垂直底面。",
+        "辨認PA連錐頂與底面頂點。",
+        "辨認PM位於側面且垂直底邊。"
+      ],
+      "fullCreditSolution": [
+        "PO從錐頂到底面中心並垂直底面，所以是角錐的高。",
+        "PA連接錐頂與底面頂點A，所以是側稜。",
+        "PM位於含底邊的三角形側面內，且連到該底邊中點並垂直底邊，所以是斜高。"
+      ],
+      "alternativeSolutions": [
+        "可透過三條線段所在的平面和垂直對象分類。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "三條線段分類全正確，且分別以垂直底面、連接底面頂點、側面內垂直底邊說明。"
+        },
+        {
+          "score": 2,
+          "criteria": "三分類正確但理由少一項，或只混淆一次後自行修正。"
+        },
+        {
+          "score": 1,
+          "criteria": "至少正確辨認PO為高，並能區分另外兩者之一。"
+        },
+        {
+          "score": 0,
+          "criteria": "把PA當垂直高且無合理說明，三者多數錯。"
+        }
+      ],
+      "partialCreditRules": [
+        "三分類正確但理由少一項，或只混淆一次後自行修正。",
+        "至少正確辨認PO為高，並能區分另外兩者之一。"
+      ],
+      "followThroughPolicy": "若學生圖示方向畫反但文字定義正確，以文字為準；若只因名稱猜測不給理由，最多2分。",
+      "unitNotationRules": "線段長若未給數值不需單位；符號PO、PA、PM須保持端點一致。",
+      "answerOnlyPolicy": "只列PO高、PA側稜、PM斜高而無理由，最多2分。",
+      "difficulty": "advanced",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "PO為高、PA為側稜、PM為斜高。",
+        "ambiguityAndBoundary": "正角錐條件確保垂足在中心，斜高落在底邊中點。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s005-cr002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-pyramid-concept",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "44904f531d32e2db7ba77c8a933f6a93edece827366b54d9897fc791a39e685c"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u23-s005-fig001",
+      "drawingSpecId": "u23-s005-draw001",
+      "unitId": "u23",
+      "skillSlot": "s005",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "purpose": "六角錐結構示意",
+      "svgPath": "figures/u23/u23-s005-fig001.svg",
+      "canvas": {
+        "width": 700,
+        "height": 420,
+        "viewBox": "0 0 700 420"
+      },
+      "drawingSpec": {
+        "coordinateSystem": "SVG左上為原點，輪廓與標籤位置固定於對應檔案。",
+        "visibleLineRules": "主要輪廓至少3px實線，輔助線使用虛線且不取代題幹條件。",
+        "hiddenLineRules": "僅在需要表示軸線或不可見結構時使用虛線。",
+        "labelsAndPositions": "所有尺寸、方向、面與頂點標籤均在圖中固定位置。",
+        "tickMarksUnitsArrowsSymbols": "直角符號、箭頭、公分單位與視線方向依題意標示。",
+        "scaleStatus": "not-to-scale",
+        "visualInferenceWarning": "示意圖未按比例，必須依題幹與標示作答。"
+      },
+      "altText": "六邊形底面與一個錐頂，以六條側稜連接。",
+      "svgTitle": "六角錐結構示意",
+      "svgDescription": "六邊形底面與一個錐頂，以六條側稜連接。",
+      "mobileReadabilityReview": "縮放至360px寬後主要輪廓與文字仍可辨識，且不以顏色作唯一訊息。",
+      "answerLeakageReview": "圖只提供題幹已知結構，不直接標示選項或答案。",
+      "svgAssertions": [
+        "<title",
+        "<desc",
+        "role=\"img\"",
+        "未按比例"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderedInspection": true,
+        "reviewNote": "u23-s005-fig001 已核對題圖數值、線型、標籤、縮放警語與答案不外洩。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentSha256": "c81f69781cacb62281bdd5753487049ddac272ef13b99ee8e2dda4b2f21b1728"
+    }
+  ],
+  "sourceBatch": "024-u23-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/024-u23-complete/units/u23/s005"
+}

@@ -1,0 +1,1336 @@
+{
+  "slot": "s006",
+  "skillId": "solid-cylinder-concept",
+  "topicId": "u23-basics",
+  "title": "圓柱概念：連結底圓軸線高度和側面",
+  "lecture": {
+    "lectureId": "u23-s006-lecture-r1",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-basics",
+    "skillId": "solid-cylinder-concept",
+    "title": "圓柱概念：連結底圓軸線高度和側面",
+    "lockedSkillTitle": "圓柱概念",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能以兩個全等平行圓辨認圓柱。",
+      "能區分半徑、直徑、軸與高。",
+      "能說明直圓柱側面展開為長方形。",
+      "能避免把圓柱當作角柱套用頂點與稜公式。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "solid-pyramid-concept",
+        "requiredLevel": "能以底面與頂點辨認柱體和錐體差異。",
+        "bridge": "圓柱與角柱同屬柱體，但底面改為圓，側面為曲面。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "圓柱",
+        "definition": "有兩個全等且互相平行的圓形底面，並以曲面連接的立體。"
+      },
+      {
+        "term": "軸",
+        "definition": "連接兩底面圓心的線段或其所在直線。"
+      },
+      {
+        "term": "直圓柱",
+        "definition": "軸垂直於底面的圓柱。"
+      },
+      {
+        "term": "母線",
+        "definition": "圓柱側面上連接兩底面對應點的線段；直圓柱母線長等於高。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "r",
+        "meaning": "底面半徑。"
+      },
+      {
+        "symbol": "d",
+        "meaning": "底面直徑，d=2r。"
+      },
+      {
+        "symbol": "h",
+        "meaning": "兩底面平面間的垂直距離。"
+      }
+    ],
+    "conceptNarrative": [
+      "圓柱可以看成一個圓沿著固定方向平移而掃出的立體；每個平行底面的截面都是同樣大小的圓。",
+      "直圓柱的軸垂直底面，軸長就是高。側面沒有多邊形的稜與頂點，兩個圓形邊界通常稱為圓周或圓形邊。",
+      "把側面沿一條母線剪開攤平，得到長方形；一邊是底面圓周長2πr，另一邊是高h。",
+      "圓柱可以有斜圓柱；此時母線不垂直底面，高仍是兩底面間的垂直距離。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "直圓柱",
+        "statement": "兩底面為全等平行圓，連心軸垂直底面。"
+      },
+      {
+        "name": "圓柱的高",
+        "statement": "兩個底面所在平面的垂直距離。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "d=2r",
+        "conditions": [
+          "同一底圓"
+        ],
+        "meaning": "直徑為半徑兩倍。"
+      },
+      {
+        "formula": "側面展開長方形尺寸＝2πr×h",
+        "conditions": [
+          "直圓柱沿母線展開"
+        ],
+        "meaning": "圓周方向與高度方向分別成為長方形兩邊。"
+      }
+    ],
+    "nonApplicableCases": [
+      "圓柱沒有多邊形底面，不套n角柱的2n、3n、n+2公式。",
+      "側面展開圖的2πr是長度，不是面積。",
+      "斜圓柱的母線長不等於高。",
+      "只看一個圓和一個曲面而沒有另一底圓，可能是無蓋容器而非完整圓柱表面。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認有兩個全等平行圓。",
+        "check": "是否為封閉圓柱？"
+      },
+      {
+        "step": 2,
+        "instruction": "標出圓心、半徑與軸。",
+        "check": "軸是否連兩底面圓心？"
+      },
+      {
+        "step": 3,
+        "instruction": "判斷是否為直圓柱。",
+        "check": "軸是否垂直底面？"
+      },
+      {
+        "step": 4,
+        "instruction": "區分高與母線。",
+        "check": "斜圓柱時是否另作垂線？"
+      },
+      {
+        "step": 5,
+        "instruction": "需要展開時對應圓周與高。",
+        "check": "長方形哪一邊等於2πr？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "直圓柱底面直徑10公分，半徑多少？",
+        "solutionSteps": [
+          "r=d÷2=5。"
+        ],
+        "answer": "5公分。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "直圓柱高8公分，側面展開長方形哪一邊為8公分？",
+        "solutionSteps": [
+          "沿軸方向的母線長等於高。"
+        ],
+        "answer": "高度方向那一邊。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "底面半徑3公分的圓柱，側面展開圖圓周方向長多少？",
+        "solutionSteps": [
+          "2πr=6π。"
+        ],
+        "answer": "6π公分。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "斜圓柱母線長12公分，可否直接說高12公分？",
+        "solutionSteps": [
+          "高是垂直距離，斜母線不是垂線。"
+        ],
+        "answer": "不能。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把圓柱說成有無限多條稜。",
+        "why": "多面體稜的定義不適用曲面圓周。",
+        "correction": "以兩底圓與曲側面描述。"
+      },
+      {
+        "mistake": "把底面圓周長寫成πr²。",
+        "why": "混淆圓周長與面積。",
+        "correction": "圓周長2πr，面積πr²。"
+      },
+      {
+        "mistake": "直徑直接當半徑。",
+        "why": "漏除以2。",
+        "correction": "先用r=d/2。"
+      },
+      {
+        "mistake": "任何圓柱的母線都等於高。",
+        "why": "忽略斜圓柱。",
+        "correction": "只有直圓柱成立。"
+      },
+      {
+        "mistake": "展開圖只畫一個底圓。",
+        "why": "漏掉另一底面。",
+        "correction": "完整封閉圓柱有兩個全等圓。"
+      },
+      {
+        "mistake": "把軸畫成任意側面線。",
+        "why": "軸必須通過兩底面圓心。",
+        "correction": "先找圓心再連線。"
+      }
+    ],
+    "selfCheck": [
+      "我是否確認兩底圓全等且平行？",
+      "直徑是否先換成半徑？",
+      "軸是否通過兩圓心？",
+      "高是否為垂直距離？",
+      "側面展開的圓周方向是否為2πr？"
+    ],
+    "summary": [
+      "圓柱有兩個全等平行圓底面與一個曲側面。",
+      "直圓柱軸長與母線長等於高。",
+      "側面展開為2πr×h長方形。",
+      "圓柱不套角柱的多面體計數公式。"
+    ],
+    "connections": {
+      "previous": "由角柱與角錐的底面觀念過渡到圓形底面的柱體。",
+      "next": [
+        "圓錐只保留一個底圓並會聚到頂點。",
+        "柱體表面積與體積會使用πr²與h。"
+      ]
+    },
+    "figureReferences": [
+      "u23-s006-fig001"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u23-s006-v001",
+        "u23-s006-v002",
+        "u23-s006-v003",
+        "u23-s006-v004",
+        "u23-s006-v005",
+        "u23-s006-v006",
+        "u23-s006-v007",
+        "u23-s006-v008",
+        "u23-s006-v009",
+        "u23-s006-v010",
+        "u23-s006-v011",
+        "u23-s006-v012"
+      ],
+      "constructedResponseIds": [
+        "u23-s006-cr001",
+        "u23-s006-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐項重算直徑換半徑、側面圓周方向與斜圓柱高度邊界；確認未把圓周稱為多面體稜，也未漏掉完整圓柱的第二底面。",
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "d7c08372ffeee49ea8de581d06510e887406c443bb8daaf5089bda25f03d196e"
+  },
+  "mcQuestions": [
+    {
+      "prompt": "完整圓柱有幾個圓形底面？",
+      "text": "完整圓柱有幾個圓形底面？",
+      "choices": [
+        "1個",
+        "2個",
+        "3個",
+        "0個"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：套用圓柱定義。所得結果是「2個」。",
+      "explanation": "圓柱由兩個全等且平行的圓形底面與曲側面組成，所以有2個底面。",
+      "steps": [
+        "套用圓柱定義"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1個",
+          "truth": false,
+          "reason": "無蓋容器可能只有一底，但不是完整封閉表面。"
+        },
+        {
+          "choice": "2個",
+          "truth": true,
+          "reason": "依獨立計算「套用圓柱定義」，此選項符合所求「求底面數」。"
+        },
+        {
+          "choice": "3個",
+          "truth": false,
+          "reason": "多一個。"
+        },
+        {
+          "choice": "0個",
+          "truth": false,
+          "reason": "忽略底面。"
+        }
+      ],
+      "misconceptionTarget": "把無蓋圓筒與完整圓柱混淆。",
+      "authoringIntent": "辨認圓柱底面數。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "完整封閉圓柱"
+      ],
+      "target": "求底面數",
+      "difficultyReason": "直接定義。 本題以「辨認圓柱底面數。」作為該難度的具體判準。",
+      "prerequisiteCheck": "知道圓。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位為個。 所求「求底面數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "完整二字排除無蓋情形。 題幹已完整限制「求底面數」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "8979b5ca6a720838142daaf5327dc47de2d5c3f1eaee75ce579f0bda15177f42"
+    },
+    {
+      "prompt": "直圓柱底面直徑12公分，半徑是多少？",
+      "text": "直圓柱底面直徑12公分，半徑是多少？",
+      "choices": [
+        "12公分",
+        "3公分",
+        "24公分",
+        "6公分"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：r=d÷2；12÷2=6。所得結果是「6公分」。",
+      "explanation": "半徑是直徑的一半，12÷2=6公分。",
+      "steps": [
+        "r=d÷2",
+        "12÷2=6"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12公分",
+          "truth": false,
+          "reason": "把直徑當半徑。"
+        },
+        {
+          "choice": "3公分",
+          "truth": false,
+          "reason": "多除一次。"
+        },
+        {
+          "choice": "24公分",
+          "truth": false,
+          "reason": "把直徑乘2。"
+        },
+        {
+          "choice": "6公分",
+          "truth": true,
+          "reason": "依獨立計算「12÷2=6」，此選項符合所求「求r」。"
+        }
+      ],
+      "misconceptionTarget": "混淆半徑與直徑。 必須依「由直徑求半徑。」的關係重新核對。",
+      "authoringIntent": "由直徑求半徑。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "d=12公分"
+      ],
+      "target": "求r",
+      "difficultyReason": "單一步驟換算。 本題以「由直徑求半徑。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會除以2。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求r」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確整數。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "同一底圓的直徑與半徑。 題幹已完整限制「求r」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "9ad47fd4a0f09a918c900791c47218cab1ce284e08b0fc612a54e69e94fcc07f"
+    },
+    {
+      "prompt": "直圓柱的軸連接哪兩個點？",
+      "text": "直圓柱的軸連接哪兩個點？",
+      "choices": [
+        "任意兩個側面點",
+        "底圓上的兩點",
+        "兩個底面圓心",
+        "一個圓心與任一側面點"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：依軸定義。所得結果是「兩個底面圓心」。",
+      "explanation": "圓柱軸通過並連接兩個底面圓心。",
+      "steps": [
+        "依軸定義"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "任意兩個側面點",
+          "truth": false,
+          "reason": "不一定是軸。"
+        },
+        {
+          "choice": "底圓上的兩點",
+          "truth": false,
+          "reason": "只是弦或側面線。"
+        },
+        {
+          "choice": "兩個底面圓心",
+          "truth": true,
+          "reason": "依獨立計算「依軸定義」，此選項符合所求「選出軸端點」。"
+        },
+        {
+          "choice": "一個圓心與任一側面點",
+          "truth": false,
+          "reason": "端點不符。"
+        }
+      ],
+      "misconceptionTarget": "把母線或任意側面線當成軸。",
+      "authoringIntent": "辨認圓柱軸。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "直圓柱"
+      ],
+      "target": "選出軸端點",
+      "difficultyReason": "概念辨認。 本題以「辨認圓柱軸。」作為該難度的具體判準。",
+      "prerequisiteCheck": "知道圓心。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位。 所求「選出軸端點」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "軸的定義唯一。 題幹已完整限制「選出軸端點」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v003",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "c06d46a1b299b4cea203aafa5d988ec4378297dc579540bb1a0774e51b9c1548"
+    },
+    {
+      "prompt": "直圓柱側面沿一條母線剪開後，通常展成什麼圖形？",
+      "text": "直圓柱側面沿一條母線剪開後，通常展成什麼圖形？",
+      "choices": [
+        "長方形",
+        "扇形",
+        "梯形",
+        "圓"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：沿母線剪開；攤平曲側面。所得結果是「長方形」。",
+      "explanation": "直圓柱母線互相平行且等長，繞圓周方向展開後形成長方形。",
+      "steps": [
+        "沿母線剪開",
+        "攤平曲側面"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "長方形",
+          "truth": true,
+          "reason": "依獨立計算「攤平曲側面」，此選項符合所求「判斷展開形狀」。"
+        },
+        {
+          "choice": "扇形",
+          "truth": false,
+          "reason": "扇形是圓錐側面。"
+        },
+        {
+          "choice": "梯形",
+          "truth": false,
+          "reason": "直圓柱不形成梯形。"
+        },
+        {
+          "choice": "圓",
+          "truth": false,
+          "reason": "圓是底面。"
+        }
+      ],
+      "misconceptionTarget": "混淆圓柱與圓錐側面展開。",
+      "authoringIntent": "辨認圓柱側面展開形狀。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "直圓柱",
+        "沿母線剪開"
+      ],
+      "target": "判斷展開形狀",
+      "difficultyReason": "需連結母線平行性。 本題以「辨認圓柱側面展開形狀。」作為該難度的具體判準。",
+      "prerequisiteCheck": "知道展開圖。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位。 所求「判斷展開形狀」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "只問曲側面，不含兩底圓。",
+      "literacyContextNecessity": null,
+      "figureId": "u23-s006-fig001",
+      "drawingSpecId": "u23-s006-draw001",
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v004",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "svg",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "6b25953f6ff7ee1347ae71d0a12eb614c666d28f5a91e216836ad1b1106932c7"
+    },
+    {
+      "prompt": "底面半徑4公分的直圓柱，側面展開圖中繞底面一周的邊長是多少？",
+      "text": "底面半徑4公分的直圓柱，側面展開圖中繞底面一周的邊長是多少？",
+      "choices": [
+        "16π公分",
+        "4π公分",
+        "8π公分",
+        "8平方公分"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：用2πr；代r=4。所得結果是「8π公分」。",
+      "explanation": "繞一周的邊長等於底面圓周長2πr=2π×4=8π公分。",
+      "steps": [
+        "用2πr",
+        "代r=4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "16π公分",
+          "truth": false,
+          "reason": "誤乘4。"
+        },
+        {
+          "choice": "4π公分",
+          "truth": false,
+          "reason": "漏係數2。"
+        },
+        {
+          "choice": "8π公分",
+          "truth": true,
+          "reason": "依獨立計算「代r=4」，此選項符合所求「求圓周方向邊長」。"
+        },
+        {
+          "choice": "8平方公分",
+          "truth": false,
+          "reason": "單位與公式都錯。"
+        }
+      ],
+      "misconceptionTarget": "把圓面積或πr當圓周長。",
+      "authoringIntent": "計算側面展開的圓周方向。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "r=4公分"
+      ],
+      "target": "求圓周方向邊長",
+      "difficultyReason": "需套圓周公式。 本題以「計算側面展開的圓周方向。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會2πr。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求圓周方向邊長」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "保留π為精確值。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "不需要柱高。 題幹已完整限制「求圓周方向邊長」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v005",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "4e92d498715674f00c122413446e9ebdf215298920de4cf79a2a5313c6e18d0a"
+    },
+    {
+      "prompt": "下列哪一項只對直圓柱必定成立，而對斜圓柱不一定成立？",
+      "text": "下列哪一項只對直圓柱必定成立，而對斜圓柱不一定成立？",
+      "choices": [
+        "母線長等於高",
+        "底面為圓",
+        "兩底面全等平行",
+        "平行底面的截面全等底面"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：比較直與斜；找垂直性帶來的特徵。所得結果是「母線長等於高」。",
+      "explanation": "直圓柱母線垂直底面，所以母線長就是高；斜圓柱母線斜向，長於垂直高。其餘是柱體共有性質。",
+      "steps": [
+        "比較直與斜",
+        "找垂直性帶來的特徵"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "母線長等於高",
+          "truth": true,
+          "reason": "依獨立計算「找垂直性帶來的特徵」，此選項符合所求「找直圓柱特有關係」。"
+        },
+        {
+          "choice": "底面為圓",
+          "truth": false,
+          "reason": "兩者皆成立。"
+        },
+        {
+          "choice": "兩底面全等平行",
+          "truth": false,
+          "reason": "兩者皆成立。"
+        },
+        {
+          "choice": "平行底面的截面全等底面",
+          "truth": false,
+          "reason": "柱體皆成立。"
+        }
+      ],
+      "misconceptionTarget": "以為斜圓柱沒有全等底面。",
+      "authoringIntent": "區分直圓柱與斜圓柱。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "比較兩類圓柱"
+      ],
+      "target": "找直圓柱特有關係",
+      "difficultyReason": "需分析必要性質。 本題以「區分直圓柱與斜圓柱。」作為該難度的具體判準。",
+      "prerequisiteCheck": "理解高與母線。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無數值單位。 所求「找直圓柱特有關係」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "選項三唯一依賴垂直。 題幹已完整限制「找直圓柱特有關係」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v006",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "97963542f602c67c7ccd81a1f3ff7861cf3efdc5ff211badeba4da6422328f05"
+    },
+    {
+      "prompt": "一個直圓柱側面展開長方形的面積為48π平方公分，高6公分。底面半徑是多少？",
+      "text": "一個直圓柱側面展開長方形的面積為48π平方公分，高6公分。底面半徑是多少？",
+      "choices": [
+        "8公分",
+        "4公分",
+        "6公分",
+        "2公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：列2πrh=48π；除以12π。所得結果是「4公分」。",
+      "explanation": "側面積=2πrh。代入48π=2π×r×6=12πr，得r=4公分。",
+      "steps": [
+        "列2πrh=48π",
+        "除以12π"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "8公分",
+          "truth": false,
+          "reason": "把直徑當半徑。"
+        },
+        {
+          "choice": "4公分",
+          "truth": true,
+          "reason": "依獨立計算「除以12π」，此選項符合所求「求r」。"
+        },
+        {
+          "choice": "6公分",
+          "truth": false,
+          "reason": "把高當半徑。"
+        },
+        {
+          "choice": "2公分",
+          "truth": false,
+          "reason": "多除2。"
+        }
+      ],
+      "misconceptionTarget": "只用πrh或忘記高。 必須依「由側面展開面積反求半徑。」的關係重新核對。",
+      "authoringIntent": "由側面展開面積反求半徑。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "側面積48π",
+        "h=6"
+      ],
+      "target": "求r",
+      "difficultyReason": "需反解含π公式。 本題以「由側面展開面積反求半徑。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會圓周與長方形面積。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "半徑公分，側面積平方公分。",
+      "roundingCheck": "保留π後約分。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "題目明指側面，不含底面。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v007",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "8832f43434a530183f9854747fccbfd4b21f184cfa14557fc96053112703af48"
+    },
+    {
+      "prompt": "直圓柱底面半徑3公分、高5公分。若沿軸方向切開曲側面，展開長方形的周長為何？",
+      "text": "直圓柱底面半徑3公分、高5公分。若沿軸方向切開曲側面，展開長方形的周長為何？",
+      "choices": [
+        "6π+10公分",
+        "30π平方公分",
+        "6π+5公分",
+        "12π+10公分"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：計算圓周6π；長方形周長2(6π+5)；得到12π+10。所得結果是「12π+10公分」。",
+      "explanation": "長方形兩邊為2πr=6π公分與h=5公分，周長=2(6π+5)=12π+10公分。",
+      "steps": [
+        "計算圓周6π",
+        "長方形周長2(6π+5)",
+        "得到12π+10"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6π+10公分",
+          "truth": false,
+          "reason": "只把圓周方向算一次。"
+        },
+        {
+          "choice": "30π平方公分",
+          "truth": false,
+          "reason": "這是側面積且單位為面積。"
+        },
+        {
+          "choice": "6π+5公分",
+          "truth": false,
+          "reason": "只把兩邊相加，未乘2。"
+        },
+        {
+          "choice": "12π+10公分",
+          "truth": true,
+          "reason": "正確把兩邊各計兩次。"
+        }
+      ],
+      "misconceptionTarget": "把長方形周長寫成兩邊相加。",
+      "authoringIntent": "計算側面展開圖周長。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "r=3",
+        "h=5"
+      ],
+      "target": "求展開長方形周長",
+      "difficultyReason": "需先求兩邊再算周長。 本題以「計算側面展開圖周長。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會長方形周長。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求展開長方形周長」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確含π。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "四個選項中只有12π+10符合長方形周長，單位也正確。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v008",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "71962b6d9e343ef41534647aeeff07715525ddcbc5bda0cebfa094ec6b92bb4b"
+    },
+    {
+      "prompt": "斜圓柱的母線長13公分，高12公分。下列哪項可能表示母線在底面方向的水平位移長？",
+      "text": "斜圓柱的母線長13公分，高12公分。下列哪項可能表示母線在底面方向的水平位移長？",
+      "choices": [
+        "1公分",
+        "25公分",
+        "12公分",
+        "5公分"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：用畢氏定理；169−144=25；開根得5。所得結果是「5公分」。",
+      "explanation": "母線、高與水平位移形成直角三角形，位移²=13²−12²=25，所以位移5公分。",
+      "steps": [
+        "用畢氏定理",
+        "169−144=25",
+        "開根得5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1公分",
+          "truth": false,
+          "reason": "不是直接相減。"
+        },
+        {
+          "choice": "25公分",
+          "truth": false,
+          "reason": "未開根。"
+        },
+        {
+          "choice": "12公分",
+          "truth": false,
+          "reason": "此選項無法符合所求「求水平位移」；錯誤來源會是：以斜長減垂直高。 必須依「以直角分量分析斜圓柱。」的關係重新核對。"
+        },
+        {
+          "choice": "5公分",
+          "truth": true,
+          "reason": "依獨立計算「開根得5」，此選項符合所求「求水平位移」。"
+        }
+      ],
+      "misconceptionTarget": "以斜長減垂直高。 必須依「以直角分量分析斜圓柱。」的關係重新核對。",
+      "authoringIntent": "以直角分量分析斜圓柱。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "母線13",
+        "高12"
+      ],
+      "target": "求水平位移",
+      "difficultyReason": "需建立空間直角三角形。 本題以「以直角分量分析斜圓柱。」作為該難度的具體判準。",
+      "prerequisiteCheck": "具備畢氏定理。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求水平位移」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確整數。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "水平位移取非負長度。 題幹已完整限制「求水平位移」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v009",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "7a244369a765c3f7e7367aee3f6ab49f927a1f17fe0344a8e3f567e714f54f33"
+    },
+    {
+      "prompt": "飲料罐標籤完整繞罐身一周且高度與罐身相同。標籤攤平後哪個尺寸等於罐底圓周長？",
+      "text": "飲料罐標籤完整繞罐身一周且高度與罐身相同。標籤攤平後哪個尺寸等於罐底圓周長？",
+      "choices": [
+        "標籤對角線",
+        "長方形繞罐身的那一邊",
+        "標籤面積",
+        "標籤高度"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：辨認包覆方向；對應圓周。所得結果是「長方形繞罐身的那一邊」。",
+      "explanation": "標籤繞罐身一周的方向正好沿底圓圓周，因此該邊等於底面圓周長。",
+      "steps": [
+        "辨認包覆方向",
+        "對應圓周"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "標籤對角線",
+          "truth": false,
+          "reason": "對角線無直接對應。"
+        },
+        {
+          "choice": "長方形繞罐身的那一邊",
+          "truth": true,
+          "reason": "依獨立計算「對應圓周」，此選項符合所求「辨認尺寸對應」。"
+        },
+        {
+          "choice": "標籤面積",
+          "truth": false,
+          "reason": "面積不是長度。"
+        },
+        {
+          "choice": "標籤高度",
+          "truth": false,
+          "reason": "高度沿軸方向。"
+        }
+      ],
+      "misconceptionTarget": "把標籤高度當底圓周長。 必須依「解讀罐身標籤尺寸。」的關係重新核對。",
+      "authoringIntent": "解讀罐身標籤尺寸。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "標籤完整一周",
+        "高度貼合罐身"
+      ],
+      "target": "辨認尺寸對應",
+      "difficultyReason": "需將實物包覆轉為展開圖。",
+      "prerequisiteCheck": "理解圓柱側面。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 85,
+      "unitCheck": "所問為長度。 所求「辨認尺寸對應」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "完整一周保證與圓周相等。",
+      "literacyContextNecessity": "標籤完整繞罐身一周且高度不變，才能判定攤平後水平方向等於底圓周長、垂直方向等於罐高。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v010",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "b5918914a5b4189300067a3432878342e77c41b92a9296a41d2c8570014ed27c"
+    },
+    {
+      "prompt": "製造一個無底無蓋的直圓筒，只使用一張長25公分、寬10公分薄片，25公分邊接合成一周。圓筒高為多少？",
+      "text": "製造一個無底無蓋的直圓筒，只使用一張長25公分、寬10公分薄片，25公分邊接合成一周。圓筒高為多少？",
+      "choices": [
+        "10公分",
+        "25公分",
+        "35公分",
+        "250平方公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：辨認接合邊為圓周；另一邊為高。所得結果是「10公分」。",
+      "explanation": "25公分邊形成圓周，另一邊10公分沿軸方向，因此圓筒高10公分。",
+      "steps": [
+        "辨認接合邊為圓周",
+        "另一邊為高"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10公分",
+          "truth": true,
+          "reason": "依獨立計算「另一邊為高」，此選項符合所求「求筒高」。"
+        },
+        {
+          "choice": "25公分",
+          "truth": false,
+          "reason": "是圓周長。"
+        },
+        {
+          "choice": "35公分",
+          "truth": false,
+          "reason": "相加無意義。"
+        },
+        {
+          "choice": "250平方公分",
+          "truth": false,
+          "reason": "是薄片面積。"
+        }
+      ],
+      "misconceptionTarget": "把較長邊固定當高。 必須依「由薄片捲法判斷圓筒高度。」的關係重新核對。",
+      "authoringIntent": "由薄片捲法判斷圓筒高度。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "25公分邊接合成一周"
+      ],
+      "target": "求筒高",
+      "difficultyReason": "需依接合方向而非大小判定。",
+      "prerequisiteCheck": "理解側面展開。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "答案公分。 所求「求筒高」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "無底無蓋不影響側面高度。",
+      "literacyContextNecessity": "指定以25公分邊接合成一周後，另一條10公分邊才確定是圓筒高度；交換接合方向會得到不同模型。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v011",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "7ccf2ce307569a2444e4b5702e381e1023d0d7fd3f2866ede0dcd0e9b5187ca9"
+    },
+    {
+      "prompt": "水塔外形近似直圓柱。工程圖標示底面直徑8公尺、塔身高12公尺。下列哪一組符號設定正確？",
+      "text": "水塔外形近似直圓柱。工程圖標示底面直徑8公尺、塔身高12公尺。下列哪一組符號設定正確？",
+      "choices": [
+        "r=8，h=12",
+        "r=12，h=8",
+        "r=4，h=12",
+        "r=4，h=8"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：直徑除2；讀取垂直高。所得結果是「r=4，h=12」。",
+      "explanation": "直徑8公尺，所以半徑r=4公尺；塔身高即h=12公尺。",
+      "steps": [
+        "直徑除2",
+        "讀取垂直高"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "r=8，h=12",
+          "truth": false,
+          "reason": "把直徑當半徑。"
+        },
+        {
+          "choice": "r=12，h=8",
+          "truth": false,
+          "reason": "交換半徑與高。"
+        },
+        {
+          "choice": "r=4，h=12",
+          "truth": true,
+          "reason": "依獨立計算「讀取垂直高」，此選項符合所求「選出r與h」。"
+        },
+        {
+          "choice": "r=4，h=8",
+          "truth": false,
+          "reason": "把高也除2。"
+        }
+      ],
+      "misconceptionTarget": "圖面直徑符號未換成半徑。",
+      "authoringIntent": "從工程規格設定圓柱變數。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "直徑8公尺",
+        "高12公尺"
+      ],
+      "target": "選出r與h",
+      "difficultyReason": "需正確解讀規格後才能套公式。",
+      "prerequisiteCheck": "會半徑直徑換算。 本題只再使用先備「solid-pyramid-concept」與本技能定義。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "r與h均公尺。 所求「選出r與h」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "圖面未給斜度，直圓柱高直接採12。",
+      "literacyContextNecessity": "工程圖提供的是底面直徑而公式使用半徑，水塔規格迫使先做直徑除以2的轉換，不能直接代入8。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s006-v012",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "圓柱概念",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "1cb741181d0cf286542713be36c0633abfb3e1a2b4db508391a41186ad560178"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "prompt": "說明直圓柱的側面展開圖為何是長方形，並指出長方形兩邊分別對應什麼。",
+      "requiredWork": [
+        "說明沿母線剪開。",
+        "指出圓周方向長為2πr。",
+        "指出另一邊為高h。"
+      ],
+      "fullCreditSolution": [
+        "沿直圓柱的一條母線剪開曲側面並攤平，母線彼此平行且長度為h，因此形成長方形。",
+        "繞底圓一周的方向攤開後長度等於底面圓周長2πr。",
+        "沿軸方向的邊長等於圓柱高h。"
+      ],
+      "alternativeSolutions": [
+        "可用把標籤紙包住罐身再剪開的方式說明。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整說明剪開方式、長方形形狀，並正確對應2πr與h。"
+        },
+        {
+          "score": 2,
+          "criteria": "知道是長方形且兩邊對應正確，但缺少形成理由。"
+        },
+        {
+          "score": 1,
+          "criteria": "只說側面展開是長方形，或只正確指出其中一邊。"
+        },
+        {
+          "score": 0,
+          "criteria": "說成扇形或把兩邊寫成πr²與h。"
+        }
+      ],
+      "partialCreditRules": [
+        "知道是長方形且兩邊對應正確，但缺少形成理由。",
+        "只說側面展開是長方形，或只正確指出其中一邊。"
+      ],
+      "followThroughPolicy": "若學生先把圓周寫πr但後續概念正確，最多2分；若只漏係數2，其餘保留。",
+      "unitNotationRules": "2πr與h皆為長度，單位相同；不可把πr²當長方形邊長。",
+      "answerOnlyPolicy": "只寫2πr×h而無文字說明最多2分。",
+      "difficulty": "standard",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "側面展開為邊長2πr與h的長方形。",
+        "ambiguityAndBoundary": "限直圓柱，斜圓柱側面展開一般為平行四邊形。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s006-cr001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "68f363490d27ec9083d0625c88b6015dab81c12748e8c2e4aa1eda3f456732c8"
+    },
+    {
+      "prompt": "一個直圓柱側面展開為長18π公分、寬7公分的長方形，且18π公分邊繞底面一周。求底面半徑與圓柱高。",
+      "requiredWork": [
+        "把18π對應2πr。",
+        "解出r。",
+        "把另一邊對應高。"
+      ],
+      "fullCreditSolution": [
+        "2πr=18π，所以r=9公分。",
+        "長方形另一邊沿軸方向，因此圓柱高h=7公分。"
+      ],
+      "alternativeSolutions": [
+        "可先求底面直徑18公分，再除以2得半徑9公分。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確列2πr=18π得r=9公分，並得高7公分且說明對應。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩答案正確但理由簡略，或只在π約分中有一個可辨識小錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道18π是圓周或知道7是高，至少一項正確。"
+        },
+        {
+          "score": 0,
+          "criteria": "把18π當半徑、把面積126π當高度，或未作答。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩答案正確但理由簡略，或只在π約分中有一個可辨識小錯。",
+        "知道18π是圓周或知道7是高，至少一項正確。"
+      ],
+      "followThroughPolicy": "若半徑因漏除2寫18公分，但高7公分與對應正確，可得1分；後續不重複扣同一錯誤。",
+      "unitNotationRules": "半徑與高用公分；18π為圓周長，不是平方公分。",
+      "answerOnlyPolicy": "只寫9、7而無單位與式子最多2分。",
+      "difficulty": "advanced",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "半徑9公分，高7公分。",
+        "ambiguityAndBoundary": "繞周方向已明示，不會與高度互換。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s006-cr002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-cylinder-concept",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "e848ecf6dc1f1d31305adb63f65681ecc7d0e39ee952f66ff6ef3c9f70cae7b8"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u23-s006-fig001",
+      "drawingSpecId": "u23-s006-draw001",
+      "unitId": "u23",
+      "skillSlot": "s006",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "purpose": "圓柱側面沿母線剪開",
+      "svgPath": "figures/u23/u23-s006-fig001.svg",
+      "canvas": {
+        "width": 760,
+        "height": 400,
+        "viewBox": "0 0 760 400"
+      },
+      "drawingSpec": {
+        "coordinateSystem": "SVG左上為原點，輪廓與標籤位置固定於對應檔案。",
+        "visibleLineRules": "主要輪廓至少3px實線，輔助線使用虛線且不取代題幹條件。",
+        "hiddenLineRules": "僅在需要表示軸線或不可見結構時使用虛線。",
+        "labelsAndPositions": "所有尺寸、方向、面與頂點標籤均在圖中固定位置。",
+        "tickMarksUnitsArrowsSymbols": "直角符號、箭頭、公分單位與視線方向依題意標示。",
+        "scaleStatus": "not-to-scale",
+        "visualInferenceWarning": "示意圖未按比例，必須依題幹與標示作答。"
+      },
+      "altText": "直圓柱沿母線剪開，側面攤成長方形。",
+      "svgTitle": "圓柱側面沿母線剪開",
+      "svgDescription": "直圓柱沿母線剪開，側面攤成長方形。",
+      "mobileReadabilityReview": "縮放至360px寬後主要輪廓與文字仍可辨識，且不以顏色作唯一訊息。",
+      "answerLeakageReview": "圖只提供題幹已知結構，不直接標示選項或答案。",
+      "svgAssertions": [
+        "<title",
+        "<desc",
+        "role=\"img\"",
+        "未按比例"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderedInspection": true,
+        "reviewNote": "u23-s006-fig001 已核對題圖數值、線型、標籤、縮放警語與答案不外洩。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentSha256": "d15f2b5d3ba15beaa83197b4a421a8c2c038618b20f5be23afbec45cdb867c81"
+    }
+  ],
+  "sourceBatch": "024-u23-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/024-u23-complete/units/u23/s006"
+}

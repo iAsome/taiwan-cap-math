@@ -1,0 +1,1189 @@
+{
+  "slot": "s009",
+  "skillId": "quadratic-roots-count",
+  "topicId": "u13-solving",
+  "title": "實數根個數判斷",
+  "lecture": {
+    "lectureId": "u13-s009-lecture-r1",
+    "unitId": "u13",
+    "numericUnitId": 13,
+    "topicId": "u13-solving",
+    "skillId": "quadratic-roots-count",
+    "lockedOrder": 9,
+    "originalLockedTitle": "根的個數判斷",
+    "title": "實數根個數判斷",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能以判別式判斷 0、1、2 個相異實根。",
+      "能由平方形式直接觀察根個數。",
+      "能處理參數控制重根或相異根。",
+      "能區分相異根個數與根的重複次數。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "quadratic-complete-square-basic",
+        "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+      }
+    ],
+    "prerequisiteBridge": "整合判別式與基本配方，從「求出根」提升到「不必完整求根也能判斷數量」。",
+    "glossary": [
+      {
+        "term": "根的個數",
+        "definition": "本節指解集合中相異實數值的數量。"
+      },
+      {
+        "term": "兩相異實根",
+        "definition": "有兩個不同實數使方程式成立。"
+      },
+      {
+        "term": "一個實根",
+        "definition": "通常為重根，解集合只有一個值。"
+      },
+      {
+        "term": "零個實根",
+        "definition": "解集合在實數範圍為空。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "#R",
+        "meaning": "本講義用文字表示相異實根個數，不引入正式集合基數符號。"
+      }
+    ],
+    "conceptNarrative": [
+      "根個數可由判別式判斷，也可從平方形式或已分解形式直接觀察。",
+      "(x-h)²=0 只有 x=h；(x-h)²=k>0 有兩根；k<0 無實根。",
+      "已分解成 (x-p)(x-q)=0 時，p=q 只有一個相異根。",
+      "參數題若方程式因 a=0 退化，需另行處理，不可只看 Δ。",
+      "情境問題可能只有一個可接受根，但代數方程式仍有兩個實根；兩者不能混為一談。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "相異實根個數",
+        "statement": "依解集合中不同實數值計數；重根只算一個。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "Δ>0→2；Δ=0→1；Δ<0→0",
+        "conditions": [
+          "a≠0",
+          "計算相異實根"
+        ],
+        "meaning": "判別式判根數。"
+      },
+      {
+        "formula": "(x-h)²=k",
+        "conditions": [
+          "實數範圍"
+        ],
+        "meaning": "k>0 有 2 根，k=0 有 1 根，k<0 有 0 根。"
+      }
+    ],
+    "nonApplicableCases": [
+      "題目若問「符合情境的解」可能需再排除負值，不能直接等同代數根個數。",
+      "重根不算兩個不同答案。",
+      "判別式正但根不是整數，仍然是兩個實根。",
+      "a=0 時需重新判斷一次方程式。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認是一元二次方程式。",
+        "check": "a 是否非 0？"
+      },
+      {
+        "step": 2,
+        "instruction": "選擇最快判法：分解、平方形式或 Δ。",
+        "check": "是否已有明顯結構？"
+      },
+      {
+        "step": 3,
+        "instruction": "判斷相異實根個數。",
+        "check": "重根是否只算一次？"
+      },
+      {
+        "step": 4,
+        "instruction": "參數題解出分界值。",
+        "check": "等號與不等號是否正確？"
+      },
+      {
+        "step": 5,
+        "instruction": "若為情境，再計算可接受解數。",
+        "check": "是否與代數根數分開陳述？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "判斷 x²-9=0 的實根個數。",
+        "solutionSteps": [
+          "平方差得 (x-3)(x+3)=0。",
+          "根為 3、-3。"
+        ],
+        "answer": "2 個。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "判斷 (x-4)²=0。",
+        "solutionSteps": [
+          "平方只有在 x=4 時為 0。"
+        ],
+        "answer": "1 個。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "判斷 x²+4=0。",
+        "solutionSteps": [
+          "x²=-4，在實數範圍不可能。"
+        ],
+        "answer": "0 個。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "求 x²+kx+1=0 有兩相異實根的 k 條件。",
+        "solutionSteps": [
+          "Δ=k²-4>0。",
+          "解得 k<-2 或 k>2。"
+        ],
+        "answer": "k<-2 或 k>2。"
+      },
+      {
+        "exampleId": "L5",
+        "prompt": "求 x²+(m-1)x+(m-1)=0 有重根時的 m。",
+        "solutionSteps": [
+          "Δ=(m-1)(m-5)。",
+          "令 Δ=0。"
+        ],
+        "answer": "m=1 或 m=5。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Δ=0 算兩個根。",
+        "why": "把公式的 ± 形式當成不同數值。",
+        "correction": "根號為 0 時兩分支相同。"
+      },
+      {
+        "mistake": "Δ>0 但非完全平方就說無根。",
+        "why": "混淆實根與有理根。",
+        "correction": "正數都有實數平方根。"
+      },
+      {
+        "mistake": "只看情境保留一個根就說方程式只有一根。",
+        "why": "混淆代數與情境。",
+        "correction": "分別報告。"
+      },
+      {
+        "mistake": "參數題漏掉臨界等號。",
+        "why": "不等式解集邊界判錯。",
+        "correction": "依題目是相異根或重根選 >0 或 =0。"
+      },
+      {
+        "mistake": "平方等於 0 寫 ±0 為兩答案。",
+        "why": "+0 與 -0 相同。",
+        "correction": "只列一次。"
+      },
+      {
+        "mistake": "未檢查 a=0。",
+        "why": "可能不再是二次。",
+        "correction": "先處理退化值。"
+      }
+    ],
+    "selfCheck": [
+      "判的是相異實根嗎？",
+      "是否有更直接的平方或因式形式？",
+      "Δ 邊界是否正確？",
+      "重根是否只算一次？",
+      "情境可接受解是否另行篩選？"
+    ],
+    "summary": [
+      "根個數可由 Δ、平方形式或因式形式判斷。",
+      "重根只算一個相異實根。",
+      "實根與整數根不同。",
+      "代數根數和情境可接受解數要分開。"
+    ],
+    "connections": {
+      "previous": "整合判別式與基本配方，從「求出根」提升到「不必完整求根也能判斷數量」。",
+      "next": [
+        "下一節會把候選根逐一代回檢查。",
+        "素養題常要求同時判根數與情境合理性。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u13-s009-v001",
+        "u13-s009-v002",
+        "u13-s009-v003",
+        "u13-s009-v004",
+        "u13-s009-v005",
+        "u13-s009-v006",
+        "u13-s009-v007",
+        "u13-s009-v008",
+        "u13-s009-v009",
+        "u13-s009-v010",
+        "u13-s009-v011",
+        "u13-s009-v012"
+      ],
+      "constructedResponseIds": [
+        "u13-s009-cr001",
+        "u13-s009-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "reviewNote": "五例以兩種方法交叉核對：分解或平方形式與判別式結論一致；參數例展開 Δ 後驗證 m=1、5 均產生完全平方，且沒有漏掉退化情況。",
+      "reviewVersion": "human-lecture-review-u13-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "66faf37506b1c7600a8e8b93fe7ff75ed22ce8215ffd28b20a8a9d0b8b5a3770"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u13-s009-v001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "x²-9=0 有幾個相異實根？",
+      "givenConditions": "a=1。",
+      "target": "判斷實根個數",
+      "choices": [
+        "0 個",
+        "2 個",
+        "1 個",
+        "3 個"
+      ],
+      "answerIndex": 1,
+      "explanation": "分解 (x-3)(x+3)=0；得到兩個不同根，所以答案為「2 個」。",
+      "steps": [
+        "分解 (x-3)(x+3)=0",
+        "得到兩個不同根"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0 個",
+          "truth": false,
+          "reason": "忽略平方差可解。"
+        },
+        {
+          "choice": "2 個",
+          "truth": true,
+          "reason": "根為 3、-3，數值不同。"
+        },
+        {
+          "choice": "1 個",
+          "truth": false,
+          "reason": "把 ±3 視為同一根。"
+        },
+        {
+          "choice": "3 個",
+          "truth": false,
+          "reason": "二次方程式不可能有三個相異根。"
+        }
+      ],
+      "misconceptionTarget": "混淆正負根或二次上限",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 45,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "問相異實根。",
+      "difficultyReason": "基本兩根型。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判斷實根個數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d6c0d19e0477f0651c972c5f60099b65979799b60343b78b8e8a56e86385a2e2"
+    },
+    {
+      "questionId": "u13-s009-v002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "(x-4)²=0 有幾個相異實根？",
+      "givenConditions": "相異根計數。",
+      "target": "判斷重根個數",
+      "choices": [
+        "0 個",
+        "2 個",
+        "4 個",
+        "1 個"
+      ],
+      "answerIndex": 3,
+      "explanation": "令 x-4=0；得唯一根 4，所以答案為「1 個」。",
+      "steps": [
+        "令 x-4=0",
+        "得唯一根 4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0 個",
+          "truth": false,
+          "reason": "平方可以等於 0。"
+        },
+        {
+          "choice": "2 個",
+          "truth": false,
+          "reason": "±0 是同一數。"
+        },
+        {
+          "choice": "4 個",
+          "truth": false,
+          "reason": "把常數 4 當根數。"
+        },
+        {
+          "choice": "1 個",
+          "truth": true,
+          "reason": "只有 x=4。"
+        }
+      ],
+      "misconceptionTarget": "把重複因式算兩根",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 45,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "+0=-0。",
+      "difficultyReason": "基本重根型。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判斷重根個數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "1a1a51db81b034388578f6670cd0d7b44bd3cde1072c2c26e01c59a225b8160a"
+    },
+    {
+      "questionId": "u13-s009-v003",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "x²+4=0 在實數範圍有幾個根？",
+      "givenConditions": "限定實數。",
+      "target": "判斷無實根",
+      "choices": [
+        "1 個",
+        "2 個",
+        "0 個",
+        "4 個"
+      ],
+      "answerIndex": 2,
+      "explanation": "移項得 x²=-4；實數平方非負，因此無根，所以答案為「0 個」。",
+      "steps": [
+        "移項得 x²=-4",
+        "實數平方非負，因此無根"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1 個",
+          "truth": false,
+          "reason": "沒有實數可平方成 -4。"
+        },
+        {
+          "choice": "2 個",
+          "truth": false,
+          "reason": "誤寫 ±2。"
+        },
+        {
+          "choice": "0 個",
+          "truth": true,
+          "reason": "等價於 x²=-4，不可能。"
+        },
+        {
+          "choice": "4 個",
+          "truth": false,
+          "reason": "把常數當根數。"
+        }
+      ],
+      "misconceptionTarget": "忽略實數範圍與負號",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 45,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "不使用複數。",
+      "difficultyReason": "基本無根型。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判斷無實根",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "78b43dc65059c7bc50a424bbdc1c8376e9f5f9a5df22a2e30099e2bcba35c8aa"
+    },
+    {
+      "questionId": "u13-s009-v004",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "2x²+4x+2=0 有幾個相異實根？",
+      "givenConditions": "a=2≠0。",
+      "target": "使用結構判根數",
+      "choices": [
+        "1 個",
+        "0 個",
+        "2 個",
+        "無法判斷"
+      ],
+      "answerIndex": 0,
+      "explanation": "提 2：2(x+1)²=0；得到 x=-1 一個根，所以答案為「1 個」。",
+      "steps": [
+        "提 2：2(x+1)²=0",
+        "得到 x=-1 一個根"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1 個",
+          "truth": true,
+          "reason": "可除以 2 得 (x+1)²=0，或 Δ=0。"
+        },
+        {
+          "choice": "0 個",
+          "truth": false,
+          "reason": "完全平方可為 0。"
+        },
+        {
+          "choice": "2 個",
+          "truth": false,
+          "reason": "重根只算一個相異值。"
+        },
+        {
+          "choice": "無法判斷",
+          "truth": false,
+          "reason": "係數已足夠。"
+        }
+      ],
+      "misconceptionTarget": "未辨認完全平方",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 65,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "相異根。",
+      "difficultyReason": "非首項 1 的重根。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "使用結構判根數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "77f57fcdff9e008824562e97d62dac9363ffd6e228c1bd8bde0f66679fbc9b30"
+    },
+    {
+      "questionId": "u13-s009-v005",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "x²-2x-8=0 有幾個相異實根？",
+      "givenConditions": "a=1。",
+      "target": "判斷根數",
+      "choices": [
+        "0 個",
+        "1 個",
+        "8 個",
+        "2 個"
+      ],
+      "answerIndex": 3,
+      "explanation": "計算 Δ=(-2)²-4·1·(-8)=36；正判別式代表兩根，所以答案為「2 個」。",
+      "steps": [
+        "計算 Δ=(-2)²-4·1·(-8)=36",
+        "正判別式代表兩根"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0 個",
+          "truth": false,
+          "reason": "Δ 不是負。"
+        },
+        {
+          "choice": "1 個",
+          "truth": false,
+          "reason": "Δ 不等於 0。"
+        },
+        {
+          "choice": "8 個",
+          "truth": false,
+          "reason": "把常數絕對值當根數。"
+        },
+        {
+          "choice": "2 個",
+          "truth": true,
+          "reason": "Δ=4+32=36>0。"
+        }
+      ],
+      "misconceptionTarget": "判別式符號錯",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 60,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "兩根相異。",
+      "difficultyReason": "正判別式。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判斷根數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "5038950398d4f3252029798842da6a4ed2903aa3f540b56eda72c8661a1757b2"
+    },
+    {
+      "questionId": "u13-s009-v006",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "3x²+x+2=0 有幾個實根？",
+      "givenConditions": "a=3≠0。",
+      "target": "判斷負判別式根數",
+      "choices": [
+        "1 個",
+        "0 個",
+        "2 個",
+        "3 個"
+      ],
+      "answerIndex": 1,
+      "explanation": "計算 Δ=-23；判定無實根，所以答案為「0 個」。",
+      "steps": [
+        "計算 Δ=-23",
+        "判定無實根"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1 個",
+          "truth": false,
+          "reason": "Δ 不為 0。"
+        },
+        {
+          "choice": "0 個",
+          "truth": true,
+          "reason": "Δ=1-24=-23<0。"
+        },
+        {
+          "choice": "2 個",
+          "truth": false,
+          "reason": "Δ 為負。"
+        },
+        {
+          "choice": "3 個",
+          "truth": false,
+          "reason": "二次不可能三根。"
+        }
+      ],
+      "misconceptionTarget": "只看二次項正就亂猜",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 65,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "實數範圍。",
+      "difficultyReason": "非完全平方負判別式。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判斷負判別式根數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3045b3b4dd18e9f9ad1ca5186abf87f95a455d4525f391257705be0ebb741dde"
+    },
+    {
+      "questionId": "u13-s009-v007",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "若 k 為正整數，且 x²+kx+1=0 有兩個相異實根，k 的最小值為何？",
+      "givenConditions": "k 為正整數，a=1。",
+      "target": "求參數的最小正整數值",
+      "choices": [
+        "3",
+        "2",
+        "1",
+        "4"
+      ],
+      "answerIndex": 0,
+      "explanation": "由 k²-4>0 且 k>0 得 k>2；正整數中最小為 3，所以答案為「3」。",
+      "steps": [
+        "由 k²-4>0 且 k>0 得 k>2",
+        "正整數中最小為 3"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3",
+          "truth": true,
+          "reason": "Δ=k²-4>0，正整數 k 必須大於 2，最小為 3。"
+        },
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "此時 Δ=0，只有重根。"
+        },
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "此時 Δ=-3，沒有實根。"
+        },
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "雖符合，但不是最小正整數。"
+        }
+      ],
+      "misconceptionTarget": "只解不等式卻未套正整數與最小值",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 115,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "相異排除 k=2，最小值要求檢查邊界下一個整數。",
+      "difficultyReason": "結合根個數、離散條件與極小值。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求參數的最小正整數值",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "32843e7d3be5635105fe9f3af412a797d320de4fdf80777a1bcc4057a915e9e3"
+    },
+    {
+      "questionId": "u13-s009-v008",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "x²+(m-1)x+(m-1)=0 有一個相異實根時，m 為何？",
+      "givenConditions": "a=1。",
+      "target": "求所有重根參數",
+      "choices": [
+        "只有 m=1",
+        "只有 m=5",
+        "m=1 或 m=5",
+        "1<m<5"
+      ],
+      "answerIndex": 2,
+      "explanation": "Δ=(m-1)²-4(m-1)；因式分解為 (m-1)(m-5)=0，所以答案為「m=1 或 m=5」。",
+      "steps": [
+        "Δ=(m-1)²-4(m-1)",
+        "因式分解為 (m-1)(m-5)=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只有 m=1",
+          "truth": false,
+          "reason": "漏掉第二個零點。"
+        },
+        {
+          "choice": "只有 m=5",
+          "truth": false,
+          "reason": "漏掉第一個零點。"
+        },
+        {
+          "choice": "m=1 或 m=5",
+          "truth": true,
+          "reason": "Δ=(m-1)(m-5)，令 0。"
+        },
+        {
+          "choice": "1<m<5",
+          "truth": false,
+          "reason": "此區間 Δ<0。"
+        }
+      ],
+      "misconceptionTarget": "解參數乘積方程漏一分支",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 115,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "兩個參數值皆有效。",
+      "difficultyReason": "參數判別式可分解。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求所有重根參數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e3b4723cf00491ebb8500e25c6585534cc43d73b9f7c56938584edf0c2340f7b"
+    },
+    {
+      "questionId": "u13-s009-v009",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "對任意實數 a，方程式 (x-a)²=9 有幾個相異實根？",
+      "givenConditions": "a 任意實數。",
+      "target": "判斷含平移參數的固定根數",
+      "choices": [
+        "0 個",
+        "1 個",
+        "視 a 而定",
+        "2 個"
+      ],
+      "answerIndex": 3,
+      "explanation": "開平方 x-a=±3；根 a+3、a-3，所以答案為「2 個」。",
+      "steps": [
+        "開平方 x-a=±3",
+        "根 a+3、a-3"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0 個",
+          "truth": false,
+          "reason": "右邊 9>0。"
+        },
+        {
+          "choice": "1 個",
+          "truth": false,
+          "reason": "±3 不會重合。"
+        },
+        {
+          "choice": "視 a 而定",
+          "truth": false,
+          "reason": "a 只平移兩根，不改根距離。"
+        },
+        {
+          "choice": "2 個",
+          "truth": true,
+          "reason": "x=a±3，兩值相差 6，永遠不同。"
+        }
+      ],
+      "misconceptionTarget": "以為參數會改變根數",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 95,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "兩根永不重合。",
+      "difficultyReason": "結構推理不需判別式。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判斷含平移參數的固定根數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "fc1d758c7cffff0809330eb2f4c04f7b264ab70144d662c5ef3d5151909bf30f"
+    },
+    {
+      "questionId": "u13-s009-v010",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "拱門高度設計方程式為 h²-10h+25=0。可行高度值有幾個？",
+      "givenConditions": "高度需實數；唯一根 5 也為正。",
+      "target": "判斷可行高度數",
+      "choices": [
+        "1 個",
+        "0 個",
+        "2 個",
+        "25 個"
+      ],
+      "answerIndex": 0,
+      "explanation": "辨認完全平方；得到唯一高度 h=5，所以答案為「1 個」。",
+      "steps": [
+        "辨認完全平方",
+        "得到唯一高度 h=5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1 個",
+          "truth": true,
+          "reason": "方程式為 (h-5)²=0，只有 h=5。"
+        },
+        {
+          "choice": "0 個",
+          "truth": false,
+          "reason": "平方可為 0。"
+        },
+        {
+          "choice": "2 個",
+          "truth": false,
+          "reason": "重根不算兩個相異高度。"
+        },
+        {
+          "choice": "25 個",
+          "truth": false,
+          "reason": "常數項與根數無關。"
+        }
+      ],
+      "misconceptionTarget": "把重根當兩方案",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 80,
+      "unitCheck": "高度沿用題目設計單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "沒有額外篩選造成變化。",
+      "difficultyReason": "以根數解釋設計方案數。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為「可行高度值」將相異實根個數轉為方案數。",
+      "authoringIntent": "判斷可行高度數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "2dc66738c8b9b9621def7c8f41b71a1652d5d3d1e67664f3d0cd8f4fe8ffae17"
+    },
+    {
+      "questionId": "u13-s009-v011",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "感測器校正式 x²-6x+13=0。若只接受實數校正值，系統有幾個可接受值？",
+      "givenConditions": "只接受實數。",
+      "target": "判斷校正值數量",
+      "choices": [
+        "1 個",
+        "2 個",
+        "0 個",
+        "13 個"
+      ],
+      "answerIndex": 2,
+      "explanation": "計算 Δ=-16；無實數根，所以無可接受值，所以答案為「0 個」。",
+      "steps": [
+        "計算 Δ=-16",
+        "無實數根，所以無可接受值"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1 個",
+          "truth": false,
+          "reason": "Δ 不為 0。"
+        },
+        {
+          "choice": "2 個",
+          "truth": false,
+          "reason": "Δ 為負。"
+        },
+        {
+          "choice": "0 個",
+          "truth": true,
+          "reason": "Δ=36-52=-16<0。"
+        },
+        {
+          "choice": "13 個",
+          "truth": false,
+          "reason": "常數項不是值的個數。"
+        }
+      ],
+      "misconceptionTarget": "把負判別式誤作無理根",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 85,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "無根時不再套其他限制。",
+      "difficultyReason": "系統可行性判斷。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為「只接受實數」直接連結判別式與可接受值數量。",
+      "authoringIntent": "判斷校正值數量",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e239a63451730c11a7e63bddd5872893d2756223a29db17a9b82c69397f8b973"
+    },
+    {
+      "questionId": "u13-s009-v012",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "lockedSkillOrder": 9,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "票價模型的兩個門檻由 n²-(p+2)n+2p=0 決定。要有兩個不同門檻，p 的條件為何？",
+      "givenConditions": "題目只問不同。",
+      "target": "求不同門檻條件",
+      "choices": [
+        "p>2",
+        "p≠2",
+        "p=2",
+        "p≥0"
+      ],
+      "answerIndex": 1,
+      "explanation": "因式分解得到根 2、p；要求相異，所以 p≠2，所以答案為「p≠2」。",
+      "steps": [
+        "因式分解得到根 2、p",
+        "要求相異，所以 p≠2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "p>2",
+          "truth": false,
+          "reason": "p<2 時也可不同。"
+        },
+        {
+          "choice": "p≠2",
+          "truth": true,
+          "reason": "方程式為 (n-2)(n-p)=0，門檻 2、p 不同需 p≠2。"
+        },
+        {
+          "choice": "p=2",
+          "truth": false,
+          "reason": "兩門檻重合。"
+        },
+        {
+          "choice": "p≥0",
+          "truth": false,
+          "reason": "仍可能 p=2。"
+        }
+      ],
+      "misconceptionTarget": "把大小或非負條件多加",
+      "prerequisiteSkillIds": [
+        "quadratic-complete-square-basic"
+      ],
+      "estimatedTimeSec": 100,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "唯一重合值 2。",
+      "difficultyReason": "結構與判別式雙重證明。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為門檻「不同」對應相異根，情境語意不可省略。",
+      "authoringIntent": "求不同門檻條件",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "2a0b4181178549c6095184ee59d967707f76c75ab148881f0d8caf7090f8adca"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u13-s009-cr001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "分別判斷下列方程式的相異實根個數：(甲) x²-4x+4=0；(乙) x²-4x+5=0。",
+      "requiredWork": [
+        "對兩式分別計算或觀察。",
+        "明確寫 0、1 或 2 個。",
+        "說明判斷依據。"
+      ],
+      "fullCreditSolution": [
+        "甲的 Δ=16-16=0，所以有 1 個相異實根。",
+        "乙的 Δ=16-20=-4<0，所以有 0 個實根。"
+      ],
+      "alternativeSolutions": [
+        "甲為 (x-2)²=0；乙為 (x-2)²+1=0，也可由平方非負判斷。"
+      ],
+      "reasoningSteps": [
+        "同一係數只改常數，分別計算 Δ。",
+        "區分重根與無根。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "甲 1 個、乙 0 個，且依據正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩個結論正確但只展示一個判別式，或一式理由稍不完整。"
+        },
+        {
+          "score": 1,
+          "criteria": "只正確判斷其中一式並有有效理由。"
+        },
+        {
+          "score": 0,
+          "criteria": "兩式根個數皆錯或無依據。"
+        }
+      ],
+      "partialCreditRules": [
+        "「甲重根、乙無實根」等值。",
+        "重根不可寫成兩個相異根。"
+      ],
+      "followThroughPolicy": "若 Δ 數值小算術錯但符號與結論仍正確，可酌給 2 分。",
+      "unitNotationRules": [
+        "x 無單位。"
+      ],
+      "answerOnlyPolicy": "只寫「1、0」最多 2 分。",
+      "commonErrors": [
+        "把 Δ=0 算成兩根。",
+        "認為平方加 1 仍可等於 0。"
+      ],
+      "independentReview": {
+        "derivedResult": "甲 1 個；乙 0 個。",
+        "ambiguity": "兩式均為 a=1 的二次方程式，沒有退化。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "9eeafdacdb3c9d11cea67e93ccb37282c38fbb1300f77d3f387d8dee89b1c081"
+    },
+    {
+      "questionId": "u13-s009-cr002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-roots-count",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "若 k 為整數，方程式 x²+4x+k=0 有兩個相異實根。求 k 的最大值。",
+      "requiredWork": [
+        "建立 Δ>0。",
+        "解出 k 的範圍。",
+        "套用整數條件找最大值。"
+      ],
+      "fullCreditSolution": [
+        "Δ=4²-4·1·k=16-4k。",
+        "兩個相異實根要求 16-4k>0，所以 k<4。",
+        "k 為整數，因此最大可取 k=3。"
+      ],
+      "alternativeSolutions": [
+        "也可配方：(x+2)²=4-k；要有兩個相異實根需 4-k>0，所以 k<4，再取最大整數 3。"
+      ],
+      "reasoningSteps": [
+        "把「兩個相異」轉成嚴格不等式。",
+        "注意除以負數 -4 時不等號方向改變，或改寫 16>4k。",
+        "最後使用整數與最大值條件。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確得到 k<4，並回答最大整數 k=3。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案 3 正確且有判別式依據，但範圍或整數說明略省。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確列出 16-4k>0，但不等式或最大整數轉換錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "使用 Δ=0，或把 k=4 納入兩個相異根。"
+        }
+      ],
+      "partialCreditRules": [
+        "「相異」排除 k=4。",
+        "若只寫 k<4 未回答最大整數，最高 2 分。"
+      ],
+      "followThroughPolicy": "若判別式正確但解不等式時方向錯，可給 1 分；後續依錯誤範圍作答不得給答案分。",
+      "unitNotationRules": [
+        "k 無單位。",
+        "最大值需寫成單一整數 3。"
+      ],
+      "answerOnlyPolicy": "只寫 3 而無過程，最多 1 分。",
+      "commonErrors": [
+        "把重根邊界 4 當答案。",
+        "得到 k>4。",
+        "忽略 k 為整數。"
+      ],
+      "independentReview": {
+        "derivedResult": "k 的最大值為 3。",
+        "ambiguity": "a=1 固定不退化，線性參數不等式在國中範圍內。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "9735e3b0defbdd2bb51e14a2d1f3a06b368ee4b20f965309df2e6af7466ebd11"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "014-u13-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/014-u13-complete/units/u13/s009"
+}

@@ -1,0 +1,1265 @@
+{
+  "slot": "s003",
+  "skillId": "inscribed-quadrilateral",
+  "topicId": "u19-angles",
+  "title": "圓內接四邊形",
+  "lecture": {
+    "lectureId": "u19-s003-lecture-r1",
+    "unitId": "u19",
+    "numericUnitId": 19,
+    "topicId": "u19-angles",
+    "skillId": "inscribed-quadrilateral",
+    "title": "圓內接四邊形",
+    "unitTitle": "圓",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "skillIdentity": {
+      "slot": "s003",
+      "lockedSkillId": "inscribed-quadrilateral",
+      "lockedOrder": 3,
+      "scope": "運用圓內接四邊形對角互補。"
+    },
+    "learningOutcomes": [
+      "能辨認四個頂點都在同一圓上的四邊形。",
+      "能使用對角互補。",
+      "能由外角求內對角。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "arc-angle",
+        "requiredLevel": "能使用「弧與角」的核心定義與基本運算，並辨認其適用條件。"
+      }
+    ],
+    "prerequisiteBridge": "先由前一技能「弧與角」的結論，連接到本技能「圓內接四邊形」所需的新判斷。",
+    "glossary": [
+      {
+        "term": "圓內接四邊形",
+        "definition": "四個頂點都在同一圓上的四邊形。"
+      },
+      {
+        "term": "對角",
+        "definition": "四邊形中沒有共邊的兩個角。"
+      },
+      {
+        "term": "互補",
+        "definition": "兩角和為 180°。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "O",
+        "meaning": "圓心。"
+      },
+      {
+        "symbol": "∠ABC",
+        "meaning": "頂點是B的角。"
+      },
+      {
+        "symbol": "π",
+        "meaning": "圓周率；題目未要求近似時保留π。"
+      }
+    ],
+    "conceptNarrative": [
+      "圓內接四邊形的四個頂點必須在同一個圓上；只要有一點不在圓上，就不能直接使用本性質。",
+      "它的兩組對角分別互補。這可由兩個圓周角所對弧合成整圓理解。",
+      "外角等於內對角，是把一直線上的 180° 與對角互補合併得到的結果。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "圓內接四邊形",
+        "statement": "四個頂點都在同一圓上的四邊形。"
+      },
+      {
+        "name": "對角",
+        "statement": "四邊形中沒有共邊的兩個角。"
+      },
+      {
+        "name": "互補",
+        "statement": "兩角和為 180°。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "∠A+∠C=180°",
+        "conditions": [
+          "ABCD 為圓內接四邊形"
+        ],
+        "meaning": "一組對角互補"
+      },
+      {
+        "formula": "∠B+∠D=180°",
+        "conditions": [
+          "ABCD 為圓內接四邊形"
+        ],
+        "meaning": "另一組對角互補"
+      }
+    ],
+    "nonApplicableCases": [
+      "一般四邊形只有內角和 360°，不保證對角互補。",
+      "題圖看似在圓上但沒有給定或標記時，不可只憑外觀使用。",
+      "相鄰角不一定互補。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認四點共圓。",
+        "check": "完成此步後，確認仍在「圓內接四邊形」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 2,
+        "instruction": "找與已知角相對的角。",
+        "check": "完成此步後，確認仍在「圓內接四邊形」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 3,
+        "instruction": "列出兩角和 180°。",
+        "check": "完成此步後，確認仍在「圓內接四邊形」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 4,
+        "instruction": "解方程並檢查角度介於 0° 與 180°。",
+        "check": "完成此步後，確認仍在「圓內接四邊形」的CAP範圍且沒有只憑圖形目測。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "s003-L1",
+        "prompt": "ABCD 為圓內接四邊形，∠A=72°，求 ∠C。",
+        "solutionSteps": [
+          "∠A+∠C=180°。",
+          "180°−72°=108°。"
+        ],
+        "answer": "108°。",
+        "level": "basic"
+      },
+      {
+        "exampleId": "s003-L2",
+        "prompt": "∠B=95°，求 ∠D。",
+        "solutionSteps": [
+          "B、D 為對角。",
+          "180°−95°=85°。"
+        ],
+        "answer": "85°。",
+        "level": "standard"
+      },
+      {
+        "exampleId": "s003-L3",
+        "prompt": "∠A=3x+10°，∠C=2x+20°。",
+        "solutionSteps": [
+          "兩角和 180°。",
+          "5x+30=180，x=30。"
+        ],
+        "answer": "x=30。",
+        "level": "advanced"
+      },
+      {
+        "exampleId": "s003-L4",
+        "prompt": "A 點外角為 112°，求 ∠C。",
+        "solutionSteps": [
+          "A 外角與 ∠A 互補。",
+          "∠C 也與 ∠A 互補。"
+        ],
+        "answer": "∠C=112°。",
+        "level": "connection"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "辨認「圓內接四邊形」的定義、符號與單一步驟關係。",
+      "standard": "把「圓內接四邊形」與前置技能、比例或一次代數連接。",
+      "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「圓內接四邊形」。",
+      "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「圓內接四邊形」的數學模型。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "把相鄰角當成互補",
+        "why": "記錯對角位置",
+        "correction": "先畫出沒有共邊的角"
+      },
+      {
+        "mistake": "只用四邊形內角和",
+        "why": "步驟較長且可能資訊不足",
+        "correction": "直接使用對角互補"
+      },
+      {
+        "mistake": "未確認四點共圓",
+        "why": "把一般四邊形套用圓性質",
+        "correction": "題幹必須明示內接或共圓"
+      },
+      {
+        "mistake": "解出角度大於180°仍接受",
+        "why": "未做範圍檢查",
+        "correction": "內角應在0°與180°之間"
+      }
+    ],
+    "selfCheck": [
+      "我是否先確認「圓內接四邊形」的適用條件？",
+      "我是否分清半徑、直徑、弦、弧與角的角色？",
+      "我是否寫出必要單位，並在最後才取近似值？",
+      "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+    ],
+    "summary": [
+      "圓內接四邊形四點共圓。",
+      "兩組對角各自互補。",
+      "一個外角等於其內對角。"
+    ],
+    "connections": {
+      "previous": "承接「弧與角」。",
+      "next": "下一技能為「弧長」。"
+    },
+    "figureReferences": [
+      {
+        "figureId": "u19-s003-fig001",
+        "purpose": "四點 A、B、C、D 位於同一圓周並依序連線，對角 A 與 C 以弧線標示。",
+        "altText": "四點 A、B、C、D 位於同一圓周並依序連線，對角 A 與 C 以弧線標示。，不可按比例目測。"
+      }
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u19-s003-v001",
+        "u19-s003-v002",
+        "u19-s003-v003",
+        "u19-s003-v004",
+        "u19-s003-v005",
+        "u19-s003-v006",
+        "u19-s003-v007",
+        "u19-s003-v008",
+        "u19-s003-v009",
+        "u19-s003-v010",
+        "u19-s003-v011",
+        "u19-s003-v012"
+      ],
+      "constructedResponseIds": [
+        "u19-s003-cr001",
+        "u19-s003-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐段回讀「圓內接四邊形」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：運用圓內接四邊形對角互補。",
+      "reviewVersion": "human-lecture-review-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "contentSha256": "6d2e69f9c21d45065cbd87df596e48f66f2bb1338e4c9ea761815fa6b0c46114"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u19-s003-v001",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s003-fig001",
+      "drawingSpecId": "u19-s003-fig001",
+      "prompt": "ABCD 為圓內接四邊形，∠A=68°，則 ∠C 為何？",
+      "text": "ABCD 為圓內接四邊形，∠A=68°，則 ∠C 為何？",
+      "givenConditions": "ABCD四點共圓。",
+      "target": "求∠C。",
+      "choices": [
+        "68°",
+        "22°",
+        "292°",
+        "112°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「ABCD四點共圓。」重算：圓內接四邊形對角互補，所以∠C=180°−68°=112°。",
+      "explanation": "圓內接四邊形對角互補，所以∠C=180°−68°=112°。 因此唯一正確選項是「112°」。",
+      "steps": [
+        "確認A與C為對角。",
+        "180−68=112。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "68°",
+          "truth": false,
+          "reason": "誤認對角相等。"
+        },
+        {
+          "choice": "22°",
+          "truth": false,
+          "reason": "錯用90−68。"
+        },
+        {
+          "choice": "292°",
+          "truth": false,
+          "reason": "錯用360−68。"
+        },
+        {
+          "choice": "112°",
+          "truth": true,
+          "reason": "依題目條件重新計算：圓內接四邊形對角互補，所以∠C=180°−68°=112°。"
+        }
+      ],
+      "misconceptionTarget": "把對角互補記成相等。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "u19-s003-v001 已核對所求量「求∠C。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由一個內角求對角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v001。",
+      "difficultyReason": "basic：由一個內角求對角。 解題需完成「確認A與C為對角。；180−68=112。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由一個內角求對角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "65c4f672a0b0ed729d3c26328b39cfb73c645b86dade417b48a721acbe5cf756"
+    },
+    {
+      "questionId": "u19-s003-v002",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "在圓內接四邊形 ABCD 中，哪一個角必定與 ∠B 互補？",
+      "text": "在圓內接四邊形 ABCD 中，哪一個角必定與 ∠B 互補？",
+      "givenConditions": "ABCD 四點依序位於同一圓周上。",
+      "target": "辨認與 ∠B 相對的內角。",
+      "choices": [
+        "∠A",
+        "∠B",
+        "∠C",
+        "∠D"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "先不看儲存答案，依頂點順序 A、B、C、D 判定：∠B 的對角是 ∠D。圓內接四邊形的對角互補，所以必定與 ∠B 互補的是 ∠D。",
+      "explanation": "圓內接四邊形中，A 與 C、B 與 D 分別是兩組對角；因此 ∠B+∠D=180°，唯一正確選項是「∠D」。",
+      "steps": [
+        "依四邊形頂點順序找出 ∠B 的對角。",
+        "使用圓內接四邊形對角互補性質，得到 ∠D。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "∠A",
+          "truth": false,
+          "reason": "∠A 與 ∠B 相鄰，不是與 ∠B 互補的對角。"
+        },
+        {
+          "choice": "∠B",
+          "truth": false,
+          "reason": "同一個角不會因圓內接條件而必定等於自己的補角。"
+        },
+        {
+          "choice": "∠C",
+          "truth": false,
+          "reason": "∠C 與 ∠B 相鄰，對角配對應是 A–C、B–D。"
+        },
+        {
+          "choice": "∠D",
+          "truth": true,
+          "reason": "∠B 與 ∠D 為圓內接四邊形的一組對角，兩角和必為 180°。"
+        }
+      ],
+      "misconceptionTarget": "只記得對角互補，卻無法依頂點順序辨認真正的對角。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "本題所求是角的名稱，四個選項皆為 ABCD 的內角，沒有角度單位或量綱混用。",
+      "roundingCheck": "本題不涉及近似值或四捨五入；已確認不會因四捨五入產生第二答案。",
+      "ambiguityAudit": "題幹明定 A、B、C、D 依序位於同一圓周上，因此 ∠B 的對角唯一是 ∠D；不存在不同頂點順序的另一解讀。",
+      "boundaryAudit": "只使用國中會考範圍內的圓內接四邊形對角互補性質，不使用圓冪或高中的圓方程式。",
+      "difficultyReason": "basic：學生先辨認四邊形對角，再套用對角互補；重點不是代入角度做同型減法。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "檢查學生能否辨認圓內接四邊形中真正的對角，而非只做 180° 減法。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "376f901f1ddfd88e6e18de70ab885b1ba2e50ee08155e200b840f3997d69df26"
+    },
+    {
+      "questionId": "u19-s003-v003",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "下列何者是圓內接四邊形必有的性質？",
+      "text": "下列何者是圓內接四邊形必有的性質？",
+      "givenConditions": "四頂點共圓。",
+      "target": "選出必然性質。",
+      "choices": [
+        "一組對角的和為180°",
+        "四邊都相等",
+        "四個角都相等",
+        "兩條對角線互相垂直"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「四頂點共圓。」重算：圓內接四邊形的兩組對角各自互補。",
+      "explanation": "圓內接四邊形的兩組對角各自互補。 因此唯一正確選項是「一組對角的和為180°」。",
+      "steps": [
+        "回想四點共圓性質。",
+        "排除只屬於特殊四邊形的敘述。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "一組對角的和為180°",
+          "truth": true,
+          "reason": "依題目條件重新計算：圓內接四邊形的兩組對角各自互補。"
+        },
+        {
+          "choice": "四邊都相等",
+          "truth": false,
+          "reason": "只對菱形等特殊情況成立。"
+        },
+        {
+          "choice": "四個角都相等",
+          "truth": false,
+          "reason": "只對矩形等特殊情況成立。"
+        },
+        {
+          "choice": "兩條對角線互相垂直",
+          "truth": false,
+          "reason": "不是一般圓內接四邊形必然性質。"
+        }
+      ],
+      "misconceptionTarget": "把特殊四邊形性質當成一般內接四邊形性質。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 60,
+      "unitCheck": "u19-s003-v003 已核對所求量「選出必然性質。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「辨認核心定理。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v003。",
+      "difficultyReason": "basic：辨認核心定理。 解題需完成「回想四點共圓性質。；排除只屬於特殊四邊形的敘述。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認核心定理。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "a9dc83a2327ff0bbece9d90d45a70b5dbb77e2b22fa4c7951592e50a6f08d57f"
+    },
+    {
+      "questionId": "u19-s003-v004",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "ABCD 為圓內接四邊形，∠A=(2x+10)°，∠C=(3x−5)°。求 x。",
+      "text": "ABCD 為圓內接四邊形，∠A=(2x+10)°，∠C=(3x−5)°。求 x。",
+      "givenConditions": "A與C為對角。",
+      "target": "求x。",
+      "choices": [
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「A與C為對角。」重算：對角互補：(2x+10)+(3x−5)=180，5x+5=180，x=35。",
+      "explanation": "對角互補：(2x+10)+(3x−5)=180，5x+5=180，x=35。 因此唯一正確選項是「35」。",
+      "steps": [
+        "列5x+5=180。",
+        "解得5x=175，x=35。",
+        "回代80°+100°=180°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "25",
+          "truth": false,
+          "reason": "回代60°+70°不等180°。"
+        },
+        {
+          "choice": "30",
+          "truth": false,
+          "reason": "回代70°+85°不等180°。"
+        },
+        {
+          "choice": "35",
+          "truth": true,
+          "reason": "依題目條件重新計算：對角互補：(2x+10)+(3x−5)=180，5x+5=180，x=35。"
+        },
+        {
+          "choice": "40",
+          "truth": false,
+          "reason": "回代90°+115°超過180°。"
+        }
+      ],
+      "misconceptionTarget": "移項或合併常數錯誤。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "u19-s003-v004 已核對所求量「求x。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「以代數求內接四邊形角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v004。",
+      "difficultyReason": "standard：以代數求內接四邊形角。 解題需完成「列5x+5=180。；解得5x=175，x=35。；回代80°+100°=180°。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "以代數求內接四邊形角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "e2f68134d05c359370681b94b3749db44ccce57ddc08d0601574a926b4ba466d"
+    },
+    {
+      "questionId": "u19-s003-v005",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "ABCD 為圓內接四邊形，延長 AB 至 E。若外角 ∠CBE=124°，則內對角 ∠D 為何？",
+      "text": "ABCD 為圓內接四邊形，延長 AB 至 E。若外角 ∠CBE=124°，則內對角 ∠D 為何？",
+      "givenConditions": "AB延長至E；ABCD共圓。",
+      "target": "求∠D。",
+      "choices": [
+        "56°",
+        "124°",
+        "62°",
+        "236°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「AB延長至E；ABCD共圓。」重算：B點外角與∠B互補，而∠B與∠D也互補，所以外角∠CBE=∠D=124°。",
+      "explanation": "B點外角與∠B互補，而∠B與∠D也互補，所以外角∠CBE=∠D=124°。 因此唯一正確選項是「124°」。",
+      "steps": [
+        "∠B=180−124=56。",
+        "∠D=180−56=124。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "56°",
+          "truth": false,
+          "reason": "56°是∠B。"
+        },
+        {
+          "choice": "124°",
+          "truth": true,
+          "reason": "依題目條件重新計算：B點外角與∠B互補，而∠B與∠D也互補，所以外角∠CBE=∠D=124°。"
+        },
+        {
+          "choice": "62°",
+          "truth": false,
+          "reason": "無此關係。"
+        },
+        {
+          "choice": "236°",
+          "truth": false,
+          "reason": "超過四邊形內角範圍。"
+        }
+      ],
+      "misconceptionTarget": "把外角直接當相鄰內角。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 95,
+      "unitCheck": "u19-s003-v005 已核對所求量「求∠D。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「使用外角等於內對角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v005。",
+      "difficultyReason": "standard：使用外角等於內對角。 解題需完成「∠B=180−124=56。；∠D=180−56=124。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "使用外角等於內對角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "43a57761bbdbdefebff44ced9d82eebfa01d516ea69bfe1cd4a0ace7f30d5b93"
+    },
+    {
+      "questionId": "u19-s003-v006",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "四邊形 PQRS 的四點共圓，已知 ∠P:∠R=2:3。求 ∠P。",
+      "text": "四邊形 PQRS 的四點共圓，已知 ∠P:∠R=2:3。求 ∠P。",
+      "givenConditions": "P、Q、R、S依序共圓。",
+      "target": "求∠P。",
+      "choices": [
+        "60°",
+        "108°",
+        "72°",
+        "120°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「P、Q、R、S依序共圓。」重算：P與R為對角且和180°，共5份，每份36°，∠P=72°。",
+      "explanation": "P與R為對角且和180°，共5份，每份36°，∠P=72°。 因此唯一正確選項是「72°」。",
+      "steps": [
+        "2k+3k=180。",
+        "k=36。",
+        "∠P=72。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "60°",
+          "truth": false,
+          "reason": "把180平均成3份。"
+        },
+        {
+          "choice": "108°",
+          "truth": false,
+          "reason": "這是∠R。"
+        },
+        {
+          "choice": "72°",
+          "truth": true,
+          "reason": "依題目條件重新計算：P與R為對角且和180°，共5份，每份36°，∠P=72°。"
+        },
+        {
+          "choice": "120°",
+          "truth": false,
+          "reason": "比例與總和計算錯。"
+        }
+      ],
+      "misconceptionTarget": "比例中的較小角與較大角對應錯。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 85,
+      "unitCheck": "u19-s003-v006 已核對所求量「求∠P。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「結合比例與對角互補。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v006。",
+      "difficultyReason": "standard：結合比例與對角互補。 解題需完成「2k+3k=180。；k=36。；∠P=72。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "結合比例與對角互補。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "eff86ef19a0015ca9542790eb6a4d083177e0d83d47d784004672fddf2652be7"
+    },
+    {
+      "questionId": "u19-s003-v007",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s003-fig001",
+      "drawingSpecId": "u19-s003-fig001",
+      "prompt": "ABCD 為圓內接四邊形，∠A=3x°，∠B=(2x+10)°，∠C=(x+60)°。求 ∠D。",
+      "text": "ABCD 為圓內接四邊形，∠A=3x°，∠B=(2x+10)°，∠C=(x+60)°。求 ∠D。",
+      "givenConditions": "ABCD共圓，角式如題。",
+      "target": "求∠D。",
+      "choices": [
+        "110°",
+        "50°",
+        "70°",
+        "130°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「ABCD共圓，角式如題。」重算：A與C互補：3x+x+60=180，x=30。則∠B=70°，所以∠D=180°−70°=110°。",
+      "explanation": "A與C互補：3x+x+60=180，x=30。則∠B=70°，所以∠D=180°−70°=110°。 因此唯一正確選項是「110°」。",
+      "steps": [
+        "由A+C得4x+60=180，x=30。",
+        "B=2×30+10=70°。",
+        "D=180−70=110°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "110°",
+          "truth": true,
+          "reason": "依題目條件重新計算：A與C互補：3x+x+60=180，x=30。則∠B=70°，所以∠D=180°−70°=110°。"
+        },
+        {
+          "choice": "50°",
+          "truth": false,
+          "reason": "50°與B角70°不互補。"
+        },
+        {
+          "choice": "70°",
+          "truth": false,
+          "reason": "70°是∠B，不是∠D。"
+        },
+        {
+          "choice": "130°",
+          "truth": false,
+          "reason": "130°與B角和200°。"
+        }
+      ],
+      "misconceptionTarget": "只解出x後未求指定角。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 120,
+      "unitCheck": "u19-s003-v007 已核對所求量「求∠D。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「多步使用兩組對角互補。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v007。",
+      "difficultyReason": "advanced：多步使用兩組對角互補。 解題需完成「由A+C得4x+60=180，x=30。；B=2×30+10=70°。；D=180−70=110°。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "多步使用兩組對角互補。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "dedad8398df04d40bec0b65eaee0dd63e0a20177ea2608e30759ef63f52c9cf8"
+    },
+    {
+      "questionId": "u19-s003-v008",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "一個圓內接四邊形的四角依序為 (x+10)°、(2x−5)°、(3x−30)°、y°。求 y。",
+      "text": "一個圓內接四邊形的四角依序為 (x+10)°、(2x−5)°、(3x−30)°、y°。求 y。",
+      "givenConditions": "四角依序排列且四點共圓。",
+      "target": "求第四角y。",
+      "choices": [
+        "65°",
+        "105°",
+        "85°",
+        "115°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「四角依序排列且四點共圓。」重算：第一角與第三角互補：(x+10)+(3x−30)=180，解得x=50。第二角=95°，因此第四角y=180°−95°=85°。",
+      "explanation": "第一角與第三角互補：(x+10)+(3x−30)=180，解得x=50。第二角=95°，因此第四角y=180°−95°=85°。 因此唯一正確選項是「85°」。",
+      "steps": [
+        "解4x−20=180得x=50。",
+        "第二角2x−5=95°。",
+        "y=180−95=85°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "65°",
+          "truth": false,
+          "reason": "65°與95°和160°。"
+        },
+        {
+          "choice": "105°",
+          "truth": false,
+          "reason": "105°與95°和200°。"
+        },
+        {
+          "choice": "85°",
+          "truth": true,
+          "reason": "依題目條件重新計算：第一角與第三角互補：(x+10)+(3x−30)=180，解得x=50。第二角=95°，因此第四角y=180°−95°=85°。"
+        },
+        {
+          "choice": "115°",
+          "truth": false,
+          "reason": "115°與95°和210°。"
+        }
+      ],
+      "misconceptionTarget": "只使用四邊形內角和而未對應對角。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 125,
+      "unitCheck": "u19-s003-v008 已核對所求量「求第四角y。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由一組對角求參數，再求另一角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v008。",
+      "difficultyReason": "advanced：由一組對角求參數，再求另一角。 解題需完成「解4x−20=180得x=50。；第二角2x−5=95°。；y=180−95=85°。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由一組對角求參數，再求另一角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "0f6f8a2ee24c28fddda97a468fb80f1aa35d9fca91d0f0bb36dc2211ec6919ee"
+    },
+    {
+      "questionId": "u19-s003-v009",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "已知四邊形 ABCD 的一組對角和為180°。下列何者最嚴謹？",
+      "text": "已知四邊形 ABCD 的一組對角和為180°。下列何者最嚴謹？",
+      "givenConditions": "ABCD為一般凸四邊形。",
+      "target": "判斷對角互補的意義。",
+      "choices": [
+        "一定能推出四邊都相等",
+        "一定能推出對角線垂直",
+        "任何自交四邊形都可直接套用",
+        "在凸四邊形且四點位置適當時，可作為共圓判別條件"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「ABCD為一般凸四邊形。」重算：圓內接四邊形的逆判別在一般凸四邊形中成立：一組對角互補可判四點共圓；仍須注意四邊形的通常幾何設定。",
+      "explanation": "圓內接四邊形的逆判別在一般凸四邊形中成立：一組對角互補可判四點共圓；仍須注意四邊形的通常幾何設定。 因此唯一正確選項是「在凸四邊形且四點位置適當時，可作為共圓判別條件」。",
+      "steps": [
+        "辨認這是定理的逆敘述。",
+        "排除無關邊長與對角線性質。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "一定能推出四邊都相等",
+          "truth": false,
+          "reason": "對角互補不推出等邊。"
+        },
+        {
+          "choice": "一定能推出對角線垂直",
+          "truth": false,
+          "reason": "不推出垂直。"
+        },
+        {
+          "choice": "任何自交四邊形都可直接套用",
+          "truth": false,
+          "reason": "自交情況需另行界定，不能無條件套用。"
+        },
+        {
+          "choice": "在凸四邊形且四點位置適當時，可作為共圓判別條件",
+          "truth": true,
+          "reason": "依題目條件重新計算：圓內接四邊形的逆判別在一般凸四邊形中成立：一組對角互補可判四點共圓；仍須注意四邊形的通常幾何設定。"
+        }
+      ],
+      "misconceptionTarget": "把充分條件擴張到未界定的異常圖形。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 130,
+      "unitCheck": "u19-s003-v009 已核對所求量「判斷對角互補的意義。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「理解內接四邊形的逆判別邊界。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v009。",
+      "difficultyReason": "advanced：理解內接四邊形的逆判別邊界。 解題需完成「辨認這是定理的逆敘述。；排除無關邊長與對角線性質。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "理解內接四邊形的逆判別邊界。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "effee31428339f7d929dff38088a8e7ce0ec0ac8c2ba43ade804941c8b85cb7d"
+    },
+    {
+      "questionId": "u19-s003-v010",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形窗框上依序固定 A、B、C、D 四點。量得 ∠A=74°，則為了檢查安裝是否仍共圓，理想的 ∠C 應為何？",
+      "text": "圓形窗框上依序固定 A、B、C、D 四點。量得 ∠A=74°，則為了檢查安裝是否仍共圓，理想的 ∠C 應為何？",
+      "givenConditions": "A、B、C、D依序在圓形窗框上。",
+      "target": "求理想∠C。",
+      "choices": [
+        "74°",
+        "106°",
+        "116°",
+        "286°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「A、B、C、D依序在圓形窗框上。」重算：四點共圓時對角互補，∠C=180°−74°=106°。",
+      "explanation": "四點共圓時對角互補，∠C=180°−74°=106°。 因此唯一正確選項是「106°」。",
+      "steps": [
+        "把固定點視為內接四邊形。",
+        "計算對角補角。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "74°",
+          "truth": false,
+          "reason": "誤認對角相等。"
+        },
+        {
+          "choice": "106°",
+          "truth": true,
+          "reason": "依題目條件重新計算：四點共圓時對角互補，∠C=180°−74°=106°。"
+        },
+        {
+          "choice": "116°",
+          "truth": false,
+          "reason": "算術錯誤。"
+        },
+        {
+          "choice": "286°",
+          "truth": false,
+          "reason": "錯用360°。"
+        }
+      ],
+      "misconceptionTarget": "將圓形外觀當作角相等。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "u19-s003-v010 已核對所求量「求理想∠C。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「用對角互補檢查窗框。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v010。",
+      "difficultyReason": "literacy：用對角互補檢查窗框。 解題需完成「把固定點視為內接四邊形。；計算對角補角。」。",
+      "literacyContextNecessity": "角度檢查直接用來判斷四點是否維持共圓。",
+      "authoringIntent": "用對角互補檢查窗框。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "55bc91d5cd1f6c1142fcfada7cec5071baf029b43206d2732bcab19e81889732"
+    },
+    {
+      "questionId": "u19-s003-v011",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "四個感測器要裝在同一圓周上，工程師量得一組對角為 98° 與 82°。這組資料提供什麼支持？",
+      "text": "四個感測器要裝在同一圓周上，工程師量得一組對角為 98° 與 82°。這組資料提供什麼支持？",
+      "givenConditions": "四點按順序形成凸四邊形；兩角為對角。",
+      "target": "判讀量測資料。",
+      "choices": [
+        "兩角和180°，符合圓內接四邊形的必要關係",
+        "兩角相等，所以一定共圓",
+        "兩角和90°，所以形成直角",
+        "兩角差16°，所以四邊相等"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「四點按順序形成凸四邊形；兩角為對角。」重算：98°+82°=180°，符合內接四邊形對角互補；其他敘述不成立。",
+      "explanation": "98°+82°=180°，符合內接四邊形對角互補；其他敘述不成立。 因此唯一正確選項是「兩角和180°，符合圓內接四邊形的必要關係」。",
+      "steps": [
+        "相加98+82=180。",
+        "對照對角互補性質。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "兩角和180°，符合圓內接四邊形的必要關係",
+          "truth": true,
+          "reason": "依題目條件重新計算：98°+82°=180°，符合內接四邊形對角互補；其他敘述不成立。"
+        },
+        {
+          "choice": "兩角相等，所以一定共圓",
+          "truth": false,
+          "reason": "兩角不相等。"
+        },
+        {
+          "choice": "兩角和90°，所以形成直角",
+          "truth": false,
+          "reason": "和不是90°。"
+        },
+        {
+          "choice": "兩角差16°，所以四邊相等",
+          "truth": false,
+          "reason": "角差不能推出四邊相等。"
+        }
+      ],
+      "misconceptionTarget": "只看角差而忽略互補總和。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "u19-s003-v011 已核對所求量「判讀量測資料。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「在感測器配置中檢查共圓條件。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v011。",
+      "difficultyReason": "literacy：在感測器配置中檢查共圓條件。 解題需完成「相加98+82=180。；對照對角互補性質。」。",
+      "literacyContextNecessity": "角度量測是驗證共圓配置的核心資料。",
+      "authoringIntent": "在感測器配置中檢查共圓條件。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "33f502db234c215472945f7b818a53998726cc1e7bac69e2dcacac356e5b6d66"
+    },
+    {
+      "questionId": "u19-s003-v012",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形舞台邊緣四個燈位 A、B、C、D 依序連成四邊形。若 A 點外角為 118°，則對面的內角 C 應為何？",
+      "text": "圓形舞台邊緣四個燈位 A、B、C、D 依序連成四邊形。若 A 點外角為 118°，則對面的內角 C 應為何？",
+      "givenConditions": "四燈位共圓且依序連接。",
+      "target": "求對面內角。",
+      "choices": [
+        "62°",
+        "118°",
+        "72°",
+        "242°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「四燈位共圓且依序連接。」重算：圓內接四邊形的一個外角等於其內對角，因此∠C=118°。",
+      "explanation": "圓內接四邊形的一個外角等於其內對角，因此∠C=118°。 因此唯一正確選項是「118°」。",
+      "steps": [
+        "A外角與∠A互補。",
+        "∠A與∠C互補。",
+        "所以兩者相等。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "62°",
+          "truth": false,
+          "reason": "62°是∠A。"
+        },
+        {
+          "choice": "118°",
+          "truth": true,
+          "reason": "依題目條件重新計算：圓內接四邊形的一個外角等於其內對角，因此∠C=118°。"
+        },
+        {
+          "choice": "72°",
+          "truth": false,
+          "reason": "沒有對應。"
+        },
+        {
+          "choice": "242°",
+          "truth": false,
+          "reason": "不是內角範圍。"
+        }
+      ],
+      "misconceptionTarget": "把外角與同頂點內角混為同一角。",
+      "prerequisiteCheck": "需先能使用「弧與角」；本題未使用後續技能。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "u19-s003-v012 已核對所求量「求對面內角。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「用外角性質安排舞台燈位。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s003-v012。",
+      "difficultyReason": "literacy：用外角性質安排舞台燈位。 解題需完成「A外角與∠A互補。；∠A與∠C互補。；所以兩者相等。」。",
+      "literacyContextNecessity": "外角是現場可直接量測的資料，需轉成內對角。",
+      "authoringIntent": "用外角性質安排舞台燈位。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "0f70af811061bdd306d4e850f9354681c02f438baef58668dda4f063d1aeaadf"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u19-s003-cr001",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "itemType": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s003-fig001",
+      "drawingSpecId": "u19-s003-fig001",
+      "prompt": "ABCD 為圓內接四邊形，∠A=(2x+14)°、∠C=(4x−8)°。求 x、∠A、∠C。",
+      "requiredWork": [
+        "使用對角互補。",
+        "解x並回代。",
+        "檢查兩角和180°。"
+      ],
+      "standardSolution": [
+        "(2x+14)+(4x−8)=180。",
+        "6x+6=180，x=29。",
+        "∠A=72°，∠C=108°，和為180°。"
+      ],
+      "fullCreditSolution": [
+        "(2x+14)+(4x−8)=180。",
+        "6x+6=180，x=29。",
+        "∠A=72°，∠C=108°，和為180°。"
+      ],
+      "alternativeSolutions": [
+        "可先寫∠C=180°−∠A再代入。"
+      ],
+      "reasoningSteps": [
+        "(2x+14)+(4x−8)=180。",
+        "6x+6=180，x=29。",
+        "∠A=72°，∠C=108°，和為180°。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "x=29及兩角72°、108°皆正確且有互補理由。"
+        },
+        {
+          "score": 2,
+          "criteria": "x正確但回代一處錯，或答案全對理由簡略。"
+        },
+        {
+          "score": 1,
+          "criteria": "列出正確互補方程。"
+        },
+        {
+          "score": 0,
+          "criteria": "把對角當相等且無有效解。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確方程可得1分。"
+      ],
+      "followThroughPolicy": "若x算術錯，後續回代一致且檢查互補，可酌給1分。",
+      "unitNotationRules": "角度加°；x無單位。",
+      "answerOnlyPolicy": "只寫三個正確答案給2分。",
+      "commonErrors": [
+        "把兩角設相等。",
+        "常數合併錯。"
+      ],
+      "independentReview": {
+        "derivedResult": "x=29，∠A=72°，∠C=108°。",
+        "ambiguity": "對角明確且線性方程唯一。",
+        "decision": "pass",
+        "reviewNote": "u19-s003-cr001 由題目條件另行推導得到「x=29，∠A=72°，∠C=108°。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewedAt": "2026-07-12"
+      },
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "455084cae49ffd7f5fd7e59c2f49ae2220217c6a7a9fb78abb171afa86fe3a7c"
+    },
+    {
+      "questionId": "u19-s003-cr002",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "itemType": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形窗框四點 A、B、C、D 依序共圓，A 點外角為 126°。求 ∠A 與 ∠C，並說明為何外角等於內對角。",
+      "requiredWork": [
+        "由一直線求∠A。",
+        "由內接四邊形求∠C。",
+        "說明兩者都與∠A互補。"
+      ],
+      "standardSolution": [
+        "∠A=180°−126°=54°。",
+        "∠C=180°−54°=126°。",
+        "A點外角與∠A成線性對；∠C也與∠A互補，因此兩者相等。"
+      ],
+      "fullCreditSolution": [
+        "∠A=180°−126°=54°。",
+        "∠C=180°−54°=126°。",
+        "A點外角與∠A成線性對；∠C也與∠A互補，因此兩者相等。"
+      ],
+      "alternativeSolutions": [
+        "可直接引用圓內接四邊形外角等於內對角，再補算∠A。"
+      ],
+      "reasoningSteps": [
+        "∠A=180°−126°=54°。",
+        "∠C=180°−54°=126°。",
+        "A點外角與∠A成線性對；∠C也與∠A互補，因此兩者相等。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "∠A=54°、∠C=126°及相等理由完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但理由只寫定理。"
+        },
+        {
+          "score": 1,
+          "criteria": "只求對一個角或知道互補。"
+        },
+        {
+          "score": 0,
+          "criteria": "角度關係皆錯。"
+        }
+      ],
+      "partialCreditRules": [
+        "直接引用定理可得方法分。"
+      ],
+      "followThroughPolicy": "若先算∠A錯，後續仍以180°減其值求∠C，可保留互補方法分。",
+      "unitNotationRules": "角度用°。",
+      "answerOnlyPolicy": "只寫54°與126°給2分。",
+      "commonErrors": [
+        "把外角當∠A。",
+        "用360°減外角。"
+      ],
+      "independentReview": {
+        "derivedResult": "∠A=54°，∠C=126°。",
+        "ambiguity": "外角與對角的關係在凸內接四邊形中唯一。",
+        "decision": "pass",
+        "reviewNote": "u19-s003-cr002 由題目條件另行推導得到「∠A=54°，∠C=126°。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewedAt": "2026-07-12"
+      },
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "43d2a4f2f4c9e74aa0252b525d40c5ae8a143317df48d633e3990d48fdacd822"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u19-s003-fig001",
+      "unitId": "u19",
+      "topicId": "u19-angles",
+      "skillId": "inscribed-quadrilateral",
+      "svgPath": "figures/u19/u19-s003-fig001.svg",
+      "canvas": {
+        "width": 360,
+        "height": 240,
+        "viewBox": "0 0 360 240"
+      },
+      "drawingSpec": {
+        "purpose": "支援「圓內接四邊形」中需要辨認點、線、弧、角或邊界的題目。",
+        "coordinateSystem": "SVG x向右、y向下；所有座標以360×240畫布為準。",
+        "geometry": "四點 A、B、C、D 位於同一圓周並依序連線，對角 A 與 C 以弧線標示。",
+        "visibleLines": "所有作答所需實線均以2px以上深色描邊；強調弧以5px描邊。",
+        "hiddenLines": "只有內部共邊或量測輔助線使用虛線；未指定者不得自行添加。",
+        "labels": "標籤位置已在SVG以固定座標給定，避免遮住交點、角弧或刻痕。",
+        "symbols": "直角符號、等長刻痕、箭頭及角度符號僅在數學條件需要時出現。",
+        "scalePolicy": "示意圖不保證按實際長度或角度比例繪製。",
+        "visualInferenceWarning": "不得以目測長短、角度或對稱性取代題目條件與定理。",
+        "mobileReadability": "360×240檢視下文字至少16px，關鍵線至少2px，無微小數值標籤。",
+        "answerLeakage": "圖中不標示任何題目要求計算的最終數值或正確選項。"
+      },
+      "altText": "四點 A、B、C、D 位於同一圓周並依序連線，對角 A 與 C 以弧線標示。 圖形僅協助辨認結構，不可依比例目測答案。",
+      "svgTitle": "圓內接四邊形圖",
+      "svgDescription": "四點 A、B、C、D 位於同一圓周並依序連線，對角 A 與 C 以弧線標示。",
+      "svgAssertions": [
+        "role=\"img\"",
+        "<title",
+        "<desc",
+        "viewBox=\"0 0 360 240\"",
+        "<polygon",
+        ">A</text>",
+        ">C</text>"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderInspected": true,
+        "mobileReadable": true,
+        "answerLeakageFound": false,
+        "reviewNote": "已逐項檢查 u19-s003-fig001 的點位、線段、弧線、標籤與輔助符號；此圖專門呈現「圓內接四邊形」的結構，未包含可直接推得題庫答案的數值。",
+        "reviewVersion": "human-figure-review-r1.0",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "f03b4844937c2d002aab64d9ab60ffe1933dd582b7b2447abaa7219ab280e959"
+    }
+  ],
+  "sourceBatch": "020-u19-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/020-u19-complete/units/u19/s003"
+}

@@ -1,0 +1,1463 @@
+{
+  "slot": "s001",
+  "skillId": "quadratic-function-graph",
+  "topicId": "u21-basics",
+  "title": "從輸入輸出到拋物線：認識二次函數圖形",
+  "lecture": {
+    "lectureId": "u21-s001-lecture-r1",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-basics",
+    "skillId": "quadratic-function-graph",
+    "lockedTitle": "拋物線圖形",
+    "title": "從輸入輸出到拋物線：認識二次函數圖形",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "gradeBand": "9下",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-function-graph"
+    },
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能判斷一個式子是否為一元二次函數。",
+      "能由數值表把點標在座標平面上。",
+      "能說明二次函數圖形為平滑且左右對稱的拋物線。",
+      "能區分函數圖形與單獨幾個資料點。"
+    ],
+    "prerequisites": [],
+    "prerequisiteBridge": "本技能是 U21 的起點；先複習座標點 (x,y)、代入與平方的意義，不要求先知道拋物線公式。",
+    "glossary": [
+      {
+        "term": "函數",
+        "definition": "每一個允許的 x 都只對應一個 y 的規則。"
+      },
+      {
+        "term": "二次函數",
+        "definition": "最高次項為 x²，且 x² 的係數不為 0 的一元函數。"
+      },
+      {
+        "term": "圖形",
+        "definition": "所有符合函數規則的座標點所形成的集合。"
+      },
+      {
+        "term": "拋物線",
+        "definition": "二次函數在座標平面上的平滑 U 形或倒 U 形曲線。"
+      },
+      {
+        "term": "係數",
+        "definition": "乘在變數或其冪次前的數。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "(x,y)",
+        "meaning": "座標點，x 是橫座標，y 是縱座標。"
+      },
+      {
+        "symbol": "y=ax²+bx+c",
+        "meaning": "一元二次函數的一般表示，a≠0。"
+      },
+      {
+        "symbol": "x²",
+        "meaning": "x×x，不是 2x。"
+      }
+    ],
+    "conceptNarrative": [
+      "先從規則 y=x² 觀察：x=-2,-1,0,1,2 時，y=4,1,0,1,4。把這五個點標出後，左右兩側出現成對的高度。",
+      "函數圖形不是只由五個點組成；所有實數 x 都能代入，因此點與點之間還有無限多個點，連成平滑曲線。",
+      "二次函數的最高次為 2，所以它不同於直線函數 y=mx+b。圖形通常會彎曲，且具有一條對稱軸。",
+      "式子中即使有 x²，只要 x² 項互相消掉，最後最高次不是 2，就不能視為二次函數。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "一元二次函數",
+        "statement": "可整理為 y=ax²+bx+c，且 a、b、c 為常數、a≠0 的函數。"
+      },
+      {
+        "name": "拋物線圖形",
+        "statement": "所有滿足二次函數方程式的點 (x,y) 所形成的連續曲線。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "y=ax²+bx+c",
+        "conditions": [
+          "a≠0",
+          "x 為自變數",
+          "a、b、c 為固定常數"
+        ],
+        "meaning": "判斷是否為一元二次函數的基本形式。"
+      },
+      {
+        "formula": "x²=x×x",
+        "conditions": [
+          "x 可為正數、0 或負數"
+        ],
+        "meaning": "負數平方後為非負數。"
+      }
+    ],
+    "nonApplicableCases": [
+      "y=3x+2 的最高次是 1，圖形是直線，不是二次函數。",
+      "y=5/x 含有 x 在分母，不能整理成 ax²+bx+c。",
+      "y=(x+1)²-x² 可整理成 2x+1，二次項消去後不是二次函數。",
+      "只看到三個散點不能直接斷定它們來自二次函數，還需要規則或更多條件。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先把式子整理並確認只有一個變數 x。",
+        "check": "是否可寫成多項式形式？"
+      },
+      {
+        "step": 2,
+        "instruction": "找最高次項。",
+        "check": "最高次是否恰為 2，且係數不為 0？"
+      },
+      {
+        "step": 3,
+        "instruction": "選幾個 x 值代入求 y。",
+        "check": "平方與負號是否正確？"
+      },
+      {
+        "step": 4,
+        "instruction": "把所得座標點依刻度標出。",
+        "check": "橫軸是 x、縱軸是 y 嗎？"
+      },
+      {
+        "step": 5,
+        "instruction": "用平滑曲線連接並觀察對稱。",
+        "check": "沒有把曲線畫成折線，也沒有任意延伸到錯誤方向。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "判斷 y=2x²-3x+1 是否為二次函數。",
+        "solutionSteps": [
+          "最高次項為 2x²。",
+          "x² 的係數 2 不為 0。"
+        ],
+        "answer": "是二次函數。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "判斷 y=(x+2)(x-2)-x² 是否為二次函數。",
+        "solutionSteps": [
+          "展開得 x²-4-x²。",
+          "整理為 y=-4，最高次為 0。"
+        ],
+        "answer": "不是二次函數。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "求 y=x² 在 x=-3 與 x=2 時的點。",
+        "solutionSteps": [
+          "x=-3 時 y=(-3)²=9。",
+          "x=2 時 y=2²=4。"
+        ],
+        "answer": "(-3,9) 與 (2,4)。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "y=-x² 的圖形和 y=x² 的主要方向有何不同？",
+        "solutionSteps": [
+          "相同 x 下，y 值互為相反數。",
+          "所有點相當於對 x 軸上下翻轉。"
+        ],
+        "answer": "y=-x² 開口向下，y=x² 開口向上。"
+      },
+      {
+        "exampleId": "L5",
+        "prompt": "為什麼 y=x² 的 (-4,16) 與 (4,16) 成對出現？",
+        "solutionSteps": [
+          "(-4)²=16。",
+          "4²=16，正負相反的 x 平方相同。"
+        ],
+        "answer": "因平方使相反數得到相同函數值。"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "辨認二次函數與代入平方。",
+      "standard": "由表格或式子判讀拋物線特徵。",
+      "advanced": "處理整理後二次項消去或複合條件。",
+      "literacy": "把高度、面積或距離模型中的 x 與 y 對應到拋物線。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "把 x² 看成 2x。",
+        "why": "混淆平方與乘以 2。",
+        "correction": "把 x² 寫成 x×x 再代入。"
+      },
+      {
+        "mistake": "負數平方仍寫負數。",
+        "why": "漏掉括號。",
+        "correction": "(-3)²=(-3)×(-3)=9。"
+      },
+      {
+        "mistake": "只要看見 x² 就認定是二次函數。",
+        "why": "未先整理同類項。",
+        "correction": "先展開化簡，再判斷最高次。"
+      },
+      {
+        "mistake": "把幾個點用折線連起來。",
+        "why": "把函數表當成離散資料。",
+        "correction": "二次函數在實數範圍內形成平滑曲線。"
+      },
+      {
+        "mistake": "交換 x 軸與 y 軸。",
+        "why": "沒有按座標順序讀點。",
+        "correction": "(x,y) 先橫後縱。"
+      },
+      {
+        "mistake": "認為拋物線一定開口向上。",
+        "why": "忽略 x² 係數可為負。",
+        "correction": "先看最高次係數的正負。"
+      }
+    ],
+    "selfCheckItems": [
+      {
+        "prompt": "y=7-2x² 是否為二次函數？",
+        "answer": "是，x² 係數為 -2。"
+      },
+      {
+        "prompt": "y=x(x+1)-x² 是否為二次函數？",
+        "answer": "不是，整理為 y=x。"
+      },
+      {
+        "prompt": "y=x² 在 x=-2 時的 y 值？",
+        "answer": "4。"
+      },
+      {
+        "prompt": "函數圖形只包含表格列出的點嗎？",
+        "answer": "不是，所有允許的 x 都有對應點。"
+      }
+    ],
+    "summary": [
+      "二次函數可整理為 y=ax²+bx+c 且 a≠0。",
+      "其圖形是平滑的拋物線，不是折線。",
+      "作圖時先代入、標點，再依函數特徵連成曲線。",
+      "判斷前必須先整理，避免二次項其實已消去。"
+    ],
+    "connections": {
+      "previous": "承接座標、代入與平方運算。",
+      "next": [
+        "下一技能會在拋物線上找出頂點與對稱軸。",
+        "後續會用係數與頂點式預測圖形。"
+      ]
+    },
+    "figureReferences": [
+      "u21-fig-s001-01"
+    ],
+    "accessibilityNotes": [
+      "圖中以實線曲線、粗黑座標軸與文字標籤共同表達，不只依靠顏色。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u21-s001-v001",
+        "u21-s001-v002",
+        "u21-s001-v003",
+        "u21-s001-v004",
+        "u21-s001-v005",
+        "u21-s001-v006",
+        "u21-s001-v007",
+        "u21-s001-v008",
+        "u21-s001-v009",
+        "u21-s001-v010",
+        "u21-s001-v011",
+        "u21-s001-v012"
+      ],
+      "constructedResponseIds": [
+        "u21-s001-cr001",
+        "u21-s001-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "臺灣國中會考二次函數範圍",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐段重算 y=x² 的對稱點、二次項消去例與負號平方；確認一般式僅作辨認用途，未引入微積分或高中函數理論。",
+      "reviewVersion": "human-lecture-u21-r1",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "93ddde24c475e0ca56efb9ad2483598770c69da5261d8d21a142630c962ba1bb"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u21-s001-v001",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "下列哪一個式子表示一元二次函數？",
+      "givenConditions": [
+        "式子皆已整理",
+        "x 為自變數"
+      ],
+      "target": "辨認最高次恰為 2 且二次項係數非零的函數",
+      "text": "下列哪一個式子表示一元二次函數？",
+      "choices": [
+        "y=3x²-2x+5",
+        "y=4x-7",
+        "y=6/x",
+        "y=9"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "將四式化為標準形式後，第一式的最高次是 2；其餘分別為一次、分式與常數。",
+      "explanation": "先查看每個式子的最高次與形式；只有 y=3x²-2x+5 符合 y=ax²+bx+c 且 a≠0。",
+      "steps": [
+        "逐式確認是否為多項式",
+        "找最高次與 x² 係數"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "y=3x²-2x+5",
+          "truth": true,
+          "reason": "最高次為 2，且 x² 係數 3 不為 0。"
+        },
+        {
+          "choice": "y=4x-7",
+          "truth": false,
+          "reason": "最高次為 1，是一次函數。"
+        },
+        {
+          "choice": "y=6/x",
+          "truth": false,
+          "reason": "x 在分母，不能整理成二次多項式。"
+        },
+        {
+          "choice": "y=9",
+          "truth": false,
+          "reason": "是常數函數，最高次為 0。"
+        }
+      ],
+      "misconceptionTarget": "看到 x 或數值較大就誤判為二次函數",
+      "concept": "二次函數定義",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 60,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「辨認最高次恰為 2 且二次項係數非零的函數」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「看到 x 或數值較大就誤判為二次函數」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "basic：直接用定義辨認二次函數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "直接用定義辨認二次函數",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "30d96ac601065cbf73b0b8250352d967fcbc8cc17590608e9375022d39685928"
+    },
+    {
+      "questionId": "u21-s001-v002",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "函數 y=x² 中，當 x=-4 時，y 的值是多少？",
+      "givenConditions": [
+        "y=x²",
+        "x=-4"
+      ],
+      "target": "正確計算負數的平方",
+      "text": "函數 y=x² 中，當 x=-4 時，y 的值是多少？",
+      "choices": [
+        "-16",
+        "16",
+        "-8",
+        "8"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "直接重算 (-4)²=16，因此答案為 16。",
+      "explanation": "代入時必須寫括號：y=(-4)²，兩個負數相乘得到正 16。",
+      "steps": [
+        "把 -4 連同負號放入括號",
+        "計算 (-4)×(-4)"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-16",
+          "truth": false,
+          "reason": "把負號錯誤保留在平方結果。"
+        },
+        {
+          "choice": "16",
+          "truth": true,
+          "reason": "(-4)²=(-4)×(-4)=16。"
+        },
+        {
+          "choice": "-8",
+          "truth": false,
+          "reason": "把 x² 誤作 2x。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "既誤作 2x 又忽略符號。"
+        }
+      ],
+      "misconceptionTarget": "負數平方仍為負數",
+      "concept": "平方運算與函數代入",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「正確計算負數的平方」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「負數平方仍為負數」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "basic：正確代入負數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "正確代入負數",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3b4228632bca66a462e8874a992af18bc1314143b3b57ad0cfb1a9aab7505a9e"
+    },
+    {
+      "questionId": "u21-s001-v003",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "figure",
+      "figureId": "u21-fig-s001-01",
+      "drawingSpecId": "u21-draw-s001-01",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "依圖 u21-fig-s001-01，哪一個點位在 y=x² 的拋物線上？",
+      "givenConditions": [
+        "圖上座標軸每格 1 單位",
+        "可用方程式驗證"
+      ],
+      "target": "用代入判斷圖上點",
+      "text": "依圖 u21-fig-s001-01，哪一個點位在 y=x² 的拋物線上？",
+      "choices": [
+        "(2,2)",
+        "(-2,-4)",
+        "(2,4)",
+        "(3,6)"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "獨立檢查：2²=4；其餘三點代入所得 y 分別不等於標示值。",
+      "explanation": "圖形提供位置線索，但仍代入驗證；只有 (2,4) 滿足 y=x²。",
+      "steps": [
+        "把各點的 x 平方",
+        "與該點 y 比較"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "(2,2)",
+          "truth": false,
+          "reason": "2²=4，不是 2。"
+        },
+        {
+          "choice": "(-2,-4)",
+          "truth": false,
+          "reason": "(-2)²=4，不是 -4。"
+        },
+        {
+          "choice": "(2,4)",
+          "truth": true,
+          "reason": "2²=4，座標符合方程式。"
+        },
+        {
+          "choice": "(3,6)",
+          "truth": false,
+          "reason": "3²=9，不是 6。"
+        }
+      ],
+      "misconceptionTarget": "只憑點看起來靠近曲線",
+      "concept": "圖上點判準",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 65,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「用代入判斷圖上點」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「只憑點看起來靠近曲線」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "圖形提供必要資訊；只使用標示的座標、刻度與曲線關係，不以外觀估測。"
+      },
+      "difficultyReason": "basic：由圖與式共同驗證點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由圖與式共同驗證點",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "5b98806c8bf5d73ce00697aef9c7f71683d89bbc0911a99498d5a423c9020d8b"
+    },
+    {
+      "questionId": "u21-s001-v004",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "將 y=(x+1)²-x² 化簡後，這個函數的圖形是哪一類？",
+      "givenConditions": [
+        "先完整展開",
+        "再判斷最高次"
+      ],
+      "target": "判斷二次項消去後的函數類型",
+      "text": "將 y=(x+1)²-x² 化簡後，這個函數的圖形是哪一類？",
+      "choices": [
+        "開口向上的拋物線",
+        "開口向下的拋物線",
+        "水平直線",
+        "直線"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "重算得到 y=2x+1，最高次為 1，所以是直線。",
+      "explanation": "展開平方並合併同類項後只剩 2x+1，因此圖形是斜直線。",
+      "steps": [
+        "展開 (x+1)²",
+        "消去 x² 並判最高次"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "開口向上的拋物線",
+          "truth": false,
+          "reason": "二次項已完全消去。"
+        },
+        {
+          "choice": "開口向下的拋物線",
+          "truth": false,
+          "reason": "沒有負的二次項留下。"
+        },
+        {
+          "choice": "水平直線",
+          "truth": false,
+          "reason": "化簡後仍含 2x，不是常數。"
+        },
+        {
+          "choice": "直線",
+          "truth": true,
+          "reason": "展開為 x²+2x+1-x²=2x+1，為一次函數。"
+        }
+      ],
+      "misconceptionTarget": "看見原式有平方就直接認為是拋物線",
+      "concept": "整理後再判斷函數類型",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 85,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「判斷二次項消去後的函數類型」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「看見原式有平方就直接認為是拋物線」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "standard：辨認二次項消去；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認二次項消去",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "636aa603f94297aaa5eac846c462d5264ffb22c7c84084d075d06b3b877982ab"
+    },
+    {
+      "questionId": "u21-s001-v005",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "函數 y=-2x²+3 的圖形必定具有下列哪一個特徵？",
+      "givenConditions": [
+        "二次項係數 -2",
+        "沒有一次項"
+      ],
+      "target": "從式子判斷基本拋物線特徵",
+      "text": "函數 y=-2x²+3 的圖形必定具有下列哪一個特徵？",
+      "choices": [
+        "圖形是一條直線",
+        "圖形關於 y 軸對稱",
+        "圖形只在 x≥0 出現",
+        "圖形通過原點"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "代入 -x 後函數值不變，且 y(0)=3；因此唯一正確特徵是 y 軸對稱。",
+      "explanation": "因式子只含 x² 與常數，正負相反的 x 有相同 y，故關於 y 軸對稱。",
+      "steps": [
+        "比較 f(x) 與 f(-x)",
+        "檢查其他敘述"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "圖形是一條直線",
+          "truth": false,
+          "reason": "x² 係數不為 0，仍是二次函數。"
+        },
+        {
+          "choice": "圖形關於 y 軸對稱",
+          "truth": true,
+          "reason": "f(-x)=-2(-x)²+3=-2x²+3=f(x)。"
+        },
+        {
+          "choice": "圖形只在 x≥0 出現",
+          "truth": false,
+          "reason": "函數可代入所有實數 x。"
+        },
+        {
+          "choice": "圖形通過原點",
+          "truth": false,
+          "reason": "x=0 時 y=3，不通過原點。"
+        }
+      ],
+      "misconceptionTarget": "把所有拋物線都認為通過原點",
+      "concept": "偶次平方造成對稱",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「從式子判斷基本拋物線特徵」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「把所有拋物線都認為通過原點」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "standard：由方程式判讀對稱與截距；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由方程式判讀對稱與截距",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3d35dfedae6aa05806c772c7bb1d27d9e4f9ac523438833f899a2d1c90d095c2"
+    },
+    {
+      "questionId": "u21-s001-v006",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "某函數表如下：x=-2,-1,0,1,2 時，y 分別為 4,1,0,1,4。下列敘述何者最合理？",
+      "givenConditions": [
+        "表格列出五組對應",
+        "未宣稱只有這五個 x"
+      ],
+      "target": "由值表辨認 y=x² 的拋物線特徵",
+      "text": "某函數表如下：x=-2,-1,0,1,2 時，y 分別為 4,1,0,1,4。下列敘述何者最合理？",
+      "choices": [
+        "一定是直線 y=2x",
+        "函數只包含五個點",
+        "可能是 y=x² 的部分值表",
+        "對稱軸是 x=2"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "五列均滿足 y=x²，故可作為該函數的部分值表；另外三個敘述各與代入或連續性衝突。",
+      "explanation": "逐列比較可知 y=x²；表格只是抽樣點，且左右對稱中心在 x=0。",
+      "steps": [
+        "驗證各列平方關係",
+        "由等高配對找中心"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "一定是直線 y=2x",
+          "truth": false,
+          "reason": "x=-2 時應為 -4，與表格不符。"
+        },
+        {
+          "choice": "函數只包含五個點",
+          "truth": false,
+          "reason": "表格只是部分輸入，二次函數還有其他點。"
+        },
+        {
+          "choice": "可能是 y=x² 的部分值表",
+          "truth": true,
+          "reason": "每個 y 都等於相對應 x 的平方。"
+        },
+        {
+          "choice": "對稱軸是 x=2",
+          "truth": false,
+          "reason": "成對等高值顯示軸在 x=0。"
+        }
+      ],
+      "misconceptionTarget": "把有限表格誤認為完整圖形",
+      "concept": "表格作為函數部分表徵",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「由值表辨認 y=x² 的拋物線特徵」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「把有限表格誤認為完整圖形」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "standard：由表格辨認二次規則；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由表格辨認二次規則",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "196105b1d985bbc021a6df1d6b9930226ad8fe902e7e3ae494a0d1b5a2a6fa16"
+    },
+    {
+      "questionId": "u21-s001-v007",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "下列哪一個式子雖含有 x²，但化簡後不是二次函數？",
+      "givenConditions": [
+        "每式均需先展開或合併",
+        "判斷化簡後最高次"
+      ],
+      "target": "辨認偽裝的二次式",
+      "text": "下列哪一個式子雖含有 x²，但化簡後不是二次函數？",
+      "choices": [
+        "y=(x-1)²+2",
+        "y=5-4x²",
+        "y=x(x+2)+1",
+        "y=(x-3)(x+3)-x²"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "獨立化簡四式，正確選項變成 y=-9；其餘三式的二次係數依序為 1、-4、1。",
+      "explanation": "只有第一個候選的兩個 x² 項互相抵消；其餘化簡後仍保有非零二次項。",
+      "steps": [
+        "展開四個候選式",
+        "檢查 x² 係數是否為 0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "y=(x-1)²+2",
+          "truth": false,
+          "reason": "展開後 x² 係數為 1。"
+        },
+        {
+          "choice": "y=5-4x²",
+          "truth": false,
+          "reason": "x² 係數為 -4。"
+        },
+        {
+          "choice": "y=x(x+2)+1",
+          "truth": false,
+          "reason": "展開後為 x²+2x+1。"
+        },
+        {
+          "choice": "y=(x-3)(x+3)-x²",
+          "truth": true,
+          "reason": "展開為 x²-9-x²=-9，是常數函數。"
+        }
+      ],
+      "misconceptionTarget": "只看表面是否出現平方符號",
+      "concept": "化簡後的最高次判定",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 110,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「辨認偽裝的二次式」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「只看表面是否出現平方符號」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "advanced：辨認二次項抵消；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認二次項抵消",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "847a948a8742e1f199866be062e40fff065646f9c363bc87156d1b95a7fefb0c"
+    },
+    {
+      "questionId": "u21-s001-v008",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "一個函數的圖形通過 (-2,8)、(0,0)、(2,8)，且已知它是 y=ax²。a 的值為何？",
+      "givenConditions": [
+        "函數形式 y=ax²",
+        "三點皆在圖上"
+      ],
+      "target": "由圖上點反求係數",
+      "text": "一個函數的圖形通過 (-2,8)、(0,0)、(2,8)，且已知它是 y=ax²。a 的值為何？",
+      "choices": [
+        "2",
+        "1",
+        "4",
+        "-2"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "由 8=a(2²) 得 a=2；檢查 a(-2)²=8，三點一致。",
+      "explanation": "使用任一非原點圖上點代入 y=ax²；由 8=4a 得 a=2，另點 (-2,8) 也吻合。",
+      "steps": [
+        "選取 (2,8) 代入",
+        "解 4a=8 並用另一點驗算"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2",
+          "truth": true,
+          "reason": "代入 (2,8)：8=a×4，所以 a=2。"
+        },
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "若 a=1，x=2 時 y=4。"
+        },
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "把 8÷2 誤當成 a，漏除 x²。"
+        },
+        {
+          "choice": "-2",
+          "truth": false,
+          "reason": "會使 x=2 時 y=-8。"
+        }
+      ],
+      "misconceptionTarget": "把 x 而非 x² 當除數",
+      "concept": "由圖上點求標準式係數",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 105,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「由圖上點反求係數」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「把 x 而非 x² 當除數」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "advanced：由多點條件重建函數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由多點條件重建函數",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "234e17c24c50f1971823e4a14c7e0f40ffd378cf1d56d7e1e18ea9bee1b9e057"
+    },
+    {
+      "questionId": "u21-s001-v009",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "已知 y=ax²+bx+c 是二次函數，且 a+b+c=0。下列哪一點一定在圖形上？",
+      "givenConditions": [
+        "a≠0",
+        "係數和為 0"
+      ],
+      "target": "把係數條件轉成函數值",
+      "text": "已知 y=ax²+bx+c 是二次函數，且 a+b+c=0。下列哪一點一定在圖形上？",
+      "choices": [
+        "(0,0)",
+        "(-1,0)",
+        "(1,0)",
+        "(2,0)"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "直接計算 f(1)=a+b+c=0，所以 (1,0) 必在圖上。",
+      "explanation": "係數和恰好是 f(1)，因此圖形一定通過 (1,0)。其他輸入需要額外條件。",
+      "steps": [
+        "辨認 a+b+c=f(1)",
+        "代入其餘 x 檢查不確定性"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "(0,0)",
+          "truth": false,
+          "reason": "x=0 時 y=c，未必為 0。"
+        },
+        {
+          "choice": "(-1,0)",
+          "truth": false,
+          "reason": "x=-1 時 y=a-b+c，未必為 0。"
+        },
+        {
+          "choice": "(1,0)",
+          "truth": true,
+          "reason": "代 x=1，y=a+b+c=0。"
+        },
+        {
+          "choice": "(2,0)",
+          "truth": false,
+          "reason": "x=2 時 y=4a+2b+c，未必為 0。"
+        }
+      ],
+      "misconceptionTarget": "把係數和誤當 y 截距",
+      "concept": "一般式的函數代入",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 115,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「把係數條件轉成函數值」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「把係數和誤當 y 截距」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "advanced：由係數關係判斷必經點；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由係數關係判斷必經點",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "815cbdf70dad4ae8aaad6429d12b270ed3b9067a367e6882978edf54b3bf0900"
+    },
+    {
+      "questionId": "u21-s001-v010",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "某感測器將物體水平位置 x（公尺）與高度 h（公尺）記錄為 h=-x²+16。當 x=3 時，高度是多少？",
+      "givenConditions": [
+        "模型只在 -4≤x≤4 使用",
+        "高度單位為公尺"
+      ],
+      "target": "在合理範圍內代入二次模型",
+      "text": "某感測器將物體水平位置 x（公尺）與高度 h（公尺）記錄為 h=-x²+16。當 x=3 時，高度是多少？",
+      "choices": [
+        "13 公尺",
+        "25 公尺",
+        "-7 公尺",
+        "7 公尺"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "重算 h(3)=-(3×3)+16=7，且 3 位於 [-4,4]。",
+      "explanation": "位置 3 在模型範圍內，代入並先平方，再套負號，得到 7 公尺。",
+      "steps": [
+        "確認 x=3 合理",
+        "計算 -9+16"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "13 公尺",
+          "truth": false,
+          "reason": "把 x² 誤作 x。"
+        },
+        {
+          "choice": "25 公尺",
+          "truth": false,
+          "reason": "把負號漏掉，算 9+16。"
+        },
+        {
+          "choice": "-7 公尺",
+          "truth": false,
+          "reason": "先算 9-16 並保留錯誤符號。"
+        },
+        {
+          "choice": "7 公尺",
+          "truth": true,
+          "reason": "h=-(3²)+16=-9+16=7。"
+        }
+      ],
+      "misconceptionTarget": "忽略平方前的負號作用順序",
+      "concept": "情境中的函數代入",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 85,
+      "unitCheck": "x 與 h 都以公尺表示，輸出必須寫公尺。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「在合理範圍內代入二次模型」。",
+        "domainBoundary": "x=3 落在模型有效範圍 -4≤x≤4。",
+        "alternateReading": "若把題目誤讀為「忽略平方前的負號作用順序」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "literacy：由位置模型求高度；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": "位置與高度的單位及有效區間是題目核心；若刪除感測器情境，就無法檢查輸入範圍與回答單位。",
+      "authoringIntent": "由位置模型求高度",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e9058f9f45a8c69fcea156d4105ea159e9f413ea37959071ccb217365ba8b489"
+    },
+    {
+      "questionId": "u21-s001-v011",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "某公司用 C(n)=2n²+50 表示製作 n 件樣品的成本（元），其中 0≤n≤20 且 n 為整數。製作 6 件的模型成本為何？",
+      "givenConditions": [
+        "n 是件數且為整數",
+        "C 的單位為元"
+      ],
+      "target": "依件數代入成本模型",
+      "text": "某公司用 C(n)=2n²+50 表示製作 n 件樣品的成本（元），其中 0≤n≤20 且 n 為整數。製作 6 件的模型成本為何？",
+      "choices": [
+        "122 元",
+        "62 元",
+        "86 元",
+        "172 元"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "C(6)=2(6²)+50=72+50=122 元。",
+      "explanation": "先確認 6 是允許件數，再計算 6²=36、2×36+50=122。",
+      "steps": [
+        "檢查整數範圍",
+        "按平方、乘法、加法順序計算"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "122 元",
+          "truth": true,
+          "reason": "C(6)=2×36+50=122。"
+        },
+        {
+          "choice": "62 元",
+          "truth": false,
+          "reason": "把 n² 誤作 n。"
+        },
+        {
+          "choice": "86 元",
+          "truth": false,
+          "reason": "只算 6²+50，漏乘 2。"
+        },
+        {
+          "choice": "172 元",
+          "truth": false,
+          "reason": "把 2n² 錯算成 (2n)²。"
+        }
+      ],
+      "misconceptionTarget": "把 2n² 與 (2n)² 混淆",
+      "concept": "離散件數的二次成本模型",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "輸入為件，輸出為元；不得把件數寫成連續小數。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「依件數代入成本模型」。",
+        "domainBoundary": "n=6 是 0 到 20 之間的整數。",
+        "alternateReading": "若把題目誤讀為「把 2n² 與 (2n)² 混淆」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "literacy：解讀成本模型與離散定義域；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": "件數必須是 0 到 20 的整數，成本還要保留元；情境使定義域與答案單位不可刪除。",
+      "authoringIntent": "解讀成本模型與離散定義域",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "62d7d0c8e21eda70cc0ce9b91d9a99630cbf38d13bfe13c655021ad22b723c33"
+    },
+    {
+      "questionId": "u21-s001-v012",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "一座對稱拱門的高度模型為 y=-0.5x²+8，x、y 單位皆為公尺，x=0 表示拱門中央。下列敘述何者正確？",
+      "givenConditions": [
+        "模型關於 x=0 對稱",
+        "只討論 y≥0 的拱門部分"
+      ],
+      "target": "解釋拱門模型的對稱與中央高度",
+      "text": "一座對稱拱門的高度模型為 y=-0.5x²+8，x、y 單位皆為公尺，x=0 表示拱門中央。下列敘述何者正確？",
+      "choices": [
+        "拱門中央高度為 0 公尺",
+        "拱門中央高度為 8 公尺",
+        "左右距中央 2 公尺處高度互為相反數",
+        "拱門圖形開口向上"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "y(0)=8；另外 f(2)=f(-2)，且 a=-0.5<0，所以只有中央高 8 公尺正確。",
+      "explanation": "在中央 x=0 時 y=8；模型含 x² 且係數為負，所以左右同高並開口向下。",
+      "steps": [
+        "代入中央位置",
+        "檢查對稱與開口"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "拱門中央高度為 0 公尺",
+          "truth": false,
+          "reason": "把 x=0 誤認為 y 必為 0。"
+        },
+        {
+          "choice": "拱門中央高度為 8 公尺",
+          "truth": true,
+          "reason": "代 x=0 得 y=8，且中央正是對稱軸。"
+        },
+        {
+          "choice": "左右距中央 2 公尺處高度互為相反數",
+          "truth": false,
+          "reason": "平方使左右同高，不是相反。"
+        },
+        {
+          "choice": "拱門圖形開口向上",
+          "truth": false,
+          "reason": "二次項係數 -0.5<0，開口向下。"
+        }
+      ],
+      "misconceptionTarget": "把座標軸交點與中央位置混為一談",
+      "concept": "拱門模型圖形特徵",
+      "prerequisiteCheck": "僅需整數與代數基本運算，並理解本技能在講義中先建立的定義。",
+      "estimatedTimeSec": 95,
+      "unitCheck": "水平距離與高度均為公尺；答案描述高度需附公尺。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「解釋拱門模型的對稱與中央高度」。",
+        "domainBoundary": "只採用 y≥0 的拱門實體部分，但 x=0 明確在範圍內。",
+        "alternateReading": "若把題目誤讀為「把座標軸交點與中央位置混為一談」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "literacy：解釋對稱拱門的模型；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": "拱門中央與高度單位決定 x=0、y=8 的實際解讀；沒有情境就不能判斷中央、可見範圍與公尺單位。",
+      "authoringIntent": "解釋對稱拱門的模型",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6315c8e1dda4a9de22b815c75144759981b9d357a7a87ef96122580e689da25c"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u21-s001-cr001",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "函數 y=x²-4，請完成 x=-3,-1,0,2,3 的函數值，列出五個座標點，並說明圖形為何不是把五點依序連成折線。",
+      "givenConditions": [
+        "x 可取所有實數",
+        "指定五個 x 作為取樣點"
+      ],
+      "target": "建立值表並解釋連續拋物線",
+      "requiredWork": [
+        "逐一代入並保留負數括號。",
+        "列出五個完整座標。",
+        "說明表格只列部分點，圖形應為平滑拋物線。"
+      ],
+      "fullCreditSolution": [
+        "y(-3)=9-4=5，y(-1)=1-4=-3，y(0)=-4，y(2)=0，y(3)=5。",
+        "五點為 (-3,5)、(-1,-3)、(0,-4)、(2,0)、(3,5)。",
+        "二次函數對每個實數 x 都有函數值，五點之間仍有無限多點，因此應畫通過各點的平滑拋物線。"
+      ],
+      "alternativeSolutions": [
+        "可先利用 y=x² 的圖形向下平移 4，再核對五點。"
+      ],
+      "reasoningSteps": [
+        "y(-3)=9-4=5，y(-1)=1-4=-3，y(0)=-4，y(2)=0，y(3)=5。",
+        "五點為 (-3,5)、(-1,-3)、(0,-4)、(2,0)、(3,5)。",
+        "二次函數對每個實數 x 都有函數值，五點之間仍有無限多點，因此應畫通過各點的平滑拋物線。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "五個函數值與座標全對，並清楚說明連續點集與平滑拋物線。"
+        },
+        {
+          "score": 2,
+          "criteria": "最多一個代入或座標錯誤，且仍指出不能畫成折線。"
+        },
+        {
+          "score": 1,
+          "criteria": "至少三個點正確，或只正確說明圖形是拋物線但值表不完整。"
+        },
+        {
+          "score": 0,
+          "criteria": "多數代入把 x² 當 2x、未列有效座標，且無連續性說明。"
+        }
+      ],
+      "partialCreditRules": [
+        "最多一個代入或座標錯誤，且仍指出不能畫成折線。",
+        "至少三個點正確，或只正確說明圖形是拋物線但值表不完整。"
+      ],
+      "followThroughPolicy": "若早期只有一個平方算錯，但後續座標與圖形說明依該值一致，可保留方法分；不得把錯誤點當成證明折線合理。",
+      "unitAndNotationRules": [
+        "座標使用 (x,y)。",
+        "本題無物理單位。",
+        "圖形用平滑曲線描述。"
+      ],
+      "answerOnlyPolicy": "只寫五個 y 值而未列座標與說明，最高 1 分；只寫「拋物線」而無理由最高 1 分。",
+      "commonErrors": [
+        "負數代入未加括號。",
+        "把表格五點當作全部函數圖形。",
+        "把點依輸入順序畫成折線。"
+      ],
+      "independentReview": {
+        "derivedResult": "正確值依序 5、-3、-4、0、5；五個座標如標準解，圖形為連續平滑拋物線。",
+        "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "97ba3b1c409c6a973a463b6ab844699b009d83a49798f38c98037ee99a96fcdd"
+    },
+    {
+      "questionId": "u21-s001-cr002",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-function-graph"
+      },
+      "prompt": "已知函數 y=ax² 通過點 P(-3,18)。求 a，寫出函數，並判斷點 Q(4,30) 是否在此圖形上。",
+      "givenConditions": [
+        "a≠0",
+        "P 為圖上點"
+      ],
+      "target": "由一點決定 y=ax² 並檢查另一點",
+      "requiredWork": [
+        "代入 P 求 a。",
+        "寫出完整函數。",
+        "獨立代入 Q 比較 y。"
+      ],
+      "fullCreditSolution": [
+        "18=a(-3)²=9a，所以 a=2。",
+        "函數為 y=2x²。",
+        "當 x=4 時，y=2×16=32，不等於 Q 的 y=30，因此 Q 不在圖形上。"
+      ],
+      "alternativeSolutions": [
+        "也可先用 P 與其對稱點 (3,18) 確認圖形，再代 Q；求 a 仍須代入。"
+      ],
+      "reasoningSteps": [
+        "18=a(-3)²=9a，所以 a=2。",
+        "函數為 y=2x²。",
+        "當 x=4 時，y=2×16=32，不等於 Q 的 y=30，因此 Q 不在圖形上。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "求得 a=2、函數 y=2x²，並以 y(4)=32≠30 正確判斷 Q 不在圖上。"
+        },
+        {
+          "score": 2,
+          "criteria": "a 與函數正確，但 Q 的代入比較不完整；或只有一個末端算術錯誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能寫 18=9a 或正確使用圖上點判準，但未完成 a 與 Q 判斷。"
+        },
+        {
+          "score": 0,
+          "criteria": "把 -3² 當 -9、以 18÷3 求 a 且無有效修正，或完全未作答。"
+        }
+      ],
+      "partialCreditRules": [
+        "a 與函數正確，但 Q 的代入比較不完整；或只有一個末端算術錯誤。",
+        "能寫 18=9a 或正確使用圖上點判準，但未完成 a 與 Q 判斷。"
+      ],
+      "followThroughPolicy": "若正確列 18=9a 但除法失誤，後續使用自得 a 一致檢查 Q，可給方法追蹤分；若未代入 Q，不給判斷分。",
+      "unitAndNotationRules": [
+        "a 為無單位常數。",
+        "函數需寫 y=2x²。",
+        "判斷點要比較精確值。"
+      ],
+      "answerOnlyPolicy": "只寫 a=2 而沒有函數與 Q 判斷，最高 1 分。",
+      "commonErrors": [
+        "把 (-3)² 算成 -9。",
+        "用 18÷(-3) 而非除以 9。",
+        "只看 Q 接近曲線就判在圖上。"
+      ],
+      "independentReview": {
+        "derivedResult": "a=2，函數 y=2x²；Q 需 y=32 才在圖上，所以 Q(4,30) 不在。",
+        "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "11cbb56781255d82446559e363e0ec93d1b7f37b4e383e542fec2e159f9993b0"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u21-fig-s001-01",
+      "drawingSpecId": "u21-draw-s001-01",
+      "unitId": "u21",
+      "topicId": "u21-basics",
+      "skillId": "quadratic-function-graph",
+      "title": "拋物線與取樣點",
+      "svgPath": "figures/u21/u21-fig-s001-01.svg",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "altText": "本圖以高對比線條與文字標籤呈現：座標圖顯示 y=x² 的五個對稱取樣點與平滑曲線，說明表格點不是完整圖形。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 640,
+          "height": 400
+        },
+        "viewBox": "0 0 640 400",
+        "coordinateSystem": "SVG 原點在左上；所有座標與曲線位置依本圖明列的像素配置。",
+        "elements": "本技能專用的座標軸、拋物線、標記點、文字與必要輔助線，詳見 SVG 元素。",
+        "labels": "所有關鍵方程式、頂點、對稱軸、端點或表格欄位直接以文字標示。",
+        "tickMarks": "圖形以關鍵座標文字為主；未標一般刻度時不得由外觀估讀其他座標。",
+        "units": "情境圖依文字標示秒、公尺或平方單位；純座標圖使用無單位座標。",
+        "lineRules": "實線為函數曲線或座標軸，虛線為對稱軸、限制邊界或比較曲線；用途由文字同步說明。",
+        "scalePolicy": "同一圖內比較寬窄時使用同一比例；未標示的距離不得作精確數值推論。",
+        "notToScaleWarning": "除明列座標外，不可只憑圖形外觀推算未標示數值。",
+        "mobileConstraints": "最小主要字級 16 px，關鍵線寬至少 2 px，640 至 760 寬 viewBox 可等比例縮放。",
+        "answerLeakageControl": "圖形只呈現講義所需結構或題幹已給資訊；不得把未給的選擇題答案直接標成結論。"
+      },
+      "svgAssertions": [
+        "<title>",
+        "<desc>",
+        "role=\"img\"",
+        "stroke=\"black\""
+      ],
+      "geometryAssertions": [
+        "SVG viewBox 與 width、height 均存在。",
+        "關鍵點與輔助線座標在畫布範圍內。",
+        "文字標籤不依賴顏色區分。"
+      ],
+      "figureReview": {
+        "mathematicalAccuracy": "pass",
+        "mobileReadability": "pass",
+        "answerLeakage": "pass",
+        "manualVisualInspection": "pass",
+        "reviewNote": "人工檢視 u21-fig-s001-01：座標圖顯示 y=x² 的五個對稱取樣點與平滑曲線，說明表格點不是完整圖形。 已核對曲線方向、標記座標、虛實線語意、文字可讀性與畫布邊界，未以未標刻度洩漏額外答案。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentSha256": "334f82f8bd4229a1f1cf6a2b49214f84e92d64ac1df174cd140f249438cd20f8"
+    }
+  ],
+  "sourceBatch": "022-u21-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/022-u21-complete/units/u21/s001"
+}

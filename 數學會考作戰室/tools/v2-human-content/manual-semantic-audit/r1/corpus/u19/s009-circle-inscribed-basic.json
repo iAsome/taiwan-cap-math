@@ -1,0 +1,1271 @@
+{
+  "slot": "s009",
+  "skillId": "circle-inscribed-basic",
+  "topicId": "u19-angles",
+  "title": "內接角應用",
+  "lecture": {
+    "lectureId": "u19-s009-lecture-r1",
+    "unitId": "u19",
+    "numericUnitId": 19,
+    "topicId": "u19-angles",
+    "skillId": "circle-inscribed-basic",
+    "title": "內接角應用",
+    "unitTitle": "圓",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "skillIdentity": {
+      "slot": "s009",
+      "lockedSkillId": "circle-inscribed-basic",
+      "lockedOrder": 9,
+      "scope": "綜合半圓直角、同弧圓周角與內接四邊形。"
+    },
+    "learningOutcomes": [
+      "能綜合半圓直角與同弧圓周角。",
+      "能在圓內接四邊形中串接角度。",
+      "能辨識多步圖形的所對弧。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "arc-length-formula",
+        "requiredLevel": "能使用「弧長公式」的核心定義與基本運算，並辨認其適用條件。"
+      }
+    ],
+    "prerequisiteBridge": "先由前一技能「弧長公式」的結論，連接到本技能「內接角應用」所需的新判斷。",
+    "glossary": [
+      {
+        "term": "半圓直角",
+        "definition": "直徑所對的圓周角為90°。"
+      },
+      {
+        "term": "角度追蹤",
+        "definition": "依已知等角、互補與三角形內角和逐步求角。"
+      },
+      {
+        "term": "共圓",
+        "definition": "多個點位於同一圓上。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "O",
+        "meaning": "圓心。"
+      },
+      {
+        "symbol": "∠ABC",
+        "meaning": "頂點是B的角。"
+      },
+      {
+        "symbol": "π",
+        "meaning": "圓周率；題目未要求近似時保留π。"
+      }
+    ],
+    "conceptNarrative": [
+      "內接角應用通常不是多背一條公式，而是先辨認每一個角所對的弧，再串接已學性質。",
+      "若看到直徑，優先標出90°；若看到同弧，標出相等圓周角；若有四點共圓，檢查對角互補。",
+      "每一步都要寫出性質，避免只憑圖形猜角。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "半圓直角",
+        "statement": "直徑所對的圓周角為90°。"
+      },
+      {
+        "name": "角度追蹤",
+        "statement": "依已知等角、互補與三角形內角和逐步求角。"
+      },
+      {
+        "name": "共圓",
+        "statement": "多個點位於同一圓上。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "直徑所對圓周角=90°",
+        "conditions": [
+          "角頂點在圓周"
+        ],
+        "meaning": "半圓性質"
+      },
+      {
+        "formula": "圓內接四邊形對角和=180°",
+        "conditions": [
+          "四點共圓"
+        ],
+        "meaning": "互補性質"
+      }
+    ],
+    "nonApplicableCases": [
+      "直徑必須明確通過圓心，不能只因線段看起來很長。",
+      "兩角同弧才相等，不是同圓內所有圓周角都相等。",
+      "圖未按比例時不能目測角度。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "列出所有已知點與直徑。",
+        "check": "完成此步後，確認仍在「內接角應用」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 2,
+        "instruction": "為每個圓周角寫所對弧。",
+        "check": "完成此步後，確認仍在「內接角應用」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 3,
+        "instruction": "套用半圓直角、同弧等角或對角互補。",
+        "check": "完成此步後，確認仍在「內接角應用」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 4,
+        "instruction": "必要時再用三角形內角和。",
+        "check": "完成此步後，確認仍在「內接角應用」的CAP範圍且沒有只憑圖形目測。"
+      },
+      {
+        "step": 5,
+        "instruction": "回查每個角的頂點與範圍。",
+        "check": "完成此步後，確認仍在「內接角應用」的CAP範圍且沒有只憑圖形目測。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "s009-L1",
+        "prompt": "AB為直徑，C在圓上，∠CAB=32°。求∠ABC。",
+        "solutionSteps": [
+          "∠ACB=90°。",
+          "三角形內角和得58°。"
+        ],
+        "answer": "58°。",
+        "level": "basic"
+      },
+      {
+        "exampleId": "s009-L2",
+        "prompt": "A、B、C、D共圓，∠ACB=41°。求∠ADB。",
+        "solutionSteps": [
+          "兩角同對弧AB。"
+        ],
+        "answer": "41°。",
+        "level": "standard"
+      },
+      {
+        "exampleId": "s009-L3",
+        "prompt": "ABCD內接圓，∠A=68°。",
+        "solutionSteps": [
+          "對角互補。",
+          "∠C=112°。"
+        ],
+        "answer": "112°。",
+        "level": "advanced"
+      },
+      {
+        "exampleId": "s009-L4",
+        "prompt": "AB為直徑，D在圓上，∠DAB=2x，∠DBA=x。",
+        "solutionSteps": [
+          "∠ADB=90°。",
+          "3x+90=180，x=30。"
+        ],
+        "answer": "x=30。",
+        "level": "connection"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "辨認「內接角應用」的定義、符號與單一步驟關係。",
+      "standard": "把「內接角應用」與前置技能、比例或一次代數連接。",
+      "advanced": "在多段弧、複合邊界、反求或條件篩選中使用「內接角應用」。",
+      "literacy": "把真實尺寸、旋轉、施工或觀測情境轉成「內接角應用」的數學模型。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "看到圓就把三角形判直角",
+        "why": "缺少直徑條件",
+        "correction": "確認角所對弦是直徑"
+      },
+      {
+        "mistake": "把共享一邊當同弧",
+        "why": "端點不足",
+        "correction": "比較兩角的兩個弧端點"
+      },
+      {
+        "mistake": "角度追蹤跳步",
+        "why": "無法確認性質是否適用",
+        "correction": "每一步寫理由"
+      },
+      {
+        "mistake": "把內接四邊形相鄰角相加180",
+        "why": "記錯互補位置",
+        "correction": "只對角互補"
+      }
+    ],
+    "selfCheck": [
+      "我是否先確認「內接角應用」的適用條件？",
+      "我是否分清半徑、直徑、弦、弧與角的角色？",
+      "我是否寫出必要單位，並在最後才取近似值？",
+      "我是否用定理或公式驗證，而不是依圖形外觀猜測？"
+    ],
+    "summary": [
+      "先找直徑、同弧與四點共圓。",
+      "再用三角形內角和完成角度追蹤。",
+      "每個角度結論都應有明確性質支持。"
+    ],
+    "connections": {
+      "previous": "承接「弧長公式」。",
+      "next": "下一技能為「扇形面積」。"
+    },
+    "figureReferences": [
+      {
+        "figureId": "u19-s009-fig001",
+        "purpose": "AB 為直徑，C、D 在圓周，畫出直角 ACB 與另一個同弧角 ADB。",
+        "altText": "AB 為直徑，C、D 在圓周，畫出直角 ACB 與另一個同弧角 ADB。，不可按比例目測。"
+      }
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u19-s009-v001",
+        "u19-s009-v002",
+        "u19-s009-v003",
+        "u19-s009-v004",
+        "u19-s009-v005",
+        "u19-s009-v006",
+        "u19-s009-v007",
+        "u19-s009-v008",
+        "u19-s009-v009",
+        "u19-s009-v010",
+        "u19-s009-v011",
+        "u19-s009-v012"
+      ],
+      "constructedResponseIds": [
+        "u19-s009-cr001",
+        "u19-s009-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐段回讀「內接角應用」講義，確認所有符號先定義、公式均附條件，並以四個不同目的例題檢查定義辨認、標準運算、進階邊界與實際連結；特別核對：綜合半圓直角、同弧圓周角與內接四邊形。",
+      "reviewVersion": "human-lecture-review-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "contentSha256": "94050692c470de806c1507a85705ae81ec5bb123295f91e225560bcef3c81948"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u19-s009-v001",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s009-fig001",
+      "drawingSpecId": "u19-s009-fig001",
+      "prompt": "AB 為直徑，C 在圓上，∠CAB=36°。求 ∠ABC。",
+      "text": "AB 為直徑，C 在圓上，∠CAB=36°。求 ∠ABC。",
+      "givenConditions": "AB為直徑；C在圓上。",
+      "target": "求∠ABC。",
+      "choices": [
+        "36°",
+        "90°",
+        "54°",
+        "144°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「AB為直徑；C在圓上。」重算：∠ACB=90°，三角形內角和得∠ABC=180−90−36=54°。",
+      "explanation": "∠ACB=90°，三角形內角和得∠ABC=180−90−36=54°。 因此唯一正確選項是「54°」。",
+      "steps": [
+        "直徑所對角C=90°。",
+        "180−90−36=54。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "36°",
+          "truth": false,
+          "reason": "誤認底角相等。"
+        },
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "這是∠ACB。"
+        },
+        {
+          "choice": "54°",
+          "truth": true,
+          "reason": "依題目條件重新計算：∠ACB=90°，三角形內角和得∠ABC=180−90−36=54°。"
+        },
+        {
+          "choice": "144°",
+          "truth": false,
+          "reason": "錯取補角。"
+        }
+      ],
+      "misconceptionTarget": "看到半圓三角形便誤認等腰。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 65,
+      "unitCheck": "u19-s009-v001 已核對所求量「求∠ABC。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「利用半圓直角求另一銳角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s009-v001。",
+      "difficultyReason": "basic：利用半圓直角求另一銳角。 解題需完成「直徑所對角C=90°。；180−90−36=54。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "利用半圓直角求另一銳角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "5e321dd7e0d3b211f06d33a6f600711866349bad0e0a5d3adf603a132a3d67d6"
+    },
+    {
+      "questionId": "u19-s009-v002",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "AB 是圓的直徑，C、D 是圓周上不同於 A、B 的兩點。下列哪一組角必定都是 90°？",
+      "text": "AB 是圓的直徑，C、D 是圓周上不同於 A、B 的兩點。下列哪一組角必定都是 90°？",
+      "givenConditions": "AB 為直徑；C、D 均在圓周上。",
+      "target": "同時辨認兩個以直徑 AB 為所對弧的圓周角。",
+      "choices": [
+        "∠BAC、∠BDA",
+        "∠ABC、∠BAD",
+        "∠ACB、∠ADB",
+        "∠ACD、∠BCD"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不看儲存答案，凡頂點在圓周且兩邊通過直徑端點 A、B 的圓周角都為 90°。∠ACB 和 ∠ADB 都以 AB 為兩端點，所以兩者皆為 90°。",
+      "explanation": "直徑所對的圓周角為直角。四組中只有 ∠ACB 與 ∠ADB 都以 A、B 為角的兩端點。",
+      "steps": [
+        "檢查每個角名的第一與第三個字母是否為 A、B。",
+        "確認頂點 C、D 位於圓周，選出 ∠ACB、∠ADB。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "∠BAC、∠BDA",
+          "truth": false,
+          "reason": "∠BAC 的端點是 B、C，不是直徑端點 A、B。"
+        },
+        {
+          "choice": "∠ABC、∠BAD",
+          "truth": false,
+          "reason": "兩角都不是以直徑 AB 為所對弧。"
+        },
+        {
+          "choice": "∠ACB、∠ADB",
+          "truth": true,
+          "reason": "兩角頂點在圓周，且角的兩端皆為直徑端點 A、B，所以都為 90°。"
+        },
+        {
+          "choice": "∠ACD、∠BCD",
+          "truth": false,
+          "reason": "這兩角分別對弦 AD、BD，沒有直徑所對角的保證。"
+        }
+      ],
+      "misconceptionTarget": "只看到圖上有直徑就判斷任意圓周角為 90°，沒有檢查角所對的弦。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "選項皆為角的名稱；題目不需數值或近似。",
+      "roundingCheck": "不涉及近似；已確認不會因四捨五入產生第二答案。",
+      "ambiguityAudit": "C、D 明定為圓周上不同於 A、B 的點；以 AB 為兩端點的角名唯一可辨。",
+      "boundaryAudit": "只使用直徑所對圓周角為 90° 的國中定理。",
+      "difficultyReason": "basic：以角名結構同時辨認兩個直角，避免和前一 skill 的同弧等角題只換數字。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "檢查學生能否從角名確認所對的是直徑，而不是只記憶一個數值例題。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "b2a16651eeca79a557746212975bb8c19fb16b4b5f2ab0208b1f1b4af3a8b803"
+    },
+    {
+      "questionId": "u19-s009-v003",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "basic",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "AB 是圓 O 的直徑，C 在圓上。若 ∠CAB=36°，則較小的圓心角 ∠AOC 為何？",
+      "text": "AB 是圓 O 的直徑，C 在圓上。若 ∠CAB=36°，則較小的圓心角 ∠AOC 為何？",
+      "givenConditions": "AB 為直徑；C 在圓上；∠CAB=36°。",
+      "target": "結合直徑所對圓周角與同弧圓心角求 ∠AOC。",
+      "choices": [
+        "72°",
+        "108°",
+        "54°",
+        "144°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "先不看儲存答案。因 AB 是直徑，∠ACB=90°，所以 ∠ABC=180°−90°−36°=54°。∠ABC 所對弧 AC，較小圓心角 ∠AOC=2×54°=108°。",
+      "explanation": "先由直徑得到直角，再求 ∠ABC=54°；同弧圓心角是圓周角的 2 倍，因此 ∠AOC=108°。",
+      "steps": [
+        "由 AB 為直徑得 ∠ACB=90°。",
+        "用三角形內角和求 ∠ABC=54°。",
+        "同弧圓心角 ∠AOC=2×54°=108°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "72°",
+          "truth": false,
+          "reason": "直接把 ∠CAB 加倍，得到的是弧 BC 的圓心角，不是所求弧 AC。"
+        },
+        {
+          "choice": "108°",
+          "truth": true,
+          "reason": "∠ABC=54°，同對弧 AC 的圓心角為 2×54°=108°。"
+        },
+        {
+          "choice": "54°",
+          "truth": false,
+          "reason": "54° 是圓周角 ∠ABC，尚未轉成圓心角。"
+        },
+        {
+          "choice": "144°",
+          "truth": false,
+          "reason": "把 36° 的補角或倍角關係錯誤套到所求弧 AC。"
+        }
+      ],
+      "misconceptionTarget": "沒有先確認所求圓心角對應哪一個圓周角，或漏乘 2。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "所有選項皆為角度，且較小圓心角 108° 位於 0° 到 180° 之間。",
+      "roundingCheck": "角度為整數，不需近似；已確認不會因四捨五入產生第二答案。",
+      "ambiguityAudit": "題幹指定求較小 ∠AOC，且 AB 是直徑；對應弧 AC 與圓周角 ∠ABC 唯一，不會誤取反角 252°。",
+      "boundaryAudit": "只使用直徑所對圓周角為 90°、三角形內角和與同弧圓心角倍數，均屬國中會考範圍。",
+      "difficultyReason": "basic：雖有三個簡短步驟，但每一步都是本 skill 的基本連結，能區分單純對角互補的重複題。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "用直徑、三角形內角和與同弧倍角建立連續推理，避免再次只做圓內接四邊形的 180° 減法。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "966281d2afe15aa4f5a63c5cff50bcd33a125f5c9bc29299d40777fb6ac5a0b7"
+    },
+    {
+      "questionId": "u19-s009-v004",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "AB 為直徑，C 在圓上。若 ∠ABC=2x°、∠BAC=(x+15)°，求 x。",
+      "text": "AB 為直徑，C 在圓上。若 ∠ABC=2x°、∠BAC=(x+15)°，求 x。",
+      "givenConditions": "AB為直徑。",
+      "target": "求x。",
+      "choices": [
+        "25",
+        "15",
+        "20",
+        "30"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「AB為直徑。」重算：C角90°，故2x+x+15=90，3x=75，x=25。",
+      "explanation": "C角90°，故2x+x+15=90，3x=75，x=25。 因此唯一正確選項是「25」。",
+      "steps": [
+        "兩銳角和90°。",
+        "3x+15=90。",
+        "x=25。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "25",
+          "truth": true,
+          "reason": "依題目條件重新計算：C角90°，故2x+x+15=90，3x=75，x=25。"
+        },
+        {
+          "choice": "15",
+          "truth": false,
+          "reason": "回代銳角和60°。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "回代75°。"
+        },
+        {
+          "choice": "30",
+          "truth": false,
+          "reason": "回代105°。"
+        }
+      ],
+      "misconceptionTarget": "把三角形總和180直接漏掉直角。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "u19-s009-v004 已核對所求量「求x。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「用代數解半圓三角形。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s009-v004。",
+      "difficultyReason": "standard：用代數解半圓三角形。 解題需完成「兩銳角和90°。；3x+15=90。；x=25。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "用代數解半圓三角形。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "1c705d7d27bb6130ed31a5a673d57f28c2240bbff236461e728bb9077d8d19e8"
+    },
+    {
+      "questionId": "u19-s009-v005",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓內接四邊形 ABCD 中，∠A=68°，對角線 AC 將 ∠A 分成 25° 與 43°。若 ∠BDC 與 ∠BAC 同對弧 BC，則 ∠BDC 為何？",
+      "text": "圓內接四邊形 ABCD 中，∠A=68°，對角線 AC 將 ∠A 分成 25° 與 43°。若 ∠BDC 與 ∠BAC 同對弧 BC，則 ∠BDC 為何？",
+      "givenConditions": "AC分∠A為∠BAC=25°、∠CAD=43°。",
+      "target": "求∠BDC。",
+      "choices": [
+        "25°",
+        "43°",
+        "68°",
+        "112°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「AC分∠A為∠BAC=25°、∠CAD=43°。」重算：∠BAC=25°且與∠BDC同對弧BC，所以∠BDC=25°。",
+      "explanation": "∠BAC=25°且與∠BDC同對弧BC，所以∠BDC=25°。 因此唯一正確選項是「25°」。",
+      "steps": [
+        "從分角資訊辨認∠BAC=25°。",
+        "套同弧圓周角相等。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "25°",
+          "truth": true,
+          "reason": "依題目條件重新計算：∠BAC=25°且與∠BDC同對弧BC，所以∠BDC=25°。"
+        },
+        {
+          "choice": "43°",
+          "truth": false,
+          "reason": "43°是另一分角。"
+        },
+        {
+          "choice": "68°",
+          "truth": false,
+          "reason": "68°是整個A角。"
+        },
+        {
+          "choice": "112°",
+          "truth": false,
+          "reason": "是A的對角補角。"
+        }
+      ],
+      "misconceptionTarget": "未辨認角名與分角位置。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 95,
+      "unitCheck": "u19-s009-v005 已核對所求量「求∠BDC。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「從複合角中找同弧角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s009-v005。",
+      "difficultyReason": "standard：從複合角中找同弧角。 解題需完成「從分角資訊辨認∠BAC=25°。；套同弧圓周角相等。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "從複合角中找同弧角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "1fb756af9ad9139218f3046d070b0ce7660599b2372ed1e94b72f4752fc6d519"
+    },
+    {
+      "questionId": "u19-s009-v006",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "standard",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "AB 為直徑，D 在圓上，∠DAB=32°。求 ∠DOB 所對的較小圓心角。",
+      "text": "AB 為直徑，D 在圓上，∠DAB=32°。求 ∠DOB 所對的較小圓心角。",
+      "givenConditions": "AB為直徑；O為圓心。",
+      "target": "求較小∠DOB。",
+      "choices": [
+        "32°",
+        "58°",
+        "116°",
+        "64°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「AB為直徑；O為圓心。」重算：∠DAB是弧DB所對圓周角，所以同弧圓心角∠DOB=64°。",
+      "explanation": "∠DAB是弧DB所對圓周角，所以同弧圓心角∠DOB=64°。 因此唯一正確選項是「64°」。",
+      "steps": [
+        "辨認∠DAB所對弧DB。",
+        "32×2=64。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "32°",
+          "truth": false,
+          "reason": "未乘2。"
+        },
+        {
+          "choice": "58°",
+          "truth": false,
+          "reason": "錯用90−32。"
+        },
+        {
+          "choice": "116°",
+          "truth": false,
+          "reason": "錯用180−64。"
+        },
+        {
+          "choice": "64°",
+          "truth": true,
+          "reason": "依題目條件重新計算：∠DAB是弧DB所對圓周角，所以同弧圓心角∠DOB=64°。"
+        }
+      ],
+      "misconceptionTarget": "把三角形另一角當圓心角。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 85,
+      "unitCheck": "u19-s009-v006 已核對所求量「求較小∠DOB。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由內接角求圓心角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s009-v006。",
+      "difficultyReason": "standard：由內接角求圓心角。 解題需完成「辨認∠DAB所對弧DB。；32×2=64。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由內接角求圓心角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "05ee97525024b44b5253bda62ec686590a147fa339f04cb81824cff25796e2ef"
+    },
+    {
+      "questionId": "u19-s009-v007",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s009-fig001",
+      "drawingSpecId": "u19-s009-fig001",
+      "prompt": "AB 為直徑，C、D 在同一半圓上，∠BAC=28°，∠CAD=17°。求劣弧 CD。",
+      "text": "AB 為直徑，C、D 在同一半圓上，∠BAC=28°，∠CAD=17°。求劣弧 CD。",
+      "givenConditions": "AB為直徑；C、D同半圓；兩角如題。",
+      "target": "求劣弧CD。",
+      "choices": [
+        "17°",
+        "34°",
+        "56°",
+        "90°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「AB為直徑；C、D同半圓；兩角如題。」重算：∠CAD所對弧CD，因此劣弧CD=2×17°=34°；∠BAC是多餘但可檢查位置。",
+      "explanation": "∠CAD所對弧CD，因此劣弧CD=2×17°=34°；∠BAC是多餘但可檢查位置。 因此唯一正確選項是「34°」。",
+      "steps": [
+        "辨認∠CAD端點C、D。",
+        "弧CD=2×17=34。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "17°",
+          "truth": false,
+          "reason": "未乘2。"
+        },
+        {
+          "choice": "34°",
+          "truth": true,
+          "reason": "依題目條件重新計算：∠CAD所對弧CD，因此劣弧CD=2×17°=34°；∠BAC是多餘但可檢查位置。"
+        },
+        {
+          "choice": "56°",
+          "truth": false,
+          "reason": "使用錯角∠BAC。"
+        },
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "把兩角相加後乘2。"
+        }
+      ],
+      "misconceptionTarget": "被多餘資訊干擾，選錯所對弧。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 115,
+      "unitCheck": "u19-s009-v007 已核對所求量「求劣弧CD。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「在多角圖中選取正確圓周角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s009-v007。",
+      "difficultyReason": "advanced：在多角圖中選取正確圓周角。 解題需完成「辨認∠CAD端點C、D。；弧CD=2×17=34。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "在多角圖中選取正確圓周角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "f43fcebec37fd40009eb7b8f85ce4247cd3f746a01ce27639231aac181b9b543"
+    },
+    {
+      "questionId": "u19-s009-v008",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "ABCD 共圓，AB 為直徑。若 ∠BAD=3x°、∠BCD=(2x+20)°，且兩角位於弦 BD 的兩側，求 x。",
+      "text": "ABCD 共圓，AB 為直徑。若 ∠BAD=3x°、∠BCD=(2x+20)°，且兩角位於弦 BD 的兩側，求 x。",
+      "givenConditions": "四點共圓；兩角頂點在弦BD兩側。",
+      "target": "求x。",
+      "choices": [
+        "20",
+        "28",
+        "40",
+        "32"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「四點共圓；兩角頂點在弦BD兩側。」重算：位於弦BD兩側的圓周角互補：3x+(2x+20)=180，5x=160，x=32。",
+      "explanation": "位於弦BD兩側的圓周角互補：3x+(2x+20)=180，5x=160，x=32。 因此唯一正確選項是「32」。",
+      "steps": [
+        "判定兩角對互補弧，故和180°。",
+        "5x+20=180。",
+        "x=32。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "回代100°非180°。"
+        },
+        {
+          "choice": "28",
+          "truth": false,
+          "reason": "回代160°。"
+        },
+        {
+          "choice": "40",
+          "truth": false,
+          "reason": "回代220°。"
+        },
+        {
+          "choice": "32",
+          "truth": true,
+          "reason": "依題目條件重新計算：位於弦BD兩側的圓周角互補：3x+(2x+20)=180，5x=160，x=32。"
+        }
+      ],
+      "misconceptionTarget": "不辨認弦兩側角為互補。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 125,
+      "unitCheck": "u19-s009-v008 已核對所求量「求x。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「處理弦兩側圓周角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s009-v008。",
+      "difficultyReason": "advanced：處理弦兩側圓周角。 解題需完成「判定兩角對互補弧，故和180°。；5x+20=180。；x=32。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "處理弦兩側圓周角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "e37d2032c19df072f094c3e0572ad6c1cb6e746a0cc88543cb2ba170d38c5c43"
+    },
+    {
+      "questionId": "u19-s009-v009",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "advanced",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓內接三角形 ABC 中，AB 為直徑。點 D 在弧 AC 上，∠ABD=22°，∠DBC=31°。求 ∠BAC。",
+      "text": "圓內接三角形 ABC 中，AB 為直徑。點 D 在弧 AC 上，∠ABD=22°，∠DBC=31°。求 ∠BAC。",
+      "givenConditions": "AB為直徑；BD分∠ABC為22°與31°。",
+      "target": "求∠BAC。",
+      "choices": [
+        "22°",
+        "37°",
+        "31°",
+        "53°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用儲存答案，直接依「AB為直徑；BD分∠ABC為22°與31°。」重算：∠ABC=22°+31°=53°；∠ACB=90°，所以∠BAC=180−90−53=37°。",
+      "explanation": "∠ABC=22°+31°=53°；∠ACB=90°，所以∠BAC=180−90−53=37°。 因此唯一正確選項是「37°」。",
+      "steps": [
+        "合併B角53°。",
+        "半圓角C=90°。",
+        "求A角37°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "22°",
+          "truth": false,
+          "reason": "只取分角之一。"
+        },
+        {
+          "choice": "37°",
+          "truth": true,
+          "reason": "依題目條件重新計算：∠ABC=22°+31°=53°；∠ACB=90°，所以∠BAC=180−90−53=37°。"
+        },
+        {
+          "choice": "31°",
+          "truth": false,
+          "reason": "只取另一分角。"
+        },
+        {
+          "choice": "53°",
+          "truth": false,
+          "reason": "是整個B角。"
+        }
+      ],
+      "misconceptionTarget": "未先合併分角或漏用半圓直角。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 120,
+      "unitCheck": "u19-s009-v009 已核對所求量「求∠BAC。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「結合分角與半圓性質。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s009-v009。",
+      "difficultyReason": "advanced：結合分角與半圓性質。 解題需完成「合併B角53°。；半圓角C=90°。；求A角37°。」。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "結合分角與半圓性質。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "bd597c8cd8f0e2573c9f0379be5b51124db810978fa1bf64b06708d441be6841"
+    },
+    {
+      "questionId": "u19-s009-v010",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "半圓形屋頂以 AB 為直徑，支架在弧上 C 點連到 A、B。若支架 AC 與地面 AB 夾角為 40°，則支架 BC 與地面夾角為何？",
+      "text": "半圓形屋頂以 AB 為直徑，支架在弧上 C 點連到 A、B。若支架 AC 與地面 AB 夾角為 40°，則支架 BC 與地面夾角為何？",
+      "givenConditions": "AB為直徑；C在半圓弧；∠CAB=40°。",
+      "target": "求∠CBA。",
+      "choices": [
+        "40°",
+        "90°",
+        "140°",
+        "50°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用儲存答案，直接依「AB為直徑；C在半圓弧；∠CAB=40°。」重算：∠ACB=90°，三角形兩銳角和90°，故B角=50°。",
+      "explanation": "∠ACB=90°，三角形兩銳角和90°，故B角=50°。 因此唯一正確選項是「50°」。",
+      "steps": [
+        "半圓所對C角90°。",
+        "90−40=50。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "40°",
+          "truth": false,
+          "reason": "誤認等腰。"
+        },
+        {
+          "choice": "90°",
+          "truth": false,
+          "reason": "這是頂角。"
+        },
+        {
+          "choice": "140°",
+          "truth": false,
+          "reason": "外角錯。"
+        },
+        {
+          "choice": "50°",
+          "truth": true,
+          "reason": "依題目條件重新計算：∠ACB=90°，三角形兩銳角和90°，故B角=50°。"
+        }
+      ],
+      "misconceptionTarget": "以屋頂對稱外觀推定兩底角相等。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "u19-s009-v010 已核對所求量「求∠CBA。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「在屋頂支架中使用半圓直角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s009-v010。",
+      "difficultyReason": "literacy：在屋頂支架中使用半圓直角。 解題需完成「半圓所對C角90°。；90−40=50。」。",
+      "literacyContextNecessity": "支架與地面夾角決定結構角度，半圓直角是必要模型。",
+      "authoringIntent": "在屋頂支架中使用半圓直角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "e57b38ececb71391b299a352f0ae494d7132ee37e9e6f05638968f434cea2297"
+    },
+    {
+      "questionId": "u19-s009-v011",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形徽章四個固定點 A、B、C、D 共圓。量得 ∠A=92°，則對面 C 點夾角應為何？",
+      "text": "圓形徽章四個固定點 A、B、C、D 共圓。量得 ∠A=92°，則對面 C 點夾角應為何？",
+      "givenConditions": "四固定點共圓。",
+      "target": "求C角。",
+      "choices": [
+        "88°",
+        "92°",
+        "46°",
+        "268°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用儲存答案，直接依「四固定點共圓。」重算：內接四邊形對角互補，180−92=88°。",
+      "explanation": "內接四邊形對角互補，180−92=88°。 因此唯一正確選項是「88°」。",
+      "steps": [
+        "使用A+C=180°。",
+        "計算88°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "88°",
+          "truth": true,
+          "reason": "依題目條件重新計算：內接四邊形對角互補，180−92=88°。"
+        },
+        {
+          "choice": "92°",
+          "truth": false,
+          "reason": "誤認相等。"
+        },
+        {
+          "choice": "46°",
+          "truth": false,
+          "reason": "錯取一半。"
+        },
+        {
+          "choice": "268°",
+          "truth": false,
+          "reason": "錯用360°。"
+        }
+      ],
+      "misconceptionTarget": "把對稱圖案當角相等。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "u19-s009-v011 已核對所求量「求C角。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「檢查徽章四點角度。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s009-v011。",
+      "difficultyReason": "literacy：檢查徽章四點角度。 解題需完成「使用A+C=180°。；計算88°。」。",
+      "literacyContextNecessity": "角度規格用來驗證四點共圓。",
+      "authoringIntent": "檢查徽章四點角度。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "6107faf22d454bbad09805b226285546d23ee72c59e9c59cba62d5d899c7d619"
+    },
+    {
+      "questionId": "u19-s009-v012",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "literacy",
+      "type": "mc",
+      "itemType": "multiple-choice",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "圓形舞台邊緣 A、B 之間的劣弧為 100°。位於另一弧上的攝影機 C 拍攝 A、B 的視角為何？",
+      "text": "圓形舞台邊緣 A、B 之間的劣弧為 100°。位於另一弧上的攝影機 C 拍攝 A、B 的視角為何？",
+      "givenConditions": "C位於不含劣弧AB的另一弧。",
+      "target": "求視角。",
+      "choices": [
+        "100°",
+        "200°",
+        "50°",
+        "80°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用儲存答案，直接依「C位於不含劣弧AB的另一弧。」重算：視角∠ACB為劣弧AB所對圓周角，100°÷2=50°。",
+      "explanation": "視角∠ACB為劣弧AB所對圓周角，100°÷2=50°。 因此唯一正確選項是「50°」。",
+      "steps": [
+        "將視角識別為圓周角。",
+        "弧度數除2。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "100°",
+          "truth": false,
+          "reason": "未除2。"
+        },
+        {
+          "choice": "200°",
+          "truth": false,
+          "reason": "錯乘2。"
+        },
+        {
+          "choice": "50°",
+          "truth": true,
+          "reason": "依題目條件重新計算：視角∠ACB為劣弧AB所對圓周角，100°÷2=50°。"
+        },
+        {
+          "choice": "80°",
+          "truth": false,
+          "reason": "錯用180−100。"
+        }
+      ],
+      "misconceptionTarget": "把弧度數直接當視角。",
+      "prerequisiteCheck": "需先能使用「弧長公式」；本題未使用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "u19-s009-v012 已核對所求量「求視角。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
+      "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由舞台弧位求攝影視角。」只有一個數學目標。",
+      "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s009-v012。",
+      "difficultyReason": "literacy：由舞台弧位求攝影視角。 解題需完成「將視角識別為圓周角。；弧度數除2。」。",
+      "literacyContextNecessity": "攝影機位置與舞台端點共同決定所對弧。",
+      "authoringIntent": "由舞台弧位求攝影視角。",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "32fcefcd33f83cdbeb5ddfd9be53012ddc5cb8993a99b457318f290ba630cf50"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u19-s009-cr001",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "itemType": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u19-s009-fig001",
+      "drawingSpecId": "u19-s009-fig001",
+      "prompt": "AB 為直徑，C 在圓上，∠CAB=(x+8)°、∠ABC=(2x−5)°。求 x 與三角形三角。",
+      "requiredWork": [
+        "指出C角90°。",
+        "用兩銳角和90°列式。",
+        "回代三角。"
+      ],
+      "standardSolution": [
+        "x+8+2x−5=90。",
+        "3x+3=90，x=29。",
+        "∠A=37°、∠B=53°、∠C=90°。"
+      ],
+      "fullCreditSolution": [
+        "x+8+2x−5=90。",
+        "3x+3=90，x=29。",
+        "∠A=37°、∠B=53°、∠C=90°。"
+      ],
+      "alternativeSolutions": [
+        "可用三角形內角和180°列37+53+90。"
+      ],
+      "reasoningSteps": [
+        "x+8+2x−5=90。",
+        "3x+3=90，x=29。",
+        "∠A=37°、∠B=53°、∠C=90°。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "x=29與37°、53°、90°完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "x正確但漏一角或理由。"
+        },
+        {
+          "score": 1,
+          "criteria": "列出正確方程。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用直徑所對直角。"
+        }
+      ],
+      "partialCreditRules": [
+        "半圓直角與代數各給方法分。"
+      ],
+      "followThroughPolicy": "若x計算錯但後續角度依式回代且保留C=90°，給1分。",
+      "unitNotationRules": "角度用°。",
+      "answerOnlyPolicy": "只寫x=29給2分。",
+      "commonErrors": [
+        "把三角和直接設90但漏C角含義。",
+        "將AB誤作一股。"
+      ],
+      "independentReview": {
+        "derivedResult": "x=29；三角37°、53°、90°。",
+        "ambiguity": "角度均正且和180°。",
+        "decision": "pass",
+        "reviewNote": "u19-s009-cr001 由題目條件另行推導得到「x=29；三角37°、53°、90°。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewedAt": "2026-07-12"
+      },
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "675a52c0793df2a43eeb1bd8c92940caba04ee07bd67cf163470809e3dc25d17"
+    },
+    {
+      "questionId": "u19-s009-cr002",
+      "unitId": "u19",
+      "numericUnitId": 19,
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "itemType": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "prompt": "A、B、C、D 共圓，C、D 位於弦 AB 的兩側。若 ∠ACB=48°，求 ∠ADB 並說明為何不是48°。",
+      "requiredWork": [
+        "求∠ACB所對弧度數。",
+        "求另一段弧。",
+        "求位於另一側的圓周角。"
+      ],
+      "standardSolution": [
+        "∠ACB所對一段弧AB為96°。",
+        "另一段弧AB為360°−96°=264°。",
+        "∠ADB=264°÷2=132°。",
+        "C、D位於弦AB兩側，兩角所對的是互補的兩段弧，所以兩角互補而非相等。"
+      ],
+      "fullCreditSolution": [
+        "∠ACB所對一段弧AB為96°。",
+        "另一段弧AB為360°−96°=264°。",
+        "∠ADB=264°÷2=132°。",
+        "C、D位於弦AB兩側，兩角所對的是互補的兩段弧，所以兩角互補而非相等。"
+      ],
+      "alternativeSolutions": [
+        "可直接使用圓內接四邊形對角互補：∠ADB=180°−48°=132°。"
+      ],
+      "reasoningSteps": [
+        "∠ACB所對一段弧AB為96°。",
+        "另一段弧AB為360°−96°=264°。",
+        "∠ADB=264°÷2=132°。",
+        "C、D位於弦AB兩側，兩角所對的是互補的兩段弧，所以兩角互補而非相等。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "132°與兩側/互補理由完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但理由只引用定理。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道兩角互補。"
+        },
+        {
+          "score": 0,
+          "criteria": "寫48°且聲稱同弧。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩種解法都可滿分。"
+      ],
+      "followThroughPolicy": "若弧計算小錯但正確指出兩角互補，可得1分。",
+      "unitNotationRules": "角度用°。",
+      "answerOnlyPolicy": "只寫132°給2分。",
+      "commonErrors": [
+        "忽略頂點在弦兩側。",
+        "兩弧度數相加錯。"
+      ],
+      "independentReview": {
+        "derivedResult": "∠ADB=132°。",
+        "ambiguity": "位置條件排除同側等角解讀。",
+        "decision": "pass",
+        "reviewNote": "u19-s009-cr002 由題目條件另行推導得到「∠ADB=132°。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewedAt": "2026-07-12"
+      },
+      "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "60656adbb6854e6da3c4390430db4e3fcc5db6383cc3310ab5abdbd119f608bf"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u19-s009-fig001",
+      "unitId": "u19",
+      "topicId": "u19-angles",
+      "skillId": "circle-inscribed-basic",
+      "svgPath": "figures/u19/u19-s009-fig001.svg",
+      "canvas": {
+        "width": 360,
+        "height": 240,
+        "viewBox": "0 0 360 240"
+      },
+      "drawingSpec": {
+        "purpose": "支援「內接角應用」中需要辨認點、線、弧、角或邊界的題目。",
+        "coordinateSystem": "SVG x向右、y向下；所有座標以360×240畫布為準。",
+        "geometry": "AB 為直徑，C、D 在圓周，畫出直角 ACB 與另一個同弧角 ADB。",
+        "visibleLines": "所有作答所需實線均以2px以上深色描邊；強調弧以5px描邊。",
+        "hiddenLines": "只有內部共邊或量測輔助線使用虛線；未指定者不得自行添加。",
+        "labels": "標籤位置已在SVG以固定座標給定，避免遮住交點、角弧或刻痕。",
+        "symbols": "直角符號、等長刻痕、箭頭及角度符號僅在數學條件需要時出現。",
+        "scalePolicy": "示意圖不保證按實際長度或角度比例繪製。",
+        "visualInferenceWarning": "不得以目測長短、角度或對稱性取代題目條件與定理。",
+        "mobileReadability": "360×240檢視下文字至少16px，關鍵線至少2px，無微小數值標籤。",
+        "answerLeakage": "圖中不標示任何題目要求計算的最終數值或正確選項。"
+      },
+      "altText": "AB 為直徑，C、D 在圓周，畫出直角 ACB 與另一個同弧角 ADB。 圖形僅協助辨認結構，不可依比例目測答案。",
+      "svgTitle": "半圓直角與同弧圖",
+      "svgDescription": "AB 為直徑，C、D 在圓周，畫出直角 ACB 與另一個同弧角 ADB。",
+      "svgAssertions": [
+        "role=\"img\"",
+        "<title",
+        "<desc",
+        "viewBox=\"0 0 360 240\"",
+        "l9 8 l8 -9",
+        ">C</text>",
+        ">D</text>"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderInspected": true,
+        "mobileReadable": true,
+        "answerLeakageFound": false,
+        "reviewNote": "已逐項檢查 u19-s009-fig001 的點位、線段、弧線、標籤與輔助符號；此圖專門呈現「內接角應用」的結構，未包含可直接推得題庫答案的數值。",
+        "reviewVersion": "human-figure-review-r1.0",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "09f32cc3916ff231b6c454cf5036f53544867905a09b9161694cdad1626052e2"
+    }
+  ],
+  "sourceBatch": "020-u19-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/020-u19-complete/units/u19/s009"
+}

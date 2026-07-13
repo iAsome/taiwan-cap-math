@@ -1,0 +1,1223 @@
+{
+  "slot": "s013",
+  "skillId": "function-literacy",
+  "topicId": "u15-literacy",
+  "lecture": {
+    "lectureId": "u15-s013-lecture",
+    "unitId": "u15",
+    "numericUnitId": 15,
+    "unitTitle": "函數及其圖形",
+    "topicId": "u15-literacy",
+    "skillId": "function-literacy",
+    "skillSlot": "s013",
+    "skillTitle": "函數素養題",
+    "order": 13,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "prerequisites": [
+      {
+        "skillId": "linear-function-application",
+        "title": "線型函數應用",
+        "requiredLevel": "能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。",
+        "bridge": "最後把公式、表格、圖形、分段規則及單位整合，用證據評估生活資料中的主張、圖表呈現與模型限制。"
+      }
+    ],
+    "learningGoals": [
+      "從長文字、表格與圖形擷取函數資訊",
+      "判讀模型假設、單位與適用範圍",
+      "評估以函數支持的生活主張"
+    ],
+    "vocabulary": [
+      {
+        "term": "數學模型",
+        "meaning": "對現實關係的簡化表示"
+      },
+      {
+        "term": "適用範圍",
+        "meaning": "模型可合理使用的輸入區間"
+      },
+      {
+        "term": "資料證據",
+        "meaning": "支持或反駁主張的數值與關係"
+      }
+    ],
+    "conceptDevelopment": [
+      "素養題不是把故事中的所有數字都拿來算，而是先判斷哪些量形成函數、規則在哪個範圍有效、問題真正要比較什麼。",
+      "圖表可能使用截斷坐標軸或不同刻度，造成視覺誤導。判斷主張要回到實際數值、單位與模型假設。"
+    ],
+    "definitionsAndMeaning": "素養題不是把故事中的所有數字都拿來算，而是先判斷哪些量形成函數、規則在哪個範圍有效、問題真正要比較什麼。",
+    "formulasAndConditions": [
+      "建模流程：情境→變數與單位→關係式或表圖→計算→情境檢核。",
+      "比較主張時，可用差值函數 D(x)=方案甲-方案乙 判斷正負。"
+    ],
+    "invalidUseCases": [
+      "看到「直線」就無限制外推。",
+      "只看圖形傾斜程度，不看軸刻度。",
+      "忽略分段規則或資料收集條件。"
+    ],
+    "stepByStepMethod": [
+      "圈出問題、變數、單位與限制。",
+      "把文字轉成表格、式子或圖形。",
+      "選擇必要資料完成計算。",
+      "檢查答案是否在定義域內。",
+      "以完整句子解釋數值對原情境的意義。"
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "s013-ex01",
+        "title": "截斷坐標軸",
+        "prompt": "圖表的縱軸只從 98 畫到 102，兩方案實際只差 2 元。說明截斷坐標軸如何影響視覺判斷。",
+        "solution": "兩方案差 2 元，若縱軸只畫 98 到 102，視覺差距會被放大。",
+        "level": "basic"
+      },
+      {
+        "exampleId": "s013-ex02",
+        "title": "分段費率",
+        "prompt": "用水費採分段費率。計算前應先從哪些資訊判斷用量跨過哪一個級距？",
+        "solution": "先判斷用量是否跨級距，再計算各段費用。",
+        "level": "standard"
+      },
+      {
+        "exampleId": "s013-ex03",
+        "title": "模型外推",
+        "prompt": "實驗只觀察 0 至 10 分鐘且資料近似直線。能否直接用同一直線預測 3 小時後？說明模型限制。",
+        "solution": "只觀察 0 至 10 分鐘的線性降溫，不保證 3 小時後仍依同一直線。",
+        "level": "advanced"
+      },
+      {
+        "exampleId": "s013-ex04",
+        "title": "方案主張",
+        "prompt": "兩個收費方案的圖形有一個交點。如何判斷交點左右各是哪個方案較省，而不能只說交點代表同價？",
+        "solution": "交點表示同價；交點左右哪個較省要再代入測試或比較斜率。",
+        "level": "connection"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeId": "s013-m01",
+        "wrongReasoning": "把背景敘述中的無關數字加入公式。",
+        "correction": "先標出每個數字的單位與角色；只有會影響輸入、固定量、變化率或限制條件的資料才放入模型。"
+      },
+      {
+        "mistakeId": "s013-m02",
+        "wrongReasoning": "漏掉單位轉換。",
+        "correction": "把分鐘與小時、毫升與公升等先換成同一單位，再代入公式；答案也要附上對應單位。"
+      },
+      {
+        "mistakeId": "s013-m03",
+        "wrongReasoning": "用圖形視覺面積代替坐標值。",
+        "correction": "圖形判讀依坐標刻度、點與斜率，不以線下面積或視覺長度代替函數值，除非題目明確定義面積意義。"
+      },
+      {
+        "mistakeId": "s013-m04",
+        "wrongReasoning": "得到負數時間仍接受。",
+        "correction": "時間、件數等情境量通常有非負限制；代數解若為負數，應回到定義域判定為不合情境或無可行解。"
+      },
+      {
+        "mistakeId": "s013-m05",
+        "wrongReasoning": "只寫答案不解釋主張是否成立。",
+        "correction": "素養題要求評估主張時，需列出代入、比較或圖表證據，再用完整句回答成立範圍，不能只寫選項或數字。"
+      }
+    ],
+    "selfChecks": [
+      {
+        "prompt": "圖表縱軸不從 0 開始時要注意什麼？",
+        "answer": "視覺差距可能被放大。"
+      },
+      {
+        "prompt": "模型只由短時間資料建立，可無限外推嗎？",
+        "answer": "不可以。"
+      },
+      {
+        "prompt": "素養題最後一步是？",
+        "answer": "回到情境檢查並解釋。"
+      }
+    ],
+    "summary": "函數素養題要同時處理數學關係、單位、限制、圖表呈現與主張合理性。",
+    "previousSkillConnection": "linear-function-application",
+    "nextSkillConnection": null,
+    "figureRefs": [],
+    "accessibilityNotes": [],
+    "lectureReview": {
+      "reviewVersion": "human-lecture-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "decision": "pass",
+      "reviewNote": "逐段人工重讀「函數素養題」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+      "zeroFoundationCheck": "學生只需具備 能以自己的話說明「線型函數應用」並完成基本判斷或計算。",
+      "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+    },
+    "canonicalization": "sorted-keys-json-utf8-v1",
+    "contentSha256": "e7e874c9522caed995091390c9e344e62b9c3954b61ece433897008c8630e674"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u15-s013-mc01",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "圖書館影印表顯示：0 張 10 元、5 張 20 元、10 張 30 元。若關係保持線型，12 張費用為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「從費用表推估新輸入」。",
+      "target": "從費用表推估新輸入",
+      "choices": [
+        "34 元",
+        "32 元",
+        "40 元",
+        "44 元"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：由表求單價 2；讀固定費 10；代 12 得 34。因此得到「34 元」。",
+      "explanation": "每 5 張增加 10 元，即每張 2 元；固定費 10 元，所以 12 張為 10+24=34。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "由表求單價 2"
+        },
+        {
+          "step": 2,
+          "work": "讀固定費 10"
+        },
+        {
+          "step": 3,
+          "work": "代 12 得 34"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "34 元",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；每 5 張增加 10 元，即每張 2 元；固定費 10 元，所以 12 張為 10+24=34。"
+        },
+        {
+          "index": 1,
+          "choice": "32 元",
+          "truth": false,
+          "reason": "把 12 張直接加固定費。"
+        },
+        {
+          "index": 2,
+          "choice": "40 元",
+          "truth": false,
+          "reason": "用 10 張價格加 10 元。"
+        },
+        {
+          "index": 3,
+          "choice": "44 元",
+          "truth": false,
+          "reason": "把 12×2 再錯加 20。"
+        }
+      ],
+      "misconceptionTarget": "由表格建模時斜率或截距錯",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「從費用表推估新輸入」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 90,
+      "unitAndRoundingCheck": "「元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「從費用表推估新輸入」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「34 元」符合；其餘錯因分別記錄於 optionAnalysis。；「元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「從費用表推估新輸入」只有題幹所述的一種解讀。",
+      "difficultyReason": "基礎表格線性外推。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "00ddcd3b0119f8488ba84bd104245bd87b4ba4097991c4c22ec8233a6edd107e"
+    },
+    {
+      "questionId": "u15-s013-mc02",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "一份資料記錄每位參賽者的號碼與完賽時間。哪個方向一定是函數？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「辨認資料中的函數方向」。",
+      "target": "辨認資料中的函數方向",
+      "choices": [
+        "完賽時間→參賽者號碼",
+        "參賽者號碼→完賽時間（每人完成一次）",
+        "名次→所有同名次選手與時間",
+        "完賽時間→比賽日期"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：辨認唯一號碼；確認每人一次紀錄；允許時間重複。因此得到「參賽者號碼→完賽時間（每人完成一次）」。",
+      "explanation": "每個號碼對應該名參賽者唯一完賽時間；不同人可能同時完賽。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "辨認唯一號碼"
+        },
+        {
+          "step": 2,
+          "work": "確認每人一次紀錄"
+        },
+        {
+          "step": 3,
+          "work": "允許時間重複"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "完賽時間→參賽者號碼",
+          "truth": false,
+          "reason": "同一時間可能多人。"
+        },
+        {
+          "index": 1,
+          "choice": "參賽者號碼→完賽時間（每人完成一次）",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；每個號碼對應該名參賽者唯一完賽時間；不同人可能同時完賽。"
+        },
+        {
+          "index": 2,
+          "choice": "名次→所有同名次選手與時間",
+          "truth": false,
+          "reason": "輸出描述混合多項且同名次情況未限定。"
+        },
+        {
+          "index": 3,
+          "choice": "完賽時間→比賽日期",
+          "truth": false,
+          "reason": "同一完賽時間不必唯一決定日期。"
+        }
+      ],
+      "misconceptionTarget": "忽略資料方向與唯一鍵",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「辨認資料中的函數方向」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 94,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「辨認資料中的函數方向」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「參賽者號碼→完賽時間（每人完成一次）」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「辨認資料中的函數方向」只有題幹所述的一種解讀。",
+      "difficultyReason": "基本資料關係判讀。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "e30c04ad647cd4e14e82e203e46539cb4aa265ec33a96988bed3e17658de5b41"
+    },
+    {
+      "questionId": "u15-s013-mc03",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "共享單車前 30 分鐘 15 元，之後每 10 分鐘加 5 元。若依完整 10 分鐘級距計費，使用 50 分鐘多少元？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「計算生活分段費率」。",
+      "target": "計算生活分段費率",
+      "choices": [
+        "20 元",
+        "30 元",
+        "40 元",
+        "25 元"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：算超時 20 分鐘；換成 2 個級距；加前段 15。因此得到「25 元」。",
+      "explanation": "超過前 30 分鐘共 20 分鐘，為 2 個級距，追加 10 元，共 25。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "算超時 20 分鐘"
+        },
+        {
+          "step": 2,
+          "work": "換成 2 個級距"
+        },
+        {
+          "step": 3,
+          "work": "加前段 15"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "20 元",
+          "truth": false,
+          "reason": "只加一級距。"
+        },
+        {
+          "index": 1,
+          "choice": "30 元",
+          "truth": false,
+          "reason": "把 50 分鐘算成 3 個加價級距。"
+        },
+        {
+          "index": 2,
+          "choice": "40 元",
+          "truth": false,
+          "reason": "把每 10 分鐘 5 元錯當每 5 分鐘 10 元。"
+        },
+        {
+          "index": 3,
+          "choice": "25 元",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；超過前 30 分鐘共 20 分鐘，為 2 個級距，追加 10 元，共 25。"
+        }
+      ],
+      "misconceptionTarget": "分段級距計算錯誤",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「計算生活分段費率」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 98,
+      "unitAndRoundingCheck": "「元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「計算生活分段費率」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「25 元」符合；其餘錯因分別記錄於 optionAnalysis。；「元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「計算生活分段費率」只有題幹所述的一種解讀。",
+      "difficultyReason": "基本分段費率讀解。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "1ac482534f5d33913fea2c79fd123aeb92cea5ccfae4ec9dec7cd72c4774b627"
+    },
+    {
+      "questionId": "u15-s013-mc04",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "方案甲 C=2x+120，方案乙 C=5x+30。何時甲比乙便宜？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 x≥0；題問嚴格較便宜，因此不含 x=30。本題的條件審查焦點是「判斷方案優勢區間」。",
+      "target": "判斷方案優勢區間",
+      "choices": [
+        "x<30",
+        "x=30",
+        "x>30",
+        "所有 x≥0"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：建立不等式；移項得 90<3x；除 3。因此得到「x>30」。",
+      "explanation": "2x+120<5x+30 ⇒ 90<3x ⇒ x>30。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "建立不等式"
+        },
+        {
+          "step": 2,
+          "work": "移項得 90<3x"
+        },
+        {
+          "step": 3,
+          "work": "除 3"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "x<30",
+          "truth": false,
+          "reason": "方向顛倒。"
+        },
+        {
+          "index": 1,
+          "choice": "x=30",
+          "truth": false,
+          "reason": "x=30 時同價。"
+        },
+        {
+          "index": 2,
+          "choice": "x>30",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；2x+120<5x+30 ⇒ 90<3x ⇒ x>30。"
+        },
+        {
+          "index": 3,
+          "choice": "所有 x≥0",
+          "truth": false,
+          "reason": "小用量乙較便宜。"
+        }
+      ],
+      "misconceptionTarget": "比較方案不等式方向錯",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「判斷方案優勢區間」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 102,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「判斷方案優勢區間」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 x≥0；題問嚴格較便宜，因此不含 x=30。；四選項逐一代回或依定義檢查，只有索引 2 的「x>30」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「判斷方案優勢區間」只有題幹所述的一種解讀。",
+      "difficultyReason": "標準方案比較不等式。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "061a5794cf8e9bdfeac7b5eadd7be5f54dcc4b716fa863feb08b29256ec20b5b"
+    },
+    {
+      "questionId": "u15-s013-mc05",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "某新聞圖表比較兩月平均用電 98 與 102 kWh，縱軸從 97 開始，柱高看起來相差五倍。最合理判斷是什麼？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「辨認圖表尺度造成的誤導」。",
+      "target": "辨認圖表尺度造成的誤導",
+      "choices": [
+        "第二月確實是第一月五倍",
+        "實際只差 4 kWh，截斷縱軸放大了視覺差異",
+        "只要柱高不同就代表比例正確",
+        "縱軸起點不影響視覺解讀"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：讀實際數值；算差值 4 與比例；檢查縱軸起點。因此得到「實際只差 4 kWh，截斷縱軸放大了視覺差異」。",
+      "explanation": "102-98=4，比例約 1.04；從 97 起畫會放大柱高差。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "讀實際數值"
+        },
+        {
+          "step": 2,
+          "work": "算差值 4 與比例"
+        },
+        {
+          "step": 3,
+          "work": "檢查縱軸起點"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "第二月確實是第一月五倍",
+          "truth": false,
+          "reason": "數值不支持五倍。"
+        },
+        {
+          "index": 1,
+          "choice": "實際只差 4 kWh，截斷縱軸放大了視覺差異",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；102-98=4，比例約 1.04；從 97 起畫會放大柱高差。"
+        },
+        {
+          "index": 2,
+          "choice": "只要柱高不同就代表比例正確",
+          "truth": false,
+          "reason": "柱高比例取決於軸基準。"
+        },
+        {
+          "index": 3,
+          "choice": "縱軸起點不影響視覺解讀",
+          "truth": false,
+          "reason": "截斷軸會明顯影響視覺。"
+        }
+      ],
+      "misconceptionTarget": "只看圖形高度不看坐標尺度",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「辨認圖表尺度造成的誤導」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 106,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「辨認圖表尺度造成的誤導」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「實際只差 4 kWh，截斷縱軸放大了視覺差異」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「辨認圖表尺度造成的誤導」只有題幹所述的一種解讀。",
+      "difficultyReason": "標準資料視覺素養。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "a7efe36a5ceeb3d56ddb25160ff21f2187086fdc66fc0c8eead4e8cdca8a270e"
+    },
+    {
+      "questionId": "u15-s013-mc06",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "一個降溫模型 T=70-3t，只由 0≤t≤10 分鐘資料建立。有人用它預測 t=30 時 T=-20°C。哪個評語最合理？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 模型資料範圍明定 0 至 10 分鐘。本題的條件審查焦點是「評估線性外推主張」。",
+      "target": "評估線性外推主張",
+      "choices": [
+        "一定正確，因為代入公式即可",
+        "一定錯，因為負溫度不存在",
+        "模型只能用在 t=0",
+        "算術雖符合公式，但超出資料範圍，預測未必可靠"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：核對 t=30 是否在範圍；承認代入算術；質疑外推可靠性。因此得到「算術雖符合公式，但超出資料範圍，預測未必可靠」。",
+      "explanation": "30 超過模型建立範圍 10，線性趨勢可能改變；不能僅依算術宣稱可靠。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "核對 t=30 是否在範圍"
+        },
+        {
+          "step": 2,
+          "work": "承認代入算術"
+        },
+        {
+          "step": 3,
+          "work": "質疑外推可靠性"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "一定正確，因為代入公式即可",
+          "truth": false,
+          "reason": "公式適用性不是無限。"
+        },
+        {
+          "index": 1,
+          "choice": "一定錯，因為負溫度不存在",
+          "truth": false,
+          "reason": "負溫度可能存在，問題在外推。"
+        },
+        {
+          "index": 2,
+          "choice": "模型只能用在 t=0",
+          "truth": false,
+          "reason": "0 到 10 都在範圍。"
+        },
+        {
+          "index": 3,
+          "choice": "算術雖符合公式，但超出資料範圍，預測未必可靠",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；30 超過模型建立範圍 10，線性趨勢可能改變；不能僅依算術宣稱可靠。"
+        }
+      ],
+      "misconceptionTarget": "忽略模型適用範圍",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「評估線性外推主張」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 110,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「評估線性外推主張」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 模型資料範圍明定 0 至 10 分鐘。；四選項逐一代回或依定義檢查，只有索引 3 的「算術雖符合公式，但超出資料範圍，預測未必可靠」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「評估線性外推主張」只有題幹所述的一種解讀。",
+      "difficultyReason": "標準模型限制判讀。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "7c694ffd9d6b621d410886c9b3009bfaed30d08fe8a614c35956cae3408eeeb3"
+    },
+    {
+      "questionId": "u15-s013-mc07",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "運費模型 C=60+18w，w 以公斤計，但物流公司規定重量以 0.5 kg 為一級、無條件進位。包裹實重 2.1 kg，應代入哪個 w？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「處理離散計費輸入」。",
+      "target": "處理離散計費輸入",
+      "choices": [
+        "2.1",
+        "2.0",
+        "2.5",
+        "3.0"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：找相鄰級距 2.0、2.5；無條件進位；選 2.5。因此得到「2.5」。",
+      "explanation": "依計費規則，2.1 kg 要進位到下一個 0.5 kg 級距，即 2.5 kg。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "找相鄰級距 2.0、2.5"
+        },
+        {
+          "step": 2,
+          "work": "無條件進位"
+        },
+        {
+          "step": 3,
+          "work": "選 2.5"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "2.1",
+          "truth": false,
+          "reason": "忽略級距規則。"
+        },
+        {
+          "index": 1,
+          "choice": "2.0",
+          "truth": false,
+          "reason": "這是無條件捨去。"
+        },
+        {
+          "index": 2,
+          "choice": "2.5",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；依計費規則，2.1 kg 要進位到下一個 0.5 kg 級距，即 2.5 kg。"
+        },
+        {
+          "index": 3,
+          "choice": "3.0",
+          "truth": false,
+          "reason": "過度進位到整公斤。"
+        }
+      ],
+      "misconceptionTarget": "忽略計費前的輸入轉換",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「處理離散計費輸入」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 114,
+      "unitAndRoundingCheck": "「w 以計費公斤數代入。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「處理離散計費輸入」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「2.5」符合；其餘錯因分別記錄於 optionAnalysis。；「w 以計費公斤數代入。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「處理離散計費輸入」只有題幹所述的一種解讀。",
+      "difficultyReason": "進階：先轉換輸入再用函數。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "d86c0392410a7d3227ec89137a40e03cbf30b4d9e3918dde1be5d1815d6319e1"
+    },
+    {
+      "questionId": "u15-s013-mc08",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "電池 A 的剩餘量 A(t)=100-8t，電池 B 的剩餘量 B(t)=88-5t。兩者何時相同？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「求兩函數交會時刻」。",
+      "target": "求兩函數交會時刻",
+      "choices": [
+        "4 小時",
+        "3 小時",
+        "6 小時",
+        "12 小時"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：聯立兩模型；解 t=4；可回代驗證 68。因此得到「4 小時」。",
+      "explanation": "100-8t=88-5t ⇒ 12=3t ⇒ t=4；共同剩餘 68%。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "聯立兩模型"
+        },
+        {
+          "step": 2,
+          "work": "解 t=4"
+        },
+        {
+          "step": 3,
+          "work": "可回代驗證 68"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "4 小時",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；100-8t=88-5t ⇒ 12=3t ⇒ t=4；共同剩餘 68%。"
+        },
+        {
+          "index": 1,
+          "choice": "3 小時",
+          "truth": false,
+          "reason": "12÷4 錯。"
+        },
+        {
+          "index": 2,
+          "choice": "6 小時",
+          "truth": false,
+          "reason": "把 12 除以 2。"
+        },
+        {
+          "index": 3,
+          "choice": "12 小時",
+          "truth": false,
+          "reason": "只用初值差 12。"
+        }
+      ],
+      "misconceptionTarget": "兩模型交點計算錯誤",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「求兩函數交會時刻」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 118,
+      "unitAndRoundingCheck": "「小時。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「求兩函數交會時刻」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「4 小時」符合；其餘錯因分別記錄於 optionAnalysis。；「小時。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「求兩函數交會時刻」只有題幹所述的一種解讀。",
+      "difficultyReason": "進階雙模型交點。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "cf406d08d96aa16011a24ac0e925231c9ff773d060f6ef67d60807a15b993ed5"
+    },
+    {
+      "questionId": "u15-s013-mc09",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "水費前 10 度每度 8 元，超過 10 度部分每度 12 元。某戶繳 176 元，使用量多少度？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由總費反求分段用量」。",
+      "target": "由總費反求分段用量",
+      "choices": [
+        "14.7 度",
+        "22 度",
+        "12 度",
+        "18 度"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：先扣前段 80；剩 96÷12=8；加回 10。因此得到「18 度」。",
+      "explanation": "前 10 度費 80，剩 96 元來自超量，每度 12，超量 8 度，共 18。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "先扣前段 80"
+        },
+        {
+          "step": 2,
+          "work": "剩 96÷12=8"
+        },
+        {
+          "step": 3,
+          "work": "加回 10"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "14.7 度",
+          "truth": false,
+          "reason": "把總費直接除 12。"
+        },
+        {
+          "index": 1,
+          "choice": "22 度",
+          "truth": false,
+          "reason": "把 176-80 後錯除或直接加。"
+        },
+        {
+          "index": 2,
+          "choice": "12 度",
+          "truth": false,
+          "reason": "只把剩餘費除單價，漏加前段度數。"
+        },
+        {
+          "index": 3,
+          "choice": "18 度",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；前 10 度費 80，剩 96 元來自超量，每度 12，超量 8 度，共 18。"
+        }
+      ],
+      "misconceptionTarget": "分段反推未加回前段量",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「由總費反求分段用量」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 122,
+      "unitAndRoundingCheck": "「度。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由總費反求分段用量」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「18 度」符合；其餘錯因分別記錄於 optionAnalysis。；「度。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由總費反求分段用量」只有題幹所述的一種解讀。",
+      "difficultyReason": "進階分段反推。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "f0b9c0b62498e8cb92dee27070d6f043484faaf734ff44a68348202bc59f3a4e"
+    },
+    {
+      "questionId": "u15-s013-mc10",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "某直線圖以「班級人數 x」預測「午餐廚餘 y（kg）」，資料只來自 20≤x≤35。若用模型預測 x=80，最重要的限制是什麼？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「評估預測模型的適用性」。",
+      "target": "評估預測模型的適用性",
+      "choices": [
+        "人數不能是整數",
+        "廚餘不能用 kg",
+        "80 遠超出觀測範圍，線性關係可能不再適用",
+        "只要是直線就可無限外推"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：找觀測定義域；比較 80 與上限 35；判斷外推風險。因此得到「80 遠超出觀測範圍，線性關係可能不再適用」。",
+      "explanation": "模型只在 20 到 35 人的資料上驗證；80 是大幅外推。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "找觀測定義域"
+        },
+        {
+          "step": 2,
+          "work": "比較 80 與上限 35"
+        },
+        {
+          "step": 3,
+          "work": "判斷外推風險"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "人數不能是整數",
+          "truth": false,
+          "reason": "班級人數本來就是整數。"
+        },
+        {
+          "index": 1,
+          "choice": "廚餘不能用 kg",
+          "truth": false,
+          "reason": "kg 是合理單位。"
+        },
+        {
+          "index": 2,
+          "choice": "80 遠超出觀測範圍，線性關係可能不再適用",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；模型只在 20 到 35 人的資料上驗證；80 是大幅外推。"
+        },
+        {
+          "index": 3,
+          "choice": "只要是直線就可無限外推",
+          "truth": false,
+          "reason": "直線形式不保證現實無限有效。"
+        }
+      ],
+      "misconceptionTarget": "忽略資料範圍與外推風險",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「評估預測模型的適用性」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 126,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「評估預測模型的適用性」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「80 遠超出觀測範圍，線性關係可能不再適用」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「評估預測模型的適用性」只有題幹所述的一種解讀。",
+      "difficultyReason": "進階模型批判。",
+      "literacyContextNecessity": "觀測範圍 20 至 35 與外推到 80 的落差，是判斷模型可靠性的必要資料背景。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "aff3906046ebff298ad3221d3ba29ce7c7b1be0c54b702dabfbd61f98516a1d7"
+    },
+    {
+      "questionId": "u15-s013-mc11",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "某停車場方案：前 1 小時 50 元，之後每半小時 20 元，不足半小時以半小時計。停 2 小時 10 分鐘，費用多少？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「整合分段與級距規則」。",
+      "target": "整合分段與級距規則",
+      "choices": [
+        "110 元",
+        "90 元",
+        "100 元",
+        "130 元"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：算超時 70 分鐘；除 30 並進位為 3 級；加基本費。因此得到「110 元」。",
+      "explanation": "超過 1 小時為 70 分鐘，需進位成 3 個半小時級距，追加 60 元，加 50 得 110。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "算超時 70 分鐘"
+        },
+        {
+          "step": 2,
+          "work": "除 30 並進位為 3 級"
+        },
+        {
+          "step": 3,
+          "work": "加基本費"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "110 元",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；超過 1 小時為 70 分鐘，需進位成 3 個半小時級距，追加 60 元，加 50 得 110。"
+        },
+        {
+          "index": 1,
+          "choice": "90 元",
+          "truth": false,
+          "reason": "只算兩個完整半小時。"
+        },
+        {
+          "index": 2,
+          "choice": "100 元",
+          "truth": false,
+          "reason": "把 10 分鐘按比例算，違反進位規則。"
+        },
+        {
+          "index": 3,
+          "choice": "130 元",
+          "truth": false,
+          "reason": "把總時數全部算成四級後再多加。"
+        }
+      ],
+      "misconceptionTarget": "忽略級距進位與前段",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「整合分段與級距規則」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 130,
+      "unitAndRoundingCheck": "「元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「整合分段與級距規則」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「110 元」符合；其餘錯因分別記錄於 optionAnalysis。；「元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「整合分段與級距規則」只有題幹所述的一種解讀。",
+      "difficultyReason": "素養：多條費率規則整合。",
+      "literacyContextNecessity": "「不足半小時以半小時計」直接改變輸入處理，是不可刪除的情境條件。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "6edceb03aa1a752d8ecad2bd7964f3bfe23ecef668be0957df8b99c1cb06c627"
+    },
+    {
+      "questionId": "u15-s013-mc12",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "社群貼文宣稱：「方案 P 的斜率 2 小於方案 Q 的斜率 3，所以 P 永遠較便宜。」已知 P=2x+100、Q=3x+20。判斷為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「評估方案比較主張」。",
+      "target": "評估方案比較主張",
+      "choices": [
+        "對；斜率較小就永遠較低",
+        "錯；小用量時 P 的固定費較高，x<80 時 Q 較便宜",
+        "錯；P 在所有 x 都較貴",
+        "對；兩方案在 x=0 同價"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：先求交點 80；用 x=0 判交點左側；說明斜率只影響長期變化。因此得到「錯；小用量時 P 的固定費較高，x<80 時 Q 較便宜」。",
+      "explanation": "交點 2x+100=3x+20 得 x=80。x=0 時 P=100、Q=20，因此 0≤x<80 時 Q 較便宜，之後 P 才較便宜。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "先求交點 80"
+        },
+        {
+          "step": 2,
+          "work": "用 x=0 判交點左側"
+        },
+        {
+          "step": 3,
+          "work": "說明斜率只影響長期變化"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "對；斜率較小就永遠較低",
+          "truth": false,
+          "reason": "忽略截距。"
+        },
+        {
+          "index": 1,
+          "choice": "錯；小用量時 P 的固定費較高，x<80 時 Q 較便宜",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；交點 2x+100=3x+20 得 x=80。x=0 時 P=100、Q=20，因此 0≤x<80 時 Q 較便宜，之後 P 才較便宜。"
+        },
+        {
+          "index": 2,
+          "choice": "錯；P 在所有 x 都較貴",
+          "truth": false,
+          "reason": "x>80 時 P 會較便宜。"
+        },
+        {
+          "index": 3,
+          "choice": "對；兩方案在 x=0 同價",
+          "truth": false,
+          "reason": "x=0 時差 80。"
+        }
+      ],
+      "misconceptionTarget": "只比較斜率不比較截距",
+      "prerequisiteCheck": "先備能力是「能從文字找出固定量、每單位變化與可行範圍，建立或比較線型模型，並解釋交點。」本題將此能力用於「評估方案比較主張」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 134,
+      "unitAndRoundingCheck": "「x 為非負使用量，費用元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「評估方案比較主張」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「錯；小用量時 P 的固定費較高，x<80 時 Q 較便宜」符合；其餘錯因分別記錄於 optionAnalysis。；「x 為非負使用量，費用元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「評估方案比較主張」只有題幹所述的一種解讀。",
+      "difficultyReason": "素養：判讀並修正錯誤主張。",
+      "literacyContextNecessity": "題目要求反駁社群簡化主張，必須同時使用斜率、截距與交點。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "22a8219e51a12fee98056960220b4126daa00f08dea067635f73f697fdfe0e10"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u15-s013-cr01",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "type": "constructed-response",
+      "prompt": "自來水費：前 12 度每度 7 元；超過 12 度的部分每度 11 元。某戶使用 20 度。請建立分段費用函數、計算費用，並說明把 20×11 當答案錯在哪裡。",
+      "requiredWork": "須寫出兩段函數含條件、代入 20 並診斷錯誤。",
+      "standardSolution": "C(x)=7x（0≤x≤12）；C(x)=84+11(x-12)（x>12）。C(20)=84+88=172 元。20×11=220 錯在把前 12 度也用高級距單價重算。",
+      "alternativeMethod": "可把帳單拆成前段 12×7=84 與後段 8×11=88，再相加。",
+      "reasoningSteps": [
+        {
+          "step": 1,
+          "work": "正確寫兩段與條件"
+        },
+        {
+          "step": 2,
+          "work": "算前段 84"
+        },
+        {
+          "step": 3,
+          "work": "算後段 88"
+        },
+        {
+          "step": 4,
+          "work": "合計 172 並診斷錯誤"
+        }
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確建立兩段 C(x)=7x（0≤x≤12）與 C(x)=84+11(x-12)（x>12），算得 C(20)=172 元，並指出 20×11 錯把前 12 度重算為高費率。"
+        },
+        {
+          "score": 2,
+          "criteria": "分段條件與 172 元正確，但對 20×11 的錯因說明不完整；或後段式正確且僅有一次算術錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "只拆出前 12 度 84 元與後 8 度，或只算得 172 元但未寫完整分段函數。"
+        },
+        {
+          "score": 0,
+          "criteria": "直接用 20×11 且未保留前段費率，或分段點與累計基本費皆無法對應題意。"
+        }
+      ],
+      "partialCreditRules": [
+        "分段函數、20 度費用與錯因分析可分項採計；單一加法錯不取消正確分段模型。",
+        "只用 12×7+8×11 算出 172 而未寫一般分段函數，最高 2 分。"
+      ],
+      "followThroughPolicy": "本題延續計分依以下具體規則處理：分段函數、20 度費用與錯因分析可分項採計；單一加法錯不取消正確分段模型。；只用 12×7+8×11 算出 172 而未寫一般分段函數，最高 2 分。",
+      "unitAndNotationRules": "沿用題幹的變數、序對、不等號與計量單位；作答必須清楚呈現以下要求中的符號與單位：須寫出兩段函數含條件、代入 20 並診斷錯誤。",
+      "answerOnlyPolicy": "只寫最終答案而未呈現必要方法時，依本題 1 分規準處理：只拆出前 12 度 84 元與後 8 度，或只算得 172 元但未寫完整分段函數。；答案錯且無可辨識過程則為 0 分。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "recomputedConclusion": "C(x)=7x（0≤x≤12）；C(x)=84+11(x-12)（x>12）。C(20)=84+88=172 元。20×11=220 錯在把前 12 度也用高級距單價重算。",
+        "reviewNote": "獨立重做 u15-s013-cr01 時依序檢查 正確寫兩段與條件、算前段 84、算後段 88、合計 172 並診斷錯誤；標準解與替代法在允許範圍內得到一致結論，量綱與端點亦符合題意。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "2da27b86b30aacc926fec887d858c6cfbbb10a8928ce5404d2da1c19d3d5562d"
+    },
+    {
+      "questionId": "u15-s013-cr02",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-literacy",
+      "skillId": "function-literacy",
+      "skillSlot": "s013",
+      "skillTitle": "函數素養題",
+      "type": "constructed-response",
+      "prompt": "某報告以 10≤x≤30 的資料建立 y=2.4x+18，卻宣稱「x=100 時 y 一定是 258」。請先算模型值，再從適用範圍、單位與「一定」三方面評估此主張。",
+      "requiredWork": "須區分算術結果與模型可信度，至少提出三項檢核。",
+      "standardSolution": "代入模型得 y(100)=258。可是 100 超出觀測範圍 10 到 30，屬大幅外推；若 x、y 的單位或情境限制不允許 100，代入本身可能無意義；模型是資料的簡化關係，存在誤差，不能用「一定」表述。因此只能說模型外推值為 258，可靠性需額外證據。",
+      "alternativeMethod": "可畫出資料範圍內線段與 x=100 的遠距離，視覺化外推幅度，再逐項檢查。",
+      "reasoningSteps": [
+        {
+          "step": 1,
+          "work": "算出形式值 258"
+        },
+        {
+          "step": 2,
+          "work": "指出超出範圍"
+        },
+        {
+          "step": 3,
+          "work": "檢查單位與情境可行性"
+        },
+        {
+          "step": 4,
+          "work": "修正「一定」的語氣"
+        }
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "先算出模型外推值 258，再分別指出 100 超出 10≤x≤30、單位或情境可能不允許、模型有誤差所以不能說「一定」；結論限定為外推值。"
+        },
+        {
+          "score": 2,
+          "criteria": "算得 258，且三項批判面向中完整說明兩項；或三項皆提到但其中一項理由過於簡略。"
+        },
+        {
+          "score": 1,
+          "criteria": "只算得 258，或只指出超出範圍而未討論單位與「一定」的問題。"
+        },
+        {
+          "score": 0,
+          "criteria": "因代入能得到 258 就完全接受主張，且未檢查資料範圍、單位或模型不確定性。"
+        }
+      ],
+      "partialCreditRules": [
+        "數值 258 與三個批判面向分開採計；算值錯不取消正確的範圍、單位與不確定性分析。",
+        "只說「超出範圍所以不行」但未處理單位與「一定」，最高 1 分。"
+      ],
+      "followThroughPolicy": "本題延續計分依以下具體規則處理：數值 258 與三個批判面向分開採計；算值錯不取消正確的範圍、單位與不確定性分析。；只說「超出範圍所以不行」但未處理單位與「一定」，最高 1 分。",
+      "unitAndNotationRules": "沿用題幹的變數、序對、不等號與計量單位；作答必須清楚呈現以下要求中的符號與單位：須區分算術結果與模型可信度，至少提出三項檢核。",
+      "answerOnlyPolicy": "只寫最終答案而未呈現必要方法時，依本題 1 分規準處理：只算得 258，或只指出超出範圍而未討論單位與「一定」的問題。；答案錯且無可辨識過程則為 0 分。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "recomputedConclusion": "代入模型得 y(100)=258。可是 100 超出觀測範圍 10 到 30，屬大幅外推；若 x、y 的單位或情境限制不允許 100，代入本身可能無意義；模型是資料的簡化關係，存在誤差，不能用「一定」表述。因此只能說模型外推值為 258，可靠性需額外證據。",
+        "reviewNote": "獨立重做 u15-s013-cr02 時依序檢查 算出形式值 258、指出超出範圍、檢查單位與情境可行性、修正「一定」的語氣；標準解與替代法在允許範圍內得到一致結論，量綱與端點亦符合題意。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "717a5b2d147288fd6af637c5a652fcb297b9f82239015880c09254aa8e5751ad"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "016-u15-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/016-u15-complete/units/u15/s013"
+}

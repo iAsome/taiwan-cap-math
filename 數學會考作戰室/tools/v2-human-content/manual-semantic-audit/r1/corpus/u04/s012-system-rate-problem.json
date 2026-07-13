@@ -1,0 +1,1113 @@
+{
+  "slot": "s012",
+  "skillId": "system-rate-problem",
+  "topicId": "u04-system-apps",
+  "title": "速率與行程問題：每一段都用路程等於速率乘時間",
+  "lecture": {
+    "lectureId": "u04-s012-lecture-r1",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-apps",
+    "skillId": "system-rate-problem",
+    "lockedSkillTitle": "速率與行程問題",
+    "title": "速率與行程問題：每一段都用路程等於速率乘時間",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "exactSkillIdentity": {
+      "unitTitle": "二元一次聯立方程式",
+      "skillTitle": "速率與行程問題",
+      "scope": "使用路程等於速率乘時間，區分相向、同向與分段行程。"
+    },
+    "prerequisiteBridge": "先備技能 system-quantity-price-problem 已建立必要基礎；本節將其用於「使用路程等於速率乘時間，區分相向、同向與分段行程。」",
+    "learningGoals": [
+      "能區分路程、速率與時間。",
+      "能處理相向、同向追趕與分段行程。",
+      "能先統一時間和距離單位。",
+      "能將未知速率或未知時間建立為聯立方程式。"
+    ],
+    "vocabulary": [
+      {
+        "term": "路程",
+        "definition": "移動所經過的長度。"
+      },
+      {
+        "term": "速率",
+        "definition": "每單位時間行進的路程。"
+      },
+      {
+        "term": "相向",
+        "definition": "從兩端朝彼此移動。"
+      },
+      {
+        "term": "同向追趕",
+        "definition": "後方較快者縮短與前方的距離差。"
+      },
+      {
+        "term": "分段行程",
+        "definition": "不同路段使用不同速率或時間。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "d=vt",
+        "meaning": "路程=速率×時間。"
+      },
+      {
+        "symbol": "(v₁+v₂)t=D",
+        "meaning": "相向同時出發，相遇時路程和為總距離。"
+      },
+      {
+        "symbol": "(v₁-v₂)t=D",
+        "meaning": "同向追趕且 v₁>v₂，縮短距離為初距。"
+      }
+    ],
+    "conceptDevelopment": [
+      "先為每個人或每一段各寫 d=vt，再依題意把路程相加、相減或設為相等。",
+      "分鐘與小時不可直接混用；30 分鐘要寫成 0.5 小時。",
+      "來迴路程相同不代表來回時間相同。"
+    ],
+    "definitions": [
+      {
+        "name": "相遇條件",
+        "statement": "相向時兩者路程和等於原距離。"
+      },
+      {
+        "name": "追及條件",
+        "statement": "同向時快者比慢者多走的路程等於原先距離。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "d=vt",
+        "conditions": [
+          "路程、速率、時間單位相容。"
+        ],
+        "meaning": "所有行程模型的基礎。"
+      }
+    ],
+    "invalidUseCases": [
+      "不可用速率相加處理同向追趕。",
+      "不可把 20 分鐘直接當 20 小時。",
+      "平均速率通常不是兩速率的算術平均，除非時間相等。"
+    ],
+    "stepByStepMethod": [
+      {
+        "step": 1,
+        "instruction": "畫文字流程或表格",
+        "check": "列每段 v、t、d。"
+      },
+      {
+        "step": 2,
+        "instruction": "統一單位",
+        "check": "分鐘換小時、公里與公尺統一。"
+      },
+      {
+        "step": 3,
+        "instruction": "逐段寫 d=vt",
+        "check": "不要先合併。"
+      },
+      {
+        "step": 4,
+        "instruction": "依相遇、追及或總路程列第二關係",
+        "check": "建立聯立。"
+      },
+      {
+        "step": 5,
+        "instruction": "求解並檢查時間正值",
+        "check": "代迴路程。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "兩地相距 180 公里，兩車相向 2 小時相遇，速率差 10。",
+        "solutionSteps": [
+          "設快車 x、慢車 y。",
+          "x+y=90、x-y=10。"
+        ],
+        "answer": "速率 50、40 公里/時。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "甲先行 12 公里，乙同向追趕，2 小時追上，乙比甲快多少？",
+        "solutionSteps": [
+          "追趕縮短 12 公里。",
+          "(v乙-v甲)×2=12。"
+        ],
+        "answer": "快 6 公里/時。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "上坡 3 公里、下坡 3 公里，速率 x、y，總時間 1 小時且下坡比上坡快 6。",
+        "solutionSteps": [
+          "3/x+3/y=1 不是二元一次。",
+          "本單元不以聯立一次方程式處理此形式。"
+        ],
+        "answer": "屬本單元邊界外的非線性形式。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "步行 4 公里/時、騎車 12 公里/時，共 2 小時走 16 公里。",
+        "solutionSteps": [
+          "設步行 x 小時、騎車 y 小時。",
+          "x+y=2、4x+12y=16。"
+        ],
+        "answer": "各 1 小時。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "相向用速率差",
+        "correction": "相向路程和對應速率和。"
+      },
+      {
+        "mistake": "同向用速率和",
+        "correction": "追趕看相對速率差。"
+      },
+      {
+        "mistake": "時間單位未換算",
+        "correction": "先把分鐘除以 60。"
+      },
+      {
+        "mistake": "把含 1/x 的式子當二元一次",
+        "correction": "未知數在分母不是一次方程式。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "prompt": "30 分鐘是幾小時？",
+        "answer": "0.5 小時。"
+      },
+      {
+        "prompt": "相向相遇用速率和還差？",
+        "answer": "和。"
+      },
+      {
+        "prompt": "同向追趕用什麼？",
+        "answer": "快慢速率差。"
+      },
+      {
+        "prompt": "d=vt 中單位要如何？",
+        "answer": "相互一致。"
+      }
+    ],
+    "summary": [
+      "每段先寫 d=vt。",
+      "相向看路程和，同向追趕看路程差。",
+      "先統一單位。",
+      "含未知速率倒數的非線性題不屬本技能。"
+    ],
+    "connections": {
+      "previous": "先備技能 system-quantity-price-problem 已建立必要基礎；本節將其用於「使用路程等於速率乘時間，區分相向、同向與分段行程。」",
+      "next": "下一技能「基礎混合問題」會延伸目前能力。"
+    },
+    "figureReferences": [],
+    "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+    "lectureReview": {
+      "decision": "pass",
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "capBoundary": "pass",
+      "skillSpecificEvidence": "刻意標示等路程來回造成 1/x 的非線性邊界，不強行納入一次聯立；其餘例題均由線性時間或速率條件建立。",
+      "reviewNote": "刻意標示等路程來回造成 1/x 的非線性邊界，不強行納入一次聯立；其餘例題均由線性時間或速率條件建立。",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "b702a8a43acae3f3dc0e0d1f6b38940717f7cf5150e2146478e1370af679f5b6"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u04-s012-v001",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "路程、速率、時間的基本關係式為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "辨認基本公式",
+      "choices": [
+        "速率=路程×時間",
+        "時間=速率×路程",
+        "路程=速率+時間",
+        "路程=速率×時間"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "由速率定義，每單位時間路程乘時間得到總路程。",
+      "explanation": "d=vt 是行程題基礎。",
+      "steps": [
+        "檢查單位：公里/時×時=公里。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "速率=路程×時間",
+          "truth": false,
+          "reason": "應為路程除時間。"
+        },
+        {
+          "choice": "時間=速率×路程",
+          "truth": false,
+          "reason": "應為路程除速率。"
+        },
+        {
+          "choice": "路程=速率+時間",
+          "truth": false,
+          "reason": "單位不相容。"
+        },
+        {
+          "choice": "路程=速率×時間",
+          "truth": true,
+          "reason": "速率乘時間得到路程。"
+        }
+      ],
+      "misconceptionTarget": "把乘除關係顛倒",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "距離單位。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「辨認基本公式」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "直接公式。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "1d11d137160a1bb0235ebae018c36a0415d055be83ea5edc896c40b304e85ca4"
+    },
+    {
+      "questionId": "u04-s012-v002",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "30 分鐘等於多少小時？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "時間單位換算",
+      "choices": [
+        "0.3 小時",
+        "2 小時",
+        "0.5 小時",
+        "30 小時"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "30÷60=0.5 小時。",
+      "explanation": "分鐘換小時要除以 60。",
+      "steps": [
+        "用 60 分=1 小時。",
+        "計算 30/60。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.3 小時",
+          "truth": false,
+          "reason": "把 30 當百分數。"
+        },
+        {
+          "choice": "2 小時",
+          "truth": false,
+          "reason": "反向換算。"
+        },
+        {
+          "choice": "0.5 小時",
+          "truth": true,
+          "reason": "半小時就是 0.5 小時。"
+        },
+        {
+          "choice": "30 小時",
+          "truth": false,
+          "reason": "未換單位。"
+        }
+      ],
+      "misconceptionTarget": "把分鐘小數點直接移動",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "分鐘轉換為小時。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「時間單位換算」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "基礎單位。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "19ed00470120d0b6bb7fc69d931e3881fb7a32646dd1ea32326af2eea48846c1"
+    },
+    {
+      "questionId": "u04-s012-v003",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "兩車相向而行時，若同時出發到相遇，兩車路程有何關係？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "理解相向相遇條件",
+      "choices": [
+        "兩車路程差等於原距離",
+        "兩車路程和等於原距離",
+        "兩車路程一定相等",
+        "每車都走完整原距離"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "相向從兩端靠近，相遇時兩段路程拼成原距離。",
+      "explanation": "相向模型使用路程和。",
+      "steps": [
+        "畫出兩端與相遇點。",
+        "相加兩段。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "兩車路程差等於原距離",
+          "truth": false,
+          "reason": "這是同向追趕常見關係。"
+        },
+        {
+          "choice": "兩車路程和等於原距離",
+          "truth": true,
+          "reason": "兩段路程剛好覆蓋兩地間距。"
+        },
+        {
+          "choice": "兩車路程一定相等",
+          "truth": false,
+          "reason": "速率不同則不等。"
+        },
+        {
+          "choice": "每車都走完整原距離",
+          "truth": false,
+          "reason": "相遇前各走一部分。"
+        }
+      ],
+      "misconceptionTarget": "把相向與追趕混淆",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「理解相向相遇條件」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "概念判斷。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "8e702860fe43ae7ba79d07bbcda7e929062a2f8651db0559cd6e2d242b34920c"
+    },
+    {
+      "questionId": "u04-s012-v004",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "甲速率 40 公里/時、乙 50 公里/時，相向 2 小時，原距離多少？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "計算相向原距離",
+      "choices": [
+        "180 公里",
+        "20 公里",
+        "90 公里",
+        "200 公里"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "相對接近速率 40+50=90；2 小時共縮短 180 公里。",
+      "explanation": "相向用速率和。",
+      "steps": [
+        "加速率。",
+        "乘時間。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "180 公里",
+          "truth": true,
+          "reason": "(40+50)×2=180。"
+        },
+        {
+          "choice": "20 公里",
+          "truth": false,
+          "reason": "誤用速率差。"
+        },
+        {
+          "choice": "90 公里",
+          "truth": false,
+          "reason": "只算一小時總路程。"
+        },
+        {
+          "choice": "200 公里",
+          "truth": false,
+          "reason": "把較快者速率乘 4。"
+        }
+      ],
+      "misconceptionTarget": "使用速率差",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "公里/時×時=公里。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「計算相向原距離」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "標準公式應用。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "af7567de2e917b7bf7630d0e067f9232debef6304ee3d957b33db1df8197ae8c"
+    },
+    {
+      "questionId": "u04-s012-v005",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "甲先行 12 公里，乙同向追趕，2 小時追上。乙每小時比甲快多少？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "求同向相對速率",
+      "choices": [
+        "4 公里/時",
+        "6 公里/時",
+        "12 公里/時",
+        "24 公里/時"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "相對速率差×2=12，所以差為 6 公里/時。",
+      "explanation": "同向追趕看多走的路程。",
+      "steps": [
+        "寫 (v乙-v甲)×2=12。",
+        "除 2。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4 公里/時",
+          "truth": false,
+          "reason": "12÷3。"
+        },
+        {
+          "choice": "6 公里/時",
+          "truth": true,
+          "reason": "每小時多 6 公里，2 小時補 12 公里。"
+        },
+        {
+          "choice": "12 公里/時",
+          "truth": false,
+          "reason": "未除時間。"
+        },
+        {
+          "choice": "24 公里/時",
+          "truth": false,
+          "reason": "把距離乘時間。"
+        }
+      ],
+      "misconceptionTarget": "相向相加",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "公里÷小時=公里/時。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「求同向相對速率」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "標準追趕。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "26613aaf77c3e2b2be4c6ec3c16f62cfa147b2e8e9a51d27dca992c7b3f7e752"
+    },
+    {
+      "questionId": "u04-s012-v006",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "步行 4 公里/時、騎車 12 公里/時，共 2 小時走 16 公里。若步行 x 小時、騎車 y 小時，正確聯立為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "建立分段行程聯立",
+      "choices": [
+        "x+y=16，4x+12y=2",
+        "4x+12y=18，x-y=2",
+        "x+y=2，4x+12y=16",
+        "xy=2，48xy=16"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "總時間為 x+y，分段路程為 4x+12y。",
+      "explanation": "每一段分別用 d=vt。",
+      "steps": [
+        "列時間總和。",
+        "列路程總和。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x+y=16，4x+12y=2",
+          "truth": false,
+          "reason": "時間與路程對調。"
+        },
+        {
+          "choice": "4x+12y=18，x-y=2",
+          "truth": false,
+          "reason": "無題意依據。"
+        },
+        {
+          "choice": "x+y=2，4x+12y=16",
+          "truth": true,
+          "reason": "兩式分別表達總時間與總路程。"
+        },
+        {
+          "choice": "xy=2，48xy=16",
+          "truth": false,
+          "reason": "錯誤使用乘積。"
+        }
+      ],
+      "misconceptionTarget": "把時間與路程單位混淆",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "小時式與公里式各自一致。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「建立分段行程聯立」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "需要兩條守恆。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "9abb1927dfb2f4c57aefe7c2d72fde5b99f4aa1d73d25fb2b494bd9f7a67b111"
+    },
+    {
+      "questionId": "u04-s012-v007",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "兩車相向 2 小時相遇，速率和 90 公里/時、速率差 10 公里/時，較快車速率為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "由相對資料求個別速率",
+      "choices": [
+        "50 公里/時",
+        "40 公里/時",
+        "45 公里/時",
+        "100 公里/時"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "設快 x、慢 y：x+y=90、x-y=10；相加得 2x=100，x=50。",
+      "explanation": "由和差聯立求個別速率。",
+      "steps": [
+        "列和式。",
+        "列差式。",
+        "相加除 2。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "50 公里/時",
+          "truth": true,
+          "reason": "50+40=90 且 50-40=10。"
+        },
+        {
+          "choice": "40 公里/時",
+          "truth": false,
+          "reason": "這是較慢車。"
+        },
+        {
+          "choice": "45 公里/時",
+          "truth": false,
+          "reason": "只取平均。"
+        },
+        {
+          "choice": "100 公里/時",
+          "truth": false,
+          "reason": "將和與差相加未除 2。"
+        }
+      ],
+      "misconceptionTarget": "把和直接當快車",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「由相對資料求個別速率」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "需聯立和差。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "dd35e34d8e52bc40948cb9781ac25b98445eb2a2232ade2bdaeaba0239d43785"
+    },
+    {
+      "questionId": "u04-s012-v008",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "某人以 5 公里/時步行 x 小時、以 15 公里/時騎車 y 小時，總時間 3 小時、總路程 25 公里。騎車多久？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "分段速率消去",
+      "choices": [
+        "0.5 小時",
+        "2 小時",
+        "2.5 小時",
+        "1 小時"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "x+y=3，5x+15y=25。以 5(x+y)=15 相減得 10y=10，y=1。",
+      "explanation": "利用時間式倍數快速消去。",
+      "steps": [
+        "列兩式。",
+        "用路程式減 5 倍時間式。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.5 小時",
+          "truth": false,
+          "reason": "總路程 20。"
+        },
+        {
+          "choice": "2 小時",
+          "truth": false,
+          "reason": "總路程 35。"
+        },
+        {
+          "choice": "2.5 小時",
+          "truth": false,
+          "reason": "總路程 40。"
+        },
+        {
+          "choice": "1 小時",
+          "truth": true,
+          "reason": "步行 2 小時 10 公里，騎車 1 小時 15 公里。"
+        }
+      ],
+      "misconceptionTarget": "把平均速率直接套用",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "小時。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「分段速率消去」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "完整聯立。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "970d7fb4054c61345b58619c62bea5aab80e85b769faa0f989ac313498f8ef7b"
+    },
+    {
+      "questionId": "u04-s012-v009",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "上坡 3 公里速率 x、下坡 3 公里速率 y，總時間 1 小時。為何 3/x+3/y=1 不屬二元一次聯立形式？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "辨認行程模型邊界",
+      "choices": [
+        "未知數在分母",
+        "因為有兩個未知數",
+        "因為常數是 1",
+        "因為路程相同"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "時間=路程÷速率，因此出現 1/x、1/y，未知數在分母。",
+      "explanation": "本單元只處理能列成二元一次的行程條件。",
+      "steps": [
+        "寫每段時間。",
+        "檢查未知數位置。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "未知數在分母",
+          "truth": true,
+          "reason": "1/x 與 1/y 不是一次項。"
+        },
+        {
+          "choice": "因為有兩個未知數",
+          "truth": false,
+          "reason": "二元本身不是問題。"
+        },
+        {
+          "choice": "因為常數是 1",
+          "truth": false,
+          "reason": "常數大小無關。"
+        },
+        {
+          "choice": "因為路程相同",
+          "truth": false,
+          "reason": "路程相同不造成非一次。"
+        }
+      ],
+      "misconceptionTarget": "把所有速率題都強行用一次聯立",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「辨認行程模型邊界」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "明確排除未知數在分母的非線性速率模型。",
+      "difficultyReason": "需要識別非線性。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "3c50fa78ee2c24dac7c602b431d68d110c8c53690d86843ee38ec7562301a67a"
+    },
+    {
+      "questionId": "u04-s012-v010",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "公車 A 每小時 60 公里、公車 B 每小時 45 公里，從相距 210 公里的兩站相向同時出發。多久相遇？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "從時刻表資料求相遇時間",
+      "choices": [
+        "1.5 小時",
+        "2 小時",
+        "3 小時",
+        "14 小時"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "相向相對速率 105 公里/時；210÷105=2。",
+      "explanation": "班車站距與兩速率共同決定相遇時間。",
+      "steps": [
+        "加兩車速率。",
+        "用總距離除和。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1.5 小時",
+          "truth": false,
+          "reason": "共走 157.5 公里。"
+        },
+        {
+          "choice": "2 小時",
+          "truth": true,
+          "reason": "兩小時內分別走 120 與 90 公里，合計 210。"
+        },
+        {
+          "choice": "3 小時",
+          "truth": false,
+          "reason": "共走 315 公里。"
+        },
+        {
+          "choice": "14 小時",
+          "truth": false,
+          "reason": "誤用距離除速率差。"
+        }
+      ],
+      "misconceptionTarget": "用速率差",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "公里÷(公里/時)=小時。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「從時刻表資料求相遇時間」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "交通資料不可省略。",
+      "literacyContextNecessity": "兩車速率和與站距是相遇時間的必要資料。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "208292f7faf9da18e3aa3b39a0b25532a25b9b2efd92ceb44a432e1d9cc76fe2"
+    },
+    {
+      "questionId": "u04-s012-v011",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "外送員先以 12 公里/時騎 0.5 小時，再以 4 公里/時走 x 小時，總路程 10 公里。x 為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "從配送紀錄求剩餘時間",
+      "choices": [
+        "0.5 小時",
+        "2 小時",
+        "4 小時",
+        "1 小時"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "騎車路程 12×0.5=6 公里，剩 4 公里；步行 4 公里/時需 1 小時。",
+      "explanation": "分段行程先算已知段。",
+      "steps": [
+        "算騎車 6 公里。",
+        "求剩餘 4 公里。",
+        "除步行速率。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.5 小時",
+          "truth": false,
+          "reason": "總路程 8。"
+        },
+        {
+          "choice": "2 小時",
+          "truth": false,
+          "reason": "總路程 14。"
+        },
+        {
+          "choice": "4 小時",
+          "truth": false,
+          "reason": "把剩餘距離當時間。"
+        },
+        {
+          "choice": "1 小時",
+          "truth": true,
+          "reason": "4 公里以 4 公里/時行走需 1 小時。"
+        }
+      ],
+      "misconceptionTarget": "把總路程直接除步行速率",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "小時。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「從配送紀錄求剩餘時間」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "分段資料是必要情境。",
+      "literacyContextNecessity": "0.5 小時騎車段決定剩餘路程，不能刪去。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "1a55649ce7ee03d57b376d19c80da41a142a4b5b8c7b75a213fcf6ce8d40c1d0"
+    },
+    {
+      "questionId": "u04-s012-v012",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "跑道上甲、乙同向，甲在前方 300 公尺；乙每秒 8 公尺、甲每秒 5 公尺。乙多久追上？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "由跑道追趕資料求時間",
+      "choices": [
+        "37.5 秒",
+        "60 秒",
+        "100 秒",
+        "150 秒"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "相對速率 8-5=3 公尺/秒；300÷3=100 秒。",
+      "explanation": "同向追趕必須使用速率差。",
+      "steps": [
+        "求速率差。",
+        "距離除相對速率。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "37.5 秒",
+          "truth": false,
+          "reason": "用 300÷8。"
+        },
+        {
+          "choice": "60 秒",
+          "truth": false,
+          "reason": "用 300÷5。"
+        },
+        {
+          "choice": "100 秒",
+          "truth": true,
+          "reason": "每秒縮短 3 公尺，100 秒縮短 300 公尺。"
+        },
+        {
+          "choice": "150 秒",
+          "truth": false,
+          "reason": "誤用速率和 13。"
+        }
+      ],
+      "misconceptionTarget": "只用快者速率或速率和",
+      "prerequisiteCheck": "只需先備 system-quantity-price-problem，並使用本技能「速率與行程問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "公尺÷(公尺/秒)=秒。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「由跑道追趕資料求時間」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "位置差與速率差均必要。",
+      "literacyContextNecessity": "前距 300 與兩人速率決定追趕時間。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "fd76f3bc543a2d780f2eab9d4752e67cab99a8036acfa26ac37e39c02326c68e"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u04-s012-cr001",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "prompt": "兩地相距 270 公里，甲乙兩車相向同時出發，3 小時相遇；甲每小時比乙快 10 公里。求兩車速率。",
+      "requiredWork": [
+        "列速率和與差。",
+        "單位完整。"
+      ],
+      "standardSolution": [
+        "設甲 x、乙 y 公里/時。",
+        "相向 3 小時：3x+3y=270，所以 x+y=90。",
+        "x-y=10。",
+        "相加得 2x=100，x=50，y=40。"
+      ],
+      "alternativeMethods": [
+        "可先求平均速率 45，再由差 10 各增減 5。"
+      ],
+      "reasoningSteps": [
+        "由相遇求速率和。",
+        "由比較求差。",
+        "解和差。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "50與40公里/時，模型與單位完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但少寫相遇式或單位。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確得到速率和 90 與差 10，計算小錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "相向誤用速率差求總距離。"
+        }
+      ],
+      "partialCreditRules": [
+        "和式一分，差式一分，解與單位一分。"
+      ],
+      "followThroughPolicy": "若甲乙名稱互換但同時把“甲快”關係寫反，不算一致，應扣方向分。",
+      "unitNotationRules": "速率寫公里/時。",
+      "answerOnlyPolicy": "只答 50、40 最高 1 分。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "derivedResult": "甲50、乙40公里/時。",
+        "ambiguityAudit": "題意給定量、變數與所求明確；沒有第二種會改變答案的合理解釋。",
+        "boundaryAudit": "只使用本技能與已鎖定先備技能。",
+        "decision": "pass",
+        "reviewNote": "獨立回算三小時路程 150+120=270，差10。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "483024ab8fea4cfc51dafc80b55acc379dd5cc05690c0520269feee643f2e15a"
+    },
+    {
+      "questionId": "u04-s012-cr002",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-rate-problem",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "prompt": "某人步行 5 公里/時、騎車 15 公里/時，共移動 4 小時、走了 40 公里。求步行與騎車時間，並檢查。",
+      "requiredWork": [
+        "變數為時間。",
+        "列總時間與總路程。"
+      ],
+      "standardSolution": [
+        "設步行 x 小時、騎車 y 小時。",
+        "x+y=4，5x+15y=40。",
+        "減 5(x+y)=20，得 10y=20，y=2，x=2。",
+        "檢查：2+2=4；10+30=40。"
+      ],
+      "alternativeMethods": [
+        "平均速率為 10，正好是 5 與 15 中點，且總時間相等，所以各2小時。"
+      ],
+      "reasoningSteps": [
+        "明確時間變數。",
+        "建立兩式。",
+        "檢查。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "步行2小時、騎車2小時且完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但少一項檢查。"
+        },
+        {
+          "score": 1,
+          "criteria": "兩式正確，後續算術錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "把 x、y 設為路程卻仍寫時間式導致單位混亂。"
+        }
+      ],
+      "partialCreditRules": [
+        "定義與兩式兩分，答案檢查一分。"
+      ],
+      "followThroughPolicy": "若變數設為路程且能正確建立 x+y=40、x/5+y/15=4，雖含分母但計算正確可給滿分；然而本單元首選時間變數。",
+      "unitNotationRules": "單位為小時與公里。",
+      "answerOnlyPolicy": "只答各2小時最高 1 分。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "derivedResult": "各2小時。",
+        "ambiguityAudit": "題意給定量、變數與所求明確；沒有第二種會改變答案的合理解釋。",
+        "boundaryAudit": "只使用本技能與已鎖定先備技能。",
+        "decision": "pass",
+        "reviewNote": "獨立驗證總時間4、總路程40。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "c3976789f0fe4c12dac23b9a12a3f1b594e71e34d353a2e1f88966f612020fd0"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "005-u04-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/005-u04-complete/units/u04/s012"
+}

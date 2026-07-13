@@ -1,0 +1,40 @@
+{
+  "status": "PASS_MANUAL_SEMANTIC_AUDIT_BATCH_001_R1",
+  "scope": [
+    "u01-s002",
+    "u01-s003",
+    "u01-s004",
+    "u01-s005"
+  ],
+  "artifactCounts": {
+    "lectures": 4,
+    "mcQuestions": 48,
+    "constructedResponses": 8,
+    "questions": 56,
+    "total": 60
+  },
+  "questionVerdictCounts": {
+    "PASS": 24,
+    "WORDING_REPAIR": 3,
+    "SEQUENCE_REPAIR": 23,
+    "MOVE_OR_REPLACE": 6
+  },
+  "lectureVerdictCounts": {
+    "RESTRUCTURE": 3,
+    "SEQUENCE_REPAIR": 1
+  },
+  "mathematicsIncorrectCount": 0,
+  "answerIndexIncorrectCount": 0,
+  "utf8Integrity": "PASS_UTF8_INTEGRITY",
+  "figuresReviewed": 3,
+  "productionModified": false,
+  "manualReviewMethod": "Every string field was inventoried and read; mathematical results, answer indices, explanations, steps, option analyses, rubrics, sequence, terminology, figures and renderer risk were reviewed. Automated checks did not grant PASS.",
+  "keyFindings": [
+    "The largest defect is prerequisite order: S002, S003 and S005 assess integer operations before those operations are taught.",
+    "S003 includes midpoint and non-origin symmetry content that belongs later.",
+    "S004 is mostly sound but introduces absolute-value notation before S006.",
+    "All 56 questions have mathematically correct recorded answers; 32 require sequence, wording or relocation repair.",
+    "No garbled UTF-8 character was found in this batch."
+  ],
+  "nextBatch": "B002"
+}

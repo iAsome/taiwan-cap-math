@@ -1,0 +1,1249 @@
+{
+  "slot": "s002",
+  "skillId": "angle-types-measure",
+  "topicId": "u08-elements",
+  "title": "角的種類與互餘互補：先判範圍再做加法",
+  "lecture": {
+    "lectureId": "u08-s002-lecture-r1",
+    "unitId": "u08",
+    "numericUnitId": 8,
+    "topicId": "u08-elements",
+    "skillId": "angle-types-measure",
+    "lockedSkillTitle": "角的種類與互餘互補",
+    "title": "角的種類與互餘互補：先判範圍再做加法",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能以度數判斷銳角、直角、鈍角與平角。",
+      "能求一個角的餘角或補角。",
+      "能辨別互餘與互補是兩角關係，不是單一角名稱。",
+      "能處理含未知數的互餘互補關係。"
+    ],
+    "prerequisiteBridge": {
+      "prerequisiteSkillIds": [
+        "geometry-basic-elements"
+      ],
+      "bridgeExplanation": "先把角記號中的頂點與兩邊辨認清楚，再加入角度大小。"
+    },
+    "prerequisites": [
+      {
+        "skillId": "geometry-basic-elements",
+        "requiredLevel": "能正確讀寫 ∠ABC，並知道 B 是頂點。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "角度",
+        "definition": "衡量角張開程度的量，常用度（°）表示。"
+      },
+      {
+        "term": "銳角",
+        "definition": "大於 0° 且小於 90° 的角。"
+      },
+      {
+        "term": "直角",
+        "definition": "恰為 90° 的角。"
+      },
+      {
+        "term": "鈍角",
+        "definition": "大於 90° 且小於 180° 的角。"
+      },
+      {
+        "term": "平角",
+        "definition": "恰為 180° 的角。"
+      },
+      {
+        "term": "互餘",
+        "definition": "兩角度數和為 90°。"
+      },
+      {
+        "term": "互補",
+        "definition": "兩角度數和為 180°。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "m∠ABC",
+        "meaning": "角 ABC 的度數。"
+      },
+      {
+        "symbol": "°",
+        "meaning": "度，角度單位。"
+      },
+      {
+        "symbol": "90°-x°",
+        "meaning": "x° 的餘角，前提是結果為非負且情境成立。"
+      },
+      {
+        "symbol": "180°-x°",
+        "meaning": "x° 的補角。"
+      }
+    ],
+    "conceptDevelopment": [
+      "角的種類由度數範圍決定，不由角畫得長短或方向決定。角的兩邊延長不會改變角度。",
+      "互餘只看兩角總和是否為 90°；互補只看總和是否為 180°。兩角不必相鄰，也不必畫在一起。",
+      "一個銳角的餘角仍是銳角；直角的餘角是 0°，但在一般國中幾何中 0° 不稱為普通角，因此題目常限制為正角。",
+      "求餘角或補角時先寫總和，再用總量減已知角。若含未知數，建立等式後再解。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "餘角",
+        "statement": "與指定角相加為 90° 的角。"
+      },
+      {
+        "name": "補角",
+        "statement": "與指定角相加為 180° 的角。"
+      },
+      {
+        "name": "優角外的會考範圍",
+        "statement": "本技能只處理 0° 到 180° 的基本角分類，不引入超過 180° 的角。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "x+y=90°",
+        "conditions": [
+          "x、y 為互餘兩角的度數"
+        ],
+        "meaning": "表示兩角互餘。"
+      },
+      {
+        "formula": "x+y=180°",
+        "conditions": [
+          "x、y 為互補兩角的度數"
+        ],
+        "meaning": "表示兩角互補。"
+      },
+      {
+        "formula": "餘角=90°-已知角",
+        "conditions": [
+          "已知角不大於 90° 且題意允許 0°"
+        ],
+        "meaning": "由直角總量扣除。"
+      },
+      {
+        "formula": "補角=180°-已知角",
+        "conditions": [
+          "已知角不大於 180°"
+        ],
+        "meaning": "由平角總量扣除。"
+      }
+    ],
+    "invalidUseCases": [
+      "不能因兩角都很小就判定互餘，必須計算總和。",
+      "不能把 90° 誤分成銳角，也不能把 180° 誤分成鈍角。",
+      "一個角可能同時有不同位置的餘角，但度數相同；位置不影響度數關係。",
+      "未限制角度為正時，要留意 0° 是否被題意排除。"
+    ],
+    "stepByStepMethod": [
+      {
+        "step": 1,
+        "instruction": "先讀角度並標出界線 90°、180°。",
+        "check": "等於界線與介於界線必須分開。"
+      },
+      {
+        "step": 2,
+        "instruction": "若問互餘或互補，先寫總和。",
+        "check": "互餘寫 90°，互補寫 180°。"
+      },
+      {
+        "step": 3,
+        "instruction": "用總和減去已知角或建立等式。",
+        "check": "保留度數單位，未知數求出後回代。"
+      },
+      {
+        "step": 4,
+        "instruction": "檢查結果範圍。",
+        "check": "餘角應在 0° 到 90°；補角應在 0° 到 180°。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "判斷 38°、90°、127°、180° 的種類。",
+        "solutionSteps": [
+          "38 介於 0 與 90，為銳角。",
+          "90 為直角；127 介於 90 與 180，為鈍角；180 為平角。"
+        ],
+        "answer": "依序為銳角、直角、鈍角、平角。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "角 A 為 64°，它的餘角是多少？",
+        "solutionSteps": [
+          "互餘總和為 90°。",
+          "90°-64°=26°。"
+        ],
+        "answer": "26°。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "角 B 為 113°，它的補角是多少？",
+        "solutionSteps": [
+          "互補總和為 180°。",
+          "180°-113°=67°。"
+        ],
+        "answer": "67°。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "兩互補角度數分別為 2x° 與 (x+30)°，求 x。",
+        "solutionSteps": [
+          "建立 2x+x+30=180。",
+          "3x=150，x=50。",
+          "兩角為 100° 與 80°，總和 180°。"
+        ],
+        "answer": "x=50。"
+      }
+    ],
+    "levelConnections": {
+      "basic": "以數值範圍分類角。",
+      "standard": "直接求餘角或補角。",
+      "advanced": "以代數式建立互餘互補方程。",
+      "literacy": "閱讀轉彎、坡面或開啟角度規格時，辨認題目是角的大小還是兩角總和。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "把 90° 稱為銳角。",
+        "why": "把小於等於 90° 混為一類。",
+        "correction": "銳角必須嚴格小於 90°。"
+      },
+      {
+        "mistake": "把 180° 稱為鈍角。",
+        "why": "忽略鈍角嚴格小於 180°。",
+        "correction": "180° 是平角。"
+      },
+      {
+        "mistake": "求 40° 的餘角算成 180°-40°。",
+        "why": "混淆互餘與互補。",
+        "correction": "餘角總和 90°，補角總和 180°。"
+      },
+      {
+        "mistake": "認為互餘角必須相鄰。",
+        "why": "把圖形位置當成定義。",
+        "correction": "只要度數和為 90° 即互餘。"
+      },
+      {
+        "mistake": "方程式漏寫括號。",
+        "why": "未把整個角度表達式相加。",
+        "correction": "先把每個角完整括起再建立總和。"
+      },
+      {
+        "mistake": "答案漏寫度數符號。",
+        "why": "把角度當成純數。",
+        "correction": "結果應附 °。"
+      }
+    ],
+    "selfCheckItems": [
+      "我能精確處理 90° 與 180° 的邊界嗎？",
+      "我是否先確認題目說互餘或互補？",
+      "未知數求出後是否回代檢查總和？",
+      "答案是否附度數單位？"
+    ],
+    "conciseSummary": [
+      "銳角小於 90°；直角等於 90°；鈍角介於 90° 與 180°；平角等於 180°。",
+      "互餘和為 90°，互補和為 180°。",
+      "先寫總和，再求未知角。"
+    ],
+    "connections": {
+      "previous": "上一技能提供角的頂點與記號，現在加入角度與分類。",
+      "next": [
+        "下一技能會用直角與平角關係處理垂直、對頂角和鄰補角。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNote": "本技能依鎖定範圍採全文字敘述；方向、位置與視圖關係均以明確語句表達，不要求由未提供的圖形推測。",
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "u08 locked CAP text-only boundary",
+      "examplesNotCopiedFromLegacyOrProductionBank": true,
+      "skillSpecificEvidence": "逐一檢查 0°、90°、180° 的分類邊界，並回代代數例題得到 100°+80°=180°；互餘與互補的公式均標明適用條件。",
+      "manualSymbolAndUnitCheck": true,
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "60aa9853e65527440c3ff8b2a5a80fd46684cb83d0da926e1f63a2f3c5a7b480"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u08-s002-v001",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "角度為 89° 的角屬於哪一類？",
+      "givenConditions": [
+        "角度為精確的 89°。"
+      ],
+      "target": "分類 89° 的角",
+      "choices": [
+        "直角",
+        "銳角",
+        "鈍角",
+        "平角"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "89° 落在 (0°,90°) 範圍內。",
+      "explanation": "比較 89° 與 90°、180° 的分類界線。",
+      "steps": [
+        "89<90。",
+        "因此是銳角。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "直角",
+          "truth": false,
+          "reason": "直角必須恰為 90°。"
+        },
+        {
+          "choice": "銳角",
+          "truth": true,
+          "reason": "89° 大於 0° 且小於 90°，符合銳角定義。"
+        },
+        {
+          "choice": "鈍角",
+          "truth": false,
+          "reason": "鈍角必須大於 90°。"
+        },
+        {
+          "choice": "平角",
+          "truth": false,
+          "reason": "平角為 180°。"
+        }
+      ],
+      "misconceptionTarget": "把接近 90° 的角誤判為直角。",
+      "prerequisiteCheck": "能讀角度符號並理解角的基本記號。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "角度以度（°）表示，無單位轉換。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "只需與分類界線比較，屬基礎辨認。",
+      "literacyContextNecessity": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "69463eaf4b121c74528a063ac89510ae4f31322824c955fd53482dfd699b41f7"
+    },
+    {
+      "questionId": "u08-s002-v002",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "下列哪一個角是直角？",
+      "givenConditions": [
+        "四個選項皆以度數表示。"
+      ],
+      "target": "辨認直角的度數",
+      "choices": [
+        "0°",
+        "89°",
+        "90°",
+        "180°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "直角固定為 90°。",
+      "explanation": "直角定義就是 90°。",
+      "steps": [
+        "回憶直角度數。",
+        "在選項中選 90°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0°",
+          "truth": false,
+          "reason": "0° 沒有張開，不是直角。"
+        },
+        {
+          "choice": "89°",
+          "truth": false,
+          "reason": "89° 是銳角。"
+        },
+        {
+          "choice": "90°",
+          "truth": true,
+          "reason": "直角的度數恰為 90°。"
+        },
+        {
+          "choice": "180°",
+          "truth": false,
+          "reason": "180° 是平角。"
+        }
+      ],
+      "misconceptionTarget": "把 180° 的平角當直角。",
+      "prerequisiteCheck": "能讀取角度。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "角度單位均為 °。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "單一定義回憶。",
+      "literacyContextNecessity": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "bd4c7c2707646c2a63d5b932fad046ca882cee79e891526d5cf2f15a33fa8106"
+    },
+    {
+      "questionId": "u08-s002-v003",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "兩角度數分別為 35° 與 55°，它們的關係為何？",
+      "givenConditions": [
+        "兩角為 35°、55°。"
+      ],
+      "target": "判斷兩角是否互餘",
+      "choices": [
+        "互補",
+        "相等",
+        "無法判斷",
+        "互餘"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "總和 90°，符合互餘而非互補。",
+      "explanation": "互餘只要求兩角和為 90°。",
+      "steps": [
+        "計算 35+55=90。",
+        "依定義判為互餘。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "互補",
+          "truth": false,
+          "reason": "互補要求總和 180°。"
+        },
+        {
+          "choice": "相等",
+          "truth": false,
+          "reason": "35° 不等於 55°。"
+        },
+        {
+          "choice": "無法判斷",
+          "truth": false,
+          "reason": "兩角總和已可直接判定關係。"
+        },
+        {
+          "choice": "互餘",
+          "truth": true,
+          "reason": "35°+55°=90°，所以兩角互餘。"
+        }
+      ],
+      "misconceptionTarget": "把互餘與互補的總和混淆。",
+      "prerequisiteCheck": "能做整數加法並理解角度。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "兩角皆以 ° 表示，直接相加。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "只需一次加法與定義對照。",
+      "literacyContextNecessity": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "cfa0b62286ea3e11baddde4d1b8ff64051a2ced6c46804cd06369f381364396e"
+    },
+    {
+      "questionId": "u08-s002-v004",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "一個角為 68°，它的餘角是多少？",
+      "givenConditions": [
+        "已知角為 68°。",
+        "所求為餘角。"
+      ],
+      "target": "求 68° 的餘角",
+      "choices": [
+        "22°",
+        "112°",
+        "68°",
+        "248°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "計算 90°-68°=22°，驗算 68°+22°=90°。",
+      "explanation": "用直角總量扣除已知角。",
+      "steps": [
+        "寫 90−68。",
+        "得到 22。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "22°",
+          "truth": true,
+          "reason": "餘角與原角總和 90°，所以 90°−68°=22°。"
+        },
+        {
+          "choice": "112°",
+          "truth": false,
+          "reason": "112° 是 68° 的補角。"
+        },
+        {
+          "choice": "68°",
+          "truth": false,
+          "reason": "餘角不必與原角相等。"
+        },
+        {
+          "choice": "248°",
+          "truth": false,
+          "reason": "超出本技能基本角範圍且總和不為 90°。"
+        }
+      ],
+      "misconceptionTarget": "誤用 180° 求補角。",
+      "prerequisiteCheck": "能辨認互餘總和 90°。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "計算與答案均以度為單位。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "直接代入餘角公式。",
+      "literacyContextNecessity": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "a5066dcf0aaeb9f524932218d6148a61b89aec71e0be251bdab2c9930c29d5ce"
+    },
+    {
+      "questionId": "u08-s002-v005",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "一個角為 137°，它的補角是多少？",
+      "givenConditions": [
+        "已知角 137°。",
+        "所求為補角。"
+      ],
+      "target": "求 137° 的補角",
+      "choices": [
+        "47°",
+        "43°",
+        "223°",
+        "53°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "由平角扣除 137° 得 43°。",
+      "explanation": "互補兩角總和為 180°。",
+      "steps": [
+        "寫 180−137。",
+        "得到 43。",
+        "驗算 137+43=180。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "47°",
+          "truth": false,
+          "reason": "這是把 137 誤看成 133 後的差。"
+        },
+        {
+          "choice": "43°",
+          "truth": true,
+          "reason": "補角=180°−137°=43°。"
+        },
+        {
+          "choice": "223°",
+          "truth": false,
+          "reason": "補角應與原角合為 180°，不是加到 360°。"
+        },
+        {
+          "choice": "53°",
+          "truth": false,
+          "reason": "137+53=190，不是 180。"
+        }
+      ],
+      "misconceptionTarget": "把補角總和誤用成 360°。",
+      "prerequisiteCheck": "能使用互補定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "所有角度以 ° 表示。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "需要一次減法與驗算。",
+      "literacyContextNecessity": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "e6644b35e9a553a7c5efe1dae084e0a1c16d88aeca8b05f976b867eb8311c0c6"
+    },
+    {
+      "questionId": "u08-s002-v006",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "兩個互補角的度數比為 2：3，較小角是多少？",
+      "givenConditions": [
+        "兩角互補。",
+        "度數比 2：3。"
+      ],
+      "target": "以比例求互補角",
+      "choices": [
+        "36°",
+        "60°",
+        "72°",
+        "108°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "將 180° 依 2:3 分配，兩角為 72°、108°。",
+      "explanation": "比例兩角合為 180°，按 2：3 分配。",
+      "steps": [
+        "2+3=5 份。",
+        "180÷5=36。",
+        "2×36=72。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "36°",
+          "truth": false,
+          "reason": "把 180° 除以 5 後未乘 2。"
+        },
+        {
+          "choice": "60°",
+          "truth": false,
+          "reason": "把互補誤當三等分。"
+        },
+        {
+          "choice": "72°",
+          "truth": true,
+          "reason": "總份數 5 份，每份 180°÷5=36°，較小角 2 份為 72°。"
+        },
+        {
+          "choice": "108°",
+          "truth": false,
+          "reason": "108° 是較大角。"
+        }
+      ],
+      "misconceptionTarget": "只取一份或答較大角。",
+      "prerequisiteCheck": "能使用互補總和與基本比例。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "比例無單位，結果為角度 °。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "需結合總和與比例分配，屬標準題。",
+      "literacyContextNecessity": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "7fa249e1abea3d1c30f16070c92d61e8c4b5a815858b6c61fa39da60a284c020"
+    },
+    {
+      "questionId": "u08-s002-v007",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "兩互餘角分別為 (3x+6)° 與 (2x−1)°，x 為何？",
+      "givenConditions": [
+        "兩角互餘。",
+        "角度式為 3x+6 與 2x−1。"
+      ],
+      "target": "解含未知數的互餘角",
+      "choices": [
+        "9",
+        "35",
+        "19",
+        "17"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "解方程 5x+5=90 得 17，兩角為 57°、33°。",
+      "explanation": "建立方程並解一次式。",
+      "steps": [
+        "合併得 5x+5=90。",
+        "5x=85。",
+        "x=17。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "把總和誤設為 50。"
+        },
+        {
+          "choice": "35",
+          "truth": false,
+          "reason": "解到 5x=85 後未除以 5。"
+        },
+        {
+          "choice": "19",
+          "truth": false,
+          "reason": "代回後兩角總和為 100°。"
+        },
+        {
+          "choice": "17",
+          "truth": true,
+          "reason": "互餘總和 90°，(3x+6)+(2x−1)=90，5x+5=90，x=17。"
+        }
+      ],
+      "misconceptionTarget": "把互餘總和設為 180° 或漏合併常數。",
+      "prerequisiteCheck": "能使用一元一次方程與互餘定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "x 為無單位數，代回角度式後單位為 °。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "需正確展開兩角並回代檢查。",
+      "literacyContextNecessity": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "273aad303c40594f1f24d698b3e302e2974a44552a405426da37d316543114ee"
+    },
+    {
+      "questionId": "u08-s002-v008",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "若一個角的補角比它本身大 24°，原角是多少？",
+      "givenConditions": [
+        "兩角互補。",
+        "補角比原角大 24°。"
+      ],
+      "target": "由角與補角的差反求原角",
+      "choices": [
+        "78°",
+        "102°",
+        "66°",
+        "84°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "原角 78°，補角 102°，相差 24°。",
+      "explanation": "把『補角比原角大 24°』翻成差的方程。",
+      "steps": [
+        "180−x 是補角。",
+        "180−2x=24。",
+        "2x=156，x=78。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "78°",
+          "truth": true,
+          "reason": "設原角 x°，補角 180−x；依題意 (180−x)−x=24，解得 x=78。"
+        },
+        {
+          "choice": "102°",
+          "truth": false,
+          "reason": "102° 是補角，不是原角。"
+        },
+        {
+          "choice": "66°",
+          "truth": false,
+          "reason": "66° 的補角 114°，差 48°。"
+        },
+        {
+          "choice": "84°",
+          "truth": false,
+          "reason": "84° 的補角 96°，只大 12°。"
+        }
+      ],
+      "misconceptionTarget": "將 24° 直接從 180° 減去而未平均分差。",
+      "prerequisiteCheck": "能列一元一次方程。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "所有角度以 ° 表示。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "需同時滿足總和與差，推理多一步。",
+      "literacyContextNecessity": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "4b2ac4a0936db106320df55795eedaff2dcf7eae1c07605422efec27371acaf9"
+    },
+    {
+      "questionId": "u08-s002-v009",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "下列哪一組不可能是兩個正角且互餘？",
+      "givenConditions": [
+        "要求兩角皆為正角。",
+        "互餘總和須 90°。"
+      ],
+      "target": "判斷互餘條件的可行性",
+      "choices": [
+        "12° 與 78°",
+        "10° 與 90°",
+        "44° 與 46°",
+        "1° 與 89°"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "三組總和為 90°，唯有 10° 與 90° 合為 100°。",
+      "explanation": "逐組檢查正值與總和。",
+      "steps": [
+        "計算各組總和。",
+        "只有 10+90=100。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12° 與 78°",
+          "truth": false,
+          "reason": "兩角皆為正且總和 90°。"
+        },
+        {
+          "choice": "10° 與 90°",
+          "truth": true,
+          "reason": "10°+90°=100°，不符合互餘總和 90°。"
+        },
+        {
+          "choice": "44° 與 46°",
+          "truth": false,
+          "reason": "兩角皆為正且總和 90°。"
+        },
+        {
+          "choice": "1° 與 89°",
+          "truth": false,
+          "reason": "兩角皆為正且總和 90°。"
+        }
+      ],
+      "misconceptionTarget": "只看到其中有 90° 就誤以為與任何角互餘。",
+      "prerequisiteCheck": "能辨認正角與互餘總和。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "角度單位一致。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "需檢查四組的邊界與總和。",
+      "literacyContextNecessity": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "9d10e905144476446ceb9754b6ab675576e4bbe1bb6c9d8074548e3349b7b5e9"
+    },
+    {
+      "questionId": "u08-s002-v010",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "一扇門從完全關閉轉到開啟 90°。安全規範要求再開啟的角度與目前角度互補。若目前已開 65°，還需再開多少度才能達到規範所說的直角位置？",
+      "givenConditions": [
+        "完全關閉視為 0°。",
+        "目前開 65°。",
+        "規範目標為 90°。"
+      ],
+      "target": "依門的開啟規格求剩餘互餘角",
+      "choices": [
+        "115°",
+        "65°",
+        "25°",
+        "155°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "從 65° 增至 90° 的差為 25°。",
+      "explanation": "『與目前角度互餘』把總開啟角限定為 90°。",
+      "steps": [
+        "目標總角度 90°。",
+        "已開 65°。",
+        "剩餘 25°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "115°",
+          "truth": false,
+          "reason": "115° 是 65° 的補角，不是到 90° 的剩餘角。"
+        },
+        {
+          "choice": "65°",
+          "truth": false,
+          "reason": "重複目前角度不會達 90°。"
+        },
+        {
+          "choice": "25°",
+          "truth": true,
+          "reason": "題目明示目標是 90° 的直角位置，因此剩餘角 90°−65°=25°。"
+        },
+        {
+          "choice": "155°",
+          "truth": false,
+          "reason": "65+155=220，與直角無關。"
+        }
+      ],
+      "misconceptionTarget": "看到『規範』後誤選補角 180°。",
+      "prerequisiteCheck": "能辨認互餘總和。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "開啟角與答案均以 ° 表示。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "生活情境中的『再開多少』要求計算角度差，而非單純分類。",
+      "literacyContextNecessity": "門的目前開啟角與目標直角是不可刪除的操作資訊；沒有這些情境條件就無法判斷是求餘角還是補角。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "cfa08904a834778f5dc64ec2cc1feab432865f09c6b3a21883bf23ca0fb600a6"
+    },
+    {
+      "questionId": "u08-s002-v011",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "道路設計規定兩段轉向角互補。第一段轉向 112°，第二段應設定多少度？",
+      "givenConditions": [
+        "兩段轉向角互補。",
+        "第一段為 112°。"
+      ],
+      "target": "由互補轉向規格求第二角",
+      "choices": [
+        "22°",
+        "112°",
+        "248°",
+        "68°"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "計算平角總量扣除第一段，得到 68°。",
+      "explanation": "道路規格直接指定互補關係。",
+      "steps": [
+        "寫 112+x=180。",
+        "x=68。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "22°",
+          "truth": false,
+          "reason": "把 112 與 90 比較，錯求餘角且得到負值後取絕對值。"
+        },
+        {
+          "choice": "112°",
+          "truth": false,
+          "reason": "互補不要求兩角相等。"
+        },
+        {
+          "choice": "248°",
+          "truth": false,
+          "reason": "用 360°−112°，那是繞一周的剩餘角。"
+        },
+        {
+          "choice": "68°",
+          "truth": true,
+          "reason": "互補總和 180°，第二段=180°−112°=68°。"
+        }
+      ],
+      "misconceptionTarget": "把道路轉向誤用一周角 360°。",
+      "prerequisiteCheck": "能使用互補定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "角度單位一致。",
+      "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "需要將工程規格『互補』轉成總和 180°。",
+      "literacyContextNecessity": "道路轉向情境中的『互補』是設計約束，第二段角度直接由第一段與 180° 的總和條件決定。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "90e81fbeb15aed8f97ca7025a2754bee15083944e049432726fbf668df376ae2"
+    },
+    {
+      "questionId": "u08-s002-v012",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
+      "text": "攝影棚兩盞燈的照射方向夾角分別設定為 (x+15)° 與 (2x−5)°，規格要求兩角互餘。哪一個 x 值符合規格？",
+      "givenConditions": [
+        "兩照射角分別為 x+15 與 2x−5。",
+        "規格要求總和 90°。"
+      ],
+      "target": "由互餘照明規格解參數",
+      "choices": [
+        "x=80/3",
+        "x=20",
+        "x=30",
+        "x=40"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "規格方程解為 80/3，代回兩角為 125/3° 與 145/3°，總和 90°。",
+      "explanation": "把兩項照射角完整相加並解方程。",
+      "steps": [
+        "3x+10=90。",
+        "3x=80。",
+        "x=80/3。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=80/3",
+          "truth": true,
+          "reason": "(x+15)+(2x−5)=90，3x+10=90，所以 x=80/3。"
+        },
+        {
+          "choice": "x=20",
+          "truth": false,
+          "reason": "代回得 35° 與 35°，總和 70°。"
+        },
+        {
+          "choice": "x=30",
+          "truth": false,
+          "reason": "代回得 45° 與 55°，總和 100°。"
+        },
+        {
+          "choice": "x=40",
+          "truth": false,
+          "reason": "代回得 55° 與 75°，總和 130°。"
+        }
+      ],
+      "misconceptionTarget": "只比較兩角是否相等，忽略互餘是總和條件。",
+      "prerequisiteCheck": "能解一元一次方程與使用互餘定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "x 無單位；代回後角度單位為 °。",
+      "roundingCheck": "答案為精確分數 80/3，不得任意取近似值。",
+      "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+      "difficultyReason": "參數不是整數，需保留精確分數並驗證兩角皆為正。",
+      "literacyContextNecessity": "照明規格把兩個可調角度連成總和 90° 的約束；情境中的兩個設定式都是求參數不可缺少的資料。",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "85aa4ca438f8e05463528b0d5cdc373172f19edda7554b3e3fe0b2face4393b1"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u08-s002-cr001",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "prompt": "一個角的度數比它的餘角多 18°。求這個角與它的餘角，並判斷原角屬於銳角、直角或鈍角。",
+      "requiredWork": [
+        "設未知數並列出互餘關係。",
+        "求兩個角。",
+        "分類原角。"
+      ],
+      "standardSolution": [
+        "設原角為 x°，餘角為 (90−x)°。",
+        "依題意 x=(90−x)+18，得2x=108，x=54。",
+        "餘角為36°，原角54°小於90°，是銳角。"
+      ],
+      "alternativeMethods": [
+        "可設餘角為 y°，原角 y+18，列 y+(y+18)=90，得 y=36。"
+      ],
+      "reasoningSteps": [
+        "互餘兩角和90°。",
+        "用相差18°建立關係。",
+        "解出54°與36°。",
+        "依54°範圍分類。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "列式正確，求得原角54°、餘角36°，並判為銳角。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩角數值正確但分類或文字理由缺一；或列式正確有輕微算術錯仍合理完成分類。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道兩角和90°並建立可辨認的式子，但未完整解出；或只答54°、36°無過程。"
+        },
+        {
+          "score": 0,
+          "criteria": "把互餘當180°，或所得角不滿足和90與差18。"
+        }
+      ],
+      "partialCreditRules": [
+        "原角與餘角名稱不可對調；若只對調但兩數與關係正確，最高2分。"
+      ],
+      "followThroughPolicy": "若解方程時單一算術錯誤，後續分類依錯誤值一致可給方法分，最高2分。",
+      "unitAndNotationRules": "所有角度須標°；互餘條件須寫和為90°。",
+      "answerOnlyPolicy": "只答「54°、36°、銳角」最高2分，因缺少建立關係。",
+      "commonErrors": [
+        "把餘角誤當補角。",
+        "算出36後把原角判為36。"
+      ],
+      "independentReview": {
+        "derivedResult": "原角54°，餘角36°，原角為銳角。",
+        "ambiguityAudit": "『比餘角多18°』明確指定原角較大，排除54與36互換。",
+        "reviewNote": "獨立驗算54+36=90、54−36=18，且0<54<90，三項條件全部通過。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "prerequisiteSkillIds": [
+        "geometry-basic-elements"
+      ],
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "ececa5b9052065cc4196d47025092850309178abdda991589ed7f0d91ad0c1e0"
+    },
+    {
+      "questionId": "u08-s002-cr002",
+      "unitId": "u08",
+      "numericUnitId": 8,
+      "topicId": "u08-elements",
+      "skillId": "angle-types-measure",
+      "lockedSkillTitle": "角的種類與互餘互補",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "prompt": "角 A 與角 B 互補，角 B 又是角 A 的 2 倍少 15°。求兩角，並檢查兩角的種類。",
+      "requiredWork": [
+        "列出 A+B=180°。",
+        "把 B 表成 A 的式子並求解。",
+        "分類兩角並驗算互補。"
+      ],
+      "standardSolution": [
+        "設 A=x°，則 B=(2x−15)°。",
+        "x+(2x−15)=180，得3x=195，x=65。",
+        "B=115°；A是銳角，B是鈍角，65+115=180。"
+      ],
+      "alternativeMethods": [
+        "可設 B=y°，則 A=(y+15)÷2，再代入 A+B=180 求 y=115。"
+      ],
+      "reasoningSteps": [
+        "把互補翻成總和180°。",
+        "依文字建立倍數減15。",
+        "解出A=65、B=115。",
+        "用範圍分類並驗算。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "A=65°、B=115°，方程、分類與互補驗算均完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩角正確但少一個分類或驗算；或方法正確僅有一處算術小錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確列出 x+(2x−15)=180 或等價式，但未完成；或只給正確兩角無推導。"
+        },
+        {
+          "score": 0,
+          "criteria": "把互補當90°，或建立 B=2(A−15) 導致概念錯誤且未修正。"
+        }
+      ],
+      "partialCreditRules": [
+        "若角名對調但清楚改變了倍數敘述，不可視為同一答案。"
+      ],
+      "followThroughPolicy": "早期算術錯誤後若仍依 A+B=180 與 B=2A−15 完整推進，可給1至2分；結果不再給正確分。",
+      "unitAndNotationRules": "角 A、B 的符號須與題意一致，角度附°。",
+      "answerOnlyPolicy": "只寫65°、115°最高1分，因無法確認哪個是A及倍數關係。",
+      "commonErrors": [
+        "把『2倍少15』解讀為2(A−15)。",
+        "兩角都判為銳角。"
+      ],
+      "independentReview": {
+        "derivedResult": "A=65°，B=115°；分別為銳角、鈍角。",
+        "ambiguityAudit": "倍數敘述有固定運算次序：B=2A−15；題目沒有其他合法語意。",
+        "reviewNote": "獨立代回 B=2×65−15=115 且總和180，分類也符合角度範圍。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "prerequisiteSkillIds": [
+        "geometry-basic-elements"
+      ],
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "noTemplateDeclaration": true,
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "c5be6bfa3c5a1a2a1286b64497e7adcf21e83a8672c77dcbc6e66aed2638713c"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "009-u08-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/009-u08-complete/units/u08/s002"
+}

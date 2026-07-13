@@ -1,0 +1,1398 @@
+{
+  "slot": "s013",
+  "skillId": "orthocenter-identify",
+  "topicId": "u20-centers",
+  "title": "垂心辨識：不要把任何垂線交點都叫垂心",
+  "lecture": {
+    "lectureId": "u20-s013-lecture-r1",
+    "unitId": "u20",
+    "numericUnitId": 20,
+    "topicId": "u20-centers",
+    "skillId": "orthocenter-identify",
+    "skillSlot": "s013",
+    "lockedSkillTitle": "垂心辨識",
+    "title": "垂心辨識：不要把任何垂線交點都叫垂心",
+    "audience": "臺灣國中零基礎至會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能從直角標記與頂點位置確認一條線是否為高。",
+      "能在銳角、直角、鈍角圖中辨認垂心。",
+      "能區分高與垂直平分線。",
+      "能審查教材或軟體圖是否缺延長線。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "centroid-property",
+        "requiredLevel": "能使用該技能的核心定義與基本推理。"
+      }
+    ],
+    "prerequisiteBridge": "若無單元內先備技能，從已知、圖形標記與國中基本線角概念開始；若有先備技能，先回想「centroid-property」再進入本節。",
+    "glossary": [
+      {
+        "term": "高度線",
+        "definition": "符合三角形高定義的線，不是所有垂直輔助線。"
+      },
+      {
+        "term": "外部交點",
+        "definition": "位於三角形區域之外的共點，鈍角垂心可能如此。"
+      },
+      {
+        "term": "視覺證據",
+        "definition": "直角記號、延長線、頂點連線等可讓讀者核對定義的標示。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "小正方形",
+        "meaning": "交角為90°的直角標記。"
+      },
+      {
+        "symbol": "虛線延長",
+        "meaning": "常表示對邊所在直線向線段外延伸。"
+      }
+    ],
+    "conceptNarrative": [
+      "辨識垂心要逐線檢查兩件事：通過哪一個頂點？垂直哪一條對邊？只看到直角記號仍不足。",
+      "外心也由垂直線形成，但外心的線通過邊中點；垂心的高通過對面頂點。這是兩者最重要的視覺差異。",
+      "鈍角圖若沒有延長線，兩條高容易被裁掉；軟體顯示缺失不代表數學對象不存在。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "兩高判定垂心",
+        "statement": "兩條確定為三角形高的直線交點即可判為垂心，第三高必共點。"
+      },
+      {
+        "name": "圖形位置判讀",
+        "statement": "內部、頂點、外部分別對應銳角、直角、鈍角三角形的垂心。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "通過頂點 ∧ 垂直對邊所在直線",
+        "conditions": [
+          "兩項缺一不可"
+        ],
+        "meaning": "辨認每條高的檢核式。"
+      }
+    ],
+    "nonApplicableCases": [
+      "交點在外部不必然是垂心，鈍角外心也可能在外部。",
+      "通過邊中點且垂直邊的線是垂直平分線，除特殊情況外不是高。",
+      "三條線共點本身不提供中心名稱。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先遮住交點名稱，只看每條線。",
+        "check": "是否通過頂點？"
+      },
+      {
+        "step": 2,
+        "instruction": "找直角標記與對邊。",
+        "check": "垂直對象是否正確？"
+      },
+      {
+        "step": 3,
+        "instruction": "必要時延長邊。",
+        "check": "鈍角高是否被裁切？"
+      },
+      {
+        "step": 4,
+        "instruction": "再依兩高交點與位置命名。",
+        "check": "是否與角型一致？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "AP⊥BC、BP⊥AC。",
+        "solutionSteps": [
+          "AP是A高。",
+          "BP是B高。",
+          "兩高交於P。"
+        ],
+        "answer": "P是垂心。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "三條線垂直各邊且通過邊中點。",
+        "solutionSteps": [
+          "未通過對面頂點。",
+          "這些是垂直平分線。"
+        ],
+        "answer": "交點是外心，不是垂心。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "有直角記號就叫垂心。",
+        "why": "可能是垂直平分線。",
+        "correction": "再檢查是否通過頂點。"
+      },
+      {
+        "mistake": "外部交點就叫垂心。",
+        "why": "位置不是唯一證據。",
+        "correction": "逐線驗證高。"
+      },
+      {
+        "mistake": "軟體沒畫出就說高不存在。",
+        "why": "可能未延長線段。",
+        "correction": "顯示對邊所在直線。"
+      }
+    ],
+    "selfCheck": [
+      "每條線通過哪個頂點？",
+      "直角記號對應哪條邊？",
+      "是否需要延長線？",
+      "角型與交點位置一致嗎？"
+    ],
+    "summary": [
+      "垂心辨識依賴高的定義，不依賴視覺中央。",
+      "高通過頂點；垂直平分線通過邊中點。",
+      "鈍角垂心在外部，圖中常需延長線。"
+    ],
+    "connections": {
+      "previous": "先備：centroid-property",
+      "next": [
+        "下一技能將四種中心放進文字情境中選用。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u20-orthocenter-identify-01",
+      "fig-u20-centers-compare-01",
+      "fig-u20-orthocenter-textbook-01"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u20-s013-v001",
+        "u20-s013-v002",
+        "u20-s013-v003",
+        "u20-s013-v004",
+        "u20-s013-v005",
+        "u20-s013-v006",
+        "u20-s013-v007",
+        "u20-s013-v008",
+        "u20-s013-v009",
+        "u20-s013-v010",
+        "u20-s013-v011",
+        "u20-s013-v012"
+      ],
+      "constructedResponseIds": [
+        "u20-s013-cr001",
+        "u20-s013-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "skillSpecificEvidence": "符合鎖定的『只做基本辨識』，題材集中視覺判定與錯圖審查。",
+      "reviewerDecision": "pass",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "legacyContentUsed": false,
+    "contentSha256": "28f9201ee1cf56d0f93a5f69501ba6ad82fd5be883837604e09b6544a5793e67"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u20-s013-v001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "辨識垂心圖形前，應先辨認哪一種線是三角形的高？",
+      "givenConditions": [],
+      "target": "以定義辨認三角形的高",
+      "choices": [
+        "通過頂點且垂直對邊所在直線的線",
+        "通過頂點與對邊中點的線",
+        "平分頂角的線",
+        "垂直平分一邊的線"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "高同時滿足通過頂點與垂直對邊所在直線兩項條件。",
+        "result": "通過頂點且垂直對邊所在直線的線"
+      },
+      "explanation": "高同時滿足通過頂點與垂直對邊所在直線兩項條件。",
+      "steps": [
+        "確認線通過頂點",
+        "確認直角標記在對邊或延長線",
+        "判定為高"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "通過頂點且垂直對邊所在直線的線",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；高同時滿足通過頂點與垂直對邊所在直線兩項條件。"
+        },
+        {
+          "choice": "通過頂點與對邊中點的線",
+          "truth": false,
+          "reason": "這是中線。"
+        },
+        {
+          "choice": "平分頂角的線",
+          "truth": false,
+          "reason": "這是角平分線。"
+        },
+        {
+          "choice": "垂直平分一邊的線",
+          "truth": false,
+          "reason": "不一定通過對面頂點。"
+        }
+      ],
+      "misconceptionTarget": "看到垂直就忽略是否通過頂點。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「以定義辨認三角形的高」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「通過頂點且垂直對邊所在直線的線」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：以定義辨認三角形的高。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "1c8689f902f9db5d68f3006a41dc241afdd2f7d1cbe0ff755f332f6b4f36add0"
+    },
+    {
+      "questionId": "u20-s013-v002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "一個三角形圖上有直角標記。哪個特徵可辨認其垂心？",
+      "givenConditions": [],
+      "target": "辨識直角圖形中的垂心",
+      "choices": [
+        "三條高交於斜邊中點",
+        "三條高交於直角頂點",
+        "三條高交於內部任一點",
+        "三條高彼此平行"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "直角三角形的兩股本身是兩條高，所以交點直角頂點就是垂心。",
+        "result": "三條高交於直角頂點"
+      },
+      "explanation": "直角三角形的兩股本身是兩條高，所以交點直角頂點就是垂心。",
+      "steps": [
+        "找到直角頂點",
+        "辨認兩股互相垂直",
+        "把交點判為垂心"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "三條高交於斜邊中點",
+          "truth": false,
+          "reason": "斜邊中點是外心。"
+        },
+        {
+          "choice": "三條高交於直角頂點",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；直角三角形的兩股本身是兩條高，所以交點直角頂點就是垂心。"
+        },
+        {
+          "choice": "三條高交於內部任一點",
+          "truth": false,
+          "reason": "垂心位置唯一。"
+        },
+        {
+          "choice": "三條高彼此平行",
+          "truth": false,
+          "reason": "三條高共點。"
+        }
+      ],
+      "misconceptionTarget": "把直角三角形外心與垂心的位置混淆。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「辨識直角圖形中的垂心」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「三條高交於直角頂點」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：辨識直角圖形中的垂心。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "4bb5f562a88f71366267c69b61de12071ccb3691d83fecff9148936990049926"
+    },
+    {
+      "questionId": "u20-s013-v003",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "圖中三條高交於三角形內部。該三角形最可能是哪一類？",
+      "givenConditions": [],
+      "target": "由圖中垂心位置辨識角型",
+      "choices": [
+        "直角三角形",
+        "鈍角三角形",
+        "無法分類",
+        "銳角三角形"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "垂心在內部是銳角三角形的特徵。",
+        "result": "銳角三角形"
+      },
+      "explanation": "垂心在內部是銳角三角形的特徵。",
+      "steps": [
+        "交點確定為垂心",
+        "觀察位於內部",
+        "套用位置分類"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "直角三角形",
+          "truth": false,
+          "reason": "垂心在直角頂點。"
+        },
+        {
+          "choice": "鈍角三角形",
+          "truth": false,
+          "reason": "垂心在外部。"
+        },
+        {
+          "choice": "無法分類",
+          "truth": false,
+          "reason": "垂心位置可判斷角型。"
+        },
+        {
+          "choice": "銳角三角形",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；垂心在內部是銳角三角形的特徵。"
+        }
+      ],
+      "misconceptionTarget": "把所有中心都認為在內部。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「由圖中垂心位置辨識角型」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「銳角三角形」符合全部條件。"
+      },
+      "difficultyReason": "只需辨認單一定義、直接性質或一步計算，但仍需排除三個具體誤解。 本題特定工作：由圖中垂心位置辨識角型。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "1d8f6e8e1ec592142c6c5a1210e0afdc9178927c3ea069fdc17325ab1cb5c1db"
+    },
+    {
+      "questionId": "u20-s013-v004",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "圖中 AP⊥BC、BP⊥AC，且兩條線都通過相應頂點。P 應辨認為什麼？",
+      "givenConditions": [],
+      "target": "由兩條高辨識垂心",
+      "choices": [
+        "P 是外心",
+        "P 是內心",
+        "P 是垂心",
+        "P 是重心"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "AP、BP 是 △ABC 的兩條高，它們交於 P，所以 P 是垂心。",
+        "result": "P 是垂心"
+      },
+      "explanation": "AP、BP 是 △ABC 的兩條高，它們交於 P，所以 P 是垂心。",
+      "steps": [
+        "AP通過A且垂直BC",
+        "BP通過B且垂直AC",
+        "兩高交點為垂心"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "P 是外心",
+          "truth": false,
+          "reason": "需為垂直平分線交點。"
+        },
+        {
+          "choice": "P 是內心",
+          "truth": false,
+          "reason": "需為角平分線交點。"
+        },
+        {
+          "choice": "P 是垂心",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；AP、BP 是 △ABC 的兩條高，它們交於 P，所以 P 是垂心。"
+        },
+        {
+          "choice": "P 是重心",
+          "truth": false,
+          "reason": "需為中線交點。"
+        }
+      ],
+      "misconceptionTarget": "只看有垂直記號便誤判外心。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「由兩條高辨識垂心」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「P 是垂心」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：由兩條高辨識垂心。",
+      "literacyContextNecessity": null,
+      "figureId": "fig-u20-orthocenter-identify-01",
+      "drawingSpecId": "fig-u20-orthocenter-identify-01",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "01da1b18e9fb49342a0d307f4d3074a14a6d84a8b33db988f9f563a5d48b958c"
+    },
+    {
+      "questionId": "u20-s013-v005",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "辨識鈍角三角形的垂心圖時，哪個現象合理？",
+      "givenConditions": [],
+      "target": "辨識鈍角垂心圖的延長線",
+      "choices": [
+        "三條高都只在線段內",
+        "圖中必須延長至少一條邊才能看見高的交點",
+        "垂心一定在最長邊中點",
+        "圖中不需要直角標記"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "鈍角三角形垂心在外部，從銳角頂點作高時垂足落在對邊延長線，因此需畫延長線。",
+        "result": "圖中必須延長至少一條邊才能看見高的交點"
+      },
+      "explanation": "鈍角三角形垂心在外部，從銳角頂點作高時垂足落在對邊延長線，因此需畫延長線。",
+      "steps": [
+        "辨認鈍角",
+        "外部垂心",
+        "高落在邊延長線"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "三條高都只在線段內",
+          "truth": false,
+          "reason": "這會無法讓外部高共點。"
+        },
+        {
+          "choice": "圖中必須延長至少一條邊才能看見高的交點",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；鈍角三角形垂心在外部，從銳角頂點作高時垂足落在對邊延長線，因此需畫延長線。"
+        },
+        {
+          "choice": "垂心一定在最長邊中點",
+          "truth": false,
+          "reason": "那是直角外心的特例。"
+        },
+        {
+          "choice": "圖中不需要直角標記",
+          "truth": false,
+          "reason": "直角標記有助確認線確為高。"
+        }
+      ],
+      "misconceptionTarget": "認為高的垂足不能落在延長線。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「辨識鈍角垂心圖的延長線」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「圖中必須延長至少一條邊才能看見高的交點」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：辨識鈍角垂心圖的延長線。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "58f42969bb6e3f1dcb1735655f1f357079f33b92bcec05a0203fdb914ce1ab97"
+    },
+    {
+      "questionId": "u20-s013-v006",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "某圖三條線都垂直三角形的邊，但沒有一條通過對面頂點。能否把交點標為垂心？",
+      "givenConditions": [],
+      "target": "區分高與垂直平分線圖形",
+      "choices": [
+        "有直角標記就必為垂心",
+        "任何三條垂線交點都是垂心",
+        "交點在外部就必為垂心",
+        "若三線只是各邊的垂直平分線，交點是外心而非垂心"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "不能。高必須通過頂點；若線同時經過邊中點，可能是垂直平分線，交點是外心。",
+        "result": "若三線只是各邊的垂直平分線，交點是外心而非垂心"
+      },
+      "explanation": "不能。高必須通過頂點；若線同時經過邊中點，可能是垂直平分線，交點是外心。",
+      "steps": [
+        "檢查是否通過頂點",
+        "發現不符合高的定義",
+        "避免只依垂直記號命名"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "有直角標記就必為垂心",
+          "truth": false,
+          "reason": "直角只證明垂直，不證明是高。"
+        },
+        {
+          "choice": "任何三條垂線交點都是垂心",
+          "truth": false,
+          "reason": "還需對應三個頂點與對邊。"
+        },
+        {
+          "choice": "交點在外部就必為垂心",
+          "truth": false,
+          "reason": "鈍角外心也可能在外部。"
+        },
+        {
+          "choice": "若三線只是各邊的垂直平分線，交點是外心而非垂心",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；不能。高必須通過頂點；若線同時經過邊中點，可能是垂直平分線，交點是外心。"
+        }
+      ],
+      "misconceptionTarget": "忽略高必須通過頂點。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「區分高與垂直平分線圖形」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「若三線只是各邊的垂直平分線，交點是外心而非垂心」符合全部條件。"
+      },
+      "difficultyReason": "需連接兩個條件、選擇正確性質方向或完成兩至三步推理。 本題特定工作：區分高與垂直平分線圖形。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "2220b0a5755c022405a2dcfc709d56899c65ce2d56aa92d06ec3f4247706a3bb"
+    },
+    {
+      "questionId": "u20-s013-v007",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "△ABC 為鈍角三角形且 ∠A 為鈍角。若 H 是垂心，下列哪個圖形關係合理？",
+      "givenConditions": [],
+      "target": "辨識指定鈍角下的垂心方位",
+      "choices": [
+        "H 必在線段 BC 上",
+        "AH 必平分 ∠A",
+        "H 在 A 的外側，且 AH 所在直線垂直 BC",
+        "H 到 B、C 距離相等"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "從 A 向 BC 作的高仍通過A；另外兩條高延長後會在A所在側的外部相交，H位於三角形外。",
+        "result": "H 在 A 的外側，且 AH 所在直線垂直 BC"
+      },
+      "explanation": "從 A 向 BC 作的高仍通過A；另外兩條高延長後會在A所在側的外部相交，H位於三角形外。",
+      "steps": [
+        "A為鈍角",
+        "另外兩邊延長產生外部交點",
+        "AH仍垂直BC"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "H 必在線段 BC 上",
+          "truth": false,
+          "reason": "垂心不在對邊上。"
+        },
+        {
+          "choice": "AH 必平分 ∠A",
+          "truth": false,
+          "reason": "高不一定是角平分線。"
+        },
+        {
+          "choice": "H 在 A 的外側，且 AH 所在直線垂直 BC",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；從 A 向 BC 作的高仍通過A；另外兩條高延長後會在A所在側的外部相交，H位於三角形外。"
+        },
+        {
+          "choice": "H 到 B、C 距離相等",
+          "truth": false,
+          "reason": "這是垂直平分線相關性質。"
+        }
+      ],
+      "misconceptionTarget": "只記垂心在外，卻不會確認高的方向。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「辨識指定鈍角下的垂心方位」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「H 在 A 的外側，且 AH 所在直線垂直 BC」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：辨識指定鈍角下的垂心方位。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "d5b25dfb6bf9c2556d47c0707cbb712c0865703a667ec5d972245c8f8561ef4d"
+    },
+    {
+      "questionId": "u20-s013-v008",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "三幅示意圖：圖甲的交點由三中線形成；圖乙的交點由三條過頂點且垂直對邊的線形成；圖丙的交點由三角平分線形成。哪幅標的是垂心？",
+      "givenConditions": [],
+      "target": "比較多種中心圖形並辨認垂心",
+      "choices": [
+        "圖乙",
+        "圖甲",
+        "圖丙",
+        "三圖都可"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "圖乙中的線符合高的定義，三高交點才是垂心。",
+        "result": "圖乙"
+      },
+      "explanation": "圖乙中的線符合高的定義，三高交點才是垂心。",
+      "steps": [
+        "圖甲辨認為重心",
+        "圖乙辨認為垂心",
+        "圖丙辨認為內心"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "圖乙",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；圖乙中的線符合高的定義，三高交點才是垂心。"
+        },
+        {
+          "choice": "圖甲",
+          "truth": false,
+          "reason": "三中線交點是重心。"
+        },
+        {
+          "choice": "圖丙",
+          "truth": false,
+          "reason": "三角平分線交點是內心。"
+        },
+        {
+          "choice": "三圖都可",
+          "truth": false,
+          "reason": "不同特殊線交點有不同名稱。"
+        }
+      ],
+      "misconceptionTarget": "只看三線共點，忽略線的性質。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「比較多種中心圖形並辨認垂心」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「圖乙」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：比較多種中心圖形並辨認垂心。",
+      "literacyContextNecessity": null,
+      "figureId": "fig-u20-centers-compare-01",
+      "drawingSpecId": "fig-u20-centers-compare-01",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "afb8da3820fd61e062087492d7b888f59903236e6a2239289a3c41c11c26e64d"
+    },
+    {
+      "questionId": "u20-s013-v009",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "△ABC 中 ∠C＝90°。若圖上標 H 為垂心，H 應在哪裡？",
+      "givenConditions": [],
+      "target": "在標記圖中定位直角垂心",
+      "choices": [
+        "H 與斜邊 AB 中點重合",
+        "H 與內心重合",
+        "H 在 AB 外側",
+        "H 與直角頂點 C 重合"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "直角三角形兩股 AC、BC 是高，交於 C，因此 H=C。",
+        "result": "H 與直角頂點 C 重合"
+      },
+      "explanation": "直角三角形兩股 AC、BC 是高，交於 C，因此 H=C。",
+      "steps": [
+        "確認C為直角頂點",
+        "兩股互為高",
+        "交點與C重合"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "H 與斜邊 AB 中點重合",
+          "truth": false,
+          "reason": "那是外心。"
+        },
+        {
+          "choice": "H 與內心重合",
+          "truth": false,
+          "reason": "一般直角三角形內心在內部。"
+        },
+        {
+          "choice": "H 在 AB 外側",
+          "truth": false,
+          "reason": "直角垂心不在外部。"
+        },
+        {
+          "choice": "H 與直角頂點 C 重合",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；直角三角形兩股 AC、BC 是高，交於 C，因此 H=C。"
+        }
+      ],
+      "misconceptionTarget": "將斜邊中點的外心特例套到垂心。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「在標記圖中定位直角垂心」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「H 與直角頂點 C 重合」符合全部條件。"
+      },
+      "difficultyReason": "需處理多步依賴、逆向辨識、邊界條件或審查不充分論證。 本題特定工作：在標記圖中定位直角垂心。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "c228c0613ed5f340f9ebb13a8d5849218740bbe5c92b173a6cac91774c8716b1"
+    },
+    {
+      "questionId": "u20-s013-v010",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "建築剖面圖有多條施工輔助虛線。要辨認屋架三角形的垂心，應採哪個篩選原則？",
+      "givenConditions": [],
+      "target": "在複雜圖面中篩選高度線",
+      "choices": [
+        "任何垂直虛線都可用",
+        "最長的虛線一定是高",
+        "只有同時通過頂點且與對邊垂直的虛線才可用",
+        "穿過圖形中心的線就是高"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "施工圖中的虛線用途多樣；只有符合三角形高定義的線才能用來找垂心。",
+        "result": "只有同時通過頂點且與對邊垂直的虛線才可用"
+      },
+      "explanation": "施工圖中的虛線用途多樣；只有符合三角形高定義的線才能用來找垂心。",
+      "steps": [
+        "確認虛線通過屋架頂點",
+        "確認與對邊或延長線垂直",
+        "取兩條符合者交點"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "任何垂直虛線都可用",
+          "truth": false,
+          "reason": "可能是邊的垂直平分線或建築基準。"
+        },
+        {
+          "choice": "最長的虛線一定是高",
+          "truth": false,
+          "reason": "長度不是判定條件。"
+        },
+        {
+          "choice": "只有同時通過頂點且與對邊垂直的虛線才可用",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；施工圖中的虛線用途多樣；只有符合三角形高定義的線才能用來找垂心。"
+        },
+        {
+          "choice": "穿過圖形中心的線就是高",
+          "truth": false,
+          "reason": "視覺中心沒有定義效力。"
+        }
+      ],
+      "misconceptionTarget": "把施工圖所有垂線都當成三角形高。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「在複雜圖面中篩選高度線」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「只有同時通過頂點且與對邊垂直的虛線才可用」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：在複雜圖面中篩選高度線。",
+      "literacyContextNecessity": "建築剖面含多種輔助線，必須依用途與幾何定義篩選，情境增加必要辨識工作。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "9eed047a3dfeedb311c112864781709a9bbd656ab6123d5558b8433d238941a5"
+    },
+    {
+      "questionId": "u20-s013-v011",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "動態幾何軟體畫鈍角三角形時，使用者只看見一條高，另外兩條似乎『消失』。最可能原因是什麼？",
+      "givenConditions": [],
+      "target": "解釋數位圖面缺失的高",
+      "choices": [
+        "軟體將邊視為線段，未顯示延長線",
+        "鈍角三角形沒有高",
+        "垂心一定與外心重合",
+        "三條高在鈍角時互相平行"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "另外兩條高的垂足在對邊延長線上；若軟體只顯示邊的線段而未延長，就看不到完整高。",
+        "result": "軟體將邊視為線段，未顯示延長線"
+      },
+      "explanation": "另外兩條高的垂足在對邊延長線上；若軟體只顯示邊的線段而未延長，就看不到完整高。",
+      "steps": [
+        "鈍角垂心在外部",
+        "外部高需延長對邊",
+        "檢查軟體顯示範圍"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "軟體將邊視為線段，未顯示延長線",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；另外兩條高的垂足在對邊延長線上；若軟體只顯示邊的線段而未延長，就看不到完整高。"
+        },
+        {
+          "choice": "鈍角三角形沒有高",
+          "truth": false,
+          "reason": "每個三角形都有三條高。"
+        },
+        {
+          "choice": "垂心一定與外心重合",
+          "truth": false,
+          "reason": "一般不重合。"
+        },
+        {
+          "choice": "三條高在鈍角時互相平行",
+          "truth": false,
+          "reason": "三高仍共點。"
+        }
+      ],
+      "misconceptionTarget": "把顯示限制誤認為數學對象不存在。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「解釋數位圖面缺失的高」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「軟體將邊視為線段，未顯示延長線」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：解釋數位圖面缺失的高。",
+      "literacyContextNecessity": "軟體把直線裁成線段會遮蔽鈍角高，數位呈現設定是問題核心。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "0d0ff554f6ea3b977520dcdbba1cb34c8aa6d39761e61903a0dc56a399364503"
+    },
+    {
+      "questionId": "u20-s013-v012",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "教材要呈現鈍角三角形的垂心。下列哪組視覺證據最完整？",
+      "givenConditions": [],
+      "target": "評估教材圖的垂心證據完整性",
+      "choices": [
+        "交點在外部即可",
+        "圖上交點在外部且每條線有對邊延長與直角記號",
+        "三線長度相同即可",
+        "三條線都經過邊中點即可"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "method": "不讀取儲存答案，直接由題設重算或重建推理。",
+        "derivation": "外部交點符合位置，但還需讓讀者確認每條線是高：通過頂點、對邊必要時延長、交角標直角。",
+        "result": "圖上交點在外部且每條線有對邊延長與直角記號"
+      },
+      "explanation": "外部交點符合位置，但還需讓讀者確認每條線是高：通過頂點、對邊必要時延長、交角標直角。",
+      "steps": [
+        "確認外部位置",
+        "確認頂點到對邊延長線",
+        "確認直角標記"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "交點在外部即可",
+          "truth": false,
+          "reason": "外心也可能在外部。"
+        },
+        {
+          "choice": "圖上交點在外部且每條線有對邊延長與直角記號",
+          "truth": true,
+          "reason": "依獨立推導可得到此結果；外部交點符合位置，但還需讓讀者確認每條線是高：通過頂點、對邊必要時延長、交角標直角。"
+        },
+        {
+          "choice": "三線長度相同即可",
+          "truth": false,
+          "reason": "高不必等長。"
+        },
+        {
+          "choice": "三條線都經過邊中點即可",
+          "truth": false,
+          "reason": "那是中線或垂直平分線資訊。"
+        }
+      ],
+      "misconceptionTarget": "用單一外觀特徵辨認垂心。",
+      "prerequisiteCheck": "只使用本技能、鎖定先備技能與國中已學過的基本幾何或整數運算。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "答案為精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "題幹明確要求「評估教材圖的垂心證據完整性」。",
+        "scope": "題意限定在國中會考幾何與基本邏輯範圍內。",
+        "alternateReading": "已排除把題設標記當外觀、把性質方向顛倒或忽略邊界的常見讀法。",
+        "secondCorrectChoice": "逐項檢查後只有「圖上交點在外部且每條線有對邊延長與直角記號」符合全部條件。"
+      },
+      "difficultyReason": "必須把實際圖例、規格、位置或模型限制轉為數學條件後才能作答。 本題特定工作：評估教材圖的垂心證據完整性。",
+      "literacyContextNecessity": "教材圖必須以延長線與直角記號避免外心混淆，視覺證據本身是審查對象。",
+      "figureId": "fig-u20-orthocenter-textbook-01",
+      "drawingSpecId": "fig-u20-orthocenter-textbook-01",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "noTemplateDeclaration": true,
+      "contentSha256": "f7e7b62916b64eb2f28243d1c992923621669fbff5db18e594c6a0bd695238db"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u20-s013-cr001",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "prompt": "圖中 AP⊥BC、BP⊥AC。請證明 P 是 △ABC 的垂心，並說明是否需要再證 CP⊥AB 才能命名。",
+      "requiredWork": [
+        "辨認AP、BP為兩條高。",
+        "兩高交點判定垂心。",
+        "第三高必共點。"
+      ],
+      "standardSolution": [
+        "AP通過A且垂直對邊BC，所以AP是A頂點的高；BP通過B且垂直對邊AC，所以BP是B頂點的高。",
+        "兩條高交於P，因此P是垂心。依三高共點性質，第三條高也通過P；不必先把CP⊥AB列為判定所需的第三個獨立條件，但可作複核。"
+      ],
+      "alternativeMethods": [
+        "若題目不允許直接使用三高共點定理，也可另證CP⊥AB作完整驗證。"
+      ],
+      "reasoningSteps": [
+        "AP通過A且垂直對邊BC，所以AP是A頂點的高；BP通過B且垂直對邊AC，所以BP是B頂點的高。",
+        "兩條高交於P，因此P是垂心。依三高共點性質，第三條高也通過P；不必先把CP⊥AB列為判定所需的第三個獨立條件，但可作複核。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "兩條高的雙重條件與垂心判定完整，且正確說明第三高角色。"
+        },
+        {
+          "score": 2,
+          "criteria": "能判定P為垂心，但未明說線通過頂點。"
+        },
+        {
+          "score": 1,
+          "criteria": "只因有兩個直角就答垂心，理由不完整。"
+        },
+        {
+          "score": 0,
+          "criteria": "判為外心或要求線經邊中點。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "依題目所給單位作答；純幾何關係不另加單位。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "只看垂直不看頂點。",
+        "把第三高視為可能不通過。",
+        "混淆垂直平分線。"
+      ],
+      "figureId": "fig-u20-orthocenter-identify-01",
+      "drawingSpecId": "fig-u20-orthocenter-identify-01",
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "AP通過A且垂直對邊BC，所以AP是A頂點的高；BP通過B且垂直對邊AC，所以BP是B頂點的高。；兩條高交於P，因此P是垂心。依三高共點性質，第三條高也通過P；不必先把CP⊥AB列為判定所需的第三個獨立條件，但可作複核。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "fb03f8410e721ec77797d9b9525d78e30c4eaf5f2d6e07a53648d0b8b76185ce"
+    },
+    {
+      "questionId": "u20-s013-cr002",
+      "unitId": "u20",
+      "numericUnitId": 20,
+      "topicId": "u20-centers",
+      "skillId": "orthocenter-identify",
+      "skillSlot": "s013",
+      "difficulty": "literacy",
+      "itemType": "constructed-response",
+      "prompt": "一幅教材圖把鈍角三角形的垂心畫在內部，且沒有邊的延長線。請指出錯誤，描述正確圖應包含哪些元素，並說明原因。",
+      "requiredWork": [
+        "鈍角垂心在外部。",
+        "需延長相關邊。",
+        "高通過頂點且有直角標記。"
+      ],
+      "standardSolution": [
+        "鈍角三角形的垂心應位於三角形外部，教材把它畫在內部是錯誤。",
+        "正確圖應延長鈍角相鄰的兩邊或相應對邊所在直線，從兩個銳角頂點作垂線；高與延長線交處應有直角標記，兩條高在外部相交，第三條高也通過該點。"
+      ],
+      "alternativeMethods": [
+        "可用垂心位置分類先判錯，再逐條檢查三條線是否符合高的定義。"
+      ],
+      "reasoningSteps": [
+        "鈍角三角形的垂心應位於三角形外部，教材把它畫在內部是錯誤。",
+        "正確圖應延長鈍角相鄰的兩邊或相應對邊所在直線，從兩個銳角頂點作垂線；高與延長線交處應有直角標記，兩條高在外部相交，第三條高也通過該點。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "指出位置錯誤，並完整描述延長線、頂點、垂直與外部交點。"
+        },
+        {
+          "score": 2,
+          "criteria": "知道應在外部且需延長線，但直角標記或第三高說明缺一。"
+        },
+        {
+          "score": 1,
+          "criteria": "只說『畫錯了，應在外面』而未解釋高。"
+        },
+        {
+          "score": 0,
+          "criteria": "認為鈍角三角形沒有垂心，或仍主張在內部。"
+        }
+      ],
+      "partialCreditRules": [
+        "評分依題目專屬rubric判定；方法正確但敘述略簡可保留方法分。",
+        "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。"
+      ],
+      "followThroughPolicy": "若前段僅有單一算術錯誤，後續推理方法正確，可依錯誤數值一致作答並保留方法分。",
+      "unitRules": "依題目所給單位作答；純幾何關係不另加單位。",
+      "notationRules": "角以 ∠ 表示，線段相等與平行、垂直符號須對應正確對象。",
+      "answerOnlyPolicy": "只寫最終結論且沒有題目要求的理由，最高給1分；若結論也錯則0分。",
+      "commonErrors": [
+        "只移動交點但不改高的方向。",
+        "延長錯誤的線段。",
+        "把外心外部性質當唯一理由。"
+      ],
+      "figureId": "fig-u20-orthocenter-textbook-01",
+      "drawingSpecId": "fig-u20-orthocenter-textbook-01",
+      "independentReview": {
+        "reSolvedWithoutStoredAnswer": true,
+        "derivedResult": "鈍角三角形的垂心應位於三角形外部，教材把它畫在內部是錯誤。；正確圖應延長鈍角相鄰的兩邊或相應對邊所在直線，從兩個銳角頂點作垂線；高與延長線交處應有直角標記，兩條高在外部相交，第三條高也通過該點。",
+        "rubricAlignment": "每一級分均依本題要求的具體推理、計算或審查內容撰寫。",
+        "ambiguity": "題目所需工作與評分對象明確；替代方法只在數學上合法時接受。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "legacyContentUsed": false,
+      "contentSha256": "6a2add047ebdaed1e674faaffdcc05a29b7e9939cf3dbe7dd9507ef8b7fc058e"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u20-orthocenter-identify-01",
+      "unitId": "u20",
+      "ownerSkillSlot": "s013",
+      "title": "兩條高交點辨識圖",
+      "description": "銳角三角形ABC中AP垂直BC、BP垂直AC，兩條高交於內部點P。",
+      "canvas": {
+        "width": 480,
+        "height": 320,
+        "viewBox": "0 0 480 320"
+      },
+      "coordinates": {
+        "A": [
+          225,
+          45
+        ],
+        "B": [
+          65,
+          255
+        ],
+        "C": [
+          420,
+          245
+        ],
+        "P": [
+          231,
+          174
+        ]
+      },
+      "visibleLineRules": "實線表示題設中的線段或道路；虛線表示延長線或輔助線；直角方框、等長刻痕與平行箭頭只在題設提供時使用。",
+      "hiddenLineRules": "本單元為平面圖，不使用立體隱線；未畫出的關係不得自行假設。",
+      "labels": "所有點名放在點外側至少8像素；避免壓在線段或直角記號上。",
+      "toScale": false,
+      "visualInferenceWarning": "圖形未按比例，不可用外觀估計未標示的長度或角度。",
+      "altText": "銳角三角形ABC內，從A到底邊BC的高與從B到邊AC的高交於P，兩垂足有直角記號。",
+      "svgTitle": "兩條高交點辨識圖",
+      "svgDesc": "銳角三角形ABC中AP垂直BC、BP垂直AC，兩條高交於內部點P。",
+      "mobileReadabilityReview": "在寬度320像素縮放下，主要線段、直角記號與標籤仍可辨認；字級不小於16。",
+      "answerLeakageReview": "圖中只呈現題設標記與辨識所需結構，不標示選項答案、中心名稱結論或未給定數值。",
+      "geometryAssertions": [
+        "AP通過A並垂直BC",
+        "BP通過B並垂直AC",
+        "兩高交於P"
+      ],
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "figureId": "fig-u20-centers-compare-01",
+      "unitId": "u20",
+      "ownerSkillSlot": "s013",
+      "title": "中線、高與角平分線三圖比較",
+      "description": "並排三個小三角形：甲畫中線交點、乙畫帶直角記號的高交點、丙畫角平分線交點。",
+      "canvas": {
+        "width": 480,
+        "height": 320,
+        "viewBox": "0 0 480 320"
+      },
+      "coordinates": {
+        "panels": {
+          "甲": [
+            0,
+            0,
+            160,
+            320
+          ],
+          "乙": [
+            160,
+            0,
+            160,
+            320
+          ],
+          "丙": [
+            320,
+            0,
+            160,
+            320
+          ]
+        }
+      },
+      "visibleLineRules": "實線表示題設中的線段或道路；虛線表示延長線或輔助線；直角方框、等長刻痕與平行箭頭只在題設提供時使用。",
+      "hiddenLineRules": "本單元為平面圖，不使用立體隱線；未畫出的關係不得自行假設。",
+      "labels": "所有點名放在點外側至少8像素；避免壓在線段或直角記號上。 三個候選圖依序標為 I、II、III，避免字型缺字。",
+      "toScale": false,
+      "visualInferenceWarning": "圖形未按比例，不可用外觀估計未標示的長度或角度。",
+      "altText": "甲圖三條線連頂點與對邊中點；乙圖兩條線通過頂點並與對邊垂直；丙圖三條線平分內角。",
+      "svgTitle": "中線、高與角平分線三圖比較",
+      "svgDesc": "並排三個小三角形：甲畫中線交點、乙畫帶直角記號的高交點、丙畫角平分線交點。",
+      "mobileReadabilityReview": "在寬度320像素縮放下，主要線段、直角記號與標籤仍可辨認；字級不小於16。",
+      "answerLeakageReview": "圖中只呈現題設標記與辨識所需結構，不標示選項答案、中心名稱結論或未給定數值。",
+      "geometryAssertions": [
+        "甲表示中線結構",
+        "乙有直角標記表示高",
+        "丙表示角平分線",
+        "三圖不標中心名稱答案"
+      ],
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    },
+    {
+      "figureId": "fig-u20-orthocenter-textbook-01",
+      "unitId": "u20",
+      "ownerSkillSlot": "s013",
+      "title": "鈍角垂心教材正確示意",
+      "description": "鈍角三角形ABC搭配邊延長虛線與兩條高，外部交點標H但不直接寫垂心二字。",
+      "canvas": {
+        "width": 480,
+        "height": 320,
+        "viewBox": "0 0 480 320"
+      },
+      "coordinates": {
+        "A": [
+          120,
+          70
+        ],
+        "B": [
+          75,
+          245
+        ],
+        "C": [
+          405,
+          245
+        ],
+        "H": [
+          80,
+          64
+        ]
+      },
+      "visibleLineRules": "實線表示題設中的線段或道路；虛線表示延長線或輔助線；直角方框、等長刻痕與平行箭頭只在題設提供時使用。",
+      "hiddenLineRules": "本單元為平面圖，不使用立體隱線；未畫出的關係不得自行假設。",
+      "labels": "所有點名放在點外側至少8像素；避免壓在線段或直角記號上。",
+      "toScale": false,
+      "visualInferenceWarning": "圖形未按比例，不可用外觀估計未標示的長度或角度。",
+      "altText": "鈍角三角形ABC的邊向外延長，以虛線呈現；從兩頂點作出的高在外部點H相交。",
+      "svgTitle": "鈍角垂心教材正確示意",
+      "svgDesc": "鈍角三角形ABC搭配邊延長虛線與兩條高，外部交點標H但不直接寫垂心二字。",
+      "mobileReadabilityReview": "在寬度320像素縮放下，主要線段、直角記號與標籤仍可辨認；字級不小於16。",
+      "answerLeakageReview": "圖中只呈現題設標記與辨識所需結構，不標示選項答案、中心名稱結論或未給定數值。",
+      "geometryAssertions": [
+        "H在外部",
+        "至少兩處直角記號",
+        "延長線清楚",
+        "圖未寫出『垂心』答案詞"
+      ],
+      "manualVisualInspection": "pass: rendered at 480x320 and reviewed at 320px-equivalent readability; no clipping or answer leakage",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ],
+  "sourceBatch": "021-u20-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/021-u20-complete/units/u20/s013"
+}

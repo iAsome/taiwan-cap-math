@@ -1,0 +1,1188 @@
+{
+  "slot": "s007",
+  "skillId": "monomial-polynomial-distribute",
+  "topicId": "u10-operations",
+  "title": "單項式乘多項式：分配律必須乘到每一項",
+  "lecture": {
+    "lectureId": "u10-s007-lecture-r1",
+    "unitId": "u10",
+    "numericUnitId": 10,
+    "topicId": "u10-operations",
+    "skillId": "monomial-polynomial-distribute",
+    "lockedTitle": "單項式乘多項式",
+    "title": "單項式乘多項式：分配律必須乘到每一項",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能把括號外單項式逐項相乘。",
+      "能處理括號內負項與缺項。",
+      "能先分配再合併所得同類項。"
+    ],
+    "prerequisites": [
+      "monomial-multiply"
+    ],
+    "prerequisiteBridge": "先備技能 monomial-multiply 已建立下一步所需概念；本節專注於用分配律乘遍每一項並整理。",
+    "glossary": [
+      {
+        "term": "分配律",
+        "definition": "a(b+c)=ab+ac。"
+      },
+      {
+        "term": "漏乘",
+        "definition": "括號內某項沒有乘到外面的因數。"
+      },
+      {
+        "term": "展開",
+        "definition": "去除乘法括號並寫成多項式。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "−2x(3x²−x+4)",
+        "meaning": "−2x 分別乘 3x²、−x、4。"
+      }
+    ],
+    "conceptNarrative": [
+      "括號表示整個多項式都乘同一個單項式。",
+      "每一項連同自己的符號一起相乘。",
+      "展開後若出現同類項，再做合併。",
+      "可用項數檢查：沒有抵消前，n 項通常會產生 n 個乘積項。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "單項式對多項式的分配",
+        "statement": "m(A+B+…)=mA+mB+…。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "axᵐ(bxⁿ+c)=abxᵐ⁺ⁿ+ac",
+        "conditions": [
+          "所有括號內項都乘 axᵐ"
+        ],
+        "meaning": "分配律與指數律合用。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能只乘第一項。",
+      "括號內負號不能忽略。",
+      "分配後不同次方不能任意合併。",
+      "若外因數為 0，整式結果為 0。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "標記括號內每一項。",
+        "check": "完成此步後，確認內容仍符合「用分配律乘遍每一項並整理」。"
+      },
+      {
+        "step": 2,
+        "instruction": "外單項式與第一項相乘。",
+        "check": "完成此步後，確認內容仍符合「用分配律乘遍每一項並整理」。"
+      },
+      {
+        "step": 3,
+        "instruction": "依序乘完其餘各項並保留符號。",
+        "check": "完成此步後，確認內容仍符合「用分配律乘遍每一項並整理」。"
+      },
+      {
+        "step": 4,
+        "instruction": "合併可能出現的同類項。",
+        "check": "完成此步後，確認內容仍符合「用分配律乘遍每一項並整理」。"
+      },
+      {
+        "step": 5,
+        "instruction": "用代入值檢查展開前後相等。",
+        "check": "完成此步後，確認內容仍符合「用分配律乘遍每一項並整理」。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "3x(2x²−5)。",
+        "solutionSteps": [
+          "3x·2x²=6x³；3x·(-5)=-15x。"
+        ],
+        "answer": "6x³-15x。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "−2a(3a²−a+4)。",
+        "solutionSteps": [
+          "逐項得 -6a³、+2a²、-8a。"
+        ],
+        "answer": "-6a³+2a²-8a。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "x(x+2)+3x。",
+        "solutionSteps": [
+          "先展開 x²+2x，再合併 3x。"
+        ],
+        "answer": "x²+5x。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "漏乘常數項",
+        "why": "只注意含未知數的項",
+        "correction": "用箭頭逐項標記。"
+      },
+      {
+        "mistake": "負數乘負項仍寫負",
+        "why": "符號運算錯誤",
+        "correction": "先單獨判正負。"
+      },
+      {
+        "mistake": "把 2x·3 寫成 6x²",
+        "why": "常數 3 沒有 x",
+        "correction": "文字指數只加實際存在的 0。"
+      }
+    ],
+    "selfCheck": [
+      "我是否能能把括號外單項式逐項相乘？",
+      "我是否能能處理括號內負項與缺項？",
+      "我是否能能先分配再合併所得同類項？",
+      "我是否檢查了負號、括號、指數與題目所問的量？"
+    ],
+    "summary": [
+      "外因數要乘括號內每一項。",
+      "項的符號一起參與乘法。",
+      "先展開再合併。",
+      "可代入簡單值驗證。"
+    ],
+    "connections": {
+      "previous": "上一技能 單項式乘法 提供本節所需工具。",
+      "next": [
+        "下一節兩個二項式相乘，每一項都要與另一括號的每一項配對。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibility": {
+      "figureAltTextsRequired": false,
+      "textOnlyPath": "所有公式與圖形關係均在正文以文字完整說明。"
+    },
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u10-s007-v001",
+        "u10-s007-v002",
+        "u10-s007-v003",
+        "u10-s007-v004",
+        "u10-s007-v005",
+        "u10-s007-v006",
+        "u10-s007-v007",
+        "u10-s007-v008",
+        "u10-s007-v009",
+        "u10-s007-v010",
+        "u10-s007-v011",
+        "u10-s007-v012"
+      ],
+      "constructedResponseIds": [
+        "u10-s007-cr001",
+        "u10-s007-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP only",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐段重讀「單項式乘多項式：分配律必須乘到每一項」：定義、3 個例題、錯誤推理與下一技能銜接均針對 monomial-polynomial-distribute；另逐項檢查負號、係數、指數、括號和條件。",
+      "reviewVersion": "human-lecture-review-u10-r1",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "c030d5c003a33f5f87429cf6edf590c20b937f43657b879d03438cf9594024e7"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u10-s007-v001",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "展開 3x(x+4)。",
+      "givenConditions": [],
+      "target": "正單項式分配",
+      "choices": [
+        "3x²+4",
+        "3x+12",
+        "3x²+12x",
+        "3x²+7x"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "3x·x=3x²，3x·4=12x。",
+        "derivedChoice": "3x²+12x",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "外因數乘到括號內兩項。",
+      "steps": [
+        "3x·x=3x²，3x·4=12x。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3x²+4",
+          "truth": false,
+          "reason": "漏乘 4 的 x。"
+        },
+        {
+          "choice": "3x+12",
+          "truth": false,
+          "reason": "第一項漏乘 x。"
+        },
+        {
+          "choice": "3x²+12x",
+          "truth": true,
+          "reason": "3x²+12x 正確。"
+        },
+        {
+          "choice": "3x²+7x",
+          "truth": false,
+          "reason": "把係數相加。"
+        }
+      ],
+      "misconceptionTarget": "只乘部分因子",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「正單項式分配」且四個選項以同一表示層級作答；逐項重算後只有「3x²+12x」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "基礎：正單項式分配，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v001-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f17e7fb790e0a61a0a4f0b8d765ee502de4f4e93a59a917f04348efbde0cafcc"
+    },
+    {
+      "questionId": "u10-s007-v002",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "展開 -2a(3a-5)。",
+      "givenConditions": [],
+      "target": "負單項式分配",
+      "choices": [
+        "-6a²+10a",
+        "-6a²-10a",
+        "6a²+10a",
+        "a²+10a"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "-2a·3a=-6a²；-2a·(-5)=+10a。",
+        "derivedChoice": "-6a²+10a",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "負外因數逐項分配。",
+      "steps": [
+        "-2a·3a=-6a²。",
+        "-2a·(-5)=+10a。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-6a²+10a",
+          "truth": true,
+          "reason": "-6a²+10a 正確。"
+        },
+        {
+          "choice": "-6a²-10a",
+          "truth": false,
+          "reason": "第二項符號錯。"
+        },
+        {
+          "choice": "6a²+10a",
+          "truth": false,
+          "reason": "第一項符號錯。"
+        },
+        {
+          "choice": "a²+10a",
+          "truth": false,
+          "reason": "係數乘法錯。"
+        }
+      ],
+      "misconceptionTarget": "負乘負項符號錯",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「負單項式分配」且四個選項以同一表示層級作答；逐項重算後只有「-6a²+10a」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "基礎：負單項式分配，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v002-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4a8b4fb56079f86efed03b1a0b84394bf74ac5222d02ec2c5a5148a3917381c0"
+    },
+    {
+      "questionId": "u10-s007-v003",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "展開 x(2x²-x+3)。",
+      "givenConditions": [],
+      "target": "三項式分配",
+      "choices": [
+        "2x²-x+3",
+        "2x³-x+3x",
+        "2x³-x²+3",
+        "2x³-x²+3x"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "x 分別乘三項得 2x³、-x²、3x。",
+        "derivedChoice": "2x³-x²+3x",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "每一項的 x 指數增加 1。",
+      "steps": [
+        "x 分別乘三項得 2x³、-x²、3x。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2x²-x+3",
+          "truth": false,
+          "reason": "完全漏乘 x。"
+        },
+        {
+          "choice": "2x³-x+3x",
+          "truth": false,
+          "reason": "第二與第三項指數錯。"
+        },
+        {
+          "choice": "2x³-x²+3",
+          "truth": false,
+          "reason": "第三項漏 x。"
+        },
+        {
+          "choice": "2x³-x²+3x",
+          "truth": true,
+          "reason": "2x³-x²+3x 正確。"
+        }
+      ],
+      "misconceptionTarget": "分配時漏乘某項",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「三項式分配」且四個選項以同一表示層級作答；逐項重算後只有「2x³-x²+3x」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "基礎：三項式分配，以單一核心定義或一步運算完成。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v003-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4d60333fc057701941bf1ce2de7fc81c5c8cb6a3775b5a5aa7e459e46c4d11bc"
+    },
+    {
+      "questionId": "u10-s007-v004",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "化簡 2x(3x-1)+4x。",
+      "givenConditions": [],
+      "target": "分配後合併",
+      "choices": [
+        "6x²-6x",
+        "6x²+2x",
+        "10x²-2x",
+        "6x²-2"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "先展開 6x²-2x，再合併 +4x，得 6x²+2x。",
+        "derivedChoice": "6x²+2x",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "展開後才合併同類項。",
+      "steps": [
+        "先展開 6x²-2x，再合併 +4x，得 6x²+2x。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6x²-6x",
+          "truth": false,
+          "reason": "x 項加法錯。"
+        },
+        {
+          "choice": "6x²+2x",
+          "truth": true,
+          "reason": "6x²+2x 正確。"
+        },
+        {
+          "choice": "10x²-2x",
+          "truth": false,
+          "reason": "把 4x 與二次項合併。"
+        },
+        {
+          "choice": "6x²-2",
+          "truth": false,
+          "reason": "漏掉 x。"
+        }
+      ],
+      "misconceptionTarget": "展開後合併錯誤",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「分配後合併」且四個選項以同一表示層級作答；逐項重算後只有「6x²+2x」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "標準：分配後合併，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v004-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d40d0af2f2897aa7a429591eb74e6b225b6913029efb72be9f47f6807bd3062b"
+    },
+    {
+      "questionId": "u10-s007-v005",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "展開 -3y(2y²+y-4)。",
+      "givenConditions": [],
+      "target": "三項符號分配",
+      "choices": [
+        "-6y³-3y²+12y",
+        "-6y³+3y²-12y",
+        "6y³-3y²+12y",
+        "-6y³-3y²-12y"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "逐項得 -6y³、-3y²、+12y。",
+        "derivedChoice": "-6y³-3y²+12y",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "負因數乘正項為負，乘 -4 為正。",
+      "steps": [
+        "逐項得 -6y³、-3y²、+12y。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-6y³-3y²+12y",
+          "truth": true,
+          "reason": "-6y³-3y²+12y 正確。"
+        },
+        {
+          "choice": "-6y³+3y²-12y",
+          "truth": false,
+          "reason": "中間與末項符號錯。"
+        },
+        {
+          "choice": "6y³-3y²+12y",
+          "truth": false,
+          "reason": "全部符號顛倒。"
+        },
+        {
+          "choice": "-6y³-3y²-12y",
+          "truth": false,
+          "reason": "末項符號錯。"
+        }
+      ],
+      "misconceptionTarget": "多項負號分配錯",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「三項符號分配」且四個選項以同一表示層級作答；逐項重算後只有「-6y³-3y²+12y」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "標準：三項符號分配，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v005-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c6b7a3f12a187e552b7989cdebc333adaf72f64b7e3838be78d489d2c20786fa"
+    },
+    {
+      "questionId": "u10-s007-v006",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "若 kx(2x+3)=8x²+12x，則 k 為何？",
+      "givenConditions": [],
+      "target": "反求外因數",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "比較首項係數 2k=8，得 k=4；再驗 3k=12 也成立。",
+        "derivedChoice": "4",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "兩項係數同時驗證。",
+      "steps": [
+        "比較首項係數 2k=8，得 k=4。",
+        "再驗 3k=12 也成立。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "展開得 4x²+6x。"
+        },
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "展開得 6x²+9x。"
+        },
+        {
+          "choice": "4",
+          "truth": true,
+          "reason": "k=4 正確。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "展開係數過大。"
+        }
+      ],
+      "misconceptionTarget": "只比較一項或係數求解錯",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「反求外因數」且四個選項以同一表示層級作答；逐項重算後只有「4」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "標準：反求外因數，需要正確連結至少兩個表示或運算步驟。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v006-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3b7de8697c3cb5a8d1ae9d0fa9766eeccf8ca1f5be5ce04cf0e8146d22fcc018"
+    },
+    {
+      "questionId": "u10-s007-v007",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "化簡 2x[x(x-3)+4]。",
+      "givenConditions": [],
+      "target": "兩層分配",
+      "choices": [
+        "2x³-3x²+8",
+        "2x³-6x²+8x",
+        "2x²-6x+8",
+        "2x³+2x"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "內層 x(x-3)+4=x²-3x+4；再乘 2x 得 2x³-6x²+8x。",
+        "derivedChoice": "2x³-6x²+8x",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "由內向外兩次分配。",
+      "steps": [
+        "內層 x(x-3)+4=x²-3x+4。",
+        "再乘 2x 得 2x³-6x²+8x。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2x³-3x²+8",
+          "truth": false,
+          "reason": "外層未乘所有項。"
+        },
+        {
+          "choice": "2x³-6x²+8x",
+          "truth": true,
+          "reason": "完整正確。"
+        },
+        {
+          "choice": "2x²-6x+8",
+          "truth": false,
+          "reason": "只做一次分配。"
+        },
+        {
+          "choice": "2x³+2x",
+          "truth": false,
+          "reason": "錯誤合併不同次方。"
+        }
+      ],
+      "misconceptionTarget": "巢狀分配漏步驟",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「兩層分配」且四個選項以同一表示層級作答；逐項重算後只有「2x³-6x²+8x」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "進階：兩層分配，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v007-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "357b4e86f39367e75332caa858e0226faa1a7f2b422956340dc44fa506680bb2"
+    },
+    {
+      "questionId": "u10-s007-v008",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "化簡 -x(2x²-3x+1)+2x³。",
+      "givenConditions": [],
+      "target": "分配與抵消",
+      "choices": [
+        "-4x³+3x²-x",
+        "-3x²+x",
+        "5x³-3x²+x",
+        "3x²-x"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "展開為 -2x³+3x²-x，再加 2x³，三次項抵消，得 3x²-x。",
+        "derivedChoice": "3x²-x",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "分配後注意最高次項抵消。",
+      "steps": [
+        "展開為 -2x³+3x²-x，再加 2x³，三次項抵消，得 3x²-x。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-4x³+3x²-x",
+          "truth": false,
+          "reason": "把三次項相加錯。"
+        },
+        {
+          "choice": "-3x²+x",
+          "truth": false,
+          "reason": "整體符號顛倒。"
+        },
+        {
+          "choice": "5x³-3x²+x",
+          "truth": false,
+          "reason": "負號分配錯。"
+        },
+        {
+          "choice": "3x²-x",
+          "truth": true,
+          "reason": "3x²-x 正確。"
+        }
+      ],
+      "misconceptionTarget": "未看到分配後高次項抵消",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「分配與抵消」且四個選項以同一表示層級作答；逐項重算後只有「3x²-x」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "進階：分配與抵消，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v008-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c338398ce8f540d49efc3afa5c877a3aaaadf0bbaeec237ea992974c67aa7bb8"
+    },
+    {
+      "questionId": "u10-s007-v009",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "若 ax²(2x-1) 的展開式中 x³ 項係數為 10，則 x² 項係數為何？",
+      "givenConditions": [],
+      "target": "由一項係數求另一項",
+      "choices": [
+        "-10",
+        "5",
+        "10",
+        "-5"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "展開為 2ax³-ax²。2a=10 得 a=5，所以 x² 項係數 -a=-5。",
+        "derivedChoice": "-5",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "先由三次係數求 a，再讀二次係數。",
+      "steps": [
+        "展開為 2ax³-ax²。",
+        "2a=10 得 a=5，所以 x² 項係數 -a=-5。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-10",
+          "truth": false,
+          "reason": "把 -a 寫 -10。"
+        },
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "漏負號。"
+        },
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "直接抄 10。"
+        },
+        {
+          "choice": "-5",
+          "truth": true,
+          "reason": "-5 正確。"
+        }
+      ],
+      "misconceptionTarget": "參數求出後未代回另一項",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「由一項係數求另一項」且四個選項以同一表示層級作答；逐項重算後只有「-5」成立。",
+      "boundaryAudit": "所有符號均已在本技能講義定義，且僅使用國中會考範圍。",
+      "difficultyReason": "進階：由一項係數求另一項，需處理參數、抵消、整體代換或多步條件。",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v009-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "881b2ed22a3d4fd1941fcbfe0a61622ad7c4800d7dd718a535584fb686fde092"
+    },
+    {
+      "questionId": "u10-s007-v010",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "長方形長 3x 公尺、寬 (x+2) 公尺，面積為何？",
+      "givenConditions": [],
+      "target": "長方形面積",
+      "choices": [
+        "3x²+2 平方公尺",
+        "3x²+6x 平方公尺",
+        "4x+2 平方公尺",
+        "3x²+5x 平方公尺"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "面積=3x(x+2)=3x²+6x。",
+        "derivedChoice": "3x²+6x 平方公尺",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "長乘寬，單項式分配到寬的兩部分。",
+      "steps": [
+        "面積=3x(x+2)=3x²+6x。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3x²+2 平方公尺",
+          "truth": false,
+          "reason": "漏乘常數項的 x。"
+        },
+        {
+          "choice": "3x²+6x 平方公尺",
+          "truth": true,
+          "reason": "3x²+6x 正確。"
+        },
+        {
+          "choice": "4x+2 平方公尺",
+          "truth": false,
+          "reason": "把長寬相加。"
+        },
+        {
+          "choice": "3x²+5x 平方公尺",
+          "truth": false,
+          "reason": "係數加法錯。"
+        }
+      ],
+      "misconceptionTarget": "面積式漏分配",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "公尺×公尺=平方公尺。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「長方形面積」且四個選項以同一表示層級作答；逐項重算後只有「3x²+6x 平方公尺」成立。",
+      "boundaryAudit": "實際長寬要求 x>0。",
+      "difficultyReason": "素養：長方形面積，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "長與寬的幾何關係決定必須相乘，平方單位也由此產生。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v010-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "03b5bbb325c8803f2f7684b5e35e9f74344a70154445447a8bae10998e9e96e8"
+    },
+    {
+      "questionId": "u10-s007-v011",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "每張票 x 元，團體方案買 (2x+5) 張並另收 30x 元服務費。總費用為何？",
+      "givenConditions": [],
+      "target": "票價總成本",
+      "choices": [
+        "2x²+5x+30 元",
+        "32x²+5x 元",
+        "2x²+35x 元",
+        "2x²+30x+5 元"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "票款=x(2x+5)=2x²+5x，再加 30x 得 2x²+35x。",
+        "derivedChoice": "2x²+35x 元",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "「每張價格×張數」後再加服務費。",
+      "steps": [
+        "票款=x(2x+5)=2x²+5x，再加 30x 得 2x²+35x。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2x²+5x+30 元",
+          "truth": false,
+          "reason": "漏把服務費與 x 項合併。"
+        },
+        {
+          "choice": "32x²+5x 元",
+          "truth": false,
+          "reason": "把服務費係數加到二次項。"
+        },
+        {
+          "choice": "2x²+35x 元",
+          "truth": true,
+          "reason": "2x²+35x 正確。"
+        },
+        {
+          "choice": "2x²+30x+5 元",
+          "truth": false,
+          "reason": "常數 5 未乘 x。"
+        }
+      ],
+      "misconceptionTarget": "每單位價格與數量關係建模錯",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "x 元/張乘張數得元；30x 亦為元。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「票價總成本」且四個選項以同一表示層級作答；逐項重算後只有「2x²+35x 元」成立。",
+      "boundaryAudit": "張數 2x+5 應為正整數。",
+      "difficultyReason": "素養：票價總成本，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "每張票價、張數與服務費的不同角色決定先乘後加。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v011-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d2b01677b105d0dbca28376bda553e2ca1cbe31363ca4335956d645fe5080011"
+    },
+    {
+      "questionId": "u10-s007-v012",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "一排有 4x 個座位，共有 (x-1) 排。總座位數為何？",
+      "givenConditions": [],
+      "target": "座位陣列總數",
+      "choices": [
+        "4x²-4x 個",
+        "4x²-1 個",
+        "5x-1 個",
+        "4x²+4x 個"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "總座位=4x(x-1)=4x²-4x。",
+        "derivedChoice": "4x²-4x 個",
+        "didNotTrustStoredAnswer": true
+      },
+      "explanation": "每排座位乘排數。",
+      "steps": [
+        "總座位=4x(x-1)=4x²-4x。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4x²-4x 個",
+          "truth": true,
+          "reason": "4x²-4x 正確。"
+        },
+        {
+          "choice": "4x²-1 個",
+          "truth": false,
+          "reason": "常數項未乘 4x。"
+        },
+        {
+          "choice": "5x-1 個",
+          "truth": false,
+          "reason": "把兩量相加。"
+        },
+        {
+          "choice": "4x²+4x 個",
+          "truth": false,
+          "reason": "負號錯。"
+        }
+      ],
+      "misconceptionTarget": "忽略 x-1 的整體乘法",
+      "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "座位/排乘排數得到座位。",
+      "roundingCheck": "全程精確運算，不需四捨五入。",
+      "ambiguityAudit": "題幹指定「座位陣列總數」且四個選項以同一表示層級作答；逐項重算後只有「4x²-4x 個」成立。",
+      "boundaryAudit": "x 應使 4x 與 x-1 為正整數，因此 x>1。",
+      "difficultyReason": "素養：座位陣列總數，必須把情境量轉為正確多項式並解釋單位或範圍。",
+      "literacyContextNecessity": "「每排」與「共有幾排」要求乘法，結果為座位個數。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "semanticReviewRef": "u10-s007-v012-review",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "8633d0b951d7b8bfd0c9de346e6d424cb82bf7fac04355a841c35501c9657f6f"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u10-s007-cr001",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "展開並化簡 -2x(3x²-x+4)。",
+      "requiredWork": [
+        "外因數乘每一項。",
+        "處理三個乘積的符號。"
+      ],
+      "standardSolution": [
+        "-2x·3x²=-6x³。",
+        "-2x·(-x)=+2x²。",
+        "-2x·4=-8x。",
+        "結果 -6x³+2x²-8x。"
+      ],
+      "alternativeMethods": [
+        "可用三格分配表逐格相乘。"
+      ],
+      "reasoningSteps": [
+        "-2x·3x²=-6x³。",
+        "-2x·(-x)=+2x²。",
+        "-2x·4=-8x。",
+        "結果 -6x³+2x²-8x。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "三個乘積與結果全對。"
+        },
+        {
+          "score": 2,
+          "criteria": "只一項符號/係數錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "至少兩項有正確分配結構。"
+        },
+        {
+          "score": 0,
+          "criteria": "只乘第一項或無有效作答。"
+        }
+      ],
+      "partialCreditRules": [
+        "項順序不同但等價可接受。"
+      ],
+      "followThroughPolicy": "漏乘一項但其他兩項正確，給 1至2 分。",
+      "unitAndNotationRules": "不涉及單位。",
+      "answerOnlyPolicy": "只寫正確結果無展開過程，最高 2 分。",
+      "commonErrorTargets": [
+        "用分配律乘遍每一項並整理"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "recomputedResult": "獨立逐項乘得 -6、+2、-8。",
+        "ambiguity": "題意資料足夠，評分規則已對應本題推理。",
+        "decision": "pass"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7505c24271a88bc9503524c7786bf037c06244a057bd9f2790a6b4c17ef3a859"
+    },
+    {
+      "questionId": "u10-s007-cr002",
+      "unitId": "u10",
+      "numericUnitId": 10,
+      "topicId": "u10-operations",
+      "skillId": "monomial-polynomial-distribute",
+      "skillSlot": "s007",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "prompt": "化簡 3x[x(x-2)+5]-3x³，說明最高次項發生什麼變化。",
+      "requiredWork": [
+        "先處理內層。",
+        "外層分配。",
+        "合併最高次項。"
+      ],
+      "standardSolution": [
+        "內層 x(x-2)+5=x²-2x+5。",
+        "乘 3x 得 3x³-6x²+15x。",
+        "再減 3x³，最高次項抵消，結果 -6x²+15x。"
+      ],
+      "alternativeMethods": [
+        "可先把 3x³ 與外層第一乘積預先配對抵消，再算其餘項。"
+      ],
+      "reasoningSteps": [
+        "內層 x(x-2)+5=x²-2x+5。",
+        "乘 3x 得 3x³-6x²+15x。",
+        "再減 3x³，最高次項抵消，結果 -6x²+15x。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整展開、抵消說明與結果正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "結果正確但未說明抵消，或單一算術錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "完成內層或外層主要分配。"
+        },
+        {
+          "score": 0,
+          "criteria": "無合理分配。"
+        }
+      ],
+      "partialCreditRules": [
+        "若最後未合併 3x³-3x³，但其餘正確，給 2 分。"
+      ],
+      "followThroughPolicy": "早期內層係數錯，後續分配一致可給 1 分。",
+      "unitAndNotationRules": "不涉及單位。",
+      "answerOnlyPolicy": "只寫 -6x²+15x，最高 2 分。",
+      "commonErrorTargets": [
+        "用分配律乘遍每一項並整理"
+      ],
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "recomputedResult": "獨立展開確認三次項係數 3-3=0。",
+        "ambiguity": "題意資料足夠，評分規則已對應本題推理。",
+        "decision": "pass"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "31bd615b5d8c742218a1564235a615065d007f16a2d71597450f3473730e2510"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "011-u10-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/011-u10-complete/units/u10/s007"
+}

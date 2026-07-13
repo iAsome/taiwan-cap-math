@@ -1,0 +1,1106 @@
+{
+  "slot": "s010",
+  "skillId": "system-ticket-price-problem",
+  "topicId": "u04-system-apps",
+  "title": "票價問題：票數和收入是兩條不同資訊",
+  "lecture": {
+    "lectureId": "u04-s010-lecture-r1",
+    "unitId": "u04",
+    "numericUnitId": 4,
+    "topicId": "u04-system-apps",
+    "skillId": "system-ticket-price-problem",
+    "lockedSkillTitle": "票價問題",
+    "title": "票價問題：票數和收入是兩條不同資訊",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "exactSkillIdentity": {
+      "unitTitle": "二元一次聯立方程式",
+      "skillTitle": "票價問題",
+      "scope": "以票數總和與票價收入總和建立聯立方程式。"
+    },
+    "prerequisiteBridge": "先備技能 system-chicken-rabbit-problem 已建立必要基礎；本節將其用於「以票數總和與票價收入總和建立聯立方程式。」",
+    "learningGoals": [
+      "能正確定義兩種票的張數。",
+      "能列票數總和與票款總和。",
+      "能處理折扣票、贈票或退票的文字限制。",
+      "能檢查張數為非負整數與收入吻合。"
+    ],
+    "vocabulary": [
+      {
+        "term": "票種",
+        "definition": "具有不同單價的票，例如全票與學生票。"
+      },
+      {
+        "term": "售票張數",
+        "definition": "實際收費售出的張數。"
+      },
+      {
+        "term": "票款收入",
+        "definition": "各票種單價乘張數後相加。"
+      },
+      {
+        "term": "贈票",
+        "definition": "不收費但可能計入入場人數，需依題意區分。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "x+y=N",
+        "meaning": "兩種售票張數總和。"
+      },
+      {
+        "symbol": "px+qy=R",
+        "meaning": "票價 p、q，總收入 R。"
+      }
+    ],
+    "conceptDevelopment": [
+      "張數方程式只計算張數；收入方程式必須乘上各自票價。",
+      "若有贈票，入場人數與售出票數可能不同，不能混在同一總數。",
+      "解出後可用平均票價檢查：總收入除以售票數應介於兩種票價之間。"
+    ],
+    "definitions": [
+      {
+        "name": "加權總收入",
+        "statement": "每種票價乘其張數後相加。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "x+y=N，px+qy=R",
+        "conditions": [
+          "x、y 為非負整數；p、q 為每張價格。"
+        ],
+        "meaning": "標準兩票種模型。"
+      }
+    ],
+    "invalidUseCases": [
+      "不可把票價 p+q 當作每兩張票的固定收入，因票種比例未知。",
+      "贈票若不收費，不應列入票款收入。",
+      "退款或折扣必須依實際收費金額列式。"
+    ],
+    "stepByStepMethod": [
+      {
+        "step": 1,
+        "instruction": "設兩票種張數",
+        "check": "附上票種名稱。"
+      },
+      {
+        "step": 2,
+        "instruction": "釐清總人數與售票數",
+        "check": "扣除贈票或工作人員。"
+      },
+      {
+        "step": 3,
+        "instruction": "列張數式",
+        "check": "只加張數。"
+      },
+      {
+        "step": 4,
+        "instruction": "列收入式",
+        "check": "單價乘張數。"
+      },
+      {
+        "step": 5,
+        "instruction": "求解並檢查",
+        "check": "張數整數、收入回算。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "全票 200 元、學生票 120 元，共售 50 張收入 7600 元。",
+        "solutionSteps": [
+          "x+y=50。",
+          "200x+120y=7600。",
+          "解得 x=20、y=30。"
+        ],
+        "answer": "全票 20、學生票 30。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "入場 100 人，其中 10 人持贈票；其餘為 300 元與 200 元票，共收入 22000 元。",
+        "solutionSteps": [
+          "售票數為 90。",
+          "x+y=90、300x+200y=22000。"
+        ],
+        "answer": "300 元票 40、200 元票 50。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "兩種票 150、90 元，售 40 張收入 4200 元。",
+        "solutionSteps": [
+          "平均票價 105 元，介於 90 與 150。",
+          "列式求解。"
+        ],
+        "answer": "150 元票 10、90 元票 30。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "若售 30 張且收入比全買便宜票多 600 元，票價差 50 元。",
+        "solutionSteps": [
+          "每張改為貴票增加 50。",
+          "貴票張數 600÷50=12。"
+        ],
+        "answer": "貴票 12、便宜票 18。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "收入式寫成 p+q=x+y",
+        "correction": "單位不相容。"
+      },
+      {
+        "mistake": "把入場人數全當售票數",
+        "correction": "需排除贈票。"
+      },
+      {
+        "mistake": "票價乘錯票種",
+        "correction": "變數定義要固定。"
+      },
+      {
+        "mistake": "解出張數小數仍接受",
+        "correction": "票張數通常須為整數。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "prompt": "票數式是否含票價？",
+        "answer": "不含。"
+      },
+      {
+        "prompt": "收入式的單位？",
+        "answer": "元。"
+      },
+      {
+        "prompt": "有 5 張贈票要列收入嗎？",
+        "answer": "若免費則不列。"
+      },
+      {
+        "prompt": "平均票價可做什麼？",
+        "answer": "檢查資料與答案是否合理。"
+      }
+    ],
+    "summary": [
+      "張數總和與收入總和分開列。",
+      "贈票要區分人數和售票數。",
+      "票數需為非負整數。"
+    ],
+    "connections": {
+      "previous": "先備技能 system-chicken-rabbit-problem 已建立必要基礎；本節將其用於「以票數總和與票價收入總和建立聯立方程式。」",
+      "next": "下一技能「數量與總價問題」會延伸目前能力。"
+    },
+    "figureReferences": [],
+    "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+    "lectureReview": {
+      "decision": "pass",
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "capBoundary": "pass",
+      "skillSpecificEvidence": "所有例題均核對票數與收入，贈票案例明確排除免費票款；未假設題目未說明的手續費或稅。",
+      "reviewNote": "所有例題均核對票數與收入，贈票案例明確排除免費票款；未假設題目未說明的手續費或稅。",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "contentSha256": "52e310438f56734cd33907a0ca7ad4ed061eacec616f3a85d31222567a7981ca"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u04-s010-v001",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "全票 x 張、學生票 y 張，共售 50 張，票數式為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "列票數式",
+      "choices": [
+        "200x+120y=50",
+        "x+y=50",
+        "x-y=50",
+        "xy=50"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "兩類售票張數相加為總張數。",
+      "explanation": "票數式不含單價。",
+      "steps": [
+        "只計算張數。",
+        "相加等於 50。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "200x+120y=50",
+          "truth": false,
+          "reason": "把票價混入票數式。"
+        },
+        {
+          "choice": "x+y=50",
+          "truth": true,
+          "reason": "x、y 是兩種票的張數。"
+        },
+        {
+          "choice": "x-y=50",
+          "truth": false,
+          "reason": "不是差額。"
+        },
+        {
+          "choice": "xy=50",
+          "truth": false,
+          "reason": "不是乘積。"
+        }
+      ],
+      "misconceptionTarget": "把收入資訊混入總數",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "張+張=張。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「列票數式」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "直接建模。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "d7bdf320de471a38da2b602482169bc65308b5aee20d6e264ead7eb03837c83c"
+    },
+    {
+      "questionId": "u04-s010-v002",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "全票 200 元、學生票 120 元，各售 x、y 張，收入式為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "列一般收入式",
+      "choices": [
+        "200x+120y=總收入",
+        "x+y=總收入",
+        "320(x+y)=總收入",
+        "200+120xy=總收入"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "每種票款為單價乘張數，再相加。",
+      "explanation": "收入式必須保留票種配對。",
+      "steps": [
+        "寫 200x。",
+        "寫 120y。",
+        "加總。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "200x+120y=總收入",
+          "truth": true,
+          "reason": "兩種票款相加形成總收入。"
+        },
+        {
+          "choice": "x+y=總收入",
+          "truth": false,
+          "reason": "左邊是張數。"
+        },
+        {
+          "choice": "320(x+y)=總收入",
+          "truth": false,
+          "reason": "假設每張同時付兩種票價。"
+        },
+        {
+          "choice": "200+120xy=總收入",
+          "truth": false,
+          "reason": "票價與張數配對錯誤。"
+        }
+      ],
+      "misconceptionTarget": "只加票價或張數",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "元/張×張=元。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「列一般收入式」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "單位配對基礎。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "50ef6b59d5432b8533c306309bc1440238f07a78ae729dbd507d4bc32e323d4c"
+    },
+    {
+      "questionId": "u04-s010-v003",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "某場售出 10 張 300 元票與 20 張 200 元票，收入多少？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "計算已知票陣列合收入",
+      "choices": [
+        "5000 元",
+        "6000 元",
+        "10000 元",
+        "7000 元"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "10×300+20×200=3000+4000=7000。",
+      "explanation": "先分票種計算。",
+      "steps": [
+        "算高價票款。",
+        "算低價票款。",
+        "相加。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5000 元",
+          "truth": false,
+          "reason": "只把票價相加再乘 10。"
+        },
+        {
+          "choice": "6000 元",
+          "truth": false,
+          "reason": "漏算部分票款。"
+        },
+        {
+          "choice": "10000 元",
+          "truth": false,
+          "reason": "把所有票都按較高票價。"
+        },
+        {
+          "choice": "7000 元",
+          "truth": true,
+          "reason": "兩類票款合計 7000 元。"
+        }
+      ],
+      "misconceptionTarget": "把不同票價混算",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "元。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「計算已知票陣列合收入」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "單純加權總價。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "09e4211da0e2c899d6e16f98484e06523dd63dd8e76a0caa141b115f7e8ac2db"
+    },
+    {
+      "questionId": "u04-s010-v004",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "全票 200 元、學生票 120 元，共售 50 張收入 7600 元，全票售幾張？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "求較高票價張數",
+      "choices": [
+        "30",
+        "25",
+        "20",
+        "38"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "x+y=50，200x+120y=7600。用 y=50-x：200x+6000-120x=7600，80x=1600，x=20。",
+      "explanation": "標準票價聯立。",
+      "steps": [
+        "列票數式。",
+        "列收入式。",
+        "代入求 x。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "30",
+          "truth": false,
+          "reason": "這是學生票數。"
+        },
+        {
+          "choice": "25",
+          "truth": false,
+          "reason": "直接平均張數。"
+        },
+        {
+          "choice": "20",
+          "truth": true,
+          "reason": "20×200+30×120=7600。"
+        },
+        {
+          "choice": "38",
+          "truth": false,
+          "reason": "把收入除 200。"
+        }
+      ],
+      "misconceptionTarget": "用平均分配或單價直接除總額",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「求較高票價張數」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "完整標準題。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "1be2c2889259d89260e109cb79d0956687bcbd0acff0ad29d560ea1b2dfbe341"
+    },
+    {
+      "questionId": "u04-s010-v005",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "入場 100 人，其中 10 人持免費贈票；其餘購買 300 元或 200 元票。售票張數為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "處理贈票對票數式的影響",
+      "choices": [
+        "100",
+        "110",
+        "10",
+        "90"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "免費贈票不屬於收費售票，售票數 100-10=90。",
+      "explanation": "先區分入場人數與售票張數。",
+      "steps": [
+        "識別贈票免費。",
+        "從總入場扣除。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "100",
+          "truth": false,
+          "reason": "未扣除贈票。"
+        },
+        {
+          "choice": "110",
+          "truth": false,
+          "reason": "把贈票加到人數。"
+        },
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "只取贈票數。"
+        },
+        {
+          "choice": "90",
+          "truth": true,
+          "reason": "100 人中有 10 人未購買收費票。"
+        }
+      ],
+      "misconceptionTarget": "把所有入場者當收費票",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "人對應一張入場憑證；售票張數為張。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「處理贈票對票數式的影響」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "需要情境篩選。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "aa84f69b09d5378ad036592432a8fcbffc85d67abcfa8c022017fea6cb3c4af3"
+    },
+    {
+      "questionId": "u04-s010-v006",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "兩種票價為 150 元與 90 元，共售 40 張、收入 4200 元，150 元票幾張？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "用基準法解票價題",
+      "choices": [
+        "20",
+        "30",
+        "10",
+        "35"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "x+y=40，150x+90y=4200。減去 90(x+y)=3600 得 60x=600，x=10。",
+      "explanation": "用全低價票基準快速求高價票數。",
+      "steps": [
+        "算全低價收入。",
+        "求多出的 600。",
+        "除票價差 60。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "平均分配後收入 4800。"
+        },
+        {
+          "choice": "30",
+          "truth": false,
+          "reason": "這是 90 元票數。"
+        },
+        {
+          "choice": "10",
+          "truth": true,
+          "reason": "10×150+30×90=4200。"
+        },
+        {
+          "choice": "35",
+          "truth": false,
+          "reason": "收入過高。"
+        }
+      ],
+      "misconceptionTarget": "把總收入直接除票價差",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「用基準法解票價題」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "標準但有策略。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "4d7cd62fc6a951b60ad0cdfceaf5222fa3ba6deebe59682f0b08a2342ebbdc5c"
+    },
+    {
+      "questionId": "u04-s010-v007",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "一場售票 80 張，成人票 250 元、學生票 150 元，收入 15600 元。成人票幾張？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "較大資料的票價基準法",
+      "choices": [
+        "28",
+        "36",
+        "44",
+        "62"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "全學生票收入 80×150=12000；多 3600，每張成人票多 100，所以成人票 36。",
+      "explanation": "基準法避免大數聯立。",
+      "steps": [
+        "算基準收入。",
+        "求額外收入。",
+        "除價差。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "28",
+          "truth": false,
+          "reason": "代回收入 14800。"
+        },
+        {
+          "choice": "36",
+          "truth": true,
+          "reason": "36×250+44×150=15600。"
+        },
+        {
+          "choice": "44",
+          "truth": false,
+          "reason": "這是學生票數。"
+        },
+        {
+          "choice": "62",
+          "truth": false,
+          "reason": "把收入差額直接除 100。"
+        }
+      ],
+      "misconceptionTarget": "忘記先扣基準收入",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「較大資料的票價基準法」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "多位數運算。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "d88d2192a615f1a4c4af5793f81d8eda1f53ef5544a881456beb5e6b4daf5f94"
+    },
+    {
+      "questionId": "u04-s010-v008",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "兩種票價相差 50 元，共售 30 張；收入比全買便宜票多 600 元。貴票幾張？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "只給票價差的逆向建模",
+      "choices": [
+        "12",
+        "6",
+        "18",
+        "20"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "每換成一張貴票收入增加 50；600÷50=12。",
+      "explanation": "不需要知道具體票價也可由差額求數量。",
+      "steps": [
+        "識別每張額外收入。",
+        "用總額外收入除價差。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12",
+          "truth": true,
+          "reason": "12 張貴票恰好多收 600 元。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "把 600 除 100。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "這是便宜票張數。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "把 600 除 30。"
+        }
+      ],
+      "misconceptionTarget": "認為必須知道兩種絕對票價",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「只給票價差的逆向建模」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "抽象價差推理。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "fb3e47b6e9dc40dc20b71ea68c53cf5249fc8eab1434d9d5b56ff000f9dc2c59"
+    },
+    {
+      "questionId": "u04-s010-v009",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "某票務資料解得成人票 -5 張、學生票 45 張。最合理判斷為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "審查不可行票數解",
+      "choices": [
+        "成人票可視為退票 5 張",
+        "把 -5 改成 5 即可",
+        "代數結果不符合票數非負限制，資料或模型需檢查",
+        "只要總張數正確就接受"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "票張數不能為負；負解表示給定條件在標準售票模型下不可能。",
+      "explanation": "情境限制是最終稽核的一部分。",
+      "steps": [
+        "識別單位為張。",
+        "檢查非負性。",
+        "回頭查資料或模型。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "成人票可視為退票 5 張",
+          "truth": false,
+          "reason": "題目若未定義退票不能自行解釋。"
+        },
+        {
+          "choice": "把 -5 改成 5 即可",
+          "truth": false,
+          "reason": "擅改答案會破壞方程式。"
+        },
+        {
+          "choice": "代數結果不符合票數非負限制，資料或模型需檢查",
+          "truth": true,
+          "reason": "負票數違反標準售票情境。"
+        },
+        {
+          "choice": "只要總張數正確就接受",
+          "truth": false,
+          "reason": "各票種數量也必須可行。"
+        }
+      ],
+      "misconceptionTarget": "忽略負數的現實意義",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位或題幹單位一致",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「審查不可行票數解」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "需要解釋模型失敗。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "0135f7d226487926b9c27bdf82d5e2f1d0ced938b6440eef3bfba23b070be7f2"
+    },
+    {
+      "questionId": "u04-s010-v010",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "展覽入場 120 人，工作人員 8 人、贈票 12 人，其餘購票。購票張數為何？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "從入場統計求收費票數",
+      "choices": [
+        "120 張",
+        "112 張",
+        "108 張",
+        "100 張"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "收費購票人數=120-8-12=100。",
+      "explanation": "售票模型前必須先清理不收費人數。",
+      "steps": [
+        "區分三類入場者。",
+        "扣除工作人員與贈票。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "120 張",
+          "truth": false,
+          "reason": "未扣除兩類免費入場。"
+        },
+        {
+          "choice": "112 張",
+          "truth": false,
+          "reason": "只扣工作人員。"
+        },
+        {
+          "choice": "108 張",
+          "truth": false,
+          "reason": "只扣贈票。"
+        },
+        {
+          "choice": "100 張",
+          "truth": true,
+          "reason": "120-8-12=100。"
+        }
+      ],
+      "misconceptionTarget": "只扣一個免費類別",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "人對應張，結果 100 張。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「從入場統計求收費票數」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "統計分類不可刪除。",
+      "literacyContextNecessity": "工作人員與贈票都不產生票款，決定收費票數。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "aee5ec414900ca3a317ae3fadb6f8fc901fd9fbbffdd4b0d34d992d3374c852b"
+    },
+    {
+      "questionId": "u04-s010-v011",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "戲院報表：全票 280 元、優惠票 180 元，共售 200 張，票房 45600 元。優惠票幾張？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "從票房報表反求低價票數",
+      "choices": [
+        "104",
+        "96",
+        "100",
+        "120"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "設全票 x、優惠 y：x+y=200。全優惠收入 36000，實際多 9600，每張全票多 100，故全票 96，優惠 104。",
+      "explanation": "報表需同時使用總張數與票房。",
+      "steps": [
+        "用全優惠票為基準。",
+        "求全票 96。",
+        "由總數得優惠 104。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "104",
+          "truth": true,
+          "reason": "96×280+104×180=45600。"
+        },
+        {
+          "choice": "96",
+          "truth": false,
+          "reason": "這是全票張數。"
+        },
+        {
+          "choice": "100",
+          "truth": false,
+          "reason": "平均分配忽略收入。"
+        },
+        {
+          "choice": "120",
+          "truth": false,
+          "reason": "代回收入過低。"
+        }
+      ],
+      "misconceptionTarget": "求出高價票後答錯物件",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "元與張單位一致。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「從票房報表反求低價票數」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "情境要求區分票種。",
+      "literacyContextNecessity": "票價、總張數與票房都是必要報表欄位。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "120a2f59991dd41c7fd4ca00189f956c6ebf28074dd2f042aa66c979790d4452"
+    },
+    {
+      "questionId": "u04-s010-v012",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "售票系統顯示平均每張收入 140 元，兩種票價為 180 元與 100 元，共售 50 張。高價票幾張？",
+      "givenConditions": [
+        "依題幹所列數值、符號與關係"
+      ],
+      "target": "利用平均票價資料建模",
+      "choices": [
+        "20",
+        "25",
+        "30",
+        "40"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "總收入 140×50=7000。全低價收入 5000，多 2000；每張高價多 80，所以高價票 25。",
+      "explanation": "平均收入欄可轉換為總收入。",
+      "steps": [
+        "求總收入。",
+        "設全低價基準。",
+        "除價差。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "平均收入會是 132。"
+        },
+        {
+          "choice": "25",
+          "truth": true,
+          "reason": "25 張各類票時平均為 (180+100)/2=140。"
+        },
+        {
+          "choice": "30",
+          "truth": false,
+          "reason": "平均收入會是 148。"
+        },
+        {
+          "choice": "40",
+          "truth": false,
+          "reason": "平均收入會是 164。"
+        }
+      ],
+      "misconceptionTarget": "把平均價直接當某票價",
+      "prerequisiteCheck": "只需先備 system-chicken-rabbit-problem，並使用本技能「票價問題」。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "元/張×張=元。",
+      "roundingCheck": "所有數值皆為精確值；題目不需要四捨五入。",
+      "ambiguityAudit": "所求量明確為「利用平均票價資料建模」；四個選項互異，且依獨立重算只有一項成立。",
+      "boundaryAudit": "只使用本技能與先備技能；未使用矩陣、三元聯立或高中方法。",
+      "difficultyReason": "平均欄是必要資訊轉換。",
+      "literacyContextNecessity": "平均收入與總張數共同決定總票房。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "e4207b65a7c2a7007438df0018b25319a32be1cc3f99783969ee3d06b7f2c407"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u04-s010-cr001",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "prompt": "展覽共入場 120 人，其中工作人員 8 人、免費贈票 12 人，其餘購買 300 元或 200 元票，票款共 25200 元。求兩種票各售幾張。",
+      "requiredWork": [
+        "先求收費售票數。",
+        "列票數與收入式。"
+      ],
+      "standardSolution": [
+        "售票數=120-8-12=100。",
+        "設 300 元票 x、200 元票 y。",
+        "x+y=100，300x+200y=25200。",
+        "減 200(x+y)=20000，得 100x=5200，x=52，y=48。"
+      ],
+      "alternativeMethods": [
+        "可用全 200 元票為基準，多收 5200 元，每張高價多 100 元。"
+      ],
+      "reasoningSteps": [
+        "清理免費人數。",
+        "建立兩式。",
+        "求解並回算。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "收費票數與兩票種 52/48 完整正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但免費人數處理說明略少。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確得到售票數 100 並列式，後續算術錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "把 120 全列為收費票。"
+        }
+      ],
+      "partialCreditRules": [
+        "售票數一分，聯立一分，答案一分。"
+      ],
+      "followThroughPolicy": "若只漏扣一個免費類別，後續模型一致最多 1 分。",
+      "unitNotationRules": "人數與票張數在此一人一票；金額為元。",
+      "answerOnlyPolicy": "只答 52、48 最高 1 分。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "derivedResult": "300元票52張、200元票48張。",
+        "ambiguityAudit": "題意給定量、變數與所求明確；沒有第二種會改變答案的合理解釋。",
+        "boundaryAudit": "只使用本技能與已鎖定先備技能。",
+        "decision": "pass",
+        "reviewNote": "獨立回算 52×300+48×200=25200，售票100。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "eb05f2f4a295bd4ed65138b77aa12ab613bcea3fec18c20a1adc74838ee0c98a"
+    },
+    {
+      "questionId": "u04-s010-cr002",
+      "unitId": "u04",
+      "numericUnitId": 4,
+      "topicId": "u04-system-apps",
+      "skillId": "system-ticket-price-problem",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "prompt": "兩種票價相差 60 元，共售 80 張；收入比全部買便宜票多 2700 元。判斷資料能否對應整數張數，並說明。",
+      "requiredWork": [
+        "用價差求高價票數。",
+        "檢查整數限制。"
+      ],
+      "standardSolution": [
+        "每張高價票比便宜票多 60 元。",
+        "高價票張數=2700÷60=45。",
+        "45 是整數且 0≤45≤80，所以可行；便宜票 35 張。"
+      ],
+      "alternativeMethods": [
+        "可設高價 x、低價 y：x+y=80，60x=2700；直接求 x。"
+      ],
+      "reasoningSteps": [
+        "建立額外收入模型。",
+        "做整數與範圍檢查。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "高價45、低價35，且可行性說明完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "數量正確但只做一項可行性檢查。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確寫 60x=2700 但除法或剩餘張數錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "把 2700 當總票款或忽略價差。"
+        }
+      ],
+      "partialCreditRules": [
+        "方程式一分，數量一分，可行性一分。"
+      ],
+      "followThroughPolicy": "若算得 45.0 但未說明張數整數，可給 2 分。",
+      "unitNotationRules": "單位為張；金額為元。",
+      "answerOnlyPolicy": "只答 45 最高 1 分。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "derivedResult": "高價45張、低價35張，資料可行。",
+        "ambiguityAudit": "題意給定量、變數與所求明確；沒有第二種會改變答案的合理解釋。",
+        "boundaryAudit": "只使用本技能與已鎖定先備技能。",
+        "decision": "pass",
+        "reviewNote": "獨立檢查額外收入 45×60=2700。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "b14ef974f74da5ec956683d5a91dfa28ed40946e4595051498eac0ac6b9a46b9"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "005-u04-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/005-u04-complete/units/u04/s010"
+}

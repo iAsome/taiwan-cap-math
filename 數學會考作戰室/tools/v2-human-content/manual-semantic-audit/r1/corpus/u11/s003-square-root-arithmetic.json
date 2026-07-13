@@ -1,0 +1,1337 @@
+{
+  "slot": "s003",
+  "skillId": "square-root-arithmetic",
+  "topicId": "u11-square-root",
+  "title": "根式四則：先化簡再選運算規則",
+  "lecture": {
+    "lectureId": "u11-s003-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "square-root-arithmetic",
+    "lockedSkillOrder": 3,
+    "lockedTitle": "根式四則",
+    "title": "根式四則：先化簡再選運算規則",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能辨認同類根式並加減係數",
+      "能正確進行根式乘除",
+      "能運用平方差與先化簡策略降低錯誤"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "square-root-simplify",
+        "requiredLevel": "能使用前一技能「根式化簡」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "同類根式",
+        "definition": "化簡後根號部分完全相同的根式。"
+      },
+      {
+        "term": "係數",
+        "definition": "乘在根式前的數。"
+      },
+      {
+        "term": "共軛形式",
+        "definition": "A+B與A-B的配對。"
+      },
+      {
+        "term": "根式乘法",
+        "definition": "非負被開方數可在根號內相乘。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "a√m+b√m=(a+b)√m",
+        "meaning": "只對同類根式成立。"
+      },
+      {
+        "symbol": "√a√b=√(ab)",
+        "meaning": "a,b≥0。"
+      },
+      {
+        "symbol": "√a/√b=√(a/b)",
+        "meaning": "a≥0,b>0。"
+      }
+    ],
+    "conceptNarrative": [
+      "根式加減像代數同類項：√2與3√2可合併，√2與√3不能直接合併。",
+      "判斷同類前必須先化簡，例如√8與√18其實都是√2的倍數。",
+      "乘法與除法可以處理被開方數，但加法不能照搬。",
+      "遇到(A+B)(A-B)可用平方差消去交叉根式項。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "根式加減",
+        "statement": "只合併化簡後相同根號部分的係數。"
+      },
+      {
+        "name": "根式乘除",
+        "statement": "在定義域允許時，可合併被開方數。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "a√m±b√m=(a±b)√m",
+        "conditions": [
+          "m≥0。"
+        ],
+        "meaning": "同類根式係數運算。"
+      },
+      {
+        "formula": "(√a+√b)(√a-√b)=a-b",
+        "conditions": [
+          "a,b≥0。"
+        ],
+        "meaning": "平方差。"
+      }
+    ],
+    "nonApplicableCases": [
+      "√a+√b通常不等於√(a+b)。",
+      "除法分母不能為0。",
+      "平方整個和時不能只平方每一項。",
+      "單位不同的長度不能直接相加。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先化簡每個根式。",
+        "check": "找出真正的同類根式。"
+      },
+      {
+        "step": 2,
+        "instruction": "辨認運算種類。",
+        "check": "加減與乘除規則不同。"
+      },
+      {
+        "step": 3,
+        "instruction": "保留括號與正負號。",
+        "check": "尤其注意減號分配。"
+      },
+      {
+        "step": 4,
+        "instruction": "完成係數或被開方數運算。",
+        "check": "結果再化簡。"
+      },
+      {
+        "step": 5,
+        "instruction": "用平方或近似值快速檢查。",
+        "check": "確認量級與符號合理。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "計算4√7-√7。",
+        "solutionSteps": [
+          "同類根式。",
+          "係數4-1。"
+        ],
+        "answer": "3√7。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "計算√20+√45。",
+        "solutionSteps": [
+          "化簡為2√5與3√5。",
+          "合併係數。"
+        ],
+        "answer": "5√5。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "計算√10×√40。",
+        "solutionSteps": [
+          "合併成√400。",
+          "取主平方根。"
+        ],
+        "answer": "20。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "計算(√11+2)(√11-2)。",
+        "solutionSteps": [
+          "使用平方差。",
+          "11-4。"
+        ],
+        "answer": "7。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "√2+√3=√5。",
+        "why": "把乘法性質錯套到加法。",
+        "correction": "不同類根式不能合併。"
+      },
+      {
+        "mistake": "√12+√3=√15。",
+        "why": "未先化簡。",
+        "correction": "2√3+√3=3√3。"
+      },
+      {
+        "mistake": "(√5)²=√25。",
+        "why": "雖數值同為5但推理混亂。",
+        "correction": "直接使用(√5)²=5。"
+      },
+      {
+        "mistake": "√6×√24=√30。",
+        "why": "乘法時誤加被開方數。",
+        "correction": "應為√144=12。"
+      },
+      {
+        "mistake": "根式除法把分子分母分別相減。",
+        "why": "除法規則錯誤。",
+        "correction": "可合併成商的平方根。"
+      },
+      {
+        "mistake": "合併係數時漏掉負號。",
+        "why": "沒有把減號視為係數的一部分。",
+        "correction": "先寫成有號係數再相加。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "根式加減先找同類，乘除可合併被開方數。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "先化簡每個根式。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "√2+√3=√5。；修正：不同類根式不能合併。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "最後結果還能化簡嗎？"
+      }
+    ],
+    "summary": [
+      "根式加減先找同類，乘除可合併被開方數。",
+      "平方差常使根式乘積化為有理數。"
+    ],
+    "connections": {
+      "previous": "需要 s002 的根式化簡。",
+      "next": [
+        "s004 將估算根式大小。",
+        "s007 會把根式除法延伸到分母有理化。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s003-v001",
+        "u11-s003-v002",
+        "u11-s003-v003",
+        "u11-s003-v004",
+        "u11-s003-v005",
+        "u11-s003-v006",
+        "u11-s003-v007",
+        "u11-s003-v008",
+        "u11-s003-v009",
+        "u11-s003-v010",
+        "u11-s003-v011",
+        "u11-s003-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s003-cr001",
+        "u11-s003-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「根式四則」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「√2+√3=√5。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "b307da0f5e5f94f958342f47ff79342347700b13b5f8af35f0df8e913debc615"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u11-s003-v001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "2√3+5√3 等於多少？",
+      "givenConditions": [
+        "兩項都是 √3 的倍數。"
+      ],
+      "target": "合併同類根式。",
+      "choices": [
+        "7√6",
+        "10√3",
+        "7√3",
+        "3√8"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：兩項的根號部分相同，係數 2+5=7。 詳算檢查：同類根式只加係數：(2+5)√3=7√3。 因此結果為「7√3」。",
+      "explanation": "同類根式只加係數：(2+5)√3=7√3。",
+      "steps": [
+        "整理條件：兩項都是 √3 的倍數。",
+        "獨立推導：不參照選項，從題幹條件重新計算：兩項的根號部分相同，係數 2+5=7。 詳算檢查：同類根式只加係數：(2+5)√3=7√3。 因此結果為「7√3」。",
+        "核對目標：答案「7√3」確實回應「合併同類根式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "7√6",
+          "truth": false,
+          "reason": "把根號內數也相加。"
+        },
+        {
+          "choice": "10√3",
+          "truth": false,
+          "reason": "把係數相乘。"
+        },
+        {
+          "choice": "7√3",
+          "truth": true,
+          "reason": "此選項符合目標「合併同類根式。」；同類根式只加係數：(2+5)√3=7√3。"
+        },
+        {
+          "choice": "3√8",
+          "truth": false,
+          "reason": "不應把兩項併入同一根號。"
+        }
+      ],
+      "misconceptionTarget": "把 √3+√3 誤作 √6。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "直接係數相加。；具體任務是「合併同類根式。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7c51dc3c76747e2c957452204095d8ea515f27044a98fb432596dcf3e47624a5"
+    },
+    {
+      "questionId": "u11-s003-v002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "√12+√27 化簡後為何？",
+      "givenConditions": [
+        "兩根式可化成同類根式。"
+      ],
+      "target": "完成化簡與加法。",
+      "choices": [
+        "5√3",
+        "√39",
+        "3√3",
+        "6√3"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先各自化簡，再合併 2√3+3√3。 詳算檢查：√12=2√3，√27=3√3，所以和為 5√3。 因此結果為「5√3」。",
+      "explanation": "√12=2√3，√27=3√3，所以和為 5√3。",
+      "steps": [
+        "整理條件：兩根式可化成同類根式。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先各自化簡，再合併 2√3+3√3。 詳算檢查：√12=2√3，√27=3√3，所以和為 5√3。 因此結果為「5√3」。",
+        "核對目標：答案「5√3」確實回應「完成化簡與加法。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5√3",
+          "truth": true,
+          "reason": "此選項符合目標「完成化簡與加法。」；√12=2√3，√27=3√3，所以和為 5√3。"
+        },
+        {
+          "choice": "√39",
+          "truth": false,
+          "reason": "根式加法不能直接加被開方數。"
+        },
+        {
+          "choice": "3√3",
+          "truth": false,
+          "reason": "漏掉其中一項。"
+        },
+        {
+          "choice": "6√3",
+          "truth": false,
+          "reason": "係數相加錯誤。"
+        }
+      ],
+      "misconceptionTarget": "未先化簡就直接合併被開方數。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需先辨認同類根式。；具體任務是「完成化簡與加法。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "56b213557166a2422027972dc3ee7ef3e9ac97ce7377d2324cb0ffe605013aeb"
+    },
+    {
+      "questionId": "u11-s003-v003",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "√18-√8 等於多少？",
+      "givenConditions": [
+        "18=9×2，8=4×2。"
+      ],
+      "target": "計算根式差。",
+      "choices": [
+        "√10",
+        "2√2",
+        "-√2",
+        "√2"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：化簡後係數為 3-2=1。 詳算檢查：√18=3√2，√8=2√2，相減得 √2。 因此結果為「√2」。",
+      "explanation": "√18=3√2，√8=2√2，相減得 √2。",
+      "steps": [
+        "整理條件：18=9×2，8=4×2。",
+        "獨立推導：不參照選項，從題幹條件重新計算：化簡後係數為 3-2=1。 詳算檢查：√18=3√2，√8=2√2，相減得 √2。 因此結果為「√2」。",
+        "核對目標：答案「√2」確實回應「計算根式差。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√10",
+          "truth": false,
+          "reason": "直接相減被開方數。"
+        },
+        {
+          "choice": "2√2",
+          "truth": false,
+          "reason": "係數 3-2 算錯。"
+        },
+        {
+          "choice": "-√2",
+          "truth": false,
+          "reason": "減法順序顛倒。"
+        },
+        {
+          "choice": "√2",
+          "truth": true,
+          "reason": "此選項符合目標「計算根式差。」；√18=3√2，√8=2√2，相減得 √2。"
+        }
+      ],
+      "misconceptionTarget": "忽略化簡造成的同類根式。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "兩步化簡後相減。；具體任務是「計算根式差。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f2fb739aebd24a37b56a1bf201fcf88483c229decfe1a35eba1cca7c9e11fa71"
+    },
+    {
+      "questionId": "u11-s003-v004",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "√6×√24 等於多少？",
+      "givenConditions": [
+        "被開方數皆非負。"
+      ],
+      "target": "計算根式乘積。",
+      "choices": [
+        "√30",
+        "12",
+        "6√4",
+        "24"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：被開方數相乘 6×24=144，再取非負平方根 12。 詳算檢查：√6×√24=√144=12。 因此結果為「12」。",
+      "explanation": "√6×√24=√144=12。",
+      "steps": [
+        "整理條件：被開方數皆非負。",
+        "獨立推導：不參照選項，從題幹條件重新計算：被開方數相乘 6×24=144，再取非負平方根 12。 詳算檢查：√6×√24=√144=12。 因此結果為「12」。",
+        "核對目標：答案「12」確實回應「計算根式乘積。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√30",
+          "truth": false,
+          "reason": "乘法時錯用加法。"
+        },
+        {
+          "choice": "12",
+          "truth": true,
+          "reason": "此選項符合目標「計算根式乘積。」；√6×√24=√144=12。"
+        },
+        {
+          "choice": "6√4",
+          "truth": false,
+          "reason": "等值但未算完。"
+        },
+        {
+          "choice": "24",
+          "truth": false,
+          "reason": "把 √6 也當 6。"
+        }
+      ],
+      "misconceptionTarget": "根式相乘時把被開方數相加。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需使用乘法性質並化成整數。；具體任務是「計算根式乘積。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f73531669e2a7eecc972df169d4a62cf131ff3b720f0868d08b27357c2bc7060"
+    },
+    {
+      "questionId": "u11-s003-v005",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "√75÷√3 等於多少？",
+      "givenConditions": [
+        "分母根式不為 0。"
+      ],
+      "target": "求根式商。",
+      "choices": [
+        "√72",
+        "5",
+        "25",
+        "5√3"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：利用 √a/√b=√(a/b)，75÷3=25。 詳算檢查：√75÷√3=√25=5。 因此結果為「5」。",
+      "explanation": "√75÷√3=√25=5。",
+      "steps": [
+        "整理條件：分母根式不為 0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：利用 √a/√b=√(a/b)，75÷3=25。 詳算檢查：√75÷√3=√25=5。 因此結果為「5」。",
+        "核對目標：答案「5」確實回應「求根式商。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√72",
+          "truth": false,
+          "reason": "把除法當減法。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "此選項符合目標「求根式商。」；√75÷√3=√25=5。"
+        },
+        {
+          "choice": "25",
+          "truth": false,
+          "reason": "忘記最後開平方。"
+        },
+        {
+          "choice": "5√3",
+          "truth": false,
+          "reason": "只化簡分子未完成除法。"
+        }
+      ],
+      "misconceptionTarget": "只處理分子，沒有約分根式。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需確認除法性質與分母條件。；具體任務是「求根式商。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "fe06a96fa2569560f7a72f498730957f671bd38d62f1add45f599cc6965f19df"
+    },
+    {
+      "questionId": "u11-s003-v006",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "(√5+√2)(√5-√2) 等於多少？",
+      "givenConditions": [
+        "兩因式為 A+B 與 A-B。"
+      ],
+      "target": "計算根式共軛乘積。",
+      "choices": [
+        "7",
+        "√3",
+        "5-2√10+2",
+        "3"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：兩因式互為共軛，交叉項抵消，結果 3。 詳算檢查：利用平方差：(√5)²-(√2)²=5-2=3。 因此結果為「3」。",
+      "explanation": "利用平方差：(√5)²-(√2)²=5-2=3。",
+      "steps": [
+        "整理條件：兩因式為 A+B 與 A-B。",
+        "獨立推導：不參照選項，從題幹條件重新計算：兩因式互為共軛，交叉項抵消，結果 3。 詳算檢查：利用平方差：(√5)²-(√2)²=5-2=3。 因此結果為「3」。",
+        "核對目標：答案「3」確實回應「計算根式共軛乘積。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "把差平方公式誤作和。"
+        },
+        {
+          "choice": "√3",
+          "truth": false,
+          "reason": "錯把兩根式相減後再相乘。"
+        },
+        {
+          "choice": "5-2√10+2",
+          "truth": false,
+          "reason": "展開符號錯。"
+        },
+        {
+          "choice": "3",
+          "truth": true,
+          "reason": "此選項符合目標「計算根式共軛乘積。」；利用平方差：(√5)²-(√2)²=5-2=3。"
+        }
+      ],
+      "misconceptionTarget": "沒有辨認平方差結構。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需運用乘法公式而非逐項猜測。；具體任務是「計算根式共軛乘積。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "76acdd322ea6c05ccdfc22b6ca9f92dfa9662536007d18b63767f6627397d474"
+    },
+    {
+      "questionId": "u11-s003-v007",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "(2√3+√12)÷√3 等於多少？",
+      "givenConditions": [
+        "分母 √3 非 0。"
+      ],
+      "target": "化簡複合根式算式。",
+      "choices": [
+        "4",
+        "2",
+        "2√3",
+        "6"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先化簡同類根式：2√3+2√3=4√3，約去 √3。 詳算檢查：√12=2√3，分子為 4√3，再除以 √3 得 4。 因此結果為「4」。",
+      "explanation": "√12=2√3，分子為 4√3，再除以 √3 得 4。",
+      "steps": [
+        "整理條件：分母 √3 非 0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先化簡同類根式：2√3+2√3=4√3，約去 √3。 詳算檢查：√12=2√3，分子為 4√3，再除以 √3 得 4。 因此結果為「4」。",
+        "核對目標：答案「4」確實回應「化簡複合根式算式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4",
+          "truth": true,
+          "reason": "此選項符合目標「化簡複合根式算式。」；√12=2√3，分子為 4√3，再除以 √3 得 4。"
+        },
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "漏掉 √12 化簡後的項。"
+        },
+        {
+          "choice": "2√3",
+          "truth": false,
+          "reason": "沒有完成除法。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "把 √12 當 4√3。"
+        }
+      ],
+      "misconceptionTarget": "運算順序不當，分子未先合併。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "含化簡、合併與除法三層。；具體任務是「化簡複合根式算式。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "0f7042523d53e84000d2fd1bd169d8fa77954861f896fc458180d6b9fb48bf75"
+    },
+    {
+      "questionId": "u11-s003-v008",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "(√8+√18)² 等於多少？",
+      "givenConditions": [
+        "整個括號需要平方。"
+      ],
+      "target": "求化簡後根式的平方。",
+      "choices": [
+        "26",
+        "5√2",
+        "50",
+        "100"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先合併成 5√2，再計算 (5√2)²=25×2。 詳算檢查：√8+√18=2√2+3√2=5√2，平方為 25×2=50。 因此結果為「50」。",
+      "explanation": "√8+√18=2√2+3√2=5√2，平方為 25×2=50。",
+      "steps": [
+        "整理條件：整個括號需要平方。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先合併成 5√2，再計算 (5√2)²=25×2。 詳算檢查：√8+√18=2√2+3√2=5√2，平方為 25×2=50。 因此結果為「50」。",
+        "核對目標：答案「50」確實回應「求化簡後根式的平方。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "26",
+          "truth": false,
+          "reason": "漏掉兩倍乘積項。"
+        },
+        {
+          "choice": "5√2",
+          "truth": false,
+          "reason": "忘記整體平方。"
+        },
+        {
+          "choice": "50",
+          "truth": true,
+          "reason": "此選項符合目標「求化簡後根式的平方。」；√8+√18=2√2+3√2=5√2，平方為 25×2=50。"
+        },
+        {
+          "choice": "100",
+          "truth": false,
+          "reason": "把 5√2 平方錯成 25×4。"
+        }
+      ],
+      "misconceptionTarget": "平方和時只平方係數或漏掉根號平方。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需選擇先化簡以避免展開錯誤。；具體任務是「求化簡後根式的平方。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a44b33da1205bb0a08e8cc8485f2d6f821ef82421f7620b82d35e35b5d350450"
+    },
+    {
+      "questionId": "u11-s003-v009",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "若 A=3√2-√8+√50，則 A 為何？",
+      "givenConditions": [
+        "三個根式都可化為同類根式。"
+      ],
+      "target": "合併含正負號的多項根式。",
+      "choices": [
+        "6√2",
+        "7√2",
+        "3√44",
+        "10√2"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：三項全部化為 √2 的倍數，再按正負號合併係數。 詳算檢查：√8=2√2，√50=5√2，所以 A=(3-2+5)√2=6√2。 因此結果為「6√2」。",
+      "explanation": "√8=2√2，√50=5√2，所以 A=(3-2+5)√2=6√2。",
+      "steps": [
+        "整理條件：三個根式都可化為同類根式。",
+        "獨立推導：不參照選項，從題幹條件重新計算：三項全部化為 √2 的倍數，再按正負號合併係數。 詳算檢查：√8=2√2，√50=5√2，所以 A=(3-2+5)√2=6√2。 因此結果為「6√2」。",
+        "核對目標：答案「6√2」確實回應「合併含正負號的多項根式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6√2",
+          "truth": true,
+          "reason": "此選項符合目標「合併含正負號的多項根式。」；√8=2√2，√50=5√2，所以 A=(3-2+5)√2=6√2。"
+        },
+        {
+          "choice": "7√2",
+          "truth": false,
+          "reason": "係數 3-2+5 算錯。"
+        },
+        {
+          "choice": "3√44",
+          "truth": false,
+          "reason": "直接處理被開方數。"
+        },
+        {
+          "choice": "10√2",
+          "truth": false,
+          "reason": "忽略負號。"
+        }
+      ],
+      "misconceptionTarget": "化簡正確但漏看中間減號。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需穩定處理三項與符號。；具體任務是「合併含正負號的多項根式。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "428555595edab8c83a42e32ca8994edf364a1ad7175531674df186d972f674d1"
+    },
+    {
+      "questionId": "u11-s003-v010",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "工藝圖的兩段長度分別是 3√5 公分與 2√5 公分，拼接後不重疊。總長是多少？",
+      "givenConditions": [
+        "兩段首尾相接且單位相同。"
+      ],
+      "target": "求精確總長。",
+      "choices": [
+        "6√5 公分",
+        "5√5 公分",
+        "5√10 公分",
+        "√25 公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：情境要求加法；兩段是同類根式，係數相加。 詳算檢查：同方向拼接且不重疊，長度相加為 (3+2)√5=5√5 公分。 因此結果為「5√5 公分」。",
+      "explanation": "同方向拼接且不重疊，長度相加為 (3+2)√5=5√5 公分。",
+      "steps": [
+        "整理條件：兩段首尾相接且單位相同。",
+        "獨立推導：不參照選項，從題幹條件重新計算：情境要求加法；兩段是同類根式，係數相加。 詳算檢查：同方向拼接且不重疊，長度相加為 (3+2)√5=5√5 公分。 因此結果為「5√5 公分」。",
+        "核對目標：答案「5√5 公分」確實回應「求精確總長。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6√5 公分",
+          "truth": false,
+          "reason": "把係數相乘。"
+        },
+        {
+          "choice": "5√5 公分",
+          "truth": true,
+          "reason": "此選項符合目標「求精確總長。」；同方向拼接且不重疊，長度相加為 (3+2)√5=5√5 公分。"
+        },
+        {
+          "choice": "5√10 公分",
+          "truth": false,
+          "reason": "把根號內數相加。"
+        },
+        {
+          "choice": "√25 公分",
+          "truth": false,
+          "reason": "把係數與根式錯誤合併。"
+        }
+      ],
+      "misconceptionTarget": "沒有先判斷情境應使用加法。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "兩段皆為公分，和仍為公分。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "讀懂拼接關係後合併根式。；具體任務是「求精確總長。」。",
+      "literacyContextNecessity": "「不重疊」決定總長是兩段相加。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "dea9eaaf4e6fb9c748effd2b7a4dd1cb36ef1bf180ccd8450d592d26462ea6ae"
+    },
+    {
+      "questionId": "u11-s003-v011",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某方形零件邊長為 √18 公分，兩個零件並排且邊緊貼，總寬為何？",
+      "givenConditions": [
+        "兩個相同正方形並排，無縫隙。"
+      ],
+      "target": "求並排總寬。",
+      "choices": [
+        "3√2 公分",
+        "√36 公分",
+        "6√2 公分",
+        "2√18 平方公分"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：總寬是兩條邊相加；化簡後為 6√2 公分。 詳算檢查：每個邊長 √18=3√2 公分，兩個並排總寬為 2×3√2=6√2 公分。 因此結果為「6√2 公分」。",
+      "explanation": "每個邊長 √18=3√2 公分，兩個並排總寬為 2×3√2=6√2 公分。",
+      "steps": [
+        "整理條件：兩個相同正方形並排，無縫隙。",
+        "獨立推導：不參照選項，從題幹條件重新計算：總寬是兩條邊相加；化簡後為 6√2 公分。 詳算檢查：每個邊長 √18=3√2 公分，兩個並排總寬為 2×3√2=6√2 公分。 因此結果為「6√2 公分」。",
+        "核對目標：答案「6√2 公分」確實回應「求並排總寬。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3√2 公分",
+          "truth": false,
+          "reason": "只算一個零件。"
+        },
+        {
+          "choice": "√36 公分",
+          "truth": false,
+          "reason": "雖等於 6，但不是正確的兩倍 √18。"
+        },
+        {
+          "choice": "6√2 公分",
+          "truth": true,
+          "reason": "此選項符合目標「求並排總寬。」；每個邊長 √18=3√2 公分，兩個並排總寬為 2×3√2=6√2 公分。"
+        },
+        {
+          "choice": "2√18 平方公分",
+          "truth": false,
+          "reason": "單位誤寫成面積。"
+        }
+      ],
+      "misconceptionTarget": "數值正確方向接近但把長度單位寫成平方單位。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "邊長與總寬均為公分，不是平方公分。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "結合圖形排列、倍數與化簡。；具體任務是「求並排總寬。」。",
+      "literacyContextNecessity": "並排關係決定要把邊長加兩次。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "60b04996570cebf32b268c027d208f41ff2393e570fe798c2c94527a6c3bdc8d"
+    },
+    {
+      "questionId": "u11-s003-v012",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一個檢測值以 (√7+√3)(√7-√3) 計算。系統只接受整數，應輸入多少？",
+      "givenConditions": [
+        "系統公式完整給出，需輸入運算結果。"
+      ],
+      "target": "求符合整數格式的值。",
+      "choices": [
+        "10",
+        "√4",
+        "7-√3",
+        "4"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：令 A=√7、B=√3，(A+B)(A-B)=A²-B²=4。 詳算檢查：平方差得 7-3=4，正好是整數。 因此結果為「4」。",
+      "explanation": "平方差得 7-3=4，正好是整數。",
+      "steps": [
+        "整理條件：系統公式完整給出，需輸入運算結果。",
+        "獨立推導：不參照選項，從題幹條件重新計算：令 A=√7、B=√3，(A+B)(A-B)=A²-B²=4。 詳算檢查：平方差得 7-3=4，正好是整數。 因此結果為「4」。",
+        "核對目標：答案「4」確實回應「求符合整數格式的值。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "把兩項平方相加。"
+        },
+        {
+          "choice": "√4",
+          "truth": false,
+          "reason": "仍可化為整數 2，且數值也不符。"
+        },
+        {
+          "choice": "7-√3",
+          "truth": false,
+          "reason": "沒有完整相乘。"
+        },
+        {
+          "choice": "4",
+          "truth": true,
+          "reason": "此選項符合目標「求符合整數格式的值。」；平方差得 7-3=4，正好是整數。"
+        }
+      ],
+      "misconceptionTarget": "不辨認共軛結構而錯誤展開。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-simplify，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需辨認公式結構並完成精確運算。；具體任務是「求符合整數格式的值。」。",
+      "literacyContextNecessity": "系統只接受整數，要求把根式乘積化到最後。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式四則",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ce0b3ea83a954a3dd5992f6b450816b7d00c7ffeb34be9d81dc803c75fbd579f"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u11-s003-cr001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "計算 2√27-√12+√75，結果化成最簡根式。",
+      "requiredWork": [
+        "逐項化簡",
+        "正確處理減號",
+        "合併同類根式"
+      ],
+      "fullCreditSolution": [
+        "2√27=6√3。",
+        "√12=2√3，√75=5√3。",
+        "6√3-2√3+5√3=9√3。"
+      ],
+      "standardAnswer": "9√3。",
+      "alternativeMethod": "可先把各被開方數寫成3乘平方數，再一次合併係數2×3-2+5。",
+      "reasoningSteps": [
+        "2√27=6√3。",
+        "√12=2√3，√75=5√3。",
+        "6√3-2√3+5√3=9√3。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：三項化簡正確；符號與係數合併正確；結果9√3，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：三項化簡正確；符號與係數合併正確；結果9√3。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「三項化簡正確」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「三項化簡正確」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「三項化簡正確」但後續失誤，可依證據給1分。",
+        "若完成「三項化簡正確」與「符號與係數合併正確」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "直接算√(27-12+75)",
+        "漏掉前係數2"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "9√3。",
+        "recomputation": "2√27=6√3。；√12=2√3，√75=5√3。；6√3-2√3+5√3=9√3。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「結果9√3」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "fb1488691f3aa7d98c6310fbe6b0ed58efbe04bf59f944ec0f480b505fa647d9"
+    },
+    {
+      "questionId": "u11-s003-cr002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-arithmetic",
+      "lockedSkillOrder": 3,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "計算 (√13+√5)(√13-√5)+√20。",
+      "requiredWork": [
+        "使用平方差",
+        "化簡√20",
+        "合併結果"
+      ],
+      "fullCreditSolution": [
+        "共軛乘積=13-5=8。",
+        "√20=2√5。",
+        "總和=8+2√5。"
+      ],
+      "standardAnswer": "8+2√5。",
+      "alternativeMethod": "逐項展開也會使±√65抵消。",
+      "reasoningSteps": [
+        "共軛乘積=13-5=8。",
+        "√20=2√5。",
+        "總和=8+2√5。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：平方差得8；√20化為2√5；保留不同類項，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：平方差得8；√20化為2√5；保留不同類項。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「平方差得8」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「平方差得8」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「平方差得8」但後續失誤，可依證據給1分。",
+        "若完成「平方差得8」與「√20化為2√5」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "把平方差算成18",
+        "把8與2√5硬合併"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "8+2√5。",
+        "recomputation": "共軛乘積=13-5=8。；√20=2√5。；總和=8+2√5。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「保留不同類項」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e37bedd73d425636332168796c16ec6349543c3225d9dfff3a408ecdf0cf428c"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "012-u11-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/012-u11-complete/units/u11/s003"
+}

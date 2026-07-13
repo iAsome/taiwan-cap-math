@@ -1,0 +1,1222 @@
+{
+  "slot": "s012",
+  "skillId": "linear-function-application",
+  "topicId": "u15-applications",
+  "lecture": {
+    "lectureId": "u15-s012-lecture",
+    "unitId": "u15",
+    "numericUnitId": 15,
+    "unitTitle": "函數及其圖形",
+    "topicId": "u15-applications",
+    "skillId": "linear-function-application",
+    "skillSlot": "s012",
+    "skillTitle": "線型函數應用",
+    "order": 12,
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+    "prerequisites": [
+      {
+        "skillId": "piecewise-linear-basic",
+        "title": "分段線型基本",
+        "requiredLevel": "能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。",
+        "bridge": "分段能力讓我們處理較複雜方案；本節回到單一線型模型，從固定量與每單位變化建立公式、比較方案並檢查合理範圍。"
+      }
+    ],
+    "learningGoals": [
+      "把固定費與單位費轉成線型函數",
+      "由兩筆情境資料建立模型",
+      "用模型比較方案、預測與解釋結果"
+    ],
+    "vocabulary": [
+      {
+        "term": "固定量",
+        "meaning": "輸入為 0 時仍存在的起始值"
+      },
+      {
+        "term": "單位變動量",
+        "meaning": "每增加一單位輸入造成的輸出改變"
+      },
+      {
+        "term": "模型",
+        "meaning": "用函數表示情境關係"
+      }
+    ],
+    "conceptDevelopment": [
+      "許多生活費用可寫成 y=ax+b：a 是每單位增加量，b 是固定起始量。建模前要先定義 x、y 與單位。",
+      "求出交點可比較兩方案何時同價；但最後還要檢查輸入是否符合整數、非負或容量限制。"
+    ],
+    "definitionsAndMeaning": "許多生活費用可寫成 y=ax+b：a 是每單位增加量，b 是固定起始量。建模前要先定義 x、y 與單位。",
+    "formulasAndConditions": [
+      "總量=單位變動量×數量+固定量。",
+      "兩方案同值：a₁x+b₁=a₂x+b₂。"
+    ],
+    "invalidUseCases": [
+      "把固定費乘上數量。",
+      "解出交點後忽略整數限制。",
+      "把預測延伸到模型不適用範圍。"
+    ],
+    "stepByStepMethod": [
+      "定義自變數、應變數與單位。",
+      "找出每單位變化 a 與起始值 b。",
+      "建立 y=ax+b。",
+      "代入、聯立或解方程，最後回到情境檢查。"
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "s012-ex01",
+        "title": "影印費",
+        "prompt": "影印店收開機費 20 元，每印 1 張再收 3 元。以 x 表示張數，建立總費用 C 的線型函數。",
+        "solution": "開機費 20 元，每張 3 元：C=3x+20。",
+        "level": "basic"
+      },
+      {
+        "exampleId": "s012-ex02",
+        "title": "兩點建模",
+        "prompt": "購買 2 件商品共 110 元，購買 5 件共 200 元，且總價與件數呈線型關係。求單位變化與模型。",
+        "solution": "2 件 110 元、5 件 200 元，單位增加 30 元，模型 y=30x+50。",
+        "level": "standard"
+      },
+      {
+        "exampleId": "s012-ex03",
+        "title": "方案比較",
+        "prompt": "方案 A 的費用為 4x+60，方案 B 為 6x+20。求兩方案同價時的 x，並判斷交點意義。",
+        "solution": "A=4x+60、B=6x+20，同價於 x=10。",
+        "level": "advanced"
+      },
+      {
+        "exampleId": "s012-ex04",
+        "title": "限制檢查",
+        "prompt": "某線型模型算出需要 7.5 箱商品，但實際只能整箱購買。應如何解讀或調整此結果？",
+        "solution": "若 x 是箱數，解得 7.5 箱時不能直接作為可購箱數。",
+        "level": "connection"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeId": "s012-m01",
+        "wrongReasoning": "交換斜率與截距。",
+        "correction": "在 y=ax+b 中，a 對應每增加 1 單位的費用或變化，b 是 x=0 時仍存在的固定量；用單位檢查兩者不可交換。"
+      },
+      {
+        "mistakeId": "s012-m02",
+        "wrongReasoning": "只算單位費而漏固定費。",
+        "correction": "總費用要寫成固定費＋單位費×數量；即使 x=0 沒有用量，只要方案仍收費就要保留截距。"
+      },
+      {
+        "mistakeId": "s012-m03",
+        "wrongReasoning": "聯立移項符號錯。",
+        "correction": "比較兩方案時令兩個完整費用式相等，移項後重新代回兩式核對同價，避免單靠一邊運算。"
+      },
+      {
+        "mistakeId": "s012-m04",
+        "wrongReasoning": "未解釋 x=0 的意義。",
+        "correction": "x=0 時的輸出是模型截距；應依情境解釋為起始量、基本費或初始高度，而不是只寫一個數。"
+      },
+      {
+        "mistakeId": "s012-m05",
+        "wrongReasoning": "模型外插超過題目允許範圍。",
+        "correction": "模型只能在題目給定的時間、數量或容量範圍內使用；超出資料區間時要明示外插不一定可靠。"
+      }
+    ],
+    "selfChecks": [
+      {
+        "prompt": "固定 80 元，每公里 12 元，式子？",
+        "answer": "y=12x+80"
+      },
+      {
+        "prompt": "y=5x+30 的 30 表示？",
+        "answer": "固定起始量。"
+      },
+      {
+        "prompt": "比較方案交點後還要檢查什麼？",
+        "answer": "定義域與實際限制。"
+      }
+    ],
+    "summary": "線型應用的核心是辨認固定量 b、單位變動量 a，並檢查模型範圍。",
+    "previousSkillConnection": "piecewise-linear-basic",
+    "nextSkillConnection": "function-literacy",
+    "figureRefs": [],
+    "accessibilityNotes": [],
+    "lectureReview": {
+      "reviewVersion": "human-lecture-review-u15-r1",
+      "reviewedAt": "2026-07-12T16:00:00+08:00",
+      "decision": "pass",
+      "reviewNote": "逐段人工重讀「線型函數應用」講義：先備橋接已具體指出學生必須會做的前一步，四個例題均改成可獨立作答的完整題目；五個錯誤修正逐一對應本技能的符號、條件、坐標或情境限制。另核對所有公式只使用 U15 線型函數、常數函數或有限對應範圍，未預用未來單元方法。",
+      "zeroFoundationCheck": "學生只需具備 能以自己的話說明「分段線型基本」並完成基本判斷或計算。",
+      "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
+    },
+    "canonicalization": "sorted-keys-json-utf8-v1",
+    "contentSha256": "d1715ce7b60329b110974e9cb5e2a1f914c89b3f1ed1980f5865a653f3f841dd"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u15-s012-mc01",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "影印費包含固定開機費 50 元，每張 3 元。印 x 張的總費用 C 為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由費用敘述建線型模型」。",
+      "target": "由費用敘述建線型模型",
+      "choices": [
+        "C=50x+3",
+        "C=3x",
+        "C=53x",
+        "C=3x+50"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：定義 x 為張數；建立變動費 3x；加固定費 50。因此得到「C=3x+50」。",
+      "explanation": "每張費形成 3x，固定費加 50，所以 C=3x+50。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "定義 x 為張數"
+        },
+        {
+          "step": 2,
+          "work": "建立變動費 3x"
+        },
+        {
+          "step": 3,
+          "work": "加固定費 50"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "C=50x+3",
+          "truth": false,
+          "reason": "交換單位費與固定費。"
+        },
+        {
+          "index": 1,
+          "choice": "C=3x",
+          "truth": false,
+          "reason": "漏固定費。"
+        },
+        {
+          "index": 2,
+          "choice": "C=53x",
+          "truth": false,
+          "reason": "把兩費率相加後都乘 x。"
+        },
+        {
+          "index": 3,
+          "choice": "C=3x+50",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；每張費形成 3x，固定費加 50，所以 C=3x+50。"
+        }
+      ],
+      "misconceptionTarget": "固定費誤乘數量",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「由費用敘述建線型模型」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 90,
+      "unitAndRoundingCheck": "「x 張，C 元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由費用敘述建線型模型」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 3 的「C=3x+50」符合；其餘錯因分別記錄於 optionAnalysis。；「x 張，C 元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由費用敘述建線型模型」只有題幹所述的一種解讀。",
+      "difficultyReason": "直接辨認固定與單位費，屬基礎。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "a1f90661c0a037a8c4ae51794dd264b930713f02ba21d040eb76ef36e8d49e90"
+    },
+    {
+      "questionId": "u15-s012-mc02",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "商品總價 P=35x+20。若 P=195，購買數量 x 為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由線型模型反求輸入」。",
+      "target": "由線型模型反求輸入",
+      "choices": [
+        "4",
+        "6",
+        "5",
+        "7"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：減固定費 20；得 175；除 35 得 5。因此得到「5」。",
+      "explanation": "35x+20=195，得 35x=175，所以 x=5。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "減固定費 20"
+        },
+        {
+          "step": 2,
+          "work": "得 175"
+        },
+        {
+          "step": 3,
+          "work": "除 35 得 5"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "4",
+          "truth": false,
+          "reason": "175÷35 算錯。"
+        },
+        {
+          "index": 1,
+          "choice": "6",
+          "truth": false,
+          "reason": "未正確扣固定費。"
+        },
+        {
+          "index": 2,
+          "choice": "5",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；35x+20=195，得 35x=175，所以 x=5。"
+        },
+        {
+          "index": 3,
+          "choice": "7",
+          "truth": false,
+          "reason": "以 195÷28 等錯誤估算。"
+        }
+      ],
+      "misconceptionTarget": "反求數量時漏扣固定費",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「由線型模型反求輸入」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 94,
+      "unitAndRoundingCheck": "「x 為件數。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由線型模型反求輸入」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「5」符合；其餘錯因分別記錄於 optionAnalysis。；「x 為件數。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由線型模型反求輸入」只有題幹所述的一種解讀。",
+      "difficultyReason": "一元一次方程式直接應用，屬基礎。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "fe77a2019ef7ab4761d518cc4cfca4aa8bef57b29ebaea1e5170914c1ca5211a"
+    },
+    {
+      "questionId": "u15-s012-mc03",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "basic",
+      "type": "mc",
+      "text": "在收入模型 R=120x+500 中，500 最合理的意義是什麼？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「解讀線型模型截距」。",
+      "target": "解讀線型模型截距",
+      "choices": [
+        "x=0 時已有的固定收入 500 元",
+        "每件收入 500 元",
+        "最多只能收入 500 元",
+        "每增加 500 件收入 120 元"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：令 x=0；得到 R=500；解釋固定收入。因此得到「x=0 時已有的固定收入 500 元」。",
+      "explanation": "截距是 x=0 時的輸出，因此是固定起始收入。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "令 x=0"
+        },
+        {
+          "step": 2,
+          "work": "得到 R=500"
+        },
+        {
+          "step": 3,
+          "work": "解釋固定收入"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "x=0 時已有的固定收入 500 元",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；截距是 x=0 時的輸出，因此是固定起始收入。"
+        },
+        {
+          "index": 1,
+          "choice": "每件收入 500 元",
+          "truth": false,
+          "reason": "每件收入是斜率 120。"
+        },
+        {
+          "index": 2,
+          "choice": "最多只能收入 500 元",
+          "truth": false,
+          "reason": "截距不是上限。"
+        },
+        {
+          "index": 3,
+          "choice": "每增加 500 件收入 120 元",
+          "truth": false,
+          "reason": "倒置斜率。"
+        }
+      ],
+      "misconceptionTarget": "把截距誤解為單位量或上限",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「解讀線型模型截距」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 98,
+      "unitAndRoundingCheck": "「元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「解讀線型模型截距」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「x=0 時已有的固定收入 500 元」符合；其餘錯因分別記錄於 optionAnalysis。；「元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「解讀線型模型截距」只有題幹所述的一種解讀。",
+      "difficultyReason": "直接解讀 b，屬基礎。",
+      "literacyContextNecessity": "不適用；本題為 basic 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "4520dee2d52662743aa01d95aeaba937bb7365d14fac79f71feace7907a84ef8"
+    },
+    {
+      "questionId": "u15-s012-mc04",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "方案甲 C=4x+60，方案乙 C=6x+20。使用多少次時兩方案同價？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「比較兩線型方案」。",
+      "target": "比較兩線型方案",
+      "choices": [
+        "5 次",
+        "20 次",
+        "10 次",
+        "40 次"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：令兩方案費用相等；移項得 40=2x；解得 x=20。因此得到「20 次」。",
+      "explanation": "令 4x+60=6x+20，得 40=2x，所以 x=20。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "令兩方案費用相等"
+        },
+        {
+          "step": 2,
+          "work": "移項得 40=2x"
+        },
+        {
+          "step": 3,
+          "work": "解得 x=20"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "5 次",
+          "truth": false,
+          "reason": "把截距差 40 除以 8。"
+        },
+        {
+          "index": 1,
+          "choice": "20 次",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；令 4x+60=6x+20，得 40=2x，所以 x=20。"
+        },
+        {
+          "index": 2,
+          "choice": "10 次",
+          "truth": false,
+          "reason": "把 40 除以 4。"
+        },
+        {
+          "index": 3,
+          "choice": "40 次",
+          "truth": false,
+          "reason": "只取截距差作次數。"
+        }
+      ],
+      "misconceptionTarget": "聯立方案同價計算錯",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「比較兩線型方案」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 102,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「比較兩線型方案」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「20 次」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「比較兩線型方案」只有題幹所述的一種解讀。",
+      "difficultyReason": "需聯立兩方案，屬標準。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "4fd1ab5e3a39ecd9a796ffc747e48c98315290a462aecfc9bc493854c929e19a"
+    },
+    {
+      "questionId": "u15-s012-mc05",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "長方形寬固定為 6 公分，長為 x 公分。周長 P 與 x 的關係為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「建立周長線型模型」。",
+      "target": "建立周長線型模型",
+      "choices": [
+        "P=6x",
+        "P=x+12",
+        "P=2x+12",
+        "P=12x+2"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：寫周長 2(長+寬)；代寬 6；展開。因此得到「P=2x+12」。",
+      "explanation": "P=2(x+6)=2x+12。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "寫周長 2(長+寬)"
+        },
+        {
+          "step": 2,
+          "work": "代寬 6"
+        },
+        {
+          "step": 3,
+          "work": "展開"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "P=6x",
+          "truth": false,
+          "reason": "把面積公式當周長。"
+        },
+        {
+          "index": 1,
+          "choice": "P=x+12",
+          "truth": false,
+          "reason": "只把長加兩個寬。"
+        },
+        {
+          "index": 2,
+          "choice": "P=2x+12",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；P=2(x+6)=2x+12。"
+        },
+        {
+          "index": 3,
+          "choice": "P=12x+2",
+          "truth": false,
+          "reason": "交換係數與常數。"
+        }
+      ],
+      "misconceptionTarget": "幾何量轉線型式錯誤",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「建立周長線型模型」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 106,
+      "unitAndRoundingCheck": "「x 公分，P 公分。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「建立周長線型模型」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「P=2x+12」符合；其餘錯因分別記錄於 optionAnalysis。；「x 公分，P 公分。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「建立周長線型模型」只有題幹所述的一種解讀。",
+      "difficultyReason": "需由幾何公式建立線型關係，屬標準。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "6b8ce304aace094c40de8e60dcc7db0f7a06a0b4126053ece5e461347f56258c"
+    },
+    {
+      "questionId": "u15-s012-mc06",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "standard",
+      "type": "mc",
+      "text": "一桶原有 30 公升水，每分鐘流入 4 公升。若容量為 90 公升，幾分鐘後裝滿？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「由線型累積模型反求時間」。",
+      "target": "由線型累積模型反求時間",
+      "choices": [
+        "15 分鐘",
+        "22.5 分鐘",
+        "30 分鐘",
+        "60 分鐘"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：建 V=30+4t；令 V=90；解 t=15。因此得到「15 分鐘」。",
+      "explanation": "模型 V=30+4t；令 V=90，4t=60，t=15。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "建 V=30+4t"
+        },
+        {
+          "step": 2,
+          "work": "令 V=90"
+        },
+        {
+          "step": 3,
+          "work": "解 t=15"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "15 分鐘",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；模型 V=30+4t；令 V=90，4t=60，t=15。"
+        },
+        {
+          "index": 1,
+          "choice": "22.5 分鐘",
+          "truth": false,
+          "reason": "用 90÷4，忽略初始 30。"
+        },
+        {
+          "index": 2,
+          "choice": "30 分鐘",
+          "truth": false,
+          "reason": "把初始量當時間。"
+        },
+        {
+          "index": 3,
+          "choice": "60 分鐘",
+          "truth": false,
+          "reason": "只算需增加 60 卻未除速率。"
+        }
+      ],
+      "misconceptionTarget": "忽略初始量",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「由線型累積模型反求時間」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 110,
+      "unitAndRoundingCheck": "「分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「由線型累積模型反求時間」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「15 分鐘」符合；其餘錯因分別記錄於 optionAnalysis。；「分鐘。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「由線型累積模型反求時間」只有題幹所述的一種解讀。",
+      "difficultyReason": "需扣除初始量後除速率，屬標準。",
+      "literacyContextNecessity": "不適用；本題為 standard 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "d927eaa895ae84451a246f8dab9017a6bffe727bc719ec04bc95b0e60ca452c1"
+    },
+    {
+      "questionId": "u15-s012-mc07",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "某服務 2 次共 110 元，5 次共 200 元，費用呈線型。模型為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「從兩點建立應用模型」。",
+      "target": "從兩點建立應用模型",
+      "choices": [
+        "C=45x+20",
+        "C=30x+50",
+        "C=30x+110",
+        "C=18x+74"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：由兩筆資料求斜率 30；代點求 b=50；寫模型。因此得到「C=30x+50」。",
+      "explanation": "斜率 (200-110)/(5-2)=30；代 x=2：110=60+b，b=50。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "由兩筆資料求斜率 30"
+        },
+        {
+          "step": 2,
+          "work": "代點求 b=50"
+        },
+        {
+          "step": 3,
+          "work": "寫模型"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "C=45x+20",
+          "truth": false,
+          "reason": "用平均 90/2。"
+        },
+        {
+          "index": 1,
+          "choice": "C=30x+50",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；斜率 (200-110)/(5-2)=30；代 x=2：110=60+b，b=50。"
+        },
+        {
+          "index": 2,
+          "choice": "C=30x+110",
+          "truth": false,
+          "reason": "把 110 當截距。"
+        },
+        {
+          "index": 3,
+          "choice": "C=18x+74",
+          "truth": false,
+          "reason": "斜率與截距皆由配湊錯誤。"
+        }
+      ],
+      "misconceptionTarget": "由兩筆觀測建模錯誤",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「從兩點建立應用模型」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 114,
+      "unitAndRoundingCheck": "「x 次，C 元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「從兩點建立應用模型」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「C=30x+50」符合；其餘錯因分別記錄於 optionAnalysis。；「x 次，C 元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「從兩點建立應用模型」只有題幹所述的一種解讀。",
+      "difficultyReason": "需由非零起點兩點求完整模型，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "f628c8cfa6ab164af1667141168648e91072f716169317b2438c718235aa5d0e"
+    },
+    {
+      "questionId": "u15-s012-mc08",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "收益模型 R=80x-600，限制 0≤x≤20 且 x 為整數。若只求此範圍內最大收益，應取哪個 x？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 x 為整數且端點 0、20 均可取。本題的條件審查焦點是「在線型模型限制範圍內找極值」。",
+      "target": "在線型模型限制範圍內找極值",
+      "choices": [
+        "0",
+        "7.5",
+        "10",
+        "20"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：判斷函數遞增；檢查允許範圍 0 到 20；取最大端點 20。因此得到「20」。",
+      "explanation": "斜率 80>0，R 隨 x 增加；在封閉離散範圍內最大值於 x=20。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "判斷函數遞增"
+        },
+        {
+          "step": 2,
+          "work": "檢查允許範圍 0 到 20"
+        },
+        {
+          "step": 3,
+          "work": "取最大端點 20"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "0",
+          "truth": false,
+          "reason": "這是最小端點。"
+        },
+        {
+          "index": 1,
+          "choice": "7.5",
+          "truth": false,
+          "reason": "7.5 是損益平衡點，不是最大。"
+        },
+        {
+          "index": 2,
+          "choice": "10",
+          "truth": false,
+          "reason": "不是上端點。"
+        },
+        {
+          "index": 3,
+          "choice": "20",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；斜率 80>0，R 隨 x 增加；在封閉離散範圍內最大值於 x=20。"
+        }
+      ],
+      "misconceptionTarget": "把零點誤當最大值",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「在線型模型限制範圍內找極值」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 118,
+      "unitAndRoundingCheck": "「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「在線型模型限制範圍內找極值」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 x 為整數且端點 0、20 均可取。；四選項逐一代回或依定義檢查，只有索引 3 的「20」符合；其餘錯因分別記錄於 optionAnalysis。；「不需近似；保留題目指定單位。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「在線型模型限制範圍內找極值」只有題幹所述的一種解讀。",
+      "difficultyReason": "需結合單調性與定義域端點，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "2e596347e857103752885afa4a17891a1791284184be4407adc8bbfbd18a7b6d"
+    },
+    {
+      "questionId": "u15-s012-mc09",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "advanced",
+      "type": "mc",
+      "text": "甲管每分鐘注入 8 公升，乙管每分鐘排出 3 公升，同時開啟且起始水量 50 公升。水量模型為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「建立淨變化線型模型」。",
+      "target": "建立淨變化線型模型",
+      "choices": [
+        "V=50+5t",
+        "V=50+11t",
+        "V=5t",
+        "V=50-5t"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不採用已存答案，重新依題意處理：求淨速率 5；保留初始量 50；寫 V=50+5t。因此得到「V=50+5t」。",
+      "explanation": "淨變化率 8-3=5 公升／分鐘，加上初始 50。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "求淨速率 5"
+        },
+        {
+          "step": 2,
+          "work": "保留初始量 50"
+        },
+        {
+          "step": 3,
+          "work": "寫 V=50+5t"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "V=50+5t",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；淨變化率 8-3=5 公升／分鐘，加上初始 50。"
+        },
+        {
+          "index": 1,
+          "choice": "V=50+11t",
+          "truth": false,
+          "reason": "把流入流出速率相加。"
+        },
+        {
+          "index": 2,
+          "choice": "V=5t",
+          "truth": false,
+          "reason": "漏初始量。"
+        },
+        {
+          "index": 3,
+          "choice": "V=50-5t",
+          "truth": false,
+          "reason": "淨方向符號錯。"
+        }
+      ],
+      "misconceptionTarget": "合成相反方向速率錯誤",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「建立淨變化線型模型」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 122,
+      "unitAndRoundingCheck": "「t 分鐘，V 公升。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「建立淨變化線型模型」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 0 的「V=50+5t」符合；其餘錯因分別記錄於 optionAnalysis。；「t 分鐘，V 公升。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「建立淨變化線型模型」只有題幹所述的一種解讀。",
+      "difficultyReason": "需合成兩個相反速率與初值，屬進階。",
+      "literacyContextNecessity": "不適用；本題為 advanced 層次的純數學或直接表徵任務。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "ce0f8f132d4c9ec03a246801d9a254f78469091adb15cb79f883e9e9f2de26cc"
+    },
+    {
+      "questionId": "u15-s012-mc10",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "太陽能板早上 8 時已累積 1.2 kWh，之後 4 小時內每小時平均增加 0.7 kWh。若以 t 表示 8 時後的小時數，模型為何？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「建立能源累積模型」。",
+      "target": "建立能源累積模型",
+      "choices": [
+        "E=0.7+1.2t",
+        "E=1.2+0.7t，0≤t≤4",
+        "E=0.7t，t≥0",
+        "E=1.2-0.7t"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不採用已存答案，重新依題意處理：定義 t=0 對應 8 時；讀初值 1.2；加斜率並標範圍。因此得到「E=1.2+0.7t，0≤t≤4」。",
+      "explanation": "初始累積量 1.2 是截距，每小時增加 0.7 是斜率；資料只保證 4 小時。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "定義 t=0 對應 8 時"
+        },
+        {
+          "step": 2,
+          "work": "讀初值 1.2"
+        },
+        {
+          "step": 3,
+          "work": "加斜率並標範圍"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "E=0.7+1.2t",
+          "truth": false,
+          "reason": "交換斜率與截距。"
+        },
+        {
+          "index": 1,
+          "choice": "E=1.2+0.7t，0≤t≤4",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；初始累積量 1.2 是截距，每小時增加 0.7 是斜率；資料只保證 4 小時。"
+        },
+        {
+          "index": 2,
+          "choice": "E=0.7t，t≥0",
+          "truth": false,
+          "reason": "漏初值且無限制外推。"
+        },
+        {
+          "index": 3,
+          "choice": "E=1.2-0.7t",
+          "truth": false,
+          "reason": "增加方向寫成下降。"
+        }
+      ],
+      "misconceptionTarget": "忽略模型起點與適用範圍",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「建立能源累積模型」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 126,
+      "unitAndRoundingCheck": "「E 為 kWh，t 為小時。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「建立能源累積模型」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 1 的「E=1.2+0.7t，0≤t≤4」符合；其餘錯因分別記錄於 optionAnalysis。；「E 為 kWh，t 為小時。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「建立能源累積模型」只有題幹所述的一種解讀。",
+      "difficultyReason": "需同時建式與標註模型限制，屬素養。",
+      "literacyContextNecessity": "時間起點與四小時適用範圍決定模型能否正確使用。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "506688cf238538f8842256910fc546fca0d057d4b51fd0d8adc1337eb77346cb"
+    },
+    {
+      "questionId": "u15-s012-mc11",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "班級義賣先有贊助 1500 元，每賣一份餐點淨增加 45 元。目標至少 4200 元，至少要賣幾份？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 x 為非負整數，「至少」包含 4200。本題的條件審查焦點是「用線型模型解最低整數需求」。",
+      "target": "用線型模型解最低整數需求",
+      "choices": [
+        "59 份",
+        "93 份",
+        "120 份",
+        "60 份"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不採用已存答案，重新依題意處理：扣除贊助差額 2700；除 45 得 60；檢查整數與至少。因此得到「60 份」。",
+      "explanation": "1500+45x≥4200，得 45x≥2700，x≥60；份數取整數，60 剛好達標。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "扣除贊助差額 2700"
+        },
+        {
+          "step": 2,
+          "work": "除 45 得 60"
+        },
+        {
+          "step": 3,
+          "work": "檢查整數與至少"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "59 份",
+          "truth": false,
+          "reason": "59 份只有 4155 元。"
+        },
+        {
+          "index": 1,
+          "choice": "93 份",
+          "truth": false,
+          "reason": "把 4200÷45 且忽略贊助。"
+        },
+        {
+          "index": 2,
+          "choice": "120 份",
+          "truth": false,
+          "reason": "重複計算差額。"
+        },
+        {
+          "index": 3,
+          "choice": "60 份",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；1500+45x≥4200，得 45x≥2700，x≥60；份數取整數，60 剛好達標。"
+        }
+      ],
+      "misconceptionTarget": "至少問題未檢查整數邊界",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「用線型模型解最低整數需求」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 130,
+      "unitAndRoundingCheck": "「份。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「用線型模型解最低整數需求」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 x 為非負整數，「至少」包含 4200。；四選項逐一代回或依定義檢查，只有索引 3 的「60 份」符合；其餘錯因分別記錄於 optionAnalysis。；「份。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「用線型模型解最低整數需求」只有題幹所述的一種解讀。",
+      "difficultyReason": "需解不等式並驗證整數邊界，屬素養。",
+      "literacyContextNecessity": "贊助、單份淨額與至少門檻共同決定最低份數。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "67b3007ceaa441980cf25cd3169d479593e608cfcb01063f1f10c745f10898ed"
+    },
+    {
+      "questionId": "u15-s012-mc12",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "difficulty": "literacy",
+      "type": "mc",
+      "text": "列印方案 A：月費 100 元、每頁 1 元；方案 B：無月費、每頁 2.5 元。若預估列印 80 頁，哪個較便宜，差多少？",
+      "givenConditions": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「比較兩個實際方案」。",
+      "target": "比較兩個實際方案",
+      "choices": [
+        "B 較便宜 20 元",
+        "A 較便宜 100 元",
+        "A 較便宜 20 元",
+        "兩者同價"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不採用已存答案，重新依題意處理：分別建 A=100+x；B=2.5x；代 80 並比較。因此得到「A 較便宜 20 元」。",
+      "explanation": "A=100+80=180；B=2.5×80=200；A 少 20 元。",
+      "solutionSteps": [
+        {
+          "step": 1,
+          "work": "分別建 A=100+x"
+        },
+        {
+          "step": 2,
+          "work": "B=2.5x"
+        },
+        {
+          "step": 3,
+          "work": "代 80 並比較"
+        }
+      ],
+      "optionAnalysis": [
+        {
+          "index": 0,
+          "choice": "B 較便宜 20 元",
+          "truth": false,
+          "reason": "比較方向顛倒。"
+        },
+        {
+          "index": 1,
+          "choice": "A 較便宜 100 元",
+          "truth": false,
+          "reason": "只比較月費。"
+        },
+        {
+          "index": 2,
+          "choice": "A 較便宜 20 元",
+          "truth": true,
+          "reason": "此選項與獨立推導的結果一致；A=100+80=180；B=2.5×80=200；A 少 20 元。"
+        },
+        {
+          "index": 3,
+          "choice": "兩者同價",
+          "truth": false,
+          "reason": "交點約 66.7 頁，不是 80 頁同價。"
+        }
+      ],
+      "misconceptionTarget": "只看斜率或截距未算指定用量",
+      "prerequisiteCheck": "先備能力是「能依不等號把輸入放入正確分段，處理包含或不包含的分界點，並計算各段費用或函數值。」本題將此能力用於「比較兩個實際方案」，不要求函數合成、反函數或其他未鎖定的未來單元知識。",
+      "estimatedTimeSeconds": 134,
+      "unitAndRoundingCheck": "「元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。針對「比較兩個實際方案」，答案保留題幹要求的符號、單位與精確值，不自行近似。",
+      "ambiguityAndBoundaryAudit": "題目以「依題目條件判斷，不另作未說明假設。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。；四選項逐一代回或依定義檢查，只有索引 2 的「A 較便宜 20 元」符合；其餘錯因分別記錄於 optionAnalysis。；「元。」已明示；題幹中的代名詞、比較方向與端點不會導致第二種合理解讀。邊界稽核另確認「比較兩個實際方案」只有題幹所述的一種解讀。",
+      "difficultyReason": "需計算兩模型並解釋價差，屬素養。",
+      "literacyContextNecessity": "固定月費與每頁費同時影響 80 頁的選擇，情境是必要的。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "c452ad7a77536145a6ffd78a62e48cf59734d17cf4ddfea980086f41775b7ae4"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u15-s012-cr01",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "type": "constructed-response",
+      "prompt": "方案 A：固定費 150 元，每次 12 元；方案 B：固定費 30 元，每次 20 元。建立兩函數，求同價次數，並判斷 10 次與 20 次各應選哪個方案。",
+      "requiredWork": "須建式、聯立、兩側測試並以費用說明。",
+      "standardSolution": "A=12x+150，B=20x+30。同價：12x+150=20x+30 ⇒ 120=8x ⇒ x=15。10 次：A=270、B=230，選 B；20 次：A=390、B=430，選 A。",
+      "alternativeMethod": "可用差 A-B=120-8x；x<15 時差正，B 較便宜；x>15 時差負，A 較便宜，再檢查 10、20。",
+      "reasoningSteps": [
+        {
+          "step": 1,
+          "work": "建立兩模型"
+        },
+        {
+          "step": 2,
+          "work": "求交點 x=15"
+        },
+        {
+          "step": 3,
+          "work": "比較 10 次"
+        },
+        {
+          "step": 4,
+          "work": "比較 20 次"
+        }
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "建立 A=12x+150、B=20x+30，求同價 x=15，並正確判定 10 次選 B、20 次選 A，費用計算完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩模型與交點正確，但 10 次或 20 次其中一個比較有單一計算錯；或比較皆正確而漏寫一個實際費用。"
+        },
+        {
+          "score": 1,
+          "criteria": "只正確建立兩個模型，或只求得 x=15 而未完成兩個指定次數的方案選擇。"
+        },
+        {
+          "score": 0,
+          "criteria": "交換固定費與每次費用，導致模型無法對應方案，且後續同價與比較均無有效依據。"
+        }
+      ],
+      "partialCreditRules": [
+        "模型、交點、10 次比較、20 次比較可分項採計；單一比較錯不取消模型與另一比較。",
+        "若同價 x=15 正確但未代入 10、20，只完成部分要求，最高 1 分。"
+      ],
+      "followThroughPolicy": "本題延續計分依以下具體規則處理：模型、交點、10 次比較、20 次比較可分項採計；單一比較錯不取消模型與另一比較。；若同價 x=15 正確但未代入 10、20，只完成部分要求，最高 1 分。",
+      "unitAndNotationRules": "沿用題幹的變數、序對、不等號與計量單位；作答必須清楚呈現以下要求中的符號與單位：須建式、聯立、兩側測試並以費用說明。",
+      "answerOnlyPolicy": "只寫最終答案而未呈現必要方法時，依本題 1 分規準處理：只正確建立兩個模型，或只求得 x=15 而未完成兩個指定次數的方案選擇。；答案錯且無可辨識過程則為 0 分。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "recomputedConclusion": "A=12x+150，B=20x+30。同價：12x+150=20x+30 ⇒ 120=8x ⇒ x=15。10 次：A=270、B=230，選 B；20 次：A=390、B=430，選 A。",
+        "reviewNote": "獨立重做 u15-s012-cr01 時依序檢查 建立兩模型、求交點 x=15、比較 10 次、比較 20 次；標準解與替代法在允許範圍內得到一致結論，量綱與端點亦符合題意。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "ab89d3e845634dd4ec930fe6ae9d8bb18858c18af43a7ca057c5595887554d7b"
+    },
+    {
+      "questionId": "u15-s012-cr02",
+      "unitId": "u15",
+      "numericUnitId": 15,
+      "unitTitle": "函數及其圖形",
+      "topicId": "u15-applications",
+      "skillId": "linear-function-application",
+      "skillSlot": "s012",
+      "skillTitle": "線型函數應用",
+      "type": "constructed-response",
+      "prompt": "義賣已有贊助 800 元，每售一份淨收入 55 元，場地支出 3000 元。至少售出幾份才能使總收入不少於支出？並檢查前一個整數是否達標。",
+      "requiredWork": "須建立不等式、取最小整數並做邊界檢查。",
+      "standardSolution": "800+55x≥3000 ⇒ 55x≥2200 ⇒ x≥40。因此至少 40 份。檢查 39 份：800+2145=2945<3000；40 份：3000，剛好達標。",
+      "alternativeMethod": "可先算尚缺 2200 元，再用 2200÷55=40。",
+      "reasoningSteps": [
+        {
+          "step": 1,
+          "work": "建立至少不等式"
+        },
+        {
+          "step": 2,
+          "work": "求 x≥40"
+        },
+        {
+          "step": 3,
+          "work": "檢查 x=39 不足"
+        },
+        {
+          "step": 4,
+          "work": "檢查 x=40 達標"
+        }
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "建立 800+55x≥3000，解得 x≥40，結論至少 40 份，並檢查 39 份為 2945、40 份為 3000。"
+        },
+        {
+          "score": 2,
+          "criteria": "不等式與最小份數 40 正確，但漏驗 39 或 40 其中一個；或只有一次非核心乘加錯而門檻方法清楚。"
+        },
+        {
+          "score": 1,
+          "criteria": "只算出尚缺 2200 元或寫出 55x≥2200，尚未完成最小整數與前一整數檢查。"
+        },
+        {
+          "score": 0,
+          "criteria": "忽略已有贊助或把「不少於」寫成相反不等式，且沒有可採計的門檻判斷。"
+        }
+      ],
+      "partialCreditRules": [
+        "若不等式正確但 2200÷55 算錯，後續以向上取整及前一整數檢查一致，可保留方法分，最高 2 分。",
+        "未檢查 39 份即使最小值 40 正確，最高 2 分。"
+      ],
+      "followThroughPolicy": "本題延續計分依以下具體規則處理：若不等式正確但 2200÷55 算錯，後續以向上取整及前一整數檢查一致，可保留方法分，最高 2 分。；未檢查 39 份即使最小值 40 正確，最高 2 分。",
+      "unitAndNotationRules": "沿用題幹的變數、序對、不等號與計量單位；作答必須清楚呈現以下要求中的符號與單位：須建立不等式、取最小整數並做邊界檢查。",
+      "answerOnlyPolicy": "只寫最終答案而未呈現必要方法時，依本題 1 分規準處理：只算出尚缺 2200 元或寫出 55x≥2200，尚未完成最小整數與前一整數檢查。；答案錯且無可辨識過程則為 0 分。",
+      "figureId": null,
+      "drawingSpecRef": null,
+      "independentReview": {
+        "reviewedAt": "2026-07-12T16:00:00+08:00",
+        "decision": "pass",
+        "recomputedConclusion": "800+55x≥3000 ⇒ 55x≥2200 ⇒ x≥40。因此至少 40 份。檢查 39 份：800+2145=2945<3000；40 份：3000，剛好達標。",
+        "reviewNote": "獨立重做 u15-s012-cr02 時依序檢查 建立至少不等式、求 x≥40、檢查 x=39 不足、檢查 x=40 達標；標準解與替代法在允許範圍內得到一致結論，量綱與端點亦符合題意。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "sorted-keys-json-utf8-v1",
+      "contentSha256": "833f3b755bd716cde17910e2b2363b0b26eb11d698b4fb670010b3a5856856d9"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "016-u15-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/016-u15-complete/units/u15/s012"
+}

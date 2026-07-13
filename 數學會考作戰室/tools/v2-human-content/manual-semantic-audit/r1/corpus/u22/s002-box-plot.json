@@ -1,0 +1,1249 @@
+{
+  "slot": "s002",
+  "skillId": "box-plot",
+  "topicId": "u22-quartiles",
+  "title": "盒狀圖：由五數摘要繪製盒狀圖並理解箱體與鬚線。",
+  "lecture": {
+    "lectureId": "u22-s002-lecture-r1",
+    "unitId": "u22",
+    "numericUnitId": 22,
+    "topicId": "u22-quartiles",
+    "skillId": "box-plot",
+    "lockedSkillOrder": 2,
+    "title": "盒狀圖：由五數摘要繪製盒狀圖並理解箱體與鬚線。",
+    "originalLockedTitle": "盒狀圖",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能由五數摘要畫水平盒狀圖。",
+      "能辨認箱體、中位數線與左右鬚線。",
+      "能在有刻度數軸上正確定位。",
+      "能檢查圖形是否洩漏答案或誤用比例。"
+    ],
+    "prerequisiteSkillIds": [
+      "quartile-calculation"
+    ],
+    "prerequisiteBridge": "以前一技能算出的Q1、Q2、Q3與端點為輸入。",
+    "glossary": [
+      {
+        "term": "五數摘要",
+        "definition": "最小值、Q1、中位數、Q3、最大值。"
+      },
+      {
+        "term": "箱體",
+        "definition": "從Q1延伸到Q3的長方形。"
+      },
+      {
+        "term": "鬚線",
+        "definition": "由最小值連到Q1及由Q3連到最大值的線段。"
+      },
+      {
+        "term": "中位數線",
+        "definition": "箱內位於Q2座標的線。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "min≤Q1≤Q2≤Q3≤max",
+        "meaning": "五數合法順序。"
+      },
+      {
+        "symbol": "箱寬=Q3-Q1",
+        "meaning": "即IQR。"
+      },
+      {
+        "symbol": "總跨度=max-min",
+        "meaning": "即全距。"
+      }
+    ],
+    "conceptNarrative": [
+      "盒狀圖不是把每一筆資料畫出來，而是用五個位置量壓縮分布。",
+      "水平盒狀圖通常數值由左向右增加；垂直圖則由下向上增加。",
+      "箱體只畫Q1到Q3，中位數線在箱內，最小值和最大值在鬚線末端。",
+      "若數軸每格代表不同數值，必須先依刻度定位，不能只數格子。",
+      "五數可重合，因此中位數線可能貼在箱體邊界，鬚線也可能長度為0。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "標準盒狀圖",
+        "statement": "以五數摘要呈現位置與分散的圖。"
+      },
+      {
+        "name": "五數重合",
+        "statement": "當資料重複時，相鄰構件可以在同一座標。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "左鬚長=Q1-min",
+        "conditions": [
+          "水平圖左側外段。"
+        ],
+        "meaning": "水平圖左側外段。"
+      },
+      {
+        "formula": "箱體左半=Q2-Q1",
+        "conditions": [
+          "中間第二四分位區段。"
+        ],
+        "meaning": "中間第二四分位區段。"
+      },
+      {
+        "formula": "箱體右半=Q3-Q2",
+        "conditions": [
+          "中間第三四分位區段。"
+        ],
+        "meaning": "中間第三四分位區段。"
+      },
+      {
+        "formula": "右鬚長=max-Q3",
+        "conditions": [
+          "高端外段。"
+        ],
+        "meaning": "高端外段。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能把最小值到最大值整段畫成箱體。",
+      "不能用平均數取代中位數線。",
+      "不同刻度的兩圖不可直接比較格數。",
+      "未提供離群值繪法時，不自行把端點改成內圍欄。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "取得五數",
+        "check": "依固定順序寫出。"
+      },
+      {
+        "step": 2,
+        "instruction": "畫數軸",
+        "check": "設定範圍與等距刻度。"
+      },
+      {
+        "step": 3,
+        "instruction": "畫箱體",
+        "check": "在Q1、Q3處立邊並連成箱。"
+      },
+      {
+        "step": 4,
+        "instruction": "畫中位數線",
+        "check": "在Q2處畫線。"
+      },
+      {
+        "step": 5,
+        "instruction": "畫鬚線",
+        "check": "連到最小值與最大值，再核對座標。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "五數3、7、9、12、18",
+        "solutionSteps": [
+          "箱體7到12，中位數線9，鬚線到3與18。"
+        ],
+        "answer": "箱體7到12，中位數線9，鬚線到3與18。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "五數5、5、8、11、11",
+        "solutionSteps": [
+          "左鬚與右鬚長度均0，圖仍合法。"
+        ],
+        "answer": "左鬚與右鬚長度均0，圖仍合法。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "數軸每格2，Q3=18",
+        "solutionSteps": [
+          "Q3必定位在標18的刻度，而不是第18格。"
+        ],
+        "answer": "Q3必定位在標18的刻度，而不是第18格。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把五數五個點等距排列",
+        "why": "盒狀圖位置由數值比例決定。",
+        "correction": "盒狀圖位置由數值比例決定。"
+      },
+      {
+        "mistake": "箱內線畫在箱中央",
+        "why": "中位數未必是Q1與Q3的平均。",
+        "correction": "中位數未必是Q1與Q3的平均。"
+      },
+      {
+        "mistake": "漏畫鬚線端帽",
+        "why": "會使最小值與最大值不清楚。",
+        "correction": "會使最小值與最大值不清楚。"
+      },
+      {
+        "mistake": "把圖寬當資料筆數",
+        "why": "標準盒狀圖不顯示樣本數。",
+        "correction": "標準盒狀圖不顯示樣本數。"
+      }
+    ],
+    "selfCheck": [
+      "箱體端點是否為Q1與Q3？",
+      "中位數線是否在Q2座標？",
+      "鬚線是否連到min與max？",
+      "各段長度是否符合相鄰差？",
+      "圖是否標示不按比例時的警語？"
+    ],
+    "summary": [
+      "盒狀圖由五數摘要構成。",
+      "箱寬是IQR，總跨度是全距。",
+      "刻度決定位置，不是構件順序等距。",
+      "相鄰構件可以重合。"
+    ],
+    "connections": {
+      "previous": "以前一技能算出的Q1、Q2、Q3與端點為輸入。",
+      "next": [
+        "下一技能從盒狀圖作有限且正確的分布判讀。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u22-boxplot-basic"
+    ],
+    "figureAccessibility": [
+      {
+        "figureId": "fig-u22-boxplot-basic",
+        "altText": "水平盒狀圖，數軸4到26，最小值4、第一四分位數9、中位數13、第三四分位數18、最大值26。"
+      }
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u22-s002-v001",
+        "u22-s002-v002",
+        "u22-s002-v003",
+        "u22-s002-v004",
+        "u22-s002-v005",
+        "u22-s002-v006",
+        "u22-s002-v007",
+        "u22-s002-v008",
+        "u22-s002-v009",
+        "u22-s002-v010",
+        "u22-s002-v011",
+        "u22-s002-v012"
+      ],
+      "constructedResponseIds": [
+        "u22-s002-cr001",
+        "u22-s002-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "skillSpecificReviewEvidence": "以三組五數手動換算各段長度，確認箱體與鬚線未互換；檢查重合構件與刻度案例後，圖形仍可唯一定位。",
+      "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+      "contentBoundary": "由五數摘要繪製盒狀圖並理解箱體與鬚線。",
+      "reviewVersion": "human-lecture-review-u22-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "e58586a523ad81de260e8c77db690cd98aee8165ee65dca9c1e94dcdf3daca3e"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u22-s002-v001",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "盒狀圖的箱子左端通常表示哪一個量？",
+      "text": "盒狀圖的箱子左端通常表示哪一個量？",
+      "givenConditions": [],
+      "target": "辨識盒狀圖基本構件",
+      "choices": [
+        "最小值",
+        "Q1",
+        "中位數",
+        "Q3"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "標準水平盒狀圖由左至右為最小值、Q1、中位數、Q3、最大值，因此箱子左端是Q1。",
+      "explanation": "標準水平盒狀圖由左至右為最小值、Q1、中位數、Q3、最大值，因此箱子左端是Q1。",
+      "steps": [
+        "回想五數由小到大的順序。",
+        "辨認箱子左邊界。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "最小值",
+          "truth": false,
+          "reason": "最小值位於左鬚端。"
+        },
+        {
+          "choice": "Q1",
+          "truth": true,
+          "reason": "正確。獨立重算：標準水平盒狀圖由左至右為最小值、Q1、中位數、Q3、最大值，因此箱子左端是Q1。"
+        },
+        {
+          "choice": "中位數",
+          "truth": false,
+          "reason": "中位數是箱內的線。"
+        },
+        {
+          "choice": "Q3",
+          "truth": false,
+          "reason": "Q3是箱子右端。"
+        }
+      ],
+      "misconceptionTarget": "把箱子端點與鬚線端點混淆。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "採水平且數軸向右增加的盒狀圖。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：辨識盒狀圖基本構件",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "辨識盒狀圖基本構件",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "03755cceb085a4be8125a2dd5587558c60fe650f141b2cfbc41393604c32ce95"
+    },
+    {
+      "questionId": "u22-s002-v002",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某組資料的五數摘要為 3、7、9、12、18。畫水平盒狀圖時，箱體應從哪裡延伸到哪裡？",
+      "text": "某組資料的五數摘要為 3、7、9、12、18。畫水平盒狀圖時，箱體應從哪裡延伸到哪裡？",
+      "givenConditions": [],
+      "target": "由五數摘要決定箱體",
+      "choices": [
+        "3 到 18",
+        "3 到 9",
+        "7 到 12",
+        "9 到 18"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "箱體的兩端是Q1與Q3，即7到12；最小值3與最大值18用鬚線連接。",
+      "explanation": "箱體的兩端是Q1與Q3，即7到12；最小值3與最大值18用鬚線連接。",
+      "steps": [
+        "辨認五數順序。",
+        "取第二與第四個數作箱體端點。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3 到 18",
+          "truth": false,
+          "reason": "這是整個鬚線範圍。"
+        },
+        {
+          "choice": "3 到 9",
+          "truth": false,
+          "reason": "把最小值到中位數當箱體。"
+        },
+        {
+          "choice": "7 到 12",
+          "truth": true,
+          "reason": "正確。獨立重算：箱體的兩端是Q1與Q3，即7到12；最小值3與最大值18用鬚線連接。"
+        },
+        {
+          "choice": "9 到 18",
+          "truth": false,
+          "reason": "把中位數到最大值當箱體。"
+        }
+      ],
+      "misconceptionTarget": "把全距畫成箱體。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "五數已依最小值、Q1、Q2、Q3、最大值順序提供。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：由五數摘要決定箱體",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "由五數摘要決定箱體",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "4daf6f7a88cecd307dc5adea2b1a1549e439cfae15c5a6c25c0f31a7270d6905"
+    },
+    {
+      "questionId": "u22-s002-v003",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "盒狀圖中，箱內的一條直線表示什麼？",
+      "text": "盒狀圖中，箱內的一條直線表示什麼？",
+      "givenConditions": [],
+      "target": "辨識中位數標記",
+      "choices": [
+        "平均數",
+        "眾數",
+        "最大值",
+        "中位數"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "盒狀圖以箱內線標示第二四分位數，也就是中位數。",
+      "explanation": "盒狀圖以箱內線標示第二四分位數，也就是中位數。",
+      "steps": [
+        "辨認Q2的圖形位置。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "平均數",
+          "truth": false,
+          "reason": "標準盒狀圖不一定標平均數。"
+        },
+        {
+          "choice": "眾數",
+          "truth": false,
+          "reason": "眾數不由五數摘要決定。"
+        },
+        {
+          "choice": "最大值",
+          "truth": false,
+          "reason": "最大值在鬚線末端。"
+        },
+        {
+          "choice": "中位數",
+          "truth": true,
+          "reason": "正確。獨立重算：盒狀圖以箱內線標示第二四分位數，也就是中位數。"
+        }
+      ],
+      "misconceptionTarget": "把常見集中量都誤認為箱內線。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "題目指標準五數盒狀圖。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：辨識中位數標記",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "辨識中位數標記",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "32c2e89c4579fbb81f0986abbb1db3c60d67d4db71f12ce98fd7d73dceddb742"
+    },
+    {
+      "questionId": "u22-s002-v004",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "五數摘要為 2、5、8、11、17。下列哪一組線段長度正確？",
+      "text": "五數摘要為 2、5、8、11、17。下列哪一組線段長度正確？",
+      "givenConditions": [],
+      "target": "計算盒狀圖各段長度",
+      "choices": [
+        "左鬚3，箱寬6，右鬚6",
+        "左鬚5，箱寬3，右鬚6",
+        "左鬚3，箱寬9，右鬚6",
+        "左鬚3，箱寬6，右鬚17"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "左鬚=5-2=3，箱寬=11-5=6，右鬚=17-11=6。",
+      "explanation": "左鬚=5-2=3，箱寬=11-5=6，右鬚=17-11=6。",
+      "steps": [
+        "依相鄰五數相減。",
+        "分別求三段長度。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "左鬚3，箱寬6，右鬚6",
+          "truth": true,
+          "reason": "正確。獨立重算：左鬚=5-2=3，箱寬=11-5=6，右鬚=17-11=6。"
+        },
+        {
+          "choice": "左鬚5，箱寬3，右鬚6",
+          "truth": false,
+          "reason": "左鬚應是5-2，不是Q1本身。"
+        },
+        {
+          "choice": "左鬚3，箱寬9，右鬚6",
+          "truth": false,
+          "reason": "箱寬應是11-5。"
+        },
+        {
+          "choice": "左鬚3，箱寬6，右鬚17",
+          "truth": false,
+          "reason": "右鬚應是17-11。"
+        }
+      ],
+      "misconceptionTarget": "把座標值直接當線段長度。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "數軸等距且五數遞增。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：計算盒狀圖各段長度",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "計算盒狀圖各段長度",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "4738c1772cd6814b08adef6e97d2c4717d77b999005d3a0a2c5050e25a72b3ca"
+    },
+    {
+      "questionId": "u22-s002-v005",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "若一盒狀圖的最小值為10、Q1=14、中位數=20、Q3=23、最大值=31，則整個圖在數軸上跨越多少單位？",
+      "text": "若一盒狀圖的最小值為10、Q1=14、中位數=20、Q3=23、最大值=31，則整個圖在數軸上跨越多少單位？",
+      "givenConditions": [],
+      "target": "由圖的兩端求全距",
+      "choices": [
+        "17",
+        "21",
+        "11",
+        "31"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "整個圖的跨度是最大值減最小值，31-10=21。",
+      "explanation": "整個圖的跨度是最大值減最小值，31-10=21。",
+      "steps": [
+        "找兩端鬚線座標10與31。",
+        "相減得21。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "17",
+          "truth": false,
+          "reason": "用Q3-Q1，只算箱寬。"
+        },
+        {
+          "choice": "21",
+          "truth": true,
+          "reason": "正確。獨立重算：整個圖的跨度是最大值減最小值，31-10=21。"
+        },
+        {
+          "choice": "11",
+          "truth": false,
+          "reason": "用中位數減最小值。"
+        },
+        {
+          "choice": "31",
+          "truth": false,
+          "reason": "把最大值本身當全距。"
+        }
+      ],
+      "misconceptionTarget": "把IQR當作盒狀圖總跨度。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "所有位置在同一數軸。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：由圖的兩端求全距",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "由圖的兩端求全距",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "35acd6e3ac10f69a1059c3e36e4629830f46b65f53fb63c4e579a9b36744593a"
+    },
+    {
+      "questionId": "u22-s002-v006",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某盒狀圖的箱體從 24 到 40，中位數線在 31。下列敘述何者一定正確？",
+      "text": "某盒狀圖的箱體從 24 到 40，中位數線在 31。下列敘述何者一定正確？",
+      "givenConditions": [],
+      "target": "從部分圖形資訊推得必然量",
+      "choices": [
+        "平均數為31",
+        "最大值為40",
+        "IQR=16",
+        "最小值為24"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "箱體兩端為Q1=24與Q3=40，所以IQR=40-24=16。",
+      "explanation": "箱體兩端為Q1=24與Q3=40，所以IQR=40-24=16。",
+      "steps": [
+        "辨認箱體端點。",
+        "計算Q3-Q1。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "平均數為31",
+          "truth": false,
+          "reason": "盒狀圖不提供平均數。"
+        },
+        {
+          "choice": "最大值為40",
+          "truth": false,
+          "reason": "40是Q3，不一定是最大值。"
+        },
+        {
+          "choice": "IQR=16",
+          "truth": true,
+          "reason": "正確。獨立重算：箱體兩端為Q1=24與Q3=40，所以IQR=40-24=16。"
+        },
+        {
+          "choice": "最小值為24",
+          "truth": false,
+          "reason": "24是Q1，不一定是最小值。"
+        }
+      ],
+      "misconceptionTarget": "把箱體端點當最小值與最大值。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "題目未提供鬚線端點，因此只能確定IQR。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：從部分圖形資訊推得必然量",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "從部分圖形資訊推得必然量",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "a557c75ad6e041f53c760e514a0383ada540edc0370d567db051fb160ea4075d"
+    },
+    {
+      "questionId": "u22-s002-v007",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "五數摘要為 1、4、9、15、20。若將所有資料都加 3，新的盒狀圖五數摘要為何？",
+      "text": "五數摘要為 1、4、9、15、20。若將所有資料都加 3，新的盒狀圖五數摘要為何？",
+      "givenConditions": [],
+      "target": "理解盒狀圖平移",
+      "choices": [
+        "1、7、12、18、20",
+        "3、6、11、17、22",
+        "4、7、9、18、23",
+        "4、7、12、18、23"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "所有觀測值加3時，每個位置量都加3，因此五數依序變為4、7、12、18、23。",
+      "explanation": "所有觀測值加3時，每個位置量都加3，因此五數依序變為4、7、12、18、23。",
+      "steps": [
+        "對五個位置量各加3。",
+        "保持順序與各段長度不變。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1、7、12、18、20",
+          "truth": false,
+          "reason": "只移動箱體而未移動鬚線。"
+        },
+        {
+          "choice": "3、6、11、17、22",
+          "truth": false,
+          "reason": "把每個數加2。"
+        },
+        {
+          "choice": "4、7、9、18、23",
+          "truth": false,
+          "reason": "未移動中位數。"
+        },
+        {
+          "choice": "4、7、12、18、23",
+          "truth": true,
+          "reason": "正確。獨立重算：所有觀測值加3時，每個位置量都加3，因此五數依序變為4、7、12、18、23。"
+        }
+      ],
+      "misconceptionTarget": "只平移部分構件。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "全體資料做相同加法，不改變分散長度。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：理解盒狀圖平移",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "理解盒狀圖平移",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "d589f55d5b1a12cbe6210d8c14d7951a2eae4aa56fee0e3ebeca492328d39e98"
+    },
+    {
+      "questionId": "u22-s002-v008",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "一盒狀圖五數為 5、8、12、18、27。若數軸每小格代表2，Q3應畫在哪一個刻度？",
+      "text": "一盒狀圖五數為 5、8、12、18、27。若數軸每小格代表2，Q3應畫在哪一個刻度？",
+      "givenConditions": [],
+      "target": "依比例數軸定位Q3",
+      "choices": [
+        "18",
+        "9",
+        "16",
+        "20"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "刻度值仍表示原數值；每格代表2只是決定間距，Q3的座標是18。",
+      "explanation": "刻度值仍表示原數值；每格代表2只是決定間距，Q3的座標是18。",
+      "steps": [
+        "確認Q3數值為18。",
+        "按每格2定位到18刻度。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "18",
+          "truth": true,
+          "reason": "正確。獨立重算：刻度值仍表示原數值；每格代表2只是決定間距，Q3的座標是18。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "把18除以2後當座標值。"
+        },
+        {
+          "choice": "16",
+          "truth": false,
+          "reason": "少數一格。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "多數一格。"
+        }
+      ],
+      "misconceptionTarget": "把「格數」與「座標值」混為一談。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "數軸起點未指定，但刻度標值決定位置。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：依比例數軸定位Q3",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "依比例數軸定位Q3",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "1a80bfe714129be5d835d934c693aa9c88a17ef02f9f9d512ed763db1bcab85b"
+    },
+    {
+      "questionId": "u22-s002-v009",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某盒狀圖的左鬚長4、箱體左半長7、箱體右半長3、右鬚長6，最小值為10。最大值是多少？",
+      "text": "某盒狀圖的左鬚長4、箱體左半長7、箱體右半長3、右鬚長6，最小值為10。最大值是多少？",
+      "givenConditions": [],
+      "target": "由各段長反推端點",
+      "choices": [
+        "20",
+        "30",
+        "24",
+        "34"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "由最小值起依序加4+7+3+6，共20，因此最大值=10+20=30。",
+      "explanation": "由最小值起依序加4+7+3+6，共20，因此最大值=10+20=30。",
+      "steps": [
+        "總長4+7+3+6=20。",
+        "10+20=30。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "只加箱體兩半。"
+        },
+        {
+          "choice": "30",
+          "truth": true,
+          "reason": "正確。獨立重算：由最小值起依序加4+7+3+6，共20，因此最大值=10+20=30。"
+        },
+        {
+          "choice": "24",
+          "truth": false,
+          "reason": "漏加右鬚。"
+        },
+        {
+          "choice": "34",
+          "truth": false,
+          "reason": "重複加左鬚。"
+        }
+      ],
+      "misconceptionTarget": "未把四段全部納入。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "各段沿同一方向且長度為非負。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：由各段長反推端點",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "由各段長反推端點",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "b868533eb7337feefed079d52eb0b587d0910f2e86dea2199351b29d674c34de"
+    },
+    {
+      "questionId": "u22-s002-v010",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "圖書館記錄一週借閱冊數，五數摘要為 18、25、31、40、58。若要畫盒狀圖，下列哪一項繪圖敘述正確？",
+      "text": "圖書館記錄一週借閱冊數，五數摘要為 18、25、31、40、58。若要畫盒狀圖，下列哪一項繪圖敘述正確？",
+      "givenConditions": [],
+      "target": "把借閱統計轉成盒狀圖",
+      "choices": [
+        "在18到58畫箱體",
+        "在25到31畫箱體",
+        "在25到40畫箱體，31處畫中位數線",
+        "在31到58畫箱體"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "箱體由Q1=25到Q3=40，中位數線位於31；18與58是鬚線端點。",
+      "explanation": "箱體由Q1=25到Q3=40，中位數線位於31；18與58是鬚線端點。",
+      "steps": [
+        "依五數角色分配圖形。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "在18到58畫箱體",
+          "truth": false,
+          "reason": "把全距畫成箱體。"
+        },
+        {
+          "choice": "在25到31畫箱體",
+          "truth": false,
+          "reason": "只畫箱體左半。"
+        },
+        {
+          "choice": "在25到40畫箱體，31處畫中位數線",
+          "truth": true,
+          "reason": "正確。獨立重算：箱體由Q1=25到Q3=40，中位數線位於31；18與58是鬚線端點。"
+        },
+        {
+          "choice": "在31到58畫箱體",
+          "truth": false,
+          "reason": "把中位數到最大值畫成箱體。"
+        }
+      ],
+      "misconceptionTarget": "沒有把五數摘要轉成箱體與鬚線。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "借閱量單位為冊，圖上座標仍以冊表示。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "五數摘要順序明確。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：把借閱統計轉成盒狀圖",
+      "literacyContextNecessity": "盒狀圖可濃縮一週借閱分布，圖形構件與數值都有實際意義。",
+      "visualMode": "figure",
+      "figureId": "fig-u22-boxplot-basic",
+      "drawingSpecReference": "fig-u22-boxplot-basic",
+      "authoringIntent": "把借閱統計轉成盒狀圖",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "9150171fd0f84cad60d74048d758c337d83b218831a3739433ba6aa701ae30c8"
+    },
+    {
+      "questionId": "u22-s002-v011",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某物流站包裹重量的五數摘要是 1.2、2.0、2.6、3.5、5.1 公斤。盒狀圖的箱寬與全距相差多少公斤？",
+      "text": "某物流站包裹重量的五數摘要是 1.2、2.0、2.6、3.5、5.1 公斤。盒狀圖的箱寬與全距相差多少公斤？",
+      "givenConditions": [],
+      "target": "比較圖形兩種寬度",
+      "choices": [
+        "1.5",
+        "3.9",
+        "5.4",
+        "2.4"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "箱寬=3.5-2.0=1.5公斤；全距=5.1-1.2=3.9公斤；相差3.9-1.5=2.4公斤。",
+      "explanation": "箱寬=3.5-2.0=1.5公斤；全距=5.1-1.2=3.9公斤；相差3.9-1.5=2.4公斤。",
+      "steps": [
+        "算IQR 1.5。",
+        "算全距3.9。",
+        "相減得2.4。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1.5",
+          "truth": false,
+          "reason": "只算箱寬3.5-2.0。"
+        },
+        {
+          "choice": "3.9",
+          "truth": false,
+          "reason": "只算全距5.1-1.2。"
+        },
+        {
+          "choice": "5.4",
+          "truth": false,
+          "reason": "把箱寬與全距相加。"
+        },
+        {
+          "choice": "2.4",
+          "truth": true,
+          "reason": "正確。獨立重算：箱寬=3.5-2.0=1.5公斤；全距=5.1-1.2=3.9公斤；相差3.9-1.5=2.4公斤。"
+        }
+      ],
+      "misconceptionTarget": "只算其中一個分散量就作答。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "所有重量皆為公斤，差值也是公斤。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "小數皆為精確到0.1公斤的摘要值。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：比較圖形兩種寬度",
+      "literacyContextNecessity": "物流重量需要同時看中段與整體跨度。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "比較圖形兩種寬度",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "254437e1d06b9bc288addce3c15fa80dd7b97d8dd377510c13f7fc0820b00f27"
+    },
+    {
+      "questionId": "u22-s002-v012",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某校跑步成績五數摘要為 52、58、61、66、80 秒。若數軸由左向右數值增加，哪一段在圖上最長？",
+      "text": "某校跑步成績五數摘要為 52、58、61、66、80 秒。若數軸由左向右數值增加，哪一段在圖上最長？",
+      "givenConditions": [],
+      "target": "判斷盒狀圖最長區段",
+      "choices": [
+        "Q3 到最大值",
+        "最小值到Q1",
+        "Q1到中位數",
+        "中位數到Q3"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "四段長依序為6、3、5、14秒，所以Q3到最大值最長。",
+      "explanation": "四段長依序為6、3、5、14秒，所以Q3到最大值最長。",
+      "steps": [
+        "計算四段相鄰差。",
+        "比較6、3、5、14。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "Q3 到最大值",
+          "truth": true,
+          "reason": "正確。獨立重算：四段長依序為6、3、5、14秒，所以Q3到最大值最長。"
+        },
+        {
+          "choice": "最小值到Q1",
+          "truth": false,
+          "reason": "長度58-52=6。"
+        },
+        {
+          "choice": "Q1到中位數",
+          "truth": false,
+          "reason": "長度61-58=3。"
+        },
+        {
+          "choice": "中位數到Q3",
+          "truth": false,
+          "reason": "長度66-61=5。"
+        }
+      ],
+      "misconceptionTarget": "只憑圖形名稱猜，不以數值算長度。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：quartile-calculation。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "時間單位皆為秒。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "五數摘要皆以秒且遞增。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：判斷盒狀圖最長區段",
+      "literacyContextNecessity": "跑步成績的長尾可由右鬚長度辨識。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "判斷盒狀圖最長區段",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "27cee933f219aa258e2fd5e67642d11ea1acd6eb58434a4e80a1a7d54b7370b0"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u22-s002-cr001",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "某資料五數摘要為 4、9、13、18、26。請在數軸上畫出水平盒狀圖，並標出箱體、Q2與兩端鬚線。",
+      "requiredWork": [
+        "數軸需有等距刻度。",
+        "箱體由9到18。",
+        "中位數線在13，鬚線到4與26。"
+      ],
+      "standardSolution": [
+        "先畫涵蓋4到26的數軸。",
+        "在9與18畫箱體左右邊，在13畫箱內中位數線。",
+        "由箱體左端連至4、右端連至26，端點加短直線。"
+      ],
+      "reasoningSteps": [
+        "先畫涵蓋4到26的數軸。",
+        "在9與18畫箱體左右邊，在13畫箱內中位數線。",
+        "由箱體左端連至4、右端連至26，端點加短直線。"
+      ],
+      "alternativeMethods": [
+        "可用文字座標規格代替手繪：min=4、Q1=9、Q2=13、Q3=18、max=26，所有位置按同一比例。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "五個座標、箱體、中位數線、兩鬚線與刻度比例全部正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "五數位置全對但漏一個端帽或圖形標示小缺漏。"
+        },
+        {
+          "score": 1,
+          "criteria": "能正確標出箱體9到18與中位數13，但鬚線或刻度有明顯缺失。"
+        },
+        {
+          "score": 0,
+          "criteria": "把4到26畫成箱體或五數順序錯亂。"
+        }
+      ],
+      "partialCreditRules": [
+        "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
+        "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
+      ],
+      "followThroughPolicy": "若刻度比例一致但整張圖平移，不影響得分；若非等距卻正確標值，最多2分。",
+      "unitNotationRules": "座標單位未指定；所有刻度必須採同一線性尺度。",
+      "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
+      "commonErrors": [
+        "五個點等距排列。",
+        "把13畫在箱體正中央而非數值位置。",
+        "漏畫最大值26。"
+      ],
+      "visualMode": "figure",
+      "figureId": "fig-u22-boxplot-basic",
+      "drawingSpecReference": "fig-u22-boxplot-basic",
+      "independentReview": {
+        "recomputedResult": "先畫涵蓋4到26的數軸。；在9與18畫箱體左右邊，在13畫箱內中位數線。；由箱體左端連至4、右端連至26，端點加短直線。",
+        "alternativeMethodCheck": "可用文字座標規格代替手繪：min=4、Q1=9、Q2=13、Q3=18、max=26，所有位置按同一比例。",
+        "ambiguityBoundaryCheck": "題目所需規則、母體、抽取方式、端點與單位均已明示；評分規準依本題步驟逐項核對。",
+        "rubricSpecificity": "pass",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "811688387219c703fd08fe85f8fb4880232fe4987d9c43eb60603a78179925a8"
+    },
+    {
+      "questionId": "u22-s002-cr002",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-quartiles",
+      "skillId": "box-plot",
+      "lockedSkillOrder": 2,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "某盒狀圖由左到右四段長度為3、5、2、7，最小值是6。求五數摘要並說明每段對應。",
+      "requiredWork": [
+        "依序累加四段長。",
+        "寫出min、Q1、Q2、Q3、max。",
+        "說明段長與相鄰五數差。"
+      ],
+      "standardSolution": [
+        "min=6。",
+        "Q1=6+3=9；Q2=9+5=14；Q3=14+2=16；max=16+7=23。",
+        "五數摘要為6、9、14、16、23。"
+      ],
+      "reasoningSteps": [
+        "min=6。",
+        "Q1=6+3=9；Q2=9+5=14；Q3=14+2=16；max=16+7=23。",
+        "五數摘要為6、9、14、16、23。"
+      ],
+      "alternativeMethods": [
+        "可畫一條數線，從6依序向右走3、5、2、7單位。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "五數6、9、14、16、23全部正確且四段對應清楚。"
+        },
+        {
+          "score": 2,
+          "criteria": "累加方法正確但一處算術錯，後續依錯值一致。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道相鄰累加並求對至少前三個構件。"
+        },
+        {
+          "score": 0,
+          "criteria": "把段長直接當五數或無有效累加。"
+        }
+      ],
+      "partialCreditRules": [
+        "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
+        "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
+      ],
+      "followThroughPolicy": "第一處純算術錯後，後續若依自己的前值正確累加，可保留方法分，最高2分。",
+      "unitNotationRules": "無特殊單位；分數須可辨識且機率介於0與1。",
+      "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
+      "commonErrors": [
+        "把3、5、2、7直接寫成Q1到最大值。",
+        "漏加最小值6。",
+        "某一段重複累加。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "recomputedResult": "min=6。；Q1=6+3=9；Q2=9+5=14；Q3=14+2=16；max=16+7=23。；五數摘要為6、9、14、16、23。",
+        "alternativeMethodCheck": "可畫一條數線，從6依序向右走3、5、2、7單位。",
+        "ambiguityBoundaryCheck": "題目所需規則、母體、抽取方式、端點與單位均已明示；評分規準依本題步驟逐項核對。",
+        "rubricSpecificity": "pass",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "3c56c34dae456cc53e55d272ad4658e37002bdefdfadaceb6e7521eb11016df1"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u22-boxplot-basic",
+      "unitId": "u22",
+      "skillId": "box-plot",
+      "drawingPurpose": "支援由五數摘要4、9、13、18、26繪製盒狀圖與辨識構件。",
+      "canvas": {
+        "width": 720,
+        "height": 220
+      },
+      "viewBox": "0 0 720 220",
+      "coordinateSystem": "SVG pixels; origin at upper-left; x increases right and y increases down.",
+      "layoutConstraints": [
+        "數軸採線性尺度並標示主要刻度；五數位置另以數值標籤明示",
+        "箱體左端9、右端18",
+        "中位數線13",
+        "左鬚端4、右鬚端26",
+        "五個數值標籤置於對應構件上方"
+      ],
+      "visibleLineRules": "All mathematical boundaries and axes use solid black lines; helper gridlines, when present, are lighter and never encode an answer by color.",
+      "hiddenLineRules": "No hidden geometric lines are needed. Dashed lines are used only for explicitly labelled statistical fences.",
+      "labelsAndPositions": "Labels are placed adjacent to their corresponding points, branches, sectors or groups with at least 14 px text.",
+      "tickMarksUnitsArrowsSymbols": "Axes include labelled ticks and units where applicable; tree branches show exact fractions; arrowheads do not replace numeric labels.",
+      "toScale": true,
+      "visualInferenceWarning": null,
+      "altText": "水平盒狀圖，數軸4到26，最小值4、第一四分位數9、中位數13、第三四分位數18、最大值26。",
+      "svgTitle": "支援由五數摘要4、9、13、18、26繪製盒狀圖與辨識構件。",
+      "svgDescription": "水平盒狀圖，數軸4到26，最小值4、第一四分位數9、中位數13、第三四分位數18、最大值26。",
+      "mobileReadabilityReview": "Reviewed at 360 CSS px width; minimum label size remains legible and no labels overlap critical marks.",
+      "answerLeakageReview": "The figure contains only data explicitly supplied by its associated prompt or lecture example; it does not mark a multiple-choice option as correct.",
+      "geometryTokenAssertions": {
+        "minX": 100,
+        "q1X": 250,
+        "medianX": 370,
+        "q3X": 520,
+        "maxX": 680,
+        "linearScale": true
+      },
+      "manualVisualInspection": "pass; rendered PNG inspected for clipping, label overlap, scale consistency and mathematical placement.",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    }
+  ],
+  "sourceBatch": "023-u22-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/023-u22-complete/units/u22/s002"
+}

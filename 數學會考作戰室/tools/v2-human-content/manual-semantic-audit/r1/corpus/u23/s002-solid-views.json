@@ -1,0 +1,1355 @@
+{
+  "slot": "s002",
+  "skillId": "solid-views",
+  "topicId": "u23-basics",
+  "title": "立體三視圖：從正面側面和俯視重建立體",
+  "lecture": {
+    "lectureId": "u23-s002-lecture-r1",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-basics",
+    "skillId": "solid-views",
+    "title": "立體三視圖：從正面側面和俯視重建立體",
+    "lockedSkillTitle": "立體三視圖",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能說明正面圖、側面圖與俯視圖各保留哪些資訊。",
+      "能由方塊高度表畫出三視圖。",
+      "能比較多個立體是否可能具有相同視圖。",
+      "能避免把被遮住的方塊誤判為不存在。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "solid-nets",
+        "requiredLevel": "知道立體可由平面圖表示，但摺疊圖與投影圖用途不同。",
+        "bridge": "展開圖保留表面連接；三視圖把立體沿觀察方向投影到平面。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "正面圖",
+        "definition": "從約定正面沿垂直視線觀看立體所得的平面投影。"
+      },
+      {
+        "term": "側面圖",
+        "definition": "從約定側面觀看所得的平面投影。"
+      },
+      {
+        "term": "俯視圖",
+        "definition": "從正上方向下觀看所得的平面投影。"
+      },
+      {
+        "term": "遮擋",
+        "definition": "同一視線上前方部分擋住後方部分，但後方物體仍可能存在。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "h(i,j)",
+        "meaning": "底面第i列第j格堆疊方塊的高度。"
+      },
+      {
+        "symbol": "0",
+        "meaning": "該底面格沒有方塊。"
+      }
+    ],
+    "conceptNarrative": [
+      "三視圖把同一立體從三個互相垂直方向投影。每一張視圖只顯示兩個方向的資訊，第三個方向被壓縮。",
+      "對小正方體堆成的立體，俯視圖告訴哪些底面格非空；正面圖每一欄高度等於該前後方向各堆中最高者。",
+      "側面圖同理，每一欄高度是左右方向上的最大高度。因為只保留最大值，單靠三視圖有時不能唯一決定被遮住的方塊。",
+      "題目必須約定正面與左右方向；沒有方向標示時，不可自行把圖旋轉後混用。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "俯視投影",
+        "statement": "底面某格只要至少有一個方塊，俯視圖對應格即有記號。"
+      },
+      {
+        "name": "正面輪廓高度",
+        "statement": "正面圖某水平位置的高度等於該方向整列堆疊高度的最大值。"
+      },
+      {
+        "name": "側面輪廓高度",
+        "statement": "側面圖某深度位置的高度等於該左右整列高度的最大值。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "正面第j欄高度＝max_i h(i,j)",
+        "conditions": [
+          "i表示前後列",
+          "j表示左右欄",
+          "從正面沿前後方向觀看"
+        ],
+        "meaning": "遮擋後只保留該欄最高輪廓。"
+      },
+      {
+        "formula": "最少方塊數≥俯視圖非空格數",
+        "conditions": [
+          "每個非空底格至少一顆"
+        ],
+        "meaning": "俯視圖提供底層占格的下界。"
+      }
+    ],
+    "nonApplicableCases": [
+      "三視圖通常不能顯示立體內部空洞。",
+      "正面圖某欄高3，不代表該視線上的每一堆都高3。",
+      "俯視圖只標占格，不直接顯示高度。",
+      "若觀察方向未約定，左右順序可能相反，不能硬判。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認正面與座標方向。",
+        "check": "左右、前後是否已定義？"
+      },
+      {
+        "step": 2,
+        "instruction": "先畫俯視占格。",
+        "check": "每個高度大於0的底格是否標出？"
+      },
+      {
+        "step": 3,
+        "instruction": "沿正面視線逐欄取最大高度。",
+        "check": "是否被較矮的後方堆誤導？"
+      },
+      {
+        "step": 4,
+        "instruction": "沿側面視線逐列取最大高度。",
+        "check": "側面順序是否依題目方向？"
+      },
+      {
+        "step": 5,
+        "instruction": "做相容性檢查。",
+        "check": "三張圖的總寬、總深與最高高度是否一致？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "高度表（前列到後列）為[[2,1],[1,3]]，求從前方看的兩欄高度。",
+        "solutionSteps": [
+          "左欄取max(2,1)=2。",
+          "右欄取max(1,3)=3。"
+        ],
+        "answer": "正面圖欄高為2、3。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "同一高度表的俯視圖有幾格？",
+        "solutionSteps": [
+          "四個高度都大於0。",
+          "俯視圖四格皆有占用。"
+        ],
+        "answer": "4格。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "正面圖只有一欄高3，是否能確定前後方向只有一堆方塊？",
+        "solutionSteps": [
+          "正面投影壓縮前後資訊。",
+          "前後可有多堆，只要最高為3。"
+        ],
+        "answer": "不能確定。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "俯視圖有3個非空格，最少有幾顆小方塊？",
+        "solutionSteps": [
+          "每個非空格至少一顆。",
+          "三格至少3顆。"
+        ],
+        "answer": "至少3顆。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把俯視圖格數當成總方塊數。",
+        "why": "俯視圖看不到堆疊高度。",
+        "correction": "俯視圖只給每個底格是否非空。"
+      },
+      {
+        "mistake": "正面圖每欄把所有前後高度相加。",
+        "why": "投影輪廓應取最大值。",
+        "correction": "同一視線上的堆疊互相遮擋，取最高者。"
+      },
+      {
+        "mistake": "看到正面高3就認為每個位置都高3。",
+        "why": "忽略被遮住的較矮堆。",
+        "correction": "高3只保證至少一堆達3。"
+      },
+      {
+        "mistake": "側面圖順序隨意顛倒。",
+        "why": "未遵守觀察方向。",
+        "correction": "先標明從右側或左側觀看。"
+      },
+      {
+        "mistake": "認為三視圖一定唯一決定立體。",
+        "why": "投影會丟失深度與內部資訊。",
+        "correction": "檢查是否存在不同高度表給出相同最大值。"
+      },
+      {
+        "mistake": "把空底格上方畫方塊。",
+        "why": "違反實體堆疊的連續支撐。",
+        "correction": "較高層方塊下方必須有方塊支撐。"
+      }
+    ],
+    "selfCheck": [
+      "我是否先確認觀察方向？",
+      "正面與側面輪廓是否取最大值而非加總？",
+      "俯視圖是否只表示占格？",
+      "我是否保留被遮住方塊存在的可能？",
+      "三視圖尺寸是否互相相容？"
+    ],
+    "summary": [
+      "三視圖是三個互相垂直方向的投影。",
+      "俯視圖保留占格，正面與側面保留最高輪廓。",
+      "投影會丟失資訊，因此不一定唯一。",
+      "方向約定是判讀順序的必要條件。"
+    ],
+    "connections": {
+      "previous": "承接展開圖的平面表示觀念，改以投影而非攤開來描述立體。",
+      "next": [
+        "截面概念將研究平面切過立體時得到的交集。",
+        "後續素養題會用三視圖估算方塊數與材料。"
+      ]
+    },
+    "figureReferences": [
+      {
+        "figureId": "u23-s002-fig001",
+        "purpose": "顯示由小正方體堆成的立體及其正面、右側與俯視方向箭頭。",
+        "altText": "底面2乘2的方塊堆，高度依前左2、前右1、後左1、後右3排列，旁有三個觀察方向箭頭。"
+      },
+      "u23-s002-fig001"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u23-s002-v001",
+        "u23-s002-v002",
+        "u23-s002-v003",
+        "u23-s002-v004",
+        "u23-s002-v005",
+        "u23-s002-v006",
+        "u23-s002-v007",
+        "u23-s002-v008",
+        "u23-s002-v009",
+        "u23-s002-v010",
+        "u23-s002-v011",
+        "u23-s002-v012"
+      ],
+      "constructedResponseIds": [
+        "u23-s002-cr001",
+        "u23-s002-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "以兩列兩欄高度表分別重算正面最大值、俯視占格與最少方塊數，並確認講義明確指出三視圖可能不唯一與觀察方向不可省略。",
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "0d889cf5aee2c7f9f3c33ebef1e44b0601222cb8a7bf6165a8e13793d2e71453"
+  },
+  "mcQuestions": [
+    {
+      "prompt": "俯視一個由小正方體堆成的立體時，俯視圖主要顯示什麼？",
+      "text": "俯視一個由小正方體堆成的立體時，俯視圖主要顯示什麼？",
+      "choices": [
+        "每一堆的精確高度",
+        "哪些底面位置有方塊",
+        "所有被遮住方塊的顏色",
+        "立體內部是否中空"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：從上方向下投影；高度資訊被壓縮。所得結果是「哪些底面位置有方塊」。",
+      "explanation": "俯視投影把高度方向壓縮；某底格只要有方塊，俯視圖就標出該位置，因此主要顯示底面占格。",
+      "steps": [
+        "從上方向下投影",
+        "高度資訊被壓縮"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "每一堆的精確高度",
+          "truth": false,
+          "reason": "單一俯視圖通常不顯示高度。"
+        },
+        {
+          "choice": "哪些底面位置有方塊",
+          "truth": true,
+          "reason": "依獨立計算「高度資訊被壓縮」，此選項符合所求「指出俯視圖資訊」。"
+        },
+        {
+          "choice": "所有被遮住方塊的顏色",
+          "truth": false,
+          "reason": "被遮住顏色無法由輪廓得知。"
+        },
+        {
+          "choice": "立體內部是否中空",
+          "truth": false,
+          "reason": "內部空洞通常不可見。"
+        }
+      ],
+      "misconceptionTarget": "把俯視圖誤當高度表。 必須依「辨認俯視圖保留的資訊。」的關係重新核對。",
+      "authoringIntent": "辨認俯視圖保留的資訊。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "立體由小正方體堆成"
+      ],
+      "target": "指出俯視圖資訊",
+      "difficultyReason": "概念辨認。 本題以「辨認俯視圖保留的資訊。」作為該難度的具體判準。",
+      "prerequisiteCheck": "知道俯視方向。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "無單位。 所求「指出俯視圖資訊」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "題目問主要顯示內容，不主張任何特殊標高記號。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "1ccfb9e8391a087df404684beb88316e0efba8917371b3d83cbad6da2a6c81aa"
+    },
+    {
+      "prompt": "高度表只有一列，從左到右為1、3、2。從正面觀看時，三欄高度依序為何？",
+      "text": "高度表只有一列，從左到右為1、3、2。從正面觀看時，三欄高度依序為何？",
+      "choices": [
+        "3、2、1",
+        "1、2、3",
+        "1、3、2",
+        "3、3、3"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：確認只有一列；逐欄讀取高度。所得結果是「1、3、2」。",
+      "explanation": "只有一列，沒有前後遮擋，因此正面三欄高度直接等於1、3、2。",
+      "steps": [
+        "確認只有一列",
+        "逐欄讀取高度"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3、2、1",
+          "truth": false,
+          "reason": "顛倒了左右順序。"
+        },
+        {
+          "choice": "1、2、3",
+          "truth": false,
+          "reason": "把後兩欄交換。"
+        },
+        {
+          "choice": "1、3、2",
+          "truth": true,
+          "reason": "依獨立計算「逐欄讀取高度」，此選項符合所求「求三欄高度」。"
+        },
+        {
+          "choice": "3、3、3",
+          "truth": false,
+          "reason": "把最高值套到全部欄。"
+        }
+      ],
+      "misconceptionTarget": "把整張正面圖都畫成最高高度。",
+      "authoringIntent": "由單列高度表讀正面圖。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "從正面看",
+        "左右順序不變"
+      ],
+      "target": "求三欄高度",
+      "difficultyReason": "直接讀取，不需取多列最大值。",
+      "prerequisiteCheck": "理解欄高。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "高度以小方塊層數表示。 所求「求三欄高度」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "觀察方向與左右順序明確。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "fb8fa222ba933cfda1cb4859c5df8d8c6593e43781c7e9001978f833e2908270"
+    },
+    {
+      "prompt": "一個立體的俯視圖共有5個非空格。此立體至少由幾個小正方體組成？",
+      "text": "一個立體的俯視圖共有5個非空格。此立體至少由幾個小正方體組成？",
+      "choices": [
+        "1個",
+        "4個",
+        "無法給下界",
+        "5個"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：每格至少1顆；5×1=5。所得結果是「5個」。",
+      "explanation": "每個俯視非空格至少要有一顆方塊，所以5格至少需要5顆。",
+      "steps": [
+        "每格至少1顆",
+        "5×1=5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1個",
+          "truth": false,
+          "reason": "不足以占5格。"
+        },
+        {
+          "choice": "4個",
+          "truth": false,
+          "reason": "仍少一格。"
+        },
+        {
+          "choice": "無法給下界",
+          "truth": false,
+          "reason": "雖不能求精確總數，但可求至少5。"
+        },
+        {
+          "choice": "5個",
+          "truth": true,
+          "reason": "依獨立計算「5×1=5」，此選項符合所求「求最少方塊數」。"
+        }
+      ],
+      "misconceptionTarget": "因無法求精確數量就誤認連最少值也不能求。",
+      "authoringIntent": "由俯視格數求方塊數下界。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "每個非空格至少一顆"
+      ],
+      "target": "求最少方塊數",
+      "difficultyReason": "單一步驟下界推論。 本題以「由俯視格數求方塊數下界。」作為該難度的具體判準。",
+      "prerequisiteCheck": "知道俯視占格。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位為個。 所求「求最少方塊數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "題目問至少，資料足夠。 題幹已完整限制「求最少方塊數」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v003",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "5377473f6b6aac4196d96ca7f766a9a7f0fb6c7cf20a740cbcc77bd344588eee"
+    },
+    {
+      "prompt": "高度表（前列、後列）為[[1,3,2],[2,1,2]]。從正面看三欄高度為何？",
+      "text": "高度表（前列、後列）為[[1,3,2],[2,1,2]]。從正面看三欄高度為何？",
+      "choices": [
+        "2、3、2",
+        "3、2、2",
+        "1、3、2",
+        "3、3、2"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：左欄取最大2；中欄取最大3；右欄取最大2。所得結果是「2、3、2」。",
+      "explanation": "逐欄取前後最大值：左欄max(1,2)=2，中欄max(3,1)=3，右欄max(2,2)=2。",
+      "steps": [
+        "左欄取最大2",
+        "中欄取最大3",
+        "右欄取最大2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2、3、2",
+          "truth": true,
+          "reason": "依獨立計算「右欄取最大2」，此選項符合所求「求各欄最大高度」。"
+        },
+        {
+          "choice": "3、2、2",
+          "truth": false,
+          "reason": "把左右兩欄誤換。"
+        },
+        {
+          "choice": "1、3、2",
+          "truth": false,
+          "reason": "只讀前列。"
+        },
+        {
+          "choice": "3、3、2",
+          "truth": false,
+          "reason": "把左欄錯取3。"
+        }
+      ],
+      "misconceptionTarget": "只抄最前列或把整列最大值套用。",
+      "authoringIntent": "由兩列高度表求正面輪廓。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "前後兩列",
+        "從正面沿前後方向看"
+      ],
+      "target": "求各欄最大高度",
+      "difficultyReason": "需逐欄比較兩個高度。 本題以「由兩列高度表求正面輪廓。」作為該難度的具體判準。",
+      "prerequisiteCheck": "會取最大值。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "高度為層數。 所求「求各欄最大高度」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "矩陣列序與觀察方向已定義。",
+      "literacyContextNecessity": null,
+      "figureId": "u23-s002-fig001",
+      "drawingSpecId": "u23-s002-draw001",
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v004",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "svg",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "821cf6bd17ab36716e695445e6a6dd9d84dd182c9c50cf3f893f4630459698cb"
+    },
+    {
+      "prompt": "某立體正面圖有兩欄，高度為3、1。下列哪個高度表可能產生此正面圖？",
+      "text": "某立體正面圖有兩欄，高度為3、1。下列哪個高度表可能產生此正面圖？",
+      "choices": [
+        "[[2,1],[2,1]]",
+        "[[3,0],[1,1]]",
+        "[[1,3],[1,1]]",
+        "[[3,2],[1,2]]"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：對每個選項逐欄取最大；只有第二個得到3、1。所得結果是「[[3,0],[1,1]]」。",
+      "explanation": "逐欄取最大值。選項二左欄max(3,1)=3，右欄max(0,1)=1，符合3、1。",
+      "steps": [
+        "對每個選項逐欄取最大",
+        "只有第二個得到3、1"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "[[2,1],[2,1]]",
+          "truth": false,
+          "reason": "得到2、1。"
+        },
+        {
+          "choice": "[[3,0],[1,1]]",
+          "truth": true,
+          "reason": "依獨立計算「只有第二個得到3、1」，此選項符合所求「選相容高度表」。"
+        },
+        {
+          "choice": "[[1,3],[1,1]]",
+          "truth": false,
+          "reason": "得到1、3。"
+        },
+        {
+          "choice": "[[3,2],[1,2]]",
+          "truth": false,
+          "reason": "得到3、2。"
+        }
+      ],
+      "misconceptionTarget": "把表格的列直接當成正面圖。",
+      "authoringIntent": "反向檢查可能的高度表。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "0表示空格",
+        "從正面取各欄最大"
+      ],
+      "target": "選相容高度表",
+      "difficultyReason": "需對四個候選做投影。 本題以「反向檢查可能的高度表。」作為該難度的具體判準。",
+      "prerequisiteCheck": "已會最大值投影。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "高度為層數。 所求「選相容高度表」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "四個選項計算結果互異，唯一符合。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v005",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "15517936f88abd71b344a8fab5cf1f90610da99d23dcc6f83168c3c5d98c3edd"
+    },
+    {
+      "prompt": "同一個立體的正面圖最高為4層，右側圖最高為3層。這兩張圖是否可能同時正確？",
+      "text": "同一個立體的正面圖最高為4層，右側圖最高為3層。這兩張圖是否可能同時正確？",
+      "choices": [
+        "只有方塊數為12時可能",
+        "可能，因觀察方向不同",
+        "一定不可能，最高高度必須相同",
+        "資料足夠可唯一決定立體"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：比較兩視圖的垂直最高高度；同一立體高度必須一致。所得結果是「一定不可能，最高高度必須相同」。",
+      "explanation": "同一立體的垂直高度不因水平觀察方向改變，所以正面圖與右側圖的最高層數必須相同。4與3矛盾，因此不可能。",
+      "steps": [
+        "比較兩視圖的垂直最高高度",
+        "同一立體高度必須一致"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只有方塊數為12時可能",
+          "truth": false,
+          "reason": "方塊數不能消除矛盾。"
+        },
+        {
+          "choice": "可能，因觀察方向不同",
+          "truth": false,
+          "reason": "方向不同不會改變垂直高度。"
+        },
+        {
+          "choice": "一定不可能，最高高度必須相同",
+          "truth": true,
+          "reason": "依獨立計算「同一立體高度必須一致」，此選項符合所求「判斷兩視圖能否屬同一立體」。"
+        },
+        {
+          "choice": "資料足夠可唯一決定立體",
+          "truth": false,
+          "reason": "資料反而不相容。"
+        }
+      ],
+      "misconceptionTarget": "以為不同方向可產生不同總高度。",
+      "authoringIntent": "檢查三視圖相容性。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "觀察方向均水平",
+        "層高相同"
+      ],
+      "target": "判斷兩視圖能否屬同一立體",
+      "difficultyReason": "需抓出跨視圖不變量。 本題以「檢查三視圖相容性。」作為該難度的具體判準。",
+      "prerequisiteCheck": "知道三視圖共享高度。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "高度以層數比較。 所求「判斷兩視圖能否屬同一立體」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "正面與右側均保留垂直方向，最高值必一致。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v006",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "67bbe9a155f6a73d0e7624c42cede83310f7f8b7b9aece4e1dfcd117f5e725df"
+    },
+    {
+      "prompt": "高度表為[[2,0,1],[1,3,0],[2,1,2]]。若從正面沿列方向觀看，正面圖三欄高度為何？",
+      "text": "高度表為[[2,0,1],[1,3,0],[2,1,2]]。若從正面沿列方向觀看，正面圖三欄高度為何？",
+      "choices": [
+        "2、1、2",
+        "2、3、1",
+        "3、3、3",
+        "2、3、2"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：第一欄最大2；第二欄最大3；第三欄最大2。所得結果是「2、3、2」。",
+      "explanation": "逐欄取三列最大值：第一欄max(2,1,2)=2；第二欄max(0,3,1)=3；第三欄max(1,0,2)=2。",
+      "steps": [
+        "第一欄最大2",
+        "第二欄最大3",
+        "第三欄最大2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2、1、2",
+          "truth": false,
+          "reason": "第二欄漏掉高3。"
+        },
+        {
+          "choice": "2、3、1",
+          "truth": false,
+          "reason": "第三欄漏掉後列的2。"
+        },
+        {
+          "choice": "3、3、3",
+          "truth": false,
+          "reason": "把全表最大值3套到各欄。"
+        },
+        {
+          "choice": "2、3、2",
+          "truth": true,
+          "reason": "依獨立計算「第三欄最大2」，此選項符合所求「求正面輪廓」。"
+        }
+      ],
+      "misconceptionTarget": "把0視為不存在整欄或忽略後方較高堆。",
+      "authoringIntent": "處理含空格的三列投影。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "0為空底格",
+        "從正面取每欄最大"
+      ],
+      "target": "求正面輪廓",
+      "difficultyReason": "需在三列間逐欄比較並處理0。",
+      "prerequisiteCheck": "能讀高度表。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "層數無需換算。 所求「求正面輪廓」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "表格尺寸與觀察方向明確。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v007",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "f481ed73b289a2bd7107480140033c8a235400f2dfdc2c2dcf7703a935774efd"
+    },
+    {
+      "prompt": "正面圖為兩欄高2、2，俯視圖為2×2四格全滿。下列何者可確定？",
+      "text": "正面圖為兩欄高2、2，俯視圖為2×2四格全滿。下列何者可確定？",
+      "choices": [
+        "至少有一堆高2且每個底格至少高1",
+        "總方塊數一定8",
+        "四堆都高2",
+        "立體唯一"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：由俯視得四堆至少1；由正面得兩欄各有最大2。所得結果是「至少有一堆高2且每個底格至少高1」。",
+      "explanation": "俯視四格全滿表示四堆都至少高1；正面兩欄最高均為2，表示每欄至少一堆達2。不能確定四堆都高2或總數。",
+      "steps": [
+        "由俯視得四堆至少1",
+        "由正面得兩欄各有最大2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "至少有一堆高2且每個底格至少高1",
+          "truth": true,
+          "reason": "依獨立計算「由正面得兩欄各有最大2」，此選項符合所求「找必然結論」。"
+        },
+        {
+          "choice": "總方塊數一定8",
+          "truth": false,
+          "reason": "總數可能6、7或8等。"
+        },
+        {
+          "choice": "四堆都高2",
+          "truth": false,
+          "reason": "較矮堆可只有1。"
+        },
+        {
+          "choice": "立體唯一",
+          "truth": false,
+          "reason": "不同高度配置可有相同視圖。"
+        }
+      ],
+      "misconceptionTarget": "把輪廓最大值誤當每一堆高度。",
+      "authoringIntent": "結合正面與俯視推可確定資訊。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "俯視四格皆非空",
+        "正面兩欄高2"
+      ],
+      "target": "找必然結論",
+      "difficultyReason": "需區分必要與可能並理解資訊丟失。",
+      "prerequisiteCheck": "熟悉兩種視圖。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "個數與層數不混用。 所求「找必然結論」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "結論以至少敘述，未假設隱藏堆高度。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v008",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "7421413037178b83370f690bce0faaf153f779e7e6bebcd241ca0798ea0c5401"
+    },
+    {
+      "prompt": "某立體的正面圖與右側圖都只有一欄高3，俯視圖只有一格。總方塊數為何？",
+      "text": "某立體的正面圖與右側圖都只有一欄高3，俯視圖只有一格。總方塊數為何？",
+      "choices": [
+        "1",
+        "3",
+        "無法確定",
+        "2"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：俯視確定只有一堆；視圖高度確定該堆3層。所得結果是「3」。",
+      "explanation": "俯視圖只有一格，表示只有一個垂直堆；兩側視圖都顯示該堆高3，因此總方塊數為3。",
+      "steps": [
+        "俯視確定只有一堆",
+        "視圖高度確定該堆3層"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "高度不是1。"
+        },
+        {
+          "choice": "3",
+          "truth": true,
+          "reason": "依獨立計算「視圖高度確定該堆3層」，此選項符合所求「求總方塊數」。"
+        },
+        {
+          "choice": "無法確定",
+          "truth": false,
+          "reason": "資料其實足夠。"
+        },
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "少一顆。"
+        }
+      ],
+      "misconceptionTarget": "即使俯視只一格仍認為可能有多堆被遮住。",
+      "authoringIntent": "在特殊情況由三視圖唯一求總數。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "方塊上下連續堆疊",
+        "俯視僅一格"
+      ],
+      "target": "求總方塊數",
+      "difficultyReason": "結合三視圖排除深度不確定性。",
+      "prerequisiteCheck": "懂俯視占格與高度。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位為個。 所求「求總方塊數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "一格俯視排除其他底面位置。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v009",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "caea1e2a46c473ca419b88ac62ef33dff8b5ed738013876750bf19561da05f9a"
+    },
+    {
+      "prompt": "倉庫盤點用無人機拍攝貨箱堆的俯視圖，畫面顯示8個占用格。僅憑此圖，下列報告何者最合理？",
+      "text": "倉庫盤點用無人機拍攝貨箱堆的俯視圖，畫面顯示8個占用格。僅憑此圖，下列報告何者最合理？",
+      "choices": [
+        "共有8箱",
+        "最多8箱",
+        "至少8箱，但可能更多",
+        "每格高度完全相同"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：每格至少一箱；俯視看不到向上堆疊。所得結果是「至少8箱，但可能更多」。",
+      "explanation": "每個占用格至少有一箱，但同格可向上堆多箱，所以只能確定至少8箱。",
+      "steps": [
+        "每格至少一箱",
+        "俯視看不到向上堆疊"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "共有8箱",
+          "truth": false,
+          "reason": "忽略堆高。"
+        },
+        {
+          "choice": "最多8箱",
+          "truth": false,
+          "reason": "沒有上界8。"
+        },
+        {
+          "choice": "至少8箱，但可能更多",
+          "truth": true,
+          "reason": "依獨立計算「俯視看不到向上堆疊」，此選項符合所求「選擇可支持的盤點結論」。"
+        },
+        {
+          "choice": "每格高度完全相同",
+          "truth": false,
+          "reason": "俯視不能比較高度。"
+        }
+      ],
+      "misconceptionTarget": "把占地格數當庫存總數。 必須依「解讀盤點俯視資訊限制。」的關係重新核對。",
+      "authoringIntent": "解讀盤點俯視資訊限制。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "貨箱按格堆放",
+        "俯視圖無高度標記"
+      ],
+      "target": "選擇可支持的盤點結論",
+      "difficultyReason": "需辨認資料能支持的下界而非精確值。",
+      "prerequisiteCheck": "理解俯視圖。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "單位為箱。 所求「選擇可支持的盤點結論」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "未提供最高堆高，因此不能給總數或上界。",
+      "literacyContextNecessity": "倉庫報告的可信度取決於俯視資料能否反映堆高，情境是判斷限制的核心。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v010",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "e02eaf30558c9a0c32ea618bd20540f7e4b149681eff30890ad19fc174fa8ad1"
+    },
+    {
+      "prompt": "建築模型的正面輪廓三欄高2、4、1，設計圖卻標示模型最高3層。品質檢查應作何判定？",
+      "text": "建築模型的正面輪廓三欄高2、4、1，設計圖卻標示模型最高3層。品質檢查應作何判定？",
+      "choices": [
+        "兩資料相容",
+        "正面圖左右顛倒即可相容",
+        "只要側面圖最高3就相容",
+        "至少一份資料有誤"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：讀出正面最大值4；與標示最高3比較。所得結果是「至少一份資料有誤」。",
+      "explanation": "正面輪廓已出現4層，表示模型最高至少4層；與最高3層直接矛盾，所以至少一份資料有誤。",
+      "steps": [
+        "讀出正面最大值4",
+        "與標示最高3比較"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "兩資料相容",
+          "truth": false,
+          "reason": "此選項無法符合所求「判斷品質資料相容性」；錯誤來源會是：認為視圖中的局部高度可超過模型總高度。"
+        },
+        {
+          "choice": "正面圖左右顛倒即可相容",
+          "truth": false,
+          "reason": "左右顛倒仍有4層。"
+        },
+        {
+          "choice": "只要側面圖最高3就相容",
+          "truth": false,
+          "reason": "側面最高也必須與實體總高一致。"
+        },
+        {
+          "choice": "至少一份資料有誤",
+          "truth": true,
+          "reason": "依獨立計算「與標示最高3比較」，此選項符合所求「判斷品質資料相容性」。"
+        }
+      ],
+      "misconceptionTarget": "認為視圖中的局部高度可超過模型總高度。",
+      "authoringIntent": "以三視圖檢查設計資料矛盾。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "每層高度一致",
+        "正面圖按實物投影"
+      ],
+      "target": "判斷品質資料相容性",
+      "difficultyReason": "需用最大高度作跨資料驗證。",
+      "prerequisiteCheck": "理解視圖共享垂直高度。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 105,
+      "unitCheck": "高度用層。 所求「判斷品質資料相容性」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "最高層數是方向不變量，結論唯一。",
+      "literacyContextNecessity": "品質檢查必須把投影輪廓與規格上限交叉核對，情境提供判定目的。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v011",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "a400866c3aa15e6a762386e7f83af47b987b0cfaf5e76b6dd33b60e4be4c5537"
+    },
+    {
+      "prompt": "展場用方塊搭景，俯視圖為L形三格；正面圖兩欄高度分別2、1。若要求用最少方塊完成，最少需要幾個？",
+      "text": "展場用方塊搭景，俯視圖為L形三格；正面圖兩欄高度分別2、1。若要求用最少方塊完成，最少需要幾個？",
+      "choices": [
+        "4個",
+        "3個",
+        "2個",
+        "5個"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：三個占格先放3顆；為高2欄增加1顆。所得結果是「4個」。",
+      "explanation": "L形三格每格至少1顆，共先需3顆。正面有一欄須達2層，因此在該欄其中一格再加1顆，最少4顆。",
+      "steps": [
+        "三個占格先放3顆",
+        "為高2欄增加1顆"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4個",
+          "truth": true,
+          "reason": "依獨立計算「為高2欄增加1顆」，此選項符合所求「求最少方塊數」。"
+        },
+        {
+          "choice": "3個",
+          "truth": false,
+          "reason": "只能讓三格各高1，最高不足2。"
+        },
+        {
+          "choice": "2個",
+          "truth": false,
+          "reason": "少於占格數。"
+        },
+        {
+          "choice": "5個",
+          "truth": false,
+          "reason": "可完成但不是最少。"
+        }
+      ],
+      "misconceptionTarget": "把正面高2當成要在整欄每格都加高。",
+      "authoringIntent": "由俯視與正面求最少用量。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "L形三個底格",
+        "正面兩欄高2與1",
+        "可自由選擇高2所在堆"
+      ],
+      "target": "求最少方塊數",
+      "difficultyReason": "需建立下界並構造達成配置。",
+      "prerequisiteCheck": "會結合俯視與輪廓。 本題只再使用先備「solid-nets」與本技能定義。",
+      "estimatedTimeSec": 140,
+      "unitCheck": "單位為個。 所求「求最少方塊數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "不需近似。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "L形跨兩欄且高2欄至少含一格；存在四顆的配置。",
+      "literacyContextNecessity": "展場材料限制要求最小化方塊數，三視圖資料不可刪除。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s002-v012",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體三視圖",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "f4e117cd556648601d95d4da98934bc570d03024b596ebfff54e4d214408d8b8"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "prompt": "某方塊立體的高度表（前列到後列）為[[2,1,0],[1,3,2]]。請寫出正面圖三欄高度、俯視圖非空格數，並說明計算方式。",
+      "requiredWork": [
+        "正面逐欄取前後最大值。",
+        "俯視計算高度大於0的格。",
+        "分別解釋兩種視圖保留的資訊。"
+      ],
+      "fullCreditSolution": [
+        "正面三欄：max(2,1)=2、max(1,3)=3、max(0,2)=2，所以為2、3、2。",
+        "六個底格中只有前列第三格為0，其餘5格非空，所以俯視圖有5格。",
+        "正面圖保留每欄最高輪廓；俯視圖只保留是否占格。"
+      ],
+      "alternativeSolutions": [
+        "可畫出兩張格線圖，只要欄高與占格位置正確。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正面2、3、2與俯視5格皆正確，並清楚說明取最大值和非空判斷。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩個數值答案正確但解釋不完整，或僅一張視圖有一個小錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道正面要取最大值或俯視要數非空格，且至少得到一部分正確。"
+        },
+        {
+          "score": 0,
+          "criteria": "把前後高度相加、把俯視格數當高度總和，且答案均錯。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩個數值答案正確但解釋不完整，或僅一張視圖有一個小錯。",
+        "知道正面要取最大值或俯視要數非空格，且至少得到一部分正確。"
+      ],
+      "followThroughPolicy": "若第一欄算錯但後續一貫使用逐欄最大法，保留方法分；俯視格數另行獨立評分。",
+      "unitNotationRules": "高度以層表示，俯視以格表示，兩者不可混成同一單位。",
+      "answerOnlyPolicy": "只寫2、3、2與5而無方法最多2分。",
+      "difficulty": "standard",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "正面2、3、2；俯視5格。",
+        "ambiguityAndBoundary": "矩陣列序、0的意義與觀察方向均已說明。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s002-cr001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "3e6d733e64447b180cfc4e675acbc12ae2bcc4c6e2bda32861ab9c24b3ba07ce"
+    },
+    {
+      "prompt": "某立體俯視圖是2×2四格全滿，正面圖兩欄皆高2。請證明總方塊數不一定唯一，並各給出一個6顆與8顆的高度表。",
+      "requiredWork": [
+        "給出符合俯視四格非空的高度表。",
+        "兩個表正面各欄最大均為2。",
+        "總和分別為6與8。"
+      ],
+      "fullCreditSolution": [
+        "6顆例：[[2,1],[1,2]]，四格皆非空，兩欄最大為2、2，總和6。",
+        "8顆例：[[2,2],[2,2]]，總和8，正面兩欄最大2、2。",
+        "兩個不同高度表有相同俯視與正面圖，故總數不唯一。"
+      ],
+      "alternativeSolutions": [
+        "另一個6顆例為[[1,2],[2,1]]。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "給出兩個有效高度表，總和分別6與8，逐項驗證俯視與正面，並下結論不唯一。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩個表皆有效但驗證簡略，或一個表有可立即修正的小排列錯誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道需給兩種配置，且至少一個高度表完全符合。"
+        },
+        {
+          "score": 0,
+          "criteria": "只聲稱不唯一而無例子，或所給表含0導致俯視不全滿且無修正。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩個表皆有效但驗證簡略，或一個表有可立即修正的小排列錯誤。",
+        "知道需給兩種配置，且至少一個高度表完全符合。"
+      ],
+      "followThroughPolicy": "若學生先寫出不合的表但在驗證時自行修正，按最後表評分；若總和算錯但表本身可數得6或8，可保留構造分。",
+      "unitNotationRules": "高度表數字為方塊層數；總和單位為顆。",
+      "answerOnlyPolicy": "只給總數6與8而沒有高度表或構造，最多1分。",
+      "difficulty": "advanced",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "例如[[2,1],[1,2]]共6顆與[[2,2],[2,2]]共8顆，兩者視圖相同。",
+        "ambiguityAndBoundary": "要求構造兩個明確例子，足以證明不唯一。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s002-cr002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-basics",
+      "skillId": "solid-views",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "83d21c249207f32f1eb18df58119e5e44195ccd863fa2deb0bf7097e5921d7a4"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u23-s002-fig001",
+      "drawingSpecId": "u23-s002-draw001",
+      "unitId": "u23",
+      "skillSlot": "s002",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "purpose": "兩列三欄積木高度表",
+      "svgPath": "figures/u23/u23-s002-fig001.svg",
+      "canvas": {
+        "width": 760,
+        "height": 420,
+        "viewBox": "0 0 760 420"
+      },
+      "drawingSpec": {
+        "coordinateSystem": "SVG左上為原點，輪廓與標籤位置固定於對應檔案。",
+        "visibleLineRules": "主要輪廓至少3px實線，輔助線使用虛線且不取代題幹條件。",
+        "hiddenLineRules": "僅在需要表示軸線或不可見結構時使用虛線。",
+        "labelsAndPositions": "所有尺寸、方向、面與頂點標籤均在圖中固定位置。",
+        "tickMarksUnitsArrowsSymbols": "直角符號、箭頭、公分單位與視線方向依題意標示。",
+        "scaleStatus": "not-to-scale",
+        "visualInferenceWarning": "示意圖未按比例，必須依題幹與標示作答。"
+      },
+      "altText": "前列高度1、3、2，後列高度2、1、2，正面逐欄取最大值。",
+      "svgTitle": "兩列三欄積木高度表",
+      "svgDescription": "前列高度1、3、2，後列高度2、1、2，正面逐欄取最大值。",
+      "mobileReadabilityReview": "縮放至360px寬後主要輪廓與文字仍可辨識，且不以顏色作唯一訊息。",
+      "answerLeakageReview": "圖只提供題幹已知結構，不直接標示選項或答案。",
+      "svgAssertions": [
+        "<title",
+        "<desc",
+        "role=\"img\"",
+        "未按比例"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualRenderedInspection": true,
+        "reviewNote": "u23-s002-fig001 已核對題圖數值、線型、標籤、縮放警語與答案不外洩。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentSha256": "3bb7a046f494a159c067c7b16ecdd3cfab9a6ff42ce7824592b4d1f732c2808a"
+    }
+  ],
+  "sourceBatch": "024-u23-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/024-u23-complete/units/u23/s002"
+}

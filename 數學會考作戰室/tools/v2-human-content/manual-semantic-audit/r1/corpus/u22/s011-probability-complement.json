@@ -1,0 +1,1186 @@
+{
+  "slot": "s011",
+  "skillId": "probability-complement",
+  "topicId": "u22-probability",
+  "title": "餘事機率：用 P(A 的餘事)=1-P(A) 處理至少一次或不是等事件。",
+  "lecture": {
+    "lectureId": "u22-s011-lecture-r1",
+    "unitId": "u22",
+    "numericUnitId": 22,
+    "topicId": "u22-probability",
+    "skillId": "probability-complement",
+    "lockedSkillOrder": 11,
+    "title": "餘事機率：用 P(A 的餘事)=1-P(A) 處理至少一次或不是等事件。",
+    "originalLockedTitle": "餘事機率",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能辨認事件與其餘事。",
+      "能用1-P(A)簡化計算。",
+      "能用餘事處理至少一次。",
+      "能避免把長期機率當短期保證。"
+    ],
+    "prerequisiteSkillIds": [
+      "probability-basic"
+    ],
+    "prerequisiteBridge": "承接單階段古典機率。",
+    "glossary": [
+      {
+        "term": "餘事",
+        "definition": "事件A不發生的所有結果，記作A的餘事。"
+      },
+      {
+        "term": "至少一次",
+        "definition": "一次以上，餘事通常是零次。"
+      },
+      {
+        "term": "互斥且完備",
+        "definition": "A與其餘事不能同時發生且合起來是全部結果。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "P(A的餘事)=1-P(A)",
+        "meaning": "餘事公式。"
+      },
+      {
+        "symbol": "P(A)+P(A的餘事)=1",
+        "meaning": "總機率。"
+      }
+    ],
+    "conceptNarrative": [
+      "餘事不是任意另一事件，而是「除了A以外的全部」。",
+      "「至少一次成功」的餘事是「一次都沒成功」，通常比直接列所有成功情況簡單。",
+      "二分類情境中合格與不合格可互為餘事，但若還有待判定類別，就不能直接相減。",
+      "重複獨立試驗時，先算全部失敗路徑再用1減。",
+      "機率20%不表示每5次固定一次，也不表示久未發生後下一次必發生。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "餘事事件",
+        "statement": "S中不屬於A的結果。"
+      },
+      {
+        "name": "至少一次公式",
+        "statement": "1-P(零次)，需先正確計算零次。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "P(至少一次)=1-P(零次)",
+        "conditions": [
+          "重複試驗。"
+        ],
+        "meaning": "重複試驗。"
+      },
+      {
+        "formula": "P(兩次都不發生)=q×q",
+        "conditions": [
+          "兩次獨立且每次不發生率q。"
+        ],
+        "meaning": "兩次獨立且每次不發生率q。"
+      }
+    ],
+    "nonApplicableCases": [
+      "分類未涵蓋全部時不可當餘事。",
+      "至少一次不能只算恰好一次。",
+      "獨立性未給定時不能直接相乘。",
+      "連續未發生不改變固定獨立試驗下一次機率。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "寫出原事件",
+        "check": "用精確語句。"
+      },
+      {
+        "step": 2,
+        "instruction": "找完整否定",
+        "check": "檢查互斥且合起來全部。"
+      },
+      {
+        "step": 3,
+        "instruction": "計算較簡單一側",
+        "check": "必要時沿路相乘。"
+      },
+      {
+        "step": 4,
+        "instruction": "用1減",
+        "check": "保持分數或小數精確。"
+      },
+      {
+        "step": 5,
+        "instruction": "解讀",
+        "check": "不作短期保證。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "P(A)=0.35",
+        "solutionSteps": [
+          "餘事0.65。"
+        ],
+        "answer": "餘事0.65。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "兩次硬幣至少一正",
+        "solutionSteps": [
+          "1-P(反反)=1-1/4=3/4。"
+        ],
+        "answer": "1-P(反反)=1-1/4=3/4。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "兩天不故障率0.98且獨立",
+        "solutionSteps": [
+          "至少一天故障=1-0.98²=0.0396。"
+        ],
+        "answer": "至少一天故障=1-0.98²=0.0396。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "P(A餘)=2P(A)",
+        "solutionSteps": [
+          "1-p=2p，p=1/3。"
+        ],
+        "answer": "1-p=2p，p=1/3。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把餘事寫成另一個相關事件",
+        "why": "檢查是否涵蓋所有非A結果。",
+        "correction": "檢查是否涵蓋所有非A結果。"
+      },
+      {
+        "mistake": "直接把兩次成功率相加",
+        "why": "會重複計數。",
+        "correction": "會重複計數。"
+      },
+      {
+        "mistake": "至少一次等於恰好一次",
+        "why": "漏掉兩次都成功。",
+        "correction": "漏掉兩次都成功。"
+      },
+      {
+        "mistake": "把0.0396四捨五入成0.04卻未說明",
+        "why": "題目要精確時保留。",
+        "correction": "題目要精確時保留。"
+      }
+    ],
+    "selfCheck": [
+      "餘事是否真的是完整否定？",
+      "兩事件機率是否合計1？",
+      "重複試驗是否有獨立假設？",
+      "至少一次是否用零次的餘事？"
+    ],
+    "summary": [
+      "餘事公式是1減。",
+      "至少一次常由零次最容易求。",
+      "分類要互斥且完備。",
+      "機率不等於固定發生次序。"
+    ],
+    "connections": {
+      "previous": "承接單階段古典機率。",
+      "next": [
+        "下一技能用樹狀圖明確呈現多階段路徑。"
+      ]
+    },
+    "figureReferences": [],
+    "figureAccessibility": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u22-s011-v001",
+        "u22-s011-v002",
+        "u22-s011-v003",
+        "u22-s011-v004",
+        "u22-s011-v005",
+        "u22-s011-v006",
+        "u22-s011-v007",
+        "u22-s011-v008",
+        "u22-s011-v009",
+        "u22-s011-v010",
+        "u22-s011-v011",
+        "u22-s011-v012"
+      ],
+      "constructedResponseIds": [
+        "u22-s011-cr001",
+        "u22-s011-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "skillSpecificReviewEvidence": "獨立重算分數、小數與百分比案例；確認0.98²=0.9604，餘事0.0396，且所有至少一次題都先定義零次事件。",
+      "futureKnowledgeCheck": "pass; all methods use this skill or declared prerequisites only",
+      "contentBoundary": "用 P(A 的餘事)=1-P(A) 處理至少一次或不是等事件。",
+      "reviewVersion": "human-lecture-review-u22-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "35c995492965475f8e1ef39393fd94751d5dffae65345245b8f17297d1da60ef"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u22-s011-v001",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "若事件A發生的機率為0.35，A不發生的機率為何？",
+      "text": "若事件A發生的機率為0.35，A不發生的機率為何？",
+      "givenConditions": [],
+      "target": "計算餘事機率",
+      "choices": [
+        "0.35",
+        "1.35",
+        "0.65",
+        "0.75"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "A與其餘事合計機率1，所以1-0.35=0.65。",
+      "explanation": "A與其餘事合計機率1，所以1-0.35=0.65。",
+      "steps": [
+        "使用1-P(A)。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.35",
+          "truth": false,
+          "reason": "把事件與餘事機率視為相同。"
+        },
+        {
+          "choice": "1.35",
+          "truth": false,
+          "reason": "把1與0.35相加。"
+        },
+        {
+          "choice": "0.65",
+          "truth": true,
+          "reason": "正確。獨立重算：A與其餘事合計機率1，所以1-0.35=0.65。"
+        },
+        {
+          "choice": "0.75",
+          "truth": false,
+          "reason": "減法錯誤。"
+        }
+      ],
+      "misconceptionTarget": "忘記總機率為1。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "0≤0.35≤1。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：計算餘事機率",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "計算餘事機率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "f564c9f1ebaa154f03fef90af633a618971c2f6e2d67d1fe1e72ae32ab679ea5"
+    },
+    {
+      "questionId": "u22-s011-v002",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "擲公平六面骰一次，「不是6」的機率是多少？",
+      "text": "擲公平六面骰一次，「不是6」的機率是多少？",
+      "givenConditions": [],
+      "target": "單次骰子的餘事",
+      "choices": [
+        "1/6",
+        "5/6",
+        "4/6",
+        "1"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "出現6的機率1/6，所以不是6為1-1/6=5/6。",
+      "explanation": "出現6的機率1/6，所以不是6為1-1/6=5/6。",
+      "steps": [
+        "找相反事件「是6」。",
+        "用1減。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/6",
+          "truth": false,
+          "reason": "這是出現6的機率。"
+        },
+        {
+          "choice": "5/6",
+          "truth": true,
+          "reason": "正確。獨立重算：出現6的機率1/6，所以不是6為1-1/6=5/6。"
+        },
+        {
+          "choice": "4/6",
+          "truth": false,
+          "reason": "漏掉一個非6點數。"
+        },
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "把不可能出現其他結果忽略。"
+        }
+      ],
+      "misconceptionTarget": "把事件與餘事答案對調。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "所有點數1至6等可能。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：單次骰子的餘事",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "單次骰子的餘事",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "64bc86395e03087752345526384f143a445eb65d536cfa919f5b5c08e22244a2"
+    },
+    {
+      "questionId": "u22-s011-v003",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "袋中紅球2顆、白球5顆。任抽1顆，沒有抽到紅球的機率為何？",
+      "text": "袋中紅球2顆、白球5顆。任抽1顆，沒有抽到紅球的機率為何？",
+      "givenConditions": [],
+      "target": "由顏色事件求餘事",
+      "choices": [
+        "2/7",
+        "3/7",
+        "5/2",
+        "5/7"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "沒有紅球就是抽到白球，亦可用1-2/7=5/7。",
+      "explanation": "沒有紅球就是抽到白球，亦可用1-2/7=5/7。",
+      "steps": [
+        "求紅球機率2/7。",
+        "取餘事5/7。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2/7",
+          "truth": false,
+          "reason": "這是抽到紅球。"
+        },
+        {
+          "choice": "3/7",
+          "truth": false,
+          "reason": "總數或白球數算錯。"
+        },
+        {
+          "choice": "5/2",
+          "truth": false,
+          "reason": "分子分母顛倒。"
+        },
+        {
+          "choice": "5/7",
+          "truth": true,
+          "reason": "正確。獨立重算：沒有紅球就是抽到白球，亦可用1-2/7=5/7。"
+        }
+      ],
+      "misconceptionTarget": "文字「沒有」未轉成餘事。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "一次抽取，紅與白涵蓋全部結果。",
+      "difficultyReason": "單一定義辨認或一步計算。 本題能力：由顏色事件求餘事",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "由顏色事件求餘事",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "39d94cd1ce05857d0fd966a36d38e4175d542e4da0cdf2c88842e42fb29cb6c3"
+    },
+    {
+      "questionId": "u22-s011-v004",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某事件發生機率為3/10。下列哪個敘述正確？",
+      "text": "某事件發生機率為3/10。下列哪個敘述正確？",
+      "givenConditions": [],
+      "target": "理解餘事關係",
+      "choices": [
+        "事件不發生機率為7/10",
+        "事件一定發生3次",
+        "事件與不發生機率相乘為1",
+        "事件不發生機率為3/10"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "互為餘事的機率相加為1，所以不發生為1-3/10=7/10。",
+      "explanation": "互為餘事的機率相加為1，所以不發生為1-3/10=7/10。",
+      "steps": [
+        "使用互補總和。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "事件不發生機率為7/10",
+          "truth": true,
+          "reason": "正確。獨立重算：互為餘事的機率相加為1，所以不發生為1-3/10=7/10。"
+        },
+        {
+          "choice": "事件一定發生3次",
+          "truth": false,
+          "reason": "機率不保證短期次數。"
+        },
+        {
+          "choice": "事件與不發生機率相乘為1",
+          "truth": false,
+          "reason": "應是相加為1。"
+        },
+        {
+          "choice": "事件不發生機率為3/10",
+          "truth": false,
+          "reason": "除非機率為1/2。"
+        }
+      ],
+      "misconceptionTarget": "把機率當固定發生次數。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "不涉及重複試驗次數。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：理解餘事關係",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "理解餘事關係",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "9403dc2176e755c4a6774876e2df07552e73fa3af7135914e12f8f0bb0753424"
+    },
+    {
+      "questionId": "u22-s011-v005",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "從1到12等可能選一個數，選到「不是3的倍數」的機率為何？",
+      "text": "從1到12等可能選一個數，選到「不是3的倍數」的機率為何？",
+      "givenConditions": [],
+      "target": "用餘事簡化計數",
+      "choices": [
+        "1/3",
+        "3/4",
+        "8/11",
+        "2/3"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "3的倍數為3、6、9、12共4個，機率1/3；不是3的倍數為1-1/3=2/3。",
+      "explanation": "3的倍數為3、6、9、12共4個，機率1/3；不是3的倍數為1-1/3=2/3。",
+      "steps": [
+        "先算3倍數4/12。",
+        "取餘事8/12。",
+        "約分2/3。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/3",
+          "truth": false,
+          "reason": "這是3的倍數機率。"
+        },
+        {
+          "choice": "3/4",
+          "truth": false,
+          "reason": "把倍數個數誤算3個。"
+        },
+        {
+          "choice": "8/11",
+          "truth": false,
+          "reason": "錯誤排除12或1。"
+        },
+        {
+          "choice": "2/3",
+          "truth": true,
+          "reason": "正確。獨立重算：3的倍數為3、6、9、12共4個，機率1/3；不是3的倍數為1-1/3=2/3。"
+        }
+      ],
+      "misconceptionTarget": "直接列非倍數時漏數。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "樣本空間1到12含端點。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：用餘事簡化計數",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "用餘事簡化計數",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "bf21f20af8f6cd933c44ec7c98940ec60a2a25e3558287a2cc04668189e24cb3"
+    },
+    {
+      "questionId": "u22-s011-v006",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "抽到瑕疵品的機率是0.04。抽到合格品的機率是多少？",
+      "text": "抽到瑕疵品的機率是0.04。抽到合格品的機率是多少？",
+      "givenConditions": [],
+      "target": "在二分類情境求餘事",
+      "choices": [
+        "0.04",
+        "0.96",
+        "1.04",
+        "0.94"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "只有瑕疵或合格兩類時，合格=1-0.04=0.96。",
+      "explanation": "只有瑕疵或合格兩類時，合格=1-0.04=0.96。",
+      "steps": [
+        "確認兩類互為餘事。",
+        "相減。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.04",
+          "truth": false,
+          "reason": "把瑕疵與合格視為相同。"
+        },
+        {
+          "choice": "0.96",
+          "truth": true,
+          "reason": "正確。獨立重算：只有瑕疵或合格兩類時，合格=1-0.04=0.96。"
+        },
+        {
+          "choice": "1.04",
+          "truth": false,
+          "reason": "加法錯誤。"
+        },
+        {
+          "choice": "0.94",
+          "truth": false,
+          "reason": "1-0.04算錯。"
+        }
+      ],
+      "misconceptionTarget": "未確認分類是否涵蓋全部。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "題目默認每件非瑕疵即合格。",
+      "difficultyReason": "需連結定義與兩個以上步驟。 本題能力：在二分類情境求餘事",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "在二分類情境求餘事",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "4c26ca9179f9ea3cef346dc6d3da84c2c9451845157e457cf800b7a7f89b2d79"
+    },
+    {
+      "questionId": "u22-s011-v007",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "擲兩次公平硬幣，至少一次正面的機率是多少？",
+      "text": "擲兩次公平硬幣，至少一次正面的機率是多少？",
+      "givenConditions": [],
+      "target": "用餘事處理至少一次",
+      "choices": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "至少一次正面的餘事是兩次都反面，機率1/2×1/2=1/4，因此1-1/4=3/4。",
+      "explanation": "至少一次正面的餘事是兩次都反面，機率1/2×1/2=1/4，因此1-1/4=3/4。",
+      "steps": [
+        "找餘事「兩次都反面」。",
+        "算其機率1/4。",
+        "用1減。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/4",
+          "truth": false,
+          "reason": "這是兩次都反面。"
+        },
+        {
+          "choice": "1/2",
+          "truth": false,
+          "reason": "只看第一次。"
+        },
+        {
+          "choice": "3/4",
+          "truth": true,
+          "reason": "正確。獨立重算：至少一次正面的餘事是兩次都反面，機率1/2×1/2=1/4，因此1-1/4=3/4。"
+        },
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "誤以為兩次必出正面。"
+        }
+      ],
+      "misconceptionTarget": "把「至少一次」只算恰好一次。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "兩次投擲獨立且硬幣公平。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：用餘事處理至少一次",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "用餘事處理至少一次",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "a591203af849b2aa042af54216d2be47dfbc677f294a662b9c395e5483537e7b"
+    },
+    {
+      "questionId": "u22-s011-v008",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某系統單日不故障的機率為0.98。假設兩天是否故障互相獨立，兩天內至少一天故障的機率為何？",
+      "text": "某系統單日不故障的機率為0.98。假設兩天是否故障互相獨立，兩天內至少一天故障的機率為何？",
+      "givenConditions": [],
+      "target": "用餘事處理重複獨立事件",
+      "choices": [
+        "0.0396",
+        "0.02",
+        "0.04",
+        "0.9604"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "兩天都不故障機率0.98²=0.9604；至少一天故障為1-0.9604=0.0396。",
+      "explanation": "兩天都不故障機率0.98²=0.9604；至少一天故障為1-0.9604=0.0396。",
+      "steps": [
+        "找餘事「兩天都不故障」。",
+        "相乘0.9604。",
+        "用1減。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.0396",
+          "truth": true,
+          "reason": "正確。獨立重算：兩天都不故障機率0.98²=0.9604；至少一天故障為1-0.9604=0.0396。"
+        },
+        {
+          "choice": "0.02",
+          "truth": false,
+          "reason": "只算一天故障率。"
+        },
+        {
+          "choice": "0.04",
+          "truth": false,
+          "reason": "直接把兩天故障率相加，忽略重疊。"
+        },
+        {
+          "choice": "0.9604",
+          "truth": false,
+          "reason": "這是兩天都不故障。"
+        }
+      ],
+      "misconceptionTarget": "直接用0.02×2而忽略兩天都故障重疊。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "獨立假設由題目明定。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：用餘事處理重複獨立事件",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "用餘事處理重複獨立事件",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "93fd164f74ea09065ddcbae908f9bdbee8b157ef0f975f17c7ca44063d777d59"
+    },
+    {
+      "questionId": "u22-s011-v009",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "若P(A的餘事)=2P(A)，則P(A)是多少？",
+      "text": "若P(A的餘事)=2P(A)，則P(A)是多少？",
+      "givenConditions": [],
+      "target": "由餘事關係反求機率",
+      "choices": [
+        "1/2",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "設P(A)=p，則1-p=2p，所以3p=1，p=1/3。",
+      "explanation": "設P(A)=p，則1-p=2p，所以3p=1，p=1/3。",
+      "steps": [
+        "列1-p=2p。",
+        "解p=1/3。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/2",
+          "truth": false,
+          "reason": "忽略倍數關係。"
+        },
+        {
+          "choice": "1/3",
+          "truth": true,
+          "reason": "正確。獨立重算：設P(A)=p，則1-p=2p，所以3p=1，p=1/3。"
+        },
+        {
+          "choice": "2/3",
+          "truth": false,
+          "reason": "這是餘事機率。"
+        },
+        {
+          "choice": "1/4",
+          "truth": false,
+          "reason": "把總和誤寫成3P(A)=?後算錯。"
+        }
+      ],
+      "misconceptionTarget": "把A與餘事比例方向顛倒。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 150,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "解在0到1之間。",
+      "difficultyReason": "需反推、整合條件或檢查邊界。 本題能力：由餘事關係反求機率",
+      "literacyContextNecessity": null,
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "由餘事關係反求機率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "aa22e46d6ca7bc0386802e906657b799185aea774b1802d1f6997df2ee3768aa"
+    },
+    {
+      "questionId": "u22-s011-v010",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "氣象預報某地明天下雨機率30%。在只分「下雨」與「不下雨」的模型下，不下雨機率為何？",
+      "text": "氣象預報某地明天下雨機率30%。在只分「下雨」與「不下雨」的模型下，不下雨機率為何？",
+      "givenConditions": [],
+      "target": "解讀百分比餘事",
+      "choices": [
+        "30%",
+        "130%",
+        "70%",
+        "不一定，完全無法計算"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "下雨與不下雨互為餘事，所以100%-30%=70%。",
+      "explanation": "下雨與不下雨互為餘事，所以100%-30%=70%。",
+      "steps": [
+        "確認模型只有兩類。",
+        "用100%相減。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "30%",
+          "truth": false,
+          "reason": "事件與餘事對調。"
+        },
+        {
+          "choice": "130%",
+          "truth": false,
+          "reason": "把兩者相加。"
+        },
+        {
+          "choice": "70%",
+          "truth": true,
+          "reason": "正確。獨立重算：下雨與不下雨互為餘事，所以100%-30%=70%。"
+        },
+        {
+          "choice": "不一定，完全無法計算",
+          "truth": false,
+          "reason": "在題目指定二分類模型下可計算。"
+        }
+      ],
+      "misconceptionTarget": "把「可能有毛毛雨」自行增加第三類而違反題目模型。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "百分比為題目給定值，不需進一步四捨五入。",
+      "ambiguityBoundaryAudit": "現實分類需看預報定義，但題目已限定模型。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：解讀百分比餘事",
+      "literacyContextNecessity": "天氣機率常以餘事表達，必須先確認事件分類是否完整。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "解讀百分比餘事",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "46b169f95f362684682617a34e41fff8721a2640a11f21606f55a1eac925e807"
+    },
+    {
+      "questionId": "u22-s011-v011",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "某抽獎每次不中獎機率為0.8，兩次抽獎互相獨立。至少中一次的機率為何？",
+      "text": "某抽獎每次不中獎機率為0.8，兩次抽獎互相獨立。至少中一次的機率為何？",
+      "givenConditions": [],
+      "target": "在抽獎情境使用餘事",
+      "choices": [
+        "0.36",
+        "0.20",
+        "0.40",
+        "0.64"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "兩次都不中獎為0.8²=0.64；至少中一次=1-0.64=0.36。",
+      "explanation": "兩次都不中獎為0.8²=0.64；至少中一次=1-0.64=0.36。",
+      "steps": [
+        "算餘事「兩次都不中」。",
+        "用1減。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.36",
+          "truth": true,
+          "reason": "正確。獨立重算：兩次都不中獎為0.8²=0.64；至少中一次=1-0.64=0.36。"
+        },
+        {
+          "choice": "0.20",
+          "truth": false,
+          "reason": "只算一次中獎率。"
+        },
+        {
+          "choice": "0.40",
+          "truth": false,
+          "reason": "直接把0.2加兩次。"
+        },
+        {
+          "choice": "0.64",
+          "truth": false,
+          "reason": "這是兩次都不中獎。"
+        }
+      ],
+      "misconceptionTarget": "把至少一次機率直接相加而超算兩次都中。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "兩次獨立由題目明定。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：在抽獎情境使用餘事",
+      "literacyContextNecessity": "行銷常宣稱「多抽提高機會」，應正確扣除重疊而非直接倍增。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "在抽獎情境使用餘事",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "6169e7dd7dd362d6df03dd2c159ae6449f18e2a0f96db09fdfae1bda5dc62d55"
+    },
+    {
+      "questionId": "u22-s011-v012",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "prompt": "一批資料中隨機抽一筆，落在Q1到Q3之外的機率約為多少？假設無大量重複值且依四分位位置解讀。",
+      "text": "一批資料中隨機抽一筆，落在Q1到Q3之外的機率約為多少？假設無大量重複值且依四分位位置解讀。",
+      "givenConditions": [],
+      "target": "連結統計位置與餘事機率",
+      "choices": [
+        "1/4",
+        "3/4",
+        "0",
+        "1/2"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "Q1到Q3內約含中間50%，其餘事「在箱外」約為1-1/2=1/2。",
+      "explanation": "Q1到Q3內約含中間50%，其餘事「在箱外」約為1-1/2=1/2。",
+      "steps": [
+        "箱內約50%。",
+        "取餘事約50%。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1/4",
+          "truth": false,
+          "reason": "只算單側箱外。"
+        },
+        {
+          "choice": "3/4",
+          "truth": false,
+          "reason": "把箱內與箱外對調。"
+        },
+        {
+          "choice": "0",
+          "truth": false,
+          "reason": "誤以為盒狀圖箱外無資料。"
+        },
+        {
+          "choice": "1/2",
+          "truth": true,
+          "reason": "正確。獨立重算：Q1到Q3內約含中間50%，其餘事「在箱外」約為1-1/2=1/2。"
+        }
+      ],
+      "misconceptionTarget": "只算左側或右側四分之一。",
+      "prerequisiteCheck": "僅使用本技能與已鎖定先備技能：probability-basic。",
+      "estimatedTimeSec": 180,
+      "unitCheck": "不涉及單位換算；各數值在同一表示基準下。",
+      "roundingCheck": "使用精確值，不需四捨五入。",
+      "ambiguityBoundaryAudit": "重複值可能影響嚴格比例，因此題幹明定近似與一般情況。",
+      "difficultyReason": "情境資訊是建立分母、事件或推論限制的必要條件。 本題能力：連結統計位置與餘事機率",
+      "literacyContextNecessity": "把隨機抽樣與盒狀圖位置連結，可估計抽到中段外資料的機會。",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "authoringIntent": "連結統計位置與餘事機率",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "8b7c1b22b0eaa2ea12e06013c8d92c7eb47e29071be5c5d9dc7ac4c7d9290177"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u22-s011-cr001",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "一個事件A的機率為0.37。求A不發生的機率，並說明兩者為何相加等於1。",
+      "requiredWork": [
+        "寫餘事關係。",
+        "計算1-0.37。",
+        "說明兩事件互斥且涵蓋全部結果。"
+      ],
+      "standardSolution": [
+        "A與A的餘事互斥，且每次試驗必有其中一個發生。",
+        "因此P(A^c)=1-P(A)=1-0.37=0.63。"
+      ],
+      "reasoningSteps": [
+        "A與A的餘事互斥，且每次試驗必有其中一個發生。",
+        "因此P(A^c)=1-P(A)=1-0.37=0.63。"
+      ],
+      "alternativeMethods": [
+        "可用百分率寫成100%-37%=63%。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "0.63與完整的互斥、完備理由均正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但理由只提「公式」而未說涵蓋全部。"
+        },
+        {
+          "score": 1,
+          "criteria": "能寫1-0.37並得0.63。"
+        },
+        {
+          "score": 0,
+          "criteria": "把餘事機率寫成-0.37或1.37。"
+        }
+      ],
+      "partialCreditRules": [
+        "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
+        "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
+      ],
+      "followThroughPolicy": "小數或63%皆可；只寫答案最高1分。",
+      "unitNotationRules": "無特殊單位；分數須可辨識且機率介於0與1。",
+      "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
+      "commonErrors": [
+        "把餘事當相反數。",
+        "把0.37轉成37後相減。",
+        "認為兩事件可以同時發生。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "recomputedResult": "A與A的餘事互斥，且每次試驗必有其中一個發生。；因此P(A^c)=1-P(A)=1-0.37=0.63。",
+        "alternativeMethodCheck": "可用百分率寫成100%-37%=63%。",
+        "ambiguityBoundaryCheck": "題目所需規則、母體、抽取方式、端點與單位均已明示；評分規準依本題步驟逐項核對。",
+        "rubricSpecificity": "pass",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "1cbaf85084e75e91364855a0896b3e4cb3d3c9cdc4a25dd8754e6c071a2ace18"
+    },
+    {
+      "questionId": "u22-s011-cr002",
+      "unitId": "u22",
+      "numericUnitId": 22,
+      "topicId": "u22-probability",
+      "skillId": "probability-complement",
+      "lockedSkillOrder": 11,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "prompt": "公平硬幣連擲3次。求至少出現一次正面的機率，並用餘事法驗證。",
+      "requiredWork": [
+        "辨認餘事為三次全反面。",
+        "計算餘事機率。",
+        "用1相減。"
+      ],
+      "standardSolution": [
+        "至少一次正面的餘事是三次都反面。",
+        "P(全反面)=(1/2)^3=1/8。",
+        "所以P(至少一次正面)=1-1/8=7/8。"
+      ],
+      "reasoningSteps": [
+        "至少一次正面的餘事是三次都反面。",
+        "P(全反面)=(1/2)^3=1/8。",
+        "所以P(至少一次正面)=1-1/8=7/8。"
+      ],
+      "alternativeMethods": [
+        "也可列8個等可能序列，只有反反反不符合，因此7/8。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "事件與餘事、1/8及7/8全部正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "7/8正確但餘事或乘法理由不完整。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道用1減全反面，但算術有一處錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "把至少一次算成3/2或只算一次正面。"
+        }
+      ],
+      "partialCreditRules": [
+        "各分數層級依本題具體數值、事件、圖形或推論要求判定，不以篇幅長短取代正確性。",
+        "正確方法中的單一算術錯依追蹤政策處理；概念或事件定義錯誤不得靠後續一致性取得滿分。"
+      ],
+      "followThroughPolicy": "若列舉法完整可滿分；若只寫7/8無過程最高1分。",
+      "unitNotationRules": "無特殊單位；分數須可辨識且機率介於0與1。",
+      "answerOnlyResponseHandling": "只寫正確答案但完全無過程，最高給1分；若題目明確要求說明或作圖，不得給滿分。",
+      "commonErrors": [
+        "把「至少一次」當「恰一次」。",
+        "把三次機率相加。",
+        "漏掉正正正等結果。"
+      ],
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "recomputedResult": "至少一次正面的餘事是三次都反面。；P(全反面)=(1/2)^3=1/8。；所以P(至少一次正面)=1-1/8=7/8。",
+        "alternativeMethodCheck": "也可列8個等可能序列，只有反反反不符合，因此7/8。",
+        "ambiguityBoundaryCheck": "題目所需規則、母體、抽取方式、端點與單位均已明示；評分規準依本題步驟逐項核對。",
+        "rubricSpecificity": "pass",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_CENTRAL_INTEGRATION",
+      "contentSha256": "effb21d2d261ff12d6baaad0ca6205eda3069db04d34361b0e83357f03e9b973"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "023-u22-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/023-u22-complete/units/u22/s011"
+}

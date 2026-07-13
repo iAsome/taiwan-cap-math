@@ -1,0 +1,1314 @@
+{
+  "slot": "s004",
+  "skillId": "inequality-number-line",
+  "topicId": "u07-basics",
+  "title": "不等式解的數線表示：端點和方向與圖文互譯",
+  "lecture": {
+    "lectureId": "u07-s004-lecture-r1",
+    "unitId": "u07",
+    "topicId": "u07-basics",
+    "skillId": "inequality-number-line",
+    "title": "不等式解的數線表示：端點和方向與圖文互譯",
+    "audience": "國中零基礎至會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能依解集選擇空心點或實心點。",
+      "能判斷射線方向。",
+      "能由數線圖寫出不等式。",
+      "能比較兩種數線表示是否同一解集。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "inequality-transposition",
+        "requiredLevel": "能先把不等式整理成 x 與常數的比較。"
+      }
+    ],
+    "prerequisiteBridge": {
+      "inequality-transposition": "能先把不等式整理成 x 與常數的比較。"
+    },
+    "glossary": [
+      {
+        "term": "射線",
+        "definition": "從一個端點向單一方向無限延伸的圖形。"
+      },
+      {
+        "term": "開端點",
+        "definition": "端點不屬於解集，以空心圓表示。"
+      },
+      {
+        "term": "閉端點",
+        "definition": "端點屬於解集，以實心圓表示。"
+      },
+      {
+        "term": "刻度",
+        "definition": "數線上用來表示數值位置的等距標記。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "○────▶",
+        "meaning": "空心端點並向右延伸，代表大於且不含端點。"
+      },
+      {
+        "symbol": "◀────●",
+        "meaning": "向左延伸且實心端點，代表小於或等於端點。"
+      }
+    ],
+    "conceptNarrative": [
+      "先完成代數解法，再把 x 的標準形式轉成圖。",
+      "端點符號只回答「是否包含」，射線方向回答「比端點大或小」。",
+      "數線必須有方向、端點數值與足夠刻度，不能僅憑圓點位置猜值。",
+      "由圖回寫時，先讀方向，再讀端點是否填滿。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "開端點",
+        "statement": "對應 x>a 或 x<a，端點 a 不符合。"
+      },
+      {
+        "name": "閉端點",
+        "statement": "對應 x≥a 或 x≤a，端點 a 符合。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "x<a → a 空心，向左",
+        "conditions": [
+          "標準數線向右為正方向"
+        ],
+        "meaning": "嚴格小於的圖形。"
+      },
+      {
+        "formula": "x≥a → a 實心，向右",
+        "conditions": [
+          "標準數線向右為正方向"
+        ],
+        "meaning": "包含端點的大於範圍。"
+      }
+    ],
+    "nonApplicableCases": [
+      "若題目限定整數解，仍應先畫連續解集，再標明整數點或另行列舉。",
+      "數線圖若比例不精確，只能讀標示值，不能量距離。",
+      "兩邊都有式子的原不等式不能直接拿任一常數作端點。",
+      "不含端點不代表離端點最近的整數也排除。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "把答案整理為 x□a。",
+        "check": "x 是否在左側？"
+      },
+      {
+        "step": 2,
+        "instruction": "看是否含等號決定圓點。",
+        "check": "≥、≤ 實心；＞、＜ 空心。"
+      },
+      {
+        "step": 3,
+        "instruction": "看大小決定方向。",
+        "check": "大於向右、小於向左。"
+      },
+      {
+        "step": 4,
+        "instruction": "用一個圖上點與一個圖外點代入。",
+        "check": "圖示與代數解集是否一致？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "畫出 x>−1。",
+        "solutionSteps": [
+          "−1 不包含，畫空心點。",
+          "大於 −1，向右延伸。"
+        ],
+        "answer": "−1 空心，射線向右。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "畫出 x≤3。",
+        "solutionSteps": [
+          "3 包含，畫實心點。",
+          "小於或等於 3，向左延伸。"
+        ],
+        "answer": "3 實心，射線向左。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "圖上 2 為實心點且向右，寫出解集。",
+        "solutionSteps": [
+          "向右表示大於。",
+          "實心表示包含 2。"
+        ],
+        "answer": "x≥2。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "解 2x−1<5 並畫圖。",
+        "solutionSteps": [
+          "2x<6，所以 x<3。",
+          "3 空心，向左延伸。"
+        ],
+        "answer": "x<3；數線在 3 空心向左。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "x≤3 畫成 3 空心。",
+        "why": "忽略等號。",
+        "correction": "≤ 包含 3，畫實心。"
+      },
+      {
+        "mistake": "x>−1 因端點是負數而向左。",
+        "why": "把負號與方向混淆。",
+        "correction": "只看「大於」就向右。"
+      },
+      {
+        "mistake": "圖向右就寫 x<a。",
+        "why": "沒有連結右側較大。",
+        "correction": "標準數線右側數值增加。"
+      },
+      {
+        "mistake": "把箭頭畫在圓點上而沒有延伸線。",
+        "why": "圖形資訊不完整。",
+        "correction": "畫射線並在末端加箭頭。"
+      },
+      {
+        "mistake": "由未標比例的圖量出端點。",
+        "why": "把示意圖當作精密測量圖。",
+        "correction": "只採用標示數值。"
+      },
+      {
+        "mistake": "解完 x<3 卻在圖上標 5。",
+        "why": "把原式常數當端點。",
+        "correction": "端點必須來自最後標準解。"
+      }
+    ],
+    "selfCheck": [
+      "端點是否包含？",
+      "方向是否和大於或小於一致？",
+      "端點標示是否來自最後解集？",
+      "圖上任取一點代入是否成立？"
+    ],
+    "summary": [
+      "先解代數，再畫數線。",
+      "空心表示不含，實心表示包含。",
+      "大於向右，小於向左。",
+      "讀圖時先看方向，再看端點。"
+    ],
+    "connections": {
+      "previous": "承接移項後的標準解集。",
+      "next": [
+        "下一節會解釋除以負數後為何方向反轉。",
+        "第六技能會從連續解集挑出整數解。"
+      ]
+    },
+    "figureReferences": [
+      "u07-fig-number-line-translation"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u07-s004-v001",
+        "u07-s004-v002",
+        "u07-s004-v003",
+        "u07-s004-v004",
+        "u07-s004-v005",
+        "u07-s004-v006",
+        "u07-s004-v007",
+        "u07-s004-v008",
+        "u07-s004-v009",
+        "u07-s004-v010",
+        "u07-s004-v011",
+        "u07-s004-v012"
+      ],
+      "constructedResponseIds": [
+        "u07-s004-cr001",
+        "u07-s004-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐一核對四種端點與方向組合，並以 x<3 的完整解題鏈驗證代數與圖示一致；SVG 僅作語意示意，不依比例洩漏答案。",
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "37098e6803b174eb767f55249e5af12af0675e66fd5968cafd5ebf8249f29078"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u07-s004-v001",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "不等式 x≥2 的數線圖應如何畫？",
+      "givenConditions": "標準數線向右增大。",
+      "target": "把含等號下界畫成數線",
+      "choices": [
+        "2 空心向左",
+        "2 實心向左",
+        "2 空心向右",
+        "2 實心向右"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "x=2 應是解，故端點填滿；x=3 也是解且在右側，所以射線向右。",
+        "result": "2 實心向右",
+        "answerIndexVerified": 3
+      },
+      "explanation": "≥ 包含端點 2，所以畫實心點；大於表示向右延伸。",
+      "steps": [
+        "由 ≥ 判斷實心",
+        "由大於判斷向右"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2 空心向左",
+          "truth": false,
+          "reason": "端點與方向都錯。"
+        },
+        {
+          "choice": "2 實心向左",
+          "truth": false,
+          "reason": "選項「2 實心向左」方向錯。，與獨立解得的「2 實心向右」不一致。"
+        },
+        {
+          "choice": "2 空心向右",
+          "truth": false,
+          "reason": "選項「2 空心向右」端點錯。，與獨立解得的「2 實心向右」不一致。"
+        },
+        {
+          "choice": "2 實心向右",
+          "truth": true,
+          "reason": "獨立重算得到「2 實心向右」，此選項與完整解答一致。"
+        }
+      ],
+      "misconceptionTarget": "忽略等號或把大於畫向左。",
+      "prerequisiteCheck": "需理解端點與方向。",
+      "estimatedTimeSec": "45",
+      "unitAndRoundingCheck": "無單位與比例。",
+      "ambiguityAndBoundaryAudit": "四種組合中只有實心向右同時符合。",
+      "difficultyReason": "直接圖像轉譯。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "d3098052e58ed2a5561d5e5912ad833a067f66e85e292cdcad63e9c1004f424a"
+    },
+    {
+      "questionId": "u07-s004-v002",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "不等式 x<−3 的數線圖應如何畫？",
+      "givenConditions": "數線方向標準。",
+      "target": "畫出負端點的嚴格上界",
+      "choices": [
+        "−3 空心向左",
+        "−3 實心向左",
+        "−3 空心向右",
+        "−3 實心向右"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "−3<−3 為假，故空心；−4<−3 為真且 −4 在左側，故向左。",
+        "result": "−3 空心向左",
+        "answerIndexVerified": 0
+      },
+      "explanation": "嚴格小於不含 −3，畫空心點；較小的數在左側，因此向左。",
+      "steps": [
+        "判斷端點不含",
+        "判斷小於向左"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "−3 空心向左",
+          "truth": true,
+          "reason": "獨立重算得到「−3 空心向左」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "−3 實心向左",
+          "truth": false,
+          "reason": "錯納入 −3。"
+        },
+        {
+          "choice": "−3 空心向右",
+          "truth": false,
+          "reason": "選項「−3 空心向右」方向錯。，與獨立解得的「−3 空心向左」不一致。"
+        },
+        {
+          "choice": "−3 實心向右",
+          "truth": false,
+          "reason": "端點與方向都錯。"
+        }
+      ],
+      "misconceptionTarget": "因端點是負數而誤向右。",
+      "prerequisiteCheck": "需比較負數與理解嚴格符號。",
+      "estimatedTimeSec": "50",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "取 −4 應位於圖上、−2 不在圖上。",
+      "difficultyReason": "單一負端點轉譯。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "f1976646393561c9a40e093dd9f6dd14b5c144e77bf05a9ba7332ff738debd52"
+    },
+    {
+      "questionId": "u07-s004-v003",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "數線在 5 畫空心點並向右延伸，表示哪個解集？",
+      "givenConditions": "端點標為 5。",
+      "target": "由數線圖寫嚴格下界",
+      "choices": [
+        "x≥5",
+        "x>5",
+        "x≤5",
+        "x<5"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "圖上 6 被包含，表示 x 比 5 大；5 的圓點未填，表示 x=5 不成立，因此 x>5。",
+        "result": "x>5",
+        "answerIndexVerified": 1
+      },
+      "explanation": "向右代表大於 5，空心代表不包含 5，所以是 x>5。",
+      "steps": [
+        "讀向右為大於",
+        "讀空心為嚴格"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x≥5",
+          "truth": false,
+          "reason": "錯納入 5。"
+        },
+        {
+          "choice": "x>5",
+          "truth": true,
+          "reason": "獨立重算得到「x>5」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "x≤5",
+          "truth": false,
+          "reason": "方向與端點都錯。"
+        },
+        {
+          "choice": "x<5",
+          "truth": false,
+          "reason": "選項「x<5」方向錯。，與獨立解得的「x>5」不一致。"
+        }
+      ],
+      "misconceptionTarget": "只看方向而漏看端點。",
+      "prerequisiteCheck": "需會讀圖。",
+      "estimatedTimeSec": "45",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "圖示資訊充分且不依比例。",
+      "difficultyReason": "基本圖文互譯。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "8b9ed1d3744659cd04b73b7d422c5c17f159d2a9f4e6dc9be04a57b8f81a4454"
+    },
+    {
+      "questionId": "u07-s004-v004",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "解 3x+1≤10 並選出正確數線描述。",
+      "givenConditions": "係數 3>0。",
+      "target": "結合解式與數線表示",
+      "choices": [
+        "3 空心向右",
+        "3 實心向右",
+        "3 實心向左",
+        "3 空心向左"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "3x+1≤10 ⇒ 3x≤9 ⇒ x≤3。數線上所有不超過 3 的值在左側，且 3 屬於解。",
+        "result": "3 實心向左",
+        "answerIndexVerified": 2
+      },
+      "explanation": "3x≤9，所以 x≤3。端點 3 包含，應實心向左。",
+      "steps": [
+        "解得 x≤3",
+        "轉成 3 實心向左"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3 空心向右",
+          "truth": false,
+          "reason": "方向與端點錯。"
+        },
+        {
+          "choice": "3 實心向右",
+          "truth": false,
+          "reason": "選項「3 實心向右」方向錯。，與獨立解得的「3 實心向左」不一致。"
+        },
+        {
+          "choice": "3 實心向左",
+          "truth": true,
+          "reason": "實心向左才正確。"
+        },
+        {
+          "choice": "3 空心向左",
+          "truth": false,
+          "reason": "選項「3 空心向左」端點錯。，與獨立解得的「3 實心向左」不一致。"
+        }
+      ],
+      "misconceptionTarget": "代數解正確但圖示端點或方向錯。",
+      "prerequisiteCheck": "需會基本不等式解法。",
+      "estimatedTimeSec": "75",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "x=3 代回等號成立，圖應包含 3。",
+      "difficultyReason": "需完成代數與圖形兩層。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "b62715ad17257b50f2a6ad0e45db242685783ebcfe9fa08196cfd2440dd1de75"
+    },
+    {
+      "questionId": "u07-s004-v005",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "下列哪一個數線敘述與 4>x 等價？",
+      "givenConditions": "標準數線。",
+      "target": "將常數在左的不等式轉成圖",
+      "choices": [
+        "4 空心向左",
+        "4 空心向右",
+        "4 實心向左",
+        "4 實心向右"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "測 x=3：4>3 成立，3 在 4 左側；測 x=4 不成立，故 4 空心。",
+        "result": "4 空心向左",
+        "answerIndexVerified": 0
+      },
+      "explanation": "4>x 等價於 x<4，所以 4 不包含，向左延伸。",
+      "steps": [
+        "交換左右讀成 x<4",
+        "嚴格小於畫空心向左"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4 空心向左",
+          "truth": true,
+          "reason": "獨立重算得到「4 空心向左」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "4 空心向右",
+          "truth": false,
+          "reason": "選項「4 空心向右」方向錯。，與獨立解得的「4 空心向左」不一致。"
+        },
+        {
+          "choice": "4 實心向左",
+          "truth": false,
+          "reason": "選項「4 實心向左」端點錯。，與獨立解得的「4 空心向左」不一致。"
+        },
+        {
+          "choice": "4 實心向右",
+          "truth": false,
+          "reason": "端點與方向都錯。"
+        }
+      ],
+      "misconceptionTarget": "交換左右後把關係寫成 x>4。",
+      "prerequisiteCheck": "需會等價改寫。",
+      "estimatedTimeSec": "60",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "4>x 的解不含 4 且全在左側。",
+      "difficultyReason": "多一步左右交換。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "4d4184af39a008cd63618d651e63d875058d0f54d5315095a4fe8bf897be57d1"
+    },
+    {
+      "questionId": "u07-s004-v006",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "兩張數線圖分別表示 x≤1 與 1≥x。它們的關係為何？",
+      "givenConditions": "兩圖使用相同刻度。",
+      "target": "比較兩種寫法的數線解集",
+      "choices": [
+        "第二張應向右",
+        "兩張解集相同",
+        "只有端點相同",
+        "第一張不含 1"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "1≥x 的中文是「1 大於或等於 x」，也就是「x 小於或等於 1」。因此圖形均為 1 實心向左。",
+        "result": "兩張解集相同",
+        "answerIndexVerified": 1
+      },
+      "explanation": "1≥x 就是 x≤1，兩式皆包含 1 並向左，因此解集完全相同。",
+      "steps": [
+        "把 1≥x 改寫為 x≤1",
+        "比較端點與方向"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "第二張應向右",
+          "truth": false,
+          "reason": "改寫後仍向左。"
+        },
+        {
+          "choice": "兩張解集相同",
+          "truth": true,
+          "reason": "獨立重算得到「兩張解集相同」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "只有端點相同",
+          "truth": false,
+          "reason": "不只端點相同，整條射線相同。"
+        },
+        {
+          "choice": "第一張不含 1",
+          "truth": false,
+          "reason": "≤ 包含 1。"
+        }
+      ],
+      "misconceptionTarget": "只看符號外觀不同就認為解集不同。",
+      "prerequisiteCheck": "需會交換不等式左右。",
+      "estimatedTimeSec": "65",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "兩式對任意 x 真值一致。",
+      "difficultyReason": "需要辨識等價表示。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "c3944f84159c65b73fe2227e88d56d1794e203f2b0f75d29d21f4bdfc14b7f0b"
+    },
+    {
+      "questionId": "u07-s004-v007",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "數線上端點 a 為實心，射線向左；已知 2 是解而 3 不是解，則 a 可能為何？",
+      "givenConditions": "端點實心，解集 x≤a。",
+      "target": "由解與非解反推圖形端點",
+      "choices": [
+        "1.5",
+        "1.9",
+        "2.5",
+        "3"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "x≤a；2 是解要求 a≥2，3 不是解要求 a<3，故 2≤a<3。四個選項只有 2.5 位於此區間。",
+        "result": "2.5",
+        "answerIndexVerified": 2
+      },
+      "explanation": "圖表示 x≤a。2 是解給 a≥2；3 不是解給 a<3，因此 2≤a<3，只有 2.5 符合。",
+      "steps": [
+        "由實心向左寫 x≤a",
+        "用 2 是解得到 a≥2",
+        "用 3 不是解得到 a<3",
+        "取參數交集"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1.5",
+          "truth": false,
+          "reason": "a<2，會使 2 不是解。"
+        },
+        {
+          "choice": "1.9",
+          "truth": false,
+          "reason": "a<2，仍不包含 2。"
+        },
+        {
+          "choice": "2.5",
+          "truth": true,
+          "reason": "2≤2.5<3，兩個條件都符合。"
+        },
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "a=3 時 3 會因實心端點成為解。"
+        }
+      ],
+      "misconceptionTarget": "只檢查一個測試值，未同時使用包含與排除條件。",
+      "prerequisiteCheck": "需會把候選真值轉成參數範圍。",
+      "estimatedTimeSec": "110",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "a 必須同時滿足 2≤a<3；修正後四個選項僅 2.5 符合，且 a=3 因實心端點被排除。",
+      "difficultyReason": "反向利用兩個測試點限定參數。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "24b1659a285a50ee78b32b9a22af1c736514140a2ef5482dba77b338322a072e"
+    },
+    {
+      "questionId": "u07-s004-v008",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "解 −2x+6>0 後，哪一個數線描述正確？",
+      "givenConditions": "除數 −2<0。",
+      "target": "結合負數變號與數線",
+      "choices": [
+        "3 實心向右",
+        "3 空心向右",
+        "3 實心向左",
+        "3 空心向左"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "−2x+6>0 ⇒ −2x>−6。除以 −2 得 x<3。故端點 3 排除，射線向左。",
+        "result": "3 空心向左",
+        "answerIndexVerified": 3
+      },
+      "explanation": "−2x>−6，兩邊除以 −2 時不等號反向，得 x<3，所以 3 空心向左。",
+      "steps": [
+        "移常數",
+        "除以負數變號",
+        "畫空心向左"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3 實心向右",
+          "truth": false,
+          "reason": "錯成 x≥3。"
+        },
+        {
+          "choice": "3 空心向右",
+          "truth": false,
+          "reason": "錯成 x>3。"
+        },
+        {
+          "choice": "3 實心向左",
+          "truth": false,
+          "reason": "錯納入 3。"
+        },
+        {
+          "choice": "3 空心向左",
+          "truth": true,
+          "reason": "獨立重算得到「3 空心向左」，此選項與完整解答一致。"
+        }
+      ],
+      "misconceptionTarget": "除以負數未變號，或嚴格端點畫實心。",
+      "prerequisiteCheck": "需會負數變號。",
+      "estimatedTimeSec": "95",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "x=3 代回為 0>0 假；x=2 成立。",
+      "difficultyReason": "代數符號與圖形均有陷阱。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "deae0afb53c16948e70fedb4aa6c2cfc73e29a25a3dda15521e7f289e3a9ae9b"
+    },
+    {
+      "questionId": "u07-s004-v009",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "某數線圖表示 x>−1。若將整條圖左右鏡射並把每個標值乘以 −1，所得解集為何？",
+      "givenConditions": "新變數代表原值乘 −1。",
+      "target": "理解數線鏡射與不等號變號",
+      "choices": [
+        "x≥1",
+        "x<1",
+        "x>1",
+        "x≤1"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "取原解 x=0，鏡射得 0，應仍在新解；取原解 x=2，鏡射得 −2。這些都小於 1，且端點 1 對應原 −1 被排除，故 y<1。",
+        "result": "x<1",
+        "answerIndexVerified": 1
+      },
+      "explanation": "原解中的每個 x 乘 −1，令 y=−x。由 x>−1 乘 −1 得 y<1，所以新圖為 1 空心向左。",
+      "steps": [
+        "對所有值取相反數",
+        "負數乘法使方向反轉"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x≥1",
+          "truth": false,
+          "reason": "端點不含，不應 ≥。"
+        },
+        {
+          "choice": "x<1",
+          "truth": true,
+          "reason": "獨立重算得到「x<1」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "x>1",
+          "truth": false,
+          "reason": "選項「x>1」方向錯。，與獨立解得的「x<1」不一致。"
+        },
+        {
+          "choice": "x≤1",
+          "truth": false,
+          "reason": "錯納入 1。"
+        }
+      ],
+      "misconceptionTarget": "只把端點 −1 變成 1，卻忘記射線方向反轉。",
+      "prerequisiteCheck": "需會負數乘法次序反轉。",
+      "estimatedTimeSec": "105",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "原端點不含，鏡射後仍不含；方向必反轉。",
+      "difficultyReason": "以幾何操作理解代數變號。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "9e75aaeb41b9d92ee270ce1fda3c4c9ecf056b41806d6abfdd6e38b409968571"
+    },
+    {
+      "questionId": "u07-s004-v010",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "停車場限高標誌寫「車高 h 不得超過 2.1 公尺」。哪個數線表示正確？",
+      "givenConditions": "h 以公尺為單位且非負。",
+      "target": "將實際限高規則畫成數線",
+      "choices": [
+        "2.1 空心向左",
+        "2.1 空心向右",
+        "2.1 實心向左",
+        "2.1 實心向右"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "車高 2.1 公尺沒有超過限制，因此端點要實心；更矮的車可進，在數線左側，故實心向左。",
+        "result": "2.1 實心向左",
+        "answerIndexVerified": 2
+      },
+      "explanation": "不得超過表示 h≤2.1，包含剛好 2.1 且方向向左。",
+      "steps": [
+        "翻譯為 h≤2.1",
+        "畫實心向左"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2.1 空心向左",
+          "truth": false,
+          "reason": "錯排除剛好 2.1。"
+        },
+        {
+          "choice": "2.1 空心向右",
+          "truth": false,
+          "reason": "選項「2.1 空心向右」方向錯。，與獨立解得的「2.1 實心向左」不一致。"
+        },
+        {
+          "choice": "2.1 實心向左",
+          "truth": true,
+          "reason": "獨立重算得到「2.1 實心向左」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "2.1 實心向右",
+          "truth": false,
+          "reason": "選項「2.1 實心向右」方向錯。，與獨立解得的「2.1 實心向左」不一致。"
+        }
+      ],
+      "misconceptionTarget": "把安全上限誤當嚴格小於或下限。",
+      "prerequisiteCheck": "需理解不超過。",
+      "estimatedTimeSec": "65",
+      "unitAndRoundingCheck": "所有高度單位為公尺，2.1 為精確標示。",
+      "ambiguityAndBoundaryAudit": "自然限制 h≥0 未在選項中呈現，但不影響上界圖法。",
+      "difficultyReason": "語意與數線端點結合。",
+      "literacyContextNecessity": "限高標誌決定上界包含性，圖示用於判斷剛好 2.1 公尺是否允許。",
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "bd2a41f242fa6f50fe78a09a63e62fc75d8d868ffe8cb21b8bc4c0d3f5168b70"
+    },
+    {
+      "questionId": "u07-s004-v011",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "藥品保存規範寫「溫度須高於 2°C」。冷藏箱顯示 2.0°C 時，依數線端點判斷應如何處理？",
+      "givenConditions": "溫度讀數精確到 0.1°C，2.0=2。",
+      "target": "用端點包含性判斷合規",
+      "choices": [
+        "符合，因端點實心",
+        "符合，因 2.0 大於 2",
+        "無法判斷",
+        "不符合，因端點空心"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "2.0=2。原條件要求 T>2，代入得到 2>2 為假，所以不符合；圖上 2 應為空心。",
+        "result": "不符合，因端點空心",
+        "answerIndexVerified": 3
+      },
+      "explanation": "高於 2°C 表示 T>2，端點 2 為空心。2.0 與 2 相等，不屬於解集，因此不符合。",
+      "steps": [
+        "翻譯高於為 >",
+        "檢查 2.0 等於端點"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "符合，因端點實心",
+          "truth": false,
+          "reason": "高於使用空心端點。"
+        },
+        {
+          "choice": "符合，因 2.0 大於 2",
+          "truth": false,
+          "reason": "2.0 並不大於 2。"
+        },
+        {
+          "choice": "無法判斷",
+          "truth": false,
+          "reason": "規範與讀數足以判斷。"
+        },
+        {
+          "choice": "不符合，因端點空心",
+          "truth": true,
+          "reason": "獨立重算得到「不符合，因端點空心」，此選項與完整解答一致。"
+        }
+      ],
+      "misconceptionTarget": "把小數寫法 2.0 誤認為比 2 大。",
+      "prerequisiteCheck": "需理解小數等值與嚴格大於。",
+      "estimatedTimeSec": "75",
+      "unitAndRoundingCheck": "單位均為 °C；2.0 與 2 數值相等。",
+      "ambiguityAndBoundaryAudit": "規範使用嚴格下界，因此端點不合規。",
+      "difficultyReason": "需結合小數等值與數線端點。",
+      "literacyContextNecessity": "保存規範與顯示精度使 2.0 是否等於門檻成為必要判斷。",
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "a0d073da94a051b8cbbff4c546eac5042d1da9590365975b437d169149057481"
+    },
+    {
+      "questionId": "u07-s004-v012",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u07-fig-number-line-translation",
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "健身課程標示「心率 r 至少 120 下／分」。下列哪一位學員的心率位於數線解集的端點？",
+      "givenConditions": "r 單位為下／分。",
+      "target": "辨認情境不等式的數線邊界",
+      "choices": [
+        "120 下／分",
+        "119 下／分",
+        "121 下／分",
+        "0 下／分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "r≥120 的最左端是 120，且 120 本身符合；119 不在解集，121 雖在解集但不是邊界。",
+        "result": "120 下／分",
+        "answerIndexVerified": 0
+      },
+      "explanation": "至少 120 表示 r≥120，數線端點是 120，且為實心點。",
+      "steps": [
+        "翻譯至少為 ≥",
+        "辨認端點數值 120"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "120 下／分",
+          "truth": true,
+          "reason": "正確，是包含的端點。"
+        },
+        {
+          "choice": "119 下／分",
+          "truth": false,
+          "reason": "在端點左側且不符合。"
+        },
+        {
+          "choice": "121 下／分",
+          "truth": false,
+          "reason": "在解集內但不是端點。"
+        },
+        {
+          "choice": "0 下／分",
+          "truth": false,
+          "reason": "遠離端點且不符合實際活動情況。"
+        }
+      ],
+      "misconceptionTarget": "把解集內任意數誤認為端點。",
+      "prerequisiteCheck": "需理解至少與端點。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "單位一致，無換算。",
+      "ambiguityAndBoundaryAudit": "端點由規則中的臨界值決定，唯一為 120。",
+      "difficultyReason": "語意轉譯後識別幾何邊界。",
+      "literacyContextNecessity": "心率門檻中的 120 是課程規則臨界值，情境決定端點。",
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "419ef73e824c317ae2142f23cfcb720cfb26bb6942119e7b2f729c14fcac8f0d"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u07-s004-cr001",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "type": "constructed-response",
+      "prompt": "解 2x+3>11，將解集畫在數線上，並說明為何端點使用空心點。",
+      "requiredWork": [
+        "代數解出 x 的範圍",
+        "畫出端點與方向",
+        "解釋空心點"
+      ],
+      "fullCreditSolution": [
+        "2x>8，所以 x>4。",
+        "在 4 畫空心點，向右延伸。",
+        "原式為嚴格大於；代入 x=4 時 2×4+3=11，並不滿足 >11，因此 4 不屬於解集。"
+      ],
+      "alternativeMethod": [
+        "可先用邊界方程 2x+3=11 找到端點 4，再以 x=5 測試方向；但仍需說明 x=4 不符合。"
+      ],
+      "reasoningSteps": [
+        "求端點",
+        "辨認嚴格不等號",
+        "以測試值決定右側",
+        "由原式驗證端點排除"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確求 x>4，在 4 畫空心點向右，並以 x=4 代入說明不包含。"
+        },
+        {
+          "score": 2,
+          "criteria": "代數答案與圖形正確，但空心點理由不完整；或只漏箭頭但文字寫明向右。"
+        },
+        {
+          "score": 1,
+          "criteria": "求得端點 4，但方向或空實心有一項錯，仍展示部分解題。"
+        },
+        {
+          "score": 0,
+          "criteria": "端點、方向與包含性均無法由原式合理得到。"
+        }
+      ],
+      "partialCreditRules": "若代數步驟省略但圖形和端點驗證完整，可給 2 分；若圖正確但寫 x≥4，視為符號不一致。",
+      "followThroughPolicy": "若算錯端點但依自己的嚴格不等式畫空心點並正確決定方向，可給圖形程序分。",
+      "unitAndNotationRules": "數線需標 4；圖不要求按比例，但需有左右方向或箭頭。",
+      "answerOnlyPolicy": "只寫 x>4，未畫數線，最多 1 分。",
+      "commonErrors": [
+        "把 > 畫成實心點",
+        "大於卻向左畫"
+      ],
+      "figureId": "u07-fig-number-line-translation",
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "x>4；4 空心點向右。",
+        "ambiguity": "數線要求由代數解集產生，方向與端點皆唯一。",
+        "scope": "國中不等式解集的數線表示。",
+        "reviewNote": "獨立解得 2x>8、x>4；代入邊界 4 得 11>11 為假，再取 5 得 13>11 為真，確認空心點與向右方向。"
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "ea4087ae7c046f02a0d8a77d67dc737bc443dff82619f613f3838bf33831c33b"
+    },
+    {
+      "questionId": "u07-s004-cr002",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "type": "constructed-response",
+      "prompt": "某數線表示 −1≤x<5。請以文字敘述此範圍，列出所有整數解，並說明兩端為何一實一空。",
+      "requiredWork": [
+        "用中文完整描述範圍",
+        "列出所有整數解",
+        "說明左右端點包含性"
+      ],
+      "fullCreditSolution": [
+        "文字可寫「x 至少為 −1 且未滿 5」。",
+        "整數解為 −1、0、1、2、3、4。",
+        "−1 前有 ≤，包含端點，所以實心；5 前有 <，不包含端點，所以空心。"
+      ],
+      "alternativeMethod": [
+        "可寫「x 不小於 −1 且小於 5」；整數也可由 −1 起逐一檢查至 4。"
+      ],
+      "reasoningSteps": [
+        "符號轉中文",
+        "從連續範圍取整數交集",
+        "依等號判斷實空心"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "文字範圍、六個整數解與兩端實空心理由均正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "文字與整數解正確，但端點理由只說一端；或只漏列一個整數。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認大致介於 −1 與 5，但端點與列舉有兩項以上錯誤。"
+        },
+        {
+          "score": 0,
+          "criteria": "把範圍讀成外側或無法列出任何符合整數。"
+        }
+      ],
+      "partialCreditRules": "漏列 0 或漏列一端整數視為單一列舉錯誤；若把 5 納入則顯示嚴格端點概念錯誤。",
+      "followThroughPolicy": "若學生因誤判右端含 5 而列至 5，其他整數順序與左端正確，可給部分分但端點分不得給。",
+      "unitAndNotationRules": "接受「−1 到 5 之間，包含 −1、不包含 5」；整數需使用正確負號。",
+      "answerOnlyPolicy": "只列整數而無文字和理由，最多 1 分。",
+      "commonErrors": [
+        "把 5 列入整數解",
+        "把 −1 排除"
+      ],
+      "figureId": "u07-fig-number-line-translation",
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "至少 −1 且未滿 5；整數解 −1、0、1、2、3、4。",
+        "ambiguity": "雙邊符號明示兩端包含性，文字敘述可有同義表達但數學範圍唯一。",
+        "scope": "國中雙邊範圍、數線和整數解。",
+        "reviewNote": "獨立逐一檢查 −1≤x 與 x<5；−1 通過等號、5 因嚴格小於排除，故整數從 −1 連續到 4 共六個。"
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "b1147e12a2577d0d355c2a2b8563d5914c91d2a0d7ebe04807bfe2ff6c8c7e0c"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u07-fig-number-line-translation",
+      "unitId": "u07",
+      "topicId": "u07-basics",
+      "skillId": "inequality-number-line",
+      "svgPath": "figures/u07/u07-fig-number-line-translation.svg",
+      "canvas": {
+        "width": 720,
+        "height": 240,
+        "unit": "px"
+      },
+      "viewBox": "0 0 720 240",
+      "drawingSpec": {
+        "coordinateSystem": "四個 145×80 的局部數線區塊",
+        "panelOrigins": [
+          [
+            25,
+            35
+          ],
+          [
+            195,
+            35
+          ],
+          [
+            365,
+            35
+          ],
+          [
+            535,
+            35
+          ]
+        ],
+        "endpointSymbol": "all panels use c",
+        "endpointRadius": 8,
+        "panel1": "open-left",
+        "panel2": "closed-left",
+        "panel3": "open-right",
+        "panel4": "closed-right",
+        "baselineLength": 145,
+        "rayLengthApprox": 60,
+        "lineWeights": "baseline default, solution ray 6px, endpoint outline 3px",
+        "labels": "每格下方中文標示狀態",
+        "arrows": "射線與數線正方向均有箭頭",
+        "hiddenLines": "none",
+        "units": "abstract number line",
+        "scalePolicy": "not-to-scale",
+        "layoutConstraint": "四面板等距且不重疊"
+      },
+      "toScale": false,
+      "noVisualInferenceWarning": "本圖用於說明端點與方向，不按數值距離比例繪製；不得由線段長短推論答案。",
+      "altText": "四個並排小數線，以字母 c 為端點，依序顯示空心向左、實心向左、空心向右、實心向右，提醒方向與端點要分開判讀。",
+      "svgTitle": "數線翻譯的中性端點圖例",
+      "svgDesc": "四種空實心與左右方向的組合，以一般字母 c 表示端點，不對應任何題目數值。",
+      "mobileReadability": "在 360px 寬度檢查後，端點直徑、箭頭、刻度與標籤仍可分辨；文字不小於 18px。",
+      "answerLeakageReview": "圖中使用一般字母與不同於題目數值的示例，不標示任何題目的正確選項或最終數值答案。",
+      "svgAssertions": [
+        "空心向左",
+        "實心向左",
+        "空心向右",
+        "實心向右",
+        "方向與端點必須分開判讀",
+        "<circle cx=\"78\" cy=\"35\" r=\"8\" fill=\"white\""
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "manualVisualInspection": true,
+        "geometryCheck": "pass",
+        "mobileCheck": "pass",
+        "answerLeakageCheck": "pass",
+        "reviewNote": "人工檢查四面板的粗射線各自離開端點，不蓋住空心圓；標籤在手機縮放下仍分成四欄，圖只提供判讀類型，不洩漏題目端點。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "e2e7581832bff9d3c60c6b8956caac02a426dd515599d9178d2cae256dafb005"
+    }
+  ],
+  "sourceBatch": "008-u07-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/008-u07-complete/units/u07/s004"
+}

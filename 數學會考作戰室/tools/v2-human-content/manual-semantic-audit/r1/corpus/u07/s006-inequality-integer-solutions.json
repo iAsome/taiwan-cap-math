@@ -1,0 +1,1246 @@
+{
+  "slot": "s006",
+  "skillId": "inequality-integer-solutions",
+  "topicId": "u07-solution-sets",
+  "title": "不等式整數解：從連續範圍精確列點與計數",
+  "lecture": {
+    "lectureId": "u07-s006-lecture-r1",
+    "unitId": "u07",
+    "topicId": "u07-solution-sets",
+    "skillId": "inequality-integer-solutions",
+    "title": "不等式整數解：從連續範圍精確列點與計數",
+    "audience": "國中零基礎至會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能由解集列出符合的整數。",
+      "能處理嚴格與含等號端點。",
+      "能計算有限整數解個數。",
+      "能辨識無限多個或不存在整數解的情況。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "inequality-sign-flip",
+        "requiredLevel": "能正確解出一元一次不等式並判斷端點是否包含。"
+      }
+    ],
+    "prerequisiteBridge": {
+      "inequality-sign-flip": "能正確解出一元一次不等式並判斷端點是否包含。"
+    },
+    "glossary": [
+      {
+        "term": "整數解",
+        "definition": "同時是原不等式的解且屬於整數的數。"
+      },
+      {
+        "term": "最大整數解",
+        "definition": "所有整數解中數值最大的那一個；若向上無界通常不存在。"
+      },
+      {
+        "term": "最小整數解",
+        "definition": "所有整數解中數值最小的那一個；若向下無界通常不存在。"
+      },
+      {
+        "term": "有限解個數",
+        "definition": "在有上下界且整數點有限時可計數。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "x<3.2, x∈Z",
+        "meaning": "整數解為所有不超過 3 的整數。"
+      },
+      {
+        "symbol": "−2≤x<4, x∈Z",
+        "meaning": "整數解為 −2、−1、0、1、2、3。"
+      }
+    ],
+    "conceptNarrative": [
+      "實數解集是一整段連續範圍；題目加上「x 為整數」後，只保留數線上的整數刻度。",
+      "嚴格端點若本身是整數，要排除；含等號端點若為整數，要納入。",
+      "小數端點不需談空心或實心對整數端點的納入，應找相鄰整數。",
+      "只有單側限制時整數解通常無限多個，但仍可能有最大或最小整數解。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "整數解集",
+        "statement": "原解集與整數集合的交集。"
+      },
+      {
+        "name": "連續整數計數",
+        "statement": "若整數從 m 到 n 且兩端都包含，個數為 n−m+1。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "m≤x≤n，m,n為整數 ⇒ 個數=n−m+1",
+        "conditions": [
+          "m≤n",
+          "兩端均包含"
+        ],
+        "meaning": "連續整數個數。"
+      },
+      {
+        "formula": "x<a 的最大整數解=小於 a 的最大整數",
+        "conditions": [
+          "解集向下無界"
+        ],
+        "meaning": "依端點是否為整數調整。"
+      }
+    ],
+    "nonApplicableCases": [
+      "若題目未說 x 為整數，不可擅自只列整數。",
+      "單側無界解集不能用有限個數公式。",
+      "嚴格端點為小數時，不要機械地再減 1。",
+      "最大整數解與最大解不同；開放實數區間常沒有最大實數解。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先解出完整實數範圍。",
+        "check": "不等號方向是否正確？"
+      },
+      {
+        "step": 2,
+        "instruction": "標出端點附近整數。",
+        "check": "端點是整數還是非整數？"
+      },
+      {
+        "step": 3,
+        "instruction": "依是否含等號決定端點整數是否納入。",
+        "check": "嚴格符號是否排除端點？"
+      },
+      {
+        "step": 4,
+        "instruction": "列舉或用首尾計數。",
+        "check": "是否有限且連續？"
+      },
+      {
+        "step": 5,
+        "instruction": "回原式抽查邊界整數。",
+        "check": "最靠近端點的納入與排除是否正確？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "x<4 的整數解中，最大者為何？",
+        "solutionSteps": [
+          "4 不包含。",
+          "小於 4 的最大整數是 3。"
+        ],
+        "answer": "3。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "列出 −1≤x<3 的整數解。",
+        "solutionSteps": [
+          "−1 包含，3 不包含。",
+          "依序列整數。"
+        ],
+        "answer": "−1、0、1、2。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "2.4<x≤6.1 有幾個整數解？",
+        "solutionSteps": [
+          "符合的整數為 3、4、5、6。",
+          "共 4 個。"
+        ],
+        "answer": "4 個。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "x≥−2 有多少個整數解？",
+        "solutionSteps": [
+          "從 −2、−1、0 往右可一直延伸。",
+          "沒有上界。"
+        ],
+        "answer": "無限多個。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "x<4 的最大整數解寫 4。",
+        "why": "忽略嚴格不等號。",
+        "correction": "4 不屬於解集，最大整數是 3。"
+      },
+      {
+        "mistake": "2.4<x 就從 2 開始列。",
+        "why": "未檢查 2 是否大於 2.4。",
+        "correction": "第一個整數是 3。"
+      },
+      {
+        "mistake": "−1≤x<3 列成 −1、0、1、2、3。",
+        "why": "把右端點 3 誤納入。",
+        "correction": "嚴格小於排除 3。"
+      },
+      {
+        "mistake": "計數 n−m 而漏加 1。",
+        "why": "忽略首尾都要算。",
+        "correction": "包含兩端時用 n−m+1。"
+      },
+      {
+        "mistake": "x≥−2 說有 3 個整數解。",
+        "why": "只列眼前幾個，忘記無限延伸。",
+        "correction": "單側無上界，整數解無限多。"
+      },
+      {
+        "mistake": "把最大整數解當成最大實數解。",
+        "why": "混淆離散與連續。",
+        "correction": "先確認題目限定整數。"
+      }
+    ],
+    "selfCheck": [
+      "題目是否真的限定整數？",
+      "端點是否為整數且是否包含？",
+      "解集是否有兩個有限邊界？",
+      "計數是否包含首尾？"
+    ],
+    "summary": [
+      "整數解是實數解集與整數的交集。",
+      "嚴格端點排除，含等號端點納入。",
+      "有限連續整數個數可用末−首+1。",
+      "單側無界通常有無限多整數解。"
+    ],
+    "connections": {
+      "previous": "承接正確解法與負數變號。",
+      "next": [
+        "下一節會同時處理兩個限制的「且」。",
+        "第八技能會把範圍用中文、符號與端點互譯。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u07-s006-v001",
+        "u07-s006-v002",
+        "u07-s006-v003",
+        "u07-s006-v004",
+        "u07-s006-v005",
+        "u07-s006-v006",
+        "u07-s006-v007",
+        "u07-s006-v008",
+        "u07-s006-v009",
+        "u07-s006-v010",
+        "u07-s006-v011",
+        "u07-s006-v012"
+      ],
+      "constructedResponseIds": [
+        "u07-s006-cr001",
+        "u07-s006-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "人工檢核整數端點、小數端點、有限區間與單側無界四類；所有列舉均逐一代回邊界附近數值，確認未產生 off-by-one 錯誤。",
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "contentSha256": "181abc3090bfd0286d6adb8436808f21fe5bb978f5ae8336c031f15a0fb4447a"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u07-s006-v001",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "x<5 的整數解中，最大的是哪一個？",
+      "givenConditions": "x 限定為整數。",
+      "target": "找單側解集的最大整數解",
+      "choices": [
+        "5",
+        "4",
+        "3",
+        "不存在"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "列出靠近上界的整數：…、3、4、5；5 被 x<5 排除，4 保留，故最大為 4。",
+        "result": "4",
+        "answerIndexVerified": 1
+      },
+      "explanation": "嚴格小於 5 不包含 5；最接近 5 且較小的整數是 4。",
+      "steps": [
+        "排除端點 5",
+        "取前一個整數 4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "5 不符合。"
+        },
+        {
+          "choice": "4",
+          "truth": true,
+          "reason": "獨立重算得到「4」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "3 是解但不是最大。"
+        },
+        {
+          "choice": "不存在",
+          "truth": false,
+          "reason": "整數解有最大值 4。"
+        }
+      ],
+      "misconceptionTarget": "把嚴格上界當成可取值。",
+      "prerequisiteCheck": "需理解嚴格端點。",
+      "estimatedTimeSec": "45",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "雖實數解無最大值，但整數解最大值存在。",
+      "difficultyReason": "基本整數邊界。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "5b1469aba7cd35341bb5366236eac195411e970f7b13747e599046554865d929"
+    },
+    {
+      "questionId": "u07-s006-v002",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "列出 −2≤x<2 的所有整數解，正確的是哪一項？",
+      "givenConditions": "x 為整數。",
+      "target": "列舉有限區間整數解",
+      "choices": [
+        "−1、0、1、2",
+        "−2、−1、0、1、2",
+        "−2、−1、0",
+        "−2、−1、0、1"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "從最小允許整數 −2 開始，到小於 2 的最後整數 1，依序是 −2、−1、0、1。",
+        "result": "−2、−1、0、1",
+        "answerIndexVerified": 3
+      },
+      "explanation": "左端 −2 包含，右端 2 不包含，所以整數解為 −2、−1、0、1。",
+      "steps": [
+        "包含 −2",
+        "排除 2",
+        "依序列整數"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "−1、0、1、2",
+          "truth": false,
+          "reason": "漏掉 −2 且錯含 2。"
+        },
+        {
+          "choice": "−2、−1、0、1、2",
+          "truth": false,
+          "reason": "選項「−2、−1、0、1、2」錯含 2。，與獨立解得的「−2、−1、0、1」不一致。"
+        },
+        {
+          "choice": "−2、−1、0",
+          "truth": false,
+          "reason": "選項「−2、−1、0」漏掉 1。，與獨立解得的「−2、−1、0、1」不一致。"
+        },
+        {
+          "choice": "−2、−1、0、1",
+          "truth": true,
+          "reason": "獨立重算得到「−2、−1、0、1」，此選項與完整解答一致。"
+        }
+      ],
+      "misconceptionTarget": "兩端包含性混淆。",
+      "prerequisiteCheck": "需會雙邊範圍與端點。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "四個整數逐一滿足且相鄰外點皆不滿足。",
+      "difficultyReason": "基本列舉。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "8146b0bd39ef559fb9d705d680816aa0f36523b9f083b73b48d27ab47996c87d"
+    },
+    {
+      "questionId": "u07-s006-v003",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "不等式 1.2<x≤4.7 有幾個整數解？",
+      "givenConditions": "x 為整數。",
+      "target": "計數小數端點間整數",
+      "choices": [
+        "3 個",
+        "4 個",
+        "5 個",
+        "無限多個"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "逐整數檢查：1 不大於 1.2；2、3、4 符合；5>4.7。故共 3 個。",
+        "result": "3 個",
+        "answerIndexVerified": 0
+      },
+      "explanation": "符合的整數是 2、3、4，共 3 個。4.7 不是整數，5 已超過上界。",
+      "steps": [
+        "找第一個大於 1.2 的整數 2",
+        "找最後一個不超過 4.7 的整數 4"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3 個",
+          "truth": true,
+          "reason": "獨立重算得到「3 個」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "4 個",
+          "truth": false,
+          "reason": "多算一個端點外整數。"
+        },
+        {
+          "choice": "5 個",
+          "truth": false,
+          "reason": "把 1 或 5 算入。"
+        },
+        {
+          "choice": "無限多個",
+          "truth": false,
+          "reason": "區間有兩個有限界。"
+        }
+      ],
+      "misconceptionTarget": "看到小數端點就機械加減 1。",
+      "prerequisiteCheck": "需會小數大小比較。",
+      "estimatedTimeSec": "60",
+      "unitAndRoundingCheck": "無單位與四捨五入；端點精確。",
+      "ambiguityAndBoundaryAudit": "整數解明確為連續三個。",
+      "difficultyReason": "小數端點列舉。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "acb322965f2851555e2d820ba55e518723fcb1b21b4084a33731e6169b81f339"
+    },
+    {
+      "questionId": "u07-s006-v004",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "解 3x−2≤13，若 x 為整數，最大整數解為何？",
+      "givenConditions": "x 為整數。",
+      "target": "先解代數再取最大整數",
+      "choices": [
+        "4",
+        "6",
+        "5",
+        "不存在"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "3x−2≤13 ⇒ 3x≤15 ⇒ x≤5。整數 5 可取且任何更大整數不行，因此最大為 5。",
+        "result": "5",
+        "answerIndexVerified": 2
+      },
+      "explanation": "3x≤15，所以 x≤5。端點 5 包含，最大整數解為 5。",
+      "steps": [
+        "解得 x≤5",
+        "取包含的整數上界"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "4 是解但非最大。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "6 不符合。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "獨立重算得到「5」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "不存在",
+          "truth": false,
+          "reason": "存在最大值 5。"
+        }
+      ],
+      "misconceptionTarget": "解式後漏含端點或未回答最大整數。",
+      "prerequisiteCheck": "需會基本不等式解法。",
+      "estimatedTimeSec": "70",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "x=5 代回 13≤13，x=6 得 16≤13 假。",
+      "difficultyReason": "兩層處理。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "19cd28583196fc0a3b9a62e7240f672f962d04de4db9c074708f60ec3327fd83"
+    },
+    {
+      "questionId": "u07-s006-v005",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "不等式 −1≤2x+3<9 的整數解共有幾個？",
+      "givenConditions": "x 為整數；除以正 2 不變號。",
+      "target": "解雙邊不等式並計數",
+      "choices": [
+        "3 個",
+        "4 個",
+        "6 個",
+        "5 個"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "−1≤2x+3<9 ⇒ −4≤2x<6 ⇒ −2≤x<3。列整數 −2、−1、0、1、2，數得 5。",
+        "result": "5 個",
+        "answerIndexVerified": 3
+      },
+      "explanation": "兩邊同減 3 得 −4≤2x<6，再同除以 2 得 −2≤x<3。整數為 −2、−1、0、1、2，共 5 個。",
+      "steps": [
+        "同步處理雙邊不等式",
+        "列出 −2 到 2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3 個",
+          "truth": false,
+          "reason": "漏算兩端附近。"
+        },
+        {
+          "choice": "4 個",
+          "truth": false,
+          "reason": "選項「4 個」漏算一個。，與獨立解得的「5 個」不一致。"
+        },
+        {
+          "choice": "6 個",
+          "truth": false,
+          "reason": "選項「6 個」錯含 3。，與獨立解得的「5 個」不一致。"
+        },
+        {
+          "choice": "5 個",
+          "truth": true,
+          "reason": "獨立重算得到「5 個」，此選項與完整解答一致。"
+        }
+      ],
+      "misconceptionTarget": "雙邊操作只處理一側，或計數漏加 1。",
+      "prerequisiteCheck": "需會雙邊同加減與計數。",
+      "estimatedTimeSec": "95",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "−2 包含，3 排除，共 5 個。",
+      "difficultyReason": "多步雙邊解集。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "248871ba5e309d79d7ec332bacc8050e6fb823f94505d1a26704f3fb3f256639"
+    },
+    {
+      "questionId": "u07-s006-v006",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "x≥−3.6 的最小整數解為何？",
+      "givenConditions": "x 為整數。",
+      "target": "找負小數下界的最小整數",
+      "choices": [
+        "−3",
+        "−4",
+        "−2",
+        "不存在"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "數線上 −4<−3.6<−3。條件要求在 −3.6 右側含邊界，第一個整數是 −3。",
+        "result": "−3",
+        "answerIndexVerified": 0
+      },
+      "explanation": "−4 小於 −3.6，不符合；−3 大於 −3.6，是最小符合的整數。",
+      "steps": [
+        "比較相鄰整數 −4、−3",
+        "選第一個不小於 −3.6 的整數"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "−3",
+          "truth": true,
+          "reason": "獨立重算得到「−3」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "−4",
+          "truth": false,
+          "reason": "−4 不符合。"
+        },
+        {
+          "choice": "−2",
+          "truth": false,
+          "reason": "−2 符合但不是最小。"
+        },
+        {
+          "choice": "不存在",
+          "truth": false,
+          "reason": "有最小整數 −3。"
+        }
+      ],
+      "misconceptionTarget": "對負小數使用錯誤取整方向。",
+      "prerequisiteCheck": "需比較負小數。",
+      "estimatedTimeSec": "55",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "相鄰整數測試排除 −4、保留 −3。",
+      "difficultyReason": "負數取整。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "6999d66c5767b14b965adc42eedd6106e15a49f18d325c15ba0fb40315347269"
+    },
+    {
+      "questionId": "u07-s006-v007",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "若整數 x 滿足 2< (x+1)/3 ≤5，則所有整數解的和為何？",
+      "givenConditions": "x 為整數；乘正數 3。",
+      "target": "解分數型雙邊不等式並求和",
+      "choices": [
+        "81",
+        "84",
+        "90",
+        "96"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "2<(x+1)/3≤5 ⇒ 6<x+1≤15 ⇒ 5<x≤14。整數 6,7,…,14 共 9 個，和=(6+14)×9÷2=90。",
+        "result": "90",
+        "answerIndexVerified": 2
+      },
+      "explanation": "乘以正數 3 得 6<x+1≤15，再減 1 得 5<x≤14。整數為 6 至 14，共 9 個；首尾平均為 10，所以總和 9×10=90。",
+      "steps": [
+        "乘以正 3，方向不變",
+        "減 1 得 5<x≤14",
+        "列出 6 至 14",
+        "用項數乘平均數求和"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "81",
+          "truth": false,
+          "reason": "相當於少算一個 9 或錯用項數。"
+        },
+        {
+          "choice": "84",
+          "truth": false,
+          "reason": "不是 6 至 14 九個整數的總和。"
+        },
+        {
+          "choice": "90",
+          "truth": true,
+          "reason": "(6+14)×9÷2=90。"
+        },
+        {
+          "choice": "96",
+          "truth": false,
+          "reason": "多加了 6。"
+        }
+      ],
+      "misconceptionTarget": "解集計數或等差數列總和錯誤。",
+      "prerequisiteCheck": "需會雙邊不等式與連續整數和。",
+      "estimatedTimeSec": "125",
+      "unitAndRoundingCheck": "無單位；總和精確。",
+      "ambiguityAndBoundaryAudit": "左端嚴格排除 5，右端包含 14；修正後選項含唯一正確總和 90。",
+      "difficultyReason": "多步解集與求和。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "22a54d003f47a66943eb09a224141a633e0c776688a0ae0c6b2c69884a7e05d1"
+    },
+    {
+      "questionId": "u07-s006-v008",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "整數 x 滿足 −7<2x−1≤9。下列哪個敘述正確？",
+      "givenConditions": "x 為整數。",
+      "target": "由解集判斷多項敘述",
+      "choices": [
+        "最大解為 6",
+        "共有 8 個整數解",
+        "最小解為 −4",
+        "解的和為 4"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "−3<x≤5，整數為 −2,−1,0,1,2,3,4,5，數量 8；最大 5，最小 −2，和 12。",
+        "result": "共有 8 個整數解",
+        "answerIndexVerified": 1
+      },
+      "explanation": "加 1 得 −6<2x≤10，除以 2 得 −3<x≤5。整數解 −2 至 5，共 8 個。",
+      "steps": [
+        "解雙邊範圍",
+        "列 −2 到 5 並計數"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "最大解為 6",
+          "truth": false,
+          "reason": "最大解是 5。"
+        },
+        {
+          "choice": "共有 8 個整數解",
+          "truth": true,
+          "reason": "獨立重算得到「共有 8 個整數解」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "最小解為 −4",
+          "truth": false,
+          "reason": "最小解是 −2。"
+        },
+        {
+          "choice": "解的和為 4",
+          "truth": false,
+          "reason": "總和為 12，不是 4。"
+        }
+      ],
+      "misconceptionTarget": "嚴格左端點誤納入 −3。",
+      "prerequisiteCheck": "需會雙邊解法與計數。",
+      "estimatedTimeSec": "105",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "完整列舉可唯一驗證四敘述。",
+      "difficultyReason": "同時檢查最大、最小、個數與和。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "4a0cfec17862d33b58f2b25d1ada10b66197b7bd0468538e0aa32a1674cf8eaf"
+    },
+    {
+      "questionId": "u07-s006-v009",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "若 x<k 的整數解中最大者為 7，且 k 為整數，則 k 為何？",
+      "givenConditions": "k 為整數。",
+      "target": "由最大整數解反求整數端點",
+      "choices": [
+        "8",
+        "7",
+        "6",
+        "可能有很多值"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "derivation": "對整數 k，所有小於 k 的整數中最大為 k−1。令 k−1=7，解得 k=8。",
+        "result": "8",
+        "answerIndexVerified": 0
+      },
+      "explanation": "k 為整數且嚴格排除 k，最大整數解會是 k−1。由 k−1=7 得 k=8。",
+      "steps": [
+        "利用嚴格整數上界",
+        "解 k−1=7"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "8",
+          "truth": true,
+          "reason": "獨立重算得到「8」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "若 k=7 最大解為 6。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "若 k=6 最大解為 5。"
+        },
+        {
+          "choice": "可能有很多值",
+          "truth": false,
+          "reason": "k 已限定整數，因此唯一。"
+        }
+      ],
+      "misconceptionTarget": "未使用 k 為整數的條件。",
+      "prerequisiteCheck": "需理解開端點與相鄰整數。",
+      "estimatedTimeSec": "90",
+      "unitAndRoundingCheck": "無單位。",
+      "ambiguityAndBoundaryAudit": "若 k 非整數可能有範圍，但題目已明示整數。",
+      "difficultyReason": "反向邊界推理。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "e601ba543c4b1bb04428b714239c904bd9319fb00a00bbe7858a199a8b35d506"
+    },
+    {
+      "questionId": "u07-s006-v010",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "劇院一排座位編號為整數。維修區規定編號 n 必須滿足 12<n≤18。可使用的座位共有幾個？",
+      "givenConditions": "n 為座位整數編號。",
+      "target": "在編號情境計數整數解",
+      "choices": [
+        "5 個",
+        "7 個",
+        "6 個",
+        "8 個"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "derivation": "從第一個大於 12 的編號 13，到包含的 18，共 18−13+1=6 個。",
+        "result": "6 個",
+        "answerIndexVerified": 2
+      },
+      "explanation": "符合的整數為 13、14、15、16、17、18，共 6 個。",
+      "steps": [
+        "排除 12",
+        "包含 18",
+        "列舉並計數"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5 個",
+          "truth": false,
+          "reason": "漏算 18。"
+        },
+        {
+          "choice": "7 個",
+          "truth": false,
+          "reason": "錯把 12 也算入。"
+        },
+        {
+          "choice": "6 個",
+          "truth": true,
+          "reason": "獨立重算得到「6 個」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "8 個",
+          "truth": false,
+          "reason": "多算其他座位。"
+        }
+      ],
+      "misconceptionTarget": "兩端包含性造成座位數 off-by-one。",
+      "prerequisiteCheck": "需會列有限整數區間。",
+      "estimatedTimeSec": "60",
+      "unitAndRoundingCheck": "單位為個座位，無換算。",
+      "ambiguityAndBoundaryAudit": "座位編號連續且端點規則明確。",
+      "difficultyReason": "情境簡單但端點必須精確。",
+      "literacyContextNecessity": "座位編號的離散性使整數解計數不可省略。",
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "d10a4962b729e524833641fdb39d8fb5ea8203c8d96d8592af7bd0e752c645f6"
+    },
+    {
+      "questionId": "u07-s006-v011",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "一箱商品規定每箱至少 24 件且少於 30 件，件數 m 為整數。若每件貼 2 張標籤，最少需要幾張標籤？",
+      "givenConditions": "24≤m<30，m 為整數。",
+      "target": "從整數範圍求衍生最小量",
+      "choices": [
+        "46 張",
+        "48 張",
+        "50 張",
+        "60 張"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "derivation": "最少可裝 24 件；每件 2 張，總數 2×24=48。上界不影響最小值。",
+        "result": "48 張",
+        "answerIndexVerified": 1
+      },
+      "explanation": "件數最小為 24，因至少包含 24。每件 2 張，所以最少 24×2=48 張。",
+      "steps": [
+        "找最小整數件數 24",
+        "乘每件標籤數 2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "46 張",
+          "truth": false,
+          "reason": "相當於 23 件，不符合至少 24。"
+        },
+        {
+          "choice": "48 張",
+          "truth": true,
+          "reason": "獨立重算得到「48 張」，此選項與完整解答一致。"
+        },
+        {
+          "choice": "50 張",
+          "truth": false,
+          "reason": "用 25 件不是最少。"
+        },
+        {
+          "choice": "60 張",
+          "truth": false,
+          "reason": "用 30 件且上界排除。"
+        }
+      ],
+      "misconceptionTarget": "忽略至少端點，或用上界求最少。",
+      "prerequisiteCheck": "需會範圍與乘法。",
+      "estimatedTimeSec": "75",
+      "unitAndRoundingCheck": "件與張單位關係為每件 2 張。",
+      "ambiguityAndBoundaryAudit": "m=24 可行且是最小；標籤數因此唯一。",
+      "difficultyReason": "需由整數解再計算衍生量。",
+      "literacyContextNecessity": "裝箱件數範圍與每件標籤數共同決定最少標籤，情境不可刪除。",
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "e612c624d3ff1859f2e896964d008d5cf4d7f2a0b6499e42d9ce710a8a73a2fd"
+    },
+    {
+      "questionId": "u07-s006-v012",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
+      "text": "溫度紀錄只取整數攝氏度。某實驗需 −4.5<T<1.2。符合的整數溫度之和為何？",
+      "givenConditions": "T 僅取整數 °C。",
+      "target": "在測量精度情境列整數解並求和",
+      "choices": [
+        "−10",
+        "−6",
+        "0",
+        "−9"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "derivation": "−4.5 右邊第一個整數 −4，到小於 1.2 的最後整數 1。相加 (−4−3−2−1)+(0+1)=−10+1=−9。",
+        "result": "−9",
+        "answerIndexVerified": 3
+      },
+      "explanation": "整數溫度為 −4、−3、−2、−1、0、1，其和為 −9。",
+      "steps": [
+        "列出兩小數端點間整數",
+        "相加"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "−10",
+          "truth": false,
+          "reason": "漏算或多算。"
+        },
+        {
+          "choice": "−6",
+          "truth": false,
+          "reason": "只加部分負數。"
+        },
+        {
+          "choice": "0",
+          "truth": false,
+          "reason": "不可能總和為 0。"
+        },
+        {
+          "choice": "−9",
+          "truth": true,
+          "reason": "獨立重算得到「−9」，此選項與完整解答一致。"
+        }
+      ],
+      "misconceptionTarget": "負整數列舉或加總錯誤。",
+      "prerequisiteCheck": "需會比較小數與負數加法。",
+      "estimatedTimeSec": "90",
+      "unitAndRoundingCheck": "單位 °C；總和作數值統計，不需另加單位也可，選項以數值表示。",
+      "ambiguityAndBoundaryAudit": "−4.5、1.2 均非整數，端點嚴格性不改變相鄰整數列舉。",
+      "difficultyReason": "含負小數端點與總和。",
+      "literacyContextNecessity": "紀錄精度限定整數，否則解集無限且無法求有限總和。",
+      "tags": [
+        "代數",
+        "一元一次不等式",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "8baa0ebb63fe51a0ad04c67f42647d3e97c7bee10029d0a02cd852a6e1f27e6e"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u07-s006-cr001",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "type": "constructed-response",
+      "prompt": "解不等式 3x−2<16。若 x 限定為整數，列出所有非負整數解，並求其總和。",
+      "requiredWork": [
+        "先求實數解集",
+        "加入整數與非負限制",
+        "完整列舉",
+        "計算總和"
+      ],
+      "fullCreditSolution": [
+        "3x<18，所以 x<6。",
+        "非負整數且小於 6，因此 x=0、1、2、3、4、5。",
+        "總和為 0+1+2+3+4+5=15。"
+      ],
+      "alternativeMethod": [
+        "可用 1+2+3+4+5=5×6÷2=15；仍需列出 0 至 5 以顯示整數範圍。"
+      ],
+      "reasoningSteps": [
+        "解一次不等式",
+        "取實數解與非負整數的交集",
+        "處理嚴格上界",
+        "加總"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "得到 x<6，完整列 0 至 5，總和正確為 15。"
+        },
+        {
+          "score": 2,
+          "criteria": "解集與列舉正確但總和算錯；或漏寫 0 但其餘流程正確。"
+        },
+        {
+          "score": 1,
+          "criteria": "能求出上界 6 或列出大部分正確整數，但端點或非負限制有概念錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "列出大於等於 6 的數且無有效不等式步驟，或未作答。"
+        }
+      ],
+      "partialCreditRules": "漏列 0 屬非負整數概念錯誤；把 6 納入屬嚴格端點錯誤，各自影響列舉分。",
+      "followThroughPolicy": "若上界算錯一個常數，但學生依其嚴格上界正確列整數與加總，可給程序分。",
+      "unitAndNotationRules": "x 無單位；總和也無單位。需使用整數清單或清楚範圍。",
+      "answerOnlyPolicy": "只寫 15 而無解集和列舉，最多 1 分。",
+      "commonErrors": [
+        "把 6 列入",
+        "把非負整數誤解為從 1 開始"
+      ],
+      "figureId": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "非負整數解 0、1、2、3、4、5，總和 15。",
+        "ambiguity": "「非負整數」明確包含 0，原式嚴格小於明確排除 6。",
+        "scope": "國中不等式整數解與有限加總。",
+        "reviewNote": "獨立重算 3x−2<16 ⇒ x<6；逐一代入 0 至 5 均成立，6 使 16<16 為假；總和重新計算為 15。"
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "f3e8c5422f1edce622b6da8ba7ec32b7dc9ff1ca2f371ac064455b0639354b79"
+    },
+    {
+      "questionId": "u07-s006-cr002",
+      "unitId": "u07",
+      "numericUnitId": 7,
+      "topicId": "u07-solution-sets",
+      "skillId": "inequality-integer-solutions",
+      "type": "constructed-response",
+      "prompt": "整數 n 滿足 −2.5<n≤4.2。求所有整數解的個數、最大整數解與最小整數解，並說明端點小數如何處理。",
+      "requiredWork": [
+        "找出第一個與最後一個符合整數",
+        "列出或計數",
+        "回答最大與最小整數解",
+        "說明小數端點"
+      ],
+      "fullCreditSolution": [
+        "大於 −2.5 的最小整數是 −2；不超過 4.2 的最大整數是 4。",
+        "整數解為 −2、−1、0、1、2、3、4。",
+        "共有 7 個，最大整數解為 4，最小整數解為 −2。",
+        "端點 −2.5 與 4.2 本身不是整數，因此改找區間內相鄰的整數，不做四捨五入。"
+      ],
+      "alternativeMethod": [
+        "也可直接用首尾計數：4−(−2)+1=7，再用端點比較驗證 −2 與 4。"
+      ],
+      "reasoningSteps": [
+        "比較小數端點與相鄰整數",
+        "確定首尾整數",
+        "使用末減首加一",
+        "區分取整與四捨五入"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確列出 −2 至 4、個數 7、最大 4、最小 −2，並說明不是四捨五入。"
+        },
+        {
+          "score": 2,
+          "criteria": "首尾與個數正確但未說明小數端點；或列舉只漏一個中間數但最大最小正確。"
+        },
+        {
+          "score": 1,
+          "criteria": "能找對其中一個端點整數或使用 n−m+1，但另一端處理錯誤。"
+        },
+        {
+          "score": 0,
+          "criteria": "把 −2.5、4.2 當整數解或完全以四捨五入決定答案。"
+        }
+      ],
+      "partialCreditRules": "若個數以 4−(−2)=6 漏加 1，首尾與最大最小仍正確，可給 2 分。",
+      "followThroughPolicy": "若學生誤把第一個整數寫 −3，但之後從 −3 連續計數，可給計數程序分，惟左端比較概念不得給。",
+      "unitAndNotationRules": "最大、最小與個數均無單位；負號需清楚。",
+      "answerOnlyPolicy": "只寫「7 個」而無首尾或說明，最多 1 分。",
+      "commonErrors": [
+        "把 −3 納入因為接近 −2.5",
+        "把 4.2 四捨五入成 4 當作唯一理由"
+      ],
+      "figureId": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "整數解 −2 至 4，共 7 個；最大 4、最小 −2。",
+        "ambiguity": "兩個小數端點均非整數，嚴格與含等號不影響端點本身是否可列，但相鄰整數唯一。",
+        "scope": "國中雙邊不等式整數解。",
+        "reviewNote": "獨立比較 −3<−2.5 不符、−2>−2.5 符合；4≤4.2 符合、5>4.2 不符，故首尾 −2 與 4，計數 7。"
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "contentSha256": "5c1e06627e784d8b8538a446c904ed5f98b7e1698597e558de7da9efb05bcbb9"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "008-u07-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/008-u07-complete/units/u07/s006"
+}

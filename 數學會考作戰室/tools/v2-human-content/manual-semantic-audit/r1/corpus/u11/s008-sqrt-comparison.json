@@ -1,0 +1,1325 @@
+{
+  "slot": "s008",
+  "skillId": "sqrt-comparison",
+  "topicId": "u11-square-root",
+  "title": "平方根大小比較：用平方做精確判斷",
+  "lecture": {
+    "lectureId": "u11-s008-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "sqrt-comparison",
+    "lockedSkillOrder": 8,
+    "lockedTitle": "平方根大小比較",
+    "title": "平方根大小比較：用平方做精確判斷",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能比較√a與整數",
+      "能比較含係數與負號的根式",
+      "能處理排序與根式不等式"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "sqrt-rationalize-simple",
+        "requiredLevel": "能使用前一技能「分母有理化基本」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "單調性",
+        "definition": "非負數越大，其平方根越大。"
+      },
+      {
+        "term": "平方比較",
+        "definition": "正數大小可由平方大小判定。"
+      },
+      {
+        "term": "相反數次序",
+        "definition": "正數大小取負後方向反轉。"
+      },
+      {
+        "term": "等值轉換",
+        "definition": "將整數或係數根式改寫成可比較形式。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "a<b⇒√a<√b",
+        "meaning": "a,b≥0。"
+      },
+      {
+        "symbol": "(m√n)²=m²n",
+        "meaning": "m√n≥0時可用於比較。"
+      }
+    ],
+    "conceptNarrative": [
+      "比較√a與k時，可把k寫成√(k²)。",
+      "比較m√n與√p時，兩者非負即可平方。",
+      "兩個負根式先比較其正值，再反轉大小方向。",
+      "根式和可能要先化簡，不能只看單一被開方數。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "非負根式比較",
+        "statement": "平方函數在非負範圍遞增。"
+      },
+      {
+        "name": "負值比較",
+        "statement": "乘以-1時不等號反向。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "m√n ? √p",
+        "conditions": [
+          "若兩邊非負，改比較m²n與p。"
+        ],
+        "meaning": "避免小數近似誤差。"
+      }
+    ],
+    "nonApplicableCases": [
+      "平方比較前要確認兩邊非負。",
+      "不能只比較根號內數而忽略外係數。",
+      "負號會反轉次序。",
+      "近似相同不代表相等。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "先化簡所有根式。",
+        "check": "避免不同外觀掩蓋同值。"
+      },
+      {
+        "step": 2,
+        "instruction": "判斷正負。",
+        "check": "決定能否直接平方。"
+      },
+      {
+        "step": 3,
+        "instruction": "轉成共同形式。",
+        "check": "全寫根式或比較平方。"
+      },
+      {
+        "step": 4,
+        "instruction": "完成大小判斷。",
+        "check": "負數時記得反向。"
+      },
+      {
+        "step": 5,
+        "instruction": "用整數區間或小數驗算。",
+        "check": "排除量級錯誤。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "比較√15與4。",
+        "solutionSteps": [
+          "4=√16。",
+          "15<16。"
+        ],
+        "answer": "√15<4。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "比較2√5與√21。",
+        "solutionSteps": [
+          "平方為20與21。"
+        ],
+        "answer": "2√5<√21。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "比較-√10與-3。",
+        "solutionSteps": [
+          "√10>3。",
+          "取負反向。"
+        ],
+        "answer": "-√10<-3。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "排序√6、√8、√7。",
+        "solutionSteps": [
+          "同為非負根式。",
+          "比較被開方數。"
+        ],
+        "answer": "√6<√7<√8。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "3√2<√10，因2<10。",
+        "why": "忽略外係數3。",
+        "correction": "比較平方18與10。"
+      },
+      {
+        "mistake": "-√5>-2，因√5>2。",
+        "why": "取負後方向反轉。",
+        "correction": "-√5<-2。"
+      },
+      {
+        "mistake": "√49>7。",
+        "why": "兩者其實相等。",
+        "correction": "√49=7。"
+      },
+      {
+        "mistake": "比較時先取粗略整數。",
+        "why": "可能把很接近的數判錯。",
+        "correction": "使用平方精確比較。"
+      },
+      {
+        "mistake": "兩邊含根號就直接去掉根號。",
+        "why": "外係數與正負可能不同。",
+        "correction": "先確認形式與非負性。"
+      },
+      {
+        "mistake": "把a<b推出√a>√b。",
+        "why": "單調方向錯。",
+        "correction": "非負範圍平方根保持次序。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "非負根式可用平方比較。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "先化簡所有根式。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "3√2<√10，因2<10。；修正：比較平方18與10。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "我能用平方精確驗算嗎？"
+      }
+    ],
+    "summary": [
+      "非負根式可用平方比較。",
+      "外係數、負號與化簡都會影響次序。"
+    ],
+    "connections": {
+      "previous": "需要 s004 的估算、s003 的化簡與平方。",
+      "next": [
+        "s009 畢氏定理會比較邊長並辨認斜邊。",
+        "s016 素養題常需在近似值間決策。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s008-v001",
+        "u11-s008-v002",
+        "u11-s008-v003",
+        "u11-s008-v004",
+        "u11-s008-v005",
+        "u11-s008-v006",
+        "u11-s008-v007",
+        "u11-s008-v008",
+        "u11-s008-v009",
+        "u11-s008-v010",
+        "u11-s008-v011",
+        "u11-s008-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s008-cr001",
+        "u11-s008-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「平方根大小比較」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「3√2<√10，因2<10。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "12e48ff5f1210d24f1bc95b3f3c3041a854c65545d3cab42220b874ebd393e1c"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u11-s008-v001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "比較 √11 與 3 的大小。",
+      "givenConditions": [
+        "兩數皆非負。"
+      ],
+      "target": "判斷大小關係。",
+      "choices": [
+        "√11<3",
+        "√11=3",
+        "無法比較",
+        "√11>3"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：把3寫成√9，比較被開方數11與9。 詳算檢查：11>9=3²，所以√11>3。 因此結果為「√11>3」。",
+      "explanation": "11>9=3²，所以√11>3。",
+      "steps": [
+        "整理條件：兩數皆非負。",
+        "獨立推導：不參照選項，從題幹條件重新計算：把3寫成√9，比較被開方數11與9。 詳算檢查：11>9=3²，所以√11>3。 因此結果為「√11>3」。",
+        "核對目標：答案「√11>3」確實回應「判斷大小關係。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√11<3",
+          "truth": false,
+          "reason": "因11>9，平方根也應較大。"
+        },
+        {
+          "choice": "√11=3",
+          "truth": false,
+          "reason": "3²=9不是11。"
+        },
+        {
+          "choice": "無法比較",
+          "truth": false,
+          "reason": "兩者皆非負，可平方比較。"
+        },
+        {
+          "choice": "√11>3",
+          "truth": true,
+          "reason": "此選項符合目標「判斷大小關係。」；11>9=3²，所以√11>3。"
+        }
+      ],
+      "misconceptionTarget": "看到根式就認為不能比較。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "基本單調性比較。；具體任務是「判斷大小關係。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "8001ba47ef1e814f80727b219cb2ecda2a31235494c4358236d81dce7e40f92f"
+    },
+    {
+      "questionId": "u11-s008-v002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "因為 50>49=7²，下列哪一個推論正確？",
+      "givenConditions": [
+        "比較的被開方數皆非負。"
+      ],
+      "target": "從被開方數不等式推出根式不等式。",
+      "choices": [
+        "√50<7",
+        "√50>7",
+        "√50=7",
+        "√50>49"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：把完整不等式兩邊取非負平方根。 詳算檢查：非負數開平方保持大小，因此由50>49可得√50>√49=7。 因此結果為「√50>7」。",
+      "explanation": "非負數開平方保持大小，因此由50>49可得√50>√49=7。",
+      "steps": [
+        "整理條件：比較的被開方數皆非負。",
+        "獨立推導：不參照選項，從題幹條件重新計算：把完整不等式兩邊取非負平方根。 詳算檢查：非負數開平方保持大小，因此由50>49可得√50>√49=7。 因此結果為「√50>7」。",
+        "核對目標：答案「√50>7」確實回應「從被開方數不等式推出根式不等式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√50<7",
+          "truth": false,
+          "reason": "平方根在非負範圍保持大小。"
+        },
+        {
+          "choice": "√50>7",
+          "truth": true,
+          "reason": "此選項符合目標「從被開方數不等式推出根式不等式。」；非負數開平方保持大小，因此由50>49可得√50>√49=7。"
+        },
+        {
+          "choice": "√50=7",
+          "truth": false,
+          "reason": "50不等於49。"
+        },
+        {
+          "choice": "√50>49",
+          "truth": false,
+          "reason": "√50約7.07，不大於49。"
+        }
+      ],
+      "misconceptionTarget": "只背結論而不知道大小推論的前提。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "考查推論鏈而非單純換數比較。；具體任務是「從被開方數不等式推出根式不等式。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e1c14701e61fe89e8bb2f6b965e5bf82379d8fb796f0a3d64d44534b6c2389c8"
+    },
+    {
+      "questionId": "u11-s008-v003",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列哪個最大？",
+      "givenConditions": [
+        "候選皆為正數。"
+      ],
+      "target": "找最大值。",
+      "choices": [
+        "3",
+        "√8",
+        "√10",
+        "2√2"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：把所有正數寫成根式後比較8、9、10。 詳算檢查：3=√9，2√2=√8，因此√10最大。 因此結果為「√10」。",
+      "explanation": "3=√9，2√2=√8，因此√10最大。",
+      "steps": [
+        "整理條件：候選皆為正數。",
+        "獨立推導：不參照選項，從題幹條件重新計算：把所有正數寫成根式後比較8、9、10。 詳算檢查：3=√9，2√2=√8，因此√10最大。 因此結果為「√10」。",
+        "核對目標：答案「√10」確實回應「找最大值。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "3=√9，小於√10。"
+        },
+        {
+          "choice": "√8",
+          "truth": false,
+          "reason": "被開方數較小。"
+        },
+        {
+          "choice": "√10",
+          "truth": true,
+          "reason": "此選項符合目標「找最大值。」；3=√9，2√2=√8，因此√10最大。"
+        },
+        {
+          "choice": "2√2",
+          "truth": false,
+          "reason": "平方為8，也小於√10。"
+        }
+      ],
+      "misconceptionTarget": "只看外觀係數。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需做簡單等值轉換。；具體任務是「找最大值。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "508957a18ff30c1fed17de958eb7c33f630986c2b45cf7dfc6c0f224c525ce4b"
+    },
+    {
+      "questionId": "u11-s008-v004",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "比較 2√3 與 √13。",
+      "givenConditions": [
+        "兩者皆非負。"
+      ],
+      "target": "比較含係數根式。",
+      "choices": [
+        "2√3<√13",
+        "2√3>√13",
+        "2√3=√13",
+        "符號無法決定"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：(2√3)²=12，(√13)²=13。 詳算檢查：兩者皆正，平方後分別為12與13，所以2√3<√13。 因此結果為「2√3<√13」。",
+      "explanation": "兩者皆正，平方後分別為12與13，所以2√3<√13。",
+      "steps": [
+        "整理條件：兩者皆非負。",
+        "獨立推導：不參照選項，從題幹條件重新計算：(2√3)²=12，(√13)²=13。 詳算檢查：兩者皆正，平方後分別為12與13，所以2√3<√13。 因此結果為「2√3<√13」。",
+        "核對目標：答案「2√3<√13」確實回應「比較含係數根式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2√3<√13",
+          "truth": true,
+          "reason": "此選項符合目標「比較含係數根式。」；兩者皆正，平方後分別為12與13，所以2√3<√13。"
+        },
+        {
+          "choice": "2√3>√13",
+          "truth": false,
+          "reason": "平方後12<13。"
+        },
+        {
+          "choice": "2√3=√13",
+          "truth": false,
+          "reason": "兩者平方不等。"
+        },
+        {
+          "choice": "符號無法決定",
+          "truth": false,
+          "reason": "皆為正，可平方。"
+        }
+      ],
+      "misconceptionTarget": "只比較係數2與1。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需用平方消去根號。；具體任務是「比較含係數根式。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "703ddc615055f64a43c88466b86541e2a22f8dfd11239b678bcf72f210261bc0"
+    },
+    {
+      "questionId": "u11-s008-v005",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "不使用小數近似時，3√2 與 √17 的正確大小關係為何？",
+      "givenConditions": [
+        "兩個比較量皆為正數，可用平方值18與17判斷。"
+      ],
+      "target": "以平方比較選出正確關係。",
+      "choices": [
+        "3√2<√17",
+        "3√2>√17",
+        "兩者相等",
+        "無法判斷"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：正數平方函數保持大小。 詳算檢查：平方後18>17，因此3√2>√17。 因此結果為「3√2>√17」。",
+      "explanation": "平方後18>17，因此3√2>√17。",
+      "steps": [
+        "整理條件：兩個比較量皆為正數，可用平方值18與17判斷。",
+        "獨立推導：不參照選項，從題幹條件重新計算：正數平方函數保持大小。 詳算檢查：平方後18>17，因此3√2>√17。 因此結果為「3√2>√17」。",
+        "核對目標：答案「3√2>√17」確實回應「以平方比較選出正確關係。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3√2<√17",
+          "truth": false,
+          "reason": "平方後18>17。"
+        },
+        {
+          "choice": "3√2>√17",
+          "truth": true,
+          "reason": "此選項符合目標「以平方比較選出正確關係。」；平方後18>17，因此3√2>√17。"
+        },
+        {
+          "choice": "兩者相等",
+          "truth": false,
+          "reason": "平方不相等。"
+        },
+        {
+          "choice": "無法判斷",
+          "truth": false,
+          "reason": "可比較平方。"
+        }
+      ],
+      "misconceptionTarget": "估算不精確造成反向。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需準確平方係數。；具體任務是「以平方比較選出正確關係。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "334aa43bdea1cc334de36a44de57055c89547c811077b5bb7b2ad5a46dbdc4fe"
+    },
+    {
+      "questionId": "u11-s008-v006",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "比較 -√5 與 -2。",
+      "givenConditions": [
+        "兩數皆為負。"
+      ],
+      "target": "比較負根式與負整數。",
+      "choices": [
+        "-√5>-2",
+        "-√5=-2",
+        "-√5<-2",
+        "無法比較"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先比較正值，再利用乘以-1會反轉不等號。 詳算檢查：√5>2，所以取相反數後 -√5<-2。 因此結果為「-√5<-2」。",
+      "explanation": "√5>2，所以取相反數後 -√5<-2。",
+      "steps": [
+        "整理條件：兩數皆為負。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先比較正值，再利用乘以-1會反轉不等號。 詳算檢查：√5>2，所以取相反數後 -√5<-2。 因此結果為「-√5<-2」。",
+        "核對目標：答案「-√5<-2」確實回應「比較負根式與負整數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-√5>-2",
+          "truth": false,
+          "reason": "√5>2，取負後方向反轉。"
+        },
+        {
+          "choice": "-√5=-2",
+          "truth": false,
+          "reason": "5≠4。"
+        },
+        {
+          "choice": "-√5<-2",
+          "truth": true,
+          "reason": "此選項符合目標「比較負根式與負整數。」；√5>2，所以取相反數後 -√5<-2。"
+        },
+        {
+          "choice": "無法比較",
+          "truth": false,
+          "reason": "可由正值比較後取相反數。"
+        }
+      ],
+      "misconceptionTarget": "忽略負號使大小方向反轉。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "多一層符號判斷。；具體任務是「比較負根式與負整數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "0bd774945dbf36152463e9c17c32342587d5acbc12825accd29ae6d41c3c08fc"
+    },
+    {
+      "questionId": "u11-s008-v007",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列排序何者正確？",
+      "givenConditions": [
+        "所有數皆正。"
+      ],
+      "target": "排序三個根式量。",
+      "choices": [
+        "2√2<√7<3",
+        "√7<3<2√2",
+        "3<√7<2√2",
+        "√7<2√2<3"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：統一寫成√7、√8、√9後排序。 詳算檢查：平方比較：√7約2.646，2√2=√8約2.828，3=√9，所以依序√7<2√2<3。 因此結果為「√7<2√2<3」。",
+      "explanation": "平方比較：√7約2.646，2√2=√8約2.828，3=√9，所以依序√7<2√2<3。",
+      "steps": [
+        "整理條件：所有數皆正。",
+        "獨立推導：不參照選項，從題幹條件重新計算：統一寫成√7、√8、√9後排序。 詳算檢查：平方比較：√7約2.646，2√2=√8約2.828，3=√9，所以依序√7<2√2<3。 因此結果為「√7<2√2<3」。",
+        "核對目標：答案「√7<2√2<3」確實回應「排序三個根式量。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2√2<√7<3",
+          "truth": false,
+          "reason": "平方後8>7。"
+        },
+        {
+          "choice": "√7<3<2√2",
+          "truth": false,
+          "reason": "2√2約2.828<3。"
+        },
+        {
+          "choice": "3<√7<2√2",
+          "truth": false,
+          "reason": "√7<3。"
+        },
+        {
+          "choice": "√7<2√2<3",
+          "truth": true,
+          "reason": "此選項符合目標「排序三個根式量。」；平方比較：√7約2.646，2√2=√8約2.828，3=√9，所以依序√7<2√2<3。"
+        }
+      ],
+      "misconceptionTarget": "未把係數移入根號。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需進行多項等值化。；具體任務是「排序三個根式量。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9723df011dbea3ac1f4aade11ead4043adca19dd05b038966be3b475e50bb919"
+    },
+    {
+      "questionId": "u11-s008-v008",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "若 a>0，且 √a<5，則 a 必須滿足何者？",
+      "givenConditions": [
+        "已知a>0。"
+      ],
+      "target": "把根式不等式轉為a的範圍。",
+      "choices": [
+        "0<a<25",
+        "a>25",
+        "a<5",
+        "a≤0"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：由0<√a<5平方，得到0<a<25。 詳算檢查：兩邊皆非負，平方得 a<25，再合併 a>0。 因此結果為「0<a<25」。",
+      "explanation": "兩邊皆非負，平方得 a<25，再合併 a>0。",
+      "steps": [
+        "整理條件：已知a>0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：由0<√a<5平方，得到0<a<25。 詳算檢查：兩邊皆非負，平方得 a<25，再合併 a>0。 因此結果為「0<a<25」。",
+        "核對目標：答案「0<a<25」確實回應「把根式不等式轉為a的範圍。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0<a<25",
+          "truth": true,
+          "reason": "此選項符合目標「把根式不等式轉為a的範圍。」；兩邊皆非負，平方得 a<25，再合併 a>0。"
+        },
+        {
+          "choice": "a>25",
+          "truth": false,
+          "reason": "平方不等號方向錯。"
+        },
+        {
+          "choice": "a<5",
+          "truth": false,
+          "reason": "忘記5也要平方。"
+        },
+        {
+          "choice": "a≤0",
+          "truth": false,
+          "reason": "與a>0矛盾。"
+        }
+      ],
+      "misconceptionTarget": "只平方含根號的一邊。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需合併原條件與平方結果。；具體任務是「把根式不等式轉為a的範圍。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d4af707b5184862447a0f9a59b90962ca542b14f62337655c60a3626071e1b8b"
+    },
+    {
+      "questionId": "u11-s008-v009",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "比較 √18+√8 與 7。",
+      "givenConditions": [
+        "兩邊均正。"
+      ],
+      "target": "比較根式和與整數。",
+      "choices": [
+        "√18+√8>7",
+        "√18+√8<7",
+        "兩者相等",
+        "無法不用小數判斷"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先化簡合併，再比較兩個正數的平方。 詳算檢查：√18+√8=3√2+2√2=5√2；平方為50，而7²=49，所以前者較大。 因此結果為「√18+√8>7」。",
+      "explanation": "√18+√8=3√2+2√2=5√2；平方為50，而7²=49，所以前者較大。",
+      "steps": [
+        "整理條件：兩邊均正。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先化簡合併，再比較兩個正數的平方。 詳算檢查：√18+√8=3√2+2√2=5√2；平方為50，而7²=49，所以前者較大。 因此結果為「√18+√8>7」。",
+        "核對目標：答案「√18+√8>7」確實回應「比較根式和與整數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√18+√8>7",
+          "truth": true,
+          "reason": "此選項符合目標「比較根式和與整數。」；√18+√8=3√2+2√2=5√2；平方為50，而7²=49，所以前者較大。"
+        },
+        {
+          "choice": "√18+√8<7",
+          "truth": false,
+          "reason": "化簡後為5√2約7.07。"
+        },
+        {
+          "choice": "兩者相等",
+          "truth": false,
+          "reason": "(5√2)²=50≠49。"
+        },
+        {
+          "choice": "無法不用小數判斷",
+          "truth": false,
+          "reason": "可比較平方50與49。"
+        }
+      ],
+      "misconceptionTarget": "分別粗估後誤判為相等。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "結合根式運算與平方比較。；具體任務是「比較根式和與整數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6cebb9fc9809cc269f08ea949673e1cd5fc9931d7625f07499186b6166a34090"
+    },
+    {
+      "questionId": "u11-s008-v010",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "兩種方形地磚邊長分別為 √30 公分與 5.4 公分。哪一種邊長較長？",
+      "givenConditions": [
+        "兩者皆為正長度。"
+      ],
+      "target": "選較長地磚。",
+      "choices": [
+        "5.4公分較長",
+        "兩者相等",
+        "資料不足",
+        "√30 公分較長"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：兩長度皆正，平方後比較29.16與30。 詳算檢查：5.4²=29.16<30，所以5.4<√30。 因此結果為「√30 公分較長」。",
+      "explanation": "5.4²=29.16<30，所以5.4<√30。",
+      "steps": [
+        "整理條件：兩者皆為正長度。",
+        "獨立推導：不參照選項，從題幹條件重新計算：兩長度皆正，平方後比較29.16與30。 詳算檢查：5.4²=29.16<30，所以5.4<√30。 因此結果為「√30 公分較長」。",
+        "核對目標：答案「√30 公分較長」確實回應「選較長地磚。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5.4公分較長",
+          "truth": false,
+          "reason": "5.4²=29.16<30。"
+        },
+        {
+          "choice": "兩者相等",
+          "truth": false,
+          "reason": "平方值不同。"
+        },
+        {
+          "choice": "資料不足",
+          "truth": false,
+          "reason": "可平方比較。"
+        },
+        {
+          "choice": "√30 公分較長",
+          "truth": true,
+          "reason": "此選項符合目標「選較長地磚。」；5.4²=29.16<30，所以5.4<√30。"
+        }
+      ],
+      "misconceptionTarget": "認為根式一定小於相近整數。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "兩者單位同為公分。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需要以精確平方避免近似誤差。；具體任務是「選較長地磚。」。",
+      "literacyContextNecessity": "實際採購選擇取決於長度比較。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b356fe226e0628190cd121cc320da1aa52c0048a0a2f359b37f812a200e354cf"
+    },
+    {
+      "questionId": "u11-s008-v011",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "A路線長 √65 公里，B路線長 8.1 公里。導航應推薦較短的哪一條？",
+      "givenConditions": [
+        "兩路線長度皆正。"
+      ],
+      "target": "選較短路線。",
+      "choices": [
+        "B路線",
+        "A路線",
+        "兩條相同",
+        "無法比較"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：不必估小數，只比較平方即可。 詳算檢查：√65<8.1，因65<8.1²=65.61，所以A較短。 因此結果為「A路線」。",
+      "explanation": "√65<8.1，因65<8.1²=65.61，所以A較短。",
+      "steps": [
+        "整理條件：兩路線長度皆正。",
+        "獨立推導：不參照選項，從題幹條件重新計算：不必估小數，只比較平方即可。 詳算檢查：√65<8.1，因65<8.1²=65.61，所以A較短。 因此結果為「A路線」。",
+        "核對目標：答案「A路線」確實回應「選較短路線。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "B路線",
+          "truth": false,
+          "reason": "8.1²=65.61>65。"
+        },
+        {
+          "choice": "A路線",
+          "truth": true,
+          "reason": "此選項符合目標「選較短路線。」；√65<8.1，因65<8.1²=65.61，所以A較短。"
+        },
+        {
+          "choice": "兩條相同",
+          "truth": false,
+          "reason": "平方值不等。"
+        },
+        {
+          "choice": "無法比較",
+          "truth": false,
+          "reason": "兩長度皆正，可平方。"
+        }
+      ],
+      "misconceptionTarget": "近似把√65當8.1而判為相同。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "公里單位一致。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "精確比較非常接近的數。；具體任務是「選較短路線。」。",
+      "literacyContextNecessity": "推薦結果直接依賴哪條較短。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "83ada130d69007b6443584824d1418dca7baeb30450111f368f82557d94c6ed5"
+    },
+    {
+      "questionId": "u11-s008-v012",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "兩支支架承載指標分別為 4√3 與 √47，數值較大者優先使用。應選哪一支？",
+      "givenConditions": [
+        "指標均為正值。"
+      ],
+      "target": "依指標選支架。",
+      "choices": [
+        "√47的支架",
+        "兩者相等",
+        "4√3 的支架",
+        "不能比較不同形式"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：承載指標皆正，平方比較不改變順序。 詳算檢查：(4√3)²=48，而(√47)²=47，所以4√3較大。 因此結果為「4√3 的支架」。",
+      "explanation": "(4√3)²=48，而(√47)²=47，所以4√3較大。",
+      "steps": [
+        "整理條件：指標均為正值。",
+        "獨立推導：不參照選項，從題幹條件重新計算：承載指標皆正，平方比較不改變順序。 詳算檢查：(4√3)²=48，而(√47)²=47，所以4√3較大。 因此結果為「4√3 的支架」。",
+        "核對目標：答案「4√3 的支架」確實回應「依指標選支架。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√47的支架",
+          "truth": false,
+          "reason": "平方後47<48。"
+        },
+        {
+          "choice": "兩者相等",
+          "truth": false,
+          "reason": "平方值不同。"
+        },
+        {
+          "choice": "4√3 的支架",
+          "truth": true,
+          "reason": "此選項符合目標「依指標選支架。」；(4√3)²=48，而(√47)²=47，所以4√3較大。"
+        },
+        {
+          "choice": "不能比較不同形式",
+          "truth": false,
+          "reason": "正數可平方比較。"
+        }
+      ],
+      "misconceptionTarget": "只比較根號內47與3，忽略係數4。",
+      "prerequisiteCheck": "需能使用先備技能 sqrt-rationalize-simple，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需處理係數根式的精確比較。；具體任務是「依指標選支架。」。",
+      "literacyContextNecessity": "優先使用規則使大小比較具有實際決策作用。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根大小比較",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "2b0ec1254dbe69a9191128b75f6c17ea1dc833c24053de010d89775bff97e59f"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u11-s008-cr001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "不用小數，證明 3√5>√44。",
+      "requiredWork": [
+        "確認兩邊非負",
+        "比較平方",
+        "寫出結論"
+      ],
+      "fullCreditSolution": [
+        "兩邊皆為正。",
+        "(3√5)²=45，(√44)²=44。",
+        "45>44，所以3√5>√44。"
+      ],
+      "standardAnswer": "3√5>√44。",
+      "alternativeMethod": "把3√5寫成√45，再比較√45與√44。",
+      "reasoningSteps": [
+        "兩邊皆為正。",
+        "(3√5)²=45，(√44)²=44。",
+        "45>44，所以3√5>√44。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：非負性；平方45與44；正確大小結論，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：非負性；平方45與44；正確大小結論。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「非負性」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「非負性」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「非負性」但後續失誤，可依證據給1分。",
+        "若完成「非負性」與「平方45與44」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "只比較5與44",
+        "未確認正值就平方"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "3√5>√44。",
+        "recomputation": "兩邊皆為正。；(3√5)²=45，(√44)²=44。；45>44，所以3√5>√44。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「正確大小結論」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c6886bd60a52cbd41a7276388b475da2d38e54e7fb50cf38394b46929d598b2b"
+    },
+    {
+      "questionId": "u11-s008-cr002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-comparison",
+      "lockedSkillOrder": 8,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "將 -√12、-3、-2√2 由小到大排列，說明負號如何影響順序。",
+      "requiredWork": [
+        "先比較正值",
+        "處理根式化簡或平方",
+        "反轉負值次序"
+      ],
+      "fullCreditSolution": [
+        "√12=2√3，約3.464；3；2√2約2.828。",
+        "正值大小為√12>3>2√2。",
+        "取負後順序反轉。"
+      ],
+      "standardAnswer": "-√12<-3<-2√2。",
+      "alternativeMethod": "不用小數：比較平方12、9、8，再取相反數反轉。",
+      "reasoningSteps": [
+        "√12=2√3，約3.464；3；2√2約2.828。",
+        "正值大小為√12>3>2√2。",
+        "取負後順序反轉。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：正值排序12>9>8；說明反轉；負值排序正確，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：正值排序12>9>8；說明反轉；負值排序正確。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「正值排序12>9>8」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「正值排序12>9>8」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「正值排序12>9>8」但後續失誤，可依證據給1分。",
+        "若完成「正值排序12>9>8」與「說明反轉」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "負號後仍保持原順序",
+        "把-√12化成-√6"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "-√12<-3<-2√2。",
+        "recomputation": "√12=2√3，約3.464；3；2√2約2.828。；正值大小為√12>3>2√2。；取負後順序反轉。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「負值排序正確」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "8de8a7f1c98be4be4d0b8ed9e62ae329efaf6257a635913485ab3ffb6d6846f0"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "012-u11-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/012-u11-complete/units/u11/s008"
+}

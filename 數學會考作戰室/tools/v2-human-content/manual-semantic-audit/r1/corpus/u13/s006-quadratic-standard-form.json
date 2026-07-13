@@ -1,0 +1,1185 @@
+{
+  "slot": "s006",
+  "skillId": "quadratic-standard-form",
+  "topicId": "u13-solving",
+  "title": "一元二次方程式標準式與係數",
+  "lecture": {
+    "lectureId": "u13-s006-lecture-r1",
+    "unitId": "u13",
+    "numericUnitId": 13,
+    "topicId": "u13-solving",
+    "skillId": "quadratic-standard-form",
+    "lockedOrder": 6,
+    "originalLockedTitle": "標準式與係數",
+    "title": "一元二次方程式標準式與係數",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能判斷一個等式是否為一元二次方程式。",
+      "能整理成 ax²+bx+c=0。",
+      "能正確讀出含正負號的 a、b、c。",
+      "能處理參數使二次項消失的退化情況。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "quadratic-square-root-method",
+        "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+      }
+    ],
+    "prerequisiteBridge": "承接平方根解法，但退回更基本的方程式辨認與整理，建立後續選法基礎。",
+    "glossary": [
+      {
+        "term": "標準式",
+        "definition": "ax²+bx+c=0，其中 a、b、c 為常數且 a≠0。"
+      },
+      {
+        "term": "二次項係數",
+        "definition": "x² 前的數 a。"
+      },
+      {
+        "term": "一次項係數",
+        "definition": "x 前的數 b；沒有 x 項時 b=0。"
+      },
+      {
+        "term": "常數項",
+        "definition": "不含 x 的項 c；沒有常數項時 c=0。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "ax²+bx+c=0",
+        "meaning": "一元二次方程式的標準式，a≠0。"
+      },
+      {
+        "symbol": "a≠0",
+        "meaning": "保證最高次確實為 2。"
+      }
+    ],
+    "conceptNarrative": [
+      "「一元」表示只有一個未知數；「二次」表示整理後最高次為 2。",
+      "讀係數前要把所有項移到同一邊，使另一邊為 0。",
+      "係數包含符號，例如 -3x 的係數是 -3。",
+      "缺項不代表無法寫標準式：x²-9=0 可視為 a=1、b=0、c=-9。",
+      "含參數時，若參數讓 a=0，方程式會退化為一次方程式或常數等式。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "一元二次方程式",
+        "statement": "可整理為 ax²+bx+c=0，且 a≠0，只含未知數 x。"
+      },
+      {
+        "name": "等價標準式",
+        "statement": "整個方程式乘除同一非零常數所得標準式具有相同解集。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "ax²+bx+c=0",
+        "conditions": [
+          "a、b、c 為常數",
+          "a≠0",
+          "只有一個未知數"
+        ],
+        "meaning": "判斷類型並讀取係數。"
+      }
+    ],
+    "nonApplicableCases": [
+      "含 x 在分母的方程式不直接屬於此標準式，需先處理定義域。",
+      "a=0 時不可繼續稱為一元二次方程式。",
+      "x²+y=0 含兩個未知數，不是一元。",
+      "最高次超過 2 的方程式不屬本節。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "展開括號並合併同類項。",
+        "check": "是否仍有未展開乘積？"
+      },
+      {
+        "step": 2,
+        "instruction": "把所有項移到同一邊。",
+        "check": "另一邊是否為 0？"
+      },
+      {
+        "step": 3,
+        "instruction": "按 x²、x、常數排列。",
+        "check": "缺項是否以係數 0 表示？"
+      },
+      {
+        "step": 4,
+        "instruction": "讀出 a、b、c 並保留符號。",
+        "check": "a 是否非 0？"
+      },
+      {
+        "step": 5,
+        "instruction": "若含參數，列出保持二次的限制。",
+        "check": "參數是否可能讓 a=0？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "將 2x(x-3)=5 整理成標準式。",
+        "solutionSteps": [
+          "展開為 2x²-6x=5。",
+          "移項得 2x²-6x-5=0。"
+        ],
+        "answer": "a=2，b=-6，c=-5。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "將 4-3x=x² 整理成標準式。",
+        "solutionSteps": [
+          "全部移到右邊或左邊。",
+          "取正二次項得 x²+3x-4=0。"
+        ],
+        "answer": "a=1，b=3，c=-4。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "讀出 5x²-12=0 的係數。",
+        "solutionSteps": [
+          "沒有 x 項，所以 b=0。"
+        ],
+        "answer": "a=5，b=0，c=-12。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "判斷 (k-1)x²+3x-4=0 何時為二次方程式。",
+        "solutionSteps": [
+          "二次項係數為 k-1。",
+          "要求 k-1≠0。"
+        ],
+        "answer": "k≠1。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "右邊未化為 0 就讀係數。",
+        "why": "移項後符號可能改變。",
+        "correction": "先完成標準式。"
+      },
+      {
+        "mistake": "把 -6x 的係數讀成 6。",
+        "why": "漏掉負號。",
+        "correction": "係數包含前方符號。"
+      },
+      {
+        "mistake": "沒有 x 項就說 b 不存在。",
+        "why": "缺項係數應為 0。",
+        "correction": "寫 b=0。"
+      },
+      {
+        "mistake": "只看到 x² 就判為二次。",
+        "why": "可能含另一未知數或更高次項。",
+        "correction": "檢查未知數數量與最高次。"
+      },
+      {
+        "mistake": "參數題忘記 a≠0。",
+        "why": "方程式可能退化。",
+        "correction": "列出參數限制。"
+      },
+      {
+        "mistake": "整式乘 -1 後認為解改變。",
+        "why": "同乘非零數不改變等式解集。",
+        "correction": "可選較方便的等價標準式。"
+      }
+    ],
+    "selfCheck": [
+      "是否只有一個未知數？",
+      "最高次是否為 2？",
+      "右邊是否為 0？",
+      "缺項係數是否補 0？",
+      "a 是否確定非 0？"
+    ],
+    "summary": [
+      "標準式是所有二次方程式解法的共同起點。",
+      "係數必須從整理後的式子讀取。",
+      "缺項用 0 表示。",
+      "參數不可讓二次項係數變成 0。"
+    ],
+    "connections": {
+      "previous": "承接平方根解法，但退回更基本的方程式辨認與整理，建立後續選法基礎。",
+      "next": [
+        "下一節會把標準式整理後進行因式分解。",
+        "公式解與判別式都依賴正確的 a、b、c。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u13-s006-v001",
+        "u13-s006-v002",
+        "u13-s006-v003",
+        "u13-s006-v004",
+        "u13-s006-v005",
+        "u13-s006-v006",
+        "u13-s006-v007",
+        "u13-s006-v008",
+        "u13-s006-v009",
+        "u13-s006-v010",
+        "u13-s006-v011",
+        "u13-s006-v012"
+      ],
+      "constructedResponseIds": [
+        "u13-s006-cr001",
+        "u13-s006-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "reviewNote": "逐題展開與移項後重新比對係數；確認 L2 選擇正二次項的等價式、L3 的 b=0，以及 k=1 時確實退化為一次方程式。",
+      "reviewVersion": "human-lecture-review-u13-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "16261e8622343e6682924df8319983ead2c17842de25ad0343465c942043efca"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u13-s006-v001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "下列何者是一元二次方程式的標準式？",
+      "givenConditions": "a、b、c 為常數。",
+      "target": "辨認標準式定義",
+      "choices": [
+        "ax+b=0，a≠0",
+        "ax²+bx+c=0，a≠0",
+        "ax³+bx+c=0，a≠0",
+        "ax²+bx+c=0，a=0"
+      ],
+      "answerIndex": 1,
+      "explanation": "確認只有 x 一個未知數；最高次 2 且 a≠0，所以答案為「ax²+bx+c=0，a≠0」。",
+      "steps": [
+        "確認只有 x 一個未知數",
+        "最高次 2 且 a≠0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "ax+b=0，a≠0",
+          "truth": false,
+          "reason": "這是一次方程式。"
+        },
+        {
+          "choice": "ax²+bx+c=0，a≠0",
+          "truth": true,
+          "reason": "最高次為 2 且二次項係數不能為 0。"
+        },
+        {
+          "choice": "ax³+bx+c=0，a≠0",
+          "truth": false,
+          "reason": "最高次為 3。"
+        },
+        {
+          "choice": "ax²+bx+c=0，a=0",
+          "truth": false,
+          "reason": "會退化，最高次不再為 2。"
+        }
+      ],
+      "misconceptionTarget": "忽略 a≠0 或最高次",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 50,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "標準式條件完整。",
+      "difficultyReason": "定義辨認。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認標準式定義",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f460798fd2f07c2d81979a723a411a3da087a346d6ae69bbbf675febd1148c65"
+    },
+    {
+      "questionId": "u13-s006-v002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "3x²-2x+7=0 的 a、b、c 為何？",
+      "givenConditions": "右邊為 0。",
+      "target": "讀出係數",
+      "choices": [
+        "a=3，b=2，c=7",
+        "a=-3，b=-2，c=7",
+        "a=3，b=-2，c=-7",
+        "a=3，b=-2，c=7"
+      ],
+      "answerIndex": 3,
+      "explanation": "方程式已為標準式；讀得 3、-2、7，所以答案為「a=3，b=-2，c=7」。",
+      "steps": [
+        "方程式已為標準式",
+        "讀得 3、-2、7"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "a=3，b=2，c=7",
+          "truth": false,
+          "reason": "漏掉 b 的負號。"
+        },
+        {
+          "choice": "a=-3，b=-2，c=7",
+          "truth": false,
+          "reason": "誤把等號前視為負。"
+        },
+        {
+          "choice": "a=3，b=-2，c=-7",
+          "truth": false,
+          "reason": "常數符號錯。"
+        },
+        {
+          "choice": "a=3，b=-2，c=7",
+          "truth": true,
+          "reason": "依 x²、x、常數逐項讀係數並保留符號。"
+        }
+      ],
+      "misconceptionTarget": "忽略負號",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 50,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "係數唯一。",
+      "difficultyReason": "基本係數辨認。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "讀出係數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "280b25c25fa8d380aac892414a1e8838fe797a4a53e9516ea480b38aad7d9608"
+    },
+    {
+      "questionId": "u13-s006-v003",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "將 2x(x-3)=5 整理成標準式，何者正確？",
+      "givenConditions": "所有項移到同一邊。",
+      "target": "整理乘積方程式",
+      "choices": [
+        "2x²-6x-5=0",
+        "2x²-3x-5=0",
+        "2x²-6x+5=0",
+        "2x²-6x=0"
+      ],
+      "answerIndex": 0,
+      "explanation": "展開 2x(x-3)=2x²-6x；減 5 得 2x²-6x-5=0，所以答案為「2x²-6x-5=0」。",
+      "steps": [
+        "展開 2x(x-3)=2x²-6x",
+        "減 5 得 2x²-6x-5=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2x²-6x-5=0",
+          "truth": true,
+          "reason": "先展開 2x²-6x，再把 5 移到左邊。"
+        },
+        {
+          "choice": "2x²-3x-5=0",
+          "truth": false,
+          "reason": "分配律漏乘 x 或 2。"
+        },
+        {
+          "choice": "2x²-6x+5=0",
+          "truth": false,
+          "reason": "移項常數符號錯。"
+        },
+        {
+          "choice": "2x²-6x=0",
+          "truth": false,
+          "reason": "漏掉原方程式右端 5。"
+        }
+      ],
+      "misconceptionTarget": "分配律或移項錯",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 65,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "可選整體乘 -1 的等價式，但本題選項指定形式。",
+      "difficultyReason": "展開與移項。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "整理乘積方程式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "2dd80f86ab066162bc3c46c4468d26963c7ba2c6cca5054f03e07a2040904650"
+    },
+    {
+      "questionId": "u13-s006-v004",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "將 4-3x=x² 整理成二次項係數為正的標準式。",
+      "givenConditions": "要求二次項係數為正。",
+      "target": "依指定形式整理標準式",
+      "choices": [
+        "x²-3x+4=0",
+        "-x²-3x+4=0",
+        "x²+3x-4=0",
+        "x²+3x+4=0"
+      ],
+      "answerIndex": 2,
+      "explanation": "由 4-3x=x² 得 0=x²+3x-4；改寫為 x²+3x-4=0，所以答案為「x²+3x-4=0」。",
+      "steps": [
+        "由 4-3x=x² 得 0=x²+3x-4",
+        "改寫為 x²+3x-4=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x²-3x+4=0",
+          "truth": false,
+          "reason": "移項符號不完整。"
+        },
+        {
+          "choice": "-x²-3x+4=0",
+          "truth": false,
+          "reason": "雖等價且是標準式，但二次項係數為負，不符合題目指定。"
+        },
+        {
+          "choice": "x²+3x-4=0",
+          "truth": true,
+          "reason": "把左邊所有項移到右邊，再以正二次項排列。"
+        },
+        {
+          "choice": "x²+3x+4=0",
+          "truth": false,
+          "reason": "常數符號錯。"
+        }
+      ],
+      "misconceptionTarget": "忽略題目要求 a>0 或符號錯",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 75,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "等價的負倍數不符合指定呈現。",
+      "difficultyReason": "含形式條件的整理。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "依指定形式整理標準式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "32ab859bbe735be104434fd2656fed8c0baaac508443d9fdfc77bd2abbf7eeeb"
+    },
+    {
+      "questionId": "u13-s006-v005",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "(x+2)(x-5)=7 的標準式為何？",
+      "givenConditions": "等號右端 7 必須納入。",
+      "target": "整理兩括號方程式",
+      "choices": [
+        "x²-3x-3=0",
+        "x²+3x-17=0",
+        "x²-7x-10=0",
+        "x²-3x-17=0"
+      ],
+      "answerIndex": 3,
+      "explanation": "展開 x²-3x-10=7；兩邊減 7 得 x²-3x-17=0，所以答案為「x²-3x-17=0」。",
+      "steps": [
+        "展開 x²-3x-10=7",
+        "兩邊減 7 得 x²-3x-17=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x²-3x-3=0",
+          "truth": false,
+          "reason": "把 -10 與 7 相加錯。"
+        },
+        {
+          "choice": "x²+3x-17=0",
+          "truth": false,
+          "reason": "一次項符號錯。"
+        },
+        {
+          "choice": "x²-7x-10=0",
+          "truth": false,
+          "reason": "展開中間項錯。"
+        },
+        {
+          "choice": "x²-3x-17=0",
+          "truth": true,
+          "reason": "展開得 x²-3x-10=7，再移項。"
+        }
+      ],
+      "misconceptionTarget": "FOIL 中間項或常數移項錯",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 85,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "標準式係數唯一到非零倍數。",
+      "difficultyReason": "兩階段展開與移項。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "整理兩括號方程式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "5c4cc2985301d31e49fbac923124add191d37d8b4f922a58f277e9ada24823e3"
+    },
+    {
+      "questionId": "u13-s006-v006",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "下列哪一個不是一元二次方程式？",
+      "givenConditions": "一元要求只有一個未知數。",
+      "target": "辨認「一元」條件",
+      "choices": [
+        "x²-9=0",
+        "x²+y-3=0",
+        "2x²+5x=0",
+        "(x-1)(x+1)=0"
+      ],
+      "answerIndex": 1,
+      "explanation": "逐項檢查未知數數量與最高次；含 y 的選項有兩個未知數，所以答案為「x²+y-3=0」。",
+      "steps": [
+        "逐項檢查未知數數量與最高次",
+        "含 y 的選項有兩個未知數"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x²-9=0",
+          "truth": false,
+          "reason": "只有 x，最高次 2。"
+        },
+        {
+          "choice": "x²+y-3=0",
+          "truth": true,
+          "reason": "含 x、y 兩個未知數，不是一元。"
+        },
+        {
+          "choice": "2x²+5x=0",
+          "truth": false,
+          "reason": "只有 x，a=2。"
+        },
+        {
+          "choice": "(x-1)(x+1)=0",
+          "truth": false,
+          "reason": "展開為 x²-1=0。"
+        }
+      ],
+      "misconceptionTarget": "只看到 x² 就忽略另一未知數",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 75,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "括號形式可展開判斷。",
+      "difficultyReason": "概念分類。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認「一元」條件",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "1ba97e68b1254c30ec7819086f4f5be8058d338357fee5af459af67d61998f94"
+    },
+    {
+      "questionId": "u13-s006-v007",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "方程式 (k-1)x²+3x-4=0 為一元二次方程式時，k 的條件為何？",
+      "givenConditions": "a 只需非 0，不必為正。",
+      "target": "求保持二次的參數條件",
+      "choices": [
+        "k≠1",
+        "k=1",
+        "k>1",
+        "k≥0"
+      ],
+      "answerIndex": 0,
+      "explanation": "要求 k-1≠0；解得 k≠1，所以答案為「k≠1」。",
+      "steps": [
+        "要求 k-1≠0",
+        "解得 k≠1"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "k≠1",
+          "truth": true,
+          "reason": "二次項係數 k-1 必須不為 0。"
+        },
+        {
+          "choice": "k=1",
+          "truth": false,
+          "reason": "此時只剩 3x-4=0，一次方程式。"
+        },
+        {
+          "choice": "k>1",
+          "truth": false,
+          "reason": "k<1 但不等於 1 也可。"
+        },
+        {
+          "choice": "k≥0",
+          "truth": false,
+          "reason": "k=1 仍被錯納。"
+        }
+      ],
+      "misconceptionTarget": "把二次項係數誤要求為正",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 90,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "排除唯一值。",
+      "difficultyReason": "參數退化判斷。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求保持二次的參數條件",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b9ba134e76069df34d44165e22ec0e5cb6b4fe2a111d2d9c7f57d7921c2153c9"
+    },
+    {
+      "questionId": "u13-s006-v008",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "將 (1/2)x²-(3/4)x+1=0 化為整數係數且最大公因數為 1 的標準式。",
+      "givenConditions": "乘以非零常數不改解集。",
+      "target": "正規化分數係數標準式",
+      "choices": [
+        "x²-3x+4=0",
+        "2x²-3x+1=0",
+        "2x²-3x+4=0",
+        "4x²-6x+8=0"
+      ],
+      "answerIndex": 2,
+      "explanation": "所有項乘 4；得到 2x²-3x+4=0，所以答案為「2x²-3x+4=0」。",
+      "steps": [
+        "所有項乘 4",
+        "得到 2x²-3x+4=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x²-3x+4=0",
+          "truth": false,
+          "reason": "x² 項只乘 2，未一致。"
+        },
+        {
+          "choice": "2x²-3x+1=0",
+          "truth": false,
+          "reason": "常數未乘 4。"
+        },
+        {
+          "choice": "2x²-3x+4=0",
+          "truth": true,
+          "reason": "整式乘 4 清除分母，係數 2、-3、4 無共同因數。"
+        },
+        {
+          "choice": "4x²-6x+8=0",
+          "truth": false,
+          "reason": "等價但係數仍有公因數 2，不符合最簡要求。"
+        }
+      ],
+      "misconceptionTarget": "清分母未作用全部項或未約公因數",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 100,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "題目指定整數係數最簡。",
+      "difficultyReason": "等價標準式與規格化。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "正規化分數係數標準式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6e4aad001c3e3b193512e3110c9e3651f500f9924055ee37b6b859c1df527523"
+    },
+    {
+      "questionId": "u13-s006-v009",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "若 ax²+bx+c=0 中 a=0，最準確的敘述為何？",
+      "givenConditions": "未給 b、c，不能再細分。",
+      "target": "說明 a≠0 的必要性",
+      "choices": [
+        "它一定沒有解",
+        "它不再是一元二次方程式",
+        "它一定有無限多解",
+        "仍可直接套求根公式"
+      ],
+      "answerIndex": 1,
+      "explanation": "代入 a=0 得 bx+c=0；最高次不再為 2，所以答案為「它不再是一元二次方程式」。",
+      "steps": [
+        "代入 a=0 得 bx+c=0",
+        "最高次不再為 2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "它一定沒有解",
+          "truth": false,
+          "reason": "若 b≠0，仍有一個一次方程式解。"
+        },
+        {
+          "choice": "它不再是一元二次方程式",
+          "truth": true,
+          "reason": "二次項消失，可能成為一次方程式、矛盾式或恆等式。"
+        },
+        {
+          "choice": "它一定有無限多解",
+          "truth": false,
+          "reason": "只有特定 b=c=0 才如此。"
+        },
+        {
+          "choice": "仍可直接套求根公式",
+          "truth": false,
+          "reason": "公式分母 2a=0，且類型已退化。"
+        }
+      ],
+      "misconceptionTarget": "把退化情況一概判成某種解數",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 105,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "唯一必然結論是類型改變。",
+      "difficultyReason": "概念邊界與多情況分析。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "說明 a≠0 的必要性",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "26541cea2b86b23617ca062483383f030a8ed3792cc1461be95a68ccb2f00ae9"
+    },
+    {
+      "questionId": "u13-s006-v010",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "一塊長方形場地寬 x 公尺、長 x+5 公尺，面積 84 平方公尺。標準式為何？",
+      "givenConditions": "x>0，但本題只問列式。",
+      "target": "由面積文字列標準式",
+      "choices": [
+        "x²+5=84",
+        "2x+5=84",
+        "x²-5x-84=0",
+        "x²+5x-84=0"
+      ],
+      "answerIndex": 3,
+      "explanation": "列 x(x+5)=84；展開移項得 x²+5x-84=0，所以答案為「x²+5x-84=0」。",
+      "steps": [
+        "列 x(x+5)=84",
+        "展開移項得 x²+5x-84=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x²+5=84",
+          "truth": false,
+          "reason": "漏乘 x。"
+        },
+        {
+          "choice": "2x+5=84",
+          "truth": false,
+          "reason": "把面積誤作長寬和。"
+        },
+        {
+          "choice": "x²-5x-84=0",
+          "truth": false,
+          "reason": "長度增加 5 的符號錯。"
+        },
+        {
+          "choice": "x²+5x-84=0",
+          "truth": true,
+          "reason": "面積關係 x(x+5)=84，移項即可。"
+        }
+      ],
+      "misconceptionTarget": "混用周長或差值",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 90,
+      "unitCheck": "x 與 x+5 為公尺，乘積為平方公尺。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "平方公尺來自兩個公尺量相乘。",
+      "difficultyReason": "從量的關係建立標準式。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為面積單位與長寬差是列出二次乘積的必要情境。",
+      "authoringIntent": "由面積文字列標準式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e6bab465e1c8df06276808402432443221964c8829e95b6fe158b13263f8f237"
+    },
+    {
+      "questionId": "u13-s006-v011",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "某成本模型為 500+20n=2n²。化為整數係數且首項係數為正的最簡標準式為何？",
+      "givenConditions": "2 非 0。",
+      "target": "整理並約簡模型方程式",
+      "choices": [
+        "2n²+20n+500=0",
+        "n²-20n-500=0",
+        "n²-10n-250=0",
+        "n²+10n-250=0"
+      ],
+      "answerIndex": 2,
+      "explanation": "移到右側：2n²-20n-500=0；除以 2 得 n²-10n-250=0，所以答案為「n²-10n-250=0」。",
+      "steps": [
+        "移到右側：2n²-20n-500=0",
+        "除以 2 得 n²-10n-250=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2n²+20n+500=0",
+          "truth": false,
+          "reason": "移項符號錯。"
+        },
+        {
+          "choice": "n²-20n-500=0",
+          "truth": false,
+          "reason": "只除二次項係數。"
+        },
+        {
+          "choice": "n²-10n-250=0",
+          "truth": true,
+          "reason": "移項得 2n²-20n-500=0，再整式除以 2。"
+        },
+        {
+          "choice": "n²+10n-250=0",
+          "truth": false,
+          "reason": "一次項符號錯。"
+        }
+      ],
+      "misconceptionTarget": "移項或整式除法不一致",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 100,
+      "unitCheck": "等號兩邊皆為成本單位；n 為數量。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "要求最大公因數消去。",
+      "difficultyReason": "情境模型的標準化。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為成本與二次產出等式提供了必須整理的實際模型。",
+      "authoringIntent": "整理並約簡模型方程式",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "45c5c0fc38e3371d8059dba3f6c099dfb0dd2de0ff8299b7983215d708f97c76"
+    },
+    {
+      "questionId": "u13-s006-v012",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "lockedSkillOrder": 6,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "位移模型 s=15t-5t²，當 s=20 時，化為首項係數為 1 的標準式為何？",
+      "givenConditions": "t 為時間，題目只要求列式。",
+      "target": "依指定係數整理運動模型",
+      "choices": [
+        "t²-3t+4=0",
+        "t²+3t-4=0",
+        "5t²-15t+20=0",
+        "t²-3t-4=0"
+      ],
+      "answerIndex": 0,
+      "explanation": "代入 s=20：20=15t-5t²；移項 -5t²+15t-20=0，再除 -5，所以答案為「t²-3t+4=0」。",
+      "steps": [
+        "代入 s=20：20=15t-5t²",
+        "移項 -5t²+15t-20=0，再除 -5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "t²-3t+4=0",
+          "truth": true,
+          "reason": "20=15t-5t²，移項後除以 -5。"
+        },
+        {
+          "choice": "t²+3t-4=0",
+          "truth": false,
+          "reason": "移項與除負數符號錯。"
+        },
+        {
+          "choice": "5t²-15t+20=0",
+          "truth": false,
+          "reason": "等價但首項係數不是 1。"
+        },
+        {
+          "choice": "t²-3t-4=0",
+          "truth": false,
+          "reason": "常數除負數符號錯。"
+        }
+      ],
+      "misconceptionTarget": "除以負數時符號錯",
+      "prerequisiteSkillIds": [
+        "quadratic-square-root-method"
+      ],
+      "estimatedTimeSec": 100,
+      "unitCheck": "模型已統一 s 與 t 的單位；標準化不改單位關係。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "首項係數指定為 1。",
+      "difficultyReason": "多步移項與負數縮放。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為位移模型與指定 s 值共同形成二次方程式。",
+      "authoringIntent": "依指定係數整理運動模型",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "debaa353ebbd12a83ee101db461c7005f6197418aac0215decca6f50c6272b8f"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u13-s006-cr001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "把 5-2x=3x² 整理成二次項係數為正的標準式，並寫出 a、b、c。",
+      "requiredWork": [
+        "展開或移項。",
+        "按降冪排列。",
+        "讀出含符號係數。"
+      ],
+      "fullCreditSolution": [
+        "把左邊移到右邊：0=3x²+2x-5。",
+        "改寫為 3x²+2x-5=0。",
+        "所以 a=3，b=2，c=-5。"
+      ],
+      "alternativeSolutions": [
+        "也可先移到左邊得 -3x²-2x+5=0，再整式乘 -1。"
+      ],
+      "reasoningSteps": [
+        "使右邊為 0。",
+        "依 x²、x、常數排列。",
+        "保留 c 的負號。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "標準式 3x²+2x-5=0 與 a=3、b=2、c=-5 全對。"
+        },
+        {
+          "score": 2,
+          "criteria": "標準式正確但漏列一個係數，或係數全對但排列書寫稍不完整。"
+        },
+        {
+          "score": 1,
+          "criteria": "得到等價的 -3x²-2x+5=0，但未依題意使二次項係數為正，或只有部分移項正確。"
+        },
+        {
+          "score": 0,
+          "criteria": "移項後不等價且係數錯。"
+        }
+      ],
+      "partialCreditRules": [
+        "等價負倍數本來是標準式，但因題目指定 a>0，只給 1 分。",
+        "0=3x²+2x-5 可接受為中間步驟，最終需標準呈現。"
+      ],
+      "followThroughPolicy": "若只把常數移錯一個符號，其他係數概念正確，可給 1 分。",
+      "unitNotationRules": [
+        "x 無單位。",
+        "a、b、c 需寫符號。"
+      ],
+      "answerOnlyPolicy": "只寫 a、b、c 而無標準式，最多 2 分。",
+      "commonErrors": [
+        "把 c 寫 5。",
+        "把 b 寫 -2。",
+        "未化右端為 0。"
+      ],
+      "independentReview": {
+        "derivedResult": "3x²+2x-5=0；a=3，b=2，c=-5。",
+        "ambiguity": "題目指定正二次項，避免等價形式歧義。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "944320c969864d50ab1d49451f08f64ff8bab8c391a0f1270ac2fd8f36c9e581"
+    },
+    {
+      "questionId": "u13-s006-cr002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-solving",
+      "skillId": "quadratic-standard-form",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "對參數方程式 (m-2)x²+(m+1)x-3=0，判斷哪些 m 使它是一元二次方程式；再說明 m=2 時變成什麼。",
+      "requiredWork": [
+        "指出二次項係數條件。",
+        "解參數限制。",
+        "代入退化值分類。"
+      ],
+      "fullCreditSolution": [
+        "要是一元二次方程式，需 m-2≠0，所以 m≠2。",
+        "當 m=2 時，二次項消失，方程式變為 3x-3=0，是一元一次方程式。"
+      ],
+      "alternativeSolutions": [
+        "可直接以標準式定義 a≠0 判斷，不需求根。"
+      ],
+      "reasoningSteps": [
+        "辨認 a=m-2。",
+        "排除 a=0。",
+        "代入 m=2 檢查其餘項。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "m≠2，且正確說明 m=2 時為 3x-3=0 的一次方程式。"
+        },
+        {
+          "score": 2,
+          "criteria": "m≠2 正確，但退化式只說「不是二次」未具體分類。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道要檢查 m-2，但解限制或代入有一處錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "把 m+1 或常數當二次條件，結論錯。"
+        }
+      ],
+      "partialCreditRules": [
+        "不必解退化後的 x=1，但若寫出不扣分。",
+        "「一次方程式」需有 3x-3=0 或等價說明。"
+      ],
+      "followThroughPolicy": "若 m≠2 寫成 m>2，僅保留辨認係數的 1 分。",
+      "unitNotationRules": [
+        "m、x 均無單位。"
+      ],
+      "answerOnlyPolicy": "只寫 m≠2，最多 2 分。",
+      "commonErrors": [
+        "要求所有係數非零。",
+        "誤排 m=-1。",
+        "m=2 仍稱二次。"
+      ],
+      "independentReview": {
+        "derivedResult": "m≠2；m=2 時退化為 3x-3=0。",
+        "ambiguity": "m=2 時一次項係數為 3，沒有再退化為常數式的歧義。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "767ba53403c65c31275ff36515b719d096e810e391615cc8e76aac552d5b6510"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "014-u13-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/014-u13-complete/units/u13/s006"
+}

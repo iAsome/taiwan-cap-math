@@ -1,0 +1,1337 @@
+{
+  "slot": "s002",
+  "skillId": "square-root-simplify",
+  "topicId": "u11-square-root",
+  "title": "根式化簡：提出平方因數並保持等值",
+  "lecture": {
+    "lectureId": "u11-s002-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "square-root-simplify",
+    "lockedSkillOrder": 2,
+    "lockedTitle": "根式化簡",
+    "title": "根式化簡：提出平方因數並保持等值",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能找出被開方數中的完全平方因數",
+      "能將根式化到根號內不含可提出平方因數",
+      "能檢查化簡前後平方值相同"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "square-root-meaning",
+        "requiredLevel": "能使用前一技能「平方根意義」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "根式",
+        "definition": "含有平方根記號的數式。"
+      },
+      {
+        "term": "完全平方因數",
+        "definition": "可寫成整數平方的因數，如4、9、16。"
+      },
+      {
+        "term": "最簡根式",
+        "definition": "根號內不含大於1的完全平方因數，且分母無待處理根式。"
+      },
+      {
+        "term": "提出因數",
+        "definition": "利用√(m²n)=m√n。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "√a",
+        "meaning": "a 的非負平方根。"
+      },
+      {
+        "symbol": "m√n",
+        "meaning": "m 乘以 √n。"
+      },
+      {
+        "symbol": "√(m²n)=m√n",
+        "meaning": "m≥0 時可將平方因數提出。"
+      }
+    ],
+    "conceptNarrative": [
+      "化簡不是改變數值，而是把相同數寫成容易運算的形式。",
+      "最有效的方法是找最大的完全平方因數，但逐步提出也可得到相同結果。",
+      "根號外係數與根號內因數分工：成對的質因數可提出一個。",
+      "化簡完成後，根號內不能再含4、9、16等平方因數。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "最簡根式條件",
+        "statement": "根號內為正整數時，不含大於1的完全平方因數。"
+      },
+      {
+        "name": "等值化簡",
+        "statement": "若a,b≥0，√(ab)=√a√b。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "√(k²m)=k√m",
+        "conditions": [
+          "k≥0、m≥0。"
+        ],
+        "meaning": "把完全平方 k² 開成 k。"
+      },
+      {
+        "formula": "c√a",
+        "conditions": [
+          "先化簡√a，再乘回係數c。"
+        ],
+        "meaning": "係數不可遺漏。"
+      }
+    ],
+    "nonApplicableCases": [
+      "√(a+b)一般不能拆成√a+√b。",
+      "提出36時要變成6，不是36。",
+      "3√12中的3不能被忘記。",
+      "根號內仍含4或9時通常還沒最簡。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "分解被開方數。",
+        "check": "優先尋找最大完全平方因數。"
+      },
+      {
+        "step": 2,
+        "instruction": "把它寫成平方因數×剩餘因數。",
+        "check": "剩餘因數應為正整數。"
+      },
+      {
+        "step": 3,
+        "instruction": "對平方因數開平方並移到根號外。",
+        "check": "√36=6，不是36。"
+      },
+      {
+        "step": 4,
+        "instruction": "乘回原有係數。",
+        "check": "檢查外部係數。"
+      },
+      {
+        "step": 5,
+        "instruction": "確認根號內不能再化簡。",
+        "check": "逐一檢查4、9、16等因數。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "化簡√28。",
+        "solutionSteps": [
+          "28=4×7。",
+          "√4=2。"
+        ],
+        "answer": "2√7。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "化簡√147。",
+        "solutionSteps": [
+          "147=49×3。",
+          "√49=7。"
+        ],
+        "answer": "7√3。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "化簡2√75。",
+        "solutionSteps": [
+          "√75=5√3。",
+          "乘回2。"
+        ],
+        "answer": "10√3。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "化簡√(2⁵×3²)。",
+        "solutionSteps": [
+          "2⁵×3²=(2⁴×3²)×2。",
+          "提出2²×3。"
+        ],
+        "answer": "12√2。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "√48=16√3。",
+        "why": "把平方因數16直接提出。",
+        "correction": "√16=4，所以是4√3。"
+      },
+      {
+        "mistake": "√12=√4+√3。",
+        "why": "錯用根號加法拆分。",
+        "correction": "應用乘法分解√(4×3)。"
+      },
+      {
+        "mistake": "2√18=3√2。",
+        "why": "漏乘原係數2。",
+        "correction": "√18=3√2，所以為6√2。"
+      },
+      {
+        "mistake": "√72=3√8後停止。",
+        "why": "根號內8仍含4。",
+        "correction": "繼續化為6√2。"
+      },
+      {
+        "mistake": "把√50化成25√2。",
+        "why": "未對25開平方。",
+        "correction": "應為5√2。"
+      },
+      {
+        "mistake": "只用小數近似取代精確化簡。",
+        "why": "題目要求根式精確值。",
+        "correction": "保留最簡根式，除非要求近似。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "找平方因數、開平方、留下不能成對的因數。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "分解被開方數。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "√48=16√3。；修正：√16=4，所以是4√3。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "化簡前後平方或近似值是否一致？"
+      }
+    ],
+    "summary": [
+      "找平方因數、開平方、留下不能成對的因數。",
+      "最簡根式是等值而更易運算的寫法。"
+    ],
+    "connections": {
+      "previous": "需要 s001 的平方根意義與整數質因數分解。",
+      "next": [
+        "s003 將先化簡再做根式四則。",
+        "s006 會建立完全平方數辨識速度。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s002-v001",
+        "u11-s002-v002",
+        "u11-s002-v003",
+        "u11-s002-v004",
+        "u11-s002-v005",
+        "u11-s002-v006",
+        "u11-s002-v007",
+        "u11-s002-v008",
+        "u11-s002-v009",
+        "u11-s002-v010",
+        "u11-s002-v011",
+        "u11-s002-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s002-cr001",
+        "u11-s002-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「根式化簡」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「√48=16√3。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "13c9cf9acf426f4a55c7710d6aa83d21a7ac5a64a309a8590e466d8638f4e46b"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u11-s002-v001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某生先把 √12 寫成 √(4×3)。完成開平方後，最簡根式為何？",
+      "givenConditions": [
+        "已指定平方因數分解 12=4×3。"
+      ],
+      "target": "依給定分解完成提出平方因數。",
+      "choices": [
+        "√6",
+        "2√3",
+        "3√2",
+        "4√3"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：找最大完全平方因數 4；√(4×3)=2√3。 詳算檢查：12=4×3，所以 √12=√4×√3=2√3。 因此結果為「2√3」。",
+      "explanation": "12=4×3，所以 √12=√4×√3=2√3。",
+      "steps": [
+        "整理條件：已指定平方因數分解 12=4×3。",
+        "獨立推導：不參照選項，從題幹條件重新計算：找最大完全平方因數 4；√(4×3)=2√3。 詳算檢查：12=4×3，所以 √12=√4×√3=2√3。 因此結果為「2√3」。",
+        "核對目標：答案「2√3」確實回應「依給定分解完成提出平方因數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√6",
+          "truth": false,
+          "reason": "錯誤地把 12 除以 2。"
+        },
+        {
+          "choice": "2√3",
+          "truth": true,
+          "reason": "此選項符合目標「依給定分解完成提出平方因數。」；12=4×3，所以 √12=√4×√3=2√3。"
+        },
+        {
+          "choice": "3√2",
+          "truth": false,
+          "reason": "3√2 的平方是 18。"
+        },
+        {
+          "choice": "4√3",
+          "truth": false,
+          "reason": "提出 4 時未開平方。"
+        }
+      ],
+      "misconceptionTarget": "把完全平方因數直接提出而沒有開平方。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "提供分解步驟，只需正確開出 √4 並保留 √3。；具體任務是「依給定分解完成提出平方因數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "852b99a06d91d4ac9fbf8d98f10b92ef0ab2cea2bd082c4c7b6c693573470f78"
+    },
+    {
+      "questionId": "u11-s002-v002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "小明把 √72 先寫成 3√8。若要繼續化成最簡根式，下一步的結果應為何？",
+      "givenConditions": [
+        "已知中間式3√8與原式√72等值。"
+      ],
+      "target": "完成第二階段化簡。",
+      "choices": [
+        "3√2",
+        "6√8",
+        "9√2",
+        "6√2"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：由√8=√(4×2)=2√2，再乘原係數3。 詳算檢查：3√8=3×2√2=6√2。 因此結果為「6√2」。",
+      "explanation": "3√8=3×2√2=6√2。",
+      "steps": [
+        "整理條件：已知中間式3√8與原式√72等值。",
+        "獨立推導：不參照選項，從題幹條件重新計算：由√8=√(4×2)=2√2，再乘原係數3。 詳算檢查：3√8=3×2√2=6√2。 因此結果為「6√2」。",
+        "核對目標：答案「6√2」確實回應「完成第二階段化簡。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3√2",
+          "truth": false,
+          "reason": "漏掉√8=2√2中的係數2。"
+        },
+        {
+          "choice": "6√8",
+          "truth": false,
+          "reason": "沒有化簡根號內。"
+        },
+        {
+          "choice": "9√2",
+          "truth": false,
+          "reason": "係數相乘錯誤。"
+        },
+        {
+          "choice": "6√2",
+          "truth": true,
+          "reason": "此選項符合目標「完成第二階段化簡。」；3√8=3×2√2=6√2。"
+        }
+      ],
+      "misconceptionTarget": "中途形式等值但尚未最簡，或漏乘係數。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "考查辨認未完成的中間步驟，而非只換一組被開方數。；具體任務是「完成第二階段化簡。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e2ad17418dbc5c7ccf3b8f93b36c5b877e518dee6267c12d19ce80c2034cc4bb"
+    },
+    {
+      "questionId": "u11-s002-v003",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列哪一個式子與 √200 等值，且已是最簡根式？",
+      "givenConditions": [
+        "候選須同時等值且最簡。"
+      ],
+      "target": "選出符合兩項條件的表示式。",
+      "choices": [
+        "10√2",
+        "5√8",
+        "20√5",
+        "100√2"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：同時檢查等值性與最簡條件；10√2平方為200。 詳算檢查：√200=√(100×2)=10√2，且2不含平方因數。 因此結果為「10√2」。",
+      "explanation": "√200=√(100×2)=10√2，且2不含平方因數。",
+      "steps": [
+        "整理條件：候選須同時等值且最簡。",
+        "獨立推導：不參照選項，從題幹條件重新計算：同時檢查等值性與最簡條件；10√2平方為200。 詳算檢查：√200=√(100×2)=10√2，且2不含平方因數。 因此結果為「10√2」。",
+        "核對目標：答案「10√2」確實回應「選出符合兩項條件的表示式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10√2",
+          "truth": true,
+          "reason": "此選項符合目標「選出符合兩項條件的表示式。」；√200=√(100×2)=10√2，且2不含平方因數。"
+        },
+        {
+          "choice": "5√8",
+          "truth": false,
+          "reason": "等值但根號內仍含4。"
+        },
+        {
+          "choice": "20√5",
+          "truth": false,
+          "reason": "平方後不是200。"
+        },
+        {
+          "choice": "100√2",
+          "truth": false,
+          "reason": "把√100誤作100。"
+        }
+      ],
+      "misconceptionTarget": "只檢查等值而沒有檢查是否最簡。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "從計算題改為雙條件辨識，能力焦點不同。；具體任務是「選出符合兩項條件的表示式。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "0424b14abe067f721654988f6fcd1463ea922e5421e354ca1d02a06c90eea0c3"
+    },
+    {
+      "questionId": "u11-s002-v004",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "化簡 √180 時，若先寫成 √(36×5)，根號外與根號內應組成哪個最簡結果？",
+      "givenConditions": [
+        "180 已分解為 36×5。"
+      ],
+      "target": "由指定平方因數完成化簡。",
+      "choices": [
+        "3√20",
+        "9√2",
+        "6√5",
+        "36√5"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：最大平方因數可取 36，開平方得 6，剩下 √5。 詳算檢查：180=36×5，所以 √180=6√5。 因此結果為「6√5」。",
+      "explanation": "180=36×5，所以 √180=6√5。",
+      "steps": [
+        "整理條件：180 已分解為 36×5。",
+        "獨立推導：不參照選項，從題幹條件重新計算：最大平方因數可取 36，開平方得 6，剩下 √5。 詳算檢查：180=36×5，所以 √180=6√5。 因此結果為「6√5」。",
+        "核對目標：答案「6√5」確實回應「由指定平方因數完成化簡。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3√20",
+          "truth": false,
+          "reason": "仍可再化簡。"
+        },
+        {
+          "choice": "9√2",
+          "truth": false,
+          "reason": "平方後是 162。"
+        },
+        {
+          "choice": "6√5",
+          "truth": true,
+          "reason": "此選項符合目標「由指定平方因數完成化簡。」；180=36×5，所以 √180=6√5。"
+        },
+        {
+          "choice": "36√5",
+          "truth": false,
+          "reason": "√36 被錯算成 36。"
+        }
+      ],
+      "misconceptionTarget": "只提出部分平方因數後就停止。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需辨認 √36=6 並維持剩餘因數5。；具體任務是「由指定平方因數完成化簡。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a6c634eda54fe1e2a97bf9fef614738c2a20f2bde5b459559e80a8b33b867fd3"
+    },
+    {
+      "questionId": "u11-s002-v005",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "3√48 化簡後是多少？",
+      "givenConditions": [
+        "根式前有係數 3，48=16×3。"
+      ],
+      "target": "化簡含外部係數的根式。",
+      "choices": [
+        "6√3",
+        "12√6",
+        "12√3",
+        "144√3"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先化簡根號，再把外面的 3 與 4 相乘。 詳算檢查：√48=√(16×3)=4√3，因此 3√48=12√3。 因此結果為「12√3」。",
+      "explanation": "√48=√(16×3)=4√3，因此 3√48=12√3。",
+      "steps": [
+        "整理條件：根式前有係數 3，48=16×3。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先化簡根號，再把外面的 3 與 4 相乘。 詳算檢查：√48=√(16×3)=4√3，因此 3√48=12√3。 因此結果為「12√3」。",
+        "核對目標：答案「12√3」確實回應「化簡含外部係數的根式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6√3",
+          "truth": false,
+          "reason": "漏乘原來的係數 3。"
+        },
+        {
+          "choice": "12√6",
+          "truth": false,
+          "reason": "根號內剩餘因數錯。"
+        },
+        {
+          "choice": "12√3",
+          "truth": true,
+          "reason": "此選項符合目標「化簡含外部係數的根式。」；√48=√(16×3)=4√3，因此 3√48=12√3。"
+        },
+        {
+          "choice": "144√3",
+          "truth": false,
+          "reason": "把 √16 當 16。"
+        }
+      ],
+      "misconceptionTarget": "化簡後忘記原有係數。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "多一步係數乘法，需維持結構。；具體任務是「化簡含外部係數的根式。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e8a7562ff5d49d0811c450d4410158e043f8843e53aab4b7340df1159e9b3e67"
+    },
+    {
+      "questionId": "u11-s002-v006",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "√(2⁴×3) 的最簡形式為何？",
+      "givenConditions": [
+        "被開方數以指數形式給出。"
+      ],
+      "target": "利用指數辨認完全平方因數。",
+      "choices": [
+        "4√3",
+        "2√3",
+        "8√3",
+        "16√3"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：√(2⁴)=2²=4，再乘 √3。 詳算檢查：2⁴=16，√(16×3)=4√3。 因此結果為「4√3」。",
+      "explanation": "2⁴=16，√(16×3)=4√3。",
+      "steps": [
+        "整理條件：被開方數以指數形式給出。",
+        "獨立推導：不參照選項，從題幹條件重新計算：√(2⁴)=2²=4，再乘 √3。 詳算檢查：2⁴=16，√(16×3)=4√3。 因此結果為「4√3」。",
+        "核對目標：答案「4√3」確實回應「利用指數辨認完全平方因數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4√3",
+          "truth": true,
+          "reason": "此選項符合目標「利用指數辨認完全平方因數。」；2⁴=16，√(16×3)=4√3。"
+        },
+        {
+          "choice": "2√3",
+          "truth": false,
+          "reason": "把 2⁴ 的平方根錯算成 2。"
+        },
+        {
+          "choice": "8√3",
+          "truth": false,
+          "reason": "把指數除錯。"
+        },
+        {
+          "choice": "16√3",
+          "truth": false,
+          "reason": "未對 16 開平方。"
+        }
+      ],
+      "misconceptionTarget": "指數在開平方時處理錯誤。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需理解偶次方開平方的指數變化。；具體任務是「利用指數辨認完全平方因數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "718092f1c83d6506596ee107d786d729e9a3fc30848b041e8c3dcb9d4debba6e"
+    },
+    {
+      "questionId": "u11-s002-v007",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列哪個式子與 √432 等值，而且根號內已不含可提出的平方因數？",
+      "givenConditions": [
+        "候選式需同時符合等值與最簡兩項條件。"
+      ],
+      "target": "選出 √432 的等值最簡表示。",
+      "choices": [
+        "6√12",
+        "18√2",
+        "144√3",
+        "12√3"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：辨認 432 的最大平方因數 144；√144=12。 詳算檢查：432=144×3，所以 √432=12√3。 因此結果為「12√3」。",
+      "explanation": "432=144×3，所以 √432=12√3。",
+      "steps": [
+        "整理條件：候選式需同時符合等值與最簡兩項條件。",
+        "獨立推導：不參照選項，從題幹條件重新計算：辨認 432 的最大平方因數 144；√144=12。 詳算檢查：432=144×3，所以 √432=12√3。 因此結果為「12√3」。",
+        "核對目標：答案「12√3」確實回應「選出 √432 的等值最簡表示。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6√12",
+          "truth": false,
+          "reason": "等值但根號內仍含 4。"
+        },
+        {
+          "choice": "18√2",
+          "truth": false,
+          "reason": "平方後為 648。"
+        },
+        {
+          "choice": "144√3",
+          "truth": false,
+          "reason": "把 √144 誤作 144。"
+        },
+        {
+          "choice": "12√3",
+          "truth": true,
+          "reason": "此選項符合目標「選出 √432 的等值最簡表示。」；432=144×3，所以 √432=12√3。"
+        }
+      ],
+      "misconceptionTarget": "只用較小平方因數而未化到底。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "要同時用平方驗證等值性並檢查最簡條件。；具體任務是「選出 √432 的等值最簡表示。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f73a4873e7a1f2b70c205d946e8d28ee178eb1ebdbbf09422973417d9fcd28c3"
+    },
+    {
+      "questionId": "u11-s002-v008",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "√(675) 化成最簡根式為何？",
+      "givenConditions": [
+        "675 含平方因數 225。"
+      ],
+      "target": "化簡較大被開方數。",
+      "choices": [
+        "5√27",
+        "15√3",
+        "25√3",
+        "15√5"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：225=15²，故 √(225×3)=15√3。 詳算檢查：675=225×3，因此 √675=15√3。 因此結果為「15√3」。",
+      "explanation": "675=225×3，因此 √675=15√3。",
+      "steps": [
+        "整理條件：675 含平方因數 225。",
+        "獨立推導：不參照選項，從題幹條件重新計算：225=15²，故 √(225×3)=15√3。 詳算檢查：675=225×3，因此 √675=15√3。 因此結果為「15√3」。",
+        "核對目標：答案「15√3」確實回應「化簡較大被開方數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5√27",
+          "truth": false,
+          "reason": "尚未最簡。"
+        },
+        {
+          "choice": "15√3",
+          "truth": true,
+          "reason": "此選項符合目標「化簡較大被開方數。」；675=225×3，因此 √675=15√3。"
+        },
+        {
+          "choice": "25√3",
+          "truth": false,
+          "reason": "√225 不是 25。"
+        },
+        {
+          "choice": "15√5",
+          "truth": false,
+          "reason": "剩餘因數判斷錯。"
+        }
+      ],
+      "misconceptionTarget": "找到平方因數後錯算平方根。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需熟悉 15²=225 並正確分解。；具體任務是「化簡較大被開方數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "1de1c483fce4678e090c5d104e1ed4d4e2c4701aac4d629fa57a590b713e86ec"
+    },
+    {
+      "questionId": "u11-s002-v009",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "若 n=√(2³×3²×5)，則 n 的最簡根式為何？",
+      "givenConditions": [
+        "被開方數以質因數冪表示。"
+      ],
+      "target": "配對提出平方因數。",
+      "choices": [
+        "3√40",
+        "18√10",
+        "6√5",
+        "6√10"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：把成對因數 2²、3² 提出，留下 2×5=10 在根號內。 詳算檢查：2³×3²×5=(2²×3²)×(2×5)，開平方後得到 2×3√10=6√10。 因此結果為「6√10」。",
+      "explanation": "2³×3²×5=(2²×3²)×(2×5)，開平方後得到 2×3√10=6√10。",
+      "steps": [
+        "整理條件：被開方數以質因數冪表示。",
+        "獨立推導：不參照選項，從題幹條件重新計算：把成對因數 2²、3² 提出，留下 2×5=10 在根號內。 詳算檢查：2³×3²×5=(2²×3²)×(2×5)，開平方後得到 2×3√10=6√10。 因此結果為「6√10」。",
+        "核對目標：答案「6√10」確實回應「配對提出平方因數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3√40",
+          "truth": false,
+          "reason": "等值但未最簡。"
+        },
+        {
+          "choice": "18√10",
+          "truth": false,
+          "reason": "把 2³ 的全部 2 都提出。"
+        },
+        {
+          "choice": "6√5",
+          "truth": false,
+          "reason": "漏掉未成對的因數 2。"
+        },
+        {
+          "choice": "6√10",
+          "truth": true,
+          "reason": "此選項符合目標「配對提出平方因數。」；2³×3²×5=(2²×3²)×(2×5)，開平方後得到 2×3√10=6√10。"
+        }
+      ],
+      "misconceptionTarget": "質因數配對時漏掉單獨因數。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需同時處理多種質因數與奇偶次方。；具體任務是「配對提出平方因數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9719e759e5477a5a53261dcbaec0cdb09cb9fcd62752eb059881a20761665b5c"
+    },
+    {
+      "questionId": "u11-s002-v010",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一個正方形花圃面積為 108 平方公尺。設計圖要求邊長以最簡根式表示，應寫成多少？",
+      "givenConditions": [
+        "正方形面積 108 平方公尺。"
+      ],
+      "target": "求邊長並用最簡根式表達。",
+      "choices": [
+        "54 公尺",
+        "3√12 公尺",
+        "6√3 公尺",
+        "108 公尺"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：由面積求邊長，再依要求化簡：√108=6√3。 詳算檢查：邊長=√108=√(36×3)=6√3 公尺。 因此結果為「6√3 公尺」。",
+      "explanation": "邊長=√108=√(36×3)=6√3 公尺。",
+      "steps": [
+        "整理條件：正方形面積 108 平方公尺。",
+        "獨立推導：不參照選項，從題幹條件重新計算：由面積求邊長，再依要求化簡：√108=6√3。 詳算檢查：邊長=√108=√(36×3)=6√3 公尺。 因此結果為「6√3 公尺」。",
+        "核對目標：答案「6√3 公尺」確實回應「求邊長並用最簡根式表達。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "54 公尺",
+          "truth": false,
+          "reason": "把面積除以 2。"
+        },
+        {
+          "choice": "3√12 公尺",
+          "truth": false,
+          "reason": "等值但未符合最簡根式要求。"
+        },
+        {
+          "choice": "6√3 公尺",
+          "truth": true,
+          "reason": "此選項符合目標「求邊長並用最簡根式表達。」；邊長=√108=√(36×3)=6√3 公尺。"
+        },
+        {
+          "choice": "108 公尺",
+          "truth": false,
+          "reason": "把面積直接當邊長。"
+        }
+      ],
+      "misconceptionTarget": "忽略題目要求的最簡根式。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "平方公尺開平方成公尺。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "包含建模與化簡兩步。；具體任務是「求邊長並用最簡根式表達。」。",
+      "literacyContextNecessity": "「最簡根式」是設計圖格式要求，情境決定答案形式。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "fd518ecc91f745e963e680515b83572199f11be4ffc6eeefe2ec354554309ac0"
+    },
+    {
+      "questionId": "u11-s002-v011",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "某感測器輸出長度 √300 公分，報表規定不得使用小數且須化為最簡根式。報表應填何者？",
+      "givenConditions": [
+        "輸出 √300 公分，格式禁用小數。"
+      ],
+      "target": "轉成最簡根式。",
+      "choices": [
+        "30√3 公分",
+        "10√3 公分",
+        "5√12 公分",
+        "150 公分"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：依格式不能近似；抽出 100 得 10√3。 詳算檢查：√300=√(100×3)=10√3 公分。 因此結果為「10√3 公分」。",
+      "explanation": "√300=√(100×3)=10√3 公分。",
+      "steps": [
+        "整理條件：輸出 √300 公分，格式禁用小數。",
+        "獨立推導：不參照選項，從題幹條件重新計算：依格式不能近似；抽出 100 得 10√3。 詳算檢查：√300=√(100×3)=10√3 公分。 因此結果為「10√3 公分」。",
+        "核對目標：答案「10√3 公分」確實回應「轉成最簡根式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "30√3 公分",
+          "truth": false,
+          "reason": "係數平方後不符。"
+        },
+        {
+          "choice": "10√3 公分",
+          "truth": true,
+          "reason": "此選項符合目標「轉成最簡根式。」；√300=√(100×3)=10√3 公分。"
+        },
+        {
+          "choice": "5√12 公分",
+          "truth": false,
+          "reason": "等值但未最簡。"
+        },
+        {
+          "choice": "150 公分",
+          "truth": false,
+          "reason": "誤把開平方當除以 2。"
+        }
+      ],
+      "misconceptionTarget": "把等值但未最簡的形式當作完成。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需同時遵守精確值與格式限制。；具體任務是「轉成最簡根式。」。",
+      "literacyContextNecessity": "報表規定使「不能改成小數」與「必須最簡」都不可刪除。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "85dd7a410388c61859128bc7ade929c12a131f8ddf8943acac7defa078ab1179"
+    },
+    {
+      "questionId": "u11-s002-v012",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一條方形截面木柱的截面積為 192 平方公分。工單以最簡根式記邊長，邊長應記為何？",
+      "givenConditions": [
+        "方形截面面積 192 平方公分。"
+      ],
+      "target": "求正邊長的最簡根式。",
+      "choices": [
+        "8√3 公分",
+        "96 公分",
+        "4√12 公分",
+        "16√3 公分"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：正方形截面邊長平方為 192；取正根並化簡成 8√3。 詳算檢查：邊長=√192=√(64×3)=8√3 公分。 因此結果為「8√3 公分」。",
+      "explanation": "邊長=√192=√(64×3)=8√3 公分。",
+      "steps": [
+        "整理條件：方形截面面積 192 平方公分。",
+        "獨立推導：不參照選項，從題幹條件重新計算：正方形截面邊長平方為 192；取正根並化簡成 8√3。 詳算檢查：邊長=√192=√(64×3)=8√3 公分。 因此結果為「8√3 公分」。",
+        "核對目標：答案「8√3 公分」確實回應「求正邊長的最簡根式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "8√3 公分",
+          "truth": true,
+          "reason": "此選項符合目標「求正邊長的最簡根式。」；邊長=√192=√(64×3)=8√3 公分。"
+        },
+        {
+          "choice": "96 公分",
+          "truth": false,
+          "reason": "誤用面積除以 2。"
+        },
+        {
+          "choice": "4√12 公分",
+          "truth": false,
+          "reason": "等值但工單要求最簡。"
+        },
+        {
+          "choice": "16√3 公分",
+          "truth": false,
+          "reason": "把 √64 錯算成 16。"
+        }
+      ],
+      "misconceptionTarget": "忽略長度取正值或化簡要求。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-meaning，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "面積單位開平方後為公分。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "整合幾何關係、正根與根式化簡。；具體任務是「求正邊長的最簡根式。」。",
+      "literacyContextNecessity": "木柱截面決定使用正方形面積公式與正長度。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "根式化簡",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "1a92f8692e44e4ea18e5a33f483faac76861e19415e09b5eae237c64388faffc"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u11-s002-cr001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "將 √768 化成最簡根式，寫出分解過程。",
+      "requiredWork": [
+        "找完全平方因數",
+        "正確開平方",
+        "確認最簡"
+      ],
+      "fullCreditSolution": [
+        "768=256×3。",
+        "√768=√256×√3=16√3。",
+        "3不含大於1的平方因數。"
+      ],
+      "standardAnswer": "16√3。",
+      "alternativeMethod": "也可逐步提出：768=4×192=4²×48=…，最後仍得16√3。",
+      "reasoningSteps": [
+        "768=256×3。",
+        "√768=√256×√3=16√3。",
+        "3不含大於1的平方因數。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：正確分解768；提出16；根號內最後為3，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：正確分解768；提出16；根號內最後為3。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「正確分解768」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「正確分解768」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「正確分解768」但後續失誤，可依證據給1分。",
+        "若完成「正確分解768」與「提出16」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "把256直接提出",
+        "停在8√12"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "16√3。",
+        "recomputation": "768=256×3。；√768=√256×√3=16√3。；3不含大於1的平方因數。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「根號內最後為3」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b48bbab672a9d842400148cf0ff2b9e59a885a76350e13142a209efdb1090025"
+    },
+    {
+      "questionId": "u11-s002-cr002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "square-root-simplify",
+      "lockedSkillOrder": 2,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "一個正方形面積為 243 平方公尺。求邊長的最簡根式。",
+      "requiredWork": [
+        "使用正方形面積關係",
+        "化簡√243",
+        "保留單位"
+      ],
+      "fullCreditSolution": [
+        "邊長=√243。",
+        "243=81×3。",
+        "所以邊長=9√3公尺。"
+      ],
+      "standardAnswer": "9√3 公尺。",
+      "alternativeMethod": "用質因數243=3⁵，提出3²得到9√3。",
+      "reasoningSteps": [
+        "邊長=√243。",
+        "243=81×3。",
+        "所以邊長=9√3公尺。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：建立開平方；化簡係數9；單位公尺正確，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：建立開平方；化簡係數9；單位公尺正確。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「建立開平方」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「建立開平方」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「建立開平方」但後續失誤，可依證據給1分。",
+        "若完成「建立開平方」與「化簡係數9」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "平方公尺開平方為公尺。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "答121.5公尺",
+        "答81√3"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "9√3 公尺。",
+        "recomputation": "邊長=√243。；243=81×3。；所以邊長=9√3公尺。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「單位公尺正確」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d8d43ad5f40e409b1362ed9d08cd24a773aa90dd56baac3ffbe8c33c806b09a2"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "012-u11-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/012-u11-complete/units/u11/s002"
+}

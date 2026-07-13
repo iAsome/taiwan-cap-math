@@ -1,0 +1,1356 @@
+{
+  "slot": "s018",
+  "skillId": "triangle-literacy",
+  "topicId": "u16-literacy",
+  "title": "三角形素養題：把結構和測量與路線資訊翻成幾何條件",
+  "lecture": {
+    "lectureId": "u16-s018-lecture-r1",
+    "unitId": "u16",
+    "numericUnitId": 16,
+    "topicId": "u16-literacy",
+    "skillId": "triangle-literacy",
+    "skillOrder": 18,
+    "originalLockedTitle": "三角形素養題",
+    "title": "三角形素養題：把結構和測量與路線資訊翻成幾何條件",
+    "audience": "臺灣國中零基礎至國中教育會考數學滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能從工程、地圖、施工與轉向文字中辨認三角形的邊角條件。",
+      "能選擇全等、三角形不等式、外角、邊角關係、中線或高線解題。",
+      "能檢查單位、比例、圖不按比例與情境限制。",
+      "能以完整理由說明答案，而不只代公式。"
+    ],
+    "prerequisiteBridge": "本單元所有工具已具備。素養題的難點通常不是新公式，而是把情境中的『支架等長、折線路徑、定位等距、垂直高度、轉向角』翻成正確幾何語言。",
+    "prerequisites": [
+      {
+        "skillId": "triangle-altitude",
+        "requiredLevel": "能使用先備技能「高線概念」的核心定義與基本運算，並能說明其與本節的連結。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "幾何建模",
+        "definition": "把真實物件抽象成點、線段、角與三角形條件。"
+      },
+      {
+        "term": "必要資訊",
+        "definition": "會影響數學結論的長度、角度、等距、垂直或中點條件。"
+      },
+      {
+        "term": "冗餘資訊",
+        "definition": "不影響所求結論的情境描述或裝飾數據。"
+      },
+      {
+        "term": "圖不按比例",
+        "definition": "示意圖只呈現關係，不能用目測量長或角。"
+      },
+      {
+        "term": "合理性檢查",
+        "definition": "以單位、範圍、三角形不等式與角度限制檢驗結果。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "支桿 AB=AC",
+        "meaning": "結構形成等腰三角形，可用底角性質。"
+      },
+      {
+        "symbol": "路徑 AB+BC>AC",
+        "meaning": "經過 B 的折線比 A 到 C 直達距離長。"
+      },
+      {
+        "symbol": "感測器 PA=PB",
+        "meaning": "P 位於 AB 的中垂線上。"
+      },
+      {
+        "symbol": "高度 h⊥底邊",
+        "meaning": "h 可作面積或淨空高度的對應高。"
+      }
+    ],
+    "conceptNarrative": [
+      "先忽略故事名稱，列出點與線段：例如兩條等長鋼索就是等腰三角形的兩腰，地面距離是底邊。",
+      "定位問題若某點到兩標記等距，應想到中垂線；若要從指定點到道路最短距離，應想到垂線。",
+      "路線問題常用三角形不等式，折線經中繼點通常比直達長；若題目給等號，可能表示三點共線。",
+      "屋架或支架若左右兩半具足夠對應條件，可用全等證明對稱，而不能只因圖看起來對稱。",
+      "轉向問題要分辨單一三角形外角與多邊形一圈 360°；面積問題要配對底與垂直高度。",
+      "讀完後先判斷所求量的合理範圍：邊長需為正且符合不等式，內角介於 0°與 180°，邊數為整數，面積使用平方單位。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "情境到幾何的翻譯",
+        "statement": "將等長、等距、垂直、中點、轉向與路徑條件分別轉成邊等式、等距軌跡、90°、線段平分、外角與三角形不等式。"
+      },
+      {
+        "name": "解題選擇原則",
+        "statement": "先辨認目標與已知資料型態，再選能直接連結兩者的定理，而非見到三角形就套同一公式。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "AB=AC ⇒ ∠B=∠C",
+        "conditions": [
+          "兩支架或鋼索確實等長"
+        ],
+        "meaning": "等腰結構角度。"
+      },
+      {
+        "formula": "|a−b|<x<a+b",
+        "conditions": [
+          "三條材料需形成非退化三角形"
+        ],
+        "meaning": "材料長度可行性。"
+      },
+      {
+        "formula": "A=bh/2",
+        "conditions": [
+          "h 為對應垂直高度",
+          "單位一致"
+        ],
+        "meaning": "三角形區域面積。"
+      },
+      {
+        "formula": "Σ同向外角=360°",
+        "conditions": [
+          "沿凸多邊形完整繞行一圈"
+        ],
+        "meaning": "轉向總量。"
+      }
+    ],
+    "nonApplicableCases": [
+      "情境圖看似等長或垂直但文字未給條件時，不能自行假設。",
+      "把比例尺圖直接以螢幕像素量測可能失真，應使用標示數值或比例。",
+      "不同單位未換算就代入公式。",
+      "把三角形不等式端點等號當作可搭成穩定支架。",
+      "只報數值不說使用哪個條件，可能無法獲得推理分。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "圈出所求量與其單位。",
+        "check": "是長度、角度、面積、邊數還是作圖目的？"
+      },
+      {
+        "step": 2,
+        "instruction": "把文字條件翻成符號。",
+        "check": "等長、等距、中點、垂直、延長與轉向是否標清？"
+      },
+      {
+        "step": 3,
+        "instruction": "刪除不影響數學的背景資訊。",
+        "check": "每個保留數字會用在哪一步？"
+      },
+      {
+        "step": 4,
+        "instruction": "選擇最直接定理。",
+        "check": "是全等、等腰、邊長關係、外角、邊角、中線或高線？"
+      },
+      {
+        "step": 5,
+        "instruction": "逐步計算並附理由。",
+        "check": "是否使用了尚未證明的對稱或相等？"
+      },
+      {
+        "step": 6,
+        "instruction": "回到情境檢查。",
+        "check": "單位、範圍、整數性與物理可行性是否合理？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "兩條等長鋼索 AB、AC 固定在同一頂點 A，地面端 B、C。若頂角 50°，求兩個地面夾角。",
+        "solutionSteps": [
+          "AB=AC，故底角相等。",
+          "兩底角和 180°−50°=130°。"
+        ],
+        "answer": "各 65°。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "兩根桿長 6 公尺與 9 公尺，第三根為整數 x，要組三角支架。",
+        "solutionSteps": [
+          "|9−6|<x<9+6。",
+          "3<x<15。"
+        ],
+        "answer": "x 可為 4 至 14 公尺的整數。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "三角形標誌底 80 公分、垂直高 45 公分，求面積。",
+        "solutionSteps": [
+          "單位均為公分。",
+          "80×45÷2=1800。"
+        ],
+        "answer": "1800 平方公分。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "巡檢機器人沿正八邊形外框走一圈，每個轉向角相同，求每次轉角。",
+        "solutionSteps": [
+          "同向外角和 360°。",
+          "360°÷8=45°。"
+        ],
+        "answer": "45°。"
+      },
+      {
+        "exampleId": "L5",
+        "prompt": "橋架左右兩半各形成直角三角形，斜桿等長且水平半跨等長，能否判定兩半全等？",
+        "solutionSteps": [
+          "兩者皆直角三角形。",
+          "斜邊與一股分別相等。"
+        ],
+        "answer": "能，用 RHS。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "看到實物對稱就直接宣稱全等。",
+        "why": "外觀不是數學條件。",
+        "correction": "列出等邊、等角、共用邊或直角等足夠資料。"
+      },
+      {
+        "mistake": "未換算公尺與公分。",
+        "why": "忽略單位。",
+        "correction": "代公式前統一單位，答案標示相應平方單位。"
+      },
+      {
+        "mistake": "把兩邊和等於第三邊視為可搭支架。",
+        "why": "忽略退化三角形沒有面積。",
+        "correction": "穩定三角支架需嚴格大於。"
+      },
+      {
+        "mistake": "轉向題一律用三角形外角定理。",
+        "why": "未辨認是單一頂點還是一圈。",
+        "correction": "一圈多邊形同向轉角和用 360°。"
+      },
+      {
+        "mistake": "把斜長當垂直高度。",
+        "why": "只因線段看起來從上往下。",
+        "correction": "高度必須與底成 90°。"
+      },
+      {
+        "mistake": "只寫答案不呈現翻譯與理由。",
+        "why": "忽略素養題重視建模。",
+        "correction": "至少列出關鍵等式、所用定理與單位檢查。"
+      }
+    ],
+    "selfCheck": [
+      "我已把情境中的等長、垂直或中點翻成符號嗎？",
+      "圖不按比例時是否避免目測？",
+      "所用定理的條件全部具備嗎？",
+      "單位與平方單位是否正確？",
+      "答案是否符合邊長、角度、邊數與物理可行性？"
+    ],
+    "summary": [
+      "素養題先建模，再選定理。",
+      "等長、等距、垂直、中點、轉向與路徑各對應特定幾何工具。",
+      "圖形外觀不是證據，單位與邊界必須檢查。",
+      "完整答案要包含翻譯、推理、計算與情境結論。"
+    ],
+    "connections": {
+      "previous": "綜合中線、高線與本單元所有三角形性質。",
+      "next": [
+        "U17 將延伸至平行線與四邊形。",
+        "後續相似形與圓幾何會沿用建模與理由鏈。"
+      ]
+    },
+    "figureReferences": [
+      "u16-fig-018-truss-literacy"
+    ],
+    "accessibilityNotes": [
+      "u16-fig-018-truss-literacy 的替代文字與結構描述收錄於本技能 drawing-specs.jsonl。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u16-s018-v001",
+        "u16-s018-v002",
+        "u16-s018-v003",
+        "u16-s018-v004",
+        "u16-s018-v005",
+        "u16-s018-v006",
+        "u16-s018-v007",
+        "u16-s018-v008",
+        "u16-s018-v009",
+        "u16-s018-v010",
+        "u16-s018-v011",
+        "u16-s018-v012"
+      ],
+      "constructedResponseIds": [
+        "u16-s018-cr001",
+        "u16-s018-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "針對「三角形素養題」逐段核對定義、適用條件與反例；重新演算5個例題，確認未使用後續單元才引入的平行線或四邊形定理，並檢查圖形標記不取代文字條件。",
+      "reviewVersion": "human-lecture-review-u16-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "140439055265d533a6a9ebd87e80f02385cd2e19d2c1953344e567d3aa28a64f"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u16-s018-v001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-018-truss-literacy",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一個三角形警示框的三邊長為 30 cm、40 cm、50 cm。下列哪個判斷正確？",
+      "givenConditions": [
+        "框架接點視為點"
+      ],
+      "target": "在情境中檢查三角形存在性",
+      "choices": [
+        "可以組成三角形",
+        "不能，因30+40=70小於50",
+        "不能，因最長邊必須小於任一短邊",
+        "只能組成一直線"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "70>50，框架可閉合成三角形。",
+      "explanation": "最短兩邊和30+40=70>50，所以可形成非退化三角形。 找最長邊50。 檢查30+40>50。",
+      "steps": [
+        "找最長邊50。",
+        "檢查30+40>50。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "可以組成三角形",
+          "truth": true,
+          "reason": "最短兩邊和30+40=70>50，所以可形成非退化三角形。"
+        },
+        {
+          "choice": "不能，因30+40=70小於50",
+          "truth": false,
+          "reason": "70其實大於50。"
+        },
+        {
+          "choice": "不能，因最長邊必須小於任一短邊",
+          "truth": false,
+          "reason": "條件是小於另外兩邊和。"
+        },
+        {
+          "choice": "只能組成一直線",
+          "truth": false,
+          "reason": "一直線需30+40=50。"
+        }
+      ],
+      "misconceptionTarget": "把三角形不等式方向看反。",
+      "prerequisiteCheck": "會做長度加法。",
+      "estimatedTimeSec": "70",
+      "unitAndRoundingCheck": "三邊同為cm，精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "嚴格大於成立，並非退化。",
+      "difficultyReason": "基礎題，從尺寸表直接檢查可行性。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "檢查框架是否能組成。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "3c8d994ccd3e246b6f4628f51feef1cb9d96a3a0d8223ece7d94b965302d73ad"
+    },
+    {
+      "questionId": "u16-s018-v002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "製作一面等邊三角形旗幟，其中一個內角量得 60°。另外兩個內角各是多少度？",
+      "givenConditions": [
+        "旗幟確為等邊三角形"
+      ],
+      "target": "運用等邊三角形角性質",
+      "choices": [
+        "各為30°",
+        "各為90°",
+        "各為60°",
+        "一個50°、一個70°"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "另外兩角也各60°。",
+      "explanation": "等邊三角形三角皆為60°。 由三邊相等推出三角相等。 三角和180°，各60°。",
+      "steps": [
+        "由三邊相等推出三角相等。",
+        "三角和180°，各60°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "各為30°",
+          "truth": false,
+          "reason": "把剩餘120°再錯除以4。"
+        },
+        {
+          "choice": "各為90°",
+          "truth": false,
+          "reason": "誤認等邊三角形含直角。"
+        },
+        {
+          "choice": "各為60°",
+          "truth": true,
+          "reason": "等邊三角形三角皆為60°。"
+        },
+        {
+          "choice": "一個50°、一個70°",
+          "truth": false,
+          "reason": "等邊必等角。"
+        }
+      ],
+      "misconceptionTarget": "只用內角和而忘記等角限制。",
+      "prerequisiteCheck": "認識等邊三角形。",
+      "estimatedTimeSec": "60",
+      "unitAndRoundingCheck": "角度精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "等邊條件保證唯一。",
+      "difficultyReason": "基礎題，直接使用等邊性質。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "解讀旗幟形狀。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "e09b4ac3c7d84641b27dd798eefdcd8c4abd5ed6b7e77a8a135171c5fb304320"
+    },
+    {
+      "questionId": "u16-s018-v003",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形支架的一條桿從頂點連到對邊正中央。這條桿在幾何上稱為什麼？",
+      "givenConditions": [
+        "正中央表示對邊中點"
+      ],
+      "target": "把工程描述轉成幾何名詞",
+      "choices": [
+        "高線",
+        "角平分線",
+        "中線",
+        "外角線"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "該支架桿為中線。",
+      "explanation": "頂點連到對邊中點的線段是中線。 把『正中央』翻成中點。 套用中線定義。",
+      "steps": [
+        "把『正中央』翻成中點。",
+        "套用中線定義。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "高線",
+          "truth": false,
+          "reason": "題目未說垂直。"
+        },
+        {
+          "choice": "角平分線",
+          "truth": false,
+          "reason": "題目未說平分頂角。"
+        },
+        {
+          "choice": "中線",
+          "truth": true,
+          "reason": "頂點連到對邊中點的線段是中線。"
+        },
+        {
+          "choice": "外角線",
+          "truth": false,
+          "reason": "外角不是這種內部線段名稱。"
+        }
+      ],
+      "misconceptionTarget": "看到支撐桿就主觀認為一定垂直。",
+      "prerequisiteCheck": "能辨認中點。",
+      "estimatedTimeSec": "65",
+      "unitAndRoundingCheck": "無數值。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "只給中點條件，不能額外推論垂直或平分角。",
+      "difficultyReason": "基礎題，將自然語言翻成定義。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認支架構件。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "5b48fe24af159bfb9d86643ce81edf0389e39eb455b212c89ea0f2273f40be85"
+    },
+    {
+      "questionId": "u16-s018-v004",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-018-truss-literacy",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "兩塊三角形玻璃的三邊尺寸分別為甲：45、60、75 cm；乙：75、45、60 cm。若只允許翻轉與旋轉，兩塊能否完全重合？",
+      "givenConditions": [
+        "尺寸量測精確",
+        "頂點標記不限制方向"
+      ],
+      "target": "用SSS判斷實物全等",
+      "choices": [
+        "不能，因尺寸排列順序不同",
+        "能，三組對應邊相等",
+        "不能，還必須知道三個角",
+        "能，因兩塊面積一定相等"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "文字列出的先後不同不影響邊長配對，兩玻璃全等。",
+      "explanation": "兩組邊長集合皆為45、60、75，依SSS全等，可經剛體移動重合。 配對相同長度的邊。 確認三組邊皆相等。 使用SSS。",
+      "steps": [
+        "配對相同長度的邊。",
+        "確認三組邊皆相等。",
+        "使用SSS。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "不能，因尺寸排列順序不同",
+          "truth": false,
+          "reason": "排列文字順序不代表繞三角形的對應失敗。"
+        },
+        {
+          "choice": "能，三組對應邊相等",
+          "truth": true,
+          "reason": "兩組邊長集合皆為45、60、75，依SSS全等，可經剛體移動重合。"
+        },
+        {
+          "choice": "不能，還必須知道三個角",
+          "truth": false,
+          "reason": "SSS已足夠。"
+        },
+        {
+          "choice": "能，因兩塊面積一定相等",
+          "truth": false,
+          "reason": "相同面積本身不足以判全等。"
+        }
+      ],
+      "misconceptionTarget": "把資料列順序當成頂點順序。",
+      "prerequisiteCheck": "已會SSS。",
+      "estimatedTimeSec": "95",
+      "unitAndRoundingCheck": "單位cm一致且精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "允許翻轉，排除鏡像方向限制。",
+      "difficultyReason": "標準題，需從實物尺寸重新建立正確對應。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "玻璃零件互換性。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "3f5bd27df9e690ad7ddbade3d4133c34b49ca3e5a8740485ff9555e867c0fb62"
+    },
+    {
+      "questionId": "u16-s018-v005",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一座等腰三角形屋架兩腰各 5.2 m，底邊 6 m。頂角的角平分支撐桿連到底邊。下列哪項一定正確？",
+      "givenConditions": [
+        "支撐桿從頂角出發"
+      ],
+      "target": "運用等腰三角形三線合一",
+      "choices": [
+        "支撐桿長必為3 m",
+        "支撐桿垂直底邊且通過底邊中點",
+        "支撐桿與任一腰平行",
+        "支撐桿把兩腰各分成一半"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "它通過底邊中點並垂直底邊。",
+      "explanation": "等腰三角形頂角的角平分線同時是底邊中線與高線。 辨認等腰頂角。 使用三線合一。",
+      "steps": [
+        "辨認等腰頂角。",
+        "使用三線合一。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "支撐桿長必為3 m",
+          "truth": false,
+          "reason": "底的一半是3 m，不是支撐桿長。"
+        },
+        {
+          "choice": "支撐桿垂直底邊且通過底邊中點",
+          "truth": true,
+          "reason": "等腰三角形頂角的角平分線同時是底邊中線與高線。"
+        },
+        {
+          "choice": "支撐桿與任一腰平行",
+          "truth": false,
+          "reason": "頂角內部線不與腰平行。"
+        },
+        {
+          "choice": "支撐桿把兩腰各分成一半",
+          "truth": false,
+          "reason": "支撐桿不切在腰上。"
+        }
+      ],
+      "misconceptionTarget": "把底邊半長誤當支撐桿長。",
+      "prerequisiteCheck": "已會等腰性質。",
+      "estimatedTimeSec": "90",
+      "unitAndRoundingCheck": "長度資料不需計算；結論不涉及近似。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "指定從頂角作角平分線，三線合一條件完整。",
+      "difficultyReason": "標準題，將等腰性質用於結構描述。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "判斷屋架支撐方向。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "1e353c24b54a2b03eaeb0f1288f6d36a7cf89aa0f1912706db6ceeed226f91ad"
+    },
+    {
+      "questionId": "u16-s018-v006",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-018-truss-literacy",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形公園的三個入口位於頂點，管理站設在三條中線交點 G。從頂點 A 到其對邊中點的步道長 180 m，A 到 G 的距離是多少？",
+      "givenConditions": [
+        "G為重心"
+      ],
+      "target": "使用重心比例處理路線距離",
+      "choices": [
+        "60 m",
+        "90 m",
+        "180 m",
+        "120 m"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "AG=120 m。",
+      "explanation": "AG佔中線的2/3，180×2/3=120 m。 辨認從頂點量起。 取完整中線的2/3。",
+      "steps": [
+        "辨認從頂點量起。",
+        "取完整中線的2/3。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "60 m",
+          "truth": false,
+          "reason": "這是G到對邊中點距離。"
+        },
+        {
+          "choice": "90 m",
+          "truth": false,
+          "reason": "誤認重心在中線中點。"
+        },
+        {
+          "choice": "180 m",
+          "truth": false,
+          "reason": "把完整步道當A到G。"
+        },
+        {
+          "choice": "120 m",
+          "truth": true,
+          "reason": "AG佔中線的2/3，180×2/3=120 m。"
+        }
+      ],
+      "misconceptionTarget": "把2：1比例的短段當成頂點段。",
+      "prerequisiteCheck": "會算分率。",
+      "estimatedTimeSec": "90",
+      "unitAndRoundingCheck": "單位m，答案精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "起點A明確，排除60 m。",
+      "difficultyReason": "標準題，將重心比例轉成步行距離。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "估算入口到管理站距離。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "841dcb404238e7ae680e70a80a46fc18f0b862e856ad1c772e4059bac97f68da"
+    },
+    {
+      "questionId": "u16-s018-v007",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "施工圖要以長 8 m、11 m、x m 的三根鋼梁圍成三角形，且 x 為整數。為讓 x 對面的角成為唯一最大角，x 有幾種可選長度？",
+      "givenConditions": [
+        "三角形非退化",
+        "x為正整數"
+      ],
+      "target": "整合三角形不等式與最大角條件",
+      "choices": [
+        "3種",
+        "8種",
+        "15種",
+        "7種"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "11<x<19，共7個整數。",
+      "explanation": "x需為唯一最長邊，所以x>11；又8+11>x，所以x<19。整數12至18，共7種。 由最大角得x為唯一最長邊。 由三角形不等式得x<19。 列12、13、14、15、16、17、18。",
+      "steps": [
+        "由最大角得x為唯一最長邊。",
+        "由三角形不等式得x<19。",
+        "列12、13、14、15、16、17、18。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3種",
+          "truth": false,
+          "reason": "只列12至14。"
+        },
+        {
+          "choice": "8種",
+          "truth": false,
+          "reason": "把x=11納入，最大角不唯一。"
+        },
+        {
+          "choice": "15種",
+          "truth": false,
+          "reason": "只使用上界19而忽略下界與最大條件。"
+        },
+        {
+          "choice": "7種",
+          "truth": true,
+          "reason": "x需為唯一最長邊，所以x>11；又8+11>x，所以x<19。整數12至18，共7種。"
+        }
+      ],
+      "misconceptionTarget": "只檢查能成三角形，未檢查最大角唯一。",
+      "prerequisiteCheck": "已會邊角關係與不等式。",
+      "estimatedTimeSec": "125",
+      "unitAndRoundingCheck": "長度m且x整數。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "兩端11、19皆排除，列舉完整。",
+      "difficultyReason": "進階題，需取結構可行性與角度設計的交集。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "選擇鋼梁規格。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "8cf991ad3dc603e83742eaeebfc3d55e076f99761e5e882db20deca9c16c0d5d"
+    },
+    {
+      "questionId": "u16-s018-v008",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形看板在頂點 C 的外角標為 128°，兩個遠內角的比為 3：5。較小的遠內角是多少度？",
+      "givenConditions": [
+        "兩個遠內角皆為正"
+      ],
+      "target": "結合外角定理與比例分配",
+      "choices": [
+        "48°",
+        "32°",
+        "64°",
+        "80°"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "兩遠內角為48°、80°，和128°。",
+      "explanation": "3+5=8份，每份128÷8=16°，較小角3份=48°。 用外角等於兩遠內角和。 按3：5分配128°。",
+      "steps": [
+        "用外角等於兩遠內角和。",
+        "按3：5分配128°。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "48°",
+          "truth": true,
+          "reason": "3+5=8份，每份128÷8=16°，較小角3份=48°。"
+        },
+        {
+          "choice": "32°",
+          "truth": false,
+          "reason": "把128除以4。"
+        },
+        {
+          "choice": "64°",
+          "truth": false,
+          "reason": "把兩角平均。"
+        },
+        {
+          "choice": "80°",
+          "truth": false,
+          "reason": "選到較大角。"
+        }
+      ],
+      "misconceptionTarget": "用180°而非外角128°分配。",
+      "prerequisiteCheck": "會比例分配。",
+      "estimatedTimeSec": "110",
+      "unitAndRoundingCheck": "角度精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "48與80皆小於128且第三內角52°，三角形合理。",
+      "difficultyReason": "進階題，結合角定理與比例。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "解讀看板角度標示。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "b50346af75b1a77a727040ed1887d3832ee9ab66084d5d74e338a38ee2bf3c98"
+    },
+    {
+      "questionId": "u16-s018-v009",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一塊三角形板的底邊長 2.4 m，面積 1.8 m²。設計圖把從對頂點到底邊中點的線段標成 1.5 m，並稱它同時是高。此標示是否可能正確？",
+      "givenConditions": [
+        "底邊中點已確定",
+        "面積與長度均精確"
+      ],
+      "target": "利用面積反算高並檢核中線高線重合",
+      "choices": [
+        "不可能，高應為0.75 m",
+        "可能，高正好為1.5 m",
+        "不可能，高應為3 m",
+        "無法判斷，面積不能求高"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "數值吻合，存在以該底為底的等腰三角形符合圖面。",
+      "explanation": "高=2×1.8÷2.4=1.5 m；若垂足也在底邊中點，該線可同時為中線與高。 反算對應高。 與標示1.5 m比較。 確認中點與垂直可同時成立。",
+      "steps": [
+        "反算對應高。",
+        "與標示1.5 m比較。",
+        "確認中點與垂直可同時成立。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "不可能，高應為0.75 m",
+          "truth": false,
+          "reason": "反算時忘記乘2。"
+        },
+        {
+          "choice": "可能，高正好為1.5 m",
+          "truth": true,
+          "reason": "高=2×1.8÷2.4=1.5 m；若垂足也在底邊中點，該線可同時為中線與高。"
+        },
+        {
+          "choice": "不可能，高應為3 m",
+          "truth": false,
+          "reason": "只算面積乘2。"
+        },
+        {
+          "choice": "無法判斷，面積不能求高",
+          "truth": false,
+          "reason": "已知底與面積即可求對應高。"
+        }
+      ],
+      "misconceptionTarget": "以為中線與高永遠不同。",
+      "prerequisiteCheck": "已會面積與特殊線。",
+      "estimatedTimeSec": "125",
+      "unitAndRoundingCheck": "m²與m換算正確，結果1.5 m精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "題目問『可能』而非『必然』；存在符合條件的圖形即可。",
+      "difficultyReason": "進階題，需以數值檢核幾何線段角色並處理存在性。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "審核設計圖標示。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "63c5c112d0bf97b71c2ad84875f646b1d247867508c4cdacef03ab9dd1b2ea0b"
+    },
+    {
+      "questionId": "u16-s018-v010",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-018-truss-literacy",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "三角形帳篷的兩根斜桿各 2.5 m，底部兩固定點相距 3 m。若頂點在底邊的垂直平分線上，帳篷左右兩側是否全等？",
+      "givenConditions": [
+        "斜桿分別連頂點到兩固定點"
+      ],
+      "target": "用SSS判斷對稱兩半",
+      "choices": [
+        "不是，因左右方向相反",
+        "不能判斷，還需知道所有角",
+        "是，只因兩邊面積相等",
+        "是，兩斜桿相等、半底相等且共用中間支柱"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "左右半部依SSS全等，可互為鏡像。",
+      "explanation": "垂直平分線通過底邊中點；左右小三角形有2.5 m斜桿相等、1.5 m半底相等、中柱共用，依SSS全等。 由垂直平分線得底分成1.5與1.5。 列三組對應邊。 用SSS判全等。",
+      "steps": [
+        "由垂直平分線得底分成1.5與1.5。",
+        "列三組對應邊。",
+        "用SSS判全等。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "不是，因左右方向相反",
+          "truth": false,
+          "reason": "鏡像仍可全等。"
+        },
+        {
+          "choice": "不能判斷，還需知道所有角",
+          "truth": false,
+          "reason": "SSS資料已足夠。"
+        },
+        {
+          "choice": "是，只因兩邊面積相等",
+          "truth": false,
+          "reason": "等面積不足以判全等。"
+        },
+        {
+          "choice": "是，兩斜桿相等、半底相等且共用中間支柱",
+          "truth": true,
+          "reason": "垂直平分線通過底邊中點；左右小三角形有2.5 m斜桿相等、1.5 m半底相等、中柱共用，依SSS全等。"
+        }
+      ],
+      "misconceptionTarget": "把對稱方向不同誤認不能全等。",
+      "prerequisiteCheck": "已會中點與SSS。",
+      "estimatedTimeSec": "115",
+      "unitAndRoundingCheck": "長度同為m且精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "共用邊與兩組已知邊完整，答案唯一。",
+      "difficultyReason": "素養題，需把帳篷對稱結構拆成兩個三角形並建立證明。",
+      "literacyContextNecessity": "帳篷構件提供三組對應邊；實務上驗證左右零件一致正是全等判定用途。",
+      "authoringIntent": "驗證帳篷左右對稱。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "e534a9fcc37779ffe8bf109d7033bda222d6539f4a5414ad198fa17447e48c2f"
+    },
+    {
+      "questionId": "u16-s018-v011",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-018-truss-literacy",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一座三角形景觀橋的兩端 A、B 與高塔 C 形成三角形。已知 AC=72 m、BC=65 m、AB=100 m。安全規範要求塔頂角 C 不是最大角。是否符合？",
+      "givenConditions": [
+        "三距離可形成三角形"
+      ],
+      "target": "由實測邊長判斷最大角位置",
+      "choices": [
+        "不符合，∠C 是最大角",
+        "符合，因C連出的兩邊都小於100 m",
+        "符合，因65+72大於100",
+        "無法判斷，必須量角器量C"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "三角形存在，且AB唯一最長，所以C唯一最大；規範不符合。",
+      "explanation": "AB=100 m為最長邊，其對角就是∠C，因此C是最大角，違反規範。 先驗證65+72>100，可形成三角形。 比較三邊找最長邊AB。 由最長邊對最大角判定C最大。",
+      "steps": [
+        "先驗證65+72>100，可形成三角形。",
+        "比較三邊找最長邊AB。",
+        "由最長邊對最大角判定C最大。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "不符合，∠C 是最大角",
+          "truth": true,
+          "reason": "AB=100 m為最長邊，其對角就是∠C，因此C是最大角，違反規範。"
+        },
+        {
+          "choice": "符合，因C連出的兩邊都小於100 m",
+          "truth": false,
+          "reason": "角大小應看對邊，非兩鄰邊各自大小。"
+        },
+        {
+          "choice": "符合，因65+72大於100",
+          "truth": false,
+          "reason": "這只證明可成三角形，不能證明C不是最大角。"
+        },
+        {
+          "choice": "無法判斷，必須量角器量C",
+          "truth": false,
+          "reason": "三邊長足以比較角大小。"
+        }
+      ],
+      "misconceptionTarget": "只完成三角形存在性檢查，未繼續判斷角序。",
+      "prerequisiteCheck": "已會三角形不等式與邊角關係。",
+      "estimatedTimeSec": "120",
+      "unitAndRoundingCheck": "距離同為m且精確。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "存在性與規範檢查分開完成，最大角唯一。",
+      "difficultyReason": "素養題，需分兩階段驗證結構可行性與安全條件。",
+      "literacyContextNecessity": "實測邊長是現場資料，規範針對不易直接量測的角；情境要求由邊推角並作合規結論。",
+      "authoringIntent": "橋梁安全審核。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "012f6da4920532ef5c5ac6bc2ace51bfbe26f7458e682f23b0ea597820053c4b"
+    },
+    {
+      "questionId": "u16-s018-v012",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "一個三角形貨架要加裝一根從頂點到對邊的支撐。方案甲要求支撐垂直對邊；方案乙要求支撐到達對邊中點。若貨架不是等腰三角形，下列判斷何者正確？",
+      "givenConditions": [
+        "兩方案從同一頂點出發"
+      ],
+      "target": "區分高線與中線的施工目的",
+      "choices": [
+        "兩方案一定相同",
+        "方案甲一定較長",
+        "兩方案通常是不同線段",
+        "方案乙一定垂直對邊"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "沒有等腰條件，不能把垂足與中點視為同一點。",
+      "explanation": "甲是高線，乙是中線；非等腰的一般三角形中，從同頂點作的高與中線通常不重合。 翻譯兩方案的幾何定義。 檢查是否有等腰三線合一條件。",
+      "steps": [
+        "翻譯兩方案的幾何定義。",
+        "檢查是否有等腰三線合一條件。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "兩方案一定相同",
+          "truth": false,
+          "reason": "只有額外對稱條件下才會重合。"
+        },
+        {
+          "choice": "方案甲一定較長",
+          "truth": false,
+          "reason": "高是到直線的最短距離，通常不較長。"
+        },
+        {
+          "choice": "兩方案通常是不同線段",
+          "truth": true,
+          "reason": "甲是高線，乙是中線；非等腰的一般三角形中，從同頂點作的高與中線通常不重合。"
+        },
+        {
+          "choice": "方案乙一定垂直對邊",
+          "truth": false,
+          "reason": "中線不保證垂直。"
+        }
+      ],
+      "misconceptionTarget": "看到都從同一頂點出發就認為相同。",
+      "prerequisiteCheck": "已會高線與中線。",
+      "estimatedTimeSec": "105",
+      "unitAndRoundingCheck": "無需比較實際長度。",
+      "notationCheck": "符號依本技能講義定義，頂點順序與等號方向已逐一核對。",
+      "ambiguityAndBoundaryAudit": "『通常』避免聲稱所有非等腰情況的特殊退化；非等腰確不可能該頂點的高同時為中線，故結論穩健。",
+      "difficultyReason": "素養題，要求依施工需求區分兩種特殊線。",
+      "literacyContextNecessity": "兩方案的工程約束不同：一個控制直角，一個控制等分；情境使定義差異直接影響施工。",
+      "authoringIntent": "選擇貨架支撐方案。",
+      "tags": [
+        "空間與形狀",
+        "三角形素養題",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "d5b6740ac5c46f502e74e823c5322ef8a2c8b7c4c410eb91c38bb7ebc67e1246"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u16-s018-cr001",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "figure-supported",
+      "figureId": "u16-fig-018-truss-literacy",
+      "prompt": "帳篷截面是等腰三角形，兩腰各 2.5 m、底 3 m。中央支柱從頂點垂直到底邊。證明支柱通過底邊中點，並求支柱將底邊分成的兩段長。",
+      "requiredWork": [
+        "以等腰頂角高線三線合一或全等證明。",
+        "說明垂足為中點。",
+        "求兩段各1.5 m。"
+      ],
+      "fullCreditSolution": [
+        "設垂足D。直角三角形ABD、ACD中，AB=AC=2.5 m、AD共同、兩直角相等，可用直角情形或SAS/斜邊直角邊觀念理解兩半全等；在本課可引用等腰三角形頂角高線同時為中線。",
+        "因此BD=DC=3÷2=1.5 m。"
+      ],
+      "alternativeSolutions": [
+        "可先以等腰三角形三線合一直接得D為中點，再計算。"
+      ],
+      "reasoningSteps": [
+        "設垂足D。直角三角形ABD、ACD中，AB=AC=2.5 m、AD共同、兩直角相等，可用直角情形或SAS/斜邊直角邊觀念理解兩半全等；在本課可引用等腰三角形頂角高線同時為中線。",
+        "因此BD=DC=3÷2=1.5 m。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確以等腰性質或合法全等理由證明中點，並得兩段各1.5 m。"
+        },
+        {
+          "score": 2,
+          "criteria": "結論與數值正確，但證明理由簡略或混用未完整說明的直角判定。"
+        },
+        {
+          "score": 1,
+          "criteria": "只算出1.5 m，或只說三線合一未連結到中點。"
+        },
+        {
+          "score": 0,
+          "criteria": "因垂直就對所有三角形宣稱平分底邊，或無有效作答。"
+        }
+      ],
+      "partialCreditRules": [
+        "結論與數值正確，但證明理由簡略或混用未完整說明的直角判定。",
+        "只算出1.5 m，或只說三線合一未連結到中點。"
+      ],
+      "followThroughPolicy": "若只寫『高線三線合一』但明確指出因為等腰，至少2分；使用未納入課程的HL名稱但論證內容正確不扣核心分。",
+      "unitAndNotationRules": "長度m；兩段分別BD、DC；垂直與中點結論需分開寫。",
+      "answerOnlyPolicy": "只答1.5 m最多1分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "把支柱2.5 m當成腰長。",
+        "認為任何高線都平分底。"
+      ],
+      "independentReview": {
+        "derivedResult": "支柱為底邊中線，兩段各1.5 m。",
+        "ambiguity": "題目已指定中央支柱從頂點垂直底邊；等腰條件使垂足唯一為中點。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "2d731714d8147928636eb39f2fbfcebafcc0356b1f90305a7d092d3063ce207f"
+    },
+    {
+      "questionId": "u16-s018-cr002",
+      "unitId": "u16",
+      "numericUnitId": 16,
+      "topicId": "u16-literacy",
+      "skillId": "triangle-literacy",
+      "skillOrder": 18,
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "無人機要沿凸多邊形工地外圍巡檢。控制表列出六次右轉：48°、62°、71°、55°、64°、70°。同時，工地內一個三角形支架三邊為 6 m、8 m、15 m。請分別檢查巡檢路線與支架資料是否可行，並提出修正。",
+      "requiredWork": [
+        "加總六個轉角並與360°比較。",
+        "檢查6+8與15的嚴格不等式。",
+        "對每一問題提出最小或明確修正。"
+      ],
+      "fullCreditSolution": [
+        "轉角和48+62+71+55+64+70=370°，多10°，不能依同方向剛好閉合；可把最後70°改為60°。",
+        "支架最短兩邊和6+8=14<15，不能形成三角形；可把15 m桿縮短到小於14 m，例如13.9 m，或將任一短桿加長使和大於15。"
+      ],
+      "alternativeSolutions": [
+        "若規格只能取整公尺，可把15 m改為13 m，或把6 m改為8 m等可行方案；修正須重新驗證。"
+      ],
+      "reasoningSteps": [
+        "轉角和48+62+71+55+64+70=370°，多10°，不能依同方向剛好閉合；可把最後70°改為60°。",
+        "支架最短兩邊和6+8=14<15，不能形成三角形；可把15 m桿縮短到小於14 m，例如13.9 m，或將任一短桿加長使和大於15。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "兩項可行性均正確判否，指出370°與14<15，並各提出可驗證修正。"
+        },
+        {
+          "score": 2,
+          "criteria": "兩項判斷正確但其中一項修正不夠精確，或有單一加法錯而方法完整。"
+        },
+        {
+          "score": 1,
+          "criteria": "只完整檢查其中一個系統，另一個僅有方向性判斷。"
+        },
+        {
+          "score": 0,
+          "criteria": "把370°接受為閉合、把14<15接受成三角形，或無有效內容。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩項判斷正確但其中一項修正不夠精確，或有單一加法錯而方法完整。",
+        "只完整檢查其中一個系統，另一個僅有方向性判斷。"
+      ],
+      "followThroughPolicy": "若轉角加總單一錯誤但仍用360°查核，且支架部分完整，最高2分；反之亦然。",
+      "unitAndNotationRules": "角度°、長度m；若提出小數修改需明確小於14 m。",
+      "answerOnlyPolicy": "只寫『都不行』無數值理由，最多1分。",
+      "notationRules": "全等式須依對應順序書寫；角度標示 °，長度與面積單位須分清。",
+      "commonErrors": [
+        "把外角和誤用180°。",
+        "把等號或小於也當成可成三角形。"
+      ],
+      "independentReview": {
+        "derivedResult": "路線多轉10°，最後角可改60°；支架6+8<15不可行，需縮短長桿至<14 m或加長短桿。",
+        "ambiguity": "修正方案不唯一，評分以條件驗證為準。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "a14d1f229edd170c9017e53fd92c98a73d2bc5bd06cab89ad2cbee110923fc5d"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u16-fig-018-truss-literacy",
+      "unitId": "u16",
+      "slot": "s018",
+      "title": "三角形桁架的綜合量測位置",
+      "altText": "大型三角形桁架含中央高與中線、兩側等長標記、底部中點、外側延長線與轉角箭頭，供綜合素養題辨認資料角色。",
+      "svgPath": "figures/u16/u16-fig-018-truss-literacy.svg",
+      "drawingSpec": {
+        "canvas": {
+          "width": 360,
+          "height": 240,
+          "viewBox": "0 0 360 240"
+        },
+        "coordinateSystem": "左上角為(0,0)，x向右、y向下。",
+        "geometry": "桁架頂點(175,35)、底點A(35,190)、B(315,190)，中央線x=175，斜中線A至(245,112)，底延長至345帶箭頭；兩腰與兩半底刻痕。",
+        "visibleLineRules": "主要邊線使用2.5px黑色實線；輔助線使用1.5px虛線；弧線不得遮住頂點標籤。",
+        "hiddenLineRules": "平面圖無隱藏邊；未畫出的延長線不得由視覺自行推定。",
+        "labels": "塔頂、A、B、中點、高／中線、延長方向分散配置。",
+        "tickMarksAndSymbols": "相等邊以同數量短刻痕表示；直角以小正方形；相等角以同型圓弧。",
+        "units": "示意圖無長度單位，題目另有數值時以題幹為準。",
+        "arrows": "只在延長線或行進方向使用箭頭。",
+        "toScale": false,
+        "notToScaleWarning": "圖形不按比例，請依標記與題目條件判斷。",
+        "mobileLayout": "360×240畫布；最小文字14px；標籤與線段保持至少6px間距。",
+        "answerLeakageControl": "圖中只呈現已知結構與定義標記，不標示題目所求數值或正確選項。"
+      },
+      "svgAssertions": [
+        "高／中線",
+        "延長方向",
+        "M175 174 h16 v16",
+        "塔頂"
+      ],
+      "figureReview": {
+        "decision": "pass",
+        "mobileReadability": "360px寬預覽下，頂點、刻痕、直角符號與延長線箭頭仍可辨識。",
+        "answerLeakage": "未顯示任何題目答案；只保留概念所需結構。",
+        "geometryCheck": "已依列出的座標逐項核對端點、交點、刻痕與文字位置。",
+        "reviewNote": "三角形桁架的綜合量測位置已逐線檢查：桁架頂點(175,35)、底點A(35,190)、B(315,190)，中央線x=175，斜中線A至(245,112)，底延長至345帶箭頭；兩腰與兩半底刻痕。；標籤配置為塔頂、A、B、中點、高／中線、延長方向分散配置。，未依視覺比例暗示未給定量。",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "contentSha256": "a9bd658499601478f2ad9b6d34c545bb849d09e0ac200176079b86301d97cf24"
+    }
+  ],
+  "sourceBatch": "017-u16-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/017-u16-complete/units/u16/s018"
+}

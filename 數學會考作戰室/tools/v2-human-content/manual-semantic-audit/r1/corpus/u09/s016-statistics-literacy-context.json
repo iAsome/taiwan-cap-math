@@ -1,0 +1,1263 @@
+{
+  "slot": "s016",
+  "skillId": "statistics-literacy-context",
+  "topicId": "u09-literacy",
+  "title": "統計資料素養：從資料來源到負責任決策",
+  "lecture": {
+    "lectureId": "u09-s016-lecture-r1",
+    "unitId": "u09",
+    "numericUnitId": 9,
+    "topicId": "u09-literacy",
+    "skillId": "statistics-literacy-context",
+    "lockedTitle": "統計資料素養",
+    "title": "統計資料素養：從資料來源到負責任決策",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reviewStatus": "independently-reviewed",
+    "prerequisiteBridge": {
+      "skillIds": [
+        "misleading-statistics-basic"
+      ],
+      "explanation": "需綜合資料表、圖表、代表值、比例比較與統計敘述合理性。"
+    },
+    "learningGoals": [
+      "辨認母體、樣本與抽樣方式。",
+      "評估樣本代表性與不回應偏誤。",
+      "區分相關、因果與混淆因素。",
+      "檢查缺失資料、定義與時間範圍。",
+      "在不確定資訊下提出有限且可行的決策。"
+    ],
+    "vocabulary": [
+      {
+        "term": "母體",
+        "meaning": "研究真正想了解的全部對象。"
+      },
+      {
+        "term": "樣本",
+        "meaning": "實際蒐集資料的一部分對象。"
+      },
+      {
+        "term": "代表性",
+        "meaning": "樣本在重要特徵上能合理反映母體。"
+      },
+      {
+        "term": "抽樣偏誤",
+        "meaning": "抽樣方式使某些類型較容易或較不容易被選中。"
+      },
+      {
+        "term": "混淆因素",
+        "meaning": "同時影響兩個變項，使表面關聯不一定是直接因果。"
+      },
+      {
+        "term": "缺失資料",
+        "meaning": "應蒐集但未取得的資料，可能非隨機缺漏。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "母體",
+        "meaning": "結論希望推廣的全部對象。"
+      },
+      {
+        "symbol": "樣本 n",
+        "meaning": "實際觀察的樣本筆數。"
+      },
+      {
+        "symbol": "相關≠因果",
+        "meaning": "兩變項一起變化，不足以證明一者造成另一者。"
+      }
+    ],
+    "conceptDevelopment": [
+      "統計推論的可信度不只取決於樣本大小，也取決於抽樣方式；很大的偏誤樣本仍可能不代表母體。",
+      "便利抽樣、自願回覆與只調查單一時間地點都可能造成代表性問題。",
+      "缺失資料若集中在特定群體，刪除缺值可能改變結論。",
+      "觀察研究能發現關聯，但因果判斷還需時間先後、控制其他因素或合理實驗設計。",
+      "負責任決策要寫出資料支持什麼、不支持什麼，以及還需要哪些資料。"
+    ],
+    "definitions": [
+      {
+        "name": "隨機抽樣",
+        "statement": "母體中的每個對象有已知且公平的機會被選入樣本。"
+      },
+      {
+        "name": "便利抽樣",
+        "statement": "選擇最容易接觸的對象，速度快但常有偏誤。"
+      },
+      {
+        "name": "不回應偏誤",
+        "statement": "未回覆者與回覆者可能系統性不同，造成結果偏移。"
+      },
+      {
+        "name": "混淆",
+        "statement": "第三因素使兩變項呈現關聯，卻不代表直接因果。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "樣本比例＝樣本中符合條件人數÷有效樣本數",
+        "conditions": [
+          "分母排除規則透明",
+          "缺失資料處理已說明"
+        ]
+      },
+      {
+        "formula": "回覆率＝有效回覆數÷受邀數×100%",
+        "conditions": [
+          "受邀名單與有效回覆定義明確"
+        ]
+      },
+      {
+        "formula": "條件比例需以指定群組為分母",
+        "conditions": [
+          "比較群組定義一致"
+        ]
+      }
+    ],
+    "invalidUseCases": [
+      "只因樣本很大就說完全沒有偏誤。",
+      "網路自願投票直接代表全體居民。",
+      "刪除所有缺值卻不說明缺值分布。",
+      "由相關係數或比例差直接宣稱因果。",
+      "只報平均數、不報樣本數與資料期間就做重大決策。"
+    ],
+    "stepByStepMethod": [
+      {
+        "step": 1,
+        "action": "明確寫出母體、樣本與資料蒐集期間。"
+      },
+      {
+        "step": 2,
+        "action": "檢查抽樣方式、回覆率與缺失資料。"
+      },
+      {
+        "step": 3,
+        "action": "確認變項定義、單位、分母與圖表尺度。"
+      },
+      {
+        "step": 4,
+        "action": "區分描述、關聯與因果，列出可能混淆因素。"
+      },
+      {
+        "step": 5,
+        "action": "提出與證據強度相稱的結論、限制與下一步資料需求。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "L1",
+        "prompt": "學校在籃球社群組調查全校運動時間。",
+        "solution": [
+          "樣本偏向喜愛運動者。",
+          "母體是全校學生。"
+        ],
+        "answer": "便利且偏誤的樣本，不能直接代表全校。"
+      },
+      {
+        "id": "L2",
+        "prompt": "1000人問卷只有120人回覆，回覆者滿意率90%。",
+        "solution": [
+          "回覆率12%。",
+          "不滿意者或忙碌者可能較不回覆。"
+        ],
+        "answer": "可報回覆者90%，但需警告不回應偏誤。"
+      },
+      {
+        "id": "L3",
+        "prompt": "帶水壺學生平均成績較高。",
+        "solution": [
+          "可能受家庭支持、自律或年級影響。",
+          "觀察資料未控制混淆因素。"
+        ],
+        "answer": "有關聯，不足以證明帶水壺提高成績。"
+      },
+      {
+        "id": "L4",
+        "prompt": "決定是否延長圖書館時間，只調查午休使用者。",
+        "solution": [
+          "午休使用者不一定代表晚間需求者。",
+          "應跨時段與年級抽樣，並記錄實際進館量。"
+        ],
+        "answer": "目前資料不足，先補充具代表性的需求資料。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "wrong": "樣本有5000人，所以一定代表臺灣所有學生。",
+        "why": "樣本大小不能修正系統性抽樣偏誤。",
+        "fix": "檢查抽樣框與選取方式。"
+      },
+      {
+        "wrong": "刪掉未填收入者後直接算平均。",
+        "why": "未填者可能集中在高收入或低收入群。",
+        "fix": "報告缺失比例與可能方向。"
+      },
+      {
+        "wrong": "睡眠與成績相關，所以延長睡眠必定提高每個人成績。",
+        "why": "相關不等於因果且個體差異存在。",
+        "fix": "限制為樣本關聯並尋找更強證據。"
+      },
+      {
+        "wrong": "只看單月資料決定全年政策。",
+        "why": "可能有季節性。",
+        "fix": "擴大時間範圍或標示限制。"
+      }
+    ],
+    "selfCheck": [
+      "母體與樣本分別是誰？",
+      "誰較容易被選到或回覆？",
+      "缺失資料如何處理？",
+      "是否有可能的混淆因素？",
+      "結論是否只涵蓋資料能支持的範圍？"
+    ],
+    "summary": [
+      "代表性比單純樣本大小更重要。",
+      "抽樣與不回應都可能造成偏誤。",
+      "相關不等於因果。",
+      "負責任結論要包含限制與下一步。"
+    ],
+    "connections": {
+      "previous": "統計敘述合理性提供計算、圖表與語言審查。",
+      "next": [
+        "後續機率與更進階統計會延續樣本、條件比例與不確定性的觀念。",
+        "U22 才處理四分位數與盒狀圖。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": "本講義可完全以文字理解；若有圖形，替代文字提供所有必要數值。",
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u09-s016-v001",
+        "u09-s016-v002",
+        "u09-s016-v003",
+        "u09-s016-v004",
+        "u09-s016-v005",
+        "u09-s016-v006",
+        "u09-s016-v007",
+        "u09-s016-v008",
+        "u09-s016-v009",
+        "u09-s016-v010",
+        "u09-s016-v011",
+        "u09-s016-v012"
+      ],
+      "constructedResponseIds": [
+        "u09-s016-cr001",
+        "u09-s016-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "以完整資料生命週期審查：問題、抽樣、蒐集、分析、解釋與決策。",
+      "scopeCheck": "符合國中會考範圍；未引入四分位數與盒狀圖。",
+      "prerequisiteAudit": "需綜合資料表、圖表、代表值、比例比較與統計敘述合理性。",
+      "symbolAndUnitAudit": "所有符號在使用前定義；單位與取位規則在例題中明示。",
+      "skillSpecificEvidence": "例題涵蓋社群便利抽樣、低回覆率、混淆因素與政策資料不足。",
+      "legacyContentUsed": false,
+      "decision": "pass"
+    },
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+    "contentSha256": "b30e1ad6f3284aa38247efa042f610ccc9334a64a2f2c2e7cfa5a50a616268cb"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u09-s016-v001",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "一項調查要推論全校學生意見。哪種抽樣較合適？",
+      "givenConditions": [
+        "不要求完整普查。"
+      ],
+      "target": "選擇較具代表性的抽樣方法",
+      "choices": [
+        "只問學生會幹部",
+        "只問午休在操場的人",
+        "讓支持方案者自行填答",
+        "從各年級隨機抽取學生"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "work": "母群是全校，分層涵蓋各年級再隨機抽樣較合理。",
+        "derivedAnswer": "從各年級隨機抽取學生",
+        "trustStoredAnswer": false
+      },
+      "explanation": "抽樣設計要對應推論母群。",
+      "steps": [
+        "辨認母群。",
+        "比較樣本涵蓋性。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只問學生會幹部",
+          "truth": false,
+          "reason": "幹部可能與一般學生不同。"
+        },
+        {
+          "choice": "只問午休在操場的人",
+          "truth": false,
+          "reason": "地點選樣會漏掉其他學生。"
+        },
+        {
+          "choice": "讓支持方案者自行填答",
+          "truth": false,
+          "reason": "自願回覆易有自我選擇偏差。"
+        },
+        {
+          "choice": "從各年級隨機抽取學生",
+          "truth": true,
+          "reason": "涵蓋各年級並隨機抽取較具代表性。"
+        }
+      ],
+      "misconceptionTarget": "以方便取樣代替代表性",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 90,
+      "unitAndRoundingCheck": "無計算。",
+      "ambiguityAndBoundaryAudit": "『較合適』不宣稱完全無偏差。",
+      "difficultyReason": "基礎統計素養。",
+      "literacyNecessityReason": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "2228141fe3c2d73db77fe0fd2cec33e0b0366fb51514fdfc1498af3b1d21cb97"
+    },
+    {
+      "questionId": "u09-s016-v002",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "報告寫『樣本平均 68 分』。下列何者一定正確？",
+      "givenConditions": [
+        "樣本數正。"
+      ],
+      "target": "辨認樣本平均能支持的結論",
+      "choices": [
+        "每個人都是 68 分",
+        "樣本總分除以樣本數等於 68",
+        "中位數一定 68",
+        "母群平均一定 68"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "work": "平均定義直接支持總分/人數=68。",
+        "derivedAnswer": "樣本總分除以樣本數等於 68",
+        "trustStoredAnswer": false
+      },
+      "explanation": "要分清樣本統計量與個體、母群。",
+      "steps": [
+        "逐一檢查敘述層次。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "每個人都是 68 分",
+          "truth": false,
+          "reason": "個別值可不同。"
+        },
+        {
+          "choice": "樣本總分除以樣本數等於 68",
+          "truth": true,
+          "reason": "這是平均的定義。"
+        },
+        {
+          "choice": "中位數一定 68",
+          "truth": false,
+          "reason": "平均不決定中位數。"
+        },
+        {
+          "choice": "母群平均一定 68",
+          "truth": false,
+          "reason": "樣本平均不保證母群平均相同。"
+        }
+      ],
+      "misconceptionTarget": "過度外推",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 90,
+      "unitAndRoundingCheck": "68 分。",
+      "ambiguityAndBoundaryAudit": "只有定義性敘述必然。",
+      "difficultyReason": "基礎。",
+      "literacyNecessityReason": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "51ea99f9f79aba553cfd61609b104d4cfe695e224466adef8cb568eb9a324ba9"
+    },
+    {
+      "questionId": "u09-s016-v003",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "basic",
+      "itemType": "mc",
+      "prompt": "問卷回覆率是 30%。最合理的關注是什麼？",
+      "givenConditions": [
+        "回覆率 30%。"
+      ],
+      "target": "認識未回覆偏差",
+      "choices": [
+        "未回覆者可能與回覆者意見不同",
+        "30% 一定代表調查錯誤",
+        "只要有回覆就能代表全部",
+        "回覆率與偏差完全無關"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "work": "回覆者若與未回覆者系統性不同，樣本結論會偏。",
+        "derivedAnswer": "未回覆者可能與回覆者意見不同",
+        "trustStoredAnswer": false
+      },
+      "explanation": "統計素養不只看計算，也看資料如何取得。",
+      "steps": [
+        "辨識缺失資料來源。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "未回覆者可能與回覆者意見不同",
+          "truth": true,
+          "reason": "低回覆率可能產生未回覆偏差。"
+        },
+        {
+          "choice": "30% 一定代表調查錯誤",
+          "truth": false,
+          "reason": "不一定錯，但需評估。"
+        },
+        {
+          "choice": "只要有回覆就能代表全部",
+          "truth": false,
+          "reason": "不能自動代表全部。"
+        },
+        {
+          "choice": "回覆率與偏差完全無關",
+          "truth": false,
+          "reason": "回覆模式可能影響結果。"
+        }
+      ],
+      "misconceptionTarget": "只看已回覆樣本大小",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 90,
+      "unitAndRoundingCheck": "無取位。",
+      "ambiguityAndBoundaryAudit": "不斷言一定偏，只指出風險。",
+      "difficultyReason": "基礎。",
+      "literacyNecessityReason": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "dc5517b2825afa4b2356886d388973cb9803e0fe2f039e77ca02aa72e4e8a946"
+    },
+    {
+      "questionId": "u09-s016-v004",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "研究發現常運動者平均睡眠較長。下列哪個結論最合理？",
+      "givenConditions": [
+        "研究設計未說是隨機實驗。"
+      ],
+      "target": "限制因果推論",
+      "choices": [
+        "運動一定造成睡眠變長",
+        "睡眠長一定造成運動",
+        "兩者在樣本中有關聯，但不能僅此證明運動造成睡眠變長",
+        "兩者完全無關"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "work": "平均差只能描述關聯；作因果結論需更嚴謹設計。",
+        "derivedAnswer": "兩者在樣本中有關聯，但不能僅此證明運動造成睡眠變長",
+        "trustStoredAnswer": false
+      },
+      "explanation": "相關不等於因果。",
+      "steps": [
+        "區分觀察與因果。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "運動一定造成睡眠變長",
+          "truth": false,
+          "reason": "缺乏實驗控制。"
+        },
+        {
+          "choice": "睡眠長一定造成運動",
+          "truth": false,
+          "reason": "反向因果也未證明。"
+        },
+        {
+          "choice": "兩者在樣本中有關聯，但不能僅此證明運動造成睡眠變長",
+          "truth": true,
+          "reason": "觀察到關聯，因果仍可能受其他因素影響。"
+        },
+        {
+          "choice": "兩者完全無關",
+          "truth": false,
+          "reason": "資料顯示至少有關聯。"
+        }
+      ],
+      "misconceptionTarget": "把關聯直接當因果",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 90,
+      "unitAndRoundingCheck": "無計算。",
+      "ambiguityAndBoundaryAudit": "結論使用保守語氣。",
+      "difficultyReason": "標準素養。",
+      "literacyNecessityReason": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ab4046aa85a672aa8fcea31d2caba15a07f2750a613599ac6e159cee67636b06"
+    },
+    {
+      "questionId": "u09-s016-v005",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "兩篇報導分別說失業率『增加 1%』與『增加 1 個百分點』。原率 4%、新率 5%。哪篇較精確？",
+      "givenConditions": [
+        "原率與新率明確。"
+      ],
+      "target": "精確解讀百分比變化",
+      "choices": [
+        "增加 1 個百分點；相對增幅為 25%",
+        "增加 1% 完全等同",
+        "相對增幅為 1%",
+        "增加 5 個百分點"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "work": "直接差 1 個百分點，相對於原 4% 是 25%。",
+        "derivedAnswer": "增加 1 個百分點；相對增幅為 25%",
+        "trustStoredAnswer": false
+      },
+      "explanation": "統計語言需標明比較方式。",
+      "steps": [
+        "算直接差。",
+        "算相對差。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "增加 1 個百分點；相對增幅為 25%",
+          "truth": true,
+          "reason": "5%-4%=1 個百分點；1/4=25%。"
+        },
+        {
+          "choice": "增加 1% 完全等同",
+          "truth": false,
+          "reason": "百分點與相對百分比不同。"
+        },
+        {
+          "choice": "相對增幅為 1%",
+          "truth": false,
+          "reason": "相對增幅不是 1%。"
+        },
+        {
+          "choice": "增加 5 個百分點",
+          "truth": false,
+          "reason": "差不是 5。"
+        }
+      ],
+      "misconceptionTarget": "混淆百分點與百分比",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 90,
+      "unitAndRoundingCheck": "25% 精確。",
+      "ambiguityAndBoundaryAudit": "兩種數值回答不同問題。",
+      "difficultyReason": "標準。",
+      "literacyNecessityReason": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6688518d048a9f4703871d889298d3632d6743cc39826711122f04dd7ad8f78e"
+    },
+    {
+      "questionId": "u09-s016-v006",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "standard",
+      "itemType": "mc",
+      "prompt": "一項民調樣本 1000 人，支持率 52%。下列哪個說法最穩健？",
+      "givenConditions": [
+        "1000 人。"
+      ],
+      "target": "區分樣本描述與母群推論",
+      "choices": [
+        "全體民眾恰有 52% 支持",
+        "樣本大所以不需知道抽樣方法",
+        "不可能換算支持人數",
+        "在該樣本中約 520 人支持；推論母群仍需抽樣方法與誤差資訊"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "work": "樣本內支持人數約 520；母群推論要考慮代表性與誤差。",
+        "derivedAnswer": "在該樣本中約 520 人支持；推論母群仍需抽樣方法與誤差資訊",
+        "trustStoredAnswer": false
+      },
+      "explanation": "同時保留可計算事實與推論限制。",
+      "steps": [
+        "換算樣本內人數。",
+        "檢查外推前提。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "全體民眾恰有 52% 支持",
+          "truth": false,
+          "reason": "樣本比例不是母群真值保證。"
+        },
+        {
+          "choice": "樣本大所以不需知道抽樣方法",
+          "truth": false,
+          "reason": "大樣本不能修正偏差抽樣。"
+        },
+        {
+          "choice": "不可能換算支持人數",
+          "truth": false,
+          "reason": "可換算樣本內人數。"
+        },
+        {
+          "choice": "在該樣本中約 520 人支持；推論母群仍需抽樣方法與誤差資訊",
+          "truth": true,
+          "reason": "0.52×1000=520；外推仍需方法。"
+        }
+      ],
+      "misconceptionTarget": "把樣本比例當母群確定值",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 90,
+      "unitAndRoundingCheck": "若 52% 為四捨五入，故用約 520。",
+      "ambiguityAndBoundaryAudit": "不自行提供未給定的誤差範圍。",
+      "difficultyReason": "標準。",
+      "literacyNecessityReason": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9ef7ea03d02b806c75e781dc3d07954fc427be3097b818da603ff60334a04711"
+    },
+    {
+      "questionId": "u09-s016-v007",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "A 藥試驗 100 人改善 60 人，B 藥試驗 20 人改善 14 人。只看改善率 B 為 70% 高於 A 60%。哪個下一步最合理？",
+      "givenConditions": [
+        "兩個樣本大小不同。"
+      ],
+      "target": "評估跨研究比例比較",
+      "choices": [
+        "立即宣布 B 一定較有效",
+        "檢查兩試驗分組、樣本數與受試者條件是否可比",
+        "只比較改善人數，A 一定較好",
+        "把兩率直接平均成 65%"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "work": "先確認隨機分派、對照條件、樣本特徵，再評估 70% 與 60% 差異。",
+        "derivedAnswer": "檢查兩試驗分組、樣本數與受試者條件是否可比",
+        "trustStoredAnswer": false
+      },
+      "explanation": "統計素養要求先審查可比性。",
+      "steps": [
+        "辨認兩研究差異。",
+        "提出必要補充資訊。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "立即宣布 B 一定較有效",
+          "truth": false,
+          "reason": "小樣本 20 人不足以保證更有效。"
+        },
+        {
+          "choice": "檢查兩試驗分組、樣本數與受試者條件是否可比",
+          "truth": true,
+          "reason": "跨研究比較前需確認設計與不確定性。"
+        },
+        {
+          "choice": "只比較改善人數，A 一定較好",
+          "truth": false,
+          "reason": "人數也受樣本大小影響。"
+        },
+        {
+          "choice": "把兩率直接平均成 65%",
+          "truth": false,
+          "reason": "直接平均沒有明確權重與目的。"
+        }
+      ],
+      "misconceptionTarget": "只看最高百分比",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 90,
+      "unitAndRoundingCheck": "比例精確。",
+      "ambiguityAndBoundaryAudit": "不提供醫療建議，只評估資料。",
+      "difficultyReason": "進階素養。",
+      "literacyNecessityReason": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c16748b09ffabe0ff2aa271bc1fc0797d9f0a83361a3206d5eaea862d41b84cc"
+    },
+    {
+      "questionId": "u09-s016-v008",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "某校平均成績提高，但中位數下降。哪個情況可能造成？",
+      "givenConditions": [
+        "同一批或可比群體。"
+      ],
+      "target": "解釋衝突統計指標",
+      "choices": [
+        "所有人都同幅進步",
+        "所有分數都下降",
+        "平均與中位數必須同方向",
+        "少數高分大幅上升，拉高平均；多數中央位置略降"
+      ],
+      "answerIndex": 3,
+      "independentSolution": {
+        "work": "例如多數人略降、少數人進步很多，總和仍可能提高。",
+        "derivedAnswer": "少數高分大幅上升，拉高平均；多數中央位置略降",
+        "trustStoredAnswer": false
+      },
+      "explanation": "不同代表值反應分布不同面向。",
+      "steps": [
+        "構造或想像反例。",
+        "檢查兩指標方向。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "所有人都同幅進步",
+          "truth": false,
+          "reason": "同幅進步會使兩者都上升。"
+        },
+        {
+          "choice": "所有分數都下降",
+          "truth": false,
+          "reason": "所有下降平均也會下降。"
+        },
+        {
+          "choice": "平均與中位數必須同方向",
+          "truth": false,
+          "reason": "兩者可不同方向。"
+        },
+        {
+          "choice": "少數高分大幅上升，拉高平均；多數中央位置略降",
+          "truth": true,
+          "reason": "平均對極高值敏感，中位數反映中央位置。"
+        }
+      ],
+      "misconceptionTarget": "認為代表值必同方向",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 90,
+      "unitAndRoundingCheck": "無計算。",
+      "ambiguityAndBoundaryAudit": "只問可能情況，不聲稱唯一。",
+      "difficultyReason": "進階推理。",
+      "literacyNecessityReason": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "9b888acf9f5b4709fd9cacb8de78bd6bedcc90a6353c11e9c0562e056698590a"
+    },
+    {
+      "questionId": "u09-s016-v009",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "advanced",
+      "itemType": "mc",
+      "prompt": "一張圖只顯示百分比，沒有樣本數。最主要缺少哪項資訊？",
+      "givenConditions": [
+        "未提供樣本數。"
+      ],
+      "target": "辨識百分比圖缺少分母",
+      "choices": [
+        "圖的顏色",
+        "標題字體",
+        "各百分比背後的實際分母與證據量",
+        "類別排列順序一定要照筆畫"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "work": "沒有分母就難判斷實際人數與穩定性。",
+        "derivedAnswer": "各百分比背後的實際分母與證據量",
+        "trustStoredAnswer": false
+      },
+      "explanation": "百分比應盡量與樣本數一起揭露。",
+      "steps": [
+        "找影響解讀的未提供資訊。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "圖的顏色",
+          "truth": false,
+          "reason": "顏色非主要統計資訊。"
+        },
+        {
+          "choice": "標題字體",
+          "truth": false,
+          "reason": "字體不影響證據量。"
+        },
+        {
+          "choice": "各百分比背後的實際分母與證據量",
+          "truth": true,
+          "reason": "相同百分比可能來自 10 人或 10000 人。"
+        },
+        {
+          "choice": "類別排列順序一定要照筆畫",
+          "truth": false,
+          "reason": "排列可影響閱讀但不是核心缺失。"
+        }
+      ],
+      "misconceptionTarget": "只重視視覺設計",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 90,
+      "unitAndRoundingCheck": "無計算。",
+      "ambiguityAndBoundaryAudit": "不要求所有圖都顯示個資。",
+      "difficultyReason": "進階資料揭露。",
+      "literacyNecessityReason": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "07ac0f5633798d8eaa817c2eb7ac64b64eb437f9df9903292ce75bc04603891e"
+    },
+    {
+      "questionId": "u09-s016-v010",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "社群貼文說『9 成網友支持』，來源是作者限時動態的 20 票，其中 18 票支持。哪個回覆最合理？",
+      "givenConditions": [
+        "20 票。"
+      ],
+      "target": "批判社群投票的外推",
+      "choices": [
+        "18/20=90% 的計算正確，但樣本小且自我選擇，不能代表所有網友",
+        "所以全網路 90% 支持",
+        "因只有 20 票，90% 計算錯誤",
+        "所有社群投票都完全沒有任何價值"
+      ],
+      "answerIndex": 0,
+      "independentSolution": {
+        "work": "分開評價計算與推論：計算對，代表性不足。",
+        "derivedAnswer": "18/20=90% 的計算正確，但樣本小且自我選擇，不能代表所有網友",
+        "trustStoredAnswer": false
+      },
+      "explanation": "好的統計批判不應因外推錯誤而否定正確算術。",
+      "steps": [
+        "驗算比例。",
+        "檢查樣本來源。",
+        "限制結論。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "18/20=90% 的計算正確，但樣本小且自我選擇，不能代表所有網友",
+          "truth": true,
+          "reason": "樣本內比例正確，外推不合理。"
+        },
+        {
+          "choice": "所以全網路 90% 支持",
+          "truth": false,
+          "reason": "不能從 20 名自選受眾推全網。"
+        },
+        {
+          "choice": "因只有 20 票，90% 計算錯誤",
+          "truth": false,
+          "reason": "18/20 確實是 90%。"
+        },
+        {
+          "choice": "所有社群投票都完全沒有任何價值",
+          "truth": false,
+          "reason": "可描述該次投票，但需限制範圍。"
+        }
+      ],
+      "misconceptionTarget": "不是全盤接受就是全盤否定",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 130,
+      "unitAndRoundingCheck": "90% 精確。",
+      "ambiguityAndBoundaryAudit": "只評論該次投票。",
+      "difficultyReason": "素養媒體。",
+      "literacyNecessityReason": "社群投票的自選受眾與小樣本直接影響『網友』外推，情境不可刪除。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "09c42f03872765f2213bb3f976fc5befb907f489ccc8fdbcd004c8106a8bf9a3"
+    },
+    {
+      "questionId": "u09-s016-v011",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "市府比較兩區交通事故：甲區 120 件、人口 20 萬；乙區 90 件、人口 10 萬。若評估居民事故風險，哪個結論較合理？",
+      "givenConditions": [
+        "件／十萬人。"
+      ],
+      "target": "用標準化率比較不同人口區域",
+      "choices": [
+        "甲區事故件數多，所以風險較高",
+        "乙區件數少，所以風險較低",
+        "乙區每十萬人 90 件，高於甲區 60 件",
+        "兩區風險相同"
+      ],
+      "answerIndex": 2,
+      "independentSolution": {
+        "work": "換算每十萬人事故率後比較。",
+        "derivedAnswer": "乙區每十萬人 90 件，高於甲區 60 件",
+        "trustStoredAnswer": false
+      },
+      "explanation": "風險比較需要適當人口分母。",
+      "steps": [
+        "計算甲率。",
+        "計算乙率。",
+        "比較。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "甲區事故件數多，所以風險較高",
+          "truth": false,
+          "reason": "總件數忽略人口。"
+        },
+        {
+          "choice": "乙區件數少，所以風險較低",
+          "truth": false,
+          "reason": "乙總件數少但率較高。"
+        },
+        {
+          "choice": "乙區每十萬人 90 件，高於甲區 60 件",
+          "truth": true,
+          "reason": "甲 120/20萬×10萬=60；乙=90。"
+        },
+        {
+          "choice": "兩區風險相同",
+          "truth": false,
+          "reason": "60 不等於 90。"
+        }
+      ],
+      "misconceptionTarget": "以總件數代替風險率",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 130,
+      "unitAndRoundingCheck": "60 與 90 精確。",
+      "ambiguityAndBoundaryAudit": "未調整道路里程等其他因素，只用題目指標。",
+      "difficultyReason": "素養政策比較。",
+      "literacyNecessityReason": "區域人口不同，使事故總數不能直接代表居民風險。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4f6d1aa4914b6ac4085eda35987f93bb859d2fd0fe8047c272be29fa2f6c6545"
+    },
+    {
+      "questionId": "u09-s016-v012",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "literacy",
+      "itemType": "mc",
+      "prompt": "環保報告稱工廠排放『下降 30%』，但未說明比較年份、污染物種類與計算基準。讀者最適合怎麼做？",
+      "givenConditions": [
+        "污染物與期間未定。"
+      ],
+      "target": "面對不完整統計宣稱提出查證需求",
+      "choices": [
+        "直接相信 30%",
+        "要求完整基準、時間範圍與原始數值後再判斷",
+        "直接認定報告造假",
+        "只看圖表顏色判斷"
+      ],
+      "answerIndex": 1,
+      "independentSolution": {
+        "work": "百分比必須有分母、比較期與測量定義；應要求補充。",
+        "derivedAnswer": "要求完整基準、時間範圍與原始數值後再判斷",
+        "trustStoredAnswer": false
+      },
+      "explanation": "統計資料素養包含知道何時不能下結論。",
+      "steps": [
+        "列出缺失資訊。",
+        "暫緩判斷。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "直接相信 30%",
+          "truth": false,
+          "reason": "資訊不足，不宜直接接受。"
+        },
+        {
+          "choice": "要求完整基準、時間範圍與原始數值後再判斷",
+          "truth": true,
+          "reason": "缺少基準無法知道 30% 的意義與絕對量。"
+        },
+        {
+          "choice": "直接認定報告造假",
+          "truth": false,
+          "reason": "資訊不足也不等於造假。"
+        },
+        {
+          "choice": "只看圖表顏色判斷",
+          "truth": false,
+          "reason": "顏色不是證據。"
+        }
+      ],
+      "misconceptionTarget": "在資訊不足時強行二分判斷",
+      "prerequisiteCheck": {
+        "skillIds": [
+          "misleading-statistics-basic"
+        ],
+        "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
+      },
+      "estimatedTimeSec": 130,
+      "unitAndRoundingCheck": "無計算。",
+      "ambiguityAndBoundaryAudit": "回應不預設真偽。",
+      "difficultyReason": "素養查證。",
+      "literacyNecessityReason": "環境排放宣稱可能影響政策與健康判斷，基準與原始量不可省略。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4f9a5deeaeab9589fdb272a2276f992278f1cee2e1718a56191f9213d7c82919"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u09-s016-cr001",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "standard",
+      "itemType": "constructed-response",
+      "prompt": "學校想估計全校學生每天使用手機時間，研究者只在電競社群組張貼自願問卷，共收到120份回覆，平均為4.6小時。請指出母體、樣本、至少兩個可能偏誤，並把可以合理發布的結論改寫出來。",
+      "givenConditions": [],
+      "target": "辨認母體與便利自願樣本，限制推論範圍。",
+      "requiredWork": [
+        "母體為全校學生。",
+        "樣本為電競社群組中自願回覆的120人。",
+        "至少兩項偏誤與有限結論。"
+      ],
+      "standardSolution": [
+        "母體是全校學生；樣本是電競社群組中願意填答的120人。",
+        "可能偏誤一：電競社成員或群組使用者可能比一般學生更常使用手機，屬便利抽樣偏誤。",
+        "可能偏誤二：願意回覆者可能與未回覆者不同，屬自願回覆或不回應偏誤。",
+        "合理結論：『在此次電競社群組自願回覆的120人中，平均每天使用手機4.6小時；此結果不能直接代表全校學生。』"
+      ],
+      "alternativeMethod": "也可指出未涵蓋不在群組者、年級比例失衡或自報時間誤差，只要與設計具體相關。",
+      "reasoningSteps": [
+        "寫出研究想推論的全部對象。",
+        "寫出實際被蒐集的對象。",
+        "比較誰有較高被選入或回覆機會。",
+        "將結論限制在樣本。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "母體、樣本、兩個具體偏誤及有限結論全部正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "母體樣本正確，且有一個具體偏誤與合理限制；或兩偏誤正確但結論略含糊。"
+        },
+        {
+          "score": 1,
+          "criteria": "至少能正確區分全校母體與120人樣本。"
+        },
+        {
+          "score": 0,
+          "criteria": "把120人當全校母體，並直接宣稱全校平均4.6小時。"
+        }
+      ],
+      "partialCreditRules": [
+        "兩個偏誤若只是同一句的同義改寫，只算一項。",
+        "『樣本太小』不是本題主要偏誤，因120大小本身不能修正抽樣來源。"
+      ],
+      "followThroughPolicy": "本題無算術跟隨錯誤；統計對象與偏誤需分項評。",
+      "unitAndNotationRules": "手機時間以小時；樣本數以人。",
+      "answerOnlyPolicy": "只寫『不能代表全校』而無母體樣本與原因，最高1分。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "independentDerivation": "抽樣框限電競社群且採自願回覆，故120人的4.6只描述回覆者。",
+        "boundaryAndAmbiguityAudit": "研究目的與蒐集管道明確，偏誤來源可具體辨識。",
+        "rubricAlignmentEvidence": "完整資料素養需從對象、機制到結論逐層說明。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "7261d4ec2ef5ffd562840ad942c4ccf3ad1b15006c967415ee8209038ca59823"
+    },
+    {
+      "questionId": "u09-s016-cr002",
+      "unitId": "u09",
+      "numericUnitId": 9,
+      "topicId": "u09-literacy",
+      "skillId": "statistics-literacy-context",
+      "difficulty": "advanced",
+      "itemType": "constructed-response",
+      "prompt": "某市觀察到帶環保杯的居民每週購買含糖飲料平均2.1杯，未帶者平均3.4杯，報告因此主張『發放環保杯可使每人每週少喝1.3杯含糖飲料』。請評估這項因果主張，提出至少三個可能混淆因素，並設計一個比原調查更能檢驗因果的研究方案，說明要比較什麼。",
+      "givenConditions": [],
+      "target": "由觀察性平均差辨認關聯與因果界線，提出控制混淆的研究設計。",
+      "requiredWork": [
+        "承認樣本平均差1.3但否定其單獨證明因果。",
+        "至少三個具體混淆因素。",
+        "提出隨機分派或等效控制方案及比較指標。"
+      ],
+      "standardSolution": [
+        "觀察到的平均差為3.4-2.1=1.3杯，但帶環保杯是居民自行選擇，不是隨機分派，因此只能說兩群在樣本中有關聯。",
+        "可能混淆因素包括健康意識、年齡、收入、工作地點是否有飲水機、原本飲料習慣、運動習慣或環保態度。",
+        "較強方案：招募符合條件的居民，先量測基準含糖飲料量，再隨機分為『免費提供環保杯並鼓勵使用』與『不提供』兩組；在相同期間記錄每人每週含糖飲料杯數，比較兩組從基準到追蹤期的平均變化，並監測遵從與流失。"
+      ],
+      "alternativeMethod": "若不能隨機，可配對相似居民並控制基準飲用量、年齡等，但因果證據仍弱於隨機實驗。",
+      "reasoningSteps": [
+        "重新計算觀察差。",
+        "辨認暴露不是隨機。",
+        "列出同時影響帶杯與飲料量的因素。",
+        "設計對照與隨機分派。",
+        "明確寫出追蹤指標與比較方式。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "正確解釋1.3為觀察差非因果、列出至少三個合理混淆因素，並提出含隨機分派、對照、基準與追蹤比較的方案。"
+        },
+        {
+          "score": 2,
+          "criteria": "因果限制與三個混淆因素正確，但研究方案缺少一項關鍵元素；或方案完整但只列兩個混淆因素。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道相關不等於因果並能舉一個具體混淆因素。"
+        },
+        {
+          "score": 0,
+          "criteria": "直接接受發放環保杯必然減少1.3杯，無混淆或設計概念。"
+        }
+      ],
+      "partialCreditRules": [
+        "混淆因素必須可能同時影響帶杯行為與含糖飲料量。",
+        "只擴大樣本但仍便利觀察，不能視為因果設計。"
+      ],
+      "followThroughPolicy": "差值若誤算但因果審查與設計完整，可保留大部分概念分。",
+      "unitAndNotationRules": "飲料量以杯/人/週；研究比較需保持相同期間。",
+      "answerOnlyPolicy": "只寫『相關不等於因果』，最高1分。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "independentReview": {
+        "independentDerivation": "兩群差1.3，但自我選擇造成混淆；隨機對照並比較基準後變化能提高因果識別。",
+        "boundaryAndAmbiguityAudit": "未要求實際執行研究；倫理與遵從可在設計限制中說明。",
+        "rubricAlignmentEvidence": "滿分需從數值、混淆到可檢驗研究設計完整推進。",
+        "decision": "pass"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "contentSha256": "c46564976f2438ba9e1de35f8a7cd9971625f67514c995cc43f928295534cb10"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "010-u09-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/010-u09-complete/units/u09/s016"
+}

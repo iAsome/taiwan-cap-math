@@ -1,0 +1,1195 @@
+{
+  "slot": "s012",
+  "skillId": "quadratic-word-problem",
+  "topicId": "u13-applications",
+  "title": "二次方程式文字應用",
+  "lecture": {
+    "lectureId": "u13-s012-lecture-r1",
+    "unitId": "u13",
+    "numericUnitId": 13,
+    "topicId": "u13-applications",
+    "skillId": "quadratic-word-problem",
+    "lockedOrder": 12,
+    "originalLockedTitle": "二次方程式應用",
+    "title": "二次方程式文字應用",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能從文字中選定未知數與合理範圍。",
+      "能把乘積、平方、差與總量關係列成方程式。",
+      "能解方程式並排除不合情境的根。",
+      "能以原情境語句作答並附單位。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "quadratic-formula-basic",
+        "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+      }
+    ],
+    "prerequisiteBridge": "承接公式解基本代入，開始把自然語言關係轉成可解的二次方程式。",
+    "glossary": [
+      {
+        "term": "設未知數",
+        "definition": "用 x 代表題目要求或容易表達其他量的數。"
+      },
+      {
+        "term": "列方程式",
+        "definition": "把文字中的相等關係翻成含 x 的等式。"
+      },
+      {
+        "term": "情境限制",
+        "definition": "正數、整數、容量、時間等題意要求。"
+      },
+      {
+        "term": "可接受解",
+        "definition": "既是代數根，又符合所有情境限制的答案。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "x(x+d)=P",
+        "meaning": "兩個相差 d 的量乘積為 P。"
+      },
+      {
+        "symbol": "R=n(p-kn)",
+        "meaning": "數量與隨數量改變的單價形成二次收入模型。"
+      }
+    ],
+    "conceptNarrative": [
+      "應用題的核心是「關係」而不是故事名詞。",
+      "先設最自然的未知數，再把其他量用 x 表示。",
+      "列式前可用單位檢查：長度×長度是面積，速度×時間是距離。",
+      "解出兩根後，負數、非整數或超過容量的根可能不合情境。",
+      "最後把答案代回原文字條件，不只代回代數式。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "建模流程",
+        "statement": "讀條件→設未知數→表示其他量→列等式→解→檢查→情境作答。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "較大數=x+d，乘積=x(x+d)",
+        "conditions": [
+          "兩量相差固定 d"
+        ],
+        "meaning": "常見數量關係。"
+      },
+      {
+        "formula": "時間=距離÷速度",
+        "conditions": [
+          "速度不為 0"
+        ],
+        "meaning": "速度改變造成時間差時可形成二次方程式。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能只看到數字就相乘，必須先確認各量關係。",
+      "若設 x 為分母中的速度，需先註明 x>0。",
+      "代數負根在年齡、人數、長度中通常不合題意。",
+      "題目若要求整數，非整數根需排除並說明。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "圈出要求量、相等關係與限制。",
+        "check": "是否有正數、整數或範圍？"
+      },
+      {
+        "step": 2,
+        "instruction": "設 x 並用 x 表示其他量。",
+        "check": "每個表示式是否符合文字關係？"
+      },
+      {
+        "step": 3,
+        "instruction": "依總量或乘積列方程式。",
+        "check": "等號兩邊單位是否一致？"
+      },
+      {
+        "step": 4,
+        "instruction": "選合適方法解方程式。",
+        "check": "是否求出全部代數根？"
+      },
+      {
+        "step": 5,
+        "instruction": "代回情境篩選並作答。",
+        "check": "單位與題目問法是否完整？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "正數 x 與 x+3 的乘積為 40，求 x。",
+        "solutionSteps": [
+          "列 x(x+3)=40。",
+          "整理為 (x+8)(x-5)=0。",
+          "正數限制排除 -8。"
+        ],
+        "answer": "x=5。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "兩個相差 4 的正數乘積為 45，求較小數。",
+        "solutionSteps": [
+          "設較小數 x，較大數 x+4。",
+          "x(x+4)=45，得 (x+9)(x-5)=0。"
+        ],
+        "answer": "較小數為 5。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "速度增加 10 km/h 後，120 km 行程少 1 小時，求原速。",
+        "solutionSteps": [
+          "設原速 x>0。",
+          "120/x-120/(x+10)=1。",
+          "化簡得 x²+10x-1200=0。"
+        ],
+        "answer": "原速 30 km/h。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "每人收費 300-5n 元，共 n 人，收入 4000 元，且 n≤30，求 n。",
+        "solutionSteps": [
+          "列 n(300-5n)=4000。",
+          "化簡得 n²-60n+800=0，根為 20、40。",
+          "容量排除 40。"
+        ],
+        "answer": "n=20。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "未設未知數就直接列式。",
+        "why": "量的角色不清楚。",
+        "correction": "先寫 x 代表什麼與範圍。"
+      },
+      {
+        "mistake": "相差 4 寫成 4x。",
+        "why": "把加法差距誤成倍數。",
+        "correction": "另一量寫 x+4。"
+      },
+      {
+        "mistake": "時間題寫速度÷距離。",
+        "why": "公式顛倒。",
+        "correction": "時間=距離÷速度。"
+      },
+      {
+        "mistake": "只保留較小代數根而不看情境。",
+        "why": "篩選理由不足。",
+        "correction": "逐根代回限制。"
+      },
+      {
+        "mistake": "答案沒有單位。",
+        "why": "情境作答不完整。",
+        "correction": "寫 km/h、人、元等。"
+      },
+      {
+        "mistake": "列式單位不一致。",
+        "why": "模型關係錯誤。",
+        "correction": "用量綱檢查等號兩邊。"
+      }
+    ],
+    "selfCheck": [
+      "x 代表什麼且範圍為何？",
+      "其他量是否用 x 正確表示？",
+      "方程式兩邊單位一致嗎？",
+      "所有代數根都求出了嗎？",
+      "排除根的理由與單位完整嗎？"
+    ],
+    "summary": [
+      "應用題先建模再計算。",
+      "未知數與範圍必須先說明。",
+      "列式可用單位檢查。",
+      "代數根還需通過情境限制。"
+    ],
+    "connections": {
+      "previous": "承接公式解基本代入，開始把自然語言關係轉成可解的二次方程式。",
+      "next": [
+        "下一節專注長方形、正方形與外框面積。",
+        "連續整數技能會處理相鄰整數的固定差。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u13-s012-v001",
+        "u13-s012-v002",
+        "u13-s012-v003",
+        "u13-s012-v004",
+        "u13-s012-v005",
+        "u13-s012-v006",
+        "u13-s012-v007",
+        "u13-s012-v008",
+        "u13-s012-v009",
+        "u13-s012-v010",
+        "u13-s012-v011",
+        "u13-s012-v012"
+      ],
+      "constructedResponseIds": [
+        "u13-s012-cr001",
+        "u13-s012-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "reviewNote": "四例均把答案代回原文字條件；確認速度題清除分母後原速 30 使時間差 1 小時，收入題兩根皆為代數解但 40 超過容量。",
+      "reviewVersion": "human-lecture-review-u13-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "f0e1ee8941fbf82708f84350a76aea258869c1ab6131a33f98021295236d882e"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u13-s012-v001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "一個正數 x 與 x+3 的乘積為 40，x 為何？",
+      "givenConditions": "x>0。",
+      "target": "求正數",
+      "choices": [
+        "-8",
+        "8",
+        "4",
+        "5"
+      ],
+      "answerIndex": 3,
+      "explanation": "列 x²+3x-40=0；分解 (x+8)(x-5)=0，取 5，所以答案為「5」。",
+      "steps": [
+        "列 x²+3x-40=0",
+        "分解 (x+8)(x-5)=0，取 5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-8",
+          "truth": false,
+          "reason": "代數根但不是正數。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "8·11≠40。"
+        },
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "4·7=28。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "x(x+3)=40，根 5、-8，取正值。"
+        }
+      ],
+      "misconceptionTarget": "只解方程不看正值",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 75,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "正值唯一。",
+      "difficultyReason": "最基本文字乘積。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求正數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "2963d8df00ffb86847ec96bb26922321f4359ba03502e704637f5f3c7c941b6a"
+    },
+    {
+      "questionId": "u13-s012-v002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "某正數的平方比它的 5 倍多 24。這個正數為何？",
+      "givenConditions": "x>0。",
+      "target": "翻譯「多 24」",
+      "choices": [
+        "-3",
+        "5",
+        "8",
+        "24"
+      ],
+      "answerIndex": 2,
+      "explanation": "x²-5x-24=0；(x-8)(x+3)=0，取 8，所以答案為「8」。",
+      "steps": [
+        "x²-5x-24=0",
+        "(x-8)(x+3)=0，取 8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-3",
+          "truth": false,
+          "reason": "是代數根但不是正數。"
+        },
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "把倍數係數當答案。"
+        },
+        {
+          "choice": "8",
+          "truth": true,
+          "reason": "列 x²=5x+24，根 8、-3，取 8。"
+        },
+        {
+          "choice": "24",
+          "truth": false,
+          "reason": "把差額當答案。"
+        }
+      ],
+      "misconceptionTarget": "把多寫成乘或忽略正值",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 80,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "句子表示 x²-5x=24。",
+      "difficultyReason": "語意列式。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "翻譯「多 24」",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "403229a1e1a9f232bd28d9731110fc02124c47e99ede6b10804e303a4027eb5c"
+    },
+    {
+      "questionId": "u13-s012-v003",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "兩個相差 4 的正數乘積為 45，較小數為何？",
+      "givenConditions": "兩數皆正且較大=較小+4。",
+      "target": "求較小正數",
+      "choices": [
+        "5",
+        "9",
+        "-9",
+        "-5"
+      ],
+      "answerIndex": 0,
+      "explanation": "x(x+4)=45；(x+9)(x-5)=0，較小正數 5，所以答案為「5」。",
+      "steps": [
+        "x(x+4)=45",
+        "(x+9)(x-5)=0，較小正數 5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "設較小 x，另一數 x+4，得 x=5。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "這是較大數。"
+        },
+        {
+          "choice": "-9",
+          "truth": false,
+          "reason": "負根且不是正數。"
+        },
+        {
+          "choice": "-5",
+          "truth": false,
+          "reason": "不符合正數。"
+        }
+      ],
+      "misconceptionTarget": "把較大數當所求或保留負組",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 80,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "答案問較小者。",
+      "difficultyReason": "固定差乘積。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求較小正數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3c72a49d29d021c6018585742f78413f220349e54f52e7766a033197d2aac877"
+    },
+    {
+      "questionId": "u13-s012-v004",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "甲的年齡比乙大 3 歲，兩人年齡乘積為 70。若兩人皆為正整數，乙幾歲？",
+      "givenConditions": "年齡為正整數。",
+      "target": "求較小年齡",
+      "choices": [
+        "10 歲",
+        "7 歲",
+        "5 歲",
+        "14 歲"
+      ],
+      "answerIndex": 1,
+      "explanation": "x²+3x-70=0；(x+10)(x-7)=0，取 x=7，所以答案為「7 歲」。",
+      "steps": [
+        "x²+3x-70=0",
+        "(x+10)(x-7)=0，取 x=7"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10 歲",
+          "truth": false,
+          "reason": "這是甲的年齡。"
+        },
+        {
+          "choice": "7 歲",
+          "truth": true,
+          "reason": "設乙 x，甲 x+3，x(x+3)=70，正根 7。"
+        },
+        {
+          "choice": "5 歲",
+          "truth": false,
+          "reason": "5·8=40。"
+        },
+        {
+          "choice": "14 歲",
+          "truth": false,
+          "reason": "14·17≠70。"
+        }
+      ],
+      "misconceptionTarget": "人物角色對調",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 90,
+      "unitCheck": "年齡單位歲。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "乙是較小者。",
+      "difficultyReason": "角色與乘積建模。",
+      "literacyContextNecessity": "年齡關係決定 x+3，正整數性排除負根。",
+      "authoringIntent": "求較小年齡",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "43bbbdbb5ec518f9e38446a92e0c91f7ea2b14c445420e87bd1ae018d9cb0777"
+    },
+    {
+      "questionId": "u13-s012-v005",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "長方形卡片有 x 排、每排 x+2 張貼紙，共 48 張。x 為何？",
+      "givenConditions": "x∈正整數。",
+      "target": "求排數",
+      "choices": [
+        "-8",
+        "8",
+        "6",
+        "24"
+      ],
+      "answerIndex": 2,
+      "explanation": "x²+2x-48=0；(x+8)(x-6)=0，取 6，所以答案為「6」。",
+      "steps": [
+        "x²+2x-48=0",
+        "(x+8)(x-6)=0，取 6"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-8",
+          "truth": false,
+          "reason": "負排數不合理。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "8·10=80。"
+        },
+        {
+          "choice": "6",
+          "truth": true,
+          "reason": "x(x+2)=48，根 6、-8，排數取 6。"
+        },
+        {
+          "choice": "24",
+          "truth": false,
+          "reason": "把總數除以 2 而未符合關係。"
+        }
+      ],
+      "misconceptionTarget": "只看總量或保留負根",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 85,
+      "unitCheck": "x 為排數。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "每排 x+2 也需正。",
+      "difficultyReason": "陣列建模。",
+      "literacyContextNecessity": "排與每排數量的乘積是不可刪除的情境關係。",
+      "authoringIntent": "求排數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "eb03151b579b793182fb6637148cdbd116eb3f7018ddca3d33f19f57eb1b9818"
+    },
+    {
+      "questionId": "u13-s012-v006",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "正數 x 的平方與 x 的和為 72，x 為何？",
+      "givenConditions": "x>0。",
+      "target": "求正數",
+      "choices": [
+        "-9",
+        "9",
+        "72",
+        "8"
+      ],
+      "answerIndex": 3,
+      "explanation": "列 x²+x=72；分解後取正根 8，所以答案為「8」。",
+      "steps": [
+        "列 x²+x=72",
+        "分解後取正根 8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-9",
+          "truth": false,
+          "reason": "代數根但不是正數。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "9²+9=90。"
+        },
+        {
+          "choice": "72",
+          "truth": false,
+          "reason": "把總和當 x。"
+        },
+        {
+          "choice": "8",
+          "truth": true,
+          "reason": "x²+x-72=(x+9)(x-8)=0。"
+        }
+      ],
+      "misconceptionTarget": "未把和關係列式",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 80,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "負根排除。",
+      "difficultyReason": "平方加本身。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求正數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "8b0955a16958d1f19a515d0b080a6fbcda50eb6d497a58b1ebc6dd91b99faaa1"
+    },
+    {
+      "questionId": "u13-s012-v007",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "120 km 行程中，速度增加 10 km/h 後可少花 1 小時。原速為何？",
+      "givenConditions": "x>0 且 x+10>0。",
+      "target": "求原速",
+      "choices": [
+        "-40 km/h",
+        "30 km/h",
+        "20 km/h",
+        "40 km/h"
+      ],
+      "answerIndex": 1,
+      "explanation": "設原速 x>0；清分母得 x²+10x-1200=0，根 30、-40，所以答案為「30 km/h」。",
+      "steps": [
+        "設原速 x>0",
+        "清分母得 x²+10x-1200=0，根 30、-40"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-40 km/h",
+          "truth": false,
+          "reason": "代數根但速度不能為負。"
+        },
+        {
+          "choice": "30 km/h",
+          "truth": true,
+          "reason": "120/x-120/(x+10)=1，化簡得 x=30 或 -40，取正。"
+        },
+        {
+          "choice": "20 km/h",
+          "truth": false,
+          "reason": "時間差 6-4=2 小時。"
+        },
+        {
+          "choice": "40 km/h",
+          "truth": false,
+          "reason": "時間差 3-2.4=0.6 小時。"
+        }
+      ],
+      "misconceptionTarget": "時間公式或清分母錯",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 150,
+      "unitCheck": "距離 km、速度 km/h、時間 h。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "速度不可為 0 或負。",
+      "difficultyReason": "分式建模後二次方程。",
+      "literacyContextNecessity": "距離、提速與節省時間共同形成二次模型。",
+      "authoringIntent": "求原速",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "233c14c88132bbae5247f762b47037645d0af83c814548848eef1d25fd9b21a4"
+    },
+    {
+      "questionId": "u13-s012-v008",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "某活動分成 n 組，每組 n-2 人，共 80 人，且 n>2。n 為何？",
+      "givenConditions": "n 為整數且 n>2。",
+      "target": "求組數",
+      "choices": [
+        "10",
+        "-8",
+        "8",
+        "12"
+      ],
+      "answerIndex": 0,
+      "explanation": "n²-2n-80=0；(n-10)(n+8)=0，取 10，所以答案為「10」。",
+      "steps": [
+        "n²-2n-80=0",
+        "(n-10)(n+8)=0，取 10"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10",
+          "truth": true,
+          "reason": "n(n-2)=80，根 10、-8，取 n=10。"
+        },
+        {
+          "choice": "-8",
+          "truth": false,
+          "reason": "組數不可為負，違反情境。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "8·6=48。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "12·10=120。"
+        }
+      ],
+      "misconceptionTarget": "未驗證每組人數與範圍",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 95,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "負根排除。",
+      "difficultyReason": "雙重數量關係。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求組數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "861cb279aef4e11f3ebf78f0cd21fe29d538dffff144bcd00e69b76d41ee2814"
+    },
+    {
+      "questionId": "u13-s012-v009",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "某照片牆有 x 排，每排 x+1 張，共 132 張，x 為正整數。x 為何？",
+      "givenConditions": "x∈正整數。",
+      "target": "求正整數排數",
+      "choices": [
+        "-12",
+        "12",
+        "66",
+        "11"
+      ],
+      "answerIndex": 3,
+      "explanation": "x²+x-132=0；根 11、-12，取 11，所以答案為「11」。",
+      "steps": [
+        "x²+x-132=0",
+        "根 11、-12，取 11"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-12",
+          "truth": false,
+          "reason": "排數不可為負，違反情境。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "12·13=156。"
+        },
+        {
+          "choice": "66",
+          "truth": false,
+          "reason": "把總數除以 2。"
+        },
+        {
+          "choice": "11",
+          "truth": true,
+          "reason": "x(x+1)=132，分解為 (x-11)(x+12)=0。"
+        }
+      ],
+      "misconceptionTarget": "把相鄰量角色或總量處理錯",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 95,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "每排 x+1。",
+      "difficultyReason": "大數乘積分解。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求正整數排數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "d73e465c470ddf1a800bcae144c590da1f1d5d62a1ddca7c3dee29276bedae54"
+    },
+    {
+      "questionId": "u13-s012-v010",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "每位參加者收費 300-5n 元，共 n 人，總收入 4000 元；場地最多 30 人。n 為何？",
+      "givenConditions": "n 為正整數且 n≤30，單價需合理。",
+      "target": "求容量內參加人數",
+      "choices": [
+        "40",
+        "20",
+        "30",
+        "20 或 40"
+      ],
+      "answerIndex": 1,
+      "explanation": "整理得 n²-60n+800=0；根 20、40；n≤30 取 20，所以答案為「20」。",
+      "steps": [
+        "整理得 n²-60n+800=0",
+        "根 20、40；n≤30 取 20"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "40",
+          "truth": false,
+          "reason": "代數根但超過容量。"
+        },
+        {
+          "choice": "20",
+          "truth": true,
+          "reason": "n(300-5n)=4000，根 20、40，容量只留 20。"
+        },
+        {
+          "choice": "30",
+          "truth": false,
+          "reason": "容量上限不是自動解。"
+        },
+        {
+          "choice": "20 或 40",
+          "truth": false,
+          "reason": "未套用容量。"
+        }
+      ],
+      "misconceptionTarget": "把上限當答案或忽略另一限制",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 130,
+      "unitCheck": "收費元、人數人、總收入元。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "40 排除。",
+      "difficultyReason": "收入模型與容量篩選。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為票價隨人數改變與場地容量兩項資料都不可刪除。",
+      "authoringIntent": "求容量內參加人數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "55aff6a94848365f2259925090894dca2ba5858df87aa2e61398934359e9f05e"
+    },
+    {
+      "questionId": "u13-s012-v011",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "包裝機每批放 q 列、每列 q-5 件，共 84 件，且 q>5。q 為何？",
+      "givenConditions": "q 為整數且 >5。",
+      "target": "求列數",
+      "choices": [
+        "12",
+        "-7",
+        "7",
+        "14"
+      ],
+      "answerIndex": 0,
+      "explanation": "q²-5q-84=0；(q-12)(q+7)=0，取 12，所以答案為「12」。",
+      "steps": [
+        "q²-5q-84=0",
+        "(q-12)(q+7)=0，取 12"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12",
+          "truth": true,
+          "reason": "q(q-5)=84，根 12、-7，取 12。"
+        },
+        {
+          "choice": "-7",
+          "truth": false,
+          "reason": "負列數且不符合 q>5。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "7·2=14。"
+        },
+        {
+          "choice": "14",
+          "truth": false,
+          "reason": "14·9=126。"
+        }
+      ],
+      "misconceptionTarget": "只看差 5 或保留負根",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 100,
+      "unitCheck": "q 為列數。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "每列 q-5 必為正。",
+      "difficultyReason": "包裝陣列與下限。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為q>5 同時保證列數與每列件數可行。",
+      "authoringIntent": "求列數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "1f8c9102600045f106073464bb4e6ff248774d0cb185ee705c05b81e5bc9ea4e"
+    },
+    {
+      "questionId": "u13-s012-v012",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "lockedSkillOrder": 12,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "某會員方案有 n 人，每人可獲 n+4 點，總點數 96 點；n 為正整數。n 為何？",
+      "givenConditions": "n∈正整數。",
+      "target": "求會員人數",
+      "choices": [
+        "-12",
+        "12",
+        "8",
+        "24"
+      ],
+      "answerIndex": 2,
+      "explanation": "n²+4n-96=0；(n+12)(n-8)=0，取 8，所以答案為「8」。",
+      "steps": [
+        "n²+4n-96=0",
+        "(n+12)(n-8)=0，取 8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-12",
+          "truth": false,
+          "reason": "人數不可為負，違反情境。"
+        },
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "12·16=192。"
+        },
+        {
+          "choice": "8",
+          "truth": true,
+          "reason": "n(n+4)=96，根 8、-12，取 8。"
+        },
+        {
+          "choice": "24",
+          "truth": false,
+          "reason": "把總點數除以 4。"
+        }
+      ],
+      "misconceptionTarget": "把固定增加量誤作除法",
+      "prerequisiteSkillIds": [
+        "quadratic-formula-basic"
+      ],
+      "estimatedTimeSec": 100,
+      "unitCheck": "n 為人數，點數總量為點。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "總點數與每人點數單位一致。",
+      "difficultyReason": "素養式數量模型。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為人數與每人點數相依，必須用乘積而非單一步驟除法。",
+      "authoringIntent": "求會員人數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "aa3a77ece37c8cacede852c56111841acd94ab5767e0dd1a6338bd9504201174"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u13-s012-cr001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "某正整數比它的平方少 72。求此正整數，並寫出列式。",
+      "requiredWork": [
+        "設未知數。",
+        "把文字翻成方程式。",
+        "求根並套正整數限制。"
+      ],
+      "fullCreditSolution": [
+        "設正整數為 x。",
+        "「x 比 x² 少 72」表示 x²-x=72。",
+        "整理 x²-x-72=0=(x-9)(x+8)，得 x=9 或 -8。",
+        "因 x 為正整數，所以答案是 9。"
+      ],
+      "alternativeSolutions": [
+        "可把候選正整數直接由 9²-9=72 驗證，但仍須列方程式。"
+      ],
+      "reasoningSteps": [
+        "辨認誰減誰等於 72。",
+        "解二次方程式。",
+        "排除負根。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "列 x²-x=72，解得 9 並正確排除 -8。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案 9 正確且列式合理，但分解或排除理由略簡。"
+        },
+        {
+          "score": 1,
+          "criteria": "列式方向正確但求根錯，或只用試數得到 9 未完整建模。"
+        },
+        {
+          "score": 0,
+          "criteria": "列成 x-x²=72 且無修正，答案錯。"
+        }
+      ],
+      "partialCreditRules": [
+        "只回答正根即可，但需說明負根不符合正整數。"
+      ],
+      "followThroughPolicy": "若方程式正確、因式分解符號出錯，保留 1 分；若後續代入發現並修正可恢復。",
+      "unitNotationRules": [
+        "數量無物理單位。",
+        "x∈正整數。"
+      ],
+      "answerOnlyPolicy": "只寫 9 而無列式，最多 1 分。",
+      "commonErrors": [
+        "把「少 72」列反。",
+        "保留 -8。"
+      ],
+      "independentReview": {
+        "derivedResult": "正整數為 9。",
+        "ambiguity": "文字關係明確，唯一正整數解。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "ca69ffc0d15c815321bf93942daaab43e4d3ad950357376cc0bc9665e210794d"
+    },
+    {
+      "questionId": "u13-s012-cr002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-word-problem",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "一輛車原速為 v km/h，行駛 120 km。速度增加 20 km/h 後，時間少 1 小時。求原速。",
+      "requiredWork": [
+        "建立兩段時間。",
+        "列時間差方程式。",
+        "清分母解二次方程式。",
+        "檢查速度正值與時間差。"
+      ],
+      "fullCreditSolution": [
+        "原時間為 120/v，新時間為 120/(v+20)。",
+        "120/v-120/(v+20)=1。",
+        "乘 v(v+20)：120(v+20)-120v=v(v+20)，得 v²+20v-2400=0。",
+        "(v-40)(v+60)=0，所以 v=40 或 -60。",
+        "速度取正，原速 40 km/h；原時間 3 小時，新時間 2 小時，確實少 1 小時。"
+      ],
+      "alternativeSolutions": [
+        "可由選項式試驗正速度，但完整作答仍需建立分式方程。"
+      ],
+      "reasoningSteps": [
+        "距離÷速度=時間。",
+        "原時間減新時間。",
+        "注意 v≠0、v≠-20。",
+        "篩選正根。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "列式、清分母、求得 40 km/h 與驗算完整。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案與主要列式正確，但清分母省略或驗算不完整。"
+        },
+        {
+          "score": 1,
+          "criteria": "能寫兩個時間式與差 1，但代數化簡錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "把速度差直接當時間差，無有效模型。"
+        }
+      ],
+      "partialCreditRules": [
+        "若只列正根而未寫 -60，仍可滿分，只要說明速度為正且解法未因除未知數漏根。",
+        "單位必須是 km/h。"
+      ],
+      "followThroughPolicy": "若早期 120(v+20)-120v 算錯，後續依錯式一致，最多 1 分；不可把負速度視為可行。",
+      "unitNotationRules": [
+        "距離 km、速度 km/h、時間 h。",
+        "v>0。"
+      ],
+      "answerOnlyPolicy": "只寫 40 km/h，無模型，最多 1 分。",
+      "commonErrors": [
+        "列成 120/(v+20)-120/v=1。",
+        "把 120/v 簡化成 120-v。",
+        "保留 -60。"
+      ],
+      "independentReview": {
+        "derivedResult": "原速 40 km/h。",
+        "ambiguity": "行程距離固定、速度正，實際根唯一。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "0fd79f304082ae96280382ba859d62fbe81abdb3b0059a923e853e55180b3fbe"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "014-u13-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/014-u13-complete/units/u13/s012"
+}

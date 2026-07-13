@@ -1,0 +1,1337 @@
+{
+  "slot": "s005",
+  "skillId": "sqrt-notation",
+  "topicId": "u11-square-root",
+  "title": "平方根記號：分清主平方根與正負兩解",
+  "lecture": {
+    "lectureId": "u11-s005-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-square-root",
+    "skillId": "sqrt-notation",
+    "lockedSkillOrder": 5,
+    "lockedTitle": "平方根記號",
+    "title": "平方根記號：分清主平方根與正負兩解",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能分辨√a、±√a與x²=a",
+      "能正確使用(√a)²=a與√(a²)=|a|",
+      "能檢查被開方數在實數範圍是否非負"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "square-root-estimate",
+        "requiredLevel": "能使用前一技能「平方根估算」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "根號符號",
+        "definition": "√a 表示a的非負平方根。"
+      },
+      {
+        "term": "正負號±",
+        "definition": "同時表示正與負兩種可能。"
+      },
+      {
+        "term": "主平方根",
+        "definition": "非負平方根，根號符號的值。"
+      },
+      {
+        "term": "定義域",
+        "definition": "讓根式在實數範圍有意義的輸入範圍。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "√a",
+        "meaning": "a≥0時的非負平方根。"
+      },
+      {
+        "symbol": "±√a",
+        "meaning": "√a與-√a兩個數。"
+      },
+      {
+        "symbol": "(√a)²=a",
+        "meaning": "a≥0。"
+      },
+      {
+        "symbol": "√(a²)=|a|",
+        "meaning": "a為任意實數。"
+      }
+    ],
+    "conceptNarrative": [
+      "根號本身是一個單值記號，所以√25=5，不寫±5。",
+      "解平方方程時，因正負兩數平方相同，需寫x=±√a。",
+      "平方後再開主平方根會消除符號，結果是絕對值。",
+      "被開方數為負時，在本單元的實數範圍沒有定義。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "主平方根",
+        "statement": "√a 是唯一非負且平方為a的實數。"
+      },
+      {
+        "name": "平方方程解",
+        "statement": "a>0時x²=a有兩解±√a。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "(√a)²=a",
+        "conditions": [
+          "a≥0。"
+        ],
+        "meaning": "先開主平方根再平方回a。"
+      },
+      {
+        "formula": "√(a²)=|a|",
+        "conditions": [
+          "a∈R。"
+        ],
+        "meaning": "先平方再取非負根。"
+      }
+    ],
+    "nonApplicableCases": [
+      "√a 不代表兩個值。",
+      "± 必須寫在根號外且作用於整個根式。",
+      "√(a²)=a 只有在a≥0時成立。",
+      "實數根式不能接受負被開方數。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "辨認題目是求根式值還是解方程。",
+        "check": "根式值單一，平方方程可能雙解。"
+      },
+      {
+        "step": 2,
+        "instruction": "檢查被開方數非負。",
+        "check": "負值時說明實數範圍無意義。"
+      },
+      {
+        "step": 3,
+        "instruction": "依符號執行運算。",
+        "check": "看清±、括號與平方位置。"
+      },
+      {
+        "step": 4,
+        "instruction": "使用絕對值處理√(a²)。",
+        "check": "再依a的正負化簡。"
+      },
+      {
+        "step": 5,
+        "instruction": "回代驗算。",
+        "check": "根式值應非負。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "計算√100。",
+        "solutionSteps": [
+          "主平方根非負。"
+        ],
+        "answer": "10。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "解x²=100。",
+        "solutionSteps": [
+          "正負10平方皆為100。"
+        ],
+        "answer": "x=±10。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "若t=-8，求√(t²)。",
+        "solutionSteps": [
+          "t²=64。",
+          "主平方根為8。"
+        ],
+        "answer": "8。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "判斷√(x-3)有實數意義的條件。",
+        "solutionSteps": [
+          "被開方數需≥0。",
+          "x-3≥0。"
+        ],
+        "answer": "x≥3。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "√16=±4。",
+        "why": "根號是主平方根單值。",
+        "correction": "√16=4。"
+      },
+      {
+        "mistake": "解x²=16只寫x=4。",
+        "why": "方程需列出兩根。",
+        "correction": "x=±4。"
+      },
+      {
+        "mistake": "√((-6)²)=-6。",
+        "why": "主平方根不能為負。",
+        "correction": "結果為6。"
+      },
+      {
+        "mistake": "√(-9)=-3。",
+        "why": "平方驗算不成立。",
+        "correction": "實數範圍無意義。"
+      },
+      {
+        "mistake": "±√9=±9。",
+        "why": "先算√9=3。",
+        "correction": "結果為±3。"
+      },
+      {
+        "mistake": "把根號線只看成作用於第一個數。",
+        "why": "根號範圍辨識錯誤。",
+        "correction": "確認被開方式完整括號。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "√a 是非負單值；±√a 是兩個數。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "辨認題目是求根式值還是解方程。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "√16=±4。；修正：√16=4。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "√(a²)是否需要絕對值？"
+      }
+    ],
+    "summary": [
+      "√a 是非負單值；±√a 是兩個數。",
+      "(√a)²與√(a²)的條件不同。"
+    ],
+    "connections": {
+      "previous": "承接 s001 的平方根意義與 s004 的非負近似。",
+      "next": [
+        "s006 會快速計算完全平方數的主平方根。",
+        "s007 會在分母中操作根號記號。"
+      ]
+    },
+    "figureReferences": [],
+    "accessibilityNotes": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s005-v001",
+        "u11-s005-v002",
+        "u11-s005-v003",
+        "u11-s005-v004",
+        "u11-s005-v005",
+        "u11-s005-v006",
+        "u11-s005-v007",
+        "u11-s005-v008",
+        "u11-s005-v009",
+        "u11-s005-v010",
+        "u11-s005-v011",
+        "u11-s005-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s005-cr001",
+        "u11-s005-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「平方根記號」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「√16=±4。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "d6dd460b0a6da365869d543e4b850b22991307904d7886b2b94d329d49ab131b"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u11-s005-v001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "√36 的值是多少？",
+      "givenConditions": [
+        "36≥0，使用主平方根記號。"
+      ],
+      "target": "判讀根號記號的值。",
+      "choices": [
+        "6",
+        "-6",
+        "±6",
+        "18"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先找平方後為36的數 ±6，再依 √ 的定義取非負者 6。 詳算檢查：根號符號 √36 表示 36 的非負平方根，因此值為 6。 因此結果為「6」。",
+      "explanation": "根號符號 √36 表示 36 的非負平方根，因此值為 6。",
+      "steps": [
+        "整理條件：36≥0，使用主平方根記號。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先找平方後為36的數 ±6，再依 √ 的定義取非負者 6。 詳算檢查：根號符號 √36 表示 36 的非負平方根，因此值為 6。 因此結果為「6」。",
+        "核對目標：答案「6」確實回應「判讀根號記號的值。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6",
+          "truth": true,
+          "reason": "此選項符合目標「判讀根號記號的值。」；根號符號 √36 表示 36 的非負平方根，因此值為 6。"
+        },
+        {
+          "choice": "-6",
+          "truth": false,
+          "reason": "√36 表示非負平方根。"
+        },
+        {
+          "choice": "±6",
+          "truth": false,
+          "reason": "±6 是方程 x²=36 的解，不是符號 √36 的單一值。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "開平方不是除以2。"
+        }
+      ],
+      "misconceptionTarget": "把 √a 與 a 的所有平方根混為一談。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "考查最基本的符號約定。；具體任務是「判讀根號記號的值。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7d95dde54b2a7e5ea2d4119f8c34738771c52b90c153b8edc32715137005cfdf"
+    },
+    {
+      "questionId": "u11-s005-v002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "±√25 表示哪些數？",
+      "givenConditions": [
+        "被開方數25非負。"
+      ],
+      "target": "解讀 ±√25。",
+      "choices": [
+        "只有5",
+        "只有-5",
+        "5 與 -5",
+        "25與-25"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先算主平方根 5，再展開 ± 成兩個數。 詳算檢查：√25=5，前面的 ± 表示 +5 與 -5。 因此結果為「5 與 -5」。",
+      "explanation": "√25=5，前面的 ± 表示 +5 與 -5。",
+      "steps": [
+        "整理條件：被開方數25非負。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先算主平方根 5，再展開 ± 成兩個數。 詳算檢查：√25=5，前面的 ± 表示 +5 與 -5。 因此結果為「5 與 -5」。",
+        "核對目標：答案「5 與 -5」確實回應「解讀 ±√25。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只有5",
+          "truth": false,
+          "reason": "漏掉 ± 的負號分支。"
+        },
+        {
+          "choice": "只有-5",
+          "truth": false,
+          "reason": "漏掉正號分支。"
+        },
+        {
+          "choice": "5 與 -5",
+          "truth": true,
+          "reason": "此選項符合目標「解讀 ±√25。」；√25=5，前面的 ± 表示 +5 與 -5。"
+        },
+        {
+          "choice": "25與-25",
+          "truth": false,
+          "reason": "未對25開平方。"
+        }
+      ],
+      "misconceptionTarget": "忽略 ± 或把它套到被開方數。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需辨別兩個符號的角色。；具體任務是「解讀 ±√25。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f3aeede8386bc355ca9aef0a27c2bede24522ab8ff0d8c92b3d7fcc9956136ee"
+    },
+    {
+      "questionId": "u11-s005-v003",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "(√9)² 等於多少？",
+      "givenConditions": [
+        "根號內9非負。"
+      ],
+      "target": "計算根式平方。",
+      "choices": [
+        "3",
+        "9",
+        "±9",
+        "81"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：因9≥0，(√9)²=9。 詳算檢查：√9=3，再平方得到 9；也可用 (√a)²=a。 因此結果為「9」。",
+      "explanation": "√9=3，再平方得到 9；也可用 (√a)²=a。",
+      "steps": [
+        "整理條件：根號內9非負。",
+        "獨立推導：不參照選項，從題幹條件重新計算：因9≥0，(√9)²=9。 詳算檢查：√9=3，再平方得到 9；也可用 (√a)²=a。 因此結果為「9」。",
+        "核對目標：答案「9」確實回應「計算根式平方。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "只算根號，未做平方。"
+        },
+        {
+          "choice": "9",
+          "truth": true,
+          "reason": "此選項符合目標「計算根式平方。」；√9=3，再平方得到 9；也可用 (√a)²=a。"
+        },
+        {
+          "choice": "±9",
+          "truth": false,
+          "reason": "整個表達式有單一值。"
+        },
+        {
+          "choice": "81",
+          "truth": false,
+          "reason": "把9再平方。"
+        }
+      ],
+      "misconceptionTarget": "忽略括號外平方。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "直接套用基本恆等式。；具體任務是「計算根式平方。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c7277fdcabe64ef857736567b37455fb1603f982d9eece8c29d6b48941480f73"
+    },
+    {
+      "questionId": "u11-s005-v004",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "依序進行「將 -5 整體平方」與「取非負平方根」兩步，最後結果是多少？",
+      "givenConditions": [
+        "運算順序先平方 (-5)，再對所得正數取主平方根。"
+      ],
+      "target": "辨認 √(a²) 的非負結果。",
+      "choices": [
+        "-5",
+        "±5",
+        "25",
+        "5"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先平方得25，再取非負平方根5。 詳算檢查：(-5)²=25，√25=5；一般而言 √(a²)=|a|。 因此結果為「5」。",
+      "explanation": "(-5)²=25，√25=5；一般而言 √(a²)=|a|。",
+      "steps": [
+        "整理條件：運算順序先平方 (-5)，再對所得正數取主平方根。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先平方得25，再取非負平方根5。 詳算檢查：(-5)²=25，√25=5；一般而言 √(a²)=|a|。 因此結果為「5」。",
+        "核對目標：答案「5」確實回應「辨認 √(a²) 的非負結果。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-5",
+          "truth": false,
+          "reason": "主平方根不能是負值。"
+        },
+        {
+          "choice": "±5",
+          "truth": false,
+          "reason": "整個根式是單一非負值。"
+        },
+        {
+          "choice": "25",
+          "truth": false,
+          "reason": "漏做最後開平方。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "此選項符合目標「辨認 √(a²) 的非負結果。」；(-5)²=25，√25=5；一般而言 √(a²)=|a|。"
+        }
+      ],
+      "misconceptionTarget": "錯把 √(a²) 當成 a，未考慮 a 可能為負。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需理解絕對值效果。；具體任務是「辨認 √(a²) 的非負結果。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "291ff5e50745e80cb11079786cde14c2c66aee45556aa9e9bb9dd08cbe0f97f9"
+    },
+    {
+      "questionId": "u11-s005-v005",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "方程 x²=17 的實數解如何表示？",
+      "givenConditions": [
+        "x為實數，17為正。"
+      ],
+      "target": "用正確記號表示全部解。",
+      "choices": [
+        "x=√17",
+        "x=-√17",
+        "x=17",
+        "x=±√17"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：由平方方程取平方根時必須保留兩個符號。 詳算檢查：17>0，所以平方後為17的實數有正負兩個，寫成 x=±√17。 因此結果為「x=±√17」。",
+      "explanation": "17>0，所以平方後為17的實數有正負兩個，寫成 x=±√17。",
+      "steps": [
+        "整理條件：x為實數，17為正。",
+        "獨立推導：不參照選項，從題幹條件重新計算：由平方方程取平方根時必須保留兩個符號。 詳算檢查：17>0，所以平方後為17的實數有正負兩個，寫成 x=±√17。 因此結果為「x=±√17」。",
+        "核對目標：答案「x=±√17」確實回應「用正確記號表示全部解。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=√17",
+          "truth": false,
+          "reason": "只寫正解。"
+        },
+        {
+          "choice": "x=-√17",
+          "truth": false,
+          "reason": "只寫負解。"
+        },
+        {
+          "choice": "x=17",
+          "truth": false,
+          "reason": "未開平方。"
+        },
+        {
+          "choice": "x=±√17",
+          "truth": true,
+          "reason": "此選項符合目標「用正確記號表示全部解。」；17>0，所以平方後為17的實數有正負兩個，寫成 x=±√17。"
+        }
+      ],
+      "misconceptionTarget": "看到根號符號就只寫非負解。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "從主平方根過渡到方程雙解。；具體任務是「用正確記號表示全部解。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "0de1430547c59389f5e7a4869af450f11eb6dcf7cb78c0d89a066e7f56b85c37"
+    },
+    {
+      "questionId": "u11-s005-v006",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列哪個式子沒有實數意義？",
+      "givenConditions": [
+        "討論實數範圍。"
+      ],
+      "target": "辨認根號的定義域。",
+      "choices": [
+        "√0",
+        "√(-4)",
+        "√4",
+        "√( (-2)² )"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：檢查被開方數；-4<0，所以在實數範圍無定義。 詳算檢查：任何實數平方都非負，因此不存在實數平方後為 -4。 因此結果為「√(-4)」。",
+      "explanation": "任何實數平方都非負，因此不存在實數平方後為 -4。",
+      "steps": [
+        "整理條件：討論實數範圍。",
+        "獨立推導：不參照選項，從題幹條件重新計算：檢查被開方數；-4<0，所以在實數範圍無定義。 詳算檢查：任何實數平方都非負，因此不存在實數平方後為 -4。 因此結果為「√(-4)」。",
+        "核對目標：答案「√(-4)」確實回應「辨認根號的定義域。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√0",
+          "truth": false,
+          "reason": "值為0。"
+        },
+        {
+          "choice": "√(-4)",
+          "truth": true,
+          "reason": "此選項符合目標「辨認根號的定義域。」；任何實數平方都非負，因此不存在實數平方後為 -4。"
+        },
+        {
+          "choice": "√4",
+          "truth": false,
+          "reason": "值為2。"
+        },
+        {
+          "choice": "√( (-2)² )",
+          "truth": false,
+          "reason": "值為2。"
+        }
+      ],
+      "misconceptionTarget": "認為根號前後的負號位置沒有差別。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需檢查被開方數符號。；具體任務是「辨認根號的定義域。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "871a80f400149b6269f56b38059758e0db374905a5037202133bb2e98f54bc2b"
+    },
+    {
+      "questionId": "u11-s005-v007",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "若 a<0，則 √(a²) 應化為何者？",
+      "givenConditions": [
+        "已知a<0。"
+      ],
+      "target": "依條件化簡根式。",
+      "choices": [
+        "a",
+        "±a",
+        "-a",
+        "a²"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：主平方根非負，而 -a>0，所以結果是 -a。 詳算檢查：√(a²)=|a|；當 a<0 時，|a|=-a。 因此結果為「-a」。",
+      "explanation": "√(a²)=|a|；當 a<0 時，|a|=-a。",
+      "steps": [
+        "整理條件：已知a<0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：主平方根非負，而 -a>0，所以結果是 -a。 詳算檢查：√(a²)=|a|；當 a<0 時，|a|=-a。 因此結果為「-a」。",
+        "核對目標：答案「-a」確實回應「依條件化簡根式。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "a",
+          "truth": false,
+          "reason": "a為負，不能等於非負主平方根。"
+        },
+        {
+          "choice": "±a",
+          "truth": false,
+          "reason": "根式只有單一值。"
+        },
+        {
+          "choice": "-a",
+          "truth": true,
+          "reason": "此選項符合目標「依條件化簡根式。」；√(a²)=|a|；當 a<0 時，|a|=-a。"
+        },
+        {
+          "choice": "a²",
+          "truth": false,
+          "reason": "未開平方。"
+        }
+      ],
+      "misconceptionTarget": "機械地約掉平方與根號。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需使用條件選擇絕對值分段。；具體任務是「依條件化簡根式。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a51c898a86615ac610b2f5f1ffc5c765483e44e30b4ebecad1a5b52d96b91697"
+    },
+    {
+      "questionId": "u11-s005-v008",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "若 √x=7，則 x 等於多少？",
+      "givenConditions": [
+        "√x有定義且等於7。"
+      ],
+      "target": "反解被開方數。",
+      "choices": [
+        "49",
+        "7",
+        "±49",
+        "14"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：因兩邊非負，可平方：x=7²=49。 詳算檢查：兩邊平方得 x=49，且驗算 √49=7。 因此結果為「49」。",
+      "explanation": "兩邊平方得 x=49，且驗算 √49=7。",
+      "steps": [
+        "整理條件：√x有定義且等於7。",
+        "獨立推導：不參照選項，從題幹條件重新計算：因兩邊非負，可平方：x=7²=49。 詳算檢查：兩邊平方得 x=49，且驗算 √49=7。 因此結果為「49」。",
+        "核對目標：答案「49」確實回應「反解被開方數。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "49",
+          "truth": true,
+          "reason": "此選項符合目標「反解被開方數。」；兩邊平方得 x=49，且驗算 √49=7。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "只抄等式右側。"
+        },
+        {
+          "choice": "±49",
+          "truth": false,
+          "reason": "x被根號限制為非負且等式唯一。"
+        },
+        {
+          "choice": "14",
+          "truth": false,
+          "reason": "把平方誤作乘2。"
+        }
+      ],
+      "misconceptionTarget": "把求平方根與反向平方混淆。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需要正確執行逆運算並驗算。；具體任務是「反解被開方數。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b5617eb8a25c7ce0628f6384f531227c2df75502e13fdb25cbe1c0beaac0a879"
+    },
+    {
+      "questionId": "u11-s005-v009",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "下列等式何者對所有實數 t 都成立？",
+      "givenConditions": [
+        "t可為任意實數。"
+      ],
+      "target": "選出恆成立的根式關係。",
+      "choices": [
+        "√(t²)=t",
+        "(√t)²=t",
+        "√(t²)=|t|",
+        "√(t²)=±t"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：分 t≥0 與 t<0 檢查，均得到 |t|。 詳算檢查：t²≥0，取其非負平方根等於 t 的絕對值。 因此結果為「√(t²)=|t|」。",
+      "explanation": "t²≥0，取其非負平方根等於 t 的絕對值。",
+      "steps": [
+        "整理條件：t可為任意實數。",
+        "獨立推導：不參照選項，從題幹條件重新計算：分 t≥0 與 t<0 檢查，均得到 |t|。 詳算檢查：t²≥0，取其非負平方根等於 t 的絕對值。 因此結果為「√(t²)=|t|」。",
+        "核對目標：答案「√(t²)=|t|」確實回應「選出恆成立的根式關係。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "√(t²)=t",
+          "truth": false,
+          "reason": "t<0時不成立。"
+        },
+        {
+          "choice": "(√t)²=t",
+          "truth": false,
+          "reason": "t<0時左式在實數無定義。"
+        },
+        {
+          "choice": "√(t²)=|t|",
+          "truth": true,
+          "reason": "此選項符合目標「選出恆成立的根式關係。」；t²≥0，取其非負平方根等於 t 的絕對值。"
+        },
+        {
+          "choice": "√(t²)=±t",
+          "truth": false,
+          "reason": "左式是一個非負值，不是兩值。"
+        }
+      ],
+      "misconceptionTarget": "忽略主平方根的非負性。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需要用反例排除看似相近的式子。；具體任務是「選出恆成立的根式關係。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "18d8b0f9564fd4e183cb393971d8fbf4172618e6f0b3cfcb0d009172af42e33d"
+    },
+    {
+      "questionId": "u11-s005-v010",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "計算機畫面輸入「√81」後顯示 9。下列解讀何者正確？",
+      "givenConditions": [
+        "計算機使用標準主平方根功能。"
+      ],
+      "target": "解讀工具輸出。",
+      "choices": [
+        "81只有一個平方根",
+        "方程x²=81只有解9",
+        "計算機省略了錯誤的負答案",
+        "計算機顯示的是81的非負平方根"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：區分函數值√81=9與方程x²=81的兩解。 詳算檢查：按鍵 √ 依慣例回傳主平方根，因此顯示9；但81的平方根仍有±9。 因此結果為「計算機顯示的是81的非負平方根」。",
+      "explanation": "按鍵 √ 依慣例回傳主平方根，因此顯示9；但81的平方根仍有±9。",
+      "steps": [
+        "整理條件：計算機使用標準主平方根功能。",
+        "獨立推導：不參照選項，從題幹條件重新計算：區分函數值√81=9與方程x²=81的兩解。 詳算檢查：按鍵 √ 依慣例回傳主平方根，因此顯示9；但81的平方根仍有±9。 因此結果為「計算機顯示的是81的非負平方根」。",
+        "核對目標：答案「計算機顯示的是81的非負平方根」確實回應「解讀工具輸出。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "81只有一個平方根",
+          "truth": false,
+          "reason": "81另有平方根-9。"
+        },
+        {
+          "choice": "方程x²=81只有解9",
+          "truth": false,
+          "reason": "還有解-9。"
+        },
+        {
+          "choice": "計算機省略了錯誤的負答案",
+          "truth": false,
+          "reason": "-9不是錯誤，只是不屬於√81的單一值。"
+        },
+        {
+          "choice": "計算機顯示的是81的非負平方根",
+          "truth": true,
+          "reason": "此選項符合目標「解讀工具輸出。」；按鍵 √ 依慣例回傳主平方根，因此顯示9；但81的平方根仍有±9。"
+        }
+      ],
+      "misconceptionTarget": "把介面顯示規則誤當成平方根個數。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需連結數學記號與介面行為。；具體任務是「解讀工具輸出。」。",
+      "literacyContextNecessity": "計算機只顯示單一值是理解差異的核心。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "cb4165934154cc0e494c2df9c2ace85dc8ffd6b7efeb23fd8a1fb40b69cb5bee"
+    },
+    {
+      "questionId": "u11-s005-v011",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "工程規格寫「誤差 e 滿足 e²=0.04」。若 e 可正可負，應記為何者？",
+      "givenConditions": [
+        "e可正可負。"
+      ],
+      "target": "用正確記號列出兩個可能誤差。",
+      "choices": [
+        "e=±0.2",
+        "e=0.2",
+        "e=-0.2",
+        "e=±0.04"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先解平方方程得兩根，再確認規格沒有排除任一符號。 詳算檢查：0.04=(0.2)²，且誤差允許正負，所以 e=±0.2。 因此結果為「e=±0.2」。",
+      "explanation": "0.04=(0.2)²，且誤差允許正負，所以 e=±0.2。",
+      "steps": [
+        "整理條件：e可正可負。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先解平方方程得兩根，再確認規格沒有排除任一符號。 詳算檢查：0.04=(0.2)²，且誤差允許正負，所以 e=±0.2。 因此結果為「e=±0.2」。",
+        "核對目標：答案「e=±0.2」確實回應「用正確記號列出兩個可能誤差。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "e=±0.2",
+          "truth": true,
+          "reason": "此選項符合目標「用正確記號列出兩個可能誤差。」；0.04=(0.2)²，且誤差允許正負，所以 e=±0.2。"
+        },
+        {
+          "choice": "e=0.2",
+          "truth": false,
+          "reason": "漏掉負誤差。"
+        },
+        {
+          "choice": "e=-0.2",
+          "truth": false,
+          "reason": "漏掉正誤差。"
+        },
+        {
+          "choice": "e=±0.04",
+          "truth": false,
+          "reason": "未開平方。"
+        }
+      ],
+      "misconceptionTarget": "見到實際量就自動只取正根。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需依物理量定義決定是否保留雙根。；具體任務是「用正確記號列出兩個可能誤差。」。",
+      "literacyContextNecessity": "「可正可負」決定兩個答案都必須保留。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "baba4ac2c767f433748397887bc03ec3dfca852ff0fa7805f6fde429b9ec36fd"
+    },
+    {
+      "questionId": "u11-s005-v012",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "資料表欄位要求填入「邊長」，公式得到 s²=50。下列填法最合適？",
+      "givenConditions": [
+        "s為幾何邊長。"
+      ],
+      "target": "選擇符合欄位語意的記法。",
+      "choices": [
+        "s=±√50",
+        "s=√50",
+        "s=50",
+        "s=-√50"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：解方程後用欄位語意排除負根。 詳算檢查：方程有±√50兩個代數解，但 s 代表邊長，所以取非負值 √50。 因此結果為「s=√50」。",
+      "explanation": "方程有±√50兩個代數解，但 s 代表邊長，所以取非負值 √50。",
+      "steps": [
+        "整理條件：s為幾何邊長。",
+        "獨立推導：不參照選項，從題幹條件重新計算：解方程後用欄位語意排除負根。 詳算檢查：方程有±√50兩個代數解，但 s 代表邊長，所以取非負值 √50。 因此結果為「s=√50」。",
+        "核對目標：答案「s=√50」確實回應「選擇符合欄位語意的記法。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "s=±√50",
+          "truth": false,
+          "reason": "邊長不取負值。"
+        },
+        {
+          "choice": "s=√50",
+          "truth": true,
+          "reason": "此選項符合目標「選擇符合欄位語意的記法。」；方程有±√50兩個代數解，但 s 代表邊長，所以取非負值 √50。"
+        },
+        {
+          "choice": "s=50",
+          "truth": false,
+          "reason": "未開平方。"
+        },
+        {
+          "choice": "s=-√50",
+          "truth": false,
+          "reason": "違反長度非負。"
+        }
+      ],
+      "misconceptionTarget": "只看代數式，不檢查量的意義。",
+      "prerequisiteCheck": "需能使用先備技能 square-root-estimate，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需把記號與實際量限制結合。；具體任務是「選擇符合欄位語意的記法。」。",
+      "literacyContextNecessity": "「邊長」使負根不合情境。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "平方根記號",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "33c04cf0fb735426c98fc12fe298dd2435880a8564d4caa287251af59a692971"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u11-s005-cr001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "說明 √49 與「49 的平方根」有何不同，並分別寫出答案。",
+      "requiredWork": [
+        "說明主平方根",
+        "列出所有平方根",
+        "以平方驗算"
+      ],
+      "fullCreditSolution": [
+        "√49是非負平方根，所以等於7。",
+        "49的平方根是所有x使x²=49，故為7與-7。"
+      ],
+      "standardAnswer": "√49=7；49 的平方根為±7。",
+      "alternativeMethod": "用函數單值與方程解集合的觀點說明。",
+      "reasoningSteps": [
+        "√49是非負平方根，所以等於7。",
+        "49的平方根是所有x使x²=49，故為7與-7。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：√49單值7；所有根±7；差異說明清楚，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：√49單值7；所有根±7；差異說明清楚。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「√49單值7」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「√49單值7」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「√49單值7」但後續失誤，可依證據給1分。",
+        "若完成「√49單值7」與「所有根±7」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "兩者都寫±7",
+        "兩者都只寫7"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "√49=7；49 的平方根為±7。",
+        "recomputation": "√49是非負平方根，所以等於7。；49的平方根是所有x使x²=49，故為7與-7。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「差異說明清楚」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "59da4a200dbfde9fc35ebba5408c103edfd58f9512bfbd604093b06951d8089f"
+    },
+    {
+      "questionId": "u11-s005-cr002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-square-root",
+      "skillId": "sqrt-notation",
+      "lockedSkillOrder": 5,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "已知 a<0，化簡 √(a²)，並說明理由。",
+      "requiredWork": [
+        "使用絕對值關係",
+        "套用a<0條件",
+        "確認結果非負"
+      ],
+      "fullCreditSolution": [
+        "√(a²)=|a|。",
+        "因a<0，所以|a|=-a。",
+        "-a>0，符合主平方根非負。"
+      ],
+      "standardAnswer": "-a。",
+      "alternativeMethod": "分情況：平方後失去符號，而非負根必等於a的相反數。",
+      "reasoningSteps": [
+        "√(a²)=|a|。",
+        "因a<0，所以|a|=-a。",
+        "-a>0，符合主平方根非負。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：寫出|a|；由a<0得-a；說明非負性，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：寫出|a|；由a<0得-a；說明非負性。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「寫出|a|」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「寫出|a|」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「寫出|a|」但後續失誤，可依證據給1分。",
+        "若完成「寫出|a|」與「由a<0得-a」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "直接約成a",
+        "寫±a"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "-a。",
+        "recomputation": "√(a²)=|a|。；因a<0，所以|a|=-a。；-a>0，符合主平方根非負。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「說明非負性」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "75bc9a9534588739d67446d3b3f1a7e9fa9de86b5c92bc99fbf1eca1890a3282"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "012-u11-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/012-u11-complete/units/u11/s005"
+}

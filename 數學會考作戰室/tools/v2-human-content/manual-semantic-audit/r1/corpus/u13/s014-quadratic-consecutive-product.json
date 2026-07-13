@@ -1,0 +1,1198 @@
+{
+  "slot": "s014",
+  "skillId": "quadratic-consecutive-product",
+  "topicId": "u13-applications",
+  "title": "連續整數乘積問題",
+  "lecture": {
+    "lectureId": "u13-s014-lecture-r1",
+    "unitId": "u13",
+    "numericUnitId": 13,
+    "topicId": "u13-applications",
+    "skillId": "quadratic-consecutive-product",
+    "lockedOrder": 14,
+    "originalLockedTitle": "連續整數乘積",
+    "title": "連續整數乘積問題",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能用 x、x+1 表示連續整數。",
+      "能用 x、x+2 表示連續偶數或奇數。",
+      "能由乘積條件列二次方程式。",
+      "能處理正負整數與順序限制。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "quadratic-area-problem",
+        "requiredLevel": "能說明前一技能的核心規則並完成基本計算，不只記答案。"
+      }
+    ],
+    "prerequisiteBridge": "承接面積中「兩邊相差固定量」的模型，改為離散整數並加入奇偶與符號限制。",
+    "glossary": [
+      {
+        "term": "連續整數",
+        "definition": "相鄰且相差 1 的整數，如 7、8。"
+      },
+      {
+        "term": "連續偶數",
+        "definition": "相鄰的偶數，相差 2。"
+      },
+      {
+        "term": "連續奇數",
+        "definition": "相鄰的奇數，相差 2。"
+      },
+      {
+        "term": "較小整數",
+        "definition": "兩數中數值較小者，常設為 x。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "x,x+1",
+        "meaning": "兩個連續整數。"
+      },
+      {
+        "symbol": "x,x+2",
+        "meaning": "兩個連續偶數或兩個連續奇數；需另說明 x 的奇偶性。"
+      },
+      {
+        "symbol": "x,x+1,x+2",
+        "meaning": "三個連續整數。"
+      }
+    ],
+    "conceptNarrative": [
+      "表示連續數時要依數線順序，較大者是在較小者上加固定差。",
+      "連續偶數與連續奇數都相差 2，但 x 本身需符合指定奇偶性。",
+      "乘積為正時，兩數可能同為正或同為負；題目若只說整數，兩組都要檢查。",
+      "題目若說正整數、標籤編號或人數，通常排除負組。",
+      "解出較小數後，仍要回報完整數對或數列。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "連續整數模型",
+        "statement": "較小整數為 x，下一個為 x+1。"
+      },
+      {
+        "name": "連續同奇偶模型",
+        "statement": "較小數為 x，下一個同奇偶整數為 x+2。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "x(x+1)=P",
+        "conditions": [
+          "兩個連續整數乘積為 P"
+        ],
+        "meaning": "最基本連續乘積模型。"
+      },
+      {
+        "formula": "x(x+2)=P",
+        "conditions": [
+          "兩個連續偶數或奇數"
+        ],
+        "meaning": "同奇偶相鄰整數模型。"
+      }
+    ],
+    "nonApplicableCases": [
+      "未說正整數時不能自動刪除負整數組。",
+      "連續偶數不是 x、x+1。",
+      "求得 x 後不能只回答 x，若題目問兩數需列完整。",
+      "乘積條件之外的和、範圍或符號條件也要套用。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "確認連續類型與符號限制。",
+        "check": "相差 1 還是 2？"
+      },
+      {
+        "step": 2,
+        "instruction": "設較小整數 x，表示其餘數。",
+        "check": "x 的奇偶性是否需註明？"
+      },
+      {
+        "step": 3,
+        "instruction": "依乘積或其他關係列方程式。",
+        "check": "是否保留所有條件？"
+      },
+      {
+        "step": 4,
+        "instruction": "解方程式並找所有整數候選。",
+        "check": "正負兩組是否都考慮？"
+      },
+      {
+        "step": 5,
+        "instruction": "代回並以完整數對作答。",
+        "check": "順序與限制是否吻合？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "兩個連續正整數乘積為 56。",
+        "solutionSteps": [
+          "設較小數 x，x(x+1)=56。",
+          "(x+8)(x-7)=0。",
+          "正整數取 x=7。"
+        ],
+        "answer": "7、8。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "兩個連續整數乘積為 20，且兩數皆負。",
+        "solutionSteps": [
+          "x(x+1)=20。",
+          "x=4 或 -5。",
+          "皆負取 x=-5。"
+        ],
+        "answer": "-5、-4。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "兩個連續偶數乘積為 48。",
+        "solutionSteps": [
+          "設較小正偶數 x，x(x+2)=48。",
+          "(x+8)(x-6)=0。"
+        ],
+        "answer": "6、8。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "三個連續正整數中，第一個與第三個乘積為 80。",
+        "solutionSteps": [
+          "設為 x、x+1、x+2。",
+          "x(x+2)=80，得 x=8 或 -10。",
+          "正數取 8。"
+        ],
+        "answer": "8、9、10。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "連續整數寫 x、2x。",
+        "why": "把相差 1 誤成倍數。",
+        "correction": "寫 x、x+1。"
+      },
+      {
+        "mistake": "連續偶數寫 x、x+1。",
+        "why": "忽略奇偶相鄰差 2。",
+        "correction": "寫 x、x+2。"
+      },
+      {
+        "mistake": "乘積正只找正整數。",
+        "why": "兩個負數相乘也為正。",
+        "correction": "依題目是否限制正數決定。"
+      },
+      {
+        "mistake": "只回答較小數。",
+        "why": "題目問完整數對。",
+        "correction": "回報所有數。"
+      },
+      {
+        "mistake": "解出非整數仍接受。",
+        "why": "連續整數必須是整數。",
+        "correction": "檢查整數性。"
+      },
+      {
+        "mistake": "未按大小排列。",
+        "why": "x 的角色混亂。",
+        "correction": "先定義 x 為較小者。"
+      }
+    ],
+    "selfCheck": [
+      "相差量是 1 還是 2？",
+      "是否有正負或奇偶限制？",
+      "正負整數組都檢查了嗎？",
+      "答案是否為整數？",
+      "是否回報完整數列？"
+    ],
+    "summary": [
+      "連續整數用固定差表示。",
+      "乘積題常形成可因式分解的二次方程式。",
+      "正乘積可能來自兩正或兩負。",
+      "答案需回到完整數對與限制。"
+    ],
+    "connections": {
+      "previous": "承接面積中「兩邊相差固定量」的模型，改為離散整數並加入奇偶與符號限制。",
+      "next": [
+        "最後一節會把整數、面積、收入與時間資料整合。",
+        "跨單元題需先判斷連續條件是否真的存在。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u13-s014-v001",
+        "u13-s014-v002",
+        "u13-s014-v003",
+        "u13-s014-v004",
+        "u13-s014-v005",
+        "u13-s014-v006",
+        "u13-s014-v007",
+        "u13-s014-v008",
+        "u13-s014-v009",
+        "u13-s014-v010",
+        "u13-s014-v011",
+        "u13-s014-v012"
+      ],
+      "constructedResponseIds": [
+        "u13-s014-cr001",
+        "u13-s014-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "Taiwan junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "invalidUseCasesIncluded": true,
+      "reviewNote": "四例均把完整數列乘回；確認乘積 20 同時有正組 4、5 與負組 -5、-4，並依「皆負」保留後者；偶數與三數模型的固定差皆正確。",
+      "reviewVersion": "human-lecture-review-u13-r1.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "b18db10d570878b902ea6f9a7c7382a8bbe8ae742bf1f4dd72e42a3dda4f5c3b"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u13-s014-v001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "兩個連續正整數的乘積為 56，這兩數為何？",
+      "givenConditions": "兩數皆正。",
+      "target": "求連續正整數對",
+      "choices": [
+        "6、7",
+        "8、9",
+        "7、8",
+        "4、14"
+      ],
+      "answerIndex": 2,
+      "explanation": "設較小 x，x(x+1)=56；根 x=7、-8，取正組 7、8，所以答案為「7、8」。",
+      "steps": [
+        "設較小 x，x(x+1)=56",
+        "根 x=7、-8，取正組 7、8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6、7",
+          "truth": false,
+          "reason": "乘積 42。"
+        },
+        {
+          "choice": "8、9",
+          "truth": false,
+          "reason": "乘積 72。"
+        },
+        {
+          "choice": "7、8",
+          "truth": true,
+          "reason": "7×8=56，且相差 1。"
+        },
+        {
+          "choice": "4、14",
+          "truth": false,
+          "reason": "乘積 56 但不連續。"
+        }
+      ],
+      "misconceptionTarget": "只看乘積不看連續",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 65,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "需回報完整數對。",
+      "difficultyReason": "基本連續乘積。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求連續正整數對",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7ee9c40ef0ac61fd346b819a95e70d2d8a56c5c14649831d68b3cb38a4828340"
+    },
+    {
+      "questionId": "u13-s014-v002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "兩個連續正整數乘積為 90，較小數為何？",
+      "givenConditions": "正整數。",
+      "target": "求較小數",
+      "choices": [
+        "9",
+        "10",
+        "8",
+        "15"
+      ],
+      "answerIndex": 0,
+      "explanation": "x(x+1)=90；(x-9)(x+10)=0，取 x=9，所以答案為「9」。",
+      "steps": [
+        "x(x+1)=90",
+        "(x-9)(x+10)=0，取 x=9"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "9",
+          "truth": true,
+          "reason": "9×10=90。"
+        },
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "這是較大數。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "8×9=72。"
+        },
+        {
+          "choice": "15",
+          "truth": false,
+          "reason": "與 6 乘積 90但不連續。"
+        }
+      ],
+      "misconceptionTarget": "把較大數作答",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 65,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "題目問較小者。",
+      "difficultyReason": "基本較大乘積。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求較小數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "b0b0a652a05455db7514144695d70414b3486845b7c57cf219d92e548d8f1639"
+    },
+    {
+      "questionId": "u13-s014-v003",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "兩個連續正整數的乘積為 72，則兩數之和為何？",
+      "givenConditions": "兩數為正整數。",
+      "target": "由連續乘積求兩數和",
+      "choices": [
+        "15",
+        "18",
+        "72",
+        "17"
+      ],
+      "answerIndex": 3,
+      "explanation": "設較小數 x，解 x(x+1)=72 得 x=8；兩數為 8、9，和為 17，所以答案為「17」。",
+      "steps": [
+        "設較小數 x，解 x(x+1)=72 得 x=8",
+        "兩數為 8、9，和為 17"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "15",
+          "truth": false,
+          "reason": "對應 7、8，但其乘積是 56。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "把較大數 9 加倍。"
+        },
+        {
+          "choice": "72",
+          "truth": false,
+          "reason": "把乘積直接當成和。"
+        },
+        {
+          "choice": "17",
+          "truth": true,
+          "reason": "連續正整數為 8、9，因此和為 17。"
+        }
+      ],
+      "misconceptionTarget": "求出整數後未轉換目標量",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 75,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "完整根組為 8、9，但作答需回應和。",
+      "difficultyReason": "基本建模後再轉換目標。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由連續乘積求兩數和",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "95cdb3ca29ce7ae7642f99a70838e32be272c4a4cb4b60cd705f1e3d8e20b482"
+    },
+    {
+      "questionId": "u13-s014-v004",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "兩個連續正偶數乘積為 48，這兩數為何？",
+      "givenConditions": "相差 2，皆正偶數。",
+      "target": "求連續正偶數",
+      "choices": [
+        "4、6",
+        "6、8",
+        "7、8",
+        "8、10"
+      ],
+      "answerIndex": 1,
+      "explanation": "設較小偶數 x，x(x+2)=48；根 x=6、-8，取正組 6、8，所以答案為「6、8」。",
+      "steps": [
+        "設較小偶數 x，x(x+2)=48",
+        "根 x=6、-8，取正組 6、8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4、6",
+          "truth": false,
+          "reason": "乘積 24。"
+        },
+        {
+          "choice": "6、8",
+          "truth": true,
+          "reason": "連續偶數相差 2，6×8=48。"
+        },
+        {
+          "choice": "7、8",
+          "truth": false,
+          "reason": "相差 1 且一奇一偶。"
+        },
+        {
+          "choice": "8、10",
+          "truth": false,
+          "reason": "乘積 80。"
+        }
+      ],
+      "misconceptionTarget": "把連續偶數誤作相差 1",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 75,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "完整數對。",
+      "difficultyReason": "同奇偶模型。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求連續正偶數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6c5174d236ffdc40cad592f7a1af556243ad7f4bd1eb2ed782251ccd70aaaaa1"
+    },
+    {
+      "questionId": "u13-s014-v005",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "兩個連續正奇數乘積為 63，這兩數為何？",
+      "givenConditions": "相差 2。",
+      "target": "求連續正奇數",
+      "choices": [
+        "6、8",
+        "7、8",
+        "9、11",
+        "7、9"
+      ],
+      "answerIndex": 3,
+      "explanation": "x(x+2)=63；x²+2x-63=(x-7)(x+9)=0，取 7、9，所以答案為「7、9」。",
+      "steps": [
+        "x(x+2)=63",
+        "x²+2x-63=(x-7)(x+9)=0，取 7、9"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6、8",
+          "truth": false,
+          "reason": "是偶數且乘積 48。"
+        },
+        {
+          "choice": "7、8",
+          "truth": false,
+          "reason": "不都是奇數。"
+        },
+        {
+          "choice": "9、11",
+          "truth": false,
+          "reason": "乘積 99。"
+        },
+        {
+          "choice": "7、9",
+          "truth": true,
+          "reason": "連續奇數相差 2，7×9=63。"
+        }
+      ],
+      "misconceptionTarget": "忽略奇偶性",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 75,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "正奇數。",
+      "difficultyReason": "奇數乘積。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求連續正奇數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "5d8941e345b745983741c6e06cab313a68a54b0cce64398758e71c07a2eb05b8"
+    },
+    {
+      "questionId": "u13-s014-v006",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "兩個連續正整數乘積為 156，較大數為何？",
+      "givenConditions": "正整數。",
+      "target": "求較大數",
+      "choices": [
+        "12",
+        "14",
+        "13",
+        "78"
+      ],
+      "answerIndex": 2,
+      "explanation": "x(x+1)=156；(x-12)(x+13)=0，正組 12、13，所以答案為「13」。",
+      "steps": [
+        "x(x+1)=156",
+        "(x-12)(x+13)=0，正組 12、13"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "12",
+          "truth": false,
+          "reason": "這是較小數。"
+        },
+        {
+          "choice": "14",
+          "truth": false,
+          "reason": "13×14=182。"
+        },
+        {
+          "choice": "13",
+          "truth": true,
+          "reason": "12×13=156。"
+        },
+        {
+          "choice": "78",
+          "truth": false,
+          "reason": "把乘積除以 2。"
+        }
+      ],
+      "misconceptionTarget": "只回答設的 x 而忽略問法",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 80,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "目標為較大者。",
+      "difficultyReason": "解後轉換目標。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求較大數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "eb8288ecd4361ab42b81b01fb781a34022af4da9336b115615e12c3adbd75c49"
+    },
+    {
+      "questionId": "u13-s014-v007",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "兩個連續整數乘積為 30，且兩數和為正。這兩數為何？",
+      "givenConditions": "未說正整數，必須先保留兩組。",
+      "target": "用附加條件選正負組",
+      "choices": [
+        "5、6",
+        "-6、-5",
+        "3、10",
+        "-5、6"
+      ],
+      "answerIndex": 0,
+      "explanation": "x(x+1)=30 得 x=5 或 -6；兩組為 5、6 與 -6、-5；檢查和，所以答案為「5、6」。",
+      "steps": [
+        "x(x+1)=30 得 x=5 或 -6",
+        "兩組為 5、6 與 -6、-5；檢查和"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5、6",
+          "truth": true,
+          "reason": "代數有 5、6 與 -6、-5 兩組；和為正選 5、6。"
+        },
+        {
+          "choice": "-6、-5",
+          "truth": false,
+          "reason": "乘積 30，但和為 -11。"
+        },
+        {
+          "choice": "3、10",
+          "truth": false,
+          "reason": "乘積 30 但不連續。"
+        },
+        {
+          "choice": "-5、6",
+          "truth": false,
+          "reason": "不連續且乘積負。"
+        }
+      ],
+      "misconceptionTarget": "只因乘積正就自動選正組",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 100,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "和為正才排除負組。",
+      "difficultyReason": "多組根與額外條件。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "用附加條件選正負組",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "794aca0183ba06fc1e89ad3258a971b503258d67625f11b563d2470433c7dc29"
+    },
+    {
+      "questionId": "u13-s014-v008",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "三個連續正整數中，第一個與第三個的乘積為 80。三數為何？",
+      "givenConditions": "三數皆正。",
+      "target": "求三個連續正整數",
+      "choices": [
+        "-10、-9、-8",
+        "8、9、10",
+        "7、8、9",
+        "9、10、11"
+      ],
+      "answerIndex": 1,
+      "explanation": "x²+2x-80=0；(x-8)(x+10)=0，取 x=8，所以答案為「8、9、10」。",
+      "steps": [
+        "x²+2x-80=0",
+        "(x-8)(x+10)=0，取 x=8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-10、-9、-8",
+          "truth": false,
+          "reason": "代數也滿足乘積，但不符合正整數。"
+        },
+        {
+          "choice": "8、9、10",
+          "truth": true,
+          "reason": "設 x、x+1、x+2，x(x+2)=80，正根 x=8。"
+        },
+        {
+          "choice": "7、8、9",
+          "truth": false,
+          "reason": "第一與第三乘積 63。"
+        },
+        {
+          "choice": "9、10、11",
+          "truth": false,
+          "reason": "第一與第三乘積 99。"
+        }
+      ],
+      "misconceptionTarget": "只列首尾或未排除負組",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 105,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "需回報三數。",
+      "difficultyReason": "首尾乘積模型。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求三個連續正整數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "64576a57ea7c6e9d8c0e147ada5451c9c92162fff67fe74d77f9104f4fa626cd"
+    },
+    {
+      "questionId": "u13-s014-v009",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "兩個連續正偶數乘積為 168，較小數為何？",
+      "givenConditions": "x 為正偶數。",
+      "target": "求較小正偶數",
+      "choices": [
+        "10",
+        "14",
+        "12",
+        "84"
+      ],
+      "answerIndex": 2,
+      "explanation": "x(x+2)=168；x²+2x-168=(x-12)(x+14)=0，所以答案為「12」。",
+      "steps": [
+        "x(x+2)=168",
+        "x²+2x-168=(x-12)(x+14)=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "10×12=120。"
+        },
+        {
+          "choice": "14",
+          "truth": false,
+          "reason": "這是較大數。"
+        },
+        {
+          "choice": "12",
+          "truth": true,
+          "reason": "12×14=168。"
+        },
+        {
+          "choice": "84",
+          "truth": false,
+          "reason": "把乘積除以 2。"
+        }
+      ],
+      "misconceptionTarget": "角色或固定差錯",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 95,
+      "unitCheck": "本題沒有需要換算的物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "負根 -14 對應負組。",
+      "difficultyReason": "較大同奇偶乘積。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求較小正偶數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "955b0197c236e954e93059bfbdb6b2ceaf8fc80ab1dba4d6aa5c95934d27aae2"
+    },
+    {
+      "questionId": "u13-s014-v010",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "置物櫃編號為兩個連續正整數，編號乘積為 552。較小編號為何？",
+      "givenConditions": "編號為正整數。",
+      "target": "求較小櫃號",
+      "choices": [
+        "22",
+        "24",
+        "276",
+        "23"
+      ],
+      "answerIndex": 3,
+      "explanation": "x(x+1)=552；x²+x-552=(x-23)(x+24)=0，所以答案為「23」。",
+      "steps": [
+        "x(x+1)=552",
+        "x²+x-552=(x-23)(x+24)=0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "22",
+          "truth": false,
+          "reason": "22×23=506。"
+        },
+        {
+          "choice": "24",
+          "truth": false,
+          "reason": "這是較大編號。"
+        },
+        {
+          "choice": "276",
+          "truth": false,
+          "reason": "把乘積除以 2。"
+        },
+        {
+          "choice": "23",
+          "truth": true,
+          "reason": "23×24=552。"
+        }
+      ],
+      "misconceptionTarget": "把較大數或平均猜測當答案",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 95,
+      "unitCheck": "編號無物理單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "題目問較小。",
+      "difficultyReason": "較大數值的連續乘積。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為置物櫃編號的正整數與順序資訊決定根的篩選與問法。",
+      "authoringIntent": "求較小櫃號",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ffe29264e8571862b32ab600d5b070723cc7e25f7d8337c86b5da4f45209c378"
+    },
+    {
+      "questionId": "u13-s014-v011",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "階梯相鄰兩層分別放連續正整數個花盆，兩層數量的乘積為 420。兩層合計有幾盆？",
+      "givenConditions": "每層花盆數為正整數。",
+      "target": "求兩層總數",
+      "choices": [
+        "20 盆",
+        "41 盆",
+        "21 盆",
+        "420 盆"
+      ],
+      "answerIndex": 1,
+      "explanation": "解 x(x+1)=420 得正整數 x=20；兩層為 20、21，合計 41，所以答案為「41 盆」。",
+      "steps": [
+        "解 x(x+1)=420 得正整數 x=20",
+        "兩層為 20、21，合計 41"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20 盆",
+          "truth": false,
+          "reason": "只回答較少的一層。"
+        },
+        {
+          "choice": "41 盆",
+          "truth": true,
+          "reason": "兩層分別為 20 與 21 盆，合計 41 盆。"
+        },
+        {
+          "choice": "21 盆",
+          "truth": false,
+          "reason": "只回答較多的一層。"
+        },
+        {
+          "choice": "420 盆",
+          "truth": false,
+          "reason": "把乘積誤當總和。"
+        }
+      ],
+      "misconceptionTarget": "求出連續整數後未相加",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 105,
+      "unitCheck": "花盆數單位為盆。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "需回答兩層總和，不是其中一層。",
+      "difficultyReason": "由乘積反推配置後計算總量。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為階梯兩層的配置語意決定最後要把兩個根代表的數量相加。",
+      "authoringIntent": "求兩層總數",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f6f8b49cfafd1114ef94eaf39c9f4f3dad05f6812dfbab970debc14173b54c88"
+    },
+    {
+      "questionId": "u13-s014-v012",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "lockedSkillOrder": 14,
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "text": "連續兩天的最低溫均低於 0°C，且兩個整數溫度的乘積為 20。這兩個溫度為何？",
+      "givenConditions": "兩溫度皆為負整數。",
+      "target": "求負的連續整數組",
+      "choices": [
+        "-5°C、-4°C",
+        "4°C、5°C",
+        "-4°C、5°C",
+        "-10°C、-2°C"
+      ],
+      "answerIndex": 0,
+      "explanation": "x(x+1)=20，x=4 或 -5；兩組 4、5 與 -5、-4，依低於 0 選後者，所以答案為「-5°C、-4°C」。",
+      "steps": [
+        "x(x+1)=20，x=4 或 -5",
+        "兩組 4、5 與 -5、-4，依低於 0 選後者"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-5°C、-4°C",
+          "truth": true,
+          "reason": "連續整數乘積 20 有正組 4、5 與負組 -5、-4；低於 0 選負組。"
+        },
+        {
+          "choice": "4°C、5°C",
+          "truth": false,
+          "reason": "乘積與連續性成立，但不低於 0。"
+        },
+        {
+          "choice": "-4°C、5°C",
+          "truth": false,
+          "reason": "不連續且乘積負。"
+        },
+        {
+          "choice": "-10°C、-2°C",
+          "truth": false,
+          "reason": "乘積 20 但不連續。"
+        }
+      ],
+      "misconceptionTarget": "只因乘積正選正組",
+      "prerequisiteSkillIds": [
+        "quadratic-area-problem"
+      ],
+      "estimatedTimeSec": 100,
+      "unitCheck": "溫度單位攝氏度。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": "0 不包含。",
+      "difficultyReason": "符號條件選組。",
+      "literacyContextNecessity": "此情境資訊不可刪除且會改變答案，因為溫度低於 0 的條件是選擇負整數組的必要資訊。",
+      "authoringIntent": "求負的連續整數組",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ab413d42a0b85dfe13587654afc4591d8a7bafdd4538ddc256871a418818c73a"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u13-s014-cr001",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "兩個連續正整數的乘積為 210。求這兩個整數。",
+      "requiredWork": [
+        "設較小數。",
+        "列連續關係與乘積方程。",
+        "求根並篩選正整數。"
+      ],
+      "fullCreditSolution": [
+        "設較小正整數為 n，較大為 n+1。",
+        "n(n+1)=210，整理 n²+n-210=0。",
+        "(n-14)(n+15)=0，所以 n=14 或 -15。",
+        "取正整數 n=14，兩數為 14、15。"
+      ],
+      "alternativeSolutions": [
+        "可由 210 的相鄰因數對 14×15 找到答案，再用方程式說明唯一性。"
+      ],
+      "reasoningSteps": [
+        "連續整數相差 1。",
+        "解較小數。",
+        "回答完整數對。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "列 n(n+1)=210，得到 14、15 並排除負組。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但方程式或排除理由略簡，或只明列 n=14 後口頭給下一數。"
+        },
+        {
+          "score": 1,
+          "criteria": "正確建立方程式但因式分解錯，或只試出相鄰因數。"
+        },
+        {
+          "score": 0,
+          "criteria": "用 n²=210 或給非連續因數。"
+        }
+      ],
+      "partialCreditRules": [
+        "題目限定正整數，負組 -15、-14 不可接受。"
+      ],
+      "followThroughPolicy": "若 n 的角色設為較大數，等價列 n(n-1)=210 並得到 15，可滿分。",
+      "unitNotationRules": [
+        "整數無物理單位。"
+      ],
+      "answerOnlyPolicy": "只寫 14、15 無過程，最多 1 分。",
+      "commonErrors": [
+        "把下一數寫 2n。",
+        "只答 14。",
+        "保留負組。"
+      ],
+      "independentReview": {
+        "derivedResult": "14 與 15。",
+        "ambiguity": "正整數與連續性使答案唯一。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "6d4891795753a40e515f38d1d8d4dfdb33f96ceab521236b257d4f5001a24b00"
+    },
+    {
+      "questionId": "u13-s014-cr002",
+      "unitId": "u13",
+      "numericUnitId": 13,
+      "topicId": "u13-applications",
+      "skillId": "quadratic-consecutive-product",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "prompt": "兩個連續整數的乘積為 42，且兩數和為負。求這兩個整數。",
+      "requiredWork": [
+        "不預設正整數。",
+        "找出正負兩組。",
+        "用和為負篩選。"
+      ],
+      "fullCreditSolution": [
+        "設較小整數為 n，n(n+1)=42。",
+        "n²+n-42=0=(n-6)(n+7)，所以 n=6 或 -7。",
+        "候選組為 6、7 與 -7、-6。",
+        "前者和 13，後者和 -13，因此答案為 -7、-6。"
+      ],
+      "alternativeSolutions": [
+        "可由乘積為正知兩數同號，再找相鄰因數 6、7；依和為負選其負數組 -7、-6。"
+      ],
+      "reasoningSteps": [
+        "乘積正可能正正或負負。",
+        "二次方程式兩根對應兩組。",
+        "附加條件選組。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "列出兩組候選並以和為負選 -7、-6。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確且有符號理由，但未完整展示二次方程；或方程完整但未明算兩組和。"
+        },
+        {
+          "score": 1,
+          "criteria": "只找到正組或負組之一，顯示連續乘積概念但未用附加條件完整。"
+        },
+        {
+          "score": 0,
+          "criteria": "給 -6、7 或非連續整數。"
+        }
+      ],
+      "partialCreditRules": [
+        "答案順序不限。",
+        "不能因乘積為正就自動只取正組。"
+      ],
+      "followThroughPolicy": "若解得 n=6、-7 但錯把 n=-7 對應成 -7、-8，給 1 分。",
+      "unitNotationRules": [
+        "溫度等情境未指定，整數無單位。"
+      ],
+      "answerOnlyPolicy": "只寫 -7、-6 無推理，最多 2 分。",
+      "commonErrors": [
+        "忽略負整數組。",
+        "把連續負數順序寫錯。"
+      ],
+      "independentReview": {
+        "derivedResult": "-7 與 -6。",
+        "ambiguity": "附加和的符號恰好排除正組。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
+      "contentSha256": "4314321aea0a942483a11ccf3add1c5e9fa9c771ca702e230e27416f06b26765"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "014-u13-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/014-u13-complete/units/u13/s014"
+}

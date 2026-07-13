@@ -1,0 +1,1466 @@
+{
+  "slot": "s010",
+  "skillId": "quadratic-application-area",
+  "topicId": "u21-applications",
+  "title": "把幾何面積變成二次函數：建模與最佳化",
+  "lecture": {
+    "lectureId": "u21-s010-lecture-r1",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-applications",
+    "skillId": "quadratic-application-area",
+    "lockedTitle": "拋物線面積應用",
+    "title": "把幾何面積變成二次函數：建模與最佳化",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "gradeBand": "9下",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-application-area"
+    },
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能從周長或邊長關係建立面積式。",
+      "能將面積式整理成二次函數。",
+      "能在合理邊長範圍內求最大面積。",
+      "能用單位與幾何限制檢查答案。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "quadratic-max-min",
+        "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+        "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+      }
+    ],
+    "prerequisiteBridge": "已會求二次函數最大最小值；本節新增的核心是把長與寬的文字條件翻成同一變數。",
+    "glossary": [
+      {
+        "term": "建模",
+        "definition": "把實際條件改寫成數學變數、式子與範圍。"
+      },
+      {
+        "term": "固定周長",
+        "definition": "長與寬的總和被限制，改變一邊會連動另一邊。"
+      },
+      {
+        "term": "面積函數",
+        "definition": "以某一邊長 x 表示面積 A(x)。"
+      },
+      {
+        "term": "可行範圍",
+        "definition": "使所有實際長度為正且符合題意的 x 範圍。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "A(x)",
+        "meaning": "面積隨 x 改變的函數。"
+      },
+      {
+        "symbol": "L、W",
+        "meaning": "長與寬。"
+      },
+      {
+        "symbol": "cm²、m²",
+        "meaning": "面積單位，必須平方。"
+      }
+    ],
+    "conceptNarrative": [
+      "長方形面積是長×寬。若周長固定，長與寬不能各自獨立；先由周長式把其中一邊改寫成另一邊的式子。",
+      "例如周長 20，設寬 x，則長 10-x，面積 A=x(10-x)=-x²+10x，是開口向下的拋物線。",
+      "代數得到的 x 仍要放回幾何：x>0 且 10-x>0，所以 0<x<10。",
+      "面積最大值題的答案常有兩層：最佳邊長與最大面積，兩者單位不同，不能只報其中之一。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "面積二次模型",
+        "statement": "當兩個線性長度因子相乘時，面積可形成二次函數。"
+      },
+      {
+        "name": "可行解",
+        "statement": "同時符合代數方程與正長度、題目範圍及單位的解。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "A=L×W",
+        "conditions": [
+          "長、寬使用相同長度單位"
+        ],
+        "meaning": "長方形面積。"
+      },
+      {
+        "formula": "2(L+W)=P",
+        "conditions": [
+          "P 為長方形周長"
+        ],
+        "meaning": "固定周長關係。"
+      },
+      {
+        "formula": "A=x(S-x)",
+        "conditions": [
+          "L+W=S",
+          "0<x<S"
+        ],
+        "meaning": "固定長寬和的面積模型。"
+      }
+    ],
+    "nonApplicableCases": [
+      "「拋物線面積應用」不是計算曲線下方面積，不使用積分。",
+      "邊長等於 0 的退化圖形通常不算長方形。",
+      "長與寬單位不同時要先統一。",
+      "若題目要求整數邊長，連續模型的頂點還要檢查鄰近整數。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "設定一個邊長為 x 並標單位。",
+        "check": "x 代表長、寬或距離？"
+      },
+      {
+        "step": 2,
+        "instruction": "用條件表示另一個長度。",
+        "check": "周長是否先除以 2？"
+      },
+      {
+        "step": 3,
+        "instruction": "寫 A=長×寬並整理。",
+        "check": "是否得到二次函數？"
+      },
+      {
+        "step": 4,
+        "instruction": "寫出可行範圍。",
+        "check": "每個長度都必須為正或符合題目。"
+      },
+      {
+        "step": 5,
+        "instruction": "求頂點並回到情境。",
+        "check": "同時回答邊長、最大面積與正確單位。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "周長 24 cm 的長方形，設寬 x，寫面積函數。",
+        "solutionSteps": [
+          "長+寬=12，所以長=12-x。",
+          "A=x(12-x)=-x²+12x。"
+        ],
+        "answer": "A=-x²+12x，0<x<12。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "上題最大面積與邊長。",
+        "solutionSteps": [
+          "A=-(x-6)²+36。",
+          "x=6 時長也為 6。"
+        ],
+        "answer": "6 cm×6 cm，最大面積 36 cm²。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "一面靠牆、用 30 m 柵欄圍其餘三邊，設垂直牆的寬 x。",
+        "solutionSteps": [
+          "另一邊長為 30-2x。",
+          "A=x(30-2x)=-2x²+30x。"
+        ],
+        "answer": "A=-2x²+30x，0<x<15。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "上題何時面積最大？",
+        "solutionSteps": [
+          "對稱軸 x=-30/(2×-2)=7.5。",
+          "長=30-15=15。"
+        ],
+        "answer": "寬 7.5 m、長 15 m，最大面積 112.5 m²。"
+      },
+      {
+        "exampleId": "L5",
+        "prompt": "若邊長必須是整數，頂點在 x=4.5，要怎麼處理？",
+        "solutionSteps": [
+          "檢查相鄰整數 x=4、5。",
+          "比較兩個可行面積。"
+        ],
+        "answer": "不能直接用 4.5，需比較 4 與 5。"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "從長寬直接寫面積。",
+      "standard": "由固定周長建立二次函數。",
+      "advanced": "處理靠牆、整數邊長與可行範圍。",
+      "literacy": "比較場地設計方案並說明最佳尺寸。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "周長 P 直接寫長+寬=P。",
+        "why": "漏掉長方形有兩組邊。",
+        "correction": "先寫 2(L+W)=P。"
+      },
+      {
+        "mistake": "只求最大面積不求尺寸。",
+        "why": "忽略題目可能有兩個所求。",
+        "correction": "讀清楚要值、位置或兩者。"
+      },
+      {
+        "mistake": "面積單位寫 cm。",
+        "why": "未平方長度單位。",
+        "correction": "面積用 cm²、m²。"
+      },
+      {
+        "mistake": "忽略 x 的正值範圍。",
+        "why": "代數式允許負數但幾何不允許。",
+        "correction": "確保每個邊長都大於 0。"
+      },
+      {
+        "mistake": "靠牆題仍用四邊周長。",
+        "why": "未依實際使用柵欄的邊數建式。",
+        "correction": "畫簡圖標出只有三邊用料。"
+      },
+      {
+        "mistake": "整數限制仍交小數頂點。",
+        "why": "未檢查離散條件。",
+        "correction": "比較頂點附近可行整數。"
+      }
+    ],
+    "selfCheckItems": [
+      {
+        "prompt": "周長 40，設寬 x，長？",
+        "answer": "20-x。"
+      },
+      {
+        "prompt": "A=x(20-x) 的開口？",
+        "answer": "向下。"
+      },
+      {
+        "prompt": "最大面積發生在長寬關係？",
+        "answer": "長等於寬。"
+      },
+      {
+        "prompt": "邊長 5 m、8 m 的面積單位？",
+        "answer": "40 m²。"
+      }
+    ],
+    "summary": [
+      "先用條件把兩個長度化成同一變數。",
+      "面積是兩個線性因子的乘積，形成二次函數。",
+      "求極值前必須寫可行範圍。",
+      "答案要回報尺寸、面積與正確單位。"
+    ],
+    "connections": {
+      "previous": "套用最大最小值與區間判斷。",
+      "next": [
+        "下一技能會把更長的生活資訊整理成二次函數模型。",
+        "平移概念可解釋面積式改寫成頂點式的意義。"
+      ]
+    },
+    "figureReferences": [
+      "u21-fig-s010-01"
+    ],
+    "accessibilityNotes": [
+      "長方形各邊以文字和尺寸式標示，右側面積拋物線另標可行範圍。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u21-s010-v001",
+        "u21-s010-v002",
+        "u21-s010-v003",
+        "u21-s010-v004",
+        "u21-s010-v005",
+        "u21-s010-v006",
+        "u21-s010-v007",
+        "u21-s010-v008",
+        "u21-s010-v009",
+        "u21-s010-v010",
+        "u21-s010-v011",
+        "u21-s010-v012"
+      ],
+      "constructedResponseIds": [
+        "u21-s010-cr001",
+        "u21-s010-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "臺灣國中會考二次函數範圍，不涉及曲線下面積",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "重算周長 24 的正方形最大面積 36 cm²，以及三邊 30 m 柵欄模型頂點 x=7.5、長 15、面積 112.5；確認未使用積分。",
+      "reviewVersion": "human-lecture-u21-r1",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "806b4b4ddc2331862fd118771ebca2110614085f7b999ed35822c68427beb47a"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u21-s010-v001",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "長方形的長與寬和為 14 cm。若寬為 x cm，長應表示為何？",
+      "givenConditions": [
+        "0<x<14"
+      ],
+      "target": "把固定和條件寫成另一邊",
+      "text": "長方形的長與寬和為 14 cm。若寬為 x cm，長應表示為何？",
+      "choices": [
+        "14+x cm",
+        "14-x cm",
+        "28-x cm",
+        "x-14 cm"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "L=14-x cm，且需保持正值。",
+      "explanation": "長寬和固定為 14，另一邊就是總和減去已設的一邊。",
+      "steps": [
+        "寫 x+L=14",
+        "解 L=14-x"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "14+x cm",
+          "truth": false,
+          "reason": "兩邊和會變成 14+2x。"
+        },
+        {
+          "choice": "14-x cm",
+          "truth": true,
+          "reason": "x+(14-x)=14。"
+        },
+        {
+          "choice": "28-x cm",
+          "truth": false,
+          "reason": "把長寬和誤當週長。"
+        },
+        {
+          "choice": "x-14 cm",
+          "truth": false,
+          "reason": "在可行範圍會成為負長。"
+        }
+      ],
+      "misconceptionTarget": "把總和與周長混淆",
+      "concept": "固定和建模",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 45,
+      "unitCheck": "x 與長都以 cm 表示。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「把固定和條件寫成另一邊」。",
+        "domainBoundary": "0<x<14 使兩邊均為正。",
+        "alternateReading": "若把題目誤讀為「把總和與周長混淆」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "basic：表示連動邊長；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "表示連動邊長",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "66938c3e5f4b20c2cfa3878212d7d3e6c405fe953c4e808d492a6669619609e9"
+    },
+    {
+      "questionId": "u21-s010-v002",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "周長為 36 cm 的長方形，設寬為 x cm，則長為何？",
+      "givenConditions": [
+        "2(長+寬)=36"
+      ],
+      "target": "從周長得到長寬和",
+      "text": "周長為 36 cm 的長方形，設寬為 x cm，則長為何？",
+      "choices": [
+        "36-x cm",
+        "18-2x cm",
+        "18-x cm",
+        "9-x cm"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "長為 18-x cm。",
+      "explanation": "先把周長除以 2 得長寬和 18，再減去寬 x。",
+      "steps": [
+        "由 2(L+x)=36 得 L+x=18",
+        "解 L=18-x"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "36-x cm",
+          "truth": false,
+          "reason": "忘記周長包含兩組邊。"
+        },
+        {
+          "choice": "18-2x cm",
+          "truth": false,
+          "reason": "把寬重複扣除。"
+        },
+        {
+          "choice": "18-x cm",
+          "truth": true,
+          "reason": "長+寬=18，所以長=18-x。"
+        },
+        {
+          "choice": "9-x cm",
+          "truth": false,
+          "reason": "把周長錯誤除以 4 後當總和。"
+        }
+      ],
+      "misconceptionTarget": "直接把周長當長寬和",
+      "concept": "周長關係",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "周長與邊長均用 cm。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「從周長得到長寬和」。",
+        "domainBoundary": "0<x<18。",
+        "alternateReading": "若把題目誤讀為「直接把周長當長寬和」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "basic：由周長表示另一邊；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由周長表示另一邊",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a087223172edb4d7775dff26e51ebb50a4730b7dc1ab18ded032055d83ed8dd8"
+    },
+    {
+      "questionId": "u21-s010-v003",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "長方形兩邊為 x cm 與 (10-x) cm，其面積函數為何？",
+      "givenConditions": [
+        "0<x<10"
+      ],
+      "target": "把兩邊相乘建立面積函數",
+      "text": "長方形兩邊為 x cm 與 (10-x) cm，其面積函數為何？",
+      "choices": [
+        "A(x)=-x²+10x",
+        "A(x)=10",
+        "A(x)=x²-10x",
+        "A(x)=2x+20"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "A=-x²+10x cm²。",
+      "explanation": "面積等於長乘寬，展開 x(10-x) 得開口向下二次式。",
+      "steps": [
+        "寫 A=x(10-x)",
+        "展開並排列"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "A(x)=-x²+10x",
+          "truth": true,
+          "reason": "x(10-x)=10x-x²。"
+        },
+        {
+          "choice": "A(x)=10",
+          "truth": false,
+          "reason": "把兩邊和誤當面積。"
+        },
+        {
+          "choice": "A(x)=x²-10x",
+          "truth": false,
+          "reason": "乘法符號展開反。"
+        },
+        {
+          "choice": "A(x)=2x+20",
+          "truth": false,
+          "reason": "誤用周長公式。"
+        }
+      ],
+      "misconceptionTarget": "把長寬和或周長當面積",
+      "concept": "面積建模",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "兩邊 cm 相乘，A 單位 cm²。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「把兩邊相乘建立面積函數」。",
+        "domainBoundary": "0<x<10。",
+        "alternateReading": "若把題目誤讀為「把長寬和或周長當面積」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "basic：建立基本面積函數；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "建立基本面積函數",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "347554175622babbf13def4103f671437d02fe2ab93d572555a3674b965215ff"
+    },
+    {
+      "questionId": "u21-s010-v004",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "周長 20 m 的長方形，最大面積是多少？",
+      "givenConditions": [
+        "邊長可為正實數"
+      ],
+      "target": "固定周長下求最大面積",
+      "text": "周長 20 m 的長方形，最大面積是多少？",
+      "choices": [
+        "20 m²",
+        "50 m²",
+        "100 m²",
+        "25 m²"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "最大面積 25 m²，發生在正方形 5 m×5 m。",
+      "explanation": "設寬 x、長 10-x；頂點 x=5，得到 5×5=25。",
+      "steps": [
+        "建立 A=x(10-x)",
+        "完成平方或讀頂點"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "20 m²",
+          "truth": false,
+          "reason": "把周長當面積。"
+        },
+        {
+          "choice": "50 m²",
+          "truth": false,
+          "reason": "忘記長寬和是周長一半。"
+        },
+        {
+          "choice": "100 m²",
+          "truth": false,
+          "reason": "把 10×10 當成周長 20 的長方形。"
+        },
+        {
+          "choice": "25 m²",
+          "truth": true,
+          "reason": "長寬和 10，面積 x(10-x)=-(x-5)²+25。"
+        }
+      ],
+      "misconceptionTarget": "直接把周長平方",
+      "concept": "固定周長最大面積",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "面積必須用 m²。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「固定周長下求最大面積」。",
+        "domainBoundary": "x=5 位於 0<x<10。",
+        "alternateReading": "若把題目誤讀為「直接把周長平方」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "standard：求最優正方形面積；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求最優正方形面積",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "e949ce12180beba4b33af079756516fc18e62eb6fb04c55b94e24afda883c574"
+    },
+    {
+      "questionId": "u21-s010-v005",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "一面靠牆的長方形菜園，用 24 m 圍籬圍其餘三邊。若垂直牆的兩邊各為 x m，沿牆方向的另一邊為何？",
+      "givenConditions": [
+        "用料關係 2x+L=24"
+      ],
+      "target": "建立三邊圍籬長度關係",
+      "text": "一面靠牆的長方形菜園，用 24 m 圍籬圍其餘三邊。若垂直牆的兩邊各為 x m，沿牆方向的另一邊為何？",
+      "choices": [
+        "24-x m",
+        "12-x m",
+        "24-2x m",
+        "48-2x m"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "沿牆邊長為 24-2x m。",
+      "explanation": "三邊總長由兩條 x 與一條 L 組成，所以 L=24-2x。",
+      "steps": [
+        "寫 2x+L=24",
+        "解 L=24-2x"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "24-x m",
+          "truth": false,
+          "reason": "漏算第二條寬。"
+        },
+        {
+          "choice": "12-x m",
+          "truth": false,
+          "reason": "把三邊用料錯誤先除 2。"
+        },
+        {
+          "choice": "24-2x m",
+          "truth": true,
+          "reason": "兩條寬共用 2x，剩餘為長。"
+        },
+        {
+          "choice": "48-2x m",
+          "truth": false,
+          "reason": "把總圍籬加倍。"
+        }
+      ],
+      "misconceptionTarget": "仍套四邊周長或漏一條寬",
+      "concept": "三邊圍籬建模",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 60,
+      "unitCheck": "所有邊長用 m。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「建立三邊圍籬長度關係」。",
+        "domainBoundary": "0<x<12 使第三邊為正。",
+        "alternateReading": "若把題目誤讀為「仍套四邊周長或漏一條寬」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "standard：表示靠牆菜園長；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "表示靠牆菜園長",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "31bf84f2e890df11baadc437e74bfdca81782f51480c25dd98e7514df15acdfd"
+    },
+    {
+      "questionId": "u21-s010-v006",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "上題菜園的面積函數為 A=x(24-2x)。其最大值在 x 為何時取得？",
+      "givenConditions": [
+        "0<x<12"
+      ],
+      "target": "求三邊圍籬面積頂點位置",
+      "text": "上題菜園的面積函數為 A=x(24-2x)。其最大值在 x 為何時取得？",
+      "choices": [
+        "x=12",
+        "x=6",
+        "x=24",
+        "x=3"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "x=6 m 時長 12 m，面積最大。",
+      "explanation": "將 A 完成平方或用 -b/(2a)，得到 x=6。",
+      "steps": [
+        "辨認 a=-2,b=24",
+        "計算 -24/(2×-2)=6"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=12",
+          "truth": false,
+          "reason": "此時第三邊為 0，面積退化。"
+        },
+        {
+          "choice": "x=6",
+          "truth": true,
+          "reason": "A=-2x²+24x=-2(x-6)²+72。"
+        },
+        {
+          "choice": "x=24",
+          "truth": false,
+          "reason": "超出可行範圍。"
+        },
+        {
+          "choice": "x=3",
+          "truth": false,
+          "reason": "不是對稱軸位置。"
+        }
+      ],
+      "misconceptionTarget": "取可行範圍端點或總長度",
+      "concept": "面積函數頂點",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "x 為 m；問題只問邊長位置。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「求三邊圍籬面積頂點位置」。",
+        "domainBoundary": "x=6 位於 0<x<12。",
+        "alternateReading": "若把題目誤讀為「取可行範圍端點或總長度」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "standard：求最佳寬度；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "求最佳寬度",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "90011a8db15a55c25120e5e46ce1d590b1f5418985e3260736f76395bdcbfc97"
+    },
+    {
+      "questionId": "u21-s010-v007",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "長方形周長為 30 cm，且邊長必須是正整數。最大面積是多少？",
+      "givenConditions": [
+        "長+寬=15",
+        "兩邊為正整數"
+      ],
+      "target": "離散整數條件下求最大面積",
+      "text": "長方形周長為 30 cm，且邊長必須是正整數。最大面積是多少？",
+      "choices": [
+        "56.25 cm²",
+        "54 cm²",
+        "60 cm²",
+        "56 cm²"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "最大整數面積 56 cm²。",
+      "explanation": "連續頂點在 7.5，但整數限制需比較 7×8，得到 56。",
+      "steps": [
+        "由和 15 找連續最佳 7.5",
+        "檢查鄰近整數 7、8"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "56.25 cm²",
+          "truth": false,
+          "reason": "7.5×7.5 不符合整數邊長。"
+        },
+        {
+          "choice": "54 cm²",
+          "truth": false,
+          "reason": "6×9 可行但不是最大。"
+        },
+        {
+          "choice": "60 cm²",
+          "truth": false,
+          "reason": "沒有正整數配對和為 15 且積為 60。"
+        },
+        {
+          "choice": "56 cm²",
+          "truth": true,
+          "reason": "最接近 7.5 的整數配對是 7 與 8，面積 56。"
+        }
+      ],
+      "misconceptionTarget": "忽略離散限制直接交小數邊長",
+      "concept": "整數邊長優化",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 95,
+      "unitCheck": "邊長 cm，面積 cm²。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「離散整數條件下求最大面積」。",
+        "domainBoundary": "邊長為正整數且和為 15。",
+        "alternateReading": "若把題目誤讀為「忽略離散限制直接交小數邊長」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "advanced：處理整數可行解；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "處理整數可行解",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "99071798c0a50f38a91d4266ee7b1468bb01ff3739d219f2aa008f11599ed56d"
+    },
+    {
+      "questionId": "u21-s010-v008",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "矩形面積 A(x)=x(16-x)。若 x 從 5 增加到 6，面積增加多少？",
+      "givenConditions": [
+        "0<x<16"
+      ],
+      "target": "比較面積函數兩個輸入",
+      "text": "矩形面積 A(x)=x(16-x)。若 x 從 5 增加到 6，面積增加多少？",
+      "choices": [
+        "5 平方單位",
+        "1 平方單位",
+        "11 平方單位",
+        "15 平方單位"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "60-55=5 平方單位。",
+      "explanation": "分別計算兩種長寬組合的面積，再相減。",
+      "steps": [
+        "算 5×11=55",
+        "算 6×10=60 並相減"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5 平方單位",
+          "truth": true,
+          "reason": "A(5)=55，A(6)=60，增加 5。"
+        },
+        {
+          "choice": "1 平方單位",
+          "truth": false,
+          "reason": "只看 x 增加 1。"
+        },
+        {
+          "choice": "11 平方單位",
+          "truth": false,
+          "reason": "只看另一邊從 11 變 10 或誤相加。"
+        },
+        {
+          "choice": "15 平方單位",
+          "truth": false,
+          "reason": "把兩個面積差算成邊長和。"
+        }
+      ],
+      "misconceptionTarget": "把輸入變化直接當面積變化",
+      "concept": "面積變化量",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 75,
+      "unitCheck": "題目未指定長度單位，使用平方單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「比較面積函數兩個輸入」。",
+        "domainBoundary": "x=5、6 都在可行範圍。",
+        "alternateReading": "若把題目誤讀為「把輸入變化直接當面積變化」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "advanced：比較鄰近設計面積；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "比較鄰近設計面積",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "87123baaf33982b386cb4b80c3bc5ca5bf9a2a3426070cebb66126cec246761d"
+    },
+    {
+      "questionId": "u21-s010-v009",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "某固定周長長方形的面積模型為 A=x(22-x)。該長方形的周長為多少？",
+      "givenConditions": [
+        "x 與 22-x 是兩邊"
+      ],
+      "target": "由面積因子反推周長",
+      "text": "某固定周長長方形的面積模型為 A=x(22-x)。該長方形的周長為多少？",
+      "choices": [
+        "22 單位",
+        "11 單位",
+        "44 單位",
+        "484 單位"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "周長 44 長度單位。",
+      "explanation": "模型中兩邊和固定為 22，因此周長是其兩倍。",
+      "steps": [
+        "識別兩因子為邊長",
+        "計算 2(22)=44"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "22 單位",
+          "truth": false,
+          "reason": "這是長寬和，不是周長。"
+        },
+        {
+          "choice": "11 單位",
+          "truth": false,
+          "reason": "這是最佳單邊長度。"
+        },
+        {
+          "choice": "44 單位",
+          "truth": true,
+          "reason": "長+寬=22，周長 2×22=44。"
+        },
+        {
+          "choice": "484 單位",
+          "truth": false,
+          "reason": "把 22 平方。"
+        }
+      ],
+      "misconceptionTarget": "把長寬和當週長",
+      "concept": "由面積模型反推幾何條件",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "答案為長度單位，不是平方單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「由面積因子反推周長」。",
+        "domainBoundary": "0<x<22。",
+        "alternateReading": "若把題目誤讀為「把長寬和當週長」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "advanced：逆向讀取固定周長；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "逆向讀取固定周長",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "0c99ca33cf251edb4f1fe1e6cac475d6720e9b0b00152d856029883116e51b21"
+    },
+    {
+      "questionId": "u21-s010-v010",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "社區用 40 m 柵欄圍一個四邊都需用柵欄的長方形花圃。最大面積為何？",
+      "givenConditions": [
+        "四邊圍欄",
+        "邊長可為實數"
+      ],
+      "target": "選擇正確周長模型並求最大",
+      "text": "社區用 40 m 柵欄圍一個四邊都需用柵欄的長方形花圃。最大面積為何？",
+      "choices": [
+        "100 m²",
+        "200 m²",
+        "400 m²",
+        "80 m²"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "最大面積 10×10=100 m²。",
+      "explanation": "四邊總長 40，故長寬和 20；固定和乘積在相等時最大。",
+      "steps": [
+        "寫 L+W=20",
+        "取 L=W=10"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "100 m²",
+          "truth": true,
+          "reason": "長寬和 20，最佳 10×10。"
+        },
+        {
+          "choice": "200 m²",
+          "truth": false,
+          "reason": "把 40 當長寬和，得錯誤 20×20。"
+        },
+        {
+          "choice": "400 m²",
+          "truth": false,
+          "reason": "直接平方 20 或 40 混亂。"
+        },
+        {
+          "choice": "80 m²",
+          "truth": false,
+          "reason": "任意取 8×10，周長並非 40。"
+        }
+      ],
+      "misconceptionTarget": "把圍欄總長當兩邊和",
+      "concept": "社區花圃最佳設計",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "圍欄 m，面積 m²。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「選擇正確周長模型並求最大」。",
+        "domainBoundary": "10 m、10 m 為正且使用 40 m 圍欄。",
+        "alternateReading": "若把題目誤讀為「把圍欄總長當兩邊和」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "literacy：求四邊花圃最大面積；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": "「四邊都需用圍欄」決定使用完整週長而非靠牆三邊模型；實際答案必須同時符合用料 40 m 與面積單位。",
+      "authoringIntent": "求四邊花圃最大面積",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "528d44ac2bdcc529f5155520adfb9d6ec38c8a36a1b5d68ad4f8787fc8fba440"
+    },
+    {
+      "questionId": "u21-s010-v011",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "海報外框尺寸為 20 cm×30 cm，四周留同寬 x cm 邊界，內部印刷區面積為 (20-2x)(30-2x)。x 的合理範圍為何？",
+      "givenConditions": [
+        "印刷區兩邊需為正"
+      ],
+      "target": "由實際長度限制定義域",
+      "text": "海報外框尺寸為 20 cm×30 cm，四周留同寬 x cm 邊界，內部印刷區面積為 (20-2x)(30-2x)。x 的合理範圍為何？",
+      "choices": [
+        "0<x<15",
+        "0<x<10",
+        "0<x<20",
+        "x>10"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "合理範圍 0<x<10 cm。",
+      "explanation": "兩方向都要保留正長度；短邊給出最嚴格上限 10。",
+      "steps": [
+        "解 20-2x>0",
+        "解 30-2x>0 並取交集"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0<x<15",
+          "truth": false,
+          "reason": "忽略較短邊 20 cm 的限制。"
+        },
+        {
+          "choice": "0<x<10",
+          "truth": true,
+          "reason": "20-2x>0 給 x<10；另一條件 x<15，取更嚴格者。"
+        },
+        {
+          "choice": "0<x<20",
+          "truth": false,
+          "reason": "把整邊長當單側邊界上限。"
+        },
+        {
+          "choice": "x>10",
+          "truth": false,
+          "reason": "會使短邊印刷寬度非正。"
+        }
+      ],
+      "misconceptionTarget": "只檢查較長一邊",
+      "concept": "面積模型可行範圍",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "x 單位 cm。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「由實際長度限制定義域」。",
+        "domainBoundary": "邊界寬為正，印刷區長寬也嚴格為正。",
+        "alternateReading": "若把題目誤讀為「只檢查較長一邊」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "literacy：確定海報邊界寬範圍；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": "海報四周同寬意味著每個方向要扣兩次 x，且印刷區必須有正長寬；情境決定嚴格的幾何範圍。",
+      "authoringIntent": "確定海報邊界寬範圍",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4efb7748d59753a7f435d8ee57e50cf4e833ce1849188d1ae0248c7c481c6936"
+    },
+    {
+      "questionId": "u21-s010-v012",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "牧場一側沿河不需圍欄，現有 60 m 圍欄圍成長方形其餘三邊。若兩條垂直河岸的邊各為 x m，最大面積是多少？",
+      "givenConditions": [
+        "2x+L=60",
+        "0<x<30"
+      ],
+      "target": "建立靠河三邊模型並求最大面積",
+      "text": "牧場一側沿河不需圍欄，現有 60 m 圍欄圍成長方形其餘三邊。若兩條垂直河岸的邊各為 x m，最大面積是多少？",
+      "choices": [
+        "900 m²",
+        "225 m²",
+        "600 m²",
+        "450 m²"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "最佳尺寸 15 m×30 m，最大面積 450 m²。",
+      "explanation": "面積模型開口向下，頂點 x=15，沿河邊長 30，面積 450。",
+      "steps": [
+        "寫 A=-2x²+60x",
+        "求頂點 x=15 並回代 L=30"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "900 m²",
+          "truth": false,
+          "reason": "把 30×30 當作只需三邊的可行矩形，實際用 90 m。"
+        },
+        {
+          "choice": "225 m²",
+          "truth": false,
+          "reason": "只算 15×15，未求另一邊 30。"
+        },
+        {
+          "choice": "600 m²",
+          "truth": false,
+          "reason": "無符合 2x+L=60 的最佳組合產生此積。"
+        },
+        {
+          "choice": "450 m²",
+          "truth": true,
+          "reason": "A=x(60-2x)=-2(x-15)²+450。"
+        }
+      ],
+      "misconceptionTarget": "誤用四邊正方形結論",
+      "concept": "靠河圍欄面積優化",
+      "prerequisiteCheck": "需先能使用 quadratic-max-min 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 100,
+      "unitCheck": "邊長 m，面積 m²。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「建立靠河三邊模型並求最大面積」。",
+        "domainBoundary": "x=15、L=30 均為正且恰用 60 m。",
+        "alternateReading": "若把題目誤讀為「誤用四邊正方形結論」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "literacy：求三邊牧場最大面積；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": "「沿河不需圍欄」使長度關係為 2x+L=60，而不是完整週長；模型與最佳尺寸必須符合實際用料。",
+      "authoringIntent": "求三邊牧場最大面積",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ddb72ef5f75a435fb0a2de063118242d5a05bef5fc300d961eb89e05ced3ac03"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u21-s010-cr001",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "一個長方形周長為 52 cm。設寬為 x cm，建立面積函數、寫出 x 的可行範圍，並求最大面積與對應長寬。",
+      "givenConditions": [
+        "四邊完整週長",
+        "邊長可為正實數"
+      ],
+      "target": "固定周長面積建模與極值",
+      "requiredWork": [
+        "由周長求長寬和。",
+        "以 x 表示另一邊並建立 A。",
+        "寫正邊長範圍。",
+        "求頂點並回到尺寸與單位。"
+      ],
+      "fullCreditSolution": [
+        "2(L+x)=52，所以 L+x=26，L=26-x。",
+        "A(x)=x(26-x)=-x²+26x，且 0<x<26。",
+        "A=-(x-13)²+169，所以 x=13 時最大。",
+        "長也為 13 cm，最大面積 169 cm²。"
+      ],
+      "alternativeSolutions": [
+        "可用固定和下乘積在兩數相等時最大，直接得到 13×13。"
+      ],
+      "reasoningSteps": [
+        "2(L+x)=52，所以 L+x=26，L=26-x。",
+        "A(x)=x(26-x)=-x²+26x，且 0<x<26。",
+        "A=-(x-13)²+169，所以 x=13 時最大。",
+        "長也為 13 cm，最大面積 169 cm²。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "函數、範圍、最佳長寬與 169 cm² 全對，且周長關係清楚。"
+        },
+        {
+          "score": 2,
+          "criteria": "模型正確，極值只有一個小算術或單位錯誤；或範圍未完整寫。"
+        },
+        {
+          "score": 1,
+          "criteria": "能寫 L=26-x 或 A=x(26-x)。"
+        },
+        {
+          "score": 0,
+          "criteria": "把 L=52-x、面積寫成和，且無有效極值。"
+        }
+      ],
+      "partialCreditRules": [
+        "模型正確，極值只有一個小算術或單位錯誤；或範圍未完整寫。",
+        "能寫 L=26-x 或 A=x(26-x)。"
+      ],
+      "followThroughPolicy": "若模型正確但完成平方算錯，後續按自得頂點回代一致可給方法分；單位與範圍獨立扣分。",
+      "unitAndNotationRules": [
+        "x、L 用 cm。",
+        "A 用 cm²。",
+        "範圍為嚴格不等式。"
+      ],
+      "answerOnlyPolicy": "只寫 13×13 與 169 無建模，最高 2 分。",
+      "commonErrors": [
+        "忘記周長先除以 2。",
+        "面積單位寫 cm。",
+        "只報 169 不報尺寸。"
+      ],
+      "independentReview": {
+        "derivedResult": "A=x(26-x)，0<x<26；13 cm×13 cm，最大 169 cm²。",
+        "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a98746af419f37625a2242953209135c6181035b8ea726c2f4bf21a1ba578597"
+    },
+    {
+      "questionId": "u21-s010-cr002",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-application-area"
+      },
+      "prompt": "一面靠牆的長方形展示區，用 48 m 欄杆圍另外三邊。若垂直牆的寬必須是整數公尺，求最大面積與尺寸；說明為何要檢查整數限制。",
+      "givenConditions": [
+        "2x+L=48",
+        "x、L 為正整數"
+      ],
+      "target": "靠牆面積優化與離散可行性",
+      "requiredWork": [
+        "建立 A=x(48-2x)。",
+        "求連續頂點。",
+        "檢查頂點是否符合整數限制並回代尺寸。"
+      ],
+      "fullCreditSolution": [
+        "A=-2x²+48x=-2(x-12)²+288。",
+        "連續頂點 x=12，恰為整數且在 0<x<24。",
+        "L=48-24=24 m，因此尺寸 12 m×24 m，最大面積 288 m²。",
+        "仍需檢查整數限制，因為若頂點不是整數，就必須比較鄰近可行整數；本題恰好無需調整。"
+      ],
+      "alternativeSolutions": [
+        "可由固定三邊用料下 L=2x 時達到最大，再得 x=12、L=24。"
+      ],
+      "reasoningSteps": [
+        "A=-2x²+48x=-2(x-12)²+288。",
+        "連續頂點 x=12，恰為整數且在 0<x<24。",
+        "L=48-24=24 m，因此尺寸 12 m×24 m，最大面積 288 m²。",
+        "仍需檢查整數限制，因為若頂點不是整數，就必須比較鄰近可行整數；本題恰好無需調整。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "模型、頂點、整數檢查、尺寸 12×24 與 288 m² 全部正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "數值結果正確但整數限制說明不足，或只有一個回代算術錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "能寫 A=x(48-2x) 或正確找連續頂點 x=12。"
+        },
+        {
+          "score": 0,
+          "criteria": "用完整四邊周長模型，或最佳尺寸不滿足 2x+L=48。"
+        }
+      ],
+      "partialCreditRules": [
+        "數值結果正確但整數限制說明不足，或只有一個回代算術錯。",
+        "能寫 A=x(48-2x) 或正確找連續頂點 x=12。"
+      ],
+      "followThroughPolicy": "若連續頂點非整數的錯誤來自算術，但學生正確說明需比較鄰近整數，可保留離散方法分；尺寸必須通過用料驗算。",
+      "unitAndNotationRules": [
+        "邊長 m，面積 m²。",
+        "x、L 為正整數。"
+      ],
+      "answerOnlyPolicy": "只寫 288 m² 無模型、尺寸與整數說明，最高 1 分。",
+      "commonErrors": [
+        "把 L 寫 48-x。",
+        "認為整數限制可完全忽略。",
+        "面積單位寫 m。"
+      ],
+      "independentReview": {
+        "derivedResult": "x=12 m、L=24 m，最大面積 288 m²；頂點恰為整數。",
+        "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "dd37b89909d6017cd80f43c19ac34b94e646890a48fb868137eb606d56a64afd"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u21-fig-s010-01",
+      "drawingSpecId": "u21-draw-s010-01",
+      "unitId": "u21",
+      "topicId": "u21-applications",
+      "skillId": "quadratic-application-area",
+      "title": "長方形面積模型",
+      "svgPath": "figures/u21/u21-fig-s010-01.svg",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "altText": "本圖以高對比線條與文字標籤呈現：長方形邊長 x 與 20-x 對應面積 A=x(20-x)，面積圖頂點為 (10,100)。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 760,
+          "height": 430
+        },
+        "viewBox": "0 0 760 430",
+        "coordinateSystem": "SVG 原點在左上；所有座標與曲線位置依本圖明列的像素配置。",
+        "elements": "本技能專用的座標軸、拋物線、標記點、文字與必要輔助線，詳見 SVG 元素。",
+        "labels": "所有關鍵方程式、頂點、對稱軸、端點或表格欄位直接以文字標示。",
+        "tickMarks": "圖形以關鍵座標文字為主；未標一般刻度時不得由外觀估讀其他座標。",
+        "units": "情境圖依文字標示秒、公尺或平方單位；純座標圖使用無單位座標。",
+        "lineRules": "實線為函數曲線或座標軸，虛線為對稱軸、限制邊界或比較曲線；用途由文字同步說明。",
+        "scalePolicy": "同一圖內比較寬窄時使用同一比例；未標示的距離不得作精確數值推論。",
+        "notToScaleWarning": "除明列座標外，不可只憑圖形外觀推算未標示數值。",
+        "mobileConstraints": "最小主要字級 16 px，關鍵線寬至少 2 px，640 至 760 寬 viewBox 可等比例縮放。",
+        "answerLeakageControl": "圖形只呈現講義所需結構或題幹已給資訊；不得把未給的選擇題答案直接標成結論。"
+      },
+      "svgAssertions": [
+        "<title>",
+        "<desc>",
+        "role=\"img\"",
+        "stroke=\"black\""
+      ],
+      "geometryAssertions": [
+        "SVG viewBox 與 width、height 均存在。",
+        "關鍵點與輔助線座標在畫布範圍內。",
+        "文字標籤不依賴顏色區分。"
+      ],
+      "figureReview": {
+        "mathematicalAccuracy": "pass",
+        "mobileReadability": "pass",
+        "answerLeakage": "pass",
+        "manualVisualInspection": "pass",
+        "reviewNote": "人工檢視 u21-fig-s010-01：長方形邊長 x 與 20-x 對應面積 A=x(20-x)，面積圖頂點為 (10,100)。 已核對曲線方向、標記座標、虛實線語意、文字可讀性與畫布邊界，未以未標刻度洩漏額外答案。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentSha256": "63656b2cae5e31cf1db11a1fff1533d6dd4f05f44dfbac16a70fe222092806b2"
+    }
+  ],
+  "sourceBatch": "022-u21-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/022-u21-complete/units/u21/s010"
+}

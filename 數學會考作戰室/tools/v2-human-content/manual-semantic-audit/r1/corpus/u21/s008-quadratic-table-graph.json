@@ -1,0 +1,1443 @@
+{
+  "slot": "s008",
+  "skillId": "quadratic-table-graph",
+  "topicId": "u21-graphs",
+  "title": "有效列表再作圖：用對稱減少計算",
+  "lecture": {
+    "lectureId": "u21-s008-lecture-r1",
+    "unitId": "u21",
+    "numericUnitId": 21,
+    "topicId": "u21-graphs",
+    "skillId": "quadratic-table-graph",
+    "lockedTitle": "列表作圖概念",
+    "title": "有效列表再作圖：用對稱減少計算",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "gradeBand": "9下",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": {
+      "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+      "legacyContentImported": false,
+      "legacySkillReferenceOnly": "quadratic-table-graph"
+    },
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能依頂點與對稱軸選擇合適 x 值。",
+      "能正確完成二次函數值表。",
+      "能利用對稱填補等高值並檢查算錯。",
+      "能把表格點畫成平滑且方向正確的拋物線。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "quadratic-vertex-form-basic",
+        "requiredLevel": "能讀懂前一技能的定義、圖形與基本運算，並可在本節開始前完成一題檢核。",
+        "bridge": "本節會直接使用前一技能的圖形語言與代數表示。"
+      }
+    ],
+    "prerequisiteBridge": "已會讀頂點式；本節把 h 當作表格中央，選取 h±1、h±2 等成對輸入。",
+    "glossary": [
+      {
+        "term": "值表",
+        "definition": "依序列出 x 與函數值 y 的表格。"
+      },
+      {
+        "term": "對稱選點",
+        "definition": "以對稱軸為中心選取等距的 x。"
+      },
+      {
+        "term": "關鍵點",
+        "definition": "頂點、截距或能清楚控制曲線形狀的點。"
+      },
+      {
+        "term": "作圖尺度",
+        "definition": "每一格代表多少單位。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "h-d、h、h+d",
+        "meaning": "以對稱軸 x=h 為中心的成對 x。"
+      },
+      {
+        "symbol": "f(h-d)=f(h+d)",
+        "meaning": "對稱點函數值相同。"
+      },
+      {
+        "symbol": "Δx",
+        "meaning": "選點時橫座標的固定間隔。"
+      }
+    ],
+    "conceptNarrative": [
+      "亂選 x 可能得到很大的 y 或看不出頂點。最有效的表格是把對稱軸放在中央。",
+      "頂點式中，h±d 代入後平方都是 d²，因此成對的 y 必相同。這既能省計算，也能當作錯誤檢查。",
+      "畫圖不是把點用直線段硬接，而是依開口、頂點與對稱性畫平滑曲線。",
+      "若 y 值超出紙面，可改用較小 Δx 或調整刻度，但不能改變函數值來塞進圖。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "對稱值表",
+        "statement": "以 x=h 為中心，選取等距輸入，所得函數值左右相同。"
+      },
+      {
+        "name": "充分作圖點",
+        "statement": "能顯示頂點、方向與曲率的有限代表點；完整圖形仍包含無限多點。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "f(h±d)=ad²+k",
+        "conditions": [
+          "f(x)=a(x-h)²+k"
+        ],
+        "meaning": "快速計算成對值。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不同 x 間隔也可作圖，但不能假設表格左右位置對稱。",
+      "只有兩點通常不足以決定拋物線形狀。",
+      "表格對稱不等於 y 值依序等差。",
+      "圖形延伸方向必須符合 a 的符號。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "由式子找 h、k 與開口。",
+        "check": "頂點和軸是否先確定？"
+      },
+      {
+        "step": 2,
+        "instruction": "選 x=h、h±1、h±2。",
+        "check": "數值是否適合題目刻度？"
+      },
+      {
+        "step": 3,
+        "instruction": "先算頂點，再算一側。",
+        "check": "平方與係數運算是否正確？"
+      },
+      {
+        "step": 4,
+        "instruction": "用對稱填另一側。",
+        "check": "相同距離的 y 是否一致？"
+      },
+      {
+        "step": 5,
+        "instruction": "標點並畫平滑曲線。",
+        "check": "頂點、開口和所有點都吻合嗎？"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "為 y=(x-2)²-1 選五個最方便的 x。",
+        "solutionSteps": [
+          "對稱軸 x=2。",
+          "選 0、1、2、3、4。"
+        ],
+        "answer": "x=0,1,2,3,4。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "完成上題 y 值。",
+        "solutionSteps": [
+          "距軸 2、1、0、1、2。",
+          "平方後減 1 得 3、0、-1、0、3。"
+        ],
+        "answer": "y=3,0,-1,0,3。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "y=-2(x+1)²+4 在 x=-3 與 x=1 的值。",
+        "solutionSteps": [
+          "兩者距軸 x=-1 都是 2。",
+          "y=-2×4+4=-4。"
+        ],
+        "answer": "兩者皆 -4。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "表格左右不對稱：x=1,2,4，能否作圖？",
+        "solutionSteps": [
+          "可以逐點代入。",
+          "但若補上 x=0 與 x=3 等對稱點，形狀更可靠。"
+        ],
+        "answer": "可以，但宜補對稱點。"
+      },
+      {
+        "exampleId": "L5",
+        "prompt": "若點 (2,-1) 是向上拋物線最低點，連線時要注意什麼？",
+        "solutionSteps": [
+          "曲線在該點改變下降與上升方向。",
+          "兩側應平滑上升，不可穿過更低 y。"
+        ],
+        "answer": "以 (2,-1) 為頂點平滑向上延伸。"
+      }
+    ],
+    "difficultyConnections": {
+      "basic": "完成單一代入值。",
+      "standard": "完成對稱五點表。",
+      "advanced": "由部分表格偵測錯值或反推 h。",
+      "literacy": "依量測範圍選取合理時間或位置建立模型圖。"
+    },
+    "commonMistakes": [
+      {
+        "mistake": "表格只選軸的一側。",
+        "why": "圖形會缺少對稱資訊。",
+        "correction": "至少選一組 h±d。"
+      },
+      {
+        "mistake": "把 h±1 代成括號值 h±1-h。",
+        "why": "未整體代入。",
+        "correction": "先算 x-h 再平方。"
+      },
+      {
+        "mistake": "左右同距卻算出不同 y。",
+        "why": "至少一側計算有誤。",
+        "correction": "利用 f(h-d)=f(h+d) 查錯。"
+      },
+      {
+        "mistake": "用折線連點。",
+        "why": "把連續曲線當離散線段。",
+        "correction": "依曲率畫平滑拋物線。"
+      },
+      {
+        "mistake": "忽略座標尺度。",
+        "why": "點位置與數值不一致。",
+        "correction": "先標每格單位。"
+      },
+      {
+        "mistake": "為了放進圖而更改 y 值。",
+        "why": "把作圖限制凌駕函數。",
+        "correction": "調整刻度或選較近的 x。"
+      }
+    ],
+    "selfCheckItems": [
+      {
+        "prompt": "y=(x-3)² 的五個方便 x？",
+        "answer": "1,2,3,4,5。"
+      },
+      {
+        "prompt": "距軸 2 時，y=2(x-1)²-3 的值？",
+        "answer": "5。"
+      },
+      {
+        "prompt": "f(0)=7、軸 x=2，f(4)？",
+        "answer": "7。"
+      },
+      {
+        "prompt": "二次函數點之間應畫折線嗎？",
+        "answer": "不應，應畫平滑曲線。"
+      }
+    ],
+    "summary": [
+      "以對稱軸為中心選點最有效。",
+      "h±d 的函數值相同，可省算並查錯。",
+      "表格先包含頂點，再加入左右成對點。",
+      "作圖需符合刻度、開口與平滑性。"
+    ],
+    "connections": {
+      "previous": "使用頂點式直接讀 h、k。",
+      "next": [
+        "下一技能會由頂點與開口判斷最大或最小值。",
+        "素養題會從有限資料表讀取模型特徵。"
+      ]
+    },
+    "figureReferences": [
+      "u21-fig-s008-01"
+    ],
+    "accessibilityNotes": [
+      "表格欄位、座標點代號與圖中標籤一致，並以文字說明對稱配對。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u21-s008-v001",
+        "u21-s008-v002",
+        "u21-s008-v003",
+        "u21-s008-v004",
+        "u21-s008-v005",
+        "u21-s008-v006",
+        "u21-s008-v007",
+        "u21-s008-v008",
+        "u21-s008-v009",
+        "u21-s008-v010",
+        "u21-s008-v011",
+        "u21-s008-v012"
+      ],
+      "constructedResponseIds": [
+        "u21-s008-cr001",
+        "u21-s008-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "臺灣國中會考二次函數範圍",
+      "examplesNotCopiedFromBank": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐格重算 y=(x-2)²-1 的五點值與 y=-2(x+1)²+4 的對稱值；確認作圖方法沒有把有限表格誤說成完整點集。",
+      "reviewVersion": "human-lecture-u21-r1",
+      "reviewedAt": "2026-07-12"
+    },
+    "contentSha256": "f81301a8840ccff14d83386fad6fbce445896799aa22ebf1ffe5da11ba0c48b9"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u21-s008-v001",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "要為 y=(x-3)²-2 建立五點對稱值表，下列哪組 x 最方便？",
+      "givenConditions": [
+        "對稱軸 x=3"
+      ],
+      "target": "以軸為中心選連續成對輸入",
+      "text": "要為 y=(x-3)²-2 建立五點對稱值表，下列哪組 x 最方便？",
+      "choices": [
+        "0,1,2,3,4",
+        "3,4,5,6,7",
+        "-2,-1,0,1,2",
+        "1,2,3,4,5"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "x=1,2,3,4,5 提供兩組對稱點與頂點。",
+      "explanation": "先把對稱軸放在表格中央，再選 h±1、h±2。",
+      "steps": [
+        "讀出 h=3",
+        "選 3±1、3±2"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0,1,2,3,4",
+          "truth": false,
+          "reason": "只涵蓋軸左側較多，不以 3 為中央。"
+        },
+        {
+          "choice": "3,4,5,6,7",
+          "truth": false,
+          "reason": "只選軸右側。"
+        },
+        {
+          "choice": "-2,-1,0,1,2",
+          "truth": false,
+          "reason": "以 0 為中心，未配合軸 x=3。"
+        },
+        {
+          "choice": "1,2,3,4,5",
+          "truth": true,
+          "reason": "以 3 為中心，左右距離依序 2、1、0、1、2。"
+        }
+      ],
+      "misconceptionTarget": "從 0 開始機械列值",
+      "concept": "有效選點",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 50,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「以軸為中心選連續成對輸入」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「從 0 開始機械列值」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "basic：選擇對稱五點輸入；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "選擇對稱五點輸入",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6b3359a90f5f32f63ec1d5f482491c3dc7c5fe0ca54274ee2137228a6a59f09a"
+    },
+    {
+      "questionId": "u21-s008-v002",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "函數 y=2(x-1)²+3 在 x=1 時的值為何？",
+      "givenConditions": [
+        "x=1 是對稱軸位置"
+      ],
+      "target": "表格中央頂點值",
+      "text": "函數 y=2(x-1)²+3 在 x=1 時的值為何？",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "5"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "f(1)=2×0²+3=3。",
+      "explanation": "代 x=1 後括號為 0，整個平方項消失，只剩 3。",
+      "steps": [
+        "計算 x-1=0",
+        "得到 y=3"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "把 a 當函數值。"
+        },
+        {
+          "choice": "3",
+          "truth": true,
+          "reason": "平方項為 0，y=k=3。"
+        },
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "把 x 當 y。"
+        },
+        {
+          "choice": "5",
+          "truth": false,
+          "reason": "把平方項誤算成 1。"
+        }
+      ],
+      "misconceptionTarget": "把 a 與 k 相加",
+      "concept": "值表頂點列",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 40,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「表格中央頂點值」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「把 a 與 k 相加」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "basic：先填頂點值；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "先填頂點值",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f95aac2a5d96e08a0ad57b7e566f3a9188256807ce9e319c326942a193d7fb6e"
+    },
+    {
+      "questionId": "u21-s008-v003",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "basic",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "某拋物線的對稱軸為 x=-2，且 f(-5)=11。f(1) 為何？",
+      "givenConditions": [
+        "-5 與 1 到 -2 等距"
+      ],
+      "target": "利用對稱填同高值",
+      "text": "某拋物線的對稱軸為 x=-2，且 f(-5)=11。f(1) 為何？",
+      "choices": [
+        "11",
+        "-11",
+        "1",
+        "無法判斷"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "f(-2-d)=f(-2+d)，d=3，因此 f(1)=11。",
+      "explanation": "兩個輸入位於軸兩側相同距離，所以函數值相同。",
+      "steps": [
+        "比較水平距離",
+        "填 f(1)=f(-5)"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "11",
+          "truth": true,
+          "reason": "-5=-2-3、1=-2+3。"
+        },
+        {
+          "choice": "-11",
+          "truth": false,
+          "reason": "垂直軸對稱不改 y 符號。"
+        },
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "把輸入當輸出。"
+        },
+        {
+          "choice": "無法判斷",
+          "truth": false,
+          "reason": "對稱軸與一側值已足夠。"
+        }
+      ],
+      "misconceptionTarget": "把對稱值當相反數",
+      "concept": "對稱填表",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 55,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「利用對稱填同高值」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「把對稱值當相反數」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "basic：由單側值補另一側；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "由單側值補另一側",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "89f09a32726dd0ee2bffd36b1c3f45873fb0656c8a0dd1415b6191cc4cb18cbf"
+    },
+    {
+      "questionId": "u21-s008-v004",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "為 y=-x²+4 作圖，哪一個座標點計算錯誤？",
+      "givenConditions": [
+        "可選 x=-2,-1,0,1,2"
+      ],
+      "target": "檢查作圖用座標",
+      "text": "為 y=-x²+4 作圖，哪一個座標點計算錯誤？",
+      "choices": [
+        "(-2,0)",
+        "(-1,3)",
+        "(2,2)",
+        "(0,4)"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "(2,2) 不符合方程式；正確點應為 (2,0)。",
+      "explanation": "逐點代入，x=2 應與 x=-2 對稱，同為 y=0。",
+      "steps": [
+        "計算 f(2)",
+        "用 f(-2)=f(2) 驗證"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "(-2,0)",
+          "truth": false,
+          "reason": "f(-2)=-4+4=0。"
+        },
+        {
+          "choice": "(-1,3)",
+          "truth": false,
+          "reason": "f(-1)=-1+4=3。"
+        },
+        {
+          "choice": "(2,2)",
+          "truth": true,
+          "reason": "f(2)=-4+4=0，不是 2。"
+        },
+        {
+          "choice": "(0,4)",
+          "truth": false,
+          "reason": "f(0)=4。"
+        }
+      ],
+      "misconceptionTarget": "只看點大致位在曲線附近",
+      "concept": "作圖點檢核",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 70,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「檢查作圖用座標」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「只看點大致位在曲線附近」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "standard：找錯誤座標；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "找錯誤座標",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "4203152db5e97e699288697a5bdf0379518991c9b2fd90423e5594c1db853fd9"
+    },
+    {
+      "questionId": "u21-s008-v005",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "函數 y=(x+1)² 的對稱值表中，哪一組 x 應有相同 y？",
+      "givenConditions": [
+        "對稱軸 x=-1"
+      ],
+      "target": "辨認對稱輸入配對",
+      "text": "函數 y=(x+1)² 的對稱值表中，哪一組 x 應有相同 y？",
+      "choices": [
+        "x=-4 與 x=4",
+        "x=-4 與 x=2",
+        "x=-2 與 x=2",
+        "x=-1 與 x=1"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "只有 -4、2 關於 x=-1 對稱。",
+      "explanation": "對稱輸入需以 -1 為中點；(-4+2)/2=-1。",
+      "steps": [
+        "計算各對中點",
+        "選中點 -1 者"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=-4 與 x=4",
+          "truth": false,
+          "reason": "距離分別 3、5。"
+        },
+        {
+          "choice": "x=-4 與 x=2",
+          "truth": true,
+          "reason": "兩者到 -1 的距離都是 3。"
+        },
+        {
+          "choice": "x=-2 與 x=2",
+          "truth": false,
+          "reason": "距離分別 1、3。"
+        },
+        {
+          "choice": "x=-1 與 x=1",
+          "truth": false,
+          "reason": "軸上點沒有不同對稱輸入 -1 本身之外。"
+        }
+      ],
+      "misconceptionTarget": "機械取相反數配對",
+      "concept": "選表格對稱配對",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 70,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「辨認對稱輸入配對」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「機械取相反數配對」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "standard：辨認非零軸的對稱輸入；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "辨認非零軸的對稱輸入",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "5d5c01c3ded47956a41dc0b6d7f17da301b60b80e3d565f5c7bfc5dc327d394f"
+    },
+    {
+      "questionId": "u21-s008-v006",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "standard",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "為 y=0.5(x-2)²-1 建表，x=0,1,2,3,4 時 y 依序為何？",
+      "givenConditions": [
+        "以 x=2 為中心"
+      ],
+      "target": "完成含小數係數的五點表",
+      "text": "為 y=0.5(x-2)²-1 建表，x=0,1,2,3,4 時 y 依序為何？",
+      "choices": [
+        "2,0.5,0,0.5,2",
+        "1,0.5,-1,0.5,1",
+        "-3,-1.5,-1,-1.5,-3",
+        "1,-0.5,-1,-0.5,1"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "y 值為 1,-0.5,-1,-0.5,1。",
+      "explanation": "用距軸 d=2,1,0,1,2，可快速得到對稱序列。",
+      "steps": [
+        "計算 d²",
+        "乘 0.5 並減 1"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2,0.5,0,0.5,2",
+          "truth": false,
+          "reason": "漏減 1。"
+        },
+        {
+          "choice": "1,0.5,-1,0.5,1",
+          "truth": false,
+          "reason": "x=1、3 時 0.5-1=-0.5。"
+        },
+        {
+          "choice": "-3,-1.5,-1,-1.5,-3",
+          "truth": false,
+          "reason": "把 0.5 平方項前誤加負號。"
+        },
+        {
+          "choice": "1,-0.5,-1,-0.5,1",
+          "truth": true,
+          "reason": "距軸平方為 4,1,0,1,4；乘 0.5 再減 1。"
+        }
+      ],
+      "misconceptionTarget": "忽略常數或小數負號",
+      "concept": "含分數係數值表",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 85,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「完成含小數係數的五點表」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「忽略常數或小數負號」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "standard：建立對稱五點表；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "建立對稱五點表",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "bf32725dbd1461d690eabff94c1da77101d9fae20c0a4d5e5cbbe64dc2c68cd5"
+    },
+    {
+      "questionId": "u21-s008-v007",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "學生為 y=3(x+2)²-5 建表，已算 f(-4)=7、f(-3)=-2、f(-2)=-5。利用對稱，f(-1)、f(0) 應為何？",
+      "givenConditions": [
+        "對稱軸 x=-2"
+      ],
+      "target": "由一側三值鏡射完成另一側",
+      "text": "學生為 y=3(x+2)²-5 建表，已算 f(-4)=7、f(-3)=-2、f(-2)=-5。利用對稱，f(-1)、f(0) 應為何？",
+      "choices": [
+        "f(-1)=2，f(0)=-7",
+        "f(-1)=-5，f(0)=-2",
+        "f(-1)=-2，f(0)=7",
+        "f(-1)=7，f(0)=-2"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "因此 f(-1)=-2、f(0)=7。",
+      "explanation": "以 -2 為中心，距 1 的 -3、-1 同值，距 2 的 -4、0 同值。",
+      "steps": [
+        "配對 -3↔-1",
+        "配對 -4↔0"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "f(-1)=2，f(0)=-7",
+          "truth": false,
+          "reason": "把 y 值改成相反數。"
+        },
+        {
+          "choice": "f(-1)=-5，f(0)=-2",
+          "truth": false,
+          "reason": "配對距離錯位。"
+        },
+        {
+          "choice": "f(-1)=-2，f(0)=7",
+          "truth": true,
+          "reason": "-3 與 -1 對稱；-4 與 0 對稱。"
+        },
+        {
+          "choice": "f(-1)=7，f(0)=-2",
+          "truth": false,
+          "reason": "把兩組對稱值交換。"
+        }
+      ],
+      "misconceptionTarget": "依數值大小而非距軸配對",
+      "concept": "由半表鏡射完成值表",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「由一側三值鏡射完成另一側」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「依數值大小而非距軸配對」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "advanced：利用對稱節省計算；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "利用對稱節省計算",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c15f5176216f7c90e623d76f53c988d794b40cc28418ea83b90d6af13e458ea8"
+    },
+    {
+      "questionId": "u21-s008-v008",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "某值表以 x=0,1,2,3,4 列出 y=5,0,-3,0,5。下列哪項作圖描述正確？",
+      "givenConditions": [
+        "表格以 x=2 為中心對稱"
+      ],
+      "target": "由值表判斷頂點與開口",
+      "text": "某值表以 x=0,1,2,3,4 列出 y=5,0,-3,0,5。下列哪項作圖描述正確？",
+      "choices": [
+        "頂點為 (2,-3)，圖形開口向上",
+        "頂點為 (0,5)，開口向下",
+        "頂點為 (2,5)，開口向下",
+        "對稱軸為 y=-3"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "頂點 (2,-3)，離中央越遠 y 越大，故向上。",
+      "explanation": "成對值 f(0)=f(4)、f(1)=f(3) 顯示軸 x=2；中央值 -3 最低。",
+      "steps": [
+        "辨認兩組等高值",
+        "讀中央最低點"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "頂點為 (2,-3)，圖形開口向上",
+          "truth": true,
+          "reason": "中央值最小，左右值對稱增大。"
+        },
+        {
+          "choice": "頂點為 (0,5)，開口向下",
+          "truth": false,
+          "reason": "端點不是對稱中心。"
+        },
+        {
+          "choice": "頂點為 (2,5)，開口向下",
+          "truth": false,
+          "reason": "x=2 的實際 y 是 -3。"
+        },
+        {
+          "choice": "對稱軸為 y=-3",
+          "truth": false,
+          "reason": "軸應是 x=2。"
+        }
+      ],
+      "misconceptionTarget": "以表格第一列當頂點",
+      "concept": "由值表重建圖形",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「由值表判斷頂點與開口」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「以表格第一列當頂點」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "advanced：從表格判軸與開口；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "從表格判軸與開口",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "fa620e88c6a91eb3f0a0a521822abf811e1a1bdc88990c16388946d5b8c491dc"
+    },
+    {
+      "questionId": "u21-s008-v009",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "advanced",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "作 y=4x² 的圖時，若使用 x=-2,-1,0,1,2，y 最大到 16，超出目前縱軸只畫到 10。最合適的處理方式為何？",
+      "givenConditions": [
+        "不能改變函數規則"
+      ],
+      "target": "在作圖限制下調整選點或尺度",
+      "text": "作 y=4x² 的圖時，若使用 x=-2,-1,0,1,2，y 最大到 16，超出目前縱軸只畫到 10。最合適的處理方式為何？",
+      "choices": [
+        "把 y=16 改畫成 y=10",
+        "刪除所有超出點並宣稱圖形到此結束",
+        "將 4x² 改成 2x²",
+        "縮小 x 的取值間隔或調整縱軸刻度"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "例如改選 x=±1.5 或讓縱軸每格代表 2，可正確呈現。",
+      "explanation": "紙面不足時應調整表示方法，不可更改函數值或函數本身。",
+      "steps": [
+        "確認數學資料不可改",
+        "選調整尺度或選點"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "把 y=16 改畫成 y=10",
+          "truth": false,
+          "reason": "會扭曲資料。"
+        },
+        {
+          "choice": "刪除所有超出點並宣稱圖形到此結束",
+          "truth": false,
+          "reason": "拋物線仍會延伸。"
+        },
+        {
+          "choice": "將 4x² 改成 2x²",
+          "truth": false,
+          "reason": "改變了原函數。"
+        },
+        {
+          "choice": "縮小 x 的取值間隔或調整縱軸刻度",
+          "truth": true,
+          "reason": "這能保留正確函數值並讓圖形可見。"
+        }
+      ],
+      "misconceptionTarget": "為配合畫面任意修改數值",
+      "concept": "作圖尺度管理",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "不涉及單位換算。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「在作圖限制下調整選點或尺度」。",
+        "domainBoundary": "題幹已給足定義域與比較條件。",
+        "alternateReading": "若把題目誤讀為「為配合畫面任意修改數值」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "advanced：處理圖面範圍；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": null,
+      "authoringIntent": "處理圖面範圍",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3cac727190a7c708db6b7f8bbb55595043ae11077c1aaebfcfa3c3d89a254af5"
+    },
+    {
+      "questionId": "u21-s008-v010",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "測試車煞停距離模型 d(v)=0.01v²，v 為 km/h、d 為 m。表格要列 v=20,40,60，三個距離依序為何？",
+      "givenConditions": [
+        "模型只作題目指定比較"
+      ],
+      "target": "建立速度與距離表",
+      "text": "測試車煞停距離模型 d(v)=0.01v²，v 為 km/h、d 為 m。表格要列 v=20,40,60，三個距離依序為何？",
+      "choices": [
+        "0.2 m、0.4 m、0.6 m",
+        "2 m、4 m、6 m",
+        "4 m、16 m、36 m",
+        "40 m、160 m、360 m"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "d(20)=4、d(40)=16、d(60)=36 公尺。",
+      "explanation": "逐一平方速度並乘 0.01，得到非等差的距離。",
+      "steps": [
+        "計算三個速度平方",
+        "乘 0.01 並附公尺"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.2 m、0.4 m、0.6 m",
+          "truth": false,
+          "reason": "把平方關係誤作一次。"
+        },
+        {
+          "choice": "2 m、4 m、6 m",
+          "truth": false,
+          "reason": "只除以 10。"
+        },
+        {
+          "choice": "4 m、16 m、36 m",
+          "truth": true,
+          "reason": "0.01×400=4，0.01×1600=16，0.01×3600=36。"
+        },
+        {
+          "choice": "40 m、160 m、360 m",
+          "truth": false,
+          "reason": "把 0.01 誤作 0.1。"
+        }
+      ],
+      "misconceptionTarget": "把速度倍增當距離同倍增",
+      "concept": "速度平方模型值表",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 95,
+      "unitCheck": "v 為 km/h，d 為 m；輸出三項均附 m。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「建立速度與距離表」。",
+        "domainBoundary": "20、40、60 均在題目模型的測試速度範圍。",
+        "alternateReading": "若把題目誤讀為「把速度倍增當距離同倍增」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "literacy：建立煞停距離表；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": "速度與距離使用不同單位，表格顯示距離隨速度平方成長；情境使單位與非線性風險解讀必要。",
+      "authoringIntent": "建立煞停距離表",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a7a93fd0643313d9282b6e6bcea2ba203782ce901e1281d509a536dbd51478f9"
+    },
+    {
+      "questionId": "u21-s008-v011",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "舞臺拱門模型 y=-0.5(x-4)²+8。設計師已量 x=4、5、6，若要補上與 x=6 同高度的對稱位置，應量哪個 x？",
+      "givenConditions": [
+        "對稱軸 x=4",
+        "位置單位公尺"
+      ],
+      "target": "規劃對稱量測位置",
+      "text": "舞臺拱門模型 y=-0.5(x-4)²+8。設計師已量 x=4、5、6，若要補上與 x=6 同高度的對稱位置，應量哪個 x？",
+      "choices": [
+        "x=2",
+        "x=-6",
+        "x=3",
+        "x=8"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "f(2)=f(6)，兩位置到中心線距離都為 2。",
+      "explanation": "x=6 位於軸右 2 公尺，鏡射到左 2 公尺即 x=2。",
+      "steps": [
+        "讀出軸 x=4",
+        "做 4-(6-4)"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "x=2",
+          "truth": true,
+          "reason": "6 距軸 2，另一側為 4-2=2。"
+        },
+        {
+          "choice": "x=-6",
+          "truth": false,
+          "reason": "不是關於 x=4 的鏡射。"
+        },
+        {
+          "choice": "x=3",
+          "truth": false,
+          "reason": "與 x=5 對稱。"
+        },
+        {
+          "choice": "x=8",
+          "truth": false,
+          "reason": "仍在軸右側，距離 4。"
+        }
+      ],
+      "misconceptionTarget": "把輸入直接取相反數",
+      "concept": "對稱量測設計",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 70,
+      "unitCheck": "x 為水平公尺位置，答案 x=2 m。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「規劃對稱量測位置」。",
+        "domainBoundary": "模型對稱且 x=2 位於拱門設計範圍。",
+        "alternateReading": "若把題目誤讀為「把輸入直接取相反數」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "literacy：補測拱門另一側；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": "舞臺位置以同一水平基準量測，對稱點是實際應量的位置 x=2，而不是只回答距離 2 公尺。",
+      "authoringIntent": "補測拱門另一側",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "7af6d2e87c24929c28eee7f6c626f34f2955cddf537f9e13ab80416c9a14b7d6"
+    },
+    {
+      "questionId": "u21-s008-v012",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "literacy",
+      "type": "mc",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "某噴頭水流寬度模型 w(t)=-(t-3)²+9，操作員要以 1 秒間隔建立 t=1 到 5 的表格。下列哪種檢查最有效？",
+      "givenConditions": [
+        "對稱軸 t=3"
+      ],
+      "target": "用對稱檢核時間表",
+      "text": "某噴頭水流寬度模型 w(t)=-(t-3)²+9，操作員要以 1 秒間隔建立 t=1 到 5 的表格。下列哪種檢查最有效？",
+      "choices": [
+        "確認相鄰 w 的差都相同",
+        "確認 w(1)=w(5)、w(2)=w(4)，且 w(3) 最大",
+        "確認所有 w 都互不相同",
+        "確認 t 越大 w 必越大"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "w(1)=5、w(2)=8、w(3)=9、w(4)=8、w(5)=5，完全符合檢查。",
+      "explanation": "值表應左右對稱，中央 t=3 為最大；這比檢查等差更符合二次函數。",
+      "steps": [
+        "辨認軸與方向",
+        "列出兩組對稱時間"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "確認相鄰 w 的差都相同",
+          "truth": false,
+          "reason": "二次函數不一定等差。"
+        },
+        {
+          "choice": "確認 w(1)=w(5)、w(2)=w(4)，且 w(3) 最大",
+          "truth": true,
+          "reason": "成對時間到 3 秒等距，且 a<0。"
+        },
+        {
+          "choice": "確認所有 w 都互不相同",
+          "truth": false,
+          "reason": "對稱點應有相同值。"
+        },
+        {
+          "choice": "確認 t 越大 w 必越大",
+          "truth": false,
+          "reason": "頂點後會下降。"
+        }
+      ],
+      "misconceptionTarget": "把二次函數當等差或單調",
+      "concept": "用圖形特徵稽核資料表",
+      "prerequisiteCheck": "需先能使用 quadratic-vertex-form-basic 的核心概念；本題沒有借用後續技能。",
+      "estimatedTimeSec": 80,
+      "unitCheck": "t 單位秒，w 為寬度；本題要求檢查規則而非數值單位。",
+      "roundingCheck": "全程使用精確值，不需四捨五入。",
+      "ambiguityAndBoundaryAudit": {
+        "uniqueTarget": "所求明確為「用對稱檢核時間表」。",
+        "domainBoundary": "t=1 至 5 對稱包含頂點 t=3。",
+        "alternateReading": "若把題目誤讀為「把二次函數當等差或單調」，會落入幹擾選項，但不會形成第二個正確答案。",
+        "figureInference": "本題不依賴未提供的圖形外觀。"
+      },
+      "difficultyReason": "literacy：檢查噴頭測試表；需完成 2 個明確推理步驟並排除三種具體錯誤。",
+      "literacyContextNecessity": "操作員建立的是時間序列，對稱檢查可直接發現抄錄錯誤；水流情境也要求中央時刻最大而非純符號配對。",
+      "authoringIntent": "檢查噴頭測試表",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "68cb34999c38833e797b79e04455c4a76c607d9fe50e1a8fd42f80939e33260c"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u21-s008-cr001",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "standard",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "為 y=(x+1)²-4 建立以 x=-1 為中心的五點值表，畫圖時應標哪些關鍵資訊？請列出座標並文字說明。",
+      "givenConditions": [
+        "選 x=-3,-2,-1,0,1"
+      ],
+      "target": "建立對稱值表與作圖規格",
+      "requiredWork": [
+        "算出五個 y 與座標。",
+        "指出頂點、對稱軸、開口。",
+        "說明平滑連線與刻度。"
+      ],
+      "fullCreditSolution": [
+        "距軸 x=-1 的距離為 2、1、0、1、2，所以 y=0、-3、-4、-3、0。",
+        "座標為 (-3,0)、(-2,-3)、(-1,-4)、(0,-3)、(1,0)。",
+        "頂點 (-1,-4)，對稱軸 x=-1，開口向上；依一致刻度標點後畫平滑拋物線。"
+      ],
+      "alternativeSolutions": [
+        "可先由 y=x² 向左 1、下 4 平移，再核對五點。"
+      ],
+      "reasoningSteps": [
+        "距軸 x=-1 的距離為 2、1、0、1、2，所以 y=0、-3、-4、-3、0。",
+        "座標為 (-3,0)、(-2,-3)、(-1,-4)、(0,-3)、(1,0)。",
+        "頂點 (-1,-4)，對稱軸 x=-1，開口向上；依一致刻度標點後畫平滑拋物線。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "五點、頂點、軸、方向與平滑作圖說明全部正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "最多一個點算錯，且頂點、軸、方向仍正確。"
+        },
+        {
+          "score": 1,
+          "criteria": "至少三點正確或能正確指出頂點與軸。"
+        },
+        {
+          "score": 0,
+          "criteria": "值表多數錯、軸寫 y=-1、且以折線作圖。"
+        }
+      ],
+      "partialCreditRules": [
+        "最多一個點算錯，且頂點、軸、方向仍正確。",
+        "至少三點正確或能正確指出頂點與軸。"
+      ],
+      "followThroughPolicy": "若一側算錯但另一側正確使用對稱複製，可給對稱方法分；作圖說明與數值分開評量。",
+      "unitAndNotationRules": [
+        "座標先 x 後 y。",
+        "本題無物理單位。",
+        "軸寫 x=-1。"
+      ],
+      "answerOnlyPolicy": "只列五點未說明作圖關鍵，最高 2 分。",
+      "commonErrors": [
+        "x+1 的水平符號讀反。",
+        "把 (x+1)²-4 算成 x²+1-4。",
+        "用折線連點。"
+      ],
+      "independentReview": {
+        "derivedResult": "五點 0,-3,-4,-3,0；頂點 (-1,-4)、軸 x=-1、向上且平滑。",
+        "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "8be85db98dd89f36cf995f3514fa2572641ace3ecd110dfd42f1beb221fecc3c"
+    },
+    {
+      "questionId": "u21-s008-cr002",
+      "unitId": "u21",
+      "numericUnitId": 21,
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "difficulty": "advanced",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecId": null,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": {
+        "replaceMatchingLegacyRecordOnlyAtFinalIntegration": true,
+        "legacyContentImported": false,
+        "legacySkillReferenceOnly": "quadratic-table-graph"
+      },
+      "prompt": "某二次函數值表的部分資料為 f(0)=14、f(2)=6、f(4)=2、f(6)=6。已知表格正確且函數對稱。求對稱軸與 f(8)，並說明如何用這些點判斷開口方向。",
+      "givenConditions": [
+        "f(2)=f(6)",
+        "f(4) 位於兩者中間"
+      ],
+      "target": "由不完整表格推軸、補值與方向",
+      "requiredWork": [
+        "由等高輸入 2、6 求軸。",
+        "找 x=8 的鏡射輸入。",
+        "比較軸上值與兩側值判方向。"
+      ],
+      "fullCreditSolution": [
+        "對稱軸 x=(2+6)/2=4。",
+        "x=8 關於 x=4 的鏡射為 x=0，所以 f(8)=f(0)=14。",
+        "f(4)=2 小於 f(2)=f(6)=6，也小於 f(0)=f(8)=14，中央為最低點，故開口向上。"
+      ],
+      "alternativeSolutions": [
+        "也可用輸入序列 0,2,4,6,8 得對稱值 14,6,2,6,14 直接判斷。"
+      ],
+      "reasoningSteps": [
+        "對稱軸 x=(2+6)/2=4。",
+        "x=8 關於 x=4 的鏡射為 x=0，所以 f(8)=f(0)=14。",
+        "f(4)=2 小於 f(2)=f(6)=6，也小於 f(0)=f(8)=14，中央為最低點，故開口向上。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "軸 x=4、f(8)=14、向上三項全對，且有中點、鏡射與高度比較理由。"
+        },
+        {
+          "score": 2,
+          "criteria": "三項中兩項完整正確，或只有一個鏡射算術錯。"
+        },
+        {
+          "score": 1,
+          "criteria": "能由 f(2)=f(6) 得 x=4，或知道 f(8)=f(0)。"
+        },
+        {
+          "score": 0,
+          "criteria": "把軸寫 y=4、f(8) 任意外推等差，且無對稱理由。"
+        }
+      ],
+      "partialCreditRules": [
+        "三項中兩項完整正確，或只有一個鏡射算術錯。",
+        "能由 f(2)=f(6) 得 x=4，或知道 f(8)=f(0)。"
+      ],
+      "followThroughPolicy": "若軸算錯但後續鏡射與方向依自得軸一致，可給方法追蹤分；方向需有中央與兩側比較。",
+      "unitAndNotationRules": [
+        "對稱軸寫 x=4。",
+        "函數值無物理單位。"
+      ],
+      "answerOnlyPolicy": "只寫三個結論無理由，最高 2 分。",
+      "commonErrors": [
+        "把相鄰 y 差當固定而算 f(8)=10。",
+        "把 8 的鏡射算成 -8。",
+        "中央較小卻判向下。"
+      ],
+      "independentReview": {
+        "derivedResult": "軸 x=4，f(8)=14，中央最低所以開口向上。",
+        "ambiguity": "條件、定義域與所求均明確；依列出的計算可得到唯一評分基準。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentSha256": "6a98bdfcd4e8a854f29fd7fbca4960adeabd1482e96f41a1cea7ae54327c6b5d"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u21-fig-s008-01",
+      "drawingSpecId": "u21-draw-s008-01",
+      "unitId": "u21",
+      "topicId": "u21-graphs",
+      "skillId": "quadratic-table-graph",
+      "title": "對稱值表作圖",
+      "svgPath": "figures/u21/u21-fig-s008-01.svg",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "altText": "本圖以高對比線條與文字標籤呈現：以 x=-3 到 1 的對稱值表標點，畫出頂點 (-1,-4) 的平滑拋物線。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 720,
+          "height": 420
+        },
+        "viewBox": "0 0 720 420",
+        "coordinateSystem": "SVG 原點在左上；所有座標與曲線位置依本圖明列的像素配置。",
+        "elements": "本技能專用的座標軸、拋物線、標記點、文字與必要輔助線，詳見 SVG 元素。",
+        "labels": "所有關鍵方程式、頂點、對稱軸、端點或表格欄位直接以文字標示。",
+        "tickMarks": "圖形以關鍵座標文字為主；未標一般刻度時不得由外觀估讀其他座標。",
+        "units": "情境圖依文字標示秒、公尺或平方單位；純座標圖使用無單位座標。",
+        "lineRules": "實線為函數曲線或座標軸，虛線為對稱軸、限制邊界或比較曲線；用途由文字同步說明。",
+        "scalePolicy": "同一圖內比較寬窄時使用同一比例；未標示的距離不得作精確數值推論。",
+        "notToScaleWarning": "除明列座標外，不可只憑圖形外觀推算未標示數值。",
+        "mobileConstraints": "最小主要字級 16 px，關鍵線寬至少 2 px，640 至 760 寬 viewBox 可等比例縮放。",
+        "answerLeakageControl": "圖形只呈現講義所需結構或題幹已給資訊；不得把未給的選擇題答案直接標成結論。"
+      },
+      "svgAssertions": [
+        "<title>",
+        "<desc>",
+        "role=\"img\"",
+        "stroke=\"black\""
+      ],
+      "geometryAssertions": [
+        "SVG viewBox 與 width、height 均存在。",
+        "關鍵點與輔助線座標在畫布範圍內。",
+        "文字標籤不依賴顏色區分。"
+      ],
+      "figureReview": {
+        "mathematicalAccuracy": "pass",
+        "mobileReadability": "pass",
+        "answerLeakage": "pass",
+        "manualVisualInspection": "pass",
+        "reviewNote": "人工檢視 u21-fig-s008-01：以 x=-3 到 1 的對稱值表標點，畫出頂點 (-1,-4) 的平滑拋物線。 已核對曲線方向、標記座標、虛實線語意、文字可讀性與畫布邊界，未以未標刻度洩漏額外答案。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "contentSha256": "5e435d6f97766881dfafc899c9981c8d4997affc0e011e90950f67b7d5af7332"
+    }
+  ],
+  "sourceBatch": "022-u21-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/022-u21-complete/units/u21/s008"
+}

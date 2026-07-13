@@ -1,0 +1,1382 @@
+{
+  "slot": "s011",
+  "skillId": "coordinate-distance-pythagorean",
+  "topicId": "u11-pythagorean",
+  "title": "坐標平面距離：由水平差與垂直差求斜邊",
+  "lecture": {
+    "lectureId": "u11-s011-lecture-r1",
+    "unitId": "u11",
+    "numericUnitId": 11,
+    "topicId": "u11-pythagorean",
+    "skillId": "coordinate-distance-pythagorean",
+    "lockedSkillOrder": 11,
+    "lockedTitle": "坐標平面距離",
+    "title": "坐標平面距離：由水平差與垂直差求斜邊",
+    "audience": "臺灣國中零基礎至會考滿分",
+    "gradeBand": "8上",
+    "sourceScope": "CAP_108_JUNIOR_MATH",
+    "capBoundary": "邊長取正值；不含複數與高中延伸。",
+    "reviewStatus": "independently-reviewed",
+    "learningOutcomes": [
+      "能求兩點水平差與垂直差",
+      "能由畢氏定理推得距離公式",
+      "能處理負坐標、同水平線與比例尺"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "pythagorean-application",
+        "requiredLevel": "能使用前一技能「畢氏定理應用」的核心方法，並能說明其適用條件。"
+      }
+    ],
+    "glossary": [
+      {
+        "term": "水平差",
+        "definition": "兩點x坐標之差的絕對值。"
+      },
+      {
+        "term": "垂直差",
+        "definition": "兩點y坐標之差的絕對值。"
+      },
+      {
+        "term": "兩點距離",
+        "definition": "連接兩點的線段長。"
+      },
+      {
+        "term": "坐標單位",
+        "definition": "坐標每一格代表的實際長度。"
+      }
+    ],
+    "notation": [
+      {
+        "symbol": "Δx=x₂-x₁",
+        "meaning": "水平有向差。"
+      },
+      {
+        "symbol": "Δy=y₂-y₁",
+        "meaning": "垂直有向差。"
+      },
+      {
+        "symbol": "d=√((Δx)²+(Δy)²)",
+        "meaning": "兩點直線距離。"
+      }
+    ],
+    "conceptNarrative": [
+      "兩點與水平、垂直投影形成直角三角形。",
+      "座標差可為負，但平方後不影響距離；也可先取絕對值。",
+      "同x或同y是特殊情況，可直接用單一坐標差。",
+      "若每格代表實際長度，先求座標單位距離，再乘比例。",
+      "反求未知坐標時可能有兩個方向的解。"
+    ],
+    "formalDefinitions": [
+      {
+        "name": "距離公式",
+        "statement": "平面兩點P(x₁,y₁)、Q(x₂,y₂)距離為√((x₂-x₁)²+(y₂-y₁)²)。"
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "d²=(x₂-x₁)²+(y₂-y₁)²",
+        "conditions": [
+          "歐氏平面直角坐標。"
+        ],
+        "meaning": "水平差與垂直差為兩股。"
+      }
+    ],
+    "nonApplicableCases": [
+      "不能直接把四個坐標相加。",
+      "負坐標相減要加括號。",
+      "折線格數不是直線距離。",
+      "比例尺不能在計算後忘記。"
+    ],
+    "method": [
+      {
+        "step": 1,
+        "instruction": "寫出兩點坐標並固定次序。",
+        "check": "x對x、y對y。"
+      },
+      {
+        "step": 2,
+        "instruction": "計算Δx與Δy。",
+        "check": "減負數要用括號。"
+      },
+      {
+        "step": 3,
+        "instruction": "平方兩差並相加。",
+        "check": "符號平方後消失。"
+      },
+      {
+        "step": 4,
+        "instruction": "開正平方根。",
+        "check": "距離非負。"
+      },
+      {
+        "step": 5,
+        "instruction": "套用坐標尺度。",
+        "check": "轉成實際單位與精度。"
+      }
+    ],
+    "workedExamples": [
+      {
+        "exampleId": "L1",
+        "prompt": "P(2,3)、Q(8,11)。",
+        "solutionSteps": [
+          "Δx=6，Δy=8。"
+        ],
+        "answer": "距離10。"
+      },
+      {
+        "exampleId": "L2",
+        "prompt": "P(-4,1)、Q(2,1)。",
+        "solutionSteps": [
+          "同水平線。",
+          "|2-(-4)|。"
+        ],
+        "answer": "6。"
+      },
+      {
+        "exampleId": "L3",
+        "prompt": "P(0,0)、Q(a,4)距離5且a>0。",
+        "solutionSteps": [
+          "a²+16=25。"
+        ],
+        "answer": "a=3。"
+      },
+      {
+        "exampleId": "L4",
+        "prompt": "每格5公尺，圖上差5格與12格。",
+        "solutionSteps": [
+          "圖上距離13格。",
+          "乘5。"
+        ],
+        "answer": "65公尺。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "(-2)到4的差是2。",
+        "why": "減負數錯誤。",
+        "correction": "4-(-2)=6。"
+      },
+      {
+        "mistake": "距離=|Δx|+|Δy|。",
+        "why": "這是沿格線折線距離。",
+        "correction": "直線距離用平方和。"
+      },
+      {
+        "mistake": "算到d²=100答100。",
+        "why": "漏開平方。",
+        "correction": "d=10。"
+      },
+      {
+        "mistake": "反求坐標只留正解。",
+        "why": "坐標可能在兩側。",
+        "correction": "依條件保留±。"
+      },
+      {
+        "mistake": "同一坐標也平方全部數值。",
+        "why": "把位置當差。",
+        "correction": "先計算坐標差。"
+      },
+      {
+        "mistake": "忘記每格代表10公尺。",
+        "why": "只答圖上單位。",
+        "correction": "最後乘比例尺。"
+      }
+    ],
+    "selfCheck": [
+      {
+        "checkId": "SC1",
+        "prompt": "用一句話說明本技能最核心的數學關係。",
+        "answer": "坐標距離是水平差與垂直差形成的斜邊。"
+      },
+      {
+        "checkId": "SC2",
+        "prompt": "使用本技能前最先要確認的條件是什麼？",
+        "answer": "寫出兩點坐標並固定次序。"
+      },
+      {
+        "checkId": "SC3",
+        "prompt": "指出一個最常見的錯誤並給出修正。",
+        "answer": "(-2)到4的差是2。；修正：4-(-2)=6。"
+      },
+      {
+        "checkId": "SC4",
+        "prompt": "完成答案後要做哪一項檢查？",
+        "answer": "比例與單位換算完成嗎？"
+      }
+    ],
+    "summary": [
+      "坐標距離是水平差與垂直差形成的斜邊。",
+      "先求座標單位，再換實際尺度。"
+    ],
+    "connections": {
+      "previous": "需要 s010 的直角模型與整數坐標運算。",
+      "next": [
+        "s012 將由距離與一個差反求另一個差。",
+        "s016 會整合地圖比例與近似。"
+      ]
+    },
+    "figureReferences": [
+      "fig-u11-s011-coordinate"
+    ],
+    "accessibilityNotes": [
+      "坐標平面上A在原點、B在(3,4)，虛線畫出水平差3與垂直差4，實線連接AB。"
+    ],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u11-s011-v001",
+        "u11-s011-v002",
+        "u11-s011-v003",
+        "u11-s011-v004",
+        "u11-s011-v005",
+        "u11-s011-v006",
+        "u11-s011-v007",
+        "u11-s011-v008",
+        "u11-s011-v009",
+        "u11-s011-v010",
+        "u11-s011-v011",
+        "u11-s011-v012"
+      ],
+      "constructedResponseIds": [
+        "u11-s011-cr001",
+        "u11-s011-cr002"
+      ]
+    },
+    "replacementPolicy": {
+      "replacesLegacyOnlyAtFinalIntegration": true,
+      "productionActivationAllowed": false
+    },
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "noTemplateDeclaration": true,
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewedAt": "2026-07-12",
+      "reviewer": "CHATGPT_AUTHOR_AND_REVIEWER",
+      "reviewNote": "逐段重算「坐標平面距離」的四個示例，確認定義先於公式、每個符號已在使用前說明，且錯誤分析聚焦於「(-2)到4的差是2。」等本技能特有問題；內容未借用舊題庫。"
+    },
+    "contentSha256": "c50d22c5acfd90efa2fe8e51d8a2ab63c5123fcd6320e87b4c3756191775612f"
+  },
+  "mcQuestions": [
+    {
+      "questionId": "u11-s011-v001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "figure",
+      "figureId": "fig-u11-s011-coordinate",
+      "drawingSpecReference": "units/u11/s011/drawing-specs.jsonl#fig-u11-s011-coordinate",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "坐標平面上 A(0,0)、B(3,4)，AB 長為何？",
+      "givenConditions": [
+        "兩點坐標已知。"
+      ],
+      "target": "求兩點距離。",
+      "choices": [
+        "7",
+        "1",
+        "5",
+        "25"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：以兩點與投影形成3-4-5直角三角形。 詳算檢查：水平差3、垂直差4，距離=√(3²+4²)=5。 因此結果為「5」。",
+      "explanation": "水平差3、垂直差4，距離=√(3²+4²)=5。",
+      "steps": [
+        "整理條件：兩點坐標已知。",
+        "獨立推導：不參照選項，從題幹條件重新計算：以兩點與投影形成3-4-5直角三角形。 詳算檢查：水平差3、垂直差4，距離=√(3²+4²)=5。 因此結果為「5」。",
+        "核對目標：答案「5」確實回應「求兩點距離。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "把水平差與垂直差相加。"
+        },
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "把兩差相減。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "此選項符合目標「求兩點距離。」；水平差3、垂直差4，距離=√(3²+4²)=5。"
+        },
+        {
+          "choice": "25",
+          "truth": false,
+          "reason": "漏開平方。"
+        }
+      ],
+      "misconceptionTarget": "直接使用座標和或差。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "坐標未標單位，答案為座標單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "原點出發的基本距離。；具體任務是「求兩點距離。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3cd97a678f54b1b608722de358450884ff3d5f59d2c6ab234b4762ad84432c8d"
+    },
+    {
+      "questionId": "u11-s011-v002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "兩點 A(2,1) 與 B(2,8) 都在直線 x=2 上，線段 AB 的長度是多少？",
+      "givenConditions": [
+        "兩點同 x 坐標，只需處理垂直坐標差。"
+      ],
+      "target": "求同垂直線上兩點的距離。",
+      "choices": [
+        "10",
+        "7",
+        "6",
+        "√53"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：水平差0，垂直差7，√(0²+7²)=7。 詳算檢查：兩點x相同，是垂直線段，距離=|8-1|=7。 因此結果為「7」。",
+      "explanation": "兩點x相同，是垂直線段，距離=|8-1|=7。",
+      "steps": [
+        "整理條件：兩點同 x 坐標，只需處理垂直坐標差。",
+        "獨立推導：不參照選項，從題幹條件重新計算：水平差0，垂直差7，√(0²+7²)=7。 詳算檢查：兩點x相同，是垂直線段，距離=|8-1|=7。 因此結果為「7」。",
+        "核對目標：答案「7」確實回應「求同垂直線上兩點的距離。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "把y坐標相加。"
+        },
+        {
+          "choice": "7",
+          "truth": true,
+          "reason": "此選項符合目標「求同垂直線上兩點的距離。」；兩點x相同，是垂直線段，距離=|8-1|=7。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "差值算錯。"
+        },
+        {
+          "choice": "√53",
+          "truth": false,
+          "reason": "不必要地平方完整坐標。"
+        }
+      ],
+      "misconceptionTarget": "公式套用時把坐標本身平方。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "特殊情況可直接作差。；具體任務是「求同垂直線上兩點的距離。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3da915dfe1b0f39dfabdb6798d9df42de9241c62b03d0557110afe9f153a9ab2"
+    },
+    {
+      "questionId": "u11-s011-v003",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "basic",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "在水平線 y=5 上，A 的 x 坐標為 -3，B 的 x 坐標為 4。A、B 相距多少？",
+      "givenConditions": [
+        "兩點同 y 坐標，且水平坐標跨過0。"
+      ],
+      "target": "求跨越原點的水平距離。",
+      "choices": [
+        "1",
+        "9",
+        "√41",
+        "7"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：水平差7、垂直差0。 詳算檢查：y相同，水平距離=|4-(-3)|=7。 因此結果為「7」。",
+      "explanation": "y相同，水平距離=|4-(-3)|=7。",
+      "steps": [
+        "整理條件：兩點同 y 坐標，且水平坐標跨過0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：水平差7、垂直差0。 詳算檢查：y相同，水平距離=|4-(-3)|=7。 因此結果為「7」。",
+        "核對目標：答案「7」確實回應「求跨越原點的水平距離。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1",
+          "truth": false,
+          "reason": "忽略負號錯算4-3。"
+        },
+        {
+          "choice": "9",
+          "truth": false,
+          "reason": "把x坐標絕對值相加再加錯。"
+        },
+        {
+          "choice": "√41",
+          "truth": false,
+          "reason": "把y坐標也算入。"
+        },
+        {
+          "choice": "7",
+          "truth": true,
+          "reason": "此選項符合目標「求跨越原點的水平距離。」；y相同，水平距離=|4-(-3)|=7。"
+        }
+      ],
+      "misconceptionTarget": "負坐標相減時符號錯誤。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 75,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "考查負數座標差。；具體任務是「求跨越原點的水平距離。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "basic"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "ee7678e8e52363a256ca4607f3165541d7d397d736163043bebe188795a1009a"
+    },
+    {
+      "questionId": "u11-s011-v004",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "A(-2,1)、B(4,9) 的距離為何？",
+      "givenConditions": [
+        "兩點任意位置。"
+      ],
+      "target": "求距離。",
+      "choices": [
+        "10",
+        "14",
+        "√20",
+        "100"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：正確計算4-(-2)=6與9-1=8。 詳算檢查：Δx=6、Δy=8，距離=√(36+64)=10。 因此結果為「10」。",
+      "explanation": "Δx=6、Δy=8，距離=√(36+64)=10。",
+      "steps": [
+        "整理條件：兩點任意位置。",
+        "獨立推導：不參照選項，從題幹條件重新計算：正確計算4-(-2)=6與9-1=8。 詳算檢查：Δx=6、Δy=8，距離=√(36+64)=10。 因此結果為「10」。",
+        "核對目標：答案「10」確實回應「求距離。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10",
+          "truth": true,
+          "reason": "此選項符合目標「求距離。」；Δx=6、Δy=8，距離=√(36+64)=10。"
+        },
+        {
+          "choice": "14",
+          "truth": false,
+          "reason": "直接相加座標差6+8。"
+        },
+        {
+          "choice": "√20",
+          "truth": false,
+          "reason": "只把差相加後開根。"
+        },
+        {
+          "choice": "100",
+          "truth": false,
+          "reason": "漏開平方。"
+        }
+      ],
+      "misconceptionTarget": "負號造成水平差錯誤。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "含負坐標與6-8-10數組。；具體任務是「求距離。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "91b1a62afc92c10149c8010293320b783c324d5066da444085d525d656eed809"
+    },
+    {
+      "questionId": "u11-s011-v005",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "由 A(1,-3) 直線移到 B(5,0)，水平位移為4、垂直位移為3。這段直線長多少？",
+      "givenConditions": [
+        "水平與垂直位移已整理為4與3。"
+      ],
+      "target": "由兩個位移分量求直線距離。",
+      "choices": [
+        "5",
+        "7",
+        "√13",
+        "25"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：垂直差0-(-3)=3。 詳算檢查：Δx=4、Δy=3，距離=5。 因此結果為「5」。",
+      "explanation": "Δx=4、Δy=3，距離=5。",
+      "steps": [
+        "整理條件：水平與垂直位移已整理為4與3。",
+        "獨立推導：不參照選項，從題幹條件重新計算：垂直差0-(-3)=3。 詳算檢查：Δx=4、Δy=3，距離=5。 因此結果為「5」。",
+        "核對目標：答案「5」確實回應「由兩個位移分量求直線距離。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "此選項符合目標「由兩個位移分量求直線距離。」；Δx=4、Δy=3，距離=5。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "兩差直接相加。"
+        },
+        {
+          "choice": "√13",
+          "truth": false,
+          "reason": "水平差錯算2。"
+        },
+        {
+          "choice": "25",
+          "truth": false,
+          "reason": "漏開根。"
+        }
+      ],
+      "misconceptionTarget": "減負數時出錯。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需正確處理負y。；具體任務是「由兩個位移分量求直線距離。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "12b2b2e9a56670ac476597178feed0ed8c02cf95552aa476207b1d0d93d45a17"
+    },
+    {
+      "questionId": "u11-s011-v006",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "standard",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "P(-1,-1)、Q(2,3) 的距離為何？",
+      "givenConditions": [
+        "兩點跨象限。"
+      ],
+      "target": "求直線距離。",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：使用3-4-5直角三角形。 詳算檢查：Δx=3、Δy=4，距離5。 因此結果為「5」。",
+      "explanation": "Δx=3、Δy=4，距離5。",
+      "steps": [
+        "整理條件：兩點跨象限。",
+        "獨立推導：不參照選項，從題幹條件重新計算：使用3-4-5直角三角形。 詳算檢查：Δx=3、Δy=4，距離5。 因此結果為「5」。",
+        "核對目標：答案「5」確實回應「求直線距離。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "3",
+          "truth": false,
+          "reason": "只取水平差。"
+        },
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "只取垂直差。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "此選項符合目標「求直線距離。」；Δx=3、Δy=4，距離5。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "兩差相加。"
+        }
+      ],
+      "misconceptionTarget": "把曼哈頓距離當直線距離。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 105,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "標準跨象限計算。；具體任務是「求直線距離。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "standard"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "830e633cf554ce6c2c2ea23bb78a5d638ae4a7573b3bba44c207d1006454dde8"
+    },
+    {
+      "questionId": "u11-s011-v007",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "點 P(0,0) 到 Q(5,k) 的距離為 13，則 k 可能為何？",
+      "givenConditions": [
+        "k為實數坐標。"
+      ],
+      "target": "由距離反求坐標。",
+      "choices": [
+        "只有12",
+        "只有-12",
+        "±13",
+        "12 或 -12"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：距離方程保留k的正負兩解。 詳算檢查：25+k²=169，k²=144，所以k=±12。 因此結果為「12 或 -12」。",
+      "explanation": "25+k²=169，k²=144，所以k=±12。",
+      "steps": [
+        "整理條件：k為實數坐標。",
+        "獨立推導：不參照選項，從題幹條件重新計算：距離方程保留k的正負兩解。 詳算檢查：25+k²=169，k²=144，所以k=±12。 因此結果為「12 或 -12」。",
+        "核對目標：答案「12 或 -12」確實回應「由距離反求坐標。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只有12",
+          "truth": false,
+          "reason": "漏掉垂直差可正可負。"
+        },
+        {
+          "choice": "只有-12",
+          "truth": false,
+          "reason": "漏掉正值。"
+        },
+        {
+          "choice": "±13",
+          "truth": false,
+          "reason": "未扣除水平差平方。"
+        },
+        {
+          "choice": "12 或 -12",
+          "truth": true,
+          "reason": "此選項符合目標「由距離反求坐標。」；25+k²=169，k²=144，所以k=±12。"
+        }
+      ],
+      "misconceptionTarget": "坐標變數不是長度，不能只取正根。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需區分坐標可負與距離取正。；具體任務是「由距離反求坐標。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "5f831bb9a01d017868f5d14f06477e7d52ea17d845ff382a3e6394f272f345c3"
+    },
+    {
+      "questionId": "u11-s011-v008",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "A(1,2)、B(x,2) 的距離為 6，則 x 可能為何？",
+      "givenConditions": [
+        "兩點y相同。"
+      ],
+      "target": "反求水平坐標。",
+      "choices": [
+        "只有7",
+        "7 或 -5",
+        "6或-6",
+        "8或-4"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：同水平線，距離條件化為絕對值方程。 詳算檢查：|x-1|=6，所以x=1±6，即7或-5。 因此結果為「7 或 -5」。",
+      "explanation": "|x-1|=6，所以x=1±6，即7或-5。",
+      "steps": [
+        "整理條件：兩點y相同。",
+        "獨立推導：不參照選項，從題幹條件重新計算：同水平線，距離條件化為絕對值方程。 詳算檢查：|x-1|=6，所以x=1±6，即7或-5。 因此結果為「7 或 -5」。",
+        "核對目標：答案「7 或 -5」確實回應「反求水平坐標。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "只有7",
+          "truth": false,
+          "reason": "漏掉A左側的解。"
+        },
+        {
+          "choice": "7 或 -5",
+          "truth": true,
+          "reason": "此選項符合目標「反求水平坐標。」；|x-1|=6，所以x=1±6，即7或-5。"
+        },
+        {
+          "choice": "6或-6",
+          "truth": false,
+          "reason": "忘記以1為中心。"
+        },
+        {
+          "choice": "8或-4",
+          "truth": false,
+          "reason": "距離算成7。"
+        }
+      ],
+      "misconceptionTarget": "把距離直接當x坐標。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "需處理兩個方向的解。；具體任務是「反求水平坐標。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "f7994f2af55b6f29dcc917475e17bac10f7c1f949fdc4c84905c2ad89451ffca"
+    },
+    {
+      "questionId": "u11-s011-v009",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "advanced",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "點 R(a,0) 到 S(0,8) 的距離為 10，且 a>0。a 為何？",
+      "givenConditions": [
+        "a>0。"
+      ],
+      "target": "求軸上坐標。",
+      "choices": [
+        "-6",
+        "6",
+        "2",
+        "18"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照選項，從題幹條件重新計算：坐標差形成兩股a與8。 詳算檢查：a²+8²=10²，a²=36；由a>0得a=6。 因此結果為「6」。",
+      "explanation": "a²+8²=10²，a²=36；由a>0得a=6。",
+      "steps": [
+        "整理條件：a>0。",
+        "獨立推導：不參照選項，從題幹條件重新計算：坐標差形成兩股a與8。 詳算檢查：a²+8²=10²，a²=36；由a>0得a=6。 因此結果為「6」。",
+        "核對目標：答案「6」確實回應「求軸上坐標。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "-6",
+          "truth": false,
+          "reason": "已知a>0。"
+        },
+        {
+          "choice": "6",
+          "truth": true,
+          "reason": "此選項符合目標「求軸上坐標。」；a²+8²=10²，a²=36；由a>0得a=6。"
+        },
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "直接相減10-8。"
+        },
+        {
+          "choice": "18",
+          "truth": false,
+          "reason": "直接相加。"
+        }
+      ],
+      "misconceptionTarget": "忽略a的正值條件或直接做長度差。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 150,
+      "unitAndRoundingCheck": "無單位衝突；若有量值已在選項保留題目單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "距離方程加條件篩選。；具體任務是「求軸上坐標。」。",
+      "literacyContextNecessity": null,
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "advanced"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "95c6c4b697b3f7e5e408c60ce2ed1053b7e5251d97dec2422122d5be40f963c3"
+    },
+    {
+      "questionId": "u11-s011-v010",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "校園平面圖以 1 格代表 10 公尺。圖上醫務室在 (1,2)，操場入口在 (4,6)。實際直線距離是多少？",
+      "givenConditions": [
+        "每格10公尺。"
+      ],
+      "target": "求實際直線距離。",
+      "choices": [
+        "5公尺",
+        "70公尺",
+        "500公尺",
+        "50 公尺"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先用座標距離求格數，再套比例尺。 詳算檢查：圖上差為3格與4格，直線距離5格；每格10公尺，所以50公尺。 因此結果為「50 公尺」。",
+      "explanation": "圖上差為3格與4格，直線距離5格；每格10公尺，所以50公尺。",
+      "steps": [
+        "整理條件：每格10公尺。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先用座標距離求格數，再套比例尺。 詳算檢查：圖上差為3格與4格，直線距離5格；每格10公尺，所以50公尺。 因此結果為「50 公尺」。",
+        "核對目標：答案「50 公尺」確實回應「求實際直線距離。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5公尺",
+          "truth": false,
+          "reason": "只算圖上格數未換比例。"
+        },
+        {
+          "choice": "70公尺",
+          "truth": false,
+          "reason": "把水平垂直距離相加再換算。"
+        },
+        {
+          "choice": "500公尺",
+          "truth": false,
+          "reason": "比例多乘10。"
+        },
+        {
+          "choice": "50 公尺",
+          "truth": true,
+          "reason": "此選項符合目標「求實際直線距離。」；圖上差為3格與4格，直線距離5格；每格10公尺，所以50公尺。"
+        }
+      ],
+      "misconceptionTarget": "忘記比例尺或使用折線距離。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "5格×10公尺/格=50公尺。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "兩階段座標與比例換算。；具體任務是「求實際直線距離。」。",
+      "literacyContextNecessity": "比例尺是把圖上距離轉成實際距離的必要資訊。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "868cd9f0f39d2f2f0d4e7468344bb9e06150ea96c34ddc8160a3e3f20eb0f625"
+    },
+    {
+      "questionId": "u11-s011-v011",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "機器人由座標 (−2,−1) 直線移到 (4,7)，每座標單位為 0.5 公尺。移動距離多少？",
+      "givenConditions": [
+        "每單位0.5公尺。"
+      ],
+      "target": "求機器人實際直線路程。",
+      "choices": [
+        "5 公尺",
+        "10公尺",
+        "7公尺",
+        "50公尺"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先求6-8-10，再乘單位長度。 詳算檢查：座標差6與8，圖上距離10單位，實際=10×0.5=5公尺。 因此結果為「5 公尺」。",
+      "explanation": "座標差6與8，圖上距離10單位，實際=10×0.5=5公尺。",
+      "steps": [
+        "整理條件：每單位0.5公尺。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先求6-8-10，再乘單位長度。 詳算檢查：座標差6與8，圖上距離10單位，實際=10×0.5=5公尺。 因此結果為「5 公尺」。",
+        "核對目標：答案「5 公尺」確實回應「求機器人實際直線路程。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "5 公尺",
+          "truth": true,
+          "reason": "此選項符合目標「求機器人實際直線路程。」；座標差6與8，圖上距離10單位，實際=10×0.5=5公尺。"
+        },
+        {
+          "choice": "10公尺",
+          "truth": false,
+          "reason": "忘記每單位只有0.5公尺。"
+        },
+        {
+          "choice": "7公尺",
+          "truth": false,
+          "reason": "使用座標差相加後換算錯。"
+        },
+        {
+          "choice": "50公尺",
+          "truth": false,
+          "reason": "比例換算多十倍。"
+        }
+      ],
+      "misconceptionTarget": "把座標單位當1公尺。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "座標單位乘0.5公尺/單位。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "含負坐標與尺度換算。；具體任務是「求機器人實際直線路程。」。",
+      "literacyContextNecessity": "機器人的實際距離由座標尺度決定。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "832155269fef9b24f8cdcaa2beb931cd18bb30cf137f9a771b7ad86df3b14470"
+    },
+    {
+      "questionId": "u11-s011-v012",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "literacy",
+      "type": "mc",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecReference": null,
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "text": "地圖上兩站座標為 A(0,0)、B(7,1)，每單位 1 公里。規劃系統顯示直線距離到小數第一位，應顯示多少？",
+      "givenConditions": [
+        "每單位1公里，取一位小數。"
+      ],
+      "target": "求導航顯示值。",
+      "choices": [
+        "7.0公里",
+        "8.0公里",
+        "7.1 公里",
+        "50.0公里"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照選項，從題幹條件重新計算：先求精確根式，再按顯示規格四捨五入。 詳算檢查：距離=√(7²+1²)=√50≈7.071，顯示7.1公里。 因此結果為「7.1 公里」。",
+      "explanation": "距離=√(7²+1²)=√50≈7.071，顯示7.1公里。",
+      "steps": [
+        "整理條件：每單位1公里，取一位小數。",
+        "獨立推導：不參照選項，從題幹條件重新計算：先求精確根式，再按顯示規格四捨五入。 詳算檢查：距離=√(7²+1²)=√50≈7.071，顯示7.1公里。 因此結果為「7.1 公里」。",
+        "核對目標：答案「7.1 公里」確實回應「求導航顯示值。」。"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "7.0公里",
+          "truth": false,
+          "reason": "√50約7.071，四捨五入應7.1。"
+        },
+        {
+          "choice": "8.0公里",
+          "truth": false,
+          "reason": "把差7與1相加。"
+        },
+        {
+          "choice": "7.1 公里",
+          "truth": true,
+          "reason": "此選項符合目標「求導航顯示值。」；距離=√(7²+1²)=√50≈7.071，顯示7.1公里。"
+        },
+        {
+          "choice": "50.0公里",
+          "truth": false,
+          "reason": "漏開平方。"
+        }
+      ],
+      "misconceptionTarget": "取整或把平方和直接當距離。",
+      "prerequisiteCheck": "需能使用先備技能 pythagorean-application，本題未要求未來單元知識。",
+      "estimatedTimeSec": 180,
+      "unitAndRoundingCheck": "座標單位等於1公里。",
+      "ambiguityAndBoundaryAudit": "題意限定於實數與國中會考範圍，條件足以得到唯一答案。",
+      "difficultyReason": "整合座標距離與估算。；具體任務是「求導航顯示值。」。",
+      "literacyContextNecessity": "顯示精度要求決定最後形式。",
+      "tags": [
+        "數與量",
+        "平方根與畢氏定理",
+        "坐標平面距離",
+        "literacy"
+      ],
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "oldProductionRuntimeModified": false
+      },
+      "reviewStatus": "independently-reviewed",
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "3df94ee0d4335c511b54b8048d71c19e921a755e1693817812123fd8668d6f0f"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "questionId": "u11-s011-cr001",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "求 A(-3,2) 與 B(5,8) 的距離，寫出坐標差。",
+      "requiredWork": [
+        "計算Δx與Δy",
+        "套距離公式",
+        "化簡"
+      ],
+      "fullCreditSolution": [
+        "Δx=5-(-3)=8。",
+        "Δy=8-2=6。",
+        "距離=√(8²+6²)=√100=10。"
+      ],
+      "standardAnswer": "10 個座標單位。",
+      "alternativeMethod": "以絕對差8與6建立6-8-10直角三角形。",
+      "reasoningSteps": [
+        "Δx=5-(-3)=8。",
+        "Δy=8-2=6。",
+        "距離=√(8²+6²)=√100=10。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：坐標差8與6；平方和100；距離10，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：坐標差8與6；平方和100；距離10。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「坐標差8與6」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「坐標差8與6」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「坐標差8與6」但後續失誤，可依證據給1分。",
+        "若完成「坐標差8與6」與「平方和100」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "把水平差算2",
+        "使用8+6=14"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "10 個座標單位。",
+        "recomputation": "Δx=5-(-3)=8。；Δy=8-2=6。；距離=√(8²+6²)=√100=10。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「距離10」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "a0a0493ed7447f31ecac1d117569775f0b7b5bff1860193b2da59841cb0d395d"
+    },
+    {
+      "questionId": "u11-s011-cr002",
+      "unitId": "u11",
+      "numericUnitId": 11,
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "lockedSkillOrder": 11,
+      "difficulty": "constructed-response",
+      "type": "constructed-response",
+      "prompt": "點 P(1,4) 到 Q(x,4) 的距離為 9。求所有可能的 x。",
+      "requiredWork": [
+        "利用同水平線",
+        "建立絕對值方程",
+        "列雙解"
+      ],
+      "fullCreditSolution": [
+        "兩點y相同，距離=|x-1|。",
+        "|x-1|=9。",
+        "x-1=9或-9，所以x=10或-8。"
+      ],
+      "standardAnswer": "x=10 或 x=-8。",
+      "alternativeMethod": "在數線上從1向左右各移9單位。",
+      "reasoningSteps": [
+        "兩點y相同，距離=|x-1|。",
+        "|x-1|=9。",
+        "x-1=9或-9，所以x=10或-8。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整達成三項：|x-1|=9；兩個方向；x=10,-8，結論與單位正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "核心方法正確，且至少達成其中兩項：|x-1|=9；兩個方向；x=10,-8。可有一處非核心算術或格式失誤。"
+        },
+        {
+          "score": 1,
+          "criteria": "能辨認部分關係，例如「|x-1|=9」，但後續平方、開根、判定或結論未完成；僅抄題不給分。"
+        },
+        {
+          "score": 0,
+          "criteria": "未使用與本題相關的核心關係，或答案與推理矛盾；只寫錯誤結果且無可辨識的「|x-1|=9」證據。"
+        }
+      ],
+      "partialCreditRules": [
+        "正確完成「|x-1|=9」但後續失誤，可依證據給1分。",
+        "若完成「|x-1|=9」與「兩個方向」且僅末步格式錯，可給2分。"
+      ],
+      "followThroughPolicy": "若前段算術錯誤但後續方法與該錯誤值一致，後續方法分可保留；違反核心定義或選錯模型者不適用。",
+      "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
+      "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
+      "commonErrors": [
+        "只寫10",
+        "寫±9未平移中心"
+      ],
+      "figureId": null,
+      "drawingSpecReference": null,
+      "independentReview": {
+        "decision": "pass",
+        "derivedResult": "x=10 或 x=-8。",
+        "recomputation": "兩點y相同，距離=|x-1|。；|x-1|=9。；x-1=9或-9，所以x=10或-8。",
+        "ambiguity": "所求、條件與答案形式均由題幹限定；以「x=10,-8」完成唯一結論。",
+        "reviewedAt": "2026-07-12"
+      },
+      "replacementPolicy": {
+        "replacesLegacyOnlyAtFinalIntegration": true,
+        "productionActivationAllowed": false
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "noTemplateDeclaration": true,
+      "contentSha256": "c7dc7ea89ddff1e079f4c4e390b4d8fa61de2881a27e3090795fa66c26f11bf3"
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u11-s011-coordinate",
+      "unitId": "u11",
+      "topicId": "u11-pythagorean",
+      "skillId": "coordinate-distance-pythagorean",
+      "svgPath": "figures/u11/fig-u11-s011-coordinate.svg",
+      "purpose": "支援「坐標平面距離」中需要辨認空間關係或估算位置的題目，不以圖形外觀替代計算。",
+      "drawingSpec": {
+        "canvas": {
+          "width": 500,
+          "height": 380
+        },
+        "viewBox": "0 0 500 380",
+        "coordinateSystem": "SVG coordinates, origin at top-left",
+        "geometry": "坐標平面距離",
+        "labels": "All labels use at least 18px font",
+        "lineRules": "Solid primary geometry; dashed lines only for projections",
+        "hiddenLineRules": "No hidden lines are required",
+        "tickMarksAndSymbols": "Right-angle symbols or axis arrows are explicitly drawn where relevant",
+        "units": "Units shown only when the associated question uses them",
+        "scalePolicy": "not-to-scale unless dimensions happen to match",
+        "visualInferenceWarning": "不得依圖形外觀量測或猜答案，必須使用標示條件計算。"
+      },
+      "altText": "坐標平面上A在原點、B在(3,4)，虛線畫出水平差3與垂直差4，實線連接AB。",
+      "svgTitle": "坐標平面距離",
+      "svgDesc": "坐標平面上A在原點、B在(3,4)，虛線畫出水平差3與垂直差4，實線連接AB。",
+      "svgAssertions": [
+        "A(0,0)",
+        "B(3,4)",
+        "Δx=3",
+        "Δy=4",
+        "stroke-dasharray"
+      ],
+      "mobileReadability": {
+        "reviewedAtWidthPx": 320,
+        "minimumFontPx": 18,
+        "decision": "pass",
+        "note": "縮放至320像素寬時，主要標籤、直角符號與線段仍可辨識。"
+      },
+      "answerLeakageReview": {
+        "decision": "pass",
+        "note": "圖中只呈現題目已知條件與一般公式，不標示該題的數值答案。"
+      },
+      "figureReview": {
+        "decision": "pass",
+        "reviewedAt": "2026-07-12",
+        "manualRenderRequired": true,
+        "reviewNote": "已逐一核對 fig-u11-s011-coordinate 的座標、標籤位置、線段交點與320像素縮圖；圖形不按比例，且不會以視覺長短洩漏答案。"
+      },
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "contentSha256": "a923963a63d31bd09dfd2de927090d28603215f1452d0f98038dcf3fd888a2e7"
+    }
+  ],
+  "sourceBatch": "012-u11-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/012-u11-complete/units/u11/s011"
+}

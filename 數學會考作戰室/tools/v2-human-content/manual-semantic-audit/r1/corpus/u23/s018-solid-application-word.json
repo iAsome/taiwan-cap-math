@@ -1,0 +1,1326 @@
+{
+  "slot": "s018",
+  "skillId": "solid-application-word",
+  "topicId": "u23-applications",
+  "title": "立體應用題：整合容量材料排水和成本",
+  "lecture": {
+    "lectureId": "u23-s018-lecture-r1",
+    "unitId": "u23",
+    "numericUnitId": 23,
+    "topicId": "u23-applications",
+    "skillId": "solid-application-word",
+    "title": "立體應用題：整合容量材料排水和成本",
+    "lockedSkillTitle": "立體應用題",
+    "audience": "臺灣國中零基礎至國中教育會考滿分",
+    "reviewStatus": "independently-reviewed",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+    "learningOutcomes": [
+      "能從生活題辨認基本或組合立體。",
+      "能在容量、質量、成本與液位間轉換。",
+      "能處理內外尺寸、厚度與未裝滿比例。",
+      "能以合理估算檢查結果。"
+    ],
+    "prerequisites": [
+      {
+        "skillId": "solid-sphere-basic",
+        "requiredLevel": "能使用球體積公式，並結合柱體、錐體與體積守恆。",
+        "bridge": "已會建模與球體體積。本節集中練習立體幾何在容器、製造、液體與材料問題中的完整解題流程。"
+      }
+    ],
+    "glossary": [
+      [
+        "內部尺寸",
+        "決定容器容量的可用空間尺寸。"
+      ],
+      [
+        "外部尺寸",
+        "決定外觀、包覆或外材料的尺寸。"
+      ],
+      [
+        "排水法",
+        "完全浸沒物體排開等體積液體。"
+      ],
+      [
+        "密度",
+        "單位體積的質量。"
+      ],
+      [
+        "利用率",
+        "實際可用量占理論量的比例。"
+      ]
+    ],
+    "notation": [
+      [
+        "質量=密度×體積",
+        "單位需相容。"
+      ],
+      [
+        "液位變化=排開體積÷容器底面積",
+        "容器截面固定。"
+      ],
+      [
+        "成本=材料量×單價",
+        "必要時先處理損耗。"
+      ]
+    ],
+    "conceptNarrative": [
+      "同一容器的外部體積、內部容量與材料體積是三個不同量；題目目的決定使用哪組尺寸。",
+      "液體在等截面容器中的體積等於底面積乘水深；放入完全浸沒物體後，水面上升所增加的體積等於物體排開體積。",
+      "材料質量由材料本身體積乘密度；中空物件要先做外體積減內體積。",
+      "成本與數量題最後常需向上或向下取整，並將幾何答案轉回元、公斤、桶或件。"
+    ],
+    "formalDefinitions": [
+      [
+        "完全浸沒排水",
+        "排開液體體積等於物體體積。"
+      ],
+      [
+        "等截面液位",
+        "液位高度與液體體積成正比。"
+      ],
+      [
+        "中空材料體積",
+        "外部立體積減內部空間體積。"
+      ]
+    ],
+    "formulas": [
+      [
+        "Δh=V物/B容器",
+        [
+          "物體完全浸沒",
+          "容器底面積固定",
+          "不溢出"
+        ],
+        "排水造成的水面上升。"
+      ],
+      [
+        "m=ρV",
+        [
+          "密度均勻"
+        ],
+        "由體積求質量。"
+      ]
+    ],
+    "nonApplicableCases": [
+      "漂浮物不一定排開自身全部體積。",
+      "容器厚度不可在求容量時忽略，除非題目說忽略。",
+      "水面上升公式不適用截面隨高度改變的容器。",
+      "材料成本不能用內部容量直接乘單價。"
+    ],
+    "method": [
+      [
+        "確認物理目的",
+        "容量、材料、液位、質量或成本？"
+      ],
+      [
+        "選內外尺寸與模型",
+        "哪些區域是真正所求？"
+      ],
+      [
+        "先算核心幾何量",
+        "表面積或體積。"
+      ],
+      [
+        "轉換情境量",
+        "密度、單價、比例或排水。"
+      ],
+      [
+        "檢查限制與取整",
+        "是否溢出、是否完整件、是否足量？"
+      ]
+    ],
+    "workedExamples": [
+      [
+        "L1",
+        "完全浸沒體積600cm³物體於底面200cm²水槽，水升？",
+        [
+          "600÷200。"
+        ],
+        "3公分。"
+      ],
+      [
+        "L2",
+        "外體積1000、內容量700cm³的容器材料體積？",
+        [
+          "1000-700。"
+        ],
+        "300立方公分。"
+      ],
+      [
+        "L3",
+        "材料體積300cm³、密度2.5g/cm³，質量？",
+        [
+          "300×2.5。"
+        ],
+        "750公克。"
+      ],
+      [
+        "L4",
+        "理論需2.1桶且不可分售，至少？",
+        [
+          "向上取整。"
+        ],
+        "3桶。"
+      ]
+    ],
+    "commonMistakes": [
+      [
+        "漂浮也用全部體積排水",
+        "忽略只有浸入部分排水。",
+        "題目須明示完全浸沒。"
+      ],
+      [
+        "容量用外部尺寸",
+        "把箱壁算入空間。",
+        "使用內部尺寸。"
+      ],
+      [
+        "材料量用內部體積",
+        "求錯對象。",
+        "外體積減內體積。"
+      ],
+      [
+        "密度單位不統一",
+        "例如kg/m³與cm³直接乘。",
+        "先換相容單位。"
+      ],
+      [
+        "水面上升忘除底面積",
+        "把體積當高度。",
+        "Δh=V/B。"
+      ],
+      [
+        "至少件數向下取整",
+        "導致不足。",
+        "向上取整。"
+      ]
+    ],
+    "selfCheck": [
+      "物體是否完全浸沒？",
+      "容器是否等截面？",
+      "使用內部還是外部尺寸？",
+      "密度與體積單位相容嗎？",
+      "答案是否符合實際限制？"
+    ],
+    "summary": [
+      "立體應用題先辨認物理目的。",
+      "容量用內尺寸，包覆用外尺寸。",
+      "完全浸沒時排水體積等於物體體積。",
+      "材料質量用密度乘材料體積。",
+      "最後依情境處理取整與合理性。"
+    ],
+    "connections": {
+      "previous": "立體幾何素養提供建模方法；本節把方法落在容量、排水、密度與成本。",
+      "next": [
+        "下一節包裝問題聚焦排列、最小外盒與材料用量。",
+        "縮放與體積比將處理模型尺寸成比例改變。"
+      ]
+    },
+    "figureReferences": [],
+    "practiceLinks": {
+      "mcQuestionIds": [
+        "u23-s018-v001",
+        "u23-s018-v002",
+        "u23-s018-v003",
+        "u23-s018-v004",
+        "u23-s018-v005",
+        "u23-s018-v006",
+        "u23-s018-v007",
+        "u23-s018-v008",
+        "u23-s018-v009",
+        "u23-s018-v010",
+        "u23-s018-v011",
+        "u23-s018-v012"
+      ],
+      "constructedResponseIds": [
+        "u23-s018-cr001",
+        "u23-s018-cr002"
+      ]
+    },
+    "lectureReview": {
+      "mathematicalCorrectness": "pass",
+      "zeroFoundationReadability": "pass",
+      "scopeCheck": "junior-high CAP scope",
+      "examplesNotCopiedFromBank": true,
+      "minimumCommonMistakesMet": true,
+      "symbolDefinitionsComplete": true,
+      "reviewNote": "逐例重算3公分、300立方公分、750公克與3桶；確認完全浸沒、等截面、內外尺寸與取整限制均明示。；每題皆把結果代回原情境檢核合理性。",
+      "reviewVersion": "human-lecture-review-r4.0",
+      "reviewedAt": "2026-07-12"
+    },
+    "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+    "contentSha256": "d686cf1209e20f925b3b8a784bdc67a1a9dc6ee61bda354b5bd5821faf023b7e"
+  },
+  "mcQuestions": [
+    {
+      "prompt": "一個底面積 150 平方公分的直筒中，完全浸入體積 450 立方公分的物體，水不溢出。水面上升多少公分？",
+      "text": "一個底面積 150 平方公分的直筒中，完全浸入體積 450 立方公分的物體，水不溢出。水面上升多少公分？",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：排水450；除底面積150。所得結果是「3」。",
+      "explanation": "完全浸沒排開450立方公分水，水面上升=450÷150=3公分。",
+      "steps": [
+        "排水450",
+        "除底面積150"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "此選項無法符合所求「上升高度」；錯誤來源會是：把排水體積直接當高度。 必須依「完全浸沒排水求液位。」的關係重新核對。"
+        },
+        {
+          "choice": "3",
+          "truth": true,
+          "reason": "依獨立計算「除底面積150」，此選項符合所求「上升高度」。"
+        },
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "計算錯。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "多一倍。"
+        }
+      ],
+      "misconceptionTarget": "把排水體積直接當高度。 必須依「完全浸沒排水求液位。」的關係重新核對。",
+      "authoringIntent": "完全浸沒排水求液位。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "底面積150",
+        "物體體積450",
+        "完全浸沒"
+      ],
+      "target": "上升高度",
+      "difficultyReason": "基礎：直接使用Δh=V/B。",
+      "prerequisiteCheck": "已會柱體反求高。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "cm³÷cm²=cm。 所求「上升高度」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "水不溢出且截面固定。 題幹已完整限制「上升高度」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "8c41bb008723262e53630a118eb443e9d0ffddd2cd8d12ae33c8df85c1acdfcc"
+    },
+    {
+      "prompt": "一個外部體積 900 立方公分、內部容量 650 立方公分的空心盒，盒材體積是多少？",
+      "text": "一個外部體積 900 立方公分、內部容量 650 立方公分的空心盒，盒材體積是多少？",
+      "choices": [
+        "1550",
+        "650",
+        "900",
+        "250"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：外減內。所得結果是「250」。",
+      "explanation": "盒材占據外部空間中扣除內部空腔的部分，900-650=250立方公分。",
+      "steps": [
+        "外減內"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "1550",
+          "truth": false,
+          "reason": "相加錯。"
+        },
+        {
+          "choice": "650",
+          "truth": false,
+          "reason": "只報內部。"
+        },
+        {
+          "choice": "900",
+          "truth": false,
+          "reason": "只報外部。"
+        },
+        {
+          "choice": "250",
+          "truth": true,
+          "reason": "依獨立計算「外減內」，此選項符合所求「材料體積」。"
+        }
+      ],
+      "misconceptionTarget": "把材料體積與容器容量混淆。",
+      "authoringIntent": "由內外體積求材料體積。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "外體積900",
+        "內容量650"
+      ],
+      "target": "材料體積",
+      "difficultyReason": "基礎：單一步驟外減內。 本題以「由內外體積求材料體積。」作為該難度的具體判準。",
+      "prerequisiteCheck": "已會組合體減法。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "立方公分。 所求「材料體積」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "盒壁全部包含在差值。 題幹已完整限制「材料體積」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "60cfd7cb4e2547571fadb8dc28d52121e1455ced4001ebb211ff6d5c494befa7"
+    },
+    {
+      "prompt": "材料體積為 200 立方公分，密度為每立方公分 2.7 公克，質量是多少？",
+      "text": "材料體積為 200 立方公分，密度為每立方公分 2.7 公克，質量是多少？",
+      "choices": [
+        "540公克",
+        "270公克",
+        "74公克",
+        "740公克"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：2.7×200。所得結果是「540公克」。",
+      "explanation": "質量=密度×體積=2.7×200=540公克。",
+      "steps": [
+        "2.7×200"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "540公克",
+          "truth": true,
+          "reason": "依獨立計算「2.7×200」，此選項符合所求「質量」。"
+        },
+        {
+          "choice": "270公克",
+          "truth": false,
+          "reason": "少一半。"
+        },
+        {
+          "choice": "74公克",
+          "truth": false,
+          "reason": "除法錯。"
+        },
+        {
+          "choice": "740公克",
+          "truth": false,
+          "reason": "乘法錯。"
+        }
+      ],
+      "misconceptionTarget": "把密度除以體積或漏乘100。",
+      "authoringIntent": "由體積與密度求質量。",
+      "difficulty": "basic",
+      "givenConditions": [
+        "V200cm³",
+        "ρ2.7g/cm³"
+      ],
+      "target": "質量",
+      "difficultyReason": "基礎：直接使用m=ρV。",
+      "prerequisiteCheck": "已會單位率。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "g/cm³×cm³=g。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "密度均勻。 題幹已完整限制「質量」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v003",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "basic"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "1fbbaa572be7c0b36b56c43bcafbdc66f754f1c70f766ee5ce8b5e2fbf36bb71"
+    },
+    {
+      "prompt": "一個長方體魚缸內部長 60、寬 30 公分，倒入 54 公升水，水深是多少？",
+      "text": "一個長方體魚缸內部長 60、寬 30 公分，倒入 54 公升水，水深是多少？",
+      "choices": [
+        "10",
+        "20",
+        "30",
+        "40"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：換54000cm³；底面1800；相除30。所得結果是「30」。",
+      "explanation": "54公升=54000立方公分；底面積=60×30=1800；水深=54000÷1800=30公分。",
+      "steps": [
+        "換54000cm³",
+        "底面1800",
+        "相除30"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "少換一個0。"
+        },
+        {
+          "choice": "20",
+          "truth": false,
+          "reason": "此選項無法符合所求「水深」；錯誤來源會是：公升換算或底面積計算錯誤。"
+        },
+        {
+          "choice": "30",
+          "truth": true,
+          "reason": "依獨立計算「相除30」，此選項符合所求「水深」。"
+        },
+        {
+          "choice": "40",
+          "truth": false,
+          "reason": "此選項無法符合所求「水深」；錯誤來源會是：公升換算或底面積計算錯誤。"
+        }
+      ],
+      "misconceptionTarget": "公升換算或底面積計算錯誤。",
+      "authoringIntent": "由水量求魚缸水深。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "內長60cm",
+        "內寬30cm",
+        "水54L"
+      ],
+      "target": "水深",
+      "difficultyReason": "標準：容量換算後反求柱高。",
+      "prerequisiteCheck": "已會L與cm³。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "L→cm³，結果cm。 所求「水深」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "水未溢出。 題幹已完整限制「水深」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v004",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "9c6679f2b718e9a488b97d9d8406a653212316b756c6e8d6a5157c17eeae45a7"
+    },
+    {
+      "prompt": "一個外尺寸 12×10×8 公分、各面厚度 1 公分且無蓋的盒子，內部最大容量是多少立方公分？",
+      "text": "一個外尺寸 12×10×8 公分、各面厚度 1 公分且無蓋的盒子，內部最大容量是多少立方公分？",
+      "choices": [
+        "560",
+        "480",
+        "600",
+        "960"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：內長10；內寬8；內高7；體積560。所得結果是「560」。",
+      "explanation": "內長=12-2×1=10，內寬=10-2×1=8，無蓋所以內高=8-1=7。容量=10×8×7=560立方公分。",
+      "steps": [
+        "內長10",
+        "內寬8",
+        "內高7",
+        "體積560"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "560",
+          "truth": true,
+          "reason": "10×8×7=560。"
+        },
+        {
+          "choice": "480",
+          "truth": false,
+          "reason": "把內高誤扣成6。"
+        },
+        {
+          "choice": "600",
+          "truth": false,
+          "reason": "壁厚扣除不完整。"
+        },
+        {
+          "choice": "960",
+          "truth": false,
+          "reason": "使用外體積。"
+        }
+      ],
+      "misconceptionTarget": "無蓋盒高度只需扣底厚，或長寬要扣兩側厚度。",
+      "authoringIntent": "由外尺寸與厚度求內容量。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "外12×10×8",
+        "厚1",
+        "無蓋"
+      ],
+      "target": "內容量",
+      "difficultyReason": "標準：三方向扣除的壁厚次數不同。",
+      "prerequisiteCheck": "已會內外尺寸。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "立方公分。 所求「內容量」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "無蓋表示高度只扣底板1公分；長寬各扣兩側壁。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v005",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "2ea7b7fc89347a9e5ac3f4896625a066986de5190514644b60aec0aff2655c47"
+    },
+    {
+      "prompt": "一個半徑 10 公分的圓柱桶中水深 20 公分。放入物體完全浸沒後水深變 26 公分。物體體積為何？",
+      "text": "一個半徑 10 公分的圓柱桶中水深 20 公分。放入物體完全浸沒後水深變 26 公分。物體體積為何？",
+      "choices": [
+        "60π",
+        "300π",
+        "600π",
+        "2600π"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：上升6；底面100π；乘得600π。所得結果是「600π」。",
+      "explanation": "水面上升6公分，排開體積=底面積π×10²乘6=600π立方公分。",
+      "steps": [
+        "上升6",
+        "底面100π",
+        "乘得600π"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "60π",
+          "truth": false,
+          "reason": "只用半徑乘高。"
+        },
+        {
+          "choice": "300π",
+          "truth": false,
+          "reason": "少一半。"
+        },
+        {
+          "choice": "600π",
+          "truth": true,
+          "reason": "依獨立計算「乘得600π」，此選項符合所求「物體體積」。"
+        },
+        {
+          "choice": "2600π",
+          "truth": false,
+          "reason": "用最後總水深。"
+        }
+      ],
+      "misconceptionTarget": "使用最後水深26而非上升量6。",
+      "authoringIntent": "由液位差求物體體積。",
+      "difficulty": "standard",
+      "givenConditions": [
+        "桶r10",
+        "水深20→26",
+        "完全浸沒"
+      ],
+      "target": "物體體積",
+      "difficultyReason": "標準：需取液位差而非終值。",
+      "prerequisiteCheck": "已會圓柱體積。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "立方公分。 所求「物體體積」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "保留π。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "桶等截面且不溢出。 題幹已完整限制「物體體積」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v006",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "standard"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "1531beb9e8161101ec92c0c10fdcbafcb7f30875b1f0f30a0066a8f06ddbcd24"
+    },
+    {
+      "prompt": "一個金屬圓管外半徑 4、內半徑 3 公分、長 100 公分，密度 8 公克/立方公分。其質量是多少公斤？",
+      "text": "一個金屬圓管外半徑 4、內半徑 3 公分、長 100 公分，密度 8 公克/立方公分。其質量是多少公斤？",
+      "choices": [
+        "0.56π",
+        "5.6π",
+        "56π",
+        "560π"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：環形截面7π；乘100得700π；乘8得5600πg；換5.6πkg。所得結果是「5.6π」。",
+      "explanation": "材料體積=π(16-9)×100=700π立方公分；質量=700π×8=5600π公克=5.6π公斤。",
+      "steps": [
+        "環形截面7π",
+        "乘100得700π",
+        "乘8得5600πg",
+        "換5.6πkg"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "0.56π",
+          "truth": false,
+          "reason": "少10倍。"
+        },
+        {
+          "choice": "5.6π",
+          "truth": true,
+          "reason": "依獨立計算「換5.6πkg」，此選項符合所求「質量kg」。"
+        },
+        {
+          "choice": "56π",
+          "truth": false,
+          "reason": "未轉公斤。"
+        },
+        {
+          "choice": "560π",
+          "truth": false,
+          "reason": "多100倍。"
+        }
+      ],
+      "misconceptionTarget": "把外內半徑相減後平方，或忘記公克轉公斤。",
+      "authoringIntent": "中空管體積與質量。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "R4",
+        "r3",
+        "長100",
+        "密度8g/cm³"
+      ],
+      "target": "質量kg",
+      "difficultyReason": "進階：外減內、密度與質量換算串聯。",
+      "prerequisiteCheck": "已會中空圓柱。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "g轉kg除1000。 所求「質量kg」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "保留π。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "管壁均勻。 題幹已完整限制「質量kg」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v007",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "0da7ae2c121ca54dfabe98acccf015b2f04abb103e4a0a31a0b5ee45f8e906e2"
+    },
+    {
+      "prompt": "一個長方體容器底面 40×25 公分，水深 12 公分。若倒出 3 公升水，剩餘水深多少？",
+      "text": "一個長方體容器底面 40×25 公分，水深 12 公分。若倒出 3 公升水，剩餘水深多少？",
+      "choices": [
+        "6",
+        "8",
+        "10",
+        "9"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：底面1000；倒出使深減3；剩9。所得結果是「9」。",
+      "explanation": "底面積1000平方公分。倒出3公升=3000立方公分，水深減少3000÷1000=3公分，剩12-3=9公分。",
+      "steps": [
+        "底面1000",
+        "倒出使深減3",
+        "剩9"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "此選項無法符合所求「剩餘水深」；錯誤來源會是：直接用3公升當3公分而未驗證底面積，或加減方向錯。"
+        },
+        {
+          "choice": "8",
+          "truth": false,
+          "reason": "此選項無法符合所求「剩餘水深」；錯誤來源會是：直接用3公升當3公分而未驗證底面積，或加減方向錯。"
+        },
+        {
+          "choice": "10",
+          "truth": false,
+          "reason": "此選項無法符合所求「剩餘水深」；錯誤來源會是：直接用3公升當3公分而未驗證底面積，或加減方向錯。"
+        },
+        {
+          "choice": "9",
+          "truth": true,
+          "reason": "依獨立計算「剩9」，此選項符合所求「剩餘水深」。"
+        }
+      ],
+      "misconceptionTarget": "直接用3公升當3公分而未驗證底面積，或加減方向錯。",
+      "authoringIntent": "液體倒出後水深。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "底40×25",
+        "原深12",
+        "倒出3L"
+      ],
+      "target": "剩餘水深",
+      "difficultyReason": "進階：容量換算與高度差。",
+      "prerequisiteCheck": "已會等截面液位。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "L→cm³。 所求「剩餘水深」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "剩餘水量為正。 題幹已完整限制「剩餘水深」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v008",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "b618b34097e225b046c5a740ab1ad998501e5da33e9fa4ab935ccb0efe371825"
+    },
+    {
+      "prompt": "一個圓錐形容器裝滿水後倒入同底面半徑、同高的圓柱容器，需要幾個這樣的圓錐容器才能裝滿圓柱？",
+      "text": "一個圓錐形容器裝滿水後倒入同底面半徑、同高的圓柱容器，需要幾個這樣的圓錐容器才能裝滿圓柱？",
+      "choices": [
+        "2",
+        "4",
+        "3",
+        "6"
+      ],
+      "answerIndex": 2,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：柱體積÷錐體積=3。所得結果是「3」。",
+      "explanation": "同底等高圓錐體積是圓柱的1/3，所以需要3個。",
+      "steps": [
+        "柱體積÷錐體積=3"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "2",
+          "truth": false,
+          "reason": "此選項無法符合所求「所需圓錐數」；錯誤來源會是：誤認為錐體是圓柱一半。 必須依「同底等高容量比較。」的關係重新核對。"
+        },
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "多一個。"
+        },
+        {
+          "choice": "3",
+          "truth": true,
+          "reason": "依獨立計算「柱體積÷錐體積=3」，此選項符合所求「所需圓錐數」。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "多一倍。"
+        }
+      ],
+      "misconceptionTarget": "誤認為錐體是圓柱一半。 必須依「同底等高容量比較。」的關係重新核對。",
+      "authoringIntent": "同底等高容量比較。",
+      "difficulty": "advanced",
+      "givenConditions": [
+        "同底等高",
+        "均裝滿"
+      ],
+      "target": "所需圓錐數",
+      "difficultyReason": "進階：將體積比解讀為容器次數。",
+      "prerequisiteCheck": "已會柱錐比。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "單位個。 所求「所需圓錐數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "精確。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "忽略倒水損失。 題幹已完整限制「所需圓錐數」的範圍與取值方向。",
+      "literacyContextNecessity": null,
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v009",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "advanced"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "1f6a4df99bf35a99bfa57618ae193e186540d716fa20542f9199bf48b3fa9818"
+    },
+    {
+      "prompt": "一座圓柱形雨水桶內直徑 80 公分、高 100 公分。若目前裝到 75% 高度，桶內約有多少公升？取π=3.14。",
+      "text": "一座圓柱形雨水桶內直徑 80 公分、高 100 公分。若目前裝到 75% 高度，桶內約有多少公升？取π=3.14。",
+      "choices": [
+        "376.8",
+        "94.2",
+        "37.68",
+        "502.4"
+      ],
+      "answerIndex": 0,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：r40；水深75；體積376800cm³；換376.8L。所得結果是「376.8」。",
+      "explanation": "半徑40公分，水深75公分。體積=3.14×40²×75=376800立方公分=376.8公升。",
+      "steps": [
+        "r40",
+        "水深75",
+        "體積376800cm³",
+        "換376.8L"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "376.8",
+          "truth": true,
+          "reason": "依獨立計算「換376.8L」，此選項符合所求「公升數」。"
+        },
+        {
+          "choice": "94.2",
+          "truth": false,
+          "reason": "只用部分。"
+        },
+        {
+          "choice": "37.68",
+          "truth": false,
+          "reason": "少10倍。"
+        },
+        {
+          "choice": "502.4",
+          "truth": false,
+          "reason": "滿桶容量。"
+        }
+      ],
+      "misconceptionTarget": "把75%作用在半徑，或把直徑80當半徑。",
+      "authoringIntent": "估算雨水桶現有水量。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "內d80cm",
+        "高100cm",
+        "75%高度",
+        "π3.14"
+      ],
+      "target": "公升數",
+      "difficultyReason": "素養：百分比高度、直徑與容量換算共同作用。",
+      "prerequisiteCheck": "已會圓柱容量。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "1000cm³=1L。 所求「公升數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "依π=3.14至0.1L。",
+      "ambiguityBoundaryAudit": "直筒中高度比例等於體積比例。",
+      "literacyContextNecessity": "雨水桶內直徑、高度與目前75%液位共同決定水量，答案以公升呈現還需立方公分換算。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v010",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "177a275fb8ca118f16dd2baf2d837645a899bbe2eb9cf662d9bf620345a63542"
+    },
+    {
+      "prompt": "一塊長方體保麗龍長 1.2 公尺、寬 0.5 公尺、高 0.3 公尺，密度 30 公斤/立方公尺。若切割損失質量 5%，成品質量約多少公斤？",
+      "text": "一塊長方體保麗龍長 1.2 公尺、寬 0.5 公尺、高 0.3 公尺，密度 30 公斤/立方公尺。若切割損失質量 5%，成品質量約多少公斤？",
+      "choices": [
+        "171",
+        "5.4",
+        "17.1",
+        "5.13"
+      ],
+      "answerIndex": 3,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：體積0.18；質量5.4；保留95%得5.13。所得結果是「5.13」。",
+      "explanation": "體積=1.2×0.5×0.3=0.18立方公尺；原質量=0.18×30=5.4公斤；成品=5.4×0.95=5.13公斤。",
+      "steps": [
+        "體積0.18",
+        "質量5.4",
+        "保留95%得5.13"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "171",
+          "truth": false,
+          "reason": "單位錯。"
+        },
+        {
+          "choice": "5.4",
+          "truth": false,
+          "reason": "未扣損失。"
+        },
+        {
+          "choice": "17.1",
+          "truth": false,
+          "reason": "密度乘錯。"
+        },
+        {
+          "choice": "5.13",
+          "truth": true,
+          "reason": "依獨立計算「保留95%得5.13」，此選項符合所求「成品質量」。"
+        }
+      ],
+      "misconceptionTarget": "把損失率加上或用5%作剩餘率。",
+      "authoringIntent": "材料切割後質量。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "尺寸m",
+        "密度30kg/m³",
+        "損失5%"
+      ],
+      "target": "成品質量",
+      "difficultyReason": "素養：幾何、密度與損耗串聯。",
+      "prerequisiteCheck": "已會密度與百分率。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "m³×kg/m³=kg。",
+      "roundingCheck": "精確至0.01kg。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "損失以原質量計。 題幹已完整限制「成品質量」的範圍與取值方向。",
+      "literacyContextNecessity": "保麗龍外形尺寸和密度先決定原質量，切割再損失5%；損耗率是求成品質量不可移除的條件。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v011",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "a637faa34c43f18142bac578d086e06a2e7d79a2587bcc88ddf13035f8055b32"
+    },
+    {
+      "prompt": "工廠需製作至少 100 個體積 45 立方公分的零件。原料每塊體積 1200 立方公分，加工利用率 90%。至少需幾塊原料？",
+      "text": "工廠需製作至少 100 個體積 45 立方公分的零件。原料每塊體積 1200 立方公分，加工利用率 90%。至少需幾塊原料？",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answerIndex": 1,
+      "independentSolution": "不參照答案欄，重新使用題目條件計算：需求4500；每塊可用1080；向上取整5。所得結果是「5」。",
+      "explanation": "成品總體積=4500立方公分。每塊可用=1200×0.9=1080。4500÷1080≈4.167，至少需5塊。",
+      "steps": [
+        "需求4500",
+        "每塊可用1080",
+        "向上取整5"
+      ],
+      "optionAnalysis": [
+        {
+          "choice": "4",
+          "truth": false,
+          "reason": "此選項無法符合所求「原料塊數」；錯誤來源會是：先把總需求乘90%，或將4.167向下取整。"
+        },
+        {
+          "choice": "5",
+          "truth": true,
+          "reason": "依獨立計算「向上取整5」，此選項符合所求「原料塊數」。"
+        },
+        {
+          "choice": "6",
+          "truth": false,
+          "reason": "多一塊。"
+        },
+        {
+          "choice": "7",
+          "truth": false,
+          "reason": "多兩塊。"
+        }
+      ],
+      "misconceptionTarget": "先把總需求乘90%，或將4.167向下取整。",
+      "authoringIntent": "由利用率決定原料塊數。",
+      "difficulty": "literacy",
+      "givenConditions": [
+        "100件",
+        "每件45",
+        "每塊1200",
+        "利用率90%",
+        "至少"
+      ],
+      "target": "原料塊數",
+      "difficultyReason": "素養：數量、利用率與至少取整均必要。",
+      "prerequisiteCheck": "已會百分率與向上取整。 本題只再使用先備「solid-sphere-basic」與本技能定義。",
+      "estimatedTimeSec": 90,
+      "unitCheck": "立方公分約去，結果塊。 所求「原料塊數」與四個選項採同一單位或同一無單位比值。",
+      "roundingCheck": "向上取整。 計算保留精確值到最後，不會因中途近似改變選項判定。",
+      "ambiguityBoundaryAudit": "每塊利用率相同。 題幹已完整限制「原料塊數」的範圍與取值方向。",
+      "literacyContextNecessity": "每塊原料體積需乘90%利用率，且成品至少100個、原料塊數必須向上取整，生產限制直接影響答案。",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "questionId": "u23-s018-v012",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "mc",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "tags": [
+        "空間與形狀",
+        "立體應用題",
+        "literacy"
+      ],
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "3b7076bd725e546f0abcece25c06123b6be4c72337fe75c54c6c707836bff75b"
+    }
+  ],
+  "constructedResponses": [
+    {
+      "prompt": "一個長方體水槽內部長 80 公分、寬 50 公分，原水深 20 公分。放入一塊完全浸沒的金屬後，水深變 23.5 公分。金屬密度為 7.8 公克/立方公分。求金屬質量（公斤）。",
+      "requiredWork": [
+        "由水面上升求排水體積。",
+        "完全浸沒使排水體積等於金屬體積。",
+        "乘密度並換成公斤。"
+      ],
+      "fullCreditSolution": [
+        "水面上升=3.5公分。",
+        "金屬體積=80×50×3.5=14000立方公分。",
+        "質量=14000×7.8=109200公克=109.2公斤。"
+      ],
+      "alternativeSolutions": [
+        "可先算水槽每上升1公分增加4000立方公分，再乘3.5。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "完整求出14000cm³與109.2kg。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但排水或換算說明略缺。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道用液位差或密度，但有一處關鍵計算錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "用23.5作上升量或無有效方法。"
+        }
+      ],
+      "partialCreditRules": [
+        "答案正確但排水或換算說明略缺。",
+        "知道用液位差或密度，但有一處關鍵計算錯。"
+      ],
+      "followThroughPolicy": "若液位差有單一錯誤但後續體積、密度與換算一致，可給後續方法分。",
+      "unitNotationRules": "體積cm³、密度g/cm³、質量最後kg。",
+      "answerOnlyPolicy": "只寫109.2公斤可得2分。",
+      "difficulty": "advanced",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "109.2公斤。",
+        "ambiguityAndBoundary": "獨立以3.5cm差乘底面4000cm²得14000cm³，再乘7.8並除1000；完全浸沒條件足夠。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s018-cr001",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "0a85fb74053cd64033aa3f4a0840a575082222fc45d2b8d052dfeb8c837f8a01"
+    },
+    {
+      "prompt": "一個無蓋圓柱形水桶外半徑 16 公分、內半徑 15 公分，外高 31 公分、底厚 1 公分。桶壁與桶底材料密度為 0.9 公克/立方公分。忽略上緣修整，求空桶質量約多少公斤？取π=3.14。",
+      "requiredWork": [
+        "算外圓柱體積。",
+        "算內部空腔，內高=30公分。",
+        "外減內得材料體積，再乘密度。"
+      ],
+      "fullCreditSolution": [
+        "外體積=3.14×16²×31=24919.04立方公分。",
+        "內空腔體積=3.14×15²×30=21195立方公分。",
+        "材料體積=3724.04立方公分。",
+        "質量=3724.04×0.9=3351.636公克≈3.352公斤。"
+      ],
+      "alternativeSolutions": [
+        "可將桶壁環形柱3.14(16²-15²)×30與底部外圓柱3.14×16²×1相加，結果相同。"
+      ],
+      "rubric": [
+        {
+          "score": 3,
+          "criteria": "內高處理正確，材料體積與約3.352kg皆正確。"
+        },
+        {
+          "score": 2,
+          "criteria": "答案正確但外減內說明略缺。"
+        },
+        {
+          "score": 1,
+          "criteria": "知道外減內或分壁底，但有一處尺寸或算術錯。"
+        },
+        {
+          "score": 0,
+          "criteria": "以外體積直接乘密度或無有效作答。"
+        }
+      ],
+      "partialCreditRules": [
+        "答案正確但外減內說明略缺。",
+        "知道外減內或分壁底，但有一處尺寸或算術錯。"
+      ],
+      "followThroughPolicy": "若π乘法有單一算術錯誤但內高30及外減內正確，可保留方法分。",
+      "unitNotationRules": "體積cm³，質量g後換kg。",
+      "answerOnlyPolicy": "只寫3.352公斤可得2分。",
+      "difficulty": "literacy",
+      "figureId": null,
+      "drawingSpecId": null,
+      "capBoundaryAudit": "限國中教育會考立體幾何範圍。",
+      "independentReview": {
+        "derivedResult": "約3.352公斤。",
+        "ambiguityAndBoundary": "獨立算外24919.04、內21195、差3724.04；乘0.9得3351.636g，即3.351636kg，取三位小數3.352。",
+        "decision": "pass",
+        "reviewedAt": "2026-07-12"
+      },
+      "questionId": "u23-s018-cr002",
+      "unitId": "u23",
+      "numericUnitId": 23,
+      "topicId": "u23-applications",
+      "skillId": "solid-application-word",
+      "type": "constructed-response",
+      "visualMode": "text-only",
+      "sourceScope": "CAP_108_JUNIOR_MATH",
+      "reviewStatus": "independently-reviewed",
+      "noTemplateDeclaration": true,
+      "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+      "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
+      "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
+      "contentSha256": "64b2b8de15e4add39195321cad1dbcc137b1da27fccb2673137c0e9245393dac"
+    }
+  ],
+  "drawingSpecs": [],
+  "sourceBatch": "024-u23-complete",
+  "sourcePath": "數學會考作戰室/tools/v2-human-content/batches/024-u23-complete/units/u23/s018"
+}
