@@ -124,7 +124,7 @@
     {
       "step": 5,
       "instruction": "追蹤一個非頂點點驗算。",
-      "check": "每個點是否移動相同向量？"
+      "check": "每個點是否移動相同平移量？"
     }
   ],
   "workedExamples": [
@@ -177,7 +177,7 @@
   "difficultyConnections": {
     "basic": "讀取單一水平或垂直平移。",
     "standard": "同時處理兩方向並寫新式。",
-    "advanced": "比較兩個任意頂點式的位移向量與 a。",
+    "advanced": "比較兩個任意頂點式的平移量與 a。",
     "literacy": "解釋軌跡、拱門或設計曲線整體搬移後的座標變化。"
   },
   "commonMistakes": [
@@ -198,7 +198,7 @@
     },
     {
       "mistake": "只移頂點，不移其他點。",
-      "why": "未理解整圖同向量移動。",
+      "why": "未理解整圖同平移量移動。",
       "correction": "每個點都加同一 (Δx,Δy)。"
     },
     {
@@ -234,7 +234,7 @@
     "y=a(x-h)²+k 是 y=ax² 向右 h、向上 k 的結果。",
     "水平符號反讀，垂直符號直接讀。",
     "平移後 a 不變，所以方向與寬窄不變。",
-    "可用頂點差或任一點的位移向量驗算。"
+    "可用頂點差或任一點的平移量驗算。"
   ],
   "connections": {
     "previous": "使用素養情境中的頂點與圖形解釋。",
@@ -279,5 +279,5 @@
     "reviewVersion": "human-lecture-u21-r1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "b01b12817287fef1477829f00d506736b2d09aa8d81fdf749e9b262ab2a4e7fa"
+  "contentSha256": "8c4b27c6678683917734adf80cb56cb361a85e21c738fb859fe595fc2194d4f7"
 }

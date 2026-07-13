@@ -3,191 +3,195 @@
   "unitId": "u02",
   "topicId": "u02-fraction-ops",
   "skillId": "fraction-complex-fraction-basic",
-  "title": "繁分數基本化簡：把主分數線讀成除法，分層處理上下運算",
-  "audience": "國中零基礎至會考滿分",
-  "reviewStatus": "independently-reviewed",
+  "title": "分數四則混合運算與括號：先算括號，再做乘除和加減",
+  "audience": "已學過分數加減、乘除與帶分數轉換的國中學生",
+  "reviewStatus": "centrally-reviewed-semantic-audit-r1",
   "learningOutcomes": [
-    "能辨認繁分數的主分數線。",
-    "能把繁分數改寫成分數除法。",
-    "能先化簡分子與分母再做最後除法。",
-    "能處理一層或兩層的基本繁分數。"
+    "能依括號、乘除、加減的順序計算分數混合運算。",
+    "能把除以分數改寫成乘以倒數。",
+    "能在多層括號中逐層計算並保持等值。",
+    "能把分數混合運算用在容量、剩餘量與平均分配情境。"
   ],
   "prerequisites": [
-    {
-      "skillId": "fraction-mixed-number",
-      "requiredLevel": "能把帶分數轉假分數並完成分數的乘法和除法。"
-    }
+    "分數加減與通分",
+    "分數乘法與除法",
+    "帶分數和假分數的轉換",
+    "整數四則運算順序"
   ],
   "glossary": [
     {
-      "term": "繁分數",
-      "definition": "分子或分母本身含分數的分數式。"
+      "term": "混合運算",
+      "definition": "同一個算式中同時出現兩種以上的運算，例如加法、乘法和除法。"
     },
     {
-      "term": "主分數線",
-      "definition": "最外層、分隔整個分子與分母的分數線。"
+      "term": "括號",
+      "definition": "用來指定優先計算範圍的符號；多層括號要由內向外處理。"
     },
     {
-      "term": "分子區",
-      "definition": "主分數線上方的完整算式。"
+      "term": "倒數",
+      "definition": "兩個非零數相乘等於 1 時，互稱倒數。例如 [[frac:3|5]] 的倒數是 [[frac:5|3]]。"
     },
     {
-      "term": "分母區",
-      "definition": "主分數線下方的完整算式。"
+      "term": "運算順序",
+      "definition": "先算括號，再算乘除，最後算加減；同一層級由左到右。"
     }
   ],
   "notation": [
     {
-      "symbol": "(a/b)/(c/d)",
-      "meaning": "表示a/b÷c/d。"
+      "symbol": "（ ）與 [ ]",
+      "meaning": "表示要先計算的範圍；有多層時由內向外。"
+    },
+    {
+      "symbol": "÷",
+      "meaning": "除法。除以非零分數時，可改寫成乘以它的倒數。"
+    },
+    {
+      "symbol": "[[frac:a|b]]",
+      "meaning": "表示 a 除以 b，其中 b≠0。"
     }
   ],
   "conceptNarrative": [
-    "主分數線代表上方整體除以下方整體。",
-    "若上下含加減，先各自化簡；最後才把主分數線改成乘倒數。",
-    "可使用同乘上下各分母最小公倍數的方法清除小分母，但本節以基本乘倒數為主。",
-    "分母區最後結果不得為0。"
+    "分數混合運算和整數混合運算使用相同的優先順序。",
+    "看到括號時，先把括號內算完；括號內仍要遵守先乘除後加減。",
+    "除以分數時，改寫成乘以倒數，再約分計算。",
+    "不要把整個算式排成上下又含分數的巢狀分式；用括號與 ÷ 可以更清楚地表示同一個意思。",
+    "情境題先寫出數量關係，再依運算順序計算。"
   ],
   "formalDefinitions": [
     {
-      "name": "繁分數",
-      "statement": "分子或分母至少一方含分數的分數。"
+      "name": "分數混合運算順序",
+      "statement": "先括號，後乘除，再加減；同一層級由左到右。"
     },
     {
-      "name": "主除法",
-      "statement": "整個分子值除以整個分母值。"
+      "name": "分數除法",
+      "statement": "除以一個非零分數，等於乘以它的倒數。"
+    },
+    {
+      "name": "多層括號",
+      "statement": "先計算最內層括號，完成後再處理外層。"
+    }
+  ],
+  "classificationMap": [
+    {
+      "number": "[[frac:1|2]]＋[[frac:3|4]]×[[frac:2|3]]",
+      "classifications": [
+        "先乘後加"
+      ]
+    },
+    {
+      "number": "（[[frac:5|6]]－[[frac:1|3]]）×[[frac:3|2]]",
+      "classifications": [
+        "先括號後乘法"
+      ]
+    },
+    {
+      "number": "[[frac:3|5]]÷2＋[[frac:1|10]]",
+      "classifications": [
+        "同層乘除先於加法"
+      ]
+    },
+    {
+      "number": "1－[ [[frac:2|3]]－（[[frac:1|4]]＋[[frac:1|12]]）]",
+      "classifications": [
+        "由內向外處理括號"
+      ]
     }
   ],
   "formulas": [
     {
-      "formula": "(a/b)/(c/d)=ad/bc",
+      "formula": "a÷[[frac:b|c]]=a×[[frac:c|b]]",
       "conditions": [
-        "b、c、d非0"
+        "b≠0",
+        "c≠0"
       ],
-      "meaning": "基本繁分數化簡。"
+      "meaning": "除以分數改成乘以倒數。"
+    },
+    {
+      "formula": "先括號 → 乘除 → 加減",
+      "conditions": [
+        "同一層級由左到右"
+      ],
+      "meaning": "所有分數混合運算都遵守相同順序。"
     }
   ],
   "nonApplicableCases": [
-    "分母區等於0時原式無定義。",
-    "不能把所有分子相乘、所有分母相乘而忽略主除法。",
-    "括號層級不清時必須重寫。",
-    "超出基本多層代數繁分式不在本節範圍。"
+    "本課不使用分子或分母內再放一個分數的巢狀分式表示。",
+    "除數不能是 0。",
+    "不能因為分母相同，就跳過乘法、除法或括號的運算順序。"
   ],
   "method": [
-    {
-      "step": 1,
-      "instruction": "找最長或最外層主分數線。",
-      "check": "哪些項屬於完整分子與分母？"
-    },
-    {
-      "step": 2,
-      "instruction": "分別算上方與下方。",
-      "check": "括號是否先完成？"
-    },
-    {
-      "step": 3,
-      "instruction": "確認下方不為0。",
-      "check": "除數可否取倒數？"
-    },
-    {
-      "step": 4,
-      "instruction": "改寫成乘倒數並約分。",
-      "check": "倒的是整個分母值。"
-    },
-    {
-      "step": 5,
-      "instruction": "估值或乘回驗算。",
-      "check": "結果大小方向合理嗎？"
-    }
+    "第一步：圈出最內層括號。",
+    "第二步：在同一層中先算乘法和除法。",
+    "第三步：再算加法和減法。",
+    "第四步：每完成一層就化簡分數，並檢查除數是否為 0。",
+    "第五步：情境題要把答案連回單位與題意。"
   ],
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "(2/5)/(3/10)。",
+      "prompt": "計算 [[frac:1|2]]＋[[frac:3|4]]×[[frac:2|3]]。",
       "solutionSteps": [
-        "改寫2/5÷3/10。",
-        "乘10/3並約分。"
+        "先算乘法：[[frac:3|4]]×[[frac:2|3]]=[[frac:1|2]]。",
+        "再算加法：[[frac:1|2]]＋[[frac:1|2]]=1。"
       ],
-      "answer": "4/3。"
+      "answer": "1"
     },
     {
       "exampleId": "L2",
-      "prompt": "4/(5/6)。",
+      "prompt": "計算 1－[ [[frac:2|3]]－（[[frac:1|4]]＋[[frac:1|12]]）]。",
       "solutionSteps": [
-        "4寫成4/1。",
-        "4×6/5。"
+        "先算內層：[[frac:1|4]]＋[[frac:1|12]]=[[frac:1|3]]。",
+        "再算中括號：[[frac:2|3]]－[[frac:1|3]]=[[frac:1|3]]。",
+        "最後算：1－[[frac:1|3]]=[[frac:2|3]]。"
       ],
-      "answer": "24/5。"
-    },
-    {
-      "exampleId": "L3",
-      "prompt": "(1/2+1/3)/(7/6)。",
-      "solutionSteps": [
-        "上方=5/6。",
-        "5/6÷7/6=5/7。"
-      ],
-      "answer": "5/7。"
-    },
-    {
-      "exampleId": "L4",
-      "prompt": "(3/4)/(1-1/4)。",
-      "solutionSteps": [
-        "下方=3/4。",
-        "同一非零數相除。"
-      ],
-      "answer": "1。"
+      "answer": "[[frac:2|3]]"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "把主分數線當乘號。",
-      "why": "未讀出除法。",
-      "correction": "改寫成上方÷下方。"
+      "mistake": "從左到右一路計算，忽略先乘除後加減。",
+      "why": "把所有運算視為同一優先級。",
+      "correction": "先標出乘法和除法，再處理加減。"
     },
     {
-      "mistake": "只把分母區其中一項取倒數。",
-      "why": "未把下方視為整體。",
-      "correction": "先算完整分母值。"
+      "mistake": "有括號卻先算括號外。",
+      "why": "沒有看清楚運算範圍。",
+      "correction": "多層括號一定由最內層開始。"
     },
     {
-      "mistake": "上下含加減卻直接交叉乘。",
-      "why": "省略括號內運算。",
-      "correction": "分別化簡上下。"
+      "mistake": "除以分數時沒有取倒數。",
+      "why": "把除法直接當乘法。",
+      "correction": "除以 [[frac:b|c]] 要改成乘以 [[frac:c|b]]。"
     },
     {
-      "mistake": "分母區算成0仍繼續。",
-      "why": "忽略除以0。",
-      "correction": "先做定義域檢查。"
+      "mistake": "把兩個分數的分子相加、分母也相加。",
+      "why": "混淆分數加法與乘法。",
+      "correction": "加減要先通分；乘法才是分子乘分子、分母乘分母。"
     },
     {
-      "mistake": "多層繁分數由外向內亂拆。",
-      "why": "未按括號層級。",
-      "correction": "先算最內層或明確括號。"
-    },
-    {
-      "mistake": "結果未約分或未估值。",
-      "why": "算術錯未發現。",
-      "correction": "約分並乘回除數。"
+      "mistake": "把巢狀分式當成必要寫法。",
+      "why": "混淆排版形式與運算本質。",
+      "correction": "改用括號和 ÷，運算關係更清楚。"
     }
   ],
   "selfCheck": [
-    "主分數線是哪一條？",
-    "分子與分母是否各自化簡？",
-    "分母值是否非0？",
-    "是否只倒除數？",
-    "結果乘回分母是否等於分子？"
+    "我是否先算最內層括號？",
+    "我是否在同一層先乘除、後加減？",
+    "我是否把除以分數改成乘以倒數？",
+    "我是否每一步都保持等值並約分？",
+    "情境題的答案是否有正確單位？"
   ],
   "summary": [
-    "繁分數主線代表除法。",
-    "上下各自先化簡。",
-    "最後除以分母值，即乘其倒數。",
-    "分母區不可為0。"
+    "分數混合運算的順序和整數相同。",
+    "括號由內向外，乘除先於加減。",
+    "除以非零分數等於乘以倒數。",
+    "用括號與 ÷ 表示即可，不需要巢狀分式。"
   ],
   "connections": {
-    "previous": "先備技能為 fraction-mixed-number，需能完成其基本判斷與計算。",
+    "previous": "需要先會分數加減、乘除與帶分數轉換。",
     "next": [
-      "百分率可以寫成分數後參與繁分數。",
-      "基準量反求本質上是部分量除以分率。"
+      "百分率與基準量題會使用分數混合運算。",
+      "分數素養情境會要求先建立算式，再按順序計算。"
     ]
   },
   "practiceLinks": {
@@ -212,15 +216,13 @@
   },
   "lectureReview": {
     "mathematicalCorrectness": "pass",
-    "zeroFoundationReadability": "pass",
-    "scopeCheck": "junior-high CAP scope",
+    "zeroFoundationReadability": "pass after listed prerequisites",
+    "scopeCheck": "junior-high fraction mixed-operations scope",
     "examplesNotCopiedFromBank": true,
     "minimumCommonMistakesMet": true,
     "symbolDefinitionsComplete": true,
-    "reviewNote": "四個例題均先獨立計算上下值，再以乘回驗證商；分母非0條件逐題確認，多層範圍限制在國中基本化簡。",
-    "reviewVersion": "human-lecture-review-r3.0",
-    "reviewedAt": "2026-07-12"
+    "reviewNote": "The former complex-fraction topic was replaced with ordinary mixed operations using parentheses and explicit division."
   },
-  "contentSha256": "0c8ca3d00254f9491f1aa82b0fb58205c62ad4fc5f187b34e65619e7d75d869c",
-  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+  "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+  "contentSha256": "17709259dde2c9395f54dbc92033141e518fd6aac4032f37451512057677fb21"
 }
