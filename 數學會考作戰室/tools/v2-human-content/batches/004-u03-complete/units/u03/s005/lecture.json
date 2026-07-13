@@ -42,13 +42,13 @@
       "meaning": "a個相同群組，每組含x+b。"
     },
     {
-      "symbol": "-[x-(y+1)]",
-      "meaning": "須由內向外處理兩層負號。"
+      "symbol": "−[x−(3+1)]",
+      "meaning": "須由內向外處理兩層括號前的負號。"
     }
   ],
   "conceptNarrative": [
     "含括號方程式最常見錯誤是外係數只乘第一項。",
-    "若方程式兩邊都有公因數，可先同除以該數，減少展開工作。",
+    "只有在等號兩邊的每一項都有同一個非零公因數時，才能將兩邊同除以該數；加減連接的個別項不能直接約分。",
     "括號前負號等於乘-1，括號內每項都要變號。",
     "生活題中「每一組都增加或減少」通常形成a(x±b)，而「總共增加」則在括號外。"
   ],
@@ -192,7 +192,7 @@
   "summary": [
     "括號表示整體。",
     "分配律需乘每一項。",
-    "可先除共同係數。",
+    "等號兩邊所有項都有共同非零因數時，才可整體同除。",
     "每組變化通常放在括號內。"
   ],
   "connections": {
@@ -233,7 +233,7 @@
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "4731260d831b7de47dc958891aefa36b3bab727e17413212652be4759f50912d",
+  "contentSha256": "0e95bcc103fc05766c89091e8241bd6504e993097e88600e0120cf349d945dff",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 }

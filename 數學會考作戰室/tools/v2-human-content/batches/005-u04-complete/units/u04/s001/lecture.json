@@ -16,7 +16,7 @@
   "prerequisiteBridge": "本技能是本單元起點；先備只需能讀等號、未知數與一次項。",
   "learningGoals": [
     "能說出二元、一次與方程式三個條件。",
-    "能將式子整理後再判斷，而不是隻看表面。",
+    "能將式子整理後再判斷，而不是只看表面。",
     "能排除含 xy、平方、未知數在分母等非一次形式。",
     "能辨認缺少某一未知數係數為 0 的特殊寫法。"
   ],
@@ -59,7 +59,7 @@
   "conceptDevelopment": [
     "判斷時要逐項檢查：有沒有等號、未知數是不是恰有兩種、未知數是否都只出現一次。",
     "式子可先移項與合併同類項。例如 x+y=x-y+4 整理成 2y=4，只剩一種未知數，因此不屬於真正含兩元的方程式。",
-    "一般形式 ax+by=c 中，a、b 可以有一個是 0，但若課程要求「實際含兩個未知數」，題目通常需兩個係數皆非 0；本單元採用實際出現兩未知數的判準。"
+    "一般形式 ax+by=c 中，a、b、c 為已知數，且 a、b 不可同時為 0。若題目另外要求式中實際出現 x、y 兩種未知數，則 a、b 都不可為 0。"
   ],
   "definitions": [
     {
@@ -79,7 +79,8 @@
     {
       "formula": "ax+by=c",
       "conditions": [
-        "a、b、c 為已知數，且 a、b 皆非 0 時，式中實際含 x、y 兩元。"
+        "a、b、c 為已知數，且 a、b 不可同時為 0。",
+        "若題目要求實際出現 x、y，則 a、b 都不可為 0。"
       ],
       "meaning": "用係數與常數表示所有二元一次方程式。"
     }
@@ -203,7 +204,7 @@
     "next": "下一技能「有序數對與解的判斷」會延伸目前能力。"
   },
   "figureReferences": [],
-  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避擴音前使用 U05 坐標圖形。",
+  "accessibilityNote": "本講義不需要圖形；所有關係均以文字、等式與逐步運算完整呈現，避免提前使用 U05 坐標圖形。",
   "lectureReview": {
     "decision": "pass",
     "mathematicalCorrectness": "pass",
@@ -215,5 +216,5 @@
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "1b312439695d757e953bfc7616955f6c98399d993047767a9a883fa9df93e8d1"
+  "contentSha256": "1d0e6236b4a1a0e7395110ad2a3712fc2371e35f6a8bd0cf8dc3be8ea98fe4db"
 }

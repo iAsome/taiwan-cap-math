@@ -38,12 +38,16 @@
   ],
   "notation": [
     {
-      "symbol": "A(x)=a+px",
-      "meaning": "方案A的基本費a加每單位p元。"
+      "symbol": "方案 A 的總費用=方案 A 基本費+方案 A 單位費×使用量",
+      "meaning": "把方案 A 的固定費與按量費完整列出。"
     },
     {
-      "symbol": "A(x)=B(x)",
-      "meaning": "求兩方案同價點。"
+      "symbol": "方案 B 的總費用=方案 B 基本費+方案 B 單位費×使用量",
+      "meaning": "把方案 B 的固定費與按量費完整列出。"
+    },
+    {
+      "symbol": "方案 A 的總費用=方案 B 的總費用",
+      "meaning": "兩方案同價時使用量所滿足的方程式。"
     }
   ],
   "conceptNarrative": [
@@ -64,18 +68,19 @@
   ],
   "formulas": [
     {
-      "formula": "x=(b-a)/(p-q)",
+      "formula": "方案 A 基本費+方案 A 單位費×使用量=方案 B 基本費+方案 B 單位費×使用量",
       "conditions": [
-        "p≠q"
+        "比較的是同一個使用量",
+        "兩邊費用使用同一貨幣單位"
       ],
-      "meaning": "兩線性費用的同價點。"
+      "meaning": "列出兩個完整費用式後求同價點。"
     },
     {
-      "formula": "A(x)-B(x)=(a-b)+(p-q)x",
+      "formula": "方案 A 總費用−方案 B 總費用",
       "conditions": [
-        "同一使用量x"
+        "使用量相同"
       ],
-      "meaning": "比較差額。"
+      "meaning": "正負號可用來判斷哪個方案較便宜。"
     }
   ],
   "nonApplicableCases": [
@@ -92,13 +97,13 @@
     },
     {
       "step": 2,
-      "instruction": "建立A(x)與B(x)。",
-      "check": "同一x代表相同使用量？"
+      "instruction": "分別寫出方案 A 與方案 B 的完整總費用。",
+      "check": "兩式是否使用同一個使用量？"
     },
     {
       "step": 3,
-      "instruction": "令A(x)=B(x)求同價點。",
-      "check": "移項與除法是否正確？"
+      "instruction": "令兩個完整總費用相等並解方程式。",
+      "check": "是否同時保留兩方案的基本費與單位費？"
     },
     {
       "step": 4,
@@ -233,7 +238,7 @@
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "065e115ed3c281b1978a1dd6be851f10ba035d06e32d5dbf1c57f81846cdbee1",
+  "contentSha256": "f430fa603f03579a04fe9869601a31da42bd682aafa170260dd1af6c9f04bcd7",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 }

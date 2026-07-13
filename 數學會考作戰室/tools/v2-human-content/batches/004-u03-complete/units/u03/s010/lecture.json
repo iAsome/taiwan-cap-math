@@ -3,7 +3,7 @@
   "unitId": "u03",
   "topicId": "u03-linear-equation-apps",
   "skillId": "linear-equation-rate-problem",
-  "title": "行程問題：由距離和速率與時間建立分段方程式",
+  "title": "行程問題：用距離、速率和時間建立方程式",
   "audience": "國中零基礎至會考滿分",
   "reviewStatus": "independently-reviewed",
   "learningOutcomes": [
@@ -14,8 +14,16 @@
   ],
   "prerequisites": [
     {
-      "skillId": "linear-equation-money-problem",
-      "requiredLevel": "能區分固定費、單價、數量與餘額，熟悉小數和百分率。"
+      "skillId": "linear-equation-basic-solving",
+      "requiredLevel": "能解一元一次方程式並代回檢查。"
+    },
+    {
+      "skillId": "linear-equation-fractions",
+      "requiredLevel": "能處理分數、小數與分段總時間方程式。"
+    },
+    {
+      "skillId": "fraction-multiply-divide",
+      "requiredLevel": "能用距離÷速率求時間，並完成必要單位換算。"
     }
   ],
   "glossary": [
@@ -199,7 +207,7 @@
     "單位換算是列式前置步驟。"
   ],
   "connections": {
-    "previous": "需要熟悉金錢問題中的固定量與變動量結構，以及分數方程式。",
+    "previous": "需要理解距離、速率、時間的關係，能換算長度與時間單位，並能解含分數或小數的一元一次方程式。",
     "next": [
       "分配問題會轉向每份量與份數。",
       "綜合素養題會同時包含多階段速率與初始量。"
@@ -236,7 +244,7 @@
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "3be0eae0b20234d28edbf8ab2dbc87b690f0ed9b11067150d07da57e76281132",
+  "contentSha256": "a36565291412cdfcf39c80121e503391413bc671adbc544674e0fc87dd62a505",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 }

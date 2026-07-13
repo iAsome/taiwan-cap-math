@@ -38,19 +38,18 @@
   ],
   "notation": [
     {
-      "symbol": "LHS",
-      "meaning": "left-hand side，等號左邊的值。"
+      "symbol": "等號左邊",
+      "meaning": "把候選值代入後，單獨計算等號左側的值。"
     },
     {
-      "symbol": "RHS",
-      "meaning": "right-hand side，等號右邊的值。"
+      "symbol": "等號右邊",
+      "meaning": "把候選值代入後，單獨計算等號右側的值。"
     }
   ],
   "conceptNarrative": [
     "驗算時不要使用自己化簡後可能已出錯的式子，而要回到原方程式。",
     "負數代入、括號與分母是最常出錯的地方。",
-    "若左右不等，候選值就不是解；只需要一個不等結果即可否定。",
-    "情境題還需檢查整數、正值、單位等限制，代數成立只是第一關。"
+    "若左右不等，候選值就不是解；只需要一個不等結果即可否定。"
   ],
   "formalDefinitions": [
     {
@@ -64,11 +63,11 @@
   ],
   "formulas": [
     {
-      "formula": "LHS(a)=RHS(a)",
+      "formula": "代入後左邊的值=代入後右邊的值",
       "conditions": [
-        "a代入原方程式每一處未知數"
+        "候選值須代入原方程式每一處未知數"
       ],
-      "meaning": "候選解成立的必要且充分條件。"
+      "meaning": "候選值是方程式解的判準。"
     }
   ],
   "nonApplicableCases": [
@@ -100,8 +99,8 @@
     },
     {
       "step": 5,
-      "instruction": "再檢查情境限制。",
-      "check": "答案的單位、正負與整數性是否合理？"
+      "instruction": "若左右不等，記錄哪一邊的計算先出現差異。",
+      "check": "是否完整代入原式的每一個未知數？"
     }
   ],
   "workedExamples": [
@@ -151,7 +150,7 @@
     {
       "mistake": "只算左邊就判定。",
       "why": "未比較右邊。",
-      "correction": "把LHS與RHS都寫出。"
+      "correction": "把等號左邊與右邊的值分開寫出。"
     },
     {
       "mistake": "負數代入不加括號。",
@@ -167,11 +166,6 @@
       "mistake": "候選值不成立就修改右邊。",
       "why": "改變題目。",
       "correction": "否定候選值並重查解法。"
-    },
-    {
-      "mistake": "只驗算代數不看情境。",
-      "why": "可能得到負人數或小數箱數。",
-      "correction": "再做合理性檢查。"
     }
   ],
   "selfCheck": [
@@ -184,14 +178,13 @@
   "summary": [
     "解必須使原式左右相等。",
     "驗算可找到符號與算術錯誤。",
-    "負數代入要加括號。",
-    "情境答案還需通過範圍限制。"
+    "負數代入要加括號。"
   ],
   "connections": {
     "previous": "需要會解含括號與分母的一元一次方程式。",
     "next": [
-      "年齡、金錢與行程題都要以驗算確認列式。",
-      "合理性檢查會進一步判斷單位與範圍。"
+      "年齡、金錢與行程題都要以代回原式確認列式。",
+      "後續的合理性檢查才會加入單位、整數與範圍條件。"
     ]
   },
   "practiceLinks": {
@@ -225,7 +218,7 @@
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "ffb95d27cbd419bf9414bd9374a2229fb2f9a9683735704ee74962b952f2f8e1",
+  "contentSha256": "db8429e842f1bb786d286020e3f74ec9b7ff9df62dde1a0ebacc95efb8cd8682",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 }

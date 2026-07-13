@@ -14,8 +14,24 @@
   ],
   "prerequisites": [
     {
-      "skillId": "linear-equation-consecutive-integers",
-      "requiredLevel": "能用一個未知數表示連續整數、偶數或奇數並列式。"
+      "skillId": "linear-equation-check-solution",
+      "requiredLevel": "能把候選值代回原方程式確認代數成立。"
+    },
+    {
+      "skillId": "linear-equation-age-problem",
+      "requiredLevel": "能辨認年齡需為合理的非負數。"
+    },
+    {
+      "skillId": "linear-equation-money-problem",
+      "requiredLevel": "能分辨金額與件數的單位及整數限制。"
+    },
+    {
+      "skillId": "linear-equation-rate-problem",
+      "requiredLevel": "能辨認距離、速率與時間的正值和單位限制。"
+    },
+    {
+      "skillId": "linear-equation-distribution-problem",
+      "requiredLevel": "能檢查份數、箱數與餘數條件。"
     }
   ],
   "glossary": [
@@ -64,7 +80,7 @@
   ],
   "formulas": [
     {
-      "formula": "代數驗算+定義域檢查=情境驗收",
+      "formula": "代數驗算+題目允許的範圍檢查=情境驗收",
       "conditions": [
         "題幹限制完整列出"
       ],
@@ -188,7 +204,7 @@
     "不合理時不可任意修改解。"
   ],
   "connections": {
-    "previous": "需要會驗算方程式並理解各類應用量的單位。",
+    "previous": "需要先會代回原方程式，再結合年齡、金錢、行程與分配問題各自的單位、整數和範圍限制。",
     "next": [
       "方案比較要檢查交點是否位於可用範圍。",
       "綜合素養題會同時檢查模型與情境。"
@@ -225,7 +241,7 @@
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "036ea1f7e1a4e046a1f8784378c3293f7ce2b38fef69fc2e105fcbf915ec4401",
+  "contentSha256": "1b5d01fc0330b9ec4032fb296c66c9a633ca0d311a1ca8b6c0fc97b0319efa45",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 }
