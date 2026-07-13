@@ -1,0 +1,58 @@
+{
+  "status": "PASS_MANUAL_SEMANTIC_AUDIT_BATCH_006_R1",
+  "scope": [
+    "u02-s007",
+    "u02-s008",
+    "u02-s009",
+    "u02-s010"
+  ],
+  "artifactCounts": {
+    "lectures": 4,
+    "mcQuestions": 48,
+    "constructedResponses": 8,
+    "questions": 56,
+    "total": 60
+  },
+  "questionVerdictCounts": {
+    "PREREQUISITE_METADATA_REPAIR": 16,
+    "WORDING_AND_METADATA_REPAIR": 1,
+    "DIFFICULTY_AND_METADATA_REPAIR": 5,
+    "RUBRIC_REPAIR": 5,
+    "SEQUENCE_SOLUTION_AND_METADATA_REPAIR": 1,
+    "SEQUENCE_AND_METADATA_REPAIR": 1,
+    "SEQUENCE_AND_RUBRIC_REPAIR": 2,
+    "PASS": 15,
+    "SEQUENCE_REPAIR": 3,
+    "DIFFICULTY_REPAIR": 3,
+    "SEQUENCE_AND_DIFFICULTY_REPAIR": 1,
+    "SEQUENCE_SOLUTION_REPAIR": 2,
+    "SEQUENCE_SOLUTION_AND_RUBRIC_REPAIR": 1
+  },
+  "lectureVerdictCounts": {
+    "PREREQUISITE_AND_WORDING_REPAIR": 1,
+    "PREREQUISITE_AND_NOTATION_REPAIR": 1,
+    "ASSESSMENT_ALIGNMENT_REPAIR": 1,
+    "WORDING_AND_NOTATION_REPAIR": 1
+  },
+  "mathematicsIncorrectCount": 0,
+  "answerIndexIncorrectCount": 0,
+  "figuresReviewed": 1,
+  "utf8Integrity": "PASS_UTF8_INTEGRITY",
+  "productionModified": false,
+  "cumulativeAfterBatch006": {
+    "questionsComplete": 364,
+    "lecturesComplete": 26,
+    "artifactsComplete": 390,
+    "questionsPending": 4382,
+    "lecturesPending": 313,
+    "artifactsPending": 4695
+  },
+  "keyFindings": [
+    "S007 and S008 question metadata point to the wrong prerequisite skills.",
+    "S008 uses fraction subtraction for distance before S009.",
+    "S009 uses mixed numbers before S011 and variable substitution before U03.",
+    "S010 uses formal equations and mixed-number conversion before those skills are taught.",
+    "One figure was reviewed and passed."
+  ],
+  "nextBatch": "B007"
+}

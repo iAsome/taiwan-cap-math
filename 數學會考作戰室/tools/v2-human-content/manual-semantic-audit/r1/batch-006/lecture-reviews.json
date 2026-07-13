@@ -1,0 +1,48 @@
+[
+  {
+    "lectureId": "u02-s007-lecture-r1",
+    "unitId": "u02",
+    "slot": "s007",
+    "primaryVerdict": "PREREQUISITE_AND_WORDING_REPAIR",
+    "issues": [
+      "prerequisite 錯指 fraction-gcd-application，實際應直接承接 fraction-lcm-basic。",
+      "nonApplicableCases 使用「同餘條件」，對零基礎學生過早且未定義。"
+    ],
+    "recommendedAction": "改正前置技能；將同餘術語改成一般語言，說明不同起點需要額外推理且不在本節。"
+  },
+  {
+    "lectureId": "u02-s008-lecture-r1",
+    "unitId": "u02",
+    "slot": "s008",
+    "primaryVerdict": "PREREQUISITE_AND_NOTATION_REPAIR",
+    "issues": [
+      "prerequisite 錯指 LCM 應用，通分只需 LCM 基本能力。",
+      "notation 的「a/b ? c/d」不是正式比較記號。",
+      "題庫中的距離題提前依賴下一節分數減法。"
+    ],
+    "recommendedAction": "前置改為 fraction-lcm-basic；改用正式不等號敘述；將距離計算移到 S009 後。"
+  },
+  {
+    "lectureId": "u02-s009-lecture-r1",
+    "unitId": "u02",
+    "slot": "s009",
+    "primaryVerdict": "ASSESSMENT_ALIGNMENT_REPAIR",
+    "issues": [
+      "講義本身集中分數加減，但題庫混入 S011 才教的帶分數轉換與借位。",
+      "題庫另提前使用 U03 才教的變數代入。"
+    ],
+    "recommendedAction": "講義可保留；將混合數與變數題移到對應後續技能並補足純分數加減題。"
+  },
+  {
+    "lectureId": "u02-s010-lecture-r1",
+    "unitId": "u02",
+    "slot": "s010",
+    "primaryVerdict": "WORDING_AND_NOTATION_REPAIR",
+    "issues": [
+      "標題語序「用倍量和倒數與每份大小」不自然。",
+      "倒數 notation 使用負一次方，對零基礎學生不是必要核心記號。",
+      "題庫多處以正式方程式反求，早於 U03。"
+    ],
+    "recommendedAction": "標題改成清楚的乘法、除法與分裝；先用顛倒分子分母說明倒數；反求題改採逆運算。"
+  }
+]
