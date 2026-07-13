@@ -1,0 +1,53 @@
+{
+  "status": "PASS_MANUAL_SEMANTIC_AUDIT_BATCH_011_R1",
+  "scope": [
+    "u03-s013",
+    "u03-s014",
+    "u03-s015",
+    "u04-s001"
+  ],
+  "artifactCounts": {
+    "lectures": 4,
+    "mcQuestions": 48,
+    "constructedResponses": 8,
+    "questions": 56,
+    "total": 60
+  },
+  "questionVerdictCounts": {
+    "PASS": 46,
+    "RUBRIC_REPAIR": 6,
+    "OPTION_ANALYSIS_REPAIR": 1,
+    "LITERACY_REPAIR": 1,
+    "SEQUENCE_REPAIR": 1,
+    "DIFFICULTY_REPAIR": 1
+  },
+  "lectureVerdictCounts": {
+    "PASS": 2,
+    "LITERACY_REPAIR": 1,
+    "MATH_DEFINITION_REPAIR": 1
+  },
+  "mathematicsIncorrectCount": 0,
+  "answerIndexIncorrectCount": 0,
+  "figuresReviewed": 1,
+  "utf8Integrity": "PASS_UTF8_INTEGRITY",
+  "productionModified": false,
+  "cumulativeAfterBatch011": {
+    "questionsComplete": 644,
+    "lecturesComplete": 46,
+    "artifactsComplete": 690,
+    "questionsPending": 4102,
+    "lecturesPending": 293,
+    "artifactsPending": 4395,
+    "nextBatch": "B012"
+  },
+  "keyFindings": [
+    "U03-S013 lecture passes; both CR items need answer-only-zero rubric normalization.",
+    "U03-S014 fig-u03-s014-v010 verified (P 120+8n, Q 40+12n → x=20); v007 has false distractor option analysis.",
+    "U03-S015 lecture needs literacy-scope trim; v004 bus-seat item is decorative-context packaging.",
+    "All six U03 CR items in this batch lack unified answer-only-zero scoring rules.",
+    "U04-S001 lecture must unify coefficient-zero vs actually-two-unknowns definition layers.",
+    "U04-S001 audited in B011 only; excluded from U03 repair blueprint.",
+    "U03 full manual audit S001–S015 complete; unit repair blueprint u03-r1.json prepared."
+  ],
+  "nextBatch": "B012"
+}
