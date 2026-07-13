@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "math-v2-full-manual-semantic-audit-policy-r1",
+  "principle": "Automation may detect risks and verify structure, but automation may never assign PASS to an unaudited question.",
+  "allowedQuestionVerdicts": [
+    "PENDING_MANUAL",
+    "PASS",
+    "FORMAT_REPAIR",
+    "WORDING_REPAIR",
+    "MATH_REPAIR",
+    "SCOPE_REPAIR",
+    "RENDERER_REPAIR",
+    "SEQUENCE_REPAIR",
+    "REPLACE",
+    "REMOVE",
+    "REVISED_AND_REVIEWED"
+  ],
+  "hotfixReviewedQuestionIds": [
+    "u01-s001-cr001",
+    "u01-s001-cr002",
+    "u01-s001-v001",
+    "u01-s001-v002",
+    "u01-s001-v003",
+    "u01-s001-v004",
+    "u01-s001-v005",
+    "u01-s001-v006",
+    "u01-s001-v007",
+    "u01-s001-v008",
+    "u01-s001-v009",
+    "u01-s001-v010",
+    "u01-s001-v011",
+    "u01-s001-v012",
+    "u02-s012-cr001",
+    "u02-s012-cr002",
+    "u02-s012-v001",
+    "u02-s012-v002",
+    "u02-s012-v003",
+    "u02-s012-v004",
+    "u02-s012-v005",
+    "u02-s012-v006",
+    "u02-s012-v007",
+    "u02-s012-v008",
+    "u02-s012-v009",
+    "u02-s012-v010",
+    "u02-s012-v011",
+    "u02-s012-v012"
+  ],
+  "hotfixReviewedSkillSlots": [
+    "u01/s001",
+    "u02/s012"
+  ],
+  "fullReleaseRequirements": {
+    "ledgerRows": 4746,
+    "pendingManual": 0,
+    "manualDecisionRequiredForEveryQuestion": true,
+    "mcRequirements": [
+      "independent solution",
+      "answerIndex verification",
+      "all four options evaluated",
+      "single correct answer",
+      "difficulty checked",
+      "scope checked",
+      "renderer checked",
+      "Traditional Chinese checked",
+      "prerequisite sequence checked"
+    ],
+    "constructedResponseRequirements": [
+      "independent full solution",
+      "alternative valid method check",
+      "0-to-3 rubric distinction",
+      "partial-credit logic",
+      "unit and conclusion requirements",
+      "scope and prerequisite check",
+      "renderer and language check"
+    ],
+    "lectureRequirements": [
+      "definition accuracy",
+      "zero-foundation readability",
+      "symbol introduction order",
+      "prerequisite consistency",
+      "worked examples independently solved",
+      "minimum four real misconceptions",
+      "scope boundary"
+    ]
+  },
+  "encodingRequirements": {
+    "encoding": "UTF-8",
+    "nfcRequired": true,
+    "replacementCharacterForbidden": true,
+    "nulForbidden": true,
+    "surrogateForbidden": true,
+    "knownMojibakeFragmentsForbidden": [
+      "完戝",
+      "注愝",
+      "評分覝準",
+      "策略革切性",
+      "表靔",
+      "絝論",
+      "丝能呈睾",
+      "非靸",
+      "丝革用",
+      "坄技能公弝",
+      "先睆解",
+      "冝依",
+      "辨誝",
+      "整睆",
+      "靸擇",
+      "逝步",
+      "單佝",
+      "單元尝考",
+      "毝技能"
+    ]
+  },
+  "scopeRequirements": {
+    "visibleComplexFractionTermForbidden": true,
+    "nestedFractionAsRequiredSkillForbidden": true,
+    "unintroducedSymbolsForbidden": true,
+    "laterUnitConceptsInPrerequisiteFreeSkillForbidden": true
+  },
+  "releaseModes": {
+    "hotfix": "May publish only the exact reviewed IDs and renderer fix. All other question content must remain byte-for-byte unchanged.",
+    "full-release": "Blocked until all 4,746 questions and 339 lectures have manual audit evidence and no PENDING_MANUAL rows."
+  }
+}

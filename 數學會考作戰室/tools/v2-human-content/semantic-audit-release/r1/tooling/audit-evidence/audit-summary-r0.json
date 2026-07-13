@@ -1,0 +1,45 @@
+{
+  "status": "AUDIT_IN_PROGRESS_R0_NOT_PRODUCTION_APPROVED",
+  "snapshot": {
+    "zipSha256Verified": "a352346fa9820273c986775465a36aef653c5131b513267b6408bb0d458533f1",
+    "authoritativeZipSha256": "a352346fa9820273c986775465a36aef653c5131b513267b6408bb0d458533f1",
+    "payloadFileCount": 216,
+    "branch": "chatgpt/math-v2-human-authoring-r1",
+    "head": "8745276303a995a0473fb80b97656c8c4fb05633",
+    "repositoryStatusWarning": "DU 數學會考作戰室/tools/u10-r4-compose.mjs",
+    "zipPathEncodingNote": "The ZIP stored the Chinese top-level path using CP950/Big5 without a UTF-8 filename flag. Content files themselves decoded as UTF-8."
+  },
+  "inventory": {
+    "units": 23,
+    "skills": 339,
+    "mcQuestions": 4068,
+    "constructedResponses": 678,
+    "totalQuestions": 4746,
+    "figures": 178
+  },
+  "rendererAudit": {
+    "questionsContainingSlashInAnyField": 1119,
+    "questionsWithConfirmedMalformedRendererOutput": 576,
+    "questionsWithMalformedPromptOrChoiceOutput": 109,
+    "malformedFieldOccurrences": 1642,
+    "malformedPromptOrChoiceOccurrences": 194,
+    "mixedNumberQuestionCount": 32,
+    "mixedNumberFieldOccurrences": 166,
+    "rootCause": "shared/fraction-markup.js uses broad slash regexes that absorb adjacent Chinese prose, mixed-number whole parts, punctuation and nested slash expressions."
+  },
+  "scopeAudit": {
+    "confirmedProblemSkillId": "fraction-complex-fraction-basic",
+    "skillTitle": "繁分數基本化簡：把主分數線讀成除法，分層處理上下運算",
+    "affectedQuestions": 14,
+    "mcQuestions": 12,
+    "constructedResponses": 2,
+    "recommendedAction": "Remove the complex-fraction skill from required CAP scope and replace it with ordinary fraction mixed operations with parentheses. Reassign the three valid word problems."
+  },
+  "manualAuditProgress": {
+    "totalQuestions": 4746,
+    "manuallyAdjudicated": 14,
+    "pendingManual": 4732,
+    "passCount": 0,
+    "warning": "No pending question is treated as PASS."
+  }
+}
