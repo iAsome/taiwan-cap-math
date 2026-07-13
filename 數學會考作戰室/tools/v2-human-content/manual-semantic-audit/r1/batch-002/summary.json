@@ -1,0 +1,50 @@
+{
+  "status": "PASS_MANUAL_SEMANTIC_AUDIT_BATCH_002_R1",
+  "scope": [
+    "u01-s006",
+    "u01-s007",
+    "u01-s008",
+    "u01-s009"
+  ],
+  "artifactCounts": {
+    "lectures": 4,
+    "mcQuestions": 48,
+    "constructedResponses": 8,
+    "questions": 56,
+    "total": 60
+  },
+  "questionVerdictCounts": {
+    "PASS": 27,
+    "DIFFICULTY_REPAIR": 4,
+    "SEQUENCE_REPAIR": 16,
+    "WORDING_REPAIR": 1,
+    "SOLUTION_REPAIR": 6,
+    "RUBRIC_REPAIR": 2
+  },
+  "lectureVerdictCounts": {
+    "WORDING_REPAIR": 2,
+    "SEQUENCE_REPAIR": 1,
+    "RESTRUCTURE": 1
+  },
+  "mathematicsIncorrectCount": 0,
+  "answerIndexIncorrectCount": 0,
+  "figuresReviewed": 2,
+  "utf8Integrity": "PASS_UTF8_INTEGRITY",
+  "productionModified": false,
+  "cumulativeAfterBatch002": {
+    "questionsComplete": 140,
+    "lecturesComplete": 10,
+    "artifactsComplete": 150,
+    "questionsPending": 4606,
+    "lecturesPending": 329,
+    "artifactsPending": 4935
+  },
+  "keyFindings": [
+    "S007 is mathematically in scope but must move after integer addition and subtraction.",
+    "S008 is generally sound, but several solutions use subtraction notation before S009.",
+    "All eight constructed responses need an explicit answer-only-zero scoring rule; some also need solution or sequence repair.",
+    "S009 has the strongest quality in this batch: all 12 MC items are mathematically and semantically acceptable.",
+    "No invalid UTF-8 or known mojibake fragment was found."
+  ],
+  "nextBatch": "B003"
+}

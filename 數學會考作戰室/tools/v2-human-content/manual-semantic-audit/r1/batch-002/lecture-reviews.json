@@ -1,0 +1,55 @@
+[
+  {
+    "lectureId": "u01-s006-lecture-r1",
+    "unitId": "u01",
+    "slot": "s006",
+    "primaryVerdict": "WORDING_REPAIR",
+    "officialScopeEvidence": "第四學習階段數與量；絕對值及數線距離概念屬國中範圍。",
+    "issues": [
+      "notation 將 |x|=k 寫成「k>0 時通常有正負兩個解」；此處不是通常，而是恰有 x=k、x=-k 兩解。",
+      "summary 使用未先介紹的 ± 符號。",
+      "commonMistakes 提前出現 |a+b|，但整數加法在 S008 才教。"
+    ],
+    "recommendedAction": "將「通常」改為「恰有」；以「x=k 或 x=-k」取代 ±；把 |a+b| 的警示移到整數加法後。"
+  },
+  {
+    "lectureId": "u01-s007-lecture-r1",
+    "unitId": "u01",
+    "slot": "s007",
+    "primaryVerdict": "SEQUENCE_REPAIR",
+    "officialScopeEvidence": "第四學習階段數與量；兩點距離與絕對差在範圍內，但必須先學整數加減。",
+    "issues": [
+      "整份講義以 |a-b|、c+d、c-d 和分段路程相加為核心，卻排在 S008 加法與 S009 減法之前。",
+      "worked example L3 題幹「距離 4 的位置與 1 相距 6」語意不成立，應為「某位置與 1 相距 6」。",
+      "worked example L4 的「是否帶方向不同」語句不自然。",
+      "公式 x=c±d 使用未先定義的 ±。"
+    ],
+    "recommendedAction": "將整個 S007 移到 S009 之後；修正 L3、L4 文字；以 x=c+d 或 x=c-d 取代未說明的 ±。"
+  },
+  {
+    "lectureId": "u01-s008-lecture-r1",
+    "unitId": "u01",
+    "slot": "s008",
+    "primaryVerdict": "RESTRUCTURE",
+    "officialScopeEvidence": "第四學習階段數與量；整數加法、交換律與結合律屬國中範圍。",
+    "issues": [
+      "若 S007 後移，prerequisite 不能再指向 S007，應改為 S006 與相反數。",
+      "conceptNarrative 的「多項加法」容易與多項式加法混淆，應寫「多個整數相加」。",
+      "commonMistakes 使用「移項」描述重排加數，不適合本課。",
+      "commonMistakes 以「乘法倒數」解釋相反數相加錯誤，提前引入不必要概念。"
+    ],
+    "recommendedAction": "更新前置技能；改成「多個整數相加」和「重排加數」；刪除不必要的倒數比較。"
+  },
+  {
+    "lectureId": "u01-s009-lecture-r1",
+    "unitId": "u01",
+    "slot": "s009",
+    "primaryVerdict": "WORDING_REPAIR",
+    "officialScopeEvidence": "第四學習階段數與量；整數減法與減去負數屬國中範圍。",
+    "issues": [
+      "worked example L4 直接使用「兩邊加 7」的方程式操作，對本單元零基礎學生略早。",
+      "其餘定義、公式、例題、錯誤分析與順序均正確。"
+    ],
+    "recommendedAction": "L4 先用缺項或逆推語言說明，再將等式兩邊同加一數列為後續代數連結。"
+  }
+]
