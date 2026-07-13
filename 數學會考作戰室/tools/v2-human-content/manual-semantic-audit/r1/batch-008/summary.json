@@ -1,0 +1,49 @@
+{
+  "status": "PASS_MANUAL_SEMANTIC_AUDIT_BATCH_008_R1",
+  "scope": [
+    "u03-s001",
+    "u03-s002",
+    "u03-s003",
+    "u03-s004"
+  ],
+  "artifactCounts": {
+    "lectures": 4,
+    "mcQuestions": 48,
+    "constructedResponses": 8,
+    "questions": 56,
+    "total": 60
+  },
+  "questionVerdictCounts": {
+    "PASS": 41,
+    "SEQUENCE_REPAIR": 1,
+    "DIFFICULTY_REPAIR": 7,
+    "RUBRIC_REPAIR": 7
+  },
+  "lectureVerdictCounts": {
+    "PREREQUISITE_AND_SCOPE_REPAIR": 1,
+    "MATH_DEFINITION_REPAIR": 1,
+    "LOGIC_AND_NOTATION_REPAIR": 1,
+    "PASS": 1
+  },
+  "mathematicsIncorrectCount": 0,
+  "answerIndexIncorrectCount": 0,
+  "figuresReviewed": 1,
+  "utf8Integrity": "PASS_UTF8_INTEGRITY",
+  "productionModified": false,
+  "cumulativeAfterBatch008": {
+    "questionsComplete": 476,
+    "lecturesComplete": 34,
+    "artifactsComplete": 510,
+    "questionsPending": 4270,
+    "lecturesPending": 305,
+    "artifactsPending": 4575
+  },
+  "keyFindings": [
+    "U03-S001 introduces f(x) unnecessarily and one item solves an equation before equation instruction.",
+    "U03-S002 incorrectly allows a=0 while calling ax+b a first-degree expression.",
+    "U03-S003 must separate one-way multiplication preservation from reversible equivalence.",
+    "The three SVG figures across the acceleration wave were individually reviewed and passed.",
+    "U03-S004 lecture passes; only difficulty and rubric normalization are needed."
+  ],
+  "nextBatch": "B009"
+}

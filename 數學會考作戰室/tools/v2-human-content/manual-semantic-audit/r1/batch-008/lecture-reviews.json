@@ -1,0 +1,43 @@
+[
+  {
+    "lectureId": "u03-s001-lecture-r1",
+    "unitId": "u03",
+    "slot": "s001",
+    "primaryVerdict": "PREREQUISITE_AND_SCOPE_REPAIR",
+    "issues": [
+      "prerequisites 為空，但實際依賴整數、分數與小數四則。",
+      "notation 提前引入 f(x) 函數記號，本技能完全不需要。"
+    ],
+    "recommendedAction": "補上 U01、U02 運算前置；移除 f(x)，專注直接代入。"
+  },
+  {
+    "lectureId": "u03-s002-lecture-r1",
+    "unitId": "u03",
+    "slot": "s002",
+    "primaryVerdict": "MATH_DEFINITION_REPAIR",
+    "issues": [
+      "notation 稱 ax+b 為一元一次式，卻寫 a 可為 0；a=0 時式子不再是一次式。",
+      "若要容許 a=0，名稱必須改成至多一次式。"
+    ],
+    "recommendedAction": "一元一次式條件改為 a≠0；或明確改稱一元一次以下的式子。"
+  },
+  {
+    "lectureId": "u03-s003-lecture-r1",
+    "unitId": "u03",
+    "slot": "s003",
+    "primaryVerdict": "LOGIC_AND_NOTATION_REPAIR",
+    "issues": [
+      "ac=bc 與 a=b 以 ⇔ 連接時，反推必須要求 c≠0；目前條件只寫在旁註，容易誤讀。",
+      "應分開寫單向保持相等與可逆等價條件。"
+    ],
+    "recommendedAction": "將乘法等量公理寫成 a=b⇒ac=bc；只有 c≠0 時才可反推。"
+  },
+  {
+    "lectureId": "u03-s004-lecture-r1",
+    "unitId": "u03",
+    "slot": "s004",
+    "primaryVerdict": "PASS",
+    "issues": [],
+    "recommendedAction": "講義原樣保留；只修正一題難度與 CR 答案-only-zero 規則。"
+  }
+]
