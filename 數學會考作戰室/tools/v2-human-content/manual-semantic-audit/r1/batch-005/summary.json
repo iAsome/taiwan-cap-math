@@ -1,0 +1,55 @@
+{
+  "status": "PASS_MANUAL_SEMANTIC_AUDIT_BATCH_005_R1",
+  "scope": [
+    "u02-s003",
+    "u02-s004",
+    "u02-s005",
+    "u02-s006"
+  ],
+  "artifactCounts": {
+    "lectures": 4,
+    "mcQuestions": 48,
+    "constructedResponses": 8,
+    "questions": 56,
+    "total": 60
+  },
+  "questionVerdictCounts": {
+    "PASS": 31,
+    "DIFFICULTY_REPAIR": 8,
+    "LITERACY_REPAIR": 2,
+    "SEQUENCE_REPAIR": 1,
+    "RUBRIC_REPAIR": 8,
+    "WORDING_REPAIR": 2,
+    "MOVE_OR_REPLACE": 3,
+    "OPTION_ANALYSIS_REPAIR": 1
+  },
+  "lectureVerdictCounts": {
+    "WORDING_AND_FORMAT_REPAIR": 1,
+    "RESTRUCTURE": 2,
+    "WORDING_AND_EXAMPLE_REPAIR": 1
+  },
+  "mathematicsIncorrectCount": 0,
+  "answerIndexIncorrectCount": 0,
+  "confirmedContentErrorCount": 1,
+  "figuresReviewed": 0,
+  "utf8Integrity": "PASS_UTF8_INTEGRITY",
+  "productionModified": false,
+  "cumulativeAfterBatch005": {
+    "questionsComplete": 308,
+    "lecturesComplete": 22,
+    "artifactsComplete": 330,
+    "questionsPending": 4438,
+    "lecturesPending": 317,
+    "artifactsPending": 4755
+  },
+  "keyFindings": [
+    "U02-S006-V008 contains a confirmed false distractor explanation: 3+2 is 5, not 4.",
+    "U02-S004 application questions duplicate the dedicated U02-S006 skill and should move or be replaced.",
+    "U02-S003 uses inverse-square reasoning before the square-root unit in one literacy item.",
+    "The advanced sets in S003, S004, S005 and S006 contain multiple routine items with inflated difficulty labels.",
+    "U02-S006 incorrectly requires the LCM skill even though its application models only require GCD.",
+    "All eight constructed responses need an explicit answer-only-zero scoring rule.",
+    "No invalid UTF-8 or known mojibake fragment was found."
+  ],
+  "nextBatch": "B006"
+}

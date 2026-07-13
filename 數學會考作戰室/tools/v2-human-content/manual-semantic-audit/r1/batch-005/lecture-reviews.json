@@ -1,0 +1,54 @@
+[
+  {
+    "lectureId": "u02-s003-lecture-r1",
+    "unitId": "u02",
+    "slot": "s003",
+    "primaryVerdict": "WORDING_AND_FORMAT_REPAIR",
+    "officialScopeEvidence": "質因數分解、指數表示與完全平方判斷屬國中數與量範圍。",
+    "issues": [
+      "notation 使用 `p^a` 程式式插入符號，與全站正式上標不一致。",
+      "標題宣稱「唯一」，講義應明確補上「忽略質因數排列順序後唯一」。",
+      "「任何大於1的合數」可分解無誤，但 formal definition 需明確區分質數本身與合數的分解表示。"
+    ],
+    "recommendedAction": "改用 pᵃ 或文字說明；補上唯一性的精確條件；保持 1 沒有質因數分解的邊界。"
+  },
+  {
+    "lectureId": "u02-s004-lecture-r1",
+    "unitId": "u02",
+    "slot": "s004",
+    "primaryVerdict": "RESTRUCTURE",
+    "officialScopeEvidence": "最大公因數、互質及質因數法屬國中數與量範圍。",
+    "issues": [
+      "conceptNarrative 與例題 L4 提前使用比例與最簡整數比，但比例尚未在目前順序中教授。",
+      "三個 literacy 題與後續 U02-S006 的分組、切割、鋪面內容直接重複。",
+      "本技能應專注 GCD 定義、互質、質因數法與反推結構。"
+    ],
+    "recommendedAction": "移除早期比例內容；將應用題集中到 S006；以互質、整除特例和反推條件補足本技能。"
+  },
+  {
+    "lectureId": "u02-s005-lecture-r1",
+    "unitId": "u02",
+    "slot": "s005",
+    "primaryVerdict": "WORDING_AND_EXAMPLE_REPAIR",
+    "officialScopeEvidence": "最小公倍數及週期同步屬國中數與量範圍。",
+    "issues": [
+      "例題 L4 已先給共同週期 36 分鐘，只計算每 12 分鐘的出現次數，沒有實際練習求 LCM。",
+      "a、b 的整除特例與 notation 應明確限定正整數。",
+      "「第一次共同重合的正位置」應依情境說成最小正共同倍數或下一次共同時刻。"
+    ],
+    "recommendedAction": "用兩個或三個原始週期重新設計 L4；補足正整數條件；統一數值與時間語言。"
+  },
+  {
+    "lectureId": "u02-s006-lecture-r1",
+    "unitId": "u02",
+    "slot": "s006",
+    "primaryVerdict": "RESTRUCTURE",
+    "officialScopeEvidence": "最大公因數的分組、切割與鋪面應用屬國中數與量範圍。",
+    "issues": [
+      "prerequisite 指向 LCM 技能，但本技能只需要 GCD；不應要求先學 LCM 才能理解。",
+      "S004 已經出現相同的分組、繩長與最大正方形題型，造成跨技能重複。",
+      "12 題選擇題高度集中於三個固定模板，advanced 題仍只是相同模型增加一個後續運算。"
+    ],
+    "recommendedAction": "前置改為 GCD basic；移除 S004 重複題；保留核心模型但增加模型辨識、反例、單位轉換與不適用條件。"
+  }
+]
