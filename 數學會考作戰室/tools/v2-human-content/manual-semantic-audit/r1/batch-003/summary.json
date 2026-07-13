@@ -1,0 +1,59 @@
+{
+  "status": "PASS_MANUAL_SEMANTIC_AUDIT_BATCH_003_R1",
+  "scope": [
+    "u01-s010",
+    "u01-s011",
+    "u01-s012",
+    "u01-s013"
+  ],
+  "artifactCounts": {
+    "lectures": 4,
+    "mcQuestions": 48,
+    "constructedResponses": 8,
+    "questions": 56,
+    "total": 60
+  },
+  "questionVerdictCounts": {
+    "PASS": 26,
+    "FORMAT_REPAIR": 10,
+    "DIFFICULTY_REPAIR": 7,
+    "RUBRIC_REPAIR": 4,
+    "WORDING_REPAIR": 1,
+    "FORMAT_AND_RUBRIC_REPAIR": 3,
+    "OPTION_ANALYSIS_REPAIR": 1,
+    "CHOICE_AND_FORMAT_REPAIR": 1,
+    "SEQUENCE_REPAIR": 1,
+    "OPTION_ANALYSIS_AND_FORMAT_REPAIR": 1,
+    "LITERACY_REPAIR": 1
+  },
+  "lectureVerdictCounts": {
+    "SEQUENCE_REPAIR": 1,
+    "WORDING_AND_NOTATION_REPAIR": 1,
+    "PASS": 1,
+    "RESTRUCTURE": 1
+  },
+  "mathematicsIncorrectCount": 0,
+  "answerIndexIncorrectCount": 0,
+  "confirmedContentErrorCount": 3,
+  "figuresReviewed": 0,
+  "utf8Integrity": "PASS_UTF8_INTEGRITY",
+  "productionModified": false,
+  "cumulativeAfterBatch003": {
+    "questionsComplete": 196,
+    "lecturesComplete": 14,
+    "artifactsComplete": 210,
+    "questionsPending": 4550,
+    "lecturesPending": 325,
+    "artifactsPending": 4875
+  },
+  "keyFindings": [
+    "S010 is mathematically sound, but its advanced set is too routine and the lecture introduces exponent notation before S012.",
+    "S011 is mostly sound; square brackets are used before being introduced and two advanced labels are too high.",
+    "S012 lecture passes, but two advanced items are basic-level and one distractor analysis falsely claims the unit is wrong.",
+    "S013 requires restructuring around zero exponent, formal notation and student-visible programming caret syntax.",
+    "u01-s013-v008 contains a confirmed unrelated and mathematically invalid option-analysis explanation.",
+    "All eight constructed responses need an explicit answer-only-zero scoring rule.",
+    "No invalid UTF-8 or known mojibake fragment was found."
+  ],
+  "nextBatch": "B004"
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "lectureId": "u01-s010-lecture-r1",
+    "unitId": "u01",
+    "slot": "s010",
+    "primaryVerdict": "SEQUENCE_REPAIR",
+    "officialScopeEvidence": "國中整數乘法、除法與符號規則。",
+    "issues": [
+      "notation 提前使用 (-1)^n，但指數意義在 S012 才教，且 ^ 是程式式記號。",
+      "公式說明寫「兩個負方向相乘得正」，應為「兩個負數相乘得正」。",
+      "formalDefinitions 缺少 0÷b=0（b≠0），但 commonMistakes 已使用此規則。",
+      "「整數除法本節只處理可整除或結果仍在題目指定範圍內」語意模糊。"
+    ],
+    "recommendedAction": "移除提前的指數記號，以負因數個數敘述；修正負數措辭；補上零除以非零數；重寫整數除法適用範圍。"
+  },
+  {
+    "lectureId": "u01-s011-lecture-r1",
+    "unitId": "u01",
+    "slot": "s011",
+    "primaryVerdict": "WORDING_AND_NOTATION_REPAIR",
+    "officialScopeEvidence": "國中整數四則混合與運算順序。",
+    "issues": [
+      "標題「依序處理括號與乘除和加減」語序不自然。",
+      "題庫多次使用 [ ]，但 notation 只介紹 ( )。",
+      "notation 使用 ASCII +、-，與內容中的全形或數學減號不一致。"
+    ],
+    "recommendedAction": "標題改為「先算括號，再算乘除，最後算加減」；補充中括號或統一括號；統一加減符號。"
+  },
+  {
+    "lectureId": "u01-s012-lecture-r1",
+    "unitId": "u01",
+    "slot": "s012",
+    "primaryVerdict": "PASS",
+    "officialScopeEvidence": "國中正整數指數、底數、指數、括號與負底數冪。",
+    "issues": [],
+    "recommendedAction": "原樣保留。"
+  },
+  {
+    "lectureId": "u01-s013-lecture-r1",
+    "unitId": "u01",
+    "slot": "s013",
+    "primaryVerdict": "RESTRUCTURE",
+    "officialScopeEvidence": "國中同底數冪乘除、冪的乘方與積的乘方。",
+    "issues": [
+      "同底數除法條件寫 m≥n，當 m=n 時會得到 0 次方，但前一課只定義正整數指數，本課也沒有定義 a⁰=1。",
+      "(aᵐ)ⁿ=aᵐⁿ 的右側上標並排，對零基礎學生可能誤讀，應明說指數是 m×n。",
+      "formalDefinitions 未明示 m、n 的取值條件。",
+      "多處學生可見解析使用程式式 ^ 記號，需全技能統一。"
+    ],
+    "recommendedAction": "選擇其一：正式加入 a⁰=1（a≠0）並完整教學，或本節先限制 m>n；冪的乘方改寫為『指數為 m×n』；統一正式數學記號。"
+  }
+]
