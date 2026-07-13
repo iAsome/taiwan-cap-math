@@ -1,0 +1,56 @@
+{
+  "status": "PASS_MANUAL_SEMANTIC_AUDIT_BATCH_007_R1",
+  "scope": [
+    "u02-s011",
+    "u02-s013",
+    "u02-s014",
+    "u02-s015"
+  ],
+  "artifactCounts": {
+    "lectures": 4,
+    "mcQuestions": 48,
+    "constructedResponses": 8,
+    "questions": 56,
+    "total": 60
+  },
+  "questionVerdictCounts": {
+    "PASS": 29,
+    "SEQUENCE_REPAIR": 2,
+    "DIFFICULTY_REPAIR": 2,
+    "RUBRIC_REPAIR": 8,
+    "PREREQUISITE_METADATA_REPAIR": 9,
+    "SEQUENCE_SOLUTION_AND_METADATA_REPAIR": 1,
+    "DIFFICULTY_AND_METADATA_REPAIR": 2,
+    "WORDING_AND_DIFFICULTY_REPAIR": 1,
+    "SEQUENCE_SOLUTION_REPAIR": 1,
+    "OPTION_ANALYSIS_REPAIR": 1
+  },
+  "lectureVerdictCounts": {
+    "WORDING_AND_NOTATION_REPAIR": 1,
+    "PREREQUISITE_REPAIR": 1,
+    "PASS": 1,
+    "SEQUENCE_REPAIR": 1
+  },
+  "mathematicsIncorrectCount": 0,
+  "answerIndexIncorrectCount": 0,
+  "figuresReviewed": 1,
+  "utf8Integrity": "PASS_UTF8_INTEGRITY_WITH_CONTENT_TYPO",
+  "productionModified": false,
+  "cumulativeAfterBatch007": {
+    "questionsComplete": 420,
+    "lecturesComplete": 30,
+    "artifactsComplete": 450,
+    "questionsPending": 4326,
+    "lecturesPending": 309,
+    "artifactsPending": 4635
+  },
+  "keyFindings": [
+    "U02-S012 was manually reopened and confirmed to require scope replacement despite its prior published status.",
+    "S013 prerequisites point to the skill that must be replaced.",
+    "U02-S014-V012 contains a confirmed false distractor explanation.",
+    "U02-S014-V007 contains the confirmed typo 整確.",
+    "U02-S015 uses ratio notation before the site's ratio instruction.",
+    "U02 is now fully manually audited and a unit repair blueprint is included."
+  ],
+  "nextBatch": "B008"
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "math-v2-u02-unit-repair-blueprint-r1",
+  "status": "U02_FULL_MANUAL_AUDIT_COMPLETE_REPAIR_ASSEMBLY_READY",
+  "unitId": "u02",
+  "skillCount": 15,
+  "questionCount": 210,
+  "lectureCount": 15,
+  "artifactCount": 225,
+  "productionActionAuthorized": false,
+  "unitLevelDecisions": [
+    "Keep the overall integer-factor-to-fraction-to-percent progression.",
+    "Remove duplicate GCD application questions from S004 and centralize them in S006.",
+    "Correct S007 and S008 prerequisite metadata.",
+    "Relocate mixed-number assessments from S009 and S010 into S011.",
+    "Replace S012 complex fractions with fraction mixed operations and parentheses.",
+    "Update S013 prerequisites after S012 replacement.",
+    "Remove ratio content from S015 until the ratio unit is taught.",
+    "Normalize every constructed-response zero-score rule to explicitly reject answer-only responses.",
+    "Replace programming caret, slash-heavy and e-notation displays with formal student-facing mathematics.",
+    "Rebalance advanced questions so they require reasoning rather than longer routine arithmetic."
+  ],
+  "skillRepairMap": {
+    "s001": "Retitle; add multiplication/division prerequisites; remove unsupported periodicity claim.",
+    "s002": "Remove premature square-root notation and fix 隻能 typo.",
+    "s003": "Formalize prime-factorization uniqueness and notation.",
+    "s004": "Focus on GCD structure; remove ratio and duplicated applications.",
+    "s005": "Repair LCM example and positive-integer conditions.",
+    "s006": "Use only GCD prerequisite; diversify application models.",
+    "s007": "Use LCM-basic prerequisite; clarify interval endpoints.",
+    "s008": "Use LCM-basic prerequisite; defer fraction-distance subtraction.",
+    "s009": "Keep pure fraction addition/subtraction; remove mixed-number and early algebra items.",
+    "s010": "Use inverse operations instead of equations; defer mixed-number item.",
+    "s011": "Standardize mixed-number notation; remove early equation item.",
+    "s012": "Full replacement: fraction mixed operations and parentheses.",
+    "s013": "Point prerequisites to fraction multiplication/division; normalize difficulty.",
+    "s014": "Retain lecture; repair typo, early equation solution and false distractor explanation.",
+    "s015": "Remove premature ratio model; retain multi-base, cost and period applications."
+  },
+  "releaseGate": {
+    "allApprovedRepairsApplied": false,
+    "u02ProductionPayloadBuilt": false,
+    "u02UnitGatePassed": false,
+    "globalReleaseAllowed": false
+  }
+}
