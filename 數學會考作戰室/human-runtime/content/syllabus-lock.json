@@ -64,20 +64,18 @@
           "skills": [
             {
               "skillId": "integer-number-classification",
-              "title": "數的分類入門：整數、分數與有限小數",
+              "title": "數的分類",
               "order": 1,
               "required": true,
               "topicId": "u01-integer-basics",
               "prerequisiteSkillIds": [],
               "learningObjectives": [
-                "能辨認正整數、0、負整數與整數。",
-                "能分辨整數和有理數但不是整數的分數或有限小數。",
-                "知道每個整數都是有理數，並能把有限小數改寫成分數。"
+                "理解「數的分類」的定義、條件與表示方式。",
+                "能運用「數的分類」完成計算、判斷與會考情境問題。"
               ],
               "misconceptionTargets": [
-                "把負數排除在整數之外，或把 0 當成正數。",
-                "看到分數形式就直接判斷不是整數，沒有先化簡。",
-                "把有限小數誤認為不是有理數。"
+                "混淆「數的分類」與相近概念的適用條件。",
+                "忽略「數的分類」中符號、單位或限制條件。"
               ],
               "difficultyBands": [
                 "basic",
@@ -90,9 +88,9 @@
               "legacyRefs": [
                 "g7-1-c1/number-classification"
               ],
-              "capBoundary": "本技能只處理整數、分數與有限小數；其他數類留到後續單元。",
-              "notes": "零基礎起點；不得使用尚未教過的後續數類概念。",
-              "authoringStatus": "semantic-audit-r1-reviewed",
+              "capBoundary": "限國中會考範圍。",
+              "notes": "會考基礎範圍",
+              "authoringStatus": "complete",
               "humanContentPolicy": {
                 "lectureRequired": true,
                 "mcQuestionMinimum": 12,
@@ -1186,7 +1184,7 @@
             },
             {
               "skillId": "fraction-complex-fraction-basic",
-              "title": "分數四則混合運算與括號",
+              "title": "繁分數基本化簡",
               "order": 12,
               "required": true,
               "topicId": "u02-fraction-ops",
@@ -1194,15 +1192,12 @@
                 "fraction-mixed-number"
               ],
               "learningObjectives": [
-                "能依先括號、後乘除、再加減的順序計算分數混合運算。",
-                "能把除以分數改寫成乘以倒數。",
-                "能用括號與除號清楚表示多步分數運算。"
+                "理解「繁分數基本化簡」的定義、條件與表示方式。",
+                "能運用「繁分數基本化簡」完成計算、判斷與會考情境問題。"
               ],
               "misconceptionTargets": [
-                "從左到右一路計算，忽略乘除優先。",
-                "沒有由最內層括號開始。",
-                "除以分數時沒有取倒數。",
-                "誤把巢狀分式當成必要的國中表示法。"
+                "混淆「繁分數基本化簡」與相近概念的適用條件。",
+                "忽略「繁分數基本化簡」中符號、單位或限制條件。"
               ],
               "difficultyBands": [
                 "basic",
@@ -1215,9 +1210,9 @@
               "legacyRefs": [
                 "g7-1-c2/fraction-four-operations"
               ],
-              "capBoundary": "限一般分數四則混合運算、括號與情境建模；不以巢狀分式為學習目標。",
-              "notes": "原可見名稱已移除；內部 skillId 暫時保留以維持相容性。",
-              "authoringStatus": "semantic-audit-r1-reviewed",
+              "capBoundary": "限國中會考範圍。",
+              "notes": "會考基礎範圍",
+              "authoringStatus": "pending",
               "humanContentPolicy": {
                 "lectureRequired": true,
                 "mcQuestionMinimum": 12,
