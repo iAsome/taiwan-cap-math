@@ -47,7 +47,7 @@ test("a review cannot skip a rendered page", async () => {
 
 test("a review cannot disagree with the official answer", async () => {
   const data = await inputs();
-  data.evidence.itemReviewShards[0].items[0].derivedAnswer = "A";
+  data.evidence.itemReviewShards[0].items[0].derivedAnswer = "Z";
   assert.throws(() => validateOfficialReviewEvidence(data.evidence, data), /independent answer disagrees/);
 });
 

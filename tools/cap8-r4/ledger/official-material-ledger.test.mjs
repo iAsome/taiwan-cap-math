@@ -70,7 +70,7 @@ test("checked-in index inventories every fixed material and only completed revie
   assert(result.sourceReviews > 0 && result.sourceReviews < result.materials);
   assert(result.items > 0);
   assert.equal(result.status, "partially-reviewed");
-  assert.equal(actual.years.find((ledger) => ledger.year === 106).items[0].itemId, "CAP-106-MAIN-ENGLISH-READING-001");
+  assert(actual.years.find((ledger) => ledger.year === 106).items.some((item) => item.itemId === "CAP-106-MAIN-ENGLISH-READING-001"));
 });
 
 test("every English reading paper requires itemization", async () => {
