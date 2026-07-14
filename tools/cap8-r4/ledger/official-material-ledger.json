@@ -9491,7 +9491,7 @@
             "math"
           ],
           "itemizationRequired": true,
-          "reviewRecordId": null
+          "reviewRecordId": "SOURCE-REVIEW-CAP-109-MATERIAL-018"
         },
         {
           "materialId": "CAP-109-MATERIAL-019",
@@ -9523,7 +9523,7 @@
             "math"
           ],
           "itemizationRequired": false,
-          "reviewRecordId": null
+          "reviewRecordId": "SOURCE-REVIEW-CAP-109-MATERIAL-020"
         },
         {
           "materialId": "CAP-109-MATERIAL-021",
@@ -9539,7 +9539,7 @@
             "math"
           ],
           "itemizationRequired": false,
-          "reviewRecordId": null
+          "reviewRecordId": "SOURCE-REVIEW-CAP-109-MATERIAL-021"
         },
         {
           "materialId": "CAP-109-MATERIAL-022",
@@ -9604,6 +9604,51 @@
             "independentSolveOrEvidenceCheck": true,
             "allFindingsResolved": true,
             "auditRecordSha256": "0099ce1f9c6cbd5c5a4b199abfe0312a39767aaef302b9c2085f77643cd76a1b"
+          }
+        },
+        {
+          "id": "SOURCE-REVIEW-CAP-109-MATERIAL-018",
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "record": {
+            "artifactSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "453e99e4590829ea098339eed2138d8d4bccc73cd102b07e9ae1a72a580e84ff"
+          }
+        },
+        {
+          "id": "SOURCE-REVIEW-CAP-109-MATERIAL-020",
+          "sourceSha256": "525d9439d2bd211cf1f953988f859d76007c663e2505645105a543553bd6bbc8",
+          "record": {
+            "artifactSha256": "525d9439d2bd211cf1f953988f859d76007c663e2505645105a543553bd6bbc8",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "e863a65e1b6d060bf223b061e1a1f4a4ed7af75dc839dcded72a7603b6ac0417"
+          }
+        },
+        {
+          "id": "SOURCE-REVIEW-CAP-109-MATERIAL-021",
+          "sourceSha256": "76db231fb6dc4b21ed10caab13665ca39425768ce891881c2f71ac893a395f24",
+          "record": {
+            "artifactSha256": "76db231fb6dc4b21ed10caab13665ca39425768ce891881c2f71ac893a395f24",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "d7f0ec8b0abde5ecd6e564f4ec83883f5851f702b713917e0766937e33d57be6"
           }
         },
         {
@@ -19963,6 +20008,92 @@
         },
         {
           "year": 109,
+          "paper": "math_constructed",
+          "itemId": "CAP-109-MAIN-MATH-CONSTRUCTED-01",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=11;x=65;y=87",
+          "officialAnswer": "constructed-response",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "N-7-9",
+            "A-7-6"
+          ],
+          "skills": [
+            "compare-unit-prices-after-discounts",
+            "solve-strict-discount-inequalities"
+          ],
+          "representationTypes": [
+            "constructed-response",
+            "price-table",
+            "unit-rate-context"
+          ],
+          "reasoningOperations": [
+            "calculate-per-milliliter-price",
+            "form-strict-inequalities",
+            "select-smallest-integer-discount"
+          ],
+          "distractorAnalysis": [
+            "正答依據：自備容器後，中杯價格為 28、33、48 元，大杯為 40、45、60 元；紅茶的 40/1000>28/750，綠茶的 45/1000>33/750，奶茶則 60/1000<48/750，所以第一小題為古早味紅茶與百香綠茶。設大杯折扣為 d 元，三品項分別要求 45−d<112/3、50−d<44、65−d<64，得 d>23/3、d>6、d>1；整數元折扣至少為 8 元。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "b6b764122f8571c39bd15a5dc4a9a893187068644eb53f62ec3210eeec480555",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "85806ee054c456ae0de18147c351ec80f79955591742444c5b93f9771cbabc97"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_constructed",
+          "itemId": "CAP-109-MAIN-MATH-CONSTRUCTED-02",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=12;x=65;y=67",
+          "officialAnswer": "constructed-response",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "S-8-1",
+            "S-9-7"
+          ],
+          "skills": [
+            "derive-an-angle-from-tangencies",
+            "find-the-union-area-of-three-stadium-shapes"
+          ],
+          "representationTypes": [
+            "constructed-response",
+            "composite-geometry-diagram",
+            "tangent-semicircles"
+          ],
+          "reasoningOperations": [
+            "use-radius-perpendicular-to-tangent",
+            "use-30-60-90-relations",
+            "add-areas-and-subtract-overlaps"
+          ],
+          "distractorAnalysis": [
+            "正答依據：各切點的半徑垂直長邊，三個相同物件繞固定點形成 60° 的方向差，局部角度關係給出 ∠AO₁F=120°。每個物件面積為 45×4+4π，三個共 540+12π；三個固定點附近的重疊總面積為 8π+12√3，因此可見反光面積為 540+4π−12√3 平方公分。等價地，把組合視為邊長 45 的正三角形邊界向內外各擴張 2 公分，也得到相同結果。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "a5a8aed616ae2d0f0bbb822a564cb3024c29901af7c518e75d70929defa06298",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "43631e6fa71bf3a9a7c49c8508040d8d57fea780b5a1e31c035d4fca4a30f9db"
+          }
+        },
+        {
+          "year": 109,
           "paper": "math_mc",
           "itemId": "CAP-109-ALTERNATE-MATH-MC-001",
           "sharedStimulusId": null,
@@ -21007,6 +21138,1055 @@
             "independentSolveOrEvidenceCheck": true,
             "allFindingsResolved": true,
             "auditRecordSha256": "c16c66a7192e35f1e12e16888a9886e3b291c3646b56b7b517b71ac948bc2bde"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-001",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=2;x=65;y=97",
+          "officialAnswer": "C",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "N-7-3"
+          ],
+          "skills": [
+            "determine-the-sign-of-a-product"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "signed-number-expression"
+          ],
+          "reasoningOperations": [
+            "count-negative-factors",
+            "apply-sign-rules"
+          ],
+          "distractorAnalysis": [
+            "正答依據：a 含四個負因數，乘積為正；b 含三個負因數，乘積為負，所以 a>0>b，選 C。",
+            "A、B、D 都錯在沒有依負因數個數的奇偶判斷乘積正負。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "fb6a37c694ac093a7925085656d37ba971b774b944c99d3fe0b652495b068e9c",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "1e8127b665b51c49a51d8916c02d6939bdc1607346ee7d5cf25000900a9fb967"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-002",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=2;x=65;y=258",
+          "officialAnswer": "C",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "N-7-6"
+          ],
+          "skills": [
+            "combine-prime-powers-into-a-power-of-ten"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "exponent-expression"
+          ],
+          "reasoningOperations": [
+            "regroup-factors",
+            "evaluate-a-power-of-ten"
+          ],
+          "distractorAnalysis": [
+            "正答依據：2³×5³=(2×5)³=10³=1000，因此選 C。",
+            "8、125 只計算一個質因數的三次方；100 少了一個 10。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "09fa89e2897eea19e7b86ae8ecc3e6f99bf39379b03b2f4edc3a1bf0b2d0bb9b",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "eab42535d8f14f1a28a2dc916f0e52b347caa452e9cacca31431777f641d6c2b"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-003",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=2;x=65;y=397",
+          "officialAnswer": "C",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "N-7-9"
+          ],
+          "skills": [
+            "form-a-part-to-whole-fraction"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "ratio-context"
+          ],
+          "reasoningOperations": [
+            "count-target-items",
+            "reduce-fraction"
+          ],
+          "distractorAnalysis": [
+            "正答依據：花生口味有 10 個，全部共有 25 個，所以所占比例為 10/25=2/5，選 C。",
+            "其餘選項不是以 25 個總數作分母，或沒有把 10/25 約分。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "26d1379f8ced291d5479c60183c865d01750316744adc7aa466e390d337cb4f1",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "4dc4c11b39277f62724fe069fdaab41065e2f09514fdec01d4846b7af4e88500"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-004",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=2;x=65;y=635",
+          "officialAnswer": "B",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "N-8-1"
+          ],
+          "skills": [
+            "simplify-a-radical-expression"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "radical-expression"
+          ],
+          "reasoningOperations": [
+            "simplify-radicals",
+            "combine-like-radicals"
+          ],
+          "distractorAnalysis": [
+            "正答依據：√48=4√3、√12=2√3，所以 √2(√48−√12)=√2×2√3=2√6，選 B。",
+            "A、C、D 都未同時正確化簡兩個根式並乘上外面的 √2。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "344c2d5c405f0f0848392cf04cc65710664aea68ca3839d8b5ea5a3537ac7f60",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "5deb92d823c85c8c46777d53d2ae277a4a296d68d6924c931836c644d7994ae3"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-005",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=3;x=65;y=67",
+          "officialAnswer": "A",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "S-7-5"
+          ],
+          "skills": [
+            "split-a-parallelogram-angle-by-a-given-ratio"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "parallelogram-diagram"
+          ],
+          "reasoningOperations": [
+            "use-supplementary-angles",
+            "divide-a-ratio"
+          ],
+          "distractorAnalysis": [
+            "正答依據：平行四邊形相鄰角互補，∠B=180°−100°=80°。按 3:2 分成五份，∠DBC=80°×2/5=32°，選 A。",
+            "40° 是直接平分；48° 是取三份；60° 沒有使用完整的 3:2 比。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "3519579a0c1f6fca2100a473824d43781412aaa529b3155e6bcc5a871c5ef4a2",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "da9b72a76392bbe8ff978d9c63653deeb837dde92736c667dee494b1e0128250"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-006",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=3;x=65;y=276",
+          "officialAnswer": "A",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "N-7-2"
+          ],
+          "skills": [
+            "compare-absolute-value-expressions-on-a-number-line"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "number-line"
+          ],
+          "reasoningOperations": [
+            "read-sign-and-distance",
+            "compare-sums-of-magnitudes"
+          ],
+          "distractorAnalysis": [
+            "正答依據：圖中 a>0，b<c<0，且 |b|>|c|。A 為 |a|+|b|；B 與 C 都等於 |a|+|c|，D 為 |b|−|c|，故 A 最大。",
+            "B、C 因 a、c 異號而相等；D 只量到 b、c 兩點間的距離，均小於 A。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "55726dc726ef1fb65e0ae0d14ee677247dd866b2ead8d62f4b33465eab33ac4a",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "11978af91a5f01e61c4a848b1542b651467b7f0c4c81c0b9750699ef32d3f573"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-007",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=3;x=65;y=447",
+          "officialAnswer": "D",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "A-8-3"
+          ],
+          "skills": [
+            "divide-a-polynomial-by-a-linear-expression"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "polynomial-division"
+          ],
+          "reasoningOperations": [
+            "perform-polynomial-division",
+            "verify-quotient-and-remainder"
+          ],
+          "distractorAnalysis": [
+            "正答依據：2x²−3=(x+1)(2x−2)−1，所以商式為 2x−2、餘式為 −1，選 D。",
+            "把各選項的商式乘回 x+1 再加餘式，只有 D 能還原 2x²−3。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "f6e9dab9dc45daacb5108256036e8626a014b84c4b3bded6e7281e840b5389a2",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "86bd8b3e03cc4cddea833be424b13dccbfde5e6338a6df877784f2b4f7cdf300"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-008",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=3;x=65;y=619",
+          "officialAnswer": "B",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "N-7-1"
+          ],
+          "skills": [
+            "recognize-a-semiprime"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "integer-options"
+          ],
+          "reasoningOperations": [
+            "factor-integers",
+            "identify-prime-factors"
+          ],
+          "distractorAnalysis": [
+            "正答依據：82=2×41，兩個因數都為質數，因此可表示成兩個質數的乘積，選 B。",
+            "81、84 的質因數總數超過兩個；83 本身是質數，不能寫成兩個大於 1 的質數乘積。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "4f1c8dd165452442bb1b2f4eea067131c8dce46ce91c71d531b88035abd1ebf1",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "c590bf0798052a84a1ae01e9b70dc8e1bb80bfe3412cec0678c968e3f89a8276"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-009",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=4;x=65;y=67",
+          "officialAnswer": "A",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "G-7-1"
+          ],
+          "skills": [
+            "translate-directions-on-a-coordinate-plane"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "coordinate-plane",
+            "route-context"
+          ],
+          "reasoningOperations": [
+            "convert-distance-to-grid-units",
+            "apply-directed-moves"
+          ],
+          "distractorAnalysis": [
+            "正答依據：每 100 公尺為 2 單位。由學校 (2,4) 向東 100 公尺到 (4,4)，再向南 400 公尺到 (4,−4)，選 A。",
+            "其餘座標至少把東西或南北方向、或 100 公尺與坐標單位的換算弄反。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "a4f347c620dc7246b601038a890103e4fb600d642ac12d37c8c4510c38dca4cc",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "23b034884532de81edea7e6d2f48350ef995ab0745711508ed3f2109b18cea04"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-010",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=4;x=65;y=327",
+          "officialAnswer": "D",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "A-8-6"
+          ],
+          "skills": [
+            "solve-a-square-form-quadratic-equation"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "quadratic-equation"
+          ],
+          "reasoningOperations": [
+            "take-square-roots",
+            "identify-two-roots",
+            "evaluate-an-expression"
+          ],
+          "distractorAnalysis": [
+            "正答依據：(x−4)²=25，所以 x−4=±5，兩根為 9、−1。依題設 a=9、b=−1，2a+b=17，選 D。",
+            "其他數值來自漏掉負平方根或沒有把兩根正確代入 2a+b。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "458f3bec10c8208e6c4084c4873e5d1b593157b66e586a9b6497bccb4ea2cef0",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "019eb8055b275eafa7191f50eea512442018a60e85206d29674645b8846e1f9c"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-011",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=4;x=65;y=527",
+          "officialAnswer": "B",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "G-7-1"
+          ],
+          "skills": [
+            "identify-a-noncollinear-point-from-coordinates"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "coordinate-plane"
+          ],
+          "reasoningOperations": [
+            "compare-slopes",
+            "test-collinearity"
+          ],
+          "distractorAnalysis": [
+            "正答依據：由圖上坐標計算，A、C、D 位於同一直線，B 不滿足該直線關係，因此不在直線上的點是 B，選 B。",
+            "A、C、D 彼此斜率相同；只憑點在圖上的遠近無法判斷共線。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "9faf62eb978184c5710d9d834047135c41638f49168382e9cc1140dde1490283",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "56f94ff191fd2a5eb0c0c67003502b5402bae52c3542c166e8015814805d7161"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-012",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=5;x=65;y=67",
+          "officialAnswer": "C",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "S-9-7"
+          ],
+          "skills": [
+            "identify-a-locus-with-constant-distance"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "geometric-locus"
+          ],
+          "reasoningOperations": [
+            "interpret-constant-distance",
+            "identify-circle-center-and-radius"
+          ],
+          "distractorAnalysis": [
+            "正答依據：與 B 點距離恆等於 AB 的點所成軌跡，是以 B 為圓心、AB 為半徑的圓，因此選 C。",
+            "其他圖形沒有讓軌跡上每一點到 B 的距離都固定為 AB。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "c84a2df01a1d42610c121d3d7f4b711a82ea24f3be271e960469dbf770810616",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "6376698375e85f3b9e5e39aaae2d27f92a5e674333788b5053d12245f3519a9d"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-013",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=5;x=65;y=287",
+          "officialAnswer": "B",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "D-7-2"
+          ],
+          "skills": [
+            "read-a-median-from-a-frequency-bar-chart"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "bar-chart"
+          ],
+          "reasoningOperations": [
+            "sum-frequencies",
+            "locate-middle-positions"
+          ],
+          "distractorAnalysis": [
+            "正答依據：各進球數人次為 2、3、5、4、6、8、8，共 36 人；第 18、19 位都落在進 4 球的一組，中位數為 4，選 B。",
+            "其他選項沒有依累積次數定位偶數筆資料的第 18、19 位。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "dd4cd5db54e9c1e29cf0843ca0d36fd881eb16d2718d93108d58ee33c9b36baa",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "29dbaa397ffabbbaa9576e76bd3805a218941dba0c43c9e29d236d69f1f3d89d"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-014",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=5;x=65;y=527",
+          "officialAnswer": "C",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "N-7-9"
+          ],
+          "skills": [
+            "compare-successive-percentage-prices"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "discount-announcement"
+          ],
+          "reasoningOperations": [
+            "apply-discount-rate",
+            "apply-price-increase",
+            "compare-expressions"
+          ],
+          "distractorAnalysis": [
+            "正答依據：原會員價為 0.85x；調整後標價為 1.1x，再打九折得 0.99x，兩者相差 0.14x，選 C。",
+            "其他差額忽略了標價上漲或把九折、八五折當成直接相減的金額。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "267db4cdf53ad13d39d34be3ccd471bbba971350860465fa2ea9a3f616a428ef",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "db2858668062c47126cf5ed42b536befe2c641c5fc4f8f24d3b701d66b662275"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-015",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=6;x=65;y=67",
+          "officialAnswer": "D",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "S-8-6"
+          ],
+          "skills": [
+            "compare-triangle-areas-between-parallel-lines"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "parallelogram-area-diagram"
+          ],
+          "reasoningOperations": [
+            "use-equal-base-and-height",
+            "compare-similar-area-growth"
+          ],
+          "distractorAnalysis": [
+            "正答依據：△PBE、△QBE 共用底 BE，且 P、Q 都在與 BC 平行的 AD 上，高相同，故面積相等。Q 在 P 右側，使 △QSE 大於 △PRE，因此選 D。",
+            "A、B 錯認第一對三角形高度不同；C 把第二組面積方向判反。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "2071eab1b36fdb250ad7032e72cf723533463e3cc035d2a85878c9b61afb3520",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "baea07c9ee8aa00f2a21ee12cc2c8c1b7b9a7b42aba90fbdaad06046667acd1b"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-016",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=6;x=65;y=287",
+          "officialAnswer": "C",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "N-7-9"
+          ],
+          "skills": [
+            "solve-a-ratio-context-with-weighted-usage"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "food-production-context"
+          ],
+          "reasoningOperations": [
+            "set-a-ratio-unit",
+            "form-a-weighted-sum"
+          ],
+          "distractorAnalysis": [
+            "正答依據：設三種數量為 2k、k、3k。鹹蛋黃用量為 2(2k)+k=5k=120，得 k=24，所以鳳梨酥為 3k=72，選 C。",
+            "45、60、120 都沒有依 2:1:3 的數量比與每個品項不同用量同時計算。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "81cf3aa99a770a6a197c1d05b763d73f591018ea6e41ec42b0069a5f8282f924",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "67ff73cbe1958a48e3a7162d3982b8b2ee9e34b695df91cf8e9fece1f2cb4527"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-017",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=6;x=65;y=527",
+          "officialAnswer": "D",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "S-8-5"
+          ],
+          "skills": [
+            "find-a-reflected-hexagon-perimeter"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "reflection-diagram"
+          ],
+          "reasoningOperations": [
+            "locate-reflected-points",
+            "use-pythagorean-distance",
+            "sum-sides"
+          ],
+          "distractorAnalysis": [
+            "正答依據：P 為矩形中心，對上下邊反射後，四條斜邊長均為 √(2²+1²)=√5；另有兩條長 2 的邊，周長為 4+4√5，選 D。",
+            "A 忽略斜邊；B、C 分別把斜邊誤算成 √6 或 √3。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "e21977aba9103a6866e000e503f71fad7e190a967e5f2432d9c2e610ff8f6a76",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "264c20aa7671fe05f9f6dbf39c48736083b90dd134f100e73f8c6bdd30907eee"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-018",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=7;x=65;y=67",
+          "officialAnswer": "A",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "A-7-6"
+          ],
+          "skills": [
+            "intersect-two-linear-inequality-conditions"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "alarm-threshold-context"
+          ],
+          "reasoningOperations": [
+            "translate-no-alarm-condition",
+            "translate-alarm-condition",
+            "intersect-intervals"
+          ],
+          "distractorAnalysis": [
+            "正答依據：小莉放入 50 後未響，得 x+50≤300，即 x≤250；小歐放入 120 後響，得 x+120>300，即 x>180。故 180<x≤250，選 A。",
+            "其餘區間至少把『未響』或『響』的等號邊界方向寫錯。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "c64b5a13514b107b5a35d6e63a47a862037c67a0deecbbf519543c9f8a6da770",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "14c6b7e3842164ce5966d0f6030a0758376689706cc79bb376d9f1320806255c"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-019",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=7;x=65;y=507",
+          "officialAnswer": "B",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "S-7-5"
+          ],
+          "skills": [
+            "compare-sides-from-triangle-angles"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "triangle-diagram"
+          ],
+          "reasoningOperations": [
+            "derive-missing-angles",
+            "compare-opposite-sides"
+          ],
+          "distractorAnalysis": [
+            "正答依據：AB=BC 使 △ABC 的底角各為 47°。在 △ABE 與 △CBE 中，BE 分別對較大的 47°，所以 BE>AE、BE>CE；另由 △AED 得 AE>DE，故 BE 最長，選 B。",
+            "A、C、D 都沒有依同一三角形中大角對大邊逐一比較。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "f262b308bdc5be9b51a6b9eebd7e58511f92b1fb6a515c76ae888630d369e364",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "e539b3a047f5245b20d6cf881e67d6957359c7cf1833cd345471a911ef4ccd77"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-020",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=8;x=65;y=67",
+          "officialAnswer": "A",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "S-8-7"
+          ],
+          "skills": [
+            "minimize-distance-from-a-point-to-a-segment"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "triangle-and-square-diagram"
+          ],
+          "reasoningOperations": [
+            "use-perpendicular-distance",
+            "verify-foot-on-segment"
+          ],
+          "distractorAnalysis": [
+            "正答依據：把 C 設為原點，正三角形邊長 10、CF=8。F 到直線 CA 的垂直距離為 4，且垂足落在 CA 線段上，因此 FP 最小值為 4，選 A。",
+            "其餘長度不是 F 到允許路徑 CA 的垂直距離，或把正三角形高誤當最短距離。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "774e616007e350138ef7d5ea21f506af8da1024b3f29882f2f8b7b007803d27e",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "24c27d768cdf714faa88fdbb49ae0180157c398f865ce07a699a82b10e7f870b"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-021",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=8;x=65;y=307",
+          "officialAnswer": "C",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "F-9-2"
+          ],
+          "skills": [
+            "use-parabola-symmetry-and-a-section-ratio"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "quadratic-function-graph"
+          ],
+          "reasoningOperations": [
+            "locate-axis-of-symmetry",
+            "express-horizontal-distances",
+            "solve-a-ratio"
+          ],
+          "distractorAnalysis": [
+            "正答依據：對稱軸為 x=−7。設 A、C 到對稱軸距離為 t，則 AB=t+7、BC=t−7；(t+7):(t−7)=5:1 得 t=10.5，所以 AC=2t=21，選 C。",
+            "17、19、24 都不符合對稱軸到 y 軸為 7 與 5:1 分點條件。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "ab59a3ec0dcb03e5054e80f59d4158254bf51258420020031db2d9cae088d01c",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "48cc7e5e3b0c4e4090974b70876e6892e98ce7e395fecb5c2bba37222b87d154"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-022",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=8;x=65;y=547",
+          "officialAnswer": "B",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "S-8-1"
+          ],
+          "skills": [
+            "combine-regular-polygon-turning-angles-with-a-transversal"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "regular-nonagon-diagram"
+          ],
+          "reasoningOperations": [
+            "use-exterior-angle",
+            "track-side-direction",
+            "apply-supplementary-angles"
+          ],
+          "distractorAnalysis": [
+            "正答依據：正九邊形每轉一邊改變 40°，AB 到 EF 共轉 160°。∠APQ 的外角 75° 使直線 PQ 與 PA 的內角為 105°；追蹤 QP、QE 的方向差得 ∠PQE=85°，選 B。",
+            "75° 是已知外角；95°、105° 分別把補角或邊方向取反。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "397d184d7767956345b8fd819fde33aa5b1504927c6582f5e461bbc0bec71940",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "f076dfcbf282219e591394935e8dddd70535a3735fb68b815e4fd77590cb697a"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-023",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=9;x=65;y=67",
+          "officialAnswer": "D",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "A-7-3"
+          ],
+          "skills": [
+            "solve-a-linear-growth-overlap-puzzle"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "repeated-shape-diagram"
+          ],
+          "reasoningOperations": [
+            "form-two-linear-relations",
+            "subtract-equations"
+          ],
+          "distractorAnalysis": [
+            "正答依據：設單片長 L、每增加一片使總長增加 d。L+3d=23、L+9d=56，相減得 d=5.5，再得 L=6.5，選 D。",
+            "5.5 是每多一片增加的長度，不是單片完整長度；其餘小數不滿足兩個總長。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "72fffceafa6687a635d062ab4677b7e5c1df343d8144c0a1875948f19a8060eb",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "69556708ab371d1471557a84d8d79f5c90f6e94d2639d8d7e95198144be6c460"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-024",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=9;x=65;y=427",
+          "officialAnswer": "D",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "S-9-1"
+          ],
+          "skills": [
+            "locate-a-parallel-cut-from-an-area-ratio"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "similar-triangle-diagram"
+          ],
+          "reasoningOperations": [
+            "take-square-root-of-area-ratio",
+            "compare-section-points"
+          ],
+          "distractorAnalysis": [
+            "正答依據：小三角形與 △ABC 相似，面積比 1/3，所以 AP/AB=1/√3，約 0.577。F 在 1/2、E 在 2/3 處，故 P 位於 FE 內且不與端點重合，選 D。",
+            "A、B 把面積比直接當邊長比；C 把 0.577 誤放在 AB 的前半段。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "c6eb46f3010935cc26a963f5d71eb706543510288135e3d0c66b0b89fb3555d2",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "27596fb692be54b43a18cceffc3302eee646b10892a09cae8b55c03171cf9eae"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-025",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=10;x=65;y=67",
+          "officialAnswer": "B",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "N-7-9",
+            "A-7-3"
+          ],
+          "skills": [
+            "analyze-a-buy-five-get-lowest-free-promotion"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "price-table",
+            "shopping-context"
+          ],
+          "reasoningOperations": [
+            "identify-possible-minimum-prices",
+            "compare-before-and-after-totals"
+          ],
+          "distractorAnalysis": [
+            "正答依據：新增黑櫻桃 55 元後，後來金額比原金額多 55 減去五個中最低價。價目表可使最低價為 55、45 或 40，差額只可能 0、10、15，不可能 5，選 B。",
+            "A、C、D 分別可由免費品價格為 55、45、40 元實現。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "bda0ce9a837be027e134bc2a1b3c13c99295719dc95e24276f750a036a5a5429",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "4badd8354b6c50e90e97b734f65823047e5f666b14eaa778441a09be9d43c530"
+          }
+        },
+        {
+          "year": 109,
+          "paper": "math_mc",
+          "itemId": "CAP-109-MAIN-MATH-MC-026",
+          "sharedStimulusId": null,
+          "sourceSha256": "18f7aff5bf32771588be71d78a839c82f49fb8cb71f3938e4711678ee3d40024",
+          "sourceLocator": "CAP-109-MATERIAL-018/source#page=10;x=65;y=427",
+          "officialAnswer": "A",
+          "primarySubject": "math",
+          "secondarySubjects": [],
+          "curriculumCodes": [
+            "S-8-8"
+          ],
+          "skills": [
+            "validate-two-circumcenter-constructions"
+          ],
+          "representationTypes": [
+            "multiple-choice",
+            "geometric-construction"
+          ],
+          "reasoningOperations": [
+            "use-midpoint-of-hypotenuse",
+            "use-equal-radii"
+          ],
+          "distractorAnalysis": [
+            "正答依據：甲使 BP⊥AC，而 P 在 AC 上，所以 △ABP 於 P 為直角，斜邊 AB 中點 O 是外心。乙直接作 OP=OA=OB，也使 O 為外心；兩人皆正確，選 A。",
+            "B、C、D 至少否定一個有效條件；兩種方法都能保證 OA=OB=OP。"
+          ],
+          "finalAudit": {
+            "artifactSha256": "50de9ecb880651ab4df7aa722f980d6aa3ce958cff385dcf96dc6ad583fa9730",
+            "status": "accepted",
+            "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+            "reviewedAt": "2026-07-14",
+            "fullRead": true,
+            "renderedContextInspected": true,
+            "independentSolveOrEvidenceCheck": true,
+            "allFindingsResolved": true,
+            "auditRecordSha256": "abfeaa066fb3e651503fce9859916e005637c211858061954cd02354c32947de"
           }
         }
       ]
