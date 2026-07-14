@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "cap8-r4-official-item-review-shard-v1",
+  "examId": "CAP-107-MAIN",
+  "paper": "math_constructed",
+  "reviewedAt": "2026-07-14",
+  "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+  "reviewStatus": "complete-rendered-semantic-review",
+  "items": [
+    {
+      "candidateId": "CAP-107-MAIN-MATH-CONSTRUCTED-01",
+      "derivedAnswer": null,
+      "sharedStimulusId": null,
+      "primarySubject": "math",
+      "secondarySubjects": [],
+      "curriculumCodes": ["D-7-2", "D-9-3"],
+      "skills": ["calculate-an-arithmetic-mean", "count-ordered-probability-outcomes"],
+      "representationTypes": ["constructed-response", "score-table", "probability-context"],
+      "reasoningOperations": ["sum-observed-scores", "convert-a-mean-interval-to-a-sum-interval", "enumerate-ordered-pairs"],
+      "answerEvidence": "前 8 次總分為 1+3+4+4+2+1+4+1=20，平均為 20/8=2.5。設末兩次為 x、y，2.2≤(20+x+y)/10≤2.4 等價於 2≤x+y≤4；在 4×4=16 個等可能有序結果中，和為 2、3、4 的結果共 1+2+3=6 個，所以可能發生，機率為 6/16=3/8。",
+      "distractorAnalysis": []
+    },
+    {
+      "candidateId": "CAP-107-MAIN-MATH-CONSTRUCTED-02",
+      "derivedAnswer": null,
+      "sharedStimulusId": null,
+      "primarySubject": "math",
+      "secondarySubjects": [],
+      "curriculumCodes": ["N-8-1", "S-8-6"],
+      "skills": ["calculate-grid-segment-lengths", "compare-sums-of-radicals"],
+      "representationTypes": ["constructed-response", "square-grid", "route-planning"],
+      "reasoningOperations": ["apply-the-distance-formula", "sum-segment-lengths", "compare-radical-expressions"],
+      "answerEvidence": "以每格邊長 1 計，R1=AC+CD+DB=√10+√2+√10=2√10+√2；R2=AE+ED+DF+FB=√2+√10+1+√5；R3=AG+GB=2√5+√10。可用平方展開、根號估值或三角形邊長關係比較，得到 R2>R1>R3，因此最長為 R2、最短為 R3。",
+      "distractorAnalysis": []
+    }
+  ]
+}
