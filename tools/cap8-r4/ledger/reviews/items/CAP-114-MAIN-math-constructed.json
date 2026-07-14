@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "cap8-r4-official-item-review-shard-v1",
+  "examId": "CAP-114-MAIN",
+  "paper": "math_constructed",
+  "reviewedAt": "2026-07-14",
+  "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+  "reviewStatus": "complete-rendered-semantic-review",
+  "items": [
+    {
+      "candidateId": "CAP-114-MAIN-MATH-CONSTRUCTED-01",
+      "derivedAnswer": null,
+      "sharedStimulusId": null,
+      "primarySubject": "math",
+      "secondarySubjects": ["civics"],
+      "curriculumCodes": ["D-7-1", "D-7-2", "N-7-9", "A-7-5"],
+      "skills": ["calculate-survey-adjustment-weight", "recover-group-percentages-from-weighted-totals"],
+      "representationTypes": ["constructed-response", "weighted-survey-table", "public-opinion-context"],
+      "reasoningOperations": ["divide-population-share-by-sample-share", "separate-group-contributions", "solve-before-and-after-weighting-equations"],
+      "answerEvidence": "60 歲以上組的調整倍率為 20%÷40%=1/2。設 40～59 歲與 60 歲以上的調整前贊成比率為 x、y，則 x+y=56%-8%=48%，而調整後 x+(1/2)y=49%-16%=33%。相減得 y=30%，再得 x=18%，所以兩組分別為 18%、30%。",
+      "distractorAnalysis": []
+    },
+    {
+      "candidateId": "CAP-114-MAIN-MATH-CONSTRUCTED-02",
+      "derivedAnswer": null,
+      "sharedStimulusId": null,
+      "primarySubject": "math",
+      "secondarySubjects": [],
+      "curriculumCodes": ["N-7-2", "N-7-9", "A-7-8"],
+      "skills": ["find-minimum-common-row-width", "disprove-exact-use-from-layer-and-package-ratios"],
+      "representationTypes": ["constructed-response", "tiling-diagram", "package-ratio-context"],
+      "reasoningOperations": ["find-least-common-multiple", "count-pieces-per-alternating-layer", "form-integer-layer-equation", "reject-noninteger-layer-count"],
+      "answerEvidence": "16 與 18 的最小公倍數是 144，所以第一層最少需要 144÷16=9 張 A，每個 B 層需 144÷18=8 張。若有 k 個 B 層，因最後一層仍為 A，A 層有 k+1 個，所用張數為 A=9(k+1)、B=8k。要符合包裝比 4:3，需 9(k+1):8k=4:3，化簡得 27(k+1)=32k，即 k=27/5，不是層數可取的整數，因此不可能恰好用完。",
+      "distractorAnalysis": []
+    }
+  ]
+}
