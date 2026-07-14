@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iasome.github.io/taiwan-cap-math/schemas/content-manifest-v4.schema.json",
+  "title": "CAP R4 subject content manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "subjectId",
+    "contentVersion",
+    "authorityGraphSha256",
+    "artifacts",
+    "counts",
+    "buildSha256"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "cap8-content-manifest-v4" },
+    "subjectId": {
+      "enum": [
+        "english",
+        "chinese",
+        "geography",
+        "history",
+        "civics",
+        "biology",
+        "physics_chemistry",
+        "earth_science",
+        "integrated_social",
+        "integrated_natural"
+      ]
+    },
+    "contentVersion": { "type": "string", "pattern": "^4\\.[0-9]+\\.[0-9]+$" },
+    "authorityGraphSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "type", "path", "sha256"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "type": {
+            "enum": ["authority", "skill", "lecture", "question", "stimulus", "asset", "ui"]
+          },
+          "path": { "type": "string", "minLength": 1 },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authorityNodes", "skills", "lectures", "skillQuestions", "stimulusQuestions", "stimuli", "assets"],
+      "properties": {
+        "authorityNodes": { "type": "integer", "minimum": 1 },
+        "skills": { "type": "integer", "minimum": 1 },
+        "lectures": { "type": "integer", "minimum": 1 },
+        "skillQuestions": { "type": "integer", "minimum": 0 },
+        "stimulusQuestions": { "type": "integer", "minimum": 0 },
+        "stimuli": { "type": "integer", "minimum": 0 },
+        "assets": { "type": "integer", "minimum": 0 },
+        "writingTasks": { "type": "integer", "minimum": 0 },
+        "readingPassages": { "type": "integer", "minimum": 0 },
+        "listeningStimuli": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "buildSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

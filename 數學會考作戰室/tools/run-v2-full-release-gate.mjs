@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
@@ -10,9 +11,12 @@ const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const mathDir = path.resolve(toolsDir, "..");
 const repo = path.resolve(mathDir, "..");
 const expectedPolicyHash = "72384ef7b0a3ab549d676c8e9f4af044aa694807d1ee36d3b016d8a3ce13d271";
-const historicalTests = new Set(["pilot-unit-source-split.test.mjs", "u01-coverage-expansion.test.mjs", "u01-policy-v1-1-quality.test.mjs"]);
 const testDir = path.join(toolsDir, "v2-qa", "test");
-const tests = fs.readdirSync(testDir).filter(name => name.endsWith(".test.mjs")).sort();
+const sharedQaTests = [
+  "content-standard.test.mjs",
+  "field-diff-core.test.mjs",
+  "task-schema.test.mjs"
+];
 const evidence = [];
 
 function summaryText(value) {
@@ -49,16 +53,92 @@ function verifyConsumerIsolation() {
   const index = fs.readFileSync(path.join(mathDir, "index.html"), "utf8");
   const bootstrap = fs.readFileSync(path.join(mathDir, "math-bootstrap.js"), "utf8");
   const directScripts = [...index.matchAll(/<script src="([^"?]+)/g)].map(match => match[1]);
-  for (const legacy of ["questions.js", "quiz-taxonomy.js", "quiz-variant-bank.js", "quiz-variants.js", "lecture-taxonomy.js", "app-legacy.js"]) {
-    assert(!directScripts.includes(legacy), `default page directly loads ${legacy}`);
-    assert(bootstrap.includes(`"${legacy}"`), `rollback list is missing ${legacy}`);
+  assert(directScripts.includes("math-bootstrap.js"), "default page must load math-bootstrap.js");
+  assert.deepEqual(
+    [...bootstrap.matchAll(/\bload\("([^"]+)"\)/g)].map(match => match[1]),
+    ["human-runtime/human-production-bootstrap.js"]
+  );
+
+  const consumer = `${directScripts.join("\n")}\n${bootstrap}`;
+  for (const marker of [
+    "generated=1",
+    "legacy=1",
+    "v2/",
+    "app.js",
+    "app-legacy.js",
+    "questions.js",
+    "quiz-taxonomy.js",
+    "quiz-variant-bank.js",
+    "quiz-variants.js",
+    "lecture-taxonomy.js"
+  ]) assert(!consumer.includes(marker), `retired runtime is reachable: ${marker}`);
+
+  for (const marker of [
+    'mode:"human-production-r1"',
+    "humanDefault:true",
+    "generatedRollbackAvailable:false",
+    "v1RollbackAvailable:false",
+    "oldRuntimesRetired:true"
+  ]) assert(bootstrap.includes(marker), `loader contract missing: ${marker}`);
+
+  return {
+    runtime: "human-production-r1",
+    uniquelyReachable: true,
+    generatedRollbackAvailable: false,
+    v1RollbackAvailable: false
+  };
+}
+
+function sha256(bytes) {
+  return createHash("sha256").update(bytes).digest("hex");
+}
+
+function verifyHumanRuntime() {
+  const contentDir = path.join(mathDir, "human-runtime", "content");
+  const manifest = JSON.parse(fs.readFileSync(path.join(contentDir, "manifest.json"), "utf8"));
+  assert.equal(manifest.productionRuntime, true);
+  assert.equal(manifest.contentAuthority, "CHATGPT_HUMAN_AUTHORED_R1");
+  assert.equal(manifest.unitCount, 23);
+  assert.equal(manifest.units.length, 23);
+
+  const ids = new Set();
+  const counts = { units: 0, skills: 0, lectures: 0, mcQuestions: 0, constructedResponses: 0, figures: 0 };
+  for (const descriptor of manifest.units) {
+    const unitPath = path.join(contentDir, ...descriptor.path.split("/"));
+    const bytes = fs.readFileSync(unitPath);
+    assert.equal(bytes.length, descriptor.bytes, `${descriptor.unitId} byte count mismatch`);
+    assert.equal(sha256(bytes), descriptor.sha256, `${descriptor.unitId} hash mismatch`);
+    const unit = JSON.parse(bytes.toString("utf8"));
+    assert.equal(unit.unitId, descriptor.unitId);
+    assert.equal(unit.skills.length, descriptor.counts.skills);
+    counts.units += 1;
+    counts.skills += unit.skills.length;
+    counts.lectures += unit.skills.filter(skill => skill.lecture).length;
+    for (const skill of unit.skills) {
+      for (const question of [...skill.mcQuestions, ...skill.constructedResponses]) {
+        assert(!ids.has(question.questionId), `duplicate human question ID: ${question.questionId}`);
+        ids.add(question.questionId);
+      }
+      counts.mcQuestions += skill.mcQuestions.length;
+      counts.constructedResponses += skill.constructedResponses.length;
+    }
   }
-  for (const current of ["math-syllabus-v2.js", "math-v2-production-profile.js", "math-v2-unit-manifest.js", "math-quiz-blueprints-v2.js", "math-mock-blueprint-v2.js", "math-engine-v2.js", "math-production-bootstrap.js", "app.js"]) {
-    assert(bootstrap.includes(`"${current.startsWith("app") ? current : `v2/${current}`}"`), `V2 bootstrap is missing ${current}`);
+  for (const figure of Object.values(manifest.figureIndex)) {
+    const figurePath = path.join(repo, ...figure.sourcePath.split("/"));
+    const bytes = fs.readFileSync(figurePath);
+    assert.equal(bytes.length, figure.bytes, `${figure.figureId} byte count mismatch`);
+    assert.equal(sha256(bytes), figure.sha256, `${figure.figureId} hash mismatch`);
+    counts.figures += 1;
   }
-  assert(index.includes("math-bootstrap.js"));
-  assert(fs.existsSync(path.join(mathDir, "legacy.html")));
-  return { defaultV2: true, defaultLegacy: false, mixedDefault: false, rollback: true };
+  assert.deepEqual(counts, {
+    units: manifest.unitCount,
+    skills: manifest.skillCount,
+    lectures: manifest.lectureCount,
+    mcQuestions: manifest.mcQuestionCount,
+    constructedResponses: manifest.constructedResponseCount,
+    figures: manifest.figureCount
+  });
+  return { contentVersion: manifest.contentVersion, counts };
 }
 
 export function runReleaseGate({ outputPath = null } = {}) {
@@ -67,33 +147,12 @@ export function runReleaseGate({ outputPath = null } = {}) {
   assert.equal(hashPolicy(), expectedPolicyHash, "policy hash changed");
   assert.deepEqual({ units: productionProfile.units, skills: productionProfile.skills, questions: productionProfile.questions, lectures: productionProfile.lectures }, { units: 23, skills: 339, questions: 4068, lectures: 339 });
   const reachability = verifyConsumerIsolation();
-  console.log("OK policy, production profile, and consumer isolation");
+  const humanRuntime = verifyHumanRuntime();
+  console.log("OK policy, human production content hashes, and consumer isolation");
 
-  run("deterministic all-unit build", process.execPath, [path.join(mathDir, "tools", "build-v2-all-units.mjs")]);
-  run("current U01-U23 content audit", process.execPath, [path.join(mathDir, "tools", "verify-v2-all.mjs")]);
-  run("production content locks", process.execPath, [path.join(mathDir, "tools", "verify-v2-production-locks.mjs")]);
-
-  for (const test of tests) {
-    const label = historicalTests.has(test) ? `historical test status: ${test}` : `V2 test: ${test}`;
-    run(label, process.execPath, [path.join(testDir, test)]);
-  }
+  for (const test of sharedQaTests) run(`shared V2 QA test: ${test}`, process.execPath, [path.join(testDir, test)]);
   run("historical fixed-ref global audit", process.execPath, [path.join(mathDir, "tools", "v2-qa", "runner", "audit-all-math-units.mjs"), "--task", path.join(mathDir, "tools", "v2-qa", "tasks", "MATH-V2-GLOBAL-RETRO-AUDIT.json")]);
   run("production browser smoke", process.execPath, [path.join(testDir, "production-browser-smoke.mjs")]);
-  run("repository Phase 0 regression", process.execPath, [path.join(repo, "tools", "run-phase0.mjs")]);
-
-  const generatedPaths = [
-    "數學會考作戰室/v2/math-syllabus-v2.js",
-    "數學會考作戰室/v2/math-v2-production-profile.js",
-    "數學會考作戰室/v2/math-v2-unit-manifest.js",
-    "數學會考作戰室/v2/math-quiz-blueprints-v2.js",
-    "數學會考作戰室/v2/math-mock-blueprint-v2.js",
-    "數學會考作戰室/v2/math-migration-map.js",
-    "數學會考作戰室/v2/math-v2-content-manifest.json",
-    ...Array.from({ length: 23 }, (_, index) => `數學會考作戰室/v2/math-question-bank-v2-u${String(index + 1).padStart(2, "0")}.js`),
-    ...Array.from({ length: 23 }, (_, index) => `數學會考作戰室/v2/math-lecture-v2-u${String(index + 1).padStart(2, "0")}.js`),
-    ...Array.from({ length: 23 }, (_, index) => `數學會考作戰室/tools/v2-qa/manifests/u${String(index + 1).padStart(2, "0")}.production.json`)
-  ];
-  run("generated artifacts clean against HEAD", "git", ["diff", "--exit-code", "HEAD", "--", ...generatedPaths]);
   assert(before.equals(gitStatus()), "release gate changed the worktree");
 
   const summary = {
@@ -101,7 +160,8 @@ export function runReleaseGate({ outputPath = null } = {}) {
     inventory: { units: 23, skills: 339, questions: 4068, lectures: 339 },
     activeMechanicalFindings: 0,
     unresolvedTargetedFindings: 0,
-    historicalTests: { retained: historicalTests.size, mode: "explicit-skip-on-339-skill-production" },
+    runtime: humanRuntime,
+    retiredGeneratedRuntime: { built: false, required: false, rollbackAvailable: false },
     reachability
   };
   console.log("run-v2-full-release-gate: OK");

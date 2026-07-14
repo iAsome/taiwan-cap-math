@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Official 106-115 audit item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "year",
+    "paper",
+    "itemId",
+    "sourceSha256",
+    "sourceLocator",
+    "officialAnswer",
+    "primarySubject",
+    "curriculumCodes",
+    "skills",
+    "representationTypes",
+    "reasoningOperations",
+    "finalAudit"
+  ],
+  "properties": {
+    "year": {
+      "type": "integer",
+      "minimum": 106,
+      "maximum": 115
+    },
+    "paper": {
+      "type": "string"
+    },
+    "itemId": {
+      "type": "string"
+    },
+    "sharedStimulusId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sourceSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "sourceLocator": {
+      "type": "string"
+    },
+    "officialAnswer": {
+      "type": "string"
+    },
+    "primarySubject": {
+      "type": "string"
+    },
+    "secondarySubjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "curriculumCodes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "representationTypes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reasoningOperations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "distractorAnalysis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "finalAudit": {
+      "$ref": "final-exhaustive-audit-record-r4.schema.json"
+    }
+  }
+}

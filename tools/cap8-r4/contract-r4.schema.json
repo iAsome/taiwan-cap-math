@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iasome.github.io/taiwan-cap-math/schemas/cap8-r4-authoring-contract.json",
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[A-Z][A-Z0-9_-]+$" },
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "subject": {
+      "enum": [
+        "english",
+        "chinese",
+        "geography",
+        "history",
+        "civics",
+        "biology",
+        "physics_chemistry",
+        "earth_science",
+        "integrated_social",
+        "integrated_natural"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "url", "authority", "role", "retrievedAt", "status"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "url": { "type": "string", "format": "uri" },
+        "authority": { "type": "string", "minLength": 1 },
+        "role": { "enum": ["binding-scope", "assessment-calibration", "binding-fact", "secondary-reference"] },
+        "retrievedAt": { "type": "string", "minLength": 10 },
+        "status": { "enum": ["verified", "unavailable-accounted"] },
+        "sha256": { "$ref": "#/$defs/hash" },
+        "repositoryPath": { "type": "string", "minLength": 1 },
+        "notes": { "type": "string" }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "kind", "code", "text", "sourceIds", "applicable"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "subject": { "$ref": "#/$defs/subject" },
+        "kind": { "enum": ["learning-performance", "learning-content", "appendix", "issue", "inquiry", "assessment-specification"] },
+        "code": { "type": "string", "minLength": 1 },
+        "text": { "type": "string", "minLength": 1 },
+        "sourceIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "parentIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "applicable": { "type": "boolean" },
+        "exclusionReason": { "type": "string" }
+      }
+    },
+    "skill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "unitId", "title", "authorityRefs", "prerequisites"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "subject": { "$ref": "#/$defs/subject" },
+        "unitId": { "$ref": "#/$defs/id" },
+        "title": { "type": "string", "minLength": 1 },
+        "authorityRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "prerequisites": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "diagnosticQuestionIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "remediationSkillIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "lecture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "unitId", "skillId", "authorityRefs", "prerequisites", "objectives", "sections", "workedExamples", "misconceptions", "checks", "assets", "provenance"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "subject": { "$ref": "#/$defs/subject" },
+        "unitId": { "$ref": "#/$defs/id" },
+        "skillId": { "$ref": "#/$defs/id" },
+        "authorityRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "prerequisites": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "objectives": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "sections": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "title", "content"],
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "title": { "type": "string", "minLength": 1 },
+              "content": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "workedExamples": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "prompt", "steps", "answer", "why"],
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "prompt": { "type": "string", "minLength": 1 },
+              "steps": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+              "answer": { "type": "string", "minLength": 1 },
+              "why": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "misconceptions": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["belief", "whyWrong", "correction"],
+            "properties": {
+              "belief": { "type": "string", "minLength": 1 },
+              "whyWrong": { "type": "string", "minLength": 1 },
+              "correction": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "checks": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["prompt", "answer", "reason"],
+            "properties": {
+              "prompt": { "type": "string", "minLength": 1 },
+              "answer": { "type": "string", "minLength": 1 },
+              "reason": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "assets": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "optionRationale": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["optionIndex", "isCorrect", "reason"],
+      "properties": {
+        "optionIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "isCorrect": { "type": "boolean" },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "skillIds", "authorityRefs", "stem", "options", "answerIndex", "optionRationales", "difficulty", "cognitiveProcess", "representationType", "misconceptionTargets", "provenance", "independentReviews", "assets"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "subject": { "$ref": "#/$defs/subject" },
+        "skillIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "authorityRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "stimulusId": { "anyOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "stem": { "type": "string", "minLength": 1 },
+        "options": { "type": "array", "minItems": 3, "maxItems": 4, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "answerIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "optionRationales": { "type": "array", "minItems": 3, "maxItems": 4, "items": { "$ref": "#/$defs/optionRationale" } },
+        "difficulty": { "enum": ["foundation", "standard", "advanced", "transfer"] },
+        "cognitiveProcess": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "representationType": { "type": "string", "minLength": 1 },
+        "misconceptionTargets": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "independentReviews": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/independentReview" } },
+        "assets": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "independentReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewerRole", "derivedAnswerIndex", "evidence", "status"],
+      "properties": {
+        "reviewerRole": { "type": "string", "minLength": 1 },
+        "derivedAnswerIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "evidence": { "type": "string", "minLength": 1 },
+        "status": { "const": "pass" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "authorRole", "copyrightStatus", "sourceRefs"],
+      "properties": {
+        "status": { "enum": ["original", "public-domain", "licensed", "official-reference-only"] },
+        "authorRole": { "type": "string", "minLength": 1 },
+        "copyrightStatus": { "type": "string", "minLength": 1 },
+        "sourceRefs": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "finalAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifactId", "artifactType", "artifactSha256", "status", "reviewerRole", "reviewedAt", "fullRead", "renderedContextInspected", "independentSolveOrEvidenceCheck", "allFindingsResolved", "findings", "auditRecordSha256"],
+      "properties": {
+        "artifactId": { "$ref": "#/$defs/id" },
+        "artifactType": { "enum": ["lecture", "question", "stimulus", "asset", "writing-task", "ui"] },
+        "artifactSha256": { "$ref": "#/$defs/hash" },
+        "status": { "const": "accepted" },
+        "reviewerRole": { "type": "string", "minLength": 1 },
+        "reviewedAt": { "type": "string", "minLength": 10 },
+        "fullRead": { "const": true },
+        "renderedContextInspected": { "const": true },
+        "independentSolveOrEvidenceCheck": { "const": true },
+        "allFindingsResolved": { "const": true },
+        "findings": { "type": "array", "items": { "type": "string" } },
+        "auditRecordSha256": { "$ref": "#/$defs/hash" }
+      }
+    },
+    "corpusRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifactId", "startByte", "endByte", "artifactSha256", "auditRecordSha256"],
+      "properties": {
+        "artifactId": { "$ref": "#/$defs/id" },
+        "startByte": { "type": "integer", "minimum": 0 },
+        "endByte": { "type": "integer", "minimum": 1 },
+        "artifactSha256": { "$ref": "#/$defs/hash" },
+        "auditRecordSha256": { "$ref": "#/$defs/hash" }
+      }
+    }
+  }
+}

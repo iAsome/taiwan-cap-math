@@ -2,27 +2,29 @@
 
 ## Current Focus
 
-- Only change `英文會考作戰室` unless the user explicitly expands scope.
-- English chapter quizzes are 20 multiple-choice questions, 20 minutes: 15 grammar/usage questions plus 5 vocabulary-usage questions, with no reading groups.
-- English review quizzes are 50 multiple-choice questions, 50 minutes: 34 grammar/usage questions, 10 vocabulary-usage questions, plus two reading groups of 3 questions.
-- English quiz question text and choices must be English-only; explanations should use Chinese reasoning, translation, and right/wrong analysis.
-- English vocabulary questions may test English definitions, context, word forms, collocations, and phrase use, but must not use English-Chinese translation matching.
-- English quiz questions must not repeat by visible text, choices, `templateKey`, or tested `targetKey` within the same seed across the full English quiz catalog.
-- Math mock exams are 25 multiple-choice questions, 80 minutes, no constructed-response questions.
-- The no-graphics rule applies to student-facing content: questions, handbooks, papers, and explanations. Favicons/icons are allowed.
+- The active task is the CAP R4 rebuild of English, Chinese, Geography, History, Civics, Biology, Physics/Chemistry, Earth Science, integrated Social, and integrated Natural Science.
+- The archived R4 package under `tools/cap8-r4/specification/` is the binding execution specification for this branch. Package corrections are recorded separately and must not rewrite archived evidence.
+- Mathematics content is outside the R4 authoring scope. Math V2 may change only when an explicit regression-gate repair is required and no student-facing mathematics content changes.
+- Mathematics is nevertheless part of the single final exhaustive audit: every final student-visible Math V2 artifact and rendered page must be read, independently solved or evidence-checked, and hash-bound before release.
+- Non-math student content may and should use original accessible figures, maps, tables, charts, experiment diagrams, and listening audio when the subject requires them. Every visual or audio asset needs an accessible alternative and provenance record.
+- Final questions and lectures must be statically materialized. Runtime code may select or order reviewed IDs but must not create student-facing prose, vary numbers, splice sentences, or fabricate fallback questions.
+- Official fourth-learning-stage curriculum material defines scope. Official CAP 106-115 material calibrates assessment form and demand. Publisher and cram-school resources are secondary references only: they may reveal omissions or teaching approaches but must not expand official scope, and unlicensed content must not be copied.
+- `main` and the public website remain frozen until the complete R4 global release gate passes from a clean checkout.
 
 ## Required Workflow
 
-- Before editing, sync local `main` with `origin/main`.
-- After editing, run the smallest relevant checks first, then broader checks if the change can affect shared behavior.
-- Always inspect `git status` before committing.
-- Commit intentional tracked changes and push to GitHub.
-- After pushing, confirm local `main` and `origin/main` point to the same commit.
+- Work only on `codex/cap-eight-subject-one-shot-r4` in its dedicated clean worktree while R4 is active.
+- Preserve resumable state in `tools/cap8-r4/execution-state.json` and keep evidence deterministic and hash-addressed.
+- Run the smallest relevant checks first, then the subject and global gates affected by the change.
+- Always inspect `git status` before committing. Stage only intentional files.
+- Checkpoint commits may be pushed only to the R4 branch. Do not update `main`, publish Pages, or create a release tag before the full release gate passes.
+- A validation failure blocks the affected checkpoint or release; it must not be hidden, waived, or converted into an automatic semantic approval.
 
 ## Cleanup Guardrails
 
-- Do not delete official PDFs, `official-data`, or ten-year official download content.
-- Do not delete untracked `tmp_*`, debug logs, or scratch tools until the user confirms the cleanup list.
+- Do not delete official PDFs, `official-data`, official audio, or ten-year official download content.
+- Do not delete unrelated untracked files or modify another worktree.
+- Do not remove legacy student data keys. Back them up and migrate them without silent data loss.
 
 ## Mathematics Content Authority
 

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R4 final exhaustive semantic audit record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifactSha256",
+    "status",
+    "reviewerRole",
+    "reviewedAt",
+    "fullRead",
+    "renderedContextInspected",
+    "independentSolveOrEvidenceCheck",
+    "allFindingsResolved",
+    "auditRecordSha256"
+  ],
+  "properties": {
+    "artifactSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "const": "accepted"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fullRead": {
+      "const": true
+    },
+    "renderedContextInspected": {
+      "const": true
+    },
+    "independentSolveOrEvidenceCheck": {
+      "const": true
+    },
+    "allFindingsResolved": {
+      "const": true
+    },
+    "auditRecordSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

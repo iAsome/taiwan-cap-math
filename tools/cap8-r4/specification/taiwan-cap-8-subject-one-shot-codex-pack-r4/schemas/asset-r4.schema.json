@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CAP R4 asset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "creator",
+    "source",
+    "license",
+    "sha256",
+    "caption",
+    "altText",
+    "subjectLinks",
+    "finalAudit"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "creator": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "altText": {
+      "type": "string"
+    },
+    "longDescription": {
+      "type": "string"
+    },
+    "dataFallback": {},
+    "subjectLinks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "finalAudit": {
+      "$ref": "final-exhaustive-audit-record-r4.schema.json"
+    }
+  }
+}

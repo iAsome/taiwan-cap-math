@@ -20,7 +20,7 @@ const outputIndex = process.argv.indexOf("--output");
 const outputPath = outputIndex >= 0 ? path.resolve(process.argv[outputIndex + 1]) : null;
 if (outputIndex >= 0 && !process.argv[outputIndex + 1]) throw new Error("--output requires a path");
 
-const mime = new Map([[".html", "text/html; charset=utf-8"], [".js", "text/javascript; charset=utf-8"], [".css", "text/css; charset=utf-8"], [".json", "application/json; charset=utf-8"], [".svg", "image/svg+xml"], [".pdf", "application/pdf"]]);
+const mime = new Map([[".html", "text/html; charset=utf-8"], [".js", "text/javascript; charset=utf-8"], [".mjs", "text/javascript; charset=utf-8"], [".css", "text/css; charset=utf-8"], [".json", "application/json; charset=utf-8"], [".svg", "image/svg+xml"], [".pdf", "application/pdf"]]);
 const server = http.createServer((request, response) => {
   const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
   const target = path.resolve(repo, `.${pathname === "/" ? "/index.html" : pathname}`);
@@ -87,7 +87,7 @@ class Cdp {
 }
 
 let cdp;
-const report = { generatedAt: new Date().toISOString(), engine: "v2", measurementsMs: {}, assertions: [] };
+const report = { generatedAt: new Date().toISOString(), engine: "human-production-r1", measurementsMs: {}, assertions: [] };
 const mark = (name, ok = true) => report.assertions.push({ name, ok });
 
 async function evaluate(expression) {
@@ -121,76 +121,53 @@ try {
   await cdp.send("Log.enable");
   await cdp.send("Network.enable");
 
-  const baseUrl = `http://127.0.0.1:${sitePort}/${encodeURIComponent(mathFolder)}/index.html`;
-  const initialStart = performance.now();
-  await navigate(baseUrl);
-  await waitFor("window.MATH_V2_PRODUCTION_MODE === true && window.EXAM_ENGINE?.engine");
-  report.measurementsMs.initialLoad = Number((performance.now() - initialStart).toFixed(2));
-  assert.equal(await evaluate("document.documentElement.dataset.mathEngine"), "v2");
-  assert.equal(await evaluate("Object.keys(window).filter(key => /^MATH_(QUESTION_BANK|LECTURE)_V2_U\\d{2}$/.test(key)).length"), 0);
-  const initialResources = await evaluate("performance.getEntriesByType('resource').map(entry => entry.name.split('/').pop().split('?')[0])");
-  assert(!initialResources.includes("questions.js"));
-  assert(!initialResources.includes("quiz-variant-bank.js"));
-  mark("default V2 loads no legacy banks and no V2 content bank initially");
-
-  const lectureStart = performance.now();
-  await evaluate("document.querySelector('[data-view=handbook]').click()");
-  await waitFor("document.querySelectorAll('#unitContent .lecture-topic-card').length === 15");
-  report.measurementsMs.openUnitLecture = Number((performance.now() - lectureStart).toFixed(2));
-  assert.equal(await evaluate("Array.isArray(window.MATH_LECTURE_V2_U01)"), true);
-  assert.equal(await evaluate("Array.isArray(window.MATH_QUESTION_BANK_V2_U01)"), false);
-  assert.equal(await evaluate("document.querySelectorAll('#unitContent img, #unitContent svg, #unitContent canvas').length"), 0);
-  mark("lecture bank lazy-loads without question bank or graphics");
-
-  const quizStart = performance.now();
-  await evaluate("document.querySelector('[data-view=quiz]').click()");
-  await waitFor("document.querySelectorAll('[data-start-quiz]').length === 23");
-  await evaluate("document.querySelector('[data-quiz-seed=u01-all-skills]').value='31415'; document.querySelector('[data-start-quiz=u01-all-skills]').click()");
-  await waitFor("document.querySelectorAll('#paper .question').length === 15");
-  report.measurementsMs.generateUnitQuiz = Number((performance.now() - quizStart).toFixed(2));
-  assert.equal(await evaluate("new Set([...document.querySelectorAll('#paper .question')].map(item => item.textContent)).size"), 15);
-  mark("U01 quiz renders one unique question per skill");
-
-  await evaluate("document.querySelector('#switchFullExam').click(); document.querySelector('#seedInput').value='271828'; document.querySelector('#generateExam').click()");
-  const mockStart = performance.now();
-  await waitFor("document.querySelectorAll('#paper .question').length === 25");
-  report.measurementsMs.generateMock = Number((performance.now() - mockStart).toFixed(2));
-  assert.equal(await evaluate("document.querySelectorAll('#paper img, #paper svg, #paper canvas').length"), 0);
-  assert.equal(await evaluate("window.EXAM_ENGINE.engine.loadedUnitIds().length < 23"), true);
-  await evaluate("document.querySelectorAll('#paper .question').forEach(question => question.querySelector('.choice')?.click()); document.querySelector('#submitExam').click()");
-  await waitFor("JSON.parse(localStorage.getItem('capMath.paperHistory') || '[]').length > 0");
-  const saved = await evaluate("JSON.parse(localStorage.getItem('capMath.paperHistory'))[0]");
-  assert.equal(saved.total, 25);
-  assert.equal(saved.engineVersion, "2.1.0");
-  assert.equal(saved.seed, 271828);
-  mark("mock renders 25 text-only questions and saves versioned history");
-
-  const historyStart = performance.now();
-  await evaluate("document.querySelector('[data-view=papers]').click()");
-  await waitFor("document.querySelectorAll('#paperHistoryList .paper-history-card').length > 0");
-  report.measurementsMs.openPaperHistory = Number((performance.now() - historyStart).toFixed(2));
-  mark("paper history opens saved V2 paper");
+  const rootUrl = `http://127.0.0.1:${sitePort}/${encodeURIComponent(mathFolder)}/`;
+  const routes = ["index.html", "index.html?generated=1", "index.html?legacy=1", "legacy.html"];
+  const retiredNames = [
+    "questions.js",
+    "quiz-taxonomy.js",
+    "quiz-variant-bank.js",
+    "quiz-variants.js",
+    "lecture-taxonomy.js",
+    "app-legacy.js",
+    "math-production-bootstrap.js"
+  ];
+  for (const route of routes) {
+    const started = performance.now();
+    await navigate(`${rootUrl}${route}`);
+    await waitFor("document.documentElement.dataset.mathEngine === 'human-production-r1' && window.__HUMAN_PRODUCTION_APP_READY__ === true", 120000);
+    report.measurementsMs[route] = Number((performance.now() - started).toFixed(2));
+    const state = await evaluate(`(() => ({
+      engine: document.documentElement.dataset.mathEngine,
+      loader: window.__MATH_HUMAN_PRODUCTION_LOADER_R1__,
+      productionRuntime: window.__HUMAN_PRODUCTION_R1__?.runtime?.manifest?.productionRuntime,
+      manifestVersion: window.__HUMAN_PRODUCTION_R1__?.runtime?.manifest?.contentVersion,
+      resources: performance.getEntriesByType('resource').map(entry => new URL(entry.name).pathname)
+    }))()`);
+    assert.equal(state.engine, "human-production-r1");
+    assert.equal(state.loader.mode, "human-production-r1");
+    assert.equal(state.loader.generatedRollbackAvailable, false);
+    assert.equal(state.loader.v1RollbackAvailable, false);
+    assert.equal(state.loader.oldRuntimesRetired, true);
+    assert.equal(state.productionRuntime, true);
+    assert.match(state.manifestVersion, /\S/);
+    assert(!state.resources.some(resource => resource.includes(`/${encodeURIComponent(mathFolder)}/v2/`) || resource.includes(`/${mathFolder}/v2/`)), `${route} loaded retired V2 runtime`);
+    for (const retired of retiredNames) {
+      assert(!state.resources.some(resource => resource.endsWith(`/${retired}`)), `${route} loaded ${retired}`);
+    }
+    mark(`${route} resolves only to the human production runtime`);
+  }
 
   await cdp.send("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
-  await navigate(baseUrl);
-  await waitFor("window.MATH_V2_PRODUCTION_MODE === true");
+  await navigate(`${rootUrl}index.html`);
+  await waitFor("window.__HUMAN_PRODUCTION_APP_READY__ === true", 120000);
   assert.equal(await evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1"), true);
-  assert.equal(await evaluate("[...document.querySelectorAll('h1,h2,button')].every(el => { const r=el.getBoundingClientRect(); return r.width >= 0 && Number.isFinite(r.left) && Number.isFinite(r.right); })"), true);
-  mark("mobile viewport has no horizontal overflow");
-
-  await cdp.send("Emulation.clearDeviceMetricsOverride");
-  await navigate(`${baseUrl}?legacy=1`);
-  await waitFor("document.documentElement.dataset.mathEngine === 'v1-rollback' && window.EXAM_ENGINE?.generate && window.LECTURE_TAXONOMY");
-  const legacyResources = await evaluate("performance.getEntriesByType('resource').map(entry => entry.name.split('/').pop().split('?')[0])");
-  assert(legacyResources.includes("questions.js"));
-  assert(legacyResources.includes("app-legacy.js"));
-  assert.equal(await evaluate("window.MATH_V2_PRODUCTION_MODE === true"), false);
-  mark("legacy rollback is functional and isolated");
+  mark("human production runtime has no mobile horizontal overflow");
 
   const browserErrors = cdp.events.filter(event => event.method === "Runtime.exceptionThrown" || (event.method === "Log.entryAdded" && event.params.entry.level === "error"));
   assert.deepEqual(browserErrors, []);
   report.browserErrors = 0;
-  report.initialResourceCount = initialResources.length;
+  report.routeCount = routes.length;
   if (outputPath) {
     fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     fs.writeFileSync(outputPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");

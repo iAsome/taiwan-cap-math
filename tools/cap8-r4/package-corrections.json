@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "cap8-r4-package-corrections-v1",
+  "packageSha256": "bb7ce18064e591d208e615983d141afa4a53fd24802c48ea0ee05a84a0325a85",
+  "sourcePackageMutated": false,
+  "corrections": [
+    {
+      "id": "R4-PACKAGE-COUNT-REPORT",
+      "path": "PACKAGE_VALIDATION_REPORT.txt",
+      "observed": "Files in manifest: 61",
+      "canonical": "PACKAGE_MANIFEST_R4.json contains 62 payload entries; all 62 are verified"
+    },
+    {
+      "id": "R4-GLOBAL-FLOOR-SCHEMA-VERSION",
+      "path": "locks/GLOBAL_PRODUCTION_FLOOR_R4.json",
+      "observed": "schemaVersion is an empty string",
+      "canonical": "The R4 adapter supplies cap8-global-production-floor-r4; the archived package remains unchanged"
+    }
+  ]
+}

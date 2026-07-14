@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "cap8-r4-execution-state-v1",
+  "taskId": "CAP8-R4-ONE-SHOT",
+  "branch": "codex/cap-eight-subject-one-shot-r4",
+  "startingCommit": "d3a0b432a5b659528d357cb5a24b561f10ac5980",
+  "lastCleanCommit": "d3a0b432a5b659528d357cb5a24b561f10ac5980",
+  "packageSha256": "bb7ce18064e591d208e615983d141afa4a53fd24802c48ea0ee05a84a0325a85",
+  "mainFrozen": true,
+  "publicSiteFrozen": true,
+  "phase": "foundation",
+  "completedGates": [
+    "package-verification",
+    "official-source-acquisition",
+    "curriculum-source-acquisition",
+    "curriculum-core-code-extraction",
+    "official-material-inventory",
+    "math-final-audit-inventory",
+    "current-site-inventory",
+    "math-v2-human-runtime-regression"
+  ],
+  "currentGate": "authority-graph-and-official-item-ledger",
+  "pendingFindings": [
+    "official-files-acquired-but-semantic-item-audit-not-yet-complete",
+    "669-curriculum-core-code-nodes-machine-extracted-but-not-semantically-frozen",
+    "246-official-materials-inventoried-but-not-semantically-reviewed-or-itemized",
+    "subject-content-not-yet-authored",
+    "final-exhaustive-audit-requires-frozen-runtime",
+    "math-final-exhaustive-audit-not-yet-complete"
+  ],
+  "subjectOrder": [
+    "english",
+    "chinese",
+    "geography",
+    "history",
+    "civics",
+    "integrated_social",
+    "biology",
+    "physics_chemistry",
+    "earth_science",
+    "integrated_natural"
+  ],
+  "subjects": {
+    "english": "pending",
+    "chinese": "pending",
+    "geography": "pending",
+    "history": "pending",
+    "civics": "pending",
+    "integrated_social": "blocked-by-subjects",
+    "biology": "pending",
+    "physics_chemistry": "pending",
+    "earth_science": "pending",
+    "integrated_natural": "blocked-by-subjects"
+  },
+  "resumeCommand": "node tools/cap8-r4/run-full-release-gate.mjs"
+}

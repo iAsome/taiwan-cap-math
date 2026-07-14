@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CAP R4 stimulus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "subject",
+    "type",
+    "content",
+    "authorityRefs",
+    "provenance",
+    "accessibility",
+    "finalAudit"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "content": {},
+    "authorityRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "accessibility": {
+      "type": "object"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "finalAudit": {
+      "$ref": "final-exhaustive-audit-record-r4.schema.json"
+    }
+  }
+}
