@@ -85,6 +85,8 @@ test("a review cannot cite another subject's valid curriculum code", async () =>
 
 test("a review shard cannot omit an item from its paper", async () => {
   const data = await inputs();
-  data.evidence.itemReviewShards[0].items.pop();
+  const shard = data.evidence.itemReviewShards.find((candidate) => candidate.items.length > 1);
+  assert(shard);
+  shard.items.pop();
   assert.throws(() => validateOfficialReviewEvidence(data.evidence, data), /complete paper in source order/);
 });
