@@ -34,7 +34,8 @@ test("official evidence separates extraction, item location, and semantic review
   );
   const reviewed = await verifyOfficialReviewShardEvidence();
   assert(reviewed.materials > 0 && reviewed.materials < extraction.materials);
-  assert(reviewed.papers > 0 && reviewed.items > 0 && reviewed.items < candidates.items);
+  assert(reviewed.papers > 0);
+  assert.equal(reviewed.items, candidates.items);
 });
 
 test("official appendices and English Table 1 are independently locked", async () => {
@@ -75,12 +76,12 @@ test("mechanical curriculum extraction validates but cannot pass the frozen gate
   await assert.rejects(verifyAuthorityGraphEvidence(), /not frozen and semantically reviewed/);
 });
 
-test("partial material review validates but cannot pass the complete official-item gate", async () => {
+test("complete item review with partial material review cannot pass the official ledger gate", async () => {
   const result = await verifyOfficialLedgerEvidence(undefined, { requireComplete: false });
   assert.equal(result.years, 10);
   assert.equal(result.materials, 246);
   assert(result.sourceReviews > 0 && result.sourceReviews < result.materials);
-  assert(result.items > 0 && result.items < 3178);
+  assert.equal(result.items, 3178);
   assert.equal(result.status, "partially-reviewed");
   await assert.rejects(verifyOfficialLedgerEvidence(), /complete-reviewed/);
 });
