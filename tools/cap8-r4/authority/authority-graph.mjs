@@ -23,6 +23,19 @@ function clean(value) {
   return value.replace(/\s+/g, " ").trim();
 }
 
+function preferredDefinitionStart(lines, domain) {
+  const heading = domain === "social"
+    ? "附錄三：學習內容說明"
+    : domain === "natural"
+      ? "附錄四：學習內容說明"
+      : null;
+  if (!heading) return 0;
+  for (let index = lines.length - 1; index >= 0; index -= 1) {
+    if (clean(lines[index]) === heading) return index + 1;
+  }
+  throw new Error(`${domain}: learning-content appendix heading missing`);
+}
+
 function parseCodeLine(line) {
   const match = clean(line).match(CODE_AT_START);
   if (!match) return null;
@@ -61,6 +74,7 @@ function asciiCode(code) {
 export function parseFourthStageNodes(text, { domain, sourceId, expectedCount = EXPECTED_COUNTS[domain] }) {
   assert(Object.hasOwn(EXPECTED_COUNTS, domain), `unsupported curriculum domain: ${domain}`);
   const lines = text.normalize("NFC").split(/\r?\n/);
+  const preferredStart = preferredDefinitionStart(lines, domain);
   const occurrences = new Map();
   for (let index = 0; index < lines.length; index += 1) {
     for (const match of lines[index].matchAll(FOURTH_STAGE_CODE)) {
@@ -70,13 +84,18 @@ export function parseFourthStageNodes(text, { domain, sourceId, expectedCount = 
     }
   }
 
-  const firstDefinitions = new Map();
+  const definitionCandidates = new Map();
+  const recordDefinition = (entry) => {
+    const candidates = definitionCandidates.get(entry.code) ?? [];
+    candidates.push(entry);
+    definitionCandidates.set(entry.code, candidates);
+  };
   for (let index = 0; index < lines.length; index += 1) {
     const parsed = parseCodeLine(lines[index]);
     if (!parsed) continue;
     if (parsed.text) {
       assert(!ANY_STAGE_CODE.test(parsed.text), `${sourceId}:${index + 1}: multiple curriculum codes on one definition line`);
-      if (!firstDefinitions.has(parsed.code)) firstDefinitions.set(parsed.code, { ...parsed, sourceLine: index + 1 });
+      recordDefinition({ ...parsed, sourceLine: index + 1 });
       continue;
     }
 
@@ -100,25 +119,30 @@ export function parseFourthStageNodes(text, { domain, sourceId, expectedCount = 
     assert.equal(definitions.length, block.length, `${sourceId}:${index + 1}: incomplete grouped code block`);
     for (let offset = 0; offset < block.length; offset += 1) {
       const entry = block[offset];
-      if (!firstDefinitions.has(entry.code)) {
-        firstDefinitions.set(entry.code, {
-          ...entry,
-          text: definitions[offset].text,
-          definitionLine: definitions[offset].sourceLine,
-        });
-      }
+      recordDefinition({
+        ...entry,
+        text: definitions[offset].text,
+        definitionLine: definitions[offset].sourceLine,
+      });
     }
     index = cursor - 1;
   }
 
+  const definitions = new Map(
+    [...definitionCandidates].map(([code, candidates]) => [
+      code,
+      candidates.find((entry) => entry.sourceLine > preferredStart) ?? candidates[0],
+    ]),
+  );
+
   assert.deepEqual(
-    [...firstDefinitions.keys()].sort(compareText),
+    [...definitions.keys()].sort(compareText),
     [...occurrences.keys()].sort(compareText),
     `${sourceId}: not every fourth-stage code has a definition`,
   );
-  if (expectedCount !== null) assert.equal(firstDefinitions.size, expectedCount, `${sourceId}: unexpected fourth-stage code count`);
+  if (expectedCount !== null) assert.equal(definitions.size, expectedCount, `${sourceId}: unexpected fourth-stage code count`);
 
-  return [...firstDefinitions]
+  return [...definitions]
     .map(([code, entry]) => ({
       id: `AUTH-${domain.toUpperCase()}-${codeKind(code) === "learning-performance" ? "LP" : "LC"}-${asciiCode(code)}`,
       domain,

@@ -8,6 +8,9 @@ import {
   loadCurriculumSourceSnapshot,
   validateAuthorityGraph,
 } from "./authority/authority-graph.mjs";
+import { validateAppendixEvidence } from "./authority/appendix-evidence.mjs";
+import { validateAuthorityNodeReview } from "./authority/authority-node-review.mjs";
+import { validateEnglishVocabularyAuthority } from "./authority/english-vocabulary-authority.mjs";
 import { validateAuthoringRecord } from "./authoring-validator.mjs";
 import { validateOfficialExtractionIndex } from "./extract-official-materials.mjs";
 import { inventoryCurrentSite } from "./inventory-current-site.mjs";
@@ -34,6 +37,10 @@ const MANIFEST_NAME = "content-manifest-v4.json";
 const AUDITED_ARTIFACT_TYPES = new Set(["lecture", "question", "stimulus", "asset", "writing-task", "ui"]);
 const USER_REQUIREMENTS_PATH = "tools/cap8-r4/user-requirements.json";
 const AUTHORITY_GRAPH_PATH = "tools/cap8-r4/authority/authority-graph.json";
+const APPENDIX_EVIDENCE_PATH = "tools/cap8-r4/authority/appendix-evidence.json";
+const AUTHORITY_NODE_REVIEW_PATH = "tools/cap8-r4/authority/authority-node-review.json";
+const ENGLISH_VOCABULARY_AUTHORITY_PATH = "tools/cap8-r4/authority/english-vocabulary-authority.json";
+const OFFICIAL_SOURCE_REGISTER_PATH = "tools/cap8-r4/evidence/official/official-source-register.json";
 const OFFICIAL_LEDGER_PATH = "tools/cap8-r4/ledger/official-material-ledger.json";
 const OFFICIAL_EXTRACTION_PATH = "tools/cap8-r4/evidence/official/official-extraction-index.json";
 const OFFICIAL_ITEM_CANDIDATES_PATH = "tools/cap8-r4/ledger/official-item-candidates.json";
@@ -236,6 +243,25 @@ export async function verifyAuthorityGraphEvidence(repoRoot = REPO_ROOT, { requi
   const graph = await readJson(repoRoot, AUTHORITY_GRAPH_PATH);
   const snapshot = await loadCurriculumSourceSnapshot();
   return validateAuthorityGraph(graph, snapshot, { repoRoot, requireFrozen });
+}
+
+export async function verifyAppendixEvidence(repoRoot = REPO_ROOT) {
+  return validateAppendixEvidence(
+    await readJson(repoRoot, APPENDIX_EVIDENCE_PATH),
+    path.join(repoRoot, ...AUTHORITY_GRAPH_PATH.split("/")),
+  );
+}
+
+export async function verifyEnglishVocabularyAuthority(repoRoot = REPO_ROOT) {
+  return validateEnglishVocabularyAuthority(await readJson(repoRoot, ENGLISH_VOCABULARY_AUTHORITY_PATH));
+}
+
+export async function verifyAuthorityNodeReview(repoRoot = REPO_ROOT) {
+  return validateAuthorityNodeReview(await readJson(repoRoot, AUTHORITY_NODE_REVIEW_PATH), {
+    graphPath: path.join(repoRoot, ...AUTHORITY_GRAPH_PATH.split("/")),
+    appendixPath: path.join(repoRoot, ...APPENDIX_EVIDENCE_PATH.split("/")),
+    officialRegisterPath: path.join(repoRoot, ...OFFICIAL_SOURCE_REGISTER_PATH.split("/")),
+  });
 }
 
 export async function verifyOfficialLedgerEvidence(repoRoot = REPO_ROOT, { requireComplete = true } = {}) {
@@ -584,6 +610,9 @@ export async function runFullReleaseGate({
     verifySourceEvidence,
     verifyInventoryEvidence,
     verifyUserRequirements,
+    verifyAppendixEvidence,
+    verifyAuthorityNodeReview,
+    verifyEnglishVocabularyAuthority,
     verifyAuthorityGraphEvidence,
     verifyOfficialLedgerEvidence,
     verifyOfficialExtractionEvidence,
@@ -606,6 +635,9 @@ export async function runFullReleaseGate({
   checks.push(await checked("official-page-and-archive-extractions", () => use.verifyOfficialExtractionEvidence(repoRoot), repoRoot));
   checks.push(await checked("official-item-locator-candidates", () => use.verifyOfficialItemCandidateEvidence(repoRoot), repoRoot));
   checks.push(await checked("user-authority-and-final-audit-requirements", () => use.verifyUserRequirements(repoRoot), repoRoot));
+  checks.push(await checked("official-curriculum-appendix-evidence", () => use.verifyAppendixEvidence(repoRoot), repoRoot));
+  checks.push(await checked("reviewed-fourth-stage-authority-nodes", () => use.verifyAuthorityNodeReview(repoRoot), repoRoot));
+  checks.push(await checked("official-english-vocabulary-authority", () => use.verifyEnglishVocabularyAuthority(repoRoot), repoRoot));
   checks.push(await checked("frozen-authority-graph", () => use.verifyAuthorityGraphEvidence(repoRoot), repoRoot));
   checks.push(await checked("complete-official-106-115-ledger", () => use.verifyOfficialLedgerEvidence(repoRoot), repoRoot));
   checks.push(await checked("current-site-inventory", () => use.verifyInventoryEvidence(repoRoot), repoRoot));

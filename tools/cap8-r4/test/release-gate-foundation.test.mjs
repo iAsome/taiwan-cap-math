@@ -2,7 +2,10 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   discoverMathAuditArtifacts,
+  verifyAppendixEvidence,
+  verifyAuthorityNodeReview,
   verifyAuthorityGraphEvidence,
+  verifyEnglishVocabularyAuthority,
   verifyOfficialExtractionEvidence,
   verifyOfficialItemCandidateEvidence,
   verifyOfficialLedgerEvidence,
@@ -28,6 +31,28 @@ test("official evidence separates extraction, item location, and semantic review
     { exams: candidates.exams, items: candidates.items, selectionItems: candidates.selectionItems },
     { exams: 13, items: 3178, selectionItems: 3139 },
   );
+});
+
+test("official appendices and English Table 1 are independently locked", async () => {
+  const appendix = await verifyAppendixEvidence();
+  assert.deepEqual(
+    { nodes: appendix.nodes, scopeLimitLines: appendix.scopeLimitLines },
+    { nodes: 436, scopeLimitLines: 91 },
+  );
+  const vocabulary = await verifyEnglishVocabularyAuthority();
+  assert.deepEqual(
+    { basicSourceEntries: vocabulary.basicSourceEntries, additionalSourceEntries: vocabulary.additionalSourceEntries },
+    { basicSourceEntries: 1211, additionalSourceEntries: 794 },
+  );
+});
+
+test("all extracted fourth-stage nodes have a reviewed scope decision without fake mappings", async () => {
+  const review = await verifyAuthorityNodeReview();
+  assert.deepEqual(review.byDomain, { chinese: 61, english: 116, natural: 246, social: 246 });
+  assert.equal(review.nodes, 669);
+  assert.equal(review.withAppendixEvidence, 436);
+  assert.equal(review.mappedSkills, 0);
+  assert.equal(review.exclusions, 0);
 });
 
 test("Math final-audit inventory covers every production record and reachable UI file", async () => {

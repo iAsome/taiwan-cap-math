@@ -38,6 +38,19 @@ test("checked-in graph is a deterministic unreviewed extraction", async () => {
   assert.equal(authorityGraphSha256(actual), authorityGraphSha256(expected));
 });
 
+test("social and natural definitions use the official content-explanation appendices", async () => {
+  const snapshot = await loadCurriculumSourceSnapshot();
+  const graph = await buildExtractedAuthorityGraph(snapshot);
+  const government = graph.nodes.find((node) => node.id === "AUTH-SOCIAL-LC-CIV-BD-4-1");
+  assert.equal(government.text, "國家與政府的區別。");
+  assert(government.sourceLine > 4436);
+  const hierarchy = graph.nodes.find((node) => node.id === "AUTH-SOCIAL-LC-CIV-BF-4-2");
+  assert.equal(hierarchy.text, "憲法、法律、命令三者為什麼有位階的關係？");
+  const neutralization = graph.nodes.find((node) => node.id === "AUTH-NATURAL-LC-JD-4-6");
+  assert.equal(neutralization.text, "實驗認識酸與鹼中和生成鹽和水，並可放出熱量而使溫度變化。");
+  assert(neutralization.sourceLine > 4188);
+});
+
 test("unreviewed extraction cannot satisfy the frozen release requirement", async () => {
   const snapshot = await loadCurriculumSourceSnapshot();
   const graph = await buildExtractedAuthorityGraph(snapshot);
