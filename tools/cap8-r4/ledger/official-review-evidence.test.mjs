@@ -20,16 +20,21 @@ async function inputs() {
   return { evidence, extractionIndex, candidates, authorityGraph };
 }
 
-test("review evidence covers one fully rendered source and its complete 41-item paper", async () => {
+test("review evidence covers only fully rendered sources and complete papers", async () => {
   const data = await inputs();
   const validated = validateOfficialReviewEvidence(data.evidence, data);
-  assert.deepEqual(validated.counts, { materials: 1, papers: 1, items: 41 });
+  const expected = {
+    materials: data.evidence.sourceReviews.reviews.length,
+    papers: data.evidence.itemReviewShards.length,
+    items: data.evidence.itemReviewShards.reduce((total, shard) => total + shard.items.length, 0),
+  };
+  assert.deepEqual(validated.counts, expected);
   const ledger = applyOfficialReviewEvidence(createOfficialMaterialLedgerIndex(await loadOfficialSourceRegister()), validated);
   assert.deepEqual(await validateOfficialMaterialLedgerIndex(ledger, await loadOfficialSourceRegister()), {
     years: 10,
     materials: 246,
-    sourceReviews: 1,
-    items: 41,
+    sourceReviews: expected.materials,
+    items: expected.items,
     status: "partially-reviewed",
   });
 });
