@@ -57,6 +57,32 @@ test("a review cannot cite a non-authoritative curriculum code", async () => {
   assert.throws(() => validateOfficialReviewEvidence(data.evidence, data), /unknown fourth-stage curriculum code/);
 });
 
+test("a mathematics review cannot cite a non-mathematics curriculum code", async () => {
+  const data = await inputs();
+  const shard = data.evidence.itemReviewShards.find((candidate) => candidate.paper === "math_mc");
+  assert(shard);
+  shard.items[0].curriculumCodes = ["B-Ⅳ-6"];
+  assert.throws(() => validateOfficialReviewEvidence(data.evidence, data), /unknown fourth-stage curriculum code/);
+});
+
+test("a non-mathematics review cannot cite a mathematics-only curriculum code", async () => {
+  const data = await inputs();
+  const shard = data.evidence.itemReviewShards.find((candidate) => candidate.paper === "chinese");
+  assert(shard);
+  shard.items[0].curriculumCodes = ["N-7-3"];
+  assert.throws(() => validateOfficialReviewEvidence(data.evidence, data), /unknown fourth-stage curriculum code/);
+});
+
+test("a review cannot cite another subject's valid curriculum code", async () => {
+  const data = await inputs();
+  const shard = data.evidence.itemReviewShards.find((candidate) => candidate.paper === "integrated_social");
+  assert(shard);
+  const geographyItem = shard.items.find((item) => item.primarySubject === "geography");
+  assert(geographyItem);
+  geographyItem.curriculumCodes = ["公Bi-Ⅳ-3"];
+  assert.throws(() => validateOfficialReviewEvidence(data.evidence, data), /is not assigned to a declared subject/);
+});
+
 test("a review shard cannot omit an item from its paper", async () => {
   const data = await inputs();
   data.evidence.itemReviewShards[0].items.pop();

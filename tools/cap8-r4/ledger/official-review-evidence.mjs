@@ -3,6 +3,10 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { artifactSha256, auditRecordSha256 } from "../r4-core.mjs";
+import {
+  MATH_FOURTH_STAGE_CODE_SET,
+  verifyMathCurriculumCodeRegister,
+} from "../authority/math-curriculum-codes.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const DEFAULT_SOURCE_REVIEWS = path.join(HERE, "reviews", "official-source-reviews.json");
@@ -119,7 +123,7 @@ function candidateMap(candidates) {
   return new Map(candidates.exams.flatMap((exam) => exam.items.map((item) => [item.candidateId, { exam, item }])));
 }
 
-function validateItemReview(review, candidate, authorityCodes, shard) {
+function validateItemReview(review, candidate, authorityNodesByCode, shard) {
   exactKeys(
     review,
     [
@@ -144,7 +148,20 @@ function validateItemReview(review, candidate, authorityCodes, shard) {
   uniqueStrings(review.secondarySubjects, `${review.candidateId} secondarySubjects`, { allowEmpty: true });
   for (const subject of review.secondarySubjects) assert(SUBJECTS.has(subject), `${review.candidateId}: invalid secondary subject`);
   uniqueStrings(review.curriculumCodes, `${review.candidateId} curriculumCodes`);
-  for (const code of review.curriculumCodes) assert(authorityCodes.has(code), `${review.candidateId}: unknown fourth-stage curriculum code ${code}`);
+  for (const code of review.curriculumCodes) {
+    if (review.primarySubject === "math") {
+      assert(MATH_FOURTH_STAGE_CODE_SET.has(code), `${review.candidateId}: unknown fourth-stage curriculum code ${code}`);
+      continue;
+    }
+    const declaredSubjects = [review.primarySubject, ...review.secondarySubjects]
+      .map((subject) => subject === "chinese_writing" ? "chinese" : subject);
+    const matchingNodes = authorityNodesByCode.get(code) ?? [];
+    assert(matchingNodes.length > 0, `${review.candidateId}: unknown fourth-stage curriculum code ${code}`);
+    assert(
+      matchingNodes.some((node) => declaredSubjects.some((subject) => node.subjects.includes(subject))),
+      `${review.candidateId}: curriculum code ${code} is not assigned to a declared subject`,
+    );
+  }
   uniqueStrings(review.skills, `${review.candidateId} skills`);
   uniqueStrings(review.representationTypes, `${review.candidateId} representationTypes`);
   uniqueStrings(review.reasoningOperations, `${review.candidateId} reasoningOperations`);
@@ -162,7 +179,12 @@ function validateItemReview(review, candidate, authorityCodes, shard) {
 
 function validateItemReviewShards(shards, candidates, authorityGraph) {
   const byCandidate = candidateMap(candidates);
-  const authorityCodes = new Set(authorityGraph.nodes.map((node) => node.code));
+  const authorityNodesByCode = new Map();
+  for (const node of authorityGraph.nodes) {
+    const matches = authorityNodesByCode.get(node.code) ?? [];
+    matches.push(node);
+    authorityNodesByCode.set(node.code, matches);
+  }
   const reviews = new Map();
   for (const shard of shards) {
     exactKeys(shard, ["schemaVersion", "examId", "paper", "reviewedAt", "reviewerRole", "reviewStatus", "items"], "item review shard");
@@ -178,7 +200,7 @@ function validateItemReviewShards(shards, candidates, authorityGraph) {
       assert(!reviews.has(review.candidateId), `duplicate item review: ${review.candidateId}`);
       const candidate = byCandidate.get(review.candidateId)?.item;
       assert(candidate, `${review.candidateId}: candidate is missing`);
-      validateItemReview(review, candidate, authorityCodes, shard);
+      validateItemReview(review, candidate, authorityNodesByCode, shard);
       reviews.set(review.candidateId, { review, shard, candidate });
     }
   }
@@ -199,6 +221,7 @@ export async function loadOfficialReviewEvidence({
 }
 
 export function validateOfficialReviewEvidence(evidence, { extractionIndex, candidates, authorityGraph }) {
+  verifyMathCurriculumCodeRegister();
   const sourceReviews = validateSourceReviews(evidence.sourceReviews, extractionIndex);
   const itemReviews = validateItemReviewShards(evidence.itemReviewShards, candidates, authorityGraph);
   for (const { candidate } of itemReviews.values()) {
