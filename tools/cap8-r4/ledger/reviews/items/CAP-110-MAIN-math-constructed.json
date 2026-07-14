@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "cap8-r4-official-item-review-shard-v1",
+  "examId": "CAP-110-MAIN",
+  "paper": "math_constructed",
+  "reviewedAt": "2026-07-14",
+  "reviewerRole": "Codex independent official-paper semantic reviewer under ChatGPT-owned policy",
+  "reviewStatus": "complete-rendered-semantic-review",
+  "items": [
+    {
+      "candidateId": "CAP-110-MAIN-MATH-CONSTRUCTED-01",
+      "derivedAnswer": null,
+      "sharedStimulusId": null,
+      "primarySubject": "math",
+      "secondarySubjects": ["earth_science"],
+      "curriculumCodes": ["N-7-4", "N-7-9", "A-7-6"],
+      "skills": ["derive-a-rounding-interval", "propagate-a-percentage-reduction", "identify-all-nearest-even-labels"],
+      "representationTypes": ["constructed-response", "rounding-rule-table", "carbon-footprint-context"],
+      "reasoningOperations": ["find-midpoint-boundaries", "include-tie-endpoints", "multiply-an-interval-by-ninety-percent", "round-to-nearest-allowed-label"],
+      "answerEvidence": "標示 38 公克代表實際排放量介於與相鄰標示 36、40 的中點之間，因此最小 37、最大 39 公克，端點遇到等距時仍可標示 38。減為原本 90% 後，範圍為 33.3 至 35.1 公克；靠近 34 的部分標示 34，靠近 36 的部分標示 36，所以所有可能標示為 34、36。",
+      "distractorAnalysis": []
+    },
+    {
+      "candidateId": "CAP-110-MAIN-MATH-CONSTRUCTED-02",
+      "derivedAnswer": null,
+      "sharedStimulusId": null,
+      "primarySubject": "math",
+      "secondarySubjects": [],
+      "curriculumCodes": ["N-7-2", "A-7-3"],
+      "skills": ["count-grid-pieces-from-two-directional-cuts", "factor-an-interior-piece-count-under-a-cut-limit"],
+      "representationTypes": ["constructed-response", "grid-cutting-model", "factor-pair-enumeration"],
+      "reasoningOperations": ["form-product-of-strip-counts", "enumerate-four-cut-splits", "factor-sixty", "apply-cut-sum-limit"],
+      "answerEvidence": "若橫切 h 刀、縱切 v 刀，總塊數為 (h+1)(v+1)，四刀可得 5、8、9 塊，任寫一種即可。所有側面都不焦脆的內部塊數為 (h−1)(v−1)=60，且 h+v≤20。檢查 60 的因數對，只有 5×12 與 6×10 符合限制，故刀數分別為 (6+13)=19 或 (7+11)=18；方向互換不改變總刀數。",
+      "distractorAnalysis": []
+    }
+  ]
+}
