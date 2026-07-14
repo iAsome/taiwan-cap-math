@@ -3,6 +3,8 @@ import test from "node:test";
 import {
   discoverMathAuditArtifacts,
   verifyAuthorityGraphEvidence,
+  verifyOfficialExtractionEvidence,
+  verifyOfficialItemCandidateEvidence,
   verifyOfficialLedgerEvidence,
   verifyUserRequirements,
 } from "../run-full-release-gate.mjs";
@@ -13,6 +15,19 @@ test("user requirements make Math part of the final exhaustive audit", async () 
   assert.equal(requirements.mathAuthoringInScope, false);
   assert.equal(requirements.mathFinalExhaustiveAuditRequired, true);
   assert.equal(requirements.secondaryReferenceMayExpandScope, false);
+});
+
+test("official evidence separates extraction, item location, and semantic review", async () => {
+  const extraction = await verifyOfficialExtractionEvidence();
+  assert.deepEqual(
+    { materials: extraction.materials, pages: extraction.pages, renderedPages: extraction.renderedPages },
+    { materials: 246, pages: 2437, renderedPages: 2437 },
+  );
+  const candidates = await verifyOfficialItemCandidateEvidence();
+  assert.deepEqual(
+    { exams: candidates.exams, items: candidates.items, selectionItems: candidates.selectionItems },
+    { exams: 13, items: 3178, selectionItems: 3139 },
+  );
 });
 
 test("Math final-audit inventory covers every production record and reachable UI file", async () => {

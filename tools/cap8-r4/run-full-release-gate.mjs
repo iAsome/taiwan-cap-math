@@ -9,7 +9,9 @@ import {
   validateAuthorityGraph,
 } from "./authority/authority-graph.mjs";
 import { validateAuthoringRecord } from "./authoring-validator.mjs";
+import { validateOfficialExtractionIndex } from "./extract-official-materials.mjs";
 import { inventoryCurrentSite } from "./inventory-current-site.mjs";
+import { validateOfficialItemCandidates } from "./ledger/official-item-candidates.mjs";
 import {
   loadOfficialSourceRegister,
   validateOfficialMaterialLedgerIndex,
@@ -33,6 +35,8 @@ const AUDITED_ARTIFACT_TYPES = new Set(["lecture", "question", "stimulus", "asse
 const USER_REQUIREMENTS_PATH = "tools/cap8-r4/user-requirements.json";
 const AUTHORITY_GRAPH_PATH = "tools/cap8-r4/authority/authority-graph.json";
 const OFFICIAL_LEDGER_PATH = "tools/cap8-r4/ledger/official-material-ledger.json";
+const OFFICIAL_EXTRACTION_PATH = "tools/cap8-r4/evidence/official/official-extraction-index.json";
+const OFFICIAL_ITEM_CANDIDATES_PATH = "tools/cap8-r4/ledger/official-item-candidates.json";
 const MATH_UI_FILES = Object.freeze([
   "index.html",
   "styles.css",
@@ -238,6 +242,17 @@ export async function verifyOfficialLedgerEvidence(repoRoot = REPO_ROOT, { requi
   const index = await readJson(repoRoot, OFFICIAL_LEDGER_PATH);
   const snapshot = await loadOfficialSourceRegister();
   return validateOfficialMaterialLedgerIndex(index, snapshot, { requireComplete });
+}
+
+export async function verifyOfficialExtractionEvidence(repoRoot = REPO_ROOT) {
+  const index = await readJson(repoRoot, OFFICIAL_EXTRACTION_PATH);
+  return validateOfficialExtractionIndex(index, { verifyFiles: true });
+}
+
+export async function verifyOfficialItemCandidateEvidence(repoRoot = REPO_ROOT) {
+  const extraction = await readJson(repoRoot, OFFICIAL_EXTRACTION_PATH);
+  const candidates = await readJson(repoRoot, OFFICIAL_ITEM_CANDIDATES_PATH);
+  return validateOfficialItemCandidates(candidates, extraction);
 }
 
 async function findNamedFiles(root, name) {
@@ -571,6 +586,8 @@ export async function runFullReleaseGate({
     verifyUserRequirements,
     verifyAuthorityGraphEvidence,
     verifyOfficialLedgerEvidence,
+    verifyOfficialExtractionEvidence,
+    verifyOfficialItemCandidateEvidence,
     productionFloor,
     scopeLocks,
     discoverSubjectArtifacts,
@@ -586,6 +603,8 @@ export async function runFullReleaseGate({
 
   checks.push(await checked("package-and-baseline-evidence", () => use.verifyPackageEvidence(repoRoot), repoRoot));
   checks.push(await checked("official-source-evidence", () => use.verifySourceEvidence(repoRoot), repoRoot));
+  checks.push(await checked("official-page-and-archive-extractions", () => use.verifyOfficialExtractionEvidence(repoRoot), repoRoot));
+  checks.push(await checked("official-item-locator-candidates", () => use.verifyOfficialItemCandidateEvidence(repoRoot), repoRoot));
   checks.push(await checked("user-authority-and-final-audit-requirements", () => use.verifyUserRequirements(repoRoot), repoRoot));
   checks.push(await checked("frozen-authority-graph", () => use.verifyAuthorityGraphEvidence(repoRoot), repoRoot));
   checks.push(await checked("complete-official-106-115-ledger", () => use.verifyOfficialLedgerEvidence(repoRoot), repoRoot));

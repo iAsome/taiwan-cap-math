@@ -30,27 +30,33 @@ function classification(file) {
   const exactSubject = [
     ["國文科", "chinese"],
     ["英語科", "english"],
+    ["英語（閱讀）", "english"],
     ["數學科", "math"],
     ["社會科", "integrated_social"],
     ["自然科", "integrated_natural"],
     ["寫作測驗", "chinese_writing"],
   ].find(([label]) => file.title === label)?.[1];
   let materialKind = "calibration-report";
-  if (exactSubject) materialKind = "question-paper";
+  if (/試題題本暨參考答案/u.test(text) && /\.zip$/iu.test(file.filename)) materialKind = "supplemental-exam-package";
+  else if (exactSubject) materialKind = "question-paper";
   else if (/參考答案|答案/u.test(text)) materialKind = "answer-key";
   else if (/英語聽力|Listening/iu.test(text)) materialKind = "listening-package";
   else if (/[一二三四五六]級分/u.test(file.title)) materialKind = "writing-scoring-sample";
-  else if (/第一題|第二題/u.test(file.title)) materialKind = "writing-prompt-support";
+  else if (/第一題|第二題/u.test(file.title)) materialKind = "constructed-response-duplicate";
   else if (/\.zip$/iu.test(file.filename)) materialKind = "supplementary-package";
 
   let subjectAreas = exactSubject ? [exactSubject] : ["cross-subject"];
   if (/英語聽力|Listening/iu.test(text)) subjectAreas = ["english"];
-  else if (/寫作|級分|第一題|第二題/u.test(file.title)) subjectAreas = ["chinese_writing"];
-  else if (/數學非選擇題/u.test(file.title)) subjectAreas = ["math"];
+  else if (/第一題|第二題|數學非選擇題/u.test(file.title)) subjectAreas = ["math"];
+  else if (/寫作|級分/u.test(file.title)) subjectAreas = ["chinese_writing"];
   return {
     materialKind,
     subjectAreas,
-    itemizationRequired: ["question-paper", "listening-package", "writing-prompt-support"].includes(materialKind),
+    itemizationRequired: [
+      "question-paper",
+      "listening-package",
+      "supplemental-exam-package",
+    ].includes(materialKind),
   };
 }
 

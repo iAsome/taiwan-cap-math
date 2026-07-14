@@ -75,6 +75,38 @@ test("checked-in index inventories every fixed material without claiming review"
   });
 });
 
+test("every English reading paper requires itemization", async () => {
+  const snapshot = await loadOfficialSourceRegister();
+  const index = createOfficialMaterialLedgerIndex(snapshot);
+  for (const ledger of index.years) {
+    const paper = ledger.materials.find((material) => material.title === "英語（閱讀）");
+    assert(paper, `${ledger.year}: English reading paper missing`);
+    assert.equal(paper.materialKind, "question-paper");
+    assert.deepEqual(paper.subjectAreas, ["english"]);
+    assert.equal(paper.itemizationRequired, true);
+  }
+});
+
+test("standalone math constructed-response duplicates do not duplicate item rows", async () => {
+  const snapshot = await loadOfficialSourceRegister();
+  const index = createOfficialMaterialLedgerIndex(snapshot);
+  for (const ledger of index.years) {
+    const constructed = ledger.materials.filter((material) => /第一題|第二題/u.test(material.title));
+    assert.equal(constructed.length, 2, `${ledger.year}: expected two math constructed-response files`);
+    for (const material of constructed) {
+      assert.equal(material.materialKind, "constructed-response-duplicate");
+      assert.deepEqual(material.subjectAreas, ["math"]);
+      assert.equal(material.itemizationRequired, false);
+    }
+  }
+  for (const year of [109, 110, 112]) {
+    const ledger = index.years.find((entry) => entry.year === year);
+    const supplemental = ledger.materials.find((material) => material.materialKind === "supplemental-exam-package");
+    assert(supplemental, `${year}: alternate official exam package missing`);
+    assert.equal(supplemental.itemizationRequired, true);
+  }
+});
+
 test("complete mode rejects the unreviewed inventory", async () => {
   const snapshot = await loadOfficialSourceRegister();
   const index = createOfficialMaterialLedgerIndex(snapshot);
