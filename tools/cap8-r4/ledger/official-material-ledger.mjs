@@ -4,6 +4,11 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { auditRecordSha256, sha256 } from "../r4-core.mjs";
 import { validateR4Artifact } from "../schema-validator.mjs";
+import {
+  applyOfficialReviewEvidence,
+  loadOfficialReviewEvidence,
+  validateOfficialReviewEvidence,
+} from "./official-review-evidence.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const DEFAULT_REGISTER = path.join(HERE, "..", "evidence", "official", "official-source-register.json");
@@ -196,7 +201,8 @@ export async function validateOfficialMaterialLedgerIndex(index, snapshot, { req
   assert.equal(index.schemaVersion, "cap8-r4-official-material-ledger-index-v1");
   assert.equal(index.sourceRegisterSha256, snapshot.sha256, "official source register hash mismatch");
   assert.deepEqual(index.years.map((ledger) => ledger.year), YEARS);
-  assert.equal(index.status, requireComplete ? "complete-reviewed" : "materials-inventoried-unreviewed");
+  const reviewed = index.years.some((ledger) => ledger.sourceReviews.length || ledger.items.length);
+  assert.equal(index.status, requireComplete ? "complete-reviewed" : reviewed ? "partially-reviewed" : "materials-inventoried-unreviewed");
   const results = [];
   for (const ledger of index.years) results.push(await validateOfficialMaterialLedger(ledger, snapshot, { requireComplete }));
   return {
@@ -210,10 +216,15 @@ export async function validateOfficialMaterialLedgerIndex(index, snapshot, { req
 
 async function main() {
   const snapshot = await loadOfficialSourceRegister();
-  const index = createOfficialMaterialLedgerIndex(snapshot);
+  const extraction = JSON.parse(await readFile(path.join(HERE, "..", "evidence", "official", "official-extraction-index.json"), "utf8"));
+  const candidates = JSON.parse(await readFile(path.join(HERE, "official-item-candidates.json"), "utf8"));
+  const authorityGraph = JSON.parse(await readFile(path.join(HERE, "..", "authority", "authority-graph.json"), "utf8"));
+  const evidence = await loadOfficialReviewEvidence();
+  const validated = validateOfficialReviewEvidence(evidence, { extractionIndex: extraction, candidates, authorityGraph });
+  const index = applyOfficialReviewEvidence(createOfficialMaterialLedgerIndex(snapshot), validated);
   const result = await validateOfficialMaterialLedgerIndex(index, snapshot);
   await writeFile(DEFAULT_LEDGER, `${JSON.stringify(index, null, 2)}\n`, "utf8");
-  console.log(`official-material-ledger: OK - ${result.materials} materials inventoried, semantic review pending`);
+  console.log(`official-material-ledger: OK - ${result.materials} materials, ${result.sourceReviews} source reviews, ${result.items} item reviews`);
 }
 
 export const OFFICIAL_ITEM_YEARS = YEARS;

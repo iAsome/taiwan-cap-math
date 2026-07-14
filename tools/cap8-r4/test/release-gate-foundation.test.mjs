@@ -9,6 +9,7 @@ import {
   verifyOfficialExtractionEvidence,
   verifyOfficialItemCandidateEvidence,
   verifyOfficialLedgerEvidence,
+  verifyOfficialReviewShardEvidence,
   verifyUserRequirements,
 } from "../run-full-release-gate.mjs";
 
@@ -31,6 +32,7 @@ test("official evidence separates extraction, item location, and semantic review
     { exams: candidates.exams, items: candidates.items, selectionItems: candidates.selectionItems },
     { exams: 13, items: 3178, selectionItems: 3139 },
   );
+  assert.deepEqual(await verifyOfficialReviewShardEvidence(), { materials: 1, papers: 1, items: 41 });
 });
 
 test("official appendices and English Table 1 are independently locked", async () => {
@@ -71,14 +73,14 @@ test("mechanical curriculum extraction validates but cannot pass the frozen gate
   await assert.rejects(verifyAuthorityGraphEvidence(), /not frozen and semantically reviewed/);
 });
 
-test("material inventory validates but cannot pass the complete official-item gate", async () => {
+test("partial material review validates but cannot pass the complete official-item gate", async () => {
   const result = await verifyOfficialLedgerEvidence(undefined, { requireComplete: false });
   assert.deepEqual(result, {
     years: 10,
     materials: 246,
-    sourceReviews: 0,
-    items: 0,
-    status: "materials-inventoried-unreviewed",
+    sourceReviews: 1,
+    items: 41,
+    status: "partially-reviewed",
   });
   await assert.rejects(verifyOfficialLedgerEvidence(), /complete-reviewed/);
 });

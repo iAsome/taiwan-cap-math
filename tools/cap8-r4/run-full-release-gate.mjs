@@ -20,6 +20,10 @@ import {
   validateOfficialMaterialLedgerIndex,
 } from "./ledger/official-material-ledger.mjs";
 import {
+  loadOfficialReviewEvidence,
+  validateOfficialReviewEvidence,
+} from "./ledger/official-review-evidence.mjs";
+import {
   SUBJECTS,
   auditRecordSha256,
   canonicalJson,
@@ -279,6 +283,17 @@ export async function verifyOfficialItemCandidateEvidence(repoRoot = REPO_ROOT) 
   const extraction = await readJson(repoRoot, OFFICIAL_EXTRACTION_PATH);
   const candidates = await readJson(repoRoot, OFFICIAL_ITEM_CANDIDATES_PATH);
   return validateOfficialItemCandidates(candidates, extraction);
+}
+
+export async function verifyOfficialReviewShardEvidence(repoRoot = REPO_ROOT) {
+  const extractionIndex = await readJson(repoRoot, OFFICIAL_EXTRACTION_PATH);
+  const candidates = await readJson(repoRoot, OFFICIAL_ITEM_CANDIDATES_PATH);
+  const authorityGraph = await readJson(repoRoot, AUTHORITY_GRAPH_PATH);
+  const evidence = await loadOfficialReviewEvidence({
+    sourceReviewsPath: path.join(repoRoot, "tools", "cap8-r4", "ledger", "reviews", "official-source-reviews.json"),
+    itemReviewsDirectory: path.join(repoRoot, "tools", "cap8-r4", "ledger", "reviews", "items"),
+  });
+  return validateOfficialReviewEvidence(evidence, { extractionIndex, candidates, authorityGraph }).counts;
 }
 
 async function findNamedFiles(root, name) {
@@ -617,6 +632,7 @@ export async function runFullReleaseGate({
     verifyOfficialLedgerEvidence,
     verifyOfficialExtractionEvidence,
     verifyOfficialItemCandidateEvidence,
+    verifyOfficialReviewShardEvidence,
     productionFloor,
     scopeLocks,
     discoverSubjectArtifacts,
@@ -634,6 +650,7 @@ export async function runFullReleaseGate({
   checks.push(await checked("official-source-evidence", () => use.verifySourceEvidence(repoRoot), repoRoot));
   checks.push(await checked("official-page-and-archive-extractions", () => use.verifyOfficialExtractionEvidence(repoRoot), repoRoot));
   checks.push(await checked("official-item-locator-candidates", () => use.verifyOfficialItemCandidateEvidence(repoRoot), repoRoot));
+  checks.push(await checked("completed-official-review-shards", () => use.verifyOfficialReviewShardEvidence(repoRoot), repoRoot));
   checks.push(await checked("user-authority-and-final-audit-requirements", () => use.verifyUserRequirements(repoRoot), repoRoot));
   checks.push(await checked("official-curriculum-appendix-evidence", () => use.verifyAppendixEvidence(repoRoot), repoRoot));
   checks.push(await checked("reviewed-fourth-stage-authority-nodes", () => use.verifyAuthorityNodeReview(repoRoot), repoRoot));
