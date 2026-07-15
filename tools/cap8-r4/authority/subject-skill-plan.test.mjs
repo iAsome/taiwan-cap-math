@@ -5,6 +5,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { materializeSubjectSkillPlan } from "./subject-skill-plan.mjs";
 import { CHINESE_SKILL_PLAN } from "./skill-plans/chinese.mjs";
+import { CIVICS_SKILL_PLAN } from "./skill-plans/civics.mjs";
 import { ENGLISH_SKILL_PLAN } from "./skill-plans/english.mjs";
 import { GEOGRAPHY_SKILL_PLAN } from "./skill-plans/geography.mjs";
 import { HISTORY_SKILL_PLAN } from "./skill-plans/history.mjs";
@@ -109,6 +110,32 @@ test("History plan covers every applicable official node and has valid prerequis
   const nodes = await authorityNodes();
   const result = materializeSubjectSkillPlan(HISTORY_SKILL_PLAN, nodes);
   const authorityIds = new Set(nodes.filter((node) => node.subjects.includes("history")).map((node) => node.id));
+  const linked = new Set(result.skills.flatMap((skill) => skill.authorityRefs));
+  assert.deepEqual([...linked].sort(), [...authorityIds].sort());
+  const skillIds = new Set(result.skills.map((skill) => skill.id));
+  for (const skill of result.skills) {
+    assert(skill.authorityRefs.length > 0, `${skill.id}: authority refs missing`);
+    assert(skill.prerequisites.every((id) => skillIds.has(id)), `${skill.id}: invalid prerequisite`);
+  }
+});
+
+test("Civics plan materializes 240 stable atomic skills across all required families", async () => {
+  const result = materializeSubjectSkillPlan(CIVICS_SKILL_PLAN, await authorityNodes());
+  const lock = await scopeLock("CIVICS_SCOPE_LOCK_R4.json");
+  assert.equal(result.subject, "civics");
+  assert.equal(result.families, 36);
+  assert.equal(result.authorityNodes, 100);
+  assert.equal(result.skills.length, lock.minimumAtomicSkills);
+  assert.deepEqual(CIVICS_SKILL_PLAN.families.map((family) => family.title), lock.requiredTopicFamilies);
+  assert.equal(result.skills[0].id, "CIV_R4_S001");
+  assert.equal(result.skills.at(-1).id, "CIV_R4_S240");
+  assert.equal(new Set(result.skills.map((skill) => skill.title)).size, 240);
+});
+
+test("Civics plan covers every applicable official node and has valid prerequisites", async () => {
+  const nodes = await authorityNodes();
+  const result = materializeSubjectSkillPlan(CIVICS_SKILL_PLAN, nodes);
+  const authorityIds = new Set(nodes.filter((node) => node.subjects.includes("civics")).map((node) => node.id));
   const linked = new Set(result.skills.flatMap((skill) => skill.authorityRefs));
   assert.deepEqual([...linked].sort(), [...authorityIds].sort());
   const skillIds = new Set(result.skills.map((skill) => skill.id));
