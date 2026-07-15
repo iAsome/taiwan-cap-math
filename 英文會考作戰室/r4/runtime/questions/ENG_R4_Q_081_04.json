@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_081_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I ___ this kind of food.",
+  "options": [
+    "have not never eaten",
+    "never ate tomorrow",
+    "has never eat",
+    "have never eaten"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "have not never 含兩個否定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "never ate tomorrow 同時混用過去與未來。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "I 不搭配 has，eat 也不是分詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "have never eaten 正確表示零次經驗。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "construct-i-have-never-eaten",
+    "screen-double-negative-and-form-errors"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "combine-not-and-never"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "主詞 I 使用 have，never 放在助動詞與 eaten 之間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只有一個否定並使用正確分詞；其餘選項有多重問題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

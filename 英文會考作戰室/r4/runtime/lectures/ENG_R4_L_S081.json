@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S081",
+  "subject": "english",
+  "unitId": "ENG_R4_U12",
+  "skillId": "ENG_R4_S081",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S080"
+  ],
+  "objectives": [
+    "使用 ever 詢問截至目前是否有某種經驗。",
+    "使用 never 表達截至目前一次也沒有的經驗。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S081_SEC_01",
+      "title": "ever 常用於經驗問句",
+      "content": "ever 表示在到目前為止的任何時候，常放在 have/has 與過去分詞之間，例如 Have you ever ridden a horse?。它詢問有沒有這項經驗，不要求回答確切日期。"
+    },
+    {
+      "id": "ENG_R4_L_S081_SEC_02",
+      "title": "never 本身已有否定意思",
+      "content": "never 表示一次也沒有，位置同樣在 have/has 後、過去分詞前，例如 I have never ridden a horse。因為 never 已是否定，不再寫 haven't never。"
+    },
+    {
+      "id": "ENG_R4_L_S081_SEC_03",
+      "title": "回答經驗後可再補過去細節",
+      "content": "對 Have you ever...? 可先回答 Yes, I have，再用過去簡單式補充 When did you do it? 或 I did it last summer。經驗與確切事件可分成兩句，時態也隨資訊改變。"
+    },
+    {
+      "id": "ENG_R4_L_S081_SEC_04",
+      "title": "ever 並非每句都必須出現",
+      "content": "Have you visited Japan? 也能詢問截至目前的經驗；ever 讓「任何時候曾否」更明確。never 則是說話者的否定陳述，不能拿來代替一般問句中的 ever。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S081_EX_01",
+      "prompt": "Have you ___ seen a whale? (ever / never / yesterday)",
+      "steps": [
+        "句子詢問有沒有經驗。",
+        "ever 放在 have 與 seen 之間。",
+        "不加入明確過去時間。"
+      ],
+      "answer": "ever",
+      "why": "問句要詢問到目前為止是否看過鯨魚，ever 正好表示任何過去時候。never 會把問題變成帶否定預設，yesterday 則和現在完成式不合。"
+    },
+    {
+      "id": "ENG_R4_L_S081_EX_02",
+      "prompt": "Mia has ___ flown in a plane. (never / ever did / not never)",
+      "steps": [
+        "句子陳述零次經驗。",
+        "never 本身是否定。",
+        "放在 has 與 flown 之間。"
+      ],
+      "answer": "never",
+      "why": "Mia has never flown 表示截至現在一次也沒有搭飛機的經驗。ever did 破壞完成式，not never 形成不必要的雙重否定。"
+    },
+    {
+      "id": "ENG_R4_L_S081_EX_03",
+      "prompt": "A: Have they ever won a game? B: Yes, they ___. (have / did yesterday / has)",
+      "steps": [
+        "問句助動詞是 Have。",
+        "主詞 they 保持不變。",
+        "肯定簡答使用 have。"
+      ],
+      "answer": "have",
+      "why": "簡答必須沿用原問句的 have，所以回答 Yes, they have。did yesterday 改成另一個過去事件，has 不配複數 they。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "ever 只能翻成曾經，所以肯定句一定要加 ever。",
+      "whyWrong": "一般經驗肯定句可不用 ever，語意仍完整。",
+      "correction": "把 ever 視為強調任何時候，常用於問句，而非每句必備。"
+    },
+    {
+      "belief": "never 前還要加 not 才有否定意思。",
+      "whyWrong": "never 本身已表示一次也沒有，再加 not 會改變或混亂意思。",
+      "correction": "直接使用 have/has never + 過去分詞。"
+    },
+    {
+      "belief": "Have you ever...? 必須用確切日期作答。",
+      "whyWrong": "問句先問有沒有經驗，可只回答 Yes, I have 或 No, I haven't。",
+      "correction": "若要補日期，再另用過去簡單式說明那次事件。"
+    },
+    {
+      "belief": "ever 和 never 可放在句尾任何位置。",
+      "whyWrong": "本課經驗句通常把它們放在 have/has 與過去分詞之間。",
+      "correction": "寫 Have you ever tried...? 與 I have never tried...。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Have you ever eaten this? 中 ever 放在哪兩部分之間？",
+      "answer": "have and eaten",
+      "reason": "經驗問句把 ever 放在助動詞與分詞之間。"
+    },
+    {
+      "prompt": "I haven't never seen it 有何問題？",
+      "answer": "double negative",
+      "reason": "haven't 與 never 都是否定，不能在本意中重複。"
+    },
+    {
+      "prompt": "Have they ever won? 的肯定簡答是什麼？",
+      "answer": "Yes, they have.",
+      "reason": "沿用問句的 have。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

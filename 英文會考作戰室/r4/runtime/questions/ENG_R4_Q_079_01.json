@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_079_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "My parents ___ finished dinner.",
+  "options": [
+    "have",
+    "has",
+    "are",
+    "did have"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "My parents 是複數，搭配 have。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "has 只配第三人稱單數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "are finished 會改變句型與原意。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did have 不形成本題現在完成式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-parents-as-plural-subject",
+    "choose-have-before-finished"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-has-for-long-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先找主詞中心 parents，再判斷為複數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項和 finished 組成 have finished；其他助動詞不合主詞或時態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

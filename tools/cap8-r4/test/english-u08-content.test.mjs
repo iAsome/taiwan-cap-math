@@ -14,6 +14,7 @@ const UNITS = [
   { id: "ENG_R4_U09", firstSkill: 57 },
   { id: "ENG_R4_U10", firstSkill: 64 },
   { id: "ENG_R4_U11", firstSkill: 71 },
+  { id: "ENG_R4_U12", firstSkill: 78 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -228,6 +229,42 @@ test("U11 future-form boundaries and timelines remain explicit", async () => {
   const boundaryLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S076");
   assert.match(boundaryLecture.sections[3].content, /有時都合文法/);
   assert.match(boundaryLecture.sections[3].content, /唯一答案/);
+});
+
+test("U12 present-perfect forms, meanings, and time boundaries remain explicit", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U12");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_078_07").options[question.get("ENG_R4_Q_078_07").answerIndex], "been");
+  assert.equal(question.get("ENG_R4_Q_078_08").options[question.get("ENG_R4_Q_078_08").answerIndex], "gone");
+  assert.match(question.get("ENG_R4_Q_078_11").reviews.join(" "), /經驗/);
+  assert.equal(question.get("ENG_R4_Q_080_11").options[2], "took → taken");
+  assert.doesNotMatch(question.get("ENG_R4_Q_080_11").stem, /The books have took/);
+  assert.match(question.get("ENG_R4_Q_081_09").options[0], /haven't never/);
+  assert.match(question.get("ENG_R4_Q_081_12").options[3], /Up to now/);
+  assert.match(question.get("ENG_R4_Q_082_10").options[1], /already/);
+  assert.equal(question.get("ENG_R4_Q_083_08").options[3], "for");
+  assert.match(question.get("ENG_R4_Q_083_08").reviews.join(" "), /5.*2|三小時/);
+  assert.match(question.get("ENG_R4_Q_083_12").reviews.join(" "), /日期|年份|起點/);
+  assert.match(question.get("ENG_R4_Q_084_07").stem, /have had two classes today/);
+  assert.equal(question.get("ENG_R4_Q_084_07").options[question.get("ENG_R4_Q_084_07").answerIndex], "Classes completed so far today");
+  assert.equal(question.get("ENG_R4_Q_084_09").answerIndex, 0);
+  assert.equal(question.get("ENG_R4_Q_084_12").answerIndex, 3);
+  assert.doesNotMatch(question.get("ENG_R4_Q_084_03").options.join(" "), /lost in 2021/);
+  assert.doesNotMatch(question.get("ENG_R4_Q_084_11").options.join(" "), /lost it last year/);
+  const boundaryLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S084");
+  assert.match(boundaryLecture.sections.map((value) => value.content).join(" "), /today/);
+  assert.match(boundaryLecture.sections.map((value) => value.content).join(" "), /尚未結束|未結束/);
+  const lectureText = JSON.stringify(source.lectures);
+  assert.doesNotMatch(lectureText, /visited yesterday \/ has visit/);
+  assert.doesNotMatch(lectureText, /studied for the test ___ two hours/);
+  assert.doesNotMatch(lectureText, /lost in 2021/);
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U12 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_079_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The new student ___ already joined the club.",
+  "options": [
+    "have",
+    "are",
+    "do",
+    "has"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The new student 雖有三個字，中心名詞仍是單數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "are joined 會變成不同語態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "do already joined 不合助動詞結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "has already joined 配合單數主詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "find-singular-head-in-long-subject",
+    "select-has-already-joined"
+  ],
+  "representationType": "subject-head-agreement",
+  "misconceptionTargets": [
+    "count-words-instead-of-subject-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "主詞長度不等於複數，student 才是判斷核心。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項與 joined 形成現在完成式，並保留 already 的位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

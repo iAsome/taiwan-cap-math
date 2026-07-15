@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_082_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus has ___ left.",
+  "options": [
+    "already",
+    "yet",
+    "last night",
+    "tomorrow"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "already 位於 has 與 left 之間，表示公車已離開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "yet 在本課基本用法多放在問句或否定句尾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "last night 是已結束的明確過去時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "tomorrow 與已完成的 has left 衝突。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "place-already-between-has-and-left",
+    "reject-yet-and-time-conflicts"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "put-yet-in-affirmative-mid-position"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "句子是肯定完成式，空格也位在助動詞與分詞之間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時符合 already 的語意和位置；其餘選項不合句型或時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

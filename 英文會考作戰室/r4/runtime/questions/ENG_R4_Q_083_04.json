@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_083_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora has played the piano ___ five years.",
+  "options": [
+    "since",
+    "ago",
+    "from",
+    "for"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "since 需要起點，不接 five years 長度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "ago 與現在完成式不這樣搭配。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "from 單獨缺少另一端。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "for five years 表示持續長度。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "measure-piano-duration-as-five-years",
+    "select-for-before-duration"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-number-of-years-as-start-date"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "five years 是一段時間，回答彈琴持續多久。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項與 has played 共同表達從過去延續到現在。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

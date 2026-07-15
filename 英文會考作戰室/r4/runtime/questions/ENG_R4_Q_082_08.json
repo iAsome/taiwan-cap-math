@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_082_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "School starts at eight. It is only seven, but Ben ___ at school.",
+  "options": [
+    "hasn't arrived yet",
+    "arrived tomorrow",
+    "is arrive every day",
+    "has already arrived"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "hasn't arrived yet 與 but 所呈現的提早到達不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "arrived 不能和 tomorrow 搭配。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is arrive 不是正確結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "has already arrived 表示比預期早就到了。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-seven-arrival-with-eight-start",
+    "select-already-arrived"
+  ],
+  "representationType": "schedule-expectation-cloze",
+  "misconceptionTargets": [
+    "choose-yet-despite-stated-early-arrival"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "八點才上課而七點已到，明確構成早於預期的到達。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項利用 already 表達已發生；第一項會說人仍未到校。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

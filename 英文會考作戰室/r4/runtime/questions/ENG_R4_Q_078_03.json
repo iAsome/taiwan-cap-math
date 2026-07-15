@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_078_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Since January, we ___ this song many times.",
+  "options": [
+    "heard",
+    "has hearing",
+    "have heard",
+    "have hear"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "heard 是一般過去式，未呈現從一月累計至今。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "We 不搭配 has，hearing 也不是所需分詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "have heard 正確連結一月起點與多次收聽經驗。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "hear 是原形，不能直接接在 have 後。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "combine-since-january-with-repeat-count",
+    "form-we-have-heard"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-simple-past-inside-continuing-period"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Since January 建立延續到現在的時間範圍，many times 則給出累計次數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的主詞、助動詞與 heard 分詞都符合這兩項線索。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

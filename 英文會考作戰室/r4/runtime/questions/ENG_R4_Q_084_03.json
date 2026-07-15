@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia's key is still missing. She ___ it.",
+  "options": [
+    "found yesterday",
+    "has lose",
+    "has lost",
+    "will lose tomorrow"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若昨天已找到鑰匙，就不符合 still missing。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "has 後不能使用原形 lose。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "has lost 表示遺失的結果持續到現在。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "未來才遺失與目前仍找不到相衝突。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "connect-still-missing-key-to-present-perfect",
+    "exclude-found-and-future-contradictions"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "ignore-stated-current-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "still missing 把過去的遺失事件連到現在，適合使用現在完成式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 She has lost it；其他選項不是形式錯誤，就是和現況矛盾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

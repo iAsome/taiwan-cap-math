@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_078_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo has seen snow before. What does the sentence tell us?",
+  "options": [
+    "He is watching snow now.",
+    "He has had this experience at least once.",
+    "He sees snow every night.",
+    "He will see snow tomorrow."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "現在完成式沒有表示此刻正在看雪。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "before 表示截至目前至少有過一次看雪經驗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有 every night 這類習慣線索。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子回顧目前以前，不是預告明天。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-leo-has-seen-snow",
+    "exclude-added-time-claims"
+  ],
+  "representationType": "experience-meaning-selection",
+  "misconceptionTargets": [
+    "treat-present-perfect-as-present-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "本題要讀懂 has seen...before，而不是只辨認動詞形式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留非特定經驗的範圍；其他選項擅自加入現在動作、習慣或未來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

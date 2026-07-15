@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_078_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence reports life experience without a finished past time?",
+  "options": [
+    "I have eaten this food before.",
+    "I ate it at noon yesterday.",
+    "I was hungry last night.",
+    "I eat it every week."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "have eaten...before 表示到目前為止的經驗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "at noon yesterday 是已結束的明確時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "last night 報告過去狀態。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "every week 表示習慣。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "identify-life-experience-among-time-frames",
+    "verify-no-finished-past-time"
+  ],
+  "representationType": "time-frame-discrimination",
+  "misconceptionTargets": [
+    "confuse-frequency-with-experience"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "life experience 的重點是做過與否，不需指定日期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只有 before 這個非特定線索；其餘句子各有過去時點或頻率。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

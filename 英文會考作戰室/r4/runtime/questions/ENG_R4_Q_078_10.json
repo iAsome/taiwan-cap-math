@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_078_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“I have lost my ticket.” What present problem does the sentence suggest?",
+  "options": [
+    "The ticket was used last year.",
+    "The speaker cannot find the ticket now.",
+    "The speaker buys a ticket every day.",
+    "The ticket will be lost tomorrow."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句子沒有說去年使用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "has lost 可連結到現在仍找不到票。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文中沒有每日購票習慣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "遺失已在現在以前發生，不是明天。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-current-result-from-have-lost",
+    "reject-unmentioned-times-and-habit"
+  ],
+  "representationType": "present-result-inference",
+  "misconceptionTargets": [
+    "read-present-perfect-as-future"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "現在完成式也可凸顯過去事件留下的目前結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項解釋眼前問題；其他選項加入不存在的時間或習慣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

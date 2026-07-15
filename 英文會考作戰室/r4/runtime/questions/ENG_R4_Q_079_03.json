@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_079_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ the students left the room?",
+  "options": [
+    "Has",
+    "Did have",
+    "Have",
+    "Are"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Has 不配複數 students。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Did have 疊加不需要的助動詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Have 可移到複數主詞前形成完成式問句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Are left 不是本題主動離開的完成式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "invert-have-before-plural-students",
+    "retain-left-as-participle"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "insert-did-before-have"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "the students 是複數，問句使用 Have they...? 的結構。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 Have the students left...?；其他選項不合主詞或時態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_080_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia has ___ the last piece of cake.",
+  "options": [
+    "take",
+    "took",
+    "taking",
+    "taken"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "take 是原形。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "took 是一般過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "taking 不是過去分詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "taken 是 take 的過去分詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "apply-take-took-taken-sequence",
+    "choose-taken-after-has"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-took-as-any-past-form"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "has 決定後面的 take 要使用第三態 taken。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是唯一可形成現在完成式的選擇；took 不能因表示過去就直接使用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

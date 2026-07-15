@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_081_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Have you ever seen snow? B: Yes, I have. I saw it in 2024. What does the last sentence add?",
+  "options": [
+    "A plan for next year",
+    "A daily snow habit",
+    "A second negative answer",
+    "The finished time of one experience"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "in 2024 是過去，不是明年計畫。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "看雪不是句中的每日習慣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Yes, I have 已是肯定回答。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "in 2024 指出其中一次經驗的確切過去時間。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "identify-detail-added-by-simple-past-followup",
+    "link-in-2024-to-one-experience"
+  ],
+  "representationType": "experience-followup-analysis",
+  "misconceptionTargets": [
+    "expect-present-perfect-in-every-turn"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "完成式先回答有無經驗，過去式再補事件發生時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項說明時態轉換的功能；其他選項不符合對話。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

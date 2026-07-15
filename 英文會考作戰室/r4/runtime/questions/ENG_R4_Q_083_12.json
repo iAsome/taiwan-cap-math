@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_083_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“We have lived here for six years.” What can we know without knowing today's date?",
+  "options": [
+    "The year they moved in",
+    "Where they live",
+    "The day they will leave",
+    "How long they have lived here"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有今天的年份就不能算出確切搬入年。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有地址。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "完成式沒有提供離開日期。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "for six years 直接給出居住長度。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "limit-inference-from-for-six-years",
+    "distinguish-duration-from-start-date"
+  ],
+  "representationType": "duration-information-boundary",
+  "misconceptionTargets": [
+    "infer-exact-start-year-without-current-year"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "for 回答多久，但不自動提供日曆上的開始日期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是唯一能由原句直接確定的資訊；其他項目需要額外資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

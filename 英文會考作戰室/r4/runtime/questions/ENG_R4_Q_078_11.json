@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_078_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Have you ever visited Penghu? B: Yes, I have. I went there last summer. Why does B use two tenses?",
+  "options": [
+    "The first sentence is a plan; the second is a habit.",
+    "Both sentences describe tomorrow.",
+    "The first answers about experience; the second gives a finished past time.",
+    "The second sentence corrects a spelling error."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "對話沒有未來計畫或習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "last summer 明確指過去，不是明天。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "have 回答有無經驗，went 則配合已結束的去年夏天。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時態改變來自資訊焦點，不是拼字修正。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "explain-tense-shift-from-experience-to-event",
+    "map-last-summer-to-simple-past"
+  ],
+  "representationType": "dialogue-tense-explanation",
+  "misconceptionTargets": [
+    "force-one-tense-across-dialogue"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同一段對話可先用完成式回答經驗，再用過去式補確切時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項正確連結兩句功能，沒有把時態差異誤當衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

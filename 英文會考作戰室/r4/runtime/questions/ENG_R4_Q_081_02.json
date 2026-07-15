@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_081_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia has ___ flown in a plane.",
+  "options": [
+    "ever did",
+    "never",
+    "not never",
+    "last year"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "ever did 不能放在 has 與 flown 之間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "never 表示截至現在零次搭機經驗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "not never 形成不必要的雙重否定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "last year 是明確過去時間。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "express-zero-flight-experience-with-never",
+    "avoid-not-never-double-negative"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "add-not-before-never"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "never 本身已有一次也沒有的否定意義。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成 has never flown；其他選項混用助動詞、雙重否定或過去時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

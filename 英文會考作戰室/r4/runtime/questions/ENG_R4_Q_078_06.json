@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_078_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence asks about an experience without giving a date?",
+  "options": [
+    "Did you swim yesterday?",
+    "Have you tried this game before?",
+    "Were you at home last night?",
+    "Do you play every Friday?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "yesterday 指定已結束的過去日期。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Have you tried...before 詢問目前以前是否有過經驗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "last night 是明確過去時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "every Friday 詢問固定習慣。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-experience-question-without-date",
+    "separate-experience-from-event-and-habit"
+  ],
+  "representationType": "sentence-purpose-classification",
+  "misconceptionTargets": [
+    "choose-any-past-related-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目要求經驗且不能給日期，before 只表示現在以前。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合兩項條件；其他句子分別問昨天、昨夜或習慣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

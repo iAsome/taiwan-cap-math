@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_082_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We haven't eaten dinner ___.",
+  "options": [
+    "already",
+    "last year",
+    "yet",
+    "tomorrow"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "already 不符合此句要表達的尚未完成狀態。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "last year 與 haven't eaten 的目前狀態不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "yet 位於否定句尾，表示到現在仍未吃晚餐。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "tomorrow 把事件放在未來，不能說明目前尚未完成。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "pair-havent-eaten-with-yet",
+    "interpret-currently-unfinished-dinner"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-already-after-negative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "haven't 已建立否定，句尾需要表達截至現在的 yet。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留晚餐尚未吃的現況；其他選項改成已完成、過去或未來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

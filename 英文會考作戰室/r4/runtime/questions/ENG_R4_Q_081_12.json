@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_081_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“Mia has never missed the school bus.” What does this sentence allow us to say?",
+  "options": [
+    "She missed it yesterday.",
+    "She will miss it tomorrow.",
+    "She has taken no buses in her life.",
+    "Up to now, she has always caught the school bus."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "never missed 與昨天錯過相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句子不能保證明天的結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "school bus 的特定經驗不等於從未搭過任何公車。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "截至現在零次錯過，表示每次都趕上校車。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-caught-every-time-from-never-missed",
+    "limit-never-claim-to-now-and-school-bus"
+  ],
+  "representationType": "bounded-never-inference",
+  "misconceptionTargets": [
+    "extend-never-claim-into-future"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "never 的範圍只到說話當下，也只針對 school bus。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留這兩個界線；其他選項改成過去反例、未來保證或過度推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

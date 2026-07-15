@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_078_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A note says, “Nora has read the book three times.” What can we know from the note?",
+  "options": [
+    "She read it only yesterday.",
+    "She is reading it at this moment.",
+    "She will read it three years from now.",
+    "She has had three reading experiences up to now."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "three times 不等於只在昨天閱讀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "完成式沒有說她此刻正在讀。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子不談三年後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "three times 累計到目前為止的閱讀經驗。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "translate-three-times-into-cumulative-experience",
+    "avoid-current-and-future-overread"
+  ],
+  "representationType": "experience-note-interpretation",
+  "misconceptionTargets": [
+    "equate-present-perfect-with-action-now"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目提供的是經驗次數，而不是每次的日期或當前動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留完成式與 three times 的資訊，其他選項改變時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

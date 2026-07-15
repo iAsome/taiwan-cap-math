@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_079_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora ___ not read the message yet.",
+  "options": [
+    "have",
+    "has",
+    "does",
+    "is"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nora 是單數，不搭配 have。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "has not read 與 yet 形成尚未完成的意思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "does not read 會改成現在簡單式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is not read 在此不是所需完成式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "agree-nora-with-has",
+    "form-has-not-read-yet"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-does-with-present-perfect"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "單一人名 Nora 使用 has，否定詞緊接其後。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 read 的過去分詞與句尾 yet；其餘選項改變結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence mixes present perfect with a finished past time in the wrong way?",
+  "options": [
+    "I have called her yesterday.",
+    "I called her yesterday.",
+    "I have called her before.",
+    "I have called her twice."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "have called 不應直接搭配已結束的 yesterday。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "called yesterday 是正確過去事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "have called before 可談非特定經驗。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "have called twice 可累計到目前的次數。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "detect-present-perfect-yesterday-conflict",
+    "contrast-date-with-before-and-count"
+  ],
+  "representationType": "tense-conflict-diagnosis",
+  "misconceptionTargets": [
+    "accept-have-plus-yesterday"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目要找完成式和明確過去時間衝突的句子。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項具有兩個不相容線索；其餘三句各自有合理的時間框架。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

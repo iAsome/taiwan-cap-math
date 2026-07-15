@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The library worker asks, “Why can't you enter now?” The student answers, “I ___ my school card.”",
+  "options": [
+    "found yesterday",
+    "will lose",
+    "have lost",
+    "lose every day"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若昨天已找到卡片，就不能說明現在無法入館。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "未來才遺失不會造成眼前的問題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "have lost 表示卡片遺失且目前仍未找到。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "lose every day 把單次問題說成不合理的日常習慣。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "answer-current-access-question-with-present-result",
+    "select-have-lost-over-contradictory-events"
+  ],
+  "representationType": "access-dialogue-transfer",
+  "misconceptionTargets": [
+    "choose-any-grammatical-time-without-checking-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "問句要求說明現在無法進入的原因，回答要呈現仍存在的遺失結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以 I have lost my school card 連結先前事件與目前狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

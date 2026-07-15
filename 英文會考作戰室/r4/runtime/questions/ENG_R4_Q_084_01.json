@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I ___ the book last night.",
+  "options": [
+    "finished",
+    "have finished",
+    "has finished",
+    "finish tomorrow"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "finished 配合已結束的 last night。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "have finished 不直接搭配此明確過去時點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "I 不搭配 has，時間也不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "finish tomorrow 與 last night 衝突。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "map-last-night-to-simple-past-finished",
+    "exclude-present-perfect-with-finished-time"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-have-finished-with-last-night"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "last night 把完成閱讀鎖定在已結束的過去。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項使用過去簡單式；其他選項保留現在連結或加入未來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

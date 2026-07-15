@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_083_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We have lived here ___ 2021.",
+  "options": [
+    "since",
+    "for",
+    "ago",
+    "during"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "since 接居住開始的時間點 2021。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "for 應接一段時間長度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "ago 從現在往前定位，不能放在此處。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "during 不形成本題從起點延續的結構。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-2021-as-starting-point",
+    "choose-since-for-residence-start"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-for-before-calendar-year"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "2021 是何時開始，而不是住了多久。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項形成 have lived here since 2021；其他介系詞不配起點與完成式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

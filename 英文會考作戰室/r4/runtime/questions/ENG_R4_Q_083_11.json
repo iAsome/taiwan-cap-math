@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_083_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A club card says, “Member from September 1.” Today is December 1. Which sentence says she is still a member?",
+  "options": [
+    "She was a member tomorrow.",
+    "She is a member for September 1.",
+    "She has been a member since September 1.",
+    "She has been a member ago September 1."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "was tomorrow 混用過去與未來。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "for 不能接 September 1 這個起點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "has been...since 表示會員身分從該日起持續。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "ago 不能放在日期前形成此完成式。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "translate-membership-card-into-present-perfect",
+    "select-since-before-specific-date"
+  ],
+  "representationType": "membership-card-transfer",
+  "misconceptionTargets": [
+    "use-for-before-start-date"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "卡片提供加入起點，而 today 顯示身分仍需連到現在。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項使用 since September 1；其他選項錯置時間或介系詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

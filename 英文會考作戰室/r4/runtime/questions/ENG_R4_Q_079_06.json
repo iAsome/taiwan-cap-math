@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_079_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "No food is left now. The dog ___ eaten all its food.",
+  "options": [
+    "have",
+    "has",
+    "does",
+    "is"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The dog 是單數，不用 have。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "has eaten 配合單數，也能解釋目前沒有食物的結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "does 之後不能直接接過去分詞 eaten。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is eaten all its food 不是可接受的主動完成式結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "agree-singular-dog-with-has",
+    "prevent-passive-meaning-reversal"
+  ],
+  "representationType": "agreement-and-voice-cloze",
+  "misconceptionTargets": [
+    "choose-was-before-eaten"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "單數主詞 The dog 使用 has，eaten 是 eat 的過去分詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留主動進食；was 會造成不合理被動語意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

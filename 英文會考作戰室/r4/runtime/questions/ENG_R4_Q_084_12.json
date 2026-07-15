@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A report needs one life experience and one dated event. Which pair gives them in that order?",
+  "options": [
+    "I went there in 2023. / I have been there before.",
+    "I go there every year. / I am going tomorrow.",
+    "I have been there in 2023. / I went there before.",
+    "I have been there before. / I went there in 2023."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "順序先是日期事件，再是經驗，與要求相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩句是習慣與未來計畫。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一句錯把完成式和 2023 直接並用，第二句也未給日期。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "have been...before 是經驗，went...in 2023 是明確事件。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "order-experience-before-dated-event",
+    "validate-have-been-before-and-went-in-2023"
+  ],
+  "representationType": "dual-tense-report-transfer",
+  "misconceptionTargets": [
+    "ignore-required-information-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目同時限定內容類型與排列順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項先用現在完成式呈現經驗，再用過去式加 2023；其他組不是順序錯就是時態不合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

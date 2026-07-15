@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_083_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“Amy has lived here since two years” uses the wrong time phrase. Which phrase keeps the meaning?",
+  "options": [
+    "for two years",
+    "two years ago",
+    "during two years",
+    "from two years"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "for two years 正確表示居住持續長度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "two years ago 只給過去時點，不能直接替換空間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "during two years 不表延續至今的基本結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "from 需要明確起點與可能的終點。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "repair-since-duration-mismatch",
+    "preserve-two-year-continuation-meaning"
+  ],
+  "representationType": "time-phrase-repair",
+  "misconceptionTargets": [
+    "replace-with-ago-without-changing-structure"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "two years 是一段長度，因此錯的是 since 與後面資訊類型不合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只改介系詞就保留原本持續兩年的意思。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

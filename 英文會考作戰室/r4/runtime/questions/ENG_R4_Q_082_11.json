@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_082_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A work note says, “Room A has already been cleaned. Room B hasn't been cleaned yet.” Which room still needs work?",
+  "options": [
+    "Both rooms",
+    "Room A",
+    "Room B",
+    "Neither room"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Room A 已完成，不是兩間都需要。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "already been cleaned 表示 A 已清理。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "hasn't...yet 表示 B 到現在仍未清理。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "B 尚未完成，所以不能說都不需要。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compare-two-room-completion-statuses",
+    "map-hasnt-yet-to-pending-work"
+  ],
+  "representationType": "work-note-transfer",
+  "misconceptionTargets": [
+    "treat-already-and-yet-as-same-status"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "already 與 hasn't...yet 在同一張工作單上標出相反狀態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項由 Room B 的否定完成式直接得出；其他答案忽略其中一間狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

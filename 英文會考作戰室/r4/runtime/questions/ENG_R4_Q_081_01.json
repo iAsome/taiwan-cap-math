@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_081_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Have you ___ seen a whale?",
+  "options": [
+    "ever",
+    "never",
+    "yesterday",
+    "ago"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "ever 詢問到目前為止任何時候是否看過。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "never 帶否定意思，不是一般經驗問句的基本選擇。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "yesterday 是明確過去時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "ago 需要搭配一段時間並使用過去式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "place-ever-in-whale-experience-question",
+    "exclude-finished-time-markers"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "insert-yesterday-into-present-perfect"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "問句在確認有沒有看鯨魚的經驗，沒有指定日期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項位於 Have you 與 seen 之間；其他選項改變否定或時間結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

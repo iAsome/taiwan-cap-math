@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_082_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia has ___ done her homework, so she can go out now.",
+  "options": [
+    "yet",
+    "tomorrow",
+    "last night",
+    "already"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "yet 不放在此肯定句的中間位置作基本用法。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "tomorrow 與 can go out now 的已完成原因不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "last night 會把完成時間鎖在已結束的昨晚，不適合直接放入此完成式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "already 表示作業已完成，能解釋現在可以外出。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-completed-homework-from-current-permission",
+    "insert-already-before-done"
+  ],
+  "representationType": "result-linked-adverb-cloze",
+  "misconceptionTargets": [
+    "ignore-now-result-when-selecting-time-word"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "so she can go out now 說明完成作業產生目前結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項形成 has already done，其他選項不合肯定完成式的語意或位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

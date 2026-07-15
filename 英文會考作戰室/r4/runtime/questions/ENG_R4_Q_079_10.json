@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_079_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which question keeps has as the only helping verb?",
+  "options": [
+    "Does Mia has finished?",
+    "Has Mia finished?",
+    "Is Mia has finished?",
+    "Did Mia has finish?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "does 與 has 不需並用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Has Mia finished 正確倒裝 has。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is 和 has 疊加兩個助動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did、has 與 finish 混用多種結構。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "audit-single-auxiliary-in-has-question",
+    "identify-has-mia-finished-order"
+  ],
+  "representationType": "auxiliary-count-audit",
+  "misconceptionTargets": [
+    "stack-helping-verbs"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "現在完成式問句只需把 has 移到 Mia 前。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項沒有新增 do、did 或 is，也保留 finished 分詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "It is ten in the morning, and the school day continues. “I have had two classes today.” What does the sentence count?",
+  "options": [
+    "Classes from yesterday",
+    "Classes completed so far today",
+    "A plan for tomorrow",
+    "Every class in the full school day"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "today 不表示昨天。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "two classes 是截至上午十點已完成的累計。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "have had 回顧已發生內容，不是明天計畫。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "school day continues 表示全天課程尚未全部結束。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-have-had-with-unfinished-today",
+    "limit-count-to-classes-completed-so-far"
+  ],
+  "representationType": "unfinished-period-meaning",
+  "misconceptionTargets": [
+    "treat-so-far-count-as-full-day-total"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "today 尚未結束，現在完成式在此統計目前為止的成果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只涵蓋已完成的兩堂課，不把它誤讀為全天總數或未來安排。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

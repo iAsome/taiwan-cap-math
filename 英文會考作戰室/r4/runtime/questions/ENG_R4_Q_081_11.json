@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_081_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A travel form asks, “Have you ever stayed on a small island?” Which answer reports no such experience?",
+  "options": [
+    "Yes, I stayed last month.",
+    "I will stay there next week.",
+    "No, I have never stayed on one.",
+    "I stay there every summer."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這一項報告有過一次經驗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這一項是未來計畫，沒有回答過去經驗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "have never stayed 清楚表示截至目前零次。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "每年夏天去表示有多次經驗。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "answer-travel-form-with-zero-experience",
+    "reject-habit-plan-and-positive-event"
+  ],
+  "representationType": "form-response-transfer",
+  "misconceptionTargets": [
+    "answer-experience-form-with-future-plan"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "表單問目前以前是否曾住過小島，回答必須直接處理經驗。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以 No 和 never 一致表達零次；其他選項表示有過或尚未發生。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

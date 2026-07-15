@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_083_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben has studied English ___ two hours.",
+  "options": [
+    "since",
+    "for",
+    "ago",
+    "from"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "since 不能接 two hours 這段長度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "for 表示讀書持續兩小時。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "ago 不接在此完成式末尾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "from 若表範圍還需要起訖資訊。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "recognize-two-hours-as-duration",
+    "complete-for-two-hours-study"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "write-since-two-hours"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "two hours 回答持續多久，因此使用 for。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項讓 has studied 延續到現在；其餘選項把長度誤當起點或缺少結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

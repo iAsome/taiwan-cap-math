@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_082_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A station message should say that the bus left sooner than expected. Which line does that?",
+  "options": [
+    "The bus hasn't left yet.",
+    "The bus left tomorrow.",
+    "The bus has left every day.",
+    "The bus has already left."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "hasn't left yet 表示仍未離開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "left tomorrow 混用過去式與未來時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "has left every day 不是自然的頻率表達。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "has already left 表示公車已比預期早離開。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compose-early-departure-station-message",
+    "select-already-over-not-yet"
+  ],
+  "representationType": "station-message-transfer",
+  "misconceptionTargets": [
+    "reverse-completed-and-pending-status"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "訊息要求同時表達已離開與早於預期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項由 has left 表完成、already 表已經；其餘選項否定或扭曲時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

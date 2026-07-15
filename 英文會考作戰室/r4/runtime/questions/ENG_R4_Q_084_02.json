@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which phrase names a past year?",
+  "options": [
+    "before",
+    "many times",
+    "in 2023",
+    "twice"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "before 保留未指明日期的經驗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "many times 可累計到目前的閱讀次數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "in 2023 指出已結束的明確過去年份，因此應改用 I read。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "twice 只給次數，仍可搭配現在完成式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-added-finished-time-trigger",
+    "change-have-read-to-read-for-2023"
+  ],
+  "representationType": "time-phrase-tense-shift",
+  "misconceptionTargets": [
+    "treat-count-as-finished-date"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "本題比較非特定經驗線索與明確過去時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項會形成 I read this book in 2023；其他三項都不必把經驗句改成一般過去式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

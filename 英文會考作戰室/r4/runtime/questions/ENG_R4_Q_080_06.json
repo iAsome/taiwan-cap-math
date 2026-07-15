@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_080_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which line gives the base form, past form, and past participle in that order?",
+  "options": [
+    "write / written / wrote",
+    "write / wrote / written",
+    "wrote / write / written",
+    "written / wrote / write"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "後兩個位置顛倒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "write、wrote、written 依序是原形、過去式與過去分詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一與第二個位置互換。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "整組由第三態倒排，不合指定順序。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "order-three-forms-of-write",
+    "verify-base-past-participle-columns"
+  ],
+  "representationType": "three-form-sequence",
+  "misconceptionTargets": [
+    "memorize-forms-without-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目指定三種功能的固定順序，不只問哪三個字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把 write 放原形、wrote 放過去式、written 放完成式所需位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

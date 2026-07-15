@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence places the event at a finished past time?",
+  "options": [
+    "I have met her before.",
+    "I met her on Monday.",
+    "I have known her for years.",
+    "I have just met her."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "before 未給確切日期，句子談經驗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "on Monday 將見面放在明確且已結束的過去日。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "for years 表持續到現在。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "have just met 強調和現在很接近的結果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "locate-explicit-finished-time-among-perfect-uses",
+    "pair-met-with-on-monday"
+  ],
+  "representationType": "tense-time-classification",
+  "misconceptionTargets": [
+    "treat-before-as-exact-date"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目要求 finished past time，必須找出具體時間點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時有過去式 met 與 on Monday；其他句子保留現在連結。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

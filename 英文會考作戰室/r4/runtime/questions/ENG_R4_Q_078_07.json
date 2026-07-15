@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_078_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam is here now. He has ___ to Japan twice.",
+  "options": [
+    "went",
+    "go",
+    "been",
+    "being"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "went 是一般過去式，不能接在 has 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "go 是原形。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "been to 表示去過且 Sam 現在已回來。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "being 不能表示這項旅遊經驗。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-current-presence-to-select-been",
+    "complete-has-been-to-japan"
+  ],
+  "representationType": "presence-informed-experience",
+  "misconceptionTargets": [
+    "use-went-after-has"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Sam is here now 排除目前仍在日本的 gone 解讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 has been to Japan，並由 twice 表示兩次經驗。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

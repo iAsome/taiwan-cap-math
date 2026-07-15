@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which fact most strongly supports “Ben has broken his glasses”?",
+  "options": [
+    "He cannot use them now.",
+    "He bought them in 2022.",
+    "He cleans them every day.",
+    "He will wear them tomorrow."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "現在不能使用眼鏡，是破損留下的目前結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "購買年份不表示現在已破。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "每日清潔是習慣，不能證明破損。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "明天的配戴計畫也不能證明眼鏡目前已破。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-current-consequence-of-broken-glasses",
+    "reject-unrelated-time-clues"
+  ],
+  "representationType": "present-result-evidence-selection",
+  "misconceptionTargets": [
+    "choose-any-glasses-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "現在完成式可由目前仍存在的結果得到支持。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項直接連結 broken 與 now；其他線索只談過去購買、習慣或未來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

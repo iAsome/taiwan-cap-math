@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_083_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence uses since with a clear starting point?",
+  "options": [
+    "We have waited since two hours.",
+    "We have waited since noon.",
+    "We waited since for noon.",
+    "We have since waited for at noon."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "two hours 是長度，應使用 for。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "noon 是開始時間點，可接 since。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "since 與 for 不需並列。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "字序與介系詞都不形成自然句子。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "validate-since-noon-start-point",
+    "reject-duration-and-preposition-stacking"
+  ],
+  "representationType": "since-sentence-selection",
+  "misconceptionTargets": [
+    "use-since-before-duration"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目指定 since 後要有明確起點，noon 符合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項結構完整；其他選項混淆長度、重複介系詞或字序錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

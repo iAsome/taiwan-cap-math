@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam ___ the zoo yesterday afternoon.",
+  "options": [
+    "has visited",
+    "have visited",
+    "visits",
+    "visited"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "has visited 不直接和 yesterday afternoon 搭配。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Sam 不搭配 have，時間也已結束。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "visits 是現在簡單式，不能敘述昨天午後的一次參觀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "visited 正確放在明確過去時間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-yesterday-afternoon-as-finished-period",
+    "apply-simple-past-visited"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-has-visited-for-any-past-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "yesterday afternoon 是已結束且具體的時間區段。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用過去式 visited；其餘選項誤用完成式或現在式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

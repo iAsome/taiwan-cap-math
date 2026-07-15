@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_082_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The light is still on. Sam hasn't gone to bed ___.",
+  "options": [
+    "already",
+    "last night",
+    "yet",
+    "every day"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "already 會和 hasn't 的尚未語意衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "last night 不能直接搭配此現在完成式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "yet 表示 Sam 到現在仍未就寢。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "every day 會改成習慣，但句型仍不完整。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-lit-light-as-unfinished-bedtime-evidence",
+    "complete-hasnt-gone-yet"
+  ],
+  "representationType": "present-evidence-status-cloze",
+  "misconceptionTargets": [
+    "select-already-despite-negative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "still on 是目前可見結果，支持到現在尚未上床睡覺。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把 hasn't gone 與 yet 連起來；其他選項改變完成狀態或時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_083_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The rain has continued ___ noon.",
+  "options": [
+    "for",
+    "ago",
+    "since",
+    "during"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "for 不接 noon 這個時間點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "ago 不能接在 has continued 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "since noon 表示從中午持續到現在。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "during noon 不是此延續起點的基本表達。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "anchor-continuing-rain-at-noon",
+    "complete-has-continued-since"
+  ],
+  "representationType": "ongoing-weather-cloze",
+  "misconceptionTargets": [
+    "select-for-before-noon"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "noon 指雨開始或計算持續的基準時刻。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項連結過去起點與現在仍持續的下雨狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

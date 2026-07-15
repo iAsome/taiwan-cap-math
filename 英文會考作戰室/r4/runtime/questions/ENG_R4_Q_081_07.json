@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_081_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Have you ever been to Penghu? B: No, I ___.",
+  "options": [
+    "did never",
+    "hasn't",
+    "haven't",
+    "am not"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "did never 不回應 Have you。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "hasn't 不配主詞 I。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "haven't 正確形成 No, I haven't。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "am not 對應 be 動詞問句，不是此完成式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "shift-you-to-i-in-negative-answer",
+    "contract-have-not-as-havent"
+  ],
+  "representationType": "experience-dialogue-response",
+  "misconceptionTargets": [
+    "use-hasnt-with-i"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "否定簡答沿用 Have，主詞由 you 轉成 I。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時符合助動詞與主詞；其餘選項不對應原問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

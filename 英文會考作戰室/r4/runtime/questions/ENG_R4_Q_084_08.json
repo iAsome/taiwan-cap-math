@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Have you seen the new movie? B: Yes. I saw it on Saturday. Why is saw used in the second answer?",
+  "options": [
+    "Saturday is a daily habit.",
+    "The movie is playing now.",
+    "Saw is a future form.",
+    "On Saturday gives the finished time of the event."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Saturday 在此是一次日期，不是每日習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "對話沒有說電影正在播放。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "saw 是 see 的過去式，不是未來形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "on Saturday 把其中一次觀影放在明確過去時間。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "explain-saw-after-have-you-seen",
+    "connect-on-saturday-to-event-time"
+  ],
+  "representationType": "followup-tense-rationale",
+  "misconceptionTargets": [
+    "keep-perfect-despite-explicit-date"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第一句問經驗，第二句補充該經驗發生的日期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項解釋為何由 have seen 轉成 saw；時態改變並不矛盾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

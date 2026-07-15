@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_082_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Have you packed yet? B: Yes. I have already packed. How are yet and already used in this talk?",
+  "options": [
+    "Both give a finished date.",
+    "Yet asks if packing is finished; already says it is finished.",
+    "Yet means tomorrow; already means yesterday.",
+    "Both describe a daily habit."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩字都沒有提供日期。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "A 用 yet 詢問，B 用 already 陳述已完成。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "它們不等同明天與昨天。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "對話談單次打包狀態，不是習慣。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "contrast-yet-question-with-already-answer",
+    "identify-ask-versus-state-functions"
+  ],
+  "representationType": "dialogue-adverb-contrast",
+  "misconceptionTargets": [
+    "translate-adverbs-as-fixed-dates"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同一情境可用 yet 提問，再用 already 回答已完成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項說明溝通功能差異，而不是把兩字硬配成日期翻譯。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

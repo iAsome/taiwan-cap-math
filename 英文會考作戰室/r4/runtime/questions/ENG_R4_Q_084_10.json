@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_084_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This week is not over. Which sentence counts work completed so far?",
+  "options": [
+    "I will finish three jobs next week.",
+    "I have finished three jobs this week.",
+    "I finish three jobs every week.",
+    "I finished three jobs last week."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "will finish next week 是未來計畫。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "have finished 累計尚未結束的本週成果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "finish every week 表示固定習慣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "finished last week 只報告已結束的上週。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "separate-current-week-progress-from-other-time-frames",
+    "choose-have-finished-this-week"
+  ],
+  "representationType": "unfinished-week-progress",
+  "misconceptionTargets": [
+    "choose-grammatical-sentence-with-wrong-time-frame"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "not over 與 so far 都要求把本週視為仍進行的區段。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一統計本週目前成果的句子；其他句子各自談未來、習慣或已結束的過去。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

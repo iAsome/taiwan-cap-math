@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_081_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Have they ever won a game? B: Yes, they ___.",
+  "options": [
+    "did yesterday",
+    "has",
+    "have",
+    "are"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "did yesterday 不沿用原問句，且加入多餘時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "has 不配複數 they。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "have 正確回應 Have they...?。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are 不對應完成式問句。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "answer-ever-question-with-have",
+    "preserve-they-in-short-response"
+  ],
+  "representationType": "experience-short-answer",
+  "misconceptionTargets": [
+    "answer-have-question-with-did"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "問句的助動詞是 Have，簡答不必重複 won。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 Yes, they have；其他選項換了助動詞或主詞搭配。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

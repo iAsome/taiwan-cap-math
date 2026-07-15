@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_082_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Where does yet belong in “Has Ben finished the work?”",
+  "options": [
+    "Yet Has Ben finished the work?",
+    "Has Ben finished the work yet?",
+    "Has yet Ben finished the work?",
+    "Has Ben yet finished the work yet?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "yet 不放在整個問句最前面。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "本課基本問句把 yet 放在句尾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "yet 不插在 Has 與主詞 Ben 之間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "同一句重複 yet 兩次。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "append-yet-to-has-question",
+    "avoid-duplicate-or-pre-subject-yet"
+  ],
+  "representationType": "yet-placement-task",
+  "misconceptionTargets": [
+    "place-yet-before-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "完成狀態問句保留 Has + subject + participle，再把 yet 放到末尾。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只加入一個 yet 且字序自然；其他選項位置或數量錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

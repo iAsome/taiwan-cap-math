@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_079_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A message asks, “Have you finished?” Which answer keeps the same time meaning?",
+  "options": [
+    "Yes, I did tomorrow.",
+    "Yes, I am finish.",
+    "Yes, I has.",
+    "Yes, I have."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "did tomorrow 混用過去與未來時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "am finish 不是完成式簡答。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "I 不搭配 has。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Yes, I have 正確沿用問句助動詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "retain-present-perfect-in-message-reply",
+    "elliptically-answer-with-have"
+  ],
+  "representationType": "message-short-answer-transfer",
+  "misconceptionTargets": [
+    "switch-auxiliary-in-ellipsis"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "短答不必重複 finished，但必須保留 Have 的時間結構。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項最精簡且一致；其他選項改變時間或主詞搭配。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

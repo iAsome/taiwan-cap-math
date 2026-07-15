@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_080_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence uses wrote as a simple past verb, not a past participle?",
+  "options": [
+    "Ben wrote the note yesterday.",
+    "Ben has written the note.",
+    "The note has been written.",
+    "Ben may write the note."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "wrote 單獨配合 yesterday，是一般過去式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "has written 使用過去分詞 written。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "has been written 含被動完成結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "may write 使用原形。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "locate-simple-past-wrote-by-syntax",
+    "contrast-written-and-base-write"
+  ],
+  "representationType": "verb-function-classification",
+  "misconceptionTargets": [
+    "label-every-past-looking-form-participle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目要找 wrote 的一般過去式功能，而非任何與書寫相關的句子。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項有明確過去時間且沒有 have/has；其他句子使用分詞或原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

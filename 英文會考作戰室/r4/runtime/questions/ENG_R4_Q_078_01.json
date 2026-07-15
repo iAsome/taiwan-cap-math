@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_078_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Up to now, I ___ that museum twice.",
+  "options": [
+    "have visited",
+    "visited",
+    "has visit",
+    "am visiting"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "have visited 可累計截至目前的兩次參觀經驗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "visited 是一般過去式，沒有保留 up to now 的現在連結。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "I 不搭配 has，且 visit 不是過去分詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "am visiting 表示此刻正在參觀，不能累計兩次經驗。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "combine-up-to-now-with-experience-count",
+    "apply-have-visited-with-i"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "ignore-explicit-up-to-now-frame"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "up to now 與 twice 共同限定截至目前的經驗次數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項完整使用 I have visited；其餘選項不是切斷現在連結，就是破壞動詞結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

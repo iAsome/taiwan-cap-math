@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_081_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence has two negatives but is meant to give one negative idea?",
+  "options": [
+    "I haven't never seen the sea.",
+    "I have never seen the sea.",
+    "I haven't seen the sea yet.",
+    "I saw no boats from the room."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "haven't 與 never 疊加兩個否定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "have never 只有 never 一個否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "haven't 搭配 yet 仍是一個否定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "no 修飾 boats，但句中沒有第二個否定詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "detect-double-negative-markers",
+    "distinguish-never-from-not-yet"
+  ],
+  "representationType": "double-negative-diagnosis",
+  "misconceptionTargets": [
+    "treat-never-as-positive-adverb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目要求找出表達一次否定卻用了兩個否定標記的句子。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時含 haven't 和 never；第二、三項才是本課可用形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
