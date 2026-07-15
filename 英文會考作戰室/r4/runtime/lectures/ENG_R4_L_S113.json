@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S113",
+  "subject": "english",
+  "unitId": "ENG_R4_U17",
+  "skillId": "ENG_R4_S113",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S112"
+  ],
+  "objectives": [
+    "依名詞在句中的位置辨認主詞、受詞與補語功能。",
+    "用動詞與介系詞判斷名詞和句中其他成分的關係。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S113_SEC_01",
+      "title": "動詞前的名詞常是主詞",
+      "content": "The nurse opened the window. 中 the nurse 位於主要動詞 opened 前，指出執行開窗動作的人，所以是主詞。不能只因 window 是具體物品就把它當主詞；句法功能要看它和動詞的關係。"
+    },
+    {
+      "id": "ENG_R4_L_S113_SEC_02",
+      "title": "及物動詞後的名詞可作受詞",
+      "content": "The nurse opened the window. 中 the window 承受 opened 的動作，是受詞。判斷時可問『誰做動作』與『動作影響誰或什麼』；同一個名詞換到別句，功能也可能改變。"
+    },
+    {
+      "id": "ENG_R4_L_S113_SEC_03",
+      "title": "be 動詞後可用名詞說明身分",
+      "content": "Mia is the team leader. 中 the team leader 不是動作受詞，而是補充 Mia 的身分。be 動詞連接主詞和後方說明；若後面是形容詞，如 Mia is careful，則後方也不是名詞受詞。"
+    },
+    {
+      "id": "ENG_R4_L_S113_SEC_04",
+      "title": "介系詞後的名詞屬於介系詞片語",
+      "content": "We waited at the gate. 中 the gate 接在介系詞 at 後，構成 at the gate。它不是 waited 的直接受詞。遇到 for、with、from、to、near 等詞，先確認後方名詞是否由介系詞帶出。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S113_EX_01",
+      "prompt": "The dog followed Ben. Which noun is the subject?",
+      "steps": [
+        "找主要動詞 followed。",
+        "查看動詞前誰執行跟隨。",
+        "確認 the dog 是動作者。"
+      ],
+      "answer": "The dog",
+      "why": "followed 前的 the dog 執行跟隨動作，因此是主詞；Ben 位於及物動詞後，是被跟隨的受詞，不能因為是人名就判成主詞。"
+    },
+    {
+      "id": "ENG_R4_L_S113_EX_02",
+      "prompt": "Grace became the class leader. What is the function of 'the class leader'?",
+      "steps": [
+        "辨認 became 表示身分變化。",
+        "確認後方名詞說明 Grace。",
+        "判定為主詞補語。"
+      ],
+      "answer": "It shows Grace's new role.",
+      "why": "the class leader 說明 Grace 成為什麼身分，並未承受一個外加動作，所以它是補充主詞身分的名詞，不是一般動作受詞。"
+    },
+    {
+      "id": "ENG_R4_L_S113_EX_03",
+      "prompt": "We left the bags near the door. Which noun follows a preposition?",
+      "steps": [
+        "找介系詞 near。",
+        "查看 near 後的名詞片語。",
+        "選出 the door。"
+      ],
+      "answer": "the door",
+      "why": "near 是介系詞，後面的 the door 組成地點片語 near the door。the bags 則直接跟在 left 後，兩個名詞在句中的功能不同。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "句中第一個名詞一定是主詞。",
+      "whyWrong": "時間或地點片語可能先出現，真正主詞仍由主要動詞關係決定。",
+      "correction": "先找主要動詞，再問誰執行或處於該狀態。"
+    },
+    {
+      "belief": "動詞後的每個名詞都是直接受詞。",
+      "whyWrong": "be 動詞後可說明身分，介系詞後也有自己的受詞。",
+      "correction": "先分辨動詞類型與名詞前是否有介系詞。"
+    },
+    {
+      "belief": "人一定作主詞，物一定作受詞。",
+      "whyWrong": "The ball hit Ben 中 ball 是主詞，Ben 是受詞。",
+      "correction": "依句法位置與動作方向判定，不依人物類別。"
+    },
+    {
+      "belief": "同一個名詞在所有句子中功能固定。",
+      "whyWrong": "Mia called Ben 與 Ben called Mia 中兩個人名的功能互換。",
+      "correction": "每次都以該句的動詞與位置重新分析。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "The students carried the chairs 中誰是動作者？",
+      "answer": "the students",
+      "reason": "它位於 carried 前並執行動作。"
+    },
+    {
+      "prompt": "Leo is my cousin 中 my cousin 是受詞嗎？",
+      "answer": "不是",
+      "reason": "它在 be 動詞後說明 Leo 的身分。"
+    },
+    {
+      "prompt": "We met at the park 中 the park 跟在哪個詞後？",
+      "answer": "at",
+      "reason": "它是介系詞片語的一部分。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  }
+}

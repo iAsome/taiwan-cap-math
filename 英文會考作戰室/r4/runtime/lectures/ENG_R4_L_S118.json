@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S118",
+  "subject": "english",
+  "unitId": "ENG_R4_U17",
+  "skillId": "ENG_R4_S118",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S117"
+  ],
+  "objectives": [
+    "讓代名詞與先行詞在單複數及人、物語意上保持一致。",
+    "檢查主格、受格與指示形式是否符合句中角色。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S118_SEC_01",
+      "title": "單數先行詞配單數代名詞",
+      "content": "The camera is new. It works well. 中 camera 是單數物品，所以用 it。若前文是 cameras，則改用 they。單複數不一致會讓讀者誤以為後句換了對象。"
+    },
+    {
+      "id": "ENG_R4_L_S118_SEC_02",
+      "title": "複數先行詞依位置選 they 或 them",
+      "content": "The players arrived. They were early. 主詞位置用 they；The coach thanked them. 受詞位置用 them。數量一致只是第一步，還要確認新句中的句法位置。"
+    },
+    {
+      "id": "ENG_R4_L_S118_SEC_03",
+      "title": "人與物的代名詞不能任意互換",
+      "content": "Nora found a phone and returned it to Ben. it 指 phone，him 才能在需要時代替 Ben。判斷人或物時要以先行詞實際所指為準，不只看哪個名詞較近。"
+    },
+    {
+      "id": "ENG_R4_L_S118_SEC_04",
+      "title": "整段指涉要保持同一條線",
+      "content": "The book has three maps. They are useful. 中 they 指 maps，不是單數 book。讀到後句形容詞或動作時，要重新核對哪個候選先行詞在數量與語意上都合理。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S118_EX_01",
+      "prompt": "The window is open. Please close ___. (it / them / they)",
+      "steps": [
+        "window 是單數物品。",
+        "空格位於 close 後作受詞。",
+        "選擇 it。"
+      ],
+      "answer": "it",
+      "why": "the window 是單數，且代名詞在 close 後作受詞，所以 it 同時符合數量與位置。them 是複數，they 是主格。"
+    },
+    {
+      "id": "ENG_R4_L_S118_EX_02",
+      "prompt": "The girls found the tickets. ___ put them in a bag. (She / They / It)",
+      "steps": [
+        "第二句缺動作主詞。",
+        "執行 put 的是複數 girls。",
+        "選擇 They。"
+      ],
+      "answer": "They",
+      "why": "the girls 是複數人物，第二句又需要主格，因此使用 They。She 只指一人，It 則不指複數人物。"
+    },
+    {
+      "id": "ENG_R4_L_S118_EX_03",
+      "prompt": "Mia spoke to the boys and gave ___ a map. (they / them / it)",
+      "steps": [
+        "得到 map 的是 the boys。",
+        "代名詞位於 gave 後。",
+        "使用複數受格 them。"
+      ],
+      "answer": "them",
+      "why": "the boys 是複數人物，且在 gave 後作接受者，所以用 them。they 是主格，it 會錯指單數物品。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "先行詞是複數就一律用 they。",
+      "whyWrong": "受詞位置需使用 them。",
+      "correction": "先決定數量，再決定主格或受格。"
+    },
+    {
+      "belief": "距離最近的名詞可忽略單複數直接承接。",
+      "whyWrong": "代名詞形式必須和真正先行詞一致。",
+      "correction": "用動作與描述排除數量或類別不合者。"
+    },
+    {
+      "belief": "it 可以代替任何未知性別的人。",
+      "whyWrong": "一般人物應依語境使用 he、she、they 或重複名詞。",
+      "correction": "不要把指人的名詞當成物品代名詞。"
+    },
+    {
+      "belief": "一段文字選定 they 後就不必再檢查。",
+      "whyWrong": "後面可能出現另一個複數先行詞。",
+      "correction": "每次出現代名詞都核對當下句意。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "the bags 作 carry 的受詞時用 they 還是 them？",
+      "answer": "them",
+      "reason": "複數受詞使用 them。"
+    },
+    {
+      "prompt": "a bird 在下一句作主詞時可用什麼？",
+      "answer": "it",
+      "reason": "單數動物在未說明性別時可用 it。"
+    },
+    {
+      "prompt": "Mia and Nora 在新句作主詞時用什麼？",
+      "answer": "they",
+      "reason": "兩人組成複數人物主詞。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  }
+}

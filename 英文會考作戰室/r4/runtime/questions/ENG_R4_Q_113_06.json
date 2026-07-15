@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_113_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S113"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The ball hit the window. Which noun receives the action 'hit'?",
+  "options": [
+    "The ball",
+    "the window",
+    "hit",
+    "the ball hit"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The ball 是造成撞擊的主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "the window 是被球撞到的對象。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "hit 是動詞，不能作此題的名詞答案。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the ball hit 包含動作者和動作，未指出承受者。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "trace-impact-from-ball-to-window",
+    "name-window-as-receiver"
+  ],
+  "representationType": "action-direction-object",
+  "misconceptionTargets": [
+    "assume-object-must-be-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "人或物都能作主詞，也都可能作受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以動作方向確認 window，而不是依生物與否判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

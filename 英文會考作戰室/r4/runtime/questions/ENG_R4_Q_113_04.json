@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_113_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S113"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "We waited near the gate. Which words form the place phrase after 'near'?",
+  "options": [
+    "We waited",
+    "waited near",
+    "near the",
+    "the gate"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "We waited 是主詞加動詞，不是 near 的後接名詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "waited near 包含動詞與介系詞，仍缺地點名詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "near the 只有介系詞與限定詞，片語尚未完整。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "the gate 接在 near 後，合成 near the gate。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "segment-near-prepositional-phrase",
+    "select-gate-as-preposition-object"
+  ],
+  "representationType": "preposition-noun-function",
+  "misconceptionTargets": [
+    "label-gate-as-direct-object-of-waited"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "介系詞 near 需要後方名詞片語完成地點關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只選出 near 所帶出的名詞部分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

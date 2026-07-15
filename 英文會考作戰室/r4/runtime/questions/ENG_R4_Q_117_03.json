@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_117_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "I found my lost key and put ___ in my pocket.",
+  "options": [
+    "one",
+    "ones",
+    "it",
+    "another"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "one 會指另一把同類鑰匙，不是找到的原物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "ones 是複數，key 為單數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "it 指回同一把 lost key，並作 put 的受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "another 需要後接名詞或 one，且會改成另一物。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "preserve-same-key-across-actions",
+    "contrast-it-with-substitute-one"
+  ],
+  "representationType": "it-versus-one-continuity",
+  "misconceptionTargets": [
+    "choose-one-whenever-noun-is-singular"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "found 與 put 延續同一把鑰匙。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項測的是原物回指，不是同類替代。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_114_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S114"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Mia and I finished the work. ___ left together.",
+  "options": [
+    "They",
+    "Us",
+    "We",
+    "Them"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "They 排除說話者 I，沒有保留原主詞視角。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Us 是受格，不能作 left 的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "We 包含 Mia 與說話者 I，並可作主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Them 既是受格，也把 I 改成第三人稱。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "combine-mia-and-speaker-as-we",
+    "maintain-first-person-plural-subject"
+  ],
+  "representationType": "compound-subject-pronoun",
+  "misconceptionTargets": [
+    "replace-mia-and-i-with-they"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Mia and I 包含說話者，所以代名詞人稱是 we。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時配合複數與 left 前的主詞位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_118_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S118"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The lamp is old, but the two chairs are new. ___ came from Nora's house.",
+  "options": [
+    "It",
+    "They",
+    "Them",
+    "She"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "It 是單數，會錯指 lamp。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "They 是複數主格，可承接 the two chairs。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Them 是複數受格，不能放在 came 前作主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "She 指 Nora，不指 chairs。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "contrast-old-lamp-with-new-chairs",
+    "select-they-for-chair-origin"
+  ],
+  "representationType": "plural-subject-agreement",
+  "misconceptionTargets": [
+    "attach-it-to-first-singular-lamp"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "new 與 two chairs 建立第二句要延續的複數物品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項在 came 前使用主格，也不會回指單數 lamp。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

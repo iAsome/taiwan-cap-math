@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The box was beside the bag before it fell. Which line clearly says that the bag fell?",
+  "options": [
+    "The box was beside the bag before it fell.",
+    "The box was beside the bag before the bag fell.",
+    "The box fell beside the bag.",
+    "The box and the bag fell together."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "it 可指 box 或 bag，仍有歧義。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二次直接寫 the bag，明確指出掉落物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此句掉落的是 box。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此句增加兩件物品一起掉落的資訊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-four-box-bag-fall-lines",
+    "select-explicit-bag-fall"
+  ],
+  "representationType": "spatial-reference-repair",
+  "misconceptionTargets": [
+    "clarify-by-changing-falling-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "改寫目標是只消除指涉，不改動物品數量與事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 beside 關係，並用名詞取代模糊 it。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

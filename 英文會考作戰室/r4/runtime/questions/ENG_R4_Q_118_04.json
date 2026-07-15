@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_118_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S118"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Ben left his bag here. Please give it to ___ when he returns.",
+  "options": [
+    "he",
+    "they",
+    "her",
+    "him"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "he 是主格，不能接在 to 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "they 是複數主格，也不承接單數 Ben。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "her 指女性人物，與 Ben 不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "him 是男性單數受格，可接在 to 後指 Ben。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-his-bag-to-identify-ben",
+    "supply-him-after-to"
+  ],
+  "representationType": "singular-person-object-case",
+  "misconceptionTargets": [
+    "place-he-after-preposition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "to 後需要受格，前文的物主詞 his 也指出 bag 屬於 Ben。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時符合人物、性別、數量與介系詞後的位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

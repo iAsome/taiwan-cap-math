@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S119",
+  "subject": "english",
+  "unitId": "ENG_R4_U17",
+  "skillId": "ENG_R4_S119",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S118"
+  ],
+  "objectives": [
+    "辨認可能同時指向兩個先行詞的模糊代名詞。",
+    "以重複關鍵名詞或改寫句子排除兩種解讀。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S119_SEC_01",
+      "title": "兩個符合形式的先行詞會造成歧義",
+      "content": "Amy called Nora when she arrived. 中 she 可指 Amy，也可指 Nora。兩人都是單數女性，句子沒有說誰抵達。不能因較靠近 Nora 就自動判定，因為英文代名詞並沒有永遠指最近名詞的規則。"
+    },
+    {
+      "id": "ENG_R4_L_S119_SEC_02",
+      "title": "用具名主詞寫出真正意思",
+      "content": "若意思是 Amy 抵達後打電話，可寫 Amy called Nora when Amy arrived.；若是 Nora 抵達，則重複 Nora。必要的名詞重複不是壞文筆，而是避免錯誤理解。"
+    },
+    {
+      "id": "ENG_R4_L_S119_SEC_03",
+      "title": "改變句構也能消除模糊",
+      "content": "After arriving, Amy called Nora. 明確讓 arriving 的執行者是 Amy。也可拆成兩句：Nora arrived. Then Amy called her.。改寫時必須保留原事件順序，不可為了清楚而改變事實。"
+    },
+    {
+      "id": "ENG_R4_L_S119_SEC_04",
+      "title": "有充分內容線索時才可保留代名詞",
+      "content": "The glass fell from the table, and it broke. 中 broke 合理承接 glass，指涉清楚。若兩個單數物品都可能破裂，如 The cup hit the plate, and it broke，則需說 the cup 或 the plate。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S119_EX_01",
+      "prompt": "Ben told Jack that he had won. Is 'he' clear?",
+      "steps": [
+        "找出 Ben 與 Jack。",
+        "確認兩者都可由 he 代替。",
+        "檢查是否有勝者線索。"
+      ],
+      "answer": "No. It may mean Ben or Jack.",
+      "why": "Ben 和 Jack 都是單數男性，句中又沒有比賽角色或其他事件線索，所以 he 有兩種合理指向，不能假定是最近的 Jack。"
+    },
+    {
+      "id": "ENG_R4_L_S119_EX_02",
+      "prompt": "Amy called Nora after Amy arrived. Who arrived?",
+      "steps": [
+        "after 子句直接寫 Amy。",
+        "不需猜測 she 的先行詞。",
+        "判定 Amy 抵達。"
+      ],
+      "answer": "Amy",
+      "why": "從句明確重複 Amy，因此抵達者只有 Amy。這個重複排除了 Nora arrived 的第二種解讀，也保留先抵達再打電話的順序。"
+    },
+    {
+      "id": "ENG_R4_L_S119_EX_03",
+      "prompt": "The cup hit the plate, and it broke. How can the writer make the meaning clear?",
+      "steps": [
+        "列出 cup 與 plate 兩個單數物品。",
+        "確認兩者都可能破裂。",
+        "用真正破裂的名詞取代 it。"
+      ],
+      "answer": "Write either 'the cup broke' or 'the plate broke' to fit the event.",
+      "why": "it 在形式與常識上都可能承接 cup 或 plate。作者必須依實際事件寫出 the cup 或 the plate，不能只換另一個同樣模糊的代名詞。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "代名詞總是指前面最近的同類名詞。",
+      "whyWrong": "句法、篇章主題或事件關係都可能指向較早名詞。",
+      "correction": "若兩個候選都合理，就判定句子需要改寫。"
+    },
+    {
+      "belief": "重複人名一定是不好的英文。",
+      "whyWrong": "為排除歧義而重複關鍵名詞能提升清楚度。",
+      "correction": "在可能誤解的位置保留必要名詞。"
+    },
+    {
+      "belief": "只要讀者大概猜得到就算指涉清楚。",
+      "whyWrong": "考題與實用訊息都要求唯一可支持的解讀。",
+      "correction": "檢查是否仍有第二個符合形式與語意的先行詞。"
+    },
+    {
+      "belief": "把模糊句拆成兩句一定不會改變意思。",
+      "whyWrong": "若事件順序或主詞安排改錯，內容仍會變質。",
+      "correction": "改寫後逐項核對誰、何時、做了什麼。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Mia thanked Amy because she helped 中 she 清楚嗎？",
+      "answer": "不清楚",
+      "reason": "兩位女性都可能是幫助者。"
+    },
+    {
+      "prompt": "The phone rang, so I answered it 中 it 清楚嗎？",
+      "answer": "清楚",
+      "reason": "只有 phone 是可被接聽的單數先行詞。"
+    },
+    {
+      "prompt": "消除 he 的兩種解讀時最直接的方法是什麼？",
+      "answer": "寫出真正的人名",
+      "reason": "具名主詞可排除另一候選者。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  }
+}

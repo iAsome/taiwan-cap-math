@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_113_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S113"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The dog followed Mia. Later, Mia washed the dog. How does the job of 'the dog' change?",
+  "options": [
+    "It is a place in both sentences.",
+    "It is an object in both sentences.",
+    "It is first a subject, then an object.",
+    "It is first an object, then a subject."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the dog 不是地點名詞片語。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第一句中 the dog 位於 followed 前，不是受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "先由 dog 執行 follow，後由 Mia 對 dog 執行 wash。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把兩句的動作方向完全顛倒。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "track-dog-role-across-two-actions",
+    "order-subject-then-object"
+  ],
+  "representationType": "cross-sentence-noun-role-shift",
+  "misconceptionTargets": [
+    "freeze-dog-as-one-grammatical-role"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先分別問每句誰做動作，再比較功能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項證明名詞本身不會把句法角色固定住。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

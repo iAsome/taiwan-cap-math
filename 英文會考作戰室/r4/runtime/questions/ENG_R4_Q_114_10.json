@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_114_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S114"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher thanked the students and gave ___ more time.",
+  "options": [
+    "they",
+    "them",
+    "it",
+    "her"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "they 是主格，不能作 gave 的接受者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "them 是複數受格，代替 the students。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "it 是單數物品，無法承接學生。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "her 只指一位女性，數量不合。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "identify-students-as-time-recipients",
+    "select-plural-object-them"
+  ],
+  "representationType": "indirect-object-pronoun",
+  "misconceptionTargets": [
+    "put-they-after-gave"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "得到更多時間的人仍是複數 students。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項在 gave 後使用正確受格，沒有重複整個名詞片語。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_118_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S118"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The light is still on. Please turn ___ off before you leave.",
+  "options": [
+    "it",
+    "them",
+    "they",
+    "her"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "it 是單數受格，可承接 the light。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "them 是複數受格，數量不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "they 是複數主格，不能放在 turn 後作受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "her 指女性人物，不指 light。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "match-light-to-singular-object-pronoun",
+    "place-it-inside-turn-off"
+  ],
+  "representationType": "singular-object-agreement",
+  "misconceptionTargets": [
+    "use-them-for-single-light"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "light 是單數物品，空格又位於 turn 與 off 之間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時符合單數、物品與受詞位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

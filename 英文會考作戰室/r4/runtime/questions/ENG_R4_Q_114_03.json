@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_114_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S114"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The chairs are wet. Please move ___.",
+  "options": [
+    "it",
+    "they",
+    "them",
+    "her"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "it 是單數，不能代替 chairs。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "they 是複數主格，不能作 move 的直接受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "them 是複數受格，正確承接 chairs。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "her 指單數女性人物，語意不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "combine-chair-plural-with-object-position",
+    "choose-them-for-moved-items"
+  ],
+  "representationType": "plural-object-pronoun",
+  "misconceptionTargets": [
+    "use-they-after-move"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "chairs 提供複數線索，move 後提供受詞線索。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時符合數量、類別與格位。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

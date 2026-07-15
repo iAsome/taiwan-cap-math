@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_116_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S116"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Please take this cup. ___ over there on the shelf is mine.",
+  "options": [
+    "These",
+    "Those",
+    "That",
+    "They"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "These 是複數，不能配合 is 與 cup。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Those 同樣是複數形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "That 指 over there 的單數杯子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "They 是複數人稱代名詞，也沒有表達單數對照。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "use-is-to-fix-singular-demonstrative",
+    "map-over-there-shelf-to-that"
+  ],
+  "representationType": "far-singular-demonstrative",
+  "misconceptionTargets": [
+    "ignore-is-and-select-those"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "is 和 cup 都要求單數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "over there 明確提供較遠位置，因此第三項比 this 更合適。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

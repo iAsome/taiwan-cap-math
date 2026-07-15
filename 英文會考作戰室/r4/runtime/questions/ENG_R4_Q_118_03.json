@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_118_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S118"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The players are waiting. Please give ___ the new plan.",
+  "options": [
+    "they",
+    "it",
+    "them",
+    "him"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "they 是主格，不能作 give 的接受者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "it 是單數物品代名詞，不能指複數 players。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "them 是複數受格，可承接 players。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "him 只指一位男性，數量不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-players-as-plan-recipients",
+    "choose-plural-object-them-after-give"
+  ],
+  "representationType": "plural-person-object-agreement",
+  "misconceptionTargets": [
+    "keep-they-after-give"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "players 是複數人物，空格在 give 後表示收到計畫的人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項在數量與受格形式上都正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

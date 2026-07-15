@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_117_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Nora repaired her bike and used ___ to go home.",
+  "options": [
+    "one",
+    "another one",
+    "it",
+    "ones"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "one 會表示另一台同類腳踏車。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "another one 更明確改成另一台車。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "it 指 Nora 剛修好的同一台 bike。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "ones 是複數，與單數 bike 不合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-repaired-bike-into-trip-home",
+    "select-it-for-same-vehicle"
+  ],
+  "representationType": "same-item-reference-versus-one",
+  "misconceptionTargets": [
+    "replace-known-bike-with-one"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "repaired 後緊接 used，事件沒有換車線索。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項維持同一物，不把修車與回家拆成兩台車。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

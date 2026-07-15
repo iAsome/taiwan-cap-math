@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_117_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "I like the large plates, but the small ___ fit this table better.",
+  "options": [
+    "one",
+    "ones",
+    "it",
+    "them"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "one 是單數，large plates 建立的類別是複數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "ones 由 small 修飾並代替複數 plates。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "it 是單數，也會指原來同一物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "them 前不能直接使用 the small 形成此結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-plural-substitute-from-fit-and-plates",
+    "build-small-ones-noun-phrase"
+  ],
+  "representationType": "modified-ones-cloze",
+  "misconceptionTargets": [
+    "choose-them-after-adjective"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "fit 的主詞需要與 plates 同為複數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項將 the small ones 還原為 the small plates。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

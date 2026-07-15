@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which line clearly says that the red cup will be washed?",
+  "options": [
+    "Put the red cup beside the blue cup before it is washed.",
+    "Put the red cup beside the blue cup before the cup is washed.",
+    "Before it is washed, put the red cup beside the blue cup.",
+    "Wash the red cup after you put it beside the blue cup."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "it 可指 red cup 或 blue cup。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the cup 仍可能是任一只杯子，顏色未指定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "前置 it 也沒有唯一先行詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Wash 的受詞直接寫 the red cup，清楚指出要洗的杯子。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "evaluate-four-red-blue-cup-rewrites",
+    "select-explicit-red-cup-washing"
+  ],
+  "representationType": "procedural-reference-repair",
+  "misconceptionTargets": [
+    "believe-fronting-pronoun-removes-ambiguity"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "換位置不會自動修好模糊指涉，關鍵是明寫顏色與名詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項也保留先放到藍杯旁、再清洗紅杯的事件順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_114_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S114"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Jack opened the box. ___ found a note inside.",
+  "options": [
+    "He",
+    "Him",
+    "It",
+    "Them"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "He 作第二句主詞並承接男性單數 Jack。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Him 是受格，不能直接放在 found 前作主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "It 會較自然地指 box，而 box 不能 find a note。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Them 是複數受格，數量與位置都不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "replace-jack-as-second-sentence-subject",
+    "choose-masculine-singular-subject-form"
+  ],
+  "representationType": "subject-pronoun-cloze",
+  "misconceptionTargets": [
+    "use-him-as-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "空格執行 found，必須使用主格代名詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時保留 Jack 的人稱與單數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

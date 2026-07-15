@@ -19,6 +19,7 @@ const UNITS = [
   { id: "ENG_R4_U14", firstSkill: 92 },
   { id: "ENG_R4_U15", firstSkill: 99 },
   { id: "ENG_R4_U16", firstSkill: 106 },
+  { id: "ENG_R4_U17", firstSkill: 113 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -430,6 +431,35 @@ test("U16 negatives, short answers, agreement, and dialogue inferences keep thei
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U16 duplicate ${label}`);
+});
+
+test("U17 noun roles, pronoun agreement, reference, and ambiguity repairs stay evidence-bound", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U17");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_113_11").options[2], "It is first a subject, then an object.");
+  assert.equal(question.get("ENG_R4_Q_114_01").options[0], "He");
+  assert.equal(question.get("ENG_R4_Q_114_03").options[2], "them");
+  assert.equal(question.get("ENG_R4_Q_115_04").options[3], "The sentence does not say clearly.");
+  assert.match(question.get("ENG_R4_Q_115_09").stem, /water was coming out of it/);
+  assert.equal(question.get("ENG_R4_Q_116_01").options[0], "The road was closed.");
+  assert.equal(question.get("ENG_R4_Q_117_03").options[2], "it");
+  assert.equal(question.get("ENG_R4_Q_117_04").options[3], "some clean water");
+  assert.equal(question.get("ENG_R4_Q_118_08").options[3], "it → them");
+  assert.equal(question.get("ENG_R4_Q_118_10").options[1], "their bags");
+  assert.match(question.get("ENG_R4_Q_119_01").options[0], /^Nora arrived/);
+  assert.equal(question.get("ENG_R4_Q_119_11").options[2], "the bird");
+  const referenceLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S115");
+  assert.match(referenceLecture.sections.map((value) => value.content).join(" "), /不可只選最近的名詞/);
+  const ambiguityLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S119");
+  assert.match(ambiguityLecture.sections.map((value) => value.content).join(" "), /必要的名詞重複不是壞文筆/);
+  assert.match(ambiguityLecture.sections.map((value) => value.content).join(" "), /保留原事件順序/);
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U17 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

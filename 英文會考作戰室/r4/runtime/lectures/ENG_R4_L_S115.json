@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S115",
+  "subject": "english",
+  "unitId": "ENG_R4_U17",
+  "skillId": "ENG_R4_S115",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S114"
+  ],
+  "objectives": [
+    "依人稱、單複數、句法與語意追蹤人稱代名詞。",
+    "用前後事件判定 he、she、it、they、him、her、them 的先行詞。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S115_SEC_01",
+      "title": "先用單複數與人或物縮小範圍",
+      "content": "The boys found a dog. They gave it water. 中 they 只能承接複數 boys，it 則承接單數 dog。這些形式線索通常是第一步，但若仍有兩個符合者，還要讀事件關係。"
+    },
+    {
+      "id": "ENG_R4_L_S115_SEC_02",
+      "title": "主格與受格顯示代名詞在新句的角色",
+      "content": "Amy called Nora because she needed help. she 是 needed 的主詞，但光靠主格仍不能確定是 Amy 或 Nora。相反地，Amy called Nora and thanked her 中 her 是 thanked 的受詞，語意較可能承接 Nora。"
+    },
+    {
+      "id": "ENG_R4_L_S115_SEC_03",
+      "title": "動作順序與常識只能在文字支持時使用",
+      "content": "Leo put the ice in the cup because it was hot. it 最自然指 cup；若寫 because it was getting smaller，則較可能指 ice。判讀應以形容詞或動作能合理描述哪個名詞為依據，不可只選最近的名詞。"
+    },
+    {
+      "id": "ENG_R4_L_S115_SEC_04",
+      "title": "無法唯一判定時要承認資訊不足",
+      "content": "Ben told Jack that he won. 中 he 可指 Ben 或 Jack，句子本身沒有唯一答案。考題若要求判定，必須另有前文、動作結果或身分線索；沒有線索時，正確分析是指涉不清。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S115_EX_01",
+      "prompt": "The girls tried to get on two buses, but they were full. What does 'they' refer to?",
+      "steps": [
+        "they 可承接複數名詞。",
+        "full 說明為何無法上車。",
+        "選擇 two buses。"
+      ],
+      "answer": "the two buses",
+      "why": "girls 與 buses 都是複數，但 full 在此說明公車沒有空位，正好解釋女孩為何無法上車，因此 they 指 two buses。"
+    },
+    {
+      "id": "ENG_R4_L_S115_EX_02",
+      "prompt": "Mia washed the cup and put it away. What does 'it' replace?",
+      "steps": [
+        "it 需要單數事物先行詞。",
+        "washed 的受詞是 the cup。",
+        "put away 延續處理同一物品。"
+      ],
+      "answer": "the cup",
+      "why": "the cup 是前句唯一單數物品，也是 Mia 洗完後會收起的東西，所以 it 明確承接 the cup，而不是承接人物 Mia。"
+    },
+    {
+      "id": "ENG_R4_L_S115_EX_03",
+      "prompt": "Ben told Jack that he won. Who won?",
+      "steps": [
+        "列出 Ben 與 Jack 兩個男性人名。",
+        "he 可在形式上承接任何一人。",
+        "確認句中沒有額外線索。"
+      ],
+      "answer": "The sentence does not say clearly.",
+      "why": "Ben 和 Jack 都符合單數男性 he，that 子句也未提供比賽角色或結果線索，因此不能武斷選最近的 Jack 或較前面的 Ben。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "代名詞一定指前面最近的名詞。",
+      "whyWrong": "最近名詞可能在單複數或語意上不合。",
+      "correction": "同時檢查形式、句法與事件關係。"
+    },
+    {
+      "belief": "看到 they 就一定指人。",
+      "whyWrong": "they 也能代替複數物品、動物或地點。",
+      "correction": "從先行詞數量與後續敘述判斷。"
+    },
+    {
+      "belief": "常識覺得合理就能補出文章沒說的指涉。",
+      "whyWrong": "兩個候選者都合理時，文字仍可能有歧義。",
+      "correction": "只有明確語法或內容線索才可排除候選者。"
+    },
+    {
+      "belief": "he 或 she 出現後，同段所有相同代名詞都指同一人。",
+      "whyWrong": "主詞可能在不同句子間轉換。",
+      "correction": "每次出現都重新核對最近事件與角色。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "The cats chased a bird, but it went over the wall 中 it 指什麼？",
+      "answer": "a bird",
+      "reason": "it 是單數，且越過牆的是鳥。"
+    },
+    {
+      "prompt": "Amy met Nora after she called 中 she 一定指誰嗎？",
+      "answer": "不一定",
+      "reason": "兩位女性人名都符合 she，句子缺少線索。"
+    },
+    {
+      "prompt": "The keys were wet, so I dried them 中 them 指什麼？",
+      "answer": "the keys",
+      "reason": "複數受格與被擦乾的物品一致。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  }
+}

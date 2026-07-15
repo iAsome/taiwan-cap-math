@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_114_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S114"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "I met Amy at the gate and gave ___ the map.",
+  "options": [
+    "she",
+    "her",
+    "it",
+    "they"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "she 是主格，不能作 gave 的接受者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "her 位於 gave 後作受詞並代替 Amy。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "it 會把接受者誤成物品。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "they 是複數主格，無法承接單數 Amy。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "map-amy-to-recipient-position",
+    "select-her-after-gave"
+  ],
+  "representationType": "person-object-pronoun-cloze",
+  "misconceptionTargets": [
+    "retain-she-after-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "give someone something 中 someone 位於受詞位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項避免重複 Amy，也不改變誰收到地圖。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

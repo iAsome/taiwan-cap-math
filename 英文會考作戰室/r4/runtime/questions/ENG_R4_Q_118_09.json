@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_118_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S118"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The book has three maps. They show different roads. What does 'They' replace?",
+  "options": [
+    "the three maps",
+    "the book",
+    "different roads",
+    "the table"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "the three maps 是複數，也是能顯示道路的圖。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the book 是單數，不能由 They 承接。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "roads 在 They 之後才出現，且是 maps 所顯示的內容。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "table 未在句中出現。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "resolve-they-with-map-function",
+    "exclude-later-roads-as-antecedent"
+  ],
+  "representationType": "plural-reference-in-description",
+  "misconceptionTargets": [
+    "choose-book-as-main-topic"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "複數形式先排除 book，再由 show roads 的功能確認 maps。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留 three 所表示的數量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

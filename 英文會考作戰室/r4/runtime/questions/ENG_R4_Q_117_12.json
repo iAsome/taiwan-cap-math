@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_117_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "This soup is cold. Which sentence correctly asks for some hot soup?",
+  "options": [
+    "May I have a hot one?",
+    "May I have hot ones?",
+    "May I have some hot?",
+    "May I have some hot soup?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "soup 通常不可數，a hot one 不適合直接代替。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "ones 也要求複數可數先行詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "some hot 缺少要的食物名稱，句意不完整。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "some hot soup 正確要求另一份熱湯。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "apply-mass-noun-boundary-in-order",
+    "choose-some-soup-over-one"
+  ],
+  "representationType": "service-context-one-boundary",
+  "misconceptionTargets": [
+    "use-one-for-any-replacement-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "想要另一份不會讓 soup 本身自動變成 one 的可數先行詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項用 some 保留不可數用法與實際點餐目的。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

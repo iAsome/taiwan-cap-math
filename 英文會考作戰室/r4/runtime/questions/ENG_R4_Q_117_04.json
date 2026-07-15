@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_117_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "This water is dirty. I need ___.",
+  "options": [
+    "a clean one",
+    "clean ones",
+    "it",
+    "some clean water"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "water 不可數，不能直接用 a...one 代替。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "ones 需要複數可數名詞先行詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "it 會指原來的髒水，和 need 的需求不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "some clean water 正確表達另一份乾淨的水。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-water-as-uncountable",
+    "replace-invalid-one-with-some-water"
+  ],
+  "representationType": "uncountable-one-boundary",
+  "misconceptionTargets": [
+    "substitute-one-for-mass-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "one/ones 的先行詞必須能以個數計算。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留不可數名詞 water 並改變其品質。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

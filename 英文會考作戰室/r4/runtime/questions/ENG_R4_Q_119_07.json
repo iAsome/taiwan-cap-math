@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The phone rang, so Amy answered it. What does 'it' replace?",
+  "options": [
+    "Amy",
+    "rang",
+    "the phone",
+    "the room"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Amy 是 answered 的動作者，不由 it 承接。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "rang 是動作，不是可被接聽的名詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the phone 是單數，也是能被 answered 的對象。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原句沒有提到 room。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "link-ringing-phone-to-answered-it",
+    "exclude-verb-and-unstated-room"
+  ],
+  "representationType": "clear-object-reference",
+  "misconceptionTargets": [
+    "claim-all-pronouns-are-ambiguous"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "單數形式與 answered 的語意都指向 phone。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項有兩種獨立線索支持，因此不是只靠名詞距離。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

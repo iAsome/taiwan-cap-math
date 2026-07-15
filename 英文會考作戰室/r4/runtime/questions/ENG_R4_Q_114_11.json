@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_114_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S114"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'Amy saw Ben and waved to he.' Which change is needed?",
+  "options": [
+    "Amy → Her",
+    "Ben → They",
+    "he → him",
+    "saw → sees"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Amy 是原句主詞，改為 Her 會破壞句型。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Ben 是單數人物，They 數量不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "介系詞 to 後需要受格 him 代替 Ben。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "改變 saw 的時態不能修正 he 的格位。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "diagnose-he-after-preposition",
+    "repair-to-him-without-tense-change"
+  ],
+  "representationType": "pronoun-case-edit",
+  "misconceptionTargets": [
+    "change-main-verb-instead-of-pronoun-case"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "問題出現在 to 後的代名詞形式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只修正受格，不改人物、事件或時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

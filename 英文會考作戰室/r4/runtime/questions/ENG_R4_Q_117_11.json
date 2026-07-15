@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_117_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A store note says, 'Your old phone cannot be fixed. You may choose a new one.' What does 'one' replace?",
+  "options": [
+    "a store",
+    "a note",
+    "a phone",
+    "a repair"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "store 是地點，不是可選的新物品類別。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "note 是訊息本身，沒有新舊對照。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "new one 還原為 a new phone，與 old phone 對照。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "repair 是動作概念，且不是被選的產品。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "restore-new-one-as-phone",
+    "follow-product-replacement-in-store-note"
+  ],
+  "representationType": "commercial-one-reference",
+  "misconceptionTargets": [
+    "resolve-one-to-nearest-fix-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "形容詞 old 與 new 建立同類商品替換。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項由可數單數和購物行動共同確認。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

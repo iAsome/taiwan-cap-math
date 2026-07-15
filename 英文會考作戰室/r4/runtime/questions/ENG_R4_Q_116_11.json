@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_116_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S116"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The lights went out during the show. That frightened the children. What frightened them?",
+  "options": [
+    "the children",
+    "the show",
+    "the lights going out",
+    "the room"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "children 是感到害怕的人，不是原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "show 提供時間背景，但 That 承接的是停電事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "lights went out 這整件事能造成驚嚇。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "room 未在句中出現。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-that-as-blackout-event",
+    "separate-frightened-children-from-cause"
+  ],
+  "representationType": "that-event-reference",
+  "misconceptionTargets": [
+    "choose-nearest-show-as-that"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "That 位於新句主詞位置，可概括前句事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留動作 went out，不只選名詞 lights。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

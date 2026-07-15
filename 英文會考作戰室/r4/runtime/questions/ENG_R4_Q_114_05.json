@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_114_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S114"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which line does not repeat 'Leo' and keeps Leo as the person who was tired?",
+  "options": [
+    "Leo walked home because he was tired.",
+    "Leo walked home because him was tired.",
+    "Leo walked home because it was tired.",
+    "Leo walked home because they were tired."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "he 作 was tired 的主詞並明確承接 Leo。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "him 不能在 was 前作主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "it 通常不代替人物 Leo。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "they 是複數，與單數 Leo 不一致。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "preserve-leo-as-tired-person",
+    "select-he-in-reason-clause"
+  ],
+  "representationType": "repetition-reduction-selection",
+  "misconceptionTargets": [
+    "use-object-pronoun-in-clause-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第二個子句需要一個代替 Leo 的主格。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項減少重複，同時沒有更換疲倦的人。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

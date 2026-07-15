@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_114_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S114"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A room notice says, 'Move the chairs beside the wall, then clean them.' What does 'them' replace?",
+  "options": [
+    "the room",
+    "the wall",
+    "the notice",
+    "the chairs"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "room 是單數，也不是被移動後清潔的直接物品。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "wall 是單數且只提供位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "notice 是說明文字，不是清潔對象。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "them 是複數受格，承接前面要移動的 chairs。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "track-chairs-across-notice-actions",
+    "resolve-them-in-procedural-text"
+  ],
+  "representationType": "notice-pronoun-transfer",
+  "misconceptionTargets": [
+    "choose-nearest-wall-despite-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "指令中的兩個動作連續作用於同一組物品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項由複數形式與事件關係共同確認。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Leo called Sam after Leo got home. Who got home?",
+  "options": [
+    "Sam",
+    "Leo",
+    "both boys",
+    "The sentence does not say clearly."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "after 子句沒有寫 Sam。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "after Leo got home 直接指出回家者是 Leo。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中只陳述 Leo 回家，沒有 both。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "重複 Leo 已排除代名詞的兩種解讀。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "read-repeated-leo-in-time-clause",
+    "identify-leo-as-sole-arriver-home"
+  ],
+  "representationType": "explicit-name-reference",
+  "misconceptionTargets": [
+    "assume-repeated-name-must-be-an-error"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "明確重複姓名有時比使用 he 更能避免誤會。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項可直接由 after 子句定位，不需猜最近名詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

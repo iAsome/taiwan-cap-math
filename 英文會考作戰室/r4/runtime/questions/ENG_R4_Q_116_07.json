@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_116_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S116"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Here are four clean towels. Please use ___.",
+  "options": [
+    "this",
+    "that",
+    "these",
+    "it"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "this 是單數，不能承接 four towels。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "that 也是單數且偏遠。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "these 是複數並符合 Here 的近距離。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "it 為單數，且不表這些近處物品。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "combine-four-towels-with-here",
+    "supply-these-as-plural-object"
+  ],
+  "representationType": "demonstrative-object-cloze",
+  "misconceptionTargets": [
+    "choose-this-because-here"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "four 與 towels 明確要求複數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Here 讓第三項的近距離意思也和情境一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

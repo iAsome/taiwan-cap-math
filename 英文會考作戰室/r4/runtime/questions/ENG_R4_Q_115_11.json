@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_115_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S115"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Nora met Mia at the station. Mia carried a heavy bag, so Nora helped her. Who received help?",
+  "options": [
+    "Nora",
+    "the station worker",
+    "Mia",
+    "both girls"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nora 是 helped 的動作者，不是 her 所指受助者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有 station worker。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Mia 帶著重包，her 承接 Mia 並符合需要協助的原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "her 是單數，原文也沒有說兩人互相幫助。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "use-heavy-bag-to-resolve-her",
+    "distinguish-helper-nora-from-helped-mia"
+  ],
+  "representationType": "multi-sentence-person-reference",
+  "misconceptionTargets": [
+    "take-clause-subject-as-object-reference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "heavy bag 建立 Mia 需要幫忙的明確內容線索。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時符合女性單數與動作角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_114_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S114"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which line does not repeat 'Amy' and keeps her as the person who turned on the light?",
+  "options": [
+    "Amy opened the door, and she turned on the light.",
+    "Amy opened the door, and her turned on the light.",
+    "Amy opened the door, and it turned on the light.",
+    "Amy opened the door, and them turned on the light."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "she 清楚承接 Amy 並作 turned on 的主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "her 不能作第二個動作的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "it 會指物品，無法合理承接 Amy。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "them 是複數受格，與 Amy 和主詞位置都不合。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "join-two-amy-actions-with-she",
+    "retain-single-agent-across-coordination"
+  ],
+  "representationType": "coordinated-action-pronoun",
+  "misconceptionTargets": [
+    "replace-person-with-it"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩個動作都由 Amy 執行，第二次可用 she。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只省略重複名稱，未省略必要的主詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

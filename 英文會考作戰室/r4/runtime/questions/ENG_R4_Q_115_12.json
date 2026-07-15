@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_115_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S115"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The red bus passed the blue bus while it turned left. Which bus turned left?",
+  "options": [
+    "the red bus",
+    "the blue bus",
+    "both buses",
+    "The sentence does not say clearly."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "red bus 符合單數 it，但句法沒有排除 blue bus。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "blue bus 也符合，而且較近並不足以形成唯一答案。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "it 是單數，不能直接表示兩班車都轉彎。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩個單數 bus 都可能是轉彎者，需更多資訊。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "test-two-buses-as-turning-candidates",
+    "flag-ambiguous-traffic-pronoun"
+  ],
+  "representationType": "traffic-reference-transfer",
+  "misconceptionTargets": [
+    "pick-blue-bus-as-nearest"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "顏色使兩車可區分，卻沒有指出 it 對應哪一色。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留文本證據界線，不以交通常識硬猜。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_118_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S118"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which line uses a plural subject pronoun for 'the cameras'?",
+  "options": [
+    "The camera is new. They work well.",
+    "The cameras are new. It works well.",
+    "The cameras are new. They work well.",
+    "The cameras are new. Them work well."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "camera 是單數，不能由 They 承接。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "cameras 是複數，It 的數量不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "cameras 與 They 都是複數，They 也作 work 的主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Them 是受格，不能作 work 的主詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "compare-camera-number-across-four-lines",
+    "verify-they-as-work-subject"
+  ],
+  "representationType": "sentence-level-pronoun-agreement",
+  "misconceptionTargets": [
+    "check-number-without-case"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目要求同時檢查先行詞數量與代名詞句法位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是唯一使用複數主格承接 cameras 的句子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_117_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The red shoes are too small. Try the black ___.",
+  "options": [
+    "one",
+    "ones",
+    "it",
+    "shoe"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "one 是單數，不能代替 shoes。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "ones 代替複數 shoes，並由 black 修飾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "it 是單數且通常指原來同一物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "shoe 是單數，與要試穿的一雙不一致。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "replace-plural-shoes-after-color-change",
+    "choose-ones-under-black-modifier"
+  ],
+  "representationType": "ones-plural-substitution",
+  "misconceptionTargets": [
+    "use-one-after-plural-shoes"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "前文 shoes 與語境中的一雙都要求複數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成 the black ones，避免重複 shoes。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_113_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S113"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A club notice says, 'The library is our meeting place.' What is the job of 'our meeting place'?",
+  "options": [
+    "It tells when the club meets.",
+    "It names an action done to the library.",
+    "It tells who owns the library.",
+    "It shows the library's role for the club."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名詞片語沒有提供日期或時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is 是連接身分與用途，不是施加動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "our 表示團體關係，但整個片語重點不是所有權。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "be 動詞後的 meeting place 說明圖書館對社團的用途。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "analyze-notice-identity-clause",
+    "interpret-meeting-place-as-library-role"
+  ],
+  "representationType": "notice-noun-complement-transfer",
+  "misconceptionTargets": [
+    "read-our-as-main-function"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "實用公告中的 is 仍可用相同句法方法分析。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項連結 library 與 meeting place，沒有添入未說明的會面時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

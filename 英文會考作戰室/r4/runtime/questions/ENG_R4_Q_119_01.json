@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Amy called Nora when she arrived. Which line clearly says that Nora arrived before the call?",
+  "options": [
+    "Nora arrived, and then Amy called her.",
+    "Amy arrived, and then she called Nora.",
+    "Amy called Nora, and then Nora arrived.",
+    "Amy called Nora when she arrived."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Nora 是 arrived 的主詞，then 又把 Amy 的電話排在後面。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此句先抵達的是 Amy。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此句讓 Nora 在電話之後才抵達。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "she 可指 Amy 或 Nora，抵達者仍不清楚。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "compare-nora-arrival-and-call-order",
+    "select-explicit-nora-first-rewrite"
+  ],
+  "representationType": "time-clause-reference-repair",
+  "misconceptionTargets": [
+    "repair-person-but-reverse-event-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目同時指定 Nora 是抵達者，且抵達發生在電話以前。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項用兩個具名主詞保留人物與先後順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

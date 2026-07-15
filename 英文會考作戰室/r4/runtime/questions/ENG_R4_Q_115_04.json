@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_115_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S115"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Ben told Jack that he had won. Who does 'he' name?",
+  "options": [
+    "Ben only",
+    "Jack only",
+    "another player",
+    "The sentence does not say clearly."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Ben 符合 he，但沒有線索排除 Jack。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Jack 也符合 he，不能只因較近就選他。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有第三位選手可作先行詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩位男性都可能獲勝，所以指涉不唯一。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "enumerate-ben-and-jack-as-he-candidates",
+    "declare-reference-underdetermined"
+  ],
+  "representationType": "ambiguous-personal-pronoun",
+  "misconceptionTargets": [
+    "always-pick-nearest-male-name"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "形式檢查留下兩個單數男性候選。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項承認缺少內容線索，不替句子補寫事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

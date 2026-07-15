@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_117_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The large boxes are heavy. Please move the small ___.",
+  "options": [
+    "it",
+    "one",
+    "them",
+    "ones"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "it 是單數且指原來已知物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "one 是單數，不能承接 boxes。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "them 無法直接接在 the small 後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "ones 代替複數 boxes，形成 the small ones。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "contrast-large-and-small-box-groups",
+    "complete-the-small-ones"
+  ],
+  "representationType": "adjective-ones-substitution",
+  "misconceptionTargets": [
+    "use-them-after-the-small"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "large boxes 與 small 建立同類物的對照。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項符合複數，也允許前方形容詞修飾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

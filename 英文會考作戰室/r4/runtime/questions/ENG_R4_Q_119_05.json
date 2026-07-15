@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which line clearly says that Sam won?",
+  "options": [
+    "Sam won, and Leo told him the news.",
+    "Leo told Sam that he won.",
+    "Leo won before he spoke to Sam.",
+    "Leo and Sam won together."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Sam 直接作 won 的主詞，him 也承接 Sam。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "he 可指 Leo 或 Sam，勝者不唯一。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此句明說勝者是 Leo。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此句增加 Leo 也獲勝的資訊。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "compare-four-winner-statements",
+    "select-sam-as-explicit-sole-winner"
+  ],
+  "representationType": "winner-reference-repair",
+  "misconceptionTargets": [
+    "accept-ambiguous-he-as-sam"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目只要求 Sam 獲勝，不能加入另一位勝者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項用具名主詞消除歧義，後句代名詞也有唯一先行詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

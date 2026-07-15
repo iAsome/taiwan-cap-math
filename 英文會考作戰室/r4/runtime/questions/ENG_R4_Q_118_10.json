@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_118_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S118"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The girls left their bags by the door. Later, the teacher gave them to the girls. What does 'them' replace?",
+  "options": [
+    "the girls",
+    "their bags",
+    "the teacher",
+    "the door"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "girls 是 to 後的接受者，不是被交還的物品。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "their bags 是複數物品，能作 gave 的直接受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "teacher 是交還物品的動作者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "door 是單數地點，也不是被交還的東西。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "separate-given-items-from-recipients",
+    "resolve-them-to-left-bags"
+  ],
+  "representationType": "two-object-reference",
+  "misconceptionTargets": [
+    "attach-them-to-later-girls"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "gave them to the girls 把物品與接受者分開表示。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合複數受格，也延續前句留在門邊的物品。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

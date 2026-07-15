@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_115_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S115"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The cats chased a bird, but it went over the wall. What does 'it' replace?",
+  "options": [
+    "a bird",
+    "the cats",
+    "the wall",
+    "the chase"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "a bird 是單數，也是能越過牆的移動對象。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the cats 是複數，應由 they 承接。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the wall 在代名詞後才出現，也不是移動者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the chase 是事件名稱，未在原句中作單數先行詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "combine-singular-it-with-wall-crossing",
+    "resolve-bird-as-moving-antecedent"
+  ],
+  "representationType": "animal-pronoun-reference",
+  "misconceptionTargets": [
+    "choose-wall-as-nearest-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "it 的單數先排除 cats，移動方向再鎖定 bird。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不依最近位置，而依形式與動作合理性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

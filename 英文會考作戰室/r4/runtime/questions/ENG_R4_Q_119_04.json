@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which line makes Mia the person who left?",
+  "options": [
+    "Mia told Amy that she would leave.",
+    "Mia met Amy before she left.",
+    "When Mia met Amy, she was leaving.",
+    "Mia met Amy and then Mia left."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "she 可指 Mia 或 Amy，離開者不唯一。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "she 同樣可能承接兩位女性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "主句與從句仍沒有排除 Amy。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第二個 Mia 直接指出見面後離開的人。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "compare-four-mia-amy-reference-patterns",
+    "select-explicit-mia-departure"
+  ],
+  "representationType": "clarity-rewrite-selection",
+  "misconceptionTargets": [
+    "treat-any-she-after-mia-as-clear"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目要求的不只是句子通順，而是離開者只能解讀為 Mia。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項重複姓名，保留先見面、後離開的事件順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

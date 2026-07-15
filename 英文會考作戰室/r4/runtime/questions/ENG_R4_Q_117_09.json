@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_117_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "I do not want the chair by the door. I want the one by the window. Which chair does 'the one' mean?",
+  "options": [
+    "the chair by the window",
+    "the chair by the door",
+    "both chairs",
+    "a chair outside"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "by the window 直接修飾 one，指出想要的椅子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第一句明確排除門邊椅子。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "one 是單數，也沒有表示兩張都要。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "outside 並未在句中出現。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "resolve-one-through-window-modifier",
+    "exclude-rejected-door-chair"
+  ],
+  "representationType": "one-modifier-reference",
+  "misconceptionTargets": [
+    "attach-one-to-nearest-door-chair"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "the one 先承接 chair，再由 by the window 選出個體。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留修飾語，沒有只回答泛稱 chair。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

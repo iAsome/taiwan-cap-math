@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The bottle hit the glass, and it broke. Which line clearly says that the glass broke?",
+  "options": [
+    "The bottle hit the glass, and it broke.",
+    "The glass hit the bottle, and the bottle broke.",
+    "The bottle hit the glass, and the glass broke.",
+    "The bottle and the glass both broke."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "it 仍可指 bottle 或 glass。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此句改變碰撞方向，且破的是 bottle。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第二次直接寫 the glass，沒有另一種指涉。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此句增加兩件都破的資訊，超出指定意思。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "compare-four-bottle-glass-rewrites",
+    "select-explicit-glass-breakage"
+  ],
+  "representationType": "object-reference-repair",
+  "misconceptionTargets": [
+    "remove-pronoun-by-changing-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "清楚改寫不能順便改變動作方向或損壞數量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只把模糊 it 換成真正破裂的名詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_116_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S116"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which line keeps the demonstrative and verb in the same number?",
+  "options": [
+    "Those is my books.",
+    "Those are my books.",
+    "That are my books.",
+    "This are my books."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Those 是複數，不能搭配 is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Those、are、books 三者都為複數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "That 是單數，不能搭配 are 與 books。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "This 是單數，也不搭配 are。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "cross-check-demonstrative-be-and-noun-number",
+    "select-those-are-books"
+  ],
+  "representationType": "demonstrative-number-agreement",
+  "misconceptionTargets": [
+    "check-only-demonstrative-distance"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先由 books 判定複數，再檢查指示詞與 be 動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一三處數量一致的句子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

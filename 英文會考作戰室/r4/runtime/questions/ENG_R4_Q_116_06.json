@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_116_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S116"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The team missed the bus. This caused a long wait. What caused the wait?",
+  "options": [
+    "the team",
+    "missing the bus",
+    "the driver",
+    "the next bus"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "team 是事件參與者，但不是 This 所概括的完整原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "This 承接整個 missed the bus 事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "driver 未在前句中出現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "next bus 也未被提到，不能自行補入。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "expand-this-into-missed-bus-event",
+    "identify-wait-cause-without-new-actors"
+  ],
+  "representationType": "event-cause-demonstrative",
+  "misconceptionTargets": [
+    "resolve-this-to-team-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "caused 要求找前文能造成等待的事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把動作與受詞一起保留，指涉範圍正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

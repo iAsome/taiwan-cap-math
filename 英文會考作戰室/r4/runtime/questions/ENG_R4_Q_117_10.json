@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_117_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'I like the red shoes, not the blue one.' Which change is needed?",
+  "options": [
+    "red → reds",
+    "one → ones",
+    "shoes → shoe",
+    "blue → blues"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "red 作形容詞不加 s。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "one 應改為複數 ones 承接 shoes。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "把 shoes 改單數會改變原來喜歡的物品數量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "blue 也是形容詞，不使用複數形式。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "diagnose-singular-one-after-plural-shoes",
+    "repair-color-contrast-with-ones"
+  ],
+  "representationType": "one-ones-number-edit",
+  "misconceptionTargets": [
+    "pluralize-color-adjective"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "對照的是 red shoes 與 blue shoes 兩組複數鞋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只修正替代詞數量，不改顏色或物品。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

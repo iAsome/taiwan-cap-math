@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Ben told Jack, 'You won.' Who won?",
+  "options": [
+    "Ben",
+    "Jack",
+    "both boys",
+    "The sentence does not say clearly."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "引號內 I 才會指說話者 Ben，但原句使用 You。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Ben 對 Jack 說話，因此 You 指聽者 Jack。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "You 在此指單一聽者，沒有 both。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "說話者與聽者都已明確，不存在兩種指涉。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "map-you-to-jack-as-listener",
+    "resolve-direct-speech-winner"
+  ],
+  "representationType": "direct-speech-reference",
+  "misconceptionTargets": [
+    "treat-you-as-ben-the-speaker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "直接引語中的 You 由對話角色決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項利用 told Jack 鎖定聽者，不再依模糊的 he 猜測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

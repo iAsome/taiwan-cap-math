@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_115_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S115"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The keys were wet, so I dried them. What does 'them' replace?",
+  "options": [
+    "water",
+    "the keys",
+    "I",
+    "the floor"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "water 未作原句名詞先行詞，且通常不可數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "the keys 是複數，也是需要擦乾的物品。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "I 是執行 dried 的主詞，不能由 them 承接。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the floor 未在句中出現。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "link-wet-keys-to-dried-them",
+    "reject-unstated-floor-reference"
+  ],
+  "representationType": "cause-result-pronoun-reference",
+  "misconceptionTargets": [
+    "invent-related-object-as-antecedent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "wet 提供後續 dried 的原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合複數受格 them 與被擦乾的對象。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

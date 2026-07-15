@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_115_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S115"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Leo took the bottle off the table because water was coming out of it. What does 'it' most likely replace?",
+  "options": [
+    "the bottle",
+    "Leo",
+    "the table",
+    "the floor"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "bottle 是單數容器，水從瓶中流出能合理說明 Leo 為何把它移開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Leo 是人物，不能由 it 承接。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "table 雖是單數且位置較近，但前文沒有水從桌中流出的線索。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "floor 未在句中出現。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "connect-water-from-bottle-to-removal",
+    "reject-nearest-table-as-automatic-reference"
+  ],
+  "representationType": "contextual-object-reference",
+  "misconceptionTargets": [
+    "choose-table-because-nearest"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "water was coming out 提供移開 bottle 的原因，語意與單數形式一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "most likely 表示依現有線索選最合理先行詞，而不是把最近名詞當固定答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_118_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S118"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Mia and Nora are at the gate. ___ will meet us there.",
+  "options": [
+    "They",
+    "Them",
+    "She",
+    "It"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "They 是複數主格，可承接 Mia and Nora。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Them 是受格，不能作 will meet 的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "She 只指一位女性，遺漏另一人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "It 指單數事物，不指兩位人物。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "combine-two-names-into-plural-antecedent",
+    "replace-mia-and-nora-with-they"
+  ],
+  "representationType": "compound-person-subject-agreement",
+  "misconceptionTargets": [
+    "use-she-for-two-women"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "and 把 Mia 與 Nora 組成複數主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項在 will 前作主詞，也完整保留兩位見面者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

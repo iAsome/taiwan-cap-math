@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The bird ate the bread because it was hungry. What was hungry?",
+  "options": [
+    "the bread",
+    "the plate",
+    "the bird",
+    "The sentence does not say clearly."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "bread 不能感到飢餓，且是被吃的食物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "plate 未在句中出現。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "bird 是單數生物，hungry 也能解釋牠吃 bread 的原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "形式與因果語意都留下唯一合理先行詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "use-hunger-to-identify-living-antecedent",
+    "resolve-it-to-bird-with-causal-evidence"
+  ],
+  "representationType": "semantic-disambiguation",
+  "misconceptionTargets": [
+    "mark-every-two-noun-pronoun-as-unclear"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "並非所有 it 都有歧義；內容線索足夠時可確定指涉。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時符合生物特性與 because 所建立的原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

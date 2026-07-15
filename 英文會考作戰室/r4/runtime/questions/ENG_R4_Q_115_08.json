@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_115_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S115"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The table was beside the chair, but it was broken. What was broken?",
+  "options": [
+    "the table",
+    "the chair",
+    "both pieces of furniture",
+    "The sentence does not say clearly."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "table 符合單數 it，但沒有線索排除 chair。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "chair 較近卻不因此成為唯一答案。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "it 是單數，不能直接推出兩件都壞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩個單數物品都可能 broken，句子有歧義。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-two-breakable-singular-nouns",
+    "identify-unresolved-it-reference"
+  ],
+  "representationType": "object-reference-ambiguity",
+  "misconceptionTargets": [
+    "select-chair-only-by-distance"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "table 與 chair 在形式與常識上都可被 it 承接。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項拒絕把最近名詞規則當成不存在的證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_115_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S115"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The girls tried to get on two buses, but they were full. What does 'they' replace?",
+  "options": [
+    "the girls",
+    "the drivers",
+    "the two buses",
+    "the seats"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "girls 雖為複數，但女孩吃飽不能說明為何無法上車。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "drivers 並未在句中出現。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "公車載滿能直接解釋 tried to get on 卻未成功。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "seats 也未出現，不能自行補入先行詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "resolve-two-plural-antecedent-candidates",
+    "use-full-buses-to-explain-failed-boarding"
+  ],
+  "representationType": "semantic-pronoun-resolution",
+  "misconceptionTargets": [
+    "stop-after-number-agreement"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "單複數只能留下 girls 與 buses，還需使用轉折後的原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓 full 表示交通工具沒有空位，事件關係完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_116_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S116"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "This chair is dry, but ___ one over there near the door is wet.",
+  "options": [
+    "these",
+    "those",
+    "this",
+    "that"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "these 為複數，不能修飾 one。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "those 也是複數形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "this 會指近處，與 over there 不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "that one 指門邊較遠的單數椅子。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "use-one-to-require-singular-demonstrative",
+    "contrast-this-chair-with-that-one"
+  ],
+  "representationType": "demonstrative-one-contrast",
+  "misconceptionTargets": [
+    "pair-those-with-singular-one"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "one 先把選項限定為單數 this 或 that。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "句首 This chair 與 over there 建立近遠對照，故選 that。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

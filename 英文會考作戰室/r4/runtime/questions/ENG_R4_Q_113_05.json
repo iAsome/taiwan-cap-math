@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_113_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S113"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "After lunch, the students visited the museum. Who visited the museum?",
+  "options": [
+    "the students",
+    "lunch",
+    "the museum",
+    "After lunch"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "the students 位於 visited 前並執行參觀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "lunch 位於時間片語中，不執行 visited。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the museum 是參觀的地點與受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "After lunch 表示時間，不是人物。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "ignore-leading-time-phrase",
+    "identify-visitors-as-subject"
+  ],
+  "representationType": "subject-after-fronted-phrase",
+  "misconceptionTargets": [
+    "take-first-noun-lunch-as-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "句首時間片語不會自動成為主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項由動詞關係而非句中第一個名詞決定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

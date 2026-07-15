@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_119_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which line clearly says that Leo left first and saw Ben later?",
+  "options": [
+    "Leo left and then saw Ben.",
+    "After Ben left, Leo saw him.",
+    "Leo saw Ben, and then Ben left.",
+    "Leo saw Ben after he left."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "left and then saw 明確排出 Leo 先離開、後看見 Ben。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此句先離開的是 Ben。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此句先看見，之後才是 Ben 離開。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "he 可指 Leo 或 Ben，先離開者不清楚。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-departure-and-seeing-order",
+    "select-leo-first-sequence"
+  ],
+  "representationType": "event-order-clarity",
+  "misconceptionTargets": [
+    "choose-grammatical-line-with-wrong-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "事件先後與動作者都必須保持題目指定的意思。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項用同一主詞連接兩個動作，不留下 he 的第二種解讀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

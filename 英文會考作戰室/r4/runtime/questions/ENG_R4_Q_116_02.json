@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_116_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S116"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "I like the shoes beside me, but ___ over there are too large.",
+  "options": [
+    "that",
+    "those",
+    "this",
+    "it"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "that 是單數，不能配合 shoes 與 are。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "those 表複數且較遠，符合 over there。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "this 是單數且通常較近。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "it 是單數人稱代名詞，也不表遠近對照。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "combine-plural-shoes-with-distance",
+    "select-those-for-far-footwear"
+  ],
+  "representationType": "demonstrative-distance-cloze",
+  "misconceptionTargets": [
+    "choose-that-for-any-far-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "shoes 與 are 先鎖定複數形式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "over there 再從複數選項中確定 those。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
