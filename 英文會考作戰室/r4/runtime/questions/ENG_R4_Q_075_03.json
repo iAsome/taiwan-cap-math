@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_075_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben and Lily ___ us for dinner tonight.",
+  "options": [
+    "is joining",
+    "joined yesterday",
+    "are joining",
+    "are joined"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Ben and Lily 需用 are，is 只配單數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這一項改成昨天已加入。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "are joining 配合複數與今晚安排。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are joined 是被動形式，意思不同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "agree-two-names-with-are-joining",
+    "place-dinner-arrangement-tonight"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-is-with-compound-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Ben and Lily 是複數，tonight 將已約好的共餐放在未來。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的主詞一致與安排意義都正確；其他項目改數量、時間或語態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

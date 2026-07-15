@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_071_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I think our team ___ the game.",
+  "options": [
+    "will win",
+    "wins yesterday",
+    "winning",
+    "will won"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "will win 以原形 win 表達預測。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "wins yesterday 混用現在式與過去時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "winning 缺少完整謂語。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will 後不能使用 won。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-i-think-team-prediction",
+    "apply-will-plus-win"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-past-form-after-will"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "I think 引出對尚未發生比賽的判斷，適合使用 will。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項的結構與語意都成立；其餘選項有時間或動詞形式錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

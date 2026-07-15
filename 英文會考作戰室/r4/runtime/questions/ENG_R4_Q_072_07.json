@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_072_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "My parents ___ a new table this weekend. They chose it yesterday.",
+  "options": [
+    "is going to buy",
+    "are going buy",
+    "are going to buy",
+    "are going to bought"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is 不配複數 parents。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "are going buy 在 going 後少了 to。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "are going to buy 表示已選好後的計畫。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "to 後不能接 bought。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-chosen-table-as-prior-plan",
+    "build-parents-are-going-to-buy"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "keep-bought-after-to"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "chose it yesterday 證明購買打算已具體形成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時符合複數主詞與 going to 後接原形的規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

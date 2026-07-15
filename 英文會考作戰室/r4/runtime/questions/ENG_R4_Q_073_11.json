@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_073_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A plate is moving toward the edge of a table. What should a person shout?",
+  "options": [
+    "The plate moved last year.",
+    "The plate moves every Monday.",
+    "The plate is going to fall!",
+    "The plate is going fall!"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "去年移動與眼前危險無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "每週一移動不是合理警告。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is going to fall 依桌緣動態提出警告。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "going 與 fall 之間漏掉 to。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "turn-moving-plate-evidence-into-warning",
+    "choose-complete-fall-prediction"
+  ],
+  "representationType": "real-time-warning-transfer",
+  "misconceptionTargets": [
+    "describe-habit-instead-of-warning"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "盤子正朝桌緣移動，最適合警告即將掉落。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時回應危險與保持完整結構；其他項目不合時間、語意或文法。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

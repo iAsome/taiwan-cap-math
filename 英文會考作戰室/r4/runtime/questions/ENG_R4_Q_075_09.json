@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_075_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which pair gives one action now and one fixed action tomorrow?",
+  "options": [
+    "Mia is packing now. / Mia is leaving at seven tomorrow.",
+    "Mia packed now. / Mia left tomorrow.",
+    "Mia packs now. / Mia leaving tomorrow.",
+    "Mia will packing now. / Mia is leave tomorrow."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "now 使 packing 為目前動作，tomorrow 使 leaving 為安排。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "packed 和 left 都不能搭配所給時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第二句缺少 is，第一句也不自然表目前進行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will 後不能接 packing，is 後不能接 leave。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "contrast-progressive-now-and-tomorrow",
+    "validate-both-members-of-time-pair"
+  ],
+  "representationType": "dual-time-progressive-pair",
+  "misconceptionTargets": [
+    "assign-one-time-to-all-progressives"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "同一進行式可因時間詞分別指現在與未來安排。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一組兩句都完整，並由 now、tomorrow 明確區分時間；其他組有結構錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

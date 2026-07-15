@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_076_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“It is going to rain” does not describe a plan by the sky. What does it describe?",
+  "options": [
+    "Something that may happen because of signs now",
+    "A promise made by the sky",
+    "A daily job for the sky",
+    "Rain that ended yesterday"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "going to 可由目前跡象支持天氣預測。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "天空不會作承諾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "下雨不是天空的每日工作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子是未來預測，不是過去事件。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-nonhuman-going-to-as-prediction",
+    "reject-plan-reading-for-weather"
+  ],
+  "representationType": "future-form-function-inference",
+  "misconceptionTargets": [
+    "assume-going-to-always-means-intention"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "非人物主詞 It 顯示此處不是主動計畫，而是預測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項正確說明 going to 的另一種功能；其他項目擬人或改變時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

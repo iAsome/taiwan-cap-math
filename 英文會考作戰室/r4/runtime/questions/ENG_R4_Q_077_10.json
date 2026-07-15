@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_077_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S077"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A notice says, “The water will be off from two to four tomorrow.” How long is the planned stop?",
+  "options": [
+    "One hour",
+    "Two hours",
+    "Three hours",
+    "All day"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "從二點到四點不是一小時。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "4 − 2 = 2，因此停水兩小時。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三小時會到五點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "通知只涵蓋二到四點。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "derive-duration-from-future-notice",
+    "subtract-start-time-from-end-time"
+  ],
+  "representationType": "future-notice-time-calculation",
+  "misconceptionTargets": [
+    "inclusive-count-clock-labels"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "from two to four 提供未來停水的起訖時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項由時間差直接得到；其他長度與通知範圍不符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

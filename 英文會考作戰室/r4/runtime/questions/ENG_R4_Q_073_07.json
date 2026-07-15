@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_073_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus is slowing down near the stop. It ___ stop.",
+  "options": [
+    "stopped",
+    "stops every day",
+    "is going to",
+    "is stop"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "stopped 表示停車已完成，與 is slowing down 不符。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "stops every day 表示習慣，沒有回應眼前狀態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is going to stop 以正在減速作為預測依據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is stop 不是完整的動詞結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-stop-from-bus-slowing-down",
+    "distinguish-future-stop-from-past-and-habit"
+  ],
+  "representationType": "motion-change-prediction",
+  "misconceptionTargets": [
+    "treat-current-slowing-as-completed-stop"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "公車正在站牌附近減速，這項可見變化支持它即將停下。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項連結當前跡象與未來結果；其他選項改成過去、習慣或錯誤結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

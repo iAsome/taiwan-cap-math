@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_071_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“I cannot solve it yet, but I think I will find the answer.” What does the speaker believe?",
+  "options": [
+    "The answer was lost yesterday.",
+    "The speaker may solve the problem later.",
+    "The speaker solves it every day.",
+    "The problem has no answer."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句中沒有昨天遺失答案。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "will find 表達說話者相信之後可能找到答案。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中不是每日習慣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "I think I will find 與沒有答案相反。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-belief-from-will-find-answer",
+    "separate-current-failure-from-future-hope"
+  ],
+  "representationType": "prediction-meaning-inference",
+  "misconceptionTargets": [
+    "read-will-as-certain-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "yet 表示目前尚未解出，will find 把可能成功放在之後。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留預測的不確定性；其他選項加入無根據或相反資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

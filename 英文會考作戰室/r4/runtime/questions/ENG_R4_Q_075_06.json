@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_075_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "What best shows that the train trip has a fixed plan?",
+  "options": [
+    "The traveler likes trains.",
+    "The traveler has a ticket for the 9:20 train.",
+    "The station is old.",
+    "The weather may change."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "喜歡火車不表示已安排班次。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "指定班次的車票是具體確認資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "車站年代與行程是否固定無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "天氣可能改變不是訂位證據。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-ticket-and-time-as-arrangement-proof",
+    "reject-preference-place-weather-details"
+  ],
+  "representationType": "arrangement-evidence-selection",
+  "misconceptionTargets": [
+    "equate-preference-with-booking"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "固定安排需要可確認的時間或票券，9:20 ticket 同時提供兩者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項直接支持已定行程；其餘細節不能證明未來活動已約定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

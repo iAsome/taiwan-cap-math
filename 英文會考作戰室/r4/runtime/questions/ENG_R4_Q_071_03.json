@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_071_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This box is heavy. I ___ you carry it.",
+  "options": [
+    "helped",
+    "am helping yesterday",
+    "will help",
+    "will helped"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "helped 表示已經幫忙。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "am helping 不能和 yesterday 這樣搭配。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "will help 表達當下主動協助。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will 後不能接 helped。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-offer-from-heavy-box",
+    "form-will-help-you"
+  ],
+  "representationType": "offer-cloze",
+  "misconceptionTargets": [
+    "change-main-verb-after-will"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "看到箱子很重後才提出協助，will help 符合當下決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的 help 為原形且受詞 you 正確；其餘形式不合時間或結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

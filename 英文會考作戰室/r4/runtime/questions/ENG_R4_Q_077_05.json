@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_077_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S077"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence has a complete action and a future time?",
+  "options": [
+    "Nora will call me tomorrow.",
+    "Nora tomorrow.",
+    "Will call me next week.",
+    "Nora calling later."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "主詞、will call 與 tomorrow 都完整。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只有人物與時間，缺少動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺少主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "calling 前缺少 be，不能作完整謂語。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "audit-completeness-of-future-sentence",
+    "identify-subject-predicate-time-combination"
+  ],
+  "representationType": "future-sentence-completeness",
+  "misconceptionTargets": [
+    "treat-time-phrase-as-predicate"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "完整句需要主詞與謂語，未來資訊則由 will 和 tomorrow 提供。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項具備全部要素；其餘項目各缺動詞、主詞或 be。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

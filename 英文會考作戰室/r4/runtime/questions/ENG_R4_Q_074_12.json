@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_074_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S074"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Change “They are going to stay” to a negative sentence without changing the plan time.",
+  "options": [
+    "They did not stay.",
+    "They not are going to stay.",
+    "They are going to stayed.",
+    "They are not going to stay."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "did not 把句子改成過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "not 的位置應在 are 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這一項沒有否定，且 to 後錯用 stayed。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "are not going to stay 正確保留未來計畫。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "negate-they-are-going-to-stay",
+    "retain-plan-time-and-base-stay"
+  ],
+  "representationType": "future-negative-transformation",
+  "misconceptionTargets": [
+    "use-did-not-for-future-plan"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "原句使用 are going to，否定只需在 are 後加 not。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保持主詞、計畫時間與原形 stay；其餘選項改時態或結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

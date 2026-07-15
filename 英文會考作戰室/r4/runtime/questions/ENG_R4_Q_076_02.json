@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_076_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We bought food this morning. We ___ dinner together tonight.",
+  "options": [
+    "cooked",
+    "are going to cook",
+    "cook every morning",
+    "are going cook"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "cooked 把晚餐改成已發生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "are going to cook 由買食材支持既有計畫。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "every morning 改成習慣且不是今晚。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are going cook 未完成既有計畫句型。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-food-purchase-as-prior-plan",
+    "select-are-going-to-cook-tonight"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-will-without-reading-preparation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "買食材是今晚煮飯的前置準備，顯示計畫早已形成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項完整表達先前打算；其他項目改時間、頻率或漏字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

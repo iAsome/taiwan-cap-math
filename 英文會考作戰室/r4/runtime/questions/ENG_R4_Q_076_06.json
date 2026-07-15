@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_076_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Why is the ball going to hit the window?",
+  "options": [
+    "The ball is new.",
+    "The ball is moving straight toward the window.",
+    "The window was cleaned yesterday.",
+    "The game starts every Sunday."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "球的新舊不決定路線。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "朝窗戶直線移動是撞擊的眼前證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "清潔時間不影響球的方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "比賽頻率不支持這次撞擊。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-motion-path-as-impact-evidence",
+    "reject-object-age-cleaning-schedule"
+  ],
+  "representationType": "physical-evidence-selection",
+  "misconceptionTargets": [
+    "choose-any-related-noun-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "going-to 預測需要當前跡象，球的移動方向最直接。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項提供位置與動態關係；其他選項雖可能為真，卻無法推出撞窗。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_075_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A calendar says, “Friday, 4:30 — meet the music teacher.” Today is Thursday. What can the student say?",
+  "options": [
+    "I met the teacher yesterday.",
+    "I meet the teacher every Thursday.",
+    "I am meeting the music teacher at 4:30 tomorrow.",
+    "I meeting the teacher now."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "會面尚未發生，不能用 met。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "行事曆記的是單次 Friday 安排。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "am meeting 配合明日 4:30 的確定安排。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "缺少 am，且 now 和行事曆時間不合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "translate-calendar-entry-into-future-progressive",
+    "convert-friday-to-tomorrow-from-thursday"
+  ],
+  "representationType": "calendar-arrangement-transfer",
+  "misconceptionTargets": [
+    "convert-scheduled-future-to-past"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "行事曆提供日期、時間與對象，且今天是 Thursday。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把 Friday 換算成 tomorrow，並用現在進行式表達已確定安排。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

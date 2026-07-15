@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_075_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“We are having lunch with Ms. Wu at noon tomorrow.” Which question asks about Ms. Wu?",
+  "options": [
+    "When are you having lunch?",
+    "Who are you having lunch with?",
+    "Where did you have lunch?",
+    "Will who have lunch?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "When 詢問 noon，不是人物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Who...with 詢問 Ms. Wu。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Where 詢問地點且改成過去。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "字序不正確，也沒有保留進行式安排。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-who-question-about-lunch-arrangement",
+    "target-with-ms-wu-information"
+  ],
+  "representationType": "arrangement-participant-question",
+  "misconceptionTargets": [
+    "ask-when-instead-of-who"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目要求安排中的人物，原句對應 with Ms. Wu。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以 Who...with 精確詢問對象；其他選項問時間、地點或結構錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

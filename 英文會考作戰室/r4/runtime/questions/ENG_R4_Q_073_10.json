@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_073_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“The sky is dark, so it is going to rain.” Why may it rain?",
+  "options": [
+    "The word so alone",
+    "The dark sky",
+    "A plan made yesterday",
+    "A daily rain time"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "so 連接理由與結果，但不是天氣證據本身。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "dark sky 是目前可觀察的跡象。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文中沒有昨天的計畫。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文中沒有固定下雨時間。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "identify-dark-sky-as-prediction-basis",
+    "separate-linking-word-from-evidence"
+  ],
+  "representationType": "evidence-source-question",
+  "misconceptionTargets": [
+    "name-so-as-real-world-evidence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "預測依據是天空變暗這項當前資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項能直接支持下雨可能；其餘選項把連接詞、計畫或習慣誤當證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

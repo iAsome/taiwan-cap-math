@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_073_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Water is coming through the open window. The floor ___ get wet.",
+  "options": [
+    "is going to",
+    "got yesterday",
+    "gets every day",
+    "going to"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "is going to get wet 由正在進水支持預測。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "got yesterday 改成過去且與現在證據無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "gets every day 改成習慣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "going to 前缺少 is。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-wet-floor-from-entering-water",
+    "form-floor-is-going-to-get"
+  ],
+  "representationType": "visible-cause-prediction",
+  "misconceptionTargets": [
+    "turn-current-evidence-into-daily-habit"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "水正從窗戶進來，地板變濕是直接可推測的後果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留 floor 的單數一致與完整未來結構；其他項目改變時間或缺 be。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

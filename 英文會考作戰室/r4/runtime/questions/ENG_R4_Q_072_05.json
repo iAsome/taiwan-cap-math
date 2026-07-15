@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_072_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora has a list of food to buy. She ___ dinner tonight.",
+  "options": [
+    "is going to cook",
+    "cooked yesterday",
+    "cooks every night",
+    "is cook tonight"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "購物清單支持今晚煮飯的既有計畫。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這一項改成昨天已煮。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這一項改成每日習慣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is 後不能直接接原形 cook 表此意。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "connect-shopping-list-to-dinner-plan",
+    "select-is-going-to-cook"
+  ],
+  "representationType": "preparation-plan-inference",
+  "misconceptionTargets": [
+    "treat-list-as-daily-habit"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "食材清單是準備行動，顯示晚餐計畫在說話前已形成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留 tonight 與計畫；其餘項目改變時間或句型。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

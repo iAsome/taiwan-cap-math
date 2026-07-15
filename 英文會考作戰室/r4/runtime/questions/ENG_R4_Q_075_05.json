@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_075_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“The students are playing a game at ten tomorrow.” When is the game?",
+  "options": [
+    "Tomorrow at ten",
+    "Right now",
+    "Yesterday at ten",
+    "Every day at ten"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "at ten tomorrow 直接給出未來時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "are playing 在此受 tomorrow 限定，不是現在。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有 yesterday。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中沒有 every day。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "read-future-time-in-progressive-form",
+    "answer-when-from-at-ten-tomorrow"
+  ],
+  "representationType": "arrangement-time-comprehension",
+  "misconceptionTargets": [
+    "ignore-tomorrow-because-of-are-playing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "現在進行式可表安排，tomorrow 明確決定解讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項直接重述時間；其他選項把安排改成現在、過去或習慣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

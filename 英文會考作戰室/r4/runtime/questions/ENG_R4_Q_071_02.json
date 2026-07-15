@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_071_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The phone is ringing. I ___ it.",
+  "options": [
+    "answered",
+    "will answer",
+    "answer yesterday",
+    "am answered"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "answered 把接聽放到過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "will answer 表示聽到鈴聲後當場決定接聽。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "answer yesterday 時間與形式衝突。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "am answered 把 I 變成被接聽者。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "respond-to-ringing-phone-immediately",
+    "select-will-answer-decision"
+  ],
+  "representationType": "instant-decision-context",
+  "misconceptionTargets": [
+    "use-past-because-ringing-started"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "電話正在響，說話者此刻才回應，因此用 will answer。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保持主動接電話的意思；其他項目改變時間或語態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

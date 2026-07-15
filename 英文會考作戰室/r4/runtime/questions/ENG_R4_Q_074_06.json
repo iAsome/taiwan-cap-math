@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_074_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S074"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ they going to stay for dinner?",
+  "options": [
+    "Do",
+    "Are",
+    "Will",
+    "Did"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Do 不能接 they going to。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Are 與 they 搭配並形成 going-to 問句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Will 會和 going to 重複未來結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Did 是過去問句。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "invert-are-before-they-going-to-stay",
+    "distinguish-be-question-from-will-question"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "add-will-before-going-to-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "they 的 be 動詞是 are，問句把 Are 移到句首。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成 Are they going to stay...?；其他選項不保留原結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

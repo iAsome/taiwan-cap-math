@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_077_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S077"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "It is Friday. The team practices tomorrow and plays a game two days from now. What happens on Sunday?",
+  "options": [
+    "The team rests on Friday.",
+    "The team practices on Sunday.",
+    "The team plays a game.",
+    "The team played yesterday."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "文中沒有 Friday 休息資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "tomorrow from Friday 是 Saturday。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "two days from Friday 是 Sunday，當天比賽。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子談未來，不是昨天。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "resolve-two-future-events-from-friday",
+    "assign-game-to-sunday-not-practice"
+  ],
+  "representationType": "multi-event-relative-timeline",
+  "misconceptionTargets": [
+    "place-both-events-on-same-day"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Friday 後一天是 Saturday，後兩天是 Sunday。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把 game 正確放到 Sunday；練習則在 Saturday。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

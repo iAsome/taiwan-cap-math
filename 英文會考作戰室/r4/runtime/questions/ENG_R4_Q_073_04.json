@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_073_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "That old tree is moving a lot in the strong wind. It ___ fall.",
+  "options": [
+    "falls yesterday",
+    "are going to",
+    "is going",
+    "is going to"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "falls yesterday 混用現在式與過去時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "are 不配 It。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is going 缺少 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "is going to fall 由強風中的狀態支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "project-tree-fall-from-strong-wind",
+    "select-is-going-to-before-fall"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "omit-to-before-predicted-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "樹在強風中大幅搖動，提供可能倒下的眼前跡象。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項的主詞、結構與未來預測都正確；其餘選項各有明確錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

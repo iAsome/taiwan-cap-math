@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_076_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: The bell at the door is ringing. B: I ___ the door.",
+  "options": [
+    "will get",
+    "got yesterday",
+    "get every day",
+    "will got"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "will get 表示聽到門鈴後當場決定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "got yesterday 改成過去。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "get every day 改成習慣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will 後不能接 got。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-doorbell-response-as-instant-decision",
+    "choose-will-get-over-nonfuture-forms"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-past-got-after-will"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "B 的行動是在門鈴響後才決定，典型使用 will。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保持即時回應與原形 get；其餘選項改變時間、頻率或結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

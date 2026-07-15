@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_076_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A sentence only says, “We ___ leave tomorrow.” What else must we know to choose between will and are going to?",
+  "options": [
+    "How many letters are in leave",
+    "Whether they decided now or before",
+    "How many letters are in tomorrow",
+    "The color of the place"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "字母數不決定未來語意。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "決定形成時點可區分即時決定與先前計畫。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "tomorrow 的拼字和選擇無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "地點顏色通常不提供計畫時點。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "identify-missing-context-for-future-choice",
+    "separate-time-location-from-decision-timing"
+  ],
+  "representationType": "insufficient-context-analysis",
+  "misconceptionTargets": [
+    "let-tomorrow-force-will"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "tomorrow 只定位未來，沒有說決定何時形成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項指出真正缺少的語境；其餘資訊都不能選擇語意焦點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

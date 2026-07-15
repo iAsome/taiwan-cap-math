@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_072_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam and Ben ___ early tomorrow. Their bags are packed.",
+  "options": [
+    "is going to leave",
+    "are going leave",
+    "are going to left",
+    "are going to leave"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Sam and Ben 是複數，不能搭配 is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "are going leave 沒有完成 going to 結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "to 後不能接 left。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "are going to leave 配合複數與既有準備。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-departure-plan-from-packed-bags",
+    "apply-plural-are-going-to-leave"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-left-after-going-to"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "bags are packed 表示離開前的準備已完成，且主詞是兩人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用 are going to leave，其他選項各有可定位的結構錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

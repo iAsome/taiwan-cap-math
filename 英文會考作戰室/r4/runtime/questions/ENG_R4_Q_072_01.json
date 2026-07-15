@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_072_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We bought the tickets yesterday. We ___ the show tonight.",
+  "options": [
+    "are going to see",
+    "will saw",
+    "seeing",
+    "are going see"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "買票顯示先前計畫，are going to see 結構完整。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "will 後不能接 saw。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "seeing 缺少 be。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are going see 漏掉 to。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-plan-from-bought-tickets",
+    "form-are-going-to-see"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "omit-to-after-going"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "tickets 已買好，表示看表演不是臨時決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項符合 We + are going to + see；其餘形式各缺少或誤用結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

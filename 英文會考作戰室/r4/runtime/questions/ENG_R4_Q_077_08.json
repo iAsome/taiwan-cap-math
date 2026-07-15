@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_077_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S077"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Today is June 3. The note says, “The office will close in two days.” On which date will it close?",
+  "options": [
+    "June 2",
+    "June 3",
+    "June 4",
+    "June 5"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "June 2 在基準日前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "June 3 是今天。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "June 4 只過一天。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "June 5 是 June 3 後兩天。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "calculate-date-two-days-after-june-third",
+    "avoid-inclusive-counting-of-start-date"
+  ],
+  "representationType": "calendar-date-inference",
+  "misconceptionTargets": [
+    "count-current-date-as-day-one"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "從 June 3 往後算，June 4 為第一天，June 5 為第二天。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項符合 in two days；其他日期在過去、當天或只相隔一天。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

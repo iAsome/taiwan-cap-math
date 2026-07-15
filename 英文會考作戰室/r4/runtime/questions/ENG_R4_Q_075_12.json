@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_075_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“We meeting at six tomorrow” is missing one word. Which sentence adds only that word?",
+  "options": [
+    "We were meeting six tomorrow.",
+    "We will meeting at six tomorrow.",
+    "We meeting are at six tomorrow.",
+    "We are meeting at six tomorrow."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "were 把安排改成過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "will 後不能直接接 meeting。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "are 的位置應在 meeting 前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "只加入 are，保留其餘安排資訊。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "repair-missing-are-in-future-arrangement",
+    "preserve-six-tomorrow-details"
+  ],
+  "representationType": "minimal-arrangement-repair",
+  "misconceptionTargets": [
+    "place-are-after-meeting"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "主詞 We 的進行式需要 are meeting，原句其他部分已完整。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是最小修正；其餘選項更改時間或產生新的字序、動詞錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

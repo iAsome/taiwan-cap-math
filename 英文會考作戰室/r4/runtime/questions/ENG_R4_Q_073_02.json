@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_073_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cup is at the edge of the table. It ___ fall.",
+  "options": [
+    "are going to",
+    "is going to",
+    "is going",
+    "fell"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "are 不配主詞 It。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is going to fall 由杯子位置支持預測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is going fall 沒有完整的 going to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "fell 表示已經掉落，和 is at the edge 不同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-fall-risk-from-table-edge",
+    "distinguish-prediction-from-fell"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-risk-as-completed-fall"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "杯子仍在桌緣但有掉落危險，因此用未來預測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項配合 It 並接原形 fall；其餘選項有一致、結構或時間問題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

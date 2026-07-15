@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_073_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Look at those dark clouds. It ___ rain.",
+  "options": [
+    "is going to",
+    "was going to",
+    "going",
+    "is going"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "is going to 由眼前烏雲支持未來預測。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "was going to 把判斷放在過去。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "going 缺少 is 與 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is going 缺少預測結構中的 to。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "connect-dark-clouds-to-rain-prediction",
+    "complete-it-is-going-to"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-form-from-look-without-complete-structure"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "dark clouds 是現在可見的下雨跡象，主詞 It 搭配 is going to。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項結構完整且保留未來；其他選項改變時間或缺字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

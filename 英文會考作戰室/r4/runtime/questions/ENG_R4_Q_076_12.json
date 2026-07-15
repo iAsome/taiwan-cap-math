@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_076_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: I forgot my bag. B: I will bring it to you. Why does B use will?",
+  "options": [
+    "The bag is falling.",
+    "The plan was written last week.",
+    "Bring is always used with will.",
+    "B decides to help after hearing that the bag was forgotten."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句中沒有袋子掉落。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "文中沒有上週計畫。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "bring 可與多種時態使用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "B 在得知問題後才作出協助決定。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "explain-will-from-dialogue-response-order",
+    "reject-lexical-always-rule-for-bring"
+  ],
+  "representationType": "future-choice-cause-explanation",
+  "misconceptionTargets": [
+    "attribute-will-to-specific-main-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "對話順序顯示 A 先提出問題，B 隨即回應。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項以決定時點解釋 will；其他項目加入不存在的證據或假規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

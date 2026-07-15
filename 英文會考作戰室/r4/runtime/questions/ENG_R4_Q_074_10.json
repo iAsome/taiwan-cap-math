@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_074_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S074"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“Will she visits us?” uses the wrong form of visit. Which sentence asks the same question?",
+  "options": [
+    "Will she visited us?",
+    "Will she visit us?",
+    "Does she will visit us?",
+    "Is she will visit us?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "will 後不能接 visited。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "visit 是 will 後正確原形。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "does 與 will 不需並用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is 與 will 也不能這樣疊用。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "repair-visits-after-will",
+    "preserve-future-question-meaning"
+  ],
+  "representationType": "future-question-minimal-repair",
+  "misconceptionTargets": [
+    "change-visits-to-visited"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "原句只需把 visits 還原成 visit，其他資訊不變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項完成必要修正；其餘選項另換錯誤形式或多加助動詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

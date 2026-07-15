@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_076_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The child is too close to the water. He ___ fall in.",
+  "options": [
+    "fell",
+    "falls every day",
+    "is going to",
+    "is going"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "fell 表示已掉入水中，與 is too close 不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "每天掉入水中不合理且不是眼前預測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is going to fall 由目前位置支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is going fall 缺少連接 fall 的 to。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-water-edge-risk-as-evidence-prediction",
+    "retain-fall-as-future-result"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-near-water-as-completed-fall"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "too close to the water 是可見危險，適合 going-to 預測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留結果尚未發生；其他選項改成過去、習慣或不完整結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

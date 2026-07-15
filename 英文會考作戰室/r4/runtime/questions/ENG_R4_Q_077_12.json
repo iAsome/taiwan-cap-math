@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_077_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S077"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A message says, “Meet at the gate in 20 minutes.” It was sent at 3:10. When is the meeting?",
+  "options": [
+    "2:50",
+    "3:10",
+    "3:20",
+    "3:30"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "2:50 是往前二十分鐘。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "3:10 是傳送時間，尚未往後算。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "3:20 只增加十分鐘。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "3:10 加二十分鐘是 3:30。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "calculate-meeting-time-from-message-delay",
+    "add-twenty-minutes-to-three-ten"
+  ],
+  "representationType": "message-time-transfer",
+  "misconceptionTargets": [
+    "subtract-instead-of-add-future-delay"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "in 20 minutes 要從訊息時間 3:10 往後計算。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項正確加上二十分鐘；其他選項往前、未加或只加一半。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

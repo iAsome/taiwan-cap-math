@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_071_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence gives a future opinion rather than a fixed fact?",
+  "options": [
+    "I think the trip will be fun.",
+    "The trip was fun yesterday.",
+    "The bus leaves at seven every day.",
+    "The students are in Room 2 now."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "I think 與 will 顯示對未來的看法。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這一項報告昨天的經驗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這一項陳述固定班次。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這一項陳述目前位置。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-opinion-versus-facts-across-times",
+    "identify-i-think-will-sentence"
+  ],
+  "representationType": "future-opinion-classification",
+  "misconceptionTargets": [
+    "treat-schedule-as-personal-prediction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目要求未來意見，第一項同時具備 I think 與 will be。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘三項分別是過去事實、日常時刻表和現在狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

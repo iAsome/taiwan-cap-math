@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_077_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S077"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The show starts in three hours. What does “in three hours” mean here?",
+  "options": [
+    "The show lasts for three hours.",
+    "The show starts three hours from now.",
+    "The show ended three hours ago.",
+    "The show starts every three hours."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "in 不在此表示持續長度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "它表示從現在起再過三小時開始。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "ago 才會往過去計算。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中沒有 every，不能解讀成頻率。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-in-three-hours-as-start-point",
+    "separate-delay-from-duration-and-frequency"
+  ],
+  "representationType": "future-duration-meaning",
+  "misconceptionTargets": [
+    "confuse-in-with-for"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "starts 與 in three hours 組合時，片語定位開始時點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項正確往未來計算；其餘項目改成持續、過去或重複。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

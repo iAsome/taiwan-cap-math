@@ -13,6 +13,7 @@ const UNITS = [
   { id: "ENG_R4_U08", firstSkill: 50 },
   { id: "ENG_R4_U09", firstSkill: 57 },
   { id: "ENG_R4_U10", firstSkill: 64 },
+  { id: "ENG_R4_U11", firstSkill: 71 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -209,6 +210,24 @@ test("U10 semantic regressions remain repaired", async () => {
   const didExample = source.lectures.find((value) => value.skillId === "ENG_R4_S066").workedExamples[2];
   assert.equal(didExample.answer, "write");
   assert.match(didExample.why, /主要動詞必須回到原形 write/);
+});
+
+test("U11 future-form boundaries and timelines remain explicit", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U11");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_073_01").options[0], "is going to");
+  assert.equal(question.get("ENG_R4_Q_075_05").options[0], "Tomorrow at ten");
+  assert.equal(question.get("ENG_R4_Q_076_07").stem, "What is true about will and be going to?");
+  assert.match(question.get("ENG_R4_Q_076_07").options[2], /Both may fit some future sentences/);
+  assert.equal(question.get("ENG_R4_Q_076_08").options[3], "will buy / am going to make");
+  assert.equal(question.get("ENG_R4_Q_076_10").options[1], "Whether they decided now or before");
+  assert.equal(question.get("ENG_R4_Q_077_08").options[3], "June 5");
+  assert.equal(question.get("ENG_R4_Q_077_10").options[1], "Two hours");
+  assert.equal(question.get("ENG_R4_Q_077_12").options[3], "3:30");
+  const boundaryLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S076");
+  assert.match(boundaryLecture.sections[3].content, /有時都合文法/);
+  assert.match(boundaryLecture.sections[3].content, /唯一答案/);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

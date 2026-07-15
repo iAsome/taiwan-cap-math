@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_075_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "They ___ the doctor at three this afternoon. The visit is set.",
+  "options": [
+    "is seeing",
+    "saw",
+    "are seeing",
+    "are see"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is 不配 They。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "saw 是過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "are seeing 配合已確定的看診安排。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are 後不能用原形 see 構成進行式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "map-set-doctor-visit-to-are-seeing",
+    "choose-seeing-after-plural-are"
+  ],
+  "representationType": "appointment-cloze",
+  "misconceptionTargets": [
+    "use-base-see-after-are"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "The visit is set 和 at three 指出確定安排。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項使用 They are seeing；其他選項不合主詞、時間或 V-ing 結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

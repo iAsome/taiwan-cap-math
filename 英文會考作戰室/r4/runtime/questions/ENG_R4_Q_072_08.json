@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_072_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“We are going to clean the beach on Saturday. We made the plan on Monday.” What does the second sentence show?",
+  "options": [
+    "The beach was already clean.",
+    "Saturday happened before Monday.",
+    "The group cleans every Monday.",
+    "The decision existed before the group spoke."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句中沒有說海灘已乾淨。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "正常星期順序與此推論無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "計畫在 Monday 形成，不是說每週一清掃。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "made the plan 表示決定早已存在。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-made-plan-as-prior-intention",
+    "separate-plan-date-from-action-date"
+  ],
+  "representationType": "plan-timing-inference",
+  "misconceptionTargets": [
+    "turn-one-monday-plan-into-weekly-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第二句提供計畫形成時間，說明 going to 不是當場決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項精確解釋 made the plan；其他選項改變活動狀態、日期或頻率。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

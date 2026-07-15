@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_072_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I ___ my aunt this Sunday. We decided last week.",
+  "options": [
+    "is going to visit",
+    "am going to visited",
+    "am going to visit",
+    "going to visit"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I 不搭配 is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "to 後不能使用 visited。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "am going to visit 配合 I 與先前決定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中缺少 am。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "link-last-week-decision-to-visit-plan",
+    "complete-i-am-going-to"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "drop-am-before-going"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "decided last week 說明探訪計畫早已形成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項完整使用 I am going to visit；其餘選項有 be 或動詞形式錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

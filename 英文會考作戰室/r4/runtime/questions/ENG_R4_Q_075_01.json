@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_075_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We ___ the teacher at four tomorrow. The time is fixed.",
+  "options": [
+    "are meeting",
+    "met",
+    "meet yesterday",
+    "will met"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "are meeting 搭配固定時間表達未來安排。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "met 是過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "meet 與 yesterday 不合且不是所給安排。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will 後不能接 met。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "map-fixed-tomorrow-meeting-to-progressive",
+    "select-we-are-meeting"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "assume-progressive-only-means-now"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "at four tomorrow 和 The time is fixed 共同建立確定安排。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項以現在進行式表未來；其他選項落在過去或結構錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_072_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The school club printed posters and booked a room. It ___ a show next Friday.",
+  "options": [
+    "held",
+    "holds every day",
+    "is going to hold",
+    "is going hold"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "held 是過去，與 next Friday 不符。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "每天舉辦表演不符合前置準備的單次活動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is going to hold 由海報與場地支持既有計畫。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is going hold 少了連接原形 hold 的 to。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "transfer-multiple-preparations-to-show-plan",
+    "form-club-is-going-to-hold"
+  ],
+  "representationType": "multi-evidence-plan-cloze",
+  "misconceptionTargets": [
+    "ignore-preparation-chain"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "印海報與訂場地都是已完成的準備，指向下週五的計畫。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留單數 club、完整 going to 結構與原形 hold。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

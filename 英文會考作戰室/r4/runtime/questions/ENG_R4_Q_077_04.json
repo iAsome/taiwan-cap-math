@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_077_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S077"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "My family ___ Grandma next weekend. We already made the plan.",
+  "options": [
+    "visited",
+    "visits every day",
+    "is going visit",
+    "is going to visit"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "visited 是過去式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "every day 與 next weekend 的單次計畫不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is going visit 在 going 與 visit 間少了 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "is going to visit 配合先前計畫與未來時間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "combine-next-weekend-with-existing-plan",
+    "form-family-is-going-to-visit"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "omit-to-in-dated-plan"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "next weekend 定位未來，made the plan 說明決定早已形成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項完整使用 going to + visit；其餘選項改時間、頻率或漏字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

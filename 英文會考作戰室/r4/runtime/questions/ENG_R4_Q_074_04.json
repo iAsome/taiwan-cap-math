@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_074_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S074"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We ___ leave before the show ends.",
+  "options": [
+    "won't not",
+    "don't will",
+    "will no",
+    "won't"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "won't 已含 not，不能再加 not。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "don't will 不是正確助動詞順序。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "will 後的否定詞不能用 no。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "won't leave 是 will not leave 的縮寫。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-wont-before-leave",
+    "avoid-redundant-not-after-contraction"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-wont-as-will-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "句子需要未來否定，won't 後直接接 leave。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項簡潔且完整；其他選項重複否定或使用錯誤結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_076_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The lights go out. At that moment, Sam decides to find a flashlight. What does he say?",
+  "options": [
+    "I found a flashlight yesterday.",
+    "I am finding one every night.",
+    "I going to found one.",
+    "I will find a flashlight."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這一項報告昨天，不是當下決定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這一項把行動改成每日習慣且結構不自然。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺少 am，且 found 不是原形。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "will find 表達停電後立即形成的決定。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "map-explicit-decision-time-to-will",
+    "express-flashlight-response-with-base-find"
+  ],
+  "representationType": "decision-timing-selection",
+  "misconceptionTargets": [
+    "use-going-to-for-every-future-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "at that moment 與 decides 明確交代決定形成時點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項用 will + find 回應新情況；其餘項目不合時間、語意或結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

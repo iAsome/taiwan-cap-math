@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_073_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“It going to rain” is missing one word. Which sentence adds only that word?",
+  "options": [
+    "It was going rain.",
+    "It does going to rain.",
+    "It going is to rain.",
+    "It is going to rain."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這一項改成過去且仍漏 to。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does 不能取代 It 所需的 is。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is 的位置錯誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "只在 It 後加入 is，其他部分保持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "repair-missing-be-in-rain-prediction",
+    "insert-is-without-other-changes"
+  ],
+  "representationType": "minimal-prediction-repair",
+  "misconceptionTargets": [
+    "place-is-after-going"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "原句已有 going to rain，配合 It 唯一缺少 is。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項做最小且正確的修補；其他選項另改時間、助動詞或字序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_072_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Lily already has the paint. She ___ her room this afternoon.",
+  "options": [
+    "are going to paint",
+    "is going to paint",
+    "is going paint",
+    "is going to painted"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "are 不配單數 Lily。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is going to paint 表達已有準備的計畫。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is going paint 在 going 和 paint 之間少了 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "to 後不能接 painted。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "use-paint-supply-as-plan-evidence",
+    "agree-lily-with-is-going-to"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-are-with-singular-name"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "already has the paint 是事前準備，Lily 的計畫用 is going to。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項在主詞一致與動詞原形上都正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

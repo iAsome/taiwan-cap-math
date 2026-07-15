@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_074_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S074"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ Mia going to take the bus?",
+  "options": [
+    "Does",
+    "Will",
+    "Is",
+    "Do"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "does 不能取代 going to 所需的 is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "will 與既有 going to 結構重複。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Is 配合 Mia 並形成倒裝問句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "do 不配第三人稱，且不能接 going to。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "invert-is-in-mia-going-to-question",
+    "reject-will-plus-going-to-stack"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-does-for-every-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "句中已有 going to，問句要把配合 Mia 的 is 移到前面。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 Is Mia going to take...?；其餘選項破壞原結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

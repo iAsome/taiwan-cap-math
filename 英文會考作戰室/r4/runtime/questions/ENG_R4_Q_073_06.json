@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_073_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The child is pushing the glass toward the edge. The glass ___ fall.",
+  "options": [
+    "are going to",
+    "is going to",
+    "was falling tomorrow",
+    "fall every day"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "are 不配單數 glass。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is going to fall 連結眼前動作與可能結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "was falling 不能和 tomorrow 搭配。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "fall every day 缺少主詞一致且變成習慣。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "link-pushing-glass-to-edge-with-fall-risk",
+    "agree-glass-with-is-going-to"
+  ],
+  "representationType": "action-result-prediction",
+  "misconceptionTargets": [
+    "use-are-for-child-and-glass"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "孩子正把玻璃杯推向桌緣，構成即將掉落的具體風險。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項在主詞與未來預測上都成立；其他項目有一致或時間問題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

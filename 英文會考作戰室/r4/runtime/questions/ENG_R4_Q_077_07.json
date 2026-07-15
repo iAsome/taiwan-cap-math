@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_077_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S077"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "They will ___ for Hualien next Tuesday.",
+  "options": [
+    "left",
+    "leaving",
+    "leave",
+    "leaves"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "left 已表示離開發生在過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "leaving 不能直接接 will。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "leave 是 will 後的原形。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "leaves 是現在第三人稱形式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "restore-leave-after-will-with-next-tuesday",
+    "reject-left-leaving-leaves"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-left-because-leave-is-irregular"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "next Tuesday 是未來，will 後保持不規則動詞原形 leave。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 will leave；其他三項都不是原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

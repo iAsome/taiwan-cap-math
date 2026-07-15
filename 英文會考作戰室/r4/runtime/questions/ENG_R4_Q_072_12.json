@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_072_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“She going to cook tonight” is missing one word. Which repair changes nothing else?",
+  "options": [
+    "She was going cook tonight.",
+    "She is go to cook tonight.",
+    "She going is to cook tonight.",
+    "She is going to cook tonight."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這一項改成過去且仍缺 to。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is 後錯用 go，沒有 going。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is 的位置不正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "只補上 is，保留原計畫與其他字。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "repair-missing-is-in-going-to-plan",
+    "preserve-all-other-sentence-content"
+  ],
+  "representationType": "minimal-plan-repair",
+  "misconceptionTargets": [
+    "reorder-going-and-is"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "原句已有 going to cook，唯一缺少的是配合 She 的 is。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項做最小修正；其餘選項另改時間、動詞或字序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

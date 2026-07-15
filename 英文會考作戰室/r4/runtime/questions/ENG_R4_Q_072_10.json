@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_072_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "What shows that the trip was planned before today?",
+  "options": [
+    "The sky is blue.",
+    "The tickets are ready.",
+    "The phone is ringing.",
+    "A child is hungry."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "天空顏色不證明旅行計畫。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "票已準備好，顯示先前已安排。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "電話響只描述當下事件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "孩子餓和旅行決定無直接關係。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "select-ticket-evidence-of-prior-plan",
+    "reject-unrelated-current-details"
+  ],
+  "representationType": "plan-evidence-selection",
+  "misconceptionTargets": [
+    "choose-any-present-detail-as-plan-proof"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "票券是旅行的具體前置準備，能支持既有計畫。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項和 trip 有直接關聯；其他細節無法證明決定早已形成。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_071_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "She will ___ at the station before six.",
+  "options": [
+    "arrives",
+    "arrived",
+    "arrive",
+    "arriving"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "arrives 不能放在 will 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "arrived 是過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "arrive 是 will 後需要的原形。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "arriving 不能直接接 will。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "complete-will-arrive-station-sentence",
+    "identify-base-arrive-among-forms"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "add-third-person-s-after-will"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "will 已表示未來，主要動詞保持 arrive。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 will arrive；其餘三項分別是現在變化、過去式與 V-ing。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

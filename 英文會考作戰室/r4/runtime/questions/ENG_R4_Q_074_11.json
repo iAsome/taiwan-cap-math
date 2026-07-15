@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_074_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S074"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "You want to ask about Amy's plan for Saturday. Which question uses going to?",
+  "options": [
+    "Amy going to do what Saturday?",
+    "Does Amy going to do on Saturday?",
+    "What is Amy going to do on Saturday?",
+    "What Amy is going to do Saturday?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺少 is，字序也不完整。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Does Amy going 混用 does 與 going to。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "What + is + Amy + going to do 的順序正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這是陳述式字序，不是直接問句。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "construct-what-is-amy-going-to-do",
+    "ask-plan-content-for-saturday"
+  ],
+  "representationType": "plan-information-question",
+  "misconceptionTargets": [
+    "leave-is-after-subject-in-direct-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "詢問計畫內容要使用 What is Amy going to do...?。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留 going to 並正確倒裝 is；其他選項缺字或字序錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

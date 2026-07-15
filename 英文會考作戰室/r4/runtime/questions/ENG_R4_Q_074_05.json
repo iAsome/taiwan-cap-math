@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_074_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S074"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus will arrive at nine. Which question asks for the time?",
+  "options": [
+    "When will the bus arrive?",
+    "When the bus will arrive?",
+    "Will when the bus arrive?",
+    "When will arrive the bus?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "When + will + subject + arrive 的順序正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是間接問句字序，不是本題直接問句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "When 應放在句首。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will 後應先出現主詞 the bus。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "form-when-will-bus-arrive",
+    "place-subject-between-will-and-verb"
+  ],
+  "representationType": "future-time-information-question",
+  "misconceptionTargets": [
+    "retain-statement-order-after-when"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "要詢問 at nine，使用 When 並把 will 放在主詞前。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留原形 arrive 與正確字序；其餘選項各有位置錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
