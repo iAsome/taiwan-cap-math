@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A notice says, “The front door is not working. Are you using the side door?” Which words say that the front door does not work now?",
+  "options": [
+    "the front door",
+    "using the side door",
+    "is not working",
+    "Are you"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the front door 是主詞名詞片語，不是否定動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "using the side door 屬後方問句的動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is not working 由 be、not 與分詞共同形成進行式否定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Are you 是問句開頭，沒有 not。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "locate-negative-progressive-phrase",
+    "separate-notice-sentences"
+  ],
+  "representationType": "notice-structure-analysis",
+  "misconceptionTargets": [
+    "identify-not-alone-or-wrong-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "負面訊息由 is + not + working 完整表達，因此第三項是動詞片語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐句分開後可避免把 side door 問句成分混入前一句的否定結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

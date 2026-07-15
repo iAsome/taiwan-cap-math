@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The team is not leaving until the rain stops. What can you tell about the team now?",
+  "options": [
+    "The team has already left.",
+    "The team has not left yet.",
+    "The team leaves every time it rains.",
+    "The team never plans to leave."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is not leaving until 表示目前尚未離開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "在雨停以前不離開，所以隊伍目前還沒有離開。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原句沒有 every time，也未描述固定習慣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "until 表示條件達成後可能離開，不是永遠不打算離開。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-progressive-negative-until",
+    "infer-not-left-yet"
+  ],
+  "representationType": "negative-time-meaning",
+  "misconceptionTargets": [
+    "read-not-leaving-as-never-leaving"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "not leaving until the rain stops 把離開延後，因此現在可確認隊伍尚未離開。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項不超出原句；其餘選項分別反轉時間、虛構規律或把暫時否定誇大。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

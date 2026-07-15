@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_061_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Every summer, many families ___ the lake. Right now, one family ___ lunch beside the water.",
+  "options": [
+    "are visiting / has",
+    "visited / had",
+    "visits / are having",
+    "visit / is having"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Every summer 需要習慣形式 visit，不是 are visiting；第二格也未呈現當下進行。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩個過去式與每年規律及 right now 都不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "families 是複數不能用 visits，family 作一個群體也不搭配 are。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "visit 表每年規律，is having 表一個家庭目前正在吃午餐。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "combine-seasonal-routine-with-live-scene",
+    "resolve-families-versus-family"
+  ],
+  "representationType": "dual-subject-dual-aspect-cloze",
+  "misconceptionTargets": [
+    "carry-plural-and-tense-across-sentences"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Every summer 控制複數 families 的 visit；Right now 控制單數 family 的 is having。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐子句檢查時間與主詞後，只有第四組同時符合兩種現在式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

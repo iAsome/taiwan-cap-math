@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: ___ your parents waiting in the car? B: Yes, ___.",
+  "options": [
+    "Is / they are",
+    "Do / they do",
+    "Are / they do",
+    "Are / they are"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "parents 是複數，第一格不能用 Is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "waiting 需要 be，不能以 Do 問或 do 回答。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一格 Are 正確，但簡答仍需沿用 are。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Are 配複數 parents，they are 也正確回應同一 be 問句。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "pair-are-question-with-are-answer",
+    "solve-progressive-dialogue-slots"
+  ],
+  "representationType": "question-answer-dual-cloze",
+  "misconceptionTargets": [
+    "switch-from-be-to-do-in-short-answer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "複數 parents 的進行式問句以 Are 開頭，肯定簡答為 Yes, they are。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩格分別檢查問句與簡答後，只有第四組在主詞和 be 上完全一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

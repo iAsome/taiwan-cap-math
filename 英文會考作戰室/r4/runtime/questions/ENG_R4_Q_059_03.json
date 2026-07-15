@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The boy is ___ to the bus stop. (run)",
+  "options": [
+    "runing",
+    "runeing",
+    "running",
+    "run"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "runing 少了短母音字尾需要重複的 n。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "runeing 在 run 後錯加 e。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "running 重複 n 後加 -ing，拼字正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "run 是原形，不能直接接在 is 後。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "double-final-n-after-short-vowel",
+    "spell-running"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "omit-doubled-consonant-in-running"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "run 的字尾是短母音加單一子音，形成現在分詞時重複 n，寫成 running。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項能還原回 run 並符合字尾規則，其餘形式各有漏寫、增寫或未變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

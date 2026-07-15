@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ann is ___ her shoes while her brother is ___ his bike. (tie / ride)",
+  "options": [
+    "tieing / rideing",
+    "tying / rideing",
+    "tying / riding",
+    "tiying / riding"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "tieing 未把 tie 的 ie 改 y，rideing 也未去 e。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "tying 正確，但 rideing 仍多留不發音 e。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "tying 由 ie 改 y，riding 由 ride 去 e，兩格皆正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "tiying 多留 i，雖然 riding 正確，整組仍不可選。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "combine-ie-and-silent-e-rules",
+    "solve-two-participle-forms"
+  ],
+  "representationType": "dual-spelling-cloze",
+  "misconceptionTargets": [
+    "apply-one-ending-rule-to-two-verbs"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "tie 使用 ie → y 得 tying；ride 去掉不發音 e 得 riding，因此選第三組。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩格使用不同規則，逐字還原原形後，只有第三項沒有遺漏或多餘字母。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

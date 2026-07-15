@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_058_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S058"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "In “My parents are waiting outside,” which words are the subject?",
+  "options": [
+    "waiting outside",
+    "outside",
+    "My parents",
+    "are waiting"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "waiting outside 是動作與地點，不能決定主詞數量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "outside 只說明位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "My parents 是複數主詞，因此控制 be 動詞選用 are。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are waiting 已包含答案形式，卻沒有說明哪個成分決定它。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-agreement-controller",
+    "separate-subject-from-predicate"
+  ],
+  "representationType": "sentence-part-analysis",
+  "misconceptionTargets": [
+    "attribute-be-choice-to-participle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "be 動詞和主詞一致；My parents 是複數，所以句中使用 are。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項指出真正的控制成分，其他選項只是述語或地點資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

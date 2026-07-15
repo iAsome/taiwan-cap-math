@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_057_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S057"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Look! The dog ___ across the road.",
+  "options": [
+    "is running",
+    "runs",
+    "ran",
+    "running"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "is running 以完整進行式描述眼前正在跑過馬路的動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "runs 會表示規律，沒有呈現 Look 指出的當下畫面。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "ran 是已完成的過去式，和眼前提醒不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "running 前缺少單數主詞 dog 所需的 is。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "recognize-live-visual-action",
+    "form-singular-progressive"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "omit-be-before-present-participle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Look 建立眼前情境，單數 dog 搭配 is running，因此第一項正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項檢查時間觀點與 be + V-ing 結構後，只有 is running 能完成句子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

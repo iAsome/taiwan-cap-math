@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_061_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A picture shows two children kicking a ball. Which sentence describes only the pictured moment?",
+  "options": [
+    "The children play soccer after school.",
+    "The children are playing soccer.",
+    "The children played soccer yesterday.",
+    "The children will play soccer next week."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "after school 表示規律，單張圖片不能證明這項習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "are playing 只描述圖片中的目前動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "yesterday 是圖片未提供的過去時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "next week 是圖片未提供的未來計畫。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "separate-single-scene-from-habit",
+    "choose-moment-only-caption"
+  ],
+  "representationType": "text-described-picture-tense",
+  "misconceptionTargets": [
+    "infer-routine-from-one-photo"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "圖片只呈現球正在被踢的畫面，複數 children 使用 are playing。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項沒有額外加入過去、未來或反覆時間，是唯一只描述眼前畫面的句子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

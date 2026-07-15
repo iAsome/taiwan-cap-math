@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_061_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Please wait. Mr. Wu ___ with another student now.",
+  "options": [
+    "talks",
+    "is talking",
+    "talked",
+    "talk"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "talks 表示一般習慣，不能解釋目前需要等候。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is talking 描述 Mr. Wu 此刻正在和另一位學生談話。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "talked 表示談話已結束，與 Please wait 衝突。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "talk 不配單數 Mr. Wu，也未形成進行式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "use-current-action-as-request-reason",
+    "choose-is-talking"
+  ],
+  "representationType": "request-and-reason",
+  "misconceptionTargets": [
+    "choose-simple-form-from-singular-subject-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Please wait 與 now 共同建立當下情境，單數 Mr. Wu 搭配 is talking。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一能成為目前等候理由的形式，其餘不是習慣、過去，就是不完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

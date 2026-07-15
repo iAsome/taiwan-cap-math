@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_058_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S058"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A message says, “Ben and I ___ bringing the chairs. Please open the room.”",
+  "options": [
+    "am",
+    "is",
+    "are",
+    "be"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "am 只適合主詞單獨為 I，不能忽略 Ben。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is 把 Ben and I 誤當成一人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "are 配合由 and 連接的兩人，後接 bringing。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "be 未依現在時間與複數主詞變化。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "convert-ben-and-i-to-we",
+    "complete-message-progressive"
+  ],
+  "representationType": "practical-message-cloze",
+  "misconceptionTargets": [
+    "let-i-force-am-in-compound-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Ben and I 可改為 we，是複數主詞，因此訊息中應寫 are bringing。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留兩位搬椅子的人，也形成完整進行式，沒有改動原意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Maya is ___ a card for her mother. (make)",
+  "options": [
+    "makeing",
+    "making",
+    "makking",
+    "make"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "makeing 錯誤保留不發音的 e。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "making 先去掉 make 的 e，再加 -ing。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "makking 不應重複 k，且改變了詞根拼法。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "make 是原形，不能完成 is 後的進行式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "drop-silent-e-before-ing",
+    "spell-making"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "keep-silent-e-before-ing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "make 以不發音 e 結尾，去 e 後接 -ing，答案為 making。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一可由 make 按規則形成的現在分詞，沒有多留或多寫字母。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

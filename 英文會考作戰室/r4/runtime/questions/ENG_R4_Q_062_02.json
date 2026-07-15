@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_062_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Listen! The phone ___.",
+  "options": [
+    "rings every hour",
+    "is ringing",
+    "rang",
+    "ring"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "every hour 表示規律，不能描述 Listen 指出的這次鈴聲。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is ringing 表示電話現在正在響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "rang 表示鈴聲已在過去結束。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "ring 不配單數 phone，也未形成進行式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "use-listen-as-sound-scene-cue",
+    "choose-is-ringing"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "interpret-audible-event-as-hourly-habit"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Listen 要求注意目前聲音，單數 phone 搭配 is ringing。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項能解釋為何現在要聽；其他形式指習慣、過去或不完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

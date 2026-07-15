@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_061_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia ___ the bus to school every day.",
+  "options": [
+    "takes",
+    "is taking",
+    "took",
+    "taking"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "takes 以現在簡單式表示每天反覆的上學方式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is taking 會把固定習慣改成目前暫時動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "took 是過去式，和 every day 的現行規律不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "taking 前缺少 be 動詞，不能完成句子。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "select-simple-present-for-daily-transport",
+    "apply-mia-takes"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-progressive-for-every-repeated-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "every day 指固定習慣，單數 Mia 使用第三人稱形式 takes。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時符合習慣語意與主詞一致，其他形式改變時間或不完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

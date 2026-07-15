@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_057_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S057"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A message says, “Please be quiet. The baby ___.”",
+  "options": [
+    "sleeps at nine",
+    "slept an hour ago",
+    "sleep",
+    "is sleeping"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "sleeps at nine 只說固定時間，無法解釋現在要安靜。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "slept an hour ago 表示睡眠已在過去，和目前請求缺乏連結。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "sleep 不配單數 baby，也不是完整進行式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "is sleeping 說明嬰兒現在正在睡，因此需要保持安靜。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-current-action-from-request",
+    "complete-message-reason"
+  ],
+  "representationType": "situational-message",
+  "misconceptionTargets": [
+    "choose-routine-when-context-needs-current-reason"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Please be quiet 提供目前情境，單數 baby 搭配 is sleeping。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是唯一能成為安靜請求的即時理由，沒有加入未提供的固定或過去時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

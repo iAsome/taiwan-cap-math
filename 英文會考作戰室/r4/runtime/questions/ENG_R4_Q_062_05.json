@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_062_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Why is the ground getting wet? B: It ___.",
+  "options": [
+    "is raining",
+    "rains every summer",
+    "rained last night",
+    "rain"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "is raining 說明地面目前持續變濕的直接原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "每年夏天的規律無法單獨解釋眼前正在變濕。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "昨晚的雨可能已停，和 getting wet 的目前變化不一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "rain 不配單數 it，也不是完整進行式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-current-rain-from-changing-ground",
+    "answer-present-cause"
+  ],
+  "representationType": "evidence-to-current-cause",
+  "misconceptionTargets": [
+    "prefer-past-rain-without-matching-getting"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "getting wet 顯示地面正在變化，回答目前原因應使用 It is raining。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項由現場結果推回同時發生的動作，其他選項改成規律、過去或不完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

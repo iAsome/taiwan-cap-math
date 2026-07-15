@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_058_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S058"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher with three students ___ walking upstairs.",
+  "options": [
+    "are",
+    "am",
+    "is",
+    "be"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "are 受到 students 干擾，但 students 位在 with 片語中。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "am 只配主詞 I。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is 配合真正的單數主詞 The teacher。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "be 是原形，不能完成現在進行式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "ignore-with-phrase-number",
+    "match-teacher-with-is"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "agree-with-nearest-plural-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "去掉 with three students 後主幹是 The teacher ___ walking，因此使用 is。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項依主詞核心而非最近名詞判斷，能唯一形成正確進行式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

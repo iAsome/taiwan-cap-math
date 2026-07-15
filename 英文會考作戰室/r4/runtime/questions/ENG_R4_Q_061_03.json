@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_061_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "My uncle ___ in Tainan, but this week he ___ in Taipei.",
+  "options": [
+    "is living / stays",
+    "lived / stays",
+    "lives / is staying",
+    "lives / stayed"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一格把長期住所寫成暫時，第二格又把本週寫成習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "lived 把目前住所移到過去，stays 也未呈現 this week 的暫時性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "lives 表長期住所，is staying 表本週暫住，兩格都符合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第一格正確，但 stayed 把仍在進行的 this week 寫成已結束。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "contrast-residence-with-current-visit",
+    "solve-simple-progressive-pair"
+  ],
+  "representationType": "long-term-temporary-dual-cloze",
+  "misconceptionTargets": [
+    "assign-one-tense-to-both-locations"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "住臺南是長期狀態，本週待臺北是暫時安排，因此選 lives / is staying。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "but 兩側各有不同時間觀點，第三組是唯一沒有把長期與暫時顛倒的答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

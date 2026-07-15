@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_058_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S058"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Our class ___ taking a test now.",
+  "options": [
+    "are",
+    "is",
+    "am",
+    "do"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題句把 class 當成一個整體，初階書面用法搭配單數 is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is 正確連接單一班級與 taking。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "am 只配 I。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "do 不能接 taking 形成進行式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "treat-class-as-single-group",
+    "select-collective-is"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-are-from-real-world-member-count"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Our class 在此指一個班級整體，視為單數，所以答案是 is。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成 Our class is taking a test；題面未改用複數 students，因此不選 are。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

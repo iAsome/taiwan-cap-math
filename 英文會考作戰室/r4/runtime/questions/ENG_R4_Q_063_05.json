@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_063_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "My family ___ a small shop near the station.",
+  "options": [
+    "owns",
+    "is owning",
+    "owning",
+    "own"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "owns 以現在簡單式表示家庭擁有商店的關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is owning 把所有關係誤寫成正在進行的活動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "owning 前缺少限定動詞，也不適合此處。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題句把 family 視為一個整體，原形 own 未配合單數。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "treat-ownership-as-stable-relation",
+    "agree-family-with-owns"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-progressive-because-shop-is-currently-owned"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "own 表所有關係，通常使用簡單式；family 在此為單數整體，所以選 owns。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時處理狀態意義與主詞一致，其他形式不是進行式誤用，就是不完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

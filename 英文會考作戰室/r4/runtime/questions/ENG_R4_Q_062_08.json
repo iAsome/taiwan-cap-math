@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_062_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Look! Ben ___ for the bus, but his sister ___ to school every day.",
+  "options": [
+    "waits / is walking",
+    "waited / walks",
+    "is waiting / is walking",
+    "is waiting / walks"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Look 控制第一格，不能用 waits；every day 控制第二格，也不需進行式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "waited 是過去式，沒有描述眼前 Ben。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一格正確，但第二格把每日習慣錯寫成目前動作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "is waiting 配 Look，walks 配 every day，兩個線索各控制自己的子句。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "limit-look-cue-to-first-clause",
+    "pair-every-day-with-simple-second-clause"
+  ],
+  "representationType": "dual-clue-scope-cloze",
+  "misconceptionTargets": [
+    "spread-look-cue-over-both-clauses"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Look! 對應 Ben 的 is waiting；every day 對應 sister 的 walks。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四組證明線索不能支配整句，逐子句配對後沒有其他完整答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

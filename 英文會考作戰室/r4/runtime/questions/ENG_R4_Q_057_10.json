@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_057_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S057"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The school library is closed for two days. During this time, workers ___ the floor.",
+  "options": [
+    "fix every day",
+    "are fixing",
+    "fixed last month",
+    "are fix"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "fix every day 把兩天的工作改成永久規律。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "are fixing 描述圖書館關閉期間正在進行的修理。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "fixed last month 與題目目前的 two days 無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are 後需要 fixing，不能直接接原形 fix。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-temporary-maintenance-window",
+    "match-workers-with-progressive"
+  ],
+  "representationType": "school-notice-context",
+  "misconceptionTargets": [
+    "replace-limited-project-with-daily-habit"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "closed for two days 與 During this time 都限定目前的修理期間，應選 are fixing。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項說明暫時關閉的實際原因，且 workers 與 are 的搭配正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

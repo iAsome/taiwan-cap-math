@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nina is ___ for the science test. (study)",
+  "options": [
+    "studying",
+    "studiing",
+    "studies",
+    "studyying"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "studying 保留 y，直接加 -ing。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "studiing 錯把 y 改成 i，混用了第三人稱 -ies 規則。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "studies 是現在簡單式第三人稱形式，不接在 is 後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "studyying 不應重複 y。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "keep-y-before-ing",
+    "separate-ing-from-ies-rule"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "apply-third-person-y-rule-to-participle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "study 形成現在分詞時保留 y，答案是 studying，不使用 studies 的變化。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項清楚區分 -ing 與 -ies 兩套規則，其他選項都誤改或重複字母。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

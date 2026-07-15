@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_062_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“Dad usually cooks dinner, but right now he is fixing the door.” Which action does right now describe?",
+  "options": [
+    "cooks",
+    "dinner",
+    "is fixing the door",
+    "usually cooks dinner"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "cooks 屬於 usually 所修飾的平常習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "dinner 是受詞，不是 right now 所描述的動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "right now 直接放在第二子句前，控制 is fixing the door。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "usually cooks dinner 是完整習慣片語，與當下例外相對。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "trace-right-now-to-nearest-clause",
+    "separate-object-from-action"
+  ],
+  "representationType": "clue-scope-question",
+  "misconceptionTargets": [
+    "attach-now-to-earlier-usual-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "but 後的 right now 緊接 he is fixing，故只描述目前修門的動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項符合子句位置與語意，其他選項都屬前半句習慣或不是動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

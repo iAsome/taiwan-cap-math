@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Is Eric riding his bike? B: No, ___. His bike is in the shop.",
+  "options": [
+    "he doesn't",
+    "he not",
+    "he aren't",
+    "he isn't"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Is 問句不能以 doesn't 簡答。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "he not 缺少 be 動詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "he 不搭配 aren't。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "he isn't 正確沿用 is，且符合腳踏車在店裡的事實。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "combine-context-fact-with-isnt-answer",
+    "resolve-eric-to-he"
+  ],
+  "representationType": "evidence-based-short-answer",
+  "misconceptionTargets": [
+    "choose-doesnt-from-main-verb-ride"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "bike is in the shop 支持否定，Eric 以 he 代替，Is 問句回答 he isn't。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項在內容真值、代名詞與 be 三方面都一致，因此可唯一選出。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

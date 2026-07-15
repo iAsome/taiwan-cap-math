@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_063_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A teacher asks, “Do you understand the next step?” Which answer says that the student understands it now?",
+  "options": [
+    "I am understanding it now.",
+    "I understanding it.",
+    "Yes, I understand it.",
+    "Yes, I am understand it."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "am understanding 不符合本課對 understand 認知狀態的基礎用法。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "understanding 前缺少 be，句子也不完整。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "I understand 以簡單式清楚報告目前理解狀態。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "am 後不能直接接原形 understand。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "respond-to-comprehension-check",
+    "use-understand-in-present-state"
+  ],
+  "representationType": "classroom-understanding-dialogue",
+  "misconceptionTargets": [
+    "use-progressive-because-teacher-says-present"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "老師詢問目前是否理解，狀態動詞 understand 用簡單式，故第三項正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時回答 Yes 並給完整狀態句；其他形式都誤用或缺少動詞結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

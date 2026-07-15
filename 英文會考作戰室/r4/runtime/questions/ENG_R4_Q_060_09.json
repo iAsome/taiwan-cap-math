@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The workers are fixing the floor. You want to check that this is true. What do you ask?",
+  "options": [
+    "Are the workers fixing the floor?",
+    "Do the workers fix the floor?",
+    "Did the workers fix the floor?",
+    "Are fixing the workers the floor?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Are 放到 workers 前，保留目前正在修理的意義。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Do...fix 改成一般現在式，時間觀點不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Did...fix 改成過去式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Are 後應先接主詞 the workers，不能先放 fixing。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "preserve-progressive-during-confirmation",
+    "compare-question-tenses"
+  ],
+  "representationType": "time-preserving-question-rewrite",
+  "misconceptionTargets": [
+    "change-progressive-to-simple-when-questioning"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "要保留 are fixing 的當下進行，只能將 Are 移到主詞前。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項是唯一沒有改動時態與事件資訊的標準確認問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

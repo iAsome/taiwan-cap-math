@@ -9,8 +9,13 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..", "..");
 const BUILDER_PATH = path.join(ROOT, "tools", "cap8-r4", "build-english-unit.mjs");
 const RUNTIME_ROOT = path.join(ROOT, "英文會考作戰室", "r4", "runtime");
-const UNIT_ID = "ENG_R4_U08";
-const UNIT_SKILLS = Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + 50).padStart(3, "0")}`);
+const UNITS = [
+  { id: "ENG_R4_U08", firstSkill: 50 },
+  { id: "ENG_R4_U09", firstSkill: 57 },
+].map((unit) => ({
+  ...unit,
+  skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
+}));
 const HAN = /\p{Script=Han}/u;
 const GENERIC_PROMPTS = [
   "Choose the best answer.",
@@ -75,74 +80,84 @@ test("English unit builder imports without writing runtime content", async () =>
   assert.equal(await treeHash(RUNTIME_ROOT), before);
 });
 
-test("U08 has complete static lecture and question floors", async () => {
+test("authored English units have complete static lecture and question floors", async () => {
   const { loadEnglishUnitSource, materializeEnglishUnit } = await api();
-  const source = await loadEnglishUnitSource(UNIT_ID);
-  const materialized = await materializeEnglishUnit(source);
-  assert.deepEqual(materialized.skills.map((value) => value.id), UNIT_SKILLS);
-  assert.equal(source.lectures.length, 7);
-  assert.equal(source.questions.length, 84);
-  assert.equal(materialized.lectures.length, 7);
-  assert.equal(materialized.questions.length, 84);
-  for (const skillId of UNIT_SKILLS) {
-    const questions = source.questions.filter((value) => value.skillId === skillId);
-    assert.equal(questions.length, 12, `${skillId}: question count`);
-    assert.deepEqual(
-      Object.fromEntries(["foundation", "standard", "advanced", "transfer"].map((level) => [level, questions.filter((value) => value.difficulty === level).length])),
-      { foundation: 3, standard: 4, advanced: 3, transfer: 2 },
-    );
-    assert.deepEqual([0, 1, 2, 3].map((index) => questions.filter((value) => value.answerIndex === index).length), [3, 3, 3, 3]);
+  for (const unit of UNITS) {
+    const source = await loadEnglishUnitSource(unit.id);
+    const materialized = await materializeEnglishUnit(source);
+    assert.deepEqual(materialized.skills.map((value) => value.id), unit.skills);
+    assert.equal(source.lectures.length, 7);
+    assert.equal(source.questions.length, 84);
+    assert.equal(materialized.lectures.length, 7);
+    assert.equal(materialized.questions.length, 84);
+    for (const skillId of unit.skills) {
+      const questions = source.questions.filter((value) => value.skillId === skillId);
+      assert.equal(questions.length, 12, `${skillId}: question count`);
+      assert.deepEqual(
+        Object.fromEntries(["foundation", "standard", "advanced", "transfer"].map((level) => [level, questions.filter((value) => value.difficulty === level).length])),
+        { foundation: 3, standard: 4, advanced: 3, transfer: 2 },
+      );
+      assert.deepEqual([0, 1, 2, 3].map((index) => questions.filter((value) => value.answerIndex === index).length), [3, 3, 3, 3]);
+    }
   }
 });
 
-test("U08 lectures provide complete zero-foundation teaching records", async () => {
+test("authored English lectures provide complete zero-foundation teaching records", async () => {
   const { loadEnglishUnitSource } = await api();
-  const source = await loadEnglishUnitSource(UNIT_ID);
-  for (const lecture of source.lectures) {
-    assert.equal(lecture.sections.length, 4, `${lecture.id}: sections`);
-    assert.equal(lecture.workedExamples.length, 3, `${lecture.id}: worked examples`);
-    assert.equal(lecture.misconceptions.length, 4, `${lecture.id}: misconceptions`);
-    assert.equal(lecture.checks.length, 3, `${lecture.id}: checks`);
-    assert.equal(new Set(lecture.workedExamples.map((value) => value.prompt)).size, 3, `${lecture.id}: duplicate example`);
-    assert.equal(new Set(lecture.misconceptions.map((value) => value.belief)).size, 4, `${lecture.id}: duplicate misconception`);
+  for (const unit of UNITS) {
+    const source = await loadEnglishUnitSource(unit.id);
+    for (const lecture of source.lectures) {
+      assert.equal(lecture.sections.length, 4, `${lecture.id}: sections`);
+      assert.equal(new Set(lecture.sections.map((value) => value.id)).size, 4, `${lecture.id}: section IDs`);
+      assert.equal(lecture.workedExamples.length, 3, `${lecture.id}: worked examples`);
+      assert.equal(lecture.misconceptions.length, 4, `${lecture.id}: misconceptions`);
+      assert.equal(lecture.checks.length, 3, `${lecture.id}: checks`);
+      assert.equal(new Set(lecture.workedExamples.map((value) => value.prompt)).size, 3, `${lecture.id}: duplicate example`);
+      assert.equal(new Set(lecture.misconceptions.map((value) => value.belief)).size, 4, `${lecture.id}: duplicate misconception`);
+    }
   }
 });
 
-test("U08 questions are direct, English-only, and substantively unique", async () => {
+test("authored English questions are direct, English-only, and substantively unique across units", async () => {
   const { loadEnglishUnitSource } = await api();
-  const source = await loadEnglishUnitSource(UNIT_ID);
   const visible = new Set();
   const essence = new Set();
   const operations = new Set();
-  for (const question of source.questions) {
-    assert(!HAN.test(question.stem), `${question.id}: Chinese in stem`);
-    assert(question.options.every((value) => !HAN.test(value)), `${question.id}: Chinese in options`);
-    assert(question.reasons.every((value) => HAN.test(value)), `${question.id}: rationale needs Chinese explanation`);
-    assert(question.reviews.every((value) => HAN.test(value)), `${question.id}: review needs Chinese evidence`);
-    assert(!GENERIC_PROMPTS.some((marker) => question.stem.startsWith(marker)), `${question.id}: generic prompt`);
-    assert(!FAKE_CONTEXT.test(question.stem), `${question.id}: fake context opener`);
-    assert(!/^Item\s+[A-Z0-9-]+:/i.test(question.stem), `${question.id}: leaked item label`);
-    if (question.stem.includes("___")) {
-      assert(question.options.every((value) => (value.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? []).length <= 6), `${question.id}: cloze option repeats excessive sentence text`);
+  for (const unit of UNITS) {
+    const source = await loadEnglishUnitSource(unit.id);
+    for (const question of source.questions) {
+      assert.equal(question.options.length, 4, `${question.id}: option count`);
+      assert.equal(new Set(question.options).size, 4, `${question.id}: duplicate option`);
+      assert(Number.isInteger(question.answerIndex) && question.answerIndex >= 0 && question.answerIndex < 4, `${question.id}: answer index`);
+      assert(!HAN.test(question.stem), `${question.id}: Chinese in stem`);
+      assert(question.options.every((value) => !HAN.test(value)), `${question.id}: Chinese in options`);
+      assert(question.reasons.every((value) => HAN.test(value)), `${question.id}: rationale needs Chinese explanation`);
+      assert(question.reviews.every((value) => HAN.test(value)), `${question.id}: review needs Chinese evidence`);
+      assert(!GENERIC_PROMPTS.some((marker) => question.stem.startsWith(marker)), `${question.id}: generic prompt`);
+      assert(!FAKE_CONTEXT.test(question.stem), `${question.id}: fake context opener`);
+      assert(!/^Item\s+[A-Z0-9-]+:/i.test(question.stem), `${question.id}: leaked item label`);
+      if (question.stem.includes("___")) {
+        assert(question.options.every((value) => (value.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? []).length <= 6), `${question.id}: cloze option repeats excessive sentence text`);
+      }
+      const visibleKey = JSON.stringify([question.stem.trim().toLowerCase(), question.options.map((value) => value.trim().toLowerCase()).sort()]);
+      assert(!visible.has(visibleKey), `${question.id}: duplicate visible question`);
+      visible.add(visibleKey);
+      const essenceKey = JSON.stringify([
+        normalizedQuestionPart(question.stem, source.vocabularyPolicy.properNames),
+        question.options.map((value) => normalizedQuestionPart(value, source.vocabularyPolicy.properNames)).sort(),
+      ]);
+      assert(!essence.has(essenceKey), `${question.id}: same question skeleton after names, times, and numbers are removed`);
+      essence.add(essenceKey);
+      const operationKey = JSON.stringify(question.cognitiveProcess);
+      assert(!operations.has(operationKey), `${question.id}: repeated assessment operation`);
+      operations.add(operationKey);
     }
-    const visibleKey = JSON.stringify([question.stem.trim().toLowerCase(), question.options.map((value) => value.trim().toLowerCase()).sort()]);
-    assert(!visible.has(visibleKey), `${question.id}: duplicate visible question`);
-    visible.add(visibleKey);
-    const essenceKey = JSON.stringify([
-      normalizedQuestionPart(question.stem, source.vocabularyPolicy.properNames),
-      question.options.map((value) => normalizedQuestionPart(value, source.vocabularyPolicy.properNames)).sort(),
-    ]);
-    assert(!essence.has(essenceKey), `${question.id}: same question skeleton after names, times, and numbers are removed`);
-    essence.add(essenceKey);
-    const operationKey = JSON.stringify(question.cognitiveProcess);
-    assert(!operations.has(operationKey), `${question.id}: repeated assessment operation`);
-    operations.add(operationKey);
   }
 });
 
 test("U08 semantic regressions remain repaired", async () => {
   const { loadEnglishUnitSource } = await api();
-  const source = await loadEnglishUnitSource(UNIT_ID);
+  const source = await loadEnglishUnitSource("ENG_R4_U08");
   const question = new Map(source.questions.map((value) => [value.id, value]));
   assert.match(question.get("ENG_R4_Q_050_07").stem, /at eleven/);
   assert.equal(question.get("ENG_R4_Q_050_12").options[3], "Rita walks to work on most days.");
@@ -157,23 +172,46 @@ test("U08 semantic regressions remain repaired", async () => {
   assert.doesNotMatch(JSON.stringify(agreementExample), /two bikes/);
 });
 
-test("U08 vocabulary is limited to the governed official English tables", async () => {
+test("U09 semantic regressions remain repaired", async () => {
   const { loadEnglishUnitSource } = await api();
-  const { validateEnglishVocabularyScope } = await import("../english-vocabulary-scope.mjs");
-  const source = await loadEnglishUnitSource(UNIT_ID);
-  const report = await validateEnglishVocabularyScope(source, source.vocabularyPolicy);
-  assert.equal(report.unknown.length, 0);
-  assert.deepEqual(report.additional, [...source.vocabularyPolicy.additionalLearningTerms].sort());
+  const source = await loadEnglishUnitSource("ENG_R4_U09");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.match(question.get("ENG_R4_Q_058_10").stem, /without changing its meaning/);
+  assert(!question.get("ENG_R4_Q_060_04").options.includes("Is Ben going where?"));
+  assert(!question.get("ENG_R4_Q_060_05").options.includes("Mia is reading in her room?"));
+  assert(!question.get("ENG_R4_Q_060_09").options.includes("The workers are fixing the floor?"));
+  assert.equal(question.get("ENG_R4_Q_060_10").options[1], "The team has not left yet.");
+  assert(!question.get("ENG_R4_Q_061_08").stem.includes("so today"));
+  assert.equal(question.get("ENG_R4_Q_062_01").representationType, "time-expression-interpretation");
+  assert(!question.get("ENG_R4_Q_062_03").stem.includes("___"));
+  assert.equal(question.get("ENG_R4_Q_062_03").options[2], "Her running is happening now.");
+  assert.equal(question.get("ENG_R4_Q_063_12").options[3], "need");
+  const rainExample = source.lectures.find((value) => value.skillId === "ENG_R4_S062").workedExamples[2];
+  assert.match(rainExample.prompt, /getting wet/);
+  assert.match(rainExample.why, /仍在變濕/);
 });
 
-test("checked-in U08 runtime is the deterministic materialized source", async () => {
+test("authored English vocabulary is limited to the governed official tables", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const { validateEnglishVocabularyScope } = await import("../english-vocabulary-scope.mjs");
+  for (const unit of UNITS) {
+    const source = await loadEnglishUnitSource(unit.id);
+    const report = await validateEnglishVocabularyScope(source, source.vocabularyPolicy);
+    assert.equal(report.unknown.length, 0);
+    assert.deepEqual(report.additional, [...source.vocabularyPolicy.additionalLearningTerms].sort());
+  }
+});
+
+test("checked-in authored English runtime is the deterministic materialized source", async () => {
   const { loadEnglishUnitSource, materializeEnglishUnit } = await api();
-  const source = await loadEnglishUnitSource(UNIT_ID);
-  const materialized = await materializeEnglishUnit(source);
-  for (const [kind, records] of [["lectures", materialized.lectures], ["questions", materialized.questions]]) {
-    for (const record of records) {
-      const checkedIn = JSON.parse(await readFile(path.join(RUNTIME_ROOT, kind, `${record.id}.json`), "utf8"));
-      assert.deepEqual(checkedIn, record, `${record.id}: runtime differs from source`);
+  for (const unit of UNITS) {
+    const source = await loadEnglishUnitSource(unit.id);
+    const materialized = await materializeEnglishUnit(source);
+    for (const [kind, records] of [["lectures", materialized.lectures], ["questions", materialized.questions]]) {
+      for (const record of records) {
+        const checkedIn = JSON.parse(await readFile(path.join(RUNTIME_ROOT, kind, `${record.id}.json`), "utf8"));
+        assert.deepEqual(checkedIn, record, `${record.id}: runtime differs from source`);
+      }
     }
   }
 });

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The children are ___ in the pool. (swim)",
+  "options": [
+    "swiming",
+    "swimeing",
+    "swim",
+    "swimming"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "swiming 少了短母音字尾需要重複的 m。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "swimeing 在 swim 後錯加 e。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "swim 是原形，不能完成 are 後的進行式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "swimming 重複最後的 m 再加 -ing。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "double-final-m-in-swim",
+    "verify-swimming-spelling"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "write-single-m-in-swimming"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "swim 的結尾符合短母音加單一子音，故重複 m，形成 swimming。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項能從正確詞根與重複規則推得，其他三項不是少字、多字，就是未變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

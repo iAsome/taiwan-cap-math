@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_061_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora works at the hospital, but today she is helping at a school. What do these two facts tell us?",
+  "options": [
+    "Nora no longer works at the hospital.",
+    "Nora helps at the school every day.",
+    "She usually works at the hospital and is helping at the school today.",
+    "Nora worked at the hospital only in the past."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "works 是目前長期狀態，不能推得她已離職。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "today 只說今天，沒有 every day 的規律。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "簡單式 works 對應通常工作，is helping 對應今天的臨時工作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "works 不是過去式，醫院工作並未被限定在過去。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-workplace-tense-contrast",
+    "reject-permanent-change-inference"
+  ],
+  "representationType": "dual-fact-interpretation",
+  "misconceptionTargets": [
+    "read-temporary-help-as-job-change"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩個時態分別呈現長期工作與今日例外，第三項完整保留這個對比。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他選項把 today 誇大為永久改變或每日規律；第三項沒有增加題目未說的資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

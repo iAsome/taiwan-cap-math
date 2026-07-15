@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "How do you spell write with -ing?",
+  "options": [
+    "Drop the final e and add -ing.",
+    "Keep the final e and add -ing.",
+    "Double t and add -ing.",
+    "Change ie to y and add -ing."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "write 的不發音 e 要先去掉，再加 -ing，得到 writing。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "保留 e 會形成錯誤的 writeing。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "write 不符合重複 t 的字尾條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "ie 改 y 適用 lie、tie 等，不適用 write。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "explain-writing-transformation",
+    "distinguish-silent-e-from-ie"
+  ],
+  "representationType": "spelling-process-selection",
+  "misconceptionTargets": [
+    "confuse-write-ending-with-ie-ending"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "write → writ + ing → writing，因此第一項描述正確步驟。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘三項分別會多留 e、錯重複 t 或套用不屬於 write 的 ie 規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_061_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Why can't Grace answer the phone? B: She ___ a test at the moment.",
+  "options": [
+    "takes every Friday",
+    "is taking",
+    "took last week",
+    "take"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "每週五考試的習慣不能說明她此刻無法接電話。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is taking 和 at the moment 表示她正在考試。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "last week 的過去考試不會造成現在無法接聽。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "take 不配單數 she，也缺少進行式。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "explain-present-unavailability",
+    "choose-current-test-action"
+  ],
+  "representationType": "availability-dialogue",
+  "misconceptionTargets": [
+    "answer-present-why-with-recurring-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "at the moment 與不能接電話的目前原因要求 is taking。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項能直接連結當下限制，其他答案不是不同時間，就是句法不完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

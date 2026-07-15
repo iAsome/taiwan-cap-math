@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_057_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S057"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The children ___ playing near the river now.",
+  "options": [
+    "do",
+    "is",
+    "are",
+    "have"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "do 不能和 playing 組成現在進行式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is 不配複數主詞 The children。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "are 放在 children 與 playing 之間，形成完整進行式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "have playing 不是本題所需的現在式結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "diagnose-missing-progressive-auxiliary",
+    "match-children-with-are"
+  ],
+  "representationType": "targeted-missing-word-repair",
+  "misconceptionTargets": [
+    "treat-participle-as-finite-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "The children 是複數，playing 前缺 be 動詞，因此補 are。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項修復唯一缺少的成分，沒有改動 now 或主要動詞的時間意義。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

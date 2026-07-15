@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We ___ leaving the school yet.",
+  "options": [
+    "don't",
+    "are not",
+    "doesn't",
+    "not are"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "don't 不能直接接 leaving 形成進行式否定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "are not 正確放在主詞 We 與 leaving 之間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "doesn't 不配 We，也不能接 leaving。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "not are 的順序錯誤，be 應接在主詞後。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "insert-not-after-are",
+    "form-plural-progressive-negative"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-dont-before-participle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "We 的進行式使用 are leaving，否定時在 are 後加 not，得到 are not leaving。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一同時保留 be、一致主詞與正確 not 位置的形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

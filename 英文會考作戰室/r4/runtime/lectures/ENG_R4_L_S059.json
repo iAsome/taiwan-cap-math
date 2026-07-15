@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S059",
+  "subject": "english",
+  "unitId": "ENG_R4_U09",
+  "skillId": "ENG_R4_S059",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S058"
+  ],
+  "objectives": [
+    "能依動詞字尾形成正確的現在分詞。",
+    "能分辨直接加 -ing、去 e、重複字尾與 ie 改 y 等拼字規則。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S059_SEC_01",
+      "title": "多數動詞直接加 -ing",
+      "content": "大多數動詞直接在原形後加 -ing，例如 read → reading、play → playing、wash → washing。字尾是 y 時通常保留 y，與第三人稱單數的 -ies 規則不同，所以 study 變 studying，不是 studiing。"
+    },
+    {
+      "id": "ENG_R4_L_S059_SEC_02",
+      "title": "不發音 e 通常先去掉",
+      "content": "make、write、ride 等以不發音 e 結尾的動詞，通常去 e 再加 -ing：making、writing、riding。若字尾是 ee，如 see，兩個 e 保留，形成 seeing。不要只看到 e 就全部刪除。"
+    },
+    {
+      "id": "ENG_R4_L_S059_SEC_03",
+      "title": "短母音後的單一子音可能重複",
+      "content": "run → running、sit → sitting、stop → stopping 都重複最後一個子音。基本判斷是短而重讀的字尾呈現子音、母音、子音；但 w、x、y 通常不重複，所以 snowing、fixing、playing 不多寫一個字母。"
+    },
+    {
+      "id": "ENG_R4_L_S059_SEC_04",
+      "title": "ie 改成 y 再加 -ing",
+      "content": "die、lie、tie 的 ie 先改成 y，再加 -ing，得到 dying、lying、tying。這項變化可避免連續出現不自然的母音拼法。完成後應把結果讀回原動詞，確認沒有改變詞根。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S059_EX_01",
+      "prompt": "Mia is ___ a card. (makeing / making / makking)",
+      "steps": [
+        "原形是 make。",
+        "字尾 e 不發音，先去 e。",
+        "加 -ing 得到 making。"
+      ],
+      "answer": "making",
+      "why": "make 以不發音 e 結尾，形成現在分詞時先去掉 e，再加 -ing，所以是 making。makeing 保留了多餘的 e，makking 又不該重複 k。"
+    },
+    {
+      "id": "ENG_R4_L_S059_EX_02",
+      "prompt": "The boy is ___ to school. (runing / running / runeing)",
+      "steps": [
+        "run 是短母音加單一子音結尾。",
+        "重複最後的 n。",
+        "再加 -ing。"
+      ],
+      "answer": "running",
+      "why": "run 的字尾符合短母音後接單一子音，現在分詞要重複 n，形成 running。runing 少一個 n，runeing 也不是 run 的拼法。"
+    },
+    {
+      "id": "ENG_R4_L_S059_EX_03",
+      "prompt": "The dog is ___ under the table. (lieing / lying / liying)",
+      "steps": [
+        "原形是 lie。",
+        "把 ie 改成 y。",
+        "加 -ing 形成 lying。"
+      ],
+      "answer": "lying",
+      "why": "lie 的現在分詞不是直接接 -ing，而要先將 ie 改為 y，再寫 lying。lieing 保留 ie，liying 則多放了一個不屬於詞根的 i。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有動詞只要直接加 -ing 就完成。",
+      "whyWrong": "make、run、lie 等字尾需要去 e、重複子音或改 ie。",
+      "correction": "加字尾前先辨認原形最後幾個字母與發音。"
+    },
+    {
+      "belief": "看到 e 結尾就一定刪掉 e。",
+      "whyWrong": "see 的 ee 要保留，現在分詞是 seeing。",
+      "correction": "區分單一不發音 e 與 ee 字尾。"
+    },
+    {
+      "belief": "子音結尾的動詞都重複最後一個字母。",
+      "whyWrong": "helping、washing 等不符合短母音加單一字尾子音的條件。",
+      "correction": "檢查完整字尾結構，不以最後一個字母單獨決定。"
+    },
+    {
+      "belief": "study 形成現在分詞時也要把 y 改成 i。",
+      "whyWrong": "y 改 i 是某些第三人稱或過去式規則，studying 保留 y。",
+      "correction": "把現在分詞規則與 -ies 規則分開。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "write 的現在分詞是什麼？",
+      "answer": "writing",
+      "reason": "去掉不發音 e，再加 -ing。"
+    },
+    {
+      "prompt": "swim 為何變成 swimming？",
+      "answer": "重複最後的 m",
+      "reason": "字尾是短母音後接單一子音。"
+    },
+    {
+      "prompt": "fix 是否要寫成 fixxing？",
+      "answer": "不用，應寫 fixing",
+      "reason": "x 結尾通常不重複。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

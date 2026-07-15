@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_063_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher is speaking clearly, and I ___ every word now.",
+  "options": [
+    "am understand",
+    "am understanding",
+    "understands",
+    "understand"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "am understand 不是 be 加現在分詞的合法形式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "understand 表認知狀態，基礎用法通常不寫 am understanding。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "understands 不配主詞 I。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "understand 以簡單式表示目前理解，並配合 I。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "resist-now-with-understand-state",
+    "select-i-understand"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "apply-progressive-to-current-comprehension"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "now 不會使認知狀態自動進行化；主詞 I 應使用 understand。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時符合狀態動詞與主詞形式，另外三項各有明確結構或一致錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

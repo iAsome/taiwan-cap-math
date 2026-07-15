@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_057_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S057"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This week, my aunt ___ at a school near our home.",
+  "options": [
+    "works",
+    "is working",
+    "worked",
+    "work"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "works 通常描述長期工作地點，未呈現 this week 的暫時安排。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is working 把工作情況限定在目前這一週，語意完整。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "worked 表示已結束的過去，但 this week 仍是目前期間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "work 不配單數主詞 my aunt，也未形成進行式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-current-limited-period",
+    "choose-temporary-work-form"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-current-period-as-permanent-habit"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "This week 表示目前有限期間，my aunt 為單數，所以使用 is working。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時符合暫時語意與 is + working 的結構，其他形式各缺一項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

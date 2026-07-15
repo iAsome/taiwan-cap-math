@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_061_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The shop usually closes at nine. Tonight it ___ open until eleven for a school event.",
+  "options": [
+    "is staying",
+    "stays every night",
+    "stayed yesterday",
+    "stay"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "is staying 把延長開放限定在今晚的活動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "stays every night 與 usually closes at nine 及 Tonight 的例外衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "stayed yesterday 改成昨天，沒有回應今晚安排。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "stay 不配單數 it，也缺少進行式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "contrast-usual-closing-with-one-night-extension",
+    "choose-is-staying-open"
+  ],
+  "representationType": "event-hours-context",
+  "misconceptionTargets": [
+    "turn-one-night-exception-into-routine"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "usually 說平常九點關門，Tonight 引出一次性延長，因此選 is staying。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留活動造成的今晚例外；其他選項虛構每晚規律、改變日期或不完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

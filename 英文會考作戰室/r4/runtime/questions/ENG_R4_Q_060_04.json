@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "You want to know where Ben is going right now. What do you ask?",
+  "options": [
+    "Where Ben is going?",
+    "Is where Ben going?",
+    "Where going is Ben?",
+    "Where is Ben going?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "疑問詞後仍需把 is 放在主詞 Ben 前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "where 後應接 is，再接主詞 Ben。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "going 不能放在 is 與主詞前形成此語序。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Where + is + Ben + going 的疑問詞、be、主詞與分詞順序正確。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "arrange-progressive-wh-question",
+    "place-where-before-inversion"
+  ],
+  "representationType": "destination-question-order",
+  "misconceptionTargets": [
+    "keep-statement-order-after-where"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "詢問目的地以 Where 開頭，進行式直接問句再把 is 放到 Ben 前。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是唯一能按 Where is Ben going? 完成標準書面問句的排列。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

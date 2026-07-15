@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Dad is ___ my bike now. (fix)",
+  "options": [
+    "fixxing",
+    "fixeing",
+    "fixing",
+    "fix"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "fixxing 錯誤重複 x；x 結尾通常不重複。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "fixeing 在 fix 後加入了不屬於原形的 e。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "fixing 直接在 fix 後加 -ing，拼字正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "fix 是原形，不能直接接在 is 後。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "apply-no-double-x-exception",
+    "spell-fixing"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "double-x-before-ing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "fix 雖以子音結尾，但 x 不重複，直接加 -ing 得到 fixing。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留詞根且符合 x 字尾規則，其他形式都添加了多餘字母或未變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

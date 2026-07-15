@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_057_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S057"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A photo shows Amy at a table with an open math book and a pen. Which sentence tells what Amy is doing in the photo?",
+  "options": [
+    "Amy studies math every Tuesday.",
+    "Amy studied math before dinner.",
+    "Amy is doing her math work.",
+    "Amy will buy a math book."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "照片只能顯示一個當下畫面，不能證明每週二的習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "照片未提供 before dinner，也不能確認動作已結束。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is doing 描述照片中正在進行的數學作業情況。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "畫面已有書本，且沒有未來購買的證據。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "write-caption-from-visible-evidence",
+    "reject-unsupported-time-claims"
+  ],
+  "representationType": "text-described-photo-caption",
+  "misconceptionTargets": [
+    "infer-habit-from-single-scene"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "open book 與手中的筆支持 Amy 正在做數學作業，故第三項最符合畫面。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘選項分別加入週期、過去時間或未來計畫，皆超出照片可確認的資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

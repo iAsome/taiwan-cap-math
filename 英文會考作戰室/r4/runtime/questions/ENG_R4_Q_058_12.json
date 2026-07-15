@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_058_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S058"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I ___ taking the train today, while my parents ___ driving.",
+  "options": [
+    "is / is",
+    "are / are",
+    "am / is",
+    "am / are"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I 不配 is，parents 也不配 is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "I 不配 are，雖然第二格 are 正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一格 am 正確，但複數 parents 不能用 is。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "I 搭配 am，複數 my parents 搭配 are，兩格皆正確。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "switch-be-across-coordinated-subjects",
+    "solve-two-progressive-slots"
+  ],
+  "representationType": "dual-agreement-cloze",
+  "misconceptionTargets": [
+    "reuse-one-be-form-across-clauses"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個子句分別以 I 和 my parents 為主詞，故使用 am taking 與 are driving。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐格核對主詞而非讓 while 兩邊共用同一 be，可唯一得到第四組。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

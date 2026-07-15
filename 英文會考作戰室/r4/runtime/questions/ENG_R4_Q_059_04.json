@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cat is ___ under the chair. (lie)",
+  "options": [
+    "lieing",
+    "liying",
+    "lie",
+    "lying"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "lieing 未把 ie 改為 y。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "liying 在改成 y 前又保留了多餘的 i。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "lie 是原形，不能完成 is 後的進行式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "lying 正確把 ie 改成 y，再加 -ing。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "change-ie-to-y-before-ing",
+    "spell-lying"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "attach-ing-directly-to-ie"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "lie 的 ie 先改成 y，再加 -ing，所以答案是 lying。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項符合 ie → y 的特殊變化，並能和 is 組成完整進行式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_057_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S057"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Why is the kitchen so busy? B: Dad ___ dinner, and we are helping him.",
+  "options": [
+    "cooks every day",
+    "cooked yesterday",
+    "cook",
+    "is cooking"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "cooks every day 說固定習慣，沒有解釋現在忙碌的原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "cooked yesterday 指過去，無法連接 we are helping 的當下情境。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "cook 不配單數 Dad，也缺少進行式結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "is cooking 描述父親正在做飯，能直接解釋目前廚房忙碌。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-current-cause-from-dialogue",
+    "align-parallel-actions"
+  ],
+  "representationType": "cause-dialogue",
+  "misconceptionTargets": [
+    "answer-current-cause-with-routine"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Why is... 與 we are helping 都把事件放在現在，Dad 應搭配 is cooking。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項不只文法完整，也和對話所問的目前原因一致，因此沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_063_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia ___ a glass of water after the long walk.",
+  "options": [
+    "is wanting",
+    "wants",
+    "want",
+    "wanting"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "want 表需求狀態時，基礎用法通常不採進行式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "wants 配合單數 Mia，表示她目前想要水。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "want 未配合第三人稱單數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "wanting 不能獨立作謂語，也不適合此狀態意義。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-want-as-current-state",
+    "apply-third-person-wants"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-is-wanting-for-immediate-desire"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Mia 是單數，want 表示想要的狀態，所以用現在簡單式 wants。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時符合狀態動詞與主詞一致，其他形式不是進行式誤用，就是缺少變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

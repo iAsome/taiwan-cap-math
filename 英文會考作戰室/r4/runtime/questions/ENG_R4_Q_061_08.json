@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_061_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus leaves at 7:00 every morning. Workers are checking it today, so it ___ at 8:00.",
+  "options": [
+    "leaves every day",
+    "left yesterday",
+    "leave",
+    "is leaving"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "leaves every day 重複一般班次，無法表達 today 的臨時改點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "left yesterday 與今天八點的安排無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "leave 不配單數 it，也沒有暫時安排的結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "is leaving 表示今天因檢查而採用的臨時出發時間。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "contrast-timetable-with-one-day-change",
+    "select-progressive-for-arranged-exception"
+  ],
+  "representationType": "transport-change-notice",
+  "misconceptionTargets": [
+    "keep-schedule-form-for-temporary-change"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第一句是固定班次，Today 與 workers are checking 引出今日例外，故用 is leaving。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是唯一能把八點限制在今天且與單數 it 搭配的答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

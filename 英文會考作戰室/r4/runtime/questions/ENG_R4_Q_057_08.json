@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_057_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S057"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "While the nurse is talking to my mother, I ___ in the hall.",
+  "options": [
+    "waits",
+    "waited every day",
+    "waiting",
+    "am waiting"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "waits 不配主詞 I，也沒有和 is talking 呈現同時進行。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "waited every day 混合過去式與習慣語意，和目前子句衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "waiting 前缺少 I 所需的 am。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "am waiting 表示我在談話進行期間同時等候。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "coordinate-simultaneous-current-actions",
+    "select-i-am-form"
+  ],
+  "representationType": "while-clause-completion",
+  "misconceptionTargets": [
+    "omit-am-in-parallel-progressive"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "while 連結兩個同時進行的目前動作，I 搭配 am waiting。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是唯一能與 is talking 平行且形成完整限定動詞的選項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_061_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam reads before bed every night, but he reading in the park now. Which word is missing?",
+  "options": [
+    "does",
+    "has",
+    "is",
+    "reads"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "does 不能直接接 reading 形成進行式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "has reading 不是本題所需的現在形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is 補在 he 與 reading 之間，呈現 now 的目前動作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "reads reading 會同時放入兩個主要動詞形式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "repair-simple-progressive-contrast",
+    "supply-is-before-reading"
+  ],
+  "representationType": "contrast-sentence-repair",
+  "misconceptionTargets": [
+    "reuse-simple-verb-in-now-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "前句 reads 表每晚習慣，後句 now 需要 he is reading，因此缺 is。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只補足進行式 be，保留 park 與現在閱讀的原意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_058_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S058"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The girls near the door ___ talking quietly.",
+  "options": [
+    "is",
+    "are",
+    "am",
+    "be"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is 不配複數主詞 The girls。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "are 正確連接複數主詞 girls 與 talking。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "am 只和 I 搭配。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "be 未依主詞與現在時間變化。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-plural-head-before-place-phrase",
+    "select-are"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-door-as-subject-head"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "near the door 只是地點說明，主詞核心 girls 是複數，所以選 are。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成 The girls are talking，其他三項都無法和複數主詞一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

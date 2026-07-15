@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which line spells all three -ing words correctly?",
+  "options": [
+    "play → plaing; wash → washing; sit → siting",
+    "play → playing; wash → washeing; sit → sitting",
+    "play → playying; wash → washing; sit → sitting",
+    "play → playing; wash → washing; sit → sitting"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "plaing 錯刪 y，siting 又少了需要重複的 t。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "washeing 錯誤加入 e；wash 應直接加 -ing。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "playying 不應重複 y。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "playing 保留 y，washing 直接加 -ing，sitting 重複 t，三者皆正確。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "audit-mixed-participle-rules",
+    "verify-entire-spelling-row"
+  ],
+  "representationType": "multi-verb-proofreading",
+  "misconceptionTargets": [
+    "accept-row-after-checking-only-one-word"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "三個原形分別考 y 保留、直接加 -ing 與短母音重複子音，第四列全部正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐格檢查而非只看其中一字後，前三列各至少有一個可明確定位的拼字錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

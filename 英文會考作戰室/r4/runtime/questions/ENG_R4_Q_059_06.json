@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We are ___ a bright light in the sky. (see)",
+  "options": [
+    "seing",
+    "seeing",
+    "seeeing",
+    "sseeing"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "seing 錯刪 see 中的一個 e。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "seeing 保留 ee，再加 -ing。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "seeeing 多寫了一個 e。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "sseeing 錯誤重複字首 s。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "preserve-double-e-before-ing",
+    "spell-seeing"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "drop-one-e-from-see"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "see 以 ee 結尾，不套用單一不發音 e 的刪除規則，因此寫 seeing。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項完整保留詞根 see；其餘選項刪錯、增寫或重複了不相關字母。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ Nina and Paul waiting outside?",
+  "options": [
+    "Is",
+    "Do",
+    "Are",
+    "Does"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is 不配由 and 連接的兩人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "do 不能和 waiting 組成進行式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "are 配複數主詞 Nina and Paul，問句位置正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "does 不配複數主詞，也不能接 waiting。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "invert-are-with-compound-subject",
+    "reject-do-before-waiting"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-is-from-first-singular-name"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Nina and Paul 等同 they，肯定結構是 they are waiting，問句以 Are 開頭。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時處理複數一致與進行式倒裝，其餘選項至少違反其中一項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

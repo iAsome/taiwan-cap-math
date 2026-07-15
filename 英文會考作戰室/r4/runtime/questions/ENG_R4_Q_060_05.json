@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia is reading in her room. Which question checks whether this is happening?",
+  "options": [
+    "Is Mia reading in her room?",
+    "Does Mia reading in her room?",
+    "Do Mia read in her room?",
+    "Is reading Mia in her room?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Is Mia reading...? 正確把原句 is 移到主詞前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does 不能接 reading，且會和原本 be 結構衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "do 不配 Mia，也把目前動作改成一般式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "reading 不能放在 Mia 前；is 後應先接主詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "transform-progressive-statement-to-question",
+    "preserve-current-action"
+  ],
+  "representationType": "statement-question-transformation",
+  "misconceptionTargets": [
+    "add-do-to-existing-be"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "原句的限定動詞是 is，改問句只需移到 Mia 前，故第一項正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留房間與閱讀資訊，且未加入 do/does 或改變時態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

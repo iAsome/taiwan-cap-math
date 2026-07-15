@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia is talking on the phone. Which sentence means that she is not doing this now?",
+  "options": [
+    "Mia doesn't talking on the phone.",
+    "Mia isn't talking on the phone.",
+    "Mia not is talking on the phone.",
+    "Mia isn't talk on the phone."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "doesn't 不能直接接 talking。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "isn't talking 在 is 後加入 not，正確反轉目前動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "not 應位在 is 後，不是主詞與 is 之間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "isn't 後要保留 talking，不能退回原形 talk。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "negate-current-action-with-isnt",
+    "preserve-participle-after-not"
+  ],
+  "representationType": "meaning-reversal",
+  "misconceptionTargets": [
+    "replace-be-not-with-do-not"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "原句為 is talking，否定只需改成 is not talking，也就是 isn't talking。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項完整保留人、電話與進行時間，只改變肯定與否定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

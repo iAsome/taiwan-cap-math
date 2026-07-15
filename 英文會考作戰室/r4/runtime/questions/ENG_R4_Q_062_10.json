@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_062_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The window is open, papers are moving, and Ann is holding her hat. What is most likely happening?",
+  "options": [
+    "Ann opens the window every morning.",
+    "A strong wind is coming through the window.",
+    "The papers moved yesterday.",
+    "Ann will buy a new hat next week."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "畫面未提供 every morning 的固定習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "紙張正在移動且 Ann 正抓帽子，支持風目前正吹入。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "are moving 表示目前，不是昨天已結束的動作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題面沒有購買或下週的資訊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-unwritten-current-event-from-clues",
+    "combine-multiple-live-observations"
+  ],
+  "representationType": "scene-evidence-inference",
+  "misconceptionTargets": [
+    "demand-explicit-now-despite-live-evidence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "moving papers 與 holding her hat 是同時的現場證據，最合理解釋是風正在吹入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項由多項目前證據共同支持，其他選項都加入題面沒有的時間或事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

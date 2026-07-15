@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_058_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S058"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The boy near my cousins are carrying a box. Which one-word change corrects the sentence without changing its meaning?",
+  "options": [
+    "Change boy to boys.",
+    "Change are to is.",
+    "Change carrying to carry.",
+    "Change box to boxes."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改成 boys 會更動原來的一名男孩，不是必要修正。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "真正主詞 boy 是單數，把 are 改為 is 即可。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "進行式需要 carrying，改成 carry 會破壞結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "受詞 box 的數量不控制 be 動詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "repair-nearest-noun-agreement-error",
+    "make-minimal-be-change"
+  ],
+  "representationType": "specific-agreement-repair",
+  "misconceptionTargets": [
+    "change-content-to-fit-wrong-auxiliary"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "near my cousins 是附加位置說明，主詞核心 boy 應搭配 is carrying。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只修正錯誤的 be 一致，不改變人物、動作或受詞資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

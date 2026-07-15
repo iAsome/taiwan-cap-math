@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_060_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S060"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ Tom carrying the blue box?",
+  "options": [
+    "Is",
+    "Does",
+    "Do",
+    "Are"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Is 配合單數 Tom，並移到主詞前形成進行式問句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Does 不和 carrying 組成現在進行式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Do 不配單數 Tom，也不能接 carrying。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Are 不和單數主詞 Tom 搭配。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "invert-is-for-progressive-question",
+    "match-tom-with-is"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "insert-does-before-participle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "肯定句為 Tom is carrying the blue box；問句把 Is 移到 Tom 前。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留原本的進行式 be，其餘助動詞或主詞一致都不成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

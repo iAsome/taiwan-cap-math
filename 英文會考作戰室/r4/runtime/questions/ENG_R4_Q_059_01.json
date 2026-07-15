@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_059_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The students are ___ a short story. (read)",
+  "options": [
+    "reading",
+    "readig",
+    "readding",
+    "read"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "reading 直接在 read 後加 -ing，拼字正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "readig 少了 -ing 中的 n。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "readding 不應重複原形最後的 d。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "read 是原形，不能直接接在 are 後形成進行式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "apply-direct-ing-addition",
+    "preserve-read-root"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "double-final-consonant-without-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "read 不需去字母或重複字尾，直接加 -ing 得到 reading。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留完整詞根 read 與字尾 ing，其他形式不是漏字、重複，就是未變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
