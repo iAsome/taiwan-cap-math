@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_157_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The old station will be changed into a library next year. Which part carries the future time?",
+  "options": [
+    "old station",
+    "be changed",
+    "will",
+    "into a library"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "old station 是被改建的主詞，不標時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "be changed 建立被動，但單獨不指出未來。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "will 明確承擔未來時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "into a library 說明改建結果，不是時態標記。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u23-s157-isolate-future-marker-in-station-change",
+    "distinguish-result-phrase-from-tense"
+  ],
+  "representationType": "future-auxiliary-component-analysis",
+  "misconceptionTargets": [
+    "assign-future-to-past-participle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "next year 與 will 相互呼應，changed 仍保持過去分詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項說明被動結構中時態與主要動詞形式分工。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

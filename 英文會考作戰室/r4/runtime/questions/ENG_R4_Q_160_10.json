@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_160_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The window was closed. No other sentence is given. What can the reader say?",
+  "options": [
+    "A child must have closed it.",
+    "More information is needed to know whether the focus is the event or the state after it.",
+    "The window closed another object.",
+    "The sentence can only describe something done every day."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "child 是沒有證據的動作者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "單句缺少動作者、時間細節與結果情境，兩種焦點皆可能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "window 在此是被動主詞，不是作用於其他物的動作者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "was 與無頻率詞都不支持每日習慣。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s160-preserve-ambiguity-in-bare-window-closed",
+    "reject-certain-agent-self-action-and-habit"
+  ],
+  "representationType": "context-insufficiency-judgment",
+  "misconceptionTargets": [
+    "force-single-reading-for-isolated-participle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "語法形式本身無法完全取代上下文判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項承認可確定的被動結果，也保留尚未解決的焦點歧義。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

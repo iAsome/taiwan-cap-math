@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_159_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The window was broken by a ball during the game. What caused the break?",
+  "options": [
+    "A ball",
+    "The game",
+    "The window",
+    "The time"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "by a ball 指出造成破裂的物體。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "game 只是事件背景，不直接承擔 broke。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "window 是被打破的承受者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "during 片語提供時段，不是原因力量。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s159-read-ball-as-causal-agent",
+    "separate-game-context-and-window-patient"
+  ],
+  "representationType": "causal-by-phrase-identification",
+  "misconceptionTargets": [
+    "reject-inanimate-cause-as-by-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "球雖不是有意識的人，仍可作為造成破壞的來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項由 by 片語與現實因果共同支持。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_158_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Someone left a bag on the bus, but no passenger knows who. Which sentence uses only these facts?",
+  "options": [
+    "The driver left the bag on the bus.",
+    "A child left the bag on the bus.",
+    "A bag was left on the bus.",
+    "The bag placed itself on a seat."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有人知道是誰，不能指定 driver。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "child 也是無證據的人物猜測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "被動句保留 bag 與 bus，並省略未知動作者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "物品不會自行放置，且原文明說 someone 做了動作。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s158-convert-unknown-bag-leaver-to-passive",
+    "prevent-role-invention-and-self-placement"
+  ],
+  "representationType": "unknown-agent-rewrite",
+  "misconceptionTargets": [
+    "choose-plausible-but-unsupported-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "證據只支持有人遺留袋子，不支持其身分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項避免把未知乘客替換成看似合理卻未證實的人。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

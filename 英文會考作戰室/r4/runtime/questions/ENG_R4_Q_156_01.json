@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_156_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S156"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The reading room ___ every afternoon.",
+  "options": [
+    "is cleaned",
+    "cleans",
+    "is cleaning",
+    "cleaned is"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "is cleaned 以單數 be 加過去分詞表示房間被清理。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "cleans 會把 reading room 寫成主動清理其他東西。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is cleaning 缺少房間主動清理的受詞，也不是目標被動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cleaned is 顛倒 be 與過去分詞的順序。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s156-form-singular-routine-passive",
+    "reject-room-as-cleaning-agent"
+  ],
+  "representationType": "present-passive-cloze-singular",
+  "misconceptionTargets": [
+    "omit-or-misorder-passive-be"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "every afternoon 表示固定清理，room 是承受者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時符合單數主詞與 be + p.p. 結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

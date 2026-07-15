@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_156_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S156"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "People keep the door locked at night. Which sentence puts the door first and keeps the same meaning?",
+  "options": [
+    "The door is kept locked at night.",
+    "The door keeps people locked at night.",
+    "People are kept by the door at night.",
+    "At night keeps the door locked."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一項把 door 移成主詞並用 is kept，原意不變。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把門誤寫成囚禁人的動作者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項改成 people 被門留住，角色顛倒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把時間片語當成動作者，結構與語意都不成立。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s156-transform-keep-door-active-to-passive",
+    "preserve-locked-result-complement"
+  ],
+  "representationType": "active-to-passive-focus-shift",
+  "misconceptionTargets": [
+    "move-wrong-active-role-to-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "主動句中 the door 承受 keep，所以能成為被動焦點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項仍保留 people 不重要而省略的安排，沒有創造新角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_159_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The picture was drawn by Ben for the school show. Which sentence keeps all of that information?",
+  "options": [
+    "The school show drew Ben's picture.",
+    "The picture drew Ben for school.",
+    "Ben was drawn at the school show.",
+    "Ben drew the picture for the school show."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "school show 是用途，不是繪圖者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "picture 是作品，不能主動 draw Ben。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把 Ben 改成被畫對象，也遺失作品。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項讓 Ben 畫 picture，並保留用途片語。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u23-s159-restore-active-from-drawn-by-ben",
+    "carry-purpose-phrase-through-voice-change"
+  ],
+  "representationType": "by-agent-active-restoration",
+  "misconceptionTargets": [
+    "promote-purpose-noun-to-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "by Ben 還原成主動主詞，passive subject picture 還原成受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項也完整保留 for the school show，沒有把用途誤作動作者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

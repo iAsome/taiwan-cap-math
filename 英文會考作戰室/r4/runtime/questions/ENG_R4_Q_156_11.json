@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_156_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S156"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "People sell fruit here in the morning. Which sentence focuses on the fruit without changing the fact?",
+  "options": [
+    "Fruit sells people here in the morning.",
+    "Here is sold by fruit in the morning.",
+    "Fruit is sold here in the morning.",
+    "People are fruit in the morning."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項把 fruit 誤寫成賣東西的動作者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把地點副詞 here 當成被賣的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三項將 fruit 移為焦點並保留販售地點與時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項改變 people 與 fruit 的關係，完全不是原句事實。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u23-s156-refocus-selling-event-on-fruit",
+    "preserve-place-time-under-passivization"
+  ],
+  "representationType": "fact-preserving-passive-selection",
+  "misconceptionTargets": [
+    "passivize-adverb-instead-of-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "fruit 是 sell 的承受者，因此可用 is sold 成為被動主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項省略一般賣方，沒有把 morning 或 here 當成角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

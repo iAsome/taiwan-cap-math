@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_161_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Two notices say: 'The morning class was moved to Room 3' and 'Room 3 will be cleaned after noon.' Which plan fits both?",
+  "options": [
+    "Go to the old room for the morning class.",
+    "Wait until after noon for the morning class.",
+    "Cancel the class because Room 3 is cleaned later.",
+    "Go to the morning class in Room 3."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "old room 已被新地點取代。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "morning class 不需等到中午後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "稍後清潔不代表早上不能上課或必須取消。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項依 moved to Room 3 前往新教室，且清潔在中午後才開始。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u23-s161-integrate-room-move-and-later-cleaning-notices",
+    "resolve-nonoverlapping-schedule-constraints"
+  ],
+  "representationType": "multi-notice-integration",
+  "misconceptionTargets": [
+    "treat-later-use-as-all-day-conflict"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩則被動通知分別提供早上新地點與中午後的清潔安排。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項按時間整合兩個事實，沒有把後續清潔誤作全天封閉。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

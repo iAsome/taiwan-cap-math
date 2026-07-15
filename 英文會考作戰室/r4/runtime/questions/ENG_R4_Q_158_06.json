@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_158_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The lights are turned off at ten every night. Which part is not needed to keep the rule clear?",
+  "options": [
+    "the lights",
+    "the name of the person who turns them off",
+    "at ten",
+    "every night"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the lights 指出受規則影響的設備，不能刪除。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "執行者身分不影響十點關燈的固定規則。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "at ten 是讀者需要的明確時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "every night 說明規則每天重複。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s158-remove-irrelevant-agent-from-light-rule",
+    "preserve-object-time-and-frequency"
+  ],
+  "representationType": "agent-relevance-selection",
+  "misconceptionTargets": [
+    "keep-agent-at-cost-of-rule-details"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "規則的核心是何物、何時、多久一次，不是輪值者姓名。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項可省略，因被動句仍完整傳達關燈安排。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

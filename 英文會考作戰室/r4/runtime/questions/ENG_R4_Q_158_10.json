@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_158_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A note says, 'Your package was sent this morning.' Which answer uses only the note?",
+  "options": [
+    "The package was sent by the shop owner.",
+    "The package was sent this morning, but the sender is not named.",
+    "The package arrived this morning.",
+    "The package was opened before it was sent."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "shop owner 是可能人物，但便條沒有證實。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二項完整保留寄出時間與未知寄件者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "sent 不等於 arrived，不能推出已送達。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中完全沒有開包裹的資訊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s158-bound-inference-from-package-sent-note",
+    "distinguish-sender-and-arrival-unknowns"
+  ],
+  "representationType": "safe-passive-inference",
+  "misconceptionTargets": [
+    "inflate-sent-into-arrived-or-named-sender"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "被動訊息能證明寄送動作，卻不提供寄件人或抵達結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把已知與未知分開，是唯一不超出便條內容的推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

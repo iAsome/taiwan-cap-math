@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_156_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S156"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student wrote 'The report is wrote in English.' Which change fixes is wrote?",
+  "options": [
+    "Change is to are.",
+    "Change wrote to written.",
+    "Take out in English.",
+    "Change report to reports."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "report 是單數，is 不需要改成 are。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "be 後要用 write 的過去分詞 written。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "in English 提供語言資訊，並非錯誤來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "改成 reports 會改變原意，仍未修正 wrote。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s156-repair-is-wrote-to-written",
+    "isolate-participle-error-from-agreement"
+  ],
+  "representationType": "targeted-passive-error-repair",
+  "misconceptionTargets": [
+    "repair-correct-be-instead-of-participle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "錯誤集中在 is 後的動詞形式，不在主詞或介系詞片語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成 The report is written in English，且只修改必要部分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

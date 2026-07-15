@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_157_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "These computers ___ during Friday classes.",
+  "options": [
+    "was used",
+    "are used",
+    "will used",
+    "using"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "was used 不和複數 computers 一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "are used 表示電腦在星期五課堂中固定被使用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "will used 缺少 be，且 Friday classes 不必然只指未來。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "using 沒有 be 動詞，無法完成句子。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s157-match-recurring-class-use-to-are-used",
+    "resolve-plural-agreement-and-schedule"
+  ],
+  "representationType": "scheduled-present-passive",
+  "misconceptionTargets": [
+    "use-singular-past-be-with-plural"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "these computers 要搭配 are，during Friday classes 描述常態用途。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保持 used 為過去分詞，而不是因 classes 改變動詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

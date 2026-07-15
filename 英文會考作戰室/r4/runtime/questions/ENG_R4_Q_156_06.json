@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_156_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S156"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The class sings this song every Friday. This song ___ every Friday.",
+  "options": [
+    "sings",
+    "is sung",
+    "is sang",
+    "singing"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "sings 會讓 song 成為唱歌的人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is sung 使用 sing 的過去分詞，保留歌曲被演唱。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is sang 把過去式 sang 誤作過去分詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "singing 缺少 be 動詞，也不能單獨完成句子。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s156-convert-song-object-with-sung",
+    "differentiate-sang-and-sung"
+  ],
+  "representationType": "irregular-active-passive-conversion",
+  "misconceptionTargets": [
+    "use-irregular-past-instead-of-participle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "this song 原本是 sings 的受詞，改寫後成為單數主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項的 sung 是正確不規則分詞，every Friday 不改變它。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

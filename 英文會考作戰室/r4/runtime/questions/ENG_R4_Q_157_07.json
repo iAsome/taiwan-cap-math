@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_157_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The photo ___ to every team next Monday.",
+  "options": [
+    "sent",
+    "was sent",
+    "will be sent",
+    "will sent"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "sent 單獨缺少限定動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "was sent 會表示照片已在過去寄出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "will be sent 正確對應 next Monday 的未來安排。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will sent 漏掉被動結構中的 be。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s157-compose-future-sent-photo-schedule",
+    "detect-missing-be-after-will"
+  ],
+  "representationType": "future-delivery-passive",
+  "misconceptionTargets": [
+    "drop-passive-auxiliary-in-future"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "照片是寄送的承受者，next Monday 又要求未來。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以 will 標未來、be sent 建立被動，三部分都不可省略。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

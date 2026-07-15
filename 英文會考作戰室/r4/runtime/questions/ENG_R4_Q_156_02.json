@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_156_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S156"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "These bags ___ by hand.",
+  "options": [
+    "is made",
+    "are made",
+    "are making",
+    "make"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is made 不和複數 these bags 一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "are made 表示這些袋子由手工製作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "are making 把 bags 變成正在製作的動作者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "make 是主動原形，沒有建立承受關係。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s156-agree-plural-bags-with-made",
+    "separate-made-participle-from-making"
+  ],
+  "representationType": "plural-passive-agreement-cloze",
+  "misconceptionTargets": [
+    "choose-be-from-original-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "these bags 是複數被動主詞，必須搭配 are。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項使用 make 的不規則過去分詞 made。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

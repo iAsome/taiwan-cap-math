@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_160_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The work is finished, so the team can go home. What does finished emphasize?",
+  "options": [
+    "The work's completed state",
+    "The name of the worker",
+    "A future plan to begin",
+    "A place called Finished"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "完成狀態使團隊能離開，正是句子焦點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有 by 片語或人物身分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is finished 表示已完成，不是未來才開始。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Finished 在此是分詞，不是地名。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s160-link-finished-work-state-to-team-departure",
+    "distinguish-result-state-from-future-action"
+  ],
+  "representationType": "result-state-inference",
+  "misconceptionTargets": [
+    "deny-prior-event-when-reading-state"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "so 後的回家結果建立在工作已完成的狀態上。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不否定先前曾有完成動作，只指出目前溝通焦點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

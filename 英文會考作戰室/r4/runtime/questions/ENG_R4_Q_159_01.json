@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_159_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This story was written ___ Nora.",
+  "options": [
+    "by",
+    "with",
+    "at",
+    "from"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "by 引入完成 written 的作者 Nora。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "with 通常引入工具，不能表達 Nora 是作者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "at 表示位置或時間，與作者角色不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "from 可表示來源，但不是此被動結構的動作者標記。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s159-insert-by-before-story-author",
+    "distinguish-agent-marker-from-tool-source-place"
+  ],
+  "representationType": "by-agent-preposition-cloze",
+  "misconceptionTargets": [
+    "use-with-for-human-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Nora 是能執行 writing 的人，應由 by 放回事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項形成 by Nora，清楚說明作品歸屬。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

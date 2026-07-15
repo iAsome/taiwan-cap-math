@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_158_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "No one saw what happened. A window was broken during the night. Which report uses only the known facts?",
+  "options": [
+    "A window was broken during the night.",
+    "Ben broke a window during the night.",
+    "A student broke the window for fun.",
+    "The wind must have broken the window."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一項只陳述窗戶被打破與時間，沒有虛構來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有人看見，不能指定 Ben。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原文沒有提供學生或動機的證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "風雖可能造成破壞，但 must have 超出已知事實。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s158-report-broken-window-with-unknown-agent",
+    "reject-invented-person-motive-and-cause"
+  ],
+  "representationType": "evidence-bounded-passive-report",
+  "misconceptionTargets": [
+    "invent-agent-to-complete-passive"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "被動句在動作者未知時能保留事件而不製造嫌疑人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項是唯一沒有添加人物、原因或確定語氣的報告。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

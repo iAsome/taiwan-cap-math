@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_161_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: Lunch is served at twelve in the hall. Where and when should students go for lunch?",
+  "options": [
+    "At twelve in the library",
+    "At one in the hall",
+    "At twelve in the hall",
+    "At one outside"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "時間正確但 library 不是公告地點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "hall 正確，時間卻被改成一點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三項同時保留 at twelve 與 in the hall。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時間和地點都不符合通知。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s161-combine-lunch-service-time-and-place",
+    "reject-partially-matching-notice-details"
+  ],
+  "representationType": "two-detail-notice-retrieval",
+  "misconceptionTargets": [
+    "select-option-with-only-one-matching-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "served 的動作者可省略，讀者仍能提取兩項實用資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項交叉核對時間與地點，沒有只抓到其中一個。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

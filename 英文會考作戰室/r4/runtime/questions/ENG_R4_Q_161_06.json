@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_161_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: The music room will be used for a meeting after three. Which plan does not use the room at the same time?",
+  "options": [
+    "Practice there at four.",
+    "Practice there before three.",
+    "Move the meeting into the hall without asking.",
+    "Enter during the meeting to use the piano."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "四點落在 after three 的會議使用時段。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "三點前不在公告限制的會議時段內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "學生無權自行更改會議地點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "會議期間進入彈琴仍造成使用衝突。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s161-schedule-practice-before-meeting-use",
+    "respect-after-three-boundary-without-overreach"
+  ],
+  "representationType": "facility-notice-scheduling",
+  "misconceptionTargets": [
+    "extend-or-ignore-notice-time-window"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "will be used 指教室三點後已有用途，不等於全天封閉。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項利用時間邊界安排練習，沒有改動公告內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

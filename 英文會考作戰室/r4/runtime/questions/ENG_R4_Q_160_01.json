@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_160_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The gate was locked by Sam at nine. What does the sentence report?",
+  "options": [
+    "Sam locked the gate at nine.",
+    "The gate had a new color.",
+    "Sam locks every gate as his usual job.",
+    "The gate had never been open."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "by Sam 與 at nine 共同指出 Sam 在九點完成鎖門。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "locked 不是顏色資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單一事件無法證明 Sam 的固定工作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "曾被鎖上不表示 gate 從未打開。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s160-paraphrase-locked-agent-time-event",
+    "reject-color-job-and-permanent-state"
+  ],
+  "representationType": "event-report-active-paraphrase",
+  "misconceptionTargets": [
+    "treat-all-participles-as-static"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "動作者與明確時間讓 locked 偏向動作報告。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項改為主動句後，人物、時間與事件方向都保持不變。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

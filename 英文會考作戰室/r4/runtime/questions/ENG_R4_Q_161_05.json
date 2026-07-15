@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_161_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: All library books must be returned by Friday. Which action follows the rule?",
+  "options": [
+    "Return every borrowed book no later than Friday.",
+    "Begin reading a new book after Friday.",
+    "Return one book only on Saturday.",
+    "Keep the books until someone asks."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "all 與 by Friday 要求每本借書最晚星期五歸還。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "公告談歸還期限，不是開始閱讀時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只還一本且延至星期六同時違反數量與期限。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "must 表示主動責任，不能無限期等待提醒。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s161-apply-all-books-friday-deadline",
+    "translate-passive-obligation-to-borrower-duty"
+  ],
+  "representationType": "deadline-rule-application",
+  "misconceptionTargets": [
+    "misread-by-as-on-or-after"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "被動規則把 books 放在焦點，實際責任落在借閱者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項正確處理 all 與 by 的兩個限制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -25,6 +25,7 @@ const UNITS = [
   { id: "ENG_R4_U20", firstSkill: 134 },
   { id: "ENG_R4_U21", firstSkill: 141 },
   { id: "ENG_R4_U22", firstSkill: 148 },
+  { id: "ENG_R4_U23", firstSkill: 155 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -676,6 +677,31 @@ test("U22 infinitive and gerund questions preserve form, actor, timeline, and me
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U22 duplicate ${label}`);
+});
+
+test("U23 passive questions preserve roles, time, evidence limits, state boundaries, and notice meaning", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U23");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.match(question.get("ENG_R4_Q_155_09").options[0], /did not pass to another person or thing/);
+  assert.equal(question.get("ENG_R4_Q_156_03").options[question.get("ENG_R4_Q_156_03").answerIndex], "is written");
+  assert.equal(question.get("ENG_R4_Q_157_04").options[question.get("ENG_R4_Q_157_04").answerIndex], "be seen");
+  assert.equal(question.get("ENG_R4_Q_158_01").options[question.get("ENG_R4_Q_158_01").answerIndex], "A window was broken during the night.");
+  assert.equal(question.get("ENG_R4_Q_158_08").options[question.get("ENG_R4_Q_158_08").answerIndex], "Who cleans the room");
+  assert.equal(question.get("ENG_R4_Q_159_05").options[question.get("ENG_R4_Q_159_05").answerIndex], "It is the tool used for cutting.");
+  assert.equal(question.get("ENG_R4_Q_159_07").options[question.get("ENG_R4_Q_159_07").answerIndex], "No, it marks the latest time.");
+  assert.match(question.get("ENG_R4_Q_160_10").options[question.get("ENG_R4_Q_160_10").answerIndex], /More information is needed/);
+  assert.match(question.get("ENG_R4_Q_160_11").options[question.get("ENG_R4_Q_160_11").answerIndex], /event.*state/);
+  assert.equal(question.get("ENG_R4_Q_161_08").options[question.get("ENG_R4_Q_161_08").answerIndex], "Their bags will be checked at the front door.");
+  assert.equal(question.get("ENG_R4_Q_161_12").options[question.get("ENG_R4_Q_161_12").answerIndex], "Go to the morning class in Room 3.");
+  const questionStems = new Set(source.questions.map((value) => value.stem));
+  assert(source.lectures.flatMap((value) => value.workedExamples).every((value) => !questionStems.has(value.prompt)), "U23 lecture prompt copied as a question");
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U23 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_159_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cake was cut by Mia with a knife. What role does the knife have?",
+  "options": [
+    "It is the tool used for cutting.",
+    "It is the person who cut the cake.",
+    "It is the cake's owner.",
+    "It is the place where Mia worked."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "with a knife 明確補充切蛋糕的工具。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "by Mia 已指出實際執行切割的人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有談蛋糕所有權。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "knife 是物品，不是工作地點。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s159-classify-knife-in-dual-phrase-passive",
+    "contrast-mia-agent-and-knife-instrument"
+  ],
+  "representationType": "agent-instrument-role-analysis",
+  "misconceptionTargets": [
+    "swap-by-agent-and-with-tool"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "同句同時展示 by 加動作者與 with 加工具。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項依介系詞功能及現實角色都能成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

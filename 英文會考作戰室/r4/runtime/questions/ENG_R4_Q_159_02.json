@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_159_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo opened the box with a key. The box was opened by Leo ___ a key.",
+  "options": [
+    "by",
+    "with",
+    "from",
+    "for"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "by 已用來引入開箱者 Leo，不能再把工具 key 當動作者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "with 正確標示 Leo 使用的鑰匙。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "from 表示來源，不能說明開箱工具。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "for 常表示目的或受益者，與 key 功能不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s159-complete-key-instrument-with",
+    "reserve-by-for-box-opener"
+  ],
+  "representationType": "agent-instrument-preposition-cloze",
+  "misconceptionTargets": [
+    "label-tool-as-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "主動句已顯示 Leo 是動作者，key 只提供方法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成 The box was opened by Leo with a key，人物與工具角色都清楚。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

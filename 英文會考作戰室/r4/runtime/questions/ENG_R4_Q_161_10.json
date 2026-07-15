@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_161_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: The hall is cleaned after the evening class. Which event comes first?",
+  "options": [
+    "The hall is cleaned.",
+    "The evening class ends.",
+    "The next morning begins.",
+    "A week without classes starts."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "cleaning 位於 after 關係的後段。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "晚間課程結束後才清潔，因此下課先發生。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "公告沒有把隔天早晨放進流程。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子也未要求先有整週停課。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s161-order-evening-class-before-hall-cleaning",
+    "read-after-as-two-event-sequence"
+  ],
+  "representationType": "notice-event-order-reading",
+  "misconceptionTargets": [
+    "reverse-after-sequence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "after the evening class 明確建立課程先、清潔後的順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只使用公告提供的兩件事，不再臆測收椅時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

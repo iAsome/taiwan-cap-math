@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_160_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The door was closed by the guard at six. The door stayed closed all night. What is different?",
+  "options": [
+    "Both only name the door's color.",
+    "The first is a state; the second names who closed it.",
+    "The first reports an event; the second describes the state after it.",
+    "Both say the guard stayed all night."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "closed 與 stayed closed 都不涉及顏色。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第一句有 by the guard，第二句才以 stayed 描述狀態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三項依動作者、時間及 stayed 正確區分兩種焦點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第二句只說門持續關閉，沒有說 guard 留下。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u23-s160-contrast-closing-event-with-remained-state",
+    "sequence-action-and-result-without-agent-extension"
+  ],
+  "representationType": "paired-event-state-contrast",
+  "misconceptionTargets": [
+    "collapse-event-and-result-into-one-function"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩句連在一起呈現先發生關門，再延續關閉狀態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項尊重事件與結果的時間順序，不把人物狀態加入原文。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

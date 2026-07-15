@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_158_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The road was closed after the heavy rain. What does the sentence tell a driver?",
+  "options": [
+    "Who made the final decision",
+    "How long the workers talked",
+    "The road could not be used after the rain.",
+    "Which driver first saw the rain"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句子沒有交代決策者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有任何討論時間或工作人員資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "was closed 告知道路在大雨後無法通行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原文未提到特定駕駛或最早目擊者。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s158-extract-road-status-without-closer",
+    "separate-operational-fact-from-decision-maker"
+  ],
+  "representationType": "omitted-agent-focus-inference",
+  "misconceptionTargets": [
+    "demand-agent-before-understanding-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "省略動作者不妨礙駕駛理解道路狀況。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只把 closed 與 after the heavy rain 轉成可採取行動的資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_157_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The new bridge ___ next year.",
+  "options": [
+    "was finished",
+    "finishes",
+    "will be finished",
+    "is finishing"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "was finished 表示橋已在過去完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "finishes 使 bridge 成為完成其他事物的動作者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "will be finished 對應 next year 的未來被動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is finishing 把橋寫成主動進行完成動作。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s157-build-future-passive-for-bridge-completion",
+    "separate-project-patient-from-builder"
+  ],
+  "representationType": "future-passive-cloze",
+  "misconceptionTargets": [
+    "omit-be-after-will"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "next year 表示工程完成仍在未來。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項包含 will be，finished 則指出橋是被完成的對象。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

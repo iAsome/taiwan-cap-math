@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_155_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "After lunch, Amy called Leo from the office. Who received the call?",
+  "options": [
+    "Lunch",
+    "Amy",
+    "The office",
+    "Leo"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "lunch 只位於時間片語，不會接電話。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Amy 是發出電話的人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the office 說明 Amy 所在位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Leo 是 called 的受詞，因此收到電話。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s155-strip-time-place-to-find-call-receiver",
+    "retain-object-after-called"
+  ],
+  "representationType": "background-filtered-role-reading",
+  "misconceptionTargets": [
+    "let-background-phrases-control-role"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "略過 After lunch 與 from the office，核心句剩下 Amy called Leo。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是通話動作的接收者，並未把地點誤判成人物。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

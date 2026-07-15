@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_157_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The mountain can ___ from the train on a clear day.",
+  "options": [
+    "sees",
+    "is seen",
+    "seen",
+    "be seen"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "sees 會讓 mountain 成為觀看者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "can is seen 把兩個限定形式並列，結構不成立。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "seen 前缺少情態被動所需的 be。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "be seen 正確接在 can 後，表示山能被看見。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s157-complete-modal-passive-visibility",
+    "insert-base-be-after-can"
+  ],
+  "representationType": "modal-passive-form-cloze",
+  "misconceptionTargets": [
+    "use-finite-be-after-modal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "can 已經是情態動詞，後面只能接原形 be。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓 train 上的人是省略的觀看者，mountain 保持承受角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

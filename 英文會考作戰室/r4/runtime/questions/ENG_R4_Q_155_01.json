@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_155_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia carried the box upstairs. Who carried something?",
+  "options": [
+    "Mia",
+    "The box",
+    "The stairs",
+    "No one"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Mia 是 carried 的主詞，執行搬運動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the box 是被搬運的物品，不是搬運者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "upstairs 說明移動方向，並非動作者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子明確提供 Mia，不能判為無人執行。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s155-locate-carrier-in-upstairs-event",
+    "separate-agent-object-direction"
+  ],
+  "representationType": "active-agent-identification",
+  "misconceptionTargets": [
+    "treat-nearest-noun-as-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "核心結構是 Mia carried the box，主詞與動作者一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項能回答誰做了 carrying，其他項只表示物品、方向或否定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

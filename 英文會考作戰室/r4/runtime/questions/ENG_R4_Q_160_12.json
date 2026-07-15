@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_160_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The room was ready. The chairs were placed in a circle by the class at noon. What does the second sentence add?",
+  "options": [
+    "The chairs' color",
+    "A rule that circles are always better",
+    "The idea that the chairs moved themselves",
+    "A finished action, the class that did it, and the time"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有顏色資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一次排列不構成所有場合的規則。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "by the class 排除 chairs 自行移動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "were placed、by the class、at noon 共同建立完成的安排事件。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u23-s160-differentiate-ready-state-from-placement-event",
+    "integrate-agent-time-and-arrangement-result"
+  ],
+  "representationType": "cross-sentence-state-event-integration",
+  "misconceptionTargets": [
+    "read-event-as-static-description-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "前句 ready 是狀態，後句補出形成部分準備結果的具體行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項整合動作者與時間，沒有把圓形排列誇大成普遍原則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

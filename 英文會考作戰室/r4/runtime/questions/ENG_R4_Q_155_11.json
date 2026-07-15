@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_155_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy gave Ben the key to the art room. Which fact is supported?",
+  "options": [
+    "Amy received the key from Ben.",
+    "The art room gave away a key.",
+    "Ben received the key from Amy.",
+    "The key opened the room by itself."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "原句中 Amy 是給予者，不是接收者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "art room 只說明 key 的用途，不能給東西。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Ben 是 gave 後的接收者，key 來自 Amy。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有說鑰匙自行開門。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u23-s155-reconstruct-transfer-roles-from-gave",
+    "separate-key-purpose-from-agenthood"
+  ],
+  "representationType": "transfer-role-inference",
+  "misconceptionTargets": [
+    "reverse-giver-and-recipient"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "gave 的角色依序是 Amy、Ben、the key，分別為給予者、接收者與物品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留轉移方向，也不把 to the art room 誤當目的動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_161_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: The east road is closed. Please use the west road. What should a driver do?",
+  "options": [
+    "Wait for the road worker's name.",
+    "Drive on the east road slowly.",
+    "Take the west road.",
+    "Close both roads."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "動作者姓名不是改道前提。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "closed 表示東側道路不能使用，不是減速即可。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "公告明確要求改走 west road。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "駕駛沒有權責關閉兩條道路。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s161-follow-alternate-road-under-closure",
+    "ignore-irrelevant-closer-identity"
+  ],
+  "representationType": "closure-and-alternative-route",
+  "misconceptionTargets": [
+    "treat-agent-omission-as-action-blocker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第一句說明受影響道路，第二句直接提供替代路線。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項整合狀況與指示，不因省略封路者而停下判讀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

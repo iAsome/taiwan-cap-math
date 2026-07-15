@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_161_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: The game was moved to Saturday because of rain. What happened to the game?",
+  "options": [
+    "It will never be held.",
+    "It moved itself into a building.",
+    "It ended before the rain.",
+    "Its day changed to Saturday."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "moved 不等於永遠取消。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "game 是被調整的活動，不是自行移動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "公告沒有說比賽已結束。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "to Saturday 明確表示日期改到星期六。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s161-interpret-rain-game-date-change",
+    "distinguish-reschedule-from-cancel-or-motion"
+  ],
+  "representationType": "rescheduled-event-notice-reading",
+  "misconceptionTargets": [
+    "equate-moved-event-with-canceled-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "because of rain 提供改期原因，to Saturday 提供新日期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只陳述日程變更，不把 moved 擴大解讀成取消。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_155_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A truck hit the sign near the bridge. What received the hit?",
+  "options": [
+    "The truck",
+    "The sign",
+    "The bridge",
+    "The road"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "truck 是造成碰撞的主詞，不是承受者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "the sign 是 hit 後的受詞，承受卡車碰撞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "bridge 只說明事件附近的地點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "road 沒有出現在原句，也不是可推得的承受者。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s155-identify-hit-receiver-near-bridge",
+    "filter-prepositional-location-from-core-roles"
+  ],
+  "representationType": "collision-receiver-identification",
+  "misconceptionTargets": [
+    "reverse-action-direction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先略過 near the bridge，核心句是 A truck hit the sign。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項直接承接 hit 的作用，角色與句子位置都吻合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

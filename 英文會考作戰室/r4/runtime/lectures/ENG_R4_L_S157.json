@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S157",
+  "subject": "english",
+  "unitId": "ENG_R4_U23",
+  "skillId": "ENG_R4_S157",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S156"
+  ],
+  "objectives": [
+    "依現在、過去、未來與情態語意調整被動句的 be 動詞。",
+    "保留主要動詞的過去分詞，避免把時間標記重複放在兩個位置。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S157_SEC_01",
+      "title": "被動句的時間由 be 動詞承擔",
+      "content": "The room is cleaned every day 是現在習慣，The room was cleaned yesterday 是過去事件。cleaned 都維持過去分詞，時間差別放在 is 與 was；不能因 yesterday 再把 cleaned 任意改成其他形式。"
+    },
+    {
+      "id": "ENG_R4_L_S157_SEC_02",
+      "title": "未來被動使用 will be 加過去分詞",
+      "content": "The letter will be sent tomorrow 表示信明天才會被寄出。will 後用 be 原形，再接 sent；漏掉 be 的 will sent 和改用 will be sending 都不是這個未來被動結構。"
+    },
+    {
+      "id": "ENG_R4_L_S157_SEC_03",
+      "title": "情態動詞後保留 be 原形",
+      "content": "The answer can be found on this page 與 The door must be kept closed 都採情態動詞加 be 再接過去分詞。can、must 已占據情態位置，因此不能改成 can is found 或 must was kept。"
+    },
+    {
+      "id": "ENG_R4_L_S157_SEC_04",
+      "title": "時間線索要和事件意義相互驗證",
+      "content": "last night 通常引出 was 或 were，every morning 常用 is 或 are，next week 可用 will be。不過不能只抓單一時間字；還要確認主詞單複數與句子是在描述習慣、已發生事件或未來安排。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S157_EX_01",
+      "prompt": "The windows ___ yesterday morning. (were cleaned / are cleaned)",
+      "steps": [
+        "由 yesterday morning 判定過去時間。",
+        "windows 為複數，選 were。",
+        "接 clean 的過去分詞 cleaned。"
+      ],
+      "answer": "were cleaned",
+      "why": "清理發生在昨天，且 windows 是複數，所以過去被動要用 were cleaned。are cleaned 會較像現在習慣，無法對應明確的過去時間。"
+    },
+    {
+      "id": "ENG_R4_L_S157_EX_02",
+      "prompt": "The results ___ tomorrow. (will be shared / were shared)",
+      "steps": [
+        "由 tomorrow 找出未來安排。",
+        "在 will 後保留 be 原形。",
+        "接 share 的過去分詞 shared。"
+      ],
+      "answer": "will be shared",
+      "why": "結果尚未公布，tomorrow 要用未來被動 will be shared。were shared 會表示過去已公布，和時間線索及事件狀態都衝突。"
+    },
+    {
+      "id": "ENG_R4_L_S157_EX_03",
+      "prompt": "This picture can ___ from the back of the room. (be seen / is seen)",
+      "steps": [
+        "辨認 can 是情態動詞。",
+        "can 後接 be 原形。",
+        "使用 see 的過去分詞 seen。"
+      ],
+      "answer": "be seen",
+      "why": "畫是被看見的對象，can 後需接 be seen。can is seen 同時放入情態動詞與限定 be 動詞，結構不成立。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "被動句不論時間都固定使用 is 加過去分詞。",
+      "whyWrong": "is 只能配合部分現在時單數主詞，無法涵蓋過去或未來。",
+      "correction": "先判時間，再依主詞選 is、are、was、were 或 will be。"
+    },
+    {
+      "belief": "will 後直接接過去分詞就能形成未來被動。",
+      "whyWrong": "未來被動仍需要 be 連接 will 與過去分詞。",
+      "correction": "完整寫成 will be sent、will be opened 等形式。"
+    },
+    {
+      "belief": "can 後面的 be 要依主詞改成 is 或 are。",
+      "whyWrong": "情態動詞後只能接原形，be 不隨主詞變化。",
+      "correction": "使用 can be found，不寫 can is found。"
+    },
+    {
+      "belief": "看到 yesterday 就把句中每個動詞都改成過去式。",
+      "whyWrong": "被動句只由 was 或 were 標記過去，後面仍是過去分詞。",
+      "correction": "把時態與分詞功能分開檢查。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "every day 的複數主詞通常使用哪個現在被動 be 動詞？",
+      "answer": "are",
+      "reason": "複數主詞的現在被動採 are 加過去分詞。"
+    },
+    {
+      "prompt": "will be sent 中，哪個部分標示未來？",
+      "answer": "will",
+      "reason": "will 提供未來時間，be sent 建立被動。"
+    },
+    {
+      "prompt": "must 後可寫 is kept 嗎？",
+      "answer": "不可",
+      "reason": "must 後需接原形 be，形成 must be kept。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

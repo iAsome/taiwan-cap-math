@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_155_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The students moved the chairs into the hall. What was moved?",
+  "options": [
+    "The students",
+    "The hall",
+    "The chairs",
+    "The lesson"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "students 是 moved 的動作者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "hall 是移動目的地，不是被搬動的東西。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the chairs 承受 moved 並進入大廳。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "lesson 未出現在句子中，沒有文本依據。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s155-track-moved-object-to-hall",
+    "exclude-destination-from-patient-role"
+  ],
+  "representationType": "movement-patient-identification",
+  "misconceptionTargets": [
+    "confuse-destination-with-moved-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "into the hall 說明 chairs 的終點，不能把 hall 當受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項在動詞後直接承接移動作用，也符合複數語意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

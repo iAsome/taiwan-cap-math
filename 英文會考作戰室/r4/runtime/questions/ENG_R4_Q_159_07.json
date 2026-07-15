@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_159_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Return the book by Friday. Does by tell who returns the book?",
+  "options": [
+    "Yes, Friday returns it.",
+    "Yes, the book acts on Friday.",
+    "No, it marks the latest time.",
+    "No, it marks the tool used."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Friday 是日期，不可能執行 return。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "book 也沒有對 Friday 執行動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "by Friday 表示最晚在星期五以前完成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "日期不是歸還書本使用的工具。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s159-disambiguate-by-friday-as-deadline",
+    "reject-date-as-agent-or-tool"
+  ],
+  "representationType": "by-function-contrast-deadline",
+  "misconceptionTargets": [
+    "treat-every-by-phrase-as-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "相同拼字 by 會依後接內容改變功能，不能一律判動作者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以時間期限解讀，符合祈使句目的。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

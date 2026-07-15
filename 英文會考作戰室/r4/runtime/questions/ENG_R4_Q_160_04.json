@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_160_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The hall was cleaned by the students at five. Which words best show that this is an event report?",
+  "options": [
+    "the hall",
+    "was",
+    "cleaned",
+    "by the students at five"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "hall 只指出承受清潔的地方。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "was 可出現在事件或過去狀態描述中，單獨不夠。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "cleaned 也能表示清潔後的狀態。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "動作者與時間一起指出誰在何時完成清潔。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s160-identify-agent-time-as-event-cues",
+    "compare-weak-form-cues-with-contextual-evidence"
+  ],
+  "representationType": "event-cue-selection",
+  "misconceptionTargets": [
+    "classify-from-auxiliary-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "by the students 回答誰做，at five 回答何時做。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項提供最具區辨力的事件證據，而非只看 be + p.p. 外形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

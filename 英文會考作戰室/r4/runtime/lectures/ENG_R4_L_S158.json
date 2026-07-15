@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S158",
+  "subject": "english",
+  "unitId": "ENG_R4_U23",
+  "skillId": "ENG_R4_S158",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S157"
+  ],
+  "objectives": [
+    "判斷被動句何時可以不寫動作者。",
+    "省略未知、顯而易見或不重要的動作者，同時避免補入文本沒有提供的人。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S158_SEC_01",
+      "title": "動作者未知時不必猜測",
+      "content": "My bike was taken last night 只報告腳踏車被拿走；若沒有人看到是誰做的，就不應自行加 by a man 或 by a student。被動句讓說話者在不知道動作者時仍能清楚交代事件。"
+    },
+    {
+      "id": "ENG_R4_L_S158_SEC_02",
+      "title": "動作者顯而易見時可省略",
+      "content": "The test papers will be given out at nine 的重點是考卷發放時間。即使大家可推測由老師或監考人員發放，通知通常不必寫出動作者，因為這項資訊不影響讀者行動。"
+    },
+    {
+      "id": "ENG_R4_L_S158_SEC_03",
+      "title": "焦點在結果或承受者時可省略",
+      "content": "The road was closed after the heavy rain 關心的是道路無法通行及其時間背景，不一定需要知道由哪個單位關閉。若文章後續要追究決策者，才有補出動作者的理由。"
+    },
+    {
+      "id": "ENG_R4_L_S158_SEC_04",
+      "title": "省略不等於句子沒有動作來源",
+      "content": "A window was broken 仍表示某個力量造成破裂，只是句子沒有說明來源。閱讀時應把未知保留為未知，不能把未寫出的動作者當成不存在，也不能把承受者誤判為自行完成動作。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S158_EX_01",
+      "prompt": "No one saw what happened. A classroom window was broken during the night. Should the report say who did it?",
+      "steps": [
+        "確認報告明說沒有人看見。",
+        "找出已知事實是窗戶破裂。",
+        "不補入無證據的動作者。"
+      ],
+      "answer": "No.",
+      "why": "報告只知道窗戶在夜間被打破，不知道誰或什麼造成。省略動作者能保留事實邊界；任意加上某個人會把猜測寫成證據。"
+    },
+    {
+      "id": "ENG_R4_L_S158_EX_02",
+      "prompt": "At school, lunch is served at twelve. What information matters most to students?",
+      "steps": [
+        "辨認公告焦點是 lunch。",
+        "找出讀者需要的時間 twelve。",
+        "判斷服務人員身分不影響用餐。"
+      ],
+      "answer": "Lunch is available at twelve.",
+      "why": "學生需要知道午餐在十二點供應，而不是哪位工作人員端出餐點。省略顯而易見或不重要的動作者，能讓公告把焦點放在實用資訊。"
+    },
+    {
+      "id": "ENG_R4_L_S158_EX_03",
+      "prompt": "The lost wallet was found near the gate, but the note does not name a finder. What can the reader learn?",
+      "steps": [
+        "讀取確定結果 was found。",
+        "確認地點 near the gate。",
+        "不推測找回錢包的人。"
+      ],
+      "answer": "The wallet was found; who found it is not known or important here.",
+      "why": "便條證明錢包已在門口附近找到，卻沒有提供發現者身分。讀者只能保留這個空缺，不能據此認定是老師、學生或警衛找到。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "被動句沒有 by 片語，就代表沒有人做這件事。",
+      "whyWrong": "動作者可能未知、明顯或與訊息目的無關。",
+      "correction": "把未寫出與不存在分開理解。"
+    },
+    {
+      "belief": "為了讓句子完整，應替每個被動句補一位可能的動作者。",
+      "whyWrong": "推測的人物可能沒有文本證據，反而改變事實。",
+      "correction": "只有來源提供或溝通目的需要時才補動作者。"
+    },
+    {
+      "belief": "公告省略動作者，是因為作者忘了寫。",
+      "whyWrong": "公告常刻意突出時間、地點、規則或受影響事物。",
+      "correction": "先判斷讀者真正需要哪項資訊。"
+    },
+    {
+      "belief": "省略動作者後，承受者就變成動作者。",
+      "whyWrong": "主詞位置改變不會改變它承受動作的語意角色。",
+      "correction": "仍以過去分詞和事件意思確認誰受到作用。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "沒有人知道誰拿走雨傘時，是否必須寫 by 片語？",
+      "answer": "不必",
+      "reason": "未知的動作者不應由寫作者猜測補入。"
+    },
+    {
+      "prompt": "The library will be opened at eight 的公告焦點可能是什麼？",
+      "answer": "開放時間",
+      "reason": "讀者需要知道八點可進入，開門者通常不重要。"
+    },
+    {
+      "prompt": "被動句省略動作者後，事件還有造成來源嗎？",
+      "answer": "有可能",
+      "reason": "句子只是沒有指明來源，並非否定來源存在。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

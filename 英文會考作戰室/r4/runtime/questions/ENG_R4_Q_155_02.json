@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_155_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben opened the window before class. What received the action?",
+  "options": [
+    "Ben",
+    "The window",
+    "The class",
+    "The time"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Ben 主動執行 opened，不是承受者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "the window 是 Ben 打開的對象。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "class 出現在時間片語中，沒有受到 open。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "before 只標示時間關係，不構成物件角色。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s155-find-opened-receiver-before-class",
+    "exclude-time-noun-from-object-role"
+  ],
+  "representationType": "active-receiver-identification",
+  "misconceptionTargets": [
+    "mistake-background-noun-for-receiver"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "opened 把動作從 Ben 指向 the window。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一能接在 Ben opened 之後作受詞的實際對象。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

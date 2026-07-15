@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_157_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The missing bag ___ near the bus stop yesterday.",
+  "options": [
+    "was found",
+    "is found",
+    "will be found",
+    "finds"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "was found 同時符合單數 bag、過去時間與被尋獲結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is found 較像現在習慣或目前敘述，未對應 yesterday。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "will be found 表示尚未找到，與句中地點資訊不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "finds 會把 bag 寫成尋找者。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s157-anchor-found-bag-to-yesterday",
+    "avoid-future-result-contradiction"
+  ],
+  "representationType": "past-result-passive-cloze",
+  "misconceptionTargets": [
+    "confuse-found-form-with-active-present"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "yesterday 把 find 事件放在過去，near the bus stop 提供發現地點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項採 find 的過去分詞 found，沒有另加未知發現者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

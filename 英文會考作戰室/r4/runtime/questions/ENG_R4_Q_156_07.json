@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_156_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S156"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The office sends these letters on Monday. These letters ___ on Monday.",
+  "options": [
+    "send",
+    "is sent",
+    "are sent",
+    "are sending"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "send 是主動原形，沒有配合複數主詞形成被動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is sent 的 is 不和 these letters 一致。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "are sent 正確表示信件被寄出。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are sending 把信件當成正在寄東西的動作者。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s156-build-plural-sent-passive-from-office",
+    "maintain-letter-patient-role"
+  ],
+  "representationType": "plural-active-passive-rewrite",
+  "misconceptionTargets": [
+    "singular-be-with-plural-patient"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "letters 從主動句受詞移到被動句主詞位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項由複數 are 和 sent 組成，時間仍由 on Monday 補充。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_158_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The test papers will be given out at nine. What should students learn from this notice?",
+  "options": [
+    "The papers become available at nine.",
+    "A named student must give out every paper.",
+    "The test ends at nine.",
+    "The papers were given out yesterday."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "will be given out at nine 指出考卷九點開始發放。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "公告沒有指定學生負責發卷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "given out 不是考試結束的意思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will 與 at nine 表示未來安排，不是昨天事件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s158-interpret-paper-distribution-with-obvious-agent",
+    "avoid-assigning-unnamed-student-duty"
+  ],
+  "representationType": "obvious-agent-notice-reading",
+  "misconceptionTargets": [
+    "invent-specific-agent-from-school-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "讀者需要的是考卷何時取得，發放者可由情境推知或不重要。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項忠實轉述時間與結果，沒有補入責任人。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

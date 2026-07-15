@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_159_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Both Mia and Nora paint. The blue picture was painted by Nora. Why do we need by Nora?",
+  "options": [
+    "It tells when the picture was painted.",
+    "It tells which of the two artists painted it.",
+    "It explains what color Nora had on.",
+    "It shows where Mia stood."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nora 是人物，不提供作畫時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "前文有兩位畫者，by Nora 才能指出藍畫作者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "blue 修飾 picture，沒有描述 Nora 衣著。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中不含 Mia 的位置資訊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s159-justify-agent-retention-under-two-artists",
+    "link-by-nora-to-source-disambiguation"
+  ],
+  "representationType": "necessary-agent-discourse-analysis",
+  "misconceptionTargets": [
+    "delete-informative-by-phrase"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若刪掉 by Nora，讀者無法在兩個候選人中判定作者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項說明此 by 片語不是多餘資訊，而是解決來源對比。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

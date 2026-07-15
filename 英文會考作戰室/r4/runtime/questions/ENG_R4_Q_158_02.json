@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_158_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "School notice: Lunch is served at twelve. Why is no worker named?",
+  "options": [
+    "No one prepares lunch.",
+    "The serving time is the useful information.",
+    "Students must guess whether lunch exists.",
+    "The word served means students cook it."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "被動句沒有否定有人準備或供應午餐。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "公告要讓學生知道十二點可用餐，服務者身分不重要。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is served 已確認午餐會供應，無須猜測是否存在。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "served 表示午餐受到供應，不代表學生負責烹煮。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s158-explain-agent-omission-in-lunch-notice",
+    "prioritize-reader-relevant-service-time"
+  ],
+  "representationType": "notice-agent-omission-rationale",
+  "misconceptionTargets": [
+    "equate-omitted-agent-with-no-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "通知選擇省略可預期的工作人員，把版面留給時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項能說明資訊焦點，也沒有把省略誤解為無人做事。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

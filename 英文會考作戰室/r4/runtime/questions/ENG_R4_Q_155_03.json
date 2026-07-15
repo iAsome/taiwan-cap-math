@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_155_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The dog followed Nora to the park. What happened?",
+  "options": [
+    "Nora followed the dog.",
+    "The park followed Nora.",
+    "Nora was the person the dog followed.",
+    "Nora and the dog stayed home."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這一項交換了動作者與承受者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "park 是目的地，不能執行 followed。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the dog 是跟隨者，Nora 是被跟隨的人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原句提到前往 park，並非兩者留在家中。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s155-map-following-roles-to-paraphrase",
+    "reject-role-reversal-and-location-agent"
+  ],
+  "representationType": "active-role-paraphrase",
+  "misconceptionTargets": [
+    "reverse-agent-and-receiver"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "followed 前的 the dog 決定跟隨動作的來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留原來的角色與移動方向，沒有增添 Nora 必須走在何處。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

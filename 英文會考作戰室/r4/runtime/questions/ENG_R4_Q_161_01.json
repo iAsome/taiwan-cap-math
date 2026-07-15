@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_161_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: The library will be closed on Friday. What should a student plan for?",
+  "options": [
+    "Use the library on another day.",
+    "Meet the person who closes it.",
+    "Return only books with red covers.",
+    "Wait inside the library all Friday."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Friday 無法使用圖書館，改日辦理最符合公告。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "關館者身分不是學生需處理的資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "公告沒有按書本顏色限制歸還。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "closed 表示不能在館內等候使用。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s161-plan-around-friday-library-closure",
+    "exclude-agent-color-and-inside-waiting"
+  ],
+  "representationType": "closure-notice-action-inference",
+  "misconceptionTargets": [
+    "seek-agent-instead-of-operational-impact"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "通知把受影響地點與日期放在最前，要求讀者調整安排。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只根據關館日期行動，沒有增加不存在的規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

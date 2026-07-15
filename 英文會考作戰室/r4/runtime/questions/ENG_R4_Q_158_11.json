@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_158_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The tables were moved before the meeting. Which added words tell who moved them rather than when?",
+  "options": [
+    "before noon",
+    "after lunch",
+    "by the art team",
+    "during the break"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "before noon 只補充時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "after lunch 仍是時間背景。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "by the art team 指出搬桌子的團體。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "during the break 說明事件發生時段。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u23-s158-distinguish-agent-addition-from-time-phrases",
+    "test-team-capacity-to-move-tables"
+  ],
+  "representationType": "agent-phrase-versus-time-phrase",
+  "misconceptionTargets": [
+    "treat-any-by-or-time-phrase-as-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "原被動句可不寫搬運者，但題目要求辨認能補出動作者的片語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的 team 能執行 moved，其餘三項都只定位時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

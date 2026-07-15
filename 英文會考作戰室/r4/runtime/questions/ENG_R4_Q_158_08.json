@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_158_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The room is cleaned every day. What cannot be learned from this sentence alone?",
+  "options": [
+    "The room receives cleaning",
+    "Cleaning happens daily",
+    "The sentence focuses on the room",
+    "Who cleans the room"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is cleaned 明確把 room 當成承受者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "every day 提供每日頻率。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "room 位在主詞位置，確實是句子焦點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "句中沒有 by 片語，無法知道清潔者。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s158-isolate-unknown-cleaner-from-daily-passive",
+    "inventory-known-focus-frequency-patient"
+  ],
+  "representationType": "passive-information-boundary",
+  "misconceptionTargets": [
+    "assume-routine-agent-from-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "一般日常工作可以省略執行者，並不影響頻率資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是唯一沒有被句中形式或時間詞支持的內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

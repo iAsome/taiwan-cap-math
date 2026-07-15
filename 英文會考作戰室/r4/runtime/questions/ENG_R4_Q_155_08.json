@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_155_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cat followed Sam across the yard. What role does Sam have?",
+  "options": [
+    "He is the place they crossed.",
+    "He is the animal that followed.",
+    "He is not part of the event.",
+    "He is the person being followed."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "yard 才是被穿越的地方，Sam 不是地點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the cat 是執行 followed 的動物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Sam 是 followed 的受詞，明確參與事件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Sam 位在 followed 後，是被貓跟隨的人。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s155-assign-followed-person-role-across-yard",
+    "resist-animacy-based-agent-switch"
+  ],
+  "representationType": "object-role-description",
+  "misconceptionTargets": [
+    "assume-human-is-always-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "across the yard 只補充路徑，角色核心仍是 the cat followed Sam。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項沒有因 Sam 是人就自動把他改成動作者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

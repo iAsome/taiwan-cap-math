@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_158_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The lost key was found under a desk. What do we still not know?",
+  "options": [
+    "Whether the key exists",
+    "Where the key was found",
+    "Whether the key is lost now",
+    "Who found the key"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the lost key 明確是存在的物品。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "under a desk 已提供尋獲地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "was found 表示它已不再處於未尋獲狀態。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "句子省略 finder，因此無法確定是誰找到。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s158-identify-missing-finder-information",
+    "retain-known-key-result-and-location"
+  ],
+  "representationType": "missing-information-analysis",
+  "misconceptionTargets": [
+    "treat-omitted-agent-as-missing-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "被動句提供結果和地點，卻刻意保留動作者空缺。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項區分未提供的資訊，沒有否定尋獲事件本身。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_159_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Two teams made posters. This poster was made by the green team. What do the words by the green team tell us?",
+  "options": [
+    "They give the time.",
+    "They tell what the poster is made of.",
+    "They tell which team made this poster.",
+    "They say where the poster hangs."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "片語沒有時間詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "green 描述 team，不是海報材料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "by the green team 從兩隊中指出實際製作者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有任何張貼地點。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s159-use-by-team-to-resolve-competing-makers",
+    "exclude-time-material-and-location-functions"
+  ],
+  "representationType": "by-phrase-discourse-function",
+  "misconceptionTargets": [
+    "ignore-agent-contrast-value"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "有多個可能來源時，by 片語提供必要對比。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項解釋其資訊價值，並未把顏色誤當材料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

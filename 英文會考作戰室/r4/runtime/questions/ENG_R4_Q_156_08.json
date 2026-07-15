@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_156_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S156"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben rides the blue bike to school. The blue bike ___ by Ben.",
+  "options": [
+    "rides",
+    "is rode",
+    "riding",
+    "is ridden"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "rides 會把 bike 當成騎乘者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is rode 使用一般過去式 rode，不是過去分詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "riding 缺少 be，也沒有表明車承受騎乘。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "is ridden 採 ride 的過去分詞 ridden，角色正確。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s156-form-ridden-passive-for-bike",
+    "preserve-rider-in-by-phrase"
+  ],
+  "representationType": "irregular-ridden-passive-conversion",
+  "misconceptionTargets": [
+    "use-rode-after-be"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "blue bike 原本是 rides 的受詞，改寫後用單數 is。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 Ben 為 by 片語中的騎車者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

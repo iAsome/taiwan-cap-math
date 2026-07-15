@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S155",
+  "subject": "english",
+  "unitId": "ENG_R4_U23",
+  "skillId": "ENG_R4_S155",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S154"
+  ],
+  "objectives": [
+    "從主動句辨認誰執行動作，以及誰或什麼承受動作。",
+    "依動詞與句子結構判讀角色，不把第一個人物或最近的名詞一律當成動作者。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S155_SEC_01",
+      "title": "主動句把動作者放在主詞位置",
+      "content": "Mia opened the door 中，Mia 主動執行 opened，所以是動作者；the door 因為受到開門這個動作影響，是承受者。先找主要動詞，再問誰做這件事，通常比只照單字排列猜角色可靠。"
+    },
+    {
+      "id": "ENG_R4_L_S155_SEC_02",
+      "title": "受詞指出動作落在誰或什麼上",
+      "content": "The dog followed Ben 裡，the dog 是跟隨者，Ben 是被跟隨的人。承受者不一定受傷或改變，只要動作指向它，就可以是受詞；因此 follow、call、visit 等動詞也能建立動作者與承受者。"
+    },
+    {
+      "id": "ENG_R4_L_S155_SEC_03",
+      "title": "修飾語不會搶走核心角色",
+      "content": "After lunch, Amy carried the boxes to the car 中，時間片語 After lunch 和地點片語 to the car 都提供背景。真正的角色仍由 Amy carried the boxes 決定：Amy 搬運，boxes 被搬運。"
+    },
+    {
+      "id": "ENG_R4_L_S155_SEC_04",
+      "title": "有些動詞沒有承受者",
+      "content": "Leo slept well 只有 Leo 執行 sleep，後面沒有承受動作的受詞。判讀時不能為了湊出兩個角色而虛構承受者；要先確認主要動詞在該句是否真的把動作傳到另一個人或事物。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S155_EX_01",
+      "prompt": "Nora washed the cups. Who did the washing, and what was washed?",
+      "steps": [
+        "找出主要動詞 washed。",
+        "在動詞前找執行者 Nora。",
+        "在動詞後確認承受者 the cups。"
+      ],
+      "answer": "Nora did the washing; the cups were washed.",
+      "why": "washed 表示清洗，Nora 位於主詞位置並完成動作；the cups 是洗的對象。不能因 cups 是複數或靠近句尾，就把它誤認成動作者。"
+    },
+    {
+      "id": "ENG_R4_L_S155_EX_02",
+      "prompt": "The strong wind closed the window. What caused the window to close?",
+      "steps": [
+        "辨認 closed 是主要動詞。",
+        "確認 the strong wind 位在動詞前。",
+        "把 the window 判為受影響的事物。"
+      ],
+      "answer": "The strong wind.",
+      "why": "句子把風當成造成關窗結果的力量，所以 the strong wind 是動作者；the window 只承受 closed 的作用，沒有自行完成關窗動作。"
+    },
+    {
+      "id": "ENG_R4_L_S155_EX_03",
+      "prompt": "After dinner, Ben called Amy from the kitchen. Who received the call?",
+      "steps": [
+        "略過時間與地點背景。",
+        "讀取核心結構 Ben called Amy。",
+        "找出 called 指向的對象。"
+      ],
+      "answer": "Amy.",
+      "why": "After dinner 和 from the kitchen 都不改變角色。核心句中 Ben 發出電話，Amy 接到這個動作，因此 Amy 是 called 的承受者。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "句中第一個人物一定是動作者，即使它只出現在時間或地點片語裡。",
+      "whyWrong": "片語中的名詞可能只是背景，未必是主要動詞的主詞。",
+      "correction": "先定位主要動詞，再找與它直接搭配的主詞。"
+    },
+    {
+      "belief": "承受者一定是沒有生命的物品。",
+      "whyWrong": "人也能被拜訪、呼叫、幫助或跟隨。",
+      "correction": "判斷動作指向誰，不用有無生命分類角色。"
+    },
+    {
+      "belief": "離動詞最近的名詞就是動作者。",
+      "whyWrong": "主動句的受詞常緊跟在動詞後，距離近卻是承受者。",
+      "correction": "用主詞位置和動詞意思共同確認執行者。"
+    },
+    {
+      "belief": "每個英文句子都必須找出一個承受者。",
+      "whyWrong": "sleep、arrive 等用法可以沒有受詞。",
+      "correction": "若動作沒有指向另一個對象，就只保留動作者。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "在 Sam fixed the bike 中，誰執行修理？",
+      "answer": "Sam",
+      "reason": "Sam 是 fixed 的主詞與動作者。"
+    },
+    {
+      "prompt": "在 The child kicked the ball 中，什麼承受動作？",
+      "answer": "the ball",
+      "reason": "踢的動作由 child 發出並落在 ball 上。"
+    },
+    {
+      "prompt": "Mia smiled 中是否一定有承受者？",
+      "answer": "沒有",
+      "reason": "此處 smiled 沒有受詞，不應自行補一個對象。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

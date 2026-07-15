@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_160_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The glass was broken. What can we learn from this sentence alone?",
+  "options": [
+    "Ben broke it.",
+    "It broke at noon.",
+    "The glass was broken, but the cause is not given.",
+    "A ball must have hit it."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Ben 未出現在句中，不能指定他。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有時間詞支持 noon。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三項保留破裂事實，同時承認來源未明。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "球只是可能原因，must have 沒有證據。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s160-bound-claims-from-isolated-broken-glass",
+    "separate-result-condition-from-cause-and-time"
+  ],
+  "representationType": "ambiguous-participle-evidence-boundary",
+  "misconceptionTargets": [
+    "invent-event-details-from-result-state"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "孤立句可以支持破裂結果，卻不足以鎖定事件來源或時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只重述可確定內容，不宣稱玻璃現在仍未修復。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

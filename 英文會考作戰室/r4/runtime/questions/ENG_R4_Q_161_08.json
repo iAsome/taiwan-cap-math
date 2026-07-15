@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_161_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: Bags will be checked at the front door. What should visitors expect?",
+  "options": [
+    "The front door will be put inside a bag.",
+    "Visitors must check the building's doors.",
+    "Every bag has already been taken home.",
+    "Their bags will be checked at the front door."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項顛倒 door 與 bag 的現實角色。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "被動句不是要求訪客檢查門。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "will be checked 是未來安排，沒有說袋子已帶回家。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項保留受檢物與公告指定地點。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s161-infer-entry-bag-check-process",
+    "recover-patient-location-and-future-timing"
+  ],
+  "representationType": "entrance-process-notice-inference",
+  "misconceptionTargets": [
+    "reverse-inspector-and-inspected-item"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "通知省略檢查人員，仍能讓訪客預期袋子受檢。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只重述明示流程，不推定檢查發生在進門前或離開前。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

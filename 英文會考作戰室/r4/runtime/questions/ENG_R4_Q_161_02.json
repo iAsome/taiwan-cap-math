@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_161_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: Bikes must be left outside. What must a person with a bike do?",
+  "options": [
+    "Ride through every room.",
+    "Leave the bike outside.",
+    "Ask the bike to move itself.",
+    "Take every bike home."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "公告禁止把腳踏車帶入室內，不能騎過房間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二項直接執行 must be left outside 的規定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "被動句省略騎士，但腳踏車不會自行移動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "規定只談放置地點，不要求帶走所有人的車。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u23-s161-convert-bike-passive-rule-to-rider-action",
+    "recover-implicit-responsible-person"
+  ],
+  "representationType": "passive-rule-to-action",
+  "misconceptionTargets": [
+    "interpret-patient-as-self-moving-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "bike 是被放置的物品，持有腳踏車的人是未寫出的責任人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把被動規則還原成使用者能執行的動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

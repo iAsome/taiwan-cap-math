@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_160_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The lights are turned off at ten every night. How should turned off be read here?",
+  "options": [
+    "As the lights' color",
+    "As a state with no time pattern",
+    "As an action that happens again at ten each night",
+    "As an action the lights do to others"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "turned off 描述關燈，不是顏色。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "at ten every night 正好提供明確重複時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三項把固定時間與被動動作連結。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "lights 是被關閉的設備，不是動作者。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u23-s160-classify-nightly-lights-off-as-recurring-event",
+    "use-frequency-to-prefer-event-reading"
+  ],
+  "representationType": "habitual-passive-event-analysis",
+  "misconceptionTargets": [
+    "ignore-scheduled-action-cue"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "every night 將關燈安排標為反覆事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項比單純狀態分析更能解釋 at ten 的時間功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_157_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This medicine must ___ away from young children.",
+  "options": [
+    "keeps",
+    "is kept",
+    "kept",
+    "be kept"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "keeps 會讓 medicine 主動保存其他東西。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "must is kept 在情態動詞後錯用限定 is。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "kept 前缺少 must 後的 be。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "be kept 完成 must + be + p.p.，表示藥品必須被妥善放置。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s157-form-must-be-kept-safety-rule",
+    "hold-base-be-after-modal-obligation"
+  ],
+  "representationType": "modal-rule-passive-cloze",
+  "misconceptionTargets": [
+    "agree-be-after-modal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "must 表示規則，medicine 是受到保管要求的物品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項的 be 不隨單數 medicine 改成 is，因為它位於 must 後。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_155_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo slept well after the trip. What does the sentence tell us?",
+  "options": [
+    "Leo slept, but the action did not pass to another person or thing.",
+    "The trip received the sleeping action.",
+    "Someone put Leo to sleep.",
+    "Well is the person who slept."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Leo 是 slept 的主詞，而此句沒有受詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "after the trip 是時間背景，trip 不承受 sleep。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原文沒有說另一個人使 Leo 入睡。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "well 是副詞，描述睡眠情況，不是人物。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s155-recognize-intransitive-sleep-role-set",
+    "avoid-inventing-receiver-or-causer"
+  ],
+  "representationType": "no-receiver-active-analysis",
+  "misconceptionTargets": [
+    "force-object-into-intransitive-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "sleep 在此不把動作傳到另一個對象，因此不必硬找承受者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時承認 Leo 的動作者角色與受詞缺席。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

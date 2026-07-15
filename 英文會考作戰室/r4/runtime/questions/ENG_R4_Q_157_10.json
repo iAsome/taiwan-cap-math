@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_157_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Every afternoon, the mail is brought to the office. What does the sentence mean?",
+  "options": [
+    "The mail brings people to the office every afternoon.",
+    "Someone brings the mail to the office every afternoon.",
+    "Someone brought the mail there only once in the past.",
+    "Someone will begin bringing the mail next year."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "mail 是 brought 的承受者，不會載人前往辦公室。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二項保留省略的動作者、mail 的承受角色與每日安排。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "every afternoon 表示反覆發生，不是過去僅一次。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子使用現在式，也沒有 next year 的未來資訊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u23-s157-paraphrase-present-mail-routine",
+    "combine-passive-role-and-frequency-cue"
+  ],
+  "representationType": "present-routine-passive-paraphrase",
+  "misconceptionTargets": [
+    "reverse-mail-role-or-change-timeline"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "is brought 和 every afternoon 共同表達目前的固定送件安排。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項改成主動敘述後，時間、地點與角色都沒有改變。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

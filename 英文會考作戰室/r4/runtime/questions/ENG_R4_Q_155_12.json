@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_155_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Near the gate, Nora found Mia's notebook under a chair. Who found the notebook?",
+  "options": [
+    "The gate",
+    "Mia",
+    "A chair",
+    "Nora"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "gate 位於地點片語，沒有執行 found。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Mia 是 notebook 的所有人，不等於發現者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "chair 提供物品所在位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Nora 是 found 的主詞，完成尋獲動作。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u23-s155-find-agent-amid-possession-and-location",
+    "distinguish-owner-locator-and-finder"
+  ],
+  "representationType": "possessive-role-disambiguation",
+  "misconceptionTargets": [
+    "mistake-owner-for-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "所有格 Mia's 只連結筆記本歸屬，不能取代句子主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項在去除兩個地點片語後仍是核心句的動作者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
