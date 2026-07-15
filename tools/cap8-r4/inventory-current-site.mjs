@@ -32,9 +32,12 @@ async function walk(root, current = root) {
   return files;
 }
 
-function classify(relative) {
+export function classifyCurrentSitePath(relative) {
   const normalized = relative.replaceAll("\\", "/");
   const basename = path.posix.basename(normalized).toLowerCase();
+  if (normalized.includes("/r4/")) {
+    return { decision: "KEEP", reason: "R4 authoring artifact; production use still requires a complete manifest and final audit" };
+  }
   if (normalized.includes("/official-data/") || normalized.startsWith("shared/social-official-data/")) {
     return { decision: "KEEP", reason: "official evidence is retained but must be re-audited before production use" };
   }
@@ -71,7 +74,7 @@ export async function inventoryCurrentSite() {
         path: repositoryPath,
         bytes: bytes.length,
         sha256: sha256(bytes),
-        ...classify(repositoryPath),
+        ...classifyCurrentSitePath(repositoryPath),
       });
     }
   }
